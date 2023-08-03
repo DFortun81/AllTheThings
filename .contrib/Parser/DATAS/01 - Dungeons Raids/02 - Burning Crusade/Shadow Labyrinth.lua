@@ -91,7 +91,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(29643, {	-- The Codex of Blood
 					["qg"] = 54890,	-- Field Commander Mahfuun
-					["sourceQuest"] = 29642,	-- Trouble at Auchindoun
 					["coord"] = {50.4, 45.3, SHATTRATH_CITY },
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(68, 68, 20),
@@ -236,13 +235,12 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(547, {	-- Murmur
 					["creatureID"] = 18708,
 					["groups"] = {
-						classicAch(654, {	-- Shadow Labyrinth
+						ach(654, {	-- Shadow Labyrinth
 							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								10095,	-- Into the Heart of the Labyrinth
 								10885,	-- Trial of the Naaru: Strength
 							},
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						i(27903),	-- Sonic Spear
@@ -335,10 +333,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(547, {	-- Murmur
 						["creatureID"] = 18708,
 						["groups"] = {
-							classicAch(675, {	-- Heroic: Shadow Labyrinth
+							ach(675, {	-- Heroic: Shadow Labyrinth
 								-- #if BEFORE WRATH
 								["sourceQuest"] = 10885,	-- Trial of the Naaru: Strength
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
 							}),
 							ach(5075, {	-- Heroic: Shadow Labyrinth Guild Run

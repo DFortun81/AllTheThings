@@ -2382,7 +2382,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(12232, {	-- Recipe: Carrion Surprise
 							["isLimited"] = true,
 						}),
-						i(5643, {	-- Recipe: Great Rage Potion
+						i(5643, {	-- Recipe: Great Rage Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(12240, {	-- Recipe: Heavy Kodo Stew

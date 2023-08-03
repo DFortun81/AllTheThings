@@ -68,9 +68,11 @@ root(ROOTS.Zones, {
 						}),
 						i(142408, {	-- Pattern: Drums of the Mountain [Rank 2] (RECIPE!)
 							["cost"] = 5500000,		-- 550g
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						i(142409, {	-- Pattern: Drums of the Mountain [Rank 3] (RECIPE!)
 							["cost"] = 30000000,	-- 3,000g
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						i(136697, {	-- Plans: Gleaming Iron Spike (RECIPE!)
 							["cost"] = 5500000,		-- 550g

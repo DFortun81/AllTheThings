@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["_npcs"] = { 161530 },	-- Cloudtail
 				}),
 				crit(5, {
-					["_npcs"] = { 160051 },	-- Nemaeus
+					["_npcs"] = { 161529 },	-- Nemaeus
 				}),
 				crit(6, {
 					["_npcs"] = { 160629 },	-- Baedos

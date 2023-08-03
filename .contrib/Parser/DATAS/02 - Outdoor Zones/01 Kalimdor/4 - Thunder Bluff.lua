@@ -1130,7 +1130,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(18647, {	-- Schematic: Red Firework
 							["isLimited"] = true,
 						}),
-						i(22729, {	-- Steam Tonk Controller
+						i(22729, {	-- Schematic: Steam Tonk Controller
 							["isLimited"] = true,
 						}),
 					},

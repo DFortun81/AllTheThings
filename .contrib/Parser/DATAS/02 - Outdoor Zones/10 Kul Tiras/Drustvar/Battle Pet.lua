@@ -14,7 +14,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				379,	-- Squirrel (PET!)
 			}},
 			["groups"] = {
-				pet(2386),	-- Coastal Scuttler (PET!)
+				pet(2386, {	-- Coastal Scuttler (PET!)
+					["coord"] = { 27.4, 72.2, DRUSTVAR },
+				}),
 			},
 		})),
 	}),

@@ -1,14 +1,6 @@
 -----------------------------------------------------
 --     B L A C K   M A R K E T   M O D U L E       --
 -----------------------------------------------------
-TIER_THREE_SETS = createHeader({
-	readable = "Tier 3 Sets",
-	icon = "Interface\\Icons\\achievement_dungeon_naxxramas",
-	text = {
-		en = [[~string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 3)]],
-		ru = "Комплект 3-го уровня",
-	},
-});
 root(ROOTS.BlackMarket, {
 	n(VENDORS, bubbleDown({
 			["sym"] = {
@@ -57,7 +49,7 @@ root(ROOTS.BlackMarket, bubbleDown({ ["u"] = BLACK_MARKET, },{
 	}),
 	filter(MOUNTS, {
 		i(143643),	-- Abyss Worm (MOUNT!)
-		i(168830, {	-- Aerial Unit R-21/X 
+		i(168830, {	-- Aerial Unit R-21/X
 			["timeline"] = { "added 10.1.5" },
 		}),
 		i(68823),	-- Armored Razzashi Raptor (MOUNT!)
@@ -96,7 +88,7 @@ root(ROOTS.BlackMarket, bubbleDown({ ["u"] = BLACK_MARKET, },{
 		}),
 		i(87771),	-- Heavenly Onyx Cloud Serpent (MOUNT!)
 		i(94231),	-- Jade Primordial Direhorn (MOUNT!)
-		i(168826, {	-- Mechagon Peacekeeper 
+		i(168826, {	-- Mechagon Peacekeeper
 			["timeline"] = { "added 10.1.5" },
 		}),
 		i(163042),  -- Mighty Caravan Brutosaur (MOUNT!)

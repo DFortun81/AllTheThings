@@ -30,7 +30,7 @@ namespace ATT
         static string API_KEY = null;
         private static HttpClient _client;
         static HttpClient Client => _client ?? (_client = InitClient());
-        static ConcurrentQueue<Tuple<int, string>> DataResults { get; } = new ConcurrentQueue<Tuple<int, string>>();
+        static ConcurrentQueue<string> DataResults { get; } = new ConcurrentQueue<string>();
         static ConcurrentQueue<Tuple<int, Task<HttpResponseMessage>>> APIResults { get; } = new ConcurrentQueue<Tuple<int, Task<HttpResponseMessage>>>();
         static ConcurrentQueue<string> ParseDatas { get; } = new ConcurrentQueue<string>();
         /// <summary>
@@ -285,11 +285,12 @@ namespace ATT
                         if (response.IsSuccessStatusCode)
                         {
                             string data = response.Content.ReadAsStringAsync().Result;
-                            if (string.IsNullOrEmpty(data)) Console.WriteLine("[" + responseData.Item1.ToString() + "]: NULL");
+                            int id = responseData.Item1;
+                            if (string.IsNullOrEmpty(data)) Console.WriteLine("[" + id.ToString() + "]: NULL");
                             else
                             {
-                                Console.WriteLine("[" + responseData.Item1.ToString() + "]: FOUND");
-                                DataResults.Enqueue(new Tuple<int, string>(responseData.Item1, data));
+                                Console.WriteLine("[" + id.ToString() + "]: FOUND");
+                                QueueAPIData(data);
                             }
                         }
                         // queried too fast!
@@ -337,6 +338,63 @@ namespace ATT
             WaitForData = false;
         }
 
+        private static void QueueAPIData(string data)
+        {
+            IDictionary<string, object> json = (IDictionary<string, object>)MiniJSON.Json.Deserialize(data ?? "{}");
+            // don't bother saving empty data
+            if (json == null)
+                return;
+
+            // grab the raw type from the internal href link for parsing
+            json["_rawtype"] = CheckRawType(json);
+
+            // remove keys which we don't care about in raw data
+            CleanJsonData(json);
+
+            // don't bother saving empty data
+            if (json.Count == 0)
+                return;
+
+            DataResults.Enqueue(MiniJSON.Json.Serialize(json));
+        }
+
+        private static bool CleanJsonObject(object data)
+        {
+            if (data is IDictionary<string, object> dict)
+            {
+                CleanJsonData(dict);
+                return dict.Count == 0;
+            }
+            else if (data is IEnumerable<object> list)
+            {
+                foreach (object obj in list)
+                {
+                    CleanJsonObject(obj);
+                }
+            }
+            return false;
+        }
+
+        private static void CleanJsonData(IDictionary<string, object> json)
+        {
+            json.Remove("_links");
+            json.Remove("href");
+
+            List<string> empty = new List<string>();
+            foreach (KeyValuePair<string, object> kvp in json)
+            {
+                if (CleanJsonObject(kvp.Value))
+                {
+                    empty.Add(kvp.Key);
+                }
+            }
+
+            foreach (string key in empty)
+            {
+                json.Remove(key);
+            }
+        }
+
         private static bool TaskStopped(Task<HttpResponseMessage> task)
         {
             return task.IsCompleted ||
@@ -352,9 +410,9 @@ namespace ATT
             WaitForData = true;
             while (WaitForData || DataResults.Count > 0)
             {
-                if (DataResults.TryDequeue(out Tuple<int, string> data))
+                if (DataResults.TryDequeue(out string data))
                 {
-                    File.AppendAllText(string.Format(RawDirectoryFormat, "DATA"), data.Item2 + Environment.NewLine);
+                    File.AppendAllText(string.Format(RawDirectoryFormat, "DATA"), data + Environment.NewLine);
                 }
                 else
                 {
@@ -366,6 +424,7 @@ namespace ATT
 
         static void HarvestItems()
         {
+            MaxItemID = ScanExistingData(MaxItemID);
             InitClient();
             RawAPICallFormat = API_CALL_ITEM + API_KEY;
             int i = MaxItemID;
@@ -389,6 +448,7 @@ namespace ATT
 
         static void HarvestQuests()
         {
+            MaxQuestID = ScanExistingData(MaxQuestID);
             InitClient();
             RawAPICallFormat = API_CALL_QUEST + API_KEY;
             int i = MaxQuestID;
@@ -409,8 +469,32 @@ namespace ATT
                 --i;
             }
         }
-        
-        static HttpClient InitClient()
+
+        private static int ScanExistingData(int expectedMax)
+        {
+            string rawDataPath = string.Format(RawDirectoryFormat, "DATA");
+            if (!File.Exists(rawDataPath))
+                return expectedMax;
+
+            var contents = File.ReadAllText(string.Format(RawDirectoryFormat, "DATA"));
+            string[] individualDatas = contents.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+            long minIdFound = expectedMax;
+            foreach (string data in individualDatas)
+            {
+                if (MiniJSON.Json.Deserialize(data) is IDictionary<string, object> json)
+                {
+                    if (json.TryGetValue("id", out object idObj) && idObj is long id)
+                    {
+                        minIdFound = Math.Min(minIdFound, id);
+                    }
+                }
+            }
+
+            Console.WriteLine($"Already captured through: {minIdFound}. Adjusting new start ID");
+            return (int)(minIdFound - 1);
+        }
+
+        private static HttpClient InitClient()
         {
             while (!File.Exists("API.key"))
             {
@@ -713,7 +797,7 @@ namespace ATT
             }
             else
             {
-                foreach(string data in individualDatas)
+                foreach (string data in individualDatas)
                 {
                     ParseDatas.Enqueue(data);
                 }
@@ -724,7 +808,10 @@ namespace ATT
         {
             var dict = new Dictionary<string, object>();
             // add the type for this data
-            string objType = CheckRawType(subData);
+            if (!subData.TryGetValue("_rawtype", out string objType))
+            {
+                objType = CheckRawType(subData);
+            }
             if (subData.TryGetValue("name", out object o)) dict["name"] = o;
             if (subData.TryGetValue("id", out o)) dict[objType + "ID"] = o;
 
@@ -1305,9 +1392,9 @@ namespace ATT
         /// </summary>
         /// <param name="subData"></param>
         /// <returns></returns>
-        private static string CheckRawType(Dictionary<string, object> subData)
+        private static string CheckRawType(IDictionary<string, object> subData)
         {
-            if (subData.TryGetValue("_links", out Dictionary<string, object> links))
+            if (subData is Dictionary<string, object> subDataDict && subDataDict.TryGetValue("_links", out Dictionary<string, object> links))
             {
                 if (links.TryGetValue("self", out Dictionary<string, object> self))
                 {

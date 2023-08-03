@@ -827,11 +827,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 197 },	-- Marshal McBride
 								{ "i", 745 },	-- Marshal McBride's Documents
 							},
-							["sourceQuest"] = 21,	-- Skirmish at Echo Ridge
-							-- #if AFTER CATA
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
+							-- #if BEFORE CATA
 							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
+							["sourceQuest"] = 21,	-- Skirmish at Echo Ridge
+							-- #else
+							["sourceQuest"] = 26390,	-- Ending the Invasion
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
+							["isBreadcrumb"] = true,	-- TODO Not required for q:62, confirm it becomes unavailable with q:62 complete
 							-- #endif
 							["races"] = exclude(MECHAGNOME, ALLIANCE_ONLY),
 							["groups"] = {
@@ -1551,7 +1553,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(60, {	-- Kobold Candles
 					["qg"] = 253,	-- William Pestle
-					["sourceQuest"] = 26390,	-- Ending the Invasion
 					["coord"] = { 43.2, 65.8, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(3, 3, 1),
@@ -1585,7 +1586,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
-					["timeline"] = { "added 5.2.0.16446" },
+					["timeline"] = { "added 5.2.0.16446", REMOVED_10_1_5 },
 					["races"] = { HUMAN },
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
@@ -2150,6 +2151,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
+			-- #if BEFORE TBC
+			n(RIDING_TRAINER, {
+				n(4732, {	-- Randal Hunter <Horse Riding Instructor>
+					["coord"] = { 84.2, 65.0, ELWYNN_FOREST },
+					["races"] = ALLIANCE_ONLY,
+
+					-- Available to Humans without faction requirements.
+					["minReputation"] = { 72, EXALTED },	-- Stormwind, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. HUMAN .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
+					["groups"] = {
+						recipe(824, {	-- Horse Riding
+							["cost"] = 200000,
+							["lvl"] = 40,
+						}),
+					},
+				}),
+			}),
+			-- #endif
 			-- #if AFTER 8.1.0.28724
 			n(TREASURES, {
 				o(310709, {	-- Waterlogged Chest

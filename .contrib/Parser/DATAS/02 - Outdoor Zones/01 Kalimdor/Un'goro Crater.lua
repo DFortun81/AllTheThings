@@ -1497,15 +1497,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["lvl"] = lvlsquish(48, 48, 15),
 					["groups"] = {
-						classicAch(3357, {	-- Venomhide Ravasaur
+						ach(3357, {	-- Venomhide Ravasaur
 							["provider"] = { "i", 46102 },	-- Whistle of the Venomhide Ravasaur
 							["timeline"] = { "added 3.2.0.10026" },
-							["races"] = HORDE_ONLY,
-							["f"] = MOUNTS,
 							-- #if BEFORE WRATH
 							["description"] = "Obtain a Venomhide Ravasaur.",
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 							-- #endif
+							["races"] = HORDE_ONLY,
+							["f"] = MOUNTS,
 						}),
 						i(46102, {	-- Venomhide Ravasaur (MOUNT!)
 							["timeline"] = { "added 3.2.0.10026" },
@@ -1830,7 +1829,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(199092, {	-- Inert Phoenix Ash
 					["timeline"] = { ADDED_10_0_7 },
-					["cr"] = 6520,	-- Scorching Elemental
+					["crs"] = {
+						6521,	-- Living Blaze
+						6520,	-- Scorching Elemental
+					},
 					["coords"] = {
 						{ 52.8, 42.4, UNGORO_CRATER },
 						{ 46.0, 46.6, UNGORO_CRATER },

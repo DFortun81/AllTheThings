@@ -51,6 +51,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						583,	-- Arathi Basin All-Star
 						584,	-- Arathi Basin Assassin
 					}},
+					["timeline"] = { "added 3.0.1" },
 					-- #if BEFORE 4.3.0
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
@@ -75,52 +76,57 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = HORDE_ONLY,
 				}),
 				ach(154, {	-- Arathi Basin Victory
+					["timeline"] = { "added 3.0.1" },
 					["rank"] = 1,
 				}),
 				ach(155, {	-- Arathi Basin Veteran
+					["timeline"] = { "added 3.0.1" },
 					["rank"] = 100,
 				}),
 				ach(583, {	-- Arathi Basin All-Star
-					crit(1),	-- Assault 2 bases
-					crit(2),	-- Defend 2 bases
+					["timeline"] = { "added 3.0.1" },
 				}),
 				ach(584, {	-- Arathi Basin Assassin
-					crit(1),	-- Kill 5 people at the blacksmith
-					crit(2),	-- Kill 5 people at the farm
-					crit(3),	-- Kill 5 people at the gold mine
-					crit(4),	-- Kill 5 people at the lumber mill
-					crit(5),	-- Kill 5 people at the stables
+					["timeline"] = { "added 3.0.1" },
 				}),
-				ach(165),	-- Arathi Basin Perfection
-				ach(73),	-- Disgracin' The Basin
-				ach(159),	-- Let's Get This Done
-				ach(158),	-- Me and the Cappin' Makin' it Happen
-				ach(1153),	-- Overly Defensive
-				ach(161),	-- Resilient Victory
-				ach(156),	-- Territorial Dominance
-				ach(157),	-- To The Rescue!
-				ach(162),	-- We Had It All Along *cough*
-				ach(711, applyclassicphase(PHASE_TWO, {	-- Knight of Arathor
-					["races"] = ALLIANCE_ONLY,
+				ach(165, {	-- Arathi Basin Perfection
+					["timeline"] = { "added 3.0.1" },
+				}),
+				ach(73, {	-- Disgracin' The Basin
+					["timeline"] = { "added 3.0.1" },
+				}),
+				ach(159, {	-- Let's Get This Done
+					["timeline"] = { "added 3.0.1" },
+				}),
+				ach(158, {	-- Me and the Cappin' Makin' it Happen
+					["timeline"] = { "added 3.0.1" },
+				}),
+				ach(1153, {	-- Overly Defensive
+					["timeline"] = { "added 3.0.1" },
+				}),
+				ach(161, {	-- Resilient Victory
+					["timeline"] = { "added 3.0.1" },
+				}),
+				ach(156, {	-- Territorial Dominance
+					["timeline"] = { "added 3.0.1" },
+				}),
+				ach(157, {	-- To The Rescue!
+					["timeline"] = { "added 3.0.1" },
+				}),
+				ach(162, {	-- We Had It All Along *cough*
+					["timeline"] = { "added 3.0.1" },
+				}),
+				applyclassicphase(PHASE_TWO, achWithRep(711, 509, {	-- Knight of Arathor
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with The League of Arathor to Exalted.",
 					-- #endif
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 509); end]],
-					-- #endif
+					["races"] = ALLIANCE_ONLY,
 				})),
-				ach(710, applyclassicphase(PHASE_TWO, {	-- The Defiler
-					["races"] = HORDE_ONLY,
+				applyclassicphase(PHASE_TWO, achWithRep(710, 510, {	-- The Defiler
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with The Defilers to Exalted.",
 					-- #endif
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 510); end]],
-					-- #endif
+					["races"] = HORDE_ONLY,
 				})),
 			}),
 			n(FACTIONS, {

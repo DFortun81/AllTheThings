@@ -13,7 +13,11 @@ ATALAI_DEFENDERS = createHeader({
 });
 local ESSENCE_OF_ERANIKUS_PART_TWO_OnUpdate = [[function(t)
 	if not t.collected and C_QuestLog.IsQuestFlaggedCompleted(3373) and GetItemCount(10455, true) < 1 then
+-- #if ANYCLASSIC
+		if not _.Settings.AccountWide.Quests then
+-- #else
 		if not _.AccountWideQuests then
+-- #endif
 			t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		else
 			t.u = nil;
@@ -23,7 +27,11 @@ local ESSENCE_OF_ERANIKUS_PART_TWO_OnUpdate = [[function(t)
 end]];
 local ESSENCE_OF_ERANIKUS_OWN_WORDS_OnUpdate = [[function(t)
 	if not C_QuestLog.IsQuestFlaggedCompleted(3374) and (C_QuestLog.IsQuestFlaggedCompleted(3373) and GetItemCount(10455, true) < 1) then
+-- #if ANYCLASSIC
+		if not _.Settings.AccountWide.Quests then
+-- #else
 		if not _.AccountWideQuests then
+-- #endif
 			t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		else
 			t.u = nil;
@@ -567,6 +575,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					},
 				}),
 			}),
+			-- #if AFTER 10.1.5
+			prof(SKINNING, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {
+				i(20381),	-- Dreamscale
+			})),
+			-- #endif
 			n(ZONE_DROPS, {
 				i(11318, {	-- Atal'ai Haze
 					["crs"] = {
@@ -772,10 +785,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			e(463, {	-- Shade of Erankikus
 				["creatureID"] = 5709,
 				["groups"] = {
-					classicAch(641, {	-- Sunken Temple
+					ach(641, {	-- Sunken Temple
 						-- #if BEFORE WRATH
 						["sourceQuest"] = 3373,	-- The Essence of Eranikus
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5050, {	-- Sunken Temple Guild Run

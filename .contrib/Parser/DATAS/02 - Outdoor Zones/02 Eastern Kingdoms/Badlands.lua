@@ -733,7 +733,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["lvl"] = 35,
 					["groups"] = {
-						i(4624, {	-- Recipe: Lesser Stoneshield Potion
+						i(4624, {	-- Recipe: Lesser Stoneshield Potion (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(4623, {	-- Lesser Stoneshield Potion

@@ -171,7 +171,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(27545),	-- Mennu's Scaled Leggings
 						-- #endif
 						i(24359),	-- Princely Reign Leggings
-						i(29674, {	-- Pattern: Nature Armor Kit
+						i(29674, {	-- Pattern: Nature Armor Kit (RECIPE!)
 							["timeline"] = { "removed 5.0.4" },
 						}),
 					},
@@ -202,7 +202,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(572, {	-- Quagmirran
 					["creatureID"] = 17942,
 					["groups"] = {
-						ach(649),	-- The Slave Pens
+						ach(649, {	-- The Slave Pens
+							["timeline"] = { "added 3.0.1" },
+						}),
 						-- #if AFTER 7.3.5
 						i(27741),	-- Bleeding Hollow Warhammer
 						i(27673),	-- Phosphorescent Blade
@@ -292,7 +294,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
-							i(29674, {	-- Pattern: Nature Armor Kit
+							i(29674, {	-- Pattern: Nature Armor Kit (RECIPE!)
 								["timeline"] = { "removed 5.0.4" },
 							}),
 						},
@@ -325,7 +327,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(572, {	-- Quagmirran
 						["creatureID"] = 17942,
 						["groups"] = {
-							ach(669),	-- Heroic: The Slave Pens
+							ach(669, {	-- Heroic: The Slave Pens
+								["timeline"] = { "added 3.0.1" },
+							}),
 							ach(5069, {	-- Heroic: The Slave Pens Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),

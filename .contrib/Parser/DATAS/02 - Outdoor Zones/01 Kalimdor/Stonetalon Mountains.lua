@@ -2105,7 +2105,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6055, {	-- Recipe: Fire Protection Potion
+						i(6055, {	-- Recipe: Fire Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

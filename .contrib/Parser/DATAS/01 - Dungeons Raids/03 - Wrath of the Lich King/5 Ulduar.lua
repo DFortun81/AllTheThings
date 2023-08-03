@@ -2405,7 +2405,13 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							-- #if AFTER SHADOWLANDS
 							["lockCriteria"] = { 1, "lvl", 31 },
 							-- character above 30 without account-wide achievements shouldn't see forever-incomplete achievement
+							-- #if ANYCLASSIC
+							-- Not that classic is gonna get this far, this exists just so I remember to change this later when I do my "ANYCLASSIC" purge
+							-- once the two addons are combined into one master addon. Crieve plays the long game.
+							["OnUpdate"] = [[function(t) if _.Level > 30 and not _.Settings.AccountWide.Achievements then t.collectible = false; end end]],
+							-- #else
 							["OnUpdate"] = [[function(t) if _.Level > 30 and not _.AccountWideAchievements then t.collectible = false; end end]],
+							-- #endif
 							-- #else
 							["lockCriteria"] = { 1, "lvl", 80 },
 							-- #endif

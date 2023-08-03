@@ -792,13 +792,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			e(422, {	-- Mekgineer Thermaplugg
 				["creatureID"] = 7800,
 				["groups"] = {
-					classicAch(634, {	-- Gnomeregan
+					ach(634, {	-- Gnomeregan
 						-- #if BEFORE WRATH
 						["sourceQuests"] = {
 							2929,	-- The Grand Betrayal
 							2841,	-- Rig Wars
 						},
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5044, {	-- Gnomeregan Guild Run

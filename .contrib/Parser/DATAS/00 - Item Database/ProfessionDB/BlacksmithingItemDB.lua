@@ -1,44 +1,9 @@
-local Items = root(ROOTS.ItemDBConditional);
-local Recipes = root(ROOTS.RecipeDB);
-local ProfessionID = BLACKSMITHING;
+local i = GetRecipeHelperForProfession(BLACKSMITHING);
 local ARMORSMITH = 9788;
 local WEAPONSMITH = 9787;
 local MASTER_AXESMITH = 17041;
 local MASTER_HAMMERSMITH = 17040;
 local MASTER_SWORDSMITH = 17039;
-local i = function(itemID, recipeID, unobtainStatus, requireSkill)
-	if Items[itemID] then
-		print("Duplicate Recipe Item Defined!",itemID,recipeID);
-	elseif itemID == 0 then
-		local recipe = { ["requireSkill"] = requireSkill or ProfessionID, ["f"] = RECIPES };
-		-- allow for timeline to be a raw 'u' value or single string of 'timeline' or table of multiple 'timeline' values
-		local unobtainType = unobtainStatus and type(unobtainStatus);
-		if unobtainType then
-			if unobtainType == "number" then
-				recipe.u = unobtainStatus;
-			elseif unobtainType == "string" then
-				recipe.timeline = { unobtainStatus };
-			elseif unobtainType == "table" then
-				recipe.timeline = unobtainStatus;
-			end
-		end
-		Recipes[recipeID] = recipe;
-	else
-		local item = { ["recipeID"] = recipeID, ["requireSkill"] = requireSkill or ProfessionID, ["f"] = RECIPES };
-		-- allow for timeline to be a raw 'u' value or single string of 'timeline' or table of multiple 'timeline' values
-		local unobtainType = unobtainStatus and type(unobtainStatus);
-		if unobtainType then
-			if unobtainType == "number" then
-				item.u = unobtainStatus;
-			elseif unobtainType == "string" then
-				item.timeline = { unobtainStatus };
-			elseif unobtainType == "table" then
-				item.timeline = unobtainStatus;
-			end
-		end
-		Items[itemID] = item;
-	end
-end
 
 -----------------
 --   CLASSIC   --
@@ -94,8 +59,8 @@ i(0, 9926);			-- Heavy Mithril Shoulder
 i(0, 2674);			-- Heavy Sharpening Stone
 i(0, 3117);			-- Heavy Weightstone
 i(0, 28242);		-- Icebane Breastplate [REMOVED: 3.0.2]
-i(0, 28243);		-- Icebane Gauntlets [REMOVED: 3.0.2]
 i(0, 28244);		-- Icebane Bracers [REMOVED: 3.0.2]
+i(0, 28243);		-- Icebane Gauntlets [REMOVED: 3.0.2]
 i(0, 8768);			-- Iron Buckle
 i(0, 9961);			-- Mithril Coif
 i(0, 9931);			-- Mithril Scale Pants
@@ -1875,15 +1840,14 @@ i(0, 322595);		-- Shadowsteel Armguards
 i(0, 322587);		-- Shadowsteel Breastplate
 i(0, 322589);		-- Shadowsteel Gauntlets
 i(0, 322591);		-- Shadowsteel Greaves
-i(0, 322590);		-- Shadowsteel Helm
-i(0, 322593);		-- Shadowsteel Pauldrons
 i(0, 322588);		-- Shadowsteel Sabatons
 i(0, 322594);		-- Shadowsteel Waistguard
 i(0, 307717);		-- Porous Sharpening Stone
 i(0, 307719);		-- Porous Weightstone
 --- ITEM ---
 i(0, 343185);		-- Crafter's Mark II
-i(0, 343186);		-- Crafter's Mark III
+i(183094, 322590);	-- Shadowsteel Helm
+i(183095, 322593);	-- Shadowsteel Pauldrons
 --- LEGENDARY ---
 i(0, 307705);		-- Shadowghast Armguards [Rank 1]
 i(0, 332006);		-- Shadowghast Armguards [Rank 2]
@@ -1936,6 +1900,7 @@ i(0, 337426);		-- Unrefined Arrowheads
 -- PATCH 9.1.0 --
 -----------------
 --- ITEM ---
+i(0, 343186);		-- Crafter's Mark III
 i(0, 343188);		-- Crafter's Mark of the Chained Isle
 i(0, 352439);		-- Vestige of Origins
 
@@ -2145,7 +2110,10 @@ i(206557, 413757);	-- Death's Gamble
 i(206537, 413524);	-- Edict of the Redeemed Crusader
 i(206555, 413755);	-- Gauntlets of the Unrelenting
 i(206550, 413750);	-- Harbinger of Death
+i(206421, 28242);	-- Icebane Breastplate
+i(206422, 28244);	-- Icebane Bracers
 i(206419, 413506);	-- Icebane Coif
+i(206423, 28243);	-- Icebane Gauntlets
 i(206420, 413507);	-- Icebane Mantle
 i(206424, 413508);	-- Icebane Waistguard
 i(206425, 413509);	-- Icebane Leggings
@@ -2159,9 +2127,9 @@ i(207572, 416687);	-- Sacred Guardian
 i(206536, 413523);	-- Shade's Blade
 i(206531, 413518);	-- Strength of Menethil
 i(206560, 413760);	-- Stygian Shield
-i(206541, 413741);	-- The Plague Belcher
-i(206544, 413744);	-- The Final Dream
 i(206549, 413749);	-- The Face of Doom
+i(206544, 413744);	-- The Final Dream
+i(206541, 413741);	-- The Plague Belcher
 i(206352, 10003);	-- The Shatterer
 i(206351, 10015);	-- Truesilver Champion
 i(206774, 414567);	-- Undeath Metal

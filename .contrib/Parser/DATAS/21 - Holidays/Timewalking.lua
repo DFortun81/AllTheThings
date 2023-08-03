@@ -4382,6 +4382,10 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 					i(187591, {	-- Nightborne Guard's Vigilance (TOY!)
 						["cost"] = { { "c", 1166, 1500 }, },	-- 1500x Timewarped Badge
 					}),
+					i(207114, {	-- Grimoire of the Fiendish Imp (CI!)
+						["cost"] = { { "c", 1166, 1000 }, },	-- 1000x Timewarped Badge
+						["timeline"] = { ADDED_10_1_5 },
+					}),
 					i(187562, {	-- Replica Aegis of Aggramar
 						["cost"] = { { "c", 1166, 3000 }, },	-- 3000x Timewarped Badge
 					}),
@@ -4517,9 +4521,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 					}),
 				},
 			}),
-		}),
-		i(207114, {	-- Grimoire of the Fiendish Imp (CI!)
-			["timeline"] = { ADDED_10_1_5 },
 		}),
 		i(187906, {	-- Owl Serpent Soul
 			["timeline"] = { ADDED_9_1_5 },

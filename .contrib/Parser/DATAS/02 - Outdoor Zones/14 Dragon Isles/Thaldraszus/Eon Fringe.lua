@@ -6,6 +6,14 @@ EON_FRINGE = createHeader({
 	icon = "Interface\\Icons\\inv_belt_armor_waistoftime_d_01",
 	text = {
 		en = "Eon's Fringe",
+		de = "Grenze des Äons",
+		es = "Margen del Eón",
+        fr = "marges des Éons",
+		it = "Confine degli Eoni",
+		pt = "Orla do Eon",
+        ru = "Грань Эпохи",
+		ko = "영겁의 끝자락",
+        cn = "纪元边界",
 	},
 });
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
@@ -145,15 +153,33 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 
 			n(QUESTS, sharedData({ ["isDaily"] = true }, {
+				q(76269, {	-- A Mislaid Egg
+					["provider"] = { "n", 205424 },	-- Chromie
+					["coord"] = { 52.1, 81.6, THALDRASZUS },
+					["g"] = {
+						i(206394),	-- Red Dragon Egg
+					},
+				}),
 				q(76266, {	-- A Multitude of Tasks
 					["provider"] = { "n", 205424 },	-- Chromie
 					["coord"] = { 52.1, 81.6, THALDRASZUS },
+				}),
+				q(76251, {	-- Fowl Beasts
+					["provider"] = { "n", 206072 },	-- Nathanox Matris
+					["coord"] = { 52.2, 81.7, THALDRASZUS },
 				}),
 				q(75466, {	-- Lost Time-Lost Vikings
 					["provider"] = { "n", 203769 },	-- Bartender Bob
 					["coord"] = { 52.1, 81.5, THALDRASZUS },
 					["g"] = {
 						i(204989),	-- Eric's Camera
+					},
+				}),
+				q(75988, {	-- Lucky Hearthsone Card
+					["provider"] = { "n", 205604 },	-- Anduin Wrynn
+					["coord"] = { 52.1, 81.5, THALDRASZUS },
+					["g"] = {
+						i(206022),	-- Anduin's Lucky Hearthstone Card
 					},
 				}),
 				q(76246, {	-- Manastorm Mystique
@@ -182,6 +208,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(206695),	-- Pale Duskblossom
 					},
 				}),
+				q(75971, {	-- Squeaky Toy of Time and Space
+					["provider"] = { "n", 205769 },	-- Soridormi
+					["coord"] = { 52.1, 81.6, THALDRASZUS },
+					["g"] = {
+						i(206161),	-- Time-Displaced Toy
+					},
+				}),
 				q(75989, {	-- The Black Prince Parade
 					["provider"] = { "n", 203769 },	-- Bartender Bob
 					["coord"] = { 52.1, 81.5, THALDRASZUS },
@@ -208,11 +241,48 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(206368),	-- Wand of Mass Polymorph
 					},
 				}),
-
 			})),
+			n(RARES, {
+				n(205865, {	-- Zal'kir the Chosen <The Maw of K'Tanth>
+					["coord"] = { 59.8, 70.6, THALDRASZUS },
+					["questID"] = 76170,
+					["isDaily"] = true,
+					["g"] = {
+						i(208168),	-- Black Blade of K'tanth
+						i(208172),	-- Bloodstained Runecrook
+						i(208170),	-- Runeaxe of the Last Resistance
+					},
+				}),
+				n(201664, {	-- Temporal Investi-gator
+					["sourceQuests"] = { 75986 },	-- Feats Per Minute
+					["description"] = "Go in Everywhere Inn at 2nd floor, borrow Melly's Metronographer, use it near Bartender Bob, buy Infinitea from Bartender Blob and fly at coords, use it and interact with object to summon rare",
+					["coords"] = {
+						{ 52.3, 81.4, THALDRASZUS },	-- Everywhere Inn
+						{ 54.6, 85.9, THALDRASZUS },	-- Rare summon spot
+					},
+					["questID"] = 75479,
+					["isDaily"] = true,
+					["g"] = {
+						i(208449),	-- Melly's Metronographer+++
+						i(206993),	-- Investi-gator's Pocketwatch (TOY!) / confirmed in discord #errors report
+					},
+				}),
+			}),
 			n(VENDORS, {
+				n(207463, { -- Bartender Blob
+					["sourceQuests"] = { 75986 },	-- Feats Per Minute
+					["coord"] = { 52.1, 81.4, THALDRASZUS },
+					["g"] = {
+						i(208448, {	-- Infinitea
+							["description"] = "Timer start right after you buy it"
+						}),
+					},
+				}),
 				n(209220, {	-- Ironus Coldsteel <Chronosmith>
-					["description"] = "Need to finish `The Chronosmith` quest chain to make this npc as vendor",
+					["sourceQuests"] = {
+						76258,	-- By Time Fire be Purged!
+						76356,	-- Sword Stealing Searers
+					},
 					["coord"] = { 52.2, 80.8, THALDRASZUS },
 					["g"] = {
 						i(12837, {	-- Plans: Masterwork Stormhammer (RECIPE!)
@@ -253,7 +323,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 })));
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
-	q(76350),	-- after turn in The Chronosmith (questID 76350)
-
 	q(77172),	-- weekly lockout for Encapsulated Destiny (itemID 207002) as reward from daily quest
+
+	q(77335),	-- after Zal'kir the Chosen <The Maw of K'Tanth> kill, keep pop with 76170 on every kill
+	q(78094),	-- when toy Investi-gator's Pocketwatch (itemID 206993) was looted
 }));

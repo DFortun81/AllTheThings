@@ -25,14 +25,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 		["lvl"] = 50,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				classicAch(956, {	-- Brood of Nozdormu
+				achWithRep(956, 910, {	-- Brood of Nozdormu
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Brood of Nozdormu to Exalted.",
-					-- #endif
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 910); end]],
 					-- #endif
 					["maps"] = { CAVERNS_OF_TIME, SILITHUS },
 				}),
@@ -1081,13 +1076,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				},
 			}),
 			n(ZONE_DROPS, {
-				classicAch(424, {	-- Why? Because It's Red
+				ach(424, {	-- Why? Because It's Red
 					["provider"] = { "i", 21321 },	-- Red Qiraji Resonating Crystal
-					["filterID"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain a Red Qiraji Resonating Crystal.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
+					["filterID"] = MOUNTS,
 				}),
 				i(21218),	-- Blue Qiraji Battle Tank (MOUNT!)
 				i(21323),	-- Green Qiraji Battle Tank (MOUNT!)
@@ -1517,10 +1511,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 			e(1551, {	-- C'Thun
 				["creatureID"] = 15727,
 				["groups"] = {
-					classicAch(687, {	-- Temple of Ahn'Qiraj
+					ach(687, {	-- Temple of Ahn'Qiraj
 						-- #if BEFORE WRATH
 						["sourceQuest"] = 8801,	-- C'Thun's Legacy
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5058, {	-- Temple of Ahn'Qiraj Guild Run

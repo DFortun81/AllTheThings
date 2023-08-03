@@ -81,6 +81,9 @@ root(ROOTS.HiddenQuestTriggers,{
 		q(32611),	-- Rare Drop Tracking Quest — tracks whether you have looted an Incantation for this week
 		q(32609),	-- Rare Chest Tracking Quest — triggers after looting "Trove of the Thunder King"
 		q(32723),	-- reuse me
+		q(32825),	-- Re-Use Me - triggers with HQT 'Choose Your Assignment' (questID 32720 & 32721)
+		q(32826),	-- Re-Use Me - triggers with 'Breaking Down the Defenses' (questID 32628 & 32268)
+		q(32827),	-- Re-Use Me - triggers with 'Tactical Mana Bombs' (questID 32634 & 32269)
 		q(32629),	-- Thunderwing Captured Tracking Quest
 	}),
 });

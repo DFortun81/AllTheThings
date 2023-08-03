@@ -227,16 +227,6 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					["provider"] = { "n", 128722 },	-- Prophet Velen
 					["coord"] = { 53.1, 48.8, THE_VINDICAAR_EREDATH_UPPER },
 				}),
-				q(48078, {	-- Counterbalancing
-					["requireSkill"] = LEATHERWORKING,
-					["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
-					["provider"] = { "n", 125349 },	-- Enstraa
-					["coord"] = { 39.6, 73.6, THE_VINDICAAR_KROKUUN_UPPER },
-					["g"] = {
-						i(151740),	-- Pattern: Fiendish Shoulderguards [Rank 1] (RECIPE!)
-						i(151743),	-- Pattern: Fiendish Spaulders [Rank 1] (RECIPE!)
-					},
-				}),
 				q(49143, {	-- Essence of the Light Mother
 					["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
 					["provider"] = { "n", 126307 },	-- Prophet Velen

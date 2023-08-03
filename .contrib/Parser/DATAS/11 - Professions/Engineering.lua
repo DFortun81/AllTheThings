@@ -198,11 +198,11 @@ profession(ENGINEERING, {
 					["name"] = "Snowmaster 9000",
 					["recipeID"] = 21940,
 				},
-				applyclassicphase(TBC_PHASE_ONE, {
+				{
 					["name"] = "Steam Tonk Controller",
-					["timeline"] = { "added 2.0.1.6180" },
+					["timeline"] = { "created 1.10.0", "added 2.0.1.6180" },
 					["recipeID"] = 28327,
-				}),
+				},
 				{
 					["name"] = "Target Dummy",
 					["recipeID"] = 3932,
@@ -3547,6 +3547,7 @@ itemrecipe("Schematic: Powerful Seaforium Charge", 18656, 23080);
 itemrecipe("Schematic: Hyper-Radiant Flame Reflector", 18657, 23081);
 itemrecipe("Schematic: Ultra-Flash Shadow Reflector", 18658, 23082);
 itemrecipe("Schematic: Snake Burst Firework", 19027, 23507);
+itemrecipe("Schematic: Steam Tonk Controller", 22729, 28327);
 itemrecipe("Schematic: Bloodvine Goggles", 20000, 24356, PHASE_FOUR);
 itemrecipe("Schematic: Bloodvine Lens", 20001, 24357, PHASE_FOUR);
 applyevent(EVENTS.LUNAR_FESTIVAL,{
@@ -3568,7 +3569,6 @@ applyevent(EVENTS.LUNAR_FESTIVAL,{
 
 -- #if AFTER TBC
 -- TBC Recipes
-itemrecipe("Schematic: Steam Tonk Controller", 22729, 28327, TBC_PHASE_ONE);
 itemrecipe("Schematic: Adamantite Rifle", 23799, 30313, TBC_PHASE_ONE);
 itemrecipe("Schematic: Felsteel Boomstick", 23800, 30314, TBC_PHASE_ONE);
 itemrecipe("Schematic: Ornate Khorium Rifle", 23802, 30315, TBC_PHASE_ONE);
@@ -3631,9 +3631,6 @@ itemrecipe("Schematic: Flintlocke's Woodchucker", 70177, 100587, CATA_PHASE_TWO)
 recipeCache = nil;	-- Invalidate the cache.
 root(ROOTS.NeverImplemented, {
 	filter(RECIPES, {
-		-- #if CLASSIC
-		i(22729),	-- Schematic: Steam Tonk Controller [This doesn't get added until TBC]
-		-- #endif
 		-- #if AFTER TBC
 		itemrecipe("Schematic: Red Smoke Flare", 23812, 30342);
 		itemrecipe("Schematic: Blue Smoke Flare", 23813, 30343);

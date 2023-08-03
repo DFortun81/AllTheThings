@@ -410,7 +410,10 @@ root(ROOTS.Zones, {
 				q(30931, {	-- My Father's Crossbow
 					["coord"] = { 43.8, 65.7, TOWNLONG_STEPPES },
 					["provider"] = { "n", 61539 },	-- Ku-Mo
-					["sourceQuest"] = 30926,	-- The Terrible Truth
+					["sourceQuests"] = {	-- [Discord 2023-8-2]
+						30923,	-- Set the Mantid Back
+						30921,	-- The Motives of the Mantid
+					},
 					-- Note: this may be more dependent on phasing than sourceQuest, but this reliably made Ku-mo show up
 				}),
 				q(30922, {	-- Natural Antiseptic

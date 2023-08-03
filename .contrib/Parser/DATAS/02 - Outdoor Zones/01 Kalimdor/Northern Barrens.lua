@@ -4024,7 +4024,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6053, {	-- Recipe: Holy Protection Potion
+						i(6053, {	-- Recipe: Holy Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -4131,7 +4131,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(6275, {	-- Pattern: Greater Adept's Robe
 							["isLimited"] = true,
 						}),
-						i(5640, {	-- Recipe: Rage Potion
+						i(5640, {	-- Recipe: Rage Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -4311,7 +4311,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(97990, {	-- Raptorhide Boxing Gloves (still drops but has no purpose)
 					["timeline"] = { "added 5.3.0.16767" },
 				}),
-				i(6663, {	-- Recipe: Elixir of Giant Growth
+				i(6663, {	-- Recipe: Elixir of Giant Growth (RECIPE!)
 					["description"] = "Can drop from any mob in the Barrens.",
 				}),
 				i(6661, {	-- Recipe: Savory Deviate Delight

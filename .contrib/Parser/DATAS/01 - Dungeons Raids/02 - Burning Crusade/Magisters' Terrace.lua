@@ -111,12 +111,12 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 					i(35297),	-- Formula: Enchant Boots - Boar's Speed (RECIPE!)
 					i(35299),	-- Formula: Enchant Boots - Cat's Swiftness (RECIPE!)
 					i(35298),	-- Formula: Enchant Boots - Vitality (RECIPE!)
-					i(35302),	-- Pattern: Cobrascale Gloves
-					i(35303),	-- Pattern: Gloves of the Living Touch
-					i(35301),	-- Pattern: Netherdrake Gloves
+					i(35302),	-- Pattern: Cobrascale Gloves (RECIPE!)
+					i(35303),	-- Pattern: Gloves of the Living Touch (RECIPE!)
+					i(35301),	-- Pattern: Netherdrake Gloves (RECIPE!)
 					i(35308),	-- Pattern: Unyielding Bracers
 					i(35309),	-- Pattern: Unyielding Girdle
-					i(35300),	-- Pattern: Windstrike Gloves
+					i(35300),	-- Pattern: Windstrike Gloves (RECIPE!)
 					i(35296),	-- Plans: Adamantite Weapon Chain
 					i(35294),	-- Recipe: Elixir of Empowerment
 					i(35295),	-- Recipe: Haste Potion
@@ -197,10 +197,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 				e(533, {	-- Kael'thas Sunstrider
 					["creatureID"] = 24664,
 					["groups"] = {
-						classicAch(661, {	-- Magister's Terrace
+						ach(661, {	-- Magister's Terrace
 							-- #if BEFORE WRATH
 							["sourceQuest"] = 11492,	-- Hard to Kill
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						i(35504),	-- Phoenix Hatchling (PET!)
@@ -317,17 +316,18 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 					e(533, {	-- Kael'thas Sunstrider
 						["creatureID"] = 24664,
 						["groups"] = {
-							ach(682),	-- Heroic: Magister's Terrace
+							ach(682, {	-- Heroic: Magister's Terrace
+								["timeline"] = { "added 3.0.1" },
+							}),
 							ach(5082, {	-- Heroic: Magister's Terrace Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),
-							classicAch(884, {	-- Swift White Hawkstrider
+							ach(884, {	-- Swift White Hawkstrider
 								["provider"] = { "i", 35513 },	-- Swift White Hawkstrider
-								["filterID"] = MOUNTS,
 								-- #if BEFORE WRATH
 								["description"] = "Obtain the Swift White Hawkstrider from Kael'thas in Magister's Terrace.",
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 								-- #endif
+								["filterID"] = MOUNTS,
 							}),
 							i(35513),	-- Swift White Hawkstrider (MOUNT!)
 							i(35504),	-- Phoenix Hatchling (PET!)

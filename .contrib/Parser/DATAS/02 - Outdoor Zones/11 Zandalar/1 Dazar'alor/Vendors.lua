@@ -830,8 +830,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 44.0, 34.6, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(168028, {	-- Pattern: Mallet of Thunderous Skins
-						["sourceQuest"] = 55223,	-- Instruments of Destruction (H)
+					i(168028, {	-- Pattern: Mallet of Thunderous Skins (RECIPE!)
+						["sourceQuests"] = { 55223 },	-- Instruments of Destruction (H)
+						["timeline"] = { ADDED_8_1_5 },
 					}),
 				},
 			}),

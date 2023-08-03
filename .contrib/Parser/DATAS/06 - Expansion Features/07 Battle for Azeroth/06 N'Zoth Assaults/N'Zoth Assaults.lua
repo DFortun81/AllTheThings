@@ -473,20 +473,20 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				}),
 			})),
 			n(ZONE_DROPS, {
-				i(174365),	-- Design: Unbound Leviathan's Eye Loop
-				i(174368),	-- Pattern: Unsettling Cragscale Boots
-				i(174369),	-- Pattern: Unsettling Cragscale Greaves
-				i(174366),	-- Pattern: Unsettling Dredged Leather Boots
-				i(174367),	-- Pattern: Unsettling Dredged Leather Leggings
-				i(174371),	-- Pattern: Unsettling Seaweave Breeches
-				i(174370),	-- Pattern: Unsettling Seaweave Gloves
+				i(174365),	-- Design: Unbound Leviathan's Eye Loop (RECIPE!)
+				i(174368),	-- Pattern: Unsettling Cragscale Boots (RECIPE!)
+				i(174369),	-- Pattern: Unsettling Cragscale Greaves (RECIPE!)
+				i(174366),	-- Pattern: Unsettling Dredged Leather Boots (RECIPE!)
+				i(174367),	-- Pattern: Unsettling Dredged Leather Leggings (RECIPE!)
+				i(174371),	-- Pattern: Unsettling Seaweave Breeches (RECIPE!)
+				i(174370),	-- Pattern: Unsettling Seaweave Gloves (RECIPE!)
 				i(171317),	-- Plans: Unsettling Osmenite Girdle (RECIPE!)
 				i(171316),	-- Plans: Unsettling Osmenite Legguards (RECIPE!)
-				i(171318),	-- Recipe: Unbound Alchemist Stone
-				i(174362),	-- Schematic: A-N0M-A-L0U5 Bionic Bifocals
-				i(171313),	-- Schematic: A-N0M-A-L0U5 Gearspun Goggles
-				i(174364),	-- Schematic: A-N0M-A-L0U5 Orthogonal Optics
-				i(171314),	-- Schematic: A-N0M-A-L0U5 Synthetic Specs
+				i(171318),	-- Recipe: Unbound Alchemist Stone (RECIPE!)
+				i(174362),	-- Schematic: A-N0M-A-L0U5 Bionic Bifocals (RECIPE!)
+				i(171313),	-- Schematic: A-N0M-A-L0U5 Gearspun Goggles (RECIPE!)
+				i(174364),	-- Schematic: A-N0M-A-L0U5 Orthogonal Optics (RECIPE!)
+				i(171314),	-- Schematic: A-N0M-A-L0U5 Synthetic Specs (RECIPE!)
 				i(173420, {	-- Black Empire Cloth Belt
 					i(173511),	-- Vile Manipulator's Belt
 					i(173436),	-- Vile Manipulator's Cinch

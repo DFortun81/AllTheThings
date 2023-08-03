@@ -11188,3 +11188,5 @@
 6829@@@+$k1 Primary Stat & +$k2 Versatility |A:Professions-ChatIcon-Quality-Tier2:20:20|a
 6830@@@+$k1 Primary Stat & +$k2 Versatility |A:Professions-ChatIcon-Quality-Tier3:20:20|a
 6903@@@10.1.5 FX Testing - Enchant Visualt - Bronze Infinite
+10.1.7.50442
+7010@@@+$k1 Intellect

@@ -106,9 +106,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				})),
 				cr(96759, e(1663, {	-- Helya
 					ach(10808),	-- Heroic: Maw of Souls
-					i(137848),	-- Design: Blessed Dawnlight Medallion (Rank 3)
-				--	i(137899),	-- Pattern: Dreadleather Jerkin (Rank 3) (Not confirmed)
-					i(127932),	-- Recipe: Flask of the Countless Armies (Rank 2)
+					i(137848),	-- Design: Blessed Dawnlight Medallion [Rank 3] (RECIPE!)
+				--	i(137899),	-- Pattern: Dreadleather Jerkin [Rank 3] (RECIPE!) (Not confirmed)
+					i(127932),	-- Recipe: Flask of the Countless Armies [Rank 2] (RECIPE!)
 					i(136696),	-- Plans: Terrorspike (RECIPE!)
 					i(137331),	-- Belt of Eternal Torment
 					i(134195),	-- Biornskin Gloves
@@ -177,9 +177,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 							i(140323),	-- Lagan (PET!)
 						},
 					}),
-					i(137848),	-- Design: Blessed Dawnlight Medallion (Rank 3)
-					i(137899),	-- Pattern: Dreadleather Jerkin (Rank 3)
-					i(127932),	-- Recipe: Flask of the Countless Armies (Rank 2)
+					i(137848),	-- Design: Blessed Dawnlight Medallion [Rank 3] (RECIPE!)
+					i(137899),	-- Pattern: Dreadleather Jerkin [Rank 3] (RECIPE!)
+					i(127932),	-- Recipe: Flask of the Countless Armies [Rank 2] (RECIPE!)
 					i(136696),	-- Plans: Terrorspike (RECIPE!)
 					i(137331),	-- Belt of Eternal Torment
 					i(134195),	-- Biornskin Gloves

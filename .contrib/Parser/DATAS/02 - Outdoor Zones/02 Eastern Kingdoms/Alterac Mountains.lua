@@ -612,7 +612,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(2480, {	-- Bro'kin <Alchemy Supplies>
 					["coord"] = { 38.0, 38.0, ALTERAC_MOUNTAINS },
 					["groups"] = {
-						i(14634, {	-- Recipe: Frost Oil
+						i(14634, {	-- Recipe: Frost Oil (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

@@ -2872,13 +2872,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				e(387, {	-- Emperor Dagran Thaurissan
 					["creatureID"] = 9019,
 					["groups"] = {
-						classicAch(642, {	-- Blackrock Depths
+						ach(642, {	-- Blackrock Depths
 							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								4362,	-- The Fate of the Kingdom
 								4003,	-- The Royal Rescue
 							},
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						ach(5051, {	-- Blackrock Depths Guild Run

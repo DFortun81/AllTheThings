@@ -242,6 +242,8 @@ i(85266);	-- Winter Blossom Tree
 i(128851);	-- Roasted juicycrunch carrots
 i(172043);	-- Feast of Gluttonous Hedonism
 
+-- Cata
+i(86432);	-- Banana-Infused Rum
 
 -- "Mount Equipment"
 i(141593);	-- Dro's Key
@@ -501,12 +503,7 @@ i(160376);	-- Wilderbew Special
 i(180470);	-- Wild Fungus
 i(173773);	-- Yeasty Hunk
 
-i(15869);	-- Silver Skeleton Key
-i(15870);	-- Golden Skeleton Key
-i(15871);	-- Truesilver Skeleton Key
-i(15872);	-- Arcanite Skeleton Key
-i(18262);	-- Elemental Sharpening Stone
-i(18283);	-- Biznicks 247x128 Accurascope
+
 
 -- Bfa Consumables
 i(162107);	-- [Makeshift Azerite Detector]
@@ -781,4 +778,5 @@ i(206033);	-- Untranslated Obsidian Tome
 ------------------
 -- Quest Items --
 i(208030);	-- Advanced Titan Gizmo
+i(206653);	-- Fel Pinecone
 i(205978);	-- Glob of Azmerloth Slime

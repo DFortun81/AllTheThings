@@ -6,18 +6,12 @@ root(ROOTS.PVP, pvp(n(-240, {	-- Rated
 	filter(RECIPES, bubbleDown({ ["timeline"] = { "removed 8.0.1" }, }, {
 		-- ["description"] = "This had a chance to drop from any rated battleground win during Legion, but has not been seen since Legion ended.",
 		-- Added to Vendor in 10.0.7
+		i(137894),	-- Pattern: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
+		i(137926),	-- Pattern: Gravenscale Spaulders [Rank 3] (RECIPE!)
 		i(137975, {	-- Pattern: Imbued Silkweave Epaulets [Rank 3] (RECIPE!)
 			["requireSkill"] = TAILORING,
 		}),
-		i(123950, {	-- Plans: Demonsteel Pauldrons [Rank 3] (RECIPE!)
-			["requireSkill"] = BLACKSMITHING,
-		}),
-		i(137894, {	-- Pattern: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
-			["requireSkill"] = LEATHERWORKING,
-		}),
-		i(137926, {	-- Pattern: Gravenscale Spaulders [Rank 3] (RECIPE!)
-			["requireSkill"] = LEATHERWORKING,
-		}),
+		i(123950),	-- Plans: Demonsteel Pauldrons [Rank 3] (RECIPE!)
 	})),
 	i(103533, {	-- Vicious Saddle
 		-- #if AFTER DF

@@ -129,22 +129,15 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 		["lvl"] = lvlsquish(44, 44, 15),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				classicAch(5788, {	-- Agent of the Shen'dralar
-					["maps"] = { 236 },	-- Capital Gardens
-					["timeline"] = { "removed 4.0.3" },
-					-- #if ANYCLASSIC
+				achWithRep(5788, 809, {	-- Agent of the Shen'dralar [Shen'dralar Exalted]
 					-- #if BEFORE 4.1.0
 					-- This isn't actually an achievement yet.
 					["description"] = "Earn exalted status with the Shen'dralar.",
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 809, true); end]],
-					-- #else
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 809); end]],
 					-- #endif
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					-- #endif
+					["maps"] = { 236 },	-- Capital Gardens
+					["timeline"] = { "removed 4.0.3" },
 				}),
-				ach(644, {	-- King of Dire Maul
+				ach(644, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" }, }, {	-- King of Dire Maul
 					["maps"] = { 239, 235, 236 },	-- All Wings
 					["groups"] = {
 						crit(545, {	-- Alzzin the Wildshaper
@@ -163,7 +156,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						}),
 						-- #endif
 					},
-				}),
+				})),
 				ach(5053, {	-- King of Dire Maul Guild Run
 					["timeline"] = { "added 4.0.3" },
 				}),
@@ -301,11 +294,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
 					["group"] = {
-						classicAch(2357, {	-- Dreadsteed of Xoroth
+						ach(2357, {	-- Dreadsteed of Xoroth
 							["sourceQuest"] = 7631,	-- Dreadsteed of Xoroth
 							-- #if BEFORE WRATH
 							["description"] = "Completed the Dreadsteed of Xoroth warlock quest.",
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 							["timeline"] = { "removed 4.0.3" },
 							["classes"] = { WARLOCK },
@@ -798,7 +790,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 				}),
 				q(5518, {	-- The Gordok Ogre Suit
 					["qg"] = 14338,	-- Knot Thimblejack
-					["timeline"] = { "removed 4.0.3", "added 10.1.5" },
+					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { 235 },	-- Gordok Commons
 					["cost"] = {
 						{ "i", 14048, 4 },	-- Bolt of Runecloth
@@ -810,12 +802,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["groups"] = {
 						{
 							["recipeID"] = 22813,	-- Gordok Ogre Suit
-							["timeline"] = { "removed 4.0.3", "added 10.1.5" },
+							["timeline"] = { "removed 4.0.3" },
 							["requireSkill"] = TAILORING,
 						},
 						{
 							["recipeID"] = 22815,	-- Gordok Ogre Suit
-							["timeline"] = { "removed 4.0.3", "added 10.1.5" },
+							["timeline"] = { "removed 4.0.3" },
 							["requireSkill"] = LEATHERWORKING,
 						},
 						{
@@ -1281,7 +1273,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						["creatureID"] = 11492,
 						["groups"] = {
 							i(18501, {	-- Felvine Shard
-								["description"] = "Looted from the Felvine Shard object that spawns under the vines near the last boss in Dire Maul East.",
+								["description"] = "Spawns under the vines near the last boss in Dire Maul East.",
+								["provider"] = { "o", 179559 },	-- Felvine Shard
 							}),
 							i(18321),	-- Energetic Rod
 							i(18310),	-- Fiendish Machete
@@ -1307,8 +1300,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 				["cost"] = { { "i", 18249, 1 } },	-- Crescent Key
 				-- #endif
 				["groups"] = {
-					-- #if BEFORE 4.0.3
-					n(ZONE_DROPS, {
+					n(ZONE_DROPS, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3", ADDED_10_1_5 } }, {
 						i(18250, {	-- Gordok Shackle Key
 							["description"] = "NOTE: Do NOT Free Knot if you are doing a Tribute Run. He runs away.",
 							["crs"] = {
@@ -1324,8 +1316,27 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 								11448,	-- Gordok Warlock
 							},
 						}),
-					}),
-					-- #endif
+					})),
+					n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+						q(77194, {	-- Free Knot!
+							["qg"] = 14338,	-- Knot Thimblejack
+							["cost"] = {
+								{ "i", 18250, 1 },	-- Gordok Shackle Key
+							},
+							["repeatable"] = true,
+							["groups"] = {
+								i(208028, {	-- Knot Thimblejack's Cache
+									i(208031),	-- Convenient Crate
+									i(18517),	-- Pattern: Chromatic Cloak (RECIPE!)
+									i(18514),	-- Pattern: Girdle of Insight (RECIPE!)
+									i(18518),	-- Pattern: Hide of the Wild (RECIPE!)
+									i(18515),	-- Pattern: Mongoose Boots (RECIPE!)
+									i(18519),	-- Pattern: Shifting Cloak (RECIPE!)
+									i(18516),	-- Pattern: Swift Flight Bracers (RECIPE!)
+								}),
+							},
+						}),
+					})),
 					n(COMMON_BOSS_DROPS, {
 						["description"] = "The following items can drop from any of the guards.",
 						["crs"] = {
@@ -1423,13 +1434,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						-- #endif
 					}),
 					o(179501, -- Knot Thimblejack's Cache
-						bubbleDown({ ["timeline"] = { "removed 4.0.3", "added 10.1.5" } }, {
+						bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, {
 						["sourceQuest"] = 5525,	-- Free Knot!
 						-- #if BEFORE 4.0.3
 						["cost"] = { { "i", 18250, 1 } },	-- Gordok Shackle Key
 						-- #endif
 						["groups"] = {
-							-- #if BEFORE 4.0.3
 							i(18240),	-- Ogre Tannin
 							i(18414),	-- Pattern: Belt of the Archmage (RECIPE!)
 							i(18517),	-- Pattern: Chromatic Cloak (RECIPE!)
@@ -1442,15 +1452,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 							i(18417),	-- Pattern: Mooncloth Gloves (RECIPE!)
 							i(18519),	-- Pattern: Shifting Cloak (RECIPE!)
 							i(18516),	-- Pattern: Swift Flight Bracers (RECIPE!)
-							-- #endif
-							i(18414),	-- Pattern: Belt of the Archmage (RECIPE!)
-							i(18517),	-- Pattern: Chromatic Cloak (RECIPE!)
-							i(18514),	-- Pattern: Girdle of Insight (RECIPE!)
-							i(18518),	-- Pattern: Hide of the Wild (RECIPE!)
-							i(18515),	-- Pattern: Mongoose Boots (RECIPE!)
-							i(18519),	-- Pattern: Shifting Cloak (RECIPE!)
-							i(18516),	-- Pattern: Swift Flight Bracers (RECIPE!)
 							-- These were added during 8.1.5 to the Time-Lost Trader (BFA Tailor Questline)
+							--i(18414),	-- Pattern: Belt of the Archmage (RECIPE!)
 							--i(18418),	-- Pattern: Cloak of Warding (RECIPE!)
 							--i(18415),	-- Pattern: Felcloth Gloves (RECIPE!)
 							--i(18416),	-- Pattern: Inferno Gloves (RECIPE!)
@@ -1517,6 +1520,18 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 							}),
 						},
 					}),
+					n(14338, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Knot Thimblejack
+						["groups"] = {
+							r(22813, {	-- Gordok Ogre Suit
+								["requireSkill"] = TAILORING,
+								["sourceQuest"] = 27119,	-- The Gordok Ogre Suit
+							}),
+							r(22815, {	-- Gordok Ogre Suit
+								["requireSkill"] = LEATHERWORKING,
+								["sourceQuest"] = 27119,	-- The Gordok Ogre Suit
+							}),
+						},
+					})),
 					n(14353, {	-- Mizzle the Crafty
 						["description"] = "Speak with Mizzle after killing |cFFFFD700King Gordok|r to spawn the Tribute Chest.",
 						["groups"] = {

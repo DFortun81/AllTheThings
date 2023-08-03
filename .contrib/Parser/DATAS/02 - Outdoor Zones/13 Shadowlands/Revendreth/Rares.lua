@@ -158,10 +158,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(180873),	-- Smolderheart (TOY!)
 				},
 			}),
-			n(160385, {	-- Soulstalker Doina
+			n(160392, {	-- Soulstalker Doina
 				["description"] = "Spawns at the top of the tower.  She will escape through mirror portals twice during the encounter.  Follow her to continue the fight.",
 				["crs"] = {
-					160392,	-- Soulstalker Doina
+					160385,	-- Soulstalker Doina
 					160393,	-- Soulstalker Doina
 					160401,	-- Grenich
 					160402,	-- Grond

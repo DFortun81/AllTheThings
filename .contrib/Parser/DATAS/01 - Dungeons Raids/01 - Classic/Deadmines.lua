@@ -582,13 +582,12 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				["timeline"] = { "removed 4.0.3" },
 				["groups"] = {
 					-- #if BEFORE 4.0.3
-					classicAch(628, {	-- Deadmines
+					ach(628, {	-- Deadmines
 						-- #if BEFORE WRATH
 						["sourceQuests"] = {
 							166,	-- The Defias Brotherhood (7/7)
 							373,	-- The Unsent Letter
 						},
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						["races"] = ALLIANCE_ONLY,
 						-- #endif
 					}),

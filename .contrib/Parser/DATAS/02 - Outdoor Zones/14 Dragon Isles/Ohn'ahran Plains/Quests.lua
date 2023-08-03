@@ -449,7 +449,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			header(HEADERS.AchCriteria, 16405.02, {	-- Initiate's Day Out
 				q(65906, {	-- A Disgruntled Initiate
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						65779,	-- Into the Plains
 						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
@@ -562,16 +562,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 			}),
 			header(HEADERS.AchCriteria, 16405.04, {	-- Pinewood Post
-				q(65837, {	-- Trouble In The Pines
-					["sourceQuests"] = {
-						65779,	-- Into the Plains
-						DF_ACCOUNT_CAMPAIGN_QUEST,
-					},
-					["sourceQuestNumRequired"] = 1,
-					["provider"] = { "n", 195524 },	-- Beastmaster Tirren
-					["coord"] = { 62.0, 41.8, OHNAHRAN_PLAINS },
-					["isBreadcrumb"] = true,
-				}),
 				q(66680, {	-- Counting Sheep
 					["sourceQuests"] = { 65837 },	-- Trouble In The Pines
 					["provider"] = { "n", 190025 },	-- Scout Watu
@@ -582,10 +572,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 				q(66681, {	-- Tempests Abound
-					["sourceQuests"] = { 65779 },	-- Into the Plains
+					["sourceQuests"] = { 65837 },	-- Trouble In The Pines
 					["provider"] = { "n", 190024 },	-- Sentinel Olekk
 					["coord"] = { 81.0, 58.9, OHNAHRAN_PLAINS },
 				}),
+				q(65837, {	-- Trouble In The Pines
+				["sourceQuests"] = {
+					65779,	-- Into the Plains
+					DF_ACCOUNT_CAMPAIGN_QUEST,
+				},
+				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 195524 },	-- Beastmaster Tirren
+				["coord"] = { 62.0, 41.8, OHNAHRAN_PLAINS },
+				["isBreadcrumb"] = true,
+			}),
 				q(66689, {	-- More Than a Rock
 					["sourceQuests"] = { 66681 },	-- Tempests Abound
 					["provider"] = { "i", 194031 },	-- Stormtouched Shards
@@ -619,7 +619,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			header(HEADERS.AchCriteria, 16405.05, {	-- Elder Nazuun
 					q(66687, {	-- Land of the Apex
-						["sourceQuests"] = { 66201 },	-- Hooves of War
+						["sourceQuests"] = {
+							66201,	-- Hooves of War
+							DF_ACCOUNT_CAMPAIGN_QUEST,
+						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 190164 },	-- Elder Nazuun
 						["coord"] = { 41.6, 56.7, OHNAHRAN_PLAINS },
 					}),

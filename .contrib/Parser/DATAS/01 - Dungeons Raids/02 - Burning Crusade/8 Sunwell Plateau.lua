@@ -29,44 +29,44 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 				i(35198),	-- Design: Loop of Forged Power
 				i(35201),	-- Design: Pendant of Sunfire
 				i(35199),	-- Design: Ring of Flowing Life
-				i(35218, {	-- Pattern: Carapace of Sun and Shadow
+				i(35218, {	-- Pattern: Carapace of Sun and Shadow (RECIPE!)
 					["spellID"] = 46138,	-- Carapace of Sun and Shadow
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
-				i(35217, {	-- Pattern: Embrace of the Phoenix
+				i(35217, {	-- Pattern: Embrace of the Phoenix (RECIPE!)
 					["spellID"] = 46137,	-- Embrace of the Phoenix
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
-				i(35213, {	-- Pattern: Fletcher's Gloves of the Phoenix
+				i(35213, {	-- Pattern: Fletcher's Gloves of the Phoenix (RECIPE!)
 					["spellID"] = 46133,	-- Fletcher's Gloves of the Phoenix
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
-				i(35214, {	-- Pattern: Gloves of Immortal Dusk
+				i(35214, {	-- Pattern: Gloves of Immortal Dusk (RECIPE!)
 					["spellID"] = 46134,	-- Gloves of Immortal Dusk
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
 				i(35205),	-- Pattern: Hands of Eternal Light
-				i(35216, {	-- Pattern: Leather Chestguard of the Sun
+				i(35216, {	-- Pattern: Leather Chestguard of the Sun (RECIPE!)
 					["spellID"] = 46136,	-- Leather Chestguard of the Sun
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
-				i(35212, {	-- Pattern: Leather Gauntlets of the Sun
+				i(35212, {	-- Pattern: Leather Gauntlets of the Sun (RECIPE!)
 					["spellID"] = 46132,	-- Leather Gauntlets of the Sun
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
 				i(35207),	-- Pattern: Robe of Eternal Light
-				i(35219, {	-- Pattern: Sun-Drenched Scalee Chestguard
+				i(35219, {	-- Pattern: Sun-Drenched Scale Chestguard (RECIPE!)
 					["spellID"] = 46139,	-- Sun-Drenched Scalee Chestguard
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
-				i(35215, {	-- Pattern: Sun-Drenched Scale Gloves
+				i(35215, {	-- Pattern: Sun-Drenched Scale Gloves (RECIPE!)
 					["spellID"] = 46135,	-- Sun-Drenched Scale Gloves
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
@@ -219,11 +219,8 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 					25741,	-- M'uru
 				},
 				["groups"] = {
-					i(175160, {	-- Holy Relic (Bag of Tricks addition)
-						["races"] = { VULPERA },
-						["questID"] = 59035,
-						["timeline"] = { "added 8.3.0.33115" },
-						["ignoreBonus"] = true,
+					ig(175160, {	-- Holy Relic (RI!)
+						["timeline"] = { ADDED_8_3_0 },
 					}),
 					i(122114, {	-- Chaos Pup (PET!)
 						["timeline"] = { "added 6.1.0.19445" },
@@ -254,19 +251,20 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 			e(1596, {	-- Kil'jaeden
 				["creatureID"] = 25315,
 				["groups"] = {
-					ach(698),	-- Sunwell Plateau
+					ach(698, {	-- Sunwell Plateau
+						["timeline"] = { "added 3.0.1" },
+					}),
 					ach(5092, {	-- Sunwell Plateau Guild Run
 						["timeline"] = { "added 4.0.3" },
 					}),
-					classicAch(725, {	-- Thori'dal, the Stars' Fury
+					ach(725, {	-- Thori'dal, the Stars' Fury
 						["provider"] = { "i", 34334 },	-- Thori'dal, the Stars' Fury
-						["classes"] = { WARRIOR, ROGUE, HUNTER },
 						-- #if BEFORE WRATH
 						["description"] = "Obtain Thori'dal, the Stars' Fury from Kil'jaeden in Sunwell Plateau.",
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 						-- #else
 						["description"] = "You must equip the bow to earn this achievement.",
 						-- #endif
+						["classes"] = { WARRIOR, ROGUE, HUNTER },
 					}),
 					i(34334),	-- Thori'dal, the Stars' Fury (LEGENDARY!)
 					i(34247),	-- Apolyon, the Soul-Render

@@ -73,27 +73,17 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 			}),
 			n(ACHIEVEMENTS, {
-				ach(708, applyclassicphase(PHASE_TWO, {	-- Hero of the Frostwolf Clan
-					["races"] = HORDE_ONLY,
+				applyclassicphase(PHASE_TWO, achWithRep(708, 729, {	-- Hero of the Frostwolf Clan
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Frostwolf Clan to Exalted.",
 					-- #endif
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 729); end]],
-					-- #endif
+					["races"] = HORDE_ONLY,
 				})),
-				ach(709, applyclassicphase(PHASE_TWO, {	-- Hero of the Stormpike Guard
-					["races"] = ALLIANCE_ONLY,
+				applyclassicphase(PHASE_TWO, achWithRep(709, 730, {	-- Hero of the Stormpike Guard
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Stormpike Guard to Exalted.",
 					-- #endif
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 730); end]],
-					-- #endif
+					["races"] = ALLIANCE_ONLY,
 				})),
 				ach(1167, {	-- Master of Alterac Valley (Alliance - before 4.3.0)
 					-- Meta Achievement should symlink the contained Achievements from Source
@@ -132,6 +122,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					}},
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
+					["timeline"] = { "added 3.0.1" },
 				}),
 				ach(1168, {	-- Master of Alterac Valley (Horde - before 4.3.0)
 					-- Meta Achievement should symlink the contained Achievements from Source
@@ -156,61 +147,72 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = HORDE_ONLY,
 				}),
 				ach(218, {	-- Alterac Valley Victory
+					["timeline"] = { "added 3.0.1" },
 					["rank"] = 1,
 				}),
 				ach(219, {	-- Alterac Valley Veteran
+					["timeline"] = { "added 3.0.1" },
 					["rank"] = 100,
 				}),
-				ach(221),	-- Alterac Grave Robber
-				ach(222),	-- Tower Defense
+				ach(221, {	-- Alterac Grave Robber
+					["timeline"] = { "added 3.0.1" },
+				}),
+				ach(222, {	-- Tower Defense
+					["timeline"] = { "added 3.0.1" },
+				}),
 				ach(1151, {	-- Loyal Defender (A)
+					["timeline"] = { "added 3.0.1" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(224, {	-- Loyal Defender (H)
+					["timeline"] = { "added 3.0.1" },
 					["races"] = HORDE_ONLY,
 				}),
 				ach(225, {	-- Everything Counts (A)
+					["timeline"] = { "added 3.0.1" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(1164, {	-- Everything Counts (H)
+					["timeline"] = { "added 3.0.1" },
 					["races"] = HORDE_ONLY,
 				}),
-				ach(223),	-- The Sickly Gazelle
+				ach(223, {	-- The Sickly Gazelle
+					["timeline"] = { "added 3.0.1" },
+				}),
 				ach(873, {	-- Frostwolf Perfection
+					["timeline"] = { "added 3.0.1" },
 					["races"] = HORDE_ONLY,
 				}),
 				ach(220, {	-- Stormpike Perfection
+					["timeline"] = { "added 3.0.1" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(582, {	-- Alterac Valley All-Star
-					crit(1),	-- Assault a graveyard
-					crit(2),	-- Defend a graveyard
-					crit(3),	-- Assault a tower
-					crit(4),	-- Defend a tower
-					crit(5),	-- Kill someone in the Field of Strife
+					["timeline"] = { "added 3.0.1" },
 				}),
-				classicAch(706, {	-- Frostwolf Howler
+				ach(706, {	-- Frostwolf Howler
 					["provider"] = { "i", 19029 },	-- Horn of the Frostwolf Howler
-					["races"] = HORDE_ONLY,
-					["filterID"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain a Frostwolf Howler from Alterac Valley.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
-				}),
-				classicAch(707, {	-- Stormpike Battle Charger
-					["provider"] = { "i", 19030 },	-- Stormpike Battle Charger
-					["races"] = ALLIANCE_ONLY,
+					["races"] = HORDE_ONLY,
 					["filterID"] = MOUNTS,
+				}),
+				ach(707, {	-- Stormpike Battle Charger
+					["provider"] = { "i", 19030 },	-- Stormpike Battle Charger
 					-- #if BEFORE WRATH
 					["description"] = "Obtain a Stormpike Battle Charger from Alterac Valley.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
+					["races"] = ALLIANCE_ONLY,
+					["filterID"] = MOUNTS,
 				}),
 				ach(1166, {	-- To the Looter Go the Spoils
 					["provider"] = { "i", 18228 },	-- Autographed Picture of Foror & Tigule
+					["timeline"] = { "added 3.0.1" },
 				}),
-				ach(226),	-- The Alterac Blitz
+				ach(226, {	-- The Alterac Blitz
+					["timeline"] = { "added 3.0.1" },
+				}),
 			}),
 			-- #if BEFORE TBC
 			n(EXPLORATION, {

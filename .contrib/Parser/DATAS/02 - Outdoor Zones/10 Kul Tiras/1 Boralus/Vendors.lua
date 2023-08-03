@@ -200,8 +200,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 75.5, 12.6, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					i(168028, {	-- Pattern: Mallet of Thunderous Skins
+					i(168028, {	-- Pattern: Mallet of Thunderous Skins (RECIPE!)
 						["sourceQuests"] = { 55235 },	-- Instruments of Destruction
+						["timeline"] = { ADDED_8_1_5 },
 					}),
 				},
 			}),
@@ -324,7 +325,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			n(143560, {	-- Marshal Gabriel
 				["coord"] = { 56.2, 25.7, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["itemID"] = 137642,	-- Mark of Honor
+
 				["g"] = {
 				--	Arsenals
 				--	Dread Aspirant, Battle for Azeroth Season 1

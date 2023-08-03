@@ -206,10 +206,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(579, {	-- The Black Stalker
 					["creatureID"] = 17882,
 					["groups"] = {
-						classicAch(650, {	-- Underbog
+						ach(650, {	-- Underbog
 							-- #if BEFORE WRATH
 							["sourceQuest"] = 9719,	-- Stalk the Stalker
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						-- #if AFTER 7.3.5
@@ -339,7 +338,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(579, {	-- The Black Stalker
 						["creatureID"] = 17882,
 						["groups"] = {
-							ach(670),	-- Heroic: Underbog
+							ach(670, {	-- Heroic: Underbog
+								["timeline"] = { "added 3.0.1" },
+							}),
 							ach(5070, {	-- Heroic: Underbog Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),

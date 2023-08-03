@@ -189,20 +189,11 @@ root(ROOTS.Zones, {
 						},
 						-- #endif
 					}),
-					ach(1007, {	-- The Wyrmrest Accord
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1091); end]],
-						-- #endif
+					achWithRep(1007, 1091, {	-- The Wyrmrest Accord
+						["maps"] = { BOREAN_TUNDRA },
 					}),
-					ach(949, {	-- Tuskarrmageddon
+					achWithRep(949, 1073, {	-- Tuskarrmageddon
 						["maps"] = { BOREAN_TUNDRA, HOWLING_FJORD },
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1073); end]],
-						-- #endif
 					}),
 					ach(547, {	-- Veteran of the Wrathgate
 						["sourceQuests"] = {
@@ -1335,7 +1326,9 @@ root(ROOTS.Zones, {
 						["qg"] = 26673,	-- Image of Archmage Modera
 						["sourceQuests"] = {
 							12439,	-- A Distrurbance in The Weset
+							-- #if AFTER 6.2.0.19953
 							39204,	-- Hero's Call: Dragonblight!
+							-- #endif
 							12440,	-- To Stars' Rest!
 							11995,	-- Your Presence is Required at Stars' Rest
 						},
@@ -2390,7 +2383,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { "removed 4.0.1" },
 							}),
 							i(45774),	-- Pattern: Emerald Bag
-							i(44509),	-- Pattern: Trapper's Traveling Pack
+							i(44509),	-- Pattern: Trapper's Traveling Pack (RECIPE!)
 							i(44061),	-- Pigment-Stained Robes
 							i(44052),	-- Totemic Purification Rod
 							i(44051),	-- Traditional Flensing Knife

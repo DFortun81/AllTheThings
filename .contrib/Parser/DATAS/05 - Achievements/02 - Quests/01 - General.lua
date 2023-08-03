@@ -80,17 +80,48 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		crit(2),		-- Amphitheater of Anguish in Zul'Drak
 		crit(3),		-- Crucible of Carnage in Twilight Highlands
 	}),
+	applyclassicphase(WRATH_PHASE_ONE, ach(1681, {	-- The Loremaster (A)
+		["sym"] = {{"meta_achievement",
+			1678,	-- Loremaster of Kalimdor (A)
+			1676,	-- Loremaster of Eastern Kingdoms (A)
+			1262,	-- Loremaster of Outland (A)
+			41,		-- Loremaster of Northrend (A)
+		}},
+		["timeline"] = { "added 3.0.1", "removed 5.0.4.16016" },
+		["races"] = ALLIANCE_ONLY,
+		["groups"] = {
+			title(93),	-- Loremaster
+			i(43300),	-- Loremaster's Colors
+		},
+	})),
+	applyclassicphase(WRATH_PHASE_ONE, ach(1682, {	-- The Loremaster (H)
+		["sym"] = {{"meta_achievement",
+			1680,	-- Loremaster of Kalimdor (H)
+			1677,	-- Loremaster of Eastern Kingdoms (H)
+			1274,	-- Loremaster of Outland (H)
+			1360,	-- Loremaster of Northrend (H)
+		}},
+		["timeline"] = { "added 3.0.1", "removed 5.0.4.16016" },
+		["races"] = HORDE_ONLY,
+		["groups"] = {
+			title(93),	-- Loremaster
+			i(43300),	-- Loremaster's Colors
+		},
+	})),
 	ach(7520, {		-- The Loremaster
-		title(93),		-- Loremaster
-		i(43300),		-- Loremaster's Colors
-		crit(1),		-- Loremaster of Eastern Kingdoms
-		crit(2),		-- Loremaster of Kalimdor
-		crit(3),		-- Loremaster of Outland
-		crit(4),		-- Loremaster of Northrend
-		crit(5),		-- Loremaster of Cataclysm
-		crit(6),		-- Loremaster of Pandaria
-		crit(7),		-- Loremaster of Draenor
-		crit(8),		-- Loremaster of Legion
-		crit(9),		-- Loremaster of Kul Tiras / Zandalar
+		["timeline"] = { "added 5.0.4.16016" },
+		["groups"] = {
+			title(93),		-- Loremaster
+			i(43300),		-- Loremaster's Colors
+			crit(1),		-- Loremaster of Eastern Kingdoms
+			crit(2),		-- Loremaster of Kalimdor
+			crit(3),		-- Loremaster of Outland
+			crit(4),		-- Loremaster of Northrend
+			crit(5),		-- Loremaster of Cataclysm
+			crit(6),		-- Loremaster of Pandaria
+			crit(7),		-- Loremaster of Draenor
+			crit(8),		-- Loremaster of Legion
+			crit(9),		-- Loremaster of Kul Tiras / Zandalar
+		},
 	}),
 }));

@@ -18,14 +18,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 		["lvl"] = lvlsquish(70, 68, 30),	-- The attunement quests were originally level 70 required, but once removed, level 68s could zone in.
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				classicAch(959, {	-- The Scale of the Sands
+				achWithRep(959, 990, {	-- The Scale of the Sands
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with The Scale of the Sands to Exalted.",
-					-- #endif
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 990); end]],
 					-- #endif
 					["maps"] = { CAVERNS_OF_TIME },
 				}),
@@ -972,24 +967,24 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 				},
 				-- #ENDIF
 				["groups"] = {
-					i(32748, {	-- Pattern: Bindings of Lightning Reflexes
+					i(32748, {	-- Pattern: Bindings of Lightning Reflexes (RECIPE!)
 						["spellID"] = 41161,	-- Bindings of Lightning Reflexes
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
 					}),
-					i(32751, {	-- Pattern: Living Earth Shoulders
+					i(32751, {	-- Pattern: Living Earth Shoulders (RECIPE!)
 						["spellID"] = 41164,	-- Living Earth Shoulders
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
 					}),
 					i(32755),	-- Pattern: Mantle of Nimble Thought
-					i(32745, {	-- Pattern: Shoulderpads of Renewed Life
+					i(32745, {	-- Pattern: Shoulderpads of Renewed Life (RECIPE!)
 						["spellID"] = 41157,	-- Shoulderpads of Renewed Life
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
 					}),
 					i(32752),	-- Pattern: Swiftheal Wraps
-					i(32746, {	-- Pattern: Swiftstrike Bracers
+					i(32746, {	-- Pattern: Swiftstrike Bracers (RECIPE!)
 						["spellID"] = 41158,	-- Swiftstrike Bracers
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
@@ -1090,7 +1085,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 			e(1581, {	-- Archimonde
 				["creatureID"] = 17968,
 				["groups"] = {
-					ach(695),	-- The Battle for Mount Hyjal
+					ach(695, {	-- The Battle for Mount Hyjal
+						["timeline"] = { "added 3.0.1" },
+					}),
 					ach(5090, {	-- The Battle for Mount Hyjal Guild Run
 						["timeline"] = { "added 4.0.3" },
 					}),

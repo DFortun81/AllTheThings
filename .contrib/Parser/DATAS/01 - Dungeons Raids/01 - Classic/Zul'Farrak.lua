@@ -259,7 +259,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				i(9372, {	-- Sul'thraze the Lasher
 					["description"] = "You must take both of the swords and combine them to form this weapon.",
 					["cost"] = {
-						{ "i", 11086, 1 },	-- Jan'thraze the Protector
+						{ "i", 11086, 1 },	-- Jang'thraze the Protector
 						{ "i", 9379, 1 },	-- Sang'thraze the Deflector
 					},
 					["crs"] = {
@@ -373,7 +373,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				},
 			}),
 			n(7607, {	-- Weegli Blastfuse
+			-- #if BEFORE 10.0.5
 				["description"] = "You must talk to this mob in order to enter the room with the last boss! If you are not fast enough, their whole party hearthstones out of the instance.",
+			-- #else
+				["description"] = "This NPC no longer needs manually triggered to open the final boss door. You can move out of his vicinity (and also fight the group), and he will run to the door.",
+			-- #endif
 			}),
 			n(7604, {	-- Sergeant Bly
 				["description"] = "These adventurers initially help you clear the gauntlet leading up to the previous boss, but then they turn on you. You don't have to fight them if no one in your party needs the quest item.",
@@ -392,11 +396,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			e(489, {	-- Chief Ukorz Sandscalp
 				["creatureID"] = 7267,
 				["groups"] = {
-					ach(639),	-- Zul'Farrak
+					ach(639, {	-- Zul'Farrak
+						["timeline"] = { "added 3.0.1" },
+					}),
 					ach(5048, {	-- Zul'Farrak Guild Run
 						["timeline"] = { "added 4.0.3" },
 					}),
-					i(11086),	-- Jan'thraze the Protector
+					i(11086),	-- Jang'thraze the Protector
 					i(9478),	-- Ripsaw
 					i(9477),	-- The Chief's Enforcer
 					i(9479),	-- Embrace of the Lycan

@@ -35,16 +35,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 	},
 	["groups"] = {
 		n(ACHIEVEMENTS, {
-			classicAch(306, {	-- Master Angler of Azeroth
-				["requireSkill"] = FISHING,
+			ach(306, {	-- Master Angler of Azeroth
 				-- #if BEFORE WRATH
 				["providers"] = {
 					{ "i", 19970 },	-- Arcanite Fishing Pole
 					{ "i", 19979 },	-- Hook of the Master Angler
 				},
 				["description"] = "Win the Booty Bay fishing contest.",
-				["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 				-- #endif
+				["requireSkill"] = FISHING,
 			}),
 		}),
 		n(QUESTS, {

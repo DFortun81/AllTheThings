@@ -12,7 +12,7 @@ root(ROOTS.Zones, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				classicAch(1678, {	-- Loremaster of Kalimdor (A)
+				ach(1678, {	-- Loremaster of Kalimdor (A)
 					-- #if AFTER CATA
 					["sym"] = {{"meta_achievement",
 						4925,	-- Ashenvale Quests (Alliance)
@@ -53,7 +53,7 @@ root(ROOTS.Zones, {
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
 				}),
-				classicAch(1680, {	-- Loremaster of Kalimdor (H)
+				ach(1680, {	-- Loremaster of Kalimdor (H)
 					-- #if BEFORE CATA
 					-- #if BEFORE WRATH
 					-- #if AFTER TBC

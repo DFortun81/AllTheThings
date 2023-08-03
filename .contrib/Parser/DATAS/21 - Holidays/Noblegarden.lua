@@ -181,6 +181,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				2421,	-- Noble Garden (A)
 				2422,	-- Shake Your Bunny-Maker
 			}},
+			["timeline"] = { "added 3.0.1" },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(122),	-- <Name> the Noble
@@ -205,6 +206,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				2420,	-- Noble Garden (H)
 				2422,	-- Shake Your Bunny-Maker
 			}},
+			["timeline"] = { "added 3.0.1" },
 			-- #if BEFORE MOP
 			["races"] = HORDE_ONLY,
 			-- #endif
@@ -224,13 +226,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				{ "i", 6835, 1 },	-- Black Tuxedo Pants
 				-- #endif
 			},
+			["timeline"] = { "added 3.0.1" },
 		}),
 		ach(2417, {	-- Chocolate Lover
 			["cost"] = { { "i", 44791, 25 } },	-- 25 Noblegarden Chocolate
+			["timeline"] = { "added 3.0.1" },
 			["rank"] = 25,
 		}),
 		ach(2418, {	-- Chocoholic
 			["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
+			["timeline"] = { "added 3.0.1" },
 			["rank"] = 100,
 		}),
 		ach(2436, {	-- Desert Rose
@@ -239,6 +244,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			-- #else
 			["provider"] = { "i", 44800 },	-- Spring Robes
 			-- #endif
+			["timeline"] = { "added 3.0.1" },
 			["groups"] = {
 				crit(9139, {	-- Desolace
 					["maps"] = { DESOLACE },
@@ -264,17 +270,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				-- #endif
 				{ "i", 19028 },	-- Elegant Dress
 			},
+			["timeline"] = { "added 3.0.1" },
 		}),
 		ach(2416, {	-- Hard Boiled
 			["description"] = "Use the Blossoming Branch on someone else and hopefully they return the favor.",
 			["provider"] = { "i", 44792 },	-- Blossoming Branch
+			["timeline"] = { "added 3.0.1" },
 			["maps"] = { UNGORO_CRATER },
 		}),
 		ach(2676, {	-- I Found One!
 			["provider"] = { "i", 45072 },	-- Brightly Colored Egg
+			["timeline"] = { "added 3.0.1" },
 		}),
 		ach(2419, {	-- Spring Fling (A)
 			["provider"] = { "n", 32791 },	-- Spring Rabbit
+			["timeline"] = { "added 3.0.1" },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = bubbleDown({ ["races"] = ALLIANCE_ONLY }, {
 				crit(9121, {	-- Azure Watch
@@ -293,6 +303,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		}),
 		ach(2497, {	-- Spring Fling (H)
 			["provider"] = { "n", 32791 },	-- Spring Rabbit
+			["timeline"] = { "added 3.0.1" },
 			["races"] = HORDE_ONLY,
 			["groups"] = bubbleDown({ ["races"] = HORDE_ONLY }, {
 				crit(9202, {	-- Bloodhoof Village
@@ -311,16 +322,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		}),
 		ach(2421, {	-- Noble Garden (A)
 			["provider"] = { "i", 44818 },	-- Noblegarden Egg
+			["timeline"] = { "added 3.0.1" },
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		ach(2420, {	-- Noble Garden (H)
 			["provider"] = { "i", 44818 },	-- Noblegarden Egg
+			["timeline"] = { "added 3.0.1" },
 			["maps"] = { SILVERMOON_CITY },
 			["races"] = HORDE_ONLY,
 		}),
 		ach(2422, {	-- Shake Your Bunny-Maker
 			["provider"] = { "i", 45073 },	-- Spring Flowers
+			["timeline"] = { "added 3.0.1" },
 			["sym"] = {{ "achievement_criteria" }},
 		}),
 		ach(248, {	-- Sunday's Finest
@@ -332,6 +346,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				{ "i", 6835, 1 },	-- Black Tuxedo Pants
 				-- #endif
 			},
+			["timeline"] = { "added 3.0.1" },
 		}),
 	}),
 	n(QUESTS, {

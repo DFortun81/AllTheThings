@@ -28,12 +28,13 @@ src\Modules\Costs.lua
 src\Modules\Events.lua
 src\Modules\Filter.lua
 src\Modules\Tooltip.lua
+src\Modules\Upgrade.lua
 db\Presets.lua
 db\CategoryDB.lua
 db\ObjectDB.lua
 db\RaceDB.lua
 db\ReagentsDB.lua
-locales\en_auto.lua
+db\en_auto.lua
 locales\es.lua
 locales\de.lua
 locales\fr.lua

@@ -44,7 +44,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["isRaid"] = true,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(5847, applyclassicphase(CATA_PHASE_ONE, {	-- Fish or Cut Bait: Ironforge
+				applyclassicphase(CATA_PHASE_ONE, ach(5847, {	-- Fish or Cut Bait: Ironforge
 					["timeline"] = { "added 4.2.0" },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
@@ -66,7 +66,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				})),
-				ach(5841, applyclassicphase(CATA_PHASE_ONE, {	-- Let's Do Lunch: Ironforge
+				applyclassicphase(CATA_PHASE_ONE, ach(5841, {	-- Let's Do Lunch: Ironforge
 					["timeline"] = { "added 4.2.0" },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
@@ -88,13 +88,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				})),
-				ach(1837, applyclassicphase(TBC_PHASE_ONE, {	-- Old Ironjaw
+				applyclassicphase(TBC_PHASE_ONE, ach(1837, {	-- Old Ironjaw
 					["provider"] = { "i", 34484 },	-- Old Ironjaw
-					["requireSkill"] = FISHING,
 					-- #if BEFORE WRATH
 					["description"] = "Fish up Old Ironjaw in Ironforge.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
+					["timeline"] = { "added 2.0.1" },
+					["requireSkill"] = FISHING,
 				})),
 			}),
 			battlepets({
@@ -1455,7 +1455,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						}),
 						i(22729, {	-- Schematic: Steam Tonk Controller
-							["timeline"] = { "created 1.12.1", "added 2.1.0" },
+							["timeline"] = { "created 1.12.1", "added 2.3.0" },
 							["isLimited"] = true,
 						}),
 						i(16041, {	-- Schematic: Thorium Grenade
@@ -1941,7 +1941,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(13478, {	-- Recipe: Elixir of Superior Defense
 							["isLimited"] = true,
 						}),
-						i(5642, {	-- Recipe: Free Action Potion
+						i(5642, {	-- Recipe: Free Action Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

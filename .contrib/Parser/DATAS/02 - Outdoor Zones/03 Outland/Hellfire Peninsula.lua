@@ -97,7 +97,7 @@ root(ROOTS.Zones, {
 						["description"] = "Explore Hellfire Peninsula, revealing the covered areas of the world map.",
 						-- #endif
 					}),
-					classicAch(1189, {	-- To Hellfire and Back [Alliance Version]
+					ach(1189, {	-- To Hellfire and Back [Alliance Version]
 						["races"] = ALLIANCE_ONLY,
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -188,7 +188,7 @@ root(ROOTS.Zones, {
 						},
 						-- #endif
 					}),
-					classicAch(1271, {	-- To Hellfire and Back [Horde Version]
+					ach(1271, {	-- To Hellfire and Back [Horde Version]
 						["races"] = HORDE_ONLY,
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -1113,7 +1113,7 @@ root(ROOTS.Zones, {
 					}),
 					q(9498, {	-- Falcon Watch [Non-Blood Elf]
 						["qg"] = 16577,	-- Martik Tor'seldori
-						["sourceQuest"] = 10124,	-- Forward Base: Reaver's Fall
+						-- ["sourceQuest"] = 10124,	-- Forward Base: Reaver's Fall [Not required, Discord 2023-07-29]
 						["coord"] = { 55.1, 39.1, HELLFIRE_PENINSULA },
 						["races"] = exclude(BLOODELF, HORDE_ONLY),
 						["isBreadcrumb"] = true,
@@ -1121,7 +1121,7 @@ root(ROOTS.Zones, {
 					}),
 					q(9499, {	-- Falcon Watch [Blood Elf]
 						["qg"] = 16577,	-- Martik Tor'seldori
-						["sourceQuest"] = 10124,	-- Forward Base: Reaver's Fall
+						["sourceQuest"] = 10124,	-- Forward Base: Reaver's Fall [Likely not required, Discord 2023-07-29]
 						["coord"] = { 55.1, 39.1, HELLFIRE_PENINSULA },
 						["races"] = { BLOODELF },
 						["isBreadcrumb"] = true,
@@ -1424,7 +1424,7 @@ root(ROOTS.Zones, {
 					}),
 					q(13409, {	-- Hellfire Fortifications [Horde, Non-Death Knights]
 						["qg"] = 18267,	-- Battlecryer Blackeye
-						["sourceQuest"] = 10124,	-- Forward Base: Reaver's Fall
+						-- ["sourceQuest"] = 10124,	-- Forward Base: Reaver's Fall [Not required, Discord 2023-07-29]
 						["coord"] = { 55.9, 39.2, HELLFIRE_PENINSULA },
 						["timeline"] = { "added 3.3.0.10958" },
 						["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
@@ -2246,7 +2246,7 @@ root(ROOTS.Zones, {
 					}),
 					q(9400, {	-- The Assassin
 						["qg"] = 3230,	-- Nazgrel
-						["sourceQuest"] = 10124,	-- Forward Base: Reaver's Fall
+						["sourceQuest"] = 10291,	-- Report to Nazgrel
 						["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
@@ -3179,7 +3179,7 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_TWO, i(35470)),	-- Kodohide Spaulders
 							applyclassicphase(TBC_PHASE_TWO, i(35467)),	-- Mooncloth Vestments
 							applyclassicphase(TBC_PHASE_TWO, i(35468)),	-- Opportunist's Leather Gloves
-							i(29719, {	-- Pattern: Cobrahide Leg Armor
+							i(29719, {	-- Pattern: Cobrahide Leg Armor (A) (RECIPE!)
 								["spellID"] = 35549,	-- Cobrahide Leg Armor
 								["requireSkill"] = LEATHERWORKING,
 							}),
@@ -3195,11 +3195,11 @@ root(ROOTS.Zones, {
 								["spellID"] = 32500,	-- Felstalker Breastplate
 								["requireSkill"] = LEATHERWORKING,
 							}),
-							i(29722, {	-- Pattern: Nethercobra Leg Armor
+							i(29722, {	-- Pattern: Nethercobra Leg Armor (A) (RECIPE!)
 								["spellID"] = 35554,	-- Nethercobra Leg Armor
 								["requireSkill"] = LEATHERWORKING,
 							}),
-							applyclassicphase(TBC_PHASE_THREE, i(34218, {	-- Pattern: Netherscale Ammo Pouch
+							applyclassicphase(TBC_PHASE_THREE, i(34218, {	-- Pattern: Netherscale Ammo Pouch (A) (RECIPE!)
 								["timeline"] = { "removed 4.0.1" },
 							})),
 							i(23619),	-- Plans: Felsteel Shield Spike (RECIPE!)
@@ -3291,7 +3291,7 @@ root(ROOTS.Zones, {
 							i(29152),	-- Marksman's Bow
 							applyclassicphase(TBC_PHASE_TWO, i(35337)),	-- Mooncloth Vestments
 							applyclassicphase(TBC_PHASE_TWO, i(35366)),	-- Opportunist's Leather Gloves
-							i(31361, {	-- Pattern: Cobrahide Leg Armor
+							i(31361, {	-- Pattern: Cobrahide Leg Armor (H) (RECIPE!)
 								["spellID"] = 35549,	-- Cobrahide Leg Armor
 								["requireSkill"] = LEATHERWORKING,
 							}),
@@ -3307,11 +3307,11 @@ root(ROOTS.Zones, {
 								["spellID"] = 32500,	-- Felstalker Breastplate
 								["requireSkill"] = LEATHERWORKING,
 							}),
-							i(31362, {	-- Pattern: Nethercobra Leg Armor
+							i(31362, {	-- Pattern: Nethercobra Leg Armor (H) (RECIPE!)
 								["spellID"] = 35554,	-- Nethercobra Leg Armor
 								["requireSkill"] = LEATHERWORKING,
 							}),
-							applyclassicphase(TBC_PHASE_THREE, i(34201, {	-- Pattern: Netherscale Ammo Pouch
+							applyclassicphase(TBC_PHASE_THREE, i(34201, {	-- Pattern: Netherscale Ammo Pouch (H) (RECIPE!)
 								["timeline"] = { "removed 4.0.1" },
 							})),
 							i(24002),	-- Plans: Felsteel Shield Spike (RECIPE!)

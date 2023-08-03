@@ -269,10 +269,15 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(132743, {	-- Slither-Scale Gauntlets
 						["timeline"] = { "added 7.0.3.22248" },
 					}),
-					i(208015, bubbleDown({ ["timeline"] = { "added 10.1.5.49824" } }, {	-- Stuffed Deviate Scale Pouch
+					i(208015, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Stuffed Deviate Scale Pouch
+						i(208016),	-- Deviate Scale Pouch
+						i(208020),	-- Dagmire Gloves
+						i(208018),	-- Fangblade
 						i(6476),	-- Pattern: Deviate Scale Belt (RECIPE!)
 						i(6474),	-- Pattern: Deviate Scale Cloak (RECIPE!)
 						i(6475),	-- Pattern: Deviate Scale Gloves (RECIPE!)
+						i(208019),	-- Quagmire Trudgers
+						i(208021),	-- Sizzling Stick
 					})),
 				}),
 			}),
@@ -378,10 +383,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			e(481, {	-- Mutanus the Devourer
 				["creatureID"] = 3654,
 				["groups"] = {
-					classicAch(630, {	-- Wailing Caverns
+					ach(630, {	-- Wailing Caverns
 						-- #if BEFORE WRATH
 						["sourceQuest"] = 6981,	-- The Glowing Shard
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5039, {	-- Wailing Caverns Guild Run

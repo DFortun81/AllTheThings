@@ -3208,7 +3208,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
-						i(6054, {	-- Recipe: Shadow Protection Potion
+						i(6054, {	-- Recipe: Shadow Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

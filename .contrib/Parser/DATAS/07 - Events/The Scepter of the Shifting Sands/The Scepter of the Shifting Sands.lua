@@ -61,11 +61,8 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					["coord"] = { 25.7, 90.9, SILITHUS },
 					["lvl"] = 60,
 					["groups"] = {
-						classicAch(416, {	-- Scarab Lord (Achievement)
+						ach(416, {	-- Scarab Lord (Achievement)
 							["sourceQuest"] = 8743,	-- Bang a Gong!
-							-- #if BEFORE WRATH
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
-							-- #endif
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						title(33, {	-- Scarab Lord Crieve

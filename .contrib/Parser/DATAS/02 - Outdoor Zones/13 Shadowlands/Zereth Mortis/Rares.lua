@@ -141,11 +141,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					i(189919),	-- Skittering Scarabid Treads
 				},
 			}),
-			n(184804, {	-- Helmix
+			n(183748, {	-- Helmix
 				["description"] = "Will call out an emote\"The ground vibrates... something burrows beneath the surface!\" in the zone when spawned",
 				["crs"] = {
 					183749,	-- Helmix
-					183748,	-- Helmix
+					184804,	-- Helmix
 				},
 				["coord"] = { 58.2, 68.3, ZERETH_MORTIS },
 				["questID"] = 65551,

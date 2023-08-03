@@ -48,14 +48,9 @@ root(ROOTS.Zones, {
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					ach(896, applyclassicphase(TBC_PHASE_TWO_OGRILA, {	-- A Quest a Day Keeps the Ogres at Bay
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, achWithRep(896, 1038, {	-- A Quest a Day Keeps the Ogres at Bay
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with Ogri'la to Exalted.",
-						-- #endif
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1038); end]],
 						-- #endif
 					})),
 					explorationAch(865, {	-- Explore Blade's Edge Mountains
@@ -63,7 +58,7 @@ root(ROOTS.Zones, {
 						["description"] = "Explore Blade's Edge Mountains, revealing the covered areas of the world map.",
 						-- #endif
 					}),
-					classicAch(1193, {	-- On the Blade's Edge
+					ach(1193, {	-- On the Blade's Edge
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
 						["sourceQuests"] = {
@@ -429,7 +424,9 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 20),
 						["groups"] = {
-							ach(1276),	-- Blade's Edge Bomberman
+							ach(1276, {	-- Blade's Edge Bomberman
+								["timeline"] = { "added 3.0.1" },
+							}),
 						},
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11102, {	-- Bombing Run (druid)
@@ -1320,7 +1317,9 @@ root(ROOTS.Zones, {
 					q(10455, {	-- The Encroaching Wilderness (A)
 						["qg"] = 21066,	-- Rina Moonspring
 						["sourceQuests"] = {
+							-- #if AFTER 6.2.0.19953
 							39199,	-- Hero's Call: Blade's Edge Mountains!
+							-- #endif
 							9794,	-- No Time for Curiosity
 						},
 						["coord"] = { 36.2, 67.2, BLADES_EDGE_MOUNTAINS },
@@ -1330,8 +1329,10 @@ root(ROOTS.Zones, {
 					q(10486, {	-- The Encroaching Wilderness (H)
 						["qg"] = 21117,	-- Gor'drek
 						["sourceQuests"] = {
-							39198,	-- Warchief's Command: Blade's Edge Mountains!
 							9795,	-- The Ogre Threat
+							-- #if AFTER 6.2.0.19953
+							39198,	-- Warchief's Command: Blade's Edge Mountains!
+							-- #endif
 						},
 						["coord"] = { 52.4, 57.9, BLADES_EDGE_MOUNTAINS },
 						["races"] = HORDE_ONLY,

@@ -620,63 +620,53 @@ root(ROOTS.Zones, {
 					})),
 					ach(964, {	-- Going Down?
 						["description"] = "This achievement can be easily earned by riding your epic mount directly off the Scryer elevator when it's at its highest point on to the flat ground below without hitting the bridge. (so jump at an angle)\n\nAdditionally paladins and mages can make themselves immune to get this achievement.",
+						["timeline"] = { "added 3.0.1" },
 					}),
 					ach(906, {	-- Kickin' It Up a Notch
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = COOKING,
 						["groups"] = {
 							crit(5702, {	-- Revenge is Tasty
+								["timeline"] = { "added 3.0.1" },
 								["_quests"] = { 11377 },
 							}),
 							crit(5703, {	-- Super Hot Stew
+								["timeline"] = { "added 3.0.1" },
 								["_quests"] = { 11379 },
 							}),
 							crit(5704, {	-- Manalicious
+								["timeline"] = { "added 3.0.1" },
 								["_quests"] = { 11380 },
 							}),
 							crit(5705, {	-- Soup for the Soul
+								["timeline"] = { "added 3.0.1" },
 								["_quests"] = { 11381 },
 							}),
 						},
 					}),
-					ach(1205, applyclassicphase(TBC_PHASE_ONE, {	-- Hero of Shattrath
+					 applyclassicphase(TBC_PHASE_ONE, achWithReps(1205, { 932, 934 }, {	-- Hero of Shattrath
 						-- #if BEFORE WRATH
-						["cost"] = {
-							{ "i", 31779, 1 },	-- Aldor Tabard
-							{ "i", 31780, 1 },	-- Scryers Tabard
+						["providers"] = {
+							{ "i", 31779 },	-- Aldor Tabard
+							{ "i", 31780 },	-- Scryers Tabard
 						},
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ALL_ITEM_COSTS]],
 						["description"] = "Gained exalted status with The Scryers and The Aldor.\n\nNOTE: This can be accomplished now by learning both faction's Exalted recipes, their tabards, or their equipment that require Exalted reputation to buy. For the sake of simplicity, just buy both tabards as this will also count toward the 25 tabard achievement later.\n\nWARNING: You must maintain at least one of these requirements in order to acquire the achievement with prepatch!",
 						-- #endif
 					})),
-					ach(903, applyclassicphase(TBC_PHASE_ONE, {	-- Shattrath Divided
+					applyclassicphase(TBC_PHASE_ONE, achWithAnyReps(903, { 932, 934 }, {	-- Shattrath Divided
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with The Scryers or The Aldor to Exalted.",
 						-- #endif
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_ANY_OnUpdate(t, 932, 934); end]],
-						-- #endif
 					})),
-					ach(764, applyclassicphase(TBC_PHASE_ONE, {	-- The Burning Crusader (A)
+					applyclassicphase(TBC_PHASE_ONE, achWithReps(764, { 942, 989, 1011, 935, 946 }, {	-- The Burning Crusader (A)
 						-- #if BEFORE WRATH
 						["description"] = "Raise all of The Burning Crusade dungeon reputations to exalted.",
-						-- #endif
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnUpdate(t, 942, 989, 1011, 935, 946); end]],
 						-- #endif
 						["races"] = ALLIANCE_ONLY,
 					})),
-					ach(763, applyclassicphase(TBC_PHASE_ONE, {	-- The Burning Crusader (H)
+					applyclassicphase(TBC_PHASE_ONE, achWithReps(763, { 942, 989, 1011, 935, 947 }, {	-- The Burning Crusader (H)
 						-- #if BEFORE WRATH
 						["description"] = "Raise all of The Burning Crusade dungeon reputations to exalted.",
-						-- #endif
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnUpdate(t, 942, 989, 1011, 935, 947); end]],
 						-- #endif
 						["races"] = HORDE_ONLY,
 					})),
@@ -853,9 +843,18 @@ root(ROOTS.Zones, {
 						-- #endif
 						["groups"] = {
 							objective(1, {	-- 0/10 Smuggled Mana Cell
-								["provider"] = { "i", 34246 },	-- Smuggled Mana Cell
+								["providers"] = {
+									{ "i",  34246 },	-- Smuggled Mana Cell
+									{ "o", 187039 },	-- Smuggled Mana Cell
+								},
 								["cost"] = { { "i", 34248, 1 } },	-- Bash'ir Phasing Device
 								["coord"] = { 51, 19.3, BLADES_EDGE_MOUNTAINS },
+								["crs"] = {
+									22243,	-- Bash'ir Arcanist
+									22241,	-- Bash'ir Raider
+									22242,	-- Bash'ir Spell-Thief
+									22244,	-- Unbound Ethereal
+								},
 							}),
 							i(35232),	-- Shattered Sun Supplies
 						},
@@ -890,9 +889,18 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(70, 70, 25),
 						["groups"] = {
 							objective(1, {	-- 0/10 Smuggled Mana Cell
-								["provider"] = { "i", 34246 },	-- Smuggled Mana Cell
+								["providers"] = {
+									{ "i",  34246 },	-- Smuggled Mana Cell
+									{ "o", 187039 },	-- Smuggled Mana Cell
+								},
 								["cost"] = { { "i", 34248, 1 } },	-- Bash'ir Phasing Device
 								["coord"] = { 51, 19.3, BLADES_EDGE_MOUNTAINS },
+								["crs"] = {
+									22243,	-- Bash'ir Arcanist
+									22241,	-- Bash'ir Raider
+									22242,	-- Bash'ir Spell-Thief
+									22244,	-- Unbound Ethereal
+								},
 							}),
 							i(35232),	-- Shattered Sun Supplies
 						},
@@ -1739,9 +1747,9 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_TWO, i(35362)),	-- Kodohide Helm
 							applyclassicphase(TBC_PHASE_TWO, i(35333)),	-- Mooncloth Cowl
 							applyclassicphase(TBC_PHASE_TWO, i(35368)),	-- Opportunist's Leather Legguards
-							i(29717),	-- Pattern: Drums of Battle
+							i(29717),	-- Pattern: Drums of Battle (RECIPE!)
 							-- #if ANYCLASSIC
-							applyclassicphase(TBC_PHASE_FOUR, i(185926)),	-- Pattern: Greater Drums of Battle
+							applyclassicphase(TBC_PHASE_FOUR, i(185926)),	-- Pattern: Greater Drums of Battle (RECIPE!)
 							-- #endif
 							i(13517),	-- Recipe: Alchemist Stone
 							i(31354),	-- Recipe: Flask of the Titans
@@ -2177,11 +2185,10 @@ root(ROOTS.Zones, {
 					n(18756, {	-- Haris Pilton <Socialite>
 						["coord"] = { 75.6, 30.6, SHATTRATH_CITY },
 						["groups"] = {
-							classicAch(1165, {	-- My Sack is "Gigantique"
+							ach(1165, {	-- My Sack is "Gigantique"
 								["provider"] = { "i", 38082 },	-- "Gigantique" Bag
 								-- #if BEFORE WRATH
 								["description"] = "Equip Haris Pilton's \"Gigantique\" Bag.",
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 								-- #endif
 							}),
 							i(38082, {	-- "Gigantique" Bag
@@ -2246,6 +2253,12 @@ root(ROOTS.Zones, {
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = TIER_FIVE_GROUPS,
 					}),
+					n(23699, bubbleDownSelf({ ["timeline"] = { ADDED_2_2_0 } }, {	-- Kevin Browning <Coffee Aficionado>
+						["coord"] = { 70.6, 51.8, SHATTRATH_CITY },
+						["groups"] = {
+							i(33042),	-- Black Coffee
+						},
+					})),
 					-- #if AFTER WRATH
 					n(33637, {	-- Kirembri Silvermane <Jewelcrafting Trainer>
 						["coord"] = { 58.6, 75.2, SHATTRATH_CITY },
@@ -2407,7 +2420,7 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_TWO, i(35335)),	-- Mooncloth Mitts
 							applyclassicphase(TBC_PHASE_TWO, i(35370)),	-- Opportunist's Leather Tunic
 							i(30833),	-- Pattern: Cloak of Arcane Evasion
-							applyclassicphase(TBC_PHASE_THREE, i(34200, {	-- Pattern: Quiver of a Thousand Feathers
+							applyclassicphase(TBC_PHASE_THREE, i(34200, {	-- Pattern: Quiver of a Thousand Feathers (RECIPE!)
 								["timeline"] = { "removed 4.0.1" },
 							})),
 							i(22910),	-- Recipe: Elixir of Major Shadow Power
@@ -2593,15 +2606,15 @@ root(ROOTS.Zones, {
 							-- #endif
 							i(29128),	-- Lightwarden's Band
 							i(29123),	-- Medallion of the Lightbearer
-							i(29704),	-- Pattern: Blastguard Belt
-							i(29703),	-- Pattern: Blastguard Boots
-							i(29702),	-- Pattern: Blastguard Pants
+							i(29704),	-- Pattern: Blastguard Belt (RECIPE!)
+							i(29703),	-- Pattern: Blastguard Boots (RECIPE!)
+							i(29702),	-- Pattern: Blastguard Pants (RECIPE!)
 							i(30842),	-- Pattern: Flameheart Bracers
 							i(30843),	-- Pattern: Flameheart Gloves
 							i(30844),	-- Pattern: Flameheart Vest
-							i(29693),	-- Pattern: Flamescale Belt
-							i(29691),	-- Pattern: Flamescale Boots
-							i(29689),	-- Pattern: Flamescale Leggings
+							i(29693),	-- Pattern: Flamescale Belt (RECIPE!)
+							i(29691),	-- Pattern: Flamescale Boots (RECIPE!)
+							i(29689),	-- Pattern: Flamescale Leggings (RECIPE!)
 							i(24295),	-- Pattern: Golden Spellthread
 							i(24293),	-- Pattern: Silver Spellthread
 							i(25721),	-- Pattern: Vindicator's Armor Kit (RECIPE!)
@@ -2633,12 +2646,12 @@ root(ROOTS.Zones, {
 							}),
 							-- #endif
 							i(29134),	-- Gauntlets of the Chosen
-							i(29701),	-- Pattern: Enchanted Clefthoof Boots
-							i(29700),	-- Pattern: Enchanted Clefthoof Gloves
-							i(29698),	-- Pattern: Enchanted Clefthoof Leggings
-							i(29684),	-- Pattern: Enchanted Felscale Boots
-							i(29682),	-- Pattern: Enchanted Felscale Gloves
-							i(29677),	-- Pattern: Enchanted Felscale Leggings
+							i(29701),	-- Pattern: Enchanted Clefthoof Boots (RECIPE!)
+							i(29700),	-- Pattern: Enchanted Clefthoof Gloves (RECIPE!)
+							i(29698),	-- Pattern: Enchanted Clefthoof Leggings (RECIPE!)
+							i(29684),	-- Pattern: Enchanted Felscale Boots (RECIPE!)
+							i(29682),	-- Pattern: Enchanted Felscale Gloves (RECIPE!)
+							i(29677),	-- Pattern: Enchanted Felscale Leggings (RECIPE!)
 							i(25722),	-- Pattern: Magister's Armor Kit (RECIPE!)
 							i(24292),	-- Pattern: Mystic Spellthread
 							i(24294),	-- Pattern: Runic Spellthread

@@ -216,6 +216,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							41003,	-- The Emperor's Gift
 							40570,	-- Into The Heavens
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 112338 },	-- Caydori Brightstar
 						["coord"] = { 50.3, 59.0, THE_WANDERING_ISLE },
 						["g"] = {

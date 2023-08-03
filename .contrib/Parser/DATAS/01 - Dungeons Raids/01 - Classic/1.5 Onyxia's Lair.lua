@@ -5,9 +5,9 @@ local ADDED_WITH_RERELEASE = { "added 3.2.2" };
 local REMOVED_WITH_RERELEASE = {
 	"added 1.0.1",
 	-- #if ANYCLASSIC
-	"removed 10.0.1"	-- Blizzard added it back to Classic Wrath!
+	"removed 10.0.1",	-- Blizzard added it back to Classic Wrath!
 	-- #else
-	"removed 3.2.2"
+	"removed 3.2.2",
 	-- #endif
 };
 local REMOVED_WITH_CATA = { "added 1.0.1", "removed 4.0.3" };
@@ -468,7 +468,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				["groups"] = {
 			-- #endif
 					n(10184, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- Onyxia
-						classicAch(684, {	-- Onyxia's Lair (Level 60)
+						ach(684, {	-- Onyxia's Lair (Level 60)
 							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								7635,	-- A Proper String
@@ -477,7 +477,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 								7495,	-- Victory for the Alliance
 								7490,	-- Victory for the Horde
 							},
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						i(18423, {	-- Head of Onyxia (A)

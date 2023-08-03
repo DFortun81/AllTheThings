@@ -86,6 +86,12 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					},
 				}),
 			}),
+			n(SPECIAL, {
+				i(208050, {	-- Grimoire of the Xorothian Felhunter (CI!)
+					["description"] = "Defeat Portal Keeper Hasabel in Antorus, the Burning Throne, while wearing a staff transmogged into  Zhar'doom, Greatstaff of the Devourer. Enter the Orange portal of the boss encounter to be teleported to a different platform. Interact with the deactivated portal near the center of the platform while wearing the transmogged staff and select <Channel the power of your weapon into the gateway.>",
+					["timeline"] = { ADDED_10_1_5 },
+				}),
+			}),
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					-- * = ID confirmed in H
@@ -1756,6 +1762,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(49718),	-- Argus - first kill - received "Khaz'goroth's Courage" (itemID 154176 / "Aggramar's Conviction" (itemID 154173)
 		q(49362),	-- full raid cleared
 		q(48570),	-- Tracking Quest - triggers when the door opens to Kin'garoth
+		q(77246, {["timeline"]={ADDED_10_1_5}}),	-- after <Channel the power of your weapon into the gateway.> for Grimoire of the Xorothian Felhunter (itemID 208050)
 	}),
 });
 root(ROOTS.NeverImplemented, {

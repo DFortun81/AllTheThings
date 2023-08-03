@@ -132,7 +132,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				i(21905, {	-- Pattern: Arcanoweave Bracers
 					["cr"] = 20869,	-- Arcatraz Sentinel
 				}),
-				i(29672, {	-- Pattern: Flame Armor Kit
+				i(29672, {	-- Pattern: Flame Armor Kit (RECIPE!)
 					["cr"] = 20898,	-- Gargantuan Abyssal
 					["timeline"] = { "removed 5.0.4" },
 				}),
@@ -209,13 +209,12 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(551, {	-- Harbinger Skyriss
 					["creatureID"] = 20912,
 					["groups"] = {
-						classicAch(660, {	-- The Arcatraz
+						ach(660, {	-- The Arcatraz
 							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								10882,	-- Harbinger of Doom
 								10886,	-- Trial of the Naaru: Tenacity
 							},
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						-- #if BEFORE 7.3.5
@@ -336,10 +335,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(551, {	-- Harbinger Skyriss
 						["creatureID"] = 20912,
 						["groups"] = {
-							classicAch(681, {	-- Heroic: The Arcatraz
+							ach(681, {	-- Heroic: The Arcatraz
 								-- #if BEFORE WRATH
 								["sourceQuest"] = 10886,	-- Trial of the Naaru: Tenacity
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
 							}),
 							ach(5081, {	-- Heroic: The Arcatraz Guild Run

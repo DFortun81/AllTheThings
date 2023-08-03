@@ -26,12 +26,17 @@ root(ROOTS.Promotions, {
 			}),
 			i(45037, {	-- Epic Purple Shirt
 				["description"] = "Amazon Prime Gaming reward from May 25th 2023 till June 29th 2023.",
-				["timeline"] = { "added 10.1.0.49741", "removed 10.1.0.99999" },
+				["timeline"] = { "added 10.1.0.49741", "removed 10.1.0.50000" },
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			i(71718, {	-- Swift Shorestrider
 				["description"] = "Amazon Prime Gaming reward from June 29th 2023 till July 27th 2023.",
-				["timeline"] = { "added 10.1.0.50000", "removed 10.1.0.99999" },
+				["timeline"] = { "added 10.1.0.50000", "removed 10.1.5.50585" },
+				["u"] = REMOVED_FROM_GAME,
+			}),
+			i(34519, {	-- Silver Pig Coin
+				["description"] = "Amazon Prime Gaming reward from July 25th 2023 till August 24th 2023.",
+				["timeline"] = { "added 10.1.5.50585", "removed 10.1.5.99999" },
 			}),
 		},
 	}),

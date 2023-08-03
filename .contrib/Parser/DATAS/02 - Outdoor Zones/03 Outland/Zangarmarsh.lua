@@ -91,7 +91,7 @@ root(ROOTS.Zones, {
 						["description"] = "Explore Zangarmarsh, revealing the covered areas of the world map.",
 						-- #endif
 					}),
-					classicAch(1190, {	-- Mysteries of the Marsh
+					ach(1190, {	-- Mysteries of the Marsh
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
 						["sourceQuests"] = {
@@ -237,28 +237,18 @@ root(ROOTS.Zones, {
 						}),
 						-- #endif
 					}),
-					ach(953, applyclassicphase(TBC_PHASE_ONE, {	-- Guardian of Cenarius
+					applyclassicphase(TBC_PHASE_ONE, achWithReps(953, { 609, 942 }, {	-- Guardian of Cenarius
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with the Cenarion Circle and Cenarion Expedition to Exalted.",
-						-- #endif
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnUpdate(t, 609, 942); end]],
 						-- #endif
 						["groups"] = {
 							-- NOTE: Achievement says it awards 132, but that's wrong.
 							applyclassicphase(WRATH_PHASE_ONE, title(100)),	-- %, Guardian of Cenarius
 						},
 					})),
-					classicAch(900, {	-- The Czar of Sporeggar
+					achWithRep(900, 970, {	-- The Czar of Sporeggar
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with Sporeggar to Exalted.",
-						-- #endif
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 970); end]],
 						-- #endif
 					}),
 				}),
@@ -313,12 +303,14 @@ root(ROOTS.Zones, {
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182954 },	-- Brackish Mixed School
 						["criteriaID"] = 3865,	-- Brackish Mixed School
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
 					-- #else
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182954 },	-- Brackish Mixed School
 						["criteriaID"] = 3623,	-- Brackish Mixed School
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
 					-- #endif
@@ -332,12 +324,14 @@ root(ROOTS.Zones, {
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182953 },	-- Sporefish School
 						["criteriaID"] = 3870,	-- Sporefish School
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
 					-- #else
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182953 },	-- Sporefish School
 						["criteriaID"] = 3628,	-- Sporefish School
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
 					-- #endif
@@ -562,8 +556,10 @@ root(ROOTS.Zones, {
 						["qg"] = 17841,	-- Ysiel Windsinger
 						["sourceQuests"] = {
 							9912,	-- The Cenarion Expedition
+							-- #if AFTER 6.2.0.19953
 							39181,	-- Hero's Call: Zangarmarsh!
 							39180,	-- Warchief's Command: Zangarmarsh!
+							-- #endif
 						},
 						["coord"] = { 78.4, 62.0, ZANGARMARSH },
 						["lvl"] = lvlsquish(61, 61, 10),
@@ -1456,13 +1452,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 79.3, 63.7, ZANGARMARSH },
 						["groups"] = {
 							i(31804),	-- Cenarion Expedition Tabard
-							classicAch(893, {	-- Cenarion War Hippogryph
+							ach(893, {	-- Cenarion War Hippogryph
 								["provider"] = { "i", 33999 },	-- Cenarion War Hippogryph
-								["filterID"] = MOUNTS,
 								-- #if BEFORE WRATH
 								["description"] = "Obtain the Cenarion War Hippogryph from the Cenarion Expedition in Zangarmarsh.",
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 								-- #endif
+								["filterID"] = MOUNTS,
 							}),
 							i(33999),	-- Cenarion War Hippogryph (MOUNT!)
 							i(30623, {	-- Reservoir Key [Revered]
@@ -1515,11 +1510,11 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_TWO, i(35365)),	-- Kodohide Robe
 							applyclassicphase(TBC_PHASE_TWO, i(35336)),	-- Mooncloth Shoulderpads
 							applyclassicphase(TBC_PHASE_TWO, i(35367)),	-- Opportunist's Leather Helm
-							i(29720),	-- Pattern: Clefthide Leg Armor
+							i(29720),	-- Pattern: Clefthide Leg Armor (RECIPE!)
 							i(25737),	-- Pattern: Heavy Clefthoof Boots (RECIPE!)
 							i(25736),	-- Pattern: Heavy Clefthoof Leggings (RECIPE!)
 							i(25735),	-- Pattern: Heavy Clefthoof Vest (RECIPE!)
-							i(29721),	-- Pattern: Nethercleft Leg Armor
+							i(29721),	-- Pattern: Nethercleft Leg Armor (RECIPE!)
 							i(23618),	-- Plans: Adamantite Sharpening Stone (RECIPE!)
 							i(28632),	-- Plans: Adamantite Weightstone (RECIPE!)
 							i(25526),	-- Plans: Greater Rune of Warding (RECIPE!)

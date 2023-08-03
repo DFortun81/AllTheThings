@@ -125,11 +125,8 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 							i(64316),	-- Mantle of the Forlorn Protector
 							i(64314),	-- Mantle of the Forlorn Vanquisher
 							i(152972),	-- Faceless Minion (PET!)
-							i(175159, {	-- Sinister Shadows (Bag of Tricks addition)
-								["races"] = { VULPERA },
-								["questID"] = 59032,
-								["timeline"] = { "added 8.3.0.33115" },
-								["ignoreBonus"] = true,
+							ig(175159, {	-- Sinister Shadows (RI!)
+								["timeline"] = { ADDED_8_3_0 },
 							}),
 							i(59330),	-- Shalug'doom, the Axe of Unmaking
 							i(59494),	-- "Uhn'agh Fash, the Darkest Betrayal"

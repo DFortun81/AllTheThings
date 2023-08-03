@@ -19,6 +19,17 @@ local RemappedEventToMapID = {
 	[376] = 1952,	-- Terrokar Forest
 };
 
+-- Event ID Remapping by Region
+local remapping = L.EVENT_REMAPPING;
+if GetCVar("portal") == "EU" then
+	remapping[622] = 559; -- EU BC Timewalking
+	remapping[616] = 562; -- EU Wrath Timewalking
+	remapping[628] = 587; -- EU Cata Timewalking
+	remapping[652] = 643; -- EU MoP Timewalking
+	remapping[1063] = 1056; -- EU WoD Timewalking
+	remapping[1265] = 1263;	-- EU Legion Timewalking
+end
+
 -- Event Cache
 -- Determine if the Calendar is implemented or not.
 local isCalendarAvailable = C_Calendar and GetCategoryInfo and GetCategoryInfo(92) ~= "";
@@ -78,7 +89,7 @@ local function GetEventCache()
 						if event then -- If this is nil, then attempting to index it on the same line will toss an error.
 							if event.calendarType == "HOLIDAY" and (not event.sequenceType or event.sequenceType == "" or event.sequenceType == "START") then
 								local eventID = event.eventID;
-								local remappedID = L.EVENT_REMAPPING[eventID] or eventID;
+								local remappedID = remapping[eventID] or eventID;
 								if remappedID then
 									local t = cache[remappedID];
 									if not t then

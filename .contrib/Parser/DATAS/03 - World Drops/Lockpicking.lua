@@ -91,7 +91,7 @@ root(ROOTS.WorldDrops, {
 				i(10424),	-- Plans: Silvered Bronze Leggings (RECIPE!)
 				i(2882),	-- Plans: Silvered Bronze Shoulders (RECIPE!)
 				i(12007),	-- Prairie Ring
-				i(3396),	-- Recipe: Elixir of Lesser Agility
+				i(3396),	-- Recipe: Elixir of Lesser Agility (RECIPE!)
 				i(12008),	-- Savannah Ring
 				i(5756),	-- Sliverblade
 				i(4454, {	-- Talon of Vultros
@@ -167,7 +167,7 @@ root(ROOTS.WorldDrops, {
 				i(3611),	-- Plans: Green Iron Boots (RECIPE!)
 				i(3870),	-- Plans: Green Iron Shoulders (RECIPE!)
 				i(6045),	-- Plans: Iron Counterweight (RECIPE!)
-				i(3830),	-- Recipe: Elixir of Fortitude
+				i(3830),	-- Recipe: Elixir of Fortitude (RECIPE!)
 				i(10601),	-- Schematic: Bright-Eye Goggles
 				i(4416),	-- Schematic: Goblin Land Mine
 				i(4414),	-- Schematic: Portable Bronze Mortar
@@ -255,8 +255,8 @@ root(ROOTS.WorldDrops, {
 				i(7990),	-- Plans: Heavy Mithril Helm (RECIPE!)
 				i(7989),	-- Plans: Mithril Spurs (RECIPE!)
 				i(12683),	-- Plans: Thorium Belt (RECIPE!)
-				i(9295),	-- Recipe: Invisibility Potion
-				i(3395),	-- Recipe: Limited Invulnerability Potion
+				i(9295),	-- Recipe: Invisibility Potion (RECIPE!)
+				i(3395),	-- Recipe: Limited Invulnerability Potion (RECIPE!)
 			}),
 			i(190954, {	-- Serevite Lockbox
 				["timeline"] = { ADDED_10_0_2_LAUNCH },
@@ -285,7 +285,7 @@ root(ROOTS.WorldDrops, {
 				i(7976),	-- Plans: Mithril Shield Spike (RECIPE!)
 				i(3874),	-- Plans: Polished Steel Boots (RECIPE!)
 				i(8029),	-- Plans: Wicked Mithril Blade (RECIPE!)
-				i(9295),	-- Recipe: Invisibility Potion
+				i(9295),	-- Recipe: Invisibility Potion (RECIPE!)
 				i(10603),	-- Schematic: Catseye Ultra Goggles
 				i(10606),	-- Schematic: Parachute Cloak
 			}),
@@ -302,8 +302,8 @@ root(ROOTS.WorldDrops, {
 				i(10301),	-- Pattern: White Bandit Mask
 				i(3874),	-- Plans: Polished Steel Boots (RECIPE!)
 				i(3869),	-- Plans: Shadow Crescent Axe (RECIPE!)
-				i(3830),	-- Recipe: Elixir of Fortitude
-				i(3831),	-- Recipe: Major Troll's Blood Elixir
+				i(3830),	-- Recipe: Elixir of Fortitude (RECIPE!)
+				i(3831),	-- Recipe: Major Troll's Blood Elixir (RECIPE!)
 				i(10601),	-- Schematic: Bright-Eye Goggles
 				i(4416),	-- Schematic: Goblin Land Mine
 				i(4417),	-- Schematic: Large Seaforium Charge
@@ -361,9 +361,9 @@ root(ROOTS.WorldDrops, {
 				i(10301),	-- Pattern: White Bandit Mask
 				i(7990),	-- Plans: Heavy Mithril Helm (RECIPE!)
 				i(8029),	-- Plans: Wicked Mithril Blade (RECIPE!)
-				i(9298),	-- Recipe: Elixir of Giants
-				i(9295),	-- Recipe: Invisibility Potion
-				i(3395),	-- Recipe: Limited Invulnerability Potion
+				i(9298),	-- Recipe: Elixir of Giants (RECIPE!)
+				i(9295),	-- Recipe: Invisibility Potion (RECIPE!)
+				i(3395),	-- Recipe: Limited Invulnerability Potion (RECIPE!)
 				i(10603),	-- Schematic: Catseye Ultra Goggles
 				i(10606),	-- Schematic: Parachute Cloak
 				i(11988),	-- Tellurium Band

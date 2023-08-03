@@ -96,8 +96,8 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 				n(72157, {	-- Hagrus <Reagents>
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(5643),	-- Recipe: Great Rage Potion
-						i(5640),	-- Recipe: Rage Potion
+						i(5643),	-- Recipe: Great Rage Potion (RECIPE!)
+						i(5640),	-- Recipe: Rage Potion (RECIPE!)
 					},
 				}),
 			}),

@@ -214,26 +214,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Explore Winterspring, revealing the covered areas of the world map.",
 					-- #endif
 				}),
-				classicAch(944, {	-- They Love Me In That Tunnel
+				achWithRep(944, 576, {	-- They Love Me In That Tunnel
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with Timbermaw Hold to Exalted.",
-					-- #endif
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 576); end]],
 					-- #endif
 					["maps"] = { FELWOOD },
 				}),
 				-- #if AFTER CATA
-				classicAch(3356, {	-- Winterspring Frostsaber
+				ach(3356, {	-- Winterspring Frostsaber
 					["provider"] = { "i", 13086 },	-- Reins of the Winterspring Frostsaber
-					["races"] = ALLIANCE_ONLY,
-					["f"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain a Winterspring Frosaber.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
+					["races"] = ALLIANCE_ONLY,
+					["f"] = MOUNTS,
 				}),
 				-- #endif
 				ach(4940, {	-- Winterspring Quests
@@ -2319,14 +2313,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						-- #if BEFORE CATA
-						classicAch(3356, {	-- Winterspring Frostsaber
+						ach(3356, {	-- Winterspring Frostsaber
 							["provider"] = { "i", 13086 },	-- Reins of the Winterspring Frostsaber
-							["races"] = ALLIANCE_ONLY,
-							["f"] = MOUNTS,
 							-- #if BEFORE WRATH
 							["description"] = "Obtain a Winterspring Frosaber.",
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 							-- #endif
+							["races"] = ALLIANCE_ONLY,
+							["f"] = MOUNTS,
 						}),
 						-- #endif
 						i(13086),	-- Winterspring Frostsaber (MOUNT!)

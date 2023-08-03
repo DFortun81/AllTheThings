@@ -2,166 +2,303 @@
 --     NOT SORTED YET MODULE     --
 -----------------------------------
 -- Everything in this file hasn't been sorted yet.
-
+SOURCELESS = createHeader({
+	readable = "Sourceless",
+	icon = "Interface\\Icons\\inv_misc_questionmark",
+	text = {
+		en = "Sourceless",
+		ru = "Без Источника",
+		cn = "无来源",
+	},
+	description = {
+		en = "This Category contains Things that probably exist in the game but no known source.",
+	},
+});
 root(ROOTS.Unsorted, {
 	n(SOURCELESS, {
-		["description"] = "This Category contains Things that probably exist in the game but no known source.",
-		["g"] = {
-			n(ARMOR, bubbleDownSelf({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-				-- Quests / Rares ?
-				i(160378),	-- Stormchaser Clutch
-				i(155091),	-- Thovas-Explorer's Cape	-- rewarded by some BfA quest probably
+		n(ARMOR, bubbleDownSelf({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+			-- Quests / Rares ?
+			i(160378),	-- Stormchaser Clutch
+			i(155091),	-- Thovas-Explorer's Cape	-- rewarded by some BfA quest probably
 
-				-- PvP (probably from some Ensemble)
-				i(127103),	-- Gladiator's Plate Shoulders	-- I collected it somehow -Darkal
+			-- PvP (probably from some Ensemble)
+			i(127103),	-- Gladiator's Plate Shoulders	-- I collected it somehow -Darkal
 
-				-- Other
-				i(163255, {	-- 7th Legionnaire's Treads
-					-- CRIEVE NOTE: Keep this here until we get solid proof and an accurate source.
-					["description"] = "There's been a lot of discussion about this item and whether or not it exists. If this drops for you, please provide as much information as you can about how and where you got it. It does not commonly drop like the other items in Arathi and it is suspected not to be available from the Warfront Victory or Warfront Victory Quest Crate either.\n\n - Crieve",
-					["modID"] = 5,
-				}),
-				i(113710),	-- Ravaged Leather Leggings	-- I collected it somehow -Darkal
-			})),
-			n(WEAPONS, bubbleDownSelf({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-				-- Quests / Rares ?
-				i(108905),	-- Jagged Turtleshell Blade
-				i(118186),	-- Frostwolf Wisdom Stick	-- rewarded by some WoD quest
-				i(90331),	-- Face Smasher Warhammer	-- rewarded by some MoP quest probably (Jade Forest?)
-				i(107644),	-- Napmaster's Sleep Mask	-- I collected it somehow -Darkal
-
-				-- PvP (probably from some Ensemble)
-				i(42214),	-- Savage Gladiator's Waraxe	-- I collected it somehow -Darkal
-				i(91498),	-- Malevolent Gladiator's Heavy Crossbow	-- I collected it somehow -Darkal
-				i(91496),	-- Malevolent Gladiator's Touch of Defeat	-- I collected it somehow -Darkal
-				i(91755),	-- Malevolent Gladiator's Baton of Light	-- I collected it somehow -Darkal
-				i(169725),	-- Notorious Gladiator's Bonegrinder (A)	-- I collected it somehow -Darkal
-				i(169724),	-- Notorious Gladiator's Bonegrinder (H)	-- I collected it somehow -Darkal
-			})),
-			n(QUESTS, {	-- These are/were completable
-				-- Classic
-				q(1),	-- Kanrethad's Quest,		TBC: Alexander's Quest,		CLASSIC: The "Chow" Quest (123)aa
-				-- 4.0.3
-				-- 5.0.1
-				q(30549),	-- [DNT] Rearm, Reuse, Recycle TRACKER
-				q(30982),	-- Animal Control
-				q(30997),	-- Animal Control
-				-- 5.3.0
-				q(32832),	-- Taran Zhu and Dezco Scene
-				-- 6.0.1
-				q(33957, {	-- A Gift for Raa'la
-					["description"] = "Area: |cFFf09f26Frostfire Ridge|r",
-					["lvl"] = 10,
-				}),
-				-- 6.1.0
-				q(37805),	-- Goblin Looted
-				-- 7.3.0
-				q(48546),	-- Tracking Quest
-				q(49006),	--
-				q(49162),	--
-				-- 7.3.2
-				q(49619),	--
-				q(49620),	-- completed some missions on the Legion Mission Board
-				q(49621),	--
-				-- 7.3.5
-				q(47957),	--
-				q(47958),	--
-				q(48602),	--
-				q(48603),	--
-				q(49815),	--
-				q(50312),	--
-				-- 8.0.1
-				q(50668, {
-					["description"] = "Area: |cFFf09f26Orgrimmar|r",
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
-				}),
-				q(50768),	--
-				q(51692),	--
-				q(52934),	--
-				q(53650),	--
-				-- 8.1.0
-				q(54424, {
-					["description"] = "Area: |cFFf09f26Boralus Harbor|r",
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(54447, {
-					["description"] = "Category: |cFFf09f26The Zandalari|r",
-					["lvl"] = 50,
-				}),
-				q(53723),	--
-				q(54215),	--
-				q(54216),	--
-				q(54217),	--
-				q(54218),	--
-				q(54219),	--
-				q(54220),	--
-				q(54221),	--
-				q(54222),	--
-				q(54223),	--
-				q(54423),	--
-				q(54445),	--
-				q(54446),	--
-				q(54860),	--
-				-- 8.1.5
-				q(55238),	--
-				-- 8.2.0
-				q(55660, { ["name"] = "Time Trials", ["_drop"] = { "g" }, }),	-- Time Trials (Tournament Realm Quest)
-				q(54966),	--
-				q(54967),	--
-				q(54968),	--
-				q(54970),	--
-				q(54971),	--
-				q(54973),	--
-				q(54974),	--
-				q(56065),	--
-				q(56127),	--
-				q(56478),	--
-				q(56607),	--
-				q(56618),	--
-				q(56667),	--
-				q(56742),	--
-				q(56744),	--
-				q(56766),	--
-				q(56844),	--
-				-- 8.2.5
-				q(57550),	--
-				-- 8.3.0
-				q(58576),	--
-				q(59038),	--
-				q(59040),	--
-				-- 9.0.1
-				q(56067),	--
-				q(56068),	--
-				q(56069),	--
-				q(61923),	--
-				q(62165),	-- Tal-Inara's Call
-				q(62166),	-- Tal-Inara's Call
-				q(62377),	--
-				q(62381),	--
-				q(62578),	--
-				-- 9.0.2
-				q(57537),	-- Covering our Tracks
-				q(63219),	-- @ 73.5,91.6,STORMIND_CITY L6 NE Druid, 2022-07-30
-				-- 9.1.0
-				q(64192),	--
-				q(64369),	--
-				q(64516),	--
-				-- 9.1.5
-				q(64975),	--
+			-- Other
+			i(163255, {	-- 7th Legionnaire's Treads
+				-- CRIEVE NOTE: Keep this here until we get solid proof and an accurate source.
+				["description"] = "There's been a lot of discussion about this item and whether or not it exists. If this drops for you, please provide as much information as you can about how and where you got it. It does not commonly drop like the other items in Arathi and it is suspected not to be available from the Warfront Victory or Warfront Victory Quest Crate either.\n\n - Crieve",
+				["modID"] = 5,
 			}),
-			filter(MISC, {
-				i(185920),	-- Cartel Al Incident Report
-				i(185927),	-- Expedition Report A37J - Foreword
-				i(185928),	-- Expedition Report A37J - Part 1
-				i(185929),	-- Expedition Report A37J - Part 2
-				i(185930),	-- Expedition Report A37J - Part 3
-				i(185931),	-- Expedition Report A37J - Part 4
+			i(113710),	-- Ravaged Leather Leggings	-- I collected it somehow -Darkal
+		})),
+		n(WEAPONS, bubbleDownSelf({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+			-- Quests / Rares ?
+			i(108905),	-- Jagged Turtleshell Blade
+			i(118186),	-- Frostwolf Wisdom Stick	-- rewarded by some WoD quest
+			i(107644),	-- Napmaster's Sleep Mask	-- I collected it somehow -Darkal
+
+			-- PvP (probably from some Ensemble)
+			i(42214),	-- Savage Gladiator's Waraxe	-- I collected it somehow -Darkal
+			i(91498),	-- Malevolent Gladiator's Heavy Crossbow	-- I collected it somehow -Darkal
+			i(91496),	-- Malevolent Gladiator's Touch of Defeat	-- I collected it somehow -Darkal
+			i(91755),	-- Malevolent Gladiator's Baton of Light	-- I collected it somehow -Darkal
+			i(169725),	-- Notorious Gladiator's Bonegrinder (A)	-- I collected it somehow -Darkal
+			i(169724),	-- Notorious Gladiator's Bonegrinder (H)	-- I collected it somehow -Darkal
+		})),
+		n(QUESTS, {	-- These are/were completable
+			-- Classic
+			q(1),	-- Kanrethad's Quest,		TBC: Alexander's Quest,		CLASSIC: The "Chow" Quest (123)aa
+			-- 4.0.3
+			-- 5.0.1
+			q(30549),	-- [DNT] Rearm, Reuse, Recycle TRACKER
+			q(30982),	-- Animal Control
+			q(30997),	-- Animal Control
+			-- 5.3.0
+			q(32832),	-- Taran Zhu and Dezco Scene
+			-- 6.0.1
+			q(33957, {	-- A Gift for Raa'la
+				["description"] = "Area: |cFFf09f26Frostfire Ridge|r",
+				["lvl"] = 10,
 			}),
-		},
+			-- 6.1.0
+			q(37805),	-- Goblin Looted
+			-- 7.3.0
+			q(48546),	-- Tracking Quest
+			q(49006),	--
+			q(49162),	--
+			-- 7.3.2
+			q(49619),	--
+			q(49620),	-- completed some missions on the Legion Mission Board
+			q(49621),	--
+			-- 7.3.5
+			q(47957),	--
+			q(47958),	--
+			q(48602),	--
+			q(48603),	--
+			q(49815),	--
+			q(50312),	--
+			-- 8.0.1
+			q(50668, {
+				["description"] = "Area: |cFFf09f26Orgrimmar|r",
+				["lvl"] = 10,
+				["races"] = HORDE_ONLY,
+			}),
+			q(50768),	--
+			q(51692),	--
+			q(52934),	--
+			q(53650),	--
+			-- 8.1.0
+			q(54424, {
+				["description"] = "Area: |cFFf09f26Boralus Harbor|r",
+				["lvl"] = 50,
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(54447, {
+				["description"] = "Category: |cFFf09f26The Zandalari|r",
+				["lvl"] = 50,
+			}),
+			q(53723),	--
+			q(54215),	--
+			q(54216),	--
+			q(54217),	--
+			q(54218),	--
+			q(54219),	--
+			q(54220),	--
+			q(54221),	--
+			q(54222),	--
+			q(54223),	--
+			q(54423),	--
+			q(54445),	--
+			q(54446),	--
+			q(54860),	--
+			-- 8.1.5
+			q(55238),	--
+			-- 8.2.0
+			q(55660, { ["name"] = "Time Trials", ["_drop"] = { "g" }, }),	-- Time Trials (Tournament Realm Quest)
+			q(54966),	--
+			q(54967),	--
+			q(54968),	--
+			q(54970),	--
+			q(54971),	--
+			q(54973),	--
+			q(54974),	--
+			q(56065),	--
+			q(56127),	--
+			q(56478),	--
+			q(56607),	--
+			q(56618),	--
+			q(56667),	--
+			q(56742),	--
+			q(56744),	--
+			q(56766),	--
+			q(56844),	--
+			-- 8.2.5
+			q(57550),	--
+			-- 8.3.0
+			q(58576),	--
+			q(59038),	--
+			q(59040),	--
+			-- 9.0.1
+			q(56067),	--
+			q(56068),	--
+			q(56069),	--
+			q(61923),	--
+			q(62165),	-- Tal-Inara's Call
+			q(62166),	-- Tal-Inara's Call
+			q(62377),	--
+			q(62381),	--
+			q(62578),	--
+			-- 9.0.2
+			q(57537),	-- Covering our Tracks
+			q(63219),	-- @ 73.5,91.6,STORMIND_CITY L6 NE Druid, 2022-07-30
+			-- 9.1.0
+			q(64192),	--
+			q(64369),	--
+			q(64516),	--
+			-- 9.1.5
+			q(64975),	--
+		}),
+		filter(MISC, {
+			i(185920),	-- Cartel Al Incident Report
+			i(185927),	-- Expedition Report A37J - Foreword
+			i(185928),	-- Expedition Report A37J - Part 1
+			i(185929),	-- Expedition Report A37J - Part 2
+			i(185930),	-- Expedition Report A37J - Part 3
+			i(185931),	-- Expedition Report A37J - Part 4
+		}),
 	}),
 	tier(DF_TIER, {
+		tier(DF_TIER, 1.7, bubbleDown({ ["timeline"] = { CREATED_10_1_7 } }, {
+			i(44329),	-- Elixir of Mighty Intellect
+			i(115460),	-- Northrend Alchemy Research
+			i(133557),	-- Salt and Pepper Shank
+			i(205221),	-- Ancient Pottery Fragment
+			i(205222),	-- Ancient Wooden Spoke
+			i(205223),	-- Ancient Centaur Axe
+			i(205224),	-- Just a Rock
+			i(205328),	-- Earthen Emissary's Edge
+			i(207963),	-- Alabaster Thunderwing
+			i(207964),	-- Alabaster Stormtalon
+			i(208099),	-- Quickened Sand
+			i(208182),	-- Bronze Timepiece
+			i(208200),	-- Dragon Isles Drakes: Gilded Armor
+			i(208210),	-- Celebration Package
+			i(208211),	-- Anniversary Gift
+			i(208229),	-- Honor of the Forsaken
+			i(208421),	-- Compendium of the New Moon
+			i(208433),	-- Bronze Racer's Pennant
+			i(208474),	-- Forsaken Champion's Spaulders
+			i(208475),	-- Ensemble: Forsaken Champion's Attire
+			i(208476),	-- Forsaken Champion's Chestguard
+			i(208477),	-- Forsaken Champion's Belt
+			i(208478),	-- Forsaken Champion's Leggings
+			i(208479),	-- Forsaken Champion's Boots
+			i(208480),	-- Forsaken Champion's Bracers
+			i(208481),	-- Forsaken Champion's Grips
+			i(208488),	-- Forsaken Champion's Backtomb
+			i(208495),	-- Forsaken Champion's Cowl
+			i(208515),	-- Forsaken Champion's Rotcowl
+			i(208543),	-- Lil' Frostwing
+			i(208546),	-- Explorer's Rose-Tinted Glasses
+			i(208547),	-- Explorer's Reading Spectacles
+			i(208549),	-- Canned Meat Product
+			i(208550),	-- Dragon Isles Drakes: White Scales
+			i(208551),	-- Ambrosial Sporestone
+			i(208572),	-- Azure Worldchiller
+			i(208598),	-- Eve's Ghastly Rider
+			i(208620),	-- Ashamane's Helm of Rebirth
+			i(208621),	-- Ashamane's Spaulders of Rebirth
+			i(208622),	-- Ashamane's Fangs of Rebirth
+			i(208623),	-- Ashamane's Blade of Rebirth
+			i(208624),	-- Ashamane's Claws of Rebirth
+			i(208625),	-- Ashamane's Crescent of Rebirth
+			i(208626),	-- Ashamane Jewel of Rebirth
+			i(208627),	-- Webbed Saronite Headguard
+			i(208628),	-- Webbed Saronite Spaulders
+			i(208629),	-- Webbed Saronite Girdle
+			i(208630),	-- Webbed Saronite Greataxe
+			i(208631),	-- Webbed Saronite Eviscerator
+			i(208632),	-- Webbed Saronite Devourer
+			i(208633),	-- Nathreza Blasphemer's Horns
+			i(208634),	-- Nathreza Blasphemer's Mantle
+			i(208635),	-- Nathreza Blasphemer's Shard
+			i(208636),	-- Nathreza Blasphemer's Wingglaive
+			i(208637),	-- Nathreza Blasphemer's Warglaive
+			i(208638),	-- Savage Champion's Vision
+			i(208639),	-- Savage Champion's Tusks
+			i(208640),	-- Savage Champion's Belt
+			i(208641),	-- Savage Champion's Thorns
+			i(208642),	-- Savage Champion's Gladius
+			i(208643),	-- Savage Champion's Disemboweler
+			i(208648),	-- Possessed Watcher Kabuto
+			i(208650),	-- Possessed Watcher Pauldrons
+			i(208651),	-- Possessed Watcher Cord
+			i(208652),	-- Possessed Watcher Fan
+			i(208653),	-- Possessed Watcher Bloom
+			i(208654),	-- Possessed Watcher Keg
+			i(208655),	-- Voice of the Alluring Call
+			i(208656),	-- Wings of the Alluring Call
+			i(208657),	-- Chains of the Alluring Call
+			i(208659),	-- Flayer of the Alluring Call
+			i(208660),	-- Effigy of the Alluring Call
+			i(208661),	-- Caduceus of the Alluring Call
+			i(208663),	-- Ashamane's Vestment of Rebirth
+			i(208664),	-- Ashamane's Blessings of Rebirth
+			i(208665),	-- Webbed Saronite Exoskeleton
+			i(208666),	-- Webbed Saronite Weaponry
+			i(208667),	-- Nathreza Blasphemer's Flames
+			i(208668),	-- Nathreza Blasphemer's Glaives
+			i(208669),	-- Possessed Watcher Guise
+			i(208671),	-- Possessed Watcher Arsenal
+			i(208672),	-- Jewels of the Alluring Call
+			i(208673),	-- Instruments of the Alluring Call
+			i(208674),	-- Savage Champion's Trophies
+			i(208675),	-- Savage Champion's Aggression
+			i(208680),	-- Windborne Velocidrake: Hallow's End Armor
+			i(208733),	-- Dragonhorn Flute
+			i(208734),	-- Waterlogged Ledger
+			i(208735),	-- Bucket of Morbid Treats
+			i(208736),	-- Apprentice Astrologist Homework
+			i(208737),	-- Hole-Punched Bakar Tooth
+			i(208742),	-- Renewed Proto-Drake: Brewfest Armor
+			i(208763),	-- Headmaster's Skullcap
+			i(208783),	-- Corrupted Blood
+			i(208784),	-- Primeval Fin
+			i(208786),	-- Luxurious Niffen Hat
+			i(208858),	-- Highland Drake: Pirates' Day Armor
+			i(208859),	-- Cliffside Wylderdrake: Day of the Dead Armor
+			i(208866),	-- The Second Clue
+			i(208867),	-- The Third Clue
+			--
+			i(208880),	-- Brewhahat
+			i(208925),	-- Dreambound Trinket
+			--
+			i(208102),	-- Cliffside Wylderdrake: Visage of the Infinite
+			i(208103),	-- Highland Drake: Visage of the Infinite
+			i(208104),	-- Renewed Proto-Drake: Visage of the Infinite
+			i(208105),	-- Windborne Velocidrake: Visage of the Infinite
+			i(208106),	-- Winding Slitherdrake: Visage of the Infinite
+			i(208626),	-- Ashamane's Jewel of Rebirth
+			i(208986),	-- The Horseman's Horrific Hood
+			i(208987),	-- The Horseman's Sinister Slicer
+			i(208988),	-- Band of the Petrified Pumpkin
+			i(208989),	-- Wicked Witch's Signet
+			i(208990),	-- The Horseman's Ring
+			i(208991),	-- Seal of Ghoulish Glee
+			i(209020),	-- Loot-Filled Pumpkin
+			i(209022),	-- The Horseman's Sinister Slicer
+			i(209023),	-- The Horseman's Horrific Hood
+			i(209024),	-- Loot-Filled Pumpkin
+			i(209025),	-- Loot-Filled Pumpkin
+			i(209026),	-- Loot-Stuffed Pumpkin
+			i(209033),	-- Worn Felsteel Prayer Rod
+			i(209034),	-- Half-Completed Invasion Plans
+			i(209044),	-- Orange Brewfest Bulwark
+			i(209052),	-- Brew Barrel
+			i(209053),	-- Green Brewfest Bulwark
+			i(209055),	-- Third Booster Part
+		})),
 		tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
 			filter(COSMETIC, {
 				---- TRADING POST ----
@@ -232,112 +369,6 @@ root(ROOTS.Unsorted, {
 				i(206341),	-- Ensemble: Wanderer's Lively Trappings
 				i(206342),	-- Ensemble: Wanderer's Sepia Trappings
 			}),
-			filter(TOYS, {
-				i(206268),	-- Ethereal Transmogrifier (TOY!)
-				i(208096),	-- Familiar Journal (TOY!)
-				i(206993),	-- Investi-gator's Pocketwatch (TOY!)
-				i(206195),	-- Path of the Naaru (TOY!)
-				i(206565),	-- Plagued Grain (TOY!)
-			}),
-			filter(MOUNTS, {
-				i(206585),	-- Valiance (MOUNT!)
-			}),
-			header(HEADERS.LFGDungeon, 227, {	-- Naxxramas
-				i(12840),	-- Inert Minion's Scourgestone
-				i(12841),	-- Inert Invader's Scourgestone
-				i(12843),	-- Inert Corruptor's Scourgestone
-				i(206372),	-- Cracked Argent Dawn Commission
-				i(206373),	-- Darkmaster's Scourgestone
-				i(206374),	-- Invader's Scourgestone
-				i(206375),	-- Corruptor's Scourgestone
-				i(206377),	-- Ward of Naxxramas
-				i(206447),	-- Task List for Adventurers
-				i(206449),	-- Omarion's Second Handbook
-				i(206450),	-- Omarion's Notes - Pages 1 & 2
-				i(206451),	-- Omarion's Notes - Pages 3 & 4
-				i(206452),	-- Omarion's Notes - Pages 5 & 6
-				i(206453),	-- Omarion's Notes - Pages 7 & 8
-				i(206454),	-- Omarion's Notes - Pages 9 & 10
-				i(206455),	-- Omarion's Notes - Pages 11 & 12
-				i(206456),	-- Omarion's Notes - Pages 13 & 14
-				i(206457),	-- Omarion's Notes - Pages 15 & 16
-				i(206458),	-- Omarion's Notes - Pages 17 & 18
-				i(206459),	-- Omarion's Notes - Pages 19 & 20
-				i(206460),	-- Omarion's Notes - Pages 21 & 22
-				i(206461),	-- Omarion's Notes - Pages 23 & 24
-				i(206462),	-- Omarion's Notes - Pages 25 & 26
-				i(206463),	-- Omarion's Notes - Pages 27 & 28
-				i(206464),	-- Omarion's Notes - Pages 29 & 30
-				i(206465),	-- Omarion's Notes - Pages 31 & 32
-				i(206470),	-- Construct's Hook
-				i(206471),	-- Abomination's Chain
-				i(206472),	-- Faerlina's Sewing Kit
-				i(206473),	-- Makeshift Grappling Hook
-				i(206579),	-- Phylacterweave
-				i(207702),	-- Wartorn Scrap
-				i(206604),	-- Lamented Crusader's Helmet
-				i(206605),	-- Lamented Crusader's Spaulders
-				i(206606),	-- Lamented Crusader's Chestpiece
-				i(206607),	-- Lamented Crusader's Bracers
-				i(206608),	-- Lamented Crusader's Gauntlets
-				i(206609),	-- Lamented Crusader's Belt
-				i(206610),	-- Lamented Crusader's Leggings
-				i(206611),	-- Lamented Crusader's Boots
-				i(206612),	-- Desecrated Cloth Helmet
-				i(206613),	-- Desecrated Cloth Spaulders
-				i(206614),	-- Desecrated Cloth Chestpiece
-				i(206615),	-- Desecrated Cloth Bracers
-				i(206616),	-- Desecrated Cloth Gauntlets
-				i(206617),	-- Desecrated Cloth Belt
-				i(206618),	-- Desecrated Cloth Leggings
-				i(206619),	-- Desecrated Cloth Boots
-				i(206620),	-- Desecrated Leather Helmet
-				i(206621),	-- Desecrated Leather Spaulders
-				i(206622),	-- Desecrated Leather Chestpiece
-				i(206623),	-- Desecrated Leather Bracers
-				i(206624),	-- Desecrated Leather Gauntlets
-				i(206625),	-- Desecrated Leather Belt
-				i(206626),	-- Desecrated Leather Leggings
-				i(206627),	-- Desecrated Leather Boots
-				i(206628),	-- Desecrated Mail Helmet
-				i(206629),	-- Desecrated Mail Spaulders
-				i(206630),	-- Desecrated Mail Chestpiece
-				i(206631),	-- Desecrated Mail Bracers
-				i(206632),	-- Desecrated Mail Gauntlets
-				i(206633),	-- Desecrated Mail Belt
-				i(206634),	-- Desecrated Mail Leggings
-				i(206635),	-- Desecrated Mail Boots
-				i(206636),	-- Desecrated Plate Helmet
-				i(206637),	-- Desecrated Plate Spaulders
-				i(206639),	-- Desecrated Plate Chestpiece
-				i(206640),	-- Desecrated Plate Bracers
-				i(206641),	-- Desecrated Plate Gauntlets
-				i(206642),	-- Desecrated Plate Belt
-				i(206643),	-- Desecrated Plate Leggings
-				i(206644),	-- Desecrated Plate Boots
-			}),
-			header(HEADERS.LFGDungeon, 472, {	-- Scholomance
-				i(206346),	-- Eva's Journal
-				i(206354),	-- Stinky Candle
-				i(206355),	-- Tobacco-Filled Candle
-				i(206356),	-- Ghost-Warding Candle
-				i(206357),	-- Authentic Andorhal Candle
-				i(206358),	-- Imported Candle
-				i(206359),	-- Caer Darrow Fountain Water
-				i(206360),	-- Undelivered Shipment of Smokes
-				i(206361),	-- Trampled Doll
-				i(206362),	-- The Deed to Andorhal
-				i(206363),	-- The Road Ahead
-				i(206364),	-- Eva's Femur
-				i(206365),	-- Inert Spectral Essence
-			}),
-			header(HEADERS.LFGDungeon, 1, {	-- Wailing Caverns
-				i(208016),	-- Deviate Scale Pouch
-				i(208018),	-- Fangblade
-				i(208019),	-- Quagmire Trudgers
-				i(208020),	-- Dagmire Gloves
-				i(208021),	-- Sizzling Stick
-			}),
 			header(HEADERS.LFGDungeon, 2430, {	-- Dawn of the Infinite
 				i(207818),	-- Mega Dungeon Bronze Plate Greaves
 				i(207825),	-- Mega Dungeon Infinite Cloth Slippers
@@ -390,219 +421,6 @@ root(ROOTS.Unsorted, {
 				i(208002),	-- 10.1.5 Time Rifts - Infinite Weapons - Capture Media
 				i(208003),	-- 10.1.5 Time Rifts - Bronze Weapons - Capture Media
 			}),
-			n(PROFESSIONS, {
-				-- These are not Hooked up in ProfessionDB
-				-- I wonder if we will get new recipeIDs or have to hook them up the old ones. / Braghe
-				i(206405),	-- Pattern: Polar Tunic
-				i(206406),	-- Pattern: Polar Bracers
-				i(206407),	-- Pattern: Polar Gloves
-				i(206413),	-- Pattern: Icy Scale Breastplate
-				i(206414),	-- Pattern: Icy Scale Bracers
-				i(206415),	-- Pattern: Icy Scale Gauntlets
-				i(206421),	-- Plans: Icebane Breastplate
-				i(206422),	-- Plans: Icebane Bracers
-				i(206423),	-- Plans: Icebane Gauntlets
-				i(206397),	-- Pattern: Glacial Vest
-				i(206398),	-- Pattern: Glacial Wrists
-				i(206399),	-- Pattern: Glacial Gloves
-				i(206393),	-- Pattern: Glacial Cloak
-				--
-				i(206577),	-- Slime-Covered Scroll
-				i(206584),	-- Archived Crafting Techniques
-				prof(BLACKSMITHING, {
-					-- RECIPES --
-					i(206540),	-- Ancient Plans: Axe of Sundered Bone (RECIPE!)
-					i(206558),	-- Ancient Plans: Belt of the Mentor (RECIPE!)
-					i(206539),	-- Ancient Plans: Blade of Unholy Might (RECIPE!)
-					i(206546),	-- Ancient Plans: Blade of the Fallen Seraph (RECIPE!)
-					i(206542),	-- Ancient Plans: Bracers of Vengeance (RECIPE!)
-					i(206805),	-- Ancient Plans: Bucket Kickers (RECIPE!)
-					i(206553),	-- Ancient Plans: Dawn of Demise (RECIPE!)
-					i(206557),	-- Ancient Plans: Death's Gamble (RECIPE!)
-					i(206537),	-- Ancient Plans: Edict of the Redeemed Crusader (RECIPE!)
-					i(206555),	-- Ancient Plans: Gauntlets of the Unrelenting (RECIPE!)
-					i(206550),	-- Ancient Plans: Harbinger of Death (RECIPE!)
-					i(207573),	-- Ancient Plans: Ichor Slicer (RECIPE!)
-					i(207567),	-- Ancient Plans: Intrepid Shortblade (RECIPE!)
-					i(206533),	-- Ancient Plans: Midnight's Graze (RECIPE!)
-					i(206545),	-- Ancient Plans: Plated Construct's Ribcage (RECIPE!)
-					i(207572),	-- Ancient Plans: Sacred Guardian (RECIPE!)
-					i(206536),	-- Ancient Plans: Shade's Blade (RECIPE!)
-					i(206531),	-- Ancient Plans: Strength of Menethil (RECIPE!)
-					i(206560),	-- Ancient Plans: Stygian Shield (RECIPE!)
-					i(206541),	-- Ancient Plans: The Plague Belcher (RECIPE!)
-					i(206544),	-- Ancient Plans: The Final Dream (RECIPE!)
-					i(206549),	-- Ancient Plans: The Face of Doom (RECIPE!)
-					i(207568),	-- Ancient Plans: Valiant Shortblade (RECIPE!)
-					i(206534),	-- Ancient Plans: Weaver's Fang (RECIPE!)
-					i(206535),	-- Ancient Plans: Widow's Weep (RECIPE!)
-					i(206419),	-- Plans: Icebane Coif (RECIPE!)
-					i(206425),	-- Plans: Icebane Leggings (RECIPE!)
-					i(206420),	-- Plans: Icebane Mantle (RECIPE!)
-					i(206426),	-- Plans: Icebane Trudgers (RECIPE!)
-					i(206774),	-- Plans: Undeath Metal (RECIPE!)
-					i(206424),	-- Plans: Icebane Waistguard (RECIPE!)
-					-- CRAFTED --
-					i(206493),	-- Axe of Sundered Bone
-					i(206511),	-- Belt of the Mentor
-					i(206492),	-- Blade of Unholy Might
-					i(206499),	-- Blade of the Fallen Seraph
-					i(206495),	-- Bracers of Vengeance
-					i(206478),	-- Darrowdirk
-					i(206479),	-- Darrowshire Protector
-					i(206506),	-- Dawn of Demise
-					i(206510),	-- Death's Gamble
-					i(206490),	-- Edict of the Redeemed Crusader
-					i(206787),	-- Bucket Kickers
-					i(206508),	-- Gauntlets of the Unrelenting
-					i(206503),	-- Harbinger of Death
-					i(206442),	-- Icebane Leggings
-					i(206443),	-- Icebane Mantle
-					i(206444),	-- Icebane Coif
-					i(206445),	-- Icebane Waistguard
-					i(206446),	-- Icebane Trudgers
-					i(207561),	-- Ichor Slicer
-					i(207555),	-- Intrepid Shortblade
-					i(206486),	-- Midnight's Graze
-					i(206480),	-- Mirah's Lullaby
-					i(206498),	-- Plated Construct's Ribcage
-					i(207560),	-- Sacred Guardian
-					i(206489),	-- Shade's Blade
-					i(206484),	-- Strength of Menethil
-					i(206513),	-- Stygian Shield
-					i(206494),	-- The Plague Belcher
-					i(206497),	-- The Final Dream
-					i(206502),	-- The Face of Doom
-					i(206648),	-- Undeath Metal
-					i(207556),	-- Valiant Shortblade
-					i(206477),	-- Warsword of Caer Darrow
-					i(206487),	-- Weaver's Fang
-					i(206488),	-- Widow's Weep
-				}),
-				prof(COOKING, {
-					-- NYI --??
-					-- RECIPES --
-					r(412533),	-- Druidic Dreamsalad
-					r(412534),	-- Fine Taladorian Cheese Platter
-					r(412531),	-- Highly Spiced Haunch
-					r(411178),	-- Lemon Silverleaf Tea
-					r(412537),	-- Picante Pomfruit Cake
-					r(412536),	-- Roquefort-Stuffed Peppers
-					r(412535),	-- Venrik's Goat Milk
-					-- CRAFTED --
-					i(206188),	-- Druidic Dreamsalad
-					i(206189),	-- Fine Taladorian Cheese Platter
-					i(206187),	-- Highly Spiced Haunch
-				--	i(xxxxxx),	-- Lemon Silverleaf Tea
-					i(206192),	-- Picante Pomfruit Cake
-					i(206191),	-- Roquefort-Stuffed Peppers
-					i(206190),	-- Venrik's Goat Milk
-				}),
-				prof(ENCHANTING, {
-					-- RECIPES --
-					i(207569),	-- Ancient Formula: Magebane Nexus (RECIPE!)
-					i(207570),	-- Ancient Formula: Smoked Fireshooter (RECIPE!)
-					i(207571),	-- Ancient Formula: Stormwatcher (RECIPE!)
-					-- CRAFTED --
-					i(207557),	-- Magebane Nexus
-					i(207558),	-- Smoked Fireshooter
-					i(207559),	-- Stormwatcher
-				}),
-				prof(ENGINEERING, {
-					-- RECIPES --
-					i(207576),	-- Ancient Schematic: Refurbished Purifier (RECIPE!)
-					i(206559),	-- Ancient Schematic: Replaced Servo Arm (RECIPE!)
-					i(207574),	-- Ancient Schematic: Skullstone Bludgeon (RECIPE!)
-					-- CRAFTED --
-					i(207564),	-- Refurbished Purifier
-					i(206512),	-- Replaced Servo Arm
-					i(207562),	-- Skullstone Bludgeon
-				}),
-				prof(INSCRIPTION, {
-					-- RECIPES --
-					i(206548),	-- Ancient Technique: Encased Frigid Heart (RECIPE!)
-					i(206532),	-- Ancient Technique: Soulscryer (RECIPE!)
-					i(207575),	-- Ancient Technique: Wanderer's Guide (RECIPE!)
-					-- CRAFTED --
-					i(206501),	-- Encased Frigid Heart
-					i(206481),	-- Shifting Sliver
-					i(206485),	-- Soulscryer
-					i(207563),	-- Wanderer's Guide
-				}),
-				prof(JEWELCRAFTING, {
-					-- RECIPES --
-					i(206552),	-- Ancient Design: Frostwyrm's Frigid Stare (RECIPE!)
-					i(206551),	-- Ancient Design: Frostwyrm's Icy Gaze (RECIPE!)
-					i(206543),	-- Ancient Design: Gem of the Nerubians (RECIPE!)
-					-- CRAFTED --
-					i(206505),	-- Frostwyrm's Frigid Stare
-					i(206504),	-- Frostwyrm's Icy Gaze
-					i(206496),	-- Gem of the Nerubians
-					-- NYI --??
-					r(412557),	-- TEST CRUSHING (DNT)
-				}),
-				prof(LEATHERWORKING, {
-					-- RECIPES --
-					i(206556),	-- Ancient Pattern: Displacement Boots (RECIPE!)
-					i(206411),	-- Pattern: Icy Scale Crown (RECIPE!)
-					i(206417),	-- Pattern: Icy Scale Leggings (RECIPE!)
-					i(206412),	-- Pattern: Icy Scale Shoulderpads (RECIPE!)
-					i(206418),	-- Pattern: Icy Scale Stompers (RECIPE!)
-					i(206416),	-- Pattern: Icy Scale Waistwrap (RECIPE!)
-					i(206772),	-- Pattern: Languished Leather (RECIPE!)
-					i(206538),	-- Ancient Pattern: Nerubian Persuader (RECIPE!)
-					i(206408),	-- Pattern: Polar Belt (RECIPE!)
-					i(206410),	-- Pattern: Polar Footwarmers (RECIPE!)
-					i(206403),	-- Pattern: Polar Helm (RECIPE!)
-					i(206409),	-- Pattern: Polar Leggings (RECIPE!)
-					i(206404),	-- Pattern: Polar Spaulders (RECIPE!)
-					i(207577),	-- Ancient Pattern: Sanctified Leather Hat (RECIPE!)
-					i(206773),	-- Pattern: Scourged Scales (RECIPE!)
-					-- CRAFTED --
-					i(206509),	-- Displacement Boots
-					i(206482),	-- Helm of Lingering Power
-					i(206439),	-- Icy Scale Crown
-					i(206437),	-- Icy Scale Leggings
-					i(206438),	-- Icy Scale Shoulderpads
-					i(206441),	-- Icy Scale Stompers
-					i(206440),	-- Icy Scale Waistwrap
-					i(206646),	-- Languished Leather
-					i(206514),	-- Lucien's Lost Soles
-					i(206491),	-- Nerubian Persuader
-					i(206435),	-- Polar Belt
-					i(206436),	-- Polar Footwarmers
-					i(206434),	-- Polar Helm
-					i(206432),	-- Polar Leggings
-					i(206433),	-- Polar Spaulders
-					i(207565),	-- Sanctified Leather Hat
-					i(206647),	-- Scourged Scales
-					i(206483),	-- Skyfury Headdress
-				}),
-				prof(TAILORING, {
-					-- RECIPES --
-					i(206547),	-- Ancient Pattern: Bindings of the Harvested Soul (RECIPE!)
-					i(206771),	-- Pattern: Cursed Cloth (RECIPE!)
-					i(206395),	-- Pattern: Glacial Chapeau (RECIPE!)
-					i(206396),	-- Pattern: Glacial Epaulets (RECIPE!)
-					i(206402),	-- Pattern: Glacial Footwear (RECIPE!)
-					i(206401),	-- Pattern: Glacial Leggings (RECIPE!)
-					i(206400),	-- Pattern: Glacial Tether (RECIPE!)
-					i(206554),	-- Ancient Pattern: Necrotic Gown (RECIPE!)
-					i(206583),	-- Ancient Pattern: Peculiar Glacial Mantle (RECIPE!)
-					i(206563),	-- Ancient Pattern: Shroud of Forbidden Magic (RECIPE!)
-					-- CRAFTED --
-					i(206500),	-- Bindings of the Harvested Soul
-					i(206645),	-- Cursed Cloth
-					i(206429),	-- Glacial Chapeau
-					i(206428),	-- Glacial Epaulets
-					i(206431),	-- Glacial Footwear
-					i(206427),	-- Glacial Leggings
-					i(206430),	-- Glacial Tether
-					i(206507),	-- Necrotic Gown
-					i(206582),	-- Peculiar Glacial Mantle
-					i(206562),	-- Shroud of Forbidden Magic
-				}),
-			}),
 			i(52032),	-- Rockin'-Powder-Infused Rocket Boots
 			i(86432),	-- Banana-Infused Rum
 			i(112180),	-- Patch of Crystal-Infused Leather
@@ -621,27 +439,11 @@ root(ROOTS.Unsorted, {
 			i(202340),	-- Laydia's Flower Petals
 			i(202342),	-- Luggage Key
 			i(202363),	-- Survey Arc Device
-			i(202399),	-- Stuffed Doll
-			i(202400),	-- Soothing Incense
-			i(202690),	-- Decorative Shrubbery
 			i(204275),	-- Slimey Key
 			i(204895),	-- Storm-touched Missive Stone [DNT]
 			i(204983),	-- Primalist Dropbox Key [DNT]
 			i(205146),	-- Weyrnstone
-			i(206022),	-- Anduin's Lucky Hearthstone Card
-			i(206370),	-- Blood of Innocents
-			i(206371),	-- Viewing Room Key
 			i(206474),	-- Smelly Cheese
-			i(206568),	-- Dented Raider's Helmet
-			i(206569),	-- Dented Raider's Spaulders
-			i(206570),	-- Dented Raider's Chestpiece
-			i(206571),	-- Dented Raider's Bracers
-			i(206572),	-- Dented Raider's Gauntlets
-			i(206573),	-- Dented Raider's Belt
-			i(206574),	-- Dented Raider's Leggings
-			i(206575),	-- Dented Raider's Boots
-			i(206576),	-- Death's Bargaining Chip
-			i(206775),	-- Map to Suramar
 			i(206800),	-- Arcane Detection Rod
 			i(206806),	-- Part Dislocator
 			i(206931),	-- Truesilver Champion
@@ -650,10 +452,7 @@ root(ROOTS.Unsorted, {
 			i(206164),	-- Weak Resonating Vestigial
 			i(206165),	-- Major Resonating Vestigial
 			i(206166),	-- Strong Resonating Vestigial
-			i(206957),	-- Boffins
 			i(206962),	-- Watcher's Log
-			i(206984),	-- Blood-Soaked Book
-			i(207008),	-- A Fish
 			i(207011),	-- Warblades of the Hakkari, Reborn
 			i(207029),	-- Scarlet Zealot's Heater Shield
 			i(207031),	-- Bomb Lobber
@@ -667,29 +466,14 @@ root(ROOTS.Unsorted, {
 			i(207044),	-- <DNT> Lo'Gosh Offhand Weapon
 			i(207045),	-- <DNT> Lo'Gosh Mainhand Weapon
 			i(207057),	-- Gift of the White War Wolf
-			i(207058),	-- Fractured Shin
-			i(207059),	-- Skeletal Knight's Blade
-			i(207060),	-- Skeletal Knight's Buckler
-			i(207083),	-- Gift of the Ravenous Black Gryphon
 			i(207096),	-- Paracausal Chest
-			i(207101),	-- Glyph of Banehollow's Soulstone
 			i(207102),	-- TESTING ITEM DELETE ME
 			i(205199),	-- Slime Sheathed Shell
-			i(206638),	-- Azmourne's Corrupted Ashbringer
 			i(207594),	-- Looter's Purse
 			i(207956),	-- Thunderspine Nest
-			i(208006),	-- Greater Paracausal Chest
-			i(208028),	-- Knot Thimblejack's Cache
 			i(208029),	-- Scareloc Parts
-			i(208031),	-- Convenient Crate
-			i(206161),	-- Time-Displaced Toy
-			i(207016),	-- Rift-Mender's Tabard
-			i(207017),	-- Rift-Mender's Cape
-			i(207018),	-- Rift-Mender's Spaulders
-			i(207020),	-- Ensemble: Rift-Mender's Vestments
 			i(207984),	-- Chroniton Wand
 			i(208001),	-- Timewalker's Cudgel
-			i(208068),	-- Rotten Delicious
 			i(208091),	-- Cache of Timewarped Treasures
 			i(208094),	-- Cache of Timewarped Treasures
 			i(208095),	-- Cache of Timewarped Treasures
@@ -698,30 +482,22 @@ root(ROOTS.Unsorted, {
 			i(208147),	-- Yellow Tweed Cap
 			i(208148),	-- Burgandy Cap
 			i(208148),	-- Burgundy Cap
-			i(208168),	-- Black Blade of K'tanth
-			i(208170),	-- Runeaxe of the Last Resistance
-			i(208172),	-- Bloodstained Runecrook
 			i(208191),	-- Time-Lost Fragment
+			i(206447),	-- Task List for Adventurers
 			--
 			i(201166),	-- Gilded Hilt
 			i(206160),	-- Madam Shadow's Grimoire
-			i(206394),	-- Red Dragon Egg
 			i(206520),	-- Beverage for Pedgi
-			i(206653),	-- Fel Pinecone
-			i(206681),	-- Letter from Oman
-			i(208226),	-- Mysterious Letter
-			i(208227),	-- Mysterious Letter
-			i(208390),	-- Bronze Archive Stone
 			i(208400),	-- Silks of the Unnamed Cult
 			i(208417),	-- Chromie's Certificate of Temporal Tidiness
-			i(208448),	-- Infinitea
-			i(208449),	-- Melly's Metronographer+++
 			--
 			i(133589),	-- Dalape�o Pepper
 			i(208567),	-- Medal of Conquest
 			--
 			i(206167),	-- Way of the Wonderous Wavewhisker
 			i(206174),	-- Blub
+			--
+			i(190601),	-- Sunny
 		})),
 		tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 			header(HEADERS.LFGDungeon, 2403, {	-- Aberrus, the Shadowed Crucible
@@ -828,14 +604,10 @@ root(ROOTS.Unsorted, {
 			n(REWARDS, {
 				-- Research
 				i(205454),	-- Researchers Wheel Barrow
-				-- Special
-				i(205877),	-- Adventurer's Footlocker
 				-- Diablo
 				i(206026),	-- Ensemble: Enmity Hood and Cloak
 				-- New Stuff
 				i(206138),	-- Scalewarden's Pennant
-				i(206200),	-- Obsidian Equipment Chest
-				i(206270),	-- Volcanic Equipment Chest
 				-- New
 				i(189885),	-- The Battlespoon
 			}),
@@ -928,7 +700,6 @@ root(ROOTS.Unsorted, {
 				q(75591),	--
 				q(75592),	--
 				q(75593),	--
-				q(75594),	--
 				q(75609),	--
 				q(75613),	--
 				q(75614),	--
@@ -972,7 +743,6 @@ root(ROOTS.Unsorted, {
 				q(76012),	--
 				-- 10.1.0.48898
 				q(76082),	--
-				q(76105),	--
 				q(76106),	--
 				q(76107),	--
 				q(76108),	--
@@ -1273,7 +1043,6 @@ root(ROOTS.Unsorted, {
 				q(72774),	--
 				q(72775),	--
 				q(72780),	--
-				q(72804),	-- Flag Weekly Tracking Quest [DNT] (spellID 397184)
 				-- 10.0.2.46420
 				q(72817),	-- Dragonflight (70) E
 				q(72819),	-- Shadowlands (60) E

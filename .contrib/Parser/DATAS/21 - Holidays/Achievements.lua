@@ -19,6 +19,7 @@ root(ROOTS.Holidays, {	-- General Holiday Content
 				1656,	-- Hallowed Be Thy Name
 				1691,	-- Merrymaker
 			}},
+			["timeline"] = { "added 3.0.1" },
 			-- #if BEFORE 4.0.3
 			["races"] = ALLIANCE_ONLY,
 			-- #endif
@@ -39,7 +40,7 @@ root(ROOTS.Holidays, {	-- General Holiday Content
 				1656,	-- Hallowed Be Thy Name
 				1691,	-- Merrymaker
 			}},
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { "added 3.0.1", "removed 4.0.3" },
 			["races"] = HORDE_ONLY,
 			-- #if BEFORE 4.0.3
 			["groups"] = {

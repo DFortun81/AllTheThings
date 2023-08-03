@@ -271,7 +271,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		["timeline"] = { "added 2.4.0.7994" },
 		["isDaily"] = true,
 		["groups"] = {
-			ach(263),	-- Ice the Frost Lord
+			ach(263, {	-- Ice the Frost Lord
+				["timeline"] = { "added 3.0.1" },
+			}),
 			i(149753, {	-- Knapsack of Chilled Goods [Uncommon Quality]
 				["timeline"] = { "added 7.2.5.23910" },
 				["groups"] = {
@@ -439,6 +441,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					1145,				-- King of the Fire Festival
 					272,				-- Torch Juggler
 				}},
+				["timeline"] = { "added 3.0.1" },
 				["groups"] = {
 					title(44),				-- Flame Warden
 				},
@@ -453,6 +456,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					6013,	-- Extinguishing the Cataclysm (A)
 					-- #endif
 				}},
+				["timeline"] = { "added 3.0.1" },
 			}),
 			ach(1034, {	-- The Fires of Azeroth (A)
 				["sym"] = {{"meta_achievement",
@@ -464,19 +468,29 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					6011,	-- Flame Warden of Cataclysm (A)
 					-- #endif
 				}},
+				["timeline"] = { "added 3.0.1" },
 			}),
 
 			ach(11276, {	-- Extinguishing Draenor (A)
 				["timeline"] = { "added 7.2.0.23478" },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
-			ach(1028, { ["sym"] = {{ "achievement_criteria" }}}),	-- Extinguishing Eastern Kingdoms (A)
-			ach(1029, { ["sym"] = {{ "achievement_criteria" }}}),	-- Extinguishing Kalimdor (A)
+			ach(1028, {	-- Extinguishing Eastern Kingdoms (A)
+				["timeline"] = { "added 3.0.1" },
+				["sym"] = {{ "achievement_criteria" }},
+			}),
+			ach(1029, {	-- Extinguishing Kalimdor (A)
+				["timeline"] = { "added 3.0.1" },
+				["sym"] = {{ "achievement_criteria" }},
+			}),
 			ach(6007, {	-- Extinguishing Northrend (A)
 				["timeline"] = { "added 4.3.0.15005" },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
-			ach(1030, { ["sym"] = {{ "achievement_criteria" }}}),	-- Extinguishing Outland (A)
+			ach(1030, {	-- Extinguishing Outland (A)
+				["timeline"] = { "added 3.0.1" },
+				["sym"] = {{ "achievement_criteria" }},
+			}),
 			ach(8042, {	-- Extinguishing Pandaria (A)
 				["timeline"] = { "added 5.2.0.16408" },
 				["sym"] = {{ "achievement_criteria" }},
@@ -502,8 +516,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["timeline"] = { "added 7.2.0.23478" },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
-			ach(1022, { ["sym"] = {{ "achievement_criteria" }}}),	-- Flame Warden of Eastern Kingdoms (A)
-			ach(1023, { ["sym"] = {{ "achievement_criteria" }}}),	-- Flame Warden of Kalimdor (A)
+			ach(1022, {	-- Flame Warden of Eastern Kingdoms (A)
+				["timeline"] = { "added 3.0.1" },
+				["sym"] = {{ "achievement_criteria" }},
+			}),
+			ach(1023, {	-- Flame Warden of Kalimdor (A)
+				["timeline"] = { "added 3.0.1" },
+				["sym"] = {{ "achievement_criteria" }},
+			}),
 			ach(13341, {	-- Flame Warden of Kul Tiras (A)
 				["timeline"] = { "added 8.1.5.29701" },
 				["sym"] = {{ "achievement_criteria" }},
@@ -512,7 +532,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["timeline"] = { "added 4.3.0.15005" },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
-			ach(1024, { ["sym"] = {{ "achievement_criteria" }}}),	-- Flame Warden of Outland (A)
+			ach(1024, {	-- Flame Warden of Outland (A)
+				["timeline"] = { "added 3.0.1" },
+				["sym"] = {{ "achievement_criteria" }},
+			}),
 			ach(8045, {	-- Flame Warden of Pandaria (A)
 				["timeline"] = { "added 5.2.0.16408" },
 				["sym"] = {{ "achievement_criteria" }},
@@ -537,6 +560,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					1145,				-- King of the Fire Festival
 					272,				-- Torch Juggler
 				}},
+				["timeline"] = { "added 3.0.1" },
 				["groups"] = {
 					title(45),				-- Flame Keeper
 				},
@@ -551,6 +575,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					6014,	-- Extinguishing the Cataclysm (H)
 					-- #endif
 				}},
+				["timeline"] = { "added 3.0.1" },
 			}),
 			ach(1036, {	-- The Fires of Azeroth (H)
 				["sym"] = {{"meta_achievement",
@@ -562,14 +587,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					6012,	-- Flame Keeper of Cataclysm (H)
 					-- #endif
 				}},
+				["timeline"] = { "added 3.0.1" },
 			}),
 
 			ach(11277, {	-- Extinguishing Draenor (H)
 				["timeline"] = { "added 7.2.0.23478" },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
-			ach(1031, { ["sym"] = {{ "achievement_criteria" }}}),	-- Extinguishing Eastern Kingdoms (H)
-			ach(1032, { ["sym"] = {{ "achievement_criteria" }}}),	-- Extinguishing Kalimdor (H)
+			ach(1031, {	-- Extinguishing Eastern Kingdoms (H)
+				["timeline"] = { "added 3.0.1" },
+				["sym"] = {{ "achievement_criteria" }},
+			}),
+			ach(1032, {	-- Extinguishing Kalimdor (H)
+				["timeline"] = { "added 3.0.1" },
+				["sym"] = {{ "achievement_criteria" }},
+			}),
 			ach(13342, {	-- Extinguishing Kul Tiras (H)
 				["timeline"] = { "added 8.1.5.29701" },
 				["sym"] = {{ "achievement_criteria" }},
@@ -578,7 +610,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["timeline"] = { "added 4.3.0.15005" },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
-			ach(1033, { ["sym"] = {{ "achievement_criteria" }}}),	-- Extinguishing Outland (H)
+			ach(1033, {	-- Extinguishing Outland (H)
+				["timeline"] = { "added 3.0.1" },
+				["sym"] = {{ "achievement_criteria" }},
+			}),
 			ach(8043, {	-- Extinguishing Pandaria (H)
 				["timeline"] = { "added 5.2.0.16408" },
 				["sym"] = {{ "achievement_criteria" }},
@@ -600,13 +635,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["timeline"] = { "added 7.2.0.23478" },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
-			ach(1025, { ["sym"] = {{ "achievement_criteria" }}}),	-- Flame Keeper of Eastern Kingdoms (H)
-			ach(1026, { ["sym"] = {{ "achievement_criteria" }}}),	-- Flame Keeper of Kalimdor (H)
+			ach(1025, {	-- Flame Keeper of Eastern Kingdoms (H)
+				["timeline"] = { "added 3.0.1" },
+				["sym"] = {{ "achievement_criteria" }},
+			}),
+			ach(1026, {	-- Flame Keeper of Kalimdor (H)
+				["timeline"] = { "added 3.0.1" },
+				["sym"] = {{ "achievement_criteria" }},
+			}),
 			ach(6009, {	-- Flame Keeper of Northrend (H)
 				["timeline"] = { "added 4.3.0.15005" },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
-			ach(1027, { ["sym"] = {{ "achievement_criteria" }}}),	-- Flame Keeper of Outland (H)
+			ach(1027, {	-- Flame Keeper of Outland (H)
+				["timeline"] = { "added 3.0.1" },
+				["sym"] = {{ "achievement_criteria" }},
+			}),
 			ach(8044, {	-- Flame Keeper of Pandaria (H)
 				["timeline"] = { "added 5.2.0.16408" },
 				["sym"] = {{ "achievement_criteria" }},
@@ -626,12 +670,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		})),
 		ach(271, {	-- Burning Hot Pole Dance
 			["description"] = "You need the Mantle of the Fire Festival, Vestment of Summer, and the Sandals of Summer to complete the Midsummer set.",
+			["timeline"] = { "added 3.0.1" },
 		}),
-		ach(263),	-- Ice the Frost Lord
+		ach(263, {	-- Ice the Frost Lord
+			["timeline"] = { "added 3.0.1" },
+		}),
 		ach(1145, {	-- King of the Fire Festival
 			["sourceQuests"] = { 9365, 9339 },	-- A Thief's Reward (A, H)
+			["timeline"] = { "added 3.0.1" },
 		}),
 		ach(272, {	-- Torch Juggler
+			["timeline"] = { "added 3.0.1" },
 			["maps"] = { NORTHREND_DALARAN },
 		}),
 	}),

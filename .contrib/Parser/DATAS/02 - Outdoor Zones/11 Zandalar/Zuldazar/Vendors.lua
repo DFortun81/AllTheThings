@@ -176,7 +176,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			}),
 			n(143555, {	-- Xander Silberman
 				["coord"] = { 51.6, 58.2, ZULDAZAR },
-				["itemID"] = 137642,	-- Mark of Honor
+
 				["races"] = HORDE_ONLY,
 				["g"] = {
 				--	Dread Aspirant, Battle for Azeroth Season 1

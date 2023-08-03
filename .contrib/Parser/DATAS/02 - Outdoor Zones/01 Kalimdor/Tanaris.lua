@@ -5114,13 +5114,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 50.8, 27.0, TANARIS },
 					-- #endif
 					["groups"] = {
-						i(6057, {	-- Recipe: Nature Protection Potion
+						i(6057, {	-- Recipe: Nature Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(9303),	-- Recipe: Philosopher's Stone
+						i(9303),	-- Recipe: Philosopher's Stone (RECIPE!)
 						i(12958),	-- Recipe: Transmute Arcanite
-						i(9304),	-- Recipe: Transmute Iron to Gold
-						i(9305, {	-- Recipe: Transmute Mithril to Truesilver
+						i(9304),	-- Recipe: Transmute Iron to Gold (RECIPE!)
+						i(9305, {	-- Recipe: Transmute Mithril to Truesilver (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -5148,7 +5148,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 3.3.2.11403", "removed 4.0.3.13277" },
 				}),
 				n(40216, {	-- Blazzek the Biter <Vicious Gladiator>
-					["itemID"] = 137642,	-- Mark of Honor
+
 					["coord"] = { 51.6, 28.0, TANARIS },
 					["description"] = "Some items may require you to buy specific class ensembles to unlock every item from the vendor. Shift Rightclick the item to see which ensemble.",
 					["groups"] = VICIOUS_GROUPS,

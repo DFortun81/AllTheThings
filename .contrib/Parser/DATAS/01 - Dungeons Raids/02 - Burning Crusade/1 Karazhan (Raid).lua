@@ -35,14 +35,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 		["lvl"] = lvlsquish(70, 68, 30),	-- The attunement quests were originally level 70 required, but once removed, level 68s could zone in. TODO: Check this.
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				classicAch(960, {	-- The Violet Eye
+				achWithRep(960, 967, {	-- The Violet Eye
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with The Violet Eye to Exalted.",
-					-- #endif
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 967); end]],
 					-- #endif
 				}),
 			}),
@@ -714,13 +709,12 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				},
 				["groups"] = {
 					i(23809),	-- Schematic: Stabilized Eternium Scope
-					classicAch(882, {	-- Fiery Warhorse's Reins
+					ach(882, {	-- Fiery Warhorse's Reins
 						["provider"] = { "i", 30480 },	-- Fiery Warhorse's Reins
-						["filterID"] = MOUNTS,
 						-- #if BEFORE WRATH
 						["description"] = "Obtain the Fiery Warhorse's Reins from Attumen the Huntsman in Karazhan.",
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 						-- #endif
+						["filterID"] = MOUNTS,
 					}),
 					i(30480),	-- Fiery Warhorse (MOUNT!)
 					i(28504),	-- Steelhawk Crossbow
@@ -1016,10 +1010,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			e(1563, {	-- Prince Malchezaar
 				["creatureID"] = 15690,
 				["groups"] = {
-					classicAch(690, {	-- Karazhan
+					ach(690, {	-- Karazhan
 						-- #if BEFORE WRATH
 						["sourceQuest"] = 9844,	-- A Demonic Presence
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5084, {	-- Karazhan Guild Run

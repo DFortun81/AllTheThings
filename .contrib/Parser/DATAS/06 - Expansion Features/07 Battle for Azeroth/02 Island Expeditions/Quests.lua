@@ -602,11 +602,11 @@ root(ROOTS.HiddenQuestTriggers, tier(BFA_TIER, {
 	n(ISLAND_EXPEDITIONS, {
 		q(55591, {["repeatable"]=true}),	-- Expedition Demolisher
 		q(51994),	-- Unlock the ability to go on Island Expeditions in search of Azerite
-		q(55687),	-- Expedition GG-118 Micro-Jetpack — assembling a jetpack in Island Expeditions, Alliance
+		q(55687, {["repeatable"]=true}),	-- Expedition GG-118 Micro-Jetpack — assembling a jetpack in Island Expeditions, Alliance
 		q(57104, {["repeatable"]=true}),	-- Expedition GG-118 Micro-Jetpack — assembling a jetpack in Island Expeditions, Horde
-		q(55713),	-- Expedition A.T.O.M.I.K. Mk. II — rebuilding a robot in Island Expeditions, Alliance
-		q(57106),	-- Expedition A.T.O.M.I.K. Mk. II — rebuilding a robot in Island Expeditions, Horde
-		q(55686),	-- Upgrade Your Jetpack (Optional) — clicking on box of Azerite-Imbued Powder in Island Expeditions, Alliance
+		q(55713, {["repeatable"]=true}),	-- Expedition A.T.O.M.I.K. Mk. II — rebuilding a robot in Island Expeditions, Alliance
+		q(57106, {["repeatable"]=true}),	-- Expedition A.T.O.M.I.K. Mk. II — rebuilding a robot in Island Expeditions, Horde
+		q(55686, {["repeatable"]=true}),	-- Upgrade Your Jetpack (Optional) — clicking on box of Azerite-Imbued Powder in Island Expeditions, Alliance
 		q(57105, {["repeatable"]=true}),	-- Upgrade Your Jetpack (Optional) — clicking on box of Azerite-Imbued Powder in Island Expeditions, Horde
 		q(55712, {["repeatable"]=true}),	-- Upgrade Your A.T.O.M.I.K. Mk. II (Optional) — upgrading robot in Island Expeditions, Alliance
 		q(57107, {["repeatable"]=true}),	-- Upgrade Your A.T.O.M.I.K. Mk. II (Optional) — upgrading robot in Island Expeditions, Horde

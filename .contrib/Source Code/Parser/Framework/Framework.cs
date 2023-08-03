@@ -9,6 +9,7 @@ using System.Linq;
 using System.Net.NetworkInformation;
 using System.Reflection;
 using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using static ATT.Export;
 using static ATT.Framework;
@@ -94,7 +95,7 @@ namespace ATT
             { "UNKNOWN", new int[] { 0, 0, 0, 0 } },        // Unknown, invalid data.
             { "CLASSIC", new int[] { 1, 0, 0, 22248 } },    // NOTE: Values for WoW-Classic
             { "TBC", new int[] { 2, 0, 1, 22248 } },        // NOTE: Values for TBC-Classic
-            { "WRATH", new int[] { 3, 0, 2, 9056 } },
+            { "WRATH", new int[] { 3, 0, 2, 9056 } },       // NOTE: Values for Wrath-Classic
             { "CATA", new int[] { 4, 0, 1, 13164 } },
             { "MOP", new int[] { 5, 0, 4, 16015 } },
             { "WOD", new int[] { 6, 0, 2, 18764 } },
@@ -115,7 +116,7 @@ namespace ATT
             { "UNKNOWN", new int[] { 0, 0, 0, 22248 } },    // Unknown, invalid data.
             { "CLASSIC", new int[] { 1, 13, 7, 22248 } },   // NOTE: Values for WoW-Classic
             { "TBC", new int[] { 2, 5, 4, 22248 } },        // NOTE: Values for TBC-Classic
-            { "WRATH", new int[] { 3, 4, 5, 22248 } },
+            { "WRATH", new int[] { 3, 4, 5, 22248 } },      // NOTE: Values for Wrath-Classic
             { "CATA", new int[] { 4, 3, 4, 15595 } },
             { "MOP", new int[] { 5, 4, 8, 18224 } },
             { "WOD", new int[] { 6, 2, 4, 21345 } },
@@ -214,24 +215,6 @@ namespace ATT
         /// All of the NPC IDs that have been referenced somewhere in the database.
         /// </summary>
         private static IDictionary<long, bool> NPCS_WITH_REFERENCES = new Dictionary<long, bool>();
-
-        /// <summary>
-        /// All of the Object Icons that have been loaded into the database.
-        /// NOTE: For the purpose of creating a sorted list.
-        /// </summary>
-        private static Dictionary<long, string> OBJECT_ICONS = new Dictionary<long, string>();
-
-        /// <summary>
-        /// All of the Object Models that have been loaded into the database.
-        /// NOTE: For the purpose of creating a sorted list.
-        /// </summary>
-        private static Dictionary<long, long> OBJECT_MODELS = new Dictionary<long, long>();
-
-        /// <summary>
-        /// All of the Object Names that have been loaded into the database.
-        /// NOTE: For the purpose of creating a sorted list.
-        /// </summary>
-        private static Dictionary<long, string> OBJECT_NAMES = new Dictionary<long, string>();
 
         /// <summary>
         /// All of the Object IDs that have been referenced somewhere in the database.
@@ -437,6 +420,11 @@ namespace ATT
         /// The CustomHeaders table from main.lua that is used to generate custom headers.
         /// </summary>
         internal static Dictionary<long, object> CustomHeaders { get; private set; }
+
+        /// <summary>
+        /// All of the objects that have been loaded into the database.
+        /// </summary>
+        internal static Dictionary<long, Dictionary<string, object>> ObjectDB { get; private set; } = new Dictionary<long, Dictionary<string, object>>();
 
         /// <summary>
         /// Contains two Keys for sets of field names relating to a 'trackable' nature within ATT
@@ -1584,8 +1572,8 @@ namespace ATT
                 data["collectible"] = false;
             }
 
-            // If not processing the Main Achievement Category, then any encountered Achievements (which are not Criteria) should be duplicated into the Main Achievement Category
-            if (!ProcessingAchievementCategory && !data.ContainsKey("criteriaID"))
+            // If not processing the Main Achievement Category, then any encountered non-guild Achievements (which are not Criteria) should be duplicated into the Main Achievement Category
+            if (!ProcessingAchievementCategory && !isGuild && !data.ContainsKey("criteriaID"))
             {
                 if (achInfo.TryGetValue("parentCategoryID", out long achCatID))
                 {
@@ -2056,11 +2044,7 @@ namespace ATT
             {
                 // Assign the icon and then inform the engineer.
                 CATEGORY_ICONS[categoryID] = icon.Replace("\\", "/");
-                Trace.Write("CATEGORY ICON MISSING FOR ");
-                Trace.Write(categoryID);
-                Trace.Write(": ASSIGNED ");
-                Trace.Write(icon);
-                Trace.WriteLine(" FROM SOURCE.");
+                LogWarn($"CATEGORY ICON MISSING FOR {categoryID} : ASSIGNED {icon} FROM SOURCE.");
                 if (!DebugMode)
                 {
                     Trace.WriteLine("Activating Debug Mode! (Press Enter to continue...)");
@@ -2073,11 +2057,7 @@ namespace ATT
             {
                 // Assign the name and then inform the engineer.
                 CATEGORY_NAMES[categoryID] = name;
-                Trace.Write("CATEGORY NAME MISSING FOR ");
-                Trace.Write(categoryID);
-                Trace.Write(": ASSIGNED ");
-                Trace.Write(name);
-                Trace.WriteLine(" FROM SOURCE.");
+                LogWarn($"CATEGORY NAME MISSING FOR {categoryID} : ASSIGNED {name} FROM SOURCE.");
                 if (!DebugMode)
                 {
                     Trace.WriteLine("Activating Debug Mode! (Press Enter to continue...)");
@@ -2096,56 +2076,101 @@ namespace ATT
         private static void ProcessObjectInstance(IDictionary<string, object> data, long objectID)
         {
             OBJECTS_WITH_REFERENCES[objectID] = true;
-            if (!OBJECT_ICONS.ContainsKey(objectID) && data.TryGetValue("icon", out string icon))
+            if (!ObjectDB.TryGetValue(objectID, out Dictionary<string, object> objectData))
             {
-                // Assign the icon and then inform the engineer.
-                OBJECT_ICONS[objectID] = icon.Replace("\\", "/");
-                Trace.Write("OBJECT ICON MISSING FOR ");
-                Trace.Write(objectID);
-                Trace.Write(": ASSIGNED ");
-                Trace.Write(icon);
-                Trace.WriteLine(" FROM SOURCE.");
-                if (!DebugMode)
+                objectData = new Dictionary<string, object>();
+                ObjectDB[objectID] = objectData;
+                LogWarn($"OBJECT MISSING FOR {objectID}!", data);
+            }
+            if (data.TryGetValue("icon", out string icon))
+            {
+                if (!objectData.ContainsKey("icon"))
                 {
-                    Trace.WriteLine("Activating Debug Mode! (Press Enter to continue...)");
-                    Trace.WriteLine("Update ObjectDB.lua from the Debugging folder.");
-                    DebugMode = true;
-                    Console.ReadLine();
+                    // Assign the icon and then inform the engineer.
+                    objectData["icon"] = icon.Replace("\\", "/");
+                    LogWarn($"OBJECT ICON MISSING FOR {objectID} : ASSIGNED {icon} FROM SOURCE.");
+                    if (!DebugMode)
+                    {
+                        Trace.WriteLine("Activating Debug Mode! (Press Enter to continue...)");
+                        Trace.WriteLine("Update ObjectDB.lua from the Debugging folder.");
+                        DebugMode = true;
+                        Console.ReadLine();
+                    }
+                }
+                else
+                {
+                    LogDebug($"OBJECT ICON ALREADY IN DATABASE FOR {objectID}: You can probably delete it from the source file.");
                 }
             }
-            if (!OBJECT_MODELS.ContainsKey(objectID) && data.TryGetValue("model", out long model))
+            else
             {
-                // Assign the model and then inform the engineer.
-                OBJECT_MODELS[objectID] = model;
-                Trace.Write("OBJECT MODEL MISSING FOR ");
-                Trace.Write(objectID);
-                Trace.Write(": ASSIGNED ");
-                Trace.Write(model);
-                Trace.WriteLine(" FROM SOURCE.");
-                if (!DebugMode)
+                // Ignore that the icon is missing... for now.
+            }
+            if (data.TryGetValue("model", out object model))
+            {
+                if (!objectData.ContainsKey("model"))
                 {
-                    Trace.WriteLine("Activating Debug Mode! (Press Enter to continue...)");
-                    Trace.WriteLine("Update ObjectDB.lua from the Debugging folder.");
-                    DebugMode = true;
-                    Console.ReadLine();
+                    // Assign the model and then inform the engineer.
+                    objectData["model"] = model;
+                    LogWarn($"OBJECT MODEL MISSING FOR {objectID} : ASSIGNED {model} FROM SOURCE.");
+                    if (!DebugMode)
+                    {
+                        Trace.WriteLine("Activating Debug Mode! (Press Enter to continue...)");
+                        Trace.WriteLine("Update ObjectDB.lua from the Debugging folder.");
+                        DebugMode = true;
+                        Console.ReadLine();
+                    }
+                }
+                else
+                {
+                    LogDebug($"OBJECT MODEL ALREADY IN DATABASE FOR {objectID}: You can probably delete it from the source file.");
                 }
             }
-            if (!OBJECT_NAMES.ContainsKey(objectID) && data.TryGetValue("name", out string name))
+            else
             {
-                // Assign the name and then inform the engineer.
-                OBJECT_NAMES[objectID] = name;
-                Trace.Write("OBJECT NAME MISSING FOR ");
-                Trace.Write(objectID);
-                Trace.Write(": ASSIGNED ");
-                Trace.Write(name);
-                Trace.WriteLine(" FROM SOURCE.");
-                if (!DebugMode)
+                // Ignore that the model is missing... for now.
+            }
+            if (data.TryGetValue("name", out string name))
+            {
+                if (!objectData.ContainsKey("readable"))
                 {
-                    Trace.WriteLine("Activating Debug Mode! (Press Enter to continue...)");
-                    Trace.WriteLine("Update ObjectDB.lua from the Debugging folder.");
-                    DebugMode = true;
-                    Console.ReadLine();
+                    // Assign the readable and then inform the engineer.
+                    objectData["readable"] = name;
+                    LogWarn($"OBJECT READABLE MISSING FOR {objectID} : ASSIGNED {name} FROM SOURCE.");
+                    if (!DebugMode)
+                    {
+                        Trace.WriteLine("Activating Debug Mode! (Press Enter to continue...)");
+                        Trace.WriteLine("Update ObjectDB.lua from the Debugging folder.");
+                        DebugMode = true;
+                        Console.ReadLine();
+                    }
                 }
+                else
+                {
+                    LogDebug($"OBJECT READABLE ALREADY IN DATABASE FOR {objectID}: You can probably delete it from the source file.");
+                }
+
+                if (!objectData.ContainsKey("text"))
+                {
+                    // Assign the text and then inform the engineer.
+                    objectData["text"] = new Dictionary<string, object> { { "en", name } };
+                    LogWarn($"OBJECT TEXT MISSING FOR {objectID} : ASSIGNED {name} FROM SOURCE.");
+                    if (!DebugMode)
+                    {
+                        Trace.WriteLine("Activating Debug Mode! (Press Enter to continue...)");
+                        Trace.WriteLine("Update ObjectDB.lua from the Debugging folder.");
+                        DebugMode = true;
+                        Console.ReadLine();
+                    }
+                }
+                else
+                {
+                    LogDebug($"OBJECT TEXT ALREADY IN DATABASE FOR {objectID}: You can probably delete it from the source file.");
+                }
+            }
+            else
+            {
+                // Ignore that the readable is missing... for now.
             }
         }
 
@@ -3540,7 +3565,7 @@ namespace ATT
                             else
                             {
                                 LogError("IllusionDB not in the correct format!");
-                                Console.WriteLine(Framework.CurrentFileName);
+                                Console.WriteLine(CurrentFileName);
                                 Console.ReadLine();
                             }
                             break;
@@ -3561,7 +3586,7 @@ namespace ATT
                                     else
                                     {
                                         LogError("ItemDB not in the correct format!");
-                                        Console.WriteLine(Framework.CurrentFileName);
+                                        Console.WriteLine(CurrentFileName);
                                         Console.WriteLine(ToJSON(itemValuePair.Value));
                                         Console.ReadLine();
                                     }
@@ -3578,7 +3603,7 @@ namespace ATT
                                     else
                                     {
                                         LogError("ItemDB not in the correct format!");
-                                        Console.WriteLine(Framework.CurrentFileName);
+                                        Console.WriteLine(CurrentFileName);
                                         Console.WriteLine(ToJSON(o));
                                         Console.ReadLine();
                                     }
@@ -3587,7 +3612,7 @@ namespace ATT
                             else
                             {
                                 LogError("ItemDB not in the correct format!");
-                                Console.WriteLine(Framework.CurrentFileName);
+                                Console.WriteLine(CurrentFileName);
                                 Console.ReadLine();
                             }
                         }
@@ -3608,7 +3633,7 @@ namespace ATT
                                     else
                                     {
                                         LogError("ItemDB not in the correct format!");
-                                        Console.WriteLine(Framework.CurrentFileName);
+                                        Console.WriteLine(CurrentFileName);
                                         Console.WriteLine(ToJSON(itemValuePair.Value));
                                         Console.ReadLine();
                                     }
@@ -3625,7 +3650,7 @@ namespace ATT
                                     else
                                     {
                                         LogError("ItemDB not in the correct format!");
-                                        Console.WriteLine(Framework.CurrentFileName);
+                                        Console.WriteLine(CurrentFileName);
                                         Console.WriteLine(ToJSON(o));
                                         Console.ReadLine();
                                     }
@@ -3634,7 +3659,7 @@ namespace ATT
                             else
                             {
                                 LogError("ItemDB not in the correct format!");
-                                Console.WriteLine(Framework.CurrentFileName);
+                                Console.WriteLine(CurrentFileName);
                                 Console.ReadLine();
                             }
                         }
@@ -3648,7 +3673,7 @@ namespace ATT
                             else
                             {
                                 LogError($"{pair.Key} not in the correct format!");
-                                Console.WriteLine(Framework.CurrentFileName);
+                                Console.WriteLine(CurrentFileName);
                                 Console.ReadLine();
                             }
                         }
@@ -3668,7 +3693,7 @@ namespace ATT
                                     else
                                     {
                                         LogError("RecipeDB not in the correct format!");
-                                        Console.WriteLine(Framework.CurrentFileName);
+                                        Console.WriteLine(CurrentFileName);
                                         Console.WriteLine(ToJSON(recipeValuePair.Value));
                                         Console.ReadLine();
                                     }
@@ -3685,7 +3710,7 @@ namespace ATT
                                     else
                                     {
                                         LogError("ItemDB not in the correct format!");
-                                        Console.WriteLine(Framework.CurrentFileName);
+                                        Console.WriteLine(CurrentFileName);
                                         Console.WriteLine(ToJSON(o));
                                         Console.ReadLine();
                                     }
@@ -3694,7 +3719,7 @@ namespace ATT
                             else
                             {
                                 LogError("ItemDB not in the correct format!");
-                                Console.WriteLine(Framework.CurrentFileName);
+                                Console.WriteLine(CurrentFileName);
                                 Console.ReadLine();
                             }
                         }
@@ -3714,7 +3739,7 @@ namespace ATT
                                     else
                                     {
                                         LogError("ItemMountDB not in the correct format!");
-                                        Console.WriteLine(Framework.CurrentFileName);
+                                        Console.WriteLine(CurrentFileName);
                                         Console.WriteLine(ToJSON(itemValuePair.Value));
                                         Console.ReadLine();
                                     }
@@ -3723,7 +3748,7 @@ namespace ATT
                             else
                             {
                                 LogError("ItemMountDB not in the correct format!");
-                                Console.WriteLine(Framework.CurrentFileName);
+                                Console.WriteLine(CurrentFileName);
                                 Console.ReadLine();
                             }
                             break;
@@ -3744,7 +3769,7 @@ namespace ATT
                                     else
                                     {
                                         LogError("ItemSpeciesDB not in the correct format!");
-                                        Console.WriteLine(Framework.CurrentFileName);
+                                        Console.WriteLine(CurrentFileName);
                                         Console.WriteLine(ToJSON(itemValuePair.Value));
                                         Console.ReadLine();
                                     }
@@ -3753,7 +3778,7 @@ namespace ATT
                             else
                             {
                                 LogError("ItemSpeciesDB not in the correct format!");
-                                Console.WriteLine(Framework.CurrentFileName);
+                                Console.WriteLine(CurrentFileName);
                                 Console.ReadLine();
                             }
                             break;
@@ -3761,7 +3786,7 @@ namespace ATT
                     case "ItemToyDB":
                         {
                             LogError("ItemToyDB not supported. Please use 'ItemDBConditional' and parser.config to assign Toy objects.");
-                            Console.WriteLine(Framework.CurrentFileName);
+                            Console.WriteLine(CurrentFileName);
                             Console.ReadLine();
                             break;
                         }
@@ -3836,7 +3861,59 @@ namespace ATT
                             }
                             break;
                         }
-                    case "ObjectIcons":
+                    case "ObjectDB":
+                        {
+                            // The format of the Object DB is a dictionary of Object ID <-> Object pairs.
+                            if (pair.Value is Dictionary<long, object> objectDB)
+                            {
+                                foreach (var objectPair in objectDB)
+                                {
+                                    if (objectPair.Value is Dictionary<string, object> data)
+                                    {
+                                        if (ObjectDB.TryGetValue(objectPair.Key, out Dictionary<string, object> objectData))
+                                        {
+                                            // Merge over the complex text data.
+                                            if (data.TryGetValue("text", out object textObject))
+                                            {
+                                                data.Remove("text");
+                                                if (textObject is Dictionary<string, object> textLocales)
+                                                {
+                                                    if (objectData.TryGetValue("text", out textObject) && textObject is Dictionary<string, object> currentTextLocales)
+                                                    {
+                                                        foreach (var textObjectPair in textLocales)
+                                                        {
+                                                            currentTextLocales[textObjectPair.Key] = textObjectPair.Value;
+                                                        }
+                                                    }
+                                                    else objectData["text"] = textLocales;
+                                                }
+                                            }
+
+                                            // Merge over simple data. (a simple replace is fine)
+                                            foreach (var dataPair in data)
+                                            {
+                                                objectData[dataPair.Key] = dataPair.Value;
+                                            }
+                                        }
+                                        else ObjectDB[objectPair.Key] = data;
+                                    }
+                                    else
+                                    {
+                                        LogError($"ObjectDB {objectPair.Key} not in the correct format!");
+                                        Console.WriteLine(CurrentFileName);
+                                        Console.ReadLine();
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                LogError("ObjectDB not in the correct format!");
+                                Console.WriteLine(CurrentFileName);
+                                Console.ReadLine();
+                            }
+                            break;
+                        }
+                    case "ObjectIcons":   // Deprecated
                         {
                             // The format of the Object Icons DB is a dictionary of Object ID <-> Icon pairs.
                             if (pair.Value is Dictionary<long, object> ObjectIcons)
@@ -3846,13 +3923,20 @@ namespace ATT
                                     // KEY: Object ID, VALUE: Icon
                                     if (categoryPair.Value is string name)
                                     {
-                                        OBJECT_ICONS[categoryPair.Key] = name;
+                                        if (ObjectDB.TryGetValue(categoryPair.Key, out Dictionary<string, object> objectData))
+                                        {
+                                            objectData["icon"] = name;
+                                        }
+                                        else ObjectDB[categoryPair.Key] = new Dictionary<string, object>
+                                        {
+                                            { "icon", name }
+                                        };
                                     }
                                 }
                             }
                             break;
                         }
-                    case "ObjectModels":
+                    case "ObjectModels":   // Deprecated
                         {
                             // The format of the Object Models DB is a dictionary of Object ID <-> Model ID pairs.
                             if (pair.Value is Dictionary<long, object> ObjectModels)
@@ -3862,13 +3946,20 @@ namespace ATT
                                     // KEY: Object ID, VALUE: Model ID
                                     if (categoryPair.Value is long modelID)
                                     {
-                                        OBJECT_MODELS[categoryPair.Key] = modelID;
+                                        if (ObjectDB.TryGetValue(categoryPair.Key, out Dictionary<string, object> objectData))
+                                        {
+                                            objectData["model"] = modelID;
+                                        }
+                                        else ObjectDB[categoryPair.Key] = new Dictionary<string, object>
+                                        {
+                                            { "model", modelID }
+                                        };
                                     }
                                 }
                             }
                             break;
                         }
-                    case "ObjectNames":
+                    case "ObjectNames":   // Deprecated
                         {
                             // The format of the Object Names DB is a dictionary of Object ID <-> Name pairs.
                             if (pair.Value is Dictionary<long, object> ObjectNames)
@@ -3878,7 +3969,79 @@ namespace ATT
                                     // KEY: Object ID, VALUE: Name
                                     if (categoryPair.Value is string name)
                                     {
-                                        OBJECT_NAMES[categoryPair.Key] = name;
+                                        if (ObjectDB.TryGetValue(categoryPair.Key, out Dictionary<string, object> objectData))
+                                        {
+                                            if (!objectData.ContainsKey("readable")) objectData["readable"] = name;
+                                            if (objectData.TryGetValue("text", out object textObject))
+                                            {
+                                                if (textObject is Dictionary<string, object> locale && !locale.ContainsKey("en"))
+                                                {
+                                                    locale["en"] = name;
+                                                }
+                                            }
+                                            else
+                                            {
+                                                objectData["text"] = new Dictionary<string, object>
+                                                {
+                                                    { "en", name }
+                                                };
+                                            }
+                                        }
+                                        else ObjectDB[categoryPair.Key] = new Dictionary<string, object>
+                                        {
+                                            { "readable", name },
+                                            { "text",
+                                                new Dictionary<string, object> {
+                                                    { "en", name }
+                                                }
+                                            }
+                                        };
+                                    }
+                                }
+                            }
+                            break;
+                        }
+                    case "ObjectNamesForLocales":   // Deprecated
+                        {
+                            // The format of the Object Names DB is a dictionary of Locale <-> { Object ID <-> Name pairs }.
+                            if (pair.Value is Dictionary<string, object> ObjectNamesForLocales)
+                            {
+                                foreach (var localePair in ObjectNamesForLocales)
+                                {
+                                    if (localePair.Value is Dictionary<long, object> ObjectNames)
+                                    {
+                                        foreach (var categoryPair in ObjectNames)
+                                        {
+                                            // KEY: Object ID, VALUE: Name
+                                            if (categoryPair.Value is string name)
+                                            {
+                                                if (ObjectDB.TryGetValue(categoryPair.Key, out Dictionary<string, object> objectData))
+                                                {
+                                                    if (objectData.TryGetValue("text", out object textObject))
+                                                    {
+                                                        if (textObject is Dictionary<string, object> locale && !locale.ContainsKey(localePair.Key))
+                                                        {
+                                                            locale[localePair.Key] = name;
+                                                        }
+                                                    }
+                                                    else
+                                                    {
+                                                        objectData["text"] = new Dictionary<string, object>
+                                                        {
+                                                            { localePair.Key, name }
+                                                        };
+                                                    }
+                                                }
+                                                else ObjectDB[categoryPair.Key] = new Dictionary<string, object>
+                                                {
+                                                    { "text",
+                                                        new Dictionary<string, object> {
+                                                            { localePair.Key, name }
+                                                        }
+                                                    }
+                                                };
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -4078,7 +4241,7 @@ namespace ATT
             {
                 return builder.Append(value);
             }
-            return builder.Append("\"").Append(value).Append("\"");
+            return builder.Append("\"").Append(value.Replace("\"", "\\\"")).Append("\"");
         }
 
         static StringBuilder ExportStringKeyValue(StringBuilder builder, object key, string value)
@@ -4284,10 +4447,10 @@ namespace ATT
         public static void Export()
         {
 #if ANYCLASSIC
-            // We want Classic WRATH, TBC, and Classic builds of ATT to build the database to the ATT-Classic folder.
+            // We want all versions of Classic ATT to build the database to the ATT-Classic folder.
             string addonRootFolder = "../../../../../../_classic_/Interface/AddOns/ATT-Classic";
 
-#if DRAGONFLIGHT
+#if DF
             string dbRootFolder = "Dragonflight/";
 #elif SHADOWLANDS
             string dbRootFolder = "Shadowlands/";
@@ -4545,37 +4708,83 @@ namespace ATT
                         }
 
                         // Export the Object DB file.
-                        if (OBJECT_NAMES.Any())
+                        if (ObjectDB.Any())
                         {
+                            // Export the new format.
                             var builder = new StringBuilder("-----------------------------------------------------\n--   O B J E C T   D A T A B A S E   M O D U L E   --\n-----------------------------------------------------\n");
-                            var keys = OBJECT_NAMES.Keys.ToList();
+                            var keys = ObjectDB.Keys.ToList();
                             keys.Sort();
-                            builder.Append("_.ObjectNames = {").AppendLine();
+                            builder.Append("_.ObjectDB = {").AppendLine();
                             foreach (var key in keys)
                             {
-                                var name = OBJECT_NAMES[key];
-                                builder.Append("\t[").Append(key).Append("] = ");
-                                ExportStringValue(builder, name).AppendLine(",");
-                            }
-                            builder.AppendLine("};");
-                            keys = OBJECT_ICONS.Keys.ToList();
-                            keys.Sort();
-                            builder.Append("_.ObjectIcons = {").AppendLine();
-                            foreach (var key in keys)
-                            {
-                                builder.Append("\t[").Append(key).Append("] = \"").Append(OBJECT_ICONS[key]).Append("\",");
-                                if (OBJECT_NAMES.TryGetValue(key, out string name)) builder.Append("\t-- ").Append(name);
-                                builder.AppendLine();
-                            }
-                            builder.AppendLine("};");
-                            keys = OBJECT_MODELS.Keys.ToList();
-                            keys.Sort();
-                            builder.Append("_.ObjectModels = {").AppendLine();
-                            foreach (var key in keys)
-                            {
-                                builder.Append("\t[").Append(key).Append("] = ").Append(OBJECT_MODELS[key]).Append(",");
-                                if (OBJECT_NAMES.TryGetValue(key, out string name)) builder.Append("\t-- ").Append(name);
-                                builder.AppendLine();
+                                Dictionary<string, object> objectData = ObjectDB[key];
+                                builder.Append("\t[").Append(key).AppendLine("] = {");
+
+                                // Attempt to get the text locale data object.
+                                objectData.TryGetValue("text", out object textLocaleObject);
+                                Dictionary<string, object> textLocales = textLocaleObject as Dictionary<string, object>;
+
+                                // Export the "readable" field. (database only, not exported to game)
+                                if (objectData.TryGetValue("readable", out string treadable))
+                                {
+                                    builder.Append("\t\treadable = ");
+                                    ExportStringValue(builder, treadable).AppendLine(",");
+                                }
+                                else if (textLocales != null && textLocales.TryGetValue("en", out string name))
+                                {
+                                    builder.Append("\t\treadable = ");
+                                    ExportStringValue(builder, name).AppendLine(",");
+                                }
+
+                                // Export the "icon" field.
+                                if (objectData.TryGetValue("icon", out string icon))
+                                {
+                                    builder.Append("\t\ticon = ");
+                                    ExportStringValue(builder, icon.Replace("\\", "/")).AppendLine(",");
+                                }
+
+                                // Export the "model" field.
+                                if (objectData.TryGetValue("model", out long model))
+                                {
+                                    builder.Append("\t\tmodel = ").Append(model).AppendLine(",");
+                                }
+
+                                // Export the complex "text" locales field.
+                                if (textLocales != null)
+                                {
+                                    // Sort and then ensure es comes after en, to match previous convention.
+                                    var localeKeys = textLocales.Keys.ToList();
+                                    localeKeys.Sort();
+                                    if (localeKeys.Contains("es"))
+                                    {
+                                        localeKeys.Remove("es");
+                                        localeKeys.Insert(0, "es");
+                                    }
+                                    if (localeKeys.Contains("en"))
+                                    {
+                                        localeKeys.Remove("en");
+                                        localeKeys.Insert(0, "en");
+                                    }
+                                    if (localeKeys.Contains("ko"))
+                                    {
+                                        localeKeys.Remove("ko");
+                                        localeKeys.Add("ko");
+                                    }
+                                    if (localeKeys.Contains("cn"))
+                                    {
+                                        localeKeys.Remove("cn");
+                                        localeKeys.Add("cn");
+                                    }
+
+                                    builder.AppendLine("\t\ttext = {");
+                                    foreach (var localeKey in localeKeys)
+                                    {
+                                        builder.Append("\t\t\t").Append(localeKey).Append(" = ");
+                                        ExportStringValue(builder, textLocales[localeKey].ToString()).AppendLine(",");
+                                    }
+                                    builder.AppendLine("\t\t},");
+                                }
+                                builder.AppendLine("\t},");
                             }
                             builder.AppendLine("};");
                             File.WriteAllText(Path.Combine(debugFolder.FullName, "ObjectDB.lua"), builder.ToString(), Encoding.UTF8);
@@ -4683,7 +4892,7 @@ namespace ATT
                                     eventIDs[key] = eventID;
                                     if (header.TryGetValue("eventIDs", out value) && value is List<object> ids)
                                     {
-                                        foreach(var eventIDAsObj in ids)
+                                        foreach (var eventIDAsObj in ids)
                                         {
                                             eventRemaps[Convert.ToInt64(eventIDAsObj)] = eventID;
                                         }
@@ -4821,7 +5030,7 @@ namespace ATT
                         }
                         else
                         {
-                            foreach(var pair in data)
+                            foreach (var pair in data)
                             {
                                 zh[pair.Key] = pair.Value;
                             }
@@ -4937,43 +5146,129 @@ namespace ATT
                 }
 
                 // Export the Object DB file.
-                if (OBJECT_NAMES.Any())
+                if (OBJECTS_WITH_REFERENCES.Any())
                 {
                     CurrentParseStage = ParseStage.ExportObjectDB;
-                    var builder = new StringBuilder("-------------------------------------------------------\n--   O B J E C T   D A T A B A S E   M O D U L E   --\n-------------------------------------------------------\n");
-                    var keys = OBJECT_NAMES.Keys.ToList();
-                    keys.Sort();
-                    builder.AppendLine("local appName, _ = ...;").Append("_.ObjectNames = {").AppendLine();
-                    foreach (var key in keys)
+                    var builder = new StringBuilder("-------------------------------------------------------\n--   O B J E C T   D A T A B A S E   M O D U L E   --\n-------------------------------------------------------\n")
+                        .AppendLine("local appName, _ = ...;")
+                        .AppendLine("local simplifiedLocale = string.sub(GetLocale(),1,2);").AppendLine();
+
+                    var keys = new List<long>();
+                    var icons = new Dictionary<long, string>();
+                    var modelIDs = new Dictionary<long, long>();
+                    var localizationForText = new Dictionary<string, Dictionary<long, string>>();
+                    foreach (var key in ObjectDB.Keys)
                     {
+                        // Include Only Referenced Objects!
                         if (OBJECTS_WITH_REFERENCES.ContainsKey(key))
                         {
-                            ExportStringKeyValue(builder, key, OBJECT_NAMES[key]).AppendLine();
+                            if (ObjectDB.TryGetValue(key, out Dictionary<string, object> objectData))
+                            {
+                                keys.Add(key);
+                                if (objectData.TryGetValue("icon", out object value))
+                                {
+                                    icons[key] = value.ToString().Replace("\\", "/");
+                                }
+                                if (objectData.TryGetValue("model", out value))
+                                {
+                                    modelIDs[key] = Convert.ToInt64(value);
+                                }
+                                if (objectData.TryGetValue("text", out value))
+                                {
+                                    if (!(value is IDictionary<string, object> localeData))
+                                    {
+                                        localeData = new Dictionary<string, object>
+                                        {
+                                            ["en"] = value
+                                        };
+                                    }
+                                    foreach (var locale in localeData)
+                                    {
+                                        if (!localizationForText.TryGetValue(locale.Key, out Dictionary<long, string> sublocale))
+                                        {
+                                            localizationForText[locale.Key] = sublocale = new Dictionary<long, string>();
+                                        }
+                                        sublocale[key] = locale.Value.ToString();
+                                    }
+                                }
+                            }
                         }
                     }
-                    builder.AppendLine("};");
-                    keys = OBJECT_ICONS.Keys.ToList();
                     keys.Sort();
-                    builder.Append("_.ObjectIcons = {").AppendLine();
+
+                    builder.AppendLine("_.ObjectIcons = {");
                     foreach (var key in keys)
                     {
-                        if (OBJECTS_WITH_REFERENCES.ContainsKey(key))
+                        if (icons.TryGetValue(key, out string icon))
                         {
-                            ExportStringKeyValue(builder, key, OBJECT_ICONS[key]).AppendLine();
+                            ExportStringKeyValue(builder, key, icon).AppendLine();
                         }
                     }
-                    builder.AppendLine("};");
-                    keys = OBJECT_MODELS.Keys.ToList();
-                    keys.Sort();
-                    builder.Append("_.ObjectModels = {").AppendLine();
+                    builder.AppendLine("}").AppendLine();
+
+
+                    builder.AppendLine("_.ObjectModels = {");
                     foreach (var key in keys)
                     {
-                        if (OBJECTS_WITH_REFERENCES.ContainsKey(key))
+                        if (modelIDs.TryGetValue(key, out long modelID))
                         {
-                            ExportObjectKeyValue(builder, key, OBJECT_MODELS[key]).AppendLine();
+                            ExportObjectKeyValue(builder, key, modelID).AppendLine();
                         }
                     }
-                    builder.AppendLine("};");
+                    builder.AppendLine("}").AppendLine();
+
+                    // Convert all "cn" into "zh" dictionaries, it makes the comparison later easier.
+                    if (localizationForText.TryGetValue("cn", out Dictionary<long, string> data))
+                    {
+                        localizationForText.Remove("cn");
+                        if (!localizationForText.TryGetValue("zh", out Dictionary<long, string> zh))
+                        {
+                            localizationForText["zh"] = data;
+                        }
+                        else
+                        {
+                            foreach (var pair in data)
+                            {
+                                zh[pair.Key] = pair.Value;
+                            }
+                        }
+                    }
+
+                    // Get all of the english translations and always write them to the file.
+                    if (localizationForText.TryGetValue("en", out data))
+                    {
+                        localizationForText.Remove("en");
+                        builder.AppendLine("_.ObjectNames = {");
+                        foreach (var key in keys)
+                        {
+                            if (data.TryGetValue(key, out string name))
+                            {
+                                ExportStringKeyValue(builder, key, name).AppendLine();
+                            }
+                        }
+                        builder.AppendLine("}").AppendLine();
+                    }
+
+                    // Now grab the non-english localizations and conditionally write them to the file.
+                    var localeKeys = localizationForText.Keys.ToList();
+                    localeKeys.Sort();
+                    foreach (var localeKey in localeKeys)
+                    {
+                        if (localizationForText.TryGetValue(localeKey, out data) && data.Any())
+                        {
+                            builder.Append("if simplifiedLocale == \"").Append(localeKey).AppendLine("\" then");
+                            builder.AppendLine("local a = _.ObjectNames;").AppendLine("for key,value in pairs({");
+                            foreach (var key in keys)
+                            {
+                                if (data.TryGetValue(key, out string name))
+                                {
+                                    ExportStringKeyValue(builder, key, name).AppendLine();
+                                }
+                            }
+                            builder.AppendLine("}) do a[key] = value; end");
+                            builder.AppendLine("end").AppendLine();
+                        }
+                    }
 
                     // Check to make sure the content is different since Diff tools are dumb as hell.
                     var filename = Path.Combine(addonRootFolder, $"db/{dbRootFolder}ObjectDB.lua");
@@ -4986,12 +5281,10 @@ namespace ATT
                 Objects.Export(outputFolder.FullName);
                 IncludeRawNewlines = true;
 
-#if RETAIL
                 CurrentParseStage = ParseStage.ExportAutoSources;
                 Objects.ExportAutoItemSources(Config["root-data"] ?? "./DATAS");
                 CurrentParseStage = ParseStage.ExportAutoLocale;
-                Objects.ExportAutoLocale(outputFolder.FullName);
-#endif
+                Objects.ExportAutoLocale(Path.Combine(addonRootFolder, $"db/{dbRootFolder}en_auto.lua"));
             }
         }
     }

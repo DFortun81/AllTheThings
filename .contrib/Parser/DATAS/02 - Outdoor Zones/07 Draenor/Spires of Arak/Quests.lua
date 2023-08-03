@@ -573,7 +573,7 @@ root(ROOTS.Zones, {
 				q(35260, {	-- Hardly Working
 					["sourceQuests"] = {
 						34882,	-- Blades in the Dark
-						34883,	-- Return to Veil Terokk
+						34883,	-- A Feast of Shadows
 					},
 					["coord"] = { 36.9, 24.5, SPIRES_OF_ARAK },
 					["provider"] = { "n", 80157 },	-- Darkscryer Raastok
@@ -867,7 +867,7 @@ root(ROOTS.Zones, {
 				q(35611, {	-- Return to Veil Terokk
 					["sourceQuests"] = {
 						35286,	-- Orders, Commander? (A)
-						-- TODO (H)
+						35277,	-- Orders, Commander? (H)
 					},
 					["coords"] = {
 						{ 40.1, 60.3, SPIRES_OF_ARAK },	-- (A)
@@ -924,7 +924,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = {
 						35011,	-- The False Talon King
 						35003,	-- Ritual Severance
-						35004,	-- Servants of a Dead God
+						-- 35004,	-- Servants of a Dead God [Not required 2023.07.14]
 					},
 					["coord"] = { 64.1, 37.0, SPIRES_OF_ARAK },
 					["provider"] = { "n", 86355 },	-- Anzu

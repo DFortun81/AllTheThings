@@ -5519,7 +5519,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 }));
 
 -- Jewelcrafting Item Database
-local itemDB = root(ROOTS.ItemDBConditional, {});
+local Items = ItemDBConditional;
 
 -- Recipe Cache (for Validation)
 local recipeCache = {
@@ -5579,7 +5579,7 @@ local itemrecipe = function(name, itemID, spellID, spellIDAfterCata, timeline)
 		end
 		o.name = name;
 	end
-	itemDB[itemID] = applyclassicphase(TBC_PHASE_ONE, o);
+	Items[itemID] = applyclassicphase(TBC_PHASE_ONE, o);
 
 	-- Ensure that this recipe's spellID exists in the profession database.
 	if recipeCache then

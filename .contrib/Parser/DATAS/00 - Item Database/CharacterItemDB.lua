@@ -1,13 +1,43 @@
 -- This file will combine itemIDs for customization and questIDs so they dont have to be in the source files
-local Items = root(ROOTS.ItemDBConditional);
-local iq = function(itemID, questID, classID)
-	if not itemID == 0 then
-		Items[itemID] = { ["questID"] = questID, ["classes"] = { classID }, ["_drop"] = { "spellID" } };
+local Items = ItemDBConditional;
+local Recipes = root(ROOTS.RecipeDB);
+local iq = function(itemID, questID, classID, raceID)
+	if itemID ~= 0 then
+		local item = {
+			["_drop"] = { "spellID" }
+		}
+		if questID then
+			item.questID = questID;
+		end
+		if classID then
+			item.classes = { classID };
+		end
+		if raceID then
+			item.races = { raceID };
+		end
+		Items[itemID] = item;
 	end
 end
 local is = function(itemID, spellID, classID)
-	if not itemID == 0 then
-		Items[itemID] = { ["spellID"] = spellID, ["classes"] = { classID }, ["filterID"] = RECIPES, ["collectible"] = true };
+	if itemID ~= 0 then
+		local item = {
+			["recipeID"] = spellID,
+			["filterID"] = RECIPES,
+			["collectible"] = true
+		}
+		if classID then
+			item.classes = { classID };
+		end
+		Items[itemID] = item;
+	else
+		local spell = {
+			["filterID"] = RECIPES,
+			["collectible"] = true
+		}
+		if classID then
+			spell.classes = { classID };
+		end
+		Recipes[spellID] = spell;
 	end
 end
 
@@ -19,8 +49,8 @@ is(22739, 28271, MAGE);				-- Tome of Polymorph: Turtle
 -----------------
 -- PATCH 3.0.3 --
 -----------------
-is(44714, 61316, MAGE);				-- Tome of Dalaran Brilliance
-is(44602, 61024, MAGE);				-- Tome of Dalaran Intellect
+is(44714, 61316, MAGE);				-- Tome of Dalaran Brilliance [REMOVED]
+is(44602, 61024, MAGE);				-- Tome of Dalaran Intellect [REMOVED]
 is(44709, 61305, MAGE);				-- Tome of Polymorph: Black Cat
 -- NYI --
 is(44600, 61025, MAGE);				-- Tome of Polymorph: Serpent
@@ -108,13 +138,23 @@ iq(166502, 54753, HUNTER);			-- Blood-Soaked Tome of Dark Whispers
 is(172405, 309328, SHAMAN);			-- Tome of Hex: Living Honey
 
 -----------------
+-- PATCH 8.3.0 --
+-----------------
+iq(175158, 59029, nil, VULPERA);	-- Flames of Fury
+iq(175160, 59035, nil, VULPERA);	-- Holy Relic
+iq(175159, 59032, nil, VULPERA);	-- Sinister Shadows
+
+-----------------
 -- PATCH 9.0.1 --
 -----------------
 iq(89868, 62677, DRUID);			-- Mark of the Cheetah
 iq(140630, 62678, DRUID);			-- Mark of the Doe
 iq(162022, 62674, DRUID);			-- Mark of the Dolphin
 iq(162029, 62676, DRUID);			-- Mark of the Humble Flyer
+-- #if AFTER 9.0.1
+-- CRIEVE NOTE: This was appearing in Classic... Ya'll gotta be more careful.
 iq(40919, 62673, DRUID);			-- Mark of the Orca
+-- #endif
 iq(129021, 62675, DRUID);			-- Mark of the Sentinel
 iq(162027, 62672, DRUID);			-- Mark of the Tideskipper
 iq(183123, 62254, HUNTER);			-- How to School Your Serpent
@@ -166,13 +206,12 @@ iq(139310, 76373, WARLOCK);			-- Grimoire of the Shivarra
 --- Felhunter ---
 iq(208051, 77180, WARLOCK);			-- Grimoire of the Antoran Felhunter
 iq(208052, 77181, WARLOCK);			-- Grimoire of the Voracious Felmaw
+iq(208050, 77183, WARLOCK);			-- Grimoire of the Xorothian Felhunter
+iq(208048, 77182, WARLOCK);			-- Ritual of the Voidmaw Felhunter
 --- Felguard ---
 iq(139315, 76376, WARLOCK);			-- Grimoire of the Wrathguard
 --- Infernal ---
 iq(139314, 76370, WARLOCK);			-- Grimoire of the Abyssal
---- Unknown ---
-iq(208050, 77183, WARLOCK);			-- Grimoire of the Xorothian Felhunter [???]
-iq(208048, 77182, WARLOCK);			-- Ritual of the Voidmaw Felhunter [???]
 -- 77184 Probably Normal Felhunter
 --- NYI ---
 iq(139313, nil, WARLOCK);			-- Grimoire of the Terrorguard

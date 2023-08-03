@@ -71,8 +71,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									12748,	-- A Special Surprise
 									12749,	-- A Special Surprise
 									12750,	-- A Special Surprise
+									-- #if AFTER 4.0.3.13277
 									28649,	-- A Special Surprise
 									28650,	-- A Special Surprise
+									-- #endif
 								},
 								["coord"] = { 52.6, 81.0, THE_SCARLET_ENCLAVE },
 								["groups"] = {
@@ -794,14 +796,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				classicAch(946, {	-- The Argent Dawn
+				achWithRep(946, 529, {	-- The Argent Dawn
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Argent Dawn to Exalted.",
-					-- #endif
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 529); end]],
 					-- #endif
 					["maps"] = { WESTERN_PLAGUELANDS },
 				}),
@@ -899,19 +896,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 83.8, 50.2, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 3.0.1.8681" },
 					["classes"] = { DEATHKNIGHT },
-					["sourceQuests"] = {
-						39017,	-- HQT representing if the player has completed any of their artifacts (assumed)
-					},
 				}),
 				fp(87, {	-- Crown Guard Tower, Eastern Plaguelands
+					-- #if AFTER 4.0.3.13277
 					["cr"] = 44232,	-- Janice Myers <Flight Master>
 					["coord"] = { 34.8, 68.0, EASTERN_PLAGUELANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					-- #else
+					["description"] = "If Plaguewood Tower is controlled by your faction, you can fly to this tower.",
+					["collectible"] = false,
+					-- #endif
 				}),
 				fp(86, {	-- Eastwall Tower, Eastern Plaguelands
+					-- #if AFTER 4.0.3.13277
 					["cr"] = 44230,	-- Richard Trueflight <Flight Master>
 					["coord"] = { 61.6, 43.8, EASTERN_PLAGUELANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					-- #else
+					["description"] = "If Plaguewood Tower is controlled by your faction, you can fly to this tower.",
+					["collectible"] = false,
+					-- #endif
 				}),
 				fp(67, {	-- Light's Hope Chapel, Eastern Plaguelands
 					["cr"] = 12617,	-- Khaelyn Steelwing <Gryphon Master>
@@ -937,14 +939,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
 				fp(85, {	-- Northpass Tower, Eastern Plaguelands
+					-- #if AFTER 4.0.3.13277
 					["cr"] = 28621,	-- Grayson Ironwing <Flight Master>
 					["coord"] = { 51.2, 21.2, EASTERN_PLAGUELANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					-- #else
+					["description"] = "If Plaguewood Tower is controlled by your faction, you can fly to this tower.",
+					["collectible"] = false,
+					-- #endif
 				}),
 				fp(84, {	-- Plaguewood Tower, Eastern Plaguelands
+					-- #if AFTER 4.0.3.13277
 					["cr"] = 44233,	-- William Kielar Jr. <Flight Master>
 					["coord"] = { 18.4, 27.4, EASTERN_PLAGUELANDS },
-					["timeline"] = { "added 4.0.3.13277" },
+					-- #else
+					["cr"] = 17209,	-- William Kielar Jr. William Kielar <Spectral Gryphon Master>
+					-- #if AFTER WRATH
+					["coord"] = { 18.8, 26.6, EASTERN_PLAGUELANDS },
+					-- #else
+					["coord"] = { 22.2, 31.4, EASTERN_PLAGUELANDS },
+					-- #endif
+					["description"] = "If this tower is controlled by your faction, you can fly from this tower to the other towers your faction controls.",
+					["collectible"] = false,
+					-- #endif
 				}),
 				-- #if AFTER 4.0.3.13277
 				fp(383, {	-- Thondroril River, Eastern Plaguelands
@@ -1380,6 +1396,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(76268, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Corruptor's Scourgestones
+					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
+					["coord"] = { 75.7, 53.8, EASTERN_PLAGUELANDS },
+					["cost"] = {{ "i", 206375, 1 }},	-- 1x Corruptor's Scourgestone
+					["repeatable"] = true,
+					["groups"] = {
+						i(12844),	-- Argent Dawn Valor Token
+					},
+				})),
 				q(27531, {	-- Counter-Plague Research
 					["qg"] = 45828,	-- Argent Apotehcary Judkins
 					["sourceQuest"] = 27532,	-- The Plaguewood Tower
@@ -2016,6 +2041,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(76270, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Invader's Scourgestones
+					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
+					["coord"] = { 75.7, 53.8, EASTERN_PLAGUELANDS },
+					["cost"] = {{ "i", 206374, 10 }},	-- 10x Corruptor's Scourgestone
+					["repeatable"] = true,
+					["groups"] = {
+						i(12844),	-- Argent Dawn Valor Token
+					},
+				})),
 				q(27487, {	-- Ix'lar the Underlord
 					["qg"] = 45729,	-- Tarenar Sunstrike
 					["sourceQuest"] = 27466,	-- Argent Call: Northdale
@@ -2127,6 +2161,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 55,
 				}),
+				q(77243, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Many Corruptor's Scourgestones
+					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
+					["coord"] = { 75.7, 53.8, EASTERN_PLAGUELANDS },
+					["cost"] = {{ "i", 206375, 5 }},	-- 5x Corruptor's Scourgestone
+					["repeatable"] = true,
+					["groups"] = {
+						i(12844),	-- Argent Dawn Valor Token
+					},
+				})),
+				q(77242, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Many Invader's Scourgestones
+					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
+					["coord"] = { 75.7, 53.8, EASTERN_PLAGUELANDS },
+					["cost"] = {{ "i", 206374, 50 }},	-- 50x Invader's Scourgestone
+					["repeatable"] = true,
+					["groups"] = {
+						i(12844),	-- Argent Dawn Valor Token
+					},
+				})),
 				q(5206, {	-- Marauders of Darrowshire
 					["qg"] = 11063,	-- Carlin Redpath
 					["sourceQuests"] = {
@@ -2788,7 +2840,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				q(27532, {	-- The Plaguewood Tower
 					["qg"] = 45451,	-- Argus Highbeacon
-					["sourceQuest"] = 27526,	-- Gidwin's Fate Revealed
+					["sourceQuest"] = 27522,	-- Beat it Out of Them [Discord, 2023-8-2]
 					["coord"] = { 28.3, 25.8, EASTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["isBreadcrumb"] = true,
@@ -3122,7 +3174,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 5.2.0.16650" },
 				}),
 				-- #if BEFORE 4.0.3
-				i(12843, {	-- Corruptor's Scourgestone
+				i(12843, {	-- Corruptor's Scourgestone / Inert Corruptor's Scourgestone
 					["description"] = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 					["timeline"] = { "deleted 4.0.3" },
 				}),
@@ -3389,28 +3441,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					})),
 				},
 			}),
-			-- #if AFTER 10.1.5
-			n(TREASURES, {
-			--	o( , {	-- The Road Ahead
+			n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+				o(403536, {	-- The Road Ahead
 					["description"] = "Located by Corrin's Crossing in the Eastern Plaguelands, by the building that used to be the inn. The painting is on the first floor, by the wall beside the stairs leading to the second floor.",
-					["coords"] = { 
-						{ 55.0, 64.1, EASTERN_PLAGUELANDS },	-- The Road Ahead
-					},
+					["sourceQuests"] = { 76250 },	-- Spectral Essence
+					["coord"] = { 55.0, 64.1, EASTERN_PLAGUELANDS },
 					["groups"] = {
 						i(206363),	-- The Road Ahead
 					},
-			-- }),
-			--	o( , {	-- 
+				}),
+				o(403534, {	-- Trampled Doll
 					["description"] = "Located by a meat wagon in Darrowshire.",
-					["coords"] = { 
-						{ 36.3, 84.8, EASTERN_PLAGUELANDS },	-- Trampled Doll
-					},
+					["sourceQuests"] = { 76250 },	-- Spectral Essence
+					["coord"] = { 35.7, 84.7, EASTERN_PLAGUELANDS },
 					["groups"] = {
 						i(206361),	-- Trampled Doll
 					},
-			-- }),
-			}),
-			-- #endif
+				}),
+			})),
 			n(VENDORS, {
 				n(12384, {	-- Agustus the Touched
 					["description"] = "Vendor will not sell to you until you complete his quest.",
@@ -3444,6 +3492,47 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						}),
 					},
+				}),
+				n(16365, {	-- Master Craftsman Omarion <Brotherhood of the Light>
+					["coord"] = { 75.6, 52.0, EASTERN_PLAGUELANDS },
+					["groups"] = sharedData({
+						["cost"] = {{ "i", 12844, 3 }},	-- 3x Argent Dawn Valor Token
+						["timeline"] = { ADDED_10_1_5 },
+					}, {
+						i(206395),	-- Pattern: Glacial Chapeau (RECIPE!)
+						i(206393),	-- Pattern: Glacial Cloak (RECIPE!)
+						i(206396),	-- Pattern: Glacial Epaulets (RECIPE!)
+						i(206402),	-- Pattern: Glacial Footwear (RECIPE!)
+						i(206399),	-- Pattern: Glacial Gloves (RECIPE!)
+						i(206401),	-- Pattern: Glacial Leggings (RECIPE!)
+						i(206400),	-- Pattern: Glacial Tether (RECIPE!)
+						i(206397),	-- Pattern: Glacial Vest (RECIPE!)
+						i(206398),	-- Pattern: Glacial Wrists (RECIPE!)
+						i(206414),	-- Pattern: Icy Scale Bracers (RECIPE!)
+						i(206413),	-- Pattern: Icy Scale Breastplate (RECIPE!)
+						i(206411),	-- Pattern: Icy Scale Crown (RECIPE!)
+						i(206415),	-- Pattern: Icy Scale Gauntlets (RECIPE!)
+						i(206417),	-- Pattern: Icy Scale Leggings (RECIPE!)
+						i(206412),	-- Pattern: Icy Scale Shoulderpads (RECIPE!)
+						i(206418),	-- Pattern: Icy Scale Stompers (RECIPE!)
+						i(206416),	-- Pattern: Icy Scale Waistwrap (RECIPE!)
+						i(206408),	-- Pattern: Polar Belt (RECIPE!)
+						i(206406),	-- Pattern: Polar Bracers (RECIPE!)
+						i(206410),	-- Pattern: Polar Footwarmers (RECIPE!)
+						i(206407),	-- Pattern: Polar Gloves (RECIPE!)
+						i(206403),	-- Pattern: Polar Helm (RECIPE!)
+						i(206409),	-- Pattern: Polar Leggings (RECIPE!)
+						i(206404),	-- Pattern: Polar Spaulders (RECIPE!)
+						i(206405),	-- Pattern: Polar Tunic (RECIPE!)
+						i(206421),	-- Plans: Icebane Breastplate (RECIPE!)
+						i(206422),	-- Plans: Icebane Bracers (RECIPE!)
+						i(206419),	-- Plans: Icebane Coif (RECIPE!)
+						i(206423),	-- Plans: Icebane Gauntlets (RECIPE!)
+						i(206425),	-- Plans: Icebane Leggings (RECIPE!)
+						i(206420),	-- Plans: Icebane Mantle (RECIPE!)
+						i(206426),	-- Plans: Icebane Trudgers (RECIPE!)
+						i(206424),	-- Plans: Icebane Waistguard (RECIPE!)
+					}),
 				}),
 				n(11536, {	-- Quartermaster Miranda Breechlock <The Argent Crusade>
 					-- #if AFTER CATA
@@ -3522,23 +3611,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 7.0.3.22248" },
 							["classes"] = { PRIEST },
 						}),
-						
-						-- 10.1.5 Naxx Items
-						i(206584, {	-- Archived Crafting Techniques
-							["timeline"] = { "added 10.1.5" },
+
+						-- 10.1.5 Scholomance Items
+						i(206584, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Archived Crafting Techniques
 							--	["minReputation"] = { 529, EXALTED },	-- Argent Dawn
 							["cost"] = { { "i", 12844, 6 } },	-- Argent Dawn Valor Token
 							["groups"] = {
-								i(206525),	-- Ancient Plans: Darrowdirk (RECIPE!)
-								i(206526),	-- Ancient Plans: Darrowshire Protector (RECIPE!)
+								i(207569),	-- Ancient Formula: Magebane Nexus (RECIPE!)
+								i(207570),	-- Ancient Formula: Smoked Fireshooter (RECIPE!)
+								i(207571),	-- Ancient Formula: Stormwatcher (RECIPE!)
 								i(206529),	-- Ancient Pattern: Helm of Lingering Power (RECIPE!)
 								i(206561),	-- Ancient Pattern: Lucien's Lost Soles (RECIPE!)
-								i(206527),	-- Ancient Plans: Mirah's Lullaby (RECIPE!)
-								i(206528),	-- Ancient Technique: Shifting Sliver (RECIPE!)
+								i(207577),	-- Ancient Pattern: Sanctified Leather Hat (RECIPE!)
 								i(206530),	-- Ancient Pattern: Skyfury Headdress (RECIPE!)
+								i(206525),	-- Ancient Plans: Darrowdirk (RECIPE!)
+								i(206526),	-- Ancient Plans: Darrowshire Protector (RECIPE!)
+								i(207573),	-- Ancient Plans: Ichor Slicer (RECIPE!)
+								i(207567),	-- Ancient Plans: Intrepid Shortblade (RECIPE!)
+								i(206527),	-- Ancient Plans: Mirah's Lullaby (RECIPE!)
+								i(207572),	-- Ancient Plans: Sacred Guardian (RECIPE!)
+								i(207568),	-- Ancient Plans: Valiant Shortblade (RECIPE!)
 								i(206522),	-- Ancient Plans: Warsword of Caer Darrow (RECIPE!)
+								i(207576),	-- Ancient Schematic: Refurbished Purifier (RECIPE!)
+								i(207574),	-- Ancient Schematic: Skullstone Bludgeon (RECIPE!)
+								i(206528),	-- Ancient Technique: Shifting Sliver (RECIPE!)
+								i(207575),	-- Ancient Technique: Wanderer's Guide (RECIPE!)
 							},
-						}),
+						})),
 					},
 				}),
 			}),
@@ -3672,11 +3771,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #if BEFORE 4.0.3
-				i(12841, {	-- Invader's Scourgestone
+				i(12841, {	-- Invader's Scourgestone / Inert Invader's Scourgestone
 					["description"] = "Can drop from any Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 					["timeline"] = { "removed 4.0.3" },
 				}),
-				i(12840, {	-- Minion's Scourgestone
+				i(12840, {	-- Minion's Scourgestone / Inert Minion's Scourgestone
 					["description"] = "Can drop from weak Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 					["timeline"] = { "removed 4.0.3" },
 				}),

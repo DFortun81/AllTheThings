@@ -193,6 +193,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					},
 				}),
 			})),
+			prof(LEATHERWORKING, {
+				n(136063, {	-- Cassandra Brennor <Leatherworking Trainer>
+					["coord"] = { 75.5, 12.6, BORALUS },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = appendGroups(BFA_BLACKSMITHING, {
+						r(264592),	-- Kul Tiran Leatherworking
+					}),
+				}),
+			}),
 			prof(JEWELCRAFTING, {
 				q(54479, {	-- Jeweled Designs
 					["requireSkill"] = JEWELCRAFTING,
@@ -308,97 +317,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					["lvl"] = 120,
 					["g"] = {
 						recipe(256703),	-- Design: Jewelhammer's Focus
-					},
-				}),
-			}),
-			prof(LEATHERWORKING, {
-				q(54481, {	-- Leathered Patterns
-					["requireSkill"] = LEATHERWORKING,
-					["provider"] = { "n", 136063 },	-- Cassandra Brennor
-					["coord"] = { 75.5, 12.6, BORALUS },
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
-				}),
-				-- Tools of Trade Questline
-				q(55227, {	-- The Aeonian Artisan
-					["provider"] = { "n", 136063 },	-- Cassandra Brennor
-					["coord"] = { 75.5, 12.6, BORALUS },
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(55228, {	-- The Audition (A)
-					["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
-					["coord"] = { 69.6, 29.8, BORALUS },
-					["sourceQuest"] = 55227,	-- The Aeonian Artisan
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(55229, {	-- Repaying the Debt
-					["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
-					["coord"] = { 69.6, 29.8, BORALUS },
-					["sourceQuest"] = 55228,	-- The Audition (A)
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(55230, {	-- Telonis' Prized Leather
-					["provider"] = { "n", 151287 },	-- Telonis
-					["coord"] = { 42.6, 60.6, STORMWIND_CITY },
-					["sourceQuest"] = 55228,	-- The Audition (A)
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(55231, {	-- The Other Ghostdancer
-					["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
-					["coord"] = { 69.6, 29.8, BORALUS },
-					["sourceQuest"] = 55228,	-- The Audition (A)
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(55232, {	-- Mevris' Menace
-					["provider"] = { "n", 151285 },	-- Mevris Ghostdancer
-					["coord"] = { 53.6, 54.4, VALSHARAH },
-					["sourceQuest"] = 55231,	-- The Other Ghostdancer
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(55233, {	-- Picking Bones (A)
-					["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
-					["coord"] = { 69.6, 29.8, BORALUS },
-					["sourceQuest"] = 55228,	-- The Audition (A)
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(55234, {	-- Make Some Noise (A)
-					["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
-					["coord"] = { 69.6, 29.8, BORALUS },
-					["sourceQuests"] = {
-						55230,	-- Telonis' Prized Leather
-						55232,	-- Mevris' Menace
-						55233,	-- Picking Bones (A)
-					},
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-					["g"] = {
-						un(15, recipe(293135)),	-- Recipe: Drum of Primal Might
-					},
-				}),
-				q(55235, {	-- Instruments of Destruction (A)
-					["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
-					["coord"] = { 69.6, 29.8, BORALUS },
-					["sourceQuest"] = 55234,	-- Make Some Noise
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-					["g"] = {
-						recipe(293076),	-- Recipe: Mallet of Thunderous Skins
 					},
 				}),
 			}),

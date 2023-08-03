@@ -65,6 +65,13 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						i(208415),	-- Stasis Sand (TOY!)
 					},
 				}),
+				q(76147, {	-- Rewind and Reconcile
+					["provider"] = { "i", 206145 },	-- Mysterious Time Relic
+					--["coord"] = { ??, ??, 2194 }, -- No coords since it dungeon
+					["g"] = {
+						i(208390),	-- Bronze Archive Stone
+					},
+				}),
 			}),
 			d(MYTHIC_DUNGEON, {
 				n(ACHIEVEMENTS, {
@@ -271,7 +278,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 				 	["crs"] = { 199000 },	--
 				 	["g"] = {
 						ach(18704),	-- Dawn of the Infinite: Murozond's Rise
-				 		i(208102),	-- Cliffside Wylderdrake: Infinite Scales (DM!)
+						i(206145),	-- Mysterious Time Relic (QI!)
+						i(208102),	-- Cliffside Wylderdrake: Infinite Scales (DM!)
 				 		i(208103),	-- Highland Drake: Infinite Scales (DM!)
 				 		i(208104),	-- Renewed Proto-Drake: Infinite Scales (DM!)
 				 		i(208105),	-- Windborne Velocidrake: Infinite Scales (DM!)
@@ -285,17 +293,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
 							i(207987),	-- Borrowed Time
 						})),
-						------------------------------------------
-						-- DO NOT TOUCH MY ITEMS OR I KNIFE YOU --
-						----------------LG GOLD ------------------
-						------------------------------------------
-						-- Not Sure Symlink in good.... Also... Stop using small letters /lots of love Braghe
-
-						-- Following items are possible:
-						-- World Drop Items with any quality till SL (You can get SL stuff)
-						-- Dungeon Items from Classic till BFA (so far confirmed)
-						-- Raid Items from Classic till BFA (so far confirmed)
 						i(208216, {	-- Reins of the Quantum Courser
+							["description"] = "Turns into one (1) unlearned Dungeon Mount, including the Infinite Timereaver, from before Dragonflight.",
+							["collectible"] = false,	-- Not an actual Mount itself
 							["sym"] = {{"select","itemID",
 								-- Dungeon
 								68823,	-- Armored Razzashi Raptor
@@ -313,58 +313,161 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 								159842,	-- Sharkbait's Favorite Crackers
 								35513,	-- Swift White Hawkstrider
 								68824,	-- Swift Zulian Panther
-								-- Open World Unconfirmed
-							-- green dragon from oracles egg in sholazar in wotlk
-								-- Raid Unconfirmed
+								160829,	-- Underrot Crawg Harness
+							}},
+							-- Raid (Maybe in future)
 							--	78919, -- Experiment 12-B
 							--	71665, -- Flametalon of Alysrazor
 							--	77069, -- Life-Binder's Handmaiden
 							--	45693, -- Mimiron's Head
 							--	77067, -- Reins of the Blazing Drake
-							}},
 						}),
+						------------------------------------------
+						-- DO NOT TOUCH MY ITEMS OR I KNIFE YOU --
+						----------------LG GOLD ------------------
+						------------------------------------------
+						-- Not Sure Symlink in good.... Also... Stop using small letters /lots of love Braghe
+						-- Please use 'ig()' to make sure Mythic ModID isn't attached to all of these sourced items
+
+						-- Following items are possible:
+						-- World Drop Items with any quality till SL. Includes removed BoE items
+						-- Dungeon Items from Classic till SL. Includes removed BoP items
+						-- Raid Items from Classic till SL
 						i(208064, {	-- Quantum Chestpiece
-							["description"] = "This item turns into 1 unlearned itemid from any Dungeon, Raid or World drop before Dragonflight (10.0)",
+							["description"] = "|cFFFF0000If you get an Item which is removed from the game or was never available before,\nplease let us know in the ATT Discord.|r\nThis Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r",
+							["groups"] = {
+								-- Cloth
+								ig(2114),	-- Snowy Robe				(Removed)
+								ig(3260),	-- Scarlet Initiate Robes	(Removed)
+								-- Leather
+								-- Mail
+								ig(114389),	-- Element-Binder Helm		(Never added)
+								ig(93086),	-- Swashbuckling Vest		(Never added)
+								
+								ig(134732),	-- Frigidlink Armor			(Removed)
+								ig(120952),	-- Slarkhide				(Removed)
+								-- Plate
+							},
 						}),
 						i(208063, {	-- Quantum Gloves
-							["description"] = "This item turns into 1 unlearned itemid from any Dungeon, Raid or World drop before Dragonflight (10.0)",
+							["description"] = "|cFFFF0000If you get an Item which is removed from the game or was never available before,\nplease let us know in the ATT Discord.|r\nThis Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r",
+							["groups"] = {
+								-- Cloth
+								-- Leather
+								-- Mail
+								-- Plate
+							},
 						}),
 						i(208061, {	-- Quantum Headpiece
-							["description"] = "This item turns into 1 unlearned itemid from any Dungeon, Raid or World drop before Dragonflight (10.0)",
+							["description"] = "|cFFFF0000If you get an Item which is removed from the game or was never available before,\nplease let us know in the ATT Discord.|r\nThis Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r",
+							["groups"] = {
+								-- Cloth
+								-- Leather
+								-- Mail
+								ig(105809),	-- Crest of Burning Deeds			(Ordos)
+								
+								ig(92842),	-- Danio-Scale Helm					(Never added)
+								ig(114265),	-- Leafscale Helm					(Never added)
+								ig(121508),	-- Stormborn Crown					(Never added)
+
+								ig(134624),	-- Firebrand Helm					(Removed)
+								ig(134798),	-- Ironbranded Ringmail Helm		(Removed)
+								-- Plate
+							},
 						}),
 						i(208065, {	-- Quantum Legs
-							["description"] = "This item turns into 1 unlearned itemid from any Dungeon, Raid or World drop before Dragonflight (10.0)",
+							["description"] = "|cFFFF0000If you get an Item which is removed from the game or was never available before,\nplease let us know in the ATT Discord.|r\nThis Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r",
+							["groups"] = {
+								-- Cloth
+								-- Leather
+								-- Mail
+								-- Plate
+							},
 						}),
 						i(208062, {	-- Quantum Shoulders
-							["description"] = "This item turns into 1 unlearned itemid from any Dungeon, Raid or World drop before Dragonflight (10.0)",
+							["description"] = "|cFFFF0000If you get an Item which is removed from the game or was never available before,\nplease let us know in the ATT Discord.|r\nThis Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r",
+							["groups"] = {
+								-- Cloth
+								-- Leather
+								-- Mail
+								ig(1445),	-- Blackrock Pauldrons				(Removed)
+								ig(3231),	-- Cutthroat Pauldrons				(Removed)
+								
+								ig(18320),	-- Demonheart Spaulders				(Never added)
+								-- Plate
+								ig(103785),	-- Tusks of Mannoroth Heroic		(Removed)
+							},
 						}),
-						n(WEAPONS, bubbleDown({ ["description"] = "This item turns into 1 unlearned itemid from any Dungeon, Raid or World drop before Dragonflight (10.0)" }, {
-							i(208111),	-- Quantum Axe
-							i(208117),	-- Quantum Bow
-							i(208118),	-- Quantum Crossbow
-							i(208119),	-- Quantum Firearm
+						n(WEAPONS, sharedData({ ["description"] = "|cFFFF0000If you get an Item which is removed from the game or was never available before,\nplease let us know in the ATT Discord.|r\nThis Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r"}, {
+							i(208111, {	-- Quantum Axe
+							}),
+							i(208117, {	-- Quantum Bow
+							}),
+							i(208118, {	-- Quantum Crossbow
+							}),
+							i(208119, {	-- Quantum Firearm
+							}),
 							i(208125, {	-- Quantum Focus
-							--	i(78433),	-- Ledger of Revolting Rituals (DS Heroic)
 							}),
-							i(208113),	-- Quantum Greataxe
-							i(208114),	-- Quantum Greathammer
-							i(208112, {	-- Quantum Greatsword
+							i(208113, {	-- Quantum Greataxe (Done)
+								ig(33769),	-- Arcanite Ripper					(BMAH)
+								ig(44924),	-- Sun Lute							(BMAH)
+
+								ig(134717),	-- Cold-Touched Decapitator			(Never added)
+								ig(108046),	-- Draenic Steel War Axe			(Never added)
+								ig(108228),	-- Peerless Draenic Steel War Axe	(Never added)
+								ig(115293),	-- Spectral Greataxe				(Never added)
+								ig(134577),	-- Vanguard Decapitator				(Never added)
+
+								ig(2015),	-- Black Metal War Axe				(Removed)
+								ig(2227),	-- Heavy Ogre War Axe 				(Removed)
+								ig(1220),	-- Lupine Axe						(Removed)
+								ig(756),	-- Tunnel Pick 						(Removed)
+								ig(3325),	-- Vile Fin Battle Axe				(Removed)
+								ig(23171),	-- The Axe of Severing				(Removed)
+
+								ig(189996),	-- Elegantly Balanced Axe			(Unique NYI)
+
+								ig(9425),	-- Pendumlum of Doom				(Very Rare BoE)
+							}),
+							i(208114, {	-- Quantum Greathammer
+								ig(2254),	-- Icepane Warhammer				(Removed)
+							}),
+							i(208112, {	-- Quantum Greatsword (Done)
 								-- CA IS NOT POSSIBLE -- Gold 13.07.2023
-								i(1387),	-- Ghoulfang (Removed)
-								i(16039),	-- Ta'Kierthan Songblade (Removed)
-								i(2754),	-- Tarnished Bastard Sword (Removed)			
+
+								ig(134746),	-- Covert Greatsword 				(Never added)
+								ig(134606),	-- Scorching Greatsword 			(Never added)
+
+								ig(2014),	-- Black Metal Greatsword 			(Removed)
+								ig(2204),	-- Brashclaws Skewer 				(Removed)
+								ig(3188),	-- Coral Claymore 					(Removed)
+								ig(2084),	-- Darksteel Bastard Sword 			(Removed)
+								ig(1387),	-- Ghoulfang						(Removed)
+								ig(16039),	-- Ta'Kierthan Songblade			(Removed)
+								ig(2754),	-- Tarnished Bastard Sword			(Removed)
 							}),
-							i(208120),	-- Quantum Knife
-							i(208121),	-- Quantum Knuckles
-							i(208110),	-- Quantum Mace
-							i(208116),	-- Quantum Polearm
-							i(208126),	-- Quantum Shield
+							i(208120, {	-- Quantum Knife
+							}),
+							i(208121, {	-- Quantum Knuckles
+							}),
+							i(208110, {	-- Quantum Mace
+							}),
+							i(208116, {	-- Quantum Polearm
+							}),
+							i(208126, {	-- Quantum Shield
+								ig(134803),	-- Seasoned Redoubt 				(Removed)
+							}),
 							i(208115, {	-- Quantum Staff
-								i(2280),	-- Kam's Walking Stick (Removed)
-								i(115298),	-- Spectral Spire (NY)
+								ig(115298),	-- Spectral Spire 					(Never added)
+
+								ig(2280),	-- Kam's Walking Stick				(Removed)
 							}),
-							i(208109),	-- Quantum Sword
-							i(208122),	-- Quantum Warglaives
+							i(208109, {	-- Quantum Sword
+								i(8223),	-- Blade of the Basilisk 			(Removed)
+							}),
+							i(208122, {	-- Quantum Warglaives
+							}),
 							i(208123),	-- Quantum Wand
 						})),
 					},

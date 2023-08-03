@@ -14,7 +14,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 		["maps"] = { 764, 765, 766, 767, 768, 769, 770, 771, 772 },
 		["lvl"] = 110,
 		["g"] = {
-			i(139314),	-- Grimoire of the Abyssal (CI!)
 			n(ACHIEVEMENTS, {
 				ach(10829, {    -- Arcing Aqueducts
                     crit(1, {    -- Skorpyron
@@ -112,7 +111,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						111022,	-- The Demon Within
 					},
 					["g"] = {
-						i(139314),	-- Grimoire of the Abyssal (CI!)
+						i(141061, {	-- Technique: Grimoire of the Abyssal
+							["timeline"] = { ADDED_10_1_5 },
+						}),
 					},
 				}),
 			}),

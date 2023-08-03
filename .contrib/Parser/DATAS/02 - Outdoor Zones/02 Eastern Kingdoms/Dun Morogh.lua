@@ -1626,7 +1626,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "This quest is available to Gnomes upon reaching level 10.",
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
-					["timeline"] = { "added 5.2.0.16486" },
+					["timeline"] = { "added 5.2.0.16486", REMOVED_10_1_5 },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -1641,7 +1641,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "This quest is available to Dwarves upon reaching level 10.",
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
-					["timeline"] = { "added 5.2.0.16486" },
+					["timeline"] = { "added 5.2.0.16486", REMOVED_10_1_5 },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -2525,6 +2525,48 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 7.0.3.22290" },
 				}),
 			}),
+			-- #if BEFORE TBC
+			n(RIDING_TRAINER, {
+				n(7954, {	-- Binjy Featherwhistle <Mechanostrider Pilot>
+					["coord"] = { 49.2, 48.0, DUN_MOROGH },
+					["races"] = { DWARF, GNOME },
+
+					-- Available to Gnomes without faction requirements.
+					["minReputation"] = { 54, EXALTED },	-- Gnomeregan Exiles, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. GNOME .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
+					["groups"] = {
+						recipe(10907, {	-- Mechanostrider Piloting
+							["cost"] = 200000,
+							["lvl"] = 40,
+						}),
+					},
+				}),
+				n(4772, {	-- Ultham Ironhorn <Ram Riding Instructor>
+					["coord"] = { 63.8, 50.2, DUN_MOROGH },
+					["races"] = ALLIANCE_ONLY,
+
+					-- Available to Dwarves without faction requirements.
+					["minReputation"] = { 47, EXALTED },	-- Ironforge, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. DWARF .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
+					["groups"] = {
+						recipe(826, {	-- Ram Riding
+							["cost"] = 200000,
+							["lvl"] = 40,
+						}),
+					},
+				}),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(8508, {	-- Gretta Ganter <Fisherman Supplies>
 					-- #if AFTER CATA

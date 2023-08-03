@@ -173,6 +173,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				303,				-- Have Keg, Will Travel
 				1936,				-- Does Your Wolpertinger Linger?
 			}},
+			["timeline"] = { "added 3.0.1" },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(101),				-- Brewmaster
@@ -191,6 +192,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				303,				-- Have Keg, Will Travel
 				1936,				-- Does Your Wolpertinger Linger?
 			}},
+			["timeline"] = { "added 3.0.1" },
 			-- #if BEFORE MOP
 			["races"] = HORDE_ONLY,
 			-- #endif
@@ -198,36 +200,34 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				title(101),				-- Brewmaster
 			},
 		}),
-		classicAch(3496, {	-- A Brew-FAST Mount
+		ach(3496, {	-- A Brew-FAST Mount
 			["providers"] = {
 				{ "i", 37828 },	-- Great Brewfest Kodo
 				{ "i", 33977 },	-- Swift Brewfest Ram
 			},
-			["timeline"] = { "added 2.0.1" },
 			-- #if BEFORE WRATH
 			["description"] = "Obtain an epic Brewfest mount.",
-			["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 			-- #endif
+			["timeline"] = { "added 2.0.1" },
 		}),
 		-- #if AFTER MOP
 		ach(1260, {	-- Almost Blind Luck [MOP+] / Drunken Stupor
+			["timeline"] = { "added 3.0.1" },
 			["maps"] = { SHATTRATH_CITY },
 		}),
 		-- #endif
-		classicAch(1293, {	-- Blue Brewfest Stein [Removed]
+		ach(1293, {	-- Blue Brewfest Stein [Removed]
 			["provider"] = { "i", 33016 },	-- Blue Brewfest Stein
 			["timeline"] = { "added 2.0.1", "removed 3.0.1" },
-			-- #if BEFORE WRATH
-			["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
-			-- #endif
 		}),
 		ach(2796, {	-- Brew of the Month
 			["providers"] = {
 				{ "i", 37571 },	-- "Brew of the Month" Club Membership Form (newer)
 				{ "i", 37599 },	-- "Brew of the Month" Club Membership Form (newer)
 			},
+			["timeline"] = { "added 3.0.1" },
 		}),
-		ach(1183, {	-- Brew of the Year
+		ach(1183, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Brew of the Year
 			crit(3526, {	-- Aromatic Honey Brew
 				["provider"] = { "i", 37490 },	-- Aromatic Honey Brew
 			}),
@@ -264,7 +264,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			crit(3515, {	-- Wild Winter Pilsner
 				["provider"] = { "i", 37488 },	-- Wild Winter Pilsner
 			}),
-		}),
+		})),
 		ach(293, {	-- Disturbing the Peace
 			["providers"] = {
 				{ "i", 33968 },	-- Blue Brewfest Hat
@@ -276,28 +276,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				{ "i", 33868 },	-- Brewfest Boots
 				{ "i", 33966 },	-- Brewfest Slippers
 			},
+			["timeline"] = { "added 3.0.1" },
 			["maps"] = { NORTHREND_DALARAN },
 		}),
-		classicAch(1936, {	-- Does Your Wolpertinger Linger?
+		ach(1936, {	-- Does Your Wolpertinger Linger?
 			["provider"] = { "i", 32233 },	-- Wolpertinger's Tankard
 			["timeline"] = { "added 2.2.2" },
-			-- #if BEFORE WRATH
-			["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
-			-- #endif
 		}),
 		-- #if BEFORE MOP
 		ach(1260, {	-- Drunken Stupor / Almost Blind Luck [MOP+]
+			["timeline"] = { "added 3.0.1" },
 			["maps"] = { SHATTRATH_CITY },
 		}),
 		-- #endif
-		classicAch(4782, {	-- Green Brewfest Stein [Removed]
+		ach(4782, {	-- Green Brewfest Stein [Removed]
 			["provider"] = { "i", 37892 },	-- Green Brewfest Stein
 			["timeline"] = { "added 3.0.1", "removed 4.0.1" },
-			-- #if BEFORE WRATH
-			["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
-			-- #endif
 		}),
-		classicAch(303, {	-- Have Keg, Will Travel
+		ach(303, {	-- Have Keg, Will Travel
 			["providers"] = {
 				{ "i", 33976 },	-- Brewfest Ram
 				{ "i", 37828 },	-- Great Brewfest Kodo
@@ -306,13 +302,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				{ "i", 39476 },	-- Fresh Goblin Brewfest Hops
 				{ "i", 37816 },	-- Preserved Brewfest Hops
 			},
-			["timeline"] = { "added 2.0.1" },
 			-- #if BEFORE WRATH
 			["description"] = "Obtain a Brewfest mount, or transform yours into one using Brewfest Hops.",
-			["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 			-- #endif
+			["timeline"] = { "added 2.0.1" },
 		}),
-		ach(1184, {	-- Strange Brew (A)
+		ach(1184, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Strange Brew (A)
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				crit(8885, {	-- Barleybrew Clear
@@ -343,8 +338,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["provider"] = { "i", 33033 },	-- Thunderbrew Stout
 				}),
 			},
-		}),
-		ach(1203, {	-- Strange Brew (H)
+		})),
+		ach(1203, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Strange Brew (H)
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				crit(8889, {	-- Brewdoo Magic
@@ -375,8 +370,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["provider"] = { "i", 34022 },	-- Stout Shrunken Head
 				}),
 			},
-		}),
-		ach(1185, {	-- The Brewfest Diet
+		})),
+		ach(1185, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- The Brewfest Diet
 			-- #if ANYCLASSIC
 			crit(3542, {	-- Dried Sausage
 				["provider"] = { "i", 34063 }	-- Dried Sausage
@@ -428,13 +423,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["provider"] = { "i", 33026 }	-- The Golden Link
 			}),
 			-- #endif
-		}),
-		classicAch(1292, {	-- Yellow Brewfest Stein [Removed]
+		})),
+		ach(1292, {	-- Yellow Brewfest Stein [Removed]
 			["provider"] = { "i", 32912 },	-- Yellow Brewfest Stein
 			["timeline"] = { "added 2.0.1", "removed 2.4.3" },
-			-- #if BEFORE WRATH
-			["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
-			-- #endif
 		}),
 	}),
 	n(23872, {	-- Coren Direbrew
@@ -458,7 +450,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 		["lvl"] = 65,
 		-- #endif
 		["groups"] = {
-			ach(295),	-- Direbrewfest
+			ach(295, {	-- Direbrewfest
+				["timeline"] = { "added 3.0.1" },
+			}),
 			i(117393, {	-- Keg-Shaped Treasure Chest	(Epic Quality)
 				["timeline"] = { "added 6.0.1.18594" },
 				["lvl"] = 98,

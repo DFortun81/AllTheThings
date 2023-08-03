@@ -102,7 +102,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(27873),	-- Moonglade Pants (7.3.5 -- Moved from Aeonus)
 						-- #endif
 						i(27996),	-- Ring of Spiritual Precision
-						i(29675, {	-- Pattern: Arcane Armor Kit
+						i(29675, {	-- Pattern: Arcane Armor Kit (RECIPE!)
 							["timeline"] = { "removed 5.0.4" },
 						}),
 					},
@@ -127,13 +127,12 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(554, {	-- Aeonus
 					["creatureID"] = 17881,
 					["groups"] = {
-						classicAch(655, {	-- Opening of the Dark Portal
+						ach(655, {	-- Opening of the Dark Portal
 							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								9836,	-- The Master's Touch
 								10297,	-- The Opening of the Dark Portal
 							},
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						i(28188),	-- Bloodfire Greatstaff
@@ -199,7 +198,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(27873),	-- Moonglade Pants (7.3.5 -- Moved from Aeonus)
 							-- #endif
 							i(27996),	-- Ring of Spiritual Precision
-							i(29675, {	-- Pattern: Arcane Armor Kit
+							i(29675, {	-- Pattern: Arcane Armor Kit (RECIPE!)
 								["timeline"] = { "removed 5.0.4" },
 							}),
 						},
@@ -224,7 +223,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(554, {	-- Aeonus
 						["creatureID"] = 17881,
 						["groups"] = {
-							ach(676),	-- Heroic: Opening of the Dark Portal
+							ach(676, {	-- Heroic: Opening of the Dark Portal
+								["timeline"] = { "added 3.0.1" },
+							}),
 							ach(5076, {	-- Heroic: Opening of the Dark Portal Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),

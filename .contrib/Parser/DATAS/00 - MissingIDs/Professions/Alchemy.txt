@@ -49,87 +49,9 @@ r(265787),	-- Zandalari Alchemy
 
 Missing in AlchemyItemDB.lua
 
-0.5.3.3368
-r(2259),	-- Alchemy
-r(2329),	-- Elixir of Lion's Strength
-r(2330),	-- Minor Healing Potion
-r(2331),	-- Minor Mana Potion
-r(2332),	-- Minor Rejuvenation Potion
-r(2333),	-- Elixir of Lesser Agility
-r(2334),	-- Elixir of Minor Fortitude
-r(2335),	-- Swiftness Potion
-r(2336),	-- Elixir of Tongues
-r(2337),	-- Lesser Healing Potion
-r(3101),	-- Alchemy
-r(3170),	-- Weak Troll's Blood Elixir \\ Weak Troll's Blood Potion
-r(3171),	-- Elixir of Wisdom
-r(3172),	-- Minor Magic Resistance Potion
-r(3173),	-- Lesser Mana Potion
-r(3174),	-- Potion of Curing \\ Elixir of Poison Resistance
-r(3175),	-- Limited Invulnerability Potion
-r(3176),	-- Strong Troll's Blood Elixir \\ Strong Troll's Blood Potion
-r(3177),	-- Elixir of Defense
-r(3188),	-- Elixir of Ogre's Strength
-r(3230),	-- Elixir of Minor Agility
-r(3447),	-- Healing Potion
-r(3448),	-- Lesser Invisibility Potion
-r(3449),	-- Shadow Oil
-r(3450),	-- Elixir of Fortitude
-r(3451),	-- Major Troll's Blood Elixir \\ Mighty Troll's Blood Potion
-r(3452),	-- Mana Potion
-r(3453),	-- Elixir of Detect Lesser Invisibility
-r(3454),	-- Frost Oil
-r(3464),	-- Alchemy
-r(4508),	-- Discolored Healing Potion
-r(4942),	-- Lesser Stoneshield Potion
-r(6617),	-- Rage Potion
-r(6618),	-- Great Rage Potion
-r(6619),	-- Cowardly Flight Potion
-r(6624),	-- Free Action Potion
-r(7179),	-- Elixir of Water Breathing
-r(7181),	-- Greater Healing Potion
-r(7183),	-- Elixir of Minor Defense
-r(7255),	-- Holy Protection Potion
-r(7256),	-- Shadow Protection Potion
-r(7257),	-- Fire Protection Potion
-r(7258),	-- Frost Protection Potion
-r(7259),	-- Nature Protection Potion
-r(7836),	-- Blackmouth Oil
-r(7837),	-- Fire Oil
-r(7841),	-- Swim Speed Potion
-r(7845),	-- Elixir of Firepower
-0.5.5.3494
-r(8240),	-- Elixir of Giant Growth
 0.7.0.3694
-r(11447),	-- Elixir of Waterwalking
-r(11448),	-- Greater Mana Potion
-r(11449),	-- Elixir of Agility
-r(11450),	-- Elixir of Greater Defense
-r(11451),	-- Oil of Immolation
-r(11452),	-- Restorative Potion
-r(11453),	-- Magic Resistance Potion
 r(11454),	-- Inlaid Mithril Cylinder
 r(11456),	-- Goblin Rocket Fuel
-r(11457),	-- Superior Healing Potion
-r(11458),	-- Wildvine Potion
-r(11459),	-- Philosopher's Stone \\ Philosophers' Stone
-r(11460),	-- Elixir of Detect Undead
-r(11461),	-- Arcane Elixir
-r(11464),	-- Invisibility Potion
-r(11465),	-- Elixir of Greater Intellect
-r(11466),	-- Gift of Arthas
-r(11467),	-- Elixir of Greater Agility
-r(11468),	-- Elixir of Dream Vision
-r(11472),	-- Elixir of Giants
-r(11473),	-- Ghost Dye
-r(11476),	-- Elixir of Shadow Power
-r(11477),	-- Elixir of Demonslaying
-r(11478),	-- Elixir of Detect Demon
-r(11479),	-- Transmute: Iron to Gold
-r(11480),	-- Transmute: Mithril to Truesilver
-r(11611),	-- Alchemy
-0.8.0.3734
-r(12609),	-- Catseye Elixir
 1.0.0.3980
 r(15833),	-- Dreamless Sleep Potion
 r(17187),	-- Transmute: Arcanite
@@ -276,7 +198,7 @@ r(53840),	-- Elixir of Mighty Agility
 r(53841),	-- Wrath Elixir
 r(53842),	-- Spellpower Elixir
 r(53846),	--
-r(53847),	-- Elixir of Spirit
+r(53847),	-- Elixir of Versatility \\ Elixir of Spirit
 r(53848),	-- Guru's Elixir
 r(53895),	-- Crazy Alchemist's Potion
 r(53898),	-- Elixir of Mighty Fortitude
@@ -310,7 +232,7 @@ r(60350),	-- Transmute: Titanium
 r(60354),	-- Elixir of Accuracy
 r(60355),	-- Elixir of Deadly Strikes
 r(60356),	-- Elixir of Mighty Defense
-r(60357),	-- Elixir of Expertise
+r(60357),	-- Elixir of Mighty Intellect \\ Elixir of Expertise
 r(60365),	-- Elixir of Armor Piercing
 r(60366),	-- Elixir of Lightning Speed
 r(60367),	-- Elixir of Mighty Thoughts

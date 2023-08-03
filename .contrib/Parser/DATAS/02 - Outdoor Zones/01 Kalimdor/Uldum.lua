@@ -200,7 +200,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(28602, {	-- Be Prepared
 					["qg"] = 45296,	-- Harrison Jones
 					["coord"] = { 64.5, 28.0, ULDUM },
-					["sourceQuest"] = 27196,	-- On to Something
+					["sourceQuests"] = {
+						27196,	-- On to Something
+						27541,	-- Lessons From the Past
+					},
 					["description"] = "This version of the quest will be offered if you have completed Lessons From the Past.",
 					["groups"] = {
 						i(65886),	-- Rope-Grip Gloves
@@ -227,6 +230,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						27541,	-- Lessons From the Past
 						27511,	-- The Thrill of Discovery
 					},
+					["sourceQuestNumRequired"] = 3,	-- ['Be Prepared' don't cross-complete apparently]
 					["groups"] = {
 						i(61509),	-- Sapphire Spectacles
 					},
@@ -1060,7 +1064,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(50409, {	-- Mysterious Camel Figurine
-					["description"] = "If you're lucky enough to find the right Mysterious Camel Figurine, clicking on it will teleport you to the Feralas Steam Pools, where you can defeat Dormus to get the rare Grey Riding Camel.",
+					["description"] = "If you're lucky enough to find this Mysterious Camel Figurine, clicking on it will teleport you to the Feralas Steam Pools, where you can defeat Dormus to get the rare Grey Riding Camel.",
 					["coords"] = {
 						{ 25.59, 65.89, ULDUM },
 						{ 29.85, 20.45, ULDUM },
@@ -1088,6 +1092,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["crs"] = { 50245 },	-- Dormus the Camel Hoarder
 						}),
 					},
+				}),
+				n(50410, {	-- Mysterious Camel Figurine
+					["description"] = "Fake Camel!",
 				}),
 			}),
 			n(VENDORS, {

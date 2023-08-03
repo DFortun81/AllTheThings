@@ -196,13 +196,12 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(528, {	-- Omor the Unscarred
 					["creatureID"] = 17308,
 					["groups"] = {
-						classicAch(647, {	-- Hellfire Ramparts
+						ach(647, {	-- Hellfire Ramparts
 							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								9575,	-- Weaken the Ramparts
 								9572,	-- Weaken the Ramparts
 							},
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						i(24069),	-- Crystalfire Staff
@@ -297,7 +296,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				-- #endif
 				["lvl"] = lvlsquish(70, 70, 30),
 				["groups"] = {
-					ach(667, {	-- Heroic: Hellfire Ramparts
+					ach(667, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Heroic: Hellfire Ramparts
 						crit(1, {	-- Omor the Unscarred
 							["_encounter"] = { 528, HEROIC_DUNGEON },
 						}),
@@ -307,7 +306,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						crit(3, {	-- Vazruden
 							["_encounter"] = { 529, HEROIC_DUNGEON },
 						}),
-					}),
+					})),
 					ach(5067, {	-- Heroic: Hellfire Ramparts Guild Run
 						["timeline"] = { "added 4.0.3" },
 					}),

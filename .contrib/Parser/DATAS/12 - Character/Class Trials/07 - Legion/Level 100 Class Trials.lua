@@ -476,6 +476,7 @@ root(ROOTS.NeverImplemented, {
 					i(150622),	-- Heart-Lesion Sabatons
 					i(157659),	-- Heart-Lesion Sabatons
 				}),
+				-- #if BEFORE 10.1.5
 				cl(DEATHKNIGHT, BLOOD, {
 					i(153717),	-- Heart-Lession Greatsword
 					i(153737),	-- Heart-Lesion Faceguard
@@ -493,6 +494,7 @@ root(ROOTS.NeverImplemented, {
 					i(153740),	-- Heart-Lesion Defender Idol
 					i(153743),	-- Heart-Lesion Defender Stone
 				}),
+				-- #endif
 			}),
 			cl(DEMONHUNTER, {
 				cl(DEMONHUNTER, HAVOC, {
@@ -518,7 +520,6 @@ root(ROOTS.NeverImplemented, {
 			cl(DRUID, {
 				cl(DRUID, BALANCE, {
 					i(150632),	-- Springrain Headpiece
-					i(153778),	-- Springrain Necklace
 					i(150634),	-- Springrain Spaulders
 					i(150629),	-- Springrain Tunic
 					i(150636),	-- Springrain Bracers
@@ -527,6 +528,7 @@ root(ROOTS.NeverImplemented, {
 					i(150633),	-- Springrain Leggings
 					i(150630),	-- Springrain Treads
 				}),
+				-- #if BEFORE 10.1.5
 				cl(DRUID, FERAL, {
 					i(153794),	-- Springrain Choker
 				}),
@@ -540,6 +542,7 @@ root(ROOTS.NeverImplemented, {
 				cl(DRUID, RESTORATION, {
 					i(153792),	-- Springrain Staff
 					i(153787),	-- Springrain Hood
+					i(153778),	-- Springrain Necklace
 					i(153789),	-- Springrain Shoulders
 					i(153777),	-- Springrain Cloak of Wisdom
 					i(153784),	-- Springrain Jerkin
@@ -553,6 +556,7 @@ root(ROOTS.NeverImplemented, {
 					i(153779),	-- Springrain Idol of Wisdom
 					i(153782),	-- Springrain Stone of Wisdom
 				}),
+				-- #endif
 			}),
 			cl(HUNTER, {
 				cl(HUNTER, BEAST_MASTERY, {
@@ -580,6 +584,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 			cl(MONK, {
+				-- #if BEFORE 10.1.5
 				cl(MONK, BREWMASTER, {
 					i(153831),	-- Mistdancer Amulet
 					i(153832),	-- Mistdancer Band of Stoicism
@@ -603,6 +608,7 @@ root(ROOTS.NeverImplemented, {
 					i(153849),	-- Mistdancer Idol of Wisdom
 					i(153854),	-- Mistdancer Stone of Wisdom
 				}),
+				-- #endif
 				cl(MONK, WINDWALKER, {
 					i(150656),	-- Mistdancer Helm
 					i(150658),	-- Mistdancer Pauldrons
@@ -615,6 +621,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 			cl(PALADIN, {
+				-- #if BEFORE 10.1.5
 				cl(PALADIN, HOLY, {
 					i(153890),	-- Sunsoul Shield
 					i(153879),	-- Sunsoul Headpiece
@@ -624,7 +631,7 @@ root(ROOTS.NeverImplemented, {
 					i(153875),	-- Sunsoul Breastplate
 					i(153888),	-- Sunsoul Armplates
 					i(153878),	-- Sunsoul Gloves
-					i(153912),	-- Sunsoul Waistband
+					i(153887),	-- Sunsoul Belt
 					i(153880),	-- Sunsoul Leggings
 					i(153877),	-- Sunsoul Boots
 					i(153884),	-- Sunsoul Band of Wisdom
@@ -640,7 +647,7 @@ root(ROOTS.NeverImplemented, {
 					i(153900),	-- Sunsoul Chestguard
 					i(153913),	-- Sunsoul Armguards
 					i(153903),	-- Sunsoul Handguards
-					i(153887),	-- Sunsoul Belt
+					i(153912),	-- Sunsoul Waistband
 					i(153905),	-- Sunsoul Legguards
 					i(153902),	-- Sunsoul Greaves
 					i(153909),	-- Sunsoul Band of Stoicism
@@ -648,6 +655,7 @@ root(ROOTS.NeverImplemented, {
 					i(153907),	-- Sunsoul Defender Idol
 					i(153910),	-- Sunsoul Defender Stone
 				}),
+				-- #endif
 				cl(PALADIN, RETRIBUTION, {
 					i(150664),	-- Sunsoul Helm
 					i(150666),	-- Sunsoul Pauldrons
@@ -661,33 +669,37 @@ root(ROOTS.NeverImplemented, {
 			}),
 			cl(PRIEST, {
 				cl(PRIEST, HOLY, {
+					-- #if BEFORE 10.1.5
 					i(153919),	-- Communal Wand
+					-- #endif
+					i(150671),	-- Communal Cowl
+					i(150674),	-- Communal Mantle
+					i(150673),	-- Communal Robe
+					i(150676),	-- Communal Bindings
+					i(150670),	-- Communal Gloves
+					i(150675),	-- Communal Sash
+					i(150672),	-- Communal Pants
+					i(150669),	-- Communal Boots
 				}),
+				-- #if BEFORE 10.1.5
 				cl(PRIEST, SHADOW, {
 					i(153944),	-- Communal Stave
-					i(150671),	-- Communal Cowl
 					i(153938),	-- Communal Cowl
 					i(153914),	-- Communal Medallion
-					i(150674),	-- Communal Mantle
 					i(153941),	-- Communal Mantle
 					i(153935),	-- Communal Cloak of Destruction
-					i(150673),	-- Communal Robe
 					i(153940),	-- Communal Robe
-					i(150676),	-- Communal Bindings
 					i(153943),	-- Communal Bindings
-					i(150670),	-- Communal Gloves
 					i(153937),	-- Communal Gloves
-					i(150675),	-- Communal Sash
 					i(153942),	-- Communal Sash
-					i(150672),	-- Communal Pants
 					i(153939),	-- Communal Pants
-					i(150669),	-- Communal Boots
 					i(153936),	-- Communal Boots
 					i(153916),	-- Communal Band of Destruction
 					i(153917),	-- Communal Ring of Destruction
 					i(153915),	-- Communal Idol of Destruction
 					i(153918),	-- Communal Stone of Destruction
 				}),
+				-- #endif
 			}),
 			cl(ROGUE, {
 				cl(ROGUE, ASSASSINATION, {
@@ -712,6 +724,7 @@ root(ROOTS.NeverImplemented, {
 					i(150689),	-- Streamtalker Legwraps
 					i(150686),	-- Streamtalker Boots
 				}),
+				-- #if BEFORE 10.1.5
 				cl(SHAMAN, RESTORATION, {
 					i(153999),	-- Streamtalker Slicers
 					i(154003),	-- Streamtalker Cowl
@@ -729,6 +742,7 @@ root(ROOTS.NeverImplemented, {
 					i(153994),	-- Streamtalker Idol of Wisdom
 					i(153997),	-- Streamtalker Stone of Wisdom
 				}),
+				-- #endif
 			}),
 			cl(WARLOCK, {
 				cl(WARLOCK, AFFLICTION, {
@@ -754,6 +768,7 @@ root(ROOTS.NeverImplemented, {
 					i(150705),	-- Oathsworn Legplates
 					i(150702),	-- Oathsworn Sabatons
 				}),
+				-- #if BEFORE 10.1.5
 				cl(WARRIOR, PROTECTION, {
 					i(154041),	-- Oathsworn Faceguard
 					i(154043),	-- Oathsworn Amulet
@@ -770,6 +785,7 @@ root(ROOTS.NeverImplemented, {
 					i(154044),	-- Oathsworn Defender Idol
 					i(154047),	-- Oathsworn Defender Stone
 				}),
+				-- #endif
 			}),
 		}),
 	}),

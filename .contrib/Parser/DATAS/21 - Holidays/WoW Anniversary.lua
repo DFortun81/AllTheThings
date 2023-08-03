@@ -187,22 +187,22 @@ WOW_ANNIVERSARY_EIGHTEEN = createHeader({
 root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, {
 	-- Stuff that's completely gone.
 	n(WOW_ANNIVERSARY_FOUR, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3, "removed 3.1.0" } }, {
-		classicAch(2398),	-- 4th Anniversary
+		ach(2398),	-- 4th Anniversary
 		i(44819),	-- Baby Blizzard Bear (PET!)
 	})),
 	n(WOW_ANNIVERSARY_FIVE, bubbleDownSelf({ ["timeline"] = { "added 3.2.2", "removed 3.3.2" } }, {
-		classicAch(4400),	-- 5th Anniversary
+		ach(4400),	-- 5th Anniversary
 		i(49362),	-- Onyxian Whelpling
 	})),
 	n(WOW_ANNIVERSARY_SIX, bubbleDownSelf({ ["timeline"] = { "added 4.0.1", "removed 4.2.2" } }, {
-		classicAch(5512),	-- 6th Anniversary
+		ach(5512),	-- 6th Anniversary
 	})),
 	n(WOW_ANNIVERSARY_SEVEN, bubbleDownSelf({ ["timeline"] = { "added 4.2.2", "removed 4.3" } }, {
-		classicAch(5863),	-- 7th Anniversary
+		ach(5863),	-- 7th Anniversary
 		i(71134),	-- Celebration Package
 	})),
 	n(WOW_ANNIVERSARY_EIGHT, bubbleDownSelf({ ["timeline"] = { "added 4.3.0", "removed 5.1.0.16309" } }, {
-		classicAch(6131),	-- 8th Anniversary
+		ach(6131),	-- 8th Anniversary
 		i(71134),	-- Celebration Package
 	})),
 	n(WOW_ANNIVERSARY_NINE, bubbleDownSelf({ ["timeline"] = { "added 5.1.0.16309", "removed 6.0.1.18125" } }, {

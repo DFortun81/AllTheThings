@@ -231,7 +231,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				}),
 				q(66414, {	-- All But One
-					["sourceQuests"] = { 66418 },	-- Testing the Tuskaprsenal
+					["sourceQuests"] = {
+						66418,	-- Testing the Tuskaprsenal
+						66411,	-- Troubled Waters
+					},
 					["provider"] = { "n", 187323 },	-- Tutaqan
 					["coord"] = { 53.7, 38.0, THE_WAKING_SHORES },
 				}),
@@ -260,11 +263,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 187323 },	-- Tutaqan
 					["coord"] = { 53.9, 38.1, THE_WAKING_SHORES },
 					["g"] = {
-						spell(390631, {	-- Ottuk Taming
-							["collectible"] = true,
-							["classes"] = { HUNTER },
-							["filterID"] = RECIPES,
-						}),
+						r(390631),	-- Ottuk Taming (CI!)
 						i(201783),	-- Tutaqan's Commendation
 					},
 				}),
@@ -599,6 +598,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}, {	-- RENOWN 29 --
 				q(70977, {	-- Scaps Packs
 					["provider"] = { "n", 187680 },	-- Scaps
+					["sourceQuests"] = { 66223 },	-- Can We Keep It?
 					["coord"] = { 12.9, 48.6, THE_AZURE_SPAN },
 					["g"] = {
 						i(198337),	-- Azure Paw Pack

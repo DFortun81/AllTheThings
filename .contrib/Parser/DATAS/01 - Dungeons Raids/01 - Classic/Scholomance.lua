@@ -3,24 +3,37 @@
 -----------------------------------------------------
 local SCHOLOMANCE_GROUPS = {};
 local KORMOK_LEGACY_DESCRIPTION = "This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.";
-local SCHOLOMANCE_LEGACY_DATA = bubbleDown({ ["timeline"] = { "removed 5.0.4", "added 10.1.5" } }, {
-	-- #if BEFORE 5.0.4
-	-- #if AFTER 3.0.1
-	n(ACHIEVEMENTS, {
-		ach(645, {	-- Scholomance
+local ignoreTimeline = function(item)	-- Items applied with this were never actually removed.
+	item.timeline = IGNORED_VALUE;
+	return item;
+end
+local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4, ADDED_10_1_5 } }, {
+	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
+		ach(18368, {	-- Memory of Scholomance
+			["sourceQuest"] = 76249,	-- Memory of Scholomance
+			["maps"] = { EASTERN_PLAGUELANDS, STRATHOLME, WESTERN_PLAGUELANDS },
+			["timeline"] = { ADDED_10_1_5 },
+		}),
+		ach(18558, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Leaders of Scholomance
+			crit(1, {	-- Darkmaster Gandling
+				["_npcs"] = { 1853 },
+			}),
+			crit(2, {	-- Kirtonos the Herald
+				["_npcs"] = { 10506 },
+			}),
+		})),
+		ach(645, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 } }, {	-- Scholomance
 			crit(548, {	-- Ras Frostwhisper
 				["_npcs"] = { 10508 },	-- Ras Frostwhisper
 			}),
 			crit(549, {	-- Darkmaster Gandling
 				["_npcs"] = { 1853 },	-- Darkmaster Gandling
 			}),
-		}),
+		})),
 		ach(5054, {	-- Scholomance Guild Run
-			["timeline"] = { "added 4.0.3" },
+			["timeline"] = { ADDED_4_0_3 },
 		}),
-	}),
-	-- #endif
-	-- #endif
+	})),
 	n(QUESTS, {
 		-- #if BEFORE 5.0.4
 		q(28756, {	-- Aberrations of Bone
@@ -73,6 +86,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDown({ ["timeline"] = { "removed 5.0.4", "
 				["coord"] = { 42.7, 83.8, WESTERN_PLAGUELANDS },
 			}),
 			["hordeQuestData"] = q(5804, {	-- Araj's Scarab [H]
+				["qg"] = 11057,	-- Apothecary Dithers
 				["sourceQuest"] = 5802,	-- Fire Plume Forged [Horde]
 				["coord"] = { 83.3, 69.2, TIRISFAL_GLADES },
 				["maps"] = { WESTERN_PLAGUELANDS },
@@ -81,7 +95,10 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDown({ ["timeline"] = { "removed 5.0.4", "
 			["lvl"] = 55,
 			["groups"] = {
 				objective(1, {	-- 0/1 Araj's Scarab
-					["provider"] = { "i", 14610 },	-- Araj's Scarab
+					["providers"] = {
+						{ "i",  14610 },	-- Araj's Scarab
+						{ "o", 177241 },	-- Araj's Phylactery
+					},
 					["coord"] = { 45.6, 69.2, WESTERN_PLAGUELANDS },
 					["cr"] = 1852,	-- Araj the Summoner
 				}),
@@ -101,16 +118,32 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDown({ ["timeline"] = { "removed 5.0.4", "
 			["lvl"] = 52,
 			["groups"] = {
 				objective(1, {	-- 0/1 The Deed to Brill
-					["provider"] = { "i", 13471 },	-- The Deed to Brill
+					["providers"] = {
+						{ "i",  13471 },	-- The Deed to Brill
+						{ "o", 176484 },	-- The Deed to Brill
+					},
+					["description"] = "Can be found along the wall in Ras Frostwhisper's room.",
 				}),
 				objective(2, {	-- 0/1 The Deed to Caer Darrow
-					["provider"] = { "i", 13448 },	-- The Deed to Caer Darrow
+					["providers"] = {
+						{ "i",  13448 },	-- The Deed to Caer Darrow
+						{ "o", 176485 },	-- The Deed to Caer Darrow
+					},
+					["description"] = "Can be found right next to Alexi Barov.",
 				}),
 				objective(3, {	-- 0/1 The Deed to Southshore
-					["provider"] = { "i", 13450 },	-- The Deed to Southshore
+					["providers"] = {
+						{ "i",  13450 },	-- The Deed to Southshore
+						{ "o", 176486 },	-- The Deed to Southshore
+					},
+					["description"] = "Can be found in the very back of the first room hidden behind some bookshelves.",
 				}),
 				objective(4, {	-- 0/1 The Deed to Tarren Mill
-					["provider"] = { "i", 13451 },	-- The Deed to Tarren Mill
+					["providers"] = {
+						{ "i",  13451 },	-- The Deed to Tarren Mill
+						{ "o", 176487 },	-- The Deed to Tarren Mill
+					},
+					["description"] = "Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",
 				}),
 			},
 		},
@@ -120,16 +153,32 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDown({ ["timeline"] = { "removed 5.0.4", "
 			["lvl"] = 38,
 			["groups"] = {
 				objective(1, {	-- 0/1 The Deed to Brill
-					["provider"] = { "i", 13471 },	-- The Deed to Brill
+					["providers"] = {
+						{ "i",  13471 },	-- The Deed to Brill
+						{ "o", 176484 },	-- The Deed to Brill
+					},
+					["description"] = "Can be found along the wall in Ras Frostwhisper's room.",
 				}),
 				objective(2, {	-- 0/1 The Deed to Caer Darrow
-					["provider"] = { "i", 13448 },	-- The Deed to Caer Darrow
+					["providers"] = {
+						{ "i",  13448 },	-- The Deed to Caer Darrow
+						{ "o", 176485 },	-- The Deed to Caer Darrow
+					},
+					["description"] = "Can be found right next to Alexi Barov.",
 				}),
 				objective(3, {	-- 0/1 The Deed to Southshore
-					["provider"] = { "i", 13450 },	-- The Deed to Southshore
+					["providers"] = {
+						{ "i",  13450 },	-- The Deed to Southshore
+						{ "o", 176486 },	-- The Deed to Southshore
+					},
+					["description"] = "Can be found in the very back of the first room hidden behind some bookshelves.",
 				}),
 				objective(4, {	-- 0/1 The Deed to Tarren Mill
-					["provider"] = { "i", 13451 },	-- The Deed to Tarren Mill
+					["providers"] = {
+						{ "i",  13451 },	-- The Deed to Tarren Mill
+						{ "o", 176487 },	-- The Deed to Tarren Mill
+					},
+					["description"] = "Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",
 				}),
 				i(65923, {	-- Barov Servant Caller
 					["timeline"] = { "added 4.0.3", "removed 5.0.4" },
@@ -145,6 +194,13 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDown({ ["timeline"] = { "removed 5.0.4", "
 			["coord"] = { 81.73, 57.83, EASTERN_PLAGUELANDS },
 			["timeline"] = { "removed 4.0.3" },
 			["lvl"] = 57,
+		}),
+		q(76257, {	-- Darkmaster's Scourgestone
+			["provider"] = { "i", 206373 },	-- Darkmaster's Scourgestone
+			["timeline"] = { ADDED_10_1_5 },
+			["g"] = {
+				i(12844),	-- Argent Dawn Valor Token
+			},
 		}),
 		q(4771, {	-- Dawn's Gambit
 			["qg"] = 11035,	-- Betina Bigglezink <The Argent Dawn>
@@ -323,6 +379,20 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDown({ ["timeline"] = { "removed 5.0.4", "
 			["classes"] = { SHAMAN },
 			["races"] = HORDE_ONLY,
 			["lvl"] = 58,
+		}),
+		q(76249, {	-- Memory of Scholomance
+			["description"] = "Its recommened to activate the Debug-Mode for the Allthethings to properly see every step & description.\n\nTo start unlocking old Scholomance, you must first do a heroic run of the MoP-Revamped Scholomance all the way to the final boss, Darkmaster Gandling. Once you complete the run, you must go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (top center room), and at the top left portion of the room, you will be able to loot the first item of the secret, Eva's Femur.\n\nAt this point, you must use the Krastinov's Bag of Horrors toy on top of the location where you looted Eva's Femur. When you do, the ghost of Eva Sarkhoff will spawn, afraid of you (as the toy transforms you into the Butcher himself). Removing the toy's buff will make Eva realize you're not her murderer, and she will talk to you, giving you the old Spectral Essence trinket. This allows you to see ghosts in Caer Darrow.\n\nOnce you do, you can talk to Eva at her old spot outside Scholomance, where she will request you to look for her journal, as well as five candles, to perform a horrible ritual. The candles are traded from citizens in Caer Darrow, and require items they treasured when alive. Below, we have the locations for all items:",
+			["timeline"] = { ADDED_10_1_5 },
+			["maps"] = { EASTERN_PLAGUELANDS, STRATHOLME, WESTERN_PLAGUELANDS },
+			["cost"] = {
+				{ "i", 206357, 1 },	-- 1x Authentic Andorhal Candle
+				{ "i", 206364, 1 },	-- 1x Eva's Femur
+				{ "i", 206346, 1 },	-- 1x Eva's Journal
+				{ "i", 206356, 1 },	-- 1x Ghost-Warding Candle
+				{ "i", 206358, 1 },	-- 1x Imported Candle
+				{ "i", 206354, 1 },	-- 1x Stinky Candle
+				{ "i", 206355, 1 },	-- 1x Tobacco-Filled Candle
+			},
 		}),
 		q(5463, {	-- Menethil's Gift (1/2)
 			["providers"] = {
@@ -534,14 +604,14 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDown({ ["timeline"] = { "removed 5.0.4", "
 		}),
 		{	-- The Key to Scholomance
 			["allianceQuestData"] = q(5505, {	-- The Key to Scholomance [A]
-				["qg"] = 10838,	-- Commander Ashlam Valorfist
+				["qg"] = 11056,	-- Alchemist Arbington
 				["sourceQuest"] = 5803,	-- Araj's Scarab
-				["coord"] = { 42.7, 84.0, WESTERN_PLAGUELANDS },
+				["coord"] = { 42.6, 83.8, WESTERN_PLAGUELANDS },
 			}),
 			["hordeQuestData"] = q(5511, {	-- The Key to Scholomance [H]
-				["qg"] = 10837,	-- High Executor Derrington
+				["qg"] = 11057,	-- Apothecary Dithers
 				["sourceQuest"] = 5804,	-- Araj's Scarab
-				["coord"] = { 83.1, 68.9, TIRISFAL_GLADES },
+				["coord"] = { 83.2, 69.2, TIRISFAL_GLADES },
 				["maps"] = { WESTERN_PLAGUELANDS },
 			}),
 			["timeline"] = { "removed 4.0.3" },
@@ -628,29 +698,28 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDown({ ["timeline"] = { "removed 5.0.4", "
 			},
 		}),
 	}),
-	-- #if AFTER 10.1.5
 	n(TREASURES, {
-	--	o( , {	-- Eva's Femur 
-			["description"] = "To start unlocking old Scholomance, you must first do a normal run of the MoP-Revamped Scholomance all the way to the final boss, Darkmaster Gandling. Once you complete the run, you must go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (top center room), and at the top left portion of the room, you will be able to loot the first item of the secret, Eva's Femur.",		
+		o(403567, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {		-- Cracked Argent Dawn Commission
+			["description"] = "In Rattlegore's room, on the first bone pile to the left of the entrance, you will find a very small item that can be looted.",
 			["groups"] = {
-				i(206364),	-- Eva's Femur 
+				i(206372),	-- Cracked Argent Dawn Commission
 			},
-	-- }),
-	--	o( , {	-- Eva's Journal
-			["description"] = "Located in new Scholomance, on a bookshelf in the Viewing Room (the room right before Darkmaster Gandling), to the right of the entrance of the corridor that leads to Darkmaster Gandling. The book is very hard to see and click, hidden behind other books on the middle shelf. The book is noticeable brighter than other books in the shelf.",		
+		})),
+		o(405388, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {		-- Familiar Journal
+			["description"] = "The Familiar Journal itself can be found in the Viewing Room of Old Scholomance, on a bookshelf near the mini-boss Marduk Blackpool. All you have to do is pick up the book, and the toy is yours! It's as simple as that.",
 			["groups"] = {
-				i(206346),	-- Eva's Journal
+				i(208096),	-- Familiar Journal (TOY!)
 			},
-	-- }),
+		})),
+		i(12736, {	-- Frostwhisper's Embalming Fluid
+			["provider"] = { "o", 175965 },	-- Frostwhisper's Embalming Fluid
+			["description"] = "Can be found inside the chemistry lab in Scholomance, in Ras Frostwhisper's room.",
+			["timeline"] = { REMOVED_5_0_4 }
+		}),
 	}),
-	-- #endif
 	n(ZONE_DROPS, {
 		i(16255, {	-- Formula: Enchant 2H Weapon - Major Spirit / CLASSIC: Formula: Enchant 2H Weapon - Major Versatility (RECIPE!)
-			-- #if BEFORE 5.0.4
 			["cr"] = 10469,	-- Scholomance Adept
-			-- #else
-			["cr"] = 58757,	-- Scholomance Acolyte
-			-- #endif
 		}),
 		i(16254, {	-- Formula: Enchant Weapon - Lifestealing (RECIPE!)
 			["cr"] = 10499,	-- Spectral Researcher
@@ -659,97 +728,89 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDown({ ["timeline"] = { "removed 5.0.4", "
 			-- #if AFTER 4.0.3
 			["description"] = "This pattern no longer drops. The recipe can now be trained at any leatherworking trainer.",
 			-- #endif
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["cr"] = 11582,	-- Scholomance Dark Summoner
 		}),
 		i(15773, {	-- Pattern: Wicked Leather Armor (RECIPE!)
 			-- #if AFTER 4.0.3
 			["description"] = "This pattern no longer drops. The recipe can now be trained at any leatherworking trainer.",
 			-- #endif
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["cr"] = 10499,	-- Spectral Researcher
 		}),
-		-- #if BEFORE 5.0.4
 		applyclassicphase(PHASE_SIX, i(22526)),	-- Bone Fragments
-		-- #endif
-		i(12843, {	-- Corruptor's Scourgestone
+		i(12843, {	-- Corruptor's Scourgestone / Inert Corruptor's Scourgestone
 			["description"] = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
-			["timeline"] = { "deleted 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 		}),
-		i(12841, {	-- Invader's Scourgestone
+		i(12841, {	-- Invader's Scourgestone / Inert Invader's Scourgestone
 			["description"] = "Can drop from any Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
-			["timeline"] = { "deleted 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 		}),
-		i(12840, {	-- Minion's Scourgestone
+		i(206374, {	-- Invader's Scourgestone
+			["timeline"] = { ADDED_10_1_5 },
+		}),
+		i(12840, {	-- Minion's Scourgestone / Inert Minion's Scourgestone
 			["description"] = "Can drop from weak Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
-			["timeline"] = { "deleted 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(13920, {	-- Healthy Dragon Scale
 			["description"] = "This item can only drop from the Hatchlings after you have completed the Plagued Hatchlings quest.",
-			["timeline"] = { "deleted 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 			["cr"] = 10678,	-- Plagued Hatchling
 		}),
-		-- #if BEFORE 5.0.4
 		i(20520),	-- Dark Rune
-		-- #endif
 		i(12753, {	-- Skin of Shadow
-			["timeline"] = { "deleted 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 		}),
-		i(18702),	-- Belt of the Ordained
+		ignoreTimeline(i(18702)),	-- Belt of the Ordained
 		i(16671, {	-- Bindings of Elements
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["cr"] = 10478,	-- Splintered Skeleton
 		}),
-		i(14536),	-- Bonebrace Hauberk
-		i(18697),	-- Coldstone Slippers
+		ignoreTimeline(i(14536)),	-- Bonebrace Hauberk
+		ignoreTimeline(i(18697)),	-- Coldstone Slippers
 		i(16702, {	-- Dreadmist Belt
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["cr"] = 10477,	-- Scholomance Necromancer
 		}),
 		i(16705, {	-- Dreadmist Wraps
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["cr"] = 10477,	-- Scholomance Necromancer
 		}),
-		i(18699),	-- Icy Tomb Spaulders
-		i(18701, {	-- Innervating Band
-			-- #if AFTER 5.0.4
-			["crs"] = {
-				59614,	-- Bored Student
-				58823,	-- Scholomance Neophyte
-			},
-			-- #endif
-		}),
+		ignoreTimeline(i(18699)),	-- Icy Tomb Spaulders
+		ignoreTimeline(i(18701)),	-- Innervating Band
 		i(16722, {	-- Lightforge Bracers
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["crs"] = {
 				10487,	-- Risen Protector
 				10486,	-- Risen Warrior
 			},
 		}),
 		i(16685, {	-- Magister's Belt
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["cr"] = 10469,	-- Scholomance Adept
 		}),
 		i(16684, {	-- Magister's Gloves
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["cr"] = 10469,	-- Scholomance Adept
 		}),
-		i(18700),	-- Malefic Bracers
+		ignoreTimeline(i(18700)),	-- Malefic Bracers
 		i(16710, {	-- Shadowcraft Bracers
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["crs"] = {
 				11284,	-- Dark Shade
 				10472,	-- Scholomance Occultist
 				10488,	-- Risen Construct
 			},
 		}),
-		i(18698),	-- Tattered Leather Hood
+		ignoreTimeline(i(18698)),	-- Tattered Leather Hood
 		i(16714, {	-- Wildheart Bracers
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["cr"] = 10495,	-- Diseased Ghoul
 		}),
 		i(16716, {	-- Wildheart Belt
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 			["crs"] = {
 				11257,	-- Scholomance Handler
 				10500,	-- Spectral Teacher
@@ -757,20 +818,17 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDown({ ["timeline"] = { "removed 5.0.4", "
 			},
 		}),
 	}),
-	n(14861, {	-- Blood Steward of Kirtonos
-		i(13523, {	-- Blood of Innocents
-			["timeline"] = { "deleted 5.0.4" },
-		}),
-	}),
-	o(176486, {	-- The Deed to Southshore
-		["provider"] = { "i", 13450 },	-- The Deed to Southshore
-		["description"] = "Can be found in the very back of the first room hidden behind some bookshelves.",
-		["timeline"] = { "removed 5.0.4" },
-	}),
+	n(14861, bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4 } }, {	-- Blood Steward of Kirtonos
+		i(13523),	-- Blood of Innocents
+	})),
 	n(10506, {	-- Kirtonos the Herald
 		["providers"] = {
 			{ "o", 175564 },	-- Brazier of the Herald
+			-- #if BEFORE 10.1.5
 			{ "i",  13523 },	-- Blood of Innocents
+			-- #else
+			{ "i", 206370 },	-- Blood of Innocents
+			-- #endif
 		},
 		["description"] = "Can only be summoned if someone in your group has the Blood of Innocents.",
 		["groups"] = {
@@ -781,47 +839,49 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDown({ ["timeline"] = { "removed 5.0.4", "
 			i(13969),	-- Loomguard Armbraces
 			i(13957),	-- Gargoyle Slashers
 			i(13956),	-- Clutch of Andros
-			i(16734),	-- Boots of Valor
+			i(16734, {	-- Boots of Valor
+				["timeline"] = { REMOVED_4_0_3 },
+			}),
 			i(13967),	-- Windreaver Greaves
 		},
 	}),
-	o(176487, {	-- The Deed to Tarren Mill
-		["provider"] = { "i", 13451 },	-- The Deed to Tarren Mill
-		["description"] = "Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",
-		["timeline"] = { "removed 5.0.4" },
-	}),
 	n(10503, {	-- Jandice Barov
 		i(13523, {	-- Blood of Innocents
-			["timeline"] = { "deleted 5.0.4" },
+			["timeline"] = { REMOVED_5_0_4 },
 		}),
 		i(13725),	-- Krastinov's Bag of Horrors
 		o(180794, {	-- Journal of Jandice Barov
 			["description"] = "Jandice Barov drops this item when killed, which teaches Felcloth Bag. You must be a tailor of skill 285 or higher to learn this recipe.",
 			["groups"] = {
-				{
-					["recipeID"] = 26086,	-- Felcloth Bag
+				r(26086, {	-- Felcloth Bag
 					["requireSkill"] = TAILORING,
-				},
+				}),
 			},
 		}),
 		i(14541),	-- Barovian Family Sword
 		applyclassicphase(PHASE_FIVE, i(22394)),	-- Staff of Metanoia
 		i(18689),	-- Phantasmal Cloak
 		i(16701, {	-- Dreadmist Mantle
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(14548),	-- Royal Cap Spaulders
-		i(14543),	-- Darkshade Gloves
+		i(14543, {	-- Darkshade Gloves
+			["timeline"] = { REMOVED_5_0_4 },
+		}),
 		i(14545),	-- Ghostloom Leggings
 		i(18690),	-- Wraithplate Leggings
 	}),
 	n(11622, {	-- Rattlegore
 		i(13873, {	-- Viewing Room Key
 			["description"] = "You must use this item on the door prior to Vectus and Marduk.",
-			["timeline"] = { "deleted 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
+		}),
+		i(206371, {	-- Viewing Room Key
+			["description"] = "You must use this item on the door prior to Vectus and Marduk.",
+			["timeline"] = { ADDED_10_1_5 },
 		}),
 		i(18782, {	-- Top Half of Advanced Armorsmithing: Volume II
-			["timeline"] = { "deleted 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(14531),	-- Frightskull Shaft
 		i(14528),	-- Rattlecage Buckler
@@ -830,33 +890,22 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDown({ ["timeline"] = { "removed 5.0.4", "
 		i(14538),	-- Deadwalker Mantle
 		i(14537),	-- Corpselight Greaves
 		i(16711, {	-- Shadowcraft Boots
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 		}),
 	}),
-	n(14516, {	-- Death Knight Darkreaver
+	-- The Re-release of scholomance should allow the summon of this boss once again, however the item required to summon him is one time.
+	-- To get the summon item again, you would have to abandon the quest and pick it up again, which you cant. -- Gold 2nd August 2023
+	n(14516, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Death Knight Darkreaver
 		["cost"] = { { "i", 18746, 1 } },	-- Divination Scryer
-		["timeline"] = { "removed 4.0.3" },
 		["groups"] = {
-			i(18749, {	-- Charger's Lost Soul
-				["timeline"] = { "removed 4.0.3" },
-			}),
-			i(18880, {	-- Darkreaver's Head
-				["timeline"] = { "removed 4.0.3" },
-			}),
-			i(18759, {	-- Malicious Axe
-				["timeline"] = { "removed 4.0.3" },
-			}),
-			i(18761, {	-- Oblivion's Touch
-				["timeline"] = { "removed 4.0.3" },
-			}),
-			i(18758, {	-- Specter's Blade
-				["timeline"] = { "removed 4.0.3" },
-			}),
-			i(18760, {	-- Necromantic Band
-				["timeline"] = { "removed 4.0.3" },
-			}),
+			i(18749),	-- Charger's Lost Soul
+			i(18880),	-- Darkreaver's Head
+			i(18759),	-- Malicious Axe
+			i(18761),	-- Oblivion's Touch
+			i(18758),	-- Specter's Blade
+			i(18760),	-- Necromantic Band
 		},
-	}),
+	})),
 	n(10433, {	-- Marduk Blackpool
 		i(14576),	-- Ebon Hilt of Marduk
 		i(18692),	-- Death Knight Sabatons
@@ -864,16 +913,6 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDown({ ["timeline"] = { "removed 5.0.4", "
 	n(10432, {	-- Vectus
 		i(18691),	-- Dark Advisor's Pendant
 		i(14577),	-- Skullsmoke Pants
-	}),
-	o(176484, {	-- The Deed to Brill
-		["provider"] = { "i", 13471 },	-- The Deed to Brill
-		["description"] = "Can be found along the wall in Ras Frostwhisper's room.",
-		["timeline"] = { "removed 5.0.4" },
-	}),
-	o(175965, {	-- Frostwhisper's Embalming Fluid
-		["provider"] = { "i", 12736 },	-- Frostwhisper's Embalming Fluid
-		["description"] = "Can be found inside the chemistry lab in Scholomance, in Ras Frostwhisper's room.",
-		["timeline"] = { "removed 5.0.4" },
 	}),
 	n(10508, {	-- Ras Frostwhisper
 		i(13626, {	-- Human Head of Ras Frostwhisper
@@ -886,7 +925,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDown({ ["timeline"] = { "removed 5.0.4", "
 		i(18696),	-- Intricately Runed Shield
 		i(18695),	-- Spellbound Tome
 		i(16689, {	-- Magister's Mantle
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(13314),	-- Alanna's Embrace
 		i(14503),	-- Death's Clutch
@@ -913,7 +952,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDown({ ["timeline"] = { "removed 5.0.4", "
 			i(22332),	-- Blade of Necromancy
 			i(22333),	-- Hammer of Divine Might
 			i(22303, {	-- Ironweave Pants
-				["timeline"] = { "removed 4.0.1" },
+				["timeline"] = { REMOVED_4_0_3 },
 			}),
 			i(22326),	-- Amalgam's Band
 			i(22331),	-- Band of the Steadfast Hero
@@ -948,13 +987,22 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDown({ ["timeline"] = { "removed 5.0.4", "
 			i(14620),	-- Deathbone Girdle
 			i(14623),	-- Deathbone Legguards
 			i(14621),	-- Deathbone Sabatons
+			i(18684),	-- Dimly Opalescent Ring
+			i(207058, {	-- Fractured Shin
+				["timeline"] = { ADDED_10_1_5 },
+			}),
 			i(18682),	-- Ghoul Skin Leggings
 			i(14633),	-- Necropile Mantle
 			i(14626),	-- Necropile Robe
 			i(14629),	-- Necropile Cuffs
 			i(14632),	-- Necropile Leggings
 			i(14631),	-- Necropile Boots
-			i(18684),	-- Dimly Opalescent Ring
+			i(207060, {	-- Skeletal Knight's Buckler
+				["timeline"] = { ADDED_10_1_5 },
+			}),
+			i(207059, {	-- Skeletal Knights Blade
+				["timeline"] = { ADDED_10_1_5 },
+			}),
 			applyclassicphase(PHASE_FIVE, i(23201, {	-- Libram of Divinity
 				["timeline"] = { "deleted 5.0.4" },
 			})),
@@ -965,51 +1013,43 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDown({ ["timeline"] = { "removed 5.0.4", "
 	}),
 	n(10505, {	-- Instructor Malicia
 		i(16710, {	-- Shadowcraft Bracers
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 		}),
 	}),
 	n(11261, {	-- Doctor Theolen Krastinov <The Butcher>
 		i(206370, {	-- Blood of Innocents
-			["timeline"] = { "added 10.1.5" },
+			["timeline"] = { ADDED_10_1_5 },
 		}),
 		i(13523, {	-- Blood of Innocents
-			["timeline"] = { "deleted 5.0.4" },
+			["timeline"] = { REMOVED_5_0_4 },
 		}),
 		i(16684, {	-- Magister's Gloves
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 		}),
 		i(14617),	-- Sawbones Shirt
 	}),
-	n(206014, {	-- Eva Sarkhoff
-		["timeline"] = { "added 10.1.5" },
-		["description"] = "Go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (top center room), and at the top left portion of the room. Use the Krastinov's Bag of Horrors toy to spawn Eva's & then click off the buff so you can talk with Eva. She will give you the Spectral Essence Trinket.",
-		["groups"] = {
-			i(13544),	-- Spectral Essence
-		},
-	}),
 	n(10901, {	-- Lorekeeper Polkelt
 		i(16705, {	-- Dreadmist Wraps
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 		}),
 	}),
 	n(10507, {	-- The Ravenian
 		i(16716, {	-- Wildheart Belt
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 		}),
-	}),
-	o(176485, {	-- The Deed to Caer Darrow
-		["provider"] = { "i", 13448 },	-- The Deed to Caer Darrow
-		["description"] = "Can be found right next to Alexi Barov.",
-		["timeline"] = { "removed 5.0.4" },
 	}),
 	n(10504, {	-- Lord Alexei Barov
 		i(16722, {	-- Lightforge Bracers
-			["timeline"] = { "removed 4.0.3" },
+			["timeline"] = { REMOVED_4_0_3 },
 		}),
 	}),
 	n(1853, {	-- Darkmaster Gandling
 		["description"] = "You must full clear out the Crypt before this boss will spawn on the bottom floor. It is recommended that you clear the top floor last so that you have an opportunity to properly position your group.",
 		["groups"] = {
+			i(206373, {	-- Darkmaster's Scourgestone
+				["description"] = "Drops only with equipped Argent Dawn Commission",
+				["timeline"] = { ADDED_10_1_5 },
+			}),
 			i(14514, {	-- Pattern: Robe of the Void
 				-- #if TBC
 				-- During TBC this was made exclusively usable by Warlocks, then that change was reverted with Wrath.
@@ -1022,31 +1062,31 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDown({ ["timeline"] = { "removed 5.0.4", "
 			i(13953),	-- Silent Fang
 			i(13964),	-- Witchblade
 			i(16677, {	-- Beaststalker's Cap
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 			}),
 			i(16667, {	-- Coif of Elements
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 			}),
 			i(16693, {	-- Devout Crown
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 			}),
 			i(16698, {	-- Dreadmist Mask
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 			}),
 			i(16731, {	-- Helm of Valor
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 			}),
 			i(16727, {	-- Lightforge Helm
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 			}),
 			i(16686, {	-- Magister's Crown
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 			}),
 			i(16707, {	-- Shadowcraft Cap
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 			}),
 			i(16720, {	-- Wildheart Cowl
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { REMOVED_4_0_3 },
 			}),
 			i(13944),	-- Tombstone Breastplate
 			i(13951),	-- Vigorsteel Vambraces
@@ -1063,24 +1103,27 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDown({ ["timeline"] = { "removed 5.0.4", "
 			-- #endif
 		},
 	}),
+	-- n(14695),	-- Lord Blackwood
+	-- Listed under Worldevent>Scourge>
 });
 
 -- #if BEFORE 5.0.4
 -- Before MOP there was only one difficulty for Scholomance. Merge all the legacy data into the groups directly.
-for i,o in ipairs(SCHOLOMANCE_LEGACY_DATA) do
+for i,o in ipairs(SCHOLOMANCE_LEGACY_DATA.groups) do
 	table.insert(SCHOLOMANCE_GROUPS, o);
 end
 -- #else
 -- After MOP they revamped Scholomance and included a lot of extra stuff. They also created a Heroic Difficulty, so a Normal header is now necessary.
 local LEGACY_DUNGEON_GROUPS = {};
-for i,o in ipairs(SCHOLOMANCE_LEGACY_DATA) do
+for i,o in ipairs(SCHOLOMANCE_LEGACY_DATA.groups) do
 	table.insert(LEGACY_DUNGEON_GROUPS, o);
 end
 -- #if AFTER 10.1.5
 table.insert(SCHOLOMANCE_GROUPS, header(HEADERS.Achievement, 18368, {	-- Memory of Scholomance
 	["sourceQuest"] = 76249,	-- Memory of Scholomance
 	["description"] = "With 10.1.5, Blizzard readded the original version of Scholomance!\n\nThank you, Blizzard!\n  -Crieve",
-	["maps"] = { 306, 307, 308, 309 },
+	["mapID"] = 306,
+	["maps"] = { 307, 308, 309 },
 	["modID"] = 1,
 	["groups"] = LEGACY_DUNGEON_GROUPS,
 }));
@@ -1100,11 +1143,13 @@ table.insert(SCHOLOMANCE_GROUPS, n(createHeader({
 		cn = "通灵学院的回忆",
 	},
 }), {
-	["maps"] = { 306, 307, 308, 309 },
+	["mapID"] = 306,
+	["maps"] = { 307, 308, 309 },
 	["modID"] = 1,
 	["groups"] = LEGACY_DUNGEON_GROUPS,
 }));
 -- #endif
+
 table.insert(SCHOLOMANCE_GROUPS, d(NORMAL_DUNGEON, {
 	n(QUESTS, sharedData({["modID"] = 0},{
 		q(28756, {	-- Aberrations of Bone
@@ -1137,18 +1182,35 @@ table.insert(SCHOLOMANCE_GROUPS, d(NORMAL_DUNGEON, {
 			["lvl"] = 38,
 		}),
 	})),
+	n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+		o(403552, {	-- Eva's Femur
+			["description"] = "To start unlocking old Scholomance, you must first do a normal run of the MoP-Revamped Scholomance all the way to the final boss, Darkmaster Gandling. Once you complete the run, you must go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (top center room), and at the top left portion of the room, you will be able to loot the first item of the secret, Eva's Femur.",
+			["sourceQuests"] = { 76250 },	-- Spectral Essence
+			["groups"] = {
+				i(206364),	-- Eva's Femur
+			},
+		}),
+		o(403498, {	-- Eva's Journal
+			["description"] = "Located in new Scholomance, on a bookshelf in the Viewing Room (the room right before Darkmaster Gandling), to the right of the entrance of the corridor that leads to Darkmaster Gandling. The book is very hard to see and click, hidden behind other books on the middle shelf. The book is noticeable brighter than other books in the shelf.",
+			["sourceQuests"] = { 76250 },	-- Spectral Essence
+			["groups"] = {
+				i(206346),	-- Eva's Journal
+			},
+		}),
+	})),
 	n(ZONE_DROPS, {
+		i(16255, {	-- Formula: Enchant 2H Weapon - Major Spirit / CLASSIC: Formula: Enchant 2H Weapon - Major Versatility (RECIPE!)
+			["cr"] = 58757,	-- Scholomance Acolyte
+		}),
 		i(18702),	-- Belt of the Ordained
 		i(14536),	-- Bonebrace Hauberk
 		i(18697),	-- Coldstone Slippers
 		i(18699),	-- Icy Tomb Spaulders
 		i(18701, {	-- Innervating Band
-			-- #if AFTER 5.0.4
 			["crs"] = {
 				59614,	-- Bored Student
 				58823,	-- Scholomance Neophyte
 			},
-			-- #endif
 		}),
 		i(18700),	-- Malefic Bracers
 		i(18698),	-- Tattered Leather Hood
@@ -1234,6 +1296,21 @@ table.insert(SCHOLOMANCE_GROUPS, d(NORMAL_DUNGEON, {
 			i(88355),	-- Searing Words
 		},
 	}),
+	n(206014, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Eva Sarkhoff
+		["description"] = "Go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (top center room), and at the top left portion of the room. Use the Krastinov's Bag of Horrors toy to spawn Eva's & then click off the buff so you can talk with Eva. She will give you the Inert Spectral Essence.",
+		["questID"] = 76248,
+		["groups"] = {
+			i(206365),	-- Inert Spectral Essence
+			i(13544, {	-- Spectral Essence
+				["questID"] = 76250,
+				["cost"] = {
+					{ "i", 20520, 3 },	-- 3x Dark Rune
+					{ "i", 12808, 5 },	-- 5x Essence of Undeath
+					{ "i", 206365, 1 },	-- 1x Inert Spectral Essence
+				},
+			}),
+		},
+	})),
 }));
 table.insert(SCHOLOMANCE_GROUPS, d(HEROIC_DUNGEON, {
 	["timeline"] = { "added 5.0.4" },

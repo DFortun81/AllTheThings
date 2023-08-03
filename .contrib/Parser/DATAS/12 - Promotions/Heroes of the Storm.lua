@@ -21,7 +21,7 @@ root(ROOTS.Promotions, n(HEROES_OF_THE_STORM, {
 			["description"] = "Obtained by playing Heroes of the Storm and reaching level 20.",
 			["timeline"] = { ADDED_6_1_2 },
 		}, {
-			classicAch(9926),	-- Hero of the Storm
+			ach(9926),	-- Hero of the Storm
 			i(118518),	-- Graves (PET!)
 		})),
 		n(REWARDS, bubbleDown({
@@ -29,7 +29,7 @@ root(ROOTS.Promotions, n(HEROES_OF_THE_STORM, {
 			["description"] = "Obtained by winning 15 games of Heroes of the Storm.\n\nSadly, this is no longer available.",
 			["timeline"] = { "added 7.2.0.23801" },
 		}, {
-			classicAch(11425),	-- Herald of Flames
+			ach(11425),	-- Herald of Flames
 			i(143631),	-- Primal Flamesaber (MOUNT!)
 		})),
 	},

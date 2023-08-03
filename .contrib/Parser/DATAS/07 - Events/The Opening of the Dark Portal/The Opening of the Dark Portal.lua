@@ -36,11 +36,10 @@ root(ROOTS.WorldEvents, n(THE_OPENING_OF_THE_DARK_PORTAL,
 				["coord"] = { 58.25, 55.05, BLASTED_LANDS },
 				["lvl"] = 55,
 				["groups"] = {
-					classicAch(2079, {	-- Tabard of the Protector
+					ach(2079, {	-- Tabard of the Protector
 						["provider"] = { "i", 28788 },	-- Tabard of the Protector
 						-- #if BEFORE WRATH
 						["description"] = "Obtained a Tabard of the Protector from the Dark Portal event.",
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 						-- #endif
 					}),
 					i(28788),	-- Tabard of the Protector

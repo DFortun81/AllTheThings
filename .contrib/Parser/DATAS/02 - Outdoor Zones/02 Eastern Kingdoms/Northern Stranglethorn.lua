@@ -44,7 +44,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				classicAch(940, {	-- The Green Hills of Stranglethorn
+				ach(940, {	-- The Green Hills of Stranglethorn
 					-- #if AFTER CATA
 					["sourceQuest"] = 208,	-- Big Game Hunter
 					-- #else
@@ -55,7 +55,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					-- #if BEFORE WRATH
 					["description"] = "Complete all of Hemet Nesingwary quests in Stranglethorn Vale up to and including The Green Hills of Stranglethorn and Big Game Hunter.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ALL_SOURCE_QUESTS]],
+					["AllSourceQuestsRequiredForAchievement"] = true,
 					-- #endif
 				}),
 			}),
@@ -1116,8 +1116,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26407, {	-- Mosh'Ogg Handiwork
 					["provider"] = { "i", 58491 },	-- Disfigured Mosh'Ogg Hand
-					["sourceQuest"] = 26278,	-- The Defense of Grom'gol: Raptor Risk
-					["description"] = "Drops during |cFFFFD700The Defense of Grom'gol: Ogre Oppression|r.",
+					-- ["sourceQuest"] = 26278,	-- The Defense of Grom'gol: Raptor Risk [Not Required, Discord 2023-07-29]
+					["description"] = "Typically drops during |cFFFFD700The Defense of Grom'gol: Ogre Oppression|r.",
 					["timeline"] = { "added 4.0.3.13277" },
 					["crs"] = {
 						1142,	-- Mosh'Ogg Brute
@@ -2701,7 +2701,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(48126, {	-- Razzashi Hatchling (PET!)
 					["timeline"] = { "added 3.2.0.10128" },
 				}),
-				i(9294, {	-- Recipe: Wildvine Potion
+				i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
 					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
 					["maps"] = { THE_HINTERLANDS },
 					["timeline"] = { "added 1.11.1", "removed 4.0.1" },

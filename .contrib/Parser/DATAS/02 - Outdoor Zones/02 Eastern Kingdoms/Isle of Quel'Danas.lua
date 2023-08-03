@@ -1337,14 +1337,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["description"] = "Explore Isle of Quel'Danas, revealing the covered areas of the world map.",
 					-- #endif
 				}),
-				classicAch(897, {	-- You're So Offensive
+				achWithRep(897, 1077, {	-- You're So Offensive
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Shattered Sun Offensive to Exalted.",
-					-- #endif
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1077); end]],
 					-- #endif
 				}),
 			}),
@@ -1403,9 +1398,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
 						objective(1, {	-- 0/1 Energize a Crystal Ward
-							["provider"] = { "i", 34338 },	-- Mana Remnants
+							["providers"] = {
+								{ "i",  34338 },	-- Mana Remnants
+								{ "o", 187078 },	-- Crystal Ward
+							},
 							["coord"] = { 46, 35, ISLE_OF_QUELDANAS },
-							["cr"] = 24966,	-- Wretched Fiend
+							["crs"] = {
+								24960,	-- Wretched Devourer
+								24966,	-- Wretched Fiend
+								25047,	-- Wretched Hungerer
+							},
 						}),
 					},
 				})),
@@ -1837,9 +1839,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					-- #endif
 					["groups"] = {
 						objective(1, {	-- 0/1 Energize a Crystal Ward
-							["provider"] = { "i", 34338 },	-- Mana Remnants
+							["providers"] = {
+								{ "i",  34338 },	-- Mana Remnants
+								{ "o", 187078 },	-- Crystal Ward
+							},
 							["coord"] = { 46, 35, ISLE_OF_QUELDANAS },
-							["cr"] = 24966,	-- Wretched Fiend
+							["crs"] = {
+								24960,	-- Wretched Devourer
+								24966,	-- Wretched Fiend
+								25047,	-- Wretched Hungerer
+							},
 						}),
 					},
 				})),

@@ -2233,7 +2233,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(32671, {	-- Learn To Ride
 					["description"] = "This quest is available to Trolls upon reaching level 10.",
-					["timeline"] = { "added 5.2.0.16486" },
+					["timeline"] = { "added 5.2.0.16486", REMOVED_10_1_5 },
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
 					["lockCriteria"] = { 1,
@@ -3031,7 +3031,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25236, {	-- Thunder Down Under
 					["qg"] = 39379,	-- Gor the Enforcer
-					["sourceQuest"] = 25196,	-- The Dranosh'ar Blockade
 					["coord"] = { 44.9, 14.7, DUROTAR },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
@@ -3262,6 +3261,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 			}),
+			-- #if BEFORE TBC
+			n(RIDING_TRAINER, {
+				n(7953, {	-- Xar'Ti <Raptor Riding Trainer>
+					["coord"] = { 55.3, 75.5, DUROTAR },
+					["races"] = { ORC, TROLL, UNDEAD },
+
+					-- Available to Trolls without faction requirements.
+					["minReputation"] = { 530, EXALTED },	-- Darkspear Trolls, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. TROLL .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
+					["groups"] = {
+						recipe(10861, {	-- Raptor Riding
+							["cost"] = 200000,
+							["lvl"] = 40,
+						}),
+					},
+				}),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(3881, {	-- Grimtak
 					-- #if AFTER CATA

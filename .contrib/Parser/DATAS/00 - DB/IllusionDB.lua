@@ -1,7 +1,6 @@
-
-local ItemDB = root(ROOTS.ItemDBConditional);
+local Items = ItemDBConditional;
 local i = function(itemID, illusionID, questID)
-	ItemDB[itemID] = { ["illusionID"] = illusionID, ["questID"] = questID };
+	Items[itemID] = { ["illusionID"] = illusionID, ["questID"] = questID };
 end
 
 -----------------

@@ -189,20 +189,10 @@ root(ROOTS.Zones, {
 						},
 						-- #endif
 					}),
-					ach(1012, {	-- The Winds of the North (A)
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1037); end]],
-						-- #endif
+					achWithRep(1012, 1037, {	-- The Winds of the North (A)
 						["races"] = ALLIANCE_ONLY,
 					}),
-					ach(1011, {	-- The Winds of the North (H)
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1052); end]],
-						-- #endif
+					achWithRep(1011, 1052, {	-- The Winds of the North (H)
 						["races"] = HORDE_ONLY,
 					}),
 				}),
@@ -778,10 +768,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11672, {	-- Enlistment Day
+						["qg"] = 25307,	-- Recruitment Officer Blythe
+						-- #if AFTER 4.0.3.13277
+						["sourceQuest"] = 28709,	-- Hero's Call: Borean Tundra!
+						-- #endif
 						["coord"] = { 57.8, 67.5, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25307,	-- Recruitment Officer Blythe
-						["sourceQuest"] = 28709,	-- Hero's Call: Borean Tundra!
 					}),
 					q(11570, {	-- Escape from the Winterfin Caverns
 						["qg"] = 25208,	-- Lurgglbr

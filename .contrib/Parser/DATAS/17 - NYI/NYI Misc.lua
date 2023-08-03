@@ -9,10 +9,12 @@ root(ROOTS.NeverImplemented, {
 			-- 1.x.x
 			n(P1xx, {
 				i(8502),	-- Bronze Lotterybox
+				i(17968),	-- Charged Scale of Onyxia
 				i(9023),	-- Codex of Shadow Protection III
 				i(8503),	-- Heavy Bronze Lotterybox
 				i(8505),	-- Heavy Iron Lotterybox
 				i(8507),	-- Heavy Mithril Lotterybox
+				i(20367),	-- Hunting Gear
 				i(8504),	-- Iron Lotterybox
 				i(5126, {	-- Knowledge: Defias Disguise
 				spell(5169),	-- Defias Disguise
@@ -34,6 +36,9 @@ root(ROOTS.NeverImplemented, {
 				}),
 				i(8506),	-- Mithril Lotterybox
 				i(19804),	-- Pale Ghoulfish
+				i(17967),	-- Refined Scale of Onyxia
+				i(3895),	-- TEST Legendary
+				i(22316),	-- Test Relic
 				i(994),		-- Tome of Ice Armor
 				i(8802),	-- Tome of Arcane Intellect
 				i(8868),	-- Tome of Conjure Water VI

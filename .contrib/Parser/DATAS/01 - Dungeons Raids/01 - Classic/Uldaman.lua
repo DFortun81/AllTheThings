@@ -757,14 +757,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			e(473, {	-- Archaedas
 				["creatureID"] = 2748,
 				["groups"] = {
-					classicAch(638, {	-- Uldaman
+					ach(638, {	-- Uldaman
 						-- #if BEFORE WRATH
 						["sourceQuests"] = {
 							2278,	-- The Platinum Discs
 							2204,	-- Restoring the Necklace
 							2339,	-- Find the Gems and Power Source
 						},
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5047, {	-- Uldaman Guild Run

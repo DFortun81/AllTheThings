@@ -1,6 +1,7 @@
 --------------------
 -- LEATHERWORKING --
 --------------------
+local SECRET_OF_DRAENOR_LEATHERWORKING = 118721;
 --Leaving section as a comment as it may be totally wrong - NamexFace
 --[[
 	APPRENTICE_JOURNEYMAN_LEATHERWORKING = {
@@ -11,13 +12,13 @@
 		["rank"] = 1,
 	}),
 	r(3104,	{	-- Leatherworking (Journeyman)
-		["timeline"]={ "removed 8.0.1"},
+		["timeline"] = { "removed 8.0.1"},
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
 		-- #endif
 		["rank"] = 2,
 	}),
-	applyclassicphase(BFA_PHASE_ONE, r(264577, {["timeline"]={"added 8.0.1"}})),	-- Leatherworking
+	applyclassicphase(BFA_PHASE_ONE, r(264577, {["timeline"] = {"added 8.0.1"}})),	-- Leatherworking
 	n(ARMOR, {
 		r(3766),	-- Dark Leather Belt
 		r(2167),	-- Dark Leather Boots
@@ -57,14 +58,14 @@
 };
 EXPERT_ARTISAN_LEATHERWORKING = {
 	r(3811,	{	-- Leatherworking (Expert)
-		["timeline"]={ "removed 8.0.1"},
+		["timeline"] = { "removed 8.0.1"},
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
 		-- #endif
 		["rank"] = 3,
 	}),
 	r(10662,	{	-- Leatherworking (Artisan)
-		["timeline"]={ "removed 8.0.1"},
+		["timeline"] = { "removed 8.0.1"},
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
 		-- #endif
@@ -76,11 +77,11 @@ EXPERT_ARTISAN_LEATHERWORKING = {
 		r(24654),	-- Blue Dragonscale Leggings
 		r(10650),	-- Dragonscale Breastplate
 		r(10619),	-- Dragonscale Gauntlets
-		r(10656, {["timeline"]={ "removed 4.0.3"}}),	-- Dragonscale Leatherworking
+		r(10656, {["timeline"] = { "removed 4.0.3"}}),	-- Dragonscale Leatherworking
 		r(9206),	-- Dusky Belt
 		r(9201),	-- Dusky Bracers
 		r(9196),	-- Dusky Leather Armor
-		r(10658, {["timeline"]={ "removed 4.0.3"}}),	-- Elemental Leatherworking
+		r(10658, {["timeline"] = { "removed 4.0.3"}}),	-- Elemental Leatherworking
 		r(10647),	-- Feathered Breastplate
 		r(9198),	-- Frost Leather Cloak
 		r(10630),	-- Gauntlets of the Sea
@@ -96,7 +97,7 @@ EXPERT_ARTISAN_LEATHERWORKING = {
 		r(10548),	-- Nightscape Pants
 		r(10499),	-- Nightscape Tunic
 		r(19065),	-- Runic Leather Bracers
-		r(10660, {["timeline"]={ "removed 4.0.3"}}),	-- Tribal Leatherworking
+		r(10660, {["timeline"] = { "removed 4.0.3"}}),	-- Tribal Leatherworking
 		r(10518),	-- Turtle Scale Bracers
 		r(10511),	-- Turtle Scale Breastplate
 		r(10552),	-- Turtle Scale Helm
@@ -392,8 +393,84 @@ COMMON_CATACLYSM_LEATHERWORKING_RECIPES = {
 		["timeline"] = { "added 4.0.3.13287" },
 	}),
 };
-BFA_LEATHERWORKING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = { "added 8.0.1" } }, {
-	r(264592),	-- Kul Tiran Leatherworking
+COMMON_DRAENOR_LEATHERWORKING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ ["timeline"] = { "added 6.0.2" } }, {
+	i(116328, {	-- Pattern: Brilliant Burnished Cloak (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+	}),
+	i(116345, {	-- Pattern: Burnished Essence (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 5 } },
+	}),
+	i(116349, {	-- Pattern: Burnished Inscription Bag (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 5 } },
+	}),
+	i(116347, {	-- Pattern: Burnished Leather Bag (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 5 } },
+	}),
+	i(116348, {	-- Pattern: Burnished Mining Bag (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 5 } },
+	}),
+	i(120258, {	-- Pattern: Drums of Fury (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+	}),
+	i(116325, {	-- Pattern: Leather Refurbishing Kit (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+	}),
+	i(116327, {	-- Pattern: Nimble Burnished Cloak (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+	}),
+	i(116326, {	-- Pattern: Powerful Burnished Cloak (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+	}),
+	i(116350, {	-- Pattern: Riding Harness (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 5 } },
+	}),
+	i(116335, {	-- Pattern: Supple Boots (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+	}),
+	i(116334, {	-- Pattern: Supple Bracers (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+	}),
+	i(116332, {	-- Pattern: Supple Gloves (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+	}),
+	i(116330, {	-- Pattern: Supple Helm (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+	}),
+	i(116331, {	-- Pattern: Supple Leggings (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+	}),
+	i(116329, {	-- Pattern: Supple Shoulderguards (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+	}),
+	i(116333, {	-- Pattern: Supple Vest (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+	}),
+	i(116336, {	-- Pattern: Supple Waistguard (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+	}),
+	i(116343, {	-- Pattern: Wayfaring Boots (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+	}),
+	i(116342, {	-- Pattern: Wayfaring Bracers (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+	}),
+	i(116340, {	-- Pattern: Wayfaring Gloves (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+	}),
+	i(116338, {	-- Pattern: Wayfaring Helm (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+	}),
+	i(116339, {	-- Pattern: Wayfaring Leggings (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+	}),
+	i(116337, {	-- Pattern: Wayfaring Shoulderguards (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+	}),
+	i(116341, {	-- Pattern: Wayfaring Tunic (RECIPE!)
+		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+	}),
+}));
+BFA_LEATHERWORKING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	r(330216, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Battle for Azeroth]
 	r(330218, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Battle for Azeroth]
 	r(330219, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Battle for Azeroth]
@@ -459,6 +536,8 @@ BFA_LEATHERWORKING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] 
 	filter(MISC, {
 		r(287273, {["timeline"] = {ADDED_8_1_0}}),	-- Aqueous Reskinning
 		r(278423),	-- Amber Rallying Horn
+		r(256790),	-- Coarse Leather Barding [Rank 1]
+		r(286019, {["timeline"] = {ADDED_8_1_0}}),	-- Coarse Leather Barding [Rank 2]
 		r(256791),	-- Drums of the Maelstrom
 		r(269552),	-- Honorable Combatant's Bow [Rank 1]
 		r(286652, {["timeline"] = {ADDED_8_1_0}}),	-- Sanguinated Reskinning
@@ -466,10 +545,6 @@ BFA_LEATHERWORKING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] 
 		r(256793),	-- Shimmerscale Diving Helmet
 		r(256792),	-- Shimmerscale Diving Suit
 		r(276256),	-- Tempest Hide Pouch
-	}),
-	filter(MOUNT_EQUIPMENT, {
-		r(256790),	-- Coarse Leather Barding [Rank 1]
-		r(286019, {["timeline"] = {ADDED_8_1_0}}),	-- Coarse Leather Barding [Rank 2]
 	}),
 	n(WEAPONS, {
 		r(256778),	-- Coarse Leather Cestus
@@ -485,12 +560,8 @@ BFA_LEATHERWORKING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] 
 		r(304442, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Bow [Rank 1]
 	}),
 }));
-NAZJATAR_LEATHERWORKING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["timeline"] = { "added 8.2.0" } }, {
+NAZJATAR_LEATHERWORKING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["timeline"] = { ADDED_8_2_0 } }, {
 	n(ARMOR, {
-		r(299027),	-- Banded Cragscale Boots
-		r(299030),	-- Banded Cragscale Greaves
-		r(299021),	-- Banded Dredged Boots
-		r(299024),	-- Banded Dredged Leggings
 		r(299025),	-- Cragscale Boots
 		r(299028),	-- Cragscale Greaves
 		r(299019),	-- Dredged Leather Boots
@@ -505,22 +576,17 @@ NAZJATAR_LEATHERWORKING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["time
 		r(294817),	-- Notorious Combatant's Mail Leggings [Rank 1]
 		r(294811),	-- Notorious Combatant's Mail Treads [Rank 1]
 		r(294820),	-- Notorious Combatant's Mail Waistguard [Rank 1]
-		r(299026),	-- Reinforced Cragscale Boots
-		r(299029),	-- Reinforced Cragscale Greaves
-		r(299020),	-- Reinforced Dredged Boots
-		r(299023),	-- Reinforced Dredged Leggings
 	}),
 	filter(MISC, {
-		r(301405),	-- Dredged Leather Bladder
-	}),
-	filter(MOUNT_EQUIPMENT, {
 		r(301411),	-- Comfortable Rider's Barding
+		r(301405),	-- Dredged Leather Bladder
 	}),
 	n(WEAPONS, {
 		r(294826),	-- Notorious Combatant's Bow [Rank 1]
 	}),
 }));
 SL_LEATHERWORKING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	r(309038),	-- Shadowlands Leatherworking
 	n(ARMOR, {
 		r(309213, {	-- Boneshatter Armguards [Rank 1]
 			["sourceQuests"] = { 62798 },	-- The Vessels of Leather and Bone
@@ -534,7 +600,7 @@ SL_LEATHERWORKING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["time
 		r(309209, {	-- Boneshatter Helm [Rank 1]
 			["sourceQuests"] = { 62798 },	-- The Vessels of Leather and Bone
 		}),
-		r(309213, {	-- Boneshatter Pauldrons [Rank 1]
+		r(309211, {	-- Boneshatter Pauldrons [Rank 1]
 			["sourceQuests"] = { 62798 },	-- The Vessels of Leather and Bone
 		}),
 		r(309206, {	-- Boneshatter Treads [Rank 1]
@@ -604,15 +670,13 @@ SL_LEATHERWORKING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["time
 		}),
 	}),
 	filter(MISC, {
+		r(324735),	-- Comfortable Rider's Barding
 		r(343195),	-- Crafter's Mark I
 		r(324087),	-- Desolate Armor Kit
 		r(309173),	-- Drums of Deathly Ferocity
 		r(308897),	-- Heavy Callous Hide
 		r(308899),	-- Heavy Desolate Leather
 		r(343660),	-- Novice Crafter's Mark
-	}),
-	filter(MOUNT_EQUIPMENT, {
-		r(324735),	-- Comfortable Rider's Barding
 	}),
 	n(WEAPONS, {
 		r(309190),	-- Bone Bound Knuckles
@@ -655,8 +719,8 @@ DF_LEATHERWORKING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = 
 		r(375178),	-- Earthshine Scales
 		r(375168),	-- Feral Hide Drums
 		r(375179),	-- Frostbite Scales
-		r(409557, {["timeline"]={ADDED_10_1_0}}),	-- Hide-Bound Drums
-		r(409555, {["timeline"]={ADDED_10_1_0}}),	-- Lustrous Scaled Drums
+		r(409557, {["timeline"] = {ADDED_10_1_0}}),	-- Hide-Bound Drums
+		r(409555, {["timeline"] = {ADDED_10_1_0}}),	-- Lustrous Scaled Drums
 		r(375174),	-- Mireslush Hide
 		r(389195),	-- Recraft Equipment
 		r(375164),	-- Reinforced Armor Kit

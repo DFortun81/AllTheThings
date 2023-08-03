@@ -35,6 +35,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				-- #if AFTER CATA
+				explorationAch(760, {	-- Explore Alterac Mountains
+					-- #if BEFORE WRATH
+					["description"] = "Explore Alterac Mountains, revealing the covered areas of the world map.",
+					-- #endif
+					["timeline"] = { "removed 4.0.3" },
+				}),
+				-- #endif
 				explorationAch(772, {	-- Explore Hillsbrad Foothills
 					-- #if BEFORE WRATH
 					["description"] = "Explore Hillsbrad Foothills, revealing the covered areas of the world map.",
@@ -142,14 +150,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = HORDE_ONLY,
 				}),
-				-- #if BEFORE 4.0.3
 				fp(14, {	-- Southshore, Hillsbrad
 					["cr"] = 2432,	-- Darla Harris <Gryphon Master>
 					["coord"] = { 49.4, 52.4, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "deleted 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				-- #endif
 				fp(670, {	-- Strahnbrad, Alterac Mountains
 					["cr"] = 47665,	-- Phillip Harding <Bat Handler>
 					["coord"] = { 58.2, 26.4, HILLSBRAD_FOOTHILLS },
@@ -2784,7 +2790,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(2480, {	-- Bro'kin <Alchemy Supplies> (Alterac Mountains)
 					["coord"] = { 44.0, 21.8, HILLSBRAD_FOOTHILLS },
 					["groups"] = {
-						i(14634, {	-- Recipe: Frost Oil
+						i(14634, {	-- Recipe: Frost Oil (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2805,7 +2811,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(6054, {	-- Recipe: Shadow Protection Potion
+						i(6054, {	-- Recipe: Shadow Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2953,7 +2959,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6055, {	-- Recipe: Fire Protection Potion
+						i(6055, {	-- Recipe: Fire Protection Potion (RECIPE!)
 							-- #if BEFORE 4.0.3
 							["description"] = "This item can be sold on the Neutral Auction House to Alliance Alchemists for a... nominal fee.\n\nOnly naturally accessible to Horde players.",
 							-- #else

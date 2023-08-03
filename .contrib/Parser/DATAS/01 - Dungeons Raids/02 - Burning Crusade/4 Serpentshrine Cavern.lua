@@ -34,38 +34,38 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 			n(ZONE_DROPS, {
 				COILFANG_ARMAMENTS,
 				i(30280),	-- Pattern: Belt of Blasting
-				i(30302, {	-- Pattern: Belt of Deep Shadow
+				i(30302, {	-- Pattern: Belt of Deep Shadow (RECIPE!)
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
-				i(30301, {	-- Pattern: Belt of Natural Power
+				i(30301, {	-- Pattern: Belt of Natural Power (RECIPE!)
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
-				i(30303, {	-- Pattern: Belt of the Black Eagle
+				i(30303, {	-- Pattern: Belt of the Black Eagle (RECIPE!)
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
 				i(30281),	-- Pattern: Belt of the Long Road
 				i(30282),	-- Pattern: Boots of Blasting
-				i(30305, {	-- Pattern: Boots of Natural Grace
+				i(30305, {	-- Pattern: Boots of Natural Grace (RECIPE!)
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
-				i(30307, {	-- Pattern: Boots of the Crimson Hawk
+				i(30307, {	-- Pattern: Boots of the Crimson Hawk (RECIPE!)
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
 				i(30283),	-- Pattern: Boots of the Long Road
-				i(30306, {	-- Pattern: Boots of Utter Darkness
+				i(30306, {	-- Pattern: Boots of Utter Darkness (RECIPE!)
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
-				i(30308, {	-- Pattern: Hurricane Boots
+				i(30308, {	-- Pattern: Hurricane Boots (RECIPE!)
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
-				i(30304, {	-- Pattern: Monsoon Belt
+				i(30304, {	-- Pattern: Monsoon Belt (RECIPE!)
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
@@ -124,7 +124,10 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 			e(1568, {	-- The Lurker Below
 				["creatureID"] = 21217,
 				["groups"] = {
-					ach(144),	-- The Lurker Above
+					ach(144, {	-- The Lurker Above
+						["timeline"] = { "added 3.0.1" },
+						["requireSkill"] = FISHING,
+					}),
 					i(138834, {	-- Illusion: Frostbrand
 						["classes"] = { SHAMAN },
 						["timeline"] = { "added 7.0.3.22248" },
@@ -217,10 +220,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 			e(1572, {	-- Lady Vashj
 				["creatureID"] = 21212,
 				["groups"] = {
-					classicAch(694, {	-- Serpentshrine Cavern
+					ach(694, {	-- Serpentshrine Cavern
 						-- #if BEFORE WRATH
 						["sourceQuest"] = 10445,	-- The Vials of Eternity
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5088, {	-- Serpentshrine Cavern Guild Run

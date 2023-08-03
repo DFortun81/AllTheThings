@@ -35,7 +35,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["isRaid"] = true,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(5850, applyclassicphase(CATA_PHASE_ONE, {	-- Fish or Cut Bait: Undercity
+				applyclassicphase(CATA_PHASE_ONE, ach(5850, {	-- Fish or Cut Bait: Undercity
 					["timeline"] = { "added 4.2.0" },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
@@ -57,7 +57,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				})),
-				ach(5844, applyclassicphase(CATA_PHASE_ONE, {	-- Let's Do Lunch: Undercity
+				applyclassicphase(CATA_PHASE_ONE, ach(5844, {	-- Let's Do Lunch: Undercity
 					["timeline"] = { "added 4.2.0" },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
@@ -1235,7 +1235,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 51.8, 74.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(9301, {	-- Recipe: Elixir of Shadow Power
+						i(9301, {	-- Recipe: Elixir of Shadow Power (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(13477, {	-- Recipe: Superior Mana Potion

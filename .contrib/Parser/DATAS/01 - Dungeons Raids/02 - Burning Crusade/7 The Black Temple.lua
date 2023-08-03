@@ -27,14 +27,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 		["lvl"] = lvlsquish(70, 68, 30),	-- The attunement quests were originally level 70 required, but once removed, level 68s could zone in.
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				classicAch(958, {	-- Sworn to the Deathsworn
+				achWithRep(958, 1012, {	-- Sworn to the Deathsworn
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Ashtongue Deathsworn to Exalted.",
-					-- #endif
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1012); end]],
 					-- #endif
 				}),
 			}),
@@ -49,11 +44,8 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					["timeline"] = { "removed 3.0.1" },
 					["lvl"] = lvlsquish(70, 70, 30),
 					["groups"] = {
-						classicAch(431, {	-- Hand of A'dal (Achievement)
+						ach(431, {	-- Hand of A'dal (Achievement)
 							["sourceQuest"] = 10985,	-- A Distraction for Akama
-							-- #if BEFORE WRATH
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
-							-- #endif
 							["timeline"] = { "removed 3.0.1" },
 						}),
 						title(39, {	-- Hand of A'dal
@@ -124,7 +116,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 			}),
 			n(VENDORS, {
 				n(23159, {	-- Okuno <Ashtongue Deathsworn Quartermaster>
-					i(32429, {	-- Pattern: Boots of Shackled Souls
+					i(32429, {	-- Pattern: Boots of Shackled Souls (RECIPE!)
 						["spellID"] = 39997,	-- Boots of Shackled Souls
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
@@ -138,28 +130,28 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
 					}),
-					i(32431, {	-- Pattern: Greaves of Shackled Souls
+					i(32431, {	-- Pattern: Greaves of Shackled Souls (RECIPE!)
 						["spellID"] = 40001,	-- Greaves of Shackled Souls
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
 					}),
 					i(32447),	-- Pattern: Night's End
-					i(32436, {	-- Pattern: Redeemed Soul Cinch
+					i(32436, {	-- Pattern: Redeemed Soul Cinch (RECIPE!)
 						["spellID"] = 40006,	-- Redeemed Soul Cinch
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
 					}),
-					i(32435, {	-- Pattern: Redeemed Soul Legguards
+					i(32435, {	-- Pattern: Redeemed Soul Legguards (RECIPE!)
 						["spellID"] = 40005,	-- Redeemed Soul Legguards
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
 					}),
-					i(32433, {	-- Pattern: Redeemed Soul Moccasins
+					i(32433, {	-- Pattern: Redeemed Soul Moccasins (RECIPE!)
 						["spellID"] = 40003,	-- Redeemed Soul Moccasins
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
 					}),
-					i(32434, {	-- Pattern: Redeemed Soul Wristguards
+					i(32434, {	-- Pattern: Redeemed Soul Wristguards (RECIPE!)
 						["spellID"] = 40004,	-- Redeemed Soul Wristguards
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
@@ -168,7 +160,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					i(32440),	-- Pattern: Soulguard Girdle
 					i(32439),	-- Pattern: Soulguard Leggings
 					i(32437),	-- Pattern: Soulguard Slippers
-					i(32432, {	-- Pattern: Waistguard of Shackled Souls
+					i(32432, {	-- Pattern: Waistguard of Shackled Souls (RECIPE!)
 						["spellID"] = 40002,	-- Waistguard of Shackled Souls
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = RECIPES,
@@ -208,22 +200,22 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 			}),
 			n(ZONE_DROPS, {
 				i(32754),	-- Pattern: Bracers of Nimble Thought
-				i(32744, {	-- Pattern: Bracers of Renewed Life
+				i(32744, {	-- Pattern: Bracers of Renewed Life (RECIPE!)
 					["spellID"] = 41156,	-- Bracers of Renewed Life
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
-				i(32750, {	-- Pattern: Living Earth Bindings
+				i(32750, {	-- Pattern: Living Earth Bindings (RECIPE!)
 					["spellID"] = 41163,	-- Living Earth Bindings
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
-				i(32749, {	-- Pattern: Shoulders of Lightning Reflexes
+				i(32749, {	-- Pattern: Shoulders of Lightning Reflexes (RECIPE!)
 					["spellID"] = 41162,	-- Shoulders of Lightning Reflexes
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
 				}),
-				i(32747, {	-- Pattern: Swiftstrike Shoulders
+				i(32747, {	-- Pattern: Swiftstrike Shoulders (RECIPE!)
 					["spellID"] = 41160,	-- Swiftstrike Shoulders
 					["requireSkill"] = LEATHERWORKING,
 					["f"] = RECIPES,
@@ -445,16 +437,15 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 					e(1590, {	-- Illidan Stormrage
 						["creatureID"] = 22917,
 						["groups"] = {
-							classicAch(697, {	-- The Black Temple
+							ach(697, {	-- The Black Temple
 								-- #if BEFORE WRATH
 								["sourceQuest"] = 10959,	-- The Fall of the Betrayer
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
 							}),
 							ach(5091, {	-- The Black Temple Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),
-							applyclassicphase(TBC_PHASE_THREE_GLAIVEPRIO, classicAch(426, {	-- Warglaives of Azzinoth
+							applyclassicphase(TBC_PHASE_THREE_GLAIVEPRIO, ach(426, {	-- Warglaives of Azzinoth
 								["providers"] = {
 									{ "i", 32837 },	-- Warglaive of Azzinoth (LEGENDARY! MH)
 									{ "i", 32838 },	-- Warglaive of Azzinoth (LEGENDARY! OH)
@@ -470,7 +461,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 											break;
 										end
 									end
-									t.SetAchievementCollected(t.achievementID, collected);
+									t:SetAchievementCollected(t.achievementID, collected);
 								end]],
 								-- #else
 								["description"] = "Once you have both, simply equip them for this achievement.",

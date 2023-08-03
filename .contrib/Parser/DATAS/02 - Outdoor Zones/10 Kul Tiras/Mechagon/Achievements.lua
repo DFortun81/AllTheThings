@@ -395,7 +395,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 					["_npcs"] = { 150575 },
 				}),
 				crit(7, {	-- Arachnoid Harvester
-					["_npcs"] = { 151934, 154342 },
+					["_npcs"] = { 151934 },
 				}),
 				crit(8,	{	-- Killsaw
 					["_npcs"] = { 152007 },

@@ -89,6 +89,7 @@ root(ROOTS.NeverImplemented, {
 				q(5703, { ["name"] = "<NYI> The Rites of Old", }),
 				q(1443, { ["name"] = "<nyi> The Shakedown", }),
 				q(5659, { ["name"] = "<NYI> Touch of Weakness", }),
+				q(1288, { ["name"] = "<nyi> Vimes's Report", }),
 				q(1289, { ["name"] = "<nyi> Vimes's Report", }),
 				q(1292, { ["name"] = "<nyi><TXT> Centaur Hoofprints", }),
 				q(241, { ["name"] = "<TEST> HEY MISTER WILSON!", }),
@@ -105,6 +106,7 @@ root(ROOTS.NeverImplemented, {
 				q(497, { ["name"] = "<UNUSED>", }),
 				q(534, { ["name"] = "<UNUSED>", }),
 				q(612, { ["name"] = "<UNUSED>", }),
+				q(774, { ["name"] = "<UNUSED>", }),	-- Mulgore
 				q(807, { ["name"] = "<UNUSED>", }),
 				q(810, { ["name"] = "<UNUSED>", }),
 				q(811, { ["name"] = "<UNUSED>", }),
@@ -169,6 +171,7 @@ root(ROOTS.NeverImplemented, {
 				q(5696, { ["name"] = "<UNUSED>", }),
 				q(5697, { ["name"] = "<UNUSED>", }),
 				q(6841, { ["name"] = "<UNUSED>", }),
+				q(6842, { ["name"] = "<UNUSED>", }),	-- Silithus
 				q(7904, { ["name"] = "<UNUSED>", }),
 				q(8247, { ["name"] = "<UNUSED>", }),
 				q(8248, { ["name"] = "<UNUSED>", }),
@@ -178,10 +181,7 @@ root(ROOTS.NeverImplemented, {
 				q(8571, { ["name"] = "<UNUSED> Armor Kits", }),
 				q(6202, { ["name"] = "<UNUSED> Good and Evil", }),
 				q(6201, { ["name"] = "<UNUSED> The Legacy of the Ashbringer", }),
-				q(9412, { ["name"] = "<UNUSED>Crystal Flake Throat Lozenget Lozenge", }),
-				q(9413, { ["name"] = "<UNUSED>Crystal Flake Throat Lozenget Lozenge", }),
-				q(9411, { ["name"] = "<UNUSED>Infused Bandages", }),
-				q(9414, { ["name"] = "<UNUSED>Infused Bandages", }),
+				q(6606, { ["name"] = "A Little Luck", }),	-- Winterspring
 				q(785, { ["name"] = "A Strategic Alliance", }),
 				q(908, { ["name"] = "Amongst the Ruins", }),
 				q(8489, { ["name"] = "An Intact Converter", }),
@@ -189,11 +189,14 @@ root(ROOTS.NeverImplemented, {
 				q(8478, { ["name"] = "Choose Your Weapon", }),
 				q(8230, { ["name"] = "Collin's Test Quest", }),
 				q(7906, { ["name"] = "Darkmoon Cards - Beast", }),
+				q(1272, { ["name"] = "Finding Reethe <CHANGE INTO GOSSIP>", }),	-- Dustwallow Marsh
+				q(1283, { ["name"] = "Fire at the Shady Rest <CHANGE TO GOSSIP>", }),	-- Dustwallow Marsh
 				q(1127, { ["name"] = "Fool's Stout", }),
 				q(1174, { ["name"] = "Gnomes Win!", }),
 				q(1099, { ["name"] = "Goblins Win!", }),
 				q(7681, { ["name"] = "Hunter test quest", }),
 				q(7682, { ["name"] = "Hunter test quest2", }),
+				q(1281, { ["name"] = "Jim's Song <CHANGE TO GOSSIP>", }),	-- Dustwallow Marsh
 				q(5383, { ["name"] = "Krastinov's Bag of Horrors", }),
 				q(636, { ["name"] = "Legends of the Earth <NYI>", }),
 				q(7479, { ["name"] = "Libram of Focus", }),
@@ -211,16 +214,29 @@ root(ROOTS.NeverImplemented, {
 				q(7869, { ["name"] = "test quest - do not use", }),
 				q(7870, { ["name"] = "test quest2 - do not use", }),
 				q(708, { ["name"] = "The Black Box", }),
+				q(1263, { ["name"] = "The Burning Inn <CHANGE TO GOSSIP>", }),	-- Dustwallow Marsh
+				q(9065, { ["name"] = "The \"Chow\" Quest (123)aa", }),	-- Dustwallow Marsh
 				q(8896, { ["name"] = "The Dwarven Spy", }),
 				q(3911, { ["name"] = "The Last Element", }),
 				q(787, { ["name"] = "The New Horde", }),
-				q(9695, { ["name"] = "The Sun King's Command", }),
 				q(7462, { ["name"] = "The Treasure of the Shen'dralar", }),
 				q(7790, { ["name"] = "The Written Word", }),
+				q(2019, { ["name"] = "Tools of the Trade", }),
 				q(8340, { ["name"] = "Twilight Signet Ring <NYI> <TXT>", }),
 				q(1318, { ["name"] = "Unfinished Gordok Business", }),
 				q(7962, { ["name"] = "Wabbit Pelts", }),
 				q(7961, { ["name"] = "Waskily Wabbits!", }),
+				q(9296, { ["name"] = "reuse", }),	-- Scourge Invasion (Unused)
+				q(9297, { ["name"] = "reuse", }),	-- Scourge Invasion (Unused)
+				q(9298, { ["name"] = "reuse", }),	-- Scourge Invasion (Unused)
+				q(9411, { ["name"] = "<UNUSED>Infused Bandages", }),
+				q(9412, { ["name"] = "<UNUSED>Crystal Flake Throat Lozenget Lozenge", }),
+				q(9413, { ["name"] = "<UNUSED>Crystal Flake Throat Lozenget Lozenge", }),
+				q(9414, { ["name"] = "<UNUSED>Infused Bandages", }),
+				q(9695, { ["name"] = "The Sun King's Command", }),
+				i(20946, { ["name"] = "Tactical Task Briefing III", }),	-- Silithus
+				i(21246, { ["name"] = "Combat Task Briefing I", }),	-- Silithus
+				i(21247, { ["name"] = "Combat Task Briefing II", }),	-- Silithus
 			}),
 		}),
 		tier(TBC_TIER, {
@@ -452,10 +468,13 @@ root(ROOTS.NeverImplemented, {
 			q(28365),	-- <PH>Drizle Safe
 			q(28903),	-- <PH>Faceless
 			q(28902),	-- <PH>Hive'Zora B/C
+			q(29447),	-- A Curious Crystal [DMF]
 			q(26155),	-- A Dark Threat, Remembered
+			q(29478),	-- A Fizzy Fusion [DMF]
 			q(14453),	-- A Humble Task
 			q(26764),	-- A New Low (Northern Stranglethorn)
 			q(25455),	-- A Test of Wills
+			q(29450),	-- A Wondrous Weapon [DMF]
 			q(28011),	-- Adventurers Wanted: Blackfathom Deeps
 			q(28010),	-- Adventurers Wanted: Blackfathom Deeps
 			q(28071),	-- Adventurers Wanted: Blackrock Spire
@@ -498,8 +517,10 @@ root(ROOTS.NeverImplemented, {
 			q(28037),	-- Adventurers Wanted: Zul'farrak
 			q(28036),	-- Adventurers Wanted: Zul'farrak
 			q(26156),	-- All The King's Men
+			q(29449),	-- An Intriguing Grimoire [DMF]
 			q(26874),	-- Awakening Naralex
 			q(25497),	-- Back in the Saddle
+			q(29480),	-- Banners, Banners Everywhere! [DMF]
 			q(14319),	-- BETA Further Treatment
 			q(25474),	-- BETA Once More, With Eeling [DEPRICATED]
 			q(14220),	-- BETA This Is the End
@@ -510,6 +531,7 @@ root(ROOTS.NeverImplemented, {
 			q(28541),	-- Cache of Mau'ari
 			q(14446),	-- Cataclysm!
 			q(28516),	-- Centuries of Suffering
+			q(25413),	-- Change of Plans
 			q(28907),	-- Daily Normal Random (1st)
 			q(28908),	-- Daily Normal Random (Nth)
 			q(29185),	-- Daily Tier 2 Heroic (1st)
@@ -518,17 +540,21 @@ root(ROOTS.NeverImplemented, {
 			q(29029),	-- Dying Knowledge
 			q(27925),	-- Efficient Excavations
 			q(28555),	-- Expel the Envoys
+			q(29472),	-- Eyes on the Prizes [DMF]
 			q(26138),	-- Ferilon Leafborn
 			q(26767),	-- Figuring out how to make quests
 			q(29091),	-- Freedom Movement
+			q(29485),	-- Fun for the Little Ones [DMF]
 			q(26839),	-- Get Away From It All!
 			q(25666),	-- Getting Your Hands Dirty
 			q(24898),	-- Going, Going, Guano!
 			q(24899),	-- Going, Going, Guano!
 			q(26527),	-- Gryphon Master Talonaxe
-			q(25413),	-- Change of Plans
+			q(29479),	-- Herbs for Healing [DMF]
 			q(29028),	-- Into Jaedenar
 			q(14481),	-- Into The Abyss
+			q(35504),	-- Iron Joker [DMF]
+			q(29483),	-- Keeping the Faire Sparkling [DMF]
 			q(28905),	-- LFGDungeons - Cataclysm - Heroic Dungeon - 1st
 			q(28906),	-- LFGDungeons - Cataclysm - Heroic Dungeon - Nth
 			q(30110),	-- LFGDungeons - Cataclysm - Raid Finder - 1st
@@ -537,10 +563,13 @@ root(ROOTS.NeverImplemented, {
 			q(29096),	-- Mor'shan Caravan Pick-Up
 			q(27946),	-- NYI
 			q(28601),	-- Old Puttery
+			q(29466),	-- Plenty of Plump Frogs [DMF]
 			q(25435),	-- Pressure is Mounting
+			q(29484),	-- Putting the Crunch in the Frog [DMF]
+			q(29474),	-- Putting Trash to Good Use [DMF]
 			q(25384),	-- Raw Materials
+			q(29469),	-- Rearm, Reuse, Recycle [DMF]
 			q(26459),	-- Researching the Corruption
-			q(24716),	-- Returning A-Me 01
 			q(26704),	-- REUSE
 			q(28270),	-- Riding Shotgun
 			q(29572),	-- Safety is Job One
@@ -554,6 +583,8 @@ root(ROOTS.NeverImplemented, {
 			q(28642),	-- Shy-Rotam
 			q(25636),	-- Starve a Fever, Feed a Cold
 			q(28743),	-- Tailgunner!
+			q(29467),	-- Talkin' Tonks [DMF]
+			q(29470),	-- Tan My Hide [DMF]
 			q(28240),	-- Tapped Out
 			q(25737),	-- Tenuous Negotiatons
 			q(29169),	-- The Beasts Within
@@ -568,11 +599,13 @@ root(ROOTS.NeverImplemented, {
 			q(27634),	-- The God Hakkar
 			q(27018),	-- The Herald <NYI>
 			q(28606),	-- The Keys to the Hot Rod
+			q(29454),	-- The Master Strategist [DMF]
 			q(29672),	-- The Opening of the Dark Portal
 			q(29683),	-- The Scryer's Scryer
 			q(26243),	-- The World Pillar
 			q(29158),	-- The Zandalar Representative
 			q(24568),	-- To the Walls!
+			q(29465),	-- Tools of Divination [DMF]
 			q(28468),	-- Toxic Horrors
 			q(28481),	-- Troubled Spirits of Kel'Theril
 			q(28752),	-- Unstoppable Onslaught
@@ -583,6 +616,7 @@ root(ROOTS.NeverImplemented, {
 			q(25742),	-- What? This Old Thing?
 			q(28546),	-- Winterfall E'ko
 			q(28462),	-- Winterfall Firewater
+			q(29471),	-- Writing the Future [DMF]
 			q(24688),	-- Zen'Aliri
 		}),
 		tier(MOP_TIER, {
@@ -880,13 +914,6 @@ root(ROOTS.NeverImplemented, {
 				q(32490, { ["name"] = "UNUSED", }),	-- UNUSED
 				q(32508, { ["name"] = "Welcome to the Island", }),	-- Welcome to the Island
 				q(32291, { ["name"] = "[PH] The Fall of Shan Bu", }),	-- [PH] The Fall of Shan Bu
-			})),
-
-			-- 5.3.0
-			tier(MOP_TIER, 3.0, bubbleDownSelf({ ["timeline"] = {"created 5.3.0"} }, {
-				q(32825, { ["name"] = "Re-Use Me", }),	-- Re-Use Me
-				q(32826, { ["name"] = "Re-Use Me", }),	-- Re-Use Me
-				q(32827, { ["name"] = "Re-Use Me", }),	-- Re-Use Me
 			})),
 
 			-- 5.4.0

@@ -1350,7 +1350,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(32672, {	-- Learn to Ride
 					["description"] = "This quest is available to Undead characters upon reaching level 10.",
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { "added 4.0.3.13277", REMOVED_10_1_5 },
 					["races"] = { UNDEAD },
 					["lvl"] = 10,
 					["isBreadcrumb"] = true,
@@ -2044,6 +2044,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
+			-- #if BEFORE TBC
+			n(RIDING_TRAINER, {
+				n(4773, {	-- Velma Warnam <Undead Horse Riding Instructor>
+					["coord"] = { 60.0, 52.6, TIRISFAL_GLADES },
+					["races"] = { ORC, TROLL, UNDEAD },
+
+					-- Available to Undead without faction requirements.
+					["minReputation"] = { 68, EXALTED },	-- Undercity, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. UNDEAD .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
+					["groups"] = {
+						recipe(10906, {	-- Undead Horsemanship
+							["cost"] = 200000,
+							["lvl"] = 40,
+						}),
+					},
+				}),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(2118, {	-- Abigail Shiel <Trade Supplies>
 					-- #if AFTER CATA
@@ -2072,6 +2095,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 83.2, 68.2, TIRISFAL_GLADES },
 					-- #endif
+					["sym"] = {{ "select", "itemID", 206584 }},	-- Archived Crafting Techniques
 					["groups"] = {
 						i(22014, {	-- Hallowed Brazier
 							["timeline"] = { "removed 4.0.3" },
@@ -2136,23 +2160,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyclassicphase(PHASE_THREE, i(19203)),	-- Plans: Girdle of the Dawn (RECIPE!)
 						applyclassicphase(PHASE_THREE, i(19205)),	-- Plans: Gloves of the Dawn (RECIPE!)
 						i(13482),	-- Recipe: Transmute Air to Fire
-						
-						-- 10.1.5 Naxx Items
-						i(206584, {	-- Archived Crafting Techniques
-							["timeline"] = { "added 10.1.5" },
-							--	["minReputation"] = { 529, EXALTED },	-- Argent Dawn
-							["cost"] = { { "i", 12844, 6 } },	-- Argent Dawn Valor Token
-							["groups"] = {
-								i(206525),	-- Ancient Plans: Darrowdirk (RECIPE!)
-								i(206526),	-- Ancient Plans: Darrowshire Protector (RECIPE!)
-								i(206529),	-- Ancient Pattern: Helm of Lingering Power (RECIPE!)
-								i(206561),	-- Ancient Pattern: Lucien's Lost Soles (RECIPE!)
-								i(206527),	-- Ancient Plans: Mirah's Lullaby (RECIPE!)
-								i(206528),	-- Ancient Technique: Shifting Sliver (RECIPE!)
-								i(206530),	-- Ancient Pattern: Skyfury Headdress (RECIPE!)
-								i(206522),	-- Ancient Plans: Warsword of Caer Darrow (RECIPE!)
-							},
-						}),
 					},
 				}),
 				n(3522, {	-- Constance Brisboise <Apprentice Clothier>

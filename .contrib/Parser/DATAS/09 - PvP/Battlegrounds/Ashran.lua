@@ -830,7 +830,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			}),
 			n(VENDORS, {
 				n(80882, {	-- Tomas Riogain <Stormshield Quartermaster>
-					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 44.2, 74.0, 1478 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -860,7 +859,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				n(85115, {	-- Dazzerian <Warspear Quartermaster>
-					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 48.4, 23.8, 1478 },
 					["races"] = HORDE_ONLY,
 					["g"] = {

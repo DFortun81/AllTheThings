@@ -292,7 +292,7 @@ root(ROOTS.ExpansionFeatures,
 							follower(389),	-- Zian
 						},
 					}),
-					n(FOLLOWERS, { -- (Horde)
+					n(FOLLOWERS, {	-- (Horde)
 						["cr"] = 87305,	-- Akanja <Headhunter>
 						["sort"] = true,
 						["groups"] = {

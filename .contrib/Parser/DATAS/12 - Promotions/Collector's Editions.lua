@@ -241,9 +241,15 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDown({ ["u"] = REMOVED_FROM_G
 					5847,	-- Welcome! (Undead)
 				},
 				["groups"] = {
-					ach(662),	-- Collector's Edition: Mini-Diablo
-					ach(663),	-- Collector's Edition: Panda
-					ach(664),	-- Collector's Edition: Zergling
+					ach(662, {	-- Collector's Edition: Mini-Diablo
+						["timeline"] = { "added 3.0.1" },
+					}),
+					ach(663, {	-- Collector's Edition: Panda
+						["timeline"] = { "added 3.0.1" },
+					}),
+					ach(664, {	-- Collector's Edition: Zergling
+						["timeline"] = { "added 3.0.1" },
+					}),
 					i(13584, {	-- Mini Diablo (PET!)
 						["timeline"] = { "added 1.11.1.5462" },
 					}),
@@ -261,7 +267,9 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDown({ ["u"] = REMOVED_FROM_G
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",
 		["timeline"] = { "added 2.0.1" },
 		["groups"] = {
-			ach(665),	-- Collector's Edition: Netherwhelp
+			ach(665, {	-- Collector's Edition: Netherwhelp
+				["timeline"] = { "added 3.0.1" },
+			}),
 			i(25535),	-- Netherwhelp (PET!)
 			i(30360, {	-- Lurky (PET!)
 				["description"] = "This was only available in the EU.",

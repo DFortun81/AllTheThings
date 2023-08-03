@@ -504,13 +504,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["creatureID"] = 12201,
 						["modelScale"] = 2,
 						["groups"] = {
-							classicAch(640, {	-- Maraudon
+							ach(640, {	-- Maraudon
 								-- #if BEFORE WRATH
 								["sourceQuests"] = {
 									7065,	-- Corruption of Earth and Seed
 									7064,	-- Corruption of Earth and Seed
 								},
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
 							}),
 							ach(5049, {	-- Maraudon Guild Run

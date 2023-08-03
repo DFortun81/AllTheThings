@@ -381,6 +381,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 38, 21, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
+							["isBreadcrumb"] = true,
 							["lvl"] = lvlsquish(1, 1, 1),
 						}),
 						q(9392, {	-- Rogue Training
@@ -1228,7 +1229,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16280,	-- Perascamin <Riding Trainer>
 					["coord"] = { 61.2, 54, EVERSONG_WOODS },
 					["description"] = "This quest is automatically offered to Blood Elves upon reaching the specified level.",
-					["timeline"] = { "added 5.2.0" },
+					["timeline"] = { "added 5.2.0", REMOVED_10_1_5 },
 					["races"] = { BLOODELF },
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,

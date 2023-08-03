@@ -187,8 +187,8 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						},
 						["g"] = {
 							ach(10805),	-- Heroic: Black Rook Hold
-							i(137858),	-- Design: Grim Furystone Gorget (Rank 3)
-							i(127930),	-- Recipe: Flask of the Whispered Pact (Rank 2)
+							i(137858),	-- Design: Grim Furystone Gorget [Rank 3] (RECIPE!)
+							i(127930),	-- Recipe: Flask of the Whispered Pact [Rank 2] (RECIPE!)
 							i(136716),	-- Caged Horror
 							i(136770),	-- Drape of the Raven Lord
 							i(134370),	-- Felbat Leather Leggings
@@ -273,9 +273,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						["g"] = {
 							ach(10806),	-- Mythic: Black Rook Hold
 							ach(10862),	-- Mythic: Black Rook Hold Guild Run
-							i(137858),	-- Design: Grim Furystone Gorget (Rank 3)
-							i(127930),	-- Recipe: Flask of the Whispered Pact (Rank 2)
-							i(137931),	-- Pattern: Gravenscale Hauberk (Rank 3)
+							i(137858),	-- Design: Grim Furystone Gorget [Rank 3] (RECIPE!)
+							i(127930),	-- Recipe: Flask of the Whispered Pact [Rank 2] (RECIPE!)
+							i(137931),	-- Pattern: Gravenscale Hauberk [Rank 3] (RECIPE!)
 							i(137694),	-- Schematic: Reaves Module: Repair Mode
 							i(136716),	-- Caged Horror
 							i(136770),	-- Drape of the Raven Lord

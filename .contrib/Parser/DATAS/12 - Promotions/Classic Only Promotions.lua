@@ -211,6 +211,34 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 					}),
 				},
 			}),
+			q(74940, {	-- Flurky
+				["qg"] = 28687,	-- Amisi Azuregaze <Innkeeper>
+				["coord"] = { 50.0, 39.6, NORTHREND_DALARAN },
+				["maps"] = {
+					THE_EXODAR,
+					IRONFORGE,
+					STORMWIND_CITY,
+					UNDERCITY,
+					THUNDER_BLUFF,
+					ORGRIMMAR,
+					SILVERMOON_CITY,
+					SHATTRATH_CITY,
+				},
+				["crs"] = {
+					5111,	-- Innkeeper Firebrew <Innkeeper>
+					6740,	-- Innkeeper Allison <Innkeeper>
+					6746,	-- Innkeeper Pala <Innkeeper>
+					6929,	-- Innkeeper Gryshka <Innkeeper>
+					19232,	-- Innkeeper Haelthol <Innkeeper> (SCYRER)
+					28687,	-- Amisi Azuregaze
+					29532,	-- Ajay Green
+					31557,	-- Uda the Beast
+					32413,	-- Isirami Fairwind
+				},
+				["groups"] = {
+					i(187794),	-- Flurky
+				},
+			}),
 		},
 	}),
 	-- #endif

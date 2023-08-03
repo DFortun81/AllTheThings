@@ -5,9 +5,9 @@ struct = function(field, id, t)
 		print("ERROR: Don't use 'g' or 'groups' with an array of objects! Fix Group: "..field..":"..id);
 		return;
 	elseif not t.groups and t[1] then
-		t = { ["groups"] = bubbleUp(t) };
+		t = { ["groups"] = validateGroups(t) };
 	elseif t.groups then
-		t.groups = bubbleUp(t.groups);
+		validateGroups(t.groups);
 	end
 	if not id then
 		print("Missing ID for",field,"group");
@@ -197,37 +197,14 @@ bubbleDownSelf = function(data, t)
 	-- then apply regular bubbleDown on the group
 	return bubbleDown(data, t);
 end
-bubbleUp = function(t)
+-- Validates and returns 't' (expected 'groups' content) ensuring that contained content is in the expected formats
+validateGroups = function(t)
 	if t then
-		local t2 = {};
-		for i, group in pairs(t) do
-			table.insert(t2, group);
-		end
-		for i=#t,1,-1 do
-			table.remove(t, i);
-		end
-		for i, group in pairs(t2) do
+		for i,group in pairs(t) do
 			if type(i) ~= "number" then
-				print("You're trying to use '" .. i .. "' in a 'groups' field. (can't do that!)");
+				error("You're trying to use '" .. i .. "' in a 'groups' field. (can't do that!)");
 			elseif type(group) ~= "table" then
-				print("You're trying to use '" .. group .. "' in a 'groups' field. (can't do that!)");
-			else
-				if group.bubble then
-					-- this isn't just a normal group object, merge up the contents.
-					if group.groups or group.g then
-						for j,subgroup in pairs(group.groups or group.g) do
-							if type(j) ~= "number" then
-								print("You're trying to use '" .. j .. "' in a 'groups' field. (can't do that!)");
-							elseif type(subgroup) ~= "table" then
-								print("You're trying to use '" .. subgroup .. "' in a 'groups' field. (can't do that!)");
-							else
-								table.insert(t, subgroup);
-							end
-						end
-					end
-				else
-					table.insert(t, group);
-				end
+				error("You're trying to use '" .. group .. "' in a 'groups' field. (can't do that!)");
 			end
 		end
 		return t;
@@ -405,6 +382,14 @@ daljewelcraftingtoken = function(cost, item)			-- Assign a Dalaran Jewelcrafter'
 	applycost(item, { "c", 61, cost });
 	return item;
 end
+darkmoondaggermaw = function(cost, item)				-- Assign a Darkmoon Daggermaw cost to an item.
+	applycost(item, { "i", 124669, cost });	-- Darkmoon Daggermaw
+	return item;
+end
+darkmoonprizeticket = function(cost, item)				-- Assign a Darkmoon Prize Ticket cost to an item.
+	applycost(item, { "c", 515, cost });	-- Darkmoon Prize Ticket
+	return item;
+end
 emoc = function(cost, item)								-- Assign a Emblem of Conquest cost to an item with proper timeline & phase requirements.
 	-- #if BEFORE 4.0.1
 	applycost(item, { "c", 221, cost });	-- Emblem of Conquest
@@ -488,7 +473,7 @@ writ = function(item)									-- Assign a Champion's Writ cost to an item with p
 	return applyclassicphase(WRATH_PHASE_TWO, item);
 end
 
--- SHORTCUTS for Object Class Types
+-- Achievement Shortcuts
 ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
 	if t or type(altID) == "number" then
 		t = struct("allianceAchievementID", id, t or {});
@@ -496,21 +481,102 @@ ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
 	else
 		t = struct("achievementID", id, altID);
 	end
-	-- #if ANYCLASSIC
-	if not t.timeline then bubbleDown({ ["timeline"] = { "added 3.0.1" } }, t); end
+
+	-- #if BEFORE WRATH
+	-- These are helper variables (capitalized for a reason)
+	local AllProvidersRequiredForAchievement = t.AllProvidersRequiredForAchievement;
+	t.AllProvidersRequiredForAchievement = nil;
+	local AllSourceQuestsRequiredForAchievement = t.AllSourceQuestsRequiredForAchievement;
+	t.AllSourceQuestsRequiredForAchievement = nil;
+	if not t.OnUpdate then
+		if t.providers then
+			-- A lot of achievements are proc'd by having an item, quests with providers on them pretty much guarantee it works.
+			t.OnUpdate = AllProvidersRequiredForAchievement and [[_.CommonAchievementHandlers.ALL_ITEM_PROVIDERS]] or [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]];
+		elseif t.sourceQuests then
+			-- For Classic, we can detect if you've completed an achievement if there's a quest that involves killing the mob in question.
+			t.OnUpdate = AllSourceQuestsRequiredForAchievement and [[_.CommonAchievementHandlers.ALL_SOURCE_QUESTS]] or [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]];
+		end
+	end
 	-- #endif
 	return t;
 end
-achcat = function(id, t)								-- Create an ACHIEVEMENT CATEGORY Object
-	return struct("achievementCategoryID", id, t);
+achWithRep = function(id, factionID, t)					-- Create an ACHIEVEMENT Object with getting Exalted with a Faction as a requirement.
+	t = ach(id, t);
+	-- #if ANYCLASSIC
+	-- CRIEVE NOTE: This function is temporary until I get the handlers cleared out of the main files.
+	t.OnInit = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnInit(t, ]] .. factionID ..[[); end]];
+	-- #if BEFORE 4.1.0
+	if not t.OnUpdate then
+		-- #if AFTER 3.0.1
+		if id == 5788 then	-- Agent of Shen'dralar still needs this until after 4.1.0
+		-- #endif
+			t.OnUpdate = [[_.CommonAchievementHandlers.EXALTED_REP_OnUpdate]];
+		-- #if AFTER 3.0.1
+		end
+		-- #endif
+	end
+	t.OnClick = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]];
+	t.OnTooltip = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]];
+	-- #endif
+	-- #endif
+	return t;
 end
-achraw = function(id, altID, t)							-- Create an ACHIEVEMENT Object whose Criteria will not be adjusted by the Parser
+achWithReps = function(id, factions, t)					-- Create an ACHIEVEMENT Object with getting Exalted with seveneral Factions as a requirement.
+	t = ach(id, t);
+	-- #if ANYCLASSIC
+	-- CRIEVE NOTE: This function is temporary until I get the handlers cleared out of the main files.
+	local init = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnInit(t, ]] .. factions[1];
+	for i=2,#factions,1 do init = init .. "," .. factions[i]; end
+	t.OnInit = init ..[[); end]];
+	-- #if BEFORE 3.0.1
+	if not t.OnUpdate then
+		t.OnUpdate = [[_.CommonAchievementHandlers.EXALTED_REPS_OnUpdate]];
+	end
+	-- #endif
+	t.OnClick = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]];
+	t.OnTooltip = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]];
+	-- #endif
+	return t;
+end
+achWithAnyReps = function(id, factions, t)				-- Create an ACHIEVEMENT Object with getting Exalted with seveneral Factions as a requirement.
+	t = ach(id, t);
+	-- #if ANYCLASSIC
+	-- CRIEVE NOTE: This function is temporary until I get the handlers cleared out of the main files.
+	local init = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnInit(t, ]] .. factions[1];
+	for i=2,#factions,1 do init = init .. "," .. factions[i]; end
+	t.OnInit = init ..[[); end]];
+	-- #if BEFORE 3.0.1
+	if not t.OnUpdate then
+		t.OnUpdate = [[_.CommonAchievementHandlers.EXALTED_REPS_ANY_OnUpdate]];
+	end
+	-- #endif
+	t.OnClick = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]];
+	t.OnTooltip = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]];
+	-- #endif
+	return t;
+end
+achraw = function(id, altID, t)							-- Create an ACHIEVEMENT Object whose Criteria will not be adjusted by AchievementDB info
 	t = ach(id, altID, t);
 	-- TODO: hopefully we can define a better way for these Criteria to exist such that the Criteria can be moved as expected again
 	-- they were being moved under HQT defined in _quests via AchievementDB from Blizzard
 	-- but for now prevent the Criteria from disappearing into the Unsorted window
 	bubbleDown({ _noautomation = true }, t);
 	return t;
+end
+explorationAch = function(id, t)						-- Create an EXPLORATION ACHIEVEMENT Object
+	t = struct("achievementID", id, t or {});
+	-- #if ANYCLASSIC
+	t.OnClick = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]];
+	t.OnUpdate = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]];
+	-- #else
+	t.sym = {{ "achievement_criteria" }};
+	-- #endif
+	return t;
+end
+
+-- SHORTCUTS for Object Class Types
+achcat = function(id, t)								-- Create an ACHIEVEMENT CATEGORY Object
+	return struct("achievementCategoryID", id, t);
 end
 achievementCategory = achcat;
 artifact = function(id, t)								-- Create an ARTIFACT Object
@@ -540,15 +606,6 @@ battlepet = function(id, t)								-- Create a BATTLE PET Object (Battle Pet == 
 	t = struct("speciesID", id, t);
 	if not t.itemID then t.u = MOP_PHASE_ONE; end
 	return t;
-end
-classicAch = function(id, altID, t)						-- Create an ACHIEVEMENT Object that doesn't have a timeline built into it.
-	if t or type(altID) == "number" then
-		t = struct("allianceAchievementID", id, t or {});
-		t["hordeAchievementID"] = altID;
-		return t;
-	else
-		return struct("achievementID", id, altID);
-	end
 end
 pet = battlepet;										-- Create a BATTLE PET Object (alternative shortcut)
 p = battlepet;											-- Create a BATTLE PET Object (alternative shortcut)
@@ -678,16 +735,6 @@ exploration = function(id, t)							-- Create an EXPLORATION Object
 	if type(t) == "string" then t = { ["maphash"] = t }; end
 	return struct("explorationID", id, t);
 end
-explorationAch = function(id, t)						-- Create an EXPLORATION ACHIEVEMENT Object
-	t = struct("achievementID", id, t or {});
-	-- #if ANYCLASSIC
-	t.OnClick = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]];
-	t.OnUpdate = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]];
-	-- #else
-	t.sym = {{ "achievement_criteria" }};
-	-- #endif
-	return t;
-end
 explorationBatch = function(data)
 	local groups = {};
 	for maphash,explorationID in pairs(data) do
@@ -760,6 +807,25 @@ ig = function(id, t)									-- Create an ITEM Object that ignores bonus IDs.
 	t.ignoreBonus = true;
 	-- #endif
 	return t;
+end
+iupgrade = function(itemID, modID, bonusID, t)			-- Create an ITEM Object which can be Upgraded to another Item version (specified by ModID/BonusID)
+	if (modID or 0) == 0 and (bonusID or 0) == 0 then
+		error("Item Upgrade needs ModID or BonusID!");
+	end
+	local i = i(itemID, t);
+	-- use ModID/BonusID combination to represent the new Item available via Upgrading
+	i.up = (tonumber(modID) or 0) + ((tonumber(bonusID) or 0) / 10000);
+	return i;
+end
+iexact = function(itemID, modID, bonusID, t)			-- Create an exact ITEM Object (specified by ModID/BonusID)
+	local i = i(itemID, t);
+	if modID and modID ~= 0 then
+		i.modID = modID;
+	end
+	if bonusID and bonusID ~= 0 then
+		i.bonusID = bonusID;
+	end
+	return i;
 end
 inst = function(id, t)									-- Create an INSTANCE Object
 	if t then
@@ -1060,6 +1126,130 @@ model = function(displayID, t)
 	return t;
 end
 un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.
+
+do
+-- ItemDBConditional contains a bunch of micro object modifications, but since we're using it everywhere, it is losing the item data due to what is known as "data chomping" with how we are using it.
+local backingTableMeta = {
+	__index = function(t, key)
+		local item = { itemID = key };
+		rawset(t, key, item);
+		return item;
+	end,
+};
+
+-- Crieve NOTE: This is needed because the root gets lost between files.
+local backingTable;
+local function GetBackingTable()
+	if not _.ItemDBConditional or not backingTable then
+		backingTable = setmetatable({}, backingTableMeta);
+		_.ItemDBConditional = backingTable;
+	end
+	return backingTable;
+end
+
+local itemDBConditional = {};
+setmetatable(itemDBConditional, {
+	__index = function(t, key)
+		return GetBackingTable()[key];
+	end,
+	__newindex = function(t, key, value)
+		if value and type(value) == "table" then
+			local item = GetBackingTable()[key];
+			for k,v in pairs(value) do
+				item[k] = v;
+			end
+		end
+	end,
+});
+ItemDBConditional = itemDBConditional;
+
+local CurrentProfessionID, recipeDB = ALCHEMY;
+local ItemRecipeHelper = function(itemID, recipeID, unobtainStatus, requireSkill)
+	-- Cache the object.
+	local object;
+	if itemID == 0 then
+		-- The RecipeDB table isn't setup to always return a value.
+		object = recipeDB[recipeID];
+		if not object then
+			object = {};
+			recipeDB[recipeID] = object;
+		end
+	else
+		-- Cache the object as an item
+		object = itemDBConditional[itemID];
+		
+		-- Update the recipeID.
+		local originalSpellID = object.spellID;
+		local originalRecipeID = object.recipeID;
+		if not originalRecipeID then
+			object.recipeID = recipeID;
+		elseif originalRecipeID ~= recipeID then
+			-- Replace it, but also show a warning.
+			print("Item", itemID, "recipeID changed", originalRecipeID, ">", recipeID);
+			object.recipeID = recipeID;
+		end
+		
+		-- Check for a spellID.
+		if originalSpellID then
+			object.spellID = nil;
+			if not (originalSpellID == originalRecipeID or originalSpellID == recipeID) then
+				print("Item", itemID, "spellID changed", originalSpellID, "> nil");
+			end
+		end
+	end
+	
+	-- Mark it as a recipe.
+	object.f = RECIPES;
+	
+	-- Update the skill requirement.
+	requireSkill = requireSkill or CurrentProfessionID;
+	local originalRequireSkill = object.requireSkill;
+	if not originalRequireSkill then
+		object.requireSkill = requireSkill;
+	elseif originalRequireSkill ~= requireSkill then
+		-- Replace it, but also show a warning.
+		if itemID == 0 then
+			print("Recipe requireSkill changed", originalRequireSkill, ">", requireSkill);
+		else
+			print("Item", itemID, "requireSkill changed", originalRequireSkill, ">", requireSkill);
+		end
+		object.requireSkill = requireSkill;
+	end
+	
+	-- allow for timeline to be a raw 'u' value or single string of 'timeline' or table of multiple 'timeline' values
+	local unobtainType = unobtainStatus and type(unobtainStatus);
+	if unobtainType then
+		if unobtainType == "number" then
+			object.u = unobtainStatus;
+		elseif unobtainType == "string" then
+			object.timeline = { unobtainStatus };
+		elseif unobtainType == "table" then
+			object.timeline = unobtainStatus;
+		end
+	end
+	return object;
+end
+GetRecipeHelperForProfession = function(professionID)
+	recipeDB = root(ROOTS.RecipeDB);	-- NOTE: This value doesn't get persisted yet.
+	CurrentProfessionID = professionID;
+	return ItemRecipeHelper;
+end
+end
+
+--[[
+-- Proof of Concept:
+-- If you assign new partial data to the item, it'll retain its previous data instead of discarding it.
+local disgustingOozeling = ItemDBConditional[20769];
+disgustingOozeling.spellID = 25162;
+disgustingOozeling.speciesID = 114;
+
+ItemDBConditional[20769] = { description = "What a shame it would be to lose this data..." };
+
+print("Disgusting Oozeling contains:");
+for key,value in pairs(ItemDBConditional[20769]) do
+	print(" " .. key .. ": " .. value);
+end
+]]--
 
 -- Create a Header. Returns a UNIQUE ID, starting at 0.
 (function()

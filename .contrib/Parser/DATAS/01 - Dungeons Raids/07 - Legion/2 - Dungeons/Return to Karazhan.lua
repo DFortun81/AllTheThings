@@ -150,6 +150,12 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					114790,	-- Viz'aduum the Watcher
 				},
 			}),
+			n(TREASURES, {
+				i(208048, {	-- Ritual of the Voidmaw Felhunter (CI!)
+					["description"] = "Located by a bookshelf on the second floor of the library in Legion Karazhan, after killing Mana Devourer.",
+					["timeline"] = { ADDED_10_1_5 },
+				}),
+			}),
 			n(VENDORS, {
 				n(114815, {	-- Koren
 					["description"] = "This vendor is located in the Livery Stables.",

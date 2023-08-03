@@ -667,8 +667,10 @@ app.L = {
 	-- About tab
 	["ABOUT_PAGE"] = "About";
 	["ABOUT_1"] = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\nPS: Check out All The Things Classic and TBC Classic!\n\nYes, I intend to play Classic WoW, but between working full time and developing the two versions of the addon, there won't be a lot of time for raiding.\n\nNo, ATT is not the addon that places icons on your bag icons. That's CanIMogIt and Caerdon Wardrobe!\n\nFor online collection comparing check out DataForAzeroth.com from shoogen!|r";
-	["ABOUT_2"] = "Additional Contributors: |CFFFFFFFF(in no particular order)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal, Tag, and the rest of the ALL THE THINGS Discord!\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r  ";
-	["ABOUT_3"] = "\n|CFFFFFFFFYou should absolutely download their addons to get the collection icons on items in your bags!|r";
+	["ABOUT_2"] = "Active Contributors: |CFFFFFFFF(in no particular order)\nGold, Dead Serious, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal, Tag, Jezartroz, AlexSoft, Jenstonedart, and the rest of the ALL THE THINGS Discord!|r";
+	["ABOUT_3"] = "\nHall of Fame: |CFFFFFFFF(in no particular order)\nDaktar, Lucetia, Slumber, Avella, Aiue, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf|r";
+	["ABOUT_4"] = "\n\n|CFFFFFFFFSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r  ",
+	["ABOUT_5"] = "\n|CFFFFFFFFYou should absolutely download their addons to get the collection icons on items in your bags!|r";
 
 	-- Binding Localizations
 	["TOGGLE_ACCOUNT_MODE"] = "Toggle Account Mode";
@@ -768,6 +770,9 @@ app.L = {
 	["UNKNOWN_ON_CHARACTER"] = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Unknown on current character|r";
 	["COST_ICON"] = "|T" .. app.asset("Currency") .. ":0|t";
 	["COST_TEXT"] = "|T" .. app.asset("Currency") .. ":0|t |cffdedade"..CURRENCY.."|r";
+	-- TODO @DeadSerious: NEED GOOD UPGRADE ICON
+	["UPGRADE_ICON"] = "|T" .. app.asset("star") .. ":0|t";
+	["UPGRADE_TEXT"] = "|T" .. app.asset("star") .. ":0|t |cff62e37e"..UPGRADE.."|r";
 	["REAGENT_ICON"] = "|T" .. app.asset("Category_Crafting") .. ":0|t";
 	["REAGENT_TEXT"] = "|T" .. app.asset("Category_Crafting") .. ":0|t |cffdedade"..GetItemClassInfo(5).."|r";
 
@@ -802,29 +807,34 @@ app.L = {
 		["10 Player"] = "10M",
 		["10 Player (Heroic)"] = "10M (H)",
 		["25 Player"] = "25M",
-		["25 Player (Heroic)"] = "25M (H)",
-		["Player vs. Player"] = STAT_CATEGORY_PVP,
-		["Outdoor Zones"] = LFG_TYPE_ZONE,
-		--["Zone Drop"] = LFG_TYPE_ZONE,
-		["Zone Wide"] = LFG_TYPE_ZONE,
-		["Item Sets"] = WARDROBE_SETS,
-		["Pet Journal"] = PETS,
-		--["Pet Battles"] = PETS,
-		["Toy Box"] = TOY,
+		["25 Player (Heroic)"] = "25M (H)",		
 		[BATTLEGROUNDS] = "BGs",
 		[BLACK_MARKET_AUCTION_HOUSE] = "BMAH",
-		["Monthly World Events"] = CALENDAR_REPEAT_MONTHLY,
-		["Weekly World Events"] = CALENDAR_REPEAT_WEEKLY,
-		["Mini World Events"] = GetSpellInfo(57055),
 		["Emissary Quests"] = "Emissary",
+		["Item Sets"] = WARDROBE_SETS,
+		["Outdoor Zones"] = LFG_TYPE_ZONE,
+		["Pet Journal"] = PETS,
+		--["Pet Battles"] = PETS,
+		["Player vs. Player"] = STAT_CATEGORY_PVP,
+		["Toy Box"] = TOY,
+		--["Zone Drop"] = LFG_TYPE_ZONE,
+		["Zone Wide"] = LFG_TYPE_ZONE,
+		["Mini World Events"] = GetSpellInfo(57055),
+		["Monthly World Events"] = CALENDAR_REPEAT_MONTHLY,
 		[TRACKER_HEADER_WORLD_QUESTS] = "WQ",
-		["WoW Anniversary"] = "Anniversary",
+		["Weekly World Events"] = CALENDAR_REPEAT_WEEKLY,
+		
 		["Covenant:"] = "Cov:",
+		[CLASS.." %> "] = "",
+		["Quartermaster Miranda Breechlock"] = "Quartermaster Miranda",
 		["Season "] = "S",
 		["Sanctum Upgrades %> "] = "",
-		[CLASS.." %> "] = "",
+		["The Azure Span"] = "Azure Span",
+		["The Forbidden Reach"] = "Forbidden Reach",
+		["The Waking Shores"] = "Waking Shores",
 		["The Primalist Future"] = "Primalist Future",
 		["The Storm's Fury"] = "Storm's Fury",
+		["WoW Anniversary"] = "Anniversary",
 		["Zaralek Cavern Racing Completionist: Gold"] = "Racing: Gold",
 	};
 
@@ -889,6 +899,7 @@ app.L = {
 		[58] = AUCTION_CATEGORY_CONTAINERS,						-- Containers (Tier Tokens, Timeless Isle BoA gear tokens, Bags of loot, etc)
 		[59] = "Class Books",									-- Class Books (Classic Spells, Ashran Books, etc)
 		[60] = GetSpellInfo(181765),							-- S.E.L.F.I.E. Camera (For various filters)
+		[61] = GetItemClassInfo(3),								-- Gems
 
 		-- "Non-Equipment Types"
 		[100] = MOUNTS,											-- Mounts
@@ -948,6 +959,7 @@ app.L = {
 		[56] = app.asset("Interface_Zone_drop"),								-- Reagents (@DeadSerious maybe a new one sometime?)
 		[57] = 132932,															-- Fishing Poles
 		[59] = "Interface\\Icons\\INV_Misc_Book_03",							-- Class Books
+		[61] = "Interface\\Icons\\inv_misc_gem_ruby_02",						-- Gems
 		[100] = app.asset("Category_Mounts"),									-- Mounts
 		[101] = "Interface\\Icons\\Tracking_WildPet",							-- Battle Pets
 		[102] = app.asset("Category_ToyBox"),									-- Toy Box
@@ -1011,8 +1023,6 @@ app.L = {
 		[-216] = "Interface\\Icons\\ability_rogue_combatreadiness",							-- Prestige
 	-- Fishing
 		[-217] = "Interface\\Icons\\INV_Fishing_Lure_Worm",									-- Lures (for Fishing)
-	-- Class
-		[-219] = "Interface\\Icons\\inv_misc_questionmark",									-- Sourceless
 	-- War Campaign
 		[-236] = "Interface\\Icons\\ui_alliance_7legionmedal",								-- Alliance War Campaign
 	-- PvP
@@ -1147,10 +1157,8 @@ app.L = {
 		[-1130] = "Interface\\Icons\\ui_majorfaction_tuskarr",										-- Iskaara Tuskarr
 		[-1142] = "Interface\\Icons\\inv_checkered_flag",											-- Dragonriding Racing
 		[-1143] = 237274,																			-- Every 30 min Rare
-		[-1144] = "Interface\\Icons\\inv_scroll_11",												-- Weekly Profession Header
 		[-1150] = "Interface\\Icons\\ui_majorfaction_niffen",										-- Loamm Niffen
 		[-1151] = "Interface\\Icons\\achievement_guildperk_bartering",								-- Bartering
-		[-1152] = 4622272,																			-- First Crafts (inv-10-blacksmithing-consumable-repairhammer-color1)
 		[-1200] = "Interface\\Icons\\inv_10_dungeonjewelry_primalist_ring_4_omni",					-- Zskera Vaults
 		[-1202] = "Interface\\Icons\\inv_fyrakk_dragonbreath",										-- Fyrakk Assaults
 		[-1203] = "Interface\\Icons\\inv_pet_mole",													-- Sniffenseeking
@@ -1226,7 +1234,6 @@ app.L = {
 		[-216] = PVP_PRESTIGE_RANK_UP_TITLE,									-- Prestige
 	-- Fishing
 		[-217] = "Lures",														-- Lures (for Fishing)
-	[-219] = "Sourceless",														-- Sourceless
 	-- War Campaign
 		[-236] = C_Map.GetAreaInfo(9663),										-- War Campaign - Alliance
 	-- PvP
@@ -1373,10 +1380,8 @@ app.L = {
 		[-1130] = "Iskaara Tuskarr",												-- Iskaara Tuskarr
 		[-1142] = GetSpellInfo(400433),												-- Dragonriding Racing
 		[-1143] = "DF Rare Rotation",												-- DF Rare Rotation (Every 30 min Rare)
-		[-1144] = "Weekly Profession Knowledge",									-- Weekly Profession Header
 		[-1150] = "Loamm Niffen",													-- Loamm Niffen
 		[-1151] = "Bartering",														-- Bartering
-		[-1152] = "First Crafts",													-- First Crafts
 		[-1200] = "Zskera Vaults",													-- Zskera Vaults
 		[-1202] = "Fyrakk Assaults",												-- Fyrakk Assaults
 		[-1203] = "Sniffenseeking",													-- Sniffenseeking

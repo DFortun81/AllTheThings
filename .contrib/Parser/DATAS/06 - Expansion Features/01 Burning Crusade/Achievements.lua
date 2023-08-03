@@ -1,10 +1,11 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-
-root(ROOTS.ExpansionFeatures, tier(TBC_TIER, bubbleDown({ ["timeline"] = { "added 2.4.3" } }, {
+-- #if AFTER 3.0.1
+-- CRIEVE NOTE: None of the achievements in this file could be completed during TBC Classic.
+root(ROOTS.ExpansionFeatures, tier(TBC_TIER, {
 	n(ACHIEVEMENTS, {
-		ach(1312, {	-- Bloody Rare
+		ach(1312, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Bloody Rare
 			crit(4504, {	-- Ambassador Jerrikar (Shadowmoon Valley)
 				["_npcs"] = { 18695 },
 			}),
@@ -65,12 +66,13 @@ root(ROOTS.ExpansionFeatures, tier(TBC_TIER, bubbleDown({ ["timeline"] = { "adde
 			crit(4523, {	-- Vorakem Doomspeaker (Hellfire Peninsula)
 				["_npcs"] = { 18679 },
 			}),
-		}),
+		})),
 		ach(1311, {	-- Medium Rare
 			-- identical criteria as full achievement
 			["sym"] = {{"select","achievementID",1312},{"pop"}},	-- Bloody Rare Criteria
+			["timeline"] = { "added 3.0.1" },
 		}),
-		ach(1206, {	-- To All The Squirrels I've Loved Before
+		ach(1206, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- To All The Squirrels I've Loved Before
 			crit(3741, {	-- Borean Frog (Borean Tundra)
 				["maps"] = { BOREAN_TUNDRA },
 				["crs"] = { 25677 },	-- Borean Frog
@@ -363,6 +365,7 @@ root(ROOTS.ExpansionFeatures, tier(TBC_TIER, bubbleDown({ ["timeline"] = { "adde
 				["crs"] = { 1420 },	-- Toad
 			}),
 			-- #endif
-		}),
+		})),
 	}),
-})));
+}));
+-- #endif

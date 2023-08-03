@@ -15,14 +15,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 		["lvl"] = 58,
 		["groups"] = bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, {
 			n(ACHIEVEMENTS, {
-				classicAch(957, {	-- Hero of the Zandalar Tribe
+				achWithRep(957, 270, {	-- Hero of the Zandalar Tribe
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Zandalar Tribe to Exalted.",
-					-- #endif
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 270); end]],
 					-- #endif
 					["maps"] = { STRANGLETHORN_VALE },
 				}),
@@ -1279,14 +1274,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 				i(19871),	-- Talisman of Protection
 			}),
 			n(11382, {	-- Bloodlord Mandokir
-				classicAch(881, {	-- Swift Razzashi Raptor
+				ach(881, {	-- Swift Razzashi Raptor
 					["provider"] = { "i", 19872 },	-- Swift Razzashi Raptor
-					["timeline"] = { "removed 4.0.3", "blackmarket 6.0.2" },
-					["filterID"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain the Swift Razzashi Raptor from Bloodlord Mandokir in Zul'Gurub.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
+					["timeline"] = { "removed 4.0.3", "blackmarket 6.0.2" },
+					["filterID"] = MOUNTS,
 				}),
 				i(19872, {	-- Swift Razzashi Raptor (MOUNT!)
 					["timeline"] = { "removed 4.0.3", "blackmarket 6.0.2" },
@@ -1427,14 +1421,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 				},
 			}),
 			n(14509, {	-- High Priest Thekal
-				classicAch(880, {	-- Swift Zulian Tiger
+				ach(880, {	-- Swift Zulian Tiger
 					["provider"] = { "i", 19902 },	-- Swift Zulian Tiger
-					["timeline"] = { "removed 4.0.3", "blackmarket 6.0.2" },
-					["filterID"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain the Swift Zulian Tiger from High Priest Thekal in Zul'Gurub.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
+					["timeline"] = { "removed 4.0.3", "blackmarket 6.0.2" },
+					["filterID"] = MOUNTS,
 				}),
 				i(19902, {	-- Swift Zulian Tiger (MOUNT!)
 					["timeline"] = { "removed 4.0.3", "blackmarket 6.0.2" },
@@ -1466,12 +1459,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 					{ "i", 19975, 5 },	-- Zulian Mudskunk
 				},
 				["groups"] = {
-					classicAch(560, {	-- Deadliest Catch
+					ach(560, {	-- Deadliest Catch
 						-- #if BEFORE WRATH
-						["description"] = "Fish up Gahz'ranka in Zul'Gurub using the Mudskunk Lure.\n\nPROTIP: You can get free credit for this achievement on Prepatch if your character has a Mudskunk Lure in its inventory.",
-						["provider"] = { "i", 19974 },	-- Mudskunk Lure
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
+						["description"] = "Fish up Gahz'ranka in Zul'Gurub using the Mudskunk Lure.",
 						-- #endif
+						["timeline"] = { "added 3.0.1" },
 					}),
 					i(19944),	-- Nat Pagle's Fish Terminator
 					i(19946),	-- Tigule's Harpoon
@@ -1507,11 +1499,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 				i(22637),	-- Primal Hakkari Idol
 			}),
 			n(14834, {	-- Hakkar the Soulflayer
-				classicAch(688, {	-- Zul'Gurub
+				ach(688, {	-- Zul'Gurub
 					-- #if BEFORE WRATH
 					["description"] = "Defeat Hakkar and deliver his Heart to the Zandalari.",
 					["sourceQuest"] = 8183,	-- The Heart of Hakkar
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 					-- #endif
 				}),
 				i(19802),	-- Heart of Hakkar

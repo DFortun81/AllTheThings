@@ -143,10 +143,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(562, {	-- Warp Splinter
 					["creatureID"] = 17977,
 					["groups"] = {
-						classicAch(659, {	-- The Botanica
+						ach(659, {	-- The Botanica
 							-- #if BEFORE WRATH
 							["sourceQuest"] = 10704,	-- How to Break Into the Arcatraz
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						i(28370),	-- Bangle of Endless Blessings
@@ -274,7 +273,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(562, {	-- Warp Splinter
 						["creatureID"] = 17977,
 						["groups"] = {
-							ach(680),	-- Heroic: The Botanica
+							ach(680, {	-- Heroic: The Botanica
+								["timeline"] = { "added 3.0.1" },
+							}),
 							ach(5080, {	-- Heroic: The Botanica Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),

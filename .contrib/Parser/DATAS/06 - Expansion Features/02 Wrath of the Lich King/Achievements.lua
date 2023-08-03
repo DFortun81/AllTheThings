@@ -60,7 +60,7 @@ local INSANE_IN_THE_MEMBRANE_OnUpdate = [[function(t)
 				break;
 			end
 		end
-		t.SetAchievementCollected(t.achievementID, collected);
+		t:SetAchievementCollected(t.achievementID, collected);
 	end
 end]];
 local INSANE_IN_THE_MEMBRANE_OnTooltip = [[function(t)
@@ -151,7 +151,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "ad
 			},
 		}),
 		-- #if NOT ANYCLASSIC
-		applyclassicphase(PHASE_THREE, classicAch(2336, {	-- Insane in the Membrane
+		applyclassicphase(PHASE_THREE, ach(2336, {	-- Insane in the Membrane
 			-- #if ANYCLASSIC
 			["OnInit"] = INSANE_IN_THE_MEMBRANE_OnInit,
 			["OnTooltip"] = INSANE_IN_THE_MEMBRANE_OnTooltip,

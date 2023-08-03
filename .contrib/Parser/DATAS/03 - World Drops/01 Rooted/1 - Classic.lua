@@ -3408,15 +3408,15 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			-- #if AFTER 8.0.1.10000
 			i(6454),	-- Manual: Strong Anti-Venom
 			-- #endif
-			i(3832),	-- Recipe: Elixir of Detect Lesser Invisibility
-			i(9297),	-- Recipe: Elixir of Dream Vision
-			i(3830),	-- Recipe: Elixir of Fortitude
-			i(9298),	-- Recipe: Elixir of Giants
-			i(3396),	-- Recipe: Elixir of Lesser Agility
-			i(2553),	-- Recipe: Elixir of Minor Agility
-			i(6211),	-- Recipe: Elixir of Ogre's Strength
+			i(3832),	-- Recipe: Elixir of Detect Lesser Invisibility (RECIPE!)
+			i(9297),	-- Recipe: Elixir of Dream Vision (RECIPE!)
+			i(3830),	-- Recipe: Elixir of Fortitude (RECIPE!)
+			i(9298),	-- Recipe: Elixir of Giants (RECIPE!)
+			i(3396),	-- Recipe: Elixir of Lesser Agility (RECIPE!)
+			i(2553),	-- Recipe: Elixir of Minor Agility (RECIPE!)
+			i(6211),	-- Recipe: Elixir of Ogre's Strength (RECIPE!)
 			-- #if BEFORE TBC
-			i(3394),	-- Recipe: Elixir of Poison Resistance / Recipe: Potion of Curing [TBC+]
+			i(3394),	-- Recipe: Elixir of Poison Resistance / Recipe: Potion of Curing [TBC+] (RECIPE!)
 			-- #endif
 			-- #if BEFORE 3.2.0
 			i(13518),	-- Recipe: Flask of Petrification / Recipe: Potion of Petrification [3.2.0+]
@@ -3425,17 +3425,17 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 				["timeline"] = { "removed 2.0.1" },
 			}),
 			i(13490),	-- Recipe: Greater Stoneshield Potion
-			i(9295),	-- Recipe: Invisibility Potion
-			i(3395),	-- Recipe: Limited Invulnerability Potion
-			i(9293, {	-- Recipe: Magic Resistance Potion
+			i(9295),	-- Recipe: Invisibility Potion (RECIPE!)
+			i(3395),	-- Recipe: Limited Invulnerability Potion (RECIPE!)
+			i(9293, {	-- Recipe: Magic Resistance Potion (RECIPE!)
 				["timeline"] = { "deleted 5.0.4" },
 			}),
-			i(3831),	-- Recipe: Mighty Troll's Blood Potion / Recipe: Major Troll's Blood Elixir [Wrath+]
-			i(3393, {	-- Recipe: Minor Magic Resistance Potion
+			i(3831),	-- Recipe: Mighty Troll's Blood Potion / Recipe: Major Troll's Blood Elixir [Wrath+] (RECIPE!)
+			i(3393, {	-- Recipe: Minor Magic Resistance Potion (RECIPE!)
 				["timeline"] = { "deleted 5.0.4" },
 			}),
 			-- #if AFTER TBC
-			i(3394),	-- Recipe: Potion of Curing [TBC+] / Recipe: Elixir of Poison Resistance
+			i(3394),	-- Recipe: Potion of Curing [TBC+] / Recipe: Elixir of Poison Resistance (RECIPE!)
 			-- #endif
 			-- #if AFTER 3.2.0
 			i(13518),	-- Recipe: Potion of Petrification [3.2.0+] / Recipe: Flask of Petrification
@@ -3443,7 +3443,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(13492, {	-- Recipe: Purification Potion
 				["timeline"] = { "removed 3.0.1" },
 			}),
-			i(2555),	-- Recipe: Swiftness Potion
+			i(2555),	-- Recipe: Swiftness Potion (RECIPE!)
 			i(13489),	-- Recipe: Transmute Earth to Life
 			i(13488),	-- Recipe: Transmute Life to Earth
 			i(13486),	-- Recipe: Transmute Undeath to Water

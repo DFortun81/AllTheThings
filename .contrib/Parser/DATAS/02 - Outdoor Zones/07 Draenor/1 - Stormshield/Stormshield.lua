@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 root(ROOTS.Zones, {
 	m(DRAENOR, {
 		m(STORMSHIELD, {
@@ -365,7 +364,6 @@ root(ROOTS.Zones, {
 						n(93907, {	-- Amelia Clarke <Wild Gladiator>
 							["races"] = ALLIANCE_ONLY,	-- to hide it in Mark of Honor list
 							["coord"] = { 54.8, 17.0, STORMSHIELD },
-							["itemID"] = 137642,	-- Mark of Honor
 							["g"] = {
 								n(WEAPONS, {
 									i(138633, {	-- Arsenal: Wild Gladiator's Weapons (A)
@@ -2311,7 +2309,6 @@ root(ROOTS.Zones, {
 						n(93914, {	-- Holly McTilla <Warmongering Gladiator>
 							["races"] = ALLIANCE_ONLY,	-- to hide it in Mark of Honor list
 							["coord"] = { 54.8, 18.8, STORMSHIELD },
-							["itemID"] = 137642,	-- Mark of Honor
 							["g"] = {
 								i(116776, {	-- Pale Thorngrazer (MOUNT!)
 									["cost"] = {
@@ -2986,7 +2983,6 @@ root(ROOTS.Zones, {
 						}),
 						n(86176, {	-- Ingrid Blackingot <Primal Gladiator>
 							["coord"] = { 55.0, 19.4, STORMSHIELD },
-							["itemID"] = 137642,	-- Mark of Honor
 							["g"] = {
 								n(WEAPONS, {
 									i(138631, {	-- Arsenal: Primal Gladiator's Weapons
@@ -3917,7 +3913,6 @@ root(ROOTS.Zones, {
 						n(93915, {	-- Li "Crunchpaw" Tsang <Warmongering Combatant>
 							["races"] = ALLIANCE_ONLY,
 							["coord"] = { 54.8, 18.8, STORMSHIELD },
-							["itemID"] = 137642,	-- Mark of Honor
 							["g"] = {
 								n(WEAPONS, {
 									i(138628, {	-- Arsenal: Warmongering Combatant's Weapons (A)
@@ -4538,7 +4533,6 @@ root(ROOTS.Zones, {
 						}),
 						n(93906, {	-- Slugg Spinbolt <Wild Combatant>
 							["coord"] = { 54.6, 17.6, STORMSHIELD },
-							["itemID"] = 137642,	-- Mark of Honor
 							["g"] = {
 								n(WEAPONS, {
 									i(138630, {	-- Arsenal: Wild Combatant's Weapons (A)

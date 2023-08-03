@@ -9,7 +9,7 @@ root(ROOTS.Zones, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				classicAch(1262, {	-- Loremaster of Outland (A)
+				ach(1262, {	-- Loremaster of Outland (A)
 					-- #if BEFORE WRATH
 					["description"] = "Complete the Outland quest achievements listed below.",
 					["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
@@ -35,7 +35,7 @@ root(ROOTS.Zones, {
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
 				}),
-				classicAch(1274, {	-- Loremaster of Outland (H)
+				ach(1274, {	-- Loremaster of Outland (H)
 					-- #if BEFORE WRATH
 					["description"] = "Complete the Outland quest achievements listed below.",
 					["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],

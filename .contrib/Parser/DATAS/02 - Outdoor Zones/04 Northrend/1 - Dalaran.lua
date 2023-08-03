@@ -4174,16 +4174,11 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					ach(1010, {	-- Northrend Vanguard
+					achWithReps(1010, { 1106, 1090, 1098, 1091 }, {	-- Northrend Vanguard
 						["maps"] = {
 							DRAGONBLIGHT,
 							ICECROWN,
 						},
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnUpdate(t, 1106, 1090, 1098, 1091); end]],
-						-- #endif
 					}),
 					ach(1782, {	-- Our Daily Bread (A)
 						["requireSkill"] = COOKING,
@@ -4295,13 +4290,7 @@ root(ROOTS.Zones, {
 							i(44430),		-- Titanium Seal of Dalaran (TOY!)
 						},
 					}),
-					ach(1008, {	-- The Kirin Tor
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1090); end]],
-						-- #endif
-					}),
+					achWithRep(1008, 1090),	-- The Kirin Tor
 					ach(1957, {	-- There's Gold In That There Fountain
 						["sym"] = {{ "achievement_criteria" }},
 						["requireSkill"] = FISHING,
@@ -4681,7 +4670,9 @@ root(ROOTS.Zones, {
 							12791,	-- The Magical Kingdom of Dalaran (Horde only - Grizzly Hills, Dragonblight, Borean Tundra, Howling Fjord)
 							12794,	-- The Magical Kingdom of Dalaran (Alliance only - Grizzly Hills, Dragonblight, Borean Tundra, Howling Fjord)
 							12796,	-- The Magical Kingdom of Dalaran (Zul'Drak)
+							-- #if AFTER 6.2.0.19953
 							39210,	-- The Magical Kingdom of Dalaran (Adventure Guide)
+							-- #endif
 						},
 						["coord"] = { 56.3, 46.7, NORTHREND_DALARAN },
 						["maps"] = { CRYSTALSONG_FOREST },
@@ -5713,28 +5704,28 @@ root(ROOTS.Zones, {
 							i(44587, {	-- Pattern: Icy Scale Chestguard (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44526, {	-- Pattern: Overcast Belt
+							i(44526, {	-- Pattern: Overcast Belt (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44528, {	-- Pattern: Overcast Boots
+							i(44528, {	-- Pattern: Overcast Boots (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44524, {	-- Pattern: Overcast Bracers
+							i(44524, {	-- Pattern: Overcast Bracers (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44523, {	-- Pattern: Overcast Chestguard
+							i(44523, {	-- Pattern: Overcast Chestguard (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44525, {	-- Pattern: Overcast Handwraps
+							i(44525, {	-- Pattern: Overcast Handwraps (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44521, {	-- Pattern: Overcast Headguard
+							i(44521, {	-- Pattern: Overcast Headguard (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44527, {	-- Pattern: Overcast Leggings
+							i(44527, {	-- Pattern: Overcast Leggings (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
-							i(44522, {	-- Pattern: Overcast Spaulders
+							i(44522, {	-- Pattern: Overcast Spaulders (RECIPE!)
 								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
 							}),
 							i(44586, {	-- Pattern: Polar Boots (RECIPE!)
@@ -6160,11 +6151,11 @@ root(ROOTS.Zones, {
 								["isLimited"] = true,
 							}),
 							i(44714, {	-- Tome of Dalaran Brilliance (CI!)
-								["timeline"] = { REMOVED_7_0_3 },
+								["timeline"] = { ADDED_3_0_3, REMOVED_7_0_3 },
 								["isLimited"] = true,
 							}),
 							i(44602, {	-- Tome of Dalaran Intellect (CI!)
-								["timeline"] = { REMOVED_7_0_3 },
+								["timeline"] = { ADDED_3_0_3, REMOVED_7_0_3 },
 								["isLimited"] = true,
 							}),
 							i(44709, {	-- Tome of Polymorph: Black Cat (CI!)

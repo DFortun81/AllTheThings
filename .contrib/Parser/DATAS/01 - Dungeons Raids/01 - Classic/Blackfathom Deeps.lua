@@ -579,7 +579,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				["timeline"] = { "removed 6.0.1.18322" },
 				-- #if BEFORE 6.0.1.18322
 				["groups"] = {
-					ach(632),	-- Blackfathom Deeps
+					ach(632, {	-- Blackfathom Deeps
+						["timeline"] = { "added 3.0.1" },
+					}),
 					ach(5041, {	-- Blackfathom Deeps Guild Run
 						["timeline"] = { "added 4.0.3", "removed 6.0.1.18322" },
 					}),

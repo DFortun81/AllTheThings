@@ -129,7 +129,6 @@ root(ROOTS.Zones, {
 					["lvl"] = 110,
 					["provider"] = { "o", 258980 },	-- Cursed Tome
 					["coord"] = { 37.6, 59.3, DRAENOR_SHADOWMOON_VALLEY },
-					["icon"] = "Interface\\Icons\\inv_misc_book_06",
 					["g"] = {
 						crit(3, {	-- Cursed Tome
 							["achievementID"] = 11240,	-- Harbinger
@@ -242,9 +241,9 @@ root(ROOTS.Zones, {
 							["filterID"] = MISC,
 							["g"] = {
 								recipe(171391),	-- Burnished Leather
-								i(116319),	-- Pattern: Journeying Helm
-								i(116320),	-- Pattern: Journeying Robes
-								i(116321),	-- Pattern: Journeying Slacks
+								i(116319),	-- Pattern: Journeying Helm (RECIPE!)
+								i(116320),	-- Pattern: Journeying Robes (RECIPE!)
+								i(116321),	-- Pattern: Journeying Slacks (RECIPE!)
 								i(120130),	-- Recipe: Secrets of Draenor Leatherworking
 								i(116322),	-- Pattern: Traveling Helm
 								i(116324),	-- Pattern: Traveling Leggings

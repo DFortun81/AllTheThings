@@ -1,13 +1,9 @@
 -- Used by the Harvester (Parser)
+local Items = ItemDBConditional;
 function Harvest(things)
-	local itemDB = root(ROOTS.ItemDBConditional);
 	local thing;
 	for i,j in pairs(things) do
-		thing = itemDB[i];
-		if not thing then
-			thing = {};
-			itemDB[i] = thing;
-		end
+		thing = Items[i];
 		if j.mods then
 			if not thing.mods then thing.mods = {} end
 			for modID,sourceID in pairs(j.mods) do

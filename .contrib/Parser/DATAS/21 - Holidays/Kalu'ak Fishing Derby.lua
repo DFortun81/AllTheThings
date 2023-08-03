@@ -35,7 +35,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALUAK_FISHING_DERBY, n(KALUAK_FISHING_DE
 	["groups"] = {
 		-- #if BEFORE 5.1.0
 		n(ACHIEVEMENTS, {
-			classicAch(306, {	-- Master Angler of Azeroth
+			ach(306, {	-- Master Angler of Azeroth
 				["requireSkill"] = FISHING,
 			}),
 		}),

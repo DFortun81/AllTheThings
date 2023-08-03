@@ -1100,7 +1100,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["coord"] = { 79.5, 69.8, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_9_2_0 }
+				["timeline"] = { ADDED_9_2_0 },
 			}),
 			q(65424, {	-- Whatever You Sayaad (H)
 				["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
@@ -1108,125 +1108,167 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["coord"] = { 74.6, 47.4, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_9_2_0 }
+				["timeline"] = { ADDED_9_2_0 },
+			}),
+			q(76427, {	-- A Dark Summons (H)
+				["provider"] = { "i", 208227 },	-- Mysterious Letter
+				["races"] = HORDE_ONLY,
+				["classes"] = { WARLOCK },
+				["timeline"] = { ADDED_10_1_5 },
+				["isBreadcrumb"] = true,	-- need to confirm
 			}),
 			q(76430, {	-- Beingning Impositions (H)
-				["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
 				["provider"] = { "n", 207051 },	-- Assistant Phineas
 				-- ["coord"] = { X, Y, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["classes"] = { WARLOCK },
 				["timeline"] = { ADDED_10_1_5 }
 			}),
-			q(75539, {	-- Some Wicked Things This Way Come
-				["sourceQuests"] = { 76430 },	-- Beingning Impositions (H)
-				["provider"] = { "n", 203968 },	-- Madam Shadow
-				-- ["coord"] = { X, Y, 407 },
+			q(76410, {	-- A Dark Summons (A)
+				["provider"] = { "i", 208226 },	-- Mysterious Letter
+				["races"] = ALLIANCE_ONLY,
 				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_10_1_5 }
+				["timeline"] = { ADDED_10_1_5 },
+				["isBreadcrumb"] = true,	-- need to confirm
+			}),
+			q(75538, {	-- Beginning Impositions (A)
+				["sourceQuests"] = { 76410 },	-- A Dark Summons (?)
+				["provider"] = { "n", 204198 },	-- Assistant Phineas
+				["coord"] = { 43.6, 79.3, STORMWIND_CITY },
+				["races"] = ALLIANCE_ONLY,
+				["classes"] = { WARLOCK },
+				["timeline"] = { ADDED_10_1_5 },
+			}),			
+			q(75539, {	-- Some Wicked Things This Way Come
+				["sourceQuests"] = {
+					75538,	-- Beginning Impositions (A)
+					76430,	-- Beingning Impositions (H)
+					},
+				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 203968 },	-- Madam Shadow
+				-- ["coord"] = { X, Y, DARKMOON_ISLAND },
+				["classes"] = { WARLOCK },
+				["timeline"] = { ADDED_10_1_5 },
 			}),
 			q(75540, {	-- Hermetic Insurance
 				["sourceQuests"] = { 75539 },	-- Some Wicked Things This Way Come
 				["provider"] = { "n", 203968 },	-- Madam Shadow
-				-- ["coord"] = { X, Y, 407 },
+				-- ["coord"] = { X, Y, DARKMOON_ISLAND },
 				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_10_1_5 }
+				["timeline"] = { ADDED_10_1_5 },
 			}),
 			q(75541, {	-- Those Who Hesitate
 				["sourceQuests"] = { 75540 },	-- Hermetic Insurance
 				["provider"] = { "n", 203968 },	-- Madam Shadow
-				-- ["coord"] = { X, Y, 407 },
+				-- ["coord"] = { X, Y, DARKMOON_ISLAND },
 				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_10_1_5 }
+				["timeline"] = { ADDED_10_1_5 },
 			}),
 			q(76155, {	-- A Wolf Among Sheep
 				["sourceQuests"] = { 75541 },	-- Those Who Hesitate
 				["provider"] = { "n", 205276 },	-- Initiate Oman
-				-- ["coord"] = { X, Y, 407 },
+				-- ["coord"] = { X, Y, DARKMOON_ISLAND },
 				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_10_1_5 }
+				["timeline"] = { ADDED_10_1_5 },
+				["g"] = {
+					spell(412234),	-- Madam Shadow's Soulstone
+					--i(206160),	-- Madam Shadow's Grimoire / wowhead list item but I didn't get it during quest
+				},
 			}),
 			q(75542, {	-- Curses & Cultists
 				["sourceQuests"] = { 76155 },	-- A Wolf Among Sheep
 				["provider"] = { "n", 203968 },	-- Madam Shadow
-				-- ["coord"] = { X, Y, 407 },
+				-- ["coord"] = { X, Y, DARKMOON_ISLAND },
 				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_10_1_5 }
+				["timeline"] = { ADDED_10_1_5 },
 			}),
 			q(75639, {	-- Fel Suspicions
 				["sourceQuests"] = { 75542 },	-- Curses & Cultists
 				["provider"] = { "n", 205433 },	-- Initiate Oman
-				-- ["coord"] = { X, Y, 407 },
+				-- ["coord"] = { X, Y, DARKMOON_ISLAND },
 				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_10_1_5 }
+				["timeline"] = { ADDED_10_1_5 },
 			}),
 			q(75543, {	-- Last Rites By Accident
 				["sourceQuests"] = { 75639 },	-- Fel Suspicions
 				["provider"] = { "o", 402609 },	-- Demonic Gateway
-				["coord"] = { 59.5, 62.4, 407 },
+				["coord"] = { 59.5, 62.4, DARKMOON_ISLAND },
 				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_10_1_5 }
+				["timeline"] = { ADDED_10_1_5 },
 			}),
 			q(75544, {	-- When Revenge Burns Green
 				["sourceQuests"] = { 75543 },	-- Last Rites By Accident
 				["provider"] = { "n", 205575 },	-- Initiate Oman
 				["coord"] = { 8.4, 36.0, BURNING_STEPPES },
 				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_10_1_5 }
+				["timeline"] = { ADDED_10_1_5 },
+				["g"] = {
+					spell(417884),	-- Fiendish Imps
+				},
+			}),
+			q(76163, {	-- A Lighter Shade of Fel
+				["sourceQuests"] = { 75544 },	-- When Revenge Burns Green
+				["provider"] = { "i", 206681 },	-- Letter from Oman
+				["classes"] = { WARLOCK },
+				["description"] = "You get this quest in your mailbox next weekly reset after finishing 'When Revenge Burns Green'",
+				["timeline"] = { ADDED_10_1_5 },
+				["g"] = {
+					i(207101),	-- Glyph of Banehollow's Soulstone
+				},
 			}),
 		}),
 		n(ARMOR, {
 			i(1396, {	-- Acolyte's Pants
 				--["races"] = { HUMAN, DWARF, GNOME, UNDEAD, BLOODELF },
-				["timeline"] = { REMOVED_9_1_5 }
+				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(52679, {	-- Acolyte's Pants
 				--["races"] = { ORC, TROLL },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 },
 			}),
 			i(57, {	-- Acolyte's Robe
 				--["races"] = { HUMAN, DWARF, GNOME },
-				["timeline"] = { REMOVED_9_1_5 }
+				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(52543, {	-- Acolyte's Robe
 				--["races"] = { ORC, TROLL },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 },
 			}),
 			i(6129, {	-- Acolyte's Robe
 				--["races"] = { UNDEAD },
-				["timeline"] = { REMOVED_9_1_5 }
+				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(20892, {	-- Acolyte's Robe
 				--["races"] = { BLOODELF },
-				["timeline"] = { "added 2.0.1.6180", REMOVED_9_1_5 }
+				["timeline"] = { "added 2.0.1.6180", REMOVED_9_1_5 },
 			}),
 			i(59, {	-- Acolyte's Shoes
 				--["races"] = { HUMAN, DWARF, GNOME, UNDEAD, BLOODELF },
-				["timeline"] = { REMOVED_9_1_5 }
+				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(49407, {	-- Gilnean Acolyte's Boots
 				--["races"] = { WORGEN },
-				["timeline"] = { "added 4.0.3.13287" }
+				["timeline"] = { "added 4.0.3.13287" },
 			}),
 			i(49409, {	-- Gilnean Acolyte's Pants
 				--["races"] = { WORGEN },
-				["timeline"] = { "added 4.0.3.13287" }
+				["timeline"] = { "added 4.0.3.13287" },
 			}),
 			i(49408, {	-- Gilnean Acolyte's Robe
 				--["races"] = { WORGEN },
-				["timeline"] = { "added 4.0.3.13287" }
+				["timeline"] = { "added 4.0.3.13287" },
 			}),
 			i(49521, {	-- Goblin Acolyte's Pants
 				--["races"] = { GOBLIN },
-				["timeline"] = { "added 4.0.3.13287" }
+				["timeline"] = { "added 4.0.3.13287" },
 			}),
 			i(49520, {	-- Goblin Acolyte's Robe
 				--["races"] = { GOBLIN },
-				["timeline"] = { "added 4.0.3.13287" }
+				["timeline"] = { "added 4.0.3.13287" },
 			}),
 			i(49522, {	-- Goblin Acolyte's Shoes
 				--["races"] = { GOBLIN },
-				["timeline"] = { "added 4.0.3.13287" }
+				["timeline"] = { "added 4.0.3.13287" },
 			}),
 			i(187753, {	-- Warlock's Mitts
 				--["races"] = { HUMAN, DWARF, GNOME, ORC, UNDEAD, TROLL, BLOODELF },
@@ -1255,7 +1297,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 		n(WEAPONS, {
 			i(20978, {	-- Apprentice's Staff
-				["timeline"] = { "added 3.0.1.8714" }
+				["timeline"] = { "added 3.0.1.8714" },
 			}),
 			i(35),		-- Bent Staff
 		}),
@@ -1273,95 +1315,95 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		n(ARMOR, {
 			i(140, {	-- Brawler's Boots
 				--["races"] = { ORC, TROLL, TAUREN },
-				["timeline"] = { REMOVED_9_1_5 }
+				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(139, {	-- Brawler's Pants
 				--["races"] = { ORC, TROLL, TAUREN },
-				["timeline"] = { REMOVED_9_1_5 }
+				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(58245, {	-- Brawler's Vest
 				--["races"] = { ORC, TROLL, TAUREN },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 },
 			}),
 			i(49577, {	-- Gilnean Recruit's Belt
 				--["races"] = { WORGEN },
-				["timeline"] = { "added 4.0.3.13287" }
+				["timeline"] = { "added 4.0.3.13287" },
 			}),
 			i(49579, {	-- Gilnean Recruit's Boots
 				--["races"] = { WORGEN },
-				["timeline"] = { "added 4.0.3.13287" }
+				["timeline"] = { "added 4.0.3.13287" },
 			}),
 			i(49576, {	-- Gilnean Recruit's Pants
 				--["races"] = { WORGEN },
-				["timeline"] = { "added 4.0.3.13287" }
+				["timeline"] = { "added 4.0.3.13287" },
 			}),
 			i(49578, {	-- Gilnean Recruit's Tunic
 				--["races"] = { WORGEN },
-				["timeline"] = { "added 4.0.3.13287" }
+				["timeline"] = { "added 4.0.3.13287" },
 			}),
 			i(49527, {	-- Goblin Brawler's Boots
 				--["races"] = { GOBLIN },
-				["timeline"] = { "added 4.0.3.13287" }
+				["timeline"] = { "added 4.0.3.13287" },
 			}),
 			i(49529, {	-- Goblin Brawler's Gauntlets
 				--["races"] = { GOBLIN },
-				["timeline"] = { "added 4.0.3.13287" }
+				["timeline"] = { "added 4.0.3.13287" },
 			}),
 			i(49528, {	-- Goblin Brawler's Greaves
 				--["races"] = { GOBLIN },
-				["timeline"] = { "added 4.0.3.13287" }
+				["timeline"] = { "added 4.0.3.13287" },
 			}),
 			i(49524, {	-- Goblin Brawler's Harness
 				--["races"] = { GOBLIN },
-				["timeline"] = { "added 4.0.3.13287" }
+				["timeline"] = { "added 4.0.3.13287" },
 			}),
 			i(40, {	-- Recruit's Boots
 				--["races"] = { HUMAN, DWARF, GNOME, UNDEAD },
-				["timeline"] = { REMOVED_9_1_5 }
+				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(6122, {	-- Recruit's Boots
 				--["races"] = { NIGHTELF },
-				["timeline"] = { REMOVED_9_1_5 }
+				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(23475, {	-- Recruit's Boots
 				--["races"] = { DRAENEI },
-				["timeline"] = { "added 2.0.1.6180", REMOVED_9_1_5 }
+				["timeline"] = { "added 2.0.1.6180", REMOVED_9_1_5 },
 			}),
 			i(20903, {	-- Recruit's Boots
 				--["races"] = { BLOODELF },
-				["timeline"] = { "added 4.0.1.12941", REMOVED_9_1_5 }
+				["timeline"] = { "added 4.0.1.12941", REMOVED_9_1_5 },
 			}),
 			i(39, {	-- Recruit's Pants
 				--["races"] = { HUMAN, DWARF, GNOME, UNDEAD },
-				["timeline"] = { REMOVED_9_1_5 }
+				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(6121, {	-- Recruit's Pants
 				--["races"] = { NIGHTELF },
-				["timeline"] = { REMOVED_9_1_5 }
+				["timeline"] = { REMOVED_9_1_5 },
 			}),
 			i(23474, {	-- Recruit's Pants
 				--["races"] = { DRAENEI },
-				["timeline"] = { "added 2.0.1.6180", REMOVED_9_1_5 }
+				["timeline"] = { "added 2.0.1.6180", REMOVED_9_1_5 },
 			}),
 			i(20902, {	-- Recruit's Pants
 				--["races"] = { BLOODELF },
-				["timeline"] = { "added 4.0.1.12941", REMOVED_9_1_5 }
+				["timeline"] = { "added 4.0.1.12941", REMOVED_9_1_5 },
 			}),
 			i(20904, {	-- Recruit's Tunic
 				--["races"] = { BLOODELF },
-				["timeline"] = { "added 4.0.1.12941", REMOVED_9_1_5 }
+				["timeline"] = { "added 4.0.1.12941", REMOVED_9_1_5 },
 			}),
 			i(58231, {	-- Recruit's Vest
 				--["races"] = { HUMAN, DWARF, GNOME, UNDEAD },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 },
 			}),
 			i(58244, {	-- Recruit's Vest
 				--["races"] = { NIGHTELF },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 },
 			}),
 			i(58243, {	-- Recruit's Vest
 				--["races"] = { DRAENEI },
-				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
+				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 },
 			}),
 			i(187748, {	-- Warrior's Chestplate
 				--["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
@@ -1390,10 +1432,10 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 		n(WEAPONS, {
 			i(12282, {	-- Worn Battleaxe
-				["timeline"] = { REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
+				["timeline"] = { REMOVED_9_0_1 },	-- TODO: I am not sure when this got removed.
 			}),
 			i(49778, {	-- Worn Greatsword
-				["timeline"] = { "added 2.0.1.6180", REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
+				["timeline"] = { "added 2.0.1.6180", REMOVED_9_0_1 },	-- TODO: I am not sure when this got removed.
 			}),
 			i(25),	-- Worn Shortsword
 			i(2362),	-- Worn Wooden Shield
@@ -1501,10 +1543,10 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	}),
 	n(WEAPONS, {	-- These were used and changed so many times on different classes, that I leave them here.
 		i(23346, {	-- Battleworn Claymore
-			["timeline"] = { "added 2.0.1.6180", REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
+			["timeline"] = { "added 2.0.1.6180", REMOVED_9_0_1 },	-- TODO: I am not sure when this got removed.
 		}),
 		i(2361, {	-- Battleworn Hammer
-			["timeline"] = { REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
+			["timeline"] = { REMOVED_9_0_1 },	-- TODO: I am not sure when this got removed.
 		}),
 		i(37, {	-- Worn Axe
 			["description"] = "Former Starter Weapon for Orc, Troll & Worgen Rogues as well as Dwarf, Orc, Tauren & Troll Hunters.",
@@ -1514,15 +1556,20 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		--	["classes"] = { HUNTER },
 		--	["races"] = { GOBLIN, HUMAN, UNDEAD, WORGEN },
 			["description"] = "Former Starter Weapon for Goblin, Human, Undead & Worgen Hunters.",
-			["timeline"] = { "added 4.0.3", "removed 5.0.4" }
+			["timeline"] = { "added 4.0.3", "removed 5.0.4" },
 		}),
 	}),
 }));
 
-root(ROOTS.Character, n(NEW_CHARACTER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
+root(ROOTS.HiddenQuestTriggers, n(NEW_CHARACTER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
 	cl(EVOKER, {
 		q(74891),	-- Triggeres on the first use of 'Soar' spell after 10.0.7 to get the 'Aerial Halt' spell (spellID 403092)
 	}),
+})));
+
+root(ROOTS.HiddenQuestTriggers, n(NEW_CHARACTER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+	q(76444),	-- After completion of quest 75544 (When Revenge Burns Green)
+	q(77285),	-- After completion of quest 75544 (When Revenge Burns Green)
 })));
 
 root(ROOTS.NeverImplemented, {

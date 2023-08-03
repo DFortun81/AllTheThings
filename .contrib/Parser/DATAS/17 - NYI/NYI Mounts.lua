@@ -609,9 +609,6 @@ root(ROOTS.NeverImplemented, {
 				i(190767, {	-- Armored Golden Pterrordax (MOUNT!)
 					["modelID"] = 105477,
 				}),
-				mount(367875, {	-- Armored Siege Kodo (MOUNT!)
-					-- ["modelID"] =
-				}),
 				mount(369480, {	-- Cerulean Marsh Hopper
 					["modelID"] = 105766,
 				}),
@@ -637,6 +634,15 @@ root(ROOTS.NeverImplemented, {
 				i(205208, {	-- Shalewing, Stone (MOUNT!)
 					-- ["modelID"] =
 				}),
+			})),
+
+			-- 10.1.5
+			tier(DF_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
+				mount(417554),	-- Cliffside Wylderdrake
+				mount(413409),	-- Highland Drake
+				mount(417548),	-- Renewed Proto-Drake
+				mount(417552),	-- Windborne Velocidrake
+				mount(417556),	-- Winding Slitherdrake
 			})),
 		}),
 	}),

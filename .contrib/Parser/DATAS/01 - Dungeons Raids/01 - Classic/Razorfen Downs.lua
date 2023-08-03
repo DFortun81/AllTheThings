@@ -375,13 +375,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			n(7358, {	-- Amnennar the Coldbringer
 				["timeline"] = { "removed 6.0.2" },
 				["groups"] = {
-					classicAch(636, {	-- Razorfen Downs
+					ach(636, {	-- Razorfen Downs
 						-- #if BEFORE WRATH
 						["sourceQuests"] = {
 							3636,	-- Bring the Light
 							3341,	-- Bring the End
 						},
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5045, {	-- Razorfen Downs Guild Run

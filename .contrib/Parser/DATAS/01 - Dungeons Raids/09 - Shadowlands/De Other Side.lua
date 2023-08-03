@@ -106,6 +106,9 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 						i(182736),	-- Rolling Agony
 						-- Items
 						i(182178),	-- Raptor Soul (SS!)
+						i(186998, {	-- Pallid Oracle Bones (RECIPE!)
+							["timeline"] = { ADDED_9_1_0 },
+						}),
 						i(179355),	-- Death God's Signet
 						i(179353),	-- Harness of Twisted Whims
 						i(179351),	-- Mueh'zala's Hexthread Sarong

@@ -4,11 +4,6 @@
 
 root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 	achcat(ACHIEVEMENT_CATEGORY_MOUNTS_FOS, {
-		un(REMOVED_FROM_GAME, ach(4832)),	-- Friends In Even Higher Places
-		un(REMOVED_FROM_GAME, ach(1436)),	-- Friends In High Places
-		un(REMOVED_FROM_GAME, ach(8794)),	-- Friends In Places Even Higher Than That
-		un(REMOVED_FROM_GAME, ach(8213)),	-- Friends In Places Higher Yet
-		un(REMOVED_FROM_GAME, ach(9925)),	-- Friends In Places Yet Even Higher Than That
 		ach(879, {	-- Old School Ride
 			["providers"] = {
 				{ "i", 13328 },	-- Black Ram

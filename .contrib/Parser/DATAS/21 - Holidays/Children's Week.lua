@@ -131,14 +131,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 					1790,				-- Hail To The King, Baby
 				},
 			},
+			["timeline"] = { "added 3.0.1" },
 			["groups"] = {
 				title_gendered(105, 104),	-- Patron / Matron
 				--title(104),	-- Matron %s
 				--title(105),	-- Patron %s
 			},
 		}),
-		ach(1792),	-- Aw, Isn't It Cute?
-		ach(1788, {	-- Bad Example
+		ach(1792, {	-- Aw, Isn't It Cute?
+			["timeline"] = { "added 3.0.1" },
+		}),
+		ach(1788, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Bad Example
 			crit(6656, {	-- Dalaran Brownie
 				["provider"] = { "i", 42431 },	-- Dalaran Brownie
 				["maps"] = {
@@ -223,16 +226,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 					86,	-- Orgrimmar
 				},
 			}),
+		})),
+		ach(1789, {	-- Daily Chores
+			["timeline"] = { "added 3.0.1" },
 		}),
-		ach(1789),	-- Daily Chores
 		ach(1790, {	-- Hail To The King, Baby
+			["timeline"] = { "added 3.0.1" },
 			["maps"] = {
 				136,	-- Lower Pinnacle, Utgarde Pinnacle
 				137,	-- Upper Pinnacle, Utgarde Pinnacle
 			},
 		}),
-		ach(1791),	-- Home Alone
-		ach(1786, {	-- School of Hard Knocks
+		ach(1791, {	-- Home Alone
+			["timeline"] = { "added 3.0.1" },
+		}),
+		ach(1786, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- School of Hard Knocks
 			crit(6643, {	-- Assault a flag in Arathi Basin
 				["maps"] = {
 					ARATHI_BASIN,
@@ -259,8 +267,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 					1339,	-- Warsong Gulch
 				},
 			}),
-		}),
-		ach(275, {	-- Veteran Nanny
+		})),
+		ach(275, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Veteran Nanny
 			["maps"] = { SHATTRATH_CITY },
 			["groups"] = {
 				-- #if NOT ANYCLASSIC
@@ -285,7 +293,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				}),
 				-- #endif
 			},
-		}),
+		})),
 	}),
 	-- #endif
 	n(QUESTS, {

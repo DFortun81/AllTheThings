@@ -8,6 +8,7 @@ WHELP_DAYCARE = createHeader({
 	icon = "Interface\\Icons\\inv_dragonwhelpoutland2_cutepink",
 	text = {
 		en = "Little Scales Daycare",
+		ru = "Драконьи ясли",
 	},
 });
 
@@ -16,6 +17,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		n(WHELP_DAYCARE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 			n(ACHIEVEMENTS, {
 				ach(17782, {	-- Daycare Derby
+					i(197961),	-- Whelps on Strings (TOY!)
 					crit(1, {	-- Runaway Rusziona
 						["sourceQuests"] = { 74488 },	-- Runaway Rusziona
 					}),
@@ -348,7 +350,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 199259 },	-- Lasztak
 					["coord"] = { 13.3, 57.5, VALDRAKKEN },
 					["g"] = {
-						i(190329),	-- Awakened Frost
+					-- Removed Frost since it duplicates into 50+ things that require Awakened Frost
+					--	i(190329),	-- Awakened Frost
 						i(202332),	-- Blue Dragon Bedtime Story
 						i(202330),	-- Fine-Pointed Quill
 					},
@@ -359,8 +362,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						73003,	-- The Azure Hatchling
 						73004,	-- A Scholar's Delight
 					},
-					["provider"] = { "n", 199259 },	-- Lasztak
-					["coord"] = { 13.3, 57.5, VALDRAKKEN },
+					["provider"] = { "n", 182082 },	-- Agapanthus
+					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 					["g"] = {
 						i(202404),	-- Bite-Sized Ley Crystal
 					},
@@ -419,11 +422,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						73010,	-- The Emerald Hatchling
 						73011,	--  Home Sweet Dirt
 					},
-					["provider"] = { "n", 199259 },	-- Lasztak
-					["coord"] = { 13.3, 57.5, VALDRAKKEN },
-					["g"] = {
-						i(191461),	-- Hochenblume
-					},
+					["provider"] = { "n", 182082 },	-- Agapanthus
+					["coord"] = { 13.3, 57.2, VALDRAKKEN },
+					-- ["g"] = {
+					-- 	i(191461),	-- Hochenblume
+					-- },
 				}),
 				q(73013, {	-- So... Tired....
 					["sourceQuests"] = { 73012 },	-- Hochenblume Harvest
@@ -470,8 +473,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(73126, {	-- Arts and Crafts and Baths
 					["sourceQuests"] = { 72459 },	-- What's a Duck?
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 11.4, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 182082 },	-- Agapanthus
+					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 				}),
 				q(73120, {	-- Appetizing Aftermath
 					["sourceQuests"] = { 72459 },	-- What's a Duck?
@@ -488,8 +491,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(73133, {	--  Cozy Camouflage
 					["sourceQuests"] = { 73014 },	-- A Green Who Can't Sleep?
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 11.4, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 199987 },	-- Posidriss
+					["coord"] = { 16.6, 54.8, VALDRAKKEN },
 				}),
 				q(73131, {	--  Dignified Disguises
 					["sourceQuests"] = { 72993 },	-- I'm the Boss!
@@ -498,8 +501,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(73134, {	--  Eternal Escapades
 					["sourceQuests"] = { 73000 },	-- Sneezing Through Time
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 11.4, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 199986 },	-- Zhusadormu
+					["coord"] = { 14.0, 54.7, VALDRAKKEN },
 				}),
 				q(73130, {	-- Fowl Runic Scribblings
 					["sourceQuests"] = { 72459 },	-- What's a Duck?
@@ -510,6 +513,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 72459 },	-- What's a Duck?
 					["provider"] = { "n", 182082 },	-- Agapanthus
 					["coord"] = { 13.3, 57.2, VALDRAKKEN },
+					["g"] = {
+						i(202690),	-- Decorative Shrubbery
+						i(202400),	-- Soothing Incense
+						i(202399),	-- Stuffed Doll
+					},
 				}),
 				q(73135, {	-- Obsidian Obfuscation
 					["sourceQuests"] = { 72459 },	-- What's a Duck?
@@ -539,8 +547,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(73132, {	-- Scanning the Stacks
 					["sourceQuests"] = { 73007 },	-- New Lenses
-					-- TODO: ["provider"] = { "n",  },	--
-					-- TODO: ["coord"] = { 11.4, 57.2, VALDRAKKEN },
+					["provider"] = { "n", 199985 },	-- Zalethgos
+					["coord"] = { 9.7, 56.6, VALDRAKKEN },
 				}),
 				q(74490, {	-- Zaleth on the Go
 					["sourceQuests"] = { 73007 },	-- New Lenses
@@ -552,6 +560,48 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(74489, {	-- Zhoomsa
 					["sourceQuests"] = { 73000 },	-- Sneezing Through Time
+					["provider"] = { "n", 201443 },	-- Celetiros
+					["coord"] = { 13.9, 59.2, VALDRAKKEN },
+					["g"] = {
+						i(203684),	-- Silver Timepiece
+					},
+				}),
+			})),
+			n(QUESTS, sharedData({ ["isRepeatable"] = true }, {
+				q(77430, {	-- Practice Makes Perfect: Belastrasza
+					["sourceQuests"] = { 74492 },	-- Blistering Belastrasza
+					["provider"] = { "n", 201443 },	-- Celetiros
+					["coord"] = { 13.9, 59.2, VALDRAKKEN },
+					["g"] = {
+						i(203684),	-- Silver Timepiece
+					},
+				}),
+				q(77429, {	-- Practice Makes Perfect: Posidriss
+					["sourceQuests"] = { 74491 },	-- Pole Position Posidriss
+					["provider"] = { "n", 201443 },	-- Celetiros
+					["coord"] = { 13.9, 59.2, VALDRAKKEN },
+					["g"] = {
+						i(203684),	-- Silver Timepiece
+					},
+				}),
+				q(77426, {	-- Practice Makes Perfect: Rusziona
+					["sourceQuests"] = { 74488 },	-- Runaway Rusziona
+					["provider"] = { "n", 201443 },	-- Celetiros
+					["coord"] = { 13.9, 59.2, VALDRAKKEN },
+					["g"] = {
+						i(203684),	-- Silver Timepiece
+					},
+				}),
+				q(77428, {	-- Practice Makes Perfect: Zalethgos
+					["sourceQuests"] = { 74490 },	-- Zaleth on the Go
+					["provider"] = { "n", 201443 },	-- Celetiros
+					["coord"] = { 13.9, 59.2, VALDRAKKEN },
+					["g"] = {
+						i(203684),	-- Silver Timepiece
+					},
+				}),
+				q(77427, {	-- Practice Makes Perfect: Zhusadormu
+					["sourceQuests"] = { 74489 },	-- Zhoomsa
 					["provider"] = { "n", 201443 },	-- Celetiros
 					["coord"] = { 13.9, 59.2, VALDRAKKEN },
 					["g"] = {

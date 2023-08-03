@@ -45,8 +45,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(70125, {	-- Where is Wrathion? [A]
 					["sourceQuests"] = {
 						70122,	-- Explorers in Peril [A]
-						-- 70124,	-- Practice Materials [A]
-						-- 70123,	-- Primal Pests [A]
 					},
 					["provider"] = { "n", 187251 },	-- Toddy Whiskers
 					["coord"] = { 76.6, 33.6, THE_WAKING_SHORES },
@@ -55,8 +53,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(69910, {	-- Where is Wrathion? [H]
 					["sourceQuests"] = {
 						65452,	-- Explorers in Peril [H]
-						-- 65451,	-- Practice Materials [H]
-						-- 65453,	-- Primal Pests [H]
 					},
 					["provider"] = { "n", 184870 },	-- Naleidea Rivergleam
 					["coord"] = { 76.6, 33.6, THE_WAKING_SHORES },
@@ -71,7 +67,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 76.6, 33.7, THE_WAKING_SHORES },
 				}),
 				q(69912, {	-- My First Real Emergency!
-					["sourceQuests"] = { 69911 },	-- Excuse the Mess
+					["sourceQuests"] = {
+						69911,	-- Excuse the Mess
+						70123,	-- Primal Pests [A]
+						65453,	-- Primal Pests [H]
+						70124,	-- Practice Materials [A]
+						65451,	-- Practice Materials [H]
+					},
 					["provider"] = { "n", 193362 },	-- Sendrax
 					["coord"] = { 76.6, 33.7, THE_WAKING_SHORES },
 				}),
@@ -817,9 +819,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			header(HEADERS.AchCriteria, 16401.06, {	-- The Shadow of His Wings
 				q(65690, {	-- A Cultist's Misgivings
 					["sourceQuests"] = {
-						66079,	-- Wrathion Awaits
-						70125,	-- Where is Wrathion? (A)
-						69910,	-- Where is Wrathion? (H)
+						65444,	-- To the Dragon Isles! (H)
+						67700,  -- To the Dragon Isles! (A)
 						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -833,9 +834,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(65687, {	-- Punching Up
 					["sourceQuests"] = {
-						66079,	-- Wrathion Awaits
-						70125,	-- Where is Wrathion? (A)
-						69910,	-- Where is Wrathion? (H)
+						65444,	-- To the Dragon Isles! (H)
+						67700,  -- To the Dragon Isles! (A)
 						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -892,7 +892,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			header(HEADERS.AchCriteria, 16406.02, {	-- Duroz & Kolgar
 				q(70239, {	-- Untold Regrets
-					["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+					["sourceQuests"] = {
+						66114,	-- For the Benefit of the Queen
+						DF_ACCOUNT_CAMPAIGN_QUEST,
+					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 194801 },	-- Kolgar Flameguard
 					["coord"] = { 58.7, 67.8, THE_WAKING_SHORES },
 				}),
@@ -1150,8 +1154,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			------ Evoker Quests ------
 			q(70446, {	-- A Personal History
-				["provider"] = { "n", 192795 },	-- Scalecommander Emberthal
-				["coord"] = { 44.7, 64.1, THE_WAKING_SHORES },
+				["provider"] = { "n", 193456 },	-- Archivist Edress
+				["coord"] = { 25.0, 56.2, THE_WAKING_SHORES },
 				["classes"] = { EVOKER },
 				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 			}),
@@ -1419,6 +1423,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { AD
 		q(70773),	-- triggers when 'Tale of the Slumbering' completes (spellID 388147)
 		q(70778),	-- triggers when 'Tale of the Weakling' becomes available for Tarjin the Blind
 		q(70777),	-- triggers when 'Tale of the Weakling' completes (spellID 388149)
+		q(72804),	-- Flag Weekly Tracking Quest [DNT] (spellID 397184) [triggers when 'Tale of the Phoenix' completes]
 		q(70218),	-- Dialogue before you can pick up the quest "A Dragon's Day Off"
 
 		-- TODO: how do we sort these types of things going forward? Also, is Skytop an actual quest or should this be a NYI/Never Implemented?

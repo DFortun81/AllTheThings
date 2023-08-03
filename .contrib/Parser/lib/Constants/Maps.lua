@@ -326,6 +326,7 @@ SHADOWMOON_VALLEY = 104;
 
 -- Cataclysm
 MOUNT_HYJAL = 198;
+DARKMOON_ISLAND = 407;
 DEEPHOLM = 207;
 
 -- Wrath of the Lich King

@@ -2593,7 +2593,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["isRaid"] = true,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(5476, applyclassicphase(CATA_PHASE_ONE, {	-- Fish or Cut Bait: Stormwind
+				applyclassicphase(CATA_PHASE_ONE, ach(5476, {	-- Fish or Cut Bait: Stormwind
 					["timeline"] = { "added 4.2.0" },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
@@ -2615,7 +2615,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				})),
-				ach(5474, applyclassicphase(CATA_PHASE_ONE, {	-- Let's Do Lunch: Stormwind
+				applyclassicphase(CATA_PHASE_ONE, ach(5474, {	-- Let's Do Lunch: Stormwind
 					["timeline"] = { "added 4.2.0" },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
@@ -2973,7 +2973,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.6, STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -3272,7 +3272,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 60120,	-- Burning Crusade: To Outland!
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 				}),
@@ -3280,7 +3280,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -3306,7 +3306,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 				}),
@@ -4045,7 +4045,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(32665, {	-- Learn To Ride
 					["description"] = "This quest is automatically granted to Pandaren upon reaching the specified level.",
-					["timeline"] = { "added 5.2.0" },
+					["timeline"] = { "added 5.2.0", REMOVED_10_1_5 },
 					["races"] = { PANDAREN_ALLIANCE },
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
@@ -4062,7 +4062,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 				}),
@@ -4286,7 +4286,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(60965, {	-- Mists of Pandaria: Onward to Adventure in Pandaria
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -4294,7 +4294,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(60125, {	-- Mists of Pandaria: To Pandaria!
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["timeline"] = { "added 7.3.5" },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -5539,7 +5539,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 				}),
@@ -5598,7 +5598,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 60096,	-- Wrath of the Lich King: To Northrend!
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 				}),
@@ -5606,7 +5606,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
 					["timeline"] = { "added 7.3.5" },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -7543,7 +7543,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(9301, {	-- Recipe: Elixir of Shadow Power
+						i(9301, {	-- Recipe: Elixir of Shadow Power (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

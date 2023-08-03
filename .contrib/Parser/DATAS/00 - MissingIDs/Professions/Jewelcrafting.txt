@@ -134,11 +134,6 @@ r(382978),	-- Cataclysm Prospecting
 r(382979),	-- Northrend Prospecting
 r(382980),	-- Outland Prospecting
 r(382995),	-- Classic Prospecting
-10.1.5.49516
-r(412557),	-- TEST CRUSHING (DNT)
-r(413743),	-- Gem of the Nerubians
-r(413751),	-- Frostwyrm's Icy Gaze
-r(413752),	-- Frostwyrm's Frigid Stare
 
 
 

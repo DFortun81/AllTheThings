@@ -798,7 +798,9 @@ root(ROOTS.Zones, {
 						["qg"] = 26875,	-- Lieutenant Dumont
 						["sourceQuests"] = {
 							12511,	-- The Hills Have Us
+							-- #if AFTER 6.2.0.19953
 							39207,	-- Hero's Call: Grizzly Hills!
+							-- #endif
 						},
 						["coord"] = { 31.8, 60.1, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
@@ -1218,7 +1220,9 @@ root(ROOTS.Zones, {
 						["qg"] = 26860,	-- Conqueror Krenna
 						["sourceQuests"] = {
 							12487,	-- To Conquest Hold, But Be Careful!
+							-- #if AFTER 6.2.0.19953
 							39206,	-- Warchief's Command: Grizzly Hills!
+							-- #endif
 						},
 						["coord"] = { 20.7, 64.1, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,

@@ -446,7 +446,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(569, {	-- Warchief Kargath Bladefist
 					["creatureID"] = 16808,
 					["groups"] = {
-						classicAch(657, {	-- The Shattered Halls
+						ach(657, {	-- The Shattered Halls
 							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								10884,	-- Trial of the Naaru: Mercy
@@ -455,7 +455,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								9525,	-- Imprisoned in the Citadel
 								9495,	-- The Will of the Warchief
 							},
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						i(27533),	-- Demonblood Eviscerator
@@ -579,14 +578,13 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(569, {	-- Warchief Kargath Bladefist
 						["creatureID"] = 16808,
 						["groups"] = {
-							classicAch(678, {	-- Heroic: The Shattered Halls
+							ach(678, {	-- Heroic: The Shattered Halls
 								-- #if BEFORE WRATH
 								["sourceQuests"] = {
 									10884,	-- Trial of the Naaru: Mercy
 									9524,	-- Imprisoned in the Citadel
 									9525,	-- Imprisoned in the Citadel
 								},
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
 							}),
 							ach(5078, {	-- Heroic: The Shattered Halls Guild Run

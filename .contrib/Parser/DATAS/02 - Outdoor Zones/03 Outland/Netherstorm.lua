@@ -16,7 +16,7 @@ root(ROOTS.Zones, {
 						["description"] = "Explore Netherstorm, revealing the covered areas of the world map.",
 						-- #endif
 					}),
-					classicAch(1194, {	-- Into the Nether
+					ach(1194, {	-- Into the Nether
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
 						["sourceQuests"] = {

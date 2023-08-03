@@ -547,16 +547,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["coord"] = { 49.3, 58.6, 1912 },
 					["g"] = {
 						i(187785, {	-- Tome of the Eternal (RECIPE!)
-							recipe(359700, {	-- Vestige of the Eternal
+							r(359700, {	-- Vestige of the Eternal (RECIPE!)
 								["requireSkill"] = BLACKSMITHING,
 							}),
-							recipe(359701, {	-- Vestige of the Eternal
+							r(359701, {	-- Vestige of the Eternal (RECIPE!)
 								["requireSkill"] = JEWELCRAFTING,
 							}),
-							recipe(359702, {	-- Vestige of the Eternal
+							r(359702, {	-- Vestige of the Eternal (RECIPE!)
 								["requireSkill"] = LEATHERWORKING,
 							}),
-							recipe(359703, {	-- Vestige of the Eternal
+							r(359703, {	-- Vestige of the Eternal (RECIPE!)
 								["requireSkill"] = TAILORING,
 							}),
 						}),

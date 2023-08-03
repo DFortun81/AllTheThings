@@ -300,42 +300,42 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					}),
 					i(189174),	-- Lens of Focused Intention
 					i(187750, {	-- Recipe: Crafter's Mark IV (RECIPE!)
-						recipe(359666, {	-- Crafter's Mark IV
+						r(359666, {	-- Crafter's Mark IV (RECIPE!)
 							["requireSkill"] = ALCHEMY,
 						}),
-						recipe(359665, {	-- Crafter's Mark IV
+						r(359665, {	-- Crafter's Mark IV (RECIPE!)
 							["requireSkill"] = BLACKSMITHING,
 						}),
-						recipe(359664, {	-- Crafter's Mark IV
+						r(359664, {	-- Crafter's Mark IV (RECIPE!)
 							["requireSkill"] = ENGINEERING,
 						}),
-						recipe(359663, {	-- Crafter's Mark IV
+						r(359663, {	-- Crafter's Mark IV (RECIPE!)
 							["requireSkill"] = JEWELCRAFTING,
 						}),
-						recipe(359662, {	-- Crafter's Mark IV
+						r(359662, {	-- Crafter's Mark IV (RECIPE!)
 							["requireSkill"] = LEATHERWORKING,
 						}),
-						recipe(359661, {	-- Crafter's Mark IV
+						r(359661, {	-- Crafter's Mark IV (RECIPE!)
 							["requireSkill"] = TAILORING,
 						}),
 					}),
 					i(187749, {	-- Recipe: Crafter's Mark of the First Ones (RECIPE!)
-						recipe(359673, {	-- Crafter's Mark of the First Ones
+						r(359673, {	-- Crafter's Mark of the First Ones (RECIPE!)
 							["requireSkill"] = ALCHEMY,
 						}),
-						recipe(359671, {	-- Crafter's Mark of the First Ones
+						r(359671, {	-- Crafter's Mark of the First Ones (RECIPE!)
 							["requireSkill"] = BLACKSMITHING,
 						}),
-						recipe(359674, {	-- Crafter's Mark of the First Ones
+						r(359674, {	-- Crafter's Mark of the First Ones (RECIPE!)
 							["requireSkill"] = ENGINEERING,
 						}),
-						recipe(359672, {	-- Crafter's Mark of the First Ones
+						r(359672, {	-- Crafter's Mark of the First Ones (RECIPE!)
 							["requireSkill"] = JEWELCRAFTING,
 						}),
-						recipe(359669, {	-- Crafter's Mark of the First Ones
+						r(359669, {	-- Crafter's Mark of the First Ones (RECIPE!)
 							["requireSkill"] = LEATHERWORKING,
 						}),
-						recipe(359670, {	-- Crafter's Mark of the First Ones
+						r(359670, {	-- Crafter's Mark of the First Ones (RECIPE!)
 							["requireSkill"] = TAILORING,
 						}),
 					}),

@@ -1,39 +1,4 @@
-local Items = root(ROOTS.ItemDBConditional);
-local Recipes = root(ROOTS.RecipeDB);
-local ProfessionID = TAILORING;
-local i = function(itemID, recipeID, unobtainStatus, requireSkill)
-	if Items[itemID] then
-		print("Duplicate Recipe Item Defined!",itemID,recipeID);
-	elseif itemID == 0 then
-		local recipe = { ["requireSkill"] = requireSkill or ProfessionID, ["f"] = RECIPES };
-		-- allow for timeline to be a raw 'u' value or single string of 'timeline' or table of multiple 'timeline' values
-		local unobtainType = unobtainStatus and type(unobtainStatus);
-		if unobtainType then
-			if unobtainType == "number" then
-				recipe.u = unobtainStatus;
-			elseif unobtainType == "string" then
-				recipe.timeline = { unobtainStatus };
-			elseif unobtainType == "table" then
-				recipe.timeline = unobtainStatus;
-			end
-		end
-		Recipes[recipeID] = recipe;
-	else
-		local item = { ["recipeID"] = recipeID, ["requireSkill"] = requireSkill or ProfessionID, ["f"] = RECIPES };
-		-- allow for timeline to be a raw 'u' value or single string of 'timeline' or table of multiple 'timeline' values
-		local unobtainType = unobtainStatus and type(unobtainStatus);
-		if unobtainType then
-			if unobtainType == "number" then
-				item.u = unobtainStatus;
-			elseif unobtainType == "string" then
-				item.timeline = { unobtainStatus };
-			elseif unobtainType == "table" then
-				item.timeline = unobtainStatus;
-			end
-		end
-		Items[itemID] = item;
-	end
-end
+local i = GetRecipeHelperForProfession(TAILORING);
 
 ------------------
 -- PATCH 10.0.0 --
@@ -180,10 +145,14 @@ i(205142, 408305);	-- Enormous Ball of Yarn
 i(206547, 413747);	-- Bindings of the Harvested Soul
 i(206771, 414564);	-- Cursed Cloth
 i(206395, 413490);	-- Glacial Chapeau
+i(206393, 28208);	-- Glacial Cloak
 i(206396, 413491);	-- Glacial Epaulets
 i(206402, 413495);	-- Glacial Footwear
+i(206399, 28205);	-- Glacial Gloves
 i(206401, 413494);	-- Glacial Leggings
 i(206400, 413492);	-- Glacial Tether
+i(206397, 28207);	-- Glacial Vest
+i(206398, 28209);	-- Glacial Wrists
 i(206554, 413754);	-- Necrotic Gown
 i(206583, 413903);	-- Peculiar Glacial Mantle
 i(206563, 413788);	-- Shroud of Forbidden Magic

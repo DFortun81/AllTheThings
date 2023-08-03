@@ -473,51 +473,41 @@ root(ROOTS.Craftables, tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDow
 		}),
 		category(106, {	-- Tarot Cards
 			sp(111830, {	-- Darkmoon Card of Mists
-				i(79299, {["filterID"] = CONSUMABLES}),    -- Ace of Crane
-				i(79300, {["filterID"] = CONSUMABLES}),    -- 2 of Crane
-				i(79301, {["filterID"] = CONSUMABLES}),    -- 3 of Crane
-				i(79302, {["filterID"] = CONSUMABLES}),    -- 4 of Crane
-				i(79303, {["filterID"] = CONSUMABLES}),    -- 5 of Crane
-				i(79304, {["filterID"] = CONSUMABLES}),    -- 6 of Crane
-				i(79305, {["filterID"] = CONSUMABLES}),    -- 7 of Crane
-				i(79306, {["filterID"] = CONSUMABLES}),    -- 8 of Crane
-				i(79325, {	-- Crane Deck
-					i(79330),	-- Relic of Chi-Ji
-				}),
-				i(79291, {["filterID"] = CONSUMABLES}),    -- Ace of Oxen
-				i(79292, {["filterID"] = CONSUMABLES}),    -- 2 of Oxen
-				i(79293, {["filterID"] = CONSUMABLES}),    -- 3 of Oxen
-				i(79294, {["filterID"] = CONSUMABLES}),    -- 4 of Oxen
-				i(79295, {["filterID"] = CONSUMABLES}),    -- 5 of Oxen
-				i(79296, {["filterID"] = CONSUMABLES}),    -- 6 of Oxen
-				i(79297, {["filterID"] = CONSUMABLES}),    -- 7 of Oxen
-				i(79298, {["filterID"] = CONSUMABLES}),    -- 8 of Oxen
-				i(79324, {	-- Ox Deck
-					i(79329),	-- Relic of Niuzao
-				}),
-				i(79307, {["filterID"] = CONSUMABLES}),    -- Ace of Serpent
-				i(79308, {["filterID"] = CONSUMABLES}),    -- 2 of Serpent
-				i(79309, {["filterID"] = CONSUMABLES}),    -- 3 of Serpent
-				i(79310, {["filterID"] = CONSUMABLES}),    -- 4 of Serpent
-				i(79311, {["filterID"] = CONSUMABLES}),    -- 5 of Serpent
-				i(79312, {["filterID"] = CONSUMABLES}),    -- 6 of Serpent
-				i(79313, {["filterID"] = CONSUMABLES}),    -- 7 of Serpent
-				i(79314, {["filterID"] = CONSUMABLES}),    -- 8 of Serpent
-				i(79326, {	-- Serpent Deck
-					i(79331),	-- Relic of Yu'lon
-				}),
-				i(79283, {["filterID"] = CONSUMABLES}),    -- Ace of Tigers
-				i(79284, {["filterID"] = CONSUMABLES}),    -- 2 of Tigers
-				i(79285, {["filterID"] = CONSUMABLES}),    -- 3 of Tigers
-				i(79286, {["filterID"] = CONSUMABLES}),    -- 4 of Tigers
-				i(79287, {["filterID"] = CONSUMABLES}),    -- 5 of Tigers
-				i(79288, {["filterID"] = CONSUMABLES}),    -- 6 of Tigers
-				i(79289, {["filterID"] = CONSUMABLES}),    -- 7 of Tigers
-				i(79290, {["filterID"] = CONSUMABLES}),    -- 8 of Tigers
-				i(79323, {	-- Tiger Deck
-					i(79327),	-- Relic of Xuen
-					i(79328),	-- Relic of Xuen
-				}),
+				i(79299),    -- Ace of Crane
+				i(79300),    -- Two of Cranes
+				i(79301),    -- Three of Cranes
+				i(79302),    -- Four of Cranes
+				i(79303),    -- Five of Cranes
+				i(79304),    -- Six of Cranes
+				i(79305),    -- Seven of Cranes
+				i(79306),    -- Eight of Cranes
+				
+				i(79291),    -- Ace of Oxen
+				i(79292),    -- Two of Oxen
+				i(79293),    -- Three of Oxen
+				i(79294),    -- Four of Oxen
+				i(79295),    -- Five of Oxen
+				i(79296),    -- Six of Oxen
+				i(79297),    -- Seven of Oxen
+				i(79298),    -- Eight of Oxen
+				
+				i(79307),    -- Ace of Serpents
+				i(79308),    -- Two of Serpents
+				i(79309),    -- Three of Serpents
+				i(79310),    -- Four of Serpents
+				i(79311),    -- Five of Serpents
+				i(79312),    -- Six of Serpents
+				i(79313),    -- Seven of Serpents
+				i(79314),    -- Eight of Serpents
+				
+				i(79283),    -- Ace of Tigers
+				i(79284),    -- Two of Tigers
+				i(79285),    -- Three of Tigers
+				i(79286),    -- Four of Tigers
+				i(79287),    -- Five of Tigers
+				i(79288),    -- Six of Tigers
+				i(79289),    -- Seven of Tigers
+				i(79290),    -- Eight of Tigers
 			}),
 		}),
 		filter(BATTLE_PETS, {

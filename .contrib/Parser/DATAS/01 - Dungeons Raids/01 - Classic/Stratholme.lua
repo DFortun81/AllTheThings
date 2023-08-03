@@ -12,7 +12,7 @@ MAIN_GATE = createHeader({
 		-- #endif
 	},
 	description = {
-		en = [[Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Live\" or \"Scarlet\" side, which the Scarlet Crusade has taken over.]],
+		en = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Live\" or \"Scarlet\" side, which the Scarlet Crusade has taken over.",
 	},
 });
 SERVICE_ENTRANCE = createHeader({
@@ -26,7 +26,7 @@ SERVICE_ENTRANCE = createHeader({
 		-- #endif
 	},
 	description = {
-		en = [[Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Dead\" or \"Scourge\" side, which the Scourge has taken over.]],
+		en = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Dead\" or \"Scourge\" side, which the Scourge has taken over.",
 	},
 });
 root(ROOTS.Instances, tier(CLASSIC_TIER, {
@@ -42,10 +42,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				classicAch(646, {	-- Stratholme
+				ach(646, {	-- Stratholme
 					-- #if BEFORE WRATH
 					["sourceQuest"] = 5263,	-- Above and Beyond
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 					-- #endif
 					["groups"] = {
 						crit(1, {	-- Balnazzar
@@ -480,31 +479,33 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					},
 				}),
 			}),
-			-- #if AFTER 10.1.5
-			n(TREASURES, {
-			--	o( , {	-- Undelivered Shipment of Smokes
+			n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+				o(403533, {	-- Undelivered Shipment of Smokes
 					["description"] = "Located in live Stratholme, near Ezra Grimm's tobacco place (enter the instance, take a left and another left). By a cart next to where Ezra Grimm spawns.",
+					["sourceQuests"] = { 76250 },	-- Spectral Essence
 					["groups"] = {
 						i(206360),	-- Undelivered Shipment of Smokes
 					},
-			-- }),
-			}),
-			-- #endif
+				}),
+			})),
 			n(ZONE_DROPS, {
 				applyclassicphase(PHASE_SIX, i(22526)),	-- Bone Fragments
-				i(12843, {	-- Corruptor's Scourgestone
+				i(12843, {	-- Corruptor's Scourgestone / Inert Corruptor's Scourgestone
 					-- #if BEFORE 4.0.3
 					["description"] = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 				}),
-				i(12841, {	-- Invader's Scourgestone
+				i(12841, {	-- Invader's Scourgestone / Inert Invader's Scourgestone
 					-- #if BEFORE 4.0.3
 					["description"] = "Can drop from any Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 				}),
-				i(12840, {	-- Minion's Scourgestone
+				i(206374, {	-- Invader's Scourgestone
+					["timeline"] = { ADDED_10_1_5 },
+				}),
+				i(12840, {	-- Minion's Scourgestone / Inert Minion's Scourgestone
 					-- #if BEFORE 4.0.3
 					["description"] = "Can drop from weak Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 					-- #endif
@@ -526,6 +527,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				}),
 				i(142337, {	-- Plans: Blight (RECIPE!)
 					["timeline"] = { "added 7.1.5.23360" },
+				}),
+				i(206377, {	-- Ward of Naxxramas
+					["crs"] = { 10411 },	-- Eye of Naxxramas
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 				i(18743),	-- Gracious Cape
 				i(17061),	-- Juno's Shadow
@@ -868,8 +873,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							16101,	-- Jarien
 							16102,	-- Sothos
 						},
+						-- #if BEFORE 10.1.5
 						["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits. Unfortunately, after the modifications made to the instance with 4.0.3, these drops become truly unobtainable even with the brazier.",
-						["timeline"] = { "removed 4.0.3" },
+						-- #else
+						["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
+						-- #endif
+						["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
 						["cost"] = {
 							{ "i", 22051, 1 },	-- Brazier of Beckoning [Jarien & Sothos]
 							{ "i", 22057, 1 },	-- Brazier of Invocation
@@ -884,19 +893,19 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 								["provider"] = { "i", 22046 },	-- Right Piece of Lord Valthalak's Amulet
 							}),
 							i(22329, {	-- Scepter of Interminable Focus
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
 							}),
 							i(22327, {	-- Amulet of the Redeemed
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
 							}),
 							i(22301, {	-- Ironweave Robe
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { "removed 4.0.1", ADDED_10_1_5 },
 							}),
 							i(22328, {	-- Legplates of Vigilance
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
 							}),
 							i(22334, {	-- Band of Mending
-								["timeline"] = { "removed 4.0.3" },
+								["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
 							}),
 						},
 					})),
@@ -1074,13 +1083,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						-- #endif
 						["groups"] = {
 							i(13251),	-- Head of Baron Rivendare
-							classicAch(729, {	-- Deathcharger's Reins
+							ach(729, {	-- Deathcharger's Reins
 								["provider"] = { "i", 13335 },	-- Rivendare's Deathcharger (MOUNT!)
-								["f"] = MOUNTS,
 								-- #if BEFORE WRATH
 								["description"] = "Obtain the Deathcharger's Reins from Baron Rivendare in Stratholme.",
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 								-- #endif
+								["f"] = MOUNTS,
 							}),
 							i(13335),	-- Rivendare's Deathcharger (MOUNT!)
 							i(13505),	-- Runeblade of Baron Rivendare

@@ -370,6 +370,73 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 			}),
 		},
 	}),
+	n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 }, }, {
+		-- TODO: All quests are most likely monthly, and will reset with the next Trial of Style holiday.
+		q(76308, {	-- The Trial of Style
+			["providers"] = {
+				{ "n", 206252 },	-- Primo
+				{ "n", 206383 },	-- Don'a
+			},
+			["coords"] = {
+				{ 51.0, 72.5, STORMWIND_CITY },
+				{ 49.0, 76.4, ORGRIMMAR },
+			},
+			["isBreadcrumb"] = true,	-- Blizzard messed up there, this should've been the second quest and not breadcrumb.
+		}),
+		q(76361, {	-- Fashion Week
+			["provider"] = { "n", 199261 },	-- Holiday Enthusiast
+			["coord"] = { 31.5, 63.1, VALDRAKKEN },
+			["sourceQuest"] = 76308,	-- Blizzard messed up there, this should've been the first quest and breadcrumb.
+		}),
+		q(76214, {	-- Work It
+			["provider"] = { "n", 205914 },	-- Cataloger Alexia
+			["coord"] = { 54.3, 59.9, VALDRAKKEN },
+		}),
+		q(76271, {	-- Work It
+			["provider"] = { "n", 206188 },	-- Cataloger Ro
+			["coord"] = { 14.3, 49.6, THE_AZURE_SPAN },
+		}),
+		q(76272, {	-- Work It
+			["provider"] = { "n", 206192 },	-- Cataloger Silverstream
+			["coord"] = { 47.7, 83.9, THE_WAKING_SHORES },
+		}),
+		q(76273, {	-- Work It
+			["provider"] = { "n", 206193 },	-- Cataloger Sweetbreeze
+			["coord"] = { 59.8, 37.9, OHNAHRAN_PLAINS },
+		}),
+		q(76274, {	-- Work It
+			["provider"] = { "n", 206196 },	-- Cataloger Sprocketspark
+			["coord"] = { 36.3, 57.6, THE_FORBIDDEN_REACH },
+		}),
+		q(76275, {	-- Work It
+			["provider"] = { "n", 206198 },	-- Cataloger Fairshot
+			["coord"] = { 56.8, 58.2, ZARALEK_CAVERN },
+		}),
+		q(76278, {	-- Work It
+			["provider"] = { "n", 206200 },	-- Cataloger Wilson
+			["coord"] = { 72.2, 56.0, THALDRASZUS },
+		}),
+		q(76284, {	-- Work It
+			["provider"] = { "n", 206201 },	-- Cataloger Ryler
+			["coord"] = { 57.5, 15.3, THE_AZURE_SPAN },
+		}),
+		q(76285, {	-- Work It
+			["provider"] = { "n", 206202 },	-- Cataloger Berulean
+			["coord"] = { 58.0, 68.5, THE_WAKING_SHORES },
+		}),
+		q(76286, {	-- Work It
+			["provider"] = { "n", 206204 },	-- Cataloger Grazewell
+			["coord"] = { 29.6, 55.8, OHNAHRAN_PLAINS },
+		}),
+		q(76287, {	-- Work It
+			["provider"] = { "n", 206205 },	-- Cataloger Sparkyboom
+			["coord"] = { 63.4, 51.3, THE_FORBIDDEN_REACH },
+		}),
+		q(76288, {	-- Work It
+			["provider"] = { "n", 206206 },	-- Cataloger Sandia
+			["coord"] = { 50.7, 24.9, ZARALEK_CAVERN },
+		}),
+	})),
 }))));
 
 root(ROOTS.HiddenQuestTriggers, {

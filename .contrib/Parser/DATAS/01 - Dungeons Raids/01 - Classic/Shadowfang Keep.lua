@@ -2001,10 +2001,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
 						-- #if BEFORE 4.0.3
-						classicAch(631, {	-- Shadowfang Keep
+						ach(631, {	-- Shadowfang Keep
 							-- #if BEFORE WRATH
 							["sourceQuest"] = 1014,	-- Arugal Must Die
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							["races"] = HORDE_ONLY,
 							-- #endif
 						}),

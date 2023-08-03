@@ -37,8 +37,8 @@ root(ROOTS.NeverImplemented, {
 				i(12616),	-- Savage Boots
 				i(12617),	-- Savage Pauldrons
 				i(21584),	-- Bracers of Eternal Reckoning
-				i(21588),	-- Wristguards of Elemental Fury
 				i(21612),	-- Wormscale Stompers
+				i(21588),	-- Wristguards of Elemental Fury
 			}),
 			filter(PLATE, {
 				--
@@ -47,12 +47,16 @@ root(ROOTS.NeverImplemented, {
 				i(21587),	-- Wristguards of Castigation
 			}),
 			filter(NECK_F, {
-				i(5005),	-- Emberspark Pendant
-				i(13811),	-- Necklace of the Dawn
-				i(23058),	-- Life Channeling Necklace
-				--
-				i(7550),	-- Warrior's Honor
 				i(18023),	-- Blood Ruby Pendant
+				i(7427),	-- Cerulean Talisman
+				i(5005),	-- Emberspark Pendant
+				i(23058),	-- Life Channeling Necklace
+				i(13811),	-- Necklace of the Dawn
+				i(7548),	-- Onyx Choker
+				i(17783),	-- Talisman of Binding Fragment
+				i(7467),	-- Vermilion Necklace
+				i(7550),	-- Warrior's Honor
+				i(19122),	-- Woven Ivy Necklace DEPRECATED
 			}),
 			filter(FINGER_F, {
 				i(13812),	-- Ring of the Dawn
@@ -65,6 +69,9 @@ root(ROOTS.NeverImplemented, {
 				i(5008),	-- Quicksilver Ring
 			}),
 			filter(TRINKET_F, {
+				-- #if BEFORE TBC
+				i(13503),	-- Alchemists' Stone
+				-- #endif
 				i(12805),	-- Orb of Fire
 				i(18355),	-- Ferras Collar
 				i(18438),	-- Sergeant's Mark

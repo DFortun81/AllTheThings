@@ -479,7 +479,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					r(370745),	-- Advanced Potion Experimentation
 					r(370730),	-- Brood Salt
 					r(370735),	-- Illustrious Insight
-					r(390392, {["timeline"] = {ADDED_10_0_5}}),	-- Overload Elemental Herb
 					r(370668),	-- Potion Cauldron of Power
 					r(370715),	-- Transmute: Order to Elements
 					r(370714),	-- Transmute: Decay to Elements
@@ -564,7 +563,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				}),
 			}),
-			n(-1144, sharedData({	-- Weekly Profession Knowledge
+			n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 				["isWeekly"] = true,
 				["g"] = {
 					currency(ALCHEMY_KNOWLEDGE),
@@ -597,276 +596,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "i", 198964 },		-- Elementious Splinter
 					["crs"] = { 191712 },	-- Hissing Springsoul
 					["coord"] = { 80.2, 75.6, OHNAHRAN_PLAINS },
-				}),
-			})),
-		})),
-		prof(BLACKSMITHING, bubbleDown({ ["requireSkill"] = BLACKSMITHING }, {
-			n(QUESTS, {
-				q(70358, {	-- Dragon Isles Blacksmithing
-					["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Blacksmithing.",
-					["sourceQuests"] = {
-						67700,	-- To the Dragon Isles! [A]
-						65444,	-- To the Dragon Isles! [H]
-					},
-					["provider"] = { "n", 192563 },	-- Kholmar Sunrunner
-					["coord"] = { 76.4, 34.4, THE_WAKING_SHORES },
-					["lockCriteria"] = { 1, "spellID", 365677 },	-- Dragon Isles Blacksmithing
-				}),
-				q(70357, {	-- Dragon Isles Blacksmithing
-					["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Blacksmithing.",
-					["sourceQuests"] = {
-						67700,	-- To the Dragon Isles! [A]
-						65444,	-- To the Dragon Isles! [H]
-					},
-					["provider"] = { "n", 192164 },	-- Gringot Coldsteel <Blacksmithing Trainer>
-					["coord"] = { 25.8, 54.4, THE_WAKING_SHORES },
-					["lockCriteria"] = { 1, "spellID", 365677 },	-- Dragon Isles Blacksmithing
-				}),
-				q(70025, {	-- Artisan's Supply: Draconium Sickle
-					["provider"] = { "n", 192164 },	-- Gringot Coldsteel
-					["coord"] = { 25.8, 54.4, THE_WAKING_SHORES },
-					["cost"] = { { "i", 191241, 1 } },	-- Draconium Sickle
-					["_drop"] = { "g" },
-				}),
-				q(70250, {	-- Hidden Profession Master Blacksmith
-					["name"] = "Hidden Profession Master: Blacksmith",
-					["provider"] = { "n", 194836 },	-- Grekka Anvilsmash
-					["coord"] = { 43.2, 66.6, THE_WAKING_SHORES },
-				}),
-				q(70184, {	-- Specialized Secrets: Blacksmithing
-					["sourceQuests"] = { 69979 },	-- A Worthy Hunt
-					["provider"] = { "n", 193110 },	-- Khadin
-					["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
-					["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
-					["isRepeatable"] = true,
-					["g"] = {
-						i(190456),	-- Artisan's Mettle
-					},
-				}),
-			}),
-			n(QUESTS, sharedData({
-				["isWeekly"] = true,
-				["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-				["g"] = {
-					i(198606),	-- Blacksmith's Writ
-				},
-			},{
-				-- Requires 25 Skill
-				q(70589, {	-- Blacksmithing Services Requested
-					["description"] = "Requires 25 Skill.",
-					["provider"] = { "n", 194026 },	-- Azley
-					["coord"] = { 35.6, 58.8, VALDRAKKEN },
-				}),
-				q(66897, {	-- Fuel for the Forge
-					["description"] = "Requires 25 Skill.",
-					["provider"] = { "n", 191002 },	-- Dhurrel
-					["coord"] = { 36.6, 63.6, VALDRAKKEN },
-				}),
-				q(72398, {	-- Rock and Stone
-					["description"] = "Requires 25 Skill.",
-					["provider"] = { "n", 191002 },	-- Dhurrel
-					["coord"] = { 36.6, 63.6, VALDRAKKEN },
-				}),
-				q(66941, {	-- Tremendous Tools
-					["description"] = "Requires 25 Skill.",
-					["provider"] = { "n", 191002 },	-- Dhurrel
-					["coord"] = { 36.6, 63.6, VALDRAKKEN },
-				}),
-
-				-- Requires 45 Skill
-				q(66517, {	-- A New Source of Weapons
-					["description"] = "Requires 45 Skill.",
-					["provider"] = { "n", 191002 },	-- Dhurrel
-					["coord"] = { 36.8, 63.6, VALDRAKKEN },
-				}),
-				q(70234, {	-- All this Hammering
-					["description"] = "Requires 45 Skill.",
-					["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
-					["coord"] = { 37.0, 47.0, VALDRAKKEN },
-				}),
-				q(70233, {	-- Axe Shortage
-					["description"] = "Requires 45 Skill.",
-					["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
-					["coord"] = { 37.0, 47.0, VALDRAKKEN },
-				}),
-				q(70235, {	-- Repair Bill
-					["description"] = "Requires 45 Skill.",
-					["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
-					["coord"] = { 37.0, 47.0, VALDRAKKEN },
-				}),
-				q(70211, {	-- Stomping Explorers
-					["description"] = "Requires 45 Skill.",
-					["provider"] = { "n", 185546 },	-- Metalshaper Kuroko
-					["coord"] = { 37.0, 47.0, VALDRAKKEN },
-				}),
-
-				-- Requires ?? Skill - Patch 10.1.0.
-				q(75148, {	-- Ancient Techniques
-					["provider"] = { "n", 203516 },	-- Kayann
-					["coord"] = { 36.5, 62.5, VALDRAKKEN },
-					["timeline"] = { ADDED_10_1_0 }
-				}),
-				q(75569, {	-- Blacksmith, Black Dragon
-					["provider"] = { "n", 203516 },	-- Kayann
-					["coord"] = { 36.5, 62.5, VALDRAKKEN },
-					["timeline"] = { ADDED_10_1_0 }
-				}),
-			})),
-			filter(RECIPES, {
-				["description"] = "These are learned by specialization.",
-				["g"] = sharedData({ ["cost"] = { { "c", BLACKSMITHING_KNOWLEDGE, 1 } }, }, {
-					r(376700),	-- Illustrious Insight
-					r(371412),	-- Khaz'gorite Blacksmith's Hammer
-					r(371374),	-- Khaz'gorite Blacksmith's Toolbox
-					r(371366),	-- Khaz'gorite Pickaxe
-					r(393853),	-- Master's Hammer
-					r(367608),	-- Primal Molten Breastplate
-					r(367622),	-- Primal Molten Defender
-					r(367606),	-- Primal Molten Gauntlets
-					r(365734),	-- Primal Molten Greataxe
-					r(367602),	-- Primal Molten Greatbelt
-					r(367605),	-- Primal Molten Helm
-					r(367604),	-- Primal Molten Legplates
-					r(367585),	-- Primal Molten Longsword
-					r(367586),	-- Primal Molten Mace
-					r(367603),	-- Primal Molten Pauldrons
-					r(367607),	-- Primal Molten Sabatons
-					r(365730),	-- Primal Molten Shortblade
-					r(365731),	-- Primal Molten Spellblade
-					r(367601),	-- Primal Molten Vambraces
-					r(365729),	-- Primal Molten Warglaive
-				}),
-			}),
-			n(TREASURES, {
-				o(376657, {	-- Ancient Monument
-					["description"] = "Kill NPCs and loot the sword. If you receive no loot, check your mail!",
-					["crs"] = { 188648 },	-- Enchanted Bulwark
-					["coord"] = { 22.3, 87.7, THE_WAKING_SHORES },
-					["questID"] = 70246,
-					["g"] = {
-						i(201007),	-- Ancient Monument
-					},
-				}),
-				o(380620, {	-- Ancient Spear Shards
-					["coord"] = { 81.1, 37.9, OHNAHRAN_PLAINS },
-					["questID"] = 70313,
-					["g"] = {
-						i(201004),	-- Ancient Spear Shards
-					},
-				}),
-				o(402632,	-- Brimstone Rescue Ring
-				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
-					["coord"] = { 48.3, 22.0, ZARALEK_CAVERN },
-					["questID"] = 76079,
-					["g"] = {
-						i(205987),	-- Brimstone Rescue Ring
-					},
-				})),
-				o(380619, {	-- Curious Ingots
-					["coord"] = { 65.6, 25.7, THE_WAKING_SHORES },
-					["questID"] = 70312,
-					["g"] = {
-						i(201005),	-- Curious Ingots
-					},
-				}),
-				o(380618, {	-- Draconic Flux
-					["coord"] = { 52.2, 80.5, THALDRASZUS },
-					["questID"] = 70311,
-					["g"] = {
-						i(201006),	-- Draconic Flux
-					},
-				}),
-				o(380709, {	-- Falconer Gauntlet Drawings
-					["coord"] = { 50.9, 66.5, OHNAHRAN_PLAINS },
-					["questID"] = 70353,
-					["g"] = {
-						i(201009),	-- Falconer Gauntlet Drawings
-					},
-				}),
-				o(380516, {	-- Glimmer of Wisdom
-					["description"] = "Craft a Primal Molten Alloy or a Frostfire Alloy next to the Dim Forge. A sparkle will appear in the deposit box, which you can click to grab the treasure.",
-					["sourceQuests"] = { 70232 },	-- This triggers when crafting the Alloy, which makes the treasure appear.
-					["coord"] = { 56.4, 19.5, THE_WAKING_SHORES },
-					["questID"] = 70230,
-					["g"] = {
-						i(198791),	-- Glimmer of Blacksmithing Wisdom
-					},
-				}),
-				o(380598, {	-- Molten Ingot
-					["coord"] = { 35.6, 64.5, THE_WAKING_SHORES },
-					["questID"] = 70296,
-					["g"] = {
-						i(201008),	-- Molten Ingot
-					},
-				}),
-				o(380617, {	-- Qalashi Weapon Diagram
-					["coord"] = { 34.5, 67.1, THE_WAKING_SHORES },
-					["questID"] = 70310,
-					["g"] = {
-						i(201010),	-- Qalashi Weapon Diagram
-					},
-				}),
-				o(380623, {	-- Spelltouched Tongs
-					["description"] = "If you do not have Mining to clear the Rock Wall, try dying. Ghosts can walk through it.",
-					["coord"] = { 53.1, 66.1, THE_AZURE_SPAN },
-					["questID"] = 70314,
-					["g"] = {
-						i(201011),	-- Spelltouched Tongs
-					},
-				}),
-				o(402627,	-- Well-Worn Kiln
-				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
-					["coord"] = { 57.2, 54.6, ZARALEK_CAVERN },
-					["questID"] = 76078,
-					["g"] = {
-						i(205986),	-- Well-Worn Kiln
-					},
-				})),
-				o(402634,	-- Zaqali Elder Spear
-				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
-					["coord"] = { 27.5, 42.9, ZARALEK_CAVERN },
-					["questID"] = 76080,
-					["g"] = {
-						i(205988),	-- Zaqali Elder Spear
-					},
-				})),
-			}),
-			n(-1144, sharedData({	-- Weekly Profession Knowledge
-				["isWeekly"] = true,
-				["g"] = {
-					currency(BLACKSMITHING_KNOWLEDGE),
-				},
-			},{
-				i(198606),	-- Blacksmith's Writ
-				q(74109, {	-- Inscription Order: Blacksmith
-					["name"] = "Inscription Order: Blacksmith",
-					["description"] = "Requires a crafting order from Inscription.",
-					["provider"] = { "i", 198454 },	-- Draconic Treatise on Blacksmith
-				}),
-				q(66381, {	-- Weekly Blacksmithing Knowledgepoint #1
-					["name"] = "Blacksmithing Treasure #1",
-					["provider"] = { "i", 192131 },	-- Valdrakken Weapon Chain
-				}),
-				q(66382, {	-- Weekly Blacksmithing Knowledgepoint #2
-					["name"] = "Blacksmithing Treasure #2",
-					["provider"] = { "i", 192132 },	-- Draconium Blade Sharpener
-				}),
-				q(70513, {	-- Weekly Blacksmithing Knowledgepoint #3
-					["name"] = "Blacksmithing Drop #1: Fire Elemental",
-					["description"] = "Drops from any Fire Elemental.\nCoordinates link to the spot(s) we found best.",
-					["crs"] = {
-						196168,	-- Springs Heater
-						196171,	-- Flame Boiler
-					},
-					["provider"] = { "i", 198966 },	-- Molten Globule
-					["coord"] = { 39.0, 48.8, THALDRASZUS },
-				}),
-				q(70512, {	-- Weekly Blacksmithing Knowledgepoint #4
-					["name"] = "Blacksmithing Drop #2: Earth Elemental",
-					["description"] = "Drops from any Earth Elemental.\nCoordinates link to the spot(s) we found best.",
-					["crs"] = EARTH_ELEMENTAL.crs,
-					["provider"] = { "i", 198965 },		-- Primeval Earth Fragment
-					["coords"] = EARTH_ELEMENTAL.coords,
 				}),
 			})),
 		})),
@@ -908,259 +637,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["lockCriteria"] = { 1, "spellID", 366256},	-- Dragon Isles Cooking
 				}),
 			}),
-		})),
-		prof(ENCHANTING, bubbleDown({ ["requireSkill"] = ENCHANTING }, {
-			n(QUESTS, {
-				q(70360, {	-- Dragon Isles Enchanting
-					["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Enchanting.",
-					["sourceQuests"] = {
-						67700,	-- To the Dragon Isles! [A]
-						65444,	-- To the Dragon Isles! [H]
-					},
-					["provider"] = { "n", 192055 },	-- Veeno <Enchanting Trainer>
-					["coord"] = { 75.8, 33.2, THE_WAKING_SHORES },
-					["lockCriteria"] = { 1, "spellID", 366255},	-- Dragon Isles Enchanting
-				}),
-				q(70029, {	-- Artisan's Supply: Runed Serevite Rods
-					["providers"] = {
-						{ "n", 192055 },	-- Veeno <Enchanting Trainer>
-						{ "n", 198903 },	-- Asarin <Enchanting Trainer & Supplies>
-						{ "n", 192116 },	-- Solonga <Enchanting Trainer & Supplies>
-					},
-					["coords"] = {
-						{ 75.8, 33.2, THE_WAKING_SHORES },
-						{ 41.4, 61.0, OHNAHRAN_PLAINS },
-						{ 56.8, 75.6, OHNAHRAN_PLAINS },
-					},
-					["cost"] = { { "i", 201601, 2 } },	-- 2xRuned Serevite Rod
-					["_drop"] = { "g" },
-				}),
-				q(70251, {	-- Hidden Profession Master Enchanting
-					["name"] = "Hidden Profession Master: Enchanting",
-					["provider"] = { "n", 194837 },	-- Shalasar Glimmerdusk
-					["coord"] = { 62.4, 18.6, OHNAHRAN_PLAINS },
-				}),
-				q(70186, {	-- Specialized Secrets: Enchanting
-					["sourceQuests"] = { 69979 },	-- A Worthy Hunt
-					["provider"] = { "n", 193110 },	-- Khadin
-					["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
-					["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
-					["isRepeatable"] = true,
-					["g"] = {
-						i(190456),	-- Artisan's Mettle
-					},
-				}),
-			}),
-			n(QUESTS, sharedData({
-				["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-				["isWeekly"] = true,
-				["g"] = {
-					i(198610),	-- Enchanter's Script
-				},
-			},{
-				-- Weeklies
-				-- Requires 25 Skill
-				q(66935, {	-- Crystal Quill Pens
-					["description"] = "Requires 25 Skill.",
-					["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
-					["coord"] = { 36.8, 62.8, VALDRAKKEN },
-				}),
-				q(66900, {	-- Enchanted Relics
-					["description"] = "Requires 25 Skill.",
-					["provider"] = { "n", 191004 },	-- Temnaayu
-					["coord"] = { 36.8, 62.4, VALDRAKKEN },
-				}),
-				q(66884, {	-- Fireproof Gear
-					["description"] = "Requires 25 Skill.",
-					["provider"] = { "n", 191004 },	-- Temnaayu
-					["coord"] = { 36.8, 62.4, VALDRAKKEN },
-				}),
-				q(72423, {	-- Weathering the Storm
-					["description"] = "Requires 25 Skill.",
-					["provider"] = { "n", 191004 },	-- Temnaayu
-					["coord"] = { 36.8, 62.4, VALDRAKKEN },
-				}),
-
-				-- Requires 45 Skill
-				q(72175, {	-- A Scept-acular Time
-					["description"] = "Requires 45 Skill.",
-					["provider"] = { "n", 193744 },	-- Soragosa
-					["coord"] = { 30.8, 61.4, VALDRAKKEN },
-				}),
-				q(72173, {	-- Braced for Enchantment
-					["description"] = "Requires 45 Skill.",
-					["provider"] = { "n", 193744 },	-- Soragosa
-					["coord"] = { 30.8, 61.4, VALDRAKKEN },
-				}),
-				q(72172, {	-- Essence, Shards, and Chromatic Dust
-					["description"] = "Requires 45 Skill.",
-					["provider"] = { "n", 193744 },	-- Soragosa
-					["coord"] = { 30.8, 61.4, VALDRAKKEN },
-				}),
-				q(72155, {	-- Spread the Enchantment
-					["description"] = "Requires 45 Skill.",
-					["provider"] = { "n", 193744 },	-- Soragosa
-					["coord"] = { 30.8, 61.4, VALDRAKKEN },
-				}),
-
-				-- Requires ?? Skill - Patch 10.1.0.
-				q(75150, {	-- Incandescence
-					["provider"] = { "n", 203516 },	-- Kayann
-					["coord"] = { 36.5, 62.5, VALDRAKKEN },
-					["timeline"] = { ADDED_10_1_0 }
-				}),
-				q(75865, {	-- Relic Rustler
-					["provider"] = { "n", 203516 },	-- Kayann
-					["coord"] = { 36.5, 62.5, VALDRAKKEN },
-					["timeline"] = { ADDED_10_1_0 }
-				}),
-			})),
-			filter(RECIPES, {
-				["description"] = "These are learned by specialization.",
-				["g"] = sharedData({ ["cost"] = { { "c", ENCHANTING_KNOWLEDGE, 1 } }, }, {
-					r(389547),	-- Burning Devotion
-					r(391302),	-- Crystalline Shatter
-					r(389301),	-- Devotion of Avoidance
-					r(389303),	-- Devotion of Leech
-					r(389304),	-- Devotion of Speed
-					r(389519),	-- Draconic Inspiration
-					r(389530),	-- Draconic Resourcefulness
-					r(389549),	-- Earthen Devotion
-					r(391304),	-- Elemental Shatter
-					r(389551),	-- Frozen Devotion
-					r(391812),	-- Illusory Adornment: Order
-					r(391202),	-- Illustrious Insight
-					r(390855),	-- Khadgar's Disenchanting Rod
-					r(389417),	-- Reserve of Intellect
-					r(390825),	-- Runed Khaz'gorite Rod
-					r(391808),	-- Scepter of Spectacle: Order
-					r(390831),	-- Sophic Amalgamation
-					r(389550),	-- Sophic Devotion
-					r(391179),	-- Torch of Primal Awakening
-					r(389558),	-- Wafting Devotion
-					r(389410),	-- Waking Stats
-				}),
-			}),
-			n(TREASURES, {
-				o(380558, {	-- Enchanted Debris
-					["description"] = "Interact with the Disenchanted Broom, then follow it to the location of the treasure.",
-					["questID"] = 70272,
-					["coord"] = { 57.5, 58.5, THE_WAKING_SHORES },
-					["g"] = {
-						i(201012),	-- Enchanted Debris
-					},
-				}),
-				o(380600, {	-- Enriched Earthen Shard
-					["questID"] = 70298,
-					["coord"] = { 21.6, 45.5, THE_AZURE_SPAN },
-					["g"] = {
-						i(198694),	-- Enriched Earthen Shard
-					},
-				}),
-				o(380589, {	-- Faintly Enchanted Remains
-					["questID"] = 70290,
-					["coord"] = { 45.1, 61.2, THE_AZURE_SPAN },
-					["crs"] = { 194882 },	-- Enchanted Crystaline Construct
-					["g"] = {
-						i(201013),	-- Faintly Enchanted Remains
-					},
-				}),
-				o(380643, {	-- Flashfrozen Scroll
-					["description"] = "Currently non-interactible. Requires enabling 'Enable Interact Key' and keybinding 'Interact with Mouseover' to loot this.",
-					["questID"] = 70320,
-					["coord"] = { 57.5, 83.6, THE_WAKING_SHORES },
-					["g"] = {
-						i(198798),	-- Flashfrozen Scroll
-					},
-				}),
-				o(380647, {	-- Forgotten Arcane Tome
-					["questID"] = 70336,
-					["coord"] = { 38.5, 59.2, THE_AZURE_SPAN },
-					["g"] = {
-						i(198799),	-- Forgotten Arcane Tome
-					},
-				}),
-				o(380652, {	-- Fractured Titanic Sphere
-					["questID"] = 70342,
-					["coord"] = { 59.9, 70.4, THALDRASZUS },
-					["g"] = {
-						i(198800),	-- Fractured Titanic Sphere
-					},
-				}),
-				o(398793,	-- Lava-Drenched Shadow Crystal
-				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
-					["coord"] = { 48.0, 17.0, ZARALEK_CAVERN },
-					["questID"] = 75508,
-					["g"] = {
-						i(204990),	-- Lava-Drenched Shadow Crystal
-					},
-				})),
-				o(380580, {	-- Lava-Infused Seed
-					["questID"] = 70283,
-					["coord"] = { 68.0, 26.8, THE_WAKING_SHORES },
-					["g"] = {
-						i(198675),	-- Lava-Infused Seed
-					},
-				}),
-				o(398796,	-- Resonating Arcane Crystal
-				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
-					["coord"] = { 36.7, 69.3, ZARALEK_CAVERN },
-					["questID"] = 75510,
-					["g"] = {
-						i(205001),	-- Resonating Arcane Crystal
-					},
-				})),
-				o(398794,	-- Shimmering Aqueous Orb
-				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
-					["coord"] = { 62.4, 53.8, ZARALEK_CAVERN },
-					["questID"] = 75509,
-					["g"] = {
-						i(204999),	-- Shimmering Aqueous Orb
-					},
-				})),
-				o(380592, {	-- Stormbound Horn
-					["questID"] = 70291,
-					["coord"] = { 61.4, 67.6, OHNAHRAN_PLAINS },
-					["g"] = {
-						i(198689),	-- Stormbound Horn
-					},
-				}),
-			}),
-			n(-1144, sharedData({	-- Weekly Profession Knowledge
-				["isWeekly"] = true,
-				["g"] = {
-					currency(ENCHANTING_KNOWLEDGE),
-				},
-			},{
-				i(198610),	-- Enchanter's Script
-				q(74110, {	-- Inscription Order: Enchanting
-					["name"] = "Inscription Order: Enchanting",
-					["description"] = "Requires a crafting order from Inscription.",
-					["provider"] = { "i", 194702 },	-- Draconic Treatise on Enchanting
-				}),
-				q(66377, {	-- Weekly Enchanting Knowledgepoint #1
-					["name"] = "Enchanting Treasure #1",
-					["provider"] = { "i", 193900 },	-- Prismatic Focusing Shard
-				}),
-				q(66378, {	-- Weekly Enchanting Knowledgepoint #2
-					["name"] = "Enchanting Treasure #2",
-					["provider"] = { "i", 193901 },	-- Primal Dust
-				}),
-				q(70515, {	-- Weekly Enchanting Knowledgepoint #3
-					["name"] = "Enchanting Drop #1: Primalist",
-					["description"] = "Drops from any mob with Primalist in the name.\nCoordinates link to the spot(s) we found best.",
-					["crs"] = { 194656 },	-- Primalist Surgecrusher
-					["provider"] = { "i", 198968 },	-- Primalist Charm
-					["coord"] = { 53.4, 56.2, THALDRASZUS },
-				}),
-				q(70514, {	-- Weekly Enchanting Knowledgepoint #4
-					["name"] = "Enchanting Drop #2: Arcane Elemental",
-					["description"] = "Drops from any Arcane Elemental.\nCoordinates link to the spot(s) we found best.",
-					["crs"] = { 181536 },	-- Destabilized Elemental
-					["provider"] = { "i", 198967 },	-- Primordial Aether
-					["coord"] = { 40.6, 60.8, THE_AZURE_SPAN },
-				}),
-			})),
 		})),
 		prof(ENGINEERING, bubbleDown({ ["requireSkill"] = ENGINEERING }, {
 			n(QUESTS, {
@@ -1390,7 +866,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				})),
 			}),
-			n(-1144, sharedData({	-- Weekly Profession Knowledge
+			n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 				["isWeekly"] = true,
 				["g"] = {
 					currency(ENGINEERING_KNOWLEDGE),
@@ -1513,9 +989,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["g"] = sharedData({ ["cost"] = { { "c", HERBALISM_KNOWLEDGE, 1 } }, }, {
 					r(391088),	-- Refine Herbs++
 					r(391089),	-- Refine Herbs+++
+					r(390392, {["timeline"] = {ADDED_10_0_5}}),	-- Overload Elemental Herb
 				}),
 			}),
-			n(-1144, sharedData({	-- Weekly Profession Knowledge
+			n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 				["isWeekly"] = true,
 				["g"] = {
 					currency(HERBALISM_KNOWLEDGE),
@@ -1774,7 +1251,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				}),
 			}),
-			n(-1144, sharedData({	-- Weekly Profession Knowledge
+			n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 				["isWeekly"] = true,
 				["g"] = {
 					currency(INSCRIPTION_KNOWLEDGE),
@@ -2055,7 +1532,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				})),
 			}),
-			n(-1144, sharedData({	-- Weekly Profession Knowledge
+			n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 				["isWeekly"] = true,
 				["g"] = {
 					currency(JEWELCRAFTING_KNOWLEDGE),
@@ -2096,269 +1573,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["crs"] = EARTH_ELEMENTAL.crs,
 					["provider"] = { "i", 198973 },	-- Incandescent Curio
 					["coords"] = EARTH_ELEMENTAL.coords,
-				}),
-			})),
-		})),
-		prof(LEATHERWORKING, bubbleDown({ ["requireSkill"] = LEATHERWORKING }, {
-			n(QUESTS, {
-				q(70362, {	-- Dragon Isles Leatherworking
-					["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Leatherworking.",
-					["sourceQuests"] = {
-						67700,	-- To the Dragon Isles! [A]
-						65444,	-- To the Dragon Isles! [H]
-					},
-					["provider"] = { "n", 192048 },	-- Deidre Flemmin
-					["coord"] = { 76.6, 34.7, THE_WAKING_SHORES },
-					["lockCriteria"] = { 1, "spellID", 366249},	-- Dragon Isles Leatherworking
-				}),
-				q(70033, {	-- Artisan's Supply: Pioneer's Leather Boots
-					["providers"] = {
-						{ "n", 192027 },	-- Dokhusek
-						{ "n", 192048 },	-- Deirdre Flemmin
-						{ "n", 195785 },	-- Samar
-						{ "n", 196628 },	-- Ekhi
-					},
-					["coords"] = {
-						{ 57.9, 68.1, THE_WAKING_SHORES },	-- Deirdre Flemmin
-						{ 80.8, 59.4, OHNAHRAN_PLAINS },	-- Dokhusek
-						{ 29.0, 61.0, VALDRAKKEN },			-- Samar
-						{ 39.4, 55.4, OHNAHRAN_PLAINS },	-- Ekhi
-					},
-					["cost"] = { { "i", 193386, 1 } },	-- Pioneer's Leather Boots
-					["_drop"] = { "g" },
-				}),
-				q(70256, {	-- Hidden Profession Master Leatherworking
-					["name"] = "Hidden Profession Master: Leatherworking",
-					["provider"] = { "n", 194842 },	-- Erden
-					["coord"] = { 82.4, 50.6, OHNAHRAN_PLAINS },
-				}),
-				q(70191, {	-- Specialized Secrets: Leatherworking
-					["sourceQuests"] = { 69979 },	-- A Worthy Hunt
-					["provider"] = { "n", 193110 },	-- Khadin
-					["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
-					["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
-					["isRepeatable"] = true,
-					["g"] = {
-						i(190456),	-- Artisan's Mettle
-					},
-				}),
-			}),
-			n(QUESTS, sharedData({
-				["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-				["isWeekly"] = true,
-				["g"] = {
-					i(198613),	-- Leatherworking Designs
-				},
-			},{
-				-- Requires 25 Skill
-				q(66363, {	-- Basilisk Bucklers
-					["description"] = "Requires 25 Skill.",
-					["provider"] = { "n", 191002 },	-- Dhurrel
-					["coord"] = { 36.8, 63.6, VALDRAKKEN },
-				}),
-				q(70594, {	-- Leatherworking Services Requested
-					["description"] = "Requires 25 Skill.",
-					["provider"] = { "n", 194026 },	-- Azley
-					["coord"] = { 35.6, 58.8, VALDRAKKEN },
-				}),
-				q(66951, {	-- Population Control
-					["description"] = "Requires 25 Skill.",
-					["provider"] = { "n", 191004 },	-- Temnaayu
-					["coord"] = { 36.8, 62.4, VALDRAKKEN },
-				}),
-				q(72407, {	-- Soaked in Success
-					["description"] = "Requires 25 Skill.",
-					["provider"] = { "n", 191004 },	-- Temnaayu
-					["coord"] = { 36.8, 62.4, VALDRAKKEN },
-				}),
-				q(66364, {	-- To Fly a Kite
-					["description"] = "Requires 25 Skill.",
-					["provider"] = { "n", 191004 },	-- Temnaayu
-					["coord"] = { 36.8, 62.4, VALDRAKKEN },
-				}),
-
-				-- Requires 45 Skill
-				q(70571, {	-- Drums Here!
-					["description"] = "Requires 45 Skill.",
-					["provider"] = { "n", 185551 },	-- Hideshaper Koruz
-					["coord"] = { 28.6, 61.4, VALDRAKKEN },
-				}),
-				q(70569, {	-- For Trisket, a Task Kit
-					["description"] = "Requires 45 Skill.",
-					["provider"] = { "n", 185551 },	-- Hideshaper Koruz
-					["coord"] = { 28.6, 61.4, VALDRAKKEN },
-				}),
-				q(70568, {	-- Tipping the Scales
-					["description"] = "Requires 45 Skill.",
-					["provider"] = { "n", 185551 },	-- Hideshaper Koruz
-					["coord"] = { 28.6, 61.4, VALDRAKKEN },
-				}),
-				q(70567, {	-- When You Give Bakar a Bone
-					["description"] = "Requires 45 Skill.",
-					["provider"] = { "n", 185551 },	-- Hideshaper Koruz
-					["coord"] = { 28.6, 61.4, VALDRAKKEN },
-				}),
-
-				-- Requires ?? Skill - Patch 10.1.0.
-				q(75354, {	-- Mycelium Mastery
-					["provider"] = { "n", 203516 },	-- Kayann
-					["coord"] = { 36.5, 62.5, VALDRAKKEN },
-					["timeline"] = { ADDED_10_1_0 }
-				}),
-				q(75368, {	-- Stones and Scales
-					["provider"] = { "n", 203516 },	-- Kayann
-					["coord"] = { 36.5, 62.5, VALDRAKKEN },
-					["timeline"] = { ADDED_10_1_0 }
-				}),
-			})),
-			filter(RECIPES, {
-				["description"] = "These are learned by specialization.",
-				["g"] = sharedData({ ["cost"] = { { "c", LEATHERWORKING_KNOWLEDGE, 1 } }, }, {
-					r(375125),	-- Bow of the Dragon Hunters
-					r(375159),	-- Fang Adornments
-					r(375123),	-- Flame-Touched Chain
-					r(375117),	-- Flame-Touched Chainmail
-					r(375124),	-- Flame-Touched Cuffs
-					r(375119),	-- Flame-Touched Handguards
-					r(375120),	-- Flame-Touched Helmet
-					r(375121),	-- Flame-Touched Legguards
-					r(375122),	-- Flame-Touched Spaulders
-					r(375118),	-- Flame-Touched Treads
-					r(375197),	-- Flaring Cowl
-					r(375166),	-- Illustrious Insight
-					r(375115),	-- Life-Bound Belt
-					r(375116),	-- Life-Bound Bindings
-					r(375110),	-- Life-Bound Boots
-					r(375112),	-- Life-Bound Cap
-					r(375109),	-- Life-Bound Chestpiece
-					r(375111),	-- Life-Bound Gloves
-					r(375114),	-- Life-Bound Shoulderpads
-					r(375113),	-- Life-Bound Trousers
-					r(375160),	-- Toxified Armor Patch
-					r(375199),	-- Witherrot Tome
-				}),
-			}),
-			n(TREASURES, {
-				o(380593, {	-- Bag of Decayed Scales
-					["questID"] = 70294,
-					["coord"] = { 56.8, 30.5, THALDRASZUS },
-					["g"] = {
-						i(198690),	-- Decayed Scales
-					},
-				}),
-				o(380587, {	-- Crate of Treated Hides
-					["questID"] = 70286,
-					["coord"] = { 57.5, 41.3, THE_AZURE_SPAN },
-					["g"] = {
-						i(198683),	-- Treated Hides
-					},
-				}),
-				o(380547, {	-- Decay-Infused Tanning Oil
-					["questID"] = 70266,
-					["coord"] = { 16.77, 38.83, THE_AZURE_SPAN },
-					["g"] = {
-						i(198658),	-- Decay-Infused Tanning Oil
-					},
-				}),
-				o(398783, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Flame-Infused Scale Oil
-					["coord"] = { 41.2, 48.7, ZARALEK_CAVERN },
-					["questID"] = 75495,
-					["g"] = {
-						i(204986),	-- Flame-Infused Scale Oil
-					},
-				})),
-				o(398785, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Lava-Forged Leatherworker's "Knife"
-					["coord"] = { 45.2, 21.0, ZARALEK_CAVERN },
-					["questID"] = 75496,
-					["g"] = {
-						i(204987),	-- Lava-Forged Leatherworker's "Knife"
-					},
-				})),
-				o(380615, {	-- Poacher's Pack
-					["questID"] = 70308,
-					["coord"] = { 39.4, 86.3, THE_WAKING_SHORES },
-					["g"] = {
-						i(198711),	-- Poacher's Pack
-					},
-				}),
-				o(380579, {	-- Spare Djaradin Tools
-					["questID"] = 70280,
-					["coord"] = { 64.3, 25.4, THE_WAKING_SHORES },
-					["g"] = {
-						i(198667),	-- Spare Djaradin Tools
-					},
-				}),
-				o(398791, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Sulfur-Soaked Skins
-					["coord"] = { 49.5, 54.8, ZARALEK_CAVERN },
-					["questID"] = 75502,
-					["g"] = {
-						i(204988),	-- Sulfur-Soaked Skins
-					},
-				})),
-				o(380554, {	-- Well-Danced Drum
-					["description"] = "Fix the drum by interacting with it, wait for the little Tuskarr to finish dancing, then you can loot the treasure.",
-					["questID"] = 70269,
-					["coord"] = { 12.5, 49.4, THE_AZURE_SPAN },
-					["g"] = {
-						i(201018),	-- Well-Danced Drum
-					},
-				}),
-				o(380602, {	-- Wind-Blessed Hide
-					["questID"] = 70300,
-					["coord"] = { 86.4, 53.7, OHNAHRAN_PLAINS },
-					["g"] = {
-						i(198696),	-- Wind-Blessed Hide
-					},
-				}),
-			}),
-			n(-1144, sharedData({	-- Weekly Profession Knowledge
-				["isWeekly"] = true,
-				["g"] = {
-					currency(LEATHERWORKING_KNOWLEDGE),
-				},
-			},{
-				i(198613),	-- Leatherworking Designs
-				q(74113, {	-- Inscription Order: Leatherworking
-					["name"] = "Inscription Order: Leatherworking",
-					["description"] = "Requires a crafting order from Inscription.",
-					["provider"] = { "i", 194700 },	-- Draconic Treatise on Leatherworking
-				}),
-				q(66384, {	-- Weekly Leatherworking Knowledgepoint #1
-					["name"] = "Leatherworking Treasure #1",
-					["provider"] = { "i", 193910 },		-- Molten Dragon Scales
-				}),
-				q(66385, {	-- Weekly Leatherworking Knowledgepoint #2
-					["name"] = "Leatherworking Treasure #2",
-					["provider"] = { "i", 193913 },		-- Preserved Animal Parts
-				}),
-				q(70522, {	-- Weekly Leatherworking Knowledgepoint #3
-					["name"] = "Leatherworking Drop #1: Proto Drake",
-					["description"] = "Drops from any Proto Drake.\nCoordinates link to the spot(s) we found best.",
-					["crs"] = {
-						196420,	-- Cavern Hunter (Thaldraszus)
-						190056,	-- Primal Proto-Drake
-					},
-					["provider"] = { "i", 198975 },		-- Ossified Hide
-					["coords"] = {
-						{ 80.6, 33.8, THE_WAKING_SHORES },
-						{ 79.4, 32.5, THE_WAKING_SHORES },
-					},
-				}),
-				q(70523, {	-- Weekly Leatherworking Knowledgepoint #4
-					["name"] = "Leatherworking Drop #2: Sylvern&Vorquin",
-					["description"] = "Drops from any Sylvern or Vorquin.\nCoordinates link to the spot(s) we found best.",
-					["crs"] = {
-						188277,	-- Garden Herdmare
-						191317,	-- Creekside Grazer
-						191203,	-- Pleasant Hart
-					},
-					["provider"] = { "i", 198976 },		-- Exceedingly Soft Skin
-					["coords"] = {
-						{ 36.6, 72.8, THALDRASZUS },
-						{ 35.4, 72.8, THALDRASZUS },
-						{ 32.4, 73.5, THALDRASZUS },
-						{ 31.3, 76.5, THALDRASZUS },
-					},
 				}),
 			})),
 		})),
@@ -2417,7 +1631,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					r(383792),	-- Refine Serevite+++
 				}),
 			}),
-			n(-1144, sharedData({	-- Weekly Profession Knowledge
+			n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 				["isWeekly"] = true,
 				["g"] = {
 					currency(MINING_KNOWLEDGE),
@@ -2527,7 +1741,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					r(375782),	-- Thousandbite Piranha Lure
 				}),
 			}),
-			n(-1144, sharedData({	-- Weekly Profession Knowledge
+			n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 				["isWeekly"] = true,
 				["g"] = {
 					currency(SKINNING_KNOWLEDGE),
@@ -2781,7 +1995,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				})),
 			}),
-			n(-1144, sharedData({	-- Weekly Profession Knowledge
+			n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 				["isWeekly"] = true,
 				["g"] = {
 					currency(TAILORING_KNOWLEDGE),

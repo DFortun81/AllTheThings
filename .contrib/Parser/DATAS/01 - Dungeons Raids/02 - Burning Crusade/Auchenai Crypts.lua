@@ -159,13 +159,12 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(524, {	-- Exarch Maladaar
 					["creatureID"] = 18373,
 					["groups"] = {
-						classicAch(666, {	-- Auchenai Crypts
+						ach(666, {	-- Auchenai Crypts
 							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								10167,	-- Auchindoun...
 								10164,	-- Everything Will Be Alright
 							},
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						i(27412),	-- Ironstaff of Regeneration
@@ -240,7 +239,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(524, {	-- Exarch Maladaar
 						["creatureID"] = 18373,
 						["groups"] = {
-							ach(672),	-- Heroic: Auchenai Crypts
+							ach(672, {	-- Heroic: Auchenai Crypts
+								["timeline"] = { "added 3.0.1" },
+							}),
 							ach(5072, {	-- Heroic: Auchenai Crypts Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),

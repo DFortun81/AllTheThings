@@ -111,6 +111,20 @@ root(ROOTS.Zones, {
 						}),
 					},
 				}),
+				n(88045, {	-- Zektar
+					["sourceQuest"] = 34991,	-- To the... Rescue? [May be earlier in chain, but was available at this point]
+					["coord"] = { 52.0, 50.4, SPIRES_OF_ARAK },
+					["g"] = {
+						i(199203, {	-- Phoenix Ash Talisman
+							["timeline"] = { ADDED_10_0_7 },
+							["cost"] = {
+								{ "i", 199099, 1 },	-- Glittering Phoenix Ember
+								{ "i", 199097, 10 },	-- Sacred Phoenix Ash
+								{ "i", 199092, 20 },	-- Inert Phoenix Ash
+							},
+						}),
+					},
+				}),
 			}),
 		}),
 	}),

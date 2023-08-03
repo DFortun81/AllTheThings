@@ -119,13 +119,7 @@ root(ROOTS.Zones, {
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					explorationAch(1268),	-- Explore Sholazar Basin
-					ach(950, {	-- Frenzyheart Tribe
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1104); end]],
-						-- #endif
-					}),
+					achWithRep(950, 1104),	-- Frenzyheart Tribe
 					ach(961, {	-- Honorary Frenzyheart
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
 						["groups"] = {
@@ -229,13 +223,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					ach(951, {	-- The Oracles
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1105); end]],
-						-- #endif
-					}),
+					achWithRep(951, 1105),	-- The Oracles
 				}),
 				battlepets({
 					["sym"] = {{"select","speciesID",
@@ -1136,8 +1124,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 39.7, 58.7, SHOLAZAR_BASIN },
 						["qg"] = 27987,	-- Monte Muzzleshot
 						["sourceQuests"] = {
-							39209,	-- Sholazar Basin
-							39212,	-- Sholazar Basin
+							-- #if AFTER 6.2.0.19953
+							39209,	-- Sholazar Basin -- Adventure Guide
+							39212,	-- Sholazar Basin -- Adventure Guide
+							-- #endif
 							12521,	-- Where in the World is Hemet Nesingwary?
 						},
 					}),

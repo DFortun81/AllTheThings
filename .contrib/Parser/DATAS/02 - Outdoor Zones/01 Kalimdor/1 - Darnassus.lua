@@ -374,7 +374,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(32664, {	-- Learn to Ride
 					["description"] = "This quest is available to Night Elves upon reaching level 10.",
-					["timeline"] = { "added 5.2.0.16486" },
+					["timeline"] = { "added 5.2.0.16486", REMOVED_10_1_5 },
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
 					["lockCriteria"] = { 1,
@@ -857,6 +857,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(45992),	-- Jeweled Fishing Pole
 						i(67410),	-- Very Unlucky Rock
 						i(67388),	-- String of Alligator Teeth
+					},
+				}),
+			}),
+			-- #endif
+			-- #if BEFORE TBC
+			n(RIDING_TRAINER, {
+				n(4753, {	-- Jartsam <Nightsaber Riding Instructor>
+					["coord"] = { 38.6, 16.0, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+
+					-- Available to Night Elves without faction requirements.
+					["minReputation"] = { 69, EXALTED },	-- Darnassus, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. NIGHTELF .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
+					["groups"] = {
+						recipe(828, {	-- Tiger Riding
+							["cost"] = 200000,
+							["lvl"] = 40,
+						}),
 					},
 				}),
 			}),
@@ -1481,10 +1504,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(5642, {	-- Recipe: Free Action Potion
+						i(5642, {	-- Recipe: Free Action Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5643, {	-- Recipe: Great Rage Potion
+						i(5643, {	-- Recipe: Great Rage Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(13477, {	-- Recipe: Superior Mana Potion

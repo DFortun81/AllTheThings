@@ -327,7 +327,7 @@ namespace ATT
                     ProcessImportCommand(command, builder, content, ref index, length);
                     break;
                 default:
-                    throw new Exception($"Malformed #{command[0]} statement: Expected #IF statement first... '{string.Join(" ", command)}'");
+                    throw new Exception($"Malformed #{command[0]} statement: Expected #IF statement first... '{string.Join(" ", command)}'\nNear Index {index}:\n{content.Substring(Math.Max(0, index - 15), Math.Min(index, 15))}");
             }
         }
 

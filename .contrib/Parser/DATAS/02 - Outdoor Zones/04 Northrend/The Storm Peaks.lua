@@ -1618,7 +1618,7 @@ root(ROOTS.Zones, {
 								["filterID"] = CONSUMABLES,
 							}),
 							i(42184),	-- Pattern: Glacial Bag
-							i(44510),	-- Pattern: Mammoth Mining Bag
+							i(44510),	-- Pattern: Mammoth Mining Bag (RECIPE!)
 							i(44190),	-- Spaulders of Frozen Knives
 							i(44195),	-- Spaulders of the Giant Lords
 							i(44192),	-- Stalactite Chopper

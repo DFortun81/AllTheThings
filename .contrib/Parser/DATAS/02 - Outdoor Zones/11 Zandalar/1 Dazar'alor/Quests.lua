@@ -333,9 +333,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				},
 			}),
 			q(58672, {	-- A Gathering of Champions
+				["sourceQuests"] = {
+					58631,	-- Into Dreams
+					58632,	-- Ny'alotha, the Waking City: The Corruptor's End
+				},
 				["coord"] = { 55.9, 30.3, THE_GREAT_SEAL },
 				["provider"] = { "n", 161458 },	-- Valeera Sanguinar
-				["sourceQuest"] = 58631,	-- Into Dreams
 				["races"] = HORDE_ONLY,
 			}),
 			q(51465, {	-- A Load of Scrap
@@ -511,10 +514,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 125312 },	-- Scrollsage Rooka
 			}),
 			q(49768, {	-- Nesingwary's Trek
-				["sourceQuestNumRequired"] = 1,
 				["sourceQuests"] = {
-					47439,	-- Gonk, Lord of the Pack
-					47440,	-- Pa'ku, Master of Winds
+					47438,	-- Picking a Side [One pre-req back from previous, Discord 2023-8-2]
+					-- 47514,	-- Zuldazar [Cross-referenced latest quest from completion sequence, Discord 2023-8-2]
 				},
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 130785 },	-- Huntmaster Kil'ja

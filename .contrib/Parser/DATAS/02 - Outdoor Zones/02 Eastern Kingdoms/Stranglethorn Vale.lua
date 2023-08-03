@@ -93,11 +93,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(871, applyclassicphase(PHASE_ONE, {	-- Avast Ye, Admiral!
+				applyclassicphase(PHASE_ONE, ach(871, {	-- Avast Ye, Admiral!
 					["sourceQuest"] = 4621,	-- Avast Ye, Admiral!
 					-- #if BEFORE WRATH
 					["description"] = "Obtain the Bloodsail Admiral's Hat... and try to get some fresh air every now and then.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 					-- #endif
 					["groups"] = {
 						title(111, {	-- Bloodsail Admiral <Name>
@@ -110,7 +109,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Explore Stranglethorn Vale, revealing the covered areas of the world map.",
 					-- #endif
 				}),
-				classicAch(940, {	-- The Green Hills of Stranglethorn
+				ach(940, {	-- The Green Hills of Stranglethorn
 					-- #if AFTER CATA
 					["sourceQuest"] = 208,	-- Big Game Hunter
 					-- #else
@@ -121,7 +120,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					-- #if BEFORE WRATH
 					["description"] = "Complete all of Hemet Nesingwary quests in Stranglethorn Vale up to and including The Green Hills of Stranglethorn and Big Game Hunter.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ALL_SOURCE_QUESTS]],
+					["AllSourceQuestsRequiredForAchievement"] = true,
 					-- #endif
 				}),
 			}),
@@ -133,11 +132,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["coord"] = { 30.5, 47.8, STRANGLETHORN_VALE },
 				-- #endif
 				["groups"] = {
-					classicAch(389, {	-- Gurubashi Arena Master
+					ach(389, {	-- Gurubashi Arena Master
 						["provider"] = { "i", 18706 },	-- Arena Master
 						-- #if BEFORE WRATH
 						["description"] = "Loot the Arena Master trinket from the Gurubashi Arena. Keep it in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",
-						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, GetItemCount(18706, true) > 0 or GetItemCount(19024, true) > 0); end]],
+						["OnUpdate"] = [[function(t) t:SetAchievementCollected(t.achievementID, GetItemCount(18706, true) > 0 or GetItemCount(19024, true) > 0); end]],
 						-- #endif
 					}),
 					i(18706),	-- Arena Master
@@ -382,11 +381,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cost"] = { { "i", 18706, 12 } },	-- Arena Master (trinket)
 					["repeatable"] = true,
 					["groups"] = {
-						classicAch(396, {	-- Arena Grandmaster
+						ach(396, {	-- Arena Grandmaster
 							["provider"] = { "i", 19024 },	-- Arena Grand Master
 							-- #if BEFORE WRATH
 							["description"] = "Complete Short John Mithril's quest to obtain the Arena Grand Master trinket. Keep it in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 							-- #endif
 						}),
 						i(19024),	-- Arena Grand Master
@@ -2521,10 +2519,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 28.0, 78.0, STRANGLETHORN_VALE },
 					-- #endif
 					["groups"] = {
-						i(6056, {	-- Recipe: Frost Protection Potion
+						i(6056, {	-- Recipe: Frost Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(6057, {	-- Recipe: Nature Protection Potion
+						i(6057, {	-- Recipe: Nature Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2881,7 +2879,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["cr"] = 701,	-- Bloodscalp Mystic
 				}),
-				i(9294, {	-- Recipe: Wildvine Potion
+				i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
 					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
 				}),
 				i(1624, {	-- Skullsplitter Helm

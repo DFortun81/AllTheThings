@@ -982,10 +982,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 			e(1542, {	-- Ossirian the Unscarred
 				["creatureID"] = 15339,
 				["groups"] = {
-					classicAch(689, {	-- Ruins of Ahn'Qiraj
+					ach(689, {	-- Ruins of Ahn'Qiraj
 						-- #if BEFORE WRATH
 						["sourceQuest"] = 8791,	-- The Fall of Ossirian
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5059, {	-- Ruins of Ahn'Qiraj Guild Run

@@ -20,7 +20,7 @@ root(ROOTS.Zones, {
 						12429,	-- Wetlands Quests
 					}},
 				})),
-				classicAch(1676, {	-- Loremaster of Eastern Kingdoms
+				ach(1676, {	-- Loremaster of Eastern Kingdoms
 					-- #if AFTER CATA
 					["sym"] = {{"meta_achievement",
 						4896,	-- Arathi Highlands Quests
@@ -54,7 +54,7 @@ root(ROOTS.Zones, {
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
 				}),
-				classicAch(1677, {	-- Loremaster of Eastern Kingdoms
+				ach(1677, {	-- Loremaster of Eastern Kingdoms
 					-- #if BEFORE CATA
 					-- #if BEFORE WRATH
 					["description"] = "Complete 550 quests in Eastern Kingdoms.",

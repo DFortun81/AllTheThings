@@ -1,25 +1,5 @@
-local Items = root(ROOTS.ItemDBConditional);
-local ProfessionID = COOKING;
-local i = function(itemID, recipeID, unobtainStatus, requireSkill)
-	if Items[itemID] then
-		print("Duplicate Recipe Item Defined!",itemID,recipeID);
-	elseif itemID == 0 then
-	else
-		local item = { ["recipeID"] = recipeID, ["requireSkill"] = requireSkill or ProfessionID, ["f"] = RECIPES };
-		-- allow for timeline to be a raw 'u' value or single string of 'timeline' or table of multiple 'timeline' values
-		local unobtainType = unobtainStatus and type(unobtainStatus);
-		if unobtainType then
-			if unobtainType == "number" then
-				item.u = unobtainStatus;
-			elseif unobtainType == "string" then
-				item.timeline = { unobtainStatus };
-			elseif unobtainType == "table" then
-				item.timeline = unobtainStatus;
-			end
-		end
-		Items[itemID] = item;
-	end
-end
+-- Original implementation ignored itemID 0.
+local i = GetRecipeHelperForProfession(COOKING);
 
 ------------------
 -- PATCH 10.0.0 --
@@ -124,6 +104,7 @@ i(204847, 407066);	-- Rocks on the Rocks
 ------------------
 -- PATCH 10.1.5 --
 ------------------
+--- NYI ---
 i(0, 412533);	-- Druidic Dreamsalad
 i(0, 412534);	-- Fine Taladorian Cheese Platter
 i(0, 412531);	-- Highly Spiced Haunch

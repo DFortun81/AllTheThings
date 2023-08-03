@@ -333,7 +333,7 @@ def post_process_recipes() -> None:
     for profession in profession_dict:
         print(profession)
         if not missing_path_dict[profession].exists():
-            return
+            continue
         missing_lines = extract_nth_column(missing_path_dict[profession], 0)
         for index, id in enumerate(missing_lines):
             id = re.sub("[^\\d^.]", "", id.strip())
@@ -537,8 +537,7 @@ def create_missing_files() -> None:
 
 def give_name_item() -> None:
     """Ugly Function Helped me during Beta to get names to item... Need to add to PostProcess Properly Soon"""
-    path: Path = Path("Fast.txt")
-    with open(path) as raw_file:
+    with open("Fast.txt") as raw_file:
         lines: list[str] = raw_file.readlines()
         for index, missing_line in enumerate(lines):
             print(missing_line)
@@ -551,15 +550,15 @@ def give_name_item() -> None:
                 lines[index] = f"i({id}),\t-- {name}\n"
             else:
                 lines[index] = lines[index]
-    with open(path, "w") as missing_file:
+    with open("Fast.txt", "w") as missing_file:
         missing_file.writelines(lines)
 
 
 """Step 1: Load New CSVs inside of Latests/dbfilesclient. """
 """Step 2: Run add_latest_data(build: str) (You have to uncomment) with the build as a string ex. add_latest_data("10.0.2.43010"). """
-# add_latest_data("10.1.5.50401")
+# add_latest_data("10.1.7.50587")
 """Step 3: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
 """Step 4: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
 # sort_raw_file_recipes()
 """Step 5: Run create_missing_files() and (you have to uncomment it)"""
-create_missing_files()
+# create_missing_files()

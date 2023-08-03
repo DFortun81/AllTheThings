@@ -1,36 +1,11 @@
 -- TODO: remove this file once all recipes are added to profession-specific DBs
-
-
-local Items = root(ROOTS.ItemDBConditional);
-local ProfessionID;
-local i = function(itemID, recipeID, unobtainStatus, requireSkill)
-	if Items[itemID] then
-		print("Duplicate Recipe Item Defined!",itemID,recipeID);
-	else
-		local item = { ["recipeID"] = recipeID, ["requireSkill"] = requireSkill or ProfessionID, ["f"] = RECIPES };
-		-- allow for timeline to be a raw 'u' value or single string of 'timeline' or table of multiple 'timeline' values
-		local unobtainType = unobtainStatus and type(unobtainStatus);
-		if unobtainType then
-			if unobtainType == "number" then
-				item.u = unobtainStatus;
-			elseif unobtainType == "string" then
-				item.timeline = { unobtainStatus };
-			elseif unobtainType == "table" then
-				item.timeline = unobtainStatus;
-			end
-		end
-		Items[itemID] = item;
-		return item;
-	end
-end
-
 -- The only intent of this data is to map ItemID to the learned Recipe. Any other data concerning the Item or Recipe should be Sourced in appropriate Location Source
 -- Use: i(ItemID, RecipeID, [timeline], [requireSkill])
 -- In situations where a specialization of a specific Profession is required, that can be passed as the 4th parameter
 -- Ex: Goblin Engineering, Gnomish Engineering, etc.
 
 -----------------
-ProfessionID = ALCHEMY;
+local i = GetRecipeHelperForProfession(ALCHEMY);
 -----------------
 -- #IF AFTER CLASSIC
 i(6454, 7935); -- Manual: Strong Anti-Venom
@@ -87,31 +62,7 @@ i(186991, 307144); -- Transmute: Stones to Ore
 -- #ENDIF
 
 -----------------
-ProfessionID = BLACKSMITHING;
------------------
--- #IF AFTER CLASSIC
--- #IF AFTER TBC
--- #IF AFTER WRATH
--- #IF AFTER CATA
--- #IF AFTER MOP
--- #IF AFTER WOD
--- #IF AFTER LEGION
--- #IF AFTER BFA
--- #IF AFTER SHADOWLANDS
-i(183094, 322590); -- Plans: Shadowsteel Helm
-i(183095, 322593); -- Plans: Shadowsteel Pauldrons
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
-
------------------
-ProfessionID = COOKING;
+i = GetRecipeHelperForProfession(COOKING);
 -----------------
 -- #IF AFTER CLASSIC
 i(21025, 25659); -- Recipe: Dirge's Kickin' Chimaerok Chops
@@ -148,7 +99,7 @@ i(187006, 354764); -- Recipe: Twilight Tea
 -- #ENDIF
 
 -----------------
-ProfessionID = ENGINEERING;
+i = GetRecipeHelperForProfession(ENGINEERING);
 -----------------
 -- #IF AFTER CLASSIC
 -- #IF AFTER TBC
@@ -174,7 +125,7 @@ i(183858, 310535); -- Schematic: Wormhole Generator: Shadowlands
 -- #ENDIF
 
 -----------------
-ProfessionID = INSCRIPTION;
+i = GetRecipeHelperForProfession(INSCRIPTION);
 -----------------
 -- #IF AFTER CLASSIC
 -- #IF AFTER TBC
@@ -209,7 +160,7 @@ i(187806, 359890); -- Vantus Rune Technique: Sepulcher of the First Ones
 -- #ENDIF
 
 -----------------
-ProfessionID = JEWELCRAFTING;
+i = GetRecipeHelperForProfession(JEWELCRAFTING);
 -----------------
 -- #IF AFTER CLASSIC
 -- #IF AFTER TBC
@@ -310,33 +261,7 @@ i(186994, 355189); -- Design: Shaded Stone Statue
 -- #ENDIF
 
 -----------------
-ProfessionID = LEATHERWORKING;
------------------
--- #IF AFTER CLASSIC
--- #IF AFTER TBC
--- #IF AFTER WRATH
--- #IF AFTER CATA
--- #IF AFTER MOP
--- #IF AFTER WOD
--- #IF AFTER LEGION
--- #IF AFTER BFA
--- #IF AFTER SHADOWLANDS
-i(187000, 355354); -- Pattern: Elusive Pet Treat
-i(183839, 308897); -- Pattern: Heavy Callous Hide
-i(183100, 324088); -- Pattern: Heavy Desolate Armor Kit
-i(186999, 354800); -- Pattern: Pallid Bone Flute
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
-
------------------
-ProfessionID = TAILORING;
+i = GetRecipeHelperForProfession(TAILORING);
 -----------------
 -- #IF AFTER CLASSIC
 -- #IF AFTER TBC

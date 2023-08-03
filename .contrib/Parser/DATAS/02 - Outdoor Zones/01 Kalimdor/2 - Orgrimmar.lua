@@ -2641,13 +2641,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				ach(1836, applyclassicphase(TBC_PHASE_ONE, {	-- Old Crafty
+				applyclassicphase(TBC_PHASE_ONE, ach(1836, {	-- Old Crafty
 					["provider"] = { "i", 34486 },	-- Old Crafty
-					["requireSkill"] = FISHING,
 					-- #if BEFORE WRATH
 					["description"] = "Fish up Old Crafty in Orgrimmar.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
+					["requireSkill"] = FISHING,
 				})),
 			}),
 			battlepets({
@@ -2950,7 +2949,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 168431,	-- Warlord Breka Grimaxe
 					["coord"] = { 48.3, 71.4, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -3104,7 +3103,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Complete the prerequisite quest, switch to another timeline, then switch back to Burning Crusade and you will get this quest.",
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["repeatable"] = true,
 				}),
 				q(60123, {	-- Burning Crusade: To Outland!
@@ -3112,7 +3111,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["isBreadcrumb"] = true,
 				}),
 				q(29219, {	-- Bwemba's Spirit
@@ -3145,7 +3144,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 				}),
@@ -3514,7 +3513,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(32673, {	-- Learn To Ride (Goblin)
 					["description"] = "This quest is available to Goblins upon reaching level 10.",
-					["timeline"] = { "added 5.2.0.16486" },
+					["timeline"] = { "added 5.2.0.16486", REMOVED_10_1_5 },
 					["races"] = { GOBLIN },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
@@ -3528,7 +3527,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(32669, {	-- Learn To Ride (Orc)
 					["description"] = "This quest is available to Orcs upon reaching level 10.",
-					["timeline"] = { "added 5.2.0.16486" },
+					["timeline"] = { "added 5.2.0.16486", REMOVED_10_1_5 },
 					["races"] = { ORC },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
@@ -3542,7 +3541,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(32667, {	-- Learn To Ride (Pandaren)
 					["description"] = "This quest is available to Pandaren upon reaching level 10.",
-					["timeline"] = { "added 5.2.0.16486" },
+					["timeline"] = { "added 5.2.0.16486", REMOVED_10_1_5 },
 					["races"] = { PANDAREN_HORDE },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
@@ -3573,7 +3572,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["repeatable"] = true,
 				}),
 				q(32471, {	-- Light Camera Action (H)
@@ -3652,7 +3651,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["repeatable"] = true,
 				}),
 				q(60126, {	-- Mists of Pandaria: To Pandaria!
@@ -3660,7 +3659,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["isBreadcrumb"] = true,
 				}),
 				q(1509, {	-- News of Dogran (1/2)
@@ -4147,7 +4146,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["repeatable"] = true,
 				}),
 				q(1944, {	-- Waters of Xavian
@@ -4246,14 +4245,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["description"] = "Complete the prerequisite quest, switch to another timeline, then switch back to Wrath of the Lich King and you will get this quest.",
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["repeatable"] = true,
 				}),
 				q(60097, {	-- Wrath of the Lich King: To Northrend!
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["isBreadcrumb"] = true,
 				}),
 				q(2382, {	-- Wrenix of Ratchet
@@ -4305,6 +4304,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(134831, {	-- Doomsayer's Robes (TOY!)
 							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
+				}),
+			}),
+			-- #endif
+			-- #if BEFORE TBC
+			n(RIDING_TRAINER, {
+				n(4752, {	-- Kildar <Wolf Riding Instructor>
+					["coord"] = { 69.2, 13.0, ORGRIMMAR },
+					["races"] = { ORC, TROLL, UNDEAD },
+
+					-- Available to Orcs without faction requirements.
+					["minReputation"] = { 76, EXALTED },	-- Orgrimmar, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. ORC .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
+					["groups"] = {
+						recipe(825, {	-- Wolf Riding
+							["cost"] = 200000,
+							["lvl"] = 40,
 						}),
 					},
 				}),
@@ -5142,10 +5164,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(5643, {	-- Recipe: Great Rage Potion
+						i(5643, {	-- Recipe: Great Rage Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5640, {	-- Recipe: Rage Potion
+						i(5640, {	-- Recipe: Rage Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -5410,7 +5432,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(13478, {	-- Recipe: Elixir of Superior Defense
 							["isLimited"] = true,
 						}),
-						i(5642, {	-- Recipe: Free Action Potion
+						i(5642, {	-- Recipe: Free Action Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -6702,7 +6724,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						}),
 						i(22729, {	-- Schematic: Steam Tonk Controller
-							["timeline"] = { "created 1.12.1", "added 2.1.0" },
+							["timeline"] = { "created 1.12.1", "added 2.3.0" },
 							["isLimited"] = true,
 						}),
 					},
@@ -7064,7 +7086,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 						i(22729, {	-- Schematic: Steam Tonk Controller
-							["timeline"] = { "created 1.12.1", "added 2.1.0" },
+							["timeline"] = { "created 1.12.1", "added 2.3.0" },
 							["isLimited"] = true,
 						}),
 					},
@@ -7311,7 +7333,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 						i(22729, {	-- Schematic: Steam Tonk Controller
-							["timeline"] = { "created 1.12.1", "added 2.1.0" },
+							["timeline"] = { "created 1.12.1", "added 2.3.0" },
 							["isLimited"] = true,
 						}),
 					},

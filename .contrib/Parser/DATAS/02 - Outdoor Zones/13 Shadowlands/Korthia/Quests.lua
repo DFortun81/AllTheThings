@@ -378,18 +378,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 63.0, 25.6, KORTHIA },
 					["g"] = {
-						i(187218, {	-- Tome of Origins
-							recipe(352443, {	-- Vestige of Origins
-								["requireSkill"] = JEWELCRAFTING,
-							}),
-							recipe(352445, {	-- Vestige of Origins
-								["requireSkill"] = TAILORING,
-							}),
-							recipe(352439, {	-- Vestige of Origins
+						i(187218, {	-- Tome of Origins (RECIPE!)
+							r(352439, {	-- Vestige of Origins (RECIPE!)
 								["requireSkill"] = BLACKSMITHING,
 							}),
-							recipe(352444, {	-- Vestige of Origins
+							r(352443, {	-- Vestige of Origins (RECIPE!)
+								["requireSkill"] = JEWELCRAFTING,
+							}),
+							r(352444, {	-- Vestige of Origins (RECIPE!)
 								["requireSkill"] = LEATHERWORKING,
+							}),
+							r(352445, {	-- Vestige of Origins (RECIPE!)
+								["requireSkill"] = TAILORING,
 							}),
 						}),
 					},

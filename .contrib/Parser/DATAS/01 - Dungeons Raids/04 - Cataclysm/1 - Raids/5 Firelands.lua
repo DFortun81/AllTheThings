@@ -579,11 +579,8 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 							HELM_PROT,	-- Crown of the Fiery Protector
 							HELM_VANQ,	-- Crown of the Fiery Vanquisher
 							i(69224),	-- Pureblood Fire Hawk (MOUNT!)
-							i(175158, {	-- Flames of Fury (Bag of Tricks addition)
-								["races"] = { VULPERA },
-								["questID"] = 59029,
-								["timeline"] = { "added 8.3.0.33115" },
-								["ignoreBonus"] = true,
+							ig(175158, {	-- Flames of Fury (RI!)
+								["timeline"] = { ADDED_8_3_0 },
 							}),
 							i(71798),	-- Sho'ravon, Greatstaff of Annihilation
 							i(71352),	-- Sulfuras, the Extinguished Hand
