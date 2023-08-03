@@ -893,6 +893,8 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["timeline"] = { REMOVED_4_0_3 },
 		}),
 	}),
+	-- The Re-release of scholomance should allow the summon of this boss once again, however the item required to summon him is one time.
+	-- To get the summon item again, you would have to abandon the quest and pick it up again, which you cant. -- Gold 2nd August 2023
 	n(14516, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Death Knight Darkreaver
 		["cost"] = { { "i", 18746, 1 } },	-- Divination Scryer
 		["groups"] = {
