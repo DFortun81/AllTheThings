@@ -337,14 +337,15 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							["description"] = "|cFFFF0000If you get an Item which is removed from the game or was never available before,\nplease let us know in the ATT Discord.|r\nThis Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r",
 							["groups"] = {
 								-- Cloth
-								ig(2114),	-- Snowy Robe			(Removed)
+								ig(2114),	-- Snowy Robe				(Removed)
+								ig(3260),	-- Scarlet Initiate Robes	(Removed)
 								-- Leather
 								-- Mail
-								ig(114389),	-- Element-Binder Helm 	(Never added)
-								ig(93086),	-- Swashbuckling Vest 	(Never added)
+								ig(114389),	-- Element-Binder Helm		(Never added)
+								ig(93086),	-- Swashbuckling Vest		(Never added)
 								
-								ig(134732),	-- Frigidlink Armor		(Removed)
-								ig(120952),	-- Slarkhide			(Removed)
+								ig(134732),	-- Frigidlink Armor			(Removed)
+								ig(120952),	-- Slarkhide				(Removed)
 								-- Plate
 							},
 						}),

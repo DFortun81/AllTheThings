@@ -8,6 +8,7 @@ WHELP_DAYCARE = createHeader({
 	icon = "Interface\\Icons\\inv_dragonwhelpoutland2_cutepink",
 	text = {
 		en = "Little Scales Daycare",
+		ru = "Драконьи ясли",
 	},
 });
 

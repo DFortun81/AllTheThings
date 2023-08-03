@@ -6,6 +6,14 @@ EON_FRINGE = createHeader({
 	icon = "Interface\\Icons\\inv_belt_armor_waistoftime_d_01",
 	text = {
 		en = "Eon's Fringe",
+		de = "Grenze des Äons",
+		es = "Margen del Eón",
+        fr = "marges des Éons",
+		it = "Confine degli Eoni",
+		pt = "Orla do Eon",
+        ru = "Грань Эпохи",
+		ko = "영겁의 끝자락",
+        cn = "纪元边界",
 	},
 });
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
