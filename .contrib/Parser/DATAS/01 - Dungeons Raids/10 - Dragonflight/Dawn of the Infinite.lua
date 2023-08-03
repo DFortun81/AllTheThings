@@ -390,6 +390,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 								-- Cloth
 								-- Leather
 								-- Mail
+								ig(1445),	-- Blackrock Pauldrons				(Removed)
 								ig(3231),	-- Cutthroat Pauldrons				(Removed)
 								
 								ig(18320),	-- Demonheart Spaulders				(Never added)
