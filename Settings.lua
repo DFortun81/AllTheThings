@@ -2200,7 +2200,7 @@ local checkboxShowAllHighChance = child:CreateCheckBox(L["HIGH_CHANCE_ALL"],
 function(self)
 	local anyFiltered = false
 	for k,v in pairs(unobtainables) do
-		if v[1] == 3 then
+		if v[1] == 2 or v[1] == 3 then
 			if not settings:GetValue("Unobtainable", k) then
 				anyFiltered = true
 			end
@@ -2213,7 +2213,7 @@ end,
 function(self)
 	local checked = self:GetChecked()
 	for k,v in pairs(unobtainables) do
-		if v[1] == 3 then
+		if v[1] == 2 or v[1] == 3 then
 			settings:SetValue("Unobtainable", k, checked)
 		end
 	end
@@ -2224,7 +2224,7 @@ checkboxShowAllHighChance:AlignBelow(last, -1)
 last = checkboxShowAllHighChance
 count = 0
 for k,v in pairs(unobtainables) do
-	if v[1] == 3 then
+	if v[1] == 2 or v[1] == 3 then
 		local filter = child:CreateCheckBox(v[3],
 		function(self)
 			self:SetChecked(settings:GetValue("Unobtainable", k))
@@ -3961,8 +3961,16 @@ checkboxReportUnsourced:SetATTTooltip(L["REPORT_UNSORTED_CHECKBOX_TOOLTIP"])
 checkboxReportUnsourced:AlignBelow(checkboxReportQuests, 1)
 
 -- Column 2
+local headerIconLegend = child:CreateHeaderLabel(L["ICON_LEGEND_LABEL"])
+headerIconLegend:SetPoint("TOPLEFT", headerCelebrations, 320, 0)
+
+local textIconLegend = child:CreateTextLabel(L["ICON_LEGEND_TEXT"])
+textIconLegend:SetPoint("TOPLEFT", headerIconLegend, "BOTTOMLEFT", 0, -4)
+textIconLegend:SetWidth(320)
+
 local headerChatCommands = child:CreateHeaderLabel(L["CHAT_COMMANDS_LABEL"])
-headerChatCommands:SetPoint("TOPLEFT", headerCelebrations, 320, 0)
+headerChatCommands:SetPoint("LEFT", headerIconLegend, 0, 0)
+headerChatCommands:SetPoint("TOP", textIconLegend, "BOTTOM", 0, -15)
 
 local textChatCommands = child:CreateTextLabel(L["CHAT_COMMANDS_TEXT"])
 textChatCommands:SetPoint("TOPLEFT", headerChatCommands, "BOTTOMLEFT", 0, -4)

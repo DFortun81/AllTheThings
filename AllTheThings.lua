@@ -4259,10 +4259,10 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 					end
 					-- doesn't meet current unobtainable filters
 					if not app.RecursiveUnobtainableFilter(j) then
-						tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-DnD:0|t");
+						tinsert(unfiltered, text .. " |TInterface\\AddOns\\AllTheThings\\assets\\status-unobtainable.blp:0|t");
 					-- from obtainable, different character source
 					elseif not app.RecursiveCharacterRequirementsFilter(j) then
-						tinsert(temp, text .. " |TInterface\\FriendsFrame\\StatusIcon-Away:0|t");
+						tinsert(temp, text .. " |TInterface\\FriendsFrame\\StatusIcon-Offline:0|t");
 					else
 						-- check if this needs an unobtainable icon even though it's being shown
 						uTexture = GetUnobtainableTexture(
