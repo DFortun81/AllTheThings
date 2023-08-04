@@ -85,6 +85,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["isDaily"] = true,
 			["coord"] = { 36.9, 11.2, NAZJATAR },
 			["crs"] = { 150248 },	-- Brinestone Deposit
+			["description"] = "First complete the white item version of Brinestone Pickaxe (/att quest:55531), which can drop from any rare or treasure in Nazjatar.\n\nAfter you completed 'What Will It Mine?', you are now eligible to loot the green quality Brinestone Pickaxe from Chitterspine Encroachers around Avarius' location.\n\nOnce you obtained the green quality Brinestone Pickaxe, you can interact with the stone at the Rare's Location to start the summoning ritual.\n\nYou have to collect 5 different colored shards, which are mined from nearby untrackable Brinestone Deposits & put the correct shard into each pillar.\n\nThere are 7 Deposits, within max. 50-60 yards of the event, can be mined without the mining profession & have 1 minute respawn timer.\n\nThe mining recipes are not bound to a daily lockout & can be farmed.\n\nRespawn timer of the Event is roughly 20 minutes.",
 			["g"] = {
 				i(169373, {	-- Brinestone Algan (PET!)
 					crit(13, {	-- Brinestone Algan
@@ -786,6 +787,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			n(QUESTS, {
 				q(56582),	-- killing King Gakula in Warmode
 				q(56601),	-- Banescale the Packfather in Warmode
+				q(56884),	-- First time killing Avarius (as miner?)
 				q(56883, {["isDaily"]=true}),	-- using Brimstone Pickaxe to start Avarius
 				q(56885, {["isDaily"]=true}),	-- throwing Chum into the water to summon Vor'koth
 				q(56886, {["isDaily"]=true}),	-- after killing Vor'koth after throwing the Chum

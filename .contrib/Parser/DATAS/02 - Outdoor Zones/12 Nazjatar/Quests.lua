@@ -1024,7 +1024,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["g"] = {
 				i(169911, {	-- Liberated Naga Cache
 					currency(1721),	-- Prismatic Manapearl x10
-					i(168185),	-- Osmenite Ore x11
+				--	i(168185),	-- Osmenite Ore x11
 				}),
 			},
 		}),
@@ -2080,7 +2080,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["g"] = {
 				i(169911, {	-- Liberated Naga Cache
 					currency(1721),	-- Prismatic Manapearl x10
-					i(168185),	-- Osmenite Ore x11
+				--	i(168185),	-- Osmenite Ore x11
 				}),
 			},
 		}),
@@ -2488,6 +2488,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		q(55531, {	-- What Will It Mine?
 			["description"] = "Brinestone Pickaxe can drop from any rare in Nazjatar or be mined from Osmenite Deposits or Seams.",
 			["provider"] = { "i", 168081 },	-- Brinestone Pickaxe
+			["_drop"] = { "g" },	-- Drop Osmemite Ore
 			["g"] = {
 				currency(1721),	-- Prismatic Manapearl
 			},

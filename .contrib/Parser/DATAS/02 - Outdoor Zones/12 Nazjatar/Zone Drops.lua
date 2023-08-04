@@ -186,6 +186,13 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				}),
 			},
 		}),
+		i(167012, {	-- Brinestone Pickaxe
+			["description"] = "Drops commonly from Chitterspine Encroachers in the north north west of Nazjatar, after completing the white item version of Brinestone Pickaxe (/att quest:55531)",
+			["coord"] = { 36.8, 13.1, NAZJATAR },
+			["crs"] = {	-- 
+				153804,	-- Chitterspine Encroacher
+			},
+		}),
 		i(168155, {	-- Chum
 			["crs"] = {	-- drops from additional mobs. this is all > 1% on WH
 				153310,	-- Qalina, Spear of Ice
