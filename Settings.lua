@@ -1916,6 +1916,13 @@ checkboxDebugMode:AlignBelow(checkboxShowAllTrackableThings)
 -- Column 2
 local headerGeneralContent = child:CreateHeaderLabel(L["GENERAL_CONTENT"])
 headerGeneralContent:SetPoint("TOPLEFT", headerAccountThings, 320, 0)
+headerGeneralContent.OnRefresh = function(self)
+	if settings:Get("DebugMode") then
+		self:SetAlpha(0.4)
+	else
+		self:SetAlpha(1)
+	end
+end
 
 local checkboxShowUnboundItems = child:CreateCheckBox(L["SHOW_BOE_CHECKBOX"],
 function(self)
@@ -2028,10 +2035,24 @@ checkboxShowPvP:AlignBelow(checkboxShowPetBattles)
 local headerAutomatedContent = child:CreateHeaderLabel(L["CUSTOM_FILTERS_LABEL"])
 headerAutomatedContent:SetPoint("TOP", checkboxShowPvP, "BOTTOM", 0, -10)
 headerAutomatedContent:SetPoint("LEFT", headerGeneralContent, 0, 0)
+headerAutomatedContent.OnRefresh = function(self)
+	if settings:Get("DebugMode") then
+		self:SetAlpha(0.4)
+	else
+		self:SetAlpha(1)
+	end
+end
 
 local textAutomatedContentExplain = child:CreateTextLabel(L["CUSTOM_FILTERS_EXPLAIN_LABEL"])
 textAutomatedContentExplain:SetPoint("TOPLEFT", headerAutomatedContent, "BOTTOMLEFT", 0, -4)
 textAutomatedContentExplain:SetWidth(320)
+textAutomatedContentExplain.OnRefresh = function(self)
+	if settings:Get("DebugMode") then
+		self:SetAlpha(0.4)
+	else
+		self:SetAlpha(1)
+	end
+end
 
 	-- Automated Content toggles
 	local insane_color = app.ccColors.Insane
@@ -2118,6 +2139,13 @@ textAutomatedContentExplain:SetWidth(320)
 
 local headerUnobtainableContent = child:CreateHeaderLabel(L["UNOBTAINABLE_LABEL"])
 headerUnobtainableContent:SetPoint("TOPLEFT", ccCheckbox, "BOTTOMLEFT", 0, -10)	-- Place under the last Automated Content checkbox
+headerUnobtainableContent.OnRefresh = function(self)
+	if settings:Get("DebugMode") then
+		self:SetAlpha(0.4)
+	else
+		self:SetAlpha(1)
+	end
+end
 
 	local unobtainables = L["UNOBTAINABLE_ITEM_REASONS"]
 
@@ -2133,8 +2161,13 @@ local checkboxShowAllUnobtainable = child:CreateCheckBox(L["UNOBTAINABLE_ALL"],
 		end
 		self:SetChecked(not anyFiltered)
 		settings:SetValue("Unobtainable", "DoFiltering", anyFiltered)
-		self:Enable()
-		self:SetAlpha(1)
+		if settings:Get("DebugMode") then
+			self:Disable()
+			self:SetAlpha(0.4)
+		else
+			self:Enable()
+			self:SetAlpha(1)
+		end
 	end,
 	function(self)
 		local checked = self:GetChecked()
@@ -2157,8 +2190,13 @@ function(self)
 		end
 	end
 	self:SetChecked(not anyFiltered)
-	self:Enable()
-	self:SetAlpha(1)
+	if settings:Get("DebugMode") then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
 end,
 function(self)
 	local checked = self:GetChecked()
@@ -2178,8 +2216,13 @@ for k,v in pairs(unobtainables) do
 		local filter = child:CreateCheckBox(v[3],
 		function(self)
 			self:SetChecked(settings:GetValue("Unobtainable", k))
-			self:Enable()
-			self:SetAlpha(1)
+			if settings:Get("DebugMode") then
+				self:Disable()
+				self:SetAlpha(0.4)
+			else
+				self:Enable()
+				self:SetAlpha(1)
+			end
 		end,
 		function(self)
 			settings:SetValue("Unobtainable", k, self:GetChecked())
@@ -2207,8 +2250,13 @@ function(self)
 		end
 	end
 	self:SetChecked(not anyFiltered)
-	self:Enable()
-	self:SetAlpha(1)
+	if settings:Get("DebugMode") then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
 end,
 function(self)
 	local checked = self:GetChecked()
@@ -2228,8 +2276,13 @@ for k,v in pairs(unobtainables) do
 		local filter = child:CreateCheckBox(v[3],
 		function(self)
 			self:SetChecked(settings:GetValue("Unobtainable", k))
-			self:Enable()
-			self:SetAlpha(1)
+			if settings:Get("DebugMode") then
+				self:Disable()
+				self:SetAlpha(0.4)
+			else
+				self:Enable()
+				self:SetAlpha(1)
+			end
 		end,
 		function(self)
 			settings:SetValue("Unobtainable", k, self:GetChecked())
@@ -2250,9 +2303,23 @@ end
 local headerWeaponsAndArmor = child:CreateHeaderLabel(L["ITEM_FILTER_LABEL"])
 headerWeaponsAndArmor:SetPoint("LEFT", headerMode, 0, 0)
 headerWeaponsAndArmor:SetPoint("TOP", last, "BOTTOM", 0, -10)	-- Place under the last Unobtainable Content checkbox
+headerWeaponsAndArmor.OnRefresh = function(self)
+	if settings:Get("DebugMode") then
+		self:SetAlpha(0.4)
+	else
+		self:SetAlpha(1)
+	end
+end
 
 local textWeaponsAndArmorExplain = child:CreateTextLabel(L["ITEM_EXPLAIN_LABEL"])
 textWeaponsAndArmorExplain:SetPoint("TOPLEFT", headerWeaponsAndArmor, "BOTTOMLEFT", 0, -4)
+textWeaponsAndArmorExplain.OnRefresh = function(self)
+	if settings:Get("DebugMode") then
+		self:SetAlpha(0.4)
+	else
+		self:SetAlpha(1)
+	end
+end
 
 -- Stuff to automatically generate the armor & weapon checkboxes
 local last, xoffset, yoffset = headerWeaponsAndArmor, 0, -4
