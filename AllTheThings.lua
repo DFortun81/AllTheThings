@@ -14196,22 +14196,22 @@ end	-- Filtering
 do
 local DefaultGroupVisibility, DefaultThingVisibility;
 local UpdateGroups;
-local RecursiveGroupRequirementsFilter, GroupRequirementsFilter, GroupFilter, GroupVisibilityFilter, ThingVisibilityFilter, TrackableFilter
+local RecursiveGroupRequirementsFilter, GroupFilter, GroupVisibilityFilter, ThingVisibilityFilter, TrackableFilter
 local FilterSet, FilterGet, Filters_ItemUnbound, ItemUnboundSetting
 -- Local caches for some heavily used functions within updates
 local function CacheFilterFunctions()
-	FilterSet = app.Modules.Filter.Set
-	FilterGet = app.Modules.Filter.Get
-	Filters_ItemUnbound = app.Modules.Filter.Filters.ItemUnbound
+	local FilterApi = app.Modules.Filter;
+	FilterSet = FilterApi.Set
+	FilterGet = FilterApi.Get
+	Filters_ItemUnbound = FilterApi.Filters.ItemUnbound
 	ItemUnboundSetting = FilterGet.ItemUnbound()
 	RecursiveGroupRequirementsFilter = app.RecursiveGroupRequirementsFilter;
-	GroupRequirementsFilter = app.GroupRequirementsFilter;
 	GroupFilter = app.GroupFilter;
 	GroupVisibilityFilter, ThingVisibilityFilter = app.GroupVisibilityFilter, app.CollectedItemVisibilityFilter;
 	TrackableFilter = app.ShowTrackableThings;
 	DefaultGroupVisibility, DefaultThingVisibility = app.DefaultGroupFilter(), app.DefaultThingFilter();
-	app.PrintDebug("CacheFilterFunctions")
-	app.PrintDebug("ItemUnboundSetting",ItemUnboundSetting)
+	-- app.PrintDebug("CacheFilterFunctions")
+	-- app.PrintDebug("ItemUnboundSetting",ItemUnboundSetting)
 end
 local function SetGroupVisibility(parent, group)
 	local forceShowParent;

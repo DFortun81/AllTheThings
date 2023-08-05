@@ -30,7 +30,7 @@ api.Set = {};
 -- Function that allows defining whether that specific Filter will be applied
 api.Get = {}
 --- api.Get[FilterName]() or api.Get.FilterName()
--- Function that allows defining whether that specific Filter will be applied
+-- Function that allows checking whether that specific Filter will be applied
 api.SettingsFilters = {}
 -- api.SettingsFilters.FilterFunction
 -- Allows accessing the direct SettingsFilter functions which are sometimes required explicitly
@@ -149,7 +149,7 @@ api.Set.ItemUnbound = function(active)
 		SettingsFilterItemUnbound = Filter;
 	end
 end
-api.Get.ItemUnbound = function() app.PrintDebug(SettingsFilterItemUnbound,ItemUnbound) return SettingsFilterItemUnbound == ItemUnbound end
+api.Get.ItemUnbound = function() return SettingsFilterItemUnbound == ItemUnbound end
 
 -- FilterID
 local SettingsFilterFilterID;
