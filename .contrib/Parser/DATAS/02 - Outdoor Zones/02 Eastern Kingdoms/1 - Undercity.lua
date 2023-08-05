@@ -1238,7 +1238,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(9301, {	-- Recipe: Elixir of Shadow Power (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(13477, {	-- Recipe: Superior Mana Potion
+						i(13477, {	-- Recipe: Superior Mana Potion (RECIPE!)
 							["timeline"] = { "removed 2.0.1" },	-- Moved to Trainers
 						}),
 					},

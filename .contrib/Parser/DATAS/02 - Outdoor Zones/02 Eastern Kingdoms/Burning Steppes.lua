@@ -1864,7 +1864,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 7035,	-- Firegut Brute
 				}),
-				i(13476, {	-- Recipe: Mighty Rage Potion
+				i(13476, {	-- Recipe: Mighty Rage Potion (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 7027,	-- Blackrock Slayer
 				}),

@@ -2362,7 +2362,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 						["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
 					}),
 				-- Recipes!!
-					i(13497, {	-- Recipe: Greater Arcane Protection Potion
+					i(13497, {	-- Recipe: Greater Arcane Protection Potion (RECIPE!)
 						["cost"] = { { "c", 1166, 1500 } },	-- 1500x Timewarped Badge
 						["timeline"] = { "timewalking 9.1" },
 					}),

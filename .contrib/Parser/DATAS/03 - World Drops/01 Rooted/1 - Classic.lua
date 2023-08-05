@@ -3419,12 +3419,12 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(3394),	-- Recipe: Elixir of Poison Resistance / Recipe: Potion of Curing [TBC+] (RECIPE!)
 			-- #endif
 			-- #if BEFORE 3.2.0
-			i(13518),	-- Recipe: Flask of Petrification / Recipe: Potion of Petrification [3.2.0+]
+			i(13518),	-- Recipe: Flask of Petrification / Recipe: Potion of Petrification [3.2.0+] (RECIPE!)
 			-- #endif
-			i(13493, {	-- Recipe: Greater Arcane Elixir
+			i(13493, {	-- Recipe: Greater Arcane Elixir (RECIPE!)
 				["timeline"] = { "removed 2.0.1" },
 			}),
-			i(13490),	-- Recipe: Greater Stoneshield Potion
+			i(13490),	-- Recipe: Greater Stoneshield Potion (RECIPE!)
 			i(9295),	-- Recipe: Invisibility Potion (RECIPE!)
 			i(3395),	-- Recipe: Limited Invulnerability Potion (RECIPE!)
 			i(9293, {	-- Recipe: Magic Resistance Potion (RECIPE!)
@@ -3438,16 +3438,16 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(3394),	-- Recipe: Potion of Curing [TBC+] / Recipe: Elixir of Poison Resistance (RECIPE!)
 			-- #endif
 			-- #if AFTER 3.2.0
-			i(13518),	-- Recipe: Potion of Petrification [3.2.0+] / Recipe: Flask of Petrification
+			i(13518),	-- Recipe: Potion of Petrification [3.2.0+] / Recipe: Flask of Petrification (RECIPE!)
 			-- #endif
-			i(13492, {	-- Recipe: Purification Potion
+			i(13492, {	-- Recipe: Purification Potion (RECIPE!)
 				["timeline"] = { "removed 3.0.1" },
 			}),
 			i(2555),	-- Recipe: Swiftness Potion (RECIPE!)
-			i(13489),	-- Recipe: Transmute Earth to Life
-			i(13488),	-- Recipe: Transmute Life to Earth
-			i(13486),	-- Recipe: Transmute Undeath to Water
-			i(13487),	-- Recipe: Transmute Water to Undeath
+			i(13489),	-- Recipe: Transmute Earth to Life (RECIPE!)
+			i(13488),	-- Recipe: Transmute Life to Earth (RECIPE!)
+			i(13486),	-- Recipe: Transmute Undeath to Water (RECIPE!)
+			i(13487),	-- Recipe: Transmute Water to Undeath (RECIPE!)
 		}),
 		prof(BLACKSMITHING, {
 			i(7992),	-- Plans: Blue Glittering Axe (RECIPE!)

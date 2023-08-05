@@ -2317,7 +2317,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				}),
 				n(9499, {	-- Plugger Spazzring
 					i(15759),	-- Pattern: Black Dragonscale Breastplate (RECIPE!)
-					i(13483),	-- Recipe: Transmute Fire to Earth
+					i(13483),	-- Recipe: Transmute Fire to Earth (RECIPE!)
 					i(11325),	-- Dark Iron Ale Mug
 				}),
 				n(45843, {	-- Yuka Screwspigot <Engineering Supplies>

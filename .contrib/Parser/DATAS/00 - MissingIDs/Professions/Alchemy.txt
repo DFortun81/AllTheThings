@@ -52,41 +52,6 @@ Missing in AlchemyItemDB.lua
 0.7.0.3694
 r(11454),	-- Inlaid Mithril Cylinder
 r(11456),	-- Goblin Rocket Fuel
-1.0.0.3980
-r(15833),	-- Dreamless Sleep Potion
-r(17187),	-- Transmute: Arcanite
-r(17551),	-- Stonescale Oil
-r(17552),	-- Mighty Rage Potion
-r(17553),	-- Superior Mana Potion
-r(17554),	-- Elixir of Superior Defense
-r(17555),	-- Elixir of the Sages
-r(17556),	-- Major Healing Potion
-r(17557),	-- Elixir of Brute Force
-r(17559),	-- Transmute: Air to Fire
-r(17560),	-- Transmute: Fire to Earth
-r(17561),	-- Transmute: Earth to Water
-r(17562),	-- Transmute: Water to Air
-r(17563),	-- Transmute: Undeath to Water
-r(17564),	-- Transmute: Water to Undeath
-r(17565),	-- Transmute: Life to Earth
-r(17566),	-- Transmute: Earth to Life
-r(17570),	-- Greater Stoneshield Potion
-r(17571),	-- Elixir of the Mongoose
-r(17572),	-- Purification Potion
-r(17573),	-- Greater Arcane Elixir
-r(17574),	-- Greater Fire Protection Potion
-r(17575),	-- Greater Frost Protection Potion
-r(17576),	-- Greater Nature Protection Potion
-r(17577),	-- Greater Arcane Protection Potion
-r(17578),	-- Greater Shadow Protection Potion
-r(17579),	-- Greater Holy Protection Potion
-r(17580),	-- Major Mana Potion
-r(17632),	-- Alchemist Stone \\ Alchemist's Stone
-r(17634),	-- Potion of Petrification \\ Flask of Petrification
-r(17635),	-- Flask of the Titans
-r(17636),	-- Flask of Distilled Wisdom
-r(17637),	-- Flask of Supreme Power
-r(17638),	-- Flask of Chromatic Resistance
 1.13.0.28211
 r(21923),	-- Elixir of Frost Power
 r(22430),	-- Refined Scale of Onyxia

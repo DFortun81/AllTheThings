@@ -1193,7 +1193,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				i(15775, {	-- Pattern: Volcanic Shoulders (RECIPE!)
 					["cr"] = 9260,	-- Firebrand Legionnaire
 				}),
-				i(13494, {	-- Recipe: Greater Fire Protection Potion
+				i(13494, {	-- Recipe: Greater Fire Protection Potion (RECIPE!)
 					["crs"] = {
 						9262,	-- Firebrand Invoker
 						9264,	-- Firebrand Pyromancer
@@ -1782,7 +1782,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				n(10339, {	-- Gyth <Rend Blackhand's Mount>
 					["timeline"] = { "removed 6.0.2" },
 					["groups"] = {
-						i(13522, {	-- Recipe: Flask of Chromatic Resistance
+						i(13522, {	-- Recipe: Flask of Chromatic Resistance (RECIPE!)
 							["timeline"] = { "removed 5.0.4" },
 						}),
 						i(12871, {	-- Chromatic Carapace
@@ -1969,7 +1969,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						i(15730, {	-- Pattern: Red Dragonscale Breastplate (RECIPE!)
 							["timeline"] = { "removed 6.0.2" },
 						}),
-						i(13519, {	-- Recipe: Flask of the Titans
+						i(13519, {	-- Recipe: Flask of the Titans (RECIPE!)
 							["timeline"] = { "removed 6.0.2" },
 						}),
 						i(12592, {	-- Blackblade of Shahram

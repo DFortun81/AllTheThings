@@ -919,7 +919,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["cost"] = { { "i", 13752, 1 } },	-- Soulbound Keepsake
 			["description"] = "Use the Keepsake on him before he dies to turn him back into a human.",
 		}),
-		i(13521),	-- Recipe: Flask of Supreme Power
+		i(13521),	-- Recipe: Flask of Supreme Power (RECIPE!)
 		i(14487),	-- Bonechill Hammer
 		i(13952),	-- Iceblade Hacker
 		i(18696),	-- Intricately Runed Shield
@@ -1056,7 +1056,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				["classes"] = { WARLOCK },
 				-- #endif
 			}),
-			i(13501),	-- Recipe: Major Mana Potion
+			i(13501),	-- Recipe: Major Mana Potion (RECIPE!)
 			i(13937),	-- Headmaster's Charge
 			i(13938),	-- Bonecreeper Stylus
 			i(13953),	-- Silent Fang

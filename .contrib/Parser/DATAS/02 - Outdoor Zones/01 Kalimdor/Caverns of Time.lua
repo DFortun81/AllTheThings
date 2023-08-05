@@ -178,7 +178,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if ANYCLASSIC
 						applyclassicphase(TBC_PHASE_FOUR, i(185925)),	-- Pattern: Greater Drums of Panic (RECIPE!)
 						-- #endif
-						i(31355),	-- Recipe: Flask of Supreme Power
+						i(31355),	-- Recipe: Flask of Supreme Power (RECIPE!)
 					},
 				}),
 				n(155944, {	-- Otela <Time-Lost Baubles>

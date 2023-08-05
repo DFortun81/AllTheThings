@@ -3,7 +3,6 @@ local appName, app = ...;
 local keys = {
 ["ITEM_NAMES"]={
 [2554]="Deprecated Recipe: Elixir of Fortitude",
-[13500]="Recipe: Greater Holy Protection Potion",
 [20946]="Tactical Task Briefing III",
 [21246]="Combat Task Briefing I",
 [21247]="Combat Task Briefing II",

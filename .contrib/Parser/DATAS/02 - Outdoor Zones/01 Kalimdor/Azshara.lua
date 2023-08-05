@@ -2273,7 +2273,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },	-- Learned from trainer
 					["cr"] = 6201,	-- Legashi Rogue
 				}),
-				i(13491, {	-- Recipe: Elixir of the Mongoose
+				i(13491, {	-- Recipe: Elixir of the Mongoose (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 6201,	-- Legashi Rogue
 				}),

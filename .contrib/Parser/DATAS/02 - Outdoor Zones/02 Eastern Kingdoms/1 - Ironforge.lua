@@ -1938,7 +1938,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 66.6, 54.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(13478, {	-- Recipe: Elixir of Superior Defense
+						i(13478, {	-- Recipe: Elixir of Superior Defense (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(5642, {	-- Recipe: Free Action Potion (RECIPE!)

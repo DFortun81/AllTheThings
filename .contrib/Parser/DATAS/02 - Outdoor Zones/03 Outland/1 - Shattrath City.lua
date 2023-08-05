@@ -1751,8 +1751,8 @@ root(ROOTS.Zones, {
 							-- #if ANYCLASSIC
 							applyclassicphase(TBC_PHASE_FOUR, i(185926)),	-- Pattern: Greater Drums of Battle (RECIPE!)
 							-- #endif
-							i(13517),	-- Recipe: Alchemist Stone
-							i(31354),	-- Recipe: Flask of the Titans
+							i(13517),	-- Recipe: Alchemist Stone (RECIPE!)
+							i(31354),	-- Recipe: Flask of the Titans (RECIPE!)
 							i(22915),	-- Recipe: Transmute Primal Air to Fire
 							applyclassicphase(TBC_PHASE_TWO, i(35341)),	-- Satin Mantle
 							applyclassicphase(TBC_PHASE_TWO, i(35407)),	-- Savage Plate Chestpiece
@@ -2424,7 +2424,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { "removed 4.0.1" },
 							})),
 							i(22910),	-- Recipe: Elixir of Major Shadow Power
-							i(31357, {	-- Recipe: Flask of Chromatic Resistance
+							i(31357, {	-- Recipe: Flask of Chromatic Resistance (RECIPE!)
 								["timeline"] = { "removed 5.0.4" },
 							}),
 							i(30835),	-- Salvager's Hauberk

@@ -3606,7 +3606,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(19329),	-- Pattern: Golden Mantle of the Dawn (RECIPE!)
 						applyclassicphase(PHASE_THREE, i(19203)),	-- Plans: Girdle of the Dawn (RECIPE!)
 						applyclassicphase(PHASE_THREE, i(19205)),	-- Plans: Gloves of the Dawn (RECIPE!)
-						i(13482),	-- Recipe: Transmute Air to Fire
+						i(13482),	-- Recipe: Transmute Air to Fire (RECIPE!)
 						i(136928, {	-- Thaumaturgist's Orb (TOY!)
 							["timeline"] = { "added 7.0.3.22248" },
 							["classes"] = { PRIEST },
@@ -3833,7 +3833,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 8526,	-- Dark Caster
 				}),
-				i(13479, {	-- Recipe: Elixir of the Sages
+				i(13479, {	-- Recipe: Elixir of the Sages (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					["crs"] = {
 						9451,	-- Scarlet Archmage
@@ -3842,7 +3842,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						9452,	-- Scarlet Enchanter
 					},
 				}),
-				i(13499, {	-- Recipe: Greater Shadow Protection Potion
+				i(13499, {	-- Recipe: Greater Shadow Protection Potion (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					["crs"] = {
 						8546,	-- Dark Adept <Cult of the Damned>
