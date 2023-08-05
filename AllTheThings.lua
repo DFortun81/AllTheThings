@@ -12662,7 +12662,8 @@ local function GetAutomaticHeaderData(id, type)
 		local obj = app.SearchForObject(typeID, id, "key") or CreateObject({[typeID]=id});
 		if obj then
 			-- app.PrintDebug("Automatic Header",obj.name or obj.link)
-			return (obj.name or obj.link), obj.icon;
+			local name = obj.name or obj.link;
+			return not IsRetrieving(name) and name or nil, obj.icon;
 		else
 			app.print("Failed finding object/function for automatic header",type,id);
 		end
