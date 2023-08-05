@@ -1164,6 +1164,8 @@ app.MergeSkipFields = {
 	["modItemID"] = true,
 	["rawlink"] = true,
 	["sourceIgnored"] = true,
+	["costNested"] = true,
+	["hasUpgradeNested"] = true,
 	-- 1 -> only when cloning
 	["e"] = 1,
 	["u"] = 1,
@@ -7258,6 +7260,8 @@ local HeaderCloneFields = {
 	["trackable"] = app.ReturnNil,
 	["collectibleAsCost"] = app.ReturnNil,
 	["costCollectibles"] = app.ReturnNil,
+	["hasUpgradeNested"] = app.ReturnNil,
+	["costNested"] = app.ReturnNil,
 	["g"] = app.ReturnNil,
 	-- Filter-affecting fields
 	["customCollect"] = app.ReturnNil,
@@ -7286,6 +7290,8 @@ local FilterHeaderCloneFields = {
 	["trackable"] = app.ReturnNil,
 	["collectibleAsCost"] = app.ReturnNil,
 	["costCollectibles"] = app.ReturnNil,
+	["hasUpgradeNested"] = app.ReturnNil,
+	["costNested"] = app.ReturnNil,
 	["g"] = app.ReturnNil,
 	-- ["back"] = function(t)
 	-- 	return 0.3;	-- visibility of which rows are cloned
@@ -18536,7 +18542,7 @@ end
 app.GetCustomWindowParam = function(suffix, name)
 	local params = customWindowUpdates.params[suffix];
 	-- app.PrintDebug("GetCustomWindowParam",suffix,name,params and params[name])
-	return params and params[name];
+	return params and params[name] or nil;
 end
 -- Defines the value of the specific attribute for the given window suffix
 app.SetCustomWindowParam = function(suffix, name, value)
