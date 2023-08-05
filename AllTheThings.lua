@@ -20878,8 +20878,9 @@ customWindowUpdates["list"] = function(self, force, got)
 		local onlyMissing = app.GetCustomWindowParam("list", "missing");
 		local onlyCached = app.GetCustomWindowParam("list", "cached");
 		local harvesting = app.GetCustomWindowParam("list", "harvesting");
-		self.PartitionSize = app.GetCustomWindowParam("list", "part") or 1000;
-		self.Limit = app.GetCustomWindowParam("list", "limit") or 1000;
+		self.PartitionSize = tonumber(app.GetCustomWindowParam("list", "part")) or 1000;
+		self.Limit = tonumber(app.GetCustomWindowParam("list", "limit")) or 1000;
+		local min = tonumber(app.GetCustomWindowParam("list", "min")) or 0
 		-- print("Quests - onlyMissing",onlyMissing)
 		local CacheFields, ItemHarvester;
 
@@ -20991,8 +20992,6 @@ customWindowUpdates["list"] = function(self, force, got)
 			g = g,
 		}, PartitionMeta));
 
-		-- add a bunch of raw, delay-loaded objects in order into the window
-		local groupCount = math.ceil(self.Limit / self.PartitionSize) - 1;
 		local overrides = {
 			visible = not harvesting and true or nil,
 			indent = 2,
@@ -21050,9 +21049,12 @@ customWindowUpdates["list"] = function(self, force, got)
 			app.SetDGUDelay(0);
 			StartCoroutine("AutoHarvestFirstPartitionCoroutine", self.AutoHarvestFirstPartitionCoroutine);
 		end
+		-- add a bunch of raw, delay-loaded objects in order into the window
+		local groupCount = math.ceil(self.Limit / self.PartitionSize) - 1;
+		local groupStart = math.ceil(min / self.PartitionSize) - 1;
 		local partition, partitionStart, partitionGroups;
 		local dlo = app.DelayLoadedObject;
-		for j=0,groupCount,1 do
+		for j=groupStart,groupCount,1 do
 			partitionStart = j * self.PartitionSize;
 			partitionGroups = {};
 			-- define a sub-group for a range of things
@@ -23321,8 +23323,12 @@ end
 SLASH_AllTheThingsHARVESTER1 = "/attharvest";
 SLASH_AllTheThingsHARVESTER2 = "/attharvester";
 SlashCmdList["AllTheThingsHARVESTER"] = function(cmd)
+	app.SetCustomWindowParam("list", "reset", true);
 	app.SetCustomWindowParam("list", "type", "cache:item");
 	app.SetCustomWindowParam("list", "harvesting", true);
+	local args = { strsplit(",", string_lower(cmd)) };
+	app.SetCustomWindowParam("list", "min", args[1]);
+	app.SetCustomWindowParam("list", "limit", args[2]);
 	app:GetWindow("list"):Toggle();
 end
 
