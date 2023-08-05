@@ -2248,7 +2248,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						-- #if AFTER 4.0.3
-						i(20013),	-- Recipe: Living Action Potion
+						i(20013),	-- Recipe: Living Action Potion (RECIPE!)
 						-- #endif
 						i(13480, {	-- Recipe: Major Healing Potion (RECIPE!)
 							["timeline"] = { "removed 2.0.1" },	-- Moved to Trainers

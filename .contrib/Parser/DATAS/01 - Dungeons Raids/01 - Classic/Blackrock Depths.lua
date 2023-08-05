@@ -2311,7 +2311,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					applyclassicphase(PHASE_THREE, i(19212, {	-- Plans: Nightfall (RECIPE!)
 						["minReputation"] = { 59, EXALTED },	-- The Thorium Brotherhood, Exalted.
 					})),
-					applyclassicphase(PHASE_FIVE, i(20761, {	-- Recipe: Transmute Elemental Fire
+					applyclassicphase(PHASE_FIVE, i(20761, {	-- Recipe: Transmute Elemental Fire (RECIPE!)
 						["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
 					})),
 				}),

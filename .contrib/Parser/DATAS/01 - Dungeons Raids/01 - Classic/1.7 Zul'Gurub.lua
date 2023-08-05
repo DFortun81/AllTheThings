@@ -948,10 +948,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 						i(19779),	-- Plans: Darksoul Breastplate (RECIPE!)
 						i(19780),	-- Plans: Darksoul Leggings (RECIPE!)
 						i(19781),	-- Plans: Darksoul Shoulders (RECIPE!)
-						i(20012),	-- Recipe: Greater Dreamless Sleep Potion
-						i(20013),	-- Recipe: Living Action Potion
-						i(20011),	-- Recipe: Mageblood Potion
-						i(20014),	-- Recipe: Major Troll's Blood Potion
+						i(20012),	-- Recipe: Greater Dreamless Sleep Potion (RECIPE!)
+						i(20013),	-- Recipe: Living Action Potion (RECIPE!)
+						i(20011),	-- Recipe: Mageblood Potion (RECIPE!)
+						i(20014),	-- Recipe: Major Troll's Blood Potion (RECIPE!)
 						i(20000),	-- Schematic: Bloodvine Goggles
 						i(20001),	-- Schematic: Bloodvine Lens
 					},

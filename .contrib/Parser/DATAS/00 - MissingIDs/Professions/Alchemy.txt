@@ -53,17 +53,7 @@ Missing in AlchemyItemDB.lua
 r(11454),	-- Inlaid Mithril Cylinder
 r(11456),	-- Goblin Rocket Fuel
 1.13.0.28211
-r(21923),	-- Elixir of Frost Power
-r(22430),	-- Refined Scale of Onyxia
-r(22732),	-- Major Rejuvenation Potion
-r(22808),	-- Elixir of Greater Water Breathing
 r(24266),	-- Gurubashi Mojo Madness
-r(24365),	-- Mageblood Elixir \\ Mageblood Potion
-r(24366),	-- Greater Dreamless Sleep Potion
-r(24367),	-- Living Action Potion
-r(24368),	-- Mighty Troll's Blood Elixir \\ Major Troll's Blood Potion
-r(25146),	-- Transmute: Elemental Fire
-r(26277),	-- Elixir of Greater Firepower
 2.0.0.6080
 r(28543),	-- Elixir of Camouflage
 r(28544),	-- Elixir of Major Strength

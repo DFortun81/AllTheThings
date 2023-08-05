@@ -149,6 +149,48 @@ i(13477, 17553);	-- Superior Mana Potion (Recipe removed 2.0.1)
 i(13500, 17579);	-- Greater Holy Protection Potion
 
 -----------------
+-- PATCH 1.2.0 --
+-----------------
+-- ITEM --
+i(17709, 21923);	-- Elixir of Frost Power
+
+-----------------
+-- PATCH 1.4.0 --
+-----------------
+-- ITEM --
+i(18257, 22732);	-- Major Rejuvenation Potion
+
+-----------------
+-- PATCH 1.7.0 --
+-----------------
+-- ITEM --
+i(20013, 24367);	-- Living Action Potion
+-- REMOVED AND READDED WITH 10.0.7 --
+i(20011, 24365);	-- Mageblood Elixir (Renamed from Mageblood Potion in 2.1.0) (4.0.3)
+i(20014, 24368);	-- Mighty Troll's Blood Elixir (Renamed from Major Troll's Blood Potion in TBC.) (4.0.3)
+i(20012, 24366);	-- Greater Dreamless Sleep Potion (4.0.3)
+
+-----------------
+-- PATCH 1.9.0 --
+-----------------
+-- ITEM --
+i(20761, 25146);	-- Transmute: Elemental Fire
+
+------------------
+-- PATCH 1.10.0 --
+------------------
+-- ITEM --
+i(21547, 26277);	-- Elixir of Greater Firepower
+
+------------------
+-- PATCH 1.13.0 --
+------------------
+-- TRAINER --
+i(0, 22808);	-- Elixir of Greater Water Breathing
+-- NYI --
+i(0, 22430);	-- Refined Scale of Onyxia
+
+-----------------
 -- PATCH 2.0.1 --
 -----------------
 -- ITEM --
