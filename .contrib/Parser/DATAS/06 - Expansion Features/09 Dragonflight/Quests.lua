@@ -637,6 +637,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["provider"] = { "n", 186188 },	-- Sindragosa
 				["sourceQuests"] = { 72949 },	-- Swiftly to the Archives
 				["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
+				["maps"] = { 2183 },	-- The Azure Vault
 				["groups"] = {
 					i(197134),	-- Highland Drake: Spiked Legs (DM!)
 				},
