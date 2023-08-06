@@ -2994,9 +2994,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			})),
 			n(204964, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Twinkle <Madam Shadow's Minion>
 				["questID"] = 77158,
-				["sourceQuest"] = 75539,	-- Some Wicked Things This Way Come
-				["description"] = "Question Madam Shadow until you get punished.\n 1) Cast Corruption.\n 2) Cast Curse of Exhaustion\n 3) Cast Agony\n 4) Oh yeah, don't forget to RUN!",
+				["sourceQuest"] = 76430,	-- Beginning Impositions
+				["description"] = "Question Madam Shadow until you get punished.\n 1) Cast Corruption.\n 2) Cast Curse of Exhaustion\n 3) Cast Agony\n 4) Oh yeah, don't forget to RUN!\n\nNote: The QuestID on this NPC will become unobtainable after learning the Grimoire (if obtained elsewhere), though Party Sync can allow fighting the NPC again regardless.",
 				["classes"] = { WARLOCK },
+				["lockCriteria"] = {1,"questID",76747},	-- Grimoire of the Felfrost Imp
+				["DisablePartySync"] = true,
+				["coord"] = { 44.8, 78.8, DARKMOON_ISLAND },
 				["groups"] = {
 					i(207294),	-- Grimoire of the Felfrost Imp (CI!)
 				},
@@ -3121,6 +3124,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					i(97987, {	-- Well-Worn Blindfold
 						["timeline"] = { "added 5.3.0.16853", "deleted 7.0.3" },
 					}),
+				},
+			}),
+		}),
+		n(TREASURES, {
+			o(405068, {	-- Forgotten Grimoire
+				["sourceQuest"] = 75539,	-- Some Wicked Things This Way Come
+				["description"] = "Should you complete 'Fel Suspicions' (75639) without killing 'Twinkle', this will be available in the Darkmoon Faire Deathmatch.",
+				["timeline"] = { ADDED_10_1_5 },
+				["classes"] = { WARLOCK },
+				["coord"] = { 44.8, 78.8, DARKMOON_ISLAND },
+				["groups"] = {
+					i(207294),	-- Grimoire of the Felfrost Imp (CI!)
 				},
 			}),
 		}),
@@ -3396,7 +3411,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						["sym"] = { { "fill" } },	-- simply fill this item
 						["timeline"] = { "added 6.1.0.19445" },
 					})),
-					
+
 					-- Old Heirlooms
 					darkmoonprizeticket(50, i(42944, {	-- Balanced Heartseeker
 						["timeline"] = { "removed 6.1.0.19445" },
@@ -3485,7 +3500,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					darkmoonprizeticket(50, i(93903, {	-- Weathered Observer's Shield
 						["timeline"] = { "added 5.2.0.16408", "removed 6.1.0.19445" },
 					})),
-					
+
 					-- New Heirlooms
 					darkmoonprizeticket(50, i(122350, {	-- Balanced Heartseeker
 						["timeline"] = { "added 6.1.0.19445" },
@@ -3844,7 +3859,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 36.6, 58.6, DARKMOON_ISLAND },
 				["timeline"] = { "added 4.3.0.14942" },
 				["groups"] = {
-					
+
 					i(75029, {	-- Beer-Basted Short Ribs
 						["lore"] = "This may be made of dwarves.",
 						["timeline"] = { "added 4.3.0.14942", "removed 7.2.5.23993" },
