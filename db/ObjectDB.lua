@@ -4777,6 +4777,7 @@ _.ObjectNames = {
 	[404432] = "Bload Soaked Book",
 	[404480] = "Ragged Mantid Sword",
 	[404492] = "Gilded Vase",
+	[405068] = "Forgotten Grimoire",
 	[405388] = "Familiar Journal",
 	[9000000] = "Wind Sculpted Stone",
 	[9999890] = "Corrupted Loot",
