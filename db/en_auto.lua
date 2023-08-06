@@ -1164,6 +1164,7 @@ local keys = {
 [35470]="Unused",
 [35479]="Unused",
 [35499]="Blow up towers",
+[35504]="Iron Joker",
 [35551]="[Deprecated]",
 [35571]="Brutality in the Basin, Violence in the Valley",
 [35578]="Building an Ancient of War",

@@ -1700,7 +1700,25 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(29052),	-- A Cub's Cravings - completed with quest 29035
 		q(29053),	-- 'Borrowing' From the Winterfall - completed with quest 29037
 		q(29405),	-- The Lesson of the Iron Staff - completed with quest 30027 & 30033 & 30334 & 30335 & 30336 & 30337 & 30338
+		q(29447),	-- A Curious Crystal - completed with quest 29443
+		q(29449),	-- An Intriguing Grimoire - completed with quest 29445
+		q(29450),	-- A Wondrous Weapon - completed with quest 29446
+		q(29454),	-- The Master Strategist - completed with quest 29451
+		q(29465),	-- Tools of Divination - completed with quest 29464
+		q(29466),	-- Plenty of Plump Frogs - completed with quest 29513
+		q(29467),	-- Talkin' Tonks - completed with quest 29511
 		q(29468),	-- Baby Needs Two Pair of Shoes - completed with quest 29508
+		q(29469),	-- Rearm, Reuse, Recycle - completed with quest 29518
+		q(29470),	-- Tan My Hide - completed with quest 29519
+		q(29471),	-- Writing the Future - completed with quest 29515
+		q(29472),	-- Eyes on the Prizes - completed with quest 29517
+		q(29474),	-- Putting Trash to Good Use - completed with quest 29510
+		q(29478),	-- A Fizzy Fusion - completed with quest 29506
+		q(29479),	-- Herbs for Healing - completed with quest 29514
+		q(29480),	-- Banners, Banners Everywhere! - completed with quest 29520
+		q(29483),	-- Keeping the Faire Sparkling - completed with quest 29516
+		q(29484),	-- Putting the Crunch in the Frog - completed with quest 29509
+		q(29485),	-- Fun for the Little Ones - completed with quest 29507
 		q(29597),	-- The End of the Exarch - completed with quest 29596
 		q(29638),	-- UNUSED - completed with quest 29639 & 29646 & 29647
 		q(29673),	-- The Black Morass - completed with quest 10296
