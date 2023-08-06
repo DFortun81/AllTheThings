@@ -13,7 +13,7 @@ local function AwardsCost(amount)
 		-- #endif
 	};
 end
-profession(COOKING, {
+root(ROOTS.Professions, prof(COOKING, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 		ach(18817, {	-- Showoff Chef
 			["timeline"] = { ADDED_10_1_7 },
@@ -382,10 +382,10 @@ profession(COOKING, {
 		}),
 	})),
 	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
-		ach(12742, {	-- Kul Tiran Cook (A)
+		ach(12742, {	-- Kul Tiran Cook [A]
 			["races"] = ALLIANCE_ONLY,
 		}),
-		ach(12743, {	-- Zandalari Cook (H)
+		ach(12743, {	-- Zandalari Cook [H]
 			["races"] = HORDE_ONLY,
 		}),
 		ach(12747, {	-- Catering for Combat
@@ -439,9 +439,46 @@ profession(COOKING, {
 		ach(14332),	-- Shadowlands Cook
 	})),
 	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
-		ach(16631),	-- Dragon Isles Cook
+		n(ACHIEVEMENTS, {
+			ach(16631),	-- Dragon Isles Cook
+			ach(17736, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- The Gift of Cheese
+				["cost"] = {{ "i", 204848, 50 }},	-- 50x Charitable Cheddar
+				["g"] = {
+					i(204894, {	-- Roland (PET!)
+						["description"] = "Roland will also teach your alts the recipes for Deviously Deviled Eggs and Charitable Cheddar, if you learned the recipes via the original source.",
+						["groups"] = {
+							r(407100),	-- Charitable Cheddar
+							r(403018),	-- Deviously Deviled Eggs
+						},
+					}),
+				},
+			})),
+		}),
+		n(QUESTS, {
+			q(72251, {	-- Dragon Isles Cooking
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Cooking.",
+				["sourceQuests"] = {
+					67700,	-- To the Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "n", 193121 },	-- Head Chef Stacks
+				["coord"] = { 47.1, 82.7, THE_WAKING_SHORES },
+				["lockCriteria"] = { 1, "spellID", 366256 },	-- Dragon Isles Cooking
+
+			}),
+			q(72250, {	-- Dragon Isles Cooking
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Cooking.",
+				["sourceQuests"] = {
+					67700,	-- To the Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "n", 198094 },	-- Head Chef Stacks
+				["coord"] = { 76.4, 35.7, THE_WAKING_SHORES },
+				["lockCriteria"] = { 1, "spellID", 366256 },	-- Dragon Isles Cooking
+			}),
+		}),
 	})),
-});
+}));
 
 
 

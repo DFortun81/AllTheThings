@@ -2,12 +2,10 @@
 local appName, app = ...;
 local keys = {
 ["ITEM_NAMES"]={
-[2554]="Deprecated Recipe: Elixir of Fortitude",
 [20946]="Tactical Task Briefing III",
 [21246]="Combat Task Briefing I",
 [21247]="Combat Task Briefing II",
 [21924]="Pattern: Runecloth Robe",
-[23885]="Schematic: Remote Mail Terminal",
 [202061]="Step 3: Fill the Barrel",
 [202066]="Step 4: Keep Filling the Barrel",
 [202069]="Step 6: Back to the Beginning"},

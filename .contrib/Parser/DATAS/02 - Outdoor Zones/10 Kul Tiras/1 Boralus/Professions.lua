@@ -5,51 +5,6 @@
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(BORALUS, {
 		n(PROFESSIONS, {
-			prof(ALCHEMY, {
-				q(54463, {	-- Alchemical Equations
-					["requireSkill"] = ALCHEMY,
-					["provider"] = { "n", 132228 },	-- Elric Whalgrene
-					["coord"] = { 74.2, 6.60, BORALUS },
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
-				}),
-				-- Tools of Trade Questline
-				q(50121, {	-- Casting the First Stone (A)
-					["provider"] = { "n", 132228 },	-- Elric Whalgrene
-					["coord"] = { 74.2, 6.5, BORALUS },
-					["description"] = "This quest chain requires 150 in Kul Tiran Alchemy.",
-					["requireSkill"] = ALCHEMY,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(50122, {	-- Ocular Extracts (A)
-					["provider"] = { "n", 132228 },	-- Elric Whalgrene
-					["coord"] = { 74.2, 6.5, BORALUS },
-					["sourceQuest"] = 50121,	-- Casting the First Stone (A)
-					["requireSkill"] = ALCHEMY,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(50124, {	-- Changing the Scenery (A)
-					["provider"] = { "n", 132228 },	-- Elric Whalgrene
-					["coord"] = { 74.2, 6.5, BORALUS },
-					["sourceQuest"] = 50121,	-- Casting the First Stone (A)
-					["requireSkill"] = ALCHEMY,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(50125, {	-- A Possible Solution (A)
-					["provider"] = { "n", 132228 },	-- Elric Whalgrene
-					["coord"] = { 74.2, 6.5, BORALUS },
-					["sourceQuests"] = {
-						50122,	-- Ocular Extracts (A)
-						50124,	-- Changing the Scenery (A)
-					},
-					["requireSkill"] = ALCHEMY,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-			}),
 			prof(BLACKSMITHING, {
 				n(133536, {	-- Grix "Ironfists" Barlow <Blacksmithing Trainer>
 					["coord"] = { 73.6, 8.6, BORALUS },
