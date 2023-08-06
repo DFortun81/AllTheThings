@@ -1492,7 +1492,7 @@ root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, {
 	inst(1190, {	-- Castle Nathria
 		q(60680),	-- LFR 'The Leeching Vaults' Completed
 
-		q(62949),	-- First kill of Sire Denthrius / First full clear ??
+		q(62949),	-- Sire Denathrius Slain (spellID 345481)
 
 		q(62871),	-- Shriekwing
 		q(62872),	-- Huntsman Altimor

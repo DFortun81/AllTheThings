@@ -632,7 +632,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					i(190189),	-- Sandworn Relic
 					i(190734),	-- Makaris's Satchel of Mines (TOY!)
 					i(189713, {	-- Pocopoc's Copper and Cobalt Components
-						["questID"] = 65478
+						["questID"] = 65478,
 					}),
 					i(189714, {	-- Pocopoc's Platinum and Emerald Components
 						["questID"] = 65479,

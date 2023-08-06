@@ -998,6 +998,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(44395),	-- Tracking Quest: Unseen Protection 5 - completed the "Unseen Protection: Drogbar Delicacy" mission
 	}),
 	tier(SL_TIER, {
-		q(66309),	-- After obtaining Dark Ranger's Ensemble
+		q(66309),	-- Ensemble: Dark Ranger's Attire
 	}),
 });

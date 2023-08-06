@@ -930,7 +930,3 @@ root(ROOTS.NeverImplemented, {
 		}),
 	}),
 });
-
-root(ROOTS.HiddenQuestTriggers, {
-	q(62961),	-- Completed after doing Go Beyond! by Marasmius
-});

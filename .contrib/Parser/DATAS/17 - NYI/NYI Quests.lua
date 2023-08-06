@@ -6825,7 +6825,7 @@ root(ROOTS.NeverImplemented, {
 				-- 9.0.2.35854
 				q(62815),	--
 				q(62816),	--
-				q(62818),	--
+				q(62818),	-- Pumpkin Head	(spellID 344765)
 				q(62820),	--
 				-- 9.0.2.35938
 				q(62828, { ["name"] = "[DNT] Door of Shadows", }),	-- [DNT] Door of Shadows
@@ -7118,7 +7118,6 @@ root(ROOTS.NeverImplemented, {
 				q(64991),	--
 				q(65012),	--
 				q(65013),	-- Chest Unlocked (spellID 370679)
-				q(65088),	--
 				-- 9.1.5.40071
 				-- 9.1.5.40078
 				q(65139),	--
@@ -7315,7 +7314,6 @@ root(ROOTS.NeverImplemented, {
 				q(65645),	--
 				-- 9.2.0.41827
 				-- 9.2.0.41962
-				q(65697),	--
 				q(65708),	--
 				q(65715),	--
 				q(65733),	--

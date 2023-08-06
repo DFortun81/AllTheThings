@@ -2463,7 +2463,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			["timeline"] = { "added 7.1.0.22844" },
 			["isYearly"] = true,
 		}),
-		q(64628, {	-- Triggered when learning the additional things for the Rockin' Rollin' Toy.
+		q(64628, {	-- Triggered when learning the additional things for the Rockin' Rollin' Toy (spellID 358761)
 			["timeline"] = { ADDED_9_1_5 },
 		}),
 	}),

@@ -185,9 +185,3 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 		}),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, {
-	q(62958),	-- triggered during Marasmius dailies
-	q(62962),	-- triggered when turning in 'Into the Unknown' (62296)
-	q(62963),	-- triggered when turning in 'Go Beyond' (??)
-});
