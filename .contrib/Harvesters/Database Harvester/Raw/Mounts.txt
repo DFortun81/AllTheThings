@@ -1677,6 +1677,8 @@
 10.1.5.50504
 171840@@@Coldflame Infernal
 213349@@@Flarecore Infernal
+10.1.5.50747
+417245@@@Ancestral Clefthoof
 10.1.7.50442
 419002@@@Whelpling
 419567@@@Ginormous Grrloc
