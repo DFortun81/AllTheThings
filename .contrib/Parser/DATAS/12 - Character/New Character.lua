@@ -1100,7 +1100,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["coord"] = { 79.5, 69.8, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_9_2_0 },
+				["timeline"] = { ADDED_9_2_0, REMOVED_10_1_5 },
 			}),
 			q(65424, {	-- Whatever You Sayaad (H)
 				["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
@@ -1108,7 +1108,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["coord"] = { 74.6, 47.4, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_9_2_0 },
+				["timeline"] = { ADDED_9_2_0, REMOVED_10_1_5 },
 			}),
 			q(76427, {	-- A Dark Summons (H)
 				["provider"] = { "i", 208227 },	-- Mysterious Letter
