@@ -326,13 +326,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						-- DO NOT TOUCH MY ITEMS OR I KNIFE YOU --
 						----------------LG GOLD ------------------
 						------------------------------------------
-						-- Not Sure Symlink in good.... Also... Stop using small letters /lots of love Braghe
 						-- Please use 'ig()' to make sure Mythic ModID isn't attached to all of these sourced items
-
-						-- Following items are possible:
-						-- World Drop Items with any quality till SL. Includes removed BoE items
-						-- Dungeon Items from Classic till SL. Includes removed BoP items
-						-- Raid Items from Classic till SL
+						
 						i(208064, {	-- Quantum Chestpiece
 							["description"] = "|cFFFF0000If you get an Item which is removed from the game or was never available before,\nplease let us know in the ATT Discord.|r\nThis Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r",
 							["groups"] = {
@@ -452,6 +447,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							i(208121, {	-- Quantum Knuckles
 							}),
 							i(208110, {	-- Quantum Mace
+								ig(2259),	-- Frostmane Club					(Removed)
 							}),
 							i(208116, {	-- Quantum Polearm
 							}),
