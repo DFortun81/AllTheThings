@@ -7643,7 +7643,8 @@ local function MapSourceQuestsRecursive(parentQuestID, questID, currentDepth, de
 		questRef = CreateObject(questRef, true);
 
 		-- force collectible for normally un-collectible but trackable things to make sure it shows in list if the quest needs to be completed to progess
-		if not questRef.collectible and questRef.trackable then
+		-- unless a quest is specifically set to be non-collectible directly
+		if not questRef.collectible and questRef.trackable and rawget(questRef, "collectible") ~= false then
 			questRef.collectible = true;
 		end
 
