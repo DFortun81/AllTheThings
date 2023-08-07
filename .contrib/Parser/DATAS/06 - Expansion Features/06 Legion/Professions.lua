@@ -1038,6 +1038,9 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					HIGHMOUNTAIN,
 					BROKEN_SHORE,
 				},
+				["providers"] = {
+					{ "o", 245325 },	-- Rich Felslate Deposit
+				},
 				["groups"] = {
 					q(38795, {	-- Felslate Deposit Sample
 						["provider"] = { "i", 124496 },	-- Felslate Deposit Sample
@@ -1136,6 +1139,9 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					VALSHARAH,
 					HIGHMOUNTAIN,
 					BROKEN_SHORE,
+				},
+				["providers"] = {
+					{ "o", 245324 },	-- Rich Leystone Deposit
 				},
 				["groups"] = {
 					q(38777, {	-- Leystone Deposit Sample
