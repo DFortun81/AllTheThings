@@ -161,7 +161,9 @@ root(ROOTS.WorldDrops, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.
 			i(141919),	-- Formula: Enchant Neck - Mark of the Ancient Priestess [Rank 3] (RECIPE!)
 			i(128610),	-- Formula: Enchant Neck - Mark of the Claw [Rank 3] (RECIPE!)
 			i(141914, {	-- Formula: Enchant Neck - Mark of the Heavy Hide [Rank 2] (RECIPE!)
-				["description"] = "Drops from bears in any Broken Isles zone.",
+				["crs"] = 93095,	-- Voracious Bear
+				["coord"] = { 71.0, 51.9, STORMHEIM },
+				["description"] = "Drops from bears in any Broken Isles zone. Best farmed in Stormheim from Voracious Bears.",
 			}),
 			i(141915, {	-- Formula: Enchant Neck - Mark of the Trained Soldier [Rank 2] (RECIPE!)
 				["description"] = "Drops from PVP world quest mobs in any Broken Isles zone.",
