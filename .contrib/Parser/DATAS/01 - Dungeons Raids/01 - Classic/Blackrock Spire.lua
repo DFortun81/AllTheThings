@@ -149,7 +149,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["provider"] = { "i", 16663 },	-- Blood of the Black Dragon Champion
 					}),
 					i(16309, {	-- Drakefire Amulet
-						["timeline"] = { "removed 3.0.2" },
+						["timeline"] = { "removed 4.0.3" },
 					}),
 				},
 			}),

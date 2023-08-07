@@ -1249,16 +1249,6 @@ root("Achievements", {
 	}),
 	achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, {
 		achcat(170, {	-- Cooking
-			applyclassicphase(WRATH_PHASE_ONE, ach(1563, {	-- Hail to the Chef [Alliance]
-				["timeline"] = { "added 3.0.1" },
-				["requireSkill"] = COOKING,
-				["races"] = ALLIANCE_ONLY,
-			})),
-			applyclassicphase(WRATH_PHASE_ONE, ach(1784, {	-- Hail to the Chef [Horde]
-				["timeline"] = { "added 3.0.1" },
-				["requireSkill"] = COOKING,
-				["races"] = HORDE_ONLY,
-			})),
 			ach(121, {	-- Journeyman Cook
 				["spellID"] = 3102,	-- Cooking (Journeyman)
 				["requireSkill"] = COOKING,

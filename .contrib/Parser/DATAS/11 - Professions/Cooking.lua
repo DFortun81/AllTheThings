@@ -15,6 +15,53 @@ local function AwardsCost(amount)
 end
 root(ROOTS.Professions, prof(COOKING, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
+		applyclassicphase(WRATH_PHASE_ONE, ach(1563, {	-- Hail to the Chef [Alliance]
+			["sym"] = {{"meta_achievement",
+				1801,	-- Captain Rumsey's Lager
+				1781,	-- Critter Gitter
+				1785,	-- Dinner Impossible
+				906,	-- Kickin' It Up a Notch
+				125,	-- Northrend Cook
+				1782,	-- Our Daily Bread [A]
+				-- #if AFTER 4.0.3
+				1783,	-- Our Daily Bread [H]
+				-- #endif
+				1780,	-- Second That Emotion
+				1798,	-- Sous Chef
+				877,	-- The Cake Is Not A Lie
+				1779,	-- The Northrend Gourmet (45)
+				1800,	-- The Outland Gourmet
+			}},
+			["timeline"] = { "added 3.0.1" },
+			["requireSkill"] = COOKING,
+			-- #if BEFORE 4.0.3
+			["races"] = ALLIANCE_ONLY,
+			-- #endif
+			["groups"] = {
+				title(52),	-- Chef <Name>
+			},
+		})),
+		applyclassicphase(WRATH_PHASE_ONE, ach(1784, {	-- Hail to the Chef [Horde]
+			["sym"] = {{"meta_achievement",
+				1801,	-- Captain Rumsey's Lager
+				1781,	-- Critter Gitter
+				1785,	-- Dinner Impossible
+				906,	-- Kickin' It Up a Notch
+				125,	-- Northrend Cook
+				1783,	-- Our Daily Bread [H]
+				1780,	-- Second That Emotion
+				1798,	-- Sous Chef
+				877,	-- The Cake Is Not A Lie
+				1779,	-- The Northrend Gourmet (45)
+				1800,	-- The Outland Gourmet
+			}},
+			["timeline"] = { "added 3.0.1", "deleted 4.0.3" },
+			["requireSkill"] = COOKING,
+			["races"] = HORDE_ONLY,
+			["groups"] = {
+				title(52),	-- Chef <Name>
+			},
+		})),
 		ach(18817, {	-- Showoff Chef
 			["timeline"] = { ADDED_10_1_7 },
 		}),
@@ -47,33 +94,13 @@ root(ROOTS.Professions, prof(COOKING, {
 		ach(1998, {	-- Cooking Award
 			["cost"] = AwardsCost(1),
 		}),
-		ach(1563, {-- Hail to the Chef
-			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
-				1801,	-- Captain Rumsey's Lager
-				1781,	-- Critter Gitter
-				1785,	-- Dinner Impossible
-				906,	-- Kickin' It Up a Notch
-				125,	-- Northrend Cook
-				1782,	-- Our Daily Bread [A]
-				1783,	-- Our Daily Bread [H]
-				1780,	-- Second That Emotion
-				1798,	-- Sous Chef
-				877,	-- The Cake Is Not A Lie
-				1779,	-- The Northrend Gourmet (45)
-				1800,	-- The Outland Gourmet
-			}},
-			["g"] = {
-				title(52),	-- Chef <Name>
-			},
-		}),
 	})),
-	tier(CLASSIC_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
+	tier(CLASSIC_TIER, bubbleDown({ ["timeline"] = { ADDED_3_0_2 } }, {
 		ach(123),	-- Classic Cook
 		ach(122),	-- Expert Cook
 		ach(121),	-- Journeyman Cook
 	})),
-	tier(TBC_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
+	tier(TBC_TIER, bubbleDown({ ["timeline"] = { ADDED_3_0_2 } }, {
 		ach(124),	-- Outland Cook
 		ach(1801, {	-- Captain Rumsey's Lager
 			["provider"] = { "i", 34832 },	-- Captain Rumsey's Lager
