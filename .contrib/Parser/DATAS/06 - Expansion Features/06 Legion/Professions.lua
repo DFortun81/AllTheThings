@@ -965,6 +965,9 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					940,	-- Upper Deck [The Vindicaar: LFD]
 					941,	-- Lower Deck [The Vindicaar: LFD]
 				},
+				["providers"] = {
+					{ "o", 272778 },	-- Rich Empyrium Deposit
+				},
 				["groups"] = {
 					q(48034, {	-- Empyrium Deposit Chunk
 						["provider"] = { "i", 151860 },	-- Empyrium Deposit Chunk

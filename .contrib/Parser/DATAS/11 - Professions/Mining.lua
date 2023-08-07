@@ -142,12 +142,9 @@ profession(MINING, {
 			["recipeID"] = 102167
 		}
 	})),
-	--[[
-	-- There were no new mining skills in WoD.
+	--[[ There were no new mining skills in WoD.
 	applyclassicphase(WOD_PHASE_ONE, tier(WOD_TIER, {
-
-	})),
-	]]--
+	})),]]--
 	applyclassicphase(BFA_PHASE_ONE, tier(BFA_TIER, {
 		{
 			["name"] = "Monelite Deposit",

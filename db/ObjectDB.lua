@@ -3443,6 +3443,7 @@ _.ObjectNames = {
 	[272768] = "Empyrium Deposit",
 	[272770] = "Eredar War Supplies",
 	[272771] = "Eredar War Supplies",
+	[272778] = "Rich Empyrium Deposit",
 	[272780] = "Empyrium Seam",
 	[273222] = "Eredar War Supplies",
 	[273301] = "Ancient Eredar Cache",
