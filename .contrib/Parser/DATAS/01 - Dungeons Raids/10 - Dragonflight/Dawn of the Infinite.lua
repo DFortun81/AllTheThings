@@ -295,7 +295,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						})),
 						i(208216, {	-- Reins of the Quantum Courser
 							["description"] = "Turns into one (1) unlearned Dungeon Mount, including the Infinite Timereaver, from before Dragonflight.",
-							["collectible"] = false,	-- Not an actual Mount itself
+							["filter"] = MISC,	-- Not an actual Mount itself
 							["sym"] = {{"select","itemID",
 								-- Dungeon
 								68823,	-- Armored Razzashi Raptor
@@ -321,7 +321,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						----------------LG GOLD ------------------
 						------------------------------------------
 						-- Please use 'ig()' to make sure Mythic ModID isn't attached to all of these sourced items
-						
+
 						i(208064, {	-- Quantum Chestpiece
 							["description"] = "|cFFFF0000If you get an Item which is removed from the game or was never available before,\nplease let us know in the ATT Discord.|r\nThis Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r",
 							["groups"] = {
@@ -332,7 +332,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 								-- Mail
 								ig(114389),	-- Element-Binder Helm		(Never added)
 								ig(93086),	-- Swashbuckling Vest		(Never added)
-								
+
 								ig(134732),	-- Frigidlink Armor			(Removed)
 								ig(120952),	-- Slarkhide				(Removed)
 								-- Plate
@@ -355,7 +355,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 								-- Leather
 								-- Mail
 								ig(105809),	-- Crest of Burning Deeds			(Ordos)
-								
+
 								ig(92842),	-- Danio-Scale Helm					(Never added)
 								ig(114265),	-- Leafscale Helm					(Never added)
 								ig(121508),	-- Stormborn Crown					(Never added)
@@ -382,7 +382,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 								-- Mail
 								ig(1445),	-- Blackrock Pauldrons				(Removed)
 								ig(3231),	-- Cutthroat Pauldrons				(Removed)
-								
+
 								ig(18320),	-- Demonheart Spaulders				(Never added)
 								-- Plate
 								ig(103785),	-- Tusks of Mannoroth Heroic		(Removed)
