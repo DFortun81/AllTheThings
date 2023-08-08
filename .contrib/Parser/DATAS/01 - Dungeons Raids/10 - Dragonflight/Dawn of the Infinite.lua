@@ -453,6 +453,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							i(208115, {	-- Quantum Staff
 								ig(115298),	-- Spectral Spire 					(Never added)
 
+								ig(6679),	-- Armor Piercer					(Removed)
 								ig(2280),	-- Kam's Walking Stick				(Removed)
 								ig(1473),	-- Riverside Staff					(Removed)
 							}),
