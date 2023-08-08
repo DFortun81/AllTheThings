@@ -25,18 +25,22 @@ local GetRelativeValue, SearchForSourceIDQuickly, ATTAccountWideData, Settings;
 -- Access via AllTheThings.Modules.Filter
 local api = {};
 app.Modules.Filter = api;
-api.Set = {};
+
 --- api.Set[FilterName]([true]) or api.Set.FilterName([true])
 -- Function that allows defining whether that specific Filter will be applied
-api.Get = {}
+api.Set = {};
+
 --- api.Get[FilterName]() or api.Get.FilterName()
 -- Function that allows checking whether that specific Filter will be applied
-api.SettingsFilters = {}
+api.Get = {}
+
 -- api.SettingsFilters.FilterFunction
 -- Allows accessing the direct SettingsFilter functions which are sometimes required explicitly
-api.Filters = {}
+api.SettingsFilters = {}
+
 -- api.Filters.FilterFunction
 -- Allows accessing the direct Filter functions which are sometimes required explicitly
+api.Filters = {}
 
 
 -- Meaning "Don't display." - Returns false
