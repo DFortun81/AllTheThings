@@ -1,10 +1,9 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-root(ROOTS.Instances, tier(CATA_TIER, {
+local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON};
+root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 }, {
 	inst(69, {	-- Lost City of the Tol'vir
-		["lvl"] = 83,
 		["mapID"] = 277,
 		["coord"] = { 60.53, 64.29, ULDUM },	-- Lost City of Tol'vir
 		["groups"] = {
@@ -99,159 +98,204 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 					},
 				}),
 			}),
-			d(NORMAL_DUNGEON, {
+			d(NORMAL_DUNGEON, bubbleDownSelf({ ["timeline"] = REMOVED_7_3_5 }, {
 				e(117, {	-- General Husam
 					["crs"] = { 44577 },	-- General Husam
 					["groups"] = {
-						i(56382),	-- Siliza's Spear
-						i(157600),	-- Necklace of Rumbling Earth
-						i(56379),	-- Kaleti Cloak
-						i(56383),	-- Ionic Gloves
-						i(56381),	-- Greaves of Wu the Elder
-						i(56380),	-- Spirit Creeper Ring
-						un(REMOVED_FROM_GAME, i(55860)),	-- Siliza's Spear (7.3.5 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(55858)),	-- Kaleti Cloak (7.3.5 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(55857)),	-- Ionic Gloves (7.3.5 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(55856)),	-- Greaves of Wu the Elder (7.3.5 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(55859)),	-- Spirit Creeper Ring (7.3.5 - Removed from Game!)
+						i(55856), -- Greaves of Wu the Elder
+						i(55857), -- Ionic Gloves
+						i(55858), -- Kaleti Cloak
+						i(55860), -- Siliza's Spear
+						i(55859), -- Spirit Creeper Ring
 					},
 				}),
 				e(118, {	-- Lockmaw
 					["crs"] = { 43614 },	-- Lockmaw
 					["groups"] = {
-						i(56384),	-- Resonant Kris (7.3.5 - Moved from High Prophet Barim)
-						i(56385),	-- Tauntka's Necklace
-						i(56386),	-- Balkar's Waders (7.3.5 - Moved from High Prophet Barim)
-						i(56387),	-- Greaves of Wu the Younger (7.3.5 - Moved from High Prophet Barim)
-						i(56388),	-- Ring of the Darkest Day
-						un(REMOVED_FROM_GAME, i(55870)),	-- Barim's Main Gauche (7.3.5 - Removed from Game And Moved to High Prophet Barim!)
-						un(REMOVED_FROM_GAME, i(55864)),	-- Tauntka's Necklace (7.3.5 - Removed from Game)
-						un(REMOVED_FROM_GAME, i(55866)),	-- Sand Silk Wristband (7.3.5 - Removed from Game And Moved to High Prophet Barim!)
-						un(REMOVED_FROM_GAME, i(55867)),	-- Sand Dune Belt (7.3.5 - Removed from Game And Moved to High Prophet Barim!)
-						un(REMOVED_FROM_GAME, i(55863)),	-- Ring of the Darkest Day (7.3.5 - Removed from Game)
+						i(55870), -- Barim's Main Gauche
+						i(55863), -- Ring of the Darkest Day
+						i(55866), -- Sand Silk Wristband
+						i(55867), -- Sand Dune Belt
+						i(55864), -- Tauntka's Necklace
 					},
 				}),
 				e(119, {	-- High Prophet Barim
 					["crs"] = { 43612 },	-- High Prophet Barim
 					["groups"] = {
-						-- i(56384),	-- Resonant Kris (7.3.5 - Moved to Lockmaw)
-						-- i(56386),	-- Balkar's Waders (7.3.5 - Moved to Lockmaw)
-						-- i(56387),	-- Greaves of Wu the Younger (7.3.5 - Moved to Lockmaw)
-						i(56390),	-- Barim's Main Gauche (7.3.5 - Moved from Lockmaw/Augh!)
-						i(56389),	-- Sand Silk Wristband (7.3.5 - Moved from Lockmaw/Augh!)
-						i(56392),	-- Sand Dune Belt (7.3.5 - Moved from Lockmaw/Augh!)
-						i(56391),	-- Veneficial Band
-						i(56393),	-- Heart of Solace
-						un(REMOVED_FROM_GAME, i(55865)),	-- Resonant Kris (7.3.5 - Removed from Game And Moved to Lockmaw!)
-						un(REMOVED_FROM_GAME, i(55861)),	-- Balkar's Waders (7.3.5 - Removed from Game And Moved to Lockmaw!)
-						un(REMOVED_FROM_GAME, i(55862)),	-- Greaves of Wu the Younger (7.3.5 - Removed from Game And Moved to Lockmaw!)
-						un(REMOVED_FROM_GAME, i(55869)),	-- Veneficial Band (7.3.5 - Removed from Game)
-						un(REMOVED_FROM_GAME, i(55868)),	-- Heart of Solace (7.3.5 - Removed from Game)
+						i(55861), -- Balkar's Waders
+						i(55862), -- Greaves of Wu the Younger
+						i(55868), -- Heart of Solace
+						i(55865), -- Resonant Kris
+						i(55869), -- Veneficial Band
+					},
+				}),
+				e(122, {	-- Siamat
+					["crs"] = { 44819 },	-- Siamat
+					["groups"] = {
+						-- #if BEFORE 7.3.5
+						ach(4848),	-- Lost City of the Tol'vir
+						-- #endif
+						i(55871), -- Crafty's Gaiters
+						i(55878), -- Evelyn's Belt
+						i(55872), -- Geordan's Cloak
+						i(55875), -- Hammer of Sparks
+						i(55877), -- Leggings of the Path
+						i(55876), -- Mantle of Master Cho
+						i(55873), -- Ring of Three Lights
+						i(55879), -- Sorrowsong
+						i(55874), -- Tia's Grace
+						i(55880), -- Zora's Ward
+					},
+				}),
+			})),
+			-- #if BEFORE 7.3.5
+			d(HEROIC_DUNGEON, {
+				e(117, {	-- General Husam
+					["crs"] = { 44577 },	-- General Husam
+					["groups"] = {
+						i(56381), -- Greaves of Wu the Elder
+						i(56383), -- Ionic Gloves
+						i(56379), -- Kaleki Cloak
+						i(56382), -- Siliza's Spear
+						i(56380), -- Spirit Creeper Ring
+					},
+				}),
+				e(118, {	-- Lockmaw
+					["crs"] = {
+						43614,	-- Lockmaw
+						49045,	-- Augh
+					},
+					["groups"] = {
+						ach(5291),	-- Acrocalypse Now
+						i(56390), -- Barim's Main Gauche
+						i(56388), -- Ring of the Darkest Day
+						i(56389), -- Sand Silk Wristband
+						i(56392), -- Sand Dune Belt
+						i(56385), -- Tauntka's Necklace
+					},
+				}),
+				e(119, {	-- High Prophet Barim
+					["crs"] = { 43612 },	-- High Prophet Barim
+					["groups"] = {
+						ach(5290),	-- Kill It With Fire!
+						i(56386), -- Balkar's Waders
+						i(56387), -- Greaves of Wu the Younger
+						i(56393), -- Heart of Solace
+						i(56384), -- Resonant Kris
+						i(56391), -- Veneficial Band
+					},
+				}),
+				e(122, {	-- Siamat
+					["crs"] = { 44819 },	-- Siamat
+					["groups"] = {
+						ach(5292),	-- Headed South
+						ach(5066),	-- Heroic: Lost City of the Tol'vir
+						ach(5140),	-- Heroic: Lost City of the Tol'vir Guild Run
+						i(56395), -- Crafty's Gaiters
+						i(56403), -- Evelyn's Belt
+						i(56397), -- Geordan's Cloak
+						i(56396), -- Hammer of Sparks
+						i(56401), -- Leggings of the Path
+						i(56399), -- Mantle of Master Cho
+						i(56398), -- Ring of Three Lights
+						i(56400), -- Sorrowsong
+						i(56394), -- Tia's Grace
+						i(56402), -- Zora's Ward
+					},
+				}),
+			}),
+			-- #else
+			d(NormalPlus, {
+				e(117, {	-- General Husam
+					["crs"] = { 44577 },	-- General Husam
+					["groups"] = {
+						i(56381), -- Greaves of Wu the Elder
+						i(56383), -- Ionic Gloves
+						i(56379), -- Kaleki Cloak
+						i(157600, { -- Necklace of Rumbling Earth
+							["timeline"] = { ADDED_7_3_5 },
+						}),
+						i(56382), -- Siliza's Spear
+						i(56380), -- Spirit Creeper Ring
+					},
+				}),
+				e(118, {	-- Lockmaw
+					["crs"] = { 43614 },	-- Lockmaw
+					["groups"] = {
+						i(56386), -- Balkar's Waders
+						i(56387), -- Greaves of Wu the Younger
+						i(56384), -- Resonant Kris
+						i(56388), -- Ring of the Darkest Day
+						i(56385), -- Tauntka's Necklace
+					},
+				}),
+				e(119, {	-- High Prophet Barim
+					["crs"] = { 43612 },	-- High Prophet Barim
+					["groups"] = {
+						i(56390), -- Barim's Main Gauche
+						i(56393), -- Heart of Solace
+						i(56389), -- Sand Silk Wristband
+						i(56392), -- Sand Dune Belt
+						i(56391), -- Veneficial Band
 					},
 				}),
 				e(122, {	-- Siamat
 					["crs"] = { 44819 },	-- Siamat
 					["groups"] = {
 						ach(4848),	-- Lost City of the Tol'vir
-						i(56396),	-- Hammer of Sparks
-						i(157599),	-- Sceptre of  Swirling Winds
-						i(56402),	-- Zora's Ward
-						i(56399),	-- Mantle of Master Cho
-						i(56397),	-- Geordan's Cloak
-						i(56403),	-- Evelyn's Belt
-						i(56401),	-- Leggings of the Path
-						i(56395),	-- Crafty's Gaiters
-						i(56398),	-- Ring of Three Lights
-						i(56400),	-- Sorrowsong
-						i(56394),	-- Tia's Grace
-						un(REMOVED_FROM_GAME, i(55875)),	-- Hammer of Sparks (7.3.5 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(55880)),	-- Zora's Ward (7.3.5 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(55876)),	-- Mantle of Master Cho (7.3.5 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(55872)),	-- Geordan's Cloak (7.3.5 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(55878)),	-- Evelyn's Belt (7.3.5 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(55877)),	-- Leggings of the Path (7.3.5 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(55871)),	-- Crafty's Gaiters (7.3.5 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(55873)),	-- Ring of Three Lights (7.3.5 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(55879)),	-- Sorrowsong (7.3.5 - Removed from Game!)
-						un(REMOVED_FROM_GAME, i(55874)),	-- Tia's Grace (7.3.5 - Removed from Game!)
+						i(56395), -- Crafty's Gaiters
+						i(56403), -- Evelyn's Belt
+						i(56397), -- Geordan's Cloak
+						i(56396), -- Hammer of Sparks
+						i(56401), -- Leggings of the Path
+						i(56399), -- Mantle of Master Cho
+						i(56398), -- Ring of Three Lights
+						i(157599, { -- Sceptre of Swirling Winds
+							["timeline"] = { ADDED_7_3_5 },
+						}),
+						i(56400), -- Sorrowsong
+						i(56394), -- Tia's Grace
+						i(56402), -- Zora's Ward
 					},
 				}),
 			}),
 			d(HEROIC_DUNGEON, {
-				["lvl"] = 85,
-				["groups"] = {
-					e(117, {	-- General Husam
-						["crs"] = { 44577 },	-- General Husam
-						["groups"] = {
-							i(56382),	-- Siliza's Spear
-							i(157600),	-- Necklace of Rumbling Earth
-							i(56379),	-- Kaleki Cloak
-							i(56383),	-- Ionic Gloves
-							i(56381),	-- Greaves of Wu the Elder
-							i(56380),	-- Spirit Creeper Ring
-						},
-					}),
-					e(118, {	-- Lockmaw
-						["crs"] = {
-							43614,	-- Lockmaw
-							49045,	-- Augh
-						},
-						["groups"] = {
-							ach(5291),	-- Acrocalypse Now
-							-- i(56390),	-- Barim's Main Gauche (7.3.5 - Moved to High Prophet Barim!)
-							-- i(56389),	-- Sand Silk Wristband (7.3.5 - Moved to High Prophet Barim!)
-							-- i(56392),	-- Sand Dune Belt (7.3.5 - Moved to High Prophet Barim!)
-							i(56384),	-- Resonant Kris (7.3.5 - Moved from High Prophet Barim)
-							i(56385),	-- Tauntka's Necklace
-							i(56386),	-- Balkar's Waders (7.3.5 - Moved from High Prophet Barim)
-							i(56387),	-- Greaves of Wu the Younger (7.3.5 - Moved from High Prophet Barim)
-							i(56388),	-- Ring of the Darkest Day
-						},
-					}),
-					e(119, {	-- High Prophet Barim
-						["crs"] = { 43612 },	-- High Prophet Barim
-						["groups"] = {
-							ach(5290),	-- Kill It With Fire!
-							-- i(56384),	-- Resonant Kris (7.3.5 - Moved to Lockmaw)
-							-- i(56386),	-- Balkar's Waders (7.3.5 - Moved to Lockmaw)
-							-- i(56387),	-- Greaves of Wu the Younger (7.3.5 - Moved to Lockmaw)
-							i(56390),	-- Barim's Main Gauche (7.3.5 - Moved from Lockmaw/Augh!)
-							i(56389),	-- Sand Silk Wristband (7.3.5 - Moved from Lockmaw/Augh!)
-							i(56392),	-- Sand Dune Belt (7.3.5 - Moved from Lockmaw/Augh!)
-							i(56391),	-- Veneficial Band
-							i(56393),	-- Heart of Solace
-						},
-					}),
-					e(122, {	-- Siamat
-						["crs"] = { 44819 },	-- Siamat
-						["groups"] = {
-							ach(5292),	-- Headed South
-							ach(5066),	-- Heroic: Lost City of the Tol'vir
-							ach(5140),	-- Heroic: Lost City of the Tol'vir Guild Run
-							i(56396),	-- Hammer of Sparks
-							i(157599),	-- Sceptre of Swirling Winds
-							i(56402),	-- Zora's Ward
-							i(56399),	-- Mantle of Master Cho
-							i(56397),	-- Geordan's Cloak
-							i(56403),	-- Evelyn's Belt
-							i(56401),	-- Leggings of the Path
-							i(56395),	-- Crafty's Gaiters
-							i(56398),	-- Ring of Three Lights
-							i(56400),	-- Sorrowsong
-							i(56394),	-- Tia's Grace
-						},
-					}),
-				},
+				e(118, {	-- Lockmaw
+					["crs"] = {
+						43614,	-- Lockmaw
+						49045,	-- Augh
+					},
+					["groups"] = {
+						ach(5291),	-- Acrocalypse Now
+					},
+				}),
+				e(119, {	-- High Prophet Barim
+					["crs"] = { 43612 },	-- High Prophet Barim
+					["groups"] = {
+						ach(5290),	-- Kill It With Fire!
+					},
+				}),
+				e(122, {	-- Siamat
+					["crs"] = { 44819 },	-- Siamat
+					["groups"] = {
+						ach(5292),	-- Headed South
+						ach(5066),	-- Heroic: Lost City of the Tol'vir
+						ach(5140),	-- Heroic: Lost City of the Tol'vir Guild Run
+					},
+				}),
 			}),
+			-- #endif
 		},
 	}),
-}));
+})));
+
 root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35413),	-- Lost City of the Tol'vir Reward Quest
 		q(35414),	-- Lost City of the Tol'vir Reward Quest
 	}),
 });
+
 root(ROOTS.NeverImplemented, {
 	tier(CATA_TIER, {
 		inst(69, {	-- Lost City of the Tol'vir

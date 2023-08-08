@@ -1,11 +1,11 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-root(ROOTS.Instances, tier(CATA_TIER, {
+local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON};
+root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 }, {
 	inst(67, {	-- The Stonecore
-		["lvl"] = 80,
 		["mapID"] = 324,
+		["coord"] = { 47.50, 52.05, DEEPHOLM },
 		["groups"] = {
 			n(QUESTS, {
 				q(28814, {	-- Followers and Leaders
@@ -73,119 +73,188 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 					},
 				}),
 			}),
-			d(NORMAL_DUNGEON, {
-				cr(43438, e(110, {	-- Corborus
-					i(157592),	-- Crackling Geode Mace
-					i(56329),	-- Fist of Pained Senses
-					i(157591),	-- Crystal-Chained Lodestone
-					i(56330),	-- Cinnabar Shoulders
-					i(157590),	-- Crystalgrinder Bracers
-					i(56331),	-- Dolomite Adorned Gloves
-					i(56332),	-- Phosphorescent Ring
-					i(56328),	-- Key to the Endless Chamber
-					un(REMOVED_FROM_GAME, i(55796)),	-- Fist of Pained Senses (7.3.5 - Removed from Game!)
-					un(REMOVED_FROM_GAME, i(55792)),	-- Cinnabar Shoulders (7.3.5 - Removed from Game!)
-					un(REMOVED_FROM_GAME, i(55793)),	-- Dolomite Adorned Gloves (7.3.5 - Removed from Game!)
-					un(REMOVED_FROM_GAME, i(55794)),	-- Phosphorescent Ring (7.3.5 - Removed from Game!)
-					un(REMOVED_FROM_GAME, i(55795)),	-- Key to the Endless Chamber (7.3.5 - Removed from Game!)
-				})),
-				cr(43214, e(111, {	-- Slabhide
-					i(63043),	-- Vitreous Stone Drake (MOUNT!)
-					i(56335),	-- Quicksilver Blade
-					i(157593),	-- Crystalpowder Amice
-					i(56334),	-- Deep Delving Gloves
-					i(56336),	-- Hematite Plate Gloves
-					i(157594),	-- Earth-Strength Legguards
-					i(56333),	-- Rose Quartz Band
-					un(REMOVED_FROM_GAME, i(55801)),	-- Quicksilver Blade (7.3.5 - Removed from Game!)
-					un(REMOVED_FROM_GAME, i(55798)),	-- Deep Delving Gloves (7.3.5 - Removed from Game!)
-					un(REMOVED_FROM_GAME, i(55797)),	-- Hematite Plate Gloves (7.3.5 - Removed from Game!)
-					un(REMOVED_FROM_GAME, i(55799)),	-- Rose Quartz Band (7.3.5 - Removed from Game!)
-				})),
-				cr(42188, e(112, {	-- Ozruk
-					i(56342),	-- Sword of the Bottomless Pit
-					i(157595),	-- Fractured Earthstone Necklace
-					i(56338),	-- Pendant of the Lightless Grotto
-					i(56340),	-- Elementium Scale Bracers
-					i(56341),	-- Belt of the Ringworm
-					i(56339),	-- Tendrils of Burrowing Dark
-					un(REMOVED_FROM_GAME, i(55811)),	-- Sword of the Bottomless Pit (7.3.5 - Removed from Game!)
-					un(REMOVED_FROM_GAME, i(55804)),	-- Pendant of the Lightless Grotto (7.3.5 - Removed from Game!)
-					un(REMOVED_FROM_GAME, i(55802)),	-- Elementium Scale Bracers (7.3.5 - Removed from Game!)
-					un(REMOVED_FROM_GAME, i(55803)),	-- Belt of the Ringworm (7.3.5 - Removed from Game!)
-					un(REMOVED_FROM_GAME, i(55810)),	-- Tendrils of Burrowing Dark (7.3.5 - Removed from Game!)
-				})),
-				cr(42333, e(113, {	-- High Priestess Azil
-					ach(4846),	-- The Stonecore
-					i(56343),	-- Darkling Staff
-					i(56346),	-- Elementium Fang
-					i(56349),	-- Prophet Scepter
-					i(56352),	-- Cowl of the Unseen World
-					i(56344),	-- Helm of Numberless Shadow
-					i(56348),	-- Slippers of the Twilight Prophet
-					i(56347),	-- Leaden Despair
-					i(56345),	-- Magnetite Mirror
-					i(56351),	-- Tear of Blood
-					un(REMOVED_FROM_GAME, i(55815)),	-- Darkling Staff (7.3.5 - Removed from Game!)
-					un(REMOVED_FROM_GAME, i(55813)),	-- Elementium Fang (7.3.5 - Removed from Game!)
-					un(REMOVED_FROM_GAME, i(55820)),	-- Prophet Scepter (7.3.5 - Removed from Game!)
-					un(REMOVED_FROM_GAME, i(55818)),	-- Cowl of the Unseen World (7.3.5 - Removed from Game!)
-					un(REMOVED_FROM_GAME, i(55812)),	-- Helm of Numberless Shadow (7.3.5 - Removed from Game!)
-					un(REMOVED_FROM_GAME, i(55817)),	-- Slippers of the Twilight Prophet (7.3.5 - Removed from Game!)
-					un(REMOVED_FROM_GAME, i(55816)),	-- Leaden Despair (7.3.5 - Removed from Game!)
-					un(REMOVED_FROM_GAME, i(55814)),	-- Magnetite Mirror (7.3.5 - Removed from Game!)
-					un(REMOVED_FROM_GAME, i(55819)),	-- Tear of Blood (7.3.5 - Removed from Game!)
-				})),
-			}),
-			d(HEROIC_DUNGEON, {
-				["lvl"] = 85,
-				["groups"] = {
-					cr(43438, e(110, {	-- Corborus
-						i(157592),	-- Crackling Geode Mace
-						i(56329),	-- Fist of Pained Senses
-						i(157591),	-- Crystal-Chained Lodestone
-						i(56330),	-- Cinnabar Shoulders
-						i(157590),	-- Crystalgrinder Bracers
-						i(56331),	-- Dolomite Adorned Gloves
-						i(56332),	-- Phosphorescent Ring
-						i(56328),	-- Key to the Endless Chamber
-					})),
-					cr(43214, e(111, {	-- Slabhide
+			d(NORMAL_DUNGEON, bubbleDownSelf({ ["timeline"] = REMOVED_7_3_5 }, {
+				e(110, {	-- Corborus
+					["crs"] = { 43438 },	-- Corborus
+					["groups"] = {
+						i(55792),	-- Cinnabar Shoulders
+						i(55793),	-- Dolomite Adorned Gloves
+						i(55796),	-- Fist of Pained Senses
+						i(55795),	-- Key to the Endless Chamber
+						i(55794),	-- Phosphorescent Ring
+					},
+				}),
+				e(111, {	-- Slabhide
+					["crs"] = { 43214 },	-- Slabhide
+					["groups"] = {
+						-- #if BEFORE 7.3.5
 						i(63043),	-- Vitreous Stone Drake (MOUNT!)
-						i(56335),	-- Quicksilver Blade
-						i(157593),	-- Crystalpowder Amice
+						-- #endif
+						i(55798),	-- Deep Delving Gloves
+						i(55797),	-- Hematite Plate Gloves
+						i(55801),	-- Quicksilver Blade
+						i(55799),	-- Rose Quartz Band
+					},
+				}),
+				e(112, {	-- Ozruk
+					["crs"] = { 42188 },	-- Ozruk
+					["groups"] = {
+						i(55803),	-- Belt of the Ringworm
+						i(55802),	-- Elementium Scale Bracers
+						i(55804),	-- Pendant of the Lightless Grotto
+						i(55811),	-- Sword of the Bottomless Pit
+						i(55810),	-- Tendrils of Burrowing Dark
+					},
+				}),
+				e(113, {	-- High Priestess Azil
+					["crs"] = { 42333 },	-- High Priestess Azil
+					["groups"] = {
+						-- #if BEFORE 7.3.5
+						ach(4846),	-- The Stonecore
+						-- #endif
+						i(55818), -- Cowl of the Unseen World
+						i(55815), -- Darkling Staff
+						i(55813), -- Elementium Fang
+						i(55812), -- Helm of Numberless Shadow
+						i(55816), -- Leaden Despair
+						i(55814), -- Magnetite Mirror
+						i(55820), -- Prophet Scepter
+						i(55817), -- Slippers of the Twilight Prophet
+						i(55819), -- Tear of Blood
+					},
+				}),
+			})),
+			-- #if BEFORE 7.3.5
+			d(HEROIC_DUNGEON, {
+				e(110, {	-- Corborus
+					["crs"] = { 43438 },	-- Corborus
+					["groups"] = {
+						i(56330),	-- Cinnabar Shoulders
+						i(56331),	-- Dolomite Adorned Gloves
+						i(56329),	-- Fist of Pained Senses
+						i(56328),	-- Key to the Endless Chamber
+						i(56332),	-- Phosphorescent Ring
+					},
+				}),
+				e(111, {	-- Slabhide
+					["crs"] = { 43214 },	-- Slabhide
+					["groups"] = {
+						i(63043),	-- Vitreous Stone Drake (MOUNT!)
 						i(56334),	-- Deep Delving Gloves
 						i(56336),	-- Hematite Plate Gloves
-						i(157594),	-- Earth-Strength Legguards
+						i(56335),	-- Quicksilver Blade
 						i(56333),	-- Rose Quartz Band
-					})),
-					cr(42188, e(112, {	-- Ozruk
-						i(56342),	-- Sword of the Bottomless Pit
-						i(157595),	-- Fractured Earthstone Necklace
-						i(56338),	-- Pendant of the Lightless Grotto
-						i(56340),	-- Elementium Scale Bracers
+					},
+				}),
+				e(112, {	-- Ozruk
+					["crs"] = { 42188 },	-- Ozruk
+					["groups"] = {
 						i(56341),	-- Belt of the Ringworm
+						i(56340),	-- Elementium Scale Bracers
+						i(56338),	-- Pendant of the Lightless Grotto
+						i(56342),	-- Sword of the Bottomless Pit
 						i(56339),	-- Tendrils of Burrowing Dark
-					})),
-					cr(42333, e(113, {	-- High Priestess Azil
+					},
+				}),
+				e(113, {	-- High Priestess Azil
+					["crs"] = { 42333 },	-- High Priestess Azil
+					["groups"] = {
 						ach(5063),	-- Heroic: The Stonecore
 						ach(5136),	-- Heroic: The Stonecore Guild Run
 						ach(5287),	-- Rotten to the Core
+						i(56352),	-- Cowl of the Unseen World
 						i(56343),	-- Darkling Staff
 						i(56346),	-- Elementium Fang
-						i(56349),	-- Prophet Scepter
-						i(56352),	-- Cowl of the Unseen World
 						i(56344),	-- Helm of Numberless Shadow
-						i(56348),	-- Slippers of the Twilight Prophet
 						i(56347),	-- Leaden Despair
 						i(56345),	-- Magnetite Mirror
+						i(56349),	-- Prophet Scepter
+						i(56348),	-- Slippers of the Twilight Prophet
 						i(56351),	-- Tear of Blood
-					})),
-				},
+					},
+				}),
 			}),
+			-- #else
+			d(NormalPlus, {
+				e(110, {	-- Corborus
+					["crs"] = { 43438 },	-- Corborus
+					["groups"] = {
+						i(56330),	-- Cinnabar Shoulders
+						i(157592, {	-- Crackling Geode Mace
+							["timeline"] = { ADDED_7_3_5 },
+						}),
+						i(157590, {	-- Crystalgrinder Bracers
+							["timeline"] = { ADDED_7_3_5 },
+						}),
+						i(157591, {	-- Crystal-Chained Lodestone
+							["timeline"] = { ADDED_7_3_5 },
+						}),
+						i(56331),	-- Dolomite Adorned Gloves
+						i(56329),	-- Fist of Pained Senses
+						i(56328),	-- Key to the Endless Chamber
+						i(56332),	-- Phosphorescent Ring
+					},
+				}),
+				e(111, {	-- Slabhide
+					["crs"] = { 43214 },	-- Slabhide
+					["groups"] = {
+						i(63043),	-- Vitreous Stone Drake (MOUNT!)
+						i(157593, {	-- Crystalpowder Amice
+							["timeline"] = { ADDED_7_3_5 },
+						}),
+						i(56334),	-- Deep Delving Gloves
+						i(157594, {	-- Earth-Strength Legguards
+							["timeline"] = { ADDED_7_3_5 },
+						}),
+						i(56336),	-- Hematite Plate Gloves
+						i(56335),	-- Quicksilver Blade
+						i(56333),	-- Rose Quartz Band
+					},
+				}),
+				e(112, {	-- Ozruk
+					["crs"] = { 42188 },	-- Ozruk
+					["groups"] = {
+						i(56341),	-- Belt of the Ringworm
+						i(56340),	-- Elementium Scale Bracers
+						i(157595, {	-- Fractured Earthstone Necklace
+							["timeline"] = { ADDED_7_3_5 },
+						}),
+						i(56338),	-- Pendant of the Lightless Grotto
+						i(56342),	-- Sword of the Bottomless Pit
+						i(56339),	-- Tendrils of Burrowing Dark
+					},
+				}),
+				e(113, {	-- High Priestess Azil
+					["crs"] = { 42333 },	-- High Priestess Azil
+					["groups"] = {
+						ach(4846),	-- The Stonecore
+						i(56352),	-- Cowl of the Unseen World
+						i(56343),	-- Darkling Staff
+						i(56346),	-- Elementium Fang
+						i(56344),	-- Helm of Numberless Shadow
+						i(56347),	-- Leaden Despair
+						i(56345),	-- Magnetite Mirror
+						i(56349),	-- Prophet Scepter
+						i(56348),	-- Slippers of the Twilight Prophet
+						i(56351),	-- Tear of Blood
+					},
+				}),
+			}),
+			d(HEROIC_DUNGEON, {
+				e(113, {	-- High Priestess Azil
+					["crs"] = { 42333 },	-- High Priestess Azil
+					["groups"] = {
+						ach(5063),	-- Heroic: The Stonecore
+						ach(5136),	-- Heroic: The Stonecore Guild Run
+						ach(5287),	-- Rotten to the Core
+					},
+				}),
+			}),
+			-- #endif
 		},
 	}),
-}));
+})));
+
 root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(35911),	-- Stonecore Reward Quest - Normal completion

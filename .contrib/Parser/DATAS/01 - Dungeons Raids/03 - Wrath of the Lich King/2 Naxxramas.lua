@@ -1182,11 +1182,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				n(206572, {	-- Zackett Skullsmash
 					["sourceQuests"] = { 76390 },	-- Inconvenience Fee
 					["g"] = {
-						--[[ Removed DM drops. Need confirmation
-								i(3019, {	-- Noble's Robe
-						i(10402, {	-- Blackened Defias Boots
-						i(1943, {	-- Goblin Mail Leggings
-						i(1945, {	-- Woodworking Gloves--]]
 						i(206573, {	-- Dented Raider's Belt
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
 							["g"] = {
@@ -1196,6 +1191,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(206575, {	-- Dented Raider's Boots
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
 							["g"] = {
+								i(10402),	-- Blackened Defias Boots
 								i(206611),	-- Lamented Crusader's Boots
 								i(7187),	-- VanCleef's Boots
 								i(4660),	-- Walking Boots
@@ -1211,6 +1207,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
 							["g"] = {
 								i(206606),	-- Lamented Crusader's Chestpiece
+								i(3019),	-- Noble's Robe
 							},
 						}),
 						i(206572, {	-- Dented Raider's Gauntlets
@@ -1218,6 +1215,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							["g"] = {
 								i(206608),	-- Lamented Crusader's Gauntlets
 								i(1944),	-- Metalworking Gloves
+								i(1945),	-- Woodworking Gloves
 							},
 						}),
 						i(206568, {	-- Dented Raider's Helmet
@@ -1229,6 +1227,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(206574, {	-- Dented Raider's Leggings
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
 							["g"] = {
+								i(1943),	-- Goblin Mail Leggings
 								i(206610),	-- Lamented Crusader's Leggings
 							},
 						}),
@@ -1254,7 +1253,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							["description"] = "Requires to have completed achievement: Drop Dead, Gorgeous to buy.",
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 20 }},
 						}),
-						i(206579),	-- Phylacterweave
+						i(206579, {	-- Phylacterweave
+							-- Dont symlink it Dented tokens, makes it too spammy
+							["description"] = "Can also drop from any Dented Raider's Token.\nChanged to Bind on Account in 10.1.7",
+						}),
 						i(206565, {	-- Plagued Grain (TOY!)
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 15 }},
 						}),

@@ -27,6 +27,9 @@ src\Modules\Color.lua
 src\Modules\Costs.lua
 src\Modules\Events.lua
 src\Modules\Filter.lua
+src\Modules\Filter Types.lua
+src\Modules\Illusions.lua
+src\Modules\PVP Ranks.lua
 src\Modules\Tooltip.lua
 src\Modules\Upgrade.lua
 db\Presets.lua

@@ -1602,10 +1602,11 @@ local function GetUnobtainableTexture(group)
 	end
 
 	-- Determine the texture color, default is green for events.
+	-- TODO: Use 4 for inactive events, use 5 for active events
 	local filter, u = 4, group.u;
 	if u then
 		if (group.itemID or group.spellID) and u > 1 and u < 1000 and not app.IsBoP(group) then
-			filter = 3;
+			filter = 2;
 		else
 			local record = L["UNOBTAINABLE_ITEM_REASONS"][u];
 			if record then
@@ -10399,29 +10400,6 @@ app.OnUpdateReputationRequired = function(t)
 end
 end)();
 
--- Filter Lib
-(function()
-local fields = {
-	["key"] = function(t)
-		return "filterID";
-	end,
-	-- pseudo-headerID so that default Sorting considers Filter groups equivalent to Headers
-	["headerID"] = function()
-		return true;
-	end,
-	["name"] = function(t)
-		return L["FILTER_ID_TYPES"][t.filterID];
-	end,
-	["icon"] = function(t)
-		return L["FILTER_ID_ICONS"][t.filterID];
-	end,
-};
-app.BaseFilter = app.BaseObjectFields(fields, "BaseFilter");
-app.CreateFilter = function(id, t)
-	return setmetatable(constructor(id, t, "filterID"), app.BaseFilter);
-end
-end)();
-
 -- Flight Path Lib
 do
 local FlightPathMapIDs = {
@@ -10881,71 +10859,6 @@ local fields = {
 app.BaseGearSetSubHeader = app.BaseObjectFields(fields, "BaseGearSetSubHeader");
 app.CreateGearSetSubHeader = function(id, t)
 	return setmetatable(constructor(id, t, "setID"), app.BaseGearSetSubHeader);
-end
-end)();
-
--- Illusion Lib
--- TODO: add caching for consistency/move to sub-item lib?
-(function()
-local GetIllusionLink = C_TransmogCollection.GetIllusionSourceInfo;
-local GetIllusionLink1002 = C_TransmogCollection.GetIllusionStrings;
-local fields = {
-	["key"] = function(t)
-		return "illusionID";
-	end,
-	["filterID"] = function(t)
-		return 103;
-	end,
-	["text"] = function(t)
-		if t.itemID then
-			local name, link = GetItemInfo(t.itemID);
-			if link then
-				t.name = name;
-				name = "|cffff80ff[" .. name .. "]|r";
-				t.link = link;
-				t.text = name;
-				return name;
-			end
-		end
-		return t.silentLink;
-	end,
-	["name"] = function(t)
-		return t.text;
-	end,
-	["icon"] = function(t)
-		return "Interface/ICONS/INV_Enchant_Disenchant";
-	end,
-	["link"] = function(t)
-		if t.itemID then
-			local name, link = GetItemInfo(t.itemID);
-			if link then
-				t.name = name;
-				name = "|cffff80ff[" .. name .. "]|r";
-				t.link = link;
-				t.text = name;
-				return link;
-			end
-		end
-	end,
-	["collectible"] = function(t)
-		return app.CollectibleIllusions;
-	end,
-	["collected"] = function(t)
-		return ATTAccountWideData.Illusions[t.illusionID];
-	end,
-	["silentLink"] = function(t)
-		local link;
-		if GetIllusionLink1002 then
-			link = select(2, GetIllusionLink1002(t.illusionID));
-		else
-			link = select(3, GetIllusionLink(t.illusionID));
-		end
-		return link;
-	end,
-};
-app.BaseIllusion = app.BaseObjectFields(fields, "BaseIllusion");
-app.CreateIllusion = function(id, t)
-	return setmetatable(constructor(id, t, "illusionID"), app.BaseIllusion);
 end
 end)();
 
@@ -13179,47 +13092,6 @@ local fields = {
 app.BaseProfession = app.BaseObjectFields(fields, "BaseProfession");
 app.CreateProfession = function(id, t)
 	return setmetatable(constructor(id, t, "professionID"), app.BaseProfession);
-end
-end)();
-
--- PVP Ranks
-(function()
-local fields = {
-	["key"] = function(t)
-		return "pvpRankID";
-	end,
-	["name"] = function(t)
-		return _G["PVP_RANK_" .. (t.pvpRankID + 4) .. "_" .. (t.inverseR or 0)];
-	end,
-	["icon"] = function(t)
-		return format("%s%02d","Interface\\PvPRankBadges\\PvPRank", t.pvpRankID);
-	end,
-	["title"] = function(t)
-		return RANK .. " " .. t.pvpRankID .. DESCRIPTION_SEPARATOR ..  _G["PVP_RANK_" .. (t.pvpRankID + 4) .. "_" .. ((t.inverseR == 1 and 0 or 1))] .. " (" .. (t.r == Enum.FlightPathFaction.Alliance and FACTION_HORDE or FACTION_ALLIANCE) .. ")";
-	end,
-	["description"] = function(t)
-		return "There are a total of 14 ranks for both factions. Each rank requires a minimum amount of Rating Points to be calculated every week, then calculated in comparison to other players on your server.\n\nEach rank grants access to different rewards, from PvP consumables to Epic Mounts that do not require Epic Riding Skill and Epic pieces of gear at the highest ranks. Each rank is also applied to your character as a Title.";
-	end,
-	["r"] = function(t)
-		return t.parent.r or app.FactionID;
-	end,
-	["inverseR"] = function(t)
-		return t.r == Enum.FlightPathFaction.Alliance and 1 or 0;
-	end,
-	["lifetimeRank"] = function(t)
-		return select(3, GetPVPLifetimeStats()) or 0;
-	end,
-	["collectible"] = app.ReturnTrue,
-	["collected"] = function(t)
-		return t.lifetimeRank >= (t.pvpRankID + 4);
-	end,
-	["OnTooltip"] = function(t)
-		GameTooltip:AddDoubleLine("Your lifetime highest rank: ", _G["PVP_RANK_" .. (t.lifetimeRank) .. "_" .. (app.FactionID == 2 and 1 or 0)], 1, 1, 1, 1, 1, 1);
-	end
-};
-app.BasePVPRank = app.BaseObjectFields(fields, "BasePVPRank");
-app.CreatePVPRank = function(id, t)
-	return setmetatable(constructor(id, t, "pvpRankID"), app.BasePVPRank);
 end
 end)();
 
@@ -22074,7 +21946,8 @@ app.ProcessAuctionData = function()
 			if filterID then
 				local filterData = filteredItems[entry.f];
 				if not filterData then
-					filterData = setmetatable({ ["filterID"] = filterID, ["g"] = {} }, app.BaseFilter);
+					filterData = app.CreateFilter(filterID);
+					filterData.g = {};
 					filteredItems[filterID] = filterData;
 					tinsert(searchResultsByKey.s, filterData);
 				end
@@ -22118,53 +21991,47 @@ app.ProcessAuctionData = function()
 	end
 
 	local ObjectTypeMetas = {
-		["criteriaID"] = setmetatable({	-- Achievements
-			["filterID"] = 105,
+		["criteriaID"] = app.CreateFilter(105, {	-- Achievements
 			["icon"] = "INTERFACE/ICONS/ACHIEVEMENT_BOSS_LICHKING",
 			["description"] = L["ITEMS_FOR_ACHIEVEMENTS_DESC"],
 			["priority"] = 1,
-		}, app.BaseFilter),
-		["s"] = setmetatable({			-- Appearances
-			["headerID"] = -10032,
+		}),
+		["s"] = {			-- Appearances
+			["text"] = "Appearances",
 			["icon"] = "INTERFACE/ICONS/INV_SWORD_06",
 			["description"] = L["ALL_APPEARANCES_DESC"],
 			["priority"] = 2,
-		}, app.BaseHeader),
-		["mountID"] = setmetatable({	-- Mounts
-			["filterID"] = 100,
+		},
+		["mountID"] = app.CreateFilter(100, {	-- Mounts
 			["description"] = L["ALL_THE_MOUNTS_DESC"],
 			["priority"] = 3,
-		}, app.BaseFilter),
-		["speciesID"] = setmetatable({	-- Battle Pets
-			["filterID"] = 101,
+		}),
+		["speciesID"] = app.CreateFilter(101, {	-- Battle Pets
 			["icon"] = "INTERFACE/ICONS/ICON_PETFAMILY_CRITTER",
 			["description"] = L["ALL_THE_BATTLEPETS_DESC"],
 			["priority"] = 4,
-		}, app.BaseFilter),
-		["questID"] = setmetatable({	-- Quests
-			["headerID"] = -9956,
+		}),
+		["questID"] = app.CreateNPC(app.HeaderConstants.QUESTS, {	-- Quests
 			["icon"] = "INTERFACE/ICONS/ACHIEVEMENT_GENERAL_100KQUESTS",
 			["description"] = L["ALL_THE_QUESTS_DESC"],
 			["priority"] = 5,
-		}, app.BaseHeader),
-		["recipeID"] = setmetatable({	-- Recipes
-			["filterID"] = 200,
+		}),
+		["recipeID"] = app.CreateFilter(200, {	-- Recipes
 			["icon"] = "INTERFACE/ICONS/INV_SCROLL_06",
 			["description"] = L["ALL_THE_RECIPES_DESC"],
 			["priority"] = 6,
-		}, app.BaseFilter),
+		}),
 		["itemID"] = {					-- General
 			["text"] = "General",
 			["icon"] = "INTERFACE/ICONS/INV_MISC_FROSTEMBLEM_01",
 			["description"] = L["ALL_THE_ILLUSIONS_DESC"],
 			["priority"] = 7,
 		},
-		["reagentID"] = setmetatable({	-- Reagent
-			["filterID"] = 56,
+		["reagentID"] = app.CreateFilter(56, {	-- Reagent
 			["icon"] = "INTERFACE/ICONS/SPELL_FROST_FROZENCORE",
 			["description"] = L["ALL_THE_REAGENTS_DESC"],
 			["priority"] = 8,
-		}, app.BaseFilter),
+		}),
 	};
 
 	-- Display Test for Raw Data + Filtering
