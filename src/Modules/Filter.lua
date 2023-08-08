@@ -11,15 +11,15 @@ local _, app = ...;
 -- Encapsulates the functionality for all filtering logic which is used to check if a given Object meets the applicable filters via User Settings
 
 -- Global locals
-local ipairs, select, type, GetFactionInfoByID, C_TransmogCollection_GetAllAppearanceSources, C_TransmogCollection_GetSourceInfo, C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance
-	= ipairs, select, type, GetFactionInfoByID, C_TransmogCollection.GetAllAppearanceSources, C_TransmogCollection.GetSourceInfo, C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
+local ipairs, select, type, GetFactionInfoByID, C_TransmogCollection_GetAllAppearanceSources, C_TransmogCollection_GetSourceInfo, C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance, rawget
+	= ipairs, select, type, GetFactionInfoByID, C_TransmogCollection.GetAllAppearanceSources, C_TransmogCollection.GetSourceInfo, C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance, rawget;
 
 -- App locals
 local containsAny = app.containsAny;
 local ALLIANCE_ONLY, HORDE_ONLY = unpack(app.Modules.FactionData.FACTION_RACES);
 
 -- Module locals
-local GetRelativeValue, SearchForSourceIDQuickly, ATTAccountWideData
+local GetRelativeValue, SearchForSourceIDQuickly, ATTAccountWideData, Settings;
 
 -- Filter API Implementation
 -- Access via AllTheThings.Modules.Filter
@@ -53,11 +53,12 @@ app.IsBoP = FilterBind;
 local function FilterInGame(item)	-- ItemIsInGame
 	return not item.u or item.u > 2;
 end
+api.Filters.InGame = FilterInGame;
 
 -- Unobtainable
 local SettingsFilterUnobtainable;
 local function FilterUnobtainable(item)	-- FilterItemClass_UnobtainableItem
-	return app.Settings:GetUnobtainable(item.u);
+	return Settings:GetUnobtainable(item.u);
 end
 api.Set.Unobtainable = function(active)
 	if active then
@@ -142,9 +143,11 @@ local function ItemUnbound(item)	-- FilterItemBind
 	return item.itemID and not FilterBind(item);
 end
 api.Filters.ItemUnbound = ItemUnbound
-api.Set.ItemUnbound = function(active)
+api.Set.ItemUnbound = function(active, nested)
 	if active then
 		SettingsFilterItemUnbound = ItemUnbound;
+	elseif nested then
+		SettingsFilterItemUnbound = NoFilter;
 	else
 		SettingsFilterItemUnbound = Filter;
 	end
@@ -157,11 +160,14 @@ local SettingsFilterFilterID;
 local function FilterFilterID(item)	-- FilterItemClass_RequireItemFilter
 	local f = item.f;
 	if f then
+		-- Filter applied via Settings (character-equippable or manually set)
+		if Settings:GetFilter(f) then
+			return true;
+		end
 		-- don't filter Heirlooms by their Type if they are collectible as Heirlooms
 		if item.__type == "BaseHeirloom" and app.CollectibleHeirlooms then
 			return true;
 		end
-		return app.Settings:GetFilter(f);	-- Filter applied via Settings (character-equippable or manually set)
 	else
 		return true;
 	end
@@ -292,6 +298,7 @@ end
 local function FilterItemSource(sourceInfo)
 	return sourceInfo.isCollected;
 end
+api.Filters.ItemSource = FilterItemSource;
 local function FilterItemSourceUnique(sourceInfo, allSources)
 	if sourceInfo.isCollected then
 		-- NOTE: This makes it so that the loop isn't necessary.
@@ -377,6 +384,7 @@ local function FilterItemSourceUnique(sourceInfo, allSources)
 		return false;
 	end
 end
+api.Filters.ItemSourceUnique = FilterItemSourceUnique;
 local function FilterItemSourceUniqueOnlyMain(sourceInfo, allSources)
 	if sourceInfo.isCollected then
 		-- NOTE: This makes it so that the loop isn't necessary.
@@ -398,6 +406,7 @@ local function FilterItemSourceUniqueOnlyMain(sourceInfo, allSources)
 		return false;
 	end
 end
+api.Filters.ItemSourceUniqueMainOnly = FilterItemSourceUniqueOnlyMain;
 api.Set.ItemSource = function(useUnique, useMainOnly)
 	if useUnique then
 		if useMainOnly then
@@ -437,6 +446,7 @@ local function FilterLevel(group)	-- FilterGroupsByLevel
 	-- no level requirement on the group, have to include it
 	return true;
 end
+api.Filters.FilterLevel = FilterLevel
 api.Set.Level = function(active)
 	if active then
 		SettingsFilterLevel = FilterLevel;
@@ -470,24 +480,22 @@ local function FilterCompletion(group)	-- FilterGroupsByCompletion
 end
 
 -- Filter Combinations
--- TODO: reorganize by cheap -> expensive
--- TODO: test looping through active filters vs. always executing all filters in static list
 -- Represents filters which should be applied during Updates to groups
 local function SettingsFilters(item)	-- FilterItemClass
 	-- check Account trait filters
-	if SettingsFilterUnobtainable(item)
-		and SettingsFilterPvP(item)
+	if SettingsFilterPvP(item)
 		and SettingsFilterPetBattles(item)
+		and SettingsFilterUnobtainable(item)
 		and SettingsFilterMinReputation(item)
 		and SettingsFilterEvent(item) then
 		-- BoE can skip Character trait filters
 		if SettingsFilterItemUnbound(item) then return true; end
 		-- check Character trait filters
-		return SettingsFilterFilterID(item)
-			and SettingsFilterBound(item)
-			and SettingsFilterRequireSkill(item)
+		return SettingsFilterBound(item)
 			and SettingsFilterClass(item)
 			and SettingsFilterRace(item)
+			and SettingsFilterFilterID(item)
+			and SettingsFilterRequireSkill(item)
 			and SettingsFilterCustomCollect(item)
 			and SettingsFilterLevel(item);
 	end
@@ -495,33 +503,43 @@ end
 -- Represents filters which should be applied during Updates to groups, but skips the BoE filter
 local function SettingsFilters_IgnoreBoEFilter(item)	-- FilterItemClass_IgnoreBoEFilter
 	-- check Account trait filters
-	if SettingsFilterUnobtainable(item)
-		and SettingsFilterPvP(item)
+	if SettingsFilterPvP(item)
 		and SettingsFilterPetBattles(item)
+		and SettingsFilterUnobtainable(item)
 		and SettingsFilterMinReputation(item)
 		and SettingsFilterEvent(item) then
 		-- check Character trait filters
-		return SettingsFilterFilterID(item)
-			and SettingsFilterBound(item)
-			and SettingsFilterRequireSkill(item)
+		return SettingsFilterBound(item)
 			and SettingsFilterClass(item)
 			and SettingsFilterRace(item)
+			and SettingsFilterFilterID(item)
+			and SettingsFilterRequireSkill(item)
 			and SettingsFilterCustomCollect(item)
 			and SettingsFilterLevel(item);
 	end
 end
 api.SettingsFilters.IgnoreBoEFilter = SettingsFilters_IgnoreBoEFilter
--- Represents current Character filtering for the Item (regardless of user-enabled filters)
-local function FilterCurrentCharacter(item)	-- CurrentCharacterFilters
-	return FilterRequireSkill(item)
-		and FilterClass(item)
-		and FilterRace(item)
-		and FilterCustomCollect(item)
-		and FilterFilterID(item)
-		and FilterInGame(item);
+-- Represents current Account filtering for the Item (regardless of Character filters)
+local function SettingsFilterAccount(item)
+	-- check Account trait filters
+	return SettingsFilterPvP(item)
+		and SettingsFilterPetBattles(item)
+		and SettingsFilterUnobtainable(item)
+		and SettingsFilterMinReputation(item)
+		and SettingsFilterEvent(item);
 end
-app.CurrentCharacterFilters = FilterCurrentCharacter
-
+-- Represents current Character filtering for the Item (regardless of user-enabled filters)
+local function SettingsFilterCurrentCharacter(item)	-- CurrentCharacterFilters
+	-- check Character trait filters
+	return SettingsFilterClass(item)
+		and SettingsFilterRace(item)
+		and SettingsFilterFilterID(item)
+		and FilterInGame(item)
+		and SettingsFilterRequireSkill(item)
+		and SettingsFilterCustomCollect(item)
+		and SettingsFilterLevel(item);
+end
+app.CurrentCharacterFilters = SettingsFilterCurrentCharacter
 
 -- TODO: adjust these function names
 -- Used as the general Group filter during updates
@@ -546,6 +564,30 @@ api.Set.DefaultThing = function(active)
 end
 
 -- Recursive Filters
+-- Recursively check outwards to find if any parent group restricts the filter for the current settings
+local function RecursiveGroupRequirementsFilter(group)
+	if app.GroupFilter(group) then
+		local filterParent = group.sourceParent or group.parent;
+		if filterParent then
+			return RecursiveGroupRequirementsFilter(filterParent)
+		end
+		return true;
+	end
+	return false;
+end
+app.RecursiveGroupRequirementsFilter = RecursiveGroupRequirementsFilter;
+-- Recursively check outwards within the direct parent chain only to find if any parent group restricts the filter for this character
+local function RecursiveDirectGroupRequirementsFilter(group)
+	if app.GroupFilter(group) then
+		local filterParent = group.parent;
+		if filterParent then
+			return RecursiveDirectGroupRequirementsFilter(filterParent)
+		end
+		return true;
+	end
+	return false;
+end
+app.RecursiveDirectGroupRequirementsFilter = RecursiveDirectGroupRequirementsFilter;
 local function RecursiveUnobtainableFilter(group)
 	if SettingsFilterUnobtainable(group) and SettingsFilterEvent(group) then
 		local parent = group.parent;
@@ -555,19 +597,54 @@ local function RecursiveUnobtainableFilter(group)
 	return false;
 end
 app.RecursiveUnobtainableFilter = RecursiveUnobtainableFilter;
-
+-- Recursively check outwards to find if any parent group restricts the filter for the current character (regardless of settings)
+local function RecursiveCharacterRequirementsFilter(group)
+	if SettingsFilterCurrentCharacter(group) then
+		local filterParent = group.sourceParent or group.parent;
+		if filterParent then
+			return RecursiveCharacterRequirementsFilter(filterParent)
+		end
+		return true;
+	end
+	return false;
+end
+app.RecursiveCharacterRequirementsFilter = RecursiveCharacterRequirementsFilter;
+-- Returns the first encountered group tracing upwards in parent hierarchy which has a value for the provided field.
+-- Specify 'followSource' to prioritize the Source Parent of a group over the direct Parent
+local function RecursiveFirstParentWithField(group, field, followSource)
+	if group then
+		return (group[field] and group) or RecursiveFirstParentWithField(followSource and group.sourceParent or group.parent, field);
+	end
+end
+app.RecursiveFirstParentWithField = RecursiveFirstParentWithField;
+-- Returns the first encountered group's value tracing upwards in parent hierarchy which has a value for the provided field.
+-- Specify 'followSource' to prioritize the Source Parent of a group over the direct Parent
+local function RecursiveFirstParentWithFieldValue(group, field, followSource)
+	if group then
+		return group[field] or RecursiveFirstParentWithFieldValue(followSource and group.sourceParent or group.parent, field);
+	end
+end
+app.RecursiveFirstParentWithFieldValue = RecursiveFirstParentWithFieldValue;
+-- Returns the first encountered group tracing upwards in direct parent hierarchy which has a value for the provided field
+local function RecursiveFirstDirectParentWithField(group, field)
+	if group then
+		return group[field] or RecursiveFirstDirectParentWithField(rawget(group, "parent"), field);
+	end
+end
+app.RecursiveFirstDirectParentWithField = RecursiveFirstDirectParentWithField;
 
 api.OnReady = function(AccountData)
 	GetRelativeValue = app.GetRelativeValue
 	SearchForSourceIDQuickly = app.SearchForSourceIDQuickly
 	ATTAccountWideData = AccountData
 	FilterEvent = app.Modules.Events.FilterIsEventActive
+	Settings = app.Settings;
 end
 
 -- temp sanity debug logging
-for name,setFilter in pairs(api.Set) do
-	api.Set[name] = function(...)
-		app.PrintDebug("Filter.Set",name,...)
-		return setFilter(...)
-	end
-end
+-- for name,setFilter in pairs(api.Set) do
+-- 	api.Set[name] = function(...)
+-- 		app.PrintDebug("Filter.Set",name,...)
+-- 		return setFilter(...)
+-- 	end
+-- end
