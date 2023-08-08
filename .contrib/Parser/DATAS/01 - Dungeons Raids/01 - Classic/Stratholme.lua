@@ -883,6 +883,27 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							{ "i", 22051, 1 },	-- Brazier of Beckoning [Jarien & Sothos]
 							{ "i", 22057, 1 },	-- Brazier of Invocation
 						},
+						-- #if AFTER 10.1.5
+						-- This init function unmarks the removed from game flag for folks with the brazier.
+						["OnInit"] = [[function(t)
+							if GetItemCount(22057, true) > 0 then
+								t.u = nil;
+								for i,o in ipairs(t.g) do
+									if o.u and o.u == 11 then
+										o.u = nil;
+									end
+								end
+							else
+								t.u = 11;
+								for i,o in ipairs(t.g) do
+									if not o.u then
+										o.u = 11;
+									end
+								end
+							end
+							return t;
+						end]],
+						-- #endif
 						["groups"] = {
 							objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
 								["questID"] = 8968,	-- The Left Piece of Lord Valthalak's Amulet [HUNTER, ROGUE]

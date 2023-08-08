@@ -13934,6 +13934,22 @@ root("ObjectDB", {
 			cn = "炽燃宝箱",
 		},
 	},
+	[222684] = {
+		readable = "Glinting Sand",
+		icon = "Interface/Icons/Inv_misc_dust_01",
+		model = 204112,
+		text = {
+			en = "Glinting Sand",
+			es = "Arena centelleante",
+			de = "Glitzernder Sand",
+			fr = "Sable luisant",
+			it = "Sabbia Scintillante",
+			pt = "Areia Brilhante",
+			ru = "Блестящий песок",
+			ko = "반짝이는 모래",
+			cn = "闪光砂砾",
+		},
+	},
 	[222685] = {
 		readable = "Crane Nest",
 		icon = "Interface/Icons/INV_Egg_07",

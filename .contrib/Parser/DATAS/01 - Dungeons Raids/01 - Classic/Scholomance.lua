@@ -894,7 +894,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 	}),
 	-- The Re-release of scholomance should allow the summon of this boss once again, however the item required to summon him is one time.
-	-- To get the summon item again, you would have to abandon the quest and pick it up again, which you cant. -- Gold 2nd August 2023
+	-- To get the summon item again, you would have to abandon the quest and pick it up again, which you cant. -- Gold 02/08/2023 (EU)
 	n(14516, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Death Knight Darkreaver
 		["cost"] = { { "i", 18746, 1 } },	-- Divination Scryer
 		["groups"] = {
@@ -948,6 +948,27 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			{ "i", 22052, 1 },	-- Brazier of Beckoning [Kormok]
 			{ "i", 22057, 1 },	-- Brazier of Invocation
 		},
+		-- #if AFTER 10.1.5
+		-- This init function unmarks the removed from game flag for folks with the brazier.
+		["OnInit"] = [[function(t)
+			if GetItemCount(22057, true) > 0 then
+				t.u = nil;
+				for i,o in ipairs(t.g) do
+					if o.u and o.u == 11 then
+						o.u = nil;
+					end
+				end
+			else
+				t.u = 11;
+				for i,o in ipairs(t.g) do
+					if not o.u then
+						o.u = 11;
+					end
+				end
+			end
+			return t;
+		end]],
+		-- #endif
 		["groups"] = {
 			i(22332),	-- Blade of Necromancy
 			i(22333),	-- Hammer of Divine Might

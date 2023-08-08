@@ -37,7 +37,7 @@ local RED_HAKKARI_BIJOU = 203771;
 local SILVER_HAKKARI_BIJOU = 203772;
 local YELLOW_HAKKARI_BIJOU = 203773;
 local ZANDALAR_BARGAINING_TOKEN = 203914;
-root("Instances", tier(CATA_TIER, {
+root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_1_0 }, {
 	inst(76, {	-- Zul'Gurub
 		["mapID"] = ZULGURUB,
 		["isRaid"] = false,	-- prevent merging isRaid from Classic version
@@ -759,23 +759,29 @@ root("Instances", tier(CATA_TIER, {
 					i(WITHERBARK_COIN),
 					i(ZULIAN_COIN),
 				})),
-				cr(52155, e(175, {	-- High Priest Venoxis
-					ach(5743),	-- It's Not Easy Being Green
-					i(69603),	-- Breastplate of Serenity
-					i(69600),	-- Belt of Slithering Serpents
-					i(69604),	-- Coils of Hate
-					i(69601),	-- Serpentine Leggings
-					i(69602),	-- Signet of Venoxis
-				})),
-				cr(52151, e(176, {	-- Bloodlord Mandokir
-					ach(5762),	-- Ohganot So Fast!
-					i(68823),	-- Armored Razzashi Raptor (MOUNT!)
-					i(69609),	-- Bloodlord's Protector
-					i(69607),	-- Touch of Discord
-					i(69605),	-- Amulet of the Watcher
-					i(69606),	-- Hakkari Loa Drape
-					i(69608),	-- Deathcharged Wristguards
-				})),
+				e(175, {	-- High Priest Venoxis
+					["crs"] = { 52155 },	-- High Priest Venoxis
+					["groups"] = {
+						ach(5743),	-- It's Not Easy Being Green
+						i(69600),	-- Belt of Slithering Serpents
+						i(69603),	-- Breastplate of Serenity
+						i(69604),	-- Coils of Hate
+						i(69601),	-- Serpentine Leggings
+						i(69602),	-- Signet of Venoxis
+					},
+				}),
+				e(176, {	-- Bloodlord Mandokir
+					["crs"] = { 52151 },	-- Bloodlord Mandokir
+					["groups"] = {
+						ach(5762),	-- Ohganot So Fast!
+						i(68823),	-- Armored Razzashi Raptor (MOUNT!)
+						i(69605),	-- Amulet of the Watcher
+						i(69609),	-- Bloodlord's Protector
+						i(69608),	-- Deathcharged Wristguards
+						i(69606),	-- Hakkari Loa Drape
+						i(69607),	-- Touch of Discord
+					},	
+				}),
 				n(CACHE_OF_MADNESS, {
 					--[[ encounter IDs if we're ever able to use an array for them:
 						177,	-- Gri'lek
@@ -799,66 +805,75 @@ root("Instances", tier(CATA_TIER, {
 								52286,	-- Wushoolay
 							},
 							["groups"] = {
-								i(69631),	-- Zulian Voodoo Stick
-								i(69632),	-- Lost Bag of Whammies
-								i(69630),	-- Handguards of the Tormented
-								i(69633),	-- Plunderer's Gauntlets
+								i(69630), -- Handguards of the Tormented
+								i(69632), -- Lost Bag of Whammies
+								i(69633), -- Plunderer's Gauntlets
+								i(69631), -- Zulian Voodoo Stick
 							},
 						}),
 						n(52258, {	-- Gri'lek
-							i(69635),	-- Amulet of Protection
-							i(69634),	-- Fasc's Preserved Boots
+							i(69635), -- Amulet of Protection
+							i(69634), -- Fasc's Preserved Boots
 						}),
 						n(52271, {	-- Hazza'rah
-							i(69636),	-- Thekal's Claws
-							i(69637),	-- Gurubashi Destroyer
+							i(69637), -- Gurubashi Destroyer
+							i(69636), -- Thekal's Claws
 						}),
 						n(52269, {	-- Renataki
-							i(69638),	-- Arlokk's Claws
-							i(69639),	-- Renataki's Soul Slicer
+							i(69638), -- Arlokk's Claws
+							i(69639), -- Renataki's Soul Slicer
 						}),
 						n(52286, {	-- Wushoolay
-							i(69641),	-- Troll Skull Chestplate
-							i(69640),	-- Kilt of Forgotten Rites
+							i(69640), -- Kilt of Forgotten Rites
+							i(69641), -- Troll Skull Chestplate
 						}),
 					},
 				}),
-				cr(52059, e(181, {	-- High Priestess Kilnara
-					ach(5765),	-- Here, Kitty Kitty...
-					i(68824),	-- Swift Zulian Panther (MOUNT!)
-					i(69614),	-- Roaring Mask of Bethekk
-					i(69612),	-- Claw-Fringe Mantle
-					i(69611),	-- Sash of Anguish
-					i(69613),	-- Leggings of the Pride
-					i(69610),	-- Arlokk's Signet
-				})),
-				cr(52053, e(184, {	-- Zanzil
-					i(69618),	-- Zulian Slicer
-					i(69617),	-- Plumed Medicine Helm
-					i(69616),	-- Spiritbinder Spaulders
-					i(69619),	-- Bone Plate Handguards
-					i(69615),	-- Zombie Walker Legguards
-				})),
-				cr(52148, e(185, {	-- Jin'do the Godbreaker
-					ach(5768),	-- Heroic: Zul'Gurub
-					ach(5770),	-- Heroic: Zul'Gurub Guild Run
-					ach(5759),	-- Spirit Twister
-					i(69628),	-- Jeklik's Smasher
-					i(69626),	-- Jin'do's Verdict
-					i(69624),	-- Legacy of Arlokk
-					i(69621),	-- Twinblade of the Hakkari
-					i(69620),	-- Twinblade of the Hakkari
-					i(69625),	-- Mandokir's Tribute
-					i(69629),	-- Shield of the Blood God
-					i(69627),	-- Zulian Ward
-					i(69622),	-- The Hexxer's Mask
-					i(69623),	-- Vestments of the Soulflayer
-					h(i(122215)),	-- Music Roll: Zul'Gurub Voodoo
-				})),
+				e(181, {	-- High Priestess Kilnara
+					["crs"] = { 52059 },	-- High Priestess Kilnara
+					["groups"] = {
+						ach(5765),	-- Here, Kitty Kitty...
+						i(68824),	-- Swift Zulian Panther (MOUNT!)
+						i(69610), 	-- Arlokk's Signet
+						i(69612), 	-- Claw-Fringe Mantle
+						i(69613), 	-- Leggings of the Pride
+						i(69614), 	-- Roaring Mask of Bethekk
+						i(69611), 	-- Sash of Anguish
+					},
+				}),
+				e(184, {	-- Zanzil
+					["crs"] = { 52053 },	-- Zanzil
+					["groups"] = {
+						i(69619), 	-- Bone Plate Handguards
+						i(69617), 	-- Plumed Medicine Helm
+						i(69616), 	-- Spiritbinder Spaulders
+						i(69615), 	-- Zombie Walker Legguards
+						i(69618), 	-- Zulian Slicer
+					},
+				}),
+				e(185, {	-- Jin'do the Godbreaker
+					["crs"] = { 52148 },	-- Jin'do the Godbreaker
+					["groups"] = {
+						ach(5768),	-- Heroic: Zul'Gurub
+						ach(5770),	-- Heroic: Zul'Gurub Guild Run
+						ach(5759),	-- Spirit Twister
+						i(69628), 	-- Jeklik's Smasher
+						i(69626), 	-- Jin'do's Verdict
+						i(69624), 	-- Legacy of Arlokk
+						i(69625), 	-- Mandokir's Tribute
+						i(69629), 	-- Shield of the Blood God
+						i(69622), 	-- The Hexxer's Mask
+						i(69620), 	-- Twinblade of the Hakkari
+						i(69621), 	-- Twinblade of the Hakkari
+						i(69623), 	-- Vestments of the Soulflayer
+						i(69627), 	-- Zulian Ward
+						h(i(122215)),	-- Music Roll: Zul'Gurub Voodoo
+					},
+				}),
 			}),
 		},
 	}),
-}));
+})));
 
 root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
