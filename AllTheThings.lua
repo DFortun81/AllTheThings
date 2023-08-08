@@ -10285,29 +10285,6 @@ app.OnUpdateReputationRequired = function(t)
 end
 end)();
 
--- Filter Lib
-(function()
-local fields = {
-	["key"] = function(t)
-		return "filterID";
-	end,
-	-- pseudo-headerID so that default Sorting considers Filter groups equivalent to Headers
-	["headerID"] = function()
-		return true;
-	end,
-	["name"] = function(t)
-		return L["FILTER_ID_TYPES"][t.filterID];
-	end,
-	["icon"] = function(t)
-		return L["FILTER_ID_ICONS"][t.filterID];
-	end,
-};
-app.BaseFilter = app.BaseObjectFields(fields, "BaseFilter");
-app.CreateFilter = function(id, t)
-	return setmetatable(constructor(id, t, "filterID"), app.BaseFilter);
-end
-end)();
-
 -- Flight Path Lib
 do
 local FlightPathMapIDs = {
@@ -22365,7 +22342,8 @@ app.ProcessAuctionData = function()
 			if filterID then
 				local filterData = filteredItems[entry.f];
 				if not filterData then
-					filterData = setmetatable({ ["filterID"] = filterID, ["g"] = {} }, app.BaseFilter);
+					filterData = app.CreateFilter(filterID);
+					filterData.g = {};
 					filteredItems[filterID] = filterData;
 					tinsert(searchResultsByKey.s, filterData);
 				end
@@ -22409,53 +22387,47 @@ app.ProcessAuctionData = function()
 	end
 
 	local ObjectTypeMetas = {
-		["criteriaID"] = setmetatable({	-- Achievements
-			["filterID"] = 105,
+		["criteriaID"] = app.CreateFilter(105, {	-- Achievements
 			["icon"] = "INTERFACE/ICONS/ACHIEVEMENT_BOSS_LICHKING",
 			["description"] = L["ITEMS_FOR_ACHIEVEMENTS_DESC"],
 			["priority"] = 1,
-		}, app.BaseFilter),
-		["s"] = setmetatable({			-- Appearances
-			["headerID"] = -10032,
+		}),
+		["s"] = {			-- Appearances
+			["text"] = "Appearances",
 			["icon"] = "INTERFACE/ICONS/INV_SWORD_06",
 			["description"] = L["ALL_APPEARANCES_DESC"],
 			["priority"] = 2,
-		}, app.BaseHeader),
-		["mountID"] = setmetatable({	-- Mounts
-			["filterID"] = 100,
+		},
+		["mountID"] = app.CreateFilter(100, {	-- Mounts
 			["description"] = L["ALL_THE_MOUNTS_DESC"],
 			["priority"] = 3,
-		}, app.BaseFilter),
-		["speciesID"] = setmetatable({	-- Battle Pets
-			["filterID"] = 101,
+		}),
+		["speciesID"] = app.CreateFilter(101, {	-- Battle Pets
 			["icon"] = "INTERFACE/ICONS/ICON_PETFAMILY_CRITTER",
 			["description"] = L["ALL_THE_BATTLEPETS_DESC"],
 			["priority"] = 4,
-		}, app.BaseFilter),
-		["questID"] = setmetatable({	-- Quests
-			["headerID"] = -9956,
+		}),
+		["questID"] = app.CreateNPC(app.HeaderConstants.QUESTS, {	-- Quests
 			["icon"] = "INTERFACE/ICONS/ACHIEVEMENT_GENERAL_100KQUESTS",
 			["description"] = L["ALL_THE_QUESTS_DESC"],
 			["priority"] = 5,
-		}, app.BaseHeader),
-		["recipeID"] = setmetatable({	-- Recipes
-			["filterID"] = 200,
+		}),
+		["recipeID"] = app.CreateFilter(200, {	-- Recipes
 			["icon"] = "INTERFACE/ICONS/INV_SCROLL_06",
 			["description"] = L["ALL_THE_RECIPES_DESC"],
 			["priority"] = 6,
-		}, app.BaseFilter),
+		}),
 		["itemID"] = {					-- General
 			["text"] = "General",
 			["icon"] = "INTERFACE/ICONS/INV_MISC_FROSTEMBLEM_01",
 			["description"] = L["ALL_THE_ILLUSIONS_DESC"],
 			["priority"] = 7,
 		},
-		["reagentID"] = setmetatable({	-- Reagent
-			["filterID"] = 56,
+		["reagentID"] = app.CreateFilter(56, {	-- Reagent
 			["icon"] = "INTERFACE/ICONS/SPELL_FROST_FROZENCORE",
 			["description"] = L["ALL_THE_REAGENTS_DESC"],
 			["priority"] = 8,
-		}, app.BaseFilter),
+		}),
 	};
 
 	-- Display Test for Raw Data + Filtering
