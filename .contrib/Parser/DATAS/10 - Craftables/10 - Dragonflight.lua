@@ -3138,6 +3138,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(74214),	-- Skinning Moth'go Deeploom
 			q(74215),	-- Skinning Skald the Impaler
 			q(74216),	-- Skinning Snufflegust
+			q(74218),	-- Skinning Thunderous Matriarch
 			q(74219),	-- Skinning Ancient Hornswog
 			q(74220),	-- Skinning Mamonth (War Party Event)
 			q(74222),	-- Skinning Smogswog the Firebreather
