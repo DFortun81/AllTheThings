@@ -1232,42 +1232,39 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 root(ROOTS.HiddenQuestTriggers, m(SHADOWLANDS, {
 	m(ZERETH_MORTIS, {
 		-- Misc
-		q(65531),	-- Starts pocopoc fashion
+		q(65531),	-- Starts pocopoc fashion (spellID 366694 & 366695 & 366696 & 366697 & 366698 & 366699 & 366700 & 366718 & 366735 & 366883)
 		q(65724),	-- Daily Bufonid Quest Trigger
-		q(65539),	-- Flying unlock
-		q(66014),	-- random trigger after logging in on 3rd day of patch & granted to character with ZM skip / Might have to with enchancement unlock?
-		-- Would Need reconfirm
+		q(65539),	-- Zereth Mortis Flying unlock (spellID 366736)
+		q(66014),	-- Flight Path Backup / Skip Zereth Mortis Intro / Teleport (spellID 367677 & 365316 & 360195)
 
 
 		--q(63766),	-- Triggered when Exploring (Might have to do with The Matriarch(183505))
 		--q(65621),	-- Triggered when HS to ZM
 
 		q(63850),	-- Tracking - Small Consoles
-		q(64880),	-- Unlocking Alt-Skip
-		q(65679),	-- Unlocking A Portal from Oribos to ZM
+		q(64880),	-- Unlocking Alt-Skip (spellID 359819 & 359820 & 359821 & 359823)
+		q(65679),	-- Unlocking A Portal from Oribos to ZM (spellID 365377 & 365378 & 369255 & 369256 & 369259)
 
 
 		--q(65144),	-- Firims Cave?
-		-- Lego
-		--q(65681),	-- Druid
 
 		-- Gravid Repose
-		q(65376),	-- Entering Gravid Repose First Time
-		q(65377),	-- Entering Gravid Repose First Time
-		q(65464),	-- Entering Gravid Repose First Time
+		q(65376),	-- Entering Gravid Repose First Time / Teach Taxi Node - Resonant Peaks (spellID 364659)
+		q(65377),	-- Entering Gravid Repose First Time / Teach Taxi Node - Resonant Peaks (spellID 364659)
+		q(65464),	-- Entering Gravid Repose First Time / Force Learn Taxi Nodes from Area (spellID 364790)
 
-		q(65330),	-- Interior Locus Arrangement at Gravid Repose
-		q(65337),	-- First Locus Arrangement at Gravid Repose
-		q(65339),	-- Second Locus Arrangement at Gravid Repose
-		q(65338),	-- Third Locus Arrangement at Gravid Repose
-		q(65340),	-- Fourth Locus Arrangement at Gravid Repose
-		q(65341),	-- Fifth Locus Arrangement at Gravid Repose
-		q(65342),	-- Ultimate Locus Arrangement at Gravid Repose
-		q(65457),	-- Unlock all
+		q(65330),	-- Interior Locus Arrangement at Gravid Repose (spellID 362607)
+		q(65337),	-- First Locus Arrangement at Gravid Repose (spellID 362536)
+		q(65339),	-- Second Locus Arrangement at Gravid Repose (spellID 362646)
+		q(65338),	-- Third Locus Arrangement at Gravid Repose (spellID 362667)
+		q(65340),	-- Fourth Locus Arrangement at Gravid Repose (spellID 362668)
+		q(65341),	-- Fifth Locus Arrangement at Gravid Repose (spellID 362669)
+		q(65342),	-- Ultimate Locus Arrangement at Gravid Repose (spellID 362670)
+		q(65457),	-- Unlock all (spellID 365988)
 
-		q(65378),	-- Starting Secret Teleport System at Gravid Repose
+		q(65378),	-- Starting Secret Teleport System at Gravid Repose (spellID 364793 & 364794 & 364795 & 364796 & 364797)
 
-		q(65650),	-- Completing Camber Alcove puzzle
+		q(65650),	-- Completing Camber Alcove puzzle (spellID 367425)
 
 		q(65707),	-- Triggered when killing Phalangax, the Final Grasp
 		q(65558),	-- Triggered when killing Edra, the Will Grazer
@@ -1278,16 +1275,16 @@ root(ROOTS.HiddenQuestTriggers, m(SHADOWLANDS, {
 		--q(65629),	-- Triggered when killing Akkaris
 		--q(65626),	-- Triggered when killing Mother Phestis <Tarachnid Prime>
 
-		q(65785),	-- Triggered after the summoner of Hirukon kills them.
+		q(65785),	-- Triggered after the summoner of Hirukon kills them (spellID 368790 & 369848)
 
 		-- RP
-		q(65233),	-- RP after Jiro to Hero(65219)
-		q(65571),	-- RP after Chap 5 with Taelia
-		q(65619),	-- RP after Tahli Questline
-		q(65693),	-- RP Elder Ara 34.8, 64.8  after q(64844, {	-- The Pilgrimage Ends
+		q(65233),	-- RP after 'Jiro to Hero' (questID 65219) (spellID 362672)
+		q(65571),	-- RP after Chap 5 with Taelia (spellID 366796)
+		q(65619),	-- RP after Tahli Questline (spellID 367037)
+		q(65693),	-- RP Elder Ara 34.8, 64.8 after 'The Pilgrimage Ends' (questID64844) (spellID 367834) 
 
 		-- Treasure
-		q(65670),	-- Syntactic Vault When unlocking the box
+		q(65670),	-- Syntactic Vault When unlocking the box (spellID 367552)
 
 		--q(65011),	 Old HQT for i(187885, {	-- Honeycombed Lattice
 

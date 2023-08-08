@@ -1382,7 +1382,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 5840,	-- Dark Iron Steamsmith
 				}),
 				-- #endif
-				applyclassicphase(PHASE_FIVE, i(21547, {	-- Recipe: Elixir of Greater Firepower
+				applyclassicphase(PHASE_FIVE, i(21547, {	-- Recipe: Elixir of Greater Firepower (RECIPE!)
 					["timeline"] = { "removed 4.0.1" },
 					["crs"] = {
 						5844,	-- Dark Iron Slaver

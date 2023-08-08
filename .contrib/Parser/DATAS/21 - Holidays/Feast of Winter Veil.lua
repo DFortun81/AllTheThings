@@ -1173,7 +1173,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				i(17722),	-- Pattern: Gloves of the Greatfather (RECIPE!)
 				i(17724),	-- Pattern: Green Holiday Shirt
 				i(17706),	-- Plans: Edge of Winter (RECIPE!)
-				i(17709),	-- Recipe: Elixir of Frost Power
+				i(17709),	-- Recipe: Elixir of Frost Power (RECIPE!)
 				i(17720),	-- Schematic: Snowmaster 9000
 				i(21325),	-- Mechanical Greench
 				i(21213),	-- Preserved Holly
@@ -2068,7 +2068,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			i(17722),	-- Pattern: Gloves of the Greatfather (RECIPE!)
 			i(17724),	-- Pattern: Green Holiday Shirt
 			i(17706),	-- Plans: Edge of Winter (RECIPE!)
-			i(17709),	-- Recipe: Elixir of Frost Power
+			i(17709),	-- Recipe: Elixir of Frost Power (RECIPE!)
 			i(17720),	-- Schematic: Snowmaster 9000
 		}),
 		-- TODO: Sort out the contents of the Stolen Presents by patch (in time, don't need it until Cata)
@@ -2463,7 +2463,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			["timeline"] = { "added 7.1.0.22844" },
 			["isYearly"] = true,
 		}),
-		q(64628, {	-- Triggered when learning the additional things for the Rockin' Rollin' Toy.
+		q(64628, {	-- Triggered when learning the additional things for the Rockin' Rollin' Toy (spellID 358761)
 			["timeline"] = { ADDED_9_1_5 },
 		}),
 	}),

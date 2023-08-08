@@ -13,8 +13,55 @@ local function AwardsCost(amount)
 		-- #endif
 	};
 end
-profession(COOKING, {
+root(ROOTS.Professions, prof(COOKING, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
+		applyclassicphase(WRATH_PHASE_ONE, ach(1563, {	-- Hail to the Chef [Alliance]
+			["sym"] = {{"meta_achievement",
+				1801,	-- Captain Rumsey's Lager
+				1781,	-- Critter Gitter
+				1785,	-- Dinner Impossible
+				906,	-- Kickin' It Up a Notch
+				125,	-- Northrend Cook
+				1782,	-- Our Daily Bread [A]
+				-- #if AFTER 4.0.3
+				1783,	-- Our Daily Bread [H]
+				-- #endif
+				1780,	-- Second That Emotion
+				1798,	-- Sous Chef
+				877,	-- The Cake Is Not A Lie
+				1779,	-- The Northrend Gourmet (45)
+				1800,	-- The Outland Gourmet
+			}},
+			["timeline"] = { "added 3.0.1" },
+			["requireSkill"] = COOKING,
+			-- #if BEFORE 4.0.3
+			["races"] = ALLIANCE_ONLY,
+			-- #endif
+			["groups"] = {
+				title(52),	-- Chef <Name>
+			},
+		})),
+		applyclassicphase(WRATH_PHASE_ONE, ach(1784, {	-- Hail to the Chef [Horde]
+			["sym"] = {{"meta_achievement",
+				1801,	-- Captain Rumsey's Lager
+				1781,	-- Critter Gitter
+				1785,	-- Dinner Impossible
+				906,	-- Kickin' It Up a Notch
+				125,	-- Northrend Cook
+				1783,	-- Our Daily Bread [H]
+				1780,	-- Second That Emotion
+				1798,	-- Sous Chef
+				877,	-- The Cake Is Not A Lie
+				1779,	-- The Northrend Gourmet (45)
+				1800,	-- The Outland Gourmet
+			}},
+			["timeline"] = { "added 3.0.1", "deleted 4.0.3" },
+			["requireSkill"] = COOKING,
+			["races"] = HORDE_ONLY,
+			["groups"] = {
+				title(52),	-- Chef <Name>
+			},
+		})),
 		ach(18817, {	-- Showoff Chef
 			["timeline"] = { ADDED_10_1_7 },
 		}),
@@ -47,33 +94,13 @@ profession(COOKING, {
 		ach(1998, {	-- Cooking Award
 			["cost"] = AwardsCost(1),
 		}),
-		ach(1563, {-- Hail to the Chef
-			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
-				1801,	-- Captain Rumsey's Lager
-				1781,	-- Critter Gitter
-				1785,	-- Dinner Impossible
-				906,	-- Kickin' It Up a Notch
-				125,	-- Northrend Cook
-				1782,	-- Our Daily Bread [A]
-				1783,	-- Our Daily Bread [H]
-				1780,	-- Second That Emotion
-				1798,	-- Sous Chef
-				877,	-- The Cake Is Not A Lie
-				1779,	-- The Northrend Gourmet (45)
-				1800,	-- The Outland Gourmet
-			}},
-			["g"] = {
-				title(52),	-- Chef <Name>
-			},
-		}),
 	})),
-	tier(CLASSIC_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
+	tier(CLASSIC_TIER, bubbleDown({ ["timeline"] = { ADDED_3_0_2 } }, {
 		ach(123),	-- Classic Cook
 		ach(122),	-- Expert Cook
 		ach(121),	-- Journeyman Cook
 	})),
-	tier(TBC_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
+	tier(TBC_TIER, bubbleDown({ ["timeline"] = { ADDED_3_0_2 } }, {
 		ach(124),	-- Outland Cook
 		ach(1801, {	-- Captain Rumsey's Lager
 			["provider"] = { "i", 34832 },	-- Captain Rumsey's Lager
@@ -382,10 +409,10 @@ profession(COOKING, {
 		}),
 	})),
 	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
-		ach(12742, {	-- Kul Tiran Cook (A)
+		ach(12742, {	-- Kul Tiran Cook [A]
 			["races"] = ALLIANCE_ONLY,
 		}),
-		ach(12743, {	-- Zandalari Cook (H)
+		ach(12743, {	-- Zandalari Cook [H]
 			["races"] = HORDE_ONLY,
 		}),
 		ach(12747, {	-- Catering for Combat
@@ -439,9 +466,46 @@ profession(COOKING, {
 		ach(14332),	-- Shadowlands Cook
 	})),
 	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
-		ach(16631),	-- Dragon Isles Cook
+		n(ACHIEVEMENTS, {
+			ach(16631),	-- Dragon Isles Cook
+			ach(17736, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- The Gift of Cheese
+				["cost"] = {{ "i", 204848, 50 }},	-- 50x Charitable Cheddar
+				["g"] = {
+					i(204894, {	-- Roland (PET!)
+						["description"] = "Roland will also teach your alts the recipes for Deviously Deviled Eggs and Charitable Cheddar, if you learned the recipes via the original source.",
+						["groups"] = {
+							r(407100),	-- Charitable Cheddar
+							r(403018),	-- Deviously Deviled Eggs
+						},
+					}),
+				},
+			})),
+		}),
+		n(QUESTS, {
+			q(72251, {	-- Dragon Isles Cooking
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Cooking.",
+				["sourceQuests"] = {
+					67700,	-- To the Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "n", 193121 },	-- Head Chef Stacks
+				["coord"] = { 47.1, 82.7, THE_WAKING_SHORES },
+				["lockCriteria"] = { 1, "spellID", 366256 },	-- Dragon Isles Cooking
+
+			}),
+			q(72250, {	-- Dragon Isles Cooking
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Cooking.",
+				["sourceQuests"] = {
+					67700,	-- To the Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "n", 198094 },	-- Head Chef Stacks
+				["coord"] = { 76.4, 35.7, THE_WAKING_SHORES },
+				["lockCriteria"] = { 1, "spellID", 366256 },	-- Dragon Isles Cooking
+			}),
+		}),
 	})),
-});
+}));
 
 
 

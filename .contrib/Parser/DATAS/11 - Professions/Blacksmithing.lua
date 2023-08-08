@@ -2,7 +2,7 @@
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
 local BLACKSMITHING_KNOWLEDGE = 2023;
-profession(BLACKSMITHING, {
+root(ROOTS.Professions, prof(BLACKSMITHING, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18866),	-- Anvil Mastery IV
 		ach(18865),	-- Anvil Mastery III
@@ -463,7 +463,7 @@ profession(BLACKSMITHING, {
 				i(123941),	-- Plans: Demonsteel Waistguard [Rank 2] (RECIPE!)
 			},
 		}),
-		-- Rethu's Incessant Courage Questline
+		------ Rethu's Incessant Courage Questline ------
 		q(46696, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Legend of the Four Hammers
 			["sourceQuests"] = { 46804 },	-- Fashion History and a Philosophy of Style
 			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
@@ -528,7 +528,7 @@ profession(BLACKSMITHING, {
 				i(147207),	-- Legendary Blacksmithing Supplies (QI!)
 			},
 		})),
-		-- 7.3.0
+		------ 7.3.0 ------
 		q(48055, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Empyrial Strength
 			["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
 			["provider"] = { "n", 125341 },	-- Khamir
@@ -573,56 +573,56 @@ profession(BLACKSMITHING, {
 			["provider"] = { "i", 152839 },	-- Khaz'gorian Smithing Hammer
 			["timeline"] = { ADDED_10_1_7 },
 		}),
-		q(54465, {	-- Blacksmithing Plans
+		q(54465, {	-- Blacksmithing Plans [A]
 			["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
 			["coord"] = { 73.6, 8.6, BORALUS },
 			["races"] = ALLIANCE_ONLY,
 			["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
 		}),
-		q(54466, {	-- Blacksmithing Plans
+		q(54466, {	-- Blacksmithing Plans [H]
 			["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
 			["coord"] = { 43.6, 38.3, DAZARALOR },
 			["races"] = HORDE_ONLY,
 			["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
 		}),
-		-- Tools of Trade Questline
-		q(50123, {	-- A Recipe For the Ages (A)
+		------ Tools of Trade Questline ------
+		q(50123, {	-- A Recipe For the Ages [A]
 			["description"] = "Requires 150 Kul Tiran Blacksmithing.",
 			["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
 			["coord"] = { 73.6, 8.6, BORALUS },
 			["races"] = ALLIANCE_ONLY,
 			["timeline"] = { ADDED_8_1_5 },
 		}),
-		q(50276, {	-- A Recipe For the Ages (H)
+		q(50276, {	-- A Recipe For the Ages [H]
 			["description"] = "Requires 150 Zandalari Blacksmithing.",
 			["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
 			["coord"] = { 43.6, 38.3, DAZARALOR },
 			["races"] = HORDE_ONLY,
 			["timeline"] = { ADDED_8_1_5 },
 		}),
-		q(50114, {	-- Hammering Out Information (A)
-			["sourceQuests"] = { 50123 },	-- A Recipe For the Ages (A)
+		q(50114, {	-- Hammering Out Information [A]
+			["sourceQuests"] = { 50123 },	-- A Recipe For the Ages [A]
 			["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
 			["coord"] = { 73.6, 8.6, BORALUS },
 			["races"] = ALLIANCE_ONLY,
 			["timeline"] = { ADDED_8_1_5 },
 		}),
-		q(50277, {	-- Hammering Out Information (H)
-			["sourceQuests"] = { 50276 },	-- A Recipe For the Ages (H)
+		q(50277, {	-- Hammering Out Information [H]
+			["sourceQuests"] = { 50276 },	-- A Recipe For the Ages [H]
 			["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
 			["coord"] = { 43.6, 38.3, DAZARALOR },
 			["races"] = HORDE_ONLY,
 			["timeline"] = { ADDED_8_1_5 },
 		}),
-		q(50270, {	-- Deep In the Core (A)
-			["sourceQuests"] = { 50114 },	-- Hammering Out Information (A)
+		q(50270, {	-- Deep In the Core [A]
+			["sourceQuests"] = { 50114 },	-- Hammering Out Information [A]
 			["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
 			["coord"] = { 73.6, 8.6, BORALUS },
 			["races"] = ALLIANCE_ONLY,
 			["timeline"] = { ADDED_8_1_5 },
 		}),
-		q(50278, {	-- Deep In the Core (H)
-			["sourceQuests"] = { 50277 },	-- Hammering Out Information (H)
+		q(50278, {	-- Deep In the Core [H]
+			["sourceQuests"] = { 50277 },	-- Hammering Out Information [H]
 			["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
 			["coord"] = { 43.6, 38.3, DAZARALOR },
 			["races"] = HORDE_ONLY,
@@ -630,8 +630,8 @@ profession(BLACKSMITHING, {
 		}),
 		q(50271, {	-- Smash and Grab
 			["sourceQuests"] = {
-				50270,	-- Deep In the Core (A)
-				50278,	-- Deep In the Core (H)
+				50270,	-- Deep In the Core [A]
+				50278,	-- Deep In the Core [H]
 			},
 			["provider"] = { "n", 133489 },	-- Ormhun Stonehammer
 			["coord"] = { 53.9, 50.0, DEEPHOLM },
@@ -640,8 +640,8 @@ profession(BLACKSMITHING, {
 		}),
 		q(50272, {	-- An Ear to the Ground
 			["sourceQuests"] = {
-				50270,	-- Deep In the Core (A)
-				50278,	-- Deep In the Core (H)
+				50270,	-- Deep In the Core [A]
+				50278,	-- Deep In the Core [H]
 			},
 			["provider"] = { "n", 133489 },	-- Ormhun Stonehammer
 			["coord"] = { 53.9, 50.0, DEEPHOLM },
@@ -663,7 +663,7 @@ profession(BLACKSMITHING, {
 			["coord"] = { 27.5, 50.8, DEEPHOLM },
 			["timeline"] = { ADDED_8_1_5 },
 		}),
-		q(50275, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Anvil's Away (A)
+		q(50275, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Anvil's Away [A]
 			["sourceQuests"] = { 50288 },	-- Therazane's Choice
 			["provider"] = { "n", 133796 },	-- Therazane
 			["coord"] = { 27.5, 50.8, DEEPHOLM },
@@ -672,7 +672,7 @@ profession(BLACKSMITHING, {
 				r(253145),	-- Khaz'gorian Smithing Hammer (RECIPE!)
 			},
 		})),
-		q(50279, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Anvil's Away (H)
+		q(50279, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Anvil's Away [H]
 			["sourceQuests"] = { 50288 },	-- Therazane's Choice
 			["provider"] = { "n", 133796 },	-- Therazane
 			["coord"] = { 27.5, 50.8, DEEPHOLM },
@@ -707,7 +707,7 @@ profession(BLACKSMITHING, {
 			q(70025, {	-- Artisan's Supply: Draconium Sickle
 				["provider"] = { "n", 192164 },	-- Gringot Coldsteel
 				["coord"] = { 25.8, 54.4, THE_WAKING_SHORES },
-				["cost"] = { { "i", 191241, 1 } },	-- Draconium Sickle
+				["cost"] = {{ "i", 191241, 1 }},	-- Draconium Sickle
 				["_drop"] = { "g" },
 			}),
 			q(70250, {	-- Hidden Profession Master Blacksmith
@@ -719,7 +719,7 @@ profession(BLACKSMITHING, {
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
 				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
-				["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
+				["cost"] = {{ "i", 191784, 1 }},	-- 1x Dragon Shard of Knowledge
 				["isRepeatable"] = true,
 				["g"] = {
 					i(190456),	-- Artisan's Mettle
@@ -733,7 +733,7 @@ profession(BLACKSMITHING, {
 				i(198606),	-- Blacksmith's Writ
 			},
 		},{
-			-- Requires 25 Skill
+			------ Requires 25 Skill ------
 			q(70589, {	-- Blacksmithing Services Requested
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 194026 },	-- Azley
@@ -755,7 +755,7 @@ profession(BLACKSMITHING, {
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
 			}),
 
-			-- Requires 45 Skill
+			------ Requires 45 Skill ------
 			q(66517, {	-- A New Source of Weapons
 				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 191002 },	-- Dhurrel
@@ -782,7 +782,7 @@ profession(BLACKSMITHING, {
 				["coord"] = { 37.0, 47.0, VALDRAKKEN },
 			}),
 
-			-- Requires ?? Skill - Patch 10.1.0.
+			------ Requires ?? Skill - Patch 10.1.0. ------
 			q(75148, {	-- Ancient Techniques
 				["provider"] = { "n", 203516 },	-- Kayann
 				["coord"] = { 36.5, 62.5, VALDRAKKEN },
@@ -796,7 +796,7 @@ profession(BLACKSMITHING, {
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["g"] = sharedData({ ["cost"] = { { "c", BLACKSMITHING_KNOWLEDGE, 1 } }, }, {
+			["g"] = sharedData({ ["cost"] = {{ "c", BLACKSMITHING_KNOWLEDGE, 1 }} }, {
 				r(376700),	-- Illustrious Insight
 				r(371412),	-- Khaz'gorite Blacksmith's Hammer
 				r(371374),	-- Khaz'gorite Blacksmith's Toolbox
@@ -961,7 +961,9 @@ profession(BLACKSMITHING, {
 			}),
 		})),
 	})),
-});
+}));
+
+
 
 -- #if ANYCLASSIC
 local applytraining = function(g)

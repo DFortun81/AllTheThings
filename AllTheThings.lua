@@ -1164,6 +1164,8 @@ app.MergeSkipFields = {
 	["modItemID"] = true,
 	["rawlink"] = true,
 	["sourceIgnored"] = true,
+	["costNested"] = true,
+	["hasUpgradeNested"] = true,
 	-- 1 -> only when cloning
 	["e"] = 1,
 	["u"] = 1,
@@ -4260,10 +4262,10 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 					end
 					-- doesn't meet current unobtainable filters
 					if not app.RecursiveUnobtainableFilter(j) then
-						tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-DnD:0|t");
+						tinsert(unfiltered, text .. " |TInterface\\AddOns\\AllTheThings\\assets\\status-unobtainable.blp:0|t");
 					-- from obtainable, different character source
 					elseif not app.RecursiveCharacterRequirementsFilter(j) then
-						tinsert(temp, text .. " |TInterface\\FriendsFrame\\StatusIcon-Away:0|t");
+						tinsert(temp, text .. " |TInterface\\FriendsFrame\\StatusIcon-Offline:0|t");
 					else
 						-- check if this needs an unobtainable icon even though it's being shown
 						uTexture = GetUnobtainableTexture(
@@ -7260,6 +7262,8 @@ local HeaderCloneFields = {
 	["trackable"] = app.ReturnNil,
 	["collectibleAsCost"] = app.ReturnNil,
 	["costCollectibles"] = app.ReturnNil,
+	["hasUpgradeNested"] = app.ReturnNil,
+	["costNested"] = app.ReturnNil,
 	["g"] = app.ReturnNil,
 	-- Filter-affecting fields
 	["customCollect"] = app.ReturnNil,
@@ -7288,6 +7292,8 @@ local FilterHeaderCloneFields = {
 	["trackable"] = app.ReturnNil,
 	["collectibleAsCost"] = app.ReturnNil,
 	["costCollectibles"] = app.ReturnNil,
+	["hasUpgradeNested"] = app.ReturnNil,
+	["costNested"] = app.ReturnNil,
 	["g"] = app.ReturnNil,
 	-- ["back"] = function(t)
 	-- 	return 0.3;	-- visibility of which rows are cloned
@@ -7639,7 +7645,8 @@ local function MapSourceQuestsRecursive(parentQuestID, questID, currentDepth, de
 		questRef = CreateObject(questRef, true);
 
 		-- force collectible for normally un-collectible but trackable things to make sure it shows in list if the quest needs to be completed to progess
-		if not questRef.collectible and questRef.trackable then
+		-- unless a quest is specifically set to be non-collectible directly
+		if not questRef.collectible and questRef.trackable and rawget(questRef, "collectible") ~= false then
 			questRef.collectible = true;
 		end
 
@@ -12658,7 +12665,8 @@ local function GetAutomaticHeaderData(id, type)
 		local obj = app.SearchForObject(typeID, id, "key") or CreateObject({[typeID]=id});
 		if obj then
 			-- app.PrintDebug("Automatic Header",obj.name or obj.link)
-			return (obj.name or obj.link), obj.icon;
+			local name = obj.name or obj.link;
+			return not IsRetrieving(name) and name or nil, obj.icon;
 		else
 			app.print("Failed finding object/function for automatic header",type,id);
 		end
@@ -18546,7 +18554,7 @@ end
 app.GetCustomWindowParam = function(suffix, name)
 	local params = customWindowUpdates.params[suffix];
 	-- app.PrintDebug("GetCustomWindowParam",suffix,name,params and params[name])
-	return params and params[name];
+	return params and params[name] or nil;
 end
 -- Defines the value of the specific attribute for the given window suffix
 app.SetCustomWindowParam = function(suffix, name, value)
@@ -20884,8 +20892,9 @@ customWindowUpdates["list"] = function(self, force, got)
 		local onlyMissing = app.GetCustomWindowParam("list", "missing");
 		local onlyCached = app.GetCustomWindowParam("list", "cached");
 		local harvesting = app.GetCustomWindowParam("list", "harvesting");
-		self.PartitionSize = app.GetCustomWindowParam("list", "part") or 1000;
-		self.Limit = app.GetCustomWindowParam("list", "limit") or 1000;
+		self.PartitionSize = tonumber(app.GetCustomWindowParam("list", "part")) or 1000;
+		self.Limit = tonumber(app.GetCustomWindowParam("list", "limit")) or 1000;
+		local min = tonumber(app.GetCustomWindowParam("list", "min")) or 0
 		-- print("Quests - onlyMissing",onlyMissing)
 		local CacheFields, ItemHarvester;
 
@@ -20997,8 +21006,6 @@ customWindowUpdates["list"] = function(self, force, got)
 			g = g,
 		}, PartitionMeta));
 
-		-- add a bunch of raw, delay-loaded objects in order into the window
-		local groupCount = math.ceil(self.Limit / self.PartitionSize) - 1;
 		local overrides = {
 			visible = not harvesting and true or nil,
 			indent = 2,
@@ -21056,9 +21063,12 @@ customWindowUpdates["list"] = function(self, force, got)
 			app.SetDGUDelay(0);
 			StartCoroutine("AutoHarvestFirstPartitionCoroutine", self.AutoHarvestFirstPartitionCoroutine);
 		end
+		-- add a bunch of raw, delay-loaded objects in order into the window
+		local groupCount = math.ceil(self.Limit / self.PartitionSize) - 1;
+		local groupStart = math.ceil(min / self.PartitionSize) - 1;
 		local partition, partitionStart, partitionGroups;
 		local dlo = app.DelayLoadedObject;
-		for j=0,groupCount,1 do
+		for j=groupStart,groupCount,1 do
 			partitionStart = j * self.PartitionSize;
 			partitionGroups = {};
 			-- define a sub-group for a range of things
@@ -23327,8 +23337,12 @@ end
 SLASH_AllTheThingsHARVESTER1 = "/attharvest";
 SLASH_AllTheThingsHARVESTER2 = "/attharvester";
 SlashCmdList["AllTheThingsHARVESTER"] = function(cmd)
+	app.SetCustomWindowParam("list", "reset", true);
 	app.SetCustomWindowParam("list", "type", "cache:item");
 	app.SetCustomWindowParam("list", "harvesting", true);
+	local args = { strsplit(",", string_lower(cmd)) };
+	app.SetCustomWindowParam("list", "min", args[1]);
+	app.SetCustomWindowParam("list", "limit", args[2]);
 	app:GetWindow("list"):Toggle();
 end
 

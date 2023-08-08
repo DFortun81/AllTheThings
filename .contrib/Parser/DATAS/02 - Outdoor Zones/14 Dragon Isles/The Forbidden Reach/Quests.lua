@@ -244,10 +244,30 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["coord"] = { 34, 59.8, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
 			}),
-			n(BONUS_OBJECTIVES, {
-				q(74377, {	-- Capsize a Crab
-					["coord"] = { 37.4, 81.7, THE_FORBIDDEN_REACH },
-				}),
+			-- Augmentation Evoker questline
+			q(72513, {	-- Our Destiny
+				["timeline"] = { ADDED_10_1_5 },
+				["description"] = "You get this anywhere in the Dragon Isles when you specialize in Augmentation for the first time.",
+			}),
+			q(72514, {	-- The High Creche
+				["sourceQuests"] = { 72513 },	-- Our Destiny
+				["provider"] = { "n", 199135 },	-- Scalecommander Emberthal
+				["coord"] = { 58.6, 68.5, THE_FORBIDDEN_REACH },
+				["timeline"] = { ADDED_10_1_5 },
+			}),
+			q(72515, {	-- Augmenting a Dragon
+				["sourceQuests"] = { 72514 },	-- The High Creche
+				["provider"] = { "n", 199141 },	-- Scalecommander Emberthal
+				["coord"] = { 58.7, 70.4, THE_FORBIDDEN_REACH },
+				["timeline"] = { ADDED_10_1_5 },
+				["g"] = {
+					i(205162),	-- Nelthara (PET!)
+				},
+			}),
+		}),
+		n(BONUS_OBJECTIVES, {
+			q(74377, {	-- Capsize a Crab
+				["coord"] = { 37.4, 81.7, THE_FORBIDDEN_REACH },
 			}),
 		}),
 		n(QUESTS, sharedData({ ["isWeekly"] = true, ["sourceQuests"] = { 74381 } }, {

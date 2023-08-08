@@ -1564,12 +1564,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	q(64563),	-- triggered when turning in #64556, "In Need of Assistance"
-	q(64737),	-- triggered when turning in #64271, "A More Civilized Way" - received i(185115), Redeemed Inquisitor's Drape - perhaps a universal 'received covenant transmog' tracking quest?  got it the next day on my Kyrian shaman, who received i(184989), Forsworn Aspirant's Wraps.  was the first covenant mog for both characters ever but perhaps could be a weekly lockout or something? (See Errors for other ways to get this)
-	q(64507),	-- triggered after picking up #64211, "Doorway in the Dark"
+	q(64563),	-- triggered when turning in 'In Need of Assistance' (questID 64556) (spellID 357754)
+	q(64737),	-- triggered when turning in 'A More Civilized Way' (questID 64271) - received i(185115), Redeemed Inquisitor's Drape - perhaps a universal 'received covenant transmog' tracking quest?  got it the next day on my Kyrian shaman, who received i(184989), Forsworn Aspirant's Wraps.  was the first covenant mog for both characters ever but perhaps could be a weekly lockout or something? (See Errors for other ways to get this)
+	q(64507),	-- triggered after picking up 'Doorway in the Dark' (questID 64211) (spellID 356686)
 	q(64533),	-- triggered after listening to the entirety of the Primus's RP after turning in "Covenants Renewed"
-	q(64377),	-- triggered after watching Thrall/Draka RP about Garrosh
+	q(64377),	-- triggered after watching Thrall/Draka RP about Garrosh (spellID 356325)
 	q(64335),	-- triggered after watching Alexandros/Darion Mograine RP about Tirion
-	q(64429),	-- triggered after watching Jaina/Uther RP about Arthas
-	q(64577),	-- triggered after watching Tal-Galan/Ve'nari RP about Zereth Mortis
+	q(64429),	-- triggered after watching Jaina/Uther RP about Arthas (spellID 356398)
+	q(64577),	-- triggered after watching Tal-Galan/Ve'nari RP about Zereth Mortis (spellID 358146)
 });

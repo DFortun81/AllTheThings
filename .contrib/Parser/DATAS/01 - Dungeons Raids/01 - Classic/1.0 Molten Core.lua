@@ -390,7 +390,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						11988,	-- Golemagg the Incinerator
 					},
 				}),
-				i(18257, {	-- Recipe: Major Rejuvenation Potion
+				i(18257, {	-- Recipe: Major Rejuvenation Potion (RECIPE!)
 					["crs"] = {
 						12118,	-- Lucifron
 						11982,	-- Magmadar

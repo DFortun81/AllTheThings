@@ -1969,6 +1969,13 @@ checkboxDebugMode:AlignBelow(checkboxShowAllTrackableThings)
 -- Column 2
 local headerGeneralContent = child:CreateHeaderLabel(L["GENERAL_CONTENT"])
 headerGeneralContent:SetPoint("TOPLEFT", headerAccountThings, 320, 0)
+headerGeneralContent.OnRefresh = function(self)
+	if settings:Get("DebugMode") then
+		self:SetAlpha(0.4)
+	else
+		self:SetAlpha(1)
+	end
+end
 
 local checkboxShowUnboundItems = child:CreateCheckBox(L["SHOW_BOE_CHECKBOX"],
 function(self)
@@ -2081,10 +2088,24 @@ checkboxShowPvP:AlignBelow(checkboxShowPetBattles)
 local headerAutomatedContent = child:CreateHeaderLabel(L["CUSTOM_FILTERS_LABEL"])
 headerAutomatedContent:SetPoint("TOP", checkboxShowPvP, "BOTTOM", 0, -10)
 headerAutomatedContent:SetPoint("LEFT", headerGeneralContent, 0, 0)
+headerAutomatedContent.OnRefresh = function(self)
+	if settings:Get("DebugMode") then
+		self:SetAlpha(0.4)
+	else
+		self:SetAlpha(1)
+	end
+end
 
 local textAutomatedContentExplain = child:CreateTextLabel(L["CUSTOM_FILTERS_EXPLAIN_LABEL"])
 textAutomatedContentExplain:SetPoint("TOPLEFT", headerAutomatedContent, "BOTTOMLEFT", 0, -4)
 textAutomatedContentExplain:SetWidth(320)
+textAutomatedContentExplain.OnRefresh = function(self)
+	if settings:Get("DebugMode") then
+		self:SetAlpha(0.4)
+	else
+		self:SetAlpha(1)
+	end
+end
 
 	-- Automated Content toggles
 	local insane_color = app.ccColors.Insane
@@ -2171,6 +2192,13 @@ textAutomatedContentExplain:SetWidth(320)
 
 local headerUnobtainableContent = child:CreateHeaderLabel(L["UNOBTAINABLE_LABEL"])
 headerUnobtainableContent:SetPoint("TOPLEFT", ccCheckbox, "BOTTOMLEFT", 0, -10)	-- Place under the last Automated Content checkbox
+headerUnobtainableContent.OnRefresh = function(self)
+	if settings:Get("DebugMode") then
+		self:SetAlpha(0.4)
+	else
+		self:SetAlpha(1)
+	end
+end
 
 	local unobtainables = L["UNOBTAINABLE_ITEM_REASONS"]
 
@@ -2186,8 +2214,13 @@ local checkboxShowAllUnobtainable = child:CreateCheckBox(L["UNOBTAINABLE_ALL"],
 		end
 		self:SetChecked(not anyFiltered)
 		settings:SetValue("Unobtainable", "DoFiltering", anyFiltered)
-		self:Enable()
-		self:SetAlpha(1)
+		if settings:Get("DebugMode") then
+			self:Disable()
+			self:SetAlpha(0.4)
+		else
+			self:Enable()
+			self:SetAlpha(1)
+		end
 	end,
 	function(self)
 		local checked = self:GetChecked()
@@ -2210,8 +2243,13 @@ function(self)
 		end
 	end
 	self:SetChecked(not anyFiltered)
-	self:Enable()
-	self:SetAlpha(1)
+	if settings:Get("DebugMode") then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
 end,
 function(self)
 	local checked = self:GetChecked()
@@ -2231,8 +2269,13 @@ for k,v in pairs(unobtainables) do
 		local filter = child:CreateCheckBox(v[3],
 		function(self)
 			self:SetChecked(settings:GetValue("Unobtainable", k))
-			self:Enable()
-			self:SetAlpha(1)
+			if settings:Get("DebugMode") then
+				self:Disable()
+				self:SetAlpha(0.4)
+			else
+				self:Enable()
+				self:SetAlpha(1)
+			end
 		end,
 		function(self)
 			settings:SetValue("Unobtainable", k, self:GetChecked())
@@ -2253,20 +2296,25 @@ local checkboxShowAllHighChance = child:CreateCheckBox(L["HIGH_CHANCE_ALL"],
 function(self)
 	local anyFiltered = false
 	for k,v in pairs(unobtainables) do
-		if v[1] == 3 then
+		if v[1] == 2 or v[1] == 3 then
 			if not settings:GetValue("Unobtainable", k) then
 				anyFiltered = true
 			end
 		end
 	end
 	self:SetChecked(not anyFiltered)
-	self:Enable()
-	self:SetAlpha(1)
+	if settings:Get("DebugMode") then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
 end,
 function(self)
 	local checked = self:GetChecked()
 	for k,v in pairs(unobtainables) do
-		if v[1] == 3 then
+		if v[1] == 2 or v[1] == 3 then
 			settings:SetValue("Unobtainable", k, checked)
 		end
 	end
@@ -2277,12 +2325,17 @@ checkboxShowAllHighChance:AlignBelow(last, -1)
 last = checkboxShowAllHighChance
 count = 0
 for k,v in pairs(unobtainables) do
-	if v[1] == 3 then
+	if v[1] == 2 or v[1] == 3 then
 		local filter = child:CreateCheckBox(v[3],
 		function(self)
 			self:SetChecked(settings:GetValue("Unobtainable", k))
-			self:Enable()
-			self:SetAlpha(1)
+			if settings:Get("DebugMode") then
+				self:Disable()
+				self:SetAlpha(0.4)
+			else
+				self:Enable()
+				self:SetAlpha(1)
+			end
 		end,
 		function(self)
 			settings:SetValue("Unobtainable", k, self:GetChecked())
@@ -2303,9 +2356,23 @@ end
 local headerWeaponsAndArmor = child:CreateHeaderLabel(L["ITEM_FILTER_LABEL"])
 headerWeaponsAndArmor:SetPoint("LEFT", headerMode, 0, 0)
 headerWeaponsAndArmor:SetPoint("TOP", last, "BOTTOM", 0, -10)	-- Place under the last Unobtainable Content checkbox
+headerWeaponsAndArmor.OnRefresh = function(self)
+	if settings:Get("DebugMode") then
+		self:SetAlpha(0.4)
+	else
+		self:SetAlpha(1)
+	end
+end
 
 local textWeaponsAndArmorExplain = child:CreateTextLabel(L["ITEM_EXPLAIN_LABEL"])
 textWeaponsAndArmorExplain:SetPoint("TOPLEFT", headerWeaponsAndArmor, "BOTTOMLEFT", 0, -4)
+textWeaponsAndArmorExplain.OnRefresh = function(self)
+	if settings:Get("DebugMode") then
+		self:SetAlpha(0.4)
+	else
+		self:SetAlpha(1)
+	end
+end
 
 -- Stuff to automatically generate the armor & weapon checkboxes
 local last, xoffset, yoffset = headerWeaponsAndArmor, 0, -4
@@ -4014,8 +4081,16 @@ checkboxReportUnsourced:SetATTTooltip(L["REPORT_UNSORTED_CHECKBOX_TOOLTIP"])
 checkboxReportUnsourced:AlignBelow(checkboxReportQuests, 1)
 
 -- Column 2
+local headerIconLegend = child:CreateHeaderLabel(L["ICON_LEGEND_LABEL"])
+headerIconLegend:SetPoint("TOPLEFT", headerCelebrations, 320, 0)
+
+local textIconLegend = child:CreateTextLabel(L["ICON_LEGEND_TEXT"])
+textIconLegend:SetPoint("TOPLEFT", headerIconLegend, "BOTTOMLEFT", 0, -4)
+textIconLegend:SetWidth(320)
+
 local headerChatCommands = child:CreateHeaderLabel(L["CHAT_COMMANDS_LABEL"])
-headerChatCommands:SetPoint("TOPLEFT", headerCelebrations, 320, 0)
+headerChatCommands:SetPoint("LEFT", headerIconLegend, 0, 0)
+headerChatCommands:SetPoint("TOP", textIconLegend, "BOTTOM", 0, -15)
 
 local textChatCommands = child:CreateTextLabel(L["CHAT_COMMANDS_TEXT"])
 textChatCommands:SetPoint("TOPLEFT", headerChatCommands, "BOTTOMLEFT", 0, -4)

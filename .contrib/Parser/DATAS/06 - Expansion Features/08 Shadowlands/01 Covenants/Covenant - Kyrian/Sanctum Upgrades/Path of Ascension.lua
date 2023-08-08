@@ -1782,9 +1782,9 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- LOYALTY BRAZIERS | WILL UNFLAG IF BRAZIER IS USED AGAIN
 	q(62770),	-- Loyalty | no brazier #1 - CONFIRMED
 	q(62771),	-- Loyalty | no brazier #2 - CONFIRMED
-	q(65227),	-- Rightmost brazier added in 9.1.5
+	q(65227),	-- Rightmost brazier added in 9.1.5 (spellID 362556)
 
-	q(63165),	-- after earning To the Moon achievement
+	q(63165),	-- after earning "To the Moon" (achievementID 14887) (spellID 347027)
 	q(62989),	-- Arsenal: Doubt's Weapon Cache
 	q(62990),	-- Arsenal: Wisdom's Weapon Cache
 	q(63018),	-- learning Ensemble: Vestments of the Discordant

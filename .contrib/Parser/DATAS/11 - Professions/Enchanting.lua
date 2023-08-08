@@ -2,7 +2,7 @@
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
 local ENCHANTING_KNOWLEDGE = 2030;
-profession(ENCHANTING, {
+root(ROOTS.Professions, prof(ENCHANTING, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18769),	-- Disenchantment IV
 		ach(18768),	-- Disenchantment III
@@ -314,42 +314,42 @@ profession(ENCHANTING, {
 			["provider"] = { "i", 164766 },	-- Iwen's Enchanting Rod
 			["timeline"] = { ADDED_10_1_7 },
 		}),
-		q(54473, {	-- Enchanted Formulae (A)
+		q(54473, {	-- Enchanted Formulae [A]
 			["provider"] = { "n", 136041 },	-- Emily Fairweather <Enchanting Trainer>
 			["coord"] = { 74.1, 11.4, BORALUS },
 			["races"] = ALLIANCE_ONLY,
 			["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
 		}),
-		q(54474, {	-- Enchanted Formulae (H)
+		q(54474, {	-- Enchanted Formulae [H]
 			["provider"] = { "n", 122702 },	-- Enchantress Quinni <Enchanting Trainer>
 			["coord"] = { 47.0, 35.8, DAZARALOR },
 			["races"] = HORDE_ONLY,
 			["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
 		}),
-		-- Tools of Trade Questline
-		q(54005, {	-- What the Drust Knew (A)
+		------ Tools of Trade Questline ------
+		q(54005, {	-- What the Drust Knew [A]
 			["description"] = "This quest chain requires 150 in Kul Tiran Enchanting.",
 			["provider"] = { "n", 136041 },	-- Emily Fairweather
 			["coord"] = { 74.2, 11.3, BORALUS },
 			["races"] = ALLIANCE_ONLY,
 			["timeline"] = { ADDED_8_1_5 },
 		}),
-		q(54161, {	-- What the Drust Knew (H)
+		q(54161, {	-- What the Drust Knew [H]
 			["description"] = "This quest chain requires 150 in Zandalari Enchanting.",
 			["provider"] = { "n", 122702 },	-- Enchantress Quinni
 			["coord"] = { 47.1, 35.7, DAZARALOR },
 			["races"] = HORDE_ONLY,
 			["timeline"] = { ADDED_8_1_5 },
 		}),
-		q(53993, {	-- A Voice on the Wind (A)
-			["sourceQuests"] = { 54005 },	-- What the Drust Knew (A)
+		q(53993, {	-- A Voice on the Wind [A]
+			["sourceQuests"] = { 54005 },	-- What the Drust Knew [A]
 			["provider"] = { "n", 147014 },	-- Ancient Drust Relic Dust
 			["coord"] = { 74.2, 11.4, BORALUS },
 			["races"] = ALLIANCE_ONLY,
 			["timeline"] = { ADDED_8_1_5 },
 		}),
-		q(55635, {	-- A Voice on the Wind (H)
-			["sourceQuests"] = { 54161 },	-- What the Drust Knew (H)
+		q(55635, {	-- A Voice on the Wind [H]
+			["sourceQuests"] = { 54161 },	-- What the Drust Knew [H]
 			["provider"] = { "n", 147014 },	-- Ancient Drust Relic Dust
 			["coord"] = { 47.1, 35.3, DAZARALOR },
 			["races"] = HORDE_ONLY,
@@ -357,8 +357,8 @@ profession(ENCHANTING, {
 		}),
 		q(53996, {	-- Pick Up Sticks
 			["sourceQuests"] = {
-				53993,	-- A Voice on the Wind (A)
-				55635,	-- A Voice on the Wind (H)
+				53993,	-- A Voice on the Wind [A]
+				55635,	-- A Voice on the Wind [H]
 			},
 			["provider"] = { "n", 146053 },	-- Sef Iwen
 			["coord"] = { 53.4, 40.1, DRUSTVAR },
@@ -451,7 +451,7 @@ profession(ENCHANTING, {
 				},
 				["provider"] = { "n", 192055 },	-- Veeno <Enchanting Trainer>
 				["coord"] = { 75.8, 33.2, THE_WAKING_SHORES },
-				["lockCriteria"] = { 1, "spellID", 366255},	-- Dragon Isles Enchanting
+				["lockCriteria"] = { 1, "spellID", 366255 },	-- Dragon Isles Enchanting
 			}),
 			q(70029, {	-- Artisan's Supply: Runed Serevite Rods
 				["providers"] = {
@@ -464,7 +464,7 @@ profession(ENCHANTING, {
 					{ 41.4, 61.0, OHNAHRAN_PLAINS },
 					{ 56.8, 75.6, OHNAHRAN_PLAINS },
 				},
-				["cost"] = { { "i", 201601, 2 } },	-- 2xRuned Serevite Rod
+				["cost"] = {{ "i", 201601, 2 }},	-- 2x Runed Serevite Rod
 				["_drop"] = { "g" },
 			}),
 			q(70251, {	-- Hidden Profession Master Enchanting
@@ -476,7 +476,7 @@ profession(ENCHANTING, {
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
 				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
-				["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
+				["cost"] = {{ "i", 191784, 1 }},	-- 1x Dragon Shard of Knowledge
 				["isRepeatable"] = true,
 				["g"] = {
 					i(190456),	-- Artisan's Mettle
@@ -490,8 +490,7 @@ profession(ENCHANTING, {
 				i(198610),	-- Enchanter's Script
 			},
 		},{
-			-- Weeklies
-			-- Requires 25 Skill
+			------ Requires 25 Skill ------
 			q(66935, {	-- Crystal Quill Pens
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
@@ -513,7 +512,7 @@ profession(ENCHANTING, {
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
 			}),
 
-			-- Requires 45 Skill
+			------ Requires 45 Skill ------
 			q(72175, {	-- A Scept-acular Time
 				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 193744 },	-- Soragosa
@@ -535,7 +534,7 @@ profession(ENCHANTING, {
 				["coord"] = { 30.8, 61.4, VALDRAKKEN },
 			}),
 
-			-- Requires ?? Skill - Patch 10.1.0.
+			------ Requires ?? Skill - Patch 10.1.0. ------
 			q(75150, {	-- Incandescence
 				["provider"] = { "n", 203516 },	-- Kayann
 				["coord"] = { 36.5, 62.5, VALDRAKKEN },
@@ -549,7 +548,7 @@ profession(ENCHANTING, {
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["g"] = sharedData({ ["cost"] = { { "c", ENCHANTING_KNOWLEDGE, 1 } }, }, {
+			["g"] = sharedData({ ["cost"] = {{ "c", ENCHANTING_KNOWLEDGE, 1 }} }, {
 				r(389547),	-- Burning Devotion
 				r(391302),	-- Crystalline Shatter
 				r(389301),	-- Devotion of Avoidance
@@ -694,7 +693,10 @@ profession(ENCHANTING, {
 			}),
 		})),
 	})),
-});
+}));
+
+
+
 -- #if ANYCLASSIC
 profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 	tier(CLASSIC_TIER, {
@@ -1676,10 +1678,10 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 		cat(1098, {	-- Wrist Enchantments
 			r(271433),	-- Cooled Hearthing
 			r(271366),	-- Safe Hearthing
-			r(255068, {	-- Swift Hearthing (A)
+			r(255068, {	-- Swift Hearthing [A]
 				["races"] = ALLIANCE_ONLY
 			}),
-			r(267495, {	-- Swift Hearthing (H)
+			r(267495, {	-- Swift Hearthing [H]
 				["races"] = HORDE_ONLY
 			}),
 		}),

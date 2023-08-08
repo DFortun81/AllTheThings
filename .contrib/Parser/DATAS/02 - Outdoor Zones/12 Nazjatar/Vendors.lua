@@ -393,7 +393,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 					["description"] = "Contains items to summon Nazjatar rares.",	-- Description added so you dont need debug mode to see contained items.
 					["g"] = {
 						i(166888),	-- Germinating Seed
-						i(167012),	-- Brinestone Pickaxe
 						i(167059),	-- Chum
 					},
 				}),

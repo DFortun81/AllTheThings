@@ -1222,27 +1222,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["lockCriteria"] = { 1, "questID", 66244 },	-- To Valdrakken
 				["isBreadcrumb"] = true,
 			}),
-
-			-- #if AFTER 10.1.5
-			-- Evoker Storyline?
-			q(72513, {	-- Our Destiny
-				-- ["sourceQuests"] = {  },	--
-			}),
-			q(72514, {	-- The High Creche
-				["sourceQuests"] = { 72513 },	-- Our Destiny
-				["provider"] = { "n", 199135 },	-- Scalecommander Emberthal
-				["coord"] = { 58.6, 68.5, THE_FORBIDDEN_REACH },
-			}),
-			q(72515, {	-- Augmenting a Dragon
-				["sourceQuests"] = { 72514 },	-- The High Creche
-				["provider"] = { "n", 199141 },	-- Scalecommander Emberthal
-				["coord"] = { 58.7, 70.4, THE_FORBIDDEN_REACH },
-				["g"] = {
-					i(205162),	-- Nelthara (PET!)
-				},
-			}),
-			-- #endif
-
 			n(BONUS_OBJECTIVES, {
 				q(66076, {	-- Ancient Hornswog
 					["provider"] = { "n", 187111 },	-- Ancient Hornswog

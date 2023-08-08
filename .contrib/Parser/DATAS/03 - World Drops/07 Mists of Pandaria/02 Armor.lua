@@ -184,9 +184,10 @@ root(ROOTS.WorldDrops, {
 				i(82118),	-- Shamanic Ring
 			}),
 			filter(TRINKET_F, {
-				i(87496),	-- Daelo's Final Words
 				i(87497),	-- Core of Decency
 				i(87500),	-- Brooch of Munificent Deeds
+				i(87496),	-- Daelo's Final Words
+				i(87495),	-- Gerps Perfect Arrow
 			}),
 		}),
 	}),

@@ -852,7 +852,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["groups"] = {
 							i(13250),	-- Head of Balnazzar
 							i(14512),	-- Pattern: Truefaith Vestments
-							i(13520),	-- Recipe: Flask of Distilled Wisdom
+							i(13520),	-- Recipe: Flask of Distilled Wisdom (RECIPE!)
 							i(13348),	-- Demonshear
 							i(18717),	-- Hammer of the Grand Crusader
 							i(13360),	-- Gift of the Elven Magi

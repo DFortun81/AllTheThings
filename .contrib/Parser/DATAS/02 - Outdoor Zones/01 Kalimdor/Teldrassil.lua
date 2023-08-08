@@ -203,6 +203,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "removed 4.0.3" },
 							["races"] = { NIGHTELF },
 							["classes"] = { PRIEST },
+							["isBreadcrumb"] = true,
 							["lvl"] = 5,
 						}),
 						q(28724, {	-- Iverron's Antidote

@@ -2311,13 +2311,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					applyclassicphase(PHASE_THREE, i(19212, {	-- Plans: Nightfall (RECIPE!)
 						["minReputation"] = { 59, EXALTED },	-- The Thorium Brotherhood, Exalted.
 					})),
-					applyclassicphase(PHASE_FIVE, i(20761, {	-- Recipe: Transmute Elemental Fire
+					applyclassicphase(PHASE_FIVE, i(20761, {	-- Recipe: Transmute Elemental Fire (RECIPE!)
 						["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
 					})),
 				}),
 				n(9499, {	-- Plugger Spazzring
 					i(15759),	-- Pattern: Black Dragonscale Breastplate (RECIPE!)
-					i(13483),	-- Recipe: Transmute Fire to Earth
+					i(13483),	-- Recipe: Transmute Fire to Earth (RECIPE!)
 					i(11325),	-- Dark Iron Ale Mug
 				}),
 				n(45843, {	-- Yuka Screwspigot <Engineering Supplies>

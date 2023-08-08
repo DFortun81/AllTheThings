@@ -250,5 +250,5 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	q(65029),	-- when learning about 'random' soulshape selection option
+	q(65029),	-- when learning about 'random' soulshape selection option (spellID 360630)
 });

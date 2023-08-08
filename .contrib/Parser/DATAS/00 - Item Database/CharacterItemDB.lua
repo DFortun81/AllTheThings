@@ -4,6 +4,7 @@ local Recipes = root(ROOTS.RecipeDB);
 local iq = function(itemID, questID, classID, raceID)
 	if itemID ~= 0 then
 		local item = {
+			["filterID"] = RECIPES,
 			["_drop"] = { "spellID" }
 		}
 		if questID then

@@ -1466,7 +1466,7 @@ root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDE
 		q(70479),	-- Soulrender Dormazain - Fated - Rep/Flux
 		q(70480),	-- Soulrender Dormazain - Fated - Rep/Flux
 
-		q(64608),	-- Garrosh cinematic (Normal / Heroic)
+		q(64608),	-- Garrosh cinematic (Normal / Heroic) (spellID 358664)
 
 		q(64477),	-- Remnant of Ner'zhul (Normal / Heroic) (Heroic-Week 2)
 		q(64478),	-- Remnant of Ner'zhul (Normal / Heroic) (Heroic-Week 2)

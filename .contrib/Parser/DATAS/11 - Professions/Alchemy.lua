@@ -1,6 +1,588 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
+local ALCHEMY_KNOWLEDGE = 2024;
+root(ROOTS.Professions, prof(ALCHEMY, {
+	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+		ach(18733),	-- A Cure for All Ails IV
+		ach(18732),	-- A Cure for All Ails III
+		ach(18731),	-- A Cure for All Ails II
+		ach(18726),	-- A Cure for All Ails I
+		ach(18963, {	-- Burst Damage
+			["providers"] = {
+				{ "i", 152560 },	-- Potion of Bursting Blood
+				{ "i", 186697 },	-- Blossom Burst
+				{ "i", 186701 },	-- Glory Burst
+				{ "i", 186700 },	-- Marrow Burst
+				{ "i", 186698 },	-- Torch Burst
+				{ "i", 186699 },	-- Widow Burst
+			},
+		}),
+		ach(18934),	-- Excessive Experimentation
+		ach(18904, {	-- Iron to Vendor Gold
+			crit(1, {	-- Philosopher's Stone
+				["provider"] = { "i", 9149 },	-- Philosopher's Stone
+			}),
+			crit(2, {	-- Guardian's Alchemist Stone
+				["provider"] = { "i", 35748 },	-- Guardian's Alchemist Stone
+			}),
+			crit(3, {	-- Sorcerer's Alchemist Stone
+				["provider"] = { "i", 35749 },	-- Sorcerer's Alchemist Stone
+			}),
+			crit(4, {	-- Redeemer's Alchemist Stone
+				["provider"] = { "i", 35750 },	-- Redeemer's Alchemist Stone
+			}),
+			crit(5, {	-- Assassin's Alchemist Stone
+				["provider"] = { "i", 35751 },	-- Assassin's Alchemist Stone
+			}),
+			crit(6, {	-- Alchemist Stone
+				["provider"] = { "i", 13503 },	-- Alchemist Stone
+			}),
+			crit(7, {	-- Mercurial Alchemist Stone
+				["provider"] = { "i", 44322 },	-- Mercurial Alchemist Stone
+			}),
+			crit(8, {	-- Indestructible Alchemist Stone
+				["provider"] = { "i", 44323 },	-- Indestructible Alchemist Stone
+			}),
+			crit(9, {	-- Mighty Alchemist Stone
+				["provider"] = { "i", 44324 },	-- Mighty Alchemist Stone
+			}),
+			crit(10, {	-- Lifebound Alchemist Stone
+				["provider"] = { "i", 58483 },	-- Lifebound Alchemist Stone
+			}),
+			crit(11, {	-- Volatile Alchemist Stone
+				["provider"] = { "i", 68775 },	-- Volatile Alchemist Stone
+			}),
+			crit(12, {	-- Quicksilver Alchemist Stone
+				["provider"] = { "i", 68776 },	-- Quicksilver Alchemist Stone
+			}),
+			crit(13, {	-- Vibrant Alchemist Stone
+				["provider"] = { "i", 68777 },	-- Vibrant Alchemist Stone
+			}),
+			crit(14, {	-- Zen Alchemist Stone
+				["provider"] = { "i", 75274 },	-- Zen Alchemist Stone
+			}),
+			crit(15, {	-- Draenic Philosopher's Stone
+				["provider"] = { "i", 109262 },	-- Draenic Philosopher's Stone
+			}),
+			crit(16, {	-- Infernal Alchemist Stone
+				["provider"] = { "i", 127842 },	-- Infernal Alchemist Stone
+			}),
+			crit(17, {	-- Astral Alchemist Stone
+				["provider"] = { "i", 151607 },	-- Astral Alchemist Stone
+			}),
+			crit(18, {	-- Siren's Alchemist Stone
+				["provider"] = { "i", 152637 },	-- Siren's Alchemist Stone
+			}),
+			crit(19, {	-- Surging Alchemist Stone
+				["provider"] = { "i", 152632 },	-- Surging Alchemist Stone
+			}),
+			crit(20, {	-- Sanguinated Alchemist Stone
+				["provider"] = { "i", 166974 },	-- Sanguinated Alchemist Stone
+			}),
+			crit(21, {	-- Imbued Alchemist Stone
+				["provider"] = { "i", 166975 },	-- Imbued Alchemist Stone
+			}),
+			crit(22, {	-- Emblazoned Alchemist Stone
+				["provider"] = { "i", 166976 },	-- Emblazoned Alchemist Stone
+			}),
+			crit(23, {	-- Tidal Alchemist Stone
+				["provider"] = { "i", 165926 },	-- Tidal Alchemist Stone
+			}),
+			crit(24, {	-- Spirited Alchemist Stone
+				["provider"] = { "i", 165927 },	-- Spirited Alchemist Stone
+			}),
+			crit(25, {	-- Eternal Alchemist Stone
+				["provider"] = { "i", 165928 },	-- Eternal Alchemist Stone
+			}),
+			crit(26, {	-- Ascended Alchemist Stone
+				["provider"] = { "i", 168676 },	-- Ascended Alchemist Stone
+			}),
+			crit(27, {	-- Peerless Alchemist Stone
+				["provider"] = { "i", 171085 },	-- Peerless Alchemist Stone
+			}),
+		}),
+		ach(18737),	-- Powerful Concoctions IV
+		ach(18736),	-- Powerful Concoctions III
+		ach(18735),	-- Powerful Concoctions II
+		ach(18734),	-- Powerful Concoctions I
+	})),
+	tier(CLASSIC_TIER, {
+		ach(18723, {	-- Look, You're Specialized!
+			["sourceQuests"] = {
+				29481,	-- Elixir Master
+				29067,	-- Potion Master
+				29482,	-- Transmutation Master
+			},
+			["sourceQuestNumRequired"] = 1,
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(29481, {	-- Elixir Master
+			["description"] = "Requires 300 Classic Alchemy.",
+			["qgs"] = {
+				4160,	-- Ainethil
+				3347,	-- Yelmak
+				3009,	-- Bena Winterhoof
+				5177,	-- Tally Berryfizz
+				5499,	-- Lilyssia Nightbreeze
+				4611,	-- Doctor Herbert Halsey
+			},
+			["coords"] = {
+				{ 54.0, 38.6, DARNASSUS },	-- Ainethil
+				{ 55.6, 45.8, ORGRIMMAR },	-- Yelmak
+				{ 46.8, 33.6, THUNDER_BLUFF },	-- Bena Winterhoof
+				{ 66.6, 55.0, IRONFORGE },	-- Tally Berryfizz
+				{ 55.6, 85.8, STORMWIND_CITY },	-- Lilyssia Nightbreeze
+				{ 47.6, 72.8, UNDERCITY },	-- Doctor Herbert Halsey
+			},
+			["timeline"] = { ADDED_4_3_0 },
+			["repeatable"] = true,
+		}),
+		q(29067, {	-- Potion Master
+			["description"] = "Requires 300 Classic Alchemy.",
+			["qgs"] = {
+				4160,	-- Ainethil
+				3347,	-- Yelmak
+				3009,	-- Bena Winterhoof
+				5177,	-- Tally Berryfizz
+				5499,	-- Lilyssia Nightbreeze
+				4611,	-- Doctor Herbert Halsey
+			},
+			["coords"] = {
+				{ 54.0, 38.6, DARNASSUS },	-- Ainethil
+				{ 55.6, 45.8, ORGRIMMAR },	-- Yelmak
+				{ 46.8, 33.6, THUNDER_BLUFF },	-- Bena Winterhoof
+				{ 66.6, 55.0, IRONFORGE },	-- Tally Berryfizz
+				{ 55.6, 85.8, STORMWIND_CITY },	-- Lilyssia Nightbreeze
+				{ 47.6, 72.8, UNDERCITY },	-- Doctor Herbert Halsey
+			},
+			["timeline"] = { ADDED_4_3_0 },
+			["repeatable"] = true,
+		}),
+		q(29482, {	-- Transmutation Master
+			["description"] = "Requires 300 Classic Alchemy.",
+			["qgs"] = {
+				4160,	-- Ainethil
+				3347,	-- Yelmak
+				3009,	-- Bena Winterhoof
+				5177,	-- Tally Berryfizz
+				5499,	-- Lilyssia Nightbreeze
+				4611,	-- Doctor Herbert Halsey
+			},
+			["coords"] = {
+				{ 54.0, 38.6, DARNASSUS },	-- Ainethil
+				{ 55.6, 45.8, ORGRIMMAR },	-- Yelmak
+				{ 46.8, 33.6, THUNDER_BLUFF },	-- Bena Winterhoof
+				{ 66.6, 55.0, IRONFORGE },	-- Tally Berryfizz
+				{ 55.6, 85.8, STORMWIND_CITY },	-- Lilyssia Nightbreeze
+				{ 47.6, 72.8, UNDERCITY },	-- Doctor Herbert Halsey
+			},
+			["timeline"] = { ADDED_4_3_0 },
+			["repeatable"] = true,
+		}),
+	}),
+	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	})),
+	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+		ach(18770, {	-- Silas' Sphere of Transmutation
+			["provider"] = { "i", 156631 },	-- Silas' Sphere of Transmutation
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(54463, {	-- Alchemical Equations [A]
+			["provider"] = { "n", 132228 },	-- Elric Whalgrene
+			["coord"] = { 74.2, 6.60, BORALUS },
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
+		}),
+		q(54464, {	-- Alchemical Equations [H]
+			["provider"] = { "n", 122703 },	-- Clever Kumali
+			["coord"] = { 42.2, 38.0, DAZARALOR },
+			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
+		}),
+		------ Tools of Trade Questline ------
+		q(50121, {	-- Casting the First Stone [A]
+			["description"] = "This quest chain requires 150 in Kul Tiran Alchemy.",
+			["provider"] = { "n", 132228 },	-- Elric Whalgrene
+			["coord"] = { 74.2, 6.5, BORALUS },
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(50112, {	-- Casting the First Stone [H]
+			["description"] = "This quest chain requires 150 in Zandalari Alchemy.",
+			["provider"] = { "n", 122703 },	-- Clever Kumali
+			["coord"] = { 42.2, 38.0, DAZARALOR },
+			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(50122, {	-- Ocular Extracts [A]
+			["sourceQuests"] = { 50121 },	-- Casting the First Stone [A]
+			["provider"] = { "n", 132228 },	-- Elric Whalgrene
+			["coord"] = { 74.2, 6.5, BORALUS },
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(50113, {	-- Ocular Extracts [H]
+			["sourceQuests"] = { 50112 },	-- Casting the First Stone [H]
+			["provider"] = { "n", 122703 },	-- Clever Kumali
+			["coord"] = { 42.2, 38.0, DAZARALOR },
+			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(50124, {	-- Changing the Scenery [A]
+			["sourceQuests"] = { 50121 },	-- Casting the First Stone [A]
+			["provider"] = { "n", 132228 },	-- Elric Whalgrene
+			["coord"] = { 74.2, 6.5, BORALUS },
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(50115, {	-- Changing the Scenery [H]
+			["sourceQuests"] = { 50112 },	-- Casting the First Stone [H]
+			["provider"] = { "n", 122703 },	-- Clever Kumali
+			["coord"] = { 42.2, 38.0, DAZARALOR },
+			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(50125, {	-- A Possible Solution [A]
+			["sourceQuests"] = {
+				50122,	-- Ocular Extracts [A]
+				50124,	-- Changing the Scenery [A]
+			},
+			["provider"] = { "n", 132228 },	-- Elric Whalgrene
+			["coord"] = { 74.2, 6.5, BORALUS },
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(50116, {	-- A Possible Solution [H]
+			["sourceQuests"] = {
+				50115,	-- Changing the Scenery [H]
+				50113,	-- Ocular Extracts [H]
+			},
+			["provider"] = { "n", 122703 },	-- Clever Kumali
+			["coord"] = { 42.2, 38.0, DAZARALOR },
+			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(50126, {	-- A Deathly Draught [A]
+			["sourceQuests"] = { 50125 },	-- A Possible Solution [A]
+			["provider"] = { "n", 132347 },	-- Quintin Whalgrene
+			["coord"] = { 30.6, 49.6, DRUSTVAR },
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(50117, {	-- A Deathly Draught [H]
+			["sourceQuests"] = { 50116 },	-- A Possible Solution [H]
+			["provider"] = { "n", 132680 },	-- Zukashi
+			["coord"] = { 65.2, 36.9, NAZMIR },
+			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(50127, {	-- A Stone's Throw [A]
+			["sourceQuests"] = { 50125 },	-- A Possible Solution [A]
+			["provider"] = { "n", 132347 },	-- Quintin Whalgrene
+			["coord"] = { 30.6, 49.6, DRUSTVAR },
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(50118, {	-- A Stone's Throw [H]
+			["sourceQuests"] = { 50116 },	-- A Possible Solution [H]
+			["provider"] = { "n", 132680 },	-- Zukashi
+			["coord"] = { 65.2, 36.9, NAZMIR },
+			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(50128, {	-- Chemically Compounded [A]
+			["sourceQuests"] = {
+				50126,	-- A Stone's Throw [A]
+				50127,	-- A Deathly Draught [A]
+			},
+			["provider"] = { "n", 132347 },	-- Quintin Whalgrene
+			["coord"] = { 30.6, 49.6, DRUSTVAR },
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(50119, {	-- Chemically Compounded [H]
+			["sourceQuests"] = {
+				50117,	-- A Deathly Draught [H]
+				50118,	-- A Stone's Throw [H]
+			},
+			["provider"] = { "n", 132680 },	-- Zukashi
+			["coord"] = { 65.2, 36.9, NAZMIR },
+			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(50129, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- A Recipe for Success [A]
+			["sourceQuests"] = { 50128 },	-- Chemically Compounded [A]
+			["provider"] = { "o", 280755 },	-- Quintin's Satchel
+			["coord"] = { 62.9, 28.9, DRUSTVAR },
+			["races"] = ALLIANCE_ONLY,
+			["g"] = {
+				r(260403),	-- Silus' Sphere of Transmutation (RECIPE!)
+			},
+		})),
+		q(50120, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- A Recipe for Success [H]
+			["sourceQuests"] = { 50119 },	-- Chemically Compounded [H]
+			["provider"] = { "o", 280957 },	-- Zukashi's Satchel
+			["coord"] = { 62.9, 28.9, NAZMIR },
+			["races"] = HORDE_ONLY,
+			["g"] = {
+				r(260403),	-- Silus' Sphere of Transmutation (RECIPE!)
+			},
+		})),
+	})),
+	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+			ach(18805, {	-- Draconic Phial Cabinet
+				crit(1),	-- Phial of Tepid Versatility
+				crit(2),	-- Phial of Charged Isolation
+				crit(3),	-- Phial of the Eye in the Storm
+				crit(4),	-- Phial of Static Empowerment
+				crit(5),	-- Phial of Still Air
+				crit(6),	-- Phial of Glacial Fury
+				crit(7),	-- Phial of Icy Preservation
+				crit(8),	-- Phial of Elemental Chaos
+				crit(9),	-- Iced Phial of Corrupting Rage
+				crit(10),	-- Charged Phial of Alacrity
+			}),
+		})),
+		n(QUESTS, {
+			q(70355, {	-- Dragon Isles Alchemy
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Alchemy.",
+				["sourceQuests"] = {
+					67700,	-- To the Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "n", 191893 },	-- Zherrak
+				["coord"] = { 60.3, 72.2, THE_WAKING_SHORES },
+				["lockCriteria"] = { 1, "spellID", 366261 },	-- Dragon Isles Alchemy
+			}),
+			q(72245, {	-- Dragon Isles Alchemy
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Alchemy.",
+				["sourceQuests"] = {
+					67700,	-- To the Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "n", 198392 },	-- An'timon
+				["coord"] = { 76.2, 35.8, THE_WAKING_SHORES },
+				["lockCriteria"] = { 1, "spellID", 366261 },	-- Dragon Isles Alchemy
+			}),
+			q(67080, {	-- Artisan's Supply: Dragon's Alchemical Solution
+				["provider"] = { "n", 191893 },	-- Zherrak
+				["coord"] = { 60.3, 72.2, THE_WAKING_SHORES },
+				["cost"] = {{ "i", 191570, 2 }},	-- 2x Dragon's Alchemical Solution
+				["_drop"] = { "g" },
+			}),
+			q(70247, {	-- Hidden Profession Master Alchemy
+				["name"] = "Hidden Profession Master: Alchemy",
+				["provider"] = { "n", 194829 },	-- Grigori Vialtry
+				["coord"] = { 60.9, 75.8, THE_WAKING_SHORES },
+			}),
+			q(70183, {	-- Specialized Secrets: Alchemy
+				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
+				["provider"] = { "n", 193110 },	-- Khadin
+				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
+				["cost"] = {{ "i", 191784, 1 }},	-- 1x Dragon Shard of Knowledge
+				["isRepeatable"] = true,
+				["g"] = {
+					i(190456),	-- Artisan's Mettle
+				},
+			}),
+		}),
+		n(QUESTS, sharedData({
+			["isWeekly"] = true,
+			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
+			["g"] = {
+				i(198608),	-- Alchemy Notes
+			},
+		},{
+			------ Requires 25 Skill ------
+			q(72427, {	-- Animated Infusion
+				["description"] = "Requires 25 Skill.",
+				["provider"] = { "n", 191002 },	-- Dhurrel
+				["coord"] = { 36.6, 63.6, VALDRAKKEN },
+			}),
+			q(66937, {	-- Decaying News
+				["description"] = "Requires 25 Skill.",
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+			}),
+			q(66940, {	-- Elixir Experiment
+				["description"] = "Requires 25 Skill.",
+				["provider"] = { "n", 191002 },	-- Dhurrel
+				["coord"] = { 36.6, 63.6, VALDRAKKEN },
+			}),
+			q(66938, {	-- Mammoth Marrow
+				["description"] = "Requires 25 Skill.",
+				["provider"] = { "n", 191002 },	-- Dhurrel
+				["coord"] = { 36.6, 63.6, VALDRAKKEN },
+			}),
+
+			------ Requires 45 Skill ------
+			q(70532, {	-- Aiding the Raiding
+				["description"] = "Requires 45 Skill.",
+				["provider"] = { "n", 185545 },	-- Conflago
+				["coord"] = { 36.4, 71.4, VALDRAKKEN },
+			}),
+			q(70533, {	-- Decaying News
+				["description"] = "Requires 45 Skill.",
+				["provider"] = { "n", 185545 },	-- Conflago
+				["coord"] = { 36.4, 71.4, VALDRAKKEN },
+			}),
+			q(70530, {	-- Examination Week
+				["description"] = "Requires 45 Skill.",
+				["provider"] = { "n", 185545 },	-- Conflago
+				["coord"] = { 36.4, 71.4, VALDRAKKEN },
+			}),
+			q(70531, {	-- Mana Markets
+				["description"] = "Requires 45 Skill.",
+				["provider"] = { "n", 185545 },	-- Conflago
+				["coord"] = { 36.4, 71.4, VALDRAKKEN },
+			}),
+
+			------ Requires ?? Skill - Patch 10.1.0. ------
+			q(75363, {	-- Deepflayer Dust
+				["provider"] = { "n", 203516 },	-- Kayann
+				["coord"] = { 36.5, 62.5, VALDRAKKEN },
+				["timeline"] = { ADDED_10_1_0 }
+			}),
+			q(75371, {	-- Fascinating Fungi
+				["provider"] = { "n", 203516 },	-- Kayann
+				["coord"] = { 36.5, 62.5, VALDRAKKEN },
+				["timeline"] = { ADDED_10_1_0 }
+			}),
+		})),
+		filter(RECIPES, {
+			["description"] = "These are learned by specialization.",
+			["g"] = sharedData({ ["cost"] = {{ "c", ALCHEMY_KNOWLEDGE, 1 }} }, {
+				r(370747),	-- Advanced Phial Experimentation
+				r(370745),	-- Advanced Potion Experimentation
+				r(370730),	-- Brood Salt
+				r(370735),	-- Illustrious Insight
+				r(370668),	-- Potion Cauldron of Power
+				r(370715),	-- Transmute: Order to Elements
+				r(370714),	-- Transmute: Decay to Elements
+			}),
+		}),
+		n(TREASURES, {
+			o(380611, {	-- Canteen of Suspicious Water
+				["description"] = "Inside cave.",
+				["coord"] = { 79.2, 83.8, OHNAHRAN_PLAINS },
+				["questID"] = 70305,
+				["g"] = {
+					i(198710),	-- Canteen of Suspicious Water
+				},
+			}),
+			o(380605, {	-- Contraband Concoction
+				["description"] = "Hidden in some bushes, hard to see.",
+				["coord"] = { 59.5, 38.4, THALDRASZUS },
+				["questID"] = 70301,
+				["g"] = {
+					i(198697),	-- Contraband Concoction
+				},
+			}),
+			o(380457, {	-- Experimental Decay Cauldron
+				["coord"] = { 16.4, 38.5, THE_AZURE_SPAN },
+				["questID"] = 70208,
+				["g"] = {
+					i(198599),	-- Experimental Decay Sample
+				},
+			}),
+			o(380559, {	-- Frostforged Potion
+				["coord"] = { 55.0, 81.0, THE_WAKING_SHORES },
+				["questID"] = 70274,
+				["g"] = {
+					i(198663),	-- Frostforged Potion
+				},
+			}),
+			o(380586, {	-- Mysterious Cauldrons
+				["description"] = "Grab and drop a Discarded Toy in each of these, then you can collect the treasure.",
+				["coord"] = { 55.2, 30.5, THALDRASZUS },
+				["questID"] = 70278,
+				["g"] = {
+					i(201003, {["timeline"] = {ADDED_10_0_2_LAUNCH, REMOVED_10_0_5}}),	-- Furry Gloop
+					i(203471, {["timeline"] = {ADDED_10_0_5}}),	-- Tasty Candy
+				},
+			}),
+			o(401236,	-- Malnourished Specimen/Nutrient Diluted Protofluid
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
+				["coord"] = { 52.6, 18.3, ZARALEK_CAVERN },
+				["questID"] = 75646,
+				["g"] = {
+					i(205211),	-- Nutrient Diluted Protofluid
+				},
+			})),
+			o(401238,	-- Marrow-Ripened Slime
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
+				["coord"] = { 62.1, 41.1, ZARALEK_CAVERN },
+				["questID"] = 75649,
+				["g"] = {
+					i(205212),	-- Marrow-Ripened Slime
+				},
+			})),
+			o(380616, {	-- Small Basket of Firewater Powder
+				["coord"] = { 67.0, 13.2, THE_AZURE_SPAN },
+				["questID"] = 70309,
+				["g"] = {
+					i(198712),	-- Firewater Powder Sample
+				},
+			}),
+			o(401240,	-- Suspicious Mold
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
+				["coord"] = { 40.4, 59.2, ZARALEK_CAVERN },
+				["questID"] = 75651,
+				["g"] = {
+					i(205213),	-- Suspicious Mold
+				},
+			})),
+			o(380590, {	-- Well-Insulated Mug
+				["coord"] = { 25.1, 73.3, THE_WAKING_SHORES },
+				["questID"] = 70289,
+				["g"] = {
+					i(198685),	-- Well-Insulated Mug
+				},
+			}),
+		}),
+		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
+			["isWeekly"] = true,
+			["g"] = {
+				currency(ALCHEMY_KNOWLEDGE),
+			},
+		 }, {
+			i(198608),	-- Alchemy Notes
+			q(74108, {	-- Inscription Order: Alchemy
+				["name"] = "Inscription Order: Alchemy",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 194697 },	-- Draconic Treatise on Alchemy
+			}),
+			q(66373, {	-- Weekly Alchemy Knowledgepoint #1
+				["name"] = "Alchemy Treasure #1",
+				["provider"] = { "i", 193891 },		-- Experimental Substance
+			}),
+			q(66374, {	-- Weekly Alchemy Knowledgepoint #2
+				["name"] = "Alchemy Treasure #2",
+				["provider"] = { "i", 193897 },		-- Reawakened Catalyst
+			}),
+			q(70504, {	-- Weekly Alchemy Knowledgepoint #3
+				["name"] = "Alchemy Drop #1: Decayed",
+				["description"] = "Drops from any Decayed Mob.\nCoordinates link to the spot(s) we found best.",
+				["provider"] = { "i", 198963 },		-- Decaying Phlegm
+				["crs"] = { 186361 },	-- Rotting Treant
+				["coord"] = { 18.6, 38.4, THE_AZURE_SPAN },
+			}),
+			q(70511, {	-- Weekly Alchemy Knowledgepoint #4
+				["name"] = "Alchemy Drop #2: Elemental",
+				["description"] = "Drops from any Elemental.\nCoordinates link to the spot(s) we found best.",
+				["provider"] = { "i", 198964 },		-- Elementious Splinter
+				["crs"] = { 191712 },	-- Hissing Springsoul
+				["coord"] = { 80.2, 75.6, OHNAHRAN_PLAINS },
+			}),
+		})),
+	})),
+}));
+
+
+
+-- #if ANYCLASSIC
 local applytraining = function(g)
 	-- #if NOT ANYCLASSIC
 	-- TODO: Solve this for classic, until then, only apply the filter to Retail.
@@ -3744,3 +4326,4 @@ root(ROOTS.NeverImplemented, {
 		-- #endif
 	}),
 });
+-- #endif

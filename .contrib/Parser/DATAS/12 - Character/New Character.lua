@@ -1100,7 +1100,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["coord"] = { 79.5, 69.8, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_9_2_0 },
+				["timeline"] = { ADDED_9_2_0, REMOVED_10_1_5 },
 			}),
 			q(65424, {	-- Whatever You Sayaad (H)
 				["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
@@ -1108,7 +1108,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["coord"] = { 74.6, 47.4, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_9_2_0 },
+				["timeline"] = { ADDED_9_2_0, REMOVED_10_1_5 },
 			}),
 			q(76427, {	-- A Dark Summons (H)
 				["provider"] = { "i", 208227 },	-- Mysterious Letter
@@ -1138,36 +1138,36 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["races"] = ALLIANCE_ONLY,
 				["classes"] = { WARLOCK },
 				["timeline"] = { ADDED_10_1_5 },
-			}),			
+			}),
 			q(75539, {	-- Some Wicked Things This Way Come
 				["sourceQuests"] = {
 					75538,	-- Beginning Impositions (A)
 					76430,	-- Beingning Impositions (H)
-					},
+				},
 				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 203968 },	-- Madam Shadow
-				-- ["coord"] = { X, Y, DARKMOON_ISLAND },
+				["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
 				["classes"] = { WARLOCK },
 				["timeline"] = { ADDED_10_1_5 },
 			}),
 			q(75540, {	-- Hermetic Insurance
 				["sourceQuests"] = { 75539 },	-- Some Wicked Things This Way Come
 				["provider"] = { "n", 203968 },	-- Madam Shadow
-				-- ["coord"] = { X, Y, DARKMOON_ISLAND },
+				["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
 				["classes"] = { WARLOCK },
 				["timeline"] = { ADDED_10_1_5 },
 			}),
 			q(75541, {	-- Those Who Hesitate
 				["sourceQuests"] = { 75540 },	-- Hermetic Insurance
 				["provider"] = { "n", 203968 },	-- Madam Shadow
-				-- ["coord"] = { X, Y, DARKMOON_ISLAND },
+				["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
 				["classes"] = { WARLOCK },
 				["timeline"] = { ADDED_10_1_5 },
 			}),
 			q(76155, {	-- A Wolf Among Sheep
 				["sourceQuests"] = { 75541 },	-- Those Who Hesitate
 				["provider"] = { "n", 205276 },	-- Initiate Oman
-				-- ["coord"] = { X, Y, DARKMOON_ISLAND },
+				["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
 				["classes"] = { WARLOCK },
 				["timeline"] = { ADDED_10_1_5 },
 				["g"] = {
@@ -1178,21 +1178,21 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			q(75542, {	-- Curses & Cultists
 				["sourceQuests"] = { 76155 },	-- A Wolf Among Sheep
 				["provider"] = { "n", 203968 },	-- Madam Shadow
-				-- ["coord"] = { X, Y, DARKMOON_ISLAND },
+				["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
 				["classes"] = { WARLOCK },
 				["timeline"] = { ADDED_10_1_5 },
 			}),
 			q(75639, {	-- Fel Suspicions
 				["sourceQuests"] = { 75542 },	-- Curses & Cultists
 				["provider"] = { "n", 205433 },	-- Initiate Oman
-				-- ["coord"] = { X, Y, DARKMOON_ISLAND },
+				["coord"] = { 58.9, 63.1, DARKMOON_ISLAND },
 				["classes"] = { WARLOCK },
 				["timeline"] = { ADDED_10_1_5 },
 			}),
 			q(75543, {	-- Last Rites By Accident
 				["sourceQuests"] = { 75639 },	-- Fel Suspicions
 				["provider"] = { "o", 402609 },	-- Demonic Gateway
-				["coord"] = { 59.5, 62.4, DARKMOON_ISLAND },
+				["coord"] = { 59.7, 62.2, DARKMOON_ISLAND },
 				["classes"] = { WARLOCK },
 				["timeline"] = { ADDED_10_1_5 },
 			}),

@@ -607,7 +607,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 47,
 					["groups"] = {
-						i(13481, {	-- Recipe: Elixir of Brute Force
+						i(13481, {	-- Recipe: Elixir of Brute Force (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },	-- Moved to Trainers
 						}),
 					},

@@ -44417,6 +44417,12 @@ root("ObjectDB", {
 			en = "Gilded Vase",
 		},
 	},
+	[405068] = {
+		readable = "Forgotten Grimoire",
+		text = {
+			en = "Forgotten Grimoire",
+		},
+	},
 	[405388] = {
 		readable = "Familiar Journal",
 		text = {

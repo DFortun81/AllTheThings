@@ -273,8 +273,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		q(72940, {	-- Where in the World is a Lost Blue Dragon?
 			["provider"] = { "n", 190000 },	-- Kalecgos
 			["sourceQuests"] = {
-				74335,	-- A Moment of Reflection [Theramore]
 				72938,	-- Archival Arrival [First questchain part]
+			},
+			["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
+			["collectible"] = false,	-- Blizzard....
+		}),
+		q(73399, {	-- The Search for Blue Dragons
+			["provider"] = { "n", 190000 },	-- Kalecgos
+			["sourceQuests"] = {
+				74335,	-- A Moment of Reflection [Theramore]
 				74356,	-- Back with the Blues [Winterspring]
 				74291,	-- Blue is My Favorite Color [The Jade Forest]
 				74783,	-- The Sounds of Silence [Crystalsong Forest]
@@ -284,11 +291,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 			["collectible"] = false,	-- Blizzard....
 		}),
-		q(73399, {	-- The Search for Blue Dragons
+		q(73404, {	-- Lost Blue Dragons
 			["provider"] = { "n", 190000 },	-- Kalecgos
 			["sourceQuests"] = {
 				74335,	-- A Moment of Reflection [Theramore]
-				72938,	-- Archival Arrival [First questchain part]
 				74356,	-- Back with the Blues [Winterspring]
 				74291,	-- Blue is My Favorite Color [The Jade Forest]
 				74783,	-- The Sounds of Silence [Crystalsong Forest]
@@ -298,11 +304,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 			["collectible"] = false,	-- Blizzard....
 		}),
-		q(73404, {	-- Lost Blue Dragons
+		q(73405, {	-- A Pair of Blue Dragons
 			["provider"] = { "n", 190000 },	-- Kalecgos
 			["sourceQuests"] = {
 				74335,	-- A Moment of Reflection [Theramore]
-				72938,	-- Archival Arrival [First questchain part]
 				74356,	-- Back with the Blues [Winterspring]
 				74291,	-- Blue is My Favorite Color [The Jade Forest]
 				74783,	-- The Sounds of Silence [Crystalsong Forest]
@@ -312,31 +317,16 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 			["collectible"] = false,	-- Blizzard....
 		}),
-		q(73405, {	-- A Pair of Blue Dragons
+		q(73406, {	-- The Last Missing Blue Dragon
 			["provider"] = { "n", 190000 },	-- Kalecgos
 			["sourceQuests"] = {
 				74335,	-- A Moment of Reflection [Theramore]
-				72938,	-- Archival Arrival [First questchain part]
 				74356,	-- Back with the Blues [Winterspring]
 				74291,	-- Blue is My Favorite Color [The Jade Forest]
 				74783,	-- The Sounds of Silence [Crystalsong Forest]
 				73181,	-- Zeroing Debt [Booty Bay]
 			},
 			["sourceQuestNumRequired"] = 4,
-			["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
-			["collectible"] = false,	-- Blizzard....
-		}),
-		q(73406, {	-- The Last Missing Blue Dragon
-			["provider"] = { "n", 190000 },	-- Kalecgos
-			["sourceQuests"] = {
-				74335,	-- A Moment of Reflection [Theramore]
-				72938,	-- Archival Arrival [First questchain part]
-				74356,	-- Back with the Blues [Winterspring]
-				74291,	-- Blue is My Favorite Color [The Jade Forest]
-				74783,	-- The Sounds of Silence [Crystalsong Forest]
-				73181,	-- Zeroing Debt [Booty Bay]
-			},
-			["sourceQuestNumRequired"] = 5,
 			["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 			["collectible"] = false,	-- Blizzard....
 		}),
@@ -647,6 +637,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["provider"] = { "n", 186188 },	-- Sindragosa
 				["sourceQuests"] = { 72949 },	-- Swiftly to the Archives
 				["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
+				["maps"] = { 2183 },	-- The Azure Vault
 				["groups"] = {
 					i(197134),	-- Highland Drake: Spiked Legs (DM!)
 				},
@@ -716,16 +707,16 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, {
 		q(72751),	-- Triggers whenever you collect one of the Coin quests from your Adventurer's Journal.
 	})),
 	n(QUESTS, bubbleDownSelf({ ["timeline"] = ADDED_10_1_0 }, {
-		q(73096),	-- triggeres when Booty Bay is chosen
-		q(73097),	-- triggeres when Booty Bay is chosen (spell ID 398606)
-		q(73098),	-- triggeres when Crystalsong Forest is chosen (spellID 398610)
-		q(73400),	-- triggeres when Crystalsong Forest is chosen
-		q(73228),	-- triggeres when The Jade Forst is chosen (spellID 399077)
-		q(73401),	-- triggeres when The Jade Forst is chosen
-		q(73402),	-- triggeres when Theramore is chosen
-		q(74785),	-- triggeres when Theramore is chosen (spellID 403046)
-		q(73403),	-- triggeres when Winterspring is chosen
-		q(74353),	-- triggeres when Winterspring is chosen (spellID 400338)
+		q(73096),	-- triggers when Booty Bay is chosen
+		q(73097),	-- triggers when Booty Bay is chosen (spell ID 398606)
+		q(73098),	-- triggers when Crystalsong Forest is chosen (spellID 398610)
+		q(73400),	-- triggers when Crystalsong Forest is chosen
+		q(73228),	-- triggers when The Jade Forst is chosen (spellID 399077)
+		q(73401),	-- triggers when The Jade Forst is chosen
+		q(73402),	-- triggers when Theramore is chosen
+		q(74785),	-- triggers when Theramore is chosen (spellID 403046)
+		q(73403),	-- triggers when Winterspring is chosen
+		q(74353),	-- triggers when Winterspring is chosen (spellID 400338)
 		q(76018),	-- Ensemble: Azure Renewal Finery
 	})),
 }));

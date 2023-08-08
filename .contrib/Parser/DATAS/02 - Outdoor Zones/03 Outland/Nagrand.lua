@@ -1039,7 +1039,11 @@ root(ROOTS.Zones, {
 						["qg"] = 18817,	-- Chief Researcher Kartos
 						["coord"] = { 41.2, 44.2, NAGRAND },
 						["description"] = "This quest is only accessible when the Alliance controls Halaa.",
+						-- #if AFTER 3.1.0
+						["cost"] = { { "i", 26043, 10 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #else
 						["cost"] = { { "i", 26043, 20 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #endif
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(26044),	-- Halaa Research Token
@@ -1050,7 +1054,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10076,	-- Oshu'gun Crystal Powder (Alliance Version)
 						["coord"] = { 41.2, 44.2, NAGRAND },
 						["description"] = "This quest is only accessible when the Alliance controls Halaa.",
+						-- #if AFTER 3.1.0
+						["cost"] = { { "i", 26043, 10 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #else
 						["cost"] = { { "i", 26043, 20 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #endif
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 						["groups"] = {
@@ -1061,7 +1069,11 @@ root(ROOTS.Zones, {
 						["qg"] = 18816,	-- Chief Researcher Amereldine
 						["coord"] = { 41.2, 44.2, NAGRAND },
 						["description"] = "This quest is only accessible when the Horde controls Halaa.",
-						["cost"] = { { "i", 26042, 20 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #if AFTER 3.1.0
+						["cost"] = { { "i", 26043, 10 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #else
+						["cost"] = { { "i", 26043, 20 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #endif
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(26044),	-- Halaa Research Token
@@ -1072,7 +1084,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10074,	-- Oshu'gun Crystal Powder (Horde Version)
 						["coord"] = { 41.2, 44.2, NAGRAND },
 						["description"] = "This quest is only accessible when the Horde controls Halaa.",
-						["cost"] = { { "i", 26042, 20 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #if AFTER 3.1.0
+						["cost"] = { { "i", 26043, 10 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #else
+						["cost"] = { { "i", 26043, 20 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #endif
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 						["groups"] = {

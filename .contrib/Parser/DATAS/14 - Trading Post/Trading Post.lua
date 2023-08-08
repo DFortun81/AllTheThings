@@ -751,6 +751,14 @@ root(ROOTS.NeverImplemented, {
 				mount(369480),	-- Cerulean Marsh Hopper (MOUNT!)
 				i(190539),	-- Coral-Stalker Waveray (MOUNT!) (Unknown 2023)
 				i(190168),	-- Crusty Crawler (MOUNT!) (Unknown 2023)
+				i(137576, {	-- Dim Coldflame Core (MOUNT!)
+					["cost"] = { { "c", TRADERS_TENDER, 700 }, },
+					["timeline"] = { ADDED_10_1_7 },
+				}),
+				i(137615, {	-- Molten Flarecore (MOUNT!)
+					["cost"] = { { "c", TRADERS_TENDER, 700 }, },
+					["timeline"] = { ADDED_10_1_7 },
+				}),
 				i(69846),	-- Winged Guardian (MOUNT!) Blizz promised this when removing from store in Jan 2023
 			})),
 		})

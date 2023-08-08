@@ -298,6 +298,105 @@ root(ROOTS.Unsorted, {
 			i(209052),	-- Brew Barrel
 			i(209053),	-- Green Brewfest Bulwark
 			i(209055),	-- Third Booster Part
+			--
+			i(4191),	-- Owlbeast Leggings
+			i(192807),	-- Renewed Magmammoth
+			i(208787),	-- Black Holo-Gogs
+			i(208788),	-- Blue Holo-Gogs
+			i(208789),	-- Gold Holo-Gogs
+			i(208790),	-- Green Holo-Gogs
+			i(208791),	-- Purple Holo-Gogs
+			i(208792),	-- Red Holo-Gogs
+			i(208793),	-- Silver Holo-Gogs
+			i(208794),	-- White Holo-Gogs
+			i(208795),	-- Midnight Holo-Gogs
+			i(208796),	-- Orange Holo-Gogs
+			i(208797),	-- Yellow Holo-Gogs
+			i(208802),	-- Black Retinal Armor
+			i(208803),	-- Blue Retinal Armor
+			i(208804),	-- Green Retinal Armor
+			i(208805),	-- Red Retinal Armor
+			i(208806),	-- White Retinal Armor
+			i(208807),	-- Yellow Retinal Armor
+			i(208808),	-- Green Cranial Cannon
+			i(208809),	-- Orange Cranial Cannon
+			i(208810),	-- Purple Cranial Cannon
+			i(208811),	-- Yellow Cranial Cannon
+			i(208812),	-- Yellow Bio-Optic Killshades
+			i(208813),	-- Black Bio-Optic Killshades
+			i(208814),	-- Blue Bio-Optic Killshades
+			i(208815),	-- Red Bio-Optic Killshades
+			i(208817),	-- Blue Ectoplasmic Specs
+			i(208818),	-- Green Ectoplasmic Specs
+			i(208819),	-- Red Ectoplasmic Specs
+			i(208820),	-- Yellow Ectoplasmic Specs
+			i(209035),	-- Flame Hearthstone
+			i(209062),	-- Ensemble: Chromatically Calibrated Holo-Gogs
+			i(209063),	-- Ensemble: Chromatically Calibrated Bio-Optic Killshades
+			i(209064),	-- Ensemble: Chromatically Calibrated Retinal Armor
+			i(209066),	-- Ensemble: Chromatically Calibrated Cranial Cannons
+			i(209067),	-- Ensemble: Chromatically Calibrated Ectoplasmic Specs
+			i(209356),	-- Dreambound Choker
+			i(209357),	-- Dreambound Shawl
+			i(209358),	-- Dreambound Band
+			i(209359),	-- Dreambound Warglaive
+			i(209360),	-- Dreambound Staff
+			i(209361),	-- Dreambound Halberd
+			i(209362),	-- Dreambound Cudgel
+			i(209363),	-- Dreambound Mallet
+			i(209364),	-- Dreambound Censer
+			i(209365),	-- Dreambound Cleaver
+			i(209366),	-- Dreambound Hacker
+			i(209367),	-- Dreambound Signet
+			i(209368),	-- Dreambound Loop
+			i(209369),	-- Dreambound Greatsword
+			i(209370),	-- Dreambound Blade
+			i(209371),	-- Dreambound Sword
+			i(209372),	-- Dreambound Kris
+			i(209373),	-- Dreambound Shank
+			i(209374),	-- Dreambound Spellblade
+			i(209375),	-- Dreambound Rifle
+			i(209376),	-- Dreambound Polearm
+			i(209377),	-- Dreambound Wand
+			i(209378),	-- Dreambound Scepter
+			i(209379),	-- Dreambound Barrier
+			i(209380),	-- Dreambound Shoulderpads
+			i(209381),	-- Dreambound Epaulets
+			i(209382),	-- Dreambound Vest
+			i(209383),	-- Dreambound Armplates
+			i(209384),	-- Dreambound Girdle
+			i(209385),	-- Dreambound Mantle
+			i(209386),	-- Dreambound Legguards
+			i(209387),	-- Dreambound Gauntlets
+			i(209388),	-- Dreambound Sabatons
+			i(209389),	-- Dreambound Breastplate
+			i(209390),	-- Dreambound Faceplate
+			i(209391),	-- Dreambound Vambraces
+			i(209392),	-- Dreambound Cinch
+			i(209393),	-- Dreambound Shoulderguards
+			i(209394),	-- Dreambound Greaves
+			i(209395),	-- Dreambound Coif
+			i(209396),	-- Dreambound Grips
+			i(209397),	-- Dreambound Striders
+			i(209398),	-- Dreambound Chainmail
+			i(209399),	-- Dreambound Bindings
+			i(209400),	-- Dreambound Sash
+			i(209401),	-- Dreambound Breeches
+			i(209402),	-- Dreambound Cowl
+			i(209403),	-- Dreambound Handwraps
+			i(209404),	-- Dreambound Waders
+			i(209405),	-- Dreambound Cuffs
+			i(209406),	-- Dreambound Cord
+			i(209407),	-- Dreambound Pants
+			i(209408),	-- Dreambound Crown
+			i(209409),	-- Dreambound Mitts
+			i(209410),	-- Dreambound Sandals
+			i(209411),	-- Dreambound Vestment
+			i(209412),	-- Dreambound Greatcloak
+			i(209413),	-- Dreambound Cape
+			i(209414),	-- Dreambound Drape
+			i(209419),	-- Charred Elemental Remains
+			i(209781),	-- Second Booster Part
 		})),
 		tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
 			filter(COSMETIC, {
@@ -452,7 +551,6 @@ root(ROOTS.Unsorted, {
 			i(206164),	-- Weak Resonating Vestigial
 			i(206165),	-- Major Resonating Vestigial
 			i(206166),	-- Strong Resonating Vestigial
-			i(206962),	-- Watcher's Log
 			i(207011),	-- Warblades of the Hakkari, Reborn
 			i(207029),	-- Scarlet Zealot's Heater Shield
 			i(207031),	-- Bomb Lobber
@@ -498,6 +596,32 @@ root(ROOTS.Unsorted, {
 			i(206174),	-- Blub
 			--
 			i(190601),	-- Sunny
+			--[[
+				i(190091),	-- Fanciful Corsage
+				i(190694),	-- Solemn Watchman's Belt
+				i(190695),	-- Solemn Watchman's Boots
+				i(190728),	-- Gothic Corsage
+				i(190797),	-- Ensemble: Bones of the Bloodhunter
+				i(190812),	-- Azure Nexus Crescent
+				i(190845),	-- Solemn Watchman's Trousers
+				i(190850),	-- Ensemble: Wanderer's Crimson Trappings
+				i(190851),	-- Ensemble: Vagabond's Crimson Threads
+				i(190870),	-- City Guard Heater Shield
+				i(190871),	-- Grunt's Buckler
+				i(190872),	-- Solemn Watchman's Cuirass
+				i(190896),	-- Solemn Watchman's Spaulders
+				i(190901),	-- Solemn Watchman's Helm
+				i(200925),	-- Ensemble: Solemn Watchman's Garb
+				i(207821),	-- Ancestral Clefthoof
+				i(207957),	-- Aquamarine Felfire Bulwark
+				i(207959),	-- Aquamarine Felfire Splitblade
+				i(207962),	-- Spirit of Competition
+				i(207963),	-- Alabaster Thunderwing
+				i(207964),	-- Alabaster Stormtalon
+				i(208039),	-- Ember Court Soiree Gloves
+				i(208040),	-- Queen's Conservatory Ball Gloves
+
+			--]]
 		})),
 		tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 			header(HEADERS.LFGDungeon, 2403, {	-- Aberrus, the Shadowed Crucible

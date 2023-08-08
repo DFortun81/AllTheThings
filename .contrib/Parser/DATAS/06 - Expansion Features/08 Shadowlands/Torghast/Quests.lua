@@ -11,7 +11,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["crs"] = { 175123 },	-- Warden Arkoban
 				}),
 				q(62967, {	-- Prison of the Forgotten
-					["description"] = "Only available if you delete they quest item",
+					["description"] = "Only available if you delete the quest item",
 					["sourceQuests"] = { 61099 },	-- The Search For Baine
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
@@ -774,7 +774,7 @@ root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, {
 		q(59995),	-- Tracking Quest (Finished The Fracture Chambers Layer 1)
 		q(59996),	-- Tracking Quest (Finished Skoldus Hall Layer 1)
 		q(59997),	-- Tracking Quest (Finished The Upper Reaches Layer 1)
-		q(62885),	-- triggered when learning legendary memory that triggered a cutscene w/Runecarver
+		q(62885),	-- Triggered when learning legendary memory that triggered a cutscene w/Runecarver (spellID 345039)
 		q(62977),	-- Twisting Corridors, Layer 2 (it looks like TC quests don't reset weekly like the others/are used to mark account TC progress or something)
 		q(62978),	-- Twisting Corridors, Layer 4
 		q(62979),	-- Twisting Corridors, Layer 6
@@ -823,7 +823,7 @@ root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, {
 
 		-- 9.1.5
 		--q(64848), Enter Torghast as lvl 56 NF Druid
-		q(65308), -- Leveling in Torghast
+		q(65308), -- Leveling in Torghast / Maw Jump to Torghast (spellID 359581)
 
 		-- 9.2
 		-- Jailers Gauntlet
@@ -850,6 +850,6 @@ root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, {
 
 		q(65298),	-- Unlocking Layer 5-8
 
-		q(65681),	-- Unlocking 'Unity' Legendary power
+		q(65681),	-- Unlocking 'Unity' Legendary power (spellID 367716)
 	}),
 }));

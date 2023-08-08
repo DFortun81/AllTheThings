@@ -343,7 +343,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["provider"] = { "n", 207252 },	-- Watcher's Log
 						["coord"] = { 58.2, 39.0, ULDEROTH },
 						["g"] = {
-							i(206952),	-- Watcher's Log
+							i(206962),	-- Watcher's Log
 						},
 					}),
 					q(76546, {	-- Mantid Methodology

@@ -12914,3 +12914,26 @@
 18963@@@Burst Damage
 18976@@@Draconically Superior
 18977@@@Draconically Epic
+10.1.7.50730
+6313@@@[DNT] UTILITY: Promotion - China (Cenarion Hatchling)
+9030@@@Login Tracking Achievement [SERVER ONLY]
+10705@@@HS Achievement Fixup
+11266@@@Overwatch Spray Unlock
+11295@@@Movie Promotion Transmog Fixup
+14958@@@[DNT] Charity Pet 2021 - Bananas (account level)
+14960@@@[DNT] Charity Pet 2021 - Bananas (character level)
+18315@@@Great Divide Dive Challenge: Bronze
+18316@@@Great Divide Dive Challenge: Silver
+18317@@@Great Divide Dive Challenge: Gold
+18318@@@Great Divide Dive Reverse Challenge: Bronze
+18319@@@Great Divide Dive Reverse Challenge: Silver
+18320@@@Great Divide Dive Reverse Challenge: Gold
+18394@@@<Hidden> Deleted
+18815@@@Speed Dreamin'
+18901@@@Chromatic Calibration: Holo-Gogs
+18905@@@Chromatic Calibration: Retinal Armor
+18906@@@Chromatic Calibration: Cranial Cannons
+18907@@@Chromatic Calibration: Ectoplasmic Specs
+18908@@@Chromatic Calibration: Bio-Optic Killshades
+19008@@@Dream Shaper
+19028@@@Lil' Frostwing

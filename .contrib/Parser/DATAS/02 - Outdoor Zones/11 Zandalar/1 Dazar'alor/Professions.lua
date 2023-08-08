@@ -5,40 +5,6 @@
 root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(THE_GREAT_SEAL, {
 		n(PROFESSIONS, {
-			prof(ALCHEMY, {
-				q(54464, {	-- Alchemical Equations
-					["requireSkill"] = ALCHEMY,
-					["provider"] = { "n", 122703 },	-- Clever Kumali
-					["coord"] = { 42.2, 38.0, DAZARALOR },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
-				}),
-				-- Tools of Trade Questline
-				q(50112, {	-- Casting the First Stone (H)
-					["provider"] = { "n", 122703 },	-- Clever Kumali
-					["coord"] = { 42.2, 38.0, DAZARALOR },
-					["description"] = "This quest chain requires 150 in Zandalari Alchemy.",
-					["requireSkill"] = ALCHEMY,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(50113, {	-- Ocular Extracts (H)
-					["provider"] = { "n", 122703 },	-- Clever Kumali
-					["coord"] = { 42.2, 38.0, DAZARALOR },
-					["sourceQuest"] = 50112,	-- Casting the First Stone (H)
-					["requireSkill"] = ALCHEMY,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(50115, {	-- Changing the Scenery (H)
-					["provider"] = { "n", 122703 },	-- Clever Kumali
-					["coord"] = { 42.2, 38.0, DAZARALOR },
-					["sourceQuest"] = 50112,	-- Casting the First Stone (H)
-					["requireSkill"] = ALCHEMY,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-				}),
-			}),
 			prof(BLACKSMITHING, {
 				n(127112, {	-- Forgemaster Zak'aal <Blacksmithing Trainer>
 					["coord"] = { 43.6, 38.3, DAZARALOR },
@@ -73,43 +39,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 							r(267490),	-- Zandalari Surveying
 						}),
 					}),
-				}),
-			}),
-			prof(ENGINEERING, {
-				q(54476, {	-- Engineered Blueprints
-					["requireSkill"] = ENGINEERING,
-					["provider"] = { "n", 131840 },	-- Shuga Blastcaps
-					["coord"] = { 45.1, 40.6, DAZARALOR },
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
-				}),
-				-- Tools of Trade Questline
-				q(55031, {	-- It's Scrap Work... (H)
-					["provider"] = { "n", 131840 },	-- Shuga Blastcaps
-					["coord"] = { 45.1, 40.6, DAZARALOR },
-					["description"] = "Requires 150 Zandalari Engineering.",
-					["requireSkill"] = ENGINEERING,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(53783, {	-- In the Dunes (H)
-					["provider"] = { "n", 131840 },	-- Shuga Blastcaps
-					["coord"] = { 45.1, 40.6, DAZARALOR },
-					["sourceQuest"] = 55031,	-- It's Scrap Work... (H)
-					["requireSkill"] = ENGINEERING,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(53937, {	-- The Ub3r-Spanner (H)
-					["provider"] = { "n", 131840 },	-- Shuga Blastcaps
-					["coord"] = { 45.1, 40.6, DAZARALOR },
-					["sourceQuest"] = 53833,	-- Vengeful Venture (H)
-					["requireSkill"] = ENGINEERING,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-					["g"] = {
-						recipe(282975), -- Schematic: The Ub3r-Spanner
-					},
 				}),
 			}),
 			prof(INSCRIPTION, bubbleDown({ ["requireSkill"] = INSCRIPTION }, {

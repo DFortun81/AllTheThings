@@ -2317,11 +2317,11 @@ end
 
 root(ROOTS.HiddenQuestTriggers, {
 	-- Dredger Butler Appearance
-		q(61581),	-- Choosing Purple during 'Shades of Muck' (61851)
-		q(61584),	-- Choosing Blue during 'Shades of Muck' (61851)
-		q(61579),	-- Choosing Green during 'Shades of Muck' (61851)
-		q(61580),	-- Choosing Red during 'Shades of Muck' (61851)
-		q(61583),	-- When completing 'Shades of Muck' (61851) with Purple chosen
+		q(61581),	-- Choosing Purple during "Shades of Muck" (questID 61851)
+		q(61584),	-- Choosing Blue during "Shades of Muck" (questID 61851)
+		q(61579),	-- Choosing Green during "Shades of Muck" (questID 61851)
+		q(61580),	-- Choosing Red during "Shades of Muck" (questID 61851)
+		q(61583),	-- When completing "Shades of Muck" (questID 61851) with Purple chosen (spellID 348799)
 		q(61793),	-- Choosing name 'Rogi' during 'Dredging up a Name' (61764)
 		q(61794),	-- Choosing name 'Grubber' during 'Dredging up a Name' (61764)
 		q(61795),	-- Choosing name 'Jeebs' during 'Dredging up a Name' (61764)
@@ -2342,7 +2342,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(61810),	-- Choosing name 'Copperworth' during 'Dredging up a Name' (61764)
 		q(61811),	-- Choosing name 'Fred' during 'Dredging up a Name' (61764)
 		q(61812),	-- Choosing name 'Raff' during 'Dredging up a Name' (61764)
-		q(61582),	-- Let's get your hair sorted. > Let's trim it off ...
+		q(61582),	-- Let's get your hair sorted. > Let's trim it off ... (spellID 348799)
 		q(61572),	-- Let's get your hair sorted. > A little grease and the proper Igor cut.
 		q(61571),	-- Let's get your hair sorted. > How about you grow it out full?
 		q(61573),	-- Let's get your hair sorted. > Let's go wild and spikey!
@@ -2351,7 +2351,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(63927),	-- Let's get your hair sorted. > It's time to don the Bewitching Little Hat
 		q(61575),	-- Let's update your clothes. > How about we try the long sleeved doublet.
 		q(61574),	-- Let's update your clothes. > Why don't you try on the short sleeved doublet.
-		q(61585),	-- It's time to dye your clothes. > Let's dye them black.
+		q(61585),	-- It's time to dye your clothes. > Let's dye them black. (spellID 348799)
 		q(61578),	-- It's time to dye your clothes. > Let's dye them green.
 		q(61576),	-- It's time to dye your clothes. > Let's dye them red.
 
@@ -2450,7 +2450,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(61918),	-- unflagged when completing Restock: Fashion Accessories (62078)
 			q(61919),	-- unflagged when completing Restock: Exploratory Meals (62094)
 			q(61938),	-- unflagged when completing Restock: My Favorite Table (62065)
-			q(61922),	-- seems to be an indicator that Restock: Stolen Rugs will be required for the next Ember Court
+			q(61922),	-- seems to be an indicator that Restock: Stolen Rugs will be required for the next Ember Court (spellID 345206)
 			q(61937),	-- seems to be an indicator that Restock: Statues will be required for the next Ember Court
 			q(61925),	-- completed when completing a 'Restock' quest
 			q(62524),	-- triggered at end of Ember Court (Vashj/Koryan/Choofa/Stonehead)
