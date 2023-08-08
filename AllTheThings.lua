@@ -1602,10 +1602,11 @@ local function GetUnobtainableTexture(group)
 	end
 
 	-- Determine the texture color, default is green for events.
+	-- TODO: Use 4 for inactive events, use 5 for active events
 	local filter, u = 4, group.u;
 	if u then
 		if (group.itemID or group.spellID) and u > 1 and u < 1000 and not app.IsBoP(group) then
-			filter = 3;
+			filter = 2;
 		else
 			local record = L["UNOBTAINABLE_ITEM_REASONS"][u];
 			if record then
