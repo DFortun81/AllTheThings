@@ -6984,6 +6984,118 @@ end
 local function RefreshSaves()
 	AfterCombatCallback(RefreshSavesCallback);
 end
+-- Given a known SourceID, will mark all Shared Visual SourceID's which meet the filter criteria of the known SourceID as 'collected'
+local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacterOnly)
+	-- Find this source in ATT
+	local knownItem = SearchForSourceIDQuickly(knownSourceID);
+	if knownItem then
+		local knownSource = C_TransmogCollection_GetSourceInfo(knownSourceID);
+		local acctSources = ATTAccountWideData.Sources;
+		local checkItem, checkSource, valid;
+		local knownRaces, knownClasses, knownFaction, knownFilter = knownItem.races, knownItem.c, knownItem.r, knownItem.f;
+		local checkFilter;
+		-- this source unlocks a visual that the current character may tmog, so all shared visuals should be considered 'collected' regardless of restriction
+		local currentCharacterUsable = currentCharacterOnly and not knownItem.nmc and not knownItem.nmr;
+		-- For each shared Visual SourceID
+		-- if knownSource.visualID == 322 then app.DEBUG_PRINT = true; app.PrintTable(knownSource); end
+		-- account cannot collect sourceID? not available for transmog?
+		-- local _, canCollect = C_TransmogCollection.AccountCanCollectSource(knownSourceID); -- pointless, always false if sourceID is known
+		-- local unknown1 = select(8, C_TransmogCollection.GetAppearanceSourceInfo(knownSourceID)); -- pointless, returns nil for many valid transmogs
+		-- Trust that Blizzard returns SourceID's which can actually be used as Transmog for the VisualID
+		local visualIDs = C_TransmogCollection_GetAllAppearanceSources(knownSource.visualID);
+		local canMog;
+		for _,sourceID in ipairs(visualIDs) do
+			if sourceID == knownSourceID then
+				canMog = true;
+				break;
+			end
+		end
+		if not canMog then return; end
+		local factionRaces = app.Modules.FactionData.FACTION_RACES;
+		for _,sourceID in ipairs(visualIDs) do
+			-- if app.DEBUG_PRINT then print("visualID",knownSource.visualID,"s",sourceID,"known:",acctSources[sourceID)] end
+			-- If it is not currently marked collected on the account
+			if not acctSources[sourceID] then
+				-- for current character only, all we care is that the knownItem is not exclusive to another
+				-- race/class to consider all shared appearances as 'collected' for the current character
+				if currentCharacterUsable then
+					-- if app.DEBUG_PRINT then print("current character usable") end
+					acctSources[sourceID] = 2;
+				else
+					-- Find the check Source in ATT
+					checkItem = SearchForSourceIDQuickly(sourceID);
+					if checkItem then
+						-- filter matches or one item is Cosmetic
+						checkFilter = checkItem.f;
+						if checkFilter == knownFilter or checkFilter == 2 or knownFilter == 2 then
+							valid = true;
+							-- verify all possible restrictions that the known source may have against restrictions on the source in question
+							-- if known source has no equivalent restrictions, then restrictions on the source are irrelevant
+							-- Races
+							if knownRaces then
+								if checkItem.races then
+									-- the known source has a race restriction that is not shared by the source in question
+									if not containsAny(checkItem.races, knownRaces) then valid = nil; end
+								else
+									valid = nil;
+								end
+							end
+							-- Classes
+							if valid and knownClasses then
+								if checkItem.c then
+									-- the known source has a class restriction that is not shared by the source in question
+									if not containsAny(checkItem.c, knownClasses) then valid = nil; end
+								else
+									valid = nil;
+								end
+							end
+							-- Faction
+							if valid and knownFaction then
+								if checkItem.r then
+									-- the known source has a faction restriction that is not shared by the source or source races in question
+									if knownFaction ~= checkItem.r or (checkItem.races and not containsAny(factionRaces[knownFaction], checkItem.races)) then valid = nil; end
+								else
+									valid = nil;
+								end
+							end
+
+							-- found a known item which meets all the criteria to grant credit for the source in question
+							if valid then
+								checkSource = C_TransmogCollection_GetSourceInfo(sourceID);
+								-- both sources are the same category (Equip-Type)
+								if knownSource.categoryID == checkSource.categoryID
+									-- and same Inventory Type
+									and (knownSource.invType == checkSource.invType
+										or checkSource.categoryID == 4 --[[CHEST: Robe vs Armor]]
+										or app.SlotByInventoryType[knownSource.invType] == app.SlotByInventoryType[checkSource.invType])
+								then
+									-- if app.DEBUG_PRINT then print("Unique Collected s:",sourceID); end
+									acctSources[sourceID] = 2;
+								-- else print("sources share visual and filters but different equips",item.s,sourceID)
+								end
+							end
+						end
+					else
+						-- OH NOES! It doesn't exist!
+						checkSource = C_TransmogCollection_GetSourceInfo(sourceID);
+						-- both sources are the same category (Equip-Type)
+						if checkSource.categoryID == knownSource.categoryID
+							-- and same Inventory Type
+							and (checkSource.invType == knownSource.invType
+								or knownSource.categoryID == 4 --[[CHEST: Robe vs Armor]]
+								or app.SlotByInventoryType[checkSource.invType] == app.SlotByInventoryType[knownSource.invType])
+						then
+							-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESNT HAVE!!!!");
+							acctSources[sourceID] = 2;
+						-- else print(knownSource.sourceID, sourceInfo.sourceID, "share appearances, but one is ", sourceInfo.invType, "and the other is", knownSource.invType, sourceInfo.categoryID);
+						end
+					end
+				end
+			end
+		end
+		-- app.DEBUG_PRINT = nil;
+	end
+end
 local function RefreshAppearanceSources()
 	-- app.PrintDebug("RefreshAppearanceSources")
 	app.DoRefreshAppearanceSources = nil;
@@ -7014,12 +7126,12 @@ local function RefreshAppearanceSources()
 	if not app.Settings:Get("Completionist") then
 		-- app.PrintDebug("Unique Refresh")
 		local currentCharacterOnly = app.Settings:Get("MainOnly");
-		local MarkUniqueCollected, ItemSourceFilter = app.MarkUniqueCollectedSourcesBySource, app.ItemSourceFilter;
+		local ItemSourceFilter = app.ItemSourceFilter;
 		for s=1,app.MaxSourceID do
 			-- for each known source
 			if collectedSources[s] == 1 then
 				-- collect shared visual sources
-				MarkUniqueCollected(s, currentCharacterOnly);
+				MarkUniqueCollectedSourcesBySource(s, currentCharacterOnly);
 			elseif brokenUniqueSources then
 				-- special reverse-check-logic for unknown SourceID's whose VisualID does not return the SourceID from C_TransmogCollection_GetAllAppearanceSources(VisualID)
 				-- and haven't already been marked as unique-collected
@@ -13603,119 +13715,6 @@ end)();
 
 -- Filtering
 do
--- Given a known SourceID, will mark all Shared Visual SourceID's which meet the filter criteria of the known SourceID as 'collected'
-app.MarkUniqueCollectedSourcesBySource = function(knownSourceID, currentCharacterOnly)
-	-- Find this source in ATT
-	local knownItem = SearchForSourceIDQuickly(knownSourceID);
-	if knownItem then
-		local knownSource = C_TransmogCollection_GetSourceInfo(knownSourceID);
-		local acctSources = ATTAccountWideData.Sources;
-		local checkItem, checkSource, valid;
-		local knownRaces, knownClasses, knownFaction, knownFilter = knownItem.races, knownItem.c, knownItem.r, knownItem.f;
-		local checkFilter;
-		-- this source unlocks a visual that the current character may tmog, so all shared visuals should be considered 'collected' regardless of restriction
-		local currentCharacterUsable = currentCharacterOnly and not knownItem.nmc and not knownItem.nmr;
-		-- For each shared Visual SourceID
-		-- if knownSource.visualID == 322 then app.DEBUG_PRINT = true; app.PrintTable(knownSource); end
-		-- account cannot collect sourceID? not available for transmog?
-		-- local _, canCollect = C_TransmogCollection.AccountCanCollectSource(knownSourceID); -- pointless, always false if sourceID is known
-		-- local unknown1 = select(8, C_TransmogCollection.GetAppearanceSourceInfo(knownSourceID)); -- pointless, returns nil for many valid transmogs
-		-- Trust that Blizzard returns SourceID's which can actually be used as Transmog for the VisualID
-		local visualIDs = C_TransmogCollection_GetAllAppearanceSources(knownSource.visualID);
-		local canMog;
-		for _,sourceID in ipairs(visualIDs) do
-			if sourceID == knownSourceID then
-				canMog = true;
-				break;
-			end
-		end
-		if not canMog then return; end
-		local factionRaces = app.Modules.FactionData.FACTION_RACES;
-		for _,sourceID in ipairs(visualIDs) do
-			-- if app.DEBUG_PRINT then print("visualID",knownSource.visualID,"s",sourceID,"known:",acctSources[sourceID)] end
-			-- If it is not currently marked collected on the account
-			if not acctSources[sourceID] then
-				-- for current character only, all we care is that the knownItem is not exclusive to another
-				-- race/class to consider all shared appearances as 'collected' for the current character
-				if currentCharacterUsable then
-					-- if app.DEBUG_PRINT then print("current character usable") end
-					acctSources[sourceID] = 2;
-				else
-					-- Find the check Source in ATT
-					checkItem = SearchForSourceIDQuickly(sourceID);
-					if checkItem then
-						-- filter matches or one item is Cosmetic
-						checkFilter = checkItem.f;
-						if checkFilter == knownFilter or checkFilter == 2 or knownFilter == 2 then
-							valid = true;
-							-- verify all possible restrictions that the known source may have against restrictions on the source in question
-							-- if known source has no equivalent restrictions, then restrictions on the source are irrelevant
-							-- Races
-							if knownRaces then
-								if checkItem.races then
-									-- the known source has a race restriction that is not shared by the source in question
-									if not containsAny(checkItem.races, knownRaces) then valid = nil; end
-								else
-									valid = nil;
-								end
-							end
-							-- Classes
-							if valid and knownClasses then
-								if checkItem.c then
-									-- the known source has a class restriction that is not shared by the source in question
-									if not containsAny(checkItem.c, knownClasses) then valid = nil; end
-								else
-									valid = nil;
-								end
-							end
-							-- Faction
-							if valid and knownFaction then
-								if checkItem.r then
-									-- the known source has a faction restriction that is not shared by the source or source races in question
-									if knownFaction ~= checkItem.r or (checkItem.races and not containsAny(factionRaces[knownFaction], checkItem.races)) then valid = nil; end
-								else
-									valid = nil;
-								end
-							end
-
-							-- found a known item which meets all the criteria to grant credit for the source in question
-							if valid then
-								checkSource = C_TransmogCollection_GetSourceInfo(sourceID);
-								-- both sources are the same category (Equip-Type)
-								if knownSource.categoryID == checkSource.categoryID
-									-- and same Inventory Type
-									and (knownSource.invType == checkSource.invType
-										or checkSource.categoryID == 4 --[[CHEST: Robe vs Armor]]
-										or app.SlotByInventoryType[knownSource.invType] == app.SlotByInventoryType[checkSource.invType])
-								then
-									-- if app.DEBUG_PRINT then print("Unique Collected s:",sourceID); end
-									acctSources[sourceID] = 2;
-								-- else print("sources share visual and filters but different equips",item.s,sourceID)
-								end
-							end
-						end
-					else
-						-- OH NOES! It doesn't exist!
-						checkSource = C_TransmogCollection_GetSourceInfo(sourceID);
-						-- both sources are the same category (Equip-Type)
-						if checkSource.categoryID == knownSource.categoryID
-							-- and same Inventory Type
-							and (checkSource.invType == knownSource.invType
-								or knownSource.categoryID == 4 --[[CHEST: Robe vs Armor]]
-								or app.SlotByInventoryType[checkSource.invType] == app.SlotByInventoryType[knownSource.invType])
-						then
-							-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESNT HAVE!!!!");
-							acctSources[sourceID] = 2;
-						-- else print(knownSource.sourceID, sourceInfo.sourceID, "share appearances, but one is ", sourceInfo.invType, "and the other is", knownSource.invType, sourceInfo.categoryID);
-						end
-					end
-				end
-			end
-		end
-		-- app.DEBUG_PRINT = nil;
-	end
-end
-
 -- Recursive Checks
 app.VerifyCache = function()
 	if not fieldCache then return false; end
