@@ -191,9 +191,11 @@ local OnTooltipForDarkmoonFaire = [[function(t)
 end]];
 
 root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, {
+	-- #if AFTER 4.3.0
+	["mapID"] = DARKMOON_ISLAND,
+	-- #endif
 	["maps"] = {
 		-- #if AFTER 4.3.0
-		DARKMOON_ISLAND,
 		408,	-- Cauldron of Rock
 		-- #else
 		ELWYNN_FOREST,

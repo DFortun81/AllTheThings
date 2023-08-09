@@ -9668,12 +9668,12 @@ local fields = {
 		return cache.GetCachedField(t, "costCollectibles", default_costCollectibles);
 	end,
 	["collectibleAsCost"] = app.CollectibleAsCost,
-	["trackable"] = function(t)
-		return #t.costCollectibles > 0;
-	end,
-	["saved"] = function(t)
-		return not t.filledCost and not t.collectibleAsCost;
-	end,
+	-- ["trackable"] = function(t)
+	-- 	return #t.costCollectibles > 0;
+	-- end,
+	-- ["saved"] = function(t)
+	-- 	return not t.filledCost and not t.collectibleAsCost;
+	-- end,
 };
 local BaseCurrencyClass = app.BaseObjectFields(fields, "BaseCurrencyClass");
 
