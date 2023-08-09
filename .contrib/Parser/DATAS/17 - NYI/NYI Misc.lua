@@ -82,12 +82,6 @@ root(ROOTS.NeverImplemented, {
 				i(45924),	-- Certificate of Appreciation
 			})),
 
-			-- 3.2.0
-			tier(WOTLK_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 3.2.0" } }, {
-				i(47558),	-- Regalia of the Grand Protector
-				i(47559),	-- Regalia of the Grand Vanquisher
-			})),
-
 			-- 3.3.3
 			tier(WOTLK_TIER, 3.3, bubbleDown({ ["timeline"] = { "created 3.3.3" } }, {
 				i(50329),	-- Icecrown-10 Normal Loot Token
