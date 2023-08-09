@@ -1523,7 +1523,7 @@ root(ROOTS.Zones, {
 							i(31391),	-- Plans: Wildguard Leggings (RECIPE!)
 							i(25836),	-- Preserver's Cudgel
 							i(32070),	-- Recipe: Earthen Elixir
-							i(31356),	-- Recipe: Flask of Distilled Wisdom
+							i(31356),	-- Recipe: Flask of Distilled Wisdom (RECIPE!)
 							i(22922),	-- Recipe: Major Nature Protection Potion
 							i(25869),	-- Recipe: Transmute Earthstorm Diamond
 							i(22918),	-- Recipe: Transmute Primal Water to Air

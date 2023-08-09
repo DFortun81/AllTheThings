@@ -2731,7 +2731,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					-- #if AFTER 4.0.3
 					["groups"] = {
-						i(13496, {	-- Recipe: Greater Nature Protection Potion
+						i(13496, {	-- Recipe: Greater Nature Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

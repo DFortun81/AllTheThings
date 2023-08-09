@@ -225,6 +225,23 @@ root(ROOTS.Craftables, tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bu
 			i(187831),	-- Pure-Air Sail Extensions
 		}),
 	}),
+	prof(HERBALISM, {
+		spell(2366, {	-- Herb Gathering
+			i(169701),	-- Death Blossom
+			i(169700),	-- Death Blossom Petal
+			i(187699, {["timeline"] = {ADDED_9_2_0}}),	-- First Flower
+			i(168589),	-- Marrowroot
+			i(168591),	-- Marrowroot Petal
+			i(171315),	-- Nightshade
+			i(169697),	-- Nightshade Petal
+			i(168586),	-- Rising Glory
+			i(169550),	-- Rising Glory Petal
+			i(170554),	-- Vigil's Torch
+			i(169699),	-- Vigil's Torch Petal
+			i(168583),	-- Widowbloom
+			i(169698),	-- Widowbloom Petal
+		}),
+	}),
 	prof(INSCRIPTION, {
 		filter(GLYPHS, {
 			i(187887, {["timeline"] = {ADDED_9_1_5}}),	-- Mark of the Gloomstalker Dredbat (CI!)

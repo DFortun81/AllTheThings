@@ -5,51 +5,6 @@
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(BORALUS, {
 		n(PROFESSIONS, {
-			prof(ALCHEMY, {
-				q(54463, {	-- Alchemical Equations
-					["requireSkill"] = ALCHEMY,
-					["provider"] = { "n", 132228 },	-- Elric Whalgrene
-					["coord"] = { 74.2, 6.60, BORALUS },
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
-				}),
-				-- Tools of Trade Questline
-				q(50121, {	-- Casting the First Stone (A)
-					["provider"] = { "n", 132228 },	-- Elric Whalgrene
-					["coord"] = { 74.2, 6.5, BORALUS },
-					["description"] = "This quest chain requires 150 in Kul Tiran Alchemy.",
-					["requireSkill"] = ALCHEMY,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(50122, {	-- Ocular Extracts (A)
-					["provider"] = { "n", 132228 },	-- Elric Whalgrene
-					["coord"] = { 74.2, 6.5, BORALUS },
-					["sourceQuest"] = 50121,	-- Casting the First Stone (A)
-					["requireSkill"] = ALCHEMY,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(50124, {	-- Changing the Scenery (A)
-					["provider"] = { "n", 132228 },	-- Elric Whalgrene
-					["coord"] = { 74.2, 6.5, BORALUS },
-					["sourceQuest"] = 50121,	-- Casting the First Stone (A)
-					["requireSkill"] = ALCHEMY,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(50125, {	-- A Possible Solution (A)
-					["provider"] = { "n", 132228 },	-- Elric Whalgrene
-					["coord"] = { 74.2, 6.5, BORALUS },
-					["sourceQuests"] = {
-						50122,	-- Ocular Extracts (A)
-						50124,	-- Changing the Scenery (A)
-					},
-					["requireSkill"] = ALCHEMY,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-			}),
 			prof(BLACKSMITHING, {
 				n(133536, {	-- Grix "Ironfists" Barlow <Blacksmithing Trainer>
 					["coord"] = { 73.6, 8.6, BORALUS },
@@ -71,7 +26,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			}),
 			prof(ENCHANTING, {
 				n(136041, {	-- Emily Fairweather <Enchanting Trainer>
-					--["coord"] = { }
+					["coord"] = { 74.1, 11.5, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = appendGroups(BFA_ENCHANTING, {
 						r(264473),	-- Kul Tiran Enchanting
@@ -121,6 +76,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					["g"] = {
 						recipe(282975), -- Schematic: The Ub3r-Spanner
 					},
+				}),
+			}),
+			prof(HERBALISM, {
+				n(136096, {	-- Declan Senal <Herbalism Trainer>
+					["coord"] = { 71.5, 4.9, BORALUS },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = appendGroups(BFA_HERBALISM, {
+						r(265831),	-- Herb Gathering (Kul Tiran)
+					}),
 				}),
 			}),
 			prof(INSCRIPTION, bubbleDown({ ["requireSkill"] = INSCRIPTION }, {
@@ -197,7 +161,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				n(136063, {	-- Cassandra Brennor <Leatherworking Trainer>
 					["coord"] = { 75.5, 12.6, BORALUS },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = appendGroups(BFA_BLACKSMITHING, {
+					["g"] = appendGroups(BFA_LEATHERWORKING, {
 						r(264592),	-- Kul Tiran Leatherworking
 					}),
 				}),

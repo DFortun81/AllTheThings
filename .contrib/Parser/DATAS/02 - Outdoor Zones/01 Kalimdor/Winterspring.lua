@@ -2248,9 +2248,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						-- #if AFTER 4.0.3
-						i(20013),	-- Recipe: Living Action Potion
+						i(20013),	-- Recipe: Living Action Potion (RECIPE!)
 						-- #endif
-						i(13480, {	-- Recipe: Major Healing Potion
+						i(13480, {	-- Recipe: Major Healing Potion (RECIPE!)
 							["timeline"] = { "removed 2.0.1" },	-- Moved to Trainers
 						}),
 					},
@@ -2486,11 +2486,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 7437,	-- Cobalt Mageweaver
 				}),
-				i(13497, {	-- Recipe: Greater Arcane Protection Potion
+				i(13497, {	-- Recipe: Greater Arcane Protection Potion (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 7437,	-- Cobalt Mageweaver
 				}),
-				i(13495, {	-- Recipe: Greater Frost Protection Potion
+				i(13495, {	-- Recipe: Greater Frost Protection Potion (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 7428,	-- Frostmaul Giant
 				}),

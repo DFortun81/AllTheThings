@@ -2504,7 +2504,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(19329),	-- Pattern: Golden Mantle of the Dawn (RECIPE!)
 						applyclassicphase(PHASE_THREE, i(19203)),	-- Plans: Girdle of the Dawn (RECIPE!)
 						applyclassicphase(PHASE_THREE, i(19205)),	-- Plans: Gloves of the Dawn (RECIPE!)
-						i(13482),	-- Recipe: Transmute Air to Fire
+						i(13482),	-- Recipe: Transmute Air to Fire (RECIPE!)
 					},
 				}),
 				-- #if ANYCLASSIC
@@ -2572,8 +2572,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(12823),	-- Plans: Huge Thorium Battleaxe (RECIPE!)
 						i(12819),	-- Plans: Ornate Thorium Handaxe (RECIPE!)
 						i(12703),	-- Plans: Storm Gauntlets (RECIPE!)
-						i(13501),	-- Recipe: Major Mana Potion
-						i(13485),	-- Recipe: Transmute Water to Air
+						i(13501),	-- Recipe: Major Mana Potion (RECIPE!)
+						i(13485),	-- Recipe: Transmute Water to Air (RECIPE!)
 					},
 				}),
 				n(11285, {	-- Rory
@@ -2721,7 +2721,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" }, -- Maybe still drops, this tag will help with reporting if somebody does get a drop
 				}),
 				-- #if BEFORE 4.0.3
-				i(13496, {	-- Recipe: Greater Nature Protection Potion
+				i(13496, {	-- Recipe: Greater Nature Protection Potion (RECIPE!)
 					["crs"] = {
 						1813,	-- Decaying Horror
 						1812,	-- Rotting Behemoth

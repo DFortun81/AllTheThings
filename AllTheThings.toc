@@ -26,6 +26,7 @@ src\Modules\FactionData.lua
 src\Modules\Color.lua
 src\Modules\Costs.lua
 src\Modules\Events.lua
+src\Modules\Filter.lua
 src\Modules\Tooltip.lua
 src\Modules\Upgrade.lua
 db\Presets.lua
@@ -43,6 +44,10 @@ locales\pt.lua
 locales\ru.lua
 locales\cn.lua
 db\Custom Headers.lua
+src\Classes\base.lua
+src\Classes\Filter Types.lua
+src\Classes\Illusions.lua
+src\Classes\PVP Ranks.lua
 Settings.lua
 AllTheThings.lua
 db\Categories.lua

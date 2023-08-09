@@ -26,6 +26,7 @@ local INSANE_IN_THE_MEMBRANE_OnInit = [[function(t)
 			local bloodsail = _.CreateFaction(87);
 			bloodsail.minReputation = { 87, ]] .. HONORED .. [[ };
 			bloodsail.OnTooltip = factions[1].OnTooltip;
+			bloodsail.collectible = false;
 			factions[1] = bloodsail;
 			t.factions = factions;
 		end
@@ -1249,16 +1250,6 @@ root("Achievements", {
 	}),
 	achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, {
 		achcat(170, {	-- Cooking
-			applyclassicphase(WRATH_PHASE_ONE, ach(1563, {	-- Hail to the Chef [Alliance]
-				["timeline"] = { "added 3.0.1" },
-				["requireSkill"] = COOKING,
-				["races"] = ALLIANCE_ONLY,
-			})),
-			applyclassicphase(WRATH_PHASE_ONE, ach(1784, {	-- Hail to the Chef [Horde]
-				["timeline"] = { "added 3.0.1" },
-				["requireSkill"] = COOKING,
-				["races"] = HORDE_ONLY,
-			})),
 			ach(121, {	-- Journeyman Cook
 				["spellID"] = 3102,	-- Cooking (Journeyman)
 				["requireSkill"] = COOKING,

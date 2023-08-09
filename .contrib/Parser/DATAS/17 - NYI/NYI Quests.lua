@@ -468,13 +468,10 @@ root(ROOTS.NeverImplemented, {
 			q(28365),	-- <PH>Drizle Safe
 			q(28903),	-- <PH>Faceless
 			q(28902),	-- <PH>Hive'Zora B/C
-			q(29447),	-- A Curious Crystal [DMF]
 			q(26155),	-- A Dark Threat, Remembered
-			q(29478),	-- A Fizzy Fusion [DMF]
 			q(14453),	-- A Humble Task
 			q(26764),	-- A New Low (Northern Stranglethorn)
 			q(25455),	-- A Test of Wills
-			q(29450),	-- A Wondrous Weapon [DMF]
 			q(28011),	-- Adventurers Wanted: Blackfathom Deeps
 			q(28010),	-- Adventurers Wanted: Blackfathom Deeps
 			q(28071),	-- Adventurers Wanted: Blackrock Spire
@@ -517,10 +514,8 @@ root(ROOTS.NeverImplemented, {
 			q(28037),	-- Adventurers Wanted: Zul'farrak
 			q(28036),	-- Adventurers Wanted: Zul'farrak
 			q(26156),	-- All The King's Men
-			q(29449),	-- An Intriguing Grimoire [DMF]
 			q(26874),	-- Awakening Naralex
 			q(25497),	-- Back in the Saddle
-			q(29480),	-- Banners, Banners Everywhere! [DMF]
 			q(14319),	-- BETA Further Treatment
 			q(25474),	-- BETA Once More, With Eeling [DEPRICATED]
 			q(14220),	-- BETA This Is the End
@@ -540,21 +535,16 @@ root(ROOTS.NeverImplemented, {
 			q(29029),	-- Dying Knowledge
 			q(27925),	-- Efficient Excavations
 			q(28555),	-- Expel the Envoys
-			q(29472),	-- Eyes on the Prizes [DMF]
 			q(26138),	-- Ferilon Leafborn
 			q(26767),	-- Figuring out how to make quests
 			q(29091),	-- Freedom Movement
-			q(29485),	-- Fun for the Little Ones [DMF]
 			q(26839),	-- Get Away From It All!
 			q(25666),	-- Getting Your Hands Dirty
 			q(24898),	-- Going, Going, Guano!
 			q(24899),	-- Going, Going, Guano!
 			q(26527),	-- Gryphon Master Talonaxe
-			q(29479),	-- Herbs for Healing [DMF]
 			q(29028),	-- Into Jaedenar
 			q(14481),	-- Into The Abyss
-			q(35504),	-- Iron Joker [DMF]
-			q(29483),	-- Keeping the Faire Sparkling [DMF]
 			q(28905),	-- LFGDungeons - Cataclysm - Heroic Dungeon - 1st
 			q(28906),	-- LFGDungeons - Cataclysm - Heroic Dungeon - Nth
 			q(30110),	-- LFGDungeons - Cataclysm - Raid Finder - 1st
@@ -563,12 +553,8 @@ root(ROOTS.NeverImplemented, {
 			q(29096),	-- Mor'shan Caravan Pick-Up
 			q(27946),	-- NYI
 			q(28601),	-- Old Puttery
-			q(29466),	-- Plenty of Plump Frogs [DMF]
 			q(25435),	-- Pressure is Mounting
-			q(29484),	-- Putting the Crunch in the Frog [DMF]
-			q(29474),	-- Putting Trash to Good Use [DMF]
 			q(25384),	-- Raw Materials
-			q(29469),	-- Rearm, Reuse, Recycle [DMF]
 			q(26459),	-- Researching the Corruption
 			q(26704),	-- REUSE
 			q(28270),	-- Riding Shotgun
@@ -583,8 +569,6 @@ root(ROOTS.NeverImplemented, {
 			q(28642),	-- Shy-Rotam
 			q(25636),	-- Starve a Fever, Feed a Cold
 			q(28743),	-- Tailgunner!
-			q(29467),	-- Talkin' Tonks [DMF]
-			q(29470),	-- Tan My Hide [DMF]
 			q(28240),	-- Tapped Out
 			q(25737),	-- Tenuous Negotiatons
 			q(29169),	-- The Beasts Within
@@ -599,13 +583,11 @@ root(ROOTS.NeverImplemented, {
 			q(27634),	-- The God Hakkar
 			q(27018),	-- The Herald <NYI>
 			q(28606),	-- The Keys to the Hot Rod
-			q(29454),	-- The Master Strategist [DMF]
 			q(29672),	-- The Opening of the Dark Portal
 			q(29683),	-- The Scryer's Scryer
 			q(26243),	-- The World Pillar
 			q(29158),	-- The Zandalar Representative
 			q(24568),	-- To the Walls!
-			q(29465),	-- Tools of Divination [DMF]
 			q(28468),	-- Toxic Horrors
 			q(28481),	-- Troubled Spirits of Kel'Theril
 			q(28752),	-- Unstoppable Onslaught
@@ -616,7 +598,6 @@ root(ROOTS.NeverImplemented, {
 			q(25742),	-- What? This Old Thing?
 			q(28546),	-- Winterfall E'ko
 			q(28462),	-- Winterfall Firewater
-			q(29471),	-- Writing the Future [DMF]
 			q(24688),	-- Zen'Aliri
 		}),
 		tier(MOP_TIER, {
@@ -1143,6 +1124,7 @@ root(ROOTS.NeverImplemented, {
 				q(35755, { ["name"] = "Intricately Carved Battle Staff", }),	-- Intricately Carved Battle Staff
 				q(33987, { ["name"] = "Intro Tracking", }),	-- Intro Tracking
 				q(33496, { ["name"] = "Iron Horde in Karabor", }),	-- Iron Horde in Karabor
+				q(35504, { ["name"] = "Iron Joker", }),	-- Iron Joker
 				q(35020, { ["name"] = "Jared's Test Quest", }),	-- Jared's Test Quest
 				q(35294, { ["name"] = "Jasper Moves", }),	-- Jasper Moves
 				q(34690, { ["name"] = "Just the Beginning", }),	-- Just the Beginning
@@ -6825,7 +6807,7 @@ root(ROOTS.NeverImplemented, {
 				-- 9.0.2.35854
 				q(62815),	--
 				q(62816),	--
-				q(62818),	--
+				q(62818),	-- Pumpkin Head	(spellID 344765)
 				q(62820),	--
 				-- 9.0.2.35938
 				q(62828, { ["name"] = "[DNT] Door of Shadows", }),	-- [DNT] Door of Shadows
@@ -7118,7 +7100,6 @@ root(ROOTS.NeverImplemented, {
 				q(64991),	--
 				q(65012),	--
 				q(65013),	-- Chest Unlocked (spellID 370679)
-				q(65088),	--
 				-- 9.1.5.40071
 				-- 9.1.5.40078
 				q(65139),	--
@@ -7315,7 +7296,6 @@ root(ROOTS.NeverImplemented, {
 				q(65645),	--
 				-- 9.2.0.41827
 				-- 9.2.0.41962
-				q(65697),	--
 				q(65708),	--
 				q(65715),	--
 				q(65733),	--

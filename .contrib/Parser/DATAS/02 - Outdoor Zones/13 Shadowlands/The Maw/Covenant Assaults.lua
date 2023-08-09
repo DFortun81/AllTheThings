@@ -830,17 +830,22 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 root(ROOTS.HiddenQuestTriggers, {
 --	TODO: Stolen Anima Vessels probably need to be added at some point, but i'm not really sure how they work (example: NF ones are all the fuck over, in and out of the rift, some have multiple coords, can't tell when/how they reset, etc.) so i am just throwing them here for now
 --	Kyrian
+	q(63820),	-- triggered when completing the final step of 'Kyrian Assault' (questID 63824) (spellID 351106)
+	q(64077),	-- triggered when completing the final step of 'Kyrian Assault' (questID 63824)
 
 --	Necrolord
-	q(63807),	-- selecting Boil Master Yetch to accompany you on You and What Army
-	q(63809),	-- selecting Cutter Fin to accompany you on You and What Army
-	q(63806),	-- selecting Flytrap to accompany you on You and What Army
-	q(63808),	-- selecting Kearnen the Blade to accompany you on You and What Army
-	q(63805),	-- selecting Winslow Swain to accompany you on You and What Army
-	q(64150),	-- turning in 'Centurion's March' (63753)
+	q(63807),	-- selecting Boil Master Yetch to accompany you on You and What Army (spellID 350868)
+	q(63809),	-- selecting Cutter Fin to accompany you on You and What Army (spellID 350870)
+	q(63806),	-- selecting Flytrap to accompany you on You and What Army (spellID 350869)
+	q(63808),	-- selecting Kearnen the Blade to accompany you on You and What Army (spellID 350866)
+	q(63805),	-- selecting Winslow Swain to accompany you on You and What Army (spellID 350867)
+	q(64150),	-- turning in 'Centurion's March' (questID 63753)
+	q(64147),	-- triggered when turning in 'Pulling His Chain' (questID 63621)
+	q(64148),	-- triggered when completing 'Pulling His Chain' (questID 63621)
+	q(63544),	-- triggered when completing 'Necrolord Assault' (questID 63543) (spellID 349796)
 
 --	Night Fae
-	q(63821),	-- triggered when completing the assault (#63823)
+	q(63821),	-- triggered when completing 'Night Fae Assault' (questID 63823) (spellID 351107)
 
 --	Venthyr
 	q(63938),	-- triggered when returning Shadow to Reldorn on "They Grow Up So Quickly"
@@ -849,6 +854,8 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(63941),	-- triggered when returning Creep to Reldorn on "They Grow Up So Quickly"
 	q(63942),	-- triggered when returning Bubbles to Reldorn on "They Grow Up So Quickly"
 	q(63943),	-- triggered when returning Stinky to Reldorn on "They Grow Up So Quickly"
+	q(64253),	-- triggered when walking through a Maw Mirror on the last part of the 'Venthyr Assault' (questID 63822) (spellID 355359)
+	q(63819),	-- triggered when completing 'Venthyr Assault' (questID 63822) (spellID 351105)
 
 	-- Stolen Anima Vessels
 	q(64575),	-- After anima vessel, in Maw (rifted)

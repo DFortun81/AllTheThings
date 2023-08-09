@@ -27,5 +27,11 @@ root(ROOTS.Zones, m(PANDARIA, {
 				["g"] = MOP_ENCHANTING,
 			}),
 		}),
+		prof(HERBALISM, {
+			n(66980, {	-- Grower Miao <Herbalism Trainer>
+				["coord"] = { 27.8, 15.6, THE_JADE_FOREST },
+				["g"] = MOP_HERBALISM,
+			}),
+		}),
 	}))),
 }));

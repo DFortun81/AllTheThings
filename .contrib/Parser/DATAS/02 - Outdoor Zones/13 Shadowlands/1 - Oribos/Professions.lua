@@ -22,6 +22,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_L
 					["g"] = SL_ENCHANTING,
 				}),
 			}),
+			prof(HERBALISM, {
+				n(156686, {	-- Selector Au'mar <Herbalism Trainer>
+					["coord"] = { 39.8, 38.6, ORIBOS },
+					["g"] = SL_HERBALISM,
+				}),
+			}),
 			prof(INSCRIPTION, {
 				n(156685, {	-- Scribe Au'tehshi <Inscription Trainer>
 					["coord"] = { 36.8, 36.4, ORIBOS },

@@ -113,6 +113,8 @@ mount(363608),	-- Lightforged Ruinstrider
 mount(359408),	-- Divine Kiss of Ohn'ahra \\ [PH] White Wind Eagle \\ PH Wind Eagle
 10.1.5.50130
 mount(419002),	-- Whelpling \\ Temp
+10.1.5.50747
+mount(417245),	-- Ancestral Clefthoof
 10.1.7.50442
 mount(419567),	-- Ginormous Grrloc
 mount(420097),	-- Azure Worldchiller
@@ -238,6 +240,8 @@ mount(370770),	-- Tuskarr Shoreglider
 mount(359408),	-- Divine Kiss of Ohn'ahra \\ [PH] White Wind Eagle \\ PH Wind Eagle
 10.1.5.50130
 mount(419002),	-- Whelpling \\ Temp
+10.1.5.50747
+mount(417245),	-- Ancestral Clefthoof
 10.1.7.50442
 mount(419567),	-- Ginormous Grrloc
 mount(420097),	-- Azure Worldchiller

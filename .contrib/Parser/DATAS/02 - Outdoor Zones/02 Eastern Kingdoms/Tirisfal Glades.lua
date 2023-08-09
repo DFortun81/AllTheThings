@@ -2159,7 +2159,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(19329),	-- Pattern: Golden Mantle of the Dawn (RECIPE!)
 						applyclassicphase(PHASE_THREE, i(19203)),	-- Plans: Girdle of the Dawn (RECIPE!)
 						applyclassicphase(PHASE_THREE, i(19205)),	-- Plans: Gloves of the Dawn (RECIPE!)
-						i(13482),	-- Recipe: Transmute Air to Fire
+						i(13482),	-- Recipe: Transmute Air to Fire (RECIPE!)
 					},
 				}),
 				n(3522, {	-- Constance Brisboise <Apprentice Clothier>

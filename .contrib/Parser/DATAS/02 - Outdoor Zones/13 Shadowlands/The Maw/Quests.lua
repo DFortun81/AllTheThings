@@ -466,7 +466,8 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(64125),	-- triggered when killing Lumisende, wotj boss
 	q(64124),	-- triggered when killing Naelcrotix, WotJ boss - weirdly this triggered for me but not carb, first WotJ for both of us for the week
 	q(64123),	-- triggered when killing Zograthos, WotJ boss
-	q(62907),	-- triggered after collecting all stygia during "Rule 1: Have an Escape Plan" (triggers dialogue from The Jailer + the Eye of the Jailer counter...thing)
+	q(62907),	-- triggered after collecting all stygia during "Rule 1: Have an Escape Plan" (questID 60287) (spellID 345141)
+	
 	-- these seem shared... ? some sort of incremental counter?
 	q(64692),	-- triggered when killing Manifestation of Pain / Zul'gath the Flayer
 	q(64693),	-- triggered when killing Manifestation of Pain
@@ -479,7 +480,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- q(64121),	-- triggered when killing Sentinel Shakorzeth (somehow it + Kazj the Sentinel were both up at once, this was only after killing Shakorzeth, and then Kazj did not trigger an additional questID at all)
 	q(64151),	-- Completed at the same time as 63669 (Somebody Feed Kevin)
 	q(64315),	-- Ve'nari paragon chest
-	q(64627),	-- popped after turning in 'Setting the Ground Rules' (62882) on a fresh alt
+	q(64627),	-- popped after turning in 'Setting the Ground Rules' (questID 62882) on a fresh alt (spellID 358753)
 	q(64149),	-- Completing any quest with Winslow Swan during necrolord assault (might be achievement "this army" pop),
 	q(64983),	-- After completing The Maw intro, upon teleport and loading screen into Oribos (level 48 human rogue)
 });

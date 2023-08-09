@@ -2728,6 +2728,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 					}),
 				}),
+				prof(HERBALISM, {
+					n(5566, {	-- Tannysa <Herbalism Trainer>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 54.6, 83.6, STORMWIND_CITY },
+							-- #else
+							{ 44.8, 77.0, STORMWIND_CITY },
+							-- #endif
+						},
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = appendGroups(CLASSIC_HERBALISM,
+							-- #if AFTER CATA
+							CATA_HERBALISM
+							-- #else
+							{}
+							-- #endif
+						),
+					}),
+				}),
 				-- #if NOT ANYCLASSIC
 				prof(INSCRIPTION, {
 					n(30713, {	-- Catarina Stanford <Inscription Trainer>

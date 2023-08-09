@@ -2768,6 +2768,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["timeline"] = { "added 2.3.0.7561" },
 					}),
 				}),
+				prof(HERBALISM, {
+					n(3404, {	-- Jandi <Herbalism Trainer>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 34.6, 63.2, ORGRIMMAR },
+							-- #else
+							{ 55.6, 39.6, ORGRIMMAR },
+							-- #endif
+						},
+						["races"] = HORDE_ONLY,
+						["groups"] = appendGroups(CLASSIC_HERBALISM,
+							-- #if AFTER CATA
+							CATA_HERBALISM
+							-- #else
+							{}
+							-- #endif
+						),
+					}),
+				}),
 				-- #if NOT ANYCLASSIC
 				prof(INSCRIPTION, {
 					n(30706, {	-- Jo'mah <Inscription Trainer>
@@ -5429,7 +5448,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(13478, {	-- Recipe: Elixir of Superior Defense
+						i(13478, {	-- Recipe: Elixir of Superior Defense (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(5642, {	-- Recipe: Free Action Potion (RECIPE!)

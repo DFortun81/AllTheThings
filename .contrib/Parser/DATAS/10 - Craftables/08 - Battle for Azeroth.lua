@@ -554,6 +554,27 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 			i(168522),	-- Ub3r Module: Ub3r-Coil
 		}),
 	}),
+	prof(HERBALISM, {
+		spell(2366, {	-- Herb Gathering
+			i(152507),	-- Akunda's Bite
+			i(152510),	-- Anchor Weed
+			i(159877),	-- Dead Pollen-Covered Bee
+			i(160250),	-- Dead Pollen-Covered Bee
+			i(159956),	-- Disgustingly Damp Flower
+			i(160301),	-- Disgustingly Damp Flower
+			i(160035),	-- Enormous Anchor Pod
+			i(160064),	-- The Frigid Boon
+			i(160117),	-- Fully Charged Lightning Pod
+			i(152505),	-- Riverbud
+			i(152511),	-- Sea Stalk
+			i(152509),	-- Siren's Pollen
+			i(152506),	-- Star Moss
+			i(152508),	-- Winter's Kiss
+			i(168487, {["timeline"] = {ADDED_8_2_0}}),	-- Zin'anthid
+			i(168919, {["timeline"] = {ADDED_8_2_0}}),	-- Zin'anthid Tentacle
+			i(169596, {["timeline"] = {ADDED_8_2_0}}),	-- Zin'anthid Tentacle
+		}),
+	}),
 	prof(INSCRIPTION, {
 		filter(GLYPHS, {
 			i(162022),	-- Mark of the Dolphin (CI!)

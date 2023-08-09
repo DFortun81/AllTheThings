@@ -1912,7 +1912,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(65824),	-- Triggered when killing Anduin
 			q(65825),	-- Triggered when killing Anduin
 			q(65973),	-- Triggered when killing Anduin
-			q(65699),	-- Anduin Cinematic
+			q(65699),	-- Anduin Cinematic (spellID 368011)
 			q(65826),	-- Killing Lord of Dread
 			q(65827),	-- Killing Lord of Dread
 			q(65974),	-- Killing Lord of Dread
@@ -1924,7 +1924,8 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(65830),	-- Killing The Jailer
 			q(65831),	-- Killing The Jailer
 			q(65976),	-- Killing The Jailer
-			q(65698),	-- Jailer Cinematic
+			q(65697),	-- Jailer Intro Complete Quest (spellID 368009)
+			q(65698),	-- Jailer Cinematic (spellID 368010)
 		}),
 	}),
 });

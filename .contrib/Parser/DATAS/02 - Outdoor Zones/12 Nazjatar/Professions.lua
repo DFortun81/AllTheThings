@@ -26,7 +26,18 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			},
 			["g"] = NAZJATAR_ENCHANTING,
 		}),
-		prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRIPTION }, {
+		prof(HERBALISM, {
+			["crs"] = {
+				154257, -- Instructor Ulooaka <Profession Trainer> (A)
+				154408, -- Rolm <Profession Trainer> (H)
+			},
+			["coords"] = {
+				{ 38.0, 53.0, NAZJATAR },
+				{ 49.2, 61.8, NAZJATAR },
+			},
+			["g"] = NAZJATAR_HERBALISM,
+		}),
+		prof(INSCRIPTION, {
 			["crs"] = {
 				153811, -- Instructor Okanu <Profession Trainer> (A)
 				154393, -- Narv <Profession Trainer> (H)
@@ -52,7 +63,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 					r(294790),	-- Notorious Combatant's Etched Vessel [Rank 1]
 				}),
 			},
-		})),
+		}),
 		prof(LEATHERWORKING, {
 			["crs"] = {
 				153817, -- Instructor Alikana <Profession Trainer> (A)

@@ -295,7 +295,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						})),
 						i(208216, {	-- Reins of the Quantum Courser
 							["description"] = "Turns into one (1) unlearned Dungeon Mount, including the Infinite Timereaver, from before Dragonflight.",
-							["collectible"] = false,	-- Not an actual Mount itself
+							["filter"] = MISC,	-- Not an actual Mount itself
 							["sym"] = {{"select","itemID",
 								-- Dungeon
 								68823,	-- Armored Razzashi Raptor
@@ -314,25 +314,14 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 								35513,	-- Swift White Hawkstrider
 								68824,	-- Swift Zulian Panther
 								160829,	-- Underrot Crawg Harness
-							}},
-							-- Raid (Maybe in future)
-							--	78919, -- Experiment 12-B
-							--	71665, -- Flametalon of Alysrazor
-							--	77069, -- Life-Binder's Handmaiden
-							--	45693, -- Mimiron's Head
-							--	77067, -- Reins of the Blazing Drake
+							}},-- Raid (Maybe in future)--	78919, -- Experiment 12-B--	71665, -- Flametalon of Alysrazor--	77069, -- Life-Binder's Handmaiden--	45693, -- Mimiron's Head--	77067, -- Reins of the Blazing Drake
 						}),
 						------------------------------------------
 						-- DO NOT TOUCH MY ITEMS OR I KNIFE YOU --
 						----------------LG GOLD ------------------
 						------------------------------------------
-						-- Not Sure Symlink in good.... Also... Stop using small letters /lots of love Braghe
 						-- Please use 'ig()' to make sure Mythic ModID isn't attached to all of these sourced items
 
-						-- Following items are possible:
-						-- World Drop Items with any quality till SL. Includes removed BoE items
-						-- Dungeon Items from Classic till SL. Includes removed BoP items
-						-- Raid Items from Classic till SL
 						i(208064, {	-- Quantum Chestpiece
 							["description"] = "|cFFFF0000If you get an Item which is removed from the game or was never available before,\nplease let us know in the ATT Discord.|r\nThis Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r",
 							["groups"] = {
@@ -343,7 +332,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 								-- Mail
 								ig(114389),	-- Element-Binder Helm		(Never added)
 								ig(93086),	-- Swashbuckling Vest		(Never added)
-								
+
 								ig(134732),	-- Frigidlink Armor			(Removed)
 								ig(120952),	-- Slarkhide				(Removed)
 								-- Plate
@@ -362,10 +351,11 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							["description"] = "|cFFFF0000If you get an Item which is removed from the game or was never available before,\nplease let us know in the ATT Discord.|r\nThis Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r",
 							["groups"] = {
 								-- Cloth
+								ig(114387),	-- Hood of Hooded Nighmates			(Never added)
 								-- Leather
 								-- Mail
 								ig(105809),	-- Crest of Burning Deeds			(Ordos)
-								
+
 								ig(92842),	-- Danio-Scale Helm					(Never added)
 								ig(114265),	-- Leafscale Helm					(Never added)
 								ig(121508),	-- Stormborn Crown					(Never added)
@@ -392,7 +382,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 								-- Mail
 								ig(1445),	-- Blackrock Pauldrons				(Removed)
 								ig(3231),	-- Cutthroat Pauldrons				(Removed)
-								
+
 								ig(18320),	-- Demonheart Spaulders				(Never added)
 								-- Plate
 								ig(103785),	-- Tusks of Mannoroth Heroic		(Removed)
@@ -452,6 +442,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							i(208121, {	-- Quantum Knuckles
 							}),
 							i(208110, {	-- Quantum Mace
+								ig(2259),	-- Frostmane Club					(Removed)
+								ig(3223),	-- Frostmane Scepter				(Removed)
 							}),
 							i(208116, {	-- Quantum Polearm
 							}),
@@ -461,7 +453,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							i(208115, {	-- Quantum Staff
 								ig(115298),	-- Spectral Spire 					(Never added)
 
+								ig(6679),	-- Armor Piercer					(Removed)
 								ig(2280),	-- Kam's Walking Stick				(Removed)
+								ig(1473),	-- Riverside Staff					(Removed)
 							}),
 							i(208109, {	-- Quantum Sword
 								i(8223),	-- Blade of the Basilisk 			(Removed)

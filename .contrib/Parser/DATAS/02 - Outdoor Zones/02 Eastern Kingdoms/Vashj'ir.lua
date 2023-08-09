@@ -92,7 +92,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 47.3, 49.7, 204 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
-								i(59600),	-- Phosphora Fedora
+								i(56572),	-- Phosphora Fedora
 							},
 						}),
 						q(25977, {	-- A Standard Day for Azrajar (A)

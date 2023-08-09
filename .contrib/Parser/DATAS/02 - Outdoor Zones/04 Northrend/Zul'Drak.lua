@@ -971,7 +971,7 @@ root(ROOTS.Zones, {
 					}),
 					q(12587, {	-- Troll Patrol
 						-- almost certainly the removed version, will check in Wrath Classic
-						-- confirmed available 2023-7-30 [70/Human/Paladin]
+						-- confirmed available 2023-7-30 [70/Human/Paladin/Revered]
 						["qg"] = 28039,	-- Commander Kunz
 						["sourceQuest"] = 12596,	-- Pa'Troll
 						["coord"] = { 40.2, 66.6, ZULDRAK },

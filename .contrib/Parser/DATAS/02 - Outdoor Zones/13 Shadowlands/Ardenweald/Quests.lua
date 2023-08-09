@@ -945,10 +945,9 @@ root(ROOTS.HiddenQuestTriggers, {
 	m(SHADOWLANDS, {
 		m(ARDENWEALD, {
 			n(QUESTS, {
-				q(62936),	-- some quest/story RP w/ Bwonsamdi about Rezan
-				q(63427),	-- Intro Skip
+				q(62936),	-- Saw Bwonsamdi (spellID 345430)
 				q(63007),	-- Intro Skip
-				q(64312),	-- listening to the story time with tyrande after 9.1 campaign finish (in ardenweald)
+				q(64312),	-- listening to the story time with tyrande after 9.1 campaign finish (in Ardenweald) (spellID 356055)
 			}),
 		}),
 	}),

@@ -16,6 +16,10 @@ r(161211),	-- Garrison Enchanting
 r(258965),	-- (TEST) Legion Blacksmithing
 r(264160),	-- (TEST) Legion Engineering
 r(264191),	-- (TEST) Pandaria Engineering
+8.0.1.26788
+r(280732),	-- Magical Intrusion Dampener
+r(280733),	-- Magical Intrusion Dampener
+r(280734),	-- Magical Intrusion Dampener
 
 
 Nothing is Missing in OtherItemDB.lua! Good Work!

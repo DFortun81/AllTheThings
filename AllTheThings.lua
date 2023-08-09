@@ -190,7 +190,7 @@ app.DoModuleEvent = function(eventName)
 	-- See if any Modules have the event function defined, and call them now
 	for _,module in pairs(app.Modules) do
 		if module[eventName] then
-			app.FunctionRunner.Run(module[eventName]);
+			app.FunctionRunner.Run(module[eventName], ATTAccountWideData);
 		end
 	end
 end
@@ -1164,6 +1164,8 @@ app.MergeSkipFields = {
 	["modItemID"] = true,
 	["rawlink"] = true,
 	["sourceIgnored"] = true,
+	["costNested"] = true,
+	["hasUpgradeNested"] = true,
 	-- 1 -> only when cloning
 	["e"] = 1,
 	["u"] = 1,
@@ -1600,10 +1602,11 @@ local function GetUnobtainableTexture(group)
 	end
 
 	-- Determine the texture color, default is green for events.
+	-- TODO: Use 4 for inactive events, use 5 for active events
 	local filter, u = 4, group.u;
 	if u then
 		if (group.itemID or group.spellID) and u > 1 and u < 1000 and not app.IsBoP(group) then
-			filter = 3;
+			filter = 2;
 		else
 			local record = L["UNOBTAINABLE_ITEM_REASONS"][u];
 			if record then
@@ -1687,6 +1690,7 @@ local function GetRelativeValue(group, field)
 		return group[field] or GetRelativeValue(group.sourceParent or group.parent, field);
 	end
 end
+app.GetRelativeValue = GetRelativeValue;
 local function GetDeepestRelativeValue(group, field)
 	if group then
 		return GetDeepestRelativeValue(group.sourceParent or group.parent, field) or group[field];
@@ -2119,7 +2123,7 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange, forceShow)
 		-- meets current character filters
 		local filter = app.CurrentCharacterFilters(questRef) and true;
 		-- is marked as in the game
-		local inGame = app.ItemIsInGame(questRef) and true;
+		local inGame = app.Modules.Filter.Filters.InGame(questRef) and true;
 		-- repeatable or not previously completed or the accepted quest was immediately completed prior to the check, or character in party sync
 		local incomplete = (questRef.repeatable or not completed or app.LastQuestTurnedIn == completed or app.IsInPartySync) and true;
 		-- not missing pre-requisites
@@ -5134,23 +5138,28 @@ app.FillGroups = function(group)
 end
 end	-- Auto-Expansion Logic
 
--- build a 'Cost' group which matches the "cost" tag of this group
+-- build a 'Cost' group which matches the "cost"/"providers (items)" tag of this group
 app.BuildCost = function(group)
+	local cost = group.cost;
+	cost = cost and type(cost) == "table" and cost;
+	local providers = group.providers;
+	if not cost and not providers then return; end
+
 	-- Pop out the cost objects into their own sub-groups for accessibility
+	local costGroup = {
+		["text"] = L["COST"],
+		["description"] = L["COST_DESC"],
+		["icon"] = "Interface\\Icons\\INV_Misc_Coin_02",
+		["sourceIgnored"] = true,
+		["OnUpdate"] = app.AlwaysShowUpdate,
+		["skipFilling"] = true,
+		["g"] = {},
+	};
 	-- Gold cost currently ignored
-	-- print("BuildCost",group.itemID)
-	if group.cost and type(group.cost) == "table" then
-		local costGroup = {
-				["text"] = L["COST"],
-				["description"] = L["COST_DESC"],
-				["icon"] = "Interface\\Icons\\INV_Misc_Coin_02",
-				["sourceIgnored"] = true,
-				["OnUpdate"] = app.AlwaysShowUpdate,
-				["skipFilling"] = true,
-				["g"] = {},
-			};
+	-- print("BuildCost",group.hash)
+	if cost then
 		local costItem;
-		for i,c in ipairs(group.cost) do
+		for _,c in ipairs(cost) do
 			-- print("Cost",c[1],c[2],c[3]);
 			costItem = nil;
 			if c[1] == "c" then
@@ -5164,9 +5173,24 @@ app.BuildCost = function(group)
 				NestObject(costGroup, costItem);
 			end
 		end
-		NestObject(group, costGroup, nil, 1);
 	end
+	if providers then
+		local costItem;
+		for _,c in ipairs(providers) do
+			-- print("Cost",c[1],c[2],c[3]);
+			costItem = nil;
+			if c[1] == "i" then
+				costItem = app.SearchForObject("itemID", c[2], "field") or app.CreateItem(c[2]);
+				costItem = app.CreateCostItem(costItem, 1);
+			end
+			if costItem then
+				NestObject(costGroup, costItem);
+			end
+		end
+	end
+	NestObject(group, costGroup, nil, 1);
 end
+
 (function()
 -- Keys for groups which are in-game 'Things'
 app.ThingKeys = {
@@ -6382,6 +6406,7 @@ local function SearchForSourceIDQuickly(sourceID)
 		return cache and cache[1];
 	end
 end
+app.SearchForSourceIDQuickly = SearchForSourceIDQuickly;
 local function SearchForLink(link)
 	if string.match(link, "item") then
 		-- Parse the link and get the itemID and bonus ids.
@@ -6980,6 +7005,118 @@ end
 local function RefreshSaves()
 	AfterCombatCallback(RefreshSavesCallback);
 end
+-- Given a known SourceID, will mark all Shared Visual SourceID's which meet the filter criteria of the known SourceID as 'collected'
+local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacterOnly)
+	-- Find this source in ATT
+	local knownItem = SearchForSourceIDQuickly(knownSourceID);
+	if knownItem then
+		local knownSource = C_TransmogCollection_GetSourceInfo(knownSourceID);
+		local acctSources = ATTAccountWideData.Sources;
+		local checkItem, checkSource, valid;
+		local knownRaces, knownClasses, knownFaction, knownFilter = knownItem.races, knownItem.c, knownItem.r, knownItem.f;
+		local checkFilter;
+		-- this source unlocks a visual that the current character may tmog, so all shared visuals should be considered 'collected' regardless of restriction
+		local currentCharacterUsable = currentCharacterOnly and not knownItem.nmc and not knownItem.nmr;
+		-- For each shared Visual SourceID
+		-- if knownSource.visualID == 322 then app.DEBUG_PRINT = true; app.PrintTable(knownSource); end
+		-- account cannot collect sourceID? not available for transmog?
+		-- local _, canCollect = C_TransmogCollection.AccountCanCollectSource(knownSourceID); -- pointless, always false if sourceID is known
+		-- local unknown1 = select(8, C_TransmogCollection.GetAppearanceSourceInfo(knownSourceID)); -- pointless, returns nil for many valid transmogs
+		-- Trust that Blizzard returns SourceID's which can actually be used as Transmog for the VisualID
+		local visualIDs = C_TransmogCollection_GetAllAppearanceSources(knownSource.visualID);
+		local canMog;
+		for _,sourceID in ipairs(visualIDs) do
+			if sourceID == knownSourceID then
+				canMog = true;
+				break;
+			end
+		end
+		if not canMog then return; end
+		local factionRaces = app.Modules.FactionData.FACTION_RACES;
+		for _,sourceID in ipairs(visualIDs) do
+			-- if app.DEBUG_PRINT then print("visualID",knownSource.visualID,"s",sourceID,"known:",acctSources[sourceID)] end
+			-- If it is not currently marked collected on the account
+			if not acctSources[sourceID] then
+				-- for current character only, all we care is that the knownItem is not exclusive to another
+				-- race/class to consider all shared appearances as 'collected' for the current character
+				if currentCharacterUsable then
+					-- if app.DEBUG_PRINT then print("current character usable") end
+					acctSources[sourceID] = 2;
+				else
+					-- Find the check Source in ATT
+					checkItem = SearchForSourceIDQuickly(sourceID);
+					if checkItem then
+						-- filter matches or one item is Cosmetic
+						checkFilter = checkItem.f;
+						if checkFilter == knownFilter or checkFilter == 2 or knownFilter == 2 then
+							valid = true;
+							-- verify all possible restrictions that the known source may have against restrictions on the source in question
+							-- if known source has no equivalent restrictions, then restrictions on the source are irrelevant
+							-- Races
+							if knownRaces then
+								if checkItem.races then
+									-- the known source has a race restriction that is not shared by the source in question
+									if not containsAny(checkItem.races, knownRaces) then valid = nil; end
+								else
+									valid = nil;
+								end
+							end
+							-- Classes
+							if valid and knownClasses then
+								if checkItem.c then
+									-- the known source has a class restriction that is not shared by the source in question
+									if not containsAny(checkItem.c, knownClasses) then valid = nil; end
+								else
+									valid = nil;
+								end
+							end
+							-- Faction
+							if valid and knownFaction then
+								if checkItem.r then
+									-- the known source has a faction restriction that is not shared by the source or source races in question
+									if knownFaction ~= checkItem.r or (checkItem.races and not containsAny(factionRaces[knownFaction], checkItem.races)) then valid = nil; end
+								else
+									valid = nil;
+								end
+							end
+
+							-- found a known item which meets all the criteria to grant credit for the source in question
+							if valid then
+								checkSource = C_TransmogCollection_GetSourceInfo(sourceID);
+								-- both sources are the same category (Equip-Type)
+								if knownSource.categoryID == checkSource.categoryID
+									-- and same Inventory Type
+									and (knownSource.invType == checkSource.invType
+										or checkSource.categoryID == 4 --[[CHEST: Robe vs Armor]]
+										or app.SlotByInventoryType[knownSource.invType] == app.SlotByInventoryType[checkSource.invType])
+								then
+									-- if app.DEBUG_PRINT then print("Unique Collected s:",sourceID); end
+									acctSources[sourceID] = 2;
+								-- else print("sources share visual and filters but different equips",item.s,sourceID)
+								end
+							end
+						end
+					else
+						-- OH NOES! It doesn't exist!
+						checkSource = C_TransmogCollection_GetSourceInfo(sourceID);
+						-- both sources are the same category (Equip-Type)
+						if checkSource.categoryID == knownSource.categoryID
+							-- and same Inventory Type
+							and (checkSource.invType == knownSource.invType
+								or knownSource.categoryID == 4 --[[CHEST: Robe vs Armor]]
+								or app.SlotByInventoryType[checkSource.invType] == app.SlotByInventoryType[knownSource.invType])
+						then
+							-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESNT HAVE!!!!");
+							acctSources[sourceID] = 2;
+						-- else print(knownSource.sourceID, sourceInfo.sourceID, "share appearances, but one is ", sourceInfo.invType, "and the other is", knownSource.invType, sourceInfo.categoryID);
+						end
+					end
+				end
+			end
+		end
+		-- app.DEBUG_PRINT = nil;
+	end
+end
 local function RefreshAppearanceSources()
 	-- app.PrintDebug("RefreshAppearanceSources")
 	app.DoRefreshAppearanceSources = nil;
@@ -7010,12 +7147,12 @@ local function RefreshAppearanceSources()
 	if not app.Settings:Get("Completionist") then
 		-- app.PrintDebug("Unique Refresh")
 		local currentCharacterOnly = app.Settings:Get("MainOnly");
-		local MarkUniqueCollected, ItemSourceFilter = app.MarkUniqueCollectedSourcesBySource, app.ItemSourceFilter;
+		local ItemSourceFilter = app.ItemSourceFilter;
 		for s=1,app.MaxSourceID do
 			-- for each known source
 			if collectedSources[s] == 1 then
 				-- collect shared visual sources
-				MarkUniqueCollected(s, currentCharacterOnly);
+				MarkUniqueCollectedSourcesBySource(s, currentCharacterOnly);
 			elseif brokenUniqueSources then
 				-- special reverse-check-logic for unknown SourceID's whose VisualID does not return the SourceID from C_TransmogCollection_GetAllAppearanceSources(VisualID)
 				-- and haven't already been marked as unique-collected
@@ -7041,70 +7178,10 @@ end -- Refresh Functions
 -- Lib Helpers
 (function()
 -- Represents non-nil default values which are valid for all Objects
-local ObjectDefaults = {
-	["progress"] = 0,
-	["total"] = 0,
-	["costProgress"] = 0,
-	["costTotal"] = 0,
-};
 local getmetatable =
 	  getmetatable;
-local ObjectFunctions = {
-	-- cloned groups will not directly have a parent, but they will instead have a sourceParent, so fill in with that instead
-	["parent"] = function(t)
-		return t.sourceParent;
-	end,
-	-- way easier to just be able to dynamically reference a hash whenever instead of needing to ensure it is created first
-	["hash"] = function(t)
-		return app.CreateHash(t);
-	end,
-	-- modItemID doesn't exist for Items which NEVER use a modID or bonusID (illusions, music rolls, mounts, etc.)
-	["modItemID"] = function(t)
-		return t.itemID;
-	end,
-	-- default 'text' should be a valid link or the colorized 'name'
-	["text"] = function(t)
-		return t.link or app.TryColorizeName(t, t.name);
-	end,
-	-- whether something is marked as repeatable in some way
-	["repeatable"] = function(t)
-		return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly or t.isWorldQuest;
-	end,
-	-- whether something is considered 'missing' by seeing if it can search for itself
-	["_missing"] = function(t)
-		local key = t.key;
-		-- only process this logic for real 'Things' in the game
-		if not app.ThingKeys[key] then return; end
-		-- quest 76250
-		-- item with modID, so key is itemID, t[key] is 13544
-		-- SFO uses 'modItemID' to verify 'itemID' search result object accuracy, thus '13544' never matches the expected '13544.01'
-		-- somehow we need to know to search by 'itemID' but using the 'modItemID' here
-		local val = key == "itemID" and t.modItemID or t[key];
-		local o = app.SearchForObject(key, val, "field");
-		local missing = true;
-		while o do
-			missing = rawget(o, "_missing");
-			o = not missing and (o.sourceParent or o.parent) or nil;
-		end
-		t._missing = missing;
-		return missing;
-	end,
-	["nmc"] = function(t)
-		local c = t.c;
-		local nmc = c and not containsValue(c, app.ClassIndex) or false;
-		-- app.PrintDebug("base.nmc",t.__type,nmc)
-		t.nmc = nmc;
-		return nmc;
-	end,
-	["nmr"] = function(t)
-		local races = t.races;
-		local r = t.r;
-		local nmr = (r and r ~= app.FactionID) or (races and not containsValue(races, app.RaceIndex)) or false;
-		-- app.PrintDebug("base.nmr",t.__type,nmr)
-		t.nmr = nmr;
-		return nmr;
-	end,
-};
+local ObjectDefaults = app.ClassDefaultValues_TEMP;
+local ObjectFunctions = app.ClassDefaultFields_TEMP;
 local objFunc;
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
 app.BaseObjectFields = not app.__perf and function(fields, type)
@@ -7258,6 +7335,8 @@ local HeaderCloneFields = {
 	["trackable"] = app.ReturnNil,
 	["collectibleAsCost"] = app.ReturnNil,
 	["costCollectibles"] = app.ReturnNil,
+	["hasUpgradeNested"] = app.ReturnNil,
+	["costNested"] = app.ReturnNil,
 	["g"] = app.ReturnNil,
 	-- Filter-affecting fields
 	["customCollect"] = app.ReturnNil,
@@ -7286,6 +7365,8 @@ local FilterHeaderCloneFields = {
 	["trackable"] = app.ReturnNil,
 	["collectibleAsCost"] = app.ReturnNil,
 	["costCollectibles"] = app.ReturnNil,
+	["hasUpgradeNested"] = app.ReturnNil,
+	["costNested"] = app.ReturnNil,
 	["g"] = app.ReturnNil,
 	-- ["back"] = function(t)
 	-- 	return 0.3;	-- visibility of which rows are cloned
@@ -7637,7 +7718,8 @@ local function MapSourceQuestsRecursive(parentQuestID, questID, currentDepth, de
 		questRef = CreateObject(questRef, true);
 
 		-- force collectible for normally un-collectible but trackable things to make sure it shows in list if the quest needs to be completed to progess
-		if not questRef.collectible and questRef.trackable then
+		-- unless a quest is specifically set to be non-collectible directly
+		if not questRef.collectible and questRef.trackable and rawget(questRef, "collectible") ~= false then
 			questRef.collectible = true;
 		end
 
@@ -9606,12 +9688,12 @@ local fields = {
 		return cache.GetCachedField(t, "costCollectibles", default_costCollectibles);
 	end,
 	["collectibleAsCost"] = app.CollectibleAsCost,
-	["trackable"] = function(t)
-		return #t.costCollectibles > 0;
-	end,
-	["saved"] = function(t)
-		return not t.filledCost and not t.collectibleAsCost;
-	end,
+	-- ["trackable"] = function(t)
+	-- 	return #t.costCollectibles > 0;
+	-- end,
+	-- ["saved"] = function(t)
+	-- 	return not t.filledCost and not t.collectibleAsCost;
+	-- end,
 };
 local BaseCurrencyClass = app.BaseObjectFields(fields, "BaseCurrencyClass");
 
@@ -10278,29 +10360,6 @@ app.OnUpdateReputationRequired = function(t)
 end
 end)();
 
--- Filter Lib
-(function()
-local fields = {
-	["key"] = function(t)
-		return "filterID";
-	end,
-	-- pseudo-headerID so that default Sorting considers Filter groups equivalent to Headers
-	["headerID"] = function()
-		return true;
-	end,
-	["name"] = function(t)
-		return L["FILTER_ID_TYPES"][t.filterID];
-	end,
-	["icon"] = function(t)
-		return L["FILTER_ID_ICONS"][t.filterID];
-	end,
-};
-app.BaseFilter = app.BaseObjectFields(fields, "BaseFilter");
-app.CreateFilter = function(id, t)
-	return setmetatable(constructor(id, t, "filterID"), app.BaseFilter);
-end
-end)();
-
 -- Flight Path Lib
 do
 local FlightPathMapIDs = {
@@ -10760,71 +10819,6 @@ local fields = {
 app.BaseGearSetSubHeader = app.BaseObjectFields(fields, "BaseGearSetSubHeader");
 app.CreateGearSetSubHeader = function(id, t)
 	return setmetatable(constructor(id, t, "setID"), app.BaseGearSetSubHeader);
-end
-end)();
-
--- Illusion Lib
--- TODO: add caching for consistency/move to sub-item lib?
-(function()
-local GetIllusionLink = C_TransmogCollection.GetIllusionSourceInfo;
-local GetIllusionLink1002 = C_TransmogCollection.GetIllusionStrings;
-local fields = {
-	["key"] = function(t)
-		return "illusionID";
-	end,
-	["filterID"] = function(t)
-		return 103;
-	end,
-	["text"] = function(t)
-		if t.itemID then
-			local name, link = GetItemInfo(t.itemID);
-			if link then
-				t.name = name;
-				name = "|cffff80ff[" .. name .. "]|r";
-				t.link = link;
-				t.text = name;
-				return name;
-			end
-		end
-		return t.silentLink;
-	end,
-	["name"] = function(t)
-		return t.text;
-	end,
-	["icon"] = function(t)
-		return "Interface/ICONS/INV_Enchant_Disenchant";
-	end,
-	["link"] = function(t)
-		if t.itemID then
-			local name, link = GetItemInfo(t.itemID);
-			if link then
-				t.name = name;
-				name = "|cffff80ff[" .. name .. "]|r";
-				t.link = link;
-				t.text = name;
-				return link;
-			end
-		end
-	end,
-	["collectible"] = function(t)
-		return app.CollectibleIllusions;
-	end,
-	["collected"] = function(t)
-		return ATTAccountWideData.Illusions[t.illusionID];
-	end,
-	["silentLink"] = function(t)
-		local link;
-		if GetIllusionLink1002 then
-			link = select(2, GetIllusionLink1002(t.illusionID));
-		else
-			link = select(3, GetIllusionLink(t.illusionID));
-		end
-		return link;
-	end,
-};
-app.BaseIllusion = app.BaseObjectFields(fields, "BaseIllusion");
-app.CreateIllusion = function(id, t)
-	return setmetatable(constructor(id, t, "illusionID"), app.BaseIllusion);
 end
 end)();
 
@@ -12656,7 +12650,8 @@ local function GetAutomaticHeaderData(id, type)
 		local obj = app.SearchForObject(typeID, id, "key") or CreateObject({[typeID]=id});
 		if obj then
 			-- app.PrintDebug("Automatic Header",obj.name or obj.link)
-			return (obj.name or obj.link), obj.icon;
+			local name = obj.name or obj.link;
+			return not IsRetrieving(name) and name or nil, obj.icon;
 		else
 			app.print("Failed finding object/function for automatic header",type,id);
 		end
@@ -13057,47 +13052,6 @@ local fields = {
 app.BaseProfession = app.BaseObjectFields(fields, "BaseProfession");
 app.CreateProfession = function(id, t)
 	return setmetatable(constructor(id, t, "professionID"), app.BaseProfession);
-end
-end)();
-
--- PVP Ranks
-(function()
-local fields = {
-	["key"] = function(t)
-		return "pvpRankID";
-	end,
-	["name"] = function(t)
-		return _G["PVP_RANK_" .. (t.pvpRankID + 4) .. "_" .. (t.inverseR or 0)];
-	end,
-	["icon"] = function(t)
-		return format("%s%02d","Interface\\PvPRankBadges\\PvPRank", t.pvpRankID);
-	end,
-	["title"] = function(t)
-		return RANK .. " " .. t.pvpRankID .. DESCRIPTION_SEPARATOR ..  _G["PVP_RANK_" .. (t.pvpRankID + 4) .. "_" .. ((t.inverseR == 1 and 0 or 1))] .. " (" .. (t.r == Enum.FlightPathFaction.Alliance and FACTION_HORDE or FACTION_ALLIANCE) .. ")";
-	end,
-	["description"] = function(t)
-		return "There are a total of 14 ranks for both factions. Each rank requires a minimum amount of Rating Points to be calculated every week, then calculated in comparison to other players on your server.\n\nEach rank grants access to different rewards, from PvP consumables to Epic Mounts that do not require Epic Riding Skill and Epic pieces of gear at the highest ranks. Each rank is also applied to your character as a Title.";
-	end,
-	["r"] = function(t)
-		return t.parent.r or app.FactionID;
-	end,
-	["inverseR"] = function(t)
-		return t.r == Enum.FlightPathFaction.Alliance and 1 or 0;
-	end,
-	["lifetimeRank"] = function(t)
-		return select(3, GetPVPLifetimeStats()) or 0;
-	end,
-	["collectible"] = app.ReturnTrue,
-	["collected"] = function(t)
-		return t.lifetimeRank >= (t.pvpRankID + 4);
-	end,
-	["OnTooltip"] = function(t)
-		GameTooltip:AddDoubleLine("Your lifetime highest rank: ", _G["PVP_RANK_" .. (t.lifetimeRank) .. "_" .. (app.FactionID == 2 and 1 or 0)], 1, 1, 1, 1, 1, 1);
-	end
-};
-app.BasePVPRank = app.BaseObjectFields(fields, "BasePVPRank");
-app.CreatePVPRank = function(id, t)
-	return setmetatable(constructor(id, t, "pvpRankID"), app.BasePVPRank);
 end
 end)();
 
@@ -13593,467 +13547,6 @@ end)();
 
 -- Filtering
 do
--- Meaning "Don't display." - Returns false
-local Filter = app.ReturnFalse;
--- Meaning "Display as expected" - Returns true
-local NoFilter = app.ReturnTrue;
--- Whether the group has a binding designation, which means it basically cannot be moved to another Character
-local function IsBoP(group)
-	-- 1 = BoP, 4 = Quest Item... probably don't need that?
-	return group.b == 1;-- or group.b == 4;
-end
-local function FilterGroupsByLevel(group)
-	-- after 9.0, transition to a req lvl range, either min, or min + max
-	local lvl = group.lvl;
-	if lvl then
-		local minlvl;
-		local maxlvl;
-		if type(lvl) == "table" then
-			minlvl = lvl[1];
-			maxlvl = lvl[2];
-		else
-			minlvl = lvl;
-		end
-
-		if maxlvl then
-			-- min and max provided
-			return app.Level >= minlvl and app.Level <= maxlvl;
-		elseif minlvl then
-			-- only min provided
-			return app.Level >= minlvl;
-		end
-	end
-	-- no level requirement on the group, have to include it
-	return true;
-end
-local function FilterGroupsByCompletion(group)
-	return group.total and (group.progress or 0) < group.total;
-end
--- returns whether this is a Character-transferable Thing/Item
-local function FilterItemBind(item)
-	return item.itemID and not IsBoP(item);
-end
--- Represents filters which should be applied during Updates to groups
-local function FilterItemClass(item)
-	-- check Account trait filters
-	if app.UnobtainableFilter(item)
-		and app.RequireEventFilter(item)
-		and app.PvPFilter(item)
-		and app.PetBattleFilter(item)
-		and app.RequireFactionFilter(item) then
-		-- BoE can skip Character trait filters
-		if app.ItemBindFilter(item) then return true; end
-		-- check Character trait filters
-		return app.ItemTypeFilter(item)
-			and app.RequireBindingFilter(item)
-			and app.RequiredSkillFilter(item)
-			and app.ClassRequirementFilter(item)
-			and app.RaceRequirementFilter(item)
-			and app.RequireCustomCollectFilter(item);
-	end
-end
--- Represents filters which should be applied during Updates to groups, but skips the BoE filter
-local function FilterItemClass_IgnoreBoEFilter(item)
-	-- check Account trait filters
-	if app.UnobtainableFilter(item)
-		and app.RequireEventFilter(item)
-		and app.PvPFilter(item)
-		and app.PetBattleFilter(item)
-		and app.RequireFactionFilter(item) then
-		-- check Character trait filters
-		return app.ItemTypeFilter(item)
-			and app.RequireBindingFilter(item)
-			and app.RequiredSkillFilter(item)
-			and app.ClassRequirementFilter(item)
-			and app.RaceRequirementFilter(item)
-			and app.RequireCustomCollectFilter(item);
-	end
-end
-local function FilterItemClass_RequireClasses(item)
-	return not item.nmc;
-end
-local function FilterItemClass_RequireItemFilter(item)
-	local f = item.f;
-	if f then
-		-- don't filter Heirlooms by their Type if they are collectible as Heirlooms
-		if item.__type == "BaseHeirloom" and app.CollectibleHeirlooms then
-			return true;
-		end
-		return app.Settings:GetFilter(f);	-- Filter applied via Settings (character-equippable or manually set)
-	else
-		return true;
-	end
-end
-local function FilterItemClass_RequireRaces(item)
-	return not item.nmr;
-end
-local function FilterItemClass_RequireRacesCurrentFaction(item)
-	if item.nmr then
-		local r = item.r;
-		if r then
-			if r == app.FactionID then
-				return true;
-			else
-				return false;
-			end
-		end
-		local races = item.races;
-		if races then
-			if app.FactionID == Enum.FlightPathFaction.Horde then
-				return containsAny(races, HORDE_ONLY);
-			else
-				return containsAny(races, ALLIANCE_ONLY);
-			end
-		else
-			return false;
-		end
-	else
-		return true;
-	end
-end
-local function FilterItemClass_UnobtainableItem(item)
-	return app.Settings:GetUnobtainable(item.u);
-end
-local function ItemIsInGame(item)
-	return not item.u or item.u > 2;
-end
-local function FilterItemClass_RequireBinding(item)
-	return not item.itemID or IsBoP(item);
-end
-local function FilterItemClass_PvP(item)
-	if item.pvp then
-		return false;
-	else
-		return true;
-	end
-end
-local function FilterItemClass_PetBattles(item)
-	if item.pb then
-		return false;
-	else
-		return true;
-	end
-end
-local function FilterItemClass_RequiredSkill(item)
-	local requireSkill = item.requireSkill;
-	if requireSkill and (not item.professionID or not GetRelativeValue(item, "DontEnforceSkillRequirements") or IsBoP(item)) then
-		return app.CurrentCharacter.Professions[requireSkill];
-	else
-		return true;
-	end
-end
-local function FilterItemClass_RequireFaction(item)
-	local minReputation = item.minReputation;
-	if minReputation and app.IsFactionExclusive(minReputation[1]) then
-		if minReputation[2] > (select(6, GetFactionInfoByID(minReputation[1])) or 0) then
-			--print("Filtering Out", item.key, item[item.key], item.text, item.minReputation[1], app.CreateFaction(item.minReputation[1]).text);
-			return false;
-		else
-			return true;
-		end
-	else
-		return true;
-	end
-end
-local function FilterItemClass_CustomCollect(item)
-	local customCollect = item.customCollect;
-	if customCollect then
-		local customCollects = app.ActiveCustomCollects;
-		for _,c in ipairs(customCollect) do
-			if not customCollects[c] then
-				return false;
-			end
-		end
-	end
-	return true;
-end
--- Represents current Character filtering for the Item (regardless of user-enabled filters)
-local function CurrentCharacterFilters(item)
-	return FilterItemClass_RequiredSkill(item)
-		and FilterItemClass_RequireClasses(item)
-		and FilterItemClass_RequireRaces(item)
-		and FilterItemClass_CustomCollect(item)
-		and FilterItemClass_RequireItemFilter(item)
-		and ItemIsInGame(item);
-end
-local function FilterItemSource(sourceInfo)
-	return sourceInfo.isCollected;
-end
-local function FilterItemSourceUnique(sourceInfo, allSources)
-	if sourceInfo.isCollected then
-		-- NOTE: This makes it so that the loop isn't necessary.
-		return true;
-	else
-		-- If at least one of the sources of this visual ID was collected, that means that we've collected the provided source
-		local item = SearchForSourceIDQuickly(sourceInfo.sourceID);
-		if item then
-			local knownItem, knownSource, valid;
-			local acctSources = ATTAccountWideData.Sources;
-			local factionRaces = app.Modules.FactionData.FACTION_RACES;
-			for _,sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-				-- only compare against other Sources of the VisualID which the Account knows
-				if sourceID ~= sourceInfo.sourceID and acctSources[sourceID] == 1 then
-					knownItem = SearchForSourceIDQuickly(sourceID);
-					if knownItem then
-						-- filter matches or one item is Cosmetic
-						if item.f == knownItem.f or item.f == 2 or knownItem.f == 2 then
-							valid = true;
-							-- verify all possible restrictions that the known source may have against restrictions on the source in question
-							-- if known source has no equivalent restrictions, then restrictions on the source are irrelevant
-							-- Races
-							if knownItem.races then
-								if item.races then
-									-- the known source has a race restriction that is not shared by the source in question
-									if not containsAny(item.races, knownItem.races) then valid = nil; end
-								else
-									valid = nil;
-								end
-							end
-							-- Classes
-							if valid and knownItem.c then
-								if item.c then
-									-- the known source has a class restriction that is not shared by the source in question
-									if not containsAny(item.c, knownItem.c) then valid = nil; end
-								else
-									valid = nil;
-								end
-							end
-							-- Faction
-							if valid and knownItem.r then
-								if item.r then
-									-- the known source has a faction restriction that is not shared by the source or source races in question
-									if knownItem.r ~= item.r or (item.races and not containsAny(factionRaces[knownItem.r], item.races)) then valid = nil; end
-								else
-									valid = nil;
-								end
-							end
-
-							-- found a known item which meets all the criteria to grant credit for the source in question
-							if valid then
-								knownSource = C_TransmogCollection_GetSourceInfo(sourceID);
-								-- both sources are the same category (Equip-Type)
-								if knownSource.categoryID == sourceInfo.categoryID
-									-- and same Inventory Type
-									and (knownSource.invType == sourceInfo.invType
-										or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]]
-										or app.SlotByInventoryType[knownSource.invType] == app.SlotByInventoryType[sourceInfo.invType])
-								then
-									return true;
-								-- else print("sources share visual and filters but different equips",item.s,sourceID)
-								end
-							end
-						end
-					else
-						-- OH NOES! It doesn't exist!
-						knownSource = C_TransmogCollection_GetSourceInfo(sourceID);
-						-- both sources are the same category (Equip-Type)
-						if knownSource.categoryID == sourceInfo.categoryID
-							-- and same Inventory Type
-							and (knownSource.invType == sourceInfo.invType
-								or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]]
-								or app.SlotByInventoryType[knownSource.invType] == app.SlotByInventoryType[sourceInfo.invType])
-						then
-							-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESNT HAVE!!!!");
-							return true;
-						-- else print(knownSource.sourceID, sourceInfo.sourceID, "share appearances, but one is ", sourceInfo.invType, "and the other is", knownSource.invType, sourceInfo.categoryID);
-						end
-					end
-				end
-			end
-		end
-		return false;
-	end
-end
-local function FilterItemSourceUniqueOnlyMain(sourceInfo, allSources)
-	if sourceInfo.isCollected then
-		-- NOTE: This makes it so that the loop isn't necessary.
-		return true;
-	else
-		-- If at least one of the sources of this visual ID was collected, that means that we've acquired the base appearance.
-		local item = SearchForSourceIDQuickly(sourceInfo.sourceID);
-		if item and not item.nmc and not item.nmr then
-			-- This item is for my race and class.
-			for i,sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-				if sourceID ~= sourceInfo.sourceID and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
-					local otherItem = SearchForSourceIDQuickly(sourceID);
-					if otherItem and (item.f == otherItem.f or item.f == 2 or otherItem.f == 2) and not otherItem.nmc and not otherItem.nmr then
-						return true; -- Okay, fine. You are this class/race. Enjoy your +1, cheater. D:
-					end
-				end
-			end
-		end
-		return false;
-	end
-end
--- Given a known SourceID, will mark all Shared Visual SourceID's which meet the filter criteria of the known SourceID as 'collected'
-local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacterOnly)
-	-- Find this source in ATT
-	local knownItem = SearchForSourceIDQuickly(knownSourceID);
-	if knownItem then
-		local knownSource = C_TransmogCollection_GetSourceInfo(knownSourceID);
-		local acctSources = ATTAccountWideData.Sources;
-		local checkItem, checkSource, valid;
-		local knownRaces, knownClasses, knownFaction, knownFilter = knownItem.races, knownItem.c, knownItem.r, knownItem.f;
-		local checkFilter;
-		-- this source unlocks a visual that the current character may tmog, so all shared visuals should be considered 'collected' regardless of restriction
-		local currentCharacterUsable = currentCharacterOnly and not knownItem.nmc and not knownItem.nmr;
-		-- For each shared Visual SourceID
-		-- if knownSource.visualID == 322 then app.DEBUG_PRINT = true; app.PrintTable(knownSource); end
-		-- account cannot collect sourceID? not available for transmog?
-		-- local _, canCollect = C_TransmogCollection.AccountCanCollectSource(knownSourceID); -- pointless, always false if sourceID is known
-		-- local unknown1 = select(8, C_TransmogCollection.GetAppearanceSourceInfo(knownSourceID)); -- pointless, returns nil for many valid transmogs
-		-- Trust that Blizzard returns SourceID's which can actually be used as Transmog for the VisualID
-		local visualIDs = C_TransmogCollection_GetAllAppearanceSources(knownSource.visualID);
-		local canMog;
-		for _,sourceID in ipairs(visualIDs) do
-			if sourceID == knownSourceID then
-				canMog = true;
-				break;
-			end
-		end
-		if not canMog then return; end
-		local factionRaces = app.Modules.FactionData.FACTION_RACES;
-		for _,sourceID in ipairs(visualIDs) do
-			-- if app.DEBUG_PRINT then print("visualID",knownSource.visualID,"s",sourceID,"known:",acctSources[sourceID)] end
-			-- If it is not currently marked collected on the account
-			if not acctSources[sourceID] then
-				-- for current character only, all we care is that the knownItem is not exclusive to another
-				-- race/class to consider all shared appearances as 'collected' for the current character
-				if currentCharacterUsable then
-					-- if app.DEBUG_PRINT then print("current character usable") end
-					acctSources[sourceID] = 2;
-				else
-					-- Find the check Source in ATT
-					checkItem = SearchForSourceIDQuickly(sourceID);
-					if checkItem then
-						-- filter matches or one item is Cosmetic
-						checkFilter = checkItem.f;
-						if checkFilter == knownFilter or checkFilter == 2 or knownFilter == 2 then
-							valid = true;
-							-- verify all possible restrictions that the known source may have against restrictions on the source in question
-							-- if known source has no equivalent restrictions, then restrictions on the source are irrelevant
-							-- Races
-							if knownRaces then
-								if checkItem.races then
-									-- the known source has a race restriction that is not shared by the source in question
-									if not containsAny(checkItem.races, knownRaces) then valid = nil; end
-								else
-									valid = nil;
-								end
-							end
-							-- Classes
-							if valid and knownClasses then
-								if checkItem.c then
-									-- the known source has a class restriction that is not shared by the source in question
-									if not containsAny(checkItem.c, knownClasses) then valid = nil; end
-								else
-									valid = nil;
-								end
-							end
-							-- Faction
-							if valid and knownFaction then
-								if checkItem.r then
-									-- the known source has a faction restriction that is not shared by the source or source races in question
-									if knownFaction ~= checkItem.r or (checkItem.races and not containsAny(factionRaces[knownFaction], checkItem.races)) then valid = nil; end
-								else
-									valid = nil;
-								end
-							end
-
-							-- found a known item which meets all the criteria to grant credit for the source in question
-							if valid then
-								checkSource = C_TransmogCollection_GetSourceInfo(sourceID);
-								-- both sources are the same category (Equip-Type)
-								if knownSource.categoryID == checkSource.categoryID
-									-- and same Inventory Type
-									and (knownSource.invType == checkSource.invType
-										or checkSource.categoryID == 4 --[[CHEST: Robe vs Armor]]
-										or app.SlotByInventoryType[knownSource.invType] == app.SlotByInventoryType[checkSource.invType])
-								then
-									-- if app.DEBUG_PRINT then print("Unique Collected s:",sourceID); end
-									acctSources[sourceID] = 2;
-								-- else print("sources share visual and filters but different equips",item.s,sourceID)
-								end
-							end
-						end
-					else
-						-- OH NOES! It doesn't exist!
-						checkSource = C_TransmogCollection_GetSourceInfo(sourceID);
-						-- both sources are the same category (Equip-Type)
-						if checkSource.categoryID == knownSource.categoryID
-							-- and same Inventory Type
-							and (checkSource.invType == knownSource.invType
-								or knownSource.categoryID == 4 --[[CHEST: Robe vs Armor]]
-								or app.SlotByInventoryType[checkSource.invType] == app.SlotByInventoryType[knownSource.invType])
-						then
-							-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESNT HAVE!!!!");
-							acctSources[sourceID] = 2;
-						-- else print(knownSource.sourceID, sourceInfo.sourceID, "share appearances, but one is ", sourceInfo.invType, "and the other is", knownSource.invType, sourceInfo.categoryID);
-						end
-					end
-				end
-			end
-		end
-		-- app.DEBUG_PRINT = nil;
-	end
-end
-local function FilterItemTrackable(group)
-	return group.trackable;
-end
-local function ObjectVisibilityFilter(group)
-	return group.visible;
-end
-app.CurrentCharacterFilters = CurrentCharacterFilters;
-app.FilterItemSourceUnique = FilterItemSourceUnique;
-app.FilterItemSourceUniqueOnlyMain = FilterItemSourceUniqueOnlyMain;
-app.MarkUniqueCollectedSourcesBySource = MarkUniqueCollectedSourcesBySource;
-app.FilterItemTrackable = FilterItemTrackable;
-app.ObjectVisibilityFilter = ObjectVisibilityFilter;
-app.FilterItemSource = FilterItemSource;
-app.FilterItemClass_CustomCollect = FilterItemClass_CustomCollect;
-app.FilterItemClass_RequireFaction = FilterItemClass_RequireFaction;
-app.FilterItemClass_RequiredSkill = FilterItemClass_RequiredSkill;
-app.FilterItemClass_PetBattles = FilterItemClass_PetBattles;
-app.FilterItemClass_PvP = FilterItemClass_PvP;
-app.FilterItemClass_RequireBinding = FilterItemClass_RequireBinding;
-app.ItemIsInGame = ItemIsInGame;
-app.FilterItemClass_UnobtainableItem = FilterItemClass_UnobtainableItem;
-app.FilterItemClass_RequireRacesCurrentFaction = FilterItemClass_RequireRacesCurrentFaction;
-app.FilterItemClass_RequireRaces = FilterItemClass_RequireRaces;
-app.FilterItemClass_RequireItemFilter = FilterItemClass_RequireItemFilter;
-app.FilterItemClass_RequireClasses = FilterItemClass_RequireClasses;
-app.FilterItemClass_IgnoreBoEFilter = FilterItemClass_IgnoreBoEFilter;
-app.FilterItemClass = FilterItemClass;
-app.FilterItemBind = FilterItemBind;
-app.FilterGroupsByCompletion = FilterGroupsByCompletion;
-app.FilterGroupsByLevel = FilterGroupsByLevel;
-app.IsBoP = IsBoP;
-app.NoFilter = NoFilter;
-app.Filter = Filter;
-
--- Default Filter Settings (changed in app.Startup and in the Options Menu)
-app.VisibilityFilter = app.ObjectVisibilityFilter;
-app.GroupFilter = app.FilterItemClass;
-app.GroupRequirementsFilter = app.NoFilter;
-app.GroupVisibilityFilter = app.NoFilter;
-app.ItemBindFilter = app.FilterItemBind;
-app.ItemSourceFilter = app.FilterItemSource;
-app.ItemTypeFilter = app.NoFilter;
-app.CollectedItemVisibilityFilter = app.NoFilter;
-app.ClassRequirementFilter = app.NoFilter;
-app.RaceRequirementFilter = app.NoFilter;
-app.RequireBindingFilter = app.NoFilter;
-app.PvPFilter = app.NoFilter;
-app.PetBattleFilter = app.NoFilter;
-app.UnobtainableFilter = app.NoFilter;
-app.RequireEventFilter = app.Modules.Events.FilterIsEventActive;
-app.RequireFactionFilter = app.FilterItemClass_RequireFaction;
-app.RequireCustomCollectFilter = app.FilterItemClass_CustomCollect;
-app.RequiredSkillFilter = app.NoFilter;
-app.ShowTrackableThings = app.Filter;
-app.DefaultGroupFilter = app.Filter;
-app.DefaultThingFilter = app.Filter;
-
 -- Recursive Checks
 app.VerifyCache = function()
 	if not fieldCache then return false; end
@@ -14097,73 +13590,6 @@ app.VerifyRecursion = function(group, checked)
 	end
 	return true;
 end
--- Recursively check outwards to find if any parent group restricts the filter for the current character (regardless of settings)
-local function RecursiveCharacterRequirementsFilter(group)
-	if CurrentCharacterFilters(group) then
-		local filterParent = group.sourceParent or group.parent;
-		if filterParent then
-			return RecursiveCharacterRequirementsFilter(filterParent)
-		end
-		return true;
-	end
-	return false;
-end
-app.RecursiveCharacterRequirementsFilter = RecursiveCharacterRequirementsFilter;
--- Recursively check outwards to find if any parent group restricts the filter for the current settings
-local function RecursiveGroupRequirementsFilter(group)
-	if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
-		local filterParent = group.sourceParent or group.parent;
-		if filterParent then
-			return RecursiveGroupRequirementsFilter(filterParent)
-		end
-		return true;
-	end
-	return false;
-end
-app.RecursiveGroupRequirementsFilter = RecursiveGroupRequirementsFilter;
--- Recursively check outwards within the direct parent chain only to find if any parent group restricts the filter for this character
-local function RecursiveDirectGroupRequirementsFilter(group)
-	if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
-		local filterParent = group.parent;
-		if filterParent then
-			return RecursiveDirectGroupRequirementsFilter(filterParent)
-		end
-		return true;
-	end
-	return false;
-end
-app.RecursiveDirectGroupRequirementsFilter = RecursiveDirectGroupRequirementsFilter;
-local function RecursiveUnobtainableFilter(group)
-	if app.UnobtainableFilter(group) and app.RequireEventFilter(group) then
-		if group.parent then return RecursiveUnobtainableFilter(group.parent); end
-		return true;
-	end
-	return false;
-end
-app.RecursiveUnobtainableFilter = RecursiveUnobtainableFilter;
--- Returns the first encountered group tracing upwards in parent hierarchy which has a value for the provided field.
--- Specify 'followSource' to prioritize the Source Parent of a group over the direct Parent
-local function RecursiveFirstParentWithField(group, field, followSource)
-	if group then
-		return (group[field] and group) or RecursiveFirstParentWithField(followSource and group.sourceParent or group.parent, field);
-	end
-end
-app.RecursiveFirstParentWithField = RecursiveFirstParentWithField;
--- Returns the first encountered group's value tracing upwards in parent hierarchy which has a value for the provided field.
--- Specify 'followSource' to prioritize the Source Parent of a group over the direct Parent
-local function RecursiveFirstParentWithFieldValue(group, field, followSource)
-	if group then
-		return group[field] or RecursiveFirstParentWithFieldValue(followSource and group.sourceParent or group.parent, field);
-	end
-end
-app.RecursiveFirstParentWithFieldValue = RecursiveFirstParentWithFieldValue;
--- Returns the first encountered group tracing upwards in direct parent hierarchy which has a value for the provided field
-local function RecursiveFirstDirectParentWithField(group, field)
-	if group then
-		return group[field] or RecursiveFirstDirectParentWithField(rawget(group, "parent"), field);
-	end
-end
-app.RecursiveFirstDirectParentWithField = RecursiveFirstDirectParentWithField;
 
 -- Cleans any groups which are nested under any group with any specified fields
 app.CleanInheritingGroups = function(groups, ...)
@@ -14195,15 +13621,22 @@ end	-- Filtering
 do
 local DefaultGroupVisibility, DefaultThingVisibility;
 local UpdateGroups;
-local RecursiveGroupRequirementsFilter, GroupRequirementsFilter, GroupFilter, GroupVisibilityFilter, ThingVisibilityFilter, TrackableFilter
+local RecursiveGroupRequirementsFilter, GroupFilter, GroupVisibilityFilter, ThingVisibilityFilter, TrackableFilter
+local FilterSet, FilterGet, Filters_ItemUnbound, ItemUnboundSetting
 -- Local caches for some heavily used functions within updates
 local function CacheFilterFunctions()
+	local FilterApi = app.Modules.Filter;
+	FilterSet = FilterApi.Set
+	FilterGet = FilterApi.Get
+	Filters_ItemUnbound = FilterApi.Filters.ItemUnbound
+	ItemUnboundSetting = FilterGet.ItemUnbound()
 	RecursiveGroupRequirementsFilter = app.RecursiveGroupRequirementsFilter;
-	GroupRequirementsFilter = app.GroupRequirementsFilter;
 	GroupFilter = app.GroupFilter;
 	GroupVisibilityFilter, ThingVisibilityFilter = app.GroupVisibilityFilter, app.CollectedItemVisibilityFilter;
 	TrackableFilter = app.ShowTrackableThings;
 	DefaultGroupVisibility, DefaultThingVisibility = app.DefaultGroupFilter(), app.DefaultThingFilter();
+	-- app.PrintDebug("CacheFilterFunctions")
+	-- app.PrintDebug("ItemUnboundSetting",ItemUnboundSetting)
 end
 local function SetGroupVisibility(parent, group)
 	local forceShowParent;
@@ -14316,7 +13749,7 @@ local function UpdateGroup(parent, group)
 		valid = RecursiveGroupRequirementsFilter(group);
 		-- if debug then print("UG.RGRF",valid,"=>",group.sourceParent.hash) end
 	else
-		valid = GroupRequirementsFilter(group) and GroupFilter(group);
+		valid = GroupFilter(group);
 		-- if debug then print("UG.GRF/GF",valid) end
 	end
 
@@ -14347,13 +13780,20 @@ local function UpdateGroup(parent, group)
 			-- if app.DEBUG_PRINT then print("UpdateGroup.g",group.progress,group.total,group.__type) end
 
 			-- skip Character filtering for sub-groups if this Item meets the Ignore BoE filter logic, since it can be moved to the designated character
-			local ItemBindFilter, NoFilter = app.ItemBindFilter, app.NoFilter;
-			if ItemBindFilter ~= NoFilter and ItemBindFilter(group) then
-				app.ItemBindFilter = NoFilter;
+			-- local ItemBindFilter, NoFilter = app.ItemBindFilter, app.NoFilter;
+			if ItemUnboundSetting and Filters_ItemUnbound(group) then
+				-- app.ItemBindFilter = NoFilter;
+				-- Toggle only Account-level filtering within this Item and turn off the ItemUnboundSetting to ignore sub-checks for the same logic
+				ItemUnboundSetting = nil;
+				FilterSet.ItemUnbound(nil, true);
+				-- app.PrintDebug("Within BoE",group.hash,group.link)
 				-- Update the subgroups recursively...
 				UpdateGroups(group, g);
 				-- reapply the previous BoE filter
-				app.ItemBindFilter = ItemBindFilter;
+				-- app.PrintDebug("Leaving BoE",group.hash,group.link)
+				FilterSet.ItemUnbound(true);
+				ItemUnboundSetting = true;
+				-- app.ItemBindFilter = ItemBindFilter;
 			else
 				UpdateGroups(group, g);
 			end
@@ -14573,10 +14013,10 @@ function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 	end
 end
 function app.UniqueModeItemCollectionHelper(sourceID, oldState)
-	return app.UniqueModeItemCollectionHelperBase(sourceID, oldState, app.FilterItemSourceUnique);
+	return app.UniqueModeItemCollectionHelperBase(sourceID, oldState, app.Modules.Filter.Filters.ItemSourceUnique);
 end
 function app.UniqueModeItemCollectionHelperOnlyMain(sourceID, oldState)
-	return app.UniqueModeItemCollectionHelperBase(sourceID, oldState, app.FilterItemSourceUniqueOnlyMain);
+	return app.UniqueModeItemCollectionHelperBase(sourceID, oldState, app.Modules.Filter.Filters.ItemSourceUniqueMainOnly);
 end
 app.ActiveItemCollectionHelper = app.CompletionistItemCollectionHelper;
 
@@ -15532,7 +14972,7 @@ local function SetRowData(self, row, data)
 		else
 			rowLabel:SetPoint("RIGHT");
 		end
-		rowLabel:SetText(text);
+		rowLabel:SetText(app.TryColorizeName(data, text));
 		if data.font then
 			rowLabel:SetFontObject(data.font);
 			rowSummary:SetFontObject(data.font);
@@ -18372,7 +17812,7 @@ local IncludeUnavailableRecipes, IgnoreBoEFilter, CloneGroup;
 -- Set some logic which is used during recursion without needing to set it on every recurse
 local function SetRescursiveFilters()
 	IncludeUnavailableRecipes = not app.BuildSearchResponse_IgnoreUnavailableRecipes;
-	IgnoreBoEFilter = app.FilterItemClass_IgnoreBoEFilter;
+	IgnoreBoEFilter = app.Modules.Filter.SettingsFilters.IgnoreBoEFilter;
 	CloneGroup = app.CreateWrapFilterHeader;
 end
 -- If/when this section becomes a module, set Module.SearchResponse.SearchNil instead
@@ -18536,7 +17976,7 @@ end
 app.GetCustomWindowParam = function(suffix, name)
 	local params = customWindowUpdates.params[suffix];
 	-- app.PrintDebug("GetCustomWindowParam",suffix,name,params and params[name])
-	return params and params[name];
+	return params and params[name] or nil;
 end
 -- Defines the value of the specific attribute for the given window suffix
 app.SetCustomWindowParam = function(suffix, name, value)
@@ -20064,11 +19504,11 @@ customWindowUpdates["RaidAssistant"] = function(self)
 		end
 
 		-- Update the groups without forcing Debug Mode.
-		local visibilityFilter = app.VisibilityFilter;
-		app.VisibilityFilter = app.ObjectVisibilityFilter;
+		local visibleState = app.Modules.Filter.Get.Visible();
+		app.Modules.Filter.Set.Visible()
 		self:BuildData();
 		self:BaseUpdate(true);
-		app.VisibilityFilter = visibilityFilter;
+		app.Modules.Filter.Set.Visible(visibleState)
 	end
 end;
 customWindowUpdates["Random"] = function(self)
@@ -20871,8 +20311,9 @@ customWindowUpdates["list"] = function(self, force, got)
 		local onlyMissing = app.GetCustomWindowParam("list", "missing");
 		local onlyCached = app.GetCustomWindowParam("list", "cached");
 		local harvesting = app.GetCustomWindowParam("list", "harvesting");
-		self.PartitionSize = app.GetCustomWindowParam("list", "part") or 1000;
-		self.Limit = app.GetCustomWindowParam("list", "limit") or 1000;
+		self.PartitionSize = tonumber(app.GetCustomWindowParam("list", "part")) or 1000;
+		self.Limit = tonumber(app.GetCustomWindowParam("list", "limit")) or 1000;
+		local min = tonumber(app.GetCustomWindowParam("list", "min")) or 0
 		-- print("Quests - onlyMissing",onlyMissing)
 		local CacheFields, ItemHarvester;
 
@@ -20984,8 +20425,6 @@ customWindowUpdates["list"] = function(self, force, got)
 			g = g,
 		}, PartitionMeta));
 
-		-- add a bunch of raw, delay-loaded objects in order into the window
-		local groupCount = math.ceil(self.Limit / self.PartitionSize) - 1;
 		local overrides = {
 			visible = not harvesting and true or nil,
 			indent = 2,
@@ -21043,9 +20482,12 @@ customWindowUpdates["list"] = function(self, force, got)
 			app.SetDGUDelay(0);
 			StartCoroutine("AutoHarvestFirstPartitionCoroutine", self.AutoHarvestFirstPartitionCoroutine);
 		end
+		-- add a bunch of raw, delay-loaded objects in order into the window
+		local groupCount = math.ceil(self.Limit / self.PartitionSize) - 1;
+		local groupStart = math.ceil(min / self.PartitionSize) - 1;
 		local partition, partitionStart, partitionGroups;
 		local dlo = app.DelayLoadedObject;
-		for j=0,groupCount,1 do
+		for j=groupStart,groupCount,1 do
 			partitionStart = j * self.PartitionSize;
 			partitionGroups = {};
 			-- define a sub-group for a range of things
@@ -21806,7 +21248,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				end
 
 				local OnUpdateForLFGHeader = function(group)
-					local meetLevelrange = app.FilterGroupsByLevel(group);
+					local meetLevelrange = app.Modules.Filter.Filters.FilterLevel(group);
 					if meetLevelrange or app.MODE_DEBUG_OR_ACCOUNT then
 						-- default logic for available LFG category/Debug/Account
 						return false;
@@ -22461,7 +21903,8 @@ app.ProcessAuctionData = function()
 			if filterID then
 				local filterData = filteredItems[entry.f];
 				if not filterData then
-					filterData = setmetatable({ ["filterID"] = filterID, ["g"] = {} }, app.BaseFilter);
+					filterData = app.CreateFilter(filterID);
+					filterData.g = {};
 					filteredItems[filterID] = filterData;
 					tinsert(searchResultsByKey.s, filterData);
 				end
@@ -22505,53 +21948,47 @@ app.ProcessAuctionData = function()
 	end
 
 	local ObjectTypeMetas = {
-		["criteriaID"] = setmetatable({	-- Achievements
-			["filterID"] = 105,
+		["criteriaID"] = app.CreateFilter(105, {	-- Achievements
 			["icon"] = "INTERFACE/ICONS/ACHIEVEMENT_BOSS_LICHKING",
 			["description"] = L["ITEMS_FOR_ACHIEVEMENTS_DESC"],
 			["priority"] = 1,
-		}, app.BaseFilter),
-		["s"] = setmetatable({			-- Appearances
-			["headerID"] = -10032,
+		}),
+		["s"] = {			-- Appearances
+			["text"] = "Appearances",
 			["icon"] = "INTERFACE/ICONS/INV_SWORD_06",
 			["description"] = L["ALL_APPEARANCES_DESC"],
 			["priority"] = 2,
-		}, app.BaseHeader),
-		["mountID"] = setmetatable({	-- Mounts
-			["filterID"] = 100,
+		},
+		["mountID"] = app.CreateFilter(100, {	-- Mounts
 			["description"] = L["ALL_THE_MOUNTS_DESC"],
 			["priority"] = 3,
-		}, app.BaseFilter),
-		["speciesID"] = setmetatable({	-- Battle Pets
-			["filterID"] = 101,
+		}),
+		["speciesID"] = app.CreateFilter(101, {	-- Battle Pets
 			["icon"] = "INTERFACE/ICONS/ICON_PETFAMILY_CRITTER",
 			["description"] = L["ALL_THE_BATTLEPETS_DESC"],
 			["priority"] = 4,
-		}, app.BaseFilter),
-		["questID"] = setmetatable({	-- Quests
-			["headerID"] = -9956,
+		}),
+		["questID"] = app.CreateNPC(app.HeaderConstants.QUESTS, {	-- Quests
 			["icon"] = "INTERFACE/ICONS/ACHIEVEMENT_GENERAL_100KQUESTS",
 			["description"] = L["ALL_THE_QUESTS_DESC"],
 			["priority"] = 5,
-		}, app.BaseHeader),
-		["recipeID"] = setmetatable({	-- Recipes
-			["filterID"] = 200,
+		}),
+		["recipeID"] = app.CreateFilter(200, {	-- Recipes
 			["icon"] = "INTERFACE/ICONS/INV_SCROLL_06",
 			["description"] = L["ALL_THE_RECIPES_DESC"],
 			["priority"] = 6,
-		}, app.BaseFilter),
+		}),
 		["itemID"] = {					-- General
 			["text"] = "General",
 			["icon"] = "INTERFACE/ICONS/INV_MISC_FROSTEMBLEM_01",
 			["description"] = L["ALL_THE_ILLUSIONS_DESC"],
 			["priority"] = 7,
 		},
-		["reagentID"] = setmetatable({	-- Reagent
-			["filterID"] = 56,
+		["reagentID"] = app.CreateFilter(56, {	-- Reagent
 			["icon"] = "INTERFACE/ICONS/SPELL_FROST_FROZENCORE",
 			["description"] = L["ALL_THE_REAGENTS_DESC"],
 			["priority"] = 8,
-		}, app.BaseFilter),
+		}),
 	};
 
 	-- Display Test for Raw Data + Filtering
@@ -23314,8 +22751,12 @@ end
 SLASH_AllTheThingsHARVESTER1 = "/attharvest";
 SLASH_AllTheThingsHARVESTER2 = "/attharvester";
 SlashCmdList["AllTheThingsHARVESTER"] = function(cmd)
+	app.SetCustomWindowParam("list", "reset", true);
 	app.SetCustomWindowParam("list", "type", "cache:item");
 	app.SetCustomWindowParam("list", "harvesting", true);
+	local args = { strsplit(",", string_lower(cmd)) };
+	app.SetCustomWindowParam("list", "min", args[1]);
+	app.SetCustomWindowParam("list", "limit", args[2]);
 	app:GetWindow("list"):Toggle();
 end
 

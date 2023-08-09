@@ -105,9 +105,101 @@ i(0, 11452);	-- Restorative Potion (4.0.3)
 -- TRAINER --
 i(0, 12609);	-- Catseye Elixir
 
-------------------
+-----------------
 -- PATCH 1.0.0 --
+-----------------
+-- TRAINER --
+i(0, 15833);	-- Dreamless Sleep Potion
+i(0, 17551);	-- Stonescale Oil
+-- ITEM --
+i(13517, 17632);	-- Alchemist Stone
+i(13478, 17554);	-- Elixir of Superior Defense
+i(13491, 17571);	-- Elixir of the Mongoose
+i(13520, 17636);	-- Flask of Distilled Wisdom (Drop)
+i(13497, 17577);	-- Greater Arcane Protection Potion (Removed 4.0.3, added back 9.1.)
+i(13494, 17574);	-- Greater Fire Protection Potion
+i(13496, 17576);	-- Greater Nature Protection Potion
+i(13490, 17570);	-- Greater Stoneshield Potion
+i(13501, 17580);	-- Major Mana Potion
+i(13518, 17634);	-- Potion of Petrification  -- Renamed from Flask of Petrification 3.2.0
+i(13482, 17559);	-- Transmute: Air to Fire
+i(12958, 17187);	-- Transmute: Arcanite
+i(13489, 17566);	-- Transmute: Earth to Life
+i(13484, 17561);	-- Transmute: Earth to Water
+i(13483, 17560);	-- Transmute: Fire to Earth
+i(13488, 17565);	-- Transmute: Life to Earth
+i(13486, 17563);	-- Transmute: Undeath to Water
+i(13485, 17562);	-- Transmute: Water to Air
+i(13487, 17564);	-- Transmute: Water to Undeath
+-- REMOVED --
+i(13522, 17638);	-- Flask of Chromatic Resistance (Drop) (5.0.4)
+i(13519, 17635);	-- Flask of the Titans (Drop) (6.0.2)
+i(13521, 17637);	-- Flask of Supreme Power (Drop) (5.0.4)
+-- MOVED TO TRAINER --
+i(13481, 17557);	-- Elixir of Brute Force (Recipe removed 4.0.3)
+i(13479, 17555);	-- Elixir of the Sages (Recipe removed 4.0.3)
+i(13493, 17573);	-- Greater Arcane Elixir (Recipe removed 3.0.2)
+i(13495, 17575);	-- Greater Frost Protection Potion (Recipe removed 4.0.3)
+i(13499, 17578);	-- Greater Shadow Protection Potion (Recipe removed 4.0.3)
+i(13480, 17556);	-- Major Healing Potion (Recipe removed 2.0.1)
+i(13476, 17552);	-- Mighty Rage Potion (Recipe removed 4.0.3)
+i(13492, 17572);	-- Purification Potion (Recipe removed with TBC.)
+i(13477, 17553);	-- Superior Mana Potion (Recipe removed 2.0.1)
+-- NYI --
+i(13500, 17579);	-- Greater Holy Protection Potion
+
+-----------------
+-- PATCH 1.2.0 --
+-----------------
+-- ITEM --
+i(17709, 21923);	-- Elixir of Frost Power
+
+-----------------
+-- PATCH 1.4.0 --
+-----------------
+-- ITEM --
+i(18257, 22732);	-- Major Rejuvenation Potion
+
+-----------------
+-- PATCH 1.7.0 --
+-----------------
+-- ITEM --
+i(20013, 24367);	-- Living Action Potion
+-- REMOVED AND READDED WITH 10.0.7 --
+i(20011, 24365);	-- Mageblood Elixir (Renamed from Mageblood Potion in 2.1.0) (4.0.3)
+i(20014, 24368);	-- Mighty Troll's Blood Elixir (Renamed from Major Troll's Blood Potion in TBC.) (4.0.3)
+i(20012, 24366);	-- Greater Dreamless Sleep Potion (4.0.3)
+
+-----------------
+-- PATCH 1.9.0 --
+-----------------
+-- ITEM --
+i(20761, 25146);	-- Transmute: Elemental Fire
+
 ------------------
+-- PATCH 1.10.0 --
+------------------
+-- ITEM --
+i(21547, 26277);	-- Elixir of Greater Firepower
+
+------------------
+-- PATCH 1.13.0 --
+------------------
+-- TRAINER --
+i(0, 22808);	-- Elixir of Greater Water Breathing
+-- NYI --
+i(0, 22430);	-- Refined Scale of Onyxia
+
+-----------------
+-- PATCH 2.0.1 --
+-----------------
+-- ITEM --
+i(31356, 17636);	-- Flask of Distilled Wisdom (Cenarion Reputation)
+i(31355, 17637);	-- Flask of Supreme Power (Keepers Reputation)
+i(31354, 17635);	-- Flask of the Titans (Sha'tar Reputation)
+-- REMOVED --
+i(31357, 17638);	-- Flask of Chromatic Resistance (Lower City Reputation) (5.0.4?)
+
 -----------------
 -- PATCH 6.0.1 --	- NOT DONE -Darkal
 -----------------

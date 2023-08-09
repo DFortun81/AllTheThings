@@ -122,19 +122,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 root(ROOTS.HiddenQuestTriggers, {
 	m(SHADOWLANDS, {
 		m(THE_MAW, {
-			q(61600),	-- Animaflow Stabilizer
-			q(63217),	-- Animated Levitating Chain
-			q(63193),	-- Bangle of Seniority
-			q(63523),	-- Broker Traversal Enhancer
-			q(63177),	-- Encased Riftwalker Essence
-			q(63183),	-- Extradimensional Pockets
-			q(63201),	-- Loupe of Unusual Charm
-			q(61144),	-- Possibility Matrix
-			q(63200),	-- Rank Insignia: Acquisitionist
-			q(63204),	-- Ritual Prism of Fortune
-			q(63092),	-- Sigil of the Unseen
-			q(63091),	-- Soul-Stabilizing Talisman
-			q(63202),	-- Vessel of Unfortunate Spirits
+			q(61600),	-- Animaflow Stabilizer (spellID 341097)
+			q(63217),	-- Animated Levitating Chain (spellID 347241)
+			q(63193),	-- Bangle of Seniority (spellID 347108)
+			q(63523),	-- Broker Traversal Enhancer (spellID 349397)
+			q(63177),	-- Encased Riftwalker Essence (spellID 347080)
+			q(63183),	-- Extradimensional Pockets (spellID 347107)
+			q(63201),	-- Loupe of Unusual Charm (spellID 347109)
+			q(61144),	-- Possibility Matrix (spellID 342815)
+			q(63200),	-- Rank Insignia: Acquisitionist (spellID 347110)
+			q(63204),	-- Ritual Prism of Fortune (spellID 347113)
+			q(63092),	-- Sigil of the Unseen (spellID 347020)
+			q(63091),	-- Soul-Stabilizing Talisman (spellID 346917)
+			q(63202),	-- Vessel of Unfortunate Spirits (spellID 347111)
 		}),
 	}),
 });

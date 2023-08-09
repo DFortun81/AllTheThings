@@ -1668,7 +1668,7 @@ s(157692)/i(4138),	-- kwater Tunic \\ Blackwater Tunic
 s(157693)/i(4139),	-- lewalker Sandals \\ Junglewalker Sandals
 s(157694)/i(4140),	-- Frond Mantle \\ Palm Frond Mantle
 s(157695)/i(4190),	-- Feathered Armor
-s(157696)/i(4191),	-- ed Feathered Leggings \\ Unused Feathered Leggings
+s(157696)/i(4191),	-- Owlbeast Leggings \\ ed Feathered Leggings \\ Unused Feathered Leggings
 s(157697)/i(4192),	-- Unused Feathered Gauntlets
 s(157698)/i(4194),	-- Feathered Bracers
 s(157699)/i(4195),	-- Feathered Boots
@@ -10978,7 +10978,7 @@ s(119404)/i(4138),	-- kwater Tunic \\ Blackwater Tunic
 s(119405)/i(4139),	-- lewalker Sandals \\ Junglewalker Sandals
 s(119406)/i(4140),	-- Frond Mantle \\ Palm Frond Mantle
 s(119409)/i(4190),	-- Feathered Armor
-s(119410)/i(4191),	-- ed Feathered Leggings \\ Unused Feathered Leggings
+s(119410)/i(4191),	-- Owlbeast Leggings \\ ed Feathered Leggings \\ Unused Feathered Leggings
 s(119411)/i(4192),	-- Unused Feathered Gauntlets
 s(119412)/i(4194),	-- Feathered Bracers
 s(119413)/i(4195),	-- Feathered Boots
@@ -64957,7 +64957,6 @@ s(169016)/i(190802),	--
 s(169018)/i(190804),	--
 s(169019)/i(190805),	--
 s(169021)/i(190807),	--
-s(169026)/i(190812),	--
 s(169027)/i(190813),	--
 s(169030)/i(190816),	--
 s(169033)/i(190819),	--
@@ -64975,8 +64974,6 @@ s(169062)/i(190849),	--
 s(169066)/i(190857),	--
 s(169068)/i(190859),	--
 s(169069)/i(190860),	--
-s(169079)/i(190870),	--
-s(169080)/i(190871),	--
 s(169082)/i(190873),	--
 s(169083)/i(190874),	--
 s(169084)/i(190875),	--
@@ -65253,6 +65250,15 @@ s(189593)/i(208156),	--
 s(189751)/i(208444),	--
 10.1.5.50199
 s(189832)/i(208548),	--
+10.1.5.50747
+s(168244)/i(190091),	-- Fanciful Corsage
+s(168945)/i(190694),	-- Solemn Watchman's Belt
+s(168946)/i(190695),	-- Solemn Watchman's Boots
+s(168976)/i(190728),	-- Gothic Corsage
+s(169058)/i(190845),	-- Solemn Watchman's Trousers
+s(169081)/i(190872),	-- Solemn Watchman's Cuirass
+s(169103)/i(190896),	-- Solemn Watchman's Spaulders
+s(169108)/i(190901),	-- Solemn Watchman's Helm
 10.1.7.50442
 s(188051)/i(206597),	--
 s(188667)/i(207089),	--
@@ -65352,35 +65358,35 @@ s(189976)/i(208661),	-- Caduceus of the Alluring Call
 s(190110)/i(208735),	-- Bucket of Morbid Treats
 s(190116)/i(208763),	-- Headmaster's Skullcap
 s(190118)/i(208786),	-- Luxurious Niffen Hat
-s(190119)/i(208787),	--
-s(190120)/i(208788),	--
-s(190121)/i(208789),	--
-s(190122)/i(208790),	--
-s(190123)/i(208791),	--
-s(190124)/i(208792),	--
-s(190125)/i(208793),	--
-s(190126)/i(208794),	--
-s(190127)/i(208795),	--
-s(190128)/i(208796),	--
-s(190129)/i(208797),	--
-s(190130)/i(208802),	--
-s(190131)/i(208803),	--
-s(190132)/i(208804),	--
-s(190133)/i(208805),	--
-s(190134)/i(208806),	--
-s(190135)/i(208807),	--
-s(190136)/i(208808),	--
-s(190137)/i(208809),	--
-s(190138)/i(208810),	--
-s(190139)/i(208811),	--
-s(190140)/i(208812),	--
-s(190141)/i(208813),	--
-s(190142)/i(208814),	--
-s(190143)/i(208815),	--
-s(190144)/i(208817),	--
-s(190145)/i(208818),	--
-s(190146)/i(208819),	--
-s(190147)/i(208820),	--
+s(190119)/i(208787),	-- Black Holo-Gogs
+s(190120)/i(208788),	-- Blue Holo-Gogs
+s(190121)/i(208789),	-- Gold Holo-Gogs
+s(190122)/i(208790),	-- Green Holo-Gogs
+s(190123)/i(208791),	-- Purple Holo-Gogs
+s(190124)/i(208792),	-- Red Holo-Gogs
+s(190125)/i(208793),	-- Silver Holo-Gogs
+s(190126)/i(208794),	-- White Holo-Gogs
+s(190127)/i(208795),	-- Midnight Holo-Gogs
+s(190128)/i(208796),	-- Orange Holo-Gogs
+s(190129)/i(208797),	-- Yellow Holo-Gogs
+s(190130)/i(208802),	-- Black Retinal Armor
+s(190131)/i(208803),	-- Blue Retinal Armor
+s(190132)/i(208804),	-- Green Retinal Armor
+s(190133)/i(208805),	-- Red Retinal Armor
+s(190134)/i(208806),	-- White Retinal Armor
+s(190135)/i(208807),	-- Yellow Retinal Armor
+s(190136)/i(208808),	-- Green Cranial Cannon
+s(190137)/i(208809),	-- Orange Cranial Cannon
+s(190138)/i(208810),	-- Purple Cranial Cannon
+s(190139)/i(208811),	-- Yellow Cranial Cannon
+s(190140)/i(208812),	-- Yellow Bio-Optic Killshades
+s(190141)/i(208813),	-- Black Bio-Optic Killshades
+s(190142)/i(208814),	-- Blue Bio-Optic Killshades
+s(190143)/i(208815),	-- Red Bio-Optic Killshades
+s(190144)/i(208817),	-- Blue Ectoplasmic Specs
+s(190145)/i(208818),	-- Green Ectoplasmic Specs
+s(190146)/i(208819),	-- Red Ectoplasmic Specs
+s(190147)/i(208820),	-- Yellow Ectoplasmic Specs
 10.1.7.50587
 s(190168)/i(208986),	-- The Horseman's Horrific Hood
 s(190169)/i(208987),	-- The Horseman's Sinister Slicer
@@ -65388,3 +65394,68 @@ s(190171)/i(209022),	-- The Horseman's Sinister Slicer
 s(190172)/i(209023),	-- The Horseman's Horrific Hood
 s(190176)/i(209044),	-- Orange Brewfest Bulwark
 s(190177)/i(209053),	-- Green Brewfest Bulwark
+10.1.7.50730
+s(190178)/i(209065),	--
+s(190179)/i(209068),	--
+s(190688)/i(209357),	-- Dreambound Shawl
+s(190689)/i(209359),	-- Dreambound Warglaive
+s(190690)/i(209360),	-- Dreambound Staff
+s(190691)/i(209361),	-- Dreambound Halberd
+s(190692)/i(209362),	-- Dreambound Cudgel
+s(190693)/i(209363),	-- Dreambound Mallet
+s(190694)/i(209364),	-- Dreambound Censer
+s(190695)/i(209365),	-- Dreambound Cleaver
+s(190696)/i(209366),	-- Dreambound Hacker
+s(190697)/i(209369),	-- Dreambound Greatsword
+s(190698)/i(209370),	-- Dreambound Blade
+s(190699)/i(209371),	-- Dreambound Sword
+s(190700)/i(209372),	-- Dreambound Kris
+s(190701)/i(209373),	-- Dreambound Shank
+s(190702)/i(209374),	-- Dreambound Spellblade
+s(190703)/i(209375),	-- Dreambound Rifle
+s(190704)/i(209376),	-- Dreambound Polearm
+s(190705)/i(209377),	-- Dreambound Wand
+s(190706)/i(209378),	-- Dreambound Scepter
+s(190707)/i(209379),	-- Dreambound Barrier
+s(190708)/i(209380),	-- Dreambound Shoulderpads
+s(190709)/i(209380),	-- Dreambound Shoulderpads
+s(190710)/i(209381),	-- Dreambound Epaulets
+s(190711)/i(209382),	-- Dreambound Vest
+s(190712)/i(209383),	-- Dreambound Armplates
+s(190713)/i(209384),	-- Dreambound Girdle
+s(190714)/i(209385),	-- Dreambound Mantle
+s(190715)/i(209385),	-- Dreambound Mantle
+s(190716)/i(209386),	-- Dreambound Legguards
+s(190717)/i(209387),	-- Dreambound Gauntlets
+s(190718)/i(209388),	-- Dreambound Sabatons
+s(190719)/i(209389),	-- Dreambound Breastplate
+s(190720)/i(209390),	-- Dreambound Faceplate
+s(190721)/i(209390),	-- Dreambound Faceplate
+s(190722)/i(209391),	-- Dreambound Vambraces
+s(190723)/i(209392),	-- Dreambound Cinch
+s(190724)/i(209393),	-- Dreambound Shoulderguards
+s(190725)/i(209393),	-- Dreambound Shoulderguards
+s(190726)/i(209394),	-- Dreambound Greaves
+s(190727)/i(209395),	-- Dreambound Coif
+s(190728)/i(209395),	-- Dreambound Coif
+s(190729)/i(209396),	-- Dreambound Grips
+s(190730)/i(209397),	-- Dreambound Striders
+s(190731)/i(209398),	-- Dreambound Chainmail
+s(190732)/i(209399),	-- Dreambound Bindings
+s(190733)/i(209400),	-- Dreambound Sash
+s(190734)/i(209401),	-- Dreambound Breeches
+s(190735)/i(209402),	-- Dreambound Cowl
+s(190736)/i(209402),	-- Dreambound Cowl
+s(190737)/i(209403),	-- Dreambound Handwraps
+s(190738)/i(209404),	-- Dreambound Waders
+s(190739)/i(209405),	-- Dreambound Cuffs
+s(190740)/i(209406),	-- Dreambound Cord
+s(190741)/i(209407),	-- Dreambound Pants
+s(190742)/i(209408),	-- Dreambound Crown
+s(190743)/i(209408),	-- Dreambound Crown
+s(190744)/i(209409),	-- Dreambound Mitts
+s(190745)/i(209410),	-- Dreambound Sandals
+s(190746)/i(209411),	-- Dreambound Vestment
+s(190747)/i(209412),	-- Dreambound Greatcloak
+s(190748)/i(209413),	-- Dreambound Cape
+s(190749)/i(209414),	-- Dreambound Drape

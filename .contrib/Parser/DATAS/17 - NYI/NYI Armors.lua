@@ -303,6 +303,7 @@ root(ROOTS.NeverImplemented, {
 			cl(ROGUE, {
 				tier(CATA_TIER, 0.3, {
 					i(54692),	-- Armor of Thero-Shan
+					i(59600),	-- Phosphora Fedora
 				}),
 			}),
 			n(BACK, {

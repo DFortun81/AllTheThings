@@ -2700,7 +2700,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						applyclassicphase(PHASE_THREE, i(19215)),	-- Pattern: Wisdom of the Timbermaw
 						applyclassicphase(PHASE_THREE, i(19202)),	-- Plans: Heavy Timbermaw Belt (RECIPE!)
 						applyclassicphase(PHASE_THREE, i(19204)),	-- Plans: Heavy Timbermaw Boots (RECIPE!)
-						i(13484),	-- Recipe: Transmute Earth to Water
+						i(13484),	-- Recipe: Transmute Earth to Water (RECIPE!)
 						i(66888, {	-- Stave of Fur and Claw Toy (TOY!)
 							["minReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
 							["timeline"] = { "added 4.0.1.12984" },
@@ -2794,7 +2794,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },	-- Moved to Trainers
 					["cr"] = 7107,	-- Jadefire Trickster
 				}),
-				i(13491, {	-- Recipe: Elixir of the Mongoose
+				i(13491, {	-- Recipe: Elixir of the Mongoose (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 7106,	-- Jadefire Rogue
 				}),

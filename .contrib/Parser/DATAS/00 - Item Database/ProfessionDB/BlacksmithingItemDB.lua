@@ -328,7 +328,7 @@ i(17059, 20890);	-- Dark Iron Reaver
 i(12836, 16992);	-- Frostguard
 i(22389, 27832);	-- Sageblade
 -- #endif
--- NYI ---
+--- NYI ---
 i(0, 6470);			-- Tiny Bronze Key
 i(0, 6471);			-- Tiny Iron Key
 i(12831, 16986);	-- Blood Talon

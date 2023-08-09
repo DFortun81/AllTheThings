@@ -965,6 +965,9 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					940,	-- Upper Deck [The Vindicaar: LFD]
 					941,	-- Lower Deck [The Vindicaar: LFD]
 				},
+				["providers"] = {
+					{ "o", 272778 },	-- Rich Empyrium Deposit
+				},
 				["groups"] = {
 					q(48034, {	-- Empyrium Deposit Chunk
 						["provider"] = { "i", 151860 },	-- Empyrium Deposit Chunk
@@ -1034,6 +1037,9 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					VALSHARAH,
 					HIGHMOUNTAIN,
 					BROKEN_SHORE,
+				},
+				["providers"] = {
+					{ "o", 245325 },	-- Rich Felslate Deposit
 				},
 				["groups"] = {
 					q(38795, {	-- Felslate Deposit Sample
@@ -1133,6 +1139,9 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					VALSHARAH,
 					HIGHMOUNTAIN,
 					BROKEN_SHORE,
+				},
+				["providers"] = {
+					{ "o", 245324 },	-- Rich Leystone Deposit
 				},
 				["groups"] = {
 					q(38777, {	-- Leystone Deposit Sample

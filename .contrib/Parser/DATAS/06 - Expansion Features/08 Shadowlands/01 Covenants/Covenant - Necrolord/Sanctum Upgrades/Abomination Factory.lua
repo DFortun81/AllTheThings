@@ -1482,7 +1482,7 @@ root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, bubbleDown({ ["customCollect"] = "
 
 			-- Stitching Table Abomination 'Upgrades'
 				q(62575),	-- Crafted Armor Plating at Abominable Stitching Table
-				q(62824),	-- Crafted Back Mushrooms at Abominable Stitching Table
+				q(62824),	-- Crafted Back Mushrooms at Abominable Stitching Table (spellID 344796)
 				q(62580),	-- Crafted Barrel O'Fish at Abominable Stitching Table
 				q(62574),	-- Crafted Butterflies at Abominable Stitching Table
 				q(62762),	-- Crafted Chef Hat at Abominable Stitching Table
@@ -1501,24 +1501,24 @@ root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, bubbleDown({ ["customCollect"] = "
 				q(62577),	-- Crafted Magician's Hat at Abominable Stitching Table
 				q(62470),	-- Crafted Operational Instructions at Abominable Stitching Table
 				q(61561),	-- Crafted Outlaw Flag at Abominable Stitching Table
-				q(62826),	-- Crafted Pirate Hat at Abominable Stitching Table
+				q(62826),	-- Crafted Pirate Hat at Abominable Stitching Table (spellID 344769)
 				q(62576),	-- Crafted Plague Pack at Abominable Stitching Table
 				q(62476),	-- Crafted Red Eye Lens at Abominable Stitching Table
 				q(62571),	-- Crafted Safe Fall Pack at Abominable Stitching Table
-				q(62825),	-- Crafted Shoulder Sprouts at Abominable Stitching Table
+				q(62825),	-- Crafted Shoulder Sprouts at Abominable Stitching Table (spellID 344798)
 				q(62481),	-- Crafted Six-League Pack at Abominable Stitching Table
-				q(62817),	-- Crafted Skull Fungus at Abominable Stitching Table
+				q(62817),	-- Crafted Skull Fungus at Abominable Stitching Table (spellID 344766)
 				q(62474),	-- Crafted Skull Protector at Abominable Stitching Table
 				q(62760),	-- Crafted Trained Corpselice at Abominable Stitching Table
 				q(61562),	-- Crafted Trustworthy Doll at Abominable Stitching Table
-				q(62823),	-- Crafted Underpowered Gravity Pack at Abominable Stitching Table
-				q(62819),	-- Crafted Unworthy Crown at Abominable Stitching Table
+				q(62823),	-- Crafted Underpowered Gravity Pack at Abominable Stitching Table (spellID 344797)
+				q(62819),	-- Crafted Unworthy Crown at Abominable Stitching Table (spellID 344770)
 				q(62468),	-- Crafted Vestigial Wings at Abominable Stitching Table
 			}),
 			q(63397),	-- Triggered when Completing weeklies with abominations/receiving Sitched set gear
 			q(62573),	-- Abomination level 3 sitching Chef hat/Sticky Cat.
 			q(61512),	-- Completing Something Old, Something Used first time. Confirmed first time 30.09.2021
-			q(63099),	-- Opening 184589, Bag of Potions from Atticus
+			q(63099),	-- Opening "Bag of Potions" (itemID 184589) from Atticus (spellID 346867)
 			q(62535),	-- Triggered when completing 'Corspe Run' for the first time
 			q(60873),	-- Buying Bag of Sin Stones (180442) from Atticus
 			q(62988),	-- digging with Chordy in Revendreth

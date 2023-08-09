@@ -284,6 +284,33 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 			i(59599),	-- Volatile Thunderstick*
 		}),
 	}),
+	prof(HERBALISM, {
+		n(DISCOVERY, {
+			r(81708, {	-- Lifeblood [Rank 1] [CATA]
+				["rank"] = 1,
+				["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_6_0_2 }
+			}),
+			r(74497, {	-- Lifeblood (Rank 8) [CATA]
+				["rank"] = 8,
+				["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_6_0_2 }
+			}),
+		}),
+		spell(2366, {	-- Herb Gathering
+			i(52985),	-- Azshara's Veil
+			i(108362, {["timeline"] = {ADDED_6_0_2}}),	-- Azshara's Veil Stem
+			i(52983),	-- Cinderbloom
+			i(108360, {["timeline"] = {ADDED_6_0_2}}),	-- Cinderbloom Petal
+			i(52986),	-- Heartblossom
+			i(108363, {["timeline"] = {ADDED_6_0_2}}),	-- Heartblossom Petal
+			i(52984),	-- Stormvine
+			i(108361, {["timeline"] = {ADDED_6_0_2}}),	-- Stormvine Stalk
+			i(52987),	-- Twilight Jasmine
+			i(108364, {["timeline"] = {ADDED_6_0_2}}),	-- Twilight Jasmine Petal
+			i(52329),	-- Volatile Life
+			i(52988),	-- Whiptail
+			i(108365, {["timeline"] = {ADDED_6_0_2}}),	-- Whiptail Stem
+		}),
+	}),
 	prof(INSCRIPTION, {
 		-- #if AFTER WOD
 		spell(165466, {	-- Research: Blackfallow Ink
@@ -311,7 +338,7 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 				i(61993),    -- Six of Embers
 				i(61994),    -- Seven of Embers
 				i(61995),    -- Eight of Embers
-				
+
 				i(61996),    -- Ace of Stones
 				i(61997),    -- Two of Stones
 				i(61998),    -- Three of Stones
@@ -320,7 +347,7 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 				i(62001),    -- Six of Stones
 				i(62002),    -- Seven of Stones
 				i(62003),    -- Eight of Stones
-				
+
 				i(62004),    -- Ace of the Winds
 				i(62005),    -- Two of the Winds
 				i(62006),    -- Three of the Winds
@@ -329,7 +356,7 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 				i(62009),    -- Six of the Winds
 				i(62010),    -- Seven of the Winds
 				i(62011),    -- Eight of the Winds
-				
+
 				i(62012),    -- Ace of Waves
 				i(62013),    -- Two of Waves
 				i(62014),    -- Three of Waves

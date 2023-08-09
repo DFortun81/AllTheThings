@@ -1246,98 +1246,99 @@ settings.SetThingTracking = function(self, force)
 end
 -- Updates various application settings and values based on toggled Settings, as well as the Mode name and Refreshes the Settings
 settings.UpdateMode = function(self, doRefresh)
+	local filterSet = app.Modules.Filter.Set
 	if self:Get("Completionist") then
-		app.ItemSourceFilter = app.FilterItemSource
+		filterSet.ItemSource()
 		app.ActiveItemCollectionHelper = app.CompletionistItemCollectionHelper
 	else
 		if self:Get("MainOnly") and not self:Get("AccountMode") and not self:Get("DebugMode") then
-			app.ItemSourceFilter = app.FilterItemSourceUniqueOnlyMain
+			filterSet.ItemSource(true, true)
 			app.ActiveItemCollectionHelper = app.UniqueModeItemCollectionHelperOnlyMain
 		else
-			app.ItemSourceFilter = app.FilterItemSourceUnique
+			filterSet.ItemSource(true)
 			app.ActiveItemCollectionHelper = app.UniqueModeItemCollectionHelper
 		end
 	end
 	if self:Get("DebugMode") then
-		app.GroupFilter = app.NoFilter
-		app.UnobtainableFilter = app.NoFilter
-		app.VisibilityFilter = app.ObjectVisibilityFilter
-		app.ItemTypeFilter = app.NoFilter
-		app.ClassRequirementFilter = app.NoFilter
-		app.RaceRequirementFilter = app.NoFilter
-		app.RequiredSkillFilter = app.NoFilter
-		app.RequireEventFilter = app.NoFilter
-		app.RequireFactionFilter = app.NoFilter
-		app.RequireCustomCollectFilter = app.NoFilter
+		filterSet.Group()
+		filterSet.Unobtainable()
+		filterSet.Visible()
+		filterSet.FilterID()
+		filterSet.Class()
+		filterSet.Race()
+		filterSet.RequireSkill()
+		filterSet.Event()
+		filterSet.MinReputation()
+		filterSet.CustomCollect()
 		-- Default filter fallback in Debug mode is based on Show Completed toggles so that uncollectible/completed content can still be hidden in Debug if desired
-		app.DefaultGroupFilter = self:Get("Show:CompletedGroups") and app.NoFilter or app.Filter
-		app.DefaultThingFilter = self:Get("Show:CollectedThings") and app.NoFilter or app.Filter
+		filterSet.DefaultGroup(not self:Get("Show:CompletedGroups"))
+		filterSet.DefaultThing(not self:Get("Show:CollectedThings"))
 
 		settings:SetThingTracking("Debug")
 		app.MODE_ACCOUNT = nil
 		app.MODE_DEBUG = true
 	else
-		app.VisibilityFilter = app.ObjectVisibilityFilter
-		app.GroupFilter = app.FilterItemClass
-		app.DefaultGroupFilter = app.Filter
-		app.DefaultThingFilter = app.Filter
+		filterSet.Visible(true)
+		filterSet.Group(true)
+		filterSet.DefaultGroup(true)
+		filterSet.DefaultThing(true)
 		-- specifically hiding something
 		if settings:GetValue("Unobtainable", "DoFiltering") then
-			app.UnobtainableFilter = app.FilterItemClass_UnobtainableItem
+			filterSet.Unobtainable(true)
 		else
-			app.UnobtainableFilter = app.NoFilter
+			filterSet.Unobtainable()
 		end
 		if self:Get("Show:TrackableThings") then
-			app.ShowTrackableThings = app.FilterItemTrackable
+			filterSet.Trackable(true)
 		else
-			app.ShowTrackableThings = app.Filter
+			filterSet.Trackable()
 		end
 
 		if self:Get("AccountMode") then
-			app.ItemTypeFilter = app.NoFilter
-			app.ClassRequirementFilter = app.NoFilter
-			app.RequiredSkillFilter = app.NoFilter
-			app.RequireFactionFilter = app.NoFilter
-			app.RequireCustomCollectFilter = app.NoFilter
+			filterSet.FilterID()
+			filterSet.Class()
+			filterSet.RequireSkill()
+			filterSet.MinReputation()
+			filterSet.CustomCollect()
 			app.MODE_ACCOUNT = true
 			if self:Get("FactionMode") then
-				app.RaceRequirementFilter = app.FilterItemClass_RequireRacesCurrentFaction
+				filterSet.Race(true, true)
 			else
-				app.RaceRequirementFilter = app.NoFilter
+				filterSet.Race()
 			end
 
 			-- Force Account-Wide with Account Mode otherwise you get really dumb situations
 			settings:SetThingTracking("Account")
 		else
-			app.ItemTypeFilter = app.FilterItemClass_RequireItemFilter
-			app.ClassRequirementFilter = app.FilterItemClass_RequireClasses
-			app.RaceRequirementFilter = app.FilterItemClass_RequireRaces
-			app.RequiredSkillFilter = app.FilterItemClass_RequiredSkill
-			app.RequireFactionFilter = app.FilterItemClass_RequireFaction
-			app.RequireCustomCollectFilter = app.FilterItemClass_CustomCollect
+			filterSet.FilterID(true)
+			filterSet.Class(true)
+			filterSet.Race(true)
+			filterSet.RequireSkill(true)
+			filterSet.MinReputation(true)
+			filterSet.CustomCollect(true)
 
 			settings:SetThingTracking()
 			app.MODE_ACCOUNT = nil
 		end
 
 		if self:Get("Show:OnlyActiveEvents") then
-			app.RequireEventFilter = app.Modules.Events.FilterIsEventActive
+			filterSet.Event(true)
 		else
-			app.RequireEventFilter = app.NoFilter
+			filterSet.Event()
 		end
 
 		app.MODE_DEBUG = nil
 	end
 	app.MODE_DEBUG_OR_ACCOUNT = app.MODE_DEBUG or app.MODE_ACCOUNT
 	if self:Get("Show:CompletedGroups") then
-		app.GroupVisibilityFilter = app.NoFilter
+		filterSet.CompletedGroups()
 	else
-		app.GroupVisibilityFilter = app.FilterGroupsByCompletion
+		filterSet.CompletedGroups(true)
 	end
 	if self:Get("Show:CollectedThings") then
-		app.CollectedItemVisibilityFilter = app.NoFilter
+		filterSet.CompletedThings()
 	else
-		app.CollectedItemVisibilityFilter = app.Filter
+		filterSet.CompletedThings(true)
 	end
 	if app.AccountWideAchievements then
 		app.AchievementFilter = 4
@@ -1345,31 +1346,31 @@ settings.UpdateMode = function(self, doRefresh)
 		app.AchievementFilter = 13
 	end
 	if self:Get("Filter:BoEs") and not self:Get("Hide:BoEs") then
-		app.ItemBindFilter = app.FilterItemBind
+		filterSet.ItemUnbound(true)
 	else
-		app.ItemBindFilter = app.Filter
+		filterSet.ItemUnbound()
 	end
 	if self:Get("Hide:BoEs") then
-		app.RequireBindingFilter = app.FilterItemClass_RequireBinding
+		filterSet.Bound(true)
 	else
-		app.RequireBindingFilter = app.NoFilter
+		filterSet.Bound()
 	end
 	if self:Get("Hide:PvP") then
-		app.PvPFilter = app.FilterItemClass_PvP
+		filterSet.PvP(true)
 	else
-		app.PvPFilter = app.NoFilter
+		filterSet.PvP()
 	end
 	if self:Get("Show:PetBattles") then
-		app.PetBattleFilter = app.NoFilter
+		filterSet.PetBattles()
 	else
-		app.PetBattleFilter = app.FilterItemClass_PetBattles
+		filterSet.PetBattles(true)
 	end
 	app:UnregisterEvent("PLAYER_LEVEL_UP")
 	if self:Get("Filter:ByLevel") and not self:Get("DebugMode") then
 		app:RegisterEvent("PLAYER_LEVEL_UP")
-		app.GroupRequirementsFilter = app.FilterGroupsByLevel
+		filterSet.Level(true)
 	else
-		app.GroupRequirementsFilter = app.NoFilter
+		filterSet.Level()
 	end
 	app:UnregisterEvent("TAXIMAP_OPENED")
 	if self:Get("Thing:FlightPaths") or self:Get("DebugMode") then

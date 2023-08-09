@@ -1529,7 +1529,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if BEFORE CATA
 				i(8498, {	-- Emerald Whelpling (PET!)
+					-- #if AFTER 3.1.0
+					["crs"] = {
+						740,	-- Adolescent Whelp
+						741,	-- Dreaming Whelp
+					},
+					-- #else
 					["cr"] = 741,	-- Dreaming Whelp
+					-- #endif
 				}),
 				-- #endif
 			}),

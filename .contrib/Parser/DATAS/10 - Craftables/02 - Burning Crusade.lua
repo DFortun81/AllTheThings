@@ -578,23 +578,31 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 		i(27429),	-- Zangarian Sporefish
 	}),
 	prof(HERBALISM, {
-		["description"] = "The following items can be gathered by Herbalists out in the world.",
-		["groups"] = {
+		spell(2366, {	-- Herb Gathering
 			i(22790),	-- Ancient Lichen
+			i(108348, {["timeline"] = {ADDED_6_0_2}}),	-- Ancient Lichen Petal
 			i(22786),	-- Dreaming Glory
+			i(108345, {["timeline"] = {ADDED_6_0_2}}),	-- Dreaming Glory Petal
 			i(22795),	-- Fel Blossom
 			i(22794),	-- Fel Lotus
 			i(22785),	-- Felweed
+			i(108344, {["timeline"] = {ADDED_6_0_2}}),	-- Felweed Stalk
 			i(22788),	-- Flame Cap
 			i(22793),	-- Mana Thistle
-			i(35229),	-- Nether Residue
+			i(108351, {["timeline"] = {ADDED_6_0_2}}),	-- Mana Thistle Leaf
+			i(22575),	-- Mote of Life
 			i(22791),	-- Netherbloom
-			i(32468),	-- Netherdust Pollen
+			i(108349, {["timeline"] = {ADDED_6_0_2}}),	-- Netherbloom Leaf
+			i(32468, {["timeline"] = {ADDED_2_1_0}}),	-- Netherdust Pollen
+			i(22797),	-- Nightmare Seed
 			i(22792),	-- Nightmare Vine
+			i(108350, {["timeline"] = {ADDED_6_0_2}}),	-- Nightmare Vine Stem
 			i(22787),	-- Ragveil
+			i(108346, {["timeline"] = {ADDED_6_0_2}}),	-- Ragveil Cap
 			i(22789),	-- Terocone
+			i(108347, {["timeline"] = {ADDED_6_0_2}}),	-- Terocone Leaf
 			i(24401),	-- Unidentified Plant Parts
-		},
+		}),
 	}),
 	-- #if AFTER WRATH
 	prof(INSCRIPTION, {
