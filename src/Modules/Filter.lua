@@ -475,6 +475,7 @@ end
 api.Set.Visible = function(active)
 	app.VisibilityFilter = active and FilterVisible or NoFilter;
 end
+api.Get.Visible = function() return app.VisibilityFilter == FilterVisible end
 
 -- Completion
 -- Whether the group is not 'complete'

@@ -19544,14 +19544,11 @@ customWindowUpdates["RaidAssistant"] = function(self)
 		end
 
 		-- Update the groups without forcing Debug Mode.
-		-- local visibilityFilter = app.VisibilityFilter;
-		-- app.VisibilityFilter = app.ObjectVisibilityFilter;
-		-- TODO: maybe make an alternate way for windows to Update while ignoring filters...
+		local visibleState = app.Modules.Filter.Get.Visible();
 		app.Modules.Filter.Set.Visible()
 		self:BuildData();
 		self:BaseUpdate(true);
-		app.Modules.Filter.Set.Visible(true)
-		-- app.VisibilityFilter = visibilityFilter;
+		app.Modules.Filter.Set.Visible(visibleState)
 	end
 end;
 customWindowUpdates["Random"] = function(self)
