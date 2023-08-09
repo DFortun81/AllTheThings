@@ -11,8 +11,8 @@ local _, app = ...;
 -- Encapsulates the functionality for all filtering logic which is used to check if a given Object meets the applicable filters via User Settings
 
 -- Global locals
-local ipairs, select, type, GetFactionInfoByID, C_TransmogCollection_GetAllAppearanceSources, C_TransmogCollection_GetSourceInfo, C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance, rawget
-	= ipairs, select, type, GetFactionInfoByID, C_TransmogCollection.GetAllAppearanceSources, C_TransmogCollection.GetSourceInfo, C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance, rawget;
+local ipairs, select, pairs, type, GetFactionInfoByID, C_TransmogCollection_GetAllAppearanceSources, C_TransmogCollection_GetSourceInfo, C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance, rawget
+	= ipairs, select, pairs, type, GetFactionInfoByID, C_TransmogCollection.GetAllAppearanceSources, C_TransmogCollection.GetSourceInfo, C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance, rawget;
 
 -- App locals
 local containsAny = app.containsAny;
@@ -26,13 +26,20 @@ local GetRelativeValue, SearchForSourceIDQuickly, ATTAccountWideData, Settings;
 local api = {};
 app.Modules.Filter = api;
 
+-- Meaning "Don't display." - Returns false
+local function Filter() end;
+-- Meaning "Display as expected" - Returns true
+local function NoFilter() return true; end;
+
 --- api.Set[FilterName]([true]) or api.Set.FilterName([true])
 -- Function that allows defining whether that specific Filter will be applied
-api.Set = {};
+-- Need metatable since this can be accessed prior to Module-based Filters being defined (i.e. immediate Settings Update)
+api.Set = setmetatable({}, { __index = function(t,key) return Filter end})
 
 --- api.Get[FilterName]() or api.Get.FilterName()
 -- Function that allows checking whether that specific Filter will be applied
-api.Get = {}
+-- Need metatable since this can be accessed prior to Module-based Filters being defined (i.e. immediate Settings Update)
+api.Get = setmetatable({}, { __index = function(t,key) return Filter end})
 
 -- api.SettingsFilters.FilterFunction
 -- Allows accessing the direct SettingsFilter functions which are sometimes required explicitly
@@ -42,16 +49,28 @@ api.SettingsFilters = {}
 -- Allows accessing the direct Filter functions which are sometimes required explicitly
 api.Filters = {}
 
+local AccountFilters, CharacterFilters = {}, {}
 
--- Meaning "Don't display." - Returns false
-local function Filter() end;
--- Meaning "Display as expected" - Returns true
-local function NoFilter() return true; end;
+-- Helper function to encapsulate simple logic for a 'toggle' filter
+local function DefineToggleFilter(name, filterGroup, filter)
+	-- Filters capture
+	api.Filters[name] = filter;
+	-- Set implementation
+	api.Set[name] = function(active)
+		filterGroup[name] = active and api.Filters[name] or nil;
+	end
+	-- Get implementation
+	api.Get[name] = function()
+		return filterGroup[name] == api.Filters[name];
+	end
+end
+
 -- Whether the group has a binding designation, which means it basically cannot be moved to another Character
 local function FilterBind(group)	-- IsBoP
 	-- 1 = BoP, 4 = Quest Item... probably don't need that?
 	return group.b == 1;-- or group.b == 4;
 end
+api.Filters.Bind = FilterBind;
 -- Used in a lot of places, need to keep for now
 app.IsBoP = FilterBind;
 local function FilterInGame(item)	-- ItemIsInGame
@@ -59,86 +78,54 @@ local function FilterInGame(item)	-- ItemIsInGame
 end
 api.Filters.InGame = FilterInGame;
 
--- Unobtainable
-local SettingsFilterUnobtainable;
-local function FilterUnobtainable(item)	-- FilterItemClass_UnobtainableItem
-	return Settings:GetUnobtainable(item.u);
-end
-api.Set.Unobtainable = function(active)
-	if active then
-		SettingsFilterUnobtainable = FilterUnobtainable;
-	else
-		SettingsFilterUnobtainable = NoFilter;
+-- Unobtainable 	-- FilterItemClass_UnobtainableItem
+DefineToggleFilter("Unobtainable", AccountFilters,
+	function(item)
+		return Settings:GetUnobtainable(item.u);
 	end
-end
+);
 
--- PvP
-local SettingsFilterPvP;
-local function FilterPvP(item)	-- FilterItemClass_PvP
-	if item.pvp then
-		return false;
-	else
-		return true;
-	end
-end
-api.Set.PvP = function(active)
-	if active then
-		SettingsFilterPvP = FilterPvP;
-	else
-		SettingsFilterPvP = NoFilter;
-	end
-end
-
--- PetBattles
-local SettingsFilterPetBattles;
-local function FilterPetBattles(item)	-- FilterItemClass_PetBattles
-	if item.pb then
-		return false;
-	else
-		return true;
-	end
-end
-api.Set.PetBattles = function(active)
-	if active then
-		SettingsFilterPetBattles = FilterPetBattles;
-	else
-		SettingsFilterPetBattles = NoFilter;
-	end
-end
-
--- MinReputation
-local SettingsFilterMinReputation;
-local function FilterMinReputation(item)	-- FilterItemClass_RequireFaction
-	local minReputation = item.minReputation;
-	if minReputation and app.IsFactionExclusive(minReputation[1]) then
-		if minReputation[2] > (select(6, GetFactionInfoByID(minReputation[1])) or 0) then
-			--print("Filtering Out", item.key, item[item.key], item.text, item.minReputation[1], app.CreateFaction(item.minReputation[1]).text);
+-- PvP	-- FilterItemClass_PvP
+DefineToggleFilter("PvP", AccountFilters,
+	function(item)
+		if item.pvp then
 			return false;
 		else
 			return true;
 		end
-	else
-		return true;
 	end
-end
-api.Set.MinReputation = function(active)
-	if active then
-		SettingsFilterMinReputation = FilterMinReputation;
-	else
-		SettingsFilterMinReputation = NoFilter;
+);
+
+-- PetBattles
+DefineToggleFilter("PetBattles", AccountFilters,
+	function(item)
+		if item.pb then
+			return false;
+		else
+			return true;
+		end
 	end
-end
+);
+
+-- MinReputation
+DefineToggleFilter("MinReputation", AccountFilters,
+	function(item)
+		local minReputation = item.minReputation;
+		if minReputation and app.IsFactionExclusive(minReputation[1]) then
+			if minReputation[2] > (select(6, GetFactionInfoByID(minReputation[1])) or 0) then
+				--print("Filtering Out", item.key, item[item.key], item.text, item.minReputation[1], app.CreateFaction(item.minReputation[1]).text);
+				return false;
+			else
+				return true;
+			end
+		else
+			return true;
+		end
+	end
+);
 
 -- Event
-local SettingsFilterEvent;
-local FilterEvent = NoFilter;	-- defined in Event Module, set in OnReady
-api.Set.Event = function(active)
-	if active then
-		SettingsFilterEvent = FilterEvent;
-	else
-		SettingsFilterEvent = NoFilter;
-	end
-end
+-- Defined in OnLoad due to raw logic captured in Events Module
 
 -- ItemUnbound
 local SettingsFilterItemUnbound;
@@ -149,14 +136,14 @@ end
 api.Filters.ItemUnbound = ItemUnbound
 api.Set.ItemUnbound = function(active, nested)
 	if active then
-		SettingsFilterItemUnbound = ItemUnbound;
+		SettingsFilterItemUnbound = api.Filters.ItemUnbound;
 	elseif nested then
 		SettingsFilterItemUnbound = NoFilter;
 	else
 		SettingsFilterItemUnbound = Filter;
 	end
 end
-api.Get.ItemUnbound = function() return SettingsFilterItemUnbound == ItemUnbound end
+api.Get.ItemUnbound = function() return SettingsFilterItemUnbound == api.Filters.ItemUnbound end
 
 -- FilterID
 local SettingsFilterFilterID;
@@ -176,9 +163,10 @@ local function FilterFilterID(item)	-- FilterItemClass_RequireItemFilter
 		return true;
 	end
 end
+api.Filters.FilterID = FilterFilterID
 api.Set.FilterID = function(active)
 	if active then
-		SettingsFilterFilterID = FilterFilterID;
+		SettingsFilterFilterID = api.Filters.FilterID;
 	else
 		SettingsFilterFilterID = NoFilter;
 	end
@@ -190,9 +178,10 @@ local SettingsFilterBound;
 local function FilterBinding(item)	-- FilterItemClass_RequireBinding
 	return not item.itemID or FilterBind(item);
 end
+api.Filters.Bound = FilterBinding
 api.Set.Bound = function(active)
 	if active then
-		SettingsFilterBound = FilterBinding;
+		SettingsFilterBound = api.Filters.Bound;
 	else
 		SettingsFilterBound = NoFilter;
 	end
@@ -208,9 +197,10 @@ local function FilterRequireSkill(item)	-- FilterItemClass_RequiredSkill
 		return true;
 	end
 end
+api.Filters.RequireSkill = FilterRequireSkill
 api.Set.RequireSkill = function(active)
 	if active then
-		SettingsFilterRequireSkill = FilterRequireSkill;
+		SettingsFilterRequireSkill = api.Filters.RequireSkill;
 	else
 		SettingsFilterRequireSkill = NoFilter;
 	end
@@ -222,9 +212,10 @@ local SettingsFilterClass;
 local function FilterClass(item)	-- FilterItemClass_RequireClasses
 	return not item.nmc;
 end
+api.Filters.Class = FilterClass
 api.Set.Class = function(active)
 	if active then
-		SettingsFilterClass = FilterClass;
+		SettingsFilterClass = api.Filters.Class;
 	else
 		SettingsFilterClass = NoFilter;
 	end
@@ -236,14 +227,17 @@ local SettingsFilterRace, SettingsFilterRace_CurrentFaction;
 local function FilterRace(item)	-- FilterItemClass_RequireRaces
 	return not item.nmr;
 end
+api.Filters.Race = FilterRace
 local function FilterRace_Horde(item)
 	local races = item.races;
 	return races and containsAny(races, HORDE_ONLY);
 end
+api.Filters.Race_Horde = FilterRace_Horde
 local function FilterRace_Alliance(item)
 	local races = item.races;
 	return races and containsAny(races, ALLIANCE_ONLY);
 end
+api.Filters.Race_Alliance = FilterRace_Alliance
 local function FilterRace_CurrentFaction(item)	-- FilterItemClass_RequireRacesCurrentFaction
 	if item.nmr then
 		local r = item.r;
@@ -259,17 +253,18 @@ local function FilterRace_CurrentFaction(item)	-- FilterItemClass_RequireRacesCu
 		return true;
 	end
 end
+api.Filters.Race_CurrentFaction = FilterRace_CurrentFaction
 api.Set.Race = function(active, factionOnly)
 	if active then
 		if factionOnly then
-			SettingsFilterRace = FilterRace_CurrentFaction;
+			SettingsFilterRace = api.Filters.Race_CurrentFaction;
 			if app.FactionID == Enum.FlightPathFaction.Horde then
-				SettingsFilterRace_CurrentFaction = FilterRace_Horde;
+				SettingsFilterRace_CurrentFaction = api.Filters.Race_Horde;
 			else
-				SettingsFilterRace_CurrentFaction = FilterRace_Alliance;
+				SettingsFilterRace_CurrentFaction = api.Filters.Race_Alliance;
 			end
 		else
-			SettingsFilterRace = FilterRace;
+			SettingsFilterRace = api.Filters.Race;
 		end
 	else
 		SettingsFilterRace = NoFilter;
@@ -290,9 +285,10 @@ local function FilterCustomCollect(item)	-- FilterItemClass_CustomCollect
 	end
 	return true;
 end
+api.Filters.CustomCollect = FilterCustomCollect
 api.Set.CustomCollect = function(active)
 	if active then
-		SettingsFilterCustomCollect = FilterCustomCollect;
+		SettingsFilterCustomCollect = api.Filters.CustomCollect;
 	else
 		SettingsFilterCustomCollect = NoFilter;
 	end
@@ -414,12 +410,12 @@ api.Filters.ItemSourceUniqueMainOnly = FilterItemSourceUniqueOnlyMain;
 api.Set.ItemSource = function(useUnique, useMainOnly)
 	if useUnique then
 		if useMainOnly then
-			app.ItemSourceFilter = FilterItemSourceUniqueOnlyMain;
+			app.ItemSourceFilter = api.Filters.ItemSourceUniqueMainOnly;
 		else
-			app.ItemSourceFilter = FilterItemSourceUnique;
+			app.ItemSourceFilter = api.Filters.ItemSourceUnique;
 		end
 	else
-		app.ItemSourceFilter = FilterItemSource;
+		app.ItemSourceFilter = api.Filters.ItemSource;
 	end
 end
 
@@ -450,10 +446,10 @@ local function FilterLevel(group)	-- FilterGroupsByLevel
 	-- no level requirement on the group, have to include it
 	return true;
 end
-api.Filters.FilterLevel = FilterLevel
+api.Filters.Level = FilterLevel
 api.Set.Level = function(active)
 	if active then
-		SettingsFilterLevel = FilterLevel;
+		SettingsFilterLevel = api.Filters.Level;
 	else
 		SettingsFilterLevel = NoFilter;
 	end
@@ -464,18 +460,20 @@ end
 local function FilterTrackable(group)	-- FilterItemTrackable
 	return group.trackable;
 end
+api.Filters.Trackable = FilterTrackable
 api.Set.Trackable = function(active)
-	app.ShowTrackableThings = active and FilterTrackable or Filter;
+	app.ShowTrackableThings = active and api.Filters.Trackable or Filter;
 end
 
 -- Visible
 local function FilterVisible(group)
 	return group.visible;
 end
+api.Filters.Visible = FilterVisible
 api.Set.Visible = function(active)
-	app.VisibilityFilter = active and FilterVisible or NoFilter;
+	app.VisibilityFilter = active and api.Filters.Visible or NoFilter;
 end
-api.Get.Visible = function() return app.VisibilityFilter == FilterVisible end
+api.Get.Visible = function() return app.VisibilityFilter == api.Filters.Visible end
 
 -- Completion
 -- Whether the group is not 'complete'
@@ -485,14 +483,23 @@ local function FilterCompletion(group)	-- FilterGroupsByCompletion
 end
 
 -- Filter Combinations
+local function SettingsAccountFilters(o)
+	for name,filter in pairs(AccountFilters) do
+		if not filter(o) then return end
+	end
+	return true;
+end
+
 -- Represents filters which should be applied during Updates to groups
 local function SettingsFilters(item)	-- FilterItemClass
 	-- check Account trait filters
-	if SettingsFilterPvP(item)
-		and SettingsFilterPetBattles(item)
-		and SettingsFilterUnobtainable(item)
-		and SettingsFilterMinReputation(item)
-		and SettingsFilterEvent(item) then
+	if SettingsAccountFilters(item)
+		-- and SettingsFilterPvP(item)
+		-- and SettingsFilterPetBattles(item)
+		-- and SettingsFilterUnobtainable(item)
+		-- and SettingsFilterMinReputation(item)
+		-- and SettingsFilterEvent(item)
+		then
 		-- BoE can skip Character trait filters
 		if SettingsFilterItemUnbound(item) then return true; end
 		-- check Character trait filters
@@ -508,11 +515,13 @@ end
 -- Represents filters which should be applied during Updates to groups, but skips the BoE filter
 local function SettingsFilters_IgnoreBoEFilter(item)	-- FilterItemClass_IgnoreBoEFilter
 	-- check Account trait filters
-	if SettingsFilterPvP(item)
-		and SettingsFilterPetBattles(item)
-		and SettingsFilterUnobtainable(item)
-		and SettingsFilterMinReputation(item)
-		and SettingsFilterEvent(item) then
+	if SettingsAccountFilters(item)
+		-- and SettingsFilterPvP(item)
+		-- and SettingsFilterPetBattles(item)
+		-- and SettingsFilterUnobtainable(item)
+		-- and SettingsFilterMinReputation(item)
+		-- and SettingsFilterEvent(item)
+		then
 		-- check Character trait filters
 		return SettingsFilterBound(item)
 			and SettingsFilterClass(item)
@@ -527,11 +536,12 @@ api.SettingsFilters.IgnoreBoEFilter = SettingsFilters_IgnoreBoEFilter
 -- Represents current Account filtering for the Item (regardless of Character filters)
 local function SettingsFilterAccount(item)
 	-- check Account trait filters
-	return SettingsFilterPvP(item)
-		and SettingsFilterPetBattles(item)
-		and SettingsFilterUnobtainable(item)
-		and SettingsFilterMinReputation(item)
-		and SettingsFilterEvent(item);
+	return SettingsAccountFilters(item)
+		-- and SettingsFilterPvP(item)
+		-- and SettingsFilterPetBattles(item)
+		-- and SettingsFilterUnobtainable(item)
+		-- and SettingsFilterMinReputation(item)
+		-- and SettingsFilterEvent(item);
 end
 -- Represents current Character filtering for the Item (regardless of user-enabled filters)
 local function SettingsFilterCurrentCharacter(item)	-- CurrentCharacterFilters
@@ -591,7 +601,7 @@ end
 app.RecursiveDirectGroupRequirementsFilter = RecursiveDirectGroupRequirementsFilter;
 local function RecursiveUnobtainableFilter(group)
 	while group do
-		if not (SettingsFilterUnobtainable(group) and SettingsFilterEvent(group)) then return; end
+		if not ((AccountFilters.Unobtainable or NoFilter)(group) and (AccountFilters.Event or NoFilter)(group)) then return; end
 		group = group.parent;
 	end
 	return true;
@@ -633,8 +643,10 @@ app.RecursiveFirstDirectParentWithField = RecursiveFirstDirectParentWithField;
 api.OnLoad = function()
 	GetRelativeValue = app.GetRelativeValue
 	SearchForSourceIDQuickly = app.SearchForSourceIDQuickly
-	FilterEvent = app.Modules.Events.FilterIsEventActive
 	Settings = app.Settings;
+
+	-- Filters defined in other Modules... maybe link them dynamically somehow instead
+	DefineToggleFilter("Event", AccountFilters, app.Modules.Events.FilterIsEventActive);
 end
 api.OnStartup = function(AccountData)
 	ATTAccountWideData = AccountData
@@ -642,8 +654,37 @@ end
 
 -- temp sanity debug logging
 -- for name,setFilter in pairs(api.Set) do
--- 	api.Set[name] = function(...)
--- 		app.PrintDebug("Filter.Set",name,...)
--- 		return setFilter(...)
+-- 	if name ~= "ItemUnbound" then
+-- 		api.Set[name] = function(...)
+-- 			app.PrintDebug("Filter.Set",name,...)
+-- 			return setFilter(...)
+-- 		end
 -- 	end
 -- end
+
+local GetTimePreciseSec = GetTimePreciseSec;
+local Perf = { Count = {}, Time = {} }
+for name,filter in pairs(api.Filters) do
+	Perf.Count[name] = 0
+	Perf.Time[name] = 0
+
+	-- api.Filters[name] = function(...)
+	-- 	Perf.Count[name] = Perf.Count[name] + 1
+	-- 	local time = GetTimePreciseSec()
+	-- 	local f = filter(...)
+	-- 	Perf.Time[name] = Perf.Time[name] + (GetTimePreciseSec() - time)
+	-- 	return f
+	-- end
+end
+
+app.fstats = function()
+	app.print("Filter Stats")
+	print("-- Count")
+	for name,stat in pairs(Perf.Count) do
+		print(name,stat)
+	end
+	print("-- Time")
+	for name,stat in pairs(Perf.Time) do
+		print(name,stat)
+	end
+end

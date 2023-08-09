@@ -21250,7 +21250,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				end
 
 				local OnUpdateForLFGHeader = function(group)
-					local meetLevelrange = app.Modules.Filter.Filters.FilterLevel(group);
+					local meetLevelrange = app.Modules.Filter.Filters.Level(group);
 					if meetLevelrange or app.MODE_DEBUG_OR_ACCOUNT then
 						-- default logic for available LFG category/Debug/Account
 						return false;
