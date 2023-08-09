@@ -638,12 +638,14 @@ local function RecursiveFirstDirectParentWithField(group, field)
 end
 app.RecursiveFirstDirectParentWithField = RecursiveFirstDirectParentWithField;
 
-api.OnLoad = function(AccountData)
+api.OnLoad = function()
 	GetRelativeValue = app.GetRelativeValue
 	SearchForSourceIDQuickly = app.SearchForSourceIDQuickly
-	ATTAccountWideData = AccountData
 	FilterEvent = app.Modules.Events.FilterIsEventActive
 	Settings = app.Settings;
+end
+api.OnStartup = function(AccountData)
+	ATTAccountWideData = AccountData
 end
 
 -- temp sanity debug logging

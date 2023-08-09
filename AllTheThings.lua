@@ -190,6 +190,7 @@ app.DoModuleEvent = function(eventName)
 	-- See if any Modules have the event function defined, and call them now
 	for _,module in pairs(app.Modules) do
 		if module[eventName] then
+			-- app.PrintDebug(_,eventName,ATTAccountWideData)
 			app.FunctionRunner.Run(module[eventName], ATTAccountWideData);
 		end
 	end
@@ -201,6 +202,7 @@ local function LocalizeGlobal(globalName, init)
 		val = {};
 		_G[globalName] = val;
 	end
+	-- app.PrintDebug("LocalizeGlobal",globalName,val)
 	return val;
 end
 -- Returns the Global reference by name, setting it to the 'init' value if not already existing
@@ -22478,6 +22480,9 @@ app.Startup = function()
 	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
 	app:RegisterEvent("PET_BATTLE_OPENING_START")
 	app:RegisterEvent("PET_BATTLE_CLOSE")
+
+	-- See if any Modules have 'OnStartup' functions defined, and call them now
+	app.DoModuleEvent("OnStartup")
 
 	StartCoroutine("InitDataCoroutine", app.InitDataCoroutine);
 	-- app.PrintMemoryUsage("Startup:Done")
