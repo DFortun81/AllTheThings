@@ -4392,6 +4392,12 @@ root(ROOTS.Zones, {
 							["groups"] = WRATH_ENCHANTING,
 						}),
 					}),
+					prof(HERBALISM, {
+						n(28704, {	-- Dorothy Egan <Herbalism Trainer>
+							["coord"] = { 43.8, 34.8, NORTHREND_DALARAN },
+							["groups"] = WRATH_HERBALISM,
+						}),
+					}),
 				}),
 				n(QUESTS, {
 					applyclassicphase(WRATH_PHASE_THREE, q(14409, {	-- A Cautious Return

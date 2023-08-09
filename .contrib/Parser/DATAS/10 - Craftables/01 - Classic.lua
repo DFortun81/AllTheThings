@@ -1312,53 +1312,79 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		-- #endif
 	}),
 	prof(HERBALISM, {
-		["description"] = "The following items can be gathered by Herbalists out in the world.",
-		["groups"] = {
-			i(11020, {	-- Evergreen Pouch
-				["cost"] = {
-					{ "i", 11018, 2 },	-- Un'Goro Soil
-					{ "i", 11022, 1 },	-- Packet of Tharlendris Seeds
-				},
-				["groups"] = {
-					i(11024, {	-- Evergreen Herb Casing
-						i(11040),	-- Morrowgrain
-					}),
-				},
-			}),
-			i(8836),	-- Arthas' Tears [Herbalism 220]
-			i(13468),	-- Black Lotus [Herbalism 300]
-			i(8839),	-- Blindweed [Herbalism 235]
-			applyclassicphase(PHASE_FOUR, i(19726, {	-- Bloodvine [Herbalism 210] [ZG Only]
-				["timeline"] = { "removed 4.0.3" },
-			})),
-			i(2450),	-- Briarthorn [Herbalism 70]
-			i(2453),	-- Bruiseweed [Herbalism 100]
-			i(13463),	-- Dreamfoil [Herbalism 270]
-			i(2449),	-- Earthroot [Herbalism 15]
-			i(3818),	-- Fadeleaf [Herbalism 160]
-			i(4625),	-- Firebloom [Herbalism 205]
-			i(8845),	-- Ghost Mushroom [Herbalism 245]
-			i(13464),	-- Golden Sansam [Herbalism 260]
-			i(3821),	-- Goldthorn [Herbalism 170]
-			i(3369),	-- Grave Moss [Herbalism 120]
-			i(8846),	-- Gromsblood [Herbalism 250]
-			i(13467),	-- Icecap [Herbalism 290]
-			i(3358),	-- Khadgar's Whisker [Herbalism 185]
-			i(3356),	-- Kingsblood [Herbalism 125]
-			i(3357),	-- Liferoot [Herbalism 150]
-			i(785),		-- Mageroyal [Herbalism 50]
-			i(13465),	-- Mountain Silversage [Herbalism 280]
-			i(2447),	-- Peacebloom [Herbalism 1]
-			i(13466),	-- Plaguebloom [Herbalism 285]
-			i(8831),	-- Purple Lotus [Herbalism 210]
-			i(765),		-- Silverleaf [Herbalism 1]
-			i(3820),	-- Stranglekelp [Herbalism 85]
-			i(8838),	-- Sungrass [Herbalism 230]
-			i(2452),	-- Swiftthistle [Herbalism 70]
-			i(3355),	-- Wild Steelbloom [Herbalism 115]
-			i(8153),	-- Wildvine [Herbalism 210]
-			i(3819),	-- Wintersbite [Herbalism 195]
-		},
+		i(11020, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Evergreen Pouch
+			["cost"] = {
+				{ "i", 11018, 2 },	-- Un'Goro Soil
+				{ "i", 11022, 1 },	-- Packet of Tharlendris Seeds
+			},
+			["groups"] = {
+				i(11024, {	-- Evergreen Herb Casing
+					i(11040),	-- Morrowgrain
+				}),
+			},
+		})),
+		spell(2366, {	-- Herb Gathering
+			i(8836, {["timeline"] = {REMOVED_4_0_3}}),	-- Arthas' Tears
+			i(13468),	-- Black Lotus
+			i(8839),	-- Blindweed
+			i(108336, {["timeline"] = {ADDED_6_0_2}}),	-- Blindweed Stem
+			i(22710, {["timeline"] = {ADDED_2_0_6}}),	-- Bloodthistle
+			applyclassicphase(PHASE_FOUR, i(19726, {["timeline"] = {REMOVED_4_0_3}})),	-- Bloodvine
+			i(2450),	-- Briarthorn
+			i(108320, {["timeline"] = {ADDED_6_0_2}}),	-- Briarthorn Bramble
+			i(2453),	-- Bruiseweed
+			i(108322, {["timeline"] = {ADDED_6_0_2}}),	-- Bruiseweed Stem
+			i(3819),	-- Dragon's Teeth [CATA+] / Wintersbite
+			i(108329, {["timeline"] = {ADDED_6_0_2}}),	-- Dragon's Teeth Stem
+			i(13463),	-- Dreamfoil
+			i(108339, {["timeline"] = {ADDED_6_0_2}}),	-- Dreamfoil Blade
+			i(2449),	-- Earthroot
+			i(108319, {["timeline"] = {ADDED_6_0_2}}),	-- Earthroot Stem
+			i(7067),	-- Elemental Earth
+			i(7068),	-- Elemental Fire
+			i(7070),	-- Elemental Water
+			i(3818),	-- Fadeleaf
+			i(108328, {["timeline"] = {ADDED_6_0_2}}),	-- Fadeleaf Petal
+			i(4625),	-- Firebloom
+			i(108332, {["timeline"] = {ADDED_6_0_2}}),	-- Firebloom Petal
+			i(8845),	-- Ghost Mushroom
+			i(108337, {["timeline"] = {ADDED_6_0_2}}),	-- Ghost Mushroom Cap
+			i(13464),	-- Golden Sansam
+			i(108340, {["timeline"] = {ADDED_6_0_2}}),	-- Golden Sansam Leaf
+			i(3821),	-- Goldthorn
+			i(108331, {["timeline"] = {ADDED_6_0_2}}),	-- Goldthorn Bramble
+			i(3369),	-- Grave Moss
+			i(108327, {["timeline"] = {ADDED_6_0_2}}),	-- Grave Moss Leaf
+			i(8846),	-- Gromsblood
+			i(108338, {["timeline"] = {ADDED_6_0_2}}),	-- Gromsblood Leaf
+			i(13467),	-- Icecap
+			i(108343, {["timeline"] = {ADDED_6_0_2}}),	-- Icecap Petal
+			i(3358),	-- Khadgar's Whisker
+			i(108326, {["timeline"] = {ADDED_6_0_2}}),	-- Khadgar's Whisker Stem
+			i(3356),	-- Kingsblood
+			i(108324, {["timeline"] = {ADDED_6_0_2}}),	-- Kingsblood Petal
+			i(3357),	-- Liferoot
+			i(108325, {["timeline"] = {ADDED_6_0_2}}),	-- Liferoot Stem
+			i(785),		-- Mageroyal
+			i(108318, {["timeline"] = {ADDED_6_0_2}}),	-- Mageroyal Petal
+			i(13465),	-- Mountain Silversage
+			i(108341, {["timeline"] = {ADDED_6_0_2}}),	-- Mountain Silversage Stalk
+			i(2447),	-- Peacebloom
+			i(8831),	-- Purple Lotus
+			i(108333, {["timeline"] = {ADDED_6_0_2}}),	-- Purple Lotus Petal
+			i(765),		-- Silverleaf
+			i(13466),	-- Sorrowmoss [CATA+] / Plaguebloom
+			i(108342, {["timeline"] = {ADDED_6_0_2}}),	-- Sorrowmoss Leaf
+			i(3820),	-- Stranglekelp
+			i(108330, {["timeline"] = {ADDED_6_0_2}}),	-- Stranglekelp Blade
+			i(8838),	-- Sungrass
+			i(108335, {["timeline"] = {ADDED_6_0_2}}),	-- Sungrass Stalk
+			i(2452),	-- Swiftthistle
+			i(108321, {["timeline"] = {ADDED_6_0_2}}),	-- Swiftthistle Leaf
+			i(3355),	-- Wild Steelbloom
+			i(108323, {["timeline"] = {ADDED_6_0_2}}),	-- Wild Steelbloom Petal
+			i(8153),	-- Wildvine
+		}),
 	}),
 	-- #if AFTER WRATH
 	prof(INSCRIPTION, {

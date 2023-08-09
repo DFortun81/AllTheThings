@@ -308,6 +308,53 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 			},
 		},
 	}),
+	prof(HERBALISM, {
+		n(DISCOVERY, {
+			r(195114, {	-- Herb Gathering (Legion)
+				["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
+				["collectible"] = false,
+			}),
+			r(193290),	-- Herbalism Journal
+			applyclassicphase(BFA_PHASE_ONE, r(265834, {["timeline"] = {ADDED_8_0_1}})),	-- Herb Gathering (Legion)
+		}),
+		spell(2366, {	-- Herb Gathering
+			i(151857, {["timeline"] = {ADDED_7_3_0}}),	-- Adolescent Astral Glory
+			i(124101),	-- Aethril
+			i(129117),	-- Aethril Sample
+			i(129284),	-- Aethril Seed
+			i(151565, {["timeline"] = {ADDED_7_3_0}}),	-- Astral Glory
+			i(151858, {["timeline"] = {ADDED_7_3_0}}),	-- Astral Glory Root Cluster
+			i(129141),	-- Blight-Choked Herb
+			i(129136),	-- Blight-Twisted Herb
+			i(124102),	-- Dreamleaf
+			i(129118),	-- Dreamleaf Sample
+			i(129285),	-- Dreamleaf Seed
+			i(153045, {	-- Fel Lasher (PET!)
+				["description"] = "This can be looted from any herb on Argus.",
+				["timeline"] = { ADDED_7_3_0 }
+			}),
+			i(124106),	-- Felwort
+			i(129122),	-- Felwort Sample
+			i(129289),	-- Felwort Seed
+			i(124104),	-- Fjarnskaggl
+			i(129120),	-- Fjarnskaggl Sample
+			i(129287),	-- Fjarnskaggl Seed
+			i(124103),	-- Foxflower
+			i(129278),	-- Foxflower Scent Gland
+			i(129286),	-- Foxflower Seed
+			i(129140),	-- Jeweled Spade Handle
+			i(129137),	-- Nibbled Foxflower Stem
+			i(129135),	-- Ragged Strips of Silk
+			i(129138),	-- Ram's-Horn Trowel
+			i(129142),	-- Runed Journal Page
+			i(129143),	-- Scribbled Ramblings
+			i(124105),	-- Starlight Rose
+			i(129288),	-- Starlight Rose Seed
+			i(129158),	-- Starlight Rosedust
+			i(129121),	-- Starlight Rosedust
+			i(151856, {["timeline"] = {ADDED_7_3_0}}),	-- Withered Astral Glory
+		}),
+	}),
 	prof(INSCRIPTION, {
 		filter(GLYPHS, {
 			i(140630),	-- Mark of the Doe (CI!)

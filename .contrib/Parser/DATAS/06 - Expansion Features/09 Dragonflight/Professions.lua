@@ -18,14 +18,7 @@ local EARTH_ELEMENTAL = {
 		{ 53.6, 31.0, THE_WAKING_SHORES },
 	},
 };
-local ALCHEMY_KNOWLEDGE = 2024;
-local BLACKSMITHING_KNOWLEDGE = 2023;
-local ENCHANTING_KNOWLEDGE = 2030;
-local ENGINEERING_KNOWLEDGE = 2027;
-local HERBALISM_KNOWLEDGE = 2034;
-local INSCRIPTION_KNOWLEDGE = 2028;
 local JEWELCRAFTING_KNOWLEDGE = 2029;
-local LEATHERWORKING_KNOWLEDGE = 2025;
 local MINING_KNOWLEDGE = 2035;
 local SKINNING_KNOWLEDGE = 2033;
 local TAILORING_KNOWLEDGE = 2026;
@@ -387,111 +380,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "i", 202105 },	-- Rusted Coin of the Isles
 				}),
 			}),
-		})),
-		prof(HERBALISM, bubbleDown({ ["requireSkill"] = HERBALISM }, {
-			n(QUESTS, {
-				q(70364, {	-- Dragon Isles Herbalism
-					["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Herbalism.",
-					["sourceQuests"] = {
-						67700,	-- To the Dragon Isles! [A]
-						65444,	-- To the Dragon Isles! [H]
-					},
-					["provider"] = { "n", 192010 },	-- Szarostrasza <Herbalism Trainer>
-					["coord"] = { 57.4, 65.8, THE_WAKING_SHORES },
-					["lockCriteria"] = { 1, "spellID", 366242},	-- Dragon Isles Herbalism
-				}),
-				q(72243, {	-- Dragon Isles Herbalism
-					["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Herbalism.",
-					["sourceQuests"] = {
-						67700,	-- To the Dragon Isles! [A]
-						65444,	-- To the Dragon Isles! [H]
-					},
-					["provider"] = { "n", 192549 },	-- Feilin Kuan
-					["coord"] = { 76.8, 34.0, THE_WAKING_SHORES },
-					["lockCriteria"] = { 1, "spellID", 366242},	-- Dragon Isles Herbalism
-				}),
-				q(70026, {	-- Artisan's Supply: Lava Beetles
-					["provider"] = { "n", 192549 },	-- Feilin Kuan
-					["coord"] = { 76.8, 34.0, THE_WAKING_SHORES },
-					["cost"] = { { "i", 197755, 5 }, },	-- 5x Lava Beetle
-					["_drop"] = { "g" },
-				}),
-				q(70253, {	-- Hidden Profession Master Herbalism
-					["name"] = "Hidden Profession Master: Herbalism",
-					["provider"] = { "n", 194839 },	-- Hua Greenpaw
-					["coord"] = { 58.4, 50.0, OHNAHRAN_PLAINS },
-				}),
-				q(70190, {	-- Specialized Secrets: Herbalism
-					["sourceQuests"] = { 69979 },	-- A Worthy Hunt
-					["provider"] = { "n", 193110 },	-- Khadin
-					["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
-					["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
-					["isRepeatable"] = true,
-					["g"] = {
-						i(190456),	-- Artisan's Mettle
-					},
-				}),
-			}),
-			n(QUESTS, sharedData({
-				["description"] = "Requires 25 Skill.",
-				["provider"] = { "n", 185549 },	-- Agrikus
-				["coord"] = { 38.2, 68.6, VALDRAKKEN },
-				["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-				["isWeekly"] = true,
-				["g"] = {
-					i(199115),	-- Herbalism Field Notes
-				},
-			},{
-				q(70614),	-- Bubble Craze
-				q(70613),	-- Get Their Bark Before They Bite
-				q(70616),	-- How Many??
-				q(70615),	-- The Case of the Missing Herbs
-			})),
-			filter(RECIPES, {
-				["description"] = "These are learned by specialization.",
-				["g"] = sharedData({ ["cost"] = { { "c", HERBALISM_KNOWLEDGE, 1 } }, }, {
-					r(391088),	-- Refine Herbs++
-					r(391089),	-- Refine Herbs+++
-					r(390392, {["timeline"] = {ADDED_10_0_5}}),	-- Overload Elemental Herb
-				}),
-			}),
-			n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
-				["isWeekly"] = true,
-				["g"] = {
-					currency(HERBALISM_KNOWLEDGE),
-				},
-			},{
-				i(199115),	-- Herbalism Field Notes
-				q(74107, {	-- Inscription Order: Herbalism
-					["name"] = "Inscription Order: Herbalism",
-					["description"] = "Requires a crafting order from Inscription.",
-					["provider"] = { "i", 194704 },	-- Draconic Treatise on Herbalism
-				}),
-				q(71857, {	-- Weekly Herbalism Knowledgepoint #1
-					["name"] = "Weekly Herbalism Knowledgepoint #1",
-					["provider"] = { "i", 200677 },	-- Dreambloom Petal
-				}),
-				q(71858, {	-- Weekly Herbalism Knowledgepoint #2
-					["name"] = "Weekly Herbalism Knowledgepoint #2",
-					["provider"] = { "i", 200677 },	-- Dreambloom Petal
-				}),
-				q(71859, {	-- Weekly Herbalism Knowledgepoint #3
-					["name"] = "Weekly Herbalism Knowledgepoint #3",
-					["provider"] = { "i", 200677 },	-- Dreambloom Petal
-				}),
-				q(71860, {	-- Weekly Herbalism Knowledgepoint #4
-					["name"] = "Weekly Herbalism Knowledgepoint #4",
-					["provider"] = { "i", 200677 },	-- Dreambloom Petal
-				}),
-				q(71861, {	-- Weekly Herbalism Knowledgepoint #5
-					["name"] = "Weekly Herbalism Knowledgepoint #5",
-					["provider"] = { "i", 200677 },	-- Dreambloom Petal
-				}),
-				q(71864, {	-- Weekly Herbalism Knowledgepoint #6
-					["name"] = "Weekly Herbalism Knowledgepoint #6",
-					["provider"] = { "i", 200678 },	-- Dreambloom
-				}),
-			})),
 		})),
 		prof(JEWELCRAFTING, bubbleDown({ ["requireSkill"] = JEWELCRAFTING }, {
 			n(QUESTS, {

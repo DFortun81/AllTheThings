@@ -26,7 +26,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			}),
 			prof(ENCHANTING, {
 				n(136041, {	-- Emily Fairweather <Enchanting Trainer>
-					--["coord"] = { }
+					["coord"] = { 74.1, 11.5, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = appendGroups(BFA_ENCHANTING, {
 						r(264473),	-- Kul Tiran Enchanting
@@ -76,6 +76,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					["g"] = {
 						recipe(282975), -- Schematic: The Ub3r-Spanner
 					},
+				}),
+			}),
+			prof(HERBALISM, {
+				n(136096, {	-- Declan Senal <Herbalism Trainer>
+					["coord"] = { 71.5, 4.9, BORALUS },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = appendGroups(BFA_HERBALISM, {
+						r(265831),	-- Herb Gathering (Kul Tiran)
+					}),
 				}),
 			}),
 			prof(INSCRIPTION, bubbleDown({ ["requireSkill"] = INSCRIPTION }, {
@@ -152,7 +161,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				n(136063, {	-- Cassandra Brennor <Leatherworking Trainer>
 					["coord"] = { 75.5, 12.6, BORALUS },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = appendGroups(BFA_BLACKSMITHING, {
+					["g"] = appendGroups(BFA_LEATHERWORKING, {
 						r(264592),	-- Kul Tiran Leatherworking
 					}),
 				}),

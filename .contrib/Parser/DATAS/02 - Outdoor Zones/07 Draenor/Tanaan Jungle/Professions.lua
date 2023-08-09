@@ -6,14 +6,6 @@ root(ROOTS.Zones, {
 	m(DRAENOR, {
 		m(TANAAN_JUNGLE, {
 			n(PROFESSIONS, {
-				o(243334, {	-- Withered Herb
-					["requireSkill"] = HERBALISM,
-					["g"] = {
-						n(95132, {	-- Disturbed Podling
-							i(118595),	-- Nightshade Sproutling (PET!)
-						}),
-					},
-				}),
 				n(94605, {	-- Apexis Gemcutter
 					["requireSkill"] = JEWELCRAFTING,
 					["description"] = "In order to learn these recipes, you have to take the appropriate gemcutter module to this NPC and then right-click to learn how to craft it.",

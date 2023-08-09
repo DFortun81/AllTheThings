@@ -462,6 +462,78 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 			},
 		}),
 	}),
+	prof(HERBALISM, {
+		n(DISCOVERY, {
+			r(55428, {	-- Lifeblood [Rank 1] / Rank 2 [CATA]
+				-- #if AFTER CATA
+				["rank"] = 2,
+				-- #else
+				["rank"] = 1,
+				-- #endif
+				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
+			}),
+			r(55480, {	-- Lifeblood [Rank 2] / Rank 3 [CATA]
+				-- #if AFTER CATA
+				["rank"] = 3,
+				-- #else
+				["rank"] = 2,
+				-- #endif
+				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
+			}),
+			r(55500, {	-- Lifeblood [Rank 3] / Rank 4 [CATA]
+				-- #if AFTER CATA
+				["rank"] = 4,
+				-- #else
+				["rank"] = 3,
+				-- #endif
+				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
+			}),
+			r(55501, {	-- Lifeblood (Rank 4) / Rank 5 [CATA]
+				-- #if AFTER CATA
+				["rank"] = 5,
+				-- #else
+				["rank"] = 4,
+				-- #endif
+				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
+			}),
+			r(55502, {	-- Lifeblood (Rank 5) / Rank 6 [CATA]
+				-- #if AFTER CATA
+				["rank"] = 6,
+				-- #else
+				["rank"] = 5,
+				-- #endif
+				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
+			}),
+			r(55503, {	-- Lifeblood (Rank 6) / Rank 7 [CATA]
+				-- #if AFTER CATA
+				["rank"] = 7,
+				-- #else
+				["rank"] = 6,
+				-- #endif
+				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
+			}),
+		}),
+		spell(2366, {	-- Herb Gathering
+			i(36903),	-- Adder's Tongue
+			i(108353, {["timeline"] = {ADDED_6_0_2}}),	-- Adder's Tongue Stem
+			i(37704),	-- Crystallized Life
+			i(37921),	-- Deadnettle
+			i(108358, {["timeline"] = {ADDED_6_0_2}}),	-- Deadnettle Bramble
+			i(39970),	-- Fire Leaf
+			i(108359, {["timeline"] = {ADDED_6_0_2}}),	-- Fire Leaf Bramble
+			i(36908),	-- Frost Lotus
+			i(36901),	-- Goldclover
+			i(108352, {["timeline"] = {ADDED_6_0_2}}),	-- Goldclover Leaf
+			i(36906),	-- Icethorn
+			i(108356, {["timeline"] = {ADDED_6_0_2}}),	-- Icethorn Bramble
+			i(36905),	-- Lichbloom
+			i(108355, {["timeline"] = {ADDED_6_0_2}}),	-- Lichbloom Stalk
+			i(36907),	-- Talandra's Rose
+			i(108357, {["timeline"] = {ADDED_6_0_2}}),	-- Talandra's Rose Petal
+			i(36904),	-- Tiger Lily
+			i(108354, {["timeline"] = {ADDED_6_0_2}}),	-- Tiger Lily Petal
+		}),
+	}),
 	prof(INSCRIPTION, {
 		-- #if AFTER WOD
 		filter(GLYPHS, {
@@ -567,20 +639,6 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 			i(42413),	-- Figurine - Sapphire Owl
 			i(42395),	-- Figurine - Twilight Serpent
 		}),
-	}),
-	prof(HERBALISM, {
-		["description"] = "The following items can be gathered by Herbalists out in the world.",
-		["groups"] = {
-			i(36903),	-- Adder's Tongue
-			i(37704),	-- Crystallized Life
-			i(37921),	-- Deadnettle
-			i(36908),	-- Frost Lotus
-			i(36901),	-- Goldclover
-			i(36906),	-- Icethorn
-			i(36905),	-- Lichbloom
-			i(36907),	-- Talandra's Rose
-			i(36904),	-- Tiger Lily
-		},
 	}),
 	prof(LEATHERWORKING, {
 		filter(BAGS, {

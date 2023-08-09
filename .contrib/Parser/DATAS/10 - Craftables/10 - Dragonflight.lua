@@ -1452,7 +1452,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 		i(194966),	-- Thousandbite Piranha
 	}),
 	prof(HERBALISM, {
-		spell(366252, {	-- Herb Gathering
+		spell(2366, {	-- Herb Gathering
 			i(191467),	-- Bubble Poppy+
 			i(191468),	-- Bubble Poppy++
 			i(191469),	-- Bubble Poppy+++
@@ -1465,6 +1465,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(202014),	-- Infused Pollen
 			i(197755),	-- Lava Beetle
 			i(200506),	-- Roused Seedling
+			i(190330),	-- Rousing Decay
 			i(200507),	-- Decayed Roused Seedling
 			i(200508),	-- Propagating Roused Seedling
 			i(200509),	-- Agitated Roused Seedling
@@ -1514,6 +1515,52 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			r(391516),	-- Windswept Writhebark
 			r(391447),	-- Writhebark
 		}),
+		n(FIRST_CRAFTS_HEADER, sharedData({
+			["requireSkill"] = HERBALISM,
+		},{
+			-- Bubble Poppy
+			FirstCraft(71972, 391444);	-- Bubble Poppy
+			FirstCraft(71990, 391507);	-- Decayed Bubble Poppy
+			FirstCraft(71982, 391509);	-- Frigid Bubble Poppy
+			FirstCraft(71994, 391505);	-- Infurious Bubble Poppy
+			FirstCraft(75142, 405124, ADDED_10_1_0);	-- Lambent Bubble Poppy
+			FirstCraft(71973, 391511);	-- Lush Bubble Poppy
+			FirstCraft(71986, 391513);	-- Titan-Touched Bubble Poppy
+			FirstCraft(71978, 391515);	-- Windswept Bubble Poppy
+			-- Hochenblume
+			FirstCraft(71988, 391492);	-- Decayed Hochenblume
+			FirstCraft(71980, 391460);	-- Frigid Hochenblume
+			FirstCraft(71992, 391498);	-- Infurious Hochenblume
+			FirstCraft(75141, 405123, ADDED_10_1_0);	-- Lambent Hochenblume
+			FirstCraft(71969, 391415);	-- Lush Hochenblume
+			FirstCraft(71984, 391496);	-- Titan-Touched Hochenblume
+			FirstCraft(71976, 391431);	-- Windswept Hochenblume
+			-- Saxifrage
+			FirstCraft(71974, 391441);	-- Saxifrage
+			FirstCraft(71991, 391500);	-- Decayed Saxifrage
+			FirstCraft(71983, 391501);	-- Frigid Saxifrage
+			FirstCraft(72341, 391499);	-- Infurious Saxifrage
+			FirstCraft(75143, 405126, ADDED_10_1_0);	-- Lambent Saxifrage
+			FirstCraft(71975, 391502);	-- Lush Saxifrage
+			FirstCraft(71987, 391503);	-- Titan-Touched Saxifrage
+			FirstCraft(71979, 391504);	-- Windswept Saxifrage
+			-- Writhebark
+			FirstCraft(71970, 391447);	-- Writhebark
+			FirstCraft(71989, 391508);	-- Decayed Writhebark
+			FirstCraft(71981, 391510);	-- Frigid Writhebark
+			FirstCraft(71993, 391506);	-- Infurious Writhebark
+			FirstCraft(75144, 405127, ADDED_10_1_0);	-- Lambent Writhebark
+			FirstCraft(71971, 391512);	-- Lush Writhebark
+			FirstCraft(71985, 391514);	-- Titan-Touched Writhebark
+			FirstCraft(71977, 391516);	-- Windswept Writhebark
+			-- Overload
+			FirstCraft(72345, 391564);	-- Overload Decayed Herb
+			FirstCraft(72343, 391562);	-- Overload Frigid Herb
+			FirstCraft(72348, 391558);	-- Overload Infurious Herb
+			FirstCraft(75138, 405134, ADDED_10_1_0);	-- Overload Lambent Herb
+			FirstCraft(72344, 391557);	-- Overload Titan-Touched Herb
+			FirstCraft(72342, 391560);	-- Overload Windswept Herb
+		})),
 	}),
 	prof(INSCRIPTION, {
 		spell(382981, {	-- Dragon Isles Milling
@@ -2996,44 +3043,6 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(71943),	-- Glimmer of Order Drop
 		}),
 		prof(HERBALISM, {
-			q(71969),	-- First Lush Hochenblume Harvest
-			q(71970),	-- First Writhebark Harvest
-			q(71971),	-- First Lush Writhebark Harvest
-			q(71972),	-- First Bubble Poppy Harvest
-			q(71973),	-- First Lush Bubble Poppy Harvest
-			q(71974),	-- First Saxifrage Harvest
-			q(71975),	-- First Lush Saxifrage Harvest
-			q(71976),	-- First Windswept Hochenblume Harvest
-			q(71977),	-- First Windswept Writhebark Harvest
-			q(71978),	-- First Windswept Bubble Poppy Harvest
-			q(71979),	-- First Windswept Saxifrage Harvest
-			q(71980),	-- First Frigid Hochenblume Harvest
-			q(71981),	-- First Frigid Writhebark Harvest
-			q(71982),	-- First Frigid Bubble Poppy Harvest
-			q(71983),	-- First Frigid Saxifrage Harvest
-			q(71984),	-- First Titan-Touched Hochenblume Harvest
-			q(71985),	-- First Titan-Touched Writhebark
-			q(71986),	-- First Titan-Touched Bubble Poppy
-			q(71987),	-- First Titan-Touched Saxifrage
-			q(71988),	-- First Decayed Hochenblume
-			q(71989),	-- First Decayed Writhebark
-			q(71990),	-- First Decayed Bubble Poppy
-			q(71991),	-- First Decayed Saxifrage
-			q(71992),	-- First Infurious Hochenblume
-			q(71993),	-- First Infurious Writhebark
-			q(71994),	-- First Infurious Bubble Poppy
-			q(72341),	-- First Infurious Saxifrage
-			q(72342),	-- First Overload Windswept Herb
-			q(72343),	-- First Overload Frigid Herb
-			q(72344),	-- First Overload Titan-Touched Herb
-			q(72345),	-- First Overload Decayed Herb
-			q(72348),	-- First Overload Infurious Herb
-			q(75142, {["timeline"] = {ADDED_10_1_0}}),	-- First Lambent Bubble Poppy
-			q(75141, {["timeline"] = {ADDED_10_1_0}}),	-- First Lambant Hochenblume
-			q(75143, {["timeline"] = {ADDED_10_1_0}}),	-- First Lambent Saxifrage
-			q(75144, {["timeline"] = {ADDED_10_1_0}}),	-- First Lambent Writhebark
-			q(75138, {["timeline"] = {ADDED_10_1_0}}),	-- First Overload Lambent Herb
-			--
 			q(74121),	-- Herbing Enraged Sprout
 			q(74230),	-- Herbing Azra's Prized Peony
 		}),

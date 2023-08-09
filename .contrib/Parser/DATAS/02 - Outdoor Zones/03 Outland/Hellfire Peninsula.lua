@@ -404,6 +404,17 @@ root(ROOTS.Zones, {
 						},
 						["groups"] = TBC_ENCHANTING,
 					}),
+					prof(HERBALISM, {
+						["crs"] = {
+							18776,	-- Rorelien <Herbalism Trainer> (A)
+							18748,	-- Ruak Stronghorn <Herbalism Trainer> (H)
+						},
+						["coords"] = {
+							{ 53.6, 65.8, HELLFIRE_PENINSULA },
+							{ 52.2, 36.2, HELLFIRE_PENINSULA },
+						},
+						["groups"] = TBC_HERBALISM,
+					}),
 				}),
 				n(QUESTS, {
 					q(10864, {	-- A Burden of Souls

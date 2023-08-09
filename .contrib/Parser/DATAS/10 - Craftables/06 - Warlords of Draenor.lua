@@ -308,6 +308,28 @@ root(ROOTS.Craftables, tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDow
 			-- #ENDIF
 		}),
 	}),
+	prof(HERBALISM, {
+		spell(2366, {	-- Herb Gathering
+			DRAENOR_HERBALISM,
+			i(109625),	-- Broken Fireweed Stem
+			i(109624),	-- Broken Frostweed Stem
+			i(116053),	-- Draenic Seeds
+			i(109125),	-- Fireweed
+			i(109124),	-- Frostweed
+			i(109126),	-- Gorgrond Flytrap
+			i(109626),	-- Gorgrond Flytrap Ichor
+			i(109128),	-- Nagrand Arrowbloom
+			i(109628),	-- Nagrand Arrowbloom Petal
+			i(109127),	-- Starflower
+			i(109627),	-- Starflower Petal
+		}),
+		filter(BATTLE_PETS, {
+			i(118595, {	-- Nightshade Sproutling (PET!)
+				["crs"] = { 95132 },	-- Disturbed Podling
+				["requireSkill"] = HERBALISM
+			}),
+		}),
+	}),
 	prof(INSCRIPTION, {
 		category(106, {	-- Tarot Cards
 			sp(163294, {	-- Darkmoon Card of Draenor

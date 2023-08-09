@@ -454,6 +454,29 @@ root(ROOTS.Craftables, tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDow
 			i(89992),    -- Schematic: Serpent's Heart Firework
 		}),
 	}),
+	prof(HERBALISM, {
+		n(DISCOVERY, {
+			r(121279, {	-- Lifeblood (Rank 9) [MOP]
+				["rank"] = 9,
+				["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 }
+			}),
+		}),
+		spell(2366, {	-- Herb Gathering
+			i(89639),	-- Desecrated Herb
+			i(97624, {["timeline"] = {ADDED_5_3_0}}),	-- Desecrated Herb Pod
+			i(79011),	-- Fool's Cap
+			i(97623, {["timeline"] = {ADDED_5_3_0}}),	-- Fool's Cap Spores
+			i(72238),	-- Golden Lotus
+			i(72234),	-- Green Tea Leaf
+			i(72237),	-- Rain Poppy
+			i(97620, {["timeline"] = {ADDED_5_3_0}}),	-- Rain Poppy Petal
+			i(72235),	-- Silkweed
+			i(97621, {["timeline"] = {ADDED_5_3_0}}),	-- Silkweed Stem
+			i(79010),	-- Snow Lily
+			i(97622, {["timeline"] = {ADDED_5_3_0}}),	-- Snow Lily Petal
+			i(97619, {["timeline"] = {ADDED_5_3_0}}),	-- Torn Green Tea Leaf
+		}),
+	}),
 	prof(INSCRIPTION, {
 		-- #if AFTER WOD
 		spell(165467, {	-- Research: Ink of Dreams
@@ -481,7 +504,7 @@ root(ROOTS.Craftables, tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDow
 				i(79304),    -- Six of Cranes
 				i(79305),    -- Seven of Cranes
 				i(79306),    -- Eight of Cranes
-				
+
 				i(79291),    -- Ace of Oxen
 				i(79292),    -- Two of Oxen
 				i(79293),    -- Three of Oxen
@@ -490,7 +513,7 @@ root(ROOTS.Craftables, tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDow
 				i(79296),    -- Six of Oxen
 				i(79297),    -- Seven of Oxen
 				i(79298),    -- Eight of Oxen
-				
+
 				i(79307),    -- Ace of Serpents
 				i(79308),    -- Two of Serpents
 				i(79309),    -- Three of Serpents
@@ -499,7 +522,7 @@ root(ROOTS.Craftables, tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDow
 				i(79312),    -- Six of Serpents
 				i(79313),    -- Seven of Serpents
 				i(79314),    -- Eight of Serpents
-				
+
 				i(79283),    -- Ace of Tigers
 				i(79284),    -- Two of Tigers
 				i(79285),    -- Three of Tigers

@@ -41,6 +41,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					}),
 				}),
 			}),
+			prof(HERBALISM, {
+				n(122704, {	-- Jahden Fla <Herbalism Trainer>
+					["coord"] = { 42.2, 35.6, DAZARALOR },
+					["races"] = HORDE_ONLY,
+					["g"] = appendGroups(BFA_HERBALISM, {
+						r(265835),	-- Herb Gathering (Zandalari)
+					}),
+				}),
+			}),
 			prof(INSCRIPTION, bubbleDown({ ["requireSkill"] = INSCRIPTION }, {
 				n(130901, {	-- Chronicler Grazzul <Inscription Trainer>
 					["coord"] = { 42.4, 39.6, THE_GREAT_SEAL },
