@@ -638,7 +638,7 @@ local function RecursiveFirstDirectParentWithField(group, field)
 end
 app.RecursiveFirstDirectParentWithField = RecursiveFirstDirectParentWithField;
 
-api.OnReady = function(AccountData)
+api.OnLoad = function(AccountData)
 	GetRelativeValue = app.GetRelativeValue
 	SearchForSourceIDQuickly = app.SearchForSourceIDQuickly
 	ATTAccountWideData = AccountData

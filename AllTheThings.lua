@@ -23456,4 +23456,7 @@ app.events.VIGNETTES_UPDATED = function()
 end
 end	-- Vignette Functionality Scope
 
+-- See if any Modules have 'OnLoad' functions defined, and call them now
+app.DoModuleEvent("OnLoad")
+
 -- app.PrintMemoryUsage("AllTheThings.EOF");

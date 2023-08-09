@@ -230,7 +230,7 @@ end
 -- Access via AllTheThings.Modules.Costs
 local api = {};
 app.Modules.Costs = api;
-api.OnReady = function()
+api.OnLoad = function()
 	SearchForField = app.SearchForField;
 	SearchForFieldContainer = app.SearchForFieldContainer;
 	DGU = app.DirectGroupUpdate;
