@@ -117,6 +117,7 @@ local DefaultValues = {
 	["costProgress"] = 0,
 	["costTotal"] = 0,
 };
+app.ClassDefaultValues_TEMP = DefaultValues;
 -- Represents default field evaluation logic for all Classes unless defined within the Class
 local DefaultFields = {
 	-- Cloned groups will not directly have a parent, but they will instead have a sourceParent, so fill in with that instead
@@ -174,6 +175,7 @@ local DefaultFields = {
 		return nmr;
 	end,
 };
+app.ClassDefaultFields_TEMP = DefaultFields;
 
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
 local classDefinitions, _cache = {};

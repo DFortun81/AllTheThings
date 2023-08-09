@@ -7158,70 +7158,10 @@ end -- Refresh Functions
 -- Lib Helpers
 (function()
 -- Represents non-nil default values which are valid for all Objects
-local ObjectDefaults = {
-	["progress"] = 0,
-	["total"] = 0,
-	["costProgress"] = 0,
-	["costTotal"] = 0,
-};
 local getmetatable =
 	  getmetatable;
-local ObjectFunctions = {
-	-- cloned groups will not directly have a parent, but they will instead have a sourceParent, so fill in with that instead
-	["parent"] = function(t)
-		return t.sourceParent;
-	end,
-	-- way easier to just be able to dynamically reference a hash whenever instead of needing to ensure it is created first
-	["hash"] = function(t)
-		return app.CreateHash(t);
-	end,
-	-- modItemID doesn't exist for Items which NEVER use a modID or bonusID (illusions, music rolls, mounts, etc.)
-	["modItemID"] = function(t)
-		return t.itemID;
-	end,
-	-- default 'text' should be a valid link or the 'name'
-	["text"] = function(t)
-		return t.link or t.name;
-	end,
-	-- whether something is marked as repeatable in some way
-	["repeatable"] = function(t)
-		return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly or t.isWorldQuest;
-	end,
-	-- whether something is considered 'missing' by seeing if it can search for itself
-	["_missing"] = function(t)
-		local key = t.key;
-		-- only process this logic for real 'Things' in the game
-		if not app.ThingKeys[key] then return; end
-		-- quest 76250
-		-- item with modID, so key is itemID, t[key] is 13544
-		-- SFO uses 'modItemID' to verify 'itemID' search result object accuracy, thus '13544' never matches the expected '13544.01'
-		-- somehow we need to know to search by 'itemID' but using the 'modItemID' here
-		local val = key == "itemID" and t.modItemID or t[key];
-		local o = app.SearchForObject(key, val, "field");
-		local missing = true;
-		while o do
-			missing = rawget(o, "_missing");
-			o = not missing and (o.sourceParent or o.parent) or nil;
-		end
-		t._missing = missing;
-		return missing;
-	end,
-	["nmc"] = function(t)
-		local c = t.c;
-		local nmc = c and not containsValue(c, app.ClassIndex) or false;
-		-- app.PrintDebug("base.nmc",t.__type,nmc)
-		t.nmc = nmc;
-		return nmc;
-	end,
-	["nmr"] = function(t)
-		local races = t.races;
-		local r = t.r;
-		local nmr = (r and r ~= app.FactionID) or (races and not containsValue(races, app.RaceIndex)) or false;
-		-- app.PrintDebug("base.nmr",t.__type,nmr)
-		t.nmr = nmr;
-		return nmr;
-	end,
-};
+local ObjectDefaults = app.ClassDefaultValues_TEMP;
+local ObjectFunctions = app.ClassDefaultFields_TEMP;
 local objFunc;
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
 app.BaseObjectFields = not app.__perf and function(fields, type)

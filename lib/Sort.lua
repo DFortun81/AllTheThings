@@ -73,9 +73,9 @@ local defaultComparison = function(a,b)
 	elseif bcomp then
 		return false;
 	end
-	-- Headers
-	acomp = a.headerID;
-	bcomp = b.headerID;
+	-- Headers/Filters
+	acomp = a.headerID or a.filterID;
+	bcomp = b.headerID or b.filterID;
 	if acomp then
 		if not bcomp then return true; end
 	elseif bcomp then
