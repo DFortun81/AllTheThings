@@ -131,7 +131,7 @@ end
 
 -- Event
 local SettingsFilterEvent;
-local FilterEvent;	-- defined in Event Module, set in OnReady
+local FilterEvent = NoFilter;	-- defined in Event Module, set in OnReady
 api.Set.Event = function(active)
 	if active then
 		SettingsFilterEvent = FilterEvent;
