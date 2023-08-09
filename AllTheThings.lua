@@ -5138,23 +5138,28 @@ app.FillGroups = function(group)
 end
 end	-- Auto-Expansion Logic
 
--- build a 'Cost' group which matches the "cost" tag of this group
+-- build a 'Cost' group which matches the "cost"/"providers (items)" tag of this group
 app.BuildCost = function(group)
+	local cost = group.cost;
+	cost = cost and type(cost) == "table" and cost;
+	local providers = group.providers;
+	if not cost and not providers then return; end
+
 	-- Pop out the cost objects into their own sub-groups for accessibility
+	local costGroup = {
+		["text"] = L["COST"],
+		["description"] = L["COST_DESC"],
+		["icon"] = "Interface\\Icons\\INV_Misc_Coin_02",
+		["sourceIgnored"] = true,
+		["OnUpdate"] = app.AlwaysShowUpdate,
+		["skipFilling"] = true,
+		["g"] = {},
+	};
 	-- Gold cost currently ignored
-	-- print("BuildCost",group.itemID)
-	if group.cost and type(group.cost) == "table" then
-		local costGroup = {
-				["text"] = L["COST"],
-				["description"] = L["COST_DESC"],
-				["icon"] = "Interface\\Icons\\INV_Misc_Coin_02",
-				["sourceIgnored"] = true,
-				["OnUpdate"] = app.AlwaysShowUpdate,
-				["skipFilling"] = true,
-				["g"] = {},
-			};
+	-- print("BuildCost",group.hash)
+	if cost then
 		local costItem;
-		for i,c in ipairs(group.cost) do
+		for _,c in ipairs(cost) do
 			-- print("Cost",c[1],c[2],c[3]);
 			costItem = nil;
 			if c[1] == "c" then
@@ -5168,9 +5173,24 @@ app.BuildCost = function(group)
 				NestObject(costGroup, costItem);
 			end
 		end
-		NestObject(group, costGroup, nil, 1);
 	end
+	if providers then
+		local costItem;
+		for _,c in ipairs(providers) do
+			-- print("Cost",c[1],c[2],c[3]);
+			costItem = nil;
+			if c[1] == "i" then
+				costItem = app.SearchForObject("itemID", c[2], "field") or app.CreateItem(c[2]);
+				costItem = app.CreateCostItem(costItem, 1);
+			end
+			if costItem then
+				NestObject(costGroup, costItem);
+			end
+		end
+	end
+	NestObject(group, costGroup, nil, 1);
 end
+
 (function()
 -- Keys for groups which are in-game 'Things'
 app.ThingKeys = {
