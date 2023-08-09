@@ -571,47 +571,39 @@ end
 -- Recursive Filters
 -- Recursively check outwards to find if any parent group restricts the filter for the current settings
 local function RecursiveGroupRequirementsFilter(group)
-	if app.GroupFilter(group) then
-		local filterParent = group.sourceParent or group.parent;
-		if filterParent then
-			return RecursiveGroupRequirementsFilter(filterParent)
-		end
-		return true;
+	local Filter = app.GroupFilter;
+	while group do
+		if not Filter(group) then return; end
+		group = group.sourceParent or group.parent;
 	end
-	return false;
+	return true;
 end
 app.RecursiveGroupRequirementsFilter = RecursiveGroupRequirementsFilter;
 -- Recursively check outwards within the direct parent chain only to find if any parent group restricts the filter for this character
 local function RecursiveDirectGroupRequirementsFilter(group)
-	if app.GroupFilter(group) then
-		local filterParent = group.parent;
-		if filterParent then
-			return RecursiveDirectGroupRequirementsFilter(filterParent)
-		end
-		return true;
+	local Filter = app.GroupFilter;
+	while group do
+		if not Filter(group) then return; end
+		group = group.parent;
 	end
-	return false;
+	return true;
 end
 app.RecursiveDirectGroupRequirementsFilter = RecursiveDirectGroupRequirementsFilter;
 local function RecursiveUnobtainableFilter(group)
-	if SettingsFilterUnobtainable(group) and SettingsFilterEvent(group) then
-		local parent = group.parent;
-		if parent then return RecursiveUnobtainableFilter(parent); end
-		return true;
+	while group do
+		if not (SettingsFilterUnobtainable(group) and SettingsFilterEvent(group)) then return; end
+		group = group.parent;
 	end
-	return false;
+	return true;
 end
 app.RecursiveUnobtainableFilter = RecursiveUnobtainableFilter;
 -- Recursively check outwards to find if any parent group restricts the filter for the current character (regardless of settings)
 local function RecursiveCharacterRequirementsFilter(group)
-	if SettingsFilterCurrentCharacter(group) then
-		local filterParent = group.sourceParent or group.parent;
-		if filterParent then
-			return RecursiveCharacterRequirementsFilter(filterParent)
-		end
-		return true;
+	while group do
+		if not SettingsFilterCurrentCharacter(group) then return; end
+		group = group.sourceParent or group.parent;
 	end
-	return false;
+	return true;
 end
 app.RecursiveCharacterRequirementsFilter = RecursiveCharacterRequirementsFilter;
 -- Returns the first encountered group tracing upwards in parent hierarchy which has a value for the provided field.
