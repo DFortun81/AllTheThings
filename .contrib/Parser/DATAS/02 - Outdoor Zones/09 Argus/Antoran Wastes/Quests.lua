@@ -45,27 +45,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			q(48870, {	-- The Many-Faced Devourer
 				["description"] = "You need to collect three bones from various locations around the zone. After you have done the initial collection and summoning process, you can always summon the rare.\n\nYou must have |cFFFFFFFFCall of the Devourer|r in your inventory to be able to see the bones.",
 				["cost"] = {
-					{ "i", 152786, 1 },	-- Call of the Devourer
 					{ "i", 152993, 1 },	-- Ur'zul Bone
 					{ "i", 152992, 1 },	-- Imp Bone
 					{ "i", 152991, 1 },	-- Fiend Bone
-				},
-				["g"] = {
-					i(152993, {	-- Ur'zul Bone
-						["description"] = "Next to the altar.",
-						["coord"] = { 50.4, 56.1, ANTORAN_WASTES },
-					}),
-					i(152992, {	-- Imp Bone
-						["description"] = "Can be found inside the imp cave.",
-						["coords"] = {
-							{ 65.6, 26.3, ANTORAN_WASTES },	-- Entrance
-							{ 65.9, 19.4, ANTORAN_WASTES },	-- Imp Bone
-						},
-					}),
-					i(152991, {	-- Fiend Bone
-						["description"] = "Near Vrax'thul, on the east side of a black pillar.",
-						["coord"] = { 52.4, 35.3, ANTORAN_WASTES },
-					}),
 				},
 			}),
 		}),

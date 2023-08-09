@@ -26459,6 +26459,24 @@ root("ObjectDB", {
 			cn = "挖掘清单",
 		},
 	},
+	[276424] = {
+		readable = "Intact Imp Bones",
+		text = {
+			en = "Intact Imp Bones"
+		},
+	},
+	[276425] = {
+		readable = "Intact Fiend Bone",
+		text = {
+			en = "Intact Fiend Bone"
+		},
+	},
+	[276426] = {
+		readable = "Intact Ur'zul Bone",
+		text = {
+			en = "Intact Ur'zul Bone"
+		},
+	},
 	[276488] = {
 		readable = "Azurite Cannonball",
 		icon = "Interface/Icons/Ability_Rogue_CannonballBarrage",
