@@ -7179,9 +7179,9 @@ local ObjectFunctions = {
 	["modItemID"] = function(t)
 		return t.itemID;
 	end,
-	-- default 'text' should be a valid link or the colorized 'name'
+	-- default 'text' should be a valid link or the 'name'
 	["text"] = function(t)
-		return t.link or app.TryColorizeName(t, t.name);
+		return t.link or t.name;
 	end,
 	-- whether something is marked as repeatable in some way
 	["repeatable"] = function(t)
@@ -15012,7 +15012,7 @@ local function SetRowData(self, row, data)
 		else
 			rowLabel:SetPoint("RIGHT");
 		end
-		rowLabel:SetText(text);
+		rowLabel:SetText(app.TryColorizeName(data, text));
 		if data.font then
 			rowLabel:SetFontObject(data.font);
 			rowSummary:SetFontObject(data.font);
