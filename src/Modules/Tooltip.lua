@@ -45,12 +45,13 @@ local function GetBestObjectIDForName(name)
 	local o = objectNamesToIDs[name];
 	if o then
 		if #o > 1 then
+			local closestObjectID;
 			local mapID = GetCurrentMapID();
 			local pos = C_Map_GetPlayerMapPosition(mapID, "player");
 			if pos then
 				local px, py = pos:GetXY();
 				px, py = px * 100, py * 100;
-				local closestDistance, closestObjectID, dist, searchCoord = 99999, o[1];
+				local closestDistance, dist, searchCoord = 99999, o[1];
 				for i,objectID in ipairs(o) do
 					local searchResults = SearchForField("objectID", objectID);
 					if searchResults and #searchResults > 0 then
@@ -76,8 +77,8 @@ local function GetBestObjectIDForName(name)
 						end
 					end
 				end
-				return closestObjectID;
 			end
+			return closestObjectID;
 		end
 		return o[1];
 	end
