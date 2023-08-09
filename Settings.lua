@@ -2175,6 +2175,7 @@ local checkboxShowAllUnobtainable = child:CreateCheckBox(L["UNOBTAINABLE_ALL"],
 		for k,v in pairs(unobtainables) do
 			settings:SetValue("Unobtainable", k, checked)
 		end
+		self:OnRefresh();
 		settings:UpdateMode(1)
 	end
 )
@@ -2206,6 +2207,7 @@ function(self)
 			settings:SetValue("Unobtainable", k, checked)
 		end
 	end
+	checkboxShowAllUnobtainable:OnRefresh();
 	settings:UpdateMode(1)
 end)
 checkboxShowAllNoChance:AlignBelow(checkboxShowAllUnobtainable, 1)
@@ -2227,6 +2229,7 @@ for k,v in pairs(unobtainables) do
 		end,
 		function(self)
 			settings:SetValue("Unobtainable", k, self:GetChecked())
+			checkboxShowAllUnobtainable:OnRefresh();
 			settings:UpdateMode(1)
 		end)
 		filter:SetATTTooltip(v[2])
@@ -2266,6 +2269,7 @@ function(self)
 			settings:SetValue("Unobtainable", k, checked)
 		end
 	end
+	checkboxShowAllUnobtainable:OnRefresh();
 	settings:UpdateMode(1)
 end)
 checkboxShowAllHighChance:AlignBelow(last, -1)
@@ -2287,6 +2291,7 @@ for k,v in pairs(unobtainables) do
 		end,
 		function(self)
 			settings:SetValue("Unobtainable", k, self:GetChecked())
+			checkboxShowAllUnobtainable:OnRefresh();
 			settings:UpdateMode(1)
 		end)
 		filter:SetATTTooltip(v[2])
