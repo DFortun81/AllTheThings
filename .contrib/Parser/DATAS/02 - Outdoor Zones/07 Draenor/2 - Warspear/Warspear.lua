@@ -4,7 +4,6 @@
 root(ROOTS.Zones, {
 	m(DRAENOR, {
 		m(WARSPEAR, {
-			["achievementID"] = 9215,	-- Hero of Warspear
 			["isRaid"] = true,
 			["races"] = HORDE_ONLY,
 			["lvl"] = 100,

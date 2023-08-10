@@ -4,7 +4,6 @@
 root(ROOTS.Zones, {
 	m(DRAENOR, {
 		m(STORMSHIELD, {
-			["achievementID"] = 9214,	-- Hero of Stormshield
 			["isRaid"] = true,
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 100,
