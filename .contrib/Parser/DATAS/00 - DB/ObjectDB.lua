@@ -46198,6 +46198,9 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			en = "Familiar Journal",
 		},
 	},
+	
+	-- TODO: Do something with these, they aren't real.
+	-- Use a Custom Header instead?
 	[9000000] = {
 		readable = "Wind Sculpted Stone",
 		text = {
