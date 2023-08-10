@@ -27,6 +27,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["description"] = "Need to click in order Red - Black - Blue - Yellow - Green to open chest.",
 				["coord"] = { 55.9, 3.1, ZARALEK_CAVERN },
 				["questID"] = 75187,
+				["isDaily"] = true,
 			}),
 			o(388896, {	-- Crystal-encased Chest
 				["description"] = "Interact with the purple and yellow crystals to unlock the chest.",
