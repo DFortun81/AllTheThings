@@ -51,6 +51,22 @@ namespace ATT
         private static readonly string[] GameFlavors = { "", "wotlk", "classic" };
 
         /// <summary>
+        /// The default text value for an object, in each locale.
+        /// </summary>
+        private static readonly IDictionary<string, bool> LocaleDefaults = new Dictionary<string, bool>
+        {
+            { "Objects", true },
+            { "Entidades", true },
+            { "Objekte", true },
+            { "Entités", true },
+            { "Oggetti interagibili", true },
+            { "Objetos", true },
+            { "Объекты", true },
+            { "물체들", true },
+            { "道具", true },
+        };
+
+        /// <summary>
         /// All of the supported locales. (excluding english)
         /// </summary>
         private static readonly string[] SupportedLocales = { "es", "de", "fr", "it", "pt", "ru", "ko", "cn" };
@@ -208,9 +224,11 @@ namespace ATT
         private static string ParseNameFromDocument(string document)
         {
             int index = document.IndexOf(NAME_START);
-            if (index == -1) return "";
+            if (index == -1) return string.Empty;
             index += NAME_START.Length;
-            return document.Substring(index, document.IndexOf(NAME_END, index) - index).Replace("&quot;", "\"").Trim();
+            var name = document.Substring(index, document.IndexOf(NAME_END, index) - index).Replace("&quot;", "\"").Trim();
+            if (LocaleDefaults.ContainsKey(name)) return string.Empty;
+            return name;
         }
 
         /// <summary>
@@ -227,8 +245,6 @@ namespace ATT
             // Attempt to get the text table.
             bool dirty = false;
             Dictionary<string, object> textLocalizations;
-            Trace.Write("UpdateInformationFromWoWHead");
-            Trace.WriteLine(objectID);
             if (objectData.TryGetValue("text", out object data) && data != null)
             {
                 if (data is Dictionary<string, object> a) textLocalizations = a;
@@ -257,13 +273,18 @@ namespace ATT
             {
                 // Try to find the english document from WoWHead.
                 string englishDocument = string.Empty;
+                string name = string.Empty;
                 foreach (string flavor in GameFlavors)
                 {
                     englishDocument = GetDocumentFromWoWHead(objectID, "en", flavor);
                     if (!string.IsNullOrEmpty(englishDocument))
                     {
-                        gameFlavor = flavor;
-                        break;
+                        name = ParseNameFromDocument(englishDocument);
+                        if (!string.IsNullOrEmpty(name))
+                        {
+                            gameFlavor = flavor;
+                            break;
+                        }
                     }
                 }
 
@@ -276,7 +297,6 @@ namespace ATT
                 }
 
                 // Attempt to parse the english document.
-                string name = ParseNameFromDocument(englishDocument);
                 if (string.IsNullOrEmpty(name))
                 {
                     Trace.Write("Unable to find English name from document for object #");
