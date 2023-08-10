@@ -183,7 +183,7 @@ function(item)
 end);
 
 -- Race
-local SettingsFilterRace, SettingsFilterRace_CurrentFaction;
+local SettingsFilterRace_CurrentFaction;
 -- Whether this is for the current 'race'
 local function FilterRace(item)	-- FilterItemClass_RequireRaces
 	return not item.nmr;
@@ -218,17 +218,17 @@ api.Filters.Race_CurrentFaction = FilterRace_CurrentFaction
 api.Set.Race = function(active, factionOnly)
 	if active then
 		if factionOnly then
-			SettingsFilterRace = api.Filters.Race_CurrentFaction;
 			if app.FactionID == Enum.FlightPathFaction.Horde then
 				SettingsFilterRace_CurrentFaction = api.Filters.Race_Horde;
 			else
 				SettingsFilterRace_CurrentFaction = api.Filters.Race_Alliance;
 			end
+			CharacterFilters.Race = api.Filters.Race_CurrentFaction;
 		else
-			SettingsFilterRace = api.Filters.Race;
+			CharacterFilters.Race = api.Filters.Race;
 		end
 	else
-		SettingsFilterRace = NoFilter;
+		CharacterFilters.Race = nil;
 	end
 end
 
@@ -449,6 +449,7 @@ local function SettingsCharacterFilters(o)
 	end
 	return true;
 end
+app.CurrentCharacterFilters = SettingsCharacterFilters
 
 -- Represents filters which should be applied during Updates to groups
 local function SettingsFilters(item)	-- FilterItemClass
@@ -466,7 +467,7 @@ local function SettingsFilters(item)	-- FilterItemClass
 		return SettingsCharacterFilters(item)
 			-- and SettingsFilterBound(item)
 			-- and SettingsFilterClass(item)
-			and SettingsFilterRace(item)
+			-- and SettingsFilterRace(item)
 			-- and SettingsFilterFilterID(item)
 			-- and SettingsFilterRequireSkill(item)
 			-- and SettingsFilterCustomCollect(item)
@@ -487,7 +488,7 @@ local function SettingsFilters_IgnoreBoEFilter(item)	-- FilterItemClass_IgnoreBo
 		return SettingsCharacterFilters(item)
 			-- and SettingsFilterBound(item)
 			-- and SettingsFilterClass(item)
-			and SettingsFilterRace(item)
+			-- and SettingsFilterRace(item)
 			-- and SettingsFilterFilterID(item)
 			-- and SettingsFilterRequireSkill(item)
 			-- and SettingsFilterCustomCollect(item)
@@ -495,29 +496,6 @@ local function SettingsFilters_IgnoreBoEFilter(item)	-- FilterItemClass_IgnoreBo
 	end
 end
 api.SettingsFilters.IgnoreBoEFilter = SettingsFilters_IgnoreBoEFilter
--- Represents current Account filtering for the Item (regardless of Character filters)
-local function SettingsFilterAccount(item)
-	-- check Account trait filters
-	return SettingsAccountFilters(item)
-		-- and SettingsFilterPvP(item)
-		-- and SettingsFilterPetBattles(item)
-		-- and SettingsFilterUnobtainable(item)
-		-- and SettingsFilterMinReputation(item)
-		-- and SettingsFilterEvent(item);
-end
--- Represents current Character filtering for the Item (regardless of user-enabled filters)
-local function SettingsFilterCurrentCharacter(item)	-- CurrentCharacterFilters
-	-- check Character trait filters
-	return SettingsCharacterFilters(item)
-		-- and SettingsFilterBound(item)
-		-- and SettingsFilterClass(item)
-		and SettingsFilterRace(item)
-		-- and SettingsFilterFilterID(item)
-		-- and SettingsFilterRequireSkill(item)
-		-- and SettingsFilterCustomCollect(item)
-		-- and SettingsFilterLevel(item);
-end
-app.CurrentCharacterFilters = SettingsFilterCurrentCharacter
 
 -- TODO: adjust these function names
 -- Used as the general Group filter during updates
@@ -573,7 +551,7 @@ app.RecursiveUnobtainableFilter = RecursiveUnobtainableFilter;
 -- Recursively check outwards to find if any parent group restricts the filter for the current character (regardless of settings)
 local function RecursiveCharacterRequirementsFilter(group)
 	while group do
-		if not SettingsFilterCurrentCharacter(group) then return; end
+		if not SettingsCharacterFilters(group) then return; end
 		group = group.sourceParent or group.parent;
 	end
 	return true;
