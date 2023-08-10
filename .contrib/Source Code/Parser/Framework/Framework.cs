@@ -5172,12 +5172,13 @@ namespace ATT
                             if (!objectData.Any()) continue;
                             ObjectDB[key] = objectData;
                         }
+#if HARVESTOBJECTS
                         else
                         {
                             // Check for any updated information from WoWHead.
-                            //ObjectHarvester.UpdateInformationFromWoWHead(key, objectData);
-                            // For now, only get new object information.
+                            ObjectHarvester.UpdateInformationFromWoWHead(key, objectData);
                         }
+#endif
 
                         if (objectData.TryGetValue("icon", out object value))
                         {
