@@ -11,8 +11,8 @@ local _, app = ...;
 -- Encapsulates the functionality for all filtering logic which is used to check if a given Object meets the applicable filters via User Settings
 
 -- Global locals
-local ipairs, select, pairs, type, GetFactionInfoByID, C_TransmogCollection_GetAllAppearanceSources, C_TransmogCollection_GetSourceInfo, C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance, rawget
-	= ipairs, select, pairs, type, GetFactionInfoByID, C_TransmogCollection.GetAllAppearanceSources, C_TransmogCollection.GetSourceInfo, C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance, rawget;
+local ipairs, select, pairs, type, GetFactionInfoByID, rawget
+	= ipairs, select, pairs, type, GetFactionInfoByID, rawget;
 
 -- App locals
 local containsAny = app.containsAny;
@@ -295,6 +295,9 @@ api.Set.CustomCollect = function(active)
 end
 
 -- ItemSource
+if C_TransmogCollection then
+local C_TransmogCollection_GetAllAppearanceSources, C_TransmogCollection_GetSourceInfo, C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance
+	= C_TransmogCollection.GetAllAppearanceSources, C_TransmogCollection.GetSourceInfo, C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
 local function FilterItemSource(sourceInfo)
 	return sourceInfo.isCollected;
 end
@@ -417,6 +420,11 @@ api.Set.ItemSource = function(useUnique, useMainOnly)
 	else
 		app.ItemSourceFilter = api.Filters.ItemSource;
 	end
+end
+else
+api.Set.ItemSource = function(useUnique, useMainOnly)
+	-- Do nothing, not supported without C_TransmogCollection
+end
 end
 
 -- Level
