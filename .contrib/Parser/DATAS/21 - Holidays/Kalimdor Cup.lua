@@ -687,28 +687,35 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			["coord"] = { 27.2, 47.2, VALDRAKKEN },
 			["g"] = {
 				i(197615, {	-- Windborne Velocidrake: Teal Scales (DM!)
-					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 30 } },
+					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 50 } },
 				}),
+				i(203322, {	-- Winding Slitherdrake: Blonde Hair (DM!)
+					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+				}),
+				i(203349, {	-- Winding Slitherdrake: Curved Nose Horn (DM!)
+					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+				}),
+		
 				i(206592, {	-- Drake Racer's Belt
-					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
 				}),
 				i(206594, {	-- Drake Racer's Boots
-					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
 				}),
 				i(206591, {	-- Drake Racer's Handwraps
-					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
 				}),
 				i(206588, {	-- Drake Racer's Helmet
-					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
 				}),
 				i(206590, {	-- Drake Racer's Jersey
-					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
 				}),
 				i(206593, {	-- Drake Racer's Leggings
-					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
 				}),
 				i(206589, {	-- Drake Racer's Shoulderpads
-					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
 				}),
 			},
 		}),

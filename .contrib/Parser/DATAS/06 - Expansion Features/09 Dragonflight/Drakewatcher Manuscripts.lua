@@ -1015,9 +1015,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
 			["timeline"] = { "created 10.1.0.49407" },
 		}, {
-			i(203322),	-- Winding Slitherdrake: Blonde Hair
 			i(203340),	-- Winding Slitherdrake: Cluster Jaw Horns
-			i(203349),	-- Winding Slitherdrake: Curved Nose Horn
 			i(203319),	-- Winding Slitherdrake: Finned Cheek
 			i(203311),	-- Winding Slitherdrake: Hairy Chin
 			i(203343),	-- Winding Slitherdrake: Hairy Jaw
@@ -1055,6 +1053,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		header(HEADERS.Item, 204361, {	-- Winding Slitherdrake
 			i(208106),	-- Winding Slitherdrake: Infinite Scales (DM!)
+			i(203322),	-- Winding Slitherdrake: Blonde Hair (DM!)
+			i(203349),	-- Winding Slitherdrake: Curved Nose Horn (DM!)
 		}),
 	})),
 })));
