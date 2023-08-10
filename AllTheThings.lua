@@ -9889,7 +9889,7 @@ local fields = {
 		return cache.GetCachedField(t, "name", default_name);
 	end,
 	["icon"] = function(t)
-		return app.DifficultyIcons[t.difficultyID] or app.asset("Category_D&R");
+		return app.DifficultyIcons[t.difficultyID] or app.asset("Difficulty_Multi");
 	end,
 	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
