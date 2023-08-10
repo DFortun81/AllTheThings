@@ -541,7 +541,6 @@ root(ROOTS.Zones, m(PANDARIA, {
 					},
 				}),
 				n(64058, {	-- Jorunga Stonehoof <Blacksmithing Supplies>
-					["requireSkill"] = BLACKSMITHING,
 					["coord"] = { 26.0, 46.2, 391 },
 					["g"] = COMMON_MOP_BLACKSMITHING_RECIPES,
 				}),
@@ -941,106 +940,8 @@ root(ROOTS.Zones, m(PANDARIA, {
 					},
 				}),
 				n(64054, {	-- Krogo Darkhide <Leatherworking & Skinning Supplies>
-					["requireSkill"] = LEATHERWORKING,
 					["coord"] = { 30.5, 46.5, 391 },
-					["g"] = {
-						i(86240, {	-- Pattern: Contender's Dragonscale Belt
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86241, {	-- Pattern: Contender's Dragonscale Boots
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86242, {	-- Pattern: Contender's Dragonscale Bracers
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86243, {	-- Pattern: Contender's Dragonscale Chestguard
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86244, {	-- Pattern: Contender's Dragonscale Gloves
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86245, {	-- Pattern: Contender's Dragonscale Helm
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86246, {	-- Pattern: Contender's Dragonscale Leggings
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86247, {	-- Pattern: Contender's Dragonscale Shoulders
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86248, {	-- Pattern: Contender's Leather Belt
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86249, {	-- Pattern: Contender's Leather Boots
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86250, {	-- Pattern: Contender's Leather Bracers
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86251, {	-- Pattern: Contender's Leather Chestguard
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86252, {	-- Pattern: Contender's Leather Gloves
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86253, {	-- Pattern: Contender's Leather Helm
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86254, {	-- Pattern: Contender's Leather Leggings
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86255, {	-- Pattern: Contender's Leather Shoulders
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86256, {	-- Pattern: Contender's Scale Belt
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86257, {	-- Pattern: Contender's Scale Boots
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86258, {	-- Pattern: Contender's Scale Bracers
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86259, {	-- Pattern: Contender's Scale Chestguard
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86260, {	-- Pattern: Contender's Scale Gloves
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86261, {	-- Pattern: Contender's Scale Helm
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86262, {	-- Pattern: Contender's Scale Leggings
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86263, {	-- Pattern: Contender's Scale Shoulders
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86264, {	-- Pattern: Contender's Wyrmhide Belt
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86265, {	-- Pattern: Contender's Wyrmhide Boots
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86266, {	-- Pattern: Contender's Wyrmhide Bracers
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86267, {	-- Pattern: Contender's Wyrmhide Chestguard
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86268, {	-- Pattern: Contender's Wyrmhide Gloves
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86269, {	-- Pattern: Contender's Wyrmhide Helm
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86270, {	-- Pattern: Contender's Wyrmhide Leggings
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-						i(86271, {	-- Pattern: Contender's Wyrmhide Shoulders
-							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
-						}),
-					},
+					["g"] = COMMON_MOP_LEATHERWORKING_RECIPES,
 				}),
 				n(74010, {	-- Nadina Stargem <Raid Vendor>
 					["coord"] = { 43.3, 76.0, 392 },

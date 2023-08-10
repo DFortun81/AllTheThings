@@ -154,19 +154,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 20.6, 60.2, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(115358, {	-- Draenor Leatherworking
-							["filterID"] = MISC,
-							["g"] = {
-								recipe(171391),	-- Burnished Leather
-								i(116319),	-- Pattern: Journeying Helm (RECIPE!)
-								i(116320),	-- Pattern: Journeying Robes (RECIPE!)
-								i(116321),	-- Pattern: Journeying Slacks (RECIPE!)
-								i(120130),	-- Recipe: Secrets of Draenor Leatherworking
-								i(116322),	-- Pattern: Traveling Helm
-								i(116324),	-- Pattern: Traveling Leggings
-								i(116323),	-- Pattern: Traveling Tunic
-							},
-						}),
+						DRAENOR_LEATHERWORKING,
 						i(117566),	-- Heavy Frostwolf Shroud
 						i(111818),	-- The Tannery, lvl 1
 					},

@@ -81,6 +81,23 @@ root(ROOTS.Professions, prof(BLACKSMITHING, {
 				["provider"] = { "i", 94592 },	-- Lionheart Executioner, Reborn
 			}),
 		})),
+		n(QUESTS, {
+			q(32621, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Lightning Steel
+				["provider"] = { "i", 94721 },	-- Strange Metal Ingot
+				["coord"] = { 57.6, 33.8, ISLE_OF_THUNDER },
+				["g"] = {
+					i(94553, {	-- Notes on Lightning Steel
+						i(94568),	-- Plans: Drakefist Hammer, Reborn (RECIPE!)
+						i(94572),	-- Plans: Fireguard, Reborn (RECIPE!)
+						i(94552),	-- Plans: Lightning Steel Ingot (RECIPE!)
+						i(94571),	-- Plans: Lionheart Blade, Reborn (RECIPE!)
+						i(94569),	-- Plans: Lunar Crescent, Reborn (RECIPE!)
+						i(94570),	-- Plans: Planar Edge, Reborn (RECIPE!)
+						i(94567),	-- Plans: Thunder, Reborn (RECIPE!)
+					}),
+				},
+			})),
+		}),
 	})),
 	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 		q(38499, {	-- Strange New Ores

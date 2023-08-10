@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {
+root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	i(152668),	-- Expulsom
 	i(162460),	-- Hydrocore
 	i(162461),	-- Sanguicell
@@ -311,36 +311,16 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 			i(152877),	-- Veiled Crystal
 		}),
 		n(ARMOR_ENCHANTMENTS, {
-			i(153437, {	-- Enchant Gloves - Kul Tiran Crafting
-				["races"] = ALLIANCE_ONLY
-			}),
-			i(153430, {	-- Enchant Gloves - Kul Tiran Herbalism
-				["races"] = ALLIANCE_ONLY
-			}),
-			i(153431, {	-- Enchant Gloves - Kul Tiran Mining
-				["races"] = ALLIANCE_ONLY
-			}),
-			i(153434, {	-- Enchant Gloves - Kul Tiran Skinning
-				["races"] = ALLIANCE_ONLY
-			}),
-			i(153435, {	-- Enchant Gloves - Kul Tiran Surveying
-				["races"] = ALLIANCE_ONLY
-			}),
-			i(159471, {	-- Enchant Gloves - Zandalari Crafting
-				["races"] = HORDE_ONLY
-			}),
-			i(159464, {	-- Enchant Gloves - Zandalari Herbalism
-				["races"] = HORDE_ONLY
-			}),
-			i(159466, {	-- Enchant Gloves - Zandalari Mining
-				["races"] = HORDE_ONLY
-			}),
-			i(159467, {	-- Enchant Gloves - Zandalari Skinning
-				["races"] = HORDE_ONLY
-			}),
-			i(159468, {	-- Enchant Gloves - Zandalari Surveying
-				["races"] = HORDE_ONLY
-			}),
+			i(153437),	-- Enchant Gloves - Kul Tiran Crafting
+			i(153430),	-- Enchant Gloves - Kul Tiran Herbalism
+			i(153431),	-- Enchant Gloves - Kul Tiran Mining
+			i(153434),	-- Enchant Gloves - Kul Tiran Skinning
+			i(153435),	-- Enchant Gloves - Kul Tiran Surveying
+			i(159471),	-- Enchant Gloves - Zandalari Crafting
+			i(159464),	-- Enchant Gloves - Zandalari Herbalism
+			i(159466),	-- Enchant Gloves - Zandalari Mining
+			i(159467),	-- Enchant Gloves - Zandalari Skinning
+			i(159468),	-- Enchant Gloves - Zandalari Surveying
 			i(168446, {["timeline"] = {ADDED_8_2_0}}),	-- Enchant Ring - Accord of Critical Strike
 			i(168447, {["timeline"] = {ADDED_8_2_0}}),	-- Enchant Ring - Accord of Haste
 			i(168448, {["timeline"] = {ADDED_8_2_0}}),	-- Enchant Ring - Accord of Mastery
@@ -355,12 +335,8 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 			i(153441),	-- Enchant Ring - Seal of Versatility
 			i(160330),	-- Enchant Bracers - Cooled Hearthing
 			i(160328),	-- Enchant Bracers - Safe Hearthing
-			i(159469, {	-- Enchant Bracers - Swift Hearthing [A]
-				["races"] = ALLIANCE_ONLY
-			}),
-			i(153436, {	-- Enchant Bracers - Swift Hearthing [H]
-				["races"] = HORDE_ONLY
-			}),
+			i(159469),	-- Enchant Bracers - Swift Hearthing [A]
+			i(153436),	-- Enchant Bracers - Swift Hearthing [H]
 		}),
 		filter(MISC, {
 			i(165741),	-- Disenchanting Rod

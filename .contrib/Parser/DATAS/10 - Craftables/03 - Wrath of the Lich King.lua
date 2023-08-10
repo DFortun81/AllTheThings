@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {
+root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3 } }, {
 	prof(ALCHEMY, {
 		category(633, {	-- Potions
 			i(40077),	-- Crazy Alchemist's Potion
@@ -75,30 +75,30 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 		prof(9788, {	-- Armorsmith
 			["description"] = "These items can only be crafted by Blacksmiths who have completed the Art of the Armorsmith quest chain.",
 			["groups"] = {
-				i(41189, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Chestplate of Conquest
-				i(41190, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Legplates of Conquest
+				i(41189, {["timeline"] = {ADDED_3_0_3, REMOVED_4_0_3}}),	-- Chestplate of Conquest
+				i(41190, {["timeline"] = {ADDED_3_0_3, REMOVED_4_0_3}}),	-- Legplates of Conquest
 			},
 		}),
 		prof(9787, {	-- Weaponsmith
 			["description"] = "These items can only be crafted by Blacksmiths who have completed the Way of the Weaponsmith quest chain.",
 			["groups"] = {
-				i(41186, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Corroded Saronite Edge
-				i(41187, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Corroded Saronite Woundbringer
+				i(41186, {["timeline"] = {ADDED_3_0_3, REMOVED_4_0_3}}),	-- Corroded Saronite Edge
+				i(41187, {["timeline"] = {ADDED_3_0_3, REMOVED_4_0_3}}),	-- Corroded Saronite Woundbringer
 				i(41188),	-- Saronite Mindcrusher
 			},
 		}),
 		-- #endif
 		n(ARMOR, {
-			i(45559, {["timeline"]={"added 3.1.0"}}),	-- Battlelord's Plate Boots
-			i(45550, {["timeline"]={"added 3.1.0"}}),	-- Belt of the Titans
-			i(49907, {["timeline"]={"added 3.3.0"}}),	-- Boots of Kingly Upheaval
+			i(45559, {["timeline"] = {ADDED_3_1_0}}),	-- Battlelord's Plate Boots
+			i(45550, {["timeline"] = {ADDED_3_1_0}}),	-- Belt of the Titans
+			i(49907, {["timeline"] = {ADDED_3_3_0}}),	-- Boots of Kingly Upheaval
 			i(47591, {	-- Breastplate of the White Knight [A]
 				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { "added 3.2.0" },
+				["timeline"] = { ADDED_3_2_0 },
 			}),
 			i(47592, {	-- Breastplate of the White Knight [H]
 				["races"] = HORDE_ONLY,
-				["timeline"] = { "added 3.2.0" },
+				["timeline"] = { ADDED_3_2_0 },
 			}),
 			i(43860),	-- Brilliant Saronite Belt
 			i(41128),	-- Brilliant Saronite Boots
@@ -120,14 +120,14 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 			i(39083),	-- Cobalt Shoulders
 			i(41357),	-- Daunting Handguards
 			i(41345),	-- Daunting Legplates
-			i(49906, {["timeline"]={"added 3.3.0"}}),	-- Hellfrozen Bonegrinders
+			i(49906, {["timeline"] = {ADDED_3_3_0}}),	-- Hellfrozen Bonegrinders
 			i(41344),	-- Helm of Command
 			i(40955),	-- Horned Cobalt Helm
 			i(43586),	-- Icebane Chestguard
 			i(43587),	-- Icebane Girdle
 			i(43588),	-- Icebane Treads
-			i(45551, {["timeline"]={"added 3.1.0"}}),	-- Indestructible Plate Girdle
-			i(49903, {["timeline"]={"added 3.3.0"}}),	-- Legplates of Painful Death
+			i(45551, {["timeline"] = {ADDED_3_1_0}}),	-- Indestructible Plate Girdle
+			i(49903, {["timeline"] = {ADDED_3_3_0}}),	-- Legplates of Painful Death
 			i(42723),	-- Ornate Saronite Bracers
 			i(42724),	-- Ornate Saronite Gauntlets
 			i(42725),	-- Ornate Saronite Hauberk
@@ -136,10 +136,10 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 			i(42728),	-- Ornate Saronite Skullshield
 			i(42729),	-- Ornate Saronite Waistguard
 			i(42730),	-- Ornate Saronite Walkers
-			i(49904, {["timeline"]={"added 3.3.0"}}),	-- Pillars of Might
-			i(45552, {["timeline"]={"added 3.1.0"}}),	-- Plate Girdle of Righteousness
-			i(49905, {["timeline"]={"added 3.3.0"}}),	-- Protectors of Life
-			i(49902, {["timeline"]={"added 3.3.0"}}),	-- Puresteel Legplates
+			i(49904, {["timeline"] = {ADDED_3_3_0}}),	-- Pillars of Might
+			i(45552, {["timeline"] = {ADDED_3_1_0}}),	-- Plate Girdle of Righteousness
+			i(49905, {["timeline"] = {ADDED_3_3_0}}),	-- Protectors of Life
+			i(49902, {["timeline"] = {ADDED_3_3_0}}),	-- Puresteel Legplates
 			i(40959),	-- Reinforced Cobalt Chestpiece
 			i(40957),	-- Reinforced Cobalt Helm
 			i(40958),	-- Reinforced Cobalt Legplates
@@ -148,11 +148,11 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 			i(41346),	-- Righteous Greaves
 			i(47570, {	-- Saronite Swordbreakers [A]
 				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { "added 3.2.0" },
+				["timeline"] = { ADDED_3_2_0 },
 			}),
 			i(47571, {	-- Saronite Swordbreakers [H]
 				["races"] = HORDE_ONLY,
-				["timeline"] = { "added 3.2.0" },
+				["timeline"] = { ADDED_3_2_0 },
 			}),
 			i(41354),	-- Savage Saronite Bracers
 			i(41349),	-- Savage Saronite Gauntlets
@@ -170,24 +170,24 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 			i(40942),	-- Spiked Cobalt Helm
 			i(40943),	-- Spiked Cobalt Legplates
 			i(40950),	-- Spiked Cobalt Shoulders
-			i(45560, {["timeline"]={"added 3.1.0"}}),	-- Spiked Deathdealers
+			i(45560, {["timeline"] = {ADDED_3_1_0}}),	-- Spiked Deathdealers
 			i(41386),	-- Spiked Titansteel Helm
 			i(41391),	-- Spiked Titansteel Treads
 			i(47574, {	-- Sunforged Bracers [A]
 				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { "added 3.2.0" },
+				["timeline"] = { ADDED_3_2_0 },
 			}),
 			i(47575, {	-- Sunforged Bracers [H]
 				["races"] = HORDE_ONLY,
-				["timeline"] = { "added 3.2.0" },
+				["timeline"] = { ADDED_3_2_0 },
 			}),
 			i(47593, {	-- Sunforged Breastplate [A]
 				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { "added 3.2.0" },
+				["timeline"] = { ADDED_3_2_0 },
 			}),
 			i(47594, {	-- Sunforged Breastplate [H]
 				["races"] = HORDE_ONLY,
-				["timeline"] = { "added 3.2.0" },
+				["timeline"] = { ADDED_3_2_0 },
 			}),
 			i(40669),	-- Tempered Saronite Belt
 			i(40671),	-- Tempered Saronite Boots
@@ -201,32 +201,32 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 			i(41392),	-- Tempered Titansteel Treads
 			i(47589, {	-- Titanium Razorplate [A]
 				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { "added 3.2.0" },
+				["timeline"] = { ADDED_3_2_0 },
 			}),
 			i(47590, {	-- Titanium Razorplate [H]
 				["races"] = HORDE_ONLY,
-				["timeline"] = { "added 3.2.0" },
+				["timeline"] = { ADDED_3_2_0 },
 			}),
 			i(47572, {	-- Titanium Spikeguards [A]
 				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { "added 3.2.0" },
+				["timeline"] = { ADDED_3_2_0 },
 			}),
 			i(47573, {	-- Titanium Spikeguards [H]
 				["races"] = HORDE_ONLY,
-				["timeline"] = { "added 3.2.0" },
+				["timeline"] = { ADDED_3_2_0 },
 			}),
-			i(45561, {["timeline"]={"added 3.1.0"}}),	-- Treads of Destiny
+			i(45561, {["timeline"] = {ADDED_3_1_0}}),	-- Treads of Destiny
 			i(41355),	-- Vengeance Bindings
 			-- #if AFTER CATA
-			i(41189, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Chestplate of Conquest
-			i(41190, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Legplates of Conquest
+			i(41189, {["timeline"] = {ADDED_3_0_3, REMOVED_4_0_3}}),	-- Chestplate of Conquest
+			i(41190, {["timeline"] = {ADDED_3_0_3, REMOVED_4_0_3}}),	-- Legplates of Conquest
 			-- #endif
 		}),
 		filter(MISC, {
 			i(43854),	-- Cobalt Skeleton Key
 			i(41611),	-- Eternal Belt Buckle
-			i(44693, {["timeline"]={"added 3.0.8"}}),	-- Titanium Plating
-			i(41745, {["timeline"]={"added 3.0.2","removed 5.0.4"}}),	-- Titanium Rod
+			i(44693, {["timeline"] = {ADDED_3_0_8}}),	-- Titanium Plating
+			i(41745, {["timeline"] = {ADDED_3_0_3, REMOVED_5_0_4}}),	-- Titanium Rod
 			i(42500),	-- Titanium Shield Spike
 			i(43853),	-- Titanium Skeleton Key
 			i(41976),	-- Titanium Weapon Chain
@@ -235,7 +235,7 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 			i(41240),	-- Cobalt Tenderizer
 			i(40668),	-- Cobalt Triangle Shield
 			i(42443),	-- Cudgel of Saronite Justice
-			i(41245, {["timeline"]={"added 3.0.2"}}),	-- Deadly Saronite Dirk
+			i(41245, {["timeline"] = {ADDED_3_0_3, REMOVED_5_0_4}}),	-- Deadly Saronite Dirk
 			i(41242),	-- Forged Cobalt Claymore
 			i(41185),	-- Furious Saronite Beatstick
 			i(41181),	-- Honed Cobalt Cleaver
@@ -248,16 +248,16 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 			i(43871),	-- Saronite Spellblade
 			i(41182),	-- Savage Cobalt Slicer
 			i(41239),	-- Sturdy Cobalt Quickblade
-			i(41241, {["timeline"]={"added 3.0.2","removed 5.0.4"}}),	-- Sure-fire Shuriken
+			i(41241, {["timeline"] = {ADDED_3_0_3, REMOVED_5_0_4}}),	-- Sure-fire Shuriken
 			i(41383),	-- Titansteel Bonecrusher
 			i(41257),	-- Titansteel Destroyer
 			i(41384),	-- Titansteel Guardian
 			i(42435),	-- Titansteel Shanker
 			i(42508),	-- Titansteel Shield Wall
-			i(45085, {["timeline"]={"added 3.1.0"}}),	-- Titansteel Spellblade
+			i(45085, {["timeline"] = {ADDED_3_1_0}}),	-- Titansteel Spellblade
 			-- #if AFTER CATA
-			i(41186, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Corroded Saronite Edge
-			i(41187, {["timeline"]={"added 3.0.2","removed 4.0.3"}}),	-- Corroded Saronite Woundbringer
+			i(41186, {["timeline"] = {ADDED_3_0_3, REMOVED_4_0_3}}),	-- Corroded Saronite Edge
+			i(41187, {["timeline"] = {ADDED_3_0_3, REMOVED_4_0_3}}),	-- Corroded Saronite Woundbringer
 			i(41188),	-- Saronite Mindcrusher
 			-- #endif
 		}),
@@ -271,57 +271,49 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 			i(34056),	-- Lesser Cosmic Essence
 			i(34053),	-- Small Dream Shard
 		}),
-		cat(673, {	-- Boot Enchantments
-			i(44449, {["timeline"]={"added 3.1.0"}}),	-- Enchant Boots - Assault
-			i(44469, {["timeline"]={"added 3.1.0"}}),	-- Enchant Boots - Greater Assault
+		n(ARMOR_ENCHANTMENTS, {
+			i(44449, {["timeline"] = {ADDED_3_1_0}}),	-- Enchant Boots - Assault
+			i(44469, {["timeline"] = {ADDED_3_1_0}}),	-- Enchant Boots - Greater Assault
 			i(38966),	-- Enchant Boots - Greater Fortitude
 			i(38961),	-- Enchant Boots - Greater Versatility / WOTLK: Greater Spirit
 			i(38974),	-- Enchant Boots - Greater Vitality
-			i(38986, {["timeline"]={"added 3.1.0"}}),	-- Enchant Boots - Icewalker
+			i(38986, {["timeline"] = {ADDED_3_1_0}}),	-- Enchant Boots - Icewalker
 			i(38976),	-- Enchant Boots - Superior Agility
 			i(39006),	-- Enchant Boots - Tuskarr's Vitality
-		}),
-		cat(677, {	-- Bracer Enchantments
-			i(38971, {["timeline"]={"added 3.1.0"}}),	-- Enchant Bracer - Assault / WOTLK: Striking
+			i(38971, {["timeline"] = {ADDED_3_1_0}}),	-- Enchant Bracer - Assault / WOTLK: Striking
 			i(38968),	-- Enchant Bracer - Exceptional Intellect
 			i(44815),	-- Enchant Bracer - Greater Assault
 			i(38997),	-- Enchant Bracer - Greater Spellpower
 			i(38987),	-- Enchant Bracer - Greater Stats
 			i(38984),	-- Enchant Bracer - Haste / WOTLK: Expertise
-			i(44947, {["timeline"]={"added 3.1.0"}}),	-- Enchant Bracer - Major Stamina
+			i(44947, {["timeline"] = {ADDED_3_1_0}}),	-- Enchant Bracer - Major Stamina
 			i(38980),	-- Enchant Bracer - Major Versatility / WOTLK: Major Spirit
-			i(44470, {["timeline"]={"added 3.1.0"}}),	-- Enchant Bracer - Superior Spellpower
-		}),
-		cat(675, {	-- Chest Enchantments
+			i(44470, {["timeline"] = {ADDED_3_1_0}}),	-- Enchant Bracer - Superior Spellpower
 			i(38975),	-- Enchant Chest - Exceptional Armor / WOTLK: Exceptional Resilience
 			i(38912),	-- Enchant Chest - Exceptional Mana
 			i(39002),	-- Enchant Chest - Greater Dodge / WOTLK: Greater Defense
 			i(38962),	-- Enchant Chest - Greater Versatility / WOTLK: Greater Mana Restoration
 			i(38955),	-- Enchant Chest - Mighty Health
-			i(44465, {["timeline"]={"added 3.1.0"}}),	-- Enchant Chest - Powerful Stats
-			i(39005, {["timeline"]={"added 3.1.0"}}),	-- Enchant Chest - Super Health
+			i(44465, {["timeline"] = {ADDED_3_1_0}}),	-- Enchant Chest - Powerful Stats
+			i(39005, {["timeline"] = {ADDED_3_1_0}}),	-- Enchant Chest - Super Health
 			i(38989),	-- Enchant Chest - Super Stats
-		}),
-		cat(676, {	-- Cloak Enchantments
 			i(39003),	-- Enchant Cloak - Greater Speed
-			i(44457, {["timeline"]={"added 3.1.0"}}),	-- Enchant Cloak - Major Agility
+			i(44457, {["timeline"] = {ADDED_3_1_0}}),	-- Enchant Cloak - Major Agility
 			i(39001),	-- Enchant Cloak - Mighty Stamina
 			i(38973),	-- Enchant Cloak - Minor Power
 			i(38993),	-- Enchant Cloak - Shadow Armor
-			i(44456, {["timeline"]={"added 3.1.0"}}),	-- Enchant Cloak - Speed
+			i(44456, {["timeline"] = {ADDED_3_1_0}}),	-- Enchant Cloak - Speed
 			i(38959),	-- Enchant Cloak - Superior Agility
-			i(38982, {["timeline"]={"added 3.1.0","removed 5.0.4"}}),	-- Enchant Cloak - Superior Arcane Resistance
+			i(38982, {["timeline"] = {ADDED_3_1_0, REMOVED_5_0_4}}),	-- Enchant Cloak - Superior Arcane Resistance
 			i(38978),	-- Enchant Cloak - Superior Dodge / WOTLK: Titanweave
-			i(38969, {["timeline"]={"added 3.1.0","removed 5.0.4"}}),	-- Enchant Cloak - Superior Fire Resistance
-			i(38950, {["timeline"]={"added 3.1.0","removed 5.0.4"}}),	-- Enchant Cloak - Superior Frost Resistance
-			i(38956, {["timeline"]={"added 3.1.0","removed 5.0.4"}}),	-- Enchant Cloak - Superior Nature Resistance
-			i(38977, {["timeline"]={"added 3.1.0","removed 5.0.4"}}),	-- Enchant Cloak - Superior Shadow Resistance
+			i(38969, {["timeline"] = {ADDED_3_1_0, REMOVED_5_0_4}}),	-- Enchant Cloak - Superior Fire Resistance
+			i(38950, {["timeline"] = {ADDED_3_1_0, REMOVED_5_0_4}}),	-- Enchant Cloak - Superior Frost Resistance
+			i(38956, {["timeline"] = {ADDED_3_1_0, REMOVED_5_0_4}}),	-- Enchant Cloak - Superior Nature Resistance
+			i(38977, {["timeline"] = {ADDED_3_1_0, REMOVED_5_0_4}}),	-- Enchant Cloak - Superior Shadow Resistance
 			i(39004),	-- Enchant Cloak - Wisdom
-		}),
-		cat(674, {	-- Glove Enchantments
-			i(50816, {["timeline"]={"added 3.3.0"}}),	-- Enchant Glove - Angler
+			i(50816, {["timeline"] = {ADDED_3_3_0}}),	-- Enchant Glove - Angler
 			i(38990),	-- Enchant Glove - Armsman
-			i(44458, {["timeline"]={"added 3.1.0"}}),	-- Enchant Glove - Crusher
+			i(44458, {["timeline"] = {ADDED_3_1_0}}),	-- Enchant Glove - Crusher
 			i(38979),	-- Enchant Glove - Exceptional Spellpower
 			i(38960),	-- Enchant Glove - Gatherer
 			i(38964),	-- Enchant Glove - Greater Assault
@@ -329,40 +321,38 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 			i(38967),	-- Enchant Glove - Major Agility
 			i(38953),	-- Enchant Glove - Precision
 		}),
-		cat(697, sharedDataSelf({ ["timeline"] = { "added 2.0.1", "removed 5.0.4" } }, {	-- Rods
-			i(44452),	-- Runed Titanium Rod
-		})),
-		applyclassicphase(LEGION_PHASE_ONE, filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { "added 7.0.3"} }, {
+		filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
 			i(138790, {	-- Tome of Illusions: Northrend
 				ill(5391),	-- Berserking
 				ill(5388),	-- Greater Spellpower
 				ill(1894),	-- Icy Chill
 			}),
-		}))),
-		cat(679, {	-- Shield Enchantments
-			i(38954),	-- Shield Enchant - Dodge / WOTLK: Defense
-			i(44455, {["timeline"]={"added 3.1.0"}}),	-- Shield Enchant - Greater Intellect
+		})),
+		filter(MISC, {
+			i(44452, {["timeline"] = {ADDED_3_0_3, REMOVED_5_0_4}}),	-- Runed Titanium Rod
 		}),
-		cat(678, {	-- Weapon Enchantments
-			i(44497, {["timeline"]={"added 3.1.0"}}),	-- Enchant Weapon - Accuracy
-			i(44493, {["timeline"]={"added 3.1.0"}}),	-- Enchant Weapon - Berserking
-			i(43987, {["timeline"]={"added 3.1.0"}}),	-- Enchant Weapon - Black Magic
-			i(46026, {["timeline"]={"added 3.1.0"}}),	-- Enchant Weapon -  Blade Ward
-			i(46098, {["timeline"]={"added 3.1.0"}}),	-- Enchant Weapon - Blood Draining
+		n(WEAPON_ENCHANTMENTS, {
+			i(38954),	-- Enchant Shield - Dodge / WOTLK: Defense
+			i(44455, {["timeline"] = {ADDED_3_1_0}}),	-- Enchant Shield - Greater Intellect
+			i(45056, {["timeline"] = {ADDED_3_1_0}}),	-- Enchant Staff - Greater Spellpower
+			i(45060, {["timeline"] = {ADDED_3_1_0}}),	-- Enchant Staff - Spellpower
+			i(38992),	-- Enchant 2H Weapon - Greater Savagery
+			i(44463, {["timeline"] = {ADDED_3_1_0}}),	-- Enchant 2H Weapon - Massacre
+			i(38981),	-- Enchant 2H Weapon - Scourgebane
+			i(44497, {["timeline"] = {ADDED_3_1_0}}),	-- Enchant Weapon - Accuracy
+			i(44493, {["timeline"] = {ADDED_3_1_0}}),	-- Enchant Weapon - Berserking
+			i(43987, {["timeline"] = {ADDED_3_1_0}}),	-- Enchant Weapon - Black Magic
+			i(46026, {["timeline"] = {ADDED_3_1_0}}),	-- Enchant Weapon -  Blade Ward
+			i(46098, {["timeline"] = {ADDED_3_1_0}}),	-- Enchant Weapon - Blood Draining
 			i(38995),	-- Enchant Weapon - Exceptional Agility
 			i(38991),	-- Enchant Weapon - Exceptional Spellpower
 			i(38963),	-- Enchant Weapon - Exceptional Versatility / WOTLK: Exceptional Spirit
 			i(38988),	-- Enchant Weapon - Giant Slayer
-			i(44453, {["timeline"]={"added 3.1.0"}}),	-- Enchant Weapon - Greater Potency
-			i(38992),	-- Enchant 2H Weapon - Greater Savagery
-			i(45056, {["timeline"]={"added 3.1.0"}}),	-- Enchant Staff - Greater Spellpower
+			i(44453, {["timeline"] = {ADDED_3_1_0}}),	-- Enchant Weapon - Greater Potency
 			i(38965),	-- Enchant Weapon - Icebreaker
 			i(38972),	-- Enchant Weapon - Lifeward
-			i(44463, {["timeline"]={"added 3.1.0"}}),	-- Enchant 2H Weapon - Massacre
-			i(44467, {["timeline"]={"added 3.1.0"}}),	-- Enchant Weapon - Mighty Spellpower
-			i(38981),	-- Enchant 2H Weapon - Scourgebane
-			i(45060, {["timeline"]={"added 3.1.0"}}),	-- Enchant Staff - Spellpower
-			i(44466, {["timeline"]={"added 3.1.0"}}),	-- Enchant Weapon - Superior Potency
+			i(44467, {["timeline"] = {ADDED_3_1_0}}),	-- Enchant Weapon - Mighty Spellpower
+			i(44466, {["timeline"] = {ADDED_3_1_0}}),	-- Enchant Weapon - Superior Potency
 		}),
 	}),
 	prof(ENGINEERING, {
@@ -510,7 +500,7 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 				-- #else
 				["rank"] = 6,
 				-- #endif
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
+				["timeline"] = { ADDED_3_0_3, REMOVED_6_0_2 }
 			}),
 		}),
 		spell(2366, {	-- Herb Gathering

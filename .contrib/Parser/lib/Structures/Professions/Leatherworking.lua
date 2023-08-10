@@ -393,81 +393,200 @@ COMMON_CATACLYSM_LEATHERWORKING_RECIPES = {
 		["timeline"] = { "added 4.0.3.13287" },
 	}),
 };
-COMMON_DRAENOR_LEATHERWORKING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ ["timeline"] = { "added 6.0.2" } }, {
+MOP_LEATHERWORKING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+	r(110423, {	-- Leatherworking (Zen Master)
+		["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #endif
+		["rank"] = 8,
+	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264585, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Pandaria Leatherworking
+	r(330201, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Mist of Pandaria]
+	r(330202, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Mist of Pandaria]
+	r(330203, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Mist of Pandaria]
+	r(330204, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Mist of Pandaria]
+	r(330205, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Mist of Pandaria]
+	n(ARMOR, {
+		r(124578),	-- Misthide Belt
+		r(124577),	-- Misthide Boots
+		r(124576),	-- Misthide Bracers
+		r(124573),	-- Misthide Chestguard
+		r(124635),	-- Misthide Drape
+		r(124574),	-- Misthide Gloves
+		r(124571),	-- Misthide Helm
+		r(124575),	-- Misthide Leggings
+		r(124572),	-- Misthide Shoulders
+		r(124637),	-- Quick Strike Cloak
+		r(124586),	-- Stormscale Belt
+		r(124585),	-- Stormscale Boots
+		r(124584),	-- Stormscale Bracers
+		r(124581),	-- Stormscale Chestguard
+		r(124636),	-- Stormscale Drape
+		r(124582),	-- Stormscale Gloves
+		r(124579),	-- Stormscale Helm
+		r(124583),	-- Stormscale Leggings
+		r(124580),	-- Stormscale Shoulders
+	}),
+	filter(MISC, {
+		r(124126),	-- Brutal Leg Armor
+		r(124627),	-- Exotic Leather
+		r(131865, {["timeline"] = {ADDED_5_2_0}}),	-- Magnificent Hide
+		r(124628),	-- Sha Armor Kit
+		r(124124),	-- Sha-Touched Leg Armor
+		r(124125),	-- Toughened Leg Armor
+	}),
+}));
+COMMON_MOP_LEATHERWORKING_RECIPES = applyclassicphase(MOP_PHASE_ONE, sharedData({ ["cost"] = {{ "i", SPIRIT_OF_HARMONY, 1 }}, ["timeline"] = { ADDED_5_0_4 } }, {
+	i(86240),	-- Pattern: Contender's Dragonscale Belt (RECIPE!)
+	i(86241),	-- Pattern: Contender's Dragonscale Boots (RECIPE!)
+	i(86242),	-- Pattern: Contender's Dragonscale Bracers (RECIPE!)
+	i(86243),	-- Pattern: Contender's Dragonscale Chestguard (RECIPE!)
+	i(86244),	-- Pattern: Contender's Dragonscale Gloves (RECIPE!)
+	i(86245),	-- Pattern: Contender's Dragonscale Helm (RECIPE!)
+	i(86246),	-- Pattern: Contender's Dragonscale Leggings (RECIPE!)
+	i(86247),	-- Pattern: Contender's Dragonscale Shoulders (RECIPE!)
+	i(86248),	-- Pattern: Contender's Leather Belt (RECIPE!)
+	i(86249),	-- Pattern: Contender's Leather Boots (RECIPE!)
+	i(86250),	-- Pattern: Contender's Leather Bracers (RECIPE!)
+	i(86251),	-- Pattern: Contender's Leather Chestguard (RECIPE!)
+	i(86252),	-- Pattern: Contender's Leather Gloves (RECIPE!)
+	i(86253),	-- Pattern: Contender's Leather Helm (RECIPE!)
+	i(86254),	-- Pattern: Contender's Leather Leggings (RECIPE!)
+	i(86255),	-- Pattern: Contender's Leather Shoulders (RECIPE!)
+	i(86256),	-- Pattern: Contender's Scale Belt (RECIPE!)
+	i(86257),	-- Pattern: Contender's Scale Boots (RECIPE!)
+	i(86258),	-- Pattern: Contender's Scale Bracers (RECIPE!)
+	i(86259),	-- Pattern: Contender's Scale Chestguard (RECIPE!)
+	i(86260),	-- Pattern: Contender's Scale Gloves (RECIPE!)
+	i(86261),	-- Pattern: Contender's Scale Helm (RECIPE!)
+	i(86262),	-- Pattern: Contender's Scale Leggings (RECIPE!)
+	i(86263),	-- Pattern: Contender's Scale Shoulders (RECIPE!)
+	i(86264),	-- Pattern: Contender's Wyrmhide Belt (RECIPE!)
+	i(86265),	-- Pattern: Contender's Wyrmhide Boots (RECIPE!)
+	i(86266),	-- Pattern: Contender's Wyrmhide Bracers (RECIPE!)
+	i(86267),	-- Pattern: Contender's Wyrmhide Chestguard (RECIPE!)
+	i(86268),	-- Pattern: Contender's Wyrmhide Gloves (RECIPE!)
+	i(86269),	-- Pattern: Contender's Wyrmhide Helm (RECIPE!)
+	i(86270),	-- Pattern: Contender's Wyrmhide Leggings (RECIPE!)
+	i(86271),	-- Pattern: Contender's Wyrmhide Shoulders (RECIPE!)
+}));
+DRAENOR_LEATHERWORKING = applyclassicphase(WOD_PHASE_ONE, i(115358, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+	["description"] = "This is a reward for completing the introductory Leaterworking questline that can drop from any Draenor mob.",
+	["filterID"] = MISC,
+	["g"] = {
+		r(158752, {	-- Leatherworking (Draenor Master)
+			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
+			-- #if NOT ANYCLASSIC
+			["collectible"] = false,
+			-- #endif
+			["rank"] = 9,
+		}),
+		applyclassicphase(BFA_PHASE_ONE, r(264588, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Draenor Leatherworking
+		r(330206, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Warlords of Draenor]
+		r(330207, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Warlords of Draenor]
+		r(330208, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Warlords of Draenor]
+		r(330209, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Warlords of Draenor]
+		r(330210, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Warlords of Draenor]
+		r(171391),	-- Burnished Leather
+		r(171260),	-- Journeying Helm
+		r(171261),	-- Journeying Robes
+		r(171262),	-- Journeying Slacks
+		r(176089),	-- Secrets of Draenor Leatherworking
+		r(171263),	-- Traveling Helm
+		r(171265),	-- Traveling Leggings
+		r(171264),	-- Traveling Tunic
+	},
+})));
+COMMON_DRAENOR_LEATHERWORKING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	i(116328, {	-- Pattern: Brilliant Burnished Cloak (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
 	}),
 	i(116345, {	-- Pattern: Burnished Essence (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 5 } },
+		["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
+		["collectible"] = false,
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 5 }},
+		["timeline"] = { REMOVED_10_0_5 },
 	}),
 	i(116349, {	-- Pattern: Burnished Inscription Bag (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 5 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 5 }},
 	}),
 	i(116347, {	-- Pattern: Burnished Leather Bag (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 5 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 5 }},
 	}),
 	i(116348, {	-- Pattern: Burnished Mining Bag (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 5 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 5 }},
 	}),
 	i(120258, {	-- Pattern: Drums of Fury (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
+	}),
+	i(202232, {	-- Pattern: Impressive Burnished Essence (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 5 }},
+		["timeline"] = { ADDED_10_0_5 },
 	}),
 	i(116325, {	-- Pattern: Leather Refurbishing Kit (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
 	}),
 	i(116327, {	-- Pattern: Nimble Burnished Cloak (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
 	}),
 	i(116326, {	-- Pattern: Powerful Burnished Cloak (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
+	}),
+	i(202233, {	-- Recipe: Remarkable Burnished Essence (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 5 }},
+		["timeline"] = { ADDED_10_0_5 },
 	}),
 	i(116350, {	-- Pattern: Riding Harness (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 5 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 5 }},
 	}),
 	i(116335, {	-- Pattern: Supple Boots (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
 	}),
 	i(116334, {	-- Pattern: Supple Bracers (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
 	}),
 	i(116332, {	-- Pattern: Supple Gloves (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
 	}),
 	i(116330, {	-- Pattern: Supple Helm (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
 	}),
 	i(116331, {	-- Pattern: Supple Leggings (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
 	}),
 	i(116329, {	-- Pattern: Supple Shoulderguards (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
 	}),
 	i(116333, {	-- Pattern: Supple Vest (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
 	}),
 	i(116336, {	-- Pattern: Supple Waistguard (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
+	}),
+	i(116344, {	-- Pattern: Wayfaring Belt (RECIPE!)
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
 	}),
 	i(116343, {	-- Pattern: Wayfaring Boots (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
 	}),
 	i(116342, {	-- Pattern: Wayfaring Bracers (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
 	}),
 	i(116340, {	-- Pattern: Wayfaring Gloves (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
 	}),
 	i(116338, {	-- Pattern: Wayfaring Helm (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
 	}),
 	i(116339, {	-- Pattern: Wayfaring Leggings (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
 	}),
 	i(116337, {	-- Pattern: Wayfaring Shoulderguards (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
 	}),
 	i(116341, {	-- Pattern: Wayfaring Tunic (RECIPE!)
-		["cost"] = { { "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 } },
+		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
 	}),
 }));
 BFA_LEATHERWORKING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {

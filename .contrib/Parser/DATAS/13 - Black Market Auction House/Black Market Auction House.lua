@@ -253,18 +253,18 @@ root(ROOTS.BlackMarket, bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(49287),	-- Tuskarr Kite (PET!)
 	}),
 	filter(RECIPES, {
-		i(86238),	-- Pattern: Chestguard of Nemeses
-		i(86272),	-- Pattern: Fists of Lightning
-		i(86380),	-- Pattern: Imperial Silk Gloves
-		i(86381),	-- Pattern: Legacy of the Emperor
-		i(86279),	-- Pattern: Liferuned Leather Gloves
-		i(86280),	-- Pattern: Murderer's Gloves
-		i(86281),	-- Pattern: Nightfire Robe
-		i(86283),	-- Pattern: Raiment of Blood and Bone
-		i(86284),	-- Pattern: Raven Lord's Gloves
-		i(86379),	-- Pattern: Robe of Eternal Rule
-		i(86297),	-- Pattern: Stormbreaker Chestguard
-		i(86382),	-- Pattern: Touch of the Light
+		i(86238),	-- Pattern: Chestguard of Nemeses (RECIPE!)
+		i(86272),	-- Pattern: Fists of Lightning (RECIPE!)
+		i(86380),	-- Pattern: Imperial Silk Gloves (RECIPE!)
+		i(86381),	-- Pattern: Legacy of the Emperor (RECIPE!)
+		i(86279),	-- Pattern: Liferuned Leather Gloves (RECIPE!)
+		i(86280),	-- Pattern: Murderer's Gloves (RECIPE!)
+		i(86281),	-- Pattern: Nightfire Robe (RECIPE!)
+		i(86283),	-- Pattern: Raiment of Blood and Bone (RECIPE!)
+		i(86284),	-- Pattern: Raven Lord's Gloves (RECIPE!)
+		i(86379),	-- Pattern: Robe of Eternal Rule (RECIPE!)
+		i(86297),	-- Pattern: Stormbreaker Chestguard (RECIPE!)
+		i(86382),	-- Pattern: Touch of the Light (RECIPE!)
 		i(87411),	-- Plans: Bloodforged Warfists (RECIPE!)
 		i(87412),	-- Plans: Chestplate of Limitless Faith (RECIPE!)
 		i(87409),	-- Plans: Gauntlets of Battle Command (RECIPE!)
