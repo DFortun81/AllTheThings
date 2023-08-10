@@ -80,49 +80,45 @@ api.Filters.InGame = FilterInGame;
 
 -- Unobtainable 	-- FilterItemClass_UnobtainableItem
 DefineToggleFilter("Unobtainable", AccountFilters,
-	function(item)
-		return Settings:GetUnobtainable(item.u);
-	end
-);
+function(item)
+	return Settings:GetUnobtainable(item.u);
+end);
 
 -- PvP	-- FilterItemClass_PvP
 DefineToggleFilter("PvP", AccountFilters,
-	function(item)
-		if item.pvp then
-			return false;
-		else
-			return true;
-		end
+function(item)
+	if item.pvp then
+		return false;
+	else
+		return true;
 	end
-);
+end);
 
 -- PetBattles
 DefineToggleFilter("PetBattles", AccountFilters,
-	function(item)
-		if item.pb then
+function(item)
+	if item.pb then
+		return false;
+	else
+		return true;
+	end
+end);
+
+-- MinReputation
+DefineToggleFilter("MinReputation", AccountFilters,
+function(item)
+	local minReputation = item.minReputation;
+	if minReputation and app.IsFactionExclusive(minReputation[1]) then
+		if minReputation[2] > (select(6, GetFactionInfoByID(minReputation[1])) or 0) then
+			--print("Filtering Out", item.key, item[item.key], item.text, item.minReputation[1], app.CreateFaction(item.minReputation[1]).text);
 			return false;
 		else
 			return true;
 		end
+	else
+		return true;
 	end
-);
-
--- MinReputation
-DefineToggleFilter("MinReputation", AccountFilters,
-	function(item)
-		local minReputation = item.minReputation;
-		if minReputation and app.IsFactionExclusive(minReputation[1]) then
-			if minReputation[2] > (select(6, GetFactionInfoByID(minReputation[1])) or 0) then
-				--print("Filtering Out", item.key, item[item.key], item.text, item.minReputation[1], app.CreateFaction(item.minReputation[1]).text);
-				return false;
-			else
-				return true;
-			end
-		else
-			return true;
-		end
-	end
-);
+end);
 
 -- Event
 -- Defined in OnLoad due to raw logic captured in Events Module
@@ -131,7 +127,7 @@ DefineToggleFilter("MinReputation", AccountFilters,
 local SettingsFilterItemUnbound;
 -- Whether this is a Character-transferable Thing/Item
 local function ItemUnbound(item)	-- FilterItemBind
-	return item.itemID and not FilterBind(item);
+	return item.itemID and item.b ~= 1;
 end
 api.Filters.ItemUnbound = ItemUnbound
 api.Set.ItemUnbound = function(active, nested)
@@ -145,10 +141,9 @@ api.Set.ItemUnbound = function(active, nested)
 end
 api.Get.ItemUnbound = function() return SettingsFilterItemUnbound == api.Filters.ItemUnbound end
 
--- FilterID
-local SettingsFilterFilterID;
--- Whether this meets the enabled 'Filter' from Settings
-local function FilterFilterID(item)	-- FilterItemClass_RequireItemFilter
+-- FilterID -- FilterItemClass_RequireItemFilter
+DefineToggleFilter("FilterID", CharacterFilters,
+function(item)
 	local f = item.f;
 	if f then
 		-- Filter applied via Settings (character-equippable or manually set)
@@ -162,64 +157,30 @@ local function FilterFilterID(item)	-- FilterItemClass_RequireItemFilter
 	else
 		return true;
 	end
-end
-api.Filters.FilterID = FilterFilterID
-api.Set.FilterID = function(active)
-	if active then
-		SettingsFilterFilterID = api.Filters.FilterID;
-	else
-		SettingsFilterFilterID = NoFilter;
-	end
-end
+end);
 
--- Bound
-local SettingsFilterBound;
--- Whether it is not an Item or otherwise Bound
-local function FilterBinding(item)	-- FilterItemClass_RequireBinding
-	return not item.itemID or FilterBind(item);
-end
-api.Filters.Bound = FilterBinding
-api.Set.Bound = function(active)
-	if active then
-		SettingsFilterBound = api.Filters.Bound;
-	else
-		SettingsFilterBound = NoFilter;
-	end
-end
+-- Bound -- FilterItemClass_RequireBinding
+DefineToggleFilter("Bound", CharacterFilters,
+function(item)
+	return not item.itemID or item.b == 1;
+end);
 
--- RequireSkill
-local SettingsFilterRequireSkill
-local function FilterRequireSkill(item)	-- FilterItemClass_RequiredSkill
+-- RequireSkill -- FilterItemClass_RequiredSkill
+DefineToggleFilter("RequireSkill", CharacterFilters,
+function(item)
 	local requireSkill = item.requireSkill;
 	if requireSkill and (not item.professionID or not GetRelativeValue(item, "DontEnforceSkillRequirements") or FilterBind(item)) then
 		return app.CurrentCharacter.Professions[requireSkill];
 	else
 		return true;
 	end
-end
-api.Filters.RequireSkill = FilterRequireSkill
-api.Set.RequireSkill = function(active)
-	if active then
-		SettingsFilterRequireSkill = api.Filters.RequireSkill;
-	else
-		SettingsFilterRequireSkill = NoFilter;
-	end
-end
+end);
 
--- Class
-local SettingsFilterClass;
--- Whether this is for the current 'class'
-local function FilterClass(item)	-- FilterItemClass_RequireClasses
+-- Class -- FilterItemClass_RequireClasses
+DefineToggleFilter("Class", CharacterFilters,
+function(item)
 	return not item.nmc;
-end
-api.Filters.Class = FilterClass
-api.Set.Class = function(active)
-	if active then
-		SettingsFilterClass = api.Filters.Class;
-	else
-		SettingsFilterClass = NoFilter;
-	end
-end
+end);
 
 -- Race
 local SettingsFilterRace, SettingsFilterRace_CurrentFaction;
@@ -271,9 +232,9 @@ api.Set.Race = function(active, factionOnly)
 	end
 end
 
--- CustomCollect
-local SettingsFilterCustomCollect;
-local function FilterCustomCollect(item)	-- FilterItemClass_CustomCollect
+-- CustomCollect -- FilterItemClass_CustomCollect
+DefineToggleFilter("CustomCollect", CharacterFilters,
+function(item)
 	local customCollect = item.customCollect;
 	if customCollect then
 		local customCollects = app.ActiveCustomCollects;
@@ -284,20 +245,41 @@ local function FilterCustomCollect(item)	-- FilterItemClass_CustomCollect
 		end
 	end
 	return true;
-end
-api.Filters.CustomCollect = FilterCustomCollect
-api.Set.CustomCollect = function(active)
-	if active then
-		SettingsFilterCustomCollect = api.Filters.CustomCollect;
-	else
-		SettingsFilterCustomCollect = NoFilter;
+end);
+
+-- Level -- FilterGroupsByLevel
+DefineToggleFilter("Level", CharacterFilters,
+function(item)
+	-- after 9.0, transition to a req lvl range, either min, or min + max
+	local lvl = item.lvl;
+	if lvl then
+		local minlvl;
+		local maxlvl;
+		if type(lvl) == "table" then
+			minlvl = lvl[1];
+			maxlvl = lvl[2];
+		else
+			minlvl = lvl;
+		end
+
+		if maxlvl then
+			-- min and max provided
+			return app.Level >= minlvl and app.Level <= maxlvl;
+		elseif minlvl then
+			-- only min provided
+			return app.Level >= minlvl;
+		end
 	end
-end
+	-- no level requirement on the group, have to include it
+	return true;
+end);
 
 -- ItemSource
 if C_TransmogCollection then
+
 local C_TransmogCollection_GetAllAppearanceSources, C_TransmogCollection_GetSourceInfo, C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance
 	= C_TransmogCollection.GetAllAppearanceSources, C_TransmogCollection.GetSourceInfo, C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
+
 local function FilterItemSource(sourceInfo)
 	return sourceInfo.isCollected;
 end
@@ -427,42 +409,6 @@ api.Set.ItemSource = function(useUnique, useMainOnly)
 end
 end
 
--- Level
-local SettingsFilterLevel;
--- Whether the group meets the current character Level
-local function FilterLevel(group)	-- FilterGroupsByLevel
-	-- after 9.0, transition to a req lvl range, either min, or min + max
-	local lvl = group.lvl;
-	if lvl then
-		local minlvl;
-		local maxlvl;
-		if type(lvl) == "table" then
-			minlvl = lvl[1];
-			maxlvl = lvl[2];
-		else
-			minlvl = lvl;
-		end
-
-		if maxlvl then
-			-- min and max provided
-			return app.Level >= minlvl and app.Level <= maxlvl;
-		elseif minlvl then
-			-- only min provided
-			return app.Level >= minlvl;
-		end
-	end
-	-- no level requirement on the group, have to include it
-	return true;
-end
-api.Filters.Level = FilterLevel
-api.Set.Level = function(active)
-	if active then
-		SettingsFilterLevel = api.Filters.Level;
-	else
-		SettingsFilterLevel = NoFilter;
-	end
-end
-
 -- Trackable
 -- Whether this group can be 'tracked'
 local function FilterTrackable(group)	-- FilterItemTrackable
@@ -497,6 +443,12 @@ local function SettingsAccountFilters(o)
 	end
 	return true;
 end
+local function SettingsCharacterFilters(o)
+	for name,filter in pairs(CharacterFilters) do
+		if not filter(o) then return end
+	end
+	return true;
+end
 
 -- Represents filters which should be applied during Updates to groups
 local function SettingsFilters(item)	-- FilterItemClass
@@ -511,13 +463,14 @@ local function SettingsFilters(item)	-- FilterItemClass
 		-- BoE can skip Character trait filters
 		if SettingsFilterItemUnbound(item) then return true; end
 		-- check Character trait filters
-		return SettingsFilterBound(item)
-			and SettingsFilterClass(item)
+		return SettingsCharacterFilters(item)
+			-- and SettingsFilterBound(item)
+			-- and SettingsFilterClass(item)
 			and SettingsFilterRace(item)
-			and SettingsFilterFilterID(item)
-			and SettingsFilterRequireSkill(item)
-			and SettingsFilterCustomCollect(item)
-			and SettingsFilterLevel(item);
+			-- and SettingsFilterFilterID(item)
+			-- and SettingsFilterRequireSkill(item)
+			-- and SettingsFilterCustomCollect(item)
+			-- and SettingsFilterLevel(item);
 	end
 end
 -- Represents filters which should be applied during Updates to groups, but skips the BoE filter
@@ -531,13 +484,14 @@ local function SettingsFilters_IgnoreBoEFilter(item)	-- FilterItemClass_IgnoreBo
 		-- and SettingsFilterEvent(item)
 		then
 		-- check Character trait filters
-		return SettingsFilterBound(item)
-			and SettingsFilterClass(item)
+		return SettingsCharacterFilters(item)
+			-- and SettingsFilterBound(item)
+			-- and SettingsFilterClass(item)
 			and SettingsFilterRace(item)
-			and SettingsFilterFilterID(item)
-			and SettingsFilterRequireSkill(item)
-			and SettingsFilterCustomCollect(item)
-			and SettingsFilterLevel(item);
+			-- and SettingsFilterFilterID(item)
+			-- and SettingsFilterRequireSkill(item)
+			-- and SettingsFilterCustomCollect(item)
+			-- and SettingsFilterLevel(item);
 	end
 end
 api.SettingsFilters.IgnoreBoEFilter = SettingsFilters_IgnoreBoEFilter
@@ -554,13 +508,14 @@ end
 -- Represents current Character filtering for the Item (regardless of user-enabled filters)
 local function SettingsFilterCurrentCharacter(item)	-- CurrentCharacterFilters
 	-- check Character trait filters
-	return SettingsFilterClass(item)
+	return SettingsCharacterFilters(item)
+		-- and SettingsFilterBound(item)
+		-- and SettingsFilterClass(item)
 		and SettingsFilterRace(item)
-		and SettingsFilterFilterID(item)
-		and FilterInGame(item)
-		and SettingsFilterRequireSkill(item)
-		and SettingsFilterCustomCollect(item)
-		and SettingsFilterLevel(item);
+		-- and SettingsFilterFilterID(item)
+		-- and SettingsFilterRequireSkill(item)
+		-- and SettingsFilterCustomCollect(item)
+		-- and SettingsFilterLevel(item);
 end
 app.CurrentCharacterFilters = SettingsFilterCurrentCharacter
 
@@ -658,6 +613,10 @@ api.OnLoad = function()
 end
 api.OnStartup = function(AccountData)
 	ATTAccountWideData = AccountData
+end
+-- TODO: Cache filter-related content from Settings here instead of checking in every function call
+api.OnRefreshData_NewSettings = function()
+
 end
 
 -- temp sanity debug logging
