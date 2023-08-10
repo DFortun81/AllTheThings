@@ -46,6 +46,11 @@ namespace ATT
         private const string NAME_END = "</h1>";
 
         /// <summary>
+        /// The not found message class format.
+        /// </summary>
+        private const string NOT_FOUND_MESSAGE = "\"database-detail-page-not-found-message\"";
+
+        /// <summary>
         /// The game flavors of WoWHead to try querying.
         /// </summary>
         private static readonly string[] GameFlavors = { "", "wotlk", "classic" };
@@ -205,6 +210,7 @@ namespace ATT
         /// <returns>The model ID or 0.</returns>
         private static long ParseModelIDFromDocument(string document)
         {
+            if (document.Contains(NOT_FOUND_MESSAGE)) return 0;
             int index = document.IndexOf(DISPLAY_ID_START);
             if (index == -1) return 0;
             index += DISPLAY_ID_START.Length;
@@ -223,12 +229,11 @@ namespace ATT
         /// <returns>The name or an empty string.</returns>
         private static string ParseNameFromDocument(string document)
         {
+            if(document.Contains(NOT_FOUND_MESSAGE)) return string.Empty;
             int index = document.IndexOf(NAME_START);
             if (index == -1) return string.Empty;
             index += NAME_START.Length;
-            var name = document.Substring(index, document.IndexOf(NAME_END, index) - index).Replace("&quot;", "\"").Trim();
-            if (LocaleDefaults.ContainsKey(name)) return string.Empty;
-            return name;
+            return document.Substring(index, document.IndexOf(NAME_END, index) - index).Replace("&quot;", "\"").Trim();
         }
 
         /// <summary>

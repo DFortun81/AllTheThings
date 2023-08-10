@@ -1,4 +1,4 @@
-﻿root("ObjectDB", {
+﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[34] = {
 		model = 189821,
 	},
@@ -1813,4 +1813,5 @@
 	[369893] = {
 		model = 1331239,
 	},
-});
+})
+do ObjectDB[objectID] = objectData; end

@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   O B J E C T   D A T A B A S E   M O D U L E   --
 -----------------------------------------------------
-root("ObjectDB", {
+local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[31] = {
 		readable = "Old Lion Statue",
 		icon = "Interface/Icons/INV_Mount_AllianceLionG",
@@ -45418,4 +45418,5 @@ root("ObjectDB", {
 			cn = "符文",
 		},
 	},
-});
+})
+do ObjectDB[objectID] = objectData; end
