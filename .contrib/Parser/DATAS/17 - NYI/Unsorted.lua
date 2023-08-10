@@ -523,7 +523,6 @@ root(ROOTS.Unsorted, {
 			i(208191),	-- Time-Lost Fragment
 			i(206447),	-- Task List for Adventurers
 			--
-			i(201166),	-- Gilded Hilt
 			i(206160),	-- Madam Shadow's Grimoire
 			i(206520),	-- Beverage for Pedgi
 			i(208400),	-- Silks of the Unnamed Cult
