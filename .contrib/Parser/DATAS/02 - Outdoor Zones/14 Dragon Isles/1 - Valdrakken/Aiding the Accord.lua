@@ -91,5 +91,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(75864),	-- Aiding the Accord - Suffusion - Quest Complete (spellID 410068)
 		q(75863),	-- Aiding the Accord - Cave - Quest Complete (spellID 410067)
 		q(77253),	-- Aiding the Accord - Time Rifts - Quest Complete (spellID 417862)
+		q(77979),	-- Aiding the Accord - Dreamsurge - Quest Complete (spellID 421947)
 	}),
 }));

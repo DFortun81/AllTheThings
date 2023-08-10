@@ -17,34 +17,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(ACHIEVEMENTS, {
 				ach(19008)	-- Dream Shaper
 			}),
-			--[[ isn't up in The Waking Shores at all
-			n(BOSSES, {	-- 'Birth of Flames' event at start of voting :00 / :30 of each hour
-				n(COMMON_BOSS_DROPS, {
-					i(209419),	-- Charred Elemental Remains
-					i(207026),	-- Dreamsurge Coalescence
-				}),
-				n(209754, {	-- Allied Cinderrager
-					["coord"] = { 61.9, 26.5, THALDRASZUS },
-					--["questID"] = 77794,
-					--["isWeekly"] = true
-				}),
-				n(209837, {	-- Flamewing Ascendant
-					["coord"] = { 62.4, 26.0, THALDRASZUS },
-					--["questID"] = 77794,
-					--["isWeekly"] = true
-				}),
-				n(209491, {	-- Molten General
-					["coord"] = { 61.8, 26.3, THALDRASZUS },
-					--["questID"] = 77794,
-					--["isWeekly"] = true
-				}),
-				n(209753, {	-- Planesborn Annihilator
-					["coord"] = { 61.7, 26.2, THALDRASZUS },
-					--["questID"] = 77794,
-					--["isWeekly"] = true
-				}),
-			}),
-			]]--
 			n(QUESTS, {
 				q(77423, {	-- Surging Dreams
 					["provider"] = { "n", 211031 },	-- Archdruid Hamuul Runetotem
@@ -74,15 +46,44 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 			}),
+			-- Alex: bosses/rares are farmable, they give 1-3 Charred Elemental Remains on kill
+			-- HQT which pop with kill act wierd, idk what a deal with it and gonna leave now as it is
+			-- 'Birth of Flames' event, rares don't have spawn order
+			n(RARES, sharedData({ ["g"] = { i(209419), }, }, {	-- Charred Elemental Remains
+				n(209754, {	-- Allied Cinderrager
+					["coords"] = {
+						{ 61.9, 26.5, THALDRASZUS },
+						{ 41.2, 77.5, THE_WAKING_SHORES },
+					},
+				}),
+				n(209837, {	-- Flamewing Ascendant
+					["coords"] = {
+						{ 62.4, 26.0, THALDRASZUS },
+						{ 41.2, 77.5, THE_WAKING_SHORES },
+					},
+				}),
+				n(209491, {	-- Molten General
+					["coords"] = {
+						{ 61.8, 26.3, THALDRASZUS },
+						{ 41.2, 77.5, THE_WAKING_SHORES },
+					},
+				}),
+				n(209753, {	-- Planesborn Annihilator
+					["coords"] = {
+						{ 61.7, 26.2, THALDRASZUS },
+						{ 41.2, 77.5, THE_WAKING_SHORES },
+					},
+				}),
+			})),
 			n(REWARDS, {
 				i(DREAMSURGE_COALESCENCE, {
-					["description"] = "10 per WQ, 25 per Rare kill in zone where Dreamsurge is active",
+					["description"] = "10 per WQ, 25 per rare kill in zone where Dreamsurge is active",
 				}),
 				i(DREAMSURGE_CHRYSALIS),
+				i(192807, {	-- Renewed Magmammoth (MOUNT!)
+					["cost"] = {{ "i", 209419, 20 }},	-- Charred Elemental Remains
+				}),
 			}),
-			--n(TREASURES, {
-			--	ph
-			--}),
 			n(VENDORS, {
 				n(210608, {	-- Celestine of the Harvest
 					["coords"] = {
@@ -212,13 +213,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						}),
 						filter(PLATE, {
 							i(209390),	-- Dreambound Faceplate
-							i(209289),	-- Dreambound Breastplate
-							i(209288),	-- Dreambound Sabatons
-							i(209287),	-- Dreambound Gauntlets
-							i(209286),	-- Dreambound Legguards
-							i(209285),	-- Dreambound Mantle
-							i(209284),	-- Dreambound Girdle
-							i(209283),	-- Dreambound Armplates
+							i(209389),	-- Dreambound Breastplate
+							i(209388),	-- Dreambound Sabatons
+							i(209387),	-- Dreambound Gauntlets
+							i(209386),	-- Dreambound Legguards
+							i(209385),	-- Dreambound Mantle
+							i(209384),	-- Dreambound Girdle
+							i(209383),	-- Dreambound Armplates
 						}),
 						n(WEAPONS, {
 							i(209379),	-- Dreambound Barrier
@@ -251,6 +252,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THALDRASZUS, { n(DREAMSURGE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
-		-- q(77794, {["repeatable"]=true}),	-- after each rare kill for 'Birth of Flames', don't get unflagged between kills
+		q(77794),	-- after 'some' boss kills for 'Birth of Flames' event
 	}))}),
 })));

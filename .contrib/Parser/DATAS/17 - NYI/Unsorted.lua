@@ -300,7 +300,6 @@ root(ROOTS.Unsorted, {
 			i(209055),	-- Third Booster Part
 			--
 			i(4191),	-- Owlbeast Leggings
-			i(192807),	-- Renewed Magmammoth
 			i(208787),	-- Black Holo-Gogs
 			i(208788),	-- Blue Holo-Gogs
 			i(208789),	-- Gold Holo-Gogs
@@ -336,66 +335,7 @@ root(ROOTS.Unsorted, {
 			i(209064),	-- Ensemble: Chromatically Calibrated Retinal Armor
 			i(209066),	-- Ensemble: Chromatically Calibrated Cranial Cannons
 			i(209067),	-- Ensemble: Chromatically Calibrated Ectoplasmic Specs
-			i(209356),	-- Dreambound Choker
-			i(209357),	-- Dreambound Shawl
-			i(209358),	-- Dreambound Band
-			i(209359),	-- Dreambound Warglaive
-			i(209360),	-- Dreambound Staff
-			i(209361),	-- Dreambound Halberd
-			i(209362),	-- Dreambound Cudgel
-			i(209363),	-- Dreambound Mallet
-			i(209364),	-- Dreambound Censer
-			i(209365),	-- Dreambound Cleaver
-			i(209366),	-- Dreambound Hacker
-			i(209367),	-- Dreambound Signet
-			i(209368),	-- Dreambound Loop
-			i(209369),	-- Dreambound Greatsword
-			i(209370),	-- Dreambound Blade
-			i(209371),	-- Dreambound Sword
-			i(209372),	-- Dreambound Kris
-			i(209373),	-- Dreambound Shank
-			i(209374),	-- Dreambound Spellblade
-			i(209375),	-- Dreambound Rifle
-			i(209376),	-- Dreambound Polearm
-			i(209377),	-- Dreambound Wand
-			i(209378),	-- Dreambound Scepter
-			i(209379),	-- Dreambound Barrier
-			i(209380),	-- Dreambound Shoulderpads
-			i(209381),	-- Dreambound Epaulets
-			i(209382),	-- Dreambound Vest
-			i(209383),	-- Dreambound Armplates
-			i(209384),	-- Dreambound Girdle
-			i(209385),	-- Dreambound Mantle
-			i(209386),	-- Dreambound Legguards
-			i(209387),	-- Dreambound Gauntlets
-			i(209388),	-- Dreambound Sabatons
-			i(209389),	-- Dreambound Breastplate
-			i(209390),	-- Dreambound Faceplate
-			i(209391),	-- Dreambound Vambraces
-			i(209392),	-- Dreambound Cinch
-			i(209393),	-- Dreambound Shoulderguards
-			i(209394),	-- Dreambound Greaves
-			i(209395),	-- Dreambound Coif
-			i(209396),	-- Dreambound Grips
-			i(209397),	-- Dreambound Striders
-			i(209398),	-- Dreambound Chainmail
-			i(209399),	-- Dreambound Bindings
-			i(209400),	-- Dreambound Sash
-			i(209401),	-- Dreambound Breeches
-			i(209402),	-- Dreambound Cowl
-			i(209403),	-- Dreambound Handwraps
-			i(209404),	-- Dreambound Waders
-			i(209405),	-- Dreambound Cuffs
-			i(209406),	-- Dreambound Cord
-			i(209407),	-- Dreambound Pants
-			i(209408),	-- Dreambound Crown
-			i(209409),	-- Dreambound Mitts
-			i(209410),	-- Dreambound Sandals
-			i(209411),	-- Dreambound Vestment
-			i(209412),	-- Dreambound Greatcloak
-			i(209413),	-- Dreambound Cape
-			i(209414),	-- Dreambound Drape
-			i(209419),	-- Charred Elemental Remains
+			
 			i(209781),	-- Second Booster Part
 		})),
 		tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {

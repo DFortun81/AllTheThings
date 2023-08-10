@@ -554,9 +554,6 @@ root(ROOTS.NeverImplemented, {
 				i(192751, {	-- PH Moose Bull Dark / [PH] Moose Bull Dark (MOUNT!)
 					--["modelID"] = ,
 				}),
-				i(192807, {	-- PH Lava Mammoth Yellow / PH Lava Mammoth Yellow (MOUNT!)
-					--["modelID"] = ,
-				}),
 				i(192781, {	-- PH Lava Slug Blue / [PH] Lava Slug Blue (MOUNT!)
 					--["modelID"] = ,
 				}),
