@@ -5304,7 +5304,7 @@ namespace ATT
                     var filePath = Path.Combine(Config["root-data"] ?? "./DATAS", "00 - DB/Dynamic/", $"DynamicObjectDB_{DateTime.UtcNow.Ticks}.lua");
                     Directory.CreateDirectory(Path.GetDirectoryName(filePath));
                     File.WriteAllText(filePath, dirtyObjectStringBuilder
-                        .Insert(0, "﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs(")
+                        .Insert(0, "local ObjectDB = ObjectDB; for objectID,objectData in pairs(")
                         .Append(")\ndo ObjectDB[objectID] = objectData; end").ToString(), Encoding.UTF8);
                 }
             }

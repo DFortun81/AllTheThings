@@ -21,6 +21,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[34] = {
 		readable = "Old Jug",
 		icon = "Interface/Icons/INV_Drink_11",
+		model = 189821,
 		text = {
 			en = "Old Jug",
 			es = "Vieja jarra",
@@ -35,6 +36,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[35] = {
 		readable = "Captain's Footlocker",
+		model = 198238,
 		text = {
 			en = "Captain's Footlocker",
 			es = "Baúl del Capitán",
@@ -49,6 +51,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[36] = {
 		readable = "Broken Barrel",
+		model = 199567,
 		text = {
 			en = "Broken Barrel",
 			es = "Barrica rota",
@@ -63,6 +66,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[47] = {
 		readable = "Wanted: Lieutenant Fangore",
+		model = 199421,
 		text = {
 			en = "Wanted: Lieutenant Fangore",
 			es = "¡Se busca!",
@@ -109,6 +113,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[59] = {
 		readable = "Mound of loose dirt",
+		model = 189528,
 		text = {
 			en = "Mound of loose dirt",
 			es = "Montón de tierra",
@@ -123,6 +128,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[60] = {
 		readable = "Wanted: Gath'Ilzogg",
+		model = 199426,
 		text = {
 			en = "Wanted: Gath'Ilzogg",
 			es = "Se busca: Gath'Ilzogg",
@@ -153,8 +159,21 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[68] = {
 		readable = "Wanted Poster",
+		model = 199421,
 		text = {
 			en = "Wanted Poster",
+			es = "Cartel de Se busca",
+			de = "Steckbrief",
+			fr = "Avis de recherche",
+			it = "Manifesto dei Ricercati",
+			pt = "Pôster de Procura-se",
+			ru = "Плакат \"Разыскивается\"",
+			-- #if AFTER TBC
+			ko = "현상 수배 전단",
+			-- #else
+			ko = "현상수배 전단",
+			-- #endif
+			cn = "通缉告示",
 		},
 	},
 	[255] = {
@@ -166,6 +185,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[256] = {
 		readable = "Wanted!",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 199421,
 		text = {
 			en = "Wanted!",
 			es = "¡Se busca!",
@@ -180,6 +200,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[257] = {
 		readable = "Suspicious Barrel",
+		model = 198280,
 		text = {
 			en = "Suspicious Barrel",
 			es = "Barrica sospechosa",
@@ -195,6 +216,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[259] = {
 		readable = "Half-buried Barrel",
 		icon = "Interface/Icons/INV_Drink_11",
+		model = 199563,
 		text = {
 			en = "Half-buried Barrel",
 			es = "Barrica semienterrada",
@@ -210,6 +232,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[261] = {
 		readable = "Damaged Crate",
 		icon = "Interface/Icons/inv_crate_02",
+		model = 198168,
 		text = {
 			en = "Damaged Crate",
 			es = "Cajón dañado",
@@ -224,6 +247,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[269] = {
 		readable = "Guarded Thunder Ale Barrel",
+		model = 199563,
 		text = {
 			en = "Guarded Thunder Ale Barrel",
 			es = "Barrica de Cerveza del Trueno custodiado",
@@ -254,6 +278,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[287] = {
 		readable = "Bookie Herod's Records",
+		model = 198056,
 		text = {
 			en = "Bookie Herod's Records",
 			es = "Documentos del corredor Herod",
@@ -268,6 +293,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[288] = {
 		readable = "Bookie Herod's Strongbox",
+		model = 196979,
 		text = {
 			en = "Bookie Herod's Strongbox",
 			es = "Caja fuerte del corredor Herod",
@@ -283,6 +309,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[711] = {
 		readable = "Wanted!",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 199421,
 		text = {
 			en = "Wanted!",
 			es = "¡Se busca!",
@@ -297,6 +324,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[1557] = {
 		readable = "Lillith's Dinner Table",
+		model = 198598,
 		text = {
 			en = "Lillith's Dinner Table",
 			es = "Mesa de cena de Lillith",
@@ -311,6 +339,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[1561] = {
 		readable = "Sealed Crate",
+		model = 198168,
 		text = {
 			en = "Sealed Crate",
 			es = "Cajón sellado",
@@ -325,6 +354,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[1585] = {
 		readable = "Explosive Charge",
+		model = 197464,
 		text = {
 			en = "Explosive Charge",
 			es = "Carga explosiva",
@@ -339,6 +369,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[1586] = {
 		readable = "Crate of Candles",
+		model = 199634,
 		text = {
 			en = "Crate of Candles",
 			es = "Cajón de velas",
@@ -354,6 +385,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[1593] = {
 		readable = "Corpse Laden Boat",
 		icon = "Interface/Icons/inv_garrison_cargoship",
+		model = 190104,
 		text = {
 			en = "Corpse Laden Boat",
 			es = "Barco cargado de cadáveres",
@@ -368,6 +400,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[1599] = {
 		readable = "Shallow Grave",
+		model = 189528,
 		text = {
 			en = "Shallow Grave",
 			es = "Tumba poco profunda",
@@ -381,6 +414,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[1609] = {
 		readable = "Dragonmaw Catapult",
+		model = 189709,
 		text = {
 			en = "Dragonmaw Catapult",
 			es = "Catapulta Faucedraco",
@@ -396,6 +430,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[1627] = {
 		readable = "Dalaran Crate",
 		icon = "Interface/Icons/inv_crate_01",
+		model = 198168,
 		text = {
 			en = "Dalaran Crate",
 			es = "Cajón de Dalaran",
@@ -410,6 +445,11 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[1673] = {
 		readable = "Fel Cone",
+		-- #if AFTER CATA
+		model = 467768,
+		-- #else
+		model = 202013,
+		-- #endif
 		text = {
 			en = "Fel Cone",
 			es = "Bellota vil",
@@ -425,6 +465,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[1738] = {
 		readable = "Syndicate Documents",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 198451,
 		text = {
 			en = "Syndicate Documents",
 			es = "Documentos de Hermandad",
@@ -440,6 +481,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[1739] = {
 		readable = "Syndicate Documents",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 198453,
 		text = {
 			en = "Syndicate Documents",
 			es = "Documentos del Sindicato",
@@ -455,6 +497,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[1740] = {
 		readable = "Syndicate Documents",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 198451,
 		text = {
 			en = "Syndicate Documents",
 			es = "Documentos de la Hermandad",
@@ -470,6 +513,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[1761] = {
 		readable = "Hillsbrad Proclamation",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 201113,
 		text = {
 			en = "Hillsbrad Proclamation",
 			es = "Proclamación de Trabalomas",
@@ -485,6 +529,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[1763] = {
 		readable = "WANTED",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 199424,
 		text = {
 			en = "WANTED",
 			es = "SE BUSCA",
@@ -500,6 +545,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[1765] = {
 		readable = "Worn Wooden Chest",
 		icon = "Interface/Icons/INV_Crate_03",
+		model = 196979,
 		text = {
 			en = "Worn Wooden Chest",
 			es = "Cofre de madera gastado",
@@ -515,6 +561,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[1768] = {
 		readable = "Flame of Azel",
 		icon = "Interface/Icons/spell_fire_flameshock",
+		model = 198065,
 		text = {
 			en = "Flame of Azel",
 			es = "Llama de Azel",
@@ -530,6 +577,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[1769] = {
 		readable = "Flame of Veraz",
 		icon = "Interface/Icons/spell_fire_flameshock",
+		model = 198065,
 		text = {
 			en = "Flame of Veraz",
 			es = "Llama de Veraz",
@@ -545,6 +593,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[1770] = {
 		readable = "Flame of Uzel",
 		icon = "Interface/Icons/spell_fire_flameshock",
+		model = 198065,
 		text = {
 			en = "Flame of Uzel",
 			es = "Llama de Uzel",
@@ -560,6 +609,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[2008] = {
 		readable = "Dangerous!",
 		icon = "Interface/Icons/inv_misc_head_human_01",
+		model = 199428,
 		text = {
 			en = "Dangerous!",
 			es = "¡Peligro!",
@@ -575,6 +625,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[2059] = {
 		readable = "A Dwarven Corpse",
 		icon = "Interface/Icons/INV_Misc_Bone_DwarfSkull_01",
+		model = 197330,
 		text = {
 			en = "A Dwarven Corpse",
 			es = "Un cadáver de enano",
@@ -590,6 +641,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[2076] = {
 		readable = "Bubbling Cauldron",
 		icon = "Interface/Icons/INV_Misc_Cauldron_Arcane",
+		model = 198100,
 		text = {
 			en = "Bubbling Cauldron",
 			es = "Caldera burbujeante",
@@ -605,6 +657,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[2083] = {
 		readable = "Bloodsail Correspondence",
 		icon = "Interface/Icons/inv_misc_scrollunrolled04",
+		model = 198455,
 		text = {
 			en = "Bloodsail Correspondence",
 			es = "Correspondencia de los Velasangre",
@@ -619,6 +672,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[2289] = {
 		readable = "Ruined Lifeboat",
+		model = 190677,
 		text = {
 			en = "Ruined Lifeboat",
 			es = "Bote salvavidas inservible",
@@ -634,6 +688,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[2553] = {
 		readable = "A Soggy Scroll",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 198453,
 		text = {
 			en = "A Soggy Scroll",
 			es = "Un viejo pergamino",
@@ -649,6 +704,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[2555] = {
 		readable = "Musty Scroll",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 198453,
 		text = {
 			en = "Musty Scroll",
 			es = "Pergamino mohoso",
@@ -663,6 +719,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[2652] = {
 		readable = "Ebenezer Rustlocke's Corpse",
+		model = 197330,
 		text = {
 			en = "Ebenezer Rustlocke's Corpse",
 			es = "Cadáver de Ebenezer Herrumbra",
@@ -678,6 +735,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[2688] = {
 		readable = "Keystone",
 		icon = "Interface/Icons/inv_enchanting_wod_crystal2",
+		model = 199976,
 		text = {
 			en = "Keystone",
 			es = "Piedra angular",
@@ -692,6 +750,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[2689] = {
 		readable = "Stone of West Binding",
+		model = 198951,
 		text = {
 			en = "Stone of West Binding",
 			es = "Piedra de Vínculo Oeste",
@@ -706,6 +765,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[2690] = {
 		readable = "Stone of Outer Binding",
+		model = 198951,
 		text = {
 			en = "Stone of Outer Binding",
 			es = "Piedra de Vínculo Exterior",
@@ -720,6 +780,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[2691] = {
 		readable = "Stone of East Binding",
+		model = 198951,
 		text = {
 			en = "Stone of East Binding",
 			es = "Piedra de Vínculo Este",
@@ -735,6 +796,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[2701] = {
 		readable = "Iridescent Shards",
 		icon = "Interface/Icons/inv_enchanting_wod_crystal2",
+		model = 202445,
 		text = {
 			en = "Iridescent Shards",
 			es = "Fragmentos iridiscentes",
@@ -750,6 +812,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[2702] = {
 		readable = "Stone of Inner Binding",
 		icon = "Interface/Icons/inv_enchanting_wod_crystal2",
+		model = 198951,
 		text = {
 			en = "Stone of Inner Binding",
 			es = "Piedra de Vínculo Interior",
@@ -771,6 +834,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[2704] = {
 		readable = "Cache of Explosives",
 		icon = "Interface/Icons/inv_crate_01",
+		model = 200898,
 		text = {
 			en = "Cache of Explosives",
 			es = "Alijo de explosivos",
@@ -786,6 +850,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[2713] = {
 		readable = "Wanted Board",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 199428,
 		text = {
 			en = "Wanted Board",
 			es = "Tablón de Se busca",
@@ -800,6 +865,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[2734] = {
 		readable = "Waterlogged Chest",
+		model = 196979,
 		text = {
 			en = "Waterlogged Chest",
 			es = "Cofre encharcado",
@@ -815,6 +881,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[2739] = {
 		readable = "Chest of the Black Feather",
 		icon = "Interface/Icons/inv_feather_01",
+		model = 196976,
 		text = {
 			en = "Chest of the Black Feather",
 			es = "Cofre de la pluma negra",
@@ -830,6 +897,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[2740] = {
 		readable = "Chest of the Raven Claw",
 		icon = "Interface/Icons/inv_misc_orb_02",
+		model = 196976,
 		text = {
 			en = "Chest of the Raven Claw",
 			es = "Cofre de la garra del cuervo",
@@ -845,6 +913,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[2741] = {
 		readable = "Chest of the Sky",
 		icon = "Interface/Icons/inv_misc_gem_sapphire_02",
+		model = 196976,
 		text = {
 			en = "Chest of the Sky",
 			es = "Cofre del cielo",
@@ -860,6 +929,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[2742] = {
 		readable = "Chest of Nesting",
 		icon = "Interface/Icons/inv_misc_rune_01",
+		model = 196976,
 		text = {
 			en = "Chest of Nesting",
 			es = "Cofre del nidal",
@@ -874,6 +944,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[2868] = {
 		readable = "Crumpled Map",
+		model = 198457,
 		text = {
 			en = "Crumpled Map",
 			es = "Mapa arrugado",
@@ -888,6 +959,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[2875] = {
 		readable = "Battered Dwarven Skeleton",
+		model = 197330,
 		text = {
 			en = "Battered Dwarven Skeleton",
 			es = "Esqueleto de enano maltrecho",
@@ -903,6 +975,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[2908] = {
 		readable = "Sealed Supply Crate",
 		icon = "Interface/Icons/INV_Crate_03",
+		model = 198167,
 		text = {
 			en = "Sealed Supply Crate",
 			es = "Cajón de suministros sellado",
@@ -918,6 +991,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[2910] = {
 		readable = "Well Stone",
 		icon = "Interface/Icons/inv_stone_12",
+		model = 198947,
 		text = {
 			en = "Well Stone",
 			es = "Piedra de pozo",
@@ -933,6 +1007,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[2912] = {
 		readable = "Ambercorn",
 		icon = "Interface/Icons/inv_misc_food_02",
+		model = 202297,
 		text = {
 			en = "Ambercorn",
 			es = "Bellota ámbar",
@@ -947,6 +1022,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[2933] = {
 		readable = "Seal of the Earth",
+		model = 199975,
 		text = {
 			en = "Seal of the Earth",
 			es = "Sello de la Tierra",
@@ -961,6 +1037,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[3076] = {
 		readable = "Dirt-stained Map",
+		model = 198457,
 		text = {
 			en = "Dirt-stained Map",
 			es = "Mapa manchado",
@@ -976,6 +1053,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[3189] = {
 		readable = "Attack Plan: Valley of Trials",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 201113,
 		text = {
 			en = "Attack Plan: Valley of Trials",
 			es = "Plan de ataque: Valle de los Retos",
@@ -991,6 +1069,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[3190] = {
 		readable = "Attack Plan: Sen'jin Village",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 201113,
 		text = {
 			en = "Attack Plan: Sen'jin Village",
 			es = "Plan de ataque: Poblado Sen'jin",
@@ -1006,6 +1085,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[3192] = {
 		readable = "Attack Plan: Orgrimmar",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 201113,
 		text = {
 			en = "Attack Plan: Orgrimmar",
 			es = "Plan de ataque: Orgrimmar",
@@ -1021,6 +1101,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[3236] = {
 		readable = "Gnomish Toolbox",
 		icon = "Interface/Icons/inv_misc_wrench_01",
+		model = 197617,
 		text = {
 			en = "Gnomish Toolbox",
 			es = "Caja de herramientas gnoma",
@@ -1036,6 +1117,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[3237] = {
 		readable = "Imprisoned Darkspear",
 		icon = "Interface/Icons/inv_misc_bone_humanskull_01",
+		model = 190440,
 		text = {
 			en = "Imprisoned Darkspear",
 			es = "Lanza Negra encarcelado",
@@ -1065,6 +1147,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[3239] = {
 		readable = "Benedict's Chest",
+		model = 196982,
 		text = {
 			en = "Benedict's Chest",
 			es = "Cofre de Benedict",
@@ -1080,6 +1163,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[3240] = {
 		readable = "Taillasher Eggs",
 		icon = "Interface/Icons/inv_egg_02",
+		model = 199225,
 		text = {
 			en = "Taillasher Eggs",
 			es = "Huevos de colazote",
@@ -1095,6 +1179,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[3290] = {
 		readable = "Stolen Supply Sack",
 		icon = "Interface/Icons/inv_misc_bag_10",
+		model = 200442,
 		text = {
 			en = "Stolen Supply Sack",
 			es = "Saco de provisiones robado",
@@ -1110,6 +1195,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[3525] = {
 		readable = "The Altar of Fire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 189280,
 		text = {
 			en = "The Altar of Fire",
 			es = "El Altar de Fuego",
@@ -1140,6 +1226,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[3643] = {
 		readable = "Old Footlocker",
+		model = 198238,
 		text = {
 			en = "Old Footlocker",
 			es = "Baúl antiguo",
@@ -1250,6 +1337,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[3972] = {
 		readable = "WANTED",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 199424,
 		text = {
 			en = "WANTED",
 			es = "SE BUSCA",
@@ -1297,6 +1385,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[4406] = {
 		readable = "Webwood Eggs",
 		icon = "Interface/Icons/inv_egg_02",
+		model = 200974,
 		text = {
 			en = "Webwood Eggs",
 			es = "Huevos de Tejemadera",
@@ -1312,6 +1401,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[4608] = {
 		readable = "Timberling Sprout",
 		icon = "Interface/Icons/spell_nature_naturetouchgrow",
+		model = 201087,
 		text = {
 			en = "Timberling Sprout",
 			es = "Brote de Brezomadera",
@@ -1327,6 +1417,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[5620] = {
 		readable = "Flawed Power Stones",
 		icon = "Interface/Icons/inv_misc_gem_diamond_02",
+		model = 198947,
 		text = {
 			en = "Flawed Power Stones",
 			es = "Piedras de energía imperfectas",
@@ -1438,6 +1529,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[10076] = {
 		readable = "Scrying Bowl",
 		icon = "Interface/Icons/inv_potion_04",
+		model = 201115,
 		text = {
 			en = "Scrying Bowl",
 			es = "Cuenco de visión",
@@ -1453,6 +1545,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[11713] = {
 		readable = "Death Cap",
 		icon = "Interface/Icons/inv_mushroom_02",
+		model = 219475,
 		text = {
 			en = "Death Cap",
 			es = "Oronja verde",
@@ -1468,6 +1561,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[11714] = {
 		readable = "Scaber Stalk",
 		icon = "Interface/Icons/inv_mushroom_10",
+		model = 219476,
 		text = {
 			en = "Scaber Stalk",
 			es = "Boleto rudo",
@@ -1482,6 +1576,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[12666] = {
 		readable = "Twilight Tome",
+		model = 198025,
 		text = {
 			en = "Twilight Tome",
 			es = "Escrito Crepuscular",
@@ -1497,6 +1592,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[13360] = {
 		readable = "Mathystra Relic",
 		icon = "Interface/Icons/inv_misc_idol_02",
+		model = 201093,
 		text = {
 			en = "Mathystra Relic",
 			es = "Reliquia de Mathystra",
@@ -1560,6 +1656,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[17182] = {
 		readable = "Buzzbox 827",
 		icon = "Interface/Icons/inv_misc_enggizmos_09",
+		model = 197760,
 		text = {
 			en = "Buzzbox 827",
 			es = "Caja mecánica 827",
@@ -1575,6 +1672,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[17183] = {
 		readable = "Buzzbox 411",
 		icon = "Interface/Icons/inv_misc_enggizmos_09",
+		model = 197760,
 		text = {
 			en = "Buzzbox 411",
 			es = "Caja mecánica 411",
@@ -1590,6 +1688,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[17184] = {
 		readable = "Buzzbox 323",
 		icon = "Interface/Icons/inv_misc_enggizmos_09",
+		model = 197760,
 		text = {
 			en = "Buzzbox 323",
 			es = "Caja mecánica 323",
@@ -1605,6 +1704,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[17188] = {
 		readable = "The Lay of Ameth'Aran",
 		icon = "Interface/Icons/inv_misc_book_02",
+		model = 201080,
 		text = {
 			en = "The Lay of Ameth'Aran",
 			es = "La instauración de Ameth'Aran",
@@ -1620,6 +1720,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[17189] = {
 		readable = "The Fall of Ameth'Aran",
 		icon = "Interface/Icons/inv_misc_book_03",
+		model = 201080,
 		text = {
 			en = "The Fall of Ameth'Aran",
 			es = "La caída de Ameth'Aran",
@@ -1633,10 +1734,12 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		},
 	},
 	[17282] = {
-		readable = "Plant Bundle",
-		icon = "Interface/Icons/inv_misc_herb_05",
+		-- #if AFTER CATA
+		readable = "Bathran's Hair",
+		icon = "Interface/Icons/inv_misc_herb_tigerlily",
+		model = 255235,
 		text = {
-			en = "Plant Bundle",
+			en = "Bathran's Hair",
 			es = "Cabello de Bathran",
 			de = "Bathranshaar",
 			fr = "Cheveux de Bathran",
@@ -1646,10 +1749,27 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ko = "배스랜모초",
 			cn = "草药",
 		},
+		-- #else
+		readable = "Plant Bundle",
+		icon = "Interface/Icons/inv_misc_herb_05",
+		model = 203748,
+		text = {
+			en = "Plant Bundle",
+			es = "Paquete de plantas",
+			de = "Pflanzenbündel",
+			fr = "Botte de plantes",
+			it = "Plant Bundle",
+			pt = "Pacote de Plantas",
+			ru = "Пучок трав",
+			ko = "식물 꾸러미",
+			cn = "草药",
+		},
+		-- #endif
 	},
 	[17783] = {
 		readable = "Ancient Statuette",
 		icon = "Interface/Icons/inv_misc_idol_01",
+		model = 201094,
 		text = {
 			en = "Ancient Statuette",
 			es = "Estatuilla antigua",
@@ -1670,10 +1790,12 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		},
 	},
 	[19015] = {
-		readable = "Elune's Tear",
-		icon = "Interface/Icons/inv_ore_arcanite_02",
+		-- #if AFTER CATA
+		readable = "Soot-Covered Elune's Tear",
+		icon = "Interface/Icons/inv_misc_gem_pearl_02",
+		model = 199786,
 		text = {
-			en = "Elune's Tear",
+			en = "Soot-Covered Elune's Tear",
 			es = "Lágrima de Elune cubierta de hollín",
 			de = "Elunes Träne",
 			fr = "Larme d'Élune",
@@ -1683,10 +1805,27 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ko = "그을음 뒤덮인 엘룬의 눈물",
 			cn = "月神之泪",
 		},
+		-- #else
+		readable = "Elune's Tear",
+		icon = "Interface/Icons/inv_ore_arcanite_02",
+		model = 198719,
+		text = {
+			en = "Elune's Tear",
+			es = "Lágrima de Elune",
+			de = "Elunes Träne",
+			fr = "Larme d'Elune",
+			it = "Lacrima di Elune",
+			pt = "Lágrima de Eluna",
+			ru = "Слеза Элуны",
+			ko = "엘룬의 눈물",
+			cn = "月神之泪",
+		},
+		-- #endif
 	},
 	[19016] = {
 		readable = "Stardust Covered Bush",
 		icon = "Interface/Icons/inv_misc_dust_02",
+		model = 201233,
 		text = {
 			en = "Stardust Covered Bush",
 			es = "Arbusto cubierto de polvo estelar",
@@ -1702,6 +1841,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[19021] = {
 		readable = "Rusty Chest",
 		icon = "Interface/Icons/inv_box_01",
+		model = 196976,
 		text = {
 			en = "Rusty Chest",
 			es = "Cofre oxidado",
@@ -1716,6 +1856,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[19022] = {
 		readable = "Worn Chest",
+		model = 196976,
 		text = {
 			en = "Worn Chest",
 			es = "Cofre desgastado",
@@ -1747,6 +1888,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[19024] = {
 		readable = "Hidden Shrine",
 		icon = "Interface/Icons/inv_enchant_essencemagicsmall",
+		model = 198951,
 		text = {
 			en = "Hidden Shrine",
 			es = "Santuario Oculto",
@@ -1762,6 +1904,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[19027] = {
 		readable = "Tome of Mel'Thandris",
 		icon = "Interface/Icons/INV_Misc_Book_09",
+		model = 200924,
 		text = {
 			en = "Tome of Mel'Thandris",
 			es = "Libro de Mel'Thandris",
@@ -1777,6 +1920,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[19030] = {
 		readable = "Mound of Dirt",
 		icon = "Interface/Icons/INV_MISC_DUST_05",
+		model = 189528,
 		text = {
 			en = "Mound of Dirt",
 			es = "Túmulo de barro",
@@ -1800,6 +1944,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[19869] = {
 		readable = "Rocket Car Rubble",
 		icon = "Interface/Icons/inv_gizmo_03",
+		model = 197733,
 		text = {
 			en = "Rocket Car Rubble",
 			es = "Restos del coche cohete",
@@ -1814,6 +1959,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[19877] = {
 		readable = "Velinde's Locker",
+		model = 196982,
 		text = {
 			en = "Velinde's Locker",
 			es = "Armario de Velinde",
@@ -1829,6 +1975,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[19901] = {
 		readable = "Circle of Imprisonment",
 		icon = "Interface/Icons/inv_misc_gem_ruby_01",
+		model = 201106,
 		text = {
 			en = "Circle of Imprisonment",
 			es = "Círculo de Encarcelamiento",
@@ -1844,6 +1991,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[20359] = {
 		readable = "Egg of Onyxia",
 		icon = "Interface/Icons/inv_egg_01",
+		model = 200964,
 		text = {
 			en = "Egg of Onyxia",
 			es = "Huevo de Onyxia",
@@ -1859,6 +2007,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[20691] = {
 		readable = "Cozzle's Footlocker",
 		icon = "Interface/Icons/inv_misc_note_04",
+		model = 196979,
 		text = {
 			en = "Cozzle's Footlocker",
 			es = "Baúl de Cozzle",
@@ -1874,6 +2023,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[20725] = {
 		readable = "The Legacy of the Aspects",
 		icon = "Interface/Icons/inv_misc_book_09",
+		model = 198020,
 		text = {
 			en = "The Legacy of the Aspects",
 			es = "El legado de los Aspectos",
@@ -1889,6 +2039,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[20727] = {
 		readable = "Gizmorium Shipping Crate",
 		icon = "Interface/Icons/inv_ammo_bullet_03",
+		model = 200960,
 		text = {
 			en = "Gizmorium Shipping Crate",
 			es = "Cajón de embalaje de Gizmorium",
@@ -1904,6 +2055,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[20805] = {
 		readable = "Rizzle's Unguarded Plans",
 		icon = "Interface/Icons/inv_scroll_07",
+		model = 198452,
 		text = {
 			en = "Rizzle's Unguarded Plans",
 			es = "Planes sin vigilancia de Rizzle",
@@ -1918,6 +2070,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[20807] = {
 		readable = "Ancient Brazier",
+		model = 199138,
 		text = {
 			en = "Ancient Brazier",
 			es = "Blandón antiguo",
@@ -1933,6 +2086,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[20985] = {
 		readable = "Loose Dirt",
 		icon = "Interface/Icons/inv_misc_dust",
+		model = 204113,
 		text = {
 			en = "Loose Dirt",
 			es = "Tierra esparcida",
@@ -1948,6 +2102,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[20992] = {
 		readable = "Black Shield",
 		icon = "Interface/Icons/inv_shield_04",
+		model = 189676,
 		text = {
 			en = "Black Shield",
 			es = "Escudo negro",
@@ -1962,6 +2117,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[21015] = {
 		readable = "Hoofprints",
+		model = 202786,
 		text = {
 			en = "Hoofprints",
 			es = "Huellas pezuñales",
@@ -1976,6 +2132,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[21016] = {
 		readable = "Hoofprints",
+		model = 202786,
 		text = {
 			en = "Hoofprints",
 			es = "Huellas pezuñales",
@@ -1991,6 +2148,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[21042] = {
 		readable = "Theramore Guard Badge",
 		icon = "Interface/Icons/inv_shield_05",
+		model = 198660,
 		text = {
 			en = "Theramore Guard Badge",
 			es = "Identificación de guardia de Theramore",
@@ -2054,6 +2212,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[22245] = {
 		readable = "Sack of Meat",
 		icon = "Interface/Icons/inv_misc_food_16",
+		model = 200442,
 		text = {
 			en = "Sack of Meat",
 			es = "Saco de carne",
@@ -2069,6 +2228,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[22246] = {
 		readable = "Tear of Theradras",
 		icon = "Interface/Icons/inv_misc_gem_sapphire_03",
+		model = 190809,
 		text = {
 			en = "Tear of Theradras",
 			es = "Lágrima de Theradras",
@@ -2100,6 +2260,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[37099] = {
 		readable = "Atal'ai Tablet",
 		icon = "Interface/Icons/INV_Misc_StoneTablet_03",
+		model = 201080,
 		text = {
 			en = "Atal'ai Tablet",
 			es = "Tablilla Atal'ai",
@@ -2114,6 +2275,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[50961] = {
 		readable = "Malem Chest",
+		model = 200961,
 		text = {
 			en = "Malem Chest",
 			es = "Cofre de Malem",
@@ -2128,6 +2290,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[51708] = {
 		readable = "Eliza's Grave Dirt",
+		model = 201030,
 		text = {
 			en = "Eliza's Grave Dirt",
 			es = "Tierra de la tumba de Eliza",
@@ -2158,6 +2321,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[61934] = {
 		readable = "Brazier of the Dormant Flame",
+		model = 200925,
 		text = {
 			en = "Brazier of the Dormant Flame",
 			es = "Blandón de la Llama Latente",
@@ -2204,6 +2368,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[91138] = {
 		readable = "Jordan's Hammer",
+		model = 198648,
 		text = {
 			en = "Jordan's Hammer",
 			es = "Martillo de Jordan",
@@ -2218,6 +2383,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[103821] = {
 		readable = "Doan's Strongbox",
+		model = 196976,
 		text = {
 			en = "Doan's Strongbox",
 			es = "Caja fuerte de Doan",
@@ -2232,6 +2398,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[112888] = {
 		readable = "Dusty Shelf",
+		model = 198053,
 		text = {
 			en = "Dusty Shelf",
 			es = "Estantería polvorienta",
@@ -2247,6 +2414,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[112948] = {
 		readable = "Intrepid's Locked Strongbox",
 		icon = "Interface/Icons/battleground_strongbox_skirmish_horde",
+		model = 197617,
 		text = {
 			en = "Intrepid's Locked Strongbox",
 			es = "Caja fuerte de El Intrépido cerrada",
@@ -2261,6 +2429,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[113757] = {
 		readable = "Shadowforge Cache",
+		model = 200953,
 		text = {
 			en = "Shadowforge Cache",
 			es = "Alijo de Forjatiniebla",
@@ -2276,11 +2445,20 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[113768] = {
 		readable = "Brightly Colored Egg",
 		icon = [[~_.asset("Holiday_noblegarden")]],
+		model = 199691,
 		text = {
 			-- #if AFTER WRATH
 			en = [[~GetSpellInfo(61820)]],
 			-- #else
 			en = "Brightly Colored Egg",
+			es = "Huevo de color vivo",
+			de = "Osterei",
+			fr = "Oeuf de Pâques",
+			it = "Uovo Decorato",
+			pt = "Ovo Colorido Brilhante",
+			ru = "Ярко окрашенное яйцо",
+			ko = "오색찬란한 알",
+			cn = "复活节彩蛋",
 			-- #endif
 		},
 	},
@@ -2328,6 +2506,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[125477] = {
 		readable = "Conspicuous Urn",
+		model = 199753,
 		text = {
 			en = "Conspicuous Urn",
 			es = "Urna llamativa",
@@ -2456,8 +2635,21 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[141832] = {
 		readable = "Gong of Zul'Farrak",
 		icon = "Interface/Icons/inv_hammer_19",
+		model = 201029,
 		text = {
 			en = "Gong of Zul'Farrak",
+			es = "Gong de Zul'Farrak",
+			-- #if AFTER TBC
+			de = "Gong von Zul'Farrak",
+			-- #else
+			de = "Gong von Zul’Farrak",
+			-- #endif
+			fr = "Gong de Zul'Farrak",
+			it = "Gong di Zul'farrak",
+			pt = "Gongo de Zul'Farrak",
+			ru = "Гонг Зул'Фаррака",
+			ko = "줄파락 징",
+			cn = "祖尔法拉克铁锣",
 		},
 	},
 	[141853] = {
@@ -2614,26 +2806,61 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[142185] = {
 		readable = "Flame of Byltan",
+		model = 199138,
 		text = {
 			en = "Flame of Byltan",
+			es = "Llama de Byltan",
+			de = "Flamme von Byltan",
+			fr = "Flamme de Byltan",
+			it = "Fiamma di Byltan",
+			pt = "Chama de Byltan",
+			ru = "Пламя Бильтана",
+			ko = "빌탄의 불꽃",
+			cn = "拜尔坦之焰",
 		},
 	},
 	[142186] = {
 		readable = "Flame of Lahassa",
+		model = 199138,
 		text = {
 			en = "Flame of Lahassa",
+			es = "Llama de Lahassa",
+			de = "Flamme von Lahassa",
+			fr = "Flamme de Lahassa",
+			it = "Fiamma di Lahassa",
+			pt = "Chama de Lahassa",
+			ru = "Пламя Лахассы",
+			ko = "라하사의 불꽃",
+			cn = "莱哈萨之焰",
 		},
 	},
 	[142187] = {
 		readable = "Flame of Imbel",
+		model = 199138,
 		text = {
 			en = "Flame of Imbel",
+			es = "Llama de Imbel",
+			de = "Flamme von Imbel",
+			fr = "Flamme de Imbel",
+			it = "Fiamma di Imbel",
+			pt = "Chama de Imbel",
+			ru = "Пламя Имбела",
+			ko = "임벨의 불꽃",
 		},
 	},
 	[142188] = {
 		readable = "Flame of Samha",
+		model = 199138,
 		text = {
 			en = "Flame of Samha",
+			es = "Llama de Samha",
+			de = "Flamme von Samha",
+			fr = "Flamme de Samha",
+			it = "Fiamma di Samha",
+			pt = "Chama de Samha",
+			ru = "Пламя Самхи",
+			ko = "삼하의 불꽃",
+			cn = "萨姆哈之焰",
 		},
 	},
 	[142195] = {
@@ -3117,8 +3344,21 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[156561] = {
 		readable = "Wanted Poster",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 199421,
 		text = {
 			en = "Wanted Poster",
+			es = "Cartel de Se busca",
+			de = "Steckbrief",
+			fr = "Avis de recherche",
+			it = "Manifesto dei Ricercati",
+			pt = "Pôster de Procura-se",
+			ru = "Плакат \"Разыскивается\"",
+			-- #if AFTER TBC
+			ko = "현상 수배 전단",
+			-- #else
+			ko = "현상수배 전단",
+			-- #endif
+			cn = "通缉告示",
 		},
 	},
 	[157936] = {
@@ -4055,8 +4295,17 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[174848] = {
 		readable = "Testing Equipment",
+		model = 203218,
 		text = {
 			en = "Testing Equipment",
+			es = "Equipo de pruebas",
+			de = "Testausrüstung",
+			fr = "Equipement de test",
+			it = "Equipaggiamento di Prova",
+			pt = "Equipamento de Teste",
+			ru = "Испытательное оборудование",
+			ko = "실험용 장비",
+			cn = "测试仪器",
 		},
 	},
 	[175165] = {
@@ -4212,22 +4461,61 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[175329] = {
 		readable = "Blackwood Nut Stores",
 		icon = "Interface/Icons/inv_misc_food_02",
+		model = 200401,
 		text = {
 			en = "Blackwood Nut Stores",
+			-- #if AFTER TBC
+			es = "Provisiones de nueces de los Bosque Negro",
+			-- #else
+			es = "Provisiones de nueces del Bosque Negro",
+			-- #endif
+			de = "Nusslager der Schwarzfelle",
+			fr = "Réserves de noix des Noirbois",
+			it = "Blackwood Nut Stores",
+			pt = "Reservas de Castanha Bosquenero",
+			ru = "Ореховый склад Чернолесья",
+			ko = "검은나무일족 열매 저장고",
+			cn = "黑木坚果",
 		},
 	},
 	[175330] = {
 		readable = "Blackwood Fruit Stores",
 		icon = "Interface/Icons/inv_misc_food_57",
+		model = 200401,
 		text = {
 			en = "Blackwood Fruit Stores",
+			-- #if AFTER TBC
+			es = "Provisiones de fruta de los Bosque Negro",
+			-- #else
+			es = "Provisiones de fruta del Bosque Negro",
+			-- #endif
+			de = "Obstlager der Schwarzfelle",
+			fr = "Réserves de fruits des Noirbois",
+			it = "Blackwood Fruit Stores",
+			pt = "Reservas de Fruta Bosquenero",
+			ru = "Фруктовый склад Чернолесья",
+			ko = "검은나무일족 과일 저장고",
+			cn = "黑木水果",
 		},
 	},
 	[175331] = {
 		readable = "Blackwood Grain Stores",
 		icon = "Interface/Icons/inv_misc_food_wheat_02",
+		model = 200401,
 		text = {
 			en = "Blackwood Grain Stores",
+			-- #if AFTER TBC
+			es = "Provisiones de grano de los Bosque Negro",
+			-- #else
+			es = "Provisiones de grano del Bosque Negro",
+			-- #endif
+			de = "Getreidelager der Schwarzfelle",
+			fr = "Réserves de céréales des Noirbois",
+			it = "Blackwood Grain Stores",
+			pt = "Reservas de Grão Bosquenero",
+			ru = "Зернохранилище племени Чернолесья",
+			ko = "검은나무일족 곡식 저장고",
+			cn = "黑木谷物",
 		},
 	},
 	[175382] = {
@@ -4361,6 +4649,14 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 198527,
 		text = {
 			en = "Spire Spider Egg",
+			es = "Huevo de araña de la cumbre",
+			de = "Spitzenspinnenei",
+			fr = "Œuf d'araignée du pic",
+			it = "Uovo del Ragno dei Bastioni",
+			pt = "Ovo de Aranha do Pináculo",
+			ru = "Яйцо скального паука",
+			ko = "첨탑 거미알",
+			cn = "尖塔蜘蛛卵",
 		},
 	},
 	[175629] = {
@@ -5423,8 +5719,21 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[176213] = {
 		readable = "Blood of Heroes",
 		icon = "Interface/Icons/inv_potion_33",
+		model = 203722,
 		text = {
 			en = "Blood of Heroes",
+			-- #if AFTER WRATH
+			es = "Sangre de héroes",
+			-- #else
+			es = "Sangre de Héroes",
+			-- #endif
+			de = "Blut von Helden",
+			fr = "Sang des héros",
+			it = "Blood of Heroes",
+			pt = "Sangue dos Heróis",
+			ru = "Кровь героев",
+			ko = "영웅의 피",
+			cn = "英雄之血",
 		},
 	},
 	[176344] = {
@@ -5646,6 +5955,14 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 199744,
 		text = {
 			en = "Araj's Phylactery",
+			es = "Filacteria de Araj",
+			de = "Arajs Phylakterium",
+			fr = "Phylactère d'Araj",
+			it = "Filatterio di Araj",
+			pt = "Filactério de Araj",
+			ru = "Оберег Аража",
+			ko = "아라즈의 성물함",
+			cn = "阿拉基的护命匣",
 		},
 	},
 	[177243] = {
@@ -5979,6 +6296,14 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 201617,
 		text = {
 			en = "Felvine Shard",
+			es = "Fragmento de gangrevid",
+			de = "Teufelsrankensplitter",
+			fr = "Fragment de gangrevigne",
+			it = "Frammento di Vil Vite",
+			pt = "Lasca de Vinhavil",
+			ru = "Осколок сквернита",
+			ko = "악령덩굴 조각",
+			cn = "水晶碎片",
 		},
 	},
 	[179562] = {
@@ -6074,6 +6399,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[179832] = {
 		readable = "Pillaclencher's Ornate Pillow",
 		icon = "Interface/Icons/inv_misc_armorkit_06",
+		model = 190595,
 		text = {
 			en = "Pillaclencher's Ornate Pillow",
 			es = "Almohada ornamentada de Pilaprieta",
@@ -6083,6 +6409,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Travesseiro Ornado da Alma Fada",
 			ru = "Вышитая подушка Крепких Тисков",
 			ko = "하녀 필라클렌처의 화려한 베개",
+			cn = "[Pillamaster's Ornate Pillow]",
 		},
 	},
 	[179913] = {
@@ -6261,6 +6588,14 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 202130,
 		text = {
 			en = "Hive'Ashi Glyphed Crystal",
+			es = "Cristal con inscripciones de Colmen'Ashi",
+			de = "Glyphenverzierter Kristall des Ashischwarms",
+			fr = "Cristal orné de glyphes de la Ruche'Ashi",
+			it = "Cristallo con Glifi dell'Alveare Ashi",
+			pt = "Cristal Entalhado de Glifos de Colme'Ashi",
+			ru = "Покрытый письменами кристалл Улья Аши",
+			ko = "문자가 새겨진 하이브아쉬 수정",
+			cn = "亚什虫巢雕文水晶",
 		},
 	},
 	[180455] = {
@@ -6269,6 +6604,14 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 202131,
 		text = {
 			en = "Hive'Zora Glyphed Crystal",
+			es = "Cristal con inscripciones de Colmen'Zora",
+			de = "Glyphenverzierter Kristall des Zoraschwarms",
+			fr = "Cristal orné de glyphes de la Ruche'Zora",
+			it = "Cristallo con Glifi dell'Alveare Zora",
+			pt = "Cristal Entalhado de Glifos de Colme'Zora",
+			ru = "Покрытый письменами кристалл Улья Зора",
+			ko = "문자가 새겨진 하이브조라 수정",
+			cn = "佐拉虫巢雕文水晶",
 		},
 	},
 	[180456] = {
@@ -6420,8 +6763,11 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			es = "Tierra removida",
 			de = "Frisch aufgewühlter Dreck",
 			fr = "Terre fraîchement remuée",
-			it = "Freshly Dug Dirt",
+			it = "[Freshly Dug Dirt]",
+			pt = "[Freshly Dug Dirt]",
 			ru = "Только что выброшенная земля",
+			ko = "[Freshly Dug Dirt]",
+			cn = "[Freshly Dug Dirt]",
 		},
 	},
 	[180662] = {
@@ -6554,9 +6900,11 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 202508,
 		text = {
 			en = "The Scarab Gong",
+			es = "[The Scarab Gong]",
 			de = "Der Skarabäusgong",
 			fr = "Le gong du Scarabée",
 			it = "The Scarab Gong",
+			pt = "[The Scarab Gong]",
 			ru = "Гонг Скарабея",
 			ko = "스카라베 징",
 			cn = "甲虫之锣",
@@ -6774,6 +7122,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Arenabeute",
 			fr = "Butin de l'arène",
 			it = "Arena Spoils",
+			pt = "[Arena Spoils]",
 			ru = "Трофеи арены",
 			ko = "투기장 전리품",
 			cn = "竞技场的泥土",
@@ -6785,10 +7134,14 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 196976,
 		text = {
 			en = "Sothos and Jarien's Heirlooms",
+			es = "[Sothos and Jarien's Heirlooms]",
 			de = "Sothos' und Jariens Erbstücke",
 			fr = "Possessions de Sothos et Jarien",
 			it = "Sothos and Jarien's Heirlooms",
+			pt = "[Sothos and Jarien's Heirlooms]",
 			ru = "Наследие Сотоса и Джариена",
+			ko = "[Sothos and Jarien's Heirlooms]",
+			cn = "[Sothos and Jarien's Heirlooms]",
 		},
 	},
 	[181098] = {
@@ -6903,6 +7256,14 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 200156,
 		text = {
 			en = "Silithyst Mound",
+			es = "Túmulo de silitista",
+			de = "Silithysthaufen",
+			fr = "Monticule de silithyste",
+			it = "Mucchio di Silitisti",
+			pt = "Monte de Terra Silitista",
+			ru = "Курган силитиста",
+			ko = "[Silithyst Mound]",
+			cn = "水晶尘土堆",
 		},
 	},
 	[181598] = {
@@ -6911,6 +7272,14 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 200154,
 		text = {
 			en = "Silithyst Geyser",
+			es = "Géiser de silitista",
+			de = "Silithystgeysir",
+			fr = "Geyser de silithyste",
+			it = "Geyser Silitista",
+			pt = "Gêiser Silitista",
+			ru = "Гейзер силитиста",
+			ko = "실리시스트 모래기둥",
+			cn = "水晶尘喷孔",
 		},
 	},
 	[181629] = {
@@ -6919,6 +7288,14 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 196979,
 		text = {
 			en = "Holy Coffer",
+			es = "Arca sagrada",
+			de = "Heiliger Kasten",
+			fr = "Petit coffre",
+			it = "[Holy Coffer]",
+			pt = "[Holy Coffer]",
+			ru = "Священный ларец",
+			ko = "[Holy Coffer]",
+			cn = "[Holy Coffer]",
 		},
 	},
 	[181638] = {
@@ -7100,6 +7477,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Livro Antigo e Surrado",
 			ru = "Потрепанная древняя книга",
 			ko = "닳아해진 고대 책",
+			cn = "[Battered Ancient Book]",
 		},
 	},
 	[181889] = {
@@ -9527,6 +9905,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Cardume de Pançudos do Mar Profundo",
 			ru = "Косяк глубоководного чуда-юда",
 			ko = "깊은 바다 뚱뚱보물고기 떼",
+			cn = "[Deep Sea Monsterbelly School]",
 		},
 	},
 	[192054] = {
@@ -9542,6 +9921,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Cardume de Lulas Brilho-da-lua",
 			ru = "Косяк лунной каракатицы",
 			ko = "달빛 오징어 떼",
+			cn = "[Moonglow Cuttlefish School]",
 		},
 	},
 	[192057] = {
@@ -9794,14 +10174,32 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[192824] = {
 		readable = "Half Full Glass of Wine",
+		model = 192003,
 		text = {
 			en = "Half Full Glass of Wine",
+			es = "Vaso de vino medio lleno",
+			de = "Halbvolles Weinglas",
+			fr = "Verre de vin à moitié plein",
+			it = "Bicchiere Mezzo Pieno di Vino",
+			pt = "Taça de Vinho Meio Cheia",
+			ru = "Недопитый стакан",
+			ko = "반쯤 찬 포도주 잔",
+			cn = "半满的酒杯",
 		},
 	},
 	[192825] = {
 		readable = "Aged Dalaran Limburger",
+		model = 198221,
 		text = {
 			en = "Aged Dalaran Limburger",
+			es = "Queso Limburger de Dalaran viejo",
+			de = "Reifer Dalaranlimburger",
+			fr = "Vieux limbourg de Dalaran",
+			it = "Groviera Stagionato di Dalaran",
+			pt = "Roquefort de Dalaran Curado",
+			ru = "Зрелый даларанский камамбер",
+			ko = "숙성된 달라란 연치즈",
+			cn = "达拉然奶酪",
 		},
 	},
 	[192827] = {
@@ -11362,6 +11760,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Diagramas do Devastador",
 			ru = "Чертежи остова \"Крушителя Врагов\"",
 			ko = "원수파괴자호 설계도",
+			cn = "[Foebreaker Blueprints]",
 		},
 	},
 	[204274] = {
@@ -11740,6 +12139,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Terminal A.I.D.A.",
 			ru = "Терминал АИДА",
 			ko = "인공지능 단말기",
+			cn = "[A.I.D.A. Terminal]",
 		},
 	},
 	[206335] = {
@@ -20737,6 +21137,21 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			cn = "晶化元素精华",
 		},
 	},
+	[241641] = {
+		readable = "Foxflower",
+		model = 1303238,
+		text = {
+			en = "Foxflower",
+			es = "Flor de raposa",
+			de = "Fuchsblume",
+			fr = "Vulpille",
+			it = "Fiorvolpe",
+			pt = "Flor-de-raposa",
+			ru = "Лисоцвет",
+			ko = "여우꽃",
+			cn = "狐尾花",
+		},
+	},
 	[241656] = {
 		readable = "Overgrown Relic",
 		icon = "Interface/Icons/inv_misc_treasurechest02a",
@@ -21976,6 +22391,96 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			cn = "小宝箱",
 		},
 	},
+	[244774] = {
+		readable = "Aethril",
+		model = 1391548,
+		text = {
+			en = "Aethril",
+			es = "Aethril",
+			de = "Aethril",
+			fr = "Aethril",
+			it = "Aethril",
+			pt = "Aethril",
+			ru = "Айтрил",
+			ko = "에이트릴",
+			cn = "安瑟瑞尔花",
+		},
+	},
+	[244775] = {
+		readable = "Dreamleaf",
+		model = 1369688,
+		text = {
+			en = "Dreamleaf",
+			es = "Frondasueño",
+			de = "Traumlaub",
+			fr = "Songefeuille",
+			it = "Erbonirica",
+			pt = "Folha-de-sonho",
+			ru = "Грезолист",
+			ko = "꿈잎사귀",
+			cn = "入梦叶",
+		},
+	},
+	[244776] = {
+		readable = "Dreamleaf",
+		model = 1370949,
+		text = {
+			en = "Dreamleaf",
+			es = "Frondasueño",
+			de = "Traumlaub",
+			fr = "Songefeuille",
+			it = "Erbonirica",
+			pt = "Folha-de-sonho",
+			ru = "Грезолист",
+			ko = "꿈잎사귀",
+			cn = "入梦叶",
+		},
+	},
+	[244777] = {
+		readable = "Fjarnskaggl",
+		model = 1282724,
+		text = {
+			en = "Fjarnskaggl",
+			es = "Fjarnskaggl",
+			de = "Fjarnskaggl",
+			fr = "Fjarnskaggl",
+			it = "Fjarnskaggl",
+			pt = "Fjarnskaggl",
+			ru = "Фьярнскаггл",
+			ko = "피아른스카글",
+			cn = "夏斯卡格草",
+		},
+	},
+	[244778] = {
+		readable = "Starlight Rose",
+		model = 1357601,
+		text = {
+			en = "Starlight Rose",
+			es = "Rosa luz estelar",
+			de = "Sternlichtrose",
+			fr = "Rose lumétoile",
+			it = "Rosa Lucestellare",
+			pt = "Rosa-da-luz-estelar",
+			ru = "Звездная роза",
+			ko = "별빛 장미",
+			cn = "星光玫瑰",
+		},
+	},
+	[244786] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "[Felwort]",
+			cn = "[Felwort]",
+		},
+	},
 	[244887] = {
 		readable = "Small Treasure Chest",
 		text = {
@@ -22217,6 +22722,36 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Маленький сундук с сокровищами",
 			ko = "작은 보물 상자",
 			cn = "小宝箱",
+		},
+	},
+	[245324] = {
+		readable = "Rich Leystone Deposit",
+		model = 1244490,
+		text = {
+			en = "Rich Leystone Deposit",
+			es = "Depósito rico en piedra Ley",
+			de = "Reiches Leysteinvorkommen",
+			fr = "Riche gisement de tellurium",
+			it = "Deposito Ricco di Fagliaroccia",
+			pt = "Depósito Rico de Pedra de Meridiano",
+			ru = "Богатые залежи силового камня",
+			ko = "풍부한 지맥석 광맥",
+			cn = "富魔石矿脉",
+		},
+	},
+	[245325] = {
+		readable = "Rich Felslate Deposit",
+		model = 1244488,
+		text = {
+			en = "Rich Felslate Deposit",
+			es = "Depósito rico en pizarra vil",
+			de = "Reiches Teufelsschiefervorkommen",
+			fr = "Riche gisement de gangreschiste",
+			it = "Deposito Ricco di Vilardesia",
+			pt = "Depósito Rico de Vilardósia",
+			ru = "Богатые залежи сланца Скверны",
+			ko = "풍부한 지옥판암 광맥",
+			cn = "富邪能页岩矿脉",
 		},
 	},
 	[245328] = {
@@ -23090,6 +23625,216 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Утерянное письмо",
 			ko = "잃어버린 우편",
 			cn = "遗失的邮件",
+		},
+	},
+	[247999] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
+		},
+	},
+	[248000] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
+		},
+	},
+	[248001] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
+		},
+	},
+	[248002] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
+		},
+	},
+	[248003] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
+		},
+	},
+	[248004] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
+		},
+	},
+	[248005] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
+		},
+	},
+	[248006] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
+		},
+	},
+	[248007] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
+		},
+	},
+	[248008] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
+		},
+	},
+	[248009] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
+		},
+	},
+	[248010] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
+		},
+	},
+	[248011] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Hierba vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
+		},
+	},
+	[248012] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
 		},
 	},
 	[248398] = {
@@ -24245,6 +24990,21 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Коновязь коня смерти",
 			ko = "죽음의 군마 말뚝대",
 			cn = "死亡战马马桩",
+		},
+	},
+	[252404] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
 		},
 	},
 	[252412] = {
@@ -26019,6 +26779,21 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			cn = "艾瑞达战争物资",
 		},
 	},
+	[272778] = {
+		readable = "Rich Empyrium Deposit",
+		model = 1692857,
+		text = {
+			en = "Rich Empyrium Deposit",
+			es = "Depósito rico en empirium",
+			de = "Reiches Empyriumvorkommen",
+			fr = "Riche gisement d'empyrium",
+			it = "Deposito Ricco d'Empirio",
+			pt = "Depósito de Empirita Abundante",
+			ru = "Богатые залежи эмпиреита",
+			ko = "풍부한 창천석 광맥",
+			cn = "富天界金矿脉",
+		},
+	},
 	[272780] = {
 		readable = "Empyrium Seam",
 		icon = "Interface/Icons/INV_Ore_Eternium_Nugget",
@@ -26032,6 +26807,51 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Пласт эмпиреита",
 			ko = "창천석 융기",
 			cn = "天界金矿层",
+		},
+	},
+	[272782] = {
+		readable = "Astral Glory",
+		model = 1685295,
+		text = {
+			en = "Astral Glory",
+			es = "Gloria astral",
+			de = "Astralwinde",
+			fr = "Astralée",
+			it = "Gloria Astrale",
+			pt = "Glória-astral",
+			ru = "Астральный вьюнок",
+			ko = "천공의 영광",
+			cn = "星辰之耀",
+		},
+	},
+	[273052] = {
+		readable = "Fel-Encrusted Herb",
+		model = 1616103,
+		text = {
+			en = "Fel-Encrusted Herb",
+			es = "Hierba con costra vil",
+			de = "Teufelsverkrustetes Kraut",
+			fr = "Herbe incrustée de corruption",
+			it = "Erba Vilincrostata",
+			pt = "Erva Incrustada de Vileza",
+			ru = "Покрытая Скверной трава",
+			ko = "지옥 마력으로 덮인 약초",
+			cn = "被邪能包裹的草药",
+		},
+	},
+	[273053] = {
+		readable = "Fel-Encrusted Herb Cluster",
+		model = 1616102,
+		text = {
+			en = "Fel-Encrusted Herb Cluster",
+			es = "Manojo de hierba con costra vil",
+			de = "Teufelsverkrustetes Kräuterbüschel",
+			fr = "Touffe d’herbe incrustée de corruption",
+			it = "Fascio d'Erba Vilincrostata",
+			pt = "Feixe de Ervas Incrustadas de Vileza",
+			ru = "Пучок покрытой Скверной травы",
+			ko = "지옥 마력으로 덮인 약초 덤불",
+			cn = "被邪能包裹的草药丛",
 		},
 	},
 	[273222] = {
@@ -26442,6 +27262,111 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Сокровища искателя погибели",
 			ko = "파멸길잡이의 보물",
 			cn = "末日追寻者的宝藏",
+		},
+	},
+	[276234] = {
+		readable = "Riverbud",
+		model = 1784467,
+		text = {
+			en = "Riverbud",
+			es = "Brotarrío",
+			de = "Flussknospe",
+			fr = "Rivebulbe",
+			it = "Baccello Fluviale",
+			pt = "Broto-do-rio",
+			ru = "Речной горох",
+			ko = "강봉오리",
+			cn = "流波花苞",
+		},
+	},
+	[276236] = {
+		readable = "Star Moss",
+		model = 1794519,
+		text = {
+			en = "Star Moss",
+			es = "Musgo estelar",
+			de = "Sternmoos",
+			fr = "Mousse étoilée",
+			it = "Muschio Stellare",
+			pt = "Musgo-estrela",
+			ru = "Звездный мох",
+			ko = "별이끼",
+			cn = "星光苔",
+		},
+	},
+	[276237] = {
+		readable = "Akunda's Bite",
+		model = 1785284,
+		text = {
+			en = "Akunda's Bite",
+			es = "Mordisco de Akunda",
+			de = "Akundas Biss",
+			fr = "Mâche d’Akunda",
+			it = "Morso di Akunda",
+			pt = "Mordida de Akunda",
+			ru = "Укус Акунды",
+			ko = "아쿤다의 이빨",
+			cn = "阿昆达之噬",
+		},
+	},
+	[276238] = {
+		readable = "Winter's Kiss",
+		model = 1780102,
+		text = {
+			en = "Winter's Kiss",
+			es = "Beso gélido",
+			de = "Winterkuss",
+			fr = "Bise-d’hiver",
+			it = "Bacio dell'Inverno",
+			pt = "Beijo-do-inverno",
+			ru = "Поцелуй зимы",
+			ko = "겨울의 입맞춤",
+			cn = "凛冬之吻",
+		},
+	},
+	[276239] = {
+		readable = "Siren's Sting",
+		model = 1882354,
+		text = {
+			en = "Siren's Sting",
+			es = "Picadura de sirena",
+			de = "Sirenendorn",
+			fr = "Épine de sirène",
+			it = "Pruno di Sirena",
+			pt = "Picada da Sereia",
+			ru = "Укус сирены",
+			ko = "세이렌의 맹독약초",
+			cn = "海妖之刺",
+		},
+	},
+	[276240] = {
+		readable = "Sea Stalks",
+		model = 1890602,
+		text = {
+			en = "Sea Stalks",
+			es = "Tallomares",
+			de = "Meeresstängel",
+			fr = "Brins-de-mer",
+			it = "Steli Marini",
+			pt = "Talo-marinho",
+			ru = "Морской стебель",
+			ko = "바다 줄기",
+			cn = "海潮茎杆",
+		},
+	},
+	[276242] = {
+		readable = "Anchor Weed",
+		model = 1907780,
+		text = {
+			en = "Anchor Weed",
+			es = "Alga de ancla",
+			de = "Ankerkraut",
+			fr = "Ancoracée",
+			it = "Alga d'Ancora",
+			pt = "Erva-ancorina",
+			ru = "Якорь-трава",
+			ko = "닻풀",
+			cn = "锚草",
 		},
 	},
 	[276251] = {
@@ -27567,6 +28492,21 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Сумка Зукаши",
 		},
 	},
+	[281079] = {
+		readable = "Star Moss",
+		model = 1794518,
+		text = {
+			en = "Star Moss",
+			es = "Musgo estelar",
+			de = "Sternmoos",
+			fr = "Mousse étoilée",
+			it = "Muschio Stellare",
+			pt = "Musgo-estrela",
+			ru = "Звездный мох",
+			ko = "별이끼",
+			cn = "星光苔",
+		},
+	},
 	[281092] = {
 		readable = "Witch Doctor's Hoard",
 		icon = "Interface/Icons/garrison_bronzechest",
@@ -27755,6 +28695,81 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "ТРЕБУЕТСЯ ПОМОЩЬ!",
 			ko = "인력 급구",
 			cn = "求助",
+		},
+	},
+	[281867] = {
+		readable = "Star Moss",
+		model = 1794521,
+		text = {
+			en = "Star Moss",
+			es = "Musgo estelar",
+			de = "Sternmoos",
+			fr = "Mousse étoilée",
+			it = "Muschio Stellare",
+			pt = "Musgo-estrela",
+			ru = "Звездный мох",
+			ko = "별이끼",
+			cn = "星光苔",
+		},
+	},
+	[281868] = {
+		readable = "Star Moss",
+		model = 1794520,
+		text = {
+			en = "Star Moss",
+			es = "Musgo estelar",
+			de = "Sternmoos",
+			fr = "Mousse étoilée",
+			it = "Muschio Stellare",
+			pt = "Musgo-estrela",
+			ru = "Звездный мох",
+			ko = "별이끼",
+			cn = "星光苔",
+		},
+	},
+	[281869] = {
+		readable = "Siren's Sting",
+		model = 1882352,
+		text = {
+			en = "Siren's Sting",
+			es = "Picadura de sirena",
+			de = "Sirenendorn",
+			fr = "Épine de sirène",
+			it = "Pruno di Sirena",
+			pt = "Agulha-de-sereia",
+			ru = "Укус сирены",
+			ko = "세이렌의 맹독약초",
+			cn = "海妖之刺",
+		},
+	},
+	[281870] = {
+		readable = "Riverbud",
+		model = 1784466,
+		text = {
+			en = "Riverbud",
+			es = "Brotarrío",
+			de = "Flussknospe",
+			fr = "Rivebulbe",
+			it = "Baccello Fluviale",
+			pt = "Broto-do-rio",
+			ru = "Речной горох",
+			ko = "강봉오리",
+			cn = "流波花苞",
+		},
+	},
+	[281872] = {
+		readable = "Sea Stalks",
+		model = 1890600,
+		text = {
+			en = "Sea Stalks",
+			es = "Tallomares",
+			de = "Meeresstängel",
+			fr = "Brins-de-mer",
+			it = "Steli Marini",
+			pt = "Talo-marinho",
+			ru = "Морской стебель",
+			ko = "바다 줄기",
+			cn = "海潮茎杆",
 		},
 	},
 	[281898] = {
@@ -29334,6 +30349,21 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			it = "Torcia Incenerita",
 			ru = "Обгоревший факел",
 			cn = "飞灰火把",
+		},
+	},
+	[294125] = {
+		readable = "Anchor Weed",
+		model = 2108571,
+		text = {
+			en = "Anchor Weed",
+			es = "Alga de ancla",
+			de = "Ankerkraut",
+			fr = "Ancoracée",
+			it = "Alga d'Ancora",
+			pt = "Erva-ancorina",
+			ru = "Якорь-трава",
+			ko = "닻풀",
+			cn = "锚草",
 		},
 	},
 	[294173] = {
@@ -31269,6 +32299,21 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Сундук с азеритовым оружием",
 			ko = "아제라이트 무기 보관함",
 			cn = "艾泽里特武器箱",
+		},
+	},
+	[326598] = {
+		readable = "Zin'anthid",
+		model = 2563954,
+		text = {
+			en = "Zin'anthid",
+			es = "Zin'anthid",
+			de = "Zin'anthide",
+			fr = "Zin’anthide",
+			it = "Zin'anthid",
+			pt = "Zin'antida",
+			ru = "Зин'антария",
+			ko = "진모래말미꽃",
+			cn = "龙眼珊瑚",
 		},
 	},
 	[327170] = {
@@ -37149,6 +38194,96 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			cn = "灿烂凹室指向",
 		},
 	},
+	[375241] = {
+		readable = "Bubble Poppy",
+		model = 4498019,
+		text = {
+			en = "Bubble Poppy",
+			es = "Amapola burbuja",
+			de = "Blasenmohn",
+			fr = "Pavot à bulle",
+			it = "Papavero Bolla",
+			pt = "Papoula Borbulhante",
+			ru = "Пузырчатый мак",
+			ko = "거품 백일홍",
+			cn = "泡粟花",
+		},
+	},
+	[375242] = {
+		readable = "Titan-Touched Bubble Poppy",
+		model = 4498019,
+		text = {
+			en = "Titan-Touched Bubble Poppy",
+			es = "Amapola burbuja tocada por los titanes",
+			de = "Titanenberührter Blasenmohn",
+			fr = "Pavot à bulle touché par les Titans",
+			it = "Papavero Bolla Toccato dai Titani",
+			pt = "Papoula Borbulhante Tocada por Titãs",
+			ru = "Осененный титанами пузырчатый мак",
+			ko = "티탄에 물든 거품 백일홍",
+			cn = "泰坦点化的泡粟花",
+		},
+	},
+	[375243] = {
+		readable = "Infurious Bubble Poppy",
+		model = 4498019,
+		text = {
+			en = "Infurious Bubble Poppy",
+			es = "Amapola burbuja furiosa",
+			de = "Wutentbrannter Blasenmohn",
+			fr = "Pavot à bulle ardent",
+			it = "Papavero Bolla Impetuoso",
+			pt = "Papoula Borbulhante em Fúria",
+			ru = "Ярый пузырчатый мак",
+			ko = "분노의 거품 백일홍",
+			cn = "[Infurious Bubble Poppy]",
+		},
+	},
+	[375244] = {
+		readable = "Frigid Bubble Poppy",
+		model = 4498019,
+		text = {
+			en = "Frigid Bubble Poppy",
+			es = "Amapola burbuja gélida",
+			de = "Eisiger Blasenmohn",
+			fr = "Pavot à bulle algide",
+			it = "Papavero Bolla Gelato",
+			pt = "Papoula Borbulhante Frígida",
+			ru = "Морозный пузырчатый мак",
+			ko = "혹한의 거품 백일홍",
+			cn = "冷冽泡粟花",
+		},
+	},
+	[375245] = {
+		readable = "Windswept Bubble Poppy",
+		model = 4498019,
+		text = {
+			en = "Windswept Bubble Poppy",
+			es = "Amapola burbuja aventada",
+			de = "Windgepeitschter Blasenmohn",
+			fr = "Pavot à bulle balayé par le vent",
+			it = "Papavero Bolla Scompigliato",
+			pt = "Papoula Borbulhante Levada pelo Vento",
+			ru = "Обветренный пузырчатый мак",
+			ko = "바람결 거품 백일홍",
+			cn = "啸风泡粟花",
+		},
+	},
+	[375246] = {
+		readable = "Decayed Bubble Poppy",
+		model = 4498020,
+		text = {
+			en = "Decayed Bubble Poppy",
+			es = "Amapola burbuja descompuesta",
+			de = "Verrotteter Blasenmohn",
+			fr = "Pavot à bulle décomposé",
+			it = "Papavero Bolla Decaduto",
+			pt = "Papoula Borbulhante Decrépita",
+			ru = "Сгнивший пузырчатый мак",
+			ko = "부패한 거품 백일홍",
+			cn = "腐朽泡粟花",
+		},
+	},
 	[375270] = {
 		readable = "Protoform Schematic",
 		text = {
@@ -39947,6 +41082,21 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			cn = "玛瑙宝石簇",
 		},
 	},
+	[381154] = {
+		readable = "Writhebark",
+		model = 4546834,
+		text = {
+			en = "Writhebark",
+			es = "Pino retorcido",
+			de = "Krümmrinde",
+			fr = "Écorce tordue",
+			it = "Scorzatorta",
+			pt = "Casca Retorcida",
+			ru = "Витая кора",
+			ko = "격통껍질",
+			cn = "歪扭树皮",
+		},
+	},
 	[381157] = {
 		readable = "Sapphire Gem Cluster",
 		text = {
@@ -39983,6 +41133,246 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Затерянный компас",
 			ko = "잃어버린 나침반",
 			cn = "失落的罗盘",
+		},
+	},
+	[381196] = {
+		readable = "Titan-Touched Writhebark",
+		model = 4546834,
+		text = {
+			en = "Titan-Touched Writhebark",
+			es = "Pino retorcido tocado por los titanes",
+			de = "Titanenberührte Krümmrinde",
+			fr = "Écorce tordue touchée par les Titans",
+			it = "Scorzatorta Toccata dai Titani",
+			pt = "Casca Retorcida Tocada pelos Titãs",
+			ru = "Осененная титанами витая кора",
+			ko = "티탄에 물든 격통껍질",
+			cn = "泰坦点化的歪扭树皮",
+		},
+	},
+	[381197] = {
+		readable = "Infurious Writhebark",
+		model = 4546834,
+		text = {
+			en = "Infurious Writhebark",
+			es = "Pino retorcido furioso",
+			de = "Wutentbrannte Krümmrinde",
+			fr = "Écorce tordue ardente",
+			it = "Scorzatorta Impetuosa",
+			pt = "Casca Retorcida em Fúria",
+			ru = "Ярая витая кора",
+			ko = "분노의 격통껍질",
+			cn = "[Infurious Writhebark]",
+		},
+	},
+	[381198] = {
+		readable = "Decayed Writhebark",
+		model = 4546836,
+		text = {
+			en = "Decayed Writhebark",
+			es = "Pino retorcido descompuesto",
+			de = "Verrottete Krümmrinde",
+			fr = "Écorce tordue décomposée",
+			it = "Scorzatorta Decaduta",
+			pt = "Casca Retorcida Decrépita",
+			ru = "Сгнившая витая кора",
+			ko = "부패한 격통껍질",
+			cn = "腐朽歪扭树皮",
+		},
+	},
+	[381199] = {
+		readable = "Windswept Writhebark",
+		model = 4546834,
+		text = {
+			en = "Windswept Writhebark",
+			es = "Pino retorcido arrastrado por el viento",
+			de = "Windgepeitschte Krümmrinde",
+			fr = "Écorce tordue balayée par le vent",
+			it = "Scorzatorta Scompigliata",
+			pt = "Casca Retorcida Levada pelo Vento",
+			ru = "Обветренная витая кора",
+			ko = "바람결 격통껍질",
+			cn = "啸风歪扭树皮",
+		},
+	},
+	[381200] = {
+		readable = "Frigid Writhebark",
+		model = 4546834,
+		text = {
+			en = "Frigid Writhebark",
+			es = "Pino retorcido gélido",
+			de = "Eisige Krümmrinde",
+			fr = "Écorce tordue algide",
+			it = "Scorzatorta Gelata",
+			pt = "Casca Retorcida Frígida",
+			ru = "Морозная витая кора",
+			ko = "혹한의 격통껍질",
+			cn = "冷冽歪扭树皮",
+		},
+	},
+	[381201] = {
+		readable = "Frigid Saxifrage",
+		model = 4558389,
+		text = {
+			en = "Frigid Saxifrage",
+			es = "Saxifraga gélida",
+			de = "Eisiges Steinbrich",
+			fr = "Saxifrage algide",
+			it = "Sassifraga Gelata",
+			pt = "Quebra-pedra Frígida",
+			ru = "Ледяная камнеломка",
+			ko = "혹한의 다년초",
+			cn = "冷冽虎耳草",
+		},
+	},
+	[381202] = {
+		readable = "Windswept Saxifrage",
+		model = 4558389,
+		text = {
+			en = "Windswept Saxifrage",
+			es = "Saxifraga arrastrada por el viento",
+			de = "Windgepeitschtes Steinbrich",
+			fr = "Saxifrage balayée par le vent",
+			it = "Sassifraga Scompigliata",
+			pt = "Quebra-pedra Levada pelo Vento",
+			ru = "Обветренная камнеломка",
+			ko = "바람결 다년초",
+			cn = "啸风虎耳草",
+		},
+	},
+	[381203] = {
+		readable = "Decayed Saxifrage",
+		model = 4558389,
+		text = {
+			en = "Decayed Saxifrage",
+			es = "Saxifraga descompuesta",
+			de = "Verrottetes Steinbrich",
+			fr = "Saxifrage décomposée",
+			it = "Sassifraga Decaduta",
+			pt = "Quebra-pedra Decrépita",
+			ru = "Сгнившая камнеломка",
+			ko = "부패한 다년초",
+			cn = "腐朽虎耳草",
+		},
+	},
+	[381204] = {
+		readable = "Infurious Saxifrage",
+		model = 4558389,
+		text = {
+			en = "Infurious Saxifrage",
+			es = "Saxifraga furiosa",
+			de = "Wutentbranntes Steinbrich",
+			fr = "Saxifrage ardente",
+			it = "Sassifraga Impetuosa",
+			pt = "Quebra-pedra em Fúria",
+			ru = "Ярая камнеломка",
+			ko = "분노의 다년초",
+			cn = "[Infurious Saxifrage]",
+		},
+	},
+	[381205] = {
+		readable = "Titan-Touched Saxifrage",
+		model = 4558389,
+		text = {
+			en = "Titan-Touched Saxifrage",
+			es = "Saxifraga tocada por los titanes",
+			de = "Titanenberührtes Steinbrich",
+			fr = "Saxifrage touchée par les Titans",
+			it = "Sassifraga Toccata dai Titani",
+			pt = "Quebra-pedra Tocada pelos Titãs",
+			ru = "Осененная титанами камнеломка",
+			ko = "티탄에 물든 다년초",
+			cn = "泰坦点化的虎耳草",
+		},
+	},
+	[381207] = {
+		readable = "Saxifrage",
+		model = 4558389,
+		text = {
+			en = "Saxifrage",
+			es = "Saxifraga",
+			de = "Steinbrich",
+			fr = "Saxifrage",
+			it = "Sassifraga",
+			pt = "Quebra-pedra",
+			ru = "Камнеломка",
+			ko = "다년초",
+			cn = "虎耳草",
+		},
+	},
+	[381210] = {
+		readable = "Titan-Touched Hochenblume",
+		model = 4537051,
+		text = {
+			en = "Titan-Touched Hochenblume",
+			es = "Lumbreflor tocada por los titanes",
+			de = "Titanenberührte Hochblume",
+			fr = "Hochenblume touchée par les Titans",
+			it = "Altofiore Toccato dai Titani",
+			pt = "Hochenblume Tocado pelos Titãs",
+			ru = "Осененный титанами хоэнвейс",
+			ko = "티탄에 물든 장대꽃",
+			cn = "泰坦点化的霍亨布墨花",
+		},
+	},
+	[381211] = {
+		readable = "Infurious Hochenblume",
+		model = 4537051,
+		text = {
+			en = "Infurious Hochenblume",
+			es = "Lumbreflor furiosa",
+			de = "Wutentbrannte Hochblume",
+			fr = "Hochenblume ardente",
+			it = "Altofiore Impetuoso",
+			pt = "Hochenblume em Fúria",
+			ru = "Ярый хоэнвейс",
+			ko = "분노의 장대꽃",
+			cn = "[Infurious Hochenblume]",
+		},
+	},
+	[381212] = {
+		readable = "Decayed Hochenblume",
+		model = 4537264,
+		text = {
+			en = "Decayed Hochenblume",
+			es = "Lumbreflor descompuesta",
+			de = "Verrottete Hochblume",
+			fr = "Hochenblume décomposée",
+			it = "Altofiore Decaduto",
+			pt = "Hochenblume Decrépito",
+			ru = "Сгнивший хоэнвейс",
+			ko = "부패한 장대꽃",
+			cn = "腐朽霍亨布墨花",
+		},
+	},
+	[381213] = {
+		readable = "Windswept Hochenblume",
+		model = 4537051,
+		text = {
+			en = "Windswept Hochenblume",
+			es = "Lumbreflor arrastrada por el viento",
+			de = "Windgepeitschte Hochblume",
+			fr = "Hochenblume balayée par le vent",
+			it = "Altofiore Scompigliato",
+			pt = "Hochenblume Levado pelo Vento",
+			ru = "Обветренный хоэнвейс",
+			ko = "바람결 장대꽃",
+			cn = "啸风霍亨布墨花",
+		},
+	},
+	[381214] = {
+		readable = "Frigid Hochenblume",
+		model = 4537051,
+		text = {
+			en = "Frigid Hochenblume",
+			es = "Lumbreflor gélida",
+			de = "Eisige Hochblume",
+			fr = "Hochenblume algide",
+			it = "Altofiore Gelato",
+			pt = "Hochenblume Frígido",
+			ru = "Ледяной хоэнвейс",
+			ko = "혹한의 장대꽃",
+			cn = "冷冽霍亨布墨花",
 		},
 	},
 	[381216] = {
@@ -40595,6 +41985,66 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Разыскивается: Мара'нар Громогласный",
 			ko = "현상 수배: 천둥의 마라나르",
 			cn = "通缉：雷鸣者玛拉纳尔",
+		},
+	},
+	[381957] = {
+		readable = "Lush Bubble Poppy",
+		model = 4498021,
+		text = {
+			en = "Lush Bubble Poppy",
+			es = "Amapola burbuja exuberante",
+			de = "Üppiger Blasenmohn",
+			fr = "Pavot à bulle luxuriant",
+			it = "Papavero Bolla Lussureggiante",
+			pt = "Papoula Borbulhante Exuberante",
+			ru = "Зрелый пузырчатый мак",
+			ko = "무성한 거품 백일홍",
+			cn = "繁茂的泡粟花",
+		},
+	},
+	[381958] = {
+		readable = "Lush Writhebark",
+		model = 4546835,
+		text = {
+			en = "Lush Writhebark",
+			es = "Pino retorcido exuberante",
+			de = "Üppige Krümmrinde",
+			fr = "Écorce tordue luxuriante",
+			it = "Scorzatorta Lussureggiante",
+			pt = "Casca Retorcida Exuberante",
+			ru = "Зрелая витая кора",
+			ko = "무성한 격통껍질",
+			cn = "繁茂的歪扭树皮",
+		},
+	},
+	[381959] = {
+		readable = "Lush Saxifrage",
+		model = 4558390,
+		text = {
+			en = "Lush Saxifrage",
+			es = "Saxifraga exuberante",
+			de = "Üppiges Steinbrich",
+			fr = "Saxifrage luxuriante",
+			it = "Sassifraga Lussureggiante",
+			pt = "Quebra-pedra Exuberante",
+			ru = "Зрелая камнеломка",
+			ko = "무성한 다년초",
+			cn = "繁茂的虎耳草",
+		},
+	},
+	[381960] = {
+		readable = "Lush Hochenblume",
+		model = 4537107,
+		text = {
+			en = "Lush Hochenblume",
+			es = "Lumbreflor exuberante",
+			de = "Üppige Hochblume",
+			fr = "Hochenblume luxuriante",
+			it = "Altofiore Lussureggiante",
+			pt = "Hochenblume Exuberante",
+			ru = "Зрелый хоэнвейс",
+			ko = "무성한 장대꽃",
+			cn = "繁茂的霍亨布墨花",
 		},
 	},
 	[381981] = {
@@ -43237,6 +44687,66 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			cn = "孢缚精华",
 		},
 	},
+	[390139] = {
+		readable = "Lambent Hochenblume",
+		model = 5091436,
+		text = {
+			en = "Lambent Hochenblume",
+			es = "Lumbreflor luminiscente",
+			de = "Flackernde Hochblume",
+			fr = "Hochenblume diaprée",
+			it = "Altofiore Tremolante",
+			pt = "Hochenblume Bruxuleante",
+			ru = "Сияющий хоэнвейс",
+			ko = "희미한 장대꽃",
+			cn = "柔光霍亨布墨花",
+		},
+	},
+	[390140] = {
+		readable = "Lambent Saxifrage",
+		model = 5091440,
+		text = {
+			en = "Lambent Saxifrage",
+			es = "Saxifraga luminiscente",
+			de = "Flackerndes Steinbrich",
+			fr = "Saxifrage diaprée",
+			it = "Sassifraga Tremolante",
+			pt = "Quebra-pedra Bruxuleante",
+			ru = "Сияющая камнеломка",
+			ko = "희미한 다년초",
+			cn = "[Lambent Saxifrage]",
+		},
+	},
+	[390141] = {
+		readable = "Lambent Writhebark",
+		model = 5091442,
+		text = {
+			en = "Lambent Writhebark",
+			es = "Pino retorcido luminiscente",
+			de = "Flackernde Krümmrinde",
+			fr = "Écorce tordue diaprée",
+			it = "Scorzatorta Tremolante",
+			pt = "Casca Retorcida Bruxuleante",
+			ru = "Сияющая витая кора",
+			ko = "희미한 격통껍질",
+			cn = "[Lambent Writhebark]",
+		},
+	},
+	[390142] = {
+		readable = "Lambent Bubble Poppy",
+		model = 5091434,
+		text = {
+			en = "Lambent Bubble Poppy",
+			es = "Amapola burbuja luminiscente",
+			de = "Flackernder Blasenmohn",
+			fr = "Pavot à bulle diapré",
+			it = "Papavero Bolla Tremolante",
+			pt = "Papoula Borbulhante Bruxuleante",
+			ru = "Сияющий пузырчатый мак",
+			ko = "[Lambent Bubble Poppy]",
+			cn = "[Lambent Bubble Poppy]",
+		},
+	},
 	[390257] = {
 		readable = "Stuffed Bear",
 		text = {
@@ -43719,6 +45229,231 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Queijo Furado Guinchante",
 			ru = "Скрипящий сыр",
 			ko = "끽끽거리는 스위스 치즈",
+		},
+	},
+	[398751] = {
+		readable = "Lush Bubble Poppy",
+		model = 5091435,
+		text = {
+			en = "Lush Bubble Poppy",
+			es = "Amapola burbuja exuberante",
+			de = "Üppiger Blasenmohn",
+			fr = "Pavot à bulle luxuriant",
+			it = "Papavero Bolla Lussureggiante",
+			pt = "Papoula Borbulhante Exuberante",
+			ru = "Зрелый пузырчатый мак",
+			ko = "무성한 거품 백일홍",
+			cn = "[Lush Bubble Poppy]",
+		},
+	},
+	[398752] = {
+		readable = "Lush Writhebark",
+		model = 5091443,
+		text = {
+			en = "Lush Writhebark",
+			es = "Pino retorcido exuberante",
+			de = "Üppige Krümmrinde",
+			fr = "Écorce tordue luxuriante",
+			it = "Scorzatorta Lussureggiante",
+			pt = "Casca Retorcida Exuberante",
+			ru = "Зрелая витая кора",
+			ko = "무성한 격통껍질",
+			cn = "[Lush Writhebark]",
+		},
+	},
+	[398753] = {
+		readable = "Lush Hochenblume",
+		model = 5091439,
+		text = {
+			en = "Lush Hochenblume",
+			es = "Lumbreflor exuberante",
+			de = "Üppige Hochblume",
+			fr = "Hochenblume luxuriante",
+			it = "Altofiore Lussureggiante",
+			pt = "Hochenblume Exuberante",
+			ru = "Зрелый хоэнвейс",
+			ko = "무성한 장대꽃",
+			cn = "繁茂的霍亨布墨花",
+		},
+	},
+	[398754] = {
+		readable = "Lush Saxifrage",
+		model = 5091441,
+		text = {
+			en = "Lush Saxifrage",
+			es = "Saxifraga exuberante",
+			de = "Üppiges Steinbrich",
+			fr = "Saxifrage luxuriante",
+			it = "Sassifraga Lussureggiante",
+			pt = "Quebra-pedra Exuberante",
+			ru = "Зрелая камнеломка",
+			ko = "무성한 다년초",
+			cn = "繁茂的虎耳草",
+		},
+	},
+	[398755] = {
+		readable = "Bubble Poppy",
+		model = 5091434,
+		text = {
+			en = "Bubble Poppy",
+			es = "Amapola burbuja",
+			de = "Blasenmohn",
+			fr = "Pavot à bulle",
+			it = "Papavero Bolla",
+			pt = "Papoula Borbulhante",
+			ru = "Пузырчатый мак",
+			ko = "거품 백일홍",
+			cn = "泡粟花",
+		},
+	},
+	[398756] = {
+		readable = "Writhebark",
+		model = 5091442,
+		text = {
+			en = "Writhebark",
+			es = "Pino retorcido",
+			de = "Krümmrinde",
+			fr = "Écorce tordue",
+			it = "Scorzatorta",
+			pt = "Casca Retorcida",
+			ru = "Витая кора",
+			ko = "격통껍질",
+			cn = "歪扭树皮",
+		},
+	},
+	[398758] = {
+		readable = "Saxifrage",
+		model = 5091440,
+		text = {
+			en = "Saxifrage",
+			es = "Saxifraga",
+			de = "Steinbrich",
+			fr = "Saxifrage",
+			it = "Sassifraga",
+			pt = "Quebra-pedra",
+			ru = "Камнеломка",
+			ko = "다년초",
+			cn = "虎耳草",
+		},
+	},
+	[398759] = {
+		readable = "Titan-Touched Bubble Poppy",
+		model = 5091434,
+		text = {
+			en = "Titan-Touched Bubble Poppy",
+			es = "Amapola burbuja tocada por los titanes",
+			de = "Titanenberührter Blasenmohn",
+			fr = "Pavot à bulle touché par les Titans",
+			it = "Papavero Bolla Toccato dai Titani",
+			pt = "Papoula Borbulhante Tocada pelos Titãs",
+			ru = "Осененный титанами пузырчатый мак",
+			ko = "[Titan-Touched Bubble Poppy]",
+			cn = "[Titan-Touched Bubble Poppy]",
+		},
+	},
+	[398760] = {
+		readable = "Titan-Touched Writhebark",
+		model = 5091442,
+		text = {
+			en = "Titan-Touched Writhebark",
+			es = "Pino retorcido tocado por los titanes",
+			de = "Titanenberührte Krümmrinde",
+			fr = "Écorce tordue touchée par les Titans",
+			it = "Scorzatorta Toccata dai Titani",
+			pt = "Casca Retorcida Tocada pelos Titãs",
+			ru = "Осененная титанами витая кора",
+			ko = "[Titan-Touched Writhebark]",
+			cn = "[Titan-Touched Writhebark]",
+		},
+	},
+	[398761] = {
+		readable = "Titan-Touched Hochenblume",
+		model = 5091436,
+		text = {
+			en = "Titan-Touched Hochenblume",
+			es = "Lumbreflor tocada por los titanes",
+			de = "Titanenberührte Hochblume",
+			fr = "Hochenblume touchée par les Titans",
+			it = "Altofiore Toccato dai Titani",
+			pt = "Hochenblume Tocado pelos Titãs",
+			ru = "Осененный титанами хоэнвейс",
+			ko = "티탄에 물든 장대꽃",
+			cn = "[Titan-Touched Hochenblume]",
+		},
+	},
+	[398762] = {
+		readable = "Titan-Touched Saxifrage",
+		model = 5091440,
+		text = {
+			en = "Titan-Touched Saxifrage",
+			es = "Saxifraga tocada por los titanes",
+			de = "Titanenberührtes Steinbrich",
+			fr = "Saxifrage touchée par les Titans",
+			it = "[Titan-Touched Saxifrage]",
+			pt = "Quebra-pedra Tocada pelos Titãs",
+			ru = "Осененная титанами камнеломка",
+			ko = "[Titan-Touched Saxifrage]",
+			cn = "[Titan-Touched Saxifrage]",
+		},
+	},
+	[398764] = {
+		readable = "Infurious Bubble Poppy",
+		model = 5091434,
+		text = {
+			en = "Infurious Bubble Poppy",
+			es = "Amapola burbuja furiosa",
+			de = "Wutentbrannter Blasenmohn",
+			fr = "Pavot à bulle ardent",
+			it = "[Infurious Bubble Poppy]",
+			pt = "Papoula Borbulhante em Fúria",
+			ru = "Ярый пузырчатый мак",
+			ko = "[Infurious Bubble Poppy]",
+			cn = "[Infurious Bubble Poppy]",
+		},
+	},
+	[398765] = {
+		readable = "Infurious Writhebark",
+		model = 5091442,
+		text = {
+			en = "Infurious Writhebark",
+			es = "Pino retorcido furioso",
+			de = "Wutentbrannte Krümmrinde",
+			fr = "Écorce tordue ardente",
+			it = "[Infurious Writhebark]",
+			pt = "Casca Retorcida em Fúria",
+			ru = "Ярая витая кора",
+			ko = "[Infurious Writhebark]",
+			cn = "[Infurious Writhebark]",
+		},
+	},
+	[398766] = {
+		readable = "Infurious Hochenblume",
+		model = 5091436,
+		text = {
+			en = "Infurious Hochenblume",
+			es = "Lumbreflor furiosa",
+			de = "Wutentbrannte Hochblume",
+			fr = "Hochenblume ardente",
+			it = "[Infurious Hochenblume]",
+			pt = "Hochenblume em Fúria",
+			ru = "Ярый хоэнвейс",
+			ko = "[Infurious Hochenblume]",
+			cn = "[Infurious Hochenblume]",
+		},
+	},
+	[398767] = {
+		readable = "Infurious Saxifrage",
+		model = 5091440,
+		text = {
+			en = "Infurious Saxifrage",
+			es = "Saxifraga furiosa",
+			de = "Wutentbranntes Steinbrich",
+			fr = "Saxifrage ardente",
+			it = "[Infurious Saxifrage]",
+			pt = "Quebra-pedra em Fúria",
+			ru = "Ярая камнеломка",
+			ko = "[Infurious Saxifrage]",
+			cn = "[Infurious Saxifrage]",
 		},
 	},
 	[398770] = {
