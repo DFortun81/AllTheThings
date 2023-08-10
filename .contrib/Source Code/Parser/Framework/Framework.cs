@@ -5301,8 +5301,9 @@ namespace ATT
                 var dirtyObjectStringBuilder = ObjectHarvester.ExportDirtyObjects();
                 if (dirtyObjectStringBuilder != null)
                 {
-                    File.WriteAllText(Path.Combine(Config["root-data"] ?? "./DATAS", "00 - DB", $"DynamicObjectDB_{DateTime.UtcNow.Ticks}.lua"),
-                        dirtyObjectStringBuilder.Insert(0, "root(\"ObjectDB\", ").Append(");").ToString(), Encoding.UTF8);
+                    var filePath = Path.Combine(Config["root-data"] ?? "./DATAS", "00 - DB/Dynamic/", $"DynamicObjectDB_{DateTime.UtcNow.Ticks}.lua");
+                    Directory.CreateDirectory(Path.GetDirectoryName(filePath));
+                    File.WriteAllText(filePath, dirtyObjectStringBuilder.Insert(0, "root(\"ObjectDB\", ").Append(");").ToString(), Encoding.UTF8);
                 }
             }
         }
