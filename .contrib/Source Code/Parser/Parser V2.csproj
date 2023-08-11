@@ -34,7 +34,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Retail|x86' ">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>..\..\Parser\</OutputPath>
-    <DefineConstants>TRACE;RETAIL;DF;AFTERDF;AFTERSL;AFTERBFA;AFTERLEGION;AFTERWOD;AFTERMOP;AFTERCATA;AFTERWRATH;AFTERTBC;</DefineConstants>
+    <DefineConstants>TRACE;RETAIL;DF;AFTERDF;AFTERSL;AFTERBFA;AFTERLEGION;AFTERWOD;AFTERMOP;AFTERCATA;AFTERWRATH;AFTERTBC</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>x64</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
@@ -102,7 +102,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Classic %2810 - Dragonflight%29|x86' ">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>..\..\..\..\..\..\..\_classic_\Interface\AddOns\ATT-Classic\.contrib\.tools\</OutputPath>
-    <DefineConstants>TRACE;DF;AFTERDF;AFTERSL;AFTERBFA;AFTERLEGION;AFTERWOD;AFTERMOP;AFTERCATA;AFTERWRATH;AFTERTBC;CRIEVE;ANYCLASSIC;HARVESTOBJECTS</DefineConstants>
+    <DefineConstants>TRACE;DF;AFTERDF;AFTERSL;AFTERBFA;AFTERLEGION;AFTERWOD;AFTERMOP;AFTERCATA;AFTERWRATH;AFTERTBC;CRIEVE;ANYCLASSIC</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>x64</PlatformTarget>
     <LangVersion>7.3</LangVersion>

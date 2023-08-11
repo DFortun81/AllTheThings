@@ -55,6 +55,9 @@ namespace ATT
         /// </summary>
         private static readonly string[] GameFlavors =
         {
+#if RETAIL && PTR
+            "ptr",
+#endif
 #if RETAIL || AFTERDF
             "",
 #endif
