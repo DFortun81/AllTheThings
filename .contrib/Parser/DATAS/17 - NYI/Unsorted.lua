@@ -335,7 +335,7 @@ root(ROOTS.Unsorted, {
 			i(209064),	-- Ensemble: Chromatically Calibrated Retinal Armor
 			i(209066),	-- Ensemble: Chromatically Calibrated Cranial Cannons
 			i(209067),	-- Ensemble: Chromatically Calibrated Ectoplasmic Specs
-			
+
 			i(209781),	-- Second Booster Part
 		})),
 		tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
@@ -809,7 +809,6 @@ root(ROOTS.Unsorted, {
 				q(76106),	--
 				q(76107),	--
 				q(76108),	--
-				q(76109),	-- Salverun (spellID 411721)
 				q(76111),	-- Ensemble: Enmity Hood and Cloak
 				q(76112),	--
 				q(76113),	--
