@@ -5197,13 +5197,28 @@ namespace ATT
                                     ["en"] = value
                                 };
                             }
-                            foreach (var locale in localeData)
+                            if (localeData.TryGetValue("en", out string englishValue))
                             {
-                                if (!localizationForText.TryGetValue(locale.Key, out Dictionary<long, string> sublocale))
+                                if (!localizationForText.TryGetValue("en", out Dictionary<long, string> sublocale))
                                 {
-                                    localizationForText[locale.Key] = sublocale = new Dictionary<long, string>();
+                                    localizationForText["en"] = sublocale = new Dictionary<long, string>();
                                 }
-                                sublocale[key] = locale.Value.ToString();
+                                sublocale[key] = englishValue;
+
+                                foreach (var locale in localeData)
+                                {
+                                    if (locale.Key == "en") continue;
+
+                                    string localizedValue = locale.Value.ToString();
+                                    if (!localizedValue.Contains(englishValue))
+                                    {
+                                        if (!localizationForText.TryGetValue(locale.Key, out sublocale))
+                                        {
+                                            localizationForText[locale.Key] = sublocale = new Dictionary<long, string>();
+                                        }
+                                        sublocale[key] = localizedValue;
+                                    }
+                                }
                             }
                         }
                     }

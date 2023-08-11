@@ -37,7 +37,7 @@ elunesTear.text.cn = "月神之泪";
 -- #if BEFORE WRATH
 -- Brightly Colored Egg
 local locales = ObjectDB[113768].text;
-for key,text in pairs({
+for key,value in pairs({
 	en = "Brightly Colored Egg",
 	es = "Huevo de color vivo",
 	de = "Osterei",
@@ -70,7 +70,7 @@ ObjectDB[175331].text.es = "Provisiones de grano del Bosque Negro";	-- Blackwood
 -- #if BEFORE CATA
 -- Crossroads Supply Crates
 local locales = ObjectDB[175708].text;
-for key,text in pairs({
+for key,value in pairs({
 	en = "Crossroads' Supply Crates",
 	es = "Cajones de suministros de El Cruce",
 	de = "Vorratskisten von Crossroads",
