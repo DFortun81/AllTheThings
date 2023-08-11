@@ -1284,7 +1284,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			},
 			["groups"] = {
 				i(11024, {	-- Evergreen Herb Casing
-					i(11040),	-- Morrowgrain
+				--	i(11040),	-- Morrowgrain 		-- Dont need to show gatherable herbs
 				}),
 			},
 		})),
