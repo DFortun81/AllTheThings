@@ -380,19 +380,19 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						i(208064, {	-- Quantum Chestpiece
 							["groups"] = {
 								filter(CLOTH, {
-									ig(2114),	-- Snowy Robe				(Removed)
-									ig(3260),	-- Scarlet Initiate Robes	(Removed)
+									ig(2114),	-- Snowy Robe						(Removed)
+									ig(3260),	-- Scarlet Initiate Robes			(Removed)
 								}),
 								filter(LEATHER, {
-									ig(114251),	-- Bloodthorn Chestguard 	(NYI)
-									ig(3984),	-- Strapped Armor			(NYI)
+									ig(114251),	-- Bloodthorn Chestguard 			(NYI)
+									ig(3984),	-- Strapped Armor					(NYI)
 									
-									ig(2069),	-- Black Bear Hide Vest 	(Removed)
-									ig(134729),	-- Frosthide Tunic 			(Removed)
-									ig(1211),	-- Gnoll War Harness		(Removed)
-									ig(10781),	-- Hakkari Breastplate 		(Removed)
-									ig(17922),	-- Lionfur Armor 			(Removed)
-									ig(6197),	-- Loch Croc Hide Vest 		(Removed)(unique)
+									ig(2069),	-- Black Bear Hide Vest 			(Removed)
+									ig(134729),	-- Frosthide Tunic 					(Removed)
+									ig(1211),	-- Gnoll War Harness				(Removed)
+									ig(10781),	-- Hakkari Breastplate 				(Removed)
+									ig(17922),	-- Lionfur Armor 					(Removed)
+									ig(6197),	-- Loch Croc Hide Vest 				(Removed)(unique)
 								}),
 								filter(MAIL, {
 									ig(114252), -- Leafscale Chestguard		(NYI)

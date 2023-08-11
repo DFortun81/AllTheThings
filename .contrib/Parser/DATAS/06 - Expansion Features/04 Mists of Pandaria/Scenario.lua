@@ -423,6 +423,11 @@ root(ROOTS.ExpansionFeatures,
 							i(89446),	-- Mogu-Wrought Girdle				— 2021-11-12
 							i(89466),	-- Scarshell Spaulders				- 2021-11-13
 							i(89467),	-- Scarshell Vest					-- 2022-01-29
+							i(89460),	-- Scarshell Belt					-- 2023-08-10 (EU) Gold
+							i(89461),	-- Scarshell Bracers				-- 2023-08-10 (EU) Gold
+							i(89462),	-- Scarshell Gauntlets				-- 2023-08-10 (EU) Gold
+							i(89464),	-- Scarshell Helm					-- 2023-08-10 (EU) Gold
+							i(89467),	-- Scarshell Vest					-- 2023-08-10 (EU) Gold
 							i(93140),	-- Scavenged Pandaren Axe
 							i(93142),	-- Scavenged Pandaren Axe
 							i(93130),	-- Scavenged Pandaren Broadaxe
@@ -691,11 +696,6 @@ root(ROOTS.NeverImplemented, {
 					i(93084),	-- Hozen-Stitched Waistband
 				}),
 				filter(MAIL, {
-					i(89460),	-- Scarshell Belt
-					i(89461),	-- Scarshell Bracers
-					i(89462),	-- Scarshell Gauntlets
-					i(89464),	-- Scarshell Helm
-					i(89467),	-- Scarshell Vest
 					i(92838),	-- Danio-Scale Belt
 					i(92841),	-- Danio-Scale Greaves
 					i(92842),	-- Danio-Scale Helm
