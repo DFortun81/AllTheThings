@@ -376,10 +376,13 @@ namespace ATT
                 }
             }
 
+            // The english text, which acts as the default.
+            string englishText = textLocalizations["en"].ToString();
+
             // Attempt to find missing non-English localizations
             foreach (string locale in SupportedLocales)
             {
-                if (!textLocalizations.ContainsKey(locale))
+                if (!textLocalizations.TryGetValue(locale, out string oldValue) || oldValue.Contains(englishText))
                 {
                     string document = GetDocumentFromWoWHead(objectID, locale, gameFlavor);
                     if (!string.IsNullOrEmpty(document))

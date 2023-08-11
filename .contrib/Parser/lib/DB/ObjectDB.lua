@@ -5,7 +5,7 @@ do
 local backingTableMeta = {
 	__index = function(t, key)
 		key = tonumber(key);
-		local object = { objectID = key };
+		local object = { objectID = key, text = {} };
 		rawset(t, key, object);
 		return object;
 	end,

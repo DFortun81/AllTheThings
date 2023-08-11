@@ -4715,7 +4715,7 @@ namespace ATT
                             var builder = new StringBuilder("-----------------------------------------------------\n--   O B J E C T   D A T A B A S E   M O D U L E   --\n-----------------------------------------------------\n");
                             var keys = ObjectDB.Keys.ToList();
                             keys.Sort();
-                            builder.Append("_.ObjectDB = {").AppendLine();
+                            builder.Append("local ObjectDB = ObjectDB; for objectID,objectData in pairs({").AppendLine();
                             foreach (var key in keys)
                             {
                                 Dictionary<string, object> objectData = ObjectDB[key];
@@ -4787,7 +4787,7 @@ namespace ATT
                                 }
                                 builder.AppendLine("\t},");
                             }
-                            builder.AppendLine("};");
+                            builder.AppendLine(")").AppendLine("do ObjectDB[objectID] = objectData; end");
                             File.WriteAllText(Path.Combine(debugFolder.FullName, "ObjectDB.lua"), builder.ToString(), Encoding.UTF8);
                         }
 
@@ -5312,6 +5312,21 @@ namespace ATT
                 Objects.ExportAutoItemSources(Config["root-data"] ?? "./DATAS");
                 CurrentParseStage = ParseStage.ExportAutoLocale;
                 Objects.ExportAutoLocale(Path.Combine(addonRootFolder, $"db/{dbRootFolder}en_auto.lua"));
+
+                // Use this to attempt to harvest object IDs.
+                /*
+                for (int objectID = 1; objectID < 25000; ++objectID)
+                {
+                    if (!ObjectDB.TryGetValue(objectID, out Dictionary<string, object> objectData))
+                    {
+                        // If not, get new object information from WoWHead.
+                        objectData = new Dictionary<string, object>();
+                        ObjectHarvester.UpdateInformationFromWoWHead(objectID, objectData);
+                        if (!objectData.Any()) continue;
+                        ObjectDB[objectID] = objectData;
+                    }
+                }
+                */
 
                 // Check to see if we need to export any dirty objects.
                 var dirtyObjectStringBuilder = ObjectHarvester.ExportDirtyObjects();

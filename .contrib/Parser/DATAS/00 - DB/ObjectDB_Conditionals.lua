@@ -1,4 +1,53 @@
-﻿-- #if BEFORE TBC
+﻿-- PROGRAMMATIC OBJECT LOCALES
+-- Brightly Colored Egg
+local brightlyColoredEgg = ObjectDB[113768];
+brightlyColoredEgg.icon = [[~_.asset("Holiday_noblegarden")]];
+brightlyColoredEgg.text.en = [[~GetSpellInfo(61820)]];
+
+-- Spirit of the Wolf
+ObjectDB[226469].text.en = [[~GetSpellInfo(154259)]];
+
+-- TODO: Change the headers for this stuff to a custom header and allow the object localizer to translate the object so it appears on the tooltip.
+-- Item 1: Scintillating Murloc Skin Lotion
+local locales = ObjectDB[13000002].text;
+for key,value in pairs({
+	es = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 1:|r Loción para piel múrloc centelleante"]],
+	de = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 1:|r Schillernde Murlochautcreme"]],
+	fr = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 1:|r Lotion scintillante murloc pour la peau"]],
+	pt = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 1:|r Creme Cintilante para Pele de Murloc"]],
+	cn = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 1:|r 闪烁的鱼人皮润滑剂"]],
+}) do
+	locales[key] = value;
+end
+
+-- Item 2: Potent Gastropod Gloop
+local locales = ObjectDB[13000018].text;
+for key,value in pairs({
+	es = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 2:|r Pegote de gasterópodo potente"]],
+	de = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 2:|r Potenter Schneckenschleim"]],
+	fr = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 2:|r Glaire gluante de gastéropode"]],
+	pt = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 2:|r Gosma de Gastrópode Potente"]],
+	cn = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 2:|r 强力的蜗牛粘液"]],
+}) do
+	locales[key] = value;
+end
+
+-- Item 3: Captured Cavitation Bubble
+local locales = ObjectDB[13000024].text;
+for key,value in pairs({
+	es = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 3:|r Burbuja de cavitación capturada"]],
+	de = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 3:|r Eingefangene Kavitationsblase"]],
+	fr = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 3:|r Bulle de cavitation emprisonnée"]],
+	pt = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 3:|r Bolha de Cavitação Capturada"]],
+	cn = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 3:|r 捕获的空穴气泡"]],
+}) do
+	locales[key] = value;
+end
+
+
+
+-- CONDITIONAL OBJECT LOCALES
+-- #if BEFORE TBC
 ObjectDB[68].text.ko = "현상수배 전단";	-- Wanted Poster
 -- #endif
 
@@ -35,8 +84,7 @@ elunesTear.text.cn = "月神之泪";
 -- #endif
 
 -- #if BEFORE WRATH
--- Brightly Colored Egg
-local locales = ObjectDB[113768].text;
+local locales = brightlyColoredEgg.text;
 for key,value in pairs({
 	en = "Brightly Colored Egg",
 	es = "Huevo de color vivo",
