@@ -1183,7 +1183,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(5592, {	-- Shackled Girdle
 							-- #if ANYCLASSIC
-							["description"] = "This gets completely removed. To be safe, keep this in your bank forever on a leather user.",
+							["description"] = "This gets completely removed. To be safe, keep this in your bank forever on a mail user.",
 							-- #endif
 							["timeline"] = { "removed 4.0.3" },
 						}),
