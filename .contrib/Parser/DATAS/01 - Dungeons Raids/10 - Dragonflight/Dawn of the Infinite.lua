@@ -322,7 +322,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						------------------------------------------
 						-- Please use 'ig()' to make sure Mythic ModID isn't attached to all of these sourced items
 						i(208061, {	-- Quantum Headpiece
-							["description"] = "|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r\This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r",
+							["description"] = "|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r\nThis Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r",
 							["groups"] = {
 								filter(CLOTH, {
 									ig(114387),	-- Hood of Hooded Nighmates			(NYI)
@@ -354,7 +354,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							},
 						}),
 						i(208062, {	-- Quantum Shoulders
-							["description"] = "|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r\This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r",
+							["description"] = "|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r\nThis Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r",
 							["groups"] = {
 								filter(CLOTH, {
 								}),
@@ -372,7 +372,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							},
 						}),
 						i(208064, {	-- Quantum Chestpiece
-							["description"] = "|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r\This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r",
+							["description"] = "|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r\nThis Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r",
 							["groups"] = {
 								filter(CLOTH, {
 									ig(2114),	-- Snowy Robe				(Removed)
@@ -401,7 +401,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							},
 						}),
 						i(208063, {	-- Quantum Gloves
-							["description"] = "|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r\This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r",
+							["description"] = "|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r\nThis Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r",
 							["groups"] = {
 								filter(CLOTH, {
 								}),
@@ -414,7 +414,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							},
 						}),
 						i(208065, {	-- Quantum Legs
-							["description"] = "|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r\This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r",
+							["description"] = "|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r\nThis Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r",
 							["groups"] = {
 								filter(CLOTH, {
 								}),
@@ -435,7 +435,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 								}),
 							},
 						}),
-						n(WEAPONS, sharedData({ ["description"] = "|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r\This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r"}, {
+						n(WEAPONS, sharedData({ ["description"] = "|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r\nThis Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r"}, {
 							i(208111, {	-- Quantum Axe			(1Hand)
 							}),
 							i(208117, {	-- Quantum Bow
