@@ -11,15 +11,16 @@ local _, app = ...;
 -- Encapsulates the functionality for all filtering logic which is used to check if a given Object meets the applicable filters via User Settings
 
 -- Global locals
-local ipairs, select, pairs, type, GetFactionInfoByID, rawget
-	= ipairs, select, pairs, type, GetFactionInfoByID, rawget;
+local ipairs, select, pairs, type, GetFactionInfoByID, rawget, wipe
+	= ipairs, select, pairs, type, GetFactionInfoByID, rawget, wipe;
 
 -- App locals
 local containsAny = app.containsAny;
 local ALLIANCE_ONLY, HORDE_ONLY = unpack(app.Modules.FactionData.FACTION_RACES);
 
 -- Module locals
-local GetRelativeValue, SearchForSourceIDQuickly, ATTAccountWideData, Settings;
+local GetRelativeValue, SearchForSourceIDQuickly, ATTAccountWideData, ActiveCustomCollects, FactionID, CollectibleHeirlooms, SettingsUnobtainable;
+local SettingsFilterIDs = {};
 
 -- Filter API Implementation
 -- Access via AllTheThings.Modules.Filter
@@ -81,7 +82,7 @@ api.Filters.InGame = FilterInGame;
 -- Unobtainable 	-- FilterItemClass_UnobtainableItem
 DefineToggleFilter("Unobtainable", AccountFilters,
 function(item)
-	return Settings:GetUnobtainable(item.u);
+	return not item.u or SettingsUnobtainable[item.u];
 end);
 
 -- PvP	-- FilterItemClass_PvP
@@ -147,11 +148,11 @@ function(item)
 	local f = item.f;
 	if f then
 		-- Filter applied via Settings (character-equippable or manually set)
-		if Settings:GetFilter(f) then
+		if SettingsFilterIDs[f] then
 			return true;
 		end
 		-- don't filter Heirlooms by their Type if they are collectible as Heirlooms
-		if item.__type == "BaseHeirloom" and app.CollectibleHeirlooms then
+		if CollectibleHeirlooms and item.__type == "BaseHeirloom" then
 			return true;
 		end
 	else
@@ -203,10 +204,10 @@ local function FilterRace_CurrentFaction(item)	-- FilterItemClass_RequireRacesCu
 	if item.nmr then
 		local r = item.r;
 		if r then
-			if r == app.FactionID then
+			if r == FactionID then
 				return true;
 			else
-				return false;
+				return;
 			end
 		end
 		return SettingsFilterRace_CurrentFaction(item);
@@ -218,7 +219,7 @@ api.Filters.Race_CurrentFaction = FilterRace_CurrentFaction
 api.Set.Race = function(active, factionOnly)
 	if active then
 		if factionOnly then
-			if app.FactionID == Enum.FlightPathFaction.Horde then
+			if FactionID == Enum.FlightPathFaction.Horde then
 				SettingsFilterRace_CurrentFaction = api.Filters.Race_Horde;
 			else
 				SettingsFilterRace_CurrentFaction = api.Filters.Race_Alliance;
@@ -237,10 +238,9 @@ DefineToggleFilter("CustomCollect", CharacterFilters,
 function(item)
 	local customCollect = item.customCollect;
 	if customCollect then
-		local customCollects = app.ActiveCustomCollects;
 		for _,c in ipairs(customCollect) do
-			if not customCollects[c] then
-				return false;
+			if not ActiveCustomCollects[c] then
+				return;
 			end
 		end
 	end
@@ -437,14 +437,19 @@ local function FilterCompletion(group)	-- FilterGroupsByCompletion
 end
 
 -- Filter Combinations
+local function PrintExclusionCause(name, o)
+	app.PrintDebug("FilterExclude",name,o.hash,o.text)
+end
 local function SettingsAccountFilters(o)
 	for name,filter in pairs(AccountFilters) do
+		-- if not filter(o) then PrintExclusionCause(name, o) return end
 		if not filter(o) then return end
 	end
 	return true;
 end
 local function SettingsCharacterFilters(o)
 	for name,filter in pairs(CharacterFilters) do
+		-- if not filter(o) then PrintExclusionCause(name, o) return end
 		if not filter(o) then return end
 	end
 	return true;
@@ -581,29 +586,51 @@ local function RecursiveFirstDirectParentWithField(group, field)
 end
 app.RecursiveFirstDirectParentWithField = RecursiveFirstDirectParentWithField;
 
+-- Caching Helpers
+local function CacheSettingsData()
+	SettingsUnobtainable = app.Settings:GetRawSettings("Unobtainable");
+	wipe(SettingsFilterIDs)
+	local rawFilters = app.Settings:GetRawFilters();
+	for k,v in pairs(rawFilters) do
+		-- app.PrintDebug("f:user",k,v)
+		SettingsFilterIDs[k] = v;
+	end
+	-- settings uses a meta-table to default filters... let's push those up for our local use
+	for k,v in pairs(getmetatable(rawFilters).__index) do
+		if SettingsFilterIDs[k] == nil then
+			-- app.PrintDebug("f:default",k,v)
+			SettingsFilterIDs[k] = v;
+		end
+	end
+	-- app.PrintDebug("SettingsFilterIDs",#SettingsFilterIDs)
+end
+
 api.OnLoad = function()
 	GetRelativeValue = app.GetRelativeValue
 	SearchForSourceIDQuickly = app.SearchForSourceIDQuickly
-	Settings = app.Settings;
+	FactionID = app.FactionID;
 
 	-- Filters defined in other Modules... maybe link them dynamically somehow instead
 	DefineToggleFilter("Event", AccountFilters, app.Modules.Events.FilterIsEventActive);
 end
 api.OnStartup = function(AccountData)
 	ATTAccountWideData = AccountData
+	-- this table is set once in ATT, but contents are volatile
+	ActiveCustomCollects = app.ActiveCustomCollects;
+	CollectibleHeirlooms = app.CollectibleHeirlooms;
+	CacheSettingsData();
 end
--- TODO: Cache filter-related content from Settings here instead of checking in every function call
+-- Cache filter-related content from Settings here instead of checking in every function call
 api.OnRefreshData_NewSettings = function()
-
+	CollectibleHeirlooms = app.CollectibleHeirlooms;
+	CacheSettingsData();
 end
 
 -- temp sanity debug logging
 -- for name,setFilter in pairs(api.Set) do
--- 	if name ~= "ItemUnbound" then
--- 		api.Set[name] = function(...)
--- 			app.PrintDebug("Filter.Set",name,...)
--- 			return setFilter(...)
--- 		end
+-- 	api.Set[name] = function(...)
+-- 		app.PrintDebug("Filter.Set",name,...)
+-- 		return setFilter(...)
 -- 	end
 -- end
 

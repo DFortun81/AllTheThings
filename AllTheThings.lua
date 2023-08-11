@@ -11045,11 +11045,11 @@ local itemFields = {
 	["title"] = function(t)
 		return cache.GetCachedField(t, "title");
 	end,
-	["f"] = function(t)
-		-- Unknown item type after Parser, so make sure we save the filter for later references
-		t.f = -1;
-		return t.f;
-	end,
+	-- ["f"] = function(t)
+	-- 	-- Unknown item type after Parser, so make sure we save the filter for later references
+	-- 	t.f = -1;
+	-- 	return t.f;
+	-- end,
 	["tsm"] = function(t)
 		local itemLink = t.itemID;
 		if itemLink then

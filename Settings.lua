@@ -447,6 +447,12 @@ end
 settings.GetFilter = function(self, filterID)
 	return AllTheThingsSettingsPerCharacter.Filters[filterID]
 end
+settings.GetRawFilters = function(self)
+	return AllTheThingsSettingsPerCharacter.Filters;
+end
+settings.GetRawSettings = function(self, name)
+	return RawSettings[name];
+end
 settings.GetModeString = function(self)
 	local mode = L["MODE"]
 	if settings:Get("Thing:Transmog") or settings:Get("DebugMode") then
