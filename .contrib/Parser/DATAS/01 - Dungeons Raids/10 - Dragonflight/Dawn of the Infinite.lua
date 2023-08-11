@@ -280,10 +280,10 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						ach(18704),	-- Dawn of the Infinite: Murozond's Rise
 						i(206145),	-- Mysterious Time Relic (QI!)
 						i(208102),	-- Cliffside Wylderdrake: Infinite Scales (DM!)
-							i(208103),	-- Highland Drake: Infinite Scales (DM!)
-							i(208104),	-- Renewed Proto-Drake: Infinite Scales (DM!)
-							i(208105),	-- Windborne Velocidrake: Infinite Scales (DM!)
-							i(208106),	-- Winding Slitherdrake: Infinite Scales (DM!)
+						i(208103),	-- Highland Drake: Infinite Scales (DM!)
+						i(208104),	-- Renewed Proto-Drake: Infinite Scales (DM!)
+						i(208105),	-- Windborne Velocidrake: Infinite Scales (DM!)
+						i(208106),	-- Winding Slitherdrake: Infinite Scales (DM!)
 						i(207874),	-- Belt of the Eternal Struggle
 						i(207945),	-- Chrono-Lord's Wingspan
 						i(207951),	-- Displaced Trooper's Gauntlets
@@ -512,7 +512,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							ig(880),	-- Staff of Horrors 
 						}),
 						i(208109, {	-- Quantum Sword		(1Hand)
-							i(8223),	-- Blade of the Basilisk 			(Removed)
+							ig(8223),	-- Blade of the Basilisk 			(Removed)
 						}),
 						i(208122, {	-- Quantum Warglaives
 						}),
