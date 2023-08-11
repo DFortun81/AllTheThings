@@ -187,7 +187,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 					-- munificent, turbulent, and grandiose tokens below are each in their own bracket
 					-- maybe group each category under one header instead of having the same description on each token?
-						n(-493, sharedData({ ["description"] = "If you see this item as a reward on your Garrion Mission Table, please report to the ATT Discord with screenshots of the item and level/ilvl of your active followers", },{	-- Broken Mission Loot
+						n(-493, sharedData({ ["description"] = "To get any of the token missions, your characters level has to be 20 or below.\nEach token has a minimun follower itemlevel, however even with max itemlevel followers, you still receive missions for the lowest token", },{	-- Garrison Mission Loot
 							i(114109, {	-- Munificent Armament
 							--["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
 								["g"] = {

@@ -27,6 +27,13 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					["lvl"] = 110,
 				}),
 			}),
+			d(NormalPlus, {	-- Any Difficulty
+				n(ZONE_DROPS, {
+					i(168142, {	-- Coagulated Miasma
+						["description"] = "Drops from Trolls before the first Boss.\n2-3 Runs is enough for 50 Miasma.",
+					}),
+				}),
+			}),
 			d(NORMAL_DUNGEON, {
 				e(2157, {	-- Elder Leaxa
 					["crs"] = {
@@ -90,13 +97,6 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 						i(159330),	-- Gore-Splattered Vest
 						i(159253),	-- Gloves of Staunched Wounds
 						i(159625),	-- Vial of Animated Blood
-					}),
-				}),
-			}),
-			d(NormalPlus, {
-				n(ZONE_DROPS, {
-					i(168142, {	-- Coagulated Miasma
-						["description"] = "Drops from Trolls before the first Boss. 2-3 Runs is enough for 50 Miasma.",
 					}),
 				}),
 			}),

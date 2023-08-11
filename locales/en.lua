@@ -1272,7 +1272,7 @@ app.L = {
 	-- BFA War Chest
 		[-488] = "War Chest",													-- Daily War Chest
 	-- Misc
-		[-493] = "Broken Mission Loot",											-- Temporary Header for WoD Mission Loot.
+		[-493] = "Garrison Mission Loot",										-- Header for WoD Mission Loot
 	-- Mole Machine
 		[-517] = GetSpellInfo(265225),											-- Mole Machine
 	-- Blizzard Events and Anniversaries
