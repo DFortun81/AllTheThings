@@ -61,12 +61,10 @@ local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
-local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, tremove, sformat, strsplit, GetTimePreciseSec, type
-	= rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, tremove, string.format, strsplit, GetTimePreciseSec, type;
+local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tremove, sformat, strsplit, GetTimePreciseSec, type
+	= rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tremove, string.format, strsplit, GetTimePreciseSec, type;
 local ATTAccountWideData;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
-local ALLIANCE_ONLY = app.Modules.FactionData.FACTION_RACES[1];
-local HORDE_ONLY = app.Modules.FactionData.FACTION_RACES[2];
 local AttachTooltipSearchResults = app.Modules.Tooltip.AttachTooltipSearchResults;
 
 -- Print/Debug/Testing Functions
@@ -2550,7 +2548,7 @@ PriorityNestObjects = function(p, g, newCreate, ...)
 	if not g or #g == 0 then return; end
 	local pFuncs = {...};
 	if pFuncs[1] then
-		-- print("PriorityNestObjects",#pFuncs,"Priorities",#g,"Objects")
+		-- app.PrintDebug("PriorityNestObjects",#pFuncs,"Priorities",#g,"Objects")
 		-- setup containers for the priority buckets
 		local pBuckets, pBucket, skipped = {};
 		for i,_ in ipairs(pFuncs) do
@@ -2562,7 +2560,7 @@ PriorityNestObjects = function(p, g, newCreate, ...)
 			for i,pFunc in ipairs(pFuncs) do
 				-- if the function matches, put the object in the bucket
 				if pFunc(o) then
-					-- print("Matched Priority Function",i,o.key,o.key and o[o.key])
+					-- app.PrintDebug("Matched Priority Function",i,o.hash,o.parent.text)
 					pBucket = pBuckets[i];
 					tinsert(pBucket, o);
 					break;
@@ -2570,7 +2568,7 @@ PriorityNestObjects = function(p, g, newCreate, ...)
 			end
 			-- no bucket was found, put in skipped
 			if not pBucket then
-				-- print("No Priority",o.key,o.key and o[o.key])
+				-- app.PrintDebug("No Priority",o.hash,o.parent.text)
 				if skipped then tinsert(skipped, o);
 				else skipped = { o }; end
 			end
@@ -2579,17 +2577,17 @@ PriorityNestObjects = function(p, g, newCreate, ...)
 		end
 		-- then nest each bucket in order of priority
 		for i,pBucket in ipairs(pBuckets) do
-			-- print("Nesting Priority Bucket",i,#pBucket)
+			-- app.PrintDebug("Nesting Priority Bucket",i,#pBucket)
 			NestObjects(p, pBucket, newCreate);
 		end
 		-- and nest anything skipped
-		-- print("Nesting Skipped",skipped and #skipped)
+		-- app.PrintDebug("Nesting Skipped",skipped and #skipped)
 		NestObjects(p, skipped, newCreate);
 	else
 		NestObjects(p, g, newCreate);
 	end
 end
--- Mergess multiple sources of an object into a single object. Can specify to clean out all sub-groups of the result
+-- Merges multiple sources of an object into a single object. Can specify to clean out all sub-groups of the result
 app.MergedObject = function(group, rootOnly)
 	if not group or not group[1] then return; end
 	local merged = CreateObject(group[1], rootOnly);
@@ -4856,7 +4854,7 @@ local function DeterminePurchaseGroups(group, FillData)
 		local clone;
 		for _,o in ipairs(collectibles) do
 			if o.hash ~= groupHash then
-				-- app.PrintDebug("Purchase @",depth,groupHash,"=>",hash)
+				-- app.PrintDebug("Purchase @",groupHash,"=>",o.hash)
 				clone = CreateObject(o);
 				tinsert(groups, clone);
 			end
@@ -16337,9 +16335,15 @@ RowOnEnter = function (self)
 		--[[ ROW DEBUGGING ]
 		GameTooltip:AddDoubleLine("Self",tostring(reference));
 		GameTooltip:AddDoubleLine("Base",tostring(getmetatable(reference)));
+		GameTooltip:AddDoubleLine("Parent",tostring(rawget(reference, "parent")));
+		GameTooltip:AddDoubleLine("ParentText",tostring((rawget(reference, "parent") or app.EmptyTable).text));
+		GameTooltip:AddDoubleLine("SourceParent",tostring(rawget(reference, "sourceParent")));
+		GameTooltip:AddDoubleLine("SourceParentText",tostring((rawget(reference, "sourceParent") or app.EmptyTable).text));
 		GameTooltip:AddLine("-- Ref Fields:");
 		for key,val in pairs(reference) do
-			GameTooltip:AddDoubleLine(key,tostring(val));
+			if key ~= "lore" and key ~= "description" then
+				GameTooltip:AddDoubleLine(key,tostring(val));
+			end
 		end
 		local fields = {
 			"__type",
@@ -16348,7 +16352,6 @@ RowOnEnter = function (self)
 			"hash",
 			"name",
 			"link",
-			"sourceParent",
 			-- "sourceIgnored",
 			-- "collectible",
 			-- "collected",
