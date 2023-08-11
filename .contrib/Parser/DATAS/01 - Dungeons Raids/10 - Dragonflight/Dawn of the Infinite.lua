@@ -448,7 +448,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 								ig(5183),	-- Pulsating hydra heart			(Removed)
 							}),
 							i(208113, {	-- Quantum Greataxe		(2Hand)
-								ig(33769),	-- Arcanite Ripper					(BMAH)
+								ig(39769),	-- Arcanite Ripper					(BMAH)
 								ig(44924),	-- Sun Lute							(BMAH)
 
 								ig(134717),	-- Cold-Touched Decapitator			(NYI)
@@ -502,7 +502,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 
 								ig(6679),	-- Armor Piercer					(Removed)
 								ig(134721),	-- Cold-Touched Staff 				(Removed)
-								ig(5183),	-- Crooked Staff					(Removed)
+								ig(1388),	-- Crooked Staff					(Removed)
 								ig(7094),	-- Driftwood Branch					(Removed)
 								ig(1539),	-- Gnarled hermit's staff			(Removed)(Unique)
 								ig(2280),	-- Kam's Walking Stick				(Removed)

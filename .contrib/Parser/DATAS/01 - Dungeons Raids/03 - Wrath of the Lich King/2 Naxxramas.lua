@@ -1184,12 +1184,14 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					["g"] = {
 						i(206573, {	-- Dented Raider's Belt
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+							["description"] = "Includes a wide range of Bind on Equip (BoE) Belts from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 							["g"] = {
 								i(206609),	-- Lamented Crusader's Belt
 							},
 						}),
 						i(206575, {	-- Dented Raider's Boots
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+							["description"] = "Includes a wide range of Bind on Equip (BoE) Boots from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 							["g"] = {
 								i(10402),	-- Blackened Defias Boots
 								i(206611),	-- Lamented Crusader's Boots
@@ -1199,12 +1201,14 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						}),
 						i(206571, {	-- Dented Raider's Bracers
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+							["description"] = "Includes a wide range of Bind on Equip (BoE) Bracers from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 							["g"] = {
 								i(206607),	-- Lamented Crusader's Bracers
 							},
 						}),
 						i(206570, {	-- Dented Raider's Chestpiece
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+							["description"] = "Includes a wide range of Bind on Equip (BoE) Chestpieces from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 							["g"] = {
 								i(206606),	-- Lamented Crusader's Chestpiece
 								i(3019),	-- Noble's Robe
@@ -1212,6 +1216,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						}),
 						i(206572, {	-- Dented Raider's Gauntlets
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+							["description"] = "Includes a wide range of Bind on Equip (BoE) Gauntlets from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 							["g"] = {
 								i(206608),	-- Lamented Crusader's Gauntlets
 								i(1944),	-- Metalworking Gloves
@@ -1220,12 +1225,14 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						}),
 						i(206568, {	-- Dented Raider's Helmet
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+							["description"] = "Includes a wide range of Bind on Equip (BoE) Helmets from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 							["g"] = {
 								i(206604),	-- Lamented Crusader's Helmet
 							},
 						}),
 						i(206574, {	-- Dented Raider's Leggings
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+							["description"] = "Includes a wide range of Bind on Equip (BoE) Leggings from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 							["g"] = {
 								i(1943),	-- Goblin Mail Leggings
 								i(206610),	-- Lamented Crusader's Leggings
@@ -1233,6 +1240,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						}),
 						i(206569, {	-- Dented Raider's Spaulders
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
+							["description"] = "Includes a wide range of Bind on Equip (BoE) Spaulders from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 							["g"] = {
 								i(206605),	-- Lamented Crusader's Spaulders
 							},
