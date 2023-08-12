@@ -187,7 +187,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 					-- munificent, turbulent, and grandiose tokens below are each in their own bracket
 					-- maybe group each category under one header instead of having the same description on each token?
-						n(-493, sharedData({ ["description"] = "To get any of the token missions, your characters level has to be 20 or below.\nEach token has a minimun follower itemlevel, however even with max itemlevel followers, you still receive missions for the lowest token", },{	-- Garrison Mission Loot
+						n(-493, sharedData({ ["description"] = "To receive any of the token missions, your character has to be precisely level 20 (locking experience is recommended).\nEach token mission requires a follower at a specific level to be offered (1 Follower at 31, 1 Follower at 32, and so forth).\nThe remaining 11 followers (15 with Inn Building) can be at any level.\nFollowers at level 40 are unrestricted in terms of item level.", },{	-- Garrison Mission Loot
 							i(114109, {	-- Munificent Armament
 							--["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
 								["g"] = {
