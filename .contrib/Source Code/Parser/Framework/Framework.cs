@@ -4787,7 +4787,7 @@ namespace ATT
                                 }
                                 builder.AppendLine("\t},");
                             }
-                            builder.AppendLine(")").AppendLine("do ObjectDB[objectID] = objectData; end");
+                            builder.AppendLine("})").AppendLine("do ObjectDB[objectID] = objectData; end");
                             File.WriteAllText(Path.Combine(debugFolder.FullName, "ObjectDB.lua"), builder.ToString(), Encoding.UTF8);
                         }
 
