@@ -1201,7 +1201,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { AD
 		q(76647),	-- after buying/loot 'Warmonger's Headcover' (itemID 206846) (spellID 418866)
 		q(76666),	-- after buying/loot 'Warmonger's Leather Armor Bag' (itemID 207079) (spellID 418865)
 		q(76667),	-- after buying/loot 'Warmonger's Leather Equipment Bag' (itemID 207069) (spellID 418864)
-		q(76654),	-- after buying/loot 'Warmonger's Leather Gear Bag' (itemID 207070) (spellID 418863)
+		q(76664),	-- after buying/loot 'Warmonger's Leather Gear Bag' (itemID 207070) (spellID 418863)
 		q(76665),	-- after buying/loot 'Warmonger's Leather Suit Bag' (itemID 207094) (spellID 418862)
 		q(76642),	-- after buying/loot 'Warmonger's Leggings' (itemID 206814) (spellID 418861)
 		q(76654),	-- after buying/loot 'Warmonger's Legguards' (itemID 206854) (spellID 418860)
