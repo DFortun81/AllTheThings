@@ -2622,6 +2622,15 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(2078),	-- Northern Shortsword
 			i(727),		-- Notched Shortsword
 			i(15210),	-- Raider Shortsword
+			i(9718, {	-- Reforged Blade of Heroes
+				["cost"] = {
+					{ "i", 9719, 1 },	-- Broken Blade of Heroes
+					{ "i", 7068, 2 },	-- Elemental Fire
+					{ "i", 3486, 2 },	-- Heavy Grinding Stone
+					{ "i", 3859, 4 },	-- Steel Bar
+					{ "i", 3466, 4 },	-- Strong Flux
+				},
+			}),
 			i(15216),	-- Rune Sword
 			i(1265),	-- Scorpion Sting
 			i(13035),	-- Serpent Slicer

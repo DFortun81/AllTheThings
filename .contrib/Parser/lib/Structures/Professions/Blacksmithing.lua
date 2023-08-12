@@ -629,7 +629,7 @@ MOP_BLACKSMITHING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] =
 		r(122636),	-- Spiritguard Shield
 	}),
 }));
-COMMON_MOP_BLACKSMITHING_RECIPES = applyclassicphase(MOP_PHASE_ONE, sharedData({ ["cost"] = { { "i", SPIRIT_OF_HARMONY, 1 }, }, ["timeline"] = { ADDED_5_0_4 } }, {
+COMMON_MOP_BLACKSMITHING_RECIPES = applyclassicphase(MOP_PHASE_ONE, sharedData({ ["cost"] = {{ "i", SPIRIT_OF_HARMONY, 1 }}, ["timeline"] = { ADDED_5_0_4 } }, {
 	i(84158),	-- Plans: Contender's Revenant Belt (RECIPE!)
 	i(84159),	-- Plans: Contender's Revenant Boots (RECIPE!)
 	i(84160),	-- Plans: Contender's Revenant Bracers (RECIPE!)
@@ -737,14 +737,14 @@ COMMON_DRAENOR_BLACKSMITHING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedDa
 		["cost"] = {{ "i", SECRET_OF_DRAENOR_BLACKSMITHING, 1 }},
 	}),
 	i(116743, {	-- Plans: Truesteel Essence (RECIPE!)
-		["collectible"] = false,
 		["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
+		["collectible"] = false,
 		["cost"] = {{ "i", SECRET_OF_DRAENOR_BLACKSMITHING, 5 }},
 		["timeline"] = { REMOVED_10_0_5 },
 	}),
 	i(116745, {	-- Plans: Steelforged Essence (RECIPE!)
-		["collectible"] = false,
 		["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
+		["collectible"] = false,
 		["cost"] = {{ "i", SECRET_OF_DRAENOR_BLACKSMITHING, 5 }},
 		["timeline"] = { REMOVED_10_0_5 },
 	}),

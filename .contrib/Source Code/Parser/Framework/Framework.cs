@@ -2079,98 +2079,99 @@ namespace ATT
             if (!ObjectDB.TryGetValue(objectID, out Dictionary<string, object> objectData))
             {
                 objectData = new Dictionary<string, object>();
-                ObjectDB[objectID] = objectData;
                 LogWarn($"OBJECT MISSING FOR {objectID}!", data);
-            }
-            if (data.TryGetValue("icon", out string icon))
-            {
-                if (!objectData.ContainsKey("icon"))
+                if (data.TryGetValue("icon", out string icon))
                 {
-                    // Assign the icon and then inform the engineer.
-                    objectData["icon"] = icon.Replace("\\", "/");
-                    LogWarn($"OBJECT ICON MISSING FOR {objectID} : ASSIGNED {icon} FROM SOURCE.");
-                    if (!DebugMode)
+                    if (!objectData.ContainsKey("icon"))
                     {
-                        Trace.WriteLine("Activating Debug Mode! (Press Enter to continue...)");
-                        Trace.WriteLine("Update ObjectDB.lua from the Debugging folder.");
-                        DebugMode = true;
-                        Console.ReadLine();
+                        // Assign the icon and then inform the engineer.
+                        objectData["icon"] = icon.Replace("\\", "/");
+                        LogWarn($"OBJECT ICON MISSING FOR {objectID} : ASSIGNED {icon} FROM SOURCE.");
+                        if (!DebugMode)
+                        {
+                            Trace.WriteLine("Activating Debug Mode! (Press Enter to continue...)");
+                            Trace.WriteLine("Update ObjectDB.lua from the Debugging folder.");
+                            DebugMode = true;
+                            Console.ReadLine();
+                        }
+                    }
+                    else
+                    {
+                        LogDebug($"OBJECT ICON ALREADY IN DATABASE FOR {objectID}: You can probably delete it from the source file.");
                     }
                 }
                 else
                 {
-                    LogDebug($"OBJECT ICON ALREADY IN DATABASE FOR {objectID}: You can probably delete it from the source file.");
+                    // Ignore that the icon is missing... for now.
                 }
-            }
-            else
-            {
-                // Ignore that the icon is missing... for now.
-            }
-            if (data.TryGetValue("model", out object model))
-            {
-                if (!objectData.ContainsKey("model"))
+                if (data.TryGetValue("model", out object model))
                 {
-                    // Assign the model and then inform the engineer.
-                    objectData["model"] = model;
-                    LogWarn($"OBJECT MODEL MISSING FOR {objectID} : ASSIGNED {model} FROM SOURCE.");
-                    if (!DebugMode)
+                    if (!objectData.ContainsKey("model"))
                     {
-                        Trace.WriteLine("Activating Debug Mode! (Press Enter to continue...)");
-                        Trace.WriteLine("Update ObjectDB.lua from the Debugging folder.");
-                        DebugMode = true;
-                        Console.ReadLine();
+                        // Assign the model and then inform the engineer.
+                        objectData["model"] = model;
+                        LogWarn($"OBJECT MODEL MISSING FOR {objectID} : ASSIGNED {model} FROM SOURCE.");
+                        if (!DebugMode)
+                        {
+                            Trace.WriteLine("Activating Debug Mode! (Press Enter to continue...)");
+                            Trace.WriteLine("Update ObjectDB.lua from the Debugging folder.");
+                            DebugMode = true;
+                            Console.ReadLine();
+                        }
+                    }
+                    else
+                    {
+                        LogDebug($"OBJECT MODEL ALREADY IN DATABASE FOR {objectID}: You can probably delete it from the source file.");
                     }
                 }
                 else
                 {
-                    LogDebug($"OBJECT MODEL ALREADY IN DATABASE FOR {objectID}: You can probably delete it from the source file.");
+                    // Ignore that the model is missing... for now.
                 }
-            }
-            else
-            {
-                // Ignore that the model is missing... for now.
-            }
-            if (data.TryGetValue("name", out string name))
-            {
-                if (!objectData.ContainsKey("readable"))
+                if (data.TryGetValue("name", out string name))
                 {
-                    // Assign the readable and then inform the engineer.
-                    objectData["readable"] = name;
-                    LogWarn($"OBJECT READABLE MISSING FOR {objectID} : ASSIGNED {name} FROM SOURCE.");
-                    if (!DebugMode)
+                    if (!objectData.ContainsKey("readable"))
                     {
-                        Trace.WriteLine("Activating Debug Mode! (Press Enter to continue...)");
-                        Trace.WriteLine("Update ObjectDB.lua from the Debugging folder.");
-                        DebugMode = true;
-                        Console.ReadLine();
+                        // Assign the readable and then inform the engineer.
+                        objectData["readable"] = name;
+                        LogWarn($"OBJECT READABLE MISSING FOR {objectID} : ASSIGNED {name} FROM SOURCE.");
+                        if (!DebugMode)
+                        {
+                            Trace.WriteLine("Activating Debug Mode! (Press Enter to continue...)");
+                            Trace.WriteLine("Update ObjectDB.lua from the Debugging folder.");
+                            DebugMode = true;
+                            Console.ReadLine();
+                        }
+                    }
+                    else
+                    {
+                        LogDebug($"OBJECT READABLE ALREADY IN DATABASE FOR {objectID}: You can probably delete it from the source file.");
+                    }
+
+                    if (!objectData.ContainsKey("text"))
+                    {
+                        // Assign the text and then inform the engineer.
+                        objectData["text"] = new Dictionary<string, object> { { "en", name } };
+                        LogWarn($"OBJECT TEXT MISSING FOR {objectID} : ASSIGNED {name} FROM SOURCE.");
+                        if (!DebugMode)
+                        {
+                            Trace.WriteLine("Activating Debug Mode! (Press Enter to continue...)");
+                            Trace.WriteLine("Update ObjectDB.lua from the Debugging folder.");
+                            DebugMode = true;
+                            Console.ReadLine();
+                        }
+                    }
+                    else
+                    {
+                        LogDebug($"OBJECT TEXT ALREADY IN DATABASE FOR {objectID}: You can probably delete it from the source file.");
                     }
                 }
                 else
                 {
-                    LogDebug($"OBJECT READABLE ALREADY IN DATABASE FOR {objectID}: You can probably delete it from the source file.");
+                    // Ignore that the readable is missing... for now.
                 }
 
-                if (!objectData.ContainsKey("text"))
-                {
-                    // Assign the text and then inform the engineer.
-                    objectData["text"] = new Dictionary<string, object> { { "en", name } };
-                    LogWarn($"OBJECT TEXT MISSING FOR {objectID} : ASSIGNED {name} FROM SOURCE.");
-                    if (!DebugMode)
-                    {
-                        Trace.WriteLine("Activating Debug Mode! (Press Enter to continue...)");
-                        Trace.WriteLine("Update ObjectDB.lua from the Debugging folder.");
-                        DebugMode = true;
-                        Console.ReadLine();
-                    }
-                }
-                else
-                {
-                    LogDebug($"OBJECT TEXT ALREADY IN DATABASE FOR {objectID}: You can probably delete it from the source file.");
-                }
-            }
-            else
-            {
-                // Ignore that the readable is missing... for now.
+                if(objectData.Any()) ObjectDB[objectID] = objectData;
             }
         }
 
@@ -4714,7 +4715,7 @@ namespace ATT
                             var builder = new StringBuilder("-----------------------------------------------------\n--   O B J E C T   D A T A B A S E   M O D U L E   --\n-----------------------------------------------------\n");
                             var keys = ObjectDB.Keys.ToList();
                             keys.Sort();
-                            builder.Append("_.ObjectDB = {").AppendLine();
+                            builder.Append("local ObjectDB = ObjectDB; for objectID,objectData in pairs({").AppendLine();
                             foreach (var key in keys)
                             {
                                 Dictionary<string, object> objectData = ObjectDB[key];
@@ -4786,7 +4787,7 @@ namespace ATT
                                 }
                                 builder.AppendLine("\t},");
                             }
-                            builder.AppendLine("};");
+                            builder.AppendLine(")").AppendLine("do ObjectDB[objectID] = objectData; end");
                             File.WriteAllText(Path.Combine(debugFolder.FullName, "ObjectDB.lua"), builder.ToString(), Encoding.UTF8);
                         }
 
@@ -5153,48 +5154,74 @@ namespace ATT
                         .AppendLine("local appName, _ = ...;")
                         .AppendLine("local simplifiedLocale = string.sub(GetLocale(),1,2);").AppendLine();
 
-                    var keys = new List<long>();
                     var icons = new Dictionary<long, string>();
                     var modelIDs = new Dictionary<long, long>();
                     var localizationForText = new Dictionary<string, Dictionary<long, string>>();
-                    foreach (var key in ObjectDB.Keys)
+
+                    // Include Only Referenced Objects!
+                    var keys = OBJECTS_WITH_REFERENCES.Keys.ToList();
+                    keys.Sort();
+                    foreach (var key in keys)
                     {
-                        // Include Only Referenced Objects!
-                        if (OBJECTS_WITH_REFERENCES.ContainsKey(key))
+                        // Check to see if ObjectDB has any information on our object.
+                        if (!ObjectDB.TryGetValue(key, out Dictionary<string, object> objectData))
                         {
-                            if (ObjectDB.TryGetValue(key, out Dictionary<string, object> objectData))
+                            // If not, get new object information from WoWHead.
+                            objectData = new Dictionary<string, object>();
+                            ObjectHarvester.UpdateInformationFromWoWHead(key, objectData);
+                            if (!objectData.Any()) continue;
+                            ObjectDB[key] = objectData;
+                        }
+#if HARVESTOBJECTS
+                        else
+                        {
+                            // Check for any updated information from WoWHead.
+                            ObjectHarvester.UpdateInformationFromWoWHead(key, objectData);
+                        }
+#endif
+
+                        if (objectData.TryGetValue("icon", out object value))
+                        {
+                            icons[key] = value.ToString().Replace("\\", "/");
+                        }
+                        if (objectData.TryGetValue("model", out value))
+                        {
+                            modelIDs[key] = Convert.ToInt64(value);
+                        }
+                        if (objectData.TryGetValue("text", out value))
+                        {
+                            if (!(value is IDictionary<string, object> localeData))
                             {
-                                keys.Add(key);
-                                if (objectData.TryGetValue("icon", out object value))
+                                localeData = new Dictionary<string, object>
                                 {
-                                    icons[key] = value.ToString().Replace("\\", "/");
+                                    ["en"] = value
+                                };
+                            }
+                            if (localeData.TryGetValue("en", out string englishValue))
+                            {
+                                if (!localizationForText.TryGetValue("en", out Dictionary<long, string> sublocale))
+                                {
+                                    localizationForText["en"] = sublocale = new Dictionary<long, string>();
                                 }
-                                if (objectData.TryGetValue("model", out value))
+                                sublocale[key] = englishValue;
+
+                                foreach (var locale in localeData)
                                 {
-                                    modelIDs[key] = Convert.ToInt64(value);
-                                }
-                                if (objectData.TryGetValue("text", out value))
-                                {
-                                    if (!(value is IDictionary<string, object> localeData))
+                                    if (locale.Key == "en") continue;
+
+                                    string localizedValue = locale.Value.ToString();
+                                    if (!localizedValue.Contains(englishValue))
                                     {
-                                        localeData = new Dictionary<string, object>
-                                        {
-                                            ["en"] = value
-                                        };
-                                    }
-                                    foreach (var locale in localeData)
-                                    {
-                                        if (!localizationForText.TryGetValue(locale.Key, out Dictionary<long, string> sublocale))
+                                        if (!localizationForText.TryGetValue(locale.Key, out sublocale))
                                         {
                                             localizationForText[locale.Key] = sublocale = new Dictionary<long, string>();
                                         }
-                                        sublocale[key] = locale.Value.ToString();
+                                        sublocale[key] = localizedValue;
                                     }
                                 }
                             }
                         }
                     }
-                    keys.Sort();
 
                     builder.AppendLine("_.ObjectIcons = {");
                     foreach (var key in keys)
@@ -5285,6 +5312,32 @@ namespace ATT
                 Objects.ExportAutoItemSources(Config["root-data"] ?? "./DATAS");
                 CurrentParseStage = ParseStage.ExportAutoLocale;
                 Objects.ExportAutoLocale(Path.Combine(addonRootFolder, $"db/{dbRootFolder}en_auto.lua"));
+
+                // Use this to attempt to harvest object IDs.
+                /*
+                for (int objectID = 1; objectID < 25000; ++objectID)
+                {
+                    if (!ObjectDB.TryGetValue(objectID, out Dictionary<string, object> objectData))
+                    {
+                        // If not, get new object information from WoWHead.
+                        objectData = new Dictionary<string, object>();
+                        ObjectHarvester.UpdateInformationFromWoWHead(objectID, objectData);
+                        if (!objectData.Any()) continue;
+                        ObjectDB[objectID] = objectData;
+                    }
+                }
+                */
+
+                // Check to see if we need to export any dirty objects.
+                var dirtyObjectStringBuilder = ObjectHarvester.ExportDirtyObjects();
+                if (dirtyObjectStringBuilder != null)
+                {
+                    var filePath = Path.Combine(Config["root-data"] ?? "./DATAS", "00 - DB/Dynamic/", $"DynamicObjectDB_{DateTime.UtcNow.Ticks}.lua");
+                    Directory.CreateDirectory(Path.GetDirectoryName(filePath));
+                    File.WriteAllText(filePath, dirtyObjectStringBuilder
+                        .Insert(0, "local ObjectDB = ObjectDB; for objectID,objectData in pairs(")
+                        .Append(")\ndo ObjectDB[objectID] = objectData; end").ToString(), Encoding.UTF8);
+                }
             }
         }
     }

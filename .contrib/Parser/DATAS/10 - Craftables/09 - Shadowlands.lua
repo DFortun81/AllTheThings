@@ -2,7 +2,7 @@
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
 local CURRENT_EXPAC_INK_ITEMID = 173058;	-- Umbral Ink
-root(ROOTS.Craftables, tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	prof(ALCHEMY, {
 		n(HEAD, {
 			i(180751),	-- Red Noggin Candle
@@ -28,45 +28,47 @@ root(ROOTS.Craftables, tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bu
 		}),
 	}),
 	prof(BLACKSMITHING, {
-		spell(307705, {	-- Shadowghast Armguards [Rank 1]
-			r(332006),	-- Shadowghast Armguards [Rank 2] (RECIPE!)
-			r(332041),	-- Shadowghast Armguards [Rank 3] (RECIPE!)
-			r(338976),	-- Shadowghast Armguards [Rank 4] (RECIPE!)
-		}),
-		spell(307712, {	-- Shadowghast Breastplate [Rank 1]
-			r(332013),	-- Shadowghast Breastplate [Rank 2] (RECIPE!)
-			r(332048),	-- Shadowghast Breastplate [Rank 3] (RECIPE!)
-			r(338968),	-- Shadowghast Breastplate [Rank 4] (RECIPE!)
-		}),
-		spell(307710, {	-- Shadowghast Gauntlets [Rank 1]
-			r(332011),	-- Shadowghast Gauntlets [Rank 2] (RECIPE!)
-			r(332046),	-- Shadowghast Gauntlets [Rank 3] (RECIPE!)
-			r(338970),	-- Shadowghast Gauntlets [Rank 4] (RECIPE!)
-		}),
-		spell(307708, {	-- Shadowghast Greaves [Rank 1]
-			r(332009),	-- Shadowghast Greaves [Rank 2] (RECIPE!)
-			r(332044),	-- Shadowghast Greaves [Rank 3] (RECIPE!)
-			r(338972),	-- Shadowghast Greaves [Rank 4] (RECIPE!)
-		}),
-		spell(307709, {	-- Shadowghast Helm [Rank 1]
-			r(332010),	-- Shadowghast Helm [Rank 2] (RECIPE!)
-			r(332045),	-- Shadowghast Helm [Rank 3] (RECIPE!)
-			r(338971),	-- Shadowghast Helm [Rank 4] (RECIPE!)
-		}),
-		spell(307707, {	-- Shadowghast Pauldrons [Rank 1]
-			r(332008),	-- Shadowghast Pauldrons [Rank 2] (RECIPE!)
-			r(332043),	-- Shadowghast Pauldrons [Rank 3] (RECIPE!)
-			r(338974),	-- Shadowghast Pauldrons [Rank 4] (RECIPE!)
-		}),
-		spell(307711, {	-- Shadowghast Sabatons [Rank 1]
-			r(332012),	-- Shadowghast Sabatons [Rank 2] (RECIPE!)
-			r(332047),	-- Shadowghast Sabatons [Rank 3] (RECIPE!)
-			r(338969),	-- Shadowghast Sabatons [Rank 4] (RECIPE!)
-		}),
-		spell(307706, {	-- Shadowghast Waistguard [Rank 1]
-			r(332007),	-- Shadowghast Waistguard [Rank 2] (RECIPE!)
-			r(332042),	-- Shadowghast Waistguard [Rank 3] (RECIPE!)
-			r(338975),	-- Shadowghast Waistguard [Rank 4] (RECIPE!)
+		n(DISCOVERY, {
+			spell(307705, {	-- Shadowghast Armguards [Rank 1]
+				r(332006),	-- Shadowghast Armguards [Rank 2] (RECIPE!)
+				r(332041),	-- Shadowghast Armguards [Rank 3] (RECIPE!)
+				r(338976),	-- Shadowghast Armguards [Rank 4] (RECIPE!)
+			}),
+			spell(307712, {	-- Shadowghast Breastplate [Rank 1]
+				r(332013),	-- Shadowghast Breastplate [Rank 2] (RECIPE!)
+				r(332048),	-- Shadowghast Breastplate [Rank 3] (RECIPE!)
+				r(338968),	-- Shadowghast Breastplate [Rank 4] (RECIPE!)
+			}),
+			spell(307710, {	-- Shadowghast Gauntlets [Rank 1]
+				r(332011),	-- Shadowghast Gauntlets [Rank 2] (RECIPE!)
+				r(332046),	-- Shadowghast Gauntlets [Rank 3] (RECIPE!)
+				r(338970),	-- Shadowghast Gauntlets [Rank 4] (RECIPE!)
+			}),
+			spell(307708, {	-- Shadowghast Greaves [Rank 1]
+				r(332009),	-- Shadowghast Greaves [Rank 2] (RECIPE!)
+				r(332044),	-- Shadowghast Greaves [Rank 3] (RECIPE!)
+				r(338972),	-- Shadowghast Greaves [Rank 4] (RECIPE!)
+			}),
+			spell(307709, {	-- Shadowghast Helm [Rank 1]
+				r(332010),	-- Shadowghast Helm [Rank 2] (RECIPE!)
+				r(332045),	-- Shadowghast Helm [Rank 3] (RECIPE!)
+				r(338971),	-- Shadowghast Helm [Rank 4] (RECIPE!)
+			}),
+			spell(307707, {	-- Shadowghast Pauldrons [Rank 1]
+				r(332008),	-- Shadowghast Pauldrons [Rank 2] (RECIPE!)
+				r(332043),	-- Shadowghast Pauldrons [Rank 3] (RECIPE!)
+				r(338974),	-- Shadowghast Pauldrons [Rank 4] (RECIPE!)
+			}),
+			spell(307711, {	-- Shadowghast Sabatons [Rank 1]
+				r(332012),	-- Shadowghast Sabatons [Rank 2] (RECIPE!)
+				r(332047),	-- Shadowghast Sabatons [Rank 3] (RECIPE!)
+				r(338969),	-- Shadowghast Sabatons [Rank 4] (RECIPE!)
+			}),
+			spell(307706, {	-- Shadowghast Waistguard [Rank 1]
+				r(332007),	-- Shadowghast Waistguard [Rank 2] (RECIPE!)
+				r(332042),	-- Shadowghast Waistguard [Rank 3] (RECIPE!)
+				r(338975),	-- Shadowghast Waistguard [Rank 4] (RECIPE!)
+			}),
 		}),
 		n(ARMOR, {
 			i(171381),	-- Ceremonious Armguards
@@ -403,85 +405,87 @@ root(ROOTS.Craftables, tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bu
 		}),
 	}),
 	prof(LEATHERWORKING, {
-		spell(309213, {	-- Boneshatter Armguards [Rank 1]
-			r(332029),	-- Boneshatter Armguards [Rank 2] (RECIPE!)
-			r(332064),	-- Boneshatter Armguards [Rank 3] (RECIPE!)
-			r(338994),	-- Boneshatter Armguards [Rank 4] (RECIPE!)
-		}),
-		spell(309208, {	-- Boneshatter Gauntlets [Rank 1]
-			r(332024),	-- Boneshatter Gauntlets [Rank 2] (RECIPE!)
-			r(332059),	-- Boneshatter Gauntlets [Rank 3] (RECIPE!)
-			r(338989),	-- Boneshatter Gauntlets [Rank 4] (RECIPE!)
-		}),
-		spell(309210, {	-- Boneshatter Greaves [Rank 1]
-			r(332026),	-- Boneshatter Greaves [Rank 2] (RECIPE!)
-			r(332061),	-- Boneshatter Greaves [Rank 3] (RECIPE!)
-			r(338991),	-- Boneshatter Greaves [Rank 4] (RECIPE!)
-		}),
-		spell(309209, {	-- Boneshatter Helm [Rank 1]
-			r(332025),	-- Boneshatter Helm [Rank 2] (RECIPE!)
-			r(332060),	-- Boneshatter Helm [Rank 3] (RECIPE!)
-			r(338990),	-- Boneshatter Helm [Rank 4] (RECIPE!)
-		}),
-		spell(309211, {	-- Boneshatter Pauldrons [Rank 1]
-			r(332027),	-- Boneshatter Pauldrons [Rank 2] (RECIPE!)
-			r(332062),	-- Boneshatter Pauldrons [Rank 3] (RECIPE!)
-			r(338992),	-- Boneshatter Pauldrons [Rank 4] (RECIPE!)
-		}),
-		spell(309206, {	-- Boneshatter Treads [Rank 1]
-			r(332022),	-- Boneshatter Treads [Rank 2] (RECIPE!)
-			r(332057),	-- Boneshatter Treads [Rank 3] (RECIPE!)
-			r(338988),	-- Boneshatter Treads [Rank 4] (RECIPE!)
-		}),
-		spell(309207, {	-- Boneshatter Vest [Rank 1]
-			r(332023),	-- Boneshatter Vest [Rank 2] (RECIPE!)
-			r(332058),	-- Boneshatter Vest [Rank 3] (RECIPE!)
-			r(338987),	-- Boneshatter Vest [Rank 4] (RECIPE!)
-		}),
-		spell(309212, {	-- Boneshatter Waistguard [Rank 1]
-			r(332028),	-- Boneshatter Waistguard [Rank 2] (RECIPE!)
-			r(332063),	-- Boneshatter Waistguard [Rank 3] (RECIPE!)
-			r(338993),	-- Boneshatter Waistguard [Rank 4] (RECIPE!)
-		}),
-		spell(309205, {	-- Umbrahide Armguards [Rank 1]
-			r(332021),	-- Umbrahide Armguards [Rank 2] (RECIPE!)
-			r(332056),	-- Umbrahide Armguards [Rank 3] (RECIPE!)
-			r(338986),	-- Umbrahide Armguards [Rank 4] (RECIPE!)
-		}),
-		spell(309200, {	-- Umbrahide Gauntlets [Rank 1]
-			r(332016),	-- Umbrahide Gauntlets [Rank 2] (RECIPE!)
-			r(332051),	-- Umbrahide Gauntlets [Rank 3] (RECIPE!)
-			r(338981),	-- Umbrahide Gauntlets [Rank 4] (RECIPE!)
-		}),
-		spell(309201, {	-- Umbrahide Helm [Rank 1]
-			r(332017),	-- Umbrahide Helm [Rank 2] (RECIPE!)
-			r(332052),	-- Umbrahide Helm [Rank 3] (RECIPE!)
-			r(338982),	-- Umbrahide Helm [Rank 4] (RECIPE!)
-		}),
-		spell(309202, {	-- Umbrahide Leggings [Rank 1]
-			r(332018),	-- Umbrahide Leggings [Rank 2] (RECIPE!)
-			r(332053),	-- Umbrahide Leggings [Rank 3] (RECIPE!)
-			r(338983),	-- Umbrahide Leggings [Rank 4] (RECIPE!)
-		}),
-		spell(309203, {	-- Umbrahide Pauldrons [Rank 1]
-			r(332019),	-- Umbrahide Pauldrons [Rank 2] (RECIPE!)
-			r(332054),	-- Umbrahide Pauldrons [Rank 3] (RECIPE!)
-			r(338984),	-- Umbrahide Pauldrons [Rank 4] (RECIPE!)
-		}),
-		spell(309198, {	-- Umbrahide Treads [Rank 1]
-			r(332014),	-- Umbrahide Treads [Rank 2] (RECIPE!)
-			r(332049),	-- Umbrahide Treads [Rank 3] (RECIPE!)
-			r(338980),	-- Umbrahide Treads [Rank 4] (RECIPE!)
-		}),
-		spell(309199, {	-- Umbrahide Vest [Rank 1]
-			r(332015),	-- Umbrahide Vest [Rank 2] (RECIPE!)
-			r(332050),	-- Umbrahide Vest [Rank 3] (RECIPE!)
-			r(338979),	-- Umbrahide Vest [Rank 4] (RECIPE!)
-		}),
-		spell(309204, {	-- Umbrahide Waistguard [Rank 1]
-			r(332020),	-- Umbrahide Waistguard [Rank 2] (RECIPE!)
-			r(332055),	-- Umbrahide Waistguard [Rank 3] (RECIPE!)
-			r(338985),	-- Umbrahide Waistguard [Rank 4] (RECIPE!)
+		n(DISCOVERY, {
+			spell(309213, {	-- Boneshatter Armguards [Rank 1]
+				r(332029),	-- Boneshatter Armguards [Rank 2] (RECIPE!)
+				r(332064),	-- Boneshatter Armguards [Rank 3] (RECIPE!)
+				r(338994),	-- Boneshatter Armguards [Rank 4] (RECIPE!)
+			}),
+			spell(309208, {	-- Boneshatter Gauntlets [Rank 1]
+				r(332024),	-- Boneshatter Gauntlets [Rank 2] (RECIPE!)
+				r(332059),	-- Boneshatter Gauntlets [Rank 3] (RECIPE!)
+				r(338989),	-- Boneshatter Gauntlets [Rank 4] (RECIPE!)
+			}),
+			spell(309210, {	-- Boneshatter Greaves [Rank 1]
+				r(332026),	-- Boneshatter Greaves [Rank 2] (RECIPE!)
+				r(332061),	-- Boneshatter Greaves [Rank 3] (RECIPE!)
+				r(338991),	-- Boneshatter Greaves [Rank 4] (RECIPE!)
+			}),
+			spell(309209, {	-- Boneshatter Helm [Rank 1]
+				r(332025),	-- Boneshatter Helm [Rank 2] (RECIPE!)
+				r(332060),	-- Boneshatter Helm [Rank 3] (RECIPE!)
+				r(338990),	-- Boneshatter Helm [Rank 4] (RECIPE!)
+			}),
+			spell(309211, {	-- Boneshatter Pauldrons [Rank 1]
+				r(332027),	-- Boneshatter Pauldrons [Rank 2] (RECIPE!)
+				r(332062),	-- Boneshatter Pauldrons [Rank 3] (RECIPE!)
+				r(338992),	-- Boneshatter Pauldrons [Rank 4] (RECIPE!)
+			}),
+			spell(309206, {	-- Boneshatter Treads [Rank 1]
+				r(332022),	-- Boneshatter Treads [Rank 2] (RECIPE!)
+				r(332057),	-- Boneshatter Treads [Rank 3] (RECIPE!)
+				r(338988),	-- Boneshatter Treads [Rank 4] (RECIPE!)
+			}),
+			spell(309207, {	-- Boneshatter Vest [Rank 1]
+				r(332023),	-- Boneshatter Vest [Rank 2] (RECIPE!)
+				r(332058),	-- Boneshatter Vest [Rank 3] (RECIPE!)
+				r(338987),	-- Boneshatter Vest [Rank 4] (RECIPE!)
+			}),
+			spell(309212, {	-- Boneshatter Waistguard [Rank 1]
+				r(332028),	-- Boneshatter Waistguard [Rank 2] (RECIPE!)
+				r(332063),	-- Boneshatter Waistguard [Rank 3] (RECIPE!)
+				r(338993),	-- Boneshatter Waistguard [Rank 4] (RECIPE!)
+			}),
+			spell(309205, {	-- Umbrahide Armguards [Rank 1]
+				r(332021),	-- Umbrahide Armguards [Rank 2] (RECIPE!)
+				r(332056),	-- Umbrahide Armguards [Rank 3] (RECIPE!)
+				r(338986),	-- Umbrahide Armguards [Rank 4] (RECIPE!)
+			}),
+			spell(309200, {	-- Umbrahide Gauntlets [Rank 1]
+				r(332016),	-- Umbrahide Gauntlets [Rank 2] (RECIPE!)
+				r(332051),	-- Umbrahide Gauntlets [Rank 3] (RECIPE!)
+				r(338981),	-- Umbrahide Gauntlets [Rank 4] (RECIPE!)
+			}),
+			spell(309201, {	-- Umbrahide Helm [Rank 1]
+				r(332017),	-- Umbrahide Helm [Rank 2] (RECIPE!)
+				r(332052),	-- Umbrahide Helm [Rank 3] (RECIPE!)
+				r(338982),	-- Umbrahide Helm [Rank 4] (RECIPE!)
+			}),
+			spell(309202, {	-- Umbrahide Leggings [Rank 1]
+				r(332018),	-- Umbrahide Leggings [Rank 2] (RECIPE!)
+				r(332053),	-- Umbrahide Leggings [Rank 3] (RECIPE!)
+				r(338983),	-- Umbrahide Leggings [Rank 4] (RECIPE!)
+			}),
+			spell(309203, {	-- Umbrahide Pauldrons [Rank 1]
+				r(332019),	-- Umbrahide Pauldrons [Rank 2] (RECIPE!)
+				r(332054),	-- Umbrahide Pauldrons [Rank 3] (RECIPE!)
+				r(338984),	-- Umbrahide Pauldrons [Rank 4] (RECIPE!)
+			}),
+			spell(309198, {	-- Umbrahide Treads [Rank 1]
+				r(332014),	-- Umbrahide Treads [Rank 2] (RECIPE!)
+				r(332049),	-- Umbrahide Treads [Rank 3] (RECIPE!)
+				r(338980),	-- Umbrahide Treads [Rank 4] (RECIPE!)
+			}),
+			spell(309199, {	-- Umbrahide Vest [Rank 1]
+				r(332015),	-- Umbrahide Vest [Rank 2] (RECIPE!)
+				r(332050),	-- Umbrahide Vest [Rank 3] (RECIPE!)
+				r(338979),	-- Umbrahide Vest [Rank 4] (RECIPE!)
+			}),
+			spell(309204, {	-- Umbrahide Waistguard [Rank 1]
+				r(332020),	-- Umbrahide Waistguard [Rank 2] (RECIPE!)
+				r(332055),	-- Umbrahide Waistguard [Rank 3] (RECIPE!)
+				r(338985),	-- Umbrahide Waistguard [Rank 4] (RECIPE!)
+			}),
 		}),
 		n(ARMOR, {
 			filter(LEATHER, {
@@ -627,7 +631,7 @@ root(ROOTS.Craftables, tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bu
 			i(187784),	-- Vestige of the Eternal
 		}),
 	}),
-}))));
+})));
 root(ROOTS.NeverImplemented, {
 	n(PROFESSIONS, {
 		prof(ALCHEMY, {

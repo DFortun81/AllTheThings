@@ -842,7 +842,7 @@ i(72009, 101939);	-- Thundering Deathscale Wristguards
 ------------------
 -- TRAINER --
 i(0, 124126);	-- Brutal Leg Armor
-i(0, 124627);	-- Exotic Leather
+i(0, 124627);	-- Exotic Leather [TODO: CHECK THIS]
 i(0, 124578);	-- Misthide Belt
 i(0, 124577);	-- Misthide Boots
 i(0, 124576);	-- Misthide Bracers
@@ -1014,24 +1014,11 @@ i(0, 138593);	-- Spirit Keeper Footguards
 i(0, 138594);	-- Spirit Keeper Helm
 
 ------------------
--- PATCH 5.3.0 --
-------------------
--- DISCOVERY --
-i(0, 142966);	-- Gorge Stalker Belt
-i(0, 142957);	-- Gorge Stalker Legplates
-i(0, 142962);	-- Krasari Prowler Belt
-i(0, 142953);	-- Krasari Prowler Britches
-i(0, 142961);	-- Pennyroyal Belt
-i(0, 142952);	-- Pennyroyal Leggings
-i(0, 142965);	-- Snow Lily Belt
-i(0, 142956);	-- Snow Lily Britches
-
-------------------
 -- PATCH 5.4.0 --
 ------------------
 -- DISCOVERY --
-i(0, 143145);	-- Crafted Malevolent Gladiator's Armbands of Prowess
 i(0, 143146);	-- Crafted Malevolent Gladiator's Armbands of Meditation
+i(0, 143145);	-- Crafted Malevolent Gladiator's Armbands of Prowess
 i(0, 143112);	-- Crafted Malevolent Gladiator's Armwraps of Accuracy
 i(0, 143125);	-- Crafted Malevolent Gladiator's Armwraps of Alacrity
 i(0, 143102);	-- Crafted Malevolent Gladiator's Belt of Cruelty
@@ -1104,17 +1091,24 @@ i(0, 143106);	-- Crafted Malevolent Gladiator's Wyrmhide Helm
 i(0, 143107);	-- Crafted Malevolent Gladiator's Wyrmhide Legguards
 i(0, 143108);	-- Crafted Malevolent Gladiator's Wyrmhide Robes
 i(0, 143109);	-- Crafted Malevolent Gladiator's Wyrmhide Spaulders
+i(0, 142966);	-- Gorge Stalker Belt
+i(0, 142957);	-- Gorge Stalker Legplates
+i(0, 142962);	-- Krasari Prowler Belt
+i(0, 142953);	-- Krasari Prowler Britches
+i(0, 142961);	-- Pennyroyal Belt
+i(0, 142952);	-- Pennyroyal Leggings
+i(0, 142965);	-- Snow Lily Belt
+i(0, 142956);	-- Snow Lily Britches
 -- ITEM --
 i(0, 146923);	-- Accelerated Hardened Magnificent Hide
+i(0, 142976);	-- Hardened Magnificent Hide
 i(102513, 146613);	-- Drums of Rage
-i(100864, 142976);	-- Hardened Magnificent Hide
 
 ------------------
 -- PATCH 6.0.2 --
 ------------------
--- TRAINER --
+-- LATER --
 i(0, 163216);	-- Blackened Dragonscale
-i(0, 171391);	-- Burnished Leather
 i(0, 163231);	-- Cobra Scales
 i(0, 163226);	-- Crystal Infused Leather
 i(0, 163218);	-- Deepsea Scale
@@ -1127,6 +1121,15 @@ i(0, 163230);	-- Nether Dragonscales
 i(0, 163220);	-- Prismatic Scale
 i(0, 163225);	-- Thick Clefthoof Leather
 i(0, 163232);	-- Wind Scales
+-- TRAINER --
+i(0, 171391);	-- Burnished Leather
+i(0, 171260);	-- Journeying Helm
+i(0, 171261);	-- Journeying Robes
+i(0, 171262);	-- Journeying Slacks
+i(0, 176089);	-- Secrets of Draenor Leatherworking
+i(0, 171263);	-- Traveling Helm
+i(0, 171265);	-- Traveling Leggings
+i(0, 171264);	-- Traveling Tunic
 -- ITEM --
 i(116328, 171269);	-- Brilliant Burnished Cloak
 i(116345, 171286);	-- Burnished Essence
@@ -1134,14 +1137,10 @@ i(116349, 171290);	-- Burnished Inscription Bag
 i(116347, 171288);	-- Burnished Leather Bag
 i(116348, 171289);	-- Burnished Mining Bag
 i(120258, 178208);	-- Drums of Fury
-i(116319, 171260);	-- Journeying Helm
-i(116320, 171261);	-- Journeying Robes
-i(116321, 171262);	-- Journeying Slacks
 i(116325, 171266);	-- Leather Refurbishing Kit
 i(116327, 171268);	-- Nimble Burnished Cloak
 i(116326, 171267);	-- Powerful Burnished Cloak
 i(116350, 171291);	-- Riding Harness
-i(120130, 176089);	-- Secrets of Draenor Leatherworking
 i(116335, 171276);	-- Supple Boots
 i(116334, 171275);	-- Supple Bracers
 i(116332, 171273);	-- Supple Gloves
@@ -1150,9 +1149,6 @@ i(116331, 171272);	-- Supple Leggings
 i(116329, 171270);	-- Supple Shoulderguards
 i(116333, 171274);	-- Supple Vest
 i(116336, 171277);	-- Supple Waistguard
-i(116322, 171263);	-- Traveling Helm
-i(116324, 171265);	-- Traveling Leggings
-i(116323, 171264);	-- Traveling Tunic
 i(116344, 171285);	-- Wayfaring Belt
 i(116343, 171284);	-- Wayfaring Boots
 i(116342, 171283);	-- Wayfaring Bracers
@@ -1187,9 +1183,16 @@ i(0, 176405);	-- Savage Leather Tent
 i(0, 176420);	-- Simple Tent
 i(0, 176411);	-- Sturdy Tent
 i(0, 176425);	-- Voodoo Doctor's Hovel
--- UNSURE --
+-- NYI --
 i(0, 171713);	-- Burnished Leather
 i(0, 173416);	-- Small Football
+i(116319, 0);	-- Journeying Helm
+i(116320, 0);	-- Journeying Robes
+i(116321, 0);	-- Journeying Slacks
+i(120130, 0);	-- Secrets of Draenor Leatherworking
+i(116322, 0);	-- Traveling Helm
+i(116324, 0);	-- Traveling Leggings
+i(116323, 0);	-- Traveling Tunic
 
 ------------------
 -- PATCH 6.1.0 --

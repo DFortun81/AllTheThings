@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON,MYTHIC_DUNGEON};
 
 root(ROOTS.Instances, tier(BFA_TIER, {
 	inst(1022, {	-- The Underrot
@@ -24,6 +25,13 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 				q(52238, {	-- The Underrot: Mysterious Spores
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
+				}),
+			}),
+			d(NormalPlus, {	-- Any Difficulty
+				n(ZONE_DROPS, {
+					i(168142, {	-- Coagulated Miasma
+						["description"] = "Drops from Trolls before the first Boss.\n2-3 Runs is enough for 50 Miasma.",
+					}),
 				}),
 			}),
 			d(NORMAL_DUNGEON, {

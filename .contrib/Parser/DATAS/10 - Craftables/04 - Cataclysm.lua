@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { "added 4.0.3" } }, {
+root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 	prof(ALCHEMY, {
 		filter(MOUNTS, {
 			i(65891),	-- Sandstone Drake (MOUNT!)
@@ -27,37 +27,37 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 	}),
 	prof(BLACKSMITHING, {
 		n(ARMOR, {
-			i(55073, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Bloodied Pyrium Belt
-			i(55074, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Bloodied Pyrium Boots
-			i(55071, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Bloodied Pyrium Bracers
-			i(55078, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Bloodied Pyrium Breastplate
-			i(55072, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Bloodied Pyrium Gauntlets
-			i(55077, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Bloodied Pyrium Helm
-			i(55076, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Bloodied Pyrium Legguards
-			i(55075, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Bloodied Pyrium Shoulders
-			i(70018, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Ornate Pyrium Belt
-			i(70013, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Ornate Pyrium Boots
-			i(70019, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Ornate Pyrium Bracers
-			i(70012, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Ornate Pyrium Breastplate
-			i(70014, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Ornate Pyrium Gauntlets
-			i(70015, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Ornate Pyrium Helm
-			i(70016, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Ornate Pyrium Legguards
-			i(70017, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Ornate Pyrium Shoulders
-			i(70010, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Pyrium Belt
-			i(70005, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Pyrium Boots
-			i(70011, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Pyrium Bracers
-			i(70004, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Pyrium Breastplate
-			i(70006, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Pyrium Gauntlets
-			i(70007, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Pyrium Helm
-			i(70008, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Pyrium Legguards
-			i(70009, {["timeline"]={"added 4.2.0","removed 4.3.0"}}),	-- Bloodthirsty Pyrium Shoulders
-			i(71992, {["timeline"]={"added 4.3.0"}}),	-- Bracers of Destructive Strength
+			i(55073, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Pyrium Belt
+			i(55074, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Pyrium Boots
+			i(55071, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Pyrium Bracers
+			i(55078, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Pyrium Breastplate
+			i(55072, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Pyrium Gauntlets
+			i(55077, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Pyrium Helm
+			i(55076, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Pyrium Legguards
+			i(55075, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Pyrium Shoulders
+			i(70018, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Ornate Pyrium Belt
+			i(70013, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Ornate Pyrium Boots
+			i(70019, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Ornate Pyrium Bracers
+			i(70012, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Ornate Pyrium Breastplate
+			i(70014, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Ornate Pyrium Gauntlets
+			i(70015, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Ornate Pyrium Helm
+			i(70016, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Ornate Pyrium Legguards
+			i(70017, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Ornate Pyrium Shoulders
+			i(70010, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Pyrium Belt
+			i(70005, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Pyrium Boots
+			i(70011, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Pyrium Bracers
+			i(70004, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Pyrium Breastplate
+			i(70006, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Pyrium Gauntlets
+			i(70007, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Pyrium Helm
+			i(70008, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Pyrium Legguards
+			i(70009, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Pyrium Shoulders
+			i(71992, {["timeline"] = {ADDED_4_3_0}}),	-- Bracers of Destructive Strength
 			i(55060),	-- Elementium Deathplate
 			i(55061),	-- Elementium Girdle of Pain
-			i(69948, {["timeline"]={"added 4.2.0"}}),	-- Emberforged Elementium Boots
-			i(69937, {["timeline"]={"added 4.2.0"}}),	-- Eternal Elementium Handguards
-			i(69936, {["timeline"]={"added 4.2.0"}}),	-- Fists of Fury
-			i(71984, {["timeline"]={"added 4.3.0"}}),	-- Foundations of Courage
+			i(69948, {["timeline"] = {ADDED_4_2_0}}),	-- Emberforged Elementium Boots
+			i(69937, {["timeline"] = {ADDED_4_2_0}}),	-- Eternal Elementium Handguards
+			i(69936, {["timeline"] = {ADDED_4_2_0}}),	-- Fists of Fury
+			i(71984, {["timeline"] = {ADDED_4_3_0}}),	-- Foundations of Courage
 			i(55059),	-- Hardened Elementium Girdle
 			i(55058),	-- Hardened Elementium Hauberk
 			i(54853),	-- Hardened Obsidium Belt
@@ -68,19 +68,19 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 			i(55023),	-- Hardened Obsidium Helm
 			i(55022),	-- Hardened Obsidium Legguards
 			i(54876),	-- Hardened Obsidium Shoulders
-			i(69938, {["timeline"]={"added 4.2.0"}}),	-- Holy Flame Gauntlets
+			i(69938, {["timeline"] = {ADDED_4_2_0}}),	-- Holy Flame Gauntlets
 			i(55063),	-- Light Elementium Belt
 			i(55062),	-- Light Elementium Chestguard
-			i(69947, {["timeline"]={"added 4.2.0"}}),	-- Mirrored Boots
-			i(55081, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Ornate Pyrium Belt
-			i(55082, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Ornate Pyrium Boots
-			i(55079, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Ornate Pyrium Bracers
-			i(55086, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Ornate Pyrium Breastplate
-			i(55080, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Ornate Pyrium Gauntlets
-			i(55085, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Ornate Pyrium Helm
-			i(55084, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Ornate Pyrium Legguards
-			i(55083, {["timeline"]={"added 4.0.3","removed 4.2.0"}}),	-- Ornate Pyrium Shoulders
-			i(71982, {["timeline"]={"added 4.3.0"}}),	-- Pyrium Legplates of Purified Evil
+			i(69947, {["timeline"] = {ADDED_4_2_0}}),	-- Mirrored Boots
+			i(55081, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Ornate Pyrium Belt
+			i(55082, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Ornate Pyrium Boots
+			i(55079, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Ornate Pyrium Bracers
+			i(55086, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Ornate Pyrium Breastplate
+			i(55080, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Ornate Pyrium Gauntlets
+			i(55085, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Ornate Pyrium Helm
+			i(55084, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Ornate Pyrium Legguards
+			i(55083, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Ornate Pyrium Shoulders
+			i(71982, {["timeline"] = {ADDED_4_3_0}}),	-- Pyrium Legplates of Purified Evil
 			i(55027),	-- Redsteel Belt
 			i(55028),	-- Redsteel Boots
 			i(55025),	-- Redsteel Bracers
@@ -89,7 +89,7 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 			i(55031),	-- Redsteel Helm
 			i(55030),	-- Redsteel Legguards
 			i(55029),	-- Redsteel Shoulders
-			i(71991, {["timeline"]={"added 4.3.0"}}),	-- Soul Redeemer Bracers
+			i(71991, {["timeline"] = {ADDED_4_3_0}}),	-- Soul Redeemer Bracers
 			i(55035),	-- Stormforged Belt
 			i(55036),	-- Stormforged Boots
 			i(55033),	-- Stormforged Bracers
@@ -98,37 +98,37 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 			i(55039),	-- Stormforged Helm
 			i(55038),	-- Stormforged Legguards
 			i(55037),	-- Stormforged Shoulders
-			i(71993, {["timeline"]={"added 4.3.0"}}),	-- Titanguard Wristplates
-			i(71983, {["timeline"]={"added 4.3.0"}}),	-- Unstoppable Destroyer's Legplates
-			i(75118, {["timeline"]={"added 4.3.0"}}),	-- Vicious Ornate Pyrium Belt
-			i(75132, {["timeline"]={"added 4.3.0"}}),	-- Vicious Ornate Pyrium Boots
-			i(75125, {["timeline"]={"added 4.3.0"}}),	-- Vicious Ornate Pyrium Bracers
-			i(75128, {["timeline"]={"added 4.3.0"}}),	-- Vicious Ornate Pyrium Breastplate
-			i(75121, {["timeline"]={"added 4.3.0"}}),	-- Vicious Ornate Pyrium Gauntlets
-			i(75129, {["timeline"]={"added 4.3.0"}}),	-- Vicious Ornate Pyrium Helm
-			i(75133, {["timeline"]={"added 4.3.0"}}),	-- Vicious Ornate Pyrium Legguards
-			i(75134, {["timeline"]={"added 4.3.0"}}),	-- Vicious Ornate Pyrium Shoulders
-			i(75123, {["timeline"]={"added 4.3.0"}}),	-- Vicious Pyrium Belt
-			i(75120, {["timeline"]={"added 4.3.0"}}),	-- Vicious Pyrium Boots
-			i(75124, {["timeline"]={"added 4.3.0"}}),	-- Vicious Pyrium Bracers
-			i(75135, {["timeline"]={"added 4.3.0"}}),	-- Vicious Pyrium Breastplate
-			i(75122, {["timeline"]={"added 4.3.0"}}),	-- Vicious Pyrium Gauntlets
-			i(75126, {["timeline"]={"added 4.3.0"}}),	-- Vicious Pyrium Helm
-			i(75136, {["timeline"]={"added 4.3.0"}}),	-- Vicious Pyrium Legguards
-			i(75119, {["timeline"]={"added 4.3.0"}}),	-- Vicious Pyrium Shoulders
-			i(69946, {["timeline"]={"added 4.2.0"}}),	-- Warboots of Mighty Lords
+			i(71993, {["timeline"] = {ADDED_4_3_0}}),	-- Titanguard Wristplates
+			i(71983, {["timeline"] = {ADDED_4_3_0}}),	-- Unstoppable Destroyer's Legplates
+			i(75118, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Ornate Pyrium Belt
+			i(75132, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Ornate Pyrium Boots
+			i(75125, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Ornate Pyrium Bracers
+			i(75128, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Ornate Pyrium Breastplate
+			i(75121, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Ornate Pyrium Gauntlets
+			i(75129, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Ornate Pyrium Helm
+			i(75133, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Ornate Pyrium Legguards
+			i(75134, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Ornate Pyrium Shoulders
+			i(75123, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Pyrium Belt
+			i(75120, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Pyrium Boots
+			i(75124, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Pyrium Bracers
+			i(75135, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Pyrium Breastplate
+			i(75122, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Pyrium Gauntlets
+			i(75126, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Pyrium Helm
+			i(75136, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Pyrium Legguards
+			i(75119, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Pyrium Shoulders
+			i(69946, {["timeline"] = {ADDED_4_2_0}}),	-- Warboots of Mighty Lords
 		}),
 		filter(MISC, {
 			i(55054),	-- Ebonsteel Belt Buckle
 			i(65365),	-- Folded Obsidium
-			i(65358, {["timeline"]={"added 4.0.3","removed 5.0.4"}}),	-- Elementium Rod
+			i(65358, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_5_0_4}}),	-- Elementium Rod
 			i(55055),	-- Elementium Shield Spike
 			i(55053),	-- Obsidium Skeleton Key
 			i(55056),	-- Pyrium Shield Spike
 			i(55057),	-- Pyrium Weapon Chain
 		}),
 		n(WEAPONS, {
-			i(70155, {["timeline"]={"added 4.2.0"}}),	-- Brainsplinter
+			i(70155, {["timeline"] = {ADDED_4_2_0}}),	-- Brainsplinter
 			i(55044),	-- Cold-Forged Shank
 			i(55043),	-- Decapitator's Razor
 			i(55067),	-- Elementium Bonesplitter
@@ -139,20 +139,20 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 			i(55068),	-- Elementium Shank
 			i(55064),	-- Elementium Spellblade
 			i(55070),	-- Elementium Stormshield
-			i(70158, {["timeline"]={"added 4.2.0"}}),	-- Elementium-Edged Scalper
+			i(70158, {["timeline"] = {ADDED_4_2_0}}),	-- Elementium-Edged Scalper
 			i(55045),	-- Fire-Etched Dagger
 			i(67605),	-- Forged Elementium Mindcrusher
 			i(55041),	-- Hardened Obsidium Shield
 			i(55046),	-- Lifeforce Hammer
-			i(70157, {["timeline"]={"added 4.2.0"}}),	-- Lightforged Elementium Hammer
-			i(70164, {["timeline"]={"added 4.2.0"}}),	-- Masterwork Elementium Deathblade
-			i(70156, {["timeline"]={"added 4.2.0"}}),	-- Masterwork Elementium Spellblade
+			i(70157, {["timeline"] = {ADDED_4_2_0}}),	-- Lightforged Elementium Hammer
+			i(70164, {["timeline"] = {ADDED_4_2_0}}),	-- Masterwork Elementium Deathblade
+			i(70156, {["timeline"] = {ADDED_4_2_0}}),	-- Masterwork Elementium Spellblade
 			i(55246),	-- Obsidium Bladespear
 			i(55052),	-- Obsidium Executioner
-			i(70162, {["timeline"]={"added 4.2.0"}}),	-- Pyrium Spellward
+			i(70162, {["timeline"] = {ADDED_4_2_0}}),	-- Pyrium Spellward
 			i(55042),	-- Stormforged Shield
-			i(70163, {["timeline"]={"added 4.2.0"}}),	-- Unbreakable Guardian
-			i(70165, {["timeline"]={"added 4.2.0"}}),	-- Witch-Hunter's Harvester
+			i(70163, {["timeline"] = {ADDED_4_2_0}}),	-- Unbreakable Guardian
+			i(70165, {["timeline"] = {ADDED_4_2_0}}),	-- Witch-Hunter's Harvester
 		}),
 	}),
 	prof(ENCHANTING, {
@@ -164,7 +164,7 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 			i(52722),	-- Maelstrom Crystal
 			i(52720),	-- Small Heavenly Shard
 		}),
-		cat(668, {	-- Armor Enchantments
+		n(ARMOR_ENCHANTMENTS, {
 			i(52781),	-- Enchant Boots - Assassin's Step
 			i(52743),	-- Enchant Boots - Earthen Vitality
 			i(52750),	-- Enchant Boots - Haste
@@ -202,7 +202,11 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 			i(52687),	-- Enchant Gloves - Mastery
 			i(52783),	-- Enchant Gloves - Mighty Strength
 		}),
-		applyclassicphase(LEGION_PHASE_ONE, filter(ILLUSIONS, sharedDataSelf({ ["timeline"] = { "added 7.0.3"} }, {
+		filter(BATTLE_PETS, {
+			i(67274),	-- Enchanted Lantern (PET!)
+			i(67275),	-- Magic Lamp (PET!)
+		}),
+		filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
 			i(138791, {	-- Tome of Illusions: Cataclysm
 				ill(4098),	-- Windwalk
 				ill(4084),	-- Heartsong
@@ -213,27 +217,21 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 				ill(4099),	-- Landslide
 				ill(4074),	-- Elemental Slayer
 			}),
-		}))),
-		filter(BATTLE_PETS, {
-			i(67274),	-- Enchanted Lantern (PET!)
-			i(67275),	-- Magic Lamp (PET!)
-		}),
-		cat(697, sharedDataSelf({ ["timeline"] = { "added 4.0.3", "removed 5.0.4" } }, {	-- Rods
-			i(52723),	-- Runed Elementium Rod
 		})),
-		cat(670, {	-- Shield and Off-Hand Enchantments
+		filter(MISC, {
+			i(52723, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_5_0_4}}),	-- Runed Elementium Rod
+		}),
+		n(WEAPON_ENCHANTMENTS, {
+			i(52768),	-- Enchant Off-Hand - Superior Intellect
 			i(52762),	-- Enchant Shield - Mastery
 			i(52754),	-- Enchant Shield - Protection
-			i(52768),	-- Enchant Off-Hand - Superior Intellect
-		}),
-		cat(669, {	-- Weapon Enchantments
+			i(68134),	-- Enchant 2H Weapon - Mighty Agility
 			i(52748),	-- Enchant Weapon - Avalanche
 			i(52755),	-- Enchant Weapon - Elemental Slayer
 			i(52761),	-- Enchant Weapon - Heartsong
 			i(52760),	-- Enchant Weapon - Hurricane
 			i(52776),	-- Enchant Weapon - Landslide
 			i(52747),	-- Enchant Weapon - Mending
-			i(68134),	-- Enchant 2H Weapon - Mighty Agility
 			i(52774),	-- Enchant Weapon - Power Torrent
 			i(52775),	-- Enchant Weapon - Windwalk
 		}),

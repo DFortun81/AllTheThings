@@ -447,6 +447,12 @@ end
 settings.GetFilter = function(self, filterID)
 	return AllTheThingsSettingsPerCharacter.Filters[filterID]
 end
+settings.GetRawFilters = function(self)
+	return AllTheThingsSettingsPerCharacter.Filters;
+end
+settings.GetRawSettings = function(self, name)
+	return RawSettings[name];
+end
 settings.GetModeString = function(self)
 	local mode = L["MODE"]
 	if settings:Get("Thing:Transmog") or settings:Get("DebugMode") then
@@ -2175,6 +2181,7 @@ local checkboxShowAllUnobtainable = child:CreateCheckBox(L["UNOBTAINABLE_ALL"],
 		for k,v in pairs(unobtainables) do
 			settings:SetValue("Unobtainable", k, checked)
 		end
+		self:OnRefresh();
 		settings:UpdateMode(1)
 	end
 )
@@ -2206,6 +2213,7 @@ function(self)
 			settings:SetValue("Unobtainable", k, checked)
 		end
 	end
+	checkboxShowAllUnobtainable:OnRefresh();
 	settings:UpdateMode(1)
 end)
 checkboxShowAllNoChance:AlignBelow(checkboxShowAllUnobtainable, 1)
@@ -2227,6 +2235,7 @@ for k,v in pairs(unobtainables) do
 		end,
 		function(self)
 			settings:SetValue("Unobtainable", k, self:GetChecked())
+			checkboxShowAllUnobtainable:OnRefresh();
 			settings:UpdateMode(1)
 		end)
 		filter:SetATTTooltip(v[2])
@@ -2266,6 +2275,7 @@ function(self)
 			settings:SetValue("Unobtainable", k, checked)
 		end
 	end
+	checkboxShowAllUnobtainable:OnRefresh();
 	settings:UpdateMode(1)
 end)
 checkboxShowAllHighChance:AlignBelow(last, -1)
@@ -2287,6 +2297,7 @@ for k,v in pairs(unobtainables) do
 		end,
 		function(self)
 			settings:SetValue("Unobtainable", k, self:GetChecked())
+			checkboxShowAllUnobtainable:OnRefresh();
 			settings:UpdateMode(1)
 		end)
 		filter:SetATTTooltip(v[2])

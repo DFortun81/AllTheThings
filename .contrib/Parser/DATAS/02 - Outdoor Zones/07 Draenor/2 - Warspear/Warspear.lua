@@ -4,7 +4,6 @@
 root(ROOTS.Zones, {
 	m(DRAENOR, {
 		m(WARSPEAR, {
-			["achievementID"] = 9215,	-- Hero of Warspear
 			["isRaid"] = true,
 			["races"] = HORDE_ONLY,
 			["lvl"] = 100,
@@ -2782,103 +2781,9 @@ root(ROOTS.Zones, {
 								}),
 							},
 						}),
-						n(87542, {	-- Garm Gladestride <Leatherworking Patterns>
+						n(87549, {	-- Garm Gladestride <Leatherworking Patterns>
 							["coord"] = { 50.4, 27.4, WARSPEAR },
-							["g"] = {
-								i(116328, {	-- Pattern: Brilliant Burnished Cloak (RECIPE!)
-									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
-								}),
-								i(116345, {	-- Pattern: Burnished Essence (RECIPE!)
-									["collectible"] = false,
-									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
-									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
-									["timeline"] = { REMOVED_10_0_5 },
-								}),
-								i(116349, {	-- Pattern: Burnished Inscription Bag (RECIPE!)
-									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
-								}),
-								i(116347, {	-- Pattern: Burnished Leather Bag (RECIPE!)
-									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
-								}),
-								i(116348, {	-- Pattern: Burnished Mining Bag (RECIPE!)
-									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
-								}),
-								i(120258, {	-- Recipe: Drums of Fury (RECIPE!)
-									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
-								}),
-								i(202232, {	-- Pattern: Impressive Burnished Essence
-									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
-									["timeline"] = { ADDED_10_0_5 },
-								}),
-								i(116325, {	-- Pattern: Leather Refurbishing Kit (RECIPE!)
-									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
-								}),
-								i(116327, {	-- Pattern: Nimble Burnished Cloak (RECIPE!)
-									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
-								}),
-								i(116326, {	-- Pattern: Powerful Burnished Cloak (RECIPE!)
-									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
-								}),
-								i(202233, {	-- Recipe: Remarkable Burnished Essence
-									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
-									["timeline"] = { ADDED_10_0_5 },
-								}),
-								i(116350, {	-- Pattern: Riding Harness (RECIPE!)
-									["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
-								}),
-								i(116335, {	-- Pattern: Supple Boots (RECIPE!)
-									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
-								}),
-								i(116334, {	-- Pattern: Supple Bracers (RECIPE!)
-									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
-								}),
-								i(116332, {	-- Pattern: Supple Gloves (RECIPE!)
-									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
-								}),
-								i(116330, {	-- Pattern: Supple Helm (RECIPE!)
-									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
-								}),
-								i(116331, {	-- Pattern: Supple Leggings (RECIPE!)
-									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
-								}),
-								i(116329, {	-- Pattern: Supple Shoulderguards (RECIPE!)
-									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
-								}),
-								i(116333, {	-- Pattern: Supple Vest (RECIPE!)
-									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
-								}),
-								i(116336, {	-- Pattern: Supple Waistguard (RECIPE!)
-									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
-								}),
-								i(116344, {	-- Pattern: Wayfaring Belt (RECIPE!)
-									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
-								}),
-								i(116343, {	-- Pattern: Wayfaring Boots (RECIPE!)
-									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
-								}),
-								i(116342, {	-- Pattern: Wayfaring Bracers (RECIPE!)
-									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
-								}),
-								i(116340, {	-- Pattern: Wayfaring Gloves (RECIPE!)
-									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
-								}),
-								i(116338, {	-- Pattern: Wayfaring Helm (RECIPE!)
-									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
-								}),
-								i(116339, {	-- Pattern: Wayfaring Leggings (RECIPE!)
-									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
-								}),
-								i(116337, {	-- Pattern: Wayfaring Shoulderguards (RECIPE!)
-									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
-								}),
-								i(116341, {	-- Pattern: Wayfaring Tunic (RECIPE!)
-									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
-								}),
-								i(116376, {	-- Small Pouch of Coins
-									["description"] = "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)",
-									["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
-								}),
-							},
+							["g"] = appendGroups(COMMON_DRAENOR_LEATHERWORKING_RECIPES, {DRAENOR_LEATHERWORKING}),
 						}),
 						n(86045, {	-- Ged'kah <Enchanting Recipes>
 							["coord"] = { 78.0, 53.7, WARSPEAR },

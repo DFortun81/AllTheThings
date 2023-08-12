@@ -19,7 +19,7 @@ app.Modules.Upgrade = api;
 -- Module locals
 local CreateItem
 
-api.OnReady = function()
+api.OnLoad = function()
 	CreateItem = app.CreateItem;
 end
 

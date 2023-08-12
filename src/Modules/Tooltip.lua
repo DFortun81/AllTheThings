@@ -26,7 +26,7 @@ end
 
 -- Build the Object Name Cache
 local objectNamesToIDs = {};
-local function OnReady_CacheObjectNames()
+local function OnLoad_CacheObjectNames()
 	for objectID,name in pairs(app.ObjectNames) do
 		local o = objectNamesToIDs[name];
 		if not o then
@@ -628,12 +628,14 @@ end
 local api = {};
 app.Modules.Tooltip = api;
 api.AttachTooltipSearchResults = AttachTooltipSearchResults;
-api.OnReady = function()
+api.OnLoad = function()
 	SearchForField = app.SearchForField;
 	GetCachedSearchResults = app.GetCachedSearchResults;
 	SearchForLink = app.SearchForLink;
 	L = app.L;
 	GetCurrentMapID = app.GetCurrentMapID;
+	OnLoad_CacheObjectNames();
+end
+api.OnReady = function()
 	OnReadyHooks();
-	OnReady_CacheObjectNames();
 end

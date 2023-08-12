@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   O B J E C T   D A T A B A S E   M O D U L E   --
 -----------------------------------------------------
-root("ObjectDB", {
+local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[31] = {
 		readable = "Old Lion Statue",
 		icon = "Interface/Icons/INV_Mount_AllianceLionG",
@@ -18,9 +18,40 @@ root("ObjectDB", {
 			cn = "陈旧的石狮子",
 		},
 	},
+	[32] = {
+		readable = "Sunken Chest",
+		model = 196976,
+		text = {
+			en = "Sunken Chest",
+			es = "Cofre sumergido",
+			de = "Versunkene Truhe",
+			fr = "Coffre englouti",
+			it = "Sunken Chest",
+			pt = "Baú Afundado",
+			ru = "Затонувший сундук",
+			ko = "가라앉은 상자",
+			cn = "沉没的箱子",
+		},
+	},
+	[33] = {
+		readable = "Locked Chest",
+		model = 196979,
+		text = {
+			en = "Locked Chest",
+			es = "Cofre cerrado",
+			de = "Verschlossene Truhe",
+			fr = "Coffre verrouillé",
+			it = "Locked Chest",
+			pt = "Baú Trancado",
+			ru = "Запертый сундук",
+			ko = "잠긴 궤짝",
+			cn = "[Locked Chest]",
+		},
+	},
 	[34] = {
 		readable = "Old Jug",
 		icon = "Interface/Icons/INV_Drink_11",
+		model = 189821,
 		text = {
 			en = "Old Jug",
 			es = "Vieja jarra",
@@ -35,6 +66,7 @@ root("ObjectDB", {
 	},
 	[35] = {
 		readable = "Captain's Footlocker",
+		model = 198238,
 		text = {
 			en = "Captain's Footlocker",
 			es = "Baúl del Capitán",
@@ -49,6 +81,7 @@ root("ObjectDB", {
 	},
 	[36] = {
 		readable = "Broken Barrel",
+		model = 199567,
 		text = {
 			en = "Broken Barrel",
 			es = "Barrica rota",
@@ -61,8 +94,39 @@ root("ObjectDB", {
 			cn = "破酒桶",
 		},
 	},
+	[37] = {
+		readable = "Eliza's Tombstone",
+		model = 189534,
+		text = {
+			en = "Eliza's Tombstone",
+			es = "Lápida de Eliza",
+			de = "Elizas Grabstein",
+			fr = "Tombe d'Eliza",
+			it = "Eliza's Tombstone",
+			pt = "Lápide de Elisa",
+			ru = "Надгробный камень Элизы",
+			ko = "엘리자의 묘비",
+			cn = "伊莉莎的墓碑",
+		},
+	},
+	[41] = {
+		readable = "Ambassador's Locker",
+		model = 196976,
+		text = {
+			en = "Ambassador's Locker",
+			es = "Armario del Embajador",
+			de = "Spind des Botschafters",
+			fr = "Placard de l'ambassadeur",
+			it = "Ambassador's Locker",
+			pt = "Armário do Embaixador",
+			ru = "Сундук посла",
+			ko = "대사의 상자",
+			cn = "大使的箱子",
+		},
+	},
 	[47] = {
 		readable = "Wanted: Lieutenant Fangore",
+		model = 199421,
 		text = {
 			en = "Wanted: Lieutenant Fangore",
 			es = "¡Se busca!",
@@ -73,6 +137,36 @@ root("ObjectDB", {
 			ru = "Розыск!",
 			ko = "현상 수배!",
 			cn = "通缉！",
+		},
+	},
+	[52] = {
+		readable = "Fall of Gurubashi",
+		model = 200640,
+		text = {
+			en = "Fall of Gurubashi",
+			es = "La Caída de Gurubashi",
+			de = "Gurubashis Untergang",
+			fr = "Chute des Gurubashi",
+			it = "Fall of Gurubashi",
+			pt = "A Queda de Gurubashi",
+			ru = "Водопад Гурубаши",
+			ko = "구루바시의 몰락",
+			cn = "古拉巴什的毁灭",
+		},
+	},
+	[54] = {
+		readable = "The Emperor's Tomb",
+		model = 200640,
+		text = {
+			en = "The Emperor's Tomb",
+			es = "La Tumba del Emperador",
+			de = "Das Grabmal des Imperators",
+			fr = "La tombe de l'empereur",
+			it = "The Emperor's Tomb",
+			pt = "A Tumba do Imperador",
+			ru = "Гробница императора",
+			ko = "제국의 무덤",
+			cn = "帝王之墓",
 		},
 	},
 	[55] = {
@@ -107,8 +201,39 @@ root("ObjectDB", {
 			cn = "罗尔夫的尸体",
 		},
 	},
+	[57] = {
+		readable = "Moon Over the Vale",
+		model = 200640,
+		text = {
+			en = "Moon Over the Vale",
+			es = "Luna sobre el Valle",
+			de = "Mond über dem Tal",
+			fr = "Lune surplombant la Vallée",
+			it = "Moon Over the Vale",
+			pt = "A lua cobre o vale",
+			ru = "Луна над долиной",
+			ko = "골짜기의 달",
+			cn = "月亮照耀着山谷",
+		},
+	},
+	[58] = {
+		readable = "Gri'lek the Wanderer",
+		model = 200640,
+		text = {
+			en = "Gri'lek the Wanderer",
+			es = "Gri'lek el Trotamundos",
+			de = "Gri’lek der Wanderer",
+			fr = "Gri'lek le Vagabond",
+			it = "Gri'lek the Wanderer",
+			pt = "Gri'lek, o Errante",
+			ru = "Гри'лек Странник",
+			ko = "방랑자 그리렉",
+			cn = "游荡者格里雷克",
+		},
+	},
 	[59] = {
 		readable = "Mound of loose dirt",
+		model = 189528,
 		text = {
 			en = "Mound of loose dirt",
 			es = "Montón de tierra",
@@ -123,6 +248,7 @@ root("ObjectDB", {
 	},
 	[60] = {
 		readable = "Wanted: Gath'Ilzogg",
+		model = 199426,
 		text = {
 			en = "Wanted: Gath'Ilzogg",
 			es = "Se busca: Gath'Ilzogg",
@@ -153,8 +279,137 @@ root("ObjectDB", {
 	},
 	[68] = {
 		readable = "Wanted Poster",
+		model = 199421,
 		text = {
 			en = "Wanted Poster",
+			es = "Cartel de Se busca",
+			de = "Steckbrief",
+			fr = "Avis de recherche",
+			it = "Manifesto dei Ricercati",
+			pt = "Pôster de Procura-se",
+			ru = "Плакат \"Разыскивается\"",
+			ko = "현상 수배 전단",
+			cn = "通缉告示",
+		},
+	},
+	[73] = {
+		readable = "Treasure Chest",
+		model = 196976,
+		text = {
+			en = "Treasure Chest",
+			es = "[Treasure Chest]",
+			de = "[Treasure Chest]",
+			fr = "[Treasure Chest]",
+			it = "[Treasure Chest]",
+			pt = "[Treasure Chest]",
+			ru = "[Treasure Chest]",
+			ko = "[Treasure Chest]",
+			cn = "[Treasure Chest]",
+		},
+	},
+	[74] = {
+		readable = "Treasure Chest",
+		model = 196979,
+		text = {
+			en = "Treasure Chest",
+			es = "[Treasure Chest]",
+			de = "[Treasure Chest]",
+			fr = "[Treasure Chest]",
+			it = "[Treasure Chest]",
+			pt = "[Treasure Chest]",
+			ru = "[Treasure Chest]",
+			ko = "[Treasure Chest]",
+			cn = "[Treasure Chest]",
+		},
+	},
+	[75] = {
+		readable = "Wooden Chest",
+		model = 196979,
+		text = {
+			en = "Wooden Chest",
+			es = "[Wooden Chest]",
+			de = "[Wooden Chest]",
+			fr = "[Wooden Chest]",
+			it = "[Wooden Chest]",
+			pt = "[Wooden Chest]",
+			ru = "[Wooden Chest]",
+			ko = "[Wooden Chest]",
+			cn = "[Wooden Chest]",
+		},
+	},
+	[76] = {
+		readable = "An Empty Jar",
+		model = 199180,
+		text = {
+			en = "An Empty Jar",
+			es = "Una jarra vacía",
+			de = "Ein leerer Krug",
+			fr = "Une jarre vide",
+			it = "An Empty Jar",
+			pt = "Jarra Vazia",
+			ru = "Пустой кувшин",
+			ko = "빈 단지",
+			cn = "空瓶子",
+		},
+	},
+	[119] = {
+		readable = "Abercrombie's Crate",
+		model = 190543,
+		text = {
+			en = "Abercrombie's Crate",
+			es = "Cajón de Abercrombie",
+			de = "Calvinius' Kiste",
+			fr = "Caisse d'Abercrombie",
+			it = "Abercrombie's Crate",
+			pt = "Caixote do Abercrombie",
+			ru = "Ящик Аберкромби",
+			ko = "에이버크롬비의 상자",
+			cn = "亚伯克隆比的箱子",
+		},
+	},
+	[164] = {
+		readable = "Scaber Stalk",
+		model = 219476,
+		text = {
+			en = "Scaber Stalk",
+			es = "[Scaber Stalk]",
+			de = "[Scaber Stalk]",
+			fr = "[Scaber Stalk]",
+			it = "[Scaber Stalk]",
+			pt = "[Scaber Stalk]",
+			ru = "[Scaber Stalk]",
+			ko = "[Scaber Stalk]",
+			cn = "[Scaber Stalk]",
+		},
+	},
+	[249] = {
+		readable = "Crate of Foodstuffs",
+		model = 200961,
+		text = {
+			en = "Crate of Foodstuffs",
+			es = "[Crate of Foodstuffs]",
+			de = "[Crate of Foodstuffs]",
+			fr = "[Crate of Foodstuffs]",
+			it = "[Crate of Foodstuffs]",
+			pt = "[Crate of Foodstuffs]",
+			ru = "Ящик с провизией",
+			ko = "[Crate of Foodstuffs]",
+			cn = "[Crate of Foodstuffs]",
+		},
+	},
+	[252] = {
+		readable = "I Should not be here B",
+		model = 196975,
+		text = {
+			en = "I Should not be here B",
+			es = "[I Should not be here B]",
+			de = "[I Should not be here B]",
+			fr = "[I Should not be here B]",
+			it = "[I Should not be here B]",
+			pt = "[I Should not be here B]",
+			ru = "[I Should not be here B]",
+			ko = "[I Should not be here B]",
+			cn = "[I Should not be here B]",
 		},
 	},
 	[255] = {
@@ -166,6 +421,7 @@ root("ObjectDB", {
 	[256] = {
 		readable = "Wanted!",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 199421,
 		text = {
 			en = "Wanted!",
 			es = "¡Se busca!",
@@ -180,6 +436,7 @@ root("ObjectDB", {
 	},
 	[257] = {
 		readable = "Suspicious Barrel",
+		model = 198280,
 		text = {
 			en = "Suspicious Barrel",
 			es = "Barrica sospechosa",
@@ -195,6 +452,7 @@ root("ObjectDB", {
 	[259] = {
 		readable = "Half-buried Barrel",
 		icon = "Interface/Icons/INV_Drink_11",
+		model = 199563,
 		text = {
 			en = "Half-buried Barrel",
 			es = "Barrica semienterrada",
@@ -210,6 +468,7 @@ root("ObjectDB", {
 	[261] = {
 		readable = "Damaged Crate",
 		icon = "Interface/Icons/inv_crate_02",
+		model = 198168,
 		text = {
 			en = "Damaged Crate",
 			es = "Cajón dañado",
@@ -222,8 +481,39 @@ root("ObjectDB", {
 			cn = "破损的箱子",
 		},
 	},
+	[263] = {
+		readable = "Kurzen Supplies",
+		model = 198085,
+		text = {
+			en = "Kurzen Supplies",
+			es = "Suministros Kurzen",
+			de = "Kurzens Vorräte",
+			fr = "Ravitaillements de Kurzen",
+			it = "Kurzen Supplies",
+			pt = "Suprimentos de Kurzen",
+			ru = "Припасы Курцена",
+			ko = "쿠르젠 보급품",
+			cn = "库尔森补给品",
+		},
+	},
+	[264] = {
+		readable = "Kurzen Supplies",
+		model = 198085,
+		text = {
+			en = "Kurzen Supplies",
+			es = "Suministros Kurzen",
+			de = "Kurzens Vorräte",
+			fr = "Ravitaillements de Kurzen",
+			it = "Kurzen Supplies",
+			pt = "Suprimentos de Kurzen",
+			ru = "Припасы Курцена",
+			ko = "쿠르젠 보급품",
+			cn = "库尔森补给品",
+		},
+	},
 	[269] = {
 		readable = "Guarded Thunder Ale Barrel",
+		model = 199563,
 		text = {
 			en = "Guarded Thunder Ale Barrel",
 			es = "Barrica de Cerveza del Trueno custodiado",
@@ -252,8 +542,54 @@ root("ObjectDB", {
 			cn = "无人守卫的雷酒桶",
 		},
 	},
+	[271] = {
+		readable = "Miners' League Crates",
+		model = 198085,
+		text = {
+			en = "Miners' League Crates",
+			es = "Cajones de la Liga de Mineros",
+			de = "Kisten der Minenarbeiterliga",
+			fr = "Caisses de la Ligue des mineurs",
+			it = "Miners' League Crates",
+			pt = "Caixotes da Liga dos Mineradores",
+			ru = "Ящики Лиги Рудокопов",
+			ko = "광부 조합 상자",
+			cn = "矿工联盟的储物箱",
+		},
+	},
+	[272] = {
+		readable = "MacGrann's Meat Locker",
+		model = 196979,
+		text = {
+			en = "MacGrann's Meat Locker",
+			es = "Estantería de carne de MacGrann",
+			de = "MacGranns Fleisch-Spind",
+			fr = "Placard à viande de MacGrann",
+			it = "MacGrann's Meat Locker",
+			pt = "Depósito de Carne de MacGrann",
+			ru = "Мясной ледник Макгранна",
+			ko = "맥그란의 고기 상자",
+			cn = "[MacGrann's Meat Locker]",
+		},
+	},
+	[276] = {
+		readable = "Shimmerweed Basket",
+		model = 200351,
+		text = {
+			en = "Shimmerweed Basket",
+			es = "Cesta de cardaluz",
+			de = "Schimmerkrautkorb",
+			fr = "Panier à chatoyante",
+			it = "Shimmerweed Basket",
+			pt = "Cesta de Tremulerva",
+			ru = "Корзинка с звездолистом",
+			ko = "쉼머위드 바구니",
+			cn = "微光草篮",
+		},
+	},
 	[287] = {
 		readable = "Bookie Herod's Records",
+		model = 198056,
 		text = {
 			en = "Bookie Herod's Records",
 			es = "Documentos del corredor Herod",
@@ -268,6 +604,7 @@ root("ObjectDB", {
 	},
 	[288] = {
 		readable = "Bookie Herod's Strongbox",
+		model = 196979,
 		text = {
 			en = "Bookie Herod's Strongbox",
 			es = "Caja fuerte del corredor Herod",
@@ -280,9 +617,145 @@ root("ObjectDB", {
 			cn = "书呆子赫罗德的保险箱",
 		},
 	},
+	[290] = {
+		readable = "Furlbrow's Wardrobe",
+		model = 198634,
+		text = {
+			en = "Furlbrow's Wardrobe",
+			es = "Guardarropa de Furlbrow",
+			de = "Furlbrows Kleiderschrank",
+			fr = "Penderie de Furlbrow",
+			it = "Furlbrow's Wardrobe",
+			pt = "Guarda-roupas do Taturana",
+			ru = "Платяной шкаф Хмуроброва",
+			ko = "펄브로우의 옷장",
+			cn = "法布隆的柜子",
+		},
+	},
+	[321] = {
+		readable = "Tear of Tilloa",
+		model = 198203,
+		text = {
+			en = "Tear of Tilloa",
+			es = "Lágrima de Tilloa",
+			de = "Tilloaträne",
+			fr = "Larme de Tilloa",
+			it = "Tear of Tilloa",
+			pt = "Lágrima de Tirsa",
+			ru = "Слеза Тиллоа",
+			ko = "틸로아의 눈물",
+			cn = "蒂罗亚之泪",
+		},
+	},
+	[323] = {
+		readable = "Arcanite Lode",
+		model = 197038,
+		text = {
+			en = "Arcanite Lode",
+			es = "[Arcanite Lode]",
+			de = "[Arcanite Lode]",
+			fr = "[Arcanite Lode]",
+			it = "[Arcanite Lode]",
+			pt = "[Arcanite Lode]",
+			ru = "[Arcanite Lode]",
+			ko = "[Arcanite Lode]",
+			cn = "[Arcanite Lode]",
+		},
+	},
+	[324] = {
+		readable = "Small Thorium Vein",
+		model = 219566,
+		text = {
+			en = "Small Thorium Vein",
+			es = "Filón pequeño de torio",
+			de = "Kleines Thoriumvorkommen",
+			fr = "Petit filon de thorium",
+			it = "Small Thorium Vein",
+			pt = "Veio de Tório Escasso",
+			ru = "Малая ториевая жила",
+			ko = "작은 토륨 광맥",
+			cn = "瑟银矿脉",
+		},
+	},
+	[331] = {
+		readable = "Loose Soil",
+		model = 204112,
+		text = {
+			en = "Loose Soil",
+			es = "Suelo blando",
+			de = "Lockere Erde",
+			fr = "Terre meuble",
+			it = "Loose Soil",
+			pt = "Terra Solta",
+			ru = "Рыхлая земля",
+			ko = "대충 덮인 흙더미",
+			cn = "松软的土壤",
+		},
+	},
+	[333] = {
+		readable = "Ancient Relic",
+		model = 199751,
+		text = {
+			en = "Ancient Relic",
+			es = "Reliquia antigua",
+			de = "Uraltes Relikt",
+			fr = "Relique ancienne",
+			it = "Ancient Relic",
+			pt = "Relíquia Antiga",
+			ru = "Древняя святыня",
+			ko = "고대 유물",
+			cn = "古代遗物",
+		},
+	},
+	[334] = {
+		readable = "Ancient Relic",
+		model = 199753,
+		text = {
+			en = "Ancient Relic",
+			es = "Reliquia antigua",
+			de = "Uraltes Relikt",
+			fr = "Relique ancienne",
+			it = "Ancient Relic",
+			pt = "Relíquia Antiga",
+			ru = "Древняя святыня",
+			ko = "고대 유물",
+			cn = "古代遗物",
+		},
+	},
+	[337] = {
+		readable = "Water Pitcher",
+		model = 189815,
+		text = {
+			en = "Water Pitcher",
+			es = "[Water Pitcher]",
+			de = "[Water Pitcher]",
+			fr = "[Water Pitcher]",
+			it = "[Water Pitcher]",
+			pt = "[Water Pitcher]",
+			ru = "Кувшин с водой",
+			ko = "[Water Pitcher]",
+			cn = "[Water Pitcher]",
+		},
+	},
+	[375] = {
+		readable = "Tirisfal Pumpkin",
+		model = 189409,
+		text = {
+			en = "Tirisfal Pumpkin",
+			es = "Calabaza de Tirisfal",
+			de = "Tirisfalkürbis",
+			fr = "Potiron de Tirisfal",
+			it = "Tirisfal Pumpkin",
+			pt = "Abóbora de Tirisfal",
+			ru = "Тирисфальская тыква",
+			ko = "티리스팔 호박",
+			cn = "提瑞斯法南瓜",
+		},
+	},
 	[711] = {
 		readable = "Wanted!",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 199421,
 		text = {
 			en = "Wanted!",
 			es = "¡Se busca!",
@@ -295,8 +768,54 @@ root("ObjectDB", {
 			cn = "通缉！",
 		},
 	},
+	[759] = {
+		readable = "The Holy Spring",
+		model = 190361,
+		text = {
+			en = "The Holy Spring",
+			es = "El manantial sagrado",
+			de = "Der Heilige Quell",
+			fr = "La source sacrée",
+			it = "The Holy Spring",
+			pt = "A Fonte Sagrada",
+			ru = "Святой источник",
+			ko = "신성한 샘물",
+			cn = "圣泉",
+		},
+	},
+	[1165] = {
+		readable = "Gunther's Books",
+		model = 198056,
+		text = {
+			en = "Gunther's Books",
+			es = "Libros de Gunther",
+			de = "Gunthers Bücher",
+			fr = "Livres de Gunther",
+			it = "Gunther's Books",
+			pt = "Livros do Tertuliano",
+			ru = "Книги Гюнтера",
+			ko = "군터의 책",
+			cn = "[Gunther's Books]",
+		},
+	},
+	[1166] = {
+		readable = "Alexston's Chest",
+		model = 196976,
+		text = {
+			en = "Alexston's Chest",
+			es = "Cofre de Alexston",
+			de = "Alexstons Truhe",
+			fr = "Coffre d'Alexston",
+			it = "Alexston's Chest",
+			pt = "Baú do Aleixo",
+			ru = "Сундук Алекстона",
+			ko = "알렉스턴의 궤짝",
+			cn = "阿历克斯顿的箱子",
+		},
+	},
 	[1557] = {
 		readable = "Lillith's Dinner Table",
+		model = 198598,
 		text = {
 			en = "Lillith's Dinner Table",
 			es = "Mesa de cena de Lillith",
@@ -309,8 +828,24 @@ root("ObjectDB", {
 			cn = "莉莉丝的餐桌",
 		},
 	},
+	[1560] = {
+		readable = "Storage Chest",
+		model = 196979,
+		text = {
+			en = "Storage Chest",
+			es = "Arcón",
+			de = "Aufbewahrungstruhe",
+			fr = "Coffre de stockage",
+			it = "Storage Chest",
+			pt = "Baú de Estoque",
+			ru = "Ящик",
+			ko = "보관함",
+			cn = "储物箱",
+		},
+	},
 	[1561] = {
 		readable = "Sealed Crate",
+		model = 198168,
 		text = {
 			en = "Sealed Crate",
 			es = "Cajón sellado",
@@ -323,8 +858,39 @@ root("ObjectDB", {
 			cn = "密封的箱子",
 		},
 	},
+	[1562] = {
+		readable = "Marshal Haggard's Chest",
+		model = 196982,
+		text = {
+			en = "Marshal Haggard's Chest",
+			es = "Cofre del alguacil Haggard",
+			de = "Truhe von Marshal Haggard",
+			fr = "Coffre du maréchal Haggard",
+			it = "Marshal Haggard's Chest",
+			pt = "Baú do Marechal Haggard",
+			ru = "Сундук маршала Хаггарда",
+			ko = "치안대장 해거드의 상자",
+			cn = "哈加德的箱子",
+		},
+	},
+	[1571] = {
+		readable = "Dusty Spellbooks",
+		model = 198055,
+		text = {
+			en = "Dusty Spellbooks",
+			es = "Libros de hechizos polvorientos",
+			de = "Staubige Zauberbücher",
+			fr = "Livres de sorts poussiéreux",
+			it = "Dusty Spellbooks",
+			pt = "Grimórios Empoeirados",
+			ru = "Пыльные заклинательные книги",
+			ko = "더러운 마법책",
+			cn = "布满灰尘的法术书",
+		},
+	},
 	[1585] = {
 		readable = "Explosive Charge",
+		model = 197464,
 		text = {
 			en = "Explosive Charge",
 			es = "Carga explosiva",
@@ -339,6 +905,7 @@ root("ObjectDB", {
 	},
 	[1586] = {
 		readable = "Crate of Candles",
+		model = 199634,
 		text = {
 			en = "Crate of Candles",
 			es = "Cajón de velas",
@@ -354,6 +921,7 @@ root("ObjectDB", {
 	[1593] = {
 		readable = "Corpse Laden Boat",
 		icon = "Interface/Icons/inv_garrison_cargoship",
+		model = 190104,
 		text = {
 			en = "Corpse Laden Boat",
 			es = "Barco cargado de cadáveres",
@@ -366,8 +934,24 @@ root("ObjectDB", {
 			cn = "运尸船",
 		},
 	},
+	[1594] = {
+		readable = "Berard's Bookshelf",
+		model = 198054,
+		text = {
+			en = "Berard's Bookshelf",
+			es = "Estantería de Berard",
+			de = "Berards Bücherregal",
+			fr = "Etagère de livres de Berard",
+			it = "Berard's Bookshelf",
+			pt = "Prateleira de Livros de Berardo",
+			ru = "Книжная полка Берарда",
+			ko = "베랄드의 책장",
+			cn = "[Berard's Bookshelf]",
+		},
+	},
 	[1599] = {
 		readable = "Shallow Grave",
+		model = 189528,
 		text = {
 			en = "Shallow Grave",
 			es = "Tumba poco profunda",
@@ -377,10 +961,12 @@ root("ObjectDB", {
 			pt = "Cova Rasa",
 			ru = "Неглубокая могила",
 			ko = "얕은 무덤",
+			cn = "[Shallow Grave]",
 		},
 	},
 	[1609] = {
 		readable = "Dragonmaw Catapult",
+		model = 189709,
 		text = {
 			en = "Dragonmaw Catapult",
 			es = "Catapulta Faucedraco",
@@ -393,9 +979,145 @@ root("ObjectDB", {
 			cn = "龙喉投石车",
 		},
 	},
+	[1610] = {
+		readable = "Incendicite Mineral Vein",
+		model = 219531,
+		text = {
+			en = "Incendicite Mineral Vein",
+			es = "Filón de incendicita",
+			de = "Pyrophor-Mineralvorkommen",
+			fr = "Filon d'incendicite",
+			it = "Incendicite Mineral Vein",
+			pt = "[Incendicite Mineral Vein]",
+			ru = "Ароматитовая жила",
+			ko = "발연 광맥",
+			cn = "火岩矿脉",
+		},
+	},
+	[1617] = {
+		readable = "Silverleaf",
+		model = 219487,
+		text = {
+			en = "Silverleaf",
+			es = "Hojaplata",
+			de = "Silberblatt",
+			fr = "Feuillargent",
+			it = "Silverleaf",
+			pt = "Folha-prata",
+			ru = "Сребролист",
+			ko = "은엽수 덤불",
+			cn = "银叶草",
+		},
+	},
+	[1618] = {
+		readable = "Peacebloom",
+		model = 219481,
+		text = {
+			en = "Peacebloom",
+			es = "Flor de paz",
+			de = "Friedensblume",
+			fr = "Pacifique",
+			it = "Peacebloom",
+			pt = "Botão-da-paz",
+			ru = "Мироцвет",
+			ko = "평온초",
+			cn = "宁神花",
+		},
+	},
+	[1619] = {
+		readable = "Earthroot",
+		model = 219489,
+		text = {
+			en = "Earthroot",
+			es = "Raíz de tierra",
+			de = "Erdwurzel",
+			fr = "Terrestrine",
+			it = "Earthroot",
+			pt = "Raiz-telúrica",
+			ru = "Землекорень",
+			ko = "뱀뿌리",
+			cn = "地根草",
+		},
+	},
+	[1620] = {
+		readable = "Mageroyal",
+		model = 219470,
+		text = {
+			en = "Mageroyal",
+			es = "Marregal",
+			de = "Maguskönigskraut",
+			fr = "Mage royal",
+			it = "Mageroyal",
+			pt = "Magi-real",
+			ru = "Магороза",
+			ko = "마법초",
+			cn = "魔皇草",
+		},
+	},
+	[1621] = {
+		readable = "Briarthorn",
+		model = 219502,
+		text = {
+			en = "Briarthorn",
+			es = "Brezospina",
+			de = "Wilddornrose",
+			fr = "Eglantine",
+			it = "Briarthorn",
+			pt = "Cravespinho",
+			ru = "Остротерн",
+			ko = "찔레가시",
+			cn = "石南草",
+		},
+	},
+	[1622] = {
+		readable = "Bruiseweed",
+		model = 219440,
+		text = {
+			en = "Bruiseweed",
+			es = "Hierba cardenal",
+			de = "Beulengras",
+			fr = "Doulourante",
+			it = "Bruiseweed",
+			pt = "Ervamossa",
+			ru = "Синячник",
+			ko = "생채기풀",
+			cn = "跌打草",
+		},
+	},
+	[1623] = {
+		readable = "Wild Steelbloom",
+		model = 219494,
+		text = {
+			en = "Wild Steelbloom",
+			es = "Acérita salvaje",
+			de = "Wildstahlblume",
+			fr = "Aciérite sauvage",
+			it = "Wild Steelbloom",
+			pt = "Ácera-agreste",
+			ru = "Дикий сталецвет",
+			ko = "야생 철쭉",
+			cn = "野钢花",
+		},
+	},
+	[1624] = {
+		readable = "Kingsblood",
+		model = 219443,
+		text = {
+			en = "Kingsblood",
+			es = "Sangrerregia",
+			de = "Königsblut",
+			fr = "Sang-royal",
+			it = "Kingsblood",
+			pt = "Sangue-real",
+			ru = "Королевская кровь",
+			ko = "왕꽃잎풀",
+			cn = "皇血草",
+		},
+	},
 	[1627] = {
 		readable = "Dalaran Crate",
 		icon = "Interface/Icons/inv_crate_01",
+		model = 198168,
 		text = {
 			en = "Dalaran Crate",
 			es = "Cajón de Dalaran",
@@ -408,8 +1130,40 @@ root("ObjectDB", {
 			cn = "达拉然板条箱",
 		},
 	},
+	[1628] = {
+		readable = "Grave Moss",
+		model = 219463,
+		text = {
+			en = "Grave Moss",
+			es = "Musgo de tumba",
+			de = "Grabmoos",
+			fr = "Tombeline",
+			it = "Grave Moss",
+			pt = "Musgo-de-tumba",
+			ru = "Могильный мох",
+			ko = "무덤이끼",
+			cn = "墓地苔",
+		},
+	},
+	[1667] = {
+		readable = "Incendicite Mineral Vein",
+		model = 219531,
+		text = {
+			en = "Incendicite Mineral Vein",
+			es = "Filón de incendicita",
+			de = "Pyrophor-Mineralvorkommen",
+			fr = "Filon d'incendicite",
+			it = "Incendicite Mineral Vein",
+			pt = "[Incendicite Mineral Vein]",
+			ru = "Ароматитовая жила",
+			ko = "발연 광맥",
+			cn = "火岩矿脉",
+		},
+	},
 	[1673] = {
 		readable = "Fel Cone",
+		icon = "Interface/Icons/inv_misc_food_02",
+		model = 467768,
 		text = {
 			en = "Fel Cone",
 			es = "Bellota vil",
@@ -422,9 +1176,235 @@ root("ObjectDB", {
 			cn = "魔锥果",
 		},
 	},
+	[1682] = {
+		readable = "Quest Chest",
+		model = 196976,
+		text = {
+			en = "Quest Chest",
+			es = "[Quest Chest]",
+			de = "[Quest Chest]",
+			fr = "[Quest Chest]",
+			it = "[Quest Chest]",
+			pt = "[Quest Chest]",
+			ru = "[Quest Chest]",
+			ko = "[Quest Chest]",
+			cn = "[Quest Chest]",
+		},
+	},
+	[1685] = {
+		readable = "Forge",
+		model = 189193,
+		text = {
+			en = "Forge",
+			es = "Forja",
+			de = "Schmiede",
+			fr = "Forge",
+			it = "Forge",
+			pt = "Forja",
+			ru = "Горн",
+			ko = "가열로",
+			cn = "熔炉",
+		},
+	},
+	[1720] = {
+		readable = "Stanley's Dish",
+		model = 198177,
+		text = {
+			en = "Stanley's Dish",
+			es = "Plato de Stanley",
+			de = "Stanleys Napf",
+			fr = "Plat de Stanley",
+			it = "Stanley's Dish",
+			pt = "Prato do Fido",
+			ru = "Блюдо Стэнли",
+			ko = "스탠리의 밥그릇",
+			cn = "斯坦雷的碟子",
+		},
+	},
+	[1721] = {
+		readable = "Locked ball and chain",
+		model = 197946,
+		text = {
+			en = "Locked ball and chain",
+			es = "Cadena con bola de preso",
+			de = "Verschlossene Kugel und Kette",
+			fr = "Boulet et chaîne verrouillés",
+			it = "Locked ball and chain",
+			pt = "Bola e corrente presas",
+			ru = "Запертые шар и цепь",
+			ko = "단단히 잠긴 족쇄",
+			cn = "坚固链球",
+		},
+	},
+	[1722] = {
+		readable = "Locked ball and chain",
+		model = 197946,
+		text = {
+			en = "Locked ball and chain",
+			es = "Cadena con bola de preso",
+			de = "Verschlossene Kugel und Kette",
+			fr = "Boulet et chaîne verrouillés",
+			it = "Locked ball and chain",
+			pt = "Bola e Corrente Trancada",
+			ru = "Запертые шар и цепь",
+			ko = "단단히 잠긴 족쇄",
+			cn = "坚固链球",
+		},
+	},
+	[1723] = {
+		readable = "Mudsnout Blossom",
+		model = 219474,
+		text = {
+			en = "Mudsnout Blossom",
+			es = "Flor Morrobarro",
+			de = "Morastschnauzenkappe",
+			fr = "Fleurs de fangemufle",
+			it = "Mudsnout Blossom",
+			pt = "Cogumelo Fuçalama",
+			ru = "Цветок Грязного Рыла",
+			ko = "진흙주둥이꽃",
+			cn = "泥头花",
+		},
+	},
+	[1726] = {
+		readable = "Missing: Corporal Keeshan",
+		model = 198409,
+		text = {
+			en = "Missing: Corporal Keeshan",
+			es = "Desaparecido: Cabo Keeshan",
+			de = "Vermisst: Corporal Keeshan",
+			fr = "Disparu : caporal Keeshan",
+			it = "Missing: Corporal Keeshan",
+			pt = "Desaparecido: Cabo Keeshan",
+			ru = "Пропавший без вести: капрал Кеешан",
+			ko = "실종: 하사관 키샨",
+			cn = "失踪：基沙恩下士",
+		},
+	},
+	[1727] = {
+		readable = "Keg of Shindigger Stout",
+		model = 199563,
+		text = {
+			en = "Keg of Shindigger Stout",
+			es = "Barril de cerveza Machacacanillas",
+			de = "Fässchen Shindigger-Starkbier",
+			fr = "Tonneau de Shindigger",
+			it = "Keg of Shindigger Stout",
+			pt = "Barril de Stout do Festeiro",
+			ru = "Бочонок \"Землекопского крепкого\"",
+			ko = "신디거 스타우트 맥주통",
+			cn = "[Keg of Shindigger Stout]",
+		},
+	},
+	[1728] = {
+		readable = "Dusty Rug",
+		model = 198435,
+		text = {
+			en = "Dusty Rug",
+			es = "Alfombra polvorienta",
+			de = "Staubiger Teppich",
+			fr = "Carpette poussiéreuse",
+			it = "Dusty Rug",
+			pt = "Tapete Empoeirado",
+			ru = "Пыльный коврик",
+			ko = "더러운 양탄자",
+			cn = "布满灰尘的毯子",
+		},
+	},
+	[1731] = {
+		readable = "Copper Vein",
+		model = 219514,
+		text = {
+			en = "Copper Vein",
+			es = "Filón de cobre",
+			de = "Kupfervorkommen",
+			fr = "Filon de cuivre",
+			it = "Copper Vein",
+			pt = "Veio de Cobre",
+			ru = "Медная жила",
+			ko = "구리 광맥",
+			cn = "铜矿",
+		},
+	},
+	[1732] = {
+		readable = "Tin Vein",
+		model = 219568,
+		text = {
+			en = "Tin Vein",
+			es = "Filón de estaño",
+			de = "Zinnvorkommen",
+			fr = "Filon d'étain",
+			it = "Tin Vein",
+			pt = "Veio de Estanho",
+			ru = "Оловянная жила",
+			ko = "주석 광맥",
+			cn = "锡矿",
+		},
+	},
+	[1733] = {
+		readable = "Silver Vein",
+		model = 219569,
+		text = {
+			en = "Silver Vein",
+			es = "Filón de plata",
+			de = "Silbervorkommen",
+			fr = "Filon d'argent",
+			it = "Silver Vein",
+			pt = "Veio de Prata",
+			ru = "Серебряная жила",
+			ko = "은 광맥",
+			cn = "银矿",
+		},
+	},
+	[1734] = {
+		readable = "Gold Vein",
+		model = 219524,
+		text = {
+			en = "Gold Vein",
+			es = "Filón de oro",
+			de = "Goldvorkommen",
+			fr = "Filon d'or",
+			it = "Gold Vein",
+			pt = "Veio de Ouro",
+			ru = "Золотая жила",
+			ko = "금 광맥",
+			cn = "金矿石",
+		},
+	},
+	[1735] = {
+		readable = "Iron Deposit",
+		model = 219532,
+		text = {
+			en = "Iron Deposit",
+			es = "Depósito de hierro",
+			de = "Eisenvorkommen",
+			fr = "Gisement de fer",
+			it = "Iron Deposit",
+			pt = "Depósito de Ferro",
+			ru = "Залежи железа",
+			ko = "철 광맥",
+			cn = "铁矿石",
+		},
+	},
+	[1736] = {
+		readable = "Shipment of Iron",
+		model = 198168,
+		text = {
+			en = "Shipment of Iron",
+			es = "Envío de hierro",
+			de = "Eisenlieferung",
+			fr = "Chargement de fer",
+			it = "Shipment of Iron",
+			pt = "Carregamento de Ferro",
+			ru = "Партия железа",
+			ko = "철괴 상자",
+			cn = "一箱铁材",
+		},
+	},
 	[1738] = {
 		readable = "Syndicate Documents",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 198451,
 		text = {
 			en = "Syndicate Documents",
 			es = "Documentos de Hermandad",
@@ -440,6 +1420,7 @@ root("ObjectDB", {
 	[1739] = {
 		readable = "Syndicate Documents",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 198453,
 		text = {
 			en = "Syndicate Documents",
 			es = "Documentos del Sindicato",
@@ -455,6 +1436,7 @@ root("ObjectDB", {
 	[1740] = {
 		readable = "Syndicate Documents",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 198451,
 		text = {
 			en = "Syndicate Documents",
 			es = "Documentos de la Hermandad",
@@ -467,9 +1449,40 @@ root("ObjectDB", {
 			cn = "辛迪加文档",
 		},
 	},
+	[1759] = {
+		readable = "Hillsbrad Town Registry",
+		model = 198017,
+		text = {
+			en = "Hillsbrad Town Registry",
+			es = "Registro de Trabalomas",
+			de = "Stadtverzeichnis von Hillsbrad",
+			fr = "Registre municipal d'Hillsbrad",
+			it = "Hillsbrad Town Registry",
+			pt = "Cartório de Eira dos Montes",
+			ru = "Регистрационная книга Хилсбрада",
+			ko = "힐스브래드 마을의 기록부",
+			cn = "希尔斯布莱德城镇文档",
+		},
+	},
+	[1760] = {
+		readable = "Weathered Bookcase",
+		model = 198047,
+		text = {
+			en = "Weathered Bookcase",
+			es = "Estantería estropeada",
+			de = "Verwitterter Bücherschrank",
+			fr = "Bibliothèque dégradée par les intempéries",
+			it = "Weathered Bookcase",
+			pt = "Estante de Livros Surrada",
+			ru = "Старый книжный шкаф",
+			ko = "오래된 책장",
+			cn = "陈旧的书架",
+		},
+	},
 	[1761] = {
 		readable = "Hillsbrad Proclamation",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 201113,
 		text = {
 			en = "Hillsbrad Proclamation",
 			es = "Proclamación de Trabalomas",
@@ -485,6 +1498,7 @@ root("ObjectDB", {
 	[1763] = {
 		readable = "WANTED",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 199424,
 		text = {
 			en = "WANTED",
 			es = "SE BUSCA",
@@ -500,6 +1514,7 @@ root("ObjectDB", {
 	[1765] = {
 		readable = "Worn Wooden Chest",
 		icon = "Interface/Icons/INV_Crate_03",
+		model = 196979,
 		text = {
 			en = "Worn Wooden Chest",
 			es = "Cofre de madera gastado",
@@ -512,9 +1527,25 @@ root("ObjectDB", {
 			cn = "旧木箱",
 		},
 	},
+	[1767] = {
+		readable = "Helcular's Grave",
+		model = 190633,
+		text = {
+			en = "Helcular's Grave",
+			es = "Tumba de Helcular",
+			de = "Helculars Grab",
+			fr = "Tombeau d'Helcular",
+			it = "Helcular's Grave",
+			pt = "Tumba de Helcolar",
+			ru = "Могила Гелькулара",
+			ko = "헬쿨라의 무덤",
+			cn = "赫尔库拉的墓地",
+		},
+	},
 	[1768] = {
 		readable = "Flame of Azel",
 		icon = "Interface/Icons/spell_fire_flameshock",
+		model = 198065,
 		text = {
 			en = "Flame of Azel",
 			es = "Llama de Azel",
@@ -530,6 +1561,7 @@ root("ObjectDB", {
 	[1769] = {
 		readable = "Flame of Veraz",
 		icon = "Interface/Icons/spell_fire_flameshock",
+		model = 198065,
 		text = {
 			en = "Flame of Veraz",
 			es = "Llama de Veraz",
@@ -545,6 +1577,7 @@ root("ObjectDB", {
 	[1770] = {
 		readable = "Flame of Uzel",
 		icon = "Interface/Icons/spell_fire_flameshock",
+		model = 198065,
 		text = {
 			en = "Flame of Uzel",
 			es = "Llama de Uzel",
@@ -560,6 +1593,7 @@ root("ObjectDB", {
 	[2008] = {
 		readable = "Dangerous!",
 		icon = "Interface/Icons/inv_misc_head_human_01",
+		model = 199428,
 		text = {
 			en = "Dangerous!",
 			es = "¡Peligro!",
@@ -572,9 +1606,190 @@ root("ObjectDB", {
 			cn = "危险！",
 		},
 	},
+	[2039] = {
+		readable = "Hidden Strongbox",
+		model = 196976,
+		text = {
+			en = "Hidden Strongbox",
+			es = "Caja fuerte oculta",
+			de = "Versteckte Geldkassette",
+			fr = "Coffre dissimulé",
+			it = "Hidden Strongbox",
+			pt = "Cofre Escondido",
+			ru = "Потайной сейф",
+			ko = "숨겨진 금고",
+			cn = "隐蔽的保险箱",
+		},
+	},
+	[2040] = {
+		readable = "Mithril Deposit",
+		model = 219541,
+		text = {
+			en = "Mithril Deposit",
+			es = "Depósito de mitril",
+			de = "Mithrilablagerung",
+			fr = "Gisement de mithril",
+			it = "Mithril Deposit",
+			pt = "Depósito de Mithril",
+			ru = "Мифриловые залежи",
+			ko = "미스릴 광맥",
+			cn = "秘银矿脉",
+		},
+	},
+	[2041] = {
+		readable = "Liferoot",
+		model = 219469,
+		text = {
+			en = "Liferoot",
+			es = "Vidarraíz",
+			de = "Lebenswurz",
+			fr = "Vietérule",
+			it = "Liferoot",
+			pt = "Raiz-da-vida",
+			ru = "Жизнекорень",
+			ko = "생명의 뿌리",
+			cn = "活根草",
+		},
+	},
+	[2042] = {
+		readable = "Fadeleaf",
+		model = 219449,
+		text = {
+			en = "Fadeleaf",
+			es = "Pálida",
+			de = "Blassblatt",
+			fr = "Pâlerette",
+			it = "Fadeleaf",
+			pt = "Some-folha",
+			ru = "Бледнолист",
+			ko = "미명초",
+			cn = "枯叶草",
+		},
+	},
+	[2043] = {
+		readable = "Khadgar's Whisker",
+		model = 219468,
+		text = {
+			en = "Khadgar's Whisker",
+			es = "Vibrisa de Khadgar",
+			de = "Khadgars Schnurrbart",
+			fr = "Moustache de Khadgar",
+			it = "Khadgar's Whisker",
+			pt = "Bigode-de-hadgar",
+			ru = "Кадгаров ус",
+			ko = "카드가의 수염",
+			cn = "卡德加的胡须",
+		},
+	},
+	[2044] = {
+		readable = "Wintersbite",
+		model = 219507,
+		text = {
+			en = "Wintersbite",
+			es = "Ivernalia",
+			de = "Winterbiss",
+			fr = "Hivernale",
+			it = "Wintersbite",
+			pt = "Boquinha-do-inverno",
+			ru = "Морозник",
+			ko = "겨울서리풀",
+			cn = "冬刺草",
+		},
+	},
+	[2045] = {
+		readable = "Stranglekelp",
+		model = 219495,
+		text = {
+			en = "Stranglekelp",
+			es = "Alga estranguladora",
+			de = "Würgetang",
+			fr = "Etouffante",
+			it = "Stranglekelp",
+			pt = "Estrangulalga",
+			ru = "Удавник",
+			ko = "갈래물풀",
+			cn = "荆棘藻",
+		},
+	},
+	[2046] = {
+		readable = "Goldthorn",
+		model = 219462,
+		text = {
+			en = "Goldthorn",
+			es = "Espina de oro",
+			de = "Golddorn",
+			fr = "Dorépine",
+			it = "Goldthorn",
+			pt = "Espinheira-dourada",
+			ru = "Златошип",
+			ko = "황금가시",
+			cn = "金棘草",
+		},
+	},
+	[2047] = {
+		readable = "Truesilver Deposit",
+		model = 219569,
+		text = {
+			en = "Truesilver Deposit",
+			es = "Depósito de veraplata",
+			de = "Echtsilberablagerung",
+			fr = "Gisement de vrai-argent",
+			it = "Truesilver Deposit",
+			pt = "Depósito de Veraprata",
+			ru = "Залежи истинного серебра",
+			ko = "진은 광맥",
+			cn = "真银矿石",
+		},
+	},
+	[2053] = {
+		readable = "TWO-SOLUTION TEST",
+		model = 196976,
+		text = {
+			en = "TWO-SOLUTION TEST",
+			es = "[TWO-SOLUTION TEST]",
+			de = "[TWO-SOLUTION TEST]",
+			fr = "[TWO-SOLUTION TEST]",
+			it = "[TWO-SOLUTION TEST]",
+			pt = "[TWO-SOLUTION TEST]",
+			ru = "[TWO-SOLUTION TEST]",
+			ko = "[TWO-SOLUTION TEST]",
+			cn = "[TWO-SOLUTION TEST]",
+		},
+	},
+	[2054] = {
+		readable = "Tin Vein",
+		model = 219568,
+		text = {
+			en = "Tin Vein",
+			es = "Filón de estaño",
+			de = "Zinnvorkommen",
+			fr = "Filon d'étain",
+			it = "Tin Vein",
+			pt = "Veio de Estanho",
+			ru = "Оловянная жила",
+			ko = "주석 광맥",
+			cn = "锡矿",
+		},
+	},
+	[2055] = {
+		readable = "Copper Vein",
+		model = 219514,
+		text = {
+			en = "Copper Vein",
+			es = "Filón de cobre",
+			de = "Kupfervorkommen",
+			fr = "Filon de cuivre",
+			it = "Copper Vein",
+			pt = "Veio de Cobre",
+			ru = "Медная жила",
+			ko = "구리 광맥",
+			cn = "铜矿",
+		},
+	},
 	[2059] = {
 		readable = "A Dwarven Corpse",
 		icon = "Interface/Icons/INV_Misc_Bone_DwarfSkull_01",
+		model = 197330,
 		text = {
 			en = "A Dwarven Corpse",
 			es = "Un cadáver de enano",
@@ -587,9 +1802,25 @@ root("ObjectDB", {
 			cn = "矮人的尸体",
 		},
 	},
+	[2068] = {
+		readable = "Pupellyverbos Port",
+		model = 198057,
+		text = {
+			en = "Pupellyverbos Port",
+			es = "Oporto Pupellyverbos",
+			de = "Pupellyverbos-Portwein",
+			fr = "Porto Pupellyverbos",
+			it = "Pupellyverbos Port",
+			pt = "Xerez de Pupellyverbos",
+			ru = "Портвейн Пупелливербоса",
+			ko = "퍼플리버보스 포트 와인",
+			cn = "紫葡萄酒",
+		},
+	},
 	[2076] = {
 		readable = "Bubbling Cauldron",
 		icon = "Interface/Icons/INV_Misc_Cauldron_Arcane",
+		model = 198100,
 		text = {
 			en = "Bubbling Cauldron",
 			es = "Caldera burbujeante",
@@ -602,9 +1833,25 @@ root("ObjectDB", {
 			cn = "冒泡的大锅",
 		},
 	},
+	[2082] = {
+		readable = "Uther the Lightbringer",
+		model = 204142,
+		text = {
+			en = "Uther the Lightbringer",
+			es = "Uther el Iluminado",
+			de = "Uther Lightbringer",
+			fr = "Uther, le Porteur de Lumière",
+			it = "Uther the Lightbringer",
+			pt = "Uther, o Arauto da Luz",
+			ru = "Утер Светоносный",
+			ko = "빛의 수호자 우서",
+			cn = "光明使者乌瑟尔",
+		},
+	},
 	[2083] = {
 		readable = "Bloodsail Correspondence",
 		icon = "Interface/Icons/inv_misc_scrollunrolled04",
+		model = 198455,
 		text = {
 			en = "Bloodsail Correspondence",
 			es = "Correspondencia de los Velasangre",
@@ -617,8 +1864,69 @@ root("ObjectDB", {
 			cn = "血帆海盗的信件",
 		},
 	},
+	[2084] = {
+		readable = "Musquash Root",
+		model = 190384,
+		text = {
+			en = "Musquash Root",
+			es = "Zibética",
+			de = "Bisamwurzel",
+			fr = "Racine de Musquash",
+			it = "Musquash Root",
+			pt = "Raiz Almiscarada",
+			ru = "Мускусный корень",
+			ko = "사향쥐 뿌리",
+			cn = "麝鼠根",
+		},
+	},
+	[2085] = {
+		readable = "Singing Crystals",
+		model = 190809,
+		text = {
+			en = "Singing Crystals",
+			es = "[Singing Crystals]",
+			de = "[Singing Crystals]",
+			fr = "[Singing Crystals]",
+			it = "[Singing Crystals]",
+			pt = "[Singing Crystals]",
+			ru = "[Singing Crystals]",
+			ko = "[Singing Crystals]",
+			cn = "[Singing Crystals]",
+		},
+	},
+	[2086] = {
+		readable = "Bloodsail Charts",
+		model = 198457,
+		text = {
+			en = "Bloodsail Charts",
+			es = "Carta de navegación de los Velasangre",
+			de = "Blutsegelkarten",
+			fr = "Cartes de la Voile sanglante",
+			it = "Bloodsail Charts",
+			pt = "Cartas de Navegação dos Vela Sangrenta",
+			ru = "Карты пиратов Кровавого паруса",
+			ko = "붉은해적단 해도",
+			cn = "血帆海图",
+		},
+	},
+	[2087] = {
+		readable = "Bloodsail Orders",
+		model = 198452,
+		text = {
+			en = "Bloodsail Orders",
+			es = "Pedidos de los Velasangre",
+			de = "Blutsegelbefehle",
+			fr = "Ordres de la Voile sanglante",
+			it = "Bloodsail Orders",
+			pt = "Ordens da Vela Sangrenta",
+			ru = "Приказы пиратов Кровавого паруса",
+			ko = "붉은해적단의 명령서",
+			cn = "血帆计划书",
+		},
+	},
 	[2289] = {
 		readable = "Ruined Lifeboat",
+		model = 190677,
 		text = {
 			en = "Ruined Lifeboat",
 			es = "Bote salvavidas inservible",
@@ -631,9 +1939,25 @@ root("ObjectDB", {
 			cn = "破损的救生艇",
 		},
 	},
+	[2549] = {
+		readable = "Cookie Test Chest",
+		model = 196976,
+		text = {
+			en = "Cookie Test Chest",
+			es = "[Cookie Test Chest]",
+			de = "[Cookie Test Chest]",
+			fr = "[Cookie Test Chest]",
+			it = "[Cookie Test Chest]",
+			pt = "[Cookie Test Chest]",
+			ru = "[Cookie Test Chest]",
+			ko = "[Cookie Test Chest]",
+			cn = "[Cookie Test Chest]",
+		},
+	},
 	[2553] = {
 		readable = "A Soggy Scroll",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 198453,
 		text = {
 			en = "A Soggy Scroll",
 			es = "Un viejo pergamino",
@@ -646,9 +1970,25 @@ root("ObjectDB", {
 			cn = "浸水的卷轴",
 		},
 	},
+	[2554] = {
+		readable = "Cortello's Riddle",
+		model = 198453,
+		text = {
+			en = "Cortello's Riddle",
+			es = "El enigma de Cortello",
+			de = "Cortellos Rätsel",
+			fr = "Devinette de Cortello",
+			it = "Cortello's Riddle",
+			pt = "Charada do Cortello",
+			ru = "Загадка Кортелло",
+			ko = "코르텔로의 수수께끼",
+			cn = "科泰罗的谜题",
+		},
+	},
 	[2555] = {
 		readable = "Musty Scroll",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 198453,
 		text = {
 			en = "Musty Scroll",
 			es = "Pergamino mohoso",
@@ -661,8 +2001,84 @@ root("ObjectDB", {
 			cn = "发霉的卷轴",
 		},
 	},
+	[2556] = {
+		readable = "Cortello's Treasure",
+		model = 196976,
+		text = {
+			en = "Cortello's Treasure",
+			es = "El tesoro de Cortello",
+			de = "Cortellos Schatz",
+			fr = "Trésor de Cortello",
+			it = "Cortello's Treasure",
+			pt = "Tesouro de Cortello",
+			ru = "Сокровище Кортелло",
+			ko = "코르텔로의 보물",
+			cn = "科泰罗的宝藏",
+		},
+	},
+	[2557] = {
+		readable = "Altar of the Tides",
+		model = 197832,
+		text = {
+			en = "Altar of the Tides",
+			es = "[Altar of the Tides]",
+			de = "[Altar of the Tides]",
+			fr = "[Altar of the Tides]",
+			it = "[Altar of the Tides]",
+			pt = "[Altar of the Tides]",
+			ru = "[Altar of the Tides]",
+			ko = "[Altar of the Tides]",
+			cn = "[Altar of the Tides]",
+		},
+	},
+	[2559] = {
+		readable = "Maury's Lock Test Chest",
+		model = 196976,
+		text = {
+			en = "Maury's Lock Test Chest",
+			es = "[Maury's Lock Test Chest]",
+			de = "[Maury's Lock Test Chest]",
+			fr = "[Maury's Lock Test Chest]",
+			it = "[Maury's Lock Test Chest]",
+			pt = "[Maury's Lock Test Chest]",
+			ru = "[Maury's Lock Test Chest]",
+			ko = "[Maury's Lock Test Chest]",
+			cn = "[Maury's Lock Test Chest]",
+		},
+	},
+	[2560] = {
+		readable = "Half-Buried Bottle",
+		model = 198061,
+		text = {
+			en = "Half-Buried Bottle",
+			es = "Botella semienterrada",
+			de = "Halb vergrabene Flasche",
+			fr = "Bouteille à moitié ensevelie",
+			it = "Half-Buried Bottle",
+			pt = "Garrafa Semienterrada",
+			ru = "Полузакопанная бутылка",
+			ko = "반쯤 묻힌 병",
+			cn = "半埋的瓶子",
+		},
+	},
+	[2576] = {
+		readable = "Altar of the Tides",
+		model = 197832,
+		text = {
+			en = "Altar of the Tides",
+			es = "Altar de las Mareas",
+			de = "Altar der Gezeiten",
+			fr = "Autel des marées",
+			it = "Altar of the Tides",
+			pt = "Altar das Marés",
+			ru = "Алтарь Приливов",
+			ko = "해일의 제단",
+			cn = "海潮祭坛",
+		},
+	},
 	[2652] = {
 		readable = "Ebenezer Rustlocke's Corpse",
+		model = 197330,
 		text = {
 			en = "Ebenezer Rustlocke's Corpse",
 			es = "Cadáver de Ebenezer Herrumbra",
@@ -675,9 +2091,55 @@ root("ObjectDB", {
 			cn = "伊贝尼瑟的尸体",
 		},
 	},
+	[2653] = {
+		readable = "Lesser Bloodstone Deposit",
+		model = 197038,
+		text = {
+			en = "Lesser Bloodstone Deposit",
+			es = "Depósito de sangrita inferior",
+			de = "Geringe Blutsteinablagerung",
+			fr = "Gisement de pierre de sang inférieure",
+			it = "Lesser Bloodstone Deposit",
+			pt = "Depósito de Pedra-sangrenta Menor",
+			ru = "Малое месторождение кровавого камня",
+			ko = "저급 혈석 광맥",
+			cn = "次级血石矿脉",
+		},
+	},
+	[2656] = {
+		readable = "Waterlogged Letter",
+		model = 198453,
+		text = {
+			en = "Waterlogged Letter",
+			es = "Carta con marcas de agua",
+			de = "Durchnässter Brief",
+			fr = "Lettre détrempée",
+			it = "Waterlogged Letter",
+			pt = "Carta Encharcada",
+			ru = "Промокшее письмо",
+			ko = "물에 젖은 편지",
+			cn = "浸水的信件",
+		},
+	},
+	[2657] = {
+		readable = "Legends of the Earth",
+		model = 198016,
+		text = {
+			en = "Legends of the Earth",
+			es = "Las Leyendas de la Tierra",
+			de = "Legenden der Erde",
+			fr = "Légendes de la Terre",
+			it = "Legends of the Earth",
+			pt = "Lendas da Terra",
+			ru = "Легенды Земли",
+			ko = "대지의 전설",
+			cn = "大地传说",
+		},
+	},
 	[2688] = {
 		readable = "Keystone",
 		icon = "Interface/Icons/inv_enchanting_wod_crystal2",
+		model = 199976,
 		text = {
 			en = "Keystone",
 			es = "Piedra angular",
@@ -692,6 +2154,7 @@ root("ObjectDB", {
 	},
 	[2689] = {
 		readable = "Stone of West Binding",
+		model = 198951,
 		text = {
 			en = "Stone of West Binding",
 			es = "Piedra de Vínculo Oeste",
@@ -706,6 +2169,7 @@ root("ObjectDB", {
 	},
 	[2690] = {
 		readable = "Stone of Outer Binding",
+		model = 198951,
 		text = {
 			en = "Stone of Outer Binding",
 			es = "Piedra de Vínculo Exterior",
@@ -720,6 +2184,7 @@ root("ObjectDB", {
 	},
 	[2691] = {
 		readable = "Stone of East Binding",
+		model = 198951,
 		text = {
 			en = "Stone of East Binding",
 			es = "Piedra de Vínculo Este",
@@ -732,9 +2197,25 @@ root("ObjectDB", {
 			cn = "东禁锢之石",
 		},
 	},
+	[2700] = {
+		readable = "Campfire",
+		model = 189705,
+		text = {
+			en = "Campfire",
+			es = "[Campfire]",
+			de = "[Campfire]",
+			fr = "[Campfire]",
+			it = "[Campfire]",
+			pt = "[Campfire]",
+			ru = "[Campfire]",
+			ko = "[Campfire]",
+			cn = "[Campfire]",
+		},
+	},
 	[2701] = {
 		readable = "Iridescent Shards",
 		icon = "Interface/Icons/inv_enchanting_wod_crystal2",
+		model = 202445,
 		text = {
 			en = "Iridescent Shards",
 			es = "Fragmentos iridiscentes",
@@ -750,6 +2231,7 @@ root("ObjectDB", {
 	[2702] = {
 		readable = "Stone of Inner Binding",
 		icon = "Interface/Icons/inv_enchanting_wod_crystal2",
+		model = 198951,
 		text = {
 			en = "Stone of Inner Binding",
 			es = "Piedra de Vínculo Interior",
@@ -771,6 +2253,7 @@ root("ObjectDB", {
 	[2704] = {
 		readable = "Cache of Explosives",
 		icon = "Interface/Icons/inv_crate_01",
+		model = 200898,
 		text = {
 			en = "Cache of Explosives",
 			es = "Alijo de explosivos",
@@ -783,9 +2266,85 @@ root("ObjectDB", {
 			cn = "爆炸品",
 		},
 	},
+	[2707] = {
+		readable = "Maiden's Folly Charts",
+		model = 198457,
+		text = {
+			en = "Maiden's Folly Charts",
+			es = "Mapas disparatados de Maiden",
+			de = "Karten der TOLLEN MINNA",
+			fr = "Cartes de la Folie de la Vierge",
+			it = "Maiden's Folly Charts",
+			pt = "Mapas da Extravagância da Donzela",
+			ru = "Карты \"Девичьей Блажи\"",
+			ko = "메이든즈 폴리호의 해도",
+			cn = "处女号的航海图",
+		},
+	},
+	[2708] = {
+		readable = "Spirit of Silverpine Charts",
+		model = 198457,
+		text = {
+			en = "Spirit of Silverpine Charts",
+			es = "Carta de navegación del Espíritu de Argénteos",
+			de = "Karten der SILBERGEIST",
+			fr = "Cartes de l'Esprit des Pins argentés",
+			it = "Spirit of Silverpine Charts",
+			pt = "Mapas do Espírito de Pinhaprata",
+			ru = "Карты \"Духа Серебряного бора\"",
+			ko = "실버파인 스피릿호의 해도",
+			cn = "银松之魂号的航海图",
+		},
+	},
+	[2709] = {
+		readable = "Maiden's Folly Log",
+		model = 198016,
+		text = {
+			en = "Maiden's Folly Log",
+			es = "Bitácora disparatada de Maiden",
+			de = "Logbuch der TOLLEN MINNA",
+			fr = "Journal de la Folie de la Vierge",
+			it = "Maiden's Folly Log",
+			pt = "Diário de Bordo da Extravagância da Donzela",
+			ru = "Судовой журнал \"Девичьей Блажи\"",
+			ko = "메이든즈 폴리호의 항해일지",
+			cn = "处女号的航海日志",
+		},
+	},
+	[2710] = {
+		readable = "Spirit of Silverpine Log",
+		model = 198029,
+		text = {
+			en = "Spirit of Silverpine Log",
+			es = "Bitácora del Espíritu de Argénteos",
+			de = "Logbuch der SILBERGEIST",
+			fr = "Journal de l'Esprit des Pins argentés",
+			it = "Spirit of Silverpine Log",
+			pt = "Diário de Bordo do Espírito de Pinhaprata",
+			ru = "Судовой журнал \"Духа Серебряного бора\"",
+			ko = "실버파인 스피릿호의 항해일지",
+			cn = "银松之魂号的航海日志",
+		},
+	},
+	[2712] = {
+		readable = "Calcified Elven Gem",
+		model = 198950,
+		text = {
+			en = "Calcified Elven Gem",
+			es = "Gema élfica calcificada",
+			de = "Verkalkter Elfenedelstein",
+			fr = "Gemme elfique calcifiée",
+			it = "Calcified Elven Gem",
+			pt = "Gema Élfica Calcificada",
+			ru = "Окаменевший эльфийский самоцвет",
+			ko = "엘프의 보석",
+			cn = "石化精灵宝钻",
+		},
+	},
 	[2713] = {
 		readable = "Wanted Board",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 199428,
 		text = {
 			en = "Wanted Board",
 			es = "Tablón de Se busca",
@@ -798,8 +2357,114 @@ root("ObjectDB", {
 			cn = "通缉板",
 		},
 	},
+	[2714] = {
+		readable = "Alterac Granite",
+		model = 203668,
+		text = {
+			en = "Alterac Granite",
+			es = "Granito de Alterac",
+			de = "Alteracgranit",
+			fr = "Granit d'Alterac",
+			it = "Alterac Granite",
+			pt = "Granito de Alterac",
+			ru = "Альтеракский гранит",
+			ko = "알터랙 화강암",
+			cn = "奥特兰克花岗岩",
+		},
+	},
+	[2715] = {
+		readable = "Runed Pedestal",
+		model = 198836,
+		text = {
+			en = "Runed Pedestal",
+			es = "Pedestal con runas",
+			de = "Runenverzierter Sockel",
+			fr = "Piédestal runique",
+			it = "Runed Pedestal",
+			pt = "Pedestal Rúnico",
+			ru = "Рунный пьедестал",
+			ko = "룬 문자가 새겨진 주춧돌",
+			cn = "符文底座",
+		},
+	},
+	[2716] = {
+		readable = "Trelane's Chest",
+		model = 196976,
+		text = {
+			en = "Trelane's Chest",
+			es = "Cofre de Trelane",
+			de = "Trelanes Truhe",
+			fr = "Coffre de Trelane",
+			it = "Trelane's Chest",
+			pt = "Baú de Trelane",
+			ru = "Сундук Трелана",
+			ko = "트렐레인의 궤짝",
+			cn = "特雷莱恩的箱子",
+		},
+	},
+	[2717] = {
+		readable = "Trelane's Footlocker",
+		model = 196979,
+		text = {
+			en = "Trelane's Footlocker",
+			es = "Baúl de Trelane",
+			de = "Trelanes Schließkiste",
+			fr = "Cantine de Trelane",
+			it = "Trelane's Footlocker",
+			pt = "Caixote de Trelane",
+			ru = "Сундучок Трелана",
+			ko = "트렐레인의 사물함",
+			cn = "特雷莱恩的手提箱",
+		},
+	},
+	[2718] = {
+		readable = "Trelane's Lockbox",
+		model = 196982,
+		text = {
+			en = "Trelane's Lockbox",
+			es = "Arcón de Trelane",
+			de = "Trelanes Schließkassette",
+			fr = "Coffret de Trelane",
+			it = "Trelane's Lockbox",
+			pt = "Cofre de Trelane",
+			ru = "Денежный ящик Трелана",
+			ko = "트렐레인의 금고",
+			cn = "特雷莱恩的箱子",
+		},
+	},
+	[2723] = {
+		readable = "Bale of Hay",
+		model = 189810,
+		text = {
+			en = "Bale of Hay",
+			es = "[Bale of Hay]",
+			de = "[Bale of Hay]",
+			fr = "[Bale of Hay]",
+			it = "[Bale of Hay]",
+			pt = "[Bale of Hay]",
+			ru = "[Bale of Hay]",
+			ko = "[Bale of Hay]",
+			cn = "[Bale of Hay]",
+		},
+	},
+	[2724] = {
+		readable = "Sack of Oats",
+		model = 197608,
+		text = {
+			en = "Sack of Oats",
+			es = "Saco de avena",
+			de = "Sack Hafer",
+			fr = "Sac d'avoine",
+			it = "Sack of Oats",
+			pt = "Saco de Aveia",
+			ru = "Мешок овса",
+			ko = "귀리 부대",
+			cn = "一袋燕麦",
+		},
+	},
 	[2734] = {
 		readable = "Waterlogged Chest",
+		model = 196979,
 		text = {
 			en = "Waterlogged Chest",
 			es = "Cofre encharcado",
@@ -812,9 +2477,70 @@ root("ObjectDB", {
 			cn = "浸水的箱子",
 		},
 	},
+	[2735] = {
+		readable = "TEST Bombwagon",
+		model = 200898,
+		text = {
+			en = "TEST Bombwagon",
+			es = "[TEST Bombwagon]",
+			de = "[TEST Bombwagon]",
+			fr = "[TEST Bombwagon]",
+			it = "[TEST Bombwagon]",
+			pt = "[TEST Bombwagon]",
+			ru = "[TEST Bombwagon]",
+			ko = "[TEST Bombwagon]",
+			cn = "[TEST Bombwagon]",
+		},
+	},
+	[2736] = {
+		readable = "TEST Burning Book",
+		model = 200900,
+		text = {
+			en = "TEST Burning Book",
+			es = "[TEST Burning Book]",
+			de = "[TEST Burning Book]",
+			fr = "[TEST Burning Book]",
+			it = "[TEST Burning Book]",
+			pt = "[TEST Burning Book]",
+			ru = "[TEST Burning Book]",
+			ko = "[TEST Burning Book]",
+			cn = "[TEST Burning Book]",
+		},
+	},
+	[2737] = {
+		readable = "TEST Cannon",
+		model = 200947,
+		text = {
+			en = "TEST Cannon",
+			es = "[TEST Cannon]",
+			de = "[TEST Cannon]",
+			fr = "[TEST Cannon]",
+			it = "[TEST Cannon]",
+			pt = "[TEST Cannon]",
+			ru = "[TEST Cannon]",
+			ko = "[TEST Cannon]",
+			cn = "[TEST Cannon]",
+		},
+	},
+	[2738] = {
+		readable = "TEST Burning Scroll",
+		model = 201113,
+		text = {
+			en = "TEST Burning Scroll",
+			es = "[TEST Burning Scroll]",
+			de = "[TEST Burning Scroll]",
+			fr = "[TEST Burning Scroll]",
+			it = "[TEST Burning Scroll]",
+			pt = "[TEST Burning Scroll]",
+			ru = "[TEST Burning Scroll]",
+			ko = "[TEST Burning Scroll]",
+			cn = "[TEST Burning Scroll]",
+		},
+	},
 	[2739] = {
 		readable = "Chest of the Black Feather",
 		icon = "Interface/Icons/inv_feather_01",
+		model = 196976,
 		text = {
 			en = "Chest of the Black Feather",
 			es = "Cofre de la pluma negra",
@@ -830,6 +2556,7 @@ root("ObjectDB", {
 	[2740] = {
 		readable = "Chest of the Raven Claw",
 		icon = "Interface/Icons/inv_misc_orb_02",
+		model = 196976,
 		text = {
 			en = "Chest of the Raven Claw",
 			es = "Cofre de la garra del cuervo",
@@ -845,6 +2572,7 @@ root("ObjectDB", {
 	[2741] = {
 		readable = "Chest of the Sky",
 		icon = "Interface/Icons/inv_misc_gem_sapphire_02",
+		model = 196976,
 		text = {
 			en = "Chest of the Sky",
 			es = "Cofre del cielo",
@@ -860,6 +2588,7 @@ root("ObjectDB", {
 	[2742] = {
 		readable = "Chest of Nesting",
 		icon = "Interface/Icons/inv_misc_rune_01",
+		model = 196976,
 		text = {
 			en = "Chest of Nesting",
 			es = "Cofre del nidal",
@@ -872,8 +2601,324 @@ root("ObjectDB", {
 			cn = "巢穴之箱",
 		},
 	},
+	[2743] = {
+		readable = "Carved Stone Urn",
+		model = 199751,
+		text = {
+			en = "Carved Stone Urn",
+			es = "Urna de piedra labrada",
+			de = "Verzierte Steinurne",
+			fr = "Urne en pierre gravée",
+			it = "Carved Stone Urn",
+			pt = "Urna de Pedra com Gravuras",
+			ru = "Резная каменная урна",
+			ko = "돌조각 단지",
+			cn = "雕纹石罐",
+		},
+	},
+	[2744] = {
+		readable = "Giant Clam",
+		model = 196998,
+		text = {
+			en = "Giant Clam",
+			es = "Almeja gigante",
+			de = "Riesenmuschel",
+			fr = "Palourde géante",
+			it = "Giant Clam",
+			pt = "Marisco Gigante",
+			ru = "Гигантский моллюск",
+			ko = "대합",
+			cn = "巨型蚌壳",
+		},
+	},
+	[2842] = {
+		readable = "Pillar of Diamond",
+		model = 199976,
+		text = {
+			en = "Pillar of Diamond",
+			es = "Pilar de diamante",
+			de = "Diamantsäule",
+			fr = "Pilier de diamant",
+			it = "Pillar of Diamond",
+			pt = "[Pillar of Diamond]",
+			ru = "Алмазный столп",
+			ko = "다이아몬드 기둥",
+			cn = "钻石柱",
+		},
+	},
+	[2843] = {
+		readable = "Battered Chest",
+		model = 219372,
+		text = {
+			en = "Battered Chest",
+			es = "Cofre maltrecho",
+			de = "Ramponierte Truhe",
+			fr = "Coffre endommagé",
+			it = "Battered Chest",
+			pt = "Baú Desgastado",
+			ru = "Побитый сундук",
+			ko = "낡은 궤짝",
+			cn = "破损的箱子",
+		},
+	},
+	[2844] = {
+		readable = "Tattered Chest",
+		model = 219372,
+		text = {
+			en = "Tattered Chest",
+			es = "Cofre ajado",
+			de = "Ramponierte Truhe",
+			fr = "Coffre en morceaux",
+			it = "Cassa Sbrindellata",
+			pt = "Baú Gasto",
+			ru = "Побитый сундук",
+			ko = "낡은 궤짝",
+			cn = "破碎的箱子",
+		},
+	},
+	[2845] = {
+		readable = "Tattered Chest",
+		model = 219372,
+		text = {
+			en = "Tattered Chest",
+			es = "Cofre ajado",
+			de = "Ramponierte Truhe",
+			fr = "Coffre en morceaux",
+			it = "Cassa Sbrindellata",
+			pt = "Baú Gasto",
+			ru = "Побитый сундук",
+			ko = "낡은 궤짝",
+			cn = "破碎的箱子",
+		},
+	},
+	[2846] = {
+		readable = "Tattered Chest",
+		model = 219372,
+		text = {
+			en = "Tattered Chest",
+			es = "Cofre ajado",
+			de = "Ramponierte Truhe",
+			fr = "Coffre en morceaux",
+			it = "Cassa Sbrindellata",
+			pt = "Baú Gasto",
+			ru = "Побитый сундук",
+			ko = "낡은 궤짝",
+			cn = "破碎的箱子",
+		},
+	},
+	[2847] = {
+		readable = "Tattered Chest",
+		model = 219372,
+		text = {
+			en = "Tattered Chest",
+			es = "Cofre ajado",
+			de = "Ramponierte Truhe",
+			fr = "Coffre en morceaux",
+			it = "[Tattered Chest]",
+			pt = "Baú Gasto",
+			ru = "Побитый сундук",
+			ko = "[Tattered Chest]",
+			cn = "[Tattered Chest]",
+		},
+	},
+	[2848] = {
+		readable = "Pillar of Opal",
+		model = 199976,
+		text = {
+			en = "Pillar of Opal",
+			es = "Pilar de ópalo",
+			de = "Opalsäule",
+			fr = "Pilier d'opale",
+			it = "Pillar of Opal",
+			pt = "Pilar de Opala",
+			ru = "Опаловый столп",
+			ko = "오팔 기둥",
+			cn = "玛瑙石柱",
+		},
+	},
+	[2849] = {
+		readable = "Battered Chest",
+		model = 219372,
+		text = {
+			en = "Battered Chest",
+			es = "Cofre maltrecho",
+			de = "Ramponierte Truhe",
+			fr = "Coffre endommagé",
+			it = "Battered Chest",
+			pt = "Baú Desgastado",
+			ru = "Побитый сундук",
+			ko = "낡은 궤짝",
+			cn = "破损的箱子",
+		},
+	},
+	[2850] = {
+		readable = "Solid Chest",
+		model = 219372,
+		text = {
+			en = "Solid Chest",
+			es = "Cofre sólido",
+			de = "Robuste Truhe",
+			fr = "Coffre solide",
+			it = "Solid Chest",
+			pt = "Baú Sólido",
+			ru = "Добротный сундук",
+			ko = "단단한 궤짝",
+			cn = "坚固的箱子",
+		},
+	},
+	[2851] = {
+		readable = "Iron Bound Chest",
+		model = 219372,
+		text = {
+			en = "Iron Bound Chest",
+			es = "[Iron Bound Chest]",
+			de = "[Iron Bound Chest]",
+			fr = "[Iron Bound Chest]",
+			it = "[Iron Bound Chest]",
+			pt = "[Iron Bound Chest]",
+			ru = "[Iron Bound Chest]",
+			ko = "[Iron Bound Chest]",
+			cn = "[Iron Bound Chest]",
+		},
+	},
+	[2852] = {
+		readable = "Solid Chest",
+		model = 219372,
+		text = {
+			en = "Solid Chest",
+			es = "Cofre sólido",
+			de = "Robuste Truhe",
+			fr = "Coffre solide",
+			it = "Solid Chest",
+			pt = "Baú Sólido",
+			ru = "Добротный сундук",
+			ko = "단단한 궤짝",
+			cn = "坚固的箱子",
+		},
+	},
+	[2853] = {
+		readable = "Iron Bound Chest",
+		model = 219372,
+		text = {
+			en = "Iron Bound Chest",
+			es = "[Iron Bound Chest]",
+			de = "[Iron Bound Chest]",
+			fr = "[Iron Bound Chest]",
+			it = "[Iron Bound Chest]",
+			pt = "[Iron Bound Chest]",
+			ru = "[Iron Bound Chest]",
+			ko = "[Iron Bound Chest]",
+			cn = "[Iron Bound Chest]",
+		},
+	},
+	[2854] = {
+		readable = "Iron Bound Chest",
+		model = 219372,
+		text = {
+			en = "Iron Bound Chest",
+			es = "[Iron Bound Chest]",
+			de = "[Iron Bound Chest]",
+			fr = "[Iron Bound Chest]",
+			it = "[Iron Bound Chest]",
+			pt = "[Iron Bound Chest]",
+			ru = "[Iron Bound Chest]",
+			ko = "[Iron Bound Chest]",
+			cn = "[Iron Bound Chest]",
+		},
+	},
+	[2855] = {
+		readable = "Solid Chest",
+		model = 219372,
+		text = {
+			en = "Solid Chest",
+			es = "Cofre sólido",
+			de = "Robuste Truhe",
+			fr = "Coffre solide",
+			it = "Solid Chest",
+			pt = "Baú Sólido",
+			ru = "Добротный сундук",
+			ko = "단단한 궤짝",
+			cn = "坚固的箱子",
+		},
+	},
+	[2856] = {
+		readable = "Iron Bound Chest",
+		model = 219372,
+		text = {
+			en = "Iron Bound Chest",
+			es = "[Iron Bound Chest]",
+			de = "[Iron Bound Chest]",
+			fr = "[Iron Bound Chest]",
+			it = "[Iron Bound Chest]",
+			pt = "[Iron Bound Chest]",
+			ru = "[Iron Bound Chest]",
+			ko = "[Iron Bound Chest]",
+			cn = "[Iron Bound Chest]",
+		},
+	},
+	[2857] = {
+		readable = "Solid Chest",
+		model = 219372,
+		text = {
+			en = "Solid Chest",
+			es = "Cofre sólido",
+			de = "Robuste Truhe",
+			fr = "Coffre solide",
+			it = "Solid Chest",
+			pt = "Baú Sólido",
+			ru = "Добротный сундук",
+			ko = "단단한 궤짝",
+			cn = "坚固的箱子",
+		},
+	},
+	[2858] = {
+		readable = "Pillar of Amethyst",
+		model = 199976,
+		text = {
+			en = "Pillar of Amethyst",
+			es = "Pilar de amatista",
+			de = "Amethystsäule",
+			fr = "Pilier d'améthyste",
+			it = "Pillar of Amethyst",
+			pt = "Pilar de Ametista",
+			ru = "Аметистовый столп",
+			ko = "자수정 기둥",
+			cn = "紫水晶石柱",
+		},
+	},
+	[2866] = {
+		readable = "Firebloom",
+		model = 219452,
+		text = {
+			en = "Firebloom",
+			es = "Flor de fuego",
+			de = "Feuerblüte",
+			fr = "Fleur de feu",
+			it = "Firebloom",
+			pt = "Ignídea",
+			ru = "Огнецвет",
+			ko = "화염초",
+			cn = "火焰花",
+		},
+	},
+	[2867] = {
+		readable = "Excavation Supply Crate",
+		model = 198168,
+		text = {
+			en = "Excavation Supply Crate",
+			es = "Cajón de provisiones de excavación",
+			de = "Ausgrabungsgrundbedarfskiste",
+			fr = "Caisse de ravitaillement pour l'excavation",
+			it = "Excavation Supply Crate",
+			pt = "Caixote de Suprimentos da Escavação",
+			ru = "Ящик с припасами с карьера",
+			ko = "발굴조사단 보급 상자",
+			cn = "挖掘场补给箱",
+		},
+	},
 	[2868] = {
 		readable = "Crumpled Map",
+		model = 198457,
 		text = {
 			en = "Crumpled Map",
 			es = "Mapa arrugado",
@@ -886,8 +2931,39 @@ root("ObjectDB", {
 			cn = "弄皱的地图",
 		},
 	},
+	[2869] = {
+		readable = "Ancient Chest",
+		model = 200953,
+		text = {
+			en = "Ancient Chest",
+			es = "[Ancient Chest]",
+			de = "[Ancient Chest]",
+			fr = "[Ancient Chest]",
+			it = "[Ancient Chest]",
+			pt = "[Ancient Chest]",
+			ru = "[Ancient Chest]",
+			ko = "[Ancient Chest]",
+			cn = "[Ancient Chest]",
+		},
+	},
+	[2874] = {
+		readable = "test lock object",
+		model = 196998,
+		text = {
+			en = "test lock object",
+			es = "[test lock object]",
+			de = "[test lock object]",
+			fr = "[test lock object]",
+			it = "[test lock object]",
+			pt = "[test lock object]",
+			ru = "[test lock object]",
+			ko = "[test lock object]",
+			cn = "[test lock object]",
+		},
+	},
 	[2875] = {
 		readable = "Battered Dwarven Skeleton",
+		model = 197330,
 		text = {
 			en = "Battered Dwarven Skeleton",
 			es = "Esqueleto de enano maltrecho",
@@ -900,9 +2976,205 @@ root("ObjectDB", {
 			cn = "残破的矮人骸骨",
 		},
 	},
+	[2883] = {
+		readable = "Ripe Pumpkin",
+		model = 189409,
+		text = {
+			en = "Ripe Pumpkin",
+			es = "Calabaza madura",
+			de = "Reifer Kürbis",
+			fr = "Citrouille mûre",
+			it = "Ripe Pumpkin",
+			pt = "Abóbora Madura",
+			ru = "Спелая тыква",
+			ko = "잘 여문 호박",
+			cn = "熟透的南瓜",
+		},
+	},
+	[2884] = {
+		readable = "Clam",
+		model = 196998,
+		text = {
+			en = "Clam",
+			es = "Almeja",
+			de = "Muschel",
+			fr = "Palourde",
+			it = "Bivalve",
+			pt = "Marisco",
+			ru = "Моллюск",
+			ko = "조개",
+			cn = "蚌壳",
+		},
+	},
+	[2885] = {
+		readable = "Large Crate",
+		model = 198168,
+		text = {
+			en = "Large Crate",
+			es = "[Large Crate]",
+			de = "[Large Crate]",
+			fr = "[Large Crate]",
+			it = "[Large Crate]",
+			pt = "[Large Crate]",
+			ru = "[Large Crate]",
+			ko = "[Large Crate]",
+			cn = "[Large Crate]",
+		},
+	},
+	[2886] = {
+		readable = "Barrel",
+		model = 199737,
+		text = {
+			en = "Barrel",
+			es = "[Barrel]",
+			de = "[Barrel]",
+			fr = "[Barrel]",
+			it = "[Barrel]",
+			pt = "[Barrel]",
+			ru = "[Barrel]",
+			ko = "[Barrel]",
+			cn = "[Barrel]",
+		},
+	},
+	[2887] = {
+		readable = "Cauldron",
+		model = 198100,
+		text = {
+			en = "Cauldron",
+			es = "[Cauldron]",
+			de = "[Cauldron]",
+			fr = "[Cauldron]",
+			it = "[Cauldron]",
+			pt = "[Cauldron]",
+			ru = "[Cauldron]",
+			ko = "[Cauldron]",
+			cn = "[Cauldron]",
+		},
+	},
+	[2888] = {
+		readable = "Woodpile",
+		model = 198198,
+		text = {
+			en = "Woodpile",
+			es = "[Woodpile]",
+			de = "[Woodpile]",
+			fr = "[Woodpile]",
+			it = "[Woodpile]",
+			pt = "[Woodpile]",
+			ru = "[Woodpile]",
+			ko = "[Woodpile]",
+			cn = "[Woodpile]",
+		},
+	},
+	[2889] = {
+		readable = "Powder Keg",
+		model = 197463,
+		text = {
+			en = "Powder Keg",
+			es = "[Powder Keg]",
+			de = "[Powder Keg]",
+			fr = "[Powder Keg]",
+			it = "[Powder Keg]",
+			pt = "[Powder Keg]",
+			ru = "[Powder Keg]",
+			ko = "[Powder Keg]",
+			cn = "[Powder Keg]",
+		},
+	},
+	[2890] = {
+		readable = "Full Mine Cart",
+		model = 190256,
+		text = {
+			en = "Full Mine Cart",
+			es = "[Full Mine Cart]",
+			de = "[Full Mine Cart]",
+			fr = "[Full Mine Cart]",
+			it = "[Full Mine Cart]",
+			pt = "[Full Mine Cart]",
+			ru = "[Full Mine Cart]",
+			ko = "[Full Mine Cart]",
+			cn = "[Full Mine Cart]",
+		},
+	},
+	[2891] = {
+		readable = "Balia'mah Trophy Skulls",
+		model = 200638,
+		text = {
+			en = "Balia'mah Trophy Skulls",
+			es = "Cráneos trofeo de Balia'mah",
+			de = "Balia’mah-Trophäenschädel",
+			fr = "Crânes trophées de Balia'mah",
+			it = "Balia'mah Trophy Skulls",
+			pt = "Crânios-troféu de Balia'mah",
+			ru = "Трофейные черепа Балиа'ма",
+			ko = "발리아마 전리품 해골",
+			cn = "巴里亚曼颅骨堆",
+		},
+	},
+	[2892] = {
+		readable = "Ziata'jai Trophy Skulls",
+		model = 200638,
+		text = {
+			en = "Ziata'jai Trophy Skulls",
+			es = "Cráneos trofeo de Ziata'jai",
+			de = "Ziata’jai-Trophäenschädel",
+			fr = "Crânes trophées de Ziata'jai",
+			it = "Ziata'jai Trophy Skulls",
+			pt = "Crânios-troféu de Ziata'jai",
+			ru = "Зиата'джайские трофейные черепа",
+			ko = "지아타자이 전리품 해골",
+			cn = "赞塔加颅骨堆",
+		},
+	},
+	[2893] = {
+		readable = "Zul'Mamwe Trophy Skulls",
+		model = 200638,
+		text = {
+			en = "Zul'Mamwe Trophy Skulls",
+			es = "Cráneos trofeo de Zul'Mamwe",
+			de = "Zul’Mamwe-Trophäenschädel",
+			fr = "Crânes trophées de Zul'Mamwe",
+			it = "Zul'Mamwe Trophy Skulls",
+			pt = "Crânios-troféu de Zul'Mamwe",
+			ru = "Трофейные черепа Зулмамбве",
+			ko = "줄맘웨 전리품 해골",
+			cn = "祖玛维颅骨堆",
+		},
+	},
+	[2895] = {
+		readable = "TEST Lever",
+		model = 201061,
+		text = {
+			en = "TEST Lever",
+			es = "[TEST Lever]",
+			de = "[TEST Lever]",
+			fr = "[TEST Lever]",
+			it = "[TEST Lever]",
+			pt = "[TEST Lever]",
+			ru = "[TEST Lever]",
+			ko = "[TEST Lever]",
+			cn = "[TEST Lever]",
+		},
+	},
+	[2907] = {
+		readable = "Water Pitcher",
+		model = 189815,
+		text = {
+			en = "Water Pitcher",
+			es = "Jarra de agua",
+			de = "Wasserkanne",
+			fr = "Cruche d'eau",
+			it = "Water Pitcher",
+			pt = "Jarra d'Água",
+			ru = "Кувшин для воды",
+			ko = "물병",
+			cn = "水罐",
+		},
+	},
 	[2908] = {
 		readable = "Sealed Supply Crate",
 		icon = "Interface/Icons/INV_Crate_03",
+		model = 198167,
 		text = {
 			en = "Sealed Supply Crate",
 			es = "Cajón de suministros sellado",
@@ -918,6 +3190,7 @@ root("ObjectDB", {
 	[2910] = {
 		readable = "Well Stone",
 		icon = "Interface/Icons/inv_stone_12",
+		model = 198947,
 		text = {
 			en = "Well Stone",
 			es = "Piedra de pozo",
@@ -933,6 +3206,7 @@ root("ObjectDB", {
 	[2912] = {
 		readable = "Ambercorn",
 		icon = "Interface/Icons/inv_misc_food_02",
+		model = 202297,
 		text = {
 			en = "Ambercorn",
 			es = "Bellota ámbar",
@@ -947,6 +3221,7 @@ root("ObjectDB", {
 	},
 	[2933] = {
 		readable = "Seal of the Earth",
+		model = 199975,
 		text = {
 			en = "Seal of the Earth",
 			es = "Sello de la Tierra",
@@ -961,6 +3236,7 @@ root("ObjectDB", {
 	},
 	[3076] = {
 		readable = "Dirt-stained Map",
+		model = 198457,
 		text = {
 			en = "Dirt-stained Map",
 			es = "Mapa manchado",
@@ -976,6 +3252,7 @@ root("ObjectDB", {
 	[3189] = {
 		readable = "Attack Plan: Valley of Trials",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 201113,
 		text = {
 			en = "Attack Plan: Valley of Trials",
 			es = "Plan de ataque: Valle de los Retos",
@@ -991,6 +3268,7 @@ root("ObjectDB", {
 	[3190] = {
 		readable = "Attack Plan: Sen'jin Village",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 201113,
 		text = {
 			en = "Attack Plan: Sen'jin Village",
 			es = "Plan de ataque: Poblado Sen'jin",
@@ -1003,9 +3281,25 @@ root("ObjectDB", {
 			cn = "进攻计划：森金村",
 		},
 	},
+	[3191] = {
+		readable = "Attack Plan: Razor Hill",
+		model = 201113,
+		text = {
+			en = "Attack Plan: Razor Hill",
+			es = "[Attack Plan: Razor Hill]",
+			de = "[Attack Plan: Razor Hill]",
+			fr = "[Attack Plan: Razor Hill]",
+			it = "[Attack Plan: Razor Hill]",
+			pt = "[Attack Plan: Razor Hill]",
+			ru = "[Attack Plan: Razor Hill]",
+			ko = "[Attack Plan: Razor Hill]",
+			cn = "[Attack Plan: Razor Hill]",
+		},
+	},
 	[3192] = {
 		readable = "Attack Plan: Orgrimmar",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 201113,
 		text = {
 			en = "Attack Plan: Orgrimmar",
 			es = "Plan de ataque: Orgrimmar",
@@ -1018,9 +3312,40 @@ root("ObjectDB", {
 			cn = "进攻计划：奥格瑞玛",
 		},
 	},
+	[3219] = {
+		readable = "Scott's Cannon",
+		model = 200947,
+		text = {
+			en = "Scott's Cannon",
+			es = "[Scott's Cannon]",
+			de = "[Scott's Cannon]",
+			fr = "[Scott's Cannon]",
+			it = "[Scott's Cannon]",
+			pt = "[Scott's Cannon]",
+			ru = "[Scott's Cannon]",
+			ko = "[Scott's Cannon]",
+			cn = "[Scott's Cannon]",
+		},
+	},
+	[3221] = {
+		readable = "Scott's Placed Cannon",
+		model = 200947,
+		text = {
+			en = "Scott's Placed Cannon",
+			es = "[Scott's Placed Cannon]",
+			de = "[Scott's Placed Cannon]",
+			fr = "[Scott's Placed Cannon]",
+			it = "[Scott's Placed Cannon]",
+			pt = "[Scott's Placed Cannon]",
+			ru = "[Scott's Placed Cannon]",
+			ko = "[Scott's Placed Cannon]",
+			cn = "[Scott's Placed Cannon]",
+		},
+	},
 	[3236] = {
 		readable = "Gnomish Toolbox",
 		icon = "Interface/Icons/inv_misc_wrench_01",
+		model = 197617,
 		text = {
 			en = "Gnomish Toolbox",
 			es = "Caja de herramientas gnoma",
@@ -1036,6 +3361,7 @@ root("ObjectDB", {
 	[3237] = {
 		readable = "Imprisoned Darkspear",
 		icon = "Interface/Icons/inv_misc_bone_humanskull_01",
+		model = 190440,
 		text = {
 			en = "Imprisoned Darkspear",
 			es = "Lanza Negra encarcelado",
@@ -1045,6 +3371,7 @@ root("ObjectDB", {
 			pt = "Lançanegra Aprisionado",
 			ru = "Останки пленника из клана Черного Копья",
 			ko = "사로잡힌 검은창부족의 영혼",
+			cn = "[Imprisoned Darkspear]",
 		},
 	},
 	[3238] = {
@@ -1065,6 +3392,7 @@ root("ObjectDB", {
 	},
 	[3239] = {
 		readable = "Benedict's Chest",
+		model = 196982,
 		text = {
 			en = "Benedict's Chest",
 			es = "Cofre de Benedict",
@@ -1080,6 +3408,7 @@ root("ObjectDB", {
 	[3240] = {
 		readable = "Taillasher Eggs",
 		icon = "Interface/Icons/inv_egg_02",
+		model = 199225,
 		text = {
 			en = "Taillasher Eggs",
 			es = "Huevos de colazote",
@@ -1095,6 +3424,7 @@ root("ObjectDB", {
 	[3290] = {
 		readable = "Stolen Supply Sack",
 		icon = "Interface/Icons/inv_misc_bag_10",
+		model = 200442,
 		text = {
 			en = "Stolen Supply Sack",
 			es = "Saco de provisiones robado",
@@ -1107,9 +3437,25 @@ root("ObjectDB", {
 			cn = "被偷走的补给袋",
 		},
 	},
+	[3524] = {
+		readable = "The Demon Seed",
+		model = 201056,
+		text = {
+			en = "The Demon Seed",
+			es = "La semilla del Demonio",
+			de = "Die Dämonensaat",
+			fr = "La Graine démoniaque",
+			it = "The Demon Seed",
+			pt = "A Semente Demoníaca",
+			ru = "Демоново семя",
+			ko = "악마의 씨앗",
+			cn = "恶魔之种",
+		},
+	},
 	[3525] = {
 		readable = "The Altar of Fire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 189280,
 		text = {
 			en = "The Altar of Fire",
 			es = "El Altar de Fuego",
@@ -1138,8 +3484,24 @@ root("ObjectDB", {
 			cn = "丰满的蘑菇",
 		},
 	},
+	[3642] = {
+		readable = "Kolkars' Booty",
+		model = 196979,
+		text = {
+			en = "Kolkars' Booty",
+			es = "Botín Kolkar",
+			de = "Kolkars Beute",
+			fr = "Butin des Kolkar",
+			it = "Kolkars' Booty",
+			pt = "Butim de Kolkar",
+			ru = "Добыча Колкара",
+			ko = "콜카르 노획물 궤짝",
+			cn = "科卡尔的战利品",
+		},
+	},
 	[3643] = {
 		readable = "Old Footlocker",
+		model = 198238,
 		text = {
 			en = "Old Footlocker",
 			es = "Baúl antiguo",
@@ -1168,6 +3530,21 @@ root("ObjectDB", {
 			cn = "巴尔莫丹飞行器",
 		},
 	},
+	[3645] = {
+		readable = "Ripe Watermelon",
+		model = 201142,
+		text = {
+			en = "Ripe Watermelon",
+			es = "[Ripe Watermelon]",
+			de = "[Ripe Watermelon]",
+			fr = "[Ripe Watermelon]",
+			it = "[Ripe Watermelon]",
+			pt = "[Ripe Watermelon]",
+			ru = "[Ripe Watermelon]",
+			ko = "[Ripe Watermelon]",
+			cn = "[Ripe Watermelon]",
+		},
+	},
 	[3646] = {
 		readable = "General Twinbraid's Strongbox",
 		icon = "Interface/Icons/inv_misc_gem_amethyst_02",
@@ -1181,6 +3558,382 @@ root("ObjectDB", {
 			pt = "Cofre do General Duas-tranças",
 			ru = "Сейф генерала Двукоссы",
 			ko = "트윈브레이드 장군의 금고",
+			cn = "[General Twinbraid's Strongbox]",
+		},
+	},
+	[3657] = {
+		readable = "Abandoned Mine Car",
+		model = 201072,
+		text = {
+			en = "Abandoned Mine Car",
+			es = "[Abandoned Mine Car]",
+			de = "[Abandoned Mine Car]",
+			fr = "[Abandoned Mine Car]",
+			it = "[Abandoned Mine Car]",
+			pt = "[Abandoned Mine Car]",
+			ru = "[Abandoned Mine Car]",
+			ko = "[Abandoned Mine Car]",
+			cn = "[Abandoned Mine Car]",
+		},
+	},
+	[3658] = {
+		readable = "Water Barrel",
+		model = 200884,
+		text = {
+			en = "Water Barrel",
+			es = "Barril de Agua",
+			de = "Wasserfass",
+			fr = "Tonneau d'eau",
+			it = "Water Barrel",
+			pt = "Barril de Água",
+			ru = "Бочка с водой",
+			ko = "물통",
+			cn = "水桶",
+		},
+	},
+	[3659] = {
+		readable = "Barrel of Melon Juice",
+		model = 200884,
+		text = {
+			en = "Barrel of Melon Juice",
+			es = "Barril de zumo de melón",
+			de = "Fass Melonensaft",
+			fr = "Tonneau de jus de melon",
+			it = "Barrel of Melon Juice",
+			pt = "Barril de Suco de Melão",
+			ru = "Бочка дынного сока",
+			ko = "멜론 주스통",
+			cn = "一桶果汁",
+		},
+	},
+	[3660] = {
+		readable = "Armor Crate",
+		model = 200960,
+		text = {
+			en = "Armor Crate",
+			es = "Cajón de armaduras",
+			de = "Rüstungskiste",
+			fr = "Caisse d'armures",
+			it = "Armor Crate",
+			pt = "Caixote de Armaduras",
+			ru = "Оружейный ящик",
+			ko = "방어구 상자",
+			cn = "铠甲箱",
+		},
+	},
+	[3661] = {
+		readable = "Weapon Crate",
+		model = 200960,
+		text = {
+			en = "Weapon Crate",
+			es = "Cajón de armas",
+			de = "Waffenkiste",
+			fr = "Caisse d'armes",
+			it = "Weapon Crate",
+			pt = "Caixote de Armas",
+			ru = "Ящик с оружием",
+			ko = "무기 상자",
+			cn = "武器箱",
+		},
+	},
+	[3662] = {
+		readable = "Food Crate",
+		model = 200961,
+		text = {
+			en = "Food Crate",
+			es = "Cajón de comida",
+			de = "Nahrungsmittelkiste",
+			fr = "Caisse de nourriture",
+			it = "Food Crate",
+			pt = "Caixote de Comida",
+			ru = "Ящик со съестными припасами",
+			ko = "음식 상자",
+			cn = "食品箱",
+		},
+	},
+	[3666] = {
+		readable = "Test Goober Barrel",
+		model = 200884,
+		text = {
+			en = "Test Goober Barrel",
+			es = "[Test Goober Barrel]",
+			de = "[Test Goober Barrel]",
+			fr = "[Test Goober Barrel]",
+			it = "[Test Goober Barrel]",
+			pt = "[Test Goober Barrel]",
+			ru = "[Test Goober Barrel]",
+			ko = "[Test Goober Barrel]",
+			cn = "[Test Goober Barrel]",
+		},
+	},
+	[3667] = {
+		readable = "Test Goober bombwagon",
+		model = 200898,
+		text = {
+			en = "Test Goober bombwagon",
+			es = "[Test Goober bombwagon]",
+			de = "[Test Goober bombwagon]",
+			fr = "[Test Goober bombwagon]",
+			it = "[Test Goober bombwagon]",
+			pt = "[Test Goober bombwagon]",
+			ru = "[Test Goober bombwagon]",
+			ko = "[Test Goober bombwagon]",
+			cn = "[Test Goober bombwagon]",
+		},
+	},
+	[3668] = {
+		readable = "Test Goober Book01",
+		model = 200900,
+		text = {
+			en = "Test Goober Book01",
+			es = "[Test Goober Book01]",
+			de = "[Test Goober Book01]",
+			fr = "[Test Goober Book01]",
+			it = "[Test Goober Book01]",
+			pt = "[Test Goober Book01]",
+			ru = "[Test Goober Book01]",
+			ko = "[Test Goober Book01]",
+			cn = "[Test Goober Book01]",
+		},
+	},
+	[3669] = {
+		readable = "Test Goober BookOpenMedium01",
+		model = 200912,
+		text = {
+			en = "Test Goober BookOpenMedium01",
+			es = "[Test Goober BookOpenMedium01]",
+			de = "[Test Goober BookOpenMedium01]",
+			fr = "[Test Goober BookOpenMedium01]",
+			it = "[Test Goober BookOpenMedium01]",
+			pt = "[Test Goober BookOpenMedium01]",
+			ru = "[Test Goober BookOpenMedium01]",
+			ko = "[Test Goober BookOpenMedium01]",
+			cn = "[Test Goober BookOpenMedium01]",
+		},
+	},
+	[3670] = {
+		readable = "Test Goober BookTrapArm",
+		model = 200916,
+		text = {
+			en = "Test Goober BookTrapArm",
+			es = "[Test Goober BookTrapArm]",
+			de = "[Test Goober BookTrapArm]",
+			fr = "[Test Goober BookTrapArm]",
+			it = "[Test Goober BookTrapArm]",
+			pt = "[Test Goober BookTrapArm]",
+			ru = "[Test Goober BookTrapArm]",
+			ko = "[Test Goober BookTrapArm]",
+			cn = "[Test Goober BookTrapArm]",
+		},
+	},
+	[3671] = {
+		readable = "Test Goober BittpmBigRed",
+		model = 200936,
+		text = {
+			en = "Test Goober BittpmBigRed",
+			es = "[Test Goober BittpmBigRed]",
+			de = "[Test Goober BittpmBigRed]",
+			fr = "[Test Goober BittpmBigRed]",
+			it = "[Test Goober BittpmBigRed]",
+			pt = "[Test Goober BittpmBigRed]",
+			ru = "[Test Goober BittpmBigRed]",
+			ko = "[Test Goober BittpmBigRed]",
+			cn = "[Test Goober BittpmBigRed]",
+		},
+	},
+	[3672] = {
+		readable = "Test Goober Cannon01",
+		model = 200947,
+		text = {
+			en = "Test Goober Cannon01",
+			es = "[Test Goober Cannon01]",
+			de = "[Test Goober Cannon01]",
+			fr = "[Test Goober Cannon01]",
+			it = "[Test Goober Cannon01]",
+			pt = "[Test Goober Cannon01]",
+			ru = "[Test Goober Cannon01]",
+			ko = "[Test Goober Cannon01]",
+			cn = "[Test Goober Cannon01]",
+		},
+	},
+	[3673] = {
+		readable = "Test Goober Crate01",
+		model = 200960,
+		text = {
+			en = "Test Goober Crate01",
+			es = "[Test Goober Crate01]",
+			de = "[Test Goober Crate01]",
+			fr = "[Test Goober Crate01]",
+			it = "[Test Goober Crate01]",
+			pt = "[Test Goober Crate01]",
+			ru = "[Test Goober Crate01]",
+			ko = "[Test Goober Crate01]",
+			cn = "[Test Goober Crate01]",
+		},
+	},
+	[3674] = {
+		readable = "Test Goober Crate02",
+		model = 200961,
+		text = {
+			en = "Test Goober Crate02",
+			es = "[Test Goober Crate02]",
+			de = "[Test Goober Crate02]",
+			fr = "[Test Goober Crate02]",
+			it = "[Test Goober Crate02]",
+			pt = "[Test Goober Crate02]",
+			ru = "[Test Goober Crate02]",
+			ko = "[Test Goober Crate02]",
+			cn = "[Test Goober Crate02]",
+		},
+	},
+	[3675] = {
+		readable = "Test Goober DwarvenMemorial",
+		model = 200971,
+		text = {
+			en = "Test Goober DwarvenMemorial",
+			es = "[Test Goober DwarvenMemorial]",
+			de = "[Test Goober DwarvenMemorial]",
+			fr = "[Test Goober DwarvenMemorial]",
+			it = "[Test Goober DwarvenMemorial]",
+			pt = "[Test Goober DwarvenMemorial]",
+			ru = "[Test Goober DwarvenMemorial]",
+			ko = "[Test Goober DwarvenMemorial]",
+			cn = "[Test Goober DwarvenMemorial]",
+		},
+	},
+	[3676] = {
+		readable = "Test Goober FlyingMachine",
+		model = 201006,
+		text = {
+			en = "Test Goober FlyingMachine",
+			es = "[Test Goober FlyingMachine]",
+			de = "[Test Goober FlyingMachine]",
+			fr = "[Test Goober FlyingMachine]",
+			it = "[Test Goober FlyingMachine]",
+			pt = "[Test Goober FlyingMachine]",
+			ru = "[Test Goober FlyingMachine]",
+			ko = "[Test Goober FlyingMachine]",
+			cn = "[Test Goober FlyingMachine]",
+		},
+	},
+	[3677] = {
+		readable = "Test Goober JewelRed",
+		model = 201056,
+		text = {
+			en = "Test Goober JewelRed",
+			es = "[Test Goober JewelRed]",
+			de = "[Test Goober JewelRed]",
+			fr = "[Test Goober JewelRed]",
+			it = "[Test Goober JewelRed]",
+			pt = "[Test Goober JewelRed]",
+			ru = "[Test Goober JewelRed]",
+			ko = "[Test Goober JewelRed]",
+			cn = "[Test Goober JewelRed]",
+		},
+	},
+	[3678] = {
+		readable = "Test Goober LeverMetal",
+		model = 201061,
+		text = {
+			en = "Test Goober LeverMetal",
+			es = "[Test Goober LeverMetal]",
+			de = "[Test Goober LeverMetal]",
+			fr = "[Test Goober LeverMetal]",
+			it = "[Test Goober LeverMetal]",
+			pt = "[Test Goober LeverMetal]",
+			ru = "[Test Goober LeverMetal]",
+			ko = "[Test Goober LeverMetal]",
+			cn = "[Test Goober LeverMetal]",
+		},
+	},
+	[3679] = {
+		readable = "Test Goober MineCar",
+		model = 201072,
+		text = {
+			en = "Test Goober MineCar",
+			es = "[Test Goober MineCar]",
+			de = "[Test Goober MineCar]",
+			fr = "[Test Goober MineCar]",
+			it = "[Test Goober MineCar]",
+			pt = "[Test Goober MineCar]",
+			ru = "[Test Goober MineCar]",
+			ko = "[Test Goober MineCar]",
+			cn = "[Test Goober MineCar]",
+		},
+	},
+	[3680] = {
+		readable = "Test Goober RuneBlue",
+		model = 201101,
+		text = {
+			en = "Test Goober RuneBlue",
+			es = "[Test Goober RuneBlue]",
+			de = "[Test Goober RuneBlue]",
+			fr = "[Test Goober RuneBlue]",
+			it = "[Test Goober RuneBlue]",
+			pt = "[Test Goober RuneBlue]",
+			ru = "[Test Goober RuneBlue]",
+			ko = "[Test Goober RuneBlue]",
+			cn = "[Test Goober RuneBlue]",
+		},
+	},
+	[3681] = {
+		readable = "Test Goober RuneGroundBlue",
+		model = 201103,
+		text = {
+			en = "Test Goober RuneGroundBlue",
+			es = "[Test Goober RuneGroundBlue]",
+			de = "[Test Goober RuneGroundBlue]",
+			fr = "[Test Goober RuneGroundBlue]",
+			it = "[Test Goober RuneGroundBlue]",
+			pt = "[Test Goober RuneGroundBlue]",
+			ru = "[Test Goober RuneGroundBlue]",
+			ko = "[Test Goober RuneGroundBlue]",
+			cn = "[Test Goober RuneGroundBlue]",
+		},
+	},
+	[3682] = {
+		readable = "Test Goober Scroll01",
+		model = 201113,
+		text = {
+			en = "Test Goober Scroll01",
+			es = "[Test Goober Scroll01]",
+			de = "[Test Goober Scroll01]",
+			fr = "[Test Goober Scroll01]",
+			it = "[Test Goober Scroll01]",
+			pt = "[Test Goober Scroll01]",
+			ru = "[Test Goober Scroll01]",
+			ko = "[Test Goober Scroll01]",
+			cn = "[Test Goober Scroll01]",
+		},
+	},
+	[3683] = {
+		readable = "Test Goober Torch01",
+		model = 201129,
+		text = {
+			en = "Test Goober Torch01",
+			es = "[Test Goober Torch01]",
+			de = "[Test Goober Torch01]",
+			fr = "[Test Goober Torch01]",
+			it = "[Test Goober Torch01]",
+			pt = "[Test Goober Torch01]",
+			ru = "[Test Goober Torch01]",
+			ko = "[Test Goober Torch01]",
+			cn = "[Test Goober Torch01]",
+		},
+	},
+	[3684] = {
+		readable = "Test Goober Watermelon",
+		model = 201142,
+		text = {
+			en = "Test Goober Watermelon",
+			es = "[Test Goober Watermelon]",
+			de = "[Test Goober Watermelon]",
+			fr = "[Test Goober Watermelon]",
+			it = "[Test Goober Watermelon]",
+			pt = "[Test Goober Watermelon]",
+			ru = "[Test Goober Watermelon]",
+			ko = "[Test Goober Watermelon]",
+			cn = "[Test Goober Watermelon]",
 		},
 	},
 	[3685] = {
@@ -1199,6 +3952,561 @@ root("ObjectDB", {
 			cn = "异种蝎土丘",
 		},
 	},
+	[3689] = {
+		readable = "Weapon Crate",
+		model = 200960,
+		text = {
+			en = "Weapon Crate",
+			es = "Cajón de armas",
+			de = "Waffenkiste",
+			fr = "Caisse d'armes",
+			it = "Weapon Crate",
+			pt = "Caixote de Armas",
+			ru = "Ящик с оружием",
+			ko = "무기 상자",
+			cn = "武器箱",
+		},
+	},
+	[3690] = {
+		readable = "Food Crate",
+		model = 200961,
+		text = {
+			en = "Food Crate",
+			es = "Cajón de comida",
+			de = "Nahrungsmittelkiste",
+			fr = "Caisse de nourriture",
+			it = "Food Crate",
+			pt = "Caixote de Comida",
+			ru = "Ящик со съестными припасами",
+			ko = "음식 상자",
+			cn = "[Food Crate]",
+		},
+	},
+	[3691] = {
+		readable = "Food Crate",
+		model = 200961,
+		text = {
+			en = "Food Crate",
+			es = "Cajón de comida",
+			de = "Nahrungsmittelkiste",
+			fr = "Caisse de nourriture",
+			it = "Food Crate",
+			pt = "Caixote de Comida",
+			ru = "Ящик со съестными припасами",
+			ko = "음식 상자",
+			cn = "食品箱",
+		},
+	},
+	[3692] = {
+		readable = "Food Crate",
+		model = 200961,
+		text = {
+			en = "Food Crate",
+			es = "[Food Crate]",
+			de = "[Food Crate]",
+			fr = "[Food Crate]",
+			it = "[Food Crate]",
+			pt = "[Food Crate]",
+			ru = "[Food Crate]",
+			ko = "[Food Crate]",
+			cn = "[Food Crate]",
+		},
+	},
+	[3693] = {
+		readable = "Food Crate",
+		model = 200961,
+		text = {
+			en = "Food Crate",
+			es = "Cajón de comida",
+			de = "Nahrungsmittelkiste",
+			fr = "Caisse de nourriture",
+			it = "Food Crate",
+			pt = "Caixote de Comida",
+			ru = "Ящик со съестными припасами",
+			ko = "음식 상자",
+			cn = "食品箱",
+		},
+	},
+	[3694] = {
+		readable = "Food Crate",
+		model = 200961,
+		text = {
+			en = "Food Crate",
+			es = "Cajón de comida",
+			de = "Nahrungsmittelkiste",
+			fr = "Caisse de nourriture",
+			it = "Food Crate",
+			pt = "Caixote de Comida",
+			ru = "Ящик со съестными припасами",
+			ko = "음식 상자",
+			cn = "食品箱",
+		},
+	},
+	[3695] = {
+		readable = "Food Crate",
+		model = 200961,
+		text = {
+			en = "Food Crate",
+			es = "Cajón de comida",
+			de = "Nahrungsmittelkiste",
+			fr = "Caisse de nourriture",
+			it = "Food Crate",
+			pt = "Caixote de Comida",
+			ru = "Ящик со съестными припасами",
+			ko = "음식 상자",
+			cn = "食品箱",
+		},
+	},
+	[3696] = {
+		readable = "Food Crate",
+		model = 200961,
+		text = {
+			en = "Food Crate",
+			es = "[Food Crate]",
+			de = "[Food Crate]",
+			fr = "[Food Crate]",
+			it = "[Food Crate]",
+			pt = "[Food Crate]",
+			ru = "[Food Crate]",
+			ko = "[Food Crate]",
+			cn = "[Food Crate]",
+		},
+	},
+	[3697] = {
+		readable = "Food Crate",
+		model = 200961,
+		text = {
+			en = "Food Crate",
+			es = "[Food Crate]",
+			de = "[Food Crate]",
+			fr = "[Food Crate]",
+			it = "[Food Crate]",
+			pt = "[Food Crate]",
+			ru = "[Food Crate]",
+			ko = "[Food Crate]",
+			cn = "[Food Crate]",
+		},
+	},
+	[3698] = {
+		readable = "Food Crate",
+		model = 200961,
+		text = {
+			en = "Food Crate",
+			es = "[Food Crate]",
+			de = "[Food Crate]",
+			fr = "[Food Crate]",
+			it = "[Food Crate]",
+			pt = "[Food Crate]",
+			ru = "[Food Crate]",
+			ko = "[Food Crate]",
+			cn = "[Food Crate]",
+		},
+	},
+	[3699] = {
+		readable = "Food Crate",
+		model = 200961,
+		text = {
+			en = "Food Crate",
+			es = "[Food Crate]",
+			de = "[Food Crate]",
+			fr = "[Food Crate]",
+			it = "[Food Crate]",
+			pt = "[Food Crate]",
+			ru = "[Food Crate]",
+			ko = "[Food Crate]",
+			cn = "[Food Crate]",
+		},
+	},
+	[3701] = {
+		readable = "Food Crate",
+		model = 200961,
+		text = {
+			en = "Food Crate",
+			es = "[Food Crate]",
+			de = "[Food Crate]",
+			fr = "[Food Crate]",
+			it = "[Food Crate]",
+			pt = "[Food Crate]",
+			ru = "[Food Crate]",
+			ko = "[Food Crate]",
+			cn = "[Food Crate]",
+		},
+	},
+	[3702] = {
+		readable = "Armor Crate",
+		model = 200960,
+		text = {
+			en = "Armor Crate",
+			es = "Cajón de armaduras",
+			de = "Rüstungskiste",
+			fr = "Caisse d'armures",
+			it = "Armor Crate",
+			pt = "Caixote de Armaduras",
+			ru = "Оружейный ящик",
+			ko = "방어구 상자",
+			cn = "铠甲箱",
+		},
+	},
+	[3703] = {
+		readable = "Armor Crate",
+		model = 200960,
+		text = {
+			en = "Armor Crate",
+			es = "Cajón de armaduras",
+			de = "Rüstungskiste",
+			fr = "Caisse d'armures",
+			it = "Armor Crate",
+			pt = "Caixote de Armaduras",
+			ru = "Оружейный ящик",
+			ko = "방어구 상자",
+			cn = "铠甲箱",
+		},
+	},
+	[3704] = {
+		readable = "Weapon Crate",
+		model = 200960,
+		text = {
+			en = "Weapon Crate",
+			es = "Cajón de armas",
+			de = "Waffenkiste",
+			fr = "Caisse d'armes",
+			it = "Weapon Crate",
+			pt = "Caixote de Armas",
+			ru = "Ящик с оружием",
+			ko = "무기 상자",
+			cn = "武器箱",
+		},
+	},
+	[3705] = {
+		readable = "Barrel of Milk",
+		model = 200884,
+		text = {
+			en = "Barrel of Milk",
+			es = "Barril de leche",
+			de = "Fass mit Milch",
+			fr = "Tonneau de lait",
+			it = "Barrel of Milk",
+			pt = "Barril de Leite",
+			ru = "Бочка молока",
+			ko = "우유통",
+			cn = "一桶牛奶",
+		},
+	},
+	[3706] = {
+		readable = "Barrel of Sweet Nectar",
+		model = 200884,
+		text = {
+			en = "Barrel of Sweet Nectar",
+			es = "Barril de néctar dulce",
+			de = "Fass mit süßem Nektar",
+			fr = "Tonneau de nectar sucré",
+			it = "Barrel of Sweet Nectar",
+			pt = "Barril de Néctar Doce",
+			ru = "Бочка сладкого нектара",
+			ko = "달콤한 과즙통",
+			cn = "一桶蜂蜜酒",
+		},
+	},
+	[3707] = {
+		readable = "Food Crate",
+		model = 200961,
+		text = {
+			en = "Food Crate",
+			es = "Cajón de comida",
+			de = "Nahrungsmittelkiste",
+			fr = "Caisse de nourriture",
+			it = "Food Crate",
+			pt = "Caixote de Comida",
+			ru = "Ящик со съестными припасами",
+			ko = "음식 상자",
+			cn = "食品箱",
+		},
+	},
+	[3708] = {
+		readable = "Food Crate",
+		model = 200961,
+		text = {
+			en = "Food Crate",
+			es = "[Food Crate]",
+			de = "[Food Crate]",
+			fr = "[Food Crate]",
+			it = "[Food Crate]",
+			pt = "[Food Crate]",
+			ru = "[Food Crate]",
+			ko = "[Food Crate]",
+			cn = "[Food Crate]",
+		},
+	},
+	[3709] = {
+		readable = "Food Crate",
+		model = 200961,
+		text = {
+			en = "Food Crate",
+			es = "[Food Crate]",
+			de = "[Food Crate]",
+			fr = "[Food Crate]",
+			it = "[Food Crate]",
+			pt = "[Food Crate]",
+			ru = "[Food Crate]",
+			ko = "[Food Crate]",
+			cn = "[Food Crate]",
+		},
+	},
+	[3710] = {
+		readable = "Food Crate",
+		model = 200961,
+		text = {
+			en = "Food Crate",
+			es = "[Food Crate]",
+			de = "[Food Crate]",
+			fr = "[Food Crate]",
+			it = "[Food Crate]",
+			pt = "[Food Crate]",
+			ru = "[Food Crate]",
+			ko = "[Food Crate]",
+			cn = "[Food Crate]",
+		},
+	},
+	[3712] = {
+		readable = "Food Crate",
+		model = 200961,
+		text = {
+			en = "Food Crate",
+			es = "[Food Crate]",
+			de = "[Food Crate]",
+			fr = "[Food Crate]",
+			it = "[Food Crate]",
+			pt = "[Food Crate]",
+			ru = "[Food Crate]",
+			ko = "[Food Crate]",
+			cn = "[Food Crate]",
+		},
+	},
+	[3713] = {
+		readable = "Food Crate",
+		model = 200961,
+		text = {
+			en = "Food Crate",
+			es = "[Food Crate]",
+			de = "[Food Crate]",
+			fr = "[Food Crate]",
+			it = "[Food Crate]",
+			pt = "[Food Crate]",
+			ru = "[Food Crate]",
+			ko = "[Food Crate]",
+			cn = "[Food Crate]",
+		},
+	},
+	[3714] = {
+		readable = "Alliance Strongbox",
+		model = 219372,
+		text = {
+			en = "Alliance Strongbox",
+			es = "Caja fuerte de la Alianza",
+			de = "Geldkassette der Allianz",
+			fr = "Coffre de l'Alliance",
+			it = "Alliance Strongbox",
+			pt = "Caixa-forte da Aliança",
+			ru = "Сейф Альянса",
+			ko = "얼라이언스 금고",
+			cn = "联盟保险箱",
+		},
+	},
+	[3715] = {
+		readable = "Alliance Chest",
+		model = 219372,
+		text = {
+			en = "Alliance Chest",
+			es = "Cofre de la Alianza",
+			de = "Truhe der Allianz",
+			fr = "Coffre de l'Alliance",
+			it = "Alliance Chest",
+			pt = "Baú da Aliança",
+			ru = "Сундук Альянса",
+			ko = "얼라이언스 궤짝",
+			cn = "联盟宝箱",
+		},
+	},
+	[3719] = {
+		readable = "Food Crate",
+		model = 200961,
+		text = {
+			en = "Food Crate",
+			es = "Cajón de comida",
+			de = "Nahrungsmittelkiste",
+			fr = "Caisse de nourriture",
+			it = "Food Crate",
+			pt = "Caixote de Comida",
+			ru = "Ящик со съестными припасами",
+			ko = "음식 상자",
+			cn = "食品箱",
+		},
+	},
+	[3724] = {
+		readable = "Peacebloom",
+		model = 219481,
+		text = {
+			en = "Peacebloom",
+			es = "Flor de paz",
+			de = "Friedensblume",
+			fr = "Pacifique",
+			it = "Peacebloom",
+			pt = "Botão-da-paz",
+			ru = "Мироцвет",
+			ko = "평온초",
+			cn = "宁神花",
+		},
+	},
+	[3725] = {
+		readable = "Silverleaf",
+		model = 219487,
+		text = {
+			en = "Silverleaf",
+			es = "Hojaplata",
+			de = "Silberblatt",
+			fr = "Feuillargent",
+			it = "Silverleaf",
+			pt = "Folha-prata",
+			ru = "Сребролист",
+			ko = "은엽수 덤불",
+			cn = "银叶草",
+		},
+	},
+	[3726] = {
+		readable = "Earthroot",
+		model = 219489,
+		text = {
+			en = "Earthroot",
+			es = "Raíz de tierra",
+			de = "Erdwurzel",
+			fr = "Terrestrine",
+			it = "Earthroot",
+			pt = "Raiz-telúrica",
+			ru = "Землекорень",
+			ko = "뱀뿌리",
+			cn = "地根草",
+		},
+	},
+	[3727] = {
+		readable = "Mageroyal",
+		model = 219470,
+		text = {
+			en = "Mageroyal",
+			es = "Marregal",
+			de = "Maguskönigskraut",
+			fr = "Mage royal",
+			it = "Mageroyal",
+			pt = "Magi-real",
+			ru = "Магороза",
+			ko = "마법초",
+			cn = "魔皇草",
+		},
+	},
+	[3729] = {
+		readable = "Briarthorn",
+		model = 219502,
+		text = {
+			en = "Briarthorn",
+			es = "Brezospina",
+			de = "Wilddornrose",
+			fr = "Eglantine",
+			it = "Briarthorn",
+			pt = "Cravespinho",
+			ru = "Остротерн",
+			ko = "찔레가시",
+			cn = "石南草",
+		},
+	},
+	[3730] = {
+		readable = "Bruiseweed",
+		model = 219440,
+		text = {
+			en = "Bruiseweed",
+			es = "Hierba cardenal",
+			de = "Beulengras",
+			fr = "Doulourante",
+			it = "Bruiseweed",
+			pt = "Ervamossa",
+			ru = "Синячник",
+			ko = "생채기풀",
+			cn = "跌打草",
+		},
+	},
+	[3731] = {
+		readable = "Test Goober Crate01-a",
+		model = 200960,
+		text = {
+			en = "Test Goober Crate01-a",
+			es = "[Test Goober Crate01-a]",
+			de = "[Test Goober Crate01-a]",
+			fr = "[Test Goober Crate01-a]",
+			it = "[Test Goober Crate01-a]",
+			pt = "[Test Goober Crate01-a]",
+			ru = "[Test Goober Crate01-a]",
+			ko = "[Test Goober Crate01-a]",
+			cn = "[Test Goober Crate01-a]",
+		},
+	},
+	[3732] = {
+		readable = "Test Goober Crate02-a",
+		model = 200961,
+		text = {
+			en = "Test Goober Crate02-a",
+			es = "[Test Goober Crate02-a]",
+			de = "[Test Goober Crate02-a]",
+			fr = "[Test Goober Crate02-a]",
+			it = "[Test Goober Crate02-a]",
+			pt = "[Test Goober Crate02-a]",
+			ru = "[Test Goober Crate02-a]",
+			ko = "[Test Goober Crate02-a]",
+			cn = "[Test Goober Crate02-a]",
+		},
+	},
+	[3734] = {
+		readable = "Test Goober Fissure",
+		model = 201001,
+		text = {
+			en = "Test Goober Fissure",
+			es = "[Test Goober Fissure]",
+			de = "[Test Goober Fissure]",
+			fr = "[Test Goober Fissure]",
+			it = "[Test Goober Fissure]",
+			pt = "[Test Goober Fissure]",
+			ru = "[Test Goober Fissure]",
+			ko = "[Test Goober Fissure]",
+			cn = "[Test Goober Fissure]",
+		},
+	},
+	[3735] = {
+		readable = "Test Goober AlchemySet01",
+		model = 200877,
+		text = {
+			en = "Test Goober AlchemySet01",
+			es = "[Test Goober AlchemySet01]",
+			de = "[Test Goober AlchemySet01]",
+			fr = "[Test Goober AlchemySet01]",
+			it = "[Test Goober AlchemySet01]",
+			pt = "[Test Goober AlchemySet01]",
+			ru = "[Test Goober AlchemySet01]",
+			ko = "[Test Goober AlchemySet01]",
+			cn = "[Test Goober AlchemySet01]",
+		},
+	},
+	[3736] = {
+		readable = "Test Goober Fissure -a",
+		model = 201001,
+		text = {
+			en = "Test Goober Fissure -a",
+			es = "[Test Goober Fissure -a]",
+			de = "[Test Goober Fissure -a]",
+			fr = "[Test Goober Fissure -a]",
+			it = "[Test Goober Fissure -a]",
+			pt = "[Test Goober Fissure -a]",
+			ru = "[Test Goober Fissure -a]",
+			ko = "[Test Goober Fissure -a]",
+			cn = "[Test Goober Fissure -a]",
+		},
+	},
 	[3737] = {
 		readable = "Bubbling Fissure",
 		icon = "Interface/Icons/inv_misc_dust_02",
@@ -1213,6 +4521,66 @@ root("ObjectDB", {
 			ru = "Бурлящая расщелина",
 			ko = "거품이 나오는 균열",
 			cn = "冒泡的裂隙",
+		},
+	},
+	[3740] = {
+		readable = "Bubbling Fissure",
+		model = 201001,
+		text = {
+			en = "Bubbling Fissure",
+			es = "Fisura burbujeante",
+			de = "Blubbernder Felsspalt",
+			fr = "Fissure bouillonnante",
+			it = "Bubbling Fissure",
+			pt = "Rachadura Borbulhante",
+			ru = "Бурлящая расщелина",
+			ko = "거품이 나오는 균열",
+			cn = "冒泡的裂隙",
+		},
+	},
+	[3743] = {
+		readable = "Fissure Plant",
+		model = 189772,
+		text = {
+			en = "Fissure Plant",
+			es = "Planta de la fisura",
+			de = "Felsspaltenpflanze",
+			fr = "Plante des crevasses",
+			it = "Fissure Plant",
+			pt = "Planta da Fenda",
+			ru = "Ущельник",
+			ko = "균열 식물",
+			cn = "裂开的植物",
+		},
+	},
+	[3763] = {
+		readable = "Copper Vein",
+		model = 219514,
+		text = {
+			en = "Copper Vein",
+			es = "Filón de cobre",
+			de = "Kupfervorkommen",
+			fr = "Filon de cuivre",
+			it = "Copper Vein",
+			pt = "Veio de Cobre",
+			ru = "Медная жила",
+			ko = "구리 광맥",
+			cn = "铜矿",
+		},
+	},
+	[3764] = {
+		readable = "Tin Vein",
+		model = 219568,
+		text = {
+			en = "Tin Vein",
+			es = "Filón de estaño",
+			de = "Zinnvorkommen",
+			fr = "Filon d'étain",
+			it = "Tin Vein",
+			pt = "Veio de Estanho",
+			ru = "Оловянная Жила",
+			ko = "주석 광맥",
+			cn = "锡矿",
 		},
 	},
 	[3767] = {
@@ -1250,6 +4618,7 @@ root("ObjectDB", {
 	[3972] = {
 		readable = "WANTED",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 199424,
 		text = {
 			en = "WANTED",
 			es = "SE BUSCA",
@@ -1278,6 +4647,36 @@ root("ObjectDB", {
 			cn = "主控制阀",
 		},
 	},
+	[4095] = {
+		readable = "Alliance Strongbox",
+		model = 219372,
+		text = {
+			en = "Alliance Strongbox",
+			es = "[Alliance Strongbox]",
+			de = "[Alliance Strongbox]",
+			fr = "[Alliance Strongbox]",
+			it = "[Alliance Strongbox]",
+			pt = "[Alliance Strongbox]",
+			ru = "[Alliance Strongbox]",
+			ko = "[Alliance Strongbox]",
+			cn = "[Alliance Strongbox]",
+		},
+	},
+	[4096] = {
+		readable = "Alliance Chest",
+		model = 219372,
+		text = {
+			en = "Alliance Chest",
+			es = "Cofre de la Alianza",
+			de = "Truhe der Allianz",
+			fr = "Coffre de l'Alliance",
+			it = "Alliance Chest",
+			pt = "Baú da Aliança",
+			ru = "Сундук Альянса",
+			ko = "얼라이언스 궤짝",
+			cn = "联盟宝箱",
+		},
+	},
 	[4141] = {
 		readable = "Control Console",
 		icon = "Interface/Icons/inv_misc_gear_01",
@@ -1294,9 +4693,85 @@ root("ObjectDB", {
 			cn = "控制台",
 		},
 	},
+	[4148] = {
+		readable = "Mithril Bound Chest",
+		model = 219372,
+		text = {
+			en = "Mithril Bound Chest",
+			es = "[Mithril Bound Chest]",
+			de = "[Mithril Bound Chest]",
+			fr = "[Mithril Bound Chest]",
+			it = "[Mithril Bound Chest]",
+			pt = "[Mithril Bound Chest]",
+			ru = "[Mithril Bound Chest]",
+			ko = "[Mithril Bound Chest]",
+			cn = "[Mithril Bound Chest]",
+		},
+	},
+	[4149] = {
+		readable = "Solid Chest",
+		model = 219372,
+		text = {
+			en = "Solid Chest",
+			es = "Cofre sólido",
+			de = "Robuste Truhe",
+			fr = "Coffre solide",
+			it = "Solid Chest",
+			pt = "Baú Sólido",
+			ru = "Добротный сундук",
+			ko = "단단한 궤짝",
+			cn = "坚固的箱子",
+		},
+	},
+	[4166] = {
+		readable = "Alchemical Implements",
+		model = 200877,
+		text = {
+			en = "Alchemical Implements",
+			es = "Instrumentos de alquimia",
+			de = "Alchimie-Gerätschaften",
+			fr = "Matériel d'alchimie",
+			it = "Alchemical Implements",
+			pt = "Ferramentas Alquímicas",
+			ru = "Алхимическое оборудование",
+			ko = "연금술 실험기구",
+			cn = "炼金材料店",
+		},
+	},
+	[4170] = {
+		readable = "Mesa Elevator",
+		model = 202316,
+		text = {
+			en = "Mesa Elevator",
+			es = "Elevador de la mesa",
+			de = "Mesafahrstuhl",
+			fr = "Ascenseur de Mesa",
+			it = "Ascensore della Mesa",
+			pt = "Elevador da Chapada",
+			ru = "Подъемник на нагорье",
+			ko = "절벽 승강기",
+			cn = "台地升降梯",
+		},
+	},
+	[4171] = {
+		readable = "Mesa Elevator",
+		model = 202316,
+		text = {
+			en = "Mesa Elevator",
+			es = "Elevador de la mesa",
+			de = "Mesafahrstuhl",
+			fr = "Ascenseur de Mesa",
+			it = "Ascensore della Mesa",
+			pt = "Elevador da Chapada",
+			ru = "Подъемник на нагорье",
+			ko = "절벽 승강기",
+			cn = "台地升降梯",
+		},
+	},
 	[4406] = {
 		readable = "Webwood Eggs",
 		icon = "Interface/Icons/inv_egg_02",
+		model = 200974,
 		text = {
 			en = "Webwood Eggs",
 			es = "Huevos de Tejemadera",
@@ -1312,6 +4787,7 @@ root("ObjectDB", {
 	[4608] = {
 		readable = "Timberling Sprout",
 		icon = "Interface/Icons/spell_nature_naturetouchgrow",
+		model = 201087,
 		text = {
 			en = "Timberling Sprout",
 			es = "Brote de Brezomadera",
@@ -1324,9 +4800,25 @@ root("ObjectDB", {
 			cn = "林精的新芽",
 		},
 	},
+	[5619] = {
+		readable = "Flawed Power Stone",
+		model = 198947,
+		text = {
+			en = "Flawed Power Stone",
+			es = "Piedra de poder imperfecta",
+			de = "Fehlerhafter Kraftstein",
+			fr = "Pierre de puissance imparfaite",
+			it = "Flawed Power Stone",
+			pt = "Pedra do Poder Defeituosa",
+			ru = "Треснувший камень силы",
+			ko = "혼란의 마법석",
+			cn = "有瑕疵的能量石",
+		},
+	},
 	[5620] = {
 		readable = "Flawed Power Stones",
 		icon = "Interface/Icons/inv_misc_gem_diamond_02",
+		model = 198947,
 		text = {
 			en = "Flawed Power Stones",
 			es = "Piedras de energía imperfectas",
@@ -1335,6 +4827,21 @@ root("ObjectDB", {
 			it = "Pietre del Potere Difettose",
 			pt = "Pedras do Poder Defeituosas",
 			ru = "Силовой камень с изъяном",
+			ko = "혼란의 마법석",
+			cn = "有裂痕的能量石",
+		},
+	},
+	[5621] = {
+		readable = "Flawed Power Stones",
+		model = 198947,
+		text = {
+			en = "Flawed Power Stones",
+			es = "Piedras de energía imperfectas",
+			de = "Fehlerhafte Kraftsteine",
+			fr = "Pierres de puissance imparfaites",
+			it = "Flawed Power Stones",
+			pt = "Pedras do Poder Defeituosas",
+			ru = "Камень силы с изъяном",
 			ko = "혼란의 마법석",
 			cn = "有裂痕的能量石",
 		},
@@ -1435,9 +4942,40 @@ root("ObjectDB", {
 			cn = "发芽的树叶",
 		},
 	},
+	[7923] = {
+		readable = "Denalan's Planter",
+		model = 198398,
+		text = {
+			en = "Denalan's Planter",
+			es = "Maceta de Denalan",
+			de = "Denalans Blumentopf",
+			fr = "Pot de Denalan",
+			it = "Denalan's Planter",
+			pt = "Sementeira do Denalan",
+			ru = "Кадка Деналана",
+			ko = "데날란의 화분",
+			cn = "德纳兰的培养皿",
+		},
+	},
+	[9630] = {
+		readable = "Flagongut's Fossil",
+		model = 197456,
+		text = {
+			en = "Flagongut's Fossil",
+			es = "Fósil de Gargavino",
+			de = "Flagonguts Fossil",
+			fr = "Fossile de Flagongut",
+			it = "Flagongut's Fossil",
+			pt = "Fóssil do Pançacheia",
+			ru = "Окаменелость Бутылопуза",
+			ko = "플라곤구트의 화석",
+			cn = "弗拉冈特的化石",
+		},
+	},
 	[10076] = {
 		readable = "Scrying Bowl",
 		icon = "Interface/Icons/inv_potion_04",
+		model = 201115,
 		text = {
 			en = "Scrying Bowl",
 			es = "Cuenco de visión",
@@ -1453,6 +4991,7 @@ root("ObjectDB", {
 	[11713] = {
 		readable = "Death Cap",
 		icon = "Interface/Icons/inv_mushroom_02",
+		model = 219475,
 		text = {
 			en = "Death Cap",
 			es = "Oronja verde",
@@ -1468,6 +5007,7 @@ root("ObjectDB", {
 	[11714] = {
 		readable = "Scaber Stalk",
 		icon = "Interface/Icons/inv_mushroom_10",
+		model = 219476,
 		text = {
 			en = "Scaber Stalk",
 			es = "Boleto rudo",
@@ -1480,8 +5020,54 @@ root("ObjectDB", {
 			cn = "粗柄蘑菇",
 		},
 	},
+	[11898] = {
+		readable = "Mesa Elevator",
+		model = 202316,
+		text = {
+			en = "Mesa Elevator",
+			es = "Elevador de la mesa",
+			de = "Mesafahrstuhl",
+			fr = "Ascenseur de Mesa",
+			it = "Ascensore della Mesa",
+			pt = "Elevador da Chapada",
+			ru = "Подъемник на нагорье",
+			ko = "절벽 승강기",
+			cn = "台地升降梯",
+		},
+	},
+	[11899] = {
+		readable = "Mesa Elevator",
+		model = 202316,
+		text = {
+			en = "Mesa Elevator",
+			es = "Elevador de la mesa",
+			de = "Mesafahrstuhl",
+			fr = "Ascenseur de Mesa",
+			it = "Ascensore della Mesa",
+			pt = "Elevador da Chapada",
+			ru = "Подъемник на нагорье",
+			ko = "절벽 승강기",
+			cn = "台地升降梯",
+		},
+	},
+	[12654] = {
+		readable = "Mathystra Relic",
+		model = 201094,
+		text = {
+			en = "Mathystra Relic",
+			es = "Reliquia de Mathystra",
+			de = "Mathystra-Relikt",
+			fr = "Relique de Mathystra",
+			it = "Mathystra Relic",
+			pt = "Relíquia de Mathistra",
+			ru = "Реликвия Матистры",
+			ko = "마시스트라 유물",
+			cn = "黑暗深渊遗物",
+		},
+	},
 	[12666] = {
 		readable = "Twilight Tome",
+		model = 198025,
 		text = {
 			en = "Twilight Tome",
 			es = "Escrito Crepuscular",
@@ -1494,9 +5080,39 @@ root("ObjectDB", {
 			cn = "暮光之书",
 		},
 	},
+	[13044] = {
+		readable = "Portal To Arena2",
+		text = {
+			en = "Portal To Arena2",
+			es = "[Portal To Arena2]",
+			de = "[Portal To Arena2]",
+			fr = "[Portal To Arena2]",
+			it = "[Portal To Arena2]",
+			pt = "[Portal To Arena2]",
+			ru = "[Portal To Arena2]",
+			ko = "[Portal To Arena2]",
+			cn = "[Portal To Arena2]",
+		},
+	},
+	[13359] = {
+		readable = "Cat Figurine",
+		model = 201092,
+		text = {
+			en = "Cat Figurine",
+			es = "Figura de un gato",
+			de = "Katzenstatuette",
+			fr = "Figurine de chat",
+			it = "Cat Figurine",
+			pt = "Estatueta de Gato",
+			ru = "Статуэтка кошки",
+			ko = "고양이 입상",
+			cn = "猎豹雕像",
+		},
+	},
 	[13360] = {
 		readable = "Mathystra Relic",
 		icon = "Interface/Icons/inv_misc_idol_02",
+		model = 201093,
 		text = {
 			en = "Mathystra Relic",
 			es = "Reliquia de Mathystra",
@@ -1507,6 +5123,81 @@ root("ObjectDB", {
 			ru = "Реликвия Матистры",
 			ko = "마시스트라 유물",
 			cn = "黑暗深渊遗物",
+		},
+	},
+	[13872] = {
+		readable = "Mathystra Relic",
+		model = 201095,
+		text = {
+			en = "Mathystra Relic",
+			es = "Reliquia de Mathystra",
+			de = "Mathystra-Relikt",
+			fr = "Relique de Mathystra",
+			it = "Mathystra Relic",
+			pt = "Relíquia de Mathistra",
+			ru = "Реликвия Матистры",
+			ko = "마시스트라 유물",
+			cn = "黑暗深渊遗物",
+		},
+	},
+	[13873] = {
+		readable = "Cat Figurine",
+		model = 201092,
+		text = {
+			en = "Cat Figurine",
+			es = "Figura de un gato",
+			de = "Katzenstatuette",
+			fr = "Figurine de chat",
+			it = "Cat Figurine",
+			pt = "Estatueta de Gato",
+			ru = "Статуэтка кошки",
+			ko = "고양이 입상",
+			cn = "猎豹雕像",
+		},
+	},
+	[13874] = {
+		readable = "Serpentbloom",
+		model = 219488,
+		text = {
+			en = "Serpentbloom",
+			es = "Reptilia",
+			de = "Schlangenflaum",
+			fr = "Fleur de serpent",
+			it = "Bocciolo di Serpente",
+			pt = "Ofídea",
+			ru = "Змеецвет",
+			ko = "불뱀꽃",
+			cn = "毒蛇花",
+		},
+	},
+	[13891] = {
+		readable = "Serpentbloom",
+		model = 219488,
+		text = {
+			en = "Serpentbloom",
+			es = "Reptilia",
+			de = "Schlangenflaum",
+			fr = "Fleur de serpent",
+			it = "Serpentbloom",
+			pt = "Ofídea",
+			ru = "Змеецвет",
+			ko = "불뱀꽃",
+			cn = "毒蛇花",
+		},
+	},
+	[13949] = {
+		readable = "Pitted Iron Chest",
+		model = 196976,
+		text = {
+			en = "Pitted Iron Chest",
+			es = "Cofre de hierro",
+			de = "Eingedellte Eisentruhe",
+			fr = "Coffre de fer",
+			it = "Pitted Iron Chest",
+			pt = "Baú Coberto de Ferro",
+			ru = "Ржавый железный сундук",
+			ko = "움푹 파인 철제 궤짝",
+			cn = "铁箱",
 		},
 	},
 	[15084] = {
@@ -1557,9 +5248,115 @@ root("ObjectDB", {
 			cn = "上古之火",
 		},
 	},
+	[16398] = {
+		readable = "Defias Cannon",
+		model = 200947,
+		text = {
+			en = "Defias Cannon",
+			es = "Cañón de los Defias",
+			de = "Kanone der Defias",
+			fr = "Canon des Défias",
+			it = "Defias Cannon",
+			pt = "Canhão Défias",
+			ru = "Пушка Братства Справедливости",
+			ko = "데피아즈단 대포",
+			cn = "迪菲亚火炮",
+		},
+	},
+	[17148] = {
+		readable = "TEST MARBLE",
+		model = 189530,
+		text = {
+			en = "TEST MARBLE",
+			es = "[TEST MARBLE]",
+			de = "[TEST MARBLE]",
+			fr = "[TEST MARBLE]",
+			it = "[TEST MARBLE]",
+			pt = "[TEST MARBLE]",
+			ru = "[TEST MARBLE]",
+			ko = "[TEST MARBLE]",
+			cn = "[TEST MARBLE]",
+		},
+	},
+	[17149] = {
+		readable = "TEST PARCHMENT",
+		model = 189530,
+		text = {
+			en = "TEST PARCHMENT",
+			es = "[TEST PARCHMENT]",
+			de = "[TEST PARCHMENT]",
+			fr = "[TEST PARCHMENT]",
+			it = "[TEST PARCHMENT]",
+			pt = "[TEST PARCHMENT]",
+			ru = "[TEST PARCHMENT]",
+			ko = "[TEST PARCHMENT]",
+			cn = "[TEST PARCHMENT]",
+		},
+	},
+	[17150] = {
+		readable = "TEST STONE",
+		model = 189530,
+		text = {
+			en = "TEST STONE",
+			es = "[TEST STONE]",
+			de = "[TEST STONE]",
+			fr = "[TEST STONE]",
+			it = "[TEST STONE]",
+			pt = "[TEST STONE]",
+			ru = "[TEST STONE]",
+			ko = "[TEST STONE]",
+			cn = "[TEST STONE]",
+		},
+	},
+	[17151] = {
+		readable = "TEST SILVER",
+		model = 189530,
+		text = {
+			en = "TEST SILVER",
+			es = "[TEST SILVER]",
+			de = "[TEST SILVER]",
+			fr = "[TEST SILVER]",
+			it = "[TEST SILVER]",
+			pt = "[TEST SILVER]",
+			ru = "[TEST SILVER]",
+			ko = "[TEST SILVER]",
+			cn = "[TEST SILVER]",
+		},
+	},
+	[17152] = {
+		readable = "TEST BRONZE",
+		model = 189530,
+		text = {
+			en = "TEST BRONZE",
+			es = "[TEST BRONZE]",
+			de = "[TEST BRONZE]",
+			fr = "[TEST BRONZE]",
+			it = "[TEST BRONZE]",
+			pt = "[TEST BRONZE]",
+			ru = "[TEST BRONZE]",
+			ko = "[TEST BRONZE]",
+			cn = "[TEST BRONZE]",
+		},
+	},
+	[17155] = {
+		readable = "Defias Gunpowder",
+		model = 197463,
+		text = {
+			en = "Defias Gunpowder",
+			es = "Pólvora de los Defias",
+			de = "Schießpulver der Defias",
+			fr = "Poudre à canon des Défias",
+			it = "Defias Gunpowder",
+			pt = "Pólvora Défias",
+			ru = "Порох Братства Справедливости",
+			ko = "데피아즈단 화약",
+			cn = "迪菲亚火药",
+		},
+	},
 	[17182] = {
 		readable = "Buzzbox 827",
 		icon = "Interface/Icons/inv_misc_enggizmos_09",
+		model = 197760,
 		text = {
 			en = "Buzzbox 827",
 			es = "Caja mecánica 827",
@@ -1575,6 +5372,7 @@ root("ObjectDB", {
 	[17183] = {
 		readable = "Buzzbox 411",
 		icon = "Interface/Icons/inv_misc_enggizmos_09",
+		model = 197760,
 		text = {
 			en = "Buzzbox 411",
 			es = "Caja mecánica 411",
@@ -1590,6 +5388,7 @@ root("ObjectDB", {
 	[17184] = {
 		readable = "Buzzbox 323",
 		icon = "Interface/Icons/inv_misc_enggizmos_09",
+		model = 197760,
 		text = {
 			en = "Buzzbox 323",
 			es = "Caja mecánica 323",
@@ -1602,9 +5401,25 @@ root("ObjectDB", {
 			cn = "传声盒323号",
 		},
 	},
+	[17185] = {
+		readable = "Buzzbox 525",
+		model = 197760,
+		text = {
+			en = "Buzzbox 525",
+			es = "Caja mecánica 525",
+			de = "Dröhnkiste 525",
+			fr = "Bigobox 525",
+			it = "Buzzbox 525",
+			pt = "Caixazorra 525",
+			ru = "Жужжалка 525",
+			ko = "버즈박스 525",
+			cn = "传声盒525号",
+		},
+	},
 	[17188] = {
 		readable = "The Lay of Ameth'Aran",
 		icon = "Interface/Icons/inv_misc_book_02",
+		model = 201080,
 		text = {
 			en = "The Lay of Ameth'Aran",
 			es = "La instauración de Ameth'Aran",
@@ -1620,6 +5435,7 @@ root("ObjectDB", {
 	[17189] = {
 		readable = "The Fall of Ameth'Aran",
 		icon = "Interface/Icons/inv_misc_book_03",
+		model = 201080,
 		text = {
 			en = "The Fall of Ameth'Aran",
 			es = "La caída de Ameth'Aran",
@@ -1633,10 +5449,11 @@ root("ObjectDB", {
 		},
 	},
 	[17282] = {
-		readable = "Plant Bundle",
-		icon = "Interface/Icons/inv_misc_herb_05",
+		readable = "Bathran's Hair",
+		icon = "Interface/Icons/inv_misc_herb_tigerlily",
+		model = 255235,
 		text = {
-			en = "Plant Bundle",
+			en = "Bathran's Hair",
 			es = "Cabello de Bathran",
 			de = "Bathranshaar",
 			fr = "Cheveux de Bathran",
@@ -1650,6 +5467,7 @@ root("ObjectDB", {
 	[17783] = {
 		readable = "Ancient Statuette",
 		icon = "Interface/Icons/inv_misc_idol_01",
+		model = 201094,
 		text = {
 			en = "Ancient Statuette",
 			es = "Estatuilla antigua",
@@ -1669,11 +5487,27 @@ root("ObjectDB", {
 			en = "Bottle of Disease",
 		},
 	},
-	[19015] = {
-		readable = "Elune's Tear",
-		icon = "Interface/Icons/inv_ore_arcanite_02",
+	[18973] = {
+		readable = "Arugal's Focus",
+		model = 197829,
 		text = {
-			en = "Elune's Tear",
+			en = "Arugal's Focus",
+			es = "Foco de Arugal",
+			de = "Arugals Fokus",
+			fr = "Focalisateur d'Arugal",
+			it = "Arugal's Focus",
+			pt = "Foco de Arugal",
+			ru = "Средоточие Аругала",
+			ko = "아루갈의 집중",
+			cn = "Arugal's Focus",
+		},
+	},
+	[19015] = {
+		readable = "Soot-Covered Elune's Tear",
+		icon = "Interface/Icons/inv_misc_gem_pearl_02",
+		model = 199786,
+		text = {
+			en = "Soot-Covered Elune's Tear",
 			es = "Lágrima de Elune cubierta de hollín",
 			de = "Elunes Träne",
 			fr = "Larme d'Élune",
@@ -1687,6 +5521,7 @@ root("ObjectDB", {
 	[19016] = {
 		readable = "Stardust Covered Bush",
 		icon = "Interface/Icons/inv_misc_dust_02",
+		model = 201233,
 		text = {
 			en = "Stardust Covered Bush",
 			es = "Arbusto cubierto de polvo estelar",
@@ -1699,9 +5534,70 @@ root("ObjectDB", {
 			cn = "星尘覆盖的草丛",
 		},
 	},
+	[19017] = {
+		readable = "Giant Clam",
+		model = 196998,
+		text = {
+			en = "Giant Clam",
+			es = "Almeja gigante",
+			de = "Riesenmuschel",
+			fr = "Palourde géante",
+			it = "Giant Clam",
+			pt = "Marisco Gigante",
+			ru = "Гигантский моллюск",
+			ko = "대합",
+			cn = "巨型蚌壳",
+		},
+	},
+	[19018] = {
+		readable = "Giant Clam",
+		model = 196998,
+		text = {
+			en = "Giant Clam",
+			es = "Almeja gigante",
+			de = "Riesenmuschel",
+			fr = "Palourde géante",
+			it = "Giant Clam",
+			pt = "Marisco Gigante",
+			ru = "Гигантский моллюск",
+			ko = "대합",
+			cn = "巨型蚌壳",
+		},
+	},
+	[19019] = {
+		readable = "Box of Assorted Parts",
+		model = 200960,
+		text = {
+			en = "Box of Assorted Parts",
+			es = "Caja de colección de piezas",
+			de = "Kasten mit verschiedenen Ersatzteilen",
+			fr = "Boîte de pièces assorties",
+			it = "Box of Assorted Parts",
+			pt = "Caixa de Peças Sortidas",
+			ru = "Ящик с различными деталями",
+			ko = "부품 상자",
+			cn = "一箱整理过的零件",
+		},
+	},
+	[19020] = {
+		readable = "Box of Assorted Parts",
+		model = 200960,
+		text = {
+			en = "Box of Assorted Parts",
+			es = "Caja de colección de piezas",
+			de = "Kasten mit verschiedenen Ersatzteilen",
+			fr = "Boîte de pièces assorties",
+			it = "Box of Assorted Parts",
+			pt = "Caixa de Peças Sortidas",
+			ru = "Ящик с различными деталями",
+			ko = "부품 상자",
+			cn = "一箱整理过的零件",
+		},
+	},
 	[19021] = {
 		readable = "Rusty Chest",
 		icon = "Interface/Icons/inv_box_01",
+		model = 196976,
 		text = {
 			en = "Rusty Chest",
 			es = "Cofre oxidado",
@@ -1716,6 +5612,7 @@ root("ObjectDB", {
 	},
 	[19022] = {
 		readable = "Worn Chest",
+		model = 196976,
 		text = {
 			en = "Worn Chest",
 			es = "Cofre desgastado",
@@ -1747,6 +5644,7 @@ root("ObjectDB", {
 	[19024] = {
 		readable = "Hidden Shrine",
 		icon = "Interface/Icons/inv_enchant_essencemagicsmall",
+		model = 198951,
 		text = {
 			en = "Hidden Shrine",
 			es = "Santuario Oculto",
@@ -1759,9 +5657,25 @@ root("ObjectDB", {
 			cn = "隐蔽的神龛",
 		},
 	},
+	[19025] = {
+		readable = "Ancient Inscription",
+		model = 201080,
+		text = {
+			en = "Ancient Inscription",
+			es = "Inscripción antigua",
+			de = "Uralte Inschrift",
+			fr = "Inscription ancienne",
+			it = "Ancient Inscription",
+			pt = "Inscrição Ancestral",
+			ru = "Древняя надпись",
+			ko = "고대 비문",
+			cn = "[Ancient Inscription]",
+		},
+	},
 	[19027] = {
 		readable = "Tome of Mel'Thandris",
 		icon = "Interface/Icons/INV_Misc_Book_09",
+		model = 200924,
 		text = {
 			en = "Tome of Mel'Thandris",
 			es = "Libro de Mel'Thandris",
@@ -1777,6 +5691,7 @@ root("ObjectDB", {
 	[19030] = {
 		readable = "Mound of Dirt",
 		icon = "Interface/Icons/INV_MISC_DUST_05",
+		model = 189528,
 		text = {
 			en = "Mound of Dirt",
 			es = "Túmulo de barro",
@@ -1789,6 +5704,66 @@ root("ObjectDB", {
 			cn = "一堆泥土",
 		},
 	},
+	[19283] = {
+		readable = "Compendium of the Fallen",
+		model = 198025,
+		text = {
+			en = "Compendium of the Fallen",
+			es = "Compendio de los Caídos",
+			de = "Kompendium der Gefallenen",
+			fr = "Compendium des Déchus",
+			it = "Compendium of the Fallen",
+			pt = "Compêndio dos Caídos",
+			ru = "\"Компендиум павших\"",
+			ko = "타락의 개요",
+			cn = "堕落者纲要",
+		},
+	},
+	[19284] = {
+		readable = "Mythology of the Titans",
+		model = 198026,
+		text = {
+			en = "Mythology of the Titans",
+			es = "Mitología de los titanes",
+			de = "Mythologie der Titanen",
+			fr = "Mythologie des Titans",
+			it = "Mythology of the Titans",
+			pt = "Mitologia dos Titãs",
+			ru = "\"Мифология Титанов\"",
+			ko = "티탄 신화",
+			cn = "泰坦神话",
+		},
+	},
+	[19534] = {
+		readable = "Anton's Letter of Commendation",
+		model = 201113,
+		text = {
+			en = "Anton's Letter of Commendation",
+			es = "Carta de recomendación de Anton",
+			de = "Antons Belobigungsschreiben",
+			fr = "Lettre de recommandation d'Anton",
+			it = "Anton's Letter of Commendation",
+			pt = "Carta de Comenda de Anton",
+			ru = "Рекомендательное письмо Антона",
+			ko = "안톤의 추천서",
+			cn = "安东的表扬信",
+		},
+	},
+	[19541] = {
+		readable = "Deepmoss Eggs",
+		model = 200974,
+		text = {
+			en = "Deepmoss Eggs",
+			es = "Huevos de Musgondo",
+			de = "Kluftmooseier",
+			fr = "Oeufs de Mousse profonde",
+			it = "Deepmoss Eggs",
+			pt = "Ovos de Fundolimo",
+			ru = "Яйца мохового паука",
+			ko = "동굴이끼거미알",
+			cn = "深苔蜘蛛的卵",
+		},
+	},
 	[19542] = {
 		readable = "Deepmoss Eggs",
 		icon = "Interface/Icons/inv_egg_03",
@@ -1797,9 +5772,205 @@ root("ObjectDB", {
 			en = "Deepmoss Eggs",
 		},
 	},
+	[19595] = {
+		readable = "Gatekeeper's Hold",
+		model = 198780,
+		text = {
+			en = "Gatekeeper's Hold",
+			es = "Bastión de los Porteros",
+			de = "Torhüter-Unterstand",
+			fr = "Banque du portier",
+			it = "Gatekeeper's Hold",
+			pt = "Guarnição do Guarda-pórtico",
+			ru = "Светильник Привратника",
+			ko = "문지기의 우리",
+			cn = "守门者",
+		},
+	},
+	[19596] = {
+		readable = "Sleepers' Cache",
+		model = 198754,
+		text = {
+			en = "Sleepers' Cache",
+			es = "Alijo de Durmientes",
+			de = "Schläferversteck",
+			fr = "Cache des Dormants",
+			it = "Sleepers' Cache",
+			pt = "Esconderijo do Adormecido",
+			ru = "Тайник Спящих",
+			ko = "잠든 자의 은닉처",
+			cn = "[Sleepers' Cache]",
+		},
+	},
+	[19597] = {
+		readable = "Druids' Cache",
+		model = 198754,
+		text = {
+			en = "Druids' Cache",
+			es = "Alijo de druidas",
+			de = "Druidenversteck",
+			fr = "Cache des druides",
+			it = "Druids' Cache",
+			pt = "Esconderijo do Druida",
+			ru = "Тайник друидов",
+			ko = "드루이드의 은닉처",
+			cn = "[Druids' Cache]",
+		},
+	},
+	[19598] = {
+		readable = "Barrow Cache",
+		model = 198754,
+		text = {
+			en = "Barrow Cache",
+			es = "Carretilla de alijo",
+			de = "Grabhügelversteck",
+			fr = "Cache des saisons",
+			it = "Barrow Cache",
+			pt = "Esconderijo da Ermida",
+			ru = "Тайник в кургане",
+			ko = "지하굴 은신처",
+			cn = "[Barrow Cache]",
+		},
+	},
+	[19599] = {
+		readable = "Talon Den Hoard",
+		model = 198951,
+		text = {
+			en = "Talon Den Hoard",
+			es = "Reserva del Cubil del Espolón",
+			de = "Krallenbau-Hort",
+			fr = "Provision du corbeau",
+			it = "Talon Den Hoard",
+			pt = "Tesouro do Retiro do Gadanho",
+			ru = "Сокровищница Обители Когтя",
+			ko = "갈퀴발톱굴 저장고",
+			cn = "[Talon Den Hoard]",
+		},
+	},
+	[19602] = {
+		readable = "Venture Co. Engineering Plans",
+		model = 203429,
+		text = {
+			en = "Venture Co. Engineering Plans",
+			es = "Planos de ingeniería de Ventura y Cía.",
+			de = "Konstruktionspläne der Venture Co.",
+			fr = "Plans d'ingénieur de la KapitalRisk.",
+			it = "Venture Co. Engineering Plans",
+			pt = "Plano de Engenharia da Empreendimentos S.A.",
+			ru = "Чертежи механизмов Торговой Компании",
+			ko = "투자개발회사의 토목 공사 계획서",
+			cn = "风险投资公司工程计划书",
+		},
+	},
+	[19603] = {
+		readable = "Venture Co. Documents",
+		model = 198055,
+		text = {
+			en = "Venture Co. Documents",
+			es = "Documentos de Ventura y Cía.",
+			de = "Dokumente der Venture Co.",
+			fr = "Documents de la KapitalRisk.",
+			it = "Venture Co. Documents",
+			pt = "Documentos da Empreendimentos S.A.",
+			ru = "Бумаги Торговой компании",
+			ko = "투자개발회사의 문서",
+			cn = "[Venture Co. Documents]",
+		},
+	},
+	[19861] = {
+		readable = "Henrig Lonebrow's Journal",
+		model = 198036,
+		text = {
+			en = "Henrig Lonebrow's Journal",
+			es = "Diario de Henrig Soliceja",
+			de = "Henrik Lonebrows Tagebuch",
+			fr = "Journal d'Henrig Lonebrow",
+			it = "Henrig Lonebrow's Journal",
+			pt = "Diário de Henrig Monocelha",
+			ru = "Дневник Хенрига Хмурня",
+			ko = "헨리그 론브로우의 일지",
+			cn = "亨里格·独眉的日记",
+		},
+	},
+	[19868] = {
+		readable = "Rocket Car Rubble",
+		model = 197757,
+		text = {
+			en = "Rocket Car Rubble",
+			es = "Restos del coche cohete",
+			de = "Raketenwagentrümmer",
+			fr = "Décombres de chariot explosif",
+			it = "Rocket Car Rubble",
+			pt = "Destroços de Carro-foguete",
+			ru = "Обломки болида",
+			ko = "로켓 자동차 파편",
+			cn = "火箭车碎片",
+		},
+	},
 	[19869] = {
 		readable = "Rocket Car Rubble",
 		icon = "Interface/Icons/inv_gizmo_03",
+		model = 197733,
+		text = {
+			en = "Rocket Car Rubble",
+			es = "Restos del coche cohete",
+			de = "Raketenwagentrümmer",
+			fr = "Décombres de chariot explosif",
+			it = "Rocket Car Rubble",
+			pt = "Destroços de Carro-foguete",
+			ru = "Обломки болида",
+			ko = "로켓 자동차 파편",
+			cn = "火箭车碎片",
+		},
+	},
+	[19870] = {
+		readable = "Rocket Car Rubble",
+		model = 197671,
+		text = {
+			en = "Rocket Car Rubble",
+			es = "Restos del coche cohete",
+			de = "Raketenwagentrümmer",
+			fr = "Décombres de chariot explosif",
+			it = "Rocket Car Rubble",
+			pt = "Destroços de Carro-foguete",
+			ru = "Обломки болида",
+			ko = "로켓 자동차 파편",
+			cn = "火箭车碎片",
+		},
+	},
+	[19871] = {
+		readable = "Rocket Car Rubble",
+		model = 197726,
+		text = {
+			en = "Rocket Car Rubble",
+			es = "Restos del coche cohete",
+			de = "Raketenwagentrümmer",
+			fr = "Décombres de chariot explosif",
+			it = "Rocket Car Rubble",
+			pt = "Destroços de Carro-foguete",
+			ru = "Обломки болида",
+			ko = "로켓 자동차 파편",
+			cn = "火箭车碎片",
+		},
+	},
+	[19872] = {
+		readable = "Rocket Car Rubble",
+		model = 197727,
+		text = {
+			en = "Rocket Car Rubble",
+			es = "Restos del coche cohete",
+			de = "Raketenwagentrümmer",
+			fr = "Décombres de chariot explosif",
+			it = "Rocket Car Rubble",
+			pt = "Destroços de Carro-foguete",
+			ru = "Обломки болида",
+			ko = "로켓 자동차 파편",
+			cn = "火箭车碎片",
+		},
+	},
+	[19873] = {
+		readable = "Rocket Car Rubble",
+		model = 197731,
 		text = {
 			en = "Rocket Car Rubble",
 			es = "Restos del coche cohete",
@@ -1814,6 +5985,7 @@ root("ObjectDB", {
 	},
 	[19877] = {
 		readable = "Velinde's Locker",
+		model = 196982,
 		text = {
 			en = "Velinde's Locker",
 			es = "Armario de Velinde",
@@ -1826,9 +5998,130 @@ root("ObjectDB", {
 			cn = "维琳德的柜子",
 		},
 	},
+	[19878] = {
+		readable = "Parts Crate",
+		model = 200961,
+		text = {
+			en = "Parts Crate",
+			es = "Cajón con partes",
+			de = "Ersatzteilkiste",
+			fr = "Caisse de pièces",
+			it = "Parts Crate",
+			pt = "Caixote de Peças",
+			ru = "Ящик с деталями",
+			ko = "부품 상자",
+			cn = "零件箱",
+		},
+	},
+	[19879] = {
+		readable = "Red Soulgem",
+		model = 201056,
+		text = {
+			en = "Red Soulgem",
+			es = "Gema de alma roja",
+			de = "Roter Seelenedelstein",
+			fr = "Gemme d'âme rouge",
+			it = "Red Soulgem",
+			pt = "Gema Anímica Vermelha",
+			ru = "Красный Камень Духа",
+			ko = "붉은 영혼의 보석",
+			cn = "红色灵魂宝石",
+		},
+	},
 	[19901] = {
 		readable = "Circle of Imprisonment",
 		icon = "Interface/Icons/inv_misc_gem_ruby_01",
+		model = 201106,
+		text = {
+			en = "Circle of Imprisonment",
+			es = "Círculo de Encarcelamiento",
+			de = "Kreis der Gefangenschaft",
+			fr = "Cercle d'emprisonnement",
+			it = "Circle of Imprisonment",
+			pt = "Círculo de Encarceramento",
+			ru = "Круг Заточения",
+			ko = "구속의 마법진",
+			cn = "禁锢法阵",
+		},
+	},
+	[19903] = {
+		readable = "Indurium Mineral Vein",
+		model = 219531,
+		text = {
+			en = "Indurium Mineral Vein",
+			es = "Filón de indurio",
+			de = "Indurium-Mineralvorkommen",
+			fr = "Filon d'indurium",
+			it = "Indurium Mineral Vein",
+			pt = "Veio de Indúrio",
+			ru = "Индарилиевая жила",
+			ko = "인듀리움 광맥",
+			cn = "精铁矿脉",
+		},
+	},
+	[19904] = {
+		readable = "Mok'Morokk's Snuff",
+		model = 199090,
+		text = {
+			en = "Mok'Morokk's Snuff",
+			es = "Barril de tabaco Mok'Morokk",
+			de = "Mok’Morokks Schnupftabak",
+			fr = "Tabac de Mok'Morokk",
+			it = "Mok'Morokk's Snuff",
+			pt = "Rapé de Mok'Morokk",
+			ru = "Понюшка Мок'Морокка",
+			ko = "모크모로크의 코담배통",
+			cn = "莫格穆洛克的鼻烟",
+		},
+	},
+	[19905] = {
+		readable = "Mok'Morokk's Grog",
+		model = 199192,
+		text = {
+			en = "Mok'Morokk's Grog",
+			es = "Grog de Mok'Morokk",
+			de = "Mok’Morokks Grog",
+			fr = "Tafia de Mok'Morokk",
+			it = "Mok'Morokk's Grog",
+			pt = "Beberagem de Mok'Morokk",
+			ru = "Грог Мок'Морокка",
+			ko = "모크모로크의 그로그 주",
+			cn = "莫格穆洛克的烈酒",
+		},
+	},
+	[19906] = {
+		readable = "Mok'Morokk's Strongbox",
+		model = 196976,
+		text = {
+			en = "Mok'Morokk's Strongbox",
+			es = "Caja fuerte de Mok'Morokk",
+			de = "Mok’Morokks Geldkassette",
+			fr = "Coffre de Mok'Morokk",
+			it = "Mok'Morokk's Strongbox",
+			pt = "Cofre de Mok'Morokk",
+			ru = "Сейф Мок'Морокка",
+			ko = "모크모로크의 금고",
+			cn = "莫格穆洛克的保险箱",
+		},
+	},
+	[20351] = {
+		readable = "Blue Soulgem",
+		model = 201056,
+		text = {
+			en = "Blue Soulgem",
+			es = "Gema de alma azul",
+			de = "Blauer Seelenedelstein",
+			fr = "Gemme d'âme bleue",
+			it = "Blue Soulgem",
+			pt = "Gema Anímica Azul",
+			ru = "Синий Камень Духа",
+			ko = "푸른 영혼의 보석",
+			cn = "蓝色灵魂宝石",
+		},
+	},
+	[20352] = {
+		readable = "Circle of Imprisonment",
+		model = 201103,
 		text = {
 			en = "Circle of Imprisonment",
 			es = "Círculo de Encarcelamiento",
@@ -1844,6 +6137,7 @@ root("ObjectDB", {
 	[20359] = {
 		readable = "Egg of Onyxia",
 		icon = "Interface/Icons/inv_egg_01",
+		model = 200964,
 		text = {
 			en = "Egg of Onyxia",
 			es = "Huevo de Onyxia",
@@ -1856,9 +6150,160 @@ root("ObjectDB", {
 			cn = "奥妮克希亚的蛋",
 		},
 	},
+	[20447] = {
+		readable = "Harpy Foodstuffs",
+		model = 200960,
+		text = {
+			en = "Harpy Foodstuffs",
+			es = "Comestibles de la Arpía",
+			de = "Harpyiennahrungsmittel",
+			fr = "Nourriture de harpie",
+			it = "Harpy Foodstuffs",
+			pt = "Comida de Harpia",
+			ru = "Пищевые запасы гарпий",
+			ko = "하피 식량",
+			cn = "[Harpy Foodstuffs]",
+		},
+	},
+	[20649] = {
+		readable = "Undervator",
+		model = 200793,
+		text = {
+			en = "Undervator",
+			es = "Descensor",
+			de = "Untervator",
+			fr = "Ascenseur souterrain",
+			it = "Discensore",
+			pt = "Descendedor",
+			ru = "Подгородский подъемник",
+			ko = "언더베이터",
+			cn = "升降梯",
+		},
+	},
+	[20650] = {
+		readable = "upperLdoor",
+		model = 200794,
+		text = {
+			en = "upperLdoor",
+			es = "upperLdoor",
+			de = "Obere Level-Tür",
+			fr = "Porte supérieure gauche",
+			it = "upperLdoor",
+			pt = "portaEsuperior",
+			ru = "Верхняя левая дверь",
+			ko = "승강기 문",
+			cn = "upperLdoor",
+		},
+	},
+	[20651] = {
+		readable = "lowerLdoor",
+		model = 200794,
+		text = {
+			en = "lowerLdoor",
+			es = "lowerLdoor",
+			de = "Untere Level-Tür",
+			fr = "Porte inférieure gauche",
+			it = "lowerLdoor",
+			pt = "portaEinferior",
+			ru = "Нижняя левая дверь",
+			ko = "문",
+			cn = "lowerLdoor",
+		},
+	},
+	[20652] = {
+		readable = "Undervator",
+		model = 200793,
+		text = {
+			en = "Undervator",
+			es = "Descensor",
+			de = "Untervator",
+			fr = "Ascenseur souterrain",
+			it = "Discensore",
+			pt = "Descendedor",
+			ru = "Подгородский подъемник",
+			ko = "언더베이터",
+			cn = "升降梯",
+		},
+	},
+	[20653] = {
+		readable = "upperLdoor",
+		model = 200794,
+		text = {
+			en = "upperLdoor",
+			es = "upperLdoor",
+			de = "Obere Level-Tür",
+			fr = "Porte supérieure gauche",
+			it = "upperLdoor",
+			pt = "portaEsuperior",
+			ru = "Верхняя левая дверь",
+			ko = "승강기 문",
+			cn = "upperLdoor",
+		},
+	},
+	[20654] = {
+		readable = "lowerLdoor",
+		model = 200794,
+		text = {
+			en = "lowerLdoor",
+			es = "lowerLdoor",
+			de = "Untere Level-Tür",
+			fr = "Porte inférieure gauche",
+			it = "lowerLdoor",
+			pt = "portaEinferior",
+			ru = "Нижняя левая дверь",
+			ko = "문",
+			cn = "lowerLdoor",
+		},
+	},
+	[20655] = {
+		readable = "Undervator",
+		model = 200793,
+		text = {
+			en = "Undervator",
+			es = "Descensor",
+			de = "Untervator",
+			fr = "Ascenseur souterrain",
+			it = "Discensore",
+			pt = "Descendedor",
+			ru = "Подгородский подъемник",
+			ko = "언더베이터",
+			cn = "升降梯",
+		},
+	},
+	[20656] = {
+		readable = "upperLdoor",
+		model = 200794,
+		text = {
+			en = "upperLdoor",
+			es = "upperLdoor",
+			de = "Obere Level-Tür",
+			fr = "Porte supérieure gauche",
+			it = "upperLdoor",
+			pt = "portaEsuperior",
+			ru = "Верхняя левая дверь",
+			ko = "승강기 문",
+			cn = "upperLdoor",
+		},
+	},
+	[20657] = {
+		readable = "lowerLdoor",
+		model = 200794,
+		text = {
+			en = "lowerLdoor",
+			es = "lowerLdoor",
+			de = "Untere Level-Tür",
+			fr = "Porte inférieure gauche",
+			it = "lowerLdoor",
+			pt = "portaEinferior",
+			ru = "Нижняя левая дверь",
+			ko = "문",
+			cn = "lowerLdoor",
+		},
+	},
 	[20691] = {
 		readable = "Cozzle's Footlocker",
 		icon = "Interface/Icons/inv_misc_note_04",
+		model = 196979,
 		text = {
 			en = "Cozzle's Footlocker",
 			es = "Baúl de Cozzle",
@@ -1874,6 +6319,7 @@ root("ObjectDB", {
 	[20725] = {
 		readable = "The Legacy of the Aspects",
 		icon = "Interface/Icons/inv_misc_book_09",
+		model = 198020,
 		text = {
 			en = "The Legacy of the Aspects",
 			es = "El legado de los Aspectos",
@@ -1886,9 +6332,25 @@ root("ObjectDB", {
 			cn = "巨龙的遗产",
 		},
 	},
+	[20726] = {
+		readable = "Beginnings of the Undead Threat",
+		model = 198020,
+		text = {
+			en = "Beginnings of the Undead Threat",
+			es = "Comienzos de la amenaza de los no-muertos",
+			de = "Anfänge der Bedrohung durch die Untoten",
+			fr = "Naissance de la menace des morts-vivants",
+			it = "Beginnings of the Undead Threat",
+			pt = "Início da Ameaça dos Mortos-vivos",
+			ru = "\"Истоки угрозы нежити\"",
+			ko = "언데드 위협의 기원",
+			cn = "亡灵的起源",
+		},
+	},
 	[20727] = {
 		readable = "Gizmorium Shipping Crate",
 		icon = "Interface/Icons/inv_ammo_bullet_03",
+		model = 200960,
 		text = {
 			en = "Gizmorium Shipping Crate",
 			es = "Cajón de embalaje de Gizmorium",
@@ -1901,9 +6363,25 @@ root("ObjectDB", {
 			cn = "基兹莫瑞货箱",
 		},
 	},
+	[20737] = {
+		readable = "Keenly Disguised Barrel",
+		model = 200886,
+		text = {
+			en = "Keenly Disguised Barrel",
+			es = "Barril visiblemente camuflado",
+			de = "Geschickt verkleidetes Fass",
+			fr = "Tonneau camouflé avec zèle",
+			it = "Keenly Disguised Barrel",
+			pt = "Barril Espertamente Disfarçado",
+			ru = "Тщательно замаскированная бочка",
+			ko = "감쪽같은 변장통",
+			cn = "精心伪装过的桶",
+		},
+	},
 	[20805] = {
 		readable = "Rizzle's Unguarded Plans",
 		icon = "Interface/Icons/inv_scroll_07",
+		model = 198452,
 		text = {
 			en = "Rizzle's Unguarded Plans",
 			es = "Planes sin vigilancia de Rizzle",
@@ -1918,6 +6396,7 @@ root("ObjectDB", {
 	},
 	[20807] = {
 		readable = "Ancient Brazier",
+		model = 199138,
 		text = {
 			en = "Ancient Brazier",
 			es = "Blandón antiguo",
@@ -1930,9 +6409,84 @@ root("ObjectDB", {
 			cn = "古代火盆",
 		},
 	},
+	[20808] = {
+		readable = "TEST Ship",
+		text = {
+			en = "TEST Ship",
+			es = "TEST Ship",
+			de = "TEST Ship",
+			fr = "TEST Ship",
+			it = "TEST Ship",
+			pt = "TESTE Navio",
+			ru = "TEST Ship",
+			ko = "TEST Ship",
+			cn = "TEST Ship",
+		},
+	},
+	[20920] = {
+		readable = "Blueleaf Tuber",
+		model = 200825,
+		text = {
+			en = "Blueleaf Tuber",
+			es = "Tubérculo hojazul",
+			de = "Blaulaubknolle",
+			fr = "Racines de Feuillebleue",
+			it = "Blueleaf Tuber",
+			pt = "Tubérculo Folhazul",
+			ru = "Корень синелиста",
+			ko = "청엽수 줄기",
+			cn = "蓝叶薯",
+		},
+	},
+	[20923] = {
+		readable = "Stone of Remembrance",
+		model = 189830,
+		text = {
+			en = "Stone of Remembrance",
+			es = "Piedra de Recuerdo",
+			de = "Stein der Erinnerung",
+			fr = "Pierre du souvenir",
+			it = "Stone of Remembrance",
+			pt = "Pedra da Memória",
+			ru = "Камень Воспоминаний",
+			ko = "기념비",
+			cn = "阵亡英雄的纪念碑",
+		},
+	},
+	[20925] = {
+		readable = "Captain's Footlocker",
+		model = 197617,
+		text = {
+			en = "Captain's Footlocker",
+			es = "Baúl del Capitán",
+			de = "Schließkiste des Captains",
+			fr = "Cantine du capitaine",
+			it = "Captain's Footlocker",
+			pt = "Maleta do Capitão",
+			ru = "Сундучок капитана",
+			ko = "선장의 사물함",
+			cn = "船长的手提箱",
+		},
+	},
+	[20959] = {
+		readable = "[PH] Gnome Camera Terminal",
+		model = 198047,
+		text = {
+			en = "[PH] Gnome Camera Terminal",
+			es = "[[PH] Gnome Camera Terminal]",
+			de = "[[PH] Gnome Camera Terminal]",
+			fr = "[[PH] Gnome Camera Terminal]",
+			it = "[[PH] Gnome Camera Terminal]",
+			pt = "[[PH] Gnome Camera Terminal]",
+			ru = "[[PH] Gnome Camera Terminal]",
+			ko = "[[PH] Gnome Camera Terminal]",
+			cn = "[[PH] Gnome Camera Terminal]",
+		},
+	},
 	[20985] = {
 		readable = "Loose Dirt",
 		icon = "Interface/Icons/inv_misc_dust",
+		model = 204113,
 		text = {
 			en = "Loose Dirt",
 			es = "Tierra esparcida",
@@ -1948,6 +6502,7 @@ root("ObjectDB", {
 	[20992] = {
 		readable = "Black Shield",
 		icon = "Interface/Icons/inv_shield_04",
+		model = 189676,
 		text = {
 			en = "Black Shield",
 			es = "Escudo negro",
@@ -1960,8 +6515,39 @@ root("ObjectDB", {
 			cn = "黑色盾牌",
 		},
 	},
+	[20999] = {
+		readable = "[PH] Goblin Camera Terminal",
+		model = 198047,
+		text = {
+			en = "[PH] Goblin Camera Terminal",
+			es = "[[PH] Goblin Camera Terminal]",
+			de = "[[PH] Goblin Camera Terminal]",
+			fr = "[[PH] Goblin Camera Terminal]",
+			it = "[[PH] Goblin Camera Terminal]",
+			pt = "[[PH] Goblin Camera Terminal]",
+			ru = "[[PH] Goblin Camera Terminal]",
+			ko = "[[PH] Goblin Camera Terminal]",
+			cn = "[[PH] Goblin Camera Terminal]",
+		},
+	},
+	[21004] = {
+		readable = "Monument to Grom Hellscream",
+		model = 199349,
+		text = {
+			en = "Monument to Grom Hellscream",
+			es = "[Monument to Grom Hellscream]",
+			de = "Denkmal für Grom Hellscream",
+			fr = "Monument à Grom Hellscream",
+			it = "Monument to Grom Hellscream",
+			pt = "Monumento para Grom Grito Infernal",
+			ru = "Памятник Грому Адскому Крику",
+			ko = "그롬 헬스크림의 기념비",
+			cn = "格罗姆·地狱咆哮的纪念碑",
+		},
+	},
 	[21015] = {
 		readable = "Hoofprints",
+		model = 202786,
 		text = {
 			en = "Hoofprints",
 			es = "Huellas pezuñales",
@@ -1976,6 +6562,7 @@ root("ObjectDB", {
 	},
 	[21016] = {
 		readable = "Hoofprints",
+		model = 202786,
 		text = {
 			en = "Hoofprints",
 			es = "Huellas pezuñales",
@@ -1991,6 +6578,7 @@ root("ObjectDB", {
 	[21042] = {
 		readable = "Theramore Guard Badge",
 		icon = "Interface/Icons/inv_shield_05",
+		model = 198660,
 		text = {
 			en = "Theramore Guard Badge",
 			es = "Identificación de guardia de Theramore",
@@ -2001,6 +6589,111 @@ root("ObjectDB", {
 			ru = "Кокарда Тераморской стражи",
 			ko = "테라모어 경비병 휘장",
 			cn = "塞拉摩卫兵徽章",
+		},
+	},
+	[21052] = {
+		readable = "Defias Strongbox",
+		model = 196976,
+		text = {
+			en = "Defias Strongbox",
+			es = "Caja fuerte de los Defias",
+			de = "Geldkassette der Defias",
+			fr = "Coffre des Défias",
+			it = "Defias Strongbox",
+			pt = "Caixa-forte dos Défias",
+			ru = "Сейф Братства Справедливости",
+			ko = "데피아즈단 금고",
+			cn = "迪菲亚保险箱",
+		},
+	},
+	[21145] = {
+		readable = "Feast Boar",
+		model = 198228,
+		text = {
+			en = "Feast Boar",
+			es = "Jabalí de festín",
+			de = "Festeber",
+			fr = "Sanglier de festin",
+			it = "Feast Boar",
+			pt = "Javali do Banquete",
+			ru = "Праздничный кабан",
+			ko = "축제 돼지 요리",
+			cn = "宴会猪肉",
+		},
+	},
+	[21146] = {
+		readable = "Feast Fish",
+		model = 198223,
+		text = {
+			en = "Feast Fish",
+			es = "Pescado de festín",
+			de = "Festfisch",
+			fr = "Poisson de festin",
+			it = "Feast Fish",
+			pt = "Peixe do Banquete",
+			ru = "Праздничная рыба",
+			ko = "축제 생선 요리",
+			cn = "宴会鱼肉",
+		},
+	},
+	[21147] = {
+		readable = "Feast Fruit",
+		model = 198224,
+		text = {
+			en = "Feast Fruit",
+			es = "Fruta de festín",
+			de = "Festobst",
+			fr = "Fruit de festin",
+			it = "Feast Fruit",
+			pt = "Fruta do Banquete",
+			ru = "Фрукты с праздничного стола",
+			ko = "축제 과일",
+			cn = "宴会水果",
+		},
+	},
+	[21148] = {
+		readable = "Feast Goblet",
+		model = 198359,
+		text = {
+			en = "Feast Goblet",
+			es = "Cáliz de festín",
+			de = "Festkelch",
+			fr = "Coupe de festin",
+			it = "Feast Goblet",
+			pt = "Cálice do Banquete",
+			ru = "Пиршественный кубок",
+			ko = "축제 술잔",
+			cn = "宴会酒杯",
+		},
+	},
+	[21277] = {
+		readable = "Crate with Holes",
+		model = 200963,
+		text = {
+			en = "Crate with Holes",
+			es = "Cajón con agujeros",
+			de = "Kiste mit Löchern",
+			fr = "Caisse trouée",
+			it = "Crate with Holes",
+			pt = "Caixote com Furos",
+			ru = "Ящик с отверстиями",
+			ko = "구멍 난 상자",
+			cn = "开孔的箱子",
+		},
+	},
+	[21530] = {
+		readable = "Snufflenose Owner's Manual",
+		model = 198036,
+		text = {
+			en = "Snufflenose Owner's Manual",
+			es = "Manual del instrucciones del Husmeador",
+			de = "Schnüffelnasenbesitzeranleitung",
+			fr = "Manuel d'utilisateur de Sniffetarin",
+			it = "Snufflenose Owner's Manual",
+			pt = "Manual de Proprietário do Fungafuça",
+			ru = "Справочник владельца Шмыгуноса",
+			ko = "땅다람쥐 설명서",
+			cn = "地鼠训练手册",
 		},
 	},
 	[21581] = {
@@ -2051,9 +6744,40 @@ root("ObjectDB", {
 			cn = "卡多雷和永恒之井",
 		},
 	},
+	[21631] = {
+		readable = "Forge",
+		model = 203668,
+		text = {
+			en = "Forge",
+			es = "[Forge]",
+			de = "[Forge]",
+			fr = "[Forge]",
+			it = "[Forge]",
+			pt = "[Forge]",
+			ru = "Горн",
+			ko = "[Forge]",
+			cn = "[Forge]",
+		},
+	},
+	[22234] = {
+		readable = "Signal Torch",
+		model = 201129,
+		text = {
+			en = "Signal Torch",
+			es = "Antorcha de aviso",
+			de = "Signalfackel",
+			fr = "Torche d'avertissement",
+			it = "Signal Torch",
+			pt = "Tocha Sinalizadora",
+			ru = "Сигнальный факел",
+			ko = "봉화 횃불",
+			cn = "信号火炬",
+		},
+	},
 	[22245] = {
 		readable = "Sack of Meat",
 		icon = "Interface/Icons/inv_misc_food_16",
+		model = 200442,
 		text = {
 			en = "Sack of Meat",
 			es = "Saco de carne",
@@ -2069,6 +6793,7 @@ root("ObjectDB", {
 	[22246] = {
 		readable = "Tear of Theradras",
 		icon = "Interface/Icons/inv_misc_gem_sapphire_03",
+		model = 190809,
 		text = {
 			en = "Tear of Theradras",
 			es = "Lágrima de Theradras",
@@ -2079,6 +6804,81 @@ root("ObjectDB", {
 			ru = "Слеза Терадрас",
 			ko = "테라드라스의 눈물",
 			cn = "瑟莱德丝之泪",
+		},
+	},
+	[22550] = {
+		readable = "Draenethyst Crystals",
+		model = 190809,
+		text = {
+			en = "Draenethyst Crystals",
+			es = "Cristales draenetistas",
+			de = "Draenethystkristalle",
+			fr = "Cristaux de draenéthyste",
+			it = "Draenethyst Crystals",
+			pt = "Cristal de Draenetista",
+			ru = "Кристаллы дренейского аметиста",
+			ko = "드레니시스트 수정",
+			cn = "德莱尼水晶",
+		},
+	},
+	[22706] = {
+		readable = "Faustin's Alchemy Set",
+		model = 200877,
+		text = {
+			en = "Faustin's Alchemy Set",
+			es = "Faustin's Alchemy Set",
+			de = "Faustins Alchimie-Set",
+			fr = "Set d'Alchimie de Faustin",
+			it = "Faustin's Alchemy Set",
+			pt = "Kit de Alquimia do Faustino",
+			ru = "Алхимический набор Фаустина",
+			ko = "파우스틴의 실험 도구",
+			cn = "法奥斯丁的炼金店",
+		},
+	},
+	[24776] = {
+		readable = "Yuriv's Tombstone",
+		model = 198445,
+		text = {
+			en = "Yuriv's Tombstone",
+			es = "Lápida de Yuriv",
+			de = "Yurivs Grabstein",
+			fr = "Tombe de Yuriv",
+			it = "Yuriv's Tombstone",
+			pt = "Lápide de Yuriv",
+			ru = "Надгробная плита Юрива",
+			ko = "유리브의 묘비",
+			cn = "尤瑞夫的墓碑",
+		},
+	},
+	[24777] = {
+		readable = "Yuriv's Tombstone",
+		model = 189534,
+		text = {
+			en = "Yuriv's Tombstone",
+			es = "Lápida de Yuriv",
+			de = "Yurivs Grabstein",
+			fr = "Tombe de Yuriv",
+			it = "Yuriv's Tombstone",
+			pt = "Lápide de Yuriv",
+			ru = "Надгробная плита Юрива",
+			ko = "유리브의 묘비",
+			cn = "尤瑞夫的墓碑",
+		},
+	},
+	[24798] = {
+		readable = "Sundried Driftwood",
+		model = 190574,
+		text = {
+			en = "Sundried Driftwood",
+			es = "Madera a la deriva desecada",
+			de = "Sonnengetrocknetes Treibholz",
+			fr = "Bois flotté séché au soleil",
+			it = "Sundried Driftwood",
+			pt = "Madeira Flutuante Seca ao Sol",
+			ru = "Сухой плавник",
+			ko = "볕에 말린 유목",
+			cn = "晒干的流木",
 		},
 	},
 	[35251] = {
@@ -2100,6 +6900,7 @@ root("ObjectDB", {
 	[37099] = {
 		readable = "Atal'ai Tablet",
 		icon = "Interface/Icons/INV_Misc_StoneTablet_03",
+		model = 201080,
 		text = {
 			en = "Atal'ai Tablet",
 			es = "Tablilla Atal'ai",
@@ -2114,6 +6915,7 @@ root("ObjectDB", {
 	},
 	[50961] = {
 		readable = "Malem Chest",
+		model = 200961,
 		text = {
 			en = "Malem Chest",
 			es = "Cofre de Malem",
@@ -2128,6 +6930,7 @@ root("ObjectDB", {
 	},
 	[51708] = {
 		readable = "Eliza's Grave Dirt",
+		model = 201030,
 		text = {
 			en = "Eliza's Grave Dirt",
 			es = "Tierra de la tumba de Eliza",
@@ -2158,6 +6961,7 @@ root("ObjectDB", {
 	},
 	[61934] = {
 		readable = "Brazier of the Dormant Flame",
+		model = 200925,
 		text = {
 			en = "Brazier of the Dormant Flame",
 			es = "Blandón de la Llama Latente",
@@ -2204,6 +7008,7 @@ root("ObjectDB", {
 	},
 	[91138] = {
 		readable = "Jordan's Hammer",
+		model = 198648,
 		text = {
 			en = "Jordan's Hammer",
 			es = "Martillo de Jordan",
@@ -2218,6 +7023,7 @@ root("ObjectDB", {
 	},
 	[103821] = {
 		readable = "Doan's Strongbox",
+		model = 196976,
 		text = {
 			en = "Doan's Strongbox",
 			es = "Caja fuerte de Doan",
@@ -2232,6 +7038,7 @@ root("ObjectDB", {
 	},
 	[112888] = {
 		readable = "Dusty Shelf",
+		model = 198053,
 		text = {
 			en = "Dusty Shelf",
 			es = "Estantería polvorienta",
@@ -2247,6 +7054,7 @@ root("ObjectDB", {
 	[112948] = {
 		readable = "Intrepid's Locked Strongbox",
 		icon = "Interface/Icons/battleground_strongbox_skirmish_horde",
+		model = 197617,
 		text = {
 			en = "Intrepid's Locked Strongbox",
 			es = "Caja fuerte de El Intrépido cerrada",
@@ -2261,6 +7069,7 @@ root("ObjectDB", {
 	},
 	[113757] = {
 		readable = "Shadowforge Cache",
+		model = 200953,
 		text = {
 			en = "Shadowforge Cache",
 			es = "Alijo de Forjatiniebla",
@@ -2275,13 +7084,9 @@ root("ObjectDB", {
 	},
 	[113768] = {
 		readable = "Brightly Colored Egg",
-		icon = [[~_.asset("Holiday_noblegarden")]],
+		model = 199691,
 		text = {
-			-- #if AFTER WRATH
-			en = [[~GetSpellInfo(61820)]],
-			-- #else
 			en = "Brightly Colored Egg",
-			-- #endif
 		},
 	},
 	[113791] = {
@@ -2297,6 +7102,7 @@ root("ObjectDB", {
 			pt = "Braseiro da Fonteterna",
 			ru = "Жаровня Вечного источника",
 			ko = "영원의 샘 제단",
+			cn = "[Brazier of Everfount]",
 		},
 	},
 	[123329] = {
@@ -2328,6 +7134,7 @@ root("ObjectDB", {
 	},
 	[125477] = {
 		readable = "Conspicuous Urn",
+		model = 199753,
 		text = {
 			en = "Conspicuous Urn",
 			es = "Urna llamativa",
@@ -2359,6 +7166,7 @@ root("ObjectDB", {
 	[126158] = {
 		readable = "Tallonkai's Dresser",
 		icon = "Interface/Icons/inv_misc_shadowegg",
+		model = 198749,
 		text = {
 			en = "Tallonkai's Dresser",
 			es = "Vestidor de Tallonkai",
@@ -2373,6 +7181,7 @@ root("ObjectDB", {
 	},
 	[126260] = {
 		readable = "Ancient Chest",
+		model = 200953,
 		text = {
 			en = "Ancient Chest",
 			es = "Cofre antiguo",
@@ -2398,6 +7207,7 @@ root("ObjectDB", {
 			pt = "Cofre de Gallywix",
 			ru = "Сейф Галливикса",
 			ko = "갤리윅스의 금고",
+			cn = "[Gallywix's Lockbox]",
 		},
 	},
 	[131474] = {
@@ -2425,6 +7235,7 @@ root("ObjectDB", {
 	[138492] = {
 		readable = "Shards of Myzrael",
 		icon = "Interface/Icons/inv_enchanting_wod_crystal2",
+		model = 202443,
 		text = {
 			en = "Shards of Myzrael",
 			es = "Fragmentos de Myzrael",
@@ -2456,8 +7267,17 @@ root("ObjectDB", {
 	[141832] = {
 		readable = "Gong of Zul'Farrak",
 		icon = "Interface/Icons/inv_hammer_19",
+		model = 201029,
 		text = {
 			en = "Gong of Zul'Farrak",
+			es = "Gong de Zul'Farrak",
+			de = "Gong von Zul'Farrak",
+			fr = "Gong de Zul'Farrak",
+			it = "Gong di Zul'farrak",
+			pt = "Gongo de Zul'Farrak",
+			ru = "Гонг Зул'Фаррака",
+			ko = "줄파락 징",
+			cn = "祖尔法拉克铁锣",
 		},
 	},
 	[141853] = {
@@ -2510,6 +7330,7 @@ root("ObjectDB", {
 	},
 	[142088] = {
 		readable = "Tablet of Will",
+		model = 200640,
 		text = {
 			en = "Tablet of Will",
 			es = "Tablilla de Voluntad",
@@ -2540,6 +7361,7 @@ root("ObjectDB", {
 	},
 	[142127] = {
 		readable = "Rin'ji's Secret",
+		model = 200640,
 		text = {
 			en = "Rin'ji's Secret",
 			es = "Secreto de Rin'ji",
@@ -2555,6 +7377,7 @@ root("ObjectDB", {
 	[142151] = {
 		readable = "Sealed Barrel",
 		icon = "Interface/Icons/inv_cask_03",
+		model = 199737,
 		text = {
 			en = "Sealed Barrel",
 			es = "Barrica sellada",
@@ -2569,6 +7392,7 @@ root("ObjectDB", {
 	},
 	[142179] = {
 		readable = "Solarsal Gazebo",
+		model = 201529,
 		text = {
 			en = "Solarsal Gazebo",
 			es = "Glorieta de Solarsal",
@@ -2600,6 +7424,7 @@ root("ObjectDB", {
 	[142184] = {
 		readable = "Captain's Chest",
 		icon = "Interface/Icons/inv_box_02",
+		model = 196976,
 		text = {
 			en = "Captain's Chest",
 			es = "Cofre del Capitán",
@@ -2614,31 +7439,68 @@ root("ObjectDB", {
 	},
 	[142185] = {
 		readable = "Flame of Byltan",
+		model = 199138,
 		text = {
 			en = "Flame of Byltan",
+			es = "Llama de Byltan",
+			de = "Flamme von Byltan",
+			fr = "Flamme de Byltan",
+			it = "Fiamma di Byltan",
+			pt = "Chama de Byltan",
+			ru = "Пламя Бильтана",
+			ko = "빌탄의 불꽃",
+			cn = "拜尔坦之焰",
 		},
 	},
 	[142186] = {
 		readable = "Flame of Lahassa",
+		model = 199138,
 		text = {
 			en = "Flame of Lahassa",
+			es = "Llama de Lahassa",
+			de = "Flamme von Lahassa",
+			fr = "Flamme de Lahassa",
+			it = "Fiamma di Lahassa",
+			pt = "Chama de Lahassa",
+			ru = "Пламя Лахассы",
+			ko = "라하사의 불꽃",
+			cn = "莱哈萨之焰",
 		},
 	},
 	[142187] = {
 		readable = "Flame of Imbel",
+		model = 199138,
 		text = {
 			en = "Flame of Imbel",
+			es = "Llama de Imbel",
+			de = "Flamme von Imbel",
+			fr = "Flamme de Imbel",
+			it = "Fiamma di Imbel",
+			pt = "Chama de Imbel",
+			ru = "Пламя Имбела",
+			ko = "임벨의 불꽃",
+			cn = "[Flame of Imbel]",
 		},
 	},
 	[142188] = {
 		readable = "Flame of Samha",
+		model = 199138,
 		text = {
 			en = "Flame of Samha",
+			es = "Llama de Samha",
+			de = "Flamme von Samha",
+			fr = "Flamme de Samha",
+			it = "Fiamma di Samha",
+			pt = "Chama de Samha",
+			ru = "Пламя Самхи",
+			ko = "삼하의 불꽃",
+			cn = "萨姆哈之焰",
 		},
 	},
 	[142195] = {
 		readable = "Woodpaw Battle Map",
 		icon = "Interface/Icons/INV_Misc_Map07",
+		model = 198457,
 		text = {
 			en = "Woodpaw Battle Map",
 			es = "Mapa de batalla de los Zarpaleña",
@@ -2766,6 +7628,7 @@ root("ObjectDB", {
 	[142702] = {
 		readable = "Venom Bottle",
 		icon = "Interface/Icons/inv_potion_19",
+		model = 198061,
 		text = {
 			en = "Venom Bottle",
 			es = "Botella de veneno",
@@ -2781,6 +7644,7 @@ root("ObjectDB", {
 	[142958] = {
 		readable = "Feralas: A History",
 		icon = "Interface/Icons/inv_misc_book_02",
+		model = 200913,
 		text = {
 			en = "Feralas: A History",
 			es = "Feralas: una historia",
@@ -2796,6 +7660,7 @@ root("ObjectDB", {
 	[143980] = {
 		readable = "Gordunni Scroll",
 		icon = "Interface/Icons/inv_scroll_07",
+		model = 198455,
 		text = {
 			en = "Gordunni Scroll",
 			es = "Pergamino Gordunni",
@@ -2810,6 +7675,7 @@ root("ObjectDB", {
 	},
 	[144063] = {
 		readable = "Equinex Monolith",
+		model = 201267,
 		text = {
 			en = "Equinex Monolith",
 			es = "Monolito de Equinex",
@@ -2825,12 +7691,14 @@ root("ObjectDB", {
 	[144064] = {
 		readable = "Gordunni Dirt Mound",
 		icon = "Interface/Icons/inv_stone_02",
+		model = 189528,
 		text = {
 			en = "Gordunni Dirt Mound",
 			es = "Túmulo de Gordunni",
 			de = "Gordunnierdhügel",
 			fr = "Monticule de poussière de Gordunni",
 			it = "Gordunni Dirt Mound",
+			pt = "[Gordunni Dirt Mound]",
 			ru = "Куча земли Гордунни",
 			ko = "골두니 흙더미",
 			cn = "戈杜尼土堆",
@@ -2839,6 +7707,7 @@ root("ObjectDB", {
 	[144066] = {
 		readable = "First Witherbark Cage",
 		icon = "Interface/Icons/inv_crate_01",
+		model = 200937,
 		text = {
 			en = "First Witherbark Cage",
 			es = "Primera jaula Secacorteza",
@@ -2854,6 +7723,7 @@ root("ObjectDB", {
 	[144067] = {
 		readable = "Second Witherbark Cage",
 		icon = "Interface/Icons/inv_crate_01",
+		model = 200937,
 		text = {
 			en = "Second Witherbark Cage",
 			es = "Segunda jaula Secacorteza",
@@ -2869,6 +7739,7 @@ root("ObjectDB", {
 	[144068] = {
 		readable = "Third Witherbark Cage",
 		icon = "Interface/Icons/inv_crate_01",
+		model = 200937,
 		text = {
 			en = "Third Witherbark Cage",
 			es = "Tercera jaula Secacorteza",
@@ -2894,6 +7765,7 @@ root("ObjectDB", {
 			pt = "Prata Roubada",
 			ru = "Украденное серебро",
 			ko = "도둑맞은 은화",
+			cn = "[Stolen Silver]",
 		},
 	},
 	[148502] = {
@@ -2938,6 +7810,7 @@ root("ObjectDB", {
 	[148513] = {
 		readable = "Tablet of Jin'yael",
 		icon = "Interface/Icons/inv_misc_stonetablet_04",
+		model = 201275,
 		text = {
 			en = "Tablet of Jin'yael",
 			es = "Tablilla de Jin'yael",
@@ -2953,6 +7826,7 @@ root("ObjectDB", {
 	[148514] = {
 		readable = "Tablet of Markri",
 		icon = "Interface/Icons/inv_misc_stonetablet_01",
+		model = 201276,
 		text = {
 			en = "Tablet of Markri",
 			es = "Tablilla de Markri",
@@ -2968,6 +7842,7 @@ root("ObjectDB", {
 	[148515] = {
 		readable = "Tablet of Sael'hai",
 		icon = "Interface/Icons/inv_misc_stonetablet_02",
+		model = 201277,
 		text = {
 			en = "Tablet of Sael'hai",
 			es = "Tablilla de Sael'hai",
@@ -2983,6 +7858,7 @@ root("ObjectDB", {
 	[148516] = {
 		readable = "Tablet of Beth'Amara",
 		icon = "Interface/Icons/inv_misc_stonetablet_03",
+		model = 201273,
 		text = {
 			en = "Tablet of Beth'Amara",
 			es = "Tablilla de Beth'Amara",
@@ -2998,6 +7874,7 @@ root("ObjectDB", {
 	[149036] = {
 		readable = "Marvon's Chest",
 		icon = "Interface/Icons/INV_Box_01",
+		model = 197063,
 		text = {
 			en = "Marvon's Chest",
 			es = "Cofre de Marvon",
@@ -3012,6 +7889,7 @@ root("ObjectDB", {
 	},
 	[149502] = {
 		readable = "Hoard of the Black Dragonflight",
+		model = 196976,
 		text = {
 			en = "Hoard of the Black Dragonflight",
 			es = "Tesoro oculto del Vuelo Negro",
@@ -3042,6 +7920,7 @@ root("ObjectDB", {
 	},
 	[151286] = {
 		readable = "Kaldorei Tome of Summoning",
+		model = 198029,
 		text = {
 			en = "Kaldorei Tome of Summoning",
 			es = "Escrito sobre invocación kaldorei",
@@ -3056,6 +7935,7 @@ root("ObjectDB", {
 	},
 	[152095] = {
 		readable = "Moonpetal Lily",
+		model = 189752,
 		text = {
 			en = "Moonpetal Lily",
 			es = "Lirio alunado",
@@ -3071,6 +7951,7 @@ root("ObjectDB", {
 	[152622] = {
 		readable = "Azsharite Formation",
 		icon = "Interface/Icons/inv_misc_gem_crystal_02",
+		model = 190809,
 		text = {
 			en = "Azsharite Formation",
 			es = "Formación de azsharita",
@@ -3086,6 +7967,7 @@ root("ObjectDB", {
 	[153123] = {
 		readable = "Kim'jael's Equipment",
 		icon = "Interface/Icons/inv_crate_01",
+		model = 198165,
 		text = {
 			en = "Kim'jael's Equipment",
 			es = "Equipo de Kim'jael",
@@ -3117,13 +7999,23 @@ root("ObjectDB", {
 	[156561] = {
 		readable = "Wanted Poster",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 199421,
 		text = {
 			en = "Wanted Poster",
+			es = "Cartel de Se busca",
+			de = "Steckbrief",
+			fr = "Avis de recherche",
+			it = "Manifesto dei Ricercati",
+			pt = "Pôster de Procura-se",
+			ru = "Плакат \"Разыскивается\"",
+			ko = "현상 수배 전단",
+			cn = "通缉告示",
 		},
 	},
 	[157936] = {
 		readable = "Un'Goro Dirt Pile",
 		icon = "Interface/Icons/inv_misc_dust_02",
+		model = 204112,
 		text = {
 			en = "Un'Goro Dirt Pile",
 			es = "Montón de porquería de Un'Goro",
@@ -3186,6 +8078,7 @@ root("ObjectDB", {
 	},
 	[161504] = {
 		readable = "A Small Pack",
+		model = 200442,
 		text = {
 			en = "A Small Pack",
 			es = "Un paquetito",
@@ -3201,6 +8094,7 @@ root("ObjectDB", {
 	[161505] = {
 		readable = "A Wrecked Raft",
 		icon = "Interface/Icons/INV_Box_01",
+		model = 190677,
 		text = {
 			en = "A Wrecked Raft",
 			es = "Una balsa estropeada",
@@ -3216,6 +8110,7 @@ root("ObjectDB", {
 	[161521] = {
 		readable = "Research Equipment",
 		icon = "Interface/Icons/Icon_PetFamily_Mechanical",
+		model = 198085,
 		text = {
 			en = "Research Equipment",
 			es = "Equipo de investigación",
@@ -3231,6 +8126,7 @@ root("ObjectDB", {
 	[161526] = {
 		readable = "Crate of Foodstuffs",
 		icon = "Interface/Icons/INV_Box_01",
+		model = 197150,
 		text = {
 			en = "Crate of Foodstuffs",
 			es = "Cajón de comestibles",
@@ -3278,6 +8174,7 @@ root("ObjectDB", {
 	[164659] = {
 		readable = "Green Power Crystal",
 		icon = "Interface/Icons/inv_misc_gem_emerald_02",
+		model = 202750,
 		text = {
 			en = "Green Power Crystal",
 			es = "Cristal de poder verde",
@@ -3293,6 +8190,7 @@ root("ObjectDB", {
 	[164661] = {
 		readable = "Yellow Power Crystal",
 		icon = "Interface/Icons/inv_misc_gem_topaz_02",
+		model = 202754,
 		text = {
 			en = "Yellow Power Crystal",
 			es = "Cristal de poder amarillo",
@@ -3308,6 +8206,7 @@ root("ObjectDB", {
 	[164778] = {
 		readable = "Blue Power Crystal",
 		icon = "Interface/Icons/inv_misc_gem_sapphire_03",
+		model = 202749,
 		text = {
 			en = "Blue Power Crystal",
 			es = "Cristal de poder azul",
@@ -3323,6 +8222,7 @@ root("ObjectDB", {
 	[164780] = {
 		readable = "Red Power Crystal",
 		icon = "Interface/Icons/inv_misc_gem_ruby_03",
+		model = 202753,
 		text = {
 			en = "Red Power Crystal",
 			es = "Cristal de poder rojo",
@@ -3337,11 +8237,7 @@ root("ObjectDB", {
 	},
 	[164820] = {
 		readable = "Dark Keeper Nameplate",
-		-- #if AFTER WRATH
 		icon = "Interface/Icons/Achievement_Character_Dwarf_Male",
-		-- #else
-		icon = [[~_.asset("Achievement_Character_Dwarf_Male")]],
-		-- #endif
 		model = 203051,
 		text = {
 			en = "Dark Keeper Nameplate",
@@ -3358,6 +8254,7 @@ root("ObjectDB", {
 	[164867] = {
 		readable = "WANTED",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 199473,
 		text = {
 			en = "WANTED",
 			es = "SE BUSCA",
@@ -3373,6 +8270,7 @@ root("ObjectDB", {
 	[164868] = {
 		readable = "KILL ON SIGHT",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 199477,
 		text = {
 			en = "KILL ON SIGHT",
 			es = "MATAR INMEDIATAMENTE",
@@ -3388,6 +8286,7 @@ root("ObjectDB", {
 	[164869] = {
 		readable = "Spectral Chalice",
 		icon = "Interface/Icons/INV_Misc_Bowl_01",
+		model = 203016,
 		text = {
 			en = "Spectral Chalice",
 			es = "Cáliz espectral",
@@ -3402,6 +8301,7 @@ root("ObjectDB", {
 	},
 	[164885] = {
 		readable = "Corrupted Night Dragon",
+		model = 201871,
 		text = {
 			en = "Corrupted Night Dragon",
 			es = "Dragón nocturno corrupto",
@@ -3416,6 +8316,7 @@ root("ObjectDB", {
 	},
 	[164886] = {
 		readable = "Corrupted Songflower",
+		model = 201873,
 		text = {
 			en = "Corrupted Songflower",
 			es = "Melodía corrupta",
@@ -3430,6 +8331,7 @@ root("ObjectDB", {
 	},
 	[164887] = {
 		readable = "Corrupted Windblossom",
+		model = 201877,
 		text = {
 			en = "Corrupted Windblossom",
 			es = "Flor del viento corrupta",
@@ -3444,6 +8346,7 @@ root("ObjectDB", {
 	},
 	[164888] = {
 		readable = "Corrupted Whipper Root",
+		model = 201875,
 		text = {
 			en = "Corrupted Whipper Root",
 			es = "Blancoria corrupta",
@@ -3458,6 +8361,7 @@ root("ObjectDB", {
 	},
 	[164909] = {
 		readable = "Wrecked Row Boat",
+		model = 190677,
 		text = {
 			en = "Wrecked Row Boat",
 			es = "Restos de un bote de remos",
@@ -3473,6 +8377,7 @@ root("ObjectDB", {
 	[164910] = {
 		readable = "Ornate Chest",
 		icon = "Interface/Icons/INV_Box_01",
+		model = 196979,
 		text = {
 			en = "Ornate Chest",
 			es = "Cofre ornamentado",
@@ -3487,6 +8392,7 @@ root("ObjectDB", {
 	},
 	[164953] = {
 		readable = "Large Leather Backpacks",
+		model = 198989,
 		text = {
 			en = "Large Leather Backpacks",
 			es = "Mochilas de piel grandes",
@@ -3501,6 +8407,7 @@ root("ObjectDB", {
 	},
 	[164954] = {
 		readable = "Zukk'ash Pod",
+		model = 219553,
 		text = {
 			en = "Zukk'ash Pod",
 			es = "Vaina de Zukk'ash",
@@ -3516,6 +8423,7 @@ root("ObjectDB", {
 	[164955] = {
 		readable = "Northern Crystal Pylon",
 		icon = "Interface/Icons/INV_Misc_Gem_Crystal_01",
+		model = 202759,
 		text = {
 			en = "Northern Crystal Pylon",
 			es = "Torre de cristal del Norte",
@@ -3531,6 +8439,7 @@ root("ObjectDB", {
 	[164956] = {
 		readable = "Western Crystal Pylon",
 		icon = "Interface/Icons/INV_Misc_Gem_Crystal_01",
+		model = 202759,
 		text = {
 			en = "Western Crystal Pylon",
 			es = "Torre de cristal del Oeste",
@@ -3546,6 +8455,7 @@ root("ObjectDB", {
 	[164957] = {
 		readable = "Eastern Crystal Pylon",
 		icon = "Interface/Icons/INV_Misc_Gem_Crystal_01",
+		model = 202759,
 		text = {
 			en = "Eastern Crystal Pylon",
 			es = "Torre de cristal del Este",
@@ -3561,6 +8471,7 @@ root("ObjectDB", {
 	[164958] = {
 		readable = "Bloodpetal Sprout",
 		icon = "Interface/Icons/inv_misc_food_45",
+		model = 201087,
 		text = {
 			en = "Bloodpetal Sprout",
 			es = "Brote Sangrepétalo",
@@ -3592,6 +8503,7 @@ root("ObjectDB", {
 	[166863] = {
 		readable = "Fresh Threshadon Carcass",
 		icon = "Interface/Icons/inv_misc_food_16",
+		model = 202781,
 		text = {
 			en = "Fresh Threshadon Carcass",
 			es = "Cadáver reciente de trillanodonte",
@@ -3623,6 +8535,7 @@ root("ObjectDB", {
 	[171938] = {
 		readable = "Cactus Apple",
 		icon = "Interface/Icons/inv_misc_food_19",
+		model = 201766,
 		text = {
 			en = "Cactus Apple",
 			es = "Manzana de cactus",
@@ -3637,6 +8550,7 @@ root("ObjectDB", {
 	},
 	[171939] = {
 		readable = "Corrupted Songflower",
+		model = 201873,
 		text = {
 			en = "Corrupted Songflower",
 			es = "Melodía corrupta",
@@ -3651,6 +8565,7 @@ root("ObjectDB", {
 	},
 	[171942] = {
 		readable = "Corrupted Songflower",
+		model = 201873,
 		text = {
 			en = "Corrupted Songflower",
 			es = "Melodía corrupta",
@@ -3681,6 +8596,7 @@ root("ObjectDB", {
 	},
 	[173265] = {
 		readable = "Wooden Outhouse",
+		model = 190617,
 		text = {
 			en = "Wooden Outhouse",
 			es = "Letrina de madera",
@@ -3695,6 +8611,7 @@ root("ObjectDB", {
 	},
 	[173284] = {
 		readable = "Corrupted Whipper Root",
+		model = 201875,
 		text = {
 			en = "Corrupted Whipper Root",
 			es = "Blancoria corrupta",
@@ -3709,6 +8626,7 @@ root("ObjectDB", {
 	},
 	[173324] = {
 		readable = "Corrupted Night Dragon",
+		model = 201871,
 		text = {
 			en = "Corrupted Night Dragon",
 			es = "Dragón nocturno corrupto",
@@ -3723,6 +8641,7 @@ root("ObjectDB", {
 	},
 	[173327] = {
 		readable = "Corrupted Windblossom",
+		model = 201877,
 		text = {
 			en = "Corrupted Windblossom",
 			es = "Flor del viento corrupta",
@@ -3737,6 +8656,7 @@ root("ObjectDB", {
 	},
 	[174594] = {
 		readable = "Corrupted Songflower",
+		model = 201873,
 		text = {
 			en = "Corrupted Songflower",
 			es = "Melodía corrupta",
@@ -3751,6 +8671,7 @@ root("ObjectDB", {
 	},
 	[174595] = {
 		readable = "Corrupted Songflower",
+		model = 201873,
 		text = {
 			en = "Corrupted Songflower",
 			es = "Melodía corrupta",
@@ -3765,6 +8686,7 @@ root("ObjectDB", {
 	},
 	[174596] = {
 		readable = "Corrupted Songflower",
+		model = 201873,
 		text = {
 			en = "Corrupted Songflower",
 			es = "Melodía corrupta",
@@ -3779,6 +8701,7 @@ root("ObjectDB", {
 	},
 	[174597] = {
 		readable = "Corrupted Songflower",
+		model = 201873,
 		text = {
 			en = "Corrupted Songflower",
 			es = "Melodía corrupta",
@@ -3793,6 +8716,7 @@ root("ObjectDB", {
 	},
 	[174598] = {
 		readable = "Corrupted Songflower",
+		model = 201873,
 		text = {
 			en = "Corrupted Songflower",
 			es = "Melodía corrupta",
@@ -3807,6 +8731,7 @@ root("ObjectDB", {
 	},
 	[174599] = {
 		readable = "Corrupted Windblossom",
+		model = 201877,
 		text = {
 			en = "Corrupted Windblossom",
 			es = "Flor del viento corrupta",
@@ -3821,6 +8746,7 @@ root("ObjectDB", {
 	},
 	[174600] = {
 		readable = "Corrupted Windblossom",
+		model = 201877,
 		text = {
 			en = "Corrupted Windblossom",
 			es = "Flor del viento corrupta",
@@ -3835,6 +8761,7 @@ root("ObjectDB", {
 	},
 	[174601] = {
 		readable = "Corrupted Windblossom",
+		model = 201877,
 		text = {
 			en = "Corrupted Windblossom",
 			es = "Flor del viento corrupta",
@@ -3849,6 +8776,7 @@ root("ObjectDB", {
 	},
 	[174602] = {
 		readable = "Corrupted Windblossom",
+		model = 201877,
 		text = {
 			en = "Corrupted Windblossom",
 			es = "Flor del viento corrupta",
@@ -3863,6 +8791,7 @@ root("ObjectDB", {
 	},
 	[174603] = {
 		readable = "Corrupted Windblossom",
+		model = 201877,
 		text = {
 			en = "Corrupted Windblossom",
 			es = "Flor del viento corrupta",
@@ -3877,6 +8806,7 @@ root("ObjectDB", {
 	},
 	[174604] = {
 		readable = "Corrupted Windblossom",
+		model = 201877,
 		text = {
 			en = "Corrupted Windblossom",
 			es = "Flor del viento corrupta",
@@ -3891,6 +8821,7 @@ root("ObjectDB", {
 	},
 	[174605] = {
 		readable = "Corrupted Whipper Root",
+		model = 201875,
 		text = {
 			en = "Corrupted Whipper Root",
 			es = "Blancoria corrupta",
@@ -3905,6 +8836,7 @@ root("ObjectDB", {
 	},
 	[174606] = {
 		readable = "Corrupted Whipper Root",
+		model = 201875,
 		text = {
 			en = "Corrupted Whipper Root",
 			es = "Blancoria corrupta",
@@ -3919,6 +8851,7 @@ root("ObjectDB", {
 	},
 	[174607] = {
 		readable = "Corrupted Whipper Root",
+		model = 201875,
 		text = {
 			en = "Corrupted Whipper Root",
 			es = "Blancoria corrupta",
@@ -3933,6 +8866,7 @@ root("ObjectDB", {
 	},
 	[174608] = {
 		readable = "Corrupted Night Dragon",
+		model = 201871,
 		text = {
 			en = "Corrupted Night Dragon",
 			es = "Dragón nocturno corrupto",
@@ -3948,6 +8882,7 @@ root("ObjectDB", {
 	[174682] = {
 		readable = "Beware of Pterrordax",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 199473,
 		text = {
 			en = "Beware of Pterrordax",
 			es = "Cuidado con los pterrordáctilos",
@@ -3962,6 +8897,7 @@ root("ObjectDB", {
 	},
 	[174684] = {
 		readable = "Corrupted Night Dragon",
+		model = 201871,
 		text = {
 			en = "Corrupted Night Dragon",
 			es = "Dragón nocturno corrupto",
@@ -3976,6 +8912,7 @@ root("ObjectDB", {
 	},
 	[174686] = {
 		readable = "Corrupted Whipper Root",
+		model = 201875,
 		text = {
 			en = "Corrupted Whipper Root",
 			es = "Blancoria corrupta",
@@ -3990,6 +8927,7 @@ root("ObjectDB", {
 	},
 	[174708] = {
 		readable = "Corrupted Windblossom",
+		model = 201877,
 		text = {
 			en = "Corrupted Windblossom",
 			es = "Flor del viento corrupta",
@@ -4004,6 +8942,7 @@ root("ObjectDB", {
 	},
 	[174709] = {
 		readable = "Corrupted Windblossom",
+		model = 201877,
 		text = {
 			en = "Corrupted Windblossom",
 			es = "Flor del viento corrupta",
@@ -4018,6 +8957,7 @@ root("ObjectDB", {
 	},
 	[174712] = {
 		readable = "Corrupted Songflower",
+		model = 201873,
 		text = {
 			en = "Corrupted Songflower",
 			es = "Melodía corrupta",
@@ -4032,6 +8972,7 @@ root("ObjectDB", {
 	},
 	[174713] = {
 		readable = "Corrupted Songflower",
+		model = 201873,
 		text = {
 			en = "Corrupted Songflower",
 			es = "Melodía corrupta",
@@ -4055,13 +8996,23 @@ root("ObjectDB", {
 	},
 	[174848] = {
 		readable = "Testing Equipment",
+		model = 203218,
 		text = {
 			en = "Testing Equipment",
+			es = "Equipo de pruebas",
+			de = "Testausrüstung",
+			fr = "Equipement de test",
+			it = "Equipaggiamento di Prova",
+			pt = "Equipamento de Teste",
+			ru = "Испытательное оборудование",
+			ko = "실험용 장비",
+			cn = "测试仪器",
 		},
 	},
 	[175165] = {
 		readable = "Silver Dawning's Lockbox",
 		icon = "Interface/Icons/inv_box_03",
+		model = 196976,
 		text = {
 			en = "Silver Dawning's Lockbox",
 			es = "Arcón del Amanecer de Plata",
@@ -4077,6 +9028,7 @@ root("ObjectDB", {
 	[175166] = {
 		readable = "Mist Veil's Lockbox",
 		icon = "Interface/Icons/inv_box_04",
+		model = 196976,
 		text = {
 			en = "Mist Veil's Lockbox",
 			es = "Arcón del Halo de bruma",
@@ -4092,6 +9044,7 @@ root("ObjectDB", {
 	[175207] = {
 		readable = "Beached Sea Creature",
 		icon = "Interface/Icons/inv_misc_bone_02",
+		model = 201573,
 		text = {
 			en = "Beached Sea Creature",
 			es = "Criatura marina varada",
@@ -4107,6 +9060,7 @@ root("ObjectDB", {
 	[175226] = {
 		readable = "Beached Sea Creature",
 		icon = "Interface/Icons/inv_misc_bone_02",
+		model = 190548,
 		text = {
 			en = "Beached Sea Creature",
 			es = "Criatura marina varada",
@@ -4122,6 +9076,7 @@ root("ObjectDB", {
 	[175227] = {
 		readable = "Beached Sea Creature",
 		icon = "Interface/Icons/inv_misc_bone_02",
+		model = 201568,
 		text = {
 			en = "Beached Sea Creature",
 			es = "Criatura marina varada",
@@ -4137,6 +9092,7 @@ root("ObjectDB", {
 	[175230] = {
 		readable = "Beached Sea Creature",
 		icon = "Interface/Icons/inv_misc_bone_02",
+		model = 201573,
 		text = {
 			en = "Beached Sea Creature",
 			es = "Criatura marina varada",
@@ -4152,6 +9108,7 @@ root("ObjectDB", {
 	[175233] = {
 		readable = "Beached Sea Creature",
 		icon = "Interface/Icons/inv_misc_bone_02",
+		model = 201568,
 		text = {
 			en = "Beached Sea Creature",
 			es = "Criatura marina varada",
@@ -4167,6 +9124,7 @@ root("ObjectDB", {
 	[175245] = {
 		readable = "Father Flame",
 		icon = "Interface/Icons/inv_misc_orb_05",
+		model = 202443,
 		text = {
 			en = "Father Flame",
 			es = "Llama paternal",
@@ -4182,6 +9140,7 @@ root("ObjectDB", {
 	[175320] = {
 		readable = "WANTED: Murkdeep!",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 199473,
 		text = {
 			en = "WANTED: Murkdeep!",
 			es = "SE BUSCA: ¡Viscoso!",
@@ -4197,6 +9156,7 @@ root("ObjectDB", {
 	[175324] = {
 		readable = "Frostmaul Shards",
 		icon = "Interface/Icons/inv_misc_gem_crystal_01",
+		model = 190810,
 		text = {
 			en = "Frostmaul Shards",
 			es = "Esquirlas de Machacahielo",
@@ -4212,27 +9172,55 @@ root("ObjectDB", {
 	[175329] = {
 		readable = "Blackwood Nut Stores",
 		icon = "Interface/Icons/inv_misc_food_02",
+		model = 200401,
 		text = {
 			en = "Blackwood Nut Stores",
+			es = "Provisiones de nueces de los Bosque Negro",
+			de = "Nusslager der Schwarzfelle",
+			fr = "Réserves de noix des Noirbois",
+			it = "Blackwood Nut Stores",
+			pt = "Reservas de Castanha Bosquenero",
+			ru = "Ореховый склад Чернолесья",
+			ko = "검은나무일족 열매 저장고",
+			cn = "黑木坚果",
 		},
 	},
 	[175330] = {
 		readable = "Blackwood Fruit Stores",
 		icon = "Interface/Icons/inv_misc_food_57",
+		model = 200401,
 		text = {
 			en = "Blackwood Fruit Stores",
+			es = "Provisiones de fruta de los Bosque Negro",
+			de = "Obstlager der Schwarzfelle",
+			fr = "Réserves de fruits des Noirbois",
+			it = "Blackwood Fruit Stores",
+			pt = "Reservas de Fruta Bosquenero",
+			ru = "Фруктовый склад Чернолесья",
+			ko = "검은나무일족 과일 저장고",
+			cn = "黑木水果",
 		},
 	},
 	[175331] = {
 		readable = "Blackwood Grain Stores",
 		icon = "Interface/Icons/inv_misc_food_wheat_02",
+		model = 200401,
 		text = {
 			en = "Blackwood Grain Stores",
+			es = "Provisiones de grano de los Bosque Negro",
+			de = "Getreidelager der Schwarzfelle",
+			fr = "Réserves de céréales des Noirbois",
+			it = "Blackwood Grain Stores",
+			pt = "Reservas de Grão Bosquenero",
+			ru = "Зернохранилище племени Чернолесья",
+			ko = "검은나무일족 곡식 저장고",
+			cn = "黑木谷物",
 		},
 	},
 	[175382] = {
 		readable = "Doomrigger's Coffer",
 		icon = "Interface/Icons/inv_jewelry_amulet_01",
+		model = 200953,
 		text = {
 			en = "Doomrigger's Coffer",
 			es = "Arca de Equipasino",
@@ -4248,6 +9236,7 @@ root("ObjectDB", {
 	[175384] = {
 		readable = "Highperch Wyvern Egg",
 		icon = "Interface/Icons/inv_egg_02",
+		model = 202737,
 		text = {
 			en = "Highperch Wyvern Egg",
 			es = "Huevo de dracoleón Nido Alto",
@@ -4263,6 +9252,7 @@ root("ObjectDB", {
 	[175385] = {
 		readable = "Darkstone Tablet",
 		icon = "Interface/Icons/inv_misc_rune_06",
+		model = 201080,
 		text = {
 			en = "Darkstone Tablet",
 			es = "Tablilla de Rocanegra",
@@ -4278,6 +9268,7 @@ root("ObjectDB", {
 	[175407] = {
 		readable = "Moontouched Feather",
 		icon = "Interface/Icons/inv_feather_13",
+		model = 199704,
 		text = {
 			en = "Moontouched Feather",
 			es = "Pluma Lunadón",
@@ -4293,6 +9284,7 @@ root("ObjectDB", {
 	[175524] = {
 		readable = "Mysterious Red Crystal",
 		icon = "Interface/Icons/inv_misc_qirajicrystal_02",
+		model = 201845,
 		text = {
 			en = "Mysterious Red Crystal",
 			es = "Cristal rojo misterioso",
@@ -4315,6 +9307,7 @@ root("ObjectDB", {
 	[175565] = {
 		readable = "Alien Egg",
 		icon = "Interface/Icons/inv_egg_02",
+		model = 198527,
 		text = {
 			en = "Alien Egg",
 			es = "Huevo extraño",
@@ -4329,6 +9322,7 @@ root("ObjectDB", {
 	},
 	[175586] = {
 		readable = "Jaron's Wagon",
+		model = 197394,
 		text = {
 			en = "Jaron's Wagon",
 			es = "Carro de Jaron",
@@ -4343,6 +9337,7 @@ root("ObjectDB", {
 	},
 	[175587] = {
 		readable = "Damaged Crate",
+		model = 199103,
 		text = {
 			en = "Damaged Crate",
 			es = "Cajón dañado",
@@ -4361,11 +9356,20 @@ root("ObjectDB", {
 		model = 198527,
 		text = {
 			en = "Spire Spider Egg",
+			es = "Huevo de araña de la cumbre",
+			de = "Spitzenspinnenei",
+			fr = "Œuf d'araignée du pic",
+			it = "Uovo del Ragno dei Bastioni",
+			pt = "Ovo de Aranha do Pináculo",
+			ru = "Яйцо скального паука",
+			ko = "첨탑 거미알",
+			cn = "尖塔蜘蛛卵",
 		},
 	},
 	[175629] = {
 		readable = "Jaron's Supplies",
 		icon = "Interface/Icons/inv_crate_05",
+		model = 198165,
 		text = {
 			en = "Jaron's Supplies",
 			es = "Suministros de Jaron",
@@ -4383,7 +9387,6 @@ root("ObjectDB", {
 		icon = "Interface/Icons/inv_crate_01",
 		model = 199099,
 		text = {
-			-- #if AFTER CATA
 			en = "Crossroads Supply Crate",
 			es = "Cajón de suministros de El Cruce",
 			de = "Vorratskiste des Wegekreuzes",
@@ -4393,17 +9396,6 @@ root("ObjectDB", {
 			ru = "Ящик с припасами Перекрестка",
 			ko = "십자로 보급품 상자",
 			cn = "十字路口的补给箱",
-			-- #else
-			en = "Crossroads' Supply Crates",
-			es = "Cajones de suministros de El Cruce",
-			de = "Vorratskisten von Crossroads",
-			fr = "Caisses de ravitaillement de la Croisée",
-			it = "Crossroads' Supply Crates",
-			pt = "Caixote de Suprimentos da Encruzilhada",
-			ru = "Ящики с припасами для Перекрестка",
-			ko = "크로스로드 보급품 상자",
-			cn = "十字路口的补给箱",
-			-- #endif
 		},
 	},
 	[175724] = {
@@ -5049,6 +10041,7 @@ root("ObjectDB", {
 	[175888] = {
 		readable = "Highborne Relic Fragment",
 		icon = "Interface/Icons/inv_staff_15",
+		model = 191347,
 		text = {
 			en = "Highborne Relic Fragment",
 			es = "Trozo de reliquia de Altonato",
@@ -5080,6 +10073,7 @@ root("ObjectDB", {
 	[175891] = {
 		readable = "Highborne Relic Fragment",
 		icon = "Interface/Icons/inv_staff_15",
+		model = 191347,
 		text = {
 			en = "Highborne Relic Fragment",
 			es = "Trozo de reliquia de Altonato",
@@ -5095,6 +10089,7 @@ root("ObjectDB", {
 	[175892] = {
 		readable = "Highborne Relic Fragment",
 		icon = "Interface/Icons/inv_staff_15",
+		model = 191347,
 		text = {
 			en = "Highborne Relic Fragment",
 			es = "Trozo de reliquia de Altonato",
@@ -5110,6 +10105,7 @@ root("ObjectDB", {
 	[175893] = {
 		readable = "Highborne Relic Fragment",
 		icon = "Interface/Icons/inv_staff_15",
+		model = 191347,
 		text = {
 			en = "Highborne Relic Fragment",
 			es = "Trozo de reliquia de Altonato",
@@ -5125,6 +10121,7 @@ root("ObjectDB", {
 	[175894] = {
 		readable = "Janice's Parcel",
 		icon = "Interface/Icons/inv_misc_gift_05",
+		model = 191107,
 		text = {
 			en = "Janice's Parcel",
 			es = "Paquete de Janice",
@@ -5139,6 +10136,7 @@ root("ObjectDB", {
 	},
 	[175924] = {
 		readable = "Locked Cabinet",
+		model = 197626,
 		text = {
 			en = "Locked Cabinet",
 			es = "Armario cerrado",
@@ -5153,6 +10151,7 @@ root("ObjectDB", {
 	},
 	[175925] = {
 		readable = "Outhouse",
+		model = 190617,
 		text = {
 			en = "Outhouse",
 			es = "Letrina",
@@ -5168,6 +10167,7 @@ root("ObjectDB", {
 	[175926] = {
 		readable = "Mrs. Dalson's Diary",
 		icon = "Interface/Icons/inv_misc_book_07",
+		model = 198043,
 		text = {
 			en = "Mrs. Dalson's Diary",
 			es = "Diario de la señora Dalson",
@@ -5183,6 +10183,7 @@ root("ObjectDB", {
 	[175928] = {
 		readable = "Incendia Agave",
 		icon = "Interface/Icons/inv_misc_herb_15",
+		model = 219267,
 		text = {
 			en = "Incendia Agave",
 			es = "Pita incendiaria",
@@ -5212,6 +10213,7 @@ root("ObjectDB", {
 	},
 	[176090] = {
 		readable = "Human Remains",
+		model = 199671,
 		text = {
 			en = "Human Remains",
 			es = "Restos humanos",
@@ -5227,6 +10229,7 @@ root("ObjectDB", {
 	[176091] = {
 		readable = "Deadwood Cauldron",
 		icon = "Interface/Icons/INV_Misc_Cauldron_Arcane",
+		model = 198100,
 		text = {
 			en = "Deadwood Cauldron",
 			es = "Caldera de Muertobosque",
@@ -5242,6 +10245,7 @@ root("ObjectDB", {
 	[176115] = {
 		readable = "Wanted Poster - Arnak Grimtotem",
 		icon = "Interface/Icons/inv_misc_foot_centaur",
+		model = 191094,
 		text = {
 			en = "Wanted Poster - Arnak Grimtotem",
 			es = "Cartel de Se busca: Arnak Tótem Siniestro",
@@ -5257,6 +10261,7 @@ root("ObjectDB", {
 	[176158] = {
 		readable = "Brazier of Pain",
 		icon = "Interface/Icons/inv_potion_13",
+		model = 199138,
 		text = {
 			en = "Brazier of Pain",
 			es = "Blandón del Dolor",
@@ -5272,6 +10277,7 @@ root("ObjectDB", {
 	[176159] = {
 		readable = "Brazier of Malice",
 		icon = "Interface/Icons/inv_potion_13",
+		model = 199138,
 		text = {
 			en = "Brazier of Malice",
 			es = "Blandón de la Maldad",
@@ -5287,6 +10293,7 @@ root("ObjectDB", {
 	[176160] = {
 		readable = "Brazier of Suffering",
 		icon = "Interface/Icons/inv_potion_13",
+		model = 199138,
 		text = {
 			en = "Brazier of Suffering",
 			es = "Blandón del Sufrimiento",
@@ -5302,6 +10309,7 @@ root("ObjectDB", {
 	[176161] = {
 		readable = "Brazier of Hatred",
 		icon = "Interface/Icons/inv_potion_13",
+		model = 199138,
 		text = {
 			en = "Brazier of Hatred",
 			es = "Blandón del Odio",
@@ -5317,6 +10325,7 @@ root("ObjectDB", {
 	[176189] = {
 		readable = "Skeletal Sea Turtle",
 		icon = "Interface/Icons/inv_misc_bone_07",
+		model = 201475,
 		text = {
 			en = "Skeletal Sea Turtle",
 			es = "Tortuga marina esquelética",
@@ -5332,6 +10341,7 @@ root("ObjectDB", {
 	[176190] = {
 		readable = "Beached Sea Turtle",
 		icon = "Interface/Icons/inv_misc_bone_07",
+		model = 201475,
 		text = {
 			en = "Beached Sea Turtle",
 			es = "Tortuga marina varada",
@@ -5347,6 +10357,7 @@ root("ObjectDB", {
 	[176191] = {
 		readable = "Beached Sea Turtle",
 		icon = "Interface/Icons/inv_misc_bone_07",
+		model = 201475,
 		text = {
 			en = "Beached Sea Turtle",
 			es = "Tortuga marina varada",
@@ -5378,6 +10389,7 @@ root("ObjectDB", {
 	[176196] = {
 		readable = "Beached Sea Turtle",
 		icon = "Interface/Icons/inv_misc_bone_07",
+		model = 201475,
 		text = {
 			en = "Beached Sea Turtle",
 			es = "Tortuga marina varada",
@@ -5393,6 +10405,7 @@ root("ObjectDB", {
 	[176197] = {
 		readable = "Beached Sea Turtle",
 		icon = "Interface/Icons/inv_misc_bone_07",
+		model = 201476,
 		text = {
 			en = "Beached Sea Turtle",
 			es = "Tortuga marina varada",
@@ -5408,6 +10421,7 @@ root("ObjectDB", {
 	[176198] = {
 		readable = "Beached Sea Turtle",
 		icon = "Interface/Icons/inv_misc_bone_07",
+		model = 201476,
 		text = {
 			en = "Beached Sea Turtle",
 			es = "Tortuga marina varada",
@@ -5423,13 +10437,23 @@ root("ObjectDB", {
 	[176213] = {
 		readable = "Blood of Heroes",
 		icon = "Interface/Icons/inv_potion_33",
+		model = 203722,
 		text = {
 			en = "Blood of Heroes",
+			es = "Sangre de héroes",
+			de = "Blut von Helden",
+			fr = "Sang des héros",
+			it = "Blood of Heroes",
+			pt = "Sangue dos Heróis",
+			ru = "Кровь героев",
+			ko = "영웅의 피",
+			cn = "英雄之血",
 		},
 	},
 	[176344] = {
 		readable = "Document Chest",
 		icon = "Interface/Icons/inv_scroll_07",
+		model = 196976,
 		text = {
 			en = "Document Chest",
 			es = "Cofre de documentos",
@@ -5444,6 +10468,7 @@ root("ObjectDB", {
 	},
 	[176361] = {
 		readable = "Scourge Cauldron",
+		model = 191217,
 		text = {
 			en = "Scourge Cauldron",
 			es = "Caldera de la Plaga",
@@ -5458,6 +10483,7 @@ root("ObjectDB", {
 	},
 	[176392] = {
 		readable = "Scourge Cauldron",
+		model = 191217,
 		text = {
 			en = "Scourge Cauldron",
 			es = "Caldera de la Plaga",
@@ -5472,6 +10498,7 @@ root("ObjectDB", {
 	},
 	[176393] = {
 		readable = "Scourge Cauldron",
+		model = 191217,
 		text = {
 			en = "Scourge Cauldron",
 			es = "Caldera de la Plaga",
@@ -5583,6 +10610,7 @@ root("ObjectDB", {
 	[176582] = {
 		readable = "Shellfish Trap",
 		icon = "Interface/Icons/inv_misc_fish_14",
+		model = 200938,
 		text = {
 			en = "Shellfish Trap",
 			es = "Trampa para marisco",
@@ -5598,6 +10626,7 @@ root("ObjectDB", {
 	[176631] = {
 		readable = "Menethil's Gift",
 		icon = "Interface/Icons/inv_misc_book_04",
+		model = 202952,
 		text = {
 			en = "Menethil's Gift",
 			es = "Obsequio de Menethil",
@@ -5613,6 +10642,7 @@ root("ObjectDB", {
 	[176634] = {
 		readable = "Kerlonian's Chest",
 		icon = "Interface/Icons/inv_misc_horn_03",
+		model = 196976,
 		text = {
 			en = "Kerlonian's Chest",
 			es = "Cofre de Kerlonian",
@@ -5628,6 +10658,7 @@ root("ObjectDB", {
 	[176751] = {
 		readable = "Kodo Bones",
 		icon = "Interface/Icons/inv_misc_bone_09",
+		model = 201598,
 		text = {
 			en = "Kodo Bones",
 			es = "Huesos de kodo",
@@ -5646,11 +10677,20 @@ root("ObjectDB", {
 		model = 199744,
 		text = {
 			en = "Araj's Phylactery",
+			es = "Filacteria de Araj",
+			de = "Arajs Phylakterium",
+			fr = "Phylactère d'Araj",
+			it = "Filatterio di Araj",
+			pt = "Filactério de Araj",
+			ru = "Оберег Аража",
+			ko = "아라즈의 성물함",
+			cn = "阿拉基的护命匣",
 		},
 	},
 	[177243] = {
 		readable = "Demon Portal",
 		icon = "Interface/Icons/spell_shadow_unholyfrenzy",
+		model = 190858,
 		text = {
 			en = "Demon Portal",
 			es = "Portal de demonios",
@@ -5665,6 +10705,7 @@ root("ObjectDB", {
 	},
 	[177289] = {
 		readable = "Scourge Cauldron",
+		model = 191217,
 		text = {
 			en = "Scourge Cauldron",
 			es = "Caldera de la Plaga",
@@ -5680,6 +10721,7 @@ root("ObjectDB", {
 	[177491] = {
 		readable = "Termite Barrel",
 		icon = "Interface/Icons/inv_cask_01",
+		model = 201007,
 		text = {
 			en = "Termite Barrel",
 			es = "Barrica de termitas",
@@ -5695,6 +10737,7 @@ root("ObjectDB", {
 	[177544] = {
 		readable = "Joseph's Chest",
 		icon = "Interface/Icons/INV_Box_01",
+		model = 197617,
 		text = {
 			en = "Joseph's Chest",
 			es = "Cofre de Joseph",
@@ -5709,6 +10752,7 @@ root("ObjectDB", {
 	},
 	[177667] = {
 		readable = "Torn Scroll",
+		model = 203400,
 		text = {
 			en = "Torn Scroll",
 			es = "Pergamino roto",
@@ -5740,6 +10784,7 @@ root("ObjectDB", {
 	[177750] = {
 		readable = "Lunar Fungal Bloom",
 		icon = "Interface/Icons/inv_mushroom_01",
+		model = 189761,
 		text = {
 			en = "Lunar Fungal Bloom",
 			es = "Flor de hongo lunar",
@@ -5771,6 +10816,7 @@ root("ObjectDB", {
 	[177904] = {
 		readable = "Wanted Poster: Besseleth",
 		icon = "Interface/Icons/ability_hunter_pet_spider",
+		model = 191094,
 		text = {
 			en = "Wanted Poster: Besseleth",
 			es = "Cartel de Se busca: Besseleth",
@@ -5802,6 +10848,7 @@ root("ObjectDB", {
 	[178144] = {
 		readable = "Troll Chest",
 		icon = "Interface/Icons/inv_jewelry_talisman_14",
+		model = 197063,
 		text = {
 			en = "Troll Chest",
 			es = "Cofre trol",
@@ -5817,6 +10864,7 @@ root("ObjectDB", {
 	[178195] = {
 		readable = "Warsong Oil",
 		icon = "Interface/Icons/inv_potion_64",
+		model = 190343,
 		text = {
 			en = "Warsong Oil",
 			es = "Aceite Grito de Guerra",
@@ -5832,6 +10880,7 @@ root("ObjectDB", {
 	[178204] = {
 		readable = "Warsong Axe Shipment",
 		icon = "Interface/Icons/inv_crate_01",
+		model = 198168,
 		text = {
 			en = "Warsong Axe Shipment",
 			es = "Envío de hachas de los Grito de Guerra",
@@ -5854,6 +10903,7 @@ root("ObjectDB", {
 	[178227] = {
 		readable = "Murgut's Totem Basket",
 		icon = "Interface/Icons/inv_misc_idol_03",
+		model = 200352,
 		text = {
 			en = "Murgut's Totem Basket",
 			es = "Cesta de tótems de Murgut",
@@ -5869,6 +10919,7 @@ root("ObjectDB", {
 	[178553] = {
 		readable = "Hive'Ashi Pod",
 		icon = "Interface/Icons/inv_misc_slime_01",
+		model = 201279,
 		text = {
 			en = "Hive'Ashi Pod",
 			es = "Vaina de Colmen'Ashi",
@@ -5884,6 +10935,7 @@ root("ObjectDB", {
 	[178609] = {
 		readable = "Holiday Snow",
 		icon = "Interface/Icons/INV_Ammo_Snowball",
+		model = 196993,
 		text = {
 			en = "Holiday Snow",
 			es = "Nieve de Vacaciones",
@@ -5914,6 +10966,7 @@ root("ObjectDB", {
 	},
 	[179499] = {
 		readable = "Ogre Tannin Basket",
+		model = 200377,
 		text = {
 			en = "Ogre Tannin Basket",
 			es = "Cesta de tanino de ogro",
@@ -5929,6 +10982,7 @@ root("ObjectDB", {
 	[179501] = {
 		readable = "Knot Thimblejack's Cache",
 		icon = "Interface/Icons/INV_Crate_01",
+		model = 200961,
 		text = {
 			en = "Knot Thimblejack's Cache",
 			es = "Alijo de Knot Thimblejack",
@@ -5979,11 +11033,20 @@ root("ObjectDB", {
 		model = 201617,
 		text = {
 			en = "Felvine Shard",
+			es = "Fragmento de gangrevid",
+			de = "Teufelsrankensplitter",
+			fr = "Fragment de gangrevigne",
+			it = "Frammento di Vil Vite",
+			pt = "Lasca de Vinhavil",
+			ru = "Осколок сквернита",
+			ko = "악령덩굴 조각",
+			cn = "水晶碎片",
 		},
 	},
 	[179562] = {
 		readable = "Ancient Heated Blade",
 		icon = "Interface/Icons/inv_sword_09",
+		model = 189687,
 		text = {
 			en = "Ancient Heated Blade",
 			es = "Hoja antigua candente",
@@ -6014,6 +11077,7 @@ root("ObjectDB", {
 	},
 	[179565] = {
 		readable = "Dusty Reliquary",
+		model = 200953,
 		text = {
 			en = "Dusty Reliquary",
 			es = "Relicario polvoriento",
@@ -6029,6 +11093,7 @@ root("ObjectDB", {
 	[179697] = {
 		readable = "Arena Treasure Chest",
 		icon = "Interface/Icons/INV_Box_02",
+		model = 219372,
 		text = {
 			en = "Arena Treasure Chest",
 			es = "Arqueta de la arena",
@@ -6044,6 +11109,7 @@ root("ObjectDB", {
 	[179827] = {
 		readable = "Wanted/Missing/Lost & Found",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 199473,
 		text = {
 			en = "Wanted/Missing/Lost & Found",
 			es = "Se busca/Desaparecido/Objetos perdidos",
@@ -6059,6 +11125,7 @@ root("ObjectDB", {
 	[179828] = {
 		readable = "Dark Iron Pillow",
 		icon = "Interface/Icons/inv_misc_armorkit_06",
+		model = 190895,
 		text = {
 			en = "Dark Iron Pillow",
 			es = "Almohada Hierro Negro",
@@ -6074,6 +11141,7 @@ root("ObjectDB", {
 	[179832] = {
 		readable = "Pillaclencher's Ornate Pillow",
 		icon = "Interface/Icons/inv_misc_armorkit_06",
+		model = 190595,
 		text = {
 			en = "Pillaclencher's Ornate Pillow",
 			es = "Almohada ornamentada de Pilaprieta",
@@ -6083,10 +11151,12 @@ root("ObjectDB", {
 			pt = "Travesseiro Ornado da Alma Fada",
 			ru = "Вышитая подушка Крепких Тисков",
 			ko = "하녀 필라클렌처의 화려한 베개",
+			cn = "[Pillamaster's Ornate Pillow]",
 		},
 	},
 	[179913] = {
 		readable = "Call to Arms!",
+		model = 199475,
 		text = {
 			en = "Call to Arms!",
 			es = "¡A las armas!",
@@ -6101,6 +11171,7 @@ root("ObjectDB", {
 	},
 	[180229] = {
 		readable = "Jinxed Hoodoo Pile",
+		model = 190688,
 		text = {
 			en = "Jinxed Hoodoo Pile",
 			es = "Montón hudú maldito",
@@ -6116,6 +11187,7 @@ root("ObjectDB", {
 	[180248] = {
 		readable = "School of Tastyfish",
 		icon = "Interface/Icons/inv_misc_fish_21",
+		model = 219404,
 		text = {
 			en = "School of Tastyfish",
 			es = "Banco de pezricos",
@@ -6261,6 +11333,14 @@ root("ObjectDB", {
 		model = 202130,
 		text = {
 			en = "Hive'Ashi Glyphed Crystal",
+			es = "Cristal con inscripciones de Colmen'Ashi",
+			de = "Glyphenverzierter Kristall des Ashischwarms",
+			fr = "Cristal orné de glyphes de la Ruche'Ashi",
+			it = "Cristallo con Glifi dell'Alveare Ashi",
+			pt = "Cristal Entalhado de Glifos de Colme'Ashi",
+			ru = "Покрытый письменами кристалл Улья Аши",
+			ko = "문자가 새겨진 하이브아쉬 수정",
+			cn = "亚什虫巢雕文水晶",
 		},
 	},
 	[180455] = {
@@ -6269,6 +11349,14 @@ root("ObjectDB", {
 		model = 202131,
 		text = {
 			en = "Hive'Zora Glyphed Crystal",
+			es = "Cristal con inscripciones de Colmen'Zora",
+			de = "Glyphenverzierter Kristall des Zoraschwarms",
+			fr = "Cristal orné de glyphes de la Ruche'Zora",
+			it = "Cristallo con Glifi dell'Alveare Zora",
+			pt = "Cristal Entalhado de Glifos de Colme'Zora",
+			ru = "Покрытый письменами кристалл Улья Зора",
+			ko = "문자가 새겨진 하이브조라 수정",
+			cn = "佐拉虫巢雕文水晶",
 		},
 	},
 	[180456] = {
@@ -6338,6 +11426,7 @@ root("ObjectDB", {
 	[180503] = {
 		readable = "Sandy Cookbook",
 		icon = "Interface/Icons/INV_Misc_Book_09",
+		model = 198020,
 		text = {
 			en = "Sandy Cookbook",
 			es = "Libro de cocina de Sandy",
@@ -6353,6 +11442,7 @@ root("ObjectDB", {
 	[180526] = {
 		readable = "Gong of Bethekk",
 		icon = "Interface/Icons/INV_Box_01",
+		model = 201029,
 		text = {
 			en = "Gong of Bethekk",
 			es = "Gong de Bethekk",
@@ -6367,6 +11457,7 @@ root("ObjectDB", {
 	},
 	[180570] = {
 		readable = "Keg",
+		model = 198006,
 		text = {
 			en = "Keg",
 			es = "Barril",
@@ -6420,13 +11511,17 @@ root("ObjectDB", {
 			es = "Tierra removida",
 			de = "Frisch aufgewühlter Dreck",
 			fr = "Terre fraîchement remuée",
-			it = "Freshly Dug Dirt",
+			it = "[Freshly Dug Dirt]",
+			pt = "[Freshly Dug Dirt]",
 			ru = "Только что выброшенная земля",
+			ko = "[Freshly Dug Dirt]",
+			cn = "[Freshly Dug Dirt]",
 		},
 	},
 	[180662] = {
 		readable = "Schooner Wreckage",
 		icon = "Interface/Icons/INV_Box_01",
+		model = 219411,
 		text = {
 			en = "Schooner Wreckage",
 			es = "Restos de goleta",
@@ -6506,6 +11601,7 @@ root("ObjectDB", {
 	[180685] = {
 		readable = "Waterlogged Wreckage",
 		icon = "Interface/Icons/INV_Box_01",
+		model = 219411,
 		text = {
 			en = "Waterlogged Wreckage",
 			es = "Restos encharcados",
@@ -6521,6 +11617,7 @@ root("ObjectDB", {
 	[180690] = {
 		readable = "Large Scarab Coffer",
 		icon = "Interface/Icons/INV_Box_02",
+		model = 200952,
 		text = {
 			en = "Large Scarab Coffer",
 			es = "Arca del escarabajo grande",
@@ -6536,6 +11633,7 @@ root("ObjectDB", {
 	[180691] = {
 		readable = "Scarab Coffer",
 		icon = "Interface/Icons/INV_Box_01",
+		model = 200952,
 		text = {
 			en = "Scarab Coffer",
 			es = "Arca del escarabajo",
@@ -6554,9 +11652,11 @@ root("ObjectDB", {
 		model = 202508,
 		text = {
 			en = "The Scarab Gong",
+			es = "[The Scarab Gong]",
 			de = "Der Skarabäusgong",
 			fr = "Le gong du Scarabée",
 			it = "The Scarab Gong",
+			pt = "[The Scarab Gong]",
 			ru = "Гонг Скарабея",
 			ko = "스카라베 징",
 			cn = "甲虫之锣",
@@ -6629,6 +11729,7 @@ root("ObjectDB", {
 	[180751] = {
 		readable = "Floating Wreckage",
 		icon = "Interface/Icons/INV_Box_01",
+		model = 219411,
 		text = {
 			en = "Floating Wreckage",
 			es = "Restos de un naufragio",
@@ -6691,6 +11792,7 @@ root("ObjectDB", {
 	[180901] = {
 		readable = "Bloodsail Wreckage",
 		icon = "Interface/Icons/INV_Box_01",
+		model = 219411,
 		text = {
 			en = "Bloodsail Wreckage",
 			es = "Restos de los Velasangre",
@@ -6738,6 +11840,7 @@ root("ObjectDB", {
 	[181053] = {
 		readable = "Basket of Bloodkelp",
 		icon = "Interface/Icons/inv_misc_herb_11a",
+		model = 200351,
 		text = {
 			en = "Basket of Bloodkelp",
 			es = "Cesta de algas de sangre",
@@ -6752,6 +11855,7 @@ root("ObjectDB", {
 	},
 	[181073] = {
 		readable = "Fragrant Cauldron",
+		model = 198100,
 		text = {
 			en = "Fragrant Cauldron",
 			es = "Caldera apetitosa",
@@ -6774,6 +11878,7 @@ root("ObjectDB", {
 			de = "Arenabeute",
 			fr = "Butin de l'arène",
 			it = "Arena Spoils",
+			pt = "[Arena Spoils]",
 			ru = "Трофеи арены",
 			ko = "투기장 전리품",
 			cn = "竞技场的泥土",
@@ -6785,10 +11890,14 @@ root("ObjectDB", {
 		model = 196976,
 		text = {
 			en = "Sothos and Jarien's Heirlooms",
+			es = "[Sothos and Jarien's Heirlooms]",
 			de = "Sothos' und Jariens Erbstücke",
 			fr = "Possessions de Sothos et Jarien",
 			it = "Sothos and Jarien's Heirlooms",
+			pt = "[Sothos and Jarien's Heirlooms]",
 			ru = "Наследие Сотоса и Джариена",
+			ko = "[Sothos and Jarien's Heirlooms]",
+			cn = "[Sothos and Jarien's Heirlooms]",
 		},
 	},
 	[181098] = {
@@ -6903,6 +12012,14 @@ root("ObjectDB", {
 		model = 200156,
 		text = {
 			en = "Silithyst Mound",
+			es = "Túmulo de silitista",
+			de = "Silithysthaufen",
+			fr = "Monticule de silithyste",
+			it = "Mucchio di Silitisti",
+			pt = "Monte de Terra Silitista",
+			ru = "Курган силитиста",
+			ko = "[Silithyst Mound]",
+			cn = "水晶尘土堆",
 		},
 	},
 	[181598] = {
@@ -6911,6 +12028,14 @@ root("ObjectDB", {
 		model = 200154,
 		text = {
 			en = "Silithyst Geyser",
+			es = "Géiser de silitista",
+			de = "Silithystgeysir",
+			fr = "Geyser de silithyste",
+			it = "Geyser Silitista",
+			pt = "Gêiser Silitista",
+			ru = "Гейзер силитиста",
+			ko = "실리시스트 모래기둥",
+			cn = "水晶尘喷孔",
 		},
 	},
 	[181629] = {
@@ -6919,11 +12044,20 @@ root("ObjectDB", {
 		model = 196979,
 		text = {
 			en = "Holy Coffer",
+			es = "Arca sagrada",
+			de = "Heiliger Kasten",
+			fr = "Petit coffre",
+			it = "[Holy Coffer]",
+			pt = "[Holy Coffer]",
+			ru = "Священный ларец",
+			ko = "[Holy Coffer]",
+			cn = "[Holy Coffer]",
 		},
 	},
 	[181638] = {
 		readable = "Wanted Poster",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 192133,
 		text = {
 			en = "Wanted Poster",
 			es = "Cartel de Se busca",
@@ -6986,6 +12120,7 @@ root("ObjectDB", {
 	},
 	[181665] = {
 		readable = "Burial Chest",
+		model = 197063,
 		text = {
 			en = "Burial Chest",
 			es = "Sarcófago",
@@ -6995,11 +12130,13 @@ root("ObjectDB", {
 			pt = "Baú de Enterro",
 			ru = "Погребальный сундук",
 			ko = "매장된 궤짝",
+			cn = "[Burial Chest]",
 		},
 	},
 	[181672] = {
 		readable = "Wickerman Effigy",
 		icon = "Interface/Icons/INV_Misc_Statue_08",
+		model = 199787,
 		text = {
 			en = "Wickerman Effigy",
 			es = "Efigie del Hombre de Mimbre",
@@ -7015,6 +12152,7 @@ root("ObjectDB", {
 	[181681] = {
 		readable = "Chalice of Elune",
 		icon = "Interface/Icons/inv_drink_milk_05",
+		model = 201093,
 		text = {
 			en = "Chalice of Elune",
 			es = "Cáliz de Elune",
@@ -7030,6 +12168,7 @@ root("ObjectDB", {
 	[181687] = {
 		readable = "Lumber Pile",
 		icon = "Interface/Icons/inv_tradeskillitem_03",
+		model = 198340,
 		text = {
 			en = "Lumber Pile",
 			es = "Montón de madera",
@@ -7045,6 +12184,7 @@ root("ObjectDB", {
 	[181690] = {
 		readable = "Fertile Dirt Mound",
 		icon = "Interface/Icons/inv_misc_food_wheat_02",
+		model = 202605,
 		text = {
 			en = "Fertile Dirt Mound",
 			es = "Montículo de tierra fértil",
@@ -7060,6 +12200,7 @@ root("ObjectDB", {
 	[181698] = {
 		readable = "Voidstone",
 		icon = "Interface/Icons/inv_misc_gem_azuredraenite_01",
+		model = 201618,
 		text = {
 			en = "Voidstone",
 			es = "Piedra del Vacío",
@@ -7100,6 +12241,7 @@ root("ObjectDB", {
 			pt = "Livro Antigo e Surrado",
 			ru = "Потрепанная древняя книга",
 			ko = "닳아해진 고대 책",
+			cn = "[Battered Ancient Book]",
 		},
 	},
 	[181889] = {
@@ -7121,6 +12263,7 @@ root("ObjectDB", {
 	[181916] = {
 		readable = "Tainted Wood",
 		icon = "Interface/Icons/inv_tradeskillitem_03",
+		model = 198389,
 		text = {
 			en = "Tainted Wood",
 			es = "Madera vil de Satyrnaar",
@@ -7136,6 +12279,7 @@ root("ObjectDB", {
 	[182011] = {
 		readable = "Crate of Ingots",
 		icon = "Interface/Icons/inv_crate_02",
+		model = 198168,
 		text = {
 			en = "Crate of Ingots",
 			es = "Cajón de lingotes",
@@ -7166,6 +12310,7 @@ root("ObjectDB", {
 	},
 	[182058] = {
 		readable = "Scourge Meat Wagon",
+		model = 200664,
 		text = {
 			en = "Scourge Meat Wagon",
 			es = "Carro de despojos de la Plaga",
@@ -7296,11 +12441,8 @@ root("ObjectDB", {
 	},
 	[182947] = {
 		readable = "The Codex of Blood",
-		-- #if AFTER CATA
 		icon = "Interface/Icons/ability_warlock_ancientgrimoire",
-		-- #else
-		icon = "Interface/Icons/inv_misc_book_06",
-		-- #endif
+		model = 200909,
 		text = {
 			en = "The Codex of Blood",
 			es = "El Códice de Sangre",
@@ -7443,6 +12585,7 @@ root("ObjectDB", {
 	[183770] = {
 		readable = "B'naar Control Console",
 		icon = "Interface/Icons/Spell_Mage_FocusingCrystal",
+		model = 193552,
 		text = {
 			en = "B'naar Control Console",
 			es = "Consola de control B'naar",
@@ -7458,6 +12601,7 @@ root("ObjectDB", {
 	[183811] = {
 		readable = "Wanted Poster",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 199473,
 		text = {
 			en = "Wanted Poster",
 			es = "Cartel de Se busca",
@@ -7472,6 +12616,7 @@ root("ObjectDB", {
 	},
 	[184300] = {
 		readable = "Necromantic Focus",
+		model = 201097,
 		text = {
 			en = "Necromantic Focus",
 			es = "Foco nigromántico",
@@ -7518,6 +12663,7 @@ root("ObjectDB", {
 	},
 	[184684] = {
 		readable = "Ravenous Flayer Egg",
+		model = 200964,
 		text = {
 			en = "Ravenous Flayer Egg",
 			es = "Huevo de despellejador voraz",
@@ -7532,6 +12678,7 @@ root("ObjectDB", {
 	},
 	[184793] = {
 		readable = "Primitive Chest",
+		model = 197063,
 		text = {
 			en = "Primitive Chest",
 			es = "Cofre primitivo",
@@ -7541,6 +12688,7 @@ root("ObjectDB", {
 			pt = "Baú Primitivo",
 			ru = "Примитивный сундук",
 			ko = "구식 궤짝",
+			cn = "粗糙的箱子",
 		},
 	},
 	[184825] = {
@@ -7641,6 +12789,7 @@ root("ObjectDB", {
 	},
 	[185166] = {
 		readable = "Wanted Poster",
+		model = 191094,
 		text = {
 			en = "Wanted Poster",
 			es = "Cartel de Se busca",
@@ -7687,12 +12836,14 @@ root("ObjectDB", {
 	[185927] = {
 		readable = "Fel Crystal Prism",
 		icon = "Interface/Icons/ToolTip_CrystallizedFel",
+		model = 192010,
 		text = {
 			en = "Fel Crystal Prism",
 		},
 	},
 	[186267] = {
 		readable = "Pumpkin Shrine",
+		model = 199901,
 		text = {
 			en = "Pumpkin Shrine",
 			es = "Santuario calabaza",
@@ -7716,6 +12867,7 @@ root("ObjectDB", {
 	[186301] = {
 		readable = "Blackhoof Armaments",
 		icon = "Interface/Icons/inv_axe_19",
+		model = 200609,
 		text = {
 			en = "Blackhoof Armaments",
 			es = "Armamento Pezuñanegra",
@@ -7740,6 +12892,7 @@ root("ObjectDB", {
 	[186329] = {
 		readable = "Stonemaul Clan Banner",
 		icon = "Interface/Icons/inv_banner_03",
+		model = 199078,
 		text = {
 			en = "Stonemaul Clan Banner",
 			es = "Estandarte del clan Quebrantarrocas",
@@ -7755,6 +12908,7 @@ root("ObjectDB", {
 	[186423] = {
 		readable = "Witchbane",
 		icon = "Interface/Icons/inv_misc_herb_01",
+		model = 190223,
 		text = {
 			en = "Witchbane",
 			es = "Ruinabruja",
@@ -7786,6 +12940,7 @@ root("ObjectDB", {
 	[186450] = {
 		readable = "Zeppelin Cargo",
 		icon = "Interface/Icons/inv_crate_03",
+		model = 198163,
 		text = {
 			en = "Zeppelin Cargo",
 			es = "Cargamento del zepelín",
@@ -7801,6 +12956,7 @@ root("ObjectDB", {
 	[186463] = {
 		readable = "Wyrmtail",
 		icon = "Interface/Icons/inv_misc_herb_15",
+		model = 201087,
 		text = {
 			en = "Wyrmtail",
 			es = "Cola de vermis",
@@ -7816,6 +12972,7 @@ root("ObjectDB", {
 	[186585] = {
 		readable = "Dragonskin Scroll",
 		icon = "Interface/Icons/inv_misc_scrollunrolled02b",
+		model = 198451,
 		text = {
 			en = "Dragonskin Scroll",
 			es = "Pergamino de piel de dragón",
@@ -7825,6 +12982,7 @@ root("ObjectDB", {
 			pt = "Pergaminho de Pele de Dragão",
 			ru = "Свиток из кожи дракона",
 			ko = "용가죽 두루마리",
+			cn = "[Dragonskin Scroll]",
 		},
 	},
 	[186648] = {
@@ -7851,13 +13009,23 @@ root("ObjectDB", {
 	[186881] = {
 		readable = "Dark Iron Sabotage Plans",
 		icon = "Interface/Icons/INV_Misc_Map_01",
+		model = 198457,
 		text = {
 			en = "Dark Iron Sabotage Plans",
+			es = "[Dark Iron Sabotage Plans]",
+			de = "[Dark Iron Sabotage Plans]",
+			fr = "[Dark Iron Sabotage Plans]",
+			it = "[Dark Iron Sabotage Plans]",
+			pt = "[Dark Iron Sabotage Plans]",
+			ru = "[Dark Iron Sabotage Plans]",
+			ko = "[Dark Iron Sabotage Plans]",
+			cn = "[Dark Iron Sabotage Plans]",
 		},
 	},
 	[186887] = {
 		readable = "Large Jack-o'-Lantern",
 		icon = "Interface/Icons/INV_Misc_Bag_28_Halloween",
+		model = 199901,
 		text = {
 			en = "Large Jack-o'-Lantern",
 			es = "Calabaza iluminada",
@@ -7895,6 +13063,7 @@ root("ObjectDB", {
 	},
 	[187072] = {
 		readable = "Razorthorn Root",
+		model = 219502,
 		text = {
 			en = "Razorthorn Root",
 			es = "Raíz de Rajaespina",
@@ -7904,6 +13073,7 @@ root("ObjectDB", {
 			pt = "Raiz Espinhosa",
 			ru = "Корень острого шипа",
 			ko = "서슬가시 뿌리",
+			cn = "[Razorthorn Root]",
 		},
 	},
 	[187078] = {
@@ -7949,6 +13119,7 @@ root("ObjectDB", {
 	[187273] = {
 		readable = "Suspicious Hoofprint",
 		icon = "Interface/Icons/INV_Misc_Moosehoof_Black",
+		model = 202786,
 		text = {
 			en = "Suspicious Hoofprint",
 			es = "Huella de casco sospechosa",
@@ -7963,6 +13134,7 @@ root("ObjectDB", {
 	},
 	[187333] = {
 		readable = "Bloodberry Bush",
+		model = 196975,
 		text = {
 			en = "Bloodberry Bush",
 			es = "Arbusto de bayas de sangre",
@@ -7978,6 +13150,7 @@ root("ObjectDB", {
 	[187559] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -7993,6 +13166,7 @@ root("ObjectDB", {
 	[187564] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8008,6 +13182,7 @@ root("ObjectDB", {
 	[187565] = {
 		readable = "Elder Atkanok",
 		icon = "Interface/Icons/trade_archaeology_dwarf_runestone",
+		model = 194333,
 		text = {
 			en = "Elder Atkanok",
 			es = "Ancestro Atkanok",
@@ -8029,6 +13204,7 @@ root("ObjectDB", {
 	[187851] = {
 		readable = "Cultist Shrine",
 		icon = "Interface/Icons/inv_misc_candle_02",
+		model = 189280,
 		text = {
 			en = "Cultist Shrine",
 			es = "Santuario de cultor",
@@ -8044,6 +13220,7 @@ root("ObjectDB", {
 	[187905] = {
 		readable = "Massive Glowing Egg",
 		icon = "Interface/Icons/inv_cloudserpent_egg_red",
+		model = 202490,
 		text = {
 			en = "Massive Glowing Egg",
 			es = "Huevo gigante resplandeciente",
@@ -8059,6 +13236,7 @@ root("ObjectDB", {
 	[187914] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8074,6 +13252,7 @@ root("ObjectDB", {
 	[187916] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8089,6 +13268,7 @@ root("ObjectDB", {
 	[187917] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8104,6 +13284,7 @@ root("ObjectDB", {
 	[187919] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8119,6 +13300,7 @@ root("ObjectDB", {
 	[187920] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8134,6 +13316,7 @@ root("ObjectDB", {
 	[187921] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8149,6 +13332,7 @@ root("ObjectDB", {
 	[187922] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8164,6 +13348,7 @@ root("ObjectDB", {
 	[187923] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8179,6 +13364,7 @@ root("ObjectDB", {
 	[187924] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8194,6 +13380,7 @@ root("ObjectDB", {
 	[187925] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8209,6 +13396,7 @@ root("ObjectDB", {
 	[187926] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8224,6 +13412,7 @@ root("ObjectDB", {
 	[187927] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8239,6 +13428,7 @@ root("ObjectDB", {
 	[187928] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8254,6 +13444,7 @@ root("ObjectDB", {
 	[187929] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8269,6 +13460,7 @@ root("ObjectDB", {
 	[187930] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8284,6 +13476,7 @@ root("ObjectDB", {
 	[187931] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8299,6 +13492,7 @@ root("ObjectDB", {
 	[187932] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8314,6 +13508,7 @@ root("ObjectDB", {
 	[187933] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8329,6 +13524,7 @@ root("ObjectDB", {
 	[187934] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8344,6 +13540,7 @@ root("ObjectDB", {
 	[187935] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8359,6 +13556,7 @@ root("ObjectDB", {
 	[187936] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8374,6 +13572,7 @@ root("ObjectDB", {
 	[187937] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8389,6 +13588,7 @@ root("ObjectDB", {
 	[187938] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8404,6 +13604,7 @@ root("ObjectDB", {
 	[187939] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8419,6 +13620,7 @@ root("ObjectDB", {
 	[187940] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8434,6 +13636,7 @@ root("ObjectDB", {
 	[187941] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8449,6 +13652,7 @@ root("ObjectDB", {
 	[187942] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8464,6 +13668,7 @@ root("ObjectDB", {
 	[187943] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8479,6 +13684,7 @@ root("ObjectDB", {
 	[187944] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8494,6 +13700,7 @@ root("ObjectDB", {
 	[187945] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8509,6 +13716,7 @@ root("ObjectDB", {
 	[187946] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -8524,6 +13732,7 @@ root("ObjectDB", {
 	[187947] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8539,6 +13748,7 @@ root("ObjectDB", {
 	[187948] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8554,6 +13764,7 @@ root("ObjectDB", {
 	[187949] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8569,6 +13780,7 @@ root("ObjectDB", {
 	[187950] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8584,6 +13796,7 @@ root("ObjectDB", {
 	[187951] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8599,6 +13812,7 @@ root("ObjectDB", {
 	[187952] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8614,6 +13828,7 @@ root("ObjectDB", {
 	[187953] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8629,6 +13844,7 @@ root("ObjectDB", {
 	[187954] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8644,6 +13860,7 @@ root("ObjectDB", {
 	[187955] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8659,6 +13876,7 @@ root("ObjectDB", {
 	[187956] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8674,6 +13892,7 @@ root("ObjectDB", {
 	[187957] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8689,6 +13908,7 @@ root("ObjectDB", {
 	[187958] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8704,6 +13924,7 @@ root("ObjectDB", {
 	[187959] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8719,6 +13940,7 @@ root("ObjectDB", {
 	[187960] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8734,6 +13956,7 @@ root("ObjectDB", {
 	[187961] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8749,6 +13972,7 @@ root("ObjectDB", {
 	[187962] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8764,6 +13988,7 @@ root("ObjectDB", {
 	[187963] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8779,6 +14004,7 @@ root("ObjectDB", {
 	[187964] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8794,6 +14020,7 @@ root("ObjectDB", {
 	[187965] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8809,6 +14036,7 @@ root("ObjectDB", {
 	[187966] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8824,6 +14052,7 @@ root("ObjectDB", {
 	[187967] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8839,6 +14068,7 @@ root("ObjectDB", {
 	[187968] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8854,6 +14084,7 @@ root("ObjectDB", {
 	[187969] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8869,6 +14100,7 @@ root("ObjectDB", {
 	[187970] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8884,6 +14116,7 @@ root("ObjectDB", {
 	[187971] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8899,6 +14132,7 @@ root("ObjectDB", {
 	[187972] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8914,6 +14148,7 @@ root("ObjectDB", {
 	[187973] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8929,6 +14164,7 @@ root("ObjectDB", {
 	[187974] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8944,6 +14180,7 @@ root("ObjectDB", {
 	[187975] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -8959,6 +14196,7 @@ root("ObjectDB", {
 	[188085] = {
 		readable = "Plagued Grain",
 		icon = "Interface/Icons/inv_misc_food_wheat_01",
+		model = 196440,
 		text = {
 			en = "Plagued Grain",
 			es = "Grano apestado",
@@ -8988,6 +14226,7 @@ root("ObjectDB", {
 	[188164] = {
 		readable = "Kaskala Supplies",
 		icon = "Interface/Icons/inv_crate_01",
+		model = 200351,
 		text = {
 			en = "Kaskala Supplies",
 			es = "Suministros de Kashala",
@@ -9080,6 +14319,7 @@ root("ObjectDB", {
 	[188649] = {
 		readable = "Wanted Poster",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 199424,
 		text = {
 			en = "Wanted Poster",
 			es = "Cartel de Se busca",
@@ -9126,6 +14366,7 @@ root("ObjectDB", {
 	[189989] = {
 		readable = "Dark Iron Mole Machine Wreckage",
 		icon = "Interface/Icons/INV_Misc_WartornScrap_Plate",
+		model = 203234,
 		text = {
 			en = "Dark Iron Mole Machine Wreckage",
 			es = "Restos de la máquina topo Hierro Negro",
@@ -9134,12 +14375,14 @@ root("ObjectDB", {
 			it = "Relitto della Trivella dei Ferroscuro",
 			pt = "Destroços da Máquina Toupeira dos Ferro Negro",
 			ru = "Обломки буровой установки клана Черного Железа",
+			ko = "검은무쇠 굴착기 잔해",
 			cn = "黑铁钻孔机残骸",
 		},
 	},
 	[189990] = {
 		readable = "Dark Iron Mole Machine Wreckage",
 		icon = "Interface/Icons/INV_Misc_WartornScrap_Plate",
+		model = 203234,
 		text = {
 			en = "Dark Iron Mole Machine Wreckage",
 			es = "Restos de la máquina topo Hierro Negro",
@@ -9171,6 +14414,7 @@ root("ObjectDB", {
 	[190535] = {
 		readable = "Zim'Abwa",
 		icon = "Interface/Icons/inv_belt_mail_zandalarquest_b_01",
+		model = 196902,
 		text = {
 			en = "Zim'Abwa",
 			es = "Zim'Abwa",
@@ -9186,6 +14430,7 @@ root("ObjectDB", {
 	[190558] = {
 		readable = "Shining Crystal",
 		icon = "Interface/Icons/inv_misc_gem_variety_01",
+		model = 195052,
 		text = {
 			en = "Shining Crystal",
 			es = "Cristal brillante",
@@ -9201,6 +14446,7 @@ root("ObjectDB", {
 	[190560] = {
 		readable = "Glinting Armor",
 		icon = "Interface/Icons/inv_misc_gem_variety_01",
+		model = 197908,
 		text = {
 			en = "Glinting Armor",
 			es = "Armadura centelleante",
@@ -9216,6 +14462,7 @@ root("ObjectDB", {
 	[190561] = {
 		readable = "Glowing Gem",
 		icon = "Interface/Icons/inv_misc_gem_variety_01",
+		model = 196686,
 		text = {
 			en = "Glowing Gem",
 			es = "Gema resplandeciente",
@@ -9231,6 +14478,7 @@ root("ObjectDB", {
 	[190562] = {
 		readable = "Polished Platter",
 		icon = "Interface/Icons/inv_misc_gem_variety_01",
+		model = 197462,
 		text = {
 			en = "Polished Platter",
 			es = "Fuente abrillantada",
@@ -9246,6 +14494,7 @@ root("ObjectDB", {
 	[190563] = {
 		readable = "Sparkling Treasure",
 		icon = "Interface/Icons/inv_misc_gem_variety_01",
+		model = 200137,
 		text = {
 			en = "Sparkling Treasure",
 			es = "Tesoro brillante",
@@ -9260,6 +14509,7 @@ root("ObjectDB", {
 	},
 	[190602] = {
 		readable = "Zim'Torga",
+		model = 196879,
 		text = {
 			en = "Zim'Torga",
 			es = "Zim'Torga",
@@ -9275,6 +14525,7 @@ root("ObjectDB", {
 	[190657] = {
 		readable = "Zim'Rhuk",
 		icon = "Interface/Icons/inv_belt_mail_zandalarquest_b_01",
+		model = 196879,
 		text = {
 			en = "Zim'Rhuk",
 			es = "Zim'Rhuk",
@@ -9290,6 +14541,7 @@ root("ObjectDB", {
 	[190768] = {
 		readable = "Timeworn Coffer",
 		icon = "Interface/Icons/inv_misc_treasurechest04b",
+		model = 244222,
 		text = {
 			en = "Timeworn Coffer",
 			es = "Arca desgastada",
@@ -9305,6 +14557,7 @@ root("ObjectDB", {
 	[190917] = {
 		readable = "Abandoned Mail",
 		icon = "Interface/Icons/inv_letter_09",
+		model = 203400,
 		text = {
 			en = "Abandoned Mail",
 			es = "Correo abandonado",
@@ -9320,6 +14573,7 @@ root("ObjectDB", {
 	[190936] = {
 		readable = "Plague Cauldron",
 		icon = "Interface/Icons/INV_Alchemy_70_Cauldron",
+		model = 191217,
 		text = {
 			en = "Plague Cauldron",
 			es = "Caldera de peste",
@@ -9343,6 +14597,7 @@ root("ObjectDB", {
 	[191209] = {
 		readable = "Sparktouched Crystal Defenses",
 		icon = "Interface/Icons/inv_misc_gem_emeraldrough_02",
+		model = 197063,
 		text = {
 			en = "Sparktouched Crystal Defenses",
 			es = "Defensas del cristal Pavesa",
@@ -9406,6 +14661,7 @@ root("ObjectDB", {
 	[191766] = {
 		readable = "Orders From Drakuru",
 		icon = "Interface/Icons/inv_inscription_80_scroll",
+		model = 243448,
 		text = {
 			en = "Orders From Drakuru",
 			es = "Órdenes de Drakuru",
@@ -9527,6 +14783,7 @@ root("ObjectDB", {
 			pt = "Cardume de Pançudos do Mar Profundo",
 			ru = "Косяк глубоководного чуда-юда",
 			ko = "깊은 바다 뚱뚱보물고기 떼",
+			cn = "[Deep Sea Monsterbelly School]",
 		},
 	},
 	[192054] = {
@@ -9542,6 +14799,7 @@ root("ObjectDB", {
 			pt = "Cardume de Lulas Brilho-da-lua",
 			ru = "Косяк лунной каракатицы",
 			ko = "달빛 오징어 떼",
+			cn = "[Moonglow Cuttlefish School]",
 		},
 	},
 	[192057] = {
@@ -9595,6 +14853,7 @@ root("ObjectDB", {
 	[192071] = {
 		readable = "Fjorn's Anvil",
 		icon = "Interface/Icons/trade_blacksmithing",
+		model = 195373,
 		text = {
 			en = "Fjorn's Anvil",
 			es = "Yunque de Fjorn",
@@ -9626,6 +14885,7 @@ root("ObjectDB", {
 	[192078] = {
 		readable = "Hodir's Horn",
 		icon = "Interface/Icons/INV_Misc_Horn_03",
+		model = 202496,
 		text = {
 			en = "Hodir's Horn",
 			es = "Cuerno de Hodir",
@@ -9641,6 +14901,7 @@ root("ObjectDB", {
 	[192079] = {
 		readable = "Hodir's Spear",
 		icon = "Interface/Icons/INV_Spear_04",
+		model = 194880,
 		text = {
 			en = "Hodir's Spear",
 			es = "Lanza de Hodir",
@@ -9656,6 +14917,7 @@ root("ObjectDB", {
 	[192080] = {
 		readable = "Hodir's Helm",
 		icon = "Interface/Icons/INV_Helmet_110",
+		model = 243468,
 		text = {
 			en = "Hodir's Helm",
 			es = "Yelmo de Hodir",
@@ -9671,6 +14933,7 @@ root("ObjectDB", {
 	[192524] = {
 		readable = "Arngrim the Insatiable",
 		icon = "Interface/Icons/Achievement_Dungeon_FrozenThrone",
+		model = 243887,
 		text = {
 			en = "Arngrim the Insatiable",
 			es = "Arngrim el Insaciable",
@@ -9766,6 +15029,7 @@ root("ObjectDB", {
 	[192818] = {
 		readable = "Infused Mushroom",
 		icon = "Interface/Icons/inv_mushroom_10",
+		model = 219476,
 		text = {
 			en = "Infused Mushroom",
 			es = "Champiñón imbuido",
@@ -9780,6 +15044,7 @@ root("ObjectDB", {
 	},
 	[192823] = {
 		readable = "Full Jug of Wine",
+		model = 189821,
 		text = {
 			en = "Full Jug of Wine",
 			es = "Jarra llena de vino",
@@ -9794,19 +15059,38 @@ root("ObjectDB", {
 	},
 	[192824] = {
 		readable = "Half Full Glass of Wine",
+		model = 192003,
 		text = {
 			en = "Half Full Glass of Wine",
+			es = "Vaso de vino medio lleno",
+			de = "Halbvolles Weinglas",
+			fr = "Verre de vin à moitié plein",
+			it = "Bicchiere Mezzo Pieno di Vino",
+			pt = "Taça de Vinho Meio Cheia",
+			ru = "Недопитый стакан",
+			ko = "반쯤 찬 포도주 잔",
+			cn = "半满的酒杯",
 		},
 	},
 	[192825] = {
 		readable = "Aged Dalaran Limburger",
+		model = 198221,
 		text = {
 			en = "Aged Dalaran Limburger",
+			es = "Queso Limburger de Dalaran viejo",
+			de = "Reifer Dalaranlimburger",
+			fr = "Vieux limbourg de Dalaran",
+			it = "Groviera Stagionato di Dalaran",
+			pt = "Roquefort de Dalaran Curado",
+			ru = "Зрелый даларанский камамбер",
+			ko = "숙성된 달라란 연치즈",
+			cn = "达拉然奶酪",
 		},
 	},
 	[192827] = {
 		readable = "Wild Mustard",
 		icon = "Interface/Icons/inv_misc_herb_02",
+		model = 189763,
 		text = {
 			en = "Wild Mustard",
 			es = "Mostaza silvestre",
@@ -9822,6 +15106,7 @@ root("ObjectDB", {
 	[192828] = {
 		readable = "Crystalsong Carrot",
 		icon = "Interface/Icons/inv_misc_food_54",
+		model = 219486,
 		text = {
 			en = "Crystalsong Carrot",
 			es = "Zanahoria Canto de Cristal",
@@ -9837,6 +15122,7 @@ root("ObjectDB", {
 	[192833] = {
 		readable = "Bridenbrad's Possessions",
 		icon = "Interface/Icons/inv_misc_treasurechest04b",
+		model = 196979,
 		text = {
 			en = "Bridenbrad's Possessions",
 			es = "Posesiones de Bridenbrad",
@@ -9900,6 +15186,7 @@ root("ObjectDB", {
 	[193051] = {
 		readable = "Nerubian Scourge Egg",
 		icon = "Interface/Icons/inv_egg_02",
+		model = 195037,
 		text = {
 			en = "Nerubian Scourge Egg",
 			es = "Huevo de la Plaga nerubiano",
@@ -9915,6 +15202,7 @@ root("ObjectDB", {
 	[193195] = {
 		readable = "Pulsing Crystal",
 		icon = "Interface/Icons/inv_enchanting_70_leylightcrystal",
+		model = 190693,
 		text = {
 			en = "Pulsing Crystal",
 			es = "Cristal pulsante",
@@ -9930,6 +15218,7 @@ root("ObjectDB", {
 	[193400] = {
 		readable = "Saronite Bomb Stack",
 		icon = "Interface/Icons/inv_misc_enggizmos_32",
+		model = 243602,
 		text = {
 			en = "Saronite Bomb Stack",
 			es = "Montón de bombas de saronita",
@@ -9961,6 +15250,7 @@ root("ObjectDB", {
 	[194032] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -9976,6 +15266,7 @@ root("ObjectDB", {
 	[194033] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -9991,6 +15282,7 @@ root("ObjectDB", {
 	[194034] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -10006,6 +15298,7 @@ root("ObjectDB", {
 	[194035] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -10021,6 +15314,7 @@ root("ObjectDB", {
 	[194036] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -10036,6 +15330,7 @@ root("ObjectDB", {
 	[194037] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -10051,6 +15346,7 @@ root("ObjectDB", {
 	[194038] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -10066,6 +15362,7 @@ root("ObjectDB", {
 	[194039] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -10081,6 +15378,7 @@ root("ObjectDB", {
 	[194040] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -10096,6 +15394,7 @@ root("ObjectDB", {
 	[194042] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -10111,6 +15410,7 @@ root("ObjectDB", {
 	[194043] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -10126,6 +15426,7 @@ root("ObjectDB", {
 	[194044] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -10141,6 +15442,7 @@ root("ObjectDB", {
 	[194045] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -10156,6 +15458,7 @@ root("ObjectDB", {
 	[194046] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -10171,6 +15474,7 @@ root("ObjectDB", {
 	[194048] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -10186,6 +15490,7 @@ root("ObjectDB", {
 	[194049] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -10233,6 +15538,7 @@ root("ObjectDB", {
 	[194213] = {
 		readable = "Winter Hyacinth",
 		icon = "Interface/Icons/inv_misc_herb_14",
+		model = 201873,
 		text = {
 			en = "Winter Hyacinth",
 			es = "Jacinto de invierno",
@@ -10248,6 +15554,7 @@ root("ObjectDB", {
 	[194238] = {
 		readable = "Blade of Drak'Mar",
 		icon = "Interface/Icons/inv_sword_56",
+		model = 244250,
 		text = {
 			en = "Blade of Drak'Mar",
 			es = "Hoja de Drak'Mar",
@@ -10256,12 +15563,14 @@ root("ObjectDB", {
 			it = "Lama di Drak'Mar",
 			pt = "Lâmina de Drak'Mar",
 			ru = "Меч Драк'Мара",
+			ko = "[Blade of Drak'Mar]",
 			cn = "达克玛尔之剑",
 		},
 	},
 	[194341] = {
 		readable = "Dusty Journal",
 		icon = "Interface/Icons/inv_misc_book_08",
+		model = 198020,
 		text = {
 			en = "Dusty Journal",
 			es = "Diario polvoriento",
@@ -10277,6 +15586,7 @@ root("ObjectDB", {
 	[194378] = {
 		readable = "Stolen Explorers' League Document",
 		icon = "Interface/Icons/INV_Scroll_11",
+		model = 243448,
 		text = {
 			en = "Stolen Explorers' League Document",
 			es = "Documento de la Liga de Expedicionarios robado",
@@ -10292,6 +15602,7 @@ root("ObjectDB", {
 	[194387] = {
 		readable = "Stolen Explorers' League Document",
 		icon = "Interface/Icons/INV_Scroll_11",
+		model = 243448,
 		text = {
 			en = "Stolen Explorers' League Document",
 			es = "Documento de la Liga de Expedicionarios robado",
@@ -10307,6 +15618,7 @@ root("ObjectDB", {
 	[194388] = {
 		readable = "Stolen Explorers' League Document",
 		icon = "Interface/Icons/INV_Scroll_11",
+		model = 243448,
 		text = {
 			en = "Stolen Explorers' League Document",
 			es = "Documento de la Liga de Expedicionarios robado",
@@ -10322,6 +15634,7 @@ root("ObjectDB", {
 	[194389] = {
 		readable = "Stolen Explorers' League Document",
 		icon = "Interface/Icons/INV_Scroll_11",
+		model = 243448,
 		text = {
 			en = "Stolen Explorers' League Document",
 			es = "Documento de la Liga de Expedicionarios robado",
@@ -10337,6 +15650,7 @@ root("ObjectDB", {
 	[194390] = {
 		readable = "Stolen Explorers' League Document",
 		icon = "Interface/Icons/INV_Scroll_11",
+		model = 243448,
 		text = {
 			en = "Stolen Explorers' League Document",
 			es = "Documento de la Liga de Expedicionarios robado",
@@ -10352,6 +15666,7 @@ root("ObjectDB", {
 	[194391] = {
 		readable = "Stolen Explorers' League Document",
 		icon = "Interface/Icons/INV_Scroll_11",
+		model = 243448,
 		text = {
 			en = "Stolen Explorers' League Document",
 			es = "Documento de la Liga de Expedicionarios robado",
@@ -10367,6 +15682,7 @@ root("ObjectDB", {
 	[194423] = {
 		readable = "Stolen Tournament Invitation",
 		icon = "Interface/Icons/inv_letter_18",
+		model = 198451,
 		text = {
 			en = "Stolen Tournament Invitation",
 			es = "Invitación para el torneo robada",
@@ -10375,12 +15691,14 @@ root("ObjectDB", {
 			it = "Invito al Torneo Rubato",
 			pt = "Convite do Torneio Roubado",
 			ru = "Украденное приглашение на турнир",
+			ko = "[Stolen Tournament Invitation]",
 			cn = "被偷走的锦标赛邀请函",
 		},
 	},
 	[194424] = {
 		readable = "Black Knight's Orders",
 		icon = "Interface/Icons/inv_letter_22",
+		model = 243445,
 		text = {
 			en = "Black Knight's Orders",
 			es = "Órdenes del Caballero Negro",
@@ -10389,6 +15707,7 @@ root("ObjectDB", {
 			it = "Ordini del Cavaliere Nero",
 			pt = "Ordens do Cavaleiro Negro",
 			ru = "Приказы для Черного рыцаря",
+			ko = "[Black Knight's Orders]",
 			cn = "黑骑士的命令",
 		},
 	},
@@ -10403,6 +15722,7 @@ root("ObjectDB", {
 	[194463] = {
 		readable = "Small Stone Block",
 		icon = "Interface/Icons/inv_stone_13",
+		model = 254464,
 		text = {
 			en = "Small Stone Block",
 			es = "Bloque de piedra pequeño",
@@ -10411,6 +15731,7 @@ root("ObjectDB", {
 			it = "Small Stone Block",
 			pt = "Pequeno Bloco de Pedra",
 			ru = "Небольшой камень",
+			ko = "[Small Stone Block]",
 			cn = "小石块",
 		},
 	},
@@ -10433,6 +15754,7 @@ root("ObjectDB", {
 	[194537] = {
 		readable = "Sir Wendell's Grave",
 		icon = "Interface/Icons/inv_datacrystal01",
+		model = 190634,
 		text = {
 			en = "Sir Wendell's Grave",
 			es = "Tumba de Sir Wendell",
@@ -10448,6 +15770,7 @@ root("ObjectDB", {
 	[194538] = {
 		readable = "Connall's Grave",
 		icon = "Interface/Icons/inv_datacrystal01",
+		model = 190633,
 		text = {
 			en = "Connall's Grave",
 			es = "Tumba de Conall",
@@ -10463,6 +15786,7 @@ root("ObjectDB", {
 	[194539] = {
 		readable = "Lorien's Grave",
 		icon = "Interface/Icons/inv_datacrystal01",
+		model = 190635,
 		text = {
 			en = "Lorien's Grave",
 			es = "Tumba de Lorien",
@@ -10477,6 +15801,7 @@ root("ObjectDB", {
 	},
 	[194555] = {
 		readable = "Archivum Console",
+		model = 243958,
 		text = {
 			en = "Archivum Console",
 			es = "Consola de El Archivum",
@@ -10492,6 +15817,7 @@ root("ObjectDB", {
 	[194618] = {
 		readable = "Lance Rack",
 		icon = "Interface/Icons/inv_spear_05",
+		model = 198636,
 		text = {
 			en = "Lance Rack",
 			es = "Expositor de lanzas",
@@ -10507,6 +15833,7 @@ root("ObjectDB", {
 	[194622] = {
 		readable = "Lance Rack",
 		icon = "Interface/Icons/inv_spear_05",
+		model = 200609,
 		text = {
 			en = "Lance Rack",
 			es = "Expositor de lanzas",
@@ -10538,6 +15865,7 @@ root("ObjectDB", {
 	[194908] = {
 		readable = "Lance Rack",
 		icon = "Interface/Icons/inv_spear_05",
+		model = 198636,
 		text = {
 			en = "Lance Rack",
 			es = "Expositor de lanzas",
@@ -10553,6 +15881,7 @@ root("ObjectDB", {
 	[194909] = {
 		readable = "Lance Rack",
 		icon = "Interface/Icons/inv_spear_05",
+		model = 200609,
 		text = {
 			en = "Lance Rack",
 			es = "Expositor de lanzas",
@@ -10568,6 +15897,7 @@ root("ObjectDB", {
 	[195022] = {
 		readable = "Venomhide Ravasaur Egg",
 		icon = "Interface/Icons/inv_egg_07",
+		model = 202737,
 		text = {
 			en = "Venomhide Ravasaur Egg",
 			es = "Huevo de Pellejo Venenoso",
@@ -10583,6 +15913,7 @@ root("ObjectDB", {
 	[195037] = {
 		readable = "Silithid Egg",
 		icon = "Interface/Icons/inv_egg_04",
+		model = 202490,
 		text = {
 			en = "Silithid Egg",
 			es = "Huevo de silítido",
@@ -10614,6 +15945,7 @@ root("ObjectDB", {
 	[195274] = {
 		readable = "Stolen Tallstrider Leg",
 		icon = "Interface/Icons/inv_misc_food_60",
+		model = 198236,
 		text = {
 			en = "Stolen Tallstrider Leg",
 			es = "Pata de zancaalta robada",
@@ -10637,6 +15969,7 @@ root("ObjectDB", {
 	[195344] = {
 		readable = "Discarded Soul Crystal",
 		icon = "Interface/Icons/inv_misc_gem_azuredraenite_03",
+		model = 192713,
 		text = {
 			en = "Discarded Soul Crystal",
 			es = "Cristal de alma desechado",
@@ -10795,10 +16128,17 @@ root("ObjectDB", {
 	},
 	[195665] = {
 		readable = "Argent Crusade Tribute Chest",
+		model = 312682,
 		text = {
 			en = "Argent Crusade Tribute Chest",
+			es = "[Argent Crusade Tribute Chest]",
+			de = "[Argent Crusade Tribute Chest]",
 			fr = "Coffre d'offrande de la Croisade d'argent",
+			it = "[Argent Crusade Tribute Chest]",
+			pt = "[Argent Crusade Tribute Chest]",
 			ru = "Сундук с наградами Серебряного Авангарда",
+			ko = "[Argent Crusade Tribute Chest]",
+			cn = "[Argent Crusade Tribute Chest]",
 		},
 	},
 	[195676] = {
@@ -10868,6 +16208,7 @@ root("ObjectDB", {
 	[201367] = {
 		readable = "Heart of the Mists",
 		icon = "Interface/Icons/inv_ore_arcanite_02",
+		model = 201054,
 		text = {
 			en = "Heart of the Mists",
 			es = "Corazón de la neblina",
@@ -10963,6 +16304,7 @@ root("ObjectDB", {
 	[202135] = {
 		readable = "Dadanga's Grave",
 		icon = "Interface/Icons/Achievement_BG_Xkills_AVgraveyard",
+		model = 189528,
 		text = {
 			en = "Dadanga's Grave",
 			es = "Tumba de Dadanga",
@@ -10978,6 +16320,7 @@ root("ObjectDB", {
 	[202407] = {
 		readable = "Sandscraper's Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest04b",
+		model = 200953,
 		text = {
 			en = "Sandscraper's Chest",
 			es = "Cofre de Rascadunas",
@@ -10993,6 +16336,7 @@ root("ObjectDB", {
 	[202474] = {
 		readable = "Antediluvean Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest04b",
+		model = 200953,
 		text = {
 			en = "Antediluvean Chest",
 			es = "Cofre antediluviano",
@@ -11002,11 +16346,13 @@ root("ObjectDB", {
 			pt = "Baú Antediluviano",
 			ru = "Допотопный сундук",
 			ko = "태고의 궤짝",
+			cn = "[Antediluvean Chest]",
 		},
 	},
 	[202598] = {
 		readable = "Big Nasty Plunger",
 		icon = "Interface/Icons/INV_Misc_Bomb_05",
+		model = 343855,
 		text = {
 			en = "Big Nasty Plunger",
 			es = "Desatascador asqueroso grande",
@@ -11022,6 +16368,7 @@ root("ObjectDB", {
 	[202613] = {
 		readable = "Platform Control Panel",
 		icon = "Interface/Icons/inv_misc_enggizmos_27",
+		model = 197760,
 		text = {
 			en = "Platform Control Panel",
 			es = "Panel de control de la plataforma",
@@ -11031,11 +16378,13 @@ root("ObjectDB", {
 			pt = "Painel de Controle da Plataforma",
 			ru = "Пульт управления платформой",
 			ko = "굴착대 제어판",
+			cn = "[Platform Control Panel]",
 		},
 	},
 	[202697] = {
 		readable = "Eye of Twilight",
 		icon = "Interface/Icons/INV_Misc_Orb_04",
+		model = 192702,
 		text = {
 			en = "Eye of Twilight",
 			es = "Ojo del Crepúsculo",
@@ -11051,6 +16400,7 @@ root("ObjectDB", {
 	[202701] = {
 		readable = "Outhouse Hideout",
 		icon = "Interface/Icons/Garrison_Building_Storehouse",
+		model = 190617,
 		text = {
 			en = "Outhouse Hideout",
 			es = "Letrina escondrijo",
@@ -11066,6 +16416,7 @@ root("ObjectDB", {
 	[202706] = {
 		readable = "Twilight Cauldron",
 		icon = "Interface/Icons/INV_Misc_Cauldron_Shadow",
+		model = 200948,
 		text = {
 			en = "Twilight Cauldron",
 			es = "Caldero Crepuscular",
@@ -11081,6 +16432,7 @@ root("ObjectDB", {
 	[202712] = {
 		readable = "The Twilight Apocrypha",
 		icon = "Interface/Icons/INV_Misc_Book_05",
+		model = 198020,
 		text = {
 			en = "The Twilight Apocrypha",
 			es = "El Apócrifo Crepuscular",
@@ -11125,6 +16477,7 @@ root("ObjectDB", {
 	},
 	[202778] = {
 		readable = "Albino Cavefish School",
+		model = 219405,
 		text = {
 			en = "Albino Cavefish School",
 			es = "Banco de cavernosos albinos",
@@ -11170,6 +16523,7 @@ root("ObjectDB", {
 	[202871] = {
 		readable = "Sunken Crate",
 		icon = "Interface/Icons/INV_Crate_06",
+		model = 200961,
 		text = {
 			en = "Sunken Crate",
 			es = "Cajón hundido",
@@ -11184,6 +16538,7 @@ root("ObjectDB", {
 	},
 	[202975] = {
 		readable = "Submerged Outhouse",
+		model = 190617,
 		text = {
 			en = "Submerged Outhouse",
 			es = "Letrina sumergida",
@@ -11199,6 +16554,7 @@ root("ObjectDB", {
 	[203128] = {
 		readable = "Broken Bottle",
 		icon = "Interface/Icons/INV_ValentineCologneBottle",
+		model = 198060,
 		text = {
 			en = "Broken Bottle",
 			es = "Botella rota",
@@ -11214,6 +16570,7 @@ root("ObjectDB", {
 	[203134] = {
 		readable = "Empty Pedestal",
 		icon = "Interface/Icons/Archaeology_5_0_EdictsOfTheThunderKing",
+		model = 198754,
 		text = {
 			en = "Empty Pedestal",
 			es = "Pedestal vacío",
@@ -11229,6 +16586,7 @@ root("ObjectDB", {
 	[203140] = {
 		readable = "Broken Prong",
 		icon = "Interface/Icons/inv_weapon_halberd_12",
+		model = 366782,
 		text = {
 			en = "Broken Prong",
 			es = "Punta rota",
@@ -11244,6 +16602,7 @@ root("ObjectDB", {
 	[203186] = {
 		readable = "STAY OUT!",
 		icon = "Interface/Icons/TRADE_ARCHAEOLOGY_VRYKUL_RUNESTICK",
+		model = 305263,
 		text = {
 			en = "STAY OUT!",
 			es = "¡FUERA!",
@@ -11259,6 +16618,7 @@ root("ObjectDB", {
 	[203207] = {
 		readable = "Codex of Shadows",
 		icon = "Interface/Icons/INV_Misc_Book_05",
+		model = 198020,
 		text = {
 			en = "Codex of Shadows",
 			es = "Códice de las Sombras",
@@ -11274,6 +16634,7 @@ root("ObjectDB", {
 	[203301] = {
 		readable = "Naga Tridents",
 		icon = "Interface/Icons/inv_spear_04",
+		model = 192649,
 		text = {
 			en = "Naga Tridents",
 			es = "Tridentes de naga",
@@ -11289,6 +16650,7 @@ root("ObjectDB", {
 	[203305] = {
 		readable = "Crucible of Nazsharin",
 		icon = "Interface/Icons/inv_offhand_pvealliance_d_01",
+		model = 201449,
 		text = {
 			en = "Crucible of Nazsharin",
 			es = "Crisol de Nazsharin",
@@ -11362,6 +16724,7 @@ root("ObjectDB", {
 			pt = "Diagramas do Devastador",
 			ru = "Чертежи остова \"Крушителя Врагов\"",
 			ko = "원수파괴자호 설계도",
+			cn = "[Foebreaker Blueprints]",
 		},
 	},
 	[204274] = {
@@ -11414,6 +16777,7 @@ root("ObjectDB", {
 	[204406] = {
 		readable = "Half-Buried Bottle",
 		icon = "Interface/Icons/inv_misc_flaskofvolatility",
+		model = 198061,
 		text = {
 			en = "Half-Buried Bottle",
 			es = "Botella semienterrada",
@@ -11429,6 +16793,7 @@ root("ObjectDB", {
 	[204450] = {
 		readable = "Captain Stillwater's Charts",
 		icon = "Interface/Icons/Icon_TreasureMap",
+		model = 198457,
 		text = {
 			en = "Captain Stillwater's Charts",
 			es = "Cartas del capitán Aguasmansas",
@@ -11444,6 +16809,7 @@ root("ObjectDB", {
 	[204578] = {
 		readable = "Barrel of Doublerum",
 		icon = "Interface/Icons/achievement_faction_brewmaster",
+		model = 199563,
 		text = {
 			en = "Barrel of Doublerum",
 			es = "Barril de ron doble",
@@ -11537,6 +16903,7 @@ root("ObjectDB", {
 	[205143] = {
 		readable = "Abandoned Outhouse",
 		icon = "Interface/Icons/INV_Misc_Key_12",
+		model = 190617,
 		text = {
 			en = "Abandoned Outhouse",
 			es = "Letrina abandonada",
@@ -11551,6 +16918,7 @@ root("ObjectDB", {
 	},
 	[205198] = {
 		readable = "Pile of Explosives",
+		model = 343859,
 		text = {
 			en = "Pile of Explosives",
 			es = "Pila de explosivos",
@@ -11566,6 +16934,7 @@ root("ObjectDB", {
 	[205207] = {
 		readable = "Maziel's Journal",
 		icon = "Interface/Icons/INV_Misc_Book_08",
+		model = 200910,
 		text = {
 			en = "Maziel's Journal",
 			es = "Diario de Maziel",
@@ -11581,6 +16950,7 @@ root("ObjectDB", {
 	[205258] = {
 		readable = "Broken Weapons Crate",
 		icon = "Interface/Icons/inv_misc_desecrated_mailchest",
+		model = 199105,
 		text = {
 			en = "Broken Weapons Crate",
 			es = "Cajón de armas roto",
@@ -11611,6 +16981,7 @@ root("ObjectDB", {
 	[205332] = {
 		readable = "Wanted Poster",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 191094,
 		text = {
 			en = "Wanted Poster",
 			es = "Cartel de Se busca",
@@ -11626,6 +16997,7 @@ root("ObjectDB", {
 	[205350] = {
 		readable = "Horde Communication Panel",
 		icon = "Interface/Icons/INV_Gizmo_GoblinBoomBox_01",
+		model = 197760,
 		text = {
 			en = "Horde Communication Panel",
 			es = "Panel de comunicación de la Horda",
@@ -11641,6 +17013,7 @@ root("ObjectDB", {
 	[205476] = {
 		readable = "Book of Lost Souls",
 		icon = "Interface/Icons/inv_misc_book_17",
+		model = 375546,
 		text = {
 			en = "Book of Lost Souls",
 			es = "Libro de las Almas Perdidas",
@@ -11686,6 +17059,7 @@ root("ObjectDB", {
 	[205875] = {
 		readable = "Crusader's Flare",
 		icon = "Interface/Icons/Spell_Fire_Flare",
+		model = 200995,
 		text = {
 			en = "Crusader's Flare",
 			es = "Bengala de cruzado",
@@ -11701,6 +17075,7 @@ root("ObjectDB", {
 	[206109] = {
 		readable = "Warchief's Command Board",
 		icon = "Interface/Icons/tracking_warboard",
+		model = 429104,
 		text = {
 			en = "Warchief's Command Board",
 			es = "Tablón de mando del Jefe de Guerra",
@@ -11716,6 +17091,7 @@ root("ObjectDB", {
 	[206111] = {
 		readable = "Hero's Call Board",
 		icon = "Interface/Icons/tracking_warboard",
+		model = 429102,
 		text = {
 			en = "Hero's Call Board",
 			es = "Tablero de ¡Se busca héroe!",
@@ -11740,11 +17116,13 @@ root("ObjectDB", {
 			pt = "Terminal A.I.D.A.",
 			ru = "Терминал АИДА",
 			ko = "인공지능 단말기",
+			cn = "[A.I.D.A. Terminal]",
 		},
 	},
 	[206335] = {
 		readable = "Stone Slab",
 		icon = "Interface/Icons/INV_Misc_StoneTablet_01",
+		model = 368543,
 		text = {
 			en = "Stone Slab",
 			es = "Losa de piedra",
@@ -11760,6 +17138,7 @@ root("ObjectDB", {
 	[206336] = {
 		readable = "Marble Slab",
 		icon = "Interface/Icons/INV_Misc_StoneTablet_01",
+		model = 396583,
 		text = {
 			en = "Marble Slab",
 			es = "Losa de mármol",
@@ -11775,6 +17154,7 @@ root("ObjectDB", {
 	[206374] = {
 		readable = "Trove of the Watchers",
 		icon = "Interface/Icons/Buff_FelTreasures",
+		model = 200953,
 		text = {
 			en = "Trove of the Watchers",
 			es = "Tesoro de los Vigías",
@@ -11784,11 +17164,13 @@ root("ObjectDB", {
 			pt = "Tesouro dos Observadores",
 			ru = "Сокровище Стражей",
 			ko = "감시자의 귀중품",
+			cn = "[Trove of the Watchers]",
 		},
 	},
 	[206569] = {
 		readable = "Eye of Twilight",
 		icon = "Interface/Icons/INV_Jewelcrafting_Nightseye_01",
+		model = 192702,
 		text = {
 			en = "Eye of Twilight",
 			es = "Ojo del Crepúsculo",
@@ -11804,6 +17186,7 @@ root("ObjectDB", {
 	[206585] = {
 		readable = "Totem of Ruumbo",
 		icon = "Interface/Icons/Ability_Shaman_CondensationTotem",
+		model = 194719,
 		text = {
 			en = "Totem of Ruumbo",
 			es = "Tótem de Ruumbo",
@@ -11819,6 +17202,7 @@ root("ObjectDB", {
 	[206944] = {
 		readable = "Shovel",
 		icon = "Interface/Icons/INV_Misc_Shovel_01",
+		model = 189854,
 		text = {
 			en = "Shovel",
 			es = "Pala",
@@ -11834,6 +17218,7 @@ root("ObjectDB", {
 	[207104] = {
 		readable = "Master Control Pump",
 		icon = "Interface/Icons/INV_Misc_Weathermachine_01",
+		model = 309721,
 		text = {
 			en = "Master Control Pump",
 			es = "Bomba de control maestro",
@@ -11849,6 +17234,7 @@ root("ObjectDB", {
 	[207179] = {
 		readable = "Winterfall Cauldron",
 		icon = "Interface/Icons/INV_Misc_Cauldron_Arcane",
+		model = 198100,
 		text = {
 			en = "Winterfall Cauldron",
 			es = "Caldera de Nevada",
@@ -11864,6 +17250,7 @@ root("ObjectDB", {
 	[207279] = {
 		readable = "Warchief's Command Board",
 		icon = "Interface/Icons/Achievement_General_HordeSlayer",
+		model = 418794,
 		text = {
 			en = "Warchief's Command Board",
 			es = "Tablón de mando del jefe de guerra",
@@ -11911,6 +17298,7 @@ root("ObjectDB", {
 	[207359] = {
 		readable = "Pure Twilight Egg",
 		icon = "Interface/Icons/Creatureportrait_TwilightsHammer_DragonEgg_01",
+		model = 351241,
 		text = {
 			en = "Pure Twilight Egg",
 			es = "Huevo Crepuscular puro",
@@ -11941,6 +17329,7 @@ root("ObjectDB", {
 	},
 	[207724] = {
 		readable = "Shipwreck Debris",
+		model = 219411,
 		text = {
 			en = "Shipwreck Debris",
 			es = "Restos de naufragio",
@@ -11956,6 +17345,7 @@ root("ObjectDB", {
 	[207982] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -11971,6 +17361,7 @@ root("ObjectDB", {
 	[207983] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -11986,6 +17377,7 @@ root("ObjectDB", {
 	[207984] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -12001,6 +17393,7 @@ root("ObjectDB", {
 	[207985] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -12016,6 +17409,7 @@ root("ObjectDB", {
 	[207986] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -12031,6 +17425,7 @@ root("ObjectDB", {
 	[207987] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -12046,6 +17441,7 @@ root("ObjectDB", {
 	[207988] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -12061,6 +17457,7 @@ root("ObjectDB", {
 	[207989] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -12076,6 +17473,7 @@ root("ObjectDB", {
 	[207990] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -12091,6 +17489,7 @@ root("ObjectDB", {
 	[207991] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -12106,6 +17505,7 @@ root("ObjectDB", {
 	[207992] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -12121,6 +17521,7 @@ root("ObjectDB", {
 	[207993] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -12136,6 +17537,7 @@ root("ObjectDB", {
 	[208089] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -12151,6 +17553,7 @@ root("ObjectDB", {
 	[208090] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -12166,6 +17569,7 @@ root("ObjectDB", {
 	[208093] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -12181,6 +17585,7 @@ root("ObjectDB", {
 	[208094] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -12211,6 +17616,7 @@ root("ObjectDB", {
 	[208316] = {
 		readable = "Hero's Call Board",
 		icon = "Interface/Icons/Achievement_General_AllianceSlayer",
+		model = 429102,
 		text = {
 			en = "Hero's Call Board",
 			es = "Tablero de ¡Se busca héroe!",
@@ -12226,6 +17632,7 @@ root("ObjectDB", {
 	[208317] = {
 		readable = "Warchief's Command Board",
 		icon = "Interface/Icons/Achievement_General_HordeSlayer",
+		model = 429104,
 		text = {
 			en = "Warchief's Command Board",
 			es = "Tablón de mando del jefe de guerra",
@@ -12241,6 +17648,7 @@ root("ObjectDB", {
 	[208365] = {
 		readable = "Recently Disturbed Dirt Mound",
 		icon = "Interface/Icons/INV_Misc_Dust_02",
+		model = 189528,
 		text = {
 			en = "Recently Disturbed Dirt Mound",
 			es = "Montón de barro removido recientemente",
@@ -12250,11 +17658,13 @@ root("ObjectDB", {
 			pt = "Monturo de Terra Remexido Recentemente",
 			ru = "Свежая куча грязи",
 			ko = "최근에 건드려진 흙더미",
+			cn = "[Recently Disturbed Dirt Mound]",
 		},
 	},
 	[208535] = {
 		readable = "Dried Acorn",
 		icon = "Interface/Icons/INV_Misc_Scales_FishOrange03",
+		model = 202297,
 		text = {
 			en = "Dried Acorn",
 			es = "Bellota seca",
@@ -12263,11 +17673,13 @@ root("ObjectDB", {
 			it = "Ghianda Essiccata",
 			pt = "Semente Seca",
 			ru = "Сухой желудь",
+			ko = "[Dried Acorn]",
 			cn = "干橡子",
 		},
 	},
 	[209072] = {
 		readable = "Stolen Crate",
+		model = 200960,
 		text = {
 			en = "Stolen Crate",
 			es = "Cajón robado",
@@ -12283,6 +17695,7 @@ root("ObjectDB", {
 	[209076] = {
 		readable = "Anson's Crate",
 		icon = "Interface/Icons/INV_Crate_01",
+		model = 200960,
 		text = {
 			en = "Anson's Crate",
 			es = "Cajón de Anson",
@@ -12291,11 +17704,13 @@ root("ObjectDB", {
 			it = "Cassa di Anson",
 			pt = "Caixote de Anselmo",
 			ru = "Ящик Ансона",
+			ko = "[Anson's Crate]",
 			cn = "安森的箱子",
 		},
 	},
 	[209094] = {
 		readable = "Stolen Crate",
+		model = 200960,
 		text = {
 			en = "Stolen Crate",
 			es = "Cajón robado",
@@ -12311,6 +17726,7 @@ root("ObjectDB", {
 	[209095] = {
 		readable = "Edgar's Crate",
 		icon = "Interface/Icons/INV_Crate_01",
+		model = 200960,
 		text = {
 			en = "Edgar's Crate",
 			es = "Cajón de Edgar",
@@ -12437,6 +17853,7 @@ root("ObjectDB", {
 	},
 	[209673] = {
 		readable = "Jade Tiger Pillar",
+		model = 537061,
 		text = {
 			en = "Jade Tiger Pillar",
 			es = "Pilar de tigre de jade",
@@ -12451,6 +17868,7 @@ root("ObjectDB", {
 	},
 	[209845] = {
 		readable = "Mouthwatering Brew",
+		model = 191825,
 		text = {
 			en = "Mouthwatering Brew",
 			es = "Brebaje apetitoso",
@@ -12465,6 +17883,7 @@ root("ObjectDB", {
 	},
 	[210005] = {
 		readable = "Weapon Rack",
+		model = 519913,
 		text = {
 			en = "Weapon Rack",
 			es = "Expositor de armas",
@@ -12479,6 +17898,7 @@ root("ObjectDB", {
 	},
 	[210015] = {
 		readable = "Weapon Rack",
+		model = 519913,
 		text = {
 			en = "Weapon Rack",
 			es = "Expositor de armas",
@@ -12493,6 +17913,7 @@ root("ObjectDB", {
 	},
 	[210016] = {
 		readable = "Weapon Rack",
+		model = 519913,
 		text = {
 			en = "Weapon Rack",
 			es = "Expositor de armas",
@@ -12507,6 +17928,7 @@ root("ObjectDB", {
 	},
 	[210017] = {
 		readable = "Weapon Rack",
+		model = 519913,
 		text = {
 			en = "Weapon Rack",
 			es = "Expositor de armas",
@@ -12521,6 +17943,7 @@ root("ObjectDB", {
 	},
 	[210018] = {
 		readable = "Weapon Rack",
+		model = 519913,
 		text = {
 			en = "Weapon Rack",
 			es = "Expositor de armas",
@@ -12535,6 +17958,7 @@ root("ObjectDB", {
 	},
 	[210019] = {
 		readable = "Weapon Rack",
+		model = 519913,
 		text = {
 			en = "Weapon Rack",
 			es = "Expositor de armas",
@@ -12549,6 +17973,7 @@ root("ObjectDB", {
 	},
 	[210020] = {
 		readable = "Weapon Rack",
+		model = 519913,
 		text = {
 			en = "Weapon Rack",
 			es = "Expositor de armas",
@@ -12579,6 +18004,7 @@ root("ObjectDB", {
 	},
 	[210565] = {
 		readable = "Dark Soil",
+		model = 204112,
 		text = {
 			en = "Dark Soil",
 			es = "Tierra oscura",
@@ -12594,18 +18020,23 @@ root("ObjectDB", {
 	[211424] = {
 		readable = "Alchemy Scroll",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 521979,
 		text = {
 			en = "Alchemy Scroll",
 			es = "Pergamino de alquimia",
 			de = "Alchemieschriftrolle",
 			fr = "Parchemin d’alchimie",
+			it = "[Alchemy Scroll]",
 			pt = "Pergaminho de Alquimia",
 			ru = "Алхимический свиток",
+			ko = "[Alchemy Scroll]",
+			cn = "[Alchemy Scroll]",
 		},
 	},
 	[211754] = {
 		readable = "Curious Text",
 		icon = "Interface/Icons/inv_misc_book_11",
+		model = 534928,
 		text = {
 			en = "Curious Text",
 			es = "Texto curioso",
@@ -12620,6 +18051,7 @@ root("ObjectDB", {
 	},
 	[211807] = {
 		readable = "Mogu Chest",
+		model = 195121,
 		text = {
 			en = "Mogu Chest",
 			es = "Cofre mogu",
@@ -12634,6 +18066,7 @@ root("ObjectDB", {
 	},
 	[212181] = {
 		readable = "Ancient Statute",
+		model = 589976,
 		text = {
 			en = "Ancient Statute",
 			es = "Estatua antigua",
@@ -12648,6 +18081,7 @@ root("ObjectDB", {
 	},
 	[212389] = {
 		readable = "Scroll of Auspice",
+		model = 521201,
 		text = {
 			en = "Scroll of Auspice",
 			es = "Pergamino de auspicios",
@@ -12662,6 +18096,7 @@ root("ObjectDB", {
 	},
 	[213362] = {
 		readable = "Ship's Locker",
+		model = 446673,
 		text = {
 			en = "Ship's Locker",
 			es = "Baúl del barco",
@@ -12677,6 +18112,7 @@ root("ObjectDB", {
 	[213363] = {
 		readable = "Wodin's Mantid Shanker",
 		icon = "Interface/Icons/inv_weapon_shortblade_46",
+		model = 615309,
 		text = {
 			en = "Wodin's Mantid Shanker",
 			es = "Faca mántide de Wodin",
@@ -12692,6 +18128,7 @@ root("ObjectDB", {
 	[213364] = {
 		readable = "Ancient Pandaren Mining Pick",
 		icon = "Interface/Icons/inv_pick_05",
+		model = 575063,
 		text = {
 			en = "Ancient Pandaren Mining Pick",
 			es = "Pico de minero pandaren antiguo",
@@ -12706,6 +18143,7 @@ root("ObjectDB", {
 	},
 	[213366] = {
 		readable = "Ancient Pandaren Tea Pot",
+		model = 196466,
 		text = {
 			en = "Ancient Pandaren Tea Pot",
 			es = "Tetera pandaren antigua",
@@ -12720,6 +18158,7 @@ root("ObjectDB", {
 	},
 	[213368] = {
 		readable = "Lucky Pandren Coin",
+		model = 616362,
 		text = {
 			en = "Lucky Pandren Coin",
 			es = "Moneda pandaren de la suerte",
@@ -12734,6 +18173,7 @@ root("ObjectDB", {
 	},
 	[213649] = {
 		readable = "Cache of Pilfered Goods",
+		model = 197063,
 		text = {
 			en = "Cache of Pilfered Goods",
 			es = "Alijo de bienes trincados",
@@ -12748,6 +18188,7 @@ root("ObjectDB", {
 	},
 	[213650] = {
 		readable = "Virmen Treasure Cache",
+		model = 197063,
 		text = {
 			en = "Virmen Treasure Cache",
 			es = "Alijo del tesoro mur",
@@ -12763,6 +18204,7 @@ root("ObjectDB", {
 	[213651] = {
 		readable = "Equipment Locker",
 		icon = "Interface/Icons/inv_misc_treasurechest05b",
+		model = 446673,
 		text = {
 			en = "Equipment Locker",
 			es = "Armario de equipo",
@@ -12778,6 +18220,7 @@ root("ObjectDB", {
 	[213653] = {
 		readable = "Pandaren Fishing Spear",
 		icon = "Interface/Icons/inv_spear_05",
+		model = 651007,
 		text = {
 			en = "Pandaren Fishing Spear",
 			es = "Lanza de pescar pandaren",
@@ -12793,6 +18236,7 @@ root("ObjectDB", {
 	[213741] = {
 		readable = "Ancient Jinyu Staff",
 		icon = "Interface/Icons/inv_staff_07",
+		model = 605629,
 		text = {
 			en = "Ancient Jinyu Staff",
 			es = "Bastón jinyu antiguo",
@@ -12808,6 +18252,7 @@ root("ObjectDB", {
 	[213742] = {
 		readable = "Hammer of Ten Thunders",
 		icon = "Interface/Icons/inv_mace_46",
+		model = 605542,
 		text = {
 			en = "Hammer of Ten Thunders",
 			es = "Martillo de los Diez Truenos",
@@ -12822,6 +18267,7 @@ root("ObjectDB", {
 	},
 	[213748] = {
 		readable = "Pandaren Ritual Stone",
+		model = 530886,
 		text = {
 			en = "Pandaren Ritual Stone",
 			es = "Piedra de ritual pandaren",
@@ -12837,6 +18283,7 @@ root("ObjectDB", {
 	[213749] = {
 		readable = "Staff of the Hidden Master",
 		icon = "Interface/Icons/inv_stave_2h_panprog_b_01",
+		model = 651009,
 		text = {
 			en = "Staff of the Hidden Master",
 			es = "Bastón del maestro oculto",
@@ -12851,6 +18298,7 @@ root("ObjectDB", {
 	},
 	[213750] = {
 		readable = "Saurok Stone Tablet",
+		model = 201276,
 		text = {
 			en = "Saurok Stone Tablet",
 			es = "Tablilla de piedra de saurok",
@@ -12882,6 +18330,7 @@ root("ObjectDB", {
 	[213765] = {
 		readable = "Tablet of Ren Yun",
 		icon = "Interface/Icons/INV_Misc_StoneTablet_05",
+		model = 200640,
 		text = {
 			en = "Tablet of Ren Yun",
 			es = "Tablilla de Ren Yun",
@@ -12896,6 +18345,7 @@ root("ObjectDB", {
 	},
 	[213767] = {
 		readable = "Hidden Treasure",
+		model = 537040,
 		text = {
 			en = "Hidden Treasure",
 			es = "Tesoro escondido",
@@ -12911,6 +18361,7 @@ root("ObjectDB", {
 	[213768] = {
 		readable = "Hozen Warrior Spear",
 		icon = "Interface/Icons/inv_spear_05",
+		model = 318833,
 		text = {
 			en = "Hozen Warrior Spear",
 			es = "Lanza de guerrero hozen",
@@ -12919,11 +18370,13 @@ root("ObjectDB", {
 			it = "Lancia del Guerriero Hozen",
 			pt = "Lança do Guerreiro Hozen",
 			ru = "Воинское копье хозенов",
+			ko = "[Hozen Warrior Spear]",
 			cn = "猢狲战士长矛",
 		},
 	},
 	[213769] = {
 		readable = "Hozen Treasure Cache",
+		model = 446671,
 		text = {
 			en = "Hozen Treasure Cache",
 			es = "Alijo de tesoro hozen",
@@ -12938,6 +18391,7 @@ root("ObjectDB", {
 	},
 	[213770] = {
 		readable = "Stolen Sprite Treasure",
+		model = 446677,
 		text = {
 			en = "Stolen Sprite Treasure",
 			es = "Tesoro de duende robado",
@@ -12952,6 +18406,7 @@ root("ObjectDB", {
 	},
 	[213771] = {
 		readable = "Statue of Xuen",
+		model = 579236,
 		text = {
 			en = "Statue of Xuen",
 			es = "Estatua de Xuen",
@@ -12966,6 +18421,7 @@ root("ObjectDB", {
 	},
 	[213774] = {
 		readable = "Lost Adventurer's Belongings",
+		model = 579120,
 		text = {
 			en = "Lost Adventurer's Belongings",
 			es = "Pertenencias del aventurero perdido",
@@ -12980,6 +18436,7 @@ root("ObjectDB", {
 	},
 	[213782] = {
 		readable = "Terracotta Head",
+		model = 589967,
 		text = {
 			en = "Terracotta Head",
 			es = "Cabeza de terracota",
@@ -12994,6 +18451,7 @@ root("ObjectDB", {
 	},
 	[213793] = {
 		readable = "Rikktik's Tiny Chest",
+		model = 446679,
 		text = {
 			en = "Rikktik's Tiny Chest",
 			es = "Cofre diminuto de Rikktik",
@@ -13024,6 +18482,7 @@ root("ObjectDB", {
 	},
 	[213844] = {
 		readable = "Amber Encased Moth",
+		model = 604977,
 		text = {
 			en = "Amber Encased Moth",
 			es = "Polilla atrapada en ámbar",
@@ -13038,6 +18497,7 @@ root("ObjectDB", {
 	},
 	[213845] = {
 		readable = "The Hammer of Folly",
+		model = 575061,
 		text = {
 			en = "The Hammer of Folly",
 			es = "El martillo del disparate",
@@ -13052,6 +18512,7 @@ root("ObjectDB", {
 	},
 	[213956] = {
 		readable = "Fragment of Dread",
+		model = 304695,
 		text = {
 			en = "Fragment of Dread",
 			es = "Fragmento de pavor",
@@ -13066,6 +18527,7 @@ root("ObjectDB", {
 	},
 	[213959] = {
 		readable = "Hardened Sap of Kri'vess",
+		model = 604981,
 		text = {
 			en = "Hardened Sap of Kri'vess",
 			es = "Savia de Kri'vess endurecida",
@@ -13081,6 +18543,7 @@ root("ObjectDB", {
 	[213960] = {
 		readable = "Yaungol Fire Carrier",
 		icon = "Interface/Icons/inv_torch_lit",
+		model = 651003,
 		text = {
 			en = "Yaungol Fire Carrier",
 			es = "Portafuego yaungol",
@@ -13095,6 +18558,7 @@ root("ObjectDB", {
 	},
 	[213961] = {
 		readable = "Abandoned Create of Goods",
+		model = 537034,
 		text = {
 			en = "Abandoned Create of Goods",
 			es = "Cajón de bienes abandonado",
@@ -13110,6 +18574,7 @@ root("ObjectDB", {
 	[213962] = {
 		readable = "Wind-Reaver's Dagger of Quick Strikes",
 		icon = "Interface/Icons/inv_knife_1h_mantid_01",
+		model = 615309,
 		text = {
 			en = "Wind-Reaver's Dagger of Quick Strikes",
 			es = "Daga de golpes rápidos del Atracavientos",
@@ -13125,6 +18590,7 @@ root("ObjectDB", {
 	[213964] = {
 		readable = "Malik's Stalwart Spear",
 		icon = "Interface/Icons/inv_polearm_2h_mantid_01",
+		model = 615312,
 		text = {
 			en = "Malik's Stalwart Spear",
 			es = "Lanza de adepto de Malik",
@@ -13139,6 +18605,7 @@ root("ObjectDB", {
 	},
 	[213966] = {
 		readable = "Amber Encased Necklace",
+		model = 604977,
 		text = {
 			en = "Amber Encased Necklace",
 			es = "Collar atrapado en ámbar",
@@ -13154,6 +18621,7 @@ root("ObjectDB", {
 	[213967] = {
 		readable = "Blade of the Prime",
 		icon = "Interface/Icons/inv_sword_1h_mantid_01",
+		model = 615295,
 		text = {
 			en = "Blade of the Prime",
 			es = "Hoja del Perfecto",
@@ -13169,6 +18637,7 @@ root("ObjectDB", {
 	[213968] = {
 		readable = "Swarming Cleaver of Ka'roz",
 		icon = "Interface/Icons/inv_sword_2h_mantid_01",
+		model = 615298,
 		text = {
 			en = "Swarming Cleaver of Ka'roz",
 			es = "Cuchilla de enjambre de Ka'roz",
@@ -13184,6 +18653,7 @@ root("ObjectDB", {
 	[213969] = {
 		readable = "Dissector's Staff of Mutation",
 		icon = "Interface/Icons/inv_staff_2h_mantid_01",
+		model = 615370,
 		text = {
 			en = "Dissector's Staff of Mutation",
 			es = "Bastón de mutación del Disector",
@@ -13198,6 +18668,7 @@ root("ObjectDB", {
 	},
 	[213970] = {
 		readable = "Bloodsoaked Chitin Fragment",
+		model = 623807,
 		text = {
 			en = "Bloodsoaked Chitin Fragment",
 			es = "Fragmento de quitina empapado de sangre",
@@ -13212,6 +18683,7 @@ root("ObjectDB", {
 	},
 	[213971] = {
 		readable = "Swarmkeeper's Medallion",
+		model = 242727,
 		text = {
 			en = "Swarmkeeper's Medallion",
 			es = "Medallón del Guardaenjambres",
@@ -13227,6 +18699,7 @@ root("ObjectDB", {
 	[213972] = {
 		readable = "Blade of the Poisoned Mind",
 		icon = "Interface/Icons/inv_knife_1h_mantid_01",
+		model = 615372,
 		text = {
 			en = "Blade of the Poisoned Mind",
 			es = "Hoja de la Mente Envenenada",
@@ -13241,6 +18714,7 @@ root("ObjectDB", {
 	},
 	[213973] = {
 		readable = "Klaxxi Sonic Relay",
+		model = 618946,
 		text = {
 			en = "Klaxxi Sonic Relay",
 			es = "Repetidor sónico Klaxxi",
@@ -13255,6 +18729,7 @@ root("ObjectDB", {
 	},
 	[214062] = {
 		readable = "Glowing Amber",
+		model = 604977,
 		text = {
 			en = "Glowing Amber",
 			es = "Ámbar resplandeciente",
@@ -13269,6 +18744,7 @@ root("ObjectDB", {
 	},
 	[214175] = {
 		readable = "Bag of Wu Kao Supplies",
+		model = 523213,
 		text = {
 			en = "Bag of Wu Kao Supplies",
 			es = "Bolsa de suministros Wu Kao",
@@ -13283,6 +18759,7 @@ root("ObjectDB", {
 	},
 	[214325] = {
 		readable = "Forgotten Lockbox",
+		model = 196976,
 		text = {
 			en = "Forgotten Lockbox",
 			es = "Arcón olvidado",
@@ -13297,6 +18774,7 @@ root("ObjectDB", {
 	},
 	[214337] = {
 		readable = "Stash of Gems",
+		model = 446675,
 		text = {
 			en = "Stash of Gems",
 			es = "Alijo de gemas",
@@ -13311,6 +18789,7 @@ root("ObjectDB", {
 	},
 	[214338] = {
 		readable = "Offering of Remembrance",
+		model = 195542,
 		text = {
 			en = "Offering of Remembrance",
 			es = "Ofrenda de recuerdo",
@@ -13325,6 +18804,7 @@ root("ObjectDB", {
 	},
 	[214339] = {
 		readable = "Chest of Supplies",
+		model = 446671,
 		text = {
 			en = "Chest of Supplies",
 			es = "Cofre de suministros",
@@ -13339,6 +18819,7 @@ root("ObjectDB", {
 	},
 	[214340] = {
 		readable = "Boat-Building Instructions",
+		model = 534954,
 		text = {
 			en = "Boat-Building Instructions",
 			es = "Instrucciones para astilleros",
@@ -13353,6 +18834,7 @@ root("ObjectDB", {
 	},
 	[214403] = {
 		readable = "Stack of Papers",
+		model = 576627,
 		text = {
 			en = "Stack of Papers",
 			es = "Montón de papeles",
@@ -13367,6 +18849,7 @@ root("ObjectDB", {
 	},
 	[214407] = {
 		readable = "Mo-Mo's Treasure Chest",
+		model = 196979,
 		text = {
 			en = "Mo-Mo's Treasure Chest",
 			es = "Cofre del tesoro de Mo-Mo",
@@ -13381,6 +18864,7 @@ root("ObjectDB", {
 	},
 	[214438] = {
 		readable = "Ancient Mogu Tablet",
+		model = 194086,
 		text = {
 			en = "Ancient Mogu Tablet",
 			es = "Tablilla mogu antigua",
@@ -13396,6 +18880,7 @@ root("ObjectDB", {
 	[214439] = {
 		readable = "Barrel of Banana Infused Rum",
 		icon = "Interface/Icons/INV_Drink_01",
+		model = 199737,
 		text = {
 			en = "Barrel of Banana Infused Rum",
 			es = "Barril de ron con plátano",
@@ -13410,6 +18895,7 @@ root("ObjectDB", {
 	},
 	[214562] = {
 		readable = "Sha-Haunted Crystal",
+		model = 392110,
 		text = {
 			en = "Sha-Haunted Crystal",
 			es = "Cristal embrujado por el sha",
@@ -13425,6 +18911,7 @@ root("ObjectDB", {
 	[214871] = {
 		readable = "Shattered Destroyer",
 		icon = "Interface/Icons/archaeology_5_0_keystone_mogu",
+		model = 589967,
 		text = {
 			en = "Shattered Destroyer",
 			es = "Destructor destrozado",
@@ -13440,6 +18927,7 @@ root("ObjectDB", {
 	[214903] = {
 		readable = "The Tan-Chao",
 		icon = "Interface/Icons/inv_misc_bowl_01",
+		model = 528748,
 		text = {
 			en = "The Tan-Chao",
 			es = "El Tan-Chao",
@@ -13454,6 +18942,7 @@ root("ObjectDB", {
 	},
 	[215705] = {
 		readable = "Tillers Shrine",
+		model = 525041,
 		text = {
 			en = "Tillers Shrine",
 			es = "Santuario de labradores",
@@ -13468,6 +18957,7 @@ root("ObjectDB", {
 	},
 	[215844] = {
 		readable = "Flagpole",
+		model = 198199,
 		text = {
 			en = "Flagpole",
 			es = "Asta",
@@ -13482,6 +18972,7 @@ root("ObjectDB", {
 	},
 	[216322] = {
 		readable = "Bounty Board",
+		model = 429104,
 		text = {
 			en = "Bounty Board",
 			es = "Tablón de recompensas",
@@ -13497,6 +18988,7 @@ root("ObjectDB", {
 	[217851] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -13512,6 +19004,7 @@ root("ObjectDB", {
 	[217852] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -13526,6 +19019,7 @@ root("ObjectDB", {
 	},
 	[218427] = {
 		readable = "Coming of Age",
+		model = 534984,
 		text = {
 			en = "Coming of Age",
 			es = "La edad adulta",
@@ -13540,6 +19034,7 @@ root("ObjectDB", {
 	},
 	[218428] = {
 		readable = "For Council and King",
+		model = 534984,
 		text = {
 			en = "For Council and King",
 			es = "El Consejo y el Rey",
@@ -13554,6 +19049,7 @@ root("ObjectDB", {
 	},
 	[218429] = {
 		readable = "Shadows of the Loa",
+		model = 534984,
 		text = {
 			en = "Shadows of the Loa",
 			es = "La sombra de los loa",
@@ -13568,6 +19064,7 @@ root("ObjectDB", {
 	},
 	[218430] = {
 		readable = "The Dark Prophet Zul",
+		model = 534984,
 		text = {
 			en = "The Dark Prophet Zul",
 			es = "El profeta oscuro Zul",
@@ -13582,6 +19079,7 @@ root("ObjectDB", {
 	},
 	[218431] = {
 		readable = "Lei Shen",
+		model = 534984,
 		text = {
 			en = "Lei Shen",
 			es = "Lei Shen",
@@ -13596,6 +19094,7 @@ root("ObjectDB", {
 	},
 	[218432] = {
 		readable = "The Sacred Mount",
+		model = 534984,
 		text = {
 			en = "The Sacred Mount",
 			es = "El monte sagrado",
@@ -13610,6 +19109,7 @@ root("ObjectDB", {
 	},
 	[218433] = {
 		readable = "Unity at a Price",
+		model = 534984,
 		text = {
 			en = "Unity at a Price",
 			es = "La unidad tiene un precio",
@@ -13624,6 +19124,7 @@ root("ObjectDB", {
 	},
 	[218434] = {
 		readable = "The Pandaren Problem",
+		model = 534984,
 		text = {
 			en = "The Pandaren Problem",
 			es = "El problema de los pandaren",
@@ -13638,6 +19139,7 @@ root("ObjectDB", {
 	},
 	[218435] = {
 		readable = "Agents of Order",
+		model = 534984,
 		text = {
 			en = "Agents of Order",
 			es = "Agentes del orden",
@@ -13652,6 +19154,7 @@ root("ObjectDB", {
 	},
 	[218436] = {
 		readable = "Shadow, Storm, and Stone",
+		model = 534984,
 		text = {
 			en = "Shadow, Storm, and Stone",
 			es = "Sombra, Tormenta y Piedra",
@@ -13666,6 +19169,7 @@ root("ObjectDB", {
 	},
 	[218437] = {
 		readable = "The Curse and the Silence",
+		model = 534984,
 		text = {
 			en = "The Curse and the Silence",
 			es = "La maldición y el silencio",
@@ -13674,11 +19178,13 @@ root("ObjectDB", {
 			it = "Mokkan della Maledizione e del Silenzio",
 			pt = "Maldição e Silêncio",
 			ru = "\"Проклятие и молчание\"",
+			ko = "[The Curse and the Silence]",
 			cn = "诅咒与沉默",
 		},
 	},
 	[218438] = {
 		readable = "Age of a Hundred Kings",
+		model = 534984,
 		text = {
 			en = "Age of a Hundred Kings",
 			es = "La era de los cien reyes",
@@ -13693,6 +19199,7 @@ root("ObjectDB", {
 	},
 	[218750] = {
 		readable = "Work Orders",
+		model = 521979,
 		text = {
 			en = "Work Orders",
 			es = "Pedidos",
@@ -13707,6 +19214,7 @@ root("ObjectDB", {
 	},
 	[220641] = {
 		readable = "Thunderlord Cache",
+		model = 446677,
 		text = {
 			en = "Thunderlord Cache",
 			es = "Alijo Señor del Trueno",
@@ -13731,6 +19239,7 @@ root("ObjectDB", {
 			it = "|cFFFFFFFFStep 6:|r Pagina 1.127",
 			pt = "|cFFFFFFFFStep 6:|r Página 1127",
 			ru = "|cFFFFFFFFШаг 6:|r Страница 1127",
+			ko = "[Page 1127]",
 			cn = "|cFFFFFFFF第6步:|r 第1127页",
 		},
 	},
@@ -13746,11 +19255,13 @@ root("ObjectDB", {
 			it = "|cFFFFFFFFStep 5:|r Pagina 845",
 			pt = "|cFFFFFFFFStep 5:|r Página 845",
 			ru = "|cFFFFFFFFШаг 5:|r Страница 845",
+			ko = "[Page 845]",
 			cn = "|cFFFFFFFF第5步:|r 第845页",
 		},
 	},
 	[220832] = {
 		readable = "Sunken Treasure",
+		model = 446671,
 		text = {
 			en = "Sunken Treasure",
 			es = "Tesoro hundido",
@@ -13765,6 +19276,7 @@ root("ObjectDB", {
 	},
 	[220901] = {
 		readable = "Gleaming Treasure Chest",
+		model = 629720,
 		text = {
 			en = "Gleaming Treasure Chest",
 			es = "Cofre del tesoro reluciente",
@@ -13779,6 +19291,7 @@ root("ObjectDB", {
 	},
 	[220902] = {
 		readable = "Rope-Bound Treasure Chest",
+		model = 446675,
 		text = {
 			en = "Rope-Bound Treasure Chest",
 			es = "Cofre del tesoro atado con cuerda",
@@ -13793,6 +19306,7 @@ root("ObjectDB", {
 	},
 	[220903] = {
 		readable = "Gleaming Crane Statue",
+		model = 622749,
 		text = {
 			en = "Gleaming Crane Statue",
 			es = "Estatua de la Grulla reluciente",
@@ -13807,6 +19321,7 @@ root("ObjectDB", {
 	},
 	[220986] = {
 		readable = "Blackguard's Jetsam",
+		model = 629720,
 		text = {
 			en = "Blackguard's Jetsam",
 			es = "Trastos del Guardanegro",
@@ -13821,6 +19336,7 @@ root("ObjectDB", {
 	},
 	[221036] = {
 		readable = "Gleaming Treasure Satchel",
+		model = 198990,
 		text = {
 			en = "Gleaming Treasure Satchel",
 			es = "Cartera del tesoro reluciente",
@@ -13836,6 +19352,7 @@ root("ObjectDB", {
 	[221376] = {
 		readable = "Old Sign Fragment",
 		icon = "Interface/Icons/INV_Misc_StoneTablet_05",
+		model = 604364,
 		text = {
 			en = "Old Sign Fragment",
 			es = "Fragmento de cartel viejo",
@@ -13866,6 +19383,7 @@ root("ObjectDB", {
 	},
 	[221617] = {
 		readable = "Skull-Covered Chest",
+		model = 321453,
 		text = {
 			en = "Skull-Covered Chest",
 			es = "Cofre adornado de calaveras",
@@ -13880,6 +19398,7 @@ root("ObjectDB", {
 	},
 	[221670] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -13894,6 +19413,7 @@ root("ObjectDB", {
 	},
 	[221671] = {
 		readable = "Sturdy Chest",
+		model = 446671,
 		text = {
 			en = "Sturdy Chest",
 			es = "Cofre robusto",
@@ -13908,6 +19428,7 @@ root("ObjectDB", {
 	},
 	[221672] = {
 		readable = "Smoldering Chest",
+		model = 519955,
 		text = {
 			en = "Smoldering Chest",
 			es = "Cofre humeante",
@@ -13922,6 +19443,7 @@ root("ObjectDB", {
 	},
 	[221673] = {
 		readable = "Blazing Chest",
+		model = 519955,
 		text = {
 			en = "Blazing Chest",
 			es = "Cofre llameante",
@@ -13968,6 +19490,7 @@ root("ObjectDB", {
 	},
 	[223084] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -13982,6 +19505,7 @@ root("ObjectDB", {
 	},
 	[223085] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -13996,6 +19520,7 @@ root("ObjectDB", {
 	},
 	[223086] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14010,6 +19535,7 @@ root("ObjectDB", {
 	},
 	[223087] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14024,6 +19550,7 @@ root("ObjectDB", {
 	},
 	[223088] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14038,6 +19565,7 @@ root("ObjectDB", {
 	},
 	[223089] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14052,6 +19580,7 @@ root("ObjectDB", {
 	},
 	[223090] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14066,6 +19595,7 @@ root("ObjectDB", {
 	},
 	[223091] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14080,6 +19610,7 @@ root("ObjectDB", {
 	},
 	[223092] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14094,6 +19625,7 @@ root("ObjectDB", {
 	},
 	[223093] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14108,6 +19640,7 @@ root("ObjectDB", {
 	},
 	[223094] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14122,6 +19655,7 @@ root("ObjectDB", {
 	},
 	[223095] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14136,6 +19670,7 @@ root("ObjectDB", {
 	},
 	[223096] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14150,6 +19685,7 @@ root("ObjectDB", {
 	},
 	[223097] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14164,6 +19700,7 @@ root("ObjectDB", {
 	},
 	[223098] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14178,6 +19715,7 @@ root("ObjectDB", {
 	},
 	[223099] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14192,6 +19730,7 @@ root("ObjectDB", {
 	},
 	[223100] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14206,6 +19745,7 @@ root("ObjectDB", {
 	},
 	[223101] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14220,6 +19760,7 @@ root("ObjectDB", {
 	},
 	[223102] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14234,6 +19775,7 @@ root("ObjectDB", {
 	},
 	[223103] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14248,6 +19790,7 @@ root("ObjectDB", {
 	},
 	[223104] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14262,6 +19805,7 @@ root("ObjectDB", {
 	},
 	[223105] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14276,6 +19820,7 @@ root("ObjectDB", {
 	},
 	[223106] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14290,6 +19835,7 @@ root("ObjectDB", {
 	},
 	[223107] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14304,6 +19850,7 @@ root("ObjectDB", {
 	},
 	[223108] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14318,6 +19865,7 @@ root("ObjectDB", {
 	},
 	[223109] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14332,6 +19880,7 @@ root("ObjectDB", {
 	},
 	[223110] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14346,6 +19895,7 @@ root("ObjectDB", {
 	},
 	[223111] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14360,6 +19910,7 @@ root("ObjectDB", {
 	},
 	[223112] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14374,6 +19925,7 @@ root("ObjectDB", {
 	},
 	[223113] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14388,6 +19940,7 @@ root("ObjectDB", {
 	},
 	[223114] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14402,6 +19955,7 @@ root("ObjectDB", {
 	},
 	[223115] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14416,6 +19970,7 @@ root("ObjectDB", {
 	},
 	[223116] = {
 		readable = "Sturdy Chest",
+		model = 446671,
 		text = {
 			en = "Sturdy Chest",
 			es = "Cofre robusto",
@@ -14430,6 +19985,7 @@ root("ObjectDB", {
 	},
 	[223117] = {
 		readable = "Sturdy Chest",
+		model = 446671,
 		text = {
 			en = "Sturdy Chest",
 			es = "Cofre robusto",
@@ -14444,6 +20000,7 @@ root("ObjectDB", {
 	},
 	[223118] = {
 		readable = "Sturdy Chest",
+		model = 446671,
 		text = {
 			en = "Sturdy Chest",
 			es = "Cofre robusto",
@@ -14458,6 +20015,7 @@ root("ObjectDB", {
 	},
 	[223119] = {
 		readable = "Smoldering Chest",
+		model = 519955,
 		text = {
 			en = "Smoldering Chest",
 			es = "Cofre humeante",
@@ -14472,6 +20030,7 @@ root("ObjectDB", {
 	},
 	[223204] = {
 		readable = "Moss-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Moss-Covered Chest",
 			es = "Cofre cubierto de musgo",
@@ -14486,6 +20045,7 @@ root("ObjectDB", {
 	},
 	[223533] = {
 		readable = "Peaceful Offering",
+		model = 850533,
 		text = {
 			en = "Peaceful Offering",
 			es = "Ofrenda pacífica",
@@ -14501,6 +20061,7 @@ root("ObjectDB", {
 	[224228] = {
 		readable = "Bubbling Cauldron",
 		icon = "Interface/Icons/INV_Alchemy_70_Cauldron",
+		model = 200949,
 		text = {
 			en = "Bubbling Cauldron",
 			es = "Caldera burbujeante",
@@ -14515,6 +20076,7 @@ root("ObjectDB", {
 	},
 	[224306] = {
 		readable = "Broken Chains",
+		model = 875607,
 		text = {
 			en = "Broken Chains",
 			es = "Cadenas rotas",
@@ -14529,6 +20091,7 @@ root("ObjectDB", {
 	},
 	[224392] = {
 		readable = "Slave's Stash",
+		model = 878856,
 		text = {
 			en = "Slave's Stash",
 			es = "Alijo de esclavo",
@@ -14543,6 +20106,7 @@ root("ObjectDB", {
 	},
 	[224613] = {
 		readable = "Spectator's Chest",
+		model = 200960,
 		text = {
 			en = "Spectator's Chest",
 			es = "Cofre de espectador",
@@ -14557,6 +20121,7 @@ root("ObjectDB", {
 	},
 	[224616] = {
 		readable = "Obsidian Petroglyph",
+		model = 917936,
 		text = {
 			en = "Obsidian Petroglyph",
 			es = "Petroglifo obsidiana",
@@ -14565,12 +20130,14 @@ root("ObjectDB", {
 			it = "Petroglifo d'Ossidiana",
 			pt = "Petroglifo de Obsidiana",
 			ru = "Обсидиановый петроглиф",
+			ko = "[Obsidian Petroglyph]",
 			cn = "黑曜石岩画",
 		},
 	},
 	[224623] = {
 		readable = "Wiggling Egg",
 		icon = "Interface/Icons/INV_Egg_06",
+		model = 661112,
 		text = {
 			en = "Wiggling Egg",
 			es = "Huevo inquieto",
@@ -14585,6 +20152,7 @@ root("ObjectDB", {
 	},
 	[224633] = {
 		readable = "Iron Horde Supplies",
+		model = 878880,
 		text = {
 			en = "Iron Horde Supplies",
 			es = "Suministros de la Horda de Hierro",
@@ -14600,17 +20168,22 @@ root("ObjectDB", {
 	[224686] = {
 		readable = "Devourer's Gutstone",
 		icon = "Interface/Icons/INV_Elemental_Primal_Fire",
+		model = 521770,
 		text = {
 			en = "Devourer's Gutstone",
+			es = "[Devourer's Gutstone]",
 			de = "Devourer's Gutstone",
 			fr = "Pierrentraille du Dévoreur",
 			it = "Calcolo del Divoratore",
 			pt = "Destripadora do Devorador",
 			ru = "Devourer's Gutstone",
+			ko = "[Devourer's Gutstone]",
+			cn = "[Devourer's Gutstone]",
 		},
 	},
 	[224713] = {
 		readable = "Cragmaul Cache",
+		model = 446679,
 		text = {
 			en = "Cragmaul Cache",
 			es = "Alijo de Destruyerriscos",
@@ -14626,6 +20199,7 @@ root("ObjectDB", {
 	[224750] = {
 		readable = "Hanging Satchel",
 		icon = "Interface/Icons/INV_Misc_Bag_13",
+		model = 198990,
 		text = {
 			en = "Hanging Satchel",
 			es = "Bolso colgante",
@@ -14640,6 +20214,7 @@ root("ObjectDB", {
 	},
 	[224753] = {
 		readable = "Scaly Rylak Egg",
+		model = 1003210,
 		text = {
 			en = "Scaly Rylak Egg",
 			es = "Huevo de rylak escamoso",
@@ -14655,6 +20230,7 @@ root("ObjectDB", {
 	[224754] = {
 		readable = "Waterlogged Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest05b",
+		model = 196976,
 		text = {
 			en = "Waterlogged Chest",
 			es = "Cofre encharcado",
@@ -14663,12 +20239,14 @@ root("ObjectDB", {
 			it = "Cassa Fradicia",
 			pt = "Baú Encharcado",
 			ru = "Отсыревший сундук",
+			ko = "[Waterlogged Chest]",
 			cn = "浸水的箱子",
 		},
 	},
 	[224755] = {
 		readable = "Iron Horde Tribute",
 		icon = "Interface/Icons/inv_misc_treasurechest03c",
+		model = 953811,
 		text = {
 			en = "Iron Horde Tribute",
 			es = "Tributo de la Horda de Hierro",
@@ -14683,6 +20261,7 @@ root("ObjectDB", {
 	},
 	[224756] = {
 		readable = "Alchemist's Satchel",
+		model = 987264,
 		text = {
 			en = "Alchemist's Satchel",
 			es = "Bolsa de alquimista",
@@ -14697,6 +20276,7 @@ root("ObjectDB", {
 	},
 	[224770] = {
 		readable = "Shadowmoon Exile Treasure",
+		model = 196988,
 		text = {
 			en = "Shadowmoon Exile Treasure",
 			es = "Tesoro de exiliado Sombraluna",
@@ -14712,6 +20292,7 @@ root("ObjectDB", {
 	[224780] = {
 		readable = "Shadowmoon Sacrificial Dagger",
 		icon = "Interface/Icons/INV_ThrowingKnife_01",
+		model = 202935,
 		text = {
 			en = "Shadowmoon Sacrificial Dagger",
 			es = "Daga de sacrificios Sombraluna",
@@ -14726,6 +20307,7 @@ root("ObjectDB", {
 	},
 	[224781] = {
 		readable = "Rotting Basket",
+		model = 197063,
 		text = {
 			en = "Rotting Basket",
 			es = "Cesta podrida",
@@ -14740,6 +20322,7 @@ root("ObjectDB", {
 	},
 	[224783] = {
 		readable = "False-Bottomed Jar",
+		model = 875134,
 		text = {
 			en = "False-Bottomed Jar",
 			es = "Tarro con fondo falso",
@@ -14755,6 +20338,7 @@ root("ObjectDB", {
 	[224784] = {
 		readable = "Vindicator's Cache",
 		icon = "Interface/Icons/inv_misc_diachest01",
+		model = 875132,
 		text = {
 			en = "Vindicator's Cache",
 			es = "Alijo de vindicador",
@@ -14770,6 +20354,7 @@ root("ObjectDB", {
 	[224785] = {
 		readable = "Demonic Cache",
 		icon = "Interface/Icons/inv_misc_treasurechest03d",
+		model = 512025,
 		text = {
 			en = "Demonic Cache",
 			es = "Alijo demoníaco",
@@ -14784,6 +20369,7 @@ root("ObjectDB", {
 	},
 	[225501] = {
 		readable = "Peaceful Offering",
+		model = 197063,
 		text = {
 			en = "Peaceful Offering",
 			es = "Ofrenda pacífica",
@@ -14798,6 +20384,7 @@ root("ObjectDB", {
 	},
 	[225502] = {
 		readable = "Peaceful Offering",
+		model = 850842,
 		text = {
 			en = "Peaceful Offering",
 			es = "Ofrenda pacífica",
@@ -14812,6 +20399,7 @@ root("ObjectDB", {
 	},
 	[225503] = {
 		readable = "Peaceful Offering",
+		model = 197063,
 		text = {
 			en = "Peaceful Offering",
 			es = "Ofrenda pacífica",
@@ -14827,20 +20415,30 @@ root("ObjectDB", {
 	[226468] = {
 		readable = "Buffeting Galefury",
 		icon = "Interface/Icons/trade_archaeology_nerubian_obelisk",
+		model = 977179,
 		text = {
-			en = [[~GetSpellInfo(155344)]],
+			en = "Buffeting Galefury",
+			es = "Piedra de chamán Lobo Gélido",
+			de = "Schamanenstein der Frostwölfe",
+			fr = "Pierre chamanique de Loup-de-Givre",
+			it = "Pietra Sciamanica dei Lupi Bianchi",
+			pt = "Pedra Xamânica dos Lobos do Gelo",
+			ru = "Камень шаманов из клана Северного Волка",
+			ko = "서리늑대 주술석",
+			cn = "霜狼萨满之石",
 		},
 	},
 	[226469] = {
 		readable = "Spirit of the Wolf",
 		icon = "Interface/Icons/trade_archaeology_nerubian_obelisk",
 		text = {
-			en = [[~GetSpellInfo(154259)]],
+			en = "Spirit of the Wolf",
 		},
 	},
 	[226831] = {
 		readable = "Astrologer's Box",
 		icon = "Interface/Icons/Garrison_BronzeChest",
+		model = 875132,
 		text = {
 			en = "Astrologer's Box",
 			es = "Caja de astrólogo",
@@ -14856,6 +20454,7 @@ root("ObjectDB", {
 	[226854] = {
 		readable = "Armored Elekk Tusk",
 		icon = "Interface/Icons/INV_Misc_Bone_02",
+		model = 194275,
 		text = {
 			en = "Armored Elekk Tusk",
 			es = "Colmillo de elekk acorazado",
@@ -14870,6 +20469,7 @@ root("ObjectDB", {
 	},
 	[226861] = {
 		readable = "Ronokk's Belongings",
+		model = 196988,
 		text = {
 			en = "Ronokk's Belongings",
 			es = "Pertenencias de Ronokk",
@@ -14885,6 +20485,7 @@ root("ObjectDB", {
 	[226862] = {
 		readable = "Giant Moonwillow Cone",
 		icon = "Interface/Icons/INV_Misc_Herb_TeroconeLeaf",
+		model = 588947,
 		text = {
 			en = "Giant Moonwillow Cone",
 			es = "Cono de sauce lunar gigante",
@@ -14899,6 +20500,7 @@ root("ObjectDB", {
 	},
 	[226865] = {
 		readable = "Cargo of the Raven Queen",
+		model = 875132,
 		text = {
 			en = "Cargo of the Raven Queen",
 			es = "Cargamento de la reina de los cuervos",
@@ -14914,6 +20516,7 @@ root("ObjectDB", {
 	[226955] = {
 		readable = "Arena Master's War Horn",
 		icon = "Interface/Icons/inv_misc_horn_01",
+		model = 252302,
 		text = {
 			en = "Arena Master's War Horn",
 			es = "Cuerno de guerra de maestro de arena",
@@ -14929,6 +20532,7 @@ root("ObjectDB", {
 	[226956] = {
 		readable = "Mysterious Fruit Pile",
 		icon = "Interface/Icons/INV_Misc_Basket_03",
+		model = 199736,
 		text = {
 			en = "Mysterious Fruit Pile",
 			es = "Montón de fruta misteriosa",
@@ -14943,6 +20547,7 @@ root("ObjectDB", {
 	},
 	[226961] = {
 		readable = "Bounty Board",
+		model = 199473,
 		text = {
 			en = "Bounty Board",
 			es = "Tablón de recompensas",
@@ -14974,6 +20579,7 @@ root("ObjectDB", {
 	[226976] = {
 		readable = "Deceptia's Smoldering Boots",
 		icon = "Interface/Icons/INV_Boots_Robe_RaidMage_I_01",
+		model = 936403,
 		text = {
 			en = "Deceptia's Smoldering Boots",
 			es = "Botas humeantes de Decepcia",
@@ -14988,6 +20594,7 @@ root("ObjectDB", {
 	},
 	[226983] = {
 		readable = "Crag-Leaper's Cache",
+		model = 446677,
 		text = {
 			en = "Crag-Leaper's Cache",
 			es = "Alijo de saltador de riscos",
@@ -15002,6 +20609,7 @@ root("ObjectDB", {
 	},
 	[226990] = {
 		readable = "Supply Dump",
+		model = 446671,
 		text = {
 			en = "Supply Dump",
 			es = "Descarga de suministros",
@@ -15016,6 +20624,7 @@ root("ObjectDB", {
 	},
 	[226993] = {
 		readable = "Survivalist's Cache",
+		model = 878856,
 		text = {
 			en = "Survivalist's Cache",
 			es = "Alijo de superviviente",
@@ -15030,6 +20639,7 @@ root("ObjectDB", {
 	},
 	[226994] = {
 		readable = "Grimfrost Treasure",
+		model = 446679,
 		text = {
 			en = "Grimfrost Treasure",
 			es = "Tesoro de Siniescarcha",
@@ -15044,6 +20654,7 @@ root("ObjectDB", {
 	},
 	[226996] = {
 		readable = "Goren Leftovers",
+		model = 341989,
 		text = {
 			en = "Goren Leftovers",
 			es = "Sobras de goren",
@@ -15058,6 +20669,7 @@ root("ObjectDB", {
 	},
 	[227134] = {
 		readable = "Iron Horde Cargo Shipment",
+		model = 446673,
 		text = {
 			en = "Iron Horde Cargo Shipment",
 			es = "Envío de cargamento de la Horda de Hierro",
@@ -15072,6 +20684,7 @@ root("ObjectDB", {
 	},
 	[227504] = {
 		readable = "Barbed Thunderlord Spear",
+		model = 511490,
 		text = {
 			en = "Barbed Thunderlord Spear",
 			es = "Lanza dentada Señor del Trueno",
@@ -15086,6 +20699,7 @@ root("ObjectDB", {
 	},
 	[227527] = {
 		readable = "Lightbearer",
+		model = 922570,
 		text = {
 			en = "Lightbearer",
 			es = "Portador de la Luz",
@@ -15100,6 +20714,7 @@ root("ObjectDB", {
 	},
 	[227587] = {
 		readable = "Yuuri's Gift",
+		model = 875132,
 		text = {
 			en = "Yuuri's Gift",
 			es = "Regalo de Yuuri",
@@ -15108,12 +20723,14 @@ root("ObjectDB", {
 			it = "Dono di Yuuri",
 			pt = "Presente de Yuuri",
 			ru = "Подарок Юури",
+			ko = "[Yuuri's Gift]",
 			cn = "尤里的礼物",
 		},
 	},
 	[227654] = {
 		readable = "Bonechewer Spear",
 		icon = "Interface/Icons/INV_Spear_05",
+		model = 201060,
 		text = {
 			en = "Bonechewer Spear",
 			es = "Lanza Mascahuesos",
@@ -15128,6 +20745,7 @@ root("ObjectDB", {
 	},
 	[227743] = {
 		readable = "Fantastic Fish",
+		model = 575425,
 		text = {
 			en = "Fantastic Fish",
 			es = "Pescado fantástico",
@@ -15143,6 +20761,7 @@ root("ObjectDB", {
 	[227793] = {
 		readable = "Aarko's Family Treasure",
 		icon = "Interface/Icons/inv_misc_diachest02",
+		model = 875132,
 		text = {
 			en = "Aarko's Family Treasure",
 			es = "Tesoro familiar de Aarko",
@@ -15157,6 +20776,7 @@ root("ObjectDB", {
 	},
 	[227806] = {
 		readable = "Battle-Worn Frostwolf Banner",
+		model = 125992,
 		text = {
 			en = "Battle-Worn Frostwolf Banner",
 			es = "Estandarte Lobo Gélido desgastado por la batalla",
@@ -15172,6 +20792,7 @@ root("ObjectDB", {
 	[227859] = {
 		readable = "Hope",
 		icon = "Interface/Icons/INV_Sword_1H_Draenei_C_02",
+		model = 344274,
 		text = {
 			en = "Hope",
 			es = "Esperanza",
@@ -15197,10 +20818,12 @@ root("ObjectDB", {
 			pt = "Poça Brilhante",
 			ru = "Сверкающая лужа",
 			ko = "반짝이는 웅덩이",
+			cn = "[Sparkling Pool]",
 		},
 	},
 	[227951] = {
 		readable = "Rook's Tacklebox",
+		model = 306217,
 		text = {
 			en = "Rook's Tacklebox",
 			es = "Caja de pesca de Rook",
@@ -15215,6 +20838,7 @@ root("ObjectDB", {
 	},
 	[227953] = {
 		readable = "Jug of Aged Ironwine",
+		model = 902476,
 		text = {
 			en = "Jug of Aged Ironwine",
 			es = "Tinaja de vino férreo de crianza",
@@ -15230,6 +20854,7 @@ root("ObjectDB", {
 	[227954] = {
 		readable = "Luminous Shell",
 		icon = "Interface/Icons/INV_Misc_Shell_04",
+		model = 346121,
 		text = {
 			en = "Luminous Shell",
 			es = "Concha luminosa",
@@ -15244,6 +20869,7 @@ root("ObjectDB", {
 	},
 	[227955] = {
 		readable = "Amethyl Crystal",
+		model = 202126,
 		text = {
 			en = "Amethyl Crystal",
 			es = "Cristal Amethyl",
@@ -15259,6 +20885,7 @@ root("ObjectDB", {
 	[227956] = {
 		readable = "Foreman's Lunchbox",
 		icon = "Interface/Icons/INV_Misc_Food_Lunchbox_Silver",
+		model = 197617,
 		text = {
 			en = "Foreman's Lunchbox",
 			es = "Fiambrera de supervisor",
@@ -15274,6 +20901,7 @@ root("ObjectDB", {
 	[227996] = {
 		readable = "Curious Deathweb Egg",
 		icon = "Interface/Icons/INV_Misc_Web_01",
+		model = 915963,
 		text = {
 			en = "Curious Deathweb Egg",
 			es = "Huevo Telamuerte curioso",
@@ -15288,6 +20916,7 @@ root("ObjectDB", {
 	},
 	[227998] = {
 		readable = "Ockbar's Pack",
+		model = 936417,
 		text = {
 			en = "Ockbar's Pack",
 			es = "Bolsa de Ockbar",
@@ -15303,6 +20932,7 @@ root("ObjectDB", {
 	[228012] = {
 		readable = "Charred Sword",
 		icon = "Interface/Icons/INV_Sword_1H_PandaRaid_D_03",
+		model = 603874,
 		text = {
 			en = "Charred Sword",
 			es = "Espada chamuscada",
@@ -15317,6 +20947,7 @@ root("ObjectDB", {
 	},
 	[228013] = {
 		readable = "Farmer's Bounty",
+		model = 875378,
 		text = {
 			en = "Farmer's Bounty",
 			es = "Botín de granjero",
@@ -15331,6 +20962,7 @@ root("ObjectDB", {
 	},
 	[228014] = {
 		readable = "Relic of Aruuna",
+		model = 196988,
 		text = {
 			en = "Relic of Aruuna",
 			es = "Reliquia de Aruuna",
@@ -15346,6 +20978,7 @@ root("ObjectDB", {
 	[228015] = {
 		readable = "Iron Box",
 		icon = "Interface/Icons/inv_misc_treasurechest05b",
+		model = 196976,
 		text = {
 			en = "Iron Box",
 			es = "Caja de hierro",
@@ -15360,6 +20993,7 @@ root("ObjectDB", {
 	},
 	[228016] = {
 		readable = "Barrel of Fish",
+		model = 306201,
 		text = {
 			en = "Barrel of Fish",
 			es = "Barrica de pescado",
@@ -15374,6 +21008,7 @@ root("ObjectDB", {
 	},
 	[228017] = {
 		readable = "Draenei Weapons",
+		model = 918042,
 		text = {
 			en = "Draenei Weapons",
 			es = "Armas draenei",
@@ -15389,6 +21024,7 @@ root("ObjectDB", {
 	[228018] = {
 		readable = "Soulbinder's Reliquary",
 		icon = "Interface/Icons/INV_TreasureChest_FelfireCitadel",
+		model = 446679,
 		text = {
 			en = "Soulbinder's Reliquary",
 			es = "Relicario de vinculador de almas",
@@ -15403,6 +21039,7 @@ root("ObjectDB", {
 	},
 	[228019] = {
 		readable = "Webbed Sac",
+		model = 915961,
 		text = {
 			en = "Webbed Sac",
 			es = "Saco con tela de araña",
@@ -15417,6 +21054,7 @@ root("ObjectDB", {
 	},
 	[228020] = {
 		readable = "Relic of Telmor",
+		model = 875132,
 		text = {
 			en = "Relic of Telmor",
 			es = "Reliquia de Telmor",
@@ -15431,6 +21069,7 @@ root("ObjectDB", {
 	},
 	[228021] = {
 		readable = "Treasure of Ango'rosh",
+		model = 197063,
 		text = {
 			en = "Treasure of Ango'rosh",
 			es = "Tesoro de Ango'rosh",
@@ -15445,6 +21084,7 @@ root("ObjectDB", {
 	},
 	[228022] = {
 		readable = "Light of the Sea",
+		model = 196525,
 		text = {
 			en = "Light of the Sea",
 			es = "Luz del mar",
@@ -15459,6 +21099,7 @@ root("ObjectDB", {
 	},
 	[228023] = {
 		readable = "Bonechewer Remnants",
+		model = 196982,
 		text = {
 			en = "Bonechewer Remnants",
 			es = "Restos de Mascahuesos",
@@ -15473,6 +21114,7 @@ root("ObjectDB", {
 	},
 	[228024] = {
 		readable = "Aruuna Mining Cart",
+		model = 942492,
 		text = {
 			en = "Aruuna Mining Cart",
 			es = "Vagoneta de minería de Aruuna",
@@ -15487,6 +21129,7 @@ root("ObjectDB", {
 	},
 	[228025] = {
 		readable = "Keluu's Belongings",
+		model = 874401,
 		text = {
 			en = "Keluu's Belongings",
 			es = "Pertenencias de Keluu",
@@ -15502,6 +21145,7 @@ root("ObjectDB", {
 	[228026] = {
 		readable = "Pure Crystal Dust",
 		icon = "Interface/Icons/INV_Enchanting_WOD_dust",
+		model = 942448,
 		text = {
 			en = "Pure Crystal Dust",
 			es = "Polvo de cristal puro",
@@ -15516,6 +21160,7 @@ root("ObjectDB", {
 	},
 	[228483] = {
 		readable = "Rusted Lockbox",
+		model = 196988,
 		text = {
 			en = "Rusted Lockbox",
 			es = "Arcón oxidado",
@@ -15524,6 +21169,7 @@ root("ObjectDB", {
 			it = "Scrigno Arrugginito",
 			pt = "Cofre Enferrujado",
 			ru = "Ржавый сейф",
+			ko = "[Rusted Lockbox]",
 			cn = "生锈宝箱",
 		},
 	},
@@ -15545,6 +21191,7 @@ root("ObjectDB", {
 	},
 	[229328] = {
 		readable = "Envoy's Satchel",
+		model = 878854,
 		text = {
 			en = "Envoy's Satchel",
 			es = "Cartera del enviado",
@@ -15560,6 +21207,7 @@ root("ObjectDB", {
 	[229330] = {
 		readable = "Mysterious Ring",
 		icon = "Interface/Icons/inv_jewelry_ring_10",
+		model = 242728,
 		text = {
 			en = "Mysterious Ring",
 			es = "Anillo misterioso",
@@ -15575,6 +21223,7 @@ root("ObjectDB", {
 	[229333] = {
 		readable = "Mysterious Boots",
 		icon = "Interface/Icons/inv_boots_cloth_19",
+		model = 936403,
 		text = {
 			en = "Mysterious Boots",
 			es = "Botas misteriosas",
@@ -15590,6 +21239,7 @@ root("ObjectDB", {
 	[229354] = {
 		readable = "Bright Coin",
 		icon = "Interface/Icons/INV_Misc_Coin_17",
+		model = 916363,
 		text = {
 			en = "Bright Coin",
 			es = "Moneda brillante",
@@ -15605,6 +21255,7 @@ root("ObjectDB", {
 	[229367] = {
 		readable = "Frozen Orc Skeleton",
 		icon = "Interface/Icons/INV_Fishing_Innards_Bones",
+		model = 199674,
 		text = {
 			en = "Frozen Orc Skeleton",
 			es = "Esqueleto de orco congelado",
@@ -15613,12 +21264,14 @@ root("ObjectDB", {
 			it = "Scheletro di Orco Congelato",
 			pt = "Esqueleto de Orc Congelado",
 			ru = "Скелет замерзшего орка",
+			ko = "[Frozen Orc Skeleton]",
 			cn = "冰封的兽人骷髅",
 		},
 	},
 	[229640] = {
 		readable = "Frozen Frostwolf Axe",
 		icon = "Interface/Icons/inv_axe_1h_draenorquest95_b_01",
+		model = 879808,
 		text = {
 			en = "Frozen Frostwolf Axe",
 			es = "Hacha Lobo Gélido congelada",
@@ -15634,6 +21287,7 @@ root("ObjectDB", {
 	[230252] = {
 		readable = "Burning Pearl",
 		icon = "Interface/Icons/INV_Misc_Gem_Pearl_05",
+		model = 803621,
 		text = {
 			en = "Burning Pearl",
 			es = "Perla ardiente",
@@ -15648,6 +21302,7 @@ root("ObjectDB", {
 	},
 	[230401] = {
 		readable = "Sealed Jug",
+		model = 199192,
 		text = {
 			en = "Sealed Jug",
 			es = "Jarra sellada",
@@ -15656,11 +21311,13 @@ root("ObjectDB", {
 			it = "Vaso Sigillato",
 			pt = "Jarra Lacrada",
 			ru = "Запечатанный кувшин",
+			ko = "[Sealed Jug]",
 			cn = "密封的罐子",
 		},
 	},
 	[230402] = {
 		readable = "Lucky Coin",
+		model = 916363,
 		text = {
 			en = "Lucky Coin",
 			es = "Moneda de la suerte",
@@ -15675,6 +21332,7 @@ root("ObjectDB", {
 	},
 	[230424] = {
 		readable = "Snow-Covered Strongbox",
+		model = 197617,
 		text = {
 			en = "Snow-Covered Strongbox",
 			es = "Caja fuerte cubierta de nieve",
@@ -15690,6 +21348,7 @@ root("ObjectDB", {
 	[230425] = {
 		readable = "Gnawed Bone",
 		icon = "Interface/Icons/inv_misc_monsterfang_01",
+		model = 203724,
 		text = {
 			en = "Gnawed Bone",
 			es = "Hueso mordisqueado",
@@ -15704,6 +21363,7 @@ root("ObjectDB", {
 	},
 	[230428] = {
 		readable = "Smoldering True Iron Deposit",
+		model = 984398,
 		text = {
 			en = "Smoldering True Iron Deposit",
 			es = "Depósito de verahierro humeante",
@@ -15719,12 +21379,22 @@ root("ObjectDB", {
 	[230544] = {
 		readable = "Touched By Ice",
 		icon = "Interface/Icons/trade_archaeology_nerubian_obelisk",
+		model = 977179,
 		text = {
-			en = [[~GetSpellInfo(155334)]],
+			en = "Touched By Ice",
+			es = "Piedra de chamán Lobo Gélido",
+			de = "Schamanenstein der Frostwölfe",
+			fr = "Pierre chamanique de Loup-de-Givre",
+			it = "Pietra Sciamanica dei Lupi Bianchi",
+			pt = "Pedra Xamânica dos Lobos do Gelo",
+			ru = "Камень шаманов из клана Северного Волка",
+			ko = "서리늑대 주술석",
+			cn = "霜狼萨满之石",
 		},
 	},
 	[230611] = {
 		readable = "Pale Loot Sack",
+		model = 874401,
 		text = {
 			en = "Pale Loot Sack",
 			es = "Saco de botín de pálido",
@@ -15755,6 +21425,7 @@ root("ObjectDB", {
 	},
 	[230664] = {
 		readable = "The Crystal Blade of Torvath",
+		model = 370669,
 		text = {
 			en = "The Crystal Blade of Torvath",
 			es = "Espada de cristal de Torvath",
@@ -15769,6 +21440,7 @@ root("ObjectDB", {
 	},
 	[230865] = {
 		readable = "List of Ingredients",
+		model = 936419,
 		text = {
 			en = "List of Ingredients",
 			es = "Lista de ingredientes",
@@ -15783,6 +21455,7 @@ root("ObjectDB", {
 	},
 	[230909] = {
 		readable = "Forgotten Supplies",
+		model = 579113,
 		text = {
 			en = "Forgotten Supplies",
 			es = "Suministros olvidados",
@@ -15797,6 +21470,7 @@ root("ObjectDB", {
 	},
 	[231063] = {
 		readable = "Lady Sena's Materials Stash",
+		model = 774867,
 		text = {
 			en = "Lady Sena's Materials Stash",
 			es = "Alijo de materiales de lady Sena",
@@ -15811,6 +21485,7 @@ root("ObjectDB", {
 	},
 	[231064] = {
 		readable = "Lady Sena's Other Materials Stash",
+		model = 943615,
 		text = {
 			en = "Lady Sena's Other Materials Stash",
 			es = "Alijo de otros materiales de lady Sena",
@@ -15826,6 +21501,7 @@ root("ObjectDB", {
 	[231069] = {
 		readable = "Strange Looking Dagger",
 		icon = "Interface/Icons/inv_knife_1h_draenorquest_b_01",
+		model = 202935,
 		text = {
 			en = "Strange Looking Dagger",
 			es = "Daga de apariencia rara",
@@ -15840,6 +21516,7 @@ root("ObjectDB", {
 	},
 	[231100] = {
 		readable = "Icevine",
+		model = 796119,
 		text = {
 			en = "Icevine",
 			es = "Ramafría",
@@ -15854,6 +21531,7 @@ root("ObjectDB", {
 	},
 	[231103] = {
 		readable = "Raided Loot",
+		model = 446673,
 		text = {
 			en = "Raided Loot",
 			es = "Botín saqueado",
@@ -15868,6 +21546,7 @@ root("ObjectDB", {
 	},
 	[231644] = {
 		readable = "Horned Skull",
+		model = 607307,
 		text = {
 			en = "Horned Skull",
 			es = "Cráneo cornudo",
@@ -15882,6 +21561,7 @@ root("ObjectDB", {
 	},
 	[231903] = {
 		readable = "Razzlebeard's Report",
+		model = 382932,
 		text = {
 			en = "Razzlebeard's Report",
 			es = "Informe de Barbarranda",
@@ -15896,6 +21576,7 @@ root("ObjectDB", {
 	},
 	[231918] = {
 		readable = "Laanda's Scroll",
+		model = 916168,
 		text = {
 			en = "Laanda's Scroll",
 			es = "Pergamino de Laanda",
@@ -15910,6 +21591,7 @@ root("ObjectDB", {
 	},
 	[232066] = {
 		readable = "Sunken Treasure",
+		model = 446671,
 		text = {
 			en = "Sunken Treasure",
 			es = "Tesoro hundido",
@@ -15924,6 +21606,7 @@ root("ObjectDB", {
 	},
 	[232067] = {
 		readable = "Stolen Treasure",
+		model = 875132,
 		text = {
 			en = "Stolen Treasure",
 			es = "Tesoro robado",
@@ -15938,6 +21621,7 @@ root("ObjectDB", {
 	},
 	[232090] = {
 		readable = "Spark's Stolen Supplies",
+		model = 446671,
 		text = {
 			en = "Spark's Stolen Supplies",
 			es = "Suministros robados de Centella",
@@ -15953,6 +21637,7 @@ root("ObjectDB", {
 	[232214] = {
 		readable = "Ogre Booty",
 		icon = "Interface/Icons/inv_misc_treasurechest04b",
+		model = 446673,
 		text = {
 			en = "Ogre Booty",
 			es = "Botín ogro",
@@ -15968,6 +21653,7 @@ root("ObjectDB", {
 	[232215] = {
 		readable = "Gorr'thogg's Personal Reserve",
 		icon = "Interface/Icons/inv_misc_treasurechest04b",
+		model = 446673,
 		text = {
 			en = "Gorr'thogg's Personal Reserve",
 			es = "Reserva personal de Gorr'thog",
@@ -15983,6 +21669,7 @@ root("ObjectDB", {
 	[232216] = {
 		readable = "Ogre Booty",
 		icon = "Interface/Icons/inv_misc_treasurechest04b",
+		model = 446673,
 		text = {
 			en = "Ogre Booty",
 			es = "Botín ogro",
@@ -15998,6 +21685,7 @@ root("ObjectDB", {
 	[232217] = {
 		readable = "Ogre Booty",
 		icon = "Interface/Icons/inv_misc_treasurechest04b",
+		model = 446673,
 		text = {
 			en = "Ogre Booty",
 			es = "Botín ogro",
@@ -16013,6 +21701,7 @@ root("ObjectDB", {
 	[232218] = {
 		readable = "Doorog's Secret Stash",
 		icon = "Interface/Icons/inv_misc_treasurechest04b",
+		model = 446671,
 		text = {
 			en = "Doorog's Secret Stash",
 			es = "Alijo secreto de Doorog",
@@ -16028,6 +21717,7 @@ root("ObjectDB", {
 	[232219] = {
 		readable = "Ogre Booty",
 		icon = "Interface/Icons/inv_misc_treasurechest04b",
+		model = 446673,
 		text = {
 			en = "Ogre Booty",
 			es = "Botín ogro",
@@ -16043,6 +21733,7 @@ root("ObjectDB", {
 	[232237] = {
 		readable = "Ogre Booty",
 		icon = "Interface/Icons/inv_misc_treasurechest04b",
+		model = 446673,
 		text = {
 			en = "Ogre Booty",
 			es = "Botín ogro",
@@ -16057,6 +21748,7 @@ root("ObjectDB", {
 	},
 	[232248] = {
 		readable = "Pippers' Buried Supplies",
+		model = 189528,
 		text = {
 			en = "Pippers' Buried Supplies",
 			es = "Suministros enterrados de Pippers",
@@ -16071,6 +21763,7 @@ root("ObjectDB", {
 	},
 	[232250] = {
 		readable = "Pippers' Buried Supplies",
+		model = 189528,
 		text = {
 			en = "Pippers' Buried Supplies",
 			es = "Suministros enterrados de Pippers",
@@ -16085,6 +21778,7 @@ root("ObjectDB", {
 	},
 	[232251] = {
 		readable = "Pippers' Buried Supplies",
+		model = 189528,
 		text = {
 			en = "Pippers' Buried Supplies",
 			es = "Suministros enterrados de Pippers",
@@ -16099,6 +21793,7 @@ root("ObjectDB", {
 	},
 	[232252] = {
 		readable = "Pippers' Buried Supplies",
+		model = 189528,
 		text = {
 			en = "Pippers' Buried Supplies",
 			es = "Suministros enterrados de Pippers",
@@ -16113,6 +21808,7 @@ root("ObjectDB", {
 	},
 	[232397] = {
 		readable = "Bulletin Board",
+		model = 944386,
 		text = {
 			en = "Bulletin Board",
 			es = "Tablón de anuncios",
@@ -16127,6 +21823,7 @@ root("ObjectDB", {
 	},
 	[232398] = {
 		readable = "Bulletin Board",
+		model = 944386,
 		text = {
 			en = "Bulletin Board",
 			es = "Tablón de recompensas",
@@ -16141,6 +21838,7 @@ root("ObjectDB", {
 	},
 	[232400] = {
 		readable = "Bulletin Board",
+		model = 944386,
 		text = {
 			en = "Bulletin Board",
 			es = "Tablón de anuncios",
@@ -16156,6 +21854,7 @@ root("ObjectDB", {
 	[232406] = {
 		readable = "Adventurer's Pack",
 		icon = "Interface/Icons/INV_Misc_Bag_08",
+		model = 936415,
 		text = {
 			en = "Adventurer's Pack",
 			es = "Mochila de aventurero",
@@ -16164,11 +21863,13 @@ root("ObjectDB", {
 			it = "Zaino dell'Avventuriero",
 			pt = "Kit do Aventureiro",
 			ru = "Сумка искателя приключений",
+			ko = "[Adventurer's Pack]",
 			cn = "冒险者的包裹",
 		},
 	},
 	[232416] = {
 		readable = "Command Board",
+		model = 429104,
 		text = {
 			en = "Command Board",
 			es = "Tablón de mando",
@@ -16183,6 +21884,7 @@ root("ObjectDB", {
 	},
 	[232458] = {
 		readable = "Nizzix's Chest",
+		model = 446677,
 		text = {
 			en = "Nizzix's Chest",
 			es = "Cofre de Nizzix",
@@ -16197,6 +21899,7 @@ root("ObjectDB", {
 	},
 	[232492] = {
 		readable = "Doomshot",
+		model = 1020152,
 		text = {
 			en = "Doomshot",
 			es = "Tiro maldito",
@@ -16211,6 +21914,7 @@ root("ObjectDB", {
 	},
 	[232494] = {
 		readable = "Mushroom-Covered Chest",
+		model = 875132,
 		text = {
 			en = "Mushroom-Covered Chest",
 			es = "Cofre cubierto de hongos",
@@ -16225,6 +21929,7 @@ root("ObjectDB", {
 	},
 	[232507] = {
 		readable = "Lunarfall Egg",
+		model = 984888,
 		text = {
 			en = "Lunarfall Egg",
 			es = "Huevo de Bajaluna",
@@ -16240,6 +21945,7 @@ root("ObjectDB", {
 	[232546] = {
 		readable = "Ogre Booty",
 		icon = "Interface/Icons/inv_misc_treasurechest04b",
+		model = 875603,
 		text = {
 			en = "Ogre Booty",
 			es = "Botín ogro",
@@ -16255,6 +21961,7 @@ root("ObjectDB", {
 	[232547] = {
 		readable = "Ogre Booty",
 		icon = "Interface/Icons/inv_misc_treasurechest04b",
+		model = 875603,
 		text = {
 			en = "Ogre Booty",
 			es = "Botín ogro",
@@ -16270,6 +21977,7 @@ root("ObjectDB", {
 	[232549] = {
 		readable = "Ogre Booty",
 		icon = "Interface/Icons/inv_misc_treasurechest04b",
+		model = 875614,
 		text = {
 			en = "Ogre Booty",
 			es = "Botín ogro",
@@ -16285,6 +21993,7 @@ root("ObjectDB", {
 	[232550] = {
 		readable = "Ogre Booty",
 		icon = "Interface/Icons/inv_misc_treasurechest04b",
+		model = 446673,
 		text = {
 			en = "Ogre Booty",
 			es = "Botín ogro",
@@ -16299,6 +22008,7 @@ root("ObjectDB", {
 	},
 	[232571] = {
 		readable = "Goblin Pack",
+		model = 936417,
 		text = {
 			en = "Goblin Pack",
 			es = "Mochila goblin",
@@ -16313,6 +22023,7 @@ root("ObjectDB", {
 	},
 	[232579] = {
 		readable = "Kaliri Egg",
+		model = 661112,
 		text = {
 			en = "Kaliri Egg",
 			es = "Huevo de kaliri",
@@ -16327,6 +22038,7 @@ root("ObjectDB", {
 	},
 	[232582] = {
 		readable = "Ashes of A'kumbo",
+		model = 983325,
 		text = {
 			en = "Ashes of A'kumbo",
 			es = "Cenizas de A'kumbo",
@@ -16341,6 +22053,7 @@ root("ObjectDB", {
 	},
 	[232583] = {
 		readable = "Carved Drinking Horn",
+		model = 940097,
 		text = {
 			en = "Carved Drinking Horn",
 			es = "Cuerno de beber tallado",
@@ -16355,6 +22068,7 @@ root("ObjectDB", {
 	},
 	[232584] = {
 		readable = "Steamwheedle Supplies",
+		model = 446677,
 		text = {
 			en = "Steamwheedle Supplies",
 			es = "Suministros de Bonvapor",
@@ -16363,12 +22077,14 @@ root("ObjectDB", {
 			it = "Rifornimenti degli Spargifumo",
 			pt = "Suprimentos de Bondebico",
 			ru = "Припасы Хитрой Шестеренки",
+			ko = "[Steamwheedle Supplies]",
 			cn = "热砂补给品",
 		},
 	},
 	[232586] = {
 		readable = "Rovo's Dagger",
 		icon = "Interface/Icons/INV_ThrowingKnife_03",
+		model = 925591,
 		text = {
 			en = "Rovo's Dagger",
 			es = "Daga de Rovo",
@@ -16384,6 +22100,7 @@ root("ObjectDB", {
 	[232587] = {
 		readable = "Uzko's Knickknacks",
 		icon = "Interface/Icons/inv_misc_chamferchest01",
+		model = 850848,
 		text = {
 			en = "Uzko's Knickknacks",
 			es = "Chismes de Uzko",
@@ -16399,6 +22116,7 @@ root("ObjectDB", {
 	[232588] = {
 		readable = "Greka's Urn",
 		icon = "Interface/Icons/INV_Misc_Urn_01",
+		model = 850535,
 		text = {
 			en = "Greka's Urn",
 			es = "Urna de Greka",
@@ -16413,6 +22131,7 @@ root("ObjectDB", {
 	},
 	[232589] = {
 		readable = "Veema's Herb Bag",
+		model = 878856,
 		text = {
 			en = "Veema's Herb Bag",
 			es = "Bolsa de hierbas de Veema",
@@ -16428,6 +22147,7 @@ root("ObjectDB", {
 	[232590] = {
 		readable = "Void-Infused Crystal",
 		icon = "Interface/Icons/INV_DataCrystal05",
+		model = 202749,
 		text = {
 			en = "Void-Infused Crystal",
 			es = "Cristal infundido por el Vacío",
@@ -16443,6 +22163,7 @@ root("ObjectDB", {
 	[232591] = {
 		readable = "Beloved's Offering",
 		icon = "Interface/Icons/INV_RoseBouquet01",
+		model = 147151,
 		text = {
 			en = "Beloved's Offering",
 			es = "Ofrenda del ser querido",
@@ -16457,6 +22178,7 @@ root("ObjectDB", {
 	},
 	[232595] = {
 		readable = "Steamwheedle Supplies",
+		model = 446675,
 		text = {
 			en = "Steamwheedle Supplies",
 			es = "Suministros de Bonvapor",
@@ -16465,12 +22187,14 @@ root("ObjectDB", {
 			it = "Rifornimenti degli Spargifumo",
 			pt = "Suprimentos de Bondebico",
 			ru = "Припасы Хитрой Шестеренки",
+			ko = "[Steamwheedle Supplies]",
 			cn = "热砂补给品",
 		},
 	},
 	[232596] = {
 		readable = "Ancestral Greataxe",
 		icon = "Interface/Icons/INV_Axe_18",
+		model = 879808,
 		text = {
 			en = "Ancestral Greataxe",
 			es = "Gran hacha ancestral",
@@ -16485,6 +22209,7 @@ root("ObjectDB", {
 	},
 	[232597] = {
 		readable = "Goblin Pack",
+		model = 936417,
 		text = {
 			en = "Goblin Pack",
 			es = "Mochila goblin",
@@ -16499,6 +22224,7 @@ root("ObjectDB", {
 	},
 	[232598] = {
 		readable = "Steamwheedle Supplies",
+		model = 446677,
 		text = {
 			en = "Steamwheedle Supplies",
 			es = "Suministros de Bonvapor",
@@ -16513,6 +22239,7 @@ root("ObjectDB", {
 	},
 	[232599] = {
 		readable = "Warsong Spoils",
+		model = 953811,
 		text = {
 			en = "Warsong Spoils",
 			es = "Botín Grito de Guerra",
@@ -16528,6 +22255,7 @@ root("ObjectDB", {
 	[232621] = {
 		readable = "Strange Spore",
 		icon = "Interface/Icons/priest_icon_chakra_blue",
+		model = 193862,
 		text = {
 			en = "Strange Spore",
 			es = "Espora extraña",
@@ -16542,6 +22270,7 @@ root("ObjectDB", {
 	},
 	[232624] = {
 		readable = "Mikkal's Chest",
+		model = 875132,
 		text = {
 			en = "Mikkal's Chest",
 			es = "Cofre de Mikkal",
@@ -16556,6 +22285,7 @@ root("ObjectDB", {
 	},
 	[232985] = {
 		readable = "Steamwheedle Supplies",
+		model = 977078,
 		text = {
 			en = "Steamwheedle Supplies",
 			es = "Suministros de Bonvapor",
@@ -16570,6 +22300,7 @@ root("ObjectDB", {
 	},
 	[232986] = {
 		readable = "Hidden Stash",
+		model = 977074,
 		text = {
 			en = "Hidden Stash",
 			es = "Alijo escondido",
@@ -16584,6 +22315,7 @@ root("ObjectDB", {
 	},
 	[232989] = {
 		readable = "Basket of Arakkoa Goods",
+		model = 974209,
 		text = {
 			en = "Basket of Arakkoa Goods",
 			es = "Cesta de objetos arakkoa",
@@ -16593,10 +22325,12 @@ root("ObjectDB", {
 			pt = "Cesta de Produtos Arakkoa",
 			ru = "Корзина товаров араккоа",
 			ko = "아라코아 물품 바구니",
+			cn = "[Basket of Arakkoa Goods]",
 		},
 	},
 	[233032] = {
 		readable = "Mountain Climber's Pack",
+		model = 878854,
 		text = {
 			en = "Mountain Climber's Pack",
 			es = "Mochila de montañero",
@@ -16611,6 +22345,7 @@ root("ObjectDB", {
 	},
 	[233033] = {
 		readable = "Steamwheedle Supplies",
+		model = 878856,
 		text = {
 			en = "Steamwheedle Supplies",
 			es = "Suministros de Bonvapor",
@@ -16625,6 +22360,7 @@ root("ObjectDB", {
 	},
 	[233034] = {
 		readable = "Steamwheedle Supplies",
+		model = 977078,
 		text = {
 			en = "Steamwheedle Supplies",
 			es = "Suministros de Bonvapor",
@@ -16639,6 +22375,7 @@ root("ObjectDB", {
 	},
 	[233044] = {
 		readable = "Fungus-Covered Chest",
+		model = 196989,
 		text = {
 			en = "Fungus-Covered Chest",
 			es = "Cofre cubierto de hongos",
@@ -16653,6 +22390,7 @@ root("ObjectDB", {
 	},
 	[233048] = {
 		readable = "Brilliant Dreampetal",
+		model = 987197,
 		text = {
 			en = "Brilliant Dreampetal",
 			es = "Pétalo de ensueño luminoso",
@@ -16667,6 +22405,7 @@ root("ObjectDB", {
 	},
 	[233052] = {
 		readable = "Steamwheedle Supplies",
+		model = 950767,
 		text = {
 			en = "Steamwheedle Supplies",
 			es = "Suministros de Bonvapor",
@@ -16681,6 +22420,7 @@ root("ObjectDB", {
 	},
 	[233079] = {
 		readable = "Appropriated Warsong Supplies",
+		model = 850517,
 		text = {
 			en = "Appropriated Warsong Supplies",
 			es = "Suministros Grito de Guerra adueñados",
@@ -16689,11 +22429,13 @@ root("ObjectDB", {
 			it = "Rifornimenti Confiscati dei Cantaguerra",
 			pt = "Suprimentos do Brado Guerreiro Apropriados",
 			ru = "Конфискованные припасы клана Песни Войны",
+			ko = "[Appropriated Warsong Supplies]",
 			cn = "偷来的战歌补给品",
 		},
 	},
 	[233101] = {
 		readable = "Sunken Fishing Boat",
+		model = 574913,
 		text = {
 			en = "Sunken Fishing Boat",
 			es = "Barco de pesca hundido",
@@ -16708,6 +22450,7 @@ root("ObjectDB", {
 	},
 	[233103] = {
 		readable = "Warsong Lockbox",
+		model = 1005490,
 		text = {
 			en = "Warsong Lockbox",
 			es = "Arcón Grito de Guerra",
@@ -16722,6 +22465,7 @@ root("ObjectDB", {
 	},
 	[233107] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -16736,6 +22480,7 @@ root("ObjectDB", {
 	},
 	[233113] = {
 		readable = "Warsong Spear",
+		model = 874421,
 		text = {
 			en = "Warsong Spear",
 			es = "Lanza Grito de Guerra",
@@ -16750,6 +22495,7 @@ root("ObjectDB", {
 	},
 	[233126] = {
 		readable = "Shadowmoon Treasure",
+		model = 512025,
 		text = {
 			en = "Shadowmoon Treasure",
 			es = "Tesoro de Sombraluna",
@@ -16764,6 +22510,7 @@ root("ObjectDB", {
 	},
 	[233132] = {
 		readable = "Freshwater Clam",
+		model = 196998,
 		text = {
 			en = "Freshwater Clam",
 			es = "Almeja de agua dulce",
@@ -16778,6 +22525,7 @@ root("ObjectDB", {
 	},
 	[233134] = {
 		readable = "Golden Kaliri Egg",
+		model = 199227,
 		text = {
 			en = "Golden Kaliri Egg",
 			es = "Huevo de kaliri dorado",
@@ -16792,6 +22540,7 @@ root("ObjectDB", {
 	},
 	[233135] = {
 		readable = "Warsong Cache",
+		model = 953811,
 		text = {
 			en = "Warsong Cache",
 			es = "Alijo Grito de Guerra",
@@ -16800,12 +22549,14 @@ root("ObjectDB", {
 			it = "Cassa dei Cantaguerra",
 			pt = "Baú do Brado Guerreiro",
 			ru = "Тайник клана Песни Войны",
+			ko = "[Warsong Cache]",
 			cn = "战歌宝箱",
 		},
 	},
 	[233137] = {
 		readable = "Burning Blade Cache",
 		icon = "Interface/Icons/INV_TreasureChest_FelfireCitadel",
+		model = 953811,
 		text = {
 			en = "Burning Blade Cache",
 			es = "Alijo del clan Filo Ardiente",
@@ -16820,6 +22571,7 @@ root("ObjectDB", {
 	},
 	[233139] = {
 		readable = "Ancient Titan Chest",
+		model = 200953,
 		text = {
 			en = "Ancient Titan Chest",
 			es = "Cofre titánico antiguo",
@@ -16834,6 +22586,7 @@ root("ObjectDB", {
 	},
 	[233149] = {
 		readable = "Laughing Skull Cache",
+		model = 874403,
 		text = {
 			en = "Laughing Skull Cache",
 			es = "Alijo Riecráneos",
@@ -16855,6 +22608,7 @@ root("ObjectDB", {
 	[233206] = {
 		readable = "Abandoned Cargo",
 		icon = "Interface/Icons/INV_Crate_01",
+		model = 875382,
 		text = {
 			en = "Abandoned Cargo",
 			es = "Cargamento abandonado",
@@ -16870,6 +22624,7 @@ root("ObjectDB", {
 	[233218] = {
 		readable = "Adventurer's Pack",
 		icon = "Interface/Icons/INV_Misc_Bag_08",
+		model = 936417,
 		text = {
 			en = "Adventurer's Pack",
 			es = "Mochila de aventurero",
@@ -16884,6 +22639,7 @@ root("ObjectDB", {
 	},
 	[233241] = {
 		readable = "Glowing Cave Mushroom",
+		model = 838776,
 		text = {
 			en = "Glowing Cave Mushroom",
 			es = "Champiñón de cueva resplandeciente",
@@ -16899,12 +22655,22 @@ root("ObjectDB", {
 	[233263] = {
 		readable = "Blessing of the Wolf",
 		icon = "Interface/Icons/trade_archaeology_nerubian_obelisk",
+		model = 200024,
 		text = {
-			en = [[~GetSpellInfo(154253)]],
+			en = "Blessing of the Wolf",
+			es = "Piedra de chamán",
+			de = "Schamanenstein",
+			fr = "Pierre chamanique",
+			it = "Pietra Sciamanica",
+			pt = "Pedra Xamânica",
+			ru = "Камень шаманов",
+			ko = "주술석",
+			cn = "萨满之石",
 		},
 	},
 	[233291] = {
 		readable = "Command Board",
+		model = 429104,
 		text = {
 			en = "Command Board",
 			es = "Tablón de mando",
@@ -16919,6 +22685,7 @@ root("ObjectDB", {
 	},
 	[233452] = {
 		readable = "A Pile of Dirt",
+		model = 189528,
 		text = {
 			en = "A Pile of Dirt",
 			es = "Un montón de tierra",
@@ -16933,6 +22700,7 @@ root("ObjectDB", {
 	},
 	[233455] = {
 		readable = "Aged Stone Container",
+		model = 446679,
 		text = {
 			en = "Aged Stone Container",
 			es = "Contenedor de piedra envejecida",
@@ -16948,6 +22716,7 @@ root("ObjectDB", {
 	[233457] = {
 		readable = "Adventurer's Staff",
 		icon = "Interface/Icons/INV_Staff_07",
+		model = 605629,
 		text = {
 			en = "Adventurer's Staff",
 			es = "Bastón del aventurero",
@@ -16962,6 +22731,7 @@ root("ObjectDB", {
 	},
 	[233492] = {
 		readable = "Elemental Offering",
+		model = 197063,
 		text = {
 			en = "Elemental Offering",
 			es = "Ofrenda elemental",
@@ -16976,6 +22746,7 @@ root("ObjectDB", {
 	},
 	[233499] = {
 		readable = "Adventurer's Sack",
+		model = 987264,
 		text = {
 			en = "Adventurer's Sack",
 			es = "Bolsa del aventurero",
@@ -16990,6 +22761,7 @@ root("ObjectDB", {
 	},
 	[233501] = {
 		readable = "Mysterious Petrified Pod",
+		model = 193027,
 		text = {
 			en = "Mysterious Petrified Pod",
 			es = "Vaina petrificada misteriosa",
@@ -17004,6 +22776,7 @@ root("ObjectDB", {
 	},
 	[233504] = {
 		readable = "Remains of Grimnir Ashpick",
+		model = 197145,
 		text = {
 			en = "Remains of Grimnir Ashpick",
 			es = "Restos de Grimnir Ashpick",
@@ -17018,6 +22791,7 @@ root("ObjectDB", {
 	},
 	[233505] = {
 		readable = "Unknown Petrified Egg",
+		model = 200964,
 		text = {
 			en = "Unknown Petrified Egg",
 			es = "Huevo petrificado desconocido",
@@ -17032,12 +22806,14 @@ root("ObjectDB", {
 	},
 	[233506] = {
 		readable = "Abu'gar's Missing Reel",
+		model = 984264,
 		text = {
 			en = "Abu'gar's Missing Reel",
 		},
 	},
 	[233507] = {
 		readable = "Forgotten Ogre Cache",
+		model = 971467,
 		text = {
 			en = "Forgotten Ogre Cache",
 			es = "Alijo ogro olvidado",
@@ -17053,6 +22829,7 @@ root("ObjectDB", {
 	[233511] = {
 		readable = "Adventurer's Pack",
 		icon = "Interface/Icons/INV_Misc_Bag_08",
+		model = 936417,
 		text = {
 			en = "Adventurer's Pack",
 			es = "Mochila de aventurero",
@@ -17067,6 +22844,7 @@ root("ObjectDB", {
 	},
 	[233513] = {
 		readable = "Forgotten Skull Cache",
+		model = 196707,
 		text = {
 			en = "Forgotten Skull Cache",
 			es = "Alijo de cráneos olvidado",
@@ -17081,6 +22859,7 @@ root("ObjectDB", {
 	},
 	[233520] = {
 		readable = "Remains of Explorer Engineer Toldirk Ashlamp",
+		model = 197145,
 		text = {
 			en = "Remains of Explorer Engineer Toldirk Ashlamp",
 			es = "Restos del explorador ingeniero Toldirk Ashlamp",
@@ -17095,6 +22874,7 @@ root("ObjectDB", {
 	},
 	[233521] = {
 		readable = "Warsong Supplies",
+		model = 977078,
 		text = {
 			en = "Warsong Supplies",
 			es = "Suministros Grito de Guerra",
@@ -17109,6 +22889,7 @@ root("ObjectDB", {
 	},
 	[233522] = {
 		readable = "Obsidian Crystal Formation",
+		model = 937012,
 		text = {
 			en = "Obsidian Crystal Formation",
 			es = "Formación de cristal de obsidiana",
@@ -17123,6 +22904,7 @@ root("ObjectDB", {
 	},
 	[233523] = {
 		readable = "Mysterious Petrified Pod",
+		model = 193027,
 		text = {
 			en = "Mysterious Petrified Pod",
 			es = "Vaina petrificada misteriosa",
@@ -17137,6 +22919,7 @@ root("ObjectDB", {
 	},
 	[233524] = {
 		readable = "Unknown Petrified Egg",
+		model = 200964,
 		text = {
 			en = "Unknown Petrified Egg",
 			es = "Huevo petrificado desconocido",
@@ -17151,6 +22934,7 @@ root("ObjectDB", {
 	},
 	[233525] = {
 		readable = "Botani Essence Seed",
+		model = 588947,
 		text = {
 			en = "Botani Essence Seed",
 			es = "Semilla de esencia botani",
@@ -17165,6 +22949,7 @@ root("ObjectDB", {
 	},
 	[233526] = {
 		readable = "Ancient Titan Chest",
+		model = 200953,
 		text = {
 			en = "Ancient Titan Chest",
 			es = "Cofre titánico antiguo",
@@ -17180,6 +22965,7 @@ root("ObjectDB", {
 	[233532] = {
 		readable = "Bone-Carved Dagger",
 		icon = "Interface/Icons/TRADE_ARCHAEOLOGY_RUSTEDSTEAKKNIFE",
+		model = 146081,
 		text = {
 			en = "Bone-Carved Dagger",
 			es = "Daga de hueso tallado",
@@ -17194,6 +22980,7 @@ root("ObjectDB", {
 	},
 	[233539] = {
 		readable = "Genedar Debris",
+		model = 193781,
 		text = {
 			en = "Genedar Debris",
 			es = "Restos del Xenedar",
@@ -17208,6 +22995,7 @@ root("ObjectDB", {
 	},
 	[233549] = {
 		readable = "Genedar Debris",
+		model = 874639,
 		text = {
 			en = "Genedar Debris",
 			es = "Restos del Xenedar",
@@ -17222,6 +23010,7 @@ root("ObjectDB", {
 	},
 	[233550] = {
 		readable = "Unknown Petrified Egg",
+		model = 200964,
 		text = {
 			en = "Unknown Petrified Egg",
 			es = "Huevo petrificado desconocido",
@@ -17236,6 +23025,7 @@ root("ObjectDB", {
 	},
 	[233551] = {
 		readable = "Genedar Debris",
+		model = 193782,
 		text = {
 			en = "Genedar Debris",
 			es = "Restos del Xenedar",
@@ -17250,6 +23040,7 @@ root("ObjectDB", {
 	},
 	[233552] = {
 		readable = "Aged Stone Container",
+		model = 446679,
 		text = {
 			en = "Aged Stone Container",
 			es = "Contenedor de piedra envejecida",
@@ -17264,6 +23055,7 @@ root("ObjectDB", {
 	},
 	[233555] = {
 		readable = "Genedar Debris",
+		model = 874639,
 		text = {
 			en = "Genedar Debris",
 			es = "Restos del Xenedar",
@@ -17278,6 +23070,7 @@ root("ObjectDB", {
 	},
 	[233557] = {
 		readable = "Genedar Debris",
+		model = 193781,
 		text = {
 			en = "Genedar Debris",
 			es = "Restos del Xenedar",
@@ -17292,6 +23085,7 @@ root("ObjectDB", {
 	},
 	[233558] = {
 		readable = "Mysterious Petrified Pod",
+		model = 193027,
 		text = {
 			en = "Mysterious Petrified Pod",
 			es = "Vaina petrificada misteriosa",
@@ -17306,6 +23100,7 @@ root("ObjectDB", {
 	},
 	[233559] = {
 		readable = "Forgotten Skull Cache",
+		model = 196707,
 		text = {
 			en = "Forgotten Skull Cache",
 			es = "Alijo de cráneos olvidado",
@@ -17321,6 +23116,7 @@ root("ObjectDB", {
 	[233560] = {
 		readable = "Fragment of Oshu'gun",
 		icon = "Interface/Icons/INV_DataCrystal07",
+		model = 196306,
 		text = {
 			en = "Fragment of Oshu'gun",
 			es = "Fragmento de Oshu'gun",
@@ -17336,6 +23132,7 @@ root("ObjectDB", {
 	[233561] = {
 		readable = "Pokkar's Thirteenth Axe",
 		icon = "Interface/Icons/INV_Axe_18",
+		model = 879808,
 		text = {
 			en = "Pokkar's Thirteenth Axe",
 			es = "Hacha número trece de Pokkar",
@@ -17351,6 +23148,7 @@ root("ObjectDB", {
 	[233593] = {
 		readable = "Polished Saberon Skull",
 		icon = "Interface/Icons/INV_Bone_Skull_04",
+		model = 979954,
 		text = {
 			en = "Polished Saberon Skull",
 			es = "Calavera de sablerón pulida",
@@ -17366,6 +23164,7 @@ root("ObjectDB", {
 	[233598] = {
 		readable = "Elemental Shackles",
 		icon = "Interface/Icons/INV_Shoulder_02",
+		model = 523381,
 		text = {
 			en = "Elemental Shackles",
 			es = "Grilletes elementales",
@@ -17381,6 +23180,7 @@ root("ObjectDB", {
 	[233611] = {
 		readable = "Highmaul Sledge",
 		icon = "Interface/Icons/INV_Hammer_03",
+		model = 875670,
 		text = {
 			en = "Highmaul Sledge",
 			es = "Almádena de Ogrópolis",
@@ -17396,6 +23196,7 @@ root("ObjectDB", {
 	[233613] = {
 		readable = "Telaar Defender Shield",
 		icon = "Interface/Icons/INV_Shield_49",
+		model = 922572,
 		text = {
 			en = "Telaar Defender Shield",
 			es = "Escudo defensor de Telaar",
@@ -17410,6 +23211,7 @@ root("ObjectDB", {
 	},
 	[233618] = {
 		readable = "Ogre Beads",
+		model = 987178,
 		text = {
 			en = "Ogre Beads",
 			es = "Abalorios de ogro",
@@ -17424,6 +23226,7 @@ root("ObjectDB", {
 	},
 	[233623] = {
 		readable = "Adventurer's Pouch",
+		model = 977078,
 		text = {
 			en = "Adventurer's Pouch",
 			es = "Faltriquera de aventurero",
@@ -17432,11 +23235,13 @@ root("ObjectDB", {
 			it = "Borsa dell'Avventuriero",
 			pt = "Bolsa do Aventureiro",
 			ru = "Кисет искателя приключений",
+			ko = "[Adventurer's Pouch]",
 			cn = "冒险者的钱袋",
 		},
 	},
 	[233626] = {
 		readable = "Grizzlemaw's Bonepile",
+		model = 376264,
 		text = {
 			en = "Grizzlemaw's Bonepile",
 			es = "Montón de huesos de Fauceparda",
@@ -17451,6 +23256,7 @@ root("ObjectDB", {
 	},
 	[233633] = {
 		readable = "Unused Wood Pile",
+		model = 943615,
 		text = {
 			en = "Unused Wood Pile",
 			es = "Montón de madera sin usar",
@@ -17465,6 +23271,7 @@ root("ObjectDB", {
 	},
 	[233642] = {
 		readable = "Abu'Gar's Favorite Lure",
+		model = 251883,
 		text = {
 			en = "Abu'Gar's Favorite Lure",
 		},
@@ -17472,6 +23279,7 @@ root("ObjectDB", {
 	[233645] = {
 		readable = "Warsong Helm",
 		icon = "Interface/Icons/INV_Helm_Misc_VikingPartyHat",
+		model = 979242,
 		text = {
 			en = "Warsong Helm",
 			es = "Yelmo Grito de Guerra",
@@ -17486,6 +23294,7 @@ root("ObjectDB", {
 	},
 	[233649] = {
 		readable = "Gambler's Purse",
+		model = 987264,
 		text = {
 			en = "Gambler's Purse",
 			es = "Bolsa de apostador",
@@ -17501,6 +23310,7 @@ root("ObjectDB", {
 	[233650] = {
 		readable = "Adventurer's Mace",
 		icon = "Interface/Icons/INV_Mace_06",
+		model = 922568,
 		text = {
 			en = "Adventurer's Mace",
 			es = "Maza de aventurero",
@@ -17516,6 +23326,7 @@ root("ObjectDB", {
 	[233651] = {
 		readable = "Lost Pendant",
 		icon = "Interface/Icons/inv_jewelry_necklace_106",
+		model = 242727,
 		text = {
 			en = "Lost Pendant",
 			es = "Colgante perdido",
@@ -17530,6 +23341,7 @@ root("ObjectDB", {
 	},
 	[233658] = {
 		readable = "Adventurer's Pouch",
+		model = 977078,
 		text = {
 			en = "Adventurer's Pouch",
 			es = "Faltriquera de aventurero",
@@ -17544,6 +23356,7 @@ root("ObjectDB", {
 	},
 	[233696] = {
 		readable = "Important Exploration Supplies",
+		model = 307721,
 		text = {
 			en = "Important Exploration Supplies",
 			es = "Suministros de exploración importantes",
@@ -17558,6 +23371,7 @@ root("ObjectDB", {
 	},
 	[233697] = {
 		readable = "Saberon Stash",
+		model = 200417,
 		text = {
 			en = "Saberon Stash",
 			es = "Alijo de sablerón",
@@ -17572,6 +23386,7 @@ root("ObjectDB", {
 	},
 	[233715] = {
 		readable = "Goldtoe's Plunder",
+		model = 446671,
 		text = {
 			en = "Goldtoe's Plunder",
 			es = "Botín de Dedo Dorado",
@@ -17580,11 +23395,13 @@ root("ObjectDB", {
 			it = "Bottino di Ditodorato",
 			pt = "Saque de Dedouro.",
 			ru = "Трофеи Золотопалого",
+			ko = "[Goldtoe's Plunder]",
 			cn = "金趾的战利品",
 		},
 	},
 	[233768] = {
 		readable = "Pale Elixir",
+		model = 892744,
 		text = {
 			en = "Pale Elixir",
 			es = "Elixir pálido",
@@ -17599,6 +23416,7 @@ root("ObjectDB", {
 	},
 	[233773] = {
 		readable = "Bag of Herbs",
+		model = 902296,
 		text = {
 			en = "Bag of Herbs",
 			es = "Bolsa de hierbas",
@@ -17614,6 +23432,7 @@ root("ObjectDB", {
 	[233792] = {
 		readable = "Pile of Rubble",
 		icon = "Interface/Icons/INV_Stone_10",
+		model = 656602,
 		text = {
 			en = "Pile of Rubble",
 			es = "Montón de escombros",
@@ -17628,6 +23447,7 @@ root("ObjectDB", {
 	},
 	[233917] = {
 		readable = "Femur of Improbability",
+		model = 376266,
 		text = {
 			en = "Femur of Improbability",
 			es = "Fémur de improbabilidad",
@@ -17642,6 +23462,7 @@ root("ObjectDB", {
 	},
 	[233956] = {
 		readable = "Bloody Blade",
+		model = 969884,
 		text = {
 			en = "Bloody Blade",
 			es = "Hoja ensangrentada",
@@ -17656,6 +23477,7 @@ root("ObjectDB", {
 	},
 	[233973] = {
 		readable = "Bounty of the Elements",
+		model = 446679,
 		text = {
 			en = "Bounty of the Elements",
 			es = "Recompensa de los elementos",
@@ -17670,6 +23492,7 @@ root("ObjectDB", {
 	},
 	[233975] = {
 		readable = "Rooby's Roo",
+		model = 1011411,
 		text = {
 			en = "Rooby's Roo",
 			es = "Roosca de Rooby",
@@ -17717,6 +23540,7 @@ root("ObjectDB", {
 	[234154] = {
 		readable = "Misplaced Scrolls",
 		icon = "Interface/Icons/trade_archaeology_silverscrollcase",
+		model = 968422,
 		text = {
 			en = "Misplaced Scrolls",
 			es = "Pergaminos extraviados",
@@ -17732,6 +23556,7 @@ root("ObjectDB", {
 	[234155] = {
 		readable = "Relics of the Outcasts",
 		icon = "Interface/Icons/achievement_dungeon_arakkoaspires",
+		model = 446675,
 		text = {
 			en = "Relics of the Outcasts",
 			es = "Reliquias de los desterrados",
@@ -17746,6 +23571,7 @@ root("ObjectDB", {
 	},
 	[234157] = {
 		readable = "Fractured Sunstone",
+		model = 985715,
 		text = {
 			en = "Fractured Sunstone",
 			es = "Piedrasol fracturada",
@@ -17760,6 +23586,7 @@ root("ObjectDB", {
 	},
 	[234159] = {
 		readable = "Lost Herb Satchel",
+		model = 902294,
 		text = {
 			en = "Lost Herb Satchel",
 			es = "Bolsa de hierbas perdida",
@@ -17774,6 +23601,7 @@ root("ObjectDB", {
 	},
 	[234432] = {
 		readable = "Ogron Plunder",
+		model = 446673,
 		text = {
 			en = "Ogron Plunder",
 			es = "Botín ogron",
@@ -17789,6 +23617,7 @@ root("ObjectDB", {
 	[234446] = {
 		readable = "Relics of the Outcasts",
 		icon = "Interface/Icons/achievement_dungeon_arakkoaspires",
+		model = 446675,
 		text = {
 			en = "Relics of the Outcasts",
 			es = "Reliquias de los desterrados",
@@ -17804,6 +23633,7 @@ root("ObjectDB", {
 	[234449] = {
 		readable = "Relics of the Outcasts",
 		icon = "Interface/Icons/achievement_dungeon_arakkoaspires",
+		model = 446675,
 		text = {
 			en = "Relics of the Outcasts",
 			es = "Reliquias de los desterrados",
@@ -17819,6 +23649,7 @@ root("ObjectDB", {
 	[234451] = {
 		readable = "Relics of the Outcasts",
 		icon = "Interface/Icons/achievement_dungeon_arakkoaspires",
+		model = 446675,
 		text = {
 			en = "Relics of the Outcasts",
 			es = "Reliquias de los desterrados",
@@ -17834,6 +23665,7 @@ root("ObjectDB", {
 	[234454] = {
 		readable = "Relics of the Outcasts",
 		icon = "Interface/Icons/achievement_dungeon_arakkoaspires",
+		model = 446675,
 		text = {
 			en = "Relics of the Outcasts",
 			es = "Reliquias de los desterrados",
@@ -17849,6 +23681,7 @@ root("ObjectDB", {
 	[234455] = {
 		readable = "Relics of the Outcasts",
 		icon = "Interface/Icons/achievement_dungeon_arakkoaspires",
+		model = 446675,
 		text = {
 			en = "Relics of the Outcasts",
 			es = "Reliquias de los desterrados",
@@ -17864,6 +23697,7 @@ root("ObjectDB", {
 	[234456] = {
 		readable = "Shattered Hand Lockbox",
 		icon = "Interface/Icons/INV_TreasureChest_FelfireCitadel",
+		model = 953811,
 		text = {
 			en = "Shattered Hand Lockbox",
 			es = "Arcón Mano Destrozada",
@@ -17878,6 +23712,7 @@ root("ObjectDB", {
 	},
 	[234458] = {
 		readable = "Shattered Hand Cache",
+		model = 878880,
 		text = {
 			en = "Shattered Hand Cache",
 			es = "Alijo Mano Destrozada",
@@ -17892,6 +23727,7 @@ root("ObjectDB", {
 	},
 	[234461] = {
 		readable = "Toxicfang Venom",
+		model = 329065,
 		text = {
 			en = "Toxicfang Venom",
 			es = "Veneno de colmillo tóxico",
@@ -17906,6 +23742,7 @@ root("ObjectDB", {
 	},
 	[234471] = {
 		readable = "Spray-O-Matic 5000 XT",
+		model = 948445,
 		text = {
 			en = "Spray-O-Matic 5000 XT",
 			es = "Rociador 5000 XT",
@@ -17920,6 +23757,7 @@ root("ObjectDB", {
 	},
 	[234472] = {
 		readable = "Sailor Zazzuk's 180-Proof Rum",
+		model = 309564,
 		text = {
 			en = "Sailor Zazzuk's 180-Proof Rum",
 			es = "Ron de 90 grados del marinero Zazzuk",
@@ -17934,6 +23772,7 @@ root("ObjectDB", {
 	},
 	[234473] = {
 		readable = "Campaign Contributions",
+		model = 446673,
 		text = {
 			en = "Campaign Contributions",
 			es = "Aportaciones de la campaña",
@@ -17948,6 +23787,7 @@ root("ObjectDB", {
 	},
 	[234474] = {
 		readable = "Saberon Stash",
+		model = 875614,
 		text = {
 			en = "Saberon Stash",
 			es = "Alijo de sablerón",
@@ -17979,6 +23819,7 @@ root("ObjectDB", {
 	[234703] = {
 		readable = "Elixir of Shadow Sight",
 		icon = "Interface/Icons/inv_potion_122",
+		model = 972295,
 		text = {
 			en = "Elixir of Shadow Sight",
 			es = "Elixir de Visión de las Sombras",
@@ -17994,6 +23835,7 @@ root("ObjectDB", {
 	[234704] = {
 		readable = "Elixir of Shadow Sight",
 		icon = "Interface/Icons/inv_potion_122",
+		model = 972295,
 		text = {
 			en = "Elixir of Shadow Sight",
 			es = "Elixir de Visión de las Sombras",
@@ -18009,6 +23851,7 @@ root("ObjectDB", {
 	[234705] = {
 		readable = "Elixir of Shadow Sight",
 		icon = "Interface/Icons/inv_potion_122",
+		model = 972295,
 		text = {
 			en = "Elixir of Shadow Sight",
 			es = "Elixir de Visión de las Sombras",
@@ -18024,6 +23867,7 @@ root("ObjectDB", {
 	[234734] = {
 		readable = "Elixir of Shadow Sight",
 		icon = "Interface/Icons/inv_potion_122",
+		model = 972295,
 		text = {
 			en = "Elixir of Shadow Sight",
 			es = "Elixir de Visión de las Sombras",
@@ -18039,6 +23883,7 @@ root("ObjectDB", {
 	[234735] = {
 		readable = "Elixir of Shadow Sight",
 		icon = "Interface/Icons/inv_potion_122",
+		model = 972295,
 		text = {
 			en = "Elixir of Shadow Sight",
 			es = "Elixir de Visión de las Sombras",
@@ -18054,6 +23899,7 @@ root("ObjectDB", {
 	[234736] = {
 		readable = "Elixir of Shadow Sight",
 		icon = "Interface/Icons/inv_potion_122",
+		model = 972295,
 		text = {
 			en = "Elixir of Shadow Sight",
 			es = "Elixir de Visión de las Sombras",
@@ -18069,6 +23915,7 @@ root("ObjectDB", {
 	[234740] = {
 		readable = "Orcish Signaling Horn",
 		icon = "Interface/Icons/INV_Misc_Horn_02",
+		model = 252302,
 		text = {
 			en = "Orcish Signaling Horn",
 			es = "Cuerno de alarma orco",
@@ -18083,6 +23930,7 @@ root("ObjectDB", {
 	},
 	[234744] = {
 		readable = "Offering to the Raven Mother",
+		model = 974209,
 		text = {
 			en = "Offering to the Raven Mother",
 			es = "Ofrenda para la Madre cuervo",
@@ -18097,6 +23945,7 @@ root("ObjectDB", {
 	},
 	[234746] = {
 		readable = "Offering to the Raven Mother",
+		model = 974209,
 		text = {
 			en = "Offering to the Raven Mother",
 			es = "Ofrenda para la Madre cuervo",
@@ -18111,6 +23960,7 @@ root("ObjectDB", {
 	},
 	[234748] = {
 		readable = "Offering to the Raven Mother",
+		model = 974209,
 		text = {
 			en = "Offering to the Raven Mother",
 			es = "Ofrenda para la Madre cuervo",
@@ -18125,6 +23975,7 @@ root("ObjectDB", {
 	},
 	[235073] = {
 		readable = "Offering to the Raven Mother",
+		model = 974209,
 		text = {
 			en = "Offering to the Raven Mother",
 			es = "Ofrenda para la Madre cuervo",
@@ -18139,6 +23990,7 @@ root("ObjectDB", {
 	},
 	[235090] = {
 		readable = "Offering to the Raven Mother",
+		model = 974209,
 		text = {
 			en = "Offering to the Raven Mother",
 			es = "Ofrenda para la Madre cuervo",
@@ -18154,6 +24006,7 @@ root("ObjectDB", {
 	[235091] = {
 		readable = "Lost Ring",
 		icon = "Interface/Icons/INV_Jewelry_Ring_03",
+		model = 242730,
 		text = {
 			en = "Lost Ring",
 			es = "Anillo extraviado",
@@ -18168,6 +24021,7 @@ root("ObjectDB", {
 	},
 	[235095] = {
 		readable = "Misplaced Scroll",
+		model = 968336,
 		text = {
 			en = "Misplaced Scroll",
 			es = "Pergamino extraviado",
@@ -18183,6 +24037,7 @@ root("ObjectDB", {
 	[235097] = {
 		readable = "Ephial's Dark Grimoire",
 		icon = "Interface/Icons/ability_warlock_ancientgrimoire",
+		model = 355500,
 		text = {
 			en = "Ephial's Dark Grimoire",
 			es = "Grimorio oscuro de Ephial",
@@ -18197,6 +24052,7 @@ root("ObjectDB", {
 	},
 	[235103] = {
 		readable = "Garrison Supplies",
+		model = 950769,
 		text = {
 			en = "Garrison Supplies",
 			es = "Suministros de la ciudadela",
@@ -18212,6 +24068,7 @@ root("ObjectDB", {
 	[235104] = {
 		readable = "Sun-Touched Cache",
 		icon = "Interface/Icons/achievement_dungeon_arakkoaspires",
+		model = 253445,
 		text = {
 			en = "Sun-Touched Cache",
 			es = "Alijo tocado por el sol",
@@ -18227,6 +24084,7 @@ root("ObjectDB", {
 	[235105] = {
 		readable = "Sun-Touched Cache",
 		icon = "Interface/Icons/achievement_dungeon_arakkoaspires",
+		model = 253445,
 		text = {
 			en = "Sun-Touched Cache",
 			es = "Alijo tocado por el sol",
@@ -18241,6 +24099,7 @@ root("ObjectDB", {
 	},
 	[235127] = {
 		readable = "Mysterious Petrified Pod",
+		model = 193027,
 		text = {
 			en = "Mysterious Petrified Pod",
 			es = "Vaina petrificada misteriosa",
@@ -18255,6 +24114,7 @@ root("ObjectDB", {
 	},
 	[235129] = {
 		readable = "Enriched Seeds",
+		model = 1033504,
 		text = {
 			en = "Enriched Seeds",
 			es = "Semillas enriquecidas",
@@ -18270,6 +24130,7 @@ root("ObjectDB", {
 	[235135] = {
 		readable = "Smuggled Apexis Artifacts",
 		icon = "Interface/Icons/achievement_dungeon_arakkoaspires",
+		model = 446677,
 		text = {
 			en = "Smuggled Apexis Artifacts",
 			es = "Artefactos apexis de contrabando",
@@ -18284,6 +24145,7 @@ root("ObjectDB", {
 	},
 	[235141] = {
 		readable = "Iron Horde Explosives",
+		model = 968120,
 		text = {
 			en = "Iron Horde Explosives",
 			es = "Explosivos de la Horda de Hierro",
@@ -18299,6 +24161,7 @@ root("ObjectDB", {
 	[235143] = {
 		readable = "Assassin's Spear",
 		icon = "Interface/Icons/INV_Spear_05",
+		model = 903257,
 		text = {
 			en = "Assassin's Spear",
 			es = "Lanza de asesino",
@@ -18313,6 +24176,7 @@ root("ObjectDB", {
 	},
 	[235168] = {
 		readable = "Outcast's Pouch",
+		model = 977078,
 		text = {
 			en = "Outcast's Pouch",
 			es = "Faltriquera de desterrado",
@@ -18343,6 +24207,7 @@ root("ObjectDB", {
 	},
 	[235282] = {
 		readable = "Sethekk Ritual Brew",
+		model = 972293,
 		text = {
 			en = "Sethekk Ritual Brew",
 			es = "Brebaje ritual Sethekk",
@@ -18358,6 +24223,7 @@ root("ObjectDB", {
 	[235289] = {
 		readable = "Garrison Workman's Hammer",
 		icon = "Interface/Icons/INV_Misc_1h_BlacksmithHammer_A_01",
+		model = 929367,
 		text = {
 			en = "Garrison Workman's Hammer",
 			es = "Martillo de obrero de la ciudadela",
@@ -18372,6 +24238,7 @@ root("ObjectDB", {
 	},
 	[235299] = {
 		readable = "Coinbender's Payment",
+		model = 446673,
 		text = {
 			en = "Coinbender's Payment",
 			es = "Pago de Doblamonedas",
@@ -18386,6 +24253,7 @@ root("ObjectDB", {
 	},
 	[235300] = {
 		readable = "Mysterious Mushrooms",
+		model = 975395,
 		text = {
 			en = "Mysterious Mushrooms",
 			es = "Champiñones misteriosos",
@@ -18400,6 +24268,7 @@ root("ObjectDB", {
 	},
 	[235307] = {
 		readable = "Watertight Bag",
+		model = 977078,
 		text = {
 			en = "Watertight Bag",
 			es = "Bolsa encharcada",
@@ -18414,6 +24283,7 @@ root("ObjectDB", {
 	},
 	[235310] = {
 		readable = "Shredder Parts",
+		model = 353343,
 		text = {
 			en = "Shredder Parts",
 			es = "Piezas de trituradora",
@@ -18429,6 +24299,7 @@ root("ObjectDB", {
 	[235313] = {
 		readable = "Abandoned Mining Pick",
 		icon = "Interface/Icons/INV_Axe_2h_6miningpick",
+		model = 984881,
 		text = {
 			en = "Abandoned Mining Pick",
 			es = "Pico de minero abandonado",
@@ -18443,6 +24314,7 @@ root("ObjectDB", {
 	},
 	[235365] = {
 		readable = "Admiral Taylor's Coffer",
+		model = 446671,
 		text = {
 			en = "Admiral Taylor's Coffer",
 			es = "Arca del almirante Taylor",
@@ -18458,6 +24330,7 @@ root("ObjectDB", {
 	[235859] = {
 		readable = "Brokor's Sack",
 		icon = "Interface/Icons/INV_Misc_Bag_10",
+		model = 428634,
 		text = {
 			en = "Brokor's Sack",
 			es = "Bolsa de Brokor",
@@ -18473,6 +24346,7 @@ root("ObjectDB", {
 	[235860] = {
 		readable = "Orc Skeleton",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 196976,
 		text = {
 			en = "Orc Skeleton",
 			es = "Esqueleto orco",
@@ -18487,6 +24361,7 @@ root("ObjectDB", {
 	},
 	[235869] = {
 		readable = "Weapons Cache",
+		model = 903889,
 		text = {
 			en = "Weapons Cache",
 			es = "Alijo de armas",
@@ -18501,6 +24376,7 @@ root("ObjectDB", {
 	},
 	[235881] = {
 		readable = "Petrified Rylak Egg",
+		model = 1003209,
 		text = {
 			en = "Petrified Rylak Egg",
 			es = "Huevo de rylak petrificado",
@@ -18516,6 +24392,7 @@ root("ObjectDB", {
 	[236092] = {
 		readable = "Stashed Emergency Rucksack",
 		icon = "Interface/Icons/INV_Misc_Bag_08",
+		model = 936417,
 		text = {
 			en = "Stashed Emergency Rucksack",
 			es = "Mochila de emergencia oculta",
@@ -18530,6 +24407,7 @@ root("ObjectDB", {
 	},
 	[236096] = {
 		readable = "Remains of Balldir Deeprock",
+		model = 197145,
 		text = {
 			en = "Remains of Balldir Deeprock",
 			es = "Restos de Balldir Rocabismal",
@@ -18544,6 +24422,7 @@ root("ObjectDB", {
 	},
 	[236099] = {
 		readable = "Suntouched Spear",
+		model = 874421,
 		text = {
 			en = "Suntouched Spear",
 			es = "Lanza Toquesol",
@@ -18558,6 +24437,7 @@ root("ObjectDB", {
 	},
 	[236138] = {
 		readable = "Iron Supply Chest",
+		model = 953811,
 		text = {
 			en = "Iron Supply Chest",
 			es = "Cofre de suministros de la Horda de Hierro",
@@ -18572,6 +24452,7 @@ root("ObjectDB", {
 	},
 	[236139] = {
 		readable = "Explorer Canister",
+		model = 197644,
 		text = {
 			en = "Explorer Canister",
 			es = "Bote de explorador",
@@ -18587,6 +24468,7 @@ root("ObjectDB", {
 	[236141] = {
 		readable = "Discarded Pack",
 		icon = "Interface/Icons/INV_Misc_Bag_08",
+		model = 936417,
 		text = {
 			en = "Discarded Pack",
 			es = "Paquete desechado",
@@ -18602,6 +24484,7 @@ root("ObjectDB", {
 	[236147] = {
 		readable = "Vindicator's Hammer",
 		icon = "Interface/Icons/INV_Hammer_04",
+		model = 203025,
 		text = {
 			en = "Vindicator's Hammer",
 			es = "Martillo de vindicador",
@@ -18617,6 +24500,7 @@ root("ObjectDB", {
 	[236149] = {
 		readable = "Sasha's Secret Stash",
 		icon = "Interface/Icons/INV_Misc_Bag_33",
+		model = 198989,
 		text = {
 			en = "Sasha's Secret Stash",
 			es = "Alijo secreto de Sasha",
@@ -18632,6 +24516,7 @@ root("ObjectDB", {
 	[236158] = {
 		readable = "Sniper's Crossbow",
 		icon = "Interface/Icons/inv_bow_2h_crossbow_draenorquest_b_01",
+		model = 145215,
 		text = {
 			en = "Sniper's Crossbow",
 			es = "Ballesta de francotirador",
@@ -18646,6 +24531,7 @@ root("ObjectDB", {
 	},
 	[236165] = {
 		readable = "War Planning Map",
+		model = 978198,
 		text = {
 			en = "War Planning Map",
 			es = "Mapa de planes de guerra",
@@ -18660,6 +24546,7 @@ root("ObjectDB", {
 	},
 	[236169] = {
 		readable = "Harvestable Precious Crystal",
+		model = 194364,
 		text = {
 			en = "Harvestable Precious Crystal",
 			es = "Cristal precioso recolectable",
@@ -18674,6 +24561,7 @@ root("ObjectDB", {
 	},
 	[236170] = {
 		readable = "Remains of Balik Orecrusher",
+		model = 197148,
 		text = {
 			en = "Remains of Balik Orecrusher",
 			es = "Restos de Balik Machacamenas",
@@ -18689,6 +24577,7 @@ root("ObjectDB", {
 	[236178] = {
 		readable = "Evermorn Supply Cache",
 		icon = "Interface/Icons/Ability_Skyreach_Empower",
+		model = 1033545,
 		text = {
 			en = "Evermorn Supply Cache",
 			es = "Alijo de suministros Sol Eterno",
@@ -18703,6 +24592,7 @@ root("ObjectDB", {
 	},
 	[236206] = {
 		readable = "War Planning Map",
+		model = 978198,
 		text = {
 			en = "War Planning Map",
 			es = "Mapa de planes de guerra",
@@ -18717,6 +24607,7 @@ root("ObjectDB", {
 	},
 	[236257] = {
 		readable = "Ancient Titan Chest",
+		model = 200953,
 		text = {
 			en = "Ancient Titan Chest",
 			es = "Cofre titánico antiguo",
@@ -18731,6 +24622,7 @@ root("ObjectDB", {
 	},
 	[236258] = {
 		readable = "Unknown Petrified Egg",
+		model = 200964,
 		text = {
 			en = "Unknown Petrified Egg",
 			es = "Huevo petrificado desconocido",
@@ -18745,6 +24637,7 @@ root("ObjectDB", {
 	},
 	[236259] = {
 		readable = "Mysterious Petrified Pod",
+		model = 193027,
 		text = {
 			en = "Mysterious Petrified Pod",
 			es = "Vaina petrificada misteriosa",
@@ -18759,6 +24652,7 @@ root("ObjectDB", {
 	},
 	[236260] = {
 		readable = "Mysterious Petrified Pod",
+		model = 193027,
 		text = {
 			en = "Mysterious Petrified Pod",
 			es = "Vaina petrificada misteriosa",
@@ -18773,6 +24667,7 @@ root("ObjectDB", {
 	},
 	[236264] = {
 		readable = "Forgotten Skull Cache",
+		model = 196707,
 		text = {
 			en = "Forgotten Skull Cache",
 			es = "Alijo de cráneos olvidado",
@@ -18787,6 +24682,7 @@ root("ObjectDB", {
 	},
 	[236265] = {
 		readable = "Aged Stone Container",
+		model = 446679,
 		text = {
 			en = "Aged Stone Container",
 			es = "Contenedor de piedra envejecida",
@@ -18801,6 +24697,7 @@ root("ObjectDB", {
 	},
 	[236266] = {
 		readable = "Unknown Petrified Egg",
+		model = 200964,
 		text = {
 			en = "Unknown Petrified Egg",
 			es = "Huevo petrificado desconocido",
@@ -18815,6 +24712,7 @@ root("ObjectDB", {
 	},
 	[236267] = {
 		readable = "Ancient Titan Chest",
+		model = 200953,
 		text = {
 			en = "Ancient Titan Chest",
 			es = "Cofre titánico antiguo",
@@ -18829,6 +24727,7 @@ root("ObjectDB", {
 	},
 	[236269] = {
 		readable = "Obsidian Crystal Formation",
+		model = 937012,
 		text = {
 			en = "Obsidian Crystal Formation",
 			es = "Formación de cristal de obsidiana",
@@ -18843,6 +24742,7 @@ root("ObjectDB", {
 	},
 	[236270] = {
 		readable = "Aged Stone Container",
+		model = 446679,
 		text = {
 			en = "Aged Stone Container",
 			es = "Contenedor de piedra envejecida",
@@ -18857,6 +24757,7 @@ root("ObjectDB", {
 	},
 	[236271] = {
 		readable = "Aged Stone Container",
+		model = 446679,
 		text = {
 			en = "Aged Stone Container",
 			es = "Contenedor de piedra envejecida",
@@ -18871,6 +24772,7 @@ root("ObjectDB", {
 	},
 	[236274] = {
 		readable = "Aged Stone Container",
+		model = 446679,
 		text = {
 			en = "Aged Stone Container",
 			es = "Contenedor de piedra envejecida",
@@ -18885,6 +24787,7 @@ root("ObjectDB", {
 	},
 	[236275] = {
 		readable = "Ancient Titan Chest",
+		model = 200953,
 		text = {
 			en = "Ancient Titan Chest",
 			es = "Cofre titánico antiguo",
@@ -18899,6 +24802,7 @@ root("ObjectDB", {
 	},
 	[236276] = {
 		readable = "Obsidian Crystal Formation",
+		model = 937012,
 		text = {
 			en = "Obsidian Crystal Formation",
 			es = "Formación de cristal de obsidiana",
@@ -18913,6 +24817,7 @@ root("ObjectDB", {
 	},
 	[236278] = {
 		readable = "Obsidian Crystal Formation",
+		model = 937012,
 		text = {
 			en = "Obsidian Crystal Formation",
 			es = "Formación de cristal de obsidiana",
@@ -18927,6 +24832,7 @@ root("ObjectDB", {
 	},
 	[236279] = {
 		readable = "Aged Stone Container",
+		model = 446679,
 		text = {
 			en = "Aged Stone Container",
 			es = "Contenedor de piedra envejecida",
@@ -18941,6 +24847,7 @@ root("ObjectDB", {
 	},
 	[236280] = {
 		readable = "Ancient Titan Chest",
+		model = 200953,
 		text = {
 			en = "Ancient Titan Chest",
 			es = "Cofre titánico antiguo",
@@ -18955,6 +24862,7 @@ root("ObjectDB", {
 	},
 	[236282] = {
 		readable = "Obsidian Crystal Formation",
+		model = 937012,
 		text = {
 			en = "Obsidian Crystal Formation",
 			es = "Formación de cristal de obsidiana",
@@ -18969,6 +24877,7 @@ root("ObjectDB", {
 	},
 	[236284] = {
 		readable = "Ancient Ogre Cache",
+		model = 971467,
 		text = {
 			en = "Ancient Ogre Cache",
 			es = "Alijo de ogro antiguo",
@@ -18983,6 +24892,7 @@ root("ObjectDB", {
 	},
 	[236285] = {
 		readable = "Aged Stone Container",
+		model = 446679,
 		text = {
 			en = "Aged Stone Container",
 			es = "Contenedor de piedra envejecida",
@@ -18997,6 +24907,7 @@ root("ObjectDB", {
 	},
 	[236288] = {
 		readable = "Ancient Titan Chest",
+		model = 200953,
 		text = {
 			en = "Ancient Titan Chest",
 			es = "Cofre titánico antiguo",
@@ -19011,6 +24922,7 @@ root("ObjectDB", {
 	},
 	[236289] = {
 		readable = "Aged Stone Container",
+		model = 446679,
 		text = {
 			en = "Aged Stone Container",
 			es = "Contenedor de piedra envejecida",
@@ -19025,6 +24937,7 @@ root("ObjectDB", {
 	},
 	[236348] = {
 		readable = "Ancient Ogre Cache",
+		model = 971467,
 		text = {
 			en = "Ancient Ogre Cache",
 			es = "Alijo de ogro antiguo",
@@ -19039,6 +24952,7 @@ root("ObjectDB", {
 	},
 	[236349] = {
 		readable = "Ancient Titan Chest",
+		model = 200953,
 		text = {
 			en = "Ancient Titan Chest",
 			es = "Cofre titánico antiguo",
@@ -19053,6 +24967,7 @@ root("ObjectDB", {
 	},
 	[236350] = {
 		readable = "Aged Stone Container",
+		model = 446679,
 		text = {
 			en = "Aged Stone Container",
 			es = "Contenedor de piedra envejecida",
@@ -19067,6 +24982,7 @@ root("ObjectDB", {
 	},
 	[236351] = {
 		readable = "Ancient Ogre Cache",
+		model = 971467,
 		text = {
 			en = "Ancient Ogre Cache",
 			es = "Alijo de ogro antiguo",
@@ -19081,6 +24997,7 @@ root("ObjectDB", {
 	},
 	[236399] = {
 		readable = "Aged Stone Container",
+		model = 446679,
 		text = {
 			en = "Aged Stone Container",
 			es = "Contenedor de piedra envejecida",
@@ -19095,6 +25012,7 @@ root("ObjectDB", {
 	},
 	[236400] = {
 		readable = "Ancient Ogre Cache",
+		model = 971467,
 		text = {
 			en = "Ancient Ogre Cache",
 			es = "Alijo de ogro antiguo",
@@ -19109,6 +25027,7 @@ root("ObjectDB", {
 	},
 	[236402] = {
 		readable = "Ancient Titan Chest",
+		model = 200953,
 		text = {
 			en = "Ancient Titan Chest",
 			es = "Cofre titánico antiguo",
@@ -19123,6 +25042,7 @@ root("ObjectDB", {
 	},
 	[236404] = {
 		readable = "Aged Stone Container",
+		model = 446679,
 		text = {
 			en = "Aged Stone Container",
 			es = "Contenedor de piedra envejecida",
@@ -19137,6 +25057,7 @@ root("ObjectDB", {
 	},
 	[236406] = {
 		readable = "Ancient Ogre Cache",
+		model = 971467,
 		text = {
 			en = "Ancient Ogre Cache",
 			es = "Alijo de ogro antiguo",
@@ -19151,6 +25072,7 @@ root("ObjectDB", {
 	},
 	[236407] = {
 		readable = "Ancient Ogre Cache",
+		model = 971467,
 		text = {
 			en = "Ancient Ogre Cache",
 			es = "Alijo de ogro antiguo",
@@ -19165,6 +25087,7 @@ root("ObjectDB", {
 	},
 	[236483] = {
 		readable = "Gift of the Ancients",
+		model = 446679,
 		text = {
 			en = "Gift of the Ancients",
 			es = "Obsequio de los ancestros",
@@ -19173,11 +25096,13 @@ root("ObjectDB", {
 			it = "Dono degli Antichi",
 			pt = "Dádiva dos Ancestrais",
 			ru = "Дар древних",
+			ko = "[Gift of the Ancients]",
 			cn = "古树的礼物",
 		},
 	},
 	[236610] = {
 		readable = "Spirit's Gift",
+		model = 446675,
 		text = {
 			en = "Spirit's Gift",
 			es = "Regalo de Espíritu",
@@ -19186,11 +25111,13 @@ root("ObjectDB", {
 			it = "Dono dello Spirito",
 			pt = "Dádiva do Espírito",
 			ru = "Дар духа",
+			ko = "[Spirit's Gift]",
 			cn = "幽灵的礼物",
 		},
 	},
 	[236633] = {
 		readable = "Smuggler's Cache",
+		model = 446671,
 		text = {
 			en = "Smuggler's Cache",
 			es = "Alijo de contrabandista",
@@ -19205,6 +25132,7 @@ root("ObjectDB", {
 	},
 	[236693] = {
 		readable = "Iron Horde Munitions",
+		model = 970548,
 		text = {
 			en = "Iron Horde Munitions",
 			es = "Munición de la Horda de Hierro",
@@ -19220,6 +25148,7 @@ root("ObjectDB", {
 	[236715] = {
 		readable = "Odd Skull",
 		icon = "Interface/Icons/INV_Misc_Skull_08",
+		model = 948490,
 		text = {
 			en = "Odd Skull",
 			es = "Calavera extraña",
@@ -19234,6 +25163,7 @@ root("ObjectDB", {
 	},
 	[236755] = {
 		readable = "Dusty Lockbox",
+		model = 196988,
 		text = {
 			en = "Dusty Lockbox",
 			es = "Arcón polvoriento",
@@ -19248,6 +25178,7 @@ root("ObjectDB", {
 	},
 	[236935] = {
 		readable = "Burning Blade Cache",
+		model = 953811,
 		text = {
 			en = "Burning Blade Cache",
 			es = "Alijo del clan Filo Ardiente",
@@ -19262,6 +25193,7 @@ root("ObjectDB", {
 	},
 	[237022] = {
 		readable = "Command Board",
+		model = 429104,
 		text = {
 			en = "Command Board",
 			es = "Tablón de mando",
@@ -19277,6 +25209,7 @@ root("ObjectDB", {
 	[237511] = {
 		readable = "Strange Spore",
 		icon = "Interface/Icons/priest_icon_chakra_red",
+		model = 193862,
 		text = {
 			en = "Strange Spore",
 			es = "Espora extraña",
@@ -19291,6 +25224,7 @@ root("ObjectDB", {
 	},
 	[237821] = {
 		readable = "Bladefury's Orders",
+		model = 985170,
 		text = {
 			en = "Bladefury's Orders",
 			es = "Órdenes de Furiafilo",
@@ -19305,6 +25239,7 @@ root("ObjectDB", {
 	},
 	[237946] = {
 		readable = "Spirit Coffer",
+		model = 659752,
 		text = {
 			en = "Spirit Coffer",
 			es = "Arca de espíritus",
@@ -19319,6 +25254,7 @@ root("ObjectDB", {
 	},
 	[239120] = {
 		readable = "Okuna Longtusk's Pack",
+		model = 936417,
 		text = {
 			en = "Okuna Longtusk's Pack",
 			es = "Mochila de Okuna Colmillo Largo",
@@ -19334,6 +25270,7 @@ root("ObjectDB", {
 	[239143] = {
 		readable = "Glass of Warm Milk",
 		icon = "Interface/Icons/inv_drink_milk_01",
+		model = 970220,
 		text = {
 			en = "Glass of Warm Milk",
 			es = "Vaso de leche caliente",
@@ -19349,6 +25286,7 @@ root("ObjectDB", {
 	[239171] = {
 		readable = "Glass of Warm Milk",
 		icon = "Interface/Icons/inv_drink_milk_01",
+		model = 929393,
 		text = {
 			en = "Glass of Warm Milk",
 			es = "Vaso de leche caliente",
@@ -19363,6 +25301,7 @@ root("ObjectDB", {
 	},
 	[239194] = {
 		readable = "Norana's Cache",
+		model = 446677,
 		text = {
 			en = "Norana's Cache",
 			es = "Alijo de Norana",
@@ -19377,6 +25316,7 @@ root("ObjectDB", {
 	},
 	[239198] = {
 		readable = "Isaari's Cache",
+		model = 1062118,
 		text = {
 			en = "Isaari's Cache",
 			es = "Alijo de Isaari",
@@ -19391,6 +25331,7 @@ root("ObjectDB", {
 	},
 	[239328] = {
 		readable = "Captain's Foot Locker",
+		model = 942843,
 		text = {
 			en = "Captain's Foot Locker",
 			es = "Baúl del capitán",
@@ -19405,6 +25346,7 @@ root("ObjectDB", {
 	},
 	[239791] = {
 		readable = "Relic Hunting Notes",
+		model = 985161,
 		text = {
 			en = "Relic Hunting Notes",
 			es = "Notas sobre la búsqueda de reliquias",
@@ -19419,6 +25361,7 @@ root("ObjectDB", {
 	},
 	[239803] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -19434,6 +25377,7 @@ root("ObjectDB", {
 	[239828] = {
 		readable = "Edge of Reality",
 		icon = "Interface/Icons/Spell_Warlock_DemonicPortal_Purple",
+		model = 165834,
 		text = {
 			en = "Edge of Reality",
 			es = "Filo de la Realidad",
@@ -19452,8 +25396,10 @@ root("ObjectDB", {
 		model = 984888,
 		text = {
 			en = "Voidtalon Egg",
+			es = "[Voidtalon Egg]",
 			de = "Leerenkrallenei",
 			fr = "Œuf de serre du Vide",
+			it = "[Voidtalon Egg]",
 			pt = "Ovo de Rasga-caos",
 			ru = "Яйцо Когтя Бездны",
 			ko = "공허발톱 알",
@@ -19463,20 +25409,39 @@ root("ObjectDB", {
 	[239925] = {
 		readable = "Ogrish Fortitude",
 		icon = "Interface/Icons/trade_archaeology_nerubian_obelisk",
+		model = 942535,
 		text = {
-			en = [[~GetSpellInfo(155346)]],
+			en = "Ogrish Fortitude",
+			es = "Piedra de chamán congelada",
+			de = "Gefrorener Schamanenstein",
+			fr = "Pierre chamanique gelée",
+			it = "Pietra Sciamanica Congelata",
+			pt = "Pedra Xamânica Congelada",
+			ru = "Ледяной камень шаманов",
+			ko = "얼어붙은 주술석",
+			cn = "霜冻萨满之石",
 		},
 	},
 	[239926] = {
 		readable = "Touched By Fire",
 		icon = "Interface/Icons/trade_archaeology_nerubian_obelisk",
+		model = 942535,
 		text = {
-			en = [[~GetSpellInfo(155315)]],
+			en = "Touched By Fire",
+			es = "Piedra de chamán fundida",
+			de = "Glühender Schamanenstein",
+			fr = "Pierre chamanique en fusion",
+			it = "Pietra Sciamanica Magmatica",
+			pt = "Pedra Xamânica de Magma",
+			ru = "Лавовый камень шаманов",
+			ko = "녹아내린 주술석",
+			cn = "熔火萨满之石",
 		},
 	},
 	[240003] = {
 		readable = "Strange Sapphire",
 		icon = "Interface/Icons/INV_Misc_Gem_Sapphire_01",
+		model = 249606,
 		text = {
 			en = "Strange Sapphire",
 			es = "Zafiro extraño",
@@ -19492,6 +25457,7 @@ root("ObjectDB", {
 	[240289] = {
 		readable = "Weathered Axe",
 		icon = "Interface/Icons/INV_Axe_22",
+		model = 1015733,
 		text = {
 			en = "Weathered Axe",
 			es = "Hacha deteriorada",
@@ -19500,11 +25466,13 @@ root("ObjectDB", {
 			it = "Ascia Logora",
 			pt = "Machado Desgastado",
 			ru = "Потертый топор",
+			ko = "[Weathered Axe]",
 			cn = "风化的斧子",
 		},
 	},
 	[240317] = {
 		readable = "Iskar's Tome of Shadows",
+		model = 382932,
 		text = {
 			en = "Iskar's Tome of Shadows",
 			es = "Escrito de las Sombras de Iskar",
@@ -19519,6 +25487,7 @@ root("ObjectDB", {
 	},
 	[240354] = {
 		readable = "Genuinely Unguarded Treasure",
+		model = 200136,
 		text = {
 			en = "Genuinely Unguarded Treasure",
 			es = "Tesoro realmente sin vigilancia",
@@ -19527,11 +25496,13 @@ root("ObjectDB", {
 			it = "Tesoro Non Sorvegliato",
 			pt = "Tesouro Desprotegido de Verdade",
 			ru = "Точно никем не охраняемые сокровища",
+			ko = "[Genuinely Unguarded Treasure]",
 			cn = "看似无人看守的宝藏",
 		},
 	},
 	[240519] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -19546,6 +25517,7 @@ root("ObjectDB", {
 	},
 	[240543] = {
 		readable = "Stolen Captain's Chest",
+		model = 953811,
 		text = {
 			en = "Stolen Captain's Chest",
 			es = "Cofre del capitán robado",
@@ -19560,6 +25532,7 @@ root("ObjectDB", {
 	},
 	[240547] = {
 		readable = "Orc Skull",
+		model = 1097781,
 		text = {
 			en = "Orc Skull",
 			es = "Calavera de orco",
@@ -19575,6 +25548,7 @@ root("ObjectDB", {
 	[240577] = {
 		readable = "The Blade of Kra'nak",
 		icon = "Interface/Icons/inv_sword_1h_arakkoa_c_01",
+		model = 1064785,
 		text = {
 			en = "The Blade of Kra'nak",
 			es = "El filo de Kra'nak",
@@ -19590,6 +25564,7 @@ root("ObjectDB", {
 	[240580] = {
 		readable = "Jewel of Hellfire",
 		icon = "Interface/Icons/INV_jewelcrafting_ImmacTaladite_Red",
+		model = 192714,
 		text = {
 			en = "Jewel of Hellfire",
 			es = "Joya de Fuego Infernal",
@@ -19604,6 +25579,7 @@ root("ObjectDB", {
 	},
 	[240605] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -19618,6 +25594,7 @@ root("ObjectDB", {
 	},
 	[240608] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -19632,6 +25609,7 @@ root("ObjectDB", {
 	},
 	[240609] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -19646,6 +25624,7 @@ root("ObjectDB", {
 	},
 	[240612] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -19660,6 +25639,7 @@ root("ObjectDB", {
 	},
 	[240614] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -19684,6 +25664,7 @@ root("ObjectDB", {
 			it = "Forniture Congelate",
 			pt = "Suprimentos Congelados",
 			ru = "Замороженные припасы",
+			ko = "[Frozen Supplies]",
 			cn = "冰封的补给品",
 		},
 	},
@@ -19699,11 +25680,13 @@ root("ObjectDB", {
 			it = "Sacca della Sentinella Perduta",
 			pt = "Bolsa da Sentinela Perdida",
 			ru = "Мешок потерявшегося часового",
+			ko = "[Lost Sentinel's Pouch]",
 			cn = "遗失的哨兵袋子",
 		},
 	},
 	[240619] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -19743,6 +25726,7 @@ root("ObjectDB", {
 			it = "Forziere di Sylvanas",
 			pt = "Caixa-forte de Sylvana",
 			ru = "Сейф Сильваны",
+			ko = "[Sylvanas' Strongbox]",
 			cn = "希尔瓦娜斯的保险箱",
 		},
 	},
@@ -19758,6 +25742,7 @@ root("ObjectDB", {
 			it = "Nido di Drago Fatato",
 			pt = "Ninho de Dragoleta",
 			ru = "Гнездо чудесного дракончика",
+			ko = "[Faerie Dragon Nest]",
 			cn = "精灵龙巢穴",
 		},
 	},
@@ -19779,6 +25764,7 @@ root("ObjectDB", {
 	},
 	[240629] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -19793,6 +25779,7 @@ root("ObjectDB", {
 	},
 	[240630] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -19807,6 +25794,7 @@ root("ObjectDB", {
 	},
 	[240631] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -19821,6 +25809,7 @@ root("ObjectDB", {
 	},
 	[240634] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -19835,6 +25824,7 @@ root("ObjectDB", {
 	},
 	[240635] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -19849,6 +25839,7 @@ root("ObjectDB", {
 	},
 	[240637] = {
 		readable = "Glimmering Treasure Chest",
+		model = 1349622,
 		text = {
 			en = "Glimmering Treasure Chest",
 			es = "Arqueta brillante",
@@ -19863,6 +25854,7 @@ root("ObjectDB", {
 	},
 	[240638] = {
 		readable = "Disputed Treasure",
+		model = 1349621,
 		text = {
 			en = "Disputed Treasure",
 			es = "Tesoro disputado",
@@ -19877,6 +25869,7 @@ root("ObjectDB", {
 	},
 	[240639] = {
 		readable = "Glimmering Treasure Chest",
+		model = 1349622,
 		text = {
 			en = "Glimmering Treasure Chest",
 			es = "Arqueta brillante",
@@ -19891,6 +25884,7 @@ root("ObjectDB", {
 	},
 	[240641] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -19905,6 +25899,7 @@ root("ObjectDB", {
 	},
 	[240642] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -19919,6 +25914,7 @@ root("ObjectDB", {
 	},
 	[240643] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -19933,6 +25929,7 @@ root("ObjectDB", {
 	},
 	[240644] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -19947,6 +25944,7 @@ root("ObjectDB", {
 	},
 	[240645] = {
 		readable = "Glimmering Treasure Chest",
+		model = 1349622,
 		text = {
 			en = "Glimmering Treasure Chest",
 			es = "Arqueta brillante",
@@ -19961,6 +25959,7 @@ root("ObjectDB", {
 	},
 	[240646] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -19975,6 +25974,7 @@ root("ObjectDB", {
 	},
 	[240649] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -19989,6 +25989,7 @@ root("ObjectDB", {
 	},
 	[240651] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -20003,6 +26004,7 @@ root("ObjectDB", {
 	},
 	[240652] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -20017,6 +26019,7 @@ root("ObjectDB", {
 	},
 	[240653] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -20031,6 +26034,7 @@ root("ObjectDB", {
 	},
 	[240654] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -20045,6 +26049,7 @@ root("ObjectDB", {
 	},
 	[240655] = {
 		readable = "Glimmering Treasure Chest",
+		model = 1349622,
 		text = {
 			en = "Glimmering Treasure Chest",
 			es = "Arqueta brillante",
@@ -20059,6 +26064,7 @@ root("ObjectDB", {
 	},
 	[240657] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -20073,6 +26079,7 @@ root("ObjectDB", {
 	},
 	[240690] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -20088,6 +26095,7 @@ root("ObjectDB", {
 	[240855] = {
 		readable = "Tome of Secrets",
 		icon = "Interface/Icons/INV_Misc_Book_04",
+		model = 916178,
 		text = {
 			en = "Tome of Secrets",
 			es = "Escrito de secretos",
@@ -20103,6 +26111,7 @@ root("ObjectDB", {
 	[241128] = {
 		readable = "Unguarded Thistleleaf Treasure",
 		icon = "Interface/Icons/inv_misc_treasurechest02a",
+		model = 196989,
 		text = {
 			en = "Unguarded Thistleleaf Treasure",
 			es = "Tesoro Hojacardo sin vigilancia",
@@ -20117,6 +26126,7 @@ root("ObjectDB", {
 	},
 	[241146] = {
 		readable = "Treasure Chest",
+		model = 1402264,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -20131,6 +26141,7 @@ root("ObjectDB", {
 	},
 	[241147] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -20145,6 +26156,7 @@ root("ObjectDB", {
 	},
 	[241148] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -20159,6 +26171,7 @@ root("ObjectDB", {
 	},
 	[241149] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -20173,6 +26186,7 @@ root("ObjectDB", {
 	},
 	[241150] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -20187,6 +26201,7 @@ root("ObjectDB", {
 	},
 	[241151] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -20201,6 +26216,7 @@ root("ObjectDB", {
 	},
 	[241152] = {
 		readable = "Treasure Chest",
+		model = 1402264,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -20215,6 +26231,7 @@ root("ObjectDB", {
 	},
 	[241153] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -20229,6 +26246,7 @@ root("ObjectDB", {
 	},
 	[241154] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -20243,6 +26261,7 @@ root("ObjectDB", {
 	},
 	[241155] = {
 		readable = "Treasure Chest",
+		model = 1402264,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -20257,6 +26276,7 @@ root("ObjectDB", {
 	},
 	[241180] = {
 		readable = "Treasure Chest",
+		model = 1402264,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -20271,6 +26291,7 @@ root("ObjectDB", {
 	},
 	[241206] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -20285,6 +26306,7 @@ root("ObjectDB", {
 	},
 	[241207] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -20299,6 +26321,7 @@ root("ObjectDB", {
 	},
 	[241208] = {
 		readable = "Treasure Chest",
+		model = 1402264,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -20313,6 +26336,7 @@ root("ObjectDB", {
 	},
 	[241212] = {
 		readable = "Treasure Chest",
+		model = 1402264,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -20327,6 +26351,7 @@ root("ObjectDB", {
 	},
 	[241213] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -20341,6 +26366,7 @@ root("ObjectDB", {
 	},
 	[241216] = {
 		readable = "Treasure Chest",
+		model = 1402264,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -20355,6 +26381,7 @@ root("ObjectDB", {
 	},
 	[241267] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -20369,6 +26396,7 @@ root("ObjectDB", {
 	},
 	[241272] = {
 		readable = "Treasure Chest",
+		model = 1402264,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -20383,6 +26411,7 @@ root("ObjectDB", {
 	},
 	[241280] = {
 		readable = "Treasure Chest",
+		model = 1402264,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -20397,6 +26426,7 @@ root("ObjectDB", {
 	},
 	[241433] = {
 		readable = "Forgotten Sack",
+		model = 523211,
 		text = {
 			en = "Forgotten Sack",
 			es = "Saco olvidado",
@@ -20412,6 +26442,7 @@ root("ObjectDB", {
 	[241434] = {
 		readable = "Lodged Hunting Spear",
 		icon = "Interface/Icons/INV_Spear_05",
+		model = 943686,
 		text = {
 			en = "Lodged Hunting Spear",
 			es = "Lanza de caza atascada",
@@ -20426,6 +26457,7 @@ root("ObjectDB", {
 	},
 	[241449] = {
 		readable = "Blackfang Island Cache",
+		model = 875603,
 		text = {
 			en = "Blackfang Island Cache",
 			es = "Alijo de la Isla Colmillo Negro",
@@ -20434,12 +26466,14 @@ root("ObjectDB", {
 			it = "Cassa dell'Isola degli Artiglionero",
 			pt = "Tesouro da Ilha Presanegra",
 			ru = "Островные припасы племени Черного Клыка",
+			ko = "[Blackfang Island Cache]",
 			cn = "黑齿岛宝箱",
 		},
 	},
 	[241450] = {
 		readable = "Crystallized Fel Spike",
 		icon = "Interface/Icons/ToolTip_CrystallizedFel",
+		model = 202751,
 		text = {
 			en = "Crystallized Fel Spike",
 			es = "Púa vil cristalizada",
@@ -20448,11 +26482,13 @@ root("ObjectDB", {
 			it = "Vilspina Cristallizzata",
 			pt = "Espeto Vil Cristalizado",
 			ru = "Кристаллический шип Скверны",
+			ko = "[Crystallized Fel Spike]",
 			cn = "晶化邪能尖刺",
 		},
 	},
 	[241504] = {
 		readable = "Polished Crystal",
+		model = 942849,
 		text = {
 			en = "Polished Crystal",
 			es = "Cristal pulido",
@@ -20467,6 +26503,7 @@ root("ObjectDB", {
 	},
 	[241518] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -20482,6 +26519,7 @@ root("ObjectDB", {
 	[241521] = {
 		readable = "Snake Charmer's Flute",
 		icon = "Interface/Icons/INV_Misc_Flute_01",
+		model = 522113,
 		text = {
 			en = "Snake Charmer's Flute",
 			es = "Flauta de encantador de serpientes",
@@ -20490,12 +26528,14 @@ root("ObjectDB", {
 			it = "Flauto dell'Incantatore di Serpenti",
 			pt = "Flauta do Encantador de Serpentes",
 			ru = "Флейта заклинателя змей",
+			ko = "[Snake Charmer's Flute]",
 			cn = "驯蛇人的笛子",
 		},
 	},
 	[241522] = {
 		readable = "The Perfect Blossom",
 		icon = "Interface/Icons/INV_Misc_Herb_TornGoldenLotus",
+		model = 1119130,
 		text = {
 			en = "The Perfect Blossom",
 			es = "La flor perfecta",
@@ -20510,6 +26550,7 @@ root("ObjectDB", {
 	},
 	[241524] = {
 		readable = "Pale Removal Equipment",
+		model = 953811,
 		text = {
 			en = "Pale Removal Equipment",
 			es = "Equipo de eliminación de pálidos",
@@ -20525,6 +26566,7 @@ root("ObjectDB", {
 	[241533] = {
 		readable = "Forgotten Champion's Blade",
 		icon = "Interface/Icons/INV_Sword_25",
+		model = 148079,
 		text = {
 			en = "Forgotten Champion's Blade",
 			es = "Filo de Campeón olvidado",
@@ -20533,11 +26575,13 @@ root("ObjectDB", {
 			it = "Lama del Campione Dimenticato",
 			pt = "Lâmina do Campeão Esquecido",
 			ru = "Клинок позабытого воина",
+			ko = "[Forgotten Champion's Blade]",
 			cn = "被遗忘的勇士之剑",
 		},
 	},
 	[241557] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -20552,6 +26596,7 @@ root("ObjectDB", {
 	},
 	[241558] = {
 		readable = "Treasure Chest",
+		model = 1402264,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -20566,6 +26611,7 @@ root("ObjectDB", {
 	},
 	[241560] = {
 		readable = "Bleeding Hollow Warchest",
+		model = 953811,
 		text = {
 			en = "Bleeding Hollow Warchest",
 			es = "Cofre de guerra de los Foso Sangrante",
@@ -20580,6 +26626,7 @@ root("ObjectDB", {
 	},
 	[241561] = {
 		readable = "Jewel of the Fallen Star",
+		model = 980090,
 		text = {
 			en = "Jewel of the Fallen Star",
 			es = "Joya de la estrella caída",
@@ -20594,6 +26641,7 @@ root("ObjectDB", {
 	},
 	[241562] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -20609,6 +26657,7 @@ root("ObjectDB", {
 	[241563] = {
 		readable = "Censer of Torment",
 		icon = "Interface/Icons/INV_Misc_Bone_Skull_03",
+		model = 1064382,
 		text = {
 			en = "Censer of Torment",
 			es = "Incensario de tormento",
@@ -20623,6 +26672,7 @@ root("ObjectDB", {
 	},
 	[241564] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -20638,6 +26688,7 @@ root("ObjectDB", {
 	[241565] = {
 		readable = "Looted Bleeding Hollow Treasure",
 		icon = "Interface/Icons/INV_Misc_Food_95_Grainbread",
+		model = 523213,
 		text = {
 			en = "Looted Bleeding Hollow Treasure",
 			es = "Tesoro de los Foso Sangrante despojado",
@@ -20653,6 +26704,7 @@ root("ObjectDB", {
 	[241566] = {
 		readable = "Rune Etched Femur",
 		icon = "Interface/Icons/INV_Misc_Bone_01",
+		model = 969729,
 		text = {
 			en = "Rune Etched Femur",
 			es = "Fémur con runas grabadas",
@@ -20668,6 +26720,7 @@ root("ObjectDB", {
 	[241599] = {
 		readable = "Strange Fruit",
 		icon = "Interface/Icons/inv_misc_food_vendor_jadesquash",
+		model = 196317,
 		text = {
 			en = "Strange Fruit",
 			es = "Fruta extraña",
@@ -20683,6 +26736,7 @@ root("ObjectDB", {
 	[241600] = {
 		readable = "Discarded Helm",
 		icon = "Interface/Icons/INV_Helm_Mail_WarsongClan_B_01",
+		model = 645601,
 		text = {
 			en = "Discarded Helm",
 			es = "Yelmo desechado",
@@ -20691,12 +26745,14 @@ root("ObjectDB", {
 			it = "Elmo Scartato",
 			pt = "Elmo Descartado",
 			ru = "Выброшенный шлем",
+			ko = "[Discarded Helm]",
 			cn = "被遗弃的头盔",
 		},
 	},
 	[241601] = {
 		readable = "Scout's Belongings",
 		icon = "Interface/Icons/INV_Misc_Bag_08",
+		model = 936417,
 		text = {
 			en = "Scout's Belongings",
 			es = "Pertenencias de explorador",
@@ -20705,11 +26761,13 @@ root("ObjectDB", {
 			it = "Beni dell'Esploratore",
 			pt = "Pertences do Batedor",
 			ru = "Вещи разведчика",
+			ko = "[Scout's Belongings]",
 			cn = "斥候的财物",
 		},
 	},
 	[241602] = {
 		readable = "Forgotten Iron Horde Supplies",
+		model = 878880,
 		text = {
 			en = "Forgotten Iron Horde Supplies",
 			es = "Suministros de la Horda de Hierro olvidados",
@@ -20725,6 +26783,7 @@ root("ObjectDB", {
 	[241605] = {
 		readable = "Crystalized Essence of the Elements",
 		icon = "Interface/Icons/INV_DataCrystal09",
+		model = 190803,
 		text = {
 			en = "Crystalized Essence of the Elements",
 			es = "Esencia de los elementos cristalizada",
@@ -20737,9 +26796,25 @@ root("ObjectDB", {
 			cn = "晶化元素精华",
 		},
 	},
+	[241641] = {
+		readable = "Foxflower",
+		model = 1303238,
+		text = {
+			en = "Foxflower",
+			es = "Flor de raposa",
+			de = "Fuchsblume",
+			fr = "Vulpille",
+			it = "Fiorvolpe",
+			pt = "Flor-de-raposa",
+			ru = "Лисоцвет",
+			ko = "여우꽃",
+			cn = "狐尾花",
+		},
+	},
 	[241656] = {
 		readable = "Overgrown Relic",
 		icon = "Interface/Icons/inv_misc_treasurechest02a",
+		model = 985187,
 		text = {
 			en = "Overgrown Relic",
 			es = "Reliquia desmesurada",
@@ -20754,6 +26829,7 @@ root("ObjectDB", {
 	},
 	[241657] = {
 		readable = "Jeweled Arakkoa Effigy",
+		model = 194083,
 		text = {
 			en = "Jeweled Arakkoa Effigy",
 			es = "Efigie arakkoa con joyas",
@@ -20769,6 +26845,7 @@ root("ObjectDB", {
 	[241664] = {
 		readable = "Borrowed Enchanted Spyglass",
 		icon = "Interface/Icons/inv_misc_scopea",
+		model = 1052603,
 		text = {
 			en = "Borrowed Enchanted Spyglass",
 			es = "Catalejo encantado \"prestado\"",
@@ -20783,6 +26860,7 @@ root("ObjectDB", {
 	},
 	[241665] = {
 		readable = "Treasure Chest",
+		model = 1402264,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -20797,6 +26875,7 @@ root("ObjectDB", {
 	},
 	[241666] = {
 		readable = "Mysterious Corrupted Obelisk",
+		model = 1002900,
 		text = {
 			en = "Mysterious Corrupted Obelisk",
 			es = "Obelisco corrupto misterioso",
@@ -20812,6 +26891,7 @@ root("ObjectDB", {
 	[241671] = {
 		readable = "Forgotten Shard of the Cipher",
 		icon = "Interface/Icons/INV_Enchant_ShardBrilliantLarge",
+		model = 193423,
 		text = {
 			en = "Forgotten Shard of the Cipher",
 			es = "Fragmento de la clave olvidado",
@@ -20826,6 +26906,7 @@ root("ObjectDB", {
 	},
 	[241673] = {
 		readable = "Looted Bleeding Hollow Treasure",
+		model = 196990,
 		text = {
 			en = "Looted Bleeding Hollow Treasure",
 			es = "Tesoro de los Foso Sangrante despojado",
@@ -20841,6 +26922,7 @@ root("ObjectDB", {
 	[241674] = {
 		readable = "Skull of the Mad Chief",
 		icon = "Interface/Icons/INV_Offhand_1h_ArtifactSkullofEredar_D_03",
+		model = 1097379,
 		text = {
 			en = "Skull of the Mad Chief",
 			es = "Cráneo del jefe loco",
@@ -20855,6 +26937,7 @@ root("ObjectDB", {
 	},
 	[241680] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -20870,6 +26953,7 @@ root("ObjectDB", {
 	[241692] = {
 		readable = "Axe of the Weeping Wolf",
 		icon = "Interface/Icons/INV_Axe_1h_430NightElf_C_01",
+		model = 592070,
 		text = {
 			en = "Axe of the Weeping Wolf",
 			es = "Hacha del lobo sollozante",
@@ -20884,6 +26968,7 @@ root("ObjectDB", {
 	},
 	[241699] = {
 		readable = "Spoils of War",
+		model = 196989,
 		text = {
 			en = "Spoils of War",
 			es = "Botín de guerra",
@@ -20898,6 +26983,7 @@ root("ObjectDB", {
 	},
 	[241712] = {
 		readable = "Ironbeard's Treasure",
+		model = 446673,
 		text = {
 			en = "Ironbeard's Treasure",
 			es = "Tesoro de Barbaférrea",
@@ -20913,6 +26999,7 @@ root("ObjectDB", {
 	[241713] = {
 		readable = "The Eye of Grannok",
 		icon = "Interface/Icons/INV_Misc_Gem_Pearl_08",
+		model = 243033,
 		text = {
 			en = "The Eye of Grannok",
 			es = "El ojo de Grannok",
@@ -20927,6 +27014,7 @@ root("ObjectDB", {
 	},
 	[241714] = {
 		readable = "Stashed Iron Sea Booty",
+		model = 196989,
 		text = {
 			en = "Stashed Iron Sea Booty",
 			es = "Botín del Mar de Hierro oculto",
@@ -20941,6 +27029,7 @@ root("ObjectDB", {
 	},
 	[241715] = {
 		readable = "Stashed Iron Sea Booty",
+		model = 446677,
 		text = {
 			en = "Stashed Iron Sea Booty",
 			es = "Botín del Mar de Hierro oculto",
@@ -20955,6 +27044,7 @@ root("ObjectDB", {
 	},
 	[241716] = {
 		readable = "Stashed Iron Sea Booty",
+		model = 196987,
 		text = {
 			en = "Stashed Iron Sea Booty",
 			es = "Botín del Mar de Hierro oculto",
@@ -20969,6 +27059,7 @@ root("ObjectDB", {
 	},
 	[241717] = {
 		readable = "Glimmering Treasure Chest",
+		model = 1402270,
 		text = {
 			en = "Glimmering Treasure Chest",
 			es = "Cofre del tesoro reluciente",
@@ -20984,6 +27075,7 @@ root("ObjectDB", {
 	[241726] = {
 		readable = "Leystone Deposit",
 		icon = "Interface/Icons/INV_Leystone",
+		model = 1244489,
 		text = {
 			en = "Leystone Deposit",
 			es = "Depósito de piedra Ley",
@@ -20999,6 +27091,7 @@ root("ObjectDB", {
 	[241742] = {
 		readable = "Book of Zyzzix",
 		icon = "Interface/Icons/ability_warlock_ancientgrimoire",
+		model = 965217,
 		text = {
 			en = "Book of Zyzzix",
 			es = "Libro de Zyzzix",
@@ -21014,6 +27107,7 @@ root("ObjectDB", {
 	[241743] = {
 		readable = "Felslate Deposit",
 		icon = "Interface/Icons/INV_FelSlate",
+		model = 1244487,
 		text = {
 			en = "Felslate Deposit",
 			es = "Depósito de pizarra vil",
@@ -21029,6 +27123,7 @@ root("ObjectDB", {
 	[241745] = {
 		readable = "Fel-Drenched Satchel",
 		icon = "Interface/Icons/INV_Misc_Bag_36",
+		model = 878856,
 		text = {
 			en = "Fel-Drenched Satchel",
 			es = "Cartera envilecida",
@@ -21044,6 +27139,7 @@ root("ObjectDB", {
 	[241760] = {
 		readable = "Sacrificial Blade",
 		icon = "Interface/Icons/INV_Sword_2H_WorgenDeathKnight_C_01",
+		model = 326812,
 		text = {
 			en = "Sacrificial Blade",
 			es = "Hoja de sacrificio",
@@ -21058,6 +27154,7 @@ root("ObjectDB", {
 	},
 	[241764] = {
 		readable = "Stashed Bleeding Hollow Loot",
+		model = 953811,
 		text = {
 			en = "Stashed Bleeding Hollow Loot",
 			es = "Botín de los Foso Sangrante oculto",
@@ -21072,6 +27169,7 @@ root("ObjectDB", {
 	},
 	[241767] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -21086,6 +27184,7 @@ root("ObjectDB", {
 	},
 	[241772] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -21100,6 +27199,7 @@ root("ObjectDB", {
 	},
 	[241773] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -21114,6 +27214,7 @@ root("ObjectDB", {
 	},
 	[241775] = {
 		readable = "Brazier of Awakening",
+		model = 978597,
 		text = {
 			en = "Brazier of Awakening",
 			es = "Blandón de Despertar",
@@ -21129,6 +27230,7 @@ root("ObjectDB", {
 	[241835] = {
 		readable = "Bleeding Hollow Mushroom Stash",
 		icon = "Interface/Icons/Ability_Vehicle_PlagueBarrel",
+		model = 902292,
 		text = {
 			en = "Bleeding Hollow Mushroom Stash",
 			es = "Alijo de champiñones de los Foso Sangrante",
@@ -21144,6 +27246,7 @@ root("ObjectDB", {
 	[241841] = {
 		readable = "Looted Mystical Staff",
 		icon = "Interface/Icons/inv_misc_ornatebox",
+		model = 238839,
 		text = {
 			en = "Looted Mystical Staff",
 			es = "Bastón místico despojado",
@@ -21159,6 +27262,7 @@ root("ObjectDB", {
 	[241847] = {
 		readable = "The Commander's Shield",
 		icon = "Interface/Icons/INV_Shield_09",
+		model = 929409,
 		text = {
 			en = "The Commander's Shield",
 			es = "Escudo del Comandante",
@@ -21174,6 +27278,7 @@ root("ObjectDB", {
 	[241848] = {
 		readable = "Dazzling Rod",
 		icon = "Interface/Icons/INV_Rod_EnchantedEternium",
+		model = 244252,
 		text = {
 			en = "Dazzling Rod",
 			es = "Vara deslumbrante",
@@ -21188,6 +27293,7 @@ root("ObjectDB", {
 	},
 	[242242] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -21202,6 +27308,7 @@ root("ObjectDB", {
 	},
 	[242249] = {
 		readable = "Partially Mined Apexis Crystal",
+		model = 975539,
 		text = {
 			en = "Partially Mined Apexis Crystal",
 			es = "Cristal apexis parcialmente extraído",
@@ -21216,6 +27323,7 @@ root("ObjectDB", {
 	},
 	[242250] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -21230,6 +27338,7 @@ root("ObjectDB", {
 	},
 	[242328] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -21244,6 +27353,7 @@ root("ObjectDB", {
 	},
 	[242350] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -21258,6 +27368,7 @@ root("ObjectDB", {
 	},
 	[242446] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -21272,6 +27383,7 @@ root("ObjectDB", {
 	},
 	[242642] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -21286,6 +27398,7 @@ root("ObjectDB", {
 	},
 	[242643] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -21300,6 +27413,7 @@ root("ObjectDB", {
 	},
 	[242644] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -21314,6 +27428,7 @@ root("ObjectDB", {
 	},
 	[242645] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -21328,6 +27443,7 @@ root("ObjectDB", {
 	},
 	[242646] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -21342,6 +27458,7 @@ root("ObjectDB", {
 	},
 	[242647] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -21356,6 +27473,7 @@ root("ObjectDB", {
 	},
 	[242649] = {
 		readable = "Fel-Tainted Apexis Formation",
+		model = 975539,
 		text = {
 			en = "Fel-Tainted Apexis Formation",
 			es = "Formación apexis contaminada de energía vil",
@@ -21370,6 +27488,7 @@ root("ObjectDB", {
 	},
 	[242660] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -21384,6 +27503,7 @@ root("ObjectDB", {
 	},
 	[242662] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -21398,6 +27518,7 @@ root("ObjectDB", {
 	},
 	[242663] = {
 		readable = "Small Treasure Chest",
+		model = 979397,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -21412,6 +27533,7 @@ root("ObjectDB", {
 	},
 	[242664] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -21426,6 +27548,7 @@ root("ObjectDB", {
 	},
 	[242665] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -21440,6 +27563,7 @@ root("ObjectDB", {
 	},
 	[242666] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -21454,6 +27578,7 @@ root("ObjectDB", {
 	},
 	[242667] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -21468,6 +27593,7 @@ root("ObjectDB", {
 	},
 	[242668] = {
 		readable = "Glimmering Treasure Chest",
+		model = 1349622,
 		text = {
 			en = "Glimmering Treasure Chest",
 			es = "Arqueta brillante",
@@ -21482,6 +27608,7 @@ root("ObjectDB", {
 	},
 	[242669] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -21496,6 +27623,7 @@ root("ObjectDB", {
 	},
 	[242670] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -21510,6 +27638,7 @@ root("ObjectDB", {
 	},
 	[242671] = {
 		readable = "Glimmering Treasure Chest",
+		model = 1349622,
 		text = {
 			en = "Glimmering Treasure Chest",
 			es = "Arqueta brillante",
@@ -21524,6 +27653,7 @@ root("ObjectDB", {
 	},
 	[242675] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -21538,6 +27668,7 @@ root("ObjectDB", {
 	},
 	[242678] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -21552,6 +27683,7 @@ root("ObjectDB", {
 	},
 	[242683] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -21566,6 +27698,7 @@ root("ObjectDB", {
 	},
 	[242959] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -21580,6 +27713,7 @@ root("ObjectDB", {
 	},
 	[243321] = {
 		readable = "Feral Stone",
+		model = 1127329,
 		text = {
 			en = "Feral Stone",
 			es = "Piedra Feral",
@@ -21594,6 +27728,7 @@ root("ObjectDB", {
 	},
 	[243323] = {
 		readable = "Balance Stone",
+		model = 1127332,
 		text = {
 			en = "Balance Stone",
 			es = "Piedra de Equilibrio",
@@ -21609,6 +27744,7 @@ root("ObjectDB", {
 	[243334] = {
 		readable = "Withered Herb",
 		icon = "Interface/Icons/INV_Misc_Herb_NightmareVine_Stem",
+		model = 219480,
 		text = {
 			en = "Withered Herb",
 			es = "Hierba marchita",
@@ -21623,6 +27759,7 @@ root("ObjectDB", {
 	},
 	[243392] = {
 		readable = "Alchemy Book",
+		model = 985165,
 		text = {
 			en = "Alchemy Book",
 			es = "Libro de alquimia",
@@ -21631,10 +27768,13 @@ root("ObjectDB", {
 			it = "Libro di Alchimia",
 			pt = "Livro de Alquimia",
 			ru = "Алхимическая книга",
+			ko = "[Alchemy Book]",
+			cn = "[Alchemy Book]",
 		},
 	},
 	[243688] = {
 		readable = "Treasure Chest",
+		model = 1402238,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -21649,6 +27789,7 @@ root("ObjectDB", {
 	},
 	[243690] = {
 		readable = "Bejeweled Egg",
+		model = 1004785,
 		text = {
 			en = "Bejeweled Egg",
 			es = "Huevo con joyas",
@@ -21663,6 +27804,7 @@ root("ObjectDB", {
 	},
 	[243693] = {
 		readable = "Dead Man's Chest",
+		model = 446671,
 		text = {
 			en = "Dead Man's Chest",
 			es = "Cofre de un hombre muerto",
@@ -21671,11 +27813,13 @@ root("ObjectDB", {
 			it = "Scrigno del Morto",
 			pt = "Baú do Morto",
 			ru = "Сундук мертвеца",
+			ko = "[Dead Man's Chest]",
 			cn = "亡灵宝藏",
 		},
 	},
 	[243698] = {
 		readable = "Glimmering Treasure Chest",
+		model = 1402222,
 		text = {
 			en = "Glimmering Treasure Chest",
 			es = "Arqueta brillante",
@@ -21690,6 +27834,7 @@ root("ObjectDB", {
 	},
 	[243773] = {
 		readable = "Treasure Chest",
+		model = 1402238,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -21704,6 +27849,7 @@ root("ObjectDB", {
 	},
 	[243798] = {
 		readable = "A Steamy Jewelry Box",
+		model = 1100065,
 		text = {
 			en = "A Steamy Jewelry Box",
 			es = "El joyero tórrido",
@@ -21718,19 +27864,23 @@ root("ObjectDB", {
 	},
 	[243899] = {
 		readable = "Broken Ley Flame Burner",
+		model = 528625,
 		text = {
 			en = "Broken Ley Flame Burner",
 			es = "Quemador de llama ley roto",
 			de = "Kaputter Leyflammenbrenner",
 			fr = "Brûle-flamme tellurique cassé",
+			it = "[Broken Ley Flame Burner]",
 			pt = "Queimador de Chama de Meridiano Quebrado",
 			ru = "Сломанная силовая горелка",
 			ko = "부서진 지맥불길 가열기",
+			cn = "[Broken Ley Flame Burner]",
 		},
 	},
 	[243911] = {
 		readable = "Snow Mound",
 		icon = "Interface/Icons/INV_Ammo_Snowball",
+		model = 196993,
 		text = {
 			en = "Snow Mound",
 			es = "Montículo de nieve",
@@ -21745,6 +27895,7 @@ root("ObjectDB", {
 	},
 	[244447] = {
 		readable = "White Murloc Egg",
+		model = 202737,
 		text = {
 			en = "White Murloc Egg",
 			es = "Huevo de múrloc blanco",
@@ -21753,11 +27904,13 @@ root("ObjectDB", {
 			it = "Uovo di Murloc Bianco",
 			pt = "Ovo de Murloc Branco",
 			ru = "Белое яйцо мурлока",
+			ko = "[White Murloc Egg]",
 			cn = "白色鱼人卵",
 		},
 	},
 	[244453] = {
 		readable = "Cullen's Scouting Report",
+		model = 936441,
 		text = {
 			en = "Cullen's Scouting Report",
 			es = "Informe de exploración de Cullen",
@@ -21773,6 +27926,7 @@ root("ObjectDB", {
 	[244473] = {
 		readable = "Thunder Totem Stolen Goods",
 		icon = "Interface/Icons/inv_misc_ornatebox",
+		model = 979119,
 		text = {
 			en = "Thunder Totem Stolen Goods",
 			es = "Bienes robados de los Tótem del Trueno",
@@ -21787,6 +27941,7 @@ root("ObjectDB", {
 	},
 	[244494] = {
 		readable = "Treasure Chest",
+		model = 1402238,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -21801,6 +27956,7 @@ root("ObjectDB", {
 	},
 	[244519] = {
 		readable = "Treasure Chest",
+		model = 1402238,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -21815,6 +27971,7 @@ root("ObjectDB", {
 	},
 	[244628] = {
 		readable = "Taurson's Prize",
+		model = 446677,
 		text = {
 			en = "Taurson's Prize",
 			es = "Premio de Taurson",
@@ -21829,6 +27986,7 @@ root("ObjectDB", {
 	},
 	[244651] = {
 		readable = "Steamy Romance Novel",
+		model = 198017,
 		text = {
 			en = "Steamy Romance Novel",
 			es = "Novela romántica tórrida",
@@ -21853,12 +28011,14 @@ root("ObjectDB", {
 			it = "|cFFFFFFFFStep 8:|r Pagina 5.555",
 			pt = "|cFFFFFFFFStep 8:|r Página 5555",
 			ru = "|cFFFFFFFFШаг 8:|r Страница 5555",
+			ko = "[Page 5555]",
 			cn = "|cFFFFFFFF第8步:|r 第5555页",
 		},
 	},
 	[244689] = {
 		readable = "Small Treasure Chest",
 		icon = "Interface/Worldmap/TreasureChest_64Grey",
+		model = 1349995,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -21874,6 +28034,7 @@ root("ObjectDB", {
 	[244691] = {
 		readable = "Small Treasure Chest",
 		icon = "Interface/Worldmap/TreasureChest_64Grey",
+		model = 1349995,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -21889,6 +28050,7 @@ root("ObjectDB", {
 	[244692] = {
 		readable = "Small Treasure Chest",
 		icon = "Interface/Worldmap/TreasureChest_64Grey",
+		model = 1349995,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -21904,6 +28066,7 @@ root("ObjectDB", {
 	[244694] = {
 		readable = "Small Treasure Chest",
 		icon = "Interface/Worldmap/TreasureChest_64Grey",
+		model = 1349995,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -21919,6 +28082,7 @@ root("ObjectDB", {
 	[244698] = {
 		readable = "Small Treasure Chest",
 		icon = "Interface/Worldmap/TreasureChest_64Grey",
+		model = 1349995,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -21934,6 +28098,7 @@ root("ObjectDB", {
 	[244699] = {
 		readable = "Small Treasure Chest",
 		icon = "Interface/Worldmap/TreasureChest_64Grey",
+		model = 1349995,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -21949,6 +28114,7 @@ root("ObjectDB", {
 	[244700] = {
 		readable = "Small Treasure Chest",
 		icon = "Interface/Worldmap/TreasureChest_64Grey",
+		model = 1349995,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -21964,6 +28130,7 @@ root("ObjectDB", {
 	[244701] = {
 		readable = "Small Treasure Chest",
 		icon = "Interface/Worldmap/TreasureChest_64Grey",
+		model = 1349995,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -21976,8 +28143,99 @@ root("ObjectDB", {
 			cn = "小宝箱",
 		},
 	},
+	[244774] = {
+		readable = "Aethril",
+		model = 1391548,
+		text = {
+			en = "Aethril",
+			es = "Aethril",
+			de = "Aethril",
+			fr = "Aethril",
+			it = "Aethril",
+			pt = "Aethril",
+			ru = "Айтрил",
+			ko = "에이트릴",
+			cn = "安瑟瑞尔花",
+		},
+	},
+	[244775] = {
+		readable = "Dreamleaf",
+		model = 1369688,
+		text = {
+			en = "Dreamleaf",
+			es = "Frondasueño",
+			de = "Traumlaub",
+			fr = "Songefeuille",
+			it = "Erbonirica",
+			pt = "Folha-de-sonho",
+			ru = "Грезолист",
+			ko = "꿈잎사귀",
+			cn = "入梦叶",
+		},
+	},
+	[244776] = {
+		readable = "Dreamleaf",
+		model = 1370949,
+		text = {
+			en = "Dreamleaf",
+			es = "Frondasueño",
+			de = "Traumlaub",
+			fr = "Songefeuille",
+			it = "Erbonirica",
+			pt = "Folha-de-sonho",
+			ru = "Грезолист",
+			ko = "꿈잎사귀",
+			cn = "入梦叶",
+		},
+	},
+	[244777] = {
+		readable = "Fjarnskaggl",
+		model = 1282724,
+		text = {
+			en = "Fjarnskaggl",
+			es = "Fjarnskaggl",
+			de = "Fjarnskaggl",
+			fr = "Fjarnskaggl",
+			it = "Fjarnskaggl",
+			pt = "Fjarnskaggl",
+			ru = "Фьярнскаггл",
+			ko = "피아른스카글",
+			cn = "夏斯卡格草",
+		},
+	},
+	[244778] = {
+		readable = "Starlight Rose",
+		model = 1357601,
+		text = {
+			en = "Starlight Rose",
+			es = "Rosa luz estelar",
+			de = "Sternlichtrose",
+			fr = "Rose lumétoile",
+			it = "Rosa Lucestellare",
+			pt = "Rosa-da-luz-estelar",
+			ru = "Звездная роза",
+			ko = "별빛 장미",
+			cn = "星光玫瑰",
+		},
+	},
+	[244786] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "[Felwort]",
+			cn = "[Felwort]",
+		},
+	},
 	[244887] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -21992,6 +28250,7 @@ root("ObjectDB", {
 	},
 	[244899] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22006,6 +28265,7 @@ root("ObjectDB", {
 	},
 	[244901] = {
 		readable = "Treasure Chest",
+		model = 1402264,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -22020,6 +28280,7 @@ root("ObjectDB", {
 	},
 	[244902] = {
 		readable = "Treasure Chest",
+		model = 1402264,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -22034,6 +28295,7 @@ root("ObjectDB", {
 	},
 	[244903] = {
 		readable = "Treasure Chest",
+		model = 1402264,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -22048,6 +28310,7 @@ root("ObjectDB", {
 	},
 	[244904] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22062,6 +28325,7 @@ root("ObjectDB", {
 	},
 	[244905] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22076,6 +28340,7 @@ root("ObjectDB", {
 	},
 	[244909] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22090,6 +28355,7 @@ root("ObjectDB", {
 	},
 	[244912] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22104,6 +28370,7 @@ root("ObjectDB", {
 	},
 	[244913] = {
 		readable = "Treasure Chest",
+		model = 1402264,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -22118,6 +28385,7 @@ root("ObjectDB", {
 	},
 	[244917] = {
 		readable = "Treasure Chest",
+		model = 1402264,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -22132,6 +28400,7 @@ root("ObjectDB", {
 	},
 	[244928] = {
 		readable = "Glimmering Treasure Chest",
+		model = 1402270,
 		text = {
 			en = "Glimmering Treasure Chest",
 			es = "Arqueta brillante",
@@ -22147,6 +28416,7 @@ root("ObjectDB", {
 	[244965] = {
 		readable = "Sheddle's Chest",
 		icon = "Interface/Icons/Garrison_SilverChest",
+		model = 979397,
 		text = {
 			en = "Sheddle's Chest",
 			es = "Cofre de Sheddle",
@@ -22161,6 +28431,7 @@ root("ObjectDB", {
 	},
 	[244986] = {
 		readable = "Legion Portal",
+		model = 986958,
 		text = {
 			en = "Legion Portal",
 			es = "Portal de la Legión",
@@ -22192,6 +28463,7 @@ root("ObjectDB", {
 	[245286] = {
 		readable = "Crystalline Cat Figurine",
 		icon = "Interface/Icons/trade_archaeology_catstatueemeraldeyes",
+		model = 192711,
 		text = {
 			en = "Crystalline Cat Figurine",
 			es = "Figurilla de gato cristalina",
@@ -22207,6 +28479,7 @@ root("ObjectDB", {
 	[245316] = {
 		readable = "Small Treasure Chest",
 		icon = "Interface/Worldmap/TreasureChest_64Grey",
+		model = 1349995,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Cofre del tesoro pequeño",
@@ -22219,9 +28492,40 @@ root("ObjectDB", {
 			cn = "小宝箱",
 		},
 	},
+	[245324] = {
+		readable = "Rich Leystone Deposit",
+		model = 1244490,
+		text = {
+			en = "Rich Leystone Deposit",
+			es = "Depósito rico en piedra Ley",
+			de = "Reiches Leysteinvorkommen",
+			fr = "Riche gisement de tellurium",
+			it = "Deposito Ricco di Fagliaroccia",
+			pt = "Depósito Rico de Pedra de Meridiano",
+			ru = "Богатые залежи силового камня",
+			ko = "풍부한 지맥석 광맥",
+			cn = "富魔石矿脉",
+		},
+	},
+	[245325] = {
+		readable = "Rich Felslate Deposit",
+		model = 1244488,
+		text = {
+			en = "Rich Felslate Deposit",
+			es = "Depósito rico en pizarra vil",
+			de = "Reiches Teufelsschiefervorkommen",
+			fr = "Riche gisement de gangreschiste",
+			it = "Deposito Ricco di Vilardesia",
+			pt = "Depósito Rico de Vilardósia",
+			ru = "Богатые залежи сланца Скверны",
+			ko = "풍부한 지옥판암 광맥",
+			cn = "富邪能页岩矿脉",
+		},
+	},
 	[245328] = {
 		readable = "Enchanted Scroll",
 		icon = "Interface/Icons/inv_misc_scrollunrolled02b",
+		model = 1365480,
 		text = {
 			en = "Enchanted Scroll",
 			es = "Pergamino encantado",
@@ -22237,6 +28541,7 @@ root("ObjectDB", {
 	[245345] = {
 		readable = "Small Treasure Chest",
 		icon = "Interface/Worldmap/TreasureChest_64Grey",
+		model = 1349995,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22252,6 +28557,7 @@ root("ObjectDB", {
 	[245479] = {
 		readable = "Battered Chest",
 		icon = "Interface/Icons/INV_Box_01",
+		model = 446677,
 		text = {
 			en = "Battered Chest",
 			es = "Cofre maltrecho",
@@ -22266,6 +28572,7 @@ root("ObjectDB", {
 	},
 	[245524] = {
 		readable = "Treasure Chest",
+		model = 1402238,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -22280,6 +28587,7 @@ root("ObjectDB", {
 	},
 	[245525] = {
 		readable = "Small Treasure Chest",
+		model = 1402225,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22294,6 +28602,7 @@ root("ObjectDB", {
 	},
 	[245527] = {
 		readable = "Treasure Chest",
+		model = 1402238,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -22308,6 +28617,7 @@ root("ObjectDB", {
 	},
 	[245528] = {
 		readable = "Treasure Chest",
+		model = 1402238,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -22322,6 +28632,7 @@ root("ObjectDB", {
 	},
 	[245529] = {
 		readable = "Small Treasure Chest",
+		model = 1402225,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22336,6 +28647,7 @@ root("ObjectDB", {
 	},
 	[245530] = {
 		readable = "Glimmering Treasure Chest",
+		model = 1349622,
 		text = {
 			en = "Glimmering Treasure Chest",
 			es = "Arqueta brillante",
@@ -22350,6 +28662,7 @@ root("ObjectDB", {
 	},
 	[245531] = {
 		readable = "Treasure Chest",
+		model = 1402225,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22364,6 +28677,7 @@ root("ObjectDB", {
 	},
 	[245532] = {
 		readable = "Treasure Chest",
+		model = 1402238,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -22378,6 +28692,7 @@ root("ObjectDB", {
 	},
 	[245533] = {
 		readable = "Treasure Chest",
+		model = 1402238,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -22392,6 +28707,7 @@ root("ObjectDB", {
 	},
 	[245534] = {
 		readable = "Small Treasure Chest",
+		model = 1402225,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22406,6 +28722,7 @@ root("ObjectDB", {
 	},
 	[245535] = {
 		readable = "Small Treasure Chest",
+		model = 1402225,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22420,6 +28737,7 @@ root("ObjectDB", {
 	},
 	[245536] = {
 		readable = "Glimmering Treasure Chest",
+		model = 1402222,
 		text = {
 			en = "Glimmering Treasure Chest",
 			es = "Arqueta brillante",
@@ -22434,6 +28752,7 @@ root("ObjectDB", {
 	},
 	[245537] = {
 		readable = "Glimmering Treasure Chest",
+		model = 1402222,
 		text = {
 			en = "Glimmering Treasure Chest",
 			es = "Arqueta brillante",
@@ -22448,6 +28767,7 @@ root("ObjectDB", {
 	},
 	[245538] = {
 		readable = "Small Treasure Chest",
+		model = 1402225,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22462,6 +28782,7 @@ root("ObjectDB", {
 	},
 	[245541] = {
 		readable = "Small Treasure Chest",
+		model = 1402225,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22476,6 +28797,7 @@ root("ObjectDB", {
 	},
 	[245542] = {
 		readable = "Treasure Chest",
+		model = 1402238,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -22490,6 +28812,7 @@ root("ObjectDB", {
 	},
 	[245543] = {
 		readable = "Treasure Chest",
+		model = 1402238,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -22504,6 +28827,7 @@ root("ObjectDB", {
 	},
 	[245545] = {
 		readable = "Small Treasure Chest",
+		model = 1402225,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22518,6 +28842,7 @@ root("ObjectDB", {
 	},
 	[245547] = {
 		readable = "Small Treasure Chest",
+		model = 1402225,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22532,6 +28857,7 @@ root("ObjectDB", {
 	},
 	[245548] = {
 		readable = "Treasure Chest",
+		model = 1402238,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -22546,6 +28872,7 @@ root("ObjectDB", {
 	},
 	[245550] = {
 		readable = "Treasure Chest",
+		model = 1402238,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -22560,6 +28887,7 @@ root("ObjectDB", {
 	},
 	[245551] = {
 		readable = "Small Treasure Chest",
+		model = 1402225,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22574,6 +28902,7 @@ root("ObjectDB", {
 	},
 	[245553] = {
 		readable = "Treasure Chest",
+		model = 1402238,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -22588,6 +28917,7 @@ root("ObjectDB", {
 	},
 	[245554] = {
 		readable = "Small Treasure Chest",
+		model = 1402225,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22602,6 +28932,7 @@ root("ObjectDB", {
 	},
 	[245555] = {
 		readable = "Small Treasure Chest",
+		model = 1402225,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22616,6 +28947,7 @@ root("ObjectDB", {
 	},
 	[245579] = {
 		readable = "Treasure Chest",
+		model = 1402238,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -22630,6 +28962,7 @@ root("ObjectDB", {
 	},
 	[245580] = {
 		readable = "Small Treasure Chest",
+		model = 1402225,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22644,6 +28977,7 @@ root("ObjectDB", {
 	},
 	[245581] = {
 		readable = "Small Treasure Chest",
+		model = 1402225,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22658,6 +28992,7 @@ root("ObjectDB", {
 	},
 	[245601] = {
 		readable = "Small Treasure Chest",
+		model = 1402225,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22672,6 +29007,7 @@ root("ObjectDB", {
 	},
 	[245602] = {
 		readable = "Treasure Chest",
+		model = 1402238,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -22686,6 +29022,7 @@ root("ObjectDB", {
 	},
 	[245603] = {
 		readable = "Small Treasure Chest",
+		model = 1402225,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22701,6 +29038,7 @@ root("ObjectDB", {
 	[245688] = {
 		readable = "Shattered Burial Urn",
 		icon = "Interface/Icons/inv_misc_bowl_01",
+		model = 1110188,
 		text = {
 			en = "Shattered Burial Urn",
 			es = "Urna funeraria destrozada",
@@ -22716,6 +29054,7 @@ root("ObjectDB", {
 	[245793] = {
 		readable = "Battered Journal",
 		icon = "Interface/Icons/inv_offhand_1h_draenorcrafted_d_02a",
+		model = 949615,
 		text = {
 			en = "Battered Journal",
 			es = "Diario maltrecho",
@@ -22730,6 +29069,7 @@ root("ObjectDB", {
 	},
 	[245941] = {
 		readable = "Warp Cache",
+		model = 1349622,
 		text = {
 			en = "Warp Cache",
 			es = "Alijo de distorsión",
@@ -22738,12 +29078,14 @@ root("ObjectDB", {
 			it = "Cassa Distorcente",
 			pt = "Fardo Dimensional",
 			ru = "Искаженный тайник",
+			ko = "[Warp Cache]",
 			cn = "扭曲的箱子",
 		},
 	},
 	[245996] = {
 		readable = "Small Treasure Chest",
 		icon = "Interface/Worldmap/TreasureChest_64Grey",
+		model = 1349995,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22758,6 +29100,7 @@ root("ObjectDB", {
 	},
 	[246037] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -22773,6 +29116,7 @@ root("ObjectDB", {
 	[246147] = {
 		readable = "Small Treasure Chest",
 		icon = "Interface/Worldmap/TreasureChest_64Grey",
+		model = 1349995,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22787,6 +29131,7 @@ root("ObjectDB", {
 	},
 	[246154] = {
 		readable = "Broken Toy Box",
+		model = 193414,
 		text = {
 			en = "Broken Toy Box",
 			es = "Caja de juguetes rota",
@@ -22801,6 +29146,7 @@ root("ObjectDB", {
 	},
 	[246205] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22815,6 +29161,7 @@ root("ObjectDB", {
 	},
 	[246206] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22830,6 +29177,7 @@ root("ObjectDB", {
 	[246249] = {
 		readable = "Small Treasure Chest",
 		icon = "Interface/Worldmap/TreasureChest_64Grey",
+		model = 1349995,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22844,6 +29192,7 @@ root("ObjectDB", {
 	},
 	[246250] = {
 		readable = "Letter From Jabrul",
+		model = 1355115,
 		text = {
 			en = "Letter From Jabrul",
 			es = "Carta de Jabrul",
@@ -22852,10 +29201,13 @@ root("ObjectDB", {
 			it = "Lettera da Jabrul",
 			pt = "Carta de Jalesk",
 			ru = "Письмо Джабрула",
+			ko = "[Letter From Jabrul]",
+			cn = "[Letter From Jabrul]",
 		},
 	},
 	[246254] = {
 		readable = "Dusty Coffer",
+		model = 1349620,
 		text = {
 			en = "Dusty Coffer",
 			es = "Arca polvorienta",
@@ -22871,6 +29223,7 @@ root("ObjectDB", {
 	[246269] = {
 		readable = "Small Treasure Chest",
 		icon = "Interface/Worldmap/TreasureChest_64Grey",
+		model = 1349995,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22886,6 +29239,7 @@ root("ObjectDB", {
 	[246309] = {
 		readable = "Small Treasure Chest",
 		icon = "Interface/Worldmap/TreasureChest_64Grey",
+		model = 1349995,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22901,6 +29255,7 @@ root("ObjectDB", {
 	[246353] = {
 		readable = "Small Treasure Chest",
 		icon = "Interface/Worldmap/TreasureChest_64Grey",
+		model = 1349995,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22916,6 +29271,7 @@ root("ObjectDB", {
 	[246438] = {
 		readable = "Blingtron Circuit Design",
 		icon = "Interface/Icons/INV_Engineering_BlingtronsCircuitDesignTutorial",
+		model = 936413,
 		text = {
 			en = "Blingtron Circuit Design",
 			es = "Diseño de circuitos de Joyatrón",
@@ -22930,6 +29286,7 @@ root("ObjectDB", {
 	},
 	[246524] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22945,6 +29302,7 @@ root("ObjectDB", {
 	[246555] = {
 		readable = "Small Treasure Chest",
 		icon = "Interface/Worldmap/TreasureChest_64Grey",
+		model = 1349995,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22960,6 +29318,7 @@ root("ObjectDB", {
 	[246556] = {
 		readable = "Small Treasure Chest",
 		icon = "Interface/Worldmap/TreasureChest_64Grey",
+		model = 1349995,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22975,6 +29334,7 @@ root("ObjectDB", {
 	[246557] = {
 		readable = "Small Treasure Chest",
 		icon = "Interface/Worldmap/TreasureChest_64Grey",
+		model = 1349995,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -22990,6 +29350,7 @@ root("ObjectDB", {
 	[246558] = {
 		readable = "Small Treasure Chest",
 		icon = "Interface/Worldmap/TreasureChest_64Grey",
+		model = 1349995,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23005,6 +29366,7 @@ root("ObjectDB", {
 	[246559] = {
 		readable = "Small Treasure Chest",
 		icon = "Interface/Worldmap/TreasureChest_64Grey",
+		model = 1349995,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23020,6 +29382,7 @@ root("ObjectDB", {
 	[246560] = {
 		readable = "Small Treasure Chest",
 		icon = "Interface/Worldmap/TreasureChest_64Grey",
+		model = 1349995,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23035,6 +29398,7 @@ root("ObjectDB", {
 	[246561] = {
 		readable = "Small Treasure Chest",
 		icon = "Interface/Worldmap/TreasureChest_64Grey",
+		model = 1349995,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23050,6 +29414,7 @@ root("ObjectDB", {
 	[246562] = {
 		readable = "Small Treasure Chest",
 		icon = "Interface/Icons/Garrison_SilverChest",
+		model = 1349995,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23065,6 +29430,7 @@ root("ObjectDB", {
 	[247694] = {
 		readable = "Kel'danath's Knapsack",
 		icon = "Interface/Icons/trade_archaeology_silverscrollcase",
+		model = 1367347,
 		text = {
 			en = "Kel'danath's Knapsack",
 			es = "Morral de Kel'danath",
@@ -23080,6 +29446,7 @@ root("ObjectDB", {
 	[247797] = {
 		readable = "Lost Mail",
 		icon = "Interface/Icons/inv_misc_paperpackage01a",
+		model = 576627,
 		text = {
 			en = "Lost Mail",
 			es = "Correo perdido",
@@ -23090,6 +29457,216 @@ root("ObjectDB", {
 			ru = "Утерянное письмо",
 			ko = "잃어버린 우편",
 			cn = "遗失的邮件",
+		},
+	},
+	[247999] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
+		},
+	},
+	[248000] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
+		},
+	},
+	[248001] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
+		},
+	},
+	[248002] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
+		},
+	},
+	[248003] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
+		},
+	},
+	[248004] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
+		},
+	},
+	[248005] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
+		},
+	},
+	[248006] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
+		},
+	},
+	[248007] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
+		},
+	},
+	[248008] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
+		},
+	},
+	[248009] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
+		},
+	},
+	[248010] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
+		},
+	},
+	[248011] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Hierba vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
+		},
+	},
+	[248012] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
 		},
 	},
 	[248398] = {
@@ -23110,6 +29687,7 @@ root("ObjectDB", {
 	[248534] = {
 		readable = "Tears of Elune",
 		icon = "Interface/Icons/inv_misc_gem_x4_rare_uncut_purple",
+		model = 1337278,
 		text = {
 			en = "Tears of Elune",
 			es = "Lágrimas de Elune",
@@ -23125,6 +29703,7 @@ root("ObjectDB", {
 	[248854] = {
 		readable = "Desmond's Lockbox",
 		icon = "Interface/Icons/inv_misc_lockboxghostiron",
+		model = 1341658,
 		text = {
 			en = "Desmond's Lockbox",
 			es = "Arcón de Desmond",
@@ -23139,6 +29718,7 @@ root("ObjectDB", {
 	},
 	[249211] = {
 		readable = "Torn Shaldorei Silk",
+		model = 243298,
 		text = {
 			en = "Torn Shaldorei Silk",
 			es = "Seda shal'dorei rota",
@@ -23153,6 +29733,7 @@ root("ObjectDB", {
 	},
 	[249997] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23167,6 +29748,7 @@ root("ObjectDB", {
 	},
 	[250080] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23181,6 +29763,7 @@ root("ObjectDB", {
 	},
 	[250081] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23195,6 +29778,7 @@ root("ObjectDB", {
 	},
 	[250083] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23209,6 +29793,7 @@ root("ObjectDB", {
 	},
 	[250084] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23223,6 +29808,7 @@ root("ObjectDB", {
 	},
 	[250085] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23237,6 +29823,7 @@ root("ObjectDB", {
 	},
 	[250087] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23251,6 +29838,7 @@ root("ObjectDB", {
 	},
 	[250088] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23265,6 +29853,7 @@ root("ObjectDB", {
 	},
 	[250090] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23279,6 +29868,7 @@ root("ObjectDB", {
 	},
 	[250091] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23293,6 +29883,7 @@ root("ObjectDB", {
 	},
 	[250092] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -23307,6 +29898,7 @@ root("ObjectDB", {
 	},
 	[250097] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23321,6 +29913,7 @@ root("ObjectDB", {
 	},
 	[250098] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23335,6 +29928,7 @@ root("ObjectDB", {
 	},
 	[250102] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -23349,6 +29943,7 @@ root("ObjectDB", {
 	},
 	[250103] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23363,6 +29958,7 @@ root("ObjectDB", {
 	},
 	[250104] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23377,6 +29973,7 @@ root("ObjectDB", {
 	},
 	[250106] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23391,6 +29988,7 @@ root("ObjectDB", {
 	},
 	[250107] = {
 		readable = "Glimmering Treasure Chest",
+		model = 1349622,
 		text = {
 			en = "Glimmering Treasure Chest",
 			es = "Arqueta brillante",
@@ -23405,6 +30003,7 @@ root("ObjectDB", {
 	},
 	[250108] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23419,6 +30018,7 @@ root("ObjectDB", {
 	},
 	[250109] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -23434,6 +30034,7 @@ root("ObjectDB", {
 	[250383] = {
 		readable = "Moonshade Relic",
 		icon = "Interface/Icons/inv_herbalism_70_yserallineseed",
+		model = 1321134,
 		text = {
 			en = "Moonshade Relic",
 			es = "Reliquia Sombra Lunar",
@@ -23448,6 +30049,7 @@ root("ObjectDB", {
 	},
 	[250541] = {
 		readable = "Treasure Chest",
+		model = 1402238,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -23468,6 +30070,7 @@ root("ObjectDB", {
 	},
 	[250984] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23482,6 +30085,7 @@ root("ObjectDB", {
 	},
 	[250985] = {
 		readable = "Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -23496,6 +30100,7 @@ root("ObjectDB", {
 	},
 	[250987] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23511,6 +30116,7 @@ root("ObjectDB", {
 	[251032] = {
 		readable = "Armoire",
 		icon = "Interface/Icons/trade_archaeology_draenei_tome",
+		model = 1368709,
 		text = {
 			en = "Armoire",
 			es = "Ropero",
@@ -23525,6 +30131,7 @@ root("ObjectDB", {
 	},
 	[251124] = {
 		readable = "Glimmering Treasure Chest",
+		model = 1349622,
 		text = {
 			en = "Glimmering Treasure Chest",
 			es = "Arqueta brillante",
@@ -23540,6 +30147,7 @@ root("ObjectDB", {
 	[251168] = {
 		readable = "Ephemeral Crystal",
 		icon = "Interface/Icons/TRADE_ARCHAEOLOGY_NAARUCRYSTAL",
+		model = 942442,
 		text = {
 			en = "Ephemeral Crystal",
 			es = "Cristal efímero",
@@ -23554,6 +30162,7 @@ root("ObjectDB", {
 	},
 	[251218] = {
 		readable = "Rollo's Runestone",
+		model = 1139506,
 		text = {
 			en = "Rollo's Runestone",
 			es = "Piedra rúnica de Rolo",
@@ -23568,6 +30177,7 @@ root("ObjectDB", {
 	},
 	[251220] = {
 		readable = "Ragnar's Runestone",
+		model = 1139506,
 		text = {
 			en = "Ragnar's Runestone",
 			es = "Piedra rúnica de Ragnar",
@@ -23582,6 +30192,7 @@ root("ObjectDB", {
 	},
 	[251221] = {
 		readable = "Floki's Runestone",
+		model = 1139506,
 		text = {
 			en = "Floki's Runestone",
 			es = "Piedra rúnica de Floki",
@@ -23597,6 +30208,7 @@ root("ObjectDB", {
 	[251416] = {
 		readable = "Ancient Mana Chunk",
 		icon = "Interface/Icons/inv_leycrystallarge",
+		model = 1108691,
 		text = {
 			en = "Ancient Mana Chunk",
 			es = "Trozo de maná antiguo",
@@ -23611,6 +30223,7 @@ root("ObjectDB", {
 	},
 	[251552] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23635,11 +30248,13 @@ root("ObjectDB", {
 			it = "|cFFFFFFFFStep 4:|r Pagina 655",
 			pt = "|cFFFFFFFFStep 4:|r Página 655",
 			ru = "|cFFFFFFFFШаг 4:|r Страница 655",
+			ko = "[Page 655]",
 			cn = "|cFFFFFFFF第4步:|r 第655页",
 		},
 	},
 	[251713] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23654,6 +30269,7 @@ root("ObjectDB", {
 	},
 	[251714] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23668,6 +30284,7 @@ root("ObjectDB", {
 	},
 	[251716] = {
 		readable = "Glimmering Treasure Chest",
+		model = 1402270,
 		text = {
 			en = "Glimmering Treasure Chest",
 			es = "Arqueta brillante",
@@ -23682,6 +30299,7 @@ root("ObjectDB", {
 	},
 	[251719] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23696,6 +30314,7 @@ root("ObjectDB", {
 	},
 	[251720] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23710,6 +30329,7 @@ root("ObjectDB", {
 	},
 	[251723] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23724,6 +30344,7 @@ root("ObjectDB", {
 	},
 	[251737] = {
 		readable = "Treasure Chest",
+		model = 1402264,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -23738,6 +30359,7 @@ root("ObjectDB", {
 	},
 	[251738] = {
 		readable = "Treasure Chest",
+		model = 1402264,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -23752,6 +30374,7 @@ root("ObjectDB", {
 	},
 	[251761] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23766,6 +30389,7 @@ root("ObjectDB", {
 	},
 	[251762] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23780,6 +30404,7 @@ root("ObjectDB", {
 	},
 	[251764] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23794,6 +30419,7 @@ root("ObjectDB", {
 	},
 	[251772] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23808,6 +30434,7 @@ root("ObjectDB", {
 	},
 	[251776] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23822,6 +30449,7 @@ root("ObjectDB", {
 	},
 	[251780] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23836,6 +30464,7 @@ root("ObjectDB", {
 	},
 	[251782] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23850,6 +30479,7 @@ root("ObjectDB", {
 	},
 	[251792] = {
 		readable = "Small Treasure Chest",
+		model = 1402264,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23864,6 +30494,7 @@ root("ObjectDB", {
 	},
 	[251820] = {
 		readable = "Treasure Chest",
+		model = 1314905,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -23878,6 +30509,7 @@ root("ObjectDB", {
 	},
 	[251851] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23892,6 +30524,7 @@ root("ObjectDB", {
 	},
 	[251853] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23906,6 +30539,7 @@ root("ObjectDB", {
 	},
 	[251854] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23920,6 +30554,7 @@ root("ObjectDB", {
 	},
 	[251856] = {
 		readable = "Small Treasure Chest",
+		model = 1402263,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -23934,6 +30569,7 @@ root("ObjectDB", {
 	},
 	[251857] = {
 		readable = "Treasure Chest",
+		model = 1402264,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -23965,6 +30601,7 @@ root("ObjectDB", {
 	[252107] = {
 		readable = "Unpowered Telemancy Beacon",
 		icon = "Interface/Icons/inv_engineering_failure-detection-pylon",
+		model = 1368866,
 		text = {
 			en = "Unpowered Telemancy Beacon",
 			es = "Baliza de telemancia desactivada",
@@ -23979,6 +30616,7 @@ root("ObjectDB", {
 	},
 	[252232] = {
 		readable = "Aponi's Libram",
+		model = 983862,
 		text = {
 			en = "Aponi's Libram",
 			es = "Tratado de Aponi",
@@ -23993,6 +30631,7 @@ root("ObjectDB", {
 	},
 	[252258] = {
 		readable = "Leyline Feed",
+		model = 1354920,
 		text = {
 			en = "Leyline Feed",
 			es = "Suministro de línea Ley",
@@ -24007,6 +30646,7 @@ root("ObjectDB", {
 	},
 	[252259] = {
 		readable = "Leyline Feed",
+		model = 1354920,
 		text = {
 			en = "Leyline Feed",
 			es = "Suministro de línea Ley",
@@ -24021,6 +30661,7 @@ root("ObjectDB", {
 	},
 	[252260] = {
 		readable = "Leyline Feed",
+		model = 1354920,
 		text = {
 			en = "Leyline Feed",
 			es = "Suministro de línea Ley",
@@ -24035,6 +30676,7 @@ root("ObjectDB", {
 	},
 	[252261] = {
 		readable = "Leyline Feed",
+		model = 1354920,
 		text = {
 			en = "Leyline Feed",
 			es = "Suministro de línea Ley",
@@ -24049,6 +30691,7 @@ root("ObjectDB", {
 	},
 	[252262] = {
 		readable = "Leyline Feed",
+		model = 1354920,
 		text = {
 			en = "Leyline Feed",
 			es = "Suministro de línea Ley",
@@ -24063,6 +30706,7 @@ root("ObjectDB", {
 	},
 	[252263] = {
 		readable = "Leyline Feed",
+		model = 1354920,
 		text = {
 			en = "Leyline Feed",
 			es = "Suministro de línea Ley",
@@ -24077,6 +30721,7 @@ root("ObjectDB", {
 	},
 	[252264] = {
 		readable = "Leyline Feed",
+		model = 1354920,
 		text = {
 			en = "Leyline Feed",
 			es = "Suministro de línea Ley",
@@ -24092,6 +30737,7 @@ root("ObjectDB", {
 	[252267] = {
 		readable = "Large Plundered Sack",
 		icon = "Interface/Icons/inv_misc_5potionbag_special",
+		model = 1254955,
 		text = {
 			en = "Large Plundered Sack",
 			es = "Saco desvalijado grande",
@@ -24100,11 +30746,14 @@ root("ObjectDB", {
 			it = "Grosso Sacco Saccheggiato",
 			pt = "Saco de Saque Grande",
 			ru = "Большой мешок с награбленным",
+			ko = "[Large Plundered Sack]",
+			cn = "[Large Plundered Sack]",
 		},
 	},
 	[252269] = {
 		readable = "Pack of Battle Potions",
 		icon = "Interface/Icons/INV_Misc_Bag_29",
+		model = 936417,
 		text = {
 			en = "Pack of Battle Potions",
 			es = "Paquete de pociones de batalla",
@@ -24120,6 +30769,7 @@ root("ObjectDB", {
 	[252270] = {
 		readable = "Mysterious Crate",
 		icon = "Interface/Icons/INV_Crate_02",
+		model = 200960,
 		text = {
 			en = "Mysterious Crate",
 			es = "Cajón misterioso",
@@ -24128,12 +30778,14 @@ root("ObjectDB", {
 			it = "Cassa Misteriosa",
 			pt = "Caixote Misterioso",
 			ru = "Таинственный ящик",
+			ko = "[Mysterious Crate]",
 			cn = "神秘的箱子",
 		},
 	},
 	[252272] = {
 		readable = "Smoky Boots",
 		icon = "Interface/Icons/INV_Boots_Leather_PVPRogue_G_01",
+		model = 198139,
 		text = {
 			en = "Smoky Boots",
 			es = "Botas humeantes",
@@ -24142,12 +30794,14 @@ root("ObjectDB", {
 			it = "Stivali Fumanti",
 			pt = "Botas Fuliginosas",
 			ru = "Паровые башмаки",
+			ko = "[Smoky Boots]",
 			cn = "冒烟的靴子",
 		},
 	},
 	[252273] = {
 		readable = "Box of Throwing Daggers",
 		icon = "Interface/Icons/INV_ThrowingKnife_02",
+		model = 1349032,
 		text = {
 			en = "Box of Throwing Daggers",
 			es = "Caja de dagas arrojadizas",
@@ -24157,11 +30811,13 @@ root("ObjectDB", {
 			pt = "Caixa de Adagas de Arremesso",
 			ru = "Коробка с метательными кинжалами",
 			ko = "투척용 단검이 든 상자",
+			cn = "[Box of Throwing Daggers]",
 		},
 	},
 	[252277] = {
 		readable = "Thistle Tea",
 		icon = "Interface/Icons/INV_Drink_Milk_05",
+		model = 1379113,
 		text = {
 			en = "Thistle Tea",
 			es = "Té de cardo",
@@ -24177,6 +30833,7 @@ root("ObjectDB", {
 	[252279] = {
 		readable = "Stolen Tome of Artifact Lore",
 		icon = "Interface/Icons/DiabloAnniversary_TomeofTownPortal",
+		model = 1365452,
 		text = {
 			en = "Stolen Tome of Artifact Lore",
 			es = "Tomo robado de conocimiento sobre artefactos",
@@ -24192,6 +30849,7 @@ root("ObjectDB", {
 	[252282] = {
 		readable = "Sparkling Set of Keys",
 		icon = "Interface/Icons/INV_Misc_Key_11",
+		model = 970210,
 		text = {
 			en = "Sparkling Set of Keys",
 			es = "Juego de llaves chispeante",
@@ -24201,11 +30859,13 @@ root("ObjectDB", {
 			pt = "Molho de Chaves Reluzente",
 			ru = "Связка блестящих ключей",
 			ko = "반짝거리는 열쇠 꾸러미",
+			cn = "[Sparkling Set of Keys]",
 		},
 	},
 	[252284] = {
 		readable = "Pile of Sticky Bombs",
 		icon = "Interface/Icons/INV_Misc_Bomb_02",
+		model = 985362,
 		text = {
 			en = "Pile of Sticky Bombs",
 			es = "Montón de bombas pegajosas",
@@ -24221,6 +30881,7 @@ root("ObjectDB", {
 	[252289] = {
 		readable = "Vanishing Powder",
 		icon = "Interface/Icons/INV_Misc_Powder_Black",
+		model = 1310395,
 		text = {
 			en = "Vanishing Powder",
 			es = "Polvo desvanecedor",
@@ -24235,6 +30896,7 @@ root("ObjectDB", {
 	},
 	[252395] = {
 		readable = "Deathcharger Hitching Post",
+		model = 852646,
 		text = {
 			en = "Deathcharger Hitching Post",
 			es = "Amarradero de destrero de la muerte",
@@ -24245,6 +30907,21 @@ root("ObjectDB", {
 			ru = "Коновязь коня смерти",
 			ko = "죽음의 군마 말뚝대",
 			cn = "死亡战马马桩",
+		},
+	},
+	[252404] = {
+		readable = "Felwort",
+		model = 1284877,
+		text = {
+			en = "Felwort",
+			es = "Matojo vil",
+			de = "Teufelswurz",
+			fr = "Gangrèche",
+			it = "Vilpianta",
+			pt = "Maltevil",
+			ru = "Зверобой Скверны",
+			ko = "지옥나물",
+			cn = "邪能球茎",
 		},
 	},
 	[252412] = {
@@ -24265,6 +30942,7 @@ root("ObjectDB", {
 	},
 	[252432] = {
 		readable = "Shimmering Ancient Mana Cluster",
+		model = 1108691,
 		text = {
 			en = "Shimmering Ancient Mana Cluster",
 			es = "Montón de maná antiguo fulgurante",
@@ -24295,6 +30973,7 @@ root("ObjectDB", {
 	},
 	[252446] = {
 		readable = "Shimmering Ancient Mana Cluster",
+		model = 1108691,
 		text = {
 			en = "Shimmering Ancient Mana Cluster",
 			es = "Montón de maná antiguo fulgurante",
@@ -24309,6 +30988,7 @@ root("ObjectDB", {
 	},
 	[252447] = {
 		readable = "Shimmering Ancient Mana Cluster",
+		model = 1108691,
 		text = {
 			en = "Shimmering Ancient Mana Cluster",
 			es = "Montón de maná antiguo fulgurante",
@@ -24323,6 +31003,7 @@ root("ObjectDB", {
 	},
 	[252448] = {
 		readable = "Shimmering Ancient Mana Cluster",
+		model = 1108691,
 		text = {
 			en = "Shimmering Ancient Mana Cluster",
 			es = "Montón de maná antiguo fulgurante",
@@ -24337,6 +31018,7 @@ root("ObjectDB", {
 	},
 	[252449] = {
 		readable = "Shimmering Ancient Mana Cluster",
+		model = 1108691,
 		text = {
 			en = "Shimmering Ancient Mana Cluster",
 			es = "Montón de maná antiguo fulgurante",
@@ -24351,6 +31033,7 @@ root("ObjectDB", {
 	},
 	[252450] = {
 		readable = "Shimmering Ancient Mana Cluster",
+		model = 1108691,
 		text = {
 			en = "Shimmering Ancient Mana Cluster",
 			es = "Montón de maná antiguo fulgurante",
@@ -24509,6 +31192,7 @@ root("ObjectDB", {
 	},
 	[252570] = {
 		readable = "Skyhold Chest of Riches",
+		model = 1402264,
 		text = {
 			en = "Skyhold Chest of Riches",
 			es = "Cofre de riquezas del Bastión Celestial",
@@ -24523,6 +31207,7 @@ root("ObjectDB", {
 	},
 	[252802] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -24537,6 +31222,7 @@ root("ObjectDB", {
 	},
 	[252803] = {
 		readable = "Small Treasure Chest",
+		model = 1349995,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -24551,6 +31237,7 @@ root("ObjectDB", {
 	},
 	[252805] = {
 		readable = "Treasure Chest",
+		model = 1353175,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -24565,6 +31252,7 @@ root("ObjectDB", {
 	},
 	[252806] = {
 		readable = "Small Treasure Chest",
+		model = 1349995,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -24579,6 +31267,7 @@ root("ObjectDB", {
 	},
 	[252807] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -24593,6 +31282,7 @@ root("ObjectDB", {
 	},
 	[252808] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -24607,6 +31297,7 @@ root("ObjectDB", {
 	},
 	[252810] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -24621,6 +31312,7 @@ root("ObjectDB", {
 	},
 	[252812] = {
 		readable = "Treasure Chest",
+		model = 1096610,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -24635,6 +31327,7 @@ root("ObjectDB", {
 	},
 	[252813] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -24649,6 +31342,7 @@ root("ObjectDB", {
 	},
 	[252814] = {
 		readable = "Unpowered Telemancy Beacon",
+		model = 1368866,
 		text = {
 			en = "Unpowered Telemancy Beacon",
 			es = "Baliza de telemancia desactivada",
@@ -24664,6 +31358,7 @@ root("ObjectDB", {
 	[252815] = {
 		readable = "Unpowered Telemancy Beacon",
 		icon = "Interface/Icons/inv_engineering_failure_detection_pylon",
+		model = 1368866,
 		text = {
 			en = "Unpowered Telemancy Beacon",
 			es = "Baliza de telemancia desactivada",
@@ -24678,6 +31373,7 @@ root("ObjectDB", {
 	},
 	[252816] = {
 		readable = "Unpowered Telemancy Beacon",
+		model = 1368866,
 		text = {
 			en = "Unpowered Telemancy Beacon",
 			es = "Baliza de telemancia desactivada",
@@ -24692,6 +31388,7 @@ root("ObjectDB", {
 	},
 	[252817] = {
 		readable = "Unpowered Telemancy Beacon",
+		model = 1368866,
 		text = {
 			en = "Unpowered Telemancy Beacon",
 			es = "Baliza de telemancia desactivada",
@@ -24706,6 +31403,7 @@ root("ObjectDB", {
 	},
 	[252819] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -24720,6 +31418,7 @@ root("ObjectDB", {
 	},
 	[252820] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -24734,6 +31433,7 @@ root("ObjectDB", {
 	},
 	[252821] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -24748,6 +31448,7 @@ root("ObjectDB", {
 	},
 	[252822] = {
 		readable = "Glimmering Treasure Chest",
+		model = 1349622,
 		text = {
 			en = "Glimmering Treasure Chest",
 			es = "Arqueta brillante",
@@ -24762,6 +31463,7 @@ root("ObjectDB", {
 	},
 	[252824] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -24776,6 +31478,7 @@ root("ObjectDB", {
 	},
 	[252828] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -24790,6 +31493,7 @@ root("ObjectDB", {
 	},
 	[252829] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -24804,6 +31508,7 @@ root("ObjectDB", {
 	},
 	[252830] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -24818,6 +31523,7 @@ root("ObjectDB", {
 	},
 	[252831] = {
 		readable = "Glimmering Treasure Chest",
+		model = 1349622,
 		text = {
 			en = "Glimmering Treasure Chest",
 			es = "Arqueta brillante",
@@ -24832,6 +31538,7 @@ root("ObjectDB", {
 	},
 	[252833] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -24846,6 +31553,7 @@ root("ObjectDB", {
 	},
 	[252834] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -24860,6 +31568,7 @@ root("ObjectDB", {
 	},
 	[252835] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -24874,6 +31583,7 @@ root("ObjectDB", {
 	},
 	[252836] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -24888,6 +31598,7 @@ root("ObjectDB", {
 	},
 	[252837] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -24902,6 +31613,7 @@ root("ObjectDB", {
 	},
 	[252838] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -24916,6 +31628,7 @@ root("ObjectDB", {
 	},
 	[252839] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -24930,6 +31643,7 @@ root("ObjectDB", {
 	},
 	[252840] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -24944,6 +31658,7 @@ root("ObjectDB", {
 	},
 	[252841] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -24958,6 +31673,7 @@ root("ObjectDB", {
 	},
 	[252842] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -24972,6 +31688,7 @@ root("ObjectDB", {
 	},
 	[252844] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -24986,6 +31703,7 @@ root("ObjectDB", {
 	},
 	[252850] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -25000,6 +31718,7 @@ root("ObjectDB", {
 	},
 	[252860] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -25014,6 +31733,7 @@ root("ObjectDB", {
 	},
 	[252876] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -25028,6 +31748,7 @@ root("ObjectDB", {
 	},
 	[252880] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -25042,6 +31763,7 @@ root("ObjectDB", {
 	},
 	[252881] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -25056,6 +31778,7 @@ root("ObjectDB", {
 	},
 	[252882] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -25070,6 +31793,7 @@ root("ObjectDB", {
 	},
 	[252883] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -25084,6 +31808,7 @@ root("ObjectDB", {
 	},
 	[252884] = {
 		readable = "Glimmering Treasure Chest",
+		model = 1349622,
 		text = {
 			en = "Glimmering Treasure Chest",
 			es = "Arqueta brillante",
@@ -25110,6 +31835,7 @@ root("ObjectDB", {
 	},
 	[253161] = {
 		readable = "Grove Vine",
+		model = 983870,
 		text = {
 			en = "Grove Vine",
 			es = "Vid de la Arboleda",
@@ -25119,22 +31845,26 @@ root("ObjectDB", {
 			pt = "Vinha do Bosque",
 			ru = "Лоза Рощи Снов",
 			ko = "숲 덩굴",
+			cn = "[Grove Vine]",
 		},
 	},
 	[253176] = {
 		readable = "G'Hanir Blossoms",
+		model = 195536,
 		text = {
 			en = "G'Hanir Blossoms",
 		},
 	},
 	[253179] = {
 		readable = "Sunblossom",
+		model = 979612,
 		text = {
 			en = "Sunblossom",
 		},
 	},
 	[253181] = {
 		readable = "Thornstalk",
+		model = 794800,
 		text = {
 			en = "Thornstalk",
 		},
@@ -25142,6 +31872,7 @@ root("ObjectDB", {
 	[253280] = {
 		readable = "Leystone Seam",
 		icon = "Interface/Icons/INV_Ore_Cobalt_Nugget",
+		model = 1406152,
 		text = {
 			en = "Leystone Seam",
 			es = "Veta de piedra Ley",
@@ -25156,6 +31887,7 @@ root("ObjectDB", {
 	},
 	[253994] = {
 		readable = "Seemingly Unguarded Treasure",
+		model = 200136,
 		text = {
 			en = "Seemingly Unguarded Treasure",
 			es = "Tesoro aparentemente sin vigilancia",
@@ -25171,6 +31903,7 @@ root("ObjectDB", {
 	[254007] = {
 		readable = "Executioner's Altar",
 		icon = "Interface/Icons/Ability_Warrior_BloodBath",
+		model = 1139507,
 		text = {
 			en = "Executioner's Altar",
 			es = "Altar del Verdugo",
@@ -25185,6 +31918,7 @@ root("ObjectDB", {
 	},
 	[254010] = {
 		readable = "Earthen Ring Supplies",
+		model = 878863,
 		text = {
 			en = "Earthen Ring Supplies",
 			es = "Suministros del Anillo de la Tierra",
@@ -25193,11 +31927,13 @@ root("ObjectDB", {
 			it = "Rifornimenti del Circolo della Terra",
 			pt = "Suprimentos da Harmonia Telúrica",
 			ru = "Припасы Служителей Земли",
+			ko = "[Earthen Ring Supplies]",
 			cn = "大地之环补给品",
 		},
 	},
 	[254025] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -25212,6 +31948,7 @@ root("ObjectDB", {
 	},
 	[254027] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -25226,6 +31963,7 @@ root("ObjectDB", {
 	},
 	[254028] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -25240,12 +31978,14 @@ root("ObjectDB", {
 	},
 	[254087] = {
 		readable = "The Dreadblades",
+		model = 353152,
 		text = {
 			en = "The Dreadblades",
 		},
 	},
 	[254126] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -25260,6 +32000,7 @@ root("ObjectDB", {
 	},
 	[254127] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -25274,6 +32015,7 @@ root("ObjectDB", {
 	},
 	[254128] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -25288,6 +32030,7 @@ root("ObjectDB", {
 	},
 	[254141] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -25303,6 +32046,7 @@ root("ObjectDB", {
 	[255344] = {
 		readable = "Felslate Seam",
 		icon = "Interface/Icons/INV_Ore_Feliron_Nugget",
+		model = 1450461,
 		text = {
 			en = "Felslate Seam",
 			es = "Veta de pizarra vil",
@@ -25317,6 +32061,7 @@ root("ObjectDB", {
 	},
 	[255828] = {
 		readable = "Small Treasure Chest",
+		model = 1402225,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -25331,6 +32076,7 @@ root("ObjectDB", {
 	},
 	[255829] = {
 		readable = "Small Treasure Chest",
+		model = 1402225,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -25345,6 +32091,7 @@ root("ObjectDB", {
 	},
 	[257393] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -25359,6 +32106,7 @@ root("ObjectDB", {
 	},
 	[257545] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -25373,6 +32121,7 @@ root("ObjectDB", {
 	},
 	[257546] = {
 		readable = "Treasure Chest",
+		model = 1349621,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -25387,6 +32136,7 @@ root("ObjectDB", {
 	},
 	[257978] = {
 		readable = "Treasure Chest",
+		model = 1402238,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -25402,6 +32152,7 @@ root("ObjectDB", {
 	[257999] = {
 		readable = "Technique: Tome of the Tranquil Mind",
 		icon = "Interface/Icons/70_professions_scroll_02",
+		model = 243439,
 		text = {
 			en = "Technique: Tome of the Tranquil Mind",
 			es = "Técnica: Escrito de la mente tranquila",
@@ -25416,6 +32167,7 @@ root("ObjectDB", {
 	},
 	[258690] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -25446,6 +32198,7 @@ root("ObjectDB", {
 	},
 	[258979] = {
 		readable = "Fel-Ravaged Tome",
+		model = 949611,
 		text = {
 			en = "Fel-Ravaged Tome",
 			es = "Tomo devastado por la vileza",
@@ -25461,6 +32214,7 @@ root("ObjectDB", {
 	[258980] = {
 		readable = "Cursed Tome",
 		icon = "Interface/Icons/inv_misc_book_06",
+		model = 1125316,
 		text = {
 			en = "Cursed Tome",
 			es = "Tomo maldito",
@@ -25475,6 +32229,7 @@ root("ObjectDB", {
 	},
 	[259806] = {
 		readable = "Love Potion Recipe",
+		model = 305390,
 		text = {
 			en = "Love Potion Recipe",
 			es = "Receta de poción de amor",
@@ -25490,6 +32245,7 @@ root("ObjectDB", {
 	[259870] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -25505,6 +32261,7 @@ root("ObjectDB", {
 	[259871] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -25520,6 +32277,7 @@ root("ObjectDB", {
 	[259926] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -25535,6 +32293,7 @@ root("ObjectDB", {
 	[259927] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -25549,6 +32308,7 @@ root("ObjectDB", {
 	},
 	[265526] = {
 		readable = "Treasure Chest",
+		model = 1402238,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -25563,6 +32323,7 @@ root("ObjectDB", {
 	},
 	[265532] = {
 		readable = "Telemancy Beacon",
+		model = 1368866,
 		text = {
 			en = "Telemancy Beacon",
 			es = "Baliza de telemancia",
@@ -25577,19 +32338,23 @@ root("ObjectDB", {
 	},
 	[266289] = {
 		readable = "Time Lost Chest",
+		model = 446679,
 		text = {
 			en = "Time Lost Chest",
 			es = "Cofre perdido en el tiempo",
 			de = "Zeitverlorene Kiste",
 			fr = "Coffre perdu dans le temps",
 			it = "Cassa Perduta nel Tempo",
+			pt = "[Time Lost Chest]",
 			ru = "Затерянный во времени сундук",
+			ko = "[Time Lost Chest]",
 			cn = "迷时宝箱",
 		},
 	},
 	[266851] = {
 		readable = "Wand of Simulated Life",
 		icon = "Interface/Icons/Inv_misc_discoball_01",
+		model = 1534531,
 		text = {
 			en = "Wand of Simulated Life",
 			es = "Varita de vida simulada",
@@ -25604,6 +32369,7 @@ root("ObjectDB", {
 	},
 	[268478] = {
 		readable = "Battered Trinket",
+		model = 193414,
 		text = {
 			en = "Battered Trinket",
 			es = "Abalorio maltrecho",
@@ -25618,6 +32384,7 @@ root("ObjectDB", {
 	},
 	[268551] = {
 		readable = "Curious Wyrmtongue Cache",
+		model = 219372,
 		text = {
 			en = "Curious Wyrmtongue Cache",
 			es = "Alijo Lenguavermis curioso",
@@ -25632,11 +32399,13 @@ root("ObjectDB", {
 	},
 	[268753] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
 			de = "Kleine Schatztruhe",
 			fr = "Petit coffre au trésor",
+			it = "[Small Treasure Chest]",
 			pt = "Baú do Tesouro Pequeno",
 			ru = "Маленький сундук с сокровищами",
 			ko = "작은 보물 상자",
@@ -25645,6 +32414,7 @@ root("ObjectDB", {
 	},
 	[269064] = {
 		readable = "Small Treasure Chest",
+		model = 1349620,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -25669,6 +32439,7 @@ root("ObjectDB", {
 			it = "|cFFFFFFFFStep 9:|r Dono dei Cercatori Mentali",
 			pt = "|cFFFFFFFFStep 9:|r Dádiva dos Caçadores de Mentes",
 			ru = "|cFFFFFFFFШаг 9:|r Дар искателей разума",
+			ko = "[Gift of the Mind-Seekers]",
 			cn = "|cFFFFFFFF第9步:|r 寻心者的礼物",
 		},
 	},
@@ -25691,6 +32462,7 @@ root("ObjectDB", {
 	[270917] = {
 		readable = "Glenbrook Register",
 		icon = "Interface/Icons/INV_Misc_Book_16",
+		model = 916185,
 		text = {
 			en = "Glenbrook Register",
 			es = "Registro de Valarroyo",
@@ -25705,6 +32477,7 @@ root("ObjectDB", {
 	},
 	[271103] = {
 		readable = "Prayer Effigy",
+		model = 1671032,
 		text = {
 			en = "Prayer Effigy",
 			es = "Efigie de oración",
@@ -25720,6 +32493,7 @@ root("ObjectDB", {
 	[271706] = {
 		readable = "Hunters' Board",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 1312884,
 		text = {
 			en = "Hunters' Board",
 			es = "Tablero de cazadores",
@@ -25735,6 +32509,7 @@ root("ObjectDB", {
 	[271849] = {
 		readable = "Eredar War Supplies",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1353175,
 		text = {
 			en = "Eredar War Supplies",
 			es = "Suministros bélicos eredar",
@@ -25750,6 +32525,7 @@ root("ObjectDB", {
 	[271850] = {
 		readable = "Eredar War Supplies",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1353175,
 		text = {
 			en = "Eredar War Supplies",
 			es = "Suministros bélicos eredar",
@@ -25758,6 +32534,7 @@ root("ObjectDB", {
 			it = "Rifornimenti di Guerra degli Eredar",
 			pt = "Suprimentos de Guerra Eredares",
 			ru = "Эредарские военные припасы",
+			ko = "[Eredar War Supplies]",
 			cn = "艾瑞达战争物资",
 		},
 	},
@@ -25789,6 +32566,7 @@ root("ObjectDB", {
 			it = "|cFFFFFFFFStep 3:|r Larva Mentale",
 			pt = "|cFFFFFFFFStep 3:|r Larva da Mente",
 			ru = "|cFFFFFFFFШаг 3:|r Мозговая личинка",
+			ko = "[Mind Larva]",
 			cn = "|cFFFFFFFF第3步:|r 心灵幼虫",
 		},
 	},
@@ -25820,6 +32598,7 @@ root("ObjectDB", {
 			it = "|cFFFFFFFFStep 5:|r Strano Teschio",
 			pt = "|cFFFFFFFFStep 5:|r Caveira Estranha",
 			ru = "|cFFFFFFFFШаг 5:|r Странный череп",
+			ko = "[Strange Skull]",
 			cn = "|cFFFFFFFF第5步:|r 奇怪的颅骨",
 		},
 	},
@@ -25858,6 +32637,7 @@ root("ObjectDB", {
 	[272179] = {
 		readable = "Mayor's Bulletin",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 1696367,
 		text = {
 			en = "Mayor's Bulletin",
 			es = "Comunicado del alcalde",
@@ -25914,12 +32694,14 @@ root("ObjectDB", {
 			it = "|cFFFFFFFFStep 10:|r Desiderio dell'Enigmista",
 			pt = "|cFFFFFFFFStep 10:|r Sonho do Charadista",
 			ru = "|cFFFFFFFFШаг 10:|r Страсть любителя загадок",
+			ko = "[Puzzler's Desire]",
 			cn = "|cFFFFFFFF第10步:|r 解谜者的愿望",
 		},
 	},
 	[272422] = {
 		readable = "Gentle's Spellbook",
 		icon = "Interface/Icons/INV_Misc_Book_05",
+		model = 916185,
 		text = {
 			en = "Gentle's Spellbook",
 			es = "Libro de hechizos de Gentle",
@@ -25935,6 +32717,7 @@ root("ObjectDB", {
 	[272455] = {
 		readable = "Eredar War Supplies",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1353175,
 		text = {
 			en = "Eredar War Supplies",
 			es = "Suministros bélicos eredar",
@@ -25943,12 +32726,14 @@ root("ObjectDB", {
 			it = "Rifornimenti di Guerra degli Eredar",
 			pt = "Suprimentos de Guerra Eredares",
 			ru = "Эредарские военные припасы",
+			ko = "[Eredar War Supplies]",
 			cn = "艾瑞达战争物资",
 		},
 	},
 	[272456] = {
 		readable = "Eredar War Supplies",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1353175,
 		text = {
 			en = "Eredar War Supplies",
 			es = "Suministros bélicos eredar",
@@ -25957,6 +32742,7 @@ root("ObjectDB", {
 			it = "Rifornimenti di Guerra degli Eredar",
 			pt = "Suprimentos de Guerra Eredares",
 			ru = "Эредарские военные припасы",
+			ko = "[Eredar War Supplies]",
 			cn = "艾瑞达战争物资",
 		},
 	},
@@ -25972,12 +32758,14 @@ root("ObjectDB", {
 			it = "|cFFFFFFFFStep 14:|r Uovo dal Colore Strano",
 			pt = "|cFFFFFFFFStep 14:|r Ovo de Coloração Excêntrica",
 			ru = "|cFFFFFFFFШаг 14:|r Причудливо окрашенное яйцо",
+			ko = "[Oddly-Colored Egg]",
 			cn = "|cFFFFFFFF第14步:|r 色彩怪异的蛋",
 		},
 	},
 	[272768] = {
 		readable = "Empyrium Deposit",
 		icon = "Interface/Icons/INV_Ore_Eternium",
+		model = 1244486,
 		text = {
 			en = "Empyrium Deposit",
 			es = "Depósito de empirium",
@@ -25993,6 +32781,7 @@ root("ObjectDB", {
 	[272770] = {
 		readable = "Eredar War Supplies",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1353175,
 		text = {
 			en = "Eredar War Supplies",
 			es = "Suministros bélicos eredar",
@@ -26001,12 +32790,14 @@ root("ObjectDB", {
 			it = "Rifornimenti di Guerra degli Eredar",
 			pt = "Suprimentos de Guerra Eredares",
 			ru = "Эредарские военные припасы",
+			ko = "[Eredar War Supplies]",
 			cn = "艾瑞达战争物资",
 		},
 	},
 	[272771] = {
 		readable = "Eredar War Supplies",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1353175,
 		text = {
 			en = "Eredar War Supplies",
 			es = "Suministros bélicos eredar",
@@ -26019,9 +32810,25 @@ root("ObjectDB", {
 			cn = "艾瑞达战争物资",
 		},
 	},
+	[272778] = {
+		readable = "Rich Empyrium Deposit",
+		model = 1692857,
+		text = {
+			en = "Rich Empyrium Deposit",
+			es = "Depósito rico en empirium",
+			de = "Reiches Empyriumvorkommen",
+			fr = "Riche gisement d'empyrium",
+			it = "Deposito Ricco d'Empirio",
+			pt = "Depósito de Empirita Abundante",
+			ru = "Богатые залежи эмпиреита",
+			ko = "풍부한 창천석 광맥",
+			cn = "富天界金矿脉",
+		},
+	},
 	[272780] = {
 		readable = "Empyrium Seam",
 		icon = "Interface/Icons/INV_Ore_Eternium_Nugget",
+		model = 1693357,
 		text = {
 			en = "Empyrium Seam",
 			es = "Veta de empirium",
@@ -26034,9 +32841,55 @@ root("ObjectDB", {
 			cn = "天界金矿层",
 		},
 	},
+	[272782] = {
+		readable = "Astral Glory",
+		model = 1685295,
+		text = {
+			en = "Astral Glory",
+			es = "Gloria astral",
+			de = "Astralwinde",
+			fr = "Astralée",
+			it = "Gloria Astrale",
+			pt = "Glória-astral",
+			ru = "Астральный вьюнок",
+			ko = "천공의 영광",
+			cn = "星辰之耀",
+		},
+	},
+	[273052] = {
+		readable = "Fel-Encrusted Herb",
+		model = 1616103,
+		text = {
+			en = "Fel-Encrusted Herb",
+			es = "Hierba con costra vil",
+			de = "Teufelsverkrustetes Kraut",
+			fr = "Herbe incrustée de corruption",
+			it = "Erba Vilincrostata",
+			pt = "Erva Incrustada de Vileza",
+			ru = "Покрытая Скверной трава",
+			ko = "지옥 마력으로 덮인 약초",
+			cn = "被邪能包裹的草药",
+		},
+	},
+	[273053] = {
+		readable = "Fel-Encrusted Herb Cluster",
+		model = 1616102,
+		text = {
+			en = "Fel-Encrusted Herb Cluster",
+			es = "Manojo de hierba con costra vil",
+			de = "Teufelsverkrustetes Kräuterbüschel",
+			fr = "Touffe d’herbe incrustée de corruption",
+			it = "Fascio d'Erba Vilincrostata",
+			pt = "Feixe de Ervas Incrustadas de Vileza",
+			ru = "Пучок покрытой Скверной травы",
+			ko = "지옥 마력으로 덮인 약초 덤불",
+			cn = "被邪能包裹的草药丛",
+		},
+	},
 	[273222] = {
 		readable = "Eredar War Supplies",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1353175,
 		text = {
 			en = "Eredar War Supplies",
 			es = "Suministros bélicos eredar",
@@ -26045,12 +32898,14 @@ root("ObjectDB", {
 			it = "Rifornimenti di Guerra degli Eredar",
 			pt = "Suprimentos de Guerra Eredares",
 			ru = "Эредарские военные припасы",
+			ko = "[Eredar War Supplies]",
 			cn = "艾瑞达战争物资",
 		},
 	},
 	[273301] = {
 		readable = "Ancient Eredar Cache",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1062118,
 		text = {
 			en = "Ancient Eredar Cache",
 			es = "Alijo eredar antiguo",
@@ -26059,12 +32914,14 @@ root("ObjectDB", {
 			it = "Antica Cassa degli Eredar",
 			pt = "Baú Eredar Antigo",
 			ru = "Древний эредарский тайник",
+			ko = "[Ancient Eredar Cache]",
 			cn = "上古艾瑞达宝箱",
 		},
 	},
 	[273407] = {
 		readable = "Ancient Eredar Cache",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1062118,
 		text = {
 			en = "Ancient Eredar Cache",
 			es = "Alijo eredar antiguo",
@@ -26073,12 +32930,14 @@ root("ObjectDB", {
 			it = "Antica Cassa degli Eredar",
 			pt = "Baú Eredar Antigo",
 			ru = "Древний эредарский тайник",
+			ko = "[Ancient Eredar Cache]",
 			cn = "上古艾瑞达宝箱",
 		},
 	},
 	[273412] = {
 		readable = "Ancient Eredar Cache",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1062118,
 		text = {
 			en = "Ancient Eredar Cache",
 			es = "Alijo eredar antiguo",
@@ -26094,6 +32953,7 @@ root("ObjectDB", {
 	[273414] = {
 		readable = "Ancient Eredar Cache",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1062118,
 		text = {
 			en = "Ancient Eredar Cache",
 			es = "Alijo eredar antiguo",
@@ -26102,12 +32962,14 @@ root("ObjectDB", {
 			it = "Antica Cassa degli Eredar",
 			pt = "Baú Eredar Antigo",
 			ru = "Древний эредарский тайник",
+			ko = "[Ancient Eredar Cache]",
 			cn = "上古艾瑞达宝箱",
 		},
 	},
 	[273415] = {
 		readable = "Ancient Eredar Cache",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1062118,
 		text = {
 			en = "Ancient Eredar Cache",
 			es = "Alijo eredar antiguo",
@@ -26123,6 +32985,7 @@ root("ObjectDB", {
 	[273439] = {
 		readable = "Ancient Eredar Cache",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1062118,
 		text = {
 			en = "Ancient Eredar Cache",
 			es = "Alijo eredar antiguo",
@@ -26137,6 +33000,7 @@ root("ObjectDB", {
 	},
 	[273443] = {
 		readable = "Void-Seeped Cache",
+		model = 1062118,
 		text = {
 			en = "Void-Seeped Cache",
 			es = "Alijo calado de Vacío",
@@ -26152,6 +33016,7 @@ root("ObjectDB", {
 	[273519] = {
 		readable = "Legion War Supplies",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1353175,
 		text = {
 			en = "Legion War Supplies",
 			es = "Suministros bélicos de la Legión",
@@ -26167,6 +33032,7 @@ root("ObjectDB", {
 	[273521] = {
 		readable = "Legion War Supplies",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1353175,
 		text = {
 			en = "Legion War Supplies",
 			es = "Suministros bélicos de la Legión",
@@ -26182,6 +33048,7 @@ root("ObjectDB", {
 	[273523] = {
 		readable = "Legion War Supplies",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1353175,
 		text = {
 			en = "Legion War Supplies",
 			es = "Suministros bélicos de la Legión",
@@ -26197,6 +33064,7 @@ root("ObjectDB", {
 	[273524] = {
 		readable = "Legion War Supplies",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1353175,
 		text = {
 			en = "Legion War Supplies",
 			es = "Suministros bélicos de la Legión",
@@ -26212,6 +33080,7 @@ root("ObjectDB", {
 	[273527] = {
 		readable = "Legion War Supplies",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1353175,
 		text = {
 			en = "Legion War Supplies",
 			es = "Suministros bélicos de la Legión",
@@ -26227,6 +33096,7 @@ root("ObjectDB", {
 	[273528] = {
 		readable = "Legion War Supplies",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1353175,
 		text = {
 			en = "Legion War Supplies",
 			es = "Suministros bélicos de la Legión",
@@ -26242,6 +33112,7 @@ root("ObjectDB", {
 	[273533] = {
 		readable = "Legion War Supplies",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1353175,
 		text = {
 			en = "Legion War Supplies",
 			es = "Suministros bélicos de la Legión",
@@ -26257,6 +33128,7 @@ root("ObjectDB", {
 	[273535] = {
 		readable = "Legion War Supplies",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1353175,
 		text = {
 			en = "Legion War Supplies",
 			es = "Suministros bélicos de la Legión",
@@ -26272,6 +33144,7 @@ root("ObjectDB", {
 	[273538] = {
 		readable = "Legion War Supplies",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1353175,
 		text = {
 			en = "Legion War Supplies",
 			es = "Suministros bélicos de la Legión",
@@ -26287,6 +33160,7 @@ root("ObjectDB", {
 	[273814] = {
 		readable = "Bladed Charm",
 		icon = "Interface/Icons/INV_Misc_2h_FarmScythe_A_01",
+		model = 1712131,
 		text = {
 			en = "Bladed Charm",
 			es = "Talismán afilado",
@@ -26301,6 +33175,7 @@ root("ObjectDB", {
 	},
 	[273854] = {
 		readable = "Backpack",
+		model = 878854,
 		text = {
 			en = "Backpack",
 			es = "Mochila",
@@ -26316,6 +33191,7 @@ root("ObjectDB", {
 	[276187] = {
 		readable = "Junji",
 		icon = "Interface/Icons/inv_box_01",
+		model = 1590841,
 		text = {
 			en = "Junji",
 			es = "Junji",
@@ -26331,6 +33207,7 @@ root("ObjectDB", {
 	[276223] = {
 		readable = "Eredar Treasure Cache",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1711488,
 		text = {
 			en = "Eredar Treasure Cache",
 			es = "Alijo de tesoro eredar",
@@ -26339,12 +33216,14 @@ root("ObjectDB", {
 			it = "Scrigno del Tesoro degli Eredar",
 			pt = "Baú do Tesouro Eredar",
 			ru = "Эредарский сундук с сокровищами",
+			ko = "[Eredar Treasure Cache]",
 			cn = "艾瑞达宝箱",
 		},
 	},
 	[276224] = {
 		readable = "Chest of Ill-Gotten Gains",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1711483,
 		text = {
 			en = "Chest of Ill-Gotten Gains",
 			es = "Cofre de ganancias obtenidas con malas artes",
@@ -26360,6 +33239,7 @@ root("ObjectDB", {
 	[276225] = {
 		readable = "Student's Surprising Surplus",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1711483,
 		text = {
 			en = "Student's Surprising Surplus",
 			es = "Sorprendente excedente de estudiante",
@@ -26368,12 +33248,14 @@ root("ObjectDB", {
 			it = "Forniture Sorprendentemente Eccedenti dello Studente",
 			pt = "Excedente Extraordinário do Estudante",
 			ru = "Удивительный улов ученика",
+			ko = "[Student's Surprising Surplus]",
 			cn = "学徒的惊喜留念",
 		},
 	},
 	[276226] = {
 		readable = "Void-Tinged Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1711483,
 		text = {
 			en = "Void-Tinged Chest",
 			es = "Cofre teñido de Vacío",
@@ -26389,6 +33271,7 @@ root("ObjectDB", {
 	[276227] = {
 		readable = "Augari Secret Stash",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1711488,
 		text = {
 			en = "Augari Secret Stash",
 			es = "Alijo secreto Augari",
@@ -26397,12 +33280,14 @@ root("ObjectDB", {
 			it = "Scorte Segrete degli Augari",
 			pt = "Tesouro Escondido Augari",
 			ru = "Тайник авгари",
+			ko = "[Augari Secret Stash]",
 			cn = "奥古雷隐秘存储箱",
 		},
 	},
 	[276228] = {
 		readable = "Desperate Eredar's Cache",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1711483,
 		text = {
 			en = "Desperate Eredar's Cache",
 			es = "Alijo de eredar desesperado",
@@ -26411,12 +33296,14 @@ root("ObjectDB", {
 			it = "Cassa dell'Eredar Disperato",
 			pt = "Baú de Eredar Desesperado",
 			ru = "Тайник отчаянного эредара",
+			ko = "[Desperate Eredar's Cache]",
 			cn = "绝望的艾瑞达的储物箱",
 		},
 	},
 	[276229] = {
 		readable = "Shattered House Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1711483,
 		text = {
 			en = "Shattered House Chest",
 			es = "Cofre de casa destruida",
@@ -26432,6 +33319,7 @@ root("ObjectDB", {
 	[276230] = {
 		readable = "Doomseeker's Treasure",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1711488,
 		text = {
 			en = "Doomseeker's Treasure",
 			es = "Tesoro del buscador de fatalidad",
@@ -26444,9 +33332,115 @@ root("ObjectDB", {
 			cn = "末日追寻者的宝藏",
 		},
 	},
+	[276234] = {
+		readable = "Riverbud",
+		model = 1784467,
+		text = {
+			en = "Riverbud",
+			es = "Brotarrío",
+			de = "Flussknospe",
+			fr = "Rivebulbe",
+			it = "Baccello Fluviale",
+			pt = "Broto-do-rio",
+			ru = "Речной горох",
+			ko = "강봉오리",
+			cn = "流波花苞",
+		},
+	},
+	[276236] = {
+		readable = "Star Moss",
+		model = 1794519,
+		text = {
+			en = "Star Moss",
+			es = "Musgo estelar",
+			de = "Sternmoos",
+			fr = "Mousse étoilée",
+			it = "Muschio Stellare",
+			pt = "Musgo-estrela",
+			ru = "Звездный мох",
+			ko = "별이끼",
+			cn = "星光苔",
+		},
+	},
+	[276237] = {
+		readable = "Akunda's Bite",
+		model = 1785284,
+		text = {
+			en = "Akunda's Bite",
+			es = "Mordisco de Akunda",
+			de = "Akundas Biss",
+			fr = "Mâche d’Akunda",
+			it = "Morso di Akunda",
+			pt = "Mordida de Akunda",
+			ru = "Укус Акунды",
+			ko = "아쿤다의 이빨",
+			cn = "阿昆达之噬",
+		},
+	},
+	[276238] = {
+		readable = "Winter's Kiss",
+		model = 1780102,
+		text = {
+			en = "Winter's Kiss",
+			es = "Beso gélido",
+			de = "Winterkuss",
+			fr = "Bise-d’hiver",
+			it = "Bacio dell'Inverno",
+			pt = "Beijo-do-inverno",
+			ru = "Поцелуй зимы",
+			ko = "겨울의 입맞춤",
+			cn = "凛冬之吻",
+		},
+	},
+	[276239] = {
+		readable = "Siren's Sting",
+		model = 1882354,
+		text = {
+			en = "Siren's Sting",
+			es = "Picadura de sirena",
+			de = "Sirenendorn",
+			fr = "Épine de sirène",
+			it = "Pruno di Sirena",
+			pt = "Picada da Sereia",
+			ru = "Укус сирены",
+			ko = "세이렌의 맹독약초",
+			cn = "海妖之刺",
+		},
+	},
+	[276240] = {
+		readable = "Sea Stalks",
+		model = 1890602,
+		text = {
+			en = "Sea Stalks",
+			es = "Tallomares",
+			de = "Meeresstängel",
+			fr = "Brins-de-mer",
+			it = "Steli Marini",
+			pt = "Talo-marinho",
+			ru = "Морской стебель",
+			ko = "바다 줄기",
+			cn = "海潮茎杆",
+		},
+	},
+	[276242] = {
+		readable = "Anchor Weed",
+		model = 1907780,
+		text = {
+			en = "Anchor Weed",
+			es = "Alga de ancla",
+			de = "Ankerkraut",
+			fr = "Ancoracée",
+			it = "Alga d'Ancora",
+			pt = "Erva-ancorina",
+			ru = "Якорь-трава",
+			ko = "닻풀",
+			cn = "锚草",
+		},
+	},
 	[276251] = {
 		readable = "Excavation Inventory",
 		icon = "Interface/Icons/INV_Misc_PaperBundle03d",
+		model = 576627,
 		text = {
 			en = "Excavation Inventory",
 			es = "Inventario de excavación",
@@ -26459,9 +33453,55 @@ root("ObjectDB", {
 			cn = "挖掘清单",
 		},
 	},
+	[276424] = {
+		readable = "Intact Imp Bones",
+		model = 1119654,
+		text = {
+			en = "Intact Imp Bones",
+			es = "Huesos de diablillo intactos",
+			de = "Intakte Wichtelknochen",
+			fr = "Os de diablotin intacts",
+			it = "Ossa di Imp Intatte",
+			pt = "Ossos Intactos de Diabrete",
+			ru = "Целые кости беса",
+			ko = "[Intact Imp Bones]",
+			cn = "[Intact Imp Bones]",
+		},
+	},
+	[276425] = {
+		readable = "Intact Fiend Bone",
+		model = 1119647,
+		text = {
+			en = "Intact Fiend Bone",
+			es = "Hueso de maligno intacto",
+			de = "Intakter Scheusalknochen",
+			fr = "Os de démon intact",
+			it = "Osso di Demonio Intatto",
+			pt = "Ossos Intactos de Demônio",
+			ru = "Целая кость демона",
+			ko = "[Intact Fiend Bone]",
+			cn = "[Intact Fiend Bone]",
+		},
+	},
+	[276426] = {
+		readable = "Intact Ur'zul Bone",
+		model = 944545,
+		text = {
+			en = "Intact Ur'zul Bone",
+			es = "Hueso de ur'zul intacto",
+			de = "Intakter Ur'zulknochen",
+			fr = "Os d’ur’zul intact",
+			it = "Osso di Ur'zul Intatto",
+			pt = "Ossos Intactos de Ur'zul",
+			ru = "Целая кость Ур'зула",
+			ko = "[Intact Ur'zul Bone]",
+			cn = "[Intact Ur'zul Bone]",
+		},
+	},
 	[276488] = {
 		readable = "Azurite Cannonball",
 		icon = "Interface/Icons/Ability_Rogue_CannonballBarrage",
+		model = 1663793,
 		text = {
 			en = "Azurite Cannonball",
 			es = "Bala de cañón de azerita",
@@ -26477,6 +33517,7 @@ root("ObjectDB", {
 	[276489] = {
 		readable = "Legion Tower Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1352441,
 		text = {
 			en = "Legion Tower Chest",
 			es = "Cofre de torre de la Legión",
@@ -26492,6 +33533,7 @@ root("ObjectDB", {
 	[276490] = {
 		readable = "Krokul Emergency Cache",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1711488,
 		text = {
 			en = "Krokul Emergency Cache",
 			es = "Alijo krokul de emergencia",
@@ -26500,12 +33542,14 @@ root("ObjectDB", {
 			it = "Scrigno d'Emergenza dei Krokul",
 			pt = "Baú de Emergência Krokul",
 			ru = "Неприкосновенные запасы крокула",
+			ko = "[Krokul Emergency Cache]",
 			cn = "克罗库紧急储物箱",
 		},
 	},
 	[276491] = {
 		readable = "Lost Krokul Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1711488,
 		text = {
 			en = "Lost Krokul Chest",
 			es = "Cofre krokul perdido",
@@ -26514,12 +33558,14 @@ root("ObjectDB", {
 			it = "Forziere del Krokul Perduto",
 			pt = "Baú Krokul Perdido",
 			ru = "Потерянный сундук крокула",
+			ko = "[Lost Krokul Chest]",
 			cn = "丢失的克罗库宝箱",
 		},
 	},
 	[276513] = {
 		readable = "Intact Mudfish",
 		icon = "Interface/Icons/inv_misc_fish_85",
+		model = 1091574,
 		text = {
 			en = "Intact Mudfish",
 			es = "Pezfango intacto",
@@ -26535,6 +33581,7 @@ root("ObjectDB", {
 	[276515] = {
 		readable = "Fishing Rod",
 		icon = "Interface/Icons/INV_Fishingpole_02",
+		model = 984242,
 		text = {
 			en = "Fishing Rod",
 			es = "Caña de pescar",
@@ -26549,6 +33596,7 @@ root("ObjectDB", {
 	},
 	[276623] = {
 		readable = "Treasure Chest",
+		model = 2019857,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -26563,6 +33611,7 @@ root("ObjectDB", {
 	},
 	[276735] = {
 		readable = "Offerings of the Chosen",
+		model = 1802580,
 		text = {
 			en = "Offerings of the Chosen",
 			es = "Ofrenda de los elegidos",
@@ -26577,6 +33626,7 @@ root("ObjectDB", {
 	},
 	[276837] = {
 		readable = "Recipe Rock",
+		model = 983348,
 		text = {
 			en = "Recipe Rock",
 			es = "Roca de recetas",
@@ -26591,6 +33641,7 @@ root("ObjectDB", {
 	},
 	[277199] = {
 		readable = "Weathered Job List",
+		model = 305398,
 		text = {
 			en = "Weathered Job List",
 			es = "Lista de encargos deteriorada",
@@ -26606,6 +33657,7 @@ root("ObjectDB", {
 	[277204] = {
 		readable = "Forgotten Legion Supplies",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1352441,
 		text = {
 			en = "Forgotten Legion Supplies",
 			es = "Suministros de la Legión olvidados",
@@ -26621,6 +33673,7 @@ root("ObjectDB", {
 	[277205] = {
 		readable = "Ancient Legion War Cache",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1352441,
 		text = {
 			en = "Ancient Legion War Cache",
 			es = "Alijo bélico de la Legión antiguo",
@@ -26636,6 +33689,7 @@ root("ObjectDB", {
 	[277206] = {
 		readable = "Fel-Bound Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1352441,
 		text = {
 			en = "Fel-Bound Chest",
 			es = "Cofre de vínculo vil",
@@ -26651,6 +33705,7 @@ root("ObjectDB", {
 	[277207] = {
 		readable = "Legion Treasure Hoard",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1352441,
 		text = {
 			en = "Legion Treasure Hoard",
 			es = "Tesoro acumulado de la Legión",
@@ -26659,12 +33714,14 @@ root("ObjectDB", {
 			it = "Tesoro della Legione",
 			pt = "Grande Tesouro da Legião",
 			ru = "Собранные Легионом сокровища",
+			ko = "[Legion Treasure Hoard]",
 			cn = "军团财宝",
 		},
 	},
 	[277208] = {
 		readable = "Timeworn Fel Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1352441,
 		text = {
 			en = "Timeworn Fel Chest",
 			es = "Cofre vil vetusto",
@@ -26680,6 +33737,7 @@ root("ObjectDB", {
 	[277327] = {
 		readable = "Augari-Runed Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1711488,
 		text = {
 			en = "Augari-Runed Chest",
 			es = "Cofre con runas Augari",
@@ -26688,6 +33746,7 @@ root("ObjectDB", {
 			it = "Cassa Runica degli Augari",
 			pt = "Baú Augari Rúnico",
 			ru = "Сундук с рунами авгари",
+			ko = "[Augari-Runed Chest]",
 			cn = "奥古雷符文宝箱",
 		},
 	},
@@ -26709,6 +33768,7 @@ root("ObjectDB", {
 	},
 	[277336] = {
 		readable = "Treasure Chest",
+		model = 1802264,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -26724,6 +33784,7 @@ root("ObjectDB", {
 	[277340] = {
 		readable = "Secret Augari Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1711488,
 		text = {
 			en = "Secret Augari Chest",
 			es = "Cofre Augari secreto",
@@ -26739,6 +33800,7 @@ root("ObjectDB", {
 	[277342] = {
 		readable = "Augari Goods",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1711488,
 		text = {
 			en = "Augari Goods",
 			es = "Bienes Augari",
@@ -26754,6 +33816,7 @@ root("ObjectDB", {
 	[277343] = {
 		readable = "Long-Lost Augari Treasure",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1711488,
 		text = {
 			en = "Long-Lost Augari Treasure",
 			es = "Tesoro Augari olvidado",
@@ -26762,12 +33825,14 @@ root("ObjectDB", {
 			it = "Tesoro degli Augari Perduto da Tempo",
 			pt = "Tesouro Augari Perdido Há Tempos",
 			ru = "Давно утерянные сокровища авгари",
+			ko = "[Long-Lost Augari Treasure]",
 			cn = "失落已久的奥古雷宝藏",
 		},
 	},
 	[277344] = {
 		readable = "Precious Augari Keepsakes",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1711488,
 		text = {
 			en = "Precious Augari Keepsakes",
 			es = "Recuerdos Augari preciados",
@@ -26783,6 +33848,7 @@ root("ObjectDB", {
 	[277346] = {
 		readable = "Missing Augari Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest04d",
+		model = 1711488,
 		text = {
 			en = "Missing Augari Chest",
 			es = "Cofre Augari desaparecido",
@@ -26798,6 +33864,7 @@ root("ObjectDB", {
 	[277373] = {
 		readable = "Glimmering Seaweed",
 		icon = "Interface/Icons/INV_MISC_HERB_06",
+		model = 1087664,
 		text = {
 			en = "Glimmering Seaweed",
 			es = "Algas de luz trémula",
@@ -26812,6 +33879,7 @@ root("ObjectDB", {
 	},
 	[277384] = {
 		readable = "Abandoned Treasure",
+		model = 1711488,
 		text = {
 			en = "Abandoned Treasure",
 			es = "Tesoro abandonado",
@@ -26820,12 +33888,14 @@ root("ObjectDB", {
 			it = "Tesoro Abbandonato",
 			pt = "Tesouro Abandonado",
 			ru = "Брошенное сокровище",
+			ko = "[Abandoned Treasure]",
 			cn = "被遗弃的宝藏",
 		},
 	},
 	[277459] = {
 		readable = "Pig Effigy",
 		icon = "Interface/Icons/Inv_misc_trinket6oOG_CyclopianPig3",
+		model = 1777830,
 		text = {
 			en = "Pig Effigy",
 			es = "Efigie de cerdo",
@@ -26841,6 +33911,7 @@ root("ObjectDB", {
 	[277561] = {
 		readable = "Warlord's Cache",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 803755,
 		text = {
 			en = "Warlord's Cache",
 			es = "Alijo del señor de la guerra",
@@ -26855,6 +33926,7 @@ root("ObjectDB", {
 	},
 	[277637] = {
 		readable = "Void-Seeped Cache",
+		model = 1062118,
 		text = {
 			en = "Void-Seeped Cache",
 			es = "Alijo calado de Vacío",
@@ -26869,6 +33941,7 @@ root("ObjectDB", {
 	},
 	[277715] = {
 		readable = "Cursed Nazmani Chest",
+		model = 1777743,
 		text = {
 			en = "Cursed Nazmani Chest",
 			es = "Cofre Nazmani maldito",
@@ -26883,6 +33956,7 @@ root("ObjectDB", {
 	},
 	[277885] = {
 		readable = "Wunja's Trove",
+		model = 1702787,
 		text = {
 			en = "Wunja's Trove",
 			es = "Tesoro de Wunja",
@@ -26907,11 +33981,13 @@ root("ObjectDB", {
 			it = "Cassa Ribollente",
 			pt = "Baú Fervilhante",
 			ru = "Дымящийся тайник",
+			ko = "[Seething Cache]",
 			cn = "沸燃之箱",
 		},
 	},
 	[278197] = {
 		readable = "Vial of Antidote",
+		model = 243481,
 		text = {
 			en = "Vial of Antidote",
 			es = "Vial de antídoto",
@@ -26926,6 +34002,7 @@ root("ObjectDB", {
 	},
 	[278252] = {
 		readable = "Job Flyer",
+		model = 936419,
 		text = {
 			en = "Job Flyer",
 			es = "Folleto de oferta de trabajo",
@@ -26941,6 +34018,7 @@ root("ObjectDB", {
 	[278313] = {
 		readable = "Sternly Worded Letter",
 		icon = "Interface/Icons/INV_Misc_NotePicture1c",
+		model = 1349040,
 		text = {
 			en = "Sternly Worded Letter",
 			es = "Carta seria",
@@ -26956,6 +34034,7 @@ root("ObjectDB", {
 	[278368] = {
 		readable = "Tattered Note",
 		icon = "Interface/Icons/inv_misc_note_05",
+		model = 936413,
 		text = {
 			en = "Tattered Note",
 			es = "Nota ajada",
@@ -26970,6 +34049,7 @@ root("ObjectDB", {
 	},
 	[278436] = {
 		readable = "Shipwrecked Chest",
+		model = 1806318,
 		text = {
 			en = "Shipwrecked Chest",
 			es = "Cofre naufragado",
@@ -26984,6 +34064,7 @@ root("ObjectDB", {
 	},
 	[278437] = {
 		readable = "Offering to Bwonsamdi",
+		model = 1777743,
 		text = {
 			en = "Offering to Bwonsamdi",
 			es = "Ofrenda para Bwonsamdi",
@@ -26999,6 +34080,7 @@ root("ObjectDB", {
 	[278447] = {
 		readable = "Faithless Trapper's Spear",
 		icon = "Interface/Icons/archaeology_5_0_spearofxuen",
+		model = 1719769,
 		text = {
 			en = "Faithless Trapper's Spear",
 			es = "Lanza de trampero infiel",
@@ -27013,6 +34095,7 @@ root("ObjectDB", {
 	},
 	[278461] = {
 		readable = "Treasure Chest",
+		model = 1802264,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -27027,6 +34110,7 @@ root("ObjectDB", {
 	},
 	[278462] = {
 		readable = "Treasure Chest",
+		model = 1802264,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -27041,6 +34125,7 @@ root("ObjectDB", {
 	},
 	[278570] = {
 		readable = "Ancient Journal",
+		model = 375555,
 		text = {
 			en = "Ancient Journal",
 			es = "Diario antiguo",
@@ -27055,6 +34140,7 @@ root("ObjectDB", {
 	},
 	[278577] = {
 		readable = "Torn Horde Missive",
+		model = 985170,
 		text = {
 			en = "Torn Horde Missive",
 			es = "Misiva de la Horda rota",
@@ -27070,6 +34156,7 @@ root("ObjectDB", {
 	[278669] = {
 		readable = "Fallhaven Ledger",
 		icon = "Interface/Icons/INV_Misc_Book_08",
+		model = 244163,
 		text = {
 			en = "Fallhaven Ledger",
 			es = "Libro de contabilidad de Albergue del Ocaso",
@@ -27085,6 +34172,7 @@ root("ObjectDB", {
 	[278675] = {
 		readable = "Cursed Effigy",
 		icon = "Interface/Icons/Trade_Archaeology_Bones of Transformation",
+		model = 1712574,
 		text = {
 			en = "Cursed Effigy",
 			es = "Efigie maldita",
@@ -27099,6 +34187,7 @@ root("ObjectDB", {
 	},
 	[278694] = {
 		readable = "Treasure Chest",
+		model = 1802264,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -27113,6 +34202,7 @@ root("ObjectDB", {
 	},
 	[278793] = {
 		readable = "Treasure Chest",
+		model = 1802264,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -27128,6 +34218,7 @@ root("ObjectDB", {
 	[279042] = {
 		readable = "Smuggler's Stash",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1602486,
 		text = {
 			en = "Smuggler's Stash",
 			es = "Alijo de contrabandista",
@@ -27142,6 +34233,7 @@ root("ObjectDB", {
 	},
 	[279253] = {
 		readable = "Lucky Horace's Lucky Chest",
+		model = 341746,
 		text = {
 			en = "Lucky Horace's Lucky Chest",
 			es = "Cofre de la suerte de Horace el Afortunado",
@@ -27156,6 +34248,7 @@ root("ObjectDB", {
 	},
 	[279260] = {
 		readable = "Cleverly Disguised Chest",
+		model = 1702787,
 		text = {
 			en = "Cleverly Disguised Chest",
 			es = "Cofre \"astutamente\" camuflado",
@@ -27170,6 +34263,7 @@ root("ObjectDB", {
 	},
 	[279299] = {
 		readable = "Venomous Seal",
+		model = 1777743,
 		text = {
 			en = "Venomous Seal",
 			es = "Sello venenoso",
@@ -27185,6 +34279,7 @@ root("ObjectDB", {
 	[279609] = {
 		readable = "Spoils of Pandaria",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 803755,
 		text = {
 			en = "Spoils of Pandaria",
 			es = "Botín de Pandaria",
@@ -27199,6 +34294,7 @@ root("ObjectDB", {
 	},
 	[279645] = {
 		readable = "Tome of Oblivion",
+		model = 1354763,
 		text = {
 			en = "Tome of Oblivion",
 			es = "Tomo de olvido",
@@ -27207,11 +34303,13 @@ root("ObjectDB", {
 			it = "Tomo dell'Oblio",
 			pt = "Tomo do Oblívio",
 			ru = "Фолиант забвения",
+			ko = "[Tome of Oblivion]",
 			cn = "湮灭之书",
 		},
 	},
 	[279646] = {
 		readable = "Bloodguard Chronicles",
+		model = 985168,
 		text = {
 			en = "Bloodguard Chronicles",
 			es = "Crónicas de guardia de sangre",
@@ -27226,6 +34324,7 @@ root("ObjectDB", {
 	},
 	[279647] = {
 		readable = "Tome of Sacrifice",
+		model = 983860,
 		text = {
 			en = "Tome of Sacrifice",
 			es = "Escrito sobre Sacrificio",
@@ -27240,6 +34339,7 @@ root("ObjectDB", {
 	},
 	[279689] = {
 		readable = "Lost Nazmani Treasure",
+		model = 1777743,
 		text = {
 			en = "Lost Nazmani Treasure",
 			es = "Tesoro Nazmani perdido",
@@ -27255,6 +34355,7 @@ root("ObjectDB", {
 	[279750] = {
 		readable = "Hay Covered Chest",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1806321,
 		text = {
 			en = "Hay Covered Chest",
 			es = "Cofre cubierto de heno",
@@ -27263,11 +34364,13 @@ root("ObjectDB", {
 			it = "Cassa Ricoperta di Fieno",
 			pt = "Baú Coberto de Feno",
 			ru = "Покрытый сеном сундук",
+			ko = "[Hay Covered Chest]",
 			cn = "干草覆盖的宝箱",
 		},
 	},
 	[280504] = {
 		readable = "Swallowed Naga Chest",
+		model = 1096610,
 		text = {
 			en = "Swallowed Naga Chest",
 			es = "Tesoro tragado",
@@ -27282,6 +34385,7 @@ root("ObjectDB", {
 	},
 	[280522] = {
 		readable = "Partially-Digested Treasure",
+		model = 1702787,
 		text = {
 			en = "Partially-Digested Treasure",
 			es = "Tesoro parcialmente digerido",
@@ -27296,6 +34400,7 @@ root("ObjectDB", {
 	},
 	[280576] = {
 		readable = "Encased Scroll",
+		model = 1661562,
 		text = {
 			en = "Encased Scroll",
 			es = "Pergamino encerrado",
@@ -27311,6 +34416,7 @@ root("ObjectDB", {
 	[280619] = {
 		readable = "Old Ironbound Chest",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 953811,
 		text = {
 			en = "Old Ironbound Chest",
 			es = "Cofre antiguo reforzado con hierro",
@@ -27326,6 +34432,7 @@ root("ObjectDB", {
 	[280727] = {
 		readable = "Charred Note",
 		icon = "Interface/Icons/INV_Misc_ScrollUnrolled02",
+		model = 936411,
 		text = {
 			en = "Charred Note",
 			es = "Nota carbonizada",
@@ -27340,6 +34447,7 @@ root("ObjectDB", {
 	},
 	[280755] = {
 		readable = "Quintin's Satchel",
+		model = 878854,
 		text = {
 			en = "Quintin's Satchel",
 			es = "Bolsa de Quintin",
@@ -27348,6 +34456,8 @@ root("ObjectDB", {
 			it = "Borsa di Quintin",
 			pt = "Algibeira de Quintino",
 			ru = "Сумка Квентина",
+			ko = "[Quintin's Satchel]",
+			cn = "[Quintin's Satchel]",
 		},
 	},
 	[280815] = {
@@ -27474,46 +34584,58 @@ root("ObjectDB", {
 			it = "|cFFFFFFFFStep 8:|r Dono da Dama Graham",
 			pt = "|cFFFFFFFFStep 8:|r Presente da Srta. Graham",
 			ru = "|cFFFFFFFFStep 8:|r Письмо от мисс Грэхэм",
+			ko = "[Gift from Ms. Graham]",
 			cn = "|cFFFFFFFF第8步:|r 格拉汉姆女士的礼物",
 		},
 	},
 	[280883] = {
 		readable = "Sun-Worn Chest",
+		model = 1062118,
 		text = {
 			en = "Sun-Worn Chest",
 			es = "Cofre descolorido por el sol",
 			de = "Sonnengebleichte Truhe",
 			fr = "Coffre abîmé par le soleil",
 			it = "Cassa Consumata dal Sole",
+			pt = "[Sun-Worn Chest]",
 			ru = "Рассохшийся под солнцем сундук",
+			ko = "[Sun-Worn Chest]",
 			cn = "被久晒的箱子",
 		},
 	},
 	[280886] = {
 		readable = "Star-Touched Chest",
+		model = 1709672,
 		text = {
 			en = "Star-Touched Chest",
 			es = "Cofre tocado por las estrellas",
 			de = "Sternenberührte Truhe",
 			fr = "Coffre touché par les étoiles",
 			it = "Cassa Toccata dalle Stelle",
+			pt = "[Star-touched Chest]",
 			ru = "Залитый звездным светом сундук",
+			ko = "[Star-touched Chest]",
 			cn = "染星之箱",
 		},
 	},
 	[280903] = {
 		readable = "Lost Cat Toy",
+		model = 1335538,
 		text = {
 			en = "Lost Cat Toy",
 			es = "Juguete de gato perdido",
 			de = "Verlorenes Katzenspielzeug",
 			fr = "Jouet pour chat perdu",
+			it = "[Lost Cat Toy]",
+			pt = "[Lost Cat Toy]",
 			ru = "Потерянная кошачья игрушка",
+			ko = "[Lost Cat Toy]",
 			cn = "丢失的猫玩具",
 		},
 	},
 	[280948] = {
 		readable = "Twilight Outhouse",
+		model = 321660,
 		text = {
 			en = "Twilight Outhouse",
 			es = "Letrina de la avanzada",
@@ -27528,6 +34650,7 @@ root("ObjectDB", {
 	},
 	[280951] = {
 		readable = "Ashvane Spoils",
+		model = 1805764,
 		text = {
 			en = "Ashvane Spoils",
 			es = "Botín de los Gobernalle",
@@ -27542,16 +34665,38 @@ root("ObjectDB", {
 	},
 	[280957] = {
 		readable = "Zukashi's Satchel",
+		model = 878854,
 		text = {
 			en = "Zukashi's Satchel",
+			es = "[Zukashi's Satchel]",
 			de = "Zukashis Säckchen",
 			fr = "Sacoche de Zukashi",
+			it = "[Zukashi's Satchel]",
+			pt = "[Zukashi's Satchel]",
 			ru = "Сумка Зукаши",
+			ko = "[Zukashi's Satchel]",
+			cn = "[Zukashi's Satchel]",
+		},
+	},
+	[281079] = {
+		readable = "Star Moss",
+		model = 1794518,
+		text = {
+			en = "Star Moss",
+			es = "Musgo estelar",
+			de = "Sternmoos",
+			fr = "Mousse étoilée",
+			it = "Muschio Stellare",
+			pt = "Musgo-estrela",
+			ru = "Звездный мох",
+			ko = "별이끼",
+			cn = "星光苔",
 		},
 	},
 	[281092] = {
 		readable = "Witch Doctor's Hoard",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1777743,
 		text = {
 			en = "Witch Doctor's Hoard",
 			es = "Tesoro de médico brujo",
@@ -27566,6 +34711,7 @@ root("ObjectDB", {
 	},
 	[281230] = {
 		readable = "Formal Invitation",
+		model = 1267024,
 		text = {
 			en = "Formal Invitation",
 			es = "Invitación formal",
@@ -27580,6 +34726,7 @@ root("ObjectDB", {
 	},
 	[281348] = {
 		readable = "Crumbling Letter",
+		model = 576627,
 		text = {
 			en = "Crumbling Letter",
 			es = "Carta deshecha",
@@ -27595,6 +34742,7 @@ root("ObjectDB", {
 	[281397] = {
 		readable = "Cutwater Treasure Chest",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1806321,
 		text = {
 			en = "Cutwater Treasure Chest",
 			es = "Arqueta Aguacortada",
@@ -27610,6 +34758,7 @@ root("ObjectDB", {
 	[281494] = {
 		readable = "Frosty Treasure Chest",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1806321,
 		text = {
 			en = "Frosty Treasure Chest",
 			es = "Arqueta congelada",
@@ -27624,6 +34773,7 @@ root("ObjectDB", {
 	},
 	[281551] = {
 		readable = "Help Wanted Poster",
+		model = 305399,
 		text = {
 			en = "Help Wanted Poster",
 			es = "Póster de Se busca ayudante",
@@ -27639,6 +34789,7 @@ root("ObjectDB", {
 	[281583] = {
 		readable = "Ancient Reliquary",
 		icon = "Interface/Icons/inv_jewelcrafting_gem_05",
+		model = 1714199,
 		text = {
 			en = "Ancient Reliquary",
 			es = "Relicario antiguo",
@@ -27654,6 +34805,7 @@ root("ObjectDB", {
 	[281639] = {
 		readable = "Crumbling Statue",
 		icon = "Interface/Icons/inv_jewelcrafting_70_cutgem03_blue",
+		model = 2013140,
 		text = {
 			en = "Crumbling Statue",
 			es = "Estatua desmoronada",
@@ -27669,6 +34821,7 @@ root("ObjectDB", {
 	[281646] = {
 		readable = "Honey Vat",
 		icon = "Interface/Icons/INV_Potion_147",
+		model = 1780619,
 		text = {
 			en = "Honey Vat",
 			es = "Cuba de miel",
@@ -27683,6 +34836,7 @@ root("ObjectDB", {
 	},
 	[281647] = {
 		readable = "Posted Notice",
+		model = 1305630,
 		text = {
 			en = "Posted Notice",
 			es = "Aviso colgado",
@@ -27698,6 +34852,7 @@ root("ObjectDB", {
 	[281655] = {
 		readable = "Gift of the Brokenhearted",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1804876,
 		text = {
 			en = "Gift of the Brokenhearted",
 			es = "Favor de corazón roto",
@@ -27713,6 +34868,7 @@ root("ObjectDB", {
 	[281673] = {
 		readable = "Corlain Citizen's Journal",
 		icon = "Interface/Icons/INV_Misc_Book_09",
+		model = 1852972,
 		text = {
 			en = "Corlain Citizen's Journal",
 			es = "Diario de ciudadano de Corlain",
@@ -27727,6 +34883,7 @@ root("ObjectDB", {
 	},
 	[281718] = {
 		readable = "HELP WANTED",
+		model = 936411,
 		text = {
 			en = "HELP WANTED",
 			es = "SE BUSCA AYUDANTE",
@@ -27739,9 +34896,85 @@ root("ObjectDB", {
 			cn = "求助",
 		},
 	},
+	[281867] = {
+		readable = "Star Moss",
+		model = 1794521,
+		text = {
+			en = "Star Moss",
+			es = "Musgo estelar",
+			de = "Sternmoos",
+			fr = "Mousse étoilée",
+			it = "Muschio Stellare",
+			pt = "Musgo-estrela",
+			ru = "Звездный мох",
+			ko = "별이끼",
+			cn = "星光苔",
+		},
+	},
+	[281868] = {
+		readable = "Star Moss",
+		model = 1794520,
+		text = {
+			en = "Star Moss",
+			es = "Musgo estelar",
+			de = "Sternmoos",
+			fr = "Mousse étoilée",
+			it = "Muschio Stellare",
+			pt = "Musgo-estrela",
+			ru = "Звездный мох",
+			ko = "별이끼",
+			cn = "星光苔",
+		},
+	},
+	[281869] = {
+		readable = "Siren's Sting",
+		model = 1882352,
+		text = {
+			en = "Siren's Sting",
+			es = "Picadura de sirena",
+			de = "Sirenendorn",
+			fr = "Épine de sirène",
+			it = "Pruno di Sirena",
+			pt = "Agulha-de-sereia",
+			ru = "Укус сирены",
+			ko = "세이렌의 맹독약초",
+			cn = "海妖之刺",
+		},
+	},
+	[281870] = {
+		readable = "Riverbud",
+		model = 1784466,
+		text = {
+			en = "Riverbud",
+			es = "Brotarrío",
+			de = "Flussknospe",
+			fr = "Rivebulbe",
+			it = "Baccello Fluviale",
+			pt = "Broto-do-rio",
+			ru = "Речной горох",
+			ko = "강봉오리",
+			cn = "流波花苞",
+		},
+	},
+	[281872] = {
+		readable = "Sea Stalks",
+		model = 1890600,
+		text = {
+			en = "Sea Stalks",
+			es = "Tallomares",
+			de = "Meeresstängel",
+			fr = "Brins-de-mer",
+			it = "Steli Marini",
+			pt = "Talo-marinho",
+			ru = "Морской стебель",
+			ko = "바다 줄기",
+			cn = "海潮茎杆",
+		},
+	},
 	[281898] = {
 		readable = "Dazar's Forgotten Chest",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1802580,
 		text = {
 			en = "Dazar's Forgotten Chest",
 			es = "Cofre olvidado de Dazar",
@@ -27757,6 +34990,7 @@ root("ObjectDB", {
 	[282153] = {
 		readable = "Sunken Strongbox",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 953811,
 		text = {
 			en = "Sunken Strongbox",
 			es = "Caja fuerte hundida",
@@ -27772,6 +35006,7 @@ root("ObjectDB", {
 	[282457] = {
 		readable = "Brambleguard Totem",
 		icon = "Interface/Icons/Spell_Shaman_TotemRecall",
+		model = 2020671,
 		text = {
 			en = "Brambleguard Totem",
 			es = "Tótem guardazarza",
@@ -27787,6 +35022,7 @@ root("ObjectDB", {
 	[282478] = {
 		readable = "Empty Crate",
 		icon = "Interface/Icons/INV_Crate_03",
+		model = 1602480,
 		text = {
 			en = "Empty Crate",
 			es = "Cajón vacío",
@@ -27802,6 +35038,7 @@ root("ObjectDB", {
 	[282498] = {
 		readable = "Desert Flute",
 		icon = "Interface/Icons/inv_misc_flute_01",
+		model = 1674792,
 		text = {
 			en = "Desert Flute",
 			es = "Flauta del desierto",
@@ -27832,6 +35069,7 @@ root("ObjectDB", {
 	},
 	[282721] = {
 		readable = "Treasure Chest",
+		model = 1702787,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -27846,6 +35084,7 @@ root("ObjectDB", {
 	},
 	[282723] = {
 		readable = "Treasure Chest",
+		model = 1702787,
 		text = {
 			en = "Treasure Chest",
 			es = "Arqueta",
@@ -27861,6 +35100,7 @@ root("ObjectDB", {
 	[284426] = {
 		readable = "Buried Mining Machine",
 		icon = "Interface/Icons/inv_pick_03",
+		model = 1952881,
 		text = {
 			en = "Buried Mining Machine",
 			es = "Máquina minera enterrada",
@@ -27876,6 +35116,7 @@ root("ObjectDB", {
 	[284448] = {
 		readable = "Hidden Scholar's Chest",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1805764,
 		text = {
 			en = "Hidden Scholar's Chest",
 			es = "Cofre de erudito oculto",
@@ -27890,6 +35131,7 @@ root("ObjectDB", {
 	},
 	[284454] = {
 		readable = "Da White Shark's Bounty",
+		model = 1802580,
 		text = {
 			en = "Da White Shark's Bounty",
 			es = "Recompensa del Tiburón Blanco",
@@ -27905,6 +35147,7 @@ root("ObjectDB", {
 	[284455] = {
 		readable = "The Exile's Lament",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1802580,
 		text = {
 			en = "The Exile's Lament",
 			es = "Lamento del Exiliado",
@@ -27919,6 +35162,7 @@ root("ObjectDB", {
 	},
 	[286016] = {
 		readable = "Ship's Log",
+		model = 1852972,
 		text = {
 			en = "Ship's Log",
 			es = "Cuaderno de bitácora",
@@ -27933,6 +35177,7 @@ root("ObjectDB", {
 	},
 	[287081] = {
 		readable = "Ancient Tablet",
+		model = 1726777,
 		text = {
 			en = "Ancient Tablet",
 			es = "Tablilla antigua",
@@ -27948,6 +35193,7 @@ root("ObjectDB", {
 	[287185] = {
 		readable = "Wanted: Darkspeaker Jo'la",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 511906,
 		text = {
 			en = "Wanted: Darkspeaker Jo'la",
 			es = "Se busca: hablaoscuro Jo'la",
@@ -27963,6 +35209,7 @@ root("ObjectDB", {
 	[287189] = {
 		readable = "Wanted: Dangerous Beasts",
 		icon = "Interface/Icons/inv_misc_note_05",
+		model = 191094,
 		text = {
 			en = "Wanted: Dangerous Beasts",
 			es = "Se buscan: bestias peligrosas",
@@ -27978,6 +35225,7 @@ root("ObjectDB", {
 	[287228] = {
 		readable = "Wanted: Dark Chronicler",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 199473,
 		text = {
 			en = "Wanted: Dark Chronicler",
 			es = "Se busca: Cronista oscuro",
@@ -27993,6 +35241,7 @@ root("ObjectDB", {
 	[287229] = {
 		readable = "Wanted: Dark Chronicler",
 		icon = "Interface/Icons/inv_misc_note_05",
+		model = 1365480,
 		text = {
 			en = "Wanted: Dark Chronicler",
 			es = "Se busca: Cronista oscuro",
@@ -28007,6 +35256,7 @@ root("ObjectDB", {
 	},
 	[287232] = {
 		readable = "Scouting Report",
+		model = 1305630,
 		text = {
 			en = "Scouting Report",
 			es = "Informe de exploración",
@@ -28021,6 +35271,7 @@ root("ObjectDB", {
 	},
 	[287239] = {
 		readable = "Grayal's Last Offering",
+		model = 1804876,
 		text = {
 			en = "Grayal's Last Offering",
 			es = "Última ofrenda de Grayal",
@@ -28035,6 +35286,7 @@ root("ObjectDB", {
 	},
 	[287304] = {
 		readable = "Lost Explorer's Bounty",
+		model = 1714199,
 		text = {
 			en = "Lost Explorer's Bounty",
 			es = "Recompensa de explorador perdido",
@@ -28049,6 +35301,7 @@ root("ObjectDB", {
 	},
 	[287318] = {
 		readable = "Sandfury Reserve",
+		model = 1804876,
 		text = {
 			en = "Sandfury Reserve",
 			es = "Reserva Furiarena",
@@ -28063,6 +35316,7 @@ root("ObjectDB", {
 	},
 	[287320] = {
 		readable = "Stranded Cache",
+		model = 1714199,
 		text = {
 			en = "Stranded Cache",
 			es = "Alijo varado",
@@ -28077,6 +35331,7 @@ root("ObjectDB", {
 	},
 	[287324] = {
 		readable = "Excavator's Greed",
+		model = 1804876,
 		text = {
 			en = "Excavator's Greed",
 			es = "Codicia de excavador",
@@ -28091,6 +35346,7 @@ root("ObjectDB", {
 	},
 	[287326] = {
 		readable = "Zem'lan's Buried Treasure",
+		model = 1804876,
 		text = {
 			en = "Zem'lan's Buried Treasure",
 			es = "Tesoro enterrado de Zem'lan",
@@ -28106,6 +35362,7 @@ root("ObjectDB", {
 	[287327] = {
 		readable = "Scouting Report",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 1305630,
 		text = {
 			en = "Scouting Report",
 			es = "Informe de exploración",
@@ -28120,6 +35377,7 @@ root("ObjectDB", {
 	},
 	[287398] = {
 		readable = "Wanted: Za'roco",
+		model = 1349040,
 		text = {
 			en = "Wanted: Za'roco",
 			es = "Se busca: Za'roco",
@@ -28135,6 +35393,7 @@ root("ObjectDB", {
 	[287440] = {
 		readable = "Wanted: Taz'raka",
 		icon = "Interface/Icons/inv_misc_note_05",
+		model = 1349040,
 		text = {
 			en = "Wanted: Taz'raka",
 			es = "Se busca: Taz'raka",
@@ -28150,6 +35409,7 @@ root("ObjectDB", {
 	[287441] = {
 		readable = "Wanted: Sandscout Vesarik",
 		icon = "Interface/Icons/inv_misc_note_05",
+		model = 1349040,
 		text = {
 			en = "Wanted: Sandscout Vesarik",
 			es = "Se busca: exploraarena Vesarik",
@@ -28165,6 +35425,7 @@ root("ObjectDB", {
 	[287442] = {
 		readable = "Wanted: Cobra Excursion Participants",
 		icon = "Interface/Icons/inv_misc_note_05",
+		model = 1349040,
 		text = {
 			en = "Wanted: Cobra Excursion Participants",
 			es = "Se buscan: participantes de la expedición Cobra",
@@ -28179,6 +35440,7 @@ root("ObjectDB", {
 	},
 	[287958] = {
 		readable = "Bulletin Board",
+		model = 1822634,
 		text = {
 			en = "Bulletin Board",
 			es = "Tablón de anuncios",
@@ -28194,6 +35456,7 @@ root("ObjectDB", {
 	[288157] = {
 		readable = "WANTED: Yarsel'ghun",
 		icon = "Interface/Icons/INV_Misc_ScrollUnrolled02",
+		model = 1349040,
 		text = {
 			en = "WANTED: Yarsel'ghun",
 			es = "Se busca: Yarsel'ghun",
@@ -28208,6 +35471,7 @@ root("ObjectDB", {
 	},
 	[288167] = {
 		readable = "Marie's Package",
+		model = 1331241,
 		text = {
 			en = "Marie's Package",
 			es = "Paquete de Marie",
@@ -28222,6 +35486,7 @@ root("ObjectDB", {
 	},
 	[288596] = {
 		readable = "Cache of Secrets",
+		model = 1804876,
 		text = {
 			en = "Cache of Secrets",
 			es = "Alijo de secretos",
@@ -28237,6 +35502,7 @@ root("ObjectDB", {
 	[288622] = {
 		readable = "Wanted Poster",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 1696367,
 		text = {
 			en = "Wanted Poster",
 			es = "Cartel de Se busca",
@@ -28251,6 +35517,7 @@ root("ObjectDB", {
 	},
 	[288641] = {
 		readable = "WANTED: Gryphon 'Nappers",
+		model = 1349040,
 		text = {
 			en = "WANTED: Gryphon 'Nappers",
 			es = "SE BUSCAN: ladrones de grifos",
@@ -28265,6 +35532,7 @@ root("ObjectDB", {
 	},
 	[289310] = {
 		readable = "WANTED: Raging Earthguard",
+		model = 1349040,
 		text = {
 			en = "WANTED: Raging Earthguard",
 			es = "SE BUSCA: guardián de tierra furioso",
@@ -28279,6 +35547,7 @@ root("ObjectDB", {
 	},
 	[289313] = {
 		readable = "WANTED: The Hornet",
+		model = 1349040,
 		text = {
 			en = "WANTED: The Hornet",
 			es = "SE BUSCA: el Avispón",
@@ -28293,6 +35562,7 @@ root("ObjectDB", {
 	},
 	[289361] = {
 		readable = "WANTED: Quartermaster Ssylis",
+		model = 1349040,
 		text = {
 			en = "WANTED: Quartermaster Ssylis",
 			es = "SE BUSCA: intendente Ssylis",
@@ -28308,6 +35578,7 @@ root("ObjectDB", {
 	[289365] = {
 		readable = "Wanted Poster",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 199426,
 		text = {
 			en = "Wanted Poster",
 			es = "Cartel de Se busca",
@@ -28323,6 +35594,7 @@ root("ObjectDB", {
 	[289647] = {
 		readable = "Weathered Treasure Chest",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1806321,
 		text = {
 			en = "Weathered Treasure Chest",
 			es = "Arqueta deteriorada",
@@ -28331,11 +35603,13 @@ root("ObjectDB", {
 			it = "Cassa del Tesoro Logora",
 			pt = "Baú do Tesouro Desgastado",
 			ru = "Видавший виды сундук с сокровищами",
+			ko = "[Weathered Treasure Chest]",
 			cn = "风化的宝箱",
 		},
 	},
 	[289728] = {
 		readable = "Captain Gulnaku's Treasure Map",
+		model = 198457,
 		text = {
 			en = "Captain Gulnaku's Treasure Map",
 			es = "Mapa del tesoro del capitán Gulnaku",
@@ -28350,6 +35624,7 @@ root("ObjectDB", {
 	},
 	[290138] = {
 		readable = "Bot Buster Bomb",
+		model = 254419,
 		text = {
 			en = "Bot Buster Bomb",
 			es = "Bomba destruyerrobots",
@@ -28358,12 +35633,14 @@ root("ObjectDB", {
 			it = "Bomba Robodemolitrice",
 			pt = "Bomba-robô Pressurizada",
 			ru = "Противоботовая бомба",
+			ko = "[Bot Buster Bomb]",
 			cn = "机械爆破弹",
 		},
 	},
 	[290419] = {
 		readable = "Wanted Poster",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 1349040,
 		text = {
 			en = "Wanted Poster",
 			es = "Cartel de Se busca",
@@ -28379,6 +35656,7 @@ root("ObjectDB", {
 	[290537] = {
 		readable = "Help Wanted",
 		icon = "Interface/Icons/INV_Misc_ScrollUnrolled02",
+		model = 1696367,
 		text = {
 			en = "Help Wanted",
 			es = "Se busca ayudante",
@@ -28394,6 +35672,7 @@ root("ObjectDB", {
 	[290725] = {
 		readable = "Riches of Tor'nowa",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1804876,
 		text = {
 			en = "Riches of Tor'nowa",
 			es = "Riquezas de Tor'nowa",
@@ -28408,6 +35687,7 @@ root("ObjectDB", {
 	},
 	[290750] = {
 		readable = "Jambani Stockpile",
+		model = 1838302,
 		text = {
 			en = "Jambani Stockpile",
 			es = "Reservas Jambani",
@@ -28423,6 +35703,7 @@ root("ObjectDB", {
 	[290765] = {
 		readable = "Large Pile of Gold",
 		icon = "Interface/Icons/INV_Ore_Gold_Nugget",
+		model = 200135,
 		text = {
 			en = "Large Pile of Gold",
 			es = "Montón de oro enorme",
@@ -28438,6 +35719,7 @@ root("ObjectDB", {
 	[290993] = {
 		readable = "Irontide Loot",
 		icon = "Interface/Icons/inv_misc_treasurechest04b",
+		model = 446671,
 		text = {
 			en = "Irontide Loot",
 			es = "Botín de los Marea de Hierro",
@@ -28453,6 +35735,7 @@ root("ObjectDB", {
 	[291143] = {
 		readable = "Ranah's Wrench",
 		icon = "Interface/Icons/inv_misc_wrench_01",
+		model = 197622,
 		text = {
 			en = "Ranah's Wrench",
 			es = "Llave de Rinah",
@@ -28468,6 +35751,7 @@ root("ObjectDB", {
 	[291233] = {
 		readable = "Saurolisk Tail",
 		icon = "Interface/Icons/inv_misc_herb_whiptail",
+		model = 965879,
 		text = {
 			en = "Saurolisk Tail",
 			es = "Cola de saurolisco",
@@ -28483,6 +35767,7 @@ root("ObjectDB", {
 	[291238] = {
 		readable = "Bwonsamdi's Tears",
 		icon = "Interface/Icons/inv_misc_herb_riverbud",
+		model = 894512,
 		text = {
 			en = "Bwonsamdi's Tears",
 			es = "Lágrimas de Bwonsamdi",
@@ -28498,6 +35783,7 @@ root("ObjectDB", {
 	[291241] = {
 		readable = "Gnarl Root",
 		icon = "Interface/Icons/inv_misc_herb_07",
+		model = 848980,
 		text = {
 			en = "Gnarl Root",
 			es = "Raíz de Gnarl",
@@ -28512,6 +35798,7 @@ root("ObjectDB", {
 	},
 	[291257] = {
 		readable = "Small Treasure Chest",
+		model = 1806318,
 		text = {
 			en = "Small Treasure Chest",
 			es = "Arqueta pequeña",
@@ -28527,6 +35814,7 @@ root("ObjectDB", {
 	[291291] = {
 		readable = "Wanted: Poacher",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 191094,
 		text = {
 			en = "Wanted: Poacher",
 			es = "Se busca: furtivo",
@@ -28542,6 +35830,7 @@ root("ObjectDB", {
 	[292523] = {
 		readable = "Wanted Poster",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 305391,
 		text = {
 			en = "Wanted Poster",
 			es = "Cartel de Se busca",
@@ -28556,6 +35845,7 @@ root("ObjectDB", {
 	},
 	[292673] = {
 		readable = "A Damp Scroll",
+		model = 936441,
 		text = {
 			en = "A Damp Scroll",
 			es = "Un pergamino húmedo",
@@ -28570,6 +35860,7 @@ root("ObjectDB", {
 	},
 	[292674] = {
 		readable = "A Damp Scroll",
+		model = 936441,
 		text = {
 			en = "A Damp Scroll",
 			es = "Un pergamino húmedo",
@@ -28584,6 +35875,7 @@ root("ObjectDB", {
 	},
 	[292675] = {
 		readable = "A Damp Scroll",
+		model = 936441,
 		text = {
 			en = "A Damp Scroll",
 			es = "Un pergamino húmedo",
@@ -28598,6 +35890,7 @@ root("ObjectDB", {
 	},
 	[292676] = {
 		readable = "A Damp Scroll",
+		model = 936441,
 		text = {
 			en = "A Damp Scroll",
 			es = "Un pergamino húmedo",
@@ -28612,6 +35905,7 @@ root("ObjectDB", {
 	},
 	[292677] = {
 		readable = "A Damp Scroll",
+		model = 936441,
 		text = {
 			en = "A Damp Scroll",
 			es = "Un pergamino húmedo",
@@ -28626,6 +35920,7 @@ root("ObjectDB", {
 	},
 	[292686] = {
 		readable = "Ominous Altar",
+		model = 2004170,
 		text = {
 			en = "Ominous Altar",
 			es = "Altar agorero",
@@ -28641,6 +35936,7 @@ root("ObjectDB", {
 	[292812] = {
 		readable = "Sapphire Amaraina",
 		icon = "Interface/Icons/inv_misc_herb_taladororchid",
+		model = 995737,
 		text = {
 			en = "Sapphire Amaraina",
 			es = "Amaraina de zafiro",
@@ -28656,6 +35952,7 @@ root("ObjectDB", {
 	[292823] = {
 		readable = "Krag'wa's Ire",
 		icon = "Interface/Icons/inv_misc_herb_talandrasrose_petal",
+		model = 219499,
 		text = {
 			en = "Krag'wa's Ire",
 			es = "Ira de Krag'wa",
@@ -28671,6 +35968,7 @@ root("ObjectDB", {
 	[292825] = {
 		readable = "Stonebloom",
 		icon = "Interface/Icons/INV_Misc_SpineLeaf _01",
+		model = 219491,
 		text = {
 			en = "Stonebloom",
 			es = "Cetraria",
@@ -28686,6 +35984,7 @@ root("ObjectDB", {
 	[293349] = {
 		readable = "Discarded Lunchbox",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 197617,
 		text = {
 			en = "Discarded Lunchbox",
 			es = "Fiambrera desechada",
@@ -28701,6 +36000,7 @@ root("ObjectDB", {
 	[293350] = {
 		readable = "Carved Wooden Chest",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1602486,
 		text = {
 			en = "Carved Wooden Chest",
 			es = "Cofre de madera tallado",
@@ -28716,6 +36016,7 @@ root("ObjectDB", {
 	[293568] = {
 		readable = "Wanted Poster",
 		icon = "Interface/Icons/inv_scroll_03",
+		model = 936419,
 		text = {
 			en = "Wanted Poster",
 			es = "Cartel de Se busca",
@@ -28907,6 +36208,7 @@ root("ObjectDB", {
 	[293852] = {
 		readable = "Buried Treasure Chest",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1806321,
 		text = {
 			en = "Buried Treasure Chest",
 			es = "Arqueta enterrada",
@@ -28922,6 +36224,7 @@ root("ObjectDB", {
 	[293880] = {
 		readable = "Buried Treasure Chest",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1806321,
 		text = {
 			en = "Buried Treasure Chest",
 			es = "Arqueta enterrada",
@@ -28937,6 +36240,7 @@ root("ObjectDB", {
 	[293881] = {
 		readable = "Buried Treasure Chest",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1806321,
 		text = {
 			en = "Buried Treasure Chest",
 			es = "Cofre del tesoro enterrado",
@@ -28945,12 +36249,14 @@ root("ObjectDB", {
 			it = "Forziere del Tesoro Sepolto",
 			pt = "Baú do Tesouro Enterrado",
 			ru = "Закопанный сундук с сокровищами",
+			ko = "[Buried Treasure Chest]",
 			cn = "被掩埋的宝箱",
 		},
 	},
 	[293884] = {
 		readable = "Buried Treasure Chest",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1806321,
 		text = {
 			en = "Buried Treasure Chest",
 			es = "Arqueta enterrada",
@@ -28966,6 +36272,7 @@ root("ObjectDB", {
 	[293962] = {
 		readable = "Precarious Noble Cache",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1806321,
 		text = {
 			en = "Precarious Noble Cache",
 			es = "Alijo de noble precario",
@@ -28981,6 +36288,7 @@ root("ObjectDB", {
 	[293964] = {
 		readable = "Forgotten Smuggler's Stash",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1806321,
 		text = {
 			en = "Forgotten Smuggler's Stash",
 			es = "Alijo de contrabandista olvidado",
@@ -28996,6 +36304,7 @@ root("ObjectDB", {
 	[293965] = {
 		readable = "Scrimshaw Cache",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1806321,
 		text = {
 			en = "Scrimshaw Cache",
 			es = "Alijo de los Tallamarfil",
@@ -29010,6 +36319,7 @@ root("ObjectDB", {
 	},
 	[293985] = {
 		readable = "Wanted: War Gore",
+		model = 1349040,
 		text = {
 			en = "Wanted: War Gore",
 			es = "Se busca: Guerrasangre",
@@ -29024,6 +36334,7 @@ root("ObjectDB", {
 	},
 	[294084] = {
 		readable = "Adventurer's Society Loot Stash",
+		model = 1602486,
 		text = {
 			en = "Adventurer's Society Loot Stash",
 			es = "Alijo de botín de la Sociedad de Aventureros",
@@ -29048,6 +36359,7 @@ root("ObjectDB", {
 			it = "Globo Acceso",
 			pt = "Orbe Aceso",
 			ru = "Светящаяся сфера",
+			ko = "[Lit Orb]",
 			cn = "点亮的宝珠",
 		},
 	},
@@ -29060,8 +36372,10 @@ root("ObjectDB", {
 			es = "Semilla extraña",
 			de = "Seltsamer Samen",
 			fr = "Graine étrange",
+			it = "[Strange Seed]",
 			pt = "Semente Estranha",
 			ru = "Странное семечко",
+			ko = "[Strange Seed]",
 			cn = "奇怪的种子",
 		},
 	},
@@ -29074,8 +36388,10 @@ root("ObjectDB", {
 			es = "Rana pequeña",
 			de = "Winziger Frosch",
 			fr = "Grenouille minuscule",
+			it = "[Tiny Frog]",
 			pt = "Rã Minúscula",
 			ru = "Лягушка-малютка",
+			ko = "[Tiny Frog]",
 			cn = "小青蛙",
 		},
 	},
@@ -29088,8 +36404,10 @@ root("ObjectDB", {
 			es = "Hueso frágil",
 			de = "Morscher Knochen",
 			fr = "Os fragile",
+			it = "[Brittle Bone]",
 			pt = "Osso Quebradiço",
 			ru = "Хрупкая кость",
+			ko = "[Brittle Bone]",
 			cn = "易脆的骨头",
 		},
 	},
@@ -29102,8 +36420,10 @@ root("ObjectDB", {
 			es = "Vela mal colocada",
 			de = "Verlegte Kerze",
 			fr = "Bougie égarée",
+			it = "[Misplaced Candle]",
 			pt = "Vela Deslocada",
 			ru = "Сдвинутая свеча",
+			ko = "[Misplaced Candle]",
 			cn = "错放的蜡烛",
 		},
 	},
@@ -29116,8 +36436,10 @@ root("ObjectDB", {
 			es = "Vaso extraño",
 			de = "Komischer Becher",
 			fr = "Tasse étrange",
+			it = "[Odd Cup]",
 			pt = "Taça Estranha",
 			ru = "Диковинная чашка",
+			ko = "[Odd Cup]",
 			cn = "奇异的杯子",
 		},
 	},
@@ -29130,8 +36452,10 @@ root("ObjectDB", {
 			es = "Roca interesante",
 			de = "Interessanter Stein",
 			fr = "Rocher intéressant",
+			it = "[Interesting Rock]",
 			pt = "Rocha Interessante",
 			ru = "Интересный камень",
+			ko = "[Interesting Rock]",
 			cn = "奇趣的石头",
 		},
 	},
@@ -29144,8 +36468,10 @@ root("ObjectDB", {
 			es = "Lirio floreciente",
 			de = "Blühende Lilie",
 			fr = "Lys éclos",
+			it = "[Blooming Lily]",
 			pt = "Lírio Florescente",
 			ru = "Цветущая лилия",
+			ko = "[Blooming Lily]",
 			cn = "绽放的睡莲",
 		},
 	},
@@ -29158,8 +36484,10 @@ root("ObjectDB", {
 			es = "Flor bonita",
 			de = "Hübsche Blume",
 			fr = "Jolie fleur",
+			it = "[Pretty Flower]",
 			pt = "Flor Bonita",
 			ru = "Прелестный цветок",
+			ko = "[Pretty Flower]",
 			cn = "漂亮的花朵",
 		},
 	},
@@ -29175,6 +36503,7 @@ root("ObjectDB", {
 			it = "Vecchio Libro",
 			pt = "Livro Velho",
 			ru = "Старая книга",
+			ko = "[Old Book]",
 			cn = "古旧的书籍",
 		},
 	},
@@ -29188,7 +36517,9 @@ root("ObjectDB", {
 			de = "Toter Fisch",
 			fr = "Poisson mort",
 			it = "Pesce Morto",
+			pt = "[Dead Fish]",
 			ru = "Дохлая рыба",
+			ko = "[Dead Fish]",
 			cn = "死鱼",
 		},
 	},
@@ -29202,7 +36533,9 @@ root("ObjectDB", {
 			de = "Raues Brett",
 			fr = "Planche griffée",
 			it = "Tavola Graffiata",
+			pt = "[Scratched Board]",
 			ru = "Поцарапанная доска",
+			ko = "[Scratched Board]",
 			cn = "有抓痕的木板",
 		},
 	},
@@ -29216,7 +36549,9 @@ root("ObjectDB", {
 			de = "Verlorener Ring",
 			fr = "Anneau perdu",
 			it = "Anello Perduto",
+			pt = "[Lost Ring]",
 			ru = "Потерянное кольцо",
+			ko = "[Lost Ring]",
 			cn = "失落的戒指",
 		},
 	},
@@ -29230,7 +36565,9 @@ root("ObjectDB", {
 			de = "Vergammelnder Apfel",
 			fr = "Pomme pourrie",
 			it = "Mela Avariata",
+			pt = "[Spoiled Apple]",
 			ru = "Испорченное яблоко",
+			ko = "[Spoiled Apple]",
 			cn = "变质的苹果",
 		},
 	},
@@ -29244,7 +36581,9 @@ root("ObjectDB", {
 			de = "Abgebrochener Zahn",
 			fr = "Dent cassée",
 			it = "Dente Rotto",
+			pt = "[Broken Tooth]",
 			ru = "Сломанный зуб",
+			ko = "[Broken Tooth]",
 			cn = "断牙",
 		},
 	},
@@ -29258,7 +36597,9 @@ root("ObjectDB", {
 			de = "Abgetragener Helm",
 			fr = "Heaume usé",
 			it = "Elmo Usato",
+			pt = "[Worn Helm]",
 			ru = "Поношенный шлем",
+			ko = "[Worn Helm]",
 			cn = "古旧的头盔",
 		},
 	},
@@ -29272,7 +36613,9 @@ root("ObjectDB", {
 			de = "Grünes Blatt",
 			fr = "Feuille charnue",
 			it = "Foglia Frondosa",
+			pt = "[Leafy Leaf]",
 			ru = "Мясистый лист",
+			ko = "[Leafy Leaf]",
 			cn = "繁茂之叶",
 		},
 	},
@@ -29286,7 +36629,9 @@ root("ObjectDB", {
 			de = "Muffige Stoffbahn",
 			fr = "Chiffon moisi",
 			it = "Stoffa Ammuffita",
+			pt = "[Musty Cloth]",
 			ru = "Заплесневелая тряпка",
+			ko = "[Musty Cloth]",
 			cn = "发霉的布块",
 		},
 	},
@@ -29300,7 +36645,9 @@ root("ObjectDB", {
 			de = "Zerbrochene Schrifttafel",
 			fr = "Tablette brisée",
 			it = "Tavoletta Spezzata",
+			pt = "[Broken Tablet]",
 			ru = "Разбитая табличка",
+			ko = "[Broken Tablet]",
 			cn = "破碎石板",
 		},
 	},
@@ -29314,13 +36661,31 @@ root("ObjectDB", {
 			de = "Ausgebrannte Fackel",
 			fr = "Torche cendreuse",
 			it = "Torcia Incenerita",
+			pt = "[Ashed Torch]",
 			ru = "Обгоревший факел",
+			ko = "[Ashed Torch]",
 			cn = "飞灰火把",
+		},
+	},
+	[294125] = {
+		readable = "Anchor Weed",
+		model = 2108571,
+		text = {
+			en = "Anchor Weed",
+			es = "Alga de ancla",
+			de = "Ankerkraut",
+			fr = "Ancoracée",
+			it = "Alga d'Ancora",
+			pt = "Erva-ancorina",
+			ru = "Якорь-трава",
+			ko = "닻풀",
+			cn = "锚草",
 		},
 	},
 	[294173] = {
 		readable = "Venture Co. Supply Chest",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 446673,
 		text = {
 			en = "Venture Co. Supply Chest",
 			es = "Alijo de suministros de Ventura y Cía.",
@@ -29329,12 +36694,14 @@ root("ObjectDB", {
 			it = "Cassa di Rifornimenti della S.P.R. & Co.",
 			pt = "Baú de Suprimentos da Empreendimentos S.A",
 			ru = "Сундук с припасами Торговой компании",
+			ko = "[Venture Co. Supply Chest]",
 			cn = "风险投资公司补给箱",
 		},
 	},
 	[294174] = {
 		readable = "Forgotten Chest",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1806321,
 		text = {
 			en = "Forgotten Chest",
 			es = "Cofre olvidado",
@@ -29357,7 +36724,9 @@ root("ObjectDB", {
 			de = "Grimms Freundesliste",
 			fr = "Liste d’amis d’Osselet",
 			it = "Elenco degli Amici di Tetry",
+			pt = "[Grimmy's List of Friends]",
 			ru = "Доходягины друзья",
+			ko = "[Grimmy's List of Friends]",
 			cn = "格里米的好友列表",
 		},
 	},
@@ -29371,7 +36740,9 @@ root("ObjectDB", {
 			de = "Grimms Feindesliste",
 			fr = "Liste d’ennemis d’Osselet",
 			it = "Elenco dei Nemici di Tetry",
+			pt = "[Grimmy's List of Enemies]",
 			ru = "Доходягины враги",
+			ko = "[Grimmy's List of Enemies]",
 			cn = "格里米的敌人列表",
 		},
 	},
@@ -29385,12 +36756,15 @@ root("ObjectDB", {
 			de = "Grimms Lieblingsrezept",
 			fr = "Recette préférée d’Osselet",
 			it = "Ricette Preferite di Tetry",
+			pt = "[Grimmy's Favorite Recipe]",
 			ru = "Доходягин любимый рецепт",
+			ko = "[Grimmy's Favorite Recipe]",
 			cn = "格里米钟爱的配方",
 		},
 	},
 	[294316] = {
 		readable = "Lost Offerings of Kimbul",
+		model = 1804876,
 		text = {
 			en = "Lost Offerings of Kimbul",
 			es = "Ofrendas perdidas de Kimbul",
@@ -29405,6 +36779,7 @@ root("ObjectDB", {
 	},
 	[294317] = {
 		readable = "Deadwood Chest",
+		model = 1806321,
 		text = {
 			en = "Deadwood Chest",
 			es = "Cofre de Muertobosque",
@@ -29419,6 +36794,7 @@ root("ObjectDB", {
 	},
 	[294319] = {
 		readable = "Sandsunken Treasure",
+		model = 1804876,
 		text = {
 			en = "Sandsunken Treasure",
 			es = "Tesoro hundido en la arena",
@@ -29427,6 +36803,7 @@ root("ObjectDB", {
 			it = "Tesoro Sepolto nella Sabbia",
 			pt = "Tesouro Soterrado por Areia",
 			ru = "Погребенное в песке сокровище",
+			ko = "[Sandsunken Treasure]",
 			cn = "被风沙掩埋的宝藏",
 		},
 	},
@@ -29440,7 +36817,9 @@ root("ObjectDB", {
 			de = "Verfaulte Kartoffel",
 			fr = "Patate pourrie",
 			it = "Patata Marcia",
+			pt = "[Rotten Potato]",
 			ru = "Гнилая картофелина",
+			ko = "[Rotten Potato]",
 			cn = "腐烂的土豆",
 		},
 	},
@@ -29454,12 +36833,15 @@ root("ObjectDB", {
 			de = "Grimms rostige Schließkiste",
 			fr = "Coffret rouillé d’Osselet",
 			it = "Scrigno Arrugginito di Tetry",
+			pt = "[Grimmy's Rusty Lockbox]",
 			ru = "Доходягин ржавый сундук",
+			ko = "[Grimmy's Rusty Lockbox]",
 			cn = "格里米的锈蚀宝箱",
 		},
 	},
 	[296479] = {
 		readable = "Lord Admiral's Footlocker",
+		model = 1805764,
 		text = {
 			en = "Lord Admiral's Footlocker",
 			es = "Baúl del lord almirante",
@@ -29489,6 +36871,7 @@ root("ObjectDB", {
 	},
 	[296573] = {
 		readable = "Jason's Rusty Blade",
+		model = 1697821,
 		text = {
 			en = "Jason's Rusty Blade",
 			es = "Hoja oxidada de Jason",
@@ -29503,6 +36886,7 @@ root("ObjectDB", {
 	},
 	[296574] = {
 		readable = "Ian's Empty Bottle",
+		model = 304793,
 		text = {
 			en = "Ian's Empty Bottle",
 			es = "Botella vacía de Ian",
@@ -29517,6 +36901,7 @@ root("ObjectDB", {
 	},
 	[296575] = {
 		readable = "Julie's Cracked Dish",
+		model = 1629631,
 		text = {
 			en = "Julie's Cracked Dish",
 			es = "Plato roto de Julie",
@@ -29531,6 +36916,7 @@ root("ObjectDB", {
 	},
 	[296579] = {
 		readable = "Brian's Broken Compass",
+		model = 1852926,
 		text = {
 			en = "Brian's Broken Compass",
 			es = "Brújula rota de Brian",
@@ -29545,6 +36931,7 @@ root("ObjectDB", {
 	},
 	[296580] = {
 		readable = "Ofer's Bound Journal",
+		model = 198046,
 		text = {
 			en = "Ofer's Bound Journal",
 			es = "Diario encuadernado de Ofer",
@@ -29559,6 +36946,7 @@ root("ObjectDB", {
 	},
 	[296581] = {
 		readable = "Skye's Pet Rock",
+		model = 1659243,
 		text = {
 			en = "Skye's Pet Rock",
 			es = "Piedra mascota de Skye",
@@ -29573,6 +36961,7 @@ root("ObjectDB", {
 	},
 	[296582] = {
 		readable = "Julien's Left Boot",
+		model = 955699,
 		text = {
 			en = "Julien's Left Boot",
 			es = "Pie izquierdo de Julien",
@@ -29587,6 +36976,7 @@ root("ObjectDB", {
 	},
 	[296583] = {
 		readable = "Navarro's Flask",
+		model = 309564,
 		text = {
 			en = "Navarro's Flask",
 			es = "Frasco de Navarro",
@@ -29601,6 +36991,7 @@ root("ObjectDB", {
 	},
 	[296584] = {
 		readable = "Zach's Canteen",
+		model = 936458,
 		text = {
 			en = "Zach's Canteen",
 			es = "Cantimplora de Zach",
@@ -29615,6 +37006,7 @@ root("ObjectDB", {
 	},
 	[296585] = {
 		readable = "Damarcus' Backpack",
+		model = 198990,
 		text = {
 			en = "Damarcus' Backpack",
 			es = "Mochila de Damarcus",
@@ -29629,6 +37021,7 @@ root("ObjectDB", {
 	},
 	[296586] = {
 		readable = "Rachel's Flute",
+		model = 1674793,
 		text = {
 			en = "Rachel's Flute",
 			es = "Flauta de Rachel",
@@ -29643,6 +37036,7 @@ root("ObjectDB", {
 	},
 	[296587] = {
 		readable = "Josh's Fang Necklace",
+		model = 987171,
 		text = {
 			en = "Josh's Fang Necklace",
 			es = "Collar de colmillos de Josh",
@@ -29657,6 +37051,7 @@ root("ObjectDB", {
 	},
 	[296588] = {
 		readable = "Portrait of Commander Martens",
+		model = 2032244,
 		text = {
 			en = "Portrait of Commander Martens",
 			es = "Retrato del comandante Martens",
@@ -29671,6 +37066,7 @@ root("ObjectDB", {
 	},
 	[296589] = {
 		readable = "Kurt's Ornate Key",
+		model = 970204,
 		text = {
 			en = "Kurt's Ornate Key",
 			es = "Llave ornamentada de Kurt",
@@ -29685,6 +37081,7 @@ root("ObjectDB", {
 	},
 	[296915] = {
 		readable = "Drust Stele: The Circle",
+		model = 1982565,
 		text = {
 			en = "Drust Stele: The Circle",
 			es = "Estela Drust: El círculo",
@@ -29699,6 +37096,7 @@ root("ObjectDB", {
 	},
 	[296916] = {
 		readable = "Drust Stele: The Ritual",
+		model = 1982563,
 		text = {
 			en = "Drust Stele: The Ritual",
 			es = "Estela Drust: El ritual",
@@ -29707,11 +37105,13 @@ root("ObjectDB", {
 			it = "Stele dei Drust: Rituale",
 			pt = "Estela Drusta: O Ritual",
 			ru = "Друстская стела: \"Ритуал\"",
+			ko = "[Drust Stele: The Ritual]",
 			cn = "德鲁斯特石碑：仪式",
 		},
 	},
 	[296917] = {
 		readable = "Drust Stele: The Tree",
+		model = 1982564,
 		text = {
 			en = "Drust Stele: The Tree",
 			es = "Estela Drust: El árbol",
@@ -29726,6 +37126,7 @@ root("ObjectDB", {
 	},
 	[296918] = {
 		readable = "Drust Stele: Breath Into Stone",
+		model = 1982564,
 		text = {
 			en = "Drust Stele: Breath Into Stone",
 			es = "Estela Drust: Transferencia de alma",
@@ -29740,6 +37141,7 @@ root("ObjectDB", {
 	},
 	[297069] = {
 		readable = "Dresser",
+		model = 1602484,
 		text = {
 			en = "Dresser",
 			es = "Cómoda",
@@ -29754,6 +37156,7 @@ root("ObjectDB", {
 	},
 	[297492] = {
 		readable = "Bulletin Board",
+		model = 1822636,
 		text = {
 			en = "Bulletin Board",
 			es = "Tablón de anuncios",
@@ -29768,6 +37171,7 @@ root("ObjectDB", {
 	},
 	[297627] = {
 		readable = "Drust Stele: Sacrifice",
+		model = 1715645,
 		text = {
 			en = "Drust Stele: Sacrifice",
 			es = "Estela Drust: El sacrificio",
@@ -29782,6 +37186,7 @@ root("ObjectDB", {
 	},
 	[297628] = {
 		readable = "Drust Stele: Constructs",
+		model = 1982565,
 		text = {
 			en = "Drust Stele: Constructs",
 			es = "Estela Drust: Ensamblajes",
@@ -29796,6 +37201,7 @@ root("ObjectDB", {
 	},
 	[297629] = {
 		readable = "Drust Stele: The Cycle",
+		model = 1982563,
 		text = {
 			en = "Drust Stele: The Cycle",
 			es = "Estela Drust: El ciclo",
@@ -29810,6 +37216,7 @@ root("ObjectDB", {
 	},
 	[297630] = {
 		readable = "Drust Stele: Conflict",
+		model = 1982564,
 		text = {
 			en = "Drust Stele: Conflict",
 			es = "Estela Drust: El conflicto",
@@ -29824,6 +37231,7 @@ root("ObjectDB", {
 	},
 	[297631] = {
 		readable = "Drust Stele: The Flayed Man",
+		model = 1715645,
 		text = {
 			en = "Drust Stele: The Flayed Man",
 			es = "Estela Drust: El hombre fustigado",
@@ -29832,11 +37240,13 @@ root("ObjectDB", {
 			it = "Stele dei Drust: Lo Scorticato",
 			pt = "Estela Drusta: O Homem Esfolado",
 			ru = "Друстская стела: \"Изувеченный\"",
+			ko = "[Drust Stele: The Flayed Man]",
 			cn = "德鲁斯特石碑：剥离者",
 		},
 	},
 	[297632] = {
 		readable = "Drust Stele: Protectors of the Forest",
+		model = 1715645,
 		text = {
 			en = "Drust Stele: Protectors of the Forest",
 			es = "Estela Drust: Protectores del bosque",
@@ -29852,6 +37262,7 @@ root("ObjectDB", {
 	[297825] = {
 		readable = "Web-Covered Chest",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1806321,
 		text = {
 			en = "Web-Covered Chest",
 			es = "Cofre cubierto de telarañas",
@@ -29867,6 +37278,7 @@ root("ObjectDB", {
 	[297828] = {
 		readable = "Merchant's Chest",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1806321,
 		text = {
 			en = "Merchant's Chest",
 			es = "Cofre de mercader",
@@ -29882,6 +37294,7 @@ root("ObjectDB", {
 	[297878] = {
 		readable = "Hexed Chest",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1806321,
 		text = {
 			en = "Hexed Chest",
 			es = "Cofre maldito",
@@ -29897,6 +37310,7 @@ root("ObjectDB", {
 	[297879] = {
 		readable = "Bespelled Chest",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1806321,
 		text = {
 			en = "Bespelled Chest",
 			es = "Cofre embrujado",
@@ -29912,6 +37326,7 @@ root("ObjectDB", {
 	[297880] = {
 		readable = "Ensorcelled Chest",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1806321,
 		text = {
 			en = "Ensorcelled Chest",
 			es = "Cofre hechizado",
@@ -29920,12 +37335,14 @@ root("ObjectDB", {
 			it = "Cassa Stregata",
 			pt = "Baú Embruxado",
 			ru = "Заколдованный сундук",
+			ko = "[Ensorcelled Chest]",
 			cn = "迷惑宝箱",
 		},
 	},
 	[297881] = {
 		readable = "Enchanted Chest",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1806321,
 		text = {
 			en = "Enchanted Chest",
 			es = "Cofre encantado",
@@ -29941,6 +37358,7 @@ root("ObjectDB", {
 	[297891] = {
 		readable = "Runebound Cache",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1402264,
 		text = {
 			en = "Runebound Cache",
 			es = "Alijo vincularrunas",
@@ -29956,6 +37374,7 @@ root("ObjectDB", {
 	[297892] = {
 		readable = "Runebound Chest",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1402264,
 		text = {
 			en = "Runebound Chest",
 			es = "Cofre vincularrunas",
@@ -29971,6 +37390,7 @@ root("ObjectDB", {
 	[297893] = {
 		readable = "Runebound Coffer",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1402264,
 		text = {
 			en = "Runebound Coffer",
 			es = "Arca vincularrunas",
@@ -29986,6 +37406,7 @@ root("ObjectDB", {
 	[297905] = {
 		readable = "Jay's Songbook",
 		icon = "Interface/Icons/INV_Misc_ScrollRolled02b",
+		model = 1957225,
 		text = {
 			en = "Jay's Songbook",
 			es = "Cancionero de Jay",
@@ -30001,6 +37422,7 @@ root("ObjectDB", {
 	[297906] = {
 		readable = "Russel's Songbook",
 		icon = "Interface/Icons/INV_Misc_ScrollRolled02b",
+		model = 1852972,
 		text = {
 			en = "Russel's Songbook",
 			es = "Cancionero de Russel",
@@ -30016,6 +37438,7 @@ root("ObjectDB", {
 	[297933] = {
 		readable = "Dusty Songbook",
 		icon = "Interface/Icons/INV_Misc_ScrollRolled02b",
+		model = 1852973,
 		text = {
 			en = "Dusty Songbook",
 			es = "Cancionero polvoriento",
@@ -30031,6 +37454,7 @@ root("ObjectDB", {
 	[297934] = {
 		readable = "Scoundrel's Songbook",
 		icon = "Interface/Icons/INV_Misc_ScrollRolled02b",
+		model = 1532588,
 		text = {
 			en = "Scoundrel's Songbook",
 			es = "Cancionero del canalla",
@@ -30045,6 +37469,7 @@ root("ObjectDB", {
 	},
 	[297939] = {
 		readable = "Order Of Embers Crossbow",
+		model = 1695543,
 		text = {
 			en = "Order Of Embers Crossbow",
 			es = "Ballesta de la Orden de Ascuas",
@@ -30053,11 +37478,13 @@ root("ObjectDB", {
 			it = "Balestra dell'Ordine delle Braci",
 			pt = "Besta da Ordem das Brasas",
 			ru = "Арбалет ордена Пылающих Углей",
+			ko = "[Order Of Embers Crossbow]",
 			cn = "灰烬骑士团之弩",
 		},
 	},
 	[297940] = {
 		readable = "Order Of Embers Knife",
+		model = 1720424,
 		text = {
 			en = "Order Of Embers Knife",
 			es = "Cuchillo de la Orden de Ascuas",
@@ -30066,11 +37493,13 @@ root("ObjectDB", {
 			it = "Coltello dell'Ordine delle Braci",
 			pt = "Faca da Ordem das Brasas",
 			ru = "Нож ордена Пылающих Углей",
+			ko = "[Order Of Embers Knife]",
 			cn = "灰烬骑士团匕首",
 		},
 	},
 	[297941] = {
 		readable = "Order Of Embers Hat",
+		model = 1669995,
 		text = {
 			en = "Order Of Embers Hat",
 			es = "Sombrero de la Orden de Ascuas",
@@ -30079,11 +37508,13 @@ root("ObjectDB", {
 			it = "Cappello dell'Ordine delle Braci",
 			pt = "Chapéu da Ordem das Brasas",
 			ru = "Шляпа ордена Пылающих Углей",
+			ko = "[Order Of Embers Hat]",
 			cn = "灰烬骑士团帽子",
 		},
 	},
 	[297942] = {
 		readable = "Order Of Embers Flask",
+		model = 1852964,
 		text = {
 			en = "Order Of Embers Flask",
 			es = "Frasco de la Orden de Ascuas",
@@ -30092,11 +37523,13 @@ root("ObjectDB", {
 			it = "Tonico dell'Ordine delle Braci",
 			pt = "Frasco da Ordem das Brasas",
 			ru = "Фляга ордена Пылающих Углей",
+			ko = "[Order Of Embers Flask]",
 			cn = "灰烬骑士团酒壶",
 		},
 	},
 	[298778] = {
 		readable = "Wanted Poster",
+		model = 1349040,
 		text = {
 			en = "Wanted Poster",
 			es = "Cartel de Se busca",
@@ -30111,6 +37544,7 @@ root("ObjectDB", {
 	},
 	[298849] = {
 		readable = "Wanted Poster",
+		model = 1349040,
 		text = {
 			en = "Wanted Poster",
 			es = "Cartel de Se busca",
@@ -30126,6 +37560,7 @@ root("ObjectDB", {
 	[298920] = {
 		readable = "Stolen Thornspeaker Cache",
 		icon = "Interface/Icons/garrison_bronzechest",
+		model = 1806318,
 		text = {
 			en = "Stolen Thornspeaker Cache",
 			es = "Alijo de Hablaespinas robado",
@@ -30141,6 +37576,7 @@ root("ObjectDB", {
 	[298921] = {
 		readable = "Ancient Nazmani Tablet",
 		icon = "Interface/Icons/inv_misc_rune_11",
+		model = 1726753,
 		text = {
 			en = "Ancient Nazmani Tablet",
 			es = "Tablilla Nazmani antigua",
@@ -30156,6 +37592,7 @@ root("ObjectDB", {
 	[298963] = {
 		readable = "Weathered Nazmani Tablet",
 		icon = "Interface/Icons/inv_misc_rune_11",
+		model = 1726769,
 		text = {
 			en = "Weathered Nazmani Tablet",
 			es = "Tablilla Nazmani deteriorada",
@@ -30171,6 +37608,7 @@ root("ObjectDB", {
 	[298965] = {
 		readable = "Cracked Tablet",
 		icon = "Interface/Icons/inv_misc_rune_11",
+		model = 1726769,
 		text = {
 			en = "Cracked Tablet",
 			es = "Tablilla agrietada",
@@ -30186,6 +37624,7 @@ root("ObjectDB", {
 	[299073] = {
 		readable = "Fractured Tablet",
 		icon = "Interface/Icons/inv_misc_rune_11",
+		model = 1726777,
 		text = {
 			en = "Fractured Tablet",
 			es = "Tablilla fracturada",
@@ -30248,6 +37687,7 @@ root("ObjectDB", {
 	},
 	[303039] = {
 		readable = "Curious Grain Sack",
+		model = 1305115,
 		text = {
 			en = "Curious Grain Sack",
 			es = "Saco de grano curioso",
@@ -30279,6 +37719,7 @@ root("ObjectDB", {
 	[307277] = {
 		readable = "Old Jug",
 		icon = "Interface/Icons/inv_drink_11",
+		model = 189821,
 		text = {
 			en = "Old Jug",
 			es = "Vieja jarra",
@@ -30294,6 +37735,7 @@ root("ObjectDB", {
 	[307307] = {
 		readable = "Broken Barrel",
 		icon = "Interface/Icons/inv_cask_03",
+		model = 199567,
 		text = {
 			en = "Broken Barrel",
 			es = "Barrica rota",
@@ -30325,12 +37767,14 @@ root("ObjectDB", {
 	[307330] = {
 		readable = "Captain's Footlocker",
 		icon = "Interface/Icons/inv_misc_crate01",
+		model = 198238,
 		text = {
 			en = "Captain's Footlocker",
 			es = "Baúl del Capitán",
 			de = "Schließkiste des Kapitäns",
 			fr = "Cantine du capitaine",
 			it = "Scrigno del Capitano",
+			pt = "[Captain's Footlocker]",
 			ru = "Сундучок капитана",
 			ko = "선장의 사물함",
 			cn = "船长的手提箱",
@@ -30339,18 +37783,22 @@ root("ObjectDB", {
 	[307748] = {
 		readable = "Venture Co. Letter",
 		icon = "Interface/Icons/inv_letter_05",
+		model = 1331239,
 		text = {
 			en = "Venture Co. Letter",
 			es = "Carta de Ventura y Cía.",
 			de = "Brief der Venture Co.",
 			fr = "Lettre de la KapitalRisk",
+			it = "[Venture Co. Letter]",
 			pt = "Carta da Empreendimentos S.A.",
 			ru = "Письмо Торговой компании",
+			ko = "[Venture Co. Letter]",
 			cn = "风险投资公司函件",
 		},
 	},
 	[309498] = {
 		readable = "Armor Stand",
+		model = 197910,
 		text = {
 			en = "Armor Stand",
 			es = "Portaarmaduras",
@@ -30359,6 +37807,7 @@ root("ObjectDB", {
 			it = "Supporto per Armatura",
 			pt = "Estande de Armaduras",
 			ru = "Стойка для доспехов",
+			ko = "[Armor Stand]",
 			cn = "护甲架",
 		},
 	},
@@ -30379,6 +37828,7 @@ root("ObjectDB", {
 	},
 	[311155] = {
 		readable = "Ancient Tablet",
+		model = 194086,
 		text = {
 			en = "Ancient Tablet",
 			es = "Tablilla antigua",
@@ -30387,17 +37837,20 @@ root("ObjectDB", {
 			it = "Antica Tavoletta",
 			pt = "Tabuleta Ancestral",
 			ru = "Древняя табличка",
+			ko = "[Ancient Tablet]",
 			cn = "上古石板",
 		},
 	},
 	[311218] = {
 		readable = "Xal'atath, Blade of the Black Empire",
 		icon = "Interface/Icons/inv_knife_1h_artifactcthun_d_01",
+		model = 1346214,
 		text = {
 			en = "Xal'atath, Blade of the Black Empire",
 			es = "Xal'atath, Daga del Imperio Negro",
 			de = "Xal'atath, Klinge des Schwarzen Imperiums",
 			fr = "Xal’atath, lame de l’Empire noir",
+			it = "[Xal'atath, Blade of the Black Empire]",
 			pt = "Xal'atath, a Lâmina do Império Negro",
 			ru = "Ксал'атат, клинок Темной Империи",
 			ko = "잘아타스 - 검은 제국의 비수",
@@ -30407,6 +37860,7 @@ root("ObjectDB", {
 	[311902] = {
 		readable = "Loose Parts",
 		icon = "Interface/Icons/INV_Engineering_ReavesBattery",
+		model = 1842466,
 		text = {
 			en = "Loose Parts",
 			es = "Piezas sueltas",
@@ -30422,11 +37876,13 @@ root("ObjectDB", {
 	[311903] = {
 		readable = "Loose Parts",
 		icon = "Interface/Icons/INV_Engineering_ReavesBattery",
+		model = 1842467,
 		text = {
 			en = "Loose Parts",
 			es = "Piezas sueltas",
 			de = "Lockere Teile",
 			fr = "Pièces détachées",
+			it = "[Loose Parts]",
 			pt = "Peças Soltas",
 			ru = "Отвалившиеся детали",
 			ko = "떨어져 나온 부품",
@@ -30435,19 +37891,23 @@ root("ObjectDB", {
 	},
 	[316443] = {
 		readable = "Xal'atath, Blade of the Black Empire",
+		model = 1346214,
 		text = {
 			en = "Xal'atath, Blade of the Black Empire",
 			es = "Xal'atath, Daga del Imperio Negro",
 			de = "Xal'atath, Klinge des Schwarzen Imperiums",
 			fr = "Xal’atath, lame de l’Empire noir",
+			it = "[Xal'atath, Blade of the Black Empire]",
 			pt = "Xal'atath, a Lâmina do Império Negro",
 			ru = "Ксал'атат, клинок Темной Империи",
+			ko = "[Xal'atath, Blade of the Black Empire]",
 			cn = "萨拉塔斯，黑暗帝国之刃",
 		},
 	},
 	[316788] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -30463,6 +37923,7 @@ root("ObjectDB", {
 	[316791] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -30478,6 +37939,7 @@ root("ObjectDB", {
 	[316793] = {
 		readable = "Alliance Bonfire",
 		icon = "Interface/Icons/spell_fire_bluefire",
+		model = 200079,
 		text = {
 			en = "Alliance Bonfire",
 			es = "Fogata de la Alianza",
@@ -30493,6 +37955,7 @@ root("ObjectDB", {
 	[316795] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -30508,6 +37971,7 @@ root("ObjectDB", {
 	[316796] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -30523,6 +37987,7 @@ root("ObjectDB", {
 	[316801] = {
 		readable = "Horde Bonfire",
 		icon = "Interface/Icons/spell_fire_fire",
+		model = 200079,
 		text = {
 			en = "Horde Bonfire",
 			es = "Fogata de la Horda",
@@ -30537,6 +38002,7 @@ root("ObjectDB", {
 	},
 	[319222] = {
 		readable = "Darkshore Cache",
+		model = 446671,
 		text = {
 			en = "Darkshore Cache",
 			es = "Alijo de Costa Oscura",
@@ -30551,6 +38017,7 @@ root("ObjectDB", {
 	},
 	[322413] = {
 		readable = "Glimmering Chest",
+		model = 2833918,
 		text = {
 			en = "Glimmering Chest",
 			es = "Cofre brillante",
@@ -30566,6 +38033,7 @@ root("ObjectDB", {
 	[322533] = {
 		readable = "Mardivas's Tome of the Elements",
 		icon = "Interface/Icons/inv_crystallized_water",
+		model = 965217,
 		text = {
 			en = "Mardivas's Tome of the Elements",
 			es = "Escrito de los elementos de Mardivas",
@@ -30587,6 +38055,7 @@ root("ObjectDB", {
 	[324407] = {
 		readable = "Void Roots",
 		icon = "Interface/Icons/spell_nature_thorns_nightmare",
+		model = 1453149,
 		text = {
 			en = "Void Roots",
 			es = "Raíces del Vacío",
@@ -30602,6 +38071,7 @@ root("ObjectDB", {
 	[325659] = {
 		readable = "Mechanized Chest",
 		icon = "Interface/Icons/INV_Eng_Crate2",
+		model = 2907353,
 		text = {
 			en = "Mechanized Chest",
 			es = "Cofre mecanizado",
@@ -30617,6 +38087,7 @@ root("ObjectDB", {
 	[325660] = {
 		readable = "Mechanized Chest",
 		icon = "Interface/Icons/INV_Eng_Crate2",
+		model = 2907353,
 		text = {
 			en = "Mechanized Chest",
 			es = "Cofre mecanizado",
@@ -30632,6 +38103,7 @@ root("ObjectDB", {
 	[325661] = {
 		readable = "Mechanized Chest",
 		icon = "Interface/Icons/INV_Eng_Crate2",
+		model = 2907353,
 		text = {
 			en = "Mechanized Chest",
 			es = "Cofre mecanizado",
@@ -30647,6 +38119,7 @@ root("ObjectDB", {
 	[325662] = {
 		readable = "Mechanized Chest",
 		icon = "Interface/Icons/INV_Eng_Crate2",
+		model = 2907353,
 		text = {
 			en = "Mechanized Chest",
 			es = "Cofre mecanizado",
@@ -30662,6 +38135,7 @@ root("ObjectDB", {
 	[325663] = {
 		readable = "Mechanized Chest",
 		icon = "Interface/Icons/INV_Eng_Crate2",
+		model = 2907353,
 		text = {
 			en = "Mechanized Chest",
 			es = "Cofre mecanizado",
@@ -30677,6 +38151,7 @@ root("ObjectDB", {
 	[325664] = {
 		readable = "Mechanized Chest",
 		icon = "Interface/Icons/INV_Eng_Crate2",
+		model = 2907353,
 		text = {
 			en = "Mechanized Chest",
 			es = "Cofre mecanizado",
@@ -30692,6 +38167,7 @@ root("ObjectDB", {
 	[325665] = {
 		readable = "Mechanized Chest",
 		icon = "Interface/Icons/INV_Eng_Crate2",
+		model = 2907353,
 		text = {
 			en = "Mechanized Chest",
 			es = "Cofre mecanizado",
@@ -30707,6 +38183,7 @@ root("ObjectDB", {
 	[325666] = {
 		readable = "Mechanized Chest",
 		icon = "Interface/Icons/INV_Eng_Crate2",
+		model = 2907353,
 		text = {
 			en = "Mechanized Chest",
 			es = "Cofre mecanizado",
@@ -30722,6 +38199,7 @@ root("ObjectDB", {
 	[325667] = {
 		readable = "Mechanized Chest",
 		icon = "Interface/Icons/INV_Eng_Crate2",
+		model = 2907353,
 		text = {
 			en = "Mechanized Chest",
 			es = "Cofre mecanizado",
@@ -30737,6 +38215,7 @@ root("ObjectDB", {
 	[325668] = {
 		readable = "Mechanized Chest",
 		icon = "Interface/Icons/INV_Eng_Crate2",
+		model = 2907353,
 		text = {
 			en = "Mechanized Chest",
 			es = "Cofre mecanizado",
@@ -30751,6 +38230,7 @@ root("ObjectDB", {
 	},
 	[325795] = {
 		readable = "Sunken Chest",
+		model = 2123117,
 		text = {
 			en = "Sunken Chest",
 			es = "Cofre sumergido",
@@ -30765,6 +38245,7 @@ root("ObjectDB", {
 	},
 	[325853] = {
 		readable = "Empty Bookcase",
+		model = 1392384,
 		text = {
 			en = "Empty Bookcase",
 			es = "Estantería vacía",
@@ -30779,6 +38260,7 @@ root("ObjectDB", {
 	},
 	[325869] = {
 		readable = "Empty Cask",
+		model = 531055,
 		text = {
 			en = "Empty Cask",
 			es = "Tonel vacío",
@@ -30809,6 +38291,7 @@ root("ObjectDB", {
 	},
 	[326047] = {
 		readable = "Reinforced Cache",
+		model = 2839405,
 		text = {
 			en = "Reinforced Cache",
 			es = "Alijo blindado",
@@ -30823,6 +38306,7 @@ root("ObjectDB", {
 	},
 	[326140] = {
 		readable = "Bounty Board",
+		model = 1822634,
 		text = {
 			en = "Bounty Board",
 			es = "Tablón de recompensas",
@@ -30837,6 +38321,7 @@ root("ObjectDB", {
 	},
 	[326142] = {
 		readable = "Bounty Board",
+		model = 1822634,
 		text = {
 			en = "Bounty Board",
 			es = "Tablón de recompensas",
@@ -30852,6 +38337,7 @@ root("ObjectDB", {
 	[326394] = {
 		readable = "Arcane Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest01c",
+		model = 2833918,
 		text = {
 			en = "Arcane Chest",
 			es = "Cofre Arcano",
@@ -30867,6 +38353,7 @@ root("ObjectDB", {
 	[326395] = {
 		readable = "Glowing Arcane Trunk",
 		icon = "Interface/Icons/inv_misc_treasurechest01b",
+		model = 2839405,
 		text = {
 			en = "Glowing Arcane Trunk",
 			es = "Valija Arcana resplandeciente",
@@ -30882,6 +38369,7 @@ root("ObjectDB", {
 	[326396] = {
 		readable = "Glowing Arcane Trunk",
 		icon = "Interface/Icons/inv_misc_treasurechest01b",
+		model = 2839405,
 		text = {
 			en = "Glowing Arcane Trunk",
 			es = "Valija Arcana resplandeciente",
@@ -30897,6 +38385,7 @@ root("ObjectDB", {
 	[326397] = {
 		readable = "Glowing Arcane Trunk",
 		icon = "Interface/Icons/inv_misc_treasurechest01b",
+		model = 2839405,
 		text = {
 			en = "Glowing Arcane Trunk",
 			es = "Valija Arcana resplandeciente",
@@ -30912,6 +38401,7 @@ root("ObjectDB", {
 	[326398] = {
 		readable = "Glowing Arcane Trunk",
 		icon = "Interface/Icons/inv_misc_treasurechest01b",
+		model = 2839405,
 		text = {
 			en = "Glowing Arcane Trunk",
 			es = "Valija Arcana resplandeciente",
@@ -30927,6 +38417,7 @@ root("ObjectDB", {
 	[326399] = {
 		readable = "Glowing Arcane Trunk",
 		icon = "Interface/Icons/inv_misc_treasurechest01b",
+		model = 2839405,
 		text = {
 			en = "Glowing Arcane Trunk",
 			es = "Valija Arcana resplandeciente",
@@ -30942,6 +38433,7 @@ root("ObjectDB", {
 	[326400] = {
 		readable = "Glowing Arcane Trunk",
 		icon = "Interface/Icons/inv_misc_treasurechest01b",
+		model = 2839405,
 		text = {
 			en = "Glowing Arcane Trunk",
 			es = "Valija Arcana resplandeciente",
@@ -30957,6 +38449,7 @@ root("ObjectDB", {
 	[326401] = {
 		readable = "Arcane Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest01c",
+		model = 2833918,
 		text = {
 			en = "Arcane Chest",
 			es = "Cofre Arcano",
@@ -30972,6 +38465,7 @@ root("ObjectDB", {
 	[326402] = {
 		readable = "Arcane Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest01c",
+		model = 2833918,
 		text = {
 			en = "Arcane Chest",
 			es = "Cofre Arcano",
@@ -30987,6 +38481,7 @@ root("ObjectDB", {
 	[326403] = {
 		readable = "Arcane Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest01c",
+		model = 2833918,
 		text = {
 			en = "Arcane Chest",
 			es = "Cofre Arcano",
@@ -31002,6 +38497,7 @@ root("ObjectDB", {
 	[326404] = {
 		readable = "Arcane Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest01c",
+		model = 2833918,
 		text = {
 			en = "Arcane Chest",
 			es = "Cofre Arcano",
@@ -31017,6 +38513,7 @@ root("ObjectDB", {
 	[326405] = {
 		readable = "Arcane Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest01c",
+		model = 2833918,
 		text = {
 			en = "Arcane Chest",
 			es = "Cofre Arcano",
@@ -31032,6 +38529,7 @@ root("ObjectDB", {
 	[326406] = {
 		readable = "Arcane Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest01c",
+		model = 2833918,
 		text = {
 			en = "Arcane Chest",
 			es = "Cofre Arcano",
@@ -31047,6 +38545,7 @@ root("ObjectDB", {
 	[326407] = {
 		readable = "Arcane Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest01c",
+		model = 2833918,
 		text = {
 			en = "Arcane Chest",
 			es = "Cofre Arcano",
@@ -31062,6 +38561,7 @@ root("ObjectDB", {
 	[326408] = {
 		readable = "Arcane Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest01c",
+		model = 2833918,
 		text = {
 			en = "Arcane Chest",
 			es = "Cofre Arcano",
@@ -31077,6 +38577,7 @@ root("ObjectDB", {
 	[326409] = {
 		readable = "Arcane Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest01c",
+		model = 2833918,
 		text = {
 			en = "Arcane Chest",
 			es = "Cofre Arcano",
@@ -31092,6 +38593,7 @@ root("ObjectDB", {
 	[326410] = {
 		readable = "Arcane Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest01c",
+		model = 2833918,
 		text = {
 			en = "Arcane Chest",
 			es = "Cofre Arcano",
@@ -31107,6 +38609,7 @@ root("ObjectDB", {
 	[326411] = {
 		readable = "Arcane Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest01c",
+		model = 2833918,
 		text = {
 			en = "Arcane Chest",
 			es = "Cofre Arcano",
@@ -31122,6 +38625,7 @@ root("ObjectDB", {
 	[326412] = {
 		readable = "Arcane Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest01c",
+		model = 2833918,
 		text = {
 			en = "Arcane Chest",
 			es = "Cofre Arcano",
@@ -31137,6 +38641,7 @@ root("ObjectDB", {
 	[326413] = {
 		readable = "Arcane Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest01c",
+		model = 2833918,
 		text = {
 			en = "Arcane Chest",
 			es = "Cofre Arcano",
@@ -31152,6 +38657,7 @@ root("ObjectDB", {
 	[326414] = {
 		readable = "Arcane Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest01c",
+		model = 2833918,
 		text = {
 			en = "Arcane Chest",
 			es = "Cofre Arcano",
@@ -31167,6 +38673,7 @@ root("ObjectDB", {
 	[326415] = {
 		readable = "Arcane Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest01c",
+		model = 2833918,
 		text = {
 			en = "Arcane Chest",
 			es = "Cofre Arcano",
@@ -31182,6 +38689,7 @@ root("ObjectDB", {
 	[326416] = {
 		readable = "Arcane Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest01c",
+		model = 2833918,
 		text = {
 			en = "Arcane Chest",
 			es = "Cofre Arcano",
@@ -31197,6 +38705,7 @@ root("ObjectDB", {
 	[326417] = {
 		readable = "Arcane Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest01c",
+		model = 2833918,
 		text = {
 			en = "Arcane Chest",
 			es = "Cofre Arcano",
@@ -31212,6 +38721,7 @@ root("ObjectDB", {
 	[326418] = {
 		readable = "Arcane Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest01c",
+		model = 2833918,
 		text = {
 			en = "Arcane Chest",
 			es = "Cofre Arcano",
@@ -31227,6 +38737,7 @@ root("ObjectDB", {
 	[326419] = {
 		readable = "Arcane Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest01c",
+		model = 2833918,
 		text = {
 			en = "Arcane Chest",
 			es = "Cofre Arcano",
@@ -31241,6 +38752,7 @@ root("ObjectDB", {
 	},
 	[326588] = {
 		readable = "Azerite Weapons Cache",
+		model = 2352150,
 		text = {
 			en = "Azerite Weapons Cache",
 			es = "Alijo de armas de azerita",
@@ -31253,8 +38765,24 @@ root("ObjectDB", {
 			cn = "艾泽里特武器箱",
 		},
 	},
+	[326598] = {
+		readable = "Zin'anthid",
+		model = 2563954,
+		text = {
+			en = "Zin'anthid",
+			es = "Zin'anthid",
+			de = "Zin'anthide",
+			fr = "Zin’anthide",
+			it = "Zin'anthid",
+			pt = "Zin'antida",
+			ru = "Зин'антария",
+			ko = "진모래말미꽃",
+			cn = "龙眼珊瑚",
+		},
+	},
 	[327170] = {
 		readable = "Weapon Rack",
+		model = 2352153,
 		text = {
 			en = "Weapon Rack",
 			es = "Expositor de armas",
@@ -31270,6 +38798,7 @@ root("ObjectDB", {
 	[327230] = {
 		readable = "Jelly Deposit",
 		icon = "Interface/Icons/inv_cooking_80_choralhoney3",
+		model = 1950265,
 		text = {
 			en = "Jelly Deposit",
 			es = "Depósito de jalea",
@@ -31285,6 +38814,7 @@ root("ObjectDB", {
 	[327407] = {
 		readable = "Precious Ogre Stash",
 		icon = "Interface/Icons/inv_misc_treasurechest01c",
+		model = 219372,
 		text = {
 			en = "Precious Ogre Stash",
 			es = "Alijo de ogro precioso",
@@ -31299,6 +38829,7 @@ root("ObjectDB", {
 	},
 	[327516] = {
 		readable = "Jelly Deposit",
+		model = 1950265,
 		text = {
 			en = "Jelly Deposit",
 			es = "Depósito de jalea",
@@ -31307,11 +38838,13 @@ root("ObjectDB", {
 			it = "Deposito di Pappa Reale",
 			pt = "Depósito de Geleia",
 			ru = "Сота с пчелиным молочком",
+			ko = "[Jelly Deposit]",
 			cn = "蜜胶块",
 		},
 	},
 	[327548] = {
 		readable = "Powerpack Blueprints",
+		model = 2439479,
 		text = {
 			en = "Powerpack Blueprints",
 			es = "Planos del cargador",
@@ -31326,6 +38859,7 @@ root("ObjectDB", {
 	},
 	[327585] = {
 		readable = "Bounty Board",
+		model = 1822634,
 		text = {
 			en = "Bounty Board",
 			es = "Tablón de recompensas",
@@ -31340,6 +38874,7 @@ root("ObjectDB", {
 	},
 	[327591] = {
 		readable = "Preserved Journal",
+		model = 1367406,
 		text = {
 			en = "Preserved Journal",
 			es = "Diario conservado",
@@ -31354,6 +38889,7 @@ root("ObjectDB", {
 	},
 	[327592] = {
 		readable = "Enchanted Lock",
+		model = 970212,
 		text = {
 			en = "Enchanted Lock",
 			es = "Cerrojo encantado",
@@ -31368,6 +38904,7 @@ root("ObjectDB", {
 	},
 	[327596] = {
 		readable = "Broken Abyssal Focus",
+		model = 2821927,
 		text = {
 			en = "Broken Abyssal Focus",
 			es = "Enfoque abisal roto",
@@ -31382,6 +38919,7 @@ root("ObjectDB", {
 	},
 	[327597] = {
 		readable = "Old Rusty Chest",
+		model = 953811,
 		text = {
 			en = "Old Rusty Chest",
 			es = "Viejo cofre oxidado",
@@ -31396,6 +38934,7 @@ root("ObjectDB", {
 	},
 	[327650] = {
 		readable = "War Supply Chest",
+		model = 341746,
 		text = {
 			en = "War Supply Chest",
 			es = "Cofre de suministros de guerra",
@@ -31410,6 +38949,7 @@ root("ObjectDB", {
 	},
 	[327652] = {
 		readable = "War Supply Chest",
+		model = 341870,
 		text = {
 			en = "War Supply Chest",
 			es = "Cofre de suministros de guerra",
@@ -31425,39 +38965,54 @@ root("ObjectDB", {
 	[327669] = {
 		readable = "Contained Alemental",
 		icon = "Interface/Icons/inv_pet_pandarenelementa_fire",
+		model = 531170,
 		text = {
 			en = "Contained Alemental",
 			es = "Elemental de cerveza contenido",
 			de = "Maßvoller Bierlementar",
 			fr = "Elémenbière contenu",
+			it = "[Contained Alemental]",
+			pt = "[Contained Alemental]",
 			ru = "Заключенный хмелементаль",
+			ko = "[Contained Alemental]",
 			cn = "被制服的酒灵",
 		},
 	},
 	[328343] = {
 		readable = "Direbrew Cog",
 		icon = "Interface/Icons/inv_misc_gear_01",
+		model = 2068144,
 		text = {
 			en = "Direbrew Cog",
+			es = "[Direbrew Cog]",
 			de = "Düsterbräuzahnrad",
 			fr = "Rouage navrebière",
+			it = "[Direbrew Cog]",
+			pt = "[Direbrew Cog]",
 			ru = "Шестеренка Худовара",
+			ko = "[Direbrew Cog]",
 			cn = "烈酒齿轮",
 		},
 	},
 	[328413] = {
 		readable = "Hozen Totem",
 		icon = "Interface/Icons/spell_totem_wardofdraining",
+		model = 538478,
 		text = {
 			en = "Hozen Totem",
+			es = "[Hozen Totem]",
 			de = "Totem der Ho-zen",
 			fr = "Totem hozen",
+			it = "[Hozen Totem]",
+			pt = "[Hozen Totem]",
 			ru = "Тотем хозенов",
+			ko = "[Hozen Totem]",
 			cn = "猢狲图腾",
 		},
 	},
 	[329641] = {
 		readable = "Wanted: Junkbrat and Roadtrogg",
+		model = 1349040,
 		text = {
 			en = "Wanted: Junkbrat and Roadtrogg",
 			es = "Se busca: Junkrete y Roadtrogg",
@@ -31473,10 +39028,14 @@ root("ObjectDB", {
 	[329783] = {
 		readable = "Glowing Arcane Trunk",
 		icon = "Interface/Icons/inv_misc_treasurechest01b",
+		model = 2839405,
 		text = {
 			en = "Glowing Arcane Trunk",
+			es = "[Glowing Arcane Trunk]",
 			de = "Leuchtende arkane Truhe",
 			fr = "Malle arcanique luisante",
+			it = "[Glowing Arcane Trunk]",
+			pt = "[Glowing Arcane Trunk]",
 			ru = "Светящийся чародейский сундук",
 			ko = "빛나는 비전 상자",
 			cn = "发光的奥能宝箱",
@@ -31484,6 +39043,7 @@ root("ObjectDB", {
 	},
 	[329805] = {
 		readable = "Strange Crystal",
+		model = 1108688,
 		text = {
 			en = "Strange Crystal",
 			es = "Cristal extraño",
@@ -31499,6 +39059,7 @@ root("ObjectDB", {
 	[329918] = {
 		readable = "Quilboar Treasures",
 		icon = "Interface/Icons/inv_misc_treasurechest01c",
+		model = 1891518,
 		text = {
 			en = "Quilboar Treasures",
 			es = "Tesoros de jabaespín",
@@ -31514,6 +39075,7 @@ root("ObjectDB", {
 	[329919] = {
 		readable = "Stolen Supplies",
 		icon = "Interface/Icons/inv_misc_treasurechest01c",
+		model = 1981374,
 		text = {
 			en = "Stolen Supplies",
 			es = "Suministros robados",
@@ -31529,41 +39091,55 @@ root("ObjectDB", {
 	[330168] = {
 		readable = "Contained Alemental",
 		icon = "Interface/Icons/inv_pet_pandarenelementa_fire",
+		model = 531170,
 		text = {
 			en = "Contained Alemental",
+			es = "[Contained Alemental]",
 			de = "Maßvoller Bierlementar",
 			fr = "Elémenbière contenu",
 			it = "Elementale Alcolico Contenuto",
+			pt = "[Contained Alemental]",
 			ru = "Заключенный хмелементаль",
+			ko = "[Contained Alemental]",
 			cn = "被制服的酒灵",
 		},
 	},
 	[330169] = {
 		readable = "Direbrew Cog",
 		icon = "Interface/Icons/inv_misc_gear_01",
+		model = 2068144,
 		text = {
 			en = "Direbrew Cog",
+			es = "[Direbrew Cog]",
 			de = "Düsterbräuzahnrad",
 			fr = "Rouage navrebière",
+			it = "[Direbrew Cog]",
+			pt = "[Direbrew Cog]",
 			ru = "Шестеренка Худовара",
+			ko = "[Direbrew Cog]",
 			cn = "烈酒齿轮",
 		},
 	},
 	[330170] = {
 		readable = "Hozen Totem",
 		icon = "Interface/Icons/spell_totem_wardofdraining",
+		model = 538478,
 		text = {
 			en = "Hozen Totem",
+			es = "[Hozen Totem]",
 			de = "Totem der Ho-zen",
 			fr = "Totem hozen",
+			it = "[Hozen Totem]",
 			pt = "Totem Hozen",
 			ru = "Тотем хозенов",
+			ko = "[Hozen Totem]",
 			cn = "猢狲图腾",
 		},
 	},
 	[330183] = {
 		readable = "Irontide Lockbox",
 		icon = "Interface/Icons/INV_Eng_Crate2",
+		model = 1805764,
 		text = {
 			en = "Irontide Lockbox",
 			es = "Arcón de los Marea de Hierro",
@@ -31578,6 +39154,7 @@ root("ObjectDB", {
 	},
 	[330627] = {
 		readable = "Danger Sign",
+		model = 319484,
 		text = {
 			en = "Danger Sign",
 			es = "Señal de peligro",
@@ -31593,10 +39170,14 @@ root("ObjectDB", {
 	[332220] = {
 		readable = "Glowing Arcane Trunk",
 		icon = "Interface/Icons/inv_misc_treasurechest01b",
+		model = 2839405,
 		text = {
 			en = "Glowing Arcane Trunk",
+			es = "[Glowing Arcane Trunk]",
 			de = "Leuchtende arkane Truhe",
 			fr = "Malle arcanique luisante",
+			it = "[Glowing Arcane Trunk]",
+			pt = "[Glowing Arcane Trunk]",
 			ru = "Светящийся чародейский сундук",
 			ko = "빛나는 비전 상자",
 			cn = "发光的奥能宝箱",
@@ -31605,6 +39186,7 @@ root("ObjectDB", {
 	[332568] = {
 		readable = "Crystalline Cat Figurine",
 		icon = "Interface/Icons/trade_archaeology_catstatueemeraldeyes",
+		model = 192711,
 		text = {
 			en = "Crystalline Cat Figurine",
 			es = "Figurilla de gato cristalina",
@@ -31620,6 +39202,7 @@ root("ObjectDB", {
 	[332569] = {
 		readable = "Crystalline Cat Figurine",
 		icon = "Interface/Icons/trade_archaeology_catstatueemeraldeyes",
+		model = 192711,
 		text = {
 			en = "Crystalline Cat Figurine",
 			es = "Figurilla de gato cristalina",
@@ -31635,6 +39218,7 @@ root("ObjectDB", {
 	[332570] = {
 		readable = "Crystalline Cat Figurine",
 		icon = "Interface/Icons/trade_archaeology_catstatueemeraldeyes",
+		model = 192711,
 		text = {
 			en = "Crystalline Cat Figurine",
 			es = "Figurilla de gato cristalina",
@@ -31650,6 +39234,7 @@ root("ObjectDB", {
 	[332571] = {
 		readable = "Crystalline Cat Figurine",
 		icon = "Interface/Icons/trade_archaeology_catstatueemeraldeyes",
+		model = 192711,
 		text = {
 			en = "Crystalline Cat Figurine",
 			es = "Figurilla de gato cristalina",
@@ -31665,6 +39250,7 @@ root("ObjectDB", {
 	[332572] = {
 		readable = "Crystalline Cat Figurine",
 		icon = "Interface/Icons/trade_archaeology_catstatueemeraldeyes",
+		model = 192711,
 		text = {
 			en = "Crystalline Cat Figurine",
 			es = "Figurilla de gato cristalina",
@@ -31680,6 +39266,7 @@ root("ObjectDB", {
 	[332573] = {
 		readable = "Crystalline Cat Figurine",
 		icon = "Interface/Icons/trade_archaeology_catstatueemeraldeyes",
+		model = 192711,
 		text = {
 			en = "Crystalline Cat Figurine",
 			es = "Figurilla de gato cristalina",
@@ -31695,6 +39282,7 @@ root("ObjectDB", {
 	[332574] = {
 		readable = "Crystalline Cat Figurine",
 		icon = "Interface/Icons/trade_archaeology_catstatueemeraldeyes",
+		model = 192711,
 		text = {
 			en = "Crystalline Cat Figurine",
 			es = "Figurilla de gato cristalina",
@@ -31710,6 +39298,7 @@ root("ObjectDB", {
 	[332575] = {
 		readable = "Crystalline Cat Figurine",
 		icon = "Interface/Icons/trade_archaeology_catstatueemeraldeyes",
+		model = 192711,
 		text = {
 			en = "Crystalline Cat Figurine",
 			es = "Figurilla de gato cristalina",
@@ -31725,6 +39314,7 @@ root("ObjectDB", {
 	[332576] = {
 		readable = "Crystalline Cat Figurine",
 		icon = "Interface/Icons/trade_archaeology_catstatueemeraldeyes",
+		model = 192711,
 		text = {
 			en = "Crystalline Cat Figurine",
 			es = "Figurilla de gato cristalina",
@@ -31740,6 +39330,7 @@ root("ObjectDB", {
 	[332704] = {
 		readable = "Corrupted Chest",
 		icon = "Interface/Icons/inv_trinket_80_titan02e",
+		model = 3048900,
 		text = {
 			en = "Corrupted Chest",
 			es = "Cofre corrupto",
@@ -31754,6 +39345,7 @@ root("ObjectDB", {
 	},
 	[334216] = {
 		readable = "Black Empire Cache",
+		model = 3048900,
 		text = {
 			en = "Black Empire Cache",
 			es = "Alijo del Imperio Negro",
@@ -31768,6 +39360,7 @@ root("ObjectDB", {
 	},
 	[335655] = {
 		readable = "Oonar's Arm",
+		model = 240803,
 		text = {
 			en = "Oonar's Arm",
 			es = "Brazo de Oonar",
@@ -31782,6 +39375,7 @@ root("ObjectDB", {
 	},
 	[336415] = {
 		readable = "Discarded Scroll",
+		model = 3448138,
 		text = {
 			en = "Discarded Scroll",
 			es = "Pergamino desechado",
@@ -31796,6 +39390,7 @@ root("ObjectDB", {
 	},
 	[337237] = {
 		readable = "Lost Vault",
+		model = 3597238,
 		text = {
 			en = "Lost Vault",
 			es = "Cámara perdida",
@@ -31810,6 +39405,7 @@ root("ObjectDB", {
 	},
 	[337241] = {
 		readable = "Stashed Equipment",
+		model = 3207786,
 		text = {
 			en = "Stashed Equipment",
 			es = "Equipamiento oculto",
@@ -31825,11 +39421,14 @@ root("ObjectDB", {
 	[339211] = {
 		readable = "|cFFFFFFFFStep 2:|r Empty Dish",
 		icon = "Interface/Icons/inv_misc_bowl_01",
+		model = 955688,
 		text = {
 			en = "|cFFFFFFFFStep 2:|r Empty Dish",
 			es = "|cFFFFFFFFStep 2:|r Plato vacío",
 			de = "|cFFFFFFFFSchritt 2:|r Leerer Teller",
 			fr = "|cFFFFFFFFÉtape 2:|r Assiette vide",
+			it = "[Empty Dish]",
+			pt = "[Empty Dish]",
 			ru = "|cFFFFFFFFШаг 2:|r Пустая миска",
 			ko = "|cFFFFFFFFStep 2:|r 빈 그릇",
 			cn = "|cFFFFFFFF第2步:|r 空碗",
@@ -31837,6 +39436,7 @@ root("ObjectDB", {
 	},
 	[339243] = {
 		readable = "Infested Strongbox",
+		model = 446677,
 		text = {
 			en = "Infested Strongbox",
 			es = "Caja fuerte infestada",
@@ -31851,6 +39451,7 @@ root("ObjectDB", {
 	},
 	[339248] = {
 		readable = "Infested Cache",
+		model = 446677,
 		text = {
 			en = "Infested Cache",
 			es = "Alijo infestado",
@@ -31865,6 +39466,7 @@ root("ObjectDB", {
 	},
 	[339249] = {
 		readable = "Infested Cache",
+		model = 446677,
 		text = {
 			en = "Infested Cache",
 			es = "Alijo infestado",
@@ -31879,6 +39481,7 @@ root("ObjectDB", {
 	},
 	[339250] = {
 		readable = "Infested Cache",
+		model = 446677,
 		text = {
 			en = "Infested Cache",
 			es = "Alijo infestado",
@@ -31893,6 +39496,7 @@ root("ObjectDB", {
 	},
 	[339283] = {
 		readable = "Forgotten Noble's Chest",
+		model = 3597238,
 		text = {
 			en = "Forgotten Noble's Chest",
 			es = "Cofre de noble olvidado",
@@ -31907,6 +39511,7 @@ root("ObjectDB", {
 	},
 	[339601] = {
 		readable = "Scroll of Aeons",
+		model = 3022977,
 		text = {
 			en = "Scroll of Aeons",
 			es = "Pergamino de los Eones",
@@ -31921,6 +39526,7 @@ root("ObjectDB", {
 	},
 	[339625] = {
 		readable = "Sophia's Gift",
+		model = 3189119,
 		text = {
 			en = "Sophia's Gift",
 			es = "Don de Sophia",
@@ -31935,6 +39541,7 @@ root("ObjectDB", {
 	},
 	[339641] = {
 		readable = "Purifying Draught",
+		model = 3030673,
 		text = {
 			en = "Purifying Draught",
 			es = "Brebaje purificante",
@@ -31950,6 +39557,7 @@ root("ObjectDB", {
 	[339770] = {
 		readable = "Abandoned Treasure Chest",
 		icon = "Interface/Icons/inv_misc_treasurechest01c",
+		model = 979397,
 		text = {
 			en = "Abandoned Treasure Chest",
 			es = "Arqueta abandonada",
@@ -31964,6 +39572,7 @@ root("ObjectDB", {
 	},
 	[341424] = {
 		readable = "Forgotten Mementos",
+		model = 3638167,
 		text = {
 			en = "Forgotten Mementos",
 			es = "Recuerdos olvidados",
@@ -31979,12 +39588,14 @@ root("ObjectDB", {
 	[343611] = {
 		readable = "Voidtouched Egg",
 		icon = "Interface/Icons/inv_misc_food_legion_gooamberpurple_chunk",
+		model = 1269450,
 		text = {
 			en = "Voidtouched Egg",
 			es = "Huevo tocado por el Vacío",
 			de = "Leerenberührtes Ei",
 			fr = "Œuf touché par le Vide",
 			it = "Uovo Toccato dal Vuoto",
+			pt = "[Voidtouched Egg]",
 			ru = "Зараженное Бездной яйцо",
 			ko = "공허에 물든 알",
 			cn = "虚触之卵",
@@ -31992,6 +39603,7 @@ root("ObjectDB", {
 	},
 	[344588] = {
 		readable = "Stewart's Stewpendous Stew",
+		model = 526859,
 		text = {
 			en = "Stewart's Stewpendous Stew",
 			es = "Estofado estufendo de Stewart",
@@ -32006,6 +39618,7 @@ root("ObjectDB", {
 	},
 	[344726] = {
 		readable = "Dark Sermon",
+		model = 3045977,
 		text = {
 			en = "Dark Sermon",
 			es = "Sermón oscuro",
@@ -32020,6 +39633,7 @@ root("ObjectDB", {
 	},
 	[345446] = {
 		readable = "Great Horn of the Runestag",
+		model = 1062215,
 		text = {
 			en = "Great Horn of the Runestag",
 			es = "Gran cuerno del venado rúnico",
@@ -32034,6 +39648,7 @@ root("ObjectDB", {
 	},
 	[345455] = {
 		readable = "Construct Supply Chest",
+		model = 3638167,
 		text = {
 			en = "Construct Supply Chest",
 			es = "Cofre de suministros de ensamblaje",
@@ -32048,6 +39663,7 @@ root("ObjectDB", {
 	},
 	[345456] = {
 		readable = "Chest of Eyes",
+		model = 3638167,
 		text = {
 			en = "Chest of Eyes",
 			es = "Cofre de ojos",
@@ -32062,6 +39678,7 @@ root("ObjectDB", {
 	},
 	[345458] = {
 		readable = "Prize Bag",
+		model = 1254446,
 		text = {
 			en = "Prize Bag",
 			es = "Bolsa de recompensa",
@@ -32076,6 +39693,7 @@ root("ObjectDB", {
 	},
 	[347444] = {
 		readable = "Ornate Bone Shield",
+		model = 3036602,
 		text = {
 			en = "Ornate Bone Shield",
 			es = "Escudo óseo ornamentado",
@@ -32090,6 +39708,7 @@ root("ObjectDB", {
 	},
 	[348521] = {
 		readable = "Strange Growth",
+		model = 1957171,
 		text = {
 			en = "Strange Growth",
 			es = "Crecimiento raro",
@@ -32104,6 +39723,7 @@ root("ObjectDB", {
 	},
 	[348558] = {
 		readable = "Notice",
+		model = 3045976,
 		text = {
 			en = "Notice",
 			es = "Aviso",
@@ -32118,6 +39738,7 @@ root("ObjectDB", {
 	},
 	[348747] = {
 		readable = "Muddy Scroll",
+		model = 3448136,
 		text = {
 			en = "Muddy Scroll",
 			es = "Pergamino embarrado",
@@ -32132,6 +39753,7 @@ root("ObjectDB", {
 	},
 	[349515] = {
 		readable = "Battered Journal",
+		model = 3448141,
 		text = {
 			en = "Battered Journal",
 			es = "Diario maltrecho",
@@ -32146,6 +39768,7 @@ root("ObjectDB", {
 	},
 	[349565] = {
 		readable = "Chest of Envious Dreams",
+		model = 3597238,
 		text = {
 			en = "Chest of Envious Dreams",
 			es = "Cofre de sueños envidiosos",
@@ -32160,6 +39783,7 @@ root("ObjectDB", {
 	},
 	[349612] = {
 		readable = "Wanted: Appraiser Vix",
+		model = 3756062,
 		text = {
 			en = "Wanted: Appraiser Vix",
 			es = "Se busca: Tasador Vix",
@@ -32174,6 +39798,7 @@ root("ObjectDB", {
 	},
 	[349792] = {
 		readable = "Filcher's Prize",
+		model = 1662185,
 		text = {
 			en = "Filcher's Prize",
 			es = "Premio del afanador",
@@ -32188,6 +39813,7 @@ root("ObjectDB", {
 	},
 	[349793] = {
 		readable = "Wayfarer's Abandoned Spoils",
+		model = 3607333,
 		text = {
 			en = "Wayfarer's Abandoned Spoils",
 			es = "Botín abandonado de caminante",
@@ -32202,6 +39828,7 @@ root("ObjectDB", {
 	},
 	[349794] = {
 		readable = "Remlate's Hidden Cache",
+		model = 3597238,
 		text = {
 			en = "Remlate's Hidden Cache",
 			es = "Alijo oculto de Remlate",
@@ -32216,6 +39843,7 @@ root("ObjectDB", {
 	},
 	[349795] = {
 		readable = "Fleeing Soul's Bundle",
+		model = 191107,
 		text = {
 			en = "Fleeing Soul's Bundle",
 			es = "Fardo de alma huidiza",
@@ -32230,6 +39858,7 @@ root("ObjectDB", {
 	},
 	[349796] = {
 		readable = "Gilded Plum Chest",
+		model = 2123117,
 		text = {
 			en = "Gilded Plum Chest",
 			es = "Cofre de ciruelas doradas",
@@ -32244,6 +39873,7 @@ root("ObjectDB", {
 	},
 	[349797] = {
 		readable = "Abandoned Curios",
+		model = 3546735,
 		text = {
 			en = "Abandoned Curios",
 			es = "Bibelots abandonados",
@@ -32258,6 +39888,7 @@ root("ObjectDB", {
 	},
 	[349798] = {
 		readable = "Smuggled Cache",
+		model = 3607335,
 		text = {
 			en = "Smuggled Cache",
 			es = "Alijo de contrabando",
@@ -32272,6 +39903,7 @@ root("ObjectDB", {
 	},
 	[350802] = {
 		readable = "Web Sealed Chest",
+		model = 2123117,
 		text = {
 			en = "Web Sealed Chest",
 			es = "Cofre sellado con telarañas",
@@ -32286,6 +39918,7 @@ root("ObjectDB", {
 	},
 	[350804] = {
 		readable = "Broken Harp",
+		model = 3036171,
 		text = {
 			en = "Broken Harp",
 			es = "Arpa rota",
@@ -32301,6 +39934,7 @@ root("ObjectDB", {
 	[350978] = {
 		readable = "Queen's Conservatory Cache",
 		icon = "Interface/Icons/inv_legion_cache_dreamweavers",
+		model = 3522547,
 		text = {
 			en = "Queen's Conservatory Cache",
 			es = "Alijo del Invernadero de la Reina",
@@ -32315,6 +39949,7 @@ root("ObjectDB", {
 	},
 	[351467] = {
 		readable = "Faded Epitaph",
+		model = 3036585,
 		text = {
 			en = "Faded Epitaph",
 			es = "Epitafio desgastado",
@@ -32329,6 +39964,7 @@ root("ObjectDB", {
 	},
 	[351487] = {
 		readable = "Secret Treasure",
+		model = 3597238,
 		text = {
 			en = "Secret Treasure",
 			es = "Tesoro secreto",
@@ -32343,6 +39979,7 @@ root("ObjectDB", {
 	},
 	[351540] = {
 		readable = "Secret Treasure",
+		model = 3597238,
 		text = {
 			en = "Secret Treasure",
 			es = "Tesoro secreto",
@@ -32357,6 +39994,7 @@ root("ObjectDB", {
 	},
 	[351541] = {
 		readable = "Secret Treasure",
+		model = 3597238,
 		text = {
 			en = "Secret Treasure",
 			es = "Tesoro secreto",
@@ -32371,6 +40009,7 @@ root("ObjectDB", {
 	},
 	[351542] = {
 		readable = "Secret Treasure",
+		model = 3597238,
 		text = {
 			en = "Secret Treasure",
 			es = "Tesoro secreto",
@@ -32385,6 +40024,7 @@ root("ObjectDB", {
 	},
 	[351543] = {
 		readable = "Secret Treasure",
+		model = 3597238,
 		text = {
 			en = "Secret Treasure",
 			es = "Tesoro secreto",
@@ -32399,6 +40039,7 @@ root("ObjectDB", {
 	},
 	[351544] = {
 		readable = "Secret Treasure",
+		model = 3597238,
 		text = {
 			en = "Secret Treasure",
 			es = "Tesoro secreto",
@@ -32413,6 +40054,7 @@ root("ObjectDB", {
 	},
 	[351545] = {
 		readable = "Secret Treasure",
+		model = 3597238,
 		text = {
 			en = "Secret Treasure",
 			es = "Tesoro secreto",
@@ -32427,6 +40069,7 @@ root("ObjectDB", {
 	},
 	[351874] = {
 		readable = "Wanted: Enforcer Kristof",
+		model = 3166135,
 		text = {
 			en = "Wanted: Enforcer Kristof",
 			es = "Se busca: Déspota Kristof",
@@ -32441,6 +40084,7 @@ root("ObjectDB", {
 	},
 	[351885] = {
 		readable = "Wanted: Aggregate of Doom",
+		model = 3166135,
 		text = {
 			en = "Wanted: Aggregate of Doom",
 			es = "Se busca: Agregado de fatalidad",
@@ -32455,6 +40099,7 @@ root("ObjectDB", {
 	},
 	[351886] = {
 		readable = "Wanted: Duke Anton",
+		model = 3166135,
 		text = {
 			en = "Wanted: Duke Anton",
 			es = "Se busca: duque Anton",
@@ -32469,6 +40114,7 @@ root("ObjectDB", {
 	},
 	[351887] = {
 		readable = "Wanted: Lord Darion",
+		model = 3166135,
 		text = {
 			en = "Wanted: Lord Darion",
 			es = "Se busca: lord Darion",
@@ -32483,6 +40129,7 @@ root("ObjectDB", {
 	},
 	[351888] = {
 		readable = "Wanted: Summoner Marcelis",
+		model = 3166135,
 		text = {
 			en = "Wanted: Summoner Marcelis",
 			es = "Se busca: invocador Marcelis",
@@ -32497,6 +40144,7 @@ root("ObjectDB", {
 	},
 	[351889] = {
 		readable = "Wanted: The Pale Doom",
+		model = 3166135,
 		text = {
 			en = "Wanted: The Pale Doom",
 			es = "Se busca: Condenación Pálida",
@@ -32511,6 +40159,7 @@ root("ObjectDB", {
 	},
 	[351948] = {
 		readable = "Forgotten Chest",
+		model = 3597238,
 		text = {
 			en = "Forgotten Chest",
 			es = "Cofre olvidado",
@@ -32525,6 +40174,7 @@ root("ObjectDB", {
 	},
 	[351980] = {
 		readable = "Misplaced Supplies",
+		model = 1254446,
 		text = {
 			en = "Misplaced Supplies",
 			es = "Suministros extraviados",
@@ -32539,6 +40189,7 @@ root("ObjectDB", {
 	},
 	[352027] = {
 		readable = "Wanted Scroll",
+		model = 3045976,
 		text = {
 			en = "Wanted Scroll",
 			es = "Pergamino de Se busca",
@@ -32553,6 +40204,7 @@ root("ObjectDB", {
 	},
 	[352028] = {
 		readable = "Wanted Scroll",
+		model = 3045976,
 		text = {
 			en = "Wanted Scroll",
 			es = "Pergamino de Se busca",
@@ -32567,6 +40219,7 @@ root("ObjectDB", {
 	},
 	[352086] = {
 		readable = "Blackhound Cache",
+		model = 3621781,
 		text = {
 			en = "Blackhound Cache",
 			es = "Alijo Sabueso Negro",
@@ -32581,6 +40234,7 @@ root("ObjectDB", {
 	},
 	[352428] = {
 		readable = "Vesper of Virtues",
+		model = 2839472,
 		text = {
 			en = "Vesper of Virtues",
 			es = "Campana de vísperas de virtudes",
@@ -32595,6 +40249,7 @@ root("ObjectDB", {
 	},
 	[352433] = {
 		readable = "Cache of Eyes",
+		model = 3638167,
 		text = {
 			en = "Cache of Eyes",
 			es = "Alijo de ojos",
@@ -32609,6 +40264,7 @@ root("ObjectDB", {
 	},
 	[352490] = {
 		readable = "Join the Rebellion!",
+		model = 3166135,
 		text = {
 			en = "Join the Rebellion!",
 			es = "¡Únete a la rebelión!",
@@ -32623,6 +40279,7 @@ root("ObjectDB", {
 	},
 	[352520] = {
 		readable = "Medallion of Pride",
+		model = 3535749,
 		text = {
 			en = "Medallion of Pride",
 			es = "Medallón de orgullo",
@@ -32637,6 +40294,7 @@ root("ObjectDB", {
 	},
 	[352596] = {
 		readable = "Sprouting Growth",
+		model = 973262,
 		text = {
 			en = "Sprouting Growth",
 			es = "Crecimiento floreciente",
@@ -32651,6 +40309,7 @@ root("ObjectDB", {
 	},
 	[352703] = {
 		readable = "The Harvest",
+		model = 3528929,
 		text = {
 			en = "The Harvest",
 			es = "La cosecha",
@@ -32665,6 +40324,7 @@ root("ObjectDB", {
 	},
 	[352754] = {
 		readable = "Silver Strongbox",
+		model = 3189120,
 		text = {
 			en = "Silver Strongbox",
 			es = "Caja fuerte de plata",
@@ -32679,18 +40339,22 @@ root("ObjectDB", {
 	},
 	[352909] = {
 		readable = "Glimmerfin Scale",
+		model = 1301126,
 		text = {
 			en = "Glimmerfin Scale",
 			es = "Escama de Aletatitilo",
 			de = "Schimmerflossenschuppe",
 			fr = "Écaille de luisaileron",
+			it = "[Glimmerfin Scale]",
 			pt = "Escama Pinabrilha",
 			ru = "Чешуйка мурлока из племени Бликожабров",
+			ko = "[Glimmerfin Scale]",
 			cn = "烁鳍之鳞",
 		},
 	},
 	[353019] = {
 		readable = "Silver Strongbox",
+		model = 3189120,
 		text = {
 			en = "Silver Strongbox",
 			es = "Caja fuerte de plata",
@@ -32705,6 +40369,7 @@ root("ObjectDB", {
 	},
 	[353205] = {
 		readable = "Silver Strongbox",
+		model = 3189120,
 		text = {
 			en = "Silver Strongbox",
 			es = "Caja fuerte de plata",
@@ -32719,6 +40384,7 @@ root("ObjectDB", {
 	},
 	[353231] = {
 		readable = "Bonebound Chest",
+		model = 3621781,
 		text = {
 			en = "Bonebound Chest",
 			es = "Cofre vinculahueso",
@@ -32733,6 +40399,7 @@ root("ObjectDB", {
 	},
 	[353232] = {
 		readable = "Bleakwood Chest",
+		model = 3595030,
 		text = {
 			en = "Bleakwood Chest",
 			es = "Cofre de leñogrís",
@@ -32747,6 +40414,7 @@ root("ObjectDB", {
 	},
 	[353233] = {
 		readable = "Enchanted Chest",
+		model = 3522547,
 		text = {
 			en = "Enchanted Chest",
 			es = "Cofre encantado",
@@ -32761,6 +40429,7 @@ root("ObjectDB", {
 	},
 	[353234] = {
 		readable = "Gilded Chest",
+		model = 3189119,
 		text = {
 			en = "Gilded Chest",
 			es = "Cofre dorado",
@@ -32775,6 +40444,7 @@ root("ObjectDB", {
 	},
 	[353252] = {
 		readable = "Silver Strongbox",
+		model = 3189120,
 		text = {
 			en = "Silver Strongbox",
 			es = "Caja fuerte de plata",
@@ -32789,6 +40459,7 @@ root("ObjectDB", {
 	},
 	[353306] = {
 		readable = "Decayed Husk",
+		model = 3033926,
 		text = {
 			en = "Decayed Husk",
 			es = "Caparazón deteriorado",
@@ -32803,6 +40474,7 @@ root("ObjectDB", {
 	},
 	[353314] = {
 		readable = "Silver Strongbox",
+		model = 3189120,
 		text = {
 			en = "Silver Strongbox",
 			es = "Caja fuerte de plata",
@@ -32817,6 +40489,7 @@ root("ObjectDB", {
 	},
 	[353323] = {
 		readable = "Decayed Husk",
+		model = 3033926,
 		text = {
 			en = "Decayed Husk",
 			es = "Caparazón deteriorado",
@@ -32831,6 +40504,7 @@ root("ObjectDB", {
 	},
 	[353324] = {
 		readable = "Decayed Husk",
+		model = 3033926,
 		text = {
 			en = "Decayed Husk",
 			es = "Caparazón deteriorado",
@@ -32845,6 +40519,7 @@ root("ObjectDB", {
 	},
 	[353325] = {
 		readable = "Silver Strongbox",
+		model = 3189120,
 		text = {
 			en = "Silver Strongbox",
 			es = "Caja fuerte de plata",
@@ -32859,6 +40534,7 @@ root("ObjectDB", {
 	},
 	[353326] = {
 		readable = "Decayed Husk",
+		model = 3033926,
 		text = {
 			en = "Decayed Husk",
 			es = "Caparazón deteriorado",
@@ -32873,6 +40549,7 @@ root("ObjectDB", {
 	},
 	[353327] = {
 		readable = "Decayed Husk",
+		model = 3033926,
 		text = {
 			en = "Decayed Husk",
 			es = "Caparazón deteriorado",
@@ -32887,6 +40564,7 @@ root("ObjectDB", {
 	},
 	[353329] = {
 		readable = "Faerie Stash",
+		model = 3033637,
 		text = {
 			en = "Faerie Stash",
 			es = "Alijo de hada",
@@ -32901,6 +40579,7 @@ root("ObjectDB", {
 	},
 	[353330] = {
 		readable = "Faerie Stash",
+		model = 3033637,
 		text = {
 			en = "Faerie Stash",
 			es = "Alijo de hada",
@@ -32915,6 +40594,7 @@ root("ObjectDB", {
 	},
 	[353331] = {
 		readable = "Faerie Stash",
+		model = 3033637,
 		text = {
 			en = "Faerie Stash",
 			es = "Alijo de hada",
@@ -32929,6 +40609,7 @@ root("ObjectDB", {
 	},
 	[353332] = {
 		readable = "Faerie Stash",
+		model = 3033637,
 		text = {
 			en = "Faerie Stash",
 			es = "Alijo de hada",
@@ -32943,6 +40624,7 @@ root("ObjectDB", {
 	},
 	[353333] = {
 		readable = "Faerie Stash",
+		model = 3033637,
 		text = {
 			en = "Faerie Stash",
 			es = "Alijo de hada",
@@ -32957,6 +40639,7 @@ root("ObjectDB", {
 	},
 	[353336] = {
 		readable = "Secret Treasure",
+		model = 3597238,
 		text = {
 			en = "Secret Treasure",
 			es = "Tesoro secreto",
@@ -32971,6 +40654,7 @@ root("ObjectDB", {
 	},
 	[353380] = {
 		readable = "Halis's Lunch Pail",
+		model = 969764,
 		text = {
 			en = "Halis's Lunch Pail",
 			es = "Cubo de comida de Halis",
@@ -32985,6 +40669,7 @@ root("ObjectDB", {
 	},
 	[353472] = {
 		readable = "Radiant Sword",
+		model = 3590187,
 		text = {
 			en = "Radiant Sword",
 			es = "Espada radiante",
@@ -33000,6 +40685,7 @@ root("ObjectDB", {
 	[353484] = {
 		readable = "The Great Vault",
 		icon = "Interface/Icons/inv_blacksmithing_greaterweightstone",
+		model = 3308580,
 		text = {
 			en = "The Great Vault",
 			es = "La gran cámara",
@@ -33014,6 +40700,7 @@ root("ObjectDB", {
 	},
 	[353500] = {
 		readable = "Silver Strongbox",
+		model = 3189120,
 		text = {
 			en = "Silver Strongbox",
 			es = "Caja fuerte de plata",
@@ -33028,6 +40715,7 @@ root("ObjectDB", {
 	},
 	[353503] = {
 		readable = "Silver Strongbox",
+		model = 3189120,
 		text = {
 			en = "Silver Strongbox",
 			es = "Caja fuerte de plata",
@@ -33042,6 +40730,7 @@ root("ObjectDB", {
 	},
 	[353516] = {
 		readable = "Silver Strongbox",
+		model = 3189120,
 		text = {
 			en = "Silver Strongbox",
 			es = "Caja fuerte de plata",
@@ -33056,6 +40745,7 @@ root("ObjectDB", {
 	},
 	[353626] = {
 		readable = "Locked Toolbox",
+		model = 3638167,
 		text = {
 			en = "Locked Toolbox",
 			es = "Caja de herramientas cerrada",
@@ -33070,6 +40760,7 @@ root("ObjectDB", {
 	},
 	[353627] = {
 		readable = "Battlefront Rations",
+		model = 3638167,
 		text = {
 			en = "Battlefront Rations",
 			es = "Raciones del frente",
@@ -33084,6 +40775,7 @@ root("ObjectDB", {
 	},
 	[353643] = {
 		readable = "Silver Strongbox",
+		model = 3189120,
 		text = {
 			en = "Silver Strongbox",
 			es = "Caja fuerte de plata",
@@ -33098,6 +40790,7 @@ root("ObjectDB", {
 	},
 	[353645] = {
 		readable = "Marileth's Journal",
+		model = 3036573,
 		text = {
 			en = "Marileth's Journal",
 			es = "Diario de Marileth",
@@ -33112,6 +40805,7 @@ root("ObjectDB", {
 	},
 	[353650] = {
 		readable = "Steward's Golden Chest",
+		model = 3189119,
 		text = {
 			en = "Steward's Golden Chest",
 			es = "Cofre dorado de administrador",
@@ -33126,6 +40820,7 @@ root("ObjectDB", {
 	},
 	[353681] = {
 		readable = "Lunarlight Pod",
+		model = 3053305,
 		text = {
 			en = "Lunarlight Pod",
 			es = "Vaina de luz lunar",
@@ -33140,6 +40835,7 @@ root("ObjectDB", {
 	},
 	[353683] = {
 		readable = "Lunarlight Pod",
+		model = 3053305,
 		text = {
 			en = "Lunarlight Pod",
 			es = "Vaina de luz lunar",
@@ -33154,6 +40850,7 @@ root("ObjectDB", {
 	},
 	[353684] = {
 		readable = "Lunarlight Pod",
+		model = 3053305,
 		text = {
 			en = "Lunarlight Pod",
 			es = "Vaina de luz lunar",
@@ -33168,6 +40865,7 @@ root("ObjectDB", {
 	},
 	[353685] = {
 		readable = "Lunarlight Pod",
+		model = 3053305,
 		text = {
 			en = "Lunarlight Pod",
 			es = "Vaina de luz lunar",
@@ -33182,6 +40880,7 @@ root("ObjectDB", {
 	},
 	[353686] = {
 		readable = "Lunarlight Pod",
+		model = 3053305,
 		text = {
 			en = "Lunarlight Pod",
 			es = "Vaina de luz lunar",
@@ -33196,6 +40895,7 @@ root("ObjectDB", {
 	},
 	[353687] = {
 		readable = "Broken Bell",
+		model = 2839472,
 		text = {
 			en = "Broken Bell",
 			es = "Campana rota",
@@ -33210,6 +40910,7 @@ root("ObjectDB", {
 	},
 	[353688] = {
 		readable = "Broken Bell",
+		model = 2839471,
 		text = {
 			en = "Broken Bell",
 			es = "Campana rota",
@@ -33224,6 +40925,7 @@ root("ObjectDB", {
 	},
 	[353689] = {
 		readable = "Broken Bell",
+		model = 2839470,
 		text = {
 			en = "Broken Bell",
 			es = "Campana rota",
@@ -33238,6 +40940,7 @@ root("ObjectDB", {
 	},
 	[353691] = {
 		readable = "Skyward Bell",
+		model = 2839471,
 		text = {
 			en = "Skyward Bell",
 			es = "Campana celeste",
@@ -33252,6 +40955,7 @@ root("ObjectDB", {
 	},
 	[353791] = {
 		readable = "Castle Strongbox",
+		model = 3595030,
 		text = {
 			en = "Castle Strongbox",
 			es = "Caja fuerte del castillo",
@@ -33266,6 +40970,7 @@ root("ObjectDB", {
 	},
 	[353792] = {
 		readable = "Village Strongbox",
+		model = 3607335,
 		text = {
 			en = "Village Strongbox",
 			es = "Caja fuerte de la aldea",
@@ -33280,6 +40985,7 @@ root("ObjectDB", {
 	},
 	[353793] = {
 		readable = "Parish Chest",
+		model = 3607334,
 		text = {
 			en = "Parish Chest",
 			es = "Cofre de la parroquia",
@@ -33294,6 +41000,7 @@ root("ObjectDB", {
 	},
 	[353796] = {
 		readable = "Reliquary of Remembrance",
+		model = 3528929,
 		text = {
 			en = "Reliquary of Remembrance",
 			es = "Relicario de recuerdos",
@@ -33308,6 +41015,7 @@ root("ObjectDB", {
 	},
 	[353797] = {
 		readable = "Stone Legion Supplies",
+		model = 3607336,
 		text = {
 			en = "Stone Legion Supplies",
 			es = "Suministros de la Legión Pétrea",
@@ -33322,6 +41030,7 @@ root("ObjectDB", {
 	},
 	[353799] = {
 		readable = "Hopebreaker Pack",
+		model = 3607333,
 		text = {
 			en = "Hopebreaker Pack",
 			es = "Mochila de rompeesperanzas",
@@ -33336,6 +41045,7 @@ root("ObjectDB", {
 	},
 	[353868] = {
 		readable = "Hidden Hoard",
+		model = 3023915,
 		text = {
 			en = "Hidden Hoard",
 			es = "Tesoro oculto",
@@ -33350,6 +41060,7 @@ root("ObjectDB", {
 	},
 	[353869] = {
 		readable = "Hidden Hoard",
+		model = 3177104,
 		text = {
 			en = "Hidden Hoard",
 			es = "Tesoro oculto",
@@ -33364,6 +41075,7 @@ root("ObjectDB", {
 	},
 	[353870] = {
 		readable = "Hidden Hoard",
+		model = 3023914,
 		text = {
 			en = "Hidden Hoard",
 			es = "Tesoro oculto",
@@ -33378,6 +41090,7 @@ root("ObjectDB", {
 	},
 	[353871] = {
 		readable = "Hidden Hoard",
+		model = 3023913,
 		text = {
 			en = "Hidden Hoard",
 			es = "Tesoro oculto",
@@ -33386,11 +41099,13 @@ root("ObjectDB", {
 			it = "Scorta Nascosta",
 			pt = "Tesouro Escondido",
 			ru = "Тайные сокровища",
+			ko = "숨겨진 비축물",
 			cn = "隐秘宝藏",
 		},
 	},
 	[353872] = {
 		readable = "Hidden Hoard",
+		model = 3095805,
 		text = {
 			en = "Hidden Hoard",
 			es = "Tesoro oculto",
@@ -33405,6 +41120,7 @@ root("ObjectDB", {
 	},
 	[353873] = {
 		readable = "Hidden Hoard",
+		model = 3095806,
 		text = {
 			en = "Hidden Hoard",
 			es = "Tesoro oculto",
@@ -33419,6 +41135,7 @@ root("ObjectDB", {
 	},
 	[353876] = {
 		readable = "Virtue of Penitence",
+		model = 2994771,
 		text = {
 			en = "Virtue of Penitence",
 			es = "Virtud de penitencia",
@@ -33433,6 +41150,7 @@ root("ObjectDB", {
 	},
 	[353940] = {
 		readable = "Gift of Vesiphone",
+		model = 3189119,
 		text = {
 			en = "Gift of Vesiphone",
 			es = "Ofrenda de Vesífone",
@@ -33447,6 +41165,7 @@ root("ObjectDB", {
 	},
 	[353941] = {
 		readable = "Gift of Chyrus",
+		model = 3189119,
 		text = {
 			en = "Gift of Chyrus",
 			es = "Ofrenda de Chyrus",
@@ -33461,6 +41180,7 @@ root("ObjectDB", {
 	},
 	[353942] = {
 		readable = "Gift of Agthia",
+		model = 3189119,
 		text = {
 			en = "Gift of Agthia",
 			es = "Ofrenda de Agthia",
@@ -33475,6 +41195,7 @@ root("ObjectDB", {
 	},
 	[353943] = {
 		readable = "Gift of Thenios",
+		model = 3189119,
 		text = {
 			en = "Gift of Thenios",
 			es = "Ofrenda de Thenios",
@@ -33489,6 +41210,7 @@ root("ObjectDB", {
 	},
 	[353944] = {
 		readable = "Gift of Devos",
+		model = 3189119,
 		text = {
 			en = "Gift of Devos",
 			es = "Ofrenda de Devos",
@@ -33503,6 +41225,7 @@ root("ObjectDB", {
 	},
 	[353948] = {
 		readable = "Medallion of Desire",
+		model = 3535749,
 		text = {
 			en = "Medallion of Desire",
 			es = "Medallón de deseo",
@@ -33517,6 +41240,7 @@ root("ObjectDB", {
 	},
 	[353949] = {
 		readable = "Medallion of Avarice",
+		model = 3535749,
 		text = {
 			en = "Medallion of Avarice",
 			es = "Medallón de avaricia",
@@ -33531,6 +41255,7 @@ root("ObjectDB", {
 	},
 	[354108] = {
 		readable = "Stoneborn Satchel",
+		model = 878854,
 		text = {
 			en = "Stoneborn Satchel",
 			es = "Bolsa de natopiedra",
@@ -33545,6 +41270,7 @@ root("ObjectDB", {
 	},
 	[354109] = {
 		readable = "Stoneborn Satchel",
+		model = 878854,
 		text = {
 			en = "Stoneborn Satchel",
 			es = "Bolsa de natopiedra",
@@ -33559,6 +41285,7 @@ root("ObjectDB", {
 	},
 	[354110] = {
 		readable = "Stoneborn Satchel",
+		model = 878854,
 		text = {
 			en = "Stoneborn Satchel",
 			es = "Bolsa de natopiedra",
@@ -33573,6 +41300,7 @@ root("ObjectDB", {
 	},
 	[354111] = {
 		readable = "Stoneborn Satchel",
+		model = 878854,
 		text = {
 			en = "Stoneborn Satchel",
 			es = "Bolsa de natopiedra",
@@ -33587,6 +41315,7 @@ root("ObjectDB", {
 	},
 	[354112] = {
 		readable = "Stoneborn Satchel",
+		model = 878854,
 		text = {
 			en = "Stoneborn Satchel",
 			es = "Bolsa de natopiedra",
@@ -33601,6 +41330,7 @@ root("ObjectDB", {
 	},
 	[354113] = {
 		readable = "Stoneborn Satchel",
+		model = 878854,
 		text = {
 			en = "Stoneborn Satchel",
 			es = "Bolsa de natopiedra",
@@ -33615,6 +41345,7 @@ root("ObjectDB", {
 	},
 	[354114] = {
 		readable = "Stoneborn Satchel",
+		model = 878854,
 		text = {
 			en = "Stoneborn Satchel",
 			es = "Bolsa de natopiedra",
@@ -33629,6 +41360,7 @@ root("ObjectDB", {
 	},
 	[354115] = {
 		readable = "Pugilist's Prize",
+		model = 1306557,
 		text = {
 			en = "Pugilist's Prize",
 			es = "Premio de púgil",
@@ -33637,11 +41369,13 @@ root("ObjectDB", {
 			it = "Premio del Pugile",
 			pt = "Prêmio do Pugilista",
 			ru = "Награда бойца",
+			ko = "[Pugilist's Prize]",
 			cn = "拳手的奖励",
 		},
 	},
 	[354116] = {
 		readable = "Pugilist's Prize",
+		model = 1306556,
 		text = {
 			en = "Pugilist's Prize",
 			es = "Premio de púgil",
@@ -33656,6 +41390,7 @@ root("ObjectDB", {
 	},
 	[354121] = {
 		readable = "Pugilist's Prize",
+		model = 1254446,
 		text = {
 			en = "Pugilist's Prize",
 			es = "Premio de púgil",
@@ -33670,6 +41405,7 @@ root("ObjectDB", {
 	},
 	[354122] = {
 		readable = "Pugilist's Prize",
+		model = 1255202,
 		text = {
 			en = "Pugilist's Prize",
 			es = "Premio de púgil",
@@ -33684,6 +41420,7 @@ root("ObjectDB", {
 	},
 	[354123] = {
 		readable = "Pugilist's Prize",
+		model = 987264,
 		text = {
 			en = "Pugilist's Prize",
 			es = "Premio de púgil",
@@ -33698,6 +41435,7 @@ root("ObjectDB", {
 	},
 	[354175] = {
 		readable = "Cache of the Ascended",
+		model = 3189119,
 		text = {
 			en = "Cache of the Ascended",
 			es = "Alijo de los Ascendidos",
@@ -33712,6 +41450,7 @@ root("ObjectDB", {
 	},
 	[354186] = {
 		readable = "Stoneborn Satchel",
+		model = 878854,
 		text = {
 			en = "Stoneborn Satchel",
 			es = "Bolsa de natopiedra",
@@ -33726,6 +41465,7 @@ root("ObjectDB", {
 	},
 	[354187] = {
 		readable = "Stoneborn Satchel",
+		model = 878854,
 		text = {
 			en = "Stoneborn Satchel",
 			es = "Bolsa de natopiedra",
@@ -33740,6 +41480,7 @@ root("ObjectDB", {
 	},
 	[354188] = {
 		readable = "Stoneborn Satchel",
+		model = 878854,
 		text = {
 			en = "Stoneborn Satchel",
 			es = "Bolsa de natopiedra",
@@ -33754,6 +41495,7 @@ root("ObjectDB", {
 	},
 	[354189] = {
 		readable = "Stoneborn Satchel",
+		model = 878854,
 		text = {
 			en = "Stoneborn Satchel",
 			es = "Bolsa de natopiedra",
@@ -33768,6 +41510,7 @@ root("ObjectDB", {
 	},
 	[354190] = {
 		readable = "Stoneborn Satchel",
+		model = 878854,
 		text = {
 			en = "Stoneborn Satchel",
 			es = "Bolsa de natopiedra",
@@ -33782,6 +41525,7 @@ root("ObjectDB", {
 	},
 	[354191] = {
 		readable = "Stoneborn Satchel",
+		model = 878854,
 		text = {
 			en = "Stoneborn Satchel",
 			es = "Bolsa de natopiedra",
@@ -33796,6 +41540,7 @@ root("ObjectDB", {
 	},
 	[354192] = {
 		readable = "Stoneborn Satchel",
+		model = 878854,
 		text = {
 			en = "Stoneborn Satchel",
 			es = "Bolsa de natopiedra",
@@ -33810,6 +41555,7 @@ root("ObjectDB", {
 	},
 	[354193] = {
 		readable = "Stoneborn Satchel",
+		model = 878854,
 		text = {
 			en = "Stoneborn Satchel",
 			es = "Bolsa de natopiedra",
@@ -33824,6 +41570,7 @@ root("ObjectDB", {
 	},
 	[354202] = {
 		readable = "Abandoned Stockpile",
+		model = 3023914,
 		text = {
 			en = "Abandoned Stockpile",
 			es = "Reservas abandonadas",
@@ -33838,6 +41585,7 @@ root("ObjectDB", {
 	},
 	[354208] = {
 		readable = "Stolen Equipment",
+		model = 3189120,
 		text = {
 			en = "Stolen Equipment",
 			es = "Equipo robado",
@@ -33852,6 +41600,7 @@ root("ObjectDB", {
 	},
 	[354211] = {
 		readable = "Greed's Reward",
+		model = 3595030,
 		text = {
 			en = "Greed's Reward",
 			es = "Recompensa de avaricia",
@@ -33866,6 +41615,7 @@ root("ObjectDB", {
 	},
 	[354213] = {
 		readable = "Lost Disciple's Notes",
+		model = 3045971,
 		text = {
 			en = "Lost Disciple's Notes",
 			es = "Notas perdidas de discípulo",
@@ -33880,6 +41630,7 @@ root("ObjectDB", {
 	},
 	[354214] = {
 		readable = "Larion Tamer's Harness",
+		model = 1019643,
 		text = {
 			en = "Larion Tamer's Harness",
 			es = "Arnés de domador de lariones",
@@ -33894,6 +41645,7 @@ root("ObjectDB", {
 	},
 	[354275] = {
 		readable = "Experimental Construct Part",
+		model = 3197319,
 		text = {
 			en = "Experimental Construct Part",
 			es = "Pieza de ensamblaje experimental",
@@ -33908,6 +41660,7 @@ root("ObjectDB", {
 	},
 	[354289] = {
 		readable = "Windsmith's Tools",
+		model = 3040704,
 		text = {
 			en = "Windsmith's Tools",
 			es = "Herramientas de forjador de vientos",
@@ -33922,6 +41675,7 @@ root("ObjectDB", {
 	},
 	[354645] = {
 		readable = "Lost Satchel",
+		model = 977074,
 		text = {
 			en = "Lost Satchel",
 			es = "Bolsa perdida",
@@ -33936,6 +41690,7 @@ root("ObjectDB", {
 	},
 	[354646] = {
 		readable = "Ancient Cloudfeather Egg",
+		model = 975361,
 		text = {
 			en = "Ancient Cloudfeather Egg",
 			es = "Huevo de plumanube antiguo",
@@ -33950,6 +41705,7 @@ root("ObjectDB", {
 	},
 	[354647] = {
 		readable = "Hearty Dragon Plume",
+		model = 199704,
 		text = {
 			en = "Hearty Dragon Plume",
 			es = "Pluma de dragón recia",
@@ -33964,6 +41720,7 @@ root("ObjectDB", {
 	},
 	[354648] = {
 		readable = "Darkreach Supplies",
+		model = 2029167,
 		text = {
 			en = "Darkreach Supplies",
 			es = "Suministros de Alcance Oscuro",
@@ -33978,6 +41735,7 @@ root("ObjectDB", {
 	},
 	[354650] = {
 		readable = "Dreamsong Heart",
+		model = 3255405,
 		text = {
 			en = "Dreamsong Heart",
 			es = "Corazón de Cantosueño",
@@ -33992,6 +41750,7 @@ root("ObjectDB", {
 	},
 	[354651] = {
 		readable = "Enchanted Dreamcatcher",
+		model = 3036126,
 		text = {
 			en = "Enchanted Dreamcatcher",
 			es = "Atrapasueños encantado",
@@ -34006,6 +41765,7 @@ root("ObjectDB", {
 	},
 	[354652] = {
 		readable = "Faerie Trove",
+		model = 3036103,
 		text = {
 			en = "Faerie Trove",
 			es = "Tesoro de hada",
@@ -34020,6 +41780,7 @@ root("ObjectDB", {
 	},
 	[354662] = {
 		readable = "Elusive Faerie Cache",
+		model = 3522547,
 		text = {
 			en = "Elusive Faerie Cache",
 			es = "Alijo de hada esquiva",
@@ -34034,6 +41795,7 @@ root("ObjectDB", {
 	},
 	[354852] = {
 		readable = "Sprouting Growth",
+		model = 973262,
 		text = {
 			en = "Sprouting Growth",
 			es = "Crecimiento floreciente",
@@ -34048,6 +41810,7 @@ root("ObjectDB", {
 	},
 	[354853] = {
 		readable = "Sprouting Growth",
+		model = 973262,
 		text = {
 			en = "Sprouting Growth",
 			es = "Crecimiento floreciente",
@@ -34062,6 +41825,7 @@ root("ObjectDB", {
 	},
 	[354856] = {
 		readable = "Slime-Coated Crate",
+		model = 3193905,
 		text = {
 			en = "Slime-Coated Crate",
 			es = "Cajón cubierto de baba",
@@ -34076,6 +41840,7 @@ root("ObjectDB", {
 	},
 	[354911] = {
 		readable = "Swollen Anima Seed",
+		model = 3158888,
 		text = {
 			en = "Swollen Anima Seed",
 			es = "Semilla de ánima hinchada",
@@ -34090,6 +41855,7 @@ root("ObjectDB", {
 	},
 	[355000] = {
 		readable = "Cache of the Night",
+		model = 3522548,
 		text = {
 			en = "Cache of the Night",
 			es = "Alijo de la noche",
@@ -34104,6 +41870,7 @@ root("ObjectDB", {
 	},
 	[355019] = {
 		readable = "Raw Dream Silk",
+		model = 242891,
 		text = {
 			en = "Raw Dream Silk",
 			es = "Seda de sueño sin refinar",
@@ -34118,6 +41885,7 @@ root("ObjectDB", {
 	},
 	[355020] = {
 		readable = "Enchanted Bough",
+		model = 3522514,
 		text = {
 			en = "Enchanted Bough",
 			es = "Rama encantada",
@@ -34132,6 +41900,7 @@ root("ObjectDB", {
 	},
 	[355021] = {
 		readable = "Fae Ornament",
+		model = 3036109,
 		text = {
 			en = "Fae Ornament",
 			es = "Ornamento de sílfide",
@@ -34146,6 +41915,7 @@ root("ObjectDB", {
 	},
 	[355035] = {
 		readable = "Treasure: House of the Chosen",
+		model = 3036549,
 		text = {
 			en = "Treasure: House of the Chosen",
 			es = "Arca rúnica de los Elegidos",
@@ -34160,6 +41930,7 @@ root("ObjectDB", {
 	},
 	[355037] = {
 		readable = "Runebound Coffer",
+		model = 3036549,
 		text = {
 			en = "Runebound Coffer",
 			es = "Arca vincularrunas",
@@ -34174,6 +41945,7 @@ root("ObjectDB", {
 	},
 	[355038] = {
 		readable = "Runebound Coffer",
+		model = 3036549,
 		text = {
 			en = "Runebound Coffer",
 			es = "Arca vincularrunas",
@@ -34188,6 +41960,7 @@ root("ObjectDB", {
 	},
 	[355040] = {
 		readable = "Rune of Rituals",
+		model = 3603419,
 		text = {
 			en = "Rune of Rituals",
 			es = "Runa de rituales",
@@ -34202,6 +41975,7 @@ root("ObjectDB", {
 	},
 	[355041] = {
 		readable = "Cache of the Moon",
+		model = 3546657,
 		text = {
 			en = "Cache of the Moon",
 			es = "Alijo de la Luna",
@@ -34216,6 +41990,7 @@ root("ObjectDB", {
 	},
 	[355048] = {
 		readable = "Rune of Rituals",
+		model = 3603419,
 		text = {
 			en = "Rune of Rituals",
 			es = "Runa de rituales",
@@ -34230,6 +42005,7 @@ root("ObjectDB", {
 	},
 	[355049] = {
 		readable = "Rune of Rituals",
+		model = 3603419,
 		text = {
 			en = "Rune of Rituals",
 			es = "Runa de rituales",
@@ -34244,6 +42020,7 @@ root("ObjectDB", {
 	},
 	[355194] = {
 		readable = "Rune of Constructs",
+		model = 3603417,
 		text = {
 			en = "Rune of Constructs",
 			es = "Runa de ensamblajes",
@@ -34258,6 +42035,7 @@ root("ObjectDB", {
 	},
 	[355195] = {
 		readable = "Rune of Constructs",
+		model = 3603417,
 		text = {
 			en = "Rune of Constructs",
 			es = "Runa de ensamblajes",
@@ -34272,6 +42050,7 @@ root("ObjectDB", {
 	},
 	[355196] = {
 		readable = "Rune of Constructs",
+		model = 3603417,
 		text = {
 			en = "Rune of Constructs",
 			es = "Runa de ensamblajes",
@@ -34286,6 +42065,7 @@ root("ObjectDB", {
 	},
 	[355286] = {
 		readable = "Memorial Offerings",
+		model = 3189120,
 		text = {
 			en = "Memorial Offerings",
 			es = "Ofrendas conmemorativas",
@@ -34300,6 +42080,7 @@ root("ObjectDB", {
 	},
 	[355296] = {
 		readable = "Bounty: Beast Control",
+		model = 3166135,
 		text = {
 			en = "Bounty: Beast Control",
 			es = "Recompensa: control de bestias",
@@ -34314,6 +42095,7 @@ root("ObjectDB", {
 	},
 	[355355] = {
 		readable = "Harmonic Chest",
+		model = 3522548,
 		text = {
 			en = "Harmonic Chest",
 			es = "Cofre armónico",
@@ -34328,6 +42110,7 @@ root("ObjectDB", {
 	},
 	[355435] = {
 		readable = "Vesper of the Silver Wind",
+		model = 3522133,
 		text = {
 			en = "Vesper of the Silver Wind",
 			es = "Campana de vísperas del viento de plata",
@@ -34342,6 +42125,7 @@ root("ObjectDB", {
 	},
 	[355449] = {
 		readable = "Gift of the Silver Wind",
+		model = 3189119,
 		text = {
 			en = "Gift of the Silver Wind",
 			es = "Obsequio del viento de plata",
@@ -34356,6 +42140,7 @@ root("ObjectDB", {
 	},
 	[355798] = {
 		readable = "Cage",
+		model = 3166684,
 		text = {
 			en = "Cage",
 			es = "Jaula",
@@ -34370,6 +42155,7 @@ root("ObjectDB", {
 	},
 	[355865] = {
 		readable = "Vat of Conspicuous Slime",
+		model = 3486912,
 		text = {
 			en = "Vat of Conspicuous Slime",
 			es = "Cuba de baba llamativa",
@@ -34384,6 +42170,7 @@ root("ObjectDB", {
 	},
 	[355872] = {
 		readable = "Stolen Jar",
+		model = 3193912,
 		text = {
 			en = "Stolen Jar",
 			es = "Tarro robado",
@@ -34398,6 +42185,7 @@ root("ObjectDB", {
 	},
 	[355880] = {
 		readable = "The Necronom-i-nom",
+		model = 3084156,
 		text = {
 			en = "The Necronom-i-nom",
 			es = "El Necronomi-ñam",
@@ -34412,6 +42200,7 @@ root("ObjectDB", {
 	},
 	[355886] = {
 		readable = "Plaguefallen Chest",
+		model = 3638167,
 		text = {
 			en = "Plaguefallen Chest",
 			es = "Cofre bajapestado",
@@ -34426,6 +42215,7 @@ root("ObjectDB", {
 	},
 	[355947] = {
 		readable = "Glutharn's Stash",
+		model = 3638167,
 		text = {
 			en = "Glutharn's Stash",
 			es = "Alijo de Glutharn",
@@ -34440,6 +42230,7 @@ root("ObjectDB", {
 	},
 	[355980] = {
 		readable = "Ritualist's Cache",
+		model = 3638167,
 		text = {
 			en = "Ritualist's Cache",
 			es = "Alijo de ritualista",
@@ -34454,6 +42245,7 @@ root("ObjectDB", {
 	},
 	[356535] = {
 		readable = "Runespeaker's Trove",
+		model = 3638167,
 		text = {
 			en = "Runespeaker's Trove",
 			es = "Tesoro de hablarrunas",
@@ -34468,6 +42260,7 @@ root("ObjectDB", {
 	},
 	[356555] = {
 		readable = "Eurydea's Necklace",
+		model = 3148980,
 		text = {
 			en = "Eurydea's Necklace",
 			es = "Collar de Eurydea",
@@ -34482,18 +42275,22 @@ root("ObjectDB", {
 	},
 	[356693] = {
 		readable = "Baroness Vashj's Extravagant Tribute",
+		model = 3621781,
 		text = {
 			en = "Baroness Vashj's Extravagant Tribute",
 			es = "Tributo exorbitante de la baronesa Vashj",
 			de = "Baronin Vashjs extravaganter Tribut",
 			fr = "Tribut extravagant de la baronne Vashj",
+			it = "[Baroness Vashj's Extravagant Tribute]",
 			pt = "Tributo Extravagante da Baronesa Vashj",
 			ru = "Экстравагантные дары баронессы Вайш",
+			ko = "[Baroness Vashj's Extravagant Tribute]",
 			cn = "瓦丝琪女男爵的奢华礼品",
 		},
 	},
 	[356697] = {
 		readable = "Alexandros Mograine's Extravagant Tribute",
+		model = 3621781,
 		text = {
 			en = "Alexandros Mograine's Extravagant Tribute",
 			es = "Tributo exorbitante de Alexandros Mograine",
@@ -34508,6 +42305,7 @@ root("ObjectDB", {
 	},
 	[356700] = {
 		readable = "Grandmaster Vole's Extravagant Tribute",
+		model = 3621781,
 		text = {
 			en = "Grandmaster Vole's Extravagant Tribute",
 			es = "Tributo exorbitante del gran maestro Vole",
@@ -34516,11 +42314,13 @@ root("ObjectDB", {
 			it = "Tributo Smodato del Gran Maestro Vole",
 			pt = "Tributo Extravagante do Grão-mestre Vole",
 			ru = "Экстравагантные дары великого мастера Воула",
+			ko = "[Grandmaster Vole's Extravagant Tribute]",
 			cn = "沃尔大师的奢华礼品",
 		},
 	},
 	[356705] = {
 		readable = "Plague Deviser Marileth's Extravagant Tribute",
+		model = 3621781,
 		text = {
 			en = "Plague Deviser Marileth's Extravagant Tribute",
 			es = "Tributo exorbitante del inventor de pestes Marileth",
@@ -34529,11 +42329,13 @@ root("ObjectDB", {
 			it = "Tributo Smodato dell'Architetto della Piaga Marileth",
 			pt = "Tributo Extravagante do Arquiteto da Peste Marileth",
 			ru = "Экстравагантные дары изобретателя чумы Марилета",
+			ko = "[Plague Deviser Marileth's Extravagant Tribute]",
 			cn = "魔药设计师马里莱斯的奢华礼品",
 		},
 	},
 	[356709] = {
 		readable = "Lady Moonberry's Extravagant Tribute",
+		model = 3522547,
 		text = {
 			en = "Lady Moonberry's Extravagant Tribute",
 			es = "Tributo exorbitante de lady Bayalunar",
@@ -34548,6 +42350,7 @@ root("ObjectDB", {
 	},
 	[356712] = {
 		readable = "Hunt-Captain Korayn's Extravagant Tribute",
+		model = 3522547,
 		text = {
 			en = "Hunt-Captain Korayn's Extravagant Tribute",
 			es = "Tributo exorbitante de la capitana de caza Korayn",
@@ -34562,11 +42365,13 @@ root("ObjectDB", {
 	},
 	[356716] = {
 		readable = "Droman Aliothe's Extravagant Tribute",
+		model = 3522547,
 		text = {
 			en = "Droman Aliothe's Extravagant Tribute",
 			es = "Tributo exorbitante de la droman Aliothe",
 			de = "Dromanin Aliothes extravaganter Tribut",
 			fr = "Tribut extravagant de la dromane Aliothe",
+			it = "[Droman Aliothe's Extravagant Tribute]",
 			pt = "Tributo Extravagante da Droman Aliothe",
 			ru = "Экстравагантные дары дромана Алиот",
 			ko = "수풀사령관 알리오테의 호화로운 공물",
@@ -34575,11 +42380,13 @@ root("ObjectDB", {
 	},
 	[356720] = {
 		readable = "Choofa's Extravagant Tribute",
+		model = 3522547,
 		text = {
 			en = "Choofa's Extravagant Tribute",
 			es = "Tributo exorbitante de Choofa",
 			de = "Choofas extravaganter Tribut",
 			fr = "Tribut extravagant de Choufa",
+			it = "[Choofa's Extravagant Tribute]",
 			pt = "Tributo Extravagante de Xufa",
 			ru = "Экстравагантные дары Чуфы",
 			ko = "츄파의 호화로운 공물",
@@ -34588,18 +42395,22 @@ root("ObjectDB", {
 	},
 	[356725] = {
 		readable = "Polemarch Adrestes' Extravagant Tribute",
+		model = 3189119,
 		text = {
 			en = "Polemarch Adrestes' Extravagant Tribute",
 			es = "Tributo exorbitante del polemarca Adrestes",
 			de = "Polemarchos Adrestes' extravaganter Tribut",
 			fr = "Tribut extravagant du marchedroit Adrestès",
+			it = "[Polemarch Adrestes' Extravagant Tribute]",
 			pt = "Tributo Extravagante do Polemarco Adrestes",
 			ru = "Экстравагантные дары полемарха Адреста",
+			ko = "[Polemarch Adrestes' Extravagant Tribute]",
 			cn = "文官阿得赖斯提斯的奢华供品",
 		},
 	},
 	[356728] = {
 		readable = "Mikanikos' Extravagant Tribute",
+		model = 3189119,
 		text = {
 			en = "Mikanikos' Extravagant Tribute",
 			es = "Tributo exorbitante de Mikanikos",
@@ -34614,11 +42425,13 @@ root("ObjectDB", {
 	},
 	[356733] = {
 		readable = "Kleia and Pelagos' Extravagant Tribute",
+		model = 3189119,
 		text = {
 			en = "Kleia and Pelagos' Extravagant Tribute",
 			es = "Tributo exorbitante de Kleia y Pelagos",
 			de = "Kleias und Pelagos' extravaganter Tribut",
 			fr = "Tribut extravagant de Kléia et Pélagos",
+			it = "[Kleia and Pelagos' Extravagant Tribute]",
 			pt = "Tributo Extravagante de Kleia e Pelagos",
 			ru = "Экстравагантные дары Клейи и Пелагия",
 			ko = "클레이아와 펠라고스의 호화로운 공물",
@@ -34627,6 +42440,7 @@ root("ObjectDB", {
 	},
 	[356737] = {
 		readable = "Sika's Extravagant Tribute",
+		model = 3189119,
 		text = {
 			en = "Sika's Extravagant Tribute",
 			es = "Tributo exorbitante de Sika",
@@ -34641,11 +42455,13 @@ root("ObjectDB", {
 	},
 	[356741] = {
 		readable = "The Countess' Extravagant Tribute",
+		model = 3595030,
 		text = {
 			en = "The Countess' Extravagant Tribute",
 			es = "Tributo exorbitante de la condesa",
 			de = "Extravaganter Tribut der Gräfin",
 			fr = "Tribut extravagant de la comtesse",
+			it = "[The Countess' Extravagant Tribute]",
 			pt = "Tributo Extravagante da Condessa",
 			ru = "Экстравагантные дары Графини",
 			ko = "백작의 호화로운 공물",
@@ -34654,11 +42470,13 @@ root("ObjectDB", {
 	},
 	[356744] = {
 		readable = "Rendle and Cudgelface's Extravagant Tribute",
+		model = 3595030,
 		text = {
 			en = "Rendle and Cudgelface's Extravagant Tribute",
 			es = "Tributo exorbitante de Rendle y Caragarrote",
 			de = "Rendels und Knüppelfratzes extravaganter Tribut",
 			fr = "Tribut extravagant de Rondel et Férul",
+			it = "[Rendle and Cudgelface's Extravagant Tribute]",
 			pt = "Tributo Extravagante de Rasgão e Cara-de-clava",
 			ru = "Экстравагантные дары Рендла и Дуборыла",
 			ko = "렌들과 곤봉얼굴의 호화로운 공물",
@@ -34667,11 +42485,13 @@ root("ObjectDB", {
 	},
 	[356748] = {
 		readable = "Stonehead's Extravagant Tribute",
+		model = 3595030,
 		text = {
 			en = "Stonehead's Extravagant Tribute",
 			es = "Tributo exorbitante de Cabeza Pétrea",
 			de = "Steinkopfs extravaganter Tribut",
 			fr = "Tribut extravagant de Tête-de-Caillasse",
+			it = "[Stonehead's Extravagant Tribute]",
 			pt = "Tributo Extravagante de Cabeça-de-pedra",
 			ru = "Экстравагантные дары Камнелба",
 			ko = "바위머리의 호화로운 공물",
@@ -34680,6 +42500,7 @@ root("ObjectDB", {
 	},
 	[356752] = {
 		readable = "Cryptkeeper Kassir's Extravagant Tribute",
+		model = 3595030,
 		text = {
 			en = "Cryptkeeper Kassir's Extravagant Tribute",
 			es = "Tributo exorbitante del guardacriptas Kassir",
@@ -34694,6 +42515,7 @@ root("ObjectDB", {
 	},
 	[356757] = {
 		readable = "Greed's Desire",
+		model = 3595030,
 		text = {
 			en = "Greed's Desire",
 			es = "Deseo de avaricia",
@@ -34708,6 +42530,7 @@ root("ObjectDB", {
 	},
 	[356818] = {
 		readable = "Penitence of Purity",
+		model = 2994771,
 		text = {
 			en = "Penitence of Purity",
 			es = "Penitencia de pureza",
@@ -34722,6 +42545,7 @@ root("ObjectDB", {
 	},
 	[356820] = {
 		readable = "Large Lunarlight Pod",
+		model = 3053305,
 		text = {
 			en = "Large Lunarlight Pod",
 			es = "Vaina de luz lunar grande",
@@ -34736,6 +42560,7 @@ root("ObjectDB", {
 	},
 	[356823] = {
 		readable = "Cloudwalker's Coffer",
+		model = 3189120,
 		text = {
 			en = "Cloudwalker's Coffer",
 			es = "Arca de caminanubes",
@@ -34750,6 +42575,7 @@ root("ObjectDB", {
 	},
 	[357228] = {
 		readable = "Forgotten Chest",
+		model = 3597238,
 		text = {
 			en = "Forgotten Chest",
 			es = "Cofre olvidado",
@@ -34764,6 +42590,7 @@ root("ObjectDB", {
 	},
 	[357229] = {
 		readable = "Forgotten Chest",
+		model = 3597238,
 		text = {
 			en = "Forgotten Chest",
 			es = "Cofre olvidado",
@@ -34778,6 +42605,7 @@ root("ObjectDB", {
 	},
 	[357230] = {
 		readable = "Forgotten Chest",
+		model = 3597238,
 		text = {
 			en = "Forgotten Chest",
 			es = "Cofre olvidado",
@@ -34792,6 +42620,7 @@ root("ObjectDB", {
 	},
 	[357231] = {
 		readable = "Forgotten Chest",
+		model = 3597238,
 		text = {
 			en = "Forgotten Chest",
 			es = "Cofre olvidado",
@@ -34806,6 +42635,7 @@ root("ObjectDB", {
 	},
 	[357232] = {
 		readable = "Forgotten Chest",
+		model = 3597238,
 		text = {
 			en = "Forgotten Chest",
 			es = "Cofre olvidado",
@@ -34820,6 +42650,7 @@ root("ObjectDB", {
 	},
 	[357233] = {
 		readable = "Forgotten Chest",
+		model = 3597238,
 		text = {
 			en = "Forgotten Chest",
 			es = "Cofre olvidado",
@@ -34834,6 +42665,7 @@ root("ObjectDB", {
 	},
 	[357234] = {
 		readable = "Forgotten Chest",
+		model = 3597238,
 		text = {
 			en = "Forgotten Chest",
 			es = "Cofre olvidado",
@@ -34848,6 +42680,7 @@ root("ObjectDB", {
 	},
 	[357235] = {
 		readable = "Forgotten Chest",
+		model = 3597238,
 		text = {
 			en = "Forgotten Chest",
 			es = "Cofre olvidado",
@@ -34862,6 +42695,7 @@ root("ObjectDB", {
 	},
 	[357236] = {
 		readable = "Forgotten Chest",
+		model = 3597238,
 		text = {
 			en = "Forgotten Chest",
 			es = "Cofre olvidado",
@@ -34876,6 +42710,7 @@ root("ObjectDB", {
 	},
 	[357237] = {
 		readable = "Forgotten Chest",
+		model = 3597238,
 		text = {
 			en = "Forgotten Chest",
 			es = "Cofre olvidado",
@@ -34890,6 +42725,7 @@ root("ObjectDB", {
 	},
 	[357238] = {
 		readable = "Forgotten Chest",
+		model = 3597238,
 		text = {
 			en = "Forgotten Chest",
 			es = "Cofre olvidado",
@@ -34904,6 +42740,7 @@ root("ObjectDB", {
 	},
 	[357246] = {
 		readable = "Tattered Scroll",
+		model = 3036568,
 		text = {
 			en = "Tattered Scroll",
 			es = "Pergamino ajado",
@@ -34918,6 +42755,7 @@ root("ObjectDB", {
 	},
 	[357467] = {
 		readable = "Forbidden Ink",
+		model = 3152071,
 		text = {
 			en = "Forbidden Ink",
 			es = "Tinta prohibida",
@@ -34932,6 +42770,7 @@ root("ObjectDB", {
 	},
 	[357487] = {
 		readable = "Stylish Parasol",
+		model = 3641682,
 		text = {
 			en = "Stylish Parasol",
 			es = "Parasol elegante",
@@ -34946,6 +42785,7 @@ root("ObjectDB", {
 	},
 	[357515] = {
 		readable = "Sack of Oats",
+		model = 1709134,
 		text = {
 			en = "Sack of Oats",
 			es = "Saco de avena",
@@ -34960,6 +42800,7 @@ root("ObjectDB", {
 	},
 	[357526] = {
 		readable = "Empty Water Bucket",
+		model = 1709139,
 		text = {
 			en = "Empty Water Bucket",
 			es = "Cubo de agua vacío",
@@ -34974,6 +42815,7 @@ root("ObjectDB", {
 	},
 	[357541] = {
 		readable = "Discarded Horseshoe",
+		model = 929369,
 		text = {
 			en = "Discarded Horseshoe",
 			es = "Herradura desechada",
@@ -34988,6 +42830,7 @@ root("ObjectDB", {
 	},
 	[357565] = {
 		readable = "Forgotten Angler's Rod",
+		model = 243299,
 		text = {
 			en = "Forgotten Angler's Rod",
 			es = "Caña de pescador olvidada",
@@ -35002,6 +42845,7 @@ root("ObjectDB", {
 	},
 	[357572] = {
 		readable = "Rapier of the Fearless",
+		model = 3502045,
 		text = {
 			en = "Rapier of the Fearless",
 			es = "Estoque del intrépido",
@@ -35016,6 +42860,7 @@ root("ObjectDB", {
 	},
 	[357584] = {
 		readable = "Vyrtha's Dredglaive",
+		model = 3685406,
 		text = {
 			en = "Vyrtha's Dredglaive",
 			es = "Gujaterrible de Vyrtha",
@@ -35030,6 +42875,7 @@ root("ObjectDB", {
 	},
 	[357683] = {
 		readable = "Outcast's Makeshift Muckpool",
+		model = 3056785,
 		text = {
 			en = "Outcast's Makeshift Muckpool",
 			es = "Charco mugroso improvisado de desterrado",
@@ -35044,6 +42890,7 @@ root("ObjectDB", {
 	},
 	[357697] = {
 		readable = "Taskmaster's Trove",
+		model = 3595030,
 		text = {
 			en = "Taskmaster's Trove",
 			es = "Tesoro del capataz",
@@ -35058,6 +42905,7 @@ root("ObjectDB", {
 	},
 	[357726] = {
 		readable = "Broken Spear",
+		model = 979112,
 		text = {
 			en = "Broken Spear",
 			es = "Lanza rota",
@@ -35073,6 +42921,7 @@ root("ObjectDB", {
 	[357758] = {
 		readable = "Plague Barrel",
 		icon = "Interface/Icons/ability_vehicle_plaguebarrel",
+		model = 194845,
 		text = {
 			en = "Plague Barrel",
 			es = "Barril de peste",
@@ -35081,11 +42930,13 @@ root("ObjectDB", {
 			it = "Barile di Piaga",
 			pt = "Barril de Peste",
 			ru = "Бочонок с чумой",
+			ko = "[Plague Barrel]",
 			cn = "魔药桶",
 		},
 	},
 	[357771] = {
 		readable = "Burried Cache",
+		model = 3522548,
 		text = {
 			en = "Burried Cache",
 			es = "Alijo enterrado",
@@ -35100,6 +42951,7 @@ root("ObjectDB", {
 	},
 	[357937] = {
 		readable = "Burried Cache",
+		model = 3597238,
 		text = {
 			en = "Burried Cache",
 			es = "Alijo enterrado",
@@ -35114,6 +42966,7 @@ root("ObjectDB", {
 	},
 	[358298] = {
 		readable = "Forbidden Chamber Lockbox",
+		model = 3597238,
 		text = {
 			en = "Forbidden Chamber Lockbox",
 			es = "Arcón de cámara prohibida",
@@ -35128,6 +42981,7 @@ root("ObjectDB", {
 	},
 	[358315] = {
 		readable = "Skeletal Hand Fragments",
+		model = 1064149,
 		text = {
 			en = "Skeletal Hand Fragments",
 			es = "Fragmentos de mano esquelética",
@@ -35142,6 +42996,7 @@ root("ObjectDB", {
 	},
 	[358318] = {
 		readable = "R. Suavel Dredger Portrait",
+		model = 3152066,
 		text = {
 			en = "R. Suavel Dredger Portrait",
 			es = "Retrato de dragador de R. Suavel",
@@ -35150,10 +43005,13 @@ root("ObjectDB", {
 			it = "Ritratto del Dragatore di R. Suavel",
 			pt = "Retrato do Dragador R. Suavão",
 			ru = "\"Портрет землероя\" Р. Лоска",
+			ko = "[R. Suavel Dredger Portrait]",
+			cn = "[R. Suavel Dredger Portrait]",
 		},
 	},
 	[358319] = {
 		readable = "Sorceror's Note",
+		model = 1331239,
 		text = {
 			en = "Sorceror's Note",
 			es = "Nota de hechicero",
@@ -35168,6 +43026,7 @@ root("ObjectDB", {
 	},
 	[358382] = {
 		readable = "Wanted: Chelicera",
+		model = 3756062,
 		text = {
 			en = "Wanted: Chelicera",
 			es = "Se busca: Quelícera",
@@ -35182,6 +43041,7 @@ root("ObjectDB", {
 	},
 	[358398] = {
 		readable = "Lost Journal",
+		model = 3533100,
 		text = {
 			en = "Lost Journal",
 			es = "Diario perdido",
@@ -35196,6 +43056,7 @@ root("ObjectDB", {
 	},
 	[358399] = {
 		readable = "Six-League Pack",
+		model = 3607333,
 		text = {
 			en = "Six-League Pack",
 			es = "Talega de seis leguas",
@@ -35210,6 +43071,7 @@ root("ObjectDB", {
 	},
 	[358531] = {
 		readable = "Giant Cache of Epic Treasure",
+		model = 200135,
 		text = {
 			en = "Giant Cache of Epic Treasure",
 			es = "Alijo gigantesco de tesoro épico",
@@ -35224,6 +43086,7 @@ root("ObjectDB", {
 	},
 	[358533] = {
 		readable = "Forgotten Supplies",
+		model = 3450717,
 		text = {
 			en = "Forgotten Supplies",
 			es = "Suministros olvidados",
@@ -35238,6 +43101,7 @@ root("ObjectDB", {
 	},
 	[358855] = {
 		readable = "Damaged Safe Fall Pack",
+		model = 534613,
 		text = {
 			en = "Damaged Safe Fall Pack",
 			es = "Mochila de Caída segura dañada",
@@ -35252,6 +43116,7 @@ root("ObjectDB", {
 	},
 	[360054] = {
 		readable = "Sticky Cat",
+		model = 3730958,
 		text = {
 			en = "Sticky Cat",
 			es = "Gato pegajoso",
@@ -35260,11 +43125,13 @@ root("ObjectDB", {
 			it = "Gatto Appiccicoso",
 			pt = "Gato Grudento",
 			ru = "Липкая кошка",
+			ko = "[Sticky Cat]",
 			cn = "黏黏猫",
 		},
 	},
 	[362489] = {
 		readable = "Elysian Decree",
+		model = 3045977,
 		text = {
 			en = "Elysian Decree",
 			es = "Decreto elisio",
@@ -35279,6 +43146,7 @@ root("ObjectDB", {
 	},
 	[364483] = {
 		readable = "Empty Nightcap Cask",
+		model = 3036556,
 		text = {
 			en = "Empty Nightcap Cask",
 			es = "Tonel de trago vacío",
@@ -35293,6 +43161,7 @@ root("ObjectDB", {
 	},
 	[364899] = {
 		readable = "Crystallized Stygia",
+		model = 3270074,
 		text = {
 			en = "Crystallized Stygia",
 			es = "Estigia cristalizada",
@@ -35307,6 +43176,7 @@ root("ObjectDB", {
 	},
 	[364926] = {
 		readable = "Runeforged Shackles",
+		model = 3579718,
 		text = {
 			en = "Runeforged Shackles",
 			es = "Grilletes forjados con runas",
@@ -35321,6 +43191,7 @@ root("ObjectDB", {
 	},
 	[364932] = {
 		readable = "Blazing Ingot",
+		model = 3642574,
 		text = {
 			en = "Blazing Ingot",
 			es = "Lingote llameante",
@@ -35335,6 +43206,7 @@ root("ObjectDB", {
 	},
 	[364937] = {
 		readable = "Phasic Siphoner",
+		model = 1664985,
 		text = {
 			en = "Phasic Siphoner",
 			es = "Succionador fásico",
@@ -35349,6 +43221,7 @@ root("ObjectDB", {
 	},
 	[364987] = {
 		readable = "Broker Journal",
+		model = 382931,
 		text = {
 			en = "Broker Journal",
 			es = "Diario de especulador",
@@ -35363,6 +43236,7 @@ root("ObjectDB", {
 	},
 	[364994] = {
 		readable = "Spectral Pick",
+		model = 1634862,
 		text = {
 			en = "Spectral Pick",
 			es = "Pico espectral",
@@ -35377,6 +43251,7 @@ root("ObjectDB", {
 	},
 	[365084] = {
 		readable = "Tormentor's Pike",
+		model = 3677220,
 		text = {
 			en = "Tormentor's Pike",
 			es = "Pica de torturador",
@@ -35391,6 +43266,7 @@ root("ObjectDB", {
 	},
 	[365093] = {
 		readable = "Theotar's Caroling Books",
+		model = 576349,
 		text = {
 			en = "Theotar's Caroling Books",
 			es = "Libros de villancicos de Theotar",
@@ -35399,11 +43275,13 @@ root("ObjectDB", {
 			it = "Libri di Canti di Teotar",
 			pt = "Livros de Canções de Theotar",
 			ru = "Книга праздничных гимнов Теотара",
+			ko = "[Theotar's Caroling Books]",
 			cn = "西塔尔的欢唱歌谱",
 		},
 	},
 	[368205] = {
 		readable = "Mawsworn Cache",
+		model = 3677216,
 		text = {
 			en = "Mawsworn Cache",
 			es = "Alijo jurafauces",
@@ -35418,6 +43296,7 @@ root("ObjectDB", {
 	},
 	[368206] = {
 		readable = "Mawsworn Cache",
+		model = 3677216,
 		text = {
 			en = "Mawsworn Cache",
 			es = "Alijo jurafauces",
@@ -35432,6 +43311,7 @@ root("ObjectDB", {
 	},
 	[368207] = {
 		readable = "Mawsworn Cache",
+		model = 3677216,
 		text = {
 			en = "Mawsworn Cache",
 			es = "Alijo jurafauces",
@@ -35446,6 +43326,7 @@ root("ObjectDB", {
 	},
 	[368208] = {
 		readable = "Mawsworn Cache",
+		model = 3677216,
 		text = {
 			en = "Mawsworn Cache",
 			es = "Alijo jurafauces",
@@ -35460,6 +43341,7 @@ root("ObjectDB", {
 	},
 	[368213] = {
 		readable = "Mawsworn Cache",
+		model = 3677216,
 		text = {
 			en = "Mawsworn Cache",
 			es = "Alijo jurafauces",
@@ -35474,6 +43356,7 @@ root("ObjectDB", {
 	},
 	[368214] = {
 		readable = "Mawsworn Cache",
+		model = 3677216,
 		text = {
 			en = "Mawsworn Cache",
 			es = "Alijo jurafauces",
@@ -35502,6 +43385,7 @@ root("ObjectDB", {
 	},
 	[368645] = {
 		readable = "Rift Hidden Cache",
+		model = 3677216,
 		text = {
 			en = "Rift Hidden Cache",
 			es = "Alijo oculto de falla",
@@ -35516,6 +43400,7 @@ root("ObjectDB", {
 	},
 	[368646] = {
 		readable = "Rift Hidden Cache",
+		model = 3677216,
 		text = {
 			en = "Rift Hidden Cache",
 			es = "Alijo oculto de falla",
@@ -35530,6 +43415,7 @@ root("ObjectDB", {
 	},
 	[368648] = {
 		readable = "Rift Hidden Cache",
+		model = 3677216,
 		text = {
 			en = "Rift Hidden Cache",
 			es = "Alijo oculto de falla",
@@ -35544,6 +43430,7 @@ root("ObjectDB", {
 	},
 	[368649] = {
 		readable = "Rift Hidden Cache",
+		model = 3677216,
 		text = {
 			en = "Rift Hidden Cache",
 			es = "Alijo oculto de falla",
@@ -35558,6 +43445,7 @@ root("ObjectDB", {
 	},
 	[368650] = {
 		readable = "Rift Hidden Cache",
+		model = 3677216,
 		text = {
 			en = "Rift Hidden Cache",
 			es = "Alijo oculto de falla",
@@ -35572,6 +43460,7 @@ root("ObjectDB", {
 	},
 	[368653] = {
 		readable = "Etherwyrm Cage",
+		model = 3677218,
 		text = {
 			en = "Etherwyrm Cage",
 			es = "Jaula de vermis de éter",
@@ -35586,6 +43475,7 @@ root("ObjectDB", {
 	},
 	[368663] = {
 		readable = "Lil'Abom's Right Hand",
+		model = 3036719,
 		text = {
 			en = "Lil'Abom's Right Hand",
 			es = "Mano derecha de la pequeña abominación",
@@ -35600,6 +43490,7 @@ root("ObjectDB", {
 	},
 	[368665] = {
 		readable = "Lil'Abom's Spare Arm",
+		model = 3566592,
 		text = {
 			en = "Lil'Abom's Spare Arm",
 			es = "Brazo de repuesto de la pequeña abominación",
@@ -35614,6 +43505,7 @@ root("ObjectDB", {
 	},
 	[368666] = {
 		readable = "Lil'Abom's Head",
+		model = 3605056,
 		text = {
 			en = "Lil'Abom's Head",
 			es = "Cabeza de la pequeña abominación",
@@ -35628,6 +43520,7 @@ root("ObjectDB", {
 	},
 	[368667] = {
 		readable = "Lil'Abom's Torso",
+		model = 3036717,
 		text = {
 			en = "Lil'Abom's Torso",
 			es = "Torso de la pequeña abominación",
@@ -35642,6 +43535,7 @@ root("ObjectDB", {
 	},
 	[368668] = {
 		readable = "Lil'Abom's Trunk",
+		model = 3566594,
 		text = {
 			en = "Lil'Abom's Trunk",
 			es = "Tronco de la pequeña abominación",
@@ -35656,6 +43550,7 @@ root("ObjectDB", {
 	},
 	[368772] = {
 		readable = "Sigilscored Scroll",
+		model = 3836244,
 		text = {
 			en = "Sigilscored Scroll",
 			es = "Pergamino con marca de sigilo",
@@ -35670,6 +43565,7 @@ root("ObjectDB", {
 	},
 	[368876] = {
 		readable = "Mawsworn Cache",
+		model = 3677216,
 		text = {
 			en = "Mawsworn Cache",
 			es = "Alijo jurafauces",
@@ -35684,6 +43580,7 @@ root("ObjectDB", {
 	},
 	[368935] = {
 		readable = "Sinfall Screecher Cage",
+		model = 3677218,
 		text = {
 			en = "Sinfall Screecher Cage",
 			es = "Jaula de estridador del Salto del Pecado",
@@ -35698,6 +43595,7 @@ root("ObjectDB", {
 	},
 	[368946] = {
 		readable = "Stolen Anima Vessel",
+		model = 3993862,
 		text = {
 			en = "Stolen Anima Vessel",
 			es = "Receptáculo de ánima robado",
@@ -35712,6 +43610,7 @@ root("ObjectDB", {
 	},
 	[368948] = {
 		readable = "Stolen Anima Vessel",
+		model = 3993862,
 		text = {
 			en = "Stolen Anima Vessel",
 			es = "Receptáculo de ánima robado",
@@ -35726,6 +43625,7 @@ root("ObjectDB", {
 	},
 	[368949] = {
 		readable = "Stolen Anima Vessel",
+		model = 3993862,
 		text = {
 			en = "Stolen Anima Vessel",
 			es = "Receptáculo de ánima robado",
@@ -35740,6 +43640,7 @@ root("ObjectDB", {
 	},
 	[368950] = {
 		readable = "Stolen Anima Vessel",
+		model = 3993862,
 		text = {
 			en = "Stolen Anima Vessel",
 			es = "Receptáculo de ánima robado",
@@ -35754,6 +43655,7 @@ root("ObjectDB", {
 	},
 	[368951] = {
 		readable = "Stolen Anima Vessel",
+		model = 3993862,
 		text = {
 			en = "Stolen Anima Vessel",
 			es = "Receptáculo de ánima robado",
@@ -35768,6 +43670,7 @@ root("ObjectDB", {
 	},
 	[368952] = {
 		readable = "Stolen Anima Vessel",
+		model = 3993862,
 		text = {
 			en = "Stolen Anima Vessel",
 			es = "Receptáculo de ánima robado",
@@ -35782,6 +43685,7 @@ root("ObjectDB", {
 	},
 	[368953] = {
 		readable = "Stolen Anima Vessel",
+		model = 3993862,
 		text = {
 			en = "Stolen Anima Vessel",
 			es = "Receptáculo de ánima robado",
@@ -35796,6 +43700,7 @@ root("ObjectDB", {
 	},
 	[369129] = {
 		readable = "Nilganihmaht's Gold Band",
+		model = 3718234,
 		text = {
 			en = "Nilganihmaht's Gold Band",
 			es = "Sortija de oro de Nilganihmaht",
@@ -35810,6 +43715,7 @@ root("ObjectDB", {
 	},
 	[369132] = {
 		readable = "Domination Sealed Chest",
+		model = 3677216,
 		text = {
 			en = "Domination Sealed Chest",
 			es = "Cofre sellado de dominación",
@@ -35824,6 +43730,7 @@ root("ObjectDB", {
 	},
 	[369133] = {
 		readable = "Domination Seal #1",
+		model = 3609723,
 		text = {
 			en = "Domination Seal #1",
 			es = "Sello de dominación #1",
@@ -35838,6 +43745,7 @@ root("ObjectDB", {
 	},
 	[369134] = {
 		readable = "Domination Sealed Cage",
+		model = 3677218,
 		text = {
 			en = "Domination Sealed Cage",
 			es = "Jaula sellada de dominación",
@@ -35852,6 +43760,7 @@ root("ObjectDB", {
 	},
 	[369135] = {
 		readable = "Domination Seal #2",
+		model = 3609723,
 		text = {
 			en = "Domination Seal #2",
 			es = "Sello de dominación #2",
@@ -35866,6 +43775,7 @@ root("ObjectDB", {
 	},
 	[369138] = {
 		readable = "Domination Chest Seal",
+		model = 3609723,
 		text = {
 			en = "Domination Chest Seal",
 			es = "Sello de cofre de dominación",
@@ -35880,6 +43790,7 @@ root("ObjectDB", {
 	},
 	[369141] = {
 		readable = "Mawsworn Cache",
+		model = 3677216,
 		text = {
 			en = "Mawsworn Cache",
 			es = "Alijo jurafauces",
@@ -35894,6 +43805,7 @@ root("ObjectDB", {
 	},
 	[369143] = {
 		readable = "Quartered Ancient Ring",
+		model = 797815,
 		text = {
 			en = "Quartered Ancient Ring",
 			es = "Anillo antiguo agrietado",
@@ -35908,6 +43820,7 @@ root("ObjectDB", {
 	},
 	[369144] = {
 		readable = "The Harrower's Key Ring",
+		model = 970210,
 		text = {
 			en = "The Harrower's Key Ring",
 			es = "Llavero de la Lacerante",
@@ -35922,6 +43835,7 @@ root("ObjectDB", {
 	},
 	[369145] = {
 		readable = "Helgarde Supply Cache",
+		model = 3677216,
 		text = {
 			en = "Helgarde Supply Cache",
 			es = "Alijo de suministros de Helgarde",
@@ -35936,6 +43850,7 @@ root("ObjectDB", {
 	},
 	[369148] = {
 		readable = "Glittering Nest Material",
+		model = 3022959,
 		text = {
 			en = "Glittering Nest Material",
 			es = "Material de nido relumbrante",
@@ -35950,6 +43865,7 @@ root("ObjectDB", {
 	},
 	[369149] = {
 		readable = "Forgotten Feather",
+		model = 4037308,
 		text = {
 			en = "Forgotten Feather",
 			es = "Pluma olvidada",
@@ -35964,6 +43880,7 @@ root("ObjectDB", {
 	},
 	[369172] = {
 		readable = "Lost Memento",
+		model = 3836262,
 		text = {
 			en = "Lost Memento",
 			es = "Recuerdo perdido",
@@ -35978,6 +43895,7 @@ root("ObjectDB", {
 	},
 	[369183] = {
 		readable = "Dislodged Nest",
+		model = 1605420,
 		text = {
 			en = "Dislodged Nest",
 			es = "Nido desprendido",
@@ -35992,6 +43910,7 @@ root("ObjectDB", {
 	},
 	[369185] = {
 		readable = "Korthian Relic Box",
+		model = 4093879,
 		text = {
 			en = "Korthian Relic Box",
 			es = "Caja de reliquias korthiana",
@@ -36006,6 +43925,7 @@ root("ObjectDB", {
 	},
 	[369194] = {
 		readable = "Anima Laden Egg",
+		model = 1281115,
 		text = {
 			en = "Anima Laden Egg",
 			es = "Huevo cargado de ánima",
@@ -36020,6 +43940,7 @@ root("ObjectDB", {
 	},
 	[369204] = {
 		readable = "Displaced Relic",
+		model = 3670966,
 		text = {
 			en = "Displaced Relic",
 			es = "Reliquia desplazada",
@@ -36034,6 +43955,7 @@ root("ObjectDB", {
 	},
 	[369216] = {
 		readable = "Helsworn Chest",
+		model = 3677216,
 		text = {
 			en = "Helsworn Chest",
 			es = "Cofre jurainfierno",
@@ -36048,6 +43970,7 @@ root("ObjectDB", {
 	},
 	[369224] = {
 		readable = "Jeweled Heart of Ezekiel",
+		model = 249606,
 		text = {
 			en = "Jeweled Heart of Ezekiel",
 			es = "Corazón enjoyado de Ezekiel",
@@ -36062,6 +43985,7 @@ root("ObjectDB", {
 	},
 	[369225] = {
 		readable = "Infested Vestige",
+		model = 3846066,
 		text = {
 			en = "Infested Vestige",
 			es = "Vestigio infectado",
@@ -36076,6 +44000,7 @@ root("ObjectDB", {
 	},
 	[369227] = {
 		readable = "Stolen Anima Vessel",
+		model = 3993862,
 		text = {
 			en = "Stolen Anima Vessel",
 			es = "Receptáculo de ánima robado",
@@ -36090,6 +44015,7 @@ root("ObjectDB", {
 	},
 	[369232] = {
 		readable = "Offering Box",
+		model = 3998009,
 		text = {
 			en = "Offering Box",
 			es = "Caja de ofrendas",
@@ -36104,6 +44030,7 @@ root("ObjectDB", {
 	},
 	[369235] = {
 		readable = "Stolen Anima Vessel",
+		model = 3993862,
 		text = {
 			en = "Stolen Anima Vessel",
 			es = "Receptáculo de ánima robado",
@@ -36118,6 +44045,7 @@ root("ObjectDB", {
 	},
 	[369236] = {
 		readable = "Stolen Anima Vessel",
+		model = 3993862,
 		text = {
 			en = "Stolen Anima Vessel",
 			es = "Receptáculo de ánima robado",
@@ -36132,6 +44060,7 @@ root("ObjectDB", {
 	},
 	[369245] = {
 		readable = "Korthian Relic Box",
+		model = 4093879,
 		text = {
 			en = "Korthian Relic Box",
 			es = "Caja de reliquias korthiana",
@@ -36146,6 +44075,7 @@ root("ObjectDB", {
 	},
 	[369292] = {
 		readable = "Relic Cache",
+		model = 3189120,
 		text = {
 			en = "Relic Cache",
 			es = "Alijo de reliquias",
@@ -36160,6 +44090,7 @@ root("ObjectDB", {
 	},
 	[369296] = {
 		readable = "Shardhide Stash",
+		model = 4052078,
 		text = {
 			en = "Shardhide Stash",
 			es = "Alijo de pellejosquirla",
@@ -36174,6 +44105,7 @@ root("ObjectDB", {
 	},
 	[369297] = {
 		readable = "Pile of Bones",
+		model = 3036603,
 		text = {
 			en = "Pile of Bones",
 			es = "Montón de huesos",
@@ -36188,6 +44120,7 @@ root("ObjectDB", {
 	},
 	[369304] = {
 		readable = "Korthian Relic Box",
+		model = 4093879,
 		text = {
 			en = "Korthian Relic Box",
 			es = "Caja de reliquias korthiana",
@@ -36202,6 +44135,7 @@ root("ObjectDB", {
 	},
 	[369327] = {
 		readable = "Invasive Mawshroom",
+		model = 3943696,
 		text = {
 			en = "Invasive Mawshroom",
 			es = "Champifauces invasivo",
@@ -36216,6 +44150,7 @@ root("ObjectDB", {
 	},
 	[369329] = {
 		readable = "Invasive Mawshroom",
+		model = 3943696,
 		text = {
 			en = "Invasive Mawshroom",
 			es = "Champifauces invasivo",
@@ -36230,6 +44165,7 @@ root("ObjectDB", {
 	},
 	[369330] = {
 		readable = "Invasive Mawshroom",
+		model = 3943696,
 		text = {
 			en = "Invasive Mawshroom",
 			es = "Champifauces invasivo",
@@ -36244,6 +44180,7 @@ root("ObjectDB", {
 	},
 	[369331] = {
 		readable = "Invasive Mawshroom",
+		model = 3943696,
 		text = {
 			en = "Invasive Mawshroom",
 			es = "Champifauces invasivo",
@@ -36258,6 +44195,7 @@ root("ObjectDB", {
 	},
 	[369332] = {
 		readable = "Invasive Mawshroom",
+		model = 3943696,
 		text = {
 			en = "Invasive Mawshroom",
 			es = "Champifauces invasivo",
@@ -36272,6 +44210,7 @@ root("ObjectDB", {
 	},
 	[369333] = {
 		readable = "Nest of Unusual Materials",
+		model = 1003213,
 		text = {
 			en = "Nest of Unusual Materials",
 			es = "Nido de materiales inusuales",
@@ -36286,6 +44225,7 @@ root("ObjectDB", {
 	},
 	[369334] = {
 		readable = "Nest of Unusual Materials",
+		model = 1003213,
 		text = {
 			en = "Nest of Unusual Materials",
 			es = "Nido de materiales inusuales",
@@ -36300,6 +44240,7 @@ root("ObjectDB", {
 	},
 	[369335] = {
 		readable = "Nest of Unusual Materials",
+		model = 1003213,
 		text = {
 			en = "Nest of Unusual Materials",
 			es = "Nido de materiales inusuales",
@@ -36314,6 +44255,7 @@ root("ObjectDB", {
 	},
 	[369336] = {
 		readable = "Nest of Unusual Materials",
+		model = 1003213,
 		text = {
 			en = "Nest of Unusual Materials",
 			es = "Nido de materiales inusuales",
@@ -36328,6 +44270,7 @@ root("ObjectDB", {
 	},
 	[369337] = {
 		readable = "Nest of Unusual Materials",
+		model = 1003213,
 		text = {
 			en = "Nest of Unusual Materials",
 			es = "Nido de materiales inusuales",
@@ -36342,6 +44285,7 @@ root("ObjectDB", {
 	},
 	[369339] = {
 		readable = "Mawsworn Cache",
+		model = 3677216,
 		text = {
 			en = "Mawsworn Cache",
 			es = "Alijo jurafauces",
@@ -36356,6 +44300,7 @@ root("ObjectDB", {
 	},
 	[369340] = {
 		readable = "Korthian Relic Box",
+		model = 4093879,
 		text = {
 			en = "Korthian Relic Box",
 			es = "Caja de reliquias korthiana",
@@ -36370,6 +44315,7 @@ root("ObjectDB", {
 	},
 	[369341] = {
 		readable = "Mawsworn Cache",
+		model = 3677216,
 		text = {
 			en = "Mawsworn Cache",
 			es = "Alijo jurafauces",
@@ -36384,6 +44330,7 @@ root("ObjectDB", {
 	},
 	[369432] = {
 		readable = "Misplaced Venthyr Tome",
+		model = 3533100,
 		text = {
 			en = "Misplaced Venthyr Tome",
 			es = "Tomo venthyr extraviado",
@@ -36398,6 +44345,7 @@ root("ObjectDB", {
 	},
 	[369437] = {
 		readable = "Riftbound Cache",
+		model = 3677216,
 		text = {
 			en = "Riftbound Cache",
 			es = "Alijo vinculafalla",
@@ -36412,6 +44360,7 @@ root("ObjectDB", {
 	},
 	[369438] = {
 		readable = "Riftbound Cache",
+		model = 3677216,
 		text = {
 			en = "Riftbound Cache",
 			es = "Alijo vinculafalla",
@@ -36426,6 +44375,7 @@ root("ObjectDB", {
 	},
 	[369439] = {
 		readable = "Riftbound Cache",
+		model = 3677216,
 		text = {
 			en = "Riftbound Cache",
 			es = "Alijo vinculafalla",
@@ -36440,6 +44390,7 @@ root("ObjectDB", {
 	},
 	[369440] = {
 		readable = "Riftbound Cache",
+		model = 3677216,
 		text = {
 			en = "Riftbound Cache",
 			es = "Alijo vinculafalla",
@@ -36454,6 +44405,7 @@ root("ObjectDB", {
 	},
 	[369602] = {
 		readable = "Hands of Defiance",
+		model = 3036572,
 		text = {
 			en = "Hands of Defiance",
 			es = "Manos de desafío",
@@ -36468,6 +44420,7 @@ root("ObjectDB", {
 	},
 	[369757] = {
 		readable = "Submerged Chest",
+		model = 1711483,
 		text = {
 			en = "Submerged Chest",
 			es = "Cofre sumergido",
@@ -36482,6 +44435,7 @@ root("ObjectDB", {
 	},
 	[369893] = {
 		readable = "Urgent Missive",
+		model = 1331239,
 		text = {
 			en = "Urgent Missive",
 			es = "Misiva urgente",
@@ -36496,6 +44450,7 @@ root("ObjectDB", {
 	},
 	[369894] = {
 		readable = "Urgent Missive",
+		model = 1331239,
 		text = {
 			en = "Urgent Missive",
 			es = "Misiva urgente",
@@ -36510,6 +44465,7 @@ root("ObjectDB", {
 	},
 	[370140] = {
 		readable = "Damaged Jiro Stash",
+		model = 4261540,
 		text = {
 			en = "Damaged Jiro Stash",
 			es = "Alijo jiro dañado",
@@ -36524,6 +44480,7 @@ root("ObjectDB", {
 	},
 	[370469] = {
 		readable = "Spectral Feed",
+		model = 949217,
 		text = {
 			en = "Spectral Feed",
 			es = "Pienso espectral",
@@ -36532,11 +44489,13 @@ root("ObjectDB", {
 			it = "Nutrimento Spettrale",
 			pt = "Alimento Espectral",
 			ru = "Призрачный корм",
+			ko = "[Spectral Feed]",
 			cn = "幽魂饲料",
 		},
 	},
 	[370494] = {
 		readable = "Toccatian Cache",
+		model = 4248045,
 		text = {
 			en = "Toccatian Cache",
 			es = "Alijo de tocata",
@@ -36551,11 +44510,13 @@ root("ObjectDB", {
 	},
 	[373437] = {
 		readable = "Pungent Blobfish Cluster",
+		model = 219406,
 		text = {
 			en = "Pungent Blobfish Cluster",
 			es = "Banco de peces mancha acres",
 			de = "Stinkender Blobfischschwarm",
 			fr = "Banc de poissons-blob âcres",
+			it = "[Pungent Blobfish Cluster]",
 			pt = "Cardume de Baiacu Pungente",
 			ru = "Косяк едких рыб-капель",
 			ko = "자극적인 방울고기 무리",
@@ -36564,11 +44525,13 @@ root("ObjectDB", {
 	},
 	[373438] = {
 		readable = "Coilclutch Vine",
+		model = 376277,
 		text = {
 			en = "Coilclutch Vine",
 			es = "Vid garraespiral",
 			de = "Spiralkrallententakel",
 			fr = "Liane serre-pelote",
+			it = "[Coilclutch Vine]",
 			pt = "Cirro-mola",
 			ru = "Пружинная лоза",
 			ko = "감줄마수 덩굴",
@@ -36577,11 +44540,13 @@ root("ObjectDB", {
 	},
 	[373439] = {
 		readable = "Flipper Fish School",
+		model = 219406,
 		text = {
 			en = "Flipper Fish School",
 			es = "Banco de peces aletones",
 			de = "Ein Schwarm Flossenfische",
 			fr = "Banc de nectalies",
+			it = "[Flipper Fish School]",
 			pt = "Cardume de Nadadeira",
 			ru = "Стая плавунцов",
 			ko = "파닥이 고기 떼",
@@ -36590,17 +44555,22 @@ root("ObjectDB", {
 	},
 	[373460] = {
 		readable = "Fae Net",
+		model = 3489771,
 		text = {
 			en = "Fae Net",
+			es = "[Fae Net]",
 			de = "Faenetz",
 			fr = "Filet faë",
+			it = "[Fae Net]",
 			pt = "Rede Feéria",
 			ru = "Волшебная сеть",
+			ko = "[Fae Net]",
 			cn = "法夜之网",
 		},
 	},
 	[373471] = {
 		readable = "Mezzonic Cache",
+		model = 4248046,
 		text = {
 			en = "Mezzonic Cache",
 			es = "Alijo mezzónico",
@@ -36615,6 +44585,7 @@ root("ObjectDB", {
 	},
 	[373472] = {
 		readable = "Glissandian Cache",
+		model = 4248047,
 		text = {
 			en = "Glissandian Cache",
 			es = "Alijo glissandiano",
@@ -36629,6 +44600,7 @@ root("ObjectDB", {
 	},
 	[373473] = {
 		readable = "Fugueal Cache",
+		model = 4248048,
 		text = {
 			en = "Fugueal Cache",
 			es = "Alijo de fuga",
@@ -36643,6 +44615,7 @@ root("ObjectDB", {
 	},
 	[373474] = {
 		readable = "Cantaric Cache",
+		model = 4248049,
 		text = {
 			en = "Cantaric Cache",
 			es = "Alijo cantárico",
@@ -36657,6 +44630,7 @@ root("ObjectDB", {
 	},
 	[373543] = {
 		readable = "Library Vault",
+		model = 4196523,
 		text = {
 			en = "Library Vault",
 			es = "Cámara de la biblioteca",
@@ -36671,6 +44645,7 @@ root("ObjectDB", {
 	},
 	[373548] = {
 		readable = "Template Archive",
+		model = 4198154,
 		text = {
 			en = "Template Archive",
 			es = "Archivo de plantilla",
@@ -36685,6 +44660,7 @@ root("ObjectDB", {
 	},
 	[373553] = {
 		readable = "Tranquil Concordance",
+		model = 4196518,
 		text = {
 			en = "Tranquil Concordance",
 			es = "Teletransportador",
@@ -36699,6 +44675,7 @@ root("ObjectDB", {
 	},
 	[373561] = {
 		readable = "Forgotten Proto-Vault",
+		model = 4196523,
 		text = {
 			en = "Forgotten Proto-Vault",
 			es = "Protocámara olvidada",
@@ -36713,6 +44690,7 @@ root("ObjectDB", {
 	},
 	[373562] = {
 		readable = "Excitable Concordance",
+		model = 4198153,
 		text = {
 			en = "Excitable Concordance",
 			es = "Concordancia excitable",
@@ -36727,6 +44705,7 @@ root("ObjectDB", {
 	},
 	[373563] = {
 		readable = "Mercurial Concordance",
+		model = 4198153,
 		text = {
 			en = "Mercurial Concordance",
 			es = "Concordancia voluble",
@@ -36741,6 +44720,7 @@ root("ObjectDB", {
 	},
 	[373568] = {
 		readable = "Provis Cache",
+		model = 4196523,
 		text = {
 			en = "Provis Cache",
 			es = "Alijo de Provis cerrado",
@@ -36755,6 +44735,7 @@ root("ObjectDB", {
 	},
 	[373579] = {
 		readable = "Prying Eye Discovery",
+		model = 4039282,
 		text = {
 			en = "Prying Eye Discovery",
 			es = "Descubrimiento de ojo fisgón",
@@ -36769,6 +44750,7 @@ root("ObjectDB", {
 	},
 	[373580] = {
 		readable = "Tranquil Concordance",
+		model = 4198153,
 		text = {
 			en = "Tranquil Concordance",
 			es = "Concordancia tranquila",
@@ -36783,6 +44765,7 @@ root("ObjectDB", {
 	},
 	[373581] = {
 		readable = "Excitable Concordance",
+		model = 4198153,
 		text = {
 			en = "Excitable Concordance",
 			es = "Concordancia excitable",
@@ -36797,6 +44780,7 @@ root("ObjectDB", {
 	},
 	[373582] = {
 		readable = "Mercurial Concordance",
+		model = 4198153,
 		text = {
 			en = "Mercurial Concordance",
 			es = "Concordancia voluble",
@@ -36811,6 +44795,7 @@ root("ObjectDB", {
 	},
 	[373583] = {
 		readable = "Tranquil Concordance",
+		model = 4198153,
 		text = {
 			en = "Tranquil Concordance",
 			es = "Concordancia tranquila",
@@ -36825,6 +44810,7 @@ root("ObjectDB", {
 	},
 	[373584] = {
 		readable = "Excitable Concordance",
+		model = 4198153,
 		text = {
 			en = "Excitable Concordance",
 			es = "Concordancia excitable",
@@ -36839,6 +44825,7 @@ root("ObjectDB", {
 	},
 	[373585] = {
 		readable = "Mercurial Concordance",
+		model = 4198153,
 		text = {
 			en = "Mercurial Concordance",
 			es = "Concordancia voluble",
@@ -36853,6 +44840,7 @@ root("ObjectDB", {
 	},
 	[373586] = {
 		readable = "Tranquil Concordance",
+		model = 4198153,
 		text = {
 			en = "Tranquil Concordance",
 			es = "Concordancia tranquila",
@@ -36867,6 +44855,7 @@ root("ObjectDB", {
 	},
 	[373587] = {
 		readable = "Excitable Concordance",
+		model = 4198153,
 		text = {
 			en = "Excitable Concordance",
 			es = "Concordancia excitable",
@@ -36881,6 +44870,7 @@ root("ObjectDB", {
 	},
 	[373588] = {
 		readable = "Mercurial Concordance",
+		model = 4198153,
 		text = {
 			en = "Mercurial Concordance",
 			es = "Concordancia voluble",
@@ -36895,6 +44885,7 @@ root("ObjectDB", {
 	},
 	[374976] = {
 		readable = "Symphonic Vault",
+		model = 4196523,
 		text = {
 			en = "Symphonic Vault",
 			es = "Cámara sinfónica",
@@ -36909,6 +44900,7 @@ root("ObjectDB", {
 	},
 	[375021] = {
 		readable = "Perished Automa",
+		model = 353152,
 		text = {
 			en = "Perished Automa",
 			es = "Automa fenecido",
@@ -36923,6 +44915,7 @@ root("ObjectDB", {
 	},
 	[375058] = {
 		readable = "Toccatian Cache",
+		model = 4248045,
 		text = {
 			en = "Toccatian Cache",
 			es = "Alijo de tocata",
@@ -36937,6 +44930,7 @@ root("ObjectDB", {
 	},
 	[375059] = {
 		readable = "Mezzonic Cache",
+		model = 4248046,
 		text = {
 			en = "Mezzonic Cache",
 			es = "Alijo mezzónico",
@@ -36951,6 +44945,7 @@ root("ObjectDB", {
 	},
 	[375060] = {
 		readable = "Glissandian Cache",
+		model = 4248047,
 		text = {
 			en = "Glissandian Cache",
 			es = "Alijo glissandiano",
@@ -36965,6 +44960,7 @@ root("ObjectDB", {
 	},
 	[375061] = {
 		readable = "Fugueal Cache",
+		model = 4248048,
 		text = {
 			en = "Fugueal Cache",
 			es = "Alijo de fuga",
@@ -36979,6 +44975,7 @@ root("ObjectDB", {
 	},
 	[375062] = {
 		readable = "Cantaric Cache",
+		model = 4248049,
 		text = {
 			en = "Cantaric Cache",
 			es = "Alijo cantárico",
@@ -36993,6 +44990,7 @@ root("ObjectDB", {
 	},
 	[375064] = {
 		readable = "Toccatian Cache",
+		model = 4248045,
 		text = {
 			en = "Toccatian Cache",
 			es = "Alijo de tocata",
@@ -37007,6 +45005,7 @@ root("ObjectDB", {
 	},
 	[375066] = {
 		readable = "Mezzonic Cache",
+		model = 4248046,
 		text = {
 			en = "Mezzonic Cache",
 			es = "Alijo mezzónico",
@@ -37021,6 +45020,7 @@ root("ObjectDB", {
 	},
 	[375067] = {
 		readable = "Glissandian Cache",
+		model = 4248047,
 		text = {
 			en = "Glissandian Cache",
 			es = "Alijo glissandiano",
@@ -37035,6 +45035,7 @@ root("ObjectDB", {
 	},
 	[375068] = {
 		readable = "Fugueal Cache",
+		model = 4248048,
 		text = {
 			en = "Fugueal Cache",
 			es = "Alijo de fuga",
@@ -37049,6 +45050,7 @@ root("ObjectDB", {
 	},
 	[375069] = {
 		readable = "Cantaric Cache",
+		model = 4248049,
 		text = {
 			en = "Cantaric Cache",
 			es = "Alijo cantárico",
@@ -37063,6 +45065,7 @@ root("ObjectDB", {
 	},
 	[375188] = {
 		readable = "Camber Alcove Arrangement",
+		model = 4081526,
 		text = {
 			en = "Camber Alcove Arrangement",
 			es = "Disposición de la Alcoba Combada",
@@ -37077,6 +45080,7 @@ root("ObjectDB", {
 	},
 	[375189] = {
 		readable = "Repertory Alcove Arrangement",
+		model = 4081527,
 		text = {
 			en = "Repertory Alcove Arrangement",
 			es = "Disposición de la Alcoba de Repertorio",
@@ -37091,6 +45095,7 @@ root("ObjectDB", {
 	},
 	[375190] = {
 		readable = "Rondure Alcove Arrangement",
+		model = 4081530,
 		text = {
 			en = "Rondure Alcove Arrangement",
 			es = "Disposición de la Alcoba Circular",
@@ -37105,6 +45110,7 @@ root("ObjectDB", {
 	},
 	[375191] = {
 		readable = "Dormant Alcove Arrangement",
+		model = 4081531,
 		text = {
 			en = "Dormant Alcove Arrangement",
 			es = "Disposición de la Alcoba Durmiente",
@@ -37119,6 +45125,7 @@ root("ObjectDB", {
 	},
 	[375192] = {
 		readable = "Fulgore Alcove Arrangement",
+		model = 4081535,
 		text = {
 			en = "Fulgore Alcove Arrangement",
 			es = "Disposición de la Alcoba Refulgente",
@@ -37131,8 +45138,99 @@ root("ObjectDB", {
 			cn = "灿烂凹室指向",
 		},
 	},
+	[375241] = {
+		readable = "Bubble Poppy",
+		model = 4498019,
+		text = {
+			en = "Bubble Poppy",
+			es = "Amapola burbuja",
+			de = "Blasenmohn",
+			fr = "Pavot à bulle",
+			it = "Papavero Bolla",
+			pt = "Papoula Borbulhante",
+			ru = "Пузырчатый мак",
+			ko = "거품 백일홍",
+			cn = "泡粟花",
+		},
+	},
+	[375242] = {
+		readable = "Titan-Touched Bubble Poppy",
+		model = 4498019,
+		text = {
+			en = "Titan-Touched Bubble Poppy",
+			es = "Amapola burbuja tocada por los titanes",
+			de = "Titanenberührter Blasenmohn",
+			fr = "Pavot à bulle touché par les Titans",
+			it = "Papavero Bolla Toccato dai Titani",
+			pt = "Papoula Borbulhante Tocada por Titãs",
+			ru = "Осененный титанами пузырчатый мак",
+			ko = "티탄에 물든 거품 백일홍",
+			cn = "泰坦点化的泡粟花",
+		},
+	},
+	[375243] = {
+		readable = "Infurious Bubble Poppy",
+		model = 4498019,
+		text = {
+			en = "Infurious Bubble Poppy",
+			es = "Amapola burbuja furiosa",
+			de = "Wutentbrannter Blasenmohn",
+			fr = "Pavot à bulle ardent",
+			it = "Papavero Bolla Impetuoso",
+			pt = "Papoula Borbulhante em Fúria",
+			ru = "Ярый пузырчатый мак",
+			ko = "분노의 거품 백일홍",
+			cn = "[Infurious Bubble Poppy]",
+		},
+	},
+	[375244] = {
+		readable = "Frigid Bubble Poppy",
+		model = 4498019,
+		text = {
+			en = "Frigid Bubble Poppy",
+			es = "Amapola burbuja gélida",
+			de = "Eisiger Blasenmohn",
+			fr = "Pavot à bulle algide",
+			it = "Papavero Bolla Gelato",
+			pt = "Papoula Borbulhante Frígida",
+			ru = "Морозный пузырчатый мак",
+			ko = "혹한의 거품 백일홍",
+			cn = "冷冽泡粟花",
+		},
+	},
+	[375245] = {
+		readable = "Windswept Bubble Poppy",
+		model = 4498019,
+		text = {
+			en = "Windswept Bubble Poppy",
+			es = "Amapola burbuja aventada",
+			de = "Windgepeitschter Blasenmohn",
+			fr = "Pavot à bulle balayé par le vent",
+			it = "Papavero Bolla Scompigliato",
+			pt = "Papoula Borbulhante Levada pelo Vento",
+			ru = "Обветренный пузырчатый мак",
+			ko = "바람결 거품 백일홍",
+			cn = "啸风泡粟花",
+		},
+	},
+	[375246] = {
+		readable = "Decayed Bubble Poppy",
+		model = 4498020,
+		text = {
+			en = "Decayed Bubble Poppy",
+			es = "Amapola burbuja descompuesta",
+			de = "Verrotteter Blasenmohn",
+			fr = "Pavot à bulle décomposé",
+			it = "Papavero Bolla Decaduto",
+			pt = "Papoula Borbulhante Decrépita",
+			ru = "Сгнивший пузырчатый мак",
+			ko = "부패한 거품 백일홍",
+			cn = "腐朽泡粟花",
+		},
+	},
 	[375270] = {
 		readable = "Protoform Schematic",
+		model = 4196520,
 		text = {
 			en = "Protoform Schematic",
 			es = "Esquema de protoforma",
@@ -37147,6 +45245,7 @@ root("ObjectDB", {
 	},
 	[375272] = {
 		readable = "Mawsworn Cache",
+		model = 3677216,
 		text = {
 			en = "Mawsworn Cache",
 			es = "Alijo jurafauces",
@@ -37161,6 +45260,7 @@ root("ObjectDB", {
 	},
 	[375281] = {
 		readable = "Stolen Relic",
+		model = 3925326,
 		text = {
 			en = "Stolen Relic",
 			es = "Reliquia robada",
@@ -37174,9 +45274,10 @@ root("ObjectDB", {
 		},
 	},
 	[375283] = {
-		readable = "Flow Restart Console (QG)",
+		readable = "Percolation Array",
+		model = 3923426,
 		text = {
-			en = "Flow Restart Console (QG)",
+			en = "Percolation Array",
 			es = "Matriz de filtración",
 			de = "Filtrationsanlage",
 			fr = "Matrice de percolation",
@@ -37189,6 +45290,7 @@ root("ObjectDB", {
 	},
 	[375290] = {
 		readable = "Cypher Bound Chest",
+		model = 4196523,
 		text = {
 			en = "Cypher Bound Chest",
 			es = "Cofre vinculado a una clave",
@@ -37203,6 +45305,7 @@ root("ObjectDB", {
 	},
 	[375354] = {
 		readable = "Domination Cache",
+		model = 3677216,
 		text = {
 			en = "Domination Cache",
 			es = "Alijo de dominación",
@@ -37217,6 +45320,7 @@ root("ObjectDB", {
 	},
 	[375362] = {
 		readable = "Avian Nest",
+		model = 1003213,
 		text = {
 			en = "Avian Nest",
 			es = "Nido aviario",
@@ -37231,6 +45335,7 @@ root("ObjectDB", {
 	},
 	[375363] = {
 		readable = "Mawsworn Supply Chest",
+		model = 3677216,
 		text = {
 			en = "Mawsworn Supply Chest",
 			es = "Cofre de suministros jurafauces",
@@ -37245,6 +45350,7 @@ root("ObjectDB", {
 	},
 	[375366] = {
 		readable = "Tarachnid Eggs",
+		model = 915963,
 		text = {
 			en = "Tarachnid Eggs",
 			es = "Huevos de tarácnido",
@@ -37275,6 +45381,7 @@ root("ObjectDB", {
 	},
 	[375369] = {
 		readable = "Gnawed Valise",
+		model = 3846065,
 		text = {
 			en = "Gnawed Valise",
 			es = "Valija mordisqueada",
@@ -37289,6 +45396,7 @@ root("ObjectDB", {
 	},
 	[375370] = {
 		readable = "Protoform Schematic",
+		model = 4196520,
 		text = {
 			en = "Protoform Schematic",
 			es = "Esquema de protoforma",
@@ -37303,6 +45411,7 @@ root("ObjectDB", {
 	},
 	[375371] = {
 		readable = "Protoform Schematic",
+		model = 4196520,
 		text = {
 			en = "Protoform Schematic",
 			es = "Esquema de protoforma",
@@ -37317,6 +45426,7 @@ root("ObjectDB", {
 	},
 	[375373] = {
 		readable = "Discarded Automa Scrap",
+		model = 4201719,
 		text = {
 			en = "Discarded Automa Scrap",
 			es = "Chatarra de Automa desechada",
@@ -37331,6 +45441,7 @@ root("ObjectDB", {
 	},
 	[375376] = {
 		readable = "Fallen Vault",
+		model = 4198154,
 		text = {
 			en = "Fallen Vault",
 			es = "Caja fuerte caída",
@@ -37345,6 +45456,7 @@ root("ObjectDB", {
 	},
 	[375382] = {
 		readable = "Crushed Supply Crate",
+		model = 4261537,
 		text = {
 			en = "Crushed Supply Crate",
 			es = "Cajón de suministros destrozado",
@@ -37359,6 +45471,7 @@ root("ObjectDB", {
 	},
 	[375383] = {
 		readable = "Protoform Schematic",
+		model = 4196520,
 		text = {
 			en = "Protoform Schematic",
 			es = "Esquema de protoforma",
@@ -37373,6 +45486,7 @@ root("ObjectDB", {
 	},
 	[375387] = {
 		readable = "Protoform Schematic",
+		model = 4196520,
 		text = {
 			en = "Protoform Schematic",
 			es = "Esquema de protoforma",
@@ -37387,6 +45501,7 @@ root("ObjectDB", {
 	},
 	[375388] = {
 		readable = "Protoform Schematic",
+		model = 4196520,
 		text = {
 			en = "Protoform Schematic",
 			es = "Esquema de protoforma",
@@ -37401,6 +45516,7 @@ root("ObjectDB", {
 	},
 	[375389] = {
 		readable = "Protoform Schematic",
+		model = 4196520,
 		text = {
 			en = "Protoform Schematic",
 			es = "Esquema de protoforma",
@@ -37415,6 +45531,7 @@ root("ObjectDB", {
 	},
 	[375390] = {
 		readable = "Protoform Schematic",
+		model = 4196520,
 		text = {
 			en = "Protoform Schematic",
 			es = "Esquema de protoforma",
@@ -37429,6 +45546,7 @@ root("ObjectDB", {
 	},
 	[375391] = {
 		readable = "Protoform Schematic",
+		model = 4196520,
 		text = {
 			en = "Protoform Schematic",
 			es = "Esquema de protoforma",
@@ -37443,6 +45561,7 @@ root("ObjectDB", {
 	},
 	[375393] = {
 		readable = "Protoform Schematic",
+		model = 4196520,
 		text = {
 			en = "Protoform Schematic",
 			es = "Esquema de protoforma",
@@ -37457,6 +45576,7 @@ root("ObjectDB", {
 	},
 	[375396] = {
 		readable = "Lumpy Sand Pile",
+		model = 4370753,
 		text = {
 			en = "Lumpy Sand Pile",
 			es = "Montón de arena aglomerada",
@@ -37471,6 +45591,7 @@ root("ObjectDB", {
 	},
 	[375397] = {
 		readable = "Glinting Sand Pile",
+		model = 4370753,
 		text = {
 			en = "Glinting Sand Pile",
 			es = "Montón de arena destellante",
@@ -37485,6 +45606,7 @@ root("ObjectDB", {
 	},
 	[375398] = {
 		readable = "Shifting Sand Pile",
+		model = 4370753,
 		text = {
 			en = "Shifting Sand Pile",
 			es = "Montón de arena cambiante",
@@ -37499,6 +45621,7 @@ root("ObjectDB", {
 	},
 	[375399] = {
 		readable = "Humming Sand Pile",
+		model = 4370753,
 		text = {
 			en = "Humming Sand Pile",
 			es = "Montón de arena zumbante",
@@ -37513,6 +45636,7 @@ root("ObjectDB", {
 	},
 	[375400] = {
 		readable = "Misshapen Sand Pile",
+		model = 4370753,
 		text = {
 			en = "Misshapen Sand Pile",
 			es = "Montón de arena deforme",
@@ -37527,6 +45651,7 @@ root("ObjectDB", {
 	},
 	[375401] = {
 		readable = "Sparkling Sand Pile",
+		model = 4370753,
 		text = {
 			en = "Sparkling Sand Pile",
 			es = "Montón de arena chispeante",
@@ -37541,6 +45666,7 @@ root("ObjectDB", {
 	},
 	[375402] = {
 		readable = "Ticking Sand Pile",
+		model = 4370753,
 		text = {
 			en = "Ticking Sand Pile",
 			es = "Montón de arena con tictac",
@@ -37555,6 +45681,7 @@ root("ObjectDB", {
 	},
 	[375403] = {
 		readable = "Pulp-Covered Relic",
+		model = 4254628,
 		text = {
 			en = "Pulp-Covered Relic",
 			es = "Reliquia cubierta de pulpa",
@@ -37569,6 +45696,7 @@ root("ObjectDB", {
 	},
 	[375404] = {
 		readable = "Sandworn Chest",
+		model = 4196523,
 		text = {
 			en = "Sandworn Chest",
 			es = "Cofre erosionado por la arena",
@@ -37583,6 +45711,7 @@ root("ObjectDB", {
 	},
 	[375405] = {
 		readable = "Filched Artifact",
+		model = 4039279,
 		text = {
 			en = "Filched Artifact",
 			es = "Artefacto birlado",
@@ -37597,6 +45726,7 @@ root("ObjectDB", {
 	},
 	[375408] = {
 		readable = "Architect's Reserve",
+		model = 4196523,
 		text = {
 			en = "Architect's Reserve",
 			es = "Reserva del arquitecto",
@@ -37611,6 +45741,7 @@ root("ObjectDB", {
 	},
 	[375411] = {
 		readable = "Mistaken Ovoid",
+		model = 4228011,
 		text = {
 			en = "Mistaken Ovoid",
 			es = "Ovoide equivocado",
@@ -37625,6 +45756,7 @@ root("ObjectDB", {
 	},
 	[375413] = {
 		readable = "Drowned Broker Supplies",
+		model = 3920034,
 		text = {
 			en = "Drowned Broker Supplies",
 			es = "Suministros de los Especuladores ahogados",
@@ -37639,6 +45771,7 @@ root("ObjectDB", {
 	},
 	[375422] = {
 		readable = "Overgrown Protofruit",
+		model = 4201284,
 		text = {
 			en = "Overgrown Protofruit",
 			es = "Protofruta cubierta de maleza",
@@ -37653,6 +45786,7 @@ root("ObjectDB", {
 	},
 	[375423] = {
 		readable = "Offering to the First Ones",
+		model = 3925326,
 		text = {
 			en = "Offering to the First Ones",
 			es = "Ofrenda para los Primeros",
@@ -37667,6 +45801,7 @@ root("ObjectDB", {
 	},
 	[375478] = {
 		readable = "Protomineral Extractor",
+		model = 4274744,
 		text = {
 			en = "Protomineral Extractor",
 			es = "Extractor de protominerales",
@@ -37681,6 +45816,7 @@ root("ObjectDB", {
 	},
 	[375479] = {
 		readable = "Protoform Schematic",
+		model = 4196520,
 		text = {
 			en = "Protoform Schematic",
 			es = "Esquema de protoforma",
@@ -37695,6 +45831,7 @@ root("ObjectDB", {
 	},
 	[375481] = {
 		readable = "Pilfered Curio",
+		model = 4039287,
 		text = {
 			en = "Pilfered Curio",
 			es = "Bibelot birlado",
@@ -37709,6 +45846,7 @@ root("ObjectDB", {
 	},
 	[375483] = {
 		readable = "Stolen Scroll",
+		model = 3836264,
 		text = {
 			en = "Stolen Scroll",
 			es = "Pergamino robado",
@@ -37723,6 +45861,7 @@ root("ObjectDB", {
 	},
 	[375484] = {
 		readable = "Grateful Boon",
+		model = 4261537,
 		text = {
 			en = "Grateful Boon",
 			es = "Favor agradecido",
@@ -37737,6 +45876,7 @@ root("ObjectDB", {
 	},
 	[375485] = {
 		readable = "Protoflora Harvester",
+		model = 4238675,
 		text = {
 			en = "Protoflora Harvester",
 			es = "Cosechador de protoflora",
@@ -37751,6 +45891,7 @@ root("ObjectDB", {
 	},
 	[375486] = {
 		readable = "Protoform Schematic",
+		model = 4196520,
 		text = {
 			en = "Protoform Schematic",
 			es = "Esquema de protoforma",
@@ -37765,6 +45906,7 @@ root("ObjectDB", {
 	},
 	[375492] = {
 		readable = "Syntactic Vault",
+		model = 4196523,
 		text = {
 			en = "Syntactic Vault",
 			es = "Caja fuerte sintáctica",
@@ -37779,6 +45921,7 @@ root("ObjectDB", {
 	},
 	[375493] = {
 		readable = "Ripened Protopear",
+		model = 4201286,
 		text = {
 			en = "Ripened Protopear",
 			es = "Protopera madura",
@@ -37787,11 +45930,13 @@ root("ObjectDB", {
 			it = "Protopera Matura",
 			pt = "Protopera Madura",
 			ru = "Созревшая протогруша",
+			ko = "[Ripened Protopear]",
 			cn = "成熟的元梨",
 		},
 	},
 	[375494] = {
 		readable = "Rondure Cache",
+		model = 3527748,
 		text = {
 			en = "Rondure Cache",
 			es = "Alijo circular",
@@ -37806,6 +45951,7 @@ root("ObjectDB", {
 	},
 	[375495] = {
 		readable = "Undulating Foliage",
+		model = 4039277,
 		text = {
 			en = "Undulating Foliage",
 			es = "Follaje ondulante",
@@ -37820,6 +45966,7 @@ root("ObjectDB", {
 	},
 	[375496] = {
 		readable = "Bushel of Progenitor Produce",
+		model = 4201288,
 		text = {
 			en = "Bushel of Progenitor Produce",
 			es = "Celemín de productos de progenitor",
@@ -37834,6 +45981,7 @@ root("ObjectDB", {
 	},
 	[375498] = {
 		readable = "Protoform Schematic",
+		model = 4196520,
 		text = {
 			en = "Protoform Schematic",
 			es = "Esquema de protoforma",
@@ -37848,6 +45996,7 @@ root("ObjectDB", {
 	},
 	[375502] = {
 		readable = "Protoform Schematic",
+		model = 4196520,
 		text = {
 			en = "Protoform Schematic",
 			es = "Esquema de protoforma",
@@ -37862,6 +46011,7 @@ root("ObjectDB", {
 	},
 	[375516] = {
 		readable = "Lost Comb",
+		model = 1950289,
 		text = {
 			en = "Lost Comb",
 			es = "Panal perdido",
@@ -37876,6 +46026,7 @@ root("ObjectDB", {
 	},
 	[375517] = {
 		readable = "Suspicious Rubble Pile",
+		model = 4210792,
 		text = {
 			en = "Suspicious Rubble Pile",
 			es = "Montón de escombros sospechoso",
@@ -37890,6 +46041,7 @@ root("ObjectDB", {
 	},
 	[375530] = {
 		readable = "Forgotten Treasure Vault",
+		model = 4196523,
 		text = {
 			en = "Forgotten Treasure Vault",
 			es = "Cámara del tesoro olvidada",
@@ -37904,6 +46056,7 @@ root("ObjectDB", {
 	},
 	[375536] = {
 		readable = "Xy'rath's Booby-Trapped Cache",
+		model = 3920034,
 		text = {
 			en = "Xy'rath's Booby-Trapped Cache",
 			es = "Alijo bomba de Xy'rath",
@@ -37918,6 +46071,7 @@ root("ObjectDB", {
 	},
 	[375538] = {
 		readable = "Lost Ovoid",
+		model = 3527748,
 		text = {
 			en = "Lost Ovoid",
 			es = "Ovoide perdido",
@@ -37932,6 +46086,7 @@ root("ObjectDB", {
 	},
 	[375668] = {
 		readable = "Misty Treasure Chest",
+		model = 4216698,
 		text = {
 			en = "Misty Treasure Chest",
 			es = "Arqueta brumosa",
@@ -37946,6 +46101,7 @@ root("ObjectDB", {
 	},
 	[375693] = {
 		readable = "Protoform Schematic",
+		model = 4196520,
 		text = {
 			en = "Protoform Schematic",
 			es = "Esquema de protoforma",
@@ -37960,6 +46116,7 @@ root("ObjectDB", {
 	},
 	[375694] = {
 		readable = "Protoform Schematic",
+		model = 4196520,
 		text = {
 			en = "Protoform Schematic",
 			es = "Esquema de protoforma",
@@ -37974,6 +46131,7 @@ root("ObjectDB", {
 	},
 	[375746] = {
 		readable = "Protoform Schematic",
+		model = 4196520,
 		text = {
 			en = "Protoform Schematic",
 			es = "Esquema de prototipo",
@@ -37988,6 +46146,7 @@ root("ObjectDB", {
 	},
 	[375748] = {
 		readable = "Protoform Schematic",
+		model = 4196520,
 		text = {
 			en = "Protoform Schematic",
 			es = "Esquema de protoforma",
@@ -38002,6 +46161,7 @@ root("ObjectDB", {
 	},
 	[375889] = {
 		readable = "Protoform Schematic",
+		model = 4196520,
 		text = {
 			en = "Protoform Schematic",
 			es = "Esquema de protoforma",
@@ -38016,6 +46176,7 @@ root("ObjectDB", {
 	},
 	[375893] = {
 		readable = "High Value Cache",
+		model = 3920034,
 		text = {
 			en = "High Value Cache",
 			es = "Alijo de gran valor",
@@ -38030,6 +46191,7 @@ root("ObjectDB", {
 	},
 	[375900] = {
 		readable = "Protoform Schematic",
+		model = 4196520,
 		text = {
 			en = "Protoform Schematic",
 			es = "Esquema de protoforma",
@@ -38044,6 +46206,7 @@ root("ObjectDB", {
 	},
 	[375902] = {
 		readable = "Torn Ethereal Drape",
+		model = 1503243,
 		text = {
 			en = "Torn Ethereal Drape",
 			es = "Mantón etéreo deshilachado",
@@ -38058,6 +46221,7 @@ root("ObjectDB", {
 	},
 	[375903] = {
 		readable = "Protoform Schematic",
+		model = 4196520,
 		text = {
 			en = "Protoform Schematic",
 			es = "Esquema de protoforma",
@@ -38072,6 +46236,7 @@ root("ObjectDB", {
 	},
 	[375905] = {
 		readable = "Protoform Schematic",
+		model = 4196520,
 		text = {
 			en = "Protoform Schematic",
 			es = "Esquema de protoforma",
@@ -38086,6 +46251,7 @@ root("ObjectDB", {
 	},
 	[375907] = {
 		readable = "Protoform Schematic",
+		model = 4196520,
 		text = {
 			en = "Protoform Schematic",
 			es = "Esquema de protoforma",
@@ -38100,6 +46266,7 @@ root("ObjectDB", {
 	},
 	[375915] = {
 		readable = "Glimmer of Serenity",
+		model = 4176991,
 		text = {
 			en = "Glimmer of Serenity",
 			es = "Fulgor de la serenidad",
@@ -38114,6 +46281,7 @@ root("ObjectDB", {
 	},
 	[375950] = {
 		readable = "Bauble of Pure Innovation",
+		model = 4176996,
 		text = {
 			en = "Bauble of Pure Innovation",
 			es = "Adorno de innovación pura",
@@ -38128,6 +46296,7 @@ root("ObjectDB", {
 	},
 	[375972] = {
 		readable = "Wanted: Custos",
+		model = 3836252,
 		text = {
 			en = "Wanted: Custos",
 			es = "Se busca: Custos",
@@ -38142,6 +46311,7 @@ root("ObjectDB", {
 	},
 	[375973] = {
 		readable = "Firim in Exile, Part 1",
+		model = 3836262,
 		text = {
 			en = "Firim in Exile, Part 1",
 			es = "Firim en el exilio, primera parte",
@@ -38156,6 +46326,7 @@ root("ObjectDB", {
 	},
 	[375974] = {
 		readable = "Crystallized Echo of the First Song",
+		model = 1687825,
 		text = {
 			en = "Crystallized Echo of the First Song",
 			es = "Eco cristalizado de la primera canción",
@@ -38170,6 +46341,7 @@ root("ObjectDB", {
 	},
 	[375981] = {
 		readable = "Protoform Schematic",
+		model = 4196520,
 		text = {
 			en = "Protoform Schematic",
 			es = "Esquema de protoforma",
@@ -38184,6 +46356,7 @@ root("ObjectDB", {
 	},
 	[375982] = {
 		readable = "Firim in Exile, Part 2",
+		model = 3836262,
 		text = {
 			en = "Firim in Exile, Part 2",
 			es = "Firim en el exilio, segunda parte",
@@ -38198,6 +46371,7 @@ root("ObjectDB", {
 	},
 	[375983] = {
 		readable = "Firim in Exile, Part 3",
+		model = 3836262,
 		text = {
 			en = "Firim in Exile, Part 3",
 			es = "Firim en el exilio, tercera parte",
@@ -38212,6 +46386,7 @@ root("ObjectDB", {
 	},
 	[375984] = {
 		readable = "Firim in Exile, Part 4",
+		model = 3836262,
 		text = {
 			en = "Firim in Exile, Part 4",
 			es = "Firim en el exilio, cuarta parte",
@@ -38226,6 +46401,7 @@ root("ObjectDB", {
 	},
 	[375985] = {
 		readable = "Firim in Exile, Part 5",
+		model = 3836262,
 		text = {
 			en = "Firim in Exile, Part 5",
 			es = "Firim en el exilio, quinta parte",
@@ -38240,6 +46416,7 @@ root("ObjectDB", {
 	},
 	[375986] = {
 		readable = "Firim in Exile, Part 6",
+		model = 3836262,
 		text = {
 			en = "Firim in Exile, Part 6",
 			es = "Firim en el exilio, sexta parte",
@@ -38254,6 +46431,7 @@ root("ObjectDB", {
 	},
 	[375987] = {
 		readable = "Firim in Exile, Part 7",
+		model = 3836262,
 		text = {
 			en = "Firim in Exile, Part 7",
 			es = "Firim en el exilio, séptima parte",
@@ -38268,11 +46446,13 @@ root("ObjectDB", {
 	},
 	[375988] = {
 		readable = "Firim in Exile, Epilogue",
+		model = 3836262,
 		text = {
 			en = "Firim in Exile, Epilogue",
 			es = "Firim en el exilio, epílogo",
 			de = "Firim im Exil, Epilog",
 			fr = "L’exil de Firim, épilogue",
+			it = "[Firim in Exile, Epilogue]",
 			pt = "Firim no Exílio, Epílogo",
 			ru = "Фирим в изгнании, эпилог",
 			ko = "피림의 추방기 후일담",
@@ -38281,6 +46461,7 @@ root("ObjectDB", {
 	},
 	[376041] = {
 		readable = "Shrouded Cypher Cache",
+		model = 4196523,
 		text = {
 			en = "Shrouded Cypher Cache",
 			es = "Alijo de claves camuflado",
@@ -38295,19 +46476,29 @@ root("ObjectDB", {
 	},
 	[376123] = {
 		readable = "Suspicious Bottle",
+		model = 4240484,
 		text = {
 			en = "Suspicious Bottle",
+			es = "[Suspicious Bottle]",
+			de = "[Suspicious Bottle]",
+			fr = "[Suspicious Bottle]",
+			it = "[Suspicious Bottle]",
+			pt = "[Suspicious Bottle]",
 			ru = "Подозрительная бутылка",
+			ko = "[Suspicious Bottle]",
 			cn = "可疑的瓶子",
 		},
 	},
 	[376124] = {
 		readable = "Bag of Enchanted Wind",
+		model = 2737661,
 		text = {
 			en = "Bag of Enchanted Wind",
 			es = "Bolsa de viento encantado",
 			de = "Tasche mit verzaubertem Wind",
 			fr = "Sac de vents enchantés",
+			it = "[Bag of Enchanted Wind]",
+			pt = "[Bag of Enchanted Wind]",
 			ru = "Мешок зачарованного ветра",
 			ko = "마법의 바람이 담긴 배낭",
 			cn = "魔风之袋",
@@ -38315,6 +46506,7 @@ root("ObjectDB", {
 	},
 	[376175] = {
 		readable = "Fullsails Supply Chest",
+		model = 2123117,
 		text = {
 			en = "Fullsails Supply Chest",
 			es = "Cofre de suministros Todavela",
@@ -38329,10 +46521,13 @@ root("ObjectDB", {
 	},
 	[376213] = {
 		readable = "Mysterious Wand",
+		model = 3036134,
 		text = {
 			en = "Mysterious Wand",
+			es = "[Mysterious Wand]",
 			de = "Geheimnisvoller Zauberstab",
 			fr = "Baguette mystérieuse",
+			it = "[Mysterious Wand]",
 			pt = "Varinha Misteriosa",
 			ru = "Таинственный жезл",
 			ko = "수수께끼의 지팡이",
@@ -38341,6 +46536,7 @@ root("ObjectDB", {
 	},
 	[376386] = {
 		readable = "Disturbed Dirt",
+		model = 4539374,
 		text = {
 			en = "Disturbed Dirt",
 			es = "Túmulo revuelto",
@@ -38355,6 +46551,7 @@ root("ObjectDB", {
 	},
 	[376426] = {
 		readable = "Magic-Bound Chest",
+		model = 3189120,
 		text = {
 			en = "Magic-Bound Chest",
 			es = "Cofre reforzado con magia",
@@ -38369,6 +46566,7 @@ root("ObjectDB", {
 	},
 	[376451] = {
 		readable = "Bronze Stopwatch",
+		model = 243239,
 		text = {
 			en = "Bronze Stopwatch",
 			es = "Cronómetro bronce",
@@ -38378,10 +46576,12 @@ root("ObjectDB", {
 			pt = "Cronômetro de Bronze",
 			ru = "Бронзовый секундомер",
 			ko = "청동 초시계",
+			cn = "[Bronze Stopwatch]",
 		},
 	},
 	[376580] = {
 		readable = "Djaradin Cache",
+		model = 970435,
 		text = {
 			en = "Djaradin Cache",
 			es = "Alijo djaradin",
@@ -38396,6 +46596,7 @@ root("ObjectDB", {
 	},
 	[376581] = {
 		readable = "Clan Chest",
+		model = 4299070,
 		text = {
 			en = "Clan Chest",
 			es = "Cofre de clan",
@@ -38410,6 +46611,7 @@ root("ObjectDB", {
 	},
 	[376582] = {
 		readable = "Tuskarr Chest",
+		model = 1602426,
 		text = {
 			en = "Tuskarr Chest",
 			es = "Cofre colmillarr",
@@ -38424,6 +46626,7 @@ root("ObjectDB", {
 	},
 	[376587] = {
 		readable = "Expedition Scout's Pack",
+		model = 936417,
 		text = {
 			en = "Expedition Scout's Pack",
 			es = "Mochila de explorador de expedición",
@@ -38438,16 +46641,22 @@ root("ObjectDB", {
 	},
 	[376657] = {
 		readable = "Ancient Monument",
+		model = 511490,
 		text = {
 			en = "Ancient Monument",
 			es = "Monumento antiguo",
 			de = "Uraltes Monument",
 			fr = "Monument ancien",
+			it = "[Ancient Monument]",
+			pt = "[Ancient Monument]",
+			ru = "Древний памятник",
+			ko = "[Ancient Monument]",
 			cn = "古代纪念碑",
 		},
 	},
 	[376757] = {
 		readable = "WANTED: Frigellus",
+		model = 199426,
 		text = {
 			en = "WANTED: Frigellus",
 			es = "SE BUSCA: Frigellus",
@@ -38462,6 +46671,7 @@ root("ObjectDB", {
 	},
 	[377114] = {
 		readable = "Coil of Heavy Rope",
+		model = 4392564,
 		text = {
 			en = "Coil of Heavy Rope",
 			es = "Rollo de cuerda pesada",
@@ -38476,10 +46686,14 @@ root("ObjectDB", {
 	},
 	[377233] = {
 		readable = "Hessethiash's Poorly Hidden Treasure",
+		model = 4216698,
 		text = {
 			en = "Hessethiash's Poorly Hidden Treasure",
+			es = "[Hessethiash's Poorly Hidden Treasure]",
 			de = "Hessethiashs erbärmlich versteckter Schatz",
 			fr = "Coffre au trésor mal caché d’Hessethiash",
+			it = "[Hessethiash's Poorly Hidden Treasure]",
+			pt = "[Hessethiash's Poorly Hidden Treasure]",
 			ru = "Плохо спрятанное сокровище Гессетиаша",
 			ko = "어설프게 숨긴 헤세티아쉬의 보물",
 			cn = "赫瑟赛亚什拙劣地隐藏起来的宝藏",
@@ -38487,31 +46701,52 @@ root("ObjectDB", {
 	},
 	[377317] = {
 		readable = "Treasure Hoard",
+		model = 1255019,
 		text = {
 			en = "Treasure Hoard",
+			es = "[Treasure Hoard]",
+			de = "[Treasure Hoard]",
+			fr = "[Treasure Hoard]",
+			it = "[Treasure Hoard]",
+			pt = "[Treasure Hoard]",
 			ru = "Куча сокровищ",
+			ko = "[Treasure Hoard]",
 			cn = "军团财宝",
 		},
 	},
 	[377458] = {
 		readable = "Abandoned Weapon Rack",
+		model = 4216978,
 		text = {
 			en = "Abandoned Weapon Rack",
+			es = "[Abandoned Weapon Rack]",
+			de = "[Abandoned Weapon Rack]",
 			fr = "Râtelier d’armes abandonné",
+			it = "[Abandoned Weapon Rack]",
+			pt = "[Abandoned Weapon Rack]",
 			ru = "Брошенная оружейная стойка",
+			ko = "[Abandoned Weapon Rack]",
 			cn = "被抛弃的武器架",
 		},
 	},
 	[377466] = {
 		readable = "Lost Draconic Hourglass",
+		model = 4570246,
 		text = {
 			en = "Lost Draconic Hourglass",
+			es = "[Lost Draconic Hourglass]",
+			de = "[Lost Draconic Hourglass]",
+			fr = "[Lost Draconic Hourglass]",
+			it = "[Lost Draconic Hourglass]",
+			pt = "[Lost Draconic Hourglass]",
 			ru = "Потерянные песочные часы драконов",
+			ko = "[Lost Draconic Hourglass]",
 			cn = "失落的巨龙沙漏",
 		},
 	},
 	[377485] = {
 		readable = "Sour Apple",
+		model = 960848,
 		text = {
 			en = "Sour Apple",
 			es = "Manzana ácida",
@@ -38526,6 +46761,7 @@ root("ObjectDB", {
 	},
 	[377499] = {
 		readable = "On the Origin of Draconic Species",
+		model = 4298560,
 		text = {
 			en = "On the Origin of Draconic Species",
 			es = "De los orígenes de las especies dracónicas",
@@ -38540,6 +46776,7 @@ root("ObjectDB", {
 	},
 	[377534] = {
 		readable = "Delivered Vault",
+		model = 4216697,
 		text = {
 			en = "Delivered Vault",
 			es = "Cofre entregado",
@@ -38554,6 +46791,7 @@ root("ObjectDB", {
 	},
 	[377899] = {
 		readable = "Hidden Hornswog Hostage",
+		model = 970227,
 		text = {
 			en = "Hidden Hornswog Hostage",
 			es = "Rehén oculto de los cornisapos",
@@ -38568,18 +46806,22 @@ root("ObjectDB", {
 	},
 	[377900] = {
 		readable = "Nokhud Warspear",
+		model = 4182555,
 		text = {
 			en = "Nokhud Warspear",
 			es = "Lanza de guerra Nokhud",
 			de = "Kriegsspeer der Nokhud",
 			fr = "Lance de guerre nokhud",
 			it = "Lancia da Guerra Nokhud",
+			pt = "[Nokhud Warspear]",
 			ru = "Боевое копье клана Нокхуд",
+			ko = "[Nokhud Warspear]",
 			cn = "诺库德战矛",
 		},
 	},
 	[377938] = {
 		readable = "Prismatic Leaper School",
+		model = 219406,
 		text = {
 			en = "Prismatic Leaper School",
 			es = "Banco de saltadores prismáticos",
@@ -38594,6 +46836,7 @@ root("ObjectDB", {
 	},
 	[378010] = {
 		readable = "Forgotten Dragon Treasure",
+		model = 4216697,
 		text = {
 			en = "Forgotten Dragon Treasure",
 			es = "Tesoro de dragón olvidado",
@@ -38608,14 +46851,22 @@ root("ObjectDB", {
 	},
 	[378047] = {
 		readable = "Emerald Chest",
+		model = 4216698,
 		text = {
 			en = "Emerald Chest",
+			es = "[Emerald Chest]",
+			de = "[Emerald Chest]",
 			fr = "Coffret d’émeraude",
+			it = "Cassa di Smeraldo",
+			pt = "[Emerald Chest]",
+			ru = "[Emerald Chest]",
+			ko = "[Emerald Chest]",
 			cn = "翡翠宝箱",
 		},
 	},
 	[378054] = {
 		readable = "Riptide Brew",
+		model = 304638,
 		text = {
 			en = "Riptide Brew",
 			es = "Bebida de mareaviva",
@@ -38630,6 +46881,7 @@ root("ObjectDB", {
 	},
 	[378088] = {
 		readable = "Crystalline Flower",
+		model = 1728502,
 		text = {
 			en = "Crystalline Flower",
 			es = "Flor cristalina",
@@ -38644,6 +46896,7 @@ root("ObjectDB", {
 	},
 	[378820] = {
 		readable = "Popfizz Punch",
+		model = 1634604,
 		text = {
 			en = "Popfizz Punch",
 			es = "Ponche pungás",
@@ -38658,6 +46911,7 @@ root("ObjectDB", {
 	},
 	[378857] = {
 		readable = "Lost Obsidian Cache",
+		model = 4216697,
 		text = {
 			en = "Lost Obsidian Cache",
 			es = "Alijo de obsidiana perdido",
@@ -38672,15 +46926,22 @@ root("ObjectDB", {
 	},
 	[379168] = {
 		readable = "Lost Cache Key",
+		model = 970206,
 		text = {
 			en = "Lost Cache Key",
+			es = "[Lost Cache Key]",
 			de = "Verlorener Truhenschlüssel",
+			fr = "[Lost Cache Key]",
+			it = "[Lost Cache Key]",
+			pt = "Chave do Baú Perdido",
 			ru = "Потерянный ключ от тайника",
+			ko = "[Lost Cache Key]",
 			cn = "失落的宝箱钥匙",
 		},
 	},
 	[379290] = {
 		readable = "Ornamented Statue",
+		model = 4329224,
 		text = {
 			en = "Ornamented Statue",
 			es = "Estatua adornada",
@@ -38695,18 +46956,22 @@ root("ObjectDB", {
 	},
 	[379296] = {
 		readable = "Broken Banding",
+		model = 197735,
 		text = {
 			en = "Broken Banding",
 			es = "Banda rota",
 			de = "Abgebrochene Leiste",
 			fr = "Bande brisée",
+			it = "[Broken Banding]",
 			pt = "Elo Quebrado",
 			ru = "Сломанная окантовка",
+			ko = "[Broken Banding]",
 			cn = "破裂的条带",
 		},
 	},
 	[379297] = {
 		readable = "Slam Bam Swill",
+		model = 903296,
 		text = {
 			en = "Slam Bam Swill",
 			es = "Al centro y pa' dentro",
@@ -38721,6 +46986,7 @@ root("ObjectDB", {
 	},
 	[379314] = {
 		readable = "Full Fishing Net",
+		model = 984224,
 		text = {
 			en = "Full Fishing Net",
 			es = "Red de pesca llena",
@@ -38735,6 +47001,7 @@ root("ObjectDB", {
 	},
 	[379321] = {
 		readable = "Mysterious Paw Print",
+		model = 659571,
 		text = {
 			en = "Mysterious Paw Print",
 			es = "Huella de zarpa misteriosa",
@@ -38744,15 +47011,19 @@ root("ObjectDB", {
 			pt = "Pegada Misteriosa",
 			ru = "Таинственный след лапы",
 			ko = "수수께끼의 발자취",
+			cn = "[Mysterious Paw Print]",
 		},
 	},
 	[380429] = {
 		readable = "Golden Claw",
+		model = 202801,
 		text = {
 			en = "Golden Claw",
 			es = "Zarpa dorada",
 			de = "Goldene Klaue",
 			fr = "Griffe d’or",
+			it = "Artiglio Dorato",
+			pt = "[Golden Claw]",
 			ru = "Золотой коготь",
 			ko = "황금 발톱",
 			cn = "金爪",
@@ -38760,18 +47031,22 @@ root("ObjectDB", {
 	},
 	[380430] = {
 		readable = "Tail Fragment",
+		model = 982123,
 		text = {
 			en = "Tail Fragment",
 			es = "Trozo de cola",
 			de = "Schwanzfragment",
 			fr = "Fragment de queue",
+			it = "Brandello di Coda",
 			pt = "Fragmento de Cauda",
 			ru = "Фрагмент хвоста",
+			ko = "[Tail Fragment]",
 			cn = "尾巴碎片",
 		},
 	},
 	[380457] = {
 		readable = "Experimental Decay Cauldron",
+		model = 984595,
 		text = {
 			en = "Experimental Decay Cauldron",
 			es = "Caldera de descomposición experimental",
@@ -38786,6 +47061,7 @@ root("ObjectDB", {
 	},
 	[380516] = {
 		readable = "Glimmer of Wisdom",
+		model = 166027,
 		text = {
 			en = "Glimmer of Wisdom",
 			es = "Destello de sabiduría",
@@ -38800,12 +47076,14 @@ root("ObjectDB", {
 	},
 	[380518] = {
 		readable = "Dislodged Dragoneye",
+		model = 1282673,
 		text = {
 			en = "Dislodged Dragoneye",
 		},
 	},
 	[380533] = {
 		readable = "Snow Covered Scroll",
+		model = 1391790,
 		text = {
 			en = "Snow Covered Scroll",
 			es = "Pergamino cubierto de nieve",
@@ -38814,11 +47092,13 @@ root("ObjectDB", {
 			it = "Pergamena Ricoperta di Neve",
 			pt = "Pergaminho Coberto de Neve",
 			ru = "Занесенный снегом свиток",
+			ko = "[Snow Covered Scroll]",
 			cn = "积雪覆盖的卷轴",
 		},
 	},
 	[380540] = {
 		readable = "Ornamented Statue",
+		model = 4524394,
 		text = {
 			en = "Ornamented Statue",
 			es = "Estatua adornada",
@@ -38833,6 +47113,7 @@ root("ObjectDB", {
 	},
 	[380545] = {
 		readable = "Painter's Pretty Jewel",
+		model = 1572186,
 		text = {
 			en = "Painter's Pretty Jewel",
 			es = "Joya bonita de pintor",
@@ -38847,6 +47128,7 @@ root("ObjectDB", {
 	},
 	[380547] = {
 		readable = "Decay-Infused Tanning Oil",
+		model = 3936820,
 		text = {
 			en = "Decay-Infused Tanning Oil",
 			es = "Aceite para curtir imbuido de decadencia",
@@ -38861,6 +47143,7 @@ root("ObjectDB", {
 	},
 	[380548] = {
 		readable = "Forgotten Jewelry Box",
+		model = 4551450,
 		text = {
 			en = "Forgotten Jewelry Box",
 			es = "Joyero olvidado",
@@ -38875,6 +47158,7 @@ root("ObjectDB", {
 	},
 	[380549] = {
 		readable = "Intriguing Bolt of Blue Cloth",
+		model = 1284871,
 		text = {
 			en = "Intriguing Bolt of Blue Cloth",
 			es = "Rollo de tela azul intrigante",
@@ -38889,6 +47173,7 @@ root("ObjectDB", {
 	},
 	[380550] = {
 		readable = "Forgetful Apprentice's Tome",
+		model = 949619,
 		text = {
 			en = "Forgetful Apprentice's Tome",
 			es = "Escrito de aprendiz olvidadizo",
@@ -38903,42 +47188,58 @@ root("ObjectDB", {
 	},
 	[380551] = {
 		readable = "Mysterious Cauldron",
+		model = 4627234,
 		text = {
 			en = "Mysterious Cauldron",
 		},
 	},
 	[380552] = {
 		readable = "Mysterious Cauldron",
+		model = 4627235,
 		text = {
 			en = "Mysterious Cauldron",
 		},
 	},
 	[380553] = {
 		readable = "Mysterious Cauldron",
+		model = 4627237,
 		text = {
 			en = "Mysterious Cauldron",
 		},
 	},
 	[380554] = {
 		readable = "Well-Danced Drum",
+		model = 850520,
 		text = {
 			en = "Well-Danced Drum",
 			es = "Tambor ajado",
 			de = "Gut eingetanzte Trommel",
 			fr = "Tambour dansant",
 			it = "Tamburo Ritmico",
+			pt = "[Well-Danced Drum]",
 			ru = "Побывавший в деле барабан",
+			ko = "[Well-Danced Drum]",
 			cn = "谐舞之鼓",
 		},
 	},
 	[380555] = {
 		readable = "Ace of Storms",
+		model = 1551359,
 		text = {
 			en = "Ace of Storms",
+			es = "As de Tormentas",
+			de = "Sturm-Ass",
+			fr = "As d’Orages",
+			it = "Asso di Tempeste",
+			pt = "Ás de Tormentas",
+			ru = "Туз из колоды Вихрей",
+			ko = "폭풍 A",
+			cn = "风暴之一",
 		},
 	},
 	[380556] = {
 		readable = "Harmonic Chest",
+		model = 3189120,
 		text = {
 			en = "Harmonic Chest",
 			es = "Cofre armónico",
@@ -38953,16 +47254,22 @@ root("ObjectDB", {
 	},
 	[380558] = {
 		readable = "Enchanted Debris",
+		model = 1104884,
 		text = {
 			en = "Enchanted Debris",
+			es = "[Enchanted Debris]",
 			de = "Verzauberte Trümmer",
+			fr = "[Enchanted Debris]",
 			it = "Macerie Incantate",
+			pt = "[Enchanted Debris]",
 			ru = "Зачарованные обломки",
+			ko = "[Enchanted Debris]",
 			cn = "魔法残骸",
 		},
 	},
 	[380559] = {
 		readable = "Frostforged Potion",
+		model = 3489760,
 		text = {
 			en = "Frostforged Potion",
 			es = "Poción forjada con Escarcha",
@@ -38977,53 +47284,112 @@ root("ObjectDB", {
 	},
 	[380560] = {
 		readable = "Disabled Tesla Coil",
+		model = 511490,
 		text = {
 			en = "Disabled Tesla Coil",
 			es = "Bobina Tesla desactivada",
 			de = "Deaktivierte Teslaspule",
 			fr = "Bobine Tesla neutralisée",
+			it = "[Disabled Tesla Coil]",
+			pt = "[Disabled Tesla Coil]",
 			ru = "Отключенная катушка Теслы",
 			ko = "비활성화된 테슬라 코일",
+			cn = "[Disabled Tesla Coil]",
 		},
 	},
 	[380561] = {
 		readable = "Two of Storms",
+		model = 1551359,
 		text = {
 			en = "Two of Storms",
+			es = "Dos de Tormentas",
+			de = "Sturm-Zwei",
+			fr = "Deux d’Orages",
+			it = "Due di Tempeste",
+			pt = "Dois de Tormentas",
+			ru = "Двойка из колоды Вихрей",
+			ko = "폭풍 2",
+			cn = "风暴之二",
 		},
 	},
 	[380562] = {
 		readable = "Three of Storms",
+		model = 1551359,
 		text = {
 			en = "Three of Storms",
+			es = "Tres de Tormentas",
+			de = "Sturm-Drei",
+			fr = "Trois d’Orages",
+			it = "Tre di Tempeste",
+			pt = "Três de Tormentas",
+			ru = "Тройка из колоды Вихрей",
+			ko = "폭풍 3",
+			cn = "风暴之三",
 		},
 	},
 	[380563] = {
 		readable = "Four of Storms",
+		model = 1551359,
 		text = {
 			en = "Four of Storms",
+			es = "Cuatro de Tormentas",
+			de = "Sturm-Vier",
+			fr = "Quatre d’Orages",
+			it = "Quattro di Tempeste",
+			pt = "Quatro de Tormentas",
+			ru = "Четверка из колоды Вихрей",
+			ko = "폭풍 4",
+			cn = "风暴之四",
 		},
 	},
 	[380564] = {
 		readable = "Five of Storms",
+		model = 1551359,
 		text = {
 			en = "Five of Storms",
+			es = "Cinco de Tormentas",
+			de = "Sturm-Fünf",
+			fr = "Cinq d’Orages",
+			it = "Cinque di Tempeste",
+			pt = "Cinco de Raios",
+			ru = "Пятерка из колоды Вихрей",
+			ko = "폭풍 5",
+			cn = "风暴之五",
 		},
 	},
 	[380565] = {
 		readable = "Six of Storms",
+		model = 1551359,
 		text = {
 			en = "Six of Storms",
+			es = "Seis de Tormentas",
+			de = "Sturm-Sechs",
+			fr = "Six d’Orages",
+			it = "Sei di Tempeste",
+			pt = "Seis de Tormentas",
+			ru = "Шестерка из колоды Вихрей",
+			ko = "폭풍 6",
+			cn = "风暴之六",
 		},
 	},
 	[380566] = {
 		readable = "Seven of Storms",
+		model = 1551359,
 		text = {
 			en = "Seven of Storms",
+			es = "Siete de Tormentas",
+			de = "Sturm-Sieben",
+			fr = "Sept d’Orages",
+			it = "Sette di Tempeste",
+			pt = "Sete de Tormentas",
+			ru = "Семерка из колоды Вихрей",
+			ko = "폭풍 7",
+			cn = "风暴之七",
 		},
 	},
 	[380567] = {
 		readable = "Eight of Storms",
+		model = 1551359,
 		text = {
 			en = "Eight of Storms",
 			es = "Ocho de Tormentas",
@@ -39038,6 +47404,7 @@ root("ObjectDB", {
 	},
 	[380569] = {
 		readable = "Crystalline Overgrowth",
+		model = 1058986,
 		text = {
 			en = "Crystalline Overgrowth",
 			es = "Vegetación cristalina",
@@ -39052,15 +47419,22 @@ root("ObjectDB", {
 	},
 	[380570] = {
 		readable = "Curious Glyph",
+		model = 4326554,
 		text = {
 			en = "Curious Glyph",
+			es = "Glifo curioso",
 			de = "Merkwürdige Glyphe",
 			fr = "Glyphe étrange",
+			it = "[Curious Glyph]",
+			pt = "[Curious Glyph]",
+			ru = "[Curious Glyph]",
+			ko = "[Curious Glyph]",
 			cn = "奇特的雕文",
 		},
 	},
 	[380571] = {
 		readable = "Boomthyr Rocket",
+		model = 985369,
 		text = {
 			en = "Boomthyr Rocket",
 			es = "Cohete bumthyr",
@@ -39075,6 +47449,7 @@ root("ObjectDB", {
 	},
 	[380577] = {
 		readable = "Lofty Malygite",
+		model = 3489761,
 		text = {
 			en = "Lofty Malygite",
 			es = "Malygita excelsa",
@@ -39089,6 +47464,7 @@ root("ObjectDB", {
 	},
 	[380578] = {
 		readable = "How to Train Your Whelpling",
+		model = 4298560,
 		text = {
 			en = "How to Train Your Whelpling",
 			es = "Cómo entrenar a tu vástago",
@@ -39103,6 +47479,7 @@ root("ObjectDB", {
 	},
 	[380579] = {
 		readable = "Spare Djaradin Tools",
+		model = 4235856,
 		text = {
 			en = "Spare Djaradin Tools",
 			es = "Herramientas djaradin de repuesto",
@@ -39117,6 +47494,7 @@ root("ObjectDB", {
 	},
 	[380580] = {
 		readable = "Lava-Infused Seed",
+		model = 4034982,
 		text = {
 			en = "Lava-Infused Seed",
 			es = "Semilla imbuida de lava",
@@ -39131,6 +47509,7 @@ root("ObjectDB", {
 	},
 	[380583] = {
 		readable = "Decaying Brackenhide Blanket",
+		model = 978650,
 		text = {
 			en = "Decaying Brackenhide Blanket",
 			es = "Manta Frondacuero deshecha",
@@ -39145,6 +47524,7 @@ root("ObjectDB", {
 	},
 	[380585] = {
 		readable = "Erupted Alexstraszite Cluster",
+		model = 1383944,
 		text = {
 			en = "Erupted Alexstraszite Cluster",
 			es = "Cúmulo de alexstraszita en erupción",
@@ -39159,10 +47539,13 @@ root("ObjectDB", {
 	},
 	[380586] = {
 		readable = "Mysterious Cauldrons",
+		model = 124639,
 		text = {
 			en = "Mysterious Cauldrons",
+			es = "[Mysterious Cauldrons]",
 			de = "Mysteriöse Kessel",
 			fr = "Chaudrons mystérieux",
+			it = "[Mysterious Cauldrons]",
 			pt = "Caldeirões Misteriosos",
 			ru = "Таинственные котлы",
 			ko = "수수께끼의 가마솥",
@@ -39171,6 +47554,7 @@ root("ObjectDB", {
 	},
 	[380587] = {
 		readable = "Crate of Treated Hides",
+		model = 4078325,
 		text = {
 			en = "Crate of Treated Hides",
 			es = "Cajón de pieles tratadas",
@@ -39185,6 +47569,7 @@ root("ObjectDB", {
 	},
 	[380588] = {
 		readable = "Miniature Bronze Dragonflight Banner",
+		model = 4034269,
 		text = {
 			en = "Miniature Bronze Dragonflight Banner",
 			es = "Estandarte del Vuelo Bronce en miniatura",
@@ -39199,16 +47584,22 @@ root("ObjectDB", {
 	},
 	[380589] = {
 		readable = "Faintly Enchanted Remains",
+		model = 1097912,
 		text = {
 			en = "Faintly Enchanted Remains",
+			es = "[Faintly Enchanted Remains]",
 			de = "Leicht verzauberte Überreste",
 			fr = "Restes légèrement enchantés",
+			it = "[Faintly Enchanted Remains]",
+			pt = "[Faintly Enchanted Remains]",
 			ru = "Останки со следами магии",
+			ko = "[Faintly Enchanted Remains]",
 			cn = "稍微有一点魔法的残留物",
 		},
 	},
 	[380590] = {
 		readable = "Well-Insulated Mug",
+		model = 4659624,
 		text = {
 			en = "Well-Insulated Mug",
 			es = "Jarra bien aislada",
@@ -39223,6 +47614,7 @@ root("ObjectDB", {
 	},
 	[380591] = {
 		readable = "Closely Guarded Shiny",
+		model = 4320282,
 		text = {
 			en = "Closely Guarded Shiny",
 			es = "Tesoro fuertemente vigilado",
@@ -39237,6 +47629,7 @@ root("ObjectDB", {
 	},
 	[380592] = {
 		readable = "Stormbound Horn",
+		model = 4559315,
 		text = {
 			en = "Stormbound Horn",
 			es = "Cuerno vinculado a la tormenta",
@@ -39251,6 +47644,7 @@ root("ObjectDB", {
 	},
 	[380593] = {
 		readable = "Bag of Decayed Scales",
+		model = 3936818,
 		text = {
 			en = "Bag of Decayed Scales",
 			es = "Bolsa de escamas deterioradas",
@@ -39265,6 +47659,7 @@ root("ObjectDB", {
 	},
 	[380595] = {
 		readable = "Frosted Parchment",
+		model = 968422,
 		text = {
 			en = "Frosted Parchment",
 			es = "Papiro con escarcha",
@@ -39279,6 +47674,7 @@ root("ObjectDB", {
 	},
 	[380597] = {
 		readable = "Battle Hardened Centaur Carpet",
+		model = 4621382,
 		text = {
 			en = "Battle Hardened Centaur Carpet",
 			es = "Alfombra de centauro curtida en combate",
@@ -39293,21 +47689,37 @@ root("ObjectDB", {
 	},
 	[380598] = {
 		readable = "Singed Chest",
+		model = 446673,
 		text = {
 			en = "Singed Chest",
+			es = "[Singed Chest]",
 			de = "Angesengte Kiste",
 			fr = "Coffre roussi",
+			it = "[Singed Chest]",
+			pt = "[Singed Chest]",
 			ru = "Опаленный сундук",
+			ko = "[Singed Chest]",
+			cn = "[Singed Chest]",
 		},
 	},
 	[380599] = {
 		readable = "Catnip Frond",
+		model = 4052245,
 		text = {
 			en = "Catnip Frond",
+			es = "Fronda de hierba gatera",
+			de = "Katzenminzenwedel",
+			fr = "Feuille d’herbe à chat",
+			it = "Fronda di Erba Gatta",
+			pt = "Fronde de Erva-do-gato",
+			ru = "Заколдованная вайя",
+			ko = "개박하 줄기",
+			cn = "猫薄荷复叶",
 		},
 	},
 	[380600] = {
 		readable = "Enriched Earthen Shard",
+		model = 4632572,
 		text = {
 			en = "Enriched Earthen Shard",
 			es = "Fragmento terráneo enriquecido",
@@ -39322,6 +47734,7 @@ root("ObjectDB", {
 	},
 	[380601] = {
 		readable = "Dusty Darkmoon Card",
+		model = 191029,
 		text = {
 			en = "Dusty Darkmoon Card",
 			es = "Naipe de la Luna Negra polvoriento",
@@ -39336,6 +47749,7 @@ root("ObjectDB", {
 	},
 	[380602] = {
 		readable = "Wind-Blessed Hide",
+		model = 4182544,
 		text = {
 			en = "Wind-Blessed Hide",
 			es = "Pellejo bendecido por el viento",
@@ -39350,6 +47764,7 @@ root("ObjectDB", {
 	},
 	[380604] = {
 		readable = "Mysterious Banner",
+		model = 429167,
 		text = {
 			en = "Mysterious Banner",
 			es = "Estandarte misterioso",
@@ -39364,6 +47779,7 @@ root("ObjectDB", {
 	},
 	[380605] = {
 		readable = "Contraband Concoction",
+		model = 892753,
 		text = {
 			en = "Contraband Concoction",
 			es = "Brebaje de contrabando",
@@ -39378,6 +47794,7 @@ root("ObjectDB", {
 	},
 	[380607] = {
 		readable = "Itinerant Singed Fabric",
+		model = 3285008,
 		text = {
 			en = "Itinerant Singed Fabric",
 			es = "Tejido chamuscado itinerante",
@@ -39392,17 +47809,22 @@ root("ObjectDB", {
 	},
 	[380608] = {
 		readable = "Silky Surprise",
+		model = 915959,
 		text = {
 			en = "Silky Surprise",
 			es = "Sorpresa sedosa",
 			de = "Seidene Überraschung",
+			fr = "[Silky Surprise]",
+			it = "[Silky Surprise]",
 			pt = "Surpresa Sedosa",
 			ru = "Шелковый сюрприз",
+			ko = "[Silky Surprise]",
 			cn = "丝质惊喜",
 		},
 	},
 	[380610] = {
 		readable = "Pulsing Earth Rune",
+		model = 4485599,
 		text = {
 			en = "Pulsing Earth Rune",
 			es = "Runa de Tierra palpitante",
@@ -39417,6 +47839,7 @@ root("ObjectDB", {
 	},
 	[380611] = {
 		readable = "Canteen of Suspicious Water",
+		model = 4198215,
 		text = {
 			en = "Canteen of Suspicious Water",
 			es = "Cantimplora de agua sospechosa",
@@ -39431,6 +47854,7 @@ root("ObjectDB", {
 	},
 	[380612] = {
 		readable = "Sign Language Reference Sheet",
+		model = 3756062,
 		text = {
 			en = "Sign Language Reference Sheet",
 			es = "Hoja de referencia de lengua de signos",
@@ -39445,6 +47869,7 @@ root("ObjectDB", {
 	},
 	[380615] = {
 		readable = "Poacher's Pack",
+		model = 936417,
 		text = {
 			en = "Poacher's Pack",
 			es = "Mochila de cazador furtivo",
@@ -39459,6 +47884,7 @@ root("ObjectDB", {
 	},
 	[380616] = {
 		readable = "Small Basket of Firewater Powder",
+		model = 1118052,
 		text = {
 			en = "Small Basket of Firewater Powder",
 			es = "Cesta pequeña de polvo de aguardiente",
@@ -39473,6 +47899,7 @@ root("ObjectDB", {
 	},
 	[380617] = {
 		readable = "Qalashi Weapon Diagram",
+		model = 1063236,
 		text = {
 			en = "Qalashi Weapon Diagram",
 			es = "Diagrama de arma qalashi",
@@ -39487,6 +47914,7 @@ root("ObjectDB", {
 	},
 	[380618] = {
 		readable = "Draconic Flux",
+		model = 4510771,
 		text = {
 			en = "Draconic Flux",
 			es = "Flujo dracónico",
@@ -39501,6 +47929,7 @@ root("ObjectDB", {
 	},
 	[380619] = {
 		readable = "Curious Ingots",
+		model = 3036730,
 		text = {
 			en = "Curious Ingots",
 			es = "Lingotes curiosos",
@@ -39515,6 +47944,7 @@ root("ObjectDB", {
 	},
 	[380620] = {
 		readable = "Ancient Spear Shards",
+		model = 4621370,
 		text = {
 			en = "Ancient Spear Shards",
 			es = "Fragmentos de lanza ancestral",
@@ -39529,6 +47959,7 @@ root("ObjectDB", {
 	},
 	[380623] = {
 		readable = "Spelltouched Tongs",
+		model = 3036732,
 		text = {
 			en = "Spelltouched Tongs",
 			es = "Tenazas imbuidas de magia",
@@ -39543,6 +47974,7 @@ root("ObjectDB", {
 	},
 	[380643] = {
 		readable = "Flashfrozen Scroll",
+		model = 4623329,
 		text = {
 			en = "Flashfrozen Scroll",
 			es = "Pergamino congelado instantáneamente",
@@ -39557,6 +47989,7 @@ root("ObjectDB", {
 	},
 	[380647] = {
 		readable = "Forgotten Arcane Tomne",
+		model = 4298563,
 		text = {
 			en = "Forgotten Arcane Tomne",
 			es = "Escrito Arcano olvidado",
@@ -39571,6 +48004,7 @@ root("ObjectDB", {
 	},
 	[380648] = {
 		readable = "Odd Book",
+		model = 4298563,
 		text = {
 			en = "Odd Book",
 			es = "Libro extraño",
@@ -39585,6 +48019,7 @@ root("ObjectDB", {
 	},
 	[380652] = {
 		readable = "Fractured Titanic Sphere",
+		model = 4609986,
 		text = {
 			en = "Fractured Titanic Sphere",
 			es = "Esfera de los titanes fracturada",
@@ -39599,6 +48034,7 @@ root("ObjectDB", {
 	},
 	[380653] = {
 		readable = "Yennu's Kite",
+		model = 4636941,
 		text = {
 			en = "Yennu's Kite",
 			es = "Cometa de Yennu",
@@ -39613,6 +48049,7 @@ root("ObjectDB", {
 	},
 	[380654] = {
 		readable = "Dead Man's Chestplate",
+		model = 3738612,
 		text = {
 			en = "Dead Man's Chestplate",
 			es = "Peto de un hombre muerto",
@@ -39627,6 +48064,7 @@ root("ObjectDB", {
 	},
 	[380709] = {
 		readable = "Falconer Gauntlet Drawings",
+		model = 929403,
 		text = {
 			en = "Falconer Gauntlet Drawings",
 			es = "Dibujos de guanteletes de halconero",
@@ -39641,6 +48079,7 @@ root("ObjectDB", {
 	},
 	[380763] = {
 		readable = "Ancient Dragonweave Loom",
+		model = 4498653,
 		text = {
 			en = "Ancient Dragonweave Loom",
 			es = "Telar de tejido de dragón ancestral",
@@ -39655,6 +48094,7 @@ root("ObjectDB", {
 	},
 	[380822] = {
 		readable = "Igneous Gem",
+		model = 1383908,
 		text = {
 			en = "Igneous Gem",
 			es = "Gema ígnea",
@@ -39663,11 +48103,13 @@ root("ObjectDB", {
 			it = "Gemma Ignea",
 			pt = "Gema Ígnea",
 			ru = "Огневой самоцвет",
+			ko = "[Igneous Gem]",
 			cn = "火成岩宝石",
 		},
 	},
 	[380840] = {
 		readable = "Torn Riding Pack",
+		model = 4561104,
 		text = {
 			en = "Torn Riding Pack",
 			es = "Talega de montar rota",
@@ -39682,6 +48124,7 @@ root("ObjectDB", {
 	},
 	[380842] = {
 		readable = "Gold Coin",
+		model = 916363,
 		text = {
 			en = "Gold Coin",
 			es = "Moneda de oro",
@@ -39696,6 +48139,7 @@ root("ObjectDB", {
 	},
 	[380843] = {
 		readable = "Rubber Fish",
+		model = 4575531,
 		text = {
 			en = "Rubber Fish",
 			es = "Pez de goma",
@@ -39710,16 +48154,22 @@ root("ObjectDB", {
 	},
 	[380847] = {
 		readable = "Emerald Gem Cluster",
+		model = 1383923,
 		text = {
 			en = "Emerald Gem Cluster",
 			es = "Montón de esmeraldas",
+			de = "Smaragdedelsteinklumpen",
 			fr = "Amas d’émeraudes",
+			it = "[Emerald Gem Cluster]",
+			pt = "[Emerald Gem Cluster]",
 			ru = "Друза изумрудов",
+			ko = "[Emerald Gem Cluster]",
 			cn = "翡翠宝石簇",
 		},
 	},
 	[380859] = {
 		readable = "Tuskarr Toy Boat",
+		model = 4615240,
 		text = {
 			en = "Tuskarr Toy Boat",
 			es = "Barco de juguete colmillarr",
@@ -39734,6 +48184,7 @@ root("ObjectDB", {
 	},
 	[380860] = {
 		readable = "Centaur Horn",
+		model = 4559315,
 		text = {
 			en = "Centaur Horn",
 			es = "Cuerno de centauro",
@@ -39748,11 +48199,13 @@ root("ObjectDB", {
 	},
 	[380867] = {
 		readable = "Amber Gem Cluster",
+		model = 193425,
 		text = {
 			en = "Amber Gem Cluster",
 			es = "Montón de ámbares",
 			de = "Bernsteinklumpen",
 			fr = "Amas d’ambre",
+			it = "Formazione di Gemme d'Ambra",
 			pt = "Drusa de Gemas de Âmbar",
 			ru = "Янтарная друза",
 			ko = "호박석 보석 덩어리",
@@ -39761,6 +48214,7 @@ root("ObjectDB", {
 	},
 	[380902] = {
 		readable = "Fields of Ferocity",
+		model = 3756062,
 		text = {
 			en = "Fields of Ferocity",
 			es = "Campos de la Ferocidad",
@@ -39775,6 +48229,7 @@ root("ObjectDB", {
 	},
 	[380918] = {
 		readable = "Broken Ornamented Statue",
+		model = 4609987,
 		text = {
 			en = "Broken Ornamented Statue",
 			es = "Estatua adornada rota",
@@ -39789,20 +48244,28 @@ root("ObjectDB", {
 	},
 	[380963] = {
 		readable = "Small Pile of Ash",
+		model = 3847951,
 		text = {
 			en = "Small Pile of Ash",
 			es = "Montón de ceniza pequeño",
 			de = "Kleiner Aschehaufen",
 			fr = "Petit tas de cendres",
+			it = "[Small Pile of Ash]",
 			pt = "Montinho de Cinzas",
 			ru = "Кучка пепла",
+			ko = "작은 잿더미",
+			cn = "[Small Pile of Ash]",
 		},
 	},
 	[380991] = {
 		readable = "Dirt Mound",
+		model = 189528,
 		text = {
 			en = "Dirt Mound",
+			es = "[Dirt Mound]",
+			de = "Erdhaufen",
 			fr = "Tas de terre",
+			it = "[Dirt Mound]",
 			pt = "Monturo de Terra",
 			ru = "Куча земли",
 			ko = "흙더미",
@@ -39811,6 +48274,7 @@ root("ObjectDB", {
 	},
 	[381035] = {
 		readable = "The Great Vault",
+		model = 4641229,
 		text = {
 			en = "The Great Vault",
 			es = "La gran cámara",
@@ -39825,6 +48289,7 @@ root("ObjectDB", {
 	},
 	[381045] = {
 		readable = "Golden Dragon Goblet",
+		model = 4618714,
 		text = {
 			en = "Golden Dragon Goblet",
 			es = "Cáliz dracónico dorado",
@@ -39839,6 +48304,7 @@ root("ObjectDB", {
 	},
 	[381065] = {
 		readable = "Broken Waygate",
+		model = 367743,
 		text = {
 			en = "Broken Waygate",
 			es = "Puerta rota",
@@ -39853,6 +48319,7 @@ root("ObjectDB", {
 	},
 	[381069] = {
 		readable = "Full Fishing Net",
+		model = 984224,
 		text = {
 			en = "Full Fishing Net",
 			es = "Red de pesca llena",
@@ -39867,6 +48334,7 @@ root("ObjectDB", {
 	},
 	[381094] = {
 		readable = "Elegant Canvas Brush",
+		model = 4504448,
 		text = {
 			en = "Elegant Canvas Brush",
 			es = "Pincel de lienzo elegante",
@@ -39881,9 +48349,14 @@ root("ObjectDB", {
 	},
 	[381107] = {
 		readable = "Sand Pile",
+		model = 2059166,
 		text = {
 			en = "Sand Pile",
+			es = "[Sand Pile]",
 			de = "Sandhaufen",
+			fr = "[Sand Pile]",
+			it = "[Sand Pile]",
+			pt = "[Sand Pile]",
 			ru = "Кучка песка",
 			ko = "모래 더미",
 			cn = "沙堆",
@@ -39891,6 +48364,7 @@ root("ObjectDB", {
 	},
 	[381108] = {
 		readable = "Yennu's Map",
+		model = 936411,
 		text = {
 			en = "Yennu's Map",
 			es = "Mapa de Yennu",
@@ -39905,6 +48379,7 @@ root("ObjectDB", {
 	},
 	[381110] = {
 		readable = "Forgotten Jewel Box",
+		model = 4551449,
 		text = {
 			en = "Forgotten Jewel Box",
 			es = "Joyero olvidado",
@@ -39913,11 +48388,13 @@ root("ObjectDB", {
 			it = "Scrigno di Gioielli Dimenticati",
 			pt = "Caixa de Joias Esquecida",
 			ru = "Забытый ларчик самоцветов",
+			ko = "[Forgotten Jewel Box]",
 			cn = "被遗忘的宝石盒",
 		},
 	},
 	[381153] = {
 		readable = "Ruby Gem Cluster",
+		model = 202146,
 		text = {
 			en = "Ruby Gem Cluster",
 			es = "Montón de rubíes",
@@ -39926,28 +48403,50 @@ root("ObjectDB", {
 			it = "Formazione di Gemme di Rubino",
 			pt = "Drusa de Gemas de Rubi",
 			ru = "Друза рубинов",
+			ko = "[Ruby Gem Cluster]",
 			cn = "玛瑙宝石簇",
+		},
+	},
+	[381154] = {
+		readable = "Writhebark",
+		model = 4546834,
+		text = {
+			en = "Writhebark",
+			es = "Pino retorcido",
+			de = "Krümmrinde",
+			fr = "Écorce tordue",
+			it = "Scorzatorta",
+			pt = "Casca Retorcida",
+			ru = "Витая кора",
+			ko = "격통껍질",
+			cn = "歪扭树皮",
 		},
 	},
 	[381157] = {
 		readable = "Sapphire Gem Cluster",
+		model = 1332822,
 		text = {
 			en = "Sapphire Gem Cluster",
 			es = "Montón de zafiros",
 			de = "Saphiredelsteinklumpen",
 			fr = "Amas de saphirs",
+			it = "[Sapphire Gem Cluster]",
+			pt = "[Sapphire Gem Cluster]",
 			ru = "Друза сапфиров",
+			ko = "[Sapphire Gem Cluster]",
 			cn = "蓝玉宝石簇",
 		},
 	},
 	[381158] = {
 		readable = "Gnoll Fiend Flail",
+		model = 4064183,
 		text = {
 			en = "Gnoll Fiend Flail",
 			es = "Mayal de gnoll maligno",
 			de = "Dreschflegel des Gnollunholds",
 			fr = "Fléau de démon gnoll",
 			it = "Flagello Demoniaco degli Gnoll",
+			pt = "[Gnoll Fiend Flail]",
 			ru = "Цеп гнолла-изверга",
 			ko = "놀 마귀 도리깨",
 			cn = "豺狼人怪物连枷",
@@ -39955,6 +48454,7 @@ root("ObjectDB", {
 	},
 	[381160] = {
 		readable = "Lost Compass",
+		model = 4323282,
 		text = {
 			en = "Lost Compass",
 			es = "Brújula perdida",
@@ -39967,8 +48467,249 @@ root("ObjectDB", {
 			cn = "失落的罗盘",
 		},
 	},
+	[381196] = {
+		readable = "Titan-Touched Writhebark",
+		model = 4546834,
+		text = {
+			en = "Titan-Touched Writhebark",
+			es = "Pino retorcido tocado por los titanes",
+			de = "Titanenberührte Krümmrinde",
+			fr = "Écorce tordue touchée par les Titans",
+			it = "Scorzatorta Toccata dai Titani",
+			pt = "Casca Retorcida Tocada pelos Titãs",
+			ru = "Осененная титанами витая кора",
+			ko = "티탄에 물든 격통껍질",
+			cn = "泰坦点化的歪扭树皮",
+		},
+	},
+	[381197] = {
+		readable = "Infurious Writhebark",
+		model = 4546834,
+		text = {
+			en = "Infurious Writhebark",
+			es = "Pino retorcido furioso",
+			de = "Wutentbrannte Krümmrinde",
+			fr = "Écorce tordue ardente",
+			it = "Scorzatorta Impetuosa",
+			pt = "Casca Retorcida em Fúria",
+			ru = "Ярая витая кора",
+			ko = "분노의 격통껍질",
+			cn = "[Infurious Writhebark]",
+		},
+	},
+	[381198] = {
+		readable = "Decayed Writhebark",
+		model = 4546836,
+		text = {
+			en = "Decayed Writhebark",
+			es = "Pino retorcido descompuesto",
+			de = "Verrottete Krümmrinde",
+			fr = "Écorce tordue décomposée",
+			it = "Scorzatorta Decaduta",
+			pt = "Casca Retorcida Decrépita",
+			ru = "Сгнившая витая кора",
+			ko = "부패한 격통껍질",
+			cn = "腐朽歪扭树皮",
+		},
+	},
+	[381199] = {
+		readable = "Windswept Writhebark",
+		model = 4546834,
+		text = {
+			en = "Windswept Writhebark",
+			es = "Pino retorcido arrastrado por el viento",
+			de = "Windgepeitschte Krümmrinde",
+			fr = "Écorce tordue balayée par le vent",
+			it = "Scorzatorta Scompigliata",
+			pt = "Casca Retorcida Levada pelo Vento",
+			ru = "Обветренная витая кора",
+			ko = "바람결 격통껍질",
+			cn = "啸风歪扭树皮",
+		},
+	},
+	[381200] = {
+		readable = "Frigid Writhebark",
+		model = 4546834,
+		text = {
+			en = "Frigid Writhebark",
+			es = "Pino retorcido gélido",
+			de = "Eisige Krümmrinde",
+			fr = "Écorce tordue algide",
+			it = "Scorzatorta Gelata",
+			pt = "Casca Retorcida Frígida",
+			ru = "Морозная витая кора",
+			ko = "혹한의 격통껍질",
+			cn = "冷冽歪扭树皮",
+		},
+	},
+	[381201] = {
+		readable = "Frigid Saxifrage",
+		model = 4558389,
+		text = {
+			en = "Frigid Saxifrage",
+			es = "Saxifraga gélida",
+			de = "Eisiges Steinbrich",
+			fr = "Saxifrage algide",
+			it = "Sassifraga Gelata",
+			pt = "Quebra-pedra Frígida",
+			ru = "Ледяная камнеломка",
+			ko = "혹한의 다년초",
+			cn = "冷冽虎耳草",
+		},
+	},
+	[381202] = {
+		readable = "Windswept Saxifrage",
+		model = 4558389,
+		text = {
+			en = "Windswept Saxifrage",
+			es = "Saxifraga arrastrada por el viento",
+			de = "Windgepeitschtes Steinbrich",
+			fr = "Saxifrage balayée par le vent",
+			it = "Sassifraga Scompigliata",
+			pt = "Quebra-pedra Levada pelo Vento",
+			ru = "Обветренная камнеломка",
+			ko = "바람결 다년초",
+			cn = "啸风虎耳草",
+		},
+	},
+	[381203] = {
+		readable = "Decayed Saxifrage",
+		model = 4558389,
+		text = {
+			en = "Decayed Saxifrage",
+			es = "Saxifraga descompuesta",
+			de = "Verrottetes Steinbrich",
+			fr = "Saxifrage décomposée",
+			it = "Sassifraga Decaduta",
+			pt = "Quebra-pedra Decrépita",
+			ru = "Сгнившая камнеломка",
+			ko = "부패한 다년초",
+			cn = "腐朽虎耳草",
+		},
+	},
+	[381204] = {
+		readable = "Infurious Saxifrage",
+		model = 4558389,
+		text = {
+			en = "Infurious Saxifrage",
+			es = "Saxifraga furiosa",
+			de = "Wutentbranntes Steinbrich",
+			fr = "Saxifrage ardente",
+			it = "Sassifraga Impetuosa",
+			pt = "Quebra-pedra em Fúria",
+			ru = "Ярая камнеломка",
+			ko = "분노의 다년초",
+			cn = "[Infurious Saxifrage]",
+		},
+	},
+	[381205] = {
+		readable = "Titan-Touched Saxifrage",
+		model = 4558389,
+		text = {
+			en = "Titan-Touched Saxifrage",
+			es = "Saxifraga tocada por los titanes",
+			de = "Titanenberührtes Steinbrich",
+			fr = "Saxifrage touchée par les Titans",
+			it = "Sassifraga Toccata dai Titani",
+			pt = "Quebra-pedra Tocada pelos Titãs",
+			ru = "Осененная титанами камнеломка",
+			ko = "티탄에 물든 다년초",
+			cn = "泰坦点化的虎耳草",
+		},
+	},
+	[381207] = {
+		readable = "Saxifrage",
+		model = 4558389,
+		text = {
+			en = "Saxifrage",
+			es = "Saxifraga",
+			de = "Steinbrich",
+			fr = "Saxifrage",
+			it = "Sassifraga",
+			pt = "Quebra-pedra",
+			ru = "Камнеломка",
+			ko = "다년초",
+			cn = "虎耳草",
+		},
+	},
+	[381210] = {
+		readable = "Titan-Touched Hochenblume",
+		model = 4537051,
+		text = {
+			en = "Titan-Touched Hochenblume",
+			es = "Lumbreflor tocada por los titanes",
+			de = "Titanenberührte Hochblume",
+			fr = "Hochenblume touchée par les Titans",
+			it = "Altofiore Toccato dai Titani",
+			pt = "Hochenblume Tocado pelos Titãs",
+			ru = "Осененный титанами хоэнвейс",
+			ko = "티탄에 물든 장대꽃",
+			cn = "泰坦点化的霍亨布墨花",
+		},
+	},
+	[381211] = {
+		readable = "Infurious Hochenblume",
+		model = 4537051,
+		text = {
+			en = "Infurious Hochenblume",
+			es = "Lumbreflor furiosa",
+			de = "Wutentbrannte Hochblume",
+			fr = "Hochenblume ardente",
+			it = "Altofiore Impetuoso",
+			pt = "Hochenblume em Fúria",
+			ru = "Ярый хоэнвейс",
+			ko = "분노의 장대꽃",
+			cn = "[Infurious Hochenblume]",
+		},
+	},
+	[381212] = {
+		readable = "Decayed Hochenblume",
+		model = 4537264,
+		text = {
+			en = "Decayed Hochenblume",
+			es = "Lumbreflor descompuesta",
+			de = "Verrottete Hochblume",
+			fr = "Hochenblume décomposée",
+			it = "Altofiore Decaduto",
+			pt = "Hochenblume Decrépito",
+			ru = "Сгнивший хоэнвейс",
+			ko = "부패한 장대꽃",
+			cn = "腐朽霍亨布墨花",
+		},
+	},
+	[381213] = {
+		readable = "Windswept Hochenblume",
+		model = 4537051,
+		text = {
+			en = "Windswept Hochenblume",
+			es = "Lumbreflor arrastrada por el viento",
+			de = "Windgepeitschte Hochblume",
+			fr = "Hochenblume balayée par le vent",
+			it = "Altofiore Scompigliato",
+			pt = "Hochenblume Levado pelo Vento",
+			ru = "Обветренный хоэнвейс",
+			ko = "바람결 장대꽃",
+			cn = "啸风霍亨布墨花",
+		},
+	},
+	[381214] = {
+		readable = "Frigid Hochenblume",
+		model = 4537051,
+		text = {
+			en = "Frigid Hochenblume",
+			es = "Lumbreflor gélida",
+			de = "Eisige Hochblume",
+			fr = "Hochenblume algide",
+			it = "Altofiore Gelato",
+			pt = "Hochenblume Frígido",
+			ru = "Ледяной хоэнвейс",
+			ko = "혹한의 장대꽃",
+			cn = "冷冽霍亨布墨花",
+		},
+	},
 	[381216] = {
 		readable = "Surveyor's Magnifying Glass",
+		model = 4323298,
 		text = {
 			en = "Surveyor's Magnifying Glass",
 			es = "Lupa de perito",
@@ -39983,11 +48724,14 @@ root("ObjectDB", {
 	},
 	[381223] = {
 		readable = "Cracked Hourglass",
+		model = 4551451,
 		text = {
 			en = "Cracked Hourglass",
 			es = "Reloj de arena agrietado",
 			de = "Gesprungenes Stundenglas",
 			fr = "Sablier fissuré",
+			it = "[Cracked Hourglass]",
+			pt = "[Cracked Hourglass]",
 			ru = "Треснутые песочные часы",
 			ko = "금이 간 모래시계",
 			cn = "开裂沙漏",
@@ -39995,6 +48739,7 @@ root("ObjectDB", {
 	},
 	[381277] = {
 		readable = "Barrel of Confiscated Treats",
+		model = 3917374,
 		text = {
 			en = "Barrel of Confiscated Treats",
 			es = "Barrica de dulces confiscados",
@@ -40009,6 +48754,7 @@ root("ObjectDB", {
 	},
 	[381296] = {
 		readable = "Horrible Mess",
+		model = 337611,
 		text = {
 			en = "Horrible Mess",
 			es = "Desastre horrible",
@@ -40017,10 +48763,13 @@ root("ObjectDB", {
 			it = "Un disastro",
 			pt = "Bagunça Horrível",
 			ru = "Кровища",
+			ko = "[Horrible Mess]",
+			cn = "[Horrible Mess]",
 		},
 	},
 	[381297] = {
 		readable = "Misplaced Luggage",
+		model = 315395,
 		text = {
 			en = "Misplaced Luggage",
 			es = "Equipaje extraviado",
@@ -40030,39 +48779,48 @@ root("ObjectDB", {
 			pt = "Bagagem Extraviada",
 			ru = "Пропавший багаж",
 			ko = "엉뚱한 곳에 놓인 짐",
+			cn = "[Misplaced Luggage]",
 		},
 	},
 	[381353] = {
 		readable = "Stone Dragontooth",
+		model = 442505,
 		text = {
 			en = "Stone Dragontooth",
 			es = "Diente de dragón pétreo",
 			de = "Steinerner Drachenzahn",
 			fr = "Dent draconique en pierre",
+			it = "[Stone Dragontooth]",
 			pt = "Dente de Dragão de Pedra",
 			ru = "Каменный драконий зуб",
+			ko = "[Stone Dragontooth]",
 			cn = "石质龙牙",
 		},
 	},
 	[381354] = {
 		readable = "Wrapped Gold Band",
+		model = 536712,
 		text = {
 			en = "Wrapped Gold Band",
 			es = "Sortija de oro envuelta",
 			de = "Gewickeltes Goldband",
 			fr = "Bague en or enveloppée",
+			it = "[Wrapped Gold Band]",
 			pt = "Elo de Ouro Embrulhado",
 			ru = "Витое золотое кольцо",
+			ko = "[Wrapped Gold Band]",
 			cn = "裹住的金带",
 		},
 	},
 	[381355] = {
 		readable = "Finely Carved Wing",
+		model = 4278345,
 		text = {
 			en = "Finely Carved Wing",
 			es = "Ala tallada con esmero",
 			de = "Fein geschnitzter Flügel",
 			fr = "Aile finement sculptée",
+			it = "[Finely Carved Wing]",
 			pt = "Asa Cuidadosamente Entalhada",
 			ru = "Проработанное резное крыло",
 			ko = "섬세하게 조각한 날개",
@@ -40071,18 +48829,22 @@ root("ObjectDB", {
 	},
 	[381356] = {
 		readable = "Coldwashed Dragonclaw",
+		model = 196146,
 		text = {
 			en = "Coldwashed Dragonclaw",
 			es = "Garra de dragón lavada en frío",
 			de = "Kaltgewaschene Drachenklaue",
 			fr = "Griffe draconique glaciale",
+			it = "[Coldwashed Dragonclaw]",
 			pt = "Garra de Dragão Banhada no Frio",
 			ru = "Обледеневший драконий коготь",
+			ko = "[Coldwashed Dragonclaw]",
 			cn = "寒漫龙爪",
 		},
 	},
 	[381357] = {
 		readable = "Stone Tablet",
+		model = 1726753,
 		text = {
 			en = "Stone Tablet",
 			es = "Tablilla de piedra",
@@ -40097,6 +48859,7 @@ root("ObjectDB", {
 	},
 	[381358] = {
 		readable = "Stone Tablet",
+		model = 1726753,
 		text = {
 			en = "Stone Tablet",
 			es = "Tablilla de piedra",
@@ -40111,6 +48874,7 @@ root("ObjectDB", {
 	},
 	[381359] = {
 		readable = "Stone Tablet",
+		model = 1726753,
 		text = {
 			en = "Stone Tablet",
 			es = "Tablilla de piedra",
@@ -40125,30 +48889,37 @@ root("ObjectDB", {
 	},
 	[381361] = {
 		readable = "Precious Stone Fragment",
+		model = 192713,
 		text = {
 			en = "Precious Stone Fragment",
 			es = "Fragmento de piedra preciosa",
 			de = "Kostbares Steinfragment",
 			fr = "Fragment de pierre précieuse",
+			it = "Frammento di Pietra Preziosa",
 			pt = "Fragmento da Pedra Preciosa",
 			ru = "Осколки драгоценного камня",
+			ko = "[Precious Stone Fragment]",
 			cn = "宝石的碎片",
 		},
 	},
 	[381362] = {
 		readable = "Chunk of Sculpture",
+		model = 190028,
 		text = {
 			en = "Chunk of Sculpture",
 			es = "Trozo de escultura",
 			de = "Bruchstück einer Skulptur",
 			fr = "Morceau de sculpture",
+			it = "[Chunk of Sculpture]",
 			pt = "Pedaço de Escultura",
 			ru = "Обломок изваяния",
+			ko = "[Chunk of Sculpture]",
 			cn = "大块雕像",
 		},
 	},
 	[381365] = {
 		readable = "Dragonscale Expedition Flag",
+		model = 4198200,
 		text = {
 			en = "Dragonscale Expedition Flag",
 			es = "Bandera de la Expedición Dragontina",
@@ -40163,6 +48934,7 @@ root("ObjectDB", {
 	},
 	[381367] = {
 		readable = "Dragonscale Expedition Flag",
+		model = 4198200,
 		text = {
 			en = "Dragonscale Expedition Flag",
 			es = "Bandera de la Expedición Dragontina",
@@ -40177,6 +48949,7 @@ root("ObjectDB", {
 	},
 	[381369] = {
 		readable = "Dragonscale Expedition Flag",
+		model = 4198200,
 		text = {
 			en = "Dragonscale Expedition Flag",
 			es = "Bandera de la Expedición Dragontina",
@@ -40191,6 +48964,7 @@ root("ObjectDB", {
 	},
 	[381370] = {
 		readable = "Dragonscale Expedition Flag",
+		model = 4198200,
 		text = {
 			en = "Dragonscale Expedition Flag",
 			es = "Bandera de la Expedición Dragontina",
@@ -40205,6 +48979,7 @@ root("ObjectDB", {
 	},
 	[381373] = {
 		readable = "Dragonscale Expedition Flag",
+		model = 4198200,
 		text = {
 			en = "Dragonscale Expedition Flag",
 			es = "Bandera de la Expedición Dragontina",
@@ -40219,6 +48994,7 @@ root("ObjectDB", {
 	},
 	[381375] = {
 		readable = "Dragonscale Expedition Flag",
+		model = 4198200,
 		text = {
 			en = "Dragonscale Expedition Flag",
 			es = "Bandera de la Expedición Dragontina",
@@ -40233,6 +49009,7 @@ root("ObjectDB", {
 	},
 	[381377] = {
 		readable = "Dragonscale Expedition Flag",
+		model = 4198200,
 		text = {
 			en = "Dragonscale Expedition Flag",
 			es = "Bandera de la Expedición Dragontina",
@@ -40247,6 +49024,7 @@ root("ObjectDB", {
 	},
 	[381483] = {
 		readable = "Marmoni's Prize",
+		model = 647739,
 		text = {
 			en = "Marmoni's Prize",
 			es = "Premio de marmoni",
@@ -40261,6 +49039,7 @@ root("ObjectDB", {
 	},
 	[381484] = {
 		readable = "Well-Preserved Bone",
+		model = 4093782,
 		text = {
 			en = "Well-Preserved Bone",
 			es = "Hueso bien conservado",
@@ -40275,6 +49054,7 @@ root("ObjectDB", {
 	},
 	[381485] = {
 		readable = "Adventurer's Lost Soap Bar",
+		model = 1089856,
 		text = {
 			en = "Adventurer's Lost Soap Bar",
 			es = "Pastilla de jabón para aventureros perdida",
@@ -40289,6 +49069,7 @@ root("ObjectDB", {
 	},
 	[381510] = {
 		readable = "Flying Fish Bones",
+		model = 774343,
 		text = {
 			en = "Flying Fish Bones",
 			es = "Raspas de pez volador",
@@ -40303,6 +49084,7 @@ root("ObjectDB", {
 	},
 	[381511] = {
 		readable = "Harpoon Head",
+		model = 893046,
 		text = {
 			en = "Harpoon Head",
 			es = "Punta de arpón",
@@ -40317,6 +49099,7 @@ root("ObjectDB", {
 	},
 	[381512] = {
 		readable = "Wooden Pole",
+		model = 251568,
 		text = {
 			en = "Wooden Pole",
 			es = "Poste de madera",
@@ -40331,11 +49114,13 @@ root("ObjectDB", {
 	},
 	[381513] = {
 		readable = "Old Pickaxe",
+		model = 1634862,
 		text = {
 			en = "Old Pickaxe",
 			es = "Piqueta vieja",
 			de = "Alte Spitzhacke",
 			fr = "Vieille pioche",
+			it = "[Old Pickaxe]",
 			pt = "Picareta Velha",
 			ru = "Старая кирка",
 			ko = "오래된 곡괭이",
@@ -40344,6 +49129,7 @@ root("ObjectDB", {
 	},
 	[381514] = {
 		readable = "Sea-Polished Basalt",
+		model = 304693,
 		text = {
 			en = "Sea-Polished Basalt",
 			es = "Basalto pulido por el mar",
@@ -40358,6 +49144,7 @@ root("ObjectDB", {
 	},
 	[381575] = {
 		readable = "Duck Trap Kit",
+		model = 4182522,
 		text = {
 			en = "Duck Trap Kit",
 			es = "Equipo de trampa para patos",
@@ -40366,11 +49153,13 @@ root("ObjectDB", {
 			it = "Kit per Trappola per Anatre",
 			pt = "Kit de Armadilha de Pato",
 			ru = "Набор для ловли уток",
+			ko = "[Duck Trap Kit]",
 			cn = "鸭子陷阱工具",
 		},
 	},
 	[381579] = {
 		readable = "Archivists' Request",
+		model = 4268252,
 		text = {
 			en = "Archivists' Request",
 			es = "Petición de los archivistas",
@@ -40385,6 +49174,7 @@ root("ObjectDB", {
 	},
 	[381650] = {
 		readable = "Archivists' Request",
+		model = 4198204,
 		text = {
 			en = "Archivists' Request",
 			es = "Petición de los archivistas",
@@ -40399,6 +49189,7 @@ root("ObjectDB", {
 	},
 	[381653] = {
 		readable = "Fang Flap Fire Signups",
+		model = 4252961,
 		text = {
 			en = "Fang Flap Fire Signups",
 			es = "Inscripción a colmillo, ala o fuego",
@@ -40413,6 +49204,7 @@ root("ObjectDB", {
 	},
 	[381661] = {
 		readable = "Archivists' Request",
+		model = 4268252,
 		text = {
 			en = "Archivists' Request",
 			es = "Petición de los archivistas",
@@ -40427,6 +49219,7 @@ root("ObjectDB", {
 	},
 	[381662] = {
 		readable = "Archivists' Request",
+		model = 4198205,
 		text = {
 			en = "Archivists' Request",
 			es = "Petición de los archivistas",
@@ -40441,6 +49234,7 @@ root("ObjectDB", {
 	},
 	[381663] = {
 		readable = "Manastorming For Beginners",
+		model = 965217,
 		text = {
 			en = "Manastorming For Beginners",
 			es = "Tormentas de maná para principiantes",
@@ -40455,6 +49249,7 @@ root("ObjectDB", {
 	},
 	[381664] = {
 		readable = "Archivists' Request",
+		model = 4198204,
 		text = {
 			en = "Archivists' Request",
 			es = "Petición de los archivistas",
@@ -40469,6 +49264,7 @@ root("ObjectDB", {
 	},
 	[381667] = {
 		readable = "Archivists' Request",
+		model = 4198205,
 		text = {
 			en = "Archivists' Request",
 			es = "Petición de los archivistas",
@@ -40483,6 +49279,7 @@ root("ObjectDB", {
 	},
 	[381668] = {
 		readable = "Archivists' Request",
+		model = 4268252,
 		text = {
 			en = "Archivists' Request",
 			es = "Petición de los archivistas",
@@ -40497,6 +49294,7 @@ root("ObjectDB", {
 	},
 	[381669] = {
 		readable = "Archivists' Request",
+		model = 4198205,
 		text = {
 			en = "Archivists' Request",
 			es = "Petición de los archivistas",
@@ -40511,6 +49309,7 @@ root("ObjectDB", {
 	},
 	[381670] = {
 		readable = "Archivists' Request",
+		model = 4198205,
 		text = {
 			en = "Archivists' Request",
 			es = "Petición de los archivistas",
@@ -40525,6 +49324,7 @@ root("ObjectDB", {
 	},
 	[381671] = {
 		readable = "Archivists' Request",
+		model = 4268252,
 		text = {
 			en = "Archivists' Request",
 			es = "Petición de los archivistas",
@@ -40539,6 +49339,7 @@ root("ObjectDB", {
 	},
 	[381672] = {
 		readable = "Archivists' Request",
+		model = 4268252,
 		text = {
 			en = "Archivists' Request",
 			es = "Petición de los archivistas",
@@ -40553,6 +49354,7 @@ root("ObjectDB", {
 	},
 	[381687] = {
 		readable = "Discarded Note",
+		model = 936413,
 		text = {
 			en = "Discarded Note",
 			es = "Nota desechada",
@@ -40567,6 +49369,7 @@ root("ObjectDB", {
 	},
 	[381701] = {
 		readable = "WANTED: Mara'nar the Thunderous",
+		model = 4198205,
 		text = {
 			en = "WANTED: Mara'nar the Thunderous",
 			es = "SE BUSCA: Mara'nar el Atronador",
@@ -40579,8 +49382,69 @@ root("ObjectDB", {
 			cn = "通缉：雷鸣者玛拉纳尔",
 		},
 	},
+	[381957] = {
+		readable = "Lush Bubble Poppy",
+		model = 4498021,
+		text = {
+			en = "Lush Bubble Poppy",
+			es = "Amapola burbuja exuberante",
+			de = "Üppiger Blasenmohn",
+			fr = "Pavot à bulle luxuriant",
+			it = "Papavero Bolla Lussureggiante",
+			pt = "Papoula Borbulhante Exuberante",
+			ru = "Зрелый пузырчатый мак",
+			ko = "무성한 거품 백일홍",
+			cn = "繁茂的泡粟花",
+		},
+	},
+	[381958] = {
+		readable = "Lush Writhebark",
+		model = 4546835,
+		text = {
+			en = "Lush Writhebark",
+			es = "Pino retorcido exuberante",
+			de = "Üppige Krümmrinde",
+			fr = "Écorce tordue luxuriante",
+			it = "Scorzatorta Lussureggiante",
+			pt = "Casca Retorcida Exuberante",
+			ru = "Зрелая витая кора",
+			ko = "무성한 격통껍질",
+			cn = "繁茂的歪扭树皮",
+		},
+	},
+	[381959] = {
+		readable = "Lush Saxifrage",
+		model = 4558390,
+		text = {
+			en = "Lush Saxifrage",
+			es = "Saxifraga exuberante",
+			de = "Üppiges Steinbrich",
+			fr = "Saxifrage luxuriante",
+			it = "Sassifraga Lussureggiante",
+			pt = "Quebra-pedra Exuberante",
+			ru = "Зрелая камнеломка",
+			ko = "무성한 다년초",
+			cn = "繁茂的虎耳草",
+		},
+	},
+	[381960] = {
+		readable = "Lush Hochenblume",
+		model = 4537107,
+		text = {
+			en = "Lush Hochenblume",
+			es = "Lumbreflor exuberante",
+			de = "Üppige Hochblume",
+			fr = "Hochenblume luxuriante",
+			it = "Altofiore Lussureggiante",
+			pt = "Hochenblume Exuberante",
+			ru = "Зрелый хоэнвейс",
+			ko = "무성한 장대꽃",
+			cn = "繁茂的霍亨布墨花",
+		},
+	},
 	[381981] = {
 		readable = "Chest of the Flood",
+		model = 4299070,
 		text = {
 			en = "Chest of the Flood",
 			es = "Cofre de la inundación",
@@ -40595,6 +49459,7 @@ root("ObjectDB", {
 	},
 	[382029] = {
 		readable = "Disturbed Dirt",
+		model = 4539376,
 		text = {
 			en = "Disturbed Dirt",
 			es = "Tierra revuelta",
@@ -40609,6 +49474,7 @@ root("ObjectDB", {
 	},
 	[382071] = {
 		readable = "Full Fishing Net",
+		model = 984224,
 		text = {
 			en = "Full Fishing Net",
 			es = "Red de pesca llena",
@@ -40623,6 +49489,7 @@ root("ObjectDB", {
 	},
 	[382079] = {
 		readable = "Dragonscale Expedition Flag",
+		model = 4198200,
 		text = {
 			en = "Dragonscale Expedition Flag",
 			es = "Bandera de la Expedición Dragontina",
@@ -40637,6 +49504,7 @@ root("ObjectDB", {
 	},
 	[382086] = {
 		readable = "Dragonscale Expedition Flag",
+		model = 4198200,
 		text = {
 			en = "Dragonscale Expedition Flag",
 			es = "Bandera de la Expedición Dragontina",
@@ -40651,6 +49519,7 @@ root("ObjectDB", {
 	},
 	[382092] = {
 		readable = "Dragonscale Expedition Flag",
+		model = 4198200,
 		text = {
 			en = "Dragonscale Expedition Flag",
 			es = "Bandera de la Expedición Dragontina",
@@ -40665,6 +49534,7 @@ root("ObjectDB", {
 	},
 	[382094] = {
 		readable = "Dragonscale Expedition Flag",
+		model = 4198200,
 		text = {
 			en = "Dragonscale Expedition Flag",
 			es = "Bandera de la Expedición Dragontina",
@@ -40679,6 +49549,7 @@ root("ObjectDB", {
 	},
 	[382101] = {
 		readable = "Dragonscale Expedition Flag",
+		model = 4198200,
 		text = {
 			en = "Dragonscale Expedition Flag",
 			es = "Bandera de la Expedición Dragontina",
@@ -40693,6 +49564,7 @@ root("ObjectDB", {
 	},
 	[382103] = {
 		readable = "Dragonscale Expedition Flag",
+		model = 4198200,
 		text = {
 			en = "Dragonscale Expedition Flag",
 			es = "Bandera de la Expedición Dragontina",
@@ -40707,6 +49579,7 @@ root("ObjectDB", {
 	},
 	[382105] = {
 		readable = "Dragonscale Expedition Flag",
+		model = 4198200,
 		text = {
 			en = "Dragonscale Expedition Flag",
 			es = "Bandera de la Expedición Dragontina",
@@ -40721,6 +49594,7 @@ root("ObjectDB", {
 	},
 	[382107] = {
 		readable = "Dragonscale Expedition Flag",
+		model = 4198200,
 		text = {
 			en = "Dragonscale Expedition Flag",
 			es = "Bandera de la Expedición Dragontina",
@@ -40735,6 +49609,7 @@ root("ObjectDB", {
 	},
 	[382110] = {
 		readable = "Dragonscale Expedition Flag",
+		model = 4198200,
 		text = {
 			en = "Dragonscale Expedition Flag",
 			es = "Bandera de la Expedición Dragontina",
@@ -40749,6 +49624,7 @@ root("ObjectDB", {
 	},
 	[382112] = {
 		readable = "Dragonscale Expedition Flag",
+		model = 4198200,
 		text = {
 			en = "Dragonscale Expedition Flag",
 			es = "Bandera de la Expedición Dragontina",
@@ -40763,6 +49639,7 @@ root("ObjectDB", {
 	},
 	[382116] = {
 		readable = "Dragonscale Expedition Flag",
+		model = 4198200,
 		text = {
 			en = "Dragonscale Expedition Flag",
 			es = "Bandera de la Expedición Dragontina",
@@ -40777,6 +49654,7 @@ root("ObjectDB", {
 	},
 	[382118] = {
 		readable = "Dragonscale Expedition Flag",
+		model = 4198200,
 		text = {
 			en = "Dragonscale Expedition Flag",
 			es = "Bandera de la Expedición Dragontina",
@@ -40791,6 +49669,7 @@ root("ObjectDB", {
 	},
 	[382120] = {
 		readable = "Dragonscale Expedition Flag",
+		model = 4198200,
 		text = {
 			en = "Dragonscale Expedition Flag",
 			es = "Bandera de la Expedición Dragontina",
@@ -40805,6 +49684,7 @@ root("ObjectDB", {
 	},
 	[382166] = {
 		readable = "The Ruby Feast!",
+		model = 4317329,
 		text = {
 			en = "The Ruby Feast!",
 			es = "¡El Festín Rubí!",
@@ -40819,6 +49699,7 @@ root("ObjectDB", {
 	},
 	[382180] = {
 		readable = "Overheated Magma Thresher Pool",
+		model = 219405,
 		text = {
 			en = "Overheated Magma Thresher Pool",
 			es = "Charco de trilladores de magma sobrecalentado",
@@ -40828,29 +49709,36 @@ root("ObjectDB", {
 			pt = "Cardume de Mangual de Magma Superaquecido",
 			ru = "Перегретый пруд лавазубов",
 			ko = "과열된 용암 상어 떼",
+			cn = "[Overheated Magma Thresher Pool]",
 		},
 	},
 	[382193] = {
 		readable = "Chest of the Elements",
+		model = 4216697,
 		text = {
 			en = "Chest of the Elements",
 			es = "Cofre de los elementos",
 			de = "Truhe der Elemente",
 			fr = "Coffre des éléments",
 			it = "Cassa degli Elementi",
+			pt = "[Chest of the Elements]",
 			ru = "Сундук стихий",
+			ko = "[Chest of the Elements]",
 			cn = "元素宝箱",
 		},
 	},
 	[382325] = {
 		readable = "Onyx Gem Cluster",
+		model = 3532362,
 		text = {
 			en = "Onyx Gem Cluster",
+			es = "[Onyx Gem Cluster]",
 			de = "Onyxedelsteinklumpen",
 			fr = "Amas de gemmes d’onyx",
 			it = "Formazione di Gemme d'Onice",
 			pt = "Drusa de Gemas de Ônix",
 			ru = "Друза оникса",
+			ko = "[Onyx Gem Cluster]",
 			cn = "玛瑙宝石簇",
 		},
 	},
@@ -40867,10 +49755,12 @@ root("ObjectDB", {
 			pt = "Console de Catalisador de Revivescência",
 			ru = "Консоль катализатора возрождения",
 			ko = "소생의 촉매 장치",
+			cn = "复苏化生控制台",
 		},
 	},
 	[383625] = {
 		readable = "Case of Fresh Gleamfish",
+		model = 3857154,
 		text = {
 			en = "Case of Fresh Gleamfish",
 			es = "Caja de brillopeces frescos",
@@ -40885,6 +49775,7 @@ root("ObjectDB", {
 	},
 	[383660] = {
 		readable = "Salt Crystal",
+		model = 4320282,
 		text = {
 			en = "Salt Crystal",
 			es = "Cristal de sal",
@@ -40899,6 +49790,7 @@ root("ObjectDB", {
 	},
 	[383732] = {
 		readable = "Tuskarr Tacklebox",
+		model = 3857149,
 		text = {
 			en = "Tuskarr Tacklebox",
 			es = "Caja de pesca colmillarr",
@@ -40907,11 +49799,13 @@ root("ObjectDB", {
 			it = "Cassetta da Pescatore dei Tuskarr",
 			pt = "Caixa de Pesca Morsana",
 			ru = "Клыкаррские рыболовные снасти",
+			ko = "투스카르 낚시 상자",
 			cn = "海象人工具盒",
 		},
 	},
 	[383733] = {
 		readable = "Disturbed Dirt",
+		model = 4539377,
 		text = {
 			en = "Disturbed Dirt",
 			es = "Tierra revuelta",
@@ -40926,6 +49820,7 @@ root("ObjectDB", {
 	},
 	[383734] = {
 		readable = "Disturbed Dirt",
+		model = 4539375,
 		text = {
 			en = "Disturbed Dirt",
 			es = "Tierra revuelta",
@@ -40940,6 +49835,7 @@ root("ObjectDB", {
 	},
 	[383735] = {
 		readable = "Disturbed Dirt",
+		model = 4539379,
 		text = {
 			en = "Disturbed Dirt",
 			es = "Tierra revuelta",
@@ -40954,6 +49850,7 @@ root("ObjectDB", {
 	},
 	[384318] = {
 		readable = "Inconspicuous Bookmark",
+		model = 4324473,
 		text = {
 			en = "Inconspicuous Bookmark",
 			es = "Marcapáginas discreto",
@@ -40968,6 +49865,7 @@ root("ObjectDB", {
 	},
 	[384370] = {
 		readable = "Deliberately Delinquent Notes",
+		model = 203402,
 		text = {
 			en = "Deliberately Delinquent Notes",
 			es = "Notas deliberadamente descuidadas",
@@ -40982,6 +49880,7 @@ root("ObjectDB", {
 	},
 	[384405] = {
 		readable = "Half-Boiled Fish",
+		model = 4575536,
 		text = {
 			en = "Half-Boiled Fish",
 			es = "Pescado a medio cocer",
@@ -40996,6 +49895,7 @@ root("ObjectDB", {
 	},
 	[384763] = {
 		readable = "Forbidden Hoard",
+		model = 4216697,
 		text = {
 			en = "Forbidden Hoard",
 			es = "Tesoro prohibido",
@@ -41010,6 +49910,7 @@ root("ObjectDB", {
 	},
 	[384980] = {
 		readable = "Mysterious Chest",
+		model = 4216698,
 		text = {
 			en = "Mysterious Chest",
 			es = "Arcón misterioso",
@@ -41023,11 +49924,17 @@ root("ObjectDB", {
 		},
 	},
 	[385001] = {
-		readable = "Step 2: Empty Fish Barrel",
+		readable = "Empty Fish Barrel",
+		model = 950119,
 		text = {
-			en = "Step 2: Empty Fish Barrel",
+			en = "Empty Fish Barrel",
+			es = "[Empty Fish Barrel]",
 			de = "Leeres Fischfass",
+			fr = "[Empty Fish Barrel]",
+			it = "[Empty Fish Barrel]",
+			pt = "[Empty Fish Barrel]",
 			ru = "Пустой бочонок для рыбы",
+			ko = "[Empty Fish Barrel]",
 			cn = "空的鱼桶",
 		},
 	},
@@ -41039,6 +49946,7 @@ root("ObjectDB", {
 	},
 	[385008] = {
 		readable = "Spun Webs",
+		model = 167196,
 		text = {
 			en = "Spun Webs",
 			es = "Telarañas tejidas",
@@ -41048,10 +49956,12 @@ root("ObjectDB", {
 			pt = "Teias Enroladas",
 			ru = "Скрученная паутина",
 			ko = "자아낸 거미줄",
+			cn = "[Spun Webs]",
 		},
 	},
 	[385010] = {
 		readable = "Spun Webs",
+		model = 167196,
 		text = {
 			en = "Spun Webs",
 			es = "Telarañas tejidas",
@@ -41061,16 +49971,27 @@ root("ObjectDB", {
 			pt = "Teias Enroladas",
 			ru = "Скрученная паутина",
 			ko = "자아낸 거미줄",
+			cn = "[Spun Webs]",
 		},
 	},
 	[385011] = {
 		readable = "Spun Webs",
+		model = 167196,
 		text = {
 			en = "Spun Webs",
+			es = "Telarañas tejidas",
+			de = "Gesponnene Netze",
+			fr = "Toiles tissées",
+			it = "Ragnatele Tessute",
+			pt = "Teias Enroladas",
+			ru = "Скрученная паутина",
+			ko = "자아낸 거미줄",
+			cn = "[Spun Webs]",
 		},
 	},
 	[385021] = {
 		readable = "Petrified Dragon Egg",
+		model = 4214533,
 		text = {
 			en = "Petrified Dragon Egg",
 			es = "Huevo de dragón petrificado",
@@ -41085,6 +50006,7 @@ root("ObjectDB", {
 	},
 	[385022] = {
 		readable = "Eroded Fossil",
+		model = 1664285,
 		text = {
 			en = "Eroded Fossil",
 			es = "Fósil erosionado",
@@ -41099,6 +50021,7 @@ root("ObjectDB", {
 	},
 	[385028] = {
 		readable = "Powerful Flask of Renewal",
+		model = 4240491,
 		text = {
 			en = "Powerful Flask of Renewal",
 			es = "Frasco de renovación potente",
@@ -41113,6 +50036,7 @@ root("ObjectDB", {
 	},
 	[385032] = {
 		readable = "Gold Pile",
+		model = 4217886,
 		text = {
 			en = "Gold Pile",
 			es = "Montón de oro",
@@ -41127,6 +50051,7 @@ root("ObjectDB", {
 	},
 	[385064] = {
 		readable = "Ice Spike",
+		model = 3998034,
 		text = {
 			en = "Ice Spike",
 			es = "Púa de hielo",
@@ -41141,6 +50066,7 @@ root("ObjectDB", {
 	},
 	[385396] = {
 		readable = "Primordial Fire Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Fire Cache",
 			es = "Alijo de fuego primordial",
@@ -41150,10 +50076,12 @@ root("ObjectDB", {
 			pt = "Baú Ígneo Primordial",
 			ru = "Тайник изначального огня",
 			ko = "태고의 화염 보관함",
+			cn = "[Primordial Fire Cache]",
 		},
 	},
 	[385398] = {
 		readable = "Searing Chest",
+		model = 4216698,
 		text = {
 			en = "Searing Chest",
 			es = "Cofre abrasador",
@@ -41163,10 +50091,12 @@ root("ObjectDB", {
 			pt = "Baú Calcinante",
 			ru = "Раскаленный сундук",
 			ko = "이글거리는 보관함",
+			cn = "[Searing Chest]",
 		},
 	},
 	[385401] = {
 		readable = "Searing Chest",
+		model = 4216698,
 		text = {
 			en = "Searing Chest",
 			es = "Cofre abrasador",
@@ -41176,10 +50106,12 @@ root("ObjectDB", {
 			pt = "Baú Calcinante",
 			ru = "Раскаленный сундук",
 			ko = "이글거리는 보관함",
+			cn = "[Searing Chest]",
 		},
 	},
 	[385415] = {
 		readable = "Bone Pile",
+		model = 1265380,
 		text = {
 			en = "Bone Pile",
 			es = "Montón de huesos",
@@ -41194,6 +50126,7 @@ root("ObjectDB", {
 	},
 	[385467] = {
 		readable = "Bone Pile",
+		model = 1265380,
 		text = {
 			en = "Bone Pile",
 			es = "Montón de huesos",
@@ -41208,6 +50141,7 @@ root("ObjectDB", {
 	},
 	[385468] = {
 		readable = "Bone Pile",
+		model = 1265380,
 		text = {
 			en = "Bone Pile",
 			es = "Montón de huesos",
@@ -41222,6 +50156,7 @@ root("ObjectDB", {
 	},
 	[385469] = {
 		readable = "Bone Pile",
+		model = 1265380,
 		text = {
 			en = "Bone Pile",
 			es = "Montón de huesos",
@@ -41236,6 +50171,7 @@ root("ObjectDB", {
 	},
 	[385520] = {
 		readable = "Bone Pile",
+		model = 1265380,
 		text = {
 			en = "Bone Pile",
 			es = "Montón de huesos",
@@ -41250,6 +50186,7 @@ root("ObjectDB", {
 	},
 	[385533] = {
 		readable = "Sending Stone: Protest",
+		model = 4235619,
 		text = {
 			en = "Sending Stone: Protest",
 			es = "Tablilla de envío: Protesta",
@@ -41264,6 +50201,7 @@ root("ObjectDB", {
 	},
 	[385565] = {
 		readable = "Blazing Shadowflame Chest",
+		model = 4631398,
 		text = {
 			en = "Blazing Shadowflame Chest",
 			es = "Cofre de Pirosombra llameante",
@@ -41278,14 +50216,22 @@ root("ObjectDB", {
 	},
 	[385581] = {
 		readable = "Henry's Handbag",
+		model = 977074,
 		text = {
 			en = "Henry's Handbag",
+			es = "[Henry's Handbag]",
+			de = "Henrys Handtasche",
+			fr = "[Henry's Handbag]",
+			it = "[Henry's Handbag]",
 			pt = "Bolsa de Henrique",
 			ru = "Сумка Генри",
+			ko = "[Henry's Handbag]",
+			cn = "[Henry's Handbag]",
 		},
 	},
 	[385799] = {
 		readable = "Hardened Strongbox",
+		model = 4216698,
 		text = {
 			en = "Hardened Strongbox",
 			es = "Caja fuerte endurecida",
@@ -41295,10 +50241,12 @@ root("ObjectDB", {
 			pt = "Caixa-forte Endurecida",
 			ru = "Укрепленный сундук",
 			ko = "단단한 금고",
+			cn = "[Hardened Strongbox]",
 		},
 	},
 	[385800] = {
 		readable = "Gold Pile",
+		model = 4217886,
 		text = {
 			en = "Gold Pile",
 			es = "Montón de oro",
@@ -41313,6 +50261,7 @@ root("ObjectDB", {
 	},
 	[385801] = {
 		readable = "Gold Pile",
+		model = 4217887,
 		text = {
 			en = "Gold Pile",
 			es = "Montón de oro",
@@ -41327,6 +50276,7 @@ root("ObjectDB", {
 	},
 	[385802] = {
 		readable = "Gold Pile",
+		model = 4217886,
 		text = {
 			en = "Gold Pile",
 			es = "Montón de oro",
@@ -41341,6 +50291,7 @@ root("ObjectDB", {
 	},
 	[385826] = {
 		readable = "Titan Coffer",
+		model = 4323481,
 		text = {
 			en = "Titan Coffer",
 			es = "Arca titánica",
@@ -41350,10 +50301,12 @@ root("ObjectDB", {
 			pt = "Cofre Titânico",
 			ru = "Казна титанов",
 			ko = "티탄 궤짝",
+			cn = "[Titan Coffer]",
 		},
 	},
 	[385830] = {
 		readable = "Sending Stone: Initial Report",
+		model = 4235619,
 		text = {
 			en = "Sending Stone: Initial Report",
 			es = "Tablilla de envío: Informe inicial",
@@ -41368,6 +50321,7 @@ root("ObjectDB", {
 	},
 	[385831] = {
 		readable = "Sending Stone: The Prisoner",
+		model = 4235619,
 		text = {
 			en = "Sending Stone: The Prisoner",
 			es = "Tablilla de envío: El prisionero",
@@ -41382,6 +50336,7 @@ root("ObjectDB", {
 	},
 	[385832] = {
 		readable = "Receiving Stone: Final Warning",
+		model = 4235619,
 		text = {
 			en = "Receiving Stone: Final Warning",
 			es = "Tablilla de recepción: Último aviso",
@@ -41396,6 +50351,7 @@ root("ObjectDB", {
 	},
 	[385834] = {
 		readable = "Journal Entry: Experiments",
+		model = 4317329,
 		text = {
 			en = "Journal Entry: Experiments",
 			es = "Anotación de diario: Experimentos",
@@ -41410,6 +50366,7 @@ root("ObjectDB", {
 	},
 	[385835] = {
 		readable = "Journal Entry: Relics",
+		model = 4317329,
 		text = {
 			en = "Journal Entry: Relics",
 			es = "Anotación de diario: Reliquias",
@@ -41424,6 +50381,7 @@ root("ObjectDB", {
 	},
 	[385836] = {
 		readable = "Journal Entry: The Creches",
+		model = 4317329,
 		text = {
 			en = "Journal Entry: The Creches",
 			es = "Anotación de diario: Los nidos",
@@ -41438,6 +50396,7 @@ root("ObjectDB", {
 	},
 	[385837] = {
 		readable = "Journal Entry: Silence",
+		model = 4317329,
 		text = {
 			en = "Journal Entry: Silence",
 			es = "Anotación de diario: Silencio",
@@ -41452,6 +50411,7 @@ root("ObjectDB", {
 	},
 	[385937] = {
 		readable = "Titan Coffer",
+		model = 4323481,
 		text = {
 			en = "Titan Coffer",
 			es = "Arca titánica",
@@ -41461,10 +50421,12 @@ root("ObjectDB", {
 			pt = "Cofre Titânico",
 			ru = "Казна титанов",
 			ko = "티탄 궤짝",
+			cn = "[Titan Coffer]",
 		},
 	},
 	[385940] = {
 		readable = "Runic Wrench",
+		model = 197622,
 		text = {
 			en = "Runic Wrench",
 			es = "Llave rúnica",
@@ -41479,6 +50441,7 @@ root("ObjectDB", {
 	},
 	[385952] = {
 		readable = "Unusual Ring",
+		model = 3718234,
 		text = {
 			en = "Unusual Ring",
 			es = "Anillo extraño",
@@ -41488,10 +50451,12 @@ root("ObjectDB", {
 			pt = "Anel Incomum",
 			ru = "Необычное кольцо",
 			ko = "특이한 반지",
+			cn = "[Unusual Ring]",
 		},
 	},
 	[386079] = {
 		readable = "Well-Chewed Chest",
+		model = 4216698,
 		text = {
 			en = "Well-Chewed Chest",
 			es = "Cofre bien mordisqueado",
@@ -41506,6 +50471,7 @@ root("ObjectDB", {
 	},
 	[386080] = {
 		readable = "Scorching Key",
+		model = 970204,
 		text = {
 			en = "Scorching Key",
 			es = "Llave agostadora",
@@ -41520,18 +50486,22 @@ root("ObjectDB", {
 	},
 	[386086] = {
 		readable = "Seething Cache",
+		model = 4703525,
 		text = {
 			en = "Seething Cache",
+			es = "[Seething Cache]",
 			de = "Brodelnde Truhe",
 			fr = "Cache bouillonnante",
 			it = "Cassa Ribollente",
 			pt = "Baú Fervilhante",
 			ru = "Дымящийся тайник",
+			ko = "[Seething Cache]",
 			cn = "沸燃之箱",
 		},
 	},
 	[386088] = {
 		readable = "Ritual Offerings",
+		model = 4034955,
 		text = {
 			en = "Ritual Offerings",
 			es = "Ofrendas rituales",
@@ -41546,6 +50516,7 @@ root("ObjectDB", {
 	},
 	[386089] = {
 		readable = "Ritual Offerings",
+		model = 4034955,
 		text = {
 			en = "Ritual Offerings",
 			es = "Ofrendas rituales",
@@ -41560,6 +50531,7 @@ root("ObjectDB", {
 	},
 	[386090] = {
 		readable = "Ritual Offerings",
+		model = 4034955,
 		text = {
 			en = "Ritual Offerings",
 			es = "Ofrendas rituales",
@@ -41574,6 +50546,7 @@ root("ObjectDB", {
 	},
 	[386091] = {
 		readable = "Ritual Offerings",
+		model = 4034955,
 		text = {
 			en = "Ritual Offerings",
 			es = "Ofrendas rituales",
@@ -41588,6 +50561,7 @@ root("ObjectDB", {
 	},
 	[386104] = {
 		readable = "Ancient Zaqali Chest",
+		model = 1981374,
 		text = {
 			en = "Ancient Zaqali Chest",
 			es = "Cofre zaqali antiguo",
@@ -41602,6 +50576,7 @@ root("ObjectDB", {
 	},
 	[386106] = {
 		readable = "Dragonscale Expedition Flag",
+		model = 4198200,
 		text = {
 			en = "Dragonscale Expedition Flag",
 			es = "Bandera de la Expedición Dragontina",
@@ -41616,6 +50591,7 @@ root("ObjectDB", {
 	},
 	[386108] = {
 		readable = "Dragonscale Expedition Flag",
+		model = 4198200,
 		text = {
 			en = "Dragonscale Expedition Flag",
 			es = "Bandera de la Expedición Dragontina",
@@ -41630,6 +50606,7 @@ root("ObjectDB", {
 	},
 	[386123] = {
 		readable = "Charred Egg",
+		model = 4214533,
 		text = {
 			en = "Charred Egg",
 			es = "Huevo carbonizado",
@@ -41644,6 +50621,7 @@ root("ObjectDB", {
 	},
 	[386168] = {
 		readable = "Farscale Cache",
+		model = 2833918,
 		text = {
 			en = "Farscale Cache",
 			es = "Alijo Lejoscama",
@@ -41658,6 +50636,7 @@ root("ObjectDB", {
 	},
 	[386353] = {
 		readable = "Hardened Chest",
+		model = 4216698,
 		text = {
 			en = "Hardened Chest",
 			es = "Cofre endurecido",
@@ -41672,6 +50651,7 @@ root("ObjectDB", {
 	},
 	[386354] = {
 		readable = "Hardened Chest",
+		model = 4216698,
 		text = {
 			en = "Hardened Chest",
 			es = "Cofre endurecido",
@@ -41686,6 +50666,7 @@ root("ObjectDB", {
 	},
 	[386421] = {
 		readable = "Primordial Fire Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Fire Cache",
 			es = "Alijo de fuego primordial",
@@ -41695,10 +50676,12 @@ root("ObjectDB", {
 			pt = "Baú Ígneo Primordial",
 			ru = "Тайник изначального огня",
 			ko = "태고의 화염 보관함",
+			cn = "[Primordial Fire Cache]",
 		},
 	},
 	[386422] = {
 		readable = "Primordial Fire Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Fire Cache",
 			es = "Alijo de fuego primordial",
@@ -41708,10 +50691,12 @@ root("ObjectDB", {
 			pt = "Baú Ígneo Primordial",
 			ru = "Тайник изначального огня",
 			ko = "태고의 화염 보관함",
+			cn = "[Primordial Fire Cache]",
 		},
 	},
 	[386423] = {
 		readable = "Primordial Fire Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Fire Cache",
 			es = "Alijo de fuego primordial",
@@ -41721,10 +50706,12 @@ root("ObjectDB", {
 			pt = "Baú Ígneo Primordial",
 			ru = "Тайник изначального огня",
 			ko = "태고의 화염 보관함",
+			cn = "[Primordial Fire Cache]",
 		},
 	},
 	[386424] = {
 		readable = "Searing Chest",
+		model = 4216698,
 		text = {
 			en = "Searing Chest",
 			es = "Cofre abrasador",
@@ -41734,10 +50721,12 @@ root("ObjectDB", {
 			pt = "Baú Calcinante",
 			ru = "Раскаленный сундук",
 			ko = "이글거리는 보관함",
+			cn = "[Searing Chest]",
 		},
 	},
 	[386425] = {
 		readable = "Searing Chest",
+		model = 4216698,
 		text = {
 			en = "Searing Chest",
 			es = "Cofre abrasador",
@@ -41747,10 +50736,12 @@ root("ObjectDB", {
 			pt = "Baú Calcinante",
 			ru = "Раскаленный сундук",
 			ko = "이글거리는 보관함",
+			cn = "[Searing Chest]",
 		},
 	},
 	[386426] = {
 		readable = "Primordial Earth Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Earth Cache",
 			es = "Alijo de tierra primordial",
@@ -41760,10 +50751,12 @@ root("ObjectDB", {
 			pt = "Baú Terrano Primordial",
 			ru = "Тайник изначальной земли",
 			ko = "태고의 대지 보관함",
+			cn = "[Primordial Earth Cache]",
 		},
 	},
 	[386427] = {
 		readable = "Cart of Crushed Stone",
+		model = 875637,
 		text = {
 			en = "Cart of Crushed Stone",
 			es = "Carro de piedra machacada",
@@ -41773,10 +50766,12 @@ root("ObjectDB", {
 			pt = "Carrinho de Pedra Esmagada",
 			ru = "Повозка с дробленым камнем",
 			ko = "부서진 바위 수레",
+			cn = "[Cart of Crushed Stone]",
 		},
 	},
 	[386428] = {
 		readable = "Primordial Earth Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Earth Cache",
 			es = "Alijo de tierra primordial",
@@ -41786,10 +50781,12 @@ root("ObjectDB", {
 			pt = "Baú Terrano Primordial",
 			ru = "Тайник изначальной земли",
 			ko = "태고의 대지 보관함",
+			cn = "[Primordial Earth Cache]",
 		},
 	},
 	[386429] = {
 		readable = "Primordial Earth Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Earth Cache",
 			es = "Alijo de tierra primordial",
@@ -41799,10 +50796,12 @@ root("ObjectDB", {
 			pt = "Baú Terrano Primordial",
 			ru = "Тайник изначальной земли",
 			ko = "태고의 대지 보관함",
+			cn = "[Primordial Earth Cache]",
 		},
 	},
 	[386430] = {
 		readable = "Hardened Chest",
+		model = 4216698,
 		text = {
 			en = "Hardened Chest",
 			es = "Cofre endurecido",
@@ -41812,10 +50811,12 @@ root("ObjectDB", {
 			pt = "Baú Endurecido",
 			ru = "Укрепленный сундук",
 			ko = "경화된 보관함",
+			cn = "[Hardened Chest]",
 		},
 	},
 	[386431] = {
 		readable = "Primordial Earth Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Earth Cache",
 			es = "Alijo de tierra primordial",
@@ -41825,10 +50826,12 @@ root("ObjectDB", {
 			pt = "Baú Terrano Primordial",
 			ru = "Тайник изначальной земли",
 			ko = "태고의 대지 보관함",
+			cn = "[Primordial Earth Cache]",
 		},
 	},
 	[386432] = {
 		readable = "Hardened Chest",
+		model = 4216698,
 		text = {
 			en = "Hardened Chest",
 			es = "Cofre endurecido",
@@ -41838,10 +50841,12 @@ root("ObjectDB", {
 			pt = "Baú Endurecido",
 			ru = "Укрепленный сундук",
 			ko = "경화된 보관함",
+			cn = "[Hardened Chest]",
 		},
 	},
 	[386433] = {
 		readable = "Primordial Wind Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Wind Cache",
 			es = "Alijo de viento primordial",
@@ -41851,10 +50856,12 @@ root("ObjectDB", {
 			pt = "Baú Eólico Primordial",
 			ru = "Тайник изначального ветра",
 			ko = "태고의 바람 보관함",
+			cn = "[Primordial Wind Cache]",
 		},
 	},
 	[386441] = {
 		readable = "Primordial Wind Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Wind Cache",
 			es = "Alijo de viento primordial",
@@ -41864,10 +50871,12 @@ root("ObjectDB", {
 			pt = "Baú Eólico Primordial",
 			ru = "Тайник изначального ветра",
 			ko = "태고의 바람 보관함",
+			cn = "[Primordial Wind Cache]",
 		},
 	},
 	[386442] = {
 		readable = "Primordial Void Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Void Cache",
 			es = "Alijo de Vacío primordial",
@@ -41877,10 +50886,12 @@ root("ObjectDB", {
 			pt = "Baú Caótico Primordial",
 			ru = "Тайник изначальной Бездны",
 			ko = "태고의 공허 보관함",
+			cn = "[Primordial Void Cache]",
 		},
 	},
 	[386443] = {
 		readable = "Primordial Wind Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Wind Cache",
 			es = "Alijo de viento primordial",
@@ -41890,10 +50901,12 @@ root("ObjectDB", {
 			pt = "Baú Eólico Primordial",
 			ru = "Тайник изначального ветра",
 			ko = "태고의 바람 보관함",
+			cn = "[Primordial Wind Cache]",
 		},
 	},
 	[386444] = {
 		readable = "Primordial Water Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Water Cache",
 			es = "Alijo de agua primordial",
@@ -41903,10 +50916,12 @@ root("ObjectDB", {
 			pt = "Baú Aquático Primordial",
 			ru = "Тайник изначальной воды",
 			ko = "태고의 물 보관함",
+			cn = "[Primordial Water Cache]",
 		},
 	},
 	[386445] = {
 		readable = "Primordial Water Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Water Cache",
 			es = "Alijo de agua primordial",
@@ -41916,10 +50931,12 @@ root("ObjectDB", {
 			pt = "Baú Aquático Primordial",
 			ru = "Тайник изначальной воды",
 			ko = "태고의 물 보관함",
+			cn = "[Primordial Water Cache]",
 		},
 	},
 	[386447] = {
 		readable = "Primordial Water Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Water Cache",
 			es = "Alijo de agua primordial",
@@ -41929,10 +50946,12 @@ root("ObjectDB", {
 			pt = "Baú Aquático Primordial",
 			ru = "Тайник изначальной воды",
 			ko = "태고의 물 보관함",
+			cn = "[Primordial Water Cache]",
 		},
 	},
 	[386450] = {
 		readable = "Primordial Water Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Water Cache",
 			es = "Alijo de agua primordial",
@@ -41942,10 +50961,12 @@ root("ObjectDB", {
 			pt = "Baú Aquático Primordial",
 			ru = "Тайник изначальной воды",
 			ko = "태고의 물 보관함",
+			cn = "[Primordial Water Cache]",
 		},
 	},
 	[386451] = {
 		readable = "Wind-Bound Strongbox",
+		model = 4216698,
 		text = {
 			en = "Wind-Bound Strongbox",
 			es = "Caja fuerte ligada al viento",
@@ -41955,10 +50976,12 @@ root("ObjectDB", {
 			pt = "Caixa-forte Atada ao Vento",
 			ru = "Скованный ветром сундучок",
 			ko = "바람결속 금고",
+			cn = "[Wind-Bound Strongbox]",
 		},
 	},
 	[386452] = {
 		readable = "Void-Bound Strongbox",
+		model = 1711483,
 		text = {
 			en = "Void-Bound Strongbox",
 			es = "Caja fuerte ligada al Vacío",
@@ -41968,10 +50991,12 @@ root("ObjectDB", {
 			pt = "Caixa-forte Atada ao Caos",
 			ru = "Скованный Бездной сундучок",
 			ko = "공허결속 금고",
+			cn = "[Void-Bound Strongbox]",
 		},
 	},
 	[386453] = {
 		readable = "Wind-Bound Strongbox",
+		model = 4216698,
 		text = {
 			en = "Wind-Bound Strongbox",
 			es = "Caja fuerte ligada al viento",
@@ -41981,10 +51006,12 @@ root("ObjectDB", {
 			pt = "Caixa-forte Atada ao Vento",
 			ru = "Скованный ветром сундучок",
 			ko = "바람결속 금고",
+			cn = "[Wind-Bound Strongbox]",
 		},
 	},
 	[386454] = {
 		readable = "Chest of Ice",
+		model = 253441,
 		text = {
 			en = "Chest of Ice",
 			es = "Cofre de hielo",
@@ -41994,10 +51021,12 @@ root("ObjectDB", {
 			pt = "Baú de Gelo",
 			ru = "Сундук льда",
 			ko = "얼음의 상자",
+			cn = "[Chest of Ice]",
 		},
 	},
 	[386455] = {
 		readable = "Hardshell Chest",
+		model = 1096610,
 		text = {
 			en = "Hardshell Chest",
 			es = "Cofre de caparazón duro",
@@ -42007,10 +51036,12 @@ root("ObjectDB", {
 			pt = "Baú Cascadura",
 			ru = "Сундук из прочного панциря",
 			ko = "딱딱껍질 보관함",
+			cn = "[Hardshell Chest]",
 		},
 	},
 	[386456] = {
 		readable = "Hardshell Chest",
+		model = 1096610,
 		text = {
 			en = "Hardshell Chest",
 			es = "Cofre de caparazón duro",
@@ -42020,10 +51051,12 @@ root("ObjectDB", {
 			pt = "Baú Cascadura",
 			ru = "Сундук из прочного панциря",
 			ko = "딱딱껍질 보관함",
+			cn = "[Hardshell Chest]",
 		},
 	},
 	[386457] = {
 		readable = "Frozen Coffer",
+		model = 253441,
 		text = {
 			en = "Frozen Coffer",
 			es = "Arca congelada",
@@ -42033,10 +51066,12 @@ root("ObjectDB", {
 			pt = "Cofre Congelado",
 			ru = "Замерзший сундук",
 			ko = "얼어붙은 궤짝",
+			cn = "[Frozen Coffer]",
 		},
 	},
 	[386458] = {
 		readable = "Primordial Decay Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Decay Cache",
 			es = "Alijo de descomposición primordial",
@@ -42046,10 +51081,12 @@ root("ObjectDB", {
 			pt = "Baú de Decomposição Primordial",
 			ru = "Тайник изначального разложения",
 			ko = "태고의 부패 보관함",
+			cn = "[Primordial Decay Cache]",
 		},
 	},
 	[386459] = {
 		readable = "Primordial Decay Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Decay Cache",
 			es = "Alijo de descomposición primordial",
@@ -42059,10 +51096,12 @@ root("ObjectDB", {
 			pt = "Baú de Decomposição Primordial",
 			ru = "Тайник изначального разложения",
 			ko = "태고의 부패 보관함",
+			cn = "[Primordial Decay Cache]",
 		},
 	},
 	[386460] = {
 		readable = "Primordial Arcane Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Arcane Cache",
 			es = "Alijo Arcano primordial",
@@ -42072,10 +51111,12 @@ root("ObjectDB", {
 			pt = "Baú Arcano Primordial",
 			ru = "Тайник изначальных чар",
 			ko = "태고의 비전 보관함",
+			cn = "[Primordial Decay Cache]",
 		},
 	},
 	[386461] = {
 		readable = "Primordial Arcane Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Arcane Cache",
 			es = "Alijo Arcano primordial",
@@ -42085,10 +51126,12 @@ root("ObjectDB", {
 			pt = "Baú Arcano Primordial",
 			ru = "Тайник изначальных чар",
 			ko = "태고의 비전 보관함",
+			cn = "[Primordial Arcane Cache]",
 		},
 	},
 	[386462] = {
 		readable = "Primordial Blood Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Blood Cache",
 			es = "Alijo de sangre primordial",
@@ -42098,10 +51141,12 @@ root("ObjectDB", {
 			pt = "Baú Arcano Primordial",
 			ru = "Тайник изначальной крови",
 			ko = "태고의 핏빛 보관함",
+			cn = "[Primordial Blood Cache]",
 		},
 	},
 	[386463] = {
 		readable = "Primordial Gold Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Gold Cache",
 			es = "Alijo de oro primordial",
@@ -42111,10 +51156,12 @@ root("ObjectDB", {
 			pt = "Baú Áureo Primordial",
 			ru = "Тайник изначального золота",
 			ko = "태고의 황금 보관함",
+			cn = "[Primordial Gold Cache]",
 		},
 	},
 	[386470] = {
 		readable = "Gold Pile",
+		model = 4217887,
 		text = {
 			en = "Gold Pile",
 			es = "Montón de oro",
@@ -42129,6 +51176,7 @@ root("ObjectDB", {
 	},
 	[386472] = {
 		readable = "Gold Pile",
+		model = 4217886,
 		text = {
 			en = "Gold Pile",
 			es = "Montón de oro",
@@ -42143,6 +51191,7 @@ root("ObjectDB", {
 	},
 	[386484] = {
 		readable = "Gold Pile",
+		model = 4217885,
 		text = {
 			en = "Gold Pile",
 			es = "Montón de oro",
@@ -42157,6 +51206,7 @@ root("ObjectDB", {
 	},
 	[386531] = {
 		readable = "Gold Pile",
+		model = 4217887,
 		text = {
 			en = "Gold Pile",
 			es = "Montón de oro",
@@ -42171,6 +51221,7 @@ root("ObjectDB", {
 	},
 	[386532] = {
 		readable = "Primordial Gold Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Gold Cache",
 			es = "Alijo de oro primordial",
@@ -42180,10 +51231,12 @@ root("ObjectDB", {
 			pt = "Baú Áureo Primordial",
 			ru = "Тайник изначального золота",
 			ko = "태고의 황금 보관함",
+			cn = "[Primordial Gold Cache]",
 		},
 	},
 	[386547] = {
 		readable = "Suffusion Mold",
+		model = 4995951,
 		text = {
 			en = "Suffusion Mold",
 			es = "Molde de carga",
@@ -42193,34 +51246,42 @@ root("ObjectDB", {
 			pt = "Molde de Impregnação",
 			ru = "Форма насыщения",
 			ko = "열화의 거푸집",
+			cn = "弥散铸模",
 		},
 	},
 	[386555] = {
 		readable = "Odd Circular Object",
+		model = 1319079,
 		text = {
 			en = "Odd Circular Object",
-			-- TODO: es = "Odd Circular Object",
-			-- TODO: de = "Odd Circular Object",
-			-- TODO: fr = "Odd Circular Object",
-			-- TODO: it = "Odd Circular Object",
-			-- TODO: ru = "Odd Circular Object",
-			-- TODO: cn = "Odd Circular Object",
+			es = "Objeto extraño circular",
+			de = "Seltsamer runder Gegenstand",
+			fr = "Objet circulaire étrange",
+			it = "Strano Oggetto Circolare",
+			pt = "Objeto Circular Estranho",
+			ru = "Странный сферический объект",
+			ko = "특이한 원형 물체",
+			cn = "[Odd Circular Object]",
 		},
 	},
 	[386556] = {
 		readable = "Dusty Vase",
+		model = 4298410,
 		text = {
 			en = "Dusty Vase",
 			es = "Jarrón polvoriento",
 			de = "Staubige Vase",
 			fr = "Vase poussiéreux",
 			it = "Vaso Polveroso",
+			pt = "[Dusty Vase]",
 			ru = "Пыльная ваза",
+			ko = "[Dusty Vase]",
 			cn = "满是尘土的花瓶",
 		},
 	},
 	[386559] = {
 		readable = "Secured Shipment",
+		model = 4216698,
 		text = {
 			en = "Secured Shipment",
 			es = "Envío asegurado",
@@ -42229,11 +51290,13 @@ root("ObjectDB", {
 			it = "Spedizione in Sicurezza",
 			pt = "Carregamento Protegido",
 			ru = "Защищенные ресурсы",
+			ko = "[Secured Shipment]",
 			cn = "夺得的货物",
 		},
 	},
 	[386573] = {
 		readable = "Ornate Key Box",
+		model = 2833918,
 		text = {
 			en = "Ornate Key Box",
 			es = "Caja de llave ornamentada",
@@ -42243,10 +51306,12 @@ root("ObjectDB", {
 			pt = "Baú Ornado",
 			ru = "Изысканная коробка для ключей",
 			ko = "화려한 열쇠 상자",
+			cn = "[Ornate Key Box]",
 		},
 	},
 	[386578] = {
 		readable = "Neltharion Gift Token",
+		model = 916363,
 		text = {
 			en = "Neltharion Gift Token",
 			es = "Vale de obsequio de Neltharion",
@@ -42261,6 +51326,7 @@ root("ObjectDB", {
 	},
 	[386579] = {
 		readable = "Neltharion Gift Token",
+		model = 916363,
 		text = {
 			en = "Neltharion Gift Token",
 			es = "Vale de obsequio de Neltharion",
@@ -42275,6 +51341,7 @@ root("ObjectDB", {
 	},
 	[386580] = {
 		readable = "Neltharion Gift Token",
+		model = 916363,
 		text = {
 			en = "Neltharion Gift Token",
 			es = "Vale de obsequio de Neltharion",
@@ -42289,6 +51356,7 @@ root("ObjectDB", {
 	},
 	[386581] = {
 		readable = "Neltharion Gift Token",
+		model = 916363,
 		text = {
 			en = "Neltharion Gift Token",
 			es = "Vale de obsequio de Neltharion",
@@ -42303,6 +51371,7 @@ root("ObjectDB", {
 	},
 	[386582] = {
 		readable = "Neltharion Gift Token",
+		model = 916363,
 		text = {
 			en = "Neltharion Gift Token",
 			es = "Vale de obsequio de Neltharion",
@@ -42317,6 +51386,7 @@ root("ObjectDB", {
 	},
 	[386583] = {
 		readable = "Neltharion Gift Token",
+		model = 916363,
 		text = {
 			en = "Neltharion Gift Token",
 			es = "Vale de obsequio de Neltharion",
@@ -42331,6 +51401,7 @@ root("ObjectDB", {
 	},
 	[386585] = {
 		readable = "Experimental Melder",
+		model = 2828327,
 		text = {
 			en = "Experimental Melder",
 			es = "Fusionador experimental",
@@ -42345,6 +51416,7 @@ root("ObjectDB", {
 	},
 	[386586] = {
 		readable = "Prismatic Fragment",
+		model = 1572190,
 		text = {
 			en = "Prismatic Fragment",
 			es = "Fragmento prismático",
@@ -42359,6 +51431,7 @@ root("ObjectDB", {
 	},
 	[386587] = {
 		readable = "Prismatic Fragment",
+		model = 1572128,
 		text = {
 			en = "Prismatic Fragment",
 			es = "Fragmento prismático",
@@ -42373,6 +51446,7 @@ root("ObjectDB", {
 	},
 	[386588] = {
 		readable = "Crystal Basket",
+		model = 875120,
 		text = {
 			en = "Crystal Basket",
 			es = "Cesta de cristal",
@@ -42382,10 +51456,12 @@ root("ObjectDB", {
 			pt = "Cesto de Cristais",
 			ru = "Корзина с кристаллами",
 			ko = "수정 바구니",
+			cn = "[Crystal Basket]",
 		},
 	},
 	[386589] = {
 		readable = "Crystal Basket",
+		model = 875124,
 		text = {
 			en = "Crystal Basket",
 			es = "Cesta de cristal",
@@ -42395,10 +51471,12 @@ root("ObjectDB", {
 			pt = "Cesto de Cristais",
 			ru = "Корзина с кристаллами",
 			ko = "수정 바구니",
+			cn = "[Crystal Basket]",
 		},
 	},
 	[386591] = {
 		readable = "Empty Vial",
+		model = 1608205,
 		text = {
 			en = "Empty Vial",
 			es = "Vial vacío",
@@ -42413,6 +51491,7 @@ root("ObjectDB", {
 	},
 	[386604] = {
 		readable = "Primordial Gold Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Gold Cache",
 			es = "Alijo de oro primordial",
@@ -42422,10 +51501,12 @@ root("ObjectDB", {
 			pt = "Baú Áureo Primordial",
 			ru = "Тайник изначального золота",
 			ko = "태고의 황금 보관함",
+			cn = "[Primordial Gold Cache]",
 		},
 	},
 	[386605] = {
 		readable = "Gold Pile",
+		model = 4217887,
 		text = {
 			en = "Gold Pile",
 			es = "Montón de oro",
@@ -42440,6 +51521,7 @@ root("ObjectDB", {
 	},
 	[386632] = {
 		readable = "Experimental Dragon Pack",
+		model = 334368,
 		text = {
 			en = "Experimental Dragon Pack",
 			es = "Mochila de dragón experimental",
@@ -42454,6 +51536,7 @@ root("ObjectDB", {
 	},
 	[386633] = {
 		readable = "Chest of Storms",
+		model = 2839405,
 		text = {
 			en = "Chest of Storms",
 			es = "Cofre de las tormentas",
@@ -42468,6 +51551,7 @@ root("ObjectDB", {
 	},
 	[386648] = {
 		readable = "Mysterious Scroll",
+		model = 1365486,
 		text = {
 			en = "Mysterious Scroll",
 			es = "Pergamino misterioso",
@@ -42482,6 +51566,7 @@ root("ObjectDB", {
 	},
 	[386660] = {
 		readable = "Gold Pile",
+		model = 4217885,
 		text = {
 			en = "Gold Pile",
 			es = "Montón de oro",
@@ -42496,30 +51581,37 @@ root("ObjectDB", {
 	},
 	[386668] = {
 		readable = "Shattered Hakkari Bijou",
+		model = 2027712,
 		text = {
 			en = "Shattered Hakkari Bijou",
 			es = "Joya Hakkari destrozada",
 			de = "Zerschmettertes Schmuckstück der Hakkari",
 			fr = "Bijou hakkari fracassé",
+			it = "[Shattered Hakkari Bijou]",
 			pt = "Joia Hakkari Estilhaçada",
 			ru = "Расколотый брелок Хаккари",
+			ko = "[Shattered Hakkari Bijou]",
 			cn = "破碎的哈卡莱宝石",
 		},
 	},
 	[386669] = {
 		readable = "Fragmented Hakkari Bijou",
+		model = 1305203,
 		text = {
 			en = "Fragmented Hakkari Bijou",
 			es = "Joya Hakkari fragmentada",
 			de = "Zerbrochenes Schmuckstück der Hakkari",
 			fr = "Bijou hakkari fragmenté",
+			it = "[Fragmented Hakkari Bijou]",
 			pt = "Joia Hakkari Fragmentada",
 			ru = "Разбитый брелок Хаккари",
+			ko = "[Fragmented Hakkari Bijou]",
 			cn = "碎裂的哈卡莱宝石",
 		},
 	},
 	[386680] = {
 		readable = "Mysterious Almanac",
+		model = 4298560,
 		text = {
 			en = "Mysterious Almanac",
 			es = "Anuario misterioso",
@@ -42534,6 +51626,7 @@ root("ObjectDB", {
 	},
 	[386683] = {
 		readable = "Seared Book",
+		model = 4298558,
 		text = {
 			en = "Seared Book",
 			es = "Libro abrasado",
@@ -42548,11 +51641,13 @@ root("ObjectDB", {
 	},
 	[386687] = {
 		readable = "Aged Journal",
+		model = 4298558,
 		text = {
 			en = "Aged Journal",
 			es = "Diario envejecido",
 			de = "Gealtertes Tagebuch",
 			fr = "Journal patiné",
+			it = "[Aged Journal]",
 			pt = "Diário Envelhecido",
 			ru = "Потертый журнал",
 			ko = "오래된 일지",
@@ -42561,11 +51656,13 @@ root("ObjectDB", {
 	},
 	[386688] = {
 		readable = "Blank Tome",
+		model = 4298560,
 		text = {
 			en = "Blank Tome",
 			es = "Tomo en blanco",
 			de = "Leerer Foliant",
 			fr = "Tome vierge",
+			it = "[Blank Tome]",
 			pt = "Tomo em Branco",
 			ru = "Пустой фолиант",
 			ko = "백지 고서",
@@ -42574,11 +51671,13 @@ root("ObjectDB", {
 	},
 	[386690] = {
 		readable = "Ambiguous Compendium",
+		model = 4298558,
 		text = {
 			en = "Ambiguous Compendium",
 			es = "Compendio ambiguo",
 			de = "Unklares Kompendium",
 			fr = "Compendium ambigu",
+			it = "[Ambiguous Compendium]",
 			pt = "Compêndio Ambíguo",
 			ru = "Сомнительный каталог",
 			ko = "모호한 전서",
@@ -42587,6 +51686,7 @@ root("ObjectDB", {
 	},
 	[386762] = {
 		readable = "Primordial Armor Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Armor Cache",
 			es = "Alijo de armaduras primordiales",
@@ -42596,10 +51696,12 @@ root("ObjectDB", {
 			pt = "Baú de Armadura Arcano Primordial",
 			ru = "Изначальный тайник с доспехами",
 			ko = "태고의 방어구 보관함",
+			cn = "[Primordial Armor Cache]",
 		},
 	},
 	[387493] = {
 		readable = "Unique Fish",
+		model = 4035893,
 		text = {
 			en = "Unique Fish",
 			es = "Pez único",
@@ -42614,6 +51716,7 @@ root("ObjectDB", {
 	},
 	[387496] = {
 		readable = "Brazier of Madness",
+		model = 200934,
 		text = {
 			en = "Brazier of Madness",
 			es = "Blandón de la Locura",
@@ -42628,6 +51731,7 @@ root("ObjectDB", {
 	},
 	[387500] = {
 		readable = "Chilly Snowman",
+		model = 125984,
 		text = {
 			en = "Chilly Snowman",
 			es = "Muñeco de nieve gélido",
@@ -42637,10 +51741,12 @@ root("ObjectDB", {
 			pt = "Bonequinho de Neve",
 			ru = "Замерзший снеговик",
 			ko = "싸늘한 눈사람",
+			cn = "[Chilly Snowman]",
 		},
 	},
 	[387501] = {
 		readable = "Neltharion Gift Token",
+		model = 916363,
 		text = {
 			en = "Neltharion Gift Token",
 			es = "Vale de obsequio de Neltharion",
@@ -42655,39 +51761,52 @@ root("ObjectDB", {
 	},
 	[387503] = {
 		readable = "Sealed Letter to Neltharion",
+		model = 576627,
 		text = {
 			en = "Sealed Letter to Neltharion",
 			es = "Carta lacrada para Neltharion",
 			de = "Versiegelter Brief an Neltharion",
 			fr = "Lettre scellée à l’attention de Neltharion",
+			it = "Lettera Sigillata per Neltharion",
 			pt = "Carta Lacrada para Neltharion",
 			ru = "Запечатанное письмо Нелтариону",
+			ko = "[Sealed Letter To Neltharion]",
 			cn = "给奈萨里奥的密封信",
 		},
 	},
 	[387507] = {
 		readable = "Azerite Powder Barrel",
+		model = 1989486,
 		text = {
 			en = "Azerite Powder Barrel",
 			es = "Barrica de pólvora de azerita",
 			de = "Azeritpulverfass",
 			fr = "Baril de poudre d’azérite",
+			it = "Barile di Polvere da Sparo d'Azerite",
+			pt = "[Azerite Powder Barrel]",
 			ru = "Бочка азеритового пороха",
+			ko = "[Azerite Powder Barrel]",
+			cn = "[Azerite Powder Barrel]",
 		},
 	},
 	[387508] = {
 		readable = "Igniter Torch",
+		model = 4060923,
 		text = {
 			en = "Igniter Torch",
 			es = "Antorcha de ignición",
 			de = "Zündfackel",
 			fr = "Torche d’allumage",
+			it = "Accenditorce",
+			pt = "[Igniter Torch]",
 			ru = "Факел для разжигания",
+			ko = "[Igniter Torch]",
 			cn = "点燃火把",
 		},
 	},
 	[387520] = {
 		readable = "TICKET: Glimmerogg Games",
+		model = 936419,
 		text = {
 			en = "TICKET: Glimmerogg Games",
 			es = "CUPÓN: juegos de Destellorogg",
@@ -42697,10 +51816,12 @@ root("ObjectDB", {
 			pt = "Ingresso: Jogos de Lumerogg",
 			ru = "Билет: игры Мерцающего Огга",
 			ko = "입장권: 글리머로그 경기",
+			cn = "入场券：格里梅罗格运动会",
 		},
 	},
 	[387728] = {
 		readable = "Opera of the Aspects",
+		model = 4298562,
 		text = {
 			en = "Opera of the Aspects",
 			es = "Ópera de los Aspectos",
@@ -42715,6 +51836,7 @@ root("ObjectDB", {
 	},
 	[387736] = {
 		readable = "The Old Gods and the Ordering of Azeroth",
+		model = 244162,
 		text = {
 			en = "The Old Gods and the Ordering of Azeroth",
 			es = "Los dioses antiguos y el orden de Azeroth",
@@ -42729,6 +51851,7 @@ root("ObjectDB", {
 	},
 	[387737] = {
 		readable = "Living Book",
+		model = 198017,
 		text = {
 			en = "Living Book",
 			es = "Libro viviente",
@@ -42743,6 +51866,7 @@ root("ObjectDB", {
 	},
 	[387746] = {
 		readable = "Primordial Spirit Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Spirit Cache",
 			es = "Alijo espiritual primordial",
@@ -42752,10 +51876,12 @@ root("ObjectDB", {
 			pt = "Núcleo de Espírito Primordial",
 			ru = "Первозданный сундук духов",
 			ko = "태고의 영혼 보관함",
+			cn = "[Primordial Spirit Cache]",
 		},
 	},
 	[387749] = {
 		readable = "Animate Crystalspine",
+		model = 3730985,
 		text = {
 			en = "Animate Crystalspine",
 			es = "Espinacristal animado",
@@ -42770,6 +51896,7 @@ root("ObjectDB", {
 	},
 	[387853] = {
 		readable = "Shattered Crystals",
+		model = 202125,
 		text = {
 			en = "Shattered Crystals",
 			es = "Cristales destrozados",
@@ -42779,21 +51906,27 @@ root("ObjectDB", {
 			pt = "Cristais Estilhaçados",
 			ru = "Разбитые кристаллы",
 			ko = "조각난 수정",
+			cn = "[Shattered Crystals]",
 		},
 	},
 	[388471] = {
 		readable = "Pillaged Primordial Cache",
+		model = 4631398,
 		text = {
 			en = "Pillaged Primordial Cache",
 			es = "Alijo primordial saqueado",
 			de = "Geplünderte urzeitliche Truhe",
 			fr = "Cache primordiale pillée",
 			it = "Cassa Primordiale Saccheggiata",
+			pt = "[Pillaged Primordial Cache]",
 			ru = "Разграбленный первозданный сундук",
+			ko = "[Pillaged Primordial Cache]",
+			cn = "[Pillaged Primordial Cache]",
 		},
 	},
 	[388712] = {
 		readable = "Opera Chest",
+		model = 1602486,
 		text = {
 			en = "Opera Chest",
 			es = "Cofre de la ópera",
@@ -42803,10 +51936,12 @@ root("ObjectDB", {
 			pt = "Baú da Ópera",
 			ru = "Оперный сундук",
 			ko = "가극 상자",
+			cn = "[Opera Chest]",
 		},
 	},
 	[388866] = {
 		readable = "Reagent Pot",
+		model = 4620935,
 		text = {
 			en = "Reagent Pot",
 			es = "Olla de componentes",
@@ -42816,10 +51951,12 @@ root("ObjectDB", {
 			pt = "Panela de Reagentes",
 			ru = "Котелок с реагентами",
 			ko = "재료 냄비",
+			cn = "[Reagent Pot]",
 		},
 	},
 	[388873] = {
 		readable = "Irontide Coin Bag",
+		model = 1602312,
 		text = {
 			en = "Irontide Coin Bag",
 			es = "Bolsa de monedas Marea de Hierro",
@@ -42834,6 +51971,7 @@ root("ObjectDB", {
 	},
 	[388876] = {
 		readable = "Reagent Pot",
+		model = 4620933,
 		text = {
 			en = "Reagent Pot",
 			es = "Olla de componentes",
@@ -42843,10 +51981,12 @@ root("ObjectDB", {
 			pt = "Panela de Reagentes",
 			ru = "Котелок с реагентами",
 			ko = "재료 냄비",
+			cn = "[Reagent Pot]",
 		},
 	},
 	[388895] = {
 		readable = "Random Scribblings",
+		model = 4324473,
 		text = {
 			en = "Random Scribblings",
 			es = "Garabatos aleatorios",
@@ -42861,6 +52001,7 @@ root("ObjectDB", {
 	},
 	[388896] = {
 		readable = "Crystal-encased Chest",
+		model = 4323481,
 		text = {
 			en = "Crystal-encased Chest",
 			es = "Cofre recubierto de cristales",
@@ -42869,11 +52010,13 @@ root("ObjectDB", {
 			it = "Cassa Rivestita di Cristalli",
 			pt = "Baú Revestido de Cristal",
 			ru = "Сундук в кристалле",
+			ko = "[Crystal-encased Chest]",
 			cn = "晶固之箱",
 		},
 	},
 	[388905] = {
 		readable = "Neltharion Toolkit",
+		model = 984686,
 		text = {
 			en = "Neltharion Toolkit",
 			es = "Juego de herramientas de Neltharion",
@@ -42883,10 +52026,12 @@ root("ObjectDB", {
 			pt = "Kit de Ferramentas de Neltharion",
 			ru = "Инструменты Нелтариона",
 			ko = "넬타리온의 도구",
+			cn = "[Neltharion Toolkit]",
 		},
 	},
 	[388908] = {
 		readable = "Inert Goo",
+		model = 2851157,
 		text = {
 			en = "Inert Goo",
 			es = "Baba inerte",
@@ -42896,10 +52041,12 @@ root("ObjectDB", {
 			pt = "Gosma Inerte",
 			ru = "Безжизненная слизь",
 			ko = "마력을 잃은 찐득이",
+			cn = "[Inert Goo]",
 		},
 	},
 	[388911] = {
 		readable = "Old Trunk",
+		model = 953811,
 		text = {
 			en = "Old Trunk",
 			es = "Baúl viejo",
@@ -42908,11 +52055,13 @@ root("ObjectDB", {
 			it = "Baule Vecchio",
 			pt = "Baú Velho",
 			ru = "Старый сундук",
+			ko = "[Old Trunk]",
 			cn = "古旧的宝箱",
 		},
 	},
 	[389102] = {
 		readable = "Prismatic Fragment",
+		model = 1572190,
 		text = {
 			en = "Prismatic Fragment",
 			es = "Fragmento prismático",
@@ -42927,6 +52076,7 @@ root("ObjectDB", {
 	},
 	[389103] = {
 		readable = "Prismatic Fragment",
+		model = 1572190,
 		text = {
 			en = "Prismatic Fragment",
 			es = "Fragmento prismático",
@@ -42941,6 +52091,7 @@ root("ObjectDB", {
 	},
 	[389104] = {
 		readable = "Prismatic Fragment",
+		model = 1572128,
 		text = {
 			en = "Prismatic Fragment",
 			es = "Fragmento prismático",
@@ -42955,6 +52106,7 @@ root("ObjectDB", {
 	},
 	[389105] = {
 		readable = "Prismatic Fragment",
+		model = 1572128,
 		text = {
 			en = "Prismatic Fragment",
 			es = "Fragmento prismático",
@@ -42969,6 +52121,7 @@ root("ObjectDB", {
 	},
 	[389106] = {
 		readable = "Prismatic Fragment",
+		model = 1572190,
 		text = {
 			en = "Prismatic Fragment",
 			es = "Fragmento prismático",
@@ -42983,6 +52136,7 @@ root("ObjectDB", {
 	},
 	[389107] = {
 		readable = "Prismatic Fragment",
+		model = 1572190,
 		text = {
 			en = "Prismatic Fragment",
 			es = "Fragmento prismático",
@@ -42997,6 +52151,7 @@ root("ObjectDB", {
 	},
 	[389108] = {
 		readable = "Prismatic Fragment",
+		model = 1572190,
 		text = {
 			en = "Prismatic Fragment",
 			es = "Fragmento prismático",
@@ -43011,6 +52166,7 @@ root("ObjectDB", {
 	},
 	[389111] = {
 		readable = "Waterlogged Bundle",
+		model = 1634928,
 		text = {
 			en = "Waterlogged Bundle",
 			es = "Fardo empapado",
@@ -43025,6 +52181,7 @@ root("ObjectDB", {
 	},
 	[389114] = {
 		readable = "Long-Lost Cache",
+		model = 2123117,
 		text = {
 			en = "Long-Lost Cache",
 			es = "Alijo perdido hace tiempo",
@@ -43039,6 +52196,7 @@ root("ObjectDB", {
 	},
 	[389173] = {
 		readable = "Primordial Blood Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Blood Cache",
 			es = "Alijo de sangre primordial",
@@ -43048,10 +52206,12 @@ root("ObjectDB", {
 			pt = "Baú Arcano Primordial",
 			ru = "Тайник изначальной крови",
 			ko = "태고의 핏빛 보관함",
+			cn = "[Primordial Blood Cache]",
 		},
 	},
 	[389231] = {
 		readable = "Primordial Music Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Music Cache",
 			es = "Alijo de música primordial",
@@ -43061,10 +52221,12 @@ root("ObjectDB", {
 			pt = "Baú Musical Primordial",
 			ru = "Тайник изначальной музыки",
 			ko = "태고의 음악 보관함",
+			cn = "[Primordial Music Cache]",
 		},
 	},
 	[389471] = {
 		readable = "Grand Obsidian Cache",
+		model = 4631398,
 		text = {
 			en = "Grand Obsidian Cache",
 			es = "Alijo majestuoso de obsidiana",
@@ -43074,10 +52236,12 @@ root("ObjectDB", {
 			pt = "Grande Baú de Obsidiana",
 			ru = "Великий обсидиановый тайник",
 			ko = "흑요석 대보관함",
+			cn = "[Obsidian Grand Cache]",
 		},
 	},
 	[389540] = {
 		readable = "Slimy Goo",
+		model = 2851157,
 		text = {
 			en = "Slimy Goo",
 			es = "Baba babosa",
@@ -43092,6 +52256,7 @@ root("ObjectDB", {
 	},
 	[389545] = {
 		readable = "Mysterious Chest",
+		model = 4216698,
 		text = {
 			en = "Mysterious Chest",
 			es = "Arcón misterioso",
@@ -43101,10 +52266,12 @@ root("ObjectDB", {
 			pt = "Baú Misterioso",
 			ru = "Таинственный сундук",
 			ko = "신비로운 궤짝",
+			cn = "[Mysterious Chest]",
 		},
 	},
 	[389546] = {
 		readable = "Reagent Pot",
+		model = 4620935,
 		text = {
 			en = "Reagent Pot",
 			es = "Olla de componentes",
@@ -43114,10 +52281,12 @@ root("ObjectDB", {
 			pt = "Panela de Reagentes",
 			ru = "Котелок с реагентами",
 			ko = "재료 냄비",
+			cn = "[Reagent Pot]",
 		},
 	},
 	[389564] = {
 		readable = "Mindless Slime",
+		model = 2851157,
 		text = {
 			en = "Mindless Slime",
 			es = "Babosa descerebrada",
@@ -43127,10 +52296,12 @@ root("ObjectDB", {
 			pt = "Visgo Desmiolado",
 			ru = "Безмозглая слизь",
 			ko = "넋 나간 점액",
+			cn = "[Mindless Slime]",
 		},
 	},
 	[389599] = {
 		readable = "Ice Spike",
+		model = 3998034,
 		text = {
 			en = "Ice Spike",
 			es = "Púa de hielo",
@@ -43145,6 +52316,7 @@ root("ObjectDB", {
 	},
 	[389789] = {
 		readable = "Primordial Earth Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Earth Cache",
 			es = "Alijo de tierra primordial",
@@ -43154,10 +52326,12 @@ root("ObjectDB", {
 			pt = "Baú Terrano Primordial",
 			ru = "Тайник изначальной земли",
 			ko = "태고의 대지 보관함",
+			cn = "[Primordial Earth Cache]",
 		},
 	},
 	[389902] = {
 		readable = "Primordial Earth Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Earth Cache",
 			es = "Alijo de tierra primordial",
@@ -43167,10 +52341,12 @@ root("ObjectDB", {
 			pt = "Baú Terrano Primordial",
 			ru = "Тайник изначальной земли",
 			ko = "태고의 대지 보관함",
+			cn = "[Primordial Earth Cache]",
 		},
 	},
 	[390008] = {
 		readable = "Ice",
+		model = 3998034,
 		text = {
 			en = "Ice",
 			es = "Hielo",
@@ -43180,10 +52356,12 @@ root("ObjectDB", {
 			pt = "Gelo",
 			ru = "Лед",
 			ko = "얼음",
+			cn = "[Ice]",
 		},
 	},
 	[390009] = {
 		readable = "Box of Rocks",
+		model = 950860,
 		text = {
 			en = "Box of Rocks",
 			es = "Caja de piedras",
@@ -43198,6 +52376,7 @@ root("ObjectDB", {
 	},
 	[390074] = {
 		readable = "Primordial Deep Ocean Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Deep Ocean Cache",
 			es = "Alijo de océano profundo primordial",
@@ -43207,20 +52386,87 @@ root("ObjectDB", {
 			pt = "Baú do Oceano Profundo Primordial",
 			ru = "Изначальный сундук морских глубин",
 			ko = "태고의 심해 보관함",
+			cn = "[Primordial Deep Ocean Cache]",
 		},
 	},
 	[390136] = {
 		readable = "Spore-bound Essence",
+		model = 973262,
 		text = {
 			en = "Spore-bound Essence",
+			es = "[Spore-bound Essence]",
 			de = "Sporengebundene Essenz",
 			fr = "Essence sporeliée",
+			it = "[Spore-bound Essence]",
+			pt = "[Spore-bound Essence]",
 			ru = "Экстракт спор",
+			ko = "[Spore-bound Essence]",
 			cn = "孢缚精华",
+		},
+	},
+	[390139] = {
+		readable = "Lambent Hochenblume",
+		model = 5091436,
+		text = {
+			en = "Lambent Hochenblume",
+			es = "Lumbreflor luminiscente",
+			de = "Flackernde Hochblume",
+			fr = "Hochenblume diaprée",
+			it = "Altofiore Tremolante",
+			pt = "Hochenblume Bruxuleante",
+			ru = "Сияющий хоэнвейс",
+			ko = "희미한 장대꽃",
+			cn = "柔光霍亨布墨花",
+		},
+	},
+	[390140] = {
+		readable = "Lambent Saxifrage",
+		model = 5091440,
+		text = {
+			en = "Lambent Saxifrage",
+			es = "Saxifraga luminiscente",
+			de = "Flackerndes Steinbrich",
+			fr = "Saxifrage diaprée",
+			it = "Sassifraga Tremolante",
+			pt = "Quebra-pedra Bruxuleante",
+			ru = "Сияющая камнеломка",
+			ko = "희미한 다년초",
+			cn = "[Lambent Saxifrage]",
+		},
+	},
+	[390141] = {
+		readable = "Lambent Writhebark",
+		model = 5091442,
+		text = {
+			en = "Lambent Writhebark",
+			es = "Pino retorcido luminiscente",
+			de = "Flackernde Krümmrinde",
+			fr = "Écorce tordue diaprée",
+			it = "Scorzatorta Tremolante",
+			pt = "Casca Retorcida Bruxuleante",
+			ru = "Сияющая витая кора",
+			ko = "희미한 격통껍질",
+			cn = "[Lambent Writhebark]",
+		},
+	},
+	[390142] = {
+		readable = "Lambent Bubble Poppy",
+		model = 5091434,
+		text = {
+			en = "Lambent Bubble Poppy",
+			es = "Amapola burbuja luminiscente",
+			de = "Flackernder Blasenmohn",
+			fr = "Pavot à bulle diapré",
+			it = "Papavero Bolla Tremolante",
+			pt = "Papoula Borbulhante Bruxuleante",
+			ru = "Сияющий пузырчатый мак",
+			ko = "[Lambent Bubble Poppy]",
+			cn = "[Lambent Bubble Poppy]",
 		},
 	},
 	[390257] = {
 		readable = "Stuffed Bear",
+		model = 197845,
 		text = {
 			en = "Stuffed Bear",
 			es = "Oso de peluche",
@@ -43235,6 +52481,7 @@ root("ObjectDB", {
 	},
 	[390258] = {
 		readable = "Inert Goo",
+		model = 2851157,
 		text = {
 			en = "Inert Goo",
 			es = "Baba inerte",
@@ -43244,10 +52491,12 @@ root("ObjectDB", {
 			pt = "Gosma Inerte",
 			ru = "Безжизненная слизь",
 			ko = "마력을 잃은 찐득이",
+			cn = "[Inert Goo]",
 		},
 	},
 	[390559] = {
 		readable = "Box of Rocks",
+		model = 950860,
 		text = {
 			en = "Box of Rocks",
 			es = "Caja de piedras",
@@ -43262,6 +52511,7 @@ root("ObjectDB", {
 	},
 	[390560] = {
 		readable = "Locked Research Chest",
+		model = 4216698,
 		text = {
 			en = "Locked Research Chest",
 			es = "Cofre de investigación cerrado",
@@ -43271,10 +52521,12 @@ root("ObjectDB", {
 			pt = "Baú de Pesquisa Trancado",
 			ru = "Запертый сундук с исследованиями",
 			ko = "잠긴 연구물 상자",
+			cn = "[Locked Research Chest]",
 		},
 	},
 	[392025] = {
 		readable = "Molded Coins",
+		model = 792965,
 		text = {
 			en = "Molded Coins",
 			es = "Monedas moldeadas",
@@ -43283,10 +52535,13 @@ root("ObjectDB", {
 			it = "Monete Stampate",
 			pt = "Moedas Moldadas",
 			ru = "Отлитые монеты",
+			ko = "[Molded Coins]",
+			cn = "[Molded Coins]",
 		},
 	},
 	[392026] = {
 		readable = "Neltharion Coin Mold",
+		model = 792965,
 		text = {
 			en = "Neltharion Coin Mold",
 			es = "Molde de monedas de Neltharion",
@@ -43296,10 +52551,12 @@ root("ObjectDB", {
 			pt = "Molde de Moeda de Neltharion",
 			ru = "Форма для монет Нелтариона",
 			ko = "넬타리온 주화 거푸집",
+			cn = "[Neltharion Coin Mold]",
 		},
 	},
 	[392030] = {
 		readable = "Blacksteel Hammer",
+		model = 4095171,
 		text = {
 			en = "Blacksteel Hammer",
 			es = "Martillo de acero negro",
@@ -43314,6 +52571,7 @@ root("ObjectDB", {
 	},
 	[392335] = {
 		readable = "Primordial Armor Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Armor Cache",
 			es = "Alijo de armaduras primordiales",
@@ -43323,10 +52581,12 @@ root("ObjectDB", {
 			pt = "Baú de Armadura Arcano Primordial",
 			ru = "Изначальный тайник с доспехами",
 			ko = "태고의 방어구 보관함",
+			cn = "[Primordial Armor Cache]",
 		},
 	},
 	[392569] = {
 		readable = "Chain-Bound Primordial Cache",
+		model = 4631398,
 		text = {
 			en = "Chain-Bound Primordial Cache",
 			es = "Alijo primordial protegido con cadenas",
@@ -43336,22 +52596,27 @@ root("ObjectDB", {
 			pt = "Baú Primordial Acorrentado",
 			ru = "Окованный цепями изначальный сундук",
 			ko = "사슬결속 태고의 보관함",
+			cn = "[Chain-Bound Primordial Cache]",
 		},
 	},
 	[392570] = {
 		readable = "Chain-Bound Primordial Cache",
+		model = 4631398,
 		text = {
 			en = "Chain-Bound Primordial Cache",
 			es = "Alijo primordial protegido con cadenas",
 			de = "Kettengebundene urzeitliche Truhe",
 			fr = "Cache primordiale scellée par des chaînes",
 			it = "Cassa Primordiale Incatenata",
+			pt = "[Chain-Bound Primordial Cache]",
 			ru = "Окованный цепями изначальный сундук",
 			ko = "사슬결속 태고의 보관함",
+			cn = "[Chain-Bound Primordial Cache]",
 		},
 	},
 	[392571] = {
 		readable = "Chain-Bound Strongbox",
+		model = 4216698,
 		text = {
 			en = "Chain-Bound Strongbox",
 			es = "Caja fuerte protegida con cadenas",
@@ -43360,10 +52625,13 @@ root("ObjectDB", {
 			it = "Forziere Incatenato",
 			pt = "Caixa-forte Acorrentada",
 			ru = "Окованный цепями сейф",
+			ko = "[Chain-Bound Strongbox]",
+			cn = "[Chain-Bound Strongbox]",
 		},
 	},
 	[392572] = {
 		readable = "Chain-Bound Strongbox",
+		model = 4216698,
 		text = {
 			en = "Chain-Bound Strongbox",
 			es = "Caja fuerte protegida con cadenas",
@@ -43373,10 +52641,12 @@ root("ObjectDB", {
 			pt = "Caixa-forte Acorrentada",
 			ru = "Окованный цепями сейф",
 			ko = "사슬결속 금고",
+			cn = "[Chain-Bound Strongbox]",
 		},
 	},
 	[392573] = {
 		readable = "Chain-Bound Strongbox",
+		model = 4216698,
 		text = {
 			en = "Chain-Bound Strongbox",
 			es = "Caja fuerte protegida con cadenas",
@@ -43386,10 +52656,12 @@ root("ObjectDB", {
 			pt = "Caixa-forte Acorrentada",
 			ru = "Окованный цепями сейф",
 			ko = "사슬결속 금고",
+			cn = "[Chain-Bound Strongbox]",
 		},
 	},
 	[392580] = {
 		readable = "Misplaced Aberrus Outflow Blueprints",
+		model = 2439479,
 		text = {
 			en = "Misplaced Aberrus Outflow Blueprints",
 			es = "Planos de escapes de Aberrus extraviados",
@@ -43404,6 +52676,7 @@ root("ObjectDB", {
 	},
 	[392581] = {
 		readable = "Haphazardly Discarded Bombs",
+		model = 985362,
 		text = {
 			en = "Haphazardly Discarded Bombs",
 			es = "Bombas descartadas al azar",
@@ -43418,6 +52691,7 @@ root("ObjectDB", {
 	},
 	[392582] = {
 		readable = "Defective Survival Pack",
+		model = 2967732,
 		text = {
 			en = "Defective Survival Pack",
 			es = "Mochila de supervivencia defectuosa",
@@ -43432,6 +52706,7 @@ root("ObjectDB", {
 	},
 	[392583] = {
 		readable = "Void-Bound Strongbox",
+		model = 1711483,
 		text = {
 			en = "Void-Bound Strongbox",
 			es = "Caja fuerte ligada al Vacío",
@@ -43441,10 +52716,12 @@ root("ObjectDB", {
 			pt = "Caixa-forte Atada ao Caos",
 			ru = "Скованный Бездной сундучок",
 			ko = "공허결속 금고",
+			cn = "[Void-Bound Strongbox]",
 		},
 	},
 	[392587] = {
 		readable = "Busted Wyrmhole Generator",
+		model = 2829936,
 		text = {
 			en = "Busted Wyrmhole Generator",
 			es = "Generador de agujeros de vermis destrozado",
@@ -43453,23 +52730,28 @@ root("ObjectDB", {
 			it = "Generatore di Dragoni Spaziotemporali Rotto",
 			pt = "Gerador de Buraco de Serpe Quebrado",
 			ru = "Сломанный драконий генератор червоточин",
+			ko = "[Busted Wyrmhole Generator]",
 			cn = "坏掉的龙洞发生器",
 		},
 	},
 	[392591] = {
 		readable = "Chest of the Flights",
+		model = 4631398,
 		text = {
 			en = "Chest of the Flights",
 			es = "Cofre de los Vuelos",
 			de = "Truhe der Schwärme",
 			fr = "Coffre des Vols",
+			it = "[Chest of the Flights]",
 			pt = "Baú das Revoadas",
 			ru = "Сундук драконов",
+			ko = "[Chest of the Flights]",
 			cn = "龙群宝箱",
 		},
 	},
 	[392593] = {
 		readable = "Inconspicuous Data Miner",
+		model = 2067200,
 		text = {
 			en = "Inconspicuous Data Miner",
 			es = "Extractor de datos discreto",
@@ -43484,6 +52766,7 @@ root("ObjectDB", {
 	},
 	[393218] = {
 		readable = "Primordial Arcane Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Arcane Cache",
 			es = "Alijo Arcano primordial",
@@ -43493,10 +52776,12 @@ root("ObjectDB", {
 			pt = "Baú Arcano Primordial",
 			ru = "Тайник изначальных чар",
 			ko = "태고의 비전 보관함",
+			cn = "[Primordial Arcane Cache]",
 		},
 	},
 	[393220] = {
 		readable = "Primordial Paint Cache",
+		model = 4631398,
 		text = {
 			en = "Primordial Paint Cache",
 			es = "Alijo de pinturas primordial",
@@ -43506,10 +52791,12 @@ root("ObjectDB", {
 			pt = "Baú de Tinta Primordial",
 			ru = "Тайник изначальной краски",
 			ko = "태고의 물감 보관함",
+			cn = "[Primordial Paint Cache]",
 		},
 	},
 	[393221] = {
 		readable = "Reagent Pot",
+		model = 4620933,
 		text = {
 			en = "Reagent Pot",
 			es = "Olla de componentes",
@@ -43519,10 +52806,12 @@ root("ObjectDB", {
 			pt = "Panela de Reagentes",
 			ru = "Котелок с реагентами",
 			ko = "재료 냄비",
+			cn = "[Reagent Pot]",
 		},
 	},
 	[393222] = {
 		readable = "Supply Trunk",
+		model = 2579334,
 		text = {
 			en = "Supply Trunk",
 			es = "Baúl de suministros",
@@ -43532,10 +52821,12 @@ root("ObjectDB", {
 			pt = "Baú de Suprimentos",
 			ru = "Коробка с припасами",
 			ko = "보급품 보관함",
+			cn = "[Supply Trunk]",
 		},
 	},
 	[393282] = {
 		readable = "Balloon Box",
+		model = 979397,
 		text = {
 			en = "Balloon Box",
 			es = "Caja de globos",
@@ -43545,10 +52836,12 @@ root("ObjectDB", {
 			pt = "Caixa de Balão",
 			ru = "Ящик из шаров",
 			ko = "풍선 상자",
+			cn = "[Balloon Box]",
 		},
 	},
 	[393283] = {
 		readable = "Balloon Box",
+		model = 979397,
 		text = {
 			en = "Balloon Box",
 			es = "Caja de globos",
@@ -43558,16 +52851,19 @@ root("ObjectDB", {
 			pt = "Caixa de Balão",
 			ru = "Ящик из шаров",
 			ko = "풍선 상자",
+			cn = "[Balloon Box]",
 		},
 	},
 	[393957] = {
 		readable = "Gold Pile",
+		model = 4217887,
 		text = {
 			en = "Gold Pile",
 			es = "Montón de oro",
 			de = "Goldhaufen",
 			fr = "Pile d’or",
 			it = "Mucchio d'Oro",
+			pt = "Pilha de Ouro",
 			ru = "Груда золота",
 			ko = "황금 더미",
 			cn = "金子堆",
@@ -43575,12 +52871,14 @@ root("ObjectDB", {
 	},
 	[393958] = {
 		readable = "Gold Pile",
+		model = 4217886,
 		text = {
 			en = "Gold Pile",
 			es = "Montón de oro",
 			de = "Goldhaufen",
 			fr = "Pile d’or",
 			it = "Mucchio d'Oro",
+			pt = "Pilha de Ouro",
 			ru = "Груда золота",
 			ko = "황금 더미",
 			cn = "金子堆",
@@ -43588,6 +52886,7 @@ root("ObjectDB", {
 	},
 	[396019] = {
 		readable = "Stolen Stash",
+		model = 4621388,
 		text = {
 			en = "Stolen Stash",
 			es = "Alijo robado",
@@ -43602,6 +52901,7 @@ root("ObjectDB", {
 	},
 	[396020] = {
 		readable = "Stolen Stash",
+		model = 4621388,
 		text = {
 			en = "Stolen Stash",
 			es = "Alijo robado",
@@ -43616,6 +52916,7 @@ root("ObjectDB", {
 	},
 	[396339] = {
 		readable = "Moth-Pilfered Pouch",
+		model = 4182533,
 		text = {
 			en = "Moth-Pilfered Pouch",
 			es = "Bolsa birlada por unas polillas",
@@ -43624,11 +52925,13 @@ root("ObjectDB", {
 			it = "Borsello Trafugato da una Falena",
 			pt = "Bolsa Furtada por Mariposas",
 			ru = "Чародейский барьер Кадгара",
+			ko = "[Moth-Pilfered Pouch]",
 			cn = "蛾子窃取的袋子",
 		},
 	},
 	[398133] = {
 		readable = "Bolts and Brass",
+		model = 999889,
 		text = {
 			en = "Bolts and Brass",
 			es = "Tornillos y latón",
@@ -43643,6 +52946,7 @@ root("ObjectDB", {
 	},
 	[398135] = {
 		readable = "Discarded Dracothyst Drill",
+		model = 999890,
 		text = {
 			en = "Discarded Dracothyst Drill",
 			es = "Taladro de dracotista descartado",
@@ -43651,11 +52955,13 @@ root("ObjectDB", {
 			it = "Trivella di Dracotista Abbandonata",
 			pt = "Perfuratriz de Dracotista Descartada",
 			ru = "Использованный дракотистовый бур",
+			ko = "[Discarded Dracothyst Drill]",
 			cn = "被抛弃的龙晶电钻",
 		},
 	},
 	[398138] = {
 		readable = "Molten Scoutbot",
+		model = 2902889,
 		text = {
 			en = "Molten Scoutbot",
 			es = "Explorabot de magma",
@@ -43670,6 +52976,7 @@ root("ObjectDB", {
 	},
 	[398200] = {
 		readable = "Forgotten Lockbox",
+		model = 2579334,
 		text = {
 			en = "Forgotten Lockbox",
 			es = "Arcón olvidado",
@@ -43679,19 +52986,27 @@ root("ObjectDB", {
 			pt = "Cofre Esquecido",
 			ru = "Позабытый ларец",
 			ko = "잊혀진 금고",
+			cn = "[Forgotten Lockbox]",
 		},
 	},
 	[398674] = {
 		readable = "Vibrant Flyer",
+		model = 4298587,
 		text = {
 			en = "Vibrant Flyer",
+			es = "Volador vibrante",
 			de = "Schillerndes Flugblatt",
 			fr = "Prospectus coloré",
+			it = "[Vibrant Flyer]",
+			pt = "[Vibrant Flyer]",
 			ru = "Яркий буклет",
+			ko = "[Vibrant Flyer]",
+			cn = "脉动传单",
 		},
 	},
 	[398698] = {
 		readable = "Squeaking Swiss",
+		model = 960856,
 		text = {
 			en = "Squeaking Swiss",
 			es = "Queso curado chillón",
@@ -43701,10 +53016,237 @@ root("ObjectDB", {
 			pt = "Queijo Furado Guinchante",
 			ru = "Скрипящий сыр",
 			ko = "끽끽거리는 스위스 치즈",
+			cn = "[Squeaking Swiss]",
+		},
+	},
+	[398751] = {
+		readable = "Lush Bubble Poppy",
+		model = 5091435,
+		text = {
+			en = "Lush Bubble Poppy",
+			es = "Amapola burbuja exuberante",
+			de = "Üppiger Blasenmohn",
+			fr = "Pavot à bulle luxuriant",
+			it = "Papavero Bolla Lussureggiante",
+			pt = "Papoula Borbulhante Exuberante",
+			ru = "Зрелый пузырчатый мак",
+			ko = "무성한 거품 백일홍",
+			cn = "[Lush Bubble Poppy]",
+		},
+	},
+	[398752] = {
+		readable = "Lush Writhebark",
+		model = 5091443,
+		text = {
+			en = "Lush Writhebark",
+			es = "Pino retorcido exuberante",
+			de = "Üppige Krümmrinde",
+			fr = "Écorce tordue luxuriante",
+			it = "Scorzatorta Lussureggiante",
+			pt = "Casca Retorcida Exuberante",
+			ru = "Зрелая витая кора",
+			ko = "무성한 격통껍질",
+			cn = "[Lush Writhebark]",
+		},
+	},
+	[398753] = {
+		readable = "Lush Hochenblume",
+		model = 5091439,
+		text = {
+			en = "Lush Hochenblume",
+			es = "Lumbreflor exuberante",
+			de = "Üppige Hochblume",
+			fr = "Hochenblume luxuriante",
+			it = "Altofiore Lussureggiante",
+			pt = "Hochenblume Exuberante",
+			ru = "Зрелый хоэнвейс",
+			ko = "무성한 장대꽃",
+			cn = "繁茂的霍亨布墨花",
+		},
+	},
+	[398754] = {
+		readable = "Lush Saxifrage",
+		model = 5091441,
+		text = {
+			en = "Lush Saxifrage",
+			es = "Saxifraga exuberante",
+			de = "Üppiges Steinbrich",
+			fr = "Saxifrage luxuriante",
+			it = "Sassifraga Lussureggiante",
+			pt = "Quebra-pedra Exuberante",
+			ru = "Зрелая камнеломка",
+			ko = "무성한 다년초",
+			cn = "繁茂的虎耳草",
+		},
+	},
+	[398755] = {
+		readable = "Bubble Poppy",
+		model = 5091434,
+		text = {
+			en = "Bubble Poppy",
+			es = "Amapola burbuja",
+			de = "Blasenmohn",
+			fr = "Pavot à bulle",
+			it = "Papavero Bolla",
+			pt = "Papoula Borbulhante",
+			ru = "Пузырчатый мак",
+			ko = "거품 백일홍",
+			cn = "泡粟花",
+		},
+	},
+	[398756] = {
+		readable = "Writhebark",
+		model = 5091442,
+		text = {
+			en = "Writhebark",
+			es = "Pino retorcido",
+			de = "Krümmrinde",
+			fr = "Écorce tordue",
+			it = "Scorzatorta",
+			pt = "Casca Retorcida",
+			ru = "Витая кора",
+			ko = "격통껍질",
+			cn = "歪扭树皮",
+		},
+	},
+	[398758] = {
+		readable = "Saxifrage",
+		model = 5091440,
+		text = {
+			en = "Saxifrage",
+			es = "Saxifraga",
+			de = "Steinbrich",
+			fr = "Saxifrage",
+			it = "Sassifraga",
+			pt = "Quebra-pedra",
+			ru = "Камнеломка",
+			ko = "다년초",
+			cn = "虎耳草",
+		},
+	},
+	[398759] = {
+		readable = "Titan-Touched Bubble Poppy",
+		model = 5091434,
+		text = {
+			en = "Titan-Touched Bubble Poppy",
+			es = "Amapola burbuja tocada por los titanes",
+			de = "Titanenberührter Blasenmohn",
+			fr = "Pavot à bulle touché par les Titans",
+			it = "Papavero Bolla Toccato dai Titani",
+			pt = "Papoula Borbulhante Tocada pelos Titãs",
+			ru = "Осененный титанами пузырчатый мак",
+			ko = "[Titan-Touched Bubble Poppy]",
+			cn = "[Titan-Touched Bubble Poppy]",
+		},
+	},
+	[398760] = {
+		readable = "Titan-Touched Writhebark",
+		model = 5091442,
+		text = {
+			en = "Titan-Touched Writhebark",
+			es = "Pino retorcido tocado por los titanes",
+			de = "Titanenberührte Krümmrinde",
+			fr = "Écorce tordue touchée par les Titans",
+			it = "Scorzatorta Toccata dai Titani",
+			pt = "Casca Retorcida Tocada pelos Titãs",
+			ru = "Осененная титанами витая кора",
+			ko = "[Titan-Touched Writhebark]",
+			cn = "[Titan-Touched Writhebark]",
+		},
+	},
+	[398761] = {
+		readable = "Titan-Touched Hochenblume",
+		model = 5091436,
+		text = {
+			en = "Titan-Touched Hochenblume",
+			es = "Lumbreflor tocada por los titanes",
+			de = "Titanenberührte Hochblume",
+			fr = "Hochenblume touchée par les Titans",
+			it = "Altofiore Toccato dai Titani",
+			pt = "Hochenblume Tocado pelos Titãs",
+			ru = "Осененный титанами хоэнвейс",
+			ko = "티탄에 물든 장대꽃",
+			cn = "[Titan-Touched Hochenblume]",
+		},
+	},
+	[398762] = {
+		readable = "Titan-Touched Saxifrage",
+		model = 5091440,
+		text = {
+			en = "Titan-Touched Saxifrage",
+			es = "Saxifraga tocada por los titanes",
+			de = "Titanenberührtes Steinbrich",
+			fr = "Saxifrage touchée par les Titans",
+			it = "[Titan-Touched Saxifrage]",
+			pt = "Quebra-pedra Tocada pelos Titãs",
+			ru = "Осененная титанами камнеломка",
+			ko = "[Titan-Touched Saxifrage]",
+			cn = "[Titan-Touched Saxifrage]",
+		},
+	},
+	[398764] = {
+		readable = "Infurious Bubble Poppy",
+		model = 5091434,
+		text = {
+			en = "Infurious Bubble Poppy",
+			es = "Amapola burbuja furiosa",
+			de = "Wutentbrannter Blasenmohn",
+			fr = "Pavot à bulle ardent",
+			it = "[Infurious Bubble Poppy]",
+			pt = "Papoula Borbulhante em Fúria",
+			ru = "Ярый пузырчатый мак",
+			ko = "[Infurious Bubble Poppy]",
+			cn = "[Infurious Bubble Poppy]",
+		},
+	},
+	[398765] = {
+		readable = "Infurious Writhebark",
+		model = 5091442,
+		text = {
+			en = "Infurious Writhebark",
+			es = "Pino retorcido furioso",
+			de = "Wutentbrannte Krümmrinde",
+			fr = "Écorce tordue ardente",
+			it = "[Infurious Writhebark]",
+			pt = "Casca Retorcida em Fúria",
+			ru = "Ярая витая кора",
+			ko = "[Infurious Writhebark]",
+			cn = "[Infurious Writhebark]",
+		},
+	},
+	[398766] = {
+		readable = "Infurious Hochenblume",
+		model = 5091436,
+		text = {
+			en = "Infurious Hochenblume",
+			es = "Lumbreflor furiosa",
+			de = "Wutentbrannte Hochblume",
+			fr = "Hochenblume ardente",
+			it = "[Infurious Hochenblume]",
+			pt = "Hochenblume em Fúria",
+			ru = "Ярый хоэнвейс",
+			ko = "[Infurious Hochenblume]",
+			cn = "[Infurious Hochenblume]",
+		},
+	},
+	[398767] = {
+		readable = "Infurious Saxifrage",
+		model = 5091440,
+		text = {
+			en = "Infurious Saxifrage",
+			es = "Saxifraga furiosa",
+			de = "Wutentbranntes Steinbrich",
+			fr = "Saxifrage ardente",
+			it = "[Infurious Saxifrage]",
+			pt = "Quebra-pedra em Fúria",
+			ru = "Ярая камнеломка",
+			ko = "[Infurious Saxifrage]",
+			cn = "[Infurious Saxifrage]",
 		},
 	},
 	[398770] = {
 		readable = "Box of Rocks",
+		model = 950860,
 		text = {
 			en = "Box of Rocks",
 			es = "Caja de piedras",
@@ -43719,6 +53261,7 @@ root("ObjectDB", {
 	},
 	[398778] = {
 		readable = "Disgusting Vat",
+		model = 343863,
 		text = {
 			en = "Disgusting Vat",
 			es = "Cuba asquerosa",
@@ -43733,6 +53276,7 @@ root("ObjectDB", {
 	},
 	[398783] = {
 		readable = "Flame-Infused Scale Oil",
+		model = 4034955,
 		text = {
 			en = "Flame-Infused Scale Oil",
 			es = "Aceite de escamas imbuido de llamas",
@@ -43747,6 +53291,7 @@ root("ObjectDB", {
 	},
 	[398785] = {
 		readable = "Lava-Forged Leatherworker's 'Knife'",
+		model = 4576985,
 		text = {
 			en = "Lava-Forged Leatherworker's 'Knife'",
 			es = "\"Cuchillo\" de peletería forjado en lava",
@@ -43761,6 +53306,7 @@ root("ObjectDB", {
 	},
 	[398786] = {
 		readable = "Spun Webs",
+		model = 167196,
 		text = {
 			en = "Spun Webs",
 			es = "Telarañas tejidas",
@@ -43770,10 +53316,12 @@ root("ObjectDB", {
 			pt = "Teias Enroladas",
 			ru = "Скрученная паутина",
 			ko = "자아낸 거미줄",
+			cn = "[Spun Webs]",
 		},
 	},
 	[398787] = {
 		readable = "Spun Webs",
+		model = 167196,
 		text = {
 			en = "Spun Webs",
 			es = "Telarañas tejidas",
@@ -43783,10 +53331,12 @@ root("ObjectDB", {
 			pt = "Teias Enroladas",
 			ru = "Скрученная паутина",
 			ko = "자아낸 거미줄",
+			cn = "[Spun Webs]",
 		},
 	},
 	[398788] = {
 		readable = "Spun Webs",
+		model = 167196,
 		text = {
 			en = "Spun Webs",
 			es = "Telarañas tejidas",
@@ -43796,10 +53346,12 @@ root("ObjectDB", {
 			pt = "Teias Enroladas",
 			ru = "Скрученная паутина",
 			ko = "자아낸 거미줄",
+			cn = "[Spun Webs]",
 		},
 	},
 	[398789] = {
 		readable = "Spun Webs",
+		model = 167196,
 		text = {
 			en = "Spun Webs",
 			es = "Telarañas tejidas",
@@ -43809,10 +53361,12 @@ root("ObjectDB", {
 			pt = "Teias Enroladas",
 			ru = "Скрученная паутина",
 			ko = "자아낸 거미줄",
+			cn = "[Spun Webs]",
 		},
 	},
 	[398790] = {
 		readable = "Spun Webs",
+		model = 167196,
 		text = {
 			en = "Spun Webs",
 			es = "Telarañas tejidas",
@@ -43822,10 +53376,12 @@ root("ObjectDB", {
 			pt = "Teias Enroladas",
 			ru = "Скрученная паутина",
 			ko = "자아낸 거미줄",
+			cn = "[Spun Webs]",
 		},
 	},
 	[398791] = {
 		readable = "Sulfur-Soaked Skins",
+		model = 950751,
 		text = {
 			en = "Sulfur-Soaked Skins",
 			es = "Pieles empapadas de azufre",
@@ -43840,6 +53396,7 @@ root("ObjectDB", {
 	},
 	[398793] = {
 		readable = "Lava-Drenched Shadow Crystal",
+		model = 1052605,
 		text = {
 			en = "Lava-Drenched Shadow Crystal",
 			es = "Cristal de sombras calado de lava",
@@ -43854,6 +53411,7 @@ root("ObjectDB", {
 	},
 	[398794] = {
 		readable = "Shimmering Aqueous Orb",
+		model = 4556623,
 		text = {
 			en = "Shimmering Aqueous Orb",
 			es = "Orbe acuoso reluciente",
@@ -43868,6 +53426,7 @@ root("ObjectDB", {
 	},
 	[398796] = {
 		readable = "Resonating Arcane Crystal",
+		model = 4563732,
 		text = {
 			en = "Resonating Arcane Crystal",
 			es = "Cristal Arcano resonador",
@@ -43876,11 +53435,13 @@ root("ObjectDB", {
 			it = "Cristallo Arcano Risonante",
 			pt = "Cristal Arcano Ressoante",
 			ru = "Резонирующий магический кристалл",
+			ko = "[Resonating Arcane Crystal]",
 			cn = "共鸣的奥术水晶",
 		},
 	},
 	[398810] = {
 		readable = "Fealty's Reward",
+		model = 4631398,
 		text = {
 			en = "Fealty's Reward",
 			es = "Recompensa de lealtad",
@@ -43889,11 +53450,13 @@ root("ObjectDB", {
 			it = "Ricompensa della Fedeltà",
 			pt = "Recompensa da Fidelidade",
 			ru = "Награда за верность",
+			ko = "[Fealty's Reward]",
 			cn = "忠诚的奖赏",
 		},
 	},
 	[398814] = {
 		readable = "Molten Hoard",
+		model = 4631398,
 		text = {
 			en = "Molten Hoard",
 			es = "Tesoro de magma",
@@ -43908,6 +53471,7 @@ root("ObjectDB", {
 	},
 	[398815] = {
 		readable = "Secured Shipment",
+		model = 4216698,
 		text = {
 			en = "Secured Shipment",
 			es = "Envío asegurado",
@@ -43922,6 +53486,7 @@ root("ObjectDB", {
 	},
 	[401236] = {
 		readable = "Malnourished Specimen",
+		model = 4620929,
 		text = {
 			en = "Malnourished Specimen",
 			es = "Espécimen malnutrido",
@@ -43930,11 +53495,13 @@ root("ObjectDB", {
 			it = "Esemplare Malnutrito",
 			pt = "Espécime Malnutrido",
 			ru = "Истощенный образец",
+			ko = "[Malnourished Specimen]",
 			cn = "营养不良的样本",
 		},
 	},
 	[401238] = {
 		readable = "Marrow-Ripened Slime",
+		model = 2851157,
 		text = {
 			en = "Marrow-Ripened Slime",
 			es = "Babosa sin tuétano",
@@ -43949,6 +53516,7 @@ root("ObjectDB", {
 	},
 	[401240] = {
 		readable = "Suspicious Mold",
+		model = 4278333,
 		text = {
 			en = "Suspicious Mold",
 			es = "Molde sospechoso",
@@ -43963,6 +53531,7 @@ root("ObjectDB", {
 	},
 	[401241] = {
 		readable = "Snubbed Snail Shells",
+		model = 1275568,
 		text = {
 			en = "Snubbed Snail Shells",
 			es = "Caparazones de caracol despreciados",
@@ -43977,6 +53546,7 @@ root("ObjectDB", {
 	},
 	[401292] = {
 		readable = "Gently Jostled Jewels",
+		model = 365229,
 		text = {
 			en = "Gently Jostled Jewels",
 			es = "Joyas apiñadas con cuidado",
@@ -43991,6 +53561,7 @@ root("ObjectDB", {
 	},
 	[401299] = {
 		readable = "Broken Barter Boulder",
+		model = 392110,
 		text = {
 			en = "Broken Barter Boulder",
 			es = "Roca de trueque rota",
@@ -43999,11 +53570,13 @@ root("ObjectDB", {
 			it = "Macigno per Baratto Rotto",
 			pt = "Pedregulho de Troca Quebrado",
 			ru = "Большой бесполезный булыжник",
+			ko = "부서진 흥정 돌멩이",
 			cn = "破损的以物易物巨石",
 		},
 	},
 	[401828] = {
 		readable = "Nal ks'kol Reliquary",
+		model = 4323481,
 		text = {
 			en = "Nal ks'kol Reliquary",
 			es = "Relicario de Nal ks'kol",
@@ -44018,6 +53591,7 @@ root("ObjectDB", {
 	},
 	[401839] = {
 		readable = "Dreamer's Bounty",
+		model = 4216698,
 		text = {
 			en = "Dreamer's Bounty",
 			es = "Botín de soñador",
@@ -44032,6 +53606,7 @@ root("ObjectDB", {
 	},
 	[401844] = {
 		readable = "Smelly Trash Pile",
+		model = 1255023,
 		text = {
 			en = "Smelly Trash Pile",
 			es = "Montón de basura maloliente",
@@ -44046,16 +53621,22 @@ root("ObjectDB", {
 	},
 	[402609] = {
 		readable = "Demonic Gateway",
+		model = 607277,
 		text = {
 			en = "Demonic Gateway",
+			es = "Portal demoníaco",
 			de = "Dämonisches Tor",
 			fr = "Porte des démons",
+			it = "[Demonic Gateway]",
 			pt = "Portal Demoníaco",
 			ru = "Демонические врата",
+			ko = "[Demonic Gateway]",
+			cn = "[Demonic Gateway]",
 		},
 	},
 	[402627] = {
 		readable = "Well-Worn Kiln",
+		model = 4689413,
 		text = {
 			en = "Well-Worn Kiln",
 			es = "Fogón desgastado",
@@ -44070,6 +53651,7 @@ root("ObjectDB", {
 	},
 	[402632] = {
 		readable = "Brimstone Rescue Ring",
+		model = 616368,
 		text = {
 			en = "Brimstone Rescue Ring",
 			es = "Anillo de rescate de azufre",
@@ -44084,6 +53666,7 @@ root("ObjectDB", {
 	},
 	[402634] = {
 		readable = "Zaqali Elder Spear",
+		model = 4227589,
 		text = {
 			en = "Zaqali Elder Spear",
 			es = "Lanza ancestral zaqali",
@@ -44098,6 +53681,7 @@ root("ObjectDB", {
 	},
 	[402868] = {
 		readable = "Abandoned Reserve Chute",
+		model = 4417702,
 		text = {
 			en = "Abandoned Reserve Chute",
 			es = "Paracaídas de reserva abandonado",
@@ -44112,6 +53696,7 @@ root("ObjectDB", {
 	},
 	[402878] = {
 		readable = "Used Medical Wrap Kit",
+		model = 878856,
 		text = {
 			en = "Used Medical Wrap Kit",
 			es = "Kit de vendas usadas",
@@ -44126,6 +53711,7 @@ root("ObjectDB", {
 	},
 	[402887] = {
 		readable = "Exquisitely Embroidered Banner",
+		model = 4034267,
 		text = {
 			en = "Exquisitely Embroidered Banner",
 			es = "Estandarte bordado de forma exquisita",
@@ -44140,6 +53726,7 @@ root("ObjectDB", {
 	},
 	[402888] = {
 		readable = "Intricate Zaqali Runes",
+		model = 4420699,
 		text = {
 			en = "Intricate Zaqali Runes",
 			es = "Runas zaqali intrincadas",
@@ -44154,6 +53741,7 @@ root("ObjectDB", {
 	},
 	[402890] = {
 		readable = "Hissing Rune Draft",
+		model = 4324473,
 		text = {
 			en = "Hissing Rune Draft",
 			es = "Borrador de runas siseantes",
@@ -44162,11 +53750,13 @@ root("ObjectDB", {
 			it = "Bozza di Runa Sibilante",
 			pt = "Esboço de Runa Sibilante",
 			ru = "Набросок шипящей руны",
+			ko = "곡성의 룬 초안",
 			cn = "嘶鸣符文草稿",
 		},
 	},
 	[402892] = {
 		readable = "Ancient Research",
+		model = 4298560,
 		text = {
 			en = "Ancient Research",
 			es = "Investigación antigua",
@@ -44175,274 +53765,548 @@ root("ObjectDB", {
 			it = "Ricerca Antica",
 			pt = "Pesquisa Ancestral",
 			ru = "Древние исследования",
+			ko = "[Ancient Research]",
 			cn = "远古研究",
 		},
 	},
 	[403498] = {
 		readable = "Eva's Journal",
+		model = 198038,
 		text = {
 			en = "Eva's Journal",
+			es = "Diario de Eva",
 			de = "Evas Tagebuch",
 			fr = "Journal d’Éva",
+			it = "Diario di Eva",
 			pt = "Diário de Eva",
 			ru = "Дневник Евы",
+			ko = "[Eva's Journal]",
+			cn = "[Eva's Journal]",
 		},
 	},
 	[403532] = {
 		readable = "Bucket of Fountain Water",
+		model = 1709140,
 		text = {
 			en = "Bucket of Fountain Water",
+			es = "Cubo de agua de la fuente",
 			de = "Eimer mit Brunnenwasser",
 			fr = "Seau d’eau de fontaine",
+			it = "Secchio di Acqua di Fontana",
 			pt = "Balde de Água da Fonte",
 			ru = "Ведро с водой из фонтана",
+			ko = "[Bucket of Fountain Water]",
+			cn = "[Bucket of Fountain Water]",
 		},
 	},
 	[403533] = {
 		readable = "Undelivered Shipment of Smokes",
+		model = 1331240,
 		text = {
 			en = "Undelivered Shipment of Smokes",
+			es = "Envío de cigarrillos sin entregar",
 			de = "Nicht zugestellte Rauchwarenlieferung",
 			fr = "Chargement de fumigènes non livré",
+			it = "Carico di Fumi Non consegnato",
+			pt = "[Undelivered Shipment of Smokes]",
 			ru = "Недоставленный груз курений",
+			ko = "[Undelivered Shipment of Smokes]",
+			cn = "[Undelivered Shipment of Smokes]",
 		},
 	},
 	[403534] = {
 		readable = "Trampled Doll",
+		model = 199408,
 		text = {
 			en = "Trampled Doll",
+			es = "Muñeca pisoteada",
 			de = "Zertrampelte Puppe",
 			fr = "Poupée piétinée",
+			it = "Bambola Calpestata",
+			pt = "[Trampled Doll]",
 			ru = "Растоптанная кукла",
+			ko = "[Trampled Doll]",
+			cn = "[Trampled Doll]",
 		},
 	},
 	[403535] = {
 		readable = "The Deed to Andorhal",
+		model = 305398,
 		text = {
 			en = "The Deed to Andorhal",
+			es = "Las escrituras de Andorhal",
 			de = "Die Besitzurkunde für Andorhal",
 			fr = "Titre de propriété d’Andorhal",
+			it = "Atto di Andorhal",
 			pt = "A Escritura de Andorhal",
 			ru = "Право собственности на Андорал",
+			ko = "[The Deed to Andorhal]",
+			cn = "[The Deed to Andorhal]",
 		},
 	},
 	[403536] = {
 		readable = "The Road Ahead",
+		model = 197943,
 		text = {
 			en = "The Road Ahead",
+			es = "El camino por delante",
 			de = "Der Weg hinaus",
 			fr = "La route à suivre",
+			it = "La Strada Davanti",
+			pt = "[The Road Ahead]",
 			ru = "Дорога в будущее",
+			ko = "[The Road Ahead]",
+			cn = "[The Road Ahead]",
 		},
 	},
 	[403552] = {
 		readable = "Eva's Femur",
+		model = 774346,
 		text = {
 			en = "Eva's Femur",
+			es = "Fémur de Eva",
 			de = "Evas Oberschenkelknochen",
 			fr = "Fémur d’Éva",
+			it = "Femore di Eva",
 			pt = "Fêmur de Eva",
 			ru = "Бедренная кость Евы",
+			ko = "[Eva's Femur]",
+			cn = "[Eva's Femur]",
 		},
 	},
 	[403567] = {
 		readable = "Cracked Argent Dawn Commission",
+		model = 589980,
 		text = {
 			en = "Cracked Argent Dawn Commission",
+			es = "[Cracked Argent Dawn Commission]",
 			de = "Gesprungene Anstecknadel der Argentumdämmerung",
 			fr = "Brevet de l’Aube d’argent fendu",
+			it = "Distintivo dell'Alba d'Argento Incrinato",
+			pt = "[Cracked Argent Dawn Commission]",
 			ru = "Треснувший жетон Серебряного Рассвета",
+			ko = "[Cracked Argent Dawn Commission]",
+			cn = "[Cracked Argent Dawn Commission]",
 		},
 	},
 	[403702] = {
 		readable = "Lost Page",
+		model = 936411,
 		text = {
 			en = "Lost Page",
+			es = "[Lost Page]",
+			de = "Verlorene Seite",
+			fr = "Page perdue",
+			it = "[Lost Page]",
+			pt = "Página Perdida",
+			ru = "Потерянная страница",
+			ko = "[Lost Page]",
+			cn = "[Lost Page]",
 		},
 	},
 	[403703] = {
 		readable = "Lost Page",
+		model = 936411,
 		text = {
 			en = "Lost Page",
+			es = "[Lost Page]",
+			de = "Verlorene Seite",
+			fr = "Page perdue",
+			it = "[Lost Page]",
+			pt = "Página Perdida",
+			ru = "Потерянная страница",
+			ko = "[Lost Page]",
+			cn = "[Lost Page]",
 		},
 	},
 	[403704] = {
 		readable = "Lost Page",
+		model = 936411,
 		text = {
 			en = "Lost Page",
+			es = "[Lost Page]",
+			de = "Verlorene Seite",
+			fr = "Page perdue",
+			it = "[Lost Page]",
+			pt = "Página Perdida",
+			ru = "Потерянная страница",
+			ko = "[Lost Page]",
+			cn = "[Lost Page]",
 		},
 	},
 	[403705] = {
 		readable = "Lost Page",
+		model = 936411,
 		text = {
 			en = "Lost Page",
+			es = "[Lost Page]",
+			de = "Verlorene Seite",
+			fr = "Page perdue",
+			it = "[Lost Page]",
+			pt = "Página Perdida",
+			ru = "Потерянная страница",
+			ko = "[Lost Page]",
+			cn = "[Lost Page]",
 		},
 	},
 	[403706] = {
 		readable = "Lost Page",
+		model = 936411,
 		text = {
 			en = "Lost Page",
+			es = "[Lost Page]",
+			de = "Verlorene Seite",
+			fr = "Page perdue",
+			it = "[Lost Page]",
+			pt = "Página Perdida",
+			ru = "Потерянная страница",
+			ko = "[Lost Page]",
+			cn = "[Lost Page]",
 		},
 	},
 	[403707] = {
 		readable = "Lost Page",
+		model = 936411,
 		text = {
 			en = "Lost Page",
+			es = "[Lost Page]",
+			de = "Verlorene Seite",
+			fr = "Page perdue",
+			it = "[Lost Page]",
+			pt = "Página Perdida",
+			ru = "Потерянная страница",
+			ko = "[Lost Page]",
+			cn = "[Lost Page]",
 		},
 	},
 	[403708] = {
 		readable = "Lost Page",
+		model = 936411,
 		text = {
 			en = "Lost Page",
+			es = "[Lost Page]",
+			de = "Verlorene Seite",
+			fr = "Page perdue",
+			it = "[Lost Page]",
+			pt = "Página Perdida",
+			ru = "Потерянная страница",
+			ko = "[Lost Page]",
+			cn = "[Lost Page]",
 		},
 	},
 	[403709] = {
 		readable = "Lost Page",
+		model = 936411,
 		text = {
 			en = "Lost Page",
+			es = "[Lost Page]",
+			de = "Verlorene Seite",
+			fr = "Page perdue",
+			it = "[Lost Page]",
+			pt = "Página Perdida",
+			ru = "Потерянная страница",
+			ko = "[Lost Page]",
+			cn = "[Lost Page]",
 		},
 	},
 	[403710] = {
 		readable = "Lost Page",
+		model = 936411,
 		text = {
 			en = "Lost Page",
+			es = "[Lost Page]",
+			de = "Verlorene Seite",
+			fr = "Page perdue",
+			it = "[Lost Page]",
+			pt = "Página Perdida",
+			ru = "Потерянная страница",
+			ko = "[Lost Page]",
+			cn = "[Lost Page]",
 		},
 	},
 	[403711] = {
 		readable = "Lost Page",
+		model = 936411,
 		text = {
 			en = "Lost Page",
+			es = "[Lost Page]",
+			de = "Verlorene Seite",
+			fr = "Page perdue",
+			it = "[Lost Page]",
+			pt = "Página Perdida",
+			ru = "Потерянная страница",
+			ko = "[Lost Page]",
+			cn = "[Lost Page]",
 		},
 	},
 	[403712] = {
 		readable = "Lost Page",
+		model = 936411,
 		text = {
 			en = "Lost Page",
+			es = "[Lost Page]",
+			de = "Verlorene Seite",
+			fr = "Page perdue",
+			it = "[Lost Page]",
+			pt = "Página Perdida",
+			ru = "Потерянная страница",
+			ko = "[Lost Page]",
+			cn = "[Lost Page]",
 		},
 	},
 	[403713] = {
 		readable = "Lost Page",
+		model = 936411,
 		text = {
 			en = "Lost Page",
+			es = "[Lost Page]",
+			de = "Verlorene Seite",
+			fr = "Page perdue",
+			it = "[Lost Page]",
+			pt = "Página Perdida",
+			ru = "Потерянная страница",
+			ko = "[Lost Page]",
+			cn = "[Lost Page]",
 		},
 	},
 	[403714] = {
 		readable = "Lost Page",
+		model = 936411,
 		text = {
 			en = "Lost Page",
+			es = "[Lost Page]",
+			de = "Verlorene Seite",
+			fr = "Page perdue",
+			it = "[Lost Page]",
+			pt = "Página Perdida",
+			ru = "Потерянная страница",
+			ko = "[Lost Page]",
+			cn = "[Lost Page]",
 		},
 	},
 	[403715] = {
 		readable = "Lost Page",
+		model = 936411,
 		text = {
 			en = "Lost Page",
+			es = "[Lost Page]",
+			de = "Verlorene Seite",
+			fr = "Page perdue",
+			it = "[Lost Page]",
+			pt = "Página Perdida",
+			ru = "Потерянная страница",
+			ko = "[Lost Page]",
+			cn = "[Lost Page]",
 		},
 	},
 	[403716] = {
 		readable = "Lost Page",
+		model = 936411,
 		text = {
 			en = "Lost Page",
+			es = "[Lost Page]",
+			de = "Verlorene Seite",
+			fr = "Page perdue",
+			it = "[Lost Page]",
+			pt = "Página Perdida",
+			ru = "Потерянная страница",
+			ko = "[Lost Page]",
+			cn = "[Lost Page]",
 		},
 	},
 	[403717] = {
 		readable = "Lost Page",
+		model = 936411,
 		text = {
 			en = "Lost Page",
+			es = "[Lost Page]",
+			de = "Verlorene Seite",
+			fr = "Page perdue",
+			it = "[Lost Page]",
+			pt = "Página Perdida",
+			ru = "Потерянная страница",
+			ko = "[Lost Page]",
+			cn = "[Lost Page]",
 		},
 	},
 	[403722] = {
 		readable = "Conveniently Misplaced Hook",
+		model = 1355527,
 		text = {
 			en = "Conveniently Misplaced Hook",
+			es = "[Conveniently Misplaced Hook]",
+			de = "Praktischerweise verlegter Haken",
+			fr = "Crochet égaré bien pratique",
+			it = "[Conveniently Misplaced Hook]",
+			pt = "[Conveniently Misplaced Hook]",
 			ru = "Весьма кстати потерявшийся крюк",
+			ko = "[Conveniently Misplaced Hook]",
+			cn = "[Conveniently Misplaced Hook]",
 		},
 	},
 	[403731] = {
 		readable = "Frozen Rune",
+		model = 191177,
 		text = {
 			en = "Frozen Rune",
+			es = "Runa congelada",
+			de = "Gefrorene Rune",
+			fr = "Rune de givre",
+			it = "[Frozen Rune]",
+			pt = "Runa Congelada",
 			ru = "Морозная руна",
+			ko = "[Frozen Rune]",
+			cn = "[Frozen Rune]",
 		},
 	},
 	[403786] = {
 		readable = "Antlered Skull",
+		model = 955870,
 		text = {
 			en = "Antlered Skull",
 			es = "Calavera cornamentada",
 			de = "Schädel mit Geweih",
 			fr = "Crâne à ramures",
+			it = "Teschio con Corna",
 			pt = "Caveira Galhada",
 			ru = "Рогатый череп",
+			ko = "[Antlered Skull]",
+			cn = "长鹿角的颅骨",
 		},
 	},
 	[403919] = {
 		readable = "Mechanized Cog",
+		model = 2067174,
 		text = {
 			en = "Mechanized Cog",
 			es = "Engranaje mecanizado",
 			de = "Mechanisiertes Zahnrad",
 			fr = "Rouage mécanique",
+			it = "Ingranaggio Meccanizzato",
 			pt = "Engrenagem Mecanizada",
 			ru = "Механическая шестеренка",
+			ko = "[Mechanized Cog]",
+			cn = "[Mechanized Cog]",
 		},
 	},
 	[403962] = {
 		readable = "Omarion's Second Handbook",
+		model = 929345,
 		text = {
 			en = "Omarion's Second Handbook",
+			es = "[Omarion's Second Handbook]",
+			de = "Omarions zweiter Leitfaden",
+			fr = "Deuxième recueil d’Omarion",
+			it = "[Omarion's Second Handbook]",
+			pt = "Segundo Manual de Omarion",
 			ru = "Второе руководство Омариона",
+			ko = "[Omarion's Second Handbook]",
+			cn = "[Omarion's Second Handbook]",
 		},
 	},
 	[404242] = {
 		readable = "Oil Soaked Book",
+		model = 244162,
 		text = {
 			en = "Oil Soaked Book",
 			es = "Libro empapado de aceite",
 			de = "Öldurchtränktes Buch",
 			fr = "Livre trempé de pétrole",
+			it = "[Oil Soaked Book]",
+			pt = "[Oil Soaked Book]",
 			ru = "Пропитанная нефтью книга",
+			ko = "[Oil Soaked Book]",
+			cn = "[Oil Soaked Book]",
 		},
 	},
 	[404314] = {
 		readable = "Chipped Stone Tabled",
+		model = 194086,
 		text = {
 			en = "Chipped Stone Tabled",
 			es = "Tablilla de piedra chascada",
 			de = "Gesprungene Steintafel",
 			fr = "Tablette en pierre ébréchée",
+			it = "Tavoletta di Pietra Scheggiata",
 			pt = "Tabuleta de Pedra Lascada",
 			ru = "Надколотая каменная скрижаль",
+			ko = "[Chipped Stone Tablet]",
+			cn = "[Chipped Stone Tablet]",
 		},
 	},
 	[404432] = {
 		readable = "Bload Soaked Book",
+		model = 1005455,
 		text = {
 			en = "Bload Soaked Book",
+			es = "Libro empapado de sangre",
+			de = "Blutdurchtränktes Buch",
+			fr = "Livre trempé de sang",
+			it = "Libro Inzuppato di Sangue",
 			pt = "Livro Encharcado de Sangue",
+			ru = "Окровавленная книга",
+			ko = "[Blood Soaked Book]",
+			cn = "[Blood Soaked Book]",
 		},
 	},
 	[404480] = {
 		readable = "Ragged Mantid Sword",
+		model = 615295,
 		text = {
 			en = "Ragged Mantid Sword",
+			es = "Espada de mántide mellada",
+			de = "Gezacktes Mantisschwert",
+			fr = "Epée mantide entaillée",
+			it = "[Ragged Mantid Sword]",
+			pt = "Espada Mantídea Desgastada",
+			ru = "Обколотый меч богомола",
+			ko = "[Ragged Mantid Sword]",
+			cn = "[Ragged Mantid Sword]",
 		},
 	},
 	[404492] = {
 		readable = "Gilded Vase",
+		model = 4298410,
 		text = {
 			en = "Gilded Vase",
+			es = "Jarrón dorado",
+			de = "Vergoldete Vase",
+			fr = "Vase doré",
+			it = "Vaso Dorato",
+			pt = "Vaso Dourado",
+			ru = "Позолоченная ваза",
+			ko = "금빛 꽃병",
+			cn = "[Gilded Vase]",
 		},
 	},
 	[405068] = {
 		readable = "Forgotten Grimoire",
+		model = 1367406,
 		text = {
 			en = "Forgotten Grimoire",
+			es = "[Forgotten Grimoire]",
+			de = "[Forgotten Grimoire]",
+			fr = "[Forgotten Grimoire]",
+			it = "[Forgotten Grimoire]",
+			pt = "[Forgotten Grimoire]",
+			ru = "[Forgotten Grimoire]",
+			ko = "[Forgotten Grimoire]",
+			cn = "[Forgotten Grimoire]",
 		},
 	},
 	[405388] = {
 		readable = "Familiar Journal",
+		model = 198038,
 		text = {
 			en = "Familiar Journal",
+			es = "[Familiar Journal]",
+			de = "Bekanntes Tagebuch",
+			fr = "Journal familier",
+			it = "Diario Familiare",
+			pt = "Diário Familiar",
+			ru = "Знакомый дневник",
+			ko = "[Familiar Journal]",
+			cn = "[Familiar Journal]",
 		},
 	},
 	[9000000] = {
@@ -44914,12 +54778,7 @@ root("ObjectDB", {
 		icon = "Interface/Icons/achievement_jadeserpent_1",
 		text = {
 			en = "|cFFFFFFFFItem 1:|r Scintillating Murloc Skin Lotion",
-			es = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 1:|r Loción para piel múrloc centelleante"]],
-			de = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 1:|r Schillernde Murlochautcreme"]],
-			fr = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 1:|r Lotion scintillante murloc pour la peau"]],
-			pt = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 1:|r Creme Cintilante para Pele de Murloc"]],
 			ru = "|cFFFFFFFFПредмет 1:|r Искрящийся мурлочий лосьон для кожи",
-			cn = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 1:|r 闪烁的鱼人皮润滑剂"]],
 		},
 	},
 	[13000003] = {
@@ -45122,12 +54981,7 @@ root("ObjectDB", {
 		icon = "Interface/Icons/inv_inscription_pigment_emerald",
 		text = {
 			en = "|cFFFFFFFFItem 2:|r Potent Gastropod Gloop",
-			es = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 2:|r Pegote de gasterópodo potente"]],
-			de = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 2:|r Potenter Schneckenschleim"]],
-			fr = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 2:|r Glaire gluante de gastéropode"]],
-			pt = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 2:|r Gosma de Gastrópode Potente"]],
 			ru = "|cFFFFFFFFПредмет 2:|r Сочные выделения брюхонога",
-			cn = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 2:|r 强力的蜗牛粘液"]],
 		},
 	},
 	[13000019] = {
@@ -45200,12 +55054,7 @@ root("ObjectDB", {
 		icon = "Interface/Icons/spell_shaman_measuredinsight",
 		text = {
 			en = "|cFFFFFFFFItem 3:|r Captured Cavitation Bubble",
-			es = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 3:|r Burbuja de cavitación capturada"]],
-			de = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 3:|r Eingefangene Kavitationsblase"]],
-			fr = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 3:|r Bulle de cavitation emprisonnée"]],
-			pt = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 3:|r Bolha de Cavitação Capturada"]],
 			ru = "|cFFFFFFFFПредмет 3:|r Пойманный кавитационный пузырек",
-			cn = [[~"|cFFFFFFFF"..AUCTION_HOUSE_HEADER_ITEM.." 3:|r 捕获的空穴气泡"]],
 		},
 	},
 	[13000025] = {
@@ -45400,4 +55249,5 @@ root("ObjectDB", {
 			cn = "符文",
 		},
 	},
-});
+})
+do ObjectDB[objectID] = objectData; end

@@ -59,7 +59,7 @@ root(ROOTS.Zones, {
 									["sourceQuests"] = { 31340 },	-- Oh Sheepie....
 								}),
 								q(31338, {	-- Lost Sheepie
-									["minReputation"] = { 1277, 2 },	-- Acquaintance
+									["minReputation"] = { 1277, 3 },	-- Buddy
 								}),
 								q(31339, {	-- Lost Sheepie... Again
 									["sourceQuests"] = { 31338 },	-- Lost Sheepie

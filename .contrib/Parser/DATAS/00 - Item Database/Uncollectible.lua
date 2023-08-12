@@ -780,3 +780,6 @@ i(206033);	-- Untranslated Obsidian Tome
 i(208030);	-- Advanced Titan Gizmo
 i(206653);	-- Fel Pinecone
 i(205978);	-- Glob of Azmerloth Slime
+
+-- Poor Trash --
+i(201166);	-- Gilded Hilt

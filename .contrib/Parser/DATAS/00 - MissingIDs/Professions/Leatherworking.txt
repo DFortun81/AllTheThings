@@ -248,11 +248,7 @@ r(99536),	-- Vicious Fur Cloak
 r(101600),	--
 5.0.3.15890
 r(102366),	-- Exotic Leather
-r(110423),	-- Leatherworking
 r(110955),	--
-r(124124),	-- Sha-Touched Leg Armor
-r(124125),	-- Toughened Leg Armor
-r(124126),	-- Brutal Leg Armor
 r(124549),	--
 r(124551),	--
 r(124552),	--
@@ -267,195 +263,6 @@ r(124566),	-- Draconic Leg Reinforcements
 r(124567),	-- Primal Leg Reinforcements
 r(124568),	-- Heavy Leg Reinforcements
 r(124569),	-- Draconic Leg Reinforcements
-r(124571),	-- Misthide Helm
-r(124572),	-- Misthide Shoulders
-r(124573),	-- Misthide Chestguard
-r(124574),	-- Misthide Gloves
-r(124575),	-- Misthide Leggings
-r(124576),	-- Misthide Bracers
-r(124577),	-- Misthide Boots
-r(124578),	-- Misthide Belt
-r(124579),	-- Stormscale Helm
-r(124580),	-- Stormscale Shoulders
-r(124581),	-- Stormscale Chestguard
-r(124582),	-- Stormscale Gloves
-r(124583),	-- Stormscale Leggings
-r(124584),	-- Stormscale Bracers
-r(124585),	-- Stormscale Boots
-r(124586),	-- Stormscale Belt
-r(124627),	-- Exotic Leather
-r(124628),	-- Sha Armor Kit
-r(124635),	-- Misthide Drape
-r(124636),	-- Stormscale Drape
-r(124637),	-- Quick Strike Cloak
-6.0.1.18179
-r(131865),	-- Magnificent Hide
-r(137809),	-- Crafted Dreadful Gladiator's Dragonhide Gloves
-r(137810),	-- Crafted Dreadful Gladiator's Dragonhide Helm
-r(137811),	-- Crafted Dreadful Gladiator's Dragonhide Legguards
-r(137812),	-- Crafted Dreadful Gladiator's Dragonhide Robes
-r(137813),	-- Crafted Dreadful Gladiator's Dragonhide Spaulders
-r(137814),	-- Crafted Dreadful Gladiator's Belt of Meditation
-r(137815),	-- Crafted Dreadful Gladiator's Leather Footguards of Meditation
-r(137816),	-- Crafted Dreadful Gladiator's Bindings of Meditation
-r(137817),	-- Crafted Dreadful Gladiator's Kodohide Gloves
-r(137818),	-- Crafted Dreadful Gladiator's Kodohide Helm
-r(137819),	-- Crafted Dreadful Gladiator's Kodohide Legguards
-r(137820),	-- Crafted Dreadful Gladiator's Kodohide Robes
-r(137821),	-- Crafted Dreadful Gladiator's Kodohide Spaulders
-r(137822),	-- Crafted Dreadful Gladiator's Belt of Cruelty
-r(137823),	-- Crafted Dreadful Gladiator's Leather Footguards of Alacrity
-r(137824),	-- Crafted Dreadful Gladiator's Bindings of Prowess
-r(137825),	-- Crafted Dreadful Gladiator's Wyrmhide Gloves
-r(137826),	-- Crafted Dreadful Gladiator's Wyrmhide Helm
-r(137827),	-- Crafted Dreadful Gladiator's Wyrmhide Legguards
-r(137828),	-- Crafted Dreadful Gladiator's Wyrmhide Robes
-r(137829),	-- Crafted Dreadful Gladiator's Wyrmhide Spaulders
-r(137830),	-- Crafted Dreadful Gladiator's Waistband of Cruelty
-r(137831),	-- Crafted Dreadful Gladiator's Boots of Alacrity
-r(137832),	-- Crafted Dreadful Gladiator's Armwraps of Accuracy
-r(137833),	-- Crafted Dreadful Gladiator's Ironskin Gloves
-r(137834),	-- Crafted Dreadful Gladiator's Ironskin Helm
-r(137835),	-- Crafted Dreadful Gladiator's Ironskin Legguards
-r(137836),	-- Crafted Dreadful Gladiator's Ironskin Spaulders
-r(137837),	-- Crafted Dreadful Gladiator's Ironskin Tunic
-r(137838),	-- Crafted Dreadful Gladiator's Copperskin Gloves
-r(137839),	-- Crafted Dreadful Gladiator's Copperskin Helm
-r(137840),	-- Crafted Dreadful Gladiator's Copperskin Legguards
-r(137841),	-- Crafted Dreadful Gladiator's Copperskin Spaulders
-r(137842),	-- Crafted Dreadful Gladiator's Copperskin Tunic
-r(137843),	-- Crafted Dreadful Gladiator's Waistband of Accuracy
-r(137844),	-- Crafted Dreadful Gladiator's Boots of Cruelty
-r(137845),	-- Crafted Dreadful Gladiator's Armwraps of Alacrity
-r(137846),	-- Crafted Dreadful Gladiator's Leather Tunic
-r(137847),	-- Crafted Dreadful Gladiator's Leather Gloves
-r(137848),	-- Crafted Dreadful Gladiator's Leather Helm
-r(137849),	-- Crafted Dreadful Gladiator's Leather Legguards
-r(137850),	-- Crafted Dreadful Gladiator's Leather Spaulders
-r(137851),	-- Crafted Dreadful Gladiator's Links of Cruelty
-r(137852),	-- Crafted Dreadful Gladiator's Links of Accuracy
-r(137853),	-- Crafted Dreadful Gladiator's Sabatons of Cruelty
-r(137854),	-- Crafted Dreadful Gladiator's Sabatons of Alacrity
-r(137855),	-- Crafted Dreadful Gladiator's Wristguards of Alacrity
-r(137856),	-- Crafted Dreadful Gladiator's Wristguards of Accuracy
-r(137857),	-- Crafted Dreadful Gladiator's Chain Armor
-r(137858),	-- Crafted Dreadful Gladiator's Chain Gauntlets
-r(137859),	-- Crafted Dreadful Gladiator's Chain Helm
-r(137860),	-- Crafted Dreadful Gladiator's Chain Leggings
-r(137861),	-- Crafted Dreadful Gladiator's Chain Spaulders
-r(137862),	-- Crafted Dreadful Gladiator's Waistguard of Meditation
-r(137863),	-- Crafted Dreadful Gladiator's Mail Footguards of Alacrity
-r(137864),	-- Crafted Dreadful Gladiator's Mail Footguards of Meditation
-r(137865),	-- Crafted Dreadful Gladiator's Armbands of Prowess
-r(137866),	-- Crafted Dreadful Gladiator's Armbands of Meditation
-r(137867),	-- Crafted Dreadful Gladiator's Ringmail Armor
-r(137868),	-- Crafted Dreadful Gladiator's Ringmail Gauntlets
-r(137869),	-- Crafted Dreadful Gladiator's Ringmail Helm
-r(137870),	-- Crafted Dreadful Gladiator's Ringmail Leggings
-r(137871),	-- Crafted Dreadful Gladiator's Ringmail Spaulders
-r(137872),	-- Crafted Dreadful Gladiator's Linked Armor
-r(137873),	-- Crafted Dreadful Gladiator's Linked Gauntlets
-r(137874),	-- Crafted Dreadful Gladiator's Linked Helm
-r(137875),	-- Crafted Dreadful Gladiator's Linked Leggings
-r(137876),	-- Crafted Dreadful Gladiator's Linked Spaulders
-r(137877),	-- Crafted Dreadful Gladiator's Waistguard of Cruelty
-r(137878),	-- Crafted Dreadful Gladiator's Mail Armor
-r(137879),	-- Crafted Dreadful Gladiator's Mail Gauntlets
-r(137880),	-- Crafted Dreadful Gladiator's Mail Helm
-r(137881),	-- Crafted Dreadful Gladiator's Mail Leggings
-r(137882),	-- Crafted Dreadful Gladiator's Mail Spaulders
-r(138589),	-- Quilen Hide Boots
-r(138590),	-- Quilen Hide Helm
-r(138591),	-- Dreadrunner Sabatons
-r(138592),	-- Dreadrunner Helm
-r(138593),	-- Spirit Keeper Footguards
-r(138594),	-- Spirit Keeper Helm
-r(138595),	-- Cloud Serpent Sabatons
-r(138596),	-- Cloud Serpent Helm
-r(140185),	-- Magnificent Hide Pack
-r(142952),	-- Pennyroyal Leggings
-r(142953),	-- Krasari Prowler Britches
-r(142956),	-- Snow Lily Britches
-r(142957),	-- Gorge Stalker Legplates
-r(142961),	-- Pennyroyal Belt
-r(142962),	-- Krasari Prowler Belt
-r(142965),	-- Snow Lily Belt
-r(142966),	-- Gorge Stalker Belt
-r(143089),	-- Crafted Malevolent Gladiator's Dragonhide Gloves
-r(143090),	-- Crafted Malevolent Gladiator's Dragonhide Helm
-r(143091),	-- Crafted Malevolent Gladiator's Dragonhide Legguards
-r(143092),	-- Crafted Malevolent Gladiator's Dragonhide Robes
-r(143093),	-- Crafted Malevolent Gladiator's Dragonhide Spaulders
-r(143094),	-- Crafted Malevolent Gladiator's Belt of Meditation
-r(143095),	-- Crafted Malevolent Gladiator's Footguards of Meditation
-r(143096),	-- Crafted Malevolent Gladiator's Bindings of Meditation
-r(143097),	-- Crafted Malevolent Gladiator's Kodohide Gloves
-r(143098),	-- Crafted Malevolent Gladiator's Kodohide Helm
-r(143099),	-- Crafted Malevolent Gladiator's Kodohide Legguards
-r(143100),	-- Crafted Malevolent Gladiator's Kodohide Robes
-r(143101),	-- Crafted Malevolent Gladiator's Kodohide Spaulders
-r(143102),	-- Crafted Malevolent Gladiator's Belt of Cruelty
-r(143103),	-- Crafted Malevolent Gladiator's Footguards of Alacrity
-r(143104),	-- Crafted Malevolent Gladiator's Bindings of Prowess
-r(143105),	-- Crafted Malevolent Gladiator's Wyrmhide Gloves
-r(143106),	-- Crafted Malevolent Gladiator's Wyrmhide Helm
-r(143107),	-- Crafted Malevolent Gladiator's Wyrmhide Legguards
-r(143108),	-- Crafted Malevolent Gladiator's Wyrmhide Robes
-r(143109),	-- Crafted Malevolent Gladiator's Wyrmhide Spaulders
-r(143110),	-- Crafted Malevolent Gladiator's Waistband of Cruelty
-r(143111),	-- Crafted Malevolent Gladiator's Boots of Alacrity
-r(143112),	-- Crafted Malevolent Gladiator's Armwraps of Accuracy
-r(143113),	-- Crafted Malevolent Gladiator's Ironskin Gloves
-r(143114),	-- Crafted Malevolent Gladiator's Ironskin Helm
-r(143115),	-- Crafted Malevolent Gladiator's Ironskin Legguards
-r(143116),	-- Crafted Malevolent Gladiator's Ironskin Spaulders
-r(143117),	-- Crafted Malevolent Gladiator's Ironskin Tunic
-r(143118),	-- Crafted Malevolent Gladiator's Copperskin Gloves
-r(143119),	-- Crafted Malevolent Gladiator's Copperskin Helm
-r(143120),	-- Crafted Malevolent Gladiator's Copperskin Legguards
-r(143121),	-- Crafted Malevolent Gladiator's Copperskin Spaulders
-r(143122),	-- Crafted Malevolent Gladiator's Copperskin Tunic
-r(143123),	-- Crafted Malevolent Gladiator's Waistband of Accuracy
-r(143124),	-- Crafted Malevolent Gladiator's Boots of Cruelty
-r(143125),	-- Crafted Malevolent Gladiator's Armwraps of Alacrity
-r(143126),	-- Crafted Malevolent Gladiator's Leather Tunic
-r(143127),	-- Crafted Malevolent Gladiator's Leather Gloves
-r(143128),	-- Crafted Malevolent Gladiator's Leather Helm
-r(143129),	-- Crafted Malevolent Gladiator's Leather Legguards
-r(143130),	-- Crafted Malevolent Gladiator's Leather Spaulders
-r(143131),	-- Crafted Malevolent Gladiator's Links of Cruelty
-r(143132),	-- Crafted Malevolent Gladiator's Links of Accuracy
-r(143133),	-- Crafted Malevolent Gladiator's Sabatons of Cruelty
-r(143134),	-- Crafted Malevolent Gladiator's Sabatons of Alacrity
-r(143135),	-- Crafted Malevolent Gladiator's Wristguards of Alacrity
-r(143136),	-- Crafted Malevolent Gladiator's Wristguards of Accuracy
-r(143137),	-- Crafted Malevolent Gladiator's Chain Armor
-r(143138),	-- Crafted Malevolent Gladiator's Chain Gauntlets
-r(143139),	-- Crafted Malevolent Gladiator's Chain Helm
-r(143140),	-- Crafted Malevolent Gladiator's Chain Leggings
-r(143141),	-- Crafted Malevolent Gladiator's Chain Spaulders
-r(143142),	-- Crafted Malevolent Gladiator's Waistguard of Meditation
-r(143143),	-- Crafted Malevolent Gladiator's Footguards of Alacrity
-r(143144),	-- Crafted Malevolent Gladiator's Footguards of Meditation
-r(143145),	-- Crafted Malevolent Gladiator's Armbands of Prowess
-r(143146),	-- Crafted Malevolent Gladiator's Armbands of Meditation
-r(143147),	-- Crafted Malevolent Gladiator's Ringmail Armor
-r(143148),	-- Crafted Malevolent Gladiator's Ringmail Gauntlets
-r(143149),	-- Crafted Malevolent Gladiator's Ringmail Helm
-r(143150),	-- Crafted Malevolent Gladiator's Ringmail Leggings
-r(143151),	-- Crafted Malevolent Gladiator's Ringmail Spaulders
-r(143152),	-- Crafted Malevolent Gladiator's Linked Armor
-r(143153),	-- Crafted Malevolent Gladiator's Linked Gauntlets
-r(143154),	-- Crafted Malevolent Gladiator's Linked Helm
-r(143155),	-- Crafted Malevolent Gladiator's Linked Leggings
-r(143156),	-- Crafted Malevolent Gladiator's Linked Spaulders
-r(143157),	-- Crafted Malevolent Gladiator's Waistguard of Cruelty
-r(143158),	-- Crafted Malevolent Gladiator's Mail Armor
-r(143159),	-- Crafted Malevolent Gladiator's Mail Gauntlets
-r(143160),	-- Crafted Malevolent Gladiator's Mail Helm
-r(143161),	-- Crafted Malevolent Gladiator's Mail Leggings
-r(143162),	-- Crafted Malevolent Gladiator's Mail Spaulders
-r(158752),	-- Leatherworking
 7.3.0.24473
 r(163216),	-- Blackened Dragonscale
 r(163218),	-- Deepsea Scale
@@ -471,29 +278,6 @@ r(163230),	-- Nether Dragonscales
 r(163231),	-- Cobra Scales
 r(163232),	-- Wind Scales
 r(171713),	-- Burnished Leather
-r(176392),	-- Fine Blue and Gold Tent
-r(176397),	-- Fine Blue and Purple Tent
-r(176399),	-- Fine Blue and Green Tent
-r(176401),	-- Ironskin Tent
-r(176402),	-- Outcast's Tent
-r(176404),	-- Enchanter's Tent
-r(176405),	-- Savage Leather Tent
-r(176408),	-- Archmage's Tent
-r(176409),	-- Brute's Tent
-r(176411),	-- Sturdy Tent
-r(176412),	-- Crusader's Tent
-r(176413),	-- Blood Elven Tent
-r(176414),	-- High Elven Tent
-r(176415),	-- Deathweaver's Hovel
-r(176416),	-- Patchwork Hut
-r(176417),	-- Elune's Retreat
-r(176418),	-- Orgrimmar's Reach
-r(176420),	-- Simple Tent
-r(176421),	-- Distressingly Furry Tent
-r(176422),	-- Ornate Alliance Tent
-r(176424),	-- Ornate Horde Tent
-r(176425),	-- Voodoo Doctor's Hovel
-r(176426),	-- Nomad's Spiked Tent
 r(196383),	-- Stonehide Leather Vamp
 r(196387),	-- Shaved Felhide
 r(196388),	-- Tanned Fel Leather
@@ -536,8 +320,6 @@ r(264577),	-- Leatherworking
 r(264579),	-- Outland Leatherworking
 r(264581),	-- Northrend Leatherworking
 r(264583),	-- Cataclysm Leatherworking
-r(264585),	-- Pandaria Leatherworking
-r(264588),	-- Draenor Leatherworking
 9.0.1.34199
 r(330180),	-- Relic of the Past I
 r(330181),	-- Relic of the Past II
@@ -559,16 +341,6 @@ r(330197),	-- Relic of the Past II
 r(330198),	-- Relic of the Past III
 r(330199),	-- Relic of the Past IV
 r(330200),	-- Relic of the Past V
-r(330201),	-- Relic of the Past I
-r(330202),	-- Relic of the Past II
-r(330203),	-- Relic of the Past III
-r(330204),	-- Relic of the Past IV
-r(330205),	-- Relic of the Past V
-r(330206),	-- Relic of the Past I
-r(330207),	-- Relic of the Past II
-r(330208),	-- Relic of the Past III
-r(330209),	-- Relic of the Past IV
-r(330210),	-- Relic of the Past V
 
 
 

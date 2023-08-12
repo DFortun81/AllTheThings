@@ -6,11 +6,11 @@ root(ROOTS.WorldDrops, {
 	tier(MOP_TIER, {
 		filter(RECIPES, {
 			prof(BLACKSMITHING, {
-				i(100865, bubbleDownSelf({ ["timeline"] = { "added 5.4.0" }, ["requireSkill"] = BLACKSMITHING }, {	-- Plans: Balanced Trillium Ingot and Its Uses
+				i(100865, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Plans: Balanced Trillium Ingot and Its Uses (RECIPE!)
 					["f"] = MISC,
 					["g"] = {
-						r(146921),	-- Accelerated Balanced Trillium Ingot
-						r(143255),	-- Balanced Trillium Ingot
+						r(146921),	-- Accelerated Balanced Trillium Ingot (RECIPE!)
+						r(143255),	-- Balanced Trillium Ingot (RECIPE!)
 					},
 				})),
 			}),
@@ -63,19 +63,24 @@ root(ROOTS.WorldDrops, {
 				i(95470),	-- Design: Serpent's Heart
 			}),
 			prof(LEATHERWORKING, {
-				i(102513, {	-- Pattern: Drums of Rage
+				i(102513, {	-- Pattern: Drums of Rage (RECIPE!)
 					["description"] = "Requires maxed Pandaria leatherworking skill to drop.",
+					["timeline"] = { ADDED_5_4_0 },
 				}),
-				i(100864, {	-- Pattern: Hardened Magnificent Hide and Its Uses
+				i(100864, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Pattern: Hardened Magnificent Hide and Its Uses (RECIPE!)
 					["description"] = "Requires maxed Pandaria leatherworking skill to drop.",
 					["f"] = MISC,
 					["g"] = {
-						recipe(142976),	-- Hardened Magnificent Hide
-						recipe(146923),	-- Accelerated Hardened Magnificent Hide
+						r(146923),	-- Accelerated Hardened Magnificent Hide (RECIPE!)
+						r(142976),	-- Hardened Magnificent Hide (RECIPE!)
 					},
+				})),
+				i(95467, {	-- Pattern: Magnificence of Leather (RECIPE!)
+					["timeline"] = { ADDED_5_2_0 },
 				}),
-				i(95467),	-- Pattern: Magnificence of Leather
-				i(95468),	-- Pattern: Magnificence of Scales
+				i(95468, {	-- Pattern: Magnificence of Scales (RECIPE!)
+					["timeline"] = { ADDED_5_2_0 },
+				}),
 			}),
 			prof(TAILORING, {
 				i(100863, {	-- Pattern: Celestial Cloth and Its Uses

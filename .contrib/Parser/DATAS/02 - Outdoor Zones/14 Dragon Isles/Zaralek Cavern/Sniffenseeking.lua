@@ -326,6 +326,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(75997),	-- Completing Heart of Iron Sniffenseeking Quest
 		q(75914),	-- Starting the first Sniffenseeking map after tutorial, unflagged after completing Sniffenseeking quest
 		q(75883),	-- 3rd charge (map) for adventure / unflagged when 3rd map completed
+		q(76109),	-- Salverun (spellID 411721) [Summon Salverun as a battle pet]
 
 		q(75904),	-- Unknown [When going to Those Rascally Wroms (75397)] /Unflagged after complete
 		q(75880),	-- Completed Those Rascally Wroms (75397),			This Might Be Achievement Tracker/Daily/weekly etc..

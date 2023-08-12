@@ -36,9 +36,10 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 						i(95973),	-- Abandoned Zandalari Waterchain
 						i(95979),	-- Columnbreaker Stompers [Crieve got November 24, 2018 on stream]
 						i(95966),	-- Deeproot Treads
+						i(95965),	-- Home-Warding Slippers [Yunim - 2023-02-23]
 						i(95978),	-- Locksmasher Greaves [Yunim - 2021-12-04]
 						i(95963),	-- Silentflame Sandals
-						i(95968),	-- Vaultwalker Sabatons
+						i(95968),	-- Vaultwalker Sabatons [Yunim - 2023-02-xx]
 						i(94295),	-- Primal Egg
 					}),
 					--[[
@@ -365,11 +366,11 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 						i(95980),	-- Necklace of the Terra-Cotta Protector
 						i(95958),	-- Necklace of the Terra-Cotta Archer
 						i(95969),	-- Necklace of the Terra-Cotta Mender
-						i(95960),	-- Scalehide Spurs
+						i(95960),	-- Scalehide Spurs [Yunim - 2023-02-xx]
 						i(95963),	-- Silentflame Sandals
 						i(95959),	-- Spiderweb Tabi
 						i(95967),	-- Spiritbound Boots
-						i(95968),	-- Vaultwalker Sabatons 
+						i(95968),	-- Vaultwalker Sabatons
 					}),
 
 					-- Necks

@@ -451,7 +451,7 @@ namespace ATT
             {
                 builder.Append("(function()\n").Append(ProcessContent(File.ReadAllText(filename, Encoding.UTF8))).Append("\nend)();");
             }
-            else
+            else if(!(filename.EndsWith("\\") || filename.EndsWith("/")))
             {
                 Console.WriteLine();
                 Console.WriteLine("File doesn't exist:");

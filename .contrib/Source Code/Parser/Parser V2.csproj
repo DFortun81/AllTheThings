@@ -34,7 +34,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Retail|x86' ">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>..\..\Parser\</OutputPath>
-    <DefineConstants>TRACE;RETAIL;DF</DefineConstants>
+    <DefineConstants>TRACE;RETAIL;DF;AFTERDF;AFTERSL;AFTERBFA;AFTERLEGION;AFTERWOD;AFTERMOP;AFTERCATA;AFTERWRATH;AFTERTBC</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>x64</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
@@ -57,7 +57,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Classic %2802 - The Burning Crusade%29|x86' ">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>..\..\..\..\..\..\..\_classic_\Interface\AddOns\ATT-Classic\.contrib\.tools\</OutputPath>
-    <DefineConstants>TRACE;TBC;CRIEVE;ANYCLASSIC</DefineConstants>
+    <DefineConstants>TRACE;TBC;AFTERTBC;CRIEVE;ANYCLASSIC</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>x64</PlatformTarget>
     <LangVersion>7.3</LangVersion>
@@ -68,7 +68,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Retail_Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>..\..\Parser\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;RETAIL;DF</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;RETAIL;DF;AFTERDF;AFTERSL;AFTERBFA;AFTERLEGION;AFTERWOD;AFTERMOP;AFTERCATA;AFTERWRATH;AFTERTBC;</DefineConstants>
     <Optimize>false</Optimize>
     <DebugType>full</DebugType>
     <PlatformTarget>x64</PlatformTarget>
@@ -80,7 +80,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Classic %2803 - Wrath of the Lich King%29|x86' ">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>..\..\..\..\..\..\..\_classic_\Interface\AddOns\ATT-Classic\.contrib\.tools\</OutputPath>
-    <DefineConstants>TRACE;WRATH;CRIEVE;ANYCLASSIC</DefineConstants>
+    <DefineConstants>TRACE;WRATH;AFTERWRATH;AFTERTBC;CRIEVE;ANYCLASSIC</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>x64</PlatformTarget>
     <LangVersion>7.3</LangVersion>
@@ -91,7 +91,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Classic %2804 - Cataclysm%29|x86' ">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>..\..\..\..\..\..\..\_classic_\Interface\AddOns\ATT-Classic\.contrib\.tools\</OutputPath>
-    <DefineConstants>TRACE;CATA;CRIEVE;ANYCLASSIC</DefineConstants>
+    <DefineConstants>TRACE;CATA;AFTERCATA;AFTERWRATH;AFTERTBC;CRIEVE;ANYCLASSIC</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>x64</PlatformTarget>
     <LangVersion>7.3</LangVersion>
@@ -102,7 +102,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Classic %2810 - Dragonflight%29|x86' ">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>..\..\..\..\..\..\..\_classic_\Interface\AddOns\ATT-Classic\.contrib\.tools\</OutputPath>
-    <DefineConstants>TRACE;DF;CRIEVE;ANYCLASSIC</DefineConstants>
+    <DefineConstants>TRACE;DF;AFTERDF;AFTERSL;AFTERBFA;AFTERLEGION;AFTERWOD;AFTERMOP;AFTERCATA;AFTERWRATH;AFTERTBC;CRIEVE;ANYCLASSIC</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>x64</PlatformTarget>
     <LangVersion>7.3</LangVersion>
@@ -127,6 +127,7 @@
     <Compile Include="Framework\Framework.Objects.cs" />
     <Compile Include="Framework\Framework.Items.cs" />
     <Compile Include="Framework\Framework.cs" />
+    <Compile Include="Harvesters\ObjectHarvester.cs" />
     <Compile Include="Framework\ParseStage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

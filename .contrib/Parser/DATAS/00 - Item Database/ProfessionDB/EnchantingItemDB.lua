@@ -223,7 +223,7 @@ i(20733, 25082);	-- Greater Nature Resistance (5.0.4) (P5)
 i(0, 22434);		-- Charged Scale of Onyxia
 
 -----------------
--- PATCH 2.0.0 --
+-- PATCH 2.0.5 --
 -----------------
 -- TRAINER --
 i(0, 33996);		-- Assault
@@ -342,7 +342,33 @@ i(34872, 45765);	-- Void Shatter
 i(35498, 46578);	-- Deathfrost (P3)
 
 -----------------
--- PATCH 3.0.1 --
+-- PATCH 3.0.2 --
+-----------------
+-- NYI --
+i(0, 44612);		-- Greater Blasting
+i(0, 60618);		-- Runed Cobalt Rod
+i(0, 44497);		-- Unknown
+i(0, 44496);		-- Unknown
+i(0, 44516);		-- Unknown
+i(0, 44515);		-- Unknown
+i(0, 44558);		-- Unknown
+i(0, 44597);		-- Unknown
+i(0, 44613);		-- Unknown
+i(0, 44632);		-- Unknown
+i(0, 44634);		-- Unknown
+i(0, 44638);		-- Unknown
+i(0, 44637);		-- Unknown
+i(0, 47903);		-- Unknown
+i(0, 47908);		-- Unknown
+i(36837, 0);		-- Formula: 02 Enchanting Recipe Template (Good)
+i(36840, 0);		-- Formula: 01 Enchanting Recipe Template (Standard)
+i(36838, 0);		-- Formula: 03 Enchanting Recipe Template (Superior)
+i(36839, 0);		-- Formula: 04 Enchanting Recipe Template (Epic)
+i(37326, 0);		-- Formula: Enchant Bracer - Major Versatility
+i(37342, 0);		-- Formula: Enchant Gloves - Greater Blasting
+
+-----------------
+-- PATCH 3.0.3 --
 -----------------
 -- TRAINER --
 i(0, 44489);		-- Dodge Shield
@@ -397,33 +423,6 @@ i(37331, 44556);	-- Superior Fire Resistance (5.0.4)
 i(37332, 44483);	-- Superior Frost Resistance (5.0.4)
 i(37333, 44494);	-- Superior Nature Resistance (5.0.4)
 i(37334, 44590);	-- Superior Shadow Resistance (5.0.4)
--- NYI --
-i(0, 44612);		-- Greater Blasting
-i(0, 44497);		-- Unknown
-i(0, 44496);		-- Unknown
-i(0, 44516);		-- Unknown
-i(0, 44515);		-- Unknown
-i(0, 44558);		-- Unknown
-i(0, 44597);		-- Unknown
-i(0, 44613);		-- Unknown
-i(0, 44632);		-- Unknown
-i(0, 44634);		-- Unknown
-i(0, 44638);		-- Unknown
-i(0, 44637);		-- Unknown
-i(0, 47903);		-- Unknown
-i(0, 47908);		-- Unknown
-i(36837, 0);		-- Formula: 02 Enchanting Recipe Template (Good)
-i(36840, 0);		-- Formula: 01 Enchanting Recipe Template (Standard)
-i(36838, 0);		-- Formula: 03 Enchanting Recipe Template (Superior)
-i(36839, 0);		-- Formula: 04 Enchanting Recipe Template (Epic)
-i(37326, 0);		-- Formula: Enchant Bracer - Major Versatility
-i(37342, 0);		-- Formula: Enchant Gloves - Greater Blasting
-
------------------
--- PATCH 3.0.2 --
------------------
--- NYI --
-i(0, 60618);		-- Runed Cobalt Rod
 
 -----------------
 -- PATCH 3.1.0 --
@@ -614,6 +613,21 @@ i(84582, 0);		-- Formula: Enchant Weapon - Windsong
 -----------------
 -- PATCH 6.0.2 --
 -----------------
+--- NYI --
+i(0, 158144);		-- Unknown
+i(0, 158882);		-- Unknown
+i(0, 158890);		-- Unknown
+i(0, 158891);		-- Unknown
+i(0, 158897);		-- Unknown
+i(0, 158904);		-- Unknown
+i(0, 158905);		-- Unknown
+i(0, 158912);		-- Unknown
+i(0, 158919);		-- Unknown
+i(120135, 0);		-- Secrets of Draenor Enchanting
+
+-----------------
+-- PATCH 6.0.3 --
+-----------------
 -- TRAINER --
 i(0, 158907);		-- Breath of Critical Strike [Ring]
 i(0, 158908);		-- Breath of Haste [Ring]
@@ -689,15 +703,6 @@ i(118446, 158902);	-- Gift of Multistrike [Neck] (7.0.3)
 i(118456, 158917);	-- Gift of Multistrike [Ring] (7.0.3)
 -- NYI --
 i(0, 178241);		-- Temporal Crystal
-i(0, 158144);		-- Unknown
-i(0, 158882);		-- Unknown
-i(0, 158890);		-- Unknown
-i(0, 158891);		-- Unknown
-i(0, 158897);		-- Unknown
-i(0, 158904);		-- Unknown
-i(0, 158905);		-- Unknown
-i(0, 158912);		-- Unknown
-i(0, 158919);		-- Unknown
 
 -----------------
 -- PATCH 6.1.0 --
@@ -1042,6 +1047,23 @@ i(177964, 0);		-- Enchant Weapon - Force Multiplier
 -----------------
 -- PATCH 9.0.1 --
 -----------------
+-- NYI --
+i(0, 309628);		--	9.0 Enchanting - Modified Crafting Reagent 01
+i(0, 309629);		--	9.0 Enchanting - Modified Crafting Reagent 02
+i(0, 309630);		--	9.0 Enchanting - Modified Crafting Reagent 03
+i(0, 309631);		--	9.0 Enchanting - Modified Crafting Reagent 04
+i(0, 309632);		--	9.0 Enchanting - Modified Crafting Reagent 05
+i(0, 309633);		--	9.0 Enchanting - Modified Crafting Reagent 06
+i(0, 309634);		--	9.0 Enchanting - Modified Crafting Reagent 07
+i(0, 309635);		--	9.0 Enchanting - Modified Crafting Reagent 08
+i(0, 343682);		--	Crafter's Mark III
+i(0, 343681);		--	Crafter's Mark IV
+i(182666, 0);		--	Formula: Enchanted Elethium Bar
+i(183866, 0);		--	Formula: Crafter's Mark III
+
+-----------------
+-- PATCH 9.0.2 --
+-----------------
 -- TRAINER --
 i(0, 309832);		-- Shadowlands Enchanting
 i(0, 324750);		-- Disenchant [Shadowlands]
@@ -1093,19 +1115,6 @@ i(0, 346026);		-- Boundless Basket
 i(0, 338125);		-- Everburning Brand
 i(0, 338121);		-- True Aim Spear
 i(0, 338123);		-- Unbreakable Crystal
--- NYI --
-i(0, 309628);		--	9.0 Enchanting - Modified Crafting Reagent 01
-i(0, 309629);		--	9.0 Enchanting - Modified Crafting Reagent 02
-i(0, 309630);		--	9.0 Enchanting - Modified Crafting Reagent 03
-i(0, 309631);		--	9.0 Enchanting - Modified Crafting Reagent 04
-i(0, 309632);		--	9.0 Enchanting - Modified Crafting Reagent 05
-i(0, 309633);		--	9.0 Enchanting - Modified Crafting Reagent 06
-i(0, 309634);		--	9.0 Enchanting - Modified Crafting Reagent 07
-i(0, 309635);		--	9.0 Enchanting - Modified Crafting Reagent 08
-i(0, 343682);		--	Crafter's Mark III
-i(0, 343681);		--	Crafter's Mark IV
-i(182666, 0);		--	Formula: Enchanted Elethium Bar
-i(183866, 0);		--	Formula: Crafter's Mark III
 
 -----------------
 -- PATCH 9.1.0 --
@@ -1122,6 +1131,15 @@ i(187824, 360007);	-- Magically Regulated Automa Core
 
 ------------------
 -- PATCH 10.0.0 --
+------------------
+-- NYI --
+i(0, 382580);		-- Opening
+i(0, 391200);		-- Wisp of Tyr
+i(0, 383736);		-- Unknown
+i(198779, 392407);	-- Crystal Magical Lockpick
+
+------------------
+-- PATCH 10.0.2 --
 ------------------
 -- TRAINER --
 i(0, 366255);		-- Dragon Isles Enchanting
@@ -1200,11 +1218,6 @@ i(0, 389558);		-- Wafting Devotion
 i(0, 389410);		-- Waking Stats
 -- QUEST --
 i(0, 377982);		-- Heart in a Bottle
--- NYI --
-i(0, 382580);		-- Opening
-i(0, 391200);		-- Wisp of Tyr
-i(0, 383736);		-- Unknown
-i(198779, 392407);	-- Crystal Magical Lockpick
 
 ------------------
 -- PATCH 10.0.7 --

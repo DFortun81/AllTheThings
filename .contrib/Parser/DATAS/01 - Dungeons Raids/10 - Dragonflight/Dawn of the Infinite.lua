@@ -275,15 +275,15 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 				}),
 				--]]
 				e(2538, {	-- Chrono-Lord Deios and the Infinite Dragonflight
-				 	["crs"] = { 199000 },	--
-				 	["g"] = {
+					["crs"] = { 199000 },	-- Chrono-Lord Deios
+					["g"] = {
 						ach(18704),	-- Dawn of the Infinite: Murozond's Rise
 						i(206145),	-- Mysterious Time Relic (QI!)
 						i(208102),	-- Cliffside Wylderdrake: Infinite Scales (DM!)
-				 		i(208103),	-- Highland Drake: Infinite Scales (DM!)
-				 		i(208104),	-- Renewed Proto-Drake: Infinite Scales (DM!)
-				 		i(208105),	-- Windborne Velocidrake: Infinite Scales (DM!)
-				 		i(208106),	-- Winding Slitherdrake: Infinite Scales (DM!)
+						i(208103),	-- Highland Drake: Infinite Scales (DM!)
+						i(208104),	-- Renewed Proto-Drake: Infinite Scales (DM!)
+						i(208105),	-- Windborne Velocidrake: Infinite Scales (DM!)
+						i(208106),	-- Winding Slitherdrake: Infinite Scales (DM!)
 						i(207874),	-- Belt of the Eternal Struggle
 						i(207945),	-- Chrono-Lord's Wingspan
 						i(207951),	-- Displaced Trooper's Gauntlets
@@ -316,155 +316,208 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 								160829,	-- Underrot Crawg Harness
 							}},-- Raid (Maybe in future)--	78919, -- Experiment 12-B--	71665, -- Flametalon of Alysrazor--	77069, -- Life-Binder's Handmaiden--	45693, -- Mimiron's Head--	77067, -- Reins of the Blazing Drake
 						}),
-						------------------------------------------
-						-- DO NOT TOUCH MY ITEMS OR I KNIFE YOU --
-						----------------LG GOLD ------------------
-						------------------------------------------
-						-- Please use 'ig()' to make sure Mythic ModID isn't attached to all of these sourced items
-
-						i(208064, {	-- Quantum Chestpiece
-							["description"] = "|cFFFF0000If you get an Item which is removed from the game or was never available before,\nplease let us know in the ATT Discord.|r\nThis Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r",
-							["groups"] = {
-								-- Cloth
-								ig(2114),	-- Snowy Robe				(Removed)
-								ig(3260),	-- Scarlet Initiate Robes	(Removed)
-								-- Leather
-								-- Mail
-								ig(114389),	-- Element-Binder Helm		(Never added)
-								ig(93086),	-- Swashbuckling Vest		(Never added)
-
-								ig(134732),	-- Frigidlink Armor			(Removed)
-								ig(120952),	-- Slarkhide				(Removed)
-								-- Plate
-							},
-						}),
-						i(208063, {	-- Quantum Gloves
-							["description"] = "|cFFFF0000If you get an Item which is removed from the game or was never available before,\nplease let us know in the ATT Discord.|r\nThis Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r",
-							["groups"] = {
-								-- Cloth
-								-- Leather
-								-- Mail
-								-- Plate
-							},
-						}),
+					},
+				}),
+				
+				-------------------------------------------
+				-- DO NOT TOUCH THIS PART OR I KNIFE YOU --
+				----------------LG GOLD -------------------
+				-------------------------------------------
+				-- Please use 'ig()' to make sure Mythic ModID isn't attached to all of these sourced items
+				e(2538, {	-- Chrono-Lord Deios and the Infinite Dragonflight
+					["crs"] = { 199000 },	-- Chrono-Lord Deios
+					["g"] = sharedData({
+						["description"] = "This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r",
+					},{
 						i(208061, {	-- Quantum Headpiece
-							["description"] = "|cFFFF0000If you get an Item which is removed from the game or was never available before,\nplease let us know in the ATT Discord.|r\nThis Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r",
 							["groups"] = {
-								-- Cloth
-								ig(114387),	-- Hood of Hooded Nighmates			(Never added)
-								-- Leather
-								-- Mail
-								ig(105809),	-- Crest of Burning Deeds			(Ordos)
+								filter(CLOTH, {
+									ig(114387),	-- Hood of Hooded Nighmates			(NYI)
+								}),
+								filter(LEATHER, {
+									ig(114388),	-- Hood of Falling Leaves			(NYI)
+									ig(93081),	-- Hozen-Stitched Hood 				(NYI)
+									ig(147516),	-- Legion Stalker's Hood 			(NYI)
+									
+									ig(1280),	-- Cloaked Hood 					(Removed)
+									ig(134621),	-- Incendiary Helm 					(Removed)
+									ig(3392),	-- Ringed Helm 						(Removed)
+									ig(134794),	-- Ruinous Helm 					(Removed)
+									ig(6204),	-- Tribal Worg Helm					(Removed)(unique)
+								}),
+								filter(MAIL, {
+									ig(105809),	-- Crest of Burning Deeds			(Ordos)
 
-								ig(92842),	-- Danio-Scale Helm					(Never added)
-								ig(114265),	-- Leafscale Helm					(Never added)
-								ig(121508),	-- Stormborn Crown					(Never added)
+									ig(92842),	-- Danio-Scale Helm					(NYI)
+									ig(114389), -- Element-Binder Helm				(NYI)
+									ig(114265),	-- Leafscale Helm					(NYI)
+									ig(121508),	-- Stormborn Crown					(NYI)
 
-								ig(134624),	-- Firebrand Helm					(Removed)
-								ig(134798),	-- Ironbranded Ringmail Helm		(Removed)
-								-- Plate
-							},
-						}),
-						i(208065, {	-- Quantum Legs
-							["description"] = "|cFFFF0000If you get an Item which is removed from the game or was never available before,\nplease let us know in the ATT Discord.|r\nThis Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r",
-							["groups"] = {
-								-- Cloth
-								-- Leather
-								-- Mail
-								-- Plate
+									ig(134624),	-- Firebrand Helm					(Removed)
+									ig(134798),	-- Ironbranded Ringmail Helm		(Removed)
+								}),
+								filter(PLATE, {
+								}),
 							},
 						}),
 						i(208062, {	-- Quantum Shoulders
-							["description"] = "|cFFFF0000If you get an Item which is removed from the game or was never available before,\nplease let us know in the ATT Discord.|r\nThis Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r",
 							["groups"] = {
-								-- Cloth
-								-- Leather
-								-- Mail
-								ig(1445),	-- Blackrock Pauldrons				(Removed)
-								ig(3231),	-- Cutthroat Pauldrons				(Removed)
+								filter(CLOTH, {
+								}),
+								filter(LEATHER, {
+								}),
+								filter(MAIL, {
+									ig(1445),	-- Blackrock Pauldrons				(Removed)
+									ig(3231),	-- Cutthroat Pauldrons				(Removed)
 
-								ig(18320),	-- Demonheart Spaulders				(Never added)
-								-- Plate
-								ig(103785),	-- Tusks of Mannoroth Heroic		(Removed)
+									ig(18320),	-- Demonheart Spaulders				(NYI)
+								}),
+								filter(PLATE, {
+									ig(103785),	-- Tusks of Mannoroth Heroic		(Removed)
+								}),
 							},
 						}),
-						n(WEAPONS, sharedData({ ["description"] = "|cFFFF0000If you get an Item which is removed from the game or was never available before,\nplease let us know in the ATT Discord.|r\nThis Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0)\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r"}, {
-							i(208111, {	-- Quantum Axe
-							}),
-							i(208117, {	-- Quantum Bow
-							}),
-							i(208118, {	-- Quantum Crossbow
-							}),
-							i(208119, {	-- Quantum Firearm
-							}),
-							i(208125, {	-- Quantum Focus
-							}),
-							i(208113, {	-- Quantum Greataxe (Done)
-								ig(33769),	-- Arcanite Ripper					(BMAH)
-								ig(44924),	-- Sun Lute							(BMAH)
+						i(208064, {	-- Quantum Chestpiece
+							["groups"] = {
+								filter(CLOTH, {
+									ig(2114),	-- Snowy Robe						(Removed)
+									ig(3260),	-- Scarlet Initiate Robes			(Removed)
+								}),
+								filter(LEATHER, {
+									ig(114251),	-- Bloodthorn Chestguard 			(NYI)
+									ig(3984),	-- Strapped Armor					(NYI)
+									
+									ig(2069),	-- Black Bear Hide Vest 			(Removed)
+									ig(134729),	-- Frosthide Tunic 					(Removed)
+									ig(1211),	-- Gnoll War Harness				(Removed)
+									ig(10781),	-- Hakkari Breastplate 				(Removed)
+									ig(17922),	-- Lionfur Armor 					(Removed)
+									ig(6197),	-- Loch Croc Hide Vest 				(Removed)(unique)
+								}),
+								filter(MAIL, {
+									ig(114252), -- Leafscale Chestguard		(NYI)
+									ig(93086),	-- Swashbuckling Vest		(NYI)
 
-								ig(134717),	-- Cold-Touched Decapitator			(Never added)
-								ig(108046),	-- Draenic Steel War Axe			(Never added)
-								ig(108228),	-- Peerless Draenic Steel War Axe	(Never added)
-								ig(115293),	-- Spectral Greataxe				(Never added)
-								ig(134577),	-- Vanguard Decapitator				(Never added)
+									ig(134732),	-- Frigidlink Armor			(Removed)
+									ig(120952),	-- Slarkhide				(Removed)
+								}),
+								filter(PLATE, {
+								}),
+							},
+						}),
+						i(208063, {	-- Quantum Gloves
+							["groups"] = {
+								filter(CLOTH, {
+								}),
+								filter(LEATHER, {
+								}),
+								filter(MAIL, {
+								}),
+								filter(PLATE, {
+								}),
+							},
+						}),
+						i(208065, {	-- Quantum Legs
+							["groups"] = {
+								filter(CLOTH, {
+								}),
+								filter(LEATHER, {
+									ig(114268),	-- Bloodthorn Legguards 		(NYI)
+									ig(114392),	-- Legguards of Falling Leaves 	(NYI)
+									ig(121513),	-- Runesworn Breeches 			(NYI)
+									ig(3982),	-- Strapped Pants 				(NYI)
+									
+									ig(3022),	-- Bluegill Breeches 			(Removed)(unique)
+									ig(18611),	-- Gnarlpine Leggings 			(Removed)
+									ig(134760),	-- Masked Leggings 				(Removed)
+									ig(2233),	-- Shadow Weaver Leggings 		(Removed)
+								}),
+								filter(MAIL, {
+								}),
+								filter(PLATE, {
+								}),
+							},
+						}),
+						i(208111, {	-- Quantum Axe			(1Hand)
+						}),
+						i(208117, {	-- Quantum Bow
+						}),
+						i(208118, {	-- Quantum Crossbow
+						}),
+						i(208119, {	-- Quantum Firearm
+						}),
+						i(208125, {	-- Quantum Focus
+							ig(5183),	-- Pulsating hydra heart			(Removed)
+						}),
+						i(208113, {	-- Quantum Greataxe		(2Hand)
+							ig(39769),	-- Arcanite Ripper					(BMAH)
+							ig(44924),	-- Sun Lute							(BMAH)
 
-								ig(2015),	-- Black Metal War Axe				(Removed)
-								ig(2227),	-- Heavy Ogre War Axe 				(Removed)
-								ig(1220),	-- Lupine Axe						(Removed)
-								ig(756),	-- Tunnel Pick 						(Removed)
-								ig(3325),	-- Vile Fin Battle Axe				(Removed)
-								ig(23171),	-- The Axe of Severing				(Removed)
+							ig(134717),	-- Cold-Touched Decapitator			(NYI)
+							ig(108046),	-- Draenic Steel War Axe			(NYI)
+							ig(189996),	-- Elegantly Balanced Axe			(NYI)(Unique)
+							ig(108228),	-- Peerless Draenic Steel War Axe	(NYI)
+							ig(115293),	-- Spectral Greataxe				(NYI)
+							ig(134577),	-- Vanguard Decapitator				(NYI)
 
-								ig(189996),	-- Elegantly Balanced Axe			(Unique NYI)
+							ig(2015),	-- Black Metal War Axe				(Removed)
+							ig(2227),	-- Heavy Ogre War Axe 				(Removed)
+							ig(1220),	-- Lupine Axe						(Removed)
+							ig(2823),	-- Mo'grosh Can Opener 				(Removed)
+							ig(756),	-- Tunnel Pick 						(Removed)
+							ig(3325),	-- Vile Fin Battle Axe				(Removed)
+							ig(23171),	-- The Axe of Severing				(Removed)
 
-								ig(9425),	-- Pendumlum of Doom				(Very Rare BoE)
-							}),
-							i(208114, {	-- Quantum Greathammer
-								ig(2254),	-- Icepane Warhammer				(Removed)
-							}),
-							i(208112, {	-- Quantum Greatsword (Done)
-								-- CA IS NOT POSSIBLE -- Gold 13.07.2023
+							ig(9425),	-- Pendumlum of Doom				(Very Rare BoE)
+						}),
+						i(208114, {	-- Quantum Greathammer	(2Hand)
+							ig(2254),	-- Icepane Warhammer				(Removed)
+						}),
+						i(208112, {	-- Quantum Greatsword	(2Hand)
+							-- CA IS NOT POSSIBLE -- Gold 13.07.2023
+							ig(134746),	-- Covert Greatsword 				(NYI)
+							ig(134606),	-- Scorching Greatsword 			(NYI)
 
-								ig(134746),	-- Covert Greatsword 				(Never added)
-								ig(134606),	-- Scorching Greatsword 			(Never added)
+							ig(2014),	-- Black Metal Greatsword 			(Removed)(Unique)
+							ig(2204),	-- Brashclaws Skewer 				(Removed)(Unique)
+							ig(3188),	-- Coral Claymore 					(Removed)
+							ig(2084),	-- Darksteel Bastard Sword 			(Removed)
+							ig(1387),	-- Ghoulfang						(Removed)
+							ig(16039),	-- Ta'Kierthan Songblade			(Removed)
+							ig(2754),	-- Tarnished Bastard Sword			(Removed)(Unique)
+						}),
+						i(208120, {	-- Quantum Knife
+						}),
+						i(208121, {	-- Quantum Knuckles
+						}),
+						i(208110, {	-- Quantum Mace			(1Hand)
+							ig(2259),	-- Frostmane Club					(Removed)
+							ig(3223),	-- Frostmane Scepter				(Removed)
+						}),
+						i(208116, {	-- Quantum Polearm
+						}),
+						i(208126, {	-- Quantum Shield
+							ig(134803),	-- Seasoned Redoubt 				(Removed)
+						}),
+						i(208115, {	-- Quantum Staff
+							ig(115298),	-- Spectral Spire 					(NYI)
 
-								ig(2014),	-- Black Metal Greatsword 			(Removed)
-								ig(2204),	-- Brashclaws Skewer 				(Removed)
-								ig(3188),	-- Coral Claymore 					(Removed)
-								ig(2084),	-- Darksteel Bastard Sword 			(Removed)
-								ig(1387),	-- Ghoulfang						(Removed)
-								ig(16039),	-- Ta'Kierthan Songblade			(Removed)
-								ig(2754),	-- Tarnished Bastard Sword			(Removed)
-							}),
-							i(208120, {	-- Quantum Knife
-							}),
-							i(208121, {	-- Quantum Knuckles
-							}),
-							i(208110, {	-- Quantum Mace
-								ig(2259),	-- Frostmane Club					(Removed)
-								ig(3223),	-- Frostmane Scepter				(Removed)
-							}),
-							i(208116, {	-- Quantum Polearm
-							}),
-							i(208126, {	-- Quantum Shield
-								ig(134803),	-- Seasoned Redoubt 				(Removed)
-							}),
-							i(208115, {	-- Quantum Staff
-								ig(115298),	-- Spectral Spire 					(Never added)
-
-								ig(6679),	-- Armor Piercer					(Removed)
-								ig(2280),	-- Kam's Walking Stick				(Removed)
-								ig(1473),	-- Riverside Staff					(Removed)
-							}),
-							i(208109, {	-- Quantum Sword
-								i(8223),	-- Blade of the Basilisk 			(Removed)
-							}),
-							i(208122, {	-- Quantum Warglaives
-							}),
-							i(208123),	-- Quantum Wand
-						})),
-					},
+							ig(6679),	-- Armor Piercer					(Removed)
+							ig(134721),	-- Cold-Touched Staff 				(Removed)
+							ig(1388),	-- Crooked Staff					(Removed)
+							ig(7094),	-- Driftwood Branch					(Removed)
+							ig(1539),	-- Gnarled hermit's staff			(Removed)(Unique)
+							ig(2280),	-- Kam's Walking Stick				(Removed)
+							ig(1473),	-- Riverside Staff					(Removed)
+							ig(880),	-- Staff of Horrors 
+						}),
+						i(208109, {	-- Quantum Sword		(1Hand)
+							ig(8223),	-- Blade of the Basilisk 			(Removed)
+						}),
+						i(208122, {	-- Quantum Warglaives
+						}),
+						i(208123),	-- Quantum Wand
+					}),
 				}),
 			}),
 		},

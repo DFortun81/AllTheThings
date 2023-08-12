@@ -233,23 +233,23 @@ root(ROOTS.Zones, {
 						i(89232),	-- Mogu Rune of Paralysis
 						i(89528),	-- Necklace of Jade Pearls
 						i(89347),	-- Paleblade Shoulderguards
-						i(86235),	-- Pattern: Angerhide Leg Armor
-						i(86237),	-- Pattern: Chestguard of Earthen Harmony
+						i(86235),	-- Pattern: Angerhide Leg Armor (RECIPE!)
+						i(86237),	-- Pattern: Chestguard of Earthen Harmony (RECIPE!)
 						i(86371),	-- Pattern: Gloves of Creation
-						i(86273),	-- Pattern: Gloves of Earthen Harmony
+						i(86273),	-- Pattern: Gloves of Earthen Harmony (RECIPE!)
 						i(86376),	-- Pattern: Greater Cerulean Spellthread
 						i(86375),	-- Pattern: Greater Pearlescent Spellthread
-						i(86274),	-- Pattern: Greyshadow Chestguard
-						i(86275),	-- Pattern: Greyshadow Gloves
-						i(86276),	-- Pattern: Ironscale Leg Armor
-						i(86277),	-- Pattern: Lifekeeper's Gloves
-						i(86278),	-- Pattern: Lifekeeper's Robe
+						i(86274),	-- Pattern: Greyshadow Chestguard (RECIPE!)
+						i(86275),	-- Pattern: Greyshadow Gloves (RECIPE!)
+						i(86276),	-- Pattern: Ironscale Leg Armor (RECIPE!)
+						i(86277),	-- Pattern: Lifekeeper's Gloves (RECIPE!)
+						i(86278),	-- Pattern: Lifekeeper's Robe (RECIPE!)
 						i(86370),	-- Pattern: Robes of Creation
-						i(86295),	-- Pattern: Shadowleather Leg Armor
+						i(86295),	-- Pattern: Shadowleather Leg Armor (RECIPE!)
 						i(86369),	-- Pattern: Spelltwister's Gloves
 						i(86368),	-- Pattern: Spelltwister's Grand Robe
-						i(86308),	-- Pattern: Wildblood Gloves
-						i(86309),	-- Pattern: Wildblood Vest
+						i(86308),	-- Pattern: Wildblood Gloves (RECIPE!)
+						i(86309),	-- Pattern: Wildblood Vest (RECIPE!)
 						i(89529),	-- Pendant of Endless Inquisition
 						i(87781, {	-- Azure Riding Crane (MOUNT!)
 							["cost"] = 5000000,	-- 500g

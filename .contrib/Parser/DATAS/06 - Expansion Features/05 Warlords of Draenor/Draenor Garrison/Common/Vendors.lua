@@ -40,7 +40,7 @@ root(ROOTS.ExpansionFeatures,
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
 						i(122705, {	-- Plans: Riddle of Truesteel (RECIPE!)
-							["timeline"] = { "added 6.1.0" },
+							["timeline"] = { ADDED_6_1_0 },
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
 						i(127743, {	-- Plans: Savage Steelforged Essence (RECIPE!)
@@ -294,6 +294,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						i(122715, {	-- Pattern: Spiritual Leathercraft (RECIPE!)
 							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
+							["timeline"] = { ADDED_6_1_0 },
 						}),
 					},
 				}),
@@ -1286,7 +1287,7 @@ root(ROOTS.ExpansionFeatures,
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
 						i(122705, {	-- Plans: Riddle of Truesteel (RECIPE!)
-							["timeline"] = { "added 6.1.0" },
+							["timeline"] = { ADDED_6_1_0 },
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
 						i(127743, {	-- Plans: Savage Steelforged Essence (RECIPE!)
@@ -1358,6 +1359,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						i(122715, {	-- Pattern: Spiritual Leathercraft (RECIPE!)
 							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
+							["timeline"] = { ADDED_6_1_0 },
 						}),
 					},
 				}),

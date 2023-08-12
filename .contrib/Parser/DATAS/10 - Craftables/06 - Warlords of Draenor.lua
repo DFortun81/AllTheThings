@@ -88,7 +88,7 @@ local WOD_CRAFTED_ITEM_DF_REMARKABLE = function(id, upgradeItem)
 	});
 end
 
-root(ROOTS.Craftables, tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {
+root(ROOTS.Craftables, tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	prof(ALCHEMY, {
 		filter(TRINKET_F, {
 			i(109262),	-- Draenic Philosopher's Stone
@@ -149,13 +149,15 @@ root(ROOTS.Craftables, tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDow
 			i(119328),	-- Soul of the Forge (PET!)
 		}),
 		filter(MISC, {
-			i(127713, {["timeline"] = {"added 6.2.0", REMOVED_10_0_5}}),	-- Mighty Steelforged Essence
-			i(127714, {["timeline"] = {"added 6.2.0", REMOVED_10_0_5}}),	-- Mighty Truesteel Essence
-			i(127731, {["timeline"] = {"added 6.2.0", REMOVED_10_0_5}}),	-- Savage Steelforged Essence
-			i(127732, {["timeline"] = {"added 6.2.0", REMOVED_10_0_5}}),	-- Savage Truesteel Essence
-			i(118720),	-- Secrets of Draenor Blacksmithing
-			i(128016, {["timeline"] = {"added 6.0.2", REMOVED_10_0_5}}),	-- Steelforged Essence
-			i(128015, {["timeline"] = {"added 6.0.2", REMOVED_10_0_5}}),	-- Truesteel Essence
+			i(202210, {["timeline"] = {ADDED_10_0_5}}),	-- Impressive Truesteel Essence
+			i(127713, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Mighty Steelforged Essence
+			i(127714, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Mighty Truesteel Essence
+			i(202211, {["timeline"] = {ADDED_10_0_5}}),	-- Remarkable Truesteel Essence
+			i(127731, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Savage Steelforged Essence
+			i(127732, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Savage Truesteel Essence
+			i(118720),	-- Secret of Draenor Blacksmithing
+			i(128016, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_10_0_5}}),	-- Steelforged Essence
+			i(128015, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_10_0_5}}),	-- Truesteel Essence
 			i(116654),	-- Truesteel Grinder
 			i(108257),	-- Truesteel Ingot
 			i(116428),	-- Truesteel Reshaper
@@ -202,55 +204,49 @@ root(ROOTS.Craftables, tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDow
 			i(115502),	-- Small Luminous Shard
 			i(113588),	-- Temporal Crystal
 		}),
-		cat(349, {	-- Cloak
+		n(ARMOR_ENCHANTMENTS, {
 			i(110631),	-- Enchant Cloak - Breath of Critical Strike
 			i(110632),	-- Enchant Cloak - Breath of Haste
 			i(110633),	-- Enchant Cloak - Breath of Mastery
-			i(110634, {["timeline"]={"added 6.0.2","removed 7.0.3"}}),	-- Enchant Cloak - Breath of Multistrike
+			i(110634, {["timeline"]={ADDED_6_0_3_LAUNCH, REMOVED_7_0_3}}),	-- Enchant Cloak - Breath of Multistrike
 			i(110635),	-- Enchant Cloak - Breath of Versatility
 			i(110652),	-- Enchant Cloak - Gift of Critical Strike
 			i(110653),	-- Enchant Cloak - Gift of Haste
 			i(110654),	-- Enchant Cloak - Gift of Mastery
-			i(110655, {["timeline"]={"added 6.0.2","removed 7.0.3"}}),	-- Enchant Cloak - Gift of Multistrike
+			i(110655, {["timeline"]={ADDED_6_0_3_LAUNCH, REMOVED_7_0_3}}),	-- Enchant Cloak - Gift of Multistrike
 			i(110656),	-- Enchant Cloak - Gift of Versatility
-		}),
-		applyclassicphase(LEGION_PHASE_ONE, filter(ILLUSIONS, sharedDataSelf({ ["timeline"] = { "added 7.0.3"} }, {
-			i(138795, {	-- Tome of Illusions: Draenor
-				ill(5334),	-- Mark of the Frostwolf
-				ill(5330),	-- Mark of the Thunderlord
-			}),
-		}))),
-		cat(350, {	-- Neck
 			i(110624),	-- Enchant Neck - Breath of Critical Strike
 			i(110625),	-- Enchant Neck - Breath of Haste
 			i(110626),	-- Enchant Neck - Breath of Mastery
-			i(110627, {["timeline"]={"added 6.0.2","removed 7.0.3"}}),	-- Enchant Neck - Breath of Multistrike
+			i(110627, {["timeline"]={ADDED_6_0_3_LAUNCH, REMOVED_7_0_3}}),	-- Enchant Neck - Breath of Multistrike
 			i(110628),	-- Enchant Neck - Breath of Versatility
 			i(110645),	-- Enchant Neck - Gift of Critical Strike
 			i(110646),	-- Enchant Neck - Gift of Haste
 			i(110647),	-- Enchant Neck - Gift of Mastery
-			i(110648, {["timeline"]={"added 6.0.2","removed 7.0.3"}}),	-- Enchant Neck - Gift of Multistrike
+			i(110648, {["timeline"]={ADDED_6_0_3_LAUNCH, REMOVED_7_0_3}}),	-- Enchant Neck - Gift of Multistrike
 			i(110649),	-- Enchant Neck - Gift of Versatility
-		}),
-		cat(354, {	-- Other
-			i(112321),	-- Enchanted Dust
-		}),
-		cat(409, {	-- Reagents and Research
-			i(119293),	-- Secrets of Draenor Enchanting
-		}),
-		cat(351, {	-- Ring
 			i(110617),	-- Enchant Ring - Breath of Critical Strike
 			i(110618),	-- Enchant Ring - Breath of Haste
 			i(110619),	-- Enchant Ring - Breath of Mastery
-			i(110620, {["timeline"]={"added 6.0.2","removed 7.0.3"}}),	-- Enchant Ring - Breath of Multistrike
+			i(110620, {["timeline"]={ADDED_6_0_3_LAUNCH, REMOVED_7_0_3}}),	-- Enchant Ring - Breath of Multistrike
 			i(110621),	-- Enchant Ring - Breath of Versatility
 			i(110638),	-- Enchant Ring - Gift of Critical Strike
 			i(110639),	-- Enchant Ring - Gift of Haste
 			i(110640),	-- Enchant Ring - Gift of Mastery
-			i(110641, {["timeline"]={"added 6.0.2","removed 7.0.3"}}),	-- Enchant Ring - Gift of Multistrike
+			i(110641, {["timeline"]={ADDED_6_0_3_LAUNCH, REMOVED_7_0_3}}),	-- Enchant Ring - Gift of Multistrike
 			i(110642),	-- Enchant Ring - Gift of Versatility
 		}),
-		cat(352, {	-- Weapon
+		filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
+			i(138795, {	-- Tome of Illusions: Draenor
+				ill(5334),	-- Mark of the Frostwolf
+				ill(5330),	-- Mark of the Thunderlord
+			}),
+		})),
+		filter(MISC, {
+			i(112321),	-- Enchanted Dust
+			i(119293),	-- Secret of Draenor Enchanting
+		}),
+		n(WEAPON_ENCHANTMENTS, {
 			i(112160),	-- Enchant Weapon - Mark of Blackrock
 			i(118015),	-- Enchant Weapon - Mark of Bleeding Hollow
 			i(112115),	-- Enchant Weapon - Mark of Shadowmoon
@@ -425,107 +421,118 @@ root(ROOTS.Craftables, tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDow
 		}),
 	}),
 	prof(LEATHERWORKING, {
-		filter(BAGS, {
+		n(ARMOR, {
+			n(BACK, {
+				-- #IF BEFORE 10.0.5
+				WOD_CRAFTED_ITEM(116175, 128014),	-- Brilliant Burnished Cloak + Burnished Essence
+				WOD_CRAFTED_ITEM(116174, 128014),	-- Nimble Burnished Cloak + Burnished Essence
+				WOD_CRAFTED_ITEM(116171, 128014),	-- Powerful Burnished Cloak + Burnished Essence
+				-- #ELSE
+				WOD_CRAFTED_ITEM_DF_BASE(116175),	-- Brilliant Burnished Cloak
+				WOD_CRAFTED_ITEM_DF_BASE(116174),	-- Nimble Burnished Cloak
+				WOD_CRAFTED_ITEM_DF_BASE(116171),	-- Powerful Burnished Cloak
+				WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116175, 202216),	-- Brilliant Burnished Cloak + Impressive Burnished Essence
+				WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116174, 202216),	-- Nimble Burnished Cloak + Impressive Burnished Essence
+				WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116171, 202216),	-- Powerful Burnished Cloak + Impressive Burnished Essence
+				WOD_CRAFTED_ITEM_DF_REMARKABLE(116175, 202217),	-- Brilliant Burnished Cloak + Remarkable Burnished Essence
+				WOD_CRAFTED_ITEM_DF_REMARKABLE(116174, 202217),	-- Nimble Burnished Cloak + Remarkable Burnished Essence
+				WOD_CRAFTED_ITEM_DF_REMARKABLE(116171, 202217),	-- Powerful Burnished Cloak + Remarkable Burnished Essence
+				-- #ENDIF
+			}),
+			filter(LEATHER, {
+				i(116164),	-- Journeying Helm
+				i(116165),	-- Journeying Robes
+				i(116166),	-- Journeying Slacks
+				-- #IF BEFORE 10.0.5
+				WOD_CRAFTED_ITEM(116182, 128014),	-- Supple Boots + Burnished Essence
+				WOD_CRAFTED_ITEM(116181, 128014),	-- Supple Bracers + Burnished Essence
+				WOD_CRAFTED_ITEM(116179, 128014),	-- Supple Gloves + Burnished Essence
+				WOD_CRAFTED_ITEM(116177, 128014),	-- Supple Helm + Burnished Essence
+				WOD_CRAFTED_ITEM(116178, 128014),	-- Supple Leggings + Burnished Essence
+				WOD_CRAFTED_ITEM(116176, 128014),	-- Supple Shoulderguards + Burnished Essence
+				WOD_CRAFTED_ITEM(116180, 128014),	-- Supple Vest + Burnished Essence
+				WOD_CRAFTED_ITEM(116183, 128014),	-- Supple Waistguard + Burnished Essence
+				-- #ELSE
+				WOD_CRAFTED_ITEM_DF_BASE(116182),	-- Supple Boots
+				WOD_CRAFTED_ITEM_DF_BASE(116181),	-- Supple Bracers
+				WOD_CRAFTED_ITEM_DF_BASE(116179),	-- Supple Gloves
+				WOD_CRAFTED_ITEM_DF_BASE(116177),	-- Supple Helm
+				WOD_CRAFTED_ITEM_DF_BASE(116178),	-- Supple Leggings
+				WOD_CRAFTED_ITEM_DF_BASE(116176),	-- Supple Shoulderguards
+				WOD_CRAFTED_ITEM_DF_BASE(116180),	-- Supple Vest
+				WOD_CRAFTED_ITEM_DF_BASE(116183),	-- Supple Waistguard
+				WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116182, 202216),	-- Supple Boots + Impressive Burnished Essence
+				WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116181, 202216),	-- Supple Bracers + Impressive Burnished Essence
+				WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116179, 202216),	-- Supple Gloves + Impressive Burnished Essence
+				WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116177, 202216),	-- Supple Helm + Impressive Burnished Essence
+				WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116178, 202216),	-- Supple Leggings + Impressive Burnished Essence
+				WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116176, 202216),	-- Supple Shoulderguards + Impressive Burnished Essence
+				WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116180, 202216),	-- Supple Vest + Impressive Burnished Essence
+				WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116183, 202216),	-- Supple Waistguard + Impressive Burnished Essence
+				WOD_CRAFTED_ITEM_DF_REMARKABLE(116182, 202217),	-- Supple Boots + Remarkable Burnished Essence
+				WOD_CRAFTED_ITEM_DF_REMARKABLE(116181, 202217),	-- Supple Bracers + Remarkable Burnished Essence
+				WOD_CRAFTED_ITEM_DF_REMARKABLE(116179, 202217),	-- Supple Gloves + Remarkable Burnished Essence
+				WOD_CRAFTED_ITEM_DF_REMARKABLE(116177, 202217),	-- Supple Helm + Remarkable Burnished Essence
+				WOD_CRAFTED_ITEM_DF_REMARKABLE(116178, 202217),	-- Supple Leggings + Remarkable Burnished Essence
+				WOD_CRAFTED_ITEM_DF_REMARKABLE(116176, 202217),	-- Supple Shoulderguards + Remarkable Burnished Essence
+				WOD_CRAFTED_ITEM_DF_REMARKABLE(116180, 202217),	-- Supple Vest + Remarkable Burnished Essence
+				WOD_CRAFTED_ITEM_DF_REMARKABLE(116183, 202217),	-- Supple Waistguard + Remarkable Burnished Essence
+				-- #ENDIF
+			}),
+			filter(MAIL, {
+				i(116167),	-- Traveling Helm
+				i(116169),	-- Traveling Leggings
+				i(116168),	-- Traveling Tunic
+				-- #IF BEFORE 10.0.5
+				WOD_CRAFTED_ITEM(116194, 128014),	-- Wayfaring Belt + Burnished Essence
+				WOD_CRAFTED_ITEM(116193, 128014),	-- Wayfaring Boots + Burnished Essence
+				WOD_CRAFTED_ITEM(116192, 128014),	-- Wayfaring Bracers + Burnished Essence
+				WOD_CRAFTED_ITEM(116190, 128014),	-- Wayfaring Gloves + Burnished Essence
+				WOD_CRAFTED_ITEM(116188, 128014),	-- Wayfaring Helm + Burnished Essence
+				WOD_CRAFTED_ITEM(116189, 128014),	-- Wayfaring Leggings + Burnished Essence
+				WOD_CRAFTED_ITEM(116187, 128014),	-- Wayfaring Shoulderguards + Burnished Essence
+				WOD_CRAFTED_ITEM(116191, 128014),	-- Wayfaring Tunic + Burnished Essence
+				-- #ELSE
+				WOD_CRAFTED_ITEM_DF_BASE(116194),	-- Wayfaring Belt
+				WOD_CRAFTED_ITEM_DF_BASE(116193),	-- Wayfaring Boots
+				WOD_CRAFTED_ITEM_DF_BASE(116192),	-- Wayfaring Bracers
+				WOD_CRAFTED_ITEM_DF_BASE(116190),	-- Wayfaring Gloves
+				WOD_CRAFTED_ITEM_DF_BASE(116188),	-- Wayfaring Helm
+				WOD_CRAFTED_ITEM_DF_BASE(116189),	-- Wayfaring Leggings
+				WOD_CRAFTED_ITEM_DF_BASE(116187),	-- Wayfaring Shoulderguards
+				WOD_CRAFTED_ITEM_DF_BASE(116191),	-- Wayfaring Tunic
+				WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116194, 202216),	-- Wayfaring Belt + Impressive Burnished Essence
+				WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116193, 202216),	-- Wayfaring Boots + Impressive Burnished Essence
+				WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116192, 202216),	-- Wayfaring Bracers + Impressive Burnished Essence
+				WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116190, 202216),	-- Wayfaring Gloves + Impressive Burnished Essence
+				WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116188, 202216),	-- Wayfaring Helm + Impressive Burnished Essence
+				WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116189, 202216),	-- Wayfaring Leggings + Impressive Burnished Essence
+				WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116187, 202216),	-- Wayfaring Shoulderguards + Impressive Burnished Essence
+				WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116191, 202216),	-- Wayfaring Tunic + Impressive Burnished Essence
+				WOD_CRAFTED_ITEM_DF_REMARKABLE(116194, 202217),	-- Wayfaring Belt + Remarkable Burnished Essence
+				WOD_CRAFTED_ITEM_DF_REMARKABLE(116193, 202217),	-- Wayfaring Boots + Remarkable Burnished Essence
+				WOD_CRAFTED_ITEM_DF_REMARKABLE(116192, 202217),	-- Wayfaring Bracers + Remarkable Burnished Essence
+				WOD_CRAFTED_ITEM_DF_REMARKABLE(116190, 202217),	-- Wayfaring Gloves + Remarkable Burnished Essence
+				WOD_CRAFTED_ITEM_DF_REMARKABLE(116188, 202217),	-- Wayfaring Helm + Remarkable Burnished Essence
+				WOD_CRAFTED_ITEM_DF_REMARKABLE(116189, 202217),	-- Wayfaring Leggings + Remarkable Burnished Essence
+				WOD_CRAFTED_ITEM_DF_REMARKABLE(116187, 202217),	-- Wayfaring Shoulderguards + Remarkable Burnished Essence
+				WOD_CRAFTED_ITEM_DF_REMARKABLE(116191, 202217),	-- Wayfaring Tunic + Remarkable Burnished Essence
+				-- #ENDIF
+			}),
+		}),
+		filter(MISC, {
+			i(128014, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_10_0_5}}),	-- Burnished Essence
 			i(116261),	-- Burnished Inscription Bag
+			i(110611),	-- Burnished Leather
 			i(116259),	-- Burnished Leather Bag
 			i(116260),	-- Burnished Mining Bag
-		}),
-		n(BACK, {
-			-- #IF BEFORE 10.0.5
-			WOD_CRAFTED_ITEM(116175, 128014),	-- Brilliant Burnished Cloak + Burnished Essence
-			WOD_CRAFTED_ITEM(116174, 128014),	-- Nimble Burnished Cloak + Burnished Essence
-			WOD_CRAFTED_ITEM(116171, 128014),	-- Powerful Burnished Cloak + Burnished Essence
-			-- #ELSE
-			WOD_CRAFTED_ITEM_DF_BASE(116175),	-- Brilliant Burnished Cloak
-			WOD_CRAFTED_ITEM_DF_BASE(116174),	-- Nimble Burnished Cloak
-			WOD_CRAFTED_ITEM_DF_BASE(116171),	-- Powerful Burnished Cloak
-			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116175, 202216),	-- Brilliant Burnished Cloak + Impressive Burnished Essence
-			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116174, 202216),	-- Nimble Burnished Cloak + Impressive Burnished Essence
-			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116171, 202216),	-- Powerful Burnished Cloak + Impressive Burnished Essence
-			WOD_CRAFTED_ITEM_DF_REMARKABLE(116175, 202217),	-- Brilliant Burnished Cloak + Remarkable Burnished Essence
-			WOD_CRAFTED_ITEM_DF_REMARKABLE(116174, 202217),	-- Nimble Burnished Cloak + Remarkable Burnished Essence
-			WOD_CRAFTED_ITEM_DF_REMARKABLE(116171, 202217),	-- Powerful Burnished Cloak + Remarkable Burnished Essence
-			-- #ENDIF
-		}),
-		filter(LEATHER, {
-			i(116164),	-- Journeying Helm
-			i(116165),	-- Journeying Robes
-			i(116166),	-- Journeying Slacks
-			-- #IF BEFORE 10.0.5
-			WOD_CRAFTED_ITEM(116182, 128014),	-- Supple Boots + Burnished Essence
-			WOD_CRAFTED_ITEM(116181, 128014),	-- Supple Bracers + Burnished Essence
-			WOD_CRAFTED_ITEM(116179, 128014),	-- Supple Gloves + Burnished Essence
-			WOD_CRAFTED_ITEM(116177, 128014),	-- Supple Helm + Burnished Essence
-			WOD_CRAFTED_ITEM(116178, 128014),	-- Supple Leggings + Burnished Essence
-			WOD_CRAFTED_ITEM(116176, 128014),	-- Supple Shoulderguards + Burnished Essence
-			WOD_CRAFTED_ITEM(116180, 128014),	-- Supple Vest + Burnished Essence
-			WOD_CRAFTED_ITEM(116183, 128014),	-- Supple Waistguard + Burnished Essence
-			-- #ELSE
-			WOD_CRAFTED_ITEM_DF_BASE(116182),	-- Supple Boots
-			WOD_CRAFTED_ITEM_DF_BASE(116181),	-- Supple Bracers
-			WOD_CRAFTED_ITEM_DF_BASE(116179),	-- Supple Gloves
-			WOD_CRAFTED_ITEM_DF_BASE(116177),	-- Supple Helm
-			WOD_CRAFTED_ITEM_DF_BASE(116178),	-- Supple Leggings
-			WOD_CRAFTED_ITEM_DF_BASE(116176),	-- Supple Shoulderguards
-			WOD_CRAFTED_ITEM_DF_BASE(116180),	-- Supple Vest
-			WOD_CRAFTED_ITEM_DF_BASE(116183),	-- Supple Waistguard
-			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116182, 202216),	-- Supple Boots + Impressive Burnished Essence
-			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116181, 202216),	-- Supple Bracers + Impressive Burnished Essence
-			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116179, 202216),	-- Supple Gloves + Impressive Burnished Essence
-			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116177, 202216),	-- Supple Helm + Impressive Burnished Essence
-			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116178, 202216),	-- Supple Leggings + Impressive Burnished Essence
-			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116176, 202216),	-- Supple Shoulderguards + Impressive Burnished Essence
-			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116180, 202216),	-- Supple Vest + Impressive Burnished Essence
-			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116183, 202216),	-- Supple Waistguard + Impressive Burnished Essence
-			WOD_CRAFTED_ITEM_DF_REMARKABLE(116182, 202217),	-- Supple Boots + Remarkable Burnished Essence
-			WOD_CRAFTED_ITEM_DF_REMARKABLE(116181, 202217),	-- Supple Bracers + Remarkable Burnished Essence
-			WOD_CRAFTED_ITEM_DF_REMARKABLE(116179, 202217),	-- Supple Gloves + Remarkable Burnished Essence
-			WOD_CRAFTED_ITEM_DF_REMARKABLE(116177, 202217),	-- Supple Helm + Remarkable Burnished Essence
-			WOD_CRAFTED_ITEM_DF_REMARKABLE(116178, 202217),	-- Supple Leggings + Remarkable Burnished Essence
-			WOD_CRAFTED_ITEM_DF_REMARKABLE(116176, 202217),	-- Supple Shoulderguards + Remarkable Burnished Essence
-			WOD_CRAFTED_ITEM_DF_REMARKABLE(116180, 202217),	-- Supple Vest + Remarkable Burnished Essence
-			WOD_CRAFTED_ITEM_DF_REMARKABLE(116183, 202217),	-- Supple Waistguard + Remarkable Burnished Essence
-			-- #ENDIF
-		}),
-		filter(MAIL, {
-			i(116167),	-- Traveling Helm
-			i(116169),	-- Traveling Leggings
-			i(116168),	-- Traveling Tunic
-			-- #IF BEFORE 10.0.5
-			WOD_CRAFTED_ITEM(116194, 128014),	-- Wayfaring Belt + Burnished Essence
-			WOD_CRAFTED_ITEM(116193, 128014),	-- Wayfaring Boots + Burnished Essence
-			WOD_CRAFTED_ITEM(116192, 128014),	-- Wayfaring Bracers + Burnished Essence
-			WOD_CRAFTED_ITEM(116190, 128014),	-- Wayfaring Gloves + Burnished Essence
-			WOD_CRAFTED_ITEM(116188, 128014),	-- Wayfaring Helm + Burnished Essence
-			WOD_CRAFTED_ITEM(116189, 128014),	-- Wayfaring Leggings + Burnished Essence
-			WOD_CRAFTED_ITEM(116187, 128014),	-- Wayfaring Shoulderguards + Burnished Essence
-			WOD_CRAFTED_ITEM(116191, 128014),	-- Wayfaring Tunic + Burnished Essence
-			-- #ELSE
-			WOD_CRAFTED_ITEM_DF_BASE(116194),	-- Wayfaring Belt
-			WOD_CRAFTED_ITEM_DF_BASE(116193),	-- Wayfaring Boots
-			WOD_CRAFTED_ITEM_DF_BASE(116192),	-- Wayfaring Bracers
-			WOD_CRAFTED_ITEM_DF_BASE(116190),	-- Wayfaring Gloves
-			WOD_CRAFTED_ITEM_DF_BASE(116188),	-- Wayfaring Helm
-			WOD_CRAFTED_ITEM_DF_BASE(116189),	-- Wayfaring Leggings
-			WOD_CRAFTED_ITEM_DF_BASE(116187),	-- Wayfaring Shoulderguards
-			WOD_CRAFTED_ITEM_DF_BASE(116191),	-- Wayfaring Tunic
-			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116194, 202216),	-- Wayfaring Belt + Impressive Burnished Essence
-			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116193, 202216),	-- Wayfaring Boots + Impressive Burnished Essence
-			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116192, 202216),	-- Wayfaring Bracers + Impressive Burnished Essence
-			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116190, 202216),	-- Wayfaring Gloves + Impressive Burnished Essence
-			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116188, 202216),	-- Wayfaring Helm + Impressive Burnished Essence
-			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116189, 202216),	-- Wayfaring Leggings + Impressive Burnished Essence
-			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116187, 202216),	-- Wayfaring Shoulderguards + Impressive Burnished Essence
-			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(116191, 202216),	-- Wayfaring Tunic + Impressive Burnished Essence
-			WOD_CRAFTED_ITEM_DF_REMARKABLE(116194, 202217),	-- Wayfaring Belt + Remarkable Burnished Essence
-			WOD_CRAFTED_ITEM_DF_REMARKABLE(116193, 202217),	-- Wayfaring Boots + Remarkable Burnished Essence
-			WOD_CRAFTED_ITEM_DF_REMARKABLE(116192, 202217),	-- Wayfaring Bracers + Remarkable Burnished Essence
-			WOD_CRAFTED_ITEM_DF_REMARKABLE(116190, 202217),	-- Wayfaring Gloves + Remarkable Burnished Essence
-			WOD_CRAFTED_ITEM_DF_REMARKABLE(116188, 202217),	-- Wayfaring Helm + Remarkable Burnished Essence
-			WOD_CRAFTED_ITEM_DF_REMARKABLE(116189, 202217),	-- Wayfaring Leggings + Remarkable Burnished Essence
-			WOD_CRAFTED_ITEM_DF_REMARKABLE(116187, 202217),	-- Wayfaring Shoulderguards + Remarkable Burnished Essence
-			WOD_CRAFTED_ITEM_DF_REMARKABLE(116191, 202217),	-- Wayfaring Tunic + Remarkable Burnished Essence
-			-- #ENDIF
+			i(120257),	-- Drums of Fury
+			i(202216, {["timeline"] = {ADDED_10_0_5}}),	-- Impressive Burnished Essence
+			i(116170),	-- Leather Refurbishing Kit
+			i(127712, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Mighty Burnished Essence
+			i(202217, {["timeline"] = {ADDED_10_0_5}}),	-- Remarkable Burnished Essence
+			i(127730, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Savage Burnished Essence
+			i(118721),	-- Secret of Draenor Leatherworking
 		}),
 		filter(MOUNTS, {
 			i(108883),	-- Dustmane Direwolf (MOUNT!)
