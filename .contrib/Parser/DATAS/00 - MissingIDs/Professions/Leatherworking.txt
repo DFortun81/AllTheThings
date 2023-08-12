@@ -1,139 +1,8 @@
-0.5.3.3368
-r(2108),	-- Leatherworking
-r(2149),	-- Handstitched Leather Boots
-r(2152),	-- Light Armor Kit
-r(2153),	-- Handstitched Leather Pants
-r(2159),	-- Fine Leather Cloak
-r(2160),	-- Embossed Leather Vest
-r(2161),	-- Embossed Leather Boots
-r(2162),	-- Embossed Leather Cloak
-r(2165),	-- Medium Armor Kit
-r(2166),	-- Toughened Leather Armor
-r(2167),	-- Dark Leather Boots
-r(2168),	-- Dark Leather Cloak
-r(2881),	-- Light Leather
-r(3104),	-- Leatherworking
-r(3753),	-- Handstitched Leather Belt
-r(3756),	-- Embossed Leather Gloves
-r(3759),	-- Embossed Leather Pants
-r(3760),	-- Hillman's Cloak
-r(3761),	-- Fine Leather Tunic
-r(3763),	-- Fine Leather Belt
-r(3764),	-- Hillman's Leather Gloves
-r(3766),	-- Dark Leather Belt
-r(3768),	-- Hillman's Shoulders
-r(3770),	-- Toughened Leather Gloves
-r(3774),	-- Green Leather Belt
-r(3776),	-- Green Leather Bracers
-r(3780),	-- Heavy Armor Kit
-r(3811),	-- Leatherworking
-r(3816),	-- Cured Light Hide
-r(3817),	-- Cured Medium Hide
-r(3818),	-- Cured Heavy Hide
-r(6661),	-- Barbaric Harness
-r(7126),	-- Handstitched Leather Vest
-r(7135),	-- Dark Leather Pants
-r(7147),	-- Guardian Pants
-r(7151),	-- Barbaric Shoulders
-r(7156),	-- Guardian Gloves
-0.6.0.3592
-r(9058),	-- Handstitched Leather Cloak
-r(9059),	-- Handstitched Leather Bracers
-r(9060),	-- Light Leather Quiver
-r(9062),	-- Small Leather Ammo Pouch
-r(9065),	-- Light Leather Bracers
-r(9068),	-- Light Leather Pants
-r(9074),	-- Nimble Leather Gloves
-r(9145),	-- Fletcher's Gloves
-r(9193),	-- Heavy Quiver
-r(9194),	-- Heavy Leather Ammo Pouch
-r(9196),	-- Dusky Leather Armor
-r(9198),	-- Frost Leather Cloak
-r(9201),	-- Dusky Bracers
-r(9206),	-- Dusky Belt
-0.7.0.3694
-r(10482),	-- Cured Thick Hide
-r(10487),	-- Thick Armor Kit
-r(10499),	-- Nightscape Tunic
-r(10507),	-- Nightscape Headband
-r(10511),	-- Turtle Scale Breastplate
-r(10518),	-- Turtle Scale Bracers
-r(10548),	-- Nightscape Pants
-r(10552),	-- Turtle Scale Helm
-r(10556),	-- Turtle Scale Leggings
-r(10558),	-- Nightscape Boots
-r(10619),	-- Dragonscale Gauntlets
-r(10621),	-- Wolfshead Helm
-r(10630),	-- Gauntlets of the Sea
-r(10632),	-- Helm of Fire
-r(10647),	-- Feathered Breastplate
-r(10650),	-- Dragonscale Breastplate
-r(10656),	-- Dragonscale Leatherworking
-r(10658),	-- Elemental Leatherworking
-r(10660),	-- Tribal Leatherworking
-r(10662),	-- Leatherworking
-0.9.0.3807
-r(14930),	-- Quickdraw Quiver
-r(14932),	-- Thick Leather Ammo Pouch
-1.1.2.4125
-r(19047),	-- Cured Rugged Hide
-r(19058),	-- Rugged Armor Kit
-r(20648),	-- Medium Leather
-r(20649),	-- Heavy Leather
-r(20650),	-- Thick Leather
-1.13.0.28211
-r(22331),	-- Rugged Leather
-r(24654),	-- Blue Dragonscale Leggings
-r(24655),	-- Green Dragonscale Gauntlets
-2.0.0.6080
-r(32454),	-- Knothide Leather
-r(32456),	-- Knothide Armor Kit
-r(32462),	-- Felscale Gloves
-r(32463),	-- Felscale Boots
-r(32464),	-- Felscale Pants
-r(32465),	-- Felscale Breastplate
-r(32466),	-- Scaled Draenic Pants
-r(32467),	-- Scaled Draenic Gloves
-r(32468),	-- Scaled Draenic Vest
-r(32469),	-- Scaled Draenic Boots
-r(32470),	-- Thick Draenic Gloves
-r(32471),	-- Thick Draenic Pants
-r(32472),	-- Thick Draenic Boots
-r(32473),	-- Thick Draenic Vest
-r(32478),	-- Wild Draenish Boots
-r(32479),	-- Wild Draenish Gloves
-r(32480),	-- Wild Draenish Leggings
-r(32481),	-- Wild Draenish Vest
-r(32549),	-- Leatherworking
 2.4.3.8606
 r(35522),	-- Frost Armor Kit
 r(35523),	-- Nature Armor Kit
 r(35524),	-- Arcane Armor Kit
-r(35540),	-- Drums of War
-r(35575),	-- Ebon Netherscale Breastplate
-r(35576),	-- Ebon Netherscale Belt
-r(35577),	-- Ebon Netherscale Bracers
-r(35580),	-- Netherstrike Breastplate
-r(35582),	-- Netherstrike Belt
-r(35584),	-- Netherstrike Bracers
-r(35585),	-- Windhawk Hauberk
-r(35587),	-- Windhawk Belt
-r(35588),	-- Windhawk Bracers
-r(35589),	-- Primalstrike Vest
-r(35590),	-- Primalstrike Belt
-r(35591),	-- Primalstrike Bracers
-r(36074),	-- Blackstorm Leggings
-r(36075),	-- Wildfeather Leggings
-r(36076),	-- Dragonstrike Leggings
-r(36077),	-- Primalstorm Breastplate
-r(36078),	-- Living Crystal Breastplate
-r(36079),	-- Golden Dragonstrike Breastplate
 r(40000),	-- Bracers of Shackled Souls
-r(44343),	-- Knothide Ammo Pouch
-r(44344),	-- Knothide Quiver
-r(44770),	-- Glove Reinforcements
-r(44970),	-- Heavy Knothide Armor Kit
-r(45100),	-- Leatherworker's Satchel
 2.5.1.38043
 r(351766),	-- Greater Drums of War
 r(351768),	-- Greater Drums of Speed
@@ -231,11 +100,8 @@ r(69386),	-- Drums of Forgotten Kings
 r(69388),	-- Drums of the Wild
 4.0.1.12911
 r(74493),	-- Savage Leather
-r(78379),	-- Savage Armor Kit
 r(78421),	--
 r(78422),	--
-r(81199),	-- Leatherworking
-r(84950),	-- Savage Leather
 r(85007),	--
 r(85008),	--
 r(85009),	--
@@ -282,65 +148,14 @@ r(196383),	-- Stonehide Leather Vamp
 r(196387),	-- Shaved Felhide
 r(196388),	-- Tanned Fel Leather
 r(196425),	-- Stonehide Boot Base
-r(226105),	-- Light Scale Gloves
-r(226106),	-- Light Scale Bracers
-r(226107),	-- Light Scale Belt
-r(226108),	-- Light Scale Jerkin
-r(226109),	-- Light Scale Boots
-r(226110),	-- Shamanic Treads
-r(226111),	-- Light Scale Pants
-r(226112),	-- Chain Hauberk
-r(226113),	-- Chain Boots
-r(226114),	-- Crackling Scale Breastplate
-r(226115),	-- Blue Chain Leggings
-r(226116),	-- Chain Bracers
-r(226117),	-- Chain Leggings
-r(226118),	-- Chain Gauntlets
-r(226119),	-- Chain Belt
-r(226120),	-- Spritescale Epaulets
-r(226121),	-- Chain Pauldrons
-r(226122),	-- Element Grips
-r(226123),	-- Heavy Scale Gauntlets
-r(226124),	-- Heavy Scale Wraps
-r(226125),	-- Spritescale Britches
-r(226126),	-- Heavy Scale Pants
-r(226127),	-- Spritescale Cinch
-r(226128),	-- Heavy Scale Shirt
-r(226129),	-- Heavy Scale Pauldrons
-r(226130),	-- Spritescale Jerkin
-r(226131),	-- Spritescale Gloves
-r(226132),	-- Heavy Scale Belt
-r(226133),	-- Spritescale Wraps
-r(226134),	-- Heavy Scale Boots
-r(226135),	-- Heavy Scale Hood
-r(226136),	-- Spritescale Circlet
-r(226137),	-- Spritescale Boots
 8.0.1.25902
-r(264577),	-- Leatherworking
-r(264579),	-- Outland Leatherworking
 r(264581),	-- Northrend Leatherworking
-r(264583),	-- Cataclysm Leatherworking
 9.0.1.34199
-r(330180),	-- Relic of the Past I
-r(330181),	-- Relic of the Past II
-r(330183),	-- Relic of the Past III
-r(330184),	-- Relic of the Past IV
-r(330185),	-- Relic of the Past V
-r(330186),	-- Relic of the Past I
-r(330187),	-- Relic of the Past II
-r(330188),	-- Relic of the Past III
-r(330189),	-- Relic of the Past IV
-r(330190),	-- Relic of the Past V
 r(330191),	-- Relic of the Past I
 r(330192),	-- Relic of the Past II
 r(330193),	-- Relic of the Past III
 r(330194),	-- Relic of the Past IV
 r(330195),	-- Relic of the Past V
-r(330196),	-- Relic of the Past I
-r(330197),	-- Relic of the Past II
-r(330198),	-- Relic of the Past III
-r(330199),	-- Relic of the Past IV
-r(330200),	-- Relic of the Past V
 
 
 

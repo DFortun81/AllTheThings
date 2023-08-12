@@ -281,32 +281,32 @@ CATA_LEATHERWORKING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"
 	r(330199, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Cataclysm]
 	r(330200, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Cataclysm]
 	n(ARMOR, {
-		i(0, 78438),	-- Cloak of Beasts
-		i(0, 78439);	-- Cloak of War
-		i(0, 78428);	-- Darkbrand Chestguard
-		i(0, 78416);	-- Darkbrand Belt
-		i(0, 78407);	-- Darkbrand Boots
-		i(0, 78424);	-- Darkbrand Helm
-		i(0, 78433);	-- Darkbrand Leggings
-		i(0, 78411);	-- Darkbrand Shoulders
-		i(0, 78405);	-- Hardened Scale Cloak
-		i(0, 78380);	-- Savage Cloak
-		i(0, 78423);	-- Tsunami Chestguard
-		i(0, 78388);	-- Tsunami Bracers
-		i(0, 78396);	-- Tsunami Belt
-		i(0, 78410);	-- Tsunami Boots
-		i(0, 78406);	-- Tsunami Gloves
-		i(0, 78432);	-- Tsunami Helm
-		i(0, 78427);	-- Tsunami Leggings
-		i(0, 78415);	-- Tsunami Shoulders
+		r(78438),	-- Cloak of Beasts
+		r(78439),	-- Cloak of War
+		r(78428),	-- Darkbrand Chestguard
+		r(78416),	-- Darkbrand Belt
+		r(78407),	-- Darkbrand Boots
+		r(78424),	-- Darkbrand Helm
+		r(78433),	-- Darkbrand Leggings
+		r(78411),	-- Darkbrand Shoulders
+		r(78405),	-- Hardened Scale Cloak
+		r(78380),	-- Savage Cloak
+		r(78423),	-- Tsunami Chestguard
+		r(78388),	-- Tsunami Bracers
+		r(78396),	-- Tsunami Belt
+		r(78410),	-- Tsunami Boots
+		r(78406),	-- Tsunami Gloves
+		r(78432),	-- Tsunami Helm
+		r(78427),	-- Tsunami Leggings
+		r(78415),	-- Tsunami Shoulders
 	}),
 	filter(MISC, {
-		i(0, 78437);	-- Heavy Savage Armor Kit
-		i(0, 78436);	-- Heavy Savage Leather
-		i(0, 78379);	-- Savage Armor Kit
-		i(0, 84950);	-- Savage Leather
-		i(0, 78419);	-- Scorched Leg Armor
-		i(0, 78420);	-- Twilight Leg Armor
+		r(78437),	-- Heavy Savage Armor Kit
+		r(78436),	-- Heavy Savage Leather
+		r(78379),	-- Savage Armor Kit
+		r(84950),	-- Savage Leather
+		r(78419),	-- Scorched Leg Armor
+		r(78420),	-- Twilight Leg Armor
 	}),
 }));
 CLASSIC_CATA_LEATHERWORKING = appendGroups(CLASSIC_LEATHERWORKING,

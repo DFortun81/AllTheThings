@@ -906,10 +906,6 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 		filter(TRINKET_F, {
 			i(25653),	-- Riding Crop
 		}),
-		i(34218, 44768);	-- Netherscale Ammo Pouch [A] [REMOVED: 4.0.1]
-		i(34201, 44768);	-- Netherscale Ammo Pouch [H] [REMOVED: 4.0.1]
-
-
 		category(929, {	-- Bags
 			applyclassicphase(TBC_PHASE_FOUR, i(34099, {	-- Knothide Ammo Pouch
 				["timeline"] = {
