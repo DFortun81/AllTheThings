@@ -612,8 +612,8 @@ settings.NonInsane = function(self)
 		-- TODO: maybe track custom collect filters through a different Get method for easier logic
 		and (not (ccs["SL_COV_KYR"] or self:Get("CC:SL_COV_KYR"))
 			or not (ccs["SL_COV_NEC"] or self:Get("CC:SL_COV_NEC"))
-			or not (ccs["SL_COV_NEC"] or self:Get("CC:SL_COV_NEC"))
-			or not (ccs["SL_COV_NEC"] or self:Get("CC:SL_COV_NEC"))))
+			or not (ccs["SL_COV_NFA"] or self:Get("CC:SL_COV_NFA"))
+			or not (ccs["SL_COV_VEN"] or self:Get("CC:SL_COV_VEN"))))
 end
 settings.GetPersonal = function(self, setting)
 	return AllTheThingsSettingsPerCharacter[setting]
