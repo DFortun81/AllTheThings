@@ -32,10 +32,19 @@ local function Filter() end;
 -- Meaning "Display as expected" - Returns true
 local function NoFilter() return true; end;
 
+local LateSetFilters = {};
+local function SetOnMissingFilter(t,name)
+	-- app.PrintDebug("No Filter on Set",name)
+	local function LateSetFunc(active)
+		-- app.PrintDebug("LateSet Filter",name,active)
+		LateSetFilters[name] = active;
+	end
+	return LateSetFunc
+end
 --- api.Set[FilterName]([true]) or api.Set.FilterName([true])
 -- Function that allows defining whether that specific Filter will be applied
 -- Need metatable since this can be accessed prior to Module-based Filters being defined (i.e. immediate Settings Update)
-api.Set = setmetatable({}, { __index = function(t,key) return Filter end})
+api.Set = setmetatable({}, { __index = SetOnMissingFilter})
 
 --- api.Get[FilterName]() or api.Get.FilterName()
 -- Function that allows checking whether that specific Filter will be applied
@@ -55,6 +64,7 @@ local AccountFilters, CharacterFilters = {}, {}
 -- Helper function to encapsulate simple logic for a 'toggle' filter
 local function DefineToggleFilter(name, filterGroup, filter)
 	-- Filters capture
+	-- app.PrintDebug("DefineFilter",name,filter)
 	api.Filters[name] = filter;
 	-- Set implementation
 	api.Set[name] = function(active)
@@ -63,6 +73,13 @@ local function DefineToggleFilter(name, filterGroup, filter)
 	-- Get implementation
 	api.Get[name] = function()
 		return filterGroup[name] == api.Filters[name];
+	end
+
+	-- Filter Defined after being requested to be Set, so set it immediately
+	if LateSetFilters[name] then
+		LateSetFilters[name] = nil;
+		-- app.PrintDebug("Late Set Filter",name)
+		filterGroup[name] = filter;
 	end
 end
 
@@ -588,6 +605,7 @@ app.RecursiveFirstDirectParentWithField = RecursiveFirstDirectParentWithField;
 
 -- Caching Helpers
 local function CacheSettingsData()
+	CollectibleHeirlooms = app.CollectibleHeirlooms;
 	SettingsUnobtainable = app.Settings:GetRawSettings("Unobtainable");
 	wipe(SettingsFilterIDs)
 	local rawFilters = app.Settings:GetRawFilters();
@@ -617,12 +635,10 @@ api.OnStartup = function(AccountData)
 	ATTAccountWideData = AccountData
 	-- this table is set once in ATT, but contents are volatile
 	ActiveCustomCollects = app.ActiveCustomCollects;
-	CollectibleHeirlooms = app.CollectibleHeirlooms;
 	CacheSettingsData();
 end
 -- Cache filter-related content from Settings here instead of checking in every function call
 api.OnRefreshData_NewSettings = function()
-	CollectibleHeirlooms = app.CollectibleHeirlooms;
 	CacheSettingsData();
 end
 

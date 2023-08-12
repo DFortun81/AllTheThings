@@ -147,7 +147,7 @@ local function UpdateCosts()
 		-- app.PrintDebug("Check Cost Item",itemID)
 		UpdateCostsByItemID(itemID, refresh, refs);
 	end
-	-- app.PrintDebug("UpdateCosts:Items")
+	-- app.PrintDebugPrior("UpdateCosts:Items")
 
 	-- Get all currencyIDAsCost entries
 	for currencyID,refs in pairs(SearchForFieldContainer("currencyIDAsCost")) do
