@@ -1932,30 +1932,30 @@ applyclassicphase(PHASE_SIX,
 										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
 										["requireSkill"] = BLACKSMITHING,
 									}),
-									{
-										["itemID"] = 22698,	-- Pattern: Icy Scale Bracers
+									r(28224, {	-- Icy Scale Bracers (RECIPE!)
 										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
-									},
-									{
-										["itemID"] = 22696,	-- Pattern: Icy Scale Breastplate
-										["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
-									},
-									{
-										["itemID"] = 22697,	-- Pattern: Icy Scale Gauntlets
+										["requireSkill"] = LEATHERWORKING,
+									}),
+									r(28222, {	-- Icy Scale Breastplate (RECIPE!)
+										["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Revered.
+										["requireSkill"] = LEATHERWORKING,
+									}),
+									r(28223, {	-- Icy Scale Gauntlets (RECIPE!)
 										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
-									},
-									{
-										["itemID"] = 22695,	-- Pattern: Polar Bracers
+										["requireSkill"] = LEATHERWORKING,
+									}),
+									r(28221, {	-- Polar Bracers (RECIPE!)
 										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
-									},
-									{
-										["itemID"] = 22694,	-- Pattern: Polar Gloves
+										["requireSkill"] = LEATHERWORKING,
+									}),
+									r(28220, {	-- Polar Gloves (RECIPE!)
 										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
-									},
-									{
-										["itemID"] = 22692,	-- Pattern: Polar Tunic
-										["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
-									},
+										["requireSkill"] = LEATHERWORKING,
+									}),
+									r(28219, {	-- Polar Tunic (RECIPE!)
+										["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Revered.
+										["requireSkill"] = LEATHERWORKING,
+									}),
 								},
 							}),
 							n(16061, {	-- Instructor Razuvious

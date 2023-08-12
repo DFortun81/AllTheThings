@@ -82,6 +82,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			n(PROFESSIONS, {
+				prof(LEATHERWORKING, {
+					n(7868, {	-- Sarah Tanner <Master Elemental Leatherworker>
+						["coord"] = { 63.6, 75.8, SEARING_GORGE },
+						["races"] = ALLIANCE_ONLY,
+						["timeline"] = { REMOVED_4_0_3 },
+						["g"] = CLASSIC_TBC_ELEMENTAL,
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(27962, {	-- A Lumbering Relic
 					["qg"] = 47267,	-- Burrian Coalpart

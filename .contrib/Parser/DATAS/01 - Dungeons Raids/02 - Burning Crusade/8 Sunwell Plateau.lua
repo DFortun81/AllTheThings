@@ -29,48 +29,16 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 				i(35198),	-- Design: Loop of Forged Power
 				i(35201),	-- Design: Pendant of Sunfire
 				i(35199),	-- Design: Ring of Flowing Life
-				i(35218, {	-- Pattern: Carapace of Sun and Shadow (RECIPE!)
-					["spellID"] = 46138,	-- Carapace of Sun and Shadow
-					["requireSkill"] = LEATHERWORKING,
-					["f"] = RECIPES,
-				}),
-				i(35217, {	-- Pattern: Embrace of the Phoenix (RECIPE!)
-					["spellID"] = 46137,	-- Embrace of the Phoenix
-					["requireSkill"] = LEATHERWORKING,
-					["f"] = RECIPES,
-				}),
-				i(35213, {	-- Pattern: Fletcher's Gloves of the Phoenix (RECIPE!)
-					["spellID"] = 46133,	-- Fletcher's Gloves of the Phoenix
-					["requireSkill"] = LEATHERWORKING,
-					["f"] = RECIPES,
-				}),
-				i(35214, {	-- Pattern: Gloves of Immortal Dusk (RECIPE!)
-					["spellID"] = 46134,	-- Gloves of Immortal Dusk
-					["requireSkill"] = LEATHERWORKING,
-					["f"] = RECIPES,
-				}),
+				i(35218),	-- Pattern: Carapace of Sun and Shadow (RECIPE!)
+				i(35217),	-- Pattern: Embrace of the Phoenix (RECIPE!)
+				i(35213),	-- Pattern: Fletcher's Gloves of the Phoenix (RECIPE!)
+				i(35214),	-- Pattern: Gloves of Immortal Dusk (RECIPE!)
 				i(35205),	-- Pattern: Hands of Eternal Light
-				i(35216, {	-- Pattern: Leather Chestguard of the Sun (RECIPE!)
-					["spellID"] = 46136,	-- Leather Chestguard of the Sun
-					["requireSkill"] = LEATHERWORKING,
-					["f"] = RECIPES,
-				}),
-				i(35212, {	-- Pattern: Leather Gauntlets of the Sun (RECIPE!)
-					["spellID"] = 46132,	-- Leather Gauntlets of the Sun
-					["requireSkill"] = LEATHERWORKING,
-					["f"] = RECIPES,
-				}),
+				i(35216),	-- Pattern: Leather Chestguard of the Sun (RECIPE!)
+				i(35212),	-- Pattern: Leather Gauntlets of the Sun (RECIPE!)
 				i(35207),	-- Pattern: Robe of Eternal Light
-				i(35219, {	-- Pattern: Sun-Drenched Scale Chestguard (RECIPE!)
-					["spellID"] = 46139,	-- Sun-Drenched Scalee Chestguard
-					["requireSkill"] = LEATHERWORKING,
-					["f"] = RECIPES,
-				}),
-				i(35215, {	-- Pattern: Sun-Drenched Scale Gloves (RECIPE!)
-					["spellID"] = 46135,	-- Sun-Drenched Scale Gloves
-					["requireSkill"] = LEATHERWORKING,
-					["f"] = RECIPES,
-				}),
+				i(35219),	-- Pattern: Sun-Drenched Scale Chestguard (RECIPE!)
+				i(35215),	-- Pattern: Sun-Drenched Scale Gloves (RECIPE!)
 				i(35204),	-- Pattern: Sunfire Handwraps
 				i(35206),	-- Pattern: Sunfire Robe
 				i(35209),	-- Plans: Hard Khorium Battlefists (RECIPE!)

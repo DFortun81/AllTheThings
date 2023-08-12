@@ -135,6 +135,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			n(PROFESSIONS, {
+				prof(LEATHERWORKING, {
+					n(7869, {	-- Brumn Winterhoof <Master Elemental Leatherworker>
+						["coord"] = { 28.2, 45.0, ARATHI_HIGHLANDS },
+						["races"] = HORDE_ONLY,
+						["g"] = CLASSIC_TBC_ELEMENTAL,
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(26081, {	-- Alina's Reward
 					["qg"] = 41944,	-- Galen Trollbane

@@ -2421,7 +2421,7 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_TWO, i(35370)),	-- Opportunist's Leather Tunic
 							i(30833),	-- Pattern: Cloak of Arcane Evasion
 							applyclassicphase(TBC_PHASE_THREE, i(34200, {	-- Pattern: Quiver of a Thousand Feathers (RECIPE!)
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { ADDED_2_3_0, REMOVED_4_0_1 },
 							})),
 							i(22910),	-- Recipe: Elixir of Major Shadow Power
 							i(31357, {	-- Recipe: Flask of Chromatic Resistance (RECIPE!)

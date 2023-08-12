@@ -415,6 +415,17 @@ root(ROOTS.Zones, {
 						},
 						["groups"] = TBC_HERBALISM,
 					}),
+					prof(LEATHERWORKING, {
+						["crs"] = {
+							18771,	-- Brumman <Leatherworking Trainer> (A)
+							18754,	-- Barim Spilthoof <Leatherworking Trainer> (H)
+						},
+						["coords"] = {
+							{ 54.0, 64.0, HELLFIRE_PENINSULA },
+							{ 56.2, 38.6, HELLFIRE_PENINSULA },
+						},
+						["groups"] = TBC_LEATHERWORKING,
+					}),
 				}),
 				n(QUESTS, {
 					q(10864, {	-- A Burden of Souls
@@ -3190,28 +3201,13 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_TWO, i(35470)),	-- Kodohide Spaulders
 							applyclassicphase(TBC_PHASE_TWO, i(35467)),	-- Mooncloth Vestments
 							applyclassicphase(TBC_PHASE_TWO, i(35468)),	-- Opportunist's Leather Gloves
-							i(29719, {	-- Pattern: Cobrahide Leg Armor (A) (RECIPE!)
-								["spellID"] = 35549,	-- Cobrahide Leg Armor
-								["requireSkill"] = LEATHERWORKING,
-							}),
-							i(29213, {	-- Pattern: Felstalker Belt
-								["spellID"] = 32498,	-- Felstalker Belt
-								["requireSkill"] = LEATHERWORKING,
-							}),
-							i(29214, {	-- Pattern: Felstalker Bracers
-								["spellID"] = 32499,	-- Felstalker Bracers
-								["requireSkill"] = LEATHERWORKING,
-							}),
-							i(29215, {	-- Pattern: Felstalker Breastplate
-								["spellID"] = 32500,	-- Felstalker Breastplate
-								["requireSkill"] = LEATHERWORKING,
-							}),
-							i(29722, {	-- Pattern: Nethercobra Leg Armor (A) (RECIPE!)
-								["spellID"] = 35554,	-- Nethercobra Leg Armor
-								["requireSkill"] = LEATHERWORKING,
-							}),
-							applyclassicphase(TBC_PHASE_THREE, i(34218, {	-- Pattern: Netherscale Ammo Pouch (A) (RECIPE!)
-								["timeline"] = { "removed 4.0.1" },
+							i(29719),	-- Pattern: Cobrahide Leg Armor [A] (RECIPE!)
+							i(29213),	-- Pattern: Felstalker Belt [A] (RECIPE!)
+							i(29214),	-- Pattern: Felstalker Bracers [A] (RECIPE!)
+							i(29215),	-- Pattern: Felstalker Breastplate [A] (RECIPE!)
+							i(29722),	-- Pattern: Nethercobra Leg Armor [A] (RECIPE!)
+							applyclassicphase(TBC_PHASE_THREE, i(34218, {	-- Pattern: Netherscale Ammo Pouch [A] (RECIPE!)
+								["timeline"] = { ADDED_2_3_0, REMOVED_4_0_1 },
 							})),
 							i(23619),	-- Plans: Felsteel Shield Spike (RECIPE!)
 							i(22905),	-- Recipe: Elixir of Major Agility
@@ -3302,28 +3298,13 @@ root(ROOTS.Zones, {
 							i(29152),	-- Marksman's Bow
 							applyclassicphase(TBC_PHASE_TWO, i(35337)),	-- Mooncloth Vestments
 							applyclassicphase(TBC_PHASE_TWO, i(35366)),	-- Opportunist's Leather Gloves
-							i(31361, {	-- Pattern: Cobrahide Leg Armor (H) (RECIPE!)
-								["spellID"] = 35549,	-- Cobrahide Leg Armor
-								["requireSkill"] = LEATHERWORKING,
-							}),
-							i(25738, {	-- Pattern: Felstalker Belt
-								["spellID"] = 32498,	-- Felstalker Belt
-								["requireSkill"] = LEATHERWORKING,
-							}),
-							i(25739, {	-- Pattern: Felstalker Bracers
-								["spellID"] = 32499,	-- Felstalker Bracers
-								["requireSkill"] = LEATHERWORKING,
-							}),
-							i(25740, {	-- Pattern: Felstalker Breastplate
-								["spellID"] = 32500,	-- Felstalker Breastplate
-								["requireSkill"] = LEATHERWORKING,
-							}),
-							i(31362, {	-- Pattern: Nethercobra Leg Armor (H) (RECIPE!)
-								["spellID"] = 35554,	-- Nethercobra Leg Armor
-								["requireSkill"] = LEATHERWORKING,
-							}),
-							applyclassicphase(TBC_PHASE_THREE, i(34201, {	-- Pattern: Netherscale Ammo Pouch (H) (RECIPE!)
-								["timeline"] = { "removed 4.0.1" },
+							i(31361),	-- Pattern: Cobrahide Leg Armor [H] (RECIPE!)
+							i(25738),	-- Pattern: Felstalker Belt [H] (RECIPE!)
+							i(25739),	-- Pattern: Felstalker Bracers [H] (RECIPE!)
+							i(25740),	-- Pattern: Felstalker Breastplate [H] (RECIPE!)
+							i(31362),	-- Pattern: Nethercobra Leg Armor [H] (RECIPE!)
+							applyclassicphase(TBC_PHASE_THREE, i(34201, {	-- Pattern: Netherscale Ammo Pouch [H] (RECIPE!)
+								["timeline"] = { ADDED_2_3_0, REMOVED_4_0_1 },
 							})),
 							i(24002),	-- Plans: Felsteel Shield Spike (RECIPE!)
 							i(24001),	-- Recipe: Elixir of Major Agility

@@ -593,14 +593,14 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "deleted 4.0.3" },
 					["cr"] = 5259,	-- Atal'ai Witch Doctor
 				}),
-				i(78346, {	-- Pattern: Green Dragonscale Breastplate (New Version)
-					["timeline"] = { "added 4.3.0" },
+				i(78346, {	-- Pattern: Green Dragonscale Breastplate (New Version) (RECIPE!)
+					["timeline"] = { ADDED_4_3_0 },
 				}),
 				i(15733, {	-- Pattern: Green Dragonscale Leggings (Old Version) (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
-				i(78345, {	-- Pattern: Green Dragonscale Leggings (New Version)
-					["timeline"] = { "added 4.3.0.15005" },
+				i(78345, {	-- Pattern: Green Dragonscale Leggings (New Version) (RECIPE!)
+					["timeline"] = { ADDED_4_3_0 },
 				}),
 				i(10627),	-- Bludgeon of the Grinning Dog
 				i(10628),	-- Deathblow

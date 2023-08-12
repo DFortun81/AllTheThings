@@ -134,7 +134,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				i(29672, {	-- Pattern: Flame Armor Kit (RECIPE!)
 					["cr"] = 20898,	-- Gargantuan Abyssal
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 				}),
 				i(23606, {	-- Plans: Felsteel Leggings
 					["cr"] = 20900,	-- Unchained Doombringer

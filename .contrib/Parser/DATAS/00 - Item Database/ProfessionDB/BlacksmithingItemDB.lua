@@ -204,10 +204,10 @@ i(12692, 16651);	-- Thorium Shield Spike
 i(12828, 16984);	-- Volcanic Hammer (Unknown)
 i(8029, 9997);		-- Wicked Mithril Blade
 --- ARMORSMITH ---
-i(0, 9788);			-- Armorsmith [REMOVED: 4.0.3]
+i(0, 9788, nil, ARMORSMITH);		-- Armorsmith [REMOVED: 4.0.3]
 -- #if BEFORE TBC
-i(0, 9974, nil, ARMORSMITH);	-- Truesilver Breastplate
-i(0, 9954, nil, ARMORSMITH);	-- Truesilver Gauntlets
+i(0, 9974, nil, ARMORSMITH);		-- Truesilver Breastplate
+i(0, 9954, nil, ARMORSMITH);		-- Truesilver Gauntlets
 i(20040, 24399, nil, ARMORSMITH);	-- Dark Iron Boots
 i(17051, 20874, nil, ARMORSMITH);	-- Dark Iron Bracers
 i(19207, 23637, nil, ARMORSMITH);	-- Dark Iron Gauntlets
@@ -255,10 +255,10 @@ i(12711, 16724);	-- Whitesoul Helm
 i(12691, 16650);	-- Wildthorn Mail
 -- #endif
 --- WEAPONSMITH ---
-i(0, 9787);			-- Weaponsmith [REMOVED: 4.0.3]
+i(0, 9787, nil, WEAPONSMITH);		-- Weaponsmith [REMOVED: 4.0.3]
 -- #if BEFORE TBC
-i(0, 10003, nil, WEAPONSMITH);	-- The Shatterer [REMOVED: 4.0.3]
-i(0, 10015, nil, WEAPONSMITH);	-- Truesilver Champion [REMOVED: 4.0.3]
+i(0, 10003, nil, WEAPONSMITH);		-- The Shatterer [REMOVED: 4.0.3]
+i(0, 10015, nil, WEAPONSMITH);		-- Truesilver Champion [REMOVED: 4.0.3]
 i(19208, 23638, nil, WEAPONSMITH);	-- Black Amnesty
 i(19209, 23639, nil, WEAPONSMITH);	-- Blackfury
 i(142337, 10011, nil, WEAPONSMITH);	-- Blight
@@ -278,7 +278,7 @@ i(12839, 16995);	-- Heartseeker
 i(74274, 10007);	-- Phantom Blade
 -- #endif
 --- AXESMITH ---
-i(0, 17041);		-- Master Axesmith [REMOVED: 4.0.3]
+i(0, 17041, nil, MASTER_AXESMITH);		-- Master Axesmith [REMOVED: 4.0.3]
 -- #if BEFORE TBC
 i(12835, 16991, nil, MASTER_AXESMITH);	-- Annihilator
 i(12838, 16994, nil, MASTER_AXESMITH);	-- Arcanite Reaper
@@ -293,7 +293,7 @@ i(12821, 16970);	-- Dawn's Edge [CLASSIC-CATA]
 i(19212, 23653);	-- Nightfall
 -- #endif
 --- HAMMERSMITH ---
-i(0, 17040);		-- Master Hammersmith [REMOVED: 4.0.3]
+i(0, 17040, nil, MASTER_HAMMERSMITH);		-- Master Hammersmith [REMOVED: 4.0.3]
 -- #if BEFORE TBC
 i(19210, 23650, nil, MASTER_HAMMERSMITH);	-- Ebon Hand
 i(12824, 16973, nil, MASTER_HAMMERSMITH);	-- Enchanted Battlehammer [REMOVED: 4.0.3]
@@ -310,7 +310,7 @@ i(22390, 27830);	-- Persuader
 i(12827, 16983);	-- Serenity
 -- #endif
 --- SWORDSMITH ---
-i(0, 17039);		-- Master Swordsmith
+i(0, 17039, nil, MASTER_SWORDSMITH);		-- Master Swordsmith
 -- #if BEFORE TBC
 i(12834, 16990, nil, MASTER_SWORDSMITH);	-- Arcanite Champion
 i(19211, 23652, nil, MASTER_SWORDSMITH);	-- Blackguard

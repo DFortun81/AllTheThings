@@ -265,6 +265,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			n(PROFESSIONS, {
+				prof(BLACKSMITHING, {
+					n(2836, {	-- Brikk Keencraft <Master Blacksmith>
+						["coord"] = { 29.0, 75.4, STRANGLETHORN_VALE },
+						-- #if BEFORE 2.1.0
+						["g"] = ARTISAN_BLACKSMITHING,
+						-- #endif
+					}),
+				}),
+				prof(LEATHERWORKING, {
+					n(7871, {	-- Se'Jib <Master Tribal Leatherworker>
+						["coord"] = { 36.6, 34.2, STRANGLETHORN_VALE },
+						["races"] = HORDE_ONLY,
+						["g"] = CLASSIC_TBC_TRIBAL,
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(610, {	-- "Pretty Boy" Duncan
 					["qg"] = 2542,	-- Catelyn the Blade
@@ -2456,13 +2473,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2846,	-- Pattern: Thick Murloc Armor (RECIPE!)
 						5788,	-- Pattern: Murloc Scale Bracers (RECIPE!)
 					}},
-				}),
-				n(2836, {	-- Brikk Keencraft <Master Blacksmith>
-					["coord"] = { 29.0, 75.4, STRANGLETHORN_VALE },
-					-- #if BEFORE 2.1.0
-					["requireSkill"] = BLACKSMITHING,
-					["g"] = ARTISAN_BLACKSMITHING,
-					-- #endif
 				}),
 				n(734, {	-- Corporal Bluth <Camp Trader>
 					-- #if AFTER CATA

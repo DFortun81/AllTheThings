@@ -2765,12 +2765,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(44582, {	-- Theresa Denman <Jewelcrafting Trainer>
 						["coord"] = { 63.6, 61.6, STORMWIND_CITY },
 						["timeline"] = { "added 4.0.1.12984" },
-						["races"] = HORDE_ONLY,
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							r(404740, {	-- Cataclysm Crushing
 								["timeline"] = { ADDED_10_0_7 },
 							}),
 						},
+					}),
+				}),
+				prof(LEATHERWORKING, {
+					n(5564, {	-- Simon Tanner <Expert Leatherworker>
+						["coords"] = {
+							-- #if BEFORE CATA
+							{ 67.2, 49.6, STORMWIND_CITY },
+							-- #else
+							{ 71.8, 62.8, STORMWIND_CITY },
+							-- #endif
+						},
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = CLASSIC_CATA_LEGION_LEATHERWORKING,
 					}),
 				}),
 			}),

@@ -1697,6 +1697,7 @@ root(ROOTS.Zones, {
 							22148,    -- Gordunni Head-Splitter
 							23022,    -- Gordunni Soulreaper
 						},
+						["timeline"] = { ADDED_2_3_0 },
 					}),
 					applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR, i(34255, {	-- Razorthorn Flayer Gland
 						["cr"] = 24920,	-- Razorthorn Flayer

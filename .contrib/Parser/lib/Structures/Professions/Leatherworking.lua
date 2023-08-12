@@ -2,9 +2,8 @@
 -- LEATHERWORKING --
 --------------------
 local SECRET_OF_DRAENOR_LEATHERWORKING = 118721;
---Leaving section as a comment as it may be totally wrong - NamexFace
---[[
-	APPRENTICE_JOURNEYMAN_LEATHERWORKING = {
+local HEAVY_SAVAGE_LEATHER = 56516;
+APPRENTICE_JOURNEYMAN_LEATHERWORKING = {
 	r(2108,	{	-- Leatherworking (Apprentice)
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
@@ -12,18 +11,25 @@ local SECRET_OF_DRAENOR_LEATHERWORKING = 118721;
 		["rank"] = 1,
 	}),
 	r(3104,	{	-- Leatherworking (Journeyman)
-		["timeline"] = { "removed 8.0.1"},
+		["timeline"] = { REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
 		-- #endif
 		["rank"] = 2,
 	}),
-	applyclassicphase(BFA_PHASE_ONE, r(264577, {["timeline"] = {"added 8.0.1"}})),	-- Leatherworking
+	applyclassicphase(BFA_PHASE_ONE, r(264577, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Leatherworking
+	r(330180, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [CLASSIC]
+	r(330181, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [CLASSIC]
+	r(330183, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [CLASSIC]
+	r(330184, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [CLASSIC]
+	r(330185, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [CLASSIC]
 	n(ARMOR, {
+		r(36074, {["timeline"] = {ADDED_4_0_3}}),	-- Blackstorm Leggings
 		r(3766),	-- Dark Leather Belt
 		r(2167),	-- Dark Leather Boots
 		r(2168),	-- Dark Leather Cloak
 		r(7135),	-- Dark Leather Pants
+		r(36076, {["timeline"] = {ADDED_4_0_3}}),	-- Dragonstrike Leggings
 		r(2161),	-- Embossed Leather Boots
 		r(2162),	-- Embossed Leather Cloak
 		r(3756),	-- Embossed Leather Gloves
@@ -39,33 +45,53 @@ local SECRET_OF_DRAENOR_LEATHERWORKING = 118721;
 		r(9058),	-- Handstitched Leather Cloak
 		r(2153),	-- Handstitched Leather Pants
 		r(7126),	-- Handstitched Leather Vest
+		r(3760),	-- Hillman's Cloak
 		r(3764),	-- Hillman's Leather Gloves
 		r(3768),	-- Hillman's Shoulders
 		r(9065),	-- Light Leather Bracers
 		r(9068),	-- Light Leather Pants
 		r(9074),	-- Nimble Leather Gloves
+		r(19102, {["timeline"] = {ADDED_2_1_0}}),	-- Runic Leather Armor
+		r(19072, {["timeline"] = {ADDED_2_1_0}}),	-- Runic Leather Belt
+		r(19065, {["timeline"] = {ADDED_2_1_0}}), 	-- Runic Leather Bracers
+		r(19055, {["timeline"] = {ADDED_2_1_0}}),	-- Runic Leather Gauntlets
+		r(19082, {["timeline"] = {ADDED_2_1_0}}),	-- Runic Leather Headband
+		r(19091, {["timeline"] = {ADDED_2_1_0}}),	-- Runic Leather Pants
+		r(19103, {["timeline"] = {ADDED_2_1_0}}),	-- Runic Leather Shoulders
 		r(2166),	-- Toughened Leather Armor
 		r(3770),	-- Toughened Leather Gloves
+		r(19098, {["timeline"] = {ADDED_2_1_0}}),	-- Wicked Leather Armor
+		r(19092, {["timeline"] = {ADDED_2_1_0}}),	-- Wicked Leather Belt
+		r(19052, {["timeline"] = {ADDED_2_1_0}}),	-- Wicked Leather Bracers
+		r(19071, {["timeline"] = {ADDED_2_1_0}}),	-- Wicked Leather Headband
+		r(19083, {["timeline"] = {ADDED_2_1_0}}),	-- Wicked Leather Pants
+		r(36075, {["timeline"] = {ADDED_4_0_3}}),	-- Wildfeather Leggings
 	}),
 	n(MISC, {
 		r(3816),	-- Cured Light Hide
 		r(3817),	-- Cured Medium Hide
+		r(3780),	-- Heavy Armor Kit
+		r(20649),	-- Heavy Leather
+		r(9194, {["timeline"] = {REMOVED_4_0_1}}),	-- Heavy Leather Ammo Pouch
+		r(9193, {["timeline"] = {REMOVED_4_0_1}}),	-- Heavy Quiver
 		r(2152),	-- Light Armor Kit
 		r(2881),	-- Light Leather
+		r(9060, {["timeline"] = {REMOVED_4_0_1}}),	-- Light Leather Quiver
 		r(2165),	-- Medium Armor Kit
 		r(20648),	-- Medium Leather
+		r(9062, {["timeline"] = {REMOVED_4_0_1}}),	-- Small Leather Ammo Pouch
 	}),
 };
 EXPERT_ARTISAN_LEATHERWORKING = {
 	r(3811,	{	-- Leatherworking (Expert)
-		["timeline"] = { "removed 8.0.1"},
+		["timeline"] = { REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
 		-- #endif
 		["rank"] = 3,
 	}),
-	r(10662,	{	-- Leatherworking (Artisan)
-		["timeline"] = { "removed 8.0.1"},
+	r(10662, {	-- Leatherworking (Artisan)
+		["timeline"] = { REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
 		-- #endif
@@ -75,324 +101,361 @@ EXPERT_ARTISAN_LEATHERWORKING = {
 		r(6661),	-- Barbaric Harness
 		r(7151),	-- Barbaric Shoulders
 		r(24654),	-- Blue Dragonscale Leggings
-		r(10650),	-- Dragonscale Breastplate
-		r(10619),	-- Dragonscale Gauntlets
-		r(10656, {["timeline"] = { "removed 4.0.3"}}),	-- Dragonscale Leatherworking
 		r(9206),	-- Dusky Belt
 		r(9201),	-- Dusky Bracers
 		r(9196),	-- Dusky Leather Armor
-		r(10658, {["timeline"] = { "removed 4.0.3"}}),	-- Elemental Leatherworking
-		r(10647),	-- Feathered Breastplate
 		r(9198),	-- Frost Leather Cloak
-		r(10630),	-- Gauntlets of the Sea
-		r(24655),	-- Green Dragonscale Gauntlets
 		r(3774),	-- Green Leather Belt
 		r(3776),	-- Green Leather Bracers
 		r(7156),	-- Guardian Gloves
 		r(7147),	-- Guardian Pants
-		r(10632),	-- Helm of Fire
-		r(3760),	-- Hillman's Cloak
 		r(10558),	-- Nightscape Boots
 		r(10507),	-- Nightscape Headband
 		r(10548),	-- Nightscape Pants
 		r(10499),	-- Nightscape Tunic
-		r(19065),	-- Runic Leather Bracers
-		r(10660, {["timeline"] = { "removed 4.0.3"}}),	-- Tribal Leatherworking
 		r(10518),	-- Turtle Scale Bracers
 		r(10511),	-- Turtle Scale Breastplate
 		r(10552),	-- Turtle Scale Helm
 		r(10556),	-- Turtle Scale Leggings
-		r(10621),	-- Wolfshead Helm
+		-- #if AFTER TBC
+		r(10650),	-- Dragonscale Breastplate
+		r(10619),	-- Dragonscale Gauntlets
+		r(10647),	-- Feathered Breastplate
+		r(10630),	-- Gauntlets of the Sea
+		r(24655),	-- Green Dragonscale Gauntlets
+		r(10632),	-- Helm of Fire
+		-- #endif
 	}),
 	n(MISC,	{
 		r(3818),	-- Cured Heavy Hide
 		r(19047),	-- Cured Rugged Hide
 		r(10482),	-- Cured Thick Hide
-		r(3780),	-- Heavy Armor Kit
-		r(20649),	-- Heavy Leather
+		r(14930, {["timeline"] = {REMOVED_4_0_1}}),	-- Quickdraw Quiver
 		r(19058),	-- Rugged Armor Kit
 		r(22331),	-- Rugged Leather
 		r(10487),	-- Thick Armor Kit
 		r(20650),	-- Thick Leather
+		r(14932, {["timeline"] = {REMOVED_4_0_1}}),	-- Thick Leather Ammo Pouch
 	}),
 };
-]]--
-COMMON_CATACLYSM_LEATHERWORKING_RECIPES = {
+CLASSIC_DRAGONSCALE = sharedData({ ["timeline"] = { REMOVED_4_0_3_LAUNCH } }, {
+	r(10656, {	-- Dragonscale Leatherworking
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #endif
+	}),
+	r(24654),	-- Blue Dragonscale Leggings
+	r(10650),	-- Dragonscale Breastplate
+	r(10619),	-- Dragonscale Gauntlets
+	r(24655),	-- Green Dragonscale Gauntlets
+});
+CLASSIC_ELEMENTAL = sharedData({ ["timeline"] = { REMOVED_4_0_3_LAUNCH } }, {
+	r(10658, {	-- Elemental Leatherworking
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #endif
+	}),
+	r(10630),	-- Gauntlets of the Sea
+	r(10632),	-- Helm of Fire
+});
+CLASSIC_TRIBAL = sharedData({ ["timeline"] = { REMOVED_4_0_3_LAUNCH } }, {
+	r(10660, {	-- Tribal Leatherworking
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #endif
+	}),
+	r(10647),	-- Feathered Breastplate
+	r(10621),	-- Wolfshead Helm
+});
+CLASSIC_LEATHERWORKING = appendGroups(APPRENTICE_JOURNEYMAN_LEATHERWORKING,
+-- #if AFTER 2.1.0
+EXPERT_ARTISAN_LEATHERWORKING
+-- #else
+	{}
+-- #endif
+);
+TBC_LEATHERWORKING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_5 } }, {
+	r(32549, {	-- Leatherworking (Master)
+		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #endif
+		["rank"] = 5,
+	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264579, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Outland Leatherworking
+	r(330186, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [The Burning Cruse]
+	r(330187, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [The Burning Cruse]
+	r(330188, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [The Burning Cruse]
+	r(330189, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [The Burning Cruse]
+	r(330190, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [The Burning Cruse]
+	n(ARMOR, {
+		r(32462),	-- Felscale Gloves
+		r(32463),	-- Felscale Boots
+		r(32464),	-- Felscale Pants
+		r(32465),	-- Felscale Breastplate
+		r(36079, {["timeline"] = {ADDED_4_0_3}}),	-- Golden Dragonstrike Breastplate
+		r(36078, {["timeline"] = {ADDED_4_0_3}}),	-- Living Crystal Breastplate
+		r(36077, {["timeline"] = {ADDED_4_0_3}}),	-- Primalstorm Breastplate
+		r(32466),	-- Scaled Draenic Pants
+		r(32467),	-- Scaled Draenic Gloves
+		r(32468),	-- Scaled Draenic Vest
+		r(32469),	-- Scaled Draenic Boots
+		r(32470),	-- Thick Draenic Gloves
+		r(32471),	-- Thick Draenic Pants
+		r(32472),	-- Thick Draenic Boots
+		r(32473),	-- Thick Draenic Vest
+		r(32478),	-- Wild Draenish Boots
+		r(32479),	-- Wild Draenish Gloves
+		r(32480),	-- Wild Draenish Leggings
+		r(32481),	-- Wild Draenish Vest
+	}),
+	filter(MISC, {
+		r(35540),	-- Drums of War
+		r(44770, {["timeline"] = {ADDED_2_3_0}}),	-- Glove Reinforcements
+		r(44970, {["timeline"] = {ADDED_2_3_0}}),	-- Heavy Knothide Armor Kit
+		r(32455),	-- Heavy Knothide Leather
+		r(44343, {["timeline"] = {ADDED_2_3_0, REMOVED_4_0_1}}),	-- Knothide Ammo Pouch
+		r(32456),	-- Knothide Armor Kit
+		r(32454),	-- Knothide Leather
+		r(44344, {["timeline"] = {ADDED_2_3_0, REMOVED_4_0_1}}),	-- Knothide Quiver
+		r(45100, {["timeline"] = {ADDED_2_3_0}}),	-- Leatherworker's Satchel
+	}),
+}));
+TBC_DRAGONSCALE = applyclassicphase(TBC_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_2_0_5, REMOVED_4_0_3_LAUNCH } }, {
+	r(36076),	-- Dragonstrike Leggings
+	r(35576),	-- Ebon Netherscale Belt
+	r(35577),	-- Ebon Netherscale Bracers
+	r(35575),	-- Ebon Netherscale Breastplate
+	r(36079),	-- Golden Dragonstrike Breastplate
+	r(35582),	-- Netherstrike Belt
+	r(35584),	-- Netherstrike Bracers
+	r(35580),	-- Netherstrike Breastplate
+}));
+TBC_ELEMENTAL = applyclassicphase(TBC_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_2_0_5, REMOVED_4_0_3_LAUNCH } }, {
+	r(36074),	-- Blackstorm Leggings
+	r(36077),	-- Primalstorm Breastplate
+	r(35590),	-- Primalstrike Belt
+	r(35591),	-- Primalstrike Bracers
+	r(35589),	-- Primalstrike Vest
+}));
+TBC_TRIBAL = applyclassicphase(TBC_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_2_0_5, REMOVED_4_0_3_LAUNCH } }, {
+	r(36078),	-- Living Crystal Breastplate
+	r(36075),	-- Wildfeather Leggings
+	r(35587),	-- Windhawk Belt
+	r(35588),	-- Windhawk Bracers
+	r(35585),	-- Windhawk Hauberk
+}));
+CLASSIC_TBC_DRAGONSCALE = appendGroups(CLASSIC_DRAGONSCALE,
+-- #if AFTER TBC
+TBC_DRAGONSCALE
+-- #else
+	{}
+-- #endif
+);
+CLASSIC_TBC_ELEMENTAL = appendGroups(CLASSIC_ELEMENTAL,
+-- #if AFTER TBC
+TBC_ELEMENTAL
+-- #else
+	{}
+-- #endif
+);
+CLASSIC_TBC_TRIBAL = appendGroups(CLASSIC_TRIBAL,
+-- #if AFTER TBC
+TBC_TRIBAL
+-- #else
+	{}
+-- #endif
+);
+CATA_LEATHERWORKING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+	r(81199, {	-- Leatherworking (Illustrious)
+		["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #endif
+		["rank"] = 7,
+	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264583, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Cataclysm Leatherworking
+	r(330196, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Cataclysm]
+	r(330197, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Cataclysm]
+	r(330198, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Cataclysm]
+	r(330199, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Cataclysm]
+	r(330200, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Cataclysm]
+	n(ARMOR, {
+		i(0, 78438),	-- Cloak of Beasts
+		i(0, 78439);	-- Cloak of War
+		i(0, 78428);	-- Darkbrand Chestguard
+		i(0, 78416);	-- Darkbrand Belt
+		i(0, 78407);	-- Darkbrand Boots
+		i(0, 78424);	-- Darkbrand Helm
+		i(0, 78433);	-- Darkbrand Leggings
+		i(0, 78411);	-- Darkbrand Shoulders
+		i(0, 78405);	-- Hardened Scale Cloak
+		i(0, 78380);	-- Savage Cloak
+		i(0, 78423);	-- Tsunami Chestguard
+		i(0, 78388);	-- Tsunami Bracers
+		i(0, 78396);	-- Tsunami Belt
+		i(0, 78410);	-- Tsunami Boots
+		i(0, 78406);	-- Tsunami Gloves
+		i(0, 78432);	-- Tsunami Helm
+		i(0, 78427);	-- Tsunami Leggings
+		i(0, 78415);	-- Tsunami Shoulders
+	}),
+	filter(MISC, {
+		i(0, 78437);	-- Heavy Savage Armor Kit
+		i(0, 78436);	-- Heavy Savage Leather
+		i(0, 78379);	-- Savage Armor Kit
+		i(0, 84950);	-- Savage Leather
+		i(0, 78419);	-- Scorched Leg Armor
+		i(0, 78420);	-- Twilight Leg Armor
+	}),
+}));
+CLASSIC_CATA_LEATHERWORKING = appendGroups(CLASSIC_LEATHERWORKING,
+-- #if AFTER CATA
+CATA_LEATHERWORKING
+-- #else
+{}
+-- #endif
+);
+COMMON_CATACLYSM_LEATHERWORKING_RECIPES = applyclassicphase(CATA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 	i(67095, {	-- Pattern: Assassin's Chestplate (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67070, {	-- Pattern: Belt of Nefarious Whispers (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67084, {	-- Pattern: Charscale Leg Armor (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67094, {	-- Pattern: Chestguard of Nature's Fury (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67073, {	-- Pattern: Corded Viper Belt (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67100, {	-- Pattern: Dragonkiller Tunic (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(68193, {	-- Pattern: Dragonscale Leg Armor (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(71721, {	-- Pattern: Drakehide Leg Armor (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67068, {	-- Pattern: Lightning Lash (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67082, {	-- Pattern: Razor-Edged Cloak (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67072, {	-- Pattern: Stormleather Sash (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67083, {	-- Pattern: Twilight Dragonscale Cloak (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67096, {	-- Pattern: Twilight Scale Chestguard (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67064, {	-- Pattern: Vicious Charscale Belt (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67063, {	-- Pattern: Vicious Charscale Boots (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67049, {	-- Pattern: Vicious Charscale Bracers (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67090, {	-- Pattern: Vicious Charscale Chest (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67053, {	-- Pattern: Vicious Charscale Gloves (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67091, {	-- Pattern: Vicious Charscale Helm (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67079, {	-- Pattern: Vicious Charscale Legs (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67078, {	-- Pattern: Vicious Charscale Shoulders (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67080, {	-- Pattern: Vicious Dragonscale Belt (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67065, {	-- Pattern: Vicious Dragonscale Boots (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67054, {	-- Pattern: Vicious Dragonscale Bracers (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67093, {	-- Pattern: Vicious Dragonscale Chest (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67066, {	-- Pattern: Vicious Dragonscale Gloves (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67081, {	-- Pattern: Vicious Dragonscale Helm (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67092, {	-- Pattern: Vicious Dragonscale Legs (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67055, {	-- Pattern: Vicious Dragonscale Shoulders (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67076, {	-- Pattern: Vicious Leather Belt (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67060, {	-- Pattern: Vicious Leather Boots (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67046, {	-- Pattern: Vicious Leather Bracers (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67087, {	-- Pattern: Vicious Leather Chest (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67048, {	-- Pattern: Vicious Leather Gloves (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67077, {	-- Pattern: Vicious Leather Helm (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67089, {	-- Pattern: Vicious Leather Legs (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67062, {	-- Pattern: Vicious Leather Shoulders (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67044, {	-- Pattern: Vicious Wyrmhide Belt (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67058, {	-- Pattern: Vicious Wyrmhide Boots (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67042, {	-- Pattern: Vicious Wyrmhide Bracers (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67075, {	-- Pattern: Vicious Wyrmhide Chest (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67056, {	-- Pattern: Vicious Wyrmhide Gloves (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67086, {	-- Pattern: Vicious Wyrmhide Helm (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67085, {	-- Pattern: Vicious Wyrmhide Legs (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(67074, {	-- Pattern: Vicious Wyrmhide Shoulders (RECIPE!)
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
-		["requireSkill"] = LEATHERWORKING,
-		["f"] = RECIPES,
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
 	i(52980, {	-- Pristine Hide
-		["cost"] = { { "i", 56516, 10 }, },	-- 10x Heavy Savage Leather
-		["timeline"] = { "added 4.0.3.13287" },
+		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
 	}),
-};
+}));
 MOP_LEATHERWORKING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	r(110423, {	-- Leatherworking (Zen Master)
 		["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
@@ -498,6 +561,50 @@ DRAENOR_LEATHERWORKING = applyclassicphase(WOD_PHASE_ONE, i(115358, bubbleDownSe
 		r(171264),	-- Traveling Tunic
 	},
 })));
+LEGION_LEATHERWORKING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_7_0_3 } }, {
+	n(ARMOR, {
+		r(226115),	-- Blue Chain Leggings
+		r(226119),	-- Chain Belt
+		r(226113),	-- Chain Boots
+		r(226116),	-- Chain Bracers
+		r(226118),	-- Chain Gauntlets
+		r(226112),	-- Chain Hauberk
+		r(226117),	-- Chain Leggings
+		r(226121),	-- Chain Pauldrons
+		r(226114),	-- Crackling Scale Breastplate
+		r(226122),	-- Element Grips
+		r(226132),	-- Heavy Scale Belt
+		r(226134),	-- Heavy Scale Boots
+		r(226123),	-- Heavy Scale Gauntlets
+		r(226135),	-- Heavy Scale Hood
+		r(226126),	-- Heavy Scale Pants
+		r(226129),	-- Heavy Scale Pauldrons
+		r(226128),	-- Heavy Scale Shirt
+		r(226124),	-- Heavy Scale Wraps
+		r(226107),	-- Light Scale Belt
+		r(226109),	-- Light Scale Boots
+		r(226106),	-- Light Scale Bracers
+		r(226105),	-- Light Scale Gloves
+		r(226108),	-- Light Scale Jerkin
+		r(226111),	-- Light Scale Pants
+		r(226110),	-- Shamanic Treads
+		r(226137),	-- Spritescale Boots
+		r(226125),	-- Spritescale Britches
+		r(226127),	-- Spritescale Cinch
+		r(226136),	-- Spritescale Circlet
+		r(226120),	-- Spritescale Epaulets
+		r(226131),	-- Spritescale Gloves
+		r(226130),	-- Spritescale Jerkin
+		r(226133),	-- Spritescale Wraps
+	}),
+}))
+CLASSIC_CATA_LEGION_LEATHERWORKING = appendGroups(CLASSIC_CATA_LEATHERWORKING,
+-- #if AFTER 7.0.3
+LEGION_LEATHERWORKING
+-- #else
+{}
+-- #endif
+);
 COMMON_DRAENOR_LEATHERWORKING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	i(116328, {	-- Pattern: Brilliant Burnished Cloak (RECIPE!)
 		["cost"] = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},

@@ -172,8 +172,8 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "added 4.3.0.14942" },
 					["cr"] = 19428,	-- Cobalt Serpent
 				}),
-				i(29669, {	-- Pattern: Shadow Armor Kit
-					["timeline"] = { "removed 5.0.4" },
+				i(29669, {	-- Pattern: Shadow Armor Kit (RECIPE!)
+					["timeline"] = { REMOVED_5_0_4 },
 					["cr"] = 18320,	-- Time-Lost Shadowmage
 				}),
 				i(25731, {	-- Pattern: Stylin' Crimson Hat (RECIPE!)

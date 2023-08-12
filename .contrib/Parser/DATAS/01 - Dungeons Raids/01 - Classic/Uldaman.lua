@@ -21,6 +21,16 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		["maps"] = { 231 },
 		["lvl"] = lvlsquish(35, 35, 15),
 		["groups"] = {
+			n(PROFESSIONS, {
+				prof(ENCHANTING, {
+					n(11073, {	-- Annora <Master Enchanter>
+						["description"] = "To get the Annora to spawn, you'll have to kill all scorpions first.",
+						-- #if BEFORE 2.1.0
+						["groups"] = EXPERT_ARTISAN_ENCHANTING,
+						-- #endif
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(2964, {	-- A Future Task [Alliance]
 					["qg"] = 2916,	-- Historian Karnik
@@ -691,13 +701,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["timeline"] = { "added 7.3.0.24484"},
 					}),
 				},
-			}),
-			n(11073, {	-- Annora <Master Enchanter>
-				["description"] = "To get the Annora to spawn, you'll have to kill all scorpions first.",
-				-- #if BEFORE 2.1.0
-				["requireSkill"] = ENCHANTING,
-				["groups"] = EXPERT_ARTISAN_ENCHANTING,
-				-- #endif
 			}),
 			e(470, {	-- Ancient Stone Keeper
 				["creatureID"] = 7206,

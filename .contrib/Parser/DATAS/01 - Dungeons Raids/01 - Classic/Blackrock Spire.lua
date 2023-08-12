@@ -1632,7 +1632,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					})),
 					-- #if AFTER 5.0.4
 					i(15774, {	-- Pattern: Heavy Scorpid Shoulders (RECIPE!)
-						["timeline"] = { "removed 4.0.3", "added 5.0.4", "removed 6.0.2" },
+						["timeline"] = { REMOVED_4_0_3, ADDED_5_0_4, REMOVED_6_0_2 },
 						["cr"] = 10318,	-- Blackhand Assassin <Blackhand Legion>
 					}),
 					-- #endif

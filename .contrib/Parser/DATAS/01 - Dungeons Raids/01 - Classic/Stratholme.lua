@@ -967,7 +967,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							["cr"] = 10398,	-- Thuzadin Shadowcaster
 						}),
 						i(15768, {	-- Pattern: Wicked Leather Belt (RECIPE!)
-							["timeline"] = { "removed 2.0.1" },	-- Added to Leatherworking Trainers
+							["timeline"] = { "removed 2.0.5" },	-- Added to Leatherworking Trainers
 							["cr"] = 10406,	-- Ghoul Ravener
 						}),
 						i(74274, {	-- Plans: Phantom Blade (RECIPE!)

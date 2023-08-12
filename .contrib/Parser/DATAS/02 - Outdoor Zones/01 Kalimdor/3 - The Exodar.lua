@@ -402,9 +402,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 					["groups"] = {
 						i(25726, {	-- Pattern: Comfortable Insoles (RECIPE!)
-							["requireSkill"] = LEATHERWORKING,
 							["isLimited"] = true,
-							["f"] = RECIPES,
 						}),
 						i(25720, {	-- Pattern: Heavy Knothide Leather
 							["timeline"] = { "removed 3.2.0"},

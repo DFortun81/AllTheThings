@@ -3220,7 +3220,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(7361, {	-- Pattern: Herbalist's Gloves
+						i(7361, {	-- Pattern: Herbalist's Gloves (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -3233,7 +3233,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					-- #if BEFORE CATA
 					["groups"] = {
-						i(7361, {	-- Pattern: Herbalist's Gloves
+						i(7361, {	-- Pattern: Herbalist's Gloves (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

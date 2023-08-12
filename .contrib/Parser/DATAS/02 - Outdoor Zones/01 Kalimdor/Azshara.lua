@@ -170,6 +170,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 			}),
+			n(PROFESSIONS, {
+				prof(LEATHERWORKING, {
+					n(7866, {	-- Peter Galen <Master Dragonscale Leatherworker>
+						["coord"] = { 37.6, 65.4, AZSHARA },
+						["races"] = ALLIANCE_ONLY,
+						["timeline"] = { REMOVED_4_0_3 },
+						["g"] = CLASSIC_TBC_DRAGONSCALE,
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(3382, {	-- A Crew Under Fire
 					["qg"] = 8380,	-- Captain Vanessa Beltis

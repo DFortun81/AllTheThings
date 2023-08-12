@@ -469,9 +469,6 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 		}),
 	}),
 	prof(LEATHERWORKING, {
-		filter(COSMETIC, {
-			applyevent(EVENTS.FEAST_OF_WINTER_VEIL, i(151791)),	-- Winter Boots
-		}),
 		n(ARMOR, {
 			filter(LEATHER, {
 				i(128890),	-- Dreadleather Belt
@@ -512,41 +509,6 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 				i(128903),	-- Gravenscale Warhelm
 				i(151578, {["timeline"] = {ADDED_7_3_0}}),	-- Fiendish Spaulders
 				i(146668, {["timeline"] = {ADDED_7_2_0}}),	-- Vigilance Perch
-				--[[
-				i(132547),	-- Blue Chain Leggings
-				i(132495),	-- Chain Belt
-				i(132494),	-- Chain Boots
-				i(132496),	-- Chain Bracers
-				i(132499),	-- Chain Gauntlets
-				i(132493),	-- Chain Hauberk
-				i(132497),	-- Chain Leggings
-				i(132498),	-- Chain Pauldrons
-				i(132545),	-- Crackling Scale Breastplate
-				i(132546),	-- Element Grips
-				i(132522),	-- Heavy Scale Belt
-				i(132521),	-- Heavy Scale Boots
-				i(132533),	-- Heavy Scale Gauntlets
-				i(132536),	-- Heavy Scale Hood
-				i(132532),	-- Heavy Scale Pants
-				i(132535),	-- Heavy Scale Pauldrons
-				i(132520),	-- Heavy Scale Shirt
-				i(132534),	-- Heavy Scale Wraps
-				i(132489),	-- Light Scale Belt
-				i(132488),	-- Light Scale Boots
-				i(132491),	-- Light Scale Bracers
-				i(132490),	-- Light Scale Gloves
-				i(132487),	-- Light Scale Jerkin
-				i(132492),	-- Light Scale Pants
-				i(132548),	-- Shamanic Treads
-				i(132544),	-- Spritescale Boots
-				i(132542),	-- Spritescale Britches
-				i(132539),	-- Spritescale Cinch
-				i(132537),	-- Spritescale Circlet
-				i(132543),	-- Spritescale Epaulets
-				i(132540),	-- Spritescale Gloves
-				i(132538),	-- Spritescale Jerkin
-				i(132541),	-- Spritescale Wraps
-				--]]
 			}),
 		}),
 		filter(MISC, {

@@ -145,25 +145,21 @@ ARTISAN_BLACKSMITHING = {
 };
 CLASSIC_WEAPONSMITHING = sharedData({ ["timeline"] = { REMOVED_4_0_3_LAUNCH } }, {
 	r(9787, {	-- Weaponsmith
-		["requireSkill"] = 9787,
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
 		-- #endif
 	}),
 	r(17041, {	-- Master Axesmith
-		["requireSkill"] = 17041,
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
 		-- #endif
 	}),
 	r(17039, {	-- Master Swordsmith
-		["requireSkill"] = 17039,
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
 		-- #endif
 	}),
 	r(17040, {	-- Master Hammersmith
-		["requireSkill"] = 17040,
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
 		-- #endif
@@ -175,7 +171,6 @@ CLASSIC_WEAPONSMITHING = sharedData({ ["timeline"] = { REMOVED_4_0_3_LAUNCH } },
 });
 CLASSIC_ARMORSMITHING = sharedData({ ["timeline"] = { REMOVED_4_0_3_LAUNCH } }, {
 	r(9788, {	-- Armorsmith
-		["requireSkill"] = 9788,
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
 		-- #endif
@@ -460,106 +455,106 @@ CATA_BLACKSMITHING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"]
 }));
 COMMON_CATACLYSM_BLACKSMITHING_RECIPES = applyclassicphase(CATA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 	i(66100, {	-- Plans: Ebonsteel Belt Buckle (RECIPE!)
-		["cost"] = { { "i", PYRIUM, 5 } },
+		["cost"] = {{ "i", PYRIUM, 5 }},
 	}),
 	i(66113, {	-- Plans: Elementium Bonesplitter (RECIPE!)
-		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+		["cost"] = {{ "i", HARDENED_ELEMENTIUM_BAR, 2 }},
 	}),
 	i(66106, {	-- Plans: Elementium Deathplate (RECIPE!)
-		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+		["cost"] = {{ "i", HARDENED_ELEMENTIUM_BAR, 2 }},
 	}),
 	i(66115, {	-- Plans: Elementium Earthguard (RECIPE!)
-		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+		["cost"] = {{ "i", HARDENED_ELEMENTIUM_BAR, 2 }},
 	}),
 	i(66107, {	-- Plans: Elementium Girdle of Pain (RECIPE!)
-		["cost"] = { { "i", ELEMENTIUM_BAR, 20 } },
+		["cost"] = {{ "i", ELEMENTIUM_BAR, 20 }},
 	}),
 	i(67603, {	-- Plans: Elementium Gutslicer (RECIPE!)
-		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+		["cost"] = {{ "i", HARDENED_ELEMENTIUM_BAR, 2 }},
 	}),
 	i(66111, {	-- Plans: Elementium Hammer (RECIPE!)
-		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+		["cost"] = {{ "i", HARDENED_ELEMENTIUM_BAR, 2 }},
 	}),
 	i(66112, {	-- Plans: Elementium Poleaxe (RECIPE!)
-		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+		["cost"] = {{ "i", HARDENED_ELEMENTIUM_BAR, 2 }},
 	}),
 	i(66114, {	-- Plans: Elementium Shank (RECIPE!)
-		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+		["cost"] = {{ "i", HARDENED_ELEMENTIUM_BAR, 2 }},
 	}),
 	i(66110, {	-- Plans: Elementium Spellblade (RECIPE!)
-		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+		["cost"] = {{ "i", HARDENED_ELEMENTIUM_BAR, 2 }},
 	}),
 	i(66116, {	-- Plans: Elementium Stormshield (RECIPE!)
-		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+		["cost"] = {{ "i", HARDENED_ELEMENTIUM_BAR, 2 }},
 	}),
 	i(67606, {	-- Plans: Forged Elementium Mindcrusher (RECIPE!)
-		["cost"] = { { "i", PYRIUM, 5 } },
+		["cost"] = {{ "i", PYRIUM, 5 }},
 	}),
 	i(66105, {	-- Plans: Hardened Elementium Girdle (RECIPE!)
-		["cost"] = { { "i", ELEMENTIUM_BAR, 20 } },
+		["cost"] = {{ "i", ELEMENTIUM_BAR, 20 }},
 	}),
 	i(66104, {	-- Plans: Hardened Elementium Hauberk (RECIPE!)
-		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+		["cost"] = {{ "i", HARDENED_ELEMENTIUM_BAR, 2 }},
 	}),
 	i(66109, {	-- Plans: Light Elementium Belt (RECIPE!)
-		["cost"] = { { "i", ELEMENTIUM_BAR, 20 } },
+		["cost"] = {{ "i", ELEMENTIUM_BAR, 20 }},
 	}),
 	i(66108, {	-- Plans: Light Elementium Chestguard (RECIPE!)
-		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+		["cost"] = {{ "i", HARDENED_ELEMENTIUM_BAR, 2 }},
 	}),
 	i(66101, {	-- Plans: Pyrium Shield Spike (RECIPE!)
-		["cost"] = { { "i", PYRIUM, 5 } },
+		["cost"] = {{ "i", PYRIUM, 5 }},
 	}),
 	i(66103, {	-- Plans: Pyrium Weapon Chain (RECIPE!)
-		["cost"] = { { "i", ELEMENTIUM_BAR, 20 } },
+		["cost"] = {{ "i", ELEMENTIUM_BAR, 20 }},
 	}),
 	i(66127, {	-- Plans: Vicious Ornate Pyrium Belt (RECIPE!)
-		["cost"] = { { "i", ELEMENTIUM_BAR, 20 } },
+		["cost"] = {{ "i", ELEMENTIUM_BAR, 20 }},
 	}),
 	i(66128, {	-- Plans: Vicious Ornate Pyrium Boots (RECIPE!)
-		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+		["cost"] = {{ "i", HARDENED_ELEMENTIUM_BAR, 2 }},
 	}),
 	i(66125, {	-- Plans: Vicious Ornate Pyrium Bracers (RECIPE!)
-		["cost"] = { { "i", ELEMENTIUM_BAR, 20 } },
+		["cost"] = {{ "i", ELEMENTIUM_BAR, 20 }},
 	}),
 	i(66132, {	-- Plans: Vicious Ornate Pyrium Breastplate (RECIPE!)
-		["cost"] = { { "i", PYRIUM, 5 } },
+		["cost"] = {{ "i", PYRIUM, 5 }},
 	}),
 	i(66126, {	-- Plans: Vicious Ornate Pyrium Gauntlets (RECIPE!)
-		["cost"] = { { "i", ELEMENTIUM_BAR, 20 } },
+		["cost"] = {{ "i", ELEMENTIUM_BAR, 20 }},
 	}),
 	i(66131, {	-- Plans: Vicious Ornate Pyrium Helm (RECIPE!)
-		["cost"] = { { "i", PYRIUM, 5 } },
+		["cost"] = {{ "i", PYRIUM, 5 }},
 	}),
 	i(66130, {	-- Plans: Vicious Ornate Pyrium Legguards (RECIPE!)
-		["cost"] = { { "i", PYRIUM, 5 } },
+		["cost"] = {{ "i", PYRIUM, 5 }},
 	}),
 	i(66129, {	-- Plans: Vicious Ornate Pyrium Shoulders (RECIPE!)
-		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+		["cost"] = {{ "i", HARDENED_ELEMENTIUM_BAR, 2 }},
 	}),
 	i(66119, {	-- Plans: Vicious Pyrium Belt (RECIPE!)
-		["cost"] = { { "i", ELEMENTIUM_BAR, 20 } },
+		["cost"] = {{ "i", ELEMENTIUM_BAR, 20 }},
 	}),
 	i(66120, {	-- Plans: Vicious Pyrium Boots (RECIPE!)
-		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+		["cost"] = {{ "i", HARDENED_ELEMENTIUM_BAR, 2 }},
 	}),
 	i(66117, {	-- Plans: Vicious Pyrium Bracers (RECIPE!)
-		["cost"] = { { "i", ELEMENTIUM_BAR, 20 } },
+		["cost"] = {{ "i", ELEMENTIUM_BAR, 20 }},
 	}),
 	i(66124, {	-- Plans: Vicious Pyrium Breastplate (RECIPE!)
-		["cost"] = { { "i", PYRIUM, 5 } },
+		["cost"] = {{ "i", PYRIUM, 5 }},
 	}),
 	i(66118, {	-- Plans: Vicious Pyrium Gauntlets (RECIPE!)
-		["cost"] = { { "i", ELEMENTIUM_BAR, 20 } },
+		["cost"] = {{ "i", ELEMENTIUM_BAR, 20 }},
 	}),
 	i(66123, {	-- Plans: Vicious Pyrium Helm (RECIPE!)
-		["cost"] = { { "i", PYRIUM, 5 } },
+		["cost"] = {{ "i", PYRIUM, 5 }},
 	}),
 	i(66122, {	-- Plans: Vicious Pyrium Legguards (RECIPE!)
-		["cost"] = { { "i", PYRIUM, 5 } },
+		["cost"] = {{ "i", PYRIUM, 5 }},
 	}),
 	i(66121, {	-- Plans: Vicious Pyrium Shoulders (RECIPE!)
-		["cost"] = { { "i", HARDENED_ELEMENTIUM_BAR, 2 } },
+		["cost"] = {{ "i", HARDENED_ELEMENTIUM_BAR, 2 }},
 	}),
 }));
 MOP_BLACKSMITHING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {

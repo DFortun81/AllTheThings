@@ -3623,21 +3623,21 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(7360),	-- Pattern: Dark Leather Gloves (RECIPE!)
 			i(4296),	-- Pattern: Dark Leather Shoulders (RECIPE!)
 			i(2409),	-- Pattern: Dark Leather Tunic (RECIPE!)
-			i(7452),	-- Pattern: Dusky Boots
+			i(7452),	-- Pattern: Dusky Boots (RECIPE!)
 			i(7449),	-- Pattern: Dusky Leather Leggings (RECIPE!)
 			i(2406),	-- Pattern: Fine Leather Boots (RECIPE!)
 			i(2408),	-- Pattern: Fine Leather Gloves (RECIPE!)
 			i(5972),	-- Pattern: Fine Leather Pants (RECIPE!)
-			i(7450),	-- Pattern: Green Whelp Armor
+			i(7450),	-- Pattern: Green Whelp Armor (RECIPE!)
 			i(4299),	-- Pattern: Guardian Armor (RECIPE!)
 			i(4298),	-- Pattern: Guardian Belt (RECIPE!)
 			i(5974),	-- Pattern: Guardian Cloak (RECIPE!)
 			i(4300),	-- Pattern: Guardian Leather Bracers (RECIPE!)
-			i(7364),	-- Pattern: Heavy Earthen Gloves
+			i(7364),	-- Pattern: Heavy Earthen Gloves (RECIPE!)
 			i(15743),	-- Pattern: Heavy Scorpid Belt (RECIPE!)
 			i(4294),	-- Pattern: Hillman's Belt (RECIPE!)
 			i(4293),	-- Pattern: Hillman's Leather Vest (RECIPE!)
-			i(7363),	-- Pattern: Pilferer's Gloves
+			i(7363),	-- Pattern: Pilferer's Gloves (RECIPE!)
 			i(7288),	-- Pattern: Rugged Leather Pants (RECIPE!)
 			i(15745, {	-- Pattern: Runic Leather Belt (RECIPE!)
 				["timeline"] = { "removed 5.0.4" },	-- Taught by trainer

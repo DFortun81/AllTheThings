@@ -110,6 +110,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			n(PROFESSIONS, {
+				prof(LEATHERWORKING, {
+					n(7871, {	-- Se'Jib <Master Tribal Leatherworker>
+						["coord"] = { 45.2, 58.6, NORTHERN_STRANGLETHORN },
+						["races"] = HORDE_ONLY,
+						["g"] = CLASSIC_TBC_TRIBAL,
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(26317, {	-- A Lashtail Hatchling
 					["qg"] = 2465,	-- Far Seer Mok'thardin

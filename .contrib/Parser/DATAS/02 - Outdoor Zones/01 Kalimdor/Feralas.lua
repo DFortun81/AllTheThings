@@ -173,6 +173,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Best fished at 62.0 52.0",
 				}),
 			}),--]]	-- Maybe Mog in the future
+			n(PROFESSIONS, {
+				prof(LEATHERWORKING, {
+					n(7870, {	-- Caryssia Moonhunter <Tribal Leatherworking Trainer>
+						["coord"] = { 89.4, 46.4, FERALAS },
+						["races"] = ALLIANCE_ONLY,
+						["timeline"] = { REMOVED_4_0_3 },
+						["g"] = CLASSIC_TBC_TRIBAL,
+					}),
+					n(11098, {	-- Hahrana Ironhide <Master Leatherworker>
+						["coord"] = { 74.4, 43.0, FERALAS },
+						["races"] = HORDE_ONLY,
+						-- #if BEFORE 2.1.0
+						["g"] = EXPERT_ARTISAN_LEATHERWORKING,
+						-- #endif
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(25362, {	-- A Grim Discovery
 					["qg"] = 4544,	-- Krueg Skullsplitter
@@ -2804,7 +2821,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(7451, {	-- Pattern: Green Whelp Bracers
+						i(7451, {	-- Pattern: Green Whelp Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(15734, {	-- Pattern: Living Shoulders (RECIPE!)
@@ -2848,7 +2865,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(7451, {	-- Pattern: Green Whelp Bracers
+						i(7451, {	-- Pattern: Green Whelp Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(15734, {	-- Pattern: Living Shoulders (RECIPE!)
@@ -2864,7 +2881,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(7451, {	-- Pattern: Green Whelp Bracers
+						i(7451, {	-- Pattern: Green Whelp Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(15734, {	-- Pattern: Living Shoulders (RECIPE!)

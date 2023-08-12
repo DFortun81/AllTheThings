@@ -134,7 +134,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(27783),	-- Moonrage Girdle
 						i(27784),	-- Scintillating Coral Band
 						i(29673, {	-- Pattern: Frost Armor Kit (RECIPE!)
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						i(30828),	-- Vial of Underworld Loam
 					},
@@ -239,7 +239,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(27783),	-- Moonrage Girdle
 							i(27784),	-- Scintillating Coral Band
 							i(29673, {	-- Pattern: Frost Armor Kit (RECIPE!)
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(30828),	-- Vial of Underworld Loam
 						},

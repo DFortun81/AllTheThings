@@ -1293,10 +1293,10 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 			i(29724),	-- Pattern: Cobrascale Gloves (RECIPE!) (BoE version)
 			i(29723),	-- Pattern: Cobrascale Hood (RECIPE!)
 			i(29714, {	-- Pattern: Drums of Restoration (RECIPE!)
-				["timeline"] = { "removed 2.3.0" },
+				["timeline"] = { REMOVED_2_3_0 },
 			}),
 			i(29718, {	-- Pattern: Drums of Speed (RECIPE!)
-				["timeline"] = { "removed 2.3.0" },
+				["timeline"] = { REMOVED_2_3_0 },
 			}),
 			i(29730),	-- Pattern: Earthen Netherscale Boots (RECIPE!)
 			i(29727),	-- Pattern: Gloves of the Living Touch (RECIPE!) (BoE version)

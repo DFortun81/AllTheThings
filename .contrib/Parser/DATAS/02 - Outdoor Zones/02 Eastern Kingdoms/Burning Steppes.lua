@@ -1795,7 +1795,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						 { 34.8, 36.3, BURNING_STEPPES },
 						 { 36.0, 36.6, BURNING_STEPPES },
 					},
-					["timeline"] = { "removed 4.0.3", ADDED_10_0_5 },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_5 },
 					["crs"] = {
 						7025,	-- Blackrock Soldier
 						7027,	-- Blackrock Slayer
@@ -1803,7 +1803,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(15748, {	-- Pattern: Heavy Scorpid Leggings (RECIPE!)
-					["timeline"] = { "removed 4.0.3", ADDED_10_0_5 },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_5 },
 					["description"] = "Killing the mobs at one of the coordinates, respawns them instantly at the other and vice versa. Farmed with a second person, you get all recipes within 2-3 minutes.",
 					["coords"] = {
 						 { 34.8, 36.3, BURNING_STEPPES },
@@ -1816,7 +1816,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(15774, {	-- Pattern: Heavy Scorpid Shoulders (RECIPE!)
-					["timeline"] = { "removed 4.0.3", "added 5.0.4", "removed 6.0.2", ADDED_10_0_5 },
+					["timeline"] = { REMOVED_4_0_3, ADDED_5_0_4, REMOVED_6_0_2, ADDED_10_0_5 },
 					["description"] = "Killing the mobs at one of the coordinates, respawns them instantly at the other and vice versa. Farmed with a second person, you get all recipes within 2-3 minutes.",
 					["coords"] = {
 						 { 34.8, 36.3, BURNING_STEPPES },
@@ -1830,16 +1830,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #else
 				i(15738, {	-- Pattern: Heavy Scorpid Gauntlets (RECIPE!)
-					["timeline"] = { "removed 4.0.3", ADDED_10_0_5 },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_5 },
 					["cr"] = 7025,	-- Blackrock Soldier
 				}),
 				i(15748, {	-- Pattern: Heavy Scorpid Leggings (RECIPE!)
-					["timeline"] = { "removed 4.0.3", ADDED_10_0_5 },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_5 },
 					["cr"] = 7027,	-- Blackrock Slayer
 				}),
 				-- #if BEFORE 5.0.4
 				i(15774, {	-- Pattern: Heavy Scorpid Shoulders (RECIPE!)
-					["timeline"] = { "removed 4.0.3", "added 5.0.4", "removed 6.0.2", ADDED_10_0_5 },
+					["timeline"] = { REMOVED_4_0_3, ADDED_5_0_4, REMOVED_6_0_2, ADDED_10_0_5 },
 					-- #if BEFORE 4.0.3
 					["coord"] = { 41.8, 37.0, BURNING_STEPPES },
 					["cr"] = 7029,	-- Blackrock Battlemaster

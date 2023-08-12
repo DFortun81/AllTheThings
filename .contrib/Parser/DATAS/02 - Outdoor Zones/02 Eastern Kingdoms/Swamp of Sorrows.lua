@@ -1461,7 +1461,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(15726, {	-- Pattern: Green Dragonscale Breastplate (Old Version) (RECIPE!)
-							["timeline"] = { "removed 4.3.0" },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(12253, {	-- Brilliant Red Cloak
 							["isLimited"] = true,

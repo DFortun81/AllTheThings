@@ -77,11 +77,11 @@ root(ROOTS.WorldDrops, {
 				i(6454),	-- Manual: Strong Anti-Venom
 				i(12006),	-- Meadow Ring
 				i(7360),	-- Pattern: Dark Leather Gloves (RECIPE!)
-				i(5972),	-- Pattern: Fine Leatheere Pants
+				i(5972),	-- Pattern: Fine Leather Pants (RECIPE!)
 				i(2601),	-- Pattern: Gray Woolen Robe
 				i(7092),	-- Pattern: Hands of Darkness
-				i(7364),	-- Pattern: Heavy Earthen Gloves
-				i(7363),	-- Pattern: Pilferer's Gloves
+				i(7364),	-- Pattern: Heavy Earthen Gloves (RECIPE!)
+				i(7363),	-- Pattern: Pilferer's Gloves (RECIPE!)
 				i(4350),	-- Pattern: Spider Silk Slippers
 				i(6390),	-- Pattern: Stylish Blue Shirt
 				i(3611),	-- Plans: Green Iron Boots (RECIPE!)
@@ -160,7 +160,7 @@ root(ROOTS.WorldDrops, {
 				i(11164),	-- Formula: Enchant Weapon - Lesser Beastslayer (RECIPE!)
 				i(7449),	-- Pattern: Dusky Leather Leggings (RECIPE!)
 				i(5774),	-- Pattern: Green Silk Pack
-				i(7450),	-- Pattern: Green Whelp Armor
+				i(7450),	-- Pattern: Green Whelp Armor (RECIPE!)
 				i(4299),	-- Pattern: Guardian Armor (RECIPE!)
 				i(3867),	-- Plans: Golden Iron Destroyer (RECIPE!)
 				i(3872),	-- Plans: Golden Scale Leggings (RECIPE!)
@@ -315,15 +315,15 @@ root(ROOTS.WorldDrops, {
 				["groups"] = {
 					i(4354),	-- Pattern: Rich Purple Silk Shirt [Discord Confirmation - Luce]
 					i(12002),	-- Formula: Enchant Bracer Superior Stamina
-					i(15746),	-- Plans: Radiant Leggings
+					i(12713),	-- Plans: Radiant Leggings (RECIPE!)
 					i(2163),	-- The Night Blade
 					i(12046),	-- Dragonscale Band
 					i(12034),	-- Granite Necklace
 					i(12004),	-- Jungle Ring
 					i(12035),	-- Obsidian Band
 					i(14494),	-- Obsidian Pendant
-					i(15755),	-- Prismatic Pendant
-					i(15743),	-- Quicksilver Pendant
+					i(12048),	-- Prismatic Pendant
+					i(12026),	-- Quicksilver Pendant
 					i(14499),	-- Quicksilver Ring
 					i(12056),	-- Ring Of The Heavens
 					-- #if BEFORE MOP

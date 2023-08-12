@@ -135,6 +135,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			n(PROFESSIONS, {
+				prof(LEATHERWORKING, {
+					n(7867, {	-- Thorkaf Dragoneye <Master Dragonscale Leatherworker>
+						["coord"] = { 62.6, 57.6, BADLANDS },
+						["races"] = HORDE_ONLY,
+						["timeline"] = { REMOVED_4_0_3 },
+						["g"] = CLASSIC_TBC_DRAGONSCALE,
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(719, {	-- A Dwarf and His Tools
 					["qg"] = 2910,	-- Prospector Ryedol <Explorers' League>

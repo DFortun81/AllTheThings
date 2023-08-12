@@ -2089,10 +2089,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(2699, {	-- Rikqiz <Leatherworking Supplies>
 					["coord"] = { 43.2, 71.7, THE_CAPE_OF_STRANGLETHORN },
-					["sym"] = {{"select", "itemID",
-						14635,	-- Pattern: Gem-Studded Leather Belt (RECIPE!)
-						18239,	-- Pattern: Shadowskin Gloves (RECIPE!)
-					}},
+					i(14635, {	-- Pattern: Gem-Studded Leather Belt (RECIPE!)
+						["isLimited"] = true,
+					}),
+					i(18239, {	-- Pattern: Shadowskin Gloves (RECIPE!)
+						["isLimited"] = true,
+					}),
 				}),
 				n(151042, {	-- Skin-Me-Own-Coat Dibblefur <T-Shirt Scalper>
 					["coord"] = { 42.1, 73.8, THE_CAPE_OF_STRANGLETHORN },

@@ -149,6 +149,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			n(PROFESSIONS, {
+				prof(LEATHERWORKING, {
+					n(11097, {	-- Drakk Stonehand <Master Leatherworking Trainer>
+						["coord"] = { 13.4, 43.4, THE_HINTERLANDS },
+						["races"] = ALLIANCE_ONLY,
+						-- #if BEFORE 2.1.0
+						["g"] = EXPERT_ARTISAN_LEATHERWORKING,
+						-- #endif
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(26486, {	-- 99 Bottles of Booze on the Beach
 					["qg"] = 43109,	-- Dron Blastbrew

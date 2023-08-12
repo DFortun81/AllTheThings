@@ -800,20 +800,17 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					},
 					["lvl"] = 56,
 					["groups"] = {
-						{
-							["recipeID"] = 22813,	-- Gordok Ogre Suit
+						r(22813, {	-- Gordok Ogre Suit
 							["timeline"] = { "removed 4.0.3" },
 							["requireSkill"] = TAILORING,
-						},
-						{
-							["recipeID"] = 22815,	-- Gordok Ogre Suit
+						}),
+						r(22815, {	-- Gordok Ogre Suit
 							["timeline"] = { "removed 4.0.3" },
 							["requireSkill"] = LEATHERWORKING,
-						},
-						{
-							["itemID"] = 18258,	-- Gordok Ogre Suit
+						}),
+						i(18258, {	-- Gordok Ogre Suit
 							["description"] = "Before using this, clear the trash before Captain Kromcrush. Tell your group to stay back while you talk to Kromcrush with this disguise on. If they aggro him, your group will fail the Tribute Run.",
-						},
+						}),
 					},
 				}),
 				q(5519, {	-- The Gordok Ogre Suit
@@ -1434,7 +1431,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						-- #endif
 					}),
 					o(179501, -- Knot Thimblejack's Cache
-						bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, {
+						bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {
 						["sourceQuest"] = 5525,	-- Free Knot!
 						-- #if BEFORE 4.0.3
 						["cost"] = { { "i", 18250, 1 } },	-- Gordok Shackle Key

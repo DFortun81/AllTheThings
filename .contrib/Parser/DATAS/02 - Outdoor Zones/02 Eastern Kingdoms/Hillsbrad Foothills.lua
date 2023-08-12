@@ -3087,7 +3087,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(4838, {	-- Orb of Power
 							["isLimited"] = true,
 						}),
-						i(7362, {	-- Pattern: Earthen Leather Shoulders
+						i(7362, {	-- Pattern: Earthen Leather Shoulders (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(5772, {	-- Pattern: Red Woolen Bag

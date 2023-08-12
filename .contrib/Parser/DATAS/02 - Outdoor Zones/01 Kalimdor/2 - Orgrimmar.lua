@@ -2809,6 +2809,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					}),
 				}),
+				prof(LEATHERWORKING, {
+					n(3365, {	-- Karolek <Leatherworking Trainer>
+						["coords"] = {
+							-- #if BEFORE CATA
+							{ 62.8, 44.6, ORGRIMMAR },
+							-- #else
+							{ 60.8, 54.8, ORGRIMMAR },
+							-- #endif
+						},
+						["races"] = HORDE_ONLY,
+						["groups"] = CLASSIC_CATA_LEGION_LEATHERWORKING,
+					}),
+				}),
 			}),
 			n(QUESTS, {
 				q(7831, {	-- A Donation of Mageweave

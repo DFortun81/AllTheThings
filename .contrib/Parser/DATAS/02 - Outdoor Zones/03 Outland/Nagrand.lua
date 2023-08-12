@@ -1862,15 +1862,19 @@ root(ROOTS.Zones, {
 							i(29135),	-- Earthcaller's Headdress
 							i(29137),	-- Hellscream's Will
 							i(31773),	-- Mag'har Tabard
-							i(34174),	-- Pattern: Drums of Restoration (RECIPE!)
-							i(34172),	-- Pattern: Drums of Speed (RECIPE!)
+							i(34174, {	-- Pattern: Drums of Restoration [H] (RECIPE!)
+								["timeline"] = { ADDED_2_3_0 },
+							}),
+							i(34172, {	-- Pattern: Drums of Speed [H] (RECIPE!)
+								["timeline"] = { ADDED_2_3_0 },
+							}),
 							-- #if ANYCLASSIC
 							applyclassicphase(TBC_PHASE_FOUR, i(185924)),	-- Pattern: Greater Drums of Restoration (RECIPE!)
 							applyclassicphase(TBC_PHASE_FOUR, i(185923)),	-- Pattern: Greater Drums of Speed (RECIPE!)
 							-- #endif
-							i(25741),	-- Pattern: Netherfury Belt
-							i(25743),	-- Pattern: Netherfury Boots
-							i(25742),	-- Pattern: Netherfury Leggings
+							i(25741),	-- Pattern: Netherfury Belt [H] (RECIPE!)
+							i(25743),	-- Pattern: Netherfury Boots [H] (RECIPE!)
+							i(25742),	-- Pattern: Netherfury Leggings [H] (RECIPE!)
 							i(29664),	-- Pattern: Reinforced Mining Bag
 							i(22917),	-- Recipe: Transmute Primal Fire to Earth
 							i(31829),	-- Cobalt Riding Talbuk (H) (MOUNT!)
@@ -2110,15 +2114,19 @@ root(ROOTS.Zones, {
 							i(29136),	-- Far Seer's Helm
 							i(29142),	-- Kurenai Kilt
 							i(31774),	-- Kurenai Tabard
-							i(34175),	-- Pattern: Drums of Restoration (RECIPE!)
-							i(34173),	-- Pattern: Drums of Speed (RECIPE!)
+							i(34175, {	-- Pattern: Drums of Restoration [A] (RECIPE!)
+								["timeline"] = { ADDED_2_3_0 },
+							}),
+							i(34173, {	-- Pattern: Drums of Speed [A] (RECIPE!)
+								["timeline"] = { ADDED_2_3_0 },
+							}),
 							-- #if ANYCLASSIC
 							applyclassicphase(TBC_PHASE_FOUR, i(187048)),	-- Pattern: Greater Drums of Restoration (RECIPE!)
 							applyclassicphase(TBC_PHASE_FOUR, i(187049)),	-- Pattern: Greater Drums of Speed (RECIPE!)
 							-- #endif
-							i(29217),	-- Pattern: Netherfury Belt
-							i(29218),	-- Pattern: Netherfury Boots
-							i(29219),	-- Pattern: Netherfury Leggings
+							i(29217),	-- Pattern: Netherfury Belt [A] (RECIPE!)
+							i(29218),	-- Pattern: Netherfury Boots [A] (RECIPE!)
+							i(29219),	-- Pattern: Netherfury Leggings [A] (RECIPE!)
 							i(30444),	-- Pattern: Reinforced Mining Bag (RECIPE!)
 							i(30443),	-- Recipe: Transmute Primal Fire to Earth
 							i(31830),	-- Cobalt Riding Talbuk (A) (MOUNT!)

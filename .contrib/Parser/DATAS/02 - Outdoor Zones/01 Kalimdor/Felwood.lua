@@ -2780,7 +2780,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 7158,	-- Deadwood Shaman
 				}),
 				i(15739, {	-- Pattern: Runic Leather Bracers
-					["timeline"] = { "removed 4.0.3" },	-- Moved to Trainers
+					["timeline"] = { REMOVED_4_0_3 },	-- Moved to Trainers
 					["cr"] = 7112,	-- Jaedenar Cultist
 				}),
 				i(15754, {	-- Pattern: Warbear Woolies (RECIPE!)
