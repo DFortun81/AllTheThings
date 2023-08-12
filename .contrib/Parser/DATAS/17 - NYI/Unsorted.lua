@@ -503,7 +503,6 @@ root(ROOTS.Unsorted, {
 			i(207038),	-- Empty Gun Rack
 			i(207044),	-- <DNT> Lo'Gosh Offhand Weapon
 			i(207045),	-- <DNT> Lo'Gosh Mainhand Weapon
-			i(207057),	-- Gift of the White War Wolf
 			i(207096),	-- Paracausal Chest
 			i(207102),	-- TESTING ITEM DELETE ME
 			i(205199),	-- Slime Sheathed Shell
