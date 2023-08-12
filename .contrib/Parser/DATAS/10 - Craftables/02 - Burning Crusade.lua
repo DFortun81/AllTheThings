@@ -890,51 +890,6 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 			i(29485, {["timeline"] = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Flame Armor Kit
 			i(29486, {["timeline"] = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Frost Armor Kit
 			i(34207, {["timeline"] = {ADDED_2_3_0}}),	-- Glove Reinforcements
-			i(34330, {["timeline"] = {ADDED_2_3_0}}),	-- Heavy Knothide Armor Kit
-			i(23793),	-- Heavy Knothide Leather
-			i(25650),	-- Knothide Armor Kit
-			i(21887),	-- Knothide Leather
-			i(34482, {["timeline"] = {ADDED_2_3_0}}),	-- Leatherworker's Satchel
-			i(25652),	-- Magister's Armor Kit
-			i(29487, {["timeline"] = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Nature Armor Kit
-			i(29536),	-- Nethercleft Leg Armor
-			i(29535),	-- Nethercobra Leg Armor
-			i(29540),	-- Reinforced Mining Bag
-			i(29483, {["timeline"] = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Shadow Armor Kit
-			i(25651),	-- Vindicator's Armor Kit
-		}),
-		filter(TRINKET_F, {
-			i(25653),	-- Riding Crop
-		}),
-		category(929, {	-- Bags
-			applyclassicphase(TBC_PHASE_FOUR, i(34099, {	-- Knothide Ammo Pouch
-				["timeline"] = {
-					"added 2.3.0.7382",
-					"removed 4.0.1.13287",
-				},
-			})),
-			applyclassicphase(TBC_PHASE_FOUR, i(34100, {	-- Knothide Quiver
-				["timeline"] = {
-					"added 2.3.0.7382",
-					"removed 4.0.1.13287",
-				},
-			})),
-
-			applyclassicphase(TBC_PHASE_THREE, i(34106, {	-- Netherscale Ammo Pouch
-				["timeline"] = {
-					"added 2.3.0.7382",
-					"removed 4.0.1.13287",
-				},
-			})),
-			applyclassicphase(TBC_PHASE_THREE, i(34105, {	-- Quiver of a Thousand Feathers
-				["timeline"] = {
-					"added 2.3.0.7382",
-					"removed 4.0.1.13287",
-				},
-			})),
-
-		}),
-		category(940, {	-- Drums
 			-- #if ANYCLASSIC
 			applyclassicphase(TBC_PHASE_FOUR, i(185848)),	-- Greater Drums of Battle
 			applyclassicphase(TBC_PHASE_FOUR, i(185849)),	-- Greater Drums of Panic
@@ -942,6 +897,25 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 			applyclassicphase(TBC_PHASE_FOUR, i(185851)),	-- Greater Drums of Speed
 			applyclassicphase(TBC_PHASE_FOUR, i(185852)),	-- Greater Drums of War
 			-- #endif
+			i(34330, {["timeline"] = {ADDED_2_3_0}}),	-- Heavy Knothide Armor Kit
+			i(23793),	-- Heavy Knothide Leather
+			applyclassicphase(TBC_PHASE_FOUR, i(34099, {["timeline"] = {ADDED_2_3_0, REMOVED_4_0_1}})),	-- Knothide Ammo Pouch
+			i(25650),	-- Knothide Armor Kit
+			i(21887),	-- Knothide Leather
+			applyclassicphase(TBC_PHASE_FOUR, i(34100, {["timeline"] = {ADDED_2_3_0, REMOVED_4_0_1}})),	-- Knothide Quiver
+			i(34482, {["timeline"] = {ADDED_2_3_0}}),	-- Leatherworker's Satchel
+			i(25652),	-- Magister's Armor Kit
+			i(29487, {["timeline"] = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Nature Armor Kit
+			i(29536),	-- Nethercleft Leg Armor
+			i(29535),	-- Nethercobra Leg Armor
+			applyclassicphase(TBC_PHASE_THREE, i(34106, {["timeline"] = {ADDED_2_3_0, REMOVED_4_0_1}})),	-- Netherscale Ammo Pouch
+			applyclassicphase(TBC_PHASE_THREE, i(34105, {["timeline"] = {ADDED_2_3_0, REMOVED_4_0_1}})),	-- Quiver of a Thousand Feathers
+			i(29540),	-- Reinforced Mining Bag
+			i(29483, {["timeline"] = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Shadow Armor Kit
+			i(25651),	-- Vindicator's Armor Kit
+		}),
+		filter(TRINKET_F, {
+			i(25653),	-- Riding Crop
 		}),
 	}),
 	prof(MINING, {

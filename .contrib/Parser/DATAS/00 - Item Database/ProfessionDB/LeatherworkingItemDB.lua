@@ -3,6 +3,23 @@ local DRAGONSCALE = 10656;
 local ELEMENTAL = 10658;
 local TRIBAL = 10660;
 
+-- #if ANYCLASSIC
+------------------
+-- PATCH 2.5.1 --
+------------------
+--- TRAINER ---
+i(0, 351766);		-- Greater Drums of War
+--- ITEM ---
+i(185926, 351771);	-- Greater Drums of Battle
+i(185925, 351770);	-- Greater Drums of Panic
+i(187048, 351769);	-- Greater Drums of Restoration [A]
+i(185924, 351769);	-- Greater Drums of Restoration [H]
+i(187049, 351768);	-- Greater Drums of Speed [A]
+i(185923, 351768);	-- Greater Drums of Speed [H]
+--- NYI ---
+i(185922, 0);		-- Greater Drums of War
+-- #endif
+
 -----------------
 --   CLASSIC   --
 -----------------
@@ -474,7 +491,6 @@ i(32429, 39997);	-- Boots of Shackled Souls
 i(30307, 36358);	-- Boots of the Crimson Hawk
 i(30306, 36357);	-- Boots of Utter Darkness
 i(32744, 41156);	-- Bracers of Renewed Life
-i(32430, 40000);	-- Bracers of Shackled Souls [REMOVED: 4.0.3, See New Version]
 i(32431, 40001);	-- Greaves of Shackled Souls
 i(30308, 36359);	-- Hurricane Boots
 i(32750, 41163);	-- Living Earth Bindings
@@ -489,6 +505,8 @@ i(32749, 41162);	-- Shoulders of Lightning Reflexes
 i(32746, 41158);	-- Swiftstrike Bracers
 i(32747, 41160);	-- Swiftstrike Shoulders
 i(32432, 40002);	-- Waistguard of Shackled Souls
+--- SPECIAL ---
+i(0, 40000);		-- Bracers of Shackled Souls [REMOVED: 4.0.3, See New Version]
 
 ------------------
 -- PATCH 2.2.0 --
@@ -533,19 +551,6 @@ i(35301, 35573);	-- Netherdrake Gloves [BoP]
 i(35215, 46135);	-- Sun-Drenched Scale Gloves
 i(35219, 46139);	-- Sun-Drenched Scale Chestguard
 i(35300, 35568);	-- Windstrike Gloves [BoP]
-
-------------------
--- PATCH 2.5.1 --
-------------------
--- ITEM --
-i(185926, 351771);	-- Greater Drums of Battle
-i(185925, 351770);	-- Greater Drums of Panic
-i(187048, 351769);	-- Greater Drums of Restoration [A]
-i(185924, 351769);	-- Greater Drums of Restoration [H]
-i(187049, 351768);	-- Greater Drums of Speed [A]
-i(185923, 351768);	-- Greater Drums of Speed [H]
--- UNSURE --
-i(185922, 351766);	-- Greater Drums of War
 
 ------------------
 -- PATCH 3.0.1 --
@@ -757,7 +762,7 @@ i(49966, 70561);	-- Rock-Steady Treads
 ------------------
 -- PATCH 4.0.3 --
 ------------------
-i(32430, 52733);	-- Bracers of Shackled Souls
+i(0, 52733);	-- Bracers of Shackled Souls
 -- TRAINER --
 i(0, 78438);	-- Cloak of Beasts
 i(0, 78439);	-- Cloak of War

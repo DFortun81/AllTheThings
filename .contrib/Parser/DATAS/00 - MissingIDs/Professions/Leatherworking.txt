@@ -2,13 +2,6 @@
 r(35522),	-- Frost Armor Kit
 r(35523),	-- Nature Armor Kit
 r(35524),	-- Arcane Armor Kit
-r(40000),	-- Bracers of Shackled Souls
-2.5.1.38043
-r(351766),	-- Greater Drums of War
-r(351768),	-- Greater Drums of Speed
-r(351769),	-- Greater Drums of Restoration
-r(351770),	-- Greater Drums of Panic
-r(351771),	-- Greater Drums of Battle
 3.0.1.8303
 r(45541),	--
 r(48038),	--
@@ -114,7 +107,6 @@ r(99536),	-- Vicious Fur Cloak
 r(101600),	--
 5.0.3.15890
 r(102366),	-- Exotic Leather
-r(110955),	--
 r(124549),	--
 r(124551),	--
 r(124552),	--
@@ -177,7 +169,6 @@ r(85068),	--
 4.3.4.15595
 r(101600),	--
 5.0.3.15890
-r(110955),	--
 r(124549),	--
 r(124551),	--
 r(124552),	--

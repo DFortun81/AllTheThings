@@ -212,6 +212,9 @@ TBC_LEATHERWORKING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] 
 	filter(MISC, {
 		r(35540),	-- Drums of War
 		r(44770, {["timeline"] = {ADDED_2_3_0}}),	-- Glove Reinforcements
+		-- #if ANYCLASSIC
+		applyclassicphase(TBC_PHASE_FOUR, r(351766)),	-- Greater Drums of War
+		-- #endif
 		r(44970, {["timeline"] = {ADDED_2_3_0}}),	-- Heavy Knothide Armor Kit
 		r(32455),	-- Heavy Knothide Leather
 		r(44343, {["timeline"] = {ADDED_2_3_0, REMOVED_4_0_1}}),	-- Knothide Ammo Pouch
