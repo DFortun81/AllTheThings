@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Security.Policy;
@@ -83,12 +84,12 @@ namespace ATT
             //"cata",   // WoWHead for Cataclysm doesn't exist yet.
 #endif
 #if AFTERWRATH
-            "wotlk",
+            //"wotlk",
 #endif
 #if AFTERTBC
-            "tbc",
+            //"tbc",
 #endif
-            "classic"
+            //"classic"
         };
 
         /// <summary>
@@ -237,6 +238,23 @@ namespace ATT
                 return builder.Append(extraIndent).Append("}");
             }
             return null;
+        }
+
+        /// <summary>
+        /// Export any dirty objects to a given file path.
+        /// If there are no dirty objects, this function does nothing.
+        /// </summary>
+        /// <param name="filePath">The file path.</param>
+        public static void ExportDirtyObjectsToFilePath(string filePath)
+        {
+            var finalDirtyObjectStringBuilder = ExportDirtyObjects();
+            if (finalDirtyObjectStringBuilder != null)
+            {
+                Directory.CreateDirectory(Path.GetDirectoryName(filePath));
+                File.WriteAllText(filePath, finalDirtyObjectStringBuilder
+                    .Insert(0, "local ObjectDB = ObjectDB; for objectID,objectData in pairs(")
+                    .Append(")\ndo ObjectDB[objectID] = objectData; end").ToString(), Encoding.UTF8);
+            }
         }
 
         /// <summary>

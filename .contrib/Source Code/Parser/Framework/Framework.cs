@@ -5313,9 +5313,11 @@ namespace ATT
                 CurrentParseStage = ParseStage.ExportAutoLocale;
                 Objects.ExportAutoLocale(Path.Combine(addonRootFolder, $"db/{dbRootFolder}en_auto.lua"));
 
-                // Use this to attempt to harvest object IDs.
+                // Attempt to find some dirty objects and write them to a dynamic file.
+                var dirtyObjectsFilePath = Path.Combine(Config["root-data"] ?? "./DATAS", "00 - DB/Dynamic/", $"DynamicObjectDB_{DateTime.UtcNow.Ticks}.lua");
                 /*
-                for (int objectID = 1; objectID < 25000; ++objectID)
+                // This is the bulk harvester. It grabs aaaaaalll of them!
+                for (int objectID = 317874; objectID > 163; --objectID)
                 {
                     if (!ObjectDB.TryGetValue(objectID, out Dictionary<string, object> objectData))
                     {
@@ -5324,20 +5326,13 @@ namespace ATT
                         ObjectHarvester.UpdateInformationFromWoWHead(objectID, objectData);
                         if (!objectData.Any()) continue;
                         ObjectDB[objectID] = objectData;
+                        ObjectHarvester.ExportDirtyObjectsToFilePath(dirtyObjectsFilePath);
                     }
                 }
                 */
 
                 // Check to see if we need to export any dirty objects.
-                var dirtyObjectStringBuilder = ObjectHarvester.ExportDirtyObjects();
-                if (dirtyObjectStringBuilder != null)
-                {
-                    var filePath = Path.Combine(Config["root-data"] ?? "./DATAS", "00 - DB/Dynamic/", $"DynamicObjectDB_{DateTime.UtcNow.Ticks}.lua");
-                    Directory.CreateDirectory(Path.GetDirectoryName(filePath));
-                    File.WriteAllText(filePath, dirtyObjectStringBuilder
-                        .Insert(0, "local ObjectDB = ObjectDB; for objectID,objectData in pairs(")
-                        .Append(")\ndo ObjectDB[objectID] = objectData; end").ToString(), Encoding.UTF8);
-                }
+                ObjectHarvester.ExportDirtyObjectsToFilePath(dirtyObjectsFilePath);
             }
         }
     }
