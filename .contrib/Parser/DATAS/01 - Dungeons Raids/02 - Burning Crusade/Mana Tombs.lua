@@ -148,9 +148,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(29575, {	-- Undercutting the Competition
 					["qg"] = 54692,	-- Artificer Morphalius
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 28490, 1 },	-- Shaffar's Wrappings
-					},
 					["lvl"] = lvlsquish(62, 62, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Shaffar's Wrappings
