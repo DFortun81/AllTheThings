@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			pet(3487, {	-- Scarlapod (PET!)
 				["description"] = "Rarespawn of Cobbleshell. Cannot be Backline.",
-			--	["coord"] = { XX, YY, ZARALEK_CAVERN },
+				["coord"] = { 59.8, 58.3, ZARALEK_CAVERN },
 			}),
 			pet(3484, {	-- Slabwing (PET!)
 				["coord"] = { 49.3, 53.4, ZARALEK_CAVERN },
