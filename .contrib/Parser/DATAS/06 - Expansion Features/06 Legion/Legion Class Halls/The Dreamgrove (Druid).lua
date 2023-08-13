@@ -1,6 +1,91 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+DAILY_DREAMWAY_EVENT_ROLL = createHeader({
+	readable = "Daily Dreamway Event Roll",
+	icon = "Interface\\Icons\\inv_misc_druidstone04",
+	text = {
+		en = "Event Roll",
+		es = "Rollo de eventos",
+		de = "Ereignisliste",
+		fr = "Rouleau d'événement",
+		it = "Rotolo di eventi",
+		pt = "Lista de Eventos",
+		ru = "Ролл События",
+		ko = "이벤트 롤",
+		cn = "事件投骰",
+	},
+	description = {
+		en = "If this quest has a checkmark next to it, then check below which stone is active. If none of them are checked, that means that none of the owlcat stones can be interacted with today and that you should come back tomorrow.",
+	},
+});
+DUSKWOOD_ACTIVE = createHeader({
+	readable = "Duskwood Active",
+	icon = "Interface\\Icons\\achievement_zone_duskwood",
+	text = {
+		en = [[~DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(133137)]],
+		ru = "Сумеречный лес - активен",
+	},
+	description = {
+		en = "If this quest has a checkmark next to it, then that means the stone is active.",
+	},
+});
+FERALAS_ACTIVE = createHeader({
+	readable = "Feralas Active",
+	icon = "Interface\\Icons\\achievement_zone_feralas",
+	text = {
+		en = [[~DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(133137)]],
+		ru = "Фералас - активен",
+	},
+	description = {
+		en = "If this quest has a checkmark next to it, then that means the stone is active.",
+	},
+});
+THE_HINTERLANDS_ACTIVE = createHeader({
+	readable = "The Hinterlands Active",
+	icon = "Interface\\Icons\\achievement_zone_hinterlands_01",
+	text = {
+		en = [[~DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(133137)]],
+		ru = "Внутренние земли - активен",
+	},
+	description = {
+		en = "If this quest has a checkmark next to it, then that means the stone is active.",
+	},
+});
+DUSKWOOD_ACTIVATED = createHeader({
+	readable = "Duskwood Activated",
+	icon = "Interface\\Icons\\achievement_zone_duskwood",
+	text = {
+		en = [[~DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(78741)]],
+		ru = "Сумеречный лес - активирован",
+	},
+	description = {
+		en = "This quest indicates if you have activated the Duskwood Owlcat Stone.",
+	},
+});
+FERALAS_ACTIVATED = createHeader({
+	readable = "Feralas Activated",
+	icon = "Interface\\Icons\\achievement_zone_feralas",
+	text = {
+		en = [[~DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(78741)]],
+		ru = "Фералас - активирован",
+	},
+	description = {
+		en = "This quest indicates if you have activated the Feralas Owlcat Stone.",
+	},
+});
+THE_HINTERLANDS_ACTIVATED = createHeader({
+	readable = "The Hinterlands Activated",
+	icon = "Interface\\Icons\\achievement_zone_hinterlands_01",
+	text = {
+		en = [[~DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(78741)]],
+		ru = "Внутренние земли - активирован",
+	},
+	description = {
+		en = "This quest indicates if you have activated the Hinterlands Owlcat Stone.",
+	},
+});
+
 
 root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
 	n(CLASS_HALL, {
@@ -872,17 +957,13 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 				m(715, bubbleDown({["classes"] = { DRUID }},{	-- Emerald Dreamway
 					["icon"] = "Interface\\Icons\\spell_arcane_portalshattrath",	-- Dream Portal Icon
 					["g"] = {
-						n(-159, {	-- Daily Dreamway Event Roll
-							["isDaily"] = true,
+						n(DAILY_DREAMWAY_EVENT_ROLL, {
 							["questID"] = 44326,	-- "daily dreamway event roll" on WoWHead
-							["description"] = "If this quest has a checkmark next to it, then check below which stone is active. If none of them are checked, that means that none of the owlcat stones can be interacted with today and that you should come back tomorrow.",
-							["icon"] = "Interface\\Icons\\inv_misc_druidstone04",
-							["g"] = {
-								n(-130, {	-- Duskwood Active
-									["isDaily"] = true,
+							["isDaily"] = true,
+							["groups"] = {
+								n(DUSKWOOD_ACTIVE, {
 									["questID"] = 44329,	-- Owlcat Stone Activate [Duskwood]
-									["description"] = "If this quest has a checkmark next to it, then that means the stone is active.",
-									["sourceQuests"] = { 44326 },	-- Daily Dreamway Event Roll
+									["sourceQuest"] = 44326,	-- Daily Dreamway Event Roll
 									["coords"] = {
 										{ 42.0, 38.0, DUSKWOOD },
 										{ 43.0, 38.0, DUSKWOOD },
@@ -901,12 +982,11 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 										{ 51.0, 41.0, DUSKWOOD },
 										{ 51.0, 43.0, DUSKWOOD },
 									},
-								}),
-								n(-132, {	-- Feralas Active
 									["isDaily"] = true,
+								}),
+								n(FERALAS_ACTIVE, {
 									["questID"] = 44327,	-- Owlcat Stone Activate [Feralas]
-									["description"] = "If this quest has a checkmark next to it, then that means the stone is active.",
-									["sourceQuests"] = { 44326 },	-- Daily Dreamway Event Roll
+									["sourceQuest"] = 44326,	-- Daily Dreamway Event Roll
 									["coords"] = {
 										{ 48.0, 6.0, FERALAS },
 										{ 48.0, 10.0, FERALAS },
@@ -930,12 +1010,11 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 										{ 54.0, 12.9, FERALAS },
 										{ 54.0, 15.0, FERALAS },
 									},
-								}),
-								n(-131, {	-- The Hinterlands Active
 									["isDaily"] = true,
+								}),
+								n(THE_HINTERLANDS_ACTIVE, {
 									["questID"] = 44328,	-- Owlcat Stone Activate [Hinterlands]
-									["description"] = "If this quest has a checkmark next to it, then that means the stone is active.",
-									["sourceQuests"] = { 44326 },	-- Daily Dreamway Event Roll
+									["sourceQuest"] = 44326,	-- Daily Dreamway Event Roll
 									["coords"] = {
 										{ 57.0, 34.0, THE_HINTERLANDS },
 										{ 58.1, 18.1, THE_HINTERLANDS },
@@ -957,28 +1036,26 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 										{ 68.9, 32.4, THE_HINTERLANDS },
 										{ 68.0, 36.0, THE_HINTERLANDS },
 									},
+									["isDaily"] = true,
 								}),
 							},
 						}),
-						n(-133, {	-- Duskwood Activated
+						n(DUSKWOOD_ACTIVATED, {
 							["questID"] = 44330,	-- Owlcat Stone Touched [Duskwood]
-							["description"] = "This quest indicates if you have activated the Duskwood Owlcat Stone.",
 							["sourceQuests"] = { 44329 },	-- Owlcat Stone Activate [Duskwood]
 						}),
-						n(-158, {	-- Feralas Activated
+						n(FERALAS_ACTIVATED, {
 							["questID"] = 44331,	-- Owlcat Stone Touched [Feralas]
-							["description"] = "This quest indicates if you have activated the Feralas Owlcat Stone.",
 							["sourceQuests"] = { 44327 },	-- Owlcat Stone Activate [Feralas]
 						}),
-						n(-157, {	-- The Hinterlands Activated
+						n(THE_HINTERLANDS_ACTIVATED, {
 							["questID"] = 44332,	-- Owlcat Stone Touched [Hinterlands]
-							["description"] = "This quest indicates if you have activated the Hinterlands Owlcat Stone.",
 							["sourceQuests"] = { 44328 },	-- Owlcat Stone Activate [Hinterlands]
 						}),
 						n(113663, {	-- Ela'lothen <The Moonspirit>
 							["description"] = "Turn on \"Show Incomplete Quests\" to see which stones you are still missing.  Each quest has a description added to it on it's location.\n\nOnce all 3 of the Owlcat stones are activated, you will be able to see Ela'lothen. Type /sit at him for the Feather of the Moonspirit to appear in your inventory.",
-							["sourceQuests"] = { 44330, 44331, 44332 },	--
-							["g"] = {
+							["sourceQuests"] = { 44330, 44331, 44332 },
+							["groups"] = {
 								i(139552, {	-- Feather of the Moonspirit
 									artifact(830),	-- Feral Druid Hidden Artifact Appearance
 								}),

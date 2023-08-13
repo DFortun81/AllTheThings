@@ -1,6 +1,24 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+DAILY_EVENT_ROLL = createHeader({
+	readable = "Daily Event Roll",
+	icon = "Interface\\Icons\\Achievement_Zone_Frostfire",
+	text = {
+		en = "Event Roll",
+		es = "Rollo de eventos",
+		de = "Ereignisliste",
+		fr = "Rouleau d'événement",
+		it = "Rotolo di eventi",
+		pt = "Lista de Eventos",
+		ru = "Ролл События",
+		ko = "이벤트 롤",
+		cn = "事件投骰",
+	},
+	description = {
+		en = "If this quest has a checkmark next to it, then check below to see if you are eligible for the scenario portal. If not, that means that you should come back tomorrow.",
+	},
+});
 
 root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.0.3" } }, {
 	n(CLASS_HALL, {
@@ -105,16 +123,14 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						gt(386, {		-- Teleportation Nexus
 							["description"] = "A set of 5 portals is generated in the Class Hall; there is a small daily chance instead you will be phased to Frostfire Ridge where you can loot Everburning Crystal. You will be alerted to this chance by an emote when walking around on the stairs of your class hall.",
 							["g"] = {
-								n(-159, {	-- Daily Event Roll
-									["isDaily"] = true,
-									["isBreadcrumb"] = true,
+								n(DAILY_EVENT_ROLL, {
 									["questID"] = 44384,	-- "Daily Portal Event Roll" on WoWHead
-									["description"] = "If this quest has a checkmark next to it, then check below to see if you are eligible for the scenario portal. If not, that means that you should come back tomorrow.",
-									["icon"] = "Interface\\Icons\\Achievement_Zone_Frostfire",
+									["isBreadcrumb"] = true,
+									["isDaily"] = true,
 								}),
 								n(113513, {	-- Asher <Fury of Frostfire>
 									["description"] = "If this quest has a checkmark next to it, then that means the scenario portal is active. He only appears in a special phase in Frostfire Ridge upon taking the portal.",
-									["sourceQuests"] = { 44384 },	-- Daily Portal Event Roll
+									["sourceQuest"] = 44384,	-- Daily Portal Event Roll
 									["g"] = {
 										i(139560, {	-- Everburning Crystal
 											artifact(180),	-- Ebonchill

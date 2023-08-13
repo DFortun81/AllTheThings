@@ -693,8 +693,6 @@ for key,value in pairs({
 		[-152] = "要塞战役",											-- Garrison Campaign
 	-- Class Trial
 		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." ".."（直升）",	-- Level 50 (Boost)
-	-- Class Hall /Artifact
-		[-159] = "事件投骰",										-- Daily Dreamway Event Roll
 	-- Fishing
 		[-217] = "鱼竿",												-- Lures (for Fishing)
 	-- PvP

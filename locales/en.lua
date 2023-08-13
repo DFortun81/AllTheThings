@@ -980,13 +980,6 @@ app.L = {
 	-- Can also use the direct IconID, i.e. wowhead.com/icon=###
 	-- https://www.wowhead.com/icons
 	["HEADER_ICONS"] = {
-	-- Druid Feral Druid Hidden Artifact Appearance
-		[-130] = "Interface\\Icons\\achievement_zone_duskwood",								-- Duskwood Active
-		[-131] = "Interface\\Icons\\achievement_zone_hinterlands_01",						-- The Hinterlands Active
-		[-132] = "Interface\\Icons\\achievement_zone_feralas",								-- Feralas Active
-		[-133] = "Interface\\Icons\\achievement_zone_duskwood",								-- Duskwood Activated
-	-- Garrisons Invasions TODO: what levels?
-		[-136] = "Interface\\Icons\\achievement_bg_defendxtowers_av",						-- Garrison Invasion
 	-- Class Trial
 		[-137] = "Interface\\Icons\\achievement_level_90",									-- Level 90
 		[-138] = "Interface\\Icons\\achievement_level_100",									-- Level 100
@@ -1010,9 +1003,6 @@ app.L = {
 		[-154] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",						-- Level 48
 		[-155] = 236566,																	-- Level 50 Character Boost
 		[-156] = 236567,																	-- Level 60 Character Boost
-	-- Druid Feral Druid Hidden Artifact Appearance
-		[-157] = "Interface\\Icons\\achievement_zone_hinterlands_01",						-- The Hinterlands Activated
-		[-158] = "Interface\\Icons\\achievement_zone_feralas",								-- Feralas Activated
 	-- Class Trial
 		[-160] = 236567,																	-- Level 60 Class Trial
 	-- New Characters
@@ -1183,13 +1173,6 @@ app.L = {
 		[-10082] = "Interface\\Icons\\spell_priest_psyfiend",						-- Lost Area (Vision Scenario)
 	};
 	["HEADER_NAMES"] = {
-	-- Druid Feral Druid Hidden Artifact Appearance
-		[-130] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(133137),		-- Duskwood Active
-		[-131] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(133137),		-- The Hinterlands Active
-		[-132] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(133137),		-- Feralas Active
-		[-133] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(78741),		-- Duskwood Activated
-	-- Garrisons Invasions TODO: what levels?
-		[-136] = GARRISON_LANDING_INVASION,										-- Garrison Invasion
 	-- Class Trial
 		[-137] = string.format(SPELLBOOK_AVAILABLE_AT, 90),						-- Level 90
 		[-138] = string.format(SPELLBOOK_AVAILABLE_AT, 100),					-- Level 100
@@ -1213,11 +1196,6 @@ app.L = {
 		[-154] = string.format(SPELLBOOK_AVAILABLE_AT, 48),						-- Level 48
 		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." "..CHARACTER_UPGRADE_CHARACTER_LIST_LABEL,	-- Level 50 Character Boost
 		[-156] = string.format(SPELLBOOK_AVAILABLE_AT, 60).." "..CHARACTER_UPGRADE_CHARACTER_LIST_LABEL,	-- Level 60 Character Boost
-	-- Druid Feral Druid Hidden Artifact Appearance
-		[-157] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(78741),		-- The Hinterlands Activated
-		[-158] = DUNGEON_FLOOR_NIGHTMARERAID9.." "..GetSpellInfo(78741),		-- Feralas Activated
-	-- Class Hall /Artifact
-		[-159] = "Event Roll",													-- Daily Dreamway Event Roll
 	-- Class Trial
 		[-160] = string.format(SPELLBOOK_AVAILABLE_AT, 60).." "..CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER,	-- Level 60 Class Trial
 	-- Item Sets

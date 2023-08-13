@@ -660,18 +660,8 @@ do a[key] = value; end
 
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Alliance [Swaps based on faction ONLY after a reloadui]
-		[-130] = "Сумеречный лес - активен",						-- Duskwood Active
-		[-131] = "Внутренние земли - активен",						-- The Hinterlands Active
-		[-132] = "Фералас - активен",								-- Feralas Active
-		[-133] = "Сумеречный лес - активирован",					-- Duskwood Activated
 	-- Garrison
 		[-152] = "Гарнизонная кампания",							-- Garrison Campaign
-	-- Druid Feral Druid Hidden Artifact Appearance
-		[-157] = "Внутренние земли - активирован",					-- The Hinterlands Activated
-		[-158] = "Фералас - активирован",							-- Feralas Activated
-	-- Class Hall /Artifact
-		[-159] = "Ролл События",									-- Daily Dreamway Event Roll
 	-- Other
 		[-211] = "Новый персонаж",									-- New Character
 	-- Fishing
