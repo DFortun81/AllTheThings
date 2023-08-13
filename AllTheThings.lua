@@ -12122,10 +12122,10 @@ local mapFields = {
 		return "mapID";
 	end,
 	["name"] = function(t)
-		return t.creatureID and app.NPCNameFromID[t.creatureID] or app.GetMapName(t.mapID);
+		return t.headerID and app.NPCNameFromID[t.headerID] or app.GetMapName(t.mapID);
 	end,
 	["icon"] = function(t)
-		return t.creatureID and L["HEADER_ICONS"][t.creatureID] or app.asset("Category_Zones");
+		return t.headerID and L["HEADER_ICONS"][t.headerID] or app.asset("Category_Zones");
 	end,
 	["back"] = function(t)
 		if app.CurrentMapID == t.mapID or (t.maps and contains(t.maps, app.CurrentMapID)) then
@@ -12174,6 +12174,11 @@ app.CreateMap = function(id, t)
 		t = setmetatable(t, app.BaseMapWithAchievementID);
 	else
 		t = setmetatable(t, app.BaseMap);
+	end
+	local npcID = t.npcID;
+	if npcID and npcID < 0 then
+		t.headerID = npcID;
+		t.npcID = nil;
 	end
 	return t;
 end
