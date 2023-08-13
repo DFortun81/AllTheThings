@@ -18519,8 +18519,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		};
 		-- Headers possible in a hierarchy that should just be ignored
 		local ignoredHeaders = {
-		-- GARRISONS
-			[-9966] = true,
+			[app.HeaderConstants.GARRISONS] = true,
 		};
 		-- self.Rebuild
 		(function()

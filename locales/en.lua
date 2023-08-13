@@ -1173,7 +1173,6 @@ app.L = {
 	------ ACHIEVEMENT HEADERS SECTION ------
 	-- Is Used Somewhere
 		[-9965] = "Interface\\Icons\\achievement_level_110",						-- Class Hall
-		[-9966] = 1041860,															-- Dreanor Garrison
 		[-10048] = "Interface\\Icons\\buff_feltreasures",							-- Mage Tower
 		[-10050] = "Interface\\Icons\\buff_epichunter",								-- Nether Disruptor
 		[-10058] = app.asset("Category_Zones"),										-- World
@@ -1402,7 +1401,6 @@ app.L = {
 
 	------ ACHIEVEMENT HEADERS SECTION ------
 		[-9965] = select(1,GetCategoryInfo(15304)),								-- Class Hall
-		[-9966] = select(1,GetCategoryInfo(15303)),								-- Draenor Garrison
 		[-10048] = BROKENSHORE_BUILDING_MAGETOWER,								-- Mage Tower
 		[-10050] = BROKENSHORE_BUILDING_NETHERDISRUPTOR,						-- Nether Disruptor
 		[-10058] = WORLD,														-- World
