@@ -132,7 +132,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["description"] = "Can drop any Time Rift Vendor Item.",
 				}, FILTERFUNC_npcID,{
 					n(COMMON_BOSS_DROPS, {
-						i(207113),	-- Grimoire of the Trickster Fel Imp (CI!) [Runaway confirmed > n205307, also WH comments from basically every boss]
+						-- Both drops from any boss
+						i(207113),	-- Grimoire of the Trickster Fel Imp (CI!)
+						i(208052),	-- Grimoire of the Voracious Felmaw (CI!)
 					}),
 					-- testing out organizing with raw NPCs for bosses and nesting under the respective maps where they spawn
 					-- this will allow the achievement criteria to move under the proper bosses instead of being listed separately in lists
@@ -161,7 +163,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							-- 	208548,	-- Shi Everbreeze
 							-- },{"pop"}},
 							["g"] = {
-								i(208052),	-- Grimoire of the Voracious Felmaw (CI!)
 							},
 						}),
 						o(403786,{	-- Antlered Skull
