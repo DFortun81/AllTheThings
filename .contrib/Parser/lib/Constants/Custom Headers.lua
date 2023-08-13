@@ -2,8 +2,6 @@
 --     C U S T O M   H E A D E R S       --
 -------------------------------------------
 -- Expansion Features
-	-- Legion
-	CLASS_HALL = -9965;
 	-- BFA
 	ISLAND_EXPEDITIONS = -3338;
 	-- SL

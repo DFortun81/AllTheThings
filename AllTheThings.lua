@@ -17282,9 +17282,7 @@ function app:GetDataCache()
 
 	-- Black Market
 	if app.Categories.BlackMarket then
-		db = app.CreateNPC(-94);
-		db.g = app.Categories.BlackMarket;
-		db.text = BLACK_MARKET_AUCTION_HOUSE;
+		db = app.CreateNPC(app.HeaderConstants.BLACK_MARKET_AUCTION_HOUSE, app.Categories.BlackMarket);
 		db.icon = app.asset("Category_Blackmarket");
 		tinsert(g, db);
 	end

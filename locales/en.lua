@@ -980,8 +980,6 @@ app.L = {
 	-- Can also use the direct IconID, i.e. wowhead.com/icon=###
 	-- https://www.wowhead.com/icons
 	["HEADER_ICONS"] = {
-		[-43] = 618859,																		-- Proving Grounds [achievement_challengemode_platinum]
-		[-94] = "Interface\\Icons\\inv_misc_lockbox_1",										-- Black Market AH
 	-- Druid Feral Druid Hidden Artifact Appearance
 		[-130] = "Interface\\Icons\\achievement_zone_duskwood",								-- Duskwood Active
 		[-131] = "Interface\\Icons\\achievement_zone_hinterlands_01",						-- The Hinterlands Active
@@ -1172,7 +1170,6 @@ app.L = {
 		[-6014] = "Interface\\Icons\\Spell_Arcane_PortalUnderCity",							-- Cities
 	------ ACHIEVEMENT HEADERS SECTION ------
 	-- Is Used Somewhere
-		[-9965] = "Interface\\Icons\\achievement_level_110",						-- Class Hall
 		[-10048] = "Interface\\Icons\\buff_feltreasures",							-- Mage Tower
 		[-10050] = "Interface\\Icons\\buff_epichunter",								-- Nether Disruptor
 		[-10058] = app.asset("Category_Zones"),										-- World
@@ -1186,8 +1183,6 @@ app.L = {
 		[-10082] = "Interface\\Icons\\spell_priest_psyfiend",						-- Lost Area (Vision Scenario)
 	};
 	["HEADER_NAMES"] = {
-		[-43] = TRACKER_HEADER_PROVINGGROUNDS,									-- Proving Grounds
-		[-94] = BLACK_MARKET_AUCTION_HOUSE,										-- Black Market Auction House
 	-- Druid Feral Druid Hidden Artifact Appearance
 		[-130] = DUNGEON_FLOOR_NIGHTMARERAID8.." "..GetSpellInfo(133137),		-- Duskwood Active
 		[-131] = DUNGEON_FLOOR_NIGHTMARERAID7.." "..GetSpellInfo(133137),		-- The Hinterlands Active
@@ -1400,7 +1395,6 @@ app.L = {
 		[-6014] = BUG_CATEGORY4,												-- Cities
 
 	------ ACHIEVEMENT HEADERS SECTION ------
-		[-9965] = select(1,GetCategoryInfo(15304)),								-- Class Hall
 		[-10048] = BROKENSHORE_BUILDING_MAGETOWER,								-- Mage Tower
 		[-10050] = BROKENSHORE_BUILDING_NETHERDISRUPTOR,						-- Nether Disruptor
 		[-10058] = WORLD,														-- World

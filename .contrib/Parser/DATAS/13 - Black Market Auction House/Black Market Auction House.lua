@@ -4,7 +4,7 @@
 root(ROOTS.BlackMarket, {
 	n(VENDORS, bubbleDown({
 			["sym"] = {
-				{"select", "headerID", -94},		-- Select BMAH header
+				{"select", "headerID", BLACK_MARKET_AUCTION_HOUSE },		-- Select BMAH header
 				{"pop"},							-- Pop the header
 				{"exclude", "headerID", VENDORS },	-- Not the Vendor Header
 			},
@@ -430,7 +430,7 @@ root(ROOTS.BlackMarket, bubbleDown({ ["u"] = BLACK_MARKET, },{
 	i(141006),	-- The First Satyr's Spaulders
 	i(169430, {	--  Unclaimed Black Market Container
 		["sym"] = {
-			{"select", "headerID", -94},		-- Select BMAH header
+			{"select", "headerID", BLACK_MARKET_AUCTION_HOUSE },		-- Select BMAH header
 			{"pop"},							-- Pop the header
 			{"exclude", "headerID", VENDORS },	-- Not the Vendor Header
 			{"not", "itemID", 169430 },			-- Remove itself from the final list

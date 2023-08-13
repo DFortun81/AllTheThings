@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 
 root(ROOTS.ExpansionFeatures, tier(MOP_TIER, {
-	n(-43, {	-- Proving Grounds
+	n(PROVING_GROUNDS, {
 		["maps"] = { 480 },	-- Proving Grounds
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -39,7 +39,7 @@ root(ROOTS.ExpansionFeatures, tier(MOP_TIER, {
 }));
 
 root(ROOTS.NeverImplemented, tier(MOP_TIER, {
-	n(-43, {	-- Proving Grounds
+	n(PROVING_GROUNDS, {
 		ach(8812),	-- You're Really Doing It Wrong (Level 90)
 	}),
 }));
