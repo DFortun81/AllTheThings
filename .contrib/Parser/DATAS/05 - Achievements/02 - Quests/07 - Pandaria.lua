@@ -262,55 +262,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(9),		-- Children of the Grave
 			crit(10),		-- Battle Hymn
 		}),
-		ach(8121, {		-- Stormbreaker
-			title(221),		-- the Stormbreaker
-			ach(8099, {		-- Isle of Thunder
-				crit(1),		-- First Landing
-				crit(2),		-- Build a Base
-				crit(3),		-- Break Down the Wall
-				crit(4),		-- Take the Forge
-				crit(5),		-- Assault the Shipyard
-				crit(6),		-- The Fall of Shan Bu
-			}),
-			ach(8101, {		-- It Was Worth Every Ritual Stone
-				crit(1),		-- Spirit of Warlord Teng
-				crit(2),		-- Kor'dok and Tinzo the Emberkeeper
-				crit(3),		-- Echo of Kros
-				crit(4),		-- Electromancer Ju'le
-				crit(5),		-- Qi'nor
-				crit(6),		-- Ancient Mogu Guardian
-				crit(7),		-- Windweaver Akil'amon
-				crit(8),		-- Cera
-				crit(9),		-- Incomplete Drakkari Colossus
-				ach(8100),		-- Pay to Slay
-			}),
-			ach(8104),		-- Thunder Plunder
-			ach(8107),		-- Ready for RAAAAIIIIDDD?!?ing
-			ach(8108, {		-- When in Ihgaluk, Do as the Skumblade Do
-				crit(1),		-- Kroshik Egg
-				crit(2),		-- Baby Kroshik
-				crit(3),		-- Adult Kroshik
-				crit(4),		-- Sacrificed Kroshik
-			}),
-			ach(8110, {		-- These Mogu Have Gotta Go-gu
-				crit(1),		-- Haqin of the Hundred Spears
-				crit(2),		-- Forgemaster Deng
-				crit(3),		-- Sparkmancer Vu
-				ach(8109),		-- The Mogu Below-gu
-			}),
-			ach(8111),		-- This Isn't Even My Final Form
-			ach(8112),		-- Blue Response
-			ach(8114),		-- Platform Hero
-			ach(8115),		-- Speed Metal
-			ach(8116),		-- You Made Me Bleed My Own Blood
-			ach(8117),		-- For the Ward!
-			ach(8118),		-- Boop
-			ach(8119, {		-- Our Powers Combined
-				crit(1),		-- All four blessings active
-				crit(2),		-- No blessings active
-			}),
-			ach(8120),		-- Direhorn in a China Shop
-		}),
+		
 		ach(7314),		-- Test Drive (Dread Wastes)
 		ach(7293),		-- Till the Break of Dawn (Halfhill)
 		ach(7288),		-- Yak Attack (Niuzao Temple)

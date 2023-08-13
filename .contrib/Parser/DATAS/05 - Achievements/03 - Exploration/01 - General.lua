@@ -216,18 +216,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_ACHCAT_OnUpdate(t, ]] .. ACHIEVEMENT_CATEGORY_OUTLAND_EXP .. [[); end]],
 			-- #endif
 		})),
-		applyclassicphase(MOP_PHASE_ONE, ach(6974, {	-- Pandaria Explorer [7.0.3] / Explore Pandaria
-			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
-				6978,	-- Explore Dread Wastes
-				6351,	-- Explore Jade Forest
-				6975,	-- Explore Krasarang Wilds
-				6976,	-- Explore Kun-Lai Summit
-				6977,	-- Explore Townlong Steppes
-				6979,	-- Explore Vale of Eternal Blossoms
-				6969,	-- Explore Valley of the Four Winds
-			}},
-		})),
 		ach(2556, {	-- Pest Control
 			crit(1),	-- Larva (Naxxramas, Ghostlands)
 			crit(2),	-- Water Snake (Orgrimmar, Northern Stranglethorn, Durotar, Twilight Highlands)
