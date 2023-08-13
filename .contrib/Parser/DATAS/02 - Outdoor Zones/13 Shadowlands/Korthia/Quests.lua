@@ -77,7 +77,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							i(185114),	-- Redeemed Inquisitor's Wraps
 						},
 					}),
-					i(187000),	-- Pattern: Elusive Pet Treat (RECIPE!)
 					i(186017),	-- Korthite Crystal - rewarded by some dailies and found in some treasures, but does not seem statically attached to anything specific.  acquisition/availability may be based on having completed the campaign questline to the point where you get to the Vault of Secrets
 					i(186548),	-- Chompy (PET!)
 					i(187184),	-- Vesper of Clarity (TOY!)
@@ -1368,6 +1367,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
 				["coord"] = { 60.5, 27.7, KORTHIA },
+				["g"] = {
+					i(187000),	-- Pattern: Elusive Pet Treat (RECIPE!)
+				},
 			}),
 			q(63781, {	-- Mawsworn Battle Plans
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
@@ -1430,6 +1432,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["coord"] = { 60.5, 27.6, KORTHIA },
 				["g"] = {
 					ach(15056),		-- Friend of Bloop
+					i(187000),	-- Pattern: Elusive Pet Treat (RECIPE!)
 				},
 			}),
 			q(64016, {	-- Oozing with Character (Ooz)
