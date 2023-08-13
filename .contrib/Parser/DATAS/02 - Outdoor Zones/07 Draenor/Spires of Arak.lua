@@ -98,76 +98,78 @@ root(ROOTS.Zones, {
 					ach(8925,  {	-- Between Arak and a Hard Place (Alliance)
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							crit(1, {	-- Shadows Gather
-								["sourceQuests"] = { 35671 },	-- A Gathering of Shadows
+							follower(218),	-- Talonpriest Ishaal
+							crit(26023, {	-- Shadows Gather
+								["_quests"] = { 35671 },	-- A Gathering of Shadows
 							}),
-							crit(2, {	-- Admiral Taylor's Garrison
-								["sourceQuests"] = { 35482 },	-- Admiral Taylor
+							crit(26022, {	-- Admiral Taylor's Garrison
+								["_quests"] = { 35482 },	-- Admiral Taylor [A]
 							}),
-							crit(3, {	-- Secrets of the Talonpriests
-								["sourceQuests"] = { 34942 },	-- Back from Beyond
+							crit(26024, {	-- Secrets of the Talonpriests
+								["_quests"] = { 34942 },	-- Back from Beyond
 							}),
-							crit(4, {	-- The Gods of Arak
-								["sourceQuests"] = {
-									35012,	-- Sethe, the Dead God
-									35245,	-- A Sentimental Relic
-								},
+							crit(26025, {	-- The Gods of Arak
+								["_quests"] = { 35245 },	-- A Sentimental Relic
 							}),
-							crit(5, {	-- Legacy of the Apexis
-								["sourceQuests"] = { 35634 },	-- Control is King
+							crit(26026, {	-- The Gods of Arak
+								["_quests"] = { 35012 },	-- Sethe, the Dead God
 							}),
-							crit(6, {	-- Terokk's Legend
-								["sourceQuests"] = { 35896 },	-- The Avatar of Terokk
+							crit(26027, {	-- Legacy of the Apexis
+								["_quests"] = { 35634 },	-- Control is King
 							}),
-							crit(7, {	-- Securing Southport
-								["sourceQuests"] = {
-									36165,	-- No Time to Waste (Stoktron Brewery)
-									35835,	-- The Ebon Hunter (Smuggler's Den)
-								},
+							crit(26028, {	-- Terokk's Legend
+								["_quests"] = { 35896 },	-- The Avatar of Terokk
 							}),
-							crit(8, {	-- Pinchwhistle Gearworks
-								["sourceQuests"] = { 35298 },	-- Flame On
+							crit(27696, {	-- Veil Zekk
+								["_quests"] = { 35835 },	--  The Ebon Hunter (Smuggler's Den)
 							}),
-							crit(9, {	-- When the Raven Swallows the Day
-								["sourceQuests"] = { 35704 },	-- When All is Aligned
+							crit(27697, {	-- The Antidote
+								["_quests"] = { 36165 },	-- No Time to Waste (Stoktron Brewery)
+							}),
+							crit(26030, {	-- Pinchwhistle Gearworks
+								["_quests"] = { 35298 },	-- Flame On
+							}),
+							crit(26029, {	-- When the Raven Swallows the Day
+								["_quests"] = { 35704 },	-- When All is Aligned
 							}),
 						},
 					}),
 					ach(8926,  {	-- Between Arak and a Hard Place (Horde)
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							crit(1, {	-- Shadows Gather
-								["sourceQuests"] = { 35671 },	-- A Gathering of Shadows
+							follower(218),	-- Talonpriest Ishaal
+							crit(26023, {	-- Shadows Gather
+								["_quests"] = { 35671 },	-- A Gathering of Shadows
 							}),
-							crit(2, {	-- Admiral Taylor's Garrison
-								["sourceQuests"] = { 36183 },	-- Admiral Taylor
+							crit(26035, {	-- Admiral Taylor's Garrison
+								["_quests"] = { 36183 },	-- Admiral Taylor [H]
 							}),
-							crit(3, {	-- Secrets of the Talonpriests
-								["sourceQuests"] = { 34942 },	-- Back from Beyond
+							crit(26024, {	-- Secrets of the Talonpriests
+								["_quests"] = { 34942 },	-- Back from Beyond
 							}),
-							crit(4, {	-- The Gods of Arak
-								["sourceQuests"] = {
-									35012,	-- Sethe, the Dead God
-									35245,	-- A Sentimental Relic
-								},
+							crit(26025, {	-- The Gods of Arak
+								["_quests"] = { 35245 },	-- A Sentimental Relic
 							}),
-							crit(5, {	-- Legacy of the Apexis
-								["sourceQuests"] = { 35634 },	-- Control is King
+							crit(26026, {	-- The Gods of Arak
+								["_quests"] = { 35012 },	-- Sethe, the Dead God
 							}),
-							crit(6, {	-- Terokk's Legend
-								["sourceQuests"] = { 35896 },	-- The Avatar of Terokk
+							crit(26027, {	-- Legacy of the Apexis
+								["_quests"] = { 35634 },	-- Control is King
 							}),
-							crit(7, {	-- Establishing Axefall
-								["sourceQuests"] = {
-									36166,	-- No Time to Waste
-									35797,	-- The Ebon Hunter (Smuggler's Den)
-								},
+							crit(26028, {	-- Terokk's Legend
+								["_quests"] = { 35896 },	-- The Avatar of Terokk
 							}),
-							crit(8, {	-- Pinchwhistle Gearworks
-								["sourceQuests"] = { 35298 },	-- Flame On
+							crit(27698, {	-- Veil Zekk
+								["_quests"] = { 35797 },	--  The Ebon Hunter (Smuggler's Den)
 							}),
-							crit(9, {	-- When the Raven Swallows the Day
-								["sourceQuests"] = { 35704 },	-- When All is Aligned
+							crit(27699, {	-- The Antidote
+								["_quests"] = { 36166 },	-- No Time to Waste (Stoktron Brewery)
+							}),
+							crit(26030, {	-- Pinchwhistle Gearworks
+								["_quests"] = { 35298 },	-- Flame On
+							}),
+							crit(26029, {	-- When the Raven Swallows the Day
+								["_quests"] = { 35704 },	-- When All is Aligned
 							}),
 						},
 					}),
@@ -677,14 +679,14 @@ root(ROOTS.Zones, {
 						["coord"] = { 43.6, 12.9, SPIRES_OF_ARAK },
 						["provider"] = { "n", 79519 },	-- Reshad
 					}),
-					q(36183, {	-- Admiral Taylor
+					q(35482, {	-- Admiral Taylor [A]
 						["sourceQuests"] = {
 							35408,	-- Prime the Cannons
 							35407,	-- Punishable by Death
 						},
+						["coord"] = { 37.6, 53.7, SPIRES_OF_ARAK },
+						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 82278 },	-- Lady Claudia
-						["coord"] = { 37.6, 53.8, SPIRES_OF_ARAK },
-						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(118082),	-- Admiral Taylor's Boot Knife
 							i(118079),	-- Admiral Taylor's Ceremonial Sword
@@ -697,14 +699,14 @@ root(ROOTS.Zones, {
 							i(118085),	-- Admiral Taylor's Staff of Wisdom
 						},
 					}),
-					q(35482, {	-- Admiral Taylor
+					q(36183, {	-- Admiral Taylor [H]
 						["sourceQuests"] = {
 							35408,	-- Prime the Cannons
 							35407,	-- Punishable by Death
 						},
-						["coord"] = { 37.6, 53.7, SPIRES_OF_ARAK },
-						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 82278 },	-- Lady Claudia
+						["coord"] = { 37.6, 53.8, SPIRES_OF_ARAK },
+						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(118082),	-- Admiral Taylor's Boot Knife
 							i(118079),	-- Admiral Taylor's Ceremonial Sword
@@ -1305,8 +1307,8 @@ root(ROOTS.Zones, {
 					q(37141, {	-- Talonpriest Ishaal
 						["sourceQuests"] = {	-- all "Between Arak and a Hard Place" criteria
 							35671,	-- A Gathering of Shadows
-							35482,	-- Admiral Taylor (Alliance)
-							36183,	-- Admiral Taylor (Horde)
+							35482,	-- Admiral Taylor [A]
+							36183,	-- Admiral Taylor [H]
 							34942,	-- Back from Beyond
 							35012,	-- Sethe, the Dead God
 							35245,	-- A Sentimental Relic

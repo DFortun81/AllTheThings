@@ -121,18 +121,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 				crit(3),		-- The Plight of the Arakkoa
 				crit(4),		-- In the Shadows of Auchindoun
 			})),
-			a(ach(8925, {	-- Between Arak and a Hard Place (Alliance)
-				follower(218),	-- Talonpriest Ishaal
-				crit(1),		-- Shadows Gather
-				crit(2),		-- Admiral Taylor's Garrison
-				crit(3),		-- Secrets of the Talonpriests
-				crit(4),		-- The Gods of Arak
-				crit(5),		-- Legacy of the Apexis
-				crit(6),		-- Terokk's Legend
-				crit(7),		-- Securing Southport
-				crit(8),		-- Pinchwhistle Gearworks
-				crit(9),		-- When the Raven Swallows the Day
-			})),
 			a(ach(8927, {	-- Nagrandeur (Alliance) (unlocks ability to buy Nagrand Treasure Map from Grakis in Stormshield)
 				crit(1),		-- The Might of Steel and Blood
 				crit(2),		-- The Ring of Trials
@@ -164,18 +152,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 				crit(2),		-- The Battle for Shattrath
 				crit(3),		-- The Plight of the Arakkoa
 				crit(4),		-- In the Shadows of Auchindoun
-			})),
-			h(ach(8926, {	-- Between Arak and a Hard Place (Alliance)
-				follower(218),	-- Talonpriest Ishaal
-				crit(1),		-- Shadows Gather
-				crit(2),		-- Admiral Taylor's Garrison
-				crit(3),		-- Secrets of the Talonpriests
-				crit(4),		-- The Gods of Arak
-				crit(5),		-- Legacy of the Apexis
-				crit(6),		-- Terokk's Legend
-				crit(7),		-- Securing Southport
-				crit(8),		-- Pinchwhistle Gearworks
-				crit(9),		-- When the Raven Swallows the Day
 			})),
 			h(ach(8928, {	-- Nagrandeur (Horde) (unlocks ability to buy Nagrand Treasure Map from Srikka in Warspear)
 				crit(1),		-- The Might of Steel and Blood
