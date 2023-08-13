@@ -81,17 +81,6 @@ root(ROOTS.Zones, {
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["groups"] = {
-							crit(28, {	-- Nicki Tinytech
-								["coord"] = { 64.4, 49.2, HELLFIRE_PENINSULA },
-								["cr"] = 66550,	-- Nicki Tinytech <Master Pet Tamer>
-							}),
-						},
-					})),
 					explorationAch(862, {	-- Explore Hellfire Peninsula
 						-- #if BEFORE WRATH
 						["description"] = "Explore Hellfire Peninsula, revealing the covered areas of the world map.",
@@ -376,6 +365,11 @@ root(ROOTS.Zones, {
 						["cr"] = 16587,	-- Barley <Wind Rider Master>
 						["coord"] = { 56.2, 36.2, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
+					}),
+				}),
+				petbattles({
+					n(66550, {	-- Nicki Tinytech <Master Pet Tamer>
+						["coord"] = { 64.4, 49.2, HELLFIRE_PENINSULA },
 					}),
 				}),
 				n(PROFESSIONS, {

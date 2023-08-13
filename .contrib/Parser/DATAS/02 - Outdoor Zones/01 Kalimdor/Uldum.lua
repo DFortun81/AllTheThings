@@ -13,17 +13,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["achievementID"] = 4865,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				petbattle(ach(9069, {	-- An Awfully Big Adventure
-					["timeline"] = { "added 6.0.2" },
-					["collectible"] = false,
-					["filterID"] = BATTLE_PETS,
-					["groups"] = {
-						crit(29, {	-- Obalis
-							["coord"] = { 56.6, 41.8, ULDUM },
-							["cr"] = 66824,	-- Obalis <Grand Master Pet Tamer>
-						}),
-					},
-				})),
 				explorationAch(4865),	-- Explore Uldum
 				ach(4888, {	-- One Hump or Two? (Uldum)
 					["providers"] = {
@@ -89,6 +78,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				fp(674, {	-- Schnottz's Landing
 					["coord"] = { 22.2, 64.8, ULDUM },
+				}),
+			}),
+			petbattles({
+				n(66824, {	-- Obalis <Grand Master Pet Tamer>
+					["coord"] = { 56.6, 41.8, ULDUM },
 				}),
 			}),
 			n(PROFESSIONS, {

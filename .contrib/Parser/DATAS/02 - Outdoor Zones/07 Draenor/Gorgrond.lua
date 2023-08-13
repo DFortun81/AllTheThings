@@ -85,17 +85,6 @@ root(ROOTS.Zones, {
 			},
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069,  {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["g"] = {
-							crit(12, {	-- Cymre Brightblade
-								["coord"] = { 51.0, 70.6, GORGROND },
-								["cr"] = 83837,	-- Cymre Brightblade <Grand Master Pet Tamer>
-							}),
-						},
-					})),
 					ach(9678,  {	-- Ancient No More
 						crit(1),	-- Swift Onyx Flayer
 						crit(2),	-- Mogarnago
@@ -402,6 +391,11 @@ root(ROOTS.Zones, {
 					fp(1518, {	-- Wildwood Wash, Gorgrond
 						["coord"] = { 64.0, 57.4, GORGROND },
 						["races"] = ALLIANCE_ONLY,
+					}),
+				}),
+				petbattles({ "added 6.0.1" }, {
+					n(83837, {	-- Cymre Brightblade <Grand Master Pet Tamer>
+						["coord"] = { 51.0, 70.6, GORGROND },
 					}),
 				}),
 				n(QUESTS, {

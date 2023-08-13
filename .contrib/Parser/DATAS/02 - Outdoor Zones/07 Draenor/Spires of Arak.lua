@@ -80,17 +80,6 @@ root(ROOTS.Zones, {
 			["icon"] = "Interface\\Icons\\achievement_zone_spiresofarak",
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069,  {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["g"] = {
-							crit(40, {	-- Vesharr
-								["coord"] = { 46.4, 45.2, SPIRES_OF_ARAK },
-								["cr"] = 87123,	-- Vesharr <Grand Master Pet Tamer>
-							}),
-						},
-					})),
 					ach(9605,  {	-- Arak Star
 						crit(1, {	-- The Howling Crag
 							["sourceQuest"] = 36590,	-- The Howling Crag
@@ -314,6 +303,11 @@ root(ROOTS.Zones, {
 					}),
 					fp(1508, {	-- Veil Terokk, Spires of Arak
 						["coord"] = { 46.2, 44.0, SPIRES_OF_ARAK },
+					}),
+				}),
+				petbattles({ "added 6.0.1" }, {
+					n(87123, {	-- Vesharr <Grand Master Pet Tamer>
+						["coord"] = { 46.4, 45.2, SPIRES_OF_ARAK },
 					}),
 				}),
 				n(QUESTS, {

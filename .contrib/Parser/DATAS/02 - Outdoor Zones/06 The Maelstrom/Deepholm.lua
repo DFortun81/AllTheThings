@@ -13,17 +13,6 @@ root(ROOTS.Zones, {
 			},
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["groups"] = {
-							crit(6, {	-- Bordin Steadyfist
-								["coord"] = { 49.8, 57.0, DEEPHOLM },
-								["cr"] = 66815,	-- Bordin Steadyfist <Master Pet Tamer>
-							}),
-						},
-					})),
 					ach(4871, {	-- Deep into Deepholm
 						crit(1, {	-- The Middle World Pillar Fragment
 							["sourceQuest"] = 27938,	-- The Middle Fragment
@@ -64,6 +53,11 @@ root(ROOTS.Zones, {
 				n(FACTIONS, {
 					faction(1171, {	-- Therazane
 						["icon"] = "Interface\\Icons\\inv_misc_tabard_therazane",
+					}),
+				}),
+				petbattles({
+					n(66815, {	-- Bordin Steadyfist <Master Pet Tamer>
+						["coord"] = { 49.8, 57.0, DEEPHOLM },
 					}),
 				}),
 				n(PROFESSIONS, {

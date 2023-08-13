@@ -26,17 +26,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Explore Deadwind Pass, revealing the covered areas of the world map.",
 					-- #endif
 				}),
-				petbattle(ach(9069, {	-- An Awfully Big Adventure
-					["timeline"] = { "added 6.0.2" },
-					["collectible"] = false,
-					["filterID"] = BATTLE_PETS,
-					["groups"] = {
-						crit(22, {	-- Lydia Accoste
-							["coord"] = { 40.2, 76.6, DEADWIND_PASS },
-							["cr"] = 66522,	-- Lydia Accoste <Grand Master Pet Tamer>
-						}),
-					},
-				})),
 			}),
 			battlepets({
 				pet(1160, {	-- Arcane Eye (PET!)
@@ -62,6 +51,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				]]--
 			}),
 			-- #endif
+			petbattles({
+				n(66522, {	-- Lydia Accoste <Grand Master Pet Tamer>
+					["coord"] = { 40.2, 76.6, DEADWIND_PASS },
+				}),
+			}),
 			-- #if AFTER 7.0.3.21796
 			n(QUESTS, {
 				q(44154, {	-- The Rite of the Executioner

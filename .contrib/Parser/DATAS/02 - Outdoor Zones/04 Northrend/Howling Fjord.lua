@@ -8,17 +8,6 @@ root(ROOTS.Zones, {
 			["icon"] = "Interface\\Icons\\achievement_zone_howlingfjord_01",
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["groups"] = {
-							crit(3, {	-- Beegle Blastfuse
-								["coord"] = { 28.6, 33.8, HOWLING_FJORD },
-								["cr"] = 66635,	-- Beegle Blastfuse <Master Pet Tamer>
-							}),
-						},
-					})),
 					explorationAch(1263),	-- Explore Howling Fjord
 					ach(1254, {	-- Friend or Fowl?
 						["coords"] = {
@@ -351,6 +340,11 @@ root(ROOTS.Zones, {
 						["cr"] = 23859,	-- Greer Orehammer <Gryphon Master>
 						["coord"] = { 31.2, 44.0, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
+					}),
+				}),
+				petbattles({
+					n(66635, {	-- Beegle Blastfuse <Master Pet Tamer>
+						["coord"] = { 28.6, 33.8, HOWLING_FJORD },
 					}),
 				}),
 				n(QUESTS, {

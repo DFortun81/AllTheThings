@@ -12,17 +12,6 @@ root(ROOTS.Zones, {
 			},
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["g"] = {
-							crit(14, {	-- Farmer Nishi
-								["coord"] = { 46.0, 43.6, VALLEY_OF_THE_FOUR_WINDS },
-								["cr"] = 66734,	-- Farmer Nishi <Grand Master Pet Tamer>
-							}),
-						},
-					})),
 					ach(7294),	-- A Taste of Things to Come (Halfhill)
 					ach(6969, {	-- Explore Valley of the Four Winds
 						crit(1),	-- Winds' Edge
@@ -113,7 +102,7 @@ root(ROOTS.Zones, {
 						crit(6),	-- Pink Turnip
 						crit(7),	-- White Turnip
 					}),
-					ach(6301, {		-- Rally the Valley
+					ach(6301, {	-- Rally the Valley
 						crit(1, {	-- Thunderfoot Fields
 							["sourceQuest"] = 29918,	-- A Lesson in Bravery
 						}),
@@ -1080,6 +1069,11 @@ root(ROOTS.Zones, {
 					}),
 					fp(989, {	-- Stoneplow, Valley of the Four Winds
 						["coord"] = { 20.2, 58.6, VALLEY_OF_THE_FOUR_WINDS },
+					}),
+				}),
+				petbattles({
+					n(66734, {	-- Farmer Nishi <Grand Master Pet Tamer>
+						["coord"] = { 46.0, 43.6, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 				}),
 				n(QUESTS, {

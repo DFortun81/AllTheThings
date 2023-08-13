@@ -76,17 +76,6 @@ root(ROOTS.Zones, {
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(9437),	-- A Demidos of Reality
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["g"] = {
-							crit(2, {	-- Ashlei
-								["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },
-								["cr"] = 87124,	-- Ashlei <Grand Master Pet Tamer>
-							}),
-						},
-					})),
 					ach(8845, {	-- As I Walk Through the Valley of the Shadow of Moon
 					--	unlocks ability to buy Shadowmoon Valley Treasure Map from Grakis in Stormshield
 						["races"] = ALLIANCE_ONLY,
@@ -117,7 +106,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					ach(8938, {		-- Explore Shadowmoon Valley
+					ach(8938, {	-- Explore Shadowmoon Valley
 						crit(1),		-- Anguish Fortress
 						crit(2),		-- Darktide Roost
 						crit(3),		-- Elodor
@@ -239,6 +228,11 @@ root(ROOTS.Zones, {
 					fp(1382, {	-- Twilight Glade, Shadowmoon Valley
 						["coord"] = { 40.6, 55.2, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
+					}),
+				}),
+				petbattles({ "added 6.0.1" }, {
+					n(87124, {	-- Ashlei <Grand Master Pet Tamer>
+						["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },
 					}),
 				}),
 				n(QUESTS, {

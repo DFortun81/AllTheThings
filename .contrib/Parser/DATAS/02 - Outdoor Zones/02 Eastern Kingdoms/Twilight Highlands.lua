@@ -10,17 +10,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				petbattle(ach(9069, {	-- An Awfully Big Adventure
-					["timeline"] = { "added 6.0.2" },
-					["collectible"] = false,
-					["filterID"] = BATTLE_PETS,
-					["groups"] = {
-						crit(17, {	-- Goz Banefury
-							["coord"] = { 56.6, 56.8, TWILIGHT_HIGHLANDS },
-							["cr"] = 66822,	-- Goz Banefury <Master Pet Tamer>
-						}),
-					},
-				})),
 				ach(5451, {	-- Consumed by Nightmare
 					["sourceQuest"] = 27380,	-- Nightmare
 					["timeline"] = { "added 4.0.3" },
@@ -277,6 +266,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 47118,	-- Desmond Chadsworth <Gryphon Master>
 					["coord"] = { 43.8, 57.2, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
+				}),
+			}),
+			petbattles({
+				n(66822, {	-- Goz Banefury <Master Pet Tamer>
+					["coord"] = { 56.6, 56.8, TWILIGHT_HIGHLANDS },
 				}),
 			}),
 			n(PROFESSIONS, {

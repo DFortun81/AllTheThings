@@ -8,17 +8,6 @@ root(ROOTS.Zones, {
 			["icon"] = "Interface\\Icons\\Achievement_zone_zuldrak_03",
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["groups"] = {
-							crit(18, {	-- Gutretch
-								["coord"] = { 13.2, 66.8, ZULDRAK },
-								["cr"] = 66639,	-- Gutretch <Master Pet Tamer>
-							}),
-						},
-					})),
 					explorationAch(1267),	-- Explore Zul'Drak
 					ach(1596, {	-- Guru of Drakuru
 						crit(5805, {	-- Betrayal
@@ -182,6 +171,11 @@ root(ROOTS.Zones, {
 					fp(307, {	-- Zim'Torga
 						["cr"] = 28624,	-- Maaka <Flight Master>
 						["coord"] = { 60.0, 56.8, ZULDRAK },
+					}),
+				}),
+				petbattles({
+					n(66639, {	-- Gutretch <Master Pet Tamer>
+						["coord"] = { 13.2, 66.8, ZULDRAK },
 					}),
 				}),
 				n(QUESTS, {

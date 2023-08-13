@@ -18,18 +18,6 @@ root(ROOTS.Zones, {
 					-- turn in "Buried Hozen Treasure" but NOT "Balance" or "Balance Without Violence" to make sure they're required for the criteria
 					-- add SQs for Horde loremaster achievement + Dominance Offensive achievement
 				n(ACHIEVEMENTS, {
-					-- I still am not sure whether achieves like this will be listed per Zone or simply mapped from the Main achievement section...
-					-- petbattle(ach(9069, {	-- An Awfully Big Adventure
-					--  ["timeline"] = { "added 6.0.2" },
-					-- 	["collectible"] = false,
-					-- 	["filterID"] = BATTLE_PETS,
-					-- 	["g"] = {
-					-- 		crit(24, {	-- Mo'ruk
-					-- 			["coord"] = { 65.0, 42.7, KRASARANG_WILDS },
-					-- 			["cr"] = 66733,	-- Mo'ruk <Grand Master Pet Tamer>
-					-- 		}),
-					-- 	},
-					-- })),
 					ach(6716, {	-- Between a Saurok and a Hard Place
 						["collectible"] = false,
 						["g"] = {
@@ -1880,6 +1868,11 @@ root(ROOTS.Zones, {
 					}),
 					fp(986, {	-- Zhu's Watch, Krasarang Wilds
 						["coord"] = { 76.6, 8.40, KRASARANG_WILDS },
+					}),
+				}),
+				petbattles({
+					n(66733, {	-- Mo'ruk <Grand Master Pet Tamer>
+						["coord"] = { 65.0, 42.7, KRASARANG_WILDS },
 					}),
 				}),
 				n(QUESTS, {

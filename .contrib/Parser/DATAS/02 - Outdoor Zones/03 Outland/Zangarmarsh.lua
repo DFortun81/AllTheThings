@@ -75,17 +75,6 @@ root(ROOTS.Zones, {
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["groups"] = {
-							crit(31, {	-- Ras'an
-								["coord"] = { 17.2, 50.6, ZANGARMARSH },
-								["cr"] = 66551,	-- Ras'an <Master Pet Tamer>
-							}),
-						},
-					})),
 					explorationAch(863, {	-- Explore Zangarmarsh
 						-- #if BEFORE WRATH
 						["description"] = "Explore Zangarmarsh, revealing the covered areas of the world map.",
@@ -356,6 +345,11 @@ root(ROOTS.Zones, {
 						["cr"] = 18791,	-- Du'ga <Wind Rider Master>
 						["coord"] = { 33.0, 51.0, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
+					}),
+				}),
+				petbattles({
+					n(66551, {	-- Ras'an <Master Pet Tamer>
+						["coord"] = { 17.2, 50.6, ZANGARMARSH },
 					}),
 				}),
 				n(QUESTS, {

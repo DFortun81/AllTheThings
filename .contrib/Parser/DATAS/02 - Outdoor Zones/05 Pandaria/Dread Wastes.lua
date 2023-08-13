@@ -41,21 +41,6 @@ root(ROOTS.Zones, {
 							["_quests"] = { 31211 },	-- The Poisoned Mind
 						}),
 					}),
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["g"] = {
-							crit(15, {	-- Flowing Pandaren Spirit
-								["coord"] = { 61.2, 87.6, DREAD_WASTES },
-								["cr"] = 68462,	-- Flowing Pandaren Spirit <Grand Master Pet Tamer>
-							}),
-							crit(41, {	-- Wastewalker Shu
-								["coord"] = { 55.0, 37.6, DREAD_WASTES },
-								["cr"] = 66739,	-- Wastewalker Shu <Grand Master Pet Tamer>
-							}),
-						},
-					})),
 					ach(6716, {	-- Between a Saurok and a Hard Place
 						["collectible"] = false,
 						["g"] = {
@@ -247,6 +232,14 @@ root(ROOTS.Zones, {
 					}),
 					fp(1072, {	-- The Sunset Brewgarden, Dread Wastes
 						["coord"] = { 50.2, 12.2, DREAD_WASTES },
+					}),
+				}),
+				petbattles({
+					n(68462, {	-- Flowing Pandaren Spirit <Grand Master Pet Tamer>
+						["coord"] = { 61.2, 87.6, DREAD_WASTES },
+					}),
+					n(66739, {	-- Wastewalker Shu <Grand Master Pet Tamer>
+						["coord"] = { 55.0, 37.6, DREAD_WASTES },
 					}),
 				}),
 				n(QUESTS, {	-- NOTE:: this zone is largely driven by reputation. If verifying any sourceQuest chains, I recommend doing all dailies in Klaxxi'vess as they become available to ensure you don't miss something

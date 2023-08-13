@@ -19,17 +19,6 @@ root(ROOTS.Zones, {
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["groups"] = {
-							crit(5, {	-- Bloodknight Antari
-								["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
-								["cr"] = 66557,	-- Bloodknight Antari <Grand Master Pet Tamer>
-							}),
-						},
-					})),
 					explorationAch(864, {	-- Explore Shadowmoon Valley
 						-- #if BEFORE WRATH
 						["description"] = "Explore Shadowmoon Valley, revealing the covered areas of the world map.",
@@ -203,6 +192,11 @@ root(ROOTS.Zones, {
 				prof(MINING, {
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32506)),	-- Netherwing Egg
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32464)),	-- Nethercite Ore
+				}),
+				petbattles({
+					n(66557, {	-- Bloodknight Antari <Grand Master Pet Tamer>
+						["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
+					}),
 				}),
 				prof(SKINNING, {
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32470)),	-- Nethermine Flayer Hide

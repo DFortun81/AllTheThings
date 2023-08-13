@@ -63,17 +63,6 @@ root(ROOTS.Zones, {
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["groups"] = {
-							crit(26, {	-- Narrok
-								["coord"] = { 61.0, 49.4, NAGRAND },
-								["cr"] = 66552,	-- Narrok <Master Pet Tamer>
-							}),
-						},
-					})),
 					achWithRep(902, 933, {	-- Chief Exalted Officer
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with The Consortium to Exalted.",
@@ -386,6 +375,11 @@ root(ROOTS.Zones, {
 						["cr"] = 18789,	-- Furgu <Hippogryph Master>
 						["coord"] = { 54.2, 75.0, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
+					}),
+				}),
+				petbattles({
+					n(66552, {	-- Narrok <Master Pet Tamer>
+						["coord"] = { 61.0, 49.4, NAGRAND },
 					}),
 				}),
 				n(QUESTS, {

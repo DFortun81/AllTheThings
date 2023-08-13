@@ -15,21 +15,6 @@ root(ROOTS.Zones, {
 			},
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["g"] = {
-							crit(19, {	-- Hyuna of the Shrines
-								["coord"] = { 48.0, 54.0, THE_JADE_FOREST },
-								["cr"] = 66730,	-- Hyuna of the Shrines <Grand Master Pet Tamer>
-							}),
-							crit(42, {	-- Whispering Pandaren Spirit
-								["coord"] = { 28.8, 36.0, THE_JADE_FOREST },
-								["cr"] = 68464,	-- Whispering Pandaren Spirit <Grand Master Pet Tamer>
-							}),
-						},
-					})),
 					ach(6716, {	-- Between a Saurok and a Hard Place
 						["collectible"] = false,
 						["g"] = {
@@ -871,84 +856,94 @@ root(ROOTS.Zones, {
 						["coord"] = { 43.6, 24.6, THE_JADE_FOREST },
 					}),
 				}),
-				prof(ALCHEMY, {
-					o(211424, {	-- Alchemy Scroll
-						["description"] = "It will only appear to alchemists who don't yet know the recipe. May require Pandaria Alchemy 50.",
-						["coord"] = { 49.7, 54.4, THE_JADE_FOREST },
-						["g"] = {
-							recipe(114769),	-- Flask of Spring Blossoms
-						},
+				petbattles({
+					n(66730, {	-- Hyuna of the Shrines <Grand Master Pet Tamer>
+						["coord"] = { 48.0, 54.0, THE_JADE_FOREST },
+					}),
+					n(68464, {	-- Whispering Pandaren Spirit <Grand Master Pet Tamer>
+						["coord"] = { 28.8, 36.0, THE_JADE_FOREST },
 					}),
 				}),
-				prof(BLACKSMITHING, {
-					n(65114, {	-- Len the Hammer <Blacksmithing Trainer>
-						["coord"] = { 48.4, 36.8, THE_JADE_FOREST },
-						["g"] = MOP_BLACKSMITHING,
+				n(PROFESSIONS, {
+					prof(ALCHEMY, {
+						o(211424, {	-- Alchemy Scroll
+							["description"] = "It will only appear to alchemists who don't yet know the recipe. May require Pandaria Alchemy 50.",
+							["coord"] = { 49.7, 54.4, THE_JADE_FOREST },
+							["g"] = {
+								recipe(114769),	-- Flask of Spring Blossoms
+							},
+						}),
 					}),
-				}),
-				prof(ENCHANTING, {
-					n(65127, {	-- Lai the Spellpaw <Enchanting Trainer>
-						["coord"] = { 46.8, 42.8, THE_JADE_FOREST },
-						["g"] = MOP_ENCHANTING,
+					prof(BLACKSMITHING, {
+						n(65114, {	-- Len the Hammer <Blacksmithing Trainer>
+							["coord"] = { 48.4, 36.8, THE_JADE_FOREST },
+							["g"] = MOP_BLACKSMITHING,
+						}),
 					}),
-				}),
-				prof(HERBALISM, {
-					n(66980, {	-- Grower Miao <Herbalism Trainer>
-						["coord"] = { 27.8, 15.6, THE_JADE_FOREST },
-						["g"] = MOP_HERBALISM,
+					prof(ENCHANTING, {
+						n(65127, {	-- Lai the Spellpaw <Enchanting Trainer>
+							["coord"] = { 46.8, 42.8, THE_JADE_FOREST },
+							["g"] = MOP_ENCHANTING,
+						}),
 					}),
-				}),
-				prof(INSCRIPTION, {
-					q(31539, {	-- A Thing of Beauty
-						["requireSkill"] = INSCRIPTION,
-						["provider"] = { "n", 56065 },	-- Inkmaster Wei
-						["isWeekly"] = true,
-						["coord"] = { 54.6, 44.2, THE_JADE_FOREST },
-						["g"] = {
-							recipe(127378),	-- Commissioned Painting
-						},
+					prof(HERBALISM, {
+						n(66980, {	-- Grower Miao <Herbalism Trainer>
+							["coord"] = { 27.8, 15.6, THE_JADE_FOREST },
+							["g"] = MOP_HERBALISM,
+						}),
 					}),
-					q(31544, {	-- A Tribute to the Dead
-						["requireSkill"] = INSCRIPTION,
-						["provider"] = { "n", 56063 },	-- Inkmaster Jo Po
-						["isWeekly"] = true,
-						["coord"] = { 55.2, 45.2, THE_JADE_FOREST },
-						["g"] = {
-							recipe(127481),	-- Inscribed Monument
-						},
-					}),
-					q(31542, {	-- Incarnadine Ink
-						["requireSkill"] = INSCRIPTION,
-						["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
-						["isWeekly"] = true,
-						["coord"] = { 54.8, 45.2, THE_JADE_FOREST },
-						["g"] = {
-							recipe(127475),	-- Incarnadine Ink
-						},
-					}),
-					q(31543, {	-- Portrait of a Lady
-						["requireSkill"] = INSCRIPTION,
-						["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
-						["isWeekly"] = true,
-						["coord"] = { 54.8, 45.2, THE_JADE_FOREST },
-						["g"] = {
-							recipe(128922),	-- Portrait of Madam Goya
-						},
-					}),
-					q(31541, {	-- Set in Jade
-						["requireSkill"] = INSCRIPTION,
-						["provider"] = { "n", 56063 },	-- Inkmaster Jo Po
-						["isWeekly"] = true,
-						["coord"] = { 55.2, 45.2, THE_JADE_FOREST },
-						["g"] = {
-							recipe(127391),	-- Engraved Jade Disk
-						},
-					}),
-					q(31540, {	-- Staves for Tian Monastery
-						["requireSkill"] = INSCRIPTION,
-						["provider"] = { "n", 56065 },	-- Inkmaster Wei
-						["isWeekly"] = true,
-						["coord"] = { 54.6, 44.2, THE_JADE_FOREST },
+					prof(INSCRIPTION, {
+						q(31539, {	-- A Thing of Beauty
+							["requireSkill"] = INSCRIPTION,
+							["provider"] = { "n", 56065 },	-- Inkmaster Wei
+							["isWeekly"] = true,
+							["coord"] = { 54.6, 44.2, THE_JADE_FOREST },
+							["g"] = {
+								recipe(127378),	-- Commissioned Painting
+							},
+						}),
+						q(31544, {	-- A Tribute to the Dead
+							["requireSkill"] = INSCRIPTION,
+							["provider"] = { "n", 56063 },	-- Inkmaster Jo Po
+							["isWeekly"] = true,
+							["coord"] = { 55.2, 45.2, THE_JADE_FOREST },
+							["g"] = {
+								recipe(127481),	-- Inscribed Monument
+							},
+						}),
+						q(31542, {	-- Incarnadine Ink
+							["requireSkill"] = INSCRIPTION,
+							["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
+							["isWeekly"] = true,
+							["coord"] = { 54.8, 45.2, THE_JADE_FOREST },
+							["g"] = {
+								recipe(127475),	-- Incarnadine Ink
+							},
+						}),
+						q(31543, {	-- Portrait of a Lady
+							["requireSkill"] = INSCRIPTION,
+							["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
+							["isWeekly"] = true,
+							["coord"] = { 54.8, 45.2, THE_JADE_FOREST },
+							["g"] = {
+								recipe(128922),	-- Portrait of Madam Goya
+							},
+						}),
+						q(31541, {	-- Set in Jade
+							["requireSkill"] = INSCRIPTION,
+							["provider"] = { "n", 56063 },	-- Inkmaster Jo Po
+							["isWeekly"] = true,
+							["coord"] = { 55.2, 45.2, THE_JADE_FOREST },
+							["g"] = {
+								recipe(127391),	-- Engraved Jade Disk
+							},
+						}),
+						q(31540, {	-- Staves for Tian Monastery
+							["requireSkill"] = INSCRIPTION,
+							["provider"] = { "n", 56065 },	-- Inkmaster Wei
+							["isWeekly"] = true,
+							["coord"] = { 54.6, 44.2, THE_JADE_FOREST },
+						}),
 					}),
 				}),
 				n(QUESTS, {

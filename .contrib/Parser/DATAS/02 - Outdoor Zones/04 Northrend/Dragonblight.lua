@@ -39,17 +39,6 @@ root(ROOTS.Zones, {
 			["icon"] = "Interface\\Icons\\Achievement_zone_dragonblight_01",
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["groups"] = {
-							crit(30, {	-- Okrut Dragonwaste
-								["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
-								["cr"] = 66638,	-- Okrut Dragonwaste <Master Pet Tamer>
-							}),
-						},
-					})),
 					explorationAch(1265),	-- Explore Dragonblight
 					ach(35, {	-- Might of Dragonblight (A)
 						["races"] = ALLIANCE_ONLY,
@@ -325,6 +314,11 @@ root(ROOTS.Zones, {
 					fp(252, {	-- Wyrmrest Temple
 						["cr"] = 26851,	-- Nethestrasz <Flight Master>
 						["coord"] = { 60.2, 51.4, DRAGONBLIGHT },
+					}),
+				}),
+				petbattles({
+					n(66638, {	-- Okrut Dragonwaste <Master Pet Tamer>
+						["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
 					}),
 				}),
 				spell(921, {	-- Pickpocketing

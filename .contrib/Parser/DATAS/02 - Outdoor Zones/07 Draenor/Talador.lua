@@ -81,17 +81,6 @@ root(ROOTS.Zones, {
 			},
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069,  {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["g"] = {
-							crit(36, {	-- Taralune
-								["coord"] = { 49.0, 80.4, TALADOR },
-								["cr"] = 87125,	-- Taralune <Grand Master Pet Tamer>
-							}),
-						},
-					})),
 					ach(9635),		-- Bobbing for Orcs
 					ach(9634),		-- Charged Up
 					ach(8920,  {	-- Don't Let the Tala-door Hit You on the Way Out (A) (unlocks ability to buy Talador Treasure Map from Grakis in Stormshield)
@@ -297,6 +286,11 @@ root(ROOTS.Zones, {
 					}),
 					fp(1440, {	-- Zangarra, Talador
 						["coord"] = { 80.4, 25.4, TALADOR },
+					}),
+				}),
+				petbattles({ "added 6.0.1" }, {
+					n(87125, {	-- Taralune <Grand Master Pet Tamer>
+						["coord"] = { 49.0, 80.4, TALADOR },
 					}),
 				}),
 				n(QUESTS, {

@@ -10,21 +10,6 @@ root(ROOTS.Zones, {
 			["maps"] = { 389 },	-- Niuzao Catacombs
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["g"] = {
-							crit(8, {	-- Burning Pandaren Spirit
-								["coord"] = { 57.0, 42.2, TOWNLONG_STEPPES },
-								["cr"] = 68463,	-- Burning Pandaren Spirit <Grand Master Pet Tamer>
-							}),
-							crit(32, {	-- Seeker Zusshi
-								["coord"] = { 36.2, 52.2, TOWNLONG_STEPPES },
-								["cr"] = 66918,	-- Seeker Zusshi <Grand Master Pet Tamer>
-							}),
-						},
-					})),
 					ach(7310),	-- Defender of Gods
 					ach(6977, {	-- Explore Townlong Steppes
 						crit(1),	-- Gao-Ran Battlefront
@@ -80,7 +65,7 @@ root(ROOTS.Zones, {
 						crit(1),	-- Omnia Mystics
 						crit(2),	-- Wu Kao Assassins
 					}),
-					ach(6539, {		-- One Steppe Forward, Two Steppes Back
+					ach(6539, {	-- One Steppe Forward, Two Steppes Back
 						crit(1, {	-- Fire Camp Osul
 							["sourceQuest"] = 30784,	-- The Point of No Return
 						}),
@@ -225,6 +210,14 @@ root(ROOTS.Zones, {
 					}),
 					fp(1056, {	-- Shado-Pan Garrison
 						["coord"] = { 50.0, 71.8, TOWNLONG_STEPPES },
+					}),
+				}),
+				petbattles({
+					n(68463, {	-- Burning Pandaren Spirit <Grand Master Pet Tamer>
+						["coord"] = { 57.0, 42.2, TOWNLONG_STEPPES },
+					}),
+					n(66918, {	-- Seeker Zusshi <Grand Master Pet Tamer>
+						["coord"] = { 36.2, 52.2, TOWNLONG_STEPPES },
 					}),
 				}),
 				n(QUESTS, {

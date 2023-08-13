@@ -9,17 +9,6 @@ root(ROOTS.Zones, {
 			["maps"] = { 170 },	-- Hrothgar's Landing
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["groups"] = {
-							crit(23, {	-- Major Payne
-								["coord"] = { 77.4, 19.6, ICECROWN },
-								["cr"] = 66675,	-- Major Payne
-							}),
-						},
-					})),
 					explorationAch(1270),	-- Explore Icecrown
 					ach(40, {	-- Icecrown: The Final Goal
 						-- #if ANYCLASSIC
@@ -181,6 +170,11 @@ root(ROOTS.Zones, {
 					fp(333, {	-- The Shadow Vault
 						["cr"] = 30314,	-- Morlia Doomwing <Flight Master>
 						["coord"] = { 43.6, 24.4, ICECROWN },
+					}),
+				}),
+				petbattles({
+					n(66675, {	-- Major Payne
+						["coord"] = { 77.4, 19.6, ICECROWN },
 					}),
 				}),
 				n(QUESTS, {

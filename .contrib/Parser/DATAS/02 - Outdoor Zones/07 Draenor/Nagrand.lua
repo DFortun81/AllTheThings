@@ -83,17 +83,6 @@ root(ROOTS.Zones, {
 			},
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["g"] = {
-							crit(38, {	-- Tarr the Terrible
-								["coord"] = { 56.2, 9.80, DRAENOR_NAGRAND },
-								["cr"] = 87110,	-- Tarr the Terrible <Grand Master Pet Tamer>
-							}),
-						},
-					})),
 					ach(9548, {		-- Buried Treasures (Mok'gol Watchpost)
 						crit(1, {	-- Garrosh's Shackles
 							["_quests"] = { 37130 },
@@ -468,6 +457,11 @@ root(ROOTS.Zones, {
 					fp(1507, {	-- Yrel's Watch, Nagrand
 						["coord"] = { 62.6, 40.6, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
+					}),
+				}),
+				petbattles({ "added 6.0.1" }, {
+					n(87110, {	-- Tarr the Terrible <Grand Master Pet Tamer>
+						["coord"] = { 56.2, 9.80, DRAENOR_NAGRAND },
 					}),
 				}),
 				n(QUESTS, {

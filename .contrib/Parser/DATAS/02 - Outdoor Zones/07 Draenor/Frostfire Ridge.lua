@@ -19,17 +19,6 @@ root(ROOTS.Zones, {
 			},
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["g"] = {
-							crit(16, {	-- Gargra
-								["coord"] = { 68.6, 64.6, FROSTFIRE_RIDGE },
-								["cr"] = 87122,	-- Gargra <Grand Master Pet Tamer>
-							}),
-						},
-					})),
 					ach(9533),	-- Breaker of Chains (Bloodmaul Stronghold)
 					ach(9537, {	-- By Fire Be... Merged? (Magnarok)
 						["sourceQuest"] = 37204,	-- Rekindling an Old Flame
@@ -179,6 +168,11 @@ root(ROOTS.Zones, {
 					fp(1386, {	-- Wor'gol, Frostfire Ridge
 						["coord"] = { 21.6, 56.0, FROSTFIRE_RIDGE },
 						["races"] = HORDE_ONLY,
+					}),
+				}),
+				petbattles({ "added 6.0.1" }, {
+					n(87122, {	-- Gargra <Grand Master Pet Tamer>
+						["coord"] = { 68.6, 64.6, FROSTFIRE_RIDGE },
 					}),
 				}),
 				n(QUESTS, {

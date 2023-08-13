@@ -241,21 +241,6 @@ root(ROOTS.Zones, {
 					},
 				})),
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["g"] = {
-							crit(11, {	-- Courageous Yon
-								["coord"] = { 35.8, 73.6, KUN_LAI_SUMMIT },
-								["cr"] = 66738,	-- Courageous Yon <Grand Master Pet Tamer>
-							}),
-							crit(39, {	-- Thundering Pandaren Spirit
-								["coord"] = { 64.8, 93.6, KUN_LAI_SUMMIT },
-								["cr"] = 68465,	-- Thundering Pandaren Spirit <Grand Master Pet Tamer>
-							}),
-						},
-					})),
 					ach(6716, {	-- Between a Saurok and a Hard Place
 						["collectible"] = false,
 						["g"] = {
@@ -650,6 +635,14 @@ root(ROOTS.Zones, {
 					}),
 					fp(1021, {	-- Zouchin Village, Kun-Lai Summit
 						["coord"] = { 62.4, 30.0, KUN_LAI_SUMMIT },
+					}),
+				}),
+				petbattles({
+					n(66738, {	-- Courageous Yon <Grand Master Pet Tamer>
+						["coord"] = { 35.8, 73.6, KUN_LAI_SUMMIT },
+					}),
+					n(68465, {	-- Thundering Pandaren Spirit <Grand Master Pet Tamer>
+						["coord"] = { 64.8, 93.6, KUN_LAI_SUMMIT },
 					}),
 				}),
 				n(PROFESSIONS, {

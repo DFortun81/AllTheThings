@@ -116,17 +116,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				petbattle(ach(9069, {	-- An Awfully Big Adventure
-					["timeline"] = { "added 6.0.2" },
-					["collectible"] = false,
-					["filterID"] = BATTLE_PETS,
-					["groups"] = {
-						crit(34, {	-- Stone Cold Trixy
-							["coord"] = { 65.6, 64.6, WINTERSPRING },
-							["cr"] = 66466,	-- Stone Cold Trixxy <Grand Master Pet Tamer>
-						}),
-					},
-				})),
 				ach(5443, {		-- E'ko Madness
 					["timeline"] = { "added 4.0.3" },
 					["groups"] = {
@@ -348,6 +337,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 60.4, 36.4, WINTERSPRING },
 					-- #endif
 					["races"] = HORDE_ONLY,
+				}),
+			}),
+			petbattles({
+				n(66466, {	-- Stone Cold Trixxy <Grand Master Pet Tamer>
+					["coord"] = { 65.6, 64.6, WINTERSPRING },
 				}),
 			}),
 			n(QUESTS, {

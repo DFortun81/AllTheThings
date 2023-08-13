@@ -607,17 +607,6 @@ root(ROOTS.Zones, {
 			["lvl"] = 58,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["groups"] = {
-							crit(25, {	-- Morolu the Elder
-								["coord"] = { 59.0, 70.0, SHATTRATH_CITY },
-								["cr"] = 66553,	-- Morulu The Elder <Master Pet Tamer>
-							}),
-						},
-					})),
 					ach(964, {	-- Going Down?
 						["description"] = "This achievement can be easily earned by riding your epic mount directly off the Scryer elevator when it's at its highest point on to the flat ground below without hitting the bridge. (so jump at an angle)\n\nAdditionally paladins and mages can make themselves immune to get this achievement.",
 						["timeline"] = { "added 3.0.1" },
@@ -691,6 +680,11 @@ root(ROOTS.Zones, {
 					fp(128, {	-- Shattrath, Terokkar Forest
 						["cr"] = 18940,	-- Nutral <Flight Master>
 						["coord"] = { 64.08, 41.12, SHATTRATH_CITY },
+					}),
+				}),
+				petbattles({
+					n(66553, {	-- Morulu The Elder <Master Pet Tamer>
+						["coord"] = { 59.0, 70.0, SHATTRATH_CITY },
 					}),
 				}),
 				n(PROFESSIONS, {
