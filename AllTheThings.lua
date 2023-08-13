@@ -3242,6 +3242,7 @@ local SubroutineCache = {
 		finalize(finalized, searchResults);	-- capture current results
 		select(finalized, searchResults, o, "select", "instanceID", instanceID);	-- select this instance
 		whereany(finalized, searchResults, o, "whereany", "e", 559, 562, 587, 643, 1056, 1263 );	-- Select the TIMEWALKING eventID
+		if #searchResults > 0 then o.e = searchResults[1].e; end
 		pop(finalized, searchResults);	-- pop the instance header
 	end,
 	-- Wod Dungeon
