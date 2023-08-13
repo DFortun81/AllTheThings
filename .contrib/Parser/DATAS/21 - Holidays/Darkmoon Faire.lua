@@ -208,21 +208,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 	["groups"] = {
 		-- #if AFTER 4.3.0.15005
 		n(ACHIEVEMENTS, {
-			petbattle(ach(9069, {	-- An Awfully Big Adventure
-				["timeline"] = { "added 6.0.2" },
-				["collectible"] = false,
-				["filterID"] = BATTLE_PETS,
-				["groups"] = {
-					crit(10, {	-- Christoph VonFeasel
-						["coord"] = { 47.4, 62.2, DARKMOON_ISLAND },
-						["cr"] = 85519,	-- Christoph VonFeasel <Grand Master Pet Tamer>
-					}),
-					crit(20, {	-- Jeremy Feasel
-						["coord"] = { 47.8, 62.6, DARKMOON_ISLAND },
-						["cr"] = 67370,	-- Jeremy Feasel <Master Pet Tamer>
-					}),
-				},
-			})),
 			ach(6019, {	-- Come One, Come All!
 				["timeline"] = { "added 4.3.0.15005" },
 			}),

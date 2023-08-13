@@ -4,25 +4,14 @@
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(MOUNT_HYJAL, {
 		["lore"] = "Mount Hyjal is the zone most players quest in when starting Cataclysm zones. Between Ragnaros attacking Hyjal with the help of the Twilight Cultists and Malfurion Stormrage back from the Emerald Dream, this zone is filled with familiar faces and epic quests from the start. The scenery alternates between lush forests and scorched earth, as the player attempts to heal the land and regrow the forests.",
+		["icon"] = "Interface\\Icons\\achievement_zone_mount-hyjal",
 		["timeline"] = { "added 4.0.3" },
 		["maps"] = {
 			738,	-- Firelands
 			760,	-- Malorne's Nightmare
 		},
-		["achievementID"] = 4863,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				petbattle(ach(9069, {	-- An Awfully Big Adventure
-					["timeline"] = { "added 6.0.2" },
-					["collectible"] = false,
-					["filterID"] = BATTLE_PETS,
-					["groups"] = {
-						crit(7, {	-- Brok
-							["coord"] = { 61.4, 32.8, MOUNT_HYJAL },
-							["cr"] = 66819,	-- Brok <Master Pet Tamer>
-						}),
-					},
-				})),
 				ach(5868, {	-- And the Meek Shall Inherit Kalimdor
 					crit(1),	-- Angry Little Squirrel
 					crit(2),	-- Hyjal Bear Cub
@@ -1516,6 +1505,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 39621,	-- Elementalist Ortell
 					["coord"] = { 71.9, 58.0, MOUNT_HYJAL },
 					["sourceQuest"] = 25274,	-- Signed in Blood
+				}),
+			}),
+			petbattles({
+				n(66819, {	-- Brok <Master Pet Tamer>
+					["coord"] = { 61.4, 32.8, MOUNT_HYJAL },
 				}),
 			}),
 			n(RARES, {

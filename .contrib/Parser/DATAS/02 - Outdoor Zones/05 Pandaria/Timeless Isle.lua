@@ -569,51 +569,79 @@ root(ROOTS.Zones, {
 			["icon"] = "Interface\\Icons\\inv_pet_scorchedstone",
 			["maps"] = { 555 },	-- Cavern of Lost Spirits
 			["groups"] = {
+				petbattle(m(571, {	-- Celestial Tournament
+					["icon"] = "Interface/Icons/inv_misc_trinketpanda_07",
+					["groups"] = {
+						n(PET_BATTLE, {
+							n(71933, {	-- Blingtron 4000
+								["coord"] = { 34.8, 59.6, 571 },
+							}),
+							n(71927, {	-- Chen Stormstout
+								["coord"] = { 34.8, 59.6, 571 },
+							}),
+							n(71934, {	-- Dr. Ion Goldbloom <Jurassic Expedition>
+								["coord"] = { 34.8, 59.6, 571 },
+							}),
+							n(71926, {	-- Lorewalker Cho
+								["coord"] = { 34.8, 59.6, 571 },
+							}),
+							n(71930, {	-- Shademaster Kiryn
+								["coord"] = { 37.8, 57.2, 571 },
+							}),
+							n(71929, {	-- Sully "The Pickle" McLeary <SI:7>
+								["coord"] = { 37.8, 57.2, 571 },
+							}),
+							n(71931, {	-- Taran Zhu <Lord of the Shado-Pan>
+								["coord"] = { 37.8, 57.2, 571 },
+							}),
+							n(71932, {	-- Wise Mari <Waterspeaker>
+								["coord"] = { 37.8, 57.2, 571 },
+							}),
+							n(71924, {	-- Wrathion <The Black Prince>
+								["coord"] = { 37.8, 57.2, 571 },
+							}),
+						}),
+						n(QUESTS, {
+							q(33137, {	-- The Celestial Tournament
+								["qg"] = 73082,	-- Master Li
+								["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
+								["isWeekly"] = true,
+								["groups"] = {
+									i(101529),	-- Celestial Coin
+								},
+							}),
+							q(33136, {	-- The Rainy Day is Here
+								["qg"] = 73082,	-- Master Li
+								["sourceQuest"] = 33137,	-- The Celestial Tournament
+								["description"] = "You can complete this quest once across your account. It is given to you after your first victory over the Celestial Tournament.",
+								["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
+								["groups"] = {
+									i(101529),	-- Celestial Coin
+								},
+							}),
+						}),
+						n(VENDORS, {
+							n(73082, {	-- Master Li <Celestial Tournament Host>
+								["coord"] = { 34.7, 59.6, TIMELESS_ISLE },
+								["groups"] = {
+									i(102145, {	-- Chi-Chi, Hatchling of Chi-Ji (PET!)
+										["cost"] = { { "i", 101529, 3 }, },	-- 3x Celestial Coin
+									}),
+									i(101771, {	-- Xu-Fu, Cub of Xuen (PET!)
+										["cost"] = { { "i", 101529, 3 }, },	-- 3x Celestial Coin
+									}),
+									i(102147, {	-- Yu'la, Broodling of Yu'lon (PET!)
+										["cost"] = { { "i", 101529, 3 }, },	-- 3x Celestial Coin
+									}),
+									i(102146, {	-- Zao, Calfling of Niuzao (PET!)
+										["cost"] = { { "i", 101529, 3 }, },	-- 3x Celestial Coin
+									}),
+								},
+							}),
+						}),
+					},
+				})),
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["maps"] = { 571 },	-- Celestial Tournament
-						["g"] = {
-							crit(4, {	-- Blingtron 4000
-								["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
-								["cr"] = 71933,	-- Blingtron 4000
-							}),
-							crit(9, {	-- Chen Stormstout
-								["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
-								["cr"] = 71927,	-- Chen Stormstout
-							}),
-							crit(13, {	-- Dr. Ion Goldbloom
-								["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
-								["cr"] = 71934,	-- Dr. Ion Goldbloom <Jurassic Expedition>
-							}),
-							crit(21, {	-- Lorewalker Cho
-								["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
-								["cr"] = 71926,	-- Lorewalker Cho
-							}),
-							crit(33, {	-- Shademaster Kiryn
-								["coord"] = { 37.8, 57.2, TIMELESS_ISLE },
-								["cr"] = 71930,	-- Shademaster Kiryn
-							}),
-							crit(35, {	-- Sully "The Pickle" McLeary
-								["coord"] = { 37.8, 57.2, TIMELESS_ISLE },
-								["cr"] = 71929,	-- Sully "The Pickle" McLeary <SI:7>
-							}),
-							crit(37, {	-- Taran Zhu
-								["coord"] = { 37.8, 57.2, TIMELESS_ISLE },
-								["cr"] = 71931,	-- Taran Zhu <Lord of the Shado-Pan>
-							}),
-							crit(43, {	-- Wise Mari
-								["coord"] = { 37.8, 57.2, TIMELESS_ISLE },
-								["cr"] = 71932,	-- Wise Mari <Waterspeaker>
-							}),
-							crit(44, {	-- Wrathion
-								["coord"] = { 37.8, 57.2, TIMELESS_ISLE },
-								["cr"] = 71924,	-- Wrathion <The Black Prince>
-							}),
-						},
-					})),
 					ach(8716),	-- Emissary of Ordos
 					ach(8726),	-- Extreme Treasure Hunter
 					ach(8725, {	-- Eyes on the Ground
@@ -792,7 +820,7 @@ root(ROOTS.Zones, {
 					}),
 					ach(8727),	-- Where There's Pirates, There's Booty
 				}),
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
 						417,	-- Rat (PET!)
 					}},
@@ -801,7 +829,7 @@ root(ROOTS.Zones, {
 						pet(1325),	-- Flamering Moth (PET!)
 						pet(1326),	-- Skywisp Moth (PET!)
 					},
-				})),
+				}),
 				n(FLIGHT_PATHS, {
 					fp(1294, {	-- Huojin Landing
 						["coord"] = { 21.8, 39.8, TIMELESS_ISLE },

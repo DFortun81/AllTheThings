@@ -4,142 +4,146 @@
 
 root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 	petbattle(achcat(ACHIEVEMENT_CATEGORY_BATTLE, {
-		petbattle(ach(9069,  {	-- An Awfully Big Adventure
-			i(120121),	-- Trunks (PET!)
-			crit(1,  {	-- Aki the Chosen (Vale of Eternal Blossoms)
-				["coord"] = { 31.2, 74.2, VALE_OF_ETERNAL_BLOSSOMS },
-			}),
-			crit(2,  {	-- Ashlei (Shadowmoon Valley, Draenor)
-				["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },
-			}),
-			crit(3,  {	-- Beegle Blastfuse (Howling Fjord)
-				["coord"] = { 28.6, 33.8, HOWLING_FJORD },
-			}),
-			crit(4,  {	-- Blingtron 4000 (Celestial Tournament)
-				["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
-			}),
-			crit(5,  {	-- Bloodknight Antari (Outland)
-				["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
-			}),
-			crit(6,  {	-- Bordin Steadyfist
-				["coord"] = { 49.8, 57.0, DEEPHOLM },
-			}),
-			crit(7,  {	-- Brok
-				["coord"] = { 61.4, 32.8, MOUNT_HYJAL },
-			}),
-			crit(8,  {	-- Burning Pandaren Spirit
-				["coord"] = { 57.0, 42.2, TOWNLONG_STEPPES },
-			}),
-			crit(9,  {	-- Chen Stormstout (Celestial Tournament)
-				["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
-			}),
-			crit(10, {	-- Christoph VonFeasel (Darkmoon Island)
-				["_quests"] = { 36471 },	-- A New Darkmoon Challenger!
-			}),
-			crit(11, {	-- Courageous Yon
-				["coord"] = { 35.8, 73.6, KUN_LAI_SUMMIT },
-			}),
-			crit(12, {	-- Cymre Brightblade
-				["coord"] = { 51.0, 70.6, GORGROND },
-			}),
-			crit(13, {	-- Dr. Ion Goldbloom (Celestial Tournament)
-				["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
-			}),
-			crit(14, {	-- Farmer Nishi
-				["coord"] = { 46.0, 43.6, VALLEY_OF_THE_FOUR_WINDS },
-			}),
-			crit(15, {	-- Flowing Pandaren Spirit
-				["coord"] = { 61.2, 87.6, DREAD_WASTES },
-			}),
-			crit(16, {	-- Gargra
-				["coord"] = { 68.6, 64.6, FROSTFIRE_RIDGE },
-			}),
-			crit(17, {	-- Goz Banefury
-				["coord"] = { 56.6, 56.8, TWILIGHT_HIGHLANDS },
-			}),
-			crit(18, {	-- Gutretch
-				["coord"] = { 13.2, 66.8, ZULDRAK },
-			}),
-			crit(19, {	-- Hyuna of the Shrines
-				["coord"] = { 48.0, 54.0, THE_JADE_FOREST },
-			}),
-			crit(20, {	-- Jeremy Feasel (Darkmoon Island)
-				["_quests"] = { 32175 },	-- Darkmoon Pet Battle!
-			}),
-			crit(21, {	-- Lorewalker Cho (Celestial Tournament)
-				["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
-			}),
-			crit(22, {	-- Lydia Accoste
-				["coord"] = { 40.2, 76.6, DEADWIND_PASS },
-			}),
-			crit(23, {	-- Major Payne
-				["coord"] = { 77.4, 19.6, ICECROWN },
-			}),
-			crit(24, {	-- Mo'ruk
-				["coord"] = { 62.2, 45.8, KRASARANG_WILDS },
-				["cr"] = 66733,	-- Mo'ruk <Grand Master Pet Tamer>
-			}),
-			crit(25, {	-- Morulu The Elder
-				["coord"] = { 59.0, 70.0, SHATTRATH_CITY },
-			}),
-			crit(26, {	-- Narrok (Outland)
-				["coord"] = { 61.0, 49.4, NAGRAND },
-			}),
-			crit(27, {	-- Nearly Headless Jacob
-				["coord"] = { 50.2, 59.0, CRYSTALSONG_FOREST },
-			}),
-			crit(28, {	-- Nicki Tinytech
-				["coord"] = { 64.4, 49.2, HELLFIRE_PENINSULA },
-			}),
-			crit(29, {	-- Obalis
-				["coord"] = { 56.6, 41.8, ULDUM },
-			}),
-			crit(30, {	-- Okrut Dragonwaste
-				["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
-			}),
-			crit(31, {	-- Ras'an
-				["coord"] = { 17.2, 50.6, ZANGARMARSH },
-			}),
-			crit(32, {	-- Seeker Zusshi
-				["coord"] = { 36.2, 52.2, TOWNLONG_STEPPES },
-			}),
-			crit(33, {	-- Shademaster Kiryn (Celestial Tournament)
-				["coord"] = { 37.8, 57.2, TIMELESS_ISLE },
-			}),
-			crit(34, {	-- Stone Cold Trixxy
-				["coord"] = { 65.6, 64.6, WINTERSPRING },
-			}),
-			crit(35, {	-- Sully "The Pickle" McLeary (Celestial Tournament)
-				["coord"] = { 37.8, 57.2, TIMELESS_ISLE },
-			}),
-			crit(36, {	-- Taralune
-				["coord"] = { 49.0, 80.4, TALADOR },
-			}),
-			crit(37, {	-- Taran Zhu (Celestial Tournament)
-				["coord"] = { 37.8, 57.2, TIMELESS_ISLE },
-			}),
-			crit(38, {	-- Tarr the Terrible
-				["coord"] = { 56.2, 9.80, DRAENOR_NAGRAND },
-			}),
-			crit(39, {	-- Thundering Pandaren Spirit
-				["coord"] = { 64.8, 93.6, KUN_LAI_SUMMIT },
-			}),
-			crit(40, {	-- Vesharr
-				["coord"] = { 46.4, 45.2, SPIRES_OF_ARAK },
-			}),
-			crit(41, {	-- Wastewalker Shu
-				["coord"] = { 55.0, 37.6, DREAD_WASTES },
-			}),
-			crit(42, {	-- Whispering Pandaren Spirit
-				["coord"] = { 28.8, 36.0, THE_JADE_FOREST },
-			}),
-			crit(43, {	-- Wise Mari (Celestial Tournament)
-				["coord"] = { 37.8, 57.2, TIMELESS_ISLE },
-			}),
-			crit(44, {	-- Wrathion (Celestial Tournament)
-				["coord"] = { 37.8, 57.2, TIMELESS_ISLE },
-			}),
-		})),
+		petbattle(ach(9069, bubbleDownSelf({ ["timeline"] = { "added 6.0.1.18471" }, }, {	-- An Awfully Big Adventure
+			["provider"] = { "i", 113216 },	-- Elekk Plushie
+			["groups"] = {
+				i(120121),	-- Trunks (PET!)
+				crit(25118, {	-- Aki the Chosen (Pandaria - Vale of Eternal Blossoms)
+					["_npcs"] = { 66741 },	-- Aki the Chosen
+				}),
+				crit(26969, {	-- Ashlei (Draenor - Shadowmoon Valley)
+					["_npcs"] = { 87124 },	-- Ashlei <Grand Master Pet Tamer>
+				}),
+				crit(26970, {	-- Beegle Blastfuse (Northrend - Howling Fjord)
+					["_npcs"] = { 66635 },	-- Beegle Blastfuse <Master Pet Tamer>
+				}),
+				crit(26971, {	-- Blingtron 4000 (Pandaria - Celestial Tournament)
+					["_npcs"] = { 71933 },	-- Blingtron 4000
+				}),
+				crit(27471, {	-- Bloodknight Antari (Outland - Shadowmoon Valley)
+					["_npcs"] = { 66557 },	-- Bloodknight Antari <Grand Master Pet Tamer>
+				}),
+				crit(26972, {	-- Bordin Steadyfist
+					["_npcs"] = { 66815 },	-- Bordin Steadyfist <Master Pet Tamer>
+				}),
+				crit(26973, {	-- Brok
+					["_npcs"] = { 66819 },	-- Brok <Master Pet Tamer>
+				}),
+				crit(26974, {	-- Burning Pandaren Spirit
+					["_npcs"] = { 68463 },	-- Burning Pandaren Spirit <Grand Master Pet Tamer>
+				}),
+				crit(26975, {	-- Chen Stormstout (Pandaria - Celestial Tournament)
+					["_npcs"] = { 71927 },	-- Chen Stormstout
+				}),
+				crit(26976, {	-- Christoph VonFeasel (Darkmoon Island)
+					["_quests"] = { 36471 },	-- A New Darkmoon Challenger!
+					--["_npcs"] = { 85519 },	-- Christoph VonFeasel <Grand Master Pet Tamer>
+				}),
+				crit(26977, {	-- Courageous Yon
+					["_npcs"] = { 66738 },	-- Courageous Yon <Grand Master Pet Tamer>
+				}),
+				crit(26978, {	-- Cymre Brightblade
+					["_npcs"] = { 83837 },	-- Cymre Brightblade <Grand Master Pet Tamer>
+				}),
+				crit(26979, {	-- Dr. Ion Goldbloom (Pandaria - Celestial Tournament)
+					["_npcs"] = { 71934 },	-- Dr. Ion Goldbloom <Jurassic Expedition>
+				}),
+				crit(26980, {	-- Farmer Nishi
+					["_npcs"] = { 66734 },	-- Farmer Nishi <Grand Master Pet Tamer>
+				}),
+				crit(26981, {	-- Flowing Pandaren Spirit
+					["_npcs"] = { 68462 },	-- Flowing Pandaren Spirit <Grand Master Pet Tamer>
+				}),
+				crit(26982, {	-- Gargra
+					["_npcs"] = { 87122 },	-- Gargra <Grand Master Pet Tamer>
+				}),
+				crit(26983, {	-- Goz Banefury
+					["_npcs"] = { 66822 },	-- Goz Banefury <Master Pet Tamer>
+				}),
+				crit(26984, {	-- Gutretch
+					["_npcs"] = { 66639 },	-- Gutretch <Master Pet Tamer>
+				}),
+				crit(26985, {	-- Hyuna of the Shrines
+					["_npcs"] = { 66730 },	-- Hyuna of the Shrines <Grand Master Pet Tamer>
+				}),
+				crit(26986, {	-- Jeremy Feasel (Darkmoon Island)
+					["_quests"] = { 32175 },	-- Darkmoon Pet Battle!
+					--["_npcs"] = { 67370 },	-- Jeremy Feasel <Master Pet Tamer>
+				}),
+				crit(26987, {	-- Lorewalker Cho (Pandaria - Celestial Tournament)
+					["_npcs"] = { 71926 },	-- Lorewalker Cho
+				}),
+				crit(26988, {	-- Lydia Accoste
+					["_npcs"] = { 66522 },	-- Lydia Accoste <Grand Master Pet Tamer>
+				}),
+				crit(26989, {	-- Major Payne
+					["_npcs"] = { 66675 },	-- Major Payne
+				}),
+				crit(26990, {	-- Mo'ruk
+					["_npcs"] = { 66733 },	-- Mo'ruk <Grand Master Pet Tamer>
+				}),
+				crit(26991, {	-- Morulu The Elder
+					["_npcs"] = { 66553 },	-- Morulu The Elder <Master Pet Tamer>
+				}),
+				crit(26992, {	-- Narrok (Outland)
+					["_npcs"] = { 66552 },	-- Narrok <Master Pet Tamer>
+				}),
+				crit(26993, {	-- Nearly Headless Jacob
+					["_npcs"] = { 66636 },	-- Nearly Headless Jacob <Master Pet Tamer>
+				}),
+				crit(26994, {	-- Nicki Tinytech
+					["_npcs"] = { 66550 },	-- Nicki Tinytech <Master Pet Tamer>
+				}),
+				crit(26995, {	-- Obalis
+					["_npcs"] = { 66824 },	-- Obalis <Grand Master Pet Tamer>
+				}),
+				crit(26996, {	-- Okrut Dragonwaste
+					["_npcs"] = { 66638 },	-- Okrut Dragonwaste <Master Pet Tamer>
+				}),
+				crit(26997, {	-- Ras'an
+					["_npcs"] = { 66551 },	-- Ras'an <Master Pet Tamer>
+				}),
+				crit(26998, {	-- Seeker Zusshi
+					["_npcs"] = { 66918 },	-- Seeker Zusshi <Grand Master Pet Tamer>
+				}),
+				crit(26999, {	-- Shademaster Kiryn (Pandaria - Celestial Tournament)
+					["_npcs"] = { 71930 },	-- Shademaster Kiryn
+				}),
+				crit(27000, {	-- Stone Cold Trixxy (Kalimdor - Winterspring)
+					["_npcs"] = { 66466 },	-- Stone Cold Trixxy <Grand Master Pet Tamer>
+				}),
+				crit(27001, {	-- Sully "The Pickle" McLeary (Pandaria - Celestial Tournament)
+					["_npcs"] = { 71929 },	-- Sully "The Pickle" McLeary <SI:7>
+				}),
+				crit(27002, {	-- Taralune (Draenor - Talador)
+					["_npcs"] = { 87125 },	-- Taralune <Grand Master Pet Tamer>
+				}),
+				crit(27003, {	-- Taran Zhu (Pandaria - Celestial Tournament)
+					["_npcs"] = { 71931 },	-- Taran Zhu <Lord of the Shado-Pan>
+				}),
+				crit(27004, {	-- Tarr the Terrible (Draenor - Nagrand)
+					["_npcs"] = { 87110 },	-- Tarr the Terrible <Grand Master Pet Tamer>
+				}),
+				crit(27005, {	-- Thundering Pandaren Spirit (Pandaria - Kun-Lai Summit)
+					["_npcs"] = { 68465 },	-- Thundering Pandaren Spirit <Grand Master Pet Tamer>
+				}),
+				crit(27006, {	-- Vesharr (Draenor - Spires of Arak)
+					["_npcs"] = { 87123 },	-- Vesharr <Grand Master Pet Tamer>
+				}),
+				crit(27007, {	-- Wastewalker Shu (Pandaria - Dread Wastes)
+					["_npcs"] = { 66739 },	-- Wastewalker Shu <Grand Master Pet Tamer>
+				}),
+				crit(27008, {	-- Whispering Pandaren Spirit (Pandaria - The Jade Forest)
+					["_npcs"] = { 68464 },	-- Whispering Pandaren Spirit <Grand Master Pet Tamer>
+				}),
+				crit(27009, {	-- Wise Mari (Pandaria - Celestial Tournament)
+					["_npcs"] = { 71932 },	-- Wise Mari <Waterspeaker>
+				}),
+				crit(27010, {	-- Wrathion (Pandaria - Celestial Tournament)
+					["_npcs"] = { 71924 },	-- Wrathion <The Black Prince>
+				}),
+			},
+		}))),
 		ach(10876, {	-- Battle on the Broken Isles
 			i(139003, {	-- Pocket Pet Portal
 				["questID"] = 43016,

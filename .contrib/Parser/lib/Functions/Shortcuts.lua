@@ -1061,6 +1061,13 @@ battlepets = function(timeline, t)						-- Creates a BATTLE_PETS header with pet
 	end
 	return petbattle(filter(BATTLE_PETS, bubbleDownSelf({ ["timeline"] = timeline }, t)));
 end
+petbattles = function(timeline, t)						-- Creates a PET_BATTLE header with pet battle filter on it. Use this with Outdoor Zones.
+	if not t then
+		t = timeline;
+		timeline = { ADDED_5_0_4 };
+	end
+	return petbattle(n(PET_BATTLE, bubbleDownSelf({ ["timeline"] = timeline }, t)));
+end
 
 -- SHORTCUTS for Field Modifiers (not objects, you can apply these anywhere)
 a = function(t)	-- Flag as Alliance Only
