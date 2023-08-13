@@ -1891,16 +1891,11 @@ root(ROOTS.Zones, {
 						}),
 						n(86391, {	-- Dawn-Seeker Krek <Apexis Leggings Trader>
 							["coord"] = { 50.7, 61.5, STORMSHIELD },
+							["sym"] = {{"select","itemID",
+								116768,	-- Mosshide Riverwallow (MOUNT!)
+								119821,	-- Contact: Dawnseeker Rukaryx
+							}},
 							["g"] = {
-								i(119821, {	-- Contact: Dawnseeker Rukaryx
-									["cost"] = {
-										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
-										{ "g", 50000000 },	-- 5,000g
-									},
-									["g"] = {
-										follower(462),	-- Dawnseeker Rukaryx
-									},
-								}),
 								i(115376, {	-- Crystal-Leaf Legguards
 									["cost"] = 10000000,	-- 1,000g
 								}),
@@ -1946,12 +1941,6 @@ root(ROOTS.Zones, {
 								i(116931, {	-- Flawless Windcrystal Leggings
 									["cost"] = 100000000,	-- 10,000g
 								}),
-								i(116768, {	-- Mosshide Riverwallow (MOUNT!)
-									["cost"] = {
-										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
-										{ "g", 500000000 },	-- 50,000g
-									},
-								}),
 								i(115374, {	-- Windcrystal Leggings
 									["cost"] = 10000000,	-- 1,000g
 								}),
@@ -1959,16 +1948,11 @@ root(ROOTS.Zones, {
 						}),
 						n(86387, {	-- Dawn-Seeker Rilak <Apexis Helm Trader>
 							["coord"] = { 50.0, 61.2, STORMSHIELD },
+							["sym"] = {{"select","itemID",
+								116768,	-- Mosshide Riverwallow (MOUNT!)
+								119821,	-- Contact: Dawnseeker Rukaryx
+							}},
 							["g"] = {
-								i(119821, {	-- Contact: Dawnseeker Rukaryx
-									["cost"] = {
-										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
-										{ "g", 50000000 },	-- 5,000g
-									},
-									["g"] = {
-										follower(462),	-- Dawnseeker Rukaryx
-									},
-								}),
 								i(116955, {	-- Crystal-Leaf Helm
 									["cost"] = 10000000,	-- 1,000g
 								}),
@@ -2014,12 +1998,6 @@ root(ROOTS.Zones, {
 								i(115396, {	-- Flawless Windcrystal Hood
 									["cost"] = 100000000,	-- 10,000g
 								}),
-								i(116768, {	-- Mosshide Riverwallow (MOUNT!)
-									["cost"] = {
-										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
-										{ "g", 500000000 },	-- 50,000g
-									},
-								}),
 								i(116953, {	-- Windcrystal Hood
 									["cost"] = 10000000,	-- 1,000g
 								}),
@@ -2027,16 +2005,11 @@ root(ROOTS.Zones, {
 						}),
 						n(91321, {	-- Dawn-Seeker Skelak <Apexis Bracer Trader>
 							["coord"] = { 50.0, 61.6, STORMSHIELD },
+							["sym"] = {{"select","itemID",
+								116768,	-- Mosshide Riverwallow (MOUNT!)
+								119821,	-- Contact: Dawnseeker Rukaryx
+							}},
 							["g"] = {
-								i(119821, {	-- Contact: Dawnseeker Rukaryx
-									["cost"] = {
-										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
-										{ "g", 50000000 },	-- 5,000g
-									},
-									["g"] = {
-										follower(462),	-- Dawnseeker Rukaryx
-									},
-								}),
 								i(116967, {	-- Crystal-Leaf Bracers
 									["cost"] = 10000000,	-- 1,000g
 								}),
@@ -2082,12 +2055,6 @@ root(ROOTS.Zones, {
 								i(115400, {	-- Flawless Windcrystal Bracers
 									["cost"] = 100000000,	-- 10,000g
 								}),
-								i(116768, {	-- Mosshide Riverwallow (MOUNT!)
-									["cost"] = {
-										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
-										{ "g", 500000000 },	-- 50,000g
-									},
-								}),
 								i(116965, {	-- Windcrystal Bracers
 									["cost"] = 10000000,	-- 1,000g
 								}),
@@ -2095,16 +2062,11 @@ root(ROOTS.Zones, {
 						}),
 						n(86390, {	-- Dawn-Seeker Vallar <Apexis Glove Trader>
 							["coord"] = { 48.5, 62.3, STORMSHIELD },
+							["sym"] = {{"select","itemID",
+								116768,	-- Mosshide Riverwallow (MOUNT!)
+								119821,	-- Contact: Dawnseeker Rukaryx
+							}},
 							["g"] = {
-								i(119821, {	-- Contact: Dawnseeker Rukaryx
-									["cost"] = {
-										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
-										{ "g", 50000000 },	-- 5,000g
-									},
-									["g"] = {
-										follower(462),	-- Dawnseeker Rukaryx
-									},
-								}),
 								i(116945, {	-- Crystal-Leaf Gloves
 									["cost"] = 10000000,	-- 1,000g
 								}),
@@ -2150,12 +2112,6 @@ root(ROOTS.Zones, {
 								i(116947, {	-- Flawless Windcrystal Wraps
 									["cost"] = 100000000,	-- 10,000g
 								}),
-								i(116768, {	-- Mosshide Riverwallow (MOUNT!)
-									["cost"] = {
-										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
-										{ "g", 500000000 },	-- 50,000g
-									},
-								}),
 								i(116943, {	-- Windcrystal Wraps
 									["cost"] = 10000000,	-- 1,000g
 								}),
@@ -2163,16 +2119,11 @@ root(ROOTS.Zones, {
 						}),
 						n(86389, {	-- Dawn-Seeker Verroak <Apexis Cloak Trader>
 							["coord"] = { 49.4, 61.3, STORMSHIELD },
+							["sym"] = {{"select","itemID",
+								116768,	-- Mosshide Riverwallow (MOUNT!)
+								119821,	-- Contact: Dawnseeker Rukaryx
+							}},
 							["g"] = {
-								i(119821, {	-- Contact: Dawnseeker Rukaryx
-									["cost"] = {
-										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
-										{ "g", 50000000 },	-- 5,000g
-									},
-									["g"] = {
-										follower(462),	-- Dawnseeker Rukaryx
-									},
-								}),
 								i(116976, {	-- Crystal Reinforced Doomcloak
 									["cost"] = 10000000,	-- 1,000g
 								}),
@@ -2226,12 +2177,6 @@ root(ROOTS.Zones, {
 								}),
 								i(116951, {	-- Flawless Shard-Covered Dreadcloak
 									["cost"] = 100000000,	-- 10,000g
-								}),
-								i(116768, {	-- Mosshide Riverwallow (MOUNT!)
-									["cost"] = {
-										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
-										{ "g", 500000000 },	-- 50,000g
-									},
 								}),
 								i(116975, {	-- Refractory Heartcloak
 									["cost"] = 10000000,	-- 1,000g
