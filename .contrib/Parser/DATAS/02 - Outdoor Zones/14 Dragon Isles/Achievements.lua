@@ -121,6 +121,42 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				title(478),	-- Isles Racer <Name>
 			},
 		}),
+		ach(18790, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Dragonriding Challenge: Dragon Isles: Bronze
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				18757,	-- Azure Span Challenge: Bronze
+				18779,	-- Forbidden Reach Challenge: Bronze
+				18754,	-- Ohn'ahran Plains Challenge: Bronze
+				18760,	-- Thaldraszus Challenge: Bronze
+				18748,	-- Waking Shores Challenge: Bronze
+				18786,	-- Zaralek Cavern Challenge: Bronze
+			}},
+			["g"] = {
+				i(208433),	-- Bronze Racer's Pennant (TOY!)
+			},
+		})),
+		ach(18791, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Dragonriding Challenge: Dragon Isles: Silver
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				18758,	-- Azure Span Challenge: Silver
+				18780,	-- Forbidden Reach Challenge: Silver
+				18755,	-- Ohn'ahran Plains Challenge: Silver
+				18761,	-- Thaldraszus Challenge: Silver
+				18749,	-- Waking Shores Challenge: Silver
+				18787,	-- Zaralek Cavern Challenge: Silver
+			}},
+		})),
+		ach(18792, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Dragonriding Challenge: Dragon Isles: Gold
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				18759,	-- Azure Span Challenge: Gold
+				18781,	-- Forbidden Reach Challenge: Gold
+				18756,	-- Ohn'ahran Plains Challenge: Gold
+				18762,	-- Thaldraszus Challenge: Gold
+				18750,	-- Waking Shores Challenge: Gold
+				18788,	-- Zaralek Cavern Challenge: Gold
+			}},
+		})),
 		ach(18559, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Many Boxes, Many Rockses
 			["cost"] = {{"i", 199216, 50 }},	-- 50x A Box of Rocks
 			["g"] = {

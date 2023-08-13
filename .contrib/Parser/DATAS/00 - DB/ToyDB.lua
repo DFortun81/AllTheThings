@@ -1212,3 +1212,8 @@ i(206195);	-- Path of the Naaru
 i(206696);	-- Unknown
 i(207730);	-- Unknown
 i(208092);	-- Unknown
+
+------------------
+-- PATCH 10.1.7 --
+------------------
+i(208433);	-- Bronze Racer's Pennant

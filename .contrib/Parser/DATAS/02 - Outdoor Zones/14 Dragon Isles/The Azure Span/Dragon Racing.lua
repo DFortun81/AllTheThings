@@ -190,6 +190,64 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 				}),
 			}),
+			header(HEADERS.Achievement, 18792, bubbleDownSelf({ ["timeline"] = ADDED_10_1_7 }, {	-- Dragonriding Challenge: Dragon Isles: Gold
+				n(ACHIEVEMENTS, {
+					ach(18757, {	-- Azure Span Challenge: Bronze
+						-- Meta Achievement
+						["sym"] = {{"meta_achievement",
+							17985,	-- Archive Ambit Challenge: Bronze
+							17988,	-- Archive Ambit Reverse Challenge: Bronze
+							17979,	-- Frostland Flyover Challenge: Bronze
+							17982,	-- Frostland Flyover Reverse Challenge: Bronze
+							17971,	-- Iskaara Tour Challenge: Bronze
+							17974,	-- Iskaara Tour Reverse Challenge: Bronze
+							17959,	-- The Azure Span Slalom Challenge: Bronze
+							17962,	-- The Azure Span Slalom Reverse Challenge: Bronze
+							17953,	-- The Azure Span Sprint Challenge: Bronze
+							17956,	-- The Azure Span Sprint Reverse Challenge: Bronze
+							17965,	-- The Vakthros Ascent Challenge: Bronze
+							17968,	-- The Vakthros Ascent Reverse Challenge: Bronze
+						}},
+					}),
+					ach(18758, {	-- Azure Span Challenge: Silver
+						-- Meta Achievement
+						["sym"] = {{"meta_achievement",
+							17986,	-- Archive Ambit Challenge: Silver
+							17989,	-- Archive Ambit Reverse Challenge: Silver
+							17980,	-- Frostland Flyover Challenge: Silver
+							17983,	-- Frostland Flyover Reverse Challenge: Silver
+							17972,	-- Iskaara Tour Challenge: Silver
+							17975,	-- Iskaara Tour Reverse Challenge: Silver
+							17960,	-- The Azure Span Slalom Challenge: Silver
+							17963,	-- The Azure Span Slalom Reverse Challenge: Silver
+							17954,	-- The Azure Span Sprint Challenge: Silver
+							17957,	-- The Azure Span Sprint Reverse Challenge: Silver
+							17966,	-- The Vakthros Ascent Challenge: Silver
+							17969,	-- The Vakthros Ascent Reverse Challenge: Silver
+						}},
+					}),
+					ach(18759, {	--Azure Span Challenge: Gold
+						-- Meta Achievement
+						["sym"] = {{"meta_achievement",
+							17987,	-- Archive Ambit Challenge: Gold
+							17990,	-- Archive Ambit Reverse Challenge: Gold
+							17981,	-- Frostland Flyover Challenge: Gold
+							17984,	-- Frostland Flyover Reverse Challenge: Gold
+							17973,	-- Iskaara Tour Challenge: Gold
+							17976,	-- Iskaara Tour Reverse Challenge: Gold
+							17961,	-- The Azure Span Slalom Challenge: Gold
+							17964,	-- The Azure Span Slalom Reverse Challenge: Gold
+							17955,	-- The Azure Span Sprint Challenge: Gold
+							17958,	-- The Azure Span Sprint Reverse Challenge: Gold
+							17967,	-- The Vakthros Ascent Challenge: Gold
+							17970,	-- The Vakthros Ascent Reverse Challenge: Gold
+						}},
+					}),
+				}),
+				n(QUESTS, {
+					-- TODO
+				}),
+			})),
 			header(HEADERS.Achievement, 17332, bubbleDownSelf({ ["timeline"] = ADDED_10_0_5 }, {	-- Reverse Racer: Gold
 				n(ACHIEVEMENTS, {
 					ach(17201, {	-- Azure Span Reverse: Bronze

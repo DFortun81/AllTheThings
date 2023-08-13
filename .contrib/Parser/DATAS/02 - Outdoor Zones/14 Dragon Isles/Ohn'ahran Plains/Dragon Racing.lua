@@ -190,6 +190,64 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 				}),
 			}),
+			header(HEADERS.Achievement, 18792, bubbleDownSelf({ ["timeline"] = ADDED_10_1_7 }, {	-- Dragonriding Challenge: Dragon Isles: Gold
+				n(ACHIEVEMENTS, {
+					ach(18754, {	-- Ohn'ahran Plains Challenge: Bronze
+						-- Meta Achievement
+						["sym"] = {{"meta_achievement",
+							17935,	-- Emerald Garden Ascent Challenge: Bronze
+							17938,	-- Emerald Garden Ascent Reverse Challenge: Bronze
+							17922,	-- Fen Flythrough Challenge: Bronze
+							17925,	-- Fen Flythrough Reverse Challenge: Bronze
+							17947,	-- Maruukai Dash Challenge: Bronze
+							17950,	-- Mirror of the Sky Dash Challenge: Bronze
+							17928,	-- Ravine River Run Challenge: Bronze
+							17931,	-- Ravine River Run Reverse Challenge: Bronze
+							17941,	-- River Rapids Route Challenge: Bronze
+							17944,	-- River Rapids Route Reverse Challenge: Bronze
+							17912,	-- Sundapple Copse Circuit Challenge: Bronze
+							17919,	-- Sundapple Copse Circuit Reverse Challenge: Bronze
+						}},
+					}),
+					ach(18755, {	-- Ohn'ahran Plains Challenge: Silver
+						-- Meta Achievement
+						["sym"] = {{"meta_achievement",
+							17936,	-- Emerald Garden Ascent Challenge: Silver
+							17939,	-- Emerald Garden Ascent Reverse Challenge: Silver
+							17923,	-- Fen Flythrough Challenge: Silver
+							17926,	-- Fen Flythrough Reverse Challenge: Silver
+							17948,	-- Maruukai Dash Challenge: Silver
+							17951,	-- Mirror of the Sky Dash Challenge: Silver
+							17929,	-- Ravine River Run Challenge: Silver
+							17932,	-- Ravine River Run Reverse Challenge: Silver
+							17942,	-- River Rapids Route Challenge: Silver
+							17945,	-- River Rapids Route Reverse Challenge: Silver
+							17913,	-- Sundapple Copse Circuit Challenge: Silver
+							17920,	-- Sundapple Copse Circuit Reverse Challenge: Silver
+						}},
+					}),
+					ach(18756, {	-- Ohn'ahran Plains Challenge: Gold
+						-- Meta Achievement
+						["sym"] = {{"meta_achievement",
+							17937,	-- Emerald Garden Ascent Challenge: Gold
+							17940,	-- Emerald Garden Ascent Reverse Challenge: Gold
+							17924,	-- Fen Flythrough Challenge: Gold
+							17927,	-- Fen Flythrough Reverse Challenge: Gold
+							17949,	-- Maruukai Dash Challenge: Gold
+							17952,	-- Mirror of the Sky Dash Challenge: Gold
+							17930,	-- Ravine River Run Challenge: Gold
+							17933,	-- Ravine River Run Reverse Challenge: Gold
+							17943,	-- River Rapids Route Challenge: Gold
+							17946,	-- River Rapids Route Reverse Challenge: Gold
+							17914,	-- Sundapple Copse Circuit Challenge: Gold
+							17921,	-- Sundapple Copse Circuit Reverse Challenge: Gold
+						}},
+					}),
+				}),
+				n(QUESTS, {
+					-- TODO
+				}),
+			})),
 			header(HEADERS.Achievement, 17332, bubbleDownSelf({ ["timeline"] = ADDED_10_0_5 }, {	-- Reverse Racer: Gold
 				n(ACHIEVEMENTS, {
 					ach(17198, {	-- Ohn'ahran Plains Reverse: Bronze

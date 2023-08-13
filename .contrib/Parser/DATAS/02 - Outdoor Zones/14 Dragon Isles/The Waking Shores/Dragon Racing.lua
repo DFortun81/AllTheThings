@@ -238,6 +238,76 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 				}),
 			}),
+			header(HEADERS.Achievement, 18792, bubbleDownSelf({ ["timeline"] = ADDED_10_1_7 }, {	-- Dragonriding Challenge: Dragon Isles: Gold
+				n(ACHIEVEMENTS, {
+					ach(18748, {	-- Waking Shores Challenge: Bronze
+						-- Meta Achievement
+						["sym"] = {{"meta_achievement",
+							17871,	-- Apex Canopy River Run Challenge: Bronze
+							17874,	-- Apex Canopy River Run Reverse Challenge: Bronze
+							17865,	-- Emberflow Flight Challenge: Bronze
+							17868,	-- Emberflow Flight Reverse Challenge: Bronze
+							17897,	-- Flashfrost Flyover Challenge: Bronze
+							17900,	-- Flashfrost Flyover Reverse Challenge: Bronze
+							17853,	-- Ruby Lifeshrine Loop Challenge: Bronze
+							17856,	-- Ruby Lifeshrine Loop Reverse Challenge: Bronze
+							17884,	-- Uktulut Coaster Challenge: Bronze
+							17887,	-- Uktulut Coaster Reverse Challenge: Bronze
+							17906,	-- Wild Preserve Circuit Challenge: Bronze
+							17862,	-- Wild Preserve Circuit Reverse Challenge: Bronze
+							17859,	-- Wild Preserve Slalom Challenge: Bronze
+							17909,	-- Wild Preserve Slalom Reverse Challenge: Bronze
+							17891,	-- Wingrest Roundabout Challenge: Bronze
+							17894,	-- Wingrest Roundabout Reverse Challenge: Bronze
+						}},
+					}),
+					ach(18749, {	-- Waking Shores Challenge: Silver
+						-- Meta Achievement
+						["sym"] = {{"meta_achievement",
+							17872,	-- Apex Canopy River Run Challenge: Silver
+							17875,	-- Apex Canopy River Run Reverse Challenge: Silver
+							17866,	-- Emberflow Flight Challenge: Silver
+							17869,	-- Emberflow Flight Reverse Challenge: Silver
+							17898,	-- Flashfrost Flyover Challenge: Silver
+							17901,	-- Flashfrost Flyover Reverse Challenge: Silver
+							17854,	-- Ruby Lifeshrine Loop Challenge: Silver
+							17857,	-- Ruby Lifeshrine Loop Reverse Challenge: Silver
+							17885,	-- Uktulut Coaster Challenge: Silver
+							17888,	-- Uktulut Coaster Reverse Challenge: Silver
+							17907,	-- Wild Preserve Circuit Challenge: Silver
+							17910,	-- Wild Preserve Circuit Reverse Challenge: Silver
+							17860,	-- Wild Preserve Slalom Challenge: Silver
+							17863,	-- Wild Preserve Slalom Reverse Challenge: Silver
+							17892,	-- Wingrest Roundabout Challenge: Silver
+							17895,	-- Wingrest Roundabout Reverse Challenge: Silver
+						}},
+					}),
+					ach(18750, {	-- Waking Shores Challenge: Gold
+						-- Meta Achievement
+						["sym"] = {{"meta_achievement",
+							17873,	-- Apex Canopy River Run Challenge: Gold
+							17876,	-- Apex Canopy River Run Reverse Challenge: Gold
+							17867,	-- Emberflow Flight Challenge: Gold
+							17870,	-- Emberflow Flight Reverse Challenge: Gold
+							17899,	-- Flashfrost Flyover Challenge: Gold
+							17902,	-- Flashfrost Flyover Reverse Challenge: Gold
+							17855,	-- Ruby Lifeshrine Loop Challenge: Gold
+							17858,	-- Ruby Lifeshrine Loop Reverse Challenge: Gold
+							17886,	-- Uktulut Coaster Challenge: Gold
+							17889,	-- Uktulut Coaster Reverse Challenge: Gold
+							17908,	-- Wild Preserve Circuit Challenge: Gold
+							17911,	-- Wild Preserve Circuit Reverse Challenge: Gold
+							17861,	-- Wild Preserve Slalom Challenge: Gold
+							17864,	-- Wild Preserve Slalom Reverse Challenge: Gold
+							17893,	-- Wingrest Roundabout Challenge: Gold
+							17896,	-- Wingrest Roundabout Reverse Challenge: Gold
+						}},
+					}),
+				}),
+				n(QUESTS, {
+					-- TODO
+				}),
+			})),
 			header(HEADERS.Achievement, 17332, bubbleDownSelf({ ["timeline"] = ADDED_10_0_5 }, {	-- Reverse Racer: Gold
 				n(ACHIEVEMENTS, {
 					ach(17195, {	-- Waking Shores Reverse: Bronze

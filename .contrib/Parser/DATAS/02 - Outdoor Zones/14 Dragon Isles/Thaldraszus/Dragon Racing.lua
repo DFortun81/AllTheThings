@@ -190,6 +190,64 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 				}),
 			}),
+			header(HEADERS.Achievement, 18792, bubbleDownSelf({ ["timeline"] = ADDED_10_1_7 }, {	-- Dragonriding Challenge: Dragon Isles: Gold
+				n(ACHIEVEMENTS, {
+					ach(18760, {	-- Thaldraszus Challenge: Bronze
+						-- Meta Achievement
+						["sym"] = {{"meta_achievement",
+							18009,	-- Academy Ascent Challenge: Bronze
+							18012,	-- Academy Ascent Reverse Challenge: Bronze
+							18021,	-- Caverns Criss-Cross Challenge: Bronze
+							18024,	-- Caverns Criss-Cross Reverse Challenge: Bronze
+							18003,	-- Cliffside Circuit Challenge: Bronze
+							18006,	-- Cliffside Circuit Reverse Challenge: Bronze
+							18015,	-- Garden Gallivant Challenge: Bronze
+							18018,	-- Garden Gallivant Reverse Challenge: Bronze
+							17991,	-- The Flowing Forest Flight Challenge: Bronze
+							17994,	-- The Flowing Forest Flight Reverse Challenge: Bronze
+							17997,	-- Tyrhold Trial Challenge: Bronze
+							18000,	-- Tyrhold Trial Reverse Challenge: Bronze
+						}},
+					}),
+					ach(18761, {	-- Thaldraszus Challenge: Silver
+						-- Meta Achievement
+						["sym"] = {{"meta_achievement",
+							18010,	-- Academy Ascent Challenge: Silver
+							18013,	-- Academy Ascent Reverse Challenge: Silver
+							18022,	-- Caverns Criss-Cross Challenge: Silver
+							18025,	-- Caverns Criss-Cross Reverse Challenge: Silver
+							18004,	-- Cliffside Circuit Challenge: Silver
+							18007,	-- CliffsideCircuit Reverse Challenge: Silver
+							18016,	-- Garden Gallivant Challenge: Silver
+							18019,	-- Garden Gallivant Reverse Challenge: Silver
+							17992,	-- The Flowing Forest Flight Challenge: Silver
+							17995,	-- The Flowing Forest Flight Reverse Challenge: Silver
+							17998,	-- Tyrhold Trial Challenge: Silver
+							18001,	-- Tyrhold Trial Reverse Challenge: Silver
+						}},
+					}),
+					ach(18762, {	-- Thaldraszus Challenge: Gold
+						-- Meta Achievement
+						["sym"] = {{"meta_achievement",
+							18011,	-- Academy Ascent Challenge: Gold
+							18014,	-- Academy Ascent Reverse Challenge: Gold
+							18023,	-- Caverns Criss-Cross Challenge: Gold
+							18026,	-- Caverns Criss-Cross Reverse Challenge: Gold
+							18005,	-- Cliffside Circuit Challenge: Gold
+							18008,	-- Cliffside Circuit Reverse Challenge: Gold
+							18017,	-- Garden Gallivant Challenge: Gold
+							18020,	-- Garden Gallivant Reverse Challenge: Gold
+							17993,	-- The Flowing Forest Flight Challenge: Gold
+							17996,	-- The Flowing Forest Flight Reverse Challenge: Gold
+							17999,	-- Tyrhold Trial Challenge: Gold
+							18002,	-- Tyrhold Trial Reverse Challenge: Gold
+						}},
+					}),
+				}),
+				n(QUESTS, {
+					-- TODO
+				}),
+			})),
 			header(HEADERS.Achievement, 17332, bubbleDownSelf({ ["timeline"] = ADDED_10_0_5 }, {	-- Reverse Racer: Gold
 				n(ACHIEVEMENTS, {
 					ach(17204, {	-- Thaldraszus Reverse: Bronze
