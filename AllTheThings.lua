@@ -12127,6 +12127,12 @@ local mapFields = {
 	["icon"] = function(t)
 		return t.headerID and L["HEADER_ICONS"][t.headerID] or app.asset("Category_Zones");
 	end,
+	["description"] = function(t)
+		return t.headerID and L["HEADER_DESCRIPTIONS"][t.headerID];
+	end,
+	["lore"] = function(t)
+		return t.headerID and L["HEADER_LORE"][t.headerID];
+	end,
 	["back"] = function(t)
 		if app.CurrentMapID == t.mapID or (t.maps and contains(t.maps, app.CurrentMapID)) then
 			return 1;
