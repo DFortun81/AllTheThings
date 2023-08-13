@@ -939,7 +939,7 @@ root(ROOTS.Zones, {
 				n(PROFESSIONS, {
 					prof(FISHING, {
 						i(104034, {	-- Purse of Timeless Coins
-							["description"] = "Can be fished up from Jewel Danio Schools.|r",
+							["description"] = "Can be fished up from Jewel Danio Schools.",
 						}),
 					}),
 				}),
