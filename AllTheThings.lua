@@ -9884,10 +9884,16 @@ local fields = {
 		end
 	end,
 	["name"] = function(t)
-		return cache.GetCachedField(t, "name", default_name);
+		return t.headerID and app.NPCNameFromID[t.headerID] or cache.GetCachedField(t, "name", default_name);
 	end,
 	["icon"] = function(t)
-		return app.DifficultyIcons[t.difficultyID] or app.asset("Difficulty_Multi");
+		return t.headerID and L["HEADER_ICONS"][t.headerID] or app.DifficultyIcons[t.difficultyID] or app.asset("Difficulty_Multi");
+	end,
+	["description"] = function(t)
+		return t.headerID and L["HEADER_DESCRIPTIONS"][t.headerID];
+	end,
+	["lore"] = function(t)
+		return t.headerID and L["HEADER_LORE"][t.headerID];
 	end,
 	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
@@ -9932,7 +9938,13 @@ local fields = {
 };
 app.BaseDifficulty = app.BaseObjectFields(fields, "BaseDifficulty");
 app.CreateDifficulty = function(id, t)
-	return setmetatable(constructor(id, t, "difficultyID"), app.BaseDifficulty);
+	t = constructor(id, t, "difficultyID");
+	local npcID = t.npcID;
+	if npcID and npcID < 0 then
+		t.headerID = npcID;
+		t.npcID = nil;
+	end
+	return setmetatable(t, app.BaseDifficulty);
 end
 end)();
 
