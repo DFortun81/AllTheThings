@@ -1,13 +1,31 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
+ASSAULT_ON_THE_DARK_PORTAL = createHeader({
+	readable = "Assault on the Dark Portal",
+	icon = "Interface\\Icons\\achievement_dungeon_outland_dungeonmaster",
+	text = {
+		en = "Assault on the Dark Portal",
+		es = "Asalto en el Portal Oscuro",
+		de = "Angriff auf das Dunkle Portal",
+		fr = "Prise D'assaut de la Porte des Ténèbres",
+		it = "Assalto al Portale Oscuro",
+		pt = "Ataque ao Portal Negro",
+		ru = "Атака на Темный портал",
+		ko = "어둠의 문 공격 작",
+		cn = "进攻黑暗之门",
+	},
+	description = {
+		en = "The Assault on the Dark Portal is the instanced version of Tanaan Valley, which is the subzone of Tanaan Jungle and a location of Warlords of Draenor introductory experience. Once the intro is completed, players have no means of returning to the area, similiar to Plaguelands: The Scarlet Enclave for death knights.",
+	},
+});
 root(ROOTS.Zones, {
 	m(DRAENOR, {
-		n(-356, {	-- Assault on the Dark Portal
-			["description"] = "The Assault on the Dark Portal is the instanced version of Tanaan Valley, which is the subzone of Tanaan Jungle and a location of Warlords of Draenor introductory experience. Once the intro is completed, players have no means of returning to the area, similiar to Plaguelands: The Scarlet Enclave for death knights.",
-			["mapID"] = 577,
-			["maps"] = { 578 },	-- Umbral Halls
+		n(ASSAULT_ON_THE_DARK_PORTAL, {
+			["maps"] = {
+				577,	-- Tanaan Jungle (instanced)
+				578,	-- Umbral Halls
+			},
 			["lvl"] = 90,
 			["g"] = {
 				n(ACHIEVEMENTS, {

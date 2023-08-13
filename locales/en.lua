@@ -1041,8 +1041,6 @@ app.L = {
 	-- PvP
 		[-302] = "Interface\\Icons\\expansionicon_cataclysm",								-- Level Range 80-84
 		[-303] = "Interface\\Icons\\expansionicon_mistsofpandaria",							-- Level Range 85-89
-	-- First Questline Draenor
-		[-356] = "Interface\\Icons\\achievement_dungeon_outland_dungeonmaster",				-- Assault on the Dark Portal
 	-- Outposts in Draenor
 		[-357] = "Interface\\Icons\\garrison_building_sparringarena",						-- Sparring Arena Outpost (Gorgond)
 		[-358] = "Interface\\Icons\\garrison_building_lumbermill",							-- Lumber Mill Outpost (Gorgrond)
@@ -1252,8 +1250,6 @@ app.L = {
 	-- PvP
 		[-302] = BATTLEFIELD_LEVEL.." 80-84",									-- Level Range 80-84
 		[-303] = BATTLEFIELD_LEVEL.." 85-89",									-- Level Range 85-89
-	-- First Questline Draenor
-		[-356] = "Assault on the Dark Portal",									-- Assault on the Dark Portal
 	-- Outposts in Draenor
 		[-357] = GetSpellInfo(171866),											-- Sparring Arena Outpost
 		[-358] = GetSpellInfo(164028),											-- Lumber Mill Outpost

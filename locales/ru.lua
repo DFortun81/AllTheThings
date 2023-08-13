@@ -682,8 +682,6 @@ for key,value in pairs({
 	-- Allied Races
 		[-254] = "Союзные расы",									-- Allied Races
 		[-255] = "Традиционные доспехи",							-- Heritage
-	-- First Questline Draenor
-		[-356] = "Атака на Темный портал",							-- Assault on the Dark Portal
 	-- Outposts in Draenor
 		[-361] = "Артиллерийная башня",								-- Artillery Tower
 	-- BFA Outposts

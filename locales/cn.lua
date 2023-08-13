@@ -703,8 +703,6 @@ for key,value in pairs({
 	-- Allied Races
 		[-254] = "同盟种族",												-- Allied Races
 		[-255] = "传承护甲",											-- Heritage
-	-- First Questline Draenor
-		[-356] = "进攻黑暗之门",										-- Assault on the Dark Portal
 	-- Outposts in Draenor
 		[-361] = GetSpellInfo(182108).." 塔",						-- Artillery Tower
 	-- BFA Outposts

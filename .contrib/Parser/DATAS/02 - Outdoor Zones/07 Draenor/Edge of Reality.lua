@@ -40,10 +40,11 @@ root(ROOTS.Zones, {
 				{ 52.1, 41.1, TALADOR },
 				{ 52.3, 25.8, TALADOR },
 			},
-			["g"] = {
+			["modelScale"] = 3,
+			["groups"] = {
 				o(239901, {	-- Voidtalon Egg
-					["modelScale"] = 2,
-					["g"] = {
+					["modelScale"] = 1.5,
+					["groups"] = {
 						i(121815),	-- Voidtalon of the Dark Star (MOUNT!)
 					},
 				}),

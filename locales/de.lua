@@ -685,8 +685,6 @@ for key,value in pairs({
 	-- Allied Races
 		[-254] = "Verbündete Völker",								-- Allied Races
 		[-255] = "Traditionsrüstung",								-- Heritage
-	-- First Questline Draenor
-		[-356] = "Angriff auf das Dunkle Portal",					-- Assault on the Dark Portal
 	-- BFA Outposts
 		[-397] = "Außenposten",										-- Outposts
 	-- 5.3
