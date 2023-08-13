@@ -2373,8 +2373,8 @@ root(ROOTS.Zones, {
 							i(44723, {	-- Pengu (PET!)
 								["timeline"] = { "added 3.0.2.8982" },
 							}),
-							i(44511, {	-- Pattern: Dragonscale Ammo Pouch
-								["timeline"] = { "removed 4.0.1" },
+							i(44511, {	-- Pattern: Dragonscale Ammo Pouch (RECIPE!)
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(45774),	-- Pattern: Emerald Bag
 							i(44509),	-- Pattern: Trapper's Traveling Pack (RECIPE!)

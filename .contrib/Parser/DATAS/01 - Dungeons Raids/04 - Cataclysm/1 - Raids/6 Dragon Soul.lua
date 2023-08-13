@@ -625,7 +625,6 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 							i(72006),	-- Pattern: Bladeshadow Leggings (RECIPE!)
 							i(72010),	-- Pattern: Bladeshadow Wristguards (RECIPE!)
 							i(72008),	-- Pattern: Bracers of Flowing Serenity (RECIPE!)
-							i(72008),	-- Pattern: Bracers of Flowing Serenity (RECIPE!)
 							i(72011),	-- Pattern: Bracers of the Hunter-Killer (RECIPE!)
 							i(72004),	-- Pattern: Bracers of Unconquered Power
 							i(72005),	-- Pattern: Deathscale Leggings (RECIPE!)

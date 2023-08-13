@@ -555,24 +555,8 @@ i(35300, 35568);	-- Windstrike Gloves [BoP]
 ------------------
 -- PATCH 3.0.1 --
 ------------------
-i(0, 51302);	-- Leatherworking
--- TRAINER --
-i(0, 50949);	-- Arctic Belt
-i(0, 50948);	-- Arctic Boots
-i(0, 50944);	-- Arctic Chestpiece
-i(0, 50947);	-- Arctic Gloves
-i(0, 50945);	-- Arctic Leggings
-i(0, 50946);	-- Arctic Shoulderpads
-i(0, 51571);	-- Arctic Wristguards
-i(0, 50962);	-- Borean Armor Kit
-i(0, 55243);	-- Bracers of Deflection
-i(0, 55199);	-- Cloak of Tormented Skies
-i(0, 50955);	-- Frostscale Belt
-i(0, 50963);	-- Heavy Borean Armor Kit
-i(0, 50936);	-- Heavy Borean Leather
-i(0, 50943);	-- Iceborne Belt
-i(0, 50961);	-- Nerubian Belt
 -- NYI --
+i(0, 55243);	-- Bracers of Deflection
 i(0, 53681);	-- Garok's Battle
 i(0, 50935);	-- Unknown
 i(0, 53686);	-- Verdant Tundra Belt
@@ -584,12 +568,22 @@ i(0, 53690);	-- Verdant Tundra Shoulderpads
 ------------------
 -- PATCH 3.0.2 --
 ------------------
--- TRAINER --
+--- TRAINER ---
+i(0, 51302);	-- Leatherworking (Grand Master)
+i(0, 50949);	-- Arctic Belt
+i(0, 50948);	-- Arctic Boots
+i(0, 50944);	-- Arctic Chestpiece
+i(0, 50947);	-- Arctic Gloves
 i(0, 51572);	-- Arctic Helm
+i(0, 50945);	-- Arctic Leggings
+i(0, 50946);	-- Arctic Shoulderpads
+i(0, 51571);	-- Arctic Wristguards
 i(0, 51568);	-- Black Chitinguard Boots
+i(0, 50962);	-- Borean Armor Kit
 i(0, 64661);	-- Borean Leather
 i(0, 60620);	-- Bugsquashers
 i(0, 60631);	-- Cloak of Harsh Winds
+i(0, 55199);	-- Cloak of Tormented Skies
 i(0, 51570);	-- Dark Arctic Chestpiece
 i(0, 51569);	-- Dark Arctic Leggings
 i(0, 60601);	-- Dark Frostscale Leggings
@@ -603,6 +597,7 @@ i(0, 60640);	-- Durable Nerubhide Cape
 i(0, 60652);	-- Eaglebane Bracers
 i(0, 62448);	-- Earthen Leg Armor
 i(0, 50965);	-- Frosthide Leg Armor
+i(0, 50955);	-- Frostscale Belt
 i(0, 50954);	-- Frostscale Boots
 i(0, 60599);	-- Frostscale Bracers
 i(0, 50950);	-- Frostscale Chestguard
@@ -610,7 +605,13 @@ i(0, 50953);	-- Frostscale Gloves
 i(0, 60600);	-- Frostscale Helm
 i(0, 50951);	-- Frostscale Leggings
 i(0, 50952);	-- Frostscale Shoulders
+i(0, 57683);	-- Fur Lining - Agility [Rank 1] [REMOVED: 6.0.2]
+i(0, 57691);	-- Fur Lining - Intellect [Rank 1] [REMOVED: 6.0.2]
+i(0, 57690);	-- Fur Lining - Stamina [Rank 1] [REMOVED: 6.0.2]
+i(0, 50963);	-- Heavy Borean Armor Kit
+i(0, 50936);	-- Heavy Borean Leather
 i(0, 60637);	-- Ice Striker's Cloak
+i(0, 50943);	-- Iceborne Belt
 i(0, 50942);	-- Iceborne Boots
 i(0, 50938);	-- Iceborne Chestguard
 i(0, 50941);	-- Iceborne Gloves
@@ -621,15 +622,16 @@ i(0, 60607);	-- Iceborne Wristguards
 i(0, 50967);	-- Icescale Leg Armor
 i(0, 60666);	-- Jormscale Footpads
 i(0, 50964);	-- Jormungar Leg Armor
-i(0, 60583);	-- Jormungar Leg Reinforcements
+i(0, 60583);	-- Jormungar Leg Reinforcements [REMOVED: 5.0.4]
 i(0, 60660);	-- Leggings of Visceral Strikes
+i(0, 50961);	-- Nerubian Belt
 i(0, 60622);	-- Nerubian Bracers
 i(0, 50960);	-- Nerubian Boots
 i(0, 50956);	-- Nerubian Chestguard
 i(0, 50959);	-- Nerubian Gloves
 i(0, 60624);	-- Nerubian Helm
 i(0, 50966);	-- Nerubian Leg Armor
-i(0, 60584);	-- Nerubian Leg Reinforcements
+i(0, 60584);	-- Nerubian Leg Reinforcements [REMOVED: 5.0.4]
 i(0, 50957);	-- Nerubian Legguards
 i(0, 50958);	-- Nerubian Shoulders
 i(0, 60658);	-- Nightshock Girdle
@@ -641,7 +643,8 @@ i(0, 60630);	-- Scaled Icewalkers
 i(0, 60665);	-- Seafoam Gauntlets
 i(0, 60651);	-- Virulent Spaulders
 i(0, 60669);	-- Wildscale Breastplate
--- ITEM --
+--- ITEM ---
+i(44511, 60645);	-- Dragonscale Ammo Pouch [REMOVED: 4.0.1]
 i(44553, 60761);	-- Earthgiving Boots
 i(44552, 60760);	-- Earthgiving Legguards
 i(44516, 60704);	-- Eviscerator's Bindings
@@ -652,12 +655,18 @@ i(44519, 60711);	-- Eviscerator's Legguards
 i(44514, 60702);	-- Eviscerator's Shoulderpads
 i(44520, 60712);	-- Eviscerator's Treads
 i(44518, 60706);	-- Eviscerator's Waistguard
+i(44563, 57701);	-- Fur Lining - Arcane Resist [REMOVED: 5.0.4]
+i(44559, 57692);	-- Fur Lining - Fire Resist [REMOVED: 5.0.4]
+i(44560, 57694);	-- Fur Lining - Frost Resist [REMOVED: 5.0.4]
+i(44562, 57699);	-- Fur Lining - Nature Resist [REMOVED: 5.0.4]
+i(44561, 57696);	-- Fur Lining - Shadow Resist [REMOVED: 5.0.4]
 i(44547, 60755);	-- Giantmaim Bracers
 i(44546, 60754);	-- Giantmaim Legguards
 i(44588, 61000);	-- Icy Scale Belt
 i(44589, 61002);	-- Icy Scale Boots
 i(44587, 60999);	-- Icy Scale Chestguard
 i(44510, 50971);	-- Mammoth Mining Bag
+i(44512, 60647);	-- Nerubian Reinforced Quiver [REMOVED: 4.0.1]
 i(44526, 60723);	-- Overcast Belt
 i(44528, 60727);	-- Overcast Boots
 i(44524, 60720);	-- Overcast Bracers
@@ -692,22 +701,11 @@ i(44551, 60759);	-- Trollwoven Girdle
 i(44550, 60758);	-- Trollwoven Spaulders
 i(44932, 62176);	-- Windripper Boots
 i(44933, 62177);	-- Windripper Leggings
--- REMOVED --
-i(44511, 60645);	-- Dragonscale Ammo Pouch (4.0.1)
-i(0, 57683);	-- Fur Lining - Attack Power (6.0.2)
-i(44563, 57701);	-- Fur Lining - Arcane Resist (5.0.4)
-i(44559, 57692);	-- Fur Lining - Fire Resist (5.0.4)
-i(44560, 57694);	-- Fur Lining - Frost Resist (5.0.4)
-i(44562, 57699);	-- Fur Lining - Nature Resist (5.0.4)
-i(44561, 57696);	-- Fur Lining - Shadow Resist (5.0.4)
-i(0, 57691);	-- Fur Lining - Spell Power (6.0.2)
-i(0, 57690);	-- Fur Lining - Stamina (6.0.2)
-i(44512, 60647);	-- Nerubian Reinforced Quiver (4.0.1)
 
 ------------------
 -- PATCH 3.1.0 --
 ------------------
--- ITEM --
+--- ITEM ---
 i(45100, 63200);	-- Belt of Arctic Life
 i(45094, 63194);	-- Belt of Dragons
 i(45096, 63196);	-- Blue Belt of Chaos
@@ -720,7 +718,7 @@ i(45097, 63197);	-- Lightning Grounded Boots
 ------------------
 -- PATCH 3.2.0 --
 ------------------
--- ITEM --
+--- ITEM ---
 i(47629, 67081);	-- Black Chitin Bracers [A]
 i(47646, 67137);	-- Black Chitin Bracers [H]
 i(47635, 67087);	-- Bracers of Swift Death [A]
@@ -741,15 +739,14 @@ i(47653, 67141);	-- Moonshadow Armguards [H]
 ------------------
 -- PATCH 3.2.2 --
 ------------------
--- TRAINER --
+--- TRAINER ---
 i(0, 69386);	-- Drums of Forgotten Kings
 i(0, 69388);	-- Drums of the Wild
-
 
 ------------------
 -- PATCH 3.3.0 --
 ------------------
--- ITEM --
+--- ITEM ---
 i(49959, 70556);	-- Bladeborn Leggings
 i(49958, 70555);	-- Blessed Cenarion Boots
 i(49965, 70560);	-- Draconic Bonesplinter Legguards
@@ -762,34 +759,41 @@ i(49966, 70561);	-- Rock-Steady Treads
 ------------------
 -- PATCH 4.0.3 --
 ------------------
-i(0, 52733);	-- Bracers of Shackled Souls
--- TRAINER --
+--- TRAINER ---
+i(0, 81199);	-- Leatherworking (Illustrious) [REMOVED: 8.0.1]
+i(0, 85068);	-- Charscale Leg Reinforcements [REMOVED: 6.0.2]
 i(0, 78438);	-- Cloak of Beasts
 i(0, 78439);	-- Cloak of War
-i(0, 78428);	-- Darkbrand Chestguard
 i(0, 78416);	-- Darkbrand Belt
 i(0, 78407);	-- Darkbrand Boots
+i(0, 78398);	-- Darkbrand Bracers
+i(0, 78428);	-- Darkbrand Chestguard
+i(0, 78399);	-- Darkbrand Gloves
 i(0, 78424);	-- Darkbrand Helm
 i(0, 78433);	-- Darkbrand Leggings
 i(0, 78411);	-- Darkbrand Shoulders
+i(0, 85067);	-- Dragonbone Leg Reinforcements [REMOVED: 6.0.2]
+i(0, 85008);	-- Fur Lining - Agility [Rank 2] [REMOVED: 6.0.2]
+i(0, 85010);	-- Fur Lining - Intellect [Rank 2] [REMOVED: 6.0.2]
+i(0, 85007);	-- Fur Lining - Stamina [Rank 2] [REMOVED: 6.0.2]
+i(0, 85009);	-- Fur Lining - Strength [Rank 2] [REMOVED: 6.0.2]
 i(0, 78405);	-- Hardened Scale Cloak
 i(0, 78437);	-- Heavy Savage Armor Kit
 i(0, 78436);	-- Heavy Savage Leather
-i(0, 81199);	-- Leatherworking (Illustrious) [REMOVED: 8.0.1]
 i(0, 78379);	-- Savage Armor Kit
 i(0, 78380);	-- Savage Cloak
 i(0, 84950);	-- Savage Leather
 i(0, 78419);	-- Scorched Leg Armor
-i(0, 78423);	-- Tsunami Chestguard
-i(0, 78388);	-- Tsunami Bracers
 i(0, 78396);	-- Tsunami Belt
 i(0, 78410);	-- Tsunami Boots
+i(0, 78388);	-- Tsunami Bracers
+i(0, 78423);	-- Tsunami Chestguard
 i(0, 78406);	-- Tsunami Gloves
 i(0, 78432);	-- Tsunami Helm
 i(0, 78427);	-- Tsunami Leggings
 i(0, 78415);	-- Tsunami Shoulders
 i(0, 78420);	-- Twilight Leg Armor
--- ITEM --
+--- ITEM ---
 i(67095, 78488);	-- Assassin's Chestplate
 i(67070, 78461);	-- Belt of Nefarious Whispers
 i(67084, 78478);	-- Charscale Leg Armor
@@ -834,9 +838,11 @@ i(67056, 78452);	-- Vicious Wyrmhide Gloves
 i(67086, 78480);	-- Vicious Wyrmhide Helm
 i(67085, 78479);	-- Vicious Wyrmhide Legs
 i(67074, 78464);	-- Vicious Wyrmhide Shoulders
--- REMOVED --
-i(66999, 78398);	-- Darkbrand Bracers
-i(67000, 78399);	-- Darkbrand Gloves
+--- SPECIAL ---
+i(0, 52733);	-- Bracers of Shackled Souls
+--- NYI ---
+i(66999, 0);	-- Darkbrand Bracers
+i(67000, 0);	-- Darkbrand Gloves
 i(67017, 78418);	-- Razorshell Belt
 i(67009, 78409);	-- Razorshell Boots
 i(67003, 78402);	-- Razorshell Bracers
@@ -858,10 +864,11 @@ i(67016, 78417);	-- Windbound Shoulders
 ------------------
 -- PATCH 4.2.0 --
 ------------------
--- TRAINER --
+--- TRAINER ---
+i(0, 101600);	-- Drakehide Leg Reinforcements [REMOVED: 6.0.2]
 i(0, 99536);	-- Vicious Fur Cloak
 i(0, 99535);	-- Vicious Hide Cloak
--- ITEM --
+--- ITEM ---
 i(69962, 99446);	-- Clutches of Evil
 i(69960, 99443);	-- Dragonfire Gloves
 i(71721, 101599);	-- Drakehide Leg Armor
@@ -877,25 +884,24 @@ i(70175, 100586);	-- Triple-Reinforced Mining Bag
 ------------------
 -- PATCH 4.3.0 --
 ------------------
--- ITEM --
+--- ITEM ---
 i(72006, 101935);	-- Bladeshadow Leggings
 i(72010, 101940);	-- Bladeshadow Wristguards
 i(72008, 101937);	-- Bracers of Flowing Serenity
 i(72011, 101941);	-- Bracers of the Hunter-Killer
 i(72005, 101934);	-- Deathscale Leggings
+i(78346, 19050);	-- Green Dragonscale Breastplate [New Version]
+i(78345, 19060);	-- Green Dragonscale Leggings [New Version]
 i(71999, 101933);	-- Leggings of Nature's Champion
 i(72007, 101936);	-- Rended Earth Leggings
 i(72009, 101939);	-- Thundering Deathscale Wristguards
-
-i(72028, 10554);-- Tough Scorpid Boots
-i(72026, 10533);-- Tough Scorpid Bracers
-i(72029, 10525);-- Tough Scorpid Breastplate
-i(72025, 10542);-- Tough Scorpid Gloves
-i(72033, 10570);-- Tough Scorpid Helm
-i(72030, 10568);-- Tough Scorpid Leggings
-i(72027, 10564);-- Tough Scorpid Shoulders
-i(78346, 19050);	-- Green Dragonscale Breastplate
-i(78345, 19060);	-- Green Dragonscale Leggings
+i(72028, 10554);	-- Tough Scorpid Boots [New Version]
+i(72026, 10533);	-- Tough Scorpid Bracers [New Version]
+i(72029, 10525);	-- Tough Scorpid Breastplate [New Version]
+i(72025, 10542);	-- Tough Scorpid Gloves [New Version]
+i(72033, 10570);	-- Tough Scorpid Helm [New Version]
+i(72030, 10568);	-- Tough Scorpid Leggings [New Version]
+i(72027, 10564);	-- Tough Scorpid Shoulders [New Version]
 
 ------------------
 -- PATCH 5.0.4 --
@@ -906,6 +912,17 @@ i(0, 102366);		-- Exotic Leather
 --- TRAINER ---
 i(0, 110423);		-- Leatherworking (Zen Master) [REMOVED: 8.0.1]
 i(0, 124126);		-- Brutal Leg Armor
+i(0, 124569);		-- Draconic Leg Reinforcements [Rank 1] [REMOVED: 6.0.2]
+i(0, 124566);		-- Draconic Leg Reinforcements [Rank 2] [REMOVED: 6.0.2]
+i(0, 124561);		-- Draconic Leg Reinforcements [Rank 3]
+i(0, 124551);		-- Fur Lining - Agility [Rank 3] [REMOVED: 6.0.2]
+i(0, 124552);		-- Fur Lining - Intellect [Rank 3] [REMOVED: 6.0.2]
+i(0, 124553);		-- Fur Lining - Stamina [Rank 3] [REMOVED: 6.0.2]
+i(0, 124549);		-- Fur Lining - Strength [Rank 1] [REMOVED: 6.0.2]
+i(0, 124554);		-- Fur Lining - Strength [Rank 3] [REMOVED: 6.0.2]
+i(0, 124568);		-- Heavy Leg Reinforcements [Rank 1] [REMOVED: 6.0.2]
+i(0, 124565);		-- Heavy Leg Reinforcements [Rank 2] [REMOVED: 6.0.2]
+i(0, 124563);		-- Heavy Leg Reinforcements [Rank 3]
 i(0, 124578);		-- Misthide Belt
 i(0, 124577);		-- Misthide Boots
 i(0, 124576);		-- Misthide Bracers
@@ -915,6 +932,9 @@ i(0, 124574);		-- Misthide Gloves
 i(0, 124571);		-- Misthide Helm
 i(0, 124575);		-- Misthide Leggings
 i(0, 124572);		-- Misthide Shoulders
+i(0, 124567);		-- Primal Leg Reinforcements [Rank 1] [REMOVED: 6.0.2]
+i(0, 124564);		-- Primal Leg Reinforcements [Rank 2] [REMOVED: 6.0.2]
+i(0, 124559);		-- Primal Leg Reinforcements [Rank 3]
 i(0, 124637);		-- Quick Strike Cloak
 i(0, 124628);		-- Sha Armor Kit
 i(0, 124124);		-- Sha-Touched Leg Armor

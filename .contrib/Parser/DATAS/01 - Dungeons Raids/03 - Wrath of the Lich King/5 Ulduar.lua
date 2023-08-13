@@ -1389,15 +1389,15 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							}),
 							i(46027),	-- Formula: Enchant Weapon - Blade Ward (RECIPE!)
 							i(46348),	-- Formula: Enchant Weapon - Blood Draining (RECIPE!)
-							i(45100),	-- Pattern: Belt of Arctic Life
-							i(45094),	-- Pattern: Belt of Dragons
-							i(45096),	-- Pattern: Blue Belt of Chaos
-							i(45095),	-- Pattern: Boots of Living Scale
-							i(45101),	-- Pattern: Boots of Wintry Endurance
+							i(45100),	-- Pattern: Belt of Arctic Life (RECIPE!)
+							i(45094),	-- Pattern: Belt of Dragons (RECIPE!)
+							i(45096),	-- Pattern: Blue Belt of Chaos (RECIPE!)
+							i(45095),	-- Pattern: Boots of Living Scale (RECIPE!)
+							i(45101),	-- Pattern: Boots of Wintry Endurance (RECIPE!)
 							i(45104),	-- Pattern: Cord of the White Dawn
-							i(45098),	-- Pattern: Death-Warmed Belt
-							i(45099),	-- Pattern: Footpads of Silence
-							i(45097),	-- Pattern: Lightning Grounded Boots
+							i(45098),	-- Pattern: Death-Warmed Belt (RECIPE!)
+							i(45099),	-- Pattern: Footpads of Silence (RECIPE!)
+							i(45097),	-- Pattern: Lightning Grounded Boots (RECIPE!)
 							i(45102),	-- Pattern: Sash of Ancient Power
 							i(45105),	-- Pattern: Savior's Slippers
 							i(45103),	-- Pattern: Spellslinger's Slippers
@@ -2170,15 +2170,15 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						i(45087),	-- Runed Orb
 						i(46027),	-- Formula: Enchant Weapon - Blade Ward (RECIPE!)
 						i(46348),	-- Formula: Enchant Weapon - Blood Draining (RECIPE!)
-						i(45100),	-- Pattern: Belt of Arctic Life
-						i(45094),	-- Pattern: Belt of Dragons
-						i(45096),	-- Pattern: Blue Belt of Chaos
-						i(45095),	-- Pattern: Boots of Living Scale
-						i(45101),	-- Pattern: Boots of Wintry Endurance
+						i(45100),	-- Pattern: Belt of Arctic Life (RECIPE!)
+						i(45094),	-- Pattern: Belt of Dragons (RECIPE!)
+						i(45096),	-- Pattern: Blue Belt of Chaos (RECIPE!)
+						i(45095),	-- Pattern: Boots of Living Scale (RECIPE!)
+						i(45101),	-- Pattern: Boots of Wintry Endurance (RECIPE!)
 						i(45104),	-- Pattern: Cord of the White Dawn
-						i(45098),	-- Pattern: Death-Warmed Belt
-						i(45099),	-- Pattern: Footpads of Silence
-						i(45097),	-- Pattern: Lightning Grounded Boots
+						i(45098),	-- Pattern: Death-Warmed Belt (RECIPE!)
+						i(45099),	-- Pattern: Footpads of Silence (RECIPE!)
+						i(45097),	-- Pattern: Lightning Grounded Boots (RECIPE!)
 						i(45102),	-- Pattern: Sash of Ancient Power
 						i(45105),	-- Pattern: Savior's Slippers
 						i(45103),	-- Pattern: Spellslinger's Slippers

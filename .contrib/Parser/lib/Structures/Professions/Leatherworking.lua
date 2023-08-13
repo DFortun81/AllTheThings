@@ -1,6 +1,8 @@
 --------------------
 -- LEATHERWORKING --
 --------------------
+local ARCTIC_FUR = 44128;
+local HEAVY_BOREAN_LEATHER = 38425;
 local SECRET_OF_DRAENOR_LEATHERWORKING = 118721;
 local HEAVY_SAVAGE_LEATHER = 56516;
 APPRENTICE_JOURNEYMAN_LEATHERWORKING = {
@@ -269,6 +271,249 @@ TBC_TRIBAL
 	{}
 -- #endif
 );
+WRATH_LEATHERWORKING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_3_0_3 } }, {
+	r(51302, {	-- Leatherworking (Grand Master)
+		["timeline"] = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #endif
+		["rank"] = 6,
+	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264581, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Northrend Leatherworking
+	r(330191, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Wrath of the Lich King]
+	r(330192, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Wrath of the Lich King]
+	r(330193, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Wrath of the Lich King]
+	r(330194, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Wrath of the Lich King]
+	r(330195, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Wrath of the Lich King]
+	n(ARMOR, {
+		r(50949),	-- Arctic Belt
+		r(50948),	-- Arctic Boots
+		r(50944),	-- Arctic Chestpiece
+		r(50947),	-- Arctic Gloves
+		r(51572),	-- Arctic Helm
+		r(50945),	-- Arctic Leggings
+		r(50946),	-- Arctic Shoulderpads
+		r(51571),	-- Arctic Wristguards
+		r(51568),	-- Black Chitinguard Boots
+		r(60620),	-- Bugsquashers
+		r(60631),	-- Cloak of Harsh Winds
+		r(55199),	-- Cloak of Tormented Skies
+		r(51570),	-- Dark Arctic Chestpiece
+		r(51569),	-- Dark Arctic Leggings
+		r(60601),	-- Dark Frostscale Leggings
+		r(60604),	-- Dark Frostscale Breastplate
+		r(60613),	-- Dark Iceborne Chestguard
+		r(60611),	-- Dark Iceborne Leggings
+		r(60629),	-- Dark Nerubian Chestpiece
+		r(60627),	-- Dark Nerubian Leggings
+		r(60605),	-- Dragonstompers
+		r(60640),	-- Durable Nerubhide Cape
+		r(60652),	-- Eaglebane Bracers
+		r(50955),	-- Frostscale Belt
+		r(50954),	-- Frostscale Boots
+		r(60599),	-- Frostscale Bracers
+		r(50950),	-- Frostscale Chestguard
+		r(50953),	-- Frostscale Gloves
+		r(60600),	-- Frostscale Helm
+		r(50951),	-- Frostscale Leggings
+		r(50952),	-- Frostscale Shoulders
+		r(60637),	-- Ice Striker's Cloak
+		r(50943),	-- Iceborne Belt
+		r(50942),	-- Iceborne Boots
+		r(50938),	-- Iceborne Chestguard
+		r(50941),	-- Iceborne Gloves
+		r(60608),	-- Iceborne Helm
+		r(50939),	-- Iceborne Leggings
+		r(50940),	-- Iceborne Shoulderpads
+		r(60607),	-- Iceborne Wristguards
+		r(60666),	-- Jormscale Footpads
+		r(60660),	-- Leggings of Visceral Strikes
+		r(50961),	-- Nerubian Belt
+		r(60622),	-- Nerubian Bracers
+		r(50960),	-- Nerubian Boots
+		r(50956),	-- Nerubian Chestguard
+		r(50959),	-- Nerubian Gloves
+		r(60624),	-- Nerubian Helm
+		r(50957),	-- Nerubian Legguards
+		r(50958),	-- Nerubian Shoulders
+		r(60658),	-- Nightshock Girdle
+		r(60655),	-- Nightshock Hood
+		r(60671),	-- Purehorn Spaulders
+		r(60649),	-- Razorstrike Breastplate
+		r(60630),	-- Scaled Icewalkers
+		r(60665),	-- Seafoam Gauntlets
+		r(60651),	-- Virulent Spaulders
+		r(60669),	-- Wildscale Breastplate
+	}),
+	filter(MISC, {
+		r(50962),	-- Borean Armor Kit
+		r(64661),	-- Borean Leather
+		r(69386, {["timeline"] = {ADDED_3_2_2}}),	-- Drums of Forgotten Kings
+		r(69388, {["timeline"] = {ADDED_3_2_2}}),	-- Drums of the Wild
+		r(62448),	-- Earthen Leg Armor
+		r(50965),	-- Frosthide Leg Armor
+		r(57683, {["timeline"] = {ADDED_3_0_3, REMOVED_6_0_2}}),	-- Fur Lining - Agility
+		r(57691, {["timeline"] = {ADDED_3_0_3, REMOVED_6_0_2}}),	-- Fur Lining - Intellect
+		r(57690, {["timeline"] = {ADDED_3_0_3, REMOVED_6_0_2}}),	-- Fur Lining - Stamina
+		r(50963),	-- Heavy Borean Armor Kit
+		r(50936),	-- Heavy Borean Leather
+		r(50967),	-- Icescale Leg Armor
+		r(50964),	-- Jormungar Leg Armor
+		r(60583, {["timeline"] = {ADDED_3_0_3, REMOVED_5_0_4}}),	-- Jormungar Leg Reinforcements
+		r(50966),	-- Nerubian Leg Armor
+		r(60584, {["timeline"] = {ADDED_3_0_3, REMOVED_5_0_4}}),	-- Nerubian Leg Reinforcements
+		r(60643),	-- Pack of Endless Pockets
+	}),
+}));
+COMMON_WRATH_LEATHERWORKING_RECIPES = applyclassicphase(WRATH_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_3_0_3 } }, {
+	i(ARCTIC_FUR, {
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 10 }},
+	}),
+	i(44553, {	-- Pattern: Earthgiving Boots (RECIPE!)
+		["cost"] = {{ "i", ARCTIC_FUR, 2 }},
+	}),
+	i(44552, {	-- Pattern: Earthgiving Legguards (RECIPE!)
+		["cost"] = {{ "i", ARCTIC_FUR, 2 }},
+	}),
+	i(44516, {	-- Pattern: Eviscerator's Bindings (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44515, {	-- Pattern: Eviscerator's Chestguard (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44513, {	-- Pattern: Eviscerator's Facemask (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44517, {	-- Pattern: Eviscerator's Gauntlets (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44519, {	-- Pattern: Eviscerator's Legguards (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44514, {	-- Pattern: Eviscerator's Shoulderpads (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44520, {	-- Pattern: Eviscerator's Treads (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44518, {	-- Pattern: Eviscerator's Waistguard (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44547, {	-- Pattern: Giantmaim Bracers (RECIPE!)
+		["cost"] = {{ "i", ARCTIC_FUR, 2 }},
+	}),
+	i(44546, {	-- Pattern: Giantmaim Legguards (RECIPE!)
+		["cost"] = {{ "i", ARCTIC_FUR, 2 }},
+	}),
+	i(44588, {	-- Pattern: Icy Scale Belt (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44589, {	-- Pattern: Icy Scale Boots (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44587, {	-- Pattern: Icy Scale Chestguard (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44526, {	-- Pattern: Overcast Belt (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44528, {	-- Pattern: Overcast Boots (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44524, {	-- Pattern: Overcast Bracers (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44523, {	-- Pattern: Overcast Chestguard (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44525, {	-- Pattern: Overcast Handwraps (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44521, {	-- Pattern: Overcast Headguard (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44527, {	-- Pattern: Overcast Leggings (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44522, {	-- Pattern: Overcast Spaulders (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44586, {	-- Pattern: Polar Boots (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44585, {	-- Pattern: Polar Cord (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44584, {	-- Pattern: Polar Vest (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44548, {	-- Pattern: Revenant's Breastplate (RECIPE!)
+		["cost"] = {{ "i", ARCTIC_FUR, 2 }},
+	}),
+	i(44549, {	-- Pattern: Revenant's Treads (RECIPE!)
+		["cost"] = {{ "i", ARCTIC_FUR, 2 }},
+	}),
+	i(44543, {	-- Pattern: Stormhide Belt (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44538, {	-- Pattern: Stormhide Crown (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44542, {	-- Pattern: Stormhide Grips (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44540, {	-- Pattern: Stormhide Hauberk (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44544, {	-- Pattern: Stormhide Legguards (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44539, {	-- Pattern: Stormhide Shoulders (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44545, {	-- Pattern: Stormhide Stompers (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44541, {	-- Pattern: Stormhide Wristguards (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44535, {	-- Pattern: Swiftarrow Belt (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44537, {	-- Pattern: Swiftarrow Boots (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44533, {	-- Pattern: Swiftarrow Bracers (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44534, {	-- Pattern: Swiftarrow Gauntlets (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44532, {	-- Pattern: Swiftarrow Hauberk (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44530, {	-- Pattern: Swiftarrow Helm (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44536, {	-- Pattern: Swiftarrow Leggings (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44531, {	-- Pattern: Swiftarrow Shoulderguards (RECIPE!)
+		["cost"] = {{ "i", HEAVY_BOREAN_LEATHER, 3 }},
+	}),
+	i(44551, {	-- Pattern: Trollwoven Girdle (RECIPE!)
+		["cost"] = {{ "i", ARCTIC_FUR, 2 }},
+	}),
+	i(44550, {	-- Pattern: Trollwoven Spaulders (RECIPE!)
+		["cost"] = {{ "i", ARCTIC_FUR, 2 }},
+	}),
+	i(44932, {	-- Pattern: Windripper Boots (RECIPE!)
+		["cost"] = {{ "i", ARCTIC_FUR, 2 }},
+	}),
+	i(44933, {	-- Pattern: Windripper Leggings (RECIPE!)
+		["cost"] = {{ "i", ARCTIC_FUR, 2 }},
+	}),
+}));
 CATA_LEATHERWORKING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 	r(81199, {	-- Leatherworking (Illustrious)
 		["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
@@ -289,6 +534,8 @@ CATA_LEATHERWORKING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"
 		r(78428),	-- Darkbrand Chestguard
 		r(78416),	-- Darkbrand Belt
 		r(78407),	-- Darkbrand Boots
+		r(78398),	-- Darkbrand Bracers
+		r(78399),	-- Darkbrand Glove
 		r(78424),	-- Darkbrand Helm
 		r(78433),	-- Darkbrand Leggings
 		r(78411),	-- Darkbrand Shoulders
@@ -302,8 +549,17 @@ CATA_LEATHERWORKING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"
 		r(78432),	-- Tsunami Helm
 		r(78427),	-- Tsunami Leggings
 		r(78415),	-- Tsunami Shoulders
+		r(99536, {["timeline"] = {ADDED_4_2_0}}),	-- Vicious Fur Cloak
+		r(99535, {["timeline"] = {ADDED_4_2_0}}),	-- Vicious Hide Cloak
 	}),
 	filter(MISC, {
+		r(85068, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_6_0_2}}),	-- Charscale Leg Reinforcements
+		r(85067, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_6_0_2}}),	-- Dragonbone Leg Reinforcements
+		r(101600, {["timeline"] = {ADDED_4_2_0, REMOVED_6_0_2}}),	-- Drakehide Leg Reinforcements
+		r(85008, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_6_0_2}}),	-- Fur Lining - Agility [Rank 2]
+		r(85010, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_6_0_2}}),	-- Fur Lining - Intellect [Rank 2]
+		r(85007, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_6_0_2}}),	-- Fur Lining - Stamina [Rank 2]
+		r(85009, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_6_0_2}}),	-- Fur Lining - Strength [Rank 2]
 		r(78437),	-- Heavy Savage Armor Kit
 		r(78436),	-- Heavy Savage Leather
 		r(78379),	-- Savage Armor Kit
@@ -343,6 +599,7 @@ COMMON_CATACLYSM_LEATHERWORKING_RECIPES = applyclassicphase(CATA_PHASE_ONE, shar
 	}),
 	i(71721, {	-- Pattern: Drakehide Leg Armor (RECIPE!)
 		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
+		["timeline"] = { ADDED_4_2_0 },
 	}),
 	i(67068, {	-- Pattern: Lightning Lash (RECIPE!)
 		["cost"] = {{ "i", HEAVY_SAVAGE_LEATHER, 10 }},
@@ -496,8 +753,22 @@ MOP_LEATHERWORKING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] 
 	}),
 	filter(MISC, {
 		r(124126),	-- Brutal Leg Armor
+		r(124569, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Draconic Leg Reinforcements [Rank 1]
+		r(124566, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Draconic Leg Reinforcements [Rank 2]
+		r(124561),	-- Draconic Leg Reinforcements [Rank 3]
 		r(124627),	-- Exotic Leather
+		r(124551, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Fur Lining - Agility [Rank 3]
+		r(124552, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Fur Lining - Intellect [Rank 3]
+		r(124553, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Fur Lining - Stamina [Rank 3]
+		r(124549, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Fur Lining - Strength [Rank 1]
+		r(124554, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Fur Lining - Strength [Rank 3]
+		r(124568, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Heavy Leg Reinforcements [Rank 1]
+		r(124565, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Heavy Leg Reinforcements [Rank 2]
+		r(124563),	-- Heavy Leg Reinforcements [Rank 3]
 		r(131865, {["timeline"] = {ADDED_5_2_0}}),	-- Magnificent Hide
+		r(124567, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Primal Leg Reinforcements [Rank 1]
+		r(124564, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Primal Leg Reinforcements [Rank 2]
+		r(124559),	-- Primal Leg Reinforcements [Rank 3]
 		r(124628),	-- Sha Armor Kit
 		r(124124),	-- Sha-Touched Leg Armor
 		r(124125),	-- Toughened Leg Armor

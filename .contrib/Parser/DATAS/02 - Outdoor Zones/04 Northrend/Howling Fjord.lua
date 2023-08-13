@@ -2332,7 +2332,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { "added 3.0.2.8982" },
 							}),
 							i(44511, {	-- Pattern: Dragonscale Ammo Pouch (RECIPE!)
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(45774),	-- Pattern: Emerald Bag
 							i(44509),	-- Pattern: Trapper's Traveling Pack (RECIPE!)

@@ -432,166 +432,172 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 		}),
 	}),
 	prof(LEATHERWORKING, {
-		filter(BAGS, {
-			i(70136),			-- Royal Scribe's Satchel
-			i(70137),			-- Triple-Reinforced Mining Bag
+		n(ARMOR, {
+			n(BACK, {
+				i(70068, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Fur Cloak
+				i(70069, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Hide Cloak
+				i(56518),	-- Cloak of Beasts
+				i(56519),	-- Cloak of War
+				i(56489),	-- Hardened Scale Cloak
+				i(56548),	-- Razor-Edged Cloak
+				i(56480),	-- Savage Cloak
+				i(56549),	-- Twilight Dragonscale Cloak
+				i(75076, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Fur Cloak
+				i(75077, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Hide Cloak
+			}),
+			filter(LEATHER, {
+				i(56562),	-- Assassin's Chestplate
+				i(56537),	-- Belt of Nefarious Whispers
+				i(71985, {["timeline"] = {ADDED_4_3_0}}),	-- Bladeshadow Leggings
+				i(71994, {["timeline"] = {ADDED_4_3_0}}),	-- Bladeshadow Wristguards
+				i(56542, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Leather Belt
+				i(56530, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Leather Boots
+				i(56522, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Leather Bracers
+				i(56554, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Leather Chest
+				i(56523, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Leather Gloves
+				i(56543, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Leather Helm
+				i(56555, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Leather Legs
+				i(56531, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Leather Shoulders
+				i(56521, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Wyrmhide Belt
+				i(56529, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Wyrmhide Boots
+				i(56520, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Wyrmhide Bracers
+				i(56541, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Wyrmhide Chest
+				i(56528, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Wyrmhide Gloves
+				i(56553, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Wyrmhide Helm
+				i(56552, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Wyrmhide Legs
+				i(56540, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Wyrmhide Shoulders
+				i(70020, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Leather Belt
+				i(70021, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Leather Boots
+				i(70022, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Leather Bracers
+				i(70023, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Leather Chest
+				i(70024, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Leather Gloves
+				i(70025, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Leather Helm
+				i(70026, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Leather Legs
+				i(70027, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Leather Shoulders
+				i(70028, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Wyrmhide Belt
+				i(70029, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Wyrmhide Boots
+				i(70030, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Wyrmhide Bracers
+				i(70031, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Wyrmhide Chest
+				i(70032, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Wyrmhide Gloves
+				i(70033, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Wyrmhide Helm
+				i(70034, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Wyrmhide Legs
+				i(70035, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Wyrmhide Shoulders
+				i(71995, {["timeline"] = {ADDED_4_3_0}}),	-- Bracers of Flowing Serenity
+				i(56561),	-- Chestguard of Nature's Fury
+				i(69942, {["timeline"] = {ADDED_4_2_0}}),	-- Clutches of Evil
+				i(56499),	-- Darkbrand Belt
+				i(56491),	-- Darkbrand Boots
+				i(56483),	-- Darkbrand Bracers
+				i(56509),	-- Darkbrand Chestguard
+				i(56484),	-- Darkbrand Gloves
+				i(56505),	-- Darkbrand Helm
+				i(56513),	-- Darkbrand Leggings
+				i(56495),	-- Darkbrand Shoulders
+				i(69952, {["timeline"] = {ADDED_4_2_0}}),	-- Ethereal Footfalls
+				i(69943, {["timeline"] = {ADDED_4_2_0}}),	-- Heavenly Gloves of the Moon
+				i(71986, {["timeline"] = {ADDED_4_3_0}}),	-- Leggings of Nature's Champion
+				i(56536),	-- Lightning Lash
+				i(69951, {["timeline"] = {ADDED_4_2_0}}),	-- Treads of the Craft
+				i(75127, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Leather Belt
+				i(75130, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Leather Boots
+				i(75131, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Leather Bracers
+				i(75103, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Leather Chest
+				i(75104, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Leather Gloves
+				i(75105, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Leather Helm
+				i(75112, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Leather Legs
+				i(75113, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Leather Shoulders
+				i(75117, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Wyrmhide Belt
+				i(75101, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Wyrmhide Boots
+				i(75106, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Wyrmhide Bracers
+				i(75107, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Wyrmhide Chest
+				i(75109, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Wyrmhide Gloves
+				i(75111, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Wyrmhide Helm
+				i(75080, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Wyrmhide Legs
+				i(75099, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Wyrmhide Shoulders
+			}),
+			filter(MAIL, {
+				i(56546, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Dragonscale Belt
+				i(56534, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Dragonscale Boots
+				i(56526, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Dragonscale Bracers
+				i(56559, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Dragonscale Chest
+				i(56535, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Dragonscale Gloves
+				i(56547, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Dragonscale Helm
+				i(56558, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Dragonscale Legs
+				i(56527, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Dragonscale Shoulders
+				i(56533, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Scale Belt
+				i(56532, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Scale Boots
+				i(56524, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Scale Bracers
+				i(56556, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Scale Chest
+				i(56525, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Scale Gloves
+				i(56557, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Scale Helm
+				i(56545, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Scale Legs
+				i(56544, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_4_2_0}}),	-- Bloodied Scale Shoulders
+				i(70044, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Charscale Belt
+				i(70045, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Charscale Boots
+				i(70046, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Charscale Bracers
+				i(70047, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Charscale Chest
+				i(70048, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Charscale Gloves
+				i(70049, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Charscale Helm
+				i(70050, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Charscale Legs
+				i(70051, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Charscale Shoulders
+				i(70036, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Dragonscale Belt
+				i(70037, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Dragonscale Boots
+				i(70038, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Dragonscale Bracers
+				i(70039, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Dragonscale Chest
+				i(70040, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Dragonscale Gloves
+				i(70041, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Dragonscale Helm
+				i(70042, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Dragonscale Legs
+				i(70043, {["timeline"] = {ADDED_4_2_0, REMOVED_4_3_0}}),	-- Bloodthirsty Dragonscale Shoulders
+				i(71996, {["timeline"] = {ADDED_4_3_0}}),	-- Bracers of the Hunter-Killer
+				i(56539),	-- Corded Viper Belt
+				i(71988, {["timeline"] = {ADDED_4_3_0}}),	-- Deathscale Leggings
+				i(69939, {["timeline"] = {ADDED_4_2_0}}),	-- Dragonfire Gloves
+				i(56564),	-- Dragonkiller Tunic
+				i(69949, {["timeline"] = {ADDED_4_2_0}}),	-- Earthen Scale Sabatons
+				i(69950, {["timeline"] = {ADDED_4_2_0}}),	-- Footwraps of Quenched Fire
+				i(69941, {["timeline"] = {ADDED_4_2_0}}),	-- Gloves of Unforgiving Flame
+				i(71987, {["timeline"] = {ADDED_4_3_0}}),	-- Rended Earth Leggings
+				i(56538),	-- Stormleather Sash
+				i(71997, {["timeline"] = {ADDED_4_3_0}}),	-- Thundering Deathscale Wristguards
+				i(56482),	-- Tsunami Belt
+				i(56494),	-- Tsunami Boots
+				i(56481),	-- Tsunami Bracers
+				i(56504),	-- Tsunami Chestguard
+				i(56490),	-- Tsunami Gloves
+				i(56512),	-- Tsunami Helm
+				i(56508),	-- Tsunami Leggings
+				i(56498),	-- Tsunami Shoulders
+				i(56563),	-- Twilight Scale Chestguard
+				i(75083, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Charscale Belt
+				i(75092, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Charscale Boots
+				i(75094, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Charscale Bracers
+				i(75084, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Charscale Chest
+				i(75085, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Charscale Gloves
+				i(75090, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Charscale Helm
+				i(75097, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Charscale Legs
+				i(75061, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Charscale Shoulders
+				i(75100, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Dragonscale Belt
+				i(75110, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Dragonscale Boots
+				i(75114, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Dragonscale Bracers
+				i(75115, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Dragonscale Chest
+				i(75081, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Dragonscale Gloves
+				i(75102, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Dragonscale Helm
+				i(75108, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Dragonscale Legs
+				i(75116, {["timeline"] = {ADDED_4_3_0}}),	-- Vicious Dragonscale Shoulders
+			}),
 		}),
-		filter(CONSUMABLES, {
-			i(56502),	-- Scorched Leg Armor
-			i(56503),	-- Twilight Leg Armor
+		filter(MISC, {
+			i(56551),	-- Charscale Leg Armor
+			i(56550),	-- Dragonscale Leg Armor
+			i(71720, {["timeline"] = {ADDED_4_2_0}}),	-- Drakehide Leg Armor
 			i(56517),	-- Heavy Savage Armor Kit
-		}),
-		n(BACK, {
-			un(REMOVED_FROM_GAME, i(70068)),	-- Bloodthirsty Fur Cloak
-			un(REMOVED_FROM_GAME, i(70069)),	-- Bloodthirsty Hide Cloak
-			i(56518),	-- Cloak of Beasts
-			i(56519),	-- Cloak of War
-			i(56489),	-- Hardened Scale Cloak
-			i(56548),	-- Razor-Edged Cloak
-			i(56480),	-- Savage Cloak
-			i(56549),	-- Twilight Dragonscale Cloak
-			i(75076),	-- Vicious Fur Cloak
-			i(75077),	-- Vicious Hide Cloak
-		}),
-		filter(LEATHER, {
-			i(56562),	-- Assassin's Chestplate
-			i(56537),	-- Belt of Nefarious Whispers
-			i(71985),	-- Bladeshadow Leggings
-			i(71994),	-- Bladeshadow Wristguards
-			un(REMOVED_FROM_GAME, i(56542)),	-- Bloodied Leather Belt
-			un(REMOVED_FROM_GAME, i(56530)),	-- Bloodied Leather Boots
-			un(REMOVED_FROM_GAME, i(56522)),	-- Bloodied Leather Bracers
-			un(REMOVED_FROM_GAME, i(56554)),	-- Bloodied Leather Chest
-			un(REMOVED_FROM_GAME, i(56523)),	-- Bloodied Leather Gloves
-			un(REMOVED_FROM_GAME, i(56543)),	-- Bloodied Leather Helm
-			un(REMOVED_FROM_GAME, i(56555)),	-- Bloodied Leather Legs
-			un(REMOVED_FROM_GAME, i(56531)),	-- Bloodied Leather Shoulders
-			un(REMOVED_FROM_GAME, i(56521)),	-- Bloodied Wyrmhide Belt
-			un(REMOVED_FROM_GAME, i(56529)),	-- Bloodied Wyrmhide Boots
-			un(REMOVED_FROM_GAME, i(56520)),	-- Bloodied Wyrmhide Bracers
-			un(REMOVED_FROM_GAME, i(56541)),	-- Bloodied Wyrmhide Chest
-			un(REMOVED_FROM_GAME, i(56528)),	-- Bloodied Wyrmhide Gloves
-			un(REMOVED_FROM_GAME, i(56553)),	-- Bloodied Wyrmhide Helm
-			un(REMOVED_FROM_GAME, i(56552)),	-- Bloodied Wyrmhide Legs
-			un(REMOVED_FROM_GAME, i(56540)),	-- Bloodied Wyrmhide Shoulders
-			un(REMOVED_FROM_GAME, i(70020)),	-- Bloodthirsty Leather Belt
-			un(REMOVED_FROM_GAME, i(70021)),	-- Bloodthirsty Leather Boots
-			un(REMOVED_FROM_GAME, i(70022)),	-- Bloodthirsty Leather Bracers
-			un(REMOVED_FROM_GAME, i(70023)),	-- Bloodthirsty Leather Chest
-			un(REMOVED_FROM_GAME, i(70024)),	-- Bloodthirsty Leather Gloves
-			un(REMOVED_FROM_GAME, i(70025)),	-- Bloodthirsty Leather Helm
-			un(REMOVED_FROM_GAME, i(70026)),	-- Bloodthirsty Leather Legs
-			un(REMOVED_FROM_GAME, i(70027)),	-- Bloodthirsty Leather Shoulders
-			un(REMOVED_FROM_GAME, i(70028)),	-- Bloodthirsty Wyrmhide Belt
-			un(REMOVED_FROM_GAME, i(70029)),	-- Bloodthirsty Wyrmhide Boots
-			un(REMOVED_FROM_GAME, i(70030)),	-- Bloodthirsty Wyrmhide Bracers
-			un(REMOVED_FROM_GAME, i(70031)),	-- Bloodthirsty Wyrmhide Chest
-			un(REMOVED_FROM_GAME, i(70032)),	-- Bloodthirsty Wyrmhide Gloves
-			un(REMOVED_FROM_GAME, i(70033)),	-- Bloodthirsty Wyrmhide Helm
-			un(REMOVED_FROM_GAME, i(70034)),	-- Bloodthirsty Wyrmhide Legs
-			un(REMOVED_FROM_GAME, i(70035)),	-- Bloodthirsty Wyrmhide Shoulders
-			i(71995),	-- Bracers of Flowing Serenity
-			i(56561),	-- Chestguard of Nature's Fury
-			i(69942),	-- Clutches of Evil
-			i(56499),	-- Darkbrand Belt
-			i(56491),	-- Darkbrand Boots
-			i(56483),	-- Darkbrand Bracers
-			i(56509),	-- Darkbrand Chestguard
-			i(56484),	-- Darkbrand Gloves
-			i(56505),	-- Darkbrand Helm
-			i(56513),	-- Darkbrand Leggings
-			i(56495),	-- Darkbrand Shoulders
-			i(69952),	-- Ethereal Footfalls
-			i(69943),	-- Heavenly Gloves of the Moon
-			i(71986),	-- Leggings of Nature's Champion
-			i(56536),	-- Lightning Lash
-			i(69951),	-- Treads of the Craft
-			i(75127),	-- Vicious Leather Belt
-			i(75130),	-- Vicious Leather Boots
-			i(75131),	-- Vicious Leather Bracers
-			i(75103),	-- Vicious Leather Chest
-			i(75104),	-- Vicious Leather Gloves
-			i(75105),	-- Vicious Leather Helm
-			i(75112),	-- Vicious Leather Legs
-			i(75113),	-- Vicious Leather Shoulders
-			i(75117),	-- Vicious Wyrmhide Belt
-			i(75101),	-- Vicious Wyrmhide Boots
-			i(75106),	-- Vicious Wyrmhide Bracers
-			i(75107),	-- Vicious Wyrmhide Chest
-			i(75109),	-- Vicious Wyrmhide Gloves
-			i(75111),	-- Vicious Wyrmhide Helm
-			i(75080),	-- Vicious Wyrmhide Legs
-			i(75099),	-- Vicious Wyrmhide Shoulders
-		}),
-		filter(MAIL, {
-			un(REMOVED_FROM_GAME, i(56546)),	-- Bloodied Dragonscale Belt
-			un(REMOVED_FROM_GAME, i(56534)),	-- Bloodied Dragonscale Boots
-			un(REMOVED_FROM_GAME, i(56526)),	-- Bloodied Dragonscale Bracers
-			un(REMOVED_FROM_GAME, i(56559)),	-- Bloodied Dragonscale Chest
-			un(REMOVED_FROM_GAME, i(56535)),	-- Bloodied Dragonscale Gloves
-			un(REMOVED_FROM_GAME, i(56547)),	-- Bloodied Dragonscale Helm
-			un(REMOVED_FROM_GAME, i(56558)),	-- Bloodied Dragonscale Legs
-			un(REMOVED_FROM_GAME, i(56527)),	-- Bloodied Dragonscale Shoulders
-			un(REMOVED_FROM_GAME, i(56533)),	-- Bloodied Scale Belt
-			un(REMOVED_FROM_GAME, i(56532)),	-- Bloodied Scale Boots
-			un(REMOVED_FROM_GAME, i(56524)),	-- Bloodied Scale Bracers
-			un(REMOVED_FROM_GAME, i(56556)),	-- Bloodied Scale Chest
-			un(REMOVED_FROM_GAME, i(56525)),	-- Bloodied Scale Gloves
-			un(REMOVED_FROM_GAME, i(56557)),	-- Bloodied Scale Helm
-			un(REMOVED_FROM_GAME, i(56545)),	-- Bloodied Scale Legs
-			un(REMOVED_FROM_GAME, i(56544)),	-- Bloodied Scale Shoulders
-			un(REMOVED_FROM_GAME, i(70044)),	-- Bloodthirsty Charscale Belt
-			un(REMOVED_FROM_GAME, i(70045)),	-- Bloodthirsty Charscale Boots
-			un(REMOVED_FROM_GAME, i(70046)),	-- Bloodthirsty Charscale Bracers
-			un(REMOVED_FROM_GAME, i(70047)),	-- Bloodthirsty Charscale Chest
-			un(REMOVED_FROM_GAME, i(70048)),	-- Bloodthirsty Charscale Gloves
-			un(REMOVED_FROM_GAME, i(70049)),	-- Bloodthirsty Charscale Helm
-			un(REMOVED_FROM_GAME, i(70050)),	-- Bloodthirsty Charscale Legs
-			un(REMOVED_FROM_GAME, i(70051)),	-- Bloodthirsty Charscale Shoulders
-			un(REMOVED_FROM_GAME, i(70036)),	-- Bloodthirsty Dragonscale Belt
-			un(REMOVED_FROM_GAME, i(70037)),	-- Bloodthirsty Dragonscale Boots
-			un(REMOVED_FROM_GAME, i(70038)),	-- Bloodthirsty Dragonscale Bracers
-			un(REMOVED_FROM_GAME, i(70039)),	-- Bloodthirsty Dragonscale Chest
-			un(REMOVED_FROM_GAME, i(70040)),	-- Bloodthirsty Dragonscale Gloves
-			un(REMOVED_FROM_GAME, i(70041)),	-- Bloodthirsty Dragonscale Helm
-			un(REMOVED_FROM_GAME, i(70042)),	-- Bloodthirsty Dragonscale Legs
-			un(REMOVED_FROM_GAME, i(70043)),	-- Bloodthirsty Dragonscale Shoulders
-			i(71996),	-- Bracers of the Hunter-Killer
-			i(56539),	-- Corded Viper Belt
-			i(71988),	-- Deathscale Leggings
-			i(69939),	-- Dragonfire Gloves
-			i(56564),	-- Dragonkiller Tunic
-			i(69949),	-- Earthen Scale Sabatons
-			i(69950),	-- Footwraps of Quenched Fire
-			i(69941),	-- Gloves of Unforgiving Flame
-			i(71987),	-- Rended Earth Leggings
-			i(56538),	-- Stormleather Sash
-			i(71997),	-- Thundering Deathscale Wristguards
-			i(56482),	-- Tsunami Belt
-			i(56494),	-- Tsunami Boots
-			i(56481),	-- Tsunami Bracers
-			i(56504),	-- Tsunami Chestguard
-			i(56490),	-- Tsunami Gloves
-			i(56512),	-- Tsunami Helm
-			i(56508),	-- Tsunami Leggings
-			i(56498),	-- Tsunami Shoulders
-			i(56563),	-- Twilight Scale Chestguard
-			i(75083),	-- Vicious Charscale Belt
-			i(75092),	-- Vicious Charscale Boots
-			i(75094),	-- Vicious Charscale Bracers
-			i(75084),	-- Vicious Charscale Chest
-			i(75085),	-- Vicious Charscale Gloves
-			i(75090),	-- Vicious Charscale Helm
-			i(75097),	-- Vicious Charscale Legs
-			i(75061),	-- Vicious Charscale Shoulders
-			i(75100),	-- Vicious Dragonscale Belt
-			i(75110),	-- Vicious Dragonscale Boots
-			i(75114),	-- Vicious Dragonscale Bracers
-			i(75115),	-- Vicious Dragonscale Chest
-			i(75081),	-- Vicious Dragonscale Gloves
-			i(75102),	-- Vicious Dragonscale Helm
-			i(75108),	-- Vicious Dragonscale Legs
-			i(75116),	-- Vicious Dragonscale Shoulders
+			i(56516),	-- Heavy Savage Leather
+			i(70136, {["timeline"] = {ADDED_4_2_0}}),	-- Royal Scribe's Satchel
+			i(56477),	-- Savage Armor Kit
+			i(52976),	-- Savage Leather
+			i(56502),	-- Scorched Leg Armor
+			i(70137, {["timeline"] = {ADDED_4_2_0}}),	-- Triple-Reinforced Mining Bag
+			i(56503),	-- Twilight Leg Armor
 		}),
 	}),
 	prof(TAILORING, {

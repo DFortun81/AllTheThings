@@ -7,20 +7,6 @@ r(45541),	--
 r(48038),	--
 3.0.1.8622
 r(50935),	--
-r(50936),	-- Heavy Borean Leather
-r(50943),	-- Iceborne Belt
-r(50944),	-- Arctic Chestpiece
-r(50945),	-- Arctic Leggings
-r(50946),	-- Arctic Shoulderpads
-r(50947),	-- Arctic Gloves
-r(50948),	-- Arctic Boots
-r(50949),	-- Arctic Belt
-r(50955),	-- Frostscale Belt
-r(50961),	-- Nerubian Belt
-r(50962),	-- Borean Armor Kit
-r(50963),	-- Heavy Borean Armor Kit
-r(51302),	-- Leatherworking
-r(51571),	-- Arctic Wristguards
 r(53681),	-- Garok's Battle
 r(53686),	-- Verdant Tundra Belt
 r(53687),	-- Verdant Tundra Cap
@@ -28,99 +14,13 @@ r(53688),	-- Verdant Tundra Boots
 r(53689),	-- Verdant Tundra Bracers
 r(53690),	-- Verdant Tundra Shoulderpads
 3.0.1.8874
-r(55199),	-- Cloak of Tormented Skies
 r(55243),	-- Bracers of Deflection
-3.1.0.9767
-r(50938),	-- Iceborne Chestguard
-r(50939),	-- Iceborne Leggings
-r(50940),	-- Iceborne Shoulderpads
-r(50941),	-- Iceborne Gloves
-r(50942),	-- Iceborne Boots
-r(50950),	-- Frostscale Chestguard
-r(50951),	-- Frostscale Leggings
-r(50952),	-- Frostscale Shoulders
-r(50953),	-- Frostscale Gloves
-r(50954),	-- Frostscale Boots
-r(50956),	-- Nerubian Chestguard
-r(50957),	-- Nerubian Legguards
-r(50958),	-- Nerubian Shoulders
-r(50959),	-- Nerubian Gloves
-r(50960),	-- Nerubian Boots
-r(50964),	-- Jormungar Leg Armor
-r(50965),	-- Frosthide Leg Armor
-r(50966),	-- Nerubian Leg Armor
-r(50967),	-- Icescale Leg Armor
-r(51568),	-- Black Chitinguard Boots
-r(51572),	-- Arctic Helm
-r(57683),	-- Fur Lining - Attack Power
-r(57690),	-- Fur Lining - Stamina
-r(57691),	-- Fur Lining - Spell Power
-r(60583),	-- Jormungar Leg Reinforcements
-r(60584),	-- Nerubian Leg Reinforcements
-r(60599),	-- Frostscale Bracers
-r(60600),	-- Frostscale Helm
-r(60601),	-- Dark Frostscale Leggings
-r(60604),	-- Dark Frostscale Breastplate
-r(60605),	-- Dragonstompers
-r(60607),	-- Iceborne Wristguards
-r(60608),	-- Iceborne Helm
-r(60611),	-- Dark Iceborne Leggings
-r(60613),	-- Dark Iceborne Chestguard
-r(60620),	-- Bugsquashers
-r(60622),	-- Nerubian Bracers
-r(60624),	-- Nerubian Helm
-r(60627),	-- Dark Nerubian Leggings
-r(60629),	-- Dark Nerubian Chestpiece
-r(60630),	-- Scaled Icewalkers
-r(60631),	-- Cloak of Harsh Winds
-r(60637),	-- Ice Striker's Cloak
-r(60640),	-- Durable Nerubhide Cape
-r(60643),	-- Pack of Endless Pockets
-r(60649),	-- Razorstrike Breastplate
-r(60651),	-- Virulent Spaulders
-r(60652),	-- Eaglebane Bracers
-r(60655),	-- Nightshock Hood
-r(60658),	-- Nightshock Girdle
-r(60660),	-- Leggings of Visceral Strikes
-r(60665),	-- Seafoam Gauntlets
-r(60666),	-- Jormscale Footpads
-r(60669),	-- Wildscale Breastplate
-r(60671),	-- Purehorn Spaulders
-r(62448),	-- Earthen Leg Armor
-r(64661),	-- Borean Leather
-3.3.5.12340
-r(69386),	-- Drums of Forgotten Kings
-r(69388),	-- Drums of the Wild
 4.0.1.12911
 r(74493),	-- Savage Leather
 r(78421),	--
 r(78422),	--
-r(85007),	--
-r(85008),	--
-r(85009),	--
-r(85010),	--
-r(85067),	--
-r(85068),	--
-4.3.4.15595
-r(99535),	-- Vicious Hide Cloak
-r(99536),	-- Vicious Fur Cloak
-r(101600),	--
 5.0.3.15890
 r(102366),	-- Exotic Leather
-r(124549),	--
-r(124551),	--
-r(124552),	--
-r(124553),	--
-r(124554),	--
-r(124559),	-- Primal Leg Reinforcements
-r(124561),	-- Draconic Leg Reinforcements
-r(124563),	-- Heavy Leg Reinforcements
-r(124564),	-- Primal Leg Reinforcements
-r(124565),	-- Heavy Leg Reinforcements
-r(124566),	-- Draconic Leg Reinforcements
-r(124567),	-- Primal Leg Reinforcements
-r(124568),	-- Heavy Leg Reinforcements
-r(124569),	-- Draconic Leg Reinforcements
 7.3.0.24473
 r(163216),	-- Blackened Dragonscale
 r(163218),	-- Deepsea Scale
@@ -140,14 +40,6 @@ r(196383),	-- Stonehide Leather Vamp
 r(196387),	-- Shaved Felhide
 r(196388),	-- Tanned Fel Leather
 r(196425),	-- Stonehide Boot Base
-8.0.1.25902
-r(264581),	-- Northrend Leatherworking
-9.0.1.34199
-r(330191),	-- Relic of the Past I
-r(330192),	-- Relic of the Past II
-r(330193),	-- Relic of the Past III
-r(330194),	-- Relic of the Past IV
-r(330195),	-- Relic of the Past V
 
 
 
@@ -160,26 +52,3 @@ r(48038),	--
 4.0.1.12911
 r(78421),	--
 r(78422),	--
-r(85007),	--
-r(85008),	--
-r(85009),	--
-r(85010),	--
-r(85067),	--
-r(85068),	--
-4.3.4.15595
-r(101600),	--
-5.0.3.15890
-r(124549),	--
-r(124551),	--
-r(124552),	--
-r(124553),	--
-r(124554),	--
-r(124559),	-- Primal Leg Reinforcements
-r(124561),	-- Draconic Leg Reinforcements
-r(124563),	-- Heavy Leg Reinforcements
-r(124564),	-- Primal Leg Reinforcements
-r(124565),	-- Heavy Leg Reinforcements
-r(124566),	-- Draconic Leg Reinforcements
-r(124567),	-- Primal Leg Reinforcements
-r(124568),	-- Heavy Leg Reinforcements
-r(124569),	-- Draconic Leg Reinforcements

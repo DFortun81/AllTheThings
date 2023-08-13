@@ -2194,7 +2194,7 @@ root(ROOTS.Zones, {
 							i(44305),	-- Kilt of Dark Mercy
 							i(42183),	-- Pattern: Abyssal Bag
 							i(44512, {	-- Pattern: Nerubian Reinforced Quiver (RECIPE!)
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(44250),	-- Reaper of Dark Souls
 							i(44249),	-- Runeblade of Demonstrable Power
@@ -2279,29 +2279,29 @@ root(ROOTS.Zones, {
 						["cr"] = 32349,	-- Cultist Shard Watcher
 					}),
 					i(44563, {	-- Pattern: Fur Lining - Arcane Resist (RECIPE!)
-						["timeline"] = { "added 3.0.2", "removed 5.0.4" },
+						["timeline"] = { ADDED_3_0_3, REMOVED_5_0_4 },
 						["crs"] = {
 							32297,	-- Cult Researcher
 							31702,	-- Frostbrood Spawn
 						},
 					}),
 					i(44559, {	-- Pattern: Fur Lining - Fire Resist (RECIPE!)
-						["timeline"] = { "added 3.0.2", "removed 5.0.4" },
+						["timeline"] = { ADDED_3_0_3, REMOVED_5_0_4 },
 						["crs"] = {
 							31321,	-- Skeletal Runesmith
 							30921,	-- Skeletal Runesmith
 						},
 					}),
 					i(44560, {	-- Pattern: Fur Lining - Frost Resist (RECIPE!)
-						["timeline"] = { "added 3.0.2", "removed 5.0.4" },
+						["timeline"] = { ADDED_3_0_3, REMOVED_5_0_4 },
 						["cr"] = 32289,	-- Damned Apothecary
 					}),
 					i(44562, {	-- Pattern: Fur Lining - Nature Resist (RECIPE!)
-						["timeline"] = { "added 3.0.2", "removed 5.0.4" },
+						["timeline"] = { ADDED_3_0_3, REMOVED_5_0_4 },
 						["cr"] = 32290,	-- Cult Alchemist <Cult of the Damned>
 					}),
 					i(44561, {	-- Pattern: Fur Lining - Shadow Resist (RECIPE!)
-						["timeline"] = { "added 3.0.2", "removed 5.0.4" },
+						["timeline"] = { ADDED_3_0_3, REMOVED_5_0_4 },
 						["cr"] = 32349,	-- Cultist Shard Watcher
 					}),
 					i(44564, {	-- Recipe: Mighty Arcane Protection Potion
