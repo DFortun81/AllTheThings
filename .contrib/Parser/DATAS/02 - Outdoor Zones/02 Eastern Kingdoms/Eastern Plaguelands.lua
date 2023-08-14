@@ -3493,8 +3493,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if AFTER 4.0.1
 				n(16365, {	-- Master Craftsman Omarion <Brotherhood of the Light>
+					-- #if AFTER 10.1.5
 					["description"] = "You must unlock the Memory of Scholomance and Naxxaramas before this vendor will sell to you.",
+					-- #endif
 					["coord"] = { 75.6, 52.0, EASTERN_PLAGUELANDS },
 					["groups"] = sharedData({
 						["cost"] = {{ "i", 12844, 3 }},	-- 3x Argent Dawn Valor Token
@@ -3535,6 +3538,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(206424),	-- Plans: Icebane Waistguard (RECIPE!)
 					}),
 				}),
+				-- #endif
 				n(11536, {	-- Quartermaster Miranda Breechlock <The Argent Crusade>
 					-- #if AFTER CATA
 					["coord"] = { 75.8, 54.0, EASTERN_PLAGUELANDS },
