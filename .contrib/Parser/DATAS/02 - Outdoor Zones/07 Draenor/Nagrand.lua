@@ -83,6 +83,11 @@ root(ROOTS.Zones, {
 			},
 			["groups"] = {
 				n(ACHIEVEMENTS, {
+					ach(9571, {		-- Broke Back Precipice (Broken Precipice)
+						crit(1),		-- Durg Spinecrusher
+						crit(2),		-- Bonebreaker
+						crit(3),		-- Pit Slayer
+					}),
 					ach(9548, {		-- Buried Treasures (Mok'gol Watchpost)
 						crit(1, {	-- Garrosh's Shackles
 							["_quests"] = { 37130 },

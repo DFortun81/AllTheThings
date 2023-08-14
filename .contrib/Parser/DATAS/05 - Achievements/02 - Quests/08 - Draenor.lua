@@ -25,11 +25,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		}),
 		ach(9635),		-- Bobbing for Orcs (Shattrath City)
 		ach(9533),		-- Breaker of Chains (Bloodmaul Stronghold)
-		ach(9571, {		-- Broke Back Precipice (Broken Precipice)
-			crit(1),		-- Durg Spinecrusher
-			crit(2),		-- Bonebreaker
-			crit(3),		-- Pit Slayer
-		}),
 		ach(9667),		-- Burn It to the Ground (Everbloom Wilds)
 		ach(9537),		-- By Fire Be... Merged? (Magnarok)
 		ach(9634),		-- Charged Up (Shattrath City)
@@ -44,34 +39,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(8),		-- Xothear, the Destroyer
 		}),
 		ach(9534),		-- Delectable Ogre Delicacies (Bloodmaul Stronghold)
-		a(ach(10068, {	-- Draenor's Last Stand (Tanaan Jungle) [A]
-			crit(1),		-- Ironhold Harbor
-			crit(2),		-- Ruins of Kra'nak
-			crit(3),		-- Temple of Sha'naar
-			crit(4),		-- The Fel Forge
-			crit(5),		-- The Iron Front
-			crit(6),		-- Throne of Kil'jaeden
-			crit(7),		-- Zeth'gol
-		})),
-		h(ach(10075, {	-- Draenor's Last Stand (Tanaan Jungle) [H]
-			crit(1),		-- Ironhold Harbor
-			crit(2),		-- Ruins of Kra'nak
-			crit(3),		-- Temple of Sha'naar
-			crit(4),		-- The Fel Forge
-			crit(5),		-- The Iron Front
-			crit(6),		-- Throne of Kil'jaeden
-			crit(7),		-- Zeth'gol
-		})),
 		ach(9612),		-- Eggs in One Basket (Skettis Ruins)
-		ach(9655, {		-- Fight the Power (The Pit)
-			crit(1),		-- Maniacal Madgard
-			crit(2),		-- Defector Dazgo
-			crit(3),		-- Durp the Hated
-			crit(4),		-- Inventor Blammo
-			crit(5),		-- Horgg
-			crit(6),		-- Blademaster Ro'gor
-			crit(7),		-- Morgo Kain
-		}),
 		ach(9613),		-- Fish Gotta Swim, Birds Gotta Eat (Skettis Ruins)
 		h(ach(9606, {	-- Frostfire Fridge
 			crit(1),		-- Bonus Objective: Forbidden Glacier
@@ -79,15 +47,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(3),		-- Bonus Objective: Grimfrost Hill
 		})),
 		ach(9486),		-- Goodness Gracious (Shattrath City)
-		ach(9638, {		-- Heralds of the Legion (Shattrath City)
-			crit(1),		-- Orumo the Observer
-			crit(2),		-- Lord Korinak
-			crit(3),		-- Lady Demlash
-			crit(4),		-- Shadowflame Terrorwalker
-			crit(5),		-- Kurlosh Doomfang
-			crit(6),		-- Matron of Sin
-			crit(7),		-- Vigilant Paarthos
-		}),
 		ach(9674, {		-- I Want More Talador
 			crit(1),		-- Bonus Objective: Aruuna's Desolation
 			crit(2),		-- Bonus Objective: Court of Souls
@@ -198,28 +157,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		ach(9711),		-- Planned to Fail (Iron Siegeworks)
 		ach(9710),		-- Poisoning the Well (Iron Siegeworks)
 		ach(9637),		-- Poor Communication (Shattrath City)
-		a(ach(10072, {	-- Rumble in the Jungle (Alliance) (Tanaan Jungle)
-			title(318),		-- of the Jungle
-			crit(1),		-- In Pursuit of Gul'dan
-			crit(2),		-- Draenor's Last Stand
-			crit(3),		-- Hellbane
-			crit(4),		-- Jungle Stalker
-			crit(5),		-- Jungle Treasure Master
-			crit(6),		-- Explore Tanaan Jungle
-			crit(7),		-- I Came, I Clawed, I Conquered
-			crit(8),		-- The Legion Will NOT Conquer All
-		})),
-		h(ach(10265, {	-- Rumble in the Jungle (Horde) (Tanaan Jungle)
-			title(318),		-- of the Jungle
-			crit(1),		-- In Pursuit of Gul'dan
-			crit(2),		-- Draenor's Last Stand
-			crit(3),		-- Hellbane
-			crit(4),		-- Jungle Stalker
-			crit(5),		-- Jungle Treasure Master
-			crit(6),		-- Explore Tanaan Jungle
-			crit(7),		-- I Came, I Clawed, I Conquered
-			crit(8),		-- The Legion Will NOT Conquer All
-		})),
 		a(ach(9564, {	-- Securing Draenor (Alliance)
 			crit(1),		-- Assault on the Iron Siegeworks
 			crit(2),		-- Assault on Stonefury Cliffs

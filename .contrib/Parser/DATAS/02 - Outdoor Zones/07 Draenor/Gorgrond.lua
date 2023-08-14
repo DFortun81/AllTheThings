@@ -113,6 +113,15 @@ root(ROOTS.Zones, {
 						crit(13),		-- The Iron Approach
 						crit(14),		-- The Pit
 					}),
+					ach(9655, {		-- Fight the Power (The Pit)
+						crit(1),		-- Maniacal Madgard
+						crit(2),		-- Defector Dazgo
+						crit(3),		-- Durp the Hated
+						crit(4),		-- Inventor Blammo
+						crit(5),		-- Horgg
+						crit(6),		-- Blademaster Ro'gor
+						crit(7),		-- Morgo Kain
+					}),
 					ach(9656,  {	-- In Plain Sight (The Pit)
 						["coords"] = {
 							{ 45.8, 27.2, GORGROND },

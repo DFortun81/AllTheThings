@@ -141,6 +141,15 @@ root(ROOTS.Zones, {
 						crit(15),		-- Zangarra
 					}),
 					ach(9486),		-- Goodness Gracious
+					ach(9638, {		-- Heralds of the Legion (Shattrath City)
+						crit(1),		-- Orumo the Observer
+						crit(2),		-- Lord Korinak
+						crit(3),		-- Lady Demlash
+						crit(4),		-- Shadowflame Terrorwalker
+						crit(5),		-- Kurlosh Doomfang
+						crit(6),		-- Matron of Sin
+						crit(7),		-- Vigilant Paarthos
+					}),
 					ach(9674,  {	-- I Want More Talador
 						crit(1, {	-- Bonus Objective: Aruuna's Desolation
 							["sourceQuest"] = 34639,	-- Aruuna's Desolation
