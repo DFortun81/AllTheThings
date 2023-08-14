@@ -3494,6 +3494,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(16365, {	-- Master Craftsman Omarion <Brotherhood of the Light>
+					["description"] = "You must unlock the Memory of Scholomance and Naxxaramas before this vendor will sell to you.",
 					["coord"] = { 75.6, 52.0, EASTERN_PLAGUELANDS },
 					["groups"] = sharedData({
 						["cost"] = {{ "i", 12844, 3 }},	-- 3x Argent Dawn Valor Token
