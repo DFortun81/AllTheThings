@@ -121,16 +121,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				ach(5320, {	-- King of the Mountain (Alliance)
-					["sourceQuest"] = 27787,	-- Skullcrusher the Mountain (Alliance)
-					["timeline"] = { "added 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				ach(5321, {	-- King of the Mountain (Horde)
-					["sourceQuest"] = 27788,	-- Skullcrusher the Mountain (Horde)
-					["timeline"] = { "added 4.0.3" },
-					["races"] = HORDE_ONLY,
-				}),
 				ach(4960, {	-- Round Three. Fight!
 					["sourceQuest"] = 27868,	-- The Crucible of Carnage: The Twilight Terror!
 					["timeline"] = { "added 4.0.3" },
@@ -1726,11 +1716,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27787, {	-- Skullcrusher the Mountain (A)
+					["qg"] = 46717,	-- The Hammer of Twilight
 					["sourceQuest"] = 27784,	-- The Hammer of Twilight
 					["coord"] = { 45.2, 87.8, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46717,	-- The Hammer of Twilight
 					["groups"] = {
+						ach(5320),	-- King of the Mountain (Alliance)
 						i(63708),	-- Overly Intelligent Robe
 						i(63707),	-- Shaw's Finest Leggings
 						i(63706),	-- Coulton's Crushers
@@ -1739,10 +1730,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27788, {	-- Skullcrusher the Mountain (H)
 					["qg"] = 46717,	-- The Hammer of Twilight
+					["sourceQuest"] = 27786,	-- The Hammer of Twilight
 					["coord"] = { 45.3, 87.9, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 27786,	-- The Hammer of Twilight
 					["groups"] = {
+						ach(5321),	-- King of the Mountain (Horde)
 						i(63704),	-- Overly Intelligent Robes
 						i(63703),	-- Garona's Finest Leggings
 						i(63702),	-- Coulton's Crushers

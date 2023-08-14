@@ -9,6 +9,36 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 		["lvl"] = 32,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				ach(5879, {	-- Veteran of the Molten Front
+					["sym"] = {{"meta_achievement",
+						5868,	-- And the Meek Shall Inherit Kalimdor
+						5874,	-- Death From Above
+						5870,	-- Fireside Chat
+						5867,	-- Flawless Victory
+						5864,	-- Gang War
+						5865,	-- Have... Have We Met?
+						5869,	-- Infernal Ambassadors 
+						5872,	-- King of the Spider-Hill
+						5859,	-- Legacy of Leyara
+						5862,	-- Ludicrous Speed
+						5871,	-- Master of the Molten Flow
+						5873,	-- Ready for Raiding II
+						5861,	-- The Fiery Lords of Sethria's Roost
+						5866,	-- The Molten Front Offensive
+					}},
+					["groups"] = {
+						title(189),		-- the Flamebreaker
+					},
+				}),
+				ach(5868, {	-- And the Meek Shall Inherit Kalimdor
+					["maps"] = { MOUNT_HYJAL },
+					["groups"] = {
+						crit(1),	-- Angry Little Squirrel
+						crit(2),	-- Hyjal Bear Cub
+						crit(3),	-- Alpine Songbird
+						crit(4),	-- Child of Tortolla
+					},
+				}),
 				achWithRep(5827, 1204, {	-- Avengers of Hyjal
 					title(188),	-- <Name>, Avenger of Hyjal
 				}),
@@ -55,18 +85,45 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 				ach(5867, {	-- Flawless Victory
 					["cr"] = 52552,	-- Molten Behemoth
 				}),
+				ach(5864, {	-- Gang War
+					["maps"] = { MOUNT_HYJAL },
+				}),
+				ach(5865, {	-- Have... Have We Met?
+					["maps"] = { MOUNT_HYJAL },
+					["groups"] = {
+						crit(4),	-- Chromie
+						crit(2),	-- Hemet Nesingwary
+						crit(1),	-- Linken
+						crit(5),	-- Mankrik
+						crit(3),	-- Nat Pagle
+						crit(6),	-- Thassarian
+					},
+				}),
+				ach(5869, {	-- Infernal Ambassadors
+					["maps"] = { MOUNT_HYJAL },
+					["groups"] = {
+						crit(4),	-- Slay Galenges before he is weakened a second time
+						crit(3),	-- Slay Lylagar without taking damage from Lylagar Breath.
+						crit(2),	-- Slay Millagazor without taking damage from Gout of Flame.
+						crit(5),	-- Slay Nemesis at Ashen Lake without taking damage from Molten Fury.
+						crit(1),	-- Slay Pyrachnis without using the Emerald of Aessina.
+					},
+				}),
 				ach(5872),	-- King of the Spider-Hill  (Mount Hyjal - The Molten Front)
 				ach(5859, {	-- Legacy of Leyara (Mount Hyjal)
 					i(69854),	-- Smoke-Stained Locket (quest item reward)
 					crit(1, {	-- A Ritual of Flame
-						["sourceQuest"] = 29195,	-- A Ritual of Flame
+						["_quests"] = { 29195 },	-- A Ritual of Flame
 					}),
 					crit(2, {	-- Leyara
-						["sourceQuest"] = 29200,	-- Leyara
+						["_quests"] = { 29200 },	-- Leyara
 					}),
 					crit(3, {	-- Into the Depths
-						["sourceQuest"] = 29203,	-- Into the Depths
+						["_quests"] = { 29203 },	-- Into the Depths
 					}),
+				}),
+				ach(5862, {	-- Ludicrous Speed
+					["maps"] = { MOUNT_HYJAL },
 				}),
 				ach(5871, {	-- Master of the Molten Flow (Mount Hyjal - The Molten Front)
 					crit(2),	-- Kill a Flamewaker Sentinel while it is carrying someone
@@ -79,6 +136,24 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					crit(3),	-- Ancient Smoldering Behemoth slain
 					crit(2),	-- Cinderweb Queen slain
 					crit(4),	-- Devout Harbinger slain
+				}),
+				
+				ach(5861, {	-- The Fiery Lords of Sethria's Roost
+					["maps"] = { MOUNT_HYJAL },
+					["groups"] = {
+						crit(3, {	-- Andrazor slain
+							["cr"] = 53267,	-- Andrazor
+						}),
+						crit(4, {	-- Fah Jarakk slain
+							["cr"] = 53271,	-- Fah Jarakk
+						}),
+						crit(2, {	-- Kelbnar slain
+							["cr"] = 53265,	-- Kelbnar
+						}),
+						crit(1, {	-- Searris slain
+							["cr"] = 53264,	-- Searris
+						}),
+					},
 				}),
 				ach(5866, {	-- The Molten Front Offensive (Mount Hyjal - The Molten Front)
 					i(69213),	-- Flameward Hippogryph (MOUNT!)

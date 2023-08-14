@@ -4,8 +4,8 @@
 -- Crieve NOTE: I have my eyes on this file. I don't like how disconnected everything is. Sorta feels like the subzones are pointless. and only make it so that parts and pieces are split up unnecessarily. When Cata Classic comes out I'll think about rearranging things.
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(203, {	-- Vashj'ir
-		["achievementID"] = 4825,
 		["lore"] = "Vashj'ir is an underwater zone. Players receive underwater breathing, swim speed buffs, and eventually a sea horse mount early on in questing to make transportation easier. Players learn about the history of the Highborne, as this city was home to Lady Vashj before the Sundering. Players learn about the threat of Ozumat, culminating in a battle between Neptulon and the naga.",
+		["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
 		["timeline"] = { "added 4.0.3" },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -38,43 +38,89 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						205,	-- Shimmering Expanse
 					},
 				}),
+				ach(4869, {	-- Sinking into Vashj'ir (A)
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						crit(1, {	-- Defense of The Briny Cutter
+							["_quests"] = { 25558 },	-- All or Nothing
+						}),
+						crit(2, {	-- Smuggler's Scar
+							["_quests"] = { 25638 },	-- A Desperate Plea
+						}),
+						crit(3, {	-- A Budding Treasure Hunter
+							["_quests"] = { 25743 },	-- Decisions, Decisions
+						}),
+						crit(4, {	-- The Clutch
+							["sourceQuests"] = {
+								25888,	-- Decompression
+								27708,	-- The Warden's Time
+								25885,	-- What? What? In My Gut...?
+							},
+						}),
+						crit(5, {	-- Silver Tide Hollow
+							["_quests"] = { 25456 },	-- Back in One Piece
+						}),
+						crit(6, {	-- Nespirah
+							["_quests"] = { 25922 },	-- Waking the Beast
+						}),
+						crit(7, {	-- Visions of the Past
+							["_quests"] = { 25626 },	-- Visions of the Past: Rise from the Deep
+						}),
+						crit(8, {	-- The Merciless One
+							["_quests"] = { 25987 },	-- Put It On
+						}),
+						crit(9, {	-- L'ghorek
+							["_quests"] = { 26143 },	-- All That Rises
+						}),
+						crit(10, {	-- The Tidehunter
+							["_quests"] = { 26193 },	-- Defending the Rift
+						}),
+					},
+				}),
+				ach(4982, {	-- Sinking into Vashj'ir (H)
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						crit(1, {	-- Defense of The Immortal Coil
+							["_quests"] = { 25949 },	-- Blood and Thunder!
+						}),
+						crit(2, {	-- Smuggler's Scar
+							["_quests"] = { 25638 },	-- A Desperate Plea
+						}),
+						crit(3, {	-- A Budding Treasure Hunter
+							["_quests"] = { 25743 },	-- Decisions, Decisions
+						}),
+						crit(4, {	-- The Clutch
+							["sourceQuests"] = {
+								26008,	-- Decompression
+								27708,	-- The Warden's Time
+								26040,	-- What? What? In My Gut...?
+							},
+						}),
+						crit(5, {	-- Silver Tide Hollow
+							["_quests"] = { 25456 },	-- Back in One Piece
+						}),
+						crit(6, {	-- Nespirah
+							["_quests"] = { 25996 },	-- Waking the Beast
+						}),
+						crit(7, {	-- Visions of the Past
+							["_quests"] = { 26135 },	-- Visions of the Past: Rise from the Deep
+						}),
+						crit(8, {	-- The Merciless One
+							["_quests"] = { 25988 },	-- Put It On
+						}),
+						crit(9, {	-- L'ghorek
+							["_quests"] = { 26143 },	-- All That Rises
+						}),
+						crit(10, {	-- The Tidehunter
+							["_quests"] = { 26194 },	-- Defending the Rift
+						}),
+					},
+				}),
 			}),
 			m(204, {	-- Abyssal Depths
 				["lore"] = "Abyssal Depths is the last, and darkest zone, players reach when questing in Vash'jir. They are home to the ancient god L'ghorek, which the Twilight Hammer is siphoning energy from to be prepared when fighting Neptulon in the future.",
 				["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
 				["groups"] = {
-					n(ACHIEVEMENTS, {
-						ach(4869, {	-- Sinking into Vashj'ir (Alliance)
-							["races"] = ALLIANCE_ONLY,
-							["collectible"] = false,
-							["groups"] = {
-								crit(8, {	-- The Merciless One
-									["sourceQuest"] = 25987,	-- Put It On
-								}),
-								crit(9, {	-- L'ghorek
-									["sourceQuest"] = 26143,	-- All That Rises
-								}),
-								crit(10, {	-- The Tidehunter
-									["sourceQuest"] = 26193,	-- Defending the Rift
-								}),
-							},
-						}),
-						ach(4982, {	-- Sinking into Vashj'ir (Horde)
-							["races"] = HORDE_ONLY,
-							["collectible"] = false,
-							["groups"] = {
-								crit(8, {	-- The Merciless One
-									["sourceQuest"] = 25988,	-- Put It On
-								}),
-								crit(9, {	-- L'ghorek
-									["sourceQuest"] = 26143,	-- All That Rises
-								}),
-								crit(10, {	-- The Tidehunter
-									["sourceQuest"] = 26194,	-- Defending the Rift
-								}),
-							},
-						}),
-					}),
 					n(FLIGHT_PATHS, {
 						fp(524, {	-- Daybreak Cove, Vashj'ir
 							["coord"] = { 56.8, 75.4, 204 },
@@ -630,52 +676,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["lore"] = "Kelp'thar Forest is the first subzone players reach when questing in Vash'jir. It has tropical underwater life and is closer to the surface than other subzones. Quests introduce the threat of the naga while also reacquainting the player with stranded members of the Zul'Aman exploratory crew.",
 				["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
 				["groups"] = {
-					n(ACHIEVEMENTS, {
-						ach(4869, {	-- Sinking into Vashj'ir (Alliance)
-							["races"] = ALLIANCE_ONLY,
-							["collectible"] = false,
-							["groups"] = {
-								crit(1, {	-- Defense of The Briny Cutter
-									["sourceQuest"] = 25558,	-- All or Nothing
-								}),
-								crit(2, {	-- Smuggler's Scar
-									["sourceQuest"] = 25638,	-- A Desperate Plea
-								}),
-								crit(3, {	-- A Budding Treasure Hunter
-									["sourceQuest"] = 25743,	-- Decisions, Decisions
-								}),
-								crit(4, {	-- The Clutch
-									["sourceQuests"] = {
-										25888,	-- Decompression
-										27708,	-- The Warden's Time
-										25885,	-- What? What? In My Gut...?
-									},
-								}),
-							},
-						}),
-						ach(4982, {	-- Sinking into Vashj'ir (Horde)
-							["races"] = HORDE_ONLY,
-							["collectible"] = false,
-							["groups"] = {
-								crit(1, {	-- Defense of The Immortal Coil
-									["sourceQuest"] = 25949,	-- Blood and Thunder!
-								}),
-								crit(2, {	-- Smuggler's Scar
-									["sourceQuest"] = 25638,	-- A Desperate Plea
-								}),
-								crit(3, {	-- A Budding Treasure Hunter
-									["sourceQuest"] = 25743,	-- Decisions, Decisions
-								}),
-								crit(4, {	-- The Clutch
-									["sourceQuests"] = {
-										26008,	-- Decompression
-										27708,	-- The Warden's Time
-										26040,	-- What? What? In My Gut...?
-									},
-								}),
-							},
-						}),
-					}),
 					n(FLIGHT_PATHS, {
 						fp(607, {	-- Sandy Beach, Vashj'ir
 							["description"] = "Underwater.",
@@ -1154,42 +1154,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["lore"] = "The Shimmering Expanse is a subzone of Vash'jir. It contains The Earthen Ring quartermaster in Silver Tide Hollow, the only flight points in the zone, and tons of  Azshara's Veil. In this section, players learn about the highborne's past and the threat of the naga through the eyes of Battlemaidens.",
 				["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
 				["groups"] = {
-					n(ACHIEVEMENTS, {
-						-- Crieve NOTE: This part especially. I absolutely abhor the extra achievement headers for the sake of keeping the subzones separated.
-						ach(4869, {	-- Sinking into Vashj'ir (Alliance)
-							["races"] = ALLIANCE_ONLY,
-							["collectible"] = false,
-							["groups"] = {
-								crit(5, {	-- Silver Tide Hollow
-									["sourceQuest"] = 25456,	-- Back in One Piece
-								}),
-								crit(6, {	-- Nespirah
-									["sourceQuest"] = 25922,	-- Waking the Beast
-								}),
-								crit(7, {	-- Visions of the Past
-									["sourceQuest"] = 25626,	-- Visions of the Past: Rise from the Deep
-								}),
-							},
-						}),
-						ach(4982, {	-- Sinking into Vashj'ir (Horde)
-							["races"] = HORDE_ONLY,
-							["collectible"] = false,
-							["groups"] = {
-								crit(5, {	-- Silver Tide Hollow
-									["sourceQuest"] = 25456,	-- Back in One Piece
-								}),
-								crit(6, {	-- Nespirah
-									["sourceQuest"] = 25996,	-- Waking the Beast
-								}),
-								crit(7, {	-- Visions of the Past
-									["sourceQuest"] = 26135,	-- Visions of the Past: Rise from the Deep
-								}),
-							},
-						}),
-						ach(5452, {	-- Visions of Vashj'ir Past
-							["sourceQuest"] = 25951,	-- Final Judgment
-						}),
-					}),
 					n(FLIGHT_PATHS, {
 						fp(525, {	-- Legion's Rest, Vashj'ir
 							["coord"] = { 50.8, 63.4, 205 },
@@ -1565,6 +1529,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 41456,	-- Lady Sira'kess
 							["sourceQuest"] = 25860,	-- At All Costs
 							["coord"] = { 33.1, 77.9, 205 },
+							["groups"] = {
+								ach(5452),	-- Visions of Vashj'ir Past
+							},
 						}),
 						q(26219, {	-- Full Circle (A)
 							["qg"] = 42411,	-- Captain Taylor

@@ -331,8 +331,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(28497, {	-- Fire From the Sky
 					["qg"] = 48698,	-- Harrison Jones
-					["coord"] = { 41.3, 5.5, ULDUM },
 					["sourceQuest"] = 28482,	-- Sullah's Gift
+					["coord"] = { 41.3, 5.5, ULDUM },
 					["groups"] = {
 						ach(5317),	-- Help the Bombardier! I'm the Bombardier!
 						i(65870),	-- Confiscated Dog Tags
@@ -340,11 +340,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(65868),	-- Canopic CHestplate
 					},
 				}),
-				q(28736, {	-- Fire From the Sky
+				q(28736, {	-- Fire From the Sky (Daily)
 					["qg"] = 49523,	-- Weathered Nomad
+					["sourceQuest"] = 28497,	-- Fire From the Sky
 					["coord"] = { 41.3, 5.5, ULDUM },
 					["isDaily"] = true,
-					["sourceQuest"] = 28497,	-- Fire From the Sky
 					["groups"] = {
 						ach(5317),	-- Help the Bombardier! I'm the Bombardier!
 					},

@@ -11,6 +11,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 				achWithRep(5375, 1177, {	-- Baradin's Wardens
 					["races"] = ALLIANCE_ONLY,
 				}),
+				ach(4874),	-- Breaking Out of Tol Barad
 				achWithRep(5376, 1178, {	-- Hellscream's Reach
 					["races"] = HORDE_ONLY,
 				}),
