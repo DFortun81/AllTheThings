@@ -271,11 +271,11 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 			-- override for the object
 			local override = overrides and overrides[key];
 			if override ~= nil then
+				-- app.PrintDebug("DLO:override",key,":",override)
 				-- overrides can also be a function which will execute once the object has been created
 				if o and type(override) == "function" then
 					return override(o, key);
 				else
-					-- app.PrintDebug("DLO:override",key,":",override)
 					return override;
 				end
 			-- existing object, then reference the respective key
@@ -20542,7 +20542,11 @@ customWindowUpdates["list"] = function(self, force, got)
 		self:BuildData();
 	end
 	if self:IsVisible() then
+		-- requires Visibility filter to check .visibile for display of the group
+		local filterVisible = app.Modules.Filter.Get.Visible();
+		app.Modules.Filter.Set.Visible(true);
 		self:BaseUpdate(force);
+		app.Modules.Filter.Set.Visible(filterVisible);
 	end
 end
 customWindowUpdates["Tradeskills"] = function(self, force, got)
