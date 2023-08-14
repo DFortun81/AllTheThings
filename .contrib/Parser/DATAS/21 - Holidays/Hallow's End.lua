@@ -4067,6 +4067,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["coord"] = { 67.2, 49.0, ZANGARMARSH },
 					["timeline"] = { "added 2.0.1" },
 				}),
+				q(75681, {	-- Candy Bucket — The Waking Shores, Wild Coast
+					--["coord"] = { , THE_WAKING_SHORES },
+					["timeline"] = { "added 10.1.5.50379" },
+					["races"] = ALLIANCE_ONLY,
+				}),
 			}),
 		}),
 		n(FACTION_HEADER_HORDE, {
@@ -4406,6 +4411,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						HALL_OF_CHRONICLERS,
 						DAZARALOR,
 					},
+				}),
+				q(75682, {	-- The Waking Shores, Wild Coast
+					--["coord"] = { , THE_WAKING_SHORES },
+					["timeline"] = { "added 10.1.5.50379" },
+					["races"] = HORDE_ONLY,
 				}),
 			}),
 		}),
