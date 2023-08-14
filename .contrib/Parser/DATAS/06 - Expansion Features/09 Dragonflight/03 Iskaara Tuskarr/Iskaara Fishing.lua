@@ -22,7 +22,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					crit(2, {	-- Harpoon head
 						["_quests"] = { 70797 },	-- Jagged Serevite Harpoon Head
 					}),
-					crit(3, {	-- Harpoon rope
+					crit(3, {	-- harpoon rope
 						["_quests"] = { 70799 },	-- Braided Seavine Harpoon Rope
 					}),
 					crit(4, {	-- Fishing net weights
@@ -76,6 +76,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["g"] = {
 						i(199925),	-- Stone With Hole
 						i(199924),	-- Strong Sea Kelp
+						crit(2, {	-- Iskaaran Fishing Net
+							["achievementID"] = 16321,	-- Cutting Tusk Equipment
+						}),
 					},
 				}),
 				q(72584, {	-- Setting Your Very Own Net
@@ -239,123 +242,121 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			},{
 				["crs"] = { 195935 },
 				["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
-				["g"] = {
-					filter(RECIPES, sharedData({ ["collectible"] = false }, {
-						r(388251),	-- Braided Seavine Harpoon Rope
-						r(388253),	-- Dense Draconium Net Weights
-						r(388255),	-- Double Imbu Knot
-						r(388252),	-- Draconium Net Weights
-						r(387827),	-- Flying Fish Bone Charm
-						r(388254),	-- Imbu Knot
-						r(387836),	-- Irontree Harpoon Handle
-						r(387828),	-- Iskaaran Fishing Net
-						r(387831),	-- Iskaaran Harpoon
-						r(387832),	-- Iskaaran Ice Axe
-						r(388249),	-- Jagged Serevite Harpoon Head
-						r(387833),	-- Polished Basalt Bracelet
-						r(387594),	-- Reinforced Irontree Harpoon Handle
-						r(388250),	-- Seavine Harpoon Rope
-						r(387375),	-- Serevite Harpoon Head
-					})),
-					n(CRAFTABLES, {
-						i(199847, {	-- Braided Seavine Harpoon Rope
-							["questID"] = 70799,	-- Triggered after crafting 'Braided Seavine Harpoon Rope'
-							["cost"] = {
-								{ "i", 200081, 6 },	-- 6x Strong Seavine
-								{ "i", 200086, 1 },	-- 1x Khaz'gorite-Infused Resin
-							},
-						}),
-						i(199849, {	-- Dense Draconium Net Weight
-							["questID"] = 70801,	-- Triggered after crafting 'Dense Draconium Net Weights'
-							["cost"] = {
-								{ "i", 200080, 6 },	-- 6x Draconium Nugget
-								{ "i", 200085, 1 },	-- 1x Khaz'gorite Wire
-							},
-						}),
-						i(199851, {	-- Double Imbu Knot
-							["questID"] = 70803,	-- Triggered after crafting 'Double Imbu Knot'
-							["cost"] = {
-								{ "i", 200082, 6 },	-- 6x Battered Imbu-made Net
-								{ "i", 200085, 1 },	-- 1x Khaz'gorite Wire
-							},
-						}),
-						i(199848, {	-- Draconium Net Weights
-							["questID"] = 70800,	-- Triggered after crafting 'Draconium Net Weights'
-							["cost"] = {
-								{ "i", 200080, 3 },	-- 3x Draconium Nugget
-							},
-						}),
-						i(199694, {	-- Flying Fish Bone Charm
-							["questID"] = 67139,	-- Triggered after crafting 'Flying Fish Bone Charm'
-							["cost"] = {
-								{ "i", 200075, 1 },	-- 1x Flying Fish Bones
-							},
-						}),
-						i(199850, {	-- Imbu Knot
-							["questID"] = 70802,	-- Triggered after crafting 'Imbu Knot'
-							["cost"] = {
-								{ "i", 200082, 3 },	-- 3x Battered Imbu-made Net
-							},
-						}),
-						i(199698, {	-- Irontree Harpoon Handle
-							["questID"] = 70794,	-- Triggered after crafting 'Irontree Harpoon Handle'
-							["cost"] = {
-								{ "i", 200083, 3 },	-- 3x Irontree Branch
-							},
-						}),
-						i(199695, {	-- Iskaaran Fishing Net
-							["questID"] = 70793,	-- Triggered after crafting 'Iskaaran Fishing Net'
-							["cost"] = {
-								{ "i", 199925, 2 },	-- 2x Stone With Hole
-								{ "i", 199924, 3 },	-- 3x Strong Sea Kelp
-							},
-						}),
-						i(194510, {	-- Iskaaran Harpoon
-							["questID"] = 70792,	-- Triggered after crafting 'Iskaaran Harpoon'
-							["cost"] = {
-								{ "i", 200076, 1 },	-- 1x Harpoon Head
-								{ "i", 198070, 1 },	-- 1x Tattered Seavine
-								{ "i", 200077, 1 },	-- 1x Wooden Pole
-							},
-						}),
-						i(199696, {	-- Iskaaran Ice Axe
-							["questID"] = 67141,	-- Triggered after crafting 'Iskaaran Ice Axe'
-							["cost"] = {
-								{ "i", 200078, 1 },	-- 1x Pickaxe Blade
-							},
-						}),
-						i(199845, {	-- Jagged Serevite Harpoon Head
-							["questID"] = 70797,	-- Triggered after crafting 'Jagged Serevite Harpoon Head'
-							["cost"] = {
-								{ "i", 200084, 6 },	-- 6x Salinated Serevite
-								{ "i", 200086, 1 },	-- 1x Khaz'gorite-Infused Resin
-							},
-						}),
-						i(199697, {	-- Polished Basalt Bracelet
-							["questID"] = 67140,	-- Triggered after crafting 'Polished Basalt Bracelet'
-							["cost"] = {
-								{ "i", 200079, 3 },	-- 3x Sea-Polished Basalt
-							},
-						}),
-						i(199641, {	-- Reinforced Irontree Harpoon Handle
-							["questID"] = 70795,	-- Triggered after crafting 'Reinforced Irontree Harpoon Handle'
-							["cost"] = {
-								{ "i", 200083, 6 },	-- 6x Irontree Branch
-								{ "i", 200086, 1 },	-- 1x Khaz'gorite-Infused Resin
-							},
-						}),
-						i(199846, {	-- Seavine Harpoon Rope
-							["questID"] = 70798,	-- Triggered after crafting 'Seavine Harpoon Rope'
-							["cost"] = {
-								{ "i", 200081, 3 },	-- 3x Strong Seavine
-							},
-						}),
-						i(199844, {	-- Serevite Harpoon Head
-							["questID"] = 70796,	-- Triggered after crafting 'Serevite Harpoon Head'
-							["cost"] = {
-								{ "i", 200084, 3 },	-- 3x Salinated Serevite
-							},
-						}),
+				["g"] = { 
+					-- These "Recipes" show as learned, but when you have learned them, they dissapear causing ATT to think you no longer have them learned.
+					
+					i(199847, {	-- Braided Seavine Harpoon Rope
+						["spellID"] = 388251,	-- Braided Seavine Harpoon Rope
+						["questID"] = 70799,	-- Triggered after crafting 'Braided Seavine Harpoon Rope'
+						["cost"] = {
+							{ "i", 200081, 6 },	-- 6x Strong Seavine
+							{ "i", 200086, 1 },	-- 1x Khaz'gorite-infused Resin
+						},
+					}),
+					i(199849, {	-- Dense Draconium Net Weight
+						["spellID"] = 388253,	-- Dense Draconium Net Weights
+						["questID"] = 70801,	-- Triggered after crafting 'Dense Draconium Net Weights'
+						["cost"] = {
+							{ "i", 200080, 6 },	-- 6x Draconium Nugget
+							{ "i", 200085, 1 },	-- 1x Khaz'gorite Wire
+						},
+					}),
+					i(199851, {	-- Double Imbu Knot
+						["spellID"] = 388255,	-- Double Imbu Knot
+						["questID"] = 70803,	-- Triggered after crafting 'Double Imbu Knot'
+						["cost"] = {
+							{ "i", 200082, 6 },	-- 6x Battered Imbu-made Net
+							{ "i", 200085, 1 },	-- 1x Khaz'gorite Wire
+						},
+					}),
+					i(199848, {	-- Draconium Net Weights
+						["spellID"] = 388252,	-- Draconium Net Weights
+						["questID"] = 70800,	-- Triggered after crafting 'Draconium Net Weights'
+						["cost"] = {
+							{ "i", 200080, 3 },	-- 3x Draconium Nugget
+						},
+					}),
+					i(199694, {	-- Flying Fish Bone Charm
+						["spellID"] = 387827,	-- Flying Fish Bone Charm
+						["questID"] = 67139,	-- Triggered after crafting 'Flying Fish Bone Charm'
+						["cost"] = {
+							{ "i", 200075, 1 },	-- 1x Flying Fish Bones
+						},
+					}),
+					i(199850, {	-- Imbu Knot
+						["spellID"] = 388254,	-- Imbu Knot
+						["questID"] = 70802,	-- Triggered after crafting 'Imbu Knot'
+						["cost"] = {
+							{ "i", 200082, 3 },	-- 3x Battered Imbu-made Net
+						},
+					}),
+					i(199698, {	-- Irontree Harpoon Handle
+						["spellID"] = 387836,	-- Irontree Harpoon Handle
+						["questID"] = 70794,	-- Triggered after crafting 'Irontree Harpoon Handle'
+						["cost"] = {
+							{ "i", 200083, 3 },	-- 3x Irontree Branch
+						},
+					}),
+					i(199695, {	-- Iskaaran Fishing Net
+						["spellID"] = 387828,	-- Iskaaran Fishing Net
+						["questID"] = 70793,	-- Triggered after crafting 'Iskaaran Fishing Net'
+						["cost"] = {
+							{ "i", 199925, 2 },	-- 2x Stone With Hole
+							{ "i", 199924, 3 },	-- 3x Strong Sea Kelp
+						},
+					}),
+					i(194510, {	-- Iskaaran Harpoon
+						["spellID"] = 387831,	-- Iskaaran Harpoon
+						["questID"] = 70792,	-- Triggered after crafting 'Iskaaran Harpoon'
+						["cost"] = {
+							{ "i", 200076, 1 },	-- 1x Harpoon Head
+							{ "i", 198070, 1 },	-- 1x Tattered Seavine
+							{ "i", 200077, 1 },	-- 1x Wooden Pole
+						},
+					}),
+					i(199696, {	-- Iskaaran Ice Axe
+						["spellID"] = 387832,	-- Iskaaran Ice Axe
+						["questID"] = 67141,	-- Triggered after crafting 'Iskaaran Ice Axe'
+						["cost"] = {
+							{ "i", 200078, 1 },	-- 1x Pickaxe Blade
+						},
+					}),
+					i(199845, {	-- Jagged Serevite Harpoon Head
+						["spellID"] = 388249,	-- Jagged Serevite Harpoon Head
+						["questID"] = 70797,	-- Triggered after crafting 'Jagged Serevite Harpoon Head'
+						["cost"] = {
+							{ "i", 200084, 6 },	-- 6x Salinated Serevite
+							{ "i", 200086, 1 },	-- 1x Khaz'gorite-infused Resin
+						},
+					}),
+					i(199697, {	-- Polished Basalt Bracelet
+						["spellID"] = 387833,	-- Polished Basalt Bracelet
+						["questID"] = 67140,	-- Triggered after crafting 'Polished Basalt Bracelet'
+						["cost"] = {
+							{ "i", 200079, 3 },	-- 3x Sea-Polished Basalt
+						},
+					}),
+					i(199641, {	-- Reinforced Irontree Harpoon Handle
+						["spellID"] = 387594,	-- Reinforced Irontree Harpoon Handle
+						["questID"] = 70795,	-- Triggered after crafting 'Reinforced Irontree Harpoon Handle'
+						["cost"] = {
+							{ "i", 200083, 6 },	-- 6x Irontree Branch
+							{ "i", 200086, 1 },	-- 1x Khaz'gorite-infused Resin
+						},
+					}),
+					i(199846, {	-- Seavine Harpoon Rope
+						["spellID"] = 388250,	-- Seavine Harpoon Rope
+						["questID"] = 70798,	-- Triggered after crafting 'Seavine Harpoon Rope'
+						["cost"] = {
+							{ "i", 200081, 3 },	-- 3x Strong Seavine
+						},
+					}),
+					i(199844, {	-- Serevite Harpoon Head
+						["spellID"] = 387375,	-- Serevite Harpoon Head
+						["questID"] = 70796,	-- Triggered after crafting 'Serevite Harpoon Head'
+						["cost"] = {
+							{ "i", 200084, 3 },	-- 3x Salinated Serevite
+						},
 					}),
 				},
 			})),
@@ -364,7 +365,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["cost"] = { { "i", 194701, 5 } },	-- 5x Ominous Conch
 				["isDaily"] = true,
 				["g"] = {
-					i(200086),	-- Khaz'gorite-Infused Resin
+					i(200086),	-- Khaz'gorite Infused Resin
 				},
 			},{
 				n(197411, {	-- Astray Splasher <Lunker>
@@ -394,7 +395,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 33.8, 64.4, THE_WAKING_SHORES },
 					["questID"] = 74078,
 					["g"] = {
-						i(200086),	-- Khaz'gorite-Infused Resin
+						i(200086),	-- Khaz'gorite Infused Resin
 						i(200218),	-- Charred Fishing Pole
 					},
 				}),
@@ -436,7 +437,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						{ "n", 197596 },	-- Deep Ice Fishing Hole
 					},
 				}),
-				i(200086, {	-- Khaz'gorite-Infused Resin
+				i(200086, {	-- Khaz'gorite Infused Resin
 					["description"] = "Obtained from Rares summoned by using Ominous Conch at Large Lunker Sightings.",
 					["providers"] = {
 						{ "n", 193706 },	-- Snufflegust
