@@ -2417,7 +2417,7 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_THREE, i(34200, {	-- Pattern: Quiver of a Thousand Feathers (RECIPE!)
 								["timeline"] = { ADDED_2_3_0, REMOVED_4_0_1 },
 							})),
-							i(22910),	-- Recipe: Elixir of Major Shadow Power
+							i(22910),	-- Recipe: Elixir of Major Shadow Power (RECIPE!)
 							i(31357, {	-- Recipe: Flask of Chromatic Resistance (RECIPE!)
 								["timeline"] = { "removed 5.0.4" },
 							}),
@@ -2653,7 +2653,7 @@ root(ROOTS.Zones, {
 							i(23598),	-- Plans: Enchanted Adamantite Boots (RECIPE!)
 							i(23599),	-- Plans: Enchanted Adamantite Breastplate (RECIPE!)
 							i(23600),	-- Plans: Enchanted Adamantite Leggings (RECIPE!)
-							i(22908),	-- Recipe: Elixir of Major Firepower
+							i(22908),	-- Recipe: Elixir of Major Firepower (RECIPE!)
 							i(29125),	-- Retainer's Blade
 							i(29131),	-- Retainer's Leggings
 							i(29132),	-- Scryer's Bloodgem

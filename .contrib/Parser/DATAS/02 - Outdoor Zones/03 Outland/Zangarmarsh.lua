@@ -1546,13 +1546,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 67.8, 48.0, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(22909, {	-- Recipe: Elixir of Major Defense
+							i(22909, {	-- Recipe: Elixir of Major Defense (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(22902, {	-- Recipe: Elixir of Major Frost Power
+							i(22902, {	-- Recipe: Elixir of Major Frost Power (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(22907, {	-- Recipe: Super Mana Potion
+							i(22907, {	-- Recipe: Super Mana Potion (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},
@@ -1650,7 +1650,7 @@ root(ROOTS.Zones, {
 							i(30156, {	-- Recipe: Clam Bar
 								["cost"] = { { "i", 24245, 1 }, },	-- 1x Glowcap
 							}),
-							i(22906, {	-- Recipe: Shrouding Potion
+							i(22906, {	-- Recipe: Shrouding Potion (RECIPE!)
 								["cost"] = { { "i", 24245, 30 }, },	-- 30x Glowcap
 							}),
 							i(27689, {	-- Recipe: Sporeling Snack
@@ -1696,10 +1696,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 32.4, 51.8, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(22902, {	-- Recipe: Elixir of Major Frost Power
+							i(22902, {	-- Recipe: Elixir of Major Frost Power (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(22901, {	-- Recipe: Sneaking Potion
+							i(22901, {	-- Recipe: Sneaking Potion (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},

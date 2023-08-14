@@ -1128,10 +1128,10 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 			i(22914),	-- Recipe: Destruction Potion
 			i(22926),	-- Recipe: Elixir of Empowerment (BoE version)
 			i(22919),	-- Recipe: Elixir of Major Mageblood
-			i(22904),	-- Recipe: Elixir of the Searching Eye
+			i(22904),	-- Recipe: Elixir of the Searching Eye (RECIPE!)
 			i(22913),	-- Recipe: Haste Potion (BoE version)
-			i(22912),	-- Recipe: Heroic Potion
-			i(22903),	-- Recipe: Insane Strength Potion
+			i(22912),	-- Recipe: Heroic Potion (RECIPE!)
+			i(22903),	-- Recipe: Insane Strength Potion (RECIPE!)
 		}),
 		prof(BLACKSMITHING, {
 			i(33186, {["timeline"]={"added 2.3.0"}}),	-- Plans: Adamantite Weapon Chain (RECIPE!)

@@ -1571,10 +1571,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 57.6, 53.4, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(22911, {	-- Recipe: Major Dreamless Sleep Potion
+							i(22911, {	-- Recipe: Major Dreamless Sleep Potion (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(22901, {	-- Recipe: Sneaking Potion
+							i(22901, {	-- Recipe: Sneaking Potion (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},

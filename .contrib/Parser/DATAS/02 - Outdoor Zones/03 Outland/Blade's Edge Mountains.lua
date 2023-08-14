@@ -1962,16 +1962,16 @@ root(ROOTS.Zones, {
 						["coord"] = { 51.0, 57.8, BLADES_EDGE_MOUNTAINS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(22900, {	-- Recipe: Elixir of Camouflage
+							i(22900, {	-- Recipe: Elixir of Camouflage (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(22909, {	-- Recipe: Elixir of Major Defense
+							i(22909, {	-- Recipe: Elixir of Major Defense (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(22911, {	-- Recipe: Major Dreamless Sleep Potion
+							i(22911, {	-- Recipe: Major Dreamless Sleep Potion (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(22907, {	-- Recipe: Super Mana Potion
+							i(22907, {	-- Recipe: Super Mana Potion (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},

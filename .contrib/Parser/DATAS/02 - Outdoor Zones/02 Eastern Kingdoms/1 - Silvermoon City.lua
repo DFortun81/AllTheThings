@@ -639,7 +639,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 67.0, 19.2, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(22900, {	-- Recipe: Elixir of Camouflage
+						i(22900, {	-- Recipe: Elixir of Camouflage (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(23574, {	-- Recipe: Transmute Primal Might

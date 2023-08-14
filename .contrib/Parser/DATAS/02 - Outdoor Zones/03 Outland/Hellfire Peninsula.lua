@@ -2938,7 +2938,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 53.8, 65.8, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(22900, {	-- Recipe: Elixir of Camouflage
+							i(22900, {	-- Recipe: Elixir of Camouflage (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},
@@ -2947,7 +2947,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 52.2, 36.4, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(22900, {	-- Recipe: Elixir of Camouflage
+							i(22900, {	-- Recipe: Elixir of Camouflage (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},
@@ -3204,7 +3204,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_2_3_0, REMOVED_4_0_1 },
 							})),
 							i(23619),	-- Plans: Felsteel Shield Spike (RECIPE!)
-							i(22905),	-- Recipe: Elixir of Major Agility
+							i(22905),	-- Recipe: Elixir of Major Agility (RECIPE!)
 							i(25870),	-- Recipe: Transmute Skyfire Diamond
 							i(29169),	-- Ring of Convalescence
 							i(25826),	-- Sage's Band
@@ -3301,7 +3301,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_2_3_0, REMOVED_4_0_1 },
 							})),
 							i(24002),	-- Plans: Felsteel Shield Spike (RECIPE!)
-							i(24001),	-- Recipe: Elixir of Major Agility
+							i(24001),	-- Recipe: Elixir of Major Agility (RECIPE!)
 							i(29232),	-- Recipe: Transmute Skyfire Diamond
 							applyclassicphase(TBC_PHASE_TWO, i(35339)),	-- Satin Hood
 							applyclassicphase(TBC_PHASE_TWO, i(35409)),	-- Savage Plate Helm

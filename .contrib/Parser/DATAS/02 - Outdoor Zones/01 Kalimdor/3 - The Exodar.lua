@@ -226,7 +226,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 28.1, 61.9, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(22900, {	-- Recipe: Elixir of Camouflage
+						i(22900, {	-- Recipe: Elixir of Camouflage (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(23574, {	-- Recipe: Transmute Primal Might
