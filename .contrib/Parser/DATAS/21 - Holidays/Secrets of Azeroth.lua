@@ -8,6 +8,7 @@ SECRETS_OF_AZEROTH_HEADER = createHeader({
 	eventID = EVENTS.SECRETS_OF_AZEROTH,
 	text = {
 		en = "Secrets of Azeroth",
+		ru = "Тайны Азерота",
 	},
 });
 root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {

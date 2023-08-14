@@ -8,6 +8,7 @@ KALIMDOR_CUP_HEADER = createHeader({
 	eventID = EVENTS.KALIMDOR_CUP,
 	text = {
 		en = "Kalimdor Cup",
+		ru = "Кубок Калимдора",
 	},
 });
 local RIDERS_OF_AZEROTH_BADGE = 2588;
