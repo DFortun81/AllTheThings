@@ -20368,11 +20368,21 @@ customWindowUpdates["list"] = function(self, force, got)
 			local cacheID;
 			local _, cacheKey = strsplit(":", dataType);
 			local cacheKeyID = cacheKey.."ID";
+			local imin, imax = 0, 999999
+			-- convert the list min/max into cache-based min/max for cache lists
+			if self.Limit ~= 1000 then
+				imax = self.Limit;
+				self.Limit = 999999
+			end
+			if min ~= 0 then
+				imin = min;
+				min = 0;
+			end
 			dataType = cacheKey;
 			for itemID,groups in pairs(app.SearchForFieldContainer(dataType) or app.SearchForFieldContainer(cacheKeyID)) do
 				for _,o in ipairs(groups) do
-					cacheID = o.modItemID or o[dataType] or o[cacheKeyID];
-					if not added[cacheID] then
+					cacheID = tonumber(o.modItemID or o[dataType] or o[cacheKeyID]);
+					if imin < cacheID and cacheID < imax and not added[cacheID] then
 						added[cacheID] = true;
 						-- app.PrintDebug("cachelist:",dataType,cacheID)
 						tinsert(CacheFields, cacheID);
@@ -20511,8 +20521,8 @@ customWindowUpdates["list"] = function(self, force, got)
 			StartCoroutine("AutoHarvestFirstPartitionCoroutine", self.AutoHarvestFirstPartitionCoroutine);
 		end
 		-- add a bunch of raw, delay-loaded objects in order into the window
-		local groupCount = math.ceil(self.Limit / self.PartitionSize) - 1;
-		local groupStart = math.ceil(min / self.PartitionSize) - 1;
+		local groupCount = math.floor(self.Limit / self.PartitionSize);
+		local groupStart = math.floor(min / self.PartitionSize);
 		local partition, partitionStart, partitionGroups;
 		local dlo = app.DelayLoadedObject;
 		for j=groupStart,groupCount,1 do
@@ -22782,6 +22792,9 @@ end
 SLASH_AllTheThingsHARVESTER1 = "/attharvest";
 SLASH_AllTheThingsHARVESTER2 = "/attharvester";
 SlashCmdList["AllTheThingsHARVESTER"] = function(cmd)
+	app.print("Force Debug Mode");
+	app.Settings:ForceRefreshFromToggle();
+	app.Settings:SetDebugMode(true);
 	app.SetCustomWindowParam("list", "reset", true);
 	app.SetCustomWindowParam("list", "type", "cache:item");
 	app.SetCustomWindowParam("list", "harvesting", true);
