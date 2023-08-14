@@ -26,31 +26,31 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					ach(9218),	-- Grand Theft, 1st Degree
 				}),
 				ach(9216, {	-- High-value Targets
-					crit(1, {	-- Elder Darkweaver Kath
+					crit(25843, {	-- Elder Darkweaver Kath
 						["cr"] = 85771,	-- Elder Darkweaver Kath
 					}),
-					crit(2, {	-- Goregore
+					crit(25844, {	-- Goregore
 						["cr"] = 84893,	-- Goregore
 					}),
-					crit(3, {	-- Ancient Inferno
+					crit(25845, {	-- Ancient Inferno
 						["cr"] = 84875,	-- Ancient Inferno
 					}),
-					crit(4, {	-- Panthora
+					crit(25846, {	-- Panthora
 						["cr"] = 83691,	-- Panthora
 					}),
-					crit(5, {	-- Mandragoraster
+					crit(25847, {	-- Mandragoraster
 						["cr"] = 83683,	-- Mandragoraster
 					}),
-					crit(6, {	-- Titarus
+					crit(25848, {	-- Titarus
 						["cr"] = 83713,	-- Titarus
 					}),
-					crit(7, {	-- Brickhouse
+					crit(25849, {	-- Brickhouse
 						["cr"] = 83819,	-- Brickhouse
 					}),
-					crit(8, {	-- Korthall Soulgorger
+					crit(25850, {	-- Korthall Soulgorger
 						["cr"] = 84110,	-- Korthall Soulgorger
 					}),
-					crit(9, {	-- Oraggro
+					crit(25851, {	-- Oraggro
 						["cr"] = 84904,	-- Oraggro
 					}),
 				}),
@@ -64,71 +64,71 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				ach(9256, {	-- Rescue Operation (A)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						crit(1, {	-- Commander Jobby Shortsight
+						crit(25410, {	-- Commander Jobby Shortsight
 							["cr"] = 85670,	-- Commander Jobby Shortsight
 						}),
-						crit(2, {	-- Marshal Andrea DeSousa
-							["cr"] = 85669,	-- Marshal Andrea DeSousa
-						}),
-						crit(3, {	-- Field Marshal Kerwin
+						crit(25416, {	-- Field Marshal Kerwin
 							["cr"] = 85668,	-- Field Marshal Kerwin
+						}),
+						crit(25417, {	-- Marshal Andrea DeSousa
+							["cr"] = 85669,	-- Marshal Andrea DeSousa
 						}),
 					},
 				}),
 				ach(9257, {	-- Rescue Operation (H)
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						crit(1, {	-- Warlord Jugan
-							["cr"] = 85672,	-- Warlord Jugan
-						}),
-						crit(2, {	-- General Lizzie Heartbane
+						crit(25448, {	-- General Lizzie Heartbane
 							["cr"] = 85673,	-- General Lizzie Heartbane
 						}),
-						crit(3, {	-- Marshal Lyrdrea Daybreaker
+						crit(25449, {	-- Marshal Lyrdrea Daybreaker
 							["cr"] = 85671,	-- Marshal Lyrdrea Daybreaker
+						}),
+						crit(25447, {	-- Warlord Jugan
+							["cr"] = 85672,	-- Warlord Jugan
 						}),
 					},
 				}),
 				ach(9225, {	-- Take Them Out (A)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						crit(1,  {	-- Captain Hoodrych
+						crit(26303,  {	-- Captain Hoodrych
 							["cr"] = 79900,	-- Captain Hoodrych
 						}),
-						crit(2,  {	-- Elementalist Novo
+						crit(26304,  {	-- Elementalist Novo
 							["cr"] = 80491,	-- Elementalist Novo
 						}),
-						crit(3,  {	-- Elliott Van Rook
+						crit(25350,  {	-- Elliott Van Rook
 							["cr"] = 80493,	-- Elliott Van Rook
 						}),
-						crit(4,  {	-- Jared V. Hellstrike
+						crit(26305,  {	-- Jared V. Hellstrike
 							["cr"] = 85131,	-- Jared V. Hellstrike
 						}),
-						crit(5,  {	-- Kaz Endsky
+						crit(26306,  {	-- Kaz Endsky
 							["cr"] = 87690,	-- Kaz Endsky
 						}),
-						crit(6,  {	-- Lord Mes
+						crit(26307,  {	-- Lord Mes
 							["cr"] = 80497,	-- Lord Mes
 						}),
-						crit(7,  {	-- Mindbender Talbadar
+						crit(26308,  {	-- Mindbender Talbadar
 							["cr"] = 80490,	-- Mindbender Talbadar
 						}),
-						crit(8,  {	-- Mor'riz
+						crit(26309,  {	-- Mor'riz, The Ultimate Troll
 							["cr"] = 85133,	-- Mor'riz
 						}),
-						crit(9,  {	-- Necrolord Azael
+						crit(26310,  {	-- Necrolord Azael
 							["cr"] = 80486,	-- Necrolord Azael
 						}),
-						crit(10, {	-- Soulbrewer Nadagast
+						crit(26311, {	-- Soulbrewer Nadagast
 							["cr"] = 80489,	-- Soulbrewer Nadagast
 						}),
-						crit(11, {	-- Razor Guerra
+						crit(26312, {	-- Razor Guerra
 							["cr"] = 85138,	-- Razor Guerra
 						}),
-						crit(12, {	-- Rifthunter Yoske
+						crit(26313, {	-- Rifthunter Yoske
 							["cr"] = 80496,	-- Rifthunter Yoske
 						}),
-						crit(13, {	-- Vanguard Samuelle
+						crit(26314, {	-- Vanguard Samuelle
 							["cr"] = 80492,	-- Vanguard Samuelle
 						}),
 					},
@@ -136,40 +136,44 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				ach(9224, {	-- Take Them Out (H)
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						crit(1,  {	-- Alune Windmane
+						crit(26289,  {	-- Alune Windmane
 							["cr"] = 80488,	-- Alune Windmane
 						}),
-						crit(2,  {	-- Anne Otther
+						crit(26290,  {	-- Anne Otther
 							["cr"] = 85140,	-- Anne Otther
 						}),
-						crit(3,  {	-- Avenger Turley
+						crit(26291,  {	-- Avenger Turley
 							["cr"] = 80499,	-- Avenger Turley
 						}),
-						crit(4,  {	-- Chani Malflame
+						crit(26293,  {	-- Chani Malflame
 							["cr"] = 85129,	-- Chani Malflame
 						}),
-						crit(5,  {	-- Hildie Hackerguard
+						crit(26294,  {	-- Hildie Hackerguard
 							["cr"] = 80495,	-- Hildie Hackerguard
 						}),
-						crit(6,  {	-- Jackson Bajheera
+						crit(26295,  {	-- Jackson Bajheera
 							["cr"] = 80484,	-- Jackson Bajheera
 						}),
-						crit(7,  {	-- John Swifty
+						-- #if BEFORE 8.0.1
+						-- This doesn't appear be in the game anymore?
+						-- BFA Hotfix (2020-06-22): Removed John Swifty. Ahhhhh.
+						crit(26296,  {	-- John Swifty
 							["cr"] = 79902,	-- John Swifty
 						}),
-						crit(8,  {	-- Malda Brewbelly
+						-- #endif
+						crit(26297,  {	-- Malda Brewbelly
 							["cr"] = 85122,	-- Malda Brewbelly
 						}),
-						crit(9,  {	-- Mathias Zunn
+						crit(26298,  {	-- Mathias Zunn
 							["cr"] = 85137,	-- Mathias Zunn
 						}),
-						crit(10, {	-- Shani Freezewind
+						crit(26299, {	-- Shani Freezewind
 							["cr"] = 80485,	-- Shani Freezewind
 						}),
-						crit(11, {	-- Taylor Dewland
+						crit(26300, {	-- Taylor Dewland
 							["cr"] = 80500,	-- Taylor Dewland
 						}),
-						crit(12, {	-- Tosan Galaxyfist
+						crit(26301, {	-- Tosan Galaxyfist
 							["cr"] = 80494,	-- Tosan Galaxyfist
 						}),
 					},
@@ -181,10 +185,10 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = HORDE_ONLY,
 				}),
 				ach(9105, {	-- Tour of Duty
-					crit(1),	-- Molten Quarry
-					crit(2),	-- Brute's Rise
-					crit(3),	-- Ashmaul Burial Grounds
-					crit(4),	-- Amphitheater of Annihilation
+					crit(25215),	-- Brute's Rise
+					crit(25789),	-- Molten Quarry
+					crit(25790),	-- Ashmaul Burial Grounds
+					crit(25791),	-- Amphitheater of Annihilation
 				}),
 			}),
 			n(FACTIONS, {
