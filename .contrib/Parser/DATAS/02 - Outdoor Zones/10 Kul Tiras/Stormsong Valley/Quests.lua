@@ -1647,26 +1647,3 @@ root(ROOTS.HiddenQuestTriggers, m(KUL_TIRAS, {
 		}),
 	}),
 }));
-
-root(ROOTS.NeverImplemented, {
-	tier(BFA_TIER, {
-		n(ARMOR, {
-			filter(CLOTH, {
-				i(160372),	-- Tidespeaker Cinch
-			}),
-			filter(LEATHER, {
-				i(158694),	-- Darkwater Grips
-				i(158706),	-- Darkwater Trousers
-				i(160375),	-- Darkwater Waistwrap
-				i(160388),	-- Darkwater Bands
-			}),
-			filter(MAIL, {
-				i(158697),	-- Stormchaser Grips
-				i(160391),	-- Stormchaser Coils
-			}),
-			filter(PLATE, {
-				i(160381),	-- Dread Corsair Clasp
-			}),
-		}),
-	}),
-});

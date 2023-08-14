@@ -1538,33 +1538,3 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 		}),
 	}),
 })));
-
-root(ROOTS.NeverImplemented, {
-	tier(BFA_TIER, {
-		n(ARMOR, {
-			filter(CLOTH, {
-				i(158603),	-- Wickerwoven Handwraps
-				i(160197),	-- Wickerwoven Pantaloons
-			}),
-			filter(LEATHER, {
-				i(158589),	-- Banisher Striders
-				i(158604),	-- Banisher Mitts
-				i(158620),	-- Banisher Waistwrap
-				i(158632),	-- Banisher Bindings
-				i(160198),	-- Banisher Britches
-				i(155473),	-- Banisher Cinch
-			}),
-			filter(MAIL, {
-				i(158605),	-- Crone-Seeker's Grips
-				i(160199),	-- Crone-Seeker's Leggings
-			}),
-			filter(PLATE, {
-				i(158606),	-- Waycrest Militia Gloves
-				i(160200),	-- Waycrest Militia Pants
-			}),
-		}),
-		n(WEAPONS, {
-			i(161296),	-- Autumnvale Hunting Rifle
-		}),
-	}),
-});

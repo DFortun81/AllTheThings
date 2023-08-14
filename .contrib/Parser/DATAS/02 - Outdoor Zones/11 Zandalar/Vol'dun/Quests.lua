@@ -1580,19 +1580,3 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 root(ROOTS.HiddenQuestTriggers, {
 	q(54525),	-- looting Loose Parts from the bridge elites during the Vol'dun incursion, as Horde (the associated WQ wasn't up, not sure if that makes a difference)
 });
-
-root(ROOTS.NeverImplemented, {
-	tier(BFA_TIER, {
-		n(ARMOR, {
-			filter(LEATHER, {
-				i(161277),	-- Scorching Sands Britches
-				i(161281),	-- Scorching Sands Treads
-				i(161302),	-- Scorching Sands Mace
-				i(161303),	-- Scorching Sands Bludgeon
-			}),
-			filter(PLATE, {
-				i(161279),	-- Exiled Veteran's Greaves
-			}),
-		}),
-	}),
-});

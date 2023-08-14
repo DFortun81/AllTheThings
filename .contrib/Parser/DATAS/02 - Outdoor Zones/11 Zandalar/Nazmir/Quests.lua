@@ -1421,31 +1421,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	}),
 })));
 
-root(ROOTS.NeverImplemented, {
-	tier(BFA_TIER, {
-		n(ARMOR, {
-			filter(CLOTH, {
-				i(159019),	-- Loa Speaker's Handguards
-				i(159058),	-- Loa Speaker's Britches
-			}),
-			filter(LEATHER, {
-				i(159017),	-- Ritual Flayer's Handwraps
-				i(159060),	-- Ritual Flayer's Leggings
-			}),
-			filter(MAIL, {
-				i(159020),	-- Death-Pledged Handguards
-				i(155317),	-- Death-Pledged Sabatons
-			}),
-			filter(PLATE, {
-				i(159018),	-- Nazmani Warplate Crushers
-				i(159057),	-- Nazmani Warplate Pants
-				i(159066),	-- Nazmani Warplate Belt
-				i(159071),	-- Nazmani Warplate Armsplints
-			}),
-		}),
-	}),
-});
-
 root(ROOTS.HiddenQuestTriggers, {
 	q(54773),	-- Warmode version of March on the Marsh
 });
