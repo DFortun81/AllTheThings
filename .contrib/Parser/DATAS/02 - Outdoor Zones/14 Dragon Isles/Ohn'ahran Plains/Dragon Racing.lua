@@ -245,7 +245,114 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 				}),
 				n(QUESTS, {
-					-- TODO
+					dragonridingrace(75799, {	-- Emerald Garden Ascent - Challenge
+						["provider"] = { "n", 191247 },	-- Bronze Timekeeper
+						["coord"] = { 25.7, 55.1, OHNAHRAN_PLAINS },
+						["g"] = {
+							ach(17935),	-- Emerald Garden Ascent Challenge: Bronze
+							ach(17936),	-- Emerald Garden Ascent Challenge: Silver
+							ach(17937),	-- Emerald Garden Ascent Challenge: Gold
+						},
+					}),
+					dragonridingrace(75800, {	-- Emerald Garden Ascent - Reverse Challenge
+						["provider"] = { "n", 191247 },	-- Bronze Timekeeper
+						["coord"] = { 25.7, 55.1, OHNAHRAN_PLAINS },
+						["g"] = {
+							ach(17938),	-- Emerald Garden Ascent Reverse Challenge: Bronze
+							ach(17939),	-- Emerald Garden Ascent Reverse Challenge: Silver
+							ach(17940),	-- Emerald Garden Ascent Reverse Challenge: Gold
+						},
+					}),
+					dragonridingrace(75795, {	-- Fen Flythrough - Challenge
+						["provider"] = { "n", 191121 },	-- Bronze Timekeeper
+						["coord"] = { 86.3, 35.8, OHNAHRAN_PLAINS },
+						["g"] = {
+							ach(17922),	-- Fen Flythrough Challenge: Bronze
+							ach(17923),	-- Fen Flythrough Challenge: Silver
+							ach(17924),	-- Fen Flythrough Challenge: Gold
+						},
+					}),
+					dragonridingrace(75796, {	-- Fen Flythrough - Reverse Challenge
+						["provider"] = { "n", 191121 },	-- Bronze Timekeeper
+						["coord"] = { 86.3, 35.8, OHNAHRAN_PLAINS },
+						["g"] = {
+							ach(17925),	-- Fen Flythrough Reverse Challenge: Bronze
+							ach(17926),	-- Fen Flythrough Reverse Challenge: Silver
+							ach(17927),	-- Fen Flythrough Reverse Challenge: Gold
+						},
+					}),
+					dragonridingrace(75801, {	-- Maruukai Dash - Challenge
+						["provider"] = { "n", 191422 },	-- Bronze Timekeeper
+						["coord"] = { 59.9, 35.6, OHNAHRAN_PLAINS },
+						["g"] = {
+							ach(17947),	-- Maruukai Dash Challenge: Bronze
+							ach(17948),	-- Maruukai Dash Challenge: Silver
+							ach(17949),	-- Maruukai Dash Challenge: Gold
+						},
+					}),
+					dragonridingrace(75802, {	-- Mirror of the Sky Dash - Challenge
+						["provider"] = { "n", 191422 },	-- Bronze Timekeeper
+						["coord"] = { 59.9, 35.6, OHNAHRAN_PLAINS },
+						["g"] = {
+							ach(17950),	-- Mirror of the Sky Dash Challenge: Bronze
+							ach(17951),	-- Mirror of the Sky Dash Challenge: Silver
+							ach(17952),	-- Mirror of the Sky Dash Challenge: Gold
+						},
+					}),
+					dragonridingrace(75797, {	-- Ravine River Run - Challenge
+						["provider"] = { "n", 191165 },	-- Bronze Timekeeper
+						["coord"] = { 80.9, 72.2, OHNAHRAN_PLAINS },
+						["g"] = {
+							ach(17928),	-- Ravine River Run Challenge: Bronze
+							ach(17929),	-- Ravine River Run Challenge: Silver
+							ach(17930),	-- Ravine River Run Challenge: Gold
+						},
+					}),
+					dragonridingrace(75798, {	-- Ravine River Run - Reverse Challenge
+						["provider"] = { "n", 191165 },	-- Bronze Timekeeper
+						["coord"] = { 80.9, 72.2, OHNAHRAN_PLAINS },
+						["g"] = {
+							ach(17931),	-- Ravine River Run Reverse Challenge: Bronze
+							ach(17932),	-- Ravine River Run Reverse Challenge: Silver
+							ach(17933),	-- Ravine River Run Reverse Challenge: Gold
+						},
+					}),
+					dragonridingrace(75803, {	-- River Rapids Route - Challenge
+						["provider"] = { "n", 196092 },	-- Bronze Timekeeper
+						["coord"] = { 43.8, 66.8, OHNAHRAN_PLAINS },
+						["g"] = {
+							ach(17941),	-- River Rapids Route Challenge: Bronze
+							ach(17942),	-- River Rapids Route Challenge: Silver
+							ach(17943),	-- River Rapids Route Challenge: Gold
+						},
+					}),
+					dragonridingrace(75798, {	-- River Rapids Route - Reverse Challenge
+						["provider"] = { "n", 196092 },	-- Bronze Timekeeper
+						["coord"] = { 43.8, 66.8, OHNAHRAN_PLAINS },
+						["g"] = {
+							ach(17944),	-- River Rapids Route Reverse Challenge: Bronze
+							ach(17945),	-- River Rapids Route Reverse Challenge: Silver
+							ach(17946),	-- River Rapids Route Reverse Challenge: Gold
+						},
+					}),
+					dragonridingrace(75793, {	-- Sundapple Copse - Circuit Challenge
+						["provider"] = { "n", 190928 },	-- Bronze Timekeeper
+						["coord"] = { 63.7, 30.5, OHNAHRAN_PLAINS },
+						["g"] = {
+							ach(17912),	-- Sundapple Copse Circuit Challenge: Bronze
+							ach(17913),	-- Sundapple Copse Circuit Challenge: Silver
+							ach(17914),	-- Sundapple Copse Circuit Challenge: Gold
+						},
+					}),
+					dragonridingrace(75794, {	-- Sundapple Copse - Circuit Reverse Challenge
+						["provider"] = { "n", 190928 },	-- Bronze Timekeeper
+						["coord"] = { 63.7, 30.5, OHNAHRAN_PLAINS },
+						["g"] = {
+							ach(17919),	-- Sundapple Copse Circuit Reverse Challenge: Bronze
+							ach(17920),	-- Sundapple Copse Circuit Reverse Challenge: Silver
+							ach(17921),	-- Sundapple Copse Circuit Reverse Challenge: Gold
+						},
+					}),
 				}),
 			})),
 			header(HEADERS.Achievement, 17332, bubbleDownSelf({ ["timeline"] = ADDED_10_0_5 }, {	-- Reverse Racer: Gold
