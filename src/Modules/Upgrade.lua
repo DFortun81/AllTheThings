@@ -216,7 +216,7 @@ api.NextUpgrade = function(t)
 	-- cached tracking of upgrade group
 	local cache = t._up;
 	if cache then
-		-- app.PrintDebug("hasUpgrade:cache",t.modItemID,cache.hash,cache.modItemID)
+		-- app.PrintDebug("NU:cache",t.modItemID,cache.hash,cache.modItemID)
 		return cache;
 	end
 
@@ -225,7 +225,7 @@ api.NextUpgrade = function(t)
 	local upbonusID = floor((up - upmodID) * 10000 + 0.5);
 	up = GetUpgrade(t, upmodID, upbonusID);
 	if not up then
-		-- app.PrintDebug("no upgrade created",t.modItemID,"=>",upmodID,upbonusID)
+		-- app.PrintDebug("NU:no upgrade created",t.modItemID,"=>",upmodID,upbonusID)
 		-- t.isUpgraded = true;
 		return;
 	end
@@ -233,13 +233,13 @@ api.NextUpgrade = function(t)
 	-- upgrade has to actually be different than the source item
 	local searchHash = up.hash;
 	if searchHash and searchHash == t.hash then
-		-- app.PrintDebug("upgrade is same",searchHash,up.modItemID)
+		-- app.PrintDebug("NU:upgrade is same",searchHash,up.modItemID)
 		-- t.isUpgraded = true;
 		return;
 	end
 
 	t._up = up;
-	-- app.PrintDebug("hasUpgrade",not up.collected,t.modItemID,up.modItemID)
+	-- app.PrintDebug("NU:",not up.collected,t.modItemID,up.modItemID)
 	return up;
 end
 
@@ -257,7 +257,7 @@ api.HasUpgrade = function(t)
 	-- cached tracking of upgrade group
 	local cache = t._up;
 	if cache then
-		-- app.PrintDebug("hasUpgrade:cache",t.modItemID,cache.hash,cache.modItemID)
+		-- app.PrintDebug("HU:cache",t.modItemID,cache.hash,cache.modItemID)
 		return cache;
 	end
 
@@ -266,13 +266,13 @@ api.HasUpgrade = function(t)
 	local upbonusID = floor((up - upmodID) * 10000 + 0.5);
 	up = GetUpgrade(t, upmodID, upbonusID);
 	if not up then
-		-- app.PrintDebug("no upgrade created",t.modItemID,"=>",upmodID,upbonusID)
+		-- app.PrintDebug("HU:no upgrade created",t.modItemID,"=>",upmodID,upbonusID)
 		-- t.isUpgraded = true;
 		return;
 	end
 
 	t._up = up;
-	-- app.PrintDebug("hasUpgrade",not up.collected,t.modItemID,up.modItemID)
+	-- app.PrintDebug("HU:",not up.collected,t.modItemID,up.modItemID)
 	return up;
 end
 
