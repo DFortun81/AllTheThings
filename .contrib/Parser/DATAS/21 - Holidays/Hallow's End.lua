@@ -1815,6 +1815,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 			]]--
 		}),
+		ach(18360, {	-- Tricks and Treats of the Dragon Isles
+			["timeline"] = { "added 10.1.5.50379" },
+			["sym"] = {{ "achievement_criteria" }},
+		}),
 	}),
 	-- #endif
 	n(23682, {	-- Headless Horseman
@@ -3581,6 +3585,144 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				q(12940, {	-- Candy Bucket — Zul'Drak, Zim'Torga, Neutral
 					["coord"] = { 59.3, 57.2, ZULDRAK },
 					["timeline"] = { "added 3.0.1" },
+				}),
+				
+				-- Dragonflight
+				q(75684, {	-- Candy Bucket - Ohn'ahran Plains, Broadhoof Outpost
+					--["coord"] = { , OHNAHRAN_PLAINS },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75693, {	-- Candy Bucket - Ohn'ahran Plains, Emberwatch
+					--["coord"] = { , OHNAHRAN_PLAINS },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75692, {	-- Candy Bucket - Ohn'ahran Plains, Forkriver Crossing
+					--["coord"] = { , OHNAHRAN_PLAINS },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75685, {	-- Candy Bucket - Ohn'ahran Plains, Maruukai
+					--["coord"] = { , OHNAHRAN_PLAINS },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75687, {	-- Candy Bucket - Ohn'ahran Plains, Ohn'iri Springs
+					--["coord"] = { , OHNAHRAN_PLAINS },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75688, {	-- Candy Bucket - Ohn'ahran Plains, Pinewood Post
+					--["coord"] = { , OHNAHRAN_PLAINS },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75689, {	-- Candy Bucket - Ohn'ahran Plains, Rusza'thar Reach
+					--["coord"] = { , OHNAHRAN_PLAINS },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75686, {	-- Candy Bucket - Ohn'ahran Plains, Shady Sanctuary
+					--["coord"] = { , OHNAHRAN_PLAINS },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75691, {	-- Candy Bucket - Ohn'ahran Plains, Teerakai
+					--["coord"] = { , OHNAHRAN_PLAINS },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75690, {	-- Candy Bucket - Ohn'ahran Plains, Timberstep Outpost
+					--["coord"] = { , OHNAHRAN_PLAINS },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75698, {	-- Candy Bucket - Thaldraszus, Algeth'era Court
+					--["coord"] = { , THALDRASZUS },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75696, {	-- Candy Bucket - Thaldraszus, Garden Shrine
+					--["coord"] = { , THALDRASZUS },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75697, {	-- Candy Bucket - Thaldraszus, Gelikyr Post
+					--["coord"] = { , THALDRASZUS },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75695, {	-- Candy Bucket - Thaldraszus, Temporal Conflux
+					--["coord"] = { , THALDRASZUS },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75700, {	-- Candy Bucket - Thaldraszus, Valdrakken (The Parting Glass)
+					--["coord"] = { , THALDRASZUS },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75699, {	-- Candy Bucket - Thaldraszus, Valdrakken (The Roasted Ram)
+					--["coord"] = { , THALDRASZUS },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75701, {	-- Candy Bucket - Thaldraszus, Valdrakken (Weyrnrest)
+					--["coord"] = { , THALDRASZUS },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75667, {	-- Candy Bucket - The Azure Span, Camp Antonidas
+					--["coord"] = { , THE_AZURE_SPAN },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75668, {	-- Candy Bucket - The Azure Span, Camp Nowhere
+					--["coord"] = { , THE_AZURE_SPAN },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75669, {	-- Candy Bucket - The Azure Span, Iskaara
+					--["coord"] = { , THE_AZURE_SPAN },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75670, {	-- Candy Bucket - The Azure Span, Theron's Watch
+					--["coord"] = { , THE_AZURE_SPAN },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75671, {	-- Candy Bucket - The Azure Span, Three-Falls Lookout
+					--["coord"] = { , THE_AZURE_SPAN },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75702, {	-- Candy Bucket - The Forbidden Reach, Morqut Village
+					--["coord"] = { , THE_FORBIDDEN_REACH },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75672, {	-- Candy Bucket - The Waking Shores, Apex Observatory
+					--["coord"] = { , THE_WAKING_SHORES },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75673, {	-- Candy Bucket - The Waking Shores, Dragonscale Basecamp
+					--["coord"] = { , THE_WAKING_SHORES },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75675, {	-- Candy Bucket - The Waking Shores, Life Vault Ruins
+					--["coord"] = { , THE_WAKING_SHORES },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75676, {	-- Candy Bucket - The Waking Shores, Obsidian Throne
+					--["coord"] = { , THE_WAKING_SHORES },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75674, {	-- Candy Bucket - The Waking Shores, Ruby Lifeshrine
+					--["coord"] = { , THE_WAKING_SHORES },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75677, {	-- Candy Bucket - The Waking Shores, Skytop Observatory
+					--["coord"] = { , THE_WAKING_SHORES },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75678, {	-- Candy Bucket - The Waking Shores, Uktulut Backwater
+					--["coord"] = { , THE_WAKING_SHORES },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75679, {	-- Candy Bucket - The Waking Shores, Uktulut Pier
+					--["coord"] = { , THE_WAKING_SHORES },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75683, {	-- Candy Bucket - The Waking Shores, Wingrest Embassy
+					--["coord"] = { , THE_WAKING_SHORES },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75704, {	-- Candy Bucket - Zaralek Cavern, Loamm
+					--["coord"] = { , ZARALEK_CAVERN },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75703, {	-- Candy Bucket - Zaralek Cavern, Obsidian Rest
+					--["coord"] = { , ZARALEK_CAVERN },
+					["timeline"] = { "added 10.1.5.50379" },
 				}),
 			}),
 		}),
