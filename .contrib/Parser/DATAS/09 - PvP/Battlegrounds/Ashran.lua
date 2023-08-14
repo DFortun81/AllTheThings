@@ -13,9 +13,55 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				ach(9102),	-- Ashran Victory
 				ach(9104, {	-- Bounty Hunter (A)
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						crit(25209, {	-- Blood Elf Ear
+							["provider"] = { "i", 112128 },	-- Blood Elf Ear
+						}),
+						crit(25204, {	-- Forsaken Brains
+							["provider"] = { "i", 112015 },	-- Forsaken Brains
+						}),
+						crit(25208, {	-- Goblin Nose
+							["provider"] = { "i", 112125 },	-- Goblin Nose
+						}),
+						crit(25206, {	-- Orc Tooth
+							["provider"] = { "i", 112122 },	-- Orc Tooth
+						}),
+						crit(25202, {	-- Pandaren Hide
+							["provider"] = { "i", 112113 },	-- Pandaren Hide
+						}),
+						crit(25207, {	-- Tauren Hoof
+							["provider"] = { "i", 112123 },	-- Tauren Hoof
+						}),
+						crit(25205, {	-- Troll Feet
+							["provider"] = { "i", 112120 },	-- Troll Feet
+						}),
+					},
 				}),
 				ach(9103, {	-- Bounty Hunter (H)
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(25203, {	-- Draenei Tail
+							["provider"] = { "i", 112121 },	-- Draenei Tail
+						}),
+						crit(25199, {	-- Dwarf Spine
+							["provider"] = { "i", 112126 },	-- Dwarf Spine
+						}),
+						crit(25197, {	-- Human Bone Chip
+							["provider"] = { "i", 112131 },	-- Human Bone Chip
+						}),
+						crit(25202, {	-- Pandaren Hide
+							["provider"] = { "i", 112113 },	-- Pandaren Hide
+						}),
+						crit(25200, {	-- Severed Night Elf Head
+							["provider"] = { "i", 112124 },	-- Severed Night Elf Head
+						}),
+						crit(25198, {	-- Tuft of Gnome Hair
+							["provider"] = { "i", 112127 },	-- Tuft of Gnome Hair
+						}),
+						crit(25201, {	-- Worgen Snout
+							["provider"] = { "i", 112119 },	-- Worgen Snout
+						}),
+					},
 				}),
 				ach(9222),	-- Divide and Conquer
 				ach(9228, {	-- Down Goes Van Rook (A)
@@ -580,15 +626,11 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["coord"] = { 45, 28.7, 1478 },
 					["races"] = HORDE_ONLY,
 				}),
-				i(112128, {	-- Blood Elf Ear
-					["repeatable"] = true,
-					["questID"] = 35937,	-- Blood Elf Ear
+				q(35937, {	-- Blood Elf Ear
+					["provider"] = { "i", 112128 },	-- Blood Elf Ear
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["g"] = {
-						crit(2, {	-- Blood Elf Ear
-							["achievementID"] = 9104,	-- Bounty Hunter
-							["races"] = ALLIANCE_ONLY,
-						}),
 						i(170073),	-- Dented Ashmaul Strongbox
 						i(128216, {	-- Dented Ashmaul Strongbox
 							["races"] = ALLIANCE_ONLY,
@@ -597,15 +639,11 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						}),
 					},
 				}),
-				i(112121, {	-- Draenei Tail
-					["repeatable"] = true,
-					["questID"] = 36041,	-- Draenei Tail
+				q(36041, {	-- Draenei Tail
+					["provider"] = { "i", 112121 },	-- Draenei Tail
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["g"] = {
-						crit(7, {	-- Draenei Tail
-							["achievementID"] = 9103,	-- Bounty Hunter
-							["races"] = HORDE_ONLY,
-						}),
 						i(128215, {	-- Dented Ashmaul Strongbox
 							["races"] = HORDE_ONLY,
 							["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
@@ -613,15 +651,11 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						}),
 					},
 				}),
-				i(112126, {	-- Dwarf Spine
-					["repeatable"] = true,
-					["questID"] = 36034,	-- Dwarf Spine
+				q(36034, {	-- Dwarf Spine
+					["provider"] = { "i", 112126 },	-- Dwarf Spine
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["g"] = {
-						crit(4, {	-- Dwarf Spine
-							["achievementID"] = 9103,	-- Bounty Hunter
-							["races"] = HORDE_ONLY,
-						}),
 						i(128215, {	-- Dented Ashmaul Strongbox
 							["races"] = HORDE_ONLY,
 							["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
@@ -629,15 +663,11 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						}),
 					},
 				}),
-				i(112015, {	-- Forsaken Brains
-					["repeatable"] = true,
-					["questID"] = 35927,	-- Forsaken Brains
+				q(35927, {	-- Forsaken Brains
+					["provider"] = { "i", 112015 },	-- Forsaken Brains
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["g"] = {
-						crit(6, {	-- Forsaken Brains
-							["achievementID"] = 9104,	-- Bounty Hunter
-							["races"] = ALLIANCE_ONLY,
-						}),
 						i(170073),	-- Dented Ashmaul Strongbox
 						i(128216, {	-- Dented Ashmaul Strongbox
 							["races"] = ALLIANCE_ONLY,
@@ -646,15 +676,11 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						}),
 					},
 				}),
-				i(112125, {	-- Goblin Nose
-					["repeatable"] = true,
-					["questID"] = 35938,	-- Goblin Nose
+				q(35938, {	-- Goblin Nose
+					["provider"] = { "i", 112125 },	-- Goblin Nose
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["g"] = {
-						crit(7, {	-- Goblin Nose
-							["achievementID"] = 9104,	-- Bounty Hunter
-							["races"] = ALLIANCE_ONLY,
-						}),
 						i(170073),	-- Dented Ashmaul Strongbox
 						i(128216, {	-- Dented Ashmaul Strongbox
 							["races"] = ALLIANCE_ONLY,
@@ -663,15 +689,11 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						}),
 					},
 				}),
-				i(112131, {	-- Human Bone Chip
-					["repeatable"] = true,
-					["questID"] = 36042,	-- Human Bone Chip
+				q(36042, {	-- Human Bone Chip
+					["provider"] = { "i", 112131 },	-- Human Bone Chip
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["g"] = {
-						crit(6, {	-- Human Bone Chip
-							["achievementID"] = 9103,	-- Bounty Hunter
-							["races"] = HORDE_ONLY,
-						}),
 						i(128215, {	-- Dented Ashmaul Strongbox
 							["races"] = HORDE_ONLY,
 							["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
@@ -679,16 +701,11 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						}),
 					},
 				}),
-				i(184042),	-- Nightborne Liver
-				i(112122, {	-- Orc Tooth
-					["repeatable"] = true,
-					["questID"] = 35940,	-- Orc Tooth
+				q(35940, {	-- Orc Tooth
+					["provider"] = { "i", 112122 },	-- Orc Tooth
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["g"] = {
-						crit(4, {	-- Orc Tooth
-							["achievementID"] = 9104,	-- Bounty Hunter
-							["races"] = ALLIANCE_ONLY,
-						}),
 						i(170073),	-- Dented Ashmaul Strongbox
 						i(128216, {	-- Dented Ashmaul Strongbox
 							["races"] = ALLIANCE_ONLY,
@@ -702,10 +719,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["g"] = {
-						crit(1, {	-- Pandaren Hide (A)
-							["achievementID"] = 9104,	-- Bounty Hunter (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
 						i(170073),	-- Dented Ashmaul Strongbox
 						i(128216, {	-- Dented Ashmaul Strongbox
 							["races"] = ALLIANCE_ONLY,
@@ -719,10 +732,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["g"] = {
-						crit(1, {	-- Pandaren Hide (H)
-							["achievementID"] = 9103,	-- Bounty Hunter (H)
-							["races"] = HORDE_ONLY,
-						}),
 						i(170073),	-- Dented Ashmaul Strongbox
 						i(128215, {	-- Dented Ashmaul Strongbox
 							["races"] = HORDE_ONLY,
@@ -731,15 +740,11 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						}),
 					},
 				}),
-				i(112124, {	-- Severed Night Elf Head
-					["repeatable"] = true,
-					["questID"] = 36033,	-- Severed Night Elf Head
+				q(36033, {	-- Severed Night Elf Head
+					["provider"] = { "i", 112124 },	-- Severed Night Elf Head
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["g"] = {
-						crit(3, {	-- Severed Night Elf Head
-							["achievementID"] = 9103,	-- Bounty Hunter
-							["races"] = HORDE_ONLY,
-						}),
 						i(128215, {	-- Dented Ashmaul Strongbox
 							["races"] = HORDE_ONLY,
 							["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
@@ -747,15 +752,11 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						}),
 					},
 				}),
-				i(112123, {	-- Tauren Hoof
-					["repeatable"] = true,
-					["questID"] = 35939,	-- Tauren Hoof
+				q(35939, {	-- Tauren Hoof
+					["provider"] = { "i", 112123 },	-- Tauren Hoof
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["g"] = {
-						crit(3, {	-- Tauren Hoof
-							["achievementID"] = 9104,	-- Bounty Hunter
-							["races"] = ALLIANCE_ONLY,
-						}),
 						i(170073),	-- Dented Ashmaul Strongbox
 						i(128216, {	-- Dented Ashmaul Strongbox
 							["races"] = ALLIANCE_ONLY,
@@ -764,15 +765,11 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						}),
 					},
 				}),
-				i(112120, {	-- Troll Feet
-					["repeatable"] = true,
-					["questID"] = 35941,	-- Troll Feet
+				q(35941, {	-- Troll Feet
+					["provider"] = { "i", 112120 },	-- Troll Feet
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["g"] = {
-						crit(5, {	-- Troll Feet
-							["achievementID"] = 9104,	-- Bounty Hunter
-							["races"] = ALLIANCE_ONLY,
-						}),
 						i(170073),	-- Dented Ashmaul Strongbox
 						i(128216, {	-- Dented Ashmaul Strongbox
 							["races"] = ALLIANCE_ONLY,
@@ -781,15 +778,11 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						}),
 					},
 				}),
-				i(112127, {	-- Tuft of Gnome Hair
-					["repeatable"] = true,
-					["questID"] = 36040,	-- Tuft of Gnome Hair
+				q(36040, {	-- Tuft of Gnome Hair
+					["provider"] = { "i", 112127 },	-- Tuft of Gnome Hair
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["g"] = {
-						crit(5, {	-- Tuft of Gnome Hair
-							["achievementID"] = 9103,	-- Bounty Hunter
-							["races"] = HORDE_ONLY,
-						}),
 						i(128215, {	-- Dented Ashmaul Strongbox
 							["races"] = HORDE_ONLY,
 							["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
@@ -797,15 +790,11 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						}),
 					},
 				}),
-				i(112119, {	-- Worgen Snout
+				q(36884, {	-- Worgen Snout
+					["provider"] = { "i", 112119 },	-- Worgen Snout
 					["repeatable"] = true,
-					["questID"] = 36884,	-- Worgen Snout
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						crit(2, {	-- Worgen Snout
-							["achievementID"] = 9103,	-- Bounty Hunter
-							["races"] = HORDE_ONLY,
-						}),
 						i(128215, {	-- Dented Ashmaul Strongbox
 							["races"] = HORDE_ONLY,
 							["sym"] = { {"sub", "pvp_gear_faction_base", WOD_TIER, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
@@ -2022,6 +2011,63 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 			}),
 			n(ZONE_DROPS, {
+				i(112128, {	-- Blood Elf Ear
+					["description"] = "Can be looted from enemy Blood Elf players.",
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(112121, {	-- Draenei Tail
+					["description"] = "Can be looted from enemy Draenei players.",
+					["races"] = HORDE_ONLY,
+				}),
+				i(112126, {	-- Dwarf Spine
+					["description"] = "Can be looted from enemy Dwarf players.",
+					["races"] = HORDE_ONLY,
+				}),
+				i(112015, {	-- Forsaken Brains
+					["description"] = "Can be looted from enemy Forsaken players.",
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(112125, {	-- Goblin Nose
+					["description"] = "Can be looted from enemy Goblin players.",
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(112131, {	-- Human Bone Chip
+					["description"] = "Can be looted from enemy Human players.",
+					["races"] = HORDE_ONLY,
+				}),
+				i(184042, {	-- Nightborne Liver
+					["description"] = "Can be looted from enemy Nightborne players... although interestingly enough Horde players can loot this from Void Elves. (Albeit they can't turn it in anywhere.)",
+					["timeline"] = { "added 9.0.1" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(112122, {	-- Orc Tooth
+					["description"] = "Can be looted from enemy Orc players.",
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(112113, {	-- Pandaren Hide
+					["description"] = "Can be looted from enemy Pandaren players.",
+				}),
+				i(112124, {	-- Severed Night Elf Head
+					["description"] = "Can be looted from enemy Night Elf players.",
+					["races"] = HORDE_ONLY,
+				}),
+				i(112123, {	-- Tauren Hoof
+					["description"] = "Can be looted from enemy Tauren players.",
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(112120, {	-- Troll Feet
+					["description"] = "Can be looted from enemy Troll players.",
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(112127, {	-- Tuft of Gnome Hair
+					["description"] = "Can be looted from enemy Gnome players.",
+					["races"] = HORDE_ONLY,
+				}),
+				i(112119, {	-- Worgen Snout
+					["description"] = "Can be looted from enemy Worgen players.",
+					["races"] = HORDE_ONLY,
+				}),
+				
 				i(118333),	-- Universal Language Compensator [Part 1 of 3]
 				i(118334),	-- Universal Language Filter [Part 2 of 3]
 				i(118335),	-- Universal Language Repository [Part 3 of 3]
