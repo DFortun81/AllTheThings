@@ -966,7 +966,7 @@ local function GetUpgradeIconForRow(data, iconOnly)
 end
 local function GetUpgradeIconForTooltip(data, iconOnly)
 	-- upgrade only if itself has an upgrade
-	if data.collectibleAsUpgrade then
+	if data.filledUpgrade or data.collectibleAsUpgrade then
 		return iconOnly and L["UPGRADE_ICON"] or L["UPGRADE_TEXT"];
 	end
 end
@@ -11986,6 +11986,8 @@ app.ImportRawLink = function(group, rawlink, ignoreSource)
 	rawlink = rawlink and string.match(rawlink, "item[%-?%d:]+");
 	if rawlink and group then
 		group.rawlink = rawlink;
+		-- importing a rawlink will clear any cached upgrade info for the group
+		group._up = nil;
 		local _, linkItemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1 = strsplit(":", rawlink);
 		if linkItemID then
 			-- app.PrintDebug("ImportRawLink",rawlink,linkItemID,modID,bonusCount,bonusID1);
