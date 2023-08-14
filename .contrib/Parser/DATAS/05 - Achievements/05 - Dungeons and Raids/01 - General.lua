@@ -387,24 +387,28 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(26),		-- Dropping Some Eaves
 		}),
 		ach(11180, {	-- Glory of the Legion Raider
-			i(141216),		-- Grove Defiler (MOUNT!)
-			crit(1),		-- Buggy Fight
-			crit(2),		-- Webbing Crashers
-			crit(3),		-- Scare Bear
-			crit(4),		-- Took the Red Eye Down
-			crit(5),		-- Imagined Dragons World Tour
-			crit(6),		-- Use the Force(s)
-			crit(7),		-- I Attack the Darkness
-			crit(8),		-- Cage Rematch
-			crit(9),		-- Grand Opening
-			crit(10),		-- Gluten Free
-			crit(11),		-- A Change In Scenery
-			crit(12),		-- Elementalry!
-			crit(13),		-- Fruit of All Evil
-			crit(14),		-- Not For You
-			crit(15),		-- Burning Bridges
-			crit(16),		-- Infinitesimal
-			crit(17),		-- I've Got My Eyes On You
+			["sym"] = {{"meta_achievement",
+				10555,	-- Buggy Fight
+				10771,	-- Webbing Crashers
+				10753,	-- Scare Bear
+				10830,	-- Took the Red Eye Down
+				10663,	-- Imagined Dragons World Tour
+				10772,	-- Use the Force(s)
+				10755,	-- I Attack the Darkness
+				10678,	-- Cage Rematch
+				10697,	-- Grand Opening
+				10742,	-- Gluten Free
+				10817,	-- A Change In Scenery
+				10851,	-- Elementalry!
+				10754,	-- Fruit of All Evil
+				10704,	-- Not For You
+				10575,	-- Burning Bridges
+				10699,	-- Infinitesimal
+				10696,	-- I've Got My Eyes On You
+			}},
+			["groups"] = {
+				i(141216),		-- Grove Defiler (MOUNT!)
+			},
 		}),
 		ach(14146, {	-- Glory of the Ny'alotha Raider
 			i(174861),	-- Wriggling Parasite (MOUNT!)
