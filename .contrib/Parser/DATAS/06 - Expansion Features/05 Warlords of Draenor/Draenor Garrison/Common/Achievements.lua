@@ -20,17 +20,21 @@ root(ROOTS.ExpansionFeatures,
 					["races"] = HORDE_ONLY,
 				})),
 				ach(9928, {	-- Don't Call Me Junior (A)
+					["sym"] = {{"meta_achievement",
+						9825,	-- Master Relic Hunter (A)
+					}},
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						follower(465),	-- Harrison Jones
-						crit(1),	-- Master Relic Hunter
 					},
 				}),
 				ach(9901, {	-- Don't Call Me Junior (H)
+					["sym"] = {{"meta_achievement",
+						9836,	-- Master Relic Hunter (H)
+					}},
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						follower(465),	-- Harrison Jones
-						crit(1),	-- Master Relic Hunter
 					},
 				}),
 				petbattle(ach(9264)),	-- Draenor Pet Brawler

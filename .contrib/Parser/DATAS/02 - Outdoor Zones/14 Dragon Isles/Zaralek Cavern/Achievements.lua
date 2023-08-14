@@ -5,79 +5,85 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 	m(ZARALEK_CAVERN, {
 		n(ACHIEVEMENTS, {
 			ach(17783, {	-- Adventurer of Zaralek Cavern
-				crit(1, {
+				crit(59188, {	-- Alcanon
 					["_npcs"] = { 203515 },	-- Alcanon
 				}),
-				crit(2, {
+				crit(59185, {	-- Aquifon
 					["_npcs"] = { 203468 },	-- Aquifon
 				}),
-				crit(3, {
-					["_npcs"] = { 203621 },	-- Brulsef the Stronk
+				crit(59202, {	-- Brullo the Strong
+					["_npcs"] = { 203621 },	-- Brullo the Strong
 				}),
-				crit(4, {
+				crit(59212, {	-- Colossian
 					["_npcs"] = { 204093 },	-- Colossian
 				}),
-				crit(5, {
+				crit(59209, {	-- Emberdusk
 					["_npcs"] = { 203664 },	-- Emberdusk
 				}),
-				crit(6, {
+				crit(59207, {	-- Flowfy
 					["_npcs"] = { 203660 },	-- Flowfy
 				}),
-				crit(7, {
+				crit(59190, {	-- General Zskorro
 					["_npcs"] = { 203592 },	-- General Zskorro
 				}),
-				crit(8, {
+				crit(59186, {	-- Goopal
 					["_npcs"] = { 203477 },	-- Goopal
 				}),
-				crit(9, {
+				--[[
+				crit(9, {	-- Hadexia <Ember of Twilight>
 					["_npcs"] = { 203611 },	-- Hadexia <Ember of Twilight>
 				}),
-				crit(10, {
+				]]--
+				crit(59200, {	-- Invohq
 					["_npcs"] = { 203627 },	-- Invohq
 				}),
-				crit(11, {
+				crit(59206, {	-- Dinn
 					["_npcs"] = { 203646 },	-- Dinn
 				}),
-				crit(12, {
+				crit(59199, {	-- Karokta
 					["_npcs"] = { 203625 },	-- Karokta
 				}),
-				crit(13, {
+				crit(59184, {	-- Kaprachu
 					["_npcs"] = { 203466 },	-- Kaprachu
 				}),
-				crit(14, {
+				crit(59198, {	-- Klakatak
 					["_npcs"] = { 203618 },	-- Klakatak
 				}),
-				crit(15, {
+				crit(59183, {	-- Kob'rok
 					["_npcs"] = { 203462 },	-- Kob'rok
 				}),
-				crit(16, {
+				--[[
+				crit(16, {	-- Kronkapace
 					["_npcs"] = { 203642 },	-- Kronkapace
 				}),
-				crit(17, {
+				crit(17, {	-- Lavermix
 					["_npcs"] = { 203630 },	-- Lavermix
 				}),
-				crit(18, {
+				]]--
+				crit(59203, {	-- Magtembo
 					["_npcs"] = { 200111 },	-- Magtembo
 				}),
-				crit(19, {
+				crit(59189, {	-- Professor Gastrinax
 					["_npcs"] = { 203521 },	-- Professor Gastrinax
 				}),
-				crit(20, {
+				--[[
+				crit(20, {	-- Shadowforge Mole Machine
 					["_npcs"] = { 204096 },	-- Shadowforge Mole Machine
 				}),
-				crit(21, {
+				]]--
+				crit(59205, {	-- Skornak
 					["_npcs"] = { 203643 },	-- Skornak
 				}),
-				crit(22, {
+				crit(59187, {	-- Spinmarrow
 					["_npcs"] = { 203480 },	-- Spinmarrow
 				}),
-				crit(23, {
+				crit(59208, {	-- Subterrax
 					["_npcs"] = { 203662 },	-- Subterrax
 				}),
-				crit(24, {
+				crit(59191, {	-- Underlight Queen
 					["_npcs"] = { 203593 },	-- Underlight Queen
 				}),
-				crit(25, {
+				crit(59210, {	-- Viridian King
 					["_npcs"] = { 201029 },	-- Viridian King
 				}),
 			}),
