@@ -228,7 +228,6 @@ root(ROOTS.Zones, {
 							["_quests"] = { 37390 },
 						}),
 					}),
-					ach(9434),		-- One of Us! One of Us! (Shadowmoon Enclave)
 					ach(9564,  {	-- Securing Draenor (Alliance)
 						["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						["races"] = ALLIANCE_ONLY,
@@ -245,7 +244,6 @@ root(ROOTS.Zones, {
 							crit(12),	-- Assault on Skettis
 						},
 					}),
-					ach(9432),		-- Would You Like a Pamphlet? (Shadowmoon Enclave)
 				}),
 				petbattle(filter(BATTLE_PETS, {
 					["sym"] = {{"select","speciesID",

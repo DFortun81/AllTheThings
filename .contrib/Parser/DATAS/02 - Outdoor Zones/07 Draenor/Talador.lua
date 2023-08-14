@@ -83,6 +83,16 @@ root(ROOTS.Zones, {
 				n(ACHIEVEMENTS, {
 					ach(9635),		-- Bobbing for Orcs
 					ach(9634),		-- Charged Up
+					ach(9633, {		-- Cut off the Head (Shattrath City)
+						crit(1),		-- Bombardier Gu'gok
+						crit(2),		-- Gug'tol
+						crit(3),		-- Haakun the All-Consuming
+						crit(4),		-- Felfire Consort
+						crit(5),		-- Avatar of Socrethar
+						crit(6),		-- Sargerei War Council
+						crit(7),		-- Legion Vanguard
+						crit(8),		-- Xothear, the Destroyer
+					}),
 					ach(8920,  {	-- Don't Let the Tala-door Hit You on the Way Out (A) (unlocks ability to buy Talador Treasure Map from Grakis in Stormshield)
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {

@@ -130,7 +130,7 @@ root(ROOTS.Zones, {
 							10260,	-- Explore Tanaan Jungle
 							10069,	-- I Came, I Clawed, I Conquered
 							10071,	-- The Legion Will NOT Conquer All
-						}),
+						}},
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							title(318),	-- of the Jungle
@@ -146,7 +146,7 @@ root(ROOTS.Zones, {
 							10260,	-- Explore Tanaan Jungle
 							10069,	-- I Came, I Clawed, I Conquered
 							10071,	-- The Legion Will NOT Conquer All
-						}),
+						}},
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							title(318),	-- of the Jungle

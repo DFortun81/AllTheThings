@@ -132,8 +132,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					ach(9483),	-- I Was Framed! (Darktide Roost)
-					ach(9434),	-- One of Us! One of Us!
-					ach(9528, {	-- On the Shadow's Trail (Alliance)
+					ach(9434),		-- One of Us! One of Us! (Shadowmoon Enclave)
+					ach(9528, {	-- On the Shadow's Trail [A]
 						["sourceQuests"] = { 33116 },	-- To Catch a Shadow
 						["races"] = ALLIANCE_ONLY,
 					}),

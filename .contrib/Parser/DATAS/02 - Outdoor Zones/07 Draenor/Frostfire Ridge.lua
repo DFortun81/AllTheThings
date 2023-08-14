@@ -49,7 +49,7 @@ root(ROOTS.Zones, {
 							crit(3),	-- Bonus Objective: Grimfrost Hill
 						},
 					}),
-					ach(9529, {	-- On the Shadow's Trail
+					ach(9529, {	-- On the Shadow's Trail [H]
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34295,	-- To Capture Gul'Dan
 					}),

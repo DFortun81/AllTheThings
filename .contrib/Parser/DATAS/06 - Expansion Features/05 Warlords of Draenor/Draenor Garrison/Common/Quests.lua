@@ -1660,7 +1660,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
 				["isDaily"] = true,
 			}),
-			q(37852, {	-- Amulet of Rukhmar: The Apexis Device (A)
+			q(37852, {	-- Amulet of Rukhmar: The Apexis Device [A]
 				["sourceQuests"] = { 37851 },	-- Amulet of Rukhmar: The Final Key
 				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coord"] = { 34.6, 32.7, LUNARFALL },
@@ -1672,7 +1672,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					}),
 				},
 			}),
-			q(37993, {	-- Amulet of Rukhmar: The Apexis Device (H)
+			q(37993, {	-- Amulet of Rukhmar: The Apexis Device [H]
 				["sourceQuests"] = { 37851 },	-- Amulet of Rukhmar: The Final Key
 				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coord"] = { 40.2, 56.0, FROSTWALL },
@@ -1717,7 +1717,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 34775,	-- Mission Probable
 			}),
-			q(36679, {	-- Assault on Darktide Roost
+			q(36679, {	-- Assault on Darktide Roost [A]
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236165 },	-- War Planning Map
@@ -1732,7 +1732,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36692, {	-- Assault on Darktide Roost
+			q(36692, {	-- Assault on Darktide Roost [H]
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236206 },	-- War Planning Map
@@ -1747,7 +1747,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36681, {	-- Assault on Lost Veil Anzu
+			q(36681, {	-- Assault on Lost Veil Anzu [A]
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236165 },	-- War Planning Map
@@ -1759,7 +1759,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36690, {	-- Assault on Lost Veil Anzu
+			q(36690, {	-- Assault on Lost Veil Anzu [H]
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236206 },	-- War Planning Map
@@ -1771,7 +1771,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36675, {	-- Assault on Magnarok
+			q(36675, {	-- Assault on Magnarok [A]
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236165 },	-- War Planning Map
@@ -1786,7 +1786,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36697, {	-- Assault on Magnarok
+			q(36697, {	-- Assault on Magnarok [H]
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236206 },	-- War Planning Map
@@ -1801,7 +1801,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36678, {	-- Assault on Mok'gol Watchpost
+			q(36678, {	-- Assault on Mok'gol Watchpost [A]
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236165 },	-- War Planning Map
@@ -1816,7 +1816,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36693, {	-- Assault on Mok'gol Watchpost
+			q(36693, {	-- Assault on Mok'gol Watchpost [H]
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236206 },	-- War Planning Map
@@ -1831,7 +1831,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36682, {	-- Assault on Pillars of Fate
+			q(36682, {	-- Assault on Pillars of Fate [A]
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236165 },	-- War Planning Map
@@ -1846,7 +1846,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36689, {	-- Assault on Pillars of Fate
+			q(36689, {	-- Assault on Pillars of Fate [H]
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236206 },	-- War Planning Map
@@ -1861,7 +1861,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36649, {	-- Assault on Shattrath Harbor
+			q(36649, {	-- Assault on Shattrath Harbor [A]
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236165 },	-- War Planning Map
@@ -1876,7 +1876,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36667, {	-- Assault on Shattrath Harbor
+			q(36667, {	-- Assault on Shattrath Harbor [H]
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236206 },	-- War Planning Map
@@ -1891,7 +1891,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36683, {	-- Assault on Skettis
+			q(36683, {	-- Assault on Skettis [A]
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236165 },	-- War Planning Map
@@ -1906,7 +1906,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36688, {	-- Assault on Skettis
+			q(36688, {	-- Assault on Skettis [H]
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236206 },	-- War Planning Map
@@ -1921,7 +1921,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36680, {	-- Assault on Socrethar's Rise
+			q(36680, {	-- Assault on Socrethar's Rise [A]
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236165 },	-- War Planning Map
@@ -1936,7 +1936,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36691, {	-- Assault on Socrethar's Rise
+			q(36691, {	-- Assault on Socrethar's Rise [H]
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236206 },	-- War Planning Map
@@ -1951,7 +1951,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36648, {	-- Assault on Stonefury Cliffs
+			q(36648, {	-- Assault on Stonefury Cliffs [A]
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236165 },	-- War Planning Map
@@ -1966,7 +1966,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36669, {	-- Assault on Stonefury Cliffs
+			q(36669, {	-- Assault on Stonefury Cliffs [H]
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236206 },	-- War Planning Map
@@ -1981,7 +1981,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36677, {	-- Assault on the Broken Precipice
+			q(36677, {	-- Assault on the Broken Precipice [A]
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236165 },	-- War Planning Map
@@ -1996,7 +1996,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36694, {	-- Assault on the Broken Precipice
+			q(36694, {	-- Assault on the Broken Precipice [H]
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236206 },	-- War Planning Map
@@ -2011,7 +2011,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36676, {	-- Assault on the Everbloom Wilds
+			q(36676, {	-- Assault on the Everbloom Wilds [A]
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236165 },	-- War Planning Map
@@ -2026,7 +2026,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36695, {	-- Assault on the Everbloom Wilds
+			q(36695, {	-- Assault on the Everbloom Wilds [H]
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236206 },	-- War Planning Map
@@ -2041,7 +2041,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36685, {	-- Assault on the Heart of Shattrath
+			q(36685, {	-- Assault on the Heart of Shattrath [A]
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236165 },	-- War Planning Map
@@ -2053,7 +2053,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36699, {	-- Assault on the Heart of Shattrath
+			q(36699, {	-- Assault on the Heart of Shattrath [H]
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236206 },	-- War Planning Map
@@ -2065,7 +2065,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36674, {	-- Assault on the Iron Siegeworks
+			q(36674, {	-- Assault on the Iron Siegeworks [A]
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236165 },	-- War Planning Map
@@ -2080,7 +2080,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36696, {	-- Assault on the Iron Siegeworks
+			q(36696, {	-- Assault on the Iron Siegeworks [H]
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236206 },	-- War Planning Map
@@ -2095,7 +2095,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x800
 				},
 			}),
-			q(36686, {	-- Assault on the Pit
+			q(36686, {	-- Assault on the Pit [A]
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236165 },	-- War Planning Map
@@ -2110,7 +2110,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					currency(823),	-- Apexis Crystal x1000
 				},
 			}),
-			q(36701, {	-- Assault on the Pit
+			q(36701, {	-- Assault on the Pit [H]
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["provider"] = { "o", 236206 },	-- War Planning Map
