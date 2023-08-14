@@ -3496,7 +3496,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER 4.0.1
 				n(16365, {	-- Master Craftsman Omarion <Brotherhood of the Light>
 					-- #if AFTER 10.1.5
-					["description"] = "You must unlock the Memory of Scholomance and Naxxaramas before this vendor will sell to you.",
+					["description"] = "You must unlock the Memory of Scholomance and Naxxaramas before this vendor will sell to you. You must return 32 individual book pages from around Naxxaramas to him to unlock all his recipes, with more unlocking with each hand-in.",
+					["sourceQuest"] = 76290, -- Omarion's Second Handbook
 					-- #endif
 					["coord"] = { 75.6, 52.0, EASTERN_PLAGUELANDS },
 					["groups"] = sharedData({
