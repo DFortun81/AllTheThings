@@ -59,6 +59,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					}),
 				}),
+				achWithRep(4882, 1158),	-- The Guardians of Hyjal
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",
@@ -93,6 +94,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["description"] = "Can be found in areas where the Twilight Hammer have set up camp.",
 					}),
 				},
+			}),
+			n(FACTIONS, {
+				faction(1158, {	-- Guardians of Hyjal
+					["icon"] = "Interface\\Icons\\inv_misc_tabard_guardiansofhyjal",
+				}),
 			}),
 			prof(FISHING, {
 				o(202776, {	-- Mountain Trout School

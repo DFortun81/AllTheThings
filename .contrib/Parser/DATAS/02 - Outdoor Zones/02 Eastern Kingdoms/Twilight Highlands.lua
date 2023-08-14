@@ -14,6 +14,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27380,	-- Nightmare
 					["timeline"] = { "added 4.0.3" },
 				}),
+				achWithRep(4886, 1172, {	-- Dragonmaw Clan
+					["races"] = HORDE_ONLY,
+				}),
 				ach(5482, {	-- Dragonmaw Tour of Duty
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
@@ -134,6 +137,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				achWithRep(4885, 1174, {	-- Wildhammer Clan
+					["races"] = ALLIANCE_ONLY,
+				}),
 				ach(5481, {	-- Wildhammer Tour of Duty
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
@@ -201,6 +207,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 					pet(549),	-- Yellow-Bellied Marmot (PET!)
 				},
+			}),
+			n(FACTIONS, {
+				faction(1172, {	-- Dragonmaw Clan
+					["icon"] = "Interface\\Icons\\inv_misc_tabard_dragonmawclan",
+					["races"] = HORDE_ONLY,
+				}),
+				faction(1174, {	-- Wildhammer Clan
+					["icon"] = "Interface\\Icons\\inv_misc_tabard_wildhammerclan",
+					["races"] = ALLIANCE_ONLY,
+				}),
 			}),
 			n(FLIGHT_PATHS, {
 				fp(659, {	-- Bloodgulch, Twilight Highlands

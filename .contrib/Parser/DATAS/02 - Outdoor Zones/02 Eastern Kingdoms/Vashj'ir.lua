@@ -116,6 +116,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				achWithRep(4881, 1135),	-- The Earthen Ring
+			}),
+			n(FACTIONS, {
+				faction(1135, {	-- The Earthen Ring
+					["icon"] = "Interface\\Icons\\inv_misc_tabard_tolvir",
+				}),
 			}),
 			m(204, {	-- Abyssal Depths
 				["lore"] = "Abyssal Depths is the last, and darkest zone, players reach when questing in Vash'jir. They are home to the ancient god L'ghorek, which the Twilight Hammer is siphoning energy from to be prepared when fighting Neptulon in the future.",

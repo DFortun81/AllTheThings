@@ -32,6 +32,7 @@ root(ROOTS.Zones, {
 						}),
 					}),
 					explorationAch(4864),	-- Explore Deepholm
+					achWithRep(4883, 1171),	-- Therazane
 				}),
 				battlepets({
 					["sym"] = {{"select","speciesID",

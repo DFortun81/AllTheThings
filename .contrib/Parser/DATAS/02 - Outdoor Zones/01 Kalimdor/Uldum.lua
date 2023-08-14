@@ -20,7 +20,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 63045 },	-- Tan Riding Camel
 					},
 				}),
-				ach(5767, {			-- Scourer of the Eternal Sands
+				achWithRep(4884, 1173),	-- Ramkahen
+				ach(5767, {	-- Scourer of the Eternal Sands
 					title(143),		-- the Camel-Hoarder
 				}),
 				ach(4872, {	-- Unearthing Uldum
@@ -68,6 +69,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					pet(511),	-- Sidewinder (PET!)
 					pet(546),	-- Tol'vir Scarab (PET!)
 				},
+			}),
+			n(FACTIONS, {
+				faction(1173, {	-- Ramkahen
+					["icon"] = "Interface\\Icons\\inv_misc_tabard_tolvir",
+				}),
 			}),
 			n(FLIGHT_PATHS, {
 				fp(653, {	-- Oasis of Vir'sar
