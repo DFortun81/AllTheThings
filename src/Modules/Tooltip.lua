@@ -402,7 +402,7 @@ local function AttachTooltip(self, ttdata)
 				ttId = select(2, C_MountJournal.GetMountInfoByID(ttId));
 			end
 			if ttType == Enum_TooltipDataType.Object then
-				local objName = ttdata and ttdata.line[1];
+				local objName = ttdata and ttdata.lines[1];
 				objName = objName and objName.leftText;
 				local objectID = GetBestObjectIDForName(objName);
 				if objectID then
