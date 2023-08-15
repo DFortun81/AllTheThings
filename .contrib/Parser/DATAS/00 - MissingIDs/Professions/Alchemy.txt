@@ -392,22 +392,6 @@ r(11456),	-- Goblin Rocket Fuel
 1.13.0.28211
 r(24266),	-- Gurubashi Mojo Madness
 2.0.0.6080
-r(28543),	-- Elixir of Camouflage
-r(28544),	-- Elixir of Major Strength
-r(28545),	-- Elixir of Healing Power
-r(28546),	-- Sneaking Potion
-r(28549),	-- Elixir of Major Frost Power
-r(28550),	-- Insane Strength Potion
-r(28551),	-- Super Healing Potion
-r(28552),	-- Elixir of the Searching Eye
-r(28553),	-- Elixir of Major Agility
-r(28554),	-- Shrouding Potion
-r(28555),	-- Super Mana Potion
-r(28556),	-- Elixir of Major Firepower
-r(28557),	-- Elixir of Major Defense
-r(28558),	-- Elixir of Major Shadow Power
-r(28562),	-- Major Dreamless Sleep Potion
-r(28563),	-- Heroic Potion
 r(28564),	-- Haste Potion
 r(28565),	-- Destruction Potion
 r(28566),	-- Transmute: Primal Air to Fire

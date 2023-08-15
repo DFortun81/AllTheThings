@@ -44,7 +44,6 @@ ach(1657),	-- Hallowed Be Thy Name
 ach(1684),	-- Brewmaster
 ach(1692),	-- Merrymaker
 ach(1707),	-- Fool For Love
-ach(1784),	-- Hail to the Chef
 ach(2797),	-- Noble Gardener
 3.3.5.12340
 ach(3656),	-- Pilgrim
@@ -127,7 +126,6 @@ ach(11065),	-- It All Makes Sense Now
 ach(13283),	-- Frontline Warrior \\ On The Frontlines
 ach(13284),	-- Frontline Warrior \\ On The Frontlines
 10.1.5.49516
-ach(18360),	-- Tricks and Treats of the Dragon Isles
 ach(18399),	-- Gilneas Gambit: Bronze
 ach(18400),	-- Gilneas Gambit: Silver
 ach(18401),	-- Gilneas Gambit: Gold
@@ -874,3 +872,5 @@ ach(18907),	-- Chromatic Calibration: Ectoplasmic Specs
 ach(18908),	-- Chromatic Calibration: Bio-Optic Killshades
 ach(19008),	-- Dream Shaper
 ach(19028),	-- Lil' Frostwing
+10.1.7.50793
+ach(19079),	-- Master of the Troubled Timeways

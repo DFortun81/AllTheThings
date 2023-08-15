@@ -39738,6 +39738,8 @@ s(27604)/i(56212),	--
 s(27605)/i(56213),	--
 s(27606)/i(56214),	--
 s(27607)/i(56215),	--
+s(27608)/i(56218),	-- Curse-Tainted Leggings \\ e-Tainted Leggings
+s(27609)/i(56219),	-- Shroud of Dark Memories \\ ud of Dark Memories
 s(27610)/i(56228),	--
 s(27615)/i(56233),	--
 s(27617)/i(56257),	--
@@ -41926,6 +41928,12 @@ s(34054)/i(66874),	--
 s(34055)/i(66875),	--
 s(34057)/i(66877),	--
 s(34058)/i(66878),	--
+s(34101)/i(66933),	-- Breastplate of the Witness \\ stplate of the Witness
+s(34102)/i(66934),	-- Gloves of Baleflame \\ es of Baleflame
+s(34103)/i(66935),	-- Eradicator's Bracers \\ icator's Bracers
+s(34104)/i(66936),	-- Helm of Secret Knowledge \\ of Secret Knowledge
+s(34105)/i(66937),	-- Sandals of the Courier \\ als of the Courier
+s(34106)/i(66938),	-- Tooranu's Spaulders \\ anu's Spaulders
 s(34264)/i(67228),	-- Jadrag's Slicers \\ ag's Slicers
 s(34278)/i(67434),	--
 s(34301)/i(67466),	-- Vicious Gladiator's Hatchet \\ ous Gladiator's Hatchet
