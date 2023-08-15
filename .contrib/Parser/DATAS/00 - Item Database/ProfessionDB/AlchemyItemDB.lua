@@ -131,20 +131,56 @@ i(0, 22430);		-- Refined Scale of Onyxia
 -- PATCH 2.0.1 --
 -----------------
 -- TRAINER --
+i(0, 33740);	-- Adept's Elixir
+i(0, 28596);	-- Alchemy (Master)
+i(0, 28677);	-- Elixir Master
+i(0, 33741);	-- Elixir of Mastery
 i(0, 28544);	-- Elixir of Major Strength
+i(0, 38070);	-- Mercurial Stone
+i(0, 33738);	-- Onslaught Elixir
+i(0, 28675);	-- Potion Master
+i(0, 28672);	-- Transmutation Master
+i(0, 33733);	-- Unstable Mana Potion
+i(0, 33732);	-- Volatile Healing Potion
 -- ITEM --
-i(22905, 28553);	-- Elixir of Major Agility (A)
-i(24001, 28553);	-- Elixir of Major Agility (H)
+i(22914, 28565);	-- Destruction Potion
+i(22905, 28553);	-- Elixir of Major Agility [A]
+i(24001, 28553);	-- Elixir of Major Agility [H]
 i(22909, 28557);	-- Elixir of Major Defense
 i(22908, 28556);	-- Elixir of Major Firepower
 i(22902, 28549);	-- Elixir of Major Frost Power
+i(22919, 28570);	-- Elixir of Major Mageblood
 i(22910, 28558);	-- Elixir of Major Shadow Power
 i(31356, 17636);	-- Flask of Distilled Wisdom (Cenarion Reputation)
 i(31355, 17637);	-- Flask of Supreme Power (Keepers Reputation)
 i(31354, 17635);	-- Flask of the Titans (Sha'tar Reputation)
 i(22903, 28550);	-- Insane Strength Potion
+i(22923, 28575);	-- Major Arcane Protection Potion
+i(22920, 28571);	-- Major Fire Protection Potion
+i(22921, 28572);	-- Major Frost Protection Potion
+i(22925, 28577);	-- Major Holy Protection Potion
+i(22922, 28573);	-- Major Nature Protection Potion
+i(22924, 28576);	-- Major Shadow Protection Potion
 i(22906, 28554);	-- Shrouding Potion
 i(22907, 28555);	-- Super Mana Potion
+i(22915, 28566);	-- Transmute: Primal Air to Fire
+i(22916, 28567);	-- Transmute: Primal Earth to Water
+i(30443, 28568);	-- Transmute: Primal Fire to Earth [A]
+i(22917, 28568);	-- Transmute: Primal Fire to Earth [H]
+i(22918, 28569);	-- Transmute: Primal Water to Air
+-- DISCOVERY --
+i(0, 28590);	-- Flask of Blinding Light
+i(0, 28587);	-- Flask of Fortification
+i(0, 28588);	-- Flask of Mighty Restoration / Flask of Mighty Versatility
+i(0, 28591);	-- Flask of Pure Death
+i(0, 28589);	-- Flask of Relentless Assault
+i(0, 28586);	-- Super Rejuvenation Potion
+i(0, 28580);	-- Transmute: Primal Shadow to Water
+i(0, 28581);	-- Transmute: Primal Water to Shadow
+i(0, 28582);	-- Transmute: Primal Mana to Fire
+i(0, 28583);	-- Transmute: Primal Fire to Mana
+i(0, 28584);	-- Transmute: Primal Life to Earth
+i(0, 28585);	-- Transmute: Primal Earth to Life
 -- REMOVED --
 i(31357, 17638);	-- Flask of Chromatic Resistance (Lower City Reputation) (5.0.4?)
 
@@ -155,16 +191,59 @@ i(31357, 17638);	-- Flask of Chromatic Resistance (Lower City Reputation) (5.0.4
 i(0, 28551);	-- Super Healing Potion
 -- ITEM --
 i(22900, 28543);	-- Elixir of Camouflage
+i(22926, 28578);	-- Elixir of Empowerment
 i(22904, 28552);	-- Elixir of the Searching Eye
+i(31682, 38961);	-- Fel Mana Potion
+i(31681, 38962);	-- Fel Regeneration Potion
+i(31680, 38960);	-- Fel Strength Elixir
+i(22913, 28564);	-- Haste Potion (World Drop)
 i(22912, 28563);	-- Heroic Potion
+i(22927, 28579);	-- Ironshield Potion
 i(22911, 28562);	-- Major Dreamless Sleep Potion
 i(22901, 28546);	-- Sneaking Potion
+i(25869, 32765);	-- Transmute: Earthstorm Diamond
+i(23574, 29688);	-- Transmute: Primal Might
+i(25870, 32766);	-- Transmute: Skyfire Diamond [A]
+i(29232, 32766);	-- Transmute: Skyfire Diamond [H]
 
 -----------------
 -- PATCH 2.1.0 --
 -----------------
 -- TRAINER --
+i(0, 39638);	-- Elixir of Draenic Wisdom
 i(0, 28545);	-- Elixir of Healing Power
+i(0, 39636);	-- Elixir of Major Fortitude
+-- ITEM --
+i(32070, 39637);	-- Earthen Elixir
+i(32071, 39639);	-- Elixir of Ironskin
+-- DISCOVERY --
+i(0, 41458);	-- Cauldron of Major Arcane Protection
+i(0, 41500);	-- Cauldron of Major Fire Protection
+i(0, 41501);	-- Cauldron of Major Frost Protection
+i(0, 41502);	-- Cauldron of Major Nature Protection
+i(0, 41503);	-- Cauldron of Major Shadow Protection
+
+-----------------
+-- PATCH 2.2.0 --
+-----------------
+-- ITEM --
+i(33209, 42736);	-- Flask of Chromatic Wonder [REMOVED 5.0.4]
+
+-----------------
+-- PATCH 2.3.0 --
+-----------------
+-- TRAINER --
+i(0, 45061);	-- Mad Alchemist's Potion
+
+-----------------
+-- PATCH 2.4.0 --
+-----------------
+-- ITEM --
+i(35755, 47050);	-- Assassin's Alchemist Stone
+i(35752, 47046);	-- Guardian's Alchemist Stone
+i(35295, 28564);	-- Haste Potion (BoP Version)
+i(35754, 47049);	-- Redeemer's Alchemist Stone
+i(35753, 47048);	-- Sorcerer's Alchemist Stone
 
 -----------------
 -- PATCH 6.0.1 --	- NOT DONE -Darkal

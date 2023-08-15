@@ -229,7 +229,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						i(22900, {	-- Recipe: Elixir of Camouflage (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(23574, {	-- Recipe: Transmute Primal Might
+						i(23574, {	-- Recipe: Transmute Primal Might (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

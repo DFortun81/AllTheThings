@@ -2591,7 +2591,7 @@ root(ROOTS.Zones, {
 						},
 						["cr"] = 16952,	-- Anger Guard
 					}),
-					i(22925, {	-- Recipe: Major Holy Protection Potion
+					i(22925, {	-- Recipe: Major Holy Protection Potion (RECIPE!)
 						["coords"] = {
 							{ 26.6, 83.6, BLADES_EDGE_MOUNTAINS },
 							{ 28.0, 82.2, BLADES_EDGE_MOUNTAINS },

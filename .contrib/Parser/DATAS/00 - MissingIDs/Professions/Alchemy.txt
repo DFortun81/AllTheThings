@@ -391,68 +391,8 @@ r(11454),	-- Inlaid Mithril Cylinder
 r(11456),	-- Goblin Rocket Fuel
 1.13.0.28211
 r(24266),	-- Gurubashi Mojo Madness
-2.0.0.6080
-r(28564),	-- Haste Potion
-r(28565),	-- Destruction Potion
-r(28566),	-- Transmute: Primal Air to Fire
-r(28567),	-- Transmute: Primal Earth to Water
-r(28568),	-- Transmute: Primal Fire to Earth
-r(28569),	-- Transmute: Primal Water to Air
-r(28570),	-- Elixir of Major Mageblood
-r(28571),	-- Major Fire Protection Potion
-r(28572),	-- Major Frost Protection Potion
-r(28573),	-- Major Nature Protection Potion
-r(28575),	-- Major Arcane Protection Potion
-r(28576),	-- Major Shadow Protection Potion
-r(28577),	-- Major Holy Protection Potion
-r(28578),	-- Elixir of Empowerment
-r(28579),	-- Ironshield Potion
-r(28580),	-- Transmute: Primal Shadow to Water
-r(28581),	-- Transmute: Primal Water to Shadow
-r(28582),	-- Transmute: Primal Mana to Fire
-r(28583),	-- Transmute: Primal Fire to Mana
-r(28584),	-- Transmute: Primal Life to Earth
-r(28585),	-- Transmute: Primal Earth to Life
-r(28586),	-- Super Rejuvenation Potion
-r(28587),	-- Flask of Fortification
-r(28588),	-- Flask of Mighty Versatility \\ Flask of Mighty Restoration
-r(28589),	-- Flask of Relentless Assault
-r(28590),	-- Flask of Blinding Light
-r(28591),	-- Flask of Pure Death
-r(28596),	-- Alchemy
-r(28672),	-- Transmutation Master
-r(28675),	-- Potion Master
-r(28677),	-- Elixir Master
-r(29688),	-- Transmute: Primal Might
-r(32765),	-- Transmute: Earthstorm Diamond
-r(32766),	-- Transmute: Skyfire Diamond
-r(33732),	-- Volatile Healing Potion
-r(33733),	-- Unstable Mana Potion
-r(33738),	-- Onslaught Elixir
-r(33740),	-- Adept's Elixir
-r(33741),	-- Elixir of Mastery
-2.4.3.8606
-r(38070),	-- Mercurial Stone
-r(38960),	-- Fel Strength Elixir
-r(38961),	-- Fel Mana Potion
-r(38962),	-- Fel Regeneration Potion
-r(39636),	-- Elixir of Major Fortitude
-r(39637),	-- Earthen Elixir
-r(39638),	-- Elixir of Draenic Wisdom
-r(39639),	-- Elixir of Ironskin
-r(41458),	-- Cauldron of Major Arcane Protection
-r(41500),	-- Cauldron of Major Fire Protection
-r(41501),	-- Cauldron of Major Frost Protection
-r(41502),	-- Cauldron of Major Nature Protection
-r(41503),	-- Cauldron of Major Shadow Protection
-r(42736),	-- Flask of Chromatic Wonder
-r(45061),	-- Mad Alchemist's Potion
-r(47046),	-- Guardian's Alchemist Stone
-r(47048),	-- Sorcerer's Alchemist Stone
-r(47049),	-- Redeemer's Alchemist Stone
-r(47050),	-- Assassin's Alchemist Stone
 3.0.1.8622
-r(51304),	-- Alchemy
+r(51304),	-- Alchemy (Grand Master)
 r(53771),	-- Transmute: Eternal Life to Shadow
 r(53773),	-- Transmute: Eternal Life to Fire
 r(53774),	-- Transmute: Eternal Fire to Water

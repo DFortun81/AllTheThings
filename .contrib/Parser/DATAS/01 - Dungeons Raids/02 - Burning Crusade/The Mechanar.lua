@@ -76,7 +76,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				i(21906, {	-- Pattern: Arcanoweave Boots
 					["cr"] = 19168,	-- Sunseeker Astromage
 				}),
-				i(22920, {	-- Recipe: Major Fire Protection Potion
+				i(22920, {	-- Recipe: Major Fire Protection Potion (RECIPE!)
 					["cr"] = 19168,	-- Sunseeker Astromage
 				}),
 			}),
@@ -132,7 +132,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							["timeline"] = { "removed 5.0.4" },
 						}),
 						-- #endif
-						i(22920),	-- Recipe: Major Fire Protection Potion
+						i(22920),	-- Recipe: Major Fire Protection Potion (RECIPE!)
 					},
 				}),
 				e(565, {	-- Pathaleon the Calculator
@@ -229,7 +229,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
-							i(22920),	-- Recipe: Major Fire Protection Potion
+							i(22920),	-- Recipe: Major Fire Protection Potion (RECIPE!)
 						},
 					}),
 					e(565, {	-- Pathaleon the Calculator

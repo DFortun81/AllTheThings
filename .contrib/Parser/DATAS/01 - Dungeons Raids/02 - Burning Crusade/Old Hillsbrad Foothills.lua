@@ -179,7 +179,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						-- #if AFTER 7.3.5
 						i(28221),	-- Boots of the Watchful Heart
 						-- #endif
-						i(22927),	-- Recipe: Ironshield Potion
+						i(22927),	-- Recipe: Ironshield Potion (RECIPE!)
 					},
 				}),
 				e(540, {	-- Epoch Hunter
@@ -303,7 +303,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(27430),	-- Scaled Greaves of Patience
 							-- #endif
 							i(28221),	-- Boots of the Watchful Heart
-							i(22927),	-- Recipe: Ironshield Potion
+							i(22927),	-- Recipe: Ironshield Potion (RECIPE!)
 						},
 					}),
 					e(540, {	-- Epoch Hunter

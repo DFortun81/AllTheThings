@@ -1747,7 +1747,7 @@ root(ROOTS.Zones, {
 							-- #endif
 							i(13517),	-- Recipe: Alchemist Stone (RECIPE!)
 							i(31354),	-- Recipe: Flask of the Titans (RECIPE!)
-							i(22915),	-- Recipe: Transmute Primal Air to Fire
+							i(22915),	-- Recipe: Transmute Primal Air to Fire (RECIPE!)
 							applyclassicphase(TBC_PHASE_TWO, i(35341)),	-- Satin Mantle
 							applyclassicphase(TBC_PHASE_TWO, i(35407)),	-- Savage Plate Chestpiece
 							applyclassicphase(TBC_PHASE_TWO, i(35381)),	-- Seer's Linked Armor
@@ -2750,7 +2750,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 45.8, 20.8, SHATTRATH_CITY },
 						["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
 						["groups"] = {
-							i(23574, {	-- Recipe: Transmute Primal Might
+							i(23574, {	-- Recipe: Transmute Primal Might (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},

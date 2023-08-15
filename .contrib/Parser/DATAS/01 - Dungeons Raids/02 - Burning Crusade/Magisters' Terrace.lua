@@ -119,7 +119,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 					i(35300),	-- Pattern: Windstrike Gloves (RECIPE!)
 					i(35296),	-- Plans: Adamantite Weapon Chain
 					i(35294),	-- Recipe: Elixir of Empowerment
-					i(35295),	-- Recipe: Haste Potion
+					i(35295),	-- Recipe: Haste Potion (BoP Version) (RECIPE!)
 					i(35310),	-- Schematic: Healing Potion Injector
 					i(35311),	-- Schematic: Mana Potion Injector
 				},

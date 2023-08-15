@@ -2173,7 +2173,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(68, 68, 10),
 					}),
-					i(31682, {	-- Recipe: Fel Mana Potion
+					i(31682, {	-- Recipe: Fel Mana Potion (RECIPE!)
 						["crs"] = {
 							19796,	-- Eclipsion Archmage
 							19795,	-- Eclipsion Blood Knight
@@ -2184,7 +2184,7 @@ root(ROOTS.Zones, {
 							22017,	-- Eclipsion Spellbinder
 						},
 					}),
-					i(31681, {	-- Recipe: Fel Regeneration Potion
+					i(31681, {	-- Recipe: Fel Regeneration Potion (RECIPE!)
 						["crs"] = {
 							20878,	-- Deathforge Guardian
 							20887,	-- Deathforge Imp
@@ -2192,7 +2192,7 @@ root(ROOTS.Zones, {
 							19754,	-- Deathforge Tinkerer
 						},
 					}),
-					i(31680, {	-- Recipe: Fel Strength Elixir
+					i(31680, {	-- Recipe: Fel Strength Elixir (RECIPE!)
 						["crs"] = {
 							19755,	-- Mo'arg Weaponsmith
 							21302,	-- Shadow Council Warlock
@@ -2200,7 +2200,7 @@ root(ROOTS.Zones, {
 							19740,	-- Wrathwalker
 						},
 					}),
-					i(22924, {	-- Recipe: Major Shadow Protection Potion
+					i(22924, {	-- Recipe: Major Shadow Protection Potion (RECIPE!)
 						["crs"] = { 21302 },	-- Shadow Council Warlock
 					}),
 					i(23806, {	-- Schematic: Hyper-Vision Goggles

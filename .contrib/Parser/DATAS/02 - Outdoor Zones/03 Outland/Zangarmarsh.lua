@@ -1516,11 +1516,11 @@ root(ROOTS.Zones, {
 							i(31392),	-- Plans: Wildguard Helm (RECIPE!)
 							i(31391),	-- Plans: Wildguard Leggings (RECIPE!)
 							i(25836),	-- Preserver's Cudgel
-							i(32070),	-- Recipe: Earthen Elixir
+							i(32070),	-- Recipe: Earthen Elixir (RECIPE!)
 							i(31356),	-- Recipe: Flask of Distilled Wisdom (RECIPE!)
-							i(22922),	-- Recipe: Major Nature Protection Potion
-							i(25869),	-- Recipe: Transmute Earthstorm Diamond
-							i(22918),	-- Recipe: Transmute Primal Water to Air
+							i(22922),	-- Recipe: Major Nature Protection Potion (RECIPE!)
+							i(25869),	-- Recipe: Transmute Earthstorm Diamond (RECIPE!)
+							i(22918),	-- Recipe: Transmute Primal Water to Air (RECIPE!)
 							applyclassicphase(TBC_PHASE_TWO, i(35342)),	-- Satin Robe
 							applyclassicphase(TBC_PHASE_TWO, i(35408)),	-- Savage Plate Gauntlets
 							i(23814),	-- Schematic: Green Smoke Flare
@@ -1657,7 +1657,7 @@ root(ROOTS.Zones, {
 								["cost"] = { { "i", 24245, 2 }, },	-- 2x Glowcap
 								["timeline"] = { "removed 4.2.0", "deleted 4.2.0" },
 							}),
-							i(22916, {	-- Recipe: Transmute Primal Earth to Water
+							i(22916, {	-- Recipe: Transmute Primal Earth to Water (RECIPE!)
 								["cost"] = { { "i", 24245, 25 }, },	-- 25x Glowcap
 							}),
 							i(29150, {	-- Hardened Stone Shard

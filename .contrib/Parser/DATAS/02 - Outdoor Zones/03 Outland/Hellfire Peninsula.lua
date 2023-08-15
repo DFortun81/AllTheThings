@@ -3216,7 +3216,7 @@ root(ROOTS.Zones, {
 							})),
 							i(23619),	-- Plans: Felsteel Shield Spike (RECIPE!)
 							i(22905),	-- Recipe: Elixir of Major Agility (RECIPE!)
-							i(25870),	-- Recipe: Transmute Skyfire Diamond
+							i(25870),	-- Recipe: Transmute Skyfire Diamond (RECIPE!)
 							i(29169),	-- Ring of Convalescence
 							i(25826),	-- Sage's Band
 							applyclassicphase(TBC_PHASE_TWO, i(35466)),	-- Satin Hood
@@ -3313,7 +3313,7 @@ root(ROOTS.Zones, {
 							})),
 							i(24002),	-- Plans: Felsteel Shield Spike (RECIPE!)
 							i(24001),	-- Recipe: Elixir of Major Agility (RECIPE!)
-							i(29232),	-- Recipe: Transmute Skyfire Diamond
+							i(29232),	-- Recipe: Transmute Skyfire Diamond (RECIPE!)
 							applyclassicphase(TBC_PHASE_TWO, i(35339)),	-- Satin Hood
 							applyclassicphase(TBC_PHASE_TWO, i(35409)),	-- Savage Plate Helm
 							applyclassicphase(TBC_PHASE_TWO, i(35383)),	-- Seer's Linked Helm

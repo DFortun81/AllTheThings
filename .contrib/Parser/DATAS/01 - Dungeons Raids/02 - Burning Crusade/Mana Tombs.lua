@@ -275,7 +275,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(27828),	-- Warp-Scarab Brooch
 						-- #endif
 						i(28490),	-- Shaffar's Wrappings
-						i(22921),	-- Recipe: Major Frost Protection Potion
+						i(22921),	-- Recipe: Major Frost Protection Potion (RECIPE!)
 					},
 				}),
 			}),
@@ -425,7 +425,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(28490),	-- Shaffar's Wrappings
 							i(33835),	-- Shaffar's Wondrous Amulet
-							i(22921),	-- Recipe: Major Frost Protection Potion
+							i(22921),	-- Recipe: Major Frost Protection Potion (RECIPE!)
 						},
 					}),
 				},

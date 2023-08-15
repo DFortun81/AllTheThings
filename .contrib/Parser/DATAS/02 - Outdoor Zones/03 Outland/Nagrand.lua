@@ -1870,7 +1870,7 @@ root(ROOTS.Zones, {
 							i(25743),	-- Pattern: Netherfury Boots [H] (RECIPE!)
 							i(25742),	-- Pattern: Netherfury Leggings [H] (RECIPE!)
 							i(29664),	-- Pattern: Reinforced Mining Bag
-							i(22917),	-- Recipe: Transmute Primal Fire to Earth
+							i(22917),	-- Recipe: Transmute Primal Fire to Earth (RECIPE!)
 							i(31829),	-- Cobalt Riding Talbuk (H) (MOUNT!)
 							i(29102),	-- Cobalt War Talbuk (H) (MOUNT!)
 							i(31831),	-- Silver Riding Talbuk (H) (MOUNT!)
@@ -1942,7 +1942,7 @@ root(ROOTS.Zones, {
 									{ "i", 26044, 2 },	-- 2x Halaa Research Token
 								},
 							}),
-							i(32071, {	-- Recipe: Elixir of Ironskin
+							i(32071, {	-- Recipe: Elixir of Ironskin (RECIPE!)
 								["cost"] = { { "i", 26044, 2 }, },	-- 2x Halaa Research Token
 							}),
 							i(27650, {	-- Shadowstalker's Leggings
@@ -2042,7 +2042,7 @@ root(ROOTS.Zones, {
 									{ "i", 26044, 2 },	-- 2x Halaa Research Token
 								},
 							}),
-							i(32071, {	-- Recipe: Elixir of Ironskin
+							i(32071, {	-- Recipe: Elixir of Ironskin (RECIPE!)
 								["cost"] = { { "i", 26044, 2 }, },	-- 2x Halaa Research Token
 							}),
 							i(27650, {	-- Shadowstalker's Leggings
@@ -2122,7 +2122,7 @@ root(ROOTS.Zones, {
 							i(29218),	-- Pattern: Netherfury Boots [A] (RECIPE!)
 							i(29219),	-- Pattern: Netherfury Leggings [A] (RECIPE!)
 							i(30444),	-- Pattern: Reinforced Mining Bag (RECIPE!)
-							i(30443),	-- Recipe: Transmute Primal Fire to Earth
+							i(30443),	-- Recipe: Transmute Primal Fire to Earth (RECIPE!)
 							i(31830),	-- Cobalt Riding Talbuk (A) (MOUNT!)
 							i(29227),	-- Cobalt War Talbuk (A) (MOUNT!)
 							i(31832),	-- Silver Riding Talbuk (A) (MOUNT!)
@@ -2162,7 +2162,7 @@ root(ROOTS.Zones, {
 					i(23611, {	-- Plans: Ragesteel Gloves (RECIPE!)
 						["cr"] = 17136,	-- Boulderfist Warrior
 					}),
-					i(22923, {	-- Recipe: Major Arcane Protection Potion
+					i(22923, {	-- Recipe: Major Arcane Protection Potion (RECIPE!)
 						["cr"] = 17150,	-- Vir'aani Arcanist
 					}),
 					i(25433, {	-- Obsidian Warbeads

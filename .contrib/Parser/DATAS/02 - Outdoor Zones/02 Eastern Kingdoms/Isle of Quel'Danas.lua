@@ -1902,10 +1902,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 						i(34672),	-- Inuuro's Blade
 						i(34671),	-- K'iru's Presage
 						i(34673),	-- Legionfoe
-						i(35755),	-- Recipe: Assassin's Alchemist Stone
-						i(35752),	-- Recipe: Guardian's Alchemist Stone
-						i(35754),	-- Recipe: Redeemer's Alchemist Stone
-						i(35753),	-- Recipe: Sorcerer's Alchemist Stone
+						i(35755),	-- Recipe: Assassin's Alchemist Stone (RECIPE!)
+						i(35752),	-- Recipe: Guardian's Alchemist Stone (RECIPE!)
+						i(35754),	-- Recipe: Redeemer's Alchemist Stone (RECIPE!)
+						i(35753),	-- Recipe: Sorcerer's Alchemist Stone (RECIPE!)
 						i(34670),	-- Seeker's Gavel
 						i(34678),	-- Shattered Sun Pendant of Acumen
 						i(34679),	-- Shattered Sun Pendant of Might
