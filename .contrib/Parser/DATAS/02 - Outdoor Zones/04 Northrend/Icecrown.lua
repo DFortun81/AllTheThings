@@ -2304,14 +2304,14 @@ root(ROOTS.Zones, {
 						["timeline"] = { ADDED_3_0_3, REMOVED_5_0_4 },
 						["cr"] = 32349,	-- Cultist Shard Watcher
 					}),
-					i(44564, {	-- Recipe: Mighty Arcane Protection Potion
+					i(44564, {	-- Recipe: Mighty Arcane Protection Potion (RECIPE!)
 						["coord"] = { 50.1, 31.8, ICECROWN },
 						["crs"] = {
 							32297,	-- Cult Researcher
 							31702,	-- Frostbrood Spawn
 						},
 					}),
-					i(44565, {	-- Recipe: Mighty Fire Protection Potion
+					i(44565, {	-- Recipe: Mighty Fire Protection Potion (RECIPE!)
 						["coord"] = { 58.5, 73.1, ICECROWN },
 						["crs"] = {
 							31321,	-- Skeletal Runesmith
@@ -2320,15 +2320,15 @@ root(ROOTS.Zones, {
 							30922,	-- Umbral Brute
 						},
 					}),
-					i(44566, {	-- Recipe: Mighty Frost Protection Potion
+					i(44566, {	-- Recipe: Mighty Frost Protection Potion (RECIPE!)
 						["coord"] = { 52.1, 32.0, ICECROWN },
 						["cr"] = 32289,	-- Damned Apothecary
 					}),
-					i(44567, {	-- Recipe: Mighty Nature Protection Potion
+					i(44567, {	-- Recipe: Mighty Nature Protection Potion (RECIPE!)
 						["coord"] = { 50.1, 31.8, ICECROWN },
 						["cr"] = 32290,	-- Cult Alchemist <Cult of the Damned>
 					}),
-					i(44568, {	-- Recipe: Mighty Shadow Protection Potion
+					i(44568, {	-- Recipe: Mighty Shadow Protection Potion (RECIPE!)
 						["coord"] = { 48.0, 67.8, ICECROWN },
 						["cr"] = 32349,	-- Cultist Shard Watcher
 					}),
