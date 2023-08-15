@@ -8,7 +8,6 @@
 local i = GetRecipeHelperForProfession(ALCHEMY);
 -----------------
 -- #IF AFTER CLASSIC
-i(6454, 7935); -- Manual: Strong Anti-Venom
 i(9294, 11458); -- Recipe: Wildvine Potion
 i(13487, 17564); -- Recipe: Transmute Water to Undeath
 i(13486, 17563); -- Recipe: Transmute Undeath to Water
@@ -38,6 +37,7 @@ i(3832, 3453); -- Recipe: Elixir of Detect Lesser Invisibility
 -- #IF AFTER MOP
 -- #IF AFTER WOD
 -- #IF AFTER LEGION
+i(6454, 7935); -- Manual: Strong Anti-Venom
 -- #IF AFTER BFA
 -- #IF AFTER SHADOWLANDS
 i(186990, 354885); -- Recipe: Blossom Burst
