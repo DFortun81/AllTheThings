@@ -8,6 +8,7 @@ EASTERN_KINGDOMS_CUP_HEADER = createHeader({
 	eventID = EVENTS.EASTERN_KINGDOMS_CUP,
 	text = {
 		en = "Eastern Kingdoms Cup",
+		de = "Der Pokal der Östlichen Königreiche"
 	},
 });
 local RIDERS_OF_AZEROTH_BADGE = 2588;
@@ -228,8 +229,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76469, {	-- Blasted Lands Bolt
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 207357 },	-- Bronze Timekeeper
+			["coord"] = { 62.7, 26.2, BLASTED_LAND },
 			["g"] = {
 				ach(18474),	-- Blasted Lands Bolt: Bronze
 				ach(18475),	-- Blasted Lands Bolt: Silver
@@ -237,8 +238,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76470, {	-- Blasted Lands Bolt - Advanced
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 207357 },	-- Bronze Timekeeper
+			["coord"] = { 62.7, 26.2, BLASTED_LAND },
 			["g"] = {
 				ach(18477),	-- Blasted Lands Bolt Advanced: Bronze
 				ach(18478),	-- Blasted Lands Bolt Advanced: Silver
@@ -246,8 +247,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76471, {	-- Blasted Lands Bolt - Reverse
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 207357 },	-- Bronze Timekeeper
+			["coord"] = { 62.7, 26.2, BLASTED_LAND },
 			["g"] = {
 				ach(18480),	-- Blasted Lands Bolt Reverse: Bronze
 				ach(18481),	-- Blasted Lands Bolt Reverse: Silver
@@ -255,8 +256,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76515, {	-- Booty Bay Blast
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 207455 },	-- Bronze Timekeeper
+			["coord"] = { 40.4, 77.8, CAPE_OF_STRANGLETHORN },
 			["g"] = {
 				ach(18498),	-- Booty Bay Blast: Bronze
 				ach(18499),	-- Booty Bay Blast: Silver
@@ -264,8 +265,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76516, {	-- Booty Bay Blast - Advanced
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 207455 },	-- Bronze Timekeeper
+			["coord"] = { 40.4, 77.8, CAPE_OF_STRANGLETHORN },
 			["g"] = {
 				ach(18501),	-- Booty Bay Blast Advanced: Bronze
 				ach(18502),	-- Booty Bay Blast Advanced: Silver
@@ -273,8 +274,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76517, {	-- Booty Bay Blast - Reverse
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 207455 },	-- Bronze Timekeeper
+			["coord"] = { 40.4, 77.8, CAPE_OF_STRANGLETHORN },
 			["g"] = {
 				ach(18504),	-- Booty Bay Blast Reverse: Bronze
 				ach(18505),	-- Booty Bay Blast Reverse: Silver
@@ -282,8 +283,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76380, {	-- Deadwind Derby
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 206823 },	-- Bronze Timekeeper
+			["coord"] = { 46.2, 72.2, DEADWIND_PASS },
 			["g"] = {
 				ach(18435),	-- Deadwind Derby: Bronze
 				ach(18436),	-- Deadwind Derby: Silver
@@ -291,8 +292,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76381, {	-- Deadwind Derby - Advanced
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 206823 },	-- Bronze Timekeeper
+			["coord"] = { 46.2, 72.2, DEADWIND_PASS },
 			["g"] = {
 				ach(18438),	-- Deadwind Derby Advanced: Bronze
 				ach(18439),	-- Deadwind Derby Advanced: Silver
@@ -300,8 +301,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76382, {	-- Deadwind Derby - Reverse
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 206823 },	-- Bronze Timekeeper
+			["coord"] = { 46.2, 72.2, DEADWIND_PASS },
 			["g"] = {
 				ach(18441),	-- Deadwind Derby Reverse: Bronze
 				ach(18442),	-- Deadwind Derby Reverse: Silver
@@ -309,8 +310,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76397, {	-- Elwynn Forest Flash
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 206893 },	-- Bronze Timekeeper
+			["coord"] = { 64.7, 48.8, ELWYNN_FOREST },
 			["g"] = {
 				ach(18444),	-- Elwynn Forest Flash: Bronze
 				ach(18445),	-- Elwynn Forest Flash: Silver
@@ -318,8 +319,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76399, {	-- Elwynn Forest Flash - Advanced
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 206893 },	-- Bronze Timekeeper
+			["coord"] = { 64.7, 48.8, ELWYNN_FOREST },
 			["g"] = {
 				ach(18447),	-- Elwynn Forest Flash Advanced: Bronze
 				ach(18448),	-- Elwynn Forest Flash Advanced: Silver
@@ -327,8 +328,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76400, {	-- Elwynn Forest Flash - Reverse
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 206893 },	-- Bronze Timekeeper
+			["coord"] = { 64.7, 48.8, ELWYNN_FOREST },
 			["g"] = {
 				ach(18450),	-- Elwynn Forest Flash Reverse: Bronze
 				ach(18451),	-- Elwynn Forest Flash Reverse: Silver
@@ -336,8 +337,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76523, {	-- Fuselight Night Flight
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 207467 },	-- Bronze Timekeeper
+			["coord"] = { 67.1, 36.7, BADLANDS },
 			["g"] = {
 				ach(18510),	-- Fuselight Night Flight: Bronze
 				ach(18511),	-- Fuselight Night Flight: Silver
@@ -345,8 +346,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76524, {	-- Fuselight Night Flight - Advanced
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 207467 },	-- Bronze Timekeeper
+			["coord"] = { 67.1, 36.7, BADLANDS },
 			["g"] = {
 				ach(18513),	-- Fuselight Night Flight Advanced: Bronze
 				ach(18514),	-- Fuselight Night Flight Advanced: Silver
@@ -354,8 +355,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76525, {	-- Fuselight Night Flight - Reverse
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 207467 },	-- Bronze Timekeeper
+			["coord"] = { 67.1, 36.7, BADLANDS },
 			["g"] = {
 				ach(18516),	-- Fuselight Night Flight Reverse: Bronze
 				ach(18517),	-- Fuselight Night Flight Reverse: Silver
@@ -364,7 +365,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 		}),
 		dragonridingrace(76309, {	-- Gilneas Gambit
 			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["coord"] = { 57.3, 12.4, GILNEAS },
 			["g"] = {
 				ach(18399),	-- Gilneas Gambit: Bronze
 				ach(18400),	-- Gilneas Gambit: Silver
@@ -373,7 +374,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 		}),
 		dragonridingrace(76310, {	-- Gilneas Gambit - Advanced
 			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["coord"] = { 57.3, 12.4, GILNEAS },
 			["g"] = {
 				ach(18402),	-- Gilneas Gambit Advanced: Bronze
 				ach(18403),	-- Gilneas Gambite Advanced: Silver
@@ -382,7 +383,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 		}),
 		dragonridingrace(76311, {	-- Gilneas Gambit - Reverse
 			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["coord"] = { 57.3, 12.4, GILNEAS },
 			["g"] = {
 				ach(18405),	-- Gilneas Gambit Reverse: Bronze
 				ach(18406),	-- Gilneas Gambit Reverse: Silver
@@ -390,8 +391,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76438, {	-- Gurubashi Gala
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 207163 },	-- Bronze Timekeeper
+			["coord"] = { 70.1, 26.6, NORTHERN_STRANGLETHORN },
 			["g"] = {
 				ach(18453),	-- Gurubashi Gala: Bronze
 				ach(18454),	-- Gurubashi Gala: Silver
@@ -399,8 +400,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76439, {	-- Gurubashi Gala - Advanced
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 207163 },	-- Bronze Timekeeper
+			["coord"] = { 70.1, 26.6, NORTHERN_STRANGLETHORN },
 			["g"] = {
 				ach(18456),	-- Gurubashi Gala Advanced: Bronze
 				ach(18457),	-- Gurubashi Gala Advanced: Silver
@@ -408,8 +409,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76440, {	-- Gurubashi Gala - Reverse
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 207163 },	-- Bronze Timekeeper
+			["coord"] = { 70.1, 26.6, NORTHERN_STRANGLETHORN },
 			["g"] = {
 				ach(18459),	-- Gurubashi Gala Reverse: Bronze
 				ach(18460),	-- Gurubashi Gala Reverse: Silver
@@ -417,8 +418,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76445, {	-- Ironforge Interceptor
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 207173 },	-- Bronze Timekeeper
+			["coord"] = { 74.1, 34.0, DUN_MOROGH },
 			["g"] = {
 				ach(18462),	-- Ironforge Interceptor: Bronze
 				ach(18463),	-- Ironforge Interceptor: Silver
@@ -426,8 +427,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76446, {	-- Ironforge Interceptor - Advanced
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 207173 },	-- Bronze Timekeeper
+			["coord"] = { 74.1, 34.0, DUN_MOROGH },
 			["g"] = {
 				ach(18465),	-- Ironforge Interceptor Advanced: Bronze
 				ach(18466),	-- Ironforge Interceptor Advanced: Silver
@@ -435,8 +436,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76447, {	-- Ironforge Interceptor - Reverse
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 207173 },	-- Bronze Timekeeper
+			["coord"] = { 74.1, 34.0, DUN_MOROGH },
 			["g"] = {
 				ach(18468),	-- Ironforge Interceptor Reverse: Bronze
 				ach(18469),	-- Ironforge Interceptor Reverse: Silver
@@ -444,8 +445,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76527, {	-- Krazzworks Klash
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 207485 },	-- Bronze Timekeeper
+			["coord"] = { 72.9, 27.9, TWILIGHT_HIGHLANDS },
 			["g"] = {
 				ach(18519),	-- Krazzworks Klash: Bronze
 				ach(18520),	-- Krazzworks Klash: Silver
@@ -453,8 +454,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76528, {	-- Krazzworks Klash - Advanced
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 207485 },	-- Bronze Timekeeper
+			["coord"] = { 72.9, 27.9, TWILIGHT_HIGHLANDS },
 			["g"] = {
 				ach(18522),	-- Krazzworks Klash Advanced: Bronze
 				ach(18523),	-- Krazzworks Klash Advanced: Silver
@@ -462,8 +463,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76529, {	-- Krazzworks Klash - Reverse
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 207485 },	-- Bronze Timekeeper
+			["coord"] = { 72.9, 27.9, TWILIGHT_HIGHLANDS },
 			["g"] = {
 				ach(18525),	-- Krazzworks Klash Reverse: Bronze
 				ach(18526),	-- Krazzworks Klash Reverse: Silver
@@ -471,8 +472,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76339, {	-- Loch Modan Loop
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 206461 },	-- Bronze Timekeeper
+			["coord"] = { 47.0, 14.0, LOCH_MODAN },
 			["g"] = {
 				ach(18408),	-- Loch Modan Loop: Bronze
 				ach(18409),	-- Loch Modan Loop: Silver
@@ -480,8 +481,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76340, {	-- Loch Modan Loop - Advanced
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 206461 },	-- Bronze Timekeeper
+			["coord"] = { 47.0, 14.0, LOCH_MODAN },
 			["g"] = {
 				ach(18411),	-- Loch Modan Loop Advanced: Bronze
 				ach(18412),	-- Loch Modan Loop Advanced: Silver
@@ -489,8 +490,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76341, {	-- Loch Modan Loop - Reverse
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 206461 },	-- Bronze Timekeeper
+			["coord"] = { 47.0, 14.0, LOCH_MODAN },
 			["g"] = {
 				ach(18414),	-- Loch Modan Loop Reverse: Bronze
 				ach(18415),	-- Loch Modan Loop Reverse: Silver
@@ -498,8 +499,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76510, {	-- Plaguelands Plunge
-			-- ["provider"] = { "n", 203657 },	-- Bronze Timekeeper
-			-- ["coord"] = { 67.2, 26.2, ? },
+			-- ["provider"] = { "n", X },	-- Bronze Timekeeper
+			 ["coord"] = { 34.2, 36.8, EASTERN_PLAGUELANDS },
 			["g"] = {
 				ach(18483),	-- Plaguelands Plunge: Bronze
 				ach(18484),	-- Plaguelands Plunge: Silver
@@ -507,8 +508,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76512, {	-- Plaguelands Plunge - Advanced
-			-- ["provider"] = { "n", 203657 },	-- Bronze Timekeeper
-			-- ["coord"] = { 67.2, 26.2, ? },
+			-- ["provider"] = { "n", X },	-- Bronze Timekeeper
+			["coord"] = { 34.2, 36.8, EASTERN_PLAGUELANDS },
 			["g"] = {
 				ach(18486),	-- Plaguelands Plunge Advanced: Bronze
 				ach(18487),	-- Plaguelands Plunge Advanced: Silver
@@ -516,8 +517,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76513, {	-- Plaguelands Plunge - Reverse
-			-- ["provider"] = { "n", 203657 },	-- Bronze Timekeeper
-			-- ["coord"] = { 67.2, 26.2, ? },
+			-- ["provider"] = { "n", X },	-- Bronze Timekeeper
+			["coord"] = { 34.2, 36.8, EASTERN_PLAGUELANDS },
 			["g"] = {
 				ach(18489),	-- Plaguelands Plunge Reverse: Bronze
 				ach(18490),	-- Plaguelands Plunge Reverse: Silver
@@ -525,8 +526,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76536, {	-- Redridge Rally Thread
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 207524 },	-- Bronze Timekeeper
+			["coord"] = { 40.8, 25.0, REDRIDGE_MOUNTAINS },
 			["g"] = {
 				ach(18528),	-- Redridge Rally Thread: Bronze
 				ach(18529),	-- Redridge Rally Thread: Silver
@@ -534,8 +535,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76537, {	-- Redridge Rally Thread - Advanced
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 207524 },	-- Bronze Timekeeper
+			["coord"] = { 40.8, 25.0, REDRIDGE_MOUNTAINS },
 			["g"] = {
 				ach(18531),	-- Redridge Rally Thread Advanced: Bronze
 				ach(18532),	-- Redridge Rally Thread Advanced: Silver
@@ -543,8 +544,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76538, {	-- Redridge Rally Thread - Reverse
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 207524 },	-- Bronze Timekeeper
+			["coord"] = { 40.8, 25.0, REDRIDGE_MOUNTAINS },
 			["g"] = {
 				ach(18534),	-- Redridge Rally Thread Reverse: Bronze
 				ach(18535),	-- Redridge Rally Thread Reverse: Silver
@@ -552,8 +553,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76357, {	-- Searing Slalom
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 206618 },	-- Bronze Timekeeper
+			["coord"] = { 73.3, 42.4, SEARING_GORGE },
 			["g"] = {
 				ach(18417),	-- Searing Slalom: Bronze
 				ach(18418),	-- Searing Slalom: Silver
@@ -561,8 +562,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76358, {	-- Searing Slalom - Advanced
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 206618 },	-- Bronze Timekeeper
+			["coord"] = { 73.3, 42.4, SEARING_GORGE },
 			["g"] = {
 				ach(18420),	-- Searing Slalom Advanced: Bronze
 				ach(18421),	-- Searing Slalom Advanced: Silver
@@ -570,8 +571,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76359, {	-- Searing Slalom - Reverse
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 206618 },	-- Bronze Timekeeper
+			["coord"] = { 73.3, 42.4, SEARING_GORGE },
 			["g"] = {
 				ach(18423),	-- Searing Slalom Reverse: Bronze
 				ach(18424),	-- Searing Slalom Reverse: Silver
@@ -579,8 +580,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76364, {	-- Twilight Terror
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 206764 },	-- Bronze Timekeeper
+			["coord"] = { 34.8, 77.9, TWILIGHT_HIGHLANDS },
 			["g"] = {
 				ach(18426),	-- Twilight Terror: Bronze
 				ach(18427),	-- Twilight Terror: Silver
@@ -588,8 +589,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76365, {	-- Twilight Terror - Advanced
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ULDUM },
+			["provider"] = { "n", 206764 },	-- Bronze Timekeeper
+			["coord"] = { 34.8, 77.9, TWILIGHT_HIGHLANDS },
 			["g"] = {
 				ach(18429),	-- Twilight Terror Advanced: Bronze
 				ach(18430),	-- Twilight Terror Advanced: Silver
@@ -597,8 +598,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76366, {	-- Twilight Terror - Reverse
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ? },
+			["provider"] = { "n", 206764 },	-- Bronze Timekeeper
+			["coord"] = { 34.8, 77.9, TWILIGHT_HIGHLANDS },
 			["g"] = {
 				ach(18432),	-- Twilight Terror Reverse: Bronze
 				ach(18433),	-- Twilight Terror Reverse: Silver
