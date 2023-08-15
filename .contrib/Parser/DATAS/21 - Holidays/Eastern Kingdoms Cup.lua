@@ -208,10 +208,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 				18571,	-- Eastern Kingdoms Advanced: Gold
 				18574,	-- Eastern Kingdoms Reverse: Gold
 			}},
-			-- TODO: Find the title ID
-			-- 	["g"] = {
-			-- 		title(),	-- Eastern Kingdoms Racer <Name>
-			-- 	},
+			["g"] = {
+				title(515),	-- Eastern Kingdoms Racer <Name>
+			},
 		}),
 	}),
 	n(QUESTS, {
@@ -625,7 +624,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 				i(203349, {	-- Winding Slitherdrake: Curved Nose Horn (DM!)
 					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
 				}),
-		
+
 				i(206592, {	-- Drake Racer's Belt
 					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
 				}),
