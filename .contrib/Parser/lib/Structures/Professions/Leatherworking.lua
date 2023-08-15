@@ -121,7 +121,7 @@ EXPERT_ARTISAN_LEATHERWORKING = {
 		r(10556),	-- Turtle Scale Leggings
 		-- #if AFTER TBC
 		r(10650),	-- Dragonscale Breastplate
-		r(10619),	-- Dragonscale Gauntlets
+		r(10619, {["timeline"] = {REMOVED_4_0_3}}),	-- Dragonscale Gauntlets
 		r(10647),	-- Feathered Breastplate
 		r(10630),	-- Gauntlets of the Sea
 		r(24655),	-- Green Dragonscale Gauntlets
