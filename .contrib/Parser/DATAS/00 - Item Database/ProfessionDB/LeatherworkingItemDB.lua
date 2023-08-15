@@ -210,7 +210,7 @@ i(0, 10656, nil, DRAGONSCALE);	-- Dragonscale Leatherworking [REMOVED: 4.0.3]
 -- #if BEFORE TBC
 i(0, 24654, nil, DRAGONSCALE);	-- Blue Dragonscale Leggings
 i(0, 10650, nil, DRAGONSCALE);	-- Dragonscale Breastplate
-i(0, 10619, nil, DRAGONSCALE);	-- Dragonscale Gauntlets
+i(0, 10619, nil, DRAGONSCALE);	-- Dragonscale Gauntlets [REMOVED 4.0.3]
 i(0, 24655, nil, DRAGONSCALE);	-- Green Dragonscale Gauntlets
 i(17025, 20855, nil, DRAGONSCALE);	-- Black Dragonscale Boots
 i(15759, 19085, nil, DRAGONSCALE);	-- Black Dragonscale Breastplate
