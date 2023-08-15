@@ -641,7 +641,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 							iupgrade(204390,3),	-- Bonds of Desperate Ascension
 							iupgrade(202585,3),	-- Coattails of the Rightful Heir
 							iupgrade(204424,3),	-- Crechebound Soldier's Boots
-							iupgrade(202565,3),	-- Erethos, the Empty Promise
+							i(202565),			-- Erethos, the Empty Promise	-- Doesnt unlock normal mog 10/08
 							iupgrade(202564,3),	-- Fang of the Sundered Flame
 							iupgrade(202587,3),	-- Oathbreaker's Obsessive Gauntlets
 							iupgrade(204399,3),	-- Oblivion's Immortal Coil
@@ -1300,7 +1300,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 						iupgrade(204390,6),	-- Bonds of Desperate Ascension
 						iupgrade(202585,6),	-- Coattails of the Rightful Heir
 						iupgrade(204424,6),	-- Crechebound Soldier's Boots
-						iupgrade(202565,6),	-- Erethos, the Empty Promise
+						i(202565),			-- Erethos, the Empty Promise	-- Doesnt unlock mythic mog 10/08
 						iupgrade(202564,6),	-- Fang of the Sundered Flame
 						iupgrade(202587,6),	-- Oathbreaker's Obsessive Gauntlets
 						iupgrade(204399,6),	-- Oblivion's Immortal Coil
