@@ -148,15 +148,16 @@ local DefaultFields = {
 		-- quest 76250
 		-- item with modID, so key is itemID, t[key] is 13544
 		-- SFO uses 'modItemID' to verify 'itemID' search result object accuracy, thus '13544' never matches the expected '13544.01'
-		-- somehow we need to know to search by 'itemID' but using the 'modItemID' here
+		-- so we need to know to search by 'itemID' but using the 'modItemID' here for base itemID lookups of missing
+		-- i.e. if searching 13544, we allow 13544.01 to count as a non-missing representation of the search... makes sense?
 		local val = key == "itemID" and t.modItemID or t[key];
-		local o = app.SearchForObject(key, val, "field");
+		local o = app.SearchForObject(key, val, "field") or (val == t.itemID and app.SearchForObject(key, val));
 		local missing = true;
 		while o do
 			missing = rawget(o, "_missing");
 			o = not missing and (o.sourceParent or o.parent) or nil;
 		end
-		t._missing = missing;
+		t._missing = missing or false;
 		return missing;
 	end,
 	["nmc"] = function(t)
