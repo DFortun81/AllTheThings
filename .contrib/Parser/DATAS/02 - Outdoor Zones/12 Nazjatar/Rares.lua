@@ -92,8 +92,8 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
-				i(169612),	-- Recipe: Osmenite Deposit [Rank 2]
-				i(169613),	-- Recipe: Osmenite Seam [Rank 2]
+				i(169612),	-- Recipe: Osmenite Deposit [Rank 2] (RECIPE!)
+				i(169613),	-- Recipe: Osmenite Seam [Rank 2] (RECIPE!)
 			},
 		}),
 		n(152361, {	-- Banescale the Packfather

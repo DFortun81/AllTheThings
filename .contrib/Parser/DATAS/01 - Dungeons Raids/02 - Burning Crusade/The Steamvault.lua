@@ -120,7 +120,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 			d(NORMAL_DUNGEON, {
 				e(573, {	-- Hydromancer Thespia
-					["crs"] = { 17797 },
+					["creatureID"] = 17797,
 					["groups"] = {
 						i(27789),	-- Cloak of Whispering Shells
 						-- #if AFTER 7.3.5
@@ -238,7 +238,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							-- #endif
 							i(27783),	-- Moonrage Girdle
 							i(27784),	-- Scintillating Coral Band
-							ig(29673, {	-- Pattern: Frost Armor Kit (RECIPE!)
+							i(29673, {	-- Pattern: Frost Armor Kit (RECIPE!)
 								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(30828),	-- Vial of Underworld Loam
