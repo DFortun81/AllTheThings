@@ -248,7 +248,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 		}),
 		dragonridingrace(75472, {	-- Ahn'Qiraj Circuit
 			["provider"] = { "n", 204092 },	-- Bronze Timekeeper
-			["coord"] = { 39.6, 84.2, AHNQIRAJ_THE_FALLEN_KINGDOM },
+			["coord"] = { 39.6, 84.2, SILITHUS },
 			["g"] = {
 				ach(17685),	-- Ahn'Qiraj Circuit: Bronze
 				ach(17686),	-- Ahn'Qiraj Circuit: Silver
@@ -257,7 +257,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 		}),
 		dragonridingrace(75473, {	-- Ahn'Qiraj Circuit - Advanced
 			["provider"] = { "n", 204092 },	-- Bronze Timekeeper
-			["coord"] = { 39.6, 84.2, AHNQIRAJ_THE_FALLEN_KINGDOM },
+			["coord"] = { 39.6, 84.2, SILITHUS },
 			["g"] = {
 				ach(17688),	-- Ahn'Qiraj Circuit Advanced: Bronze
 				ach(17689),	-- Ahn'Qiraj Circuit Advanced: Silver
@@ -266,7 +266,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 		}),
 		dragonridingrace(75474, {	-- Ahn'Qiraj Circuit - Reverse
 			["provider"] = { "n", 204092 },	-- Bronze Timekeeper
-			["coord"] = { 39.6, 84.2, AHNQIRAJ_THE_FALLEN_KINGDOM },
+			["coord"] = { 39.6, 84.2, SILITHUS },
 			["g"] = {
 				ach(17691),	-- Ahn'Qiraj Circuit Reverse: Bronze
 				ach(17692),	-- Ahn'Qiraj Circuit Reverse: Silver
