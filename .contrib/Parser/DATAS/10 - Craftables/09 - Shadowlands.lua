@@ -573,6 +573,26 @@ root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0
 			i(172348),	-- Desolate Leather Cestus
 		}),
 	}),
+	prof(MINING, {
+		spell(2575, {	-- Mining
+			i(171839),	-- Elethium Nugget
+			i(171833),	-- Elethium Ore
+			i(171834),	-- Laestrite Nugget
+			i(171828),	-- Laestrite Ore
+			i(171836),	-- Oxxein Nugget
+			i(171830),	-- Oxxein Ore
+			i(171837),	-- Phaedrum Nugget
+			i(171831),	-- Phaedrum Ore
+			i(171840),	-- Porous Stone
+			i(187700, {["timeline"] = {ADDED_9_2_0}}),	-- Progenium Ore
+			i(171841),	-- Shaded Stone
+			i(171838),	-- Sinvyr Nugget
+			i(171832),	-- Sinvyr Ore
+			i(171835),	-- Solenium Nugget
+			i(171829),	-- Solenium Ore
+			i(177061),	-- Twilight Bark
+		}),
+	}),
 	prof(TAILORING, {
 		n(HEAD, {
 			i(173245),	-- Grim-Veiled Hood

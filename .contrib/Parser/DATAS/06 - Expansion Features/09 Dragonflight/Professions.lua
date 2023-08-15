@@ -19,7 +19,6 @@ local EARTH_ELEMENTAL = {
 	},
 };
 local JEWELCRAFTING_KNOWLEDGE = 2029;
-local MINING_KNOWLEDGE = 2035;
 local SKINNING_KNOWLEDGE = 2033;
 local TAILORING_KNOWLEDGE = 2026;
 
@@ -658,99 +657,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["crs"] = EARTH_ELEMENTAL.crs,
 					["provider"] = { "i", 198973 },	-- Incandescent Curio
 					["coords"] = EARTH_ELEMENTAL.coords,
-				}),
-			})),
-		})),
-		prof(MINING, bubbleDown({ ["requireSkill"] = MINING }, {
-			n(QUESTS, {
-				q(70028, {	-- Artisan's Supply: Salt Deposits
-					["provider"] = { "n", 187261 },	-- Grun Ashbeard
-					["coord"] = { 76.3, 34.6, THE_WAKING_SHORES },
-					["cost"] = { { "i", 197754, 5 }, },	-- 5x Salt Deposit
-					["_drop"] = { "g" },
-				}),
-				q(70258, {	-- Hidden Profession Master Mining
-					["name"] = "Hidden Profession Master: Mining",
-					["provider"] = { "n", 194843 },	-- Bridgette Holdug
-					["coord"] = { 61.4, 76.9, THALDRASZUS },
-				}),
-				q(70192, {	-- Specialized Secrets: Mining
-					["sourceQuests"] = { 69979 },	-- A Worthy Hunt
-					["provider"] = { "n", 193110 },	-- Khadin
-					["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
-					["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
-					["isRepeatable"] = true,
-					["g"] = {
-						i(190456),	-- Artisan's Mettle
-					},
-				}),
-			}),
-			n(QUESTS, sharedData({
-				["description"] = "Requires 25 Skill.",
-				["provider"] = { "n", 185553 },	-- Sekita the Burrower
-				["coord"] = { 39.0, 51.2, VALDRAKKEN },
-				["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-				["isWeekly"] = true,
-				["g"] = {
-					i(199122),	-- Mining Field Notes
-				},
-			},{
-				q(72156),	-- A Fiery Flight
-				q(70617),	-- All Mine, Mine, Mine
-				q(70618),	-- The Call of the Forge
-				q(72157),	-- The Weight of Earth
-			})),
-			filter(RECIPES, {
-				["description"] = "These are learned by specialization.",
-				["g"] = sharedData({ ["cost"] = { { "c", MINING_KNOWLEDGE, 1 } }, }, {
-					r(389701),	-- Overload Hardened Node
-					r(389704),	-- Overload Infurious Node
-					r(389700),	-- Overload Molten Node
-					r(389702),	-- Overload Primal Node
-					r(389703),	-- Overload Titan Node
-					r(383793),	-- Refine Draconium++
-					r(383795),	-- Refine Draconium+++
-					r(383796),	-- Refine Khaz'gorite++
-					r(383797),	-- Refine Khaz'gorite+++
-					r(383649),	-- Refine Serevite++
-					r(383792),	-- Refine Serevite+++
-				}),
-			}),
-			n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
-				["isWeekly"] = true,
-				["g"] = {
-					currency(MINING_KNOWLEDGE),
-				},
-			},{
-				i(199122),	-- Mining Field Notes
-				q(74106, {		-- Inscription Order: Mining
-					["name"] = "Inscription Order: Mining",
-					["description"] = "Requires a crafting order from Inscription.",
-					["provider"] = { "i", 194708 },	-- Draconic Treatise on Mining
-				}),
-				q(72160, {	-- Weekly Mining Knowledgepoint #1
-					["name"] = "Weekly Mining Knowledgepoint #1",
-					["provider"] = { "i", 201300 },	-- Iridescent Ore Fragments
-				}),
-				q(72161, {	-- Weekly Mining Knowledgepoint #2
-					["name"] = "Weekly Mining Knowledgepoint #2",
-					["provider"] = { "i", 201300 },	-- Iridescent Ore Fragments
-				}),
-				q(72162, {	-- Weekly Mining Knowledgepoint #3
-					["name"] = "Weekly Mining Knowledgepoint #3",
-					["provider"] = { "i", 201300 },	-- Iridescent Ore Fragments
-				}),
-				q(72163, {	-- Weekly Mining Knowledgepoint #4
-					["name"] = "Weekly Mining Knowledgepoint #4",
-					["provider"] = { "i", 201300 },	-- Iridescent Ore Fragments
-				}),
-				q(72164, {	-- Weekly Mining Knowledgepoint #5
-					["name"] = "Weekly Mining Knowledgepoint #5",
-					["provider"] = { "i", 201300 },	-- Iridescent Ore Fragments
-				}),
-				q(72165, {	-- Weekly Mining Knowledgepoint #6
-					["name"] = "Weekly Mining Knowledgepoint #6",
-					["provider"] = { "i", 201301 },	-- Iridescent Ore
 				}),
 			})),
 		})),

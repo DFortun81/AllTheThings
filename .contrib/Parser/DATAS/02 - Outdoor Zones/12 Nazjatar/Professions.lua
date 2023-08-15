@@ -76,34 +76,15 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["g"] = NAZJATAR_LEATHERWORKING,
 		}),
 		prof(MINING, {
-			q(56103, {	-- Ounces of Osmenite (A)
-				["provider"] = { "i", 168939 },	-- Osmenite Shards
-				["races"] = ALLIANCE_ONLY,
-				["g"] = {
-					recipe(296147),	-- Mining Technique: Osmenite Deposit (Rank 3)
-				},
-			}),
-			q(56431, {	-- Ounces of Osmenite (H)
-				["provider"] = { "i", 169597 },	-- Osmenite Shards
-				["races"] = HORDE_ONLY,
-				["g"] = {
-					recipe(296147),	-- Mining Technique: Osmenite Deposit (Rank 3)
-				},
-			}),
-			q(56126, {	-- Seams to be a Problem (A)
-				["provider"] = { "i", 168954 },	-- Osmenite Dust
-				["races"] = ALLIANCE_ONLY,
-				["g"] = {
-					recipe(296143),	-- Mining Technique: Osmenite Seam (Rank 3)
-				},
-			}),
-			q(56432, {	-- Seams to be a Problem (H)
-				["provider"] = { "i", 169598 },	-- Osmenite Dust
-				["races"] = HORDE_ONLY,
-				["g"] = {
-					recipe(296143),	-- Mining Technique: Osmenite Seam (Rank 3)
-				},
-			}),
+			["crs"] = {
+				154257, -- Instructor Ulooaka <Profession Trainer> (A)
+				154408, -- Rolm <Profession Trainer> (H)
+			},
+			["coords"] = {
+				{ 38.0, 53.0, NAZJATAR },
+				{ 49.2, 61.8, NAZJATAR },
+			},
+			["g"] = NAZJATAR_MINING,
 		}),
 		prof(SKINNING, {
 			q(56565, {	-- Hanging by a Thread (A)

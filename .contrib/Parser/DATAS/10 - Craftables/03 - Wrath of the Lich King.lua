@@ -454,46 +454,6 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 	}),
 	prof(HERBALISM, {
 		n(DISCOVERY, {
-			r(55428, {	-- Lifeblood [Rank 1] / Rank 2 [CATA]
-				-- #if AFTER CATA
-				["rank"] = 2,
-				-- #else
-				["rank"] = 1,
-				-- #endif
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
-			}),
-			r(55480, {	-- Lifeblood [Rank 2] / Rank 3 [CATA]
-				-- #if AFTER CATA
-				["rank"] = 3,
-				-- #else
-				["rank"] = 2,
-				-- #endif
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
-			}),
-			r(55500, {	-- Lifeblood [Rank 3] / Rank 4 [CATA]
-				-- #if AFTER CATA
-				["rank"] = 4,
-				-- #else
-				["rank"] = 3,
-				-- #endif
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
-			}),
-			r(55501, {	-- Lifeblood (Rank 4) / Rank 5 [CATA]
-				-- #if AFTER CATA
-				["rank"] = 5,
-				-- #else
-				["rank"] = 4,
-				-- #endif
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
-			}),
-			r(55502, {	-- Lifeblood (Rank 5) / Rank 6 [CATA]
-				-- #if AFTER CATA
-				["rank"] = 6,
-				-- #else
-				["rank"] = 5,
-				-- #endif
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
-			}),
 			r(55503, {	-- Lifeblood (Rank 6) / Rank 7 [CATA]
 				-- #if AFTER CATA
 				["rank"] = 7,
@@ -506,7 +466,6 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 		spell(2366, {	-- Herb Gathering
 			i(36903),	-- Adder's Tongue
 			i(108353, {["timeline"] = {ADDED_6_0_2}}),	-- Adder's Tongue Stem
-			i(37704),	-- Crystallized Life
 			i(37921),	-- Deadnettle
 			i(108358, {["timeline"] = {ADDED_6_0_2}}),	-- Deadnettle Bramble
 			i(39970),	-- Fire Leaf
@@ -522,6 +481,8 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 			i(108357, {["timeline"] = {ADDED_6_0_2}}),	-- Talandra's Rose Petal
 			i(36904),	-- Tiger Lily
 			i(108354, {["timeline"] = {ADDED_6_0_2}}),	-- Tiger Lily Petal
+			-- Not Herb --
+			i(37704),	-- Crystallized Life
 		}),
 	}),
 	prof(INSCRIPTION, {
@@ -797,60 +758,53 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 		}),
 	}),
 	prof(MINING, {
-		["description"] = "The following items can be gathered by Miners out in the world.",
-		["groups"] = {
-			spell(2656, {	-- Smelting
-				["description"] = "The following items can be smelted by Miners in a city.",
-				["groups"] = {
-					i(36916, {	-- Cobalt Bar
-						["cost"] = { { "i", 36909, 1 } },	-- Cobalt Ore
-					}),
-					i(36913, {	-- Saronite Bar
-						["cost"] = { { "i", 36912, 2 } },	-- Saronite Ore
-					}),
-					i(41163, {	-- Titanium Bar
-						["cost"] = { { "i", 36910, 2 } },	-- Titanium Ore
-					}),
-					i(37663, {	-- Titansteel Bar
-						["cost"] = {
-							{ "i", 41163, 3 },	-- Titanium Bar
-							{ "i", 35624, 1 },	-- Eternal Earth
-							{ "i", 36860, 1 },	-- Eternal Fire
-							{ "i", 35627, 1 },	-- Eternal Shadow
-						},
-						["OnTooltip"] = [[function(t)
-							if _.CurrentCharacter.Spells[55208] then
-								if GetSpellCooldown(55208) > 0 then
-									GameTooltip:AddLine("Your Titansteel cooldown is unavailable.");
-								else
-									GameTooltip:AddLine("Your Titansteel cooldown is available.");
-								end
-							end
-						end]]
-					}),
-				},
-			}),
+		n(DISCOVERY, {
+			r(53040, {["timeline"] = {ADDED_3_0_3, REMOVED_6_0_2}}),	-- Toughness [Rank 6]
+		}),
+		spell(2575, {	-- Mining
 			i(36909),	-- Cobalt Ore
+			i(108305, {["timeline"] = {ADDED_6_0_2}}),	-- Cobalt Ore Nugget
 			i(36912),	-- Saronite Ore
+			i(108306, {["timeline"] = {ADDED_6_0_2}}),	-- Saronite Ore Nugget
 			i(36910),	-- Titanium Ore
+			i(108391, {["timeline"] = {ADDED_6_0_2}}),	-- Titanium Ore Nugget
+			-- Not Ore --
+			i(36921),	-- Autumn's Glow
+			i(36917),	-- Bloodstone
+			i(36923),	-- Chalcedony
 			i(37700),	-- Crystallized Air
 			i(37701),	-- Crystallized Earth
 			i(37702),	-- Crystallized Fire
 			i(37703),	-- Crystallized Shadow
 			i(37705),	-- Crystallized Water
-			i(36917),	-- Bloodstone
-			i(36923),	-- Chalcedony
 			i(36932),	-- Dark Jade
-			i(36929),	-- Huge Citrine
-			i(36926),	-- Shadow Crystal
-			i(36920),	-- Sun Crystal
-			i(36921),	-- Autumn's Glow
+			i(35624),	-- Eternal Earth
+			i(35627),	-- Eternal Shadow
 			i(36933),	-- Forest Emerald
+			i(36929),	-- Huge Citrine
 			i(36930),	-- Monarch Topaz
 			i(36918),	-- Scarlet Ruby
+			i(36926),	-- Shadow Crystal
 			i(36924),	-- Sky Sapphire
+			i(36920),	-- Sun Crystal
 			i(36927),	-- Twilight Opal
-		},
+		}),
+		spell(2656, {	-- Smelting
+			i(36916),	-- Cobalt Bar
+			i(36913),	-- Saronite Bar
+			i(41163),	-- Titanium Bar
+			i(37663, {	-- Titansteel Bar
+				["OnTooltip"] = [[function(t)
+					if _.CurrentCharacter.Spells[55208] then
+						if GetSpellCooldown(55208) > 0 then
+							GameTooltip:AddLine("Your Titansteel cooldown is unavailable.");
+						else
+							GameTooltip:AddLine("Your Titansteel cooldown is available.");
+						end
+					end
+				end]]
+			}),
+		}),
 	}),
 	prof(SKINNING, {
 		["description"] = "The following items can be gathered by skinning creatures out in the world.",

@@ -564,6 +564,16 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 		i(27429),	-- Zangarian Sporefish
 	}),
 	prof(HERBALISM, {
+		n(DISCOVERY, {
+			r(55502, {	-- Lifeblood (Rank 5) / Rank 6 [CATA]
+				-- #if AFTER CATA
+				["rank"] = 6,
+				-- #else
+				["rank"] = 5,
+				-- #endif
+				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
+			}),
+		}),
 		spell(2366, {	-- Herb Gathering
 			i(22790),	-- Ancient Lichen
 			i(108348, {["timeline"] = {ADDED_6_0_2}}),	-- Ancient Lichen Petal
@@ -576,7 +586,7 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 			i(22788),	-- Flame Cap
 			i(22793),	-- Mana Thistle
 			i(108351, {["timeline"] = {ADDED_6_0_2}}),	-- Mana Thistle Leaf
-			i(22575),	-- Mote of Life
+			i(35229, {["timeline"] = {ADDED_2_4_0}}),	-- Nether Residue
 			i(22791),	-- Netherbloom
 			i(108349, {["timeline"] = {ADDED_6_0_2}}),	-- Netherbloom Leaf
 			i(32468, {["timeline"] = {ADDED_2_1_0}}),	-- Netherdust Pollen
@@ -588,6 +598,9 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 			i(22789),	-- Terocone
 			i(108347, {["timeline"] = {ADDED_6_0_2}}),	-- Terocone Leaf
 			i(24401),	-- Unidentified Plant Parts
+			-- Not Herb --
+			i(22575),	-- Mote of Life
+			i(22576),	-- Mote of Mana
 		}),
 	}),
 	-- #if AFTER WRATH
@@ -919,27 +932,51 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 		}),
 	}),
 	prof(MINING, {
-		["description"] = "The following items can be gathered by Miners out in the world.",
-		["groups"] = {
-			spell(2656, {	-- Smelting
-				["description"] = "The following items can be smelted by Miners in a city.",
-				["groups"] = {
-					i(23446),	-- Adamantite Bar
-					i(23447),	-- Eternium Bar
-					i(23445),	-- Fel Iron Bar
-					i(23448),	-- Felsteel Bar
-					i(23573),	-- Hardened Adamantite Bar
-					applyclassicphase(TBC_PHASE_FIVE, i(35128)),	-- Hardened Khorium Bar
-					i(23449),	-- Khorium Bar
-				},
-			}),
+		n(DISCOVERY, {
+			r(53124, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}}),	-- Toughness [Rank 5]
+		}),
+		spell(2575, {	-- Mining
 			i(23425),	-- Adamantite Ore
+			i(108302, {["timeline"] = {ADDED_6_0_2}}),	-- Adamantite Ore Nugget
 			i(23427),	-- Eternium Ore
+			i(108303, {["timeline"] = {ADDED_6_0_2}}),	-- Eternium Ore Nugget
 			i(23424),	-- Fel Iron Ore
+			i(108301, {["timeline"] = {ADDED_6_0_2}}),	-- Fel Iron Ore Nugget
 			i(23426),	-- Khorium Ore
-			i(35229),	-- Nether Residue
-			i(32464),	-- Nethercite Ore
-		},
+			i(108304, {["timeline"] = {ADDED_6_0_2}}),	-- Khorium Ore Nugget
+			i(35229, {["timeline"] = {ADDED_2_4_0}}),	-- Nether Residue
+			i(32464, {["timeline"] = {ADDED_2_1_0}}),	-- Nethercite Ore
+			-- Not Ore --
+			i(23117),	-- Azure Moonstone
+			i(23077),	-- Blood Garnet
+			i(32227, {["timeline"] = {ADDED_2_1_0}}),	-- Crimson Spinel
+			i(23440),	-- Dawnstone
+			i(23079),	-- Deep Peridot
+			i(32228, {["timeline"] = {ADDED_2_1_0}}),	-- Empyrean Sapphire
+			i(21929),	-- Flame Spessarite
+			i(23112),	-- Golden Draenite
+			i(32229, {["timeline"] = {ADDED_2_1_0}}),	-- Lionseye
+			i(23436),	-- Living Ruby
+			i(22573),	-- Mote of Earth
+			i(22574),	-- Mote of Fire
+			i(23441),	-- Nightseye
+			i(23439),	-- Noble Topaz
+			i(32231, {["timeline"] = {ADDED_2_1_0}}),	-- Pyrestone
+			i(32249, {["timeline"] = {ADDED_2_1_0}}),	-- Seaspray Emerald
+			i(23107),	-- Shadow Draenite
+			i(32230, {["timeline"] = {ADDED_2_1_0}}),	-- Shadowsong Amethyst
+			i(23438),	-- Star of Elune
+			i(23437),	-- Talasite
+		}),
+		spell(2656, {	-- Smelting
+			i(23446),	-- Adamantite Bar
+			i(23447),	-- Eternium Bar
+			i(23445),	-- Fel Iron Bar
+			i(23448),	-- Felsteel Bar
+			i(23573),	-- Hardened Adamantite Bar
+			applyclassicphase(TBC_PHASE_FIVE, i(35128, {["timeline"] = {ADDED_2_4_0}})),	-- Hardened Khorium Bar
+			i(23449),	-- Khorium Bar
+		}),
 	}),
 	prof(SKINNING, {
 		["description"] = "The following items can be gathered by skinning creatures out in the world.",

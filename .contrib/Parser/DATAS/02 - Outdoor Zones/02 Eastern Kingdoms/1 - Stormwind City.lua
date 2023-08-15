@@ -2786,6 +2786,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["groups"] = CLASSIC_CATA_LEGION_LEATHERWORKING,
 					}),
 				}),
+				prof(MINING, {
+					n(5513, {	-- Gelman Stonehand <Mining Trainer>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 59.4, 37.6, STORMWIND_CITY },
+							-- #else
+							{ 51.0, 17.2, STORMWIND_CITY },
+							-- #endif
+						},
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = CLASSIC_CATA_MINING,
+					}),
+				}),
 			}),
 			n(QUESTS, {
 				q(7794, {	-- A Donation of Mageweave

@@ -525,6 +525,48 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 			i(129958),	-- Leather Pet Leash (TOY!)
 		}),
 	}),
+	prof(MINING, {
+		n(DISCOVERY, {
+			r(195122, {	-- Mining (Legion)
+				["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
+				["collectible"] = false,
+			}),
+			r(2656),	-- Mining Journal / Smelting
+			applyclassicphase(BFA_PHASE_ONE, r(265849, {["timeline"] = {ADDED_8_0_1}})),	-- Mining (Legion)
+		}),
+		spell(2575, {	-- Mining
+			i(124493),	-- Battered Mining Pick
+			i(124494),	-- Chunk of Horn
+			i(151864, {["timeline"] = {ADDED_7_3_0}}),	-- Embedded Empyrium Ore
+			i(151564, {["timeline"] = {ADDED_7_3_0}}),	-- Empyrium
+			i(151865, {["timeline"] = {ADDED_7_3_0}}),	-- Empyrium Bits
+			i(151860, {["timeline"] = {ADDED_7_3_0}}),	-- Empyrium Deposit Chunk
+			i(151861, {["timeline"] = {ADDED_7_3_0}}),	-- Empyrium Dust
+			i(151863, {["timeline"] = {ADDED_7_3_0}}),	-- Empyrium Seam Chunk
+			i(123919),	-- Felslate
+			i(124496),	-- Felslate Deposit Sample
+			i(124497),	-- Felslate Seam Sample
+			i(124444),	-- Infernal Brimstone
+			i(124502),	-- Infernal Brimstone Sample
+			i(124489),	-- Leystone Deposit Sample
+			i(123918),	-- Leystone Ore
+			i(124490),	-- Leystone Seam Sample
+			i(124498),	-- Living Felslate Sample
+			i(124491),	-- Living Leystone Sample
+			i(124499),	-- Ore-Bound Eye
+			i(124501),	-- Ore-Choked Heart
+			i(124500),	-- Severed Arm
+			i(124492),	-- Torn Journal Page
+			i(151862, {["timeline"] = {ADDED_7_3_0}}),	-- Unusable Empyrium Core
+			-- Not Ore --
+			i(151718, {["timeline"] = {ADDED_7_3_0}}),	-- Argulite
+			i(151720, {["timeline"] = {ADDED_7_3_0}}),	-- Chemirine
+			i(151722, {["timeline"] = {ADDED_7_3_0}}),	-- Florid Malachite
+			i(151721, {["timeline"] = {ADDED_7_3_0}}),	-- Hesselian
+			i(151579, {["timeline"] = {ADDED_7_3_0}}),	-- Labradorite
+			i(151719, {["timeline"] = {ADDED_7_3_0}}),	-- Lightsphene
+		}),
+	}),
 	prof(TAILORING, {
 		filter(BAGS, {
 			i(142075),	-- Imbued Silkweave Bag

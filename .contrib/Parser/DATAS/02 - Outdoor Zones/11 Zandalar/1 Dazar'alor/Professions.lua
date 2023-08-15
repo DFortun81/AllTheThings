@@ -248,93 +248,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				}),
 			}),
 			prof(MINING, {
-				-- Monelite Deposit
-				q(51962, {	-- Lumbering Away
-					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
-					["coord"] = { 44.0, 39.0, DAZARALOR },
-					["description"] = "Requires 50 Zandalari Mining",
-					["requireSkill"] = MINING,
+				n(122694, {	-- Secott the Goldsmith <Mining Trainer>
+					["coord"] = { 75.2, 7.6, BORALUS },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						recipe(253334),	-- Monelite Deposit (Rank 2)
-					},
-				}),
-				q(51964, {	-- Insufferable Bloodsuckers
-					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
-					["coord"] = { 44.0, 39.0, DAZARALOR },
-					["description"] = "Requires 130 Zandalari Mining",
-					["requireSkill"] = MINING,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						recipe(253335),	-- Monelite Deposit (Rank 3)
-					},
-				}),
-				-- Monelite Seam
-				q(51965, {	-- Lending a Hand
-					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
-					["coord"] = { 44.0, 39.0, DAZARALOR },
-					["description"] = "Requires 50 Zandalari Mining",
-					["requireSkill"] = MINING,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						recipe(253343),	-- Monelite Seam (Rank 2)
-					},
-				}),
-				-- Storm Silver Deposit
-				q(52014, {	-- Ritualistic Prepartions (H)
-					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
-					["coords"] = {
-						{ 44.0, 39.0, DAZARALOR },	-- Trainer Location
-						{ 44.0, 38.3, DAZARALOR },	-- Forge
-						{ 52.8, 95.6, DAZARALOR },	-- Ingot Blessing
-					},
-					["description"] = "Requires 50 Zandalari Mining\n44.0, 38.3 in Daza'alor is location of the Forge\n52.8, 95.6 in Daza'alor harbor is the location to get the Blessing",
-					["requireSkill"] = MINING,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						recipe(253337),	-- Storm Silver Deposit (Rank 2)
-					},
-				}),
-				q(52015, {	-- Brined Justice (H)
-					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
-					["coord"] = { 44.0, 39.0, DAZARALOR },
-					["sourceQuest"] = 52014,	-- Ritualistic Preparations (H)
-					["description"] = "Requires 135 Zandalari Mining",
-					["requireSkill"] = MINING,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						recipe(253338),	-- Storm Silver Deposit (Rank 3)
-					},
-				}),
-				-- Storm Silver Seam
-				q(52016, {	-- Three Sheets to the Wind (H)
-					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
-					["coord"] = { 44.0, 39.0, DAZARALOR },
-					["description"] = "Requires 125 Zandalari Mining",
-					["requireSkill"] = MINING,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						recipe(253346),	-- Storm Silver Seam (Rank 2)
-					},
-				}),
-				q(52017, {	-- Back to Biru
-					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
-					["coord"] = { 44.0, 39.0, DAZARALOR },
-					["sourceQuest"] = 52016,	-- Three Sheets to the Wind (H)
-					["description"] = "Requires 150 Zandalari Mining",
-					["requireSkill"] = MINING,
-					["races"] = HORDE_ONLY,
-				}),
-				q(52043, {	-- The Wrath of Grapes (H)
-					["provider"] = { "n", 139634 },	-- Biru The Drunk
-					["coord"] = { 52.7, 84.3, DAZARALOR },
-					["sourceQuest"] = 52017,	-- Back to Biru
-					["description"] = "Requires 150 Zandalari Mining",
-					["requireSkill"] = MINING,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						recipe(253347),	-- Storm Silver Seam (Rank 3)
-					},
+					["g"] = appendGroups(BFA_MINING, {
+						r(265853),	-- Mining (Zandalari)
+					}),
 				}),
 			}),
 			prof(SKINNING, {

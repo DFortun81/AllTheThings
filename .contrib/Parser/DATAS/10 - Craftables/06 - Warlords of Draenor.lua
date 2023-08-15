@@ -305,6 +305,12 @@ root(ROOTS.Craftables, tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDow
 		}),
 	}),
 	prof(HERBALISM, {
+		filter(BATTLE_PETS, {
+			i(118595, {	-- Nightshade Sproutling (PET!)
+				["crs"] = { 95132 },	-- Disturbed Podling
+				["requireSkill"] = HERBALISM
+			}),
+		}),
 		spell(2366, {	-- Herb Gathering
 			DRAENOR_HERBALISM,
 			i(109625),	-- Broken Fireweed Stem
@@ -318,12 +324,6 @@ root(ROOTS.Craftables, tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDow
 			i(109628),	-- Nagrand Arrowbloom Petal
 			i(109127),	-- Starflower
 			i(109627),	-- Starflower Petal
-		}),
-		filter(BATTLE_PETS, {
-			i(118595, {	-- Nightshade Sproutling (PET!)
-				["crs"] = { 95132 },	-- Disturbed Podling
-				["requireSkill"] = HERBALISM
-			}),
 		}),
 	}),
 	prof(INSCRIPTION, {
@@ -536,6 +536,21 @@ root(ROOTS.Craftables, tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDow
 		}),
 		filter(MOUNTS, {
 			i(108883),	-- Dustmane Direwolf (MOUNT!)
+		}),
+	}),
+	prof(MINING, {
+		filter(BATTLE_PETS, {
+			i(118919, {	-- Ore Eater (PET!)
+				["requireSkill"] = MINING,
+			}),
+		}),
+		spell(2575, {	-- Mining
+			DRAENOR_MINING,
+			i(109992),	-- Blackrock Fragment
+			i(109118),	-- Blackrock Ore
+			i(115508),	-- Draenic Stone
+			i(109991),	-- True Iron Nugget
+			i(109119),	-- True Iron Ore
 		}),
 	}),
 	prof(TAILORING, {

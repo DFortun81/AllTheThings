@@ -945,6 +945,12 @@ root(ROOTS.Zones, {
 							["coord"] = { 54.6, 44.2, THE_JADE_FOREST },
 						}),
 					}),
+					prof(MINING, {
+						n(65092, {	-- Smeltmaster Ashpaw <Mining Trainer>
+							["coord"] = { 46.0, 29.4, THE_JADE_FOREST },
+							["g"] = MOP_MINING,
+						}),
+					}),
 				}),
 				n(QUESTS, {
 					q(29619, {	-- A Courteous Guest

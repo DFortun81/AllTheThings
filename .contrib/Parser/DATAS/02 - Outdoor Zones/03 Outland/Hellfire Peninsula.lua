@@ -420,6 +420,17 @@ root(ROOTS.Zones, {
 						},
 						["groups"] = TBC_LEATHERWORKING,
 					}),
+					prof(MINING, {
+						["crs"] = {
+							18779,	-- Hurnak Grimmord <Mining Trainer> (A)
+							18747,	-- Krugosh <Mining Trainer> (H)
+						},
+						["coords"] = {
+							{ 56.6, 63.8, HELLFIRE_PENINSULA },
+							{ 55.4, 37.6, HELLFIRE_PENINSULA },
+						},
+						["groups"] = TBC_MINING,
+					}),
 				}),
 				n(QUESTS, {
 					q(10864, {	-- A Burden of Souls

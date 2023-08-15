@@ -304,9 +304,10 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 			i(108361, {["timeline"] = {ADDED_6_0_2}}),	-- Stormvine Stalk
 			i(52987),	-- Twilight Jasmine
 			i(108364, {["timeline"] = {ADDED_6_0_2}}),	-- Twilight Jasmine Petal
-			i(52329),	-- Volatile Life
 			i(52988),	-- Whiptail
 			i(108365, {["timeline"] = {ADDED_6_0_2}}),	-- Whiptail Stem
+			-- Not Herb --
+			i(52329),	-- Volatile Life
 		}),
 	}),
 	prof(INSCRIPTION, {
@@ -598,6 +599,47 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 			i(56502),	-- Scorched Leg Armor
 			i(70137, {["timeline"] = {ADDED_4_2_0}}),	-- Triple-Reinforced Mining Bag
 			i(56503),	-- Twilight Leg Armor
+		}),
+	}),
+	prof(MINING, {
+		filter(BATTLE_PETS, {
+			i(67282, {	-- Elementium Geode (PET!)
+				["requireSkill"] = MINING,
+			}),
+		}),
+		n(DISCOVERY, {
+			r(74496, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_6_0_2}}),	-- Toughness [Rank 7]
+		}),
+		spell(2575, {	-- Mining
+			i(52185),	-- Elementium Ore
+			i(108308, {["timeline"] = {ADDED_6_0_2}}),	-- Elementium Ore Nugget
+			i(53038),	-- Obsidium Ore
+			i(108307, {["timeline"] = {ADDED_6_0_2}}),	-- Obsidium Ore Nugget
+			i(52183),	-- Pyrite Ore
+			i(108309, {["timeline"] = {ADDED_6_0_2}}),	-- Pyrite Ore Nugget
+			-- Not Ore --
+			i(52179),	-- Alicite
+			i(52195),	-- Amberjewel
+			i(52177),	-- Carnelian
+			i(52194),	-- Demonseye
+			i(52192),	-- Dream Emerald
+			i(52193),	-- Ember Topaz
+			i(52181),	-- Hessonite
+			i(52190),	-- Inferno Ruby
+			i(52182),	-- Jasper
+			i(52180),	-- Nightstone
+			i(52191),	-- Ocean Sapphire
+			i(52328),	-- Volatile Air
+			i(52327),	-- Volatile Earth
+			i(52325),	-- Volatile Fire
+			i(52326),	-- Volatile Water
+			i(52178),	-- Zephyrite
+		}),
+		spell(2656, {	-- Smelting
+			i(52186),	-- Elementium Bar
+			i(53039),	-- Hardened Elementium Bar
+			i(54849),	-- Obsidium Bar
+			i(51950),	-- Pyrium Bar
 		}),
 	}),
 	prof(TAILORING, {

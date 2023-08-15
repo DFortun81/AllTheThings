@@ -2822,6 +2822,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["groups"] = CLASSIC_CATA_LEGION_LEATHERWORKING,
 					}),
 				}),
+				prof(MINING, {
+					n(3357, {	-- Makaru <Mining Trainer>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 72.4, 35.6, ORGRIMMAR },
+							-- #else
+							{ 73.0, 27.0, ORGRIMMAR },
+							-- #endif
+						},
+						["races"] = HORDE_ONLY,
+						["groups"] = CLASSIC_CATA_MINING,
+					}),
+				}),
 			}),
 			n(QUESTS, {
 				q(7831, {	-- A Donation of Mageweave

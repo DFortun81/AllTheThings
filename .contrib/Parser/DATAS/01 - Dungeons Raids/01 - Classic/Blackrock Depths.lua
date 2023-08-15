@@ -1535,9 +1535,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["cr"] = 9037,	-- Gloom'rel
 					["lvl"] = 40,
 					["groups"] = {
-						recipe(14891, {	-- Smelt Dark Iron
-							["requireSkill"] = MINING,
-						}),
+						r(14891),	-- Smelt Dark Iron
 					},
 				}),
 				q(4183, {	-- The True Masters (1/6)

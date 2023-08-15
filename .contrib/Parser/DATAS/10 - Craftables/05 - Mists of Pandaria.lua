@@ -1049,6 +1049,36 @@ root(ROOTS.Craftables, tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDow
 			i(85570),	-- Toughened Leg Armor
 		}),
 	}),
+	prof(MINING, {
+		n(DISCOVERY, {
+			r(102163, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Toughness [Rank 8]
+		}),
+		spell(2575, {	-- Mining
+			i(72094),	-- Black Trillium Ore
+			i(97512, {["timeline"] = {ADDED_5_3_0}}),	-- Ghost Iron Nugget
+			i(72092),	-- Ghost Iron Ore
+			i(72093),	-- Kyparite
+			i(97546, {["timeline"] = {ADDED_5_3_0}}),	-- Kyparite Fragment
+			i(72103),	-- White Trillium Ore
+			-- Not Ore --
+			i(76137),	-- Alexandrite
+			i(76141),	-- Imperial Amethyst
+			i(76133),	-- Lapis Lazuli
+			i(76136),	-- Pandarian Garnet
+			i(76131),	-- Primordial Ruby
+			i(76138),	-- River's Heart
+			i(76135),	-- Roguestone
+			i(76142),	-- Sun's Radiance
+			i(76134),	-- Sunstone
+			i(76130),	-- Tiger Opal
+			i(76140),	-- Vermilion Onyx
+			i(76139),	-- Wild Jade
+		}),
+		spell(2656, {	-- Smelting
+			i(72096),	-- Ghost Iron Bar
+			i(72095),	-- Trillium Bar
+		}),
+	}),
 	prof(TAILORING, {
 		filter(BATTLE_PETS, {
 			i(92960, bubbleDownSelf({ ["timeline"] = { ADDED_5_1_0 } }, {	-- Silkworm Cocoon

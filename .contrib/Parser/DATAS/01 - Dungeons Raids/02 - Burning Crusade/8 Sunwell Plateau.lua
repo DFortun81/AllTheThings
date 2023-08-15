@@ -56,7 +56,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 				i(35197),	-- Schematic: Quad Deathblow X44 Goggles
 				i(35194),	-- Schematic: Surestrike Goggles v3.0
 				i(35191),	-- Schematic: Wonderheal XT68 Shades
-				i(35273),	-- Study of Advanced Smelting
+				i(35273),	-- Study of Advanced Smelting (RECIPE!)
 				-- #if BEFORE MOP
 				i(34349, {	-- Blade of Life's Inevitability
 					["timeline"] = { "removed 5.0.4" },

@@ -16,18 +16,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					["lvl"] = 120,
 				}),
 			}),
-			prof(MINING, {
-				q(52050, {	-- A More Challenging Career
-					["provider"] = { "n", 139746 },		-- First Mate Cinderfuse
-					["coord"] = { 19.76, 44.54, DRUSTVAR },
-					["sourceQuest"] = 52049,	-- X Marks the Plat!
-					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = MINING,
-					["g"] = {
-						recipe(253341),	-- Platinum Deposit (Rank 3)
-					},
-				}),
-			}),
 		}),
 	}),
 })));

@@ -2681,7 +2681,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 		}),
 	}),
 	prof(MINING, {
-		spell(366260, {	-- Mining
+		spell(2575, {	-- Mining
 			i(203418, {["timeline"] = {ADDED_10_0_7}}),	-- Amplified Quaking Stone
 			i(189143),	-- Draconium Ore+
 			i(188658),	-- Draconium Ore++
@@ -2698,24 +2698,96 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(190396),	-- Serevite Ore++
 			i(190394),	-- Serevite Ore+++
 			i(194062),	-- Unyielding Stone Chunk
+			-- Not Ore --
+			i(192852),	-- Alexstraszite+
+			i(192853),	-- Alexstraszite++
+			i(192855),	-- Alexstraszite+++
+			i(192849),	-- Eternity Amber+
+			i(192850),	-- Eternity Amber++
+			i(192851),	-- Eternity Amber+++
+			i(192869),	-- Illimited Diamond+
+			i(192870),	-- Illimited Diamond++
+			i(192871),	-- Illimited Diamond+++
+			i(192856),	-- Malygite+
+			i(192857),	-- Malygite++
+			i(192858),	-- Malygite+++
+			i(192840),	-- Mystic Sapphire+
+			i(192841),	-- Mystic Sapphire++
+			i(192842),	-- Mystic Sapphire+++
+			i(192862),	-- Neltharite+
+			i(192863),	-- Neltharite++
+			i(192865),	-- Neltharite+++
+			i(192866),	-- Nozdorite+
+			i(192867),	-- Nozdorite++
+			i(192868),	-- Nozdorite+++
+			i(192837),	-- Queen's Ruby+
+			i(192838),	-- Queen's Ruby++
+			i(192839),	-- Queen's Ruby+++
+			i(192846),	-- Sundered Onyx+
+			i(192847),	-- Sundered Onyx++
+			i(192848),	-- Sundered Onyx+++
+			i(192843),	-- Vibrant Emerald+
+			i(192844),	-- Vibrant Emerald++
+			i(192845),	-- Vibrant Emerald+++
+			i(192859),	-- Ysemerald+
+			i(192860),	-- Ysemerald++
+			i(192861),	-- Ysemerald+++
 		}),
 		n(DISCOVERY, {
+			r(384688),	-- Draconium Deposit
+			r(389458, {["timeline"] = {ADDED_10_0_7}}),	-- Draconium Seam
+			r(389413),	-- Hardened Draconium Deposit
+			r(389463),	-- Hardened Serevite Deposit
+			r(389420),	-- Infurious Draconium Deposit
+			r(389464),	-- Infurious Serevite Deposit
 			r(405121, {["timeline"] = {ADDED_10_1_0}}),	-- Metamorphic Draconium Deposit
 			r(405120, {["timeline"] = {ADDED_10_1_0}}),	-- Metamorphic Serevite Deposit
-			r(388213, {["timeline"] = {ADDED_10_0_5}}),	-- Overload Elemental Deposit
+			r(384690),	-- Molten Draconium Deposit
+			r(389459),	-- Molten Serevite Deposit
 			r(389701),	-- Overload Hardened Node
 			r(389704),	-- Overload Infurious Node
 			r(405131, {["timeline"] = {ADDED_10_1_0}}),	-- Overload Metamorphic Deposit
 			r(389700),	-- Overload Molten Node
 			r(389702),	-- Overload Primal Node
 			r(389703),	-- Overload Titan Node
-			r(383793),	-- Refine Draconium++
-			r(383795),	-- Refine Draconium+++
-			r(383796),	-- Refine Khaz'gorite++
-			r(383797),	-- Refine Khaz'gorite+++
-			r(383649),	-- Refine Serevite++
-			r(383792),	-- Refine Serevite+++
+			r(389409),	-- Primal Draconium Deposit
+			r(389462),	-- Primal Serevite Deposit
+			r(384693),	-- Rich Draconium Deposit
+			r(389460),	-- Rich Serevite Deposit
+			r(389465, {["timeline"] = {ADDED_10_0_7}}),	-- Serevite Seam
+			r(389406),	-- Titan-Touched Draconium Deposit
+			r(389461),	-- Titan-Touched Serevite Deposit
 		}),
+		n(FIRST_CRAFTS_HEADER, sharedData({
+			["requireSkill"] = MINING,
+		},{
+			-- Draconium
+			FirstCraft(71951, 384688);	-- Draconium Deposit
+			FirstCraft(72347, 389458, ADDED_10_0_7);	-- Draconium Seam
+			FirstCraft(71956, 389413);	-- Hardened Draconium
+			FirstCraft(71962, 389420);	-- Infurious Draconium
+			FirstCraft(75140, 405121, ADDED_10_1_0);	-- Metamorphic Draconium
+			FirstCraft(71954, 384690);	-- Molten Draconium
+			FirstCraft(71960, 389409);	-- Primal Draconium
+			FirstCraft(71952, 384693);	-- Rich Draconium
+			FirstCraft(71958, 389406);	-- Titan-Touched Draconium
+			-- Serevite
+			FirstCraft(72346, 389465, ADDED_10_0_7);	-- Serevite Seam
+			FirstCraft(71955, 389463);	-- Hardened Serevite
+			FirstCraft(71961, 389464);	-- Infurious Serevite
+			FirstCraft(75139, 405120, ADDED_10_1_0);	-- Metamorphic Serevite
+			FirstCraft(71953, 389459);	-- Molten Serevite
+			FirstCraft(71959, 389462);	-- Primal Serevite
+			FirstCraft(71950, 389460);	-- Rich Serevite
+			FirstCraft(71957, 389461);	-- Titan-Touched Serevite
+			-- Overload
+			FirstCraft(71964, 389701);	-- Overload Hardened Node
+			FirstCraft(71967, 389704);	-- Overload Infurious Node
+			FirstCraft(75137, 405131, ADDED_10_1_0);	-- Overload Metamorphic Node
+			FirstCraft(71963, 389700);	-- Overload Molten Node
+			FirstCraft(71966, 389702);	-- Overload Primal Node
+			FirstCraft(71965, 389703);	-- Overload Titan-Touched Node
+		})),
 	}),
 	prof(SKINNING, {
 		spell(366259, {	-- Skinning
@@ -3047,30 +3119,6 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(74230),	-- Herbing Azra's Prized Peony
 		}),
 		prof(MINING, {
-			q(71951),	-- First Draconium Deposit
-			q(71950),	-- First Rich Serevite Deposit
-			q(71952),	-- First Rich Draconium Deposit
-			q(71961),	-- First Infurious Serevite Deposit
-			q(71962),	-- First Infurious Draconium Deposit
-			q(71953),	-- First Molten Serevite Deposit
-			q(71954),	-- First Molten Draconium Deposit
-			q(71955),	-- First Hardened Serevite Deposit
-			q(71956),	-- First Mardened Draconium Deposit
-			q(71957),	-- First Titan-touched Serevite Deposit
-			q(71958),	-- First Titan-touched Draconium Deposit
-			q(71959),	-- First Primal Serevite Deposit
-			q(71960),	-- First Primal Draconium Deposit
-			q(71967),	-- First Overload Infurious Node
-			q(71964),	-- First Overload Hardened Node
-			q(71965),	-- First Overload Titan Node
-			q(71963),	-- First Overload Molten Node
-			q(71966),	-- First Overload Primal Node
-			q(72346),	-- First Serevite Seam
-			q(72347),	-- First Draconium Seam
-			q(75139 , {["timeline"] = {ADDED_10_1_0}}),	-- First Metamorphic Serevite Deposit
-			q(75140 , {["timeline"] = {ADDED_10_1_0}}),	-- First Metamorphic Draconium Deposit
-			q(75137 , {["timeline"] = {ADDED_10_1_0}}),	-- First Overload Metamorphic Deposit
-
 			-- TODO: these are possibly weekly, perhaps track them normally
 			q(66936),	-- Heated Ore Sample / Unyielding Stone Chunk
 		}),

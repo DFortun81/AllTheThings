@@ -237,16 +237,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_THREE, {
 				-- #if BEFORE WRATH
 				["description"] = "When Krixix is mind controlled, one of the abilities available to the priest will be to teach a friendly target to Smelt Elementium.",
 				["groups"] = {
-					{
-						["recipeID"] = 22967,	-- Smelt Elementium
-						["requireSkill"] = MINING,
-					},
+					r(22967),	-- Smelt Elementium
 				},
 				-- #else
-				i(44956, {	-- Goblin's Guide to Elementium
-					["recipeID"] = 22967,	-- Smelt Elementium
-					["requireSkill"] = MINING,
-				}),
+				i(44956),	-- Goblin's Guide to Elementium (RECIPE!)
 				-- #endif
 			}),
 			e(1533,  {	-- Ebonroc

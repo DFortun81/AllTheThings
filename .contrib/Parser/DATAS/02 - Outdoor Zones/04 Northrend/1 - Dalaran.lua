@@ -4402,6 +4402,12 @@ root(ROOTS.Zones, {
 							["groups"] = WRATH_LEATHERWORKING,
 						}),
 					}),
+					prof(MINING, {
+						n(28698, {	-- Jedidiah Handers <Mining Trainer>
+							["coord"] = { 41.2, 27.0, NORTHREND_DALARAN },
+							["groups"] = WRATH_MINING,
+						}),
+					}),
 				}),
 				n(QUESTS, {
 					applyclassicphase(WRATH_PHASE_THREE, q(14409, {	-- A Cautious Return

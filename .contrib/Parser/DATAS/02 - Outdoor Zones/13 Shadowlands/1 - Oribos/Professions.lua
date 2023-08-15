@@ -40,6 +40,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_L
 					["g"] = SL_LEATHERWORKING,
 				}),
 			}),
+			prof(MINING, {
+				n(156668, {	-- Excavationist Au'fer <Mining Trainer>
+					["coord"] = { 39.6, 33.6, ORIBOS },
+					["g"] = SL_MINING,
+				}),
+			}),
 		}),
 	}),
 })));

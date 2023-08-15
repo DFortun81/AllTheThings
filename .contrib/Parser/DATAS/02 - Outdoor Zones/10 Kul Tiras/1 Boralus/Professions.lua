@@ -158,7 +158,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				}),
 			})),
 			prof(LEATHERWORKING, {
-				n(136063, {	-- Cassandra Brennor <Leatherworking Trainer>
+				n(136091, {	-- Cassandra Brennor <Leatherworking Trainer>
 					["coord"] = { 75.5, 12.6, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = appendGroups(BFA_LEATHERWORKING, {
@@ -285,104 +285,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				}),
 			}),
 			prof(MINING, {
-				-- Monelite Deposit
-				q(48752, {	-- A Need For Coal
-					["provider"] = { "n", 136091 },	-- Myra Cabot
-					["coord"] = { 75.01, 7.61, BORALUS },
-					["description"] = "Requires 50 Kul'Tiran Mining.",
-					["requireSkill"] = MINING,
+				n(136091, {	-- Myra Cabot <Mining Trainer>
+					["coord"] = { 75.2, 7.6, BORALUS },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						recipe(253334),	-- Monelite Deposit (Rank 2)
-					},
-				}),
-				q(48761, {	-- Spiderphobia
-					["provider"] = { "n", 136091 },	-- Myra Cabot
-					["coord"] = { 75.01, 7.61, BORALUS },
-					["description"] = "Requires 130 Kul'Tiran Mining.",
-					["sourceQuest"] = 48752,	-- A Need For Coal
-					["requireSkill"] = MINING,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						recipe(253335),	-- Monelite Deposit (Rank 3)
-					},
-				}),
-				-- Monelite Seam
-				q(48764, {	-- Don't Pick a Fight
-					["provider"] = { "n", 136091 },	-- Myra Cabot
-					["coord"] = { 75.01, 7.61, BORALUS },
-					["description"] = "Requires 50 Kul'Tiran Mining.",
-					["requireSkill"] = MINING,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						recipe(253343),	-- Monelite Seam (Rank 2)
-					},
-				}),
-				-- Storm Silver Deposit
-				q(51568, {	-- Ritualistic Preparations (A)
-					["provider"] = { "n", 136091 },	-- Myra Cabot
-					["coords"] = {
-						{ 75.0, 7.6, BORALUS },	-- Trainer Location
-						{ 73.4, 8.4, BORALUS },	-- Forge
-						{ 41.8, 30.0, BORALUS },	-- Ingot Blessing
-					},
-					["description"] = "Requires 50 Kul'Tiran Mining\n73.4, 8.4 in Boralus is location of the Forge\n41.8, 30.0 in Tiragarde Sound is the location to get the Blessing",
-					["requireSkill"] = MINING,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						recipe(253337),	-- Storm Silver Deposit (Rank 2)
-					},
-				}),
-				q(48768, {	-- Brined Justice (A)
-					["provider"] = { "n", 136091 },	-- Myra Cabot
-					["coord"] = { 75.01, 7.61, BORALUS },
-					["sourceQuest"] = 51568,	-- Ritualistic Preparations (A)
-					["description"] = "Requires 135 Kul'Tiran Mining.",
-					["requireSkill"] = MINING,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						recipe(253338),	-- Storm Silver Deposit Rank 3
-					},
-				}),
-				-- Storm Silver Seam
-				q(48770, {	-- Three Sheets to the Wind
-					["provider"] = { "n", 136091 },	-- Myra Cabot
-					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = MINING,
-					["description"] = "Requires 125 Kul'Tiran Mining\n75.25, 14.33 in Boralus is Harold Atkey Location\n75.51, 23.21 in Boralus is Franklin the Drunk Location\nWhen you visit Harold you want to buy \"Brennadam Apple Brand\".",
-					["coords"] = {
-						{ 75.0, 7.61, BORALUS },	-- Trainer Location
-						{ 75.2, 14.3, BORALUS },	-- Harold Atkey
-						{ 75.5, 23.2, BORALUS },	-- Franklin The Drunk
-					},
-					["g"] = {
-						recipe(253346),	-- Storm Silver Seam (Rank 2)
-					},
-				}),
-				q(51380, {	-- Back to Franklin
-					["provider"] = { "n", 136091 },	-- Myra Cabot
-					["coord"] = { 75.01, 7.61, BORALUS },
-					["sourceQuest"] = 48770,	-- Three Sheets to the Wind (A)
-					["description"] = "Requires 150 Kul'Tiran Mining.",
-					["requireSkill"] = MINING,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51889, {	-- The Wrath of Grapes (A)
-					["provider"] = { "n", 139375 },	-- Franklin the Drunk
-					["coords"] = {
-						{ 75.6, 23.5, BORALUS },	-- Franklin the Drunk
-						{ 69.3, 13.0, BORALUS },	-- Hilock of Eggs
-						{ 74.0, 12.7, BORALUS },	-- Jar of Pickle Juice [Inside Inn]
-						{ 70.4, 9.67, BORALUS },	-- Mountain of Bacon
-						{ 72.5, 11.6, BORALUS },	-- Pile of Sausages
-					},
-					["sourceQuest"] = 51380,	-- Back to Franklin
-					["description"] = "Requires 150 Kul'Tiran Mining.",
-					["requireSkill"] = MINING,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						recipe(253347),	-- Storm Silver Seam (Rank 3)
-					},
+					["g"] = appendGroups(BFA_MINING, {
+						r(265851),	-- Mining (Kul Tiran)
+					}),
 				}),
 			}),
 			prof(SKINNING, {

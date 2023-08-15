@@ -974,6 +974,22 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 			i(170363, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Bow [H]
 		}),
 	}),
+	prof(MINING, {
+		i(160944),	-- An Exquisite Brooch
+		i(161078),	-- Exceptional Platinum Shard [A]
+		i(161079),	-- Exceptional Platinum Shard [H]
+		i(160905),	-- Lost Anchor Necklace
+		i(152512),	-- Monelite Ore
+		i(168954, {["timeline"] = {ADDED_8_2_0}}),	-- Osmenite Dust [A]
+		i(169598, {["timeline"] = {ADDED_8_2_0}}),	-- Osmenite Dust [H]
+		i(168185, {["timeline"] = {ADDED_8_2_0}}),	-- Osmenite Ore
+		i(168939, {["timeline"] = {ADDED_8_2_0}}),	-- Osmenite Shards [A]
+		i(169597, {["timeline"] = {ADDED_8_2_0}}),	-- Osmenite Shards [H]
+		i(161088),	-- Platinum Map
+		i(152513),	-- Platinum Ore
+		i(152579),	-- Storm Silver Ore
+		i(161085),	-- Tattered Map
+	}),
 	prof(TAILORING, {
 		filter(MOUNT_EQUIPMENT, {
 			i(168427),	-- Saddlechute
