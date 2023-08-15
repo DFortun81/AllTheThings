@@ -229,7 +229,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 		}),
 		dragonridingrace(76469, {	-- Blasted Lands Bolt
 			["provider"] = { "n", 207357 },	-- Bronze Timekeeper
-			["coord"] = { 62.7, 26.2, BLASTED_LAND },
+			["coord"] = { 62.7, 26.2, BLASTED_LANDS },
 			["g"] = {
 				ach(18474),	-- Blasted Lands Bolt: Bronze
 				ach(18475),	-- Blasted Lands Bolt: Silver
@@ -238,7 +238,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 		}),
 		dragonridingrace(76470, {	-- Blasted Lands Bolt - Advanced
 			["provider"] = { "n", 207357 },	-- Bronze Timekeeper
-			["coord"] = { 62.7, 26.2, BLASTED_LAND },
+			["coord"] = { 62.7, 26.2, BLASTED_LANDS },
 			["g"] = {
 				ach(18477),	-- Blasted Lands Bolt Advanced: Bronze
 				ach(18478),	-- Blasted Lands Bolt Advanced: Silver
@@ -247,7 +247,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 		}),
 		dragonridingrace(76471, {	-- Blasted Lands Bolt - Reverse
 			["provider"] = { "n", 207357 },	-- Bronze Timekeeper
-			["coord"] = { 62.7, 26.2, BLASTED_LAND },
+			["coord"] = { 62.7, 26.2, BLASTED_LANDS },
 			["g"] = {
 				ach(18480),	-- Blasted Lands Bolt Reverse: Bronze
 				ach(18481),	-- Blasted Lands Bolt Reverse: Silver
@@ -256,7 +256,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 		}),
 		dragonridingrace(76515, {	-- Booty Bay Blast
 			["provider"] = { "n", 207455 },	-- Bronze Timekeeper
-			["coord"] = { 40.4, 77.8, CAPE_OF_STRANGLETHORN },
+			["coord"] = { 40.4, 77.8, THE_CAPE_OF_STRANGLETHORN },
 			["g"] = {
 				ach(18498),	-- Booty Bay Blast: Bronze
 				ach(18499),	-- Booty Bay Blast: Silver
@@ -265,7 +265,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 		}),
 		dragonridingrace(76516, {	-- Booty Bay Blast - Advanced
 			["provider"] = { "n", 207455 },	-- Bronze Timekeeper
-			["coord"] = { 40.4, 77.8, CAPE_OF_STRANGLETHORN },
+			["coord"] = { 40.4, 77.8, THE_CAPE_OF_STRANGLETHORN },
 			["g"] = {
 				ach(18501),	-- Booty Bay Blast Advanced: Bronze
 				ach(18502),	-- Booty Bay Blast Advanced: Silver
@@ -274,7 +274,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 		}),
 		dragonridingrace(76517, {	-- Booty Bay Blast - Reverse
 			["provider"] = { "n", 207455 },	-- Bronze Timekeeper
-			["coord"] = { 40.4, 77.8, CAPE_OF_STRANGLETHORN },
+			["coord"] = { 40.4, 77.8, THE_CAPE_OF_STRANGLETHORN },
 			["g"] = {
 				ach(18504),	-- Booty Bay Blast Reverse: Bronze
 				ach(18505),	-- Booty Bay Blast Reverse: Silver
@@ -364,7 +364,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 		}),
 		dragonridingrace(76309, {	-- Gilneas Gambit
 			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			["coord"] = { 57.3, 12.4, GILNEAS },
+			["coord"] = { 57.3, 12.4, 179 },
 			["g"] = {
 				ach(18399),	-- Gilneas Gambit: Bronze
 				ach(18400),	-- Gilneas Gambit: Silver
@@ -373,7 +373,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 		}),
 		dragonridingrace(76310, {	-- Gilneas Gambit - Advanced
 			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			["coord"] = { 57.3, 12.4, GILNEAS },
+			["coord"] = { 57.3, 12.4, 179 },
 			["g"] = {
 				ach(18402),	-- Gilneas Gambit Advanced: Bronze
 				ach(18403),	-- Gilneas Gambite Advanced: Silver
@@ -382,7 +382,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 		}),
 		dragonridingrace(76311, {	-- Gilneas Gambit - Reverse
 			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			["coord"] = { 57.3, 12.4, GILNEAS },
+			["coord"] = { 57.3, 12.4, 179 },
 			["g"] = {
 				ach(18405),	-- Gilneas Gambit Reverse: Bronze
 				ach(18406),	-- Gilneas Gambit Reverse: Silver
@@ -498,7 +498,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76510, {	-- Plaguelands Plunge
-			-- ["provider"] = { "n", X },	-- Bronze Timekeeper
+			--["provider"] = { "n", X },	-- Bronze Timekeeper
 			 ["coord"] = { 34.2, 36.8, EASTERN_PLAGUELANDS },
 			["g"] = {
 				ach(18483),	-- Plaguelands Plunge: Bronze
@@ -507,7 +507,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 			},
 		}),
 		dragonridingrace(76512, {	-- Plaguelands Plunge - Advanced
-			-- ["provider"] = { "n", X },	-- Bronze Timekeeper
+			--["provider"] = { "n", X },	-- Bronze Timekeeper
 			["coord"] = { 34.2, 36.8, EASTERN_PLAGUELANDS },
 			["g"] = {
 				ach(18486),	-- Plaguelands Plunge Advanced: Bronze
