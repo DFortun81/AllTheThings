@@ -227,7 +227,7 @@ i(15730, 19054, nil, DRAGONSCALE);	-- Red Dragonscale Breastplate [REMOVED: 6.0.
 -- #else
 i(0, 24654);		-- Blue Dragonscale Leggings
 i(0, 10650);		-- Dragonscale Breastplate
-i(0, 10619);		-- Dragonscale Gauntlets
+i(0, 10619);		-- Dragonscale Gauntlets [REMOVED 4.0.1]
 i(0, 24655);		-- Green Dragonscale Gauntlets
 i(17025, 20855);	-- Black Dragonscale Boots
 i(15759, 19085);	-- Black Dragonscale Breastplate
