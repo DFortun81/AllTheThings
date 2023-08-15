@@ -14350,6 +14350,24 @@ local function CreateMinimapButton()
 end
 app.CreateMinimapButton = CreateMinimapButton;
 function app:CreateMiniListForGroup(group)
+	-- Is this an achievement criteria or lacking some achievement information?
+	local achievementID = group.achievementID;
+	if achievementID and (group.criteriaID or not group.g) then
+		local searchResults = app.SearchForField("achievementID", achievementID);
+		if searchResults and #searchResults > 0 then
+			local bestResult;
+			for i=1,#searchResults,1 do
+				local searchResult = searchResults[i];
+				if searchResult.achievementID == achievementID and not searchResult.criteriaID then
+					if not bestResult or searchResult.g then
+						bestResult = searchResult;
+					end
+				end
+			end
+			if bestResult then group = bestResult; end
+		end
+	end
+	
 	-- Pop Out Functionality! :O
 	local suffix = BuildSourceTextForChat(group, 1)
 		-- this portion is to ensure that custom slash command popouts have a unique name based on the stand-alone group (no parent)
