@@ -886,6 +886,7 @@ for key,value in pairs({
 	[-1000274] = "Schießbude",
 	[-1000275] = "Hau-den-Gnoll",
 	[-1000276] = "Tag der Toten",
+	[-1000282] = "Kalimdorpokal",
 	[-1000283] = "Angelwettstreit der Kalu'ak",
 	[-1000287] = "Sonnenwendfest",
 	[-1000290] = "Piratentag",

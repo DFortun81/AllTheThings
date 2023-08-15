@@ -8,6 +8,7 @@ KALIMDOR_CUP_HEADER = createHeader({
 	eventID = EVENTS.KALIMDOR_CUP,
 	text = {
 		en = "Kalimdor Cup",
+		de = "Kalimdorpokal",
 		ru = "Кубок Калимдора",
 	},
 });
@@ -246,8 +247,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75472, {	-- Ahn'Qiraj Circuit
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, AHNQIRAJ_THE_FALLEN_KINGDOM },
+			["provider"] = { "n", 204092 },	-- Bronze Timekeeper
+			["coord"] = { 39.6, 84.2, AHNQIRAJ_THE_FALLEN_KINGDOM },
 			["g"] = {
 				ach(17685),	-- Ahn'Qiraj Circuit: Bronze
 				ach(17686),	-- Ahn'Qiraj Circuit: Silver
@@ -255,8 +256,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75473, {	-- Ahn'Qiraj Circuit - Advanced
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, AHNQIRAJ_THE_FALLEN_KINGDOM },
+			["provider"] = { "n", 204092 },	-- Bronze Timekeeper
+			["coord"] = { 39.6, 84.2, AHNQIRAJ_THE_FALLEN_KINGDOM },
 			["g"] = {
 				ach(17688),	-- Ahn'Qiraj Circuit Advanced: Bronze
 				ach(17689),	-- Ahn'Qiraj Circuit Advanced: Silver
@@ -264,8 +265,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75474, {	-- Ahn'Qiraj Circuit - Reverse
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, AHNQIRAJ_THE_FALLEN_KINGDOM },
+			["provider"] = { "n", 204092 },	-- Bronze Timekeeper
+			["coord"] = { 39.6, 84.2, AHNQIRAJ_THE_FALLEN_KINGDOM },
 			["g"] = {
 				ach(17691),	-- Ahn'Qiraj Circuit Reverse: Bronze
 				ach(17692),	-- Ahn'Qiraj Circuit Reverse: Silver
@@ -273,8 +274,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75378, {	-- Ashenvale Ambit
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ASHENVALE },
+			["provider"] = { "n", 203712 },	-- Bronze Timekeeper
+			["coord"] = { 37.0, 30.6, ASHENVALE },
 			["g"] = {
 				ach(17613),	-- Ashenvale Ambit: Bronze
 				ach(17614),	-- Ashenvale Ambit: Silver
@@ -282,8 +283,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75379, {	-- Ashenvale Ambit - Advanced
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ASHENVALE },
+			["provider"] = { "n", 203712 },	-- Bronze Timekeeper
+			["coord"] = { 37.0, 30.6, ASHENVALE },
 			["g"] = {
 				ach(17616),	-- Ashenvale Ambit Advanced: Bronze
 				ach(17617),	-- Ashenvale Ambit Advanced: Silver
@@ -291,8 +292,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75380, {	-- Ashenvale Ambit - Reverse
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ASHENVALE },
+			["provider"] = { "n", 203712 },	-- Bronze Timekeeper
+			["coord"] = { 37.0, 30.6, ASHENVALE },
 			["g"] = {
 				ach(17619),	-- Ashenvale Ambit Reverse: Bronze
 				ach(17620),	-- Ashenvale Ambit Reverse: Silver
@@ -300,8 +301,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75409, {	-- Desolace Drift
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, DESOLACE },
+			["provider"] = { "n", 203788 },	-- Bronze Timekeeper
+			["coord"] = { 28.1, 63.3, DESOLACE },
 			["g"] = {
 				ach(17640),	-- Desolace Drift: Bronze
 				ach(17641),	-- Desolace Drift: Silver
@@ -309,8 +310,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75410, {	-- Desolace Drift - Advanced
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, DESOLACE },
+			["provider"] = { "n", 203788 },	-- Bronze Timekeeper
+			["coord"] = { 28.1, 63.3, DESOLACE },
 			["g"] = {
 				ach(17643),	-- Desolace Drift Advanced: Bronze
 				ach(17644),	-- Desolace Drift Advanced: Silver
@@ -318,8 +319,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75411, {	-- Desolace Drift - Reverse
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, DESOLACE },
+			["provider"] = { "n", 203788 },	-- Bronze Timekeeper
+			["coord"] = { 28.1, 63.3, DESOLACE },
 			["g"] = {
 				ach(17646),	-- Desolace Drift Reverse: Bronze
 				ach(17647),	-- Desolace Drift Reverse: Silver
@@ -327,8 +328,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75385, {	-- Durotar Tour
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, DUROTAR },
+			["provider"] = { "n", 203722 },	-- Bronze Timekeeper
+			["coord"] = { 56.9, 62.9, DUROTAR },
 			["g"] = {
 				ach(17622),	-- Durotar Tour: Bronze
 				ach(17623),	-- Durotar Tour: Silver
@@ -336,8 +337,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75386, {	-- Durotar Tour - Advanced
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, DUROTAR },
+			["provider"] = { "n", 203722 },	-- Bronze Timekeeper
+			["coord"] = { 56.9, 62.9, DUROTAR },
 			["g"] = {
 				ach(17625),	-- Durotar Tour Advanced: Bronze
 				ach(17626),	-- Durotar Tour Advanced: Silver
@@ -345,8 +346,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75387, {	-- Durotar Tour - Reverse
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, DUROTAR },
+			["provider"] = { "n", 203722 },	-- Bronze Timekeeper
+			["coord"] = { 56.9, 62.9, DUROTAR },
 			["g"] = {
 				ach(17628),	-- Durotar Tour Reverse: Bronze
 				ach(17629),	-- Durotar Tour Reverse: Silver
@@ -354,8 +355,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75277, {	-- Felwood Flyover
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, FELWOOD },
+			["provider"] = { "n", 203479 },	-- Bronze Timekeeper
+			["coord"] = { 58.2, 10.8, FELWOOD },
 			["g"] = {
 				ach(17568),	-- Felwood Flyover: Bronze
 				ach(17569),	-- Felwood Flyover: Silver
@@ -363,8 +364,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75293, {	-- Felwood Flyover - Advanced
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, FELWOOD },
+			["provider"] = { "n", 203479 },	-- Bronze Timekeeper
+			["coord"] = { 58.2, 10.8, FELWOOD },
 			["g"] = {
 				ach(17571),	-- Felwood Flyover Advanced: Bronze
 				ach(17572),	-- Felwood Flyover Advanced: Silver
@@ -372,8 +373,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75294, {	-- Felwood Flyover - Reverse
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, FELWOOD },
+			["provider"] = { "n", 203479 },	-- Bronze Timekeeper
+			["coord"] = { 58.2, 10.8, FELWOOD },
 			["g"] = {
 				ach(17574),	-- Felwood Flyover Reverse: Bronze
 				ach(17575),	-- Felwood Flyover Reverse: Silver
@@ -381,8 +382,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75468, {	-- Feralas Ruins Ramble
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, FERALAS },
+			["provider"] = { "n", 204080 },	-- Bronze Timekeeper
+			["coord"] = { 64.1, 54.4, FERALAS },
 			["g"] = {
 				ach(17676),	-- Feralas Ruins Ramble: Bronze
 				ach(17677),	-- Feralas Ruins Ramble: Silver
@@ -390,8 +391,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75469, {	-- Feralas Ruins Ramble - Advanced
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, FERALAS },
+			["provider"] = { "n", 204080 },	-- Bronze Timekeeper
+			["coord"] = { 64.1, 54.4, FERALAS },
 			["g"] = {
 				ach(17679),	-- Feralas Ruins Ramble Advanced: Bronze
 				ach(17680),	-- Feralas Ruins Ramble Advanced: Silver
@@ -399,8 +400,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75470, {	-- Feralas Ruins Ramble - Reverse
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, FERALAS },
+			["provider"] = { "n", 204080 },	-- Bronze Timekeeper
+			["coord"] = { 64.1, 54.4, FERALAS },
 			["g"] = {
 				ach(17682),	-- Feralas Ruins Ramble Reverse: Bronze
 				ach(17683),	-- Feralas Ruins Ramble Reverse: Silver
@@ -408,8 +409,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75412, {	-- Great Divide Dive
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, SOUTHERN_BARRENS },
+			["provider"] = { "n", 203793 },	-- Bronze Timekeeper
+			["coord"] = { 41.4, 13.0, SOUTHERN_BARRENS },
 			["g"] = {
 				ach(17649),	-- Great Divide Dive: Bronze
 				ach(17650),	-- Great Divide Dive: Silver
@@ -417,8 +418,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75413, {	-- Great Divide Dive - Advanced
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, SOUTHERN_BARRENS },
+			["provider"] = { "n", 203793 },	-- Bronze Timekeeper
+			["coord"] = { 41.4, 13.0, SOUTHERN_BARRENS },
 			["g"] = {
 				ach(17652),	-- Great Divide Dive Advanced: Bronze
 				ach(17653),	-- Great Divide Dive Advanced: Silver
@@ -426,8 +427,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75414, {	-- Great Divide Dive - Reverse
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, SOUTHERN_BARRENS },
+			["provider"] = { "n", 203793 },	-- Bronze Timekeeper
+			["coord"] = { 41.4, 13.0, SOUTHERN_BARRENS },
 			["g"] = {
 				ach(17655),	-- Great Divide Dive Reverse: Bronze
 				ach(17656),	-- Great Divide Dive Reverse: Silver
@@ -435,8 +436,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75330, {	-- Hyjal Hotfoot
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, MOUNT_HYJAL },
+			["provider"] = { "n", 203626 },	-- Bronze Timekeeper
+			["coord"] = { 22.0, 54.3, MOUNT_HYJAL },
 			["g"] = {
 				ach(17595),	-- Hyjal Hotfoot: Bronze
 				ach(17596),	-- Hyjal Hotfoot: Silver
@@ -444,8 +445,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75331, {	-- Hyjal Hotfoot - Advanced
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, MOUNT_HYJAL },
+			["provider"] = { "n", 203626 },	-- Bronze Timekeeper
+			["coord"] = { 22.0, 54.3, MOUNT_HYJAL },
 			["g"] = {
 				ach(17598),	-- Hyjal Hotfoot Advanced: Bronze
 				ach(17599),	-- Hyjal Hotfoot Advanced: Silver
@@ -453,8 +454,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75332, {	-- Hyjal Hotfoot - Reverse
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, MOUNT_HYJAL },
+			["provider"] = { "n", 203626 },	-- Bronze Timekeeper
+			["coord"] = { 22.0, 54.3, MOUNT_HYJAL },
 			["g"] = {
 				ach(17601),	-- Hyjal Hotfoot Reverse: Bronze
 				ach(17602),	-- Hyjal Hotfoot Reverse: Silver
@@ -462,8 +463,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75317, {	-- Nordrassil Spiral
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, MOUNT_HYJAL },
+			["provider"] = { "n", 203617 },	-- Bronze Timekeeper
+			["coord"] = { 56.7, 28.0, MOUNT_HYJAL },
 			["g"] = {
 				ach(17586),	-- Nordrassil Spiral: Bronze
 				ach(17587),	-- Nordrassil Spiral: Silver
@@ -471,8 +472,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75318, {	-- Nordrassil Spiral - Advanced
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, MOUNT_HYJAL },
+			["provider"] = { "n", 203617 },	-- Bronze Timekeeper
+			["coord"] = { 56.7, 28.0, MOUNT_HYJAL },
 			["g"] = {
 				ach(17589),	-- Nordrassil Spiral Advanced: Bronze
 				ach(17590),	-- Nordrassil Spiral Advanced: Silver
@@ -480,8 +481,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75319, {	-- Nordrassil Spiral - Reverse
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, MOUNT_HYJAL },
+			["provider"] = { "n", 203617 },	-- Bronze Timekeeper
+			["coord"] = { 56.7, 28.0, MOUNT_HYJAL },
 			["g"] = {
 				ach(17592),	-- Nordrassil Spiral Reverse: Bronze
 				ach(17593),	-- Nordrassil Spiral Reverse: Silver
@@ -489,8 +490,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75437, {	-- Razorfen Roundabout
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, SOUTHERN_BARRENS },
+			["provider"] = { "n", 203908 },	-- Bronze Timekeeper
+			["coord"] = { 42.8, 93.1, SOUTHERN_BARRENS },
 			["g"] = {
 				ach(17658),	-- Razorfen Roundabout: Bronze
 				ach(17659),	-- Razorfen Roundabout: Silver
@@ -498,8 +499,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75438, {	-- Razorfen Roundabout - Advanced
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, SOUTHERN_BARRENS },
+			["provider"] = { "n", 203908 },	-- Bronze Timekeeper
+			["coord"] = { 42.8, 93.1, SOUTHERN_BARRENS },
 			["g"] = {
 				ach(17661),	-- Razorfen Roundabout Advanced: Bronze
 				ach(17662),	-- Razorfen Roundabout Advanced: Silver
@@ -507,8 +508,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75439, {	-- Razorfen Roundabout - Reverse
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, SOUTHERN_BARRENS },
+			["provider"] = { "n", 203908 },	-- Bronze Timekeeper
+			["coord"] = { 42.8, 93.1, SOUTHERN_BARRENS },
 			["g"] = {
 				ach(17664),	-- Razorfen Roundabout Reverse: Bronze
 				ach(17665),	-- Razorfen Roundabout Reverse: Silver
@@ -543,8 +544,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75463, {	-- Thousand Needles Thread
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, THOUSAND_NEEDLES },
+			["provider"] = { "n", 204043 },	-- Bronze Timekeeper
+			["coord"] = { 9.7, 17.3, THOUSAND_NEEDLES },
 			["g"] = {
 				ach(17667),	-- Thousand Needles Thread: Bronze
 				ach(17668),	-- Thousand Needles Thread: Silver
@@ -552,8 +553,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75464, {	-- Thousand Needles Thread - Advanced
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, THOUSAND_NEEDLES },
+			["provider"] = { "n", 204043 },	-- Bronze Timekeeper
+			["coord"] = { 9.7, 17.3, THOUSAND_NEEDLES },
 			["g"] = {
 				ach(17670),	-- Thousand Needles Thread Advanced: Bronze
 				ach(17671),	-- Thousand Needles Thread Advanced: Silver
@@ -561,8 +562,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75465, {	-- Thousand Needles Thread - Reverse
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, THOUSAND_NEEDLES },
+			["provider"] = { "n", 204043 },	-- Bronze Timekeeper
+			["coord"] = { 9.7, 17.3, THOUSAND_NEEDLES },
 			["g"] = {
 				ach(17673),	-- Thousand Needles Thread Reverse: Bronze
 				ach(17674),	-- Thousand Needles Thread Reverse: Silver
@@ -570,8 +571,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75481, {	-- Uldum Tour
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ULDUM },
+			["provider"] = { "n", 204128 },	-- Bronze Timekeeper
+			["coord"] = { 55.8, 42.2, ULDUM },
 			["g"] = {
 				ach(17694),	-- Uldum Tour: Bronze
 				ach(17695),	-- Uldum Tour: Silver
@@ -579,8 +580,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75482, {	-- Uldum Tour - Advanced
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ULDUM },
+			["provider"] = { "n", 204128 },	-- Bronze Timekeeper
+			["coord"] = { 55.8, 42.2, ULDUM },
 			["g"] = {
 				ach(17697),	-- Uldum Tour Advanced: Bronze
 				ach(17698),	-- Uldum Tour Advanced: Silver
@@ -588,8 +589,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75483, {	-- Uldum Tour - Reverse
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ULDUM },
+			["provider"] = { "n", 204128 },	-- Bronze Timekeeper
+			["coord"] = { 55.8, 42.2, ULDUM },
 			["g"] = {
 				ach(17700),	-- Uldum Tour Reverse: Bronze
 				ach(17701),	-- Uldum Tour Reverse: Silver
@@ -597,8 +598,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75485, {	-- Un'Goro Crater Circuit
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ULDUM },
+			["provider"] = { "n", 204146 },	-- Bronze Timekeeper
+			["coord"] = { 53.4, 93.0, UNGORO_CRATER },
 			["g"] = {
 				ach(17703),	-- Un'Goro Crater Circuit: Bronze
 				ach(17704),	-- Un'Goro Crater Circuit: Silver
@@ -606,8 +607,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75486, {	-- Un'Goro Crater Circuit - Advanced
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ULDUM },
+			["provider"] = { "n", 204146 },	-- Bronze Timekeeper
+			["coord"] = { 53.4, 93.0, UNGORO_CRATER },
 			["g"] = {
 				ach(17706),	-- Un'Goro Crater Circuit Advanced: Bronze
 				ach(17707),	-- Un'Goro Crater Circuit Advanced: Silver
@@ -615,8 +616,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75487, {	-- Un'Goro Crater Circuit - Reverse
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, ULDUM },
+			["provider"] = { "n", 204146 },	-- Bronze Timekeeper
+			["coord"] = { 53.4, 93.0, UNGORO_CRATER },
 			["g"] = {
 				ach(17709),	-- Un'Goro Crater Circuit Reverse: Bronze
 				ach(17710),	-- Un'Goro Crater Circuit Reverse: Silver
@@ -624,8 +625,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75394, {	-- Webwinder Weave
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, STONETALON_MOUNTAINS },
+			["provider"] = { "n", 203735 },	-- Bronze Timekeeper
+			["coord"] = { 66.8, 86.8, STONETALON_MOUNTAINS },
 			["g"] = {
 				ach(17631),	-- Webwinder Weave: Bronze
 				ach(17632),	-- Webwinder Weave: Silver
@@ -633,8 +634,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75395, {	-- Webwinder Weave - Advanced
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, STONETALON_MOUNTAINS },
+			["provider"] = { "n", 203735 },	-- Bronze Timekeeper
+			["coord"] = { 66.8, 86.8, STONETALON_MOUNTAINS },
 			["g"] = {
 				ach(17634),	-- Webwinder Weave Advanced: Bronze
 				ach(17635),	-- Webwinder Weave Advanced: Silver
@@ -642,8 +643,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 		dragonridingrace(75396, {	-- Webwinder Weave - Reverse
-			--["provider"] = { "n", X },	-- Bronze Timekeeper
-			--["coord"] = { X, Y, STONETALON_MOUNTAINS },
+			["provider"] = { "n", 203735 },	-- Bronze Timekeeper
+			["coord"] = { 66.8, 86.8, STONETALON_MOUNTAINS },
 			["g"] = {
 				ach(17637),	-- Webwinder Weave Reverse: Bronze
 				ach(17638),	-- Webwinder Weave Reverse: Silver
