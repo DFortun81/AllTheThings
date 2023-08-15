@@ -335,15 +335,21 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 									ig(114387),	-- Hood of Hooded Nighmates			(NYI)
 								}),
 								filter(LEATHER, {
+									ig(114264),	-- Bloodthorn Hood					(NYI)
 									ig(114388),	-- Hood of Falling Leaves			(NYI)
 									ig(93081),	-- Hozen-Stitched Hood 				(NYI)
 									ig(147516),	-- Legion Stalker's Hood 			(NYI)
+									ig(121509),	-- Runesworn Crown		 			(NYI)
 									
 									ig(1280),	-- Cloaked Hood 					(Removed)
+									ig(4724),	-- Humbert's Helm 					(Removed)
 									ig(134621),	-- Incendiary Helm 					(Removed)
 									ig(3392),	-- Ringed Helm 						(Removed)
+									ig(5753),	-- Ruffled Chaplet 					(Removed)(unique)
 									ig(134794),	-- Ruinous Helm 					(Removed)
 									ig(6204),	-- Tribal Worg Helm					(Removed)(unique)
+
+									ig(89480),	-- Hozen-Crafted Hood				(Unsorted)
 								}),
 								filter(MAIL, {
 									ig(105809),	-- Crest of Burning Deeds			(Ordos)
@@ -385,14 +391,24 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 								}),
 								filter(LEATHER, {
 									ig(114251),	-- Bloodthorn Chestguard 			(NYI)
+									ig(189917),	-- Constellation Master's Smock		(NYI)
+									ig(93078),	-- Hozen-Stitched Jerkin 			(NYI)
+									ig(93049),	-- Mogubreaker Jerkin	 			(NYI)
 									ig(3984),	-- Strapped Armor					(NYI)
 									
 									ig(2069),	-- Black Bear Hide Vest 			(Removed)
 									ig(134729),	-- Frosthide Tunic 					(Removed)
+									ig(2108),	-- Frostmane Leather Vest			(Removed)(unique)
 									ig(1211),	-- Gnoll War Harness				(Removed)
 									ig(10781),	-- Hakkari Breastplate 				(Removed)
 									ig(17922),	-- Lionfur Armor 					(Removed)
-									ig(6197),	-- Loch Croc Hide Vest 				(Removed)(unique)
+									ig(6197),	-- Loch Croc Hide Vest				(Removed)(unique)
+									ig(2112),	-- Lumberjack Jerkin				(Removed)(unique)
+									ig(134759),	-- Masked Tunic						(Removed)
+									ig(134791),	-- Ruinous Tunic					(Removed)
+									ig(4861),	-- Sleek Feathered Tunic			(Removed)
+
+									ig(89481),	-- Hozen-Crafted Jerkin				(Unsorted)
 								}),
 								filter(MAIL, {
 									ig(114252), -- Leafscale Chestguard		(NYI)
@@ -423,6 +439,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 								}),
 								filter(LEATHER, {
 									ig(114268),	-- Bloodthorn Legguards 		(NYI)
+									ig(93082),	-- Hozen-Stitched Britches 		(NYI)
 									ig(114392),	-- Legguards of Falling Leaves 	(NYI)
 									ig(121513),	-- Runesworn Breeches 			(NYI)
 									ig(3982),	-- Strapped Pants 				(NYI)
@@ -431,6 +448,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 									ig(18611),	-- Gnarlpine Leggings 			(Removed)
 									ig(134760),	-- Masked Leggings 				(Removed)
 									ig(2233),	-- Shadow Weaver Leggings 		(Removed)
+
+									ig(89478),	-- Hozen-Crafted Britches 		(Unsorted)
 								}),
 								filter(MAIL, {
 								}),
