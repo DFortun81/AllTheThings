@@ -747,7 +747,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(24674, {	-- Slaves to No One
 					["qg"] = 37803,	-- Marcus
 					["races"] = { WORGEN },
-					["sourceQuest"] = 14466,	-- The King's Observatory (TODO: need to verify if this truly is the start. Could be level-based at 15? Saw the quest offered this source but could be available earlier)
+					["sourceQuests"] = {
+						24677,	-- Flank the Forsaken
+						-- 14466,	-- The King's Observatory (TODO: need to verify if this truly is the start. Could be level-based at 15? Saw the quest offered this source but could be available earlier)
+					},
 					["coords"] = {
 						{ 70.27, 40.04, 179 },
 						{ 70.64, 40.12, 179 },

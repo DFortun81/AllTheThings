@@ -473,7 +473,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				crit(6,	{	-- Aimless Snail
 					["description"] = "Requires the quest The Slowest Fan Club from Briggul to be active and accepted. Hitting maximum reputation with Glimmerogg Racer means you will need party sync to get this quest to be able to see the critters.",
-					["crs"] = { 201875 },	-- Aimless Snail
+					["_npcs"] = { 201875 },	-- Aimless Snail	(Using _npcs so the criteria shows inside of the ONLY daily quest which allows it to be completed)
 					["coord"] = { 44.91, 77.71, ZARALEK_CAVERN },
 				}),
 				crit(7, {	-- Incense Cinder
