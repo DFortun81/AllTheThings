@@ -282,35 +282,8 @@ namespace ATT
                 {
                     trimmedLine = line.TrimStart();
                     if (trimmedLine.StartsWith("## Version:")) line = line.Replace("@project-version@", CurrentBuildVersion);
-                    if (trimmedLine.StartsWith("// WARNING: EXCLUDED DYNAMIC SECTION"))
-                    {
-                        // This file will require parsing.
-                        while ((line = reader.ReadLine()) != null)
-                        {
-                            if (line.TrimStart().StartsWith("// WARNING: END EXCLUDED DYNAMIC SECTION")) break;
-                        }
-                    }
-                    else if (trimmedLine.StartsWith("-- WARNING: DEV ONLY START"))
-                    {
-                        // This file will require parsing.
-                        while ((line = reader.ReadLine()) != null)
-                        {
-                            if (line.TrimStart().StartsWith("-- WARNING: DEV ONLY END")) break;
-                        }
-                    }
-                    else if (trimmedLine.StartsWith("# DEV ONLY START"))
-                    {
-                        // This file will require parsing.
-                        while ((line = reader.ReadLine()) != null)
-                        {
-                            if (line.TrimStart().StartsWith("# DEV ONLY END")) break;
-                        }
-                    }
-                    else
-                    {
-                        builder.AppendLine(line);
-                        ++lineCount;
-                    }
+                    builder.AppendLine(line);
+                    ++lineCount;
                 }
             }
 
