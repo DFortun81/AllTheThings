@@ -959,7 +959,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 					i(10586),	-- The Big One
 				}),
 				category(183, {	-- Parts
-					i(10644, {	-- Recipe: Goblin Rocket Fuel (Engineers make the recipe for alchemists)
+					i(10644, {	-- Recipe: Goblin Rocket Fuel (Engineers make the recipe for alchemists) (RECIPE!)
 						["description"] = "This recipe is crafted by Goblin Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Goblin Engineer to craft it for you.",
 					}),
 				}),

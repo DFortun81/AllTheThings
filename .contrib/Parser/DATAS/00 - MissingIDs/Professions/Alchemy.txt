@@ -388,7 +388,6 @@ Missing in AlchemyItemDB.lua
 
 0.7.0.3694
 r(11454),	-- Inlaid Mithril Cylinder
-r(11456),	-- Goblin Rocket Fuel
 1.13.0.28211
 r(24266),	-- Gurubashi Mojo Madness
 6.0.1.18179

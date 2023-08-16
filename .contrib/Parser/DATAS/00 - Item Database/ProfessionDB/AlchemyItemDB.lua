@@ -73,6 +73,7 @@ i(14634, 3454);		-- Frost Oil
 i(6056, 7258);		-- Frost Protection Potion
 i(9302, 11473);		-- Ghost Dye
 i(9296, 11466);		-- Gift of Arthas
+i(10644, 11456);	-- Goblin Rocket Fuel
 i(5643, 6618);		-- Great Rage Potion
 i(13497, 17577);	-- Greater Arcane Protection Potion [REMOVED 4.0.3] [READDED 9.1.0]
 i(20012, 24366);	-- Greater Dreamless Sleep Potion [REMOVED 4.0.3] [READDED 10.0.7]
