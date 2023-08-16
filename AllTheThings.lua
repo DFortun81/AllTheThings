@@ -2267,19 +2267,19 @@ local IsQuestFlaggedCompletedForObject = function(t, questIDKey)
 			if wqt_global and wqt_global[questID] and wqt_global[questID] > 0 then
 				ATTAccountWideData.Quests[questID] = 1;
 				-- only return as completed if tracking account wide
-				if app.AccountWideQuests then
+				if app.Settings.AccountWide.Quests then
 					return 2;
 				end
 			end
 		end
 		-- quest completed on any character and tracking account-wide, return shared completion regardless of account-mode
-		if app.AccountWideQuests then
+		if app.Settings.AccountWide.Quests then
 			if ATTAccountWideData.Quests[questID] then
 				return 2;
 			end
 		end
 	end
-	if not t.repeatable and app.AccountWideQuests then
+	if not t.repeatable and app.Settings.AccountWide.Quests then
 		-- any character has completed this specific quest, return shared completion
 		if ATTAccountWideData.Quests[questID] then
 			return 2;
@@ -7488,7 +7488,7 @@ app.CollectibleAsQuest = function(t)
 					and
 					(
 						-- collectible by any character
-						app.AccountWideQuests
+						app.Settings.AccountWide.Quests
 						-- or not OTQ or is OTQ not yet known to be completed by any character, or is OTQ completed by this character
 						or (not ATTAccountWideData.OneTimeQuests[questID] or ATTAccountWideData.OneTimeQuests[questID] == app.GUID)
 					)
@@ -8536,7 +8536,7 @@ local fields = {
 	end,
 	["collected"] = function(t)
 		if t.saved then return 1; end
-		if app.AccountWideAchievements then
+		if app.Settings.AccountWide.Achievements then
 			local id = t.achievementID;
 			-- cached account-wide credit, or API account-wide credit
 			if ATTAccountWideData.Achievements[id] then return 2; end
@@ -8716,7 +8716,7 @@ local criteriaFields = {
 	["trackable"] = app.ReturnTrue,
 	["collected"] = function(t)
 		if t.saved then return 1; end
-		if app.AccountWideAchievements then
+		if app.Settings.AccountWide.Achievements then
 			local achievementID = t.achievementID;
 			-- cached account-wide credit, or API account-wide credit
 			if achievementID then
@@ -9235,7 +9235,7 @@ local fields = {
 			end
 		end
 
-		if app.AccountWideAzeriteEssences and accountRank >= t.rank then
+		if app.Settings.AccountWide.AzeriteEssences and accountRank >= t.rank then
 			return 2;
 		end
 	end,
@@ -9764,7 +9764,7 @@ local fields = {
 		return app.asset("Category_Deaths");
 	end,
 	["progress"] = function(t)
-		return math.min(1000, app.AccountWideDeaths and ATTAccountWideData.Deaths or app.CurrentCharacter.Deaths);
+		return math.min(1000, app.Settings.AccountWide.Deaths and ATTAccountWideData.Deaths or app.CurrentCharacter.Deaths);
 	end,
 	["total"] = function(t)
 		return 1000;
@@ -10267,7 +10267,7 @@ local fields = {
 	["collectible"] = function(t)
 		if app.CollectibleReputations then
 			-- If your reputation is higher than the maximum for a different faction, return partial completion.
-			if not app.AccountWideReputations and t.maxReputation and t.maxReputation[1] ~= t.factionID and (select(3, GetFactionInfoByID(t.maxReputation[1])) or 4) >= app.GetFactionStanding(t.maxReputation[2]) then
+			if not app.Settings.AccountWide.Reputations and t.maxReputation and t.maxReputation[1] ~= t.factionID and (select(3, GetFactionInfoByID(t.maxReputation[1])) or 4) >= app.GetFactionStanding(t.maxReputation[2]) then
 				return false;
 			end
 			return true;
@@ -10276,7 +10276,7 @@ local fields = {
 	end,
 	["collected"] = function(t)
 		if t.saved then return 1; end
-		if app.AccountWideReputations and ATTAccountWideData.Factions[t.factionID] then return 2; end
+		if app.Settings.AccountWide.Reputations and ATTAccountWideData.Factions[t.factionID] then return 2; end
 
 		-- If there's an associated achievement, return partial completion.
 		if t.achievementID and select(4, GetAchievementInfo(t.achievementID)) then
@@ -10443,7 +10443,7 @@ local fields = {
 	end,
 	["collected"] = function(t)
 		if t.saved then return 1; end
-		if app.AccountWideFlightPaths and ATTAccountWideData.FlightPaths[t.flightPathID] then return 2; end
+		if app.Settings.AccountWide.FlightPaths and ATTAccountWideData.FlightPaths[t.flightPathID] then return 2; end
 		if t.altQuests then
 			for _,questID in ipairs(t.altQuests) do
 				if IsQuestFlaggedCompleted(questID) then
@@ -10544,7 +10544,7 @@ local fields = {
 	["trackable"] = app.ReturnTrue,
 	["collected"] = function(t)
 		if t.saved then return 1; end
-		if app.AccountWideFollowers and ATTAccountWideData.Followers[t.followerID] then return 2; end
+		if app.Settings.AccountWide.Followers and ATTAccountWideData.Followers[t.followerID] then return 2; end
 	end,
 	["saved"] = function(t)
 		local followerID = t.followerID;
@@ -10620,7 +10620,7 @@ local fields = {
 			ATTAccountWideData.Buildings[id] = 1;
 			return 1;
 		end
-		if app.AccountWideRecipes and ATTAccountWideData.Buildings[id] then return 2; end
+		if app.Settings.AccountWide.Recipes and ATTAccountWideData.Buildings[id] then return 2; end
 	end,
 };
 app.BaseGarrisonBuilding = app.BaseObjectFields(fields, "BaseGarrisonBuilding");
@@ -11115,7 +11115,7 @@ local itemFields = {
 				-- This is used by reputation tokens. (turn in items)
 				-- quick cache checks
 				if app.CurrentCharacter.Factions[t.factionID] then return 1; end
-				if app.AccountWideReputations and ATTAccountWideData.Factions[t.factionID] then return 2; end
+				if app.Settings.AccountWide.Reputations and ATTAccountWideData.Factions[t.factionID] then return 2; end
 
 				-- use the extended faction logic from the associated Faction for consistency
 				local cachedFaction = app.SearchForObject("factionID", t.factionID, "key");
@@ -11334,7 +11334,7 @@ fields.collected = function(t)
 	-- character collected
 	if app.CurrentCharacter.Conduits[cID] then return 1; end
 	-- account-wide collected
-	if app.AccountWideConduits and ATTAccountWideData.Conduits[cID] then return 2; end
+	if app.Settings.AccountWide.Conduits and ATTAccountWideData.Conduits[cID] then return 2; end
 	-- fresh collected
 	local state = C_Soulbinds_GetConduitCollectionData(cID);
 	if state ~= nil then
@@ -12434,7 +12434,7 @@ local fields = {
 	["trackable"] = app.ReturnTrue,
 	["collected"] = function(t)
 		if IsQuestFlaggedCompleted(t.questID) then return 1; end
-		if app.AccountWideMusicRollsAndSelfieFilters and ATTAccountWideData.Quests[t.questID] then return 2; end
+		if app.Settings.AccountWide.MusicRollsAndSelfieFilters and ATTAccountWideData.Quests[t.questID] then return 2; end
 	end,
 	["saved"] = function(t)
 		return IsQuestFlaggedCompleted(t.questID);
@@ -12468,7 +12468,7 @@ local fields = {
 	end,
 	["collected"] = function(t)
 		if IsQuestFlaggedCompleted(t.questID) then return 1; end
-		if app.AccountWideMusicRollsAndSelfieFilters and ATTAccountWideData.Quests[t.questID] then
+		if app.Settings.AccountWide.MusicRollsAndSelfieFilters and ATTAccountWideData.Quests[t.questID] then
 			return 2;
 		end
 	end,
@@ -13277,7 +13277,7 @@ local fields = {
 	["collectible"] = app.ReturnFalse,
 	["collected"] = function(t)
 		if t.saved then return 1; end
-		if app.AccountWideRecipes and ATTAccountWideData.Spells[t.spellID] then return 2; end
+		if app.Settings.AccountWide.Recipes and ATTAccountWideData.Spells[t.spellID] then return 2; end
 	end,
 	["specs"] = function(t)
 		if t.itemID then
@@ -13309,18 +13309,18 @@ local recipeFields = RawCloneData(fields, {
 		-- return app.CollectibleRecipes and
 		-- 	(
 		--	-- If tracking Account-Wide, then all Recipes are inherently collectible
-		-- 	app.AccountWideRecipes or
+		-- 	app.Settings.AccountWide.Recipes or
 		--	-- Otherwise must be learnable by the Character specifically
 		-- 	app.CurrentCharacter.Professions[t.requireSkill]
 		-- 	);
 	end,
 	["collected"] = function(t)
 		if t.saved then return 1; end
-		if app.AccountWideRecipes and ATTAccountWideData.Spells[t.spellID] then return 2; end
+		if app.Settings.AccountWide.Recipes and ATTAccountWideData.Spells[t.spellID] then return 2; end
 	end,
 	["b"] = function(t)
 		-- If not tracking Recipes Account-Wide, then pretend that every Recipe is BoP
-		return t.itemID and app.AccountWideRecipes and 2 or 1;
+		return t.itemID and app.Settings.AccountWide.Recipes and 2 or 1;
 	end,
 });
 app.BaseRecipe = app.BaseObjectFields(recipeFields, "BaseRecipe");
@@ -13504,7 +13504,7 @@ local fields = {
 	["trackable"] = app.ReturnTrue,
 	["collected"] = function(t)
 		if t.saved then return 1; end
-		if app.AccountWideTitles and ATTAccountWideData.Titles[t.titleID] then return 2; end
+		if app.Settings.AccountWide.Titles and ATTAccountWideData.Titles[t.titleID] then return 2; end
 	end,
 	["saved"] = function(t)
 		local id, charTitles, acctTitles = t.titleID, app.CurrentCharacter.Titles, ATTAccountWideData.Titles;
@@ -14774,24 +14774,24 @@ function app:CreateMiniListForGroup(group)
 			local oldUpdate = popout.Update;
 			popout.Update = function(self, ...)
 				-- app.PrintDebug("Update.isQuestChain", self.Suffix, ...)
-				local oldQuestAccountWide = app.AccountWideQuests;
+				local oldQuestAccountWide = app.Settings.AccountWide.Quests;
 				local oldQuestCollection = app.CollectibleQuests;
 				app.CollectibleQuests = true;
-				app.AccountWideQuests = false;
+				app.Settings.AccountWide.Quests = false;
 				oldUpdate(self, ...);
 				app.CollectibleQuests = oldQuestCollection;
-				app.AccountWideQuests = oldQuestAccountWide;
+				app.Settings.AccountWide.Quests = oldQuestAccountWide;
 			end;
 			local oldRefresh = popout.Refresh;
 			popout.Refresh = function(self, ...)
 				-- app.PrintDebug("Refresh.isQuestChain", self.Suffix, ...)
-				local oldQuestAccountWide = app.AccountWideQuests;
+				local oldQuestAccountWide = app.Settings.AccountWide.Quests;
 				local oldQuestCollection = app.CollectibleQuests;
 				app.CollectibleQuests = true;
-				app.AccountWideQuests = false;
+				app.Settings.AccountWide.Quests = false;
 				oldRefresh(self, ...);
 				app.CollectibleQuests = oldQuestCollection;
-				app.AccountWideQuests = oldQuestAccountWide;
+				app.Settings.AccountWide.Quests = oldQuestAccountWide;
 			end;
 			-- Populate the Quest Rewards
 			-- think this causes quest popouts to somehow break...
@@ -20872,7 +20872,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 					if not app.CurrentCharacter.Spells[spellID] then
 						app.CurrentCharacter.Spells[spellID] = 1;
 						UpdateRawID("spellID",spellID);
-						if not previousState or not app.Settings:Get("AccountWide:Recipes") then
+						if not previousState or not app.Settings.AccountWide.Recipes then
 							app:PlayFanfare();
 							app:TakeScreenShot("Recipes");
 							if app.Settings:GetTooltipSetting("Report:Collected") then

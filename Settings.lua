@@ -10,6 +10,37 @@ local Colorize = app.Modules.Color.Colorize
 -- The Settings Frame
 local settings = CreateFrame("FRAME", app:GetName() .. "-Settings", InterfaceOptionsFramePanelContainer or UIParent, BackdropTemplateMixin and "BackdropTemplate")
 app.Settings = settings
+settings.AccountWide = {
+	Achievements = true,
+	BattlePets = true,
+	Deaths = true,
+	Exploration = true,
+	FlightPaths = true,
+	Illusions = true,
+	Mounts = true,
+	PVPRanks = true,
+	Quests = true,
+	Recipes = true,
+	Reputations = true,
+	RWP = true,
+	Titles = true,
+	Toys = true,
+};
+settings.Collectibles = {
+	Achievements = true,
+	BattlePets = true,
+	Exploration = true,
+	FlightPaths = true,
+	Illusions = true,
+	Loot = true,
+	Mounts = true,
+	Quests = true,
+	Recipes = true,
+	Reputations = true,
+	RWP = true,
+	Titles = true,
+	Toys = true,
+};
 settings.name = app:GetName()
 settings.Objects = {}
 settings.Callback = app.CallbackHandlers.Callback
@@ -1235,17 +1266,17 @@ end
 settings.SetThingTracking = function(self, force)
 	if force == "Debug" then
 		for _,thing in ipairs(Things) do
-			app["AccountWide"..thing] = true
+			self.AccountWide[thing] = true
 			app["Collectible"..thing] = true
 		end
 	elseif force == "Account" then
 		for _,thing in ipairs(Things) do
-			app["AccountWide"..thing] = true
+			self.AccountWide[thing] = true
 			app["Collectible"..thing] = self:Get("Thing:"..thing)
 		end
 	else
 		for _,thing in ipairs(Things) do
-			app["AccountWide"..thing] = self:Get("AccountWide:"..thing)
+			self.AccountWide[thing] = self:Get("AccountWide:"..thing)
 			app["Collectible"..thing] = self:Get("Thing:"..thing)
 		end
 	end
@@ -1346,7 +1377,7 @@ settings.UpdateMode = function(self, doRefresh)
 	else
 		filterSet.CompletedThings(true)
 	end
-	if app.AccountWideAchievements then
+	if self.AccountWide.Achievements then
 		app.AchievementFilter = 4
 	else
 		app.AchievementFilter = 13
