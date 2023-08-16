@@ -254,9 +254,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							17884,	-- Uktulut Coaster Challenge: Bronze
 							17887,	-- Uktulut Coaster Reverse Challenge: Bronze
 							17906,	-- Wild Preserve Circuit Challenge: Bronze
-							17862,	-- Wild Preserve Circuit Reverse Challenge: Bronze
+							17909,	-- Wild Preserve Circuit Reverse Challenge: Bronze
 							17859,	-- Wild Preserve Slalom Challenge: Bronze
-							17909,	-- Wild Preserve Slalom Reverse Challenge: Bronze
+							17862,	-- Wild Preserve Slalom Reverse Challenge: Bronze
 							17891,	-- Wingrest Roundabout Challenge: Bronze
 							17894,	-- Wingrest Roundabout Reverse Challenge: Bronze
 						}},
@@ -305,7 +305,150 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 				}),
 				n(QUESTS, {
-					-- TODO
+					dragonridingrace(75782, {	-- Apex Canopy River Run - Challenge
+						["provider"] = { "n", 190551 },	-- Bronze Timekeeper
+						["coord"] = { 23.3, 84.3, THE_WAKING_SHORES },
+						["g"] = {
+							ach(17871),	-- Apex Canopy River Run Challenge: Bronze
+							ach(17872),	-- Apex Canopy River Run Challenge: Silver
+							ach(17873),	-- Apex Canopy River Run Challenge: Gold
+						},
+					}),
+					dragonridingrace(75783, {	-- Apex Canopy River Run - Reverse Challenge
+						["provider"] = { "n", 190551 },	-- Bronze Timekeeper
+						["coord"] = { 23.3, 84.3, THE_WAKING_SHORES },
+						["g"] = {
+							ach(17874),	-- Apex Canopy River Run Reverse Challenge: Bronze
+							ach(17875),	-- Apex Canopy River Run Reverse Challenge: Silver
+							ach(17876),	-- Apex Canopy River Run Reverse Challenge: Gold
+						},
+					}),
+					dragonridingrace(75780, {	-- Emberflow Flight - Challenge
+						["provider"] = { "n", 190519 },	-- Bronze Timekeeper
+						["coord"] = { 41.8, 67.2, THE_WAKING_SHORES },
+						["g"] = {
+							ach(17865),	-- Emberflow Flight Challenge: Bronze
+							ach(17866),	-- Emberflow Flight Challenge: Silver
+							ach(17867),	-- Emberflow Flight Challenge: Gold
+						},
+					}),
+					dragonridingrace(75781, {	-- Emberflow Flight - Reverse Challenge
+						["provider"] = { "n", 190519 },	-- Bronze Timekeeper
+						["coord"] = { 41.8, 67.2, THE_WAKING_SHORES },
+						["g"] = {
+							ach(17868),	-- Emberflow Flight Reverse Challenge: Bronze
+							ach(17869),	-- Emberflow Flight Reverse Challenge: Silver
+							ach(17870),	-- Emberflow Flight Reverse Challenge: Gold
+						},
+					}),
+					dragonridingrace(75789, {	-- Flashfrost Flyover - Challenge
+						["provider"] = { "n", 190326 },	-- Bronze Timekeeper
+						["coord"] = { 62.8, 74.0, THE_WAKING_SHORES },
+						["g"] = {
+							ach(17897),	-- Flashfrost Flyover Challenge: Bronze
+							ach(17898),	-- Flashfrost Flyover Challenge: Silver
+							ach(17899),	-- Flashfrost Flyover Challenge: Gold
+						},
+					}),
+					dragonridingrace(75790, {	-- Flashfrost Flyover - Reverse Challenge
+						["provider"] = { "n", 190326 },	-- Bronze Timekeeper
+						["coord"] = { 62.8, 74.0, THE_WAKING_SHORES },
+						["g"] = {
+							ach(17900),	-- Flashfrost Flyover Reverse Challenge: Bronze
+							ach(17901),	-- Flashfrost Flyover Reverse Challenge: Silver
+							ach(17902),	-- Flashfrost Flyover Reverse Challenge: Gold
+						},
+					}),
+					dragonridingrace(75776, {	-- Ruby Lifeshrine Loop - Challenge
+						["provider"] = { "n", 190123 },	-- Bronze Timekeeper
+						["coord"] = { 63.3, 70.9, THE_WAKING_SHORES },
+						["g"] = {
+							ach(17853),	-- Ruby Lifeshrine Loop Challenge: Bronze
+							ach(17854),	-- Ruby Lifeshrine Loop Challenge: Silver
+							ach(17855),	-- Ruby Lifeshrine Loop Challenge: Gold
+						},
+					}),
+					dragonridingrace(75777, {	-- Ruby Lifeshrine Loop - Reverse Challenge
+						["provider"] = { "n", 190123 },	-- Bronze Timekeeper
+						["coord"] = { 63.3, 70.9, THE_WAKING_SHORES },
+						["g"] = {
+							ach(17856),	-- Ruby Lifeshrine Loop Reverse Challenge: Bronze
+							ach(17857),	-- Ruby Lifeshrine Loop Reverse Challenge: Silver
+							ach(17858),	-- Ruby Lifeshrine Loop Reverse Challenge: Gold
+						},
+					}),
+					dragonridingrace(75785, {	-- Uktulut Coaster - Challenge
+						["provider"] = { "n", 190667 },	-- Bronze Timekeeper
+						["coord"] = { 55.4, 41.1, THE_WAKING_SHORES },
+						["g"] = {
+							ach(17884),	-- Uktulut Coaster Challenge: Bronze
+							ach(17885),	-- Uktulut Coaster Challenge: Silver
+							ach(17886),	-- Uktulut Coaster Challenge: Gold
+						},
+					}),
+					dragonridingrace(75786, {	-- Uktulut Coaster - Reverse Challenge
+						["provider"] = { "n", 190667 },	-- Bronze Timekeeper
+						["coord"] = { 55.4, 41.1, THE_WAKING_SHORES },
+						["g"] = {
+							ach(17887),	-- Uktulut Coaster Reverse Challenge: Bronze
+							ach(17888),	-- Uktulut Coaster Reverse Challenge: Silver
+							ach(17889),	-- Uktulut Coaster Reverse Challenge: Gold
+						},
+					}),
+					dragonridingrace(75791, {	-- Wild Preserve Circuit - Challenge
+						["provider"] = { "n", 190503 },	-- Bronze Timekeeper
+						["coord"] = { 42.6, 94.5, THE_WAKING_SHORES },
+						["g"] = {
+							ach(17906),	-- Wild Preserve Circuit Challenge: Bronze
+							ach(17907),	-- Wild Preserve Circuit Challenge: Silver
+							ach(17908),	-- Wild Preserve Circuit Challenge: Gold
+						},
+					}),
+					dragonridingrace(75792, {	-- Wild Preserve Circuit - Reverse Challenge
+						["provider"] = { "n", 190503 },	-- Bronze Timekeeper
+						["coord"] = { 42.6, 94.5, THE_WAKING_SHORES },
+						["g"] = {
+							ach(17909),	-- Wild Preserve Circuit Reverse Challenge: Bronze
+							ach(17910),	-- Wild Preserve Circuit Reverse Challenge: Silver
+							ach(17911),	-- Wild Preserve Circuit Reverse Challenge: Gold
+						},
+					}),
+					dragonridingrace(75778, {	-- Wild Preserve Slalom - Challenge
+						["provider"] = { "n", 190473 },	-- Bronze Timekeeper
+						["coord"] = { 47.0, 85.6, THE_WAKING_SHORES },
+						["g"] = {
+							ach(17859),	-- Wild Preserve Slalom Challenge: Bronze
+							ach(17860),	-- Wild Preserve Slalom Challenge: Silver
+							ach(17861),	-- Wild Preserve Slalom Challenge: Gold
+						},
+					}),
+					dragonridingrace(75779, {	-- Wild Preserve Slalom - Reverse Challenge
+						["provider"] = { "n", 190473 },	-- Bronze Timekeeper
+						["coord"] = { 47.0, 85.6, THE_WAKING_SHORES },
+						["g"] = {
+							ach(17862),	-- Wild Preserve Slalom Reverse Challenge: Bronze
+							ach(17863),	-- Wild Preserve Slalom Reverse Challenge: Silver
+							ach(17864),	-- Wild Preserve Slalom Reverse Challenge: Gold
+						},
+					}),
+					dragonridingrace(75787, {	-- Wingrest Roundabout - Challenge
+						["provider"] = { "n", 190753 },	-- Bronze Timekeeper
+						["coord"] = { 73.2, 33.9, THE_WAKING_SHORES },
+						["g"] = {
+							ach(17891),	-- Wingrest Roundabout Challenge: Bronze
+							ach(17892),	-- Wingrest Roundabout Challenge: Silver
+							ach(17893),	-- Wingrest Roundabout Challenge: Gold
+						},
+					}),
+					dragonridingrace(75788, {	-- Wingrest Roundabout - Reverse Challenge
+						["provider"] = { "n", 190753 },	-- Bronze Timekeeper
+						["coord"] = { 73.2, 33.9, THE_WAKING_SHORES },
+						["g"] = {
+							ach(17894),	-- Wingrest Roundabout Reverse Challenge: Bronze
+							ach(17895),	-- Wingrest Roundabout Reverse Challenge: Silver
+							ach(17896),	-- Wingrest Roundabout Reverse Challenge: Gold
+						},
+					}),
 				}),
 			})),
 			header(HEADERS.Achievement, 17332, bubbleDownSelf({ ["timeline"] = ADDED_10_0_5 }, {	-- Reverse Racer: Gold

@@ -359,7 +359,114 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 				}),
 				n(QUESTS, {
-					-- TODO
+					dragonridingrace(75976, {	-- Brimstone Scramble - Challenge
+						["provider"] = { "n", 202749 },	-- Bronze Timekeeper
+						["coord"] = { 54.4, 23.7, ZARALEK_CAVERN },
+						["g"] = {
+							ach(18076),	-- Brimstone Scramble Challenge: Bronze
+							ach(18077),	-- Brimstone Scramble Challenge: Silver
+							ach(18078),	-- Brimstone Scramble Challenge: Gold
+						},
+					}),
+					dragonridingrace(75977, {	-- Brimstone Scramble - Reverse Challenge
+						["provider"] = { "n", 202749 },	-- Bronze Timekeeper
+						["coord"] = { 54.4, 23.7, ZARALEK_CAVERN },
+						["g"] = {
+							ach(18079),	-- Brimstone Scramble Reverse Challenge: Bronze
+							ach(18080),	-- Brimstone Scramble Reverse Challenge: Silver
+							ach(18081),	-- Brimstone Scramble Reverse Challenge: Gold
+						},
+					}),
+					dragonridingrace(75974, {	-- Caldera Cruise - Challenge
+						["provider"] = { "n", 202676 },	-- Bronze Timekeeper
+						["coord"] = { 39.0, 49.8, ZARALEK_CAVERN },
+						["g"] = {
+							ach(18070),	-- Caldera Cruise Challenge: Bronze
+							ach(18071),	-- Caldera Cruise Challenge: Silver
+							ach(18072),	-- Caldera Cruise Challenge: Gold
+						},
+					}),
+					dragonridingrace(75975, {	-- Caldera Cruise - Reverse Challenge
+						["provider"] = { "n", 202676 },	-- Bronze Timekeeper
+						["coord"] = { 39.0, 49.8, ZARALEK_CAVERN },
+						["g"] = {
+							ach(18073),	-- Caldera Cruise Reverse Challenge: Bronze
+							ach(18074),	-- Caldera Cruise Reverse Challenge: Silver
+							ach(18075),	-- Caldera Cruise Reverse Challenge: Gold
+						},
+					}),
+					dragonridingrace(75972, {	-- Crystal Circuit - Challenge
+						["provider"] = { "n", 202524 },	-- Bronze Timekeeper
+						["coord"] = { 38.6, 60.6, ZARALEK_CAVERN },
+						["g"] = {
+							ach(18064),	-- Crystal Circuit Challenge: Bronze
+							ach(18065),	-- Crystal Circuit Challenge: Silver
+							ach(18066),	-- Crystal Circuit Challenge: Gold
+						},
+					}),
+					dragonridingrace(75973, {	-- Crystal Circuit - Reverse Challenge
+						["provider"] = { "n", 202524 },	-- Bronze Timekeeper
+						["coord"] = { 38.6, 60.6, ZARALEK_CAVERN },
+						["g"] = {
+							ach(18067),	-- Crystal Circuit Reverse Challenge: Bronze
+							ach(18068),	-- Crystal Circuit Reverse Challenge: Silver
+							ach(18069),	-- Crystal Circuit Reverse Challenge: Gold
+						},
+					}),
+					dragonridingrace(75980, {	-- Loamm Roamm - Challenge
+						["provider"] = { "n", 202795 },	-- Bronze Timekeeper
+						["coord"] = { 58.0, 57.6, ZARALEK_CAVERN },
+						["g"] = {
+							ach(18088),	-- Loamm Roamm Challenge: Bronze
+							ach(18089),	-- Loamm Roamm Challenge: Silver
+							ach(18090),	-- Loamm Roamm Challenge: Gold
+						},
+					}),
+					dragonridingrace(75981, {	-- Loamm Roamm - Reverse Challenge
+						["provider"] = { "n", 202795 },	-- Bronze Timekeeper
+						["coord"] = { 58.0, 57.6, ZARALEK_CAVERN },
+						["g"] = {
+							ach(18091),	-- Loamm Roamm Reverse Challenge: Bronze
+							ach(18092),	-- Loamm Roamm Reverse Challenge: Silver
+							ach(18093),	-- Loamm Roamm Reverse Challenge: Gold
+						},
+					}),
+					dragonridingrace(75978, {	-- Shimmering Slalom - Challenge
+						["provider"] = { "n", 202772 },	-- Bronze Timekeeper
+						["coord"] = { 58.7, 45.1, ZARALEK_CAVERN },
+						["g"] = {
+							ach(18082),	-- Shimmering Slalom Challenge: Bronze
+							ach(18083),	-- Shimmering Slalom Challenge: Silver
+							ach(18084),	-- Shimmering Slalom Challenge: Gold
+						},
+					}),
+					dragonridingrace(75979, {	-- Shimmering Slalom - Reverse Challenge
+						["provider"] = { "n", 202772 },	-- Bronze Timekeeper
+						["coord"] = { 58.7, 45.1, ZARALEK_CAVERN },
+						["g"] = {
+							ach(18085),	-- Shimmering Slalom Reverse Challenge: Bronze
+							ach(18086),	-- Shimmering Slalom Reverse Challenge: Silver
+							ach(18087),	-- Shimmering Slalom Reverse Challenge: Gold
+						},
+					}),
+					dragonridingrace(75982, {	-- Sulfur Sprint - Challenge
+						["provider"] = { "n", 202973 },	-- Bronze Timekeeper
+						["coord"] = { 51.2, 46.6, ZARALEK_CAVERN },
+						["g"] = {
+							ach(18094),	-- Sulfur Sprint Challenge: Bronze
+							ach(18095),	-- Sulfur Sprint Challenge: Silver
+							ach(18096),	-- Sulfur Sprint Challenge: Gold
+						},
+					}),
+					dragonridingrace(75983, {	-- Sulfur Sprint - Reverse Challenge
+						["provider"] = { "n", 202973 },	-- Bronze Timekeeper
+						["coord"] = { 51.2, 46.6, ZARALEK_CAVERN },
+						["g"] = {
+							ach(18097),	-- Sulfur Sprint Reverse Challenge: Bronze
+							ach(18098),	-- Sulfur Sprint Reverse Challenge: Silver
+							ach(18099),	-- Sulfur Sprint Reverse Challenge: Gold
+						},
+					}),
 				}),
 			})),
 		}),
