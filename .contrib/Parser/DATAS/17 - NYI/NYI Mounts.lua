@@ -515,9 +515,6 @@ root(ROOTS.NeverImplemented, {
 				i(198823, {	-- [PH] Brown Wind Eagle / [PH] Brown Wind Eagle (MOUNT!)
 					--["modelID"] = ,
 				}),
-				i(198824, {	-- [PH] Dark Wind Eagle / [PH] Dark Wind Eagle (MOUNT!)
-					--["modelID"] = ,
-				}),
 				i(192766, {	-- [PH] Dragonfly Orange / [PH] Dragonfly Orange (MOUNT!)
 					--["modelID"] = ,
 				}),

@@ -311,6 +311,7 @@ for key,value in pairs({
 	[-1000172] = "775461",
 	[-1000173] = "Interface/Icons/achievement_dungeon_outland_dungeonmaster",
 	[-1000174] = "Interface/Icons/inv_dragonwhelpoutland2_cutepink",
+	[-1000175] = "Interface/Icons/Ability_xavius_dreamsimulacrum",
 	[-1000176] = "Interface/Icons/inv_belt_armor_waistoftime_d_01",
 	[-1000177] = "Interface/Icons/inv_belt_armor_waistoftime_d_01",
 	[-1000179] = "Interface/Icons/achievement_reputation_argentchampion",

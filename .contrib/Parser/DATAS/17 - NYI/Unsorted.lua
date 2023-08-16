@@ -744,14 +744,10 @@ root(ROOTS.Unsorted, {
 			--
 			i(206596),	-- Tome of Thomas Thomson
 			i(208769),	-- Tome of Thomas Thomson
-			i(209831),	-- Wyrm's Bountiful Chest
 			i(209832),	-- Crate of Dreambound Leather
-			i(209833),	-- Crate of Dreambound Armor
 			i(209834),	-- Crate of Dreambound Mail
 			i(209835),	-- Crate of Dreambound Plate
-			i(209858),	-- Dreamsurge Remnant
 			i(209870),	-- Surge Catcher
-			i(209944),	-- Friendsurge Defenders
 			i(209997),	-- Distilled Knowledge of Timeways
 		})),
 		tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {

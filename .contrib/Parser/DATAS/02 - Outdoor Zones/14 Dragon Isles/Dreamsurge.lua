@@ -3,6 +3,7 @@
 ---------------------------------------------------
 DREAMSURGE = createHeader({
 	readable = "Dreamsurge",
+	icon = "Interface\\Icons\\Ability_xavius_dreamsimulacrum",
 	text = {
 		en = "Dreamsurge",
 	},
@@ -29,6 +30,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coords"] = {
 						{ 51.2, 43.3, THALDRASZUS },
 						{ 58.3, 67.7, THE_WAKING_SHORES },
+						{ 64.1, 41.7, OHNAHRAN_PLAINS }
 					},
 					["g"] = {
 						i(209833),	-- Crate of Dreambound Armor
@@ -39,6 +41,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coords"] = {
 						{ 51.2, 43.3, THALDRASZUS },
 						{ 58.3, 67.7, THE_WAKING_SHORES },
+						{ 64.1, 41.7, OHNAHRAN_PLAINS }
 					},
 					["isWeekly"] = true,
 					["g"] = {
@@ -54,24 +57,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coords"] = {
 						{ 61.9, 26.5, THALDRASZUS },
 						{ 41.2, 77.5, THE_WAKING_SHORES },
+						{ 24.3, 60.9, OHNAHRAN_PLAINS },
 					},
 				}),
 				n(209837, {	-- Flamewing Ascendant
 					["coords"] = {
 						{ 62.4, 26.0, THALDRASZUS },
 						{ 41.2, 77.5, THE_WAKING_SHORES },
+						{ 24.3, 60.9, OHNAHRAN_PLAINS },
 					},
 				}),
 				n(209491, {	-- Molten General
 					["coords"] = {
 						{ 61.8, 26.3, THALDRASZUS },
 						{ 41.2, 77.5, THE_WAKING_SHORES },
+						{ 24.3, 60.9, OHNAHRAN_PLAINS },
 					},
 				}),
 				n(209753, {	-- Planesborn Annihilator
 					["coords"] = {
 						{ 61.7, 26.2, THALDRASZUS },
 						{ 41.2, 77.5, THE_WAKING_SHORES },
+						{ 24.3, 60.9, OHNAHRAN_PLAINS },
 					},
 				}),
 			})),
@@ -89,6 +96,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coords"] = {
 						{ 51.1, 43.4, THALDRASZUS },
 						{ 58.4, 67.8, THE_WAKING_SHORES },
+						{ 64.2, 41.6, OHNAHRAN_PLAINS},
 					},
 					["g"] = bubbleDownFiltered({
 						["cost"] = {{ "i", DREAMSURGE_COALESCENCE, 100 }},
@@ -145,16 +153,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						n(WEAPONS, {
 							i(208926),	-- Dreambound Weapon
 						}),
-					
-						--
-						--i(x, {	-- empty box/no name
-						--	["cost"] = {{ "i", DREAMSURGE_COALESCENCE, 1000 }},
-						--}),
+
+						i(198824, {	-- Duskwing Ohuna (MOUNT!)
+							["cost"] = {{ "i", DREAMSURGE_COALESCENCE, 1000 }},
+						}),
 						i(205024, {	-- Cheddar (PET!)
 							["cost"] = {{ "i", DREAMSURGE_COALESCENCE, 250 }},
 						}),
 						i(205010, {	-- Crimson Swoglet (PET!)
 							["cost"] = {{ "i", DREAMSURGE_COALESCENCE, 250 }},
+						}),
+						i(209858, {	-- Dreamsurge Remnant
+							["cost"] = {{ "i", DREAMSURGE_COALESCENCE, 500 }},
+						}),
+						i(209944, {	-- Friendsurge Defenders
+							["cost"] = {{ "i", DREAMSURGE_COALESCENCE, 500 }},
 						}),
 					}),
 				}),
@@ -162,6 +175,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coords"] = { 
 						{ 51.2, 43.3, THALDRASZUS },
 						{ 58.4, 67.7, THE_WAKING_SHORES },
+						{ 64.1, 41.7, OHNAHRAN_PLAINS },
 					},
 					["g"] = bubbleDownFiltered({
 						["cost"] = {{ "i", DREAMSURGE_CHRYSALIS, 1 }},
@@ -251,7 +265,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 })));
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
-	m(THALDRASZUS, { n(DREAMSURGE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+	n(DREAMSURGE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		q(77794),	-- after 'some' boss kills for 'Birth of Flames' event
-	}))}),
+	})),
 })));
