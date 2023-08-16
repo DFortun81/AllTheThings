@@ -96,7 +96,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					i(64657, {	-- Canopic Jar
 						["description"] = "Alchemy is not required to get the recipe.\n\nNOTE TO BLUES: Why isn't this item BoA? You have the technology!\n  - Crieve",
 						["groups"] = {
-							i(67538),	-- Recipe: Vial of the Sands
+							i(67538),	-- Recipe: Vial of the Sands (RECIPE!)
 						},
 					}),
 				})),

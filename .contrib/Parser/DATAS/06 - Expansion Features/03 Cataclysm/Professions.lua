@@ -274,7 +274,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 			currency(401, {	-- Tol'vir
 				-- Solves
 				i(64657, bubbleDownSelf({["requireSkill"] = ALCHEMY},{	-- Canopic Jar
-					i(67538),	-- Recipe: Vial of the Sands
+					i(67538),	-- Recipe: Vial of the Sands (RECIPE!)
 				})),
 				i(60847),	-- Crawling Claw (PET!)
 				i(64881),	-- Pendant of the Scarab Storm (TOY!)

@@ -58,7 +58,7 @@ root(ROOTS.Factions, {
 			ach(5024, {	-- Better Leveling Through Chemistry
 				["collectible"] = false,
 				["g"] = {
-					i(65498),	-- Recipe: Big Cauldron of Battle
+					i(65498),	-- Recipe: Big Cauldron of Battle (RECIPE!)
 				},
 			}),
 			ach(6634, {	-- Challenge Conquerors: Gold - Guild Edition
@@ -141,7 +141,7 @@ root(ROOTS.Factions, {
 			ach(5465, {	-- Mix Master
 				["collectible"] = false,
 				["g"] = {
-					i(65435),	-- Recipe: Cauldron of Battle
+					i(65435),	-- Recipe: Cauldron of Battle (RECIPE!)
 				},
 			}),
 			ach(6644, {	-- Pandaren Embassy (A)

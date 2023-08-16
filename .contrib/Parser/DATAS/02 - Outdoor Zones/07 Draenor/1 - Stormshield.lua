@@ -3661,30 +3661,30 @@ root(ROOTS.Zones, {
 										recipe(175880),	-- Secrets of Draenor Alchemy
 									},
 								}),
-								i(112042),	-- Recipe: Draenic Channeled Mana Potion
-								i(112043, { ["timeline"] = { "created 6.0.1.18297" }}),	-- Recipe: Draenic Mana Potion
-								i(112041),	-- Recipe: Draenic Armor Potion
-								i(112038),	-- Recipe: Draenic Agility Potion
-								i(112039),	-- Recipe: Draenic Intellect Potion
-								i(112040),	-- Recipe: Draenic Strength Potion
-								i(120132, { ["timeline"] = { "created 6.0.2.18816" }}),	-- Recipe: Secrets of Draenor Alchemy
+								i(112042),	-- Recipe: Draenic Channeled Mana Potion (RECIPE!)
+								i(112043, { ["timeline"] = { "created 6.0.1.18297" }}),	-- Recipe: Draenic Mana Potion (RECIPE!)
+								i(112041),	-- Recipe: Draenic Armor Potion (RECIPE!)
+								i(112038),	-- Recipe: Draenic Agility Potion (RECIPE!)
+								i(112039),	-- Recipe: Draenic Intellect Potion (RECIPE!)
+								i(112040),	-- Recipe: Draenic Strength Potion (RECIPE!)
+								i(120132, { ["timeline"] = { "created 6.0.2.18816" }}),	-- Recipe: Secrets of Draenor Alchemy (RECIPE!)
 								i(118700, {	-- Secret of Draenor Alchemy
 									["filterID"] = MISC,
 									["g"] = {
-										i(112023),	-- Recipe: Draenic Philosopher's Stone
-										i(112045),	-- Recipe: Draenic Rejuvenation Potion
-										i(112024),	-- Recipe: Draenic Agility Flask
-										i(112026),	-- Recipe: Draenic Intellect Flask
-										i(112030),	-- Recipe: Draenic Stamina Flask
-										i(112027),	-- Recipe: Draenic Strength Flask
-										i(112031),	-- Recipe: Greater Draenic Agility Flask
-										i(112033),	-- Recipe: Greater Draenic Intellect Flask
-										i(112037),	-- Recipe: Greater Draenic Stamina Flask
-										i(112034),	-- Recipe: Greater Draenic Strength Flask
-										i(112047),	-- Recipe: Transmorphic Tincture
-										i(160662),  -- Recipe: Blackwater Anti-Venom
-										i(160663),  -- Recipe: Healing Tonic
-										i(160661),  -- Recipe: Fire Ammonite Oil
+										i(112023),	-- Recipe: Draenic Philosopher's Stone (RECIPE!)
+										i(112045),	-- Recipe: Draenic Rejuvenation Potion (RECIPE!)
+										i(112024),	-- Recipe: Draenic Agility Flask (RECIPE!)
+										i(112026),	-- Recipe: Draenic Intellect Flask (RECIPE!)
+										i(112030),	-- Recipe: Draenic Stamina Flask (RECIPE!)
+										i(112027),	-- Recipe: Draenic Strength Flask (RECIPE!)
+										i(112031),	-- Recipe: Greater Draenic Agility Flask (RECIPE!)
+										i(112033),	-- Recipe: Greater Draenic Intellect Flask (RECIPE!)
+										i(112037),	-- Recipe: Greater Draenic Stamina Flask (RECIPE!)
+										i(112034),	-- Recipe: Greater Draenic Strength Flask (RECIPE!)
+										i(112047),	-- Recipe: Transmorphic Tincture (RECIPE!)
+										i(160662),	-- Recipe: Blackwater Anti-Venom (RECIPE!)
+										i(160663),	-- Recipe: Healing Tonic (RECIPE!)
+										i(160661),	-- Recipe: Fire Ammonite Oil (RECIPE!)
 										i(114028, {	-- Small Pouch of Coins
 											["description"] = "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)",
 										}),

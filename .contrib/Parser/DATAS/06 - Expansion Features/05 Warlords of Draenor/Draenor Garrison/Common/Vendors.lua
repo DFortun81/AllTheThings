@@ -400,10 +400,10 @@ root(ROOTS.ExpansionFeatures,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
 						}),
-						i(122710, {	-- Recipe: Primal Alchemy
+						i(122710, {	-- Recipe: Primal Alchemy (RECIPE!)
 							["cost"] = { { "i", 109127, 60 }, },	-- 60x Starflower
 						}),
-						i(122600, {	-- Recipe: Savage Blood
+						i(122600, {	-- Recipe: Savage Blood (RECIPE!)
 							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
 						}),
 						i(128160, {	-- Recipe: Wildswater
@@ -702,10 +702,10 @@ root(ROOTS.ExpansionFeatures,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
 						}),
-						i(122710, {	-- Recipe: Primal Alchemy
+						i(122710, {	-- Recipe: Primal Alchemy (RECIPE!)
 							["cost"] = { { "i", 109127, 60 }, },	-- 60x Starflower
 						}),
-						i(122600, {	-- Recipe: Savage Blood
+						i(122600, {	-- Recipe: Savage Blood (RECIPE!)
 							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
 						}),
 						i(128160, {	-- Recipe: Wildswater
