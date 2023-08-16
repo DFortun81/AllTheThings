@@ -562,6 +562,7 @@ app.RefreshTradeSkillCache = function()
 	-- "Professions" that anyone can "know"
 	cache[2720] = 1;	-- Junkyard Tinkering
 	cache[2791] = 1;	-- Ascension Crafting
+	cache[2811] = 1;	-- Stygia Crafting
 	cache[2819] = 1;	-- Protoform Synthesis
 	cache[2847] = 1;	-- Tuskarr Fishing Gear
 	-- app.PrintDebug("RefreshTradeSkillCache");
@@ -13206,8 +13207,11 @@ SpellNameToSpellID = setmetatable({}, {
 app.SpellNameToSpellID = SpellNameToSpellID;
 -- Represents a small lookup of a select set of Profession/Skill-related icons
 local SkillIcons = setmetatable({
-	[2720] = 2620862,	-- Junkyard Tinkering
+	[2720] = 2915722,	-- Junkyard Tinkering
+	[2891] = 3054888,	-- Ascension Crafting
+	[2811] = 2578727,	-- Stygia Crafting
 	[2819] = 3747898,	-- Protoform Synthesis
+	[2847] = 4638460,	-- Tuskarr Fishing Gear
 }, { __index = function(t, key)
 	if not key then return; end
 	local skillSpellID = app.SkillIDToSpellID[key];
@@ -14367,7 +14371,7 @@ function app:CreateMiniListForGroup(group)
 			if bestResult then group = bestResult; end
 		end
 	end
-	
+
 	-- Pop Out Functionality! :O
 	local suffix = BuildSourceTextForChat(group, 1)
 		-- this portion is to ensure that custom slash command popouts have a unique name based on the stand-alone group (no parent)

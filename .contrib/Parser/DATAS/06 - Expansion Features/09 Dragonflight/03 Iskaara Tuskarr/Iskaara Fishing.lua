@@ -22,7 +22,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					crit(2, {	-- Harpoon head
 						["_quests"] = { 70797 },	-- Jagged Serevite Harpoon Head
 					}),
-					crit(3, {	-- harpoon rope
+					crit(3, {	-- Harpoon rope
 						["_quests"] = { 70799 },	-- Braided Seavine Harpoon Rope
 					}),
 					crit(4, {	-- Fishing net weights
@@ -76,9 +76,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["g"] = {
 						i(199925),	-- Stone With Hole
 						i(199924),	-- Strong Sea Kelp
-						crit(2, {	-- Iskaaran Fishing Net
-							["achievementID"] = 16321,	-- Cutting Tusk Equipment
-						}),
 					},
 				}),
 				q(72584, {	-- Setting Your Very Own Net
@@ -242,9 +239,26 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			},{
 				["crs"] = { 195935 },
 				["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
-				["g"] = { 
+				["g"] = {
+					filter(RECIPES, sharedData({ ["u"] = TRAINING }, {
+						r(388251),	-- Braided Seavine Harpoon Rope
+						r(388253),	-- Dense Draconium Net Weights
+						r(388255),	-- Double Imbu Knot
+						r(388252),	-- Draconium Net Weights
+						r(387827),	-- Flying Fish Bone Charm
+						r(388254),	-- Imbu Knot
+						r(387836),	-- Irontree Harpoon Handle
+						r(387828),	-- Iskaaran Fishing Net
+						r(387831),	-- Iskaaran Harpoon
+						r(387832),	-- Iskaaran Ice Axe
+						r(388249),	-- Jagged Serevite Harpoon Head
+						r(387833),	-- Polished Basalt Bracelet
+						r(387594),	-- Reinforced Irontree Harpoon Handle
+						r(388250),	-- Seavine Harpoon Rope
+						r(387375),	-- Serevite Harpoon Head
+					})),
 					-- These "Recipes" show as learned, but when you have learned them, they dissapear causing ATT to think you no longer have them learned.
-					
+
 					i(199847, {	-- Braided Seavine Harpoon Rope
 						["spellID"] = 388251,	-- Braided Seavine Harpoon Rope
 						["questID"] = 70799,	-- Triggered after crafting 'Braided Seavine Harpoon Rope'
@@ -365,7 +379,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["cost"] = { { "i", 194701, 5 } },	-- 5x Ominous Conch
 				["isDaily"] = true,
 				["g"] = {
-					i(200086),	-- Khaz'gorite Infused Resin
+					i(200086),	-- Khaz'gorite-Infused Resin
 				},
 			},{
 				n(197411, {	-- Astray Splasher <Lunker>
@@ -395,7 +409,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 33.8, 64.4, THE_WAKING_SHORES },
 					["questID"] = 74078,
 					["g"] = {
-						i(200086),	-- Khaz'gorite Infused Resin
+						i(200086),	-- Khaz'gorite-Infused Resin
 						i(200218),	-- Charred Fishing Pole
 					},
 				}),
@@ -437,7 +451,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						{ "n", 197596 },	-- Deep Ice Fishing Hole
 					},
 				}),
-				i(200086, {	-- Khaz'gorite Infused Resin
+				i(200086, {	-- Khaz'gorite-Infused Resin
 					["description"] = "Obtained from Rares summoned by using Ominous Conch at Large Lunker Sightings.",
 					["providers"] = {
 						{ "n", 193706 },	-- Snufflegust

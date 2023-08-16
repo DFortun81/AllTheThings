@@ -29,6 +29,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 					i(168045),	-- Beastbot Powerpack
 					i(169649),	-- Blue Spraybot
 					i(167832),	-- Canned Minnows
+					i(168327),	-- Chain Ignitercoil
 					i(166972),	-- Emergency Powerpack
 					i(166973),	-- Emergency Repair Kit
 					i(168821),	-- Emergency Rocket Chicken
@@ -58,6 +59,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 						i(161382),	-- Wind-Up Utility Pylon
 					}),
 					i(167870),	-- G99.99 Landshark
+					i(168832),	-- Galvanic Oscillator
 					i(169648),	-- Green Spraybot
 					i(168907),	-- Holographic Digitalization Hearthstone (TOY!)
 					i(167649),	-- Hundred-Fathom Lure
@@ -85,7 +87,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 					i(167062),	-- Vaultbot Key
 				}),
 				filter(RECIPES, {
-					r(291598, {["u"]=15}),	-- 500S-Cybergenic Powercore
+					r(291598, {["u"] = TRAINING}),	-- 500S-Cybergenic Powercore
 					r(300274),	-- Annoy-o-Tron Gang
 					r(300272),	-- Anti-Gravity Pack
 					r(299864),	-- Advanced Adventurer Augment
@@ -94,6 +96,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 					r(295362),	-- Beastbot Powerpack
 					r(300268),	-- Blue Spraybot
 					r(294360),	-- Canned Minnows
+					r(300279),	-- Chain Ignitercoils
 					r(291600),	-- Emergency Powerpack
 					r(291601),	-- Emergency Repair Kit
 					r(298136),	-- Emergency Rocket Chicken
@@ -101,28 +104,29 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 					r(299186),	-- Experimental Adventurer Augment
 					r(299952),	-- Extraordinary Adventurer Augment
 					r(294420),	-- G99.99 Landshark
+					r(300278),	-- Galvanic Oscillator
 					r(300267),	-- Green Spraybot
 					r(299411),	-- Holographic Digitalization Hearthstone
 					r(293394),	-- Hundred-Fathom Lure
-					r(294193, {["u"]=15}),	-- Mechanocat Laser Pointer
+					r(294193, {["u"] = TRAINING}),	-- Mechanocat Laser Pointer
 					r(291869),	-- Mechano-Treat
 					r(300270),	-- Microbot XD
 					r(300266),	-- Orange Spraybot
-					r(300271, {["u"]=15}),	-- Perfectly Timed Differential
+					r(300271, {["u"] = TRAINING}),	-- Perfectly Timed Differential
 					r(300265),	-- Personal Time Displacer
 					r(298134),	-- Protocol Transference Device
 					r(300277),	-- Re-Procedurally Generated Punchcard
-					r(291789, {["u"]=15}),	-- Rustbolt Gramophone
-					r(295288, {["u"]=15}),	-- Rustbolt Kegerator
+					r(291789, {["u"] = TRAINING}),	-- Rustbolt Gramophone
+					r(295288, {["u"] = TRAINING}),	-- Rustbolt Kegerator
 					r(300273),	-- Rustbolt Pocket Turret
 					r(298140),	-- Rustbolt Requisitions
 					r(298138),	-- Rustbolt Resistance Insignia
 					r(300291),	-- S.P.A.R.E. Crate
-					r(303000, {["u"]=15}),	-- Sapphronetta Flivvers Action Figure
+					r(303000, {["u"] = TRAINING}),	-- Sapphronetta Flivvers Action Figure
 					r(295290),	-- Scrap Grenade
 					r(291524),	-- Scrap Trap
-					r(300122, {["u"]=15}),	-- Scrapmaster's Blowtorch
-					r(298141, {["u"]=15}),	-- Subroutine: Optimization (Might not be collectible)
+					r(300122, {["u"] = TRAINING}),	-- Scrapmaster's Blowtorch
+					r(298141, {["u"] = TRAINING}),	-- Subroutine: Optimization (Might not be collectible)
 					r(291987),	-- Ultrasafe Transporter: Mechagon
 					r(300269),	-- Utility Mechanoclaw
 					r(291788),	-- Vaultbot Key

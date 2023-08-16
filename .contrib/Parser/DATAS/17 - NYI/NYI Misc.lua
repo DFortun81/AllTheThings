@@ -388,9 +388,7 @@ root(ROOTS.NeverImplemented, {
 				i(183939),	-- Carefully Bottled Holy Water
 				i(180875),	-- Carriage Cargo
 				i(179928),	-- Cell Chain Pull
-				i(181140),	-- Charm of Alacrity
 				i(181240),	-- Charm of Buff 7
-				i(181159),	-- Charm of Energizing
 				i(174038),	-- Chime of Celerity
 				i(178888),	-- Choofa
 				i(183125),	-- Combat Meditation: Power

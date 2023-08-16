@@ -249,52 +249,52 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								filter(RECIPES, {
 									-- Lures
 									recipe(333530, {	-- Anointment Oil
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333548, {	-- Ashfallen Key
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333545, {	-- Catalyst of Creation
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333535, {	-- Fountain of Rejuvenation
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333533, {	-- Heartpiercer Javelin
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333549, {	-- Humility's Guard
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(328321, {	-- Overcharged Goliath Core
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333546, {	-- Praetor Resonance Beacon
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(328680, {	-- Soul Mirror
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333547, {	-- Soulseeker Crystal
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 
 									-- Boons
 									recipe(345786, {	-- Artisan Tool Belt
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(342521),	-- Empyrean Refreshment
 									recipe(345760, {	-- Gilded Abacus
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(345713),	-- Kyrian Smith's Kit
 									recipe(345894),	-- Medallion of Service
 									recipe(335705, {	-- Sigil of Haunting Memories
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(342503),	-- Skystrider Glider
 									recipe(345757, {	-- Steward Mail Pouch
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(345916),	-- Vesper of Calling
 
@@ -307,22 +307,22 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 
 									-- Equipment
 									recipe(333230, {	-- Deep Echo Trident
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333209, {	-- Herald's Footpads
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333372, {	-- Phial of Serenity
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(345978, {	-- Ring of Warding
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333374, {	-- Spiritforged Aegis
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333362, {	-- Vial of Lichfrost
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 								}),
 								n(CRAFTABLES, {
@@ -444,22 +444,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									}),
 
 									-- Charms
-									i(181140, {	-- Charm of Alacrity
-										["cost"] = {
-											{ "i", ELYSIAN_FEATHERS, 4 },
-											{ "i", NIGHTFORGED_STEEL, 2 },
-										},
-									}),
 									i(181157, {	-- Charm of Discord
 										["cost"] = {
 											{ "i", CALLOUSED_BONE, 4 },
 											{ "i", NIGHTFORGED_STEEL, 4 },
-										},
-									}),
-									i(181159, {	-- Charm of Energizing
-										["cost"] = {
-											{ "i", CALLOUSED_BONE, 4 },
-											{ "i", ELYSIAN_FEATHERS, 3 },
 										},
 									}),
 									i(181239, {	-- Charm of Focus
@@ -1645,8 +1633,6 @@ end
 
 root(ROOTS.NeverImplemented, {
 	prof(ASCENSION_CRAFTING, {
-		recipe(335849),	-- Charm of Energizing
-		recipe(335596),	-- Charm of Alacrity
 		q(60937),	-- [DNT] Blueprint: Herald's Footpads
 		q(61265, {	-- Blueprint: Charm of Alacrity
 			i(181139),	-- Blueprint: Charm of Alacrity

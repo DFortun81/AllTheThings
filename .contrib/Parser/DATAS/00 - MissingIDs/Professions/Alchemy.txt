@@ -77,7 +77,6 @@ r(41500),	-- Cauldron of Major Fire Protection
 r(41501),	-- Cauldron of Major Frost Protection
 r(41502),	-- Cauldron of Major Nature Protection
 r(41503),	-- Cauldron of Major Shadow Protection
-r(42736),	-- Flask of Chromatic Wonder
 3.0.1.8622
 r(51304),	-- Alchemy
 r(53771),	-- Transmute: Eternal Life to Shadow
