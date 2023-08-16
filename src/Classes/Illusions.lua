@@ -19,7 +19,7 @@ local illusionFields = {
 		return "Interface/ICONS/INV_Enchant_Disenchant";
 	end,
 	["collectible"] = function(t)
-		return app.CollectibleIllusions;	-- This is different from Classic, for now.
+		return app.Settings.Collectibles.Illusions;
 	end,
 	["collected"] = function(t)
 		return ATTAccountWideData.Illusions[t.illusionID];

@@ -605,7 +605,7 @@ app.RecursiveFirstDirectParentWithField = RecursiveFirstDirectParentWithField;
 
 -- Caching Helpers
 local function CacheSettingsData()
-	CollectibleHeirlooms = app.CollectibleHeirlooms;
+	CollectibleHeirlooms = app.Settings.Collectibles.Heirlooms;
 	SettingsUnobtainable = app.Settings:GetRawSettings("Unobtainable");
 	wipe(SettingsFilterIDs)
 	local rawFilters = app.Settings:GetRawFilters();

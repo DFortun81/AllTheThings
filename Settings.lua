@@ -1267,17 +1267,17 @@ settings.SetThingTracking = function(self, force)
 	if force == "Debug" then
 		for _,thing in ipairs(Things) do
 			self.AccountWide[thing] = true
-			app["Collectible"..thing] = true
+			self.Collectibles[thing] = true
 		end
 	elseif force == "Account" then
 		for _,thing in ipairs(Things) do
 			self.AccountWide[thing] = true
-			app["Collectible"..thing] = self:Get("Thing:"..thing)
+			self.Collectibles[thing] = self:Get("Thing:"..thing)
 		end
 	else
 		for _,thing in ipairs(Things) do
 			self.AccountWide[thing] = self:Get("AccountWide:"..thing)
-			app["Collectible"..thing] = self:Get("Thing:"..thing)
+			self.Collectibles[thing] = self:Get("Thing:"..thing)
 		end
 	end
 end

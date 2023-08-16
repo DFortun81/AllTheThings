@@ -2197,7 +2197,7 @@ local IsQuestFlaggedCompletedForObject = function(t, questIDKey)
 	-- account-mode: any character is viable to complete the quest, so alt quest completion shouldn't count for this quest
 	-- this quest cannot be obtained if any altQuest is completed on this character and not tracking as account mode
 	-- If the quest has an altQuest which was completed on this character and this character is not in Party Sync nor tracking Locked Quests, return shared completed
-	if not app.MODE_DEBUG_OR_ACCOUNT and not app.IsInPartySync and not app.CollectibleQuestsLocked and t.altcollected then
+	if not app.MODE_DEBUG_OR_ACCOUNT and not app.IsInPartySync and not app.Settings.Collectibles.QuestsLocked and t.altcollected then
 		return 2;
 	end
 	-- If the quest is repeatable, then check other things to determine if it has ever been completed
@@ -7476,7 +7476,7 @@ app.CollectibleAsQuest = function(t)
 	and
 	(
 		(	-- Regular Quests
-			app.CollectibleQuests
+			app.Settings.Collectibles.Quests
 			and
 			(
 				(
@@ -7501,7 +7501,7 @@ app.CollectibleAsQuest = function(t)
 		)
 		or
 		(	-- Locked Quests
-			app.CollectibleQuestsLocked
+			app.Settings.Collectibles.QuestsLocked
 			and
 			(
 				-- not able to access quest on current character
@@ -7887,7 +7887,7 @@ local questFields = {
 	end,
 	["description"] = function(t)
 		-- Provide a fall-back description as to collectibility of a Quest due to granting reputation
-		if app.CollectibleReputations and t.maxReputation then
+		if app.Settings.Collectibles.Reputations and t.maxReputation then
 			local factionID = t.maxReputation[1];
 			return L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(factionID)) or ("Faction #" .. tostring(factionID))) .. "'";
 		end
@@ -7967,7 +7967,7 @@ local questFields = {
 		-- If Collectible by providing reputation towards a Faction with which the character is below the rep-granting Standing
 		-- and the Faction itself is Collectible & Not Collected
 		-- and the Quest is not completed and not locked from being completed
-		if app.CollectibleReputations and t.maxReputation and not t.saved and not t.locked then
+		if app.Settings.Collectibles.Reputations and t.maxReputation and not t.saved and not t.locked then
 			local factionID = t.maxReputation[1];
 			local factionRef = Search("factionID", factionID, "key");
 			if factionRef and not factionRef.collected then
@@ -8533,7 +8533,7 @@ local fields = {
 		return cache.GetCachedField(t, "icon", CacheInfo);
 	end,
 	["collectible"] = function(t)
-		return app.CollectibleAchievements;
+		return app.Settings.Collectibles.Achievements;
 	end,
 	["collected"] = function(t)
 		if t.saved then return 1; end
@@ -9092,7 +9092,7 @@ local fields = {
 		return 11;
 	end,
 	["collectible"] = function(t)
-		return app.CollectibleTransmog;
+		return app.Settings.Collectibles.Transmog;
 	end,
 	["collected"] = function(t)
 		if ATTAccountWideData.Artifacts[t.artifactID] then return 1; end
@@ -9215,7 +9215,7 @@ local fields = {
 		return info;
 	end,
 	["collectible"] = function(t)
-		return app.CollectibleAzeriteEssences;
+		return app.Settings.Collectibles.AzeriteEssences;
 	end,
 	["collected"] = function(t)
 		if (app.CurrentCharacter.AzeriteEssenceRanks[t.azeriteEssenceID] or 0) >= t.rank then
@@ -9344,7 +9344,7 @@ local fields = {
 		return 101;
 	end,
 	["collectible"] = function(t)
-		return app.CollectibleBattlePets;
+		return app.Settings.Collectibles.BattlePets;
 	end,
 	["collected"] = function(t)
 		if CollectedSpeciesHelper[t.speciesID] then
@@ -10266,7 +10266,7 @@ local fields = {
 	end,
 	["trackable"] = app.ReturnTrue,
 	["collectible"] = function(t)
-		if app.CollectibleReputations then
+		if app.Settings.Collectibles.Reputations then
 			-- If your reputation is higher than the maximum for a different faction, return partial completion.
 			if not app.Settings.AccountWide.Reputations and t.maxReputation and t.maxReputation[1] ~= t.factionID and (select(3, GetFactionInfoByID(t.maxReputation[1])) or 4) >= app.GetFactionStanding(t.maxReputation[2]) then
 				return false;
@@ -10440,7 +10440,7 @@ local fields = {
 		return app.asset("fp_neutral");
 	end,
 	["collectible"] = function(t)
-		return app.CollectibleFlightPaths;
+		return app.Settings.Collectibles.FlightPaths;
 	end,
 	["collected"] = function(t)
 		if t.saved then return 1; end
@@ -10540,7 +10540,7 @@ local fields = {
 		return L["FOLLOWERS_COLLECTION_DESC"];
 	end,
 	["collectible"] = function(t)
-		return app.CollectibleFollowers;
+		return app.Settings.Collectibles.Followers;
 	end,
 	["trackable"] = app.ReturnTrue,
 	["collected"] = function(t)
@@ -10611,7 +10611,7 @@ local fields = {
 		return t.itemID and 200;
 	end,
 	["collectible"] = function(t)
-		return t.itemID and app.CollectibleRecipes;
+		return t.itemID and app.Settings.Collectibles.Recipes;
 	end,
 	["collected"] = function(t)
 		local id = t.buildingID;
@@ -10755,7 +10755,7 @@ local fields = {
 		return t.itemID and select(5, GetItemInfoInstant(t.itemID));
 	end,
 	["collectible"] = function(t)
-		return t.s and app.CollectibleTransmog;
+		return t.s and app.Settings.Collectibles.Transmog;
 	end,
 	["collected"] = function(t)
 		return ATTAccountWideData.Sources[t.s];
@@ -11089,7 +11089,7 @@ local itemFields = {
 		return not rawget(t, "repeatable");
 	end,
 	["collectibleAsAchievement"] = function(t)
-		return app.CollectibleAchievements;
+		return app.Settings.Collectibles.Achievements;
 	end,
 	["costCollectibles"] = function(t)
 		return cache.GetCachedField(t, "costCollectibles", default_costCollectibles);
@@ -11099,13 +11099,13 @@ local itemFields = {
 		if t.costCollectibles then return #t.costCollectibles; end
 	end,
 	["collectibleAsFaction"] = function(t)
-		return app.CollectibleReputations;
+		return app.Settings.Collectibles.Reputations;
 	end,
 	["collectibleAsFactionOrQuest"] = function(t)
-		return app.CollectibleReputations or t.collectibleAsQuest;
+		return app.Settings.Collectibles.Reputations or t.collectibleAsQuest;
 	end,
 	["collectibleAsTransmog"] = function(t)
-		return app.CollectibleTransmog;
+		return app.Settings.Collectibles.Transmog;
 	end,
 	["collectibleAsQuest"] = app.CollectibleAsQuest,
 	["collectedAsQuest"] = IsQuestFlaggedCompletedForObject,
@@ -11196,7 +11196,7 @@ app.BaseItemWithQuestIDAndFactionID = app.BaseObjectFields(fields, "BaseItemWith
 
 local fields = RawCloneData(itemFields);
 fields.collectible = function(t)
-	return app.CollectibleTransmog;
+	return app.Settings.Collectibles.Transmog;
 end
 fields.collected = function(t)
 	if t.itemID then
@@ -11301,7 +11301,7 @@ local fields = RawCloneData(itemFields);
 -- Runeforge Legendary differences
 local C_LegendaryCrafting_GetRuneforgePowerInfo = C_LegendaryCrafting.GetRuneforgePowerInfo;
 fields.key = function(t) return "runeforgePowerID"; end;
-fields.collectible = function(t) return app.CollectibleRuneforgeLegendaries; end;
+fields.collectible = function(t) return app.Settings.Collectibles.RuneforgeLegendaries; end;
 fields.collectibleAsCost = app.ReturnFalse;
 fields.collected = function(t)
 	local rfID = t.runeforgePowerID;
@@ -11328,7 +11328,7 @@ local C_Soulbinds_GetConduitCollectionData = C_Soulbinds.GetConduitCollectionDat
 local fields = RawCloneData(itemFields);
 -- Conduit differences
 fields.key = function(t) return "conduitID"; end;
-fields.collectible = function(t) return app.CollectibleConduits; end;
+fields.collectible = function(t) return app.Settings.Collectibles.Conduits; end;
 fields.collectibleAsCost = app.ReturnFalse;
 fields.collected = function(t)
 	local cID = t.conduitID;
@@ -11355,7 +11355,7 @@ end)();
 (function()
 -- copy base Item fields
 local fields = RawCloneData(itemFields);
-fields.collectible = function(t) return app.CollectibleDrakewatcherManuscripts; end;
+fields.collectible = function(t) return app.Settings.Collectibles.DrakewatcherManuscripts; end;
 fields.collected = IsQuestFlaggedCompletedForObject;
 app.BaseDrakewatcherManuscript = app.BaseObjectFields(fields, "BaseDrakewatcherManuscript");
 app.CreateDrakewatcherManuscript = function(id, t)
@@ -11384,7 +11384,7 @@ local fields = {
 		return L["HEIRLOOM_TEXT_DESC"];
 	end,
 	["collectible"] = function(t)
-		return app.CollectibleHeirlooms;
+		return app.Settings.Collectibles.Heirlooms;
 	end,
 	["saved"] = function(t)
 		return C_Heirloom_PlayerHasHeirloom(t.heirloomUnlockID);
@@ -11433,7 +11433,7 @@ local fields = {
 		return L["HEIRLOOMS_UPGRADES_DESC"];
 	end,
 	["collectible"] = function(t)
-		return app.CollectibleHeirlooms and app.CollectibleHeirloomUpgrades;
+		return app.Settings.Collectibles.Heirlooms and app.Settings.Collectibles.HeirloomUpgrades;
 	end,
 	["saved"] = function(t)
 		local itemID = t.heirloomLevelID;
@@ -11470,9 +11470,9 @@ fields.link = function(t) return C_Heirloom_GetHeirloomLink(t.itemID) or select(
 fields.collectibleAsCost = app.ReturnFalse;
 fields.collectible = function(t)
 		-- Heirloom Token for a Reputation
-		if t.factionID and app.CollectibleReputations then return true; end
+		if t.factionID and app.Settings.Collectibles.Reputations then return true; end
 		-- Heirloom Appearance
-		if t.s and app.CollectibleTransmog then return true; end
+		if t.s and app.Settings.Collectibles.Transmog then return true; end
 		-- Otherwise the Heirloom Item itself is not inherently collectible
 	end
 fields.collected = function(t)
@@ -11656,7 +11656,7 @@ fields.filterID = function(t)
 		return 102;
 	end
 fields.collectible = function(t)
-		return app.CollectibleToys;
+		return app.Settings.Collectibles.Toys;
 	end
 fields.collected = function(t)
 		return ATTAccountWideData.Toys[t.itemID];
@@ -12325,7 +12325,7 @@ local mountFields = {
 		return 100;
 	end,
 	["collectible"] = function(t)
-		return app.CollectibleMounts;
+		return app.Settings.Collectibles.Mounts;
 	end,
 	["costCollectibles"] = function(t)
 		return cache.GetCachedField(t, "costCollectibles", default_costCollectibles);
@@ -12430,7 +12430,7 @@ local fields = {
 		return 40;
 	end,
 	["collectible"] = function(t)
-		return app.CollectibleMusicRollsAndSelfieFilters;
+		return app.Settings.Collectibles.MusicRollsAndSelfieFilters;
 	end,
 	["trackable"] = app.ReturnTrue,
 	["collected"] = function(t)
@@ -12465,7 +12465,7 @@ local fields = {
 		end
 	end,
 	["collectible"] = function(t)
-		return app.CollectibleMusicRollsAndSelfieFilters;
+		return app.Settings.Collectibles.MusicRollsAndSelfieFilters;
 	end,
 	["collected"] = function(t)
 		if IsQuestFlaggedCompleted(t.questID) then return 1; end
@@ -13308,9 +13308,9 @@ local recipeFields = RawCloneData(fields, {
 		return 200;
 	end,
 	["collectible"] = function(t)
-		return app.CollectibleRecipes;
+		return app.Settings.Collectibles.Recipes;
 		-- TODO: revise? this prevents showing a BoP, wrong-profession Recipe under a BoE used to obtain it, when within a Popout and NOT tracking Account-Wide Recipes
-		-- return app.CollectibleRecipes and
+		-- return app.Settings.Collectibles.Recipes and
 		-- 	(
 		--	-- If tracking Account-Wide, then all Recipes are inherently collectible
 		-- 	app.Settings.AccountWide.Recipes or
@@ -13503,7 +13503,7 @@ local fields = {
 		end
 	end,
 	["collectible"] = function(t)
-		return app.CollectibleTitles;
+		return app.Settings.Collectibles.Titles;
 	end,
 	["trackable"] = app.ReturnTrue,
 	["collected"] = function(t)
@@ -13545,7 +13545,7 @@ local fields = {
 	end,
 	-- use custom to track opposite gendered title in account/debug
 	["customTotal"] = function(t)
-		if app.CollectibleTitles and t.titleIDs and app.MODE_DEBUG_OR_ACCOUNT then
+		if app.Settings.Collectibles.Titles and t.titleIDs and app.MODE_DEBUG_OR_ACCOUNT then
 			return 1;
 		end
 	end,
@@ -14779,22 +14779,22 @@ function app:CreateMiniListForGroup(group)
 			popout.Update = function(self, ...)
 				-- app.PrintDebug("Update.isQuestChain", self.Suffix, ...)
 				local oldQuestAccountWide = app.Settings.AccountWide.Quests;
-				local oldQuestCollection = app.CollectibleQuests;
-				app.CollectibleQuests = true;
+				local oldQuestCollection = app.Settings.Collectibles.Quests;
+				app.Settings.Collectibles.Quests = true;
 				app.Settings.AccountWide.Quests = false;
 				oldUpdate(self, ...);
-				app.CollectibleQuests = oldQuestCollection;
+				app.Settings.Collectibles.Quests = oldQuestCollection;
 				app.Settings.AccountWide.Quests = oldQuestAccountWide;
 			end;
 			local oldRefresh = popout.Refresh;
 			popout.Refresh = function(self, ...)
 				-- app.PrintDebug("Refresh.isQuestChain", self.Suffix, ...)
 				local oldQuestAccountWide = app.Settings.AccountWide.Quests;
-				local oldQuestCollection = app.CollectibleQuests;
-				app.CollectibleQuests = true;
+				local oldQuestCollection = app.Settings.Collectibles.Quests;
+				app.Settings.Collectibles.Quests = true;
 				app.Settings.AccountWide.Quests = false;
 				oldRefresh(self, ...);
-				app.CollectibleQuests = oldQuestCollection;
+				app.Settings.Collectibles.Quests = oldQuestCollection;
 				app.Settings.AccountWide.Quests = oldQuestAccountWide;
 			end;
 			-- Populate the Quest Rewards
@@ -20763,7 +20763,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 			-- If it's not yours, don't take credit for it.
 			if C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild() then return; end
 
-			if app.CollectibleRecipes then
+			if app.Settings.Collectibles.Recipes then
 				-- app.PrintDebug("RefreshRecipes")
 				-- Cache Learned Spells
 				local skillCache = SearchForFieldContainer("spellID");
@@ -21222,7 +21222,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 
 				-- options when refreshing the list
 				self.includeAll = app.MODE_DEBUG;
-				self.includeQuests = app.CollectibleQuests or app.CollectibleQuestsLocked;
+				self.includeQuests = app.Settings.Collectibles.Quests or app.Settings.Collectibles.QuestsLocked;
 				self.includePermanent = IsAltKeyDown() or self.includeAll;
 
 				-- Acquire all of the world mapIDs
@@ -23308,7 +23308,7 @@ app.events.QUEST_ACCEPTED = function(questID)
 		end
 		PrintQuestInfo(questID, true, freq);
 		-- Check if this quest is a nextQuest of a non-collected breadcrumb (users may care to get the breadcrumb before it becomes locked, simply due to tracking quests as well)
-		if app.CollectibleQuests or app.CollectibleQuestsLocked then
+		if app.Settings.Collectibles.Quests or app.Settings.Collectibles.QuestsLocked then
 			-- Run this warning check after a small delay in case addons pick up quests before the turned in quest is registered as complete
 			DelayedCallback(app.CheckForBreadcrumbPrevention, 1, title, questID);
 		end
