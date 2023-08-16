@@ -31,11 +31,12 @@ src\Modules\Filter.lua
 src\Modules\Tooltip.lua
 src\Modules\Upgrade.lua
 db\Presets.lua
-db\CategoryDB.lua
-db\ObjectDB.lua
 db\RaceDB.lua
+db\Dragonflight\en_auto.lua
+db\Dragonflight\ExplorationDB.lua
+db\Dragonflight\CategoryDB.lua
+db\Dragonflight\ObjectDB.lua
 db\ReagentsDB.lua
-db\en_auto.lua
 locales\es.lua
 locales\de.lua
 locales\fr.lua
@@ -44,11 +45,11 @@ locales\ko.lua
 locales\pt.lua
 locales\ru.lua
 locales\cn.lua
-db\Custom Headers.lua
+db\Dragonflight\Custom Headers.lua
 src\Classes\base.lua
 src\Classes\Filter Types.lua
 src\Classes\Illusions.lua
 src\Classes\PVP Ranks.lua
 Settings.lua
 AllTheThings.lua
-db\Categories.lua
+db\Dragonflight\Categories.lua
