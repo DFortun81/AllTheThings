@@ -4832,7 +4832,7 @@ end
 local function DetermineUpgradeGroups(group, FillData)
 	local nextUpgrade = group.nextUpgrade;
 	if nextUpgrade then
-		group.filledUpgrade = true;
+		group.filledUpgrade = not nextUpgrade.collected;
 		local o = CreateObject(nextUpgrade);
 		return { o };
 	end
