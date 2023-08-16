@@ -679,6 +679,296 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 	}),
+	n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+		dragonridingrace(76061, {	-- Ahn'Qiraj Circuit - Challenge
+			["provider"] = { "n", 204092 },	-- Bronze Timekeeper
+			["coord"] = { 39.6, 84.2, SILITHUS },
+			["g"] = {
+				ach(18339),	-- Ahn'Qiraj Circuit Challenge: Bronze
+				ach(18340),	-- Ahn'Qiraj Circuit Challenge: Silver
+				ach(18341),	-- Ahn'Qiraj Circuit Challenge: Gold
+			},
+		}),
+		dragonridingrace(76062, {	-- Ahn'Qiraj Circuit - Reverse Challenge
+			["provider"] = { "n", 204092 },	-- Bronze Timekeeper
+			["coord"] = { 39.6, 84.2, SILITHUS },
+			["g"] = {
+				ach(18342),	-- Ahn'Qiraj Circuit Reverse Challenge: Bronze
+				ach(18343),	-- Ahn'Qiraj Circuit Reverse Challenge: Silver
+				ach(18344),	-- Ahn'Qiraj Circuit Reverse Challenge: Gold
+			},
+		}),
+		dragonridingrace(76045, {	-- Ashenvale Ambit - Challenge
+			["provider"] = { "n", 203712 },	-- Bronze Timekeeper
+			["coord"] = { 37.0, 30.6, ASHENVALE },
+			["g"] = {
+				ach(18291),	-- Ashenvale Ambit Challenge: Bronze
+				ach(18292),	-- Ashenvale Ambit Challenge: Silver
+				ach(18293),	-- Ashenvale Ambit Challenge: Gold
+			},
+		}),
+		dragonridingrace(76046, {	-- Ashenvale Ambit - Reverse Challenge
+			["provider"] = { "n", 203712 },	-- Bronze Timekeeper
+			["coord"] = { 37.0, 30.6, ASHENVALE },
+			["g"] = {
+				ach(18294),	-- Ashenvale Ambit Reverse Challenge: Bronze
+				ach(18295),	-- Ashenvale Ambit Reverse Challenge: Silver
+				ach(18296),	-- Ashenvale Ambit Reverse Challenge: Gold
+			},
+		}),
+		dragonridingrace(76051, {	-- Desolace Drift - Challenge
+			["provider"] = { "n", 203788 },	-- Bronze Timekeeper
+			["coord"] = { 28.1, 63.3, DESOLACE },
+			["g"] = {
+				ach(18309),	-- Desolace Drift Challenge: Bronze
+				ach(18310),	-- Desolace Drift Challenge: Silver
+				ach(18311),	-- Desolace Drift Challenge: Gold
+			},
+		}),
+		dragonridingrace(76052, {	-- Desolace Drift - Reverse Challenge
+			["provider"] = { "n", 203788 },	-- Bronze Timekeeper
+			["coord"] = { 28.1, 63.3, DESOLACE },
+			["g"] = {
+				ach(18312),	-- Desolace Drift Reverse Challenge: Bronze
+				ach(18313),	-- Desolace Drift Reverse Challenge: Silver
+				ach(18314),	-- Desolace Drift Reverse Challenge: Gold
+			},
+		}),
+		dragonridingrace(76047, {	-- Durotar Tour - Challenge
+			["provider"] = { "n", 203722 },	-- Bronze Timekeeper
+			["coord"] = { 56.9, 62.9, DUROTAR },
+			["g"] = {
+				ach(18297),	-- Durotar Tour Challenge: Bronze
+				ach(18298),	-- Durotar Tour Challenge: Silver
+				ach(18299),	-- Durotar Tour Challenge: Gold
+			},
+		}),
+		dragonridingrace(76048, {	-- Durotar Tour - Reverse Challenge
+			["provider"] = { "n", 203722 },	-- Bronze Timekeeper
+			["coord"] = { 56.9, 62.9, DUROTAR },
+			["g"] = {
+				ach(18300),	-- Durotar Tour Reverse Challenge: Bronze
+				ach(18301),	-- Durotar Tour Reverse Challenge: Silver
+				ach(18302),	-- Durotar Tour Reverse Challenge: Gold
+			},
+		}),
+		dragonridingrace(76033, {	-- Felwood Flyover - Challenge
+			["provider"] = { "n", 203479 },	-- Bronze Timekeeper
+			["coord"] = { 58.2, 10.8, FELWOOD },
+			["g"] = {
+				ach(18259),	-- Felwood Flyover Challenge: Bronze
+				ach(18260),	-- Felwood Flyover Challenge: Silver
+				ach(18261),	-- Felwood Flyover Challenge: Gold
+			},
+		}),
+		dragonridingrace(76034, {	-- Felwood Flyover - Reverse Challenge
+			["provider"] = { "n", 203479 },	-- Bronze Timekeeper
+			["coord"] = { 58.2, 10.8, FELWOOD },
+			["g"] = {
+				ach(18262),	-- Felwood Flyover Reverse Challenge: Bronze
+				ach(18263),	-- Felwood Flyover Reverse Challenge: Silver
+				ach(18264),	-- Felwood Flyover Reverse Challenge: Gold
+			},
+		}),
+		dragonridingrace(76059, {	-- Feralas Ruins Ramble - Challenge
+			["provider"] = { "n", 204080 },	-- Bronze Timekeeper
+			["coord"] = { 64.1, 54.4, FERALAS },
+			["g"] = {
+				ach(18333),	-- Feralas Ruins Ramble Challenge: Bronze
+				ach(18334),	-- Feralas Ruins Ramble Challenge: Silver
+				ach(18335),	-- Feralas Ruins Ramble Challenge: Gold
+			},
+		}),
+		dragonridingrace(76060, {	-- Feralas Ruins Ramble - Reverse Challenge
+			["provider"] = { "n", 204080 },	-- Bronze Timekeeper
+			["coord"] = { 64.1, 54.4, FERALAS },
+			["g"] = {
+				ach(18336),	-- Feralas Ruins Ramble Reverse Challenge: Bronze
+				ach(18337),	-- Feralas Ruins Ramble Reverse Challenge: Silver
+				ach(18338),	-- Feralas Ruins Ramble Reverse Challenge: Gold
+			},
+		}),
+		dragonridingrace(76053, {	-- Great Divide Dive - Challenge
+			["provider"] = { "n", 203793 },	-- Bronze Timekeeper
+			["coord"] = { 41.4, 13.0, SOUTHERN_BARRENS },
+			["g"] = {
+				ach(18315),	-- Great Divide Dive Challenge: Bronze
+				ach(18316),	-- Great Divide Dive Challenge: Silver
+				ach(18317),	-- Great Divide Dive Challenge: Gold
+			},
+		}),
+		dragonridingrace(76054, {	-- Great Divide Dive - Reverse Challenge
+			["provider"] = { "n", 203793 },	-- Bronze Timekeeper
+			["coord"] = { 41.4, 13.0, SOUTHERN_BARRENS },
+			["g"] = {
+				ach(18318),	-- Great Divide Dive Reverse Challenge: Bronze
+				ach(18319),	-- Great Divide Dive Reverse Challenge: Silver
+				ach(18320),	-- Great Divide Dive Reverse Challenge: Gold
+			},
+		}),
+		dragonridingrace(76041, {	-- Hyjal Hotfoot - Challenge
+			["provider"] = { "n", 203626 },	-- Bronze Timekeeper
+			["coord"] = { 22.0, 54.3, MOUNT_HYJAL },
+			["g"] = {
+				ach(18278),	-- Hyjal Hotfoot Challenge: Bronze
+				ach(18279),	-- Hyjal Hotfoot Challenge: Silver
+				ach(18280),	-- Hyjal Hotfoot Challenge: Gold
+			},
+		}),
+		dragonridingrace(76042, {	-- Hyjal Hotfoot - Reverse Challenge
+			["provider"] = { "n", 203626 },	-- Bronze Timekeeper
+			["coord"] = { 22.0, 54.3, MOUNT_HYJAL },
+			["g"] = {
+				ach(18281),	-- Hyjal Hotfoot Reverse Challenge: Bronze
+				ach(18282),	-- Hyjal Hotfoot Reverse Challenge: Silver
+				ach(18283),	-- Hyjal Hotfoot Reverse Challenge: Gold
+			},
+		}),
+		dragonridingrace(76037, {	-- Nordrassil Spiral - Challenge
+			["provider"] = { "n", 203617 },	-- Bronze Timekeeper
+			["coord"] = { 56.7, 28.0, MOUNT_HYJAL },
+			["g"] = {
+				ach(18272),	-- Nordrassil Spiral Challenge: Bronze
+				ach(18273),	-- Nordrassil Spiral Challenge: Silver
+				ach(18274),	-- Nordrassil Spiral Challenge: Gold
+			},
+		}),
+		dragonridingrace(76040, {	-- Nordrassil Spiral - Reverse Challenge
+			["provider"] = { "n", 203617 },	-- Bronze Timekeeper
+			["coord"] = { 56.7, 28.0, MOUNT_HYJAL },
+			["g"] = {
+				ach(18275),	-- Nordrassil Spiral Reverse Challenge: Bronze
+				ach(18276),	-- Nordrassil Spiral Reverse Challenge: Silver
+				ach(18277),	-- Nordrassil Spiral Reverse Challenge: Gold
+			},
+		}),
+		dragonridingrace(76055, {	-- Razorfen Roundabout - Challenge
+			["provider"] = { "n", 203908 },	-- Bronze Timekeeper
+			["coord"] = { 42.8, 93.1, SOUTHERN_BARRENS },
+			["g"] = {
+				ach(18321),	-- Razorfen Roundabout Challenge: Bronze
+				ach(18322),	-- Razorfen Roundabout Challenge: Silver
+				ach(18323),	-- Razorfen Roundabout Challenge: Gold
+			},
+		}),
+		dragonridingrace(76056, {	-- Razorfen Roundabout - Reverse Challenge
+			["provider"] = { "n", 203908 },	-- Bronze Timekeeper
+			["coord"] = { 42.8, 93.1, SOUTHERN_BARRENS },
+			["g"] = {
+				ach(18324),	-- Razorfen Roundabout Reverse Challenge: Bronze
+				ach(18325),	-- Razorfen Roundabout Reverse Challenge: Silver
+				ach(18326),	-- Razorfen Roundabout Reverse Challenge: Gold
+			},
+		}),
+		dragonridingrace(76043, {	-- Rocketway Ride - Challenge
+			["provider"] = { "n", 203657 },	-- Bronze Timekeeper
+			["coord"] = { 67.2, 26.2, AZSHARA },
+			["g"] = {
+				ach(18285),	-- Rocketway Ride Challenge: Bronze
+				ach(18286),	-- Rocketway Ride Challenge: Silver
+				ach(18287),	-- Rocketway Ride Challenge: Gold
+			},
+		}),
+		dragonridingrace(76044, {	-- Rocketway Ride - Reverse Challenge
+			["provider"] = { "n", 203657 },	-- Bronze Timekeeper
+			["coord"] = { 67.2, 26.2, AZSHARA },
+			["g"] = {
+				ach(18288),	-- Rocketway Ride Reverse Challenge: Bronze
+				ach(18289),	-- Rocketway Ride Reverse Challenge: Silver
+				ach(18290),	-- Rocketway Ride Reverse Challenge: Gold
+			},
+		}),
+		dragonridingrace(76057, {	-- Thousand Needles Thread - Challenge
+			["provider"] = { "n", 204043 },	-- Bronze Timekeeper
+			["coord"] = { 9.7, 17.3, THOUSAND_NEEDLES },
+			["g"] = {
+				ach(18327),	-- Thousand Needles Thread Challenge: Bronze
+				ach(18328),	-- Thousand Needles Thread Challenge: Silver
+				ach(18329),	-- Thousand Needles Thread Challenge: Gold
+			},
+		}),
+		dragonridingrace(76058, {	-- Thousand Needles Thread - Reverse Challenge
+			["provider"] = { "n", 204043 },	-- Bronze Timekeeper
+			["coord"] = { 9.7, 17.3, THOUSAND_NEEDLES },
+			["g"] = {
+				ach(18330),	-- Thousand Needles Thread Reverse Challenge: Bronze
+				ach(18331),	-- Thousand Needles Thread Reverse Challenge: Silver
+				ach(18332),	-- Thousand Needles Thread Reverse Challenge: Gold
+			},
+		}),
+		dragonridingrace(76063, {	-- Uldum Tour - Challenge
+			["provider"] = { "n", 204128 },	-- Bronze Timekeeper
+			["coord"] = { 55.8, 42.2, ULDUM },
+			["g"] = {
+				ach(18345),	-- Uldum Tour Challenge: Bronze
+				ach(18346),	-- Uldum Tour Challenge: Silver
+				ach(18347),	-- Uldum Tour Challenge: Gold
+			},
+		}),
+		dragonridingrace(76064, {	-- Uldum Tour - Reverse Challenge
+			["provider"] = { "n", 204128 },	-- Bronze Timekeeper
+			["coord"] = { 55.8, 42.2, ULDUM },
+			["g"] = {
+				ach(18348),	-- Uldum Tour Reverse Challenge: Bronze
+				ach(18349),	-- Uldum Tour Reverse Challenge: Silver
+				ach(18350),	-- Uldum Tour Reverse Challenge: Gold
+			},
+		}),
+		dragonridingrace(76065, {	-- Un'Goro Crater Circuit - Challenge
+			["provider"] = { "n", 204146 },	-- Bronze Timekeeper
+			["coord"] = { 53.4, 93.0, UNGORO_CRATER },
+			["g"] = {
+				ach(18351),	-- Un'Goro Crater Circuit Challenge: Bronze
+				ach(18352),	-- Un'Goro Crater Circuit Challenge: Silver
+				ach(18353),	-- Un'Goro Crater Circuit Challenge: Gold
+			},
+		}),
+		dragonridingrace(76066, {	-- Un'Goro Crater Circuit - Reverse Challenge
+			["provider"] = { "n", 204146 },	-- Bronze Timekeeper
+			["coord"] = { 53.4, 93.0, UNGORO_CRATER },
+			["g"] = {
+				ach(18354),	-- Un'Goro Crater Circuit Reverse Challenge: Bronze
+				ach(18355),	-- Un'Goro Crater Circuit Reverse Challenge: Silver
+				ach(18356),	-- Un'Goro Crater Circuit Reverse Challenge: Gold
+			},
+		}),
+		dragonridingrace(76049, {	-- Webwinder Weave - Challenge
+			["provider"] = { "n", 203735 },	-- Bronze Timekeeper
+			["coord"] = { 66.8, 86.8, STONETALON_MOUNTAINS },
+			["g"] = {
+				ach(18303),	-- Webwinder Weave Challenge: Bronze
+				ach(18304),	-- Webwinder Weave Challenge: Silver
+				ach(18305),	-- Webwinder Weave Challenge: Gold
+			},
+		}),
+		dragonridingrace(76050, {	-- Webwinder Weave - Reverse Challenge
+			["provider"] = { "n", 203735 },	-- Bronze Timekeeper
+			["coord"] = { 66.8, 86.8, STONETALON_MOUNTAINS },
+			["g"] = {
+				ach(18306),	-- Webwinder Weave Reverse Challenge: Bronze
+				ach(18307),	-- Webwinder Weave Reverse Challenge: Silver
+				ach(18308),	-- Webwinder Weave Reverse Challenge: Gold
+			},
+		}),
+		dragonridingrace(76035, {	-- Winter Wander - Challenge
+			["provider"] = { "n", 203605 },	-- Bronze Timekeeper
+			["coord"] = { 68.8, 68.0, WINTERSPRING },
+			["g"] = {
+				ach(18265),	-- Winter Wander Challenge: Bronze
+				ach(18266),	-- Winter Wander Challenge: Silver
+				ach(18267),	-- Winter Wander Challenge: Gold
+			},
+		}),
+		dragonridingrace(76036, {	-- Winter Wander - Reverse Challenge
+			["provider"] = { "n", 203605 },	-- Bronze Timekeeper
+			["coord"] = { 68.8, 68.0, WINTERSPRING },
+			["g"] = {
+				ach(18268),	-- Winter Wander Reverse Challenge: Bronze
+				ach(18269),	-- Winter Wander Reverse Challenge: Silver
+				ach(18270),	-- Winter Wander Reverse Challenge: Gold
+			},
+		}),
+	})),
 	n(REWARDS, {
 		currency(RIDERS_OF_AZEROTH_BADGE, {
 			["description"] = "Gain one badge for each achievement.",
@@ -697,7 +987,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 				i(203349, {	-- Winding Slitherdrake: Curved Nose Horn (DM!)
 					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
 				}),
-		
+
 				i(206592, {	-- Drake Racer's Belt
 					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
 				}),

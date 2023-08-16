@@ -75,5 +75,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			["coord"] = { 63.1, 13.6, THE_AZURE_SPAN },
 			["timeline"] = { ADDED_10_0_5 },
 		}),
+		q(78113, {	-- The Challenge Tour
+			-- TODO: ["sourceQuests"] = { 72985 },	-- The Thaldraszus Reverse Tour
+			-- TODO: ["provider"] = { "n", 199119 },	-- Celormu
+			-- TODO: ["coord"] = { 63.1, 13.6, THE_AZURE_SPAN },
+			["timeline"] = { ADDED_10_1_7 },
+		}),
 	}),
 })));
