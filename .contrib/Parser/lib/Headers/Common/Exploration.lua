@@ -1,6 +1,7 @@
 EXPLORATION = createHeader({
 	readable = "Exploration",
 	constant = "EXPLORATION",
+	export = true,
 	-- #if AFTER WRATH
 	icon = "Interface\\Icons\\INV_Misc_Map02",
 	-- #else

@@ -67,6 +67,15 @@ local ATTAccountWideData;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local AttachTooltipSearchResults = app.Modules.Tooltip.AttachTooltipSearchResults;
 
+-- Add a header debugger
+setmetatable(app.HeaderConstants, {
+	__index = function(t, key)
+		print("MISSING HeaderConstant:", key);
+		rawset(t, key, -9999999999);
+		return -9999999999;
+	end
+});
+
 -- Print/Debug/Testing Functions
 app.print = function(...)
 	print(L["TITLE"], ...);
