@@ -12,11 +12,7 @@ DIABLO_EVENTS = createHeader({
 });
 DIABLO_TWENTIETH_ANNIVERSARY = createHeader({
 	readable = "Diablo 20th Anniversary",
-	-- #if ANYCLASSIC
-	icon = [[~_.asset("diabloanniversary_achievement")]],
-	-- #else
 	icon = "Interface\\Icons\\diabloanniversary_achievement",
-	-- #endif
 	text = {
 		en = "Diablo 20th Anniversary",
 		de = "20. Geburtstag von Diablo",

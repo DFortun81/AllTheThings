@@ -18114,7 +18114,7 @@ customWindowUpdates["AchievementHarvester"] = function(self, ...)
 			end
 			db.g = g;
 			db.text = "Achievement Harvester";
-			db.icon = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider";
+			db.icon = app.asset("WindowIcon_RaidAssistant");
 			db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nExpand a group to harvest the 1,000 Achievements within that range.";
 			db.visible = true;
 			db.back = 1;
@@ -18960,7 +18960,7 @@ customWindowUpdates["ItemFilter"] = function(self, force)
 			-- Item Filter
 			local data = {
 				['text'] = L["ITEM_FILTER_TEXT"],
-				['icon'] = "Interface\\Icons\\Achievement_Dungeon_HEROIC_GloryoftheRaider",
+				['icon'] = app.asset("Category_ItemSets"),
 				["description"] = L["ITEM_FILTER_DESCRIPTION"],
 				['visible'] = true,
 				['back'] = 1,
@@ -19100,7 +19100,7 @@ customWindowUpdates["SourceFinder"] = function(self)
 				end
 			end
 			db.text = "Source Finder";
-			db.icon = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp";
+			db.icon = app.asset("WindowIcon_RaidAssistant");
 			db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW every 5 seconds. Not sure why - likely a bad Blizzard Database thing.";
 			db.visible = true;
 			db.back = 1;
@@ -19205,7 +19205,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 			end
 			raidassistant = {
 				['text'] = L["RAID_ASSISTANT"],
-				['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp",
+				['icon'] = app.asset("WindowIcon_RaidAssistant"),
 				["description"] = L["RAID_ASSISTANT_DESC"],
 				['visible'] = true,
 				['back'] = 1,
@@ -19795,7 +19795,7 @@ customWindowUpdates["Random"] = function(self)
 			};
 			filterHeader = {
 				['text'] = L["APPLY_SEARCH_FILTER"],
-				['icon'] = "Interface\\Icons\\TRADE_ARCHAEOLOGY.blp",
+				['icon'] = app.asset("Button_Search"),
 				["description"] = L["APPLY_SEARCH_FILTER_DESC"],
 				['visible'] = true,
 				['OnUpdate'] = app.AlwaysShowUpdate,
@@ -19845,7 +19845,7 @@ customWindowUpdates["Random"] = function(self)
 					},
 					{
 						['text'] = L["INSTANCE"],
-						['icon'] = "Interface\\Icons\\Achievement_Dungeon_HEROIC_GloryoftheRaider",
+						['icon'] = app.asset("Category_D&R"),
 						['description'] = L["INSTANCE_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
@@ -19858,7 +19858,7 @@ customWindowUpdates["Random"] = function(self)
 					},
 					{
 						['text'] = L["DUNGEON"],
-						['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheHERO",
+						['icon'] = app.asset("Difficulty_Normal"),
 						['description'] = L["DUNGEON_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
@@ -19871,7 +19871,7 @@ customWindowUpdates["Random"] = function(self)
 					},
 					{
 						['text'] = L["RAID"],
-						['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider",
+						['icon'] = app.asset("Difficulty_Heroic"),
 						['description'] = L["RAID_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
@@ -19952,7 +19952,7 @@ customWindowUpdates["Random"] = function(self)
 			};
 			mainHeader = {
 				['text'] = L["GO_GO_RANDOM"],
-				['icon'] = "Interface\\Icons\\Ability_Rogue_RolltheBones.blp",
+				['icon'] = app.asset("WindowIcon_Random"),
 				["description"] = L["GO_GO_RANDOM_DESC"],
 				['visible'] = true,
 				['OnUpdate'] = app.AlwaysShowUpdate,
@@ -19961,7 +19961,7 @@ customWindowUpdates["Random"] = function(self)
 				['options'] = {
 					{
 						['text'] = L["CHANGE_SEARCH_FILTER"],
-						['icon'] = "Interface\\Icons\\TRADE_ARCHAEOLOGY.blp",
+						['icon'] = app.asset("Button_Search"),
 						["description"] = L["CHANGE_SEARCH_FILTER_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
@@ -20045,7 +20045,7 @@ customWindowUpdates["RWP"] = function(self)
 			self.initialized = true;
 			self:SetData({
 				["text"] = L["FUTURE_UNOBTAINABLE"],
-				["icon"] = "Interface\\Icons\\Ability_Rogue_RolltheBones.blp",
+				["icon"] = app.asset("WindowIcon_RWP"),
 				["description"] = L["FUTURE_UNOBTAINABLE_TOOLTIP"],
 				["visible"] = true,
 				["back"] = 1,
@@ -20128,7 +20128,7 @@ customWindowUpdates["Sync"] = function(self)
 
 			local syncHeader = {
 				['text'] = L["ACCOUNT_MANAGEMENT"],
-				['icon'] = "Interface\\Icons\\Achievement_Dungeon_HEROIC_GloryoftheRaider",
+				['icon'] = app.asset("WindowIcon_AccountManagement"),
 				["description"] = L["ACCOUNT_MANAGEMENT_TOOLTIP"],
 				['visible'] = true,
 				['back'] = 1,
@@ -21503,7 +21503,7 @@ app.LoadDebugger = function()
 			};
 			self:SetData({
 				['text'] = "Session History",
-				['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp",
+				['icon'] = app.asset("WindowIcon_RaidAssistant"),
 				["description"] = "This keeps a visual record of all of the quests, maps, loot, and vendors that you have come into contact with since the session was started.",
 				["OnUpdate"] = app.AlwaysShowUpdate,
 				['back'] = 1,

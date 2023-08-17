@@ -2,11 +2,7 @@ EXPLORATION = createHeader({
 	readable = "Exploration",
 	constant = "EXPLORATION",
 	export = true,
-	-- #if AFTER WRATH
-	icon = "Interface\\Icons\\INV_Misc_Map02",
-	-- #else
-	icon = [[~_.asset("INV_Misc_Map02")]],
-	-- #endif
+	icon = [[~_.asset("Category_Exploration")]],
 	text = {
 		en = "Exploration",
 		de = "Erkundung",
