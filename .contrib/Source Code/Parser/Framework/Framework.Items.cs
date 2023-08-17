@@ -553,6 +553,21 @@ namespace ATT
                     // Conditional Fields -- only merge if NOT Location Sourced data
                     // there are situations where the same Item is BoP in some places and BoE in others...
                     case "b":
+                        if (!item.ContainsKey(field))
+                        {
+                            var b = Convert.ToInt64(value);
+                            // any 0 value should simply be removed for cleanliness
+                            if (b == 0)
+                            {
+                                LogDebug($"INFO: Removing 0-value {field} from", item);
+                                item.Remove(field);
+                            }
+                            else
+                            {
+                                item[field] = b;
+                            }
+                        }
+                        break;
                     case "e":
                         if (!ProcessingMergeData) break;
                         item[field] = Convert.ToInt64(value);
