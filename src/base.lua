@@ -293,12 +293,6 @@ local button = CreateFrame("BUTTON", nil, frame);
 local buttonClass = getmetatable(button).__index;
 buttonClass.StartATTCoroutine = StartATTCoroutine;
 buttonClass.SetATTTooltip = SetATTTooltip;
-buttonClass.SetATTHighlightSprite = function(self, name, x, y, w, h, sourceW, sourceH)
-	self:SetHighlightTexture(app.asset("content"));
-	local hl = self:GetHighlightTexture();
-	hl:SetATTSprite(name, x, y, w, h, sourceW, sourceH);
-	return hl;
-end
 button:Hide();
 
 local checkbutton = CreateFrame("CHECKBUTTON", nil, frame);
@@ -308,13 +302,6 @@ checkbutton:Hide();
 local editbox = CreateFrame("EDITBOX", nil, frame);
 getmetatable(editbox).__index.SetATTTooltip = SetATTTooltip;
 editbox:Hide();
-
-local texture = frame:CreateTexture(nil, "ARTWORK");
-getmetatable(texture).__index.SetATTSprite = function(self, name, x, y, w, h, sourceW, sourceH)
-	self:SetTexture(app.asset("content"));
-	self:SetTexCoord(x / sourceW, (x + w) / sourceW, y / sourceH, (y + h) / sourceH);
-end
-texture:Hide();
 end)();
 
 function app:ShowPopupDialog(msg, callback)

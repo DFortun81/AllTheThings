@@ -756,7 +756,6 @@ app.L = {
 	["TRADEABLE"] = "Tradeable";
 
 	-- Icons and Collection Text
-	["LOGO_SMALL"] = app.asset("logo_tiny");	-- Winner of the Logo Contest (Used to be "Interface\\Icons\\INV_Axe_106.blp")
 	["COLLECTED_ICON"] = "|T" .. app.asset("known") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.
 	["COLLECTED_APPEARANCE_ICON"] = "|T" .. app.asset("known_circle") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.
 	["COMPLETE_ICON"] = "|T" .. app.asset("known_green") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.

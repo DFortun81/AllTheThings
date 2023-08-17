@@ -1528,8 +1528,8 @@ end
 
 -- Top 1
 local logo = child:CreateTexture(nil, "ARTWORK")
-logo:SetATTSprite("base_36x36", 429, 217, 36, 36, 512, 256)
 logo:SetPoint("TOPLEFT", child, 0, 0)
+logo:SetTexture(app.asset("Discord_2_64"));
 logo:SetSize(36, 36)
 logo:Show()
 

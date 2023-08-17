@@ -597,8 +597,8 @@ end
 
 -- The ALL THE THINGS Epic Logo!
 local f = settings:CreateTexture(nil, "ARTWORK");
-f:SetATTSprite("base_36x36", 429, 217, 36, 36, 512, 256);
 f:SetPoint("TOPLEFT", settings, "TOPLEFT", 8, -8);
+f:SetTexture(app.asset("Discord_2_64"));
 f:SetSize(36, 36);
 f:Show();
 settings.logo = f;

@@ -9546,19 +9546,15 @@ local function CreateMinimapButton()
 	
 	-- Create the Button Texture
 	local texture = button:CreateTexture(nil, "BACKGROUND");
-	texture:SetATTSprite("base_36x36", 429, 217, 36, 36, 512, 256);
-	--texture:SetATTSprite("in_game_logo", 430, 75, 53, 59, 512, 256);
-	--texture:SetScale(53 / 64, 59 / 64);
-	texture:SetPoint("CENTER", 0, 0);
+	texture:SetTexture(app.asset("Discord_2_64"));
 	texture:SetAllPoints();
 	button.texture = texture;
 	
 	-- Create the Button Texture
 	local oldtexture = button:CreateTexture(nil, "BACKGROUND");
 	oldtexture:SetPoint("CENTER", 0, 0);
-	oldtexture:SetTexture(L["LOGO_SMALL"]);
+	oldtexture:SetTexture(app.asset("logo_tiny"));
 	oldtexture:SetSize(21, 21);
-	oldtexture:SetTexCoord(0,1,0,1);
 	button.oldtexture = oldtexture;
 	
 	-- Create the Button Tracking Border
@@ -9570,13 +9566,11 @@ local function CreateMinimapButton()
 	button.UpdateStyle = function(self)
 		if app.Settings:GetTooltipSetting("MinimapStyle") then
 			self:SetHighlightTexture("Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight", "ADD");
-			self:GetHighlightTexture():SetTexCoord(0,1,0,1);
-			self:GetHighlightTexture():SetAlpha(1);
 			self.texture:Hide();
 			self.oldtexture:Show();
 			self.border:Show();
 		else
-			self:SetATTHighlightSprite("epic_36x36", 297, 215, 36, 36, 512, 256):SetAlpha(0.2);
+			self:SetHighlightTexture(app.asset("MinimapHighlight_64x64"));
 			self.texture:Show();
 			self.oldtexture:Hide();
 			self.border:Hide();
@@ -9627,7 +9621,7 @@ local function CreateMinimapButton()
 			x = math.max(-width, math.min(cos*(math.sqrt(2*(width)^2)-rounding), width))
 			y = math.max(-height, math.min(sin*(math.sqrt(2*(height)^2)-rounding), height))
 		end
-		self:SetPoint("CENTER", "Minimap", "CENTER", -x, y);
+		self:SetPoint("CENTER", "Minimap", "CENTER", -math.floor(x), math.floor(y));
 	end
 	local update = function(self)
 		local w, x = GetCursorPosition();
