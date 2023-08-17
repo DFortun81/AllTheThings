@@ -187,7 +187,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 					-- munificent, turbulent, and grandiose tokens below are each in their own bracket
 					-- maybe group each category under one header instead of having the same description on each token?
-						n(-493, sharedData ({ ["description"] = "To receive a mission for this token, your character has to be precisely level 20 (locking experience is recommended).\nEach token mission requires a follower at a specific level to be offered (one follower at 31, one follower at 32, and so forth).\nThe remaining 11 followers can be at any level.\nFollowers at level 40 are unrestricted in terms of item level.\n\nBonus: The Master Plan addon greatly enhances your mission table and even lets you ignore followers so you never accidentally level them.\n\nThanks to KyrosKrane for figuring it out.", },{	-- Garrison Mission Loot
+						n(-493, sharedData ({ ["description"] = "To receive a mission for this token, your character has to be precisely level 20 (locking experience is recommended).\nEach token mission requires a follower at a specific level to be offered (one follower at 31, one follower at 32, and so forth).\nThe remaining 11 followers can be at any level.\nFollowers at level 40 are unrestricted in terms of item level.\n\nBonus: The Master Plan addon greatly enhances your mission table and even lets you ignore followers so you never accidentally level them.\n\nThanks to ATT Discord for figuring it out.", },{	-- Garrison Mission Loot
 							i(114109, {	-- Munificent Armament
 							--["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
 								["g"] = {
