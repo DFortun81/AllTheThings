@@ -34,7 +34,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Retail|x86' ">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>..\..\Parser\</OutputPath>
-    <DefineConstants>TRACE;RETAIL;DF;AFTERDF;AFTERSL;AFTERBFA;AFTERLEGION;AFTERWOD;AFTERMOP;AFTERCATA;AFTERWRATH;AFTERTBC</DefineConstants>
+    <DefineConstants>TRACE;RETAIL;DF</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>x64</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
@@ -43,66 +43,11 @@
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <Optimize>true</Optimize>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Classic %2801 - Vanilla%29|x86' ">
-    <DebugSymbols>true</DebugSymbols>
-    <OutputPath>..\..\..\..\..\..\..\_classic_\Interface\AddOns\ATT-Classic\.contrib\.tools\</OutputPath>
-    <DefineConstants>TRACE;CLASSIC;CRIEVE;ANYCLASSIC</DefineConstants>
-    <DebugType>full</DebugType>
-    <PlatformTarget>x64</PlatformTarget>
-    <LangVersion>7.3</LangVersion>
-    <ErrorReport>prompt</ErrorReport>
-    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
-    <Prefer32Bit>true</Prefer32Bit>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Classic %2802 - The Burning Crusade%29|x86' ">
-    <DebugSymbols>true</DebugSymbols>
-    <OutputPath>..\..\..\..\..\..\..\_classic_\Interface\AddOns\ATT-Classic\.contrib\.tools\</OutputPath>
-    <DefineConstants>TRACE;TBC;AFTERTBC;CRIEVE;ANYCLASSIC</DefineConstants>
-    <DebugType>full</DebugType>
-    <PlatformTarget>x64</PlatformTarget>
-    <LangVersion>7.3</LangVersion>
-    <ErrorReport>prompt</ErrorReport>
-    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
-    <Prefer32Bit>true</Prefer32Bit>
-  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Retail_Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>..\..\Parser\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;RETAIL;DF;AFTERDF;AFTERSL;AFTERBFA;AFTERLEGION;AFTERWOD;AFTERMOP;AFTERCATA;AFTERWRATH;AFTERTBC;</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;RETAIL;DF;</DefineConstants>
     <Optimize>false</Optimize>
-    <DebugType>full</DebugType>
-    <PlatformTarget>x64</PlatformTarget>
-    <LangVersion>7.3</LangVersion>
-    <ErrorReport>prompt</ErrorReport>
-    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
-    <Prefer32Bit>true</Prefer32Bit>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Classic %2803 - Wrath of the Lich King%29|x86' ">
-    <DebugSymbols>true</DebugSymbols>
-    <OutputPath>..\..\..\..\..\..\..\_classic_\Interface\AddOns\ATT-Classic\.contrib\.tools\</OutputPath>
-    <DefineConstants>TRACE;WRATH;AFTERWRATH;AFTERTBC;CRIEVE;ANYCLASSIC</DefineConstants>
-    <DebugType>full</DebugType>
-    <PlatformTarget>x64</PlatformTarget>
-    <LangVersion>7.3</LangVersion>
-    <ErrorReport>prompt</ErrorReport>
-    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
-    <Prefer32Bit>true</Prefer32Bit>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Classic %2804 - Cataclysm%29|x86' ">
-    <DebugSymbols>true</DebugSymbols>
-    <OutputPath>..\..\..\..\..\..\..\_classic_\Interface\AddOns\ATT-Classic\.contrib\.tools\</OutputPath>
-    <DefineConstants>TRACE;CATA;AFTERCATA;AFTERWRATH;AFTERTBC;CRIEVE;ANYCLASSIC</DefineConstants>
-    <DebugType>full</DebugType>
-    <PlatformTarget>x64</PlatformTarget>
-    <LangVersion>7.3</LangVersion>
-    <ErrorReport>prompt</ErrorReport>
-    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
-    <Prefer32Bit>true</Prefer32Bit>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Classic %2810 - Dragonflight%29|x86' ">
-    <DebugSymbols>true</DebugSymbols>
-    <OutputPath>..\..\..\..\..\..\..\_classic_\Interface\AddOns\ATT-Classic\.contrib\.tools\</OutputPath>
-    <DefineConstants>TRACE;DF;AFTERDF;AFTERSL;AFTERBFA;AFTERLEGION;AFTERWOD;AFTERMOP;AFTERCATA;AFTERWRATH;AFTERTBC;CRIEVE;ANYCLASSIC</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>x64</PlatformTarget>
     <LangVersion>7.3</LangVersion>
@@ -123,14 +68,32 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CollectedStatus.cs" />
     <Compile Include="CustomConfiguration.cs" />
+    <Compile Include="Export\Export %28Compressed Lua%29.cs" />
+    <Compile Include="Export\Export %28Raw Lua%29.cs" />
+    <Compile Include="Export\Export %28Shortcuts%29.cs" />
+    <Compile Include="Export\Export %28Structures%29.cs" />
+    <Compile Include="Export\Export.cs" />
+    <Compile Include="Export\Object Data\FactionQuestData.cs" />
+    <Compile Include="Export\Object Data\HeirloomData.cs" />
+    <Compile Include="Export\Object Data\ItemData.cs" />
+    <Compile Include="Export\Object Data\ItemSourceData.cs" />
+    <Compile Include="Export\Object Data\MountData.cs" />
+    <Compile Include="Export\Object Data\NPCData.cs" />
+    <Compile Include="Export\Object Data\ObjectData.cs" />
+    <Compile Include="Export\Object Data\QuestData.cs" />
+    <Compile Include="Export\Object Data\SpellData.cs" />
+    <Compile Include="Extensions.cs" />
     <Compile Include="Framework\Framework.Objects.cs" />
     <Compile Include="Framework\Framework.Items.cs" />
     <Compile Include="Framework\Framework.cs" />
     <Compile Include="Harvesters\ObjectHarvester.cs" />
     <Compile Include="Framework\ParseStage.cs" />
+    <Compile Include="MiniJSON.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tracer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -190,11 +153,5 @@
     <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for Dragonflight.exe" />
     <Message Text="Renamed executable file." Importance="high" />
   </Target>
-  <ItemGroup>
-    <ProjectReference Include="..\ATT\ATT.csproj">
-      <Project>{98091a91-ec2a-4b0f-9400-89fc8cbcac8b}</Project>
-      <Name>ATT</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

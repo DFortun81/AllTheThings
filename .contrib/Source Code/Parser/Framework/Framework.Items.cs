@@ -501,10 +501,7 @@ namespace ATT
                     case "isOffHand":
                     case "factionID":
                     case "mountID":
-#if ANYCLASSIC
                     case "petTypeID":
-                    case "b":
-#endif
                     case "speciesID":
                     case "objectiveID":
                     case "runeforgePowerID":
@@ -554,10 +551,8 @@ namespace ATT
                         break;
 
                     // Conditional Fields -- only merge if NOT Location Sourced data
-#if RETAIL
                     // there are situations where the same Item is BoP in some places and BoE in others...
                     case "b":
-#endif
                     case "e":
                         if (!ProcessingMergeData) break;
                         item[field] = Convert.ToInt64(value);
@@ -778,9 +773,7 @@ namespace ATT
                     case "musicRollID":
                     case "illusionID":
                     case "recipeID":
-#if ANYCLASSIC
                     case "petTypeID":
-#endif
                     case "speciesID":
                     case "spellID":
                     case "factionID":
@@ -788,9 +781,7 @@ namespace ATT
                     case "requireSkill":
                     case "objectiveID":
                     case "f":
-#if ANYCLASSIC
                     case "filterForRWP":
-#endif
                     case "b":
                     case "rank":
                     case "ilvl":
@@ -924,7 +915,9 @@ namespace ATT
 
                 if (data.ContainsKey("ignoreSource"))
                 {
+#pragma warning disable CS0162 // Unreachable code detected
                     if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} Skipped SourceID due to ignoreSource");
+#pragma warning restore CS0162 // Unreachable code detected
                     return;
                 }
 
@@ -933,7 +926,9 @@ namespace ATT
                 {
                     if (!((f > 0 && f < 38) || f == 57))
                     {
+#pragma warning disable CS0162 // Unreachable code detected
                         if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} Skipped SourceID due to Filter:{(Objects.Filters)f}");
+#pragma warning restore CS0162 // Unreachable code detected
                         return;
                     }
                 }
@@ -949,14 +944,18 @@ namespace ATT
                 if (SOURCES.TryGetValue(sourceIDKey, out long sourceID))
                 {
                     // quite spammmmmy, only enable if needed
+#pragma warning disable CS0162 // Unreachable code detected
                     if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} ==> s:{sourceID}");
+#pragma warning restore CS0162 // Unreachable code detected
                     data["s"] = sourceID;
                     return;
                 }
 
                 // quite spammmmmy, only enable if needed
                 if (!data.ContainsKey("s"))
+#pragma warning disable CS0162 // Unreachable code detected
                     if (DoSpammyDebugLogging) LogDebug($"INFO: Failed to match SourceID for Item {sourceIDKey}");
+#pragma warning restore CS0162 // Unreachable code detected
             }
 
             /// <summary>

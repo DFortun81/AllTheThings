@@ -253,11 +253,7 @@ namespace ATT
                             case 11:                // 11/12/13 (Bear / Cat Claw) - These do not exist?
                             case 12:                // Gonna just classify as Fist Weapon.
                             case 13: return Filters.FistWeapon;
-#if RETAIL
                             case 14: return Filters.Cosmetic;           // Many equippable white items with no restriction post 10.0.5... are they all learnable?
-#else
-                            case 14: return Filters.Miscellaneous;      // Miscellaneous (not seeing anything in this filter?)
-#endif
                             case 15: return Filters.Dagger;
                             case 16: return Filters.Thrown;            // Thrown
                             case 17: return Filters.Polearm;            // Spear (not seeing anything in this filter, so converting to Polearm instead?)
@@ -1392,9 +1388,7 @@ end");
                         case "coords":
                         case "sym":
                         case "f":
-#if ANYCLASSIC
                         case "filterForRWP":
-#endif
                             itemData[pair.Key] = pair.Value;
                             break;
 
@@ -1846,9 +1840,7 @@ end");
                     case "raceID":
                     case "conduitID":
                     case "f":
-#if ANYCLASSIC
                     case "filterForRWP":
-#endif
                     case "u":
                     case "b":
                     case "rank":
@@ -1951,9 +1943,7 @@ end");
                         {
                             MergeIntegerArrayData(item, field, lvls);
                         }
-#if CRIEVE
-                        else item[field] = Convert.ToInt64(value);
-#endif
+                        else if (Program.PreProcessorTags.ContainsKey("CRIEVE")) item[field] = Convert.ToInt64(value);
                         break;
 
                     // Sub-Dictionary Data Type Fields (stored as Dictionary<int, int> for usability reasons)
@@ -2247,14 +2237,15 @@ end");
 
                     }
 
-#if ANYCLASSIC
-                    // if the cost is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
-                    if (costType == "i" && cost[1].TryConvert(out long costID))
+                    if (Program.PreProcessorTags.ContainsKey("ANYCLASSIC"))
                     {
-                        // cost item can be a ModItemID (decimal) value as well, but only care to mark the raw ItemID as referenced
-                        Items.MarkItemAsReferenced(costID);
+                        // if the cost is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
+                        if (costType == "i" && cost[1].TryConvert(out long costID))
+                        {
+                            // cost item can be a ModItemID (decimal) value as well, but only care to mark the raw ItemID as referenced
+                            Items.MarkItemAsReferenced(costID);
+                        }
                     }
-#endif
                 }
 
                 item[field] = costsList;
@@ -2308,26 +2299,7 @@ end");
                         {
                             item[field] = providers = new List<object>();
                         }
-                        if (!match)
-                        {
-                            providers.Add(newMergeProvider);
-                            if (newProvider.Item1 == "i")
-                            {
-#if ANYCLASSIC
-                                // if the provider is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
-                                Items.MarkItemAsReferenced(newProvider.Item2);
-#endif
-                            }
-                            else if (newProvider.Item1 == "n")
-                            {
-                                NPCS_WITH_REFERENCES[newProvider.Item2] = true;
-                                MarkCustomHeaderAsRequired(newProvider.Item2);
-                            }
-                            else if (newProvider.Item1 == "o")
-                            {
-                                ProcessObjectInstance(item, newProvider.Item2);
-                            }
-                        }
+                        if (!match) providers.Add(newMergeProvider);
                     }
                     catch
                     {
@@ -2473,9 +2445,9 @@ end");
             /// <param name="data">The data to merge into the container.</param>
             public static void Merge(List<object> container, IDictionary<string, object> data2)
             {
-#if RETAIL
                 // clean up unique quests being treated as one quest for purposes that are irrelevant to Retail
-                if (data2.TryGetValue("aqd", out IDictionary<string, object> aqd) && data2.TryGetValue("hqd", out IDictionary<string, object> hqd))
+                if (data2.TryGetValue("aqd", out IDictionary<string, object> aqd) && data2.TryGetValue("hqd", out IDictionary<string, object> hqd)
+                    && !Program.PreProcessorTags.ContainsKey("ANYCLASSIC")) // Crieve wants AQD/HQD and doesn't agree with this, but will allow it outside of Classic Builds.
                 {
                     // questID used in both faction data objects
                     if (aqd.TryGetValue("questID", out long aQuestID) && hqd.TryGetValue("questID", out long hQuestID))
@@ -2538,7 +2510,6 @@ end");
                         }
                     }
                 }
-#endif
 
                 // Only Merge in any global data if this is not the initial merge pass
                 // This way, pets/mounts/etc. have proper data existing when needing to merge into another group

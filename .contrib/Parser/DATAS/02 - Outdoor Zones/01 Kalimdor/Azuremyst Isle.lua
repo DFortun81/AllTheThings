@@ -12,6 +12,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\achievement_zone_azuremystisle_01",
 		-- #endif
+		["timeline"] = { "added 2.0.1.6180" },
 		["groups"] = {
 			m(AMMEN_VALE, {
 				["lore"] = "Ammen Vale is a small island and subzone off the coast of Azuremyst Isle. It is a lightly forested valley with escape pods, crystals, and smoking bits of the crashed planar ship scattered about the landscape.",

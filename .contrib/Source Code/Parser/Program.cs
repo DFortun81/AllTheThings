@@ -14,7 +14,7 @@ namespace ATT
     {
         private static bool Errored { get; set; }
 
-        private static string[] PreProcessorTags { get; set; }
+        public static Dictionary<string, bool> PreProcessorTags { get; set; } = new Dictionary<string, bool>();
 
         static void Main(string[] args)
         {
@@ -26,8 +26,7 @@ namespace ATT
 #endif
 
             Framework.CurrentParseStage = ParseStage.InitializeParserConfigs;
-            // Ensure the Retail Parser uses the default config always, input arg can change config values
-            Framework.InitConfigSettings("parser.config");
+
 
             // Determine if running in Debug Mode or not.
             if (args != null && args.Length > 0)
@@ -44,20 +43,27 @@ namespace ATT
                 }
             }
 
+            if (!Framework.HasConfig())
+            {
+                // Ensure the Parser uses the default config if nothing is specified.
+                Framework.InitConfigSettings("parser.config");
+            }
+
             Framework.ApplyConfigSettings();
 
             try
             {
-                PreProcessorTags = Framework.Config["PreProcessorTags"] ?? Array.Empty<string>();
+                var preprocessorArray = Framework.Config["PreProcessorTags"];
+                if (preprocessorArray != null)
+                {
+                    foreach(var preprocessor in preprocessorArray)
+                    {
+                        PreProcessorTags[preprocessor] = true;
+                    }
+                }
+
                 // Prepare console output to a file.
-#if ANYCLASSIC
-                string databaseRootFolder = "../.db";
-#else
                 string databaseRootFolder = Framework.Config["root-data"] ?? "./DATAS";
-#endif
-
-
-                Directory.CreateDirectory("../Debugging");
 
                 Framework.CurrentParseStage = ParseStage.RawJsonMerge;
                 do
@@ -65,11 +71,8 @@ namespace ATT
                     Errored = false;
                     // Load all of the RAW JSON Data into the database.
                     var files = Directory.EnumerateFiles(databaseRootFolder, "*.json", SearchOption.AllDirectories).ToList();
-#if ANYCLASSIC
+                    files.Sort(StringComparer.InvariantCulture);
                     foreach (var f in files) ParseJSONFile(f);
-#else
-                    files.AsParallel().ForAll(f => ParseJSONFile(f));
-#endif
 
                     if (Errored)
                     {
@@ -189,14 +192,12 @@ namespace ATT
                 Trace.Write(Framework.Items.Count);
                 Trace.WriteLine(" Items loaded in the database.");
 
-#if !ANYCLASSIC
-                if (Framework.IsErrored && !PreProcessorTags.Contains("IGNORE_ERRORS"))
+                if (Framework.IsErrored && !PreProcessorTags.ContainsKey("IGNORE_ERRORS"))
                 {
                     Trace.WriteLine("-- Errors encountered during Parse. Please fix them to allow exporting addon DB properly.");
                     Console.ReadLine();
                     return;
                 }
-#endif
 
                 // Export all of the data for the Framework.
                 Framework.Export();
@@ -254,6 +255,10 @@ namespace ATT
         {
             switch (name)
             {
+                case "baseconfig":
+                    if (!string.IsNullOrWhiteSpace(value))
+                        Framework.InitConfigSettings(value, true);
+                    break;
                 case "config":
                     if (!string.IsNullOrWhiteSpace(value))
                         Framework.InitConfigSettings(value);
@@ -352,7 +357,7 @@ namespace ATT
             else if (command.Length > 1)
             {
                 // Config PreProcessorTags
-                if (PreProcessorTags.Contains(command[1]))
+                if (PreProcessorTags.ContainsKey(command[1]))
                     return true;
 
                 switch (command[1])
@@ -393,18 +398,11 @@ namespace ATT
                             }
                         }
                         throw new Exception($"Malformed #IF AFTER statement. '{string.Join(" ", command)}'");
+
+                    // These are flagged in the parser.config files. (PreProcessorTags returns true above the switch statement)
                     case "ANYCLASSIC":
-#if ANYCLASSIC
-                        return true;
-#else
-                        return false;
-#endif
                     case "CRIEVE":
-#if CRIEVE
-                        return true;
-#else
                         return false;
-#endif
                     default:
                         // If the command matches the name of a possible release phase, then return it.
                         if (Framework.FIRST_EXPANSION_PHASE.ContainsKey(command[1])) return Framework.CURRENT_RELEASE_PHASE_NAME == command[1];
@@ -427,12 +425,7 @@ namespace ATT
             builder.Append("-- ").Append(shortname).AppendLine();
 
             // Are we already using the Retail DB?
-#if ANYCLASSIC
-            string filename = "..\\..\\..\\..\\..\\..\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Parser\\DATAS\\" + shortname;
-#else
             string filename = ".\\DATAS\\" + shortname;
-#endif
-
             if (Directory.Exists(filename))
             {
                 int fileCount = 0;
@@ -549,9 +542,7 @@ namespace ATT
                 catch (InvalidDataException e)
                 {
                     Framework.Log(e.Message);
-#if CRIEVE
-                    File.WriteAllText("D://ATT-ERROR-FILE.txt", content, Encoding.UTF8);
-#endif
+                    File.WriteAllText("./ATT-ERROR-FILE.txt", content, Encoding.UTF8);
                     Trace.WriteLine("Press Enter once you have resolved the issue.");
                     Console.ReadLine();
                 }
@@ -581,9 +572,9 @@ namespace ATT
                         }
                     }
                     else Trace.WriteLine(e);
-#if CRIEVE
-                    File.WriteAllText("D://ATT-ERROR-FILE.txt", content, Encoding.UTF8);
-#endif
+                    
+
+                    File.WriteAllText("./ATT-ERROR-FILE.txt", content, Encoding.UTF8);
                     Trace.WriteLine("Press Enter once you have resolved the issue.");
                     Console.ReadLine();
                 }

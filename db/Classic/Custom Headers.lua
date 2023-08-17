@@ -120,12 +120,12 @@ local a = L.HEADER_ICONS;
 for key,value in pairs({
 	[-1000004] = _.asset("Category_Achievements"),
 	[-1000008] = "Interface/MINIMAP/TRACKING/Class",
-	[-1000009] = _.asset("Achievement_Garrison_Horde_PVE"),
+	[-1000009] = _.asset("Category_CommonBossDrop"),
 	[-1000012] = "Interface/Icons/INV_Misc_Coin_02",
 	[-1000013] = _.asset("Category_Crafting"),
 	[-1000014] = "Interface/Icons/inv_misc_book_06",
 	[-1000015] = "Interface/Icons/inv_misc_book_07",
-	[-1000018] = _.asset("INV_Misc_Map02"),
+	[-1000018] = _.asset("Category_Exploration"),
 	[-1000019] = _.asset("Category_Factions"),
 	[-1000020] = _.asset("Category_FlightPaths"),
 	[-1000023] = _.asset("Category_Holidays"),
@@ -206,6 +206,7 @@ for key,value in pairs({
 	[-1000191] = _.asset("Holiday_noblegarden"),
 	[-1000195] = "Interface/Icons/inv_misc_fish_06",
 	[-1000202] = "Interface/Icons/inv_box_01",
+	[-1000203] = "Interface/Icons/achievement_dungeon_outland_dungeonmaster",
 	[-1000204] = "Interface/Icons/Inv_hammer_25",
 	[-1000205] = "Interface/Icons/inv_stone_02",
 	[-1000206] = "Interface/Icons/spell_holiday_tow_spicecloud",
@@ -308,6 +309,7 @@ for key,value in pairs({
 	[-1000191] = "Noblegarden",
 	[-1000195] = "Stranglethorn Fishing Extravaganza",
 	[-1000202] = "The Ahn'Qiraj War Effort",
+	[-1000203] = "The Opening of the Dark Portal",
 	[-1000204] = "The Scepter of the Shifting Sands",
 	[-1000205] = "The Scourge Invasion",
 	[-1000206] = "The Silithyst Must Flow",
@@ -336,6 +338,7 @@ for key,value in pairs({
 	[-1000164] = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Live\" or \"Scarlet\" side, which the Scarlet Crusade has taken over.",
 	[-1000165] = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Dead\" or \"Scourge\" side, which the Scourge has taken over.",
 	[-1000202] = "When Phase 5 is eventually released, the Ruins of Ahn'Qiraj and Temple of Ahn'Qiraj will not be immediately available. Instead, server communities will have to undertake a massive war effort to open the raids by gathering supplies to prepare for the war and completing an epic questline that ultimately culminates in the banging of a gong to open the gates and release the horrors within upon the world.\n\nOnce both factions have finished their contribution, there is a 5-day grace period where. Afterwards, there is a server-wide 10 hour event which spans several zones in Kalimdor the moment someone bangs the gong.\n\nHow quickly Ahn'Qiraj opens depends on the server and its faction balance.\n\nWe recommend delaying the War Effort as long as possible to allow for the most number of people to obtain the Scarab Lord mount as everyone that finishes The Scepter of the Shifting Sands quest line will be granted the same rewards!",
+	[-1000203] = "The Opening of the Dark Portal was a one-time event that happened between Prepatch and the launch of TBC and subsequentially removed after. The tabard is the only tabard in the game with the Flex emote built into it and is highly covetted by collectors. Highlord Kruul would spawn randomly outside of the major cities and max level zones of the time.",
 	[-1000204] = "In addition to all players on a realm working towards completing the War Effort, one player had to create the Scepter of the Shifting Sands - a very difficult task that could only be solved by a server's top guild back when the questline was added. After the war effort was finished and the army of the Alliance and the Horde arrived in Silithus, the Scepter of the Shifting Sands could be used on the Scarab Gong. Doing so resulted in the opening of Ahn'Qiraj. The first player to bang the Scarab Gong on each server would be rewarded with the Scarab Lord title (in Burning Crusade, the title will not be available in Classic!) and the Black Qiraji Resonating Crystal mount. Anyone else who followed them within 10 hours was rewarded with the title as well.\n\nAlthough it is still possible to complete the questline for the Scepter of the Shifting Sands after the gates have been opened on your server, doing so will not reward neither the Black Qiraji Resonating Crystal nor the Scarab Lord title.",
 	[-1000205] = "The Scourge Invasion was a world event in Patch 1.11 and again during the Wrath of the Lich King Pre-Patch during 3.0.1 that heralded the opening of Naxxramas, the citadel of the dreaded Kel'Thuzad.\n\nSeveral regions of Azeroth came under attack by Scourge forces. Members of the Argent Dawn organized a worldwide counter to the Scourge invasion, keeping an eye out for any necropolis sightings and passing on their information to all adventurers willing to aid them in their struggle.\n\nWith each victory against the Scourge, the defense grows stronger. As more and more invasion attempts are beaten back by the defenders, the Argent Dawn will be able to bestow increasingly more powerful blessings upon those fighting the invaders. If the mortal races focus on clearing the Scourge camps all over the world that have sprung up beneath each necropolis, perhaps the invasion can effectively be halted or even repelled. Those who wish to take up arms against the undead invaders should speak with a representative of the Argent Dawn to learn what regions need help and how the defense is holding up.",
 	[-1000206] = "The Silithyst Must Flow is the name of the world PvP event in Silithus, where players of both factions must try and secure as much Silithyst as possible. Silithyst is a red crystalline dust that reaches the surface through geysers exclusive to the Silithus desert. Both the Alliance and the Horde have taken an interest in this new substance, and researchers on both sides have discovered unique and valuable properties in the dust. The Horde and Alliance camps in the region have both been outfitted with turn-in stations where players can unload the Silithyst they collect.",
@@ -368,6 +371,7 @@ for key,value in pairs({
 	[-1000173] = "Dunkelmond-Jahrmarkt",
 	[-1000190] = "Sonnenwendfest",
 	[-1000195] = "Anglerwettbewerb im Schlingendorntal",
+	[-1000203] = "Die Öffnung des Dunklen Portals",
 	[-1000204] = "Das Szepter der Sandstürme",
 }) do a[key] = value; end
 end
@@ -382,6 +386,7 @@ for key,value in pairs({
 	[-1000173] = "Feria de la Luna Negra",
 	[-1000190] = "Festival del Fuego del Solsticio de Verano",
 	[-1000195] = "Gran espectáculo de pesca de Tuercespina",
+	[-1000203] = "La apertura del Portal Oscuro",
 	[-1000204] = "El cetro del Mar de Dunas",
 }) do a[key] = value; end
 end
@@ -410,6 +415,7 @@ for key,value in pairs({
 	[-1000190] = "Fête du Feu du solstice d’été",
 	[-1000195] = "Concours de pêche de Strangleronce",
 	[-1000202] = "Effort de guerre d’Ahn'Qiraj",
+	[-1000203] = "L'ouverture de la Porte des ténèbres",
 	[-1000204] = "Le Sceptre des Sables changeants",
 	[-1000212] = "Edition Collector",
 }) do a[key] = value; end
@@ -422,6 +428,7 @@ for key,value in pairs({
 	[-1000173] = "Fiera di Lunacupa",
 	[-1000190] = "Fuochi di Mezza Estate",
 	[-1000195] = "Gara di Pesca a Rovotorto",
+	[-1000203] = "L'apertura del Portale Oscuro",
 	[-1000204] = "Scettro delle Sabbie Mutevoli",
 }) do a[key] = value; end
 end
@@ -436,6 +443,7 @@ for key,value in pairs({
 	[-1000173] = "다크문 유랑단",
 	[-1000190] = "한여름 불꽃축제",
 	[-1000195] = "가시덤불 골짜기 낚시왕 선발대회",
+	[-1000203] = "어둠의 문 열기",
 	[-1000204] = "흐르는 모래의 홀",
 }) do a[key] = value; end
 end
@@ -450,6 +458,7 @@ for key,value in pairs({
 	[-1000173] = "Feira de Negraluna",
 	[-1000190] = "Festival do Fogo do Solstício",
 	[-1000195] = "Festerê de Pesca da Selva do Espinhaço",
+	[-1000203] = "A abertura do Portal Negro",
 	[-1000204] = "Cetro das Areias Cambiantes",
 }) do a[key] = value; end
 end
@@ -484,6 +493,7 @@ for key,value in pairs({
 	[-1000190] = "Огненный Солнцеворот",
 	[-1000195] = "Рыбомания Тернистой долины",
 	[-1000202] = "Война в Ан'Кираже",
+	[-1000203] = "Открытие Темного портала",
 	[-1000204] = "Скипетр Зыбучих песков",
 	[-1000205] = "Вторжение Плети",
 	[-1000212] = "Коллекционное издание",
@@ -515,6 +525,7 @@ for key,value in pairs({
 	[-1000190] = "仲夏火焰节",
 	[-1000195] = "荆棘谷钓鱼大赛",
 	[-1000202] = "安其拉之战捐献",
+	[-1000203] = "开启黑暗之门",
 	[-1000204] = "流沙节杖",
 	[-1000205] = "天灾入侵",
 	[-1000206] = "希利苏斯流沙",

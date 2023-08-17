@@ -844,7 +844,7 @@ inst = function(id, t)									-- Create an INSTANCE Object
 						t.maps = nil;
 					end
 				else
-					error("Instance Missing a MapID.");
+					error("Instance Missing a MapID: " .. id);
 				end
 				return t;
 			end

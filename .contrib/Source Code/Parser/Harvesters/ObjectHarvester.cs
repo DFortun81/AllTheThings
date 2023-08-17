@@ -54,43 +54,7 @@ namespace ATT
         /// <summary>
         /// The game flavors of WoWHead to try querying.
         /// </summary>
-        private static readonly string[] GameFlavors =
-        {
-#if RETAIL && PTR
-            "ptr",
-#endif
-#if RETAIL || AFTERDF
-            "",
-#endif
-#if AFTERDF
-            //"dragonflight",   // WoWHead for Dragonflight doesn't exist yet.
-#endif
-#if AFTERSL
-            //"shadolands",   // WoWHead for Shadowlands doesn't exist yet.
-#endif
-#if AFTERBFA
-            //"bfa",   // WoWHead for BFA doesn't exist yet.
-#endif
-#if AFTERLEGION
-            //"legion",   // WoWHead for Legion doesn't exist yet.
-#endif
-#if AFTERWOD
-            //"wod",   // WoWHead for Warlords of Draenor doesn't exist yet.
-#endif
-#if AFTERMOP
-            //"mop",   // WoWHead for Mists of Pandaria doesn't exist yet.
-#endif
-#if AFTERCATA
-            //"cata",   // WoWHead for Cataclysm doesn't exist yet.
-#endif
-#if AFTERWRATH
-            //"wotlk",
-#endif
-#if AFTERTBC
-            //"tbc",
-#endif
-            //"classic"
-        };
+        public static List<string> GameFlavors = new List<string> { "" };
 
         /// <summary>
         /// The default text value for an object, in each locale.

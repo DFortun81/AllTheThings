@@ -11,6 +11,7 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices.ComTypes;
 using System.Text;
+using System.Text.RegularExpressions;
 using static ATT.Export;
 using static ATT.Framework;
 
@@ -126,31 +127,7 @@ namespace ATT
             { "DF", new int[] { 10, 1, 5, 50401 } },
         };
 
-        public static string CURRENT_RELEASE_PHASE_NAME =
-#if DF
-                "DF"
-#elif SHADOWLANDS
-                "SHADOWLANDS"
-#elif BFA
-                "BFA"
-#elif LEGION
-                "LEGION"
-#elif WOD
-                "WOD"
-#elif MOP
-                "MOP"
-#elif CATA
-                "CATA"
-#elif WRATH
-                "WRATH"
-#elif TBC
-                "TBC"
-#elif CLASSIC
-                "CLASSIC"
-#else
-                "UNKNOWN"
-#endif
-            ;
+        public static string CURRENT_RELEASE_PHASE_NAME = "UNKNOWN";
 
         /// <summary>
         /// The current phase release ID of the current build type.
@@ -170,13 +147,7 @@ namespace ATT
         /// <summary>
         /// The maximum available Phase Identifier.
         /// </summary>
-        public static readonly long MAX_PHASE_ID =
-#if ANYCLASSIC
-            LAST_EXPANSION_PHASE[CURRENT_RELEASE_PHASE_NAME]
-#else
-            99999999
-#endif
-            ;
+        public static long MAX_PHASE_ID = 99999999;
 
         // These get loaded from _main.lua now.
         public static List<object> ALLIANCE_ONLY;
@@ -473,12 +444,17 @@ namespace ATT
             } }
         };
 
+        public static bool HasConfig()
+        {
+            return Config != null;
+        }
+
         /// <summary>
         /// Allows the optional Parser Config file to overwrite some built-in values for non-compile required manipulation of the Parser
         /// </summary>
-        public static void InitConfigSettings(string filepath)
+        public static void InitConfigSettings(string filepath, bool replaceConfig=false)
         {
-            if (Config == null)
+            if (Config == null || replaceConfig)
             {
                 Log($"Using config: {filepath}");
                 Config = new CustomConfiguration(filepath);
@@ -495,7 +471,13 @@ namespace ATT
         /// </summary>
         public static void ApplyConfigSettings()
         {
-            CURRENT_RELEASE_PHASE_NAME = Config["DataPhase"] ?? CURRENT_RELEASE_PHASE_NAME;
+            CURRENT_RELEASE_PHASE_NAME = Config["DataPhase"] ?? "UNKNOWN";
+            if(CURRENT_RELEASE_PHASE_NAME == "UNKNOWN")
+            {
+                Console.Write("CURRENT_RELEASE_PHASE_NAME is UNKNOWN. Please make sure to assign a data phase in your config file.");
+                Console.ReadLine();
+                throw new ArgumentNullException("DataPhase");
+            }
             int[] configPatch = Config["DataPatch"];
             if (configPatch != null)
             {
@@ -503,6 +485,29 @@ namespace ATT
             }
             CURRENT_RELEASE_PHASE = FIRST_EXPANSION_PHASE[CURRENT_RELEASE_PHASE_NAME];
             CURRENT_RELEASE_VERSION = LAST_EXPANSION_PATCH[CURRENT_RELEASE_PHASE_NAME].ConvertVersion();
+            if (CURRENT_RELEASE_VERSION < FIRST_EXPANSION_PATCH["LEGION"].ConvertVersion())
+            {
+                if (CURRENT_RELEASE_VERSION >= FIRST_EXPANSION_PATCH["WRATH"].ConvertVersion())
+                {
+                    ObjectHarvester.GameFlavors.Insert(0, "wotlk");
+                }
+                else if (CURRENT_RELEASE_VERSION >= FIRST_EXPANSION_PATCH["TBC"].ConvertVersion())
+                {
+                    ObjectHarvester.GameFlavors.Insert(0, "tbc");
+                }
+                else
+                {
+                    ObjectHarvester.GameFlavors.Insert(0, "classic");
+                }
+            }
+            if (Program.PreProcessorTags.ContainsKey("PTR"))
+            {
+                ObjectHarvester.GameFlavors.Insert(0, "ptr");
+            }
+            if (Program.PreProcessorTags.ContainsKey("ANYCLASSIC"))
+            {
+                MAX_PHASE_ID = LAST_EXPANSION_PHASE[CURRENT_RELEASE_PHASE_NAME];
+            }
             string[] configUseCounts = Config["TrackUseCounts"];
             if (configUseCounts != null)
             {
@@ -697,10 +702,9 @@ namespace ATT
         /// <param name="data"></param>
         private static bool DataValidation(IDictionary<string, object> data, ref long modID, ref long minLevel)
         {
-#if RETAIL
             // Retail has no reason to include Objective groups since the in-game Quest system does not warrant ATT including all this extra information
-            if (data.ContainsKey("objectiveID")) return false;
-#endif
+            // Crieve wants objectives and doesn't agree with this, but will allow it outside of Classic Builds.
+            if (data.ContainsKey("objectiveID") && Program.PreProcessorTags.ContainsKey("RETAIL")) return false;
 
             // verify the timeline data of Merged data (can prevent keeping the data in the data container)
             if (!CheckTimeline(data))
@@ -832,6 +836,35 @@ namespace ATT
                 {
                     if (sources.TryGetValue("mainHand", out long s))
                         data["s"] = s;
+                }
+            }
+
+            if (data.TryGetValue("providers", out object objRef) && objRef is List<object> providers)
+            {
+                foreach (var providerRef in providers)
+                {
+                    if (providerRef is List<object> provider)
+                    {
+                        string providerType = provider[0]?.ToString();
+                        long id = Convert.ToInt64(provider[1]);
+                        if (providerType == "i")
+                        {
+                            if (Program.PreProcessorTags.ContainsKey("ANYCLASSIC"))
+                            {
+                                // if the provider is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
+                                Items.MarkItemAsReferenced(id);
+                            }
+                        }
+                        else if (providerType == "n")
+                        {
+                            NPCS_WITH_REFERENCES[id] = true;
+                            MarkCustomHeaderAsRequired(id);
+                        }
+                        else if (providerType == "o")
+                        {
+                            ProcessObjectInstance(data, id);
+                        }
+                    }
                 }
             }
 
@@ -1188,28 +1221,22 @@ namespace ATT
                 {
                     case "i":
                         var item = Items.GetNull(pID);
-#if ANYCLASSIC
-                        // @Crieve: You may want to test/verify this logic in Classic
-                        //if (item == null || (item.TryGetValue("u", out long u) && u == 1))
-                        //{
-                        //    // The item doesn't exist in a Classic version, or was classified as never being implemented
-                        //    LogDebug($"Removed non-existent 'provider-item' {pID}", data);
-                        //    providersList.RemoveAt(i);
-                        //}
-#else
-                        if (item == null || !Items.IsItemReferenced(pID))
+                        if (!Program.PreProcessorTags.ContainsKey("ANYCLASSIC"))
                         {
-                            // The item isn't Sourced in Retail version
-                            // Holy... there are actually a ton of these. Will Debug Log for now until they are cleaned up...
-                            LogDebug($"WARN: Non-Sourced 'provider-item' {pID}", data);
+                            // Crieve doesn't want this. Sometimes the only valid source is the provider, which is fine for quest items.
+                            if (item == null || !Items.IsItemReferenced(pID))
+                            {
+                                // The item isn't Sourced in Retail version
+                                // Holy... there are actually a ton of these. Will Debug Log for now until they are cleaned up...
+                                LogDebug($"WARN: Non-Sourced 'provider-item' {pID}", data);
+                            }
+                            else if (item.TryGetValue("u", out long u) && u == 1)
+                            {
+                                // The item was classified as never being implemented
+                                LogDebug($"INFO: Removed NYI 'provider-item' {pID}", data);
+                                providersList.RemoveAt(i);
+                            }
                         }
-                        else if (item.TryGetValue("u", out long u) && u == 1)
-                        {
-                            // The item was classified as never being implemented
-                            LogDebug($"INFO: Removed NYI 'provider-item' {pID}", data);
-                            providersList.RemoveAt(i);
-                        }
-#endif
                         break;
                     case "n":
                     case "o":
@@ -1416,10 +1443,8 @@ namespace ATT
                 // {
                 //     LogDebug($"WARN: Move cost/provider from Criteria {achID}:{criteriaID} to its SourceQuest {questID} if applicable");
                 // }
-#if RETAIL
                 // can remove 'sourceQuests' from the criteria in Retail since it's going to be sourced under the required quest
                 data.Remove("sourceQuests");
-#endif
             }
 
             // TODO: can do this later when adding some way to verify that the criteria WAS actually moved under the NPC
@@ -4512,43 +4537,40 @@ namespace ATT
             return builder;
         }
         #endregion
-
+		
+		private static string GetBaseDBRootFolder() {
+#if DF
+            return "Dragonflight/";
+#elif SHADOWLANDS
+            return "Shadowlands/";
+#elif BFA
+            return "BFA/";
+#elif LEGION
+            return "Legion/";
+#elif WOD
+            return "WOD/";
+#elif MOP
+            return "MOP/";
+#elif CATA
+            return "Cata/";
+#elif WRATH
+            return "Wrath/";
+#elif TBC
+            return "TBC/";
+#else
+            return "Classic/";
+#endif
+		}
+		
         /// <summary>
         /// Export the database.
         /// This also exports for debugging as well.
         /// </summary>
         public static void Export()
         {
-#if ANYCLASSIC
-            // We want all versions of Classic ATT to build the database to the ATT-Classic folder.
-            string addonRootFolder = "../../../../../../_classic_/Interface/AddOns/ATT-Classic";
-
-#if DF
-            string dbRootFolder = "Dragonflight/";
-#elif SHADOWLANDS
-            string dbRootFolder = "Shadowlands/";
-#elif BFA
-            string dbRootFolder = "BFA/";
-#elif LEGION
-            string dbRootFolder = "Legion/";
-#elif WOD
-            string dbRootFolder = "WOD/";
-#elif MOP
-            string dbRootFolder = "MOP/";
-#elif CATA
-            string dbRootFolder = "Cata/";
-#elif WRATH
-            string dbRootFolder = "Wrath/";
-#elif TBC
-            string dbRootFolder = "TBC/";
-#else
-            string dbRootFolder = "Classic/";
-#endif
-#else
             // Default is relative to where the executable is. (.contrib/Parser)
             string addonRootFolder = Config["root-addon"] ?? "../..";
-            string dbRootFolder = Config["db-relative"] ?? "";
-#endif
+            string dbRootFolder = Config["db-relative"] ?? GetBaseDBRootFolder();
 
             // Setup the output folder (/db)
             var outputFolder = Directory.CreateDirectory($"{addonRootFolder}/db/{dbRootFolder}");

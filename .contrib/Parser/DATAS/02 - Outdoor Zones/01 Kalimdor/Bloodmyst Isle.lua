@@ -7,6 +7,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\achievement_zone_bloodmystisle_01",
 		-- #endif
+		["timeline"] = { "added 2.0.1.6180" },
 		["lvl"] = 10,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
