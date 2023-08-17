@@ -933,7 +933,7 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 	}),
 	prof(MINING, {
 		n(DISCOVERY, {
-			r(53124, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}}),	-- Toughness [Rank 5]
+			r(53124, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}, ["rank"] = 5 }),	-- Toughness [Rank 5]
 		}),
 		spell(2575, {	-- Mining
 			i(23425),	-- Adamantite Ore

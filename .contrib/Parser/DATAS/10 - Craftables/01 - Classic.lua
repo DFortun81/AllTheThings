@@ -2174,10 +2174,10 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 	}),
 	prof(MINING, {
 		n(DISCOVERY, {
-			r(53120, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}}),	-- Toughness [Rank 1]
-			r(53121, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}}),	-- Toughness [Rank 2]
-			r(53122, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}}),	-- Toughness [Rank 3]
-			r(53123, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}}),	-- Toughness [Rank 4]
+			r(53120, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}, ["rank"] = 1 }),	-- Toughness [Rank 1]
+			r(53121, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}, ["rank"] = 2 }),	-- Toughness [Rank 2]
+			r(53122, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}, ["rank"] = 3 }),	-- Toughness [Rank 3]
+			r(53123, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}, ["rank"] = 4 }),	-- Toughness [Rank 4]
 		}),
 		spell(2575, {	-- Mining
 			i(2836),	-- Coarse Stone

@@ -4,7 +4,7 @@
 KALIMDOR_CUP_HEADER = createHeader({
 	readable = "Kalimdor Cup",
 	constant = "KALIMDOR_CUP_HEADER",
-	icon = "Interface\\Icons\\misc_arrowrightcalendar_kalimdorcupstart",
+	icon = [[~_.asset("Holiday_KalCup")]],
 	eventID = EVENTS.KALIMDOR_CUP,
 	text = {
 		en = "Kalimdor Cup",

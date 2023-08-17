@@ -759,7 +759,7 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 	}),
 	prof(MINING, {
 		n(DISCOVERY, {
-			r(53040, {["timeline"] = {ADDED_3_0_3, REMOVED_6_0_2}}),	-- Toughness [Rank 6]
+			r(53040, {["timeline"] = {ADDED_3_0_3, REMOVED_6_0_2}, ["rank"] = 6 }),	-- Toughness [Rank 6]
 		}),
 		spell(2575, {	-- Mining
 			i(36909),	-- Cobalt Ore
