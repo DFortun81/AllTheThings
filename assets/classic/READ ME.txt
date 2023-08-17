@@ -1,0 +1,3 @@
+Yeah I know, I don't like it either, but for the achievement database to work it needs it for now.
+
+I have a plan to add a helper database addon for Classic/TBC so this isn't needed. Just ignore it for now.
