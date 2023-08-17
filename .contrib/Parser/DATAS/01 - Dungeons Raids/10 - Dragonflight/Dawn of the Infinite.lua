@@ -466,7 +466,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						i(208119, {	-- Quantum Firearm
 						}),
 						i(208125, {	-- Quantum Focus
-							ig(5183),	-- Pulsating hydra heart			(Removed)
+							ig(5183),	-- Pulsating Hydra Heart			(Removed)
 						}),
 						i(208113, {	-- Quantum Greataxe		(2Hand)
 							ig(39769),	-- Arcanite Ripper					(BMAH)
@@ -476,6 +476,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							ig(108046),	-- Draenic Steel War Axe			(NYI)
 							ig(189996),	-- Elegantly Balanced Axe			(NYI)(Unique)
 							ig(108228),	-- Peerless Draenic Steel War Axe	(NYI)
+							ig(108229), -- Peerless Draenic Steel War Axe	(NYI)
 							ig(115293),	-- Spectral Greataxe				(NYI)
 							ig(134577),	-- Vanguard Decapitator				(NYI)
 
@@ -483,14 +484,17 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							ig(2227),	-- Heavy Ogre War Axe 				(Removed)
 							ig(1220),	-- Lupine Axe						(Removed)
 							ig(2823),	-- Mo'grosh Can Opener 				(Removed)
+							ig(5749),	-- Scythe Axe 						(Removed)(Unique)
 							ig(756),	-- Tunnel Pick 						(Removed)
 							ig(3325),	-- Vile Fin Battle Axe				(Removed)
 							ig(23171),	-- The Axe of Severing				(Removed)
 
 							ig(9425),	-- Pendumlum of Doom				(Very Rare BoE)
 						}),
-						i(208114, {	-- Quantum Greathammer	(2Hand)
+						i(208114, {	-- Quantum Greathammer	(2Hand)(Mace)
 							ig(2254),	-- Icepane Warhammer				(Removed)
+							ig(911),	-- Ironwood Treebranch				(Removed)
+							ig(3571),	-- Trogg Beater						(Removed)
 						}),
 						i(208112, {	-- Quantum Greatsword	(2Hand)
 							-- CA IS NOT POSSIBLE -- Gold 13.07.2023
@@ -514,6 +518,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							ig(3223),	-- Frostmane Scepter				(Removed)
 						}),
 						i(208116, {	-- Quantum Polearm
+							ig(115298),	-- Spectral Polearm 				(NYI)
 						}),
 						i(208126, {	-- Quantum Shield
 							ig(134803),	-- Seasoned Redoubt 				(Removed)
@@ -524,9 +529,12 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							ig(6679),	-- Armor Piercer					(Removed)
 							ig(134721),	-- Cold-Touched Staff 				(Removed)
 							ig(1388),	-- Crooked Staff					(Removed)
+							ig(2013),	-- Cryptbone Staff 					(Removed)
+							ig(1928),	-- Defias Mage Staff 				(Removed)(Unique)
 							ig(7094),	-- Driftwood Branch					(Removed)
 							ig(1539),	-- Gnarled hermit's staff			(Removed)(Unique)
 							ig(2280),	-- Kam's Walking Stick				(Removed)
+							ig(3227),	-- Nightbane Staff 					(Removed)(Unique)
 							ig(1473),	-- Riverside Staff					(Removed)
 							ig(880),	-- Staff of Horrors 
 						}),
