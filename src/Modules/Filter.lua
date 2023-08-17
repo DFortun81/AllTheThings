@@ -650,11 +650,11 @@ end
 -- 	end
 -- end
 
-local GetTimePreciseSec = GetTimePreciseSec;
-local Perf = { Count = {}, Time = {} }
-for name,filter in pairs(api.Filters) do
-	Perf.Count[name] = 0
-	Perf.Time[name] = 0
+-- local GetTimePreciseSec = GetTimePreciseSec;
+-- local Perf = { Count = {}, Time = {} }
+-- for name,filter in pairs(api.Filters) do
+-- 	Perf.Count[name] = 0
+-- 	Perf.Time[name] = 0
 
 	-- api.Filters[name] = function(...)
 	-- 	Perf.Count[name] = Perf.Count[name] + 1
@@ -663,16 +663,16 @@ for name,filter in pairs(api.Filters) do
 	-- 	Perf.Time[name] = Perf.Time[name] + (GetTimePreciseSec() - time)
 	-- 	return f
 	-- end
-end
+-- end
 
-app.fstats = function()
-	app.print("Filter Stats")
-	print("-- Count")
-	for name,stat in pairs(Perf.Count) do
-		print(name,stat)
-	end
-	print("-- Time")
-	for name,stat in pairs(Perf.Time) do
-		print(name,stat)
-	end
-end
+-- app.fstats = function()
+-- 	app.print("Filter Stats")
+-- 	print("-- Count")
+-- 	for name,stat in pairs(Perf.Count) do
+-- 		print(name,stat)
+-- 	end
+-- 	print("-- Time")
+-- 	for name,stat in pairs(Perf.Time) do
+-- 		print(name,stat)
+-- 	end
+-- end
