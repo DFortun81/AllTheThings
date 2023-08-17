@@ -9438,7 +9438,7 @@ local fields = {
 		return _G["BATTLE_PET_NAME_" .. t.petTypeID];
 	end,
 	["icon"] = function(t)
-		return "Interface\\Icons\\Icon_PetFamily_"..PET_TYPE_SUFFIX[t.petTypeID];
+		return app.asset("Icon_PetFamily_"..PET_TYPE_SUFFIX[t.petTypeID]);
 	end,
 	["filterID"] = function(t)
 		return 101;
@@ -9476,19 +9476,19 @@ for i=1,GetNumClasses() do
 	class_id_cache[select(2, GetClassInfo(i))] = i;
 end
 local classIcons = {
-	[1] = "Interface\\Icons\\ClassIcon_Warrior",
-	[2] = "Interface\\Icons\\ClassIcon_Paladin",
-	[3] = "Interface\\Icons\\ClassIcon_Hunter",
-	[4] = "Interface\\Icons\\ClassIcon_Rogue",
-	[5] = "Interface\\Icons\\ClassIcon_Priest",
-	[6] = "Interface\\Icons\\ClassIcon_DeathKnight",
-	[7] = "Interface\\Icons\\ClassIcon_Shaman",
-	[8] = "Interface\\Icons\\ClassIcon_Mage",
-	[9] = "Interface\\Icons\\ClassIcon_Warlock",
-	[10] = "Interface\\Icons\\ClassIcon_Monk",
-	[11] = "Interface\\Icons\\ClassIcon_Druid",
-	[12] = "Interface\\Icons\\ClassIcon_DemonHunter",
-	[13] = "Interface\\Icons\\ClassIcon_Evoker",
+	[1] = app.asset("ClassIcon_Warrior"),
+	[2] = app.asset("ClassIcon_Paladin"),
+	[3] = app.asset("ClassIcon_Hunter"),
+	[4] = app.asset("ClassIcon_Rogue"),
+	[5] = app.asset("ClassIcon_Priest"),
+	[6] = app.asset("ClassIcon_DeathKnight"),
+	[7] = app.asset("ClassIcon_Shaman"),
+	[8] = app.asset("ClassIcon_Mage"),
+	[9] = app.asset("ClassIcon_Warlock"),
+	[10] = app.asset("ClassIcon_Monk"),
+	[11] = app.asset("ClassIcon_Druid"),
+	[12] = app.asset("ClassIcon_DemonHunter"),
+	[13] = app.asset("ClassIcon_Evoker"),
 };
 local GetClassIDFromClassFile = function(classFile)
 	for i,icon in pairs(classIcons) do
@@ -22031,7 +22031,6 @@ app.ProcessAuctionData = function()
 			["priority"] = 3,
 		}),
 		["speciesID"] = app.CreateFilter(101, {	-- Battle Pets
-			["icon"] = "INTERFACE/ICONS/ICON_PETFAMILY_CRITTER",
 			["description"] = L["ALL_THE_BATTLEPETS_DESC"],
 			["priority"] = 4,
 		}),
