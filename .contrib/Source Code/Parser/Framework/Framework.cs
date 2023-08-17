@@ -212,6 +212,11 @@ namespace ATT
         private static Dictionary<long, bool> CUSTOM_HEADERS_WITH_REFERENCES = new Dictionary<long, bool>();
 
         /// <summary>
+        /// All of the Flight Path IDs that have been referenced somewhere in the database.
+        /// </summary>
+        private static IDictionary<long, bool> FLIGHTPATHS_WITH_REFERENCES = new Dictionary<long, bool>();
+
+        /// <summary>
         /// All of the NPC IDs that have been referenced somewhere in the database.
         /// </summary>
         private static IDictionary<long, bool> NPCS_WITH_REFERENCES = new Dictionary<long, bool>();
@@ -420,6 +425,12 @@ namespace ATT
         /// The CustomHeaders table from main.lua that is used to generate custom headers.
         /// </summary>
         internal static Dictionary<long, object> CustomHeaders { get; private set; }
+
+        /// <summary>
+        /// All of the flight paths that have been loaded into the database.
+        /// NOTE: This is exclusively used for text localizations.
+        /// </summary>
+        internal static Dictionary<long, Dictionary<string, object>> FlightPathDB { get; private set; } = new Dictionary<long, Dictionary<string, object>>();
 
         /// <summary>
         /// All of the objects that have been loaded into the database.
@@ -807,6 +818,7 @@ namespace ATT
                     MarkCustomHeaderAsRequired(id);
                 }
             }
+            if (data.TryGetValue("flightPathID", out long flightPathID)) FLIGHTPATHS_WITH_REFERENCES[flightPathID] = true;
             if (data.TryGetValue("objectID", out creatureID)) ProcessObjectInstance(data, creatureID);
             if (data.TryGetValue("artifactID", out creatureID) && !data.ContainsKey("s") && Objects.ArtifactSources.TryGetValue(creatureID, out Dictionary<string, long> sources))
             {
@@ -3862,6 +3874,66 @@ namespace ATT
                             }
                             break;
                         }
+                    case "FlightPathDB":
+                        {
+                            // The format of the Object DB is a dictionary of Flight Path ID <-> Flight Path pairs.
+                            if (pair.Value is Dictionary<long, object> flightPathDB)
+                            {
+                                foreach (var keyValuePair in flightPathDB)
+                                {
+                                    if (keyValuePair.Value is Dictionary<string, object> data)
+                                    {
+                                        if (!FlightPathDB.TryGetValue(keyValuePair.Key, out Dictionary<string, object> flightPathData))
+                                        {
+                                            FlightPathDB[keyValuePair.Key] = flightPathData = new Dictionary<string, object>();
+                                        }
+
+                                        // Merge over the complex text data.
+                                        if (data.TryGetValue("text", out object textObject))
+                                        {
+                                            data.Remove("text");
+                                            if (textObject is Dictionary<string, object> textLocales)
+                                            {
+                                                if (flightPathData.TryGetValue("text", out textObject) && textObject is Dictionary<string, object> currentTextLocales)
+                                                {
+                                                    foreach (var textObjectPair in textLocales)
+                                                    {
+                                                        currentTextLocales[textObjectPair.Key] = textObjectPair.Value;
+                                                    }
+                                                }
+                                                else flightPathData["text"] = textLocales;
+                                            }
+                                            else
+                                            {
+                                                flightPathData["text"] = new Dictionary<string, object>
+                                                    {
+                                                        { "en", textObject }
+                                                    };
+                                            }
+                                        }
+
+                                        // Merge over simple data. (a simple replace is fine)
+                                        foreach (var dataPair in data)
+                                        {
+                                            flightPathData[dataPair.Key] = dataPair.Value;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        LogError($"FlightPathDB {keyValuePair.Key} not in the correct format!");
+                                        Console.WriteLine(CurrentFileName);
+                                        Console.ReadLine();
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                LogError("ObjectDB not in the correct format!");
+                                Console.WriteLine(CurrentFileName);
+                                Console.ReadLine();
+                            }
+                            break;
+                        }
                     case "ObjectDB":
                         {
                             // The format of the Object DB is a dictionary of Object ID <-> Object pairs.
@@ -4708,6 +4780,64 @@ namespace ATT
                             if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content, Encoding.UTF8);
                         }
 
+                        // Export the Flight Paths DB file.
+                        if (FlightPathDB.Any())
+                        {
+                            // Export the new format.
+                            var builder = new StringBuilder("-----------------------------------------------------\n--   F L I G H T   P A T H S   D A T A B A S E   M O D U L E   --\n-----------------------------------------------------\n");
+                            var keys = FlightPathDB.Keys.ToList();
+                            keys.Sort();
+                            builder.Append("local FlightPathDB = FlightPathDB; for key,value in pairs({").AppendLine();
+                            foreach (var key in keys)
+                            {
+                                Dictionary<string, object> flightPathData = FlightPathDB[key];
+                                builder.Append("\t[").Append(key).AppendLine("] = {");
+
+                                // Attempt to get the text locale data object.
+                                flightPathData.TryGetValue("text", out object textLocaleObject);
+                                Dictionary<string, object> textLocales = textLocaleObject as Dictionary<string, object>;
+
+                                // Export the complex "text" locales field.
+                                if (textLocales != null)
+                                {
+                                    // Sort and then ensure es comes after en, to match previous convention.
+                                    var localeKeys = textLocales.Keys.ToList();
+                                    localeKeys.Sort();
+                                    if (localeKeys.Contains("es"))
+                                    {
+                                        localeKeys.Remove("es");
+                                        localeKeys.Insert(0, "es");
+                                    }
+                                    if (localeKeys.Contains("en"))
+                                    {
+                                        localeKeys.Remove("en");
+                                        localeKeys.Insert(0, "en");
+                                    }
+                                    if (localeKeys.Contains("ko"))
+                                    {
+                                        localeKeys.Remove("ko");
+                                        localeKeys.Add("ko");
+                                    }
+                                    if (localeKeys.Contains("cn"))
+                                    {
+                                        localeKeys.Remove("cn");
+                                        localeKeys.Add("cn");
+                                    }
+
+                                    builder.AppendLine("\t\ttext = {");
+                                    foreach (var localeKey in localeKeys)
+                                    {
+                                        builder.Append("\t\t\t").Append(localeKey).Append(" = ");
+                                        ExportStringValue(builder, textLocales[localeKey].ToString()).AppendLine(",");
+                                    }
+                                    builder.AppendLine("\t\t},");
+                                }
+                                builder.AppendLine("\t},");
+                            }
+                            builder.AppendLine("})").AppendLine("do FlightPathDB[key] = value; end");
+                            File.WriteAllText(Path.Combine(debugFolder.FullName, "FlightPathDB.lua"), builder.ToString(), Encoding.UTF8);
+                        }
+
                         // Export the Object DB file.
                         if (ObjectDB.Any())
                         {
@@ -5142,6 +5272,123 @@ namespace ATT
 
                     // Check to make sure the content is different since Diff tools are dumb as hell.
                     var filename = Path.Combine(addonRootFolder, $"db/{dbRootFolder}Custom Headers.lua");
+                    var content = builder.ToString().Replace("\r\n", "\n").Trim();
+                    if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content, Encoding.UTF8);
+                }
+
+                // Export the Flight Paths DB file.
+                if (FLIGHTPATHS_WITH_REFERENCES.Any())
+                {
+                    CurrentParseStage = ParseStage.ExportFlightPathDB;
+                    var builder = new StringBuilder("-------------------------------------------------------\n--   F L I G H T   P A T H S   D A T A B A S E   M O D U L E   --\n-------------------------------------------------------\n")
+                        .AppendLine("local appName, _ = ...;")
+                        .AppendLine("local simplifiedLocale = string.sub(GetLocale(),1,2);").AppendLine();
+
+                    var localizationForText = new Dictionary<string, Dictionary<long, string>>();
+
+                    // Include Only Referenced Flight Paths!
+                    var keys = FLIGHTPATHS_WITH_REFERENCES.Keys.ToList();
+                    keys.Sort();
+                    foreach (var key in keys)
+                    {
+                        // Check to see if FlightPathDB has any information on our flight path.
+                        if (!FlightPathDB.TryGetValue(key, out Dictionary<string, object> flightPathData))
+                        {
+                            // If not, report that it is missing.
+                            Console.Write("Missing Flight Path data for #");
+                            Console.WriteLine(key);
+                            continue;
+                        }
+                        if (flightPathData.TryGetValue("text", out object value))
+                        {
+                            if (!(value is IDictionary<string, object> localeData))
+                            {
+                                localeData = new Dictionary<string, object>
+                                {
+                                    ["en"] = value
+                                };
+                            }
+                            if (localeData.TryGetValue("en", out string englishValue))
+                            {
+                                if (!localizationForText.TryGetValue("en", out Dictionary<long, string> sublocale))
+                                {
+                                    localizationForText["en"] = sublocale = new Dictionary<long, string>();
+                                }
+                                sublocale[key] = englishValue;
+
+                                foreach (var locale in localeData)
+                                {
+                                    if (locale.Key == "en") continue;
+
+                                    string localizedValue = locale.Value.ToString();
+                                    if (!localizedValue.Contains(englishValue))
+                                    {
+                                        if (!localizationForText.TryGetValue(locale.Key, out sublocale))
+                                        {
+                                            localizationForText[locale.Key] = sublocale = new Dictionary<long, string>();
+                                        }
+                                        sublocale[key] = localizedValue;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    // Convert all "cn" into "zh" dictionaries, it makes the comparison later easier.
+                    if (localizationForText.TryGetValue("cn", out Dictionary<long, string> data))
+                    {
+                        localizationForText.Remove("cn");
+                        if (!localizationForText.TryGetValue("zh", out Dictionary<long, string> zh))
+                        {
+                            localizationForText["zh"] = data;
+                        }
+                        else
+                        {
+                            foreach (var pair in data)
+                            {
+                                zh[pair.Key] = pair.Value;
+                            }
+                        }
+                    }
+
+                    // Get all of the english translations and always write them to the file.
+                    if (localizationForText.TryGetValue("en", out data))
+                    {
+                        localizationForText.Remove("en");
+                        builder.AppendLine("_.FlightPathNames = {");
+                        foreach (var key in keys)
+                        {
+                            if (data.TryGetValue(key, out string name))
+                            {
+                                ExportStringKeyValue(builder, key, name).AppendLine();
+                            }
+                        }
+                        builder.AppendLine("}").AppendLine();
+                    }
+
+                    // Now grab the non-english localizations and conditionally write them to the file.
+                    var localeKeys = localizationForText.Keys.ToList();
+                    localeKeys.Sort();
+                    foreach (var localeKey in localeKeys)
+                    {
+                        if (localizationForText.TryGetValue(localeKey, out data) && data.Any())
+                        {
+                            builder.Append("if simplifiedLocale == \"").Append(localeKey).AppendLine("\" then");
+                            builder.AppendLine("local a = _.FlightPathNames;").AppendLine("for key,value in pairs({");
+                            foreach (var key in keys)
+                            {
+                                if (data.TryGetValue(key, out string name))
+                                {
+                                    ExportStringKeyValue(builder, key, name).AppendLine();
+                                }
+                            }
+                            builder.AppendLine("}) do a[key] = value; end");
+                            builder.AppendLine("end").AppendLine();
+                        }
+                    }
+
+                    // Check to make sure the content is different since Diff tools are dumb as hell.
+                    var filename = Path.Combine(addonRootFolder, $"db/{dbRootFolder}FlightPathDB.lua");
                     var content = builder.ToString().Replace("\r\n", "\n").Trim();
                     if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content, Encoding.UTF8);
                 }
