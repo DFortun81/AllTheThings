@@ -35,8 +35,9 @@ if not _G["AllTheThings"] then
 end
 
 -- Debugging
---app.Debugging = true;
---app.DEBUG_PRINT = true;	-- TODO: Deprecate this variable and use the other one.
+-- app.Debugging = true;
+-- app.DebuggingEvents = true;	-- Do not force debug prints to be linked to all the Event spam
+-- app.DEBUG_PRINT = true;	-- TODO: Deprecate this variable and use the other one.
 
 -- Consolidated debug-only print with preceding precise timestamp
 local GetTimePreciseSec = GetTimePreciseSec;
@@ -186,7 +187,7 @@ app.Race = race;
 local events = {};
 local frame = CreateFrame("FRAME", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate");
 frame.Suffix = "ATTFRAME";
-if app.Debugging then
+if app.DebuggingEvents then
 frame:SetScript("OnEvent", function(self, e, ...)
 	app.PrintDebug(e,...);
 	(events[e] or print)(...);
