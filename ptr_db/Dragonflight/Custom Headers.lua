@@ -417,7 +417,7 @@ for key,value in pairs({
 	[-1000279] = _.asset("Holiday_Tshirt"),
 	[-1000280] = _.asset("Holiday_hallows_end"),
 	[-1000281] = _.asset("Holiday_Harvestfest"),
-	[-1000282] = "Interface/Icons/misc_arrowrightcalendar_kalimdorcupstart",
+	[-1000282] = _.asset("Holiday_KalCup"),
 	[-1000283] = "Interface/Icons/inv_fishingpole_03",
 	[-1000284] = _.asset("Holiday_love"),
 	[-1000285] = _.asset("Holiday_Lunar"),

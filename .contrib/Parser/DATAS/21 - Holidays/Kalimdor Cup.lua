@@ -679,7 +679,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubb
 			},
 		}),
 	}),
-	n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+	n(QUESTS, bubbleDown({ ["timeline"] = { CREATED_10_1_7 } }, {
 		dragonridingrace(76061, {	-- Ahn'Qiraj Circuit - Challenge
 			["provider"] = { "n", 204092 },	-- Bronze Timekeeper
 			["coord"] = { 39.6, 84.2, SILITHUS },
