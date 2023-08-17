@@ -18976,6 +18976,8 @@ customWindowUpdates["ItemFilter"] = function(self, force)
 								local text = string_lower(input);
 								local f = tonumber(text);
 								if text ~= "" and tostring(f) ~= text then
+									text = string.gsub(text, "-", "%%-");
+									app.PrintDebug("search match",text)
 									-- The string form did not match, the filter must have been by name.
 									for id,filter in pairs(L["FILTER_ID_TYPES"]) do
 										if string.match(string_lower(filter), text) then
