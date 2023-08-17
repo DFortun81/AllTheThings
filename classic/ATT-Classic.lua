@@ -14171,56 +14171,6 @@ app.events.ADDON_LOADED = function(addonName)
 	
 	-- Tooltip Settings
 	app.Settings:Initialize();
-	
-	if GroupBulletinBoard_Addon then
-		local oldGroupBulletinBoard_Addon_ClickDungeon = GroupBulletinBoard_Addon.ClickDungeon;
-		GroupBulletinBoard_Addon.ClickDungeon = function(self,button,...)
-			if button == "RightButton" and self.attRef and IsShiftKeyDown() then
-				app:CreateMiniListForGroup(self.attRef);
-				return;
-			end
-			oldGroupBulletinBoard_Addon_ClickDungeon(self, button, ...);
-		end
-		local oldGroupBulletinBoard_Addon_UpdateList = GroupBulletinBoard_Addon.UpdateList;
-		GroupBulletinBoard_Addon.UpdateList = function(...) 
-			oldGroupBulletinBoard_Addon_UpdateList(...);
-			if not GroupBulletinBoardFrame:IsVisible() or not app.Settings:GetTooltipSetting("Integrate:LFGBulletinBoard") then
-				return;
-			end
-			for key,f in pairs(GroupBulletinBoard_Addon.FramesEntries) do
-				if f:IsVisible() and type(key) == "string" then
-					local frameName = f:GetName();
-					if frameName then
-						local nameFrame = _G[frameName .. "_name"];
-						if nameFrame then
-							if not f.attRef then
-								local instanceID = L.INSTANCE_ACRONYM_TO_INSTANCE_ID[key];
-								if instanceID then
-									local searchResults = app.SearchForField(type(instanceID) == "number" and "instanceID" or "mapID", tonumber(instanceID));
-									if searchResults and #searchResults > 0 then
-										f.attRef = searchResults[1];
-										local progressText = GetProgressTextForTooltip(f.attRef);
-										if progressText then
-											local attString = "|T" .. app.asset("logo_32x32") .. ":0|t " .. progressText;
-											nameFrame:SetText(attString .. "  " .. (nameFrame:GetText() or RETRIEVING_DATA));
-										end
-									end
-								else
-									--print("Unknown Acronym for ", key);
-								end
-							else
-								local progressText = GetProgressTextForTooltip(f.attRef);
-								if progressText then
-									local attString = "|T" .. app.asset("logo_32x32") .. ":0|t " .. progressText;
-									nameFrame:SetText(attString .. "  " .. (nameFrame:GetText() or RETRIEVING_DATA));
-								end
-							end
-						end
-					end
-				end
-			end
-		end
-	end
 end
 app.events.VARIABLES_LOADED = function()
 	app:StartATTCoroutine("Startup", function()

@@ -2634,24 +2634,6 @@ end);
 OpenProfessionListAutomatically:SetATTTooltip("Enable this option if you want ATT to open and refresh the profession list when you open your professions. Due to an API limitation imposed by Blizzard, the only time an addon can interact with your profession data is when it is open. The list will automatically switch when you change to a different profession.\n\nWe don't recommend disabling this option as it may prevent recipes from tracking correctly.\n\nYou can also bind this setting to a Key. (only works when a profession is open)\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Profession Mini List\n\nShortcut Command: /attskills");
 OpenProfessionListAutomatically:SetPoint("TOPLEFT", OpenAuctionListAutomatically, "BOTTOMLEFT", 0, 4);
 
-local IntegrationsLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-IntegrationsLabel:SetPoint("TOP", OpenProfessionListAutomatically, "BOTTOM", 0, -8);
-IntegrationsLabel:SetPoint("LEFT", CelebrationsLabel, "LEFT", 0, 0);
-IntegrationsLabel:SetJustifyH("LEFT");
-IntegrationsLabel:SetText("Integrations");
-IntegrationsLabel:Show();
-tinsert(settings.MostRecentTab.objects, IntegrationsLabel);
-
-local IntegrateWithLFGBulletinBoard = settings:CreateCheckBox("Integrate With LFG Bulletin Board",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Integrate:LFGBulletinBoard"));
-end,
-function(self)
-	settings:SetTooltipSetting("Integrate:LFGBulletinBoard", self:GetChecked());
-end);
-IntegrateWithLFGBulletinBoard:SetATTTooltip("Enable this option if you want ATT to inject completion data on to the headers of LFG Bulletin Board if it is installed. In addition, holding Shift while Right Clicking the instance header will open the instance in an ATT mini list.\n\nDefault: On");
-IntegrateWithLFGBulletinBoard:SetPoint("TOPLEFT", IntegrationsLabel, "BOTTOMLEFT", 4, 0);
-
 local temporaryText = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 temporaryText:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
 temporaryText:SetPoint("TOPRIGHT", line, "BOTTOMLEFT", 300, -8);
