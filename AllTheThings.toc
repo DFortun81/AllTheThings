@@ -13,6 +13,8 @@
 lib\LibStub\LibStub.lua
 lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
 lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
+db\Presets.lua
+db\RaceDB.lua
 src\base.lua
 lib\Callback.lua
 lib\Colors.lua
@@ -30,8 +32,6 @@ src\Modules\Events.lua
 src\Modules\Filter.lua
 src\Modules\Tooltip.lua
 src\Modules\Upgrade.lua
-db\Presets.lua
-db\RaceDB.lua
 db\Dragonflight\en_auto.lua
 db\Dragonflight\ExplorationDB.lua
 db\Dragonflight\CategoryDB.lua

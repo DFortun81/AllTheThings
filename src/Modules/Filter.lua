@@ -17,9 +17,10 @@ local ipairs, select, pairs, type, GetFactionInfoByID, rawget, wipe
 -- App locals
 local containsAny = app.containsAny;
 local ALLIANCE_ONLY, HORDE_ONLY = unpack(app.Modules.FactionData.FACTION_RACES);
+local GetRelativeValue = app.GetRelativeValue;
 
 -- Module locals
-local GetRelativeValue, SearchForSourceIDQuickly, ATTAccountWideData, ActiveCustomCollects, FactionID, CollectibleHeirlooms, SettingsUnobtainable;
+local SearchForSourceIDQuickly, ATTAccountWideData, ActiveCustomCollects, FactionID, CollectibleHeirlooms, SettingsUnobtainable;
 local SettingsFilterIDs = {};
 
 -- Filter API Implementation
@@ -624,7 +625,6 @@ local function CacheSettingsData()
 end
 
 api.OnLoad = function()
-	GetRelativeValue = app.GetRelativeValue
 	SearchForSourceIDQuickly = app.SearchForSourceIDQuickly
 	FactionID = app.FactionID;
 

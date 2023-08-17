@@ -4,30 +4,58 @@
 --            Copyright 2017-2023 Dylan Fortune (Crieve-Sargeras)             --
 --------------------------------------------------------------------------------
 -- This is a hidden frame that intercepts all of the event notifications that we have registered for.
-local name, app = ...;
-local assetRootPath = "Interface\\Addons\\" .. name .. "\\assets\\";
--- app.DEBUG_PRINT = true;
-function app:GetName() return name; end
-_G["AllTheThings"] = app;
+local appName, app = ...;
+app.EmptyTable = {};
+
+-- Generate the version identifier.
+app.Version = GetAddOnMetadata(appName, "Version");
+if string.match(app.Version, "version") then
+	app.Version = "[Git]";
+else
+	app.Version = "v" .. app.Version;
+end
+
+-- ReloadUI slash command (for ease of use)
+SLASH_RELOADUI1 = "/reloadui";
+SLASH_RELOADUI2 = "/rl";
+SlashCmdList["RELOADUI"] = ReloadUI;
+
+local assetRootPath = "Interface\\Addons\\" .. appName .. "\\assets\\";
 app.asset = function(path)
 	return assetRootPath .. path;
 end
+
+-- External API
+-- TODO: We will use a common API eventually.
+if not _G["ATTC"] then
+	_G["ATTC"] = app;
+end
+if not _G["AllTheThings"] then
+	_G["AllTheThings"] = app;
+end
+
+-- Debugging
+--app.Debugging = true;
+--app.DEBUG_PRINT = true;	-- TODO: Deprecate this variable and use the other one.
+
 -- Consolidated debug-only print with preceding precise timestamp
+local GetTimePreciseSec = GetTimePreciseSec;
+local DEBUG_PRINT_LAST;
 app.PrintDebug = function(...)
-	app.DEBUG_PRINT_LAST = GetTimePreciseSec();
-	if app.DEBUG_PRINT then print(GetTimePreciseSec(),...) end
+	DEBUG_PRINT_LAST = GetTimePreciseSec();
+	if app.DEBUG_PRINT then print(DEBUG_PRINT_LAST,...) end
 end
 -- Consolidated debug-only print with precise frame duration since last successful print
 app.PrintDebugPrior = function(...)
 	if app.DEBUG_PRINT then
-		if app.DEBUG_PRINT_LAST then
-			local diff = GetTimePreciseSec() - app.DEBUG_PRINT_LAST
-			local frames = math.ceil(1 / diff);
-			print(GetTimePreciseSec(),"<>",diff,"Stutter @",frames,...)
+		local now = GetTimePreciseSec();
+		if DEBUG_PRINT_LAST then
+			local diff = now - DEBUG_PRINT_LAST;
+			print(now,"<>",diff,"Stutter @", math.ceil(1 / diff), ...)
 		else
-			print(GetTimePreciseSec(),0,...)
+			print(now,0,...)
 		end
-		app.DEBUG_PRINT_LAST = GetTimePreciseSec();
+		DEBUG_PRINT_LAST = GetTimePreciseSec();
 	end
 end
 --[[ Performance Tracking ]
@@ -65,41 +93,185 @@ app.ClearPerf = function()
 end
 end	-- Performance Tracking --]]
 
+
+-- API Functions
+local function AssignFieldValue(group, field, value)
+	if group then
+		group[field] = value;
+		if group.g then
+			for i,o in ipairs(group.g) do
+				AssignFieldValue(o, field, value)
+			end
+		end
+	end
+end
+local function CloneArray(arr)
+	local clone = {};
+	for i,value in ipairs(arr) do
+		tinsert(clone, value);
+	end
+	return clone;
+end
+local function CloneDictionary(data)
+	local clone = {};
+	for key,value in pairs(data) do
+		clone[key] = value;
+	end
+	return clone;
+end
+local function CloneReference(group)
+	local clone = {};
+	if group.g then
+		local g = {};
+		for i,group in ipairs(group.g) do
+			local child = CloneReference(group);
+			child.parent = clone;
+			tinsert(g, child);
+		end
+		clone.g = g;
+	end
+	return setmetatable(clone, { __index = group });
+end
+local function GetRelativeValue(group, field)
+	if group then
+		return group[field] or GetRelativeValue(group.sourceParent or group.parent, field);
+	end
+end
+app.AssignFieldValue = AssignFieldValue;
+app.CloneArray = CloneArray;
+app.CloneDictionary = CloneDictionary;
+app.CloneReference = CloneReference;
+app.GetRelativeValue = GetRelativeValue;
+
+-- Declare Event Handlers
+app.EventHandlers = {
+	OnRecalculate = {}
+};
+
+-- Cache information about the player.
+app.Gender = UnitSex("player");
+app.GUID = UnitGUID("player");
+app.Level = UnitLevel("player");
+
+-- Determine the player's faction.
+local factionGroup = UnitFactionGroup("player");
+app.Faction = factionGroup;
+if factionGroup == "Horde" then
+	app.FactionID = Enum.FlightPathFaction.Horde;
+elseif factionGroup == "Alliance" then
+	app.FactionID = Enum.FlightPathFaction.Alliance;
+else
+	-- Neutral Pandaren or... something else. Scourge? Neat.
+	app.FactionID = 0;
+end
+
+-- Determine the player's name and class information.
+local name, realm = UnitName("player");
+if not realm then realm = GetRealmName(); end
+local className, classFile, classID = UnitClass("player");
+local classColorPrefix = "|c".. (RAID_CLASS_COLORS[classFile].colorStr or "ff1eff00");
+app.Me = classColorPrefix .. name .. "-" .. realm .. "|r";
+app.ClassName = classColorPrefix..className.."|r";
+app.ClassIndex = classID;
+app.Class = classFile;
+
+-- Determine the player's race information.
+local raceName, race, raceID = UnitRace("player");
+local raceIndex = app.RaceDB[race] or raceID;
+app.RaceIndex = type(raceIndex) == "table" and raceIndex[factionGroup] or raceIndex;
+app.RaceID = raceID;
+app.Race = race;
+
 -- Create an Event Processor.
 local events = {};
-local _ = CreateFrame("FRAME", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate");
-_:SetScript("OnEvent", function(self, e, ...)
--- app.PrintDebug(e,...);
-(events[e] or print)(...);
--- app.PrintDebugPrior(e);
+local frame = CreateFrame("FRAME", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate");
+frame.Suffix = "ATTFRAME";
+if app.Debugging then
+frame:SetScript("OnEvent", function(self, e, ...)
+	app.PrintDebug(e,...);
+	(events[e] or print)(...);
+	app.PrintDebugPrior(e);
 end);
-_:SetPoint("BOTTOMLEFT", UIParent, "TOPLEFT", 0, 0);
-_:SetSize(1, 1);
-_:Show();
-app._ = _;
+else
+frame:SetScript("OnEvent", function(self, e, ...) (events[e] or print)(...); end);
+end
+frame:SetPoint("BOTTOMLEFT", UIParent, "TOPLEFT", 0, 0);
+frame:SetSize(1, 1);
+frame:Show();
+app.frame = frame;
 app.events = events;
 app.RegisterEvent = function(self, ...)
-	_:RegisterEvent(...);
+	frame:RegisterEvent(...);
 end
 app.UnregisterEvent = function(self, ...)
-	_:UnregisterEvent(...);
+	frame:UnregisterEvent(...);
 end
 app.SetScript = function(self, ...)
 	local scriptName, method = ...;
 	if method then
-		_:SetScript(scriptName, function(...)
+		frame:SetScript(scriptName, function(...)
 			method(app, ...);
 		end);
 	else
-		_:SetScript(scriptName, nil);
+		frame:SetScript(scriptName, nil);
 	end
 end
 
 (function()
+-- Extend the Frame Class and give them ATT-Style Coroutines and Tooltips!
+local coroutineStack = {};
+local function OnCoroutineUpdate()
+	for i=#coroutineStack,1,-1 do
+		if not coroutineStack[i][3]() then
+			table.remove(coroutineStack, i);
+			if #coroutineStack < 1 then
+				frame:SetScript("OnUpdate", nil);
+				--print("Coroutines Finished.");
+			end
+		--else
+			--print(coroutineStack[i][1], coroutineStack[i][2]);
+		end
+	end
+end
+local function Push(self, name, method)
+	if #coroutineStack < 1 then
+		frame:SetScript("OnUpdate", OnCoroutineUpdate);
+	end
+	local owner = self.Suffix or (self.GetName and self:GetName()) or self.text;
+	--print(owner, "Push ->", name);
+	table.insert(coroutineStack, { owner, name, method });
+end
+local function StartATTCoroutine(self, name, method)
+	if method then
+		local refreshing = self.__attActiveCoroutines;
+		if not refreshing then
+			refreshing = {};
+			self.__attActiveCoroutines = refreshing;
+		end
+		if not refreshing[name] then
+			refreshing[name] = true;
+			local co = coroutine.create(method);
+			Push(self, name, function()
+				-- Check the status of the coroutine
+				if co and coroutine.status(co) ~= "dead" then
+					local ok, err = coroutine.resume(co, self);
+					if ok then return true;	-- This means more work is required.
+					else
+						-- Show the error. Returning nothing is the same as canceling the work.
+						print(debugstack(co));
+						error(err,2);
+					end
+				end
+				refreshing[name] = nil;
+			end);
+		end
+	end
+end
 local SetATTTooltip = function(self, text)
 	self:SetScript("OnEnter", function(self)
 		GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
 		GameTooltip:SetText(text, nil, nil, nil, nil, true);
+		if self.OnTooltip then self:OnTooltip(); end
 		GameTooltip:Show();
 	end);
 	self:SetScript("OnLeave", function(self)
@@ -108,39 +280,41 @@ local SetATTTooltip = function(self, text)
 		end
 	end);
 end
-local button = CreateFrame("BUTTON", nil, _);
-button:Hide();
-local editbox = CreateFrame("EDITBOX", nil, _);
-editbox:Hide();
-local checkbutton = CreateFrame("CHECKBUTTON", nil, _);
-checkbutton:Hide();
-local texture = _:CreateTexture(nil, "ARTWORK");
-texture:Hide();
-local frameClass = getmetatable(_).__index;
-local buttonClass = getmetatable(button).__index;
-local editboxClass = getmetatable(editbox).__index;
-local checkbuttonClass = getmetatable(checkbutton).__index;
-local textureClass = getmetatable(texture).__index;
-buttonClass.SetATTTooltip = SetATTTooltip;
-checkbuttonClass.SetATTTooltip = SetATTTooltip;
+
+local frameClass = getmetatable(frame).__index;
 frameClass.SetATTTooltip = SetATTTooltip;
-editboxClass.SetATTTooltip = SetATTTooltip;
-textureClass.SetATTSprite = function(self, name, x, y, w, h, sourceW, sourceH)
-	self:SetTexture(app.asset("content"));
-	self:SetTexCoord(x / sourceW, (x + w) / sourceW, y / sourceH, (y + h) / sourceH);
+frameClass.StartATTCoroutine = StartATTCoroutine;
+app.StartATTCoroutine = function(self, ...)
+	StartATTCoroutine(frame, ...);
 end
+
+local button = CreateFrame("BUTTON", nil, frame);
+local buttonClass = getmetatable(button).__index;
+buttonClass.StartATTCoroutine = StartATTCoroutine;
+buttonClass.SetATTTooltip = SetATTTooltip;
 buttonClass.SetATTHighlightSprite = function(self, name, x, y, w, h, sourceW, sourceH)
 	self:SetHighlightTexture(app.asset("content"));
 	local hl = self:GetHighlightTexture();
 	hl:SetATTSprite(name, x, y, w, h, sourceW, sourceH);
 	return hl;
 end
-end)();
+button:Hide();
 
--- ReloadUI slash command (for ease of use)
-SLASH_RELOADUI1 = "/reloadui";
-SLASH_RELOADUI2 = "/rl";
-SlashCmdList["RELOADUI"] = ReloadUI;
+local checkbutton = CreateFrame("CHECKBUTTON", nil, frame);
+getmetatable(checkbutton).__index.SetATTTooltip = SetATTTooltip;
+checkbutton:Hide();
+
+local editbox = CreateFrame("EDITBOX", nil, frame);
+getmetatable(editbox).__index.SetATTTooltip = SetATTTooltip;
+editbox:Hide();
+
+local texture = frame:CreateTexture(nil, "ARTWORK");
+getmetatable(texture).__index.SetATTSprite = function(self, name, x, y, w, h, sourceW, sourceH)
+	self:SetTexture(app.asset("content"));
+	self:SetTexCoord(x / sourceW, (x + w) / sourceW, y / sourceH, (y + h) / sourceH);
+end
+texture:Hide();
+end)();
 
 function app:ShowPopupDialog(msg, callback)
 	local popup = StaticPopupDialogs["ALL_THE_THINGS"];
@@ -186,9 +360,11 @@ function app:ShowPopupDialogWithEditBox(msg, text, callback, timeout)
 		self.editBox:SetText(text);
 		self.editBox:SetJustifyH("CENTER");
 		self.editBox:SetWidth(240);
-		self.editBox:HighlightText();
+		if self.editBox.HighlightText then
+			self.editBox:HighlightText();
+		end
 	end;
-	popup.text = (msg or "");
+	popup.text = msg or "";
 	popup.callback = callback;
 	StaticPopup_Hide ("ALL_THE_THINGS_EDITBOX");
 	StaticPopup_Show ("ALL_THE_THINGS_EDITBOX");
@@ -213,20 +389,25 @@ function app:ShowPopupDialogWithMultiLineEditBox(text, onclick, label)
 			end
 		end)
 		f:SetScript("OnMouseUp", f.StopMovingOrSizing)
-
-		-- Label
-		local l = f:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-		l:SetPoint("TOP", f, "TOP", 0, -3);
-		l:SetJustifyH("CENTER");
-		f.Label = l;
-
+		
 		-- ScrollFrame
 		local sf = CreateFrame("ScrollFrame", "ATTEditBoxScrollFrame", ATTEditBox, "UIPanelScrollFrameTemplate")
 		sf:SetPoint("LEFT", 16, 0)
 		sf:SetPoint("RIGHT", -32, 0)
-		sf:SetPoint("TOP", l, "BOTTOM", 0, -5)
 		sf:SetPoint("BOTTOM", ATTEditBoxButton, "TOP", 0, 0)
-
+		
+		-- Label (conditionally create)
+		if label then
+			local l = f:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+			l:SetPoint("TOP", f, "TOP", 0, -3);
+			l:SetJustifyH("CENTER");
+			l:SetText(label or "");
+			f.Label = l;
+			sf:SetPoint("TOP", l, "BOTTOM", 0, -5)
+		else
+			sf:SetPoint("TOP", 0, -16);
+		end
+		
 		-- EditBox
 		local eb = CreateFrame("EditBox", "ATTEditBoxEditBox", ATTEditBoxScrollFrame)
 		eb:SetSize(sf:GetSize())
@@ -241,19 +422,23 @@ function app:ShowPopupDialogWithMultiLineEditBox(text, onclick, label)
 			self:GetParent():Hide();
 		end);
 		sf:SetScrollChild(eb)
-
+		
 		-- Resizable
 		f:SetResizable(true)
-		f:SetResizeBounds(150, 100, 600, 600)
-
+		if f.SetResizeBounds then
+			f:SetResizeBounds(150, 100, 600, 600);
+		else
+			f:SetMinResize(150, 100);
+		end
+		
 		local rb = CreateFrame("Button", "ATTEditBoxResizeButton", ATTEditBox)
 		rb:SetPoint("BOTTOMRIGHT", -6, 7)
 		rb:SetSize(16, 16)
-
+		
 		rb:SetNormalTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Up")
 		rb:SetHighlightTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Highlight")
 		rb:SetPushedTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Down")
-
+		
 		rb:SetScript("OnMouseDown", function(self, button)
 			if button == "LeftButton" then
 				f:StartSizing("BOTTOMRIGHT")
@@ -273,7 +458,6 @@ function app:ShowPopupDialogWithMultiLineEditBox(text, onclick, label)
 		ATTEditBoxEditBox:HighlightText();
 		ATTEditBoxEditBox:SetFocus();
 	end
-	ATTEditBox.Label:SetText(label or "");
 	ATTEditBox:Show()
 end
 function app:ShowPopupDialogToReport(reportReason, text)

@@ -3,8 +3,10 @@
 --------------------------------------------------------------------------------
 --				Copyright 2017-2023 Dylan Fortune (Crieve-Sargeras)           --
 --------------------------------------------------------------------------------
+-- App locals
 local appName, app = ...;
 local L = app.L;
+local GetRelativeValue = app.GetRelativeValue;
 
 -- Binding Localizations
 BINDING_HEADER_ALLTHETHINGS = L["TITLE"]
@@ -152,7 +154,6 @@ end
 --]]
 
 -- Coroutine Helper Functions
-app.EmptyTable = {};
 app.EmptyFunction = function() end;
 app.ReturnTrue = function() return true; end
 app.ReturnFalse = function() return false; end
@@ -1461,16 +1462,7 @@ local function RawCloneData(data, clone)
 	clone.__index = nil;
 	return clone;
 end
-local function AssignFieldValue(group, field, value)
-	if group then
-		group[field] = value;
-		if group.g then
-			for i,o in ipairs(group.g) do
-				AssignFieldValue(o, field, value)
-			end
-		end
-	end
-end
+
 (function()
 local GetSlotForInventoryType = C_Transmog.GetSlotForInventoryType;
 app.SlotByInventoryType = setmetatable({}, {
@@ -1695,12 +1687,7 @@ local function GetRelativeField(group, field, value)
 		return group[field] == value or GetRelativeField(group.sourceParent or group.parent, field, value);
 	end
 end
-local function GetRelativeValue(group, field)
-	if group then
-		return group[field] or GetRelativeValue(group.sourceParent or group.parent, field);
-	end
-end
-app.GetRelativeValue = GetRelativeValue;
+
 local function GetDeepestRelativeValue(group, field)
 	if group then
 		return GetDeepestRelativeValue(group.sourceParent or group.parent, field) or group[field];
@@ -5914,20 +5901,20 @@ if app.Version == "[Git]" then
 			referenceCounter[npcID] = (referenceCounter[npcID] or 0) + 1;
 		end
 	end
-	cacheHeaderID = function(group, value)
-		if not group.type and not L["HEADER_NAMES"][value] then
-			print("Header Missing Name ", value);
-			L["HEADER_NAMES"][value] = "Header #" .. value;
+	cacheHeaderID = function(group, headerID)
+		if not group.type and not L["HEADER_NAMES"][headerID] then
+			print("Header Missing Name ", headerID);
+			L["HEADER_NAMES"][headerID] = "Header #" .. headerID;
 		end
-		referenceCounter[value] = (referenceCounter[value] or 0) + 1;
-		CacheField(group, "headerID", value);
+		referenceCounter[headerID] = (referenceCounter[headerID] or 0) + 1;
+		CacheField(group, "headerID", headerID);
 	end
-	cacheObjectID = function(group, value)
+	cacheObjectID = function(group, objectID)
 		if not app.ObjectNames[objectID] then
 			print("Object Missing Name ", objectID);
 			app.ObjectNames[objectID] = "Object #" .. objectID;
 		end
-		CacheField(group, "objectID", value);
+		CacheField(group, "objectID", objectID);
 	end
 end
 
@@ -14248,7 +14235,7 @@ end
 local function CreateMinimapButton()
 	-- Create the Button for the Minimap frame. Create a local and non-local copy.
 	local size = app.Settings:GetTooltipSetting("MinimapSize");
-	local button = CreateFrame("BUTTON", app:GetName() .. "-Minimap", Minimap);
+	local button = CreateFrame("BUTTON", appName .. "-Minimap", Minimap);
 	button:SetPoint("CENTER", 0, 0);
 	button:SetFrameStrata("HIGH");
 	button:SetMovable(true);
@@ -16660,7 +16647,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 	if not window then
 		-- Create the window instance.
 		-- app.PrintDebug("GetWindow",suffix)
-		window = CreateFrame("FRAME", app:GetName() .. "-Window-" .. suffix, parent or UIParent, BackdropTemplateMixin and "BackdropTemplate");
+		window = CreateFrame("FRAME", appName .. "-Window-" .. suffix, parent or UIParent, BackdropTemplateMixin and "BackdropTemplate");
 		app.Windows[suffix] = window;
 		window.Suffix = suffix;
 		window.Toggle = Toggle;
@@ -17533,7 +17520,7 @@ function app:GetDataCache()
 		db._nyi = true;
 		tinsert(g, db);
 		CacheFields(db);
-		AssignFieldValue(db, "u", 1);
+		app.AssignFieldValue(db, "u", 1);
 	end
 
 	-- Hidden Achievement Triggers
@@ -22274,29 +22261,6 @@ app.Startup = function()
 	L = setmetatable(app.L, { __index = AllTheThingsAD.UserLocale });
 	app.L = L;
 	app.CategoryNames = nil;
-
-	-- Cache information about the player.
-	local class, classID = UnitClassBase("player");
-	local raceName, race, raceID = UnitRace("player");
-	app.Class = class;
-	app.ClassIndex = classID;
-	app.Level = UnitLevel("player");
-	local raceIndex = app.RaceDB[race] or raceID;
-	if type(raceIndex) == "table" then
-		local factionGroup = UnitFactionGroup("player");
-		raceIndex = raceIndex[factionGroup];
-	end
-	app.Race = race;
-	app.RaceID = raceID;
-	app.RaceIndex = raceIndex;
-	-- 1 = unknown, 2 = male, 3 = female
-	app.Gender = UnitSex("player");
-	local name, realm = UnitName("player");
-	realm = realm or GetRealmName();
-	local className = GetClassInfo(classID);
-	app.GUID = UnitGUID("player");
-	app.Me = "|c"..RAID_CLASS_COLORS[class].colorStr..name.."-"..realm.."|r";
-	app.ClassName = "|c"..RAID_CLASS_COLORS[class].colorStr..className.."|r";
 	app.ActiveCustomCollects = {};
 
 	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {

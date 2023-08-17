@@ -8,7 +8,7 @@ local L = app.L
 local Colorize = app.Modules.Color.Colorize
 
 -- The Settings Frame
-local settings = CreateFrame("FRAME", app:GetName() .. "-Settings", InterfaceOptionsFramePanelContainer or UIParent, BackdropTemplateMixin and "BackdropTemplate")
+local settings = CreateFrame("FRAME", appName .. "-Settings", InterfaceOptionsFramePanelContainer or UIParent, BackdropTemplateMixin and "BackdropTemplate")
 app.Settings = settings
 settings.AccountWide = {
 	Achievements = true,
@@ -41,7 +41,7 @@ settings.Collectibles = {
 	Titles = true,
 	Toys = true,
 };
-settings.name = app:GetName()
+settings.name = appName;
 settings.Objects = {}
 settings.Callback = app.CallbackHandlers.Callback
 do	-- Add the ATT Settings frame into the WoW Settings options

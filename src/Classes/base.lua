@@ -1,22 +1,15 @@
-
 -- Base Class Helpers
 -- Contains necessary logic for defining, creating and working with all Class structures in a consistent manner
-local _, app = ...;
-
--- Dependencies
--- Table lib
+local appName, app = ...;
 
 -- Global locals
 local type, pairs, tonumber, setmetatable, rawget, tinsert
 	= type, pairs, tonumber, setmetatable, rawget, tinsert;
 
--- Lib locals
-local containsValue = app.containsValue;
-
--- Module locals
-
 -- App locals
+local GetRelativeValue = app.GetRelativeValue;
 
+-- Lib Helpers
 local constructor = function(id, t, typeID)
 	if t then
 		if not t.g and t[1] then
@@ -30,23 +23,16 @@ local constructor = function(id, t, typeID)
 	end
 end
 
-local uniques = {};
 -- Provides a Unique Counter value for the Key referenced on each reference
+local uniques = setmetatable({}, { __index = function(t, key) return 0; end });
 local UniqueCounter = setmetatable({}, {
 	__index = function(t, key)
-		local next = (uniques[key] or 0) + 1;
-		-- app.PrintDebug("UniqueCounter",key,next)
-		uniques[key] = next;
-		return next;
+		local count = uniques[key] + 1;
+		-- app.PrintDebug("UniqueCounter",key,count)
+		uniques[key] = count;
+		return count;
 	end
 });
-
--- For now this is copied from ATT since it's used in like a billion places
-local function GetRelativeValue(group, field)
-	if group then
-		return group[field] or GetRelativeValue(group.sourceParent or group.parent, field);
-	end
-end
 
 -- Proper unique hash for a Class Object is not as simple as ID..Value, there are many situations where that does not provide adequate uniqueness
 local function CreateHash(t)
@@ -118,7 +104,9 @@ local DefaultValues = {
 	["costTotal"] = 0,
 };
 app.ClassDefaultValues_TEMP = DefaultValues;
+
 -- Represents default field evaluation logic for all Classes unless defined within the Class
+local containsValue = app.containsValue;
 local DefaultFields = {
 	-- Cloned groups will not directly have a parent, but they will instead have a sourceParent, so fill in with that instead
 	["parent"] = function(t)
@@ -180,7 +168,7 @@ app.ClassDefaultFields_TEMP = DefaultFields;
 
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
 local classDefinitions, _cache = {};
-local BaseObjectFields = function(fields, className)	-- There's an "app.BaseObjectFields" in the addon already, I'll allow it... for now.
+local BaseObjectFields = function(fields, className)
 	if not className then
 		print("A Class Name must be declared when using BaseObjectFields");
 	end
@@ -195,7 +183,7 @@ local BaseObjectFields = function(fields, className)	-- There's an "app.BaseObje
 			class[key] = method;
 		end
 	end
-
+	
 	-- Inject the default fields into the class
 	-- don't need to copy these into every class, just reference them if missing
 	-- for key,method in pairs(DefaultFields) do
@@ -229,12 +217,12 @@ app.CreateClass = function(className, classKey, fields, ...)
 	if not fields then
 		print("Fields must be declared when using CreateClass");
 	end
-
+	
 	-- Ensure that a key field exists!
 	if not fields.key then
 		fields.key = function() return classKey; end;
 	end
-
+	
 	-- If this object supports collectibleAsCost, that means it needs a way to fallback to a version of itself without any cost evaluations should it detect that it doesn't use it anywhere.
 	if fields.collectibleAsCost then
 		local simpleclass = {};
@@ -246,7 +234,7 @@ app.CreateClass = function(className, classKey, fields, ...)
 		local simplemeta = BaseObjectFields(simpleclass, "Simple" .. className);
 		fields.simplemeta = function(t) return simplemeta; end;
 	end
-
+	
 	local args = { ... };
 	local total = #args;
 	if total > 0 then

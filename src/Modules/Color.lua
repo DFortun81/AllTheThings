@@ -20,7 +20,7 @@ local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local ALLIANCE_ONLY = app.Modules.FactionData.FACTION_RACES[1];
 local HORDE_ONLY = app.Modules.FactionData.FACTION_RACES[2];
 local containsAny = app.containsAny;
-local CS = CreateFrame("ColorSelect", nil, app._);
+local CS = CreateFrame("ColorSelect", nil, app.frame);
 CS:Hide();
 
 -- Module locals
