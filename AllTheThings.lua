@@ -31,17 +31,6 @@ BINDING_NAME_ALLTHETHINGS_TOGGLE_WORLD_QUESTS_LIST = L["TOGGLE_WORLD_QUESTS_LIST
 BINDING_NAME_ALLTHETHINGS_TOGGLERANDOM = L["TOGGLE_RANDOM"]
 BINDING_NAME_ALLTHETHINGS_REROLL_RANDOM = L["REROLL_RANDOM"]
 
--- Assign the FactionID.
-app.Faction = UnitFactionGroup("player");
-if app.Faction == "Horde" then
-	app.FactionID = Enum.FlightPathFaction.Horde;
-elseif app.Faction == "Alliance" then
-	app.FactionID = Enum.FlightPathFaction.Alliance;
-else
-	-- Neutral Pandaren or... something else. Scourge? Neat.
-	app.FactionID = 0;
-end
-
 -- Performance Cache
 -- While this may seem silly, caching references to commonly used APIs is actually a performance gain...
 local C_TransmogCollection_GetAppearanceSourceInfo = C_TransmogCollection.GetAppearanceSourceInfo;
