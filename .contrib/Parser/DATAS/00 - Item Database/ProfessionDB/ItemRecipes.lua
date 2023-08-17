@@ -68,9 +68,7 @@ i = GetRecipeHelperForProfession(COOKING);
 i(21025, 25659); -- Recipe: Dirge's Kickin' Chimaerok Chops
 applyevent(EVENTS.FEAST_OF_WINTER_VEIL, i(17200, 21143)); -- Recipe: Gingerbread Cookie
 i(3737, 3400, "removed 4.0.3.2000"); -- Recipe: Soothing Turtle Bisque
--- #if NOT ANYCLASSIC
 i(7678, 9513, REMOVED_FROM_GAME); -- Recipe: Thistle Tea
--- #endif
 -- #IF AFTER TBC
 -- #IF AFTER WRATH
 -- #IF AFTER CATA

@@ -9,10 +9,7 @@ i(18661, 23129, nil, GNOMISH_ENGINEER);		-- Schematic: World Enlarger
 i(18653, 23078, nil, GOBLIN_ENGINEER);		-- Schematic: Goblin Jumper Cables XL
 
 
--- TEMP
--- #IF NOT ANYCLASSIC
 i(11827, 15633);	-- Schematic: Lil' Smoky
--- #ENDIF
 
 ------------------
 -- PATCH 10.0.0 --

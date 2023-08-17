@@ -2982,8 +2982,7 @@ root("ItemSpeciesDB", {
 		["petTypeID"] = 8,
 	},
 	
-	-- #if ANYCLASSIC
-	-- #if AFTER WRATH
+	-- Pets added to Classic exclusively
 	[198665] = {
 		["petTypeID"] = 9,
 	},
@@ -2996,8 +2995,6 @@ root("ItemSpeciesDB", {
 	[187794] = {
 		["petTypeID"] = 9,
 	},
-	-- #endif
-	-- #endif
 	[45180] = {
 		["petTypeID"] = 1,
 	},

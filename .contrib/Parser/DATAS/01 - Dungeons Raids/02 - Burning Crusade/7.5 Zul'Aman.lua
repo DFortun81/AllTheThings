@@ -337,8 +337,5 @@ FOREST_FROG.timeline = nil;
 -- also clean up the children
 for _,item in pairs(FOREST_FROG.groups) do item.timeline = nil; end
 MOJO_PET.timeline = nil;
-
--- #if ANYCLASSIC
 -- We don't want to apply a phase ID for this in this raid, that will be done elsewhere.
 BADGE_OF_JUSTICE.timeline = nil;
--- #endif

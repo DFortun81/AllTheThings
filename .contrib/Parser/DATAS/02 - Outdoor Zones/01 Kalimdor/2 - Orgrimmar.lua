@@ -2787,7 +2787,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						),
 					}),
 				}),
-				-- #if NOT ANYCLASSIC
+				-- #if AFTER WRATH
 				prof(INSCRIPTION, {
 					n(30706, {	-- Jo'mah <Inscription Trainer>
 						["coord"] = { 35.6, 69.2, ORGRIMMAR },
@@ -2797,6 +2797,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				-- #endif
+				-- #if AFTER CATA
 				prof(JEWELCRAFTING, {
 					n(46675, {	-- Lugrah <Jewelcrafting Trainer>
 						["coord"] = { 72.5, 34.3, ORGRIMMAR },
@@ -2809,6 +2810,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					}),
 				}),
+				-- #endif
 				prof(LEATHERWORKING, {
 					n(3365, {	-- Karolek <Leatherworking Trainer>
 						["coords"] = {

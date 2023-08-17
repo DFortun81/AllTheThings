@@ -3,11 +3,8 @@ local i = GetRecipeHelperForProfession(ENCHANTING);
 -----------------
 -- CLASSIC WOW --
 -----------------
--- #if ANYCLASSIC
--- #if AFTER TBC
+-- TBC Classic --
 i(186683, 27927);	-- Stats
--- #endif
--- #endif
 
 -----------------
 -- PATCH 0.5.3 --

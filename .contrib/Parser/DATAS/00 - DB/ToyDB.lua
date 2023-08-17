@@ -5,19 +5,20 @@ local i = function(itemID)
 	Items[itemID] = { ["type"] = "toyID" };
 end
 
--- #if ANYCLASSIC
 -----------------
---   CLASSIC   --
+-- CLASSIC WOW --
 -----------------
--- #if AFTER TBC
+-- TBC Classic --
 i(184871);	-- Dark Portal
+-- #if BEFORE MOP
 i(38233);	-- Path of Illidan
 -- #endif
--- #if AFTER WRATH
-i(40110);	-- Haunted Momento
+
+-- Wrath Classic --
+-- #if BEFORE MOP
+i(40110);	-- Haunted Momento	-- TODO: It would be neat if Retail ATT could detect items manually in your inventory as toys you should keep
+-- #endif
 i(198647);	-- Fishspeaker's Lucky Lure
--- #endif
--- #endif
 
 -----------------
 --   CLASSIC   --

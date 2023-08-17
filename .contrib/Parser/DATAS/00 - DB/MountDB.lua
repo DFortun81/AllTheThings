@@ -1652,15 +1652,12 @@ i(0, 417548);		-- Renewed Proto-Drake
 i(0, 417552);		-- Windborne Velocidrake
 i(0, 417556);		-- Winding Slitherdrake
 
--- #if ANYCLASSIC
 -----------------
 -- CLASSIC WOW --
 -----------------
--- #if AFTER TBC
+-- TBC Classic --
 i(184865, 348459);	-- Reawakened Phase-Hunter
--- #endif
--- #if AFTER WRATH
+
+-- Wrath Classic --
 i(192455, 372677);	-- Kalu'ak Whalebone Glider
 i(201699, 394209);	-- Festering Emerald Drake
--- #endif
--- #endif

@@ -55,6 +55,7 @@ h(i(70153, 81));	-- Thunder Bluff Writ of Commendation
 h(i(70154, 68));	-- Undercity Writ of Commendation
 
 -- Pandaria
+-- The "Grand Commendation" items of Pandaria unlock bonus reputation rather than grant reputation.
 -- TODO: review if /dump GetFactionInfoByID(1337) still returns [15] = false
 -- i(93231, 1376, true);		-- Grand Commendation of Operation: Shieldwall
 -- i(93225, 1302, true);		-- Grand Commendation of the Anglers

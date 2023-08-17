@@ -68,59 +68,29 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				-- #IF ANYCLASSIC
-				["crs"] = {
-					20043,	-- Apprentice Star Scryer
-					20033,	-- Astromancer
-					20046,	-- Astromancer Lord
-					20031,	-- Bloodwarder Legionnaire
-					20035,	-- Bloodwarder Marshal
-					20036,	-- Bloodwarder Squire
-					20032,	-- Bloodwarder Vindicator
-					20047,	-- Crimson Hand Battle Mage
-					20049,	-- Crimson Hand Blood Knight
-					20048,	-- Crimson Hand Centurion
-					20050,	-- Crimson Hand Inquisitor
-					20040,	-- Crystalcore Devastator
-					20052,	-- Crystalcore Mechanic
-					20041,	-- Crystalcore Sentinel
-					20045,	-- Nether Scryer
-					20044,	-- Novice Astromancer
-					20039,	-- Phoenix-Hawk
-					20034,	-- Star Scryer
-					20037,	-- Tempest Falconer
-					20042,	-- Tempest-Smith
-					19514,	-- Al'ar
-					19516,	-- Void Reaver
-					18805,	-- High Astromancer Solarian
-					19622,	-- Kael'thas Sunstrider
-				},
-				-- #ENDIF
-				["groups"] = {
-					i(30280),	-- Pattern: Belt of Blasting
-					i(30302),	-- Pattern: Belt of Deep Shadow (RECIPE!)
-					i(30301),	-- Pattern: Belt of Natural Power (RECIPE!)
-					i(30303),	-- Pattern: Belt of the Black Eagle (RECIPE!)
-					i(30281),	-- Pattern: Belt of the Long Road
-					i(30282),	-- Pattern: Boots of Blasting
-					i(30305),	-- Pattern: Boots of Natural Grace (RECIPE!)
-					i(30307),	-- Pattern: Boots of the Crimson Hawk (RECIPE!)
-					i(30283),	-- Pattern: Boots of the Long Road
-					i(30306),	-- Pattern: Boots of Utter Darkness (RECIPE!)
-					i(30308),	-- Pattern: Hurricane Boots (RECIPE!)
-					i(30304),	-- Pattern: Monsoon Belt (RECIPE!)
-					i(30321),	-- Plans: Belt of the Guardian (RECIPE!)
-					i(30323),	-- Plans: Boots of the Protector (RECIPE!)
-					i(30322),	-- Plans: Red Belt of Battle (RECIPE!)
-					i(30324),	-- Plans: Red Havoc Boots (RECIPE!)
-					i(30026),	-- Bands of the Celestial Archer
-					i(30029),	-- Bark-Gloves of Ancient Wisdom
-					i(30020),	-- Fire-Cord of the Magus
-					i(30030),	-- Girdle of Fallen Stars
-					i(30024),	-- Mantle of the Elven Kings
-					i(30028),	-- Seventh Ring of the Tirisfalen
-					i(30183),	-- Nether Vortex
-				},
+				i(30280),	-- Pattern: Belt of Blasting
+				i(30302),	-- Pattern: Belt of Deep Shadow (RECIPE!)
+				i(30301),	-- Pattern: Belt of Natural Power (RECIPE!)
+				i(30303),	-- Pattern: Belt of the Black Eagle (RECIPE!)
+				i(30281),	-- Pattern: Belt of the Long Road
+				i(30282),	-- Pattern: Boots of Blasting
+				i(30305),	-- Pattern: Boots of Natural Grace (RECIPE!)
+				i(30307),	-- Pattern: Boots of the Crimson Hawk (RECIPE!)
+				i(30283),	-- Pattern: Boots of the Long Road
+				i(30306),	-- Pattern: Boots of Utter Darkness (RECIPE!)
+				i(30308),	-- Pattern: Hurricane Boots (RECIPE!)
+				i(30304),	-- Pattern: Monsoon Belt (RECIPE!)
+				i(30321),	-- Plans: Belt of the Guardian (RECIPE!)
+				i(30323),	-- Plans: Boots of the Protector (RECIPE!)
+				i(30322),	-- Plans: Red Belt of Battle (RECIPE!)
+				i(30324),	-- Plans: Red Havoc Boots (RECIPE!)
+				i(30026),	-- Bands of the Celestial Archer
+				i(30029),	-- Bark-Gloves of Ancient Wisdom
+				i(30020),	-- Fire-Cord of the Magus
+				i(30030),	-- Girdle of Fallen Stars
+				i(30024),	-- Mantle of the Elven Kings
+				i(30028),	-- Seventh Ring of the Tirisfalen
+				i(30183),	-- Nether Vortex
 			}),
 			e(1573, {	-- Al'ar
 				["creatureID"] = 19514,

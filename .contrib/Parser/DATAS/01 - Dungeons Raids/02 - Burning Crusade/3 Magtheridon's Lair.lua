@@ -122,12 +122,10 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					i(28778),	-- Terror Pit Girdle
 					i(28789),	-- Eye of Magtheridon
 					i(34846, {	-- Black Sack of Gems
-						-- #if ANYCLASSIC
 						-- #if BEFORE WRATH
 						["description"] = "The epic gems may not be available until Black Temple is released, however, some users have reported getting one out of this bag already.",
 						-- #endif
 						["timeline"] = { "added 2.4.0.7923" },
-						-- #endif
 						["groups"] = {
 							i(32227),	-- Crimson Spinel
 							i(32228),	-- Empyrean Sapphire

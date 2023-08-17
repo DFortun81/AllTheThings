@@ -257,7 +257,7 @@ namespace ATT
             var savedVariablesFolder = root.GetDirectories("SavedVariables", SearchOption.TopDirectoryOnly).FirstOrDefault();
             if (savedVariablesFolder != null && savedVariablesFolder.Exists)
             {
-                // Retail WoW only accepts ATT-Classic, not AllTheThings.
+                // Classic WoW only accepts ATT-Classic, not AllTheThings.
                 if (savedVariablesFolder.FullName.Contains("_classic_"))
                 {
                     // Look at the ATT-Classic.lua file.
