@@ -481,7 +481,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["sourceQuests"] = {
 							45344,	-- Sampling the Source
 							45345,	-- Mischievous Spirites
-							45436,	-- Shambling Specimens
+							45346,	-- Shambling Specimens
 						},
 						["provider"] = { "n", 118528 },	-- Aelthalyste
 						["coord"] = { 30.0, 55.9, HIGHMOUNTAIN },
