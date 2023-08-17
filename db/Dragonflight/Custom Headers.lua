@@ -454,7 +454,7 @@ for key,value in pairs({
 	[-1000004] = ACHIEVEMENTS,
 	[-1000005] = TRACKER_HEADER_BONUS_OBJECTIVES,
 	[-1000006] = RAID_BOSSES,
-	[-1000007] = CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER,
+	[-1000007] = "Class Trial",
 	[-1000008] = CLASS,
 	[-1000009] = BATTLE_PET_BREED_QUALITY2.." "..TRANSMOG_SOURCE_1,
 	[-1000010] = "Common Box Drops",
@@ -827,6 +827,7 @@ for key,value in pairs({
 if simplifiedLocale == "de" then
 a = L.HEADER_NAMES;
 for key,value in pairs({
+	[-1000007] = "Klassenprozess",
 	[-1000009] = "Gemeinsame Bossbeute",
 	[-1000018] = "Erkundung",
 	[-1000033] = "Rätsel",
@@ -901,6 +902,7 @@ end
 if simplifiedLocale == "es" then
 a = L.HEADER_NAMES;
 for key,value in pairs({
+	[-1000007] = "Prueba de Clase",
 	[-1000084] = "Asaltos de las Curias",
 	[-1000086] = "Mejoras del sagrario",
 	[-1000089] = "Guarniciones",
@@ -962,6 +964,7 @@ for key,value in pairs({
 	[-1000001] = "Nord",
 	[-1000002] = "Sud",
 	[-1000003] = "Ouest",
+	[-1000007] = "Essai de Classe",
 	[-1000011] = "Objet commun de donjon",
 	[-1000012] = "Objets communs des vendeurs",
 	[-1000018] = "Exploration",
@@ -1062,6 +1065,7 @@ end
 if simplifiedLocale == "it" then
 a = L.HEADER_NAMES;
 for key,value in pairs({
+	[-1000007] = "Prova di Classe",
 	[-1000084] = "Assalti delle Congreghe",
 	[-1000086] = "Potenziamenti al Santuario",
 	[-1000089] = "Guarnigioni",
@@ -1107,6 +1111,7 @@ end
 if simplifiedLocale == "ko" then
 a = L.HEADER_NAMES;
 for key,value in pairs({
+	[-1000007] = "학급 재판",
 	[-1000084] = "성약의 습격",
 	[-1000086] = "성소 강화",
 	[-1000089] = "수비대",
@@ -1151,6 +1156,7 @@ end
 if simplifiedLocale == "pt" then
 a = L.HEADER_NAMES;
 for key,value in pairs({
+	[-1000007] = "Teste de Classe",
 	[-1000084] = "Ataques Pactos",
 	[-1000086] = "Aprimoramentos de Santuário",
 	[-1000089] = "Guarnições",
@@ -1212,6 +1218,7 @@ for key,value in pairs({
 	[-1000001] = "Север",
 	[-1000002] = "Юг",
 	[-1000003] = "Запад",
+	[-1000007] = "Испытание класса",
 	[-1000009] = "Общая добыча с боссов",
 	[-1000010] = "Обычная добыча из Сундуков",
 	[-1000011] = "Обычная добыча с боссов",
@@ -1352,6 +1359,7 @@ for key,value in pairs({
 	[-1000001] = "北部",
 	[-1000002] = "南部",
 	[-1000003] = "西部",
+	[-1000007] = "职业试玩",
 	[-1000010] = "一般宝箱掉落",
 	[-1000011] = "一般地下城掉落",
 	[-1000012] = "常规商人物品",
