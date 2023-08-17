@@ -7,7 +7,7 @@
     <ProjectGuid>{47D83200-8E21-487B-8F44-B08C7A1CBC82}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>ATT</RootNamespace>
-    <AssemblyName>Parser V2</AssemblyName>
+    <AssemblyName>Parser</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -31,7 +31,7 @@
   <PropertyGroup>
     <ApplicationIcon>lib\att_logo_128_new_jrX_icon.ico</ApplicationIcon>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Retail|x86' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>..\..\Parser\</OutputPath>
     <DefineConstants>TRACE;RETAIL;DF</DefineConstants>
@@ -43,7 +43,7 @@
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <Optimize>true</Optimize>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Retail_Debug|x86'">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>..\..\Parser\</OutputPath>
     <DefineConstants>TRACE;DEBUG;RETAIL;DF;</DefineConstants>
@@ -109,49 +109,5 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <Target Name="RenameRetailExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Retail'">
-    <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for Retail.exe" />
-    <Message Text="Renamed executable file." Importance="high" />
-  </Target>
-  <Target Name="RenameClassicEXE" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Classic %2801 - Vanilla%29'">
-    <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for Classic.exe" />
-    <Message Text="Renamed executable file." Importance="high" />
-  </Target>
-  <Target Name="RenameTBCExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Classic %2802 - The Burning Crusade%29'">
-    <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for TBC.exe" />
-    <Message Text="Renamed executable file." Importance="high" />
-  </Target>
-  <Target Name="RenameWRATHExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Classic %2803 - Wrath of the Lich King%29'">
-    <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for Wrath.exe" />
-    <Message Text="Renamed executable file." Importance="high" />
-  </Target>
-  <Target Name="RenameCATAExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Classic %2804 - Cataclysm%29'">
-    <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for Cata.exe" />
-    <Message Text="Renamed executable file." Importance="high" />
-  </Target>
-  <Target Name="RenameMOPExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Classic %2810 - Mists of Pandaria%29'">
-    <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for MOP.exe" />
-    <Message Text="Renamed executable file." Importance="high" />
-  </Target>
-  <Target Name="RenameWODExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Classic %2810 - Warlords of Draenor%29'">
-    <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for WOD.exe" />
-    <Message Text="Renamed executable file." Importance="high" />
-  </Target>
-  <Target Name="RenameLEGIONExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Classic %2810 - Legion%29'">
-    <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for Legion.exe" />
-    <Message Text="Renamed executable file." Importance="high" />
-  </Target>
-  <Target Name="RenameBFAExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Classic %2810 - Battle for Azeroth%29'">
-    <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for BFA.exe" />
-    <Message Text="Renamed executable file." Importance="high" />
-  </Target>
-  <Target Name="RenameSHADOWLANDSExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Classic %2810 - Shadowlands%29'">
-    <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for Shadowlands.exe" />
-    <Message Text="Renamed executable file." Importance="high" />
-  </Target>
-  <Target Name="RenameDRAGONFLIGHTExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Classic %2810 - Dragonflight%29'">
-    <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for Dragonflight.exe" />
-    <Message Text="Renamed executable file." Importance="high" />
-  </Target>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

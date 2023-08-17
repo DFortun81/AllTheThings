@@ -1,1 +1,1 @@
-"Parser for Retail.exe" config=parser.classic.wrath.config
+"Parser.exe" config=parser.classic.wrath.config

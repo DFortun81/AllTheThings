@@ -1,1 +1,1 @@
-"Parser for Retail.exe" config=parser.classic.config
+"Parser.exe" config=parser.classic.config

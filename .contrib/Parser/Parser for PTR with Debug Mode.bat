@@ -1,2 +1,2 @@
 @ECHO OFF
-"Parser for Retail.exe" baseconfig=parser.config config=parser.ptr.config debug
+"Parser.exe" baseconfig=parser.config config=parser.ptr.config debug
