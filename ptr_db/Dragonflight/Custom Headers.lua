@@ -23,8 +23,8 @@ _.HeaderConstants = {
 	DAY_OF_THE_DEAD_HEADER = -1000276,
 	DISCOVERY = -1000015,
 	DROPS = -1000016,
-	EASTERN_KINGDOMS_CUP_HEADER = -1000277,
 	EMISSARY_QUESTS = -1000017,
+	EXPLORATION = -1000018,
 	FACTIONS = -1000019,
 	FEAST_OF_WINTER_VEIL_HEADER = -1000278,
 	FLIGHT_PATHS = -1000020,
@@ -81,7 +81,6 @@ for key,value in pairs({
 	[-1000269] = 201,
 	[-1000270] = 479,
 	[-1000276] = 409,
-	[-1000277] = 1400,
 	[-1000278] = 141,
 	[-1000279] = 1053,
 	[-1000280] = 324,
@@ -166,6 +165,7 @@ for key,value in pairs({
 	[-1000015] = "Interface/Icons/Garrison_Building_MageTower",
 	[-1000016] = _.asset("Category_WorldDrops"),
 	[-1000017] = _.asset("Interface_Emissary_Callings"),
+	[-1000018] = "Interface/Icons/INV_Misc_Map02",
 	[-1000019] = _.asset("Category_Factions"),
 	[-1000020] = _.asset("Category_FlightPaths"),
 	[-1000021] = "Interface/Icons/Achievement_GarrisonFollower_LevelUp",
@@ -311,7 +311,6 @@ for key,value in pairs({
 	[-1000172] = "775461",
 	[-1000173] = "Interface/Icons/achievement_dungeon_outland_dungeonmaster",
 	[-1000174] = "Interface/Icons/inv_dragonwhelpoutland2_cutepink",
-	[-1000175] = "Interface/Icons/Ability_xavius_dreamsimulacrum",
 	[-1000176] = "Interface/Icons/inv_belt_armor_waistoftime_d_01",
 	[-1000177] = "Interface/Icons/inv_belt_armor_waistoftime_d_01",
 	[-1000179] = "Interface/Icons/achievement_reputation_argentchampion",
@@ -410,7 +409,6 @@ for key,value in pairs({
 	[-1000274] = "Interface/Icons/inv_weapon_rifle_01",
 	[-1000275] = "Interface/Icons/inv_hammer_32",
 	[-1000276] = _.asset("Holiday_Day_of_the_Dead"),
-	[-1000277] = "Interface/Icons/misc_arrowrightcalendar_easternkingdomscupstart",
 	[-1000278] = _.asset("Holiday_winter_veil"),
 	[-1000279] = _.asset("Holiday_Tshirt"),
 	[-1000280] = _.asset("Holiday_hallows_end"),
@@ -456,7 +454,7 @@ for key,value in pairs({
 	[-1000004] = ACHIEVEMENTS,
 	[-1000005] = TRACKER_HEADER_BONUS_OBJECTIVES,
 	[-1000006] = RAID_BOSSES,
-	[-1000007] = CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER,
+	[-1000007] = "Class Trial",
 	[-1000008] = CLASS,
 	[-1000009] = BATTLE_PET_BREED_QUALITY2.." "..TRANSMOG_SOURCE_1,
 	[-1000010] = "Common Box Drops",
@@ -466,6 +464,7 @@ for key,value in pairs({
 	[-1000015] = BATTLE_PET_SOURCE_11,
 	[-1000016] = "Drops",
 	[-1000017] = BOUNTY_BOARD_LOCKED_TITLE,
+	[-1000018] = "Exploration",
 	[-1000019] = FACTION,
 	[-1000020] = GetSpellInfo(218950),
 	[-1000021] = GARRISON_FOLLOWERS,
@@ -613,7 +612,6 @@ for key,value in pairs({
 	[-1000172] = GetSpellInfo(147343),
 	[-1000173] = "Assault on the Dark Portal",
 	[-1000174] = "Little Scales Daycare",
-	[-1000175] = "Dreamsurge",
 	[-1000176] = "Eon's Fringe",
 	[-1000177] = GetSpellInfo(408633),
 	[-1000178] = "Fifth Rock Mouse",
@@ -713,7 +711,6 @@ for key,value in pairs({
 	[-1000274] = "Shooting Gallery",
 	[-1000275] = "Whack-a-Gnoll",
 	[-1000276] = "Day of the Dead",
-	[-1000277] = "Eastern Kingdoms Cup",
 	[-1000278] = GetSpellInfo(21953),
 	[-1000279] = "Free T-Shirt Day",
 	[-1000280] = select(1,GetCategoryInfo(158)),
@@ -830,7 +827,9 @@ for key,value in pairs({
 if simplifiedLocale == "de" then
 a = L.HEADER_NAMES;
 for key,value in pairs({
+	[-1000007] = "Klassenprozess",
 	[-1000009] = "Gemeinsame Bossbeute",
+	[-1000018] = "Erkundung",
 	[-1000033] = "Rätsel",
 	[-1000046] = "Drachen des Alptraums",
 	[-1000084] = "Paktangriffe",
@@ -892,7 +891,6 @@ for key,value in pairs({
 	[-1000274] = "Schießbude",
 	[-1000275] = "Hau-den-Gnoll",
 	[-1000276] = "Tag der Toten",
-	[-1000277] = "Der Pokal der Östlichen Königreiche",
 	[-1000282] = "Kalimdorpokal",
 	[-1000283] = "Angelwettstreit der Kalu'ak",
 	[-1000287] = "Sonnenwendfest",
@@ -904,6 +902,7 @@ end
 if simplifiedLocale == "es" then
 a = L.HEADER_NAMES;
 for key,value in pairs({
+	[-1000007] = "Prueba de Clase",
 	[-1000084] = "Asaltos de las Curias",
 	[-1000086] = "Mejoras del sagrario",
 	[-1000089] = "Guarniciones",
@@ -965,8 +964,10 @@ for key,value in pairs({
 	[-1000001] = "Nord",
 	[-1000002] = "Sud",
 	[-1000003] = "Ouest",
+	[-1000007] = "Essai de Classe",
 	[-1000011] = "Objet commun de donjon",
 	[-1000012] = "Objets communs des vendeurs",
+	[-1000018] = "Exploration",
 	[-1000043] = "Récompenses de la zone",
 	[-1000046] = "Dragons du Cauchemar",
 	[-1000053] = "Événement chronométré",
@@ -1064,6 +1065,7 @@ end
 if simplifiedLocale == "it" then
 a = L.HEADER_NAMES;
 for key,value in pairs({
+	[-1000007] = "Prova di Classe",
 	[-1000084] = "Assalti delle Congreghe",
 	[-1000086] = "Potenziamenti al Santuario",
 	[-1000089] = "Guarnigioni",
@@ -1109,6 +1111,7 @@ end
 if simplifiedLocale == "ko" then
 a = L.HEADER_NAMES;
 for key,value in pairs({
+	[-1000007] = "학급 재판",
 	[-1000084] = "성약의 습격",
 	[-1000086] = "성소 강화",
 	[-1000089] = "수비대",
@@ -1153,6 +1156,7 @@ end
 if simplifiedLocale == "pt" then
 a = L.HEADER_NAMES;
 for key,value in pairs({
+	[-1000007] = "Teste de Classe",
 	[-1000084] = "Ataques Pactos",
 	[-1000086] = "Aprimoramentos de Santuário",
 	[-1000089] = "Guarnições",
@@ -1214,11 +1218,13 @@ for key,value in pairs({
 	[-1000001] = "Север",
 	[-1000002] = "Юг",
 	[-1000003] = "Запад",
+	[-1000007] = "Испытание класса",
 	[-1000009] = "Общая добыча с боссов",
 	[-1000010] = "Обычная добыча из Сундуков",
 	[-1000011] = "Обычная добыча с боссов",
 	[-1000012] = "Обычные предметы у Торговцев",
 	[-1000016] = BATTLE_PET_SOURCE_1,
+	[-1000018] = "Исследование",
 	[-1000020] = "Точка полета",
 	[-1000030] = "Редкие",
 	[-1000033] = "Секреты",
@@ -1353,10 +1359,12 @@ for key,value in pairs({
 	[-1000001] = "北部",
 	[-1000002] = "南部",
 	[-1000003] = "西部",
+	[-1000007] = "职业试玩",
 	[-1000010] = "一般宝箱掉落",
 	[-1000011] = "一般地下城掉落",
 	[-1000012] = "常规商人物品",
 	[-1000016] = "掉落",
+	[-1000018] = "勘探",
 	[-1000033] = "秘密",
 	[-1000037] = "商人",
 	[-1000043] = "区域奖励",
