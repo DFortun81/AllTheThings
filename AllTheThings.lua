@@ -19034,7 +19034,7 @@ customWindowUpdates["SourceFinder"] = function(self)
 			db.g = {
 				{
 					["text"] = "Update Now",
-					["icon"] = "Interface\\Icons\\ability_monk_roll",
+					["icon"] = app.asset("Button_Reroll"),
 					["description"] = "Click this to update the listing. Doing so shall remove all invalid, grey, or white items.",
 					["visible"] = true,
 					["fails"] = 0,
@@ -19296,7 +19296,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 					}),
 					{
 						['text'] = L["RESET_INSTANCES"],
-						['icon'] = "Interface\\Icons\\Ability_Priest_VoidShift",
+						['icon'] = app.asset("Button_Reset"),
 						['description'] = L["RESET_INSTANCES_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
@@ -19784,7 +19784,7 @@ customWindowUpdates["Random"] = function(self)
 			local mainHeader, filterHeader;
 			local rerollOption = {
 				['text'] = L["REROLL"],
-				['icon'] = "Interface\\Icons\\ability_monk_roll",
+				['icon'] = app.asset("Button_Reroll"),
 				['description'] = L["REROLL_DESC"],
 				['visible'] = true,
 				['OnClick'] = function(row, button)
@@ -20137,7 +20137,7 @@ customWindowUpdates["Sync"] = function(self)
 				['g'] = {
 					{
 						['text'] = L["ADD_LINKED_CHARACTER_ACCOUNT"],
-						['icon'] = "Interface\\Icons\\Ability_Priest_VoidShift",
+						['icon'] = app.asset("Button_Add"),
 						['description'] = L["ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP"],
 						['visible'] = true,
 						['OnUpdate'] = app.AlwaysShowUpdate,
@@ -21531,7 +21531,7 @@ app.LoadDebugger = function()
 							tinsert(self.data.options, {
 								["hash"] = "restore" .. row.ref.count,
 								['text'] = "Restore Button " .. row.ref.count,
-								['icon'] = "Interface\\Icons\\ability_monk_roll.blp",
+								['icon'] = app.asset("Button_Reroll"),
 								["description"] = "Click this to restore your cleared data.\n\nNOTE: Each Restore Button houses different data.\n\nWARNING: This data will be lost forever when you reload your UI!",
 								["OnUpdate"] = app.AlwaysShowUpdate,
 								['data'] = copy,
