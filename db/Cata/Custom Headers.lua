@@ -235,7 +235,7 @@ local a = L.HEADER_NAMES;
 for key,value in pairs({
 	[-1000004] = ACHIEVEMENTS,
 	[-1000006] = RAID_BOSSES,
-	[-1000007] = CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER,
+	[-1000007] = "Class Trial",
 	[-1000008] = CLASS,
 	[-1000009] = BATTLE_PET_BREED_QUALITY2.." "..TRANSMOG_SOURCE_1,
 	[-1000012] = "Common Vendor Items",
@@ -436,6 +436,7 @@ for key,value in pairs({
 if simplifiedLocale == "de" then
 a = L.HEADER_NAMES;
 for key,value in pairs({
+	[-1000007] = "Klassenprozess",
 	[-1000009] = "Gemeinsame Bossbeute",
 	[-1000018] = "Erkundung",
 	[-1000046] = "Drachen des Alptraums",
@@ -467,6 +468,7 @@ end
 if simplifiedLocale == "es" then
 a = L.HEADER_NAMES;
 for key,value in pairs({
+	[-1000007] = "Prueba de Clase",
 	[-1000129] = "Gladiador Odioso",
 	[-1000149] = "Los Cuatro Jinetes",
 	[-1000167] = "Asaltar la Ciudadela",
@@ -489,6 +491,7 @@ end
 if simplifiedLocale == "fr" then
 a = L.HEADER_NAMES;
 for key,value in pairs({
+	[-1000007] = "Essai de Classe",
 	[-1000012] = "Objets communs des vendeurs",
 	[-1000018] = "Exploration",
 	[-1000046] = "Dragons du Cauchemar",
@@ -542,6 +545,7 @@ end
 if simplifiedLocale == "it" then
 a = L.HEADER_NAMES;
 for key,value in pairs({
+	[-1000007] = "Prova di Classe",
 	[-1000129] = "Gladiatore Perfido",
 	[-1000149] = "I Cavalieri dell'Apocalisse",
 	[-1000167] = "Assalto alla rocca",
@@ -563,6 +567,7 @@ end
 if simplifiedLocale == "ko" then
 a = L.HEADER_NAMES;
 for key,value in pairs({
+	[-1000007] = "학급 재판",
 	[-1000129] = "원한에 검투사",
 	[-1000149] = "4인 기사단",
 	[-1000167] = "성채 몰아치기",
@@ -585,6 +590,7 @@ end
 if simplifiedLocale == "pt" then
 a = L.HEADER_NAMES;
 for key,value in pairs({
+	[-1000007] = "Teste de Classe",
 	[-1000129] = "Gladiador Odioso",
 	[-1000149] = "Os Quatro Cavaleiros",
 	[-1000167] = "Invasão da Cidadela",
@@ -607,6 +613,7 @@ end
 if simplifiedLocale == "ru" then
 a = L.HEADER_NAMES;
 for key,value in pairs({
+	[-1000007] = "Испытание класса",
 	[-1000009] = "Общая добыча с боссов",
 	[-1000012] = "Обычные предметы у Торговцев",
 	[-1000016] = BATTLE_PET_SOURCE_1,
@@ -669,6 +676,7 @@ end
 if simplifiedLocale == "zh" then
 a = L.HEADER_NAMES;
 for key,value in pairs({
+	[-1000007] = "职业试玩",
 	[-1000012] = "常规商人物品",
 	[-1000016] = "掉落",
 	[-1000018] = "勘探",

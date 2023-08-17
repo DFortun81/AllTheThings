@@ -10378,7 +10378,7 @@ end)();
 -- Flight Path Lib
 do
 local FlightPathMapIDs = {
-	1209,		-- Kalimdor
+	1209,	-- Kalimdor
 	1208,	-- Eastern Kingdoms
 	1467,	-- Outland
 	1384,	-- Northrend
@@ -10399,39 +10399,41 @@ local FlightPathMapIDs = {
 };
 local C_TaxiMap_GetTaxiNodesForMap, C_TaxiMap_GetAllTaxiNodes, GetTaxiMapID
 	= C_TaxiMap.GetTaxiNodesForMap, C_TaxiMap.GetAllTaxiNodes, GetTaxiMapID;
-local cached;
+local localizedFlightPathNames;
 local HarvestFlightPaths = function(requestID)
-	if cached then return; end
-	app.PrintDebug("HarvestFlightPaths");
-	local userLocale = AllTheThingsAD.UserLocale;
-	local names = userLocale.FLIGHTPATH_NAMES or {};
-	local allNodeData;
-	for _,mapID in ipairs(FlightPathMapIDs) do
-		allNodeData = C_TaxiMap_GetTaxiNodesForMap(mapID);
-		if allNodeData then
-			for _,nodeData in ipairs(allNodeData) do
-				names[nodeData.nodeID] = nodeData.name;
+	if not localizedFlightPathNames then
+		app.PrintDebug("HarvestFlightPaths");
+		local userLocale = AllTheThingsAD.UserLocale;
+		localizedFlightPathNames = userLocale.FLIGHTPATH_NAMES;
+		if not localizedFlightPathNames then
+			localizedFlightPathNames = {};
+			userLocale.FLIGHTPATH_NAMES = localizedFlightPathNames;
+		end
+		local flightPathNames = app.FlightPathNames;
+		if flightPathNames then
+			app.FlightPathNames = nil;
+			setmetatable(localizedFlightPathNames, { __index = flightPathNames });
+		end
+		
+		local allNodeData;
+		for _,mapID in ipairs(FlightPathMapIDs) do
+			allNodeData = C_TaxiMap_GetTaxiNodesForMap(mapID);
+			if allNodeData then
+				for _,nodeData in ipairs(allNodeData) do
+					localizedFlightPathNames[nodeData.nodeID] = nodeData.name;
+				end
 			end
 		end
+		app.PrintDebugPrior("done")
 	end
-	userLocale.FLIGHTPATH_NAMES = names;
-	app.PrintDebugPrior("done")
-	cached = true;
-	if requestID then
-		return names[requestID];
-	end
+	return requestID and localizedFlightPathNames[requestID];
 end
 local fields = {
 	["key"] = function(t)
 		return "flightPathID";
 	end,
 	["name"] = function(t)
-		local names, id = L["FLIGHTPATH_NAMES"], t.flightPathID;
-		local name = names and names[id];
-		if not names or not name then
-			return HarvestFlightPaths(id) or L["VISIT_FLIGHT_MASTER"];
-		end
-		return name;
+		return HarvestFlightPaths(t.flightPathID) or L["VISIT_FLIGHT_MASTER"];
 	end,
 	["icon"] = function(t)
 		local r = t.r;

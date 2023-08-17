@@ -402,6 +402,11 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Ratchet, Northern Barrens",
 		},
 	},
+	[81] = {
+		text = {
+			en = "Filming",
+		},
+	},
 	[82] = {
 		text = {
 			en = "Silvermoon City",
@@ -432,6 +437,31 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Crown Guard Tower, Eastern Plaguelands",
 		},
 	},
+	[88] = {
+		text = {
+			en = "Transport, Exodar",
+		},
+	},
+	[89] = {
+		text = {
+			en = "Transport, Theramore",
+		},
+	},
+	[90] = {
+		text = {
+			en = "Transport, Undercity",
+		},
+	},
+	[91] = {
+		text = {
+			en = "Quest - Azuremyst Shaman Target",
+		},
+	},
+	[92] = {
+		text = {
+			en = "Quest - Azuremyst Shaman Start",
+		},
+	},
 	[93] = {
 		text = {
 			en = "Blood Watch, Bloodmyst Isle",
@@ -440,6 +470,26 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[94] = {
 		text = {
 			en = "The Exodar",
+		},
+	},
+	[95] = {
+		text = {
+			en = "Zangarmarsh - Quest - As the Crow Flies",
+		},
+	},
+	[96] = {
+		text = {
+			en = "Zangarmarsh - Quest - As the Crow Flies - End",
+		},
+	},
+	[97] = {
+		text = {
+			en = "Quest - Elekk Path to Kessel",
+		},
+	},
+	[98] = {
+		text = {
+			en = "Quest - Elekk to Kessel Target",
 		},
 	},
 	[99] = {
@@ -460,6 +510,76 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[102] = {
 		text = {
 			en = "Falcon Watch, Hellfire Peninsula",
+		},
+	},
+	[103] = {
+		text = {
+			en = "Nagrand - PvP - Attack Run Start 1",
+		},
+	},
+	[104] = {
+		text = {
+			en = "Nagrand - PvP - Attack Run End 1",
+		},
+	},
+	[105] = {
+		text = {
+			en = "Nagrand - PvP - Attack Run Start 2",
+		},
+	},
+	[106] = {
+		text = {
+			en = "Nagrand - PvP - Attack Run End 2",
+		},
+	},
+	[107] = {
+		text = {
+			en = "Nagrand - PvP - Attack Run Start 3",
+		},
+	},
+	[108] = {
+		text = {
+			en = "Nagrand - PvP - Attack Run End 3",
+		},
+	},
+	[109] = {
+		text = {
+			en = "Nagrand - PvP - Attack Run Start 4",
+		},
+	},
+	[110] = {
+		text = {
+			en = "Nagrand - PvP - Attack Run End 4",
+		},
+	},
+	[111] = {
+		text = {
+			en = "Eversong - Duskwither Teleport",
+		},
+	},
+	[112] = {
+		text = {
+			en = "Eversong - Duskwither Teleport End",
+		},
+	},
+	[113] = {
+		text = {
+			en = "Quest - Nethrandamus Start",
+		},
+	},
+	[114] = {
+		text = {
+			en = "Quest - Nethrandamus End Target",
+		},
+	},
+	[115] = {
+		text = {
+			en = "Quest - Caverns of Time OH - Begin",
+		},
+	},
+	[116] = {
+		text = {
+			en = "Quest - Caverns of Time OH - End",
 		},
 	},
 	[117] = {
@@ -532,6 +652,46 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Hellfire Peninsula, The Dark Portal",
 		},
 	},
+	[131] = {
+		text = {
+			en = "Quest - Horde Hellfire Start",
+		},
+	},
+	[132] = {
+		text = {
+			en = "Quest - Horde Hellfire End",
+		},
+	},
+	[133] = {
+		text = {
+			en = "Quest - Hellfire Peninsula (Alliance Path) Start",
+		},
+	},
+	[134] = {
+		text = {
+			en = "Quest - Hellfire Peninsula (Alliance) End",
+		},
+	},
+	[135] = {
+		text = {
+			en = "Quest - Hellfire, Aerial Mission (Horde) Start",
+		},
+	},
+	[136] = {
+		text = {
+			en = "Quest - Hellfire, Aerial Mission (Horde) End",
+		},
+	},
+	[137] = {
+		text = {
+			en = "Quest - Hellfire, Aerial Mission (Alliance) Start",
+		},
+	},
+	[138] = {
+		text = {
+			en = "Quest - Hellfire, Aerial Mission (Alliance) End",
+		},
+	},
 	[139] = {
 		text = {
 			en = "The Stormspire, Netherstorm",
@@ -547,6 +707,46 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Spinebreaker Ridge, Hellfire Peninsula",
 		},
 	},
+	[142] = {
+		text = {
+			en = "Hellfire Peninsula - Reaver's Fall",
+		},
+	},
+	[143] = {
+		text = {
+			en = "Quest - Caverns of Time (Intro Flight Path) (End)",
+		},
+	},
+	[144] = {
+		text = {
+			en = "Quest - Caverns of Time (Intro Flight Path) (Start)",
+		},
+	},
+	[145] = {
+		text = {
+			en = "Quest - Netherstorm - Stealth Flight - Begin",
+		},
+	},
+	[146] = {
+		text = {
+			en = "Quest - Netherstorm - Stealth Flight - End",
+		},
+	},
+	[147] = {
+		text = {
+			en = "Hellfire Peninsula - Force Camp Beach Head",
+		},
+	},
+	[148] = {
+		text = {
+			en = "Shatter Point, Hellfire Peninsula (Beach Assault)",
+		},
+	},
+	[149] = {
+		text = {
+			en = "Shatter Point, Hellfire Peninsula",
+		},
+	},
 	[150] = {
 		text = {
 			en = "Cosmowrench, Netherstorm",
@@ -557,9 +757,39 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Swamprat Post, Zangarmarsh",
 		},
 	},
+	[152] = {
+		text = {
+			en = "Quest - Netherstorm - Manaforge Ultris (Start)",
+		},
+	},
+	[153] = {
+		text = {
+			en = "Quest - Netherstorm - Manaforge Ultris (End)",
+		},
+	},
+	[154] = {
+		text = {
+			en = "Quest - Netherstorm - Manaforge Ultris (Second Pass) Start",
+		},
+	},
+	[155] = {
+		text = {
+			en = "Quest - Netherstorm - Manaforge Ultris (Second Pass) End",
+		},
+	},
 	[156] = {
 		text = {
 			en = "Toshley's Station, Blade's Edge Mountains",
+		},
+	},
+	[157] = {
+		text = {
+			en = "Quest - Blade's Edge - Vision Guide - Start",
+		},
+	},
+	[158] = {
+		text = {
+			en = "Quest - Blade's Edge - Vision Guide - End",
 		},
 	},
 	[159] = {
@@ -572,6 +802,16 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Evergrove, Blade's Edge Mountains",
 		},
 	},
+	[161] = {
+		text = {
+			en = "Quest - Nether Dragon Ally - Start",
+		},
+	},
+	[162] = {
+		text = {
+			en = "Quest - Nether Dragon Ally - End",
+		},
+	},
 	[163] = {
 		text = {
 			en = "Mok'Nathal Village, Blade's Edge Mountains",
@@ -580,6 +820,11 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[164] = {
 		text = {
 			en = "Orebor Harborage, Zangarmarsh",
+		},
+	},
+	[165] = {
+		text = {
+			en = "Transport, Northrend 2",
 		},
 	},
 	[166] = {
@@ -597,9 +842,19 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Filming",
 		},
 	},
+	[169] = {
+		text = {
+			en = "Quest - Netherwing Ledge - Mine Cart Ride - South - Start",
+		},
+	},
 	[170] = {
 		text = {
 			en = "Quest - Netherwing Ledge - Mine Cart Ride - South - End",
+		},
+	},
+	[171] = {
+		text = {
+			en = "Skettis",
 		},
 	},
 	[172] = {
@@ -612,6 +867,16 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Quest - Yarzill Flight Start",
 		},
 	},
+	[174] = {
+		text = {
+			en = "Quest - Yarzill Flight Start End",
+		},
+	},
+	[175] = {
+		text = {
+			en = "Transport, Howling Fjord",
+		},
+	},
 	[176] = {
 		text = {
 			en = "Quest - Howling Fjord Tauren Canoe (Start)",
@@ -620,6 +885,11 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[177] = {
 		text = {
 			en = "Quest - Howling Fjord Tauren Canoe (End)",
+		},
+	},
+	[178] = {
+		text = {
+			en = "Transport, Borean Tundra",
 		},
 	},
 	[179] = {
@@ -635,6 +905,11 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[181] = {
 		text = {
 			en = "Quest - Dustwallow - Alcaz Survey End",
+		},
+	},
+	[182] = {
+		text = {
+			en = "Quest - Howling Fjord - Break the Blockade Zeppelin",
 		},
 	},
 	[183] = {
@@ -667,6 +942,11 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Quest - Howling Fjord - Test at Sea - Start",
 		},
 	},
+	[189] = {
+		text = {
+			en = "Quest - Howling Fjord - Test at Sea - End",
+		},
+	},
 	[190] = {
 		text = {
 			en = "New Agamand, Howling Fjord",
@@ -697,6 +977,21 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Rebel Camp, Stranglethorn Vale",
 		},
 	},
+	[196] = {
+		text = {
+			en = "Test - SP",
+		},
+	},
+	[197] = {
+		text = {
+			en = "Test SP2",
+		},
+	},
+	[198] = {
+		text = {
+			en = "Test SP1",
+		},
+	},
 	[199] = {
 		text = {
 			en = "Quest - Howling Fjord - McGoyver Start",
@@ -707,9 +1002,24 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Quest - Howling Fjord - McGoyver End",
 		},
 	},
+	[201] = {
+		text = {
+			en = "Development Land - Kyle Radue Start",
+		},
+	},
+	[202] = {
+		text = {
+			en = "Development Land - Kyle Radue End",
+		},
+	},
 	[203] = {
 		text = {
 			en = "Quest - Stars' Rest -> Wintergarde",
+		},
+	},
+	[204] = {
+		text = {
+			en = "Quest - New Agamand -> Venomspite",
 		},
 	},
 	[205] = {
@@ -717,14 +1027,64 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Zul'Aman, Ghostlands",
 		},
 	},
+	[206] = {
+		text = {
+			en = "Transport, Feathermoon (NE Ship)",
+		},
+	},
+	[207] = {
+		text = {
+			en = "Quest - Howling Fjord - Sister Mercy (Start)",
+		},
+	},
+	[208] = {
+		text = {
+			en = "Quest - Howling Fjord - Sister Mercy (End)",
+		},
+	},
+	[209] = {
+		text = {
+			en = "Quest - Sunwell Daily - Dead Scar Bombing - Start",
+		},
+	},
 	[210] = {
 		text = {
 			en = "Quest - Sunwell Daily - Dead Scar Bombing - End",
 		},
 	},
+	[211] = {
+		text = {
+			en = "Quest - Sunwell Daily - Ship Bombing - Start",
+		},
+	},
+	[212] = {
+		text = {
+			en = "Quest - Sunwell Daily - Ship Bombing - End",
+		},
+	},
 	[213] = {
 		text = {
 			en = "Shattered Sun Staging Area",
+		},
+	},
+	[214] = {
+		text = {
+			en = "Quest - Howling Fjord - Naglfar (Start)",
+		},
+	},
+	[215] = {
+		text = {
+			en = "Quest - Howling Fjord - Naglfar (Nodes)",
+		},
+	},
+	[218] = {
+		text = {
+			en = "Transport, Howling Fjord (Gondola, Top)",
+		},
+	},
+	[219] = {
+		text = {
+			en = "Transport, Howling Fjord (Gondola, Bottom)",
 		},
 	},
 	[221] = {
@@ -737,6 +1097,16 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Beryl Point, Borean",
 		},
 	},
+	[223] = {
+		text = {
+			en = "Quest - Naglevar",
+		},
+	},
+	[224] = {
+		text = {
+			en = "Borean Tundra, Naglevar",
+		},
+	},
 	[225] = {
 		text = {
 			en = "Amber Ledge, Borean (to Coldarra)",
@@ -747,9 +1117,39 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Transitus Shield, Coldarra",
 		},
 	},
+	[227] = {
+		text = {
+			en = "Transport, PattyMacDevTest",
+		},
+	},
+	[228] = {
+		text = {
+			en = "Development Land - Pat Test Start",
+		},
+	},
+	[229] = {
+		text = {
+			en = "Development Land - Pat Test End",
+		},
+	},
+	[230] = {
+		text = {
+			en = "Transport, Tuskarr 01",
+		},
+	},
+	[231] = {
+		text = {
+			en = "Transport, Tuskarr 02",
+		},
+	},
 	[232] = {
 		text = {
 			en = "Borean Tundra - Warsong Hold Wolf Start",
+		},
+	},
+	[233] = {
+		text = {
+			en = "Borean Tundra - Warsong Hold Wolf End",
 		},
 	},
 	[234] = {
@@ -767,6 +1167,11 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Coldarra, Keristrasza to Malygos",
 		},
 	},
+	[237] = {
+		text = {
+			en = "Coldarra, Keristrasza Landing",
+		},
+	},
 	[239] = {
 		text = {
 			en = "Borean Tundra - Quest - Dusk Start",
@@ -777,9 +1182,19 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Borean Tundra - Quest - Dusk - End",
 		},
 	},
+	[241] = {
+		text = {
+			en = "Transport, Valiance Keep",
+		},
+	},
 	[242] = {
 		text = {
 			en = "Quest - Dragonblight - Spiritual Vision - Begin",
+		},
+	},
+	[243] = {
+		text = {
+			en = "Quest - Dragonblight - Spiritual Vision - End",
 		},
 	},
 	[244] = {
@@ -877,9 +1292,34 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Grizzly Hills, Alliance Log Ride Start 01",
 		},
 	},
+	[263] = {
+		text = {
+			en = "Grizzly Hills, Alliance Log Ride End 01",
+		},
+	},
+	[264] = {
+		text = {
+			en = "Transport, Auberdine (NEW)",
+		},
+	},
+	[265] = {
+		text = {
+			en = "Transport, Theramore (NEW)",
+		},
+	},
+	[266] = {
+		text = {
+			en = "Transport, Menethil (NEW)",
+		},
+	},
 	[267] = {
 		text = {
 			en = "Grizzly Hills, Alliance Log Ride Start",
+		},
+	},
+	[268] = {
+		text = {
+			en = "Grizzly Hills, Alliance Log Ride End",
 		},
 	},
 	[269] = {
@@ -897,9 +1337,19 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Grizzly Hills, Horde Log Ride Start",
 		},
 	},
+	[272] = {
+		text = {
+			en = "Grizzly Hills, Horde Log Ride End",
+		},
+	},
 	[273] = {
 		text = {
 			en = "Wyrmrest Temple - bottom to top, Dragonblight - Begin",
+		},
+	},
+	[274] = {
+		text = {
+			en = "Wyrmrest Temple - bottom to top, Dragonblight - End",
 		},
 	},
 	[275] = {
@@ -907,9 +1357,24 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Wyrmrest Temple - top to bottom, Dragonblight - Begin",
 		},
 	},
+	[276] = {
+		text = {
+			en = "Wyrmrest Temple - top to bottom, Dragonblight - End",
+		},
+	},
 	[277] = {
 		text = {
 			en = "Wyrmrest Temple - top to middle, Dragonblight - Begin",
+		},
+	},
+	[278] = {
+		text = {
+			en = "Wyrmrest Temple - top to middle, Dragonblight - End",
+		},
+	},
+	[279] = {
+		text = {
+			en = "Wyrmrest Temple - middle to top, Dragonblight - End",
 		},
 	},
 	[280] = {
@@ -917,9 +1382,19 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Wyrmrest Temple - middle to top, Dragonblight - Begin",
 		},
 	},
+	[281] = {
+		text = {
+			en = "Wyrmrest Temple - middle to bottom, Dragonblight - End",
+		},
+	},
 	[282] = {
 		text = {
 			en = "Wyrmrest Temple - middle to bottom, Dragonblight - Begin",
+		},
+	},
+	[283] = {
+		text = {
+			en = "Wyrmrest Temple - bottom to middle, Dragonblight - End",
 		},
 	},
 	[284] = {
@@ -932,9 +1407,19 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Quest - Wintergarde -> Stars' Rest (Start)",
 		},
 	},
+	[286] = {
+		text = {
+			en = "Quest - Wintergarde -> Stars' Rest (End)",
+		},
+	},
 	[287] = {
 		text = {
 			en = "Quest - Valgarde -> Westguard Keep Start",
+		},
+	},
+	[288] = {
+		text = {
+			en = "Quest - Valgarde -> Westguard Keep End",
 		},
 	},
 	[289] = {
@@ -947,9 +1432,19 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Argent Stand, Zul'Drak",
 		},
 	},
+	[291] = {
+		text = {
+			en = "Ruined City Post 01, Zul'Drak",
+		},
+	},
 	[292] = {
 		text = {
 			en = "Flavor - Stormwind Harbor  - Start",
+		},
+	},
+	[293] = {
+		text = {
+			en = "Flavor - Stormwind Harbor - Stop",
 		},
 	},
 	[294] = {
@@ -967,9 +1462,34 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Unu'pe, Borean Tundra",
 		},
 	},
+	[297] = {
+		text = {
+			en = "Sholazar Basin - Quest - Reconnaisance - Start",
+		},
+	},
+	[298] = {
+		text = {
+			en = "Sholazar Basin - Quest - Reconnaisance - End",
+		},
+	},
+	[299] = {
+		text = {
+			en = "Transport: Menethil <-> Valgarde",
+		},
+	},
+	[300] = {
+		text = {
+			en = "Transport, Stormwind",
+		},
+	},
 	[301] = {
 		text = {
 			en = "Quest - Borean Tundra - Check In With Bixie - Begin",
+		},
+	},
+	[302] = {
+		text = {
+			en = "Quest - Borean Tundra - Check In With Bixie - End",
 		},
 	},
 	[303] = {
@@ -1017,6 +1537,11 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Camp Onequah, Grizzly Hills (Quest)",
 		},
 	},
+	[312] = {
+		text = {
+			en = "Light's Breach, Zul'Drak (Quest)",
+		},
+	},
 	[313] = {
 		text = {
 			en = "Westfall Brigade, Grizzly Hills (Quest)",
@@ -1037,9 +1562,19 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Ebon Hold - Acherus -> Death's Breach Start",
 		},
 	},
+	[317] = {
+		text = {
+			en = "Ebon Hold - Acherus -> Death's Breach End",
+		},
+	},
 	[318] = {
 		text = {
 			en = "Ebon Hold - Death's Breach -> Acherus Start",
+		},
+	},
+	[319] = {
+		text = {
+			en = "Ebon Hold - Death's Breach -> Acherus End",
 		},
 	},
 	[320] = {
@@ -1080,6 +1615,21 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[327] = {
 		text = {
 			en = "Bouldercrag's Refuge, The Storm Peaks",
+		},
+	},
+	[328] = {
+		text = {
+			en = "Transport, Icecrown Airship (A)",
+		},
+	},
+	[329] = {
+		text = {
+			en = "Transport, Icecrown Airship (H)",
+		},
+	},
+	[330] = {
+		text = {
+			en = "Transport, Icecrown (Target)",
 		},
 	},
 	[331] = {
@@ -1132,6 +1682,51 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Argent Tournament Grounds, Icecrown",
 		},
 	},
+	[341] = {
+		text = {
+			en = "Ulduar Raid - Interior - Insertion Point",
+		},
+	},
+	[342] = {
+		text = {
+			en = "Ulduar Raid - Iron Concourse",
+		},
+	},
+	[343] = {
+		text = {
+			en = "Splintertree, Ashenvale",
+		},
+	},
+	[344] = {
+		text = {
+			en = "Quest - Splintertree  Post -> Zoramgar",
+		},
+	},
+	[345] = {
+		text = {
+			en = "Quest - Zoramgar, Ashenvale",
+		},
+	},
+	[346] = {
+		text = {
+			en = "Ashenvale 4.x, Azshara to Mor'shan Ramparts",
+		},
+	},
+	[347] = {
+		text = {
+			en = "Ashenvale 4.x, Mor'shan Landing",
+		},
+	},
+	[348] = {
+		text = {
+			en = "Transport: Thunder Bluff <-> Org (Zep)",
+		},
+	},
+	[349] = {
+		text = {
+			en = "Andruk, Zoram'gar",
+		},
+	},
 	[350] = {
 		text = {
 			en = "Hellscream's Watch, Ashenvale",
@@ -1140,6 +1735,11 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[351] = {
 		text = {
 			en = "Stardust Spire, Ashenvale",
+		},
+	},
+	[352] = {
+		text = {
+			en = "Isle of Conquest - Gunships",
 		},
 	},
 	[354] = {
@@ -1217,6 +1817,66 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Ethel Rethor, Desolace",
 		},
 	},
+	[371] = {
+		text = {
+			en = "Vashj'ir - Alliance Start",
+		},
+	},
+	[372] = {
+		text = {
+			en = "Vashj'ir - Alliance End",
+		},
+	},
+	[373] = {
+		text = {
+			en = "Mulgore - Red Cloud Mesa: To Bloodhoof",
+		},
+	},
+	[374] = {
+		text = {
+			en = "Mulgore - Red Cloud Mesa: To Bloodhoof (End)",
+		},
+	},
+	[375] = {
+		text = {
+			en = "Transport, Gadgetzan",
+		},
+	},
+	[376] = {
+		text = {
+			en = "Icecrown Raid - Airship Battle Taxi Paths",
+		},
+	},
+	[377] = {
+		text = {
+			en = "Icecrown Dungeon - Gunships",
+		},
+	},
+	[378] = {
+		text = {
+			en = "Quest - Dun Morogh - Coldridge Valley - Pack Your Bags End",
+		},
+	},
+	[379] = {
+		text = {
+			en = "Icecrown Raid - Saurfang's Ship (End)",
+		},
+	},
+	[380] = {
+		text = {
+			en = "Icecrown Raid - Saurfang's Ship (Start)",
+		},
+	},
+	[381] = {
+		text = {
+			en = "Quest [Transport] Icecrown Raid - Saurfang Ship (START)",
+		},
+	},
+	[382] = {
+		text = {
+			en = "Quest [Transport] Icecrown Raid - Saurfang Ship (END)",
+		},
+	},
 	[383] = {
 		text = {
 			en = "Thondroril River, Eastern Plaguelands",
@@ -1272,6 +1932,11 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "CC Prologue - GT - Battle Flight - Start",
 		},
 	},
+	[395] = {
+		text = {
+			en = "CC Prologue - GT - Battle Flight - End",
+		},
+	},
 	[402] = {
 		text = {
 			en = "Bloodhoof Village, Mulgore",
@@ -1287,6 +1952,36 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Durotar - ET - CC Prologue Spy Frog End",
 		},
 	},
+	[413] = {
+		text = {
+			en = "Quest - 'To The Summit' - Westreach Summit - End",
+		},
+	},
+	[414] = {
+		text = {
+			en = "Quest - 'To The Summit' - Camp Mojache -> Westreach Summit - Begin",
+		},
+	},
+	[429] = {
+		text = {
+			en = "Quest - 'To The Summit' - Mudsprocket -> Westreach Summit - Begin",
+		},
+	},
+	[433] = {
+		text = {
+			en = "Quest - 'To New Thalanaar' - Mudsprocket -> New Thalanaar - Begin",
+		},
+	},
+	[434] = {
+		text = {
+			en = "Quest - 'To New Thalanaar' - New Thalanaar - End",
+		},
+	},
+	[436] = {
+		text = {
+			en = "Quest - 'To New Thalanaar' - Shadebough -> New Thalanaar - Begin",
+		},
+	},
 	[438] = {
 		text = {
 			en = "Durotar - ET - CC Prologue Troll Taxi Bat Start",
@@ -1295,6 +1990,11 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[439] = {
 		text = {
 			en = "Durotar - ET - CC Prologue Troll Recruit End",
+		},
+	},
+	[440] = {
+		text = {
+			en = "Durotar - ET - CC Prologue - Troll Battle End",
 		},
 	},
 	[456] = {
@@ -1315,6 +2015,11 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[460] = {
 		text = {
 			en = "Brill, Tirisfal Glades",
+		},
+	},
+	[509] = {
+		text = {
+			en = "Quest Path 2063: Brian's 4.0 Test Path",
 		},
 	},
 	[513] = {
@@ -1372,6 +2077,11 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Razor Hill, Durotar",
 		},
 	},
+	[538] = {
+		text = {
+			en = "test - JZB - Orgrim's Hammer",
+		},
+	},
 	[539] = {
 		text = {
 			en = "Bootlegger Outpost, Tanaris",
@@ -1427,6 +2137,31 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Nordrassil, Hyjal",
 		},
 	},
+	[560] = {
+		text = {
+			en = "Quest Path 2171: [3.x] Transport, Org -> Undercity (Thundercaller)",
+		},
+	},
+	[561] = {
+		text = {
+			en = "Quest Path 2172: [3.x] Transport, Thunder Bluff -> Org (Zephyr)",
+		},
+	},
+	[562] = {
+		text = {
+			en = "Quest Path 2173: [3.x] Transport, Borean Tundra -> Org (Mighty Wind)",
+		},
+	},
+	[563] = {
+		text = {
+			en = "Quest Path 2174: [3.x] Transport, Grom'gol -> Orgrimmar (The Iron Eagle)",
+		},
+	},
+	[564] = {
+		text = {
+			en = "Quest Path 2175: Stonetalon 4.x - Taxi to Thal'darah Overlook Start",
+		},
+	},
 	[565] = {
 		text = {
 			en = "Dreamer's Rest, Feralas",
@@ -1447,6 +2182,26 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Stonemaul Hold, Feralas",
 		},
 	},
+	[574] = {
+		text = {
+			en = "Quest Path 2201: Dun Morogh - Quest - Flight to Ironforge Airfield",
+		},
+	},
+	[575] = {
+		text = {
+			en = "Quest Path 2203: Dun Morogh - Quest - Striking Back (Bombing Run)",
+		},
+	},
+	[577] = {
+		text = {
+			en = "Quest Path 2206: Ironforge, Dun Morogh - Quest - Breadcrumb to Loch Modan",
+		},
+	},
+	[578] = {
+		text = {
+			en = "Quest Path 2207: Dun Morogh - Quest - Flight to Gol'Bolar from Ironforge Airfield",
+		},
+	},
 	[582] = {
 		text = {
 			en = "Goldshire, Elwynn",
@@ -1460,6 +2215,21 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[584] = {
 		text = {
 			en = "Furlbrow's Pumpkin Farm, Westfall",
+		},
+	},
+	[585] = {
+		text = {
+			en = "Quest Path 293: Transport, Auberdine -> Rut'theran Village, Teldrassil (NO LONGER USED in 4.x)",
+		},
+	},
+	[586] = {
+		text = {
+			en = "Justin Test Node 1",
+		},
+	},
+	[587] = {
+		text = {
+			en = "Justin Test Node 2",
 		},
 	},
 	[589] = {
@@ -1622,9 +2392,19 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Gol'Bolar Quarry, Dun Morogh",
 		},
 	},
+	[621] = {
+		text = {
+			en = "Quest Path 2367: QA's Test Path 1",
+		},
+	},
 	[622] = {
 		text = {
 			en = "Raven Hill, Duskwood",
+		},
+	},
+	[623] = {
+		text = {
+			en = "Quest Path 2374: Deeopholm Test Copy",
 		},
 	},
 	[624] = {
@@ -1635,6 +2415,26 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[625] = {
 		text = {
 			en = "Fairbreeze Village, Eversong Woods",
+		},
+	},
+	[626] = {
+		text = {
+			en = "Quest Path 508: zzzThe Exodar -> Blood Watch, Bloodmyst Isle",
+		},
+	},
+	[627] = {
+		text = {
+			en = "Quest Path 2376: zzzThe Exodar -> Azure Watch, Azuremyst Isle",
+		},
+	},
+	[628] = {
+		text = {
+			en = "Quest Path 507: zzzBlood Watch, Bloodmyst Isle -> The Exodar",
+		},
+	},
+	[629] = {
+		text = {
+			en = "Quest Path 2375: zzzAzure Watch, Azuremyst Isle -> The Exodar",
 		},
 	},
 	[630] = {
@@ -1812,14 +2612,34 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Forsaken Rear Guard, Silverpine Forest",
 		},
 	},
+	[682] = {
+		text = {
+			en = "Quest Path 1843: Transport - Gadgetzan to ??? JZB RVM Test [DISABLED]",
+		},
+	},
 	[683] = {
 		text = {
 			en = "Valormok, Azshara",
 		},
 	},
+	[728] = {
+		text = {
+			en = "Quest Path 2653: 4.1 - ZG Event - Rebel Camp -> Explorers' League",
+		},
+	},
+	[757] = {
+		text = {
+			en = "Quest Path 2695: PattyMac Taxi Path Speed Test",
+		},
+	},
 	[781] = {
 		text = {
 			en = "Sanctuary of Malorne, Hyjal",
+		},
+	},
+	[888] = {
+		text = {
+			en = "Quest Path 2837: Quest - Jade Forest: (DLA) - Dawnblossom to Jade Mines",
 		},
 	},
 	[894] = {
@@ -1830,6 +2650,91 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[895] = {
 		text = {
 			en = "Dawn's Blossom, Jade Forest",
+		},
+	},
+	[906] = {
+		text = {
+			en = "Dragon Soul Raid - Wyrmrest Temple Base",
+		},
+	},
+	[907] = {
+		text = {
+			en = "Dragon Soul Raid - East Sarlac",
+		},
+	},
+	[918] = {
+		text = {
+			en = "Quest Path 2954: Quest - Valley of the Four Winds (Flyback: Chen A) PRK",
+		},
+	},
+	[919] = {
+		text = {
+			en = "Quest Path 2955: Quest - Valley of the Four Winds (Flyback: Chen B) PRK",
+		},
+	},
+	[920] = {
+		text = {
+			en = "Quest Path 2956: Quest - Valley of the Four Winds (Flyback: Chen C) PRK",
+		},
+	},
+	[921] = {
+		text = {
+			en = "Quest Path 2957: Quest - Valley of the Four Winds (Flyback: Chen D) PRK",
+		},
+	},
+	[922] = {
+		text = {
+			en = "Quest Path 2958: Quest - Valley of the Four Winds (Flyback: Sad Panda A) PRK",
+		},
+	},
+	[923] = {
+		text = {
+			en = "Quest Path 2959: Quest - Valley of the Four Winds (Flyback: Sad Panda B) PRK",
+		},
+	},
+	[924] = {
+		text = {
+			en = "Quest Path 2960: Quest - Valley of the Four Winds (Flyback: Horde A) PRK",
+		},
+	},
+	[925] = {
+		text = {
+			en = "Quest Path 2961: Quest - Valley of the Four Winds (Flyback: Alliance A) PRK",
+		},
+	},
+	[926] = {
+		text = {
+			en = "Quest Path 2962: Quest - Valley of the Four Winds (Flyback: Horde B) PRK",
+		},
+	},
+	[927] = {
+		text = {
+			en = "Quest Path 2963: Quest - Valley of the Four Winds (Flyback: Alliance B) PRK",
+		},
+	},
+	[935] = {
+		text = {
+			en = "Quest Path 2986: Jade Forest: -hmc (Taxi: Glassfin Village to Dawnblossom)",
+		},
+	},
+	[949] = {
+		text = {
+			en = "Quest Path 3002: Jade Forest: -hmc (Taxi: Serpent's Spine to Statue Top)",
+		},
+	},
+	[950] = {
+		text = {
+			en = "Quest Path 3003: Jade Forest: -hmc (Taxi: Statue Top to Serpent's Spine)",
+		},
+	},
+	[951] = {
+		text = {
+			en = "Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise",
+		},
+	},
+	[963] = {
+		text = {
+			en = "Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise",
 		},
 	},
 	[966] = {
@@ -1922,6 +2827,21 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Marista, Krasarang Wilds",
 		},
 	},
+	[998] = {
+		text = {
+			en = "Quest Path 3154: Quest - Kun-Lai Summit - Neverrest Peak -> Valley of Emperors",
+		},
+	},
+	[1009] = {
+		text = {
+			en = "Quest Path 3173: Quest - Kun-Lai Summit - Valley -> Whispercloud Rise",
+		},
+	},
+	[1016] = {
+		text = {
+			en = "Quest Path 3066: Quest - Jade Forest - Serpent's Spine -> VotFW - JLR",
+		},
+	},
 	[1017] = {
 		text = {
 			en = "Binan Village, Kun-Lai Summit",
@@ -1970,6 +2890,51 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[1029] = {
 		text = {
 			en = "Tavern in the Mists, The Veiled Stair",
+		},
+	},
+	[1030] = {
+		text = {
+			en = "Quest Path 3244: Jade Forest: -hmc (Taxi: Serpent's Spine to East Temple)",
+		},
+	},
+	[1032] = {
+		text = {
+			en = "Quest Path 3246: Quest - Kun-Lai Summit - GoWB - To the Wall! (NLC)",
+		},
+	},
+	[1038] = {
+		text = {
+			en = "Quest Path 3248: Quest - Kun-Lai Summit - GoWB - Back from the Wall (NLC)",
+		},
+	},
+	[1046] = {
+		text = {
+			en = "Jade Forest - Cliff path 04 Start",
+		},
+	},
+	[1047] = {
+		text = {
+			en = "Jade Forest - Cliff path 04 End",
+		},
+	},
+	[1048] = {
+		text = {
+			en = "Quest Path 3263: Jade forest - Cliff path 04",
+		},
+	},
+	[1049] = {
+		text = {
+			en = "Quest Path 3264: Jade Forest - Cliff Path 01",
+		},
+	},
+	[1050] = {
+		text = {
+			en = "Quest Path 3265: Jade Forest - Cliff Path 02",
+		},
+	},
+	[1051] = {
+		text = {
+			en = "Quest Path 3266: Jade Forest - Cliff Path 03",
 		},
 	},
 	[1052] = {
@@ -2027,6 +2992,16 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Serpent's Spine, Vale of Eternal Blossoms",
 		},
 	},
+	[1076] = {
+		text = {
+			en = "Quest Path 3375: Jade Forest: JSB - East Temple -> Grookin' Hill",
+		},
+	},
+	[1079] = {
+		text = {
+			en = "Quest Path 3377: Jade Forest: JSB - East Temple -> Glassfin Village",
+		},
+	},
 	[1080] = {
 		text = {
 			en = "Serpent's Overlook, Jade Forest",
@@ -2037,14 +3012,54 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "The Briny Muck, Dread Wastes",
 		},
 	},
+	[1091] = {
+		text = {
+			en = "Quest Path 3448: Dread Wastes: Klaxxi'vess -> Briny Muck Quest Path",
+		},
+	},
+	[1092] = {
+		text = {
+			en = "Quest Path 3449: Dread Wastes: Klaxxi'vess -> Lake of Stars Quest Path",
+		},
+	},
+	[1104] = {
+		text = {
+			en = "Test - Spy Quest H01a - PRK",
+		},
+	},
+	[1105] = {
+		text = {
+			en = "Test - Spy Quest H01b - PRK",
+		},
+	},
+	[1114] = {
+		text = {
+			en = "Quest Path 3481: Quest - Kun-Lai Summit: JLR - Zouchin Village -> Isle of Reckoning",
+		},
+	},
 	[1115] = {
 		text = {
 			en = "The Lion's Redoubt, Dread Wastes",
 		},
 	},
+	[1116] = {
+		text = {
+			en = "Quest Path 3482: Quest - Kun-Lai Summit: JLR - Isle of Reckoning - Zouchin",
+		},
+	},
 	[1117] = {
 		text = {
 			en = "Serpent's Spine, Kun-Lai Summit",
+		},
+	},
+	[1130] = {
+		text = {
+			en = "Quest Path 3506: Jade Forest: -hmc (Taxi: Serpent's Spine to Statue Top) NEW (Tab 870)",
+		},
+	},
+	[1131] = {
+		text = {
+			en = "Quest Path 3507: Jade Forest: -hmc (Taxi: Statue Top to Serpent's Spine) NEW (Tab 870)",
 		},
 	},
 	[1190] = {
@@ -2067,6 +3082,21 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Bozzle's Wreck, Isle Of Giants",
 		},
 	},
+	[1284] = {
+		text = {
+			en = "Quest Path 3877: Garrosh Raid - Siege Engineer - Pipe Transfer",
+		},
+	},
+	[1291] = {
+		text = {
+			en = "Quest Path 3885: Timeless Isle 5.4 - Vignette - Source of Water - Bubble Up (RKS) [REUSEME]",
+		},
+	},
+	[1292] = {
+		text = {
+			en = "Quest Path 3886: Timeless Isle 5.4 - Vignette - Source of Water - Bubble Down (RKS) [REUSEME]",
+		},
+	},
 	[1293] = {
 		text = {
 			en = "Tushui Landing, Timeless Isle",
@@ -2075,6 +3105,16 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[1294] = {
 		text = {
 			en = "Huojin Landing, Timeless Isle",
+		},
+	},
+	[1350] = {
+		text = {
+			en = "Shadowmoon Valley 6.0 - Observatory (JP3)",
+		},
+	},
+	[1351] = {
+		text = {
+			en = "Shadowmoon Valley 6.0 - Ironhorde POI (JP3)",
 		},
 	},
 	[1381] = {
@@ -2095,6 +3135,11 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[1384] = {
 		text = {
 			en = "Exile's Rise, Shadowmoon Valley",
+		},
+	},
+	[1385] = {
+		text = {
+			en = "Arkaat Outpost, Shadowmoon Valley",
 		},
 	},
 	[1386] = {
@@ -2122,6 +3167,11 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Stonefang Outpost, Frostfire Ridge",
 		},
 	},
+	[1394] = {
+		text = {
+			en = "Thunder Pass. Frostfire Ridge",
+		},
+	},
 	[1395] = {
 		text = {
 			en = "Thunder Pass, Frostfire Ridge",
@@ -2140,6 +3190,26 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[1420] = {
 		text = {
 			en = "Stormshield (Alliance), Ashran",
+		},
+	},
+	[1421] = {
+		text = {
+			en = "Shadowmoon Valley 6.0:Jp3 - Darktide Roost - Bottom Of Hill",
+		},
+	},
+	[1422] = {
+		text = {
+			en = "Shadowmoon Valley 6.0:JP3 - Darktide Roost - Top of Hill",
+		},
+	},
+	[1430] = {
+		text = {
+			en = "Test Loc 1, Talador",
+		},
+	},
+	[1431] = {
+		text = {
+			en = "Test Loc 2, Talador",
 		},
 	},
 	[1432] = {
@@ -2212,6 +3282,26 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Terokkar Refuge, Talador",
 		},
 	},
+	[1463] = {
+		text = {
+			en = "Quest Path 4263: Draenor Zone Breadcrumb - Frostfire Garrison > Talador Start Loc (CSA)",
+		},
+	},
+	[1464] = {
+		text = {
+			en = "Quest Path 4266: Draenor Zone Breadcrumb - Shadowmoon Garrison > Talador Start Loc (CSA)",
+		},
+	},
+	[1465] = {
+		text = {
+			en = "Quest Path 4269: Draenor Zone Breadcrumb - Shadowmoon Garrison > Nagrand Start Loc (ELM)",
+		},
+	},
+	[1466] = {
+		text = {
+			en = "Quest Path 4270: Draenor Zone Breadcrumb - Frostfire Ridge Garrison > Nagrand Start Loc (ELM)",
+		},
+	},
 	[1467] = {
 		text = {
 			en = "The Draakorium, Shadowmoon Valley",
@@ -2232,14 +3322,59 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Lunarfall (Alliance), Shadowmoon Valley",
 		},
 	},
+	[1477] = {
+		text = {
+			en = "Quest Path 4316: Frostfire Ridge - Garrison - Max-Level Chapter - Sargerei - Taxi Path to Shadowmoon (HMC)",
+		},
+	},
 	[1487] = {
 		text = {
 			en = "Axefall, Spires of Arak",
 		},
 	},
+	[1488] = {
+		text = {
+			en = "Quest Path 4333: Shadowmoon Valley 6.0:JP3 - Darktide Roost - Taxi Path to Darktide Roost",
+		},
+	},
+	[1489] = {
+		text = {
+			en = "Quest Path 4334: Frostfire Ridge:JP3 - Darktide Roost - Taxi to Darktide Roost",
+		},
+	},
+	[1490] = {
+		text = {
+			en = "Quest Path 4337: Spires of Arak 6.0 - Horde Garrison Outpost > Shadow's Defiance",
+		},
+	},
 	[1493] = {
 		text = {
 			en = "Southport, Spires of Arak",
+		},
+	},
+	[1494] = {
+		text = {
+			en = "Quest Path 4341: Spires of Arak 6.0 - Alliance Garrison Outpost > Shadow's Defiance",
+		},
+	},
+	[1495] = {
+		text = {
+			en = "Quest Path 4342: Shadowmoon Valley 6.0:JP3 - A - Broken Precipice - Taxi Path to Broken Precipice",
+		},
+	},
+	[1496] = {
+		text = {
+			en = "Quest Path 4345: Spires of Arak 6.0 - Shattered Hand Poison Camp > Horde Garrison Outpost",
+		},
+	},
+	[1497] = {
+		text = {
+			en = "Quest Path 4346: Spires of Arak 6.0 - Shattered Hand Poison Camp > Alliance Garrison Outpost",
+		},
+	},
+	[1498] = {
+		text = {
+			en = "Quest Path 4353: Frostfire Ridge:JP3 - Broken Precipice - Taxi to Nagrand / Broken Precipice",
 		},
 	},
 	[1502] = {
@@ -2337,6 +3472,11 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Iron Docks, Gorgrond",
 		},
 	},
+	[1527] = {
+		text = {
+			en = "Quest Path 4442: Spires of Arak: (DLA) - Veil Terokk -> Talon Watch Breadcrumb",
+		},
+	},
 	[1528] = {
 		text = {
 			en = "Iron Siegeworks, Frostfire Ridge",
@@ -2345,6 +3485,16 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[1529] = {
 		text = {
 			en = "Darktide Roost, Shadowmoon Valley",
+		},
+	},
+	[1535] = {
+		text = {
+			en = "Quest Path 4535: Quest Path - Spires of Arak 6.0 - Horde Garrison Outpost > Pinchwhistle Gearworks (LWB)",
+		},
+	},
+	[1536] = {
+		text = {
+			en = "Quest Path 4538: Quest Path - Spires of Arak 6.0 - Alliance Garrison Outpost > Pinchwhistle Gearworks (LWB)",
 		},
 	},
 	[1537] = {
@@ -2362,6 +3512,46 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Skysea Ridge, Gorgrond",
 		},
 	},
+	[1540] = {
+		text = {
+			en = "Quest Path 4579: Talador 6.0 - Zangarra > Khadgar's Tower",
+		},
+	},
+	[1541] = {
+		text = {
+			en = "Quest Path 4580: Talador 6.0 - Khadgar's Tower > Zangarra",
+		},
+	},
+	[1547] = {
+		text = {
+			en = "Quest Path 4590: Shadowmoon Valley 6.0:JP3 - A - Ashran - Taxi Path to Ashran Staging Area",
+		},
+	},
+	[1549] = {
+		text = {
+			en = "Quest Path 4600: Frostfire Ridge:JP3 - Ashran Staging Area - Taxi to Ashran",
+		},
+	},
+	[1550] = {
+		text = {
+			en = "Quest Path 4599: Shadowmoon 6.x - 'The Search for Owynn Graddock': Garrison, Shadowmoon Valley -> Bloodmaul Slag Mines, Frostfire Ridge (HMC)",
+		},
+	},
+	[1553] = {
+		text = {
+			en = "Quest Path 4634: Shadowmoon 6.x - 'Pinchwhistle Gearworks': Garrison, Shadowmoon Valley -> Pinchwhistle Gearworks, Spires of Arak (LWB)",
+		},
+	},
+	[1554] = {
+		text = {
+			en = "Quest Path 4635: Frostfire 6.x - 'Pinchwhistle Gearworks': Garrison, Frostfire ->Pinchwhistle Gearworks, Spires of Arak (LWB)",
+		},
+	},
+	[1555] = {
+		text = {
+			en = "Quest Path 4636: Shadowmoon Valley, Tier 3 Garrison -> Ashran, Stormshield (Shortcut Path) (CSA)",
+		},
+	},
 	[1556] = {
 		text = {
 			en = "Tranquil Court, Shadowmoon Valley",
@@ -2370,6 +3560,16 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[1559] = {
 		text = {
 			en = "Wolf's Stand, Frostfire Ridge",
+		},
+	},
+	[1562] = {
+		text = {
+			en = "Quest Path 4665: Ashran - Lane - Warspear to Stormshield",
+		},
+	},
+	[1563] = {
+		text = {
+			en = "Quest Path 4666: Ashran - Lane - Stormshield to Warspear",
 		},
 	},
 	[1567] = {
@@ -2407,9 +3607,44 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Everbloom Overlook, Gorgrond",
 		},
 	},
+	[1581] = {
+		text = {
+			en = "Quest Path 4881: Lunarfall, Shadowmoon Valley -> Terokkar Pass, Spires of Arak",
+		},
+	},
+	[1582] = {
+		text = {
+			en = "Quest Path 4888: Frostwall Garrison, Frostfire Ridge -> Terokkar Pass, Spires of Arak",
+		},
+	},
+	[1599] = {
+		text = {
+			en = "Quest Path 4958: Garrison - 6.1 Chapter - H - Taxi to Iron Docks - JMC",
+		},
+	},
+	[1601] = {
+		text = {
+			en = "Quest Path 4960: Garrison - 6.1 Chapter - H - Taxi from Iron Docks to Garrison - JMC",
+		},
+	},
+	[1605] = {
+		text = {
+			en = "Quest Path 4965: Garrison - 6.1 Chapter - A - Taxi from Garrison to Iron Docks - JMC",
+		},
+	},
+	[1606] = {
+		text = {
+			en = "Quest Path 4966: Garrison - 6.1 Chapter - A - Taxi from Iron Docks to Garrison - JMC",
+		},
+	},
 	[1613] = {
 		text = {
 			en = "Azurewing Repose, Azsuna",
+		},
+	},
+	[1614] = {
+		text = {
+			en = "Quest Path 4974: 6.2 Tanaan - Quest - H - From Vol'mar to Iron Front - JMC",
 		},
 	},
 	[1615] = {
@@ -2432,9 +3667,44 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Illidari Stand, Azsuna",
 		},
 	},
+	[1625] = {
+		text = {
+			en = "Quest Path 4987: 6.2 Tanaan - Lion's Watch - Taxi Path to Aktar's Post (LWB)",
+		},
+	},
+	[1626] = {
+		text = {
+			en = "Quest Path 4988: 6.2 Tanaan - Volmar - Taxi Path to Aktar's Post (LWB)",
+		},
+	},
 	[1633] = {
 		text = {
 			en = "Shackle's Den, Azsuna",
+		},
+	},
+	[1634] = {
+		text = {
+			en = "Quest Path 5017: 7.0 Azsuna - Rift 01 - East Chasm -> West Chasm",
+		},
+	},
+	[1635] = {
+		text = {
+			en = "Quest Path 5018: 7.0 Azsuna - Rift 01 - West Chasm -> East Chasm",
+		},
+	},
+	[1636] = {
+		text = {
+			en = "Quest Path 5019: 7.0 Azsuna - Rift 02 - Tower -> Rock (ZTO)",
+		},
+	},
+	[1637] = {
+		text = {
+			en = "Quest Path 5020: 7.0 Azsuna - Rift 03, Tower - Base -> Top (ZTO/PRK)",
+		},
+	},
+	[1642] = {
+		text = {
+			en = "Quest Path 5026: 6.2 Tanaan - Quest - A - From Lion's Watch to Iron Front - JMC",
 		},
 	},
 	[1643] = {
@@ -2467,6 +3737,21 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Sha'naari Refuge, Tanaan Jungle",
 		},
 	},
+	[1660] = {
+		text = {
+			en = "Bret Test 3-3s",
+		},
+	},
+	[1661] = {
+		text = {
+			en = "Bret Test 3-3e",
+		},
+	},
+	[1662] = {
+		text = {
+			en = "Carl Test a",
+		},
+	},
 	[1673] = {
 		text = {
 			en = "Lorlathil, Val'sharah",
@@ -2477,9 +3762,44 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Bradensbrook, Val'sharah",
 		},
 	},
+	[1716] = {
+		text = {
+			en = "Quest Path 5222: Garrison, Alliance Shipyard -> Tanaan (IGC)",
+		},
+	},
 	[1719] = {
 		text = {
 			en = "Thunder Totem, Highmountain",
+		},
+	},
+	[1722] = {
+		text = {
+			en = "Quest Path 5262: Stormheim: (DLA) - Valdisdall -> Dreadwake (Spell Taxi)",
+		},
+	},
+	[1723] = {
+		text = {
+			en = "Quest Path 5263: Stormheim: (DLA) - Valdisdall -> Greywatch (Spell Taxi)",
+		},
+	},
+	[1729] = {
+		text = {
+			en = "Quest Path 5283: Alliance Garrison (Tier 3) > Alliance Shipyard",
+		},
+	},
+	[1730] = {
+		text = {
+			en = "Quest Path 5284: Alliance Shipyard > Alliance Garrison (Tier 3)",
+		},
+	},
+	[1731] = {
+		text = {
+			en = "Alliance Shipyard Taxi",
+		},
+	},
+	[1732] = {
+		text = {
+			en = "Quest Path 5286: 7.0 DH-Mardum - Illidari Foothold -> The Fel Hammer (ELM)",
 		},
 	},
 	[1738] = {
@@ -2515,6 +3835,11 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[1747] = {
 		text = {
 			en = "Skyfire Triage Camp, Stormheim",
+		},
+	},
+	[1748] = {
+		text = {
+			en = "Quest Path 5333: 7.0 Artifacts - Monk - Order Formation - Number Nine Flight - LWB",
 		},
 	},
 	[1753] = {
@@ -2587,9 +3912,119 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Stonehoof Watch, Highmountain",
 		},
 	},
+	[1783] = {
+		text = {
+			en = "Quest Path 5500: 7.0 Azsuna - Rift 02 - Rock -> Tower (ZTO)",
+		},
+	},
+	[1784] = {
+		text = {
+			en = "Quest Path 5509: 7.0 Highmountain - Stonehoof Watch -> Sylvan Falls (Quest, ZTO)",
+		},
+	},
+	[1787] = {
+		text = {
+			en = "Quest Path 5512: Quest Path 5020: 7.0 Azsuna - Rift 03, Base - Tower (ZTO)",
+		},
+	},
+	[1800] = {
+		text = {
+			en = "Quest Path 4621: [OLD]7.0 Quest - Azsuna (Down to Azsuna: Unlearned Taxi Dalaran --> Azsuna - Alliance) - ELM",
+		},
+	},
+	[1801] = {
+		text = {
+			en = "Quest Path 5597: [OLD]7.0 Quest - Azsuna (Down to Azsuna: Unlearned Taxi Dalaran --> Azsuna - Horde) - ELM",
+		},
+	},
+	[1803] = {
+		text = {
+			en = "Quest Path 5615: 7.0 Dalaran -> Trueshot Lodge, Highmountain",
+		},
+	},
+	[1813] = {
+		text = {
+			en = "Quest Path 5643: 7.0 Quest - Azsuna (Down to Azsuna: Unlearned Taxi Dalaran --> Azsuna - Alliance) - ELM",
+		},
+	},
+	[1814] = {
+		text = {
+			en = "Quest Path 5645: [OLD2]7.0 Quest - Azsuna (Down to Azsuna: Unlearned Taxi Dalaran --> Azsuna - Horde) - ELM",
+		},
+	},
 	[1815] = {
 		text = {
 			en = "The Dreamgrove, Val'sharah",
+		},
+	},
+	[1818] = {
+		text = {
+			en = "Quest Path 5654: 7.0 Artifacts - Druid - Feral - Q:42428 - Dreamgrove -> Ashamane's Fall - LWB",
+		},
+	},
+	[1819] = {
+		text = {
+			en = "Quest Path 5655: 7.0 Quest - Azsuna (Down to Azsuna: Unlearned Taxi Dalaran --> Azsuna - Horde) - ELM",
+		},
+	},
+	[1825] = {
+		text = {
+			en = "Quest Path 5667: 7.0 DH-OHC - 'Malace in Vrykul Land' Alliance - Dalaran -> Valdishall (ELM)",
+		},
+	},
+	[1826] = {
+		text = {
+			en = "Quest Path 5668: 7.0 DH-OHC - 'Malace in Vrykul Land' Horde - Dalaran -> Valdishall (ELM)",
+		},
+	},
+	[1827] = {
+		text = {
+			en = "Quest Path 5669: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Rings Portal 01 - SBV",
+		},
+	},
+	[1828] = {
+		text = {
+			en = "Quest Path 5670: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Rings Portal Top -> Ring A - SBV",
+		},
+	},
+	[1829] = {
+		text = {
+			en = "Quest Path 5671: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Rings Portal Middle 02 - SBV",
+		},
+	},
+	[1830] = {
+		text = {
+			en = "Quest Path 5672: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Rings Portal Middle 03 - SBV",
+		},
+	},
+	[1831] = {
+		text = {
+			en = "Quest Path 5673: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Side Platform Portal B -> Ring C - SBV",
+		},
+	},
+	[1832] = {
+		text = {
+			en = "Quest Path 5674: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Portal - Ring A -> Center - SBV",
+		},
+	},
+	[1833] = {
+		text = {
+			en = "Quest Path 5675: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Portal - Ring B -> Center - SBV",
+		},
+	},
+	[1834] = {
+		text = {
+			en = "Quest Path 5676: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Side Platform Portal A -> Ring B - SBV",
+		},
+	},
+	[1835] = {
+		text = {
+			en = "Quest Path 5677: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Side Platform Portal C -> Ring A - SBV",
+		},
+	},
+	[1836] = {
+		text = {
+			en = "Quest Path 5678: 7.0 Order Hall - Mage - Ch 4 - The Oculus - Rings Portal - Ring C -> Ring A - SBV",
 		},
 	},
 	[1837] = {
@@ -2615,6 +4050,21 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[1841] = {
 		text = {
 			en = "Western Suramar",
+		},
+	},
+	[1842] = {
+		text = {
+			en = "Carl Test b",
+		},
+	},
+	[1843] = {
+		text = {
+			en = "Carl Test c",
+		},
+	},
+	[1844] = {
+		text = {
+			en = "Carl Test d",
 		},
 	},
 	[1845] = {
@@ -2692,9 +4142,59 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Hafr Fjall, Stormheim",
 		},
 	},
+	[1864] = {
+		text = {
+			en = "Quest Path 5598: Nesingwary, Highmountain -> Shipwreck Cove, Highmountain [Unlearned]",
+		},
+	},
+	[1865] = {
+		text = {
+			en = "Boost 2.0 - Alliance - Leave Point",
+		},
+	},
+	[1867] = {
+		text = {
+			en = "Quest Path 5911: 7.0 Dalaran -> Acherus",
+		},
+	},
+	[1868] = {
+		text = {
+			en = "Quest Path 5912: 7.0 Acherus -> Dalaran",
+		},
+	},
+	[1869] = {
+		text = {
+			en = "Quest Path 5913: 7.0 Karazhan - Ballroom -> Opera Portal",
+		},
+	},
 	[1870] = {
 		text = {
 			en = "Eye of Azshara, Azsuna",
+		},
+	},
+	[1871] = {
+		text = {
+			en = "Quest Path 5925: Quest Path 5654: 7.0 Artifacts - Druid - Feral - Q:42428 - Ashamane's Fall -> Dreamgrove - LWB",
+		},
+	},
+	[1874] = {
+		text = {
+			en = "Quest Path 5962: 7.0 Artifacts - Death Knight - Blood - From Dalaran to Broken Shore Portal - Taxi Version - LWB",
+		},
+	},
+	[1875] = {
+		text = {
+			en = "Quest Path 5963: 7.0 Artifacts - Death Knight - Blood - From Broken Shore to Dalaran - Taxi - LWB",
+		},
+	},
+	[1877] = {
+		text = {
+			en = "Quest Path 5626: 7.0 Artifacts - Priest - Holy - Dalaran to Broken Shore Portal - LWB",
+		},
+	},
+	[1878] = {
+		text = {
+			en = "Quest Path 5627: 7.0 Artifacts - Priest - Holy - Quest NPC - Broken Shore - Fly Back - LWB",
 		},
 	},
 	[1879] = {
@@ -2712,9 +4212,114 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Gloaming Reef, Val'sharah",
 		},
 	},
+	[1892] = {
+		text = {
+			en = "Quest Path 6004: 7.2 Assault - Val'sharah - Black Rook - Base Camp to Ramparts - LWB",
+		},
+	},
+	[1893] = {
+		text = {
+			en = "Quest Path 6005: 7.2 Legion Invasion - Val'sharah - 03 - Taxi to Top - LWB",
+		},
+	},
+	[1894] = {
+		text = {
+			en = "Quest Path 6009: 7.1 Suramar -> Black Rook Hold ('We Need Weapons' ) - ZTO",
+		},
+	},
+	[1899] = {
+		text = {
+			en = "Quest Path 6026: 7.2 OHC - Paladin - Light's Hope Chapel (Alliance) -> Broken Shore (1666) - JAP",
+		},
+	},
+	[1900] = {
+		text = {
+			en = "Quest Path 6027: Quest Path 6026: 7.2 OHC - Paladin - Light's Hope Chapel (Horde) -> Broken Shore (1666) - JAP",
+		},
+	},
+	[1902] = {
+		text = {
+			en = "Quest Path 6030: 7.2 Fel Hammer -> 7.2 Mardum",
+		},
+	},
+	[1906] = {
+		text = {
+			en = "The Fel Hammer, Broken Shore",
+		},
+	},
+	[1907] = {
+		text = {
+			en = "Quest Path 6038: 7.0 - Death Knight - No Man's Land - Taxi Route - LWB",
+		},
+	},
+	[1908] = {
+		text = {
+			en = "Quest Path 6036: 7.2 Fel Hammer -> 7.2 Broken Shore",
+		},
+	},
+	[1909] = {
+		text = {
+			en = "Quest Path 6041: 7.2 Wandering Isle -> Stormstout Brewery, Pandaria",
+		},
+	},
+	[1910] = {
+		text = {
+			en = "Quest Path 6042: 7.2 OHC - Priest - Dalaran -> Broken Shore - Teleport (JAP)",
+		},
+	},
+	[1913] = {
+		text = {
+			en = "Quest Path 6048: Quest Path 6005: 7.2 Legion Invasion - Val'sharah - 03 - Taxi to Bottom - LWB",
+		},
+	},
+	[1916] = {
+		text = {
+			en = "Quest Path 6052: 7.2 OHC - Hunter - Trueshot Lodge -> Broken Shore - Teleport (JAP)",
+		},
+	},
+	[1917] = {
+		text = {
+			en = "Quest Path 6053: 7.2 Order Hall - Shaman - Ch 5 - Thunderaan Transport (JLW)",
+		},
+	},
+	[1922] = {
+		text = {
+			en = "Quest Path 6065: 7.2 Assault - Val'sharah - Black Rook - Top to Final Terrace",
+		},
+	},
+	[1923] = {
+		text = {
+			en = "Quest Path 6067: 7.2 Assault - Val'sharah - Black Rook - Base Camp to Final Terrace",
+		},
+	},
+	[1924] = {
+		text = {
+			en = "Quest Path 6068: 7.2 Acherus: The Ebon Hold -> Illidari Camp, Broken Shore",
+		},
+	},
+	[1927] = {
+		text = {
+			en = "Quest Path 6072: 7.2 Order Hall - Rogue - Ch 5 - Temp To BS (JLW)",
+		},
+	},
 	[1928] = {
 		text = {
 			en = "Krokul Hovel, Krokuun",
+		},
+	},
+	[1933] = {
+		text = {
+			en = "Quest Path 6084: Acherus: The Ebon Hold -> Thorim's Peak, Stormheim",
+		},
+	},
+	[1934] = {
+		text = {
+			en = "TEMPAREA1, Argus",
+		},
+	},
+	[1935] = {
+		text = {
+			en = "TEMPAREA2, Argus",
 		},
 	},
 	[1941] = {
@@ -2725,6 +4330,16 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[1942] = {
 		text = {
 			en = "Aalgen Point, Broken Shore",
+		},
+	},
+	[1945] = {
+		text = {
+			en = "Quest Path 6154: 8.0 Zuldazar - Quest - 'King Rastakhan' - ZTO",
+		},
+	},
+	[1947] = {
+		text = {
+			en = "Quest Path 6175: 7.3 Argus - Isle 2 - Alleria Arc - Alleria Shadow Ball Taxi (JAK)",
 		},
 	},
 	[1953] = {
@@ -2755,6 +4370,21 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[1959] = {
 		text = {
 			en = "The Great Seal",
+		},
+	},
+	[1961] = {
+		text = {
+			en = "Quest Path 6233: 8.0 Nazmir - Q: 47250 - Taxi to Jeb'watha ruins - LWB",
+		},
+	},
+	[1962] = {
+		text = {
+			en = "Quest Path 6234: 8.0 Nazmir - Q: 42750 - Flight from Jeb'watha -> Zul'jan - LWB",
+		},
+	},
+	[1964] = {
+		text = {
+			en = "Quest Path 6237: 8.0 Warfronts - Barrens - Intro Quest - Taxi from Theramore to Fort Triumph",
 		},
 	},
 	[1965] = {
@@ -2802,6 +4432,31 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Triumvirate's End, Eredath",
 		},
 	},
+	[1983] = {
+		text = {
+			en = "Quest Path 6309: 8.0 Nazmir - Q: 47631 - Flight from Zul'jan -> Gloom Hollow - LWB",
+		},
+	},
+	[1984] = {
+		text = {
+			en = "Quest Path 6310: 8.0 Nazmir - Q: 47602 - Flight out of Sundered Span - LWB",
+		},
+	},
+	[1985] = {
+		text = {
+			en = "[Hidden] Argus Ground Points Hub (Ground TP out to here, TP to Vindicaar from here)",
+		},
+	},
+	[1986] = {
+		text = {
+			en = "[Hidden] Argus Vindicaar Ground Hub (Vindicaar TP out to here, TP to ground from here)",
+		},
+	},
+	[1987] = {
+		text = {
+			en = "[Hidden] Argus Vindicaar No Load Hub (Vindicaar No Load transition goes through here)",
+		},
+	},
 	[1988] = {
 		text = {
 			en = "Hope's Landing, Antoran Wastes",
@@ -2837,6 +4492,21 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Xibala, Zuldazar",
 		},
 	},
+	[2015] = {
+		text = {
+			en = "Quest Path 6437: 8.0 Nazmir - Q49082 - Flight out of Hir'eek's Lair - LWB",
+		},
+	},
+	[2018] = {
+		text = {
+			en = "Quest Path 6440: 7.3 QA - TEST HOTFIX - Task 110012 - TaxiPathNode - RRB",
+		},
+	},
+	[2020] = {
+		text = {
+			en = "Quest Path 6443: 7.3 QA - TEST HOTFIX - Task 110012 - TaxiPathNode - 2 - RRB",
+		},
+	},
 	[2023] = {
 		text = {
 			en = "Freehold, Tiragarde Sound",
@@ -2867,9 +4537,19 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Barbthorn Ridge, Drustvar",
 		},
 	},
+	[2041] = {
+		text = {
+			en = "Quest Path 6474: Freehold, Tiragarde Sound -> Southwind Ferry Dock, Tiragarde Sound",
+		},
+	},
 	[2042] = {
 		text = {
 			en = "Vigil Hill, Tiragarde Sound",
+		},
+	},
+	[2043] = {
+		text = {
+			en = "xxOLD - Zuldazar, Nazmir Outskirts",
 		},
 	},
 	[2045] = {
@@ -2912,6 +4592,11 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Fletcher's Hollow, Drustvar",
 		},
 	},
+	[2058] = {
+		text = {
+			en = "Staghelm Point, Silithus",
+		},
+	},
 	[2059] = {
 		text = {
 			en = "Southwind Village, Silithus",
@@ -2932,6 +4617,11 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Wolf's Den, Tiragarde Sound",
 		},
 	},
+	[2065] = {
+		text = {
+			en = "Harbor, Zuldazar",
+		},
+	},
 	[2066] = {
 		text = {
 			en = "Atal'Gral, Zuldazar",
@@ -2942,9 +4632,29 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Timberfell Outpost, Tiragarde Sound",
 		},
 	},
+	[2068] = {
+		text = {
+			en = "Scaletrader Post, Zuldazar",
+		},
+	},
+	[2069] = {
+		text = {
+			en = "Crater Bay, Zuldazar",
+		},
+	},
+	[2070] = {
+		text = {
+			en = "Zandalar Arena, Zuldazar",
+		},
+	},
 	[2071] = {
 		text = {
 			en = "Dreadpearl, Zuldazar",
+		},
+	},
+	[2073] = {
+		text = {
+			en = "Throne Room, Zuldazar",
 		},
 	},
 	[2074] = {
@@ -2980,6 +4690,11 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[2080] = {
 		text = {
 			en = "Grimwatt's Crash, Nazmir",
+		},
+	},
+	[2081] = {
+		text = {
+			en = "Alliance Camp - East (TEMP NAME)",
 		},
 	},
 	[2083] = {
@@ -3067,6 +4782,11 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Roughneck Camp, Tiragarde Sound",
 		},
 	},
+	[2103] = {
+		text = {
+			en = "Eastpoint Station, Tiragarde Sound",
+		},
+	},
 	[2104] = {
 		text = {
 			en = "Eastpoint Station, Tiragarde Sound",
@@ -3112,9 +4832,19 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Vulture's Nest, Vol'dun",
 		},
 	},
+	[2113] = {
+		text = {
+			en = "Tortaka Refuge, Vol'dun",
+		},
+	},
 	[2114] = {
 		text = {
 			en = "Deadwood Cove, Vol'dun",
+		},
+	},
+	[2116] = {
+		text = {
+			en = "Quest Path 6698: Horde Embassy, Zuldazar -> Throne Room, Zuldazar",
 		},
 	},
 	[2117] = {
@@ -3145,6 +4875,21 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[2127] = {
 		text = {
 			en = "Anyport, Drustvar",
+		},
+	},
+	[2128] = {
+		text = {
+			en = "Quest Path 6783: 8.0 Stormsong - Monastery -> Water Bridge - GJC",
+		},
+	},
+	[2129] = {
+		text = {
+			en = "Quest Path 6799: 8.0 Nazmir - Player Flight Path to Altar of Rot - (STM)",
+		},
+	},
+	[2130] = {
+		text = {
+			en = "Quest Path 6801: 8.0 Nazmir - Altar of Rot to Zul'jan Ruins - (STM)",
 		},
 	},
 	[2133] = {
@@ -3207,9 +4952,29 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Mistvine Ledge, Zuldazar",
 		},
 	},
+	[2156] = {
+		text = {
+			en = "Quest Path 6967: 8.0 War Campaign - Horde - Chapter 02 - Anyport to Barrowknoll (JLW)",
+		},
+	},
 	[2157] = {
 		text = {
 			en = "Veiled Grotto, Zuldazar",
+		},
+	},
+	[2158] = {
+		text = {
+			en = "Quest Path 6995: 8.0 Quest - Warchief's Command: Thousand Needles! - Orgrimmar --> Mudsprocket (ELM)",
+		},
+	},
+	[2159] = {
+		text = {
+			en = "Quest Path 6996: 8.0 Quest - Warchief's Command: Un'Goro Crater! - Orgrimmar --> Marshal's Stand (ELM)",
+		},
+	},
+	[2160] = {
+		text = {
+			en = "Quest Path 6997: 8.0 Quest - Warchief's Command: Silithus! - Orgrimmar --> Cenarion Hold (ELM)",
 		},
 	},
 	[2161] = {
@@ -3222,6 +4987,11 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Devoted Sanctuary, Vol'dun",
 		},
 	},
+	[2163] = {
+		text = {
+			en = "Quest Path 7004: 8.0 Quest - Warchief's Command: Southern Barrens! - Orgrimmar --> Malaka'jin (ELM)",
+		},
+	},
 	[2164] = {
 		text = {
 			en = "Isle of Fangs, Zuldazar",
@@ -3230,6 +5000,51 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[2165] = {
 		text = {
 			en = "Tusk Isle, Zuldazar",
+		},
+	},
+	[2166] = {
+		text = {
+			en = "Quest Path 7063: 8.0 War Campaign - Horde - Chapter 05 - Plunder Harbor to Flagship (JLW)",
+		},
+	},
+	[2167] = {
+		text = {
+			en = "Quest Path 7064: 8.0 War Campaign - Horde - Chapter 05 - Plunder Harbor to Ship (JLW)",
+		},
+	},
+	[2168] = {
+		text = {
+			en = "Quest Path 7065: 8.0 War Campaign - Horde - Chapter 05 - Ship to Plunder Harbor (JLW)",
+		},
+	},
+	[2169] = {
+		text = {
+			en = "Quest Path 7066: 8.0 War Campaign - Horde - Chapter 05 - Flagship to Plunder Harbor (JLW)",
+		},
+	},
+	[2170] = {
+		text = {
+			en = "Quest Path 7067: 8.0 War Campaign - Horde - Chapter 05 - Ship to Flagship (JLW)",
+		},
+	},
+	[2171] = {
+		text = {
+			en = "Quest Path 7068: 8.0 War Campaign - Horde - Chapter 05 - Flagship to Ship (JLW)",
+		},
+	},
+	[2172] = {
+		text = {
+			en = "Disable Taxi Paths - Source - RRB",
+		},
+	},
+	[2173] = {
+		text = {
+			en = "Disable Taxi Paths - Destination - RRB",
+		},
+	},
+	[2272] = {
+		text = {
+			en = "Quest Path 6801: 8.0 Nazmir - Altar of Rot to Zul'jan Ruins - (STM)",
 		},
 	},
 	[2273] = {
@@ -3267,9 +5082,44 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Stonefist Watch, Tiragarde Sound",
 		},
 	},
+	[2282] = {
+		text = {
+			en = "Quest Path 6478: 8.0 Nazmir - Zuldazar to Talanji's Camp - (STM)",
+		},
+	},
 	[2381] = {
 		text = {
 			en = "The Mugambala, Zuldazar",
+		},
+	},
+	[2382] = {
+		text = {
+			en = "Quest Path 7405: 8.1 War Campaign - A - Ch1 - South Shore -> Ramparts - KRB",
+		},
+	},
+	[2383] = {
+		text = {
+			en = "Quest Path 7496: 8.1 War Campaign - A - Ch1 - Ramparts -> South Shore  - KRB",
+		},
+	},
+	[2384] = {
+		text = {
+			en = "Quest Path 7497: 8.1 War Campaign - A - Ch1 - North Shore -> Ramparts - KRB",
+		},
+	},
+	[2392] = {
+		text = {
+			en = "Quest Path 7569: 8.2 Nazjatar - Kal'methir - Boss Path",
+		},
+	},
+	[2393] = {
+		text = {
+			en = "TEMP, 9.0, Oribos, Bastion",
+		},
+	},
+	[2394] = {
+		text = {
+			en = "TEMP, 9.0, Oribos, Maldraxxus",
 		},
 	},
 	[2395] = {
@@ -3277,9 +5127,29 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Oribos",
 		},
 	},
+	[2396] = {
+		text = {
+			en = "TEMP, 9.0, Oribos, Ardenweald",
+		},
+	},
+	[2397] = {
+		text = {
+			en = "9.0, Zone, Bastion",
+		},
+	},
 	[2398] = {
 		text = {
 			en = "Bleak Redoubt, Maldraxxus",
+		},
+	},
+	[2399] = {
+		text = {
+			en = "TEMP, 9.0, Zone, Revendreth",
+		},
+	},
+	[2400] = {
+		text = {
+			en = "TEMP, 9.0, Zone, Ardenweald",
 		},
 	},
 	[2401] = {
@@ -3357,6 +5227,36 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Overspark Expedition Camp, Mechagon",
 		},
 	},
+	[2467] = {
+		text = {
+			en = "test node",
+		},
+	},
+	[2471] = {
+		text = {
+			en = "test node",
+		},
+	},
+	[2472] = {
+		text = {
+			en = "test node",
+		},
+	},
+	[2473] = {
+		text = {
+			en = "test node",
+		},
+	},
+	[2474] = {
+		text = {
+			en = "adams test node",
+		},
+	},
+	[2475] = {
+		text = {
+			en = "adams second test node",
+		},
+	},
 	[2482] = {
 		text = {
 			en = "The Tidal Conflux",
@@ -3370,6 +5270,16 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[2488] = {
 		text = {
 			en = "Darkhaven, Revendreth",
+		},
+	},
+	[2490] = {
+		text = {
+			en = "Quest Path 7759: Oribos go south 2 (msc)",
+		},
+	},
+	[2506] = {
+		text = {
+			en = "Quest Path 7794: 9.0 Bastion - Temple of Humility - Quest - Transport To Humiity Top (JLW)",
 		},
 	},
 	[2511] = {
@@ -3397,6 +5307,11 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Dominance Keep, Revendreth",
 		},
 	},
+	[2516] = {
+		text = {
+			en = "Chalice District, Revendreth",
+		},
+	},
 	[2517] = {
 		text = {
 			en = "Menagerie of the Master, Revendreth",
@@ -3415,6 +5330,11 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[2520] = {
 		text = {
 			en = "Sagehaven, Bastion",
+		},
+	},
+	[2527] = {
+		text = {
+			en = "Quest Path 7856: 9.0 Ardenweald - COV - MC - Q57782 - Taxi to Boss - LWB",
 		},
 	},
 	[2528] = {
@@ -3437,6 +5357,11 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Charred Ramparts, Revendreth",
 		},
 	},
+	[2541] = {
+		text = {
+			en = "Quest Path 7899: 9.0 Bastion - Campaign - Ch 05 - Revendreth - Redelav District - Transport Down from Wall (JLW)",
+		},
+	},
 	[2544] = {
 		text = {
 			en = "Mistfall Village, Vale of Eternal Blossoms",
@@ -3447,9 +5372,44 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Sinfall, Revendreth",
 		},
 	},
+	[2549] = {
+		text = {
+			en = "Quest Path 7925: 9.0 Bastion - Temple of Wisdom - Teleport Pads - Grounds -> Temple Base - GJC",
+		},
+	},
+	[2550] = {
+		text = {
+			en = "Quest Path 7926: 9.0 Bastion - Temple of Wisdom - Teleport Pads - Temple Base -> Grounds - GJC",
+		},
+	},
+	[2552] = {
+		text = {
+			en = "Quest Path 7869: 9.0 Bastion - Hero's Rest - Zipline - North - Up - GJC",
+		},
+	},
+	[2553] = {
+		text = {
+			en = "Quest Path 7949: 9.0 Ardenweald - Bastion Campaign - Queen's Chamber - Up - RRB",
+		},
+	},
+	[2554] = {
+		text = {
+			en = "Quest Path 7950: 9.0 Ardenweald - Bastion Campaign - Queen's Chamber - Down - RRB/ELM",
+		},
+	},
 	[2555] = {
 		text = {
 			en = "The Maw",
+		},
+	},
+	[2556] = {
+		text = {
+			en = "Progenitor Console",
+		},
+	},
+	[2557] = {
+		text = {
+			en = "[Hidden] The Maw - Outdoor - Cocyrus Oribos Teleport Dest",
 		},
 	},
 	[2558] = {
@@ -3472,6 +5432,16 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Renounced Bastille, Maldraxxus",
 		},
 	},
+	[2562] = {
+		text = {
+			en = "Quest Path 7870: 9.0 Bastion - Hero's Rest - Zipline - South - Up - GJC",
+		},
+	},
+	[2563] = {
+		text = {
+			en = "Quest Path 7876: 9.0 Bastion - Hero's Rest - Zipline - South - Down - GJC",
+		},
+	},
 	[2564] = {
 		text = {
 			en = "Theater of Pain, Maldraxxus",
@@ -3482,9 +5452,54 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Starlit Overlook, Ardenweald",
 		},
 	},
+	[2566] = {
+		text = {
+			en = "Quest Path 7875: 9.0 Bastion - Hero's Rest - Zipline - West - Down - GJC",
+		},
+	},
+	[2567] = {
+		text = {
+			en = "Quest Path 7874: 9.0 Bastion - Hero's Rest - Zipline - West - Up - GJC",
+		},
+	},
+	[2568] = {
+		text = {
+			en = "Quest Path 7877: 9.0 Bastion - Hero's Rest - Zipline - North - Down - GJC",
+		},
+	},
 	[2569] = {
 		text = {
 			en = "Plague Watch, Maldraxxus",
+		},
+	},
+	[2572] = {
+		text = {
+			en = "Quest Path 8039: 9.0 Bastion - Campaign - Ch 05 - Revendreth - Tower to Ember Ward (JLW)",
+		},
+	},
+	[2573] = {
+		text = {
+			en = "Quest Path 8047: 9.0 Ardenweald - Covenant Hall - Queen's Audience Chamber Taxi Up - KRB",
+		},
+	},
+	[2574] = {
+		text = {
+			en = "Quest Path 8048: 9.0 Ardenweald - Covenant Hall - Queen's Audience Chamber Taxi Down - KRB",
+		},
+	},
+	[2575] = {
+		text = {
+			en = "Quest Path 8054: 9.0 Ardenweald - COV - Sisters - Q05 - Queen's Audience Chamber Taxi Up - KRB",
+		},
+	},
+	[2576] = {
+		text = {
+			en = "Quest Path 8055: 9.0 Ardenweald - COV - Sisters - Q05 - Queen's Audience Chamber Taxi Down - KRB",
+		},
+	},
+	[2580] = {
+		text = {
+			en = "Quest Path 8079: 9.0 Bastion Campaign - Ch 09 - Loyalty - Stage 6 - Ground -> Temple of Loyalty - GJC",
 		},
 	},
 	[2584] = {
@@ -3522,6 +5537,46 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Refugee Camp, Ardenweald",
 		},
 	},
+	[2591] = {
+		text = {
+			en = "Crucible of Souls",
+		},
+	},
+	[2594] = {
+		text = {
+			en = "9.0 Maw - Oribos - Teleport In",
+		},
+	},
+	[2595] = {
+		text = {
+			en = "Quest Path 8159: 9.0 Bastion - Level Up - Memory Extraction - Zipline - Up (JAK)",
+		},
+	},
+	[2596] = {
+		text = {
+			en = "Quest Path 8160: 9.0 Bastion - Level Up - Memory Extraction - Zipline - Down (JAK)",
+		},
+	},
+	[2602] = {
+		text = {
+			en = "Quest Path 8194: 9.0 Bastion - Level Up - Temple of Purity - Zipline - Up (JAK)",
+		},
+	},
+	[2603] = {
+		text = {
+			en = "Quest Path 8195: 9.0 Bastion - Level Up - Temple of Purity - Zipline - Down (JAK)",
+		},
+	},
+	[2604] = {
+		text = {
+			en = "Quest Path 8242: [UNUSED]9.x Quest - The Battle for Lordaeron (H) - Orgrimmar, Valley of Strength --> Orgrimmar, Gates of Orgrimmar (ELM)",
+		},
+	},
+	[2605] = {
+		text = {
+			en = "Quest Path 8278: Theater of Pain Taxi Path",
+		},
+	},
 	[2625] = {
 		text = {
 			en = "Elysian Hold, Bastion",
@@ -3530,6 +5585,16 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[2626] = {
 		text = {
 			en = "Hero's Rest, Bastion",
+		},
+	},
+	[2627] = {
+		text = {
+			en = "[Hidden] 9.0 Bastion Ground Points Hub (Ground TP out to here, TP to Sanctum from here)",
+		},
+	},
+	[2628] = {
+		text = {
+			en = "[Hidden] 9.0 Bastion Ground Hub (Sanctum TP out to here, TP to ground from here)",
 		},
 	},
 	[2630] = {
@@ -3567,14 +5632,274 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Terrace of the Collectors, Bastion",
 		},
 	},
+	[2637] = {
+		text = {
+			en = "Summoned Steward, Bastion",
+		},
+	},
+	[2639] = {
+		text = {
+			en = "Quest Path 8321: 9.0 Bastion - Treasure Max Level - Wisdom - Taxi - A to D - EJC",
+		},
+	},
+	[2640] = {
+		text = {
+			en = "Quest Path 8322: 9.0 Bastion - Treasure Max Level - Wisdom - Taxi - B to C - EJC",
+		},
+	},
+	[2641] = {
+		text = {
+			en = "Quest Path 8323: 9.0 Bastion - Treasure Max Level - Wisdom - Taxi - C to D - EJC",
+		},
+	},
+	[2642] = {
+		text = {
+			en = "Quest Path 8324: 9.0 Bastion - Treasure Max Level - Wisdom - Taxi - D to E - EJC",
+		},
+	},
+	[2643] = {
+		text = {
+			en = "Theater of Pain North, Maldraxxus",
+		},
+	},
+	[2644] = {
+		text = {
+			en = "Quest Path 8326: 9.0 Bastion - Treasure Max Level - Wisdom - Taxi - F to A - EJC",
+		},
+	},
+	[2645] = {
+		text = {
+			en = "Quest Path 8327: 9.0 Bastion - Treasure Max Level - Wisdom - Taxi - C to F - EJC",
+		},
+	},
+	[2646] = {
+		text = {
+			en = "Quest Path 8328: 9.0 Bastion - Max Level - Temple of Courage - Zipline -  Up (JAK)",
+		},
+	},
+	[2647] = {
+		text = {
+			en = "Quest Path 8329: 9.0 Bastion - Max Level - Temple of Courage - Zipline -  Down (JAK)",
+		},
+	},
+	[2648] = {
+		text = {
+			en = "Quest Path 8330: 9.0 Bastion - Max Level - Temple of Wisdom - Zipline -  Up (JAK)",
+		},
+	},
+	[2649] = {
+		text = {
+			en = "Quest Path 8331: 9.0 Bastion - Max Level - Temple of Wisdom - Zipline - Down (JAK)",
+		},
+	},
+	[2650] = {
+		text = {
+			en = "Quest Path 8332: 9.0 Bastion - Max Level - Temple of Humility - Zipline -  Up (JAK)",
+		},
+	},
+	[2651] = {
+		text = {
+			en = "Quest Path 8333: 9.0 Bastion - Max Level - Temple of Humility - Zipline -  Down (JAK)",
+		},
+	},
+	[2652] = {
+		text = {
+			en = "Quest Path 8334: 9.0 Bastion - Treasure Max Level - Wisdom - Taxi - E to B - EJC",
+		},
+	},
+	[2653] = {
+		text = {
+			en = "Quest Path 8336: 9.0 Bastion - Max Level - Temple of Loyalty - Zipline - Lower - Up (JAK)",
+		},
+	},
+	[2654] = {
+		text = {
+			en = "Quest Path 8337: 9.0 Bastion - Max Level - Temple of Loyalty - Zipline - Lower - Down (JAK)",
+		},
+	},
+	[2655] = {
+		text = {
+			en = "Quest Path 8338: 9.0 Bastion - Max Level - Temple of Loyalty - Zipline - Upper - Up (JAK)",
+		},
+	},
+	[2656] = {
+		text = {
+			en = "Quest Path 8339: 9.0 Bastion - Max Level - Temple of Loyalty - Zipline - Upper - Down (JAK)",
+		},
+	},
+	[2657] = {
+		text = {
+			en = "Quest Path 8335: 9.0 Maw - Torghast - Floor 90 - Up",
+		},
+	},
+	[2658] = {
+		text = {
+			en = "Quest Path 8340: 9.0 Maw - Torghast - Floor 90 - Down",
+		},
+	},
+	[2659] = {
+		text = {
+			en = "Quest Path 8347: 9.0 Bastion - Treasure Max Level - Courage - Taxi - Return - EJC",
+		},
+	},
+	[2660] = {
+		text = {
+			en = "Quest Path 8348: 9.0 Bastion - Treasure Max Level - Wisdom - Taxi - Return - EJC",
+		},
+	},
+	[2661] = {
+		text = {
+			en = "Quest Path 8359: 9.0 Ardenweald - COV - Drust - Ch2 - Flight out of Darkreach - LWB",
+		},
+	},
+	[2662] = {
+		text = {
+			en = "Quest Path 8363: 9.0 Maldraxxus - House of Plagues - Pipeline Up - EJC",
+		},
+	},
+	[2663] = {
+		text = {
+			en = "Quest Path 8372: 9.0 Bastion - Path of Ascension - Capture - Devourer - Anima Gateway Taxi - GJC",
+		},
+	},
+	[2664] = {
+		text = {
+			en = "Quest Path 8374: 9.0 Maw - Outdoor - Ve'nari -> Planes of Torment",
+		},
+	},
+	[2665] = {
+		text = {
+			en = "Quest Path 8387: 9.0 Bastion - Teleport Pads -  Eternal Forge Suburbs -> Miri's Chapel - SBV",
+		},
+	},
+	[2666] = {
+		text = {
+			en = "Quest Path 8388: 9.0 Bastion - Teleport Pads -  Miri's Chapel ->  Eternal Forge Suburbs - SBV",
+		},
+	},
+	[2670] = {
+		text = {
+			en = "Quest Path 8421: 9.0 Maw - Outdoor - Mawsworn Rifts - Zovaal's -> Calcis",
+		},
+	},
+	[2671] = {
+		text = {
+			en = "Quest Path 8422: 9.0 Maw - Outdoor - Mawsworn Rifts - Calcis -> Zovaal's",
+		},
+	},
+	[2672] = {
+		text = {
+			en = "Quest Path 8423: 9.0 Maw - Outdoor - Mawsworn Rifts - Crucible -> Tremaculum",
+		},
+	},
+	[2673] = {
+		text = {
+			en = "Quest Path 8424: 9.0 Maw - Outdoor - Mawsworn Rifts - Tremaculum -> Crucible",
+		},
+	},
+	[2674] = {
+		text = {
+			en = "Quest Path 8375: 9.0 Maw - Outdoor - Ve'nari -> Beastwarrens",
+		},
+	},
+	[2675] = {
+		text = {
+			en = "Quest Path 8425: 9.0 Bastion - Treasure - Out of Bounds Teleporter - 01 - SBV",
+		},
+	},
+	[2676] = {
+		text = {
+			en = "Quest Path 8426: 9.0 Bastion - Treasure - Out of Bounds Teleporter - 02 - SBV",
+		},
+	},
+	[2677] = {
+		text = {
+			en = "Quest Path 8427: 9.0 Bastion - Treasure - Out of Bounds Teleporter - 03 - SBV",
+		},
+	},
+	[2678] = {
+		text = {
+			en = "Quest Path 8428: 9.0 Bastion - Treasure - Out of Bounds Teleporter - 04 - SBV",
+		},
+	},
 	[2680] = {
 		text = {
 			en = "Terrace of the Collectors, Bastion",
 		},
 	},
+	[2681] = {
+		text = {
+			en = "Quest Path 8460: 9.0 Bastion - Cloudwalker Coffer - Zipline - To Memorial Shrine (MAH)",
+		},
+	},
+	[2683] = {
+		text = {
+			en = "Quest Path 8472: 9.0 Bastion - Covenant Hall - Flight to Sanctum - Amphitheater -> Covenant Hall - GJC",
+		},
+	},
+	[2684] = {
+		text = {
+			en = "Quest Path 8473: 9.0 Bastion - Covenant Hall - Flight to Sanctum - Sanctum -> Amphitheater - GJC",
+		},
+	},
+	[2685] = {
+		text = {
+			en = "Quest Path 8474: 9.0 Bastion - Covenant Hall - Flight to Sanctum - Fate's Precipice -> Sanctum - GJC",
+		},
+	},
+	[2686] = {
+		text = {
+			en = "Quest Path 8475: 9.0 Bastion - Covenant Hall - Flight to Sanctum - Sanctum -> Fate's Precipice - GJC",
+		},
+	},
+	[2687] = {
+		text = {
+			en = "Quest Path 8476: 9.0 Bastion - Covenant Hall - Flight to Sanctum - Humility Terrace -> Sanctum - GJC",
+		},
+	},
+	[2688] = {
+		text = {
+			en = "Quest Path 8477: 9.0 Bastion - Covenant Hall - Flight to Sanctum - Sanctum -> Humility Terrace - GJC",
+		},
+	},
+	[2690] = {
+		text = {
+			en = "Quest Path 8500: 9.0.5 Maw - Hidden Object - Shadehound Mount - Perdition Upper to Zovaals - LJS",
+		},
+	},
+	[2691] = {
+		text = {
+			en = "Quest Path 8507: 9.1 Campaign- Ch 06 - House of Rituals - Surface -> Exoramas - KRB",
+		},
+	},
+	[2692] = {
+		text = {
+			en = "Quest Path 8508: 9.1 Campaign- Ch 06 - House of Rituals - Exoramas -> Surface - KRB",
+		},
+	},
+	[2693] = {
+		text = {
+			en = "Seamless Proto, Revendreth",
+		},
+	},
+	[2694] = {
+		text = {
+			en = "Seamless Proto, Boralus",
+		},
+	},
+	[2695] = {
+		text = {
+			en = "Quest Path 8530: 9.1 - Dungeon - Broker City - RP Throughline - Elevator Taxi Path",
+		},
+	},
 	[2698] = {
 		text = {
 			en = "Keeper's Respite, Korthia",
+		},
+	},
+	[2699] = {
+		text = {
+			en = "Tazavesh Outdoor",
 		},
 	},
 	[2700] = {
@@ -3585,6 +5910,86 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[2703] = {
 		text = {
 			en = "Tazavesh, the Veiled Market",
+		},
+	},
+	[2708] = {
+		text = {
+			en = "Quest Path 8614: 9.0 Maw - Outdoor - Ve'nari -> Perdition Hold",
+		},
+	},
+	[2709] = {
+		text = {
+			en = "Quest Path 8615: 9.0 Maw - Outdoor - Ve'nari -> Desmotaeron",
+		},
+	},
+	[2710] = {
+		text = {
+			en = "Quest Path 8616: 9.0 Maw - Outdoor - Mawsworn Rifts - Desmotaeron -> Perdition Hold",
+		},
+	},
+	[2711] = {
+		text = {
+			en = "Quest Path 8617: 9.0 Maw - Outdoor - Mawsworn Rifts - Perdition Hold -> Desmotaeron",
+		},
+	},
+	[2717] = {
+		text = {
+			en = "Quest Path 8628: 10.0 - Pre-Prod - Krav'rel to Azure Archives - (STM)",
+		},
+	},
+	[2718] = {
+		text = {
+			en = "Quest Path 8629: 10.0 - Pre-Prod: Azure Archives to Kirin Tor Hub - (STM)",
+		},
+	},
+	[2719] = {
+		text = {
+			en = "Quest Path 8630: 10.0 - Pre-Prod - Bombing Run - (STM)",
+		},
+	},
+	[2720] = {
+		text = {
+			en = "Quest Path 8631: 10.0 - Pre-Prod - Kalthraz Fortress to Azure Archives - (STM)",
+		},
+	},
+	[2722] = {
+		text = {
+			en = "Quest Path 8635: 10.0 Pre-Prod - Grasslands - Dragonsmeet to Emerald Gardens (JLW)",
+		},
+	},
+	[2732] = {
+		text = {
+			en = "[HIDDEN] - 9.2 Resonant Peaks - Teleport Network - Hidden Hub (Connects all Nodes to each other without unique paths) (MAH/JDA)",
+		},
+	},
+	[2739] = {
+		text = {
+			en = "Rebuff Lookout, The Waking Shores",
+		},
+	},
+	[2740] = {
+		text = {
+			en = "10.0 Construction - Teleport Network - Hidden Hub (Connects all Nodes to each other without unique paths) (JDA)",
+		},
+	},
+	[2741] = {
+		text = {
+			en = "Skytop Lookout (QD), The Waking Shores",
+		},
+	},
+	[2752] = {
+		text = {
+			en = "Ruby Lifeshrine, The Waking Shores",
+		},
+	},
+	[2770] = {
+		text = {
+			en = "Brackenhide Outskirts, The Azure Span",
+		},
+	},
+	[2771] = {
+		text = {
+			en = "Emerald Gardens, Ohn'ahran Plains",
 		},
 	},
 	[2773] = {
@@ -3600,6 +6005,41 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 	[2775] = {
 		text = {
 			en = "Iskaara, Azure Span",
+		},
+	},
+	[2776] = {
+		text = {
+			en = "Life Pools - top to bottom, Waking Shores - Begin",
+		},
+	},
+	[2777] = {
+		text = {
+			en = "Life Pools - top to bottom, Waking Shores - End",
+		},
+	},
+	[2778] = {
+		text = {
+			en = "Dragonscale Basecamp (QD), The Waking Shores",
+		},
+	},
+	[2779] = {
+		text = {
+			en = "Wingrest Embassy (QD), The Waking Shores",
+		},
+	},
+	[2780] = {
+		text = {
+			en = "10.0 Explorers - Travel Network - Hub",
+		},
+	},
+	[2782] = {
+		text = {
+			en = "Quest Path 8851: 10.0 Plains - Emerald Hub - Taxi Down to Portal Grove (RMV)",
+		},
+	},
+	[2783] = {
+		text = {
+			en = "Quest Path 8852: 10.0 Plains - Emerald Hub - Taxi Up to Shady Snctuary (RMV)",
 		},
 	},
 	[2784] = {
@@ -3747,14 +6187,49 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Vault of the Incarnates, Thaldraszus",
 		},
 	},
+	[2820] = {
+		text = {
+			en = "Quest Path 9123: 10.0 Plains - Merithra's Watch - Taxi Down to Shady Sanctuary (RMV)",
+		},
+	},
+	[2821] = {
+		text = {
+			en = "Quest Path 9124: 10.0 Plains - Emerald Hub - Taxi Up to Merithra's Watch (RMV)",
+		},
+	},
+	[2822] = {
+		text = {
+			en = "Quest Path 9125: 10.0 Plains - Emerald Hub - Taxi to Lunedane (RMV)",
+		},
+	},
+	[2823] = {
+		text = {
+			en = "Quest Path 9126: 10.0 Plains - Lunedane - Taxi to Shady Sanctuary (RMV)",
+		},
+	},
+	[2824] = {
+		text = {
+			en = "Quest Path 9147: 10.0 Plains - Emerald Hub - Taxi to Lunedane - PERSONAL (RMV)",
+		},
+	},
 	[2825] = {
 		text = {
 			en = "Ohn'iri Springs, Ohn'ahran Plains",
 		},
 	},
+	[2832] = {
+		text = {
+			en = "Cobalt Assembly, The Azure Span",
+		},
+	},
 	[2834] = {
 		text = {
 			en = "Eon's Fringe, Thaldraszus",
+		},
+	},
+	[2835] = {
+		text = {
+			en = "[Hidden] 10.0 Travel Network - Destination Input",
 		},
 	},
 	[2836] = {
@@ -3792,14 +6267,64 @@ local FlightPathDB = FlightPathDB; for key,value in pairs({
 			en = "Rubyscale Outpost, The Waking Shores",
 		},
 	},
+	[2843] = {
+		text = {
+			en = "[Hidden] 10.0 Travel Network - Destination Output",
+		},
+	},
 	[2855] = {
 		text = {
 			en = "Morqut Village, The Forbidden Reach",
 		},
 	},
+	[2856] = {
+		text = {
+			en = "Quest Path 9315: 10.0.7 Forbidden Reach - War Creche - Taxi - Go Up - EJC",
+		},
+	},
+	[2857] = {
+		text = {
+			en = "Quest Path 9316: 10.0.7 Forbidden Reach - War Creche - Taxi - Go Down - EJC",
+		},
+	},
+	[2860] = {
+		text = {
+			en = "10.1 UG - Campaign - Ch6 - Aberrus Upper Platform (SMART)",
+		},
+	},
 	[2862] = {
 		text = {
 			en = "Morqut Islet, Forbidden Reach",
+		},
+	},
+	[2866] = {
+		text = {
+			en = "Cascades Canyon, Ohn'ahran Plains",
+		},
+	},
+	[2867] = {
+		text = {
+			en = "The Throughway, Zaralek Cavern",
+		},
+	},
+	[2874] = {
+		text = {
+			en = "Old Loamm Road, Ohn'ahran Plains",
+		},
+	},
+	[2875] = {
+		text = {
+			en = "Old Loamm Road, Zaralek Cavern",
+		},
+	},
+	[2876] = {
+		text = {
+			en = "Lookout Breach, Zaralek Cavern",
+		},
+	},
+	[2877] = {
+		text = {
+			en = "Lookout Breach, Azure Span",
 		},
 	},
 })
