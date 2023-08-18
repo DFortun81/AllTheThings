@@ -1817,7 +1817,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		ach(18360, {	-- Tricks and Treats of the Dragon Isles
 			["timeline"] = { "added 10.1.5.50379" },
-			["sym"] = {{ "achievement_criteria" }},
+			--TODO: ["sym"] = {{ "achievement_criteria" }},
 		}),
 	}),
 	-- #endif
@@ -3586,7 +3586,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["coord"] = { 59.3, 57.2, ZULDRAK },
 					["timeline"] = { "added 3.0.1" },
 				}),
-				
+
 				-- Dragonflight
 				q(75684, {	-- Candy Bucket - Ohn'ahran Plains, Broadhoof Outpost
 					--["coord"] = { , OHNAHRAN_PLAINS },

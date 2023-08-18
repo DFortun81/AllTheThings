@@ -3090,7 +3090,7 @@ local ResolveFunctions = {
 					or criteriaType == 43 then	-- Exploration
 					-- Ignored
 				else
-					app.print("Unhandled Criteria Type", criteriaType, assetID);
+					app.print("Unhandled Criteria Type", criteriaType, assetID, achievementID);
 				end
 				-- Criteria was not Sourced, so put it under the Achievement
 				if criteriaObject then
@@ -10415,7 +10415,7 @@ local HarvestFlightPaths = function(requestID)
 			app.FlightPathNames = nil;
 			setmetatable(localizedFlightPathNames, { __index = flightPathNames });
 		end
-		
+
 		local allNodeData;
 		for _,mapID in ipairs(FlightPathMapIDs) do
 			allNodeData = C_TaxiMap_GetTaxiNodesForMap(mapID);
