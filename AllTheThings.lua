@@ -16957,7 +16957,7 @@ function app:GetDataCache()
 		db.name = L["FUTURE_UNOBTAINABLE"];
 		db.text = db.name;
 		db.description = L["FUTURE_UNOBTAINABLE_TOOLTIP"];
-		db.icon = 134399; -- inv_misc_qirajicrystal_05
+		db.icon = app.asset("Interface_Future_Unobtainable")
 		db.dynamic_withsubgroups = true;
 		tinsert(g, DynamicCategory(db, "rwp"));
 
