@@ -21,18 +21,29 @@ root(ROOTS.Zones, {
 				}},
 				["groups"] = {
 					pet(1743),	-- Black-Footed Fox Kit (PET!)
-					pet(1726),	-- Burrow Spiderling (PET!)
-					pet(1775),	-- Coralback Fiddler (PET!)
+					pet(1726, {	-- Burrow Spiderling (PET!)
+						["description"] = "Found inside Neltharion's Vault. Coord is entrance.",
+						["coord"] = { 44.6, 72.4, HIGHMOUNTAIN },
+					}),
+					pet(1775, {	-- Coralback Fiddler (PET!)
+						["description"] = "Found on the northern coastline of Highmountain.",
+					}),
 					pet(1761, {	-- Echo Batling (PET!)
 						["description"] = "Found in Rockcrawler Chasm and Mucksnout Den. Something is making the critter form of this pet unattackable, so this pet may be hard to come across.",
 					}),
-					pet(1731),	-- Felspider (PET!)
+					pet(1731, {	-- Felspider (PET!)
+						["description"] = "Found in the Blind Marshlands and in Faronaar (in a small area under the 'F' on the map.)",
+					}),
 					pet(1762, {	-- Hog-Nosed Bat (PET!)
 						["coord"] = { 50.8, 33.6, HIGHMOUNTAIN },
 					}),
 					pet(1713),	-- Long-Eared Owl (PET!)
-					pet(1776),	-- Mudshell Conch (PET!)
-					pet(1714),	-- Northern Hawk Owl (PET!)
+					pet(1776, {	-- Mudshell Conch (PET!)
+						["description"] = "Found on the northern coastline of Highmountain.",
+					}),
+					pet(1714, {	-- Northern Hawk Owl (PET!)
+						["description"] = "Found in the snowy area of Highmountain by Frosthoof Watch.",
+					}),
 					pet(1763),	-- Spiketail Beaver (PET!)
 					header(HEADERS.NPC, 115784, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {	-- Snowfeather Hatchling
 						["description"] = "1. Buy Smoked Elderhorn from Marius Felbane in Highmountain.\n2. Kill Snowfeather Matriarch.\n3. /target Orphaned Snowfeather\n4. Feed Orphaned Snowfeather Smoked Elderhorn.\n5. Enjoy new Snowfeather Hatchling|r",
