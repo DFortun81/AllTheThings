@@ -86,6 +86,7 @@ i(37710);	-- Crashin' Thrashin' Racer Controller
 -- PATCH 3.0.3 --
 -----------------
 i(36863);	-- Decahedral Dwarven Dice
+i(38578);	-- Flag of Ownership
 i(44719);	-- Frenzyheart Brew
 i(40895);	-- Gnomish X-Ray Specs
 i(43499);	-- Iron Boot Flask
@@ -1046,9 +1047,6 @@ i(187958);	-- Shrouded Banner of the Opportune
 i(200142);	-- Generous Goblin Grenade
 i(199111);	-- Maestro Duck's Orchestrion
 i(199926);	-- Portable J.A.M.
--- #if BEFORE 10.1.5
-i(197961);	-- Whelps on Strings
--- #endif
 
 ------------------
 -- PATCH 10.0.2 --
@@ -1198,8 +1196,10 @@ i(205463);	-- Skornak's Lava Ball
 ------------------
 i(208186);	-- Boffins
 i(140192);	-- Dalaran Hearthstone
+i(206268);	-- Ethereal Transmogrifier
 i(208096);	-- Familiar Journal
 i(110560);	-- Garrison Hearthstone
+i(206993);	-- Investi-gator's Pocketwatch
 i(208058);	-- Minute Glass
 i(206565);	-- Plagued Grain
 i(208057);	-- Smoldering Banner of the Aspects
@@ -1207,8 +1207,6 @@ i(208415);	-- Stasis Sand
 i(207099);	-- Tiny Box of Tiny Rocks
 i(197961);	-- Whelps on Strings
 --- NYI ---
-i(206268);	-- Ethereal Transmogrifier
-i(206993);	-- Investi-gator's Pocketwatch
 i(206195);	-- Path of the Naaru
 i(206696);	-- Unknown
 i(207730);	-- Unknown
@@ -1218,3 +1216,8 @@ i(208092);	-- Unknown
 -- PATCH 10.1.7 --
 ------------------
 i(208433);	-- Bronze Racer's Pennant
+i(208421);	-- Compendium of the New Moon
+--- Unsorted ---
+i(208229);	-- Honor of the Forsaken
+i(208880);	-- Brewhahat
+i(209052);	-- Brew Barrel

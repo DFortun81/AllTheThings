@@ -1626,7 +1626,6 @@ i(0, 397406);		-- Wonderous Wavewhisker
 -- NYI
 i(206027, 411565);	-- Felcrystal Scorpion
 i(205206, 408648);	-- Shalewing, Fire [PH]
-i(205208, 408654);	-- Shalewing, Stone [PH]
 
 ------------------
 -- PATCH 10.1.5 --
@@ -1651,6 +1650,12 @@ i(0, 413409);		-- Highland Drake
 i(0, 417548);		-- Renewed Proto-Drake
 i(0, 417552);		-- Windborne Velocidrake
 i(0, 417556);		-- Winding Slitherdrake
+
+
+------------------
+-- PATCH 10.1.7 --
+------------------
+i(205208, 408654);	-- Sandy Shalewing TODO: The Item doesnt exist in the DB at the moment... Maybe you never get it? Check Later
 
 -----------------
 -- CLASSIC WOW --

@@ -5,6 +5,19 @@ local ENGINEERING_KNOWLEDGE = 2027;
 root(ROOTS.Professions, prof(ENGINEERING, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18901, {	-- Chromatic Calibration: Holo-Gogs
+			i(209062, {	-- Ensemble: Chromatically Calibrated Holo-Gogs
+				i(208787),	-- Black Holo-Gogs
+				i(208788),	-- Blue Holo-Gogs
+				i(208789),	-- Gold Holo-Gogs
+				i(208790),	-- Green Holo-Gogs
+				i(208795),	-- Midnight Holo-Gogs
+				i(208796),	-- Orange Holo-Gogs
+				i(208791),	-- Purple Holo-Gogs
+				i(208792),	-- Red Holo-Gogs
+				i(208793),	-- Silver Holo-Gogs
+				i(208794),	-- White Holo-Gogs
+				i(208797),	-- Yellow Holo-Gogs
+			}),
 			crit(1, {	-- Gnomish Power Goggles
 				["provider"] = { "i", 23828 },	-- Gnomish Power Goggles
 			}),
@@ -239,6 +252,12 @@ root(ROOTS.Professions, prof(ENGINEERING, {
 	}),
 	tier(CATA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 		ach(18908, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Bio-Optic Killshades
+			i(209063, {	-- Ensemble: Chromatically Calibrated Bio-Optic Killshades
+				i(208813),	-- Black Bio-Optic Killshades
+				i(208814),	-- Blue Bio-Optic Killshades
+				i(208815),	-- Red Bio-Optic Killshades
+				i(208812),	-- Yellow Bio-Optic Killshades
+			}),
 			crit(1, {	-- Reinforced Bio-Optic Killshades
 				["provider"] = { "i", 59359 },	-- Reinforced Bio-Optic Killshades
 			}),
@@ -262,6 +281,39 @@ root(ROOTS.Professions, prof(ENGINEERING, {
 			}),
 		})),
 	})),
+	tier(MOP_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+		ach(18905, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Retinal Armor
+			i(209064, {	-- Ensemble: Chromatically Calibrated Retinal Armor
+				i(208802),	-- Black Retinal Armor
+				i(208803),	-- Blue Retinal Armor
+				i(208804),	-- Green Retinal Armor
+				i(208805),	-- Red Retinal Armor
+				i(208806),	-- White Retinal Armor
+				i(208807),	-- Yellow Retinal Armor
+			}),
+			crit(1, {	-- Lightweight Retinal Armor
+				["provider"] = { "i", 77533 },	-- Lightweight Retinal Armor
+			}),
+			crit(2, {	-- Agile Retinal Armor
+				["provider"] = { "i", 77534 },	-- Agile Retinal Armor
+			}),
+			crit(3, {	-- Camouflage Retinal Armor
+				["provider"] = { "i", 77535 },	-- Camouflage Retinal Armor
+			}),
+			crit(4, {	-- Deadly Retinal Armor
+				["provider"] = { "i", 77536 },	-- Deadly Retinal Armor
+			}),
+			crit(5, {	-- Energized Retinal Armor
+				["provider"] = { "i", 77537 },	-- Energized Retinal Armor
+			}),
+			crit(6, {	-- Specialized Retinal Armor
+				["provider"] = { "i", 77538 },	-- Specialized Retinal Armor
+			}),
+			crit(7, {	-- Reinforced Retinal Armor
+				["provider"] = { "i", 77539 },	-- Reinforced Retinal Armor
+			}),
+		})),
+	})),
 	tier(WOD_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 		ach(18895, {	-- You Had it Coming
 			["timeline"] = { ADDED_10_1_7 },
@@ -269,6 +321,12 @@ root(ROOTS.Professions, prof(ENGINEERING, {
 	})),
 	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 		ach(18855, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Cranial Cannons
+			i(209066, {	-- Ensemble: Chromatically Calibrated Cranial Cannons
+				i(208808),	-- Green Cranial Cannon
+				i(208809),	-- Orange Cranial Cannon
+				i(208810),	-- Purple Cranial Cannon
+				i(208811),	-- Yellow Cranial Cannon
+			}),
 			crit(1, {	-- Blink-Trigger Headgun
 				["provider"] = { "i", 132500 },	-- Blink-Trigger Headgun
 			}),
@@ -425,6 +483,12 @@ root(ROOTS.Professions, prof(ENGINEERING, {
 	})),
 	tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 		ach(18907, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Ectoplasmic Specs
+			i(209067, {	-- Ensemble: Chromatically Calibrated Ectoplasmic Specs
+				i(208817),	-- Blue Ectoplasmic Specs
+				i(208818),	-- Green Ectoplasmic Specs
+				i(208819),	-- Red Ectoplasmic Specs
+				i(208820),	-- Yellow Ectoplasmic Specs
+			}),
 			crit(1, {	-- Flexible Ectoplasmic Specs
 				["provider"] = { "i", 172905 },	-- Flexible Ectoplasmic Specs
 			}),

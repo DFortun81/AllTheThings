@@ -183,6 +183,19 @@ WOW_ANNIVERSARY_EIGHTEEN = createHeader({
 		en = [[~select(2,GetAchievementInfo(15218))]],
 	},
 });
+WOW_ANNIVERSARY_NINETEEN = createHeader({
+	readable = "WoW's 19th Anniversary",
+	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	--eventID = 1262,
+	--eventSchedule = {
+	--	0, -- November 6th through November 27th
+	--	2022, 11, 6,	-- 11/06/2022
+	--	2022, 11, 27,	-- 11/27/2022
+	--},
+	text = {
+		en = [[~select(2,GetAchievementInfo(18702))]],
+	},
+});
 
 root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, {
 	-- Stuff that's completely gone.
@@ -907,7 +920,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 		}),
 	})),
-	n(WOW_ANNIVERSARY_EIGHTEEN, bubbleDown({ ["timeline"] = { "added 9.2.0.42423", "removed 10.2.0" } }, {	-- TODO: Update when we've got a patch?
+	n(WOW_ANNIVERSARY_EIGHTEEN, bubbleDown({ ["timeline"] = { "added 10.0.0.46455", "removed 10.0.2.46879" } }, {
 		ach(15218),	-- WoW's 18th Anniversary
 		n(MAILBOX, {
 			i(187710, {	-- Anniversary Gift
@@ -1985,8 +1998,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 		}),
 	})),
-	n(WOW_ANNIVERSARY_EIGHTEEN, bubbleDownSelf({ ["timeline"] = { "added 9.2.0.42423" } },{
-
+	n(WOW_ANNIVERSARY_EIGHTEEN, bubbleDownSelf({ ["timeline"] = { "added 10.0.0.46455" } },{
+	})),
+	n(WOW_ANNIVERSARY_NINETEEN, bubbleDownSelf({ ["timeline"] = { "added 10.1.7" } },{
+		ach(18702),	-- WoW's 19th Anniversary
+		ach(19028),	-- Lil' Frostwing
+		i(208210),	-- Celebration Package
+		i(208211),	-- Anniversary Gift
+		i(208543),	-- Lil' Frostwing (PET!)
 	})),
 })));
 --[[

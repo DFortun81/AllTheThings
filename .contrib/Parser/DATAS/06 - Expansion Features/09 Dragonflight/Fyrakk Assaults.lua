@@ -41,6 +41,21 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					},
 					["isWeekly"] = IGNORED_VALUE,
 				}),
+				q(75888, {	-- Suffusion Camp
+					["providers"] = {
+						{ "n", 201648 },	-- Somnikus
+						{ "n", 203520 },	-- Stellagosa
+					},
+					["coords"] = {
+						{ 75.2, 69.2, OHNAHRAN_PLAINS },
+						{ 58.0, 34.6, THE_AZURE_SPAN },
+					},
+					["g"] = {
+						ach(18867, {	-- Through the Ashes and Flames
+							["timeline"] = { ADDED_10_1_7 },
+						}),
+					},
+				}),
 					-- Ohn'haran Plains --
 				q(74573, {	-- Aerial Support
 					["provider"] = { "n", 201648 },	-- Somnikus
@@ -74,10 +89,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(75182, {	-- Grand Theft Mammoth
 					["provider"] = { "n", 201860 },	-- Khanam Matra Sarest
 					["coord"] = { 75.6, 69.9, OHNAHRAN_PLAINS },
-				}),
-				q(75888, {	-- Suffusion Camp
-					["provider"] = { "n", 201648 },	-- Somnikus
-					["coord"] = { 75.2, 69.2, OHNAHRAN_PLAINS },
 				}),
 				q(74568, {	-- They Who Would Burn Us
 					["provider"] = { "n", 201090 },	-- Mayla Highmountain

@@ -290,7 +290,6 @@ i(197577, 69781);	-- Windborne Velocidrake: Bronze and Green Armor
 i(197600, 69804);	-- Windborne Velocidrake: Helm
 i(203338, 73829);	-- Winding Slitherdrake: Antler Horns
 i(203305, 73793);	-- Winding Slitherdrake: Armor
-i(203322, 73810);	-- Winding Slitherdrake: Blonde Hair
 i(203300, 73788);	-- Winding Slitherdrake: Blue and Silver Armor
 i(203350, 73841);	-- Winding Slitherdrake: Blue Scales
 i(203351, 73842);	-- Winding Slitherdrake: Bronze Scales
@@ -303,7 +302,6 @@ i(203334, 73824);	-- Winding Slitherdrake: Curled Horns
 i(203346, 73837);	-- Winding Slitherdrake: Curled Nose
 i(203314, 73802);	-- Winding Slitherdrake: Curved Chin Horn
 i(203335, 73825);	-- Winding Slitherdrake: Curved Horns
-i(203349, 73840);	-- Winding Slitherdrake: Curved Nose Horn
 i(203320, 73808);	-- Winding Slitherdrake: Ears
 i(203319, 73807);	-- Winding Slitherdrake: Finned Cheek
 i(203361, 73853);	-- Winding Slitherdrake: Finned Tip Tail
@@ -364,9 +362,19 @@ i(205865, 75941);	-- Winding Slitherdrake: Embodiment of the Obsidian Gladiator
 ------------------
 -- PATCH 10.1.5 --
 ------------------
-i(208102, 77258);	-- Cliffside Wylderdrake: Infinite Scales
-i(208103, 77257);	-- Highland Drake: Infinite Scales
-i(208104, 77255);	-- Renewed Proto-Drake: Infinite Scales
-i(208105, 77256);	-- Windborne Velocidrake: Infinite Scales
+i(208102, 77258);	-- Cliffside Wylderdrake: Visage of the Infinite
+i(208103, 77257);	-- Highland Drake: Visage of the Infinite
+i(208104, 77255);	-- Renewed Proto-Drake: Visage of the Infinite
+i(208105, 77256);	-- Windborne Velocidrake: Visage of the Infinite
 i(197615, 69819);	-- Windborne Velocidrake: Teal Scales
-i(208106, 77259);	-- Winding Slitherdrake: Infinite Scales
+i(203322, 73810);	-- Winding Slitherdrake: Blonde Hair
+i(203349, 73840);	-- Winding Slitherdrake: Curved Nose Horn
+i(208106, 77259);	-- Winding Slitherdrake: Visage of the Infinite
+
+------------------
+-- PATCH 10.1.7 --
+------------------
+i(208859, 77876);	-- Cliffside Wylderdrake: Day of the Dead Armor
+i(208858, 77875);	-- Highland Drake: Pirates' Day Armor
+i(208742,77774);	-- Renewed Proto-Drake: Brewfest Armor
+i(208680, 77725);	-- Windborne Velocidrake: Hallow's End Armor

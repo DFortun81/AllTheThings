@@ -108,7 +108,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 			filter(TOYS, {
-				i(206268, { -- Ethereal Transmogrifier
+				i(206268, { -- Ethereal Transmogrifier (TOY!)
 					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
 				}),
 			}),
@@ -1241,7 +1241,7 @@ filter(MOUNTS, {
 				}),
 			}),
 			filter(TOY, {
-				i(206268, { -- Ethereal Transmogrifier
+				i(206268, { -- Ethereal Transmogrifier (TOY!)
 					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
 				}),
 			}),

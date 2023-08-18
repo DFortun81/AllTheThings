@@ -1277,7 +1277,7 @@ i(44971, 206);		-- Tirisfal Batling
 -- ITEM --
 i(49693, 249);		-- Lil' K.T.
 -- #if AFTER MOP
-i(46831, 1351);	-- Macabre Marionette [NOTE: This pet could not be learned until MOP!]
+i(46831, 1351);		-- Macabre Marionette [NOTE: This pet could not be learned until MOP!]
 -- #endif
 i(41133, 192);		-- Mr. Chilly
 i(49362, 243);		-- Onyxian Whelpling
@@ -4052,6 +4052,10 @@ i(190601, 2890);	-- Sunny (Shop)
 i(207962, 179);		-- Spirit of Competition (Trading Post)
 -- TRAINER --
 i(0, 3587);			-- Lifelike Mechanical Duckling
+i(0, 3608);			-- Lifelike Mechanical Turtle
+i(0, 3609);			-- Sporeflower
+i(0, 3975);			-- Midnight Terrorwing
+i(0, 4237);			-- Treanthony
 -- Whelptender?
 i(206682, 3589);	-- Rusziona
 i(205232, 3588);	-- Iggy
@@ -4063,6 +4067,16 @@ i(206973, 3600);	-- Pallibrius
 i(206974, 3599);	-- Zalethgos
 i(206978, 3602);	-- Somnius
 i(206979, 3601);	-- Posidriss
+--- NYI ---
+i(206174, 3582);	-- Blub
+
+------------------
+-- PATCH 10.1.7 --
+------------------
+i(208543, 4265);	-- Lil' Frostwing
+
+
+
 
 -----------------
 -- CLASSIC WOW --

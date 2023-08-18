@@ -574,6 +574,104 @@ root(ROOTS.Unsorted, {
 	}),
 	tier(DF_TIER, {
 		tier(DF_TIER, 1.7, bubbleDown({ ["timeline"] = { CREATED_10_1_7 } }, {
+			filter(TOYS, {
+				---- HERTIAGE ----
+				i(208229),	-- Honor of the Forsaken (TOY!)
+				---- BREWFEST ----
+				i(208880),	-- Brewhahat (TOY!)
+				i(209052),	-- Brew Barrel (TOY!)
+			}),
+			filter(COSMETIC, {
+				---- TRADING POST ----
+				i(208620),	-- Ashamane's Helm of Rebirth
+				i(208621),	-- Ashamane's Spaulders of Rebirth
+				i(208622),	-- Ashamane's Fangs of Rebirth
+				i(208623),	-- Ashamane's Blade of Rebirth
+				i(208624),	-- Ashamane's Claws of Rebirth
+				i(208625),	-- Ashamane's Crescent of Rebirth
+				i(208626),	-- Ashamane Jewel of Rebirth
+				i(208627),	-- Webbed Saronite Headguard
+				i(208628),	-- Webbed Saronite Spaulders
+				i(208629),	-- Webbed Saronite Girdle
+				i(208630),	-- Webbed Saronite Greataxe
+				i(208631),	-- Webbed Saronite Eviscerator
+				i(208632),	-- Webbed Saronite Devourer
+				i(208633),	-- Nathreza Blasphemer's Horns
+				i(208634),	-- Nathreza Blasphemer's Mantle
+				i(208635),	-- Nathreza Blasphemer's Shard
+				i(208636),	-- Nathreza Blasphemer's Wingglaive
+				i(208637),	-- Nathreza Blasphemer's Warglaive
+				i(208638),	-- Savage Champion's Vision
+				i(208639),	-- Savage Champion's Tusks
+				i(208640),	-- Savage Champion's Belt
+				i(208641),	-- Savage Champion's Thorns
+				i(208642),	-- Savage Champion's Gladius
+				i(208643),	-- Savage Champion's Disemboweler
+				i(208648),	-- Possessed Watcher Kabuto
+				i(208650),	-- Possessed Watcher Pauldrons
+				i(208651),	-- Possessed Watcher Cord
+				i(208652),	-- Possessed Watcher Fan
+				i(208653),	-- Possessed Watcher Bloom
+				i(208654),	-- Possessed Watcher Keg
+				i(208655),	-- Voice of the Alluring Call
+				i(208656),	-- Wings of the Alluring Call
+				i(208657),	-- Chains of the Alluring Call
+				i(208659),	-- Flayer of the Alluring Call
+				i(208660),	-- Effigy of the Alluring Call
+				i(208661),	-- Caduceus of the Alluring Call
+				i(208663),	-- Ashamane's Vestment of Rebirth
+				i(208664),	-- Ashamane's Blessings of Rebirth
+				i(208665),	-- Webbed Saronite Exoskeleton
+				i(208666),	-- Webbed Saronite Weaponry
+				i(208667),	-- Nathreza Blasphemer's Flames
+				i(208668),	-- Nathreza Blasphemer's Glaives
+				i(208669),	-- Possessed Watcher Guise
+				i(208671),	-- Possessed Watcher Arsenal
+				i(208672),	-- Jewels of the Alluring Call
+				i(208673),	-- Instruments of the Alluring Call
+				i(208626),	-- Ashamane's Jewel of Rebirth
+			}),
+			filter(COSMETIC, {
+				---- HERTIAGE ----
+				i(208474),	-- Forsaken Champion's Spaulders
+				i(208475),	-- Ensemble: Forsaken Champion's Attire
+				i(208476),	-- Forsaken Champion's Chestguard
+				i(208477),	-- Forsaken Champion's Belt
+				i(208478),	-- Forsaken Champion's Leggings
+				i(208479),	-- Forsaken Champion's Boots
+				i(208480),	-- Forsaken Champion's Bracers
+				i(208481),	-- Forsaken Champion's Grips
+				i(208488),	-- Forsaken Champion's Backtomb
+				i(208495),	-- Forsaken Champion's Cowl
+				i(208515),	-- Forsaken Champion's Rotcowl
+			}),
+			n(DRAKEWATCHER_MANUSCRIPTS, {
+				i(208200),	-- Dragon Isles Drakes: Gilded Armor
+				i(208550),	-- Dragon Isles Drakes: White Scales
+				i(208859),	-- Cliffside Wylderdrake: Day of the Dead Armor
+				i(208858),	-- Highland Drake: Pirates' Day Armor
+				i(208742),	-- Renewed Proto-Drake: Brewfest Armor
+				i(208680),	-- Windborne Velocidrake: Hallow's End Armor
+			}),
+			filter(MISC, {
+				i(208986),	-- The Horseman's Horrific Hood
+				i(208987),	-- The Horseman's Sinister Slicer
+				i(208988),	-- Band of the Petrified Pumpkin
+				i(208989),	-- Wicked Witch's Signet
+				i(208990),	-- The Horseman's Ring
+				i(208991),	-- Seal of Ghoulish Glee
+				i(209020),	-- Loot-Filled Pumpkin
+				i(209022),	-- The Horseman's Sinister Slicer
+				i(209023),	-- The Horseman's Horrific Hood
+				i(209024),	-- Loot-Filled Pumpkin
+				i(209025),	-- Loot-Filled Pumpkin
+				i(209026),	-- Loot-Stuffed Pumpkin
+				i(209033),	-- Worn Felsteel Prayer Rod
+				i(209034),	-- Half-Completed Invasion Plans
+				i(209044),	-- Orange Brewfest Bulwark
+				i(209053),	-- Green Brewfest Bulwark
+				i(209055),	-- Third Booster Part
+			}),
 			i(44329),	-- Elixir of Mighty Intellect
 			i(115460),	-- Northrend Alchemy Research
 			i(133557),	-- Salt and Pepper Shank
@@ -586,160 +684,28 @@ root(ROOTS.Unsorted, {
 			i(207964),	-- Alabaster Stormtalon
 			i(208099),	-- Quickened Sand
 			i(208182),	-- Bronze Timepiece
-			i(208200),	-- Dragon Isles Drakes: Gilded Armor
-			i(208210),	-- Celebration Package
-			i(208211),	-- Anniversary Gift
-			i(208229),	-- Honor of the Forsaken
-			i(208421),	-- Compendium of the New Moon
-			i(208433),	-- Bronze Racer's Pennant
-			i(208474),	-- Forsaken Champion's Spaulders
-			i(208475),	-- Ensemble: Forsaken Champion's Attire
-			i(208476),	-- Forsaken Champion's Chestguard
-			i(208477),	-- Forsaken Champion's Belt
-			i(208478),	-- Forsaken Champion's Leggings
-			i(208479),	-- Forsaken Champion's Boots
-			i(208480),	-- Forsaken Champion's Bracers
-			i(208481),	-- Forsaken Champion's Grips
-			i(208488),	-- Forsaken Champion's Backtomb
-			i(208495),	-- Forsaken Champion's Cowl
-			i(208515),	-- Forsaken Champion's Rotcowl
-			i(208543),	-- Lil' Frostwing
 			i(208546),	-- Explorer's Rose-Tinted Glasses
 			i(208547),	-- Explorer's Reading Spectacles
 			i(208549),	-- Canned Meat Product
-			i(208550),	-- Dragon Isles Drakes: White Scales
-			i(208551),	-- Ambrosial Sporestone
 			i(208572),	-- Azure Worldchiller
 			i(208598),	-- Eve's Ghastly Rider
-			i(208620),	-- Ashamane's Helm of Rebirth
-			i(208621),	-- Ashamane's Spaulders of Rebirth
-			i(208622),	-- Ashamane's Fangs of Rebirth
-			i(208623),	-- Ashamane's Blade of Rebirth
-			i(208624),	-- Ashamane's Claws of Rebirth
-			i(208625),	-- Ashamane's Crescent of Rebirth
-			i(208626),	-- Ashamane Jewel of Rebirth
-			i(208627),	-- Webbed Saronite Headguard
-			i(208628),	-- Webbed Saronite Spaulders
-			i(208629),	-- Webbed Saronite Girdle
-			i(208630),	-- Webbed Saronite Greataxe
-			i(208631),	-- Webbed Saronite Eviscerator
-			i(208632),	-- Webbed Saronite Devourer
-			i(208633),	-- Nathreza Blasphemer's Horns
-			i(208634),	-- Nathreza Blasphemer's Mantle
-			i(208635),	-- Nathreza Blasphemer's Shard
-			i(208636),	-- Nathreza Blasphemer's Wingglaive
-			i(208637),	-- Nathreza Blasphemer's Warglaive
-			i(208638),	-- Savage Champion's Vision
-			i(208639),	-- Savage Champion's Tusks
-			i(208640),	-- Savage Champion's Belt
-			i(208641),	-- Savage Champion's Thorns
-			i(208642),	-- Savage Champion's Gladius
-			i(208643),	-- Savage Champion's Disemboweler
-			i(208648),	-- Possessed Watcher Kabuto
-			i(208650),	-- Possessed Watcher Pauldrons
-			i(208651),	-- Possessed Watcher Cord
-			i(208652),	-- Possessed Watcher Fan
-			i(208653),	-- Possessed Watcher Bloom
-			i(208654),	-- Possessed Watcher Keg
-			i(208655),	-- Voice of the Alluring Call
-			i(208656),	-- Wings of the Alluring Call
-			i(208657),	-- Chains of the Alluring Call
-			i(208659),	-- Flayer of the Alluring Call
-			i(208660),	-- Effigy of the Alluring Call
-			i(208661),	-- Caduceus of the Alluring Call
-			i(208663),	-- Ashamane's Vestment of Rebirth
-			i(208664),	-- Ashamane's Blessings of Rebirth
-			i(208665),	-- Webbed Saronite Exoskeleton
-			i(208666),	-- Webbed Saronite Weaponry
-			i(208667),	-- Nathreza Blasphemer's Flames
-			i(208668),	-- Nathreza Blasphemer's Glaives
-			i(208669),	-- Possessed Watcher Guise
-			i(208671),	-- Possessed Watcher Arsenal
-			i(208672),	-- Jewels of the Alluring Call
-			i(208673),	-- Instruments of the Alluring Call
 			i(208674),	-- Savage Champion's Trophies
 			i(208675),	-- Savage Champion's Aggression
-			i(208680),	-- Windborne Velocidrake: Hallow's End Armor
 			i(208733),	-- Dragonhorn Flute
 			i(208734),	-- Waterlogged Ledger
 			i(208735),	-- Bucket of Morbid Treats
 			i(208736),	-- Apprentice Astrologist Homework
 			i(208737),	-- Hole-Punched Bakar Tooth
-			i(208742),	-- Renewed Proto-Drake: Brewfest Armor
 			i(208763),	-- Headmaster's Skullcap
 			i(208783),	-- Corrupted Blood
 			i(208784),	-- Primeval Fin
 			i(208786),	-- Luxurious Niffen Hat
-			i(208858),	-- Highland Drake: Pirates' Day Armor
-			i(208859),	-- Cliffside Wylderdrake: Day of the Dead Armor
 			i(208866),	-- The Second Clue
 			i(208867),	-- The Third Clue
-			--
-			i(208880),	-- Brewhahat
 			i(208925),	-- Dreambound Trinket
 			--
-			i(208102),	-- Cliffside Wylderdrake: Visage of the Infinite
-			i(208103),	-- Highland Drake: Visage of the Infinite
-			i(208104),	-- Renewed Proto-Drake: Visage of the Infinite
-			i(208105),	-- Windborne Velocidrake: Visage of the Infinite
-			i(208106),	-- Winding Slitherdrake: Visage of the Infinite
-			i(208626),	-- Ashamane's Jewel of Rebirth
-			i(208986),	-- The Horseman's Horrific Hood
-			i(208987),	-- The Horseman's Sinister Slicer
-			i(208988),	-- Band of the Petrified Pumpkin
-			i(208989),	-- Wicked Witch's Signet
-			i(208990),	-- The Horseman's Ring
-			i(208991),	-- Seal of Ghoulish Glee
-			i(209020),	-- Loot-Filled Pumpkin
-			i(209022),	-- The Horseman's Sinister Slicer
-			i(209023),	-- The Horseman's Horrific Hood
-			i(209024),	-- Loot-Filled Pumpkin
-			i(209025),	-- Loot-Filled Pumpkin
-			i(209026),	-- Loot-Stuffed Pumpkin
-			i(209033),	-- Worn Felsteel Prayer Rod
-			i(209034),	-- Half-Completed Invasion Plans
-			i(209044),	-- Orange Brewfest Bulwark
-			i(209052),	-- Brew Barrel
-			i(209053),	-- Green Brewfest Bulwark
-			i(209055),	-- Third Booster Part
-			--
 			i(4191),	-- Owlbeast Leggings
-			i(208787),	-- Black Holo-Gogs
-			i(208788),	-- Blue Holo-Gogs
-			i(208789),	-- Gold Holo-Gogs
-			i(208790),	-- Green Holo-Gogs
-			i(208791),	-- Purple Holo-Gogs
-			i(208792),	-- Red Holo-Gogs
-			i(208793),	-- Silver Holo-Gogs
-			i(208794),	-- White Holo-Gogs
-			i(208795),	-- Midnight Holo-Gogs
-			i(208796),	-- Orange Holo-Gogs
-			i(208797),	-- Yellow Holo-Gogs
-			i(208802),	-- Black Retinal Armor
-			i(208803),	-- Blue Retinal Armor
-			i(208804),	-- Green Retinal Armor
-			i(208805),	-- Red Retinal Armor
-			i(208806),	-- White Retinal Armor
-			i(208807),	-- Yellow Retinal Armor
-			i(208808),	-- Green Cranial Cannon
-			i(208809),	-- Orange Cranial Cannon
-			i(208810),	-- Purple Cranial Cannon
-			i(208811),	-- Yellow Cranial Cannon
-			i(208812),	-- Yellow Bio-Optic Killshades
-			i(208813),	-- Black Bio-Optic Killshades
-			i(208814),	-- Blue Bio-Optic Killshades
-			i(208815),	-- Red Bio-Optic Killshades
-			i(208817),	-- Blue Ectoplasmic Specs
-			i(208818),	-- Green Ectoplasmic Specs
-			i(208819),	-- Red Ectoplasmic Specs
-			i(208820),	-- Yellow Ectoplasmic Specs
 			i(209035),	-- Flame Hearthstone
-			i(209062),	-- Ensemble: Chromatically Calibrated Holo-Gogs
-			i(209063),	-- Ensemble: Chromatically Calibrated Bio-Optic Killshades
-			i(209064),	-- Ensemble: Chromatically Calibrated Retinal Armor
-			i(209066),	-- Ensemble: Chromatically Calibrated Cranial Cannons
-			i(209067),	-- Ensemble: Chromatically Calibrated Ectoplasmic Specs
-
 			i(209781),	-- Second Booster Part
 			--
 			i(206596),	-- Tome of Thomas Thomson
@@ -943,7 +909,6 @@ root(ROOTS.Unsorted, {
 			i(208567),	-- Medal of Conquest
 			--
 			i(206167),	-- Way of the Wonderous Wavewhisker
-			i(206174),	-- Blub
 			--
 			i(190601),	-- Sunny
 			--[[

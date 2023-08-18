@@ -26,7 +26,7 @@ root(ROOTS.NeverImplemented, {
 			i(18967, {	-- Turtle Egg (Olive)
 				-- ["modelID"] = ,
 			}),
-			
+
 			i(13342, {	-- Pet Fish (PET!)
 				-- ["modelID"] = ,
 			}),
@@ -1443,6 +1443,18 @@ root(ROOTS.NeverImplemented, {
 				i(205232, {	-- [DNT] REUSE (PET!)
 					["modelID"] = 112180,
 				}),
+			})),
+
+			-- 10.1.5
+			tier(DF_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
+				-- Trainer Pets --
+				pet(3587),	-- Lifelike Mechanical Duckling (PET!)
+				pet(3608),	-- Lifelike Mechanical Turtle (PET!)
+				pet(3609),	-- Sporeflower (PET!)
+				pet(3975),	-- Midnight Terrorwing (PET!)
+				pet(4237),	-- Treanthony (PET!)
+				-- With SpeciesID Attached
+				i(206174),	-- Blub (PET!)
 			})),
 		}),
 	}),

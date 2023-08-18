@@ -57,6 +57,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
 	["modID"] = 22,	-- Timewalking
 	["difficultyID"] = TIMEWALKING_DUNGEON;
 	["groups"] = {
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+			ach(19079, {	-- Master of the Turbulent Timeways
+				i(205208),	-- Sandy Shalewing (MOUNT!)
+			}),
+		})),
 		n(COMMON_BOSS_DROPS, {
 			i(133543, {	-- Infinite Timereaver (MOUNT!)
 				["crs"] = TIMEWALKING_DUNGEON_CREATURE_IDS,

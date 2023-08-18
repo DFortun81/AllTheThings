@@ -694,6 +694,75 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["_quests"] = { 67084 },	-- The Silver Purpose
 			}),
 		}),
+		ach(18804, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Neltharion's Legacy
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				18160,	-- Aberrus, the Shadowed Crucible
+				18703,	-- Dawn of the Infinite: Galakrond's Fall
+				18704,	-- Dawn of the Infinite: Murozond's Rise
+				19008,	-- Dream Shaper
+				18615,	-- Legend of the Multiverse
+				18209,	-- Nothing Stops the Research
+				17785,	-- Que Zara(lek), Zara(lek)
+				18867,	-- Through the Ashes and Flames
+			}},
+			["groups"] = {
+				i(208551, {	-- Ambrosial Sporestone
+				--[[ TODO: CHeck mod/bonus ID and harvest... No leather shoulders?
+					filter(CLOTH, {
+						i(207927),	-- Crown of the Infinite Lord
+						i(204786),	-- Suffused Cowl
+						i(205061),	-- Zaralek Surveyor's Cowl
+						i(207598),	-- Anachronistic Hood
+						i(204923),	-- Moonless Hood
+						i(204584),	-- Endowed Hood
+						i(208503),	-- Infinite Zealot's Mantle
+						i(204758),	-- Suffused Shoulderpads
+						i(205089),	-- Zaralek Surveyor's Shoulderpads
+						i(207600),	-- Anachronistic Mantle
+						i(204925),	-- Moonless Shoulderpads
+						i(204586),	-- Endowed Mantle
+					}),
+					filer(LEATHER, {
+						i(207936),	-- Hood of Perpetual Conflict
+						i(204780),	-- Suffused Helm
+						i(205067),	-- Zaralek Surveyor's Helm
+						i(207606),	-- Mask of Discontinuity
+						i(204931),	-- Sunless Cowl
+						i(204592),	-- Inherited Mask
+					}),
+					filter(MAIL, {
+						i(208521),	-- Infinite Soldier's Cowl
+						i(204773),	-- Suffused Coif
+						i(205074),	-- Zaralek Surveyor's Coif
+						i(207614),	-- Paradoxical Cowl
+						i(204940),	-- Skyless Coif
+						i(204600),	-- Bequeathed Cowl
+						i(207945),	-- Chrono-Lord's Wingspan
+						i(204771),	-- Suffused Shoulderguards
+						i(205076),	-- Zaralek Surveyor's Shoulderguards
+						i(207616),	-- Paradoxical Spaulders
+						i(204942),	-- Skyless Epaulets
+						i(204602),	-- Bequeathed Spaulders
+					}),
+					filter(PLATE, {
+						i(208529),	-- Infinite Vanguard's Greathelm
+						i(204768),	-- Suffused Helm
+						i(205079),	-- Zaralek Surveyor's Helm
+						i(207622),	-- Anomalous Greathelm
+						i(204948),	-- Starless Fullhelm
+						i(204608),	-- Bestowed Greathelm
+						i(208531),	-- Infinite Vanguard's Pauldrons
+						i(204763),	-- Suffused Mantle
+						i(205084),	-- Zaralek Surveyor's Mantle
+						i(207624),	-- Anomalous Pauldrons
+						i(204950),	-- Starless Mantle
+						i(204610),	-- Bestowed Pauldrons
+					}),
+					--]]
+				}),
+			},
+		})),
 		ach(16549, {	-- Popular Around the Isles
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",

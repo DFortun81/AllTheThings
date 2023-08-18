@@ -279,11 +279,11 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 					["g"] = {
 						ach(18704),	-- Dawn of the Infinite: Murozond's Rise
 						i(206145),	-- Mysterious Time Relic (QI!)
-						i(208102),	-- Cliffside Wylderdrake: Infinite Scales (DM!)
-						i(208103),	-- Highland Drake: Infinite Scales (DM!)
-						i(208104),	-- Renewed Proto-Drake: Infinite Scales (DM!)
-						i(208105),	-- Windborne Velocidrake: Infinite Scales (DM!)
-						i(208106),	-- Winding Slitherdrake: Infinite Scales (DM!)
+						i(208102),	-- Cliffside Wylderdrake: Visage of the Infinite (DM!)
+						i(208103),	-- Highland Drake: Visage of the Infinite (DM!)
+						i(208104),	-- Renewed Proto-Drake: Visage of the Infinite (DM!)
+						i(208105),	-- Windborne Velocidrake: Visage of the Infinite (DM!)
+						i(208106),	-- Winding Slitherdrake: Visage of the Infinite (DM!)
 						i(207874),	-- Belt of the Eternal Struggle
 						i(207945),	-- Chrono-Lord's Wingspan
 						i(207951),	-- Displaced Trooper's Gauntlets
@@ -318,7 +318,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						}),
 					},
 				}),
-				
+
 				-------------------------------------------
 				-- DO NOT TOUCH THIS PART OR I KNIFE YOU --
 				----------------LG GOLD -------------------
@@ -340,7 +340,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 									ig(93081),	-- Hozen-Stitched Hood 				(NYI)
 									ig(147516),	-- Legion Stalker's Hood 			(NYI)
 									ig(121509),	-- Runesworn Crown		 			(NYI)
-									
+
 									ig(1280),	-- Cloaked Hood 					(Removed)
 									ig(4724),	-- Humbert's Helm 					(Removed)
 									ig(134621),	-- Incendiary Helm 					(Removed)
@@ -395,7 +395,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 									ig(93078),	-- Hozen-Stitched Jerkin 			(NYI)
 									ig(93049),	-- Mogubreaker Jerkin	 			(NYI)
 									ig(3984),	-- Strapped Armor					(NYI)
-									
+
 									ig(2069),	-- Black Bear Hide Vest 			(Removed)
 									ig(134729),	-- Frosthide Tunic 					(Removed)
 									ig(2108),	-- Frostmane Leather Vest			(Removed)(unique)
@@ -443,7 +443,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 									ig(114392),	-- Legguards of Falling Leaves 	(NYI)
 									ig(121513),	-- Runesworn Breeches 			(NYI)
 									ig(3982),	-- Strapped Pants 				(NYI)
-									
+
 									ig(3022),	-- Bluegill Breeches 			(Removed)(unique)
 									ig(18611),	-- Gnarlpine Leggings 			(Removed)
 									ig(134760),	-- Masked Leggings 				(Removed)
@@ -536,7 +536,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							ig(2280),	-- Kam's Walking Stick				(Removed)
 							ig(3227),	-- Nightbane Staff 					(Removed)(Unique)
 							ig(1473),	-- Riverside Staff					(Removed)
-							ig(880),	-- Staff of Horrors 
+							ig(880),	-- Staff of Horrors
 						}),
 						i(208109, {	-- Quantum Sword		(1Hand)
 							ig(8223),	-- Blade of the Basilisk 			(Removed)
