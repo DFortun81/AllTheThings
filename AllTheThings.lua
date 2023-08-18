@@ -185,10 +185,13 @@ app.IgnoreDataCaching = function()
 end
 app.DoModuleEvent = function(eventName)
 	-- See if any Modules have the event function defined, and call them now
+	local func
 	for _,module in pairs(app.Modules) do
-		if module[eventName] then
-			-- app.PrintDebug(_,eventName,ATTAccountWideData)
-			app.FunctionRunner.Run(module[eventName], ATTAccountWideData);
+		func = module[eventName]
+		if func and type(func) == "function" then
+			app.PrintDebug(_,eventName,ATTAccountWideData)
+			func(ATTAccountWideData)
+			-- app.FunctionRunner.Run(module[eventName], ATTAccountWideData);
 		end
 	end
 end
