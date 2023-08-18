@@ -19,7 +19,7 @@ root(ROOTS.Unsorted, {
 		tier(BFA_TIER, {
 			-------------------------------------------
 			-- DO NOT TOUCH THIS PART OR I KNIFE YOU --
-			---------------- DARKAL -------------------
+			----------------- DARKAL ------------------
 			-------------------------------------------
 
 			-- Drustvar items = Nazmir quest rewards
@@ -32,15 +32,18 @@ root(ROOTS.Unsorted, {
 			-- Drustvar
 			n(ARMOR, {
 				filter(CLOTH, {
-					i(155461),	-- Wickerwoven Headpiece
-					i(155463),	-- Wickerwoven Wrap
-					i(155464),	-- Wickerwoven Shoulderpads
+					-- Loads on Wowhead & ingame	
 					i(155465),	-- Wickerwoven Cord
 					i(158588),	-- Wickerwoven Walkers
 					i(158603),	-- Wickerwoven Handwraps
 					i(158619),	-- Wickerwoven Waistband
 					i(158631),	-- Wickerwoven Bindings
 					i(160197),	-- Wickerwoven Pantaloons
+
+					-- Loads on Wowhead but not ingame
+					i(155461),	-- Wickerwoven Headpiece
+					i(155463),	-- Wickerwoven Wrap
+					i(155464),	-- Wickerwoven Shoulderpads
 					i(160862),	-- Wickerwoven Mantle
 					i(160866),	-- Wickerwoven Circlet
 

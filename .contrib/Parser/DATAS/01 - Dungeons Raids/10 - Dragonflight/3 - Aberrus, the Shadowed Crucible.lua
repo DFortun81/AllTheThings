@@ -47,11 +47,13 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					}),
 					q(74913, {	-- Memories of an Artifact
 						["sourceQuests"] = { 74912 },	-- Neltharion's Legacy
-						-- ["provider"] = { "n",  },	--
+						["provider"] = { "n", 187669 },	-- Nozdormu
+						["coord"] = { 60.8, 39.2, VALDRAKKEN },
 					}),
 					q(74923, {	-- It Takes a Village to Make an Artifact
 						["sourceQuests"] = { 74913 },	-- Memories of an Artifact
-						-- ["provider"] = { "n",  },	--
+						["provider"] = { "n", 187669 },	-- Nozdormu
+						["coord"] = { 60.8, 39.2, VALDRAKKEN },
 						["cost"] = {
 							{ "i", 204854, 1 },	-- 1x Immaculate Coalescing Dracothyst
 							{ "i", 204856, 1 },	-- 1x Inspired Order Recalibrator
