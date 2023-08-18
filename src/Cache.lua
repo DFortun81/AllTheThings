@@ -1,59 +1,40 @@
 do
 local appName, app = ...;
-local L = app.L;
 
 -- Global locals
-local ipairs, tinsert, pairs, rawset, rawget
-	= ipairs, tinsert, pairs, rawset, rawget;
+local ipairs, tinsert, pairs, rawset
+	= ipairs, tinsert, pairs, rawset;
 
 -- App locals
 local contains, classIndex, raceIndex, factionID =
 	app.contains, app.ClassIndex, app.RaceIndex, app.FactionID;
 
 -- Module locals
-local fieldCache, _cache = {};
-local currentMaps = {};
-local fieldCache_g,fieldCache_f;
+local containerMeta = {
+	__index = function(t, id)
+		local container = {};
+		rawset(t, id, container);
+		return container;
+	end,
+};
+local fieldCache = setmetatable({}, {
+	__index = function(t, field)
+		local container = setmetatable({}, containerMeta);
+		rawset(t, field, container);
+		return container;
+	end,
+	__newindex = function(t, field, value)
+		local container = setmetatable(value, containerMeta);
+		rawset(t, field, value);
+		return container;
+	end,
+});
+fieldCache["npcID"] = fieldCache.creatureID;
 local function CacheField(group, field, value)
-	fieldCache_g = fieldCache[field];
-	fieldCache_f = fieldCache_g[value];
-	if fieldCache_f then
-		tinsert(fieldCache_f, group);
-	else
-		fieldCache_g[value] = {group};
-	end
+	tinsert(fieldCache[field][value], group);
 end
 
--- These are the fields we store.
-for w,f in ipairs({
-	"achievementID",
-	"achievementCategoryID",
-	"creatureID",
-	"currencyID",
-	"currencyIDAsCost",
-	"explorationID",
-	"factionID",
-	"flightPathID",
-	"headerID",
-	"illusionID",
-	"instanceID",
-	"itemID",
-	"itemIDAsCost",
-	"mapID",
-	"objectID",
-	"professionID",
-	"questID",
-	"requireSkill",
-	"sourceQuestID",
-	"speciesID",
-	"spellID",
-	"tierID",
-	"titleID",
-	"toyID"
-}) do
-	fieldCache[f] = {};
-end
-fieldCache["npcID"] = fieldCache.creatureID;
+local currentMaps = {};
 local cacheCreatureID = function(group, value)
 	if value > 0 then
 		CacheField(group, "creatureID", value);
@@ -76,6 +57,7 @@ local cacheObjectID = function(group, value)
 	CacheField(group, "objectID", value);
 end;
 if app.Version == "[Git]" then
+	local L = app.L;
 	local referenceCounter = {};
 	app.ReferenceCounter = referenceCounter;
 	app.CheckReferenceCounters = function()
@@ -329,6 +311,7 @@ local fieldConverters = {
 	end,
 };
 
+local _cache;
 local function _CacheFields(group)
 	local n = 0;
 	local clone, mapKeys, key, value, hasG = {};
@@ -409,11 +392,10 @@ local function SearchForFieldRecursively(group, field, value)
 	end
 end
 local function SearchForFieldContainer(field)
-	if field then return fieldCache[field]; end
+	return fieldCache[field];
 end
 local function SearchForField(field, id)
-	_cache = SearchForFieldContainer(field);
-	if _cache and id then return _cache[id], field, id; end
+	return SearchForFieldContainer(field)[id], field, id;
 end
 
 -- External API Functions
