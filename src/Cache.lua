@@ -2,8 +2,8 @@ do
 local appName, app = ...;
 
 -- Global locals
-local ipairs, tinsert, pairs, rawset, wipe
-	= ipairs, tinsert, pairs, rawset, wipe;
+local ipairs, tinsert, pairs, rawset, type, wipe
+	= ipairs, tinsert, pairs, rawset, type, wipe;
 
 -- App locals
 local contains, classIndex, raceIndex, factionID =
@@ -31,9 +31,13 @@ local fieldMeta = {
 	end,
 };
 local currentCache, CacheFields;
+
+-- Cache a given group into the current cache for the provided field and value
 local function CacheField(group, field, value)
 	tinsert(currentCache[field][value], group);
 end
+
+-- Returns: An object which can be used for holding cached data by various keys allowing for quick updates of data states.
 local CreateDataCache = function(name)
 	local cache = { name = name };
 	AllCaches[name] = cache;
@@ -48,33 +52,51 @@ local CreateDataCache = function(name)
 	end
 	setmetatable(cache, fieldMeta);
 	cache["npcID"] = cache.creatureID;	-- identical cache as creatureID (probably deprecate npcID use eventually)
-	cache["requireSkill"] = cache.professionID;	-- identical cache as professionID
+	--cache["requireSkill"] = cache.professionID;	-- identical cache as professionID (in Retail)
 	return cache;
 end
 currentCache = CreateDataCache("default");
 
-local currentMaps = {};
-local cacheCreatureID = function(group, value)
-	if value > 0 then
-		CacheField(group, "creatureID", value);
+local currentMapCounters = setmetatable({}, {
+	__index = function(t, id) return 0; end,
+});
+local cacheAchievementID = function(group, value)
+	-- achievements used on maps should not cache the location for the achievement
+	if group.mapID then
+		--print("Map has an achievementID linked. This is a deprecated style.", group.hash);
+		return;
+	end
+	CacheField(group, "achievementID", value);
+end
+local cacheCreatureID = function(group, creatureID)
+	if creatureID > 0 then
+		CacheField(group, "creatureID", creatureID);
 	end
 end;
-local cacheHeaderID = function(group, value)
-	CacheField(group, "headerID", value);
+local cacheFactionID = function(group, id)
+	CacheField(group, "factionID", id);
+end
+local cacheHeaderID = function(group, headerID)
+	CacheField(group, "headerID", headerID);
 end
 local cacheMapID = function(group, mapID)
-	local count = currentMaps[mapID] or 0;
+	local count = currentMapCounters[mapID];
 	if count == 0 then
-		currentMaps[mapID] = 1;
-		CacheField(group, "mapID", mapID);
+		currentMapCounters[mapID] = 1;
+		if currentMapCounters[-1] == 0 then
+			CacheField(group, "mapID", mapID);
+		end
 	else
-		currentMaps[mapID] = count + 1;
+		currentMapCounters[mapID] = count + 1;
 	end
 	return true;
 end;
-local cacheObjectID = function(group, value)
-	CacheField(group, "objectID", value);
+local cacheObjectID = function(group, objectID)
+	CacheField(group, "objectID", objectID);
 end;
+local cacheQuestID = function(group, questID)
+	CacheField(group, "questID", questID);
+end
 if app.Version == "[Git]" then
 	local L = app.L;
 	local referenceCounter = {};
@@ -120,11 +142,11 @@ if app.Version == "[Git]" then
 		end
 		app.SetDataMember("CUSTOM_HEADERS", CUSTOM_HEADERS);
 	end
-	cacheCreatureID = function(group, npcID)
-		if npcID > 0 then
-			CacheField(group, "creatureID", npcID);
+	cacheCreatureID = function(group, creatureID)
+		if creatureID > 0 then
+			CacheField(group, "creatureID", creatureID);
 		else
-			referenceCounter[npcID] = (referenceCounter[npcID] or 0) + 1;
+			referenceCounter[creatureID] = (referenceCounter[creatureID] or 0) + 1;
 		end
 	end
 	cacheHeaderID = function(group, headerID)
@@ -143,13 +165,34 @@ if app.Version == "[Git]" then
 		CacheField(group, "objectID", objectID);
 	end
 end
+
+-- Cost & Providers Helper
+local providerTypeConverters = {
+	["n"] = cacheCreatureID,
+	["o"] = cacheObjectID,
+	["c"] = function(group, providerID)
+		CacheField(group, "currencyIDAsCost", providerID);
+	end,
+	["i"] = function(group, providerID)
+		CacheField(group, "itemIDAsCost", providerID);
+	end,
+	["g"] = function(group, providerID)
+		-- Do nothing, nothing to cache.
+	end
+};
+local cacheProviderOrCost = function(group, provider)
+	providerTypeConverters[provider[1]](group, provider[2]);
+end
+
 local uncacheMap = function(group, mapID, field)
-	local count = currentMaps[mapID] or 0;
-	if count > 0 then
-		currentMaps[mapID] = count - 1;
+	if mapID then
+		local count = currentMapCounters[mapID];
+		if count > 0 then
+			currentMapCounters[mapID] = count - 1;
+		end
 	end
 end;
-local mapKeyConverters = {
+local mapKeyUncachers = {
 	["mapID"] = uncacheMap,
 	["maps"] = function(group, maps)
 		for _,mapID in ipairs(maps) do
@@ -157,44 +200,48 @@ local mapKeyConverters = {
 		end
 	end,
 	["coord"] = function(group, coord)
-		if coord[3] and not (group.instanceID or group.mapID or group.objectiveID) then
+		if not (group.instanceID or group.mapID or group.objectiveID) then	-- Retail doesn't have this line, investigate why or if they should
 			uncacheMap(group, coord[3]);
 		end
 	end,
 	["coords"] = function(group, coords)
-		if not (group.instanceID or group.mapID or group.objectiveID) then
+		if not (group.instanceID or group.mapID or group.objectiveID) then	-- Retail doesn't have this line, investigate why or if they should
 			for i,coord in ipairs(coords) do
-				if coord[3] then uncacheMap(group, coord[3]); end
+				uncacheMap(group, coord[3]);
 			end
 		end
 	end,
 };
 local fieldConverters = {
 	-- Simple Converters
-	["achievementID"] = function(group, value)
-		CacheField(group, "achievementID", value);
-	end,
+	["achievementID"] = cacheAchievementID,
 	["achievementCategoryID"] = function(group, value)
 		CacheField(group, "achievementCategoryID", value);
 	end,
-	["achID"] = function(group, value)
-		CacheField(group, "achievementID", value);
+	["achID"] = cacheAchievementID,
+	["altAchID"] = cacheAchievementID,
+	["artifactID"] = function(group, value)
+		CacheField(group, "artifactID", value);
 	end,
-	["altAchID"] = function(group, value)
-		CacheField(group, "achievementID", value);
+	["azeriteEssenceID"] = function(group, value)
+		CacheField(group, "azeriteEssenceID", value);
 	end,
 	["creatureID"] = cacheCreatureID,
 	["currencyID"] = function(group, value)
 		CacheField(group, "currencyID", value);
 	end,
+	["encounterID"] = function(group, value)
+		CacheField(group, "encounterID", value);
+	end,
 	["explorationID"] = function(group, value)
 		CacheField(group, "explorationID", value);
 	end,
-	["factionID"] = function(group, value)
-		CacheField(group, "factionID", value);
-	end,
+	["factionID"] = cacheFactionID,
 	["flightPathID"] = function(group, value)
 		CacheField(group, "flightPathID", value);
+	end,
+	["followerID"] = function(group, value)
+		CacheField(group, "followerID", value);
 	end,
 	["headerID"] = cacheHeaderID,
 	["illusionID"] = function(group, value)
@@ -216,11 +263,20 @@ local fieldConverters = {
 	["professionID"] = function(group, value)
 		CacheField(group, "professionID", value);
 	end,
-	["questID"] = function(group, value)
-		CacheField(group, "questID", value);
-	end,
+	["questID"] = cacheQuestID,
+	["questIDA"] = cacheQuestID,	-- These are referenced in Retail, not sure if used.
+	["questIDH"] = cacheQuestID,	-- These are referenced in Retail, not sure if used.
 	["requireSkill"] = function(group, value)
-		CacheField(group, "requireSkill", value);
+		CacheField(group, "requireSkill", value);	-- NOTE: professionID in Retail, investigate why
+	end,
+	["runeforgePowerID"] = function(group, value)
+		CacheField(group, "runeforgePowerID", value);
+	end,
+	["rwp"] = function(group, value)
+		CacheField(group, "rwp", value);
+	end,
+	["s"] = function(group, value)
+		CacheField(group, "s", value);
 	end,
 	["speciesID"] = function(group, value)
 		CacheField(group, "speciesID", value);
@@ -233,6 +289,9 @@ local fieldConverters = {
 	end,
 	["titleID"] = function(group, value)
 		CacheField(group, "titleID", value);
+	end,
+	["toyID"] = function(group, value)
+		CacheField(group, "toyID", value);
 	end,
 	
 	-- Complex Converters
@@ -256,20 +315,6 @@ local fieldConverters = {
 			CacheField(group, "titleID", value[i]);
 		end
 	end,
-	["providers"] = function(group, value)
-		for i=1,#value,1 do
-			local v = value[i];
-			if v[2] > 0 then
-				if v[1] == "n" then
-					cacheCreatureID(group, v[2]);
-				elseif v[1] == "i" then
-					CacheField(group, "itemIDAsCost", v[2]);
-				elseif v[1] == "o" then
-					cacheObjectID(group, v[2]);
-				end
-			end
-		end
-	end,
 	["maps"] = function(group, value)
 		for i=1,#value,1 do
 			cacheMapID(group, value[i]);
@@ -277,36 +322,42 @@ local fieldConverters = {
 		return true;
 	end,
 	["coord"] = function(group, coord)
-		if coord[3] and not (group.instanceID or group.mapID or group.objectiveID) then
-			cacheMapID(group, coord[3]);
-			return true;
+		-- Retail used this commented out section instead, see which one is better
+		-- don't cache mapID from coord for anything which is itself an actual instance or a map
+		-- if currentInstance ~= group and not rawget(group, "mapID") and not rawget(group, "difficultyID") then
+		if not (group.instanceID or group.mapID or group.objectiveID) then
+			return cacheMapID(group, coord[3]);
 		end
 	end,
 	["coords"] = function(group, coords)
+		-- Retail used this commented out section instead, see which one is better
+		-- don't cache mapID from coord for anything which is itself an actual instance or a map
+		-- if currentInstance ~= group and not rawget(group, "mapID") and not rawget(group, "difficultyID") then
 		if not (group.instanceID or group.mapID or group.objectiveID) then
 			for i,coord in ipairs(coords) do
-				if coord[3] then cacheMapID(group, coord[3]); end
+				cacheMapID(group, coord[3]);
 			end
 			return true;
 		end
 	end,
 	["cost"] = function(group, value)
-		if type(value) == "number" then
-			return;
-		else
+		if type(value) == "table" then
 			for i=1,#value,1 do
-				local v = value[i];
-				if v[2] > 0 then
-					if v[1] == "i" then
-						CacheField(group, "itemIDAsCost", v[2]);
-					elseif v[1] == "o" then
-						cacheObjectID(group, v[2]);
-					elseif v[1] == "c" then
-						CacheField(group, "currencyIDAsCost", v[2]);
-					end
-				end
+				cacheProviderOrCost(group, value[i]);
 			end
 		end
+	end,
+	["provider"] = cacheProviderOrCost,
+	["providers"] = function(group, value)
+		for i=1,#value,1 do
+			cacheProviderOrCost(group, value[i]);
+		end
+	end,
+	["maxReputation"] = function(group, value)
+		cacheFactionID(group, value[1]);
+	end,
+	["minReputation"] = function(group, value)
+		cacheFactionID(group, value[1]);
 	end,
 	["c"] = function(group, value)
 		if not contains(value, classIndex) then
@@ -323,6 +374,11 @@ local fieldConverters = {
 			group.nmr = true;	-- "Not My Race"
 		end
 	end,
+	["nextQuests"] = function(group, value)
+		for _,questID in ipairs(value) do
+			CacheField(group, "nextQuests", questID);
+		end
+	end,
 	["sourceQuests"] = function(group, value)
 		for i=1,#value,1 do
 			CacheField(group, "sourceQuestID", value[i]);
@@ -330,7 +386,7 @@ local fieldConverters = {
 	end,
 };
 
-local _cache;
+local _converter;
 local function _CacheFields(group)
 	local n = 0;
 	local clone, mapKeys, key, value, hasG = {};
@@ -344,10 +400,10 @@ local function _CacheFields(group)
 	end
 	for i=1,n,1 do
 		key = clone[i];
-		_cache = fieldConverters[key];
-		if _cache then
+		_converter = fieldConverters[key];
+		if _converter then
 			value = group[key];
-			if _cache(group, value) then
+			if _converter(group, value) then
 				if not mapKeys then mapKeys = {}; end
 				mapKeys[key] = value;
 			end
@@ -360,20 +416,40 @@ local function _CacheFields(group)
 	end
 	if mapKeys then
 		for key,value in pairs(mapKeys) do
-			mapKeyConverters[key](group, value);
+			mapKeyUncachers[key](group, value);
 		end
 	end
 end
 CacheFields = function(group)
-	wipe(currentMaps);
+	wipe(currentMapCounters);
 	_CacheFields(group);
-	wipe(currentMaps);
+	wipe(currentMapCounters);
 	return group;
 end
 
 -- This data type requires additional processing.
 fieldConverters.otherQuestData = function(group, value)
 	_CacheFields(value);
+end
+
+-- Performance Tracking for Caching
+local performance = app.__perf;
+if performance then
+	-- init table for this object type
+	local perf = performance.CacheFields;
+	local cacheConverters = {};
+	for key,func in pairs(fieldConverters) do
+		-- replace each function with itself wrapped in a perf update
+		-- app.PrintDebug("Replaced Cache function",key)
+		local typePerf = perf[key];
+		cacheConverters[key] = function(group, value)
+			local now = GetTimePreciseSec();
+			func(group, value);
+			typePerf.time = typePerf.time + (GetTimePreciseSec() - now);
+			typePerf.count = typePerf.count + 1;
+		end
+	end
+	fieldConverters = cacheConverters;
 end
 
 -- Returns: A table containing all subgroups which contain a given value of field relative to the group or nil.
@@ -432,6 +508,13 @@ local function SearchForRelativeItems(group, listing)
 	end
 end
 
+-- Returns: The first found cached group for a given SourceID
+-- NOTE: Do not use this function when the results are being passed into an Update afterward
+-- or if ATT data has not been loaded yet
+local function SearchForSourceIDQuickly(sourceID)
+	if sourceID then return SearchForField("s", sourceID)[1]; end
+end
+
 -- Search a group for a objects whose hash matches a hash found in hashes and append it to table t.
 local function SearchForSpecificGroups(t, group, hashes)
 	if group then
@@ -447,13 +530,66 @@ local function SearchForSpecificGroups(t, group, hashes)
 	end
 end
 
+-- Verify no infinite parent recursion exists for a given group
+local function VerifyRecursion(group, checked)
+	if type(group) ~= "table" then return; end
+	if not checked then
+		checked = { };
+		-- print("test",group.key,group[group.key]);
+	end
+	for k,o in pairs(checked) do
+		if o.key ~= nil and o.key == group.key and o[o.key] == group[group.key] then
+			-- print("Infinite .parent Recursion Found:");
+			-- print the parent chain to the loop point
+			-- for a,b in pairs(checked) do
+				-- print(b.key,b[b.key],b,"=>");
+			-- end
+			-- print(group.key,group[group.key],group);
+			-- print("---");
+			return;
+		end
+	end
+	if group.parent then
+		tinsert(checked, group);
+		return VerifyRecursion(group.parent, checked);
+	end
+	return true;
+end
+
+-- Verify that the current cache does not have any recursive issues.
+local function VerifyCache()
+	print("VerifyCache Starting...");
+	for i,keyCache in pairs(currentCache) do
+		print("Cache", i);
+		for k,valueCache in pairs(keyCache) do
+			-- print("valueCache",k);
+			for o,group in pairs(valueCache) do
+				-- print("group",o);
+				if not VerifyRecursion(group) then
+					print("Caused infinite .parent recursion",group.key,group[group.key]);
+				end
+			end
+		end
+	end
+	print("VerifyCache Completed");
+end
+
+-- Toggle being able to cache things inside maps
+-- TODO: Determine if this is necessary.
+app.ToggleCacheMaps = function(skipCaching)
+	currentMapCounters[-1] = skipCaching;
+end
+
 -- External API Functions
---app.CacheField = CacheField;	-- This doesn't seem to have any external uses, apparently was used by Flight Paths at some point.
+app.CacheField = CacheField;	-- This doesn't seem to have any external uses, apparently was used by Flight Paths at some point.
 app.CacheFields = CacheFields;
 app.CreateDataCache = CreateDataCache;
 app.SearchForFieldRecursively = SearchForFieldRecursively;
 app.SearchForFieldContainer = SearchForFieldContainer;
 app.SearchForField = SearchForField;
 app.SearchForRelativeItems = SearchForRelativeItems;
+app.SearchForSourceIDQuickly = SearchForSourceIDQuickly;
 app.SearchForSpecificGroups = SearchForSpecificGroups;
+app.VerifyCache = VerifyCache;
+app.VerifyRecursion = VerifyRecursion;
 end

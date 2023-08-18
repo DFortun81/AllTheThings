@@ -873,14 +873,15 @@ local IsQuestFlaggedCompletedForObject = function(t)
 			return 2;
 		end
 	end
-	if t.altQuests then
-		for i,questID in ipairs(t.altQuests) do
+	local altQuests = t.altQuests;
+	if altQuests then
+		for i,questID in ipairs(altQuests) do
 			if IsQuestFlaggedCompleted(questID) then
 				return 2;
 			end
 		end
 		if app.Settings.AccountWide.Quests then
-			for i,questID in ipairs(t.altQuests) do
+			for i,questID in ipairs(altQuests) do
 				if  ATTAccountWideData.Quests[questID] then
 					return 2;
 				end
@@ -7817,9 +7818,13 @@ end),
 				return t.repeatable and 1 or 2;
 			end
 			if app.Settings.AccountWide.Reputations then
-				local faction = app.SearchForField("factionID", t.maxReputation[1]);
-				if (faction and #faction > 0 and faction[1].collected) then
-					return 2;
+				local searchResults = app.SearchForField("factionID", t.maxReputation[1]);
+				if #searchResults > 0 then
+					for i,searchResult in ipairs(searchResults) do
+						if searchResult.key ~= "questID" and searchResult.collected then
+							return 2;
+						end
+					end
 				end
 			end
 		end

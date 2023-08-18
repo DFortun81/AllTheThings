@@ -21,11 +21,11 @@ db\RaceDB.lua
 db\TBC\FlightPathDB.lua
 db\TBC\ExplorationDB.lua
 src\base.lua
+classic\locales\en.lua
+src\Cache.lua
 lib\Audio.lua
 db\TBC\CategoryDB.lua
 db\TBC\ObjectDB.lua
-classic\locales\en.lua
-src\Cache.lua
 classic\src-Classes-base.lua
 src\Modules\Events.lua
 src\Classes\Filter Types.lua

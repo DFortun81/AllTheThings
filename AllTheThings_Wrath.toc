@@ -21,11 +21,11 @@ db\RaceDB.lua
 db\Wrath\FlightPathDB.lua
 db\Wrath\ExplorationDB.lua
 src\base.lua
+classic\locales\en.lua
+src\Cache.lua
 lib\Audio.lua
 db\Wrath\CategoryDB.lua
 db\Wrath\ObjectDB.lua
-classic\locales\en.lua
-src\Cache.lua
 classic\src-Classes-base.lua
 src\Modules\Events.lua
 src\Classes\Filter Types.lua
