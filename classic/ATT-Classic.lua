@@ -1855,48 +1855,48 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						text = string.gsub(text, source, replacement);
 					end
 					
-					local didthing = false;
+					local right = " ";
 					if j.u then
 						local reason = L["UNOBTAINABLE_ITEM_REASONS"][j.u];
 						if reason and (not reason[5] or select(4, GetBuildInfo()) < reason[5]) then
-							tinsert(unfiltered, text .. " |T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][reason[1]] .. ":0|t");
-							didthing = true;
+							right = "|T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][reason[1]] .. ":0|t";
 						end
-					end
-					if not didthing then
-						if j.e then
-							tinsert(unfiltered, text .. " |T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][4] .. ":0|t");
-						elseif not app.RecursiveClassAndRaceFilter(j.parent) then
-							tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-Away:0|t");
-						elseif not app.RecursiveUnobtainableFilter(j.parent) then
-							tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-DnD:0|t");
-						else
-							tinsert(temp, text);
-						end
+					end 
+					if j.rwp then right = right .. "|T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][2] .. ":0|t"; end
+					if j.e then right = right .. "|T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][4] .. ":0|t"; end
+					
+					if not app.RecursiveClassAndRaceFilter(j.parent) then
+						tinsert(unfiltered, { text, right .. "|TInterface\\FriendsFrame\\StatusIcon-Away:0|t" });
+					elseif not app.RecursiveUnobtainableFilter(j.parent) then
+						tinsert(unfiltered, { text, right .. "|TInterface\\FriendsFrame\\StatusIcon-DnD:0|t" });
+					else
+						tinsert(temp, { text, right });
 					end
 				end
 			end
 			if (#temp < 1 and not (paramA == "creatureID")) or app.Settings:Get("DebugMode") then
-				for i,j in ipairs(unfiltered) do
-					tinsert(temp, j);
+				for i,data in ipairs(unfiltered) do
+					tinsert(temp, data);
 				end
 			end
 			if #temp > 0 then
-				local listing = {};
+				local listing, listingByText = {}, {};
 				local maximum = app.Settings:GetTooltipSetting("Locations");
-				app.Sort(temp, app.SortDefaults.Number);
-				for i,j in ipairs(temp) do
-					if not contains(listing, j) then
-						tinsert(listing, 1, j);
-						if string.find(j, RETRIEVING_DATA) then working = true; end
+				for i,data in ipairs(temp) do
+					local text = data[1] or RETRIEVING_DATA;
+					if not listingByText[text] then
+						listingByText[text] = data;
+						tinsert(listing, 1, data);
+						if string.find(text, RETRIEVING_DATA) then working = true; end
 					end
 				end
 				local count, splitCounts, splitCount = 0, { };
-				for i,text in ipairs(listing) do
-					local left, right = strsplit(DESCRIPTION_SEPARATOR, text);
+				for i,data in ipairs(listing) do
+					local left, right = strsplit(DESCRIPTION_SEPARATOR, data[1]);
+					left = left .. data[2];
 					splitCount = splitCounts[left];
 					if not splitCount then
-						splitCount = { count = 0,variants ={} };
+						splitCount = { count = 0, data=data, variants ={} };
 						splitCounts[left] = splitCount;
 					end
 					if right and not contains(splitCount.variants, right) then
