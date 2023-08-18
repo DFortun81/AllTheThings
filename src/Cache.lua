@@ -2,14 +2,15 @@ do
 local appName, app = ...;
 
 -- Global locals
-local ipairs, tinsert, pairs, rawset
-	= ipairs, tinsert, pairs, rawset;
+local ipairs, tinsert, pairs, rawset, wipe
+	= ipairs, tinsert, pairs, rawset, wipe;
 
 -- App locals
 local contains, classIndex, raceIndex, factionID =
 	app.contains, app.ClassIndex, app.RaceIndex, app.FactionID;
 
 -- Module locals
+local AllCaches = {};
 local containerMeta = {
 	__index = function(t, id)
 		local container = {};
@@ -17,7 +18,7 @@ local containerMeta = {
 		return container;
 	end,
 };
-local fieldCache = setmetatable({}, {
+local fieldMeta = {
 	__index = function(t, field)
 		local container = setmetatable({}, containerMeta);
 		rawset(t, field, container);
@@ -28,11 +29,29 @@ local fieldCache = setmetatable({}, {
 		rawset(t, field, value);
 		return container;
 	end,
-});
-fieldCache["npcID"] = fieldCache.creatureID;
+};
+local currentCache, CacheFields;
 local function CacheField(group, field, value)
-	tinsert(fieldCache[field][value], group);
+	tinsert(currentCache[field][value], group);
 end
+local CreateDataCache = function(name)
+	local cache = { name = name };
+	AllCaches[name] = cache;
+	cache.CacheField = function(group, field, value)
+		tinsert(cache[field][value], group);
+	end
+	cache.CacheFields = function(groups)
+		local oldCache = currentCache;
+		currentCache = cache;
+		CacheFields(groups);
+		currentCache = oldCache;
+	end
+	setmetatable(cache, fieldMeta);
+	cache["npcID"] = cache.creatureID;	-- identical cache as creatureID (probably deprecate npcID use eventually)
+	cache["requireSkill"] = cache.professionID;	-- identical cache as professionID
+	return cache;
+end
+currentCache = CreateDataCache("default");
 
 local currentMaps = {};
 local cacheCreatureID = function(group, value)
@@ -345,20 +364,19 @@ local function _CacheFields(group)
 		end
 	end
 end
-local function CacheFields(group)
+CacheFields = function(group)
 	wipe(currentMaps);
 	_CacheFields(group);
 	wipe(currentMaps);
 	return group;
 end
 
-
 -- This data type requires additional processing.
 fieldConverters.otherQuestData = function(group, value)
 	_CacheFields(value);
 end
 
--- Local Functions
+-- Returns: A table containing all subgroups which contain a given value of field relative to the group or nil.
 local function SearchForFieldRecursively(group, field, value)
 	if group.g then
 		-- Go through the sub groups and determine if any of them have a response.
@@ -391,17 +409,51 @@ local function SearchForFieldRecursively(group, field, value)
 		return { group };
 	end
 end
+
+-- Returns: A table containing all groups which contain a given field.
 local function SearchForFieldContainer(field)
-	return fieldCache[field];
+	return currentCache[field];
 end
+
+-- Returns: A table containing all groups which contain the provided id for a given field.
 local function SearchForField(field, id)
 	return SearchForFieldContainer(field)[id], field, id;
 end
 
+-- Search a group for all items relative to the given group. (excluding the group passed in)
+local function SearchForRelativeItems(group, listing)
+	if group and group.g then
+		for i,subgroup in ipairs(group.g) do
+			SearchForRelativeItems(subgroup, listing);
+			if subgroup.itemID then
+				tinsert(listing, subgroup);
+			end
+		end
+	end
+end
+
+-- Search a group for a objects whose hash matches a hash found in hashes and append it to table t.
+local function SearchForSpecificGroups(t, group, hashes)
+	if group then
+		if hashes[group.hash] then
+			tinsert(t, group);
+		end
+		local g = group.g;
+		if g then
+			for _,o in ipairs(g) do
+				SearchForSpecificGroups(t, o, hashes);
+			end
+		end
+	end
+end
+
 -- External API Functions
-app.CacheField = CacheField;
+--app.CacheField = CacheField;	-- This doesn't seem to have any external uses, apparently was used by Flight Paths at some point.
 app.CacheFields = CacheFields;
+app.CreateDataCache = CreateDataCache;
 app.SearchForFieldRecursively = SearchForFieldRecursively;
 app.SearchForFieldContainer = SearchForFieldContainer;
 app.SearchForField = SearchForField;
+app.SearchForRelativeItems = SearchForRelativeItems;
+app.SearchForSpecificGroups = SearchForSpecificGroups;
 end
