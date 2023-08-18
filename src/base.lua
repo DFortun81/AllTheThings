@@ -62,35 +62,43 @@ end
 --[[ Performance Tracking ]
 -- app.__perf[Key][Tracker(Count,Time)]
 do
-local pairs, tinsert, table_concat
-	= pairs, tinsert, table.concat;
-app.__perf = {};
+local pairs, tinsert, table_concat, type
+	= pairs, tinsert, table.concat, type;
+local keyMeta = {
+	__index = function(t, key)
+		local scopeKey = { count = 0, time = 0};
+		rawset(t, key, scopeKey);
+		return scopeKey;
+	end,
+};
+local performance = setmetatable({}, {
+	__index = function(t, scopeName)
+		local scope = setmetatable({}, keyMeta);
+		rawset(t, scopeName, scope);
+		return scope;
+	end,
+});
+app.__perf = performance;
 app.PrintPerf = function()
-	local perf, type = app.__perf, type
-	if perf then
-		local blob, line = {}, {};
-		for typeKey,typeData in pairs(perf) do
-			for k,v in pairs(typeData) do
-				-- if type(v) == "table" then
-					line[1] = typeKey;
-					line[2] = k;
-					line[3] = v.count;
-					line[4] = v.time;
-					tinsert(blob, table_concat(line, ","))
-				-- else print("Why is this a number",typeKey,k,v)
-				-- end
-			end
+	local blob, line = {}, {};
+	for typeKey,typeData in pairs(performance) do
+		for k,v in pairs(typeData) do
+			-- if type(v) == "table" then
+				line[1] = typeKey;
+				line[2] = k;
+				line[3] = v.count;
+				line[4] = v.time;
+				tinsert(blob, table_concat(line, ","))
+			-- else print("Why is this a number",typeKey,k,v)
+			-- end
 		end
-		local csv = table_concat(blob, "\n");
-		app:ShowPopupDialogWithMultiLineEditBox(csv);
 	end
+	local csv = table_concat(blob, "\n");
+	app:ShowPopupDialogWithMultiLineEditBox(csv);
 end
 app.ClearPerf = function()
-	local h = app.__perf;
-	if h then
-		for _,typeData in pairs(h) do
-			wipe(typeData);
-		end
+	for _,typeData in pairs(performance) do
+		wipe(typeData);
 	end
 	app.print("Cleared Performance Stats");
 end

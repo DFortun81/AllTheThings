@@ -7207,16 +7207,12 @@ function(fields, type)
 	if fields.__type then return fields; end
 
 	-- init table for this object type
-	local perf = {};
-    if type and not app.__perf[type] then
-        app.__perf[type] = perf;
-    end
+	local perf = app.__perf[type];
 
 	fields.__type = function() return type; end;
 	fields.__index = function(t, key)
-		local result
+		local now, result = GetTimePreciseSec();
 		objFunc = rawget(fields, key) or ObjectFunctions[key];
-		local now = GetTimePreciseSec();
 		if objFunc then
 			result = objFunc(t);
 			key = tostring(key);
@@ -7233,14 +7229,9 @@ function(fields, type)
 				key = tostring(key).."_miss";
 			end
 		end
-		local after = GetTimePreciseSec();
 		local keyPerf = perf[key];
-		if not keyPerf then
-			keyPerf = { count = 0, time = 0 };
-			perf[key] = keyPerf;
-		end
+		keyPerf.time = keyPerf.time + (GetTimePreciseSec() - now);
 		keyPerf.count = keyPerf.count + 1;
-		keyPerf.time = keyPerf.time + (after - now);
 		return result;
 	end;
 	return fields;
@@ -11657,20 +11648,23 @@ end -- Heirloom Lib
 -- copy base Item fields
 local fields = RawCloneData(itemFields);
 fields.filterID = function(t)
-		return 102;
-	end
+	return 102;
+end
 fields.collectible = function(t)
-		return app.Settings.Collectibles.Toys;
-	end
+	return app.Settings.Collectibles.Toys;
+end
 fields.collected = function(t)
-		return ATTAccountWideData.Toys[t.itemID];
-	end
+	return ATTAccountWideData.Toys[t.itemID];
+end
 fields.tsm = function(t)
-		return sformat("i:%d", t.itemID);
-	end
+	return sformat("i:%d", t.itemID);
+end
 fields.itemID = function(t)
-		return t.toyID;
-	end
+	return t.toyID;
+end
+fields.isToy = function(t)
+	return true;
+end
 
 app.BaseToy = app.BaseObjectFields(fields, "BaseToy");
 app.CreateToy = function(id, t)
@@ -23510,11 +23504,7 @@ app.DoModuleEvent("OnLoad")
 -- Performance Tracking for AllTheThings Functions
 if app.__perf then
 	local scope, unpack = appName, unpack
-	local perf = {};
-	-- init table for this object type
-	if not app.__perf[scope] then
-		app.__perf[scope] = perf;
-	end
+	local perf = app.__perf[scope]
 	-- local origFunctions = {};
 	for key,val in pairs(app) do
 		if type(val) == "function" and type(key) == "string" then
@@ -23522,15 +23512,12 @@ if app.__perf then
 			-- origFunctions[key] = func;
 			app.PrintDebug("Replaced",scope,"function",key)
 
-			local typePerf = { count = 0, time = 0 };
-			perf[key] = typePerf;
-
+			local typePerf = perf[key];
 			app[key] = function(...)
 				local now = GetTimePreciseSec();
 				local res = {val(...)};
-				local after = GetTimePreciseSec();
+				typePerf.time = typePerf.time + (GetTimePreciseSec() - now);
 				typePerf.count = typePerf.count + 1;
-				typePerf.time = typePerf.time + (after - now);
 				return unpack(res);
 			end
 
