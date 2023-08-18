@@ -6087,19 +6087,23 @@ fieldConverters = {
 if app.__perf then
 	local type = "CacheFields";
 	-- init table for this object type
+	local perf = {};
 	if type and not app.__perf[type] then
-		app.__perf[type] = {};
+		app.__perf[type] = perf;
 	end
 	local cacheConverters = {};
 	for key,func in pairs(fieldConverters) do
 		-- replace each function with itself wrapped in a perf update
 		-- app.PrintDebug("Replaced Cache function",key)
+		local typePerf = { count = 0, time = 0 };
+		perf[key] = typePerf;
+
 		cacheConverters[key] = function(group, value)
 			local now = GetTimePreciseSec();
 			func(group, value);
-			local typeData = app.__perf[type];
-			typeData[key] = (typeData[key] or 0) + 1;
-			typeData[key.."_Time"] = (typeData[key.."_Time"] or 0) + (GetTimePreciseSec() - now);
+			local after = GetTimePreciseSec();
+			typePerf.count = typePerf.count + 1;
+			typePerf.time = typePerf.time + (after - now);
 		end
 	end
 	fieldConverters = cacheConverters;
@@ -7200,15 +7204,16 @@ function(fields, type)
 	if fields.__type then return fields; end
 
 	-- init table for this object type
+	local perf = {};
     if type and not app.__perf[type] then
-        app.__perf[type] = {};
+        app.__perf[type] = perf;
     end
 
 	fields.__type = function() return type; end;
 	fields.__index = function(t, key)
-		local typeData, result = app.__perf[type];
-		local now = GetTimePreciseSec();
+		local result
 		objFunc = rawget(fields, key) or ObjectFunctions[key];
+		local now = GetTimePreciseSec();
 		if objFunc then
 			result = objFunc(t);
 			key = tostring(key);
@@ -7225,10 +7230,14 @@ function(fields, type)
 				key = tostring(key).."_miss";
 			end
 		end
-		if typeData then
-			typeData[key] = (typeData[key] or 0) + 1;
-			typeData[key.."_Time"] = (typeData[key.."_Time"] or 0) + (GetTimePreciseSec() - now);
+		local after = GetTimePreciseSec();
+		local keyPerf = perf[key];
+		if not keyPerf then
+			keyPerf = { count = 0, time = 0 };
+			perf[key] = keyPerf;
 		end
+		keyPerf.count = keyPerf.count + 1;
+		keyPerf.time = keyPerf.time + (after - now);
 		return result;
 	end;
 	return fields;
@@ -23494,3 +23503,39 @@ end	-- Vignette Functionality Scope
 app.DoModuleEvent("OnLoad")
 
 -- app.PrintMemoryUsage("AllTheThings.EOF");
+
+-- Performance Tracking for AllTheThings Functions
+if app.__perf then
+	local scope, unpack = appName, unpack
+	local perf = {};
+	-- init table for this object type
+	if not app.__perf[scope] then
+		app.__perf[scope] = perf;
+	end
+	-- local origFunctions = {};
+	for key,val in pairs(app) do
+		if type(val) == "function" and type(key) == "string" then
+			-- replace each function with itself wrapped in a perf update
+			-- origFunctions[key] = func;
+			app.PrintDebug("Replaced",scope,"function",key)
+
+			local typePerf = { count = 0, time = 0 };
+			perf[key] = typePerf;
+
+			app[key] = function(...)
+				local now = GetTimePreciseSec();
+				local res = {val(...)};
+				local after = GetTimePreciseSec();
+				typePerf.count = typePerf.count + 1;
+				typePerf.time = typePerf.time + (after - now);
+				return unpack(res);
+			end
+
+			-- app[key] = function(...)
+			-- 	app.PrintDebug("app.",key)
+			-- 	return val(...)
+			-- end
+		end
+	end
+end
+

@@ -60,23 +60,25 @@ app.PrintDebugPrior = function(...)
 	end
 end
 --[[ Performance Tracking ]
+-- app.__perf[Key][Tracker(Count,Time)]
 do
 local pairs, tinsert, table_concat
 	= pairs, tinsert, table.concat;
 app.__perf = {};
 app.PrintPerf = function()
-	local h = app.__perf;
-	if h then
+	local perf, type = app.__perf, type
+	if perf then
 		local blob, line = {}, {};
-		for type,typeData in pairs(h) do
+		for typeKey,typeData in pairs(perf) do
 			for k,v in pairs(typeData) do
-				if not k:find("_Time") then
-					line[1] = type;
+				-- if type(v) == "table" then
+					line[1] = typeKey;
 					line[2] = k;
-					line[3] = v;
-					line[4] = typeData[k.."_Time"];
+					line[3] = v.count;
+					line[4] = v.time;
 					tinsert(blob, table_concat(line, ","))
-				end
+				-- else print("Why is this a number",typeKey,k,v)
+				-- end
 			end
 		end
 		local csv = table_concat(blob, "\n");
