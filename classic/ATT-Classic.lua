@@ -595,8 +595,9 @@ local function GetCompletionText(state)
 	return L[(state == 2 and "COMPLETE_OTHER") or ((state == 1 or state == true) and "COMPLETE") or "INCOMPLETE"];
 end
 local function GetProgressTextForRow(data)
-	if data.total and (data.total > 1 or (data.total > 0 and not data.collectible)) then
-		return GetProgressColorText(data.progress or 0, data.total);
+	local total = data.total;
+	if total and (total > 1 or (total > 0 and not data.collectible)) then
+		return GetProgressColorText(data.progress or 0, total);
 	elseif data.collectible then
 		return GetCollectionIcon(data.collected);
 	elseif data.trackable then
@@ -763,16 +764,6 @@ local function BuildSourceTextForDynamicPath(group)
 	else
 		return group.hash or group.name or group.text;
 	end
-end
-local function BuildSourceTextForTSM(group, l)
-	if group.parent then
-		if l < 1 or not group.text then
-			return BuildSourceTextForTSM(group.parent, l + 1);
-		else
-			return BuildSourceTextForTSM(group.parent, l + 1) .. "`" .. group.text;
-		end
-	end
-	return L["TITLE"];
 end
 local function CloneData(group)
 	local clone = setmetatable({}, getmetatable(group));
@@ -1217,7 +1208,7 @@ ResolveSymbolicLink = function(o)
 							description = "This was dynamically filled using a symlink, but the information wasn't found in the addon.",
 						}));
 					else
-						print(BuildSourceTextForChat(o, 0));
+						print(BuildSourceTextForDynamicPath(o));
 						print("Failed to select ", field, sym[i]);
 					end
 				end
