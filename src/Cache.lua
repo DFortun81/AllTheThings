@@ -69,16 +69,6 @@ local CreateDataCache = function(name, skipMapCaching)
 end
 currentCache = CreateDataCache("default");
 
-local function BuildSourceTextForChat(group, l)
-	if group.sourceParent or group.parent then
-		if l < 1 then
-			return BuildSourceTextForChat(group.sourceParent or group.parent, l + 1);
-		else
-			return BuildSourceTextForChat(group.sourceParent or group.parent, l + 1) .. " > " .. (group.text or "*");
-		end
-	end
-	return "ATT";
-end
 local currentMapCounters = setmetatable({}, {
 	__index = function(t, id) return 0; end,
 });
