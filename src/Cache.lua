@@ -594,7 +594,7 @@ end
 -- Toggle being able to cache things inside maps
 -- TODO: Determine if this is necessary.
 app.ToggleCacheMaps = function(skipCaching)
-	currentMapCounters[-1] = skipCaching;
+	currentMapCounters[-1] = skipCaching and 1 or 0;
 end
 
 -- External API Functions

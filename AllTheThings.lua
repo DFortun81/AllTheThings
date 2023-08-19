@@ -16920,7 +16920,9 @@ function app:GetDataCache()
 		db.description = L["NEVER_IMPLEMENTED_DESC"];
 		db._nyi = true;
 		tinsert(g, db);
+		app.ToggleCacheMaps(true);
 		CacheFields(db);
+		app.ToggleCacheMaps();
 		app.AssignFieldValue(db, "u", 1);
 	end
 
@@ -16933,6 +16935,9 @@ function app:GetDataCache()
 		db.description = "Hidden Achievement Triggers";
 		db._hqt = true;
 		tinsert(g, db);
+		app.ToggleCacheMaps(true);
+		CacheFields(db);
+		app.ToggleCacheMaps();
 	end
 
 	-- Hidden Quest Triggers
