@@ -1530,10 +1530,12 @@ root(ROOTS.Zones, {
 							11065,	-- Wrangle Some Aether Rays!
 						},
 						["coord"] = { 27.4, 52.7, BLADES_EDGE_MOUNTAINS },
-						["cost"] = {
-							{ "i", 32732, 1 },	--	Dragon Teeth
-						},
 						["lvl"] = lvlsquish(70, 70, 20),
+						["groups"] = {
+							objective(1, {	-- 0/1 Dragon Teeth
+								["provider"] = { "i", 32732 },	-- Dragon Teeth
+							}),
+						},
 					})),
 					q(10674, {	-- Trapping the Light Fantastic
 						["qg"] = 21691,	-- Toshley
