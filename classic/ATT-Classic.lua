@@ -53,6 +53,7 @@ local InCombatLockdown = _G["InCombatLockdown"];
 local GetSpellInfo, IsPlayerSpell, IsSpellKnown, IsSpellKnownOrOverridesKnown, IsTitleKnown = 
 	  GetSpellInfo, IsPlayerSpell, IsSpellKnown, IsSpellKnownOrOverridesKnown, IsTitleKnown;
 local C_QuestLog_GetAllCompletedQuestIDs = C_QuestLog.GetAllCompletedQuestIDs;
+local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
 local ALLIANCE_FACTION_ID = Enum.FlightPathFaction.Alliance;
 local HORDE_FACTION_ID = Enum.FlightPathFaction.Horde;
 
@@ -1641,7 +1642,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 								if j.questID and j.itemID then
 									if not j.saved then
 										-- Only show the item on the tooltip if the quest is active and incomplete or the item is a provider.
-										if C_QuestLog.IsOnQuest(j.questID) then
+										if C_QuestLog_IsOnQuest(j.questID) then
 											if not IsQuestComplete(j.questID) then
 												tinsert(regroup, j);
 											end
@@ -1676,7 +1677,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 								if j.questID and j.itemID then
 									if not j.saved then
 										-- Only show the item on the tooltip if the quest is active and incomplete or the item is a provider.
-										if C_QuestLog.IsOnQuest(j.questID) then
+										if C_QuestLog_IsOnQuest(j.questID) then
 											if not IsQuestComplete(j.questID) then
 												tinsert(regroup, j);
 											end
@@ -6189,7 +6190,7 @@ local collectedAsCostForItem = function(t)
 end;
 local collectibleAsQuest = function(t)
 	if app.Settings.Collectibles.Quests then
-		if (not t.repeatable and not t.isBreadcrumb) or C_QuestLog.IsOnQuest(t.questID) then
+		if (not t.repeatable and not t.isBreadcrumb) or C_QuestLog_IsOnQuest(t.questID) then
 			return true;
 		end
 	end
@@ -7187,7 +7188,7 @@ local createNPC = app.CreateClass("NPC", "npcID", {
 },
 "WithQuest", {
 	collectible = function(t)
-		return app.Settings.Collectibles.Quests and (not t.repeatable and not t.isBreadcrumb or C_QuestLog.IsOnQuest(t.questID));
+		return app.Settings.Collectibles.Quests and (not t.repeatable and not t.isBreadcrumb or C_QuestLog_IsOnQuest(t.questID));
 	end,
 	collected = function(t)
 		return IsQuestFlaggedCompletedForObject(t);
@@ -7319,7 +7320,7 @@ app.CreateHeader = app.CreateClass("AutomaticHeader", "autoID", {
 },
 "WithQuest", {
 	collectible = function(t)
-		return app.Settings.Collectibles.Quests and (not t.repeatable and not t.isBreadcrumb or C_QuestLog.IsOnQuest(t.questID));
+		return app.Settings.Collectibles.Quests and (not t.repeatable and not t.isBreadcrumb or C_QuestLog_IsOnQuest(t.questID));
 	end,
 	collected = function(t)
 		return IsQuestFlaggedCompletedForObject(t);
@@ -7374,7 +7375,7 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 },
 "WithQuest", {
 	collectible = function(t)
-		return app.Settings.Collectibles.Quests and (not t.repeatable and not t.isBreadcrumb or C_QuestLog.IsOnQuest(t.questID));
+		return app.Settings.Collectibles.Quests and (not t.repeatable and not t.isBreadcrumb or C_QuestLog_IsOnQuest(t.questID));
 	end,
 	collected = function(t)
 		return IsQuestFlaggedCompletedForObject(t);
@@ -7468,7 +7469,7 @@ local TAILORING = ATTC.SkillIDToSpellID[197];
 app.OnUpdateForOmarionsHandbook = function(t)
 	t.visible = true;
 	t.collectible = nil;
-	if app.Settings:Get("DebugMode") or app.Settings:Get("AccountMode") or CompletedQuests[9233] or C_QuestLog.IsOnQuest(9233) then
+	if app.Settings:Get("DebugMode") or app.Settings:Get("AccountMode") or CompletedQuests[9233] or C_QuestLog_IsOnQuest(9233) then
 		return false;
 	else
 		for spellID,skills in pairs(app.CurrentCharacter.ActiveSkills) do
@@ -7749,7 +7750,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 	end,
 	["collectible"] = function(t)
 		if app.Settings.Collectibles.Quests then
-			if C_QuestLog.IsOnQuest(t.questID) then
+			if C_QuestLog_IsOnQuest(t.questID) then
 				return true;
 			end
 			if t.locked then return app.Settings.AccountWide.Quests; end
@@ -7757,7 +7758,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		end
 	end,
 	["collected"] = function(t)
-		if C_QuestLog.IsOnQuest(t.questID) then
+		if C_QuestLog_IsOnQuest(t.questID) then
 			return false;
 		end
 		return IsQuestFlaggedCompletedForObject(t);
@@ -7781,7 +7782,7 @@ end),
 "WithReputation", {
 	collectible = function(t)
 		if app.Settings.Collectibles.Quests then
-			if C_QuestLog.IsOnQuest(t.questID) then
+			if C_QuestLog_IsOnQuest(t.questID) then
 				return true;
 			end
 			if t.locked then return app.Settings.AccountWide.Quests; end
@@ -7792,7 +7793,7 @@ end),
 		end
 	end,
 	collected = function(t)
-		if C_QuestLog.IsOnQuest(t.questID) then
+		if C_QuestLog_IsOnQuest(t.questID) then
 			return false;
 		end
 		local flag = IsQuestFlaggedCompletedForObject(t);
@@ -7819,7 +7820,7 @@ end),
 "AsBreadcrumb", {
 	collectible = function(t)
 		if app.Settings.Collectibles.Quests then
-			if C_QuestLog.IsOnQuest(t.questID) or IsQuestFlaggedCompletedForObject(t) then
+			if C_QuestLog_IsOnQuest(t.questID) or IsQuestFlaggedCompletedForObject(t) then
 				return true;
 			end
 			local results = SearchForField("sourceQuestID", t.questID);
@@ -7972,13 +7973,13 @@ app.CreateQuestObjective = app.CreateClass("Objective", "objectiveID", {
 		if not t.questID then
 			return false;
 		end
-		return app.Settings.Collectibles.Quests and C_QuestLog.IsOnQuest(t.questID);
+		return app.Settings.Collectibles.Quests and C_QuestLog_IsOnQuest(t.questID);
 	end,
 	["trackable"] = function(t)
 		if not t.questID then
 			return false;
 		end
-		return C_QuestLog.IsOnQuest(t.questID);
+		return C_QuestLog_IsOnQuest(t.questID);
 	end,
 	["collected"] = function(t)
 		-- If the parent is collected, return immediately.
@@ -9456,7 +9457,7 @@ local function AddTomTomWaypoint(group)
 			end
 			TomTom:SetClosestWaypoint();
 		end
-		if C_SuperTrack and group.questID and C_QuestLog.IsOnQuest(group.questID) then
+		if C_SuperTrack and group.questID and C_QuestLog_IsOnQuest(group.questID) then
 			C_SuperTrack.SetSuperTrackedQuestID(group.questID);
 		end
 	else
@@ -9640,17 +9641,17 @@ end
 app.CreateMinimapButton = CreateMinimapButton;
 
 -- Row Helper Functions
-local _SetPortraitTexture = _G["SetPortraitTexture"];
-local _SetPortraitTextureFromDisplayID = _G["SetPortraitTextureFromCreatureDisplayID"];
+local SetPortraitTexture = _G["SetPortraitTexture"];
+local SetPortraitTextureFromDisplayID = _G["SetPortraitTextureFromCreatureDisplayID"];
 local function SetPortraitIcon(self, data, x)
 	local displayID = GetDisplayID(data);
 	if displayID then
-		_SetPortraitTextureFromDisplayID(self, displayID);
+		SetPortraitTextureFromDisplayID(self, displayID);
 		self:SetWidth(self:GetHeight());
 		self:SetTexCoord(0, 1, 0, 1);
 		return true;
 	elseif data.unit and not data.icon then
-		_SetPortraitTexture(self, data.unit);
+		SetPortraitTexture(self, data.unit);
 		self:SetWidth(self:GetHeight());
 		self:SetTexCoord(0, 1, 0, 1);
 		return true;
@@ -9796,7 +9797,7 @@ local function SetRowData(self, row, data)
 	end
 	
 	-- If data is quest and is currently accepted or saved...
-	if data.questID and C_QuestLog.IsOnQuest(data.questID) then
+	if data.questID and C_QuestLog_IsOnQuest(data.questID) then
 		indicatorTexture = app.asset("known_circle");
 	elseif data.saved then
 		if data.parent and data.parent.locks or data.isDaily then
