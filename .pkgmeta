@@ -30,7 +30,10 @@ tools-used:
 
 plain-copy:
   - assets/*
-  - db/*
+  - db/Presets.lua
+  - db/RaceDB.lua
+  - db/ReagentsDB.lua
+  - db/Dragonflight/*
   - lib/*
   - locales/*
   - src/*
