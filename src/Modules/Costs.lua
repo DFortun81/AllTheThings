@@ -10,9 +10,11 @@ local rawget, ipairs, pairs
 	= rawget, ipairs, pairs;
 
 -- App locals
+local SearchForField, SearchForFieldContainer
+	= app.SearchForField, app.SearchForFieldContainer;
 
 -- Module locals
-local RecursiveGroupRequirementsFilter, SearchForField, GroupFilter, SearchForFieldContainer, DGU, UpdateRunner, CheckCanBeCollected;
+local RecursiveGroupRequirementsFilter, GroupFilter, DGU, UpdateRunner, CheckCanBeCollected;
 -- Ideally never used, but weird situations are possible to cause logic to execute prior to ATT even loading
 local function EmptyFunction() end
 local function CanBeCollected(ref)
@@ -231,8 +233,6 @@ end
 local api = {};
 app.Modules.Costs = api;
 api.OnLoad = function()
-	SearchForField = app.SearchForField;
-	SearchForFieldContainer = app.SearchForFieldContainer;
 	DGU = app.DirectGroupUpdate;
 	UpdateRunner = app.UpdateRunner;
 end

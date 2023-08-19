@@ -10,6 +10,7 @@ local rawget, ipairs, pairs, TooltipUtil, Enum_TooltipDataType, InCombatLockdown
 	= rawget, ipairs, pairs, TooltipUtil, Enum.TooltipDataType, InCombatLockdown, pcall, strsplit, tostring, tonumber, tinsert, C_Map.GetPlayerMapPosition, math.sqrt;
 
 -- App locals
+local SearchForField = app.SearchForField;
 
 -- Tooltip API Implementation
 -- Access via AllTheThings.Modules.Tooltip
@@ -17,7 +18,7 @@ local api = {};
 app.Modules.Tooltip = api;
 
 -- Module locals (can be set via OnReady if they do not change during Session but are not yet defined)
-local SearchForField, GetCachedSearchResults, SearchForLink, L, GetCurrentMapID
+local GetCachedSearchResults, SearchForLink, L, GetCurrentMapID
 
 -- Helper Functions (TODO: Define these somewhere and cache locally)
 local function distance( x1, y1, x2, y2 )
@@ -631,7 +632,6 @@ local api = {};
 app.Modules.Tooltip = api;
 api.AttachTooltipSearchResults = AttachTooltipSearchResults;
 api.OnLoad = function()
-	SearchForField = app.SearchForField;
 	GetCachedSearchResults = app.GetCachedSearchResults;
 	SearchForLink = app.SearchForLink;
 	L = app.L;

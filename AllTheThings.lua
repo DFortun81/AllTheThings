@@ -55,8 +55,13 @@ local DESCRIPTION_SEPARATOR = "`";
 local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tremove, sformat, strsplit, GetTimePreciseSec, type
 	= rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tremove, string.format, strsplit, GetTimePreciseSec, type;
 local ATTAccountWideData;
-local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
+
+-- App & Module locals
+local ArrayAppend = app.ArrayAppend;
+local CacheFields, SearchForField, SearchForFieldContainer, SearchForSourceIDQuickly
+	= app.CacheFields, app.SearchForField, app.SearchForFieldContainer, app.SearchForSourceIDQuickly;
 local AttachTooltipSearchResults = app.Modules.Tooltip.AttachTooltipSearchResults;
+local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 
 -- Add a header debugger
 setmetatable(app.HeaderConstants, {
@@ -1836,16 +1841,13 @@ app.IsNPCQuestGiver = function(self, npcID)
 	if npcQuestsCache[npcID] ~= nil then
 		return npcQuestsCache[npcID];
 	else
-		local group = app.SearchForField("creatureID", npcID);
-		if group then
-			for _,v in pairs(group) do
-				if v.visible and v.questID then
-					npcQuestsCache[npcID] = true;
-					return true;
-				end
+		for _,v in pairs(SearchForField("creatureID", npcID)) do
+			if v.visible and v.questID then
+				npcQuestsCache[npcID] = true;
+				return true;
 			end
 		end
-
+		
 		npcQuestsCache[npcID] = false;
 		return false;
 	end
@@ -2659,7 +2661,6 @@ do
 local select, tremove, unpack =
 	  select, tremove, unpack;
 local FinalizeModID, PruneFinalized;
-local ArrayAppend = app.ArrayAppend;
 -- Checks if any of the provided arguments can be found within the first array object
 local function ContainsAnyValue(arr, ...)
 	local value;
@@ -2704,8 +2705,8 @@ local ResolveFunctions = {
 		local vals = select("#", ...);
 		for i=1,vals do
 			val = select(i, ...);
-			cache = app.SearchForField(field, val);
-			if cache then
+			cache = SearchForField(field, val);
+			if #cache > 0 then
 				ArrayAppend(searchResults, cache);
 			else
 				app.print("Failed to select ", field, val);
@@ -2752,11 +2753,8 @@ local ResolveFunctions = {
 		if okey then
 			local okeyval = o[okey];
 			if okeyval then
-				local cache = app.SearchForField(okey, okeyval);
-				if cache then
-					for _,s in ipairs(cache) do
-						ArrayAppend(searchResults, s.g);
-					end
+				for _,s in ipairs(SearchForField(okey, okeyval)) do
+					ArrayAppend(searchResults, s.g);
 				end
 			end
 		end
@@ -2986,11 +2984,10 @@ local ResolveFunctions = {
 			return;
 		end
 		local cache, value;
-		local Search = app.SearchForField;
 		for i=1,vals do
 			value = select(i, ...);
-			cache = Search("achievementID", value);
-			if cache then
+			cache = SearchForField("achievementID", value);
+			if #cache > 0 then
 				ArrayAppend(searchResults, cache);
 			else
 				app.print("Failed to select achievementID",value);
@@ -3060,20 +3057,18 @@ local ResolveFunctions = {
 				app.PrintDebug("'achievement_criteria' used on a non-Achievement group")
 				return;
 			end
-			local cache;
 			local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id, criteriaObject;
 			for criteriaID=1,GetAchievementNumCriteria(achievementID),1 do
 				criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id = GetAchievementCriteriaInfo(achievementID, criteriaID);
 
 				-- SourceQuest
 				if criteriaType == 27 then
-					cache = app.SearchForField("questID", assetID);
-					for _,c in ipairs(cache) do
+					for _,c in ipairs(SearchForField("questID", assetID)) do
 						-- criteria inherit their achievement data ONLY when the achievement data is actually referenced... this is required for proper caching
 						criteriaObject = app.CreateAchievementCriteria(id, {["achievementID"] = achievementID}, true);
 						NestObject(c, criteriaObject);
 						BuildGroups(c);
-						app.CacheFields(criteriaObject);
+						CacheFields(criteriaObject);
 						app.DirectGroupUpdate(c);
 						-- app.PrintDebug("Add-Crit",achievementID,id,"=>",c.hash)
 					end
@@ -3095,7 +3090,7 @@ local ResolveFunctions = {
 				-- Criteria was not Sourced, so put it under the Achievement
 				if criteriaObject then
 					NestObject(o, criteriaObject);
-					app.CacheFields(criteriaObject);
+					CacheFields(criteriaObject);
 					tinsert(searchResults, criteriaObject);
 				end
 			end
@@ -4955,8 +4950,8 @@ local function DetermineNPCDrops(group)
 	if npcID then
 		-- app.PrintDebug("NPC Group",group.hash,npcID)
 		-- search for groups of this NPC
-		local npcGroups = app.SearchForField("npcID", npcID);
-		if npcGroups then
+		local npcGroups = SearchForField("npcID", npcID);
+		if #npcGroups > 0 then
 			-- see if there's a difficulty wrapping the fill group
 			local difficultyID = GetRelativeValue(group, "difficultyID");
 			if difficultyID then
@@ -5037,7 +5032,7 @@ local function FillGroupsRecursive(group, FillData)
 
 	local groups;
 	-- Determine Cost/Crafted/Symlink groups
-	groups = app.ArrayAppend(groups,
+	groups = ArrayAppend(groups,
 		DeterminePurchaseGroups(group, FillData),
 		DetermineUpgradeGroups(group, FillData),
 		DetermineCraftedGroups(group, FillData),
@@ -5070,7 +5065,7 @@ local function FillGroupsRecursiveAsync(group, FillData)
 	-- increment depth if things are being nested
 	local groups;
 	-- Determine Cost/Crafted/Symlink groups
-	groups = app.ArrayAppend(groups,
+	groups = ArrayAppend(groups,
 		DeterminePurchaseGroups(group, FillData),
 		DetermineUpgradeGroups(group, FillData),
 		DetermineCraftedGroups(group, FillData),
@@ -5718,503 +5713,6 @@ function app:SynchronizeWithPlayer(playerName)
 end
 end)();
 
--- Lua Constructor Lib
-local fieldCache;
-local CacheFields;
-local _cache;
-local DataCaches = {};
-(function()
-local currentMaps = {};
-local currentInstance, currentCache, fieldCache_g, fieldCache_f, fieldConverters;
-local wipe, type =
-	  wipe, type;
--- Allows caching the given 'group' using the provided field and value into the 'currentCache'
-local CacheField = function(group, field, value)
-	fieldCache_g = currentCache[field];
-	fieldCache_f = fieldCache_g[value];
-	if fieldCache_f then
-		fieldCache_f[#fieldCache_f + 1] = group;
-	else
-		fieldCache_g[value] = {group};
-	end
-end
-
--- Creates and returns an object which can be used for holding cached data by various keys allowing for quick updates of data states. 'name' is optional for debugging
-app.CreateDataCache = function(name)
-	local cache = {};
-	-- Caches all the nested groups into this DataCache
-	cache.CacheFields = function(groups)
-		-- link the local references to the references of this specific cache
-		currentCache = cache;
-		-- app.PrintDebug("DataCache",currentCache.name)
-		-- perform the caching logic against the groups
-		CacheFields(groups);
-		-- reset to the default data cache
-		currentCache = fieldCache;
-		-- app.PrintDebug("Reset DataCache",currentCache.name)
-	end
-	cache.name = name;
-	-- These are the fields we store.
-	for w,f in ipairs({
-		"achievementID",
-		"artifactID",
-		"azeriteEssenceID",
-		"creatureID",
-		"currencyID",
-		"currencyIDAsCost",
-		"encounterID",
-		"factionID",
-		"flightPathID",
-		"followerID",
-		"headerID",
-		"illusionID",
-		"instanceID",
-		"itemID",
-		"itemIDAsCost",
-		"mapID",
-		"mountID",
-		"nextQuests",
-		"objectID",
-		"professionID",
-		"questID",
-		"runeforgePowerID",
-		"rwp",
-		"s",
-		"speciesID",
-		"spellID",
-		"tierID",
-		"titleID",
-		"toyID"
-	}) do
-		cache[f] = {};
-	end
-	-- identical cache as creatureID (probably deprecate creatureID use eventually)
-	cache["npcID"] = cache.creatureID;
-	-- identical cache as professionID
-	cache["requireSkill"] = cache.professionID;
-
-	tinsert(DataCaches, cache);
-	return cache;
-end
--- default data cache
-fieldCache = app.CreateDataCache("default");
-currentCache = fieldCache;
--- This is referenced by FlightPath objects when pulling their Info from the DB
-app.CacheField = CacheField;
-
--- Toggle being able to cache things inside maps
-app.ToggleCacheMaps = function(skipCaching)
-	currentMaps[-1] = skipCaching;
-end
-local cacheAchievementID = function(group, value)
-	-- achievements used on maps should not cache the location for the achievement
-	if group.mapID then return; end
-	CacheField(group, "achievementID", value);
-end
-local cacheCreatureID = function(group, npcID)
-	if npcID > 0 then
-		CacheField(group, "creatureID", npcID);
-	end
-end
-local cacheHeaderID = function(group, value)
-	CacheField(group, "headerID", value);
-end
--- special map cache function, will only cache a group for the mapID if the current hierarchy has not already been cached in this map
--- level doesn't matter and will be reported in chat for 'mapID' and 'maps' being multiply-nested
-local cacheMapID = function(group, mapID, coords)
-	-- use -1 as special key to NOT cache a group with a map
-	if currentMaps[-1] then return; end
-	if not currentMaps[mapID] then
-		-- track the group which was first cached for this map within the hierarchy
-		currentMaps[mapID] = group;
-		CacheField(group, "mapID", mapID);
-	elseif not coords then
-		local mapgroup = currentMaps[mapID];
-		print("Multi-nested map",mapID,"for",group.key,group.key and group[group.key],"under",mapgroup.key,mapgroup.key and mapgroup[mapgroup.key]);
-	end
-end
-local cacheObjectID = function(group, objectID)
-	CacheField(group, "objectID", objectID);
-end
-local cacheQuestID = function(group, questID)
-	CacheField(group, "questID", questID);
-end
-local cacheFactionID = function(group, id)
-	CacheField(group, "factionID", id);
-end
-if app.Version == "[Git]" then
-	local referenceCounter = {};
-	app.ReferenceCounter = referenceCounter;
-	app.CheckReferenceCounters = function()
-		local CUSTOM_HEADERS = {};
-		for id,count in pairs(referenceCounter) do
-			if type(id) == "number" and tonumber(id) < 1 and tonumber(id) > -100000 then
-				tinsert(CUSTOM_HEADERS, { id, count });
-			end
-		end
-		for id,_ in pairs(L.HEADER_NAMES) do
-			if not referenceCounter[id] then
-				referenceCounter[id] = 1;
-				tinsert(CUSTOM_HEADERS, { id, 0 });
-			end
-		end
-		for id,_ in pairs(L.HEADER_DESCRIPTIONS) do
-			if not referenceCounter[id] then
-				tinsert(CUSTOM_HEADERS, { id, 0, " and only exists as a description..." });
-			end
-		end
-		for id,_ in pairs(L.HEADER_ICONS) do
-			if not referenceCounter[id] then
-				tinsert(CUSTOM_HEADERS, { id, 0, " and only exists as an icon..." });
-			end
-		end
-		app.Sort(CUSTOM_HEADERS, function(a, b)
-			return (a[1] or 0) < (b[1] or 0);
-		end);
-		for _,data in ipairs(CUSTOM_HEADERS) do
-			local id = data[1];
-			print("Custom Header " .. id .. " has " .. data[2] .. " references" .. (data[3] or "."));
-			local header = {};
-			if L.HEADER_NAMES[id] then header.name = L.HEADER_NAMES[id]; end
-			if L.HEADER_ICONS[id] then header.icon = L.HEADER_ICONS[id]; end
-			if L.HEADER_DESCRIPTIONS[id] then header.description = L.HEADER_DESCRIPTIONS[id]; end
-			if data[3] then
-				data[3] = header;
-			else
-				tinsert(data, header);
-			end
-		end
-		app.SetDataMember("CUSTOM_HEADERS", CUSTOM_HEADERS);
-	end
-	cacheCreatureID = function(group, npcID)
-		if npcID > 0 then
-			CacheField(group, "creatureID", npcID);
-		else
-			referenceCounter[npcID] = (referenceCounter[npcID] or 0) + 1;
-		end
-	end
-	cacheHeaderID = function(group, headerID)
-		if not group.type and not L["HEADER_NAMES"][headerID] then
-			print("Header Missing Name ", headerID);
-			L["HEADER_NAMES"][headerID] = "Header #" .. headerID;
-		end
-		referenceCounter[headerID] = (referenceCounter[headerID] or 0) + 1;
-		CacheField(group, "headerID", headerID);
-	end
-	cacheObjectID = function(group, objectID)
-		if not app.ObjectNames[objectID] then
-			print("Object Missing Name ", objectID);
-			app.ObjectNames[objectID] = "Object #" .. objectID;
-		end
-		CacheField(group, "objectID", objectID);
-	end
-end
-
-fieldConverters = {
-	-- Simple Converters
-	["achievementID"] = cacheAchievementID,
-	["achID"] = cacheAchievementID,
-	["altAchID"] = cacheAchievementID,
-	["artifactID"] = function(group, value)
-		CacheField(group, "artifactID", value);
-	end,
-	["azeriteEssenceID"] = function(group, value)
-		CacheField(group, "azeriteEssenceID", value);
-	end,
-	["creatureID"] = cacheCreatureID,
-	["currencyID"] = function(group, value)
-		CacheField(group, "currencyID", value);
-	end,
-	["encounterID"] = function(group, value)
-		CacheField(group, "encounterID", value);
-	end,
-	["factionID"] = cacheFactionID,
-	["flightPathID"] = function(group, value)
-		CacheField(group, "flightPathID", value);
-	end,
-	["followerID"] = function(group, value)
-		CacheField(group, "followerID", value);
-	end,
-	["headerID"] = cacheHeaderID,
-	["illusionID"] = function(group, value)
-		CacheField(group, "illusionID", value);
-	end,
-	["instanceID"] = function(group, value)
-		CacheField(group, "instanceID", value);
-	end,
-	["itemID"] = function(group, value, raw)
-		if not raw then
-			-- only cache the modItemID if it is not the same as the itemID
-			-- pulling .modItemID directly will cause a rawset on the group and break iteration while caching
-			local modItemID = GetGroupItemIDWithModID(group);
-			if (modItemID or value) ~= value then
-				CacheField(group, "itemID", modItemID);
-			end
-		end
-		-- always cache the plain ItemID as a fallback for items which generate in-game with unaccounted-for modIDs (M+, etc.)
-		CacheField(group, "itemID", value);
-	end,
-	["mapID"] = cacheMapID,
-	["mountID"] = function(group, value)
-		CacheField(group, "mountID", value);
-		CacheField(group, "spellID", value);
-	end,
-	["npcID"] = cacheCreatureID,
-	["objectID"] = cacheObjectID,
-	["professionID"] = function(group, value)
-		CacheField(group, "professionID", value);
-	end,
-	["questID"] = cacheQuestID,
-	["questIDA"] = cacheQuestID,
-	["questIDH"] = cacheQuestID,
-	["otherQuestData"] = function(group, value)
-		CacheFields(value);
-	end,
-	["requireSkill"] = function(group, value)
-		CacheField(group, "professionID", value);
-	end,
-	["runeforgePowerID"] = function(group, value)
-		CacheField(group, "runeforgePowerID", value);
-	end,
-	["rwp"] = function(group, value)
-		CacheField(group, "rwp", value);
-	end,
-	["s"] = function(group, value)
-		CacheField(group, "s", value);
-	end,
-	["speciesID"] = function(group, value)
-		CacheField(group, "speciesID", value);
-	end,
-	["spellID"] = function(group, value)
-		CacheField(group, "spellID", value);
-	end,
-	["tierID"] = function(group, value)
-		CacheField(group, "tierID", value);
-	end,
-	["titleID"] = function(group, value)
-		CacheField(group, "titleID", value);
-	end,
-	["toyID"] = function(group, value)
-		CacheField(group, "toyID", value);
-		CacheField(group, "itemID", value);
-	end,
-
-	-- Complex Converters
-	["crs"] = function(group, value)
-		for _,creatureID in ipairs(value) do
-			cacheCreatureID(group, creatureID);
-		end
-	end,
-	["qgs"] = function(group, value)
-		for _,questGiverID in ipairs(value) do
-			cacheCreatureID(group, questGiverID);
-		end
-	end,
-	["titleIDs"] = function(group, value)
-		_cache = fieldConverters.titleID;
-		for _,titleID in ipairs(value) do
-			_cache(group, titleID);
-		end
-	end,
-	["providers"] = function(group, value)
-		local t, p;
-		for _,v in pairs(value) do
-			p = v[2];
-			if p > 0 then
-				t = v[1];
-				if t == "n" then
-					cacheCreatureID(group, p);
-				elseif t == "i" then
-					CacheField(group, "itemIDAsCost", p);
-				elseif t == "c" then
-					CacheField(group, "currencyIDAsCost", p);
-				elseif t == "o" then
-					cacheObjectID(group, p);
-				end
-			end
-		end
-	end,
-	["maps"] = function(group, value)
-		for _,mapID in ipairs(value) do
-			cacheMapID(group, mapID);
-		end
-	end,
-	["maxReputation"] = function(group, value)
-		cacheFactionID(group, value[1]);
-	end,
-	["minReputation"] = function(group, value)
-		cacheFactionID(group, value[1]);
-	end,
-	["nextQuests"] = function(group, value)
-		for _,questID in ipairs(value) do
-			CacheField(group, "nextQuests", questID);
-		end
-	end,
-	["coord"] = function(group, value)
-		-- don't cache mapID from coord for anything which is itself an actual instance or a map
-		if currentInstance ~= group and not rawget(group, "mapID") and not rawget(group, "difficultyID") then
-			if value[3] then cacheMapID(group, value[3], true); end
-		end
-	end,
-	["coords"] = function(group, value)
-		-- don't cache mapID from coord for anything which is itself an actual instance or a map
-		if currentInstance ~= group and not rawget(group, "mapID") and not rawget(group, "difficultyID") then
-			for _,coord in ipairs(value) do
-				if coord[3] then cacheMapID(group, coord[3], true); end
-			end
-		end
-	end,
-	["cost"] = function(group, value)
-		if type(value) == "number" then
-			return;
-		else
-			local t, p;
-			for _,v in pairs(value) do
-				p = v[2];
-				if p > 0 then
-					t = v[1];
-					if t == "i" then
-						CacheField(group, "itemIDAsCost", p);
-					elseif t == "c" then
-						CacheField(group, "currencyIDAsCost", p);
-					elseif t == "o" then
-						cacheObjectID(group, p);
-					end
-				end
-			end
-		end
-	end,
-};
-
--- Performance Tracking for Caching
-if app.__perf then
-	local type = "CacheFields";
-	-- init table for this object type
-	local perf = {};
-	if type and not app.__perf[type] then
-		app.__perf[type] = perf;
-	end
-	local cacheConverters = {};
-	for key,func in pairs(fieldConverters) do
-		-- replace each function with itself wrapped in a perf update
-		-- app.PrintDebug("Replaced Cache function",key)
-		local typePerf = { count = 0, time = 0 };
-		perf[key] = typePerf;
-
-		cacheConverters[key] = function(group, value)
-			local now = GetTimePreciseSec();
-			func(group, value);
-			local after = GetTimePreciseSec();
-			typePerf.count = typePerf.count + 1;
-			typePerf.time = typePerf.time + (after - now);
-		end
-	end
-	fieldConverters = cacheConverters;
-end
-
-local uncacheMap = function(group, mapID)
-	if mapID and currentMaps[mapID] == group then
-		currentMaps[mapID] = nil;
-	end
-end
-local mapKeyUncachers = {
-	["mapID"] = uncacheMap,
-	["coord"] = function(group, coord)
-		uncacheMap(group, coord[3]);
-	end,
-	["maps"] = function(group, maps)
-		for _,mapID in ipairs(maps) do
-			uncacheMap(group, mapID);
-		end
-	end,
-	["coords"] = function(group, coords)
-		for _,coord in ipairs(coords) do
-			uncacheMap(group, coord[3]);
-		end
-	end,
-};
-CacheFields = function(group)
-	local mapKeys;
-	local hasG = group.g;
-	-- track if this group is a 'real' instance (instanceID + mapID/maps)
-	if not currentInstance and group.key == "instanceID" and (group.mapID or group.maps) then
-		currentInstance = group;
-	end
-	-- cache any matching converter fields within the group
-	for k,value in pairs(group) do
-		_cache = fieldConverters[k];
-		if _cache then
-			_cache(group, value);
-			if mapKeyUncachers[k] then
-				if mapKeys then mapKeys[k] = value;
-				else mapKeys = { [k] = value }; end
-			end
-		end
-	end
-	-- do sub-groups last
-	if hasG then
-		for _,subgroup in ipairs(hasG) do
-			CacheFields(subgroup);
-		end
-	end
-	-- clear currentMapIDs used by this group
-	if mapKeys then
-		for key,value in pairs(mapKeys) do
-			mapKeyUncachers[key](group, value);
-		end
-	end
-	-- clear the 'real' instance if this group was it
-	if currentInstance and currentInstance == group then
-		currentInstance = nil;
-	end
-end
-app.CacheFields = CacheFields;
-end)();
-
-local function SearchForFieldRecursively(group, field, value)
-	if group.g then
-		-- Go through the sub groups and determine if any of them have a response.
-		local first = nil;
-		for i, subgroup in ipairs(group.g) do
-			local g = SearchForFieldRecursively(subgroup, field, value);
-			if g then
-				if first then
-					-- Merge!
-					for j,data in ipairs(g) do
-						tinsert(first, data);
-					end
-				else
-					-- Cool! (This should be the most common occurance)
-					first = g;
-				end
-			end
-		end
-		if group[field] == value then
-			-- OH BOY, WE FOUND IT!
-			if first then
-				return tinsert(first, group);
-			else
-				return { group };
-			end
-		end
-		return first;
-	elseif group[field] == value then
-		-- OH BOY, WE FOUND IT!
-		return { group };
-	end
-end
-local function SearchForFieldContainer(field)
-	if field then return fieldCache[field]; end
-end
-app.SearchForFieldContainer = SearchForFieldContainer;
--- This method returns a table containing all groups which contain the provided field with id value
-local function SearchForField(field, id)
-	if field and id then
-		_cache = fieldCache[field];
-		return (_cache and _cache[id]), field, id;
-	end
-end
-app.SearchForField = SearchForField;
 -- This method performs the SearchForField logic, but then may verifies that ONLY a specific matching, filtered-priority object is returned
 	-- require - Determine the required level of matching found objects:
 	-- * "key" - only accept objects whose key is also the field with value
@@ -6222,12 +5720,8 @@ app.SearchForField = SearchForField;
 	-- * none - accept any object which is cached against the specific field value
 app.SearchForObject = function(field, id, require)
 	local fcache = SearchForField(field, id);
-	if fcache then
-		local count = #fcache;
-		if count == 0 then
-			-- app.PrintDebug("SFO",field,id,require,"0~")
-			return;
-		end
+	local count = #fcache;
+	if count > 0 then
 		local fcacheObj;
 		require = (require == "key" and 2) or (require == "field" and 1) or 0;
 		-- Items are cached by base ItemID and ModItemID, so when searching by ItemID, use ModItemID for
@@ -6273,17 +5767,16 @@ app.SearchForObject = function(field, id, require)
 		-- otherwise just find the first matching object
 		-- app.PrintDebug("SFO",field,id,require,"?>",keyMatch and keyMatch.hash,fieldMatch and fieldMatch.hash,match and match.hash)
 		return keyMatch or fieldMatch or match or nil;
+	else
+		-- app.PrintDebug("SFO",field,id,require,"0~")
 	end
 end
 -- This method performs the SearchForField logic and returns a single version of the specific object by merging together all sources of the object
 -- NOTE: Don't use this for Items, because modIDs and bonusIDs are stupid
 app.SearchForMergedObject = function(field, id)
 	local fcache = SearchForField(field, id);
-	if fcache then
-		local count = #fcache;
-		if count == 0 then
-			return;
-		end
+	local count = #fcache;
+	if count > 0 then
 		-- quick escape for single cache results! hooray!
 		if count == 1 then
 			return fcache[1];
@@ -6306,33 +5799,10 @@ app.SearchForMergedObject = function(field, id)
 end
 
 -- Item Information Lib
-local function SearchForRelativeItems(group, listing)
-	if group and group.g then
-		for i,subgroup in ipairs(group.g) do
-			SearchForRelativeItems(subgroup, listing);
-			if subgroup.itemID then
-				tinsert(listing, subgroup);
-			end
-		end
-	end
-end
-local function SearchForSpecificGroups(found, group, hashes)
-	if group then
-		if hashes[group.hash] then
-			tinsert(found, group);
-		end
-		local g = group.g;
-		if g then
-			for _,o in ipairs(g) do
-				SearchForSpecificGroups(found, o, hashes);
-			end
-		end
-	end
-end
 -- Dynamically increments the progress for the parent heirarchy of each collectible search result
 local function UpdateSearchResults(searchResults)
 	-- app.PrintDebug("UpdateSearchResults",searchResults and #searchResults)
-	if searchResults then
+	if searchResults and #searchResults > 0 then
 		-- Update all the results within visible windows
 		local hashes = {};
 		local found = {};
@@ -6352,7 +5822,7 @@ local function UpdateSearchResults(searchResults)
 			if window.Suffix ~= "Prime" and window:IsVisible() then
 				-- app.PrintDebug(window.Suffix)
 				for _,result in ipairs(searchResults) do
-					SearchForSpecificGroups(found, window.data, hashes);
+					app.SearchForSpecificGroups(found, window.data, hashes);
 				end
 			end
 		end
@@ -6366,15 +5836,16 @@ local function UpdateSearchResults(searchResults)
 	end
 	-- app.PrintDebug("UpdateSearchResults Done")
 end
+
+local DataCaches = {};
 -- Pulls all cached fields for the field/id and passes the results into UpdateSearchResults
 local function UpdateRawID(field, id)
 	-- app.PrintDebug("UpdateRawID",field,id)
 	if field and id then
-		local groups, append, _cache = {}, app.ArrayAppend;
-		for _,cache in ipairs(DataCaches) do
-			_cache = cache[field];
-			append(groups, _cache and _cache[id]);
-			-- app.PrintDebug("Update in DataCache",cache.name,id)
+		local groups = {};
+		for name,cache in pairs(DataCaches) do
+			ArrayAppend(groups, cache[field][id]);
+			-- app.PrintDebug("Update in DataCache",name,id)
 		end
 		UpdateSearchResults(groups);
 	end
@@ -6384,28 +5855,18 @@ app.UpdateRawID = UpdateRawID;
 local function UpdateRawIDs(field, ids)
 	-- app.PrintDebug("UpdateRawIDs",field,ids and #ids)
 	if field and ids and #ids > 0 then
-		local groups, append, _cache = {}, app.ArrayAppend;
-		for _,cache in ipairs(DataCaches) do
+		local groups = {};
+		for name,cache in pairs(DataCaches) do
 			for _,id in ipairs(ids) do
-				_cache = cache[field];
-				append(groups, _cache and _cache[id]);
-				-- app.PrintDebug("Update in DataCache",cache.name,id)
+				ArrayAppend(groups, cache[field][id]);
+				-- app.PrintDebug("Update in DataCache",name,id)
 			end
 		end
 		UpdateSearchResults(groups);
 	end
 end
 app.UpdateRawIDs = UpdateRawIDs;
--- Returns the first found cached group for a given SourceID
--- NOTE: Do not use this function when the results are being passed into an Update afterward
--- or if ATT data has not been loaded yet
-local function SearchForSourceIDQuickly(sourceID)
-	if sourceID then
-		local cache = fieldCache.s[sourceID];
-		return cache and cache[1];
-	end
-end
-app.SearchForSourceIDQuickly = SearchForSourceIDQuickly;
+
 local function SearchForLink(link)
 	if string.match(link, "item") then
 		-- Parse the link and get the itemID and bonus ids.
@@ -6421,16 +5882,22 @@ local function SearchForLink(link)
 					-- Search for the Source ID. (an appearance)
 					_ = SearchForField("s", sourceID);
 					-- app.PrintDebug("SEARCHING FOR ITEM LINK WITH S", link, itemID, sourceID, _ and #_);
+					return _;
 				else
+					-- Search for the Item ID. (an item without an appearance)
 					local exactItemID = GetGroupItemIDWithModID(nil, itemID, modID, (tonumber(bonusCount) or 0) > 0 and bonusID1);
 					local modItemID = GetGroupItemIDWithModID(nil, itemID, modID);
-					-- Search for the Item ID. (an item without an appearance)
-					_ = ((exactItemID ~= itemID) and SearchForField("itemID", exactItemID)) or
-						((modItemID ~= itemID) and SearchForField("itemID", modItemID)) or
-						SearchForField("itemID", itemID);
-					-- app.PrintDebug("SEARCHING FOR ITEM LINK", link, exactItemID, modItemID, itemID, _ and #_);
+					-- app.PrintDebug("SEARCHING FOR ITEM LINK", link, exactItemID, modItemID, itemID);
+					if exactItemID ~= itemID then
+						_ = SearchForField("itemID", exactItemID);
+						if #_ > 0 then return _; end
+					end
+					if modItemID ~= itemID then
+						_ = SearchForField("itemID", modItemID);
+						if #_ > 0 then return _; end
+					end
+					return SearchForField("itemID", itemID);
 				end
-				return _;
 			end
 		end
 	else
@@ -6765,8 +6232,7 @@ end
 local function AddTomTomSearchResultWaypoints(group)
 	if group.visible then
 		local key = group.key;
-		local searchResults = SearchForField(key, group[key], "field");
-		for _,o in ipairs(searchResults) do
+		for _,o in ipairs(SearchForField(key, group[key], "field")) do
 			-- app.PrintDebug("WP:Search:",o.hash)
 			TryAddGroupWaypoints(o);
 			AddTomTomParentCoord(o);
@@ -7126,7 +6592,7 @@ local function RefreshAppearanceSources()
 	if not app.MaxSourceID then
 		-- app.PrintDebug("Initial Session Refresh")
 		local maxSourceID = 0;
-		for id,_ in pairs(fieldCache["s"]) do
+		for id,_ in pairs(SearchForFieldContainer("s")) do
 			-- track the max sourceID so we can evaluate sources not in ATT as well
 			if id > maxSourceID then maxSourceID = id; end
 		end
@@ -7748,7 +7214,7 @@ local function MapSourceQuestsRecursive(parentQuestID, questID, currentDepth, de
 					if pRef.sourceQuests then
 						if not questRef.sourceQuests then questRef.sourceQuests = {}; end
 						-- app.PrintDebug("Add Provider SQs to Quest")
-						app.ArrayAppend(questRef.sourceQuests, pRef.sourceQuests);
+						ArrayAppend(questRef.sourceQuests, pRef.sourceQuests);
 					end
 				end
 			end
@@ -8109,7 +7575,7 @@ local function TryPopulateQuestRewards(questObject)
 							end
 							-- any matches with depth 0 will be nested
 							if refinedMatches[0] then
-								app.ArrayAppend(subItems, refinedMatches[0]);	-- no clone since item is cloned later
+								ArrayAppend(subItems, refinedMatches[0]);	-- no clone since item is cloned later
 							end
 						end
 						-- then pull in any other sub-items which were not the item itself
@@ -8139,15 +7605,13 @@ local function TryPopulateQuestRewards(questObject)
 				item.collectibleAsCost = false;
 			end
 			cachedCurrency = SearchForField("currencyID", currencyID);
-			if cachedCurrency then
-				for _,data in ipairs(cachedCurrency) do
-					-- cache record is the item itself
-					if GroupMatchesParams(data, "currencyID", currencyID) then
-						MergeProperties(item, data);
-					-- cache record is associated with the item
-					else
-						NestObject(item, data);	-- no clone since item is cloned later
-					end
+			for _,data in ipairs(cachedCurrency) do
+				-- cache record is the item itself
+				if GroupMatchesParams(data, "currencyID", currencyID) then
+					MergeProperties(item, data);
+				-- cache record is associated with the item
+				else
+					NestObject(item, data);	-- no clone since item is cloned later
 				end
 			end
 			NestObject(questObject, item, true);
@@ -8162,7 +7626,7 @@ local function TryPopulateQuestRewards(questObject)
 	-- Finally ensure that any cached entries for the quest are copied into this version of the object
 	-- Needs to be SearchForField as non-quests can be pulled too
 	local cachedQuests = SearchForField("questID", questID);
-	if cachedQuests then
+	if #cachedQuests > 0 then
 		-- special care for API provided items
 		local apiItems = {};
 		if questObject.g then
@@ -8243,7 +7707,7 @@ end
 -- (as far as ATT is capable of knowing)
 app.CheckForBreadcrumbPrevention = function(title, questID)
 	local nextQuests = SearchForField("nextQuests", questID);
-	if nextQuests then
+	if #nextQuests > 0 then
 		local warning;
 		for _,group in pairs(nextQuests) do
 			if not group.collected and app.RecursiveCharacterRequirementsFilter(group) then
@@ -9045,7 +8509,7 @@ end
 app.RefreshAchievementCollection = function()
 	if ATTAccountWideData then
 		local maxid, achID = 0;
-		for achievementID,_ in pairs(fieldCache["achievementID"]) do
+		for achievementID,_ in pairs(SearchForFieldContainer("achievementID")) do
 			achID = tonumber(achievementID);
 			if achID > maxid then maxid = achID; end
 		end
@@ -9444,21 +8908,14 @@ end	-- Battle Pet Lib
 
 -- Category Lib
 (function()
-local fields = {
-	["key"] = function(t)
-		return "categoryID";
-	end,
-	["name"] = function(t)
+app.CreateCategory = app.CreateClass("Category", "categoryID", {
+	["text"] = function(t)
 		return AllTheThingsAD.LocalizedCategoryNames[t.categoryID] or ("Unknown Category #" .. t.categoryID);
 	end,
 	["icon"] = function(t)
 		return AllTheThings.CategoryIcons[t.categoryID] or "Interface/ICONS/INV_Garrison_Blueprints1";
 	end,
-};
-app.BaseCategory = app.BaseObjectFields(fields, "BaseCategory");
-app.CreateCategory = function(id, t)
-	return setmetatable(constructor(id, t, "categoryID"), app.BaseCategory);
-end
+});
 end)();
 
 -- Character Class Lib
@@ -9651,7 +9108,7 @@ local function default_costCollectibles(t)
 	local id = t.currencyID;
 	if id then
 		local results = SearchForField("currencyIDAsCost", id);
-		if results and #results > 0 then
+		if #results > 0 then
 			-- app.PrintDebug("default_costCollectibles",t.hash,#results)
 			return results;
 		end
@@ -11004,7 +10461,7 @@ local function default_costCollectibles(t)
 		-- if app.DEBUG_PRINT then print("itemIDAsCost.modItemID",id,results and #results) end
 	end
 	-- If no results, search by itemID + modID only if different
-	if not results then
+	if not results or #results < 1 then
 		id = GetGroupItemIDWithModID(nil, t.itemID, t.modID);
 		if id ~= modItemID then
 			results = SearchForField("itemIDAsCost", id);
@@ -11012,7 +10469,7 @@ local function default_costCollectibles(t)
 		end
 	end
 	-- If no results, search by plain itemID only
-	if not results and t.itemID then
+	if (not results or #results < 1) and t.itemID then
 		id = t.itemID;
 		results = SearchForField("itemIDAsCost", id);
 	end
@@ -11609,10 +11066,8 @@ app.CacheHeirlooms = function()
 	-- build groups for each upgrade token
 	-- and copy the set of upgrades into the cached versions of the upgrade tokens so they therefore exist in the main list
 	-- where the sources of the upgrade tokens exist
-	local cachedTokenGroups;
 	for i,item in ipairs(armorTokens) do
-		cachedTokenGroups = SearchForField("itemID", item.itemID);
-		for _,token in ipairs(cachedTokenGroups) do
+		for _,token in ipairs(SearchForField("itemID", item.itemID)) do
 			-- ensure the tokens do not have a modID attached
 			token.modID = nil;
 			token.modItemID = nil;
@@ -11625,8 +11080,7 @@ app.CacheHeirlooms = function()
 		end
 	end
 	for i,item in ipairs(weaponTokens) do
-		cachedTokenGroups = SearchForField("itemID", item.itemID);
-		for _,token in ipairs(cachedTokenGroups) do
+		for _,token in ipairs(SearchForField("itemID", item.itemID)) do
 			-- ensure the tokens do not have a modID attached
 			token.modID = nil;
 			token.modItemID = nil;
@@ -12204,7 +11658,7 @@ app.CreateMap = function(id, t)
 end
 app.CreateMapWithStyle = function(id)
 	local mapObject = app.CreateMap(id, { progress = 0, total = 0 });
-	for _,data in ipairs(fieldCache["mapID"][id] or {}) do
+	for _,data in ipairs(SearchForField("mapID", id)) do
 		if data.mapID and data.icon then
 			mapObject.text = data.text;
             mapObject.icon = data.icon;
@@ -12296,7 +11750,7 @@ local function default_costCollectibles(t)
 	local id = t.itemID;
 	if id then
 		local results = SearchForField("itemIDAsCost", id);
-		if results and #results > 0 then
+		if #results > 0 then
 			-- app.PrintDebug("default_costCollectibles",t.hash,id,#results)
 			return results;
 		end
@@ -12911,7 +12365,7 @@ local objectFields = {
 		for _,group in ipairs(t.g) do
 			-- show collected coords of all sub-objects which are not saved
 			if group.objectID and group.coords and not group.saved then
-				app.ArrayAppend(unsavedCoords, group.coords);
+				ArrayAppend(unsavedCoords, group.coords);
 			end
 		end
 		return unsavedCoords;
@@ -13169,7 +12623,7 @@ end
 app.GetSpellName = GetSpellName;
 SpellNameToSpellID = setmetatable({}, {
 	__index = function(t, key)
-		local cache = fieldCache["spellID"];
+		local cache = SearchForFieldContainer("spellID");
 		for spellID,g in pairs(cache) do
 			GetSpellName(spellID);
 		end
@@ -13575,50 +13029,6 @@ end)();
 
 -- Filtering
 do
--- Recursive Checks
-app.VerifyCache = function()
-	if not fieldCache then return false; end
-	app.print("VerifyCache Starting...");
-	for i,keyCache in pairs(fieldCache) do
-		print("Cache",i);
-		for k,valueCache in pairs(keyCache) do
-			-- print("valueCache",k);
-			for o,group in pairs(valueCache) do
-				-- print("group",o);
-				if not app.VerifyRecursion(group) then
-					print("Caused infinite .parent recursion",group.key,group[group.key]);
-				end
-			end
-		end
-	end
-	app.print("VerifyCache Completed");
-end
--- Verify no infinite parent recursion exists for a given group
-app.VerifyRecursion = function(group, checked)
-	if type(group) ~= "table" then return; end
-	if not checked then
-		checked = { };
-		-- print("test",group.key,group[group.key]);
-	end
-	for k,o in pairs(checked) do
-		if o.key ~= nil and o.key == group.key and o[o.key] == group[group.key] then
-			-- print("Infinite .parent Recursion Found:");
-			-- print the parent chain to the loop point
-			-- for a,b in pairs(checked) do
-				-- print(b.key,b[b.key],b,"=>");
-			-- end
-			-- print(group.key,group[group.key],group);
-			-- print("---");
-			return;
-		end
-	end
-	if group.parent then
-		tinsert(checked, group);
-		return app.VerifyRecursion(group.parent, checked);
-	end
-	return true;
-end
-
 -- Cleans any groups which are nested under any group with any specified fields
 app.CleanInheritingGroups = function(groups, ...)
 	local arrs = select("#", ...);
@@ -13968,7 +13378,7 @@ function app.CompletionistItemCollectionHelper(sourceID, oldState)
 		-- Show the collection message.
 		if app.IsReady and app.Settings:GetTooltipSetting("Report:Collected") then
 			local searchResults = SearchForField("s", sourceID);
-			if searchResults and #searchResults > 0 then
+			if #searchResults > 0 then
 				local firstMatch = searchResults[1];
 				print(format(L["ITEM_ID_ADDED"], firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID));
 			else
@@ -14016,7 +13426,7 @@ function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 		if app.IsReady and app.Settings:GetTooltipSetting("Report:Collected") then
 			-- Search for the item that actually was unlocked.
 			local searchResults = SearchForField("s", sourceID);
-			if searchResults and #searchResults > 0 then
+			if #searchResults > 0 then
 				local firstMatch = searchResults[1];
 				print(format(L[newAppearancesLearned > 0 and "ITEM_ID_ADDED_SHARED" or "ITEM_ID_ADDED"],
 					firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID, newAppearancesLearned));
@@ -14349,8 +13759,8 @@ function app:CreateMiniListForGroup(group)
 	-- Is this an achievement criteria or lacking some achievement information?
 	local achievementID = group.achievementID;
 	if achievementID and (group.criteriaID or not group.g) then
-		local searchResults = app.SearchForField("achievementID", achievementID);
-		if searchResults and #searchResults > 0 then
+		local searchResults = SearchForField("achievementID", achievementID);
+		if #searchResults > 0 then
 			local bestResult;
 			for i=1,#searchResults,1 do
 				local searchResult = searchResults[i];
@@ -14587,7 +13997,7 @@ function app:CreateMiniListForGroup(group)
 			if group.questID and not group.sourceQuests then
 				local questID = group.questID;
 				local qs = SearchForField("questID", group.questID);
-				if qs and #qs > 1 then
+				if #qs > 1 then
 					local i, sq = #qs;
 					while not sq and i > 0 do
 						-- found another group with this questID that has sourceQuests listed
@@ -16070,12 +15480,12 @@ RowOnEnter = function (self)
 					-- end
 
 
-					local encounterCache = fieldCache["encounterID"][encounterID];
-					if encounterCache then
+					local encounterCache = SearchForField("encounterID", encounterID);
+					if #encounterCache > 0 then
 						local itemList = {};
 						for i,encounter in ipairs(encounterCache) do
 							if encounter.g and GetRelativeValue(encounter.parent, "difficultyID") == difficultyID then
-								SearchForRelativeItems(encounter, itemList);
+								app.SearchForRelativeItems(encounter, itemList);
 							end
 						end
 						local specHits = {};
@@ -16188,7 +15598,7 @@ RowOnEnter = function (self)
 			for i,sourceQuestID in ipairs(reference.sourceQuests) do
 				if sourceQuestID > 0 and (isDebugMode or not IsQuestFlaggedCompleted(sourceQuestID)) then
 					sqs = SearchForField("questID", sourceQuestID);
-					if sqs and #sqs > 0 then
+					if #sqs > 0 then
 						bestMatch = nil;
 						for j,sq in ipairs(sqs) do
 							if sq.questID == sourceQuestID then
@@ -16802,7 +16212,7 @@ end
 -- content which matches the specified .dynamic 'field' of the group
 -- NOTE: Content must be cached using the dynamic 'field'
 local DynamicCategory_Simple = function(self)
-	local dynamicCache = fieldCache[self.dynamic];
+	local dynamicCache = SearchForFieldContainer(self.dynamic);
 	if dynamicCache then
 		local rootATT = app:GetWindow("Prime").data;
 		local top, topText, thing;
@@ -16916,7 +16326,7 @@ function app:GetDataCache()
 	local function NestDynamicValueCategories(dynamicCategory, field, keepSubGroups)
 		local cat;
 		local SearchForObject = app.SearchForObject;
-		local cache = fieldCache[field];
+		local cache = SearchForFieldContainer(field);
 		for id,_ in pairs(cache) do
 			-- create a cloned version of the cached object, or create a new object from the Creator
 			cat = CreateObject(SearchForObject(field, id, "key") or { [field] = id }, true);
@@ -17741,7 +17151,7 @@ function app:GetDataCache()
 		local categories = {};
 		categories[-1] = self;
 		cacheAchievementData(self, categories, self.g);
-		for i,_ in pairs(fieldCache["achievementID"]) do
+		for i,_ in pairs(SearchForFieldContainer("achievementID")) do
 			if not self.achievements[i] then
 				local achievement = app.CreateAchievement(tonumber(i));
 				for j,o in ipairs(_) do
@@ -18389,8 +17799,9 @@ customWindowUpdates["CosmicInfuser"] = function(self, force)
 			local meta = {
 				["collected"] = function(t)
 					local results = SearchForField("mapID", t.mapID);
-					t.collected = results and true or false;
-					t.title = results and #results or 0;
+					local total = #results;
+					t.collected = total > 0;
+					t.total = total;
 					return t.collected;
 				end,
 			};
@@ -18941,7 +18352,7 @@ customWindowUpdates["ItemFilter"] = function(self, force)
 				app.PrintDebug("Search",field,value)
 				local results = app:BuildSearchResponse(field, value, true);
 				app.PrintDebug("Results",#results)
-				app.ArrayAppend(self.data.g, results);
+				ArrayAppend(self.data.g, results);
 			end
 
 			-- Item Filter
@@ -19036,8 +18447,8 @@ customWindowUpdates["SourceFinder"] = function(self)
 			};
 			db.OnUpdate = function(db)
 				if self:IsVisible() then
-					local iCache = fieldCache["itemID"];
-					local sCache = fieldCache["s"];
+					local iCache = SearchForFieldContainer("itemID");
+					local sCache = SearchForFieldContainer("s");
 					for s=1,103000 do
 						if not sCache[s] then
 							local t = app.CreateGearSource(s);
@@ -20393,7 +19804,7 @@ customWindowUpdates["list"] = function(self, force, got)
 				min = 0;
 			end
 			dataType = cacheKey;
-			for itemID,groups in pairs(app.SearchForFieldContainer(dataType) or app.SearchForFieldContainer(cacheKeyID)) do
+			for itemID,groups in pairs(SearchForFieldContainer(dataType) or SearchForFieldContainer(cacheKeyID)) do
 				for _,o in ipairs(groups) do
 					cacheID = tonumber(o.modItemID or o[dataType] or o[cacheKeyID]);
 					if imin < cacheID and cacheID < imax and not added[cacheID] then
@@ -20839,7 +20250,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 
 					-- Check to see if ATT has information about this profession.
 					local tradeSkillID = app.GetTradeSkillLine();
-					if not tradeSkillID or not fieldCache["professionID"][tradeSkillID] then
+					if not tradeSkillID or #SearchForField("professionID", tradeSkillID) < 1 then
 						self:SetVisible(false);
 						return false;
 					end
@@ -20852,7 +20263,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 				if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
 					-- Check to see if ATT has information about this profession.
 					local tradeSkillID = app.GetTradeSkillLine();
-					if not tradeSkillID or not fieldCache["professionID"][tradeSkillID] then
+					if not tradeSkillID or #SearchForField("professionID", tradeSkillID) < 1 then
 						self:SetVisible(false);
 					else
 						self:SetVisible(true);
@@ -21339,26 +20750,24 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 							-- common logic
 							local idType = (rewardType or "item").."ID";
 							local thing = { [idType] = itemID };
-							_cache = SearchForField(idType, itemID);
-							if _cache then
-								for _,data in ipairs(_cache) do
-									-- copy any sourced data for the dungeon reward into the list
-									if GroupMatchesParams(data, idType, itemID, true) then
-										MergeProperties(thing, data);
-									end
-									local lvl;
-									if isTimeWalker then
-										lvl = (data.lvl and type(data.lvl) == "table" and data.lvl[1]) or
-												data.lvl or
-												(data.parent and data.parent.lvl and type(data.parent.lvl) == "table" and data.parent.lvl[1]) or
-												data.parent.lvl or 0;
-									else
-										lvl = 0;
-									end
-									-- Should the rewards be listed in the window based on the level of the rewards
-									if lvl <= minRecLevel then
-										NestObjects(thing, data.g);	-- no need to clone, everything is re-created at the end
-									end
+							local _cache = SearchForField(idType, itemID);
+							for _,data in ipairs(_cache) do
+								-- copy any sourced data for the dungeon reward into the list
+								if GroupMatchesParams(data, idType, itemID, true) then
+									MergeProperties(thing, data);
+								end
+								local lvl;
+								if isTimeWalker then
+									lvl = (data.lvl and type(data.lvl) == "table" and data.lvl[1]) or
+											data.lvl or
+											(data.parent and data.parent.lvl and type(data.parent.lvl) == "table" and data.parent.lvl[1]) or
+											data.parent.lvl or 0;
+								else
+									lvl = 0;
+								end
+								-- Should the rewards be listed in the window based on the level of the rewards
+								if lvl <= minRecLevel then
+									NestObjects(thing, data.g);	-- no need to clone, everything is re-created at the end
 								end
 							end
 							NestObject(header, thing);
@@ -21985,8 +21394,8 @@ app.ProcessAuctionData = function()
 				searchResultsByKey.reagentID[itemID] = entry;
 				if not entry.g then entry.g = {}; end
 				for itemID2,count in pairs(reagentCache[itemID][2]) do
-					local searchResults = app.SearchForField("itemID", itemID2);
-					if searchResults and #searchResults > 0 then
+					local searchResults = SearchForField("itemID", itemID2);
+					if #searchResults > 0 then
 						tinsert(entry.g, CreateObject(searchResults[1]));
 					end
 				end

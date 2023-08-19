@@ -24,6 +24,7 @@ lib\Refresh.lua
 lib\Sort.lua
 lib\Table.lua
 locales\en.lua
+src\Cache.lua
 src\Modules\RetrievingData.lua
 src\Modules\FactionData.lua
 src\Modules\Color.lua

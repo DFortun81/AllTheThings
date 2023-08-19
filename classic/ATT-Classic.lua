@@ -3489,14 +3489,10 @@ local oldItemSetHyperlink = ItemRefTooltip.SetHyperlink;
 function ItemRefTooltip:SetHyperlink(link, a, b, c, d, e, f)
 	-- Make sure to call the default function, but with a try-catch.
 	local status, err = pcall(function () oldItemSetHyperlink(self, link, a, b, c, d, e, f) end)
-	if not status then	
+	if not status then
+		-- Search for the Link in the database	
 		local linkType, id, params = strsplit(':', link)
-		linkType = linkType .. "ID";
-		print(linkType, id, params);
-		if #SearchForFieldContainer(linkType) < 1 then return end
-		
-		-- Search for the Link in the database
-		local cmd = linkType .. ":" .. id;
+		local cmd = linkType .. "ID" .. ":" .. id;
 		local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
 		if group then app:CreateMiniListForGroup(group); end
 	end
@@ -5331,20 +5327,16 @@ GameTooltip.SetCurrencyToken = function(self, tokenID)
 		local name, isHeader = GetCurrencyListInfo(tokenID);
 		if not isHeader then
 			-- Determine which currencyID is the one that we're dealing with.
-			local cache = SearchForFieldContainer("currencyID");
-			if #cache > 0 then
-				-- We only care about currencies in the addon at the moment.
-				for currencyID,results in pairs(cache) do
-					-- Compare the name of the currency vs the name of the token
-					if results[1].text == name then
-						if not GameTooltip_SetCurrencyToken then
-							GameTooltip:AddLine(results[1].text or RETRIEVING_DATA, 1, 1, 1);
-						end
-						AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
-						if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
-						self:Show();
-						break;
+			for currencyID,results in pairs(SearchForFieldContainer("currencyID")) do
+				-- Compare the name of the currency vs the name of the token
+				if results[1].text == name then
+					if not GameTooltip_SetCurrencyToken then
+						GameTooltip:AddLine(results[1].text or RETRIEVING_DATA, 1, 1, 1);
 					end
+					AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
+					if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
+					self:Show();
+					break;
 				end
 			end
 		end
@@ -13231,7 +13223,7 @@ app:GetWindow("Tradeskills", {
 			
 			-- Cache Learned Spells
 			local skillCache = SearchForFieldContainer("spellID");
-			if #skillCache > 0 then
+			if skillCache then
 				-- Cache learned recipes and reagents
 				local reagentCache = app.GetDataMember("Reagents", {});
 				local learned, craftSkillID, tradeSkillID = 0, 0, 0;
