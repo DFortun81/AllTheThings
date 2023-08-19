@@ -12,11 +12,6 @@ local rawget, ipairs, pairs, TooltipUtil, Enum_TooltipDataType, InCombatLockdown
 -- App locals
 local SearchForField = app.SearchForField;
 
--- Tooltip API Implementation
--- Access via AllTheThings.Modules.Tooltip
-local api = {};
-app.Modules.Tooltip = api;
-
 -- Module locals (can be set via OnReady if they do not change during Session but are not yet defined)
 local GetCachedSearchResults, SearchForLink, L, GetCurrentMapID
 
@@ -39,9 +34,8 @@ local function OnLoad_CacheObjectNames()
 	end
 end
 
--- Uses a provided 'name' and scans the objectDB to find potentially matching ObjectID's, then attempts to correlate those ObjectID search results
--- by closest coordinate distance to the player's current position
--- Accessed externally via AllTheThings.Modules.Tooltips
+-- Uses a provided 'name' and scans the ObjectDB to find potentially matching ObjectID's,
+-- then correlate those search results by closest distance to the player's current position
 local function GetBestObjectIDForName(name)
 	local o = objectNamesToIDs[name];
 	if o then
@@ -84,7 +78,6 @@ local function GetBestObjectIDForName(name)
 		return o[1];
 	end
 end
-api.GetBestObjectIDForName = GetBestObjectIDForName;
 
 -- many of these don't include an ID in-game so they don't attach results. maybe someday they will...
 local TooltipTypes = {
@@ -631,6 +624,7 @@ end
 local api = {};
 app.Modules.Tooltip = api;
 api.AttachTooltipSearchResults = AttachTooltipSearchResults;
+api.GetBestObjectIDForName = GetBestObjectIDForName;
 api.OnLoad = function()
 	GetCachedSearchResults = app.GetCachedSearchResults;
 	SearchForLink = app.SearchForLink;
