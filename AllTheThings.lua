@@ -16186,7 +16186,7 @@ local function RecursiveParentMapper(group, field, value)
 	end
 end
 
-local DynamicDataCache = app.CreateDataCache("dynamic");
+local DynamicDataCache = app.CreateDataCache("dynamic", true);
 
 -- Common function set as the OnUpdate for a group which will build itself a 'nested' version of the
 -- content which matches the specified .dynamic 'field' and .dynamic_value of the group
@@ -16353,7 +16353,6 @@ function app:GetDataCache()
 	local function AddDynamicGroups(primeData)
 		local g = primeData.g;
 		-- don't cache maps for dynamic content because it's already source-cached for the respective maps
-		app.ToggleCacheMaps(true);
 		app.print(sformat(L["LOADING_FORMAT"], L["DYNAMIC_CATEGORY_LABEL"]));
 
 		-- Future Unobtainable
@@ -16506,7 +16505,6 @@ function app:GetDataCache()
 
 		-- add an OnEnd function for the DynamicRunner to print being done
 		app.DynamicRunner.OnEnd(function()
-			app.ToggleCacheMaps();
 			app.print(sformat(L["READY_FORMAT"], L["DYNAMIC_CATEGORY_LABEL"]));
 		end);
 
@@ -16920,9 +16918,7 @@ function app:GetDataCache()
 		db.description = L["NEVER_IMPLEMENTED_DESC"];
 		db._nyi = true;
 		tinsert(g, db);
-		app.ToggleCacheMaps(true);
-		CacheFields(db);
-		app.ToggleCacheMaps();
+		CacheFields(db, true);
 		app.AssignFieldValue(db, "u", 1);
 	end
 
@@ -16935,9 +16931,7 @@ function app:GetDataCache()
 		db.description = "Hidden Achievement Triggers";
 		db._hqt = true;
 		tinsert(g, db);
-		app.ToggleCacheMaps(true);
-		CacheFields(db);
-		app.ToggleCacheMaps();
+		CacheFields(db, true);
 	end
 
 	-- Hidden Quest Triggers
@@ -16949,9 +16943,7 @@ function app:GetDataCache()
 		db.description = L["HIDDEN_QUEST_TRIGGERS_DESC"];
 		db._hqt = true;
 		tinsert(g, db);
-		app.ToggleCacheMaps(true);
-		CacheFields(db);
-		app.ToggleCacheMaps();
+		CacheFields(db, true);
 	end
 
 	-- Unsorted
@@ -16964,9 +16956,7 @@ function app:GetDataCache()
 		-- since unsorted is technically auto-populated, anything nested under it is considered 'missing' in ATT
 		db._missing = true;
 		tinsert(g, db);
-		app.ToggleCacheMaps(true);
-		CacheFields(db);
-		app.ToggleCacheMaps();
+		CacheFields(db, true);
 	end
 	local unsorted = app:GetWindow("Unsorted");
 	-- force the unsorted window to be skipped for Updates unless it is actually visible

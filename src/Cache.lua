@@ -50,7 +50,7 @@ local function CacheField(group, field, value)
 end
 
 -- Returns: An object which can be used for holding cached data by various keys allowing for quick updates of data states.
-local CreateDataCache = function(name)
+local CreateDataCache = function(name, skipMapCaching)
 	local cache = { name = name };
 	AllCaches[name] = cache;
 	cache.CacheField = function(group, field, value)
@@ -59,7 +59,7 @@ local CreateDataCache = function(name)
 	cache.CacheFields = function(groups)
 		local oldCache = currentCache;
 		currentCache = cache;
-		CacheFields(groups);
+		CacheFields(groups, skipMapCaching);
 		currentCache = oldCache;
 	end
 	setmetatable(cache, fieldMeta);
@@ -69,6 +69,16 @@ local CreateDataCache = function(name)
 end
 currentCache = CreateDataCache("default");
 
+local function BuildSourceTextForChat(group, l)
+	if group.sourceParent or group.parent then
+		if l < 1 then
+			return BuildSourceTextForChat(group.sourceParent or group.parent, l + 1);
+		else
+			return BuildSourceTextForChat(group.sourceParent or group.parent, l + 1) .. " > " .. (group.text or "*");
+		end
+	end
+	return "ATT";
+end
 local currentMapCounters = setmetatable({}, {
 	__index = function(t, id) return 0; end,
 });
@@ -437,8 +447,9 @@ local function _CacheFields(group)
 		end
 	end
 end
-CacheFields = function(group)
+CacheFields = function(group, skipMapCaching)
 	wipe(currentMapCounters);
+	currentMapCounters[-1] = skipMapCaching and 1 or 0;
 	_CacheFields(group);
 	wipe(currentMapCounters);
 	return group;
@@ -589,12 +600,6 @@ local function VerifyCache()
 		end
 	end
 	print("VerifyCache Completed");
-end
-
--- Toggle being able to cache things inside maps
--- TODO: Determine if this is necessary.
-app.ToggleCacheMaps = function(skipCaching)
-	currentMapCounters[-1] = skipCaching and 1 or 0;
 end
 
 -- External API Functions
