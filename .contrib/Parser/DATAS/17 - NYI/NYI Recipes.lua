@@ -109,7 +109,6 @@ root(ROOTS.NeverImplemented, {
 			tier(CLASSIC_TIER, {
 				i(16073),	-- Artisan Cookbook
 				i(6891),	-- Recipe: Herb Baked Egg
-				i(7678),	-- Recipe: Thistle Tea
 			}),
 			tier(WOTLK_TIER, {
 				-- 3.0.1
