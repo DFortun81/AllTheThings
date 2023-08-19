@@ -264,6 +264,10 @@ local fieldConverters = {
 	end,
 	["itemID"] = function(group, value)
 		if group.isToy then CacheField(group, "toyID", value); end
+		local modItemID = group.modItemID or value;
+		if modItemID ~= value then
+			CacheField(group, "itemID", modItemID);
+		end
 		CacheField(group, "itemID", value);
 	end,
 	["otherItemID"] = function(group, value)
@@ -304,6 +308,7 @@ local fieldConverters = {
 	end,
 	["toyID"] = function(group, value)
 		CacheField(group, "toyID", value);
+		CacheField(group, "itemID", value);
 	end,
 	
 	-- Complex Converters
