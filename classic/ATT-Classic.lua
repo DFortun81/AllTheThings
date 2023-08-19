@@ -56,6 +56,10 @@ local C_QuestLog_GetAllCompletedQuestIDs = C_QuestLog.GetAllCompletedQuestIDs;
 local ALLIANCE_FACTION_ID = Enum.FlightPathFaction.Alliance;
 local HORDE_FACTION_ID = Enum.FlightPathFaction.Horde;
 
+-- App & Module locals
+local SearchForField, SearchForFieldContainer
+	= app.SearchForField, app.SearchForFieldContainer;
+
 -- Add a header debugger
 setmetatable(app.HeaderConstants, {
 	__index = function(t, key)
@@ -1190,8 +1194,8 @@ ResolveSymbolicLink = function(o)
 				local field = sym[2];
 				local cache;
 				for i=3,#sym do
-					local cache = app.SearchForField(field, sym[i]);
-					if cache then
+					local cache = SearchForField(field, sym[i]);
+					if #cache > 0 then
 						for k,s in ipairs(cache) do
 							local ref = ResolveSymbolicLink(s);
 							if ref then
@@ -1252,8 +1256,8 @@ ResolveSymbolicLink = function(o)
 				if response then tinsert(searchResults, {text=BATTLE_PET_SOURCE_7,icon = app.asset("Category_Event"),g=response});  end
 			elseif cmd == "fill" then
 				-- Instruction to fill with identical content cached elsewhere for this group
-				local cache = app.SearchForField(o.key, o[o.key]);
-				if cache then
+				local cache = SearchForField(o.key, o[o.key]);
+				if #cache > 0 then
 					o.symbolizing = true;
 					for k,s in ipairs(cache) do
 						if not s.symbolizing then
@@ -1459,7 +1463,7 @@ ResolveSymbolicLink = function(o)
 						local criteriaObject = app.CreateAchievementCriteria(id);
 						criteriaObject.achievementID = achievementID;
 						if criteriaType == 27 then
-							cache = app.SearchForField("questID", assetID);
+							cache = SearchForField("questID", assetID);
 						elseif criteriaType == 36 or criteriaType == 42 then
 							criteriaObject.providers = {{ "i", assetID }};
 						elseif criteriaType == 110 or criteriaType == 29 or criteriaType == 69 or criteriaType == 52 or criteriaType == 53 or criteriaType == 54 or criteriaType == 32 then
@@ -1467,7 +1471,7 @@ ResolveSymbolicLink = function(o)
 						else
 							--print("Unhandled Criteria Type", criteriaType, assetID);
 						end
-						if cache then
+						if cache and #cache > 0 then
 							local uniques = {};
 							MergeObjects(uniques, cache);
 							for i,p in ipairs(uniques) do
@@ -1485,8 +1489,8 @@ ResolveSymbolicLink = function(o)
                 -- Instruction to search the full database for multiple achievementID's
                 local cache;
 				for i=2,#sym do
-					local cache = app.SearchForField("achievementID", sym[i]);
-					if cache then
+					local cache = SearchForField("achievementID", sym[i]);
+					if #cache > 0 then
 						for k,s in ipairs(cache) do
 							local ref = ResolveSymbolicLink(s);
 							if ref then
@@ -1645,8 +1649,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 											tinsert(regroup, j);
 										else
 											-- Do a quick search on the itemID.
-											local searchResults = app.SearchForField("itemID", j.itemID);
-											if searchResults and #searchResults > 0 then
+											local searchResults = SearchForField("itemID", j.itemID);
+											if #searchResults > 0 then
 												for k,searchResult in ipairs(searchResults) do
 													if searchResult.providers then
 														for l,provider in ipairs(searchResult.providers) do
@@ -1680,8 +1684,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 											tinsert(regroup, j);
 										else
 											-- Do a quick search on the itemID.
-											local searchResults = app.SearchForField("itemID", j.itemID);
-											if searchResults and #searchResults > 0 then
+											local searchResults = SearchForField("itemID", j.itemID);
+											if #searchResults > 0 then
 												for k,searchResult in ipairs(searchResults) do
 													if searchResult.providers then
 														for l,provider in ipairs(searchResult.providers) do
@@ -1817,8 +1821,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 					for craftedItemID,count in pairs(reagentCache[2]) do
 						MergeClone(crafted, { ["itemID"] = craftedItemID, ["count"] = count });
-						local searchResults = app.SearchForField("itemID", craftedItemID);
-						if searchResults and #searchResults > 0 then
+						local searchResults = SearchForField("itemID", craftedItemID);
+						if #searchResults > 0 then
 							for i,o in ipairs(searchResults) do
 								if not o.itemID and o.cost then
 									-- Reagent for something that crafts a thing required for something else.
@@ -1983,8 +1987,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- Resolve Cost
 		--print("GetCachedSearchResults", paramA, paramB);
 		if paramA == "currencyID" then
-			local costResults = app.SearchForField("currencyIDAsCost", paramB);
-			if costResults and #costResults > 0 then
+			local costResults = SearchForField("currencyIDAsCost", paramB);
+			if #costResults > 0 then
 				if not group.g then group.g = {} end
 				local usedToBuy = app.CreateNPC(app.HeaderConstants.VENDORS);
 				usedToBuy.text = "Currency For";
@@ -1995,8 +1999,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				MergeObject(group.g, usedToBuy);
 			end
 		elseif paramA == "itemID" then
-			local costResults = app.SearchForField("itemIDAsCost", paramB);
-			if costResults and #costResults > 0 then
+			local costResults = SearchForField("itemIDAsCost", paramB);
+			if #costResults > 0 then
 				if not group.g then group.g = {} end
 				local attunement = app.CreateNPC(app.HeaderConstants.QUESTS);
 				if not attunement.g then attunement.g = {}; end
@@ -2425,7 +2429,7 @@ local function SearchForLink(link)
 							end
 						end
 					end
-					return app.SearchForField("itemID", itemID), "itemID", itemID;
+					return SearchForField("itemID", itemID), "itemID", itemID;
 				end
 			end
 		end
@@ -2464,7 +2468,7 @@ local function SearchForLink(link)
 		end
 		local cache;
 		if id then
-			cache = app.SearchForField(kind, id) or {};
+			cache = SearchForField(kind, id);
 			if #cache == 0 then
 				local obj = CreateObject({
 					key = kind, [kind] = id,
@@ -2878,7 +2882,7 @@ function app:GetDataCache()
 		
 		-- Determine how many tierID instances could be found
 		local tierCounter = 0;
-		local tierCache = app.SearchForFieldContainer("tierID");
+		local tierCache = SearchForFieldContainer("tierID");
 		for key,value in pairs(tierCache) do
 			tierCounter = tierCounter + 1;
 		end
@@ -3129,7 +3133,7 @@ local function AttachTooltip(self)
 							end
 						elseif type == "Creature" or type == "Vehicle" then
 							if app.Settings:GetTooltipSetting("creatureID") then self:AddDoubleLine(L["CREATURE_ID"], tostring(npcID)); end
-							AttachTooltipSearchResults(self, 1, "creatureID:" .. npcID, app.SearchForField, "creatureID", tonumber(npcID));
+							AttachTooltipSearchResults(self, 1, "creatureID:" .. npcID, SearchForField, "creatureID", tonumber(npcID));
 						end
 						return true;
 					end
@@ -3138,7 +3142,7 @@ local function AttachTooltip(self)
 				-- Does the tooltip have a spell? [Mount Journal, Action Bars, etc]
 				local spellID = select(2, self:GetSpell());
 				if spellID then
-					AttachTooltipSearchResults(self, 1, "spellID:" .. spellID, app.SearchForField, "spellID", spellID);
+					AttachTooltipSearchResults(self, 1, "spellID:" .. spellID, SearchForField, "spellID", spellID);
 					self:Show();
 					if owner and owner.ActiveTexture then
 						self.ATTCProcessing = nil;
@@ -3155,7 +3159,7 @@ local function AttachTooltip(self)
 				
 				local objectID = app.GetBestObjectIDForName(_G[self:GetName() .. "TextLeft1"]:GetText());
 				if objectID then
-					AttachTooltipSearchResults(self, 1, "objectID:" .. objectID, app.SearchForField, "objectID", objectID);
+					AttachTooltipSearchResults(self, 1, "objectID:" .. objectID, SearchForField, "objectID", objectID);
 					self:Show();
 					return true;
 				end
@@ -3297,7 +3301,7 @@ if TooltipDataProcessor then
 			-- Try the default.
 			local id = data.id;
 			if id then
-				AttachTooltipSearchResults(tooltip, 1, key .. ":" .. id, app.SearchForField, key, id);
+				AttachTooltipSearchResults(tooltip, 1, key .. ":" .. id, SearchForField, key, id);
 				return;
 			end
 			
@@ -3314,21 +3318,21 @@ if TooltipDataProcessor then
 			
 			local name, spellID = TooltipUtil.GetDisplayedSpell(tooltip);
 			if spellID then
-				AttachTooltipSearchResults(tooltip, 1, "spellID:" .. spellID, app.SearchForField, "spellID", spellID);
+				AttachTooltipSearchResults(tooltip, 1, "spellID:" .. spellID, SearchForField, "spellID", spellID);
 				return;
 			end
 		elseif enumType == 10 then
 			-- Mounts!
 			local spellID = select(2, C_MountJournal.GetMountInfoByID(data.id));
 			if spellID then
-				AttachTooltipSearchResults(tooltip, 1, "spellID:" .. spellID, app.SearchForField, "spellID", spellID);
+				AttachTooltipSearchResults(tooltip, 1, "spellID:" .. spellID, SearchForField, "spellID", spellID);
 				return;
 			end
 		elseif enumType == 4 then
 			-- Objects!
 			local objectID = app.GetBestObjectIDForName(data.lines[1].leftText);
 			if objectID then
-				AttachTooltipSearchResults(tooltip, 1, "objectID:" .. objectID, app.SearchForField, "objectID", objectID);
+				AttachTooltipSearchResults(tooltip, 1, "objectID:" .. objectID, SearchForField, "objectID", objectID);
 				return true;
 			end
 		elseif enumType == 21 then
@@ -3340,7 +3344,7 @@ if TooltipDataProcessor then
 				if #arr == 3 then text = strsub(arr[3], 2); end
 				local objectID = app.GetBestObjectIDForName(text);
 				if objectID then
-					AttachTooltipSearchResults(tooltip, 1, "objectID:" .. objectID, app.SearchForField, "objectID", objectID);
+					AttachTooltipSearchResults(tooltip, 1, "objectID:" .. objectID, SearchForField, "objectID", objectID);
 					return true;
 				end
 			end
@@ -3387,7 +3391,7 @@ if TooltipDataProcessor then
 					end
 				elseif type == "Creature" or type == "Vehicle" then
 					if app.Settings:GetTooltipSetting("creatureID") then tooltip:AddDoubleLine(L["CREATURE_ID"], tostring(npcID)); end
-					AttachTooltipSearchResults(tooltip, 1, "creatureID:" .. npcID, app.SearchForField, "creatureID", tonumber(npcID));
+					AttachTooltipSearchResults(tooltip, 1, "creatureID:" .. npcID, SearchForField, "creatureID", tonumber(npcID));
 				end
 				return true;
 			end
@@ -3399,13 +3403,13 @@ if TooltipDataProcessor then
 				if tooltipType == 13 then
 					local spellID = content[1].tooltipID;
 					if spellID then
-						AttachTooltipSearchResults(tooltip, 1, "spellID:" .. spellID, app.SearchForField, "spellID", spellID);
+						AttachTooltipSearchResults(tooltip, 1, "spellID:" .. spellID, SearchForField, "spellID", spellID);
 						return;
 					end
 				elseif tooltipType == 29 then
 					local itemID = content[1].tooltipID;
 					if itemID then
-						AttachTooltipSearchResults(tooltip, 1, "itemID:" .. itemID, app.SearchForField, "itemID", itemID);
+						AttachTooltipSearchResults(tooltip, 1, "itemID:" .. itemID, SearchForField, "itemID", itemID);
 						return;
 					end
 				end
@@ -3489,7 +3493,7 @@ function ItemRefTooltip:SetHyperlink(link, a, b, c, d, e, f)
 		local linkType, id, params = strsplit(':', link)
 		linkType = linkType .. "ID";
 		print(linkType, id, params);
-		if not app.SearchForFieldContainer(linkType) then return end
+		if #SearchForFieldContainer(linkType) < 1 then return end
 		
 		-- Search for the Link in the database
 		local cmd = linkType .. ":" .. id;
@@ -3529,8 +3533,8 @@ local LOREMASTER_CreateQuests = function(t, extraQuestIDs)
 		-- If additional questIDs were manually included, let's do some extra work.
 		if extraQuestIDs and #extraQuestIDs > 0 then
 			for i,questID in ipairs(extraQuestIDs) do
-				local results = app.SearchForField("questID", questID);
-				if results and #results > 0 then
+				local results = SearchForField("questID", questID);
+				if #results > 0 then
 					local quest = results[1];
 					if quest.key == "questID" and not quest.repeatable then
 						count = count + 1;
@@ -3547,26 +3551,22 @@ end;
 local LOREMASTER_CreateQuestsAndStructures = function(t, mapID, extraQuestIDs)
 	-- Grab all of the quests on the continent.
 	local response;
-	local results = app.SearchForField("mapID", mapID);
-	if not results then
+	local results = SearchForField("mapID", mapID);
+	local count = #results;
+	if count < 1 then
 		return;
-	else
-		local count = #results;
-		if count < 1 then
-			return;
-		elseif count > 1 then
-			-- Uh wasn't expecting this.
-			local bestResult;
-			for i=1,#results,1 do
-				local g = results[i].g;
-				if g and not bestResult or #g > #bestResult.g then
-					bestResult = results[i];
-				end
+	elseif count > 1 then
+		-- Uh wasn't expecting this.
+		local bestResult;
+		for i=1,#results,1 do
+			local g = results[i].g;
+			if g and not bestResult or #g > #bestResult.g then
+				bestResult = results[i];
 			end
-			response = app:BuildSearchResponseForField(bestResult.g, "questID");
-		else
-			response = app:BuildSearchResponseForField(results[1].g, "questID");
 		end
+		response = app:BuildSearchResponseForField(bestResult.g, "questID");
+	else
+		response = app:BuildSearchResponseForField(results[1].g, "questID");
 	end
 	
 	
@@ -3628,8 +3628,8 @@ local LOREMASTER_CreateQuestsAndStructures = function(t, mapID, extraQuestIDs)
 	-- If additional questIDs were manually included, let's do some extra work.
 	if extraQuestIDs and #extraQuestIDs > 0 then
 		for i,questID in ipairs(extraQuestIDs) do
-			local results = app.SearchForField("questID", questID);
-			if results and #results > 0 then
+			local results = SearchForField("questID", questID);
+			if #results > 0 then
 				tinsert(quests, 1, results[1]);
 			end
 		end
@@ -3643,7 +3643,7 @@ local commonAchievementHandlers = {
 	if button == "RightButton" then
 		local t = row.ref;
 		local template = {};
-		for i,o in pairs(app.SearchForFieldContainer("speciesID")) do
+		for i,o in pairs(SearchForFieldContainer("speciesID")) do
 			table.insert(template, o[1]);
 		end
 		
@@ -3676,8 +3676,8 @@ end,
 	t.BuildReputation = function()
 		local r = t.rep;
 		if not r then
-			local f = app.SearchForField("factionID", factionID);
-			if f and #f > 0 then
+			local f = SearchForField("factionID", factionID);
+			if #f > 0 then
 				r = f[1];
 				for i,o in ipairs(f) do
 					if o.key == "factionID" then
@@ -3729,8 +3729,8 @@ end,
 		if not reps then
 			reps = {};
 			for i,factionID in ipairs(factionIDs) do
-				local f = app.SearchForField("factionID", factionID);
-				if f and #f > 0 then
+				local f = SearchForField("factionID", factionID);
+				if #f > 0 then
 					local best = f[1];
 					for _,o in ipairs(f) do
 						if o.key == "factionID" then
@@ -3797,7 +3797,7 @@ end,
 	if button == "RightButton" then
 		local t = row.ref;
 		local template,r = {},{};
-		for i,o in pairs(app.SearchForFieldContainer("spellID")) do
+		for i,o in pairs(SearchForFieldContainer("spellID")) do
 			if ((o[1].f and o[1].f == 100) or (o[1].filterID and o[1].filterID == 100)) and not r[i] then
 				table.insert(template, o[1]);
 				r[i] = 1;
@@ -4091,12 +4091,11 @@ if GetCategoryInfo and GetCategoryInfo(92) ~= "" then
 	
 	local function CheckAchievementCollectionStatus(achievementID)
 		achievementID = tonumber(achievementID);
-		local achievement = app.SearchForField("achievementID", achievementID);
-		SetAchievementCollected(achievement and achievement[1], achievementID, select(13, GetAchievementInfo(achievementID)));
+		SetAchievementCollected(SearchForField("achievementID", achievementID)[1], achievementID, select(13, GetAchievementInfo(achievementID)));
 	end
 	local function refreshAchievementCollection()
 		if ATTAccountWideData then
-			for achievementID,container in pairs(app.SearchForFieldContainer("achievementID")) do
+			for achievementID,container in pairs(SearchForFieldContainer("achievementID")) do
 				local id = tonumber(achievementID);
 				if achievementID ~= 5788 then
 					SetAchievementCollected(container[1], id, select(13, GetAchievementInfo(id)));
@@ -4307,8 +4306,7 @@ else
 	commonAchievementHandlers.COMPANIONS_OnUpdate = function(t)
 		if app.Settings.Collectibles.BattlePets then
 			local count = 0;
-			local pets = app.SearchForFieldContainer("speciesID");
-			for i,g in pairs(pets) do
+			for i,g in pairs(SearchForFieldContainer("speciesID")) do
 				if g[1].collected then
 					count = count + 1;
 				end
@@ -4353,7 +4351,7 @@ else
 		if t.total and t.progress < t.total and t.rank >= 25 then
 			GameTooltip:AddLine(" ");
 			local c = 0;
-			for i,g in pairs(app.SearchForFieldContainer("speciesID")) do
+			for i,g in pairs(SearchForFieldContainer("speciesID")) do
 				local p = g[1];
 				if p.visible then
 					c = c + 1;
@@ -4432,8 +4430,8 @@ else
 			if not t.spells then
 				local spells = {};
 				for i,spellID in ipairs({ ... }) do
-					local f = app.SearchForField("spellID", spellID);
-					if f and #f > 0 then
+					local f = SearchForField("spellID", spellID);
+					if #f > 0 then
 						tinsert(spells, f[1]);
 					else
 						return true;
@@ -4457,8 +4455,8 @@ else
 			if not t.spells then
 				local spells = {};
 				for i,spellID in ipairs({ ... }) do
-					local f = app.SearchForField("spellID", spellID);
-					if f and #f > 0 then
+					local f = SearchForField("spellID", spellID);
+					if #f > 0 then
 						tinsert(spells, f[1]);
 					else
 						tinsert(spells, app.CreateSpell(spellID));
@@ -4558,8 +4556,8 @@ else
 			if not t.achievements then
 				local achievements = {};
 				for i,achievementID in ipairs({ ... }) do
-					local f = app.SearchForField("achievementID", achievementID);
-					if f and #f > 0 then
+					local f = SearchForField("achievementID", achievementID);
+					if #f > 0 then
 						tinsert(achievements, f[1]);
 					else
 						return true;
@@ -4597,8 +4595,7 @@ else
 	commonAchievementHandlers.MOUNTS_OnUpdate = function(t)
 		if app.Settings.Collectibles.Mounts then
 			local count,r = 0,{};
-			local spells = app.SearchForFieldContainer("spellID");
-			for i,g in pairs(spells) do
+			for i,g in pairs(SearchForFieldContainer("spellID")) do
 				if ((g[1].f and g[1].f == 100) or (g[1].filterID and g[1].filterID == 100)) and not r[i] then
 					if g[1].collected then count = count + 1; end
 					r[i] = 1;
@@ -4645,7 +4642,7 @@ else
 			GameTooltip:AddLine(" ");
 			local c = 0;
 			local template,r = {},{};
-			for i,o in pairs(app.SearchForFieldContainer("spellID")) do
+			for i,o in pairs(SearchForFieldContainer("spellID")) do
 				local p = o[1];
 				if ((p.f and p.f == 100) or (p.filterID and p.filterID == 100)) and not r[i] then
 					r[i] = 1;
@@ -4668,8 +4665,7 @@ else
 				ignored = {[169] = 1};
 				app.IgnoredReputationsForAchievements = ignored;
 			end
-			local factions = app.SearchForFieldContainer("factionID");
-			for factionID,g in pairs(factions) do
+			for factionID,g in pairs(SearchForFieldContainer("factionID")) do
 				if not ignored[factionID] and g[1].standing == 8 then
 					count = count + 1;
 				end
@@ -5056,7 +5052,7 @@ if C_PetJournal then
 	end
 	mountFields.collected = function(t)
 		local spellID = t.spellID;
-		for i,o in ipairs(app.SearchForField("spellID", spellID)) do
+		for i,o in ipairs(SearchForField("spellID", spellID)) do
 			if o.explicitlyCollected then
 				return SetMountCollected(t, spellID, true);
 			end
@@ -5135,7 +5131,7 @@ else
 		end
 		mountFields.collected = function(t)
 			local spellID = t.spellID;
-			for i,o in ipairs(app.SearchForField("spellID", spellID)) do
+			for i,o in ipairs(SearchForField("spellID", spellID)) do
 				if o.explicitlyCollected then
 					return SetMountCollected(t, spellID, true);
 				end
@@ -5203,8 +5199,8 @@ else
 	end
 end
 local CurrencyCollectibleAsCost = setmetatable({}, { __index = function(t, id)
-	local results = app.SearchForField("currencyIDAsCost", id, true);
-	if results and #results > 0 then
+	local results = SearchForField("currencyIDAsCost", id, true);
+	if #results > 0 then
 		for _,ref in pairs(results) do
 			if ref.currencyID ~= id and app.RecursiveGroupRequirementsFilter(ref) then
 				if ref.collectible and not ref.collected then
@@ -5222,8 +5218,8 @@ local CurrencyCollectibleAsCost = setmetatable({}, { __index = function(t, id)
 end });
 local CurrencyCollectedAsCost = setmetatable({}, { __index = function(t, id)
 	local any, partial;
-	local results = app.SearchForField("currencyIDAsCost", id, true);
-	if results and #results > 0 then
+	local results = SearchForField("currencyIDAsCost", id, true);
+	if #results > 0 then
 		local count = GetCurrencyCount(id);
 		for _,ref in pairs(results) do
 			if ref.currencyID ~= id and app.RecursiveDefaultClassAndRaceFilter(ref) then
@@ -5315,13 +5311,13 @@ GameTooltip.SetCurrencyByID = function(self, currencyID, count)
 	if GameTooltip_SetCurrencyByID then
 		GameTooltip_SetCurrencyByID(self, currencyID, count);
 	else
-		local results = app.SearchForField("currencyID", currencyID);
-		if results and #results > 0 then
+		local results = SearchForField("currencyID", currencyID);
+		if #results > 0 then
 			GameTooltip:AddLine(results[1].text or RETRIEVING_DATA, 1, 1, 1);
 		end
 	end
 	if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSetting("Enabled") then
-		AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, app.SearchForField, "currencyID", currencyID);
+		AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
 		if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
 		self:Show();
 	end
@@ -5335,8 +5331,8 @@ GameTooltip.SetCurrencyToken = function(self, tokenID)
 		local name, isHeader = GetCurrencyListInfo(tokenID);
 		if not isHeader then
 			-- Determine which currencyID is the one that we're dealing with.
-			local cache = app.SearchForFieldContainer("currencyID");
-			if cache then
+			local cache = SearchForFieldContainer("currencyID");
+			if #cache > 0 then
 				-- We only care about currencies in the addon at the moment.
 				for currencyID,results in pairs(cache) do
 					-- Compare the name of the currency vs the name of the token
@@ -5344,7 +5340,7 @@ GameTooltip.SetCurrencyToken = function(self, tokenID)
 						if not GameTooltip_SetCurrencyToken then
 							GameTooltip:AddLine(results[1].text or RETRIEVING_DATA, 1, 1, 1);
 						end
-						AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, app.SearchForField, "currencyID", currencyID);
+						AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
 						if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
 						self:Show();
 						break;
@@ -5798,7 +5794,7 @@ app.CacheFlightPathData = function()
 			for j,nodeData in ipairs(allNodeData) do
 				if nodeData.name then
 					ATTClassicAD.LocalizedFlightPathNames[nodeData.nodeID] = nodeData.name;
-					if not app.SearchForField("flightPathID", nodeData.nodeID) then
+					if #SearchForField("flightPathID", nodeData.nodeID) < 1 then
 						newNodes[nodeData.nodeID] = nodeData.name;
 						anyNew = true;
 					end
@@ -5817,7 +5813,7 @@ end
 app.CacheFlightPathDataForMap = function(mapID, nodes)
 	local count = 0;
 	local temp = {};
-	for nodeID,_ in pairs(app.SearchForFieldContainer("flightPathID")) do
+	for nodeID,_ in pairs(SearchForFieldContainer("flightPathID")) do
 		for i,node in ipairs(_) do
 			if not node.u and node.coords and node.coords[1][3] == mapID then
 				if not node.r or node.r == app.FactionID then
@@ -5864,7 +5860,7 @@ app.CacheFlightPathDataForTarget = function(nodes)
 		if type == "Creature" and npcID then
 			npcID = tonumber(npcID);
 			local count = 0;
-			local searchResults = app.SearchForField("creatureID", npcID);
+			local searchResults = SearchForField("creatureID", npcID);
 			if searchResults and #searchResults > 0 then
 				for i,group in ipairs(searchResults) do
 					if group.flightPathID and not group.nmr and not group.nmc and (not group.u or group.u > 1) then
@@ -5934,8 +5930,8 @@ app.events.GOSSIP_SHOW = function()
 		for nodeID,_ in pairs(knownNodeIDs) do
 			nodeID = tonumber(nodeID);
 			if not app.CurrentCharacter.FlightPaths[nodeID] then
-				local searchResults = app.SearchForField("flightPathID", nodeID);
-				app.SetCollected(searchResults and searchResults[1], "FlightPaths", nodeID, true);
+				local searchResults = SearchForField("flightPathID", nodeID);
+				app.SetCollected(#searchResults > 0 and searchResults[1], "FlightPaths", nodeID, true);
 				any = true;
 			end
 		end
@@ -5962,8 +5958,8 @@ app.events.TAXIMAP_OPENED = function()
 	for nodeID,_ in pairs(knownNodeIDs) do
 		nodeID = tonumber(nodeID);
 		if not app.CurrentCharacter.FlightPaths[nodeID] then
-			local searchResults = app.SearchForField("flightPathID", nodeID);
-			app.SetCollected(searchResults and searchResults[1], "FlightPaths", nodeID, true);
+			local searchResults = SearchForField("flightPathID", nodeID);
+			app.SetCollected(#searchResults > 0 and searchResults[1], "FlightPaths", nodeID, true);
 			any = true;
 		end
 	end
@@ -6137,8 +6133,7 @@ app.ParseItemID = function(itemName)
 				return itemID;
 			else
 				-- Oh no, gonna need to work for it.
-				local iCache = app.SearchForFieldContainer("itemID");
-				for id,_ in pairs(iCache) do
+				for id,_ in pairs(SearchForFieldContainer("itemID")) do
 					local text = BestItemLinkPerItemID[id];
 					if text and string.match(text, itemName) then
 						return id;
@@ -6154,8 +6149,8 @@ app.ClearItemCache = function()
 end
 local collectibleAsCostForItem = function(t)
 	local id = t.itemID;
-	local results = app.SearchForField("itemIDAsCost", id);
-	if results and #results > 0 then
+	local results = SearchForField("itemIDAsCost", id);
+	if #results > 0 then
 		local costTotal = 0;
 		if not t.parent or not t.parent.saved then
 			for _,ref in pairs(results) do
@@ -6224,8 +6219,8 @@ local collectedAsRWP = function(t)
 				return app.SetCollected(t, "RWP", id, true);
 			else
 				-- Check to see if this item was a quest reward.
-				local searchResults = app.SearchForField("itemID", id);
-				if searchResults and #searchResults > 0 then
+				local searchResults = SearchForField("itemID", id);
+				if #searchResults > 0 then
 					for i,o in ipairs(searchResults) do
 						if ((o.key == "questID" and o.saved) or (o.parent and o.parent.key == "questID" and o.parent.saved)) and app.RecursiveDefaultClassAndRaceFilter(o) then
 							return app.SetCollected(t, "RWP", id, true);
@@ -6259,8 +6254,7 @@ local itemFields = {
 	end,
 	["f"] = function(t)
 		if t.questID then return 104; end
-		local results = app.SearchForField("itemIDAsCost", t.itemID);
-		if results and #results > 0 then
+		if #SearchForField("itemIDAsCost", t.itemID) > 0 then
 			return 104;
 		end
 	end,
@@ -6815,7 +6809,7 @@ local onMapUpdate = function(t)
 			for _,areaID in ipairs(explored) do
 				app.SetCollected(nil, "Exploration", areaID, true);
 				local o = explorationByAreaID[areaID];
-				if not o and not DiscoveredNewArea[areaID] and not app.SearchForField("explorationID", areaID) then
+				if not o and not DiscoveredNewArea[areaID] and #SearchForField("explorationID", areaID) < 1 then
 					DiscoveredNewArea[areaID] = true;
 					o = app.CreateExploration(areaID);
 					explorationByAreaID[areaID] = o;
@@ -7308,8 +7302,8 @@ app.CreateHeader = app.CreateClass("AutomaticHeader", "autoID", {
 	["result"] = function(t)
 		local typ = HeaderTypeAbbreviations[t.type];
 		if typ then
-			local cache = app.SearchForField(typ, t.autoID);
-			if cache and #cache > 0 then
+			local cache = SearchForField(typ, t.autoID);
+			if #cache > 0 then
 				t.result = cache[1];
 				return cache[1];
 			else
@@ -7636,8 +7630,8 @@ setmetatable(CompletedQuests, {__newindex = function (t, key, value)
 		rawset(DirtyQuests, key, true);
 		app.SetCollected(nil, "Quests", key, true);
 		if app.Settings:GetTooltipSetting("Report:CompletedQuests") then
-			local searchResults = app.SearchForField("questID", key);
-			if searchResults and #searchResults > 0 then
+			local searchResults = SearchForField("questID", key);
+			if #searchResults > 0 then
 				local questID, nmr, nmc, text = key, false, false, "";
 				for i,searchResult in ipairs(searchResults) do
 					if searchResult.key == "questID" and not IgnoreErrorQuests[questID] and not GetRelativeField(searchResult, "headerID", app.HeaderConstants.TIER_ZERO_POINT_FIVE_SETS) then
@@ -7818,7 +7812,7 @@ end),
 				return t.repeatable and 1 or 2;
 			end
 			if app.Settings.AccountWide.Reputations then
-				local searchResults = app.SearchForField("factionID", t.maxReputation[1]);
+				local searchResults = SearchForField("factionID", t.maxReputation[1]);
 				if #searchResults > 0 then
 					for i,searchResult in ipairs(searchResults) do
 						if searchResult.key ~= "questID" and searchResult.collected then
@@ -7836,8 +7830,8 @@ end),
 			if C_QuestLog.IsOnQuest(t.questID) or IsQuestFlaggedCompletedForObject(t) then
 				return true;
 			end
-			local results = app.SearchForField("sourceQuestID", t.questID);
-			if results and #results > 0 then
+			local results = SearchForField("sourceQuestID", t.questID);
+			if #results > 0 then
 				for i,o in ipairs(results) do
 					if o.collectible and not o.collected then
 						return true;
@@ -8067,8 +8061,8 @@ app.CompareQuestieDB = function()
 	if QuestieLoader then
 		local QuestieDB,missingQuestIDs = QuestieLoader:ImportModule("QuestieDB"), {};
 		for id,_ in pairs(QuestieDB.QuestPointers) do
-			local s = app.SearchForField("questID", id);
-			if not s or #s == 0 then
+			local s = SearchForField("questID", id);
+			if #s == 0 then
 				table.insert(missingQuestIDs, id);
 			end
 		end
@@ -8143,8 +8137,8 @@ app.events.QUEST_LOG_UPDATE = function()
 	wipe(searchCache);
 end
 app.events.QUEST_TURNED_IN = function(questID)
-	local quest = app.SearchForField("questID", questID);
-	if quest and (not quest[1].repeatable or (quest[1].isDaily or quest[1].isMonthly or quest[1].isYearly)) then
+	local quest = SearchForField("questID", questID);
+	if #quest > 0 and (not quest[1].repeatable or (quest[1].isDaily or quest[1].isMonthly or quest[1].isYearly)) then
 		CompletedQuests[questID] = true;
 		for questID,completed in pairs(DirtyQuests) do
 			app.QuestCompletionHelper(tonumber(questID));
@@ -8247,8 +8241,7 @@ app.SpellNameToSpellID = setmetatable(L.ALT_PROFESSION_TEXT_TO_ID, {
 		for specID,spellID in pairs(app.SpecializationSpellIDs) do
 			app.GetSpellName(spellID);
 		end
-		local cache = app.SearchForFieldContainer("spellID");
-		for spellID,g in pairs(cache) do
+		for spellID,g in pairs(SearchForFieldContainer("spellID")) do
 			local rank;
 			for i,o in ipairs(g) do
 				if o.rank then
@@ -8999,8 +8992,8 @@ function app.GetNumberOfItemsUntilNextPercentage(progress, total)
 end
 function app.QuestCompletionHelper(questID)
 	-- Search ATT for the related quests.
-	local searchResults = app.SearchForField("questID", questID);
-	if searchResults and #searchResults > 0 then
+	local searchResults = SearchForField("questID", questID);
+	if #searchResults > 0 then
 		-- Only increase progress for Quests as Collectible users.
 		if app.Settings.Collectibles.Quests then
 			-- Attempt to cleanly refresh the data.
@@ -9455,7 +9448,7 @@ local function AddTomTomWaypoint(group)
 											tooltip:AddDoubleLine(L.CRITERIA_FOR, GetAchievementLink(group.achievementID));
 										else
 											if key == "npcID" then key = "creatureID"; end
-											AttachTooltipSearchResults(tooltip, 1, key .. ":" .. o[o.key], app.SearchForField, key, o[o.key], line);
+											AttachTooltipSearchResults(tooltip, 1, key .. ":" .. o[o.key], SearchForField, key, o[o.key], line);
 										end
 									end
 									tooltip:Show();
@@ -10185,7 +10178,7 @@ local function RowOnEnter(self)
 							end
 						end
 					end
-					AttachTooltipSearchResults(GameTooltip, 1, "itemID:" .. reference.itemID, app.SearchForField, "itemID", reference.itemID);
+					AttachTooltipSearchResults(GameTooltip, 1, "itemID:" .. reference.itemID, SearchForField, "itemID", reference.itemID);
 				end
 			elseif reference.currencyID then
 				GameTooltip:SetCurrencyByID(reference.currencyID, 1);
@@ -10196,7 +10189,7 @@ local function RowOnEnter(self)
 					if reference.spellID then
 						local requireSkill = GetRelativeValue(reference, "requireSkill");
 						if requireSkill == 333 then
-							AttachTooltipSearchResults(GameTooltip, 1, "spellID:" .. reference.spellID, app.SearchForField, "spellID", reference.spellID);
+							AttachTooltipSearchResults(GameTooltip, 1, "spellID:" .. reference.spellID, SearchForField, "spellID", reference.spellID);
 						elseif requireSkill == 960 then
 							GameTooltip:AddLine(GameTooltipTextLeft1:GetText(), 1, 1, 1, true);
 							GameTooltipTextLeft1:SetText(reference.name);
@@ -10525,7 +10518,7 @@ local function RowOnEnter(self)
 		end
 		if reference.titleID then
 			if app.Settings:GetTooltipSetting("titleID") then GameTooltip:AddDoubleLine(L["TITLE_ID"], tostring(reference.titleID)); end
-			AttachTooltipSearchResults(GameTooltip, 1, "titleID:" .. reference.titleID, app.SearchForField, "titleID", reference.titleID);
+			AttachTooltipSearchResults(GameTooltip, 1, "titleID:" .. reference.titleID, SearchForField, "titleID", reference.titleID);
 		end
 		if reference.questID and app.Settings:GetTooltipSetting("questID") then GameTooltip:AddDoubleLine(L["QUEST_ID"], tostring(reference.questID)); end
 		if reference.qgs and app.Settings:GetTooltipSetting("QuestGivers") then
@@ -10713,8 +10706,8 @@ local function RowOnEnter(self)
 			local prereqs, bc = {}, {};
 			for i,sourceQuestID in ipairs(reference.sourceQuests) do
 				if sourceQuestID > 0 and (isDebugMode or not IsQuestFlaggedCompleted(sourceQuestID)) then
-					local sqs = app.SearchForField("questID", sourceQuestID);
-					if sqs and #sqs > 0 then
+					local sqs = SearchForField("questID", sourceQuestID);
+					if #sqs > 0 then
 						local bestMatch = nil;
 						for j,sq in ipairs(sqs) do
 							if sq.questID == sourceQuestID and not sq.objectiveID then
@@ -11930,8 +11923,8 @@ local function OnInitForPopout(self, group)
 		
 		-- Check to see if Source Quests are listed elsewhere.
 		if questID and not group.sourceQuests then
-			local searchResults = app.SearchForField("questID", questID);
-			if searchResults and #searchResults > 1 then
+			local searchResults = SearchForField("questID", questID);
+			if #searchResults > 1 then
 				for i=1,#searchResults,1 do
 					local searchResult = searchResults[i];
 					if searchResult.questID == questID and searchResult.sourceQuests then
@@ -11953,8 +11946,8 @@ local function OnInitForPopout(self, group)
 			while sourceQuests and #sourceQuests > 0 do
 				subSourceQuests = {}; prereqs = {};
 				for i,sourceQuestID in ipairs(sourceQuests) do
-					sourceQuest = sourceQuestID < 1 and app.SearchForField("creatureID", math.abs(sourceQuestID)) or app.SearchForField("questID", sourceQuestID);
-					if sourceQuest and #sourceQuest > 0 then
+					sourceQuest = sourceQuestID < 1 and SearchForField("creatureID", math.abs(sourceQuestID)) or SearchForField("questID", sourceQuestID);
+					if #sourceQuest > 0 then
 						local found = nil;
 						for i=1,#sourceQuest,1 do
 							-- Only care about the first search result.
@@ -12126,8 +12119,8 @@ local function OnInitForPopout(self, group)
 	-- If this is an achievement, build the criteria within it if possible.
 	local achievementID = group.achievementID;
 	if achievementID then
-		local searchResults = app.SearchForField("achievementID", achievementID);
-		if searchResults and #searchResults > 0 then
+		local searchResults = SearchForField("achievementID", achievementID);
+		if #searchResults > 0 then
 			for i=1,#searchResults,1 do
 				local searchResult = searchResults[i];
 				if searchResult.achievementID == achievementID and searchResult.criteriaID then
@@ -12141,8 +12134,8 @@ local function OnInitForPopout(self, group)
 	--[[
 	local currencyID = group.currencyID;
 	if currencyID and not self.data.usedtobuy then
-		local searchResults = app.SearchForField("currencyIDAsCost", currencyID);
-		if searchResults and #searchResults > 0 then
+		local searchResults = SearchForField("currencyIDAsCost", currencyID);
+		if #searchResults > 0 then
 			local usedtobuy = {};
 			usedtobuy.g = {};
 			usedtobuy.text = "Used to Buy";
@@ -12179,8 +12172,8 @@ local function OnInitForPopout(self, group)
 	
 	local itemID = group.itemID;
 	if itemID and not self.data.tradedin then
-		local searchResults = app.SearchForField("itemIDAsCost", itemID);
-		if searchResults and #searchResults > 0 then
+		local searchResults = SearchForField("itemIDAsCost", itemID);
+		if #searchResults > 0 then
 			local tradedin = {};
 			tradedin.g = {};
 			tradedin.text = "Used For";
@@ -12302,8 +12295,8 @@ function app:CreateMiniListForGroup(group)
 	-- Is this an achievement criteria or lacking some achievement information?
 	local achievementID = group.achievementID;
 	if achievementID and (group.criteriaID or not group.g) then
-		local searchResults = app.SearchForField("achievementID", achievementID);
-		if searchResults and #searchResults > 0 then
+		local searchResults = SearchForField("achievementID", achievementID);
+		if #searchResults > 0 then
 			local bestResult;
 			for i=1,#searchResults,1 do
 				local searchResult = searchResults[i];
@@ -12386,8 +12379,8 @@ function app:CreateMiniListFromSource(key, id, sourcePath)
 	if key and id then
 		if sourcePath then
 			-- Try to find an exact match.
-			local searchResults = app.SearchForField(key, id);
-			if searchResults and #searchResults > 0 then
+			local searchResults = SearchForField(key, id);
+			if #searchResults > 0 then
 				for i,ref in ipairs(searchResults) do
 					if BuildSourceTextForDynamicPath(ref) == sourcePath then
 						app:CreateMiniListForGroup(ref);
@@ -12523,8 +12516,8 @@ local function RefreshLocation()
 	app:StartATTCoroutine("RefreshLocation", RefreshLocationCoroutine);
 end
 local function RebuildMapData(self, mapID)
-	local results = app.SearchForField("mapID", mapID);
-	if results then
+	local results = SearchForField("mapID", mapID);
+	if #results > 0 then
 		-- Simplify the returned groups
 		local groups = {};
 		local header = { mapID = mapID, back = 1, g = groups };
@@ -13237,8 +13230,8 @@ app:GetWindow("Tradeskills", {
 			end
 			
 			-- Cache Learned Spells
-			local skillCache = app.SearchForFieldContainer("spellID");
-			if skillCache then
+			local skillCache = SearchForFieldContainer("spellID");
+			if #skillCache > 0 then
 				-- Cache learned recipes and reagents
 				local reagentCache = app.GetDataMember("Reagents", {});
 				local learned, craftSkillID, tradeSkillID = 0, 0, 0;
@@ -13585,8 +13578,8 @@ app:GetWindow("Tradeskills", {
 		local newSpellLearned = function(self, spellID)
 			if spellID then
 				if not app.CurrentCharacter.Spells[spellID] then
-					local searchResults, spell = app.SearchForField("spellID", spellID);
-					if searchResults and #searchResults > 0 then
+					local searchResults, spell = SearchForField("spellID", spellID);
+					if #searchResults > 0 then
 						spell = searchResults[1];
 						for i=2,#searchResults,1 do
 							local searchResult = searchResults[i];
