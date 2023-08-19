@@ -11629,130 +11629,65 @@ function app:GetWindow(suffix, settings)
 			self:DelayedCall("Update", 60, force);
 		end
 		
-		-- The Close Button. It's assigned as a local variable so you can change how it behaves.
-		local closeButton = CreateFrame("Button", nil, window, "UIPanelCloseButton");
-		closeButton:SetScript("OnClick", function() window:Toggle(); end);
-		window.CloseButton = closeButton;
-		
-		-- The Scroll Bar.
-		local scrollbar;
-		window.CurrentIndex = 0;
-		if SCROLL_FRAME_SCROLL_BAR_TEMPLATE then
-			closeButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", 0, 0);
-			scrollbar = CreateFrame("EventFrame", nil, window, SCROLL_FRAME_SCROLL_BAR_TEMPLATE);
-			--scrollbar.useProportionalThumb = true;
-			--scrollbar.fixedThumbExtent = nil;
-			scrollbar:SetPoint("TOP", window, "TOP", 0, -4);
-			scrollbar:SetPoint("BOTTOMRIGHT", window, "BOTTOMRIGHT", -7, 2);
-			scrollbar:SetHideIfUnscrollable(false);
-			scrollbar:SetHideTrackIfThumbExceedsTrack(true);
-			scrollbar:SetPanExtentPercentage(0.25);
-			scrollbar:SetScrollPercentage(0);
-			scrollbar:GetBackStepper():Hide();
-			scrollbar:GetBackStepper():EnableMouse(false);
-			scrollbar:GetForwardStepper():Hide();
-			scrollbar:GetForwardStepper():EnableMouse(false);
-			
-			local scrollBarHide = scrollbar.Hide;
-			scrollbar:SetScript("OnMouseDown", function(self)
-				StartMovingOrSizing(window);
-				scrollbar.Hide = function(self)
-					scrollBarHide(self);
-					self.Hide = scrollBarHide;
-					StopMovingOrSizing(window);
-				end
-			end);
-			scrollbar:SetScript("OnMouseUp", function(self)
-				StopMovingOrSizing(window);
-			end);
-			
-			
-			local MaxDisplayedValue, TotalValue, Difference, ScrollPercentage = 0, 0, 0, 0;
-			scrollbar:RegisterCallback(BaseScrollBoxEvents.OnScroll, function(o, scrollPercentage)
-				ScrollPercentage = scrollPercentage;
-				local currentIndex = math.ceil(scrollPercentage * Difference);
-				if currentIndex ~= window.CurrentIndex then
-					window.CurrentIndex = currentIndex;
-					window:Refresh();
-				end
-			end, window);
-			window:SetScript("OnMouseWheel", function(self, delta)
-				scrollbar:ScrollStepInDirection(-delta);
-			end);
-			window.SetMinMaxValues = function(self, displayedValue, totalValue)
-				if MaxDisplayedValue ~= displayedValue or TotalValue ~= totalValue then
-					MaxDisplayedValue = displayedValue;
-					TotalValue = totalValue;
-					
-					Difference = math.max(1, TotalValue - MaxDisplayedValue);
-					scrollbar:SetVisibleExtentPercentage(1 / Difference);
-					scrollbar:SetPanExtentPercentage(1 / (Difference + 1));
-					scrollbar:Update();
-					if window.CurrentIndex >= Difference then
-						window.CurrentIndex = math.ceil(ScrollPercentage * Difference);
-						window:Refresh();
-					end
-				end
-			end
-			
-			window.UpdateScrollBar = function()
-				scrollbar:Update();
-			end
-		
-			-- The Corner Grip. (this isn't actually used, but it helps indicate to players that they can do something)
-			local grip = scrollbar:CreateTexture(nil, "ARTWORK");
-			grip:SetTexture(app.asset("grip"));
-			grip:SetSize(20, 20);
-			grip:SetTexCoord(0,1,0,1);
-			grip:SetPoint("BOTTOMRIGHT", 0, 3);
-		else
-			closeButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", 4, 3);
-			scrollbar = CreateFrame("Slider", nil, window, "UIPanelScrollBarTemplate");
-			scrollbar:SetPoint("TOP", closeButton, "BOTTOM", 0, -10);
-			scrollbar:SetPoint("BOTTOMRIGHT", window, "BOTTOMRIGHT", -4, 36);
-			scrollbar:SetScript("OnValueChanged", function(self, value)
-				local un = math.floor(value);
-				local up = un + 1;
-				window.CurrentIndex = (up - value) > (-(un - value)) and un or up;
-				window:Refresh();
-			end);
-			scrollbar.back = scrollbar:CreateTexture(nil, "BACKGROUND");
-			scrollbar.back:SetColorTexture(0,0,0,0.4)
-			scrollbar.back:SetAllPoints(scrollbar);
-			scrollbar:SetMinMaxValues(1, 1);
-			scrollbar:SetValueStep(1);
-			scrollbar:SetWidth(16);
-			scrollbar:EnableMouseWheel(true);
-			window:SetScript("OnMouseWheel", function(self, delta)
-				scrollbar:SetValue(window.CurrentIndex - delta);
-			end);
-			window.SetMinMaxValues = function(self, displayedValue, totalValue)
-				scrollbar:SetMinMaxValues(1, math.max(1, totalValue - displayedValue));
-			end
-			
-			window.UpdateScrollBar = function()
-				-- Do nothing
-			end
-		
-			-- The Corner Grip. (this isn't actually used, but it helps indicate to players that they can do something)
-			local grip = window:CreateTexture(nil, "ARTWORK");
-			grip:SetTexture(app.asset("grip"));
-			grip:SetSize(16, 16);
-			grip:SetTexCoord(0,1,0,1);
-			grip:SetPoint("BOTTOMRIGHT", -5, 5);
-		end
-		window:EnableMouseWheel(true);
-		window.ScrollBar = scrollbar;
-		
 		-- The Row Container. This contains all of the row frames.
 		local container = CreateFrame("FRAME", nil, window);
-		container:SetPoint("TOPLEFT", window, "TOPLEFT", 0, -6);
-		container:SetPoint("RIGHT", scrollbar, "LEFT", 0, 0);
+		container:SetPoint("TOPLEFT", window, "TOPLEFT", 2, -6);
 		container:SetPoint("BOTTOM", window, "BOTTOM", 0, 6);
 		window.Container = container;
 		UpdateWindowColor(window, suffix);
 		container.rows = {};
 		container:Show();
+		
+		local topright = window:CreateTexture(nil, "OVERLAY")
+		topright:SetTexture(251963) -- Interface\\PaperDollInfoFrame\\UI-GearManager-Border
+		topright:SetPoint("TOPRIGHT", window, "TOPRIGHT", -2, -2);
+		topright:SetTexCoord(0.7, 0.745, 0.04, 0.4)
+		topright:SetSize(20, 20);
+		window.TopRight = topright;
+		
+		-- The Close Button. It's assigned as a local variable so you can change how it behaves.
+		local closeButton = CreateFrame("Button", nil, window, "UIPanelCloseButton");
+		closeButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", 0, -1);
+		closeButton:SetScript("OnClick", function() window:Toggle(); end);
+		closeButton:SetSize(24, 24);
+		window.CloseButton = closeButton;
+		
+		-- The Scroll Bar.
+		window.CurrentIndex = 0;
+		local scrollbar = CreateFrame("Slider", nil, window, "UIPanelScrollBarTemplate");
+		container:SetPoint("RIGHT", scrollbar, "LEFT", -2, 0);
+		scrollbar:SetPoint("TOP", window, "TOP", 0, -40);
+		scrollbar:SetPoint("BOTTOMRIGHT", window, "BOTTOMRIGHT", -4, 36);
+		scrollbar:SetScript("OnValueChanged", function(self, value)
+			if window.CurrentIndex ~= value then
+				window.CurrentIndex = value;
+				window:Refresh();
+			end
+		end);
+		scrollbar.back = scrollbar:CreateTexture(nil, "BACKGROUND");
+		scrollbar.back:SetColorTexture(0.1,0.1,0.1,1)
+		scrollbar.back:SetAllPoints(scrollbar);
+		scrollbar:SetMinMaxValues(1, 1);
+		scrollbar:SetValueStep(1);
+		scrollbar:SetValue(1);
+		scrollbar:SetObeyStepOnDrag(true);
+		scrollbar:SetWidth(16);
+		scrollbar:EnableMouseWheel(true);
+		window:SetScript("OnMouseWheel", function(self, delta)
+			scrollbar:SetValue(window.CurrentIndex - delta);
+		end);
+		window.SetMinMaxValues = function(self, displayedValue, totalValue)
+			scrollbar:SetMinMaxValues(1, math.max(1, totalValue - displayedValue));
+		end
+	
+		-- The Corner Grip. (this isn't actually used, but it helps indicate to players that they can do something)
+		local grip = window:CreateTexture(nil, "ARTWORK");
+		grip:SetTexture(app.asset("grip"));
+		grip:SetSize(16, 16);
+		grip:SetTexCoord(0,1,0,1);
+		grip:SetPoint("BOTTOMRIGHT", -5, 5);
+		window:EnableMouseWheel(true);
+		window.ScrollBar = scrollbar;
 		
 		-- Setup the Event Handlers
 		local handlers = {};
