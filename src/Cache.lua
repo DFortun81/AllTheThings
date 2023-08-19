@@ -13,21 +13,33 @@ local contains, classIndex, raceIndex, factionID =
 local AllCaches = {};
 local containerMeta = {
 	__index = function(t, id)
-		local container = {};
-		rawset(t, id, container);
-		return container;
+		if id then
+			local container = {};
+			rawset(t, id, container);
+			return container;
+		else
+			error("Attempting to get a nil id to a cache!");
+		end
 	end,
 };
 local fieldMeta = {
 	__index = function(t, field)
-		local container = setmetatable({}, containerMeta);
-		rawset(t, field, container);
-		return container;
+		if field then
+			local container = setmetatable({}, containerMeta);
+			rawset(t, field, container);
+			return container;
+		else
+			error("Attempting to get a nil field on cache " .. t.name);
+		end
 	end,
 	__newindex = function(t, field, value)
-		local container = setmetatable(value, containerMeta);
-		rawset(t, field, value);
-		return container;
+		if field then
+			local container = setmetatable(value, containerMeta);
+			rawset(t, field, value);
+			return container;
+		else
+			error("Attempting to assign a nil field on cache " .. t.name);
+		end
 	end,
 };
 local currentCache, CacheFields;

@@ -4617,48 +4617,50 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 								break;
 							end
 						end
-						local locationGroup, locationName;
-						-- convert maps
-						if field == "maps" then
-							-- if only a few maps, list them all
-							local count = #id;
-							if count == 1 then
-								id = id[1];
-								locationGroup = C_Map_GetMapInfo(id);
-								locationName = locationGroup and (locationGroup.name or locationGroup.text);
-							else
-								local mapsConcat, names, name = {}, {};
-								for i=1,count,1 do
-									name = C_Map_GetMapInfo(id[i]).name;
-									if not names[name] then
-										names[name] = true;
-										tinsert(mapsConcat, name);
+						if field then	-- CRIEVE NOTE: This was sometimes coming back as nil. Probably shouldn't do that.
+							local locationGroup, locationName;
+							-- convert maps
+							if field == "maps" then
+								-- if only a few maps, list them all
+								local count = #id;
+								if count == 1 then
+									id = id[1];
+									locationGroup = C_Map_GetMapInfo(id);
+									locationName = locationGroup and (locationGroup.name or locationGroup.text);
+								else
+									local mapsConcat, names, name = {}, {};
+									for i=1,count,1 do
+										name = C_Map_GetMapInfo(id[i]).name;
+										if not names[name] then
+											names[name] = true;
+											tinsert(mapsConcat, name);
+										end
+									end
+									-- up to 3 unqiue map names displayed
+									if #mapsConcat < 4 then
+										locationName = app.TableConcat(mapsConcat, nil, nil, "/");
+									else
+										mapsConcat[4] = "+++";
+										locationName = app.TableConcat(mapsConcat, nil, nil, "/", 1, 4);
 									end
 								end
-								-- up to 3 unqiue map names displayed
-								if #mapsConcat < 4 then
-									locationName = app.TableConcat(mapsConcat, nil, nil, "/");
-								else
-									mapsConcat[4] = "+++";
-									locationName = app.TableConcat(mapsConcat, nil, nil, "/", 1, 4);
-								end
-							end
-						else
-							locationGroup = SearchForObject(field, id, "field") or (id and field == "mapID" and C_Map_GetMapInfo(id));
-							locationName = locationGroup and (locationGroup.name or locationGroup.text);
-						end
-						-- print("contains info",entry.itemID,field,id,locationGroup,locationName)
-						if locationName then
-							-- Add the immediate parent group Vendor name
-							local rawParent, sParent = rawget(entry, "parent"), entry.sourceParent;
-							-- the source entry is different from the raw parent and the search context, then show the source parent text for reference
-							if sParent and sParent.text and not GroupMatchesParams(rawParent, sParent.key, sParent[sParent.key]) and not GroupMatchesParams(sParent, paramA, paramB) then
-								right = locationName .. " > " .. sParent.text .. " " .. right;
 							else
-								right = locationName .. " " .. right;
+								locationGroup = SearchForObject(field, id, "field") or (id and field == "mapID" and C_Map_GetMapInfo(id));
+								locationName = locationGroup and (locationGroup.name or locationGroup.text);
 							end
-						-- else
-							-- print("No Location name for item",entry.itemID,id,field)
+							-- print("contains info",entry.itemID,field,id,locationGroup,locationName)
+							if locationName then
+								-- Add the immediate parent group Vendor name
+								local rawParent, sParent = rawget(entry, "parent"), entry.sourceParent;
+								-- the source entry is different from the raw parent and the search context, then show the source parent text for reference
+								if sParent and sParent.text and not GroupMatchesParams(rawParent, sParent.key, sParent[sParent.key]) and not GroupMatchesParams(sParent, paramA, paramB) then
+									right = locationName .. " > " .. sParent.text .. " " .. right;
+								else
+									right = locationName .. " " .. right;
+								end
+							-- else
+								-- print("No Location name for item",entry.itemID,id,field)
+							end
 						end
 					end
 
