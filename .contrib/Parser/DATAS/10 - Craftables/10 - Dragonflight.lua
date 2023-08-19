@@ -3032,7 +3032,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(72508, 395814);	-- Surveyor's Seasoned Pants
 			FirstCraft(72509, 395815);	-- Surveyor's Seasoned Shoulders
 			FirstCraft(71792, 376506);	-- Surveyor's Tailored Cloak
-			FirstCraft(75590, 376506, ADDED_10_1_0);	-- Undulating Sporecloak
+			FirstCraft(75590, 408318, ADDED_10_1_0);	-- Undulating Sporecloak
 			FirstCraft(71803, 376517);	-- Vibrant Wildercloth Girdle
 			FirstCraft(71799, 376513);	-- Vibrant Wildercloth Handwraps
 			FirstCraft(71800, 376514);	-- Vibrant Wildercloth Headcover
