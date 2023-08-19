@@ -1597,7 +1597,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(5771, {	-- Pattern: Red Linen Bag
 							["isLimited"] = true,
 						}),
-						i(6892),	-- Recipe: Smoked Bear Meat
+						i(6892),	-- Recipe: Smoked Bear Meat (RECIPE!)
 					},
 				}),
 				n(5748, {	-- Killian Sanatha <Fisherman>
@@ -1608,8 +1608,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6328),	-- Recipe: Longjaw Mud Snapper
-						i(6368),	-- Recipe: Rainbow Fin Albacore
+						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 					},
 				}),
 				n(5758, {	-- Leo Sarn <Enchanting Supplies>

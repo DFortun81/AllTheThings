@@ -3320,8 +3320,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 66.8, 45.2, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				-- #endif
@@ -3373,9 +3373,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(5789, {	-- Pattern: Murloc Scale Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(12239),	-- Recipe: Dragonbreath Chili
-						i(12233),	-- Recipe: Mystery Stew
-						i(12228),	-- Recipe: Roast Raptor
+						i(12239),	-- Recipe: Dragonbreath Chili (RECIPE!)
+						i(12233),	-- Recipe: Mystery Stew (RECIPE!)
+						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
 				n(4892, {	-- Jensen Farran <Hunter Trainer & Bowyer> [CATA+] / <Bowyer>
@@ -3424,10 +3424,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 36.6, 31.0, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(12232),	-- Recipe: Carrion Surprise
-						i(12239),	-- Recipe: Dragonbreath Chili
-						i(20075),	-- Recipe: Heavy Crocolisk Stew
-						i(12228),	-- Recipe: Roast Raptor
+						i(12232),	-- Recipe: Carrion Surprise (RECIPE!)
+						i(12239),	-- Recipe: Dragonbreath Chili (RECIPE!)
+						i(20075),	-- Recipe: Heavy Crocolisk Stew (RECIPE!)
+						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
 				n(4890, {	-- Piter Verance <Weaponsmith & Armorer>

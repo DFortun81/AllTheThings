@@ -871,8 +871,8 @@ for i,o in ipairs({
 	i(16060),	-- Common White Shirt
 }) do table.insert(ANDRA_ZYANDREL_GROUPS, o); end
 for i,o in ipairs({
-	i(21219),	-- Recipe: Sagefish Delight
-	i(21099),	-- Recipe: Smoked Sagefish
+	i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+	i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 }) do table.insert(QUELIS_GROUPS, o); end
 for i,o in ipairs({
 	i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)

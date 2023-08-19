@@ -2236,14 +2236,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					["timeline"] = { ADDED_2_3_0 },
 				}),
 				-- #if BEFORE CATA
-				i(17201),	-- Recipe: Egg Nog / Recipe: Winter Veil Egg Nog [CATA+]
+				i(17201),	-- Recipe: Egg Nog / Recipe: Winter Veil Egg Nog [CATA+] (RECIPE!)
 				-- #endif
-				i(17200),	-- Recipe: Gingerbread Cookie
+				i(17200),	-- Recipe: Gingerbread Cookie (RECIPE!)
 				i(34413, {	-- Recipe: Hot Apple Cider
 					["timeline"] = { "added 2.3.0.7501" },
 				}),
 				-- #if AFTER CATA
-				i(17201),	-- Recipe: Winter Veil Egg Nog [CATA+] / Recipe: Egg Nog
+				i(17201),	-- Recipe: Winter Veil Egg Nog [CATA+] / Recipe: Egg Nog (RECIPE!)
 				-- #endif
 				i(188680, {	-- Winter Veil Chorus Book (TOY!)
 					["timeline"] = { ADDED_9_1_5 },

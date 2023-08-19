@@ -1509,6 +1509,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 
 -- Add the items that aren't marked with a phase.
 appendGroups({
-	i(21219),	-- Recipe: Sagefish Delight
-	i(21099),	-- Recipe: Smoked Sagefish
+	i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+	i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 }, COOKIE_GROUPS);

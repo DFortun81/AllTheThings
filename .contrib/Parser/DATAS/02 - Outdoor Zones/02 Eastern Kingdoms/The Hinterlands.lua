@@ -1900,8 +1900,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 79.2, 79.0, THE_HINTERLANDS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(2688, {	-- Ruppo Zipcoil <Engineering Supplies>
@@ -1916,7 +1916,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 14.4, 42.3, THE_HINTERLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(18046),	-- Recipe: Tender Wolf Steak
+						i(18046),	-- Recipe: Tender Wolf Steak (RECIPE!)
 					},
 				}),
 			}),

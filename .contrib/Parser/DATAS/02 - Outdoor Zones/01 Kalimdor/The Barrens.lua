@@ -1010,7 +1010,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(5478),	-- Dig Rat Stew
-						i(5487, {	-- Recipe: Dig Rat Stew
+						i(5487, {	-- Recipe: Dig Rat Stew (RECIPE!)
 							["timeline"] = { "removed 4.3.0" },
 						}),
 					},
@@ -3949,8 +3949,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 62.8, 38.2, THE_BARRENS },
 					-- #endif
 					["groups"] = {
-						i(6330),	-- Recipe: Bristle Whisker Catfish
-						i(6368),	-- Recipe: Rainbow Fin Albacore
+						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 					},
 				}),
 				n(3658, {	-- Lizzarik <Weapon Dealer>
@@ -4050,8 +4050,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(3482, {	-- Tari'qa <Trade Supplies>
@@ -4062,8 +4062,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(5488),	-- Recipe: Crispy Lizard Tail
-						i(5486),	-- Recipe: Strider Stew
+						i(5488),	-- Recipe: Crispy Lizard Tail (RECIPE!)
+						i(5486),	-- Recipe: Strider Stew (RECIPE!)
 					},
 				}),
 				n(3488, {	-- Uthrok <Bowyer & Gunsmith>
@@ -4175,7 +4175,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(3735),	-- Recipe: Hot Lion Chops
+						i(3735),	-- Recipe: Hot Lion Chops (RECIPE!)
 					},
 				}),
 			}),
@@ -4237,7 +4237,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(6663, {	-- Recipe: Elixir of Giant Growth (RECIPE!)
 					["description"] = "Can drop from any mob in the Barrens.",
 				}),
-				i(6661, {	-- Recipe: Savory Deviate Delight
+				i(6661, {	-- Recipe: Savory Deviate Delight (RECIPE!)
 					["description"] = "Can drop from any mob in the Barrens.",
 				}),
 			}),

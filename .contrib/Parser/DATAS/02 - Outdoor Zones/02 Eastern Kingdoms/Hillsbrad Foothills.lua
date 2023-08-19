@@ -567,7 +567,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(3754, {	-- Shepherd's Gloves
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(3736, {	-- Recipe: Tasty Lion Steak
+						i(3736, {	-- Recipe: Tasty Lion Steak (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },	-- Moved to Trainers
 						}),
 						-- #if BEFORE 4.0.3
@@ -1025,7 +1025,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #if BEFORE 4.0.3
 						-- Recipe is not unobtainable, sold by Zargh in Nothern Barrens
-						i(3735),	-- Recipe: Hot Lion Chops
+						i(3735),	-- Recipe: Hot Lion Chops (RECIPE!)
 						-- #endif
 					},
 				}),
@@ -1850,7 +1850,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["lvl"] = 28,
 					["groups"] = {
-						i(3737, {	-- Recipe: Soothing Turtle Bisque
+						i(3737, {	-- Recipe: Soothing Turtle Bisque (RECIPE!)
 							["timeline"] = { "removed 4.0.3.2000" },
 						}),
 						i(3729),	-- Soothing Turtle Bisque
@@ -1870,7 +1870,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["lvl"] = 28,
 					["groups"] = {
-						i(3737, {	-- Recipe: Soothing Turtle Bisque
+						i(3737, {	-- Recipe: Soothing Turtle Bisque (RECIPE!)
 							["timeline"] = { "removed 4.0.3.2000" },
 						}),
 						i(3729),	-- Soothing Turtle Bisque
@@ -2333,7 +2333,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						-- #if BEFORE 4.0.3
-						i(3734),	-- Recipe: Big Bear Steak
+						i(3734),	-- Recipe: Big Bear Steak (RECIPE!)
 						{
 							["itemID"] = 3499,	-- Burnished Gold Key
 							["coord"] = { 79.6, 40.6, HILLSBRAD_FOOTHILLS },
@@ -2824,9 +2824,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6330),	-- Recipe: Bristle Whisker Catfish
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(2698, {	-- George Candarte <Leatherworking Supplies>
@@ -2888,9 +2888,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6330),	-- Recipe: Bristle Whisker Catfish
-						i(6369),	-- Recipe: Rockscale Cod
-						i(17062),	-- Recipe: Mithril Head Trout
+						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
 					},
 				}),
 				-- #endif
@@ -2949,8 +2949,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(21219),	-- Recipe: Sagefish Deligh
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 						-- #endif
 					},
 				}),

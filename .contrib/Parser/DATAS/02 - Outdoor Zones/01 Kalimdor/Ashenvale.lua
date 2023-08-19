@@ -3270,10 +3270,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(3734, {	-- Recipe: Big Bear Steak
+						i(3734, {	-- Recipe: Big Bear Steak (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(5489, {	-- Recipe: Lean Venison
+						i(5489, {	-- Recipe: Lean Venison (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
@@ -3286,8 +3286,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(17062),	-- Recipe: Mithril Head Trout
-						i(6369),	-- Recipe: Rockscale Cod
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
 					},
 				}),
 			}),

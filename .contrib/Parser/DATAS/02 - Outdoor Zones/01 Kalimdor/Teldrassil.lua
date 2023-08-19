@@ -914,7 +914,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = { { "i", 5465, 7 } },	-- Small Spider Leg
 					["groups"] = {
-						i(5482, {	-- Recipe: Kaldorei Spider Kabob
+						i(5482, {	-- Recipe: Kaldorei Spider Kabob (RECIPE!)
 							["timeline"] = { "removed 4.0.3.2000" },
 						}),
 					},
@@ -1788,8 +1788,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6368),	-- Recipe: Rainbow Fin Albacore
-						i(6326),	-- Recipe: Slitherskin Mackerel
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+						i(6326),	-- Recipe: Slitherskin Mackerel (RECIPE!)
 					},
 				}),
 				n(4265, {	-- Nyoma <Cooking Supplies>
@@ -1800,10 +1800,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6325),	-- Recipe: Brilliant Smallfish
-						i(6328),	-- Recipe: Longjaw Mud Snapper
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
+						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 			}),

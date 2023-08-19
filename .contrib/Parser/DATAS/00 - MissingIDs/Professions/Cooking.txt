@@ -184,97 +184,10 @@ r(338117),	-- Seared Cutlets
 Missing in CookingItemDB.lua
 
 0.5.3.3368
-r(2538),	-- Charred Wolf Meat
-r(2539),	-- Spiced Wolf Meat
-r(2540),	-- Roasted Boar Meat
-r(2541),	-- Coyote Steak
-r(2542),	-- Goretusk Liver Pie
-r(2543),	-- Westfall Stew
-r(2544),	-- Crab Cake
-r(2545),	-- Cooked Crab Claw
-r(2546),	-- Dry Pork Ribs
-r(2547),	-- Redridge Goulash
-r(2548),	-- Succulent Pork Ribs
-r(2549),	-- Seasoned Wolf Kabob
-r(2550),	-- Cooking
-r(2795),	-- Beer Basted Boar Ribs
-r(3102),	-- Cooking
-r(3370),	-- Crocolisk Steak
-r(3371),	-- Blood Sausage
-r(3372),	-- Murloc Fin Soup
-r(3373),	-- Crocolisk Gumbo
-r(3376),	-- Curiously Tasty Omelet
-r(3377),	-- Gooey Spider Cake
-r(3397),	-- Big Bear Steak
-r(3398),	-- Hot Lion Chops
-r(3399),	-- Tasty Lion Steak
-r(3400),	-- Soothing Turtle Bisque
-r(3413),	-- Cooking
-r(4094),	-- Barbecued Buzzard Wing
-r(6412),	-- Kaldorei Spider Kabob
-r(6413),	-- Scorpid Surprise
-r(6414),	-- Roasted Kodo Meat
-r(6415),	-- Fillet of Frenzy
-r(6416),	-- Strider Stew
-r(6417),	-- Dig Rat Stew
-r(6418),	-- Crispy Lizard Tail
-r(6419),	-- Lean Venison
-r(6499),	-- Boiled Clams
-r(6500),	-- Goblin Deviled Clams
-r(6501),	-- Clam Chowder
-r(7213),	-- Giant Clam Scorcho
-r(7751),	-- Brilliant Smallfish
-r(7752),	-- Slitherskin Mackerel
-r(7753),	-- Longjaw Mud Snapper
-r(7754),	-- Loch Frenzy Delight
-r(7755),	-- Bristle Whisker Catfish
-r(7827),	-- Rainbow Fin Albacore
-r(7828),	-- Rockscale Cod
-0.5.5.3494
-r(8238),	-- Savory Deviate Delight
-r(8604),	-- Herb Baked Egg
-r(8607),	-- Smoked Bear Meat
+r(44977, 6417),	-- Dig Rat Stew (Wrath BoP Version) (3.1.0)
+r(78342, 6417),	-- Dig Rat Stew [ADDED 4.3.0]
 0.6.0.3592
-r(9513),	-- Thistle Tea
-1.0.0.3980
-r(818),	-- Cooking Fire \\ Basic Campfire
-r(15853),	-- Lean Wolf Steak
-r(15855),	-- Roast Raptor
-r(15856),	-- Hot Wolf Ribs
-r(15861),	-- Jungle Stew
-r(15863),	-- Carrion Surprise
-r(15865),	-- Mystery Stew
-r(15906),	-- Dragonbreath Chili
-r(15910),	-- Heavy Kodo Stew
-r(15915),	-- Spiced Chili Crab
-r(15933),	-- Monster Omelet
-r(15935),	-- Crispy Bat Wing
-r(18238),	-- Spotted Yellowtail
-r(18239),	-- Cooked Glossy Mightfish
-r(18240),	-- Grilled Squid
-r(18241),	-- Filet of Redgill
-r(18242),	-- Hot Smoked Bass
-r(18243),	-- Nightfin Soup
-r(18244),	-- Poached Sunscale Salmon
-r(18245),	-- Lobster Stew
-r(18246),	-- Mightfish Steak
-r(18247),	-- Baked Salmon
-r(18260),	-- Cooking
-1.1.2.4125
-r(20626),	-- Undermine Clam Chowder
-r(20916),	-- Mithril Head Trout \\ Mithril Headed Trout
-1.13.0.28211
-r(21143),	-- Gingerbread Cookie
-r(21144),	-- Winter Veil Egg Nog \\ Egg Nog
-r(21175),	-- Spider Sausage
-r(22480),	-- Tender Wolf Steak
-r(22761),	-- Runn Tum Tuber Surprise
-r(24418),	-- Heavy Crocolisk Stew
-r(24801),	-- Smoked Desert Dumplings
-r(25659),	-- Dirge's Kickin' Chimaerok Chops
-r(25704),	-- Smoked Sagefish
-r(25954),	-- Sagefish Delight
-r(30047),	-- Crystal Throat Lozenge
+r(18160, 9513),	-- Thistle Tea (Vendor Version) [ADDED 4.0.3]
 2.0.0.6080
 r(28267),	-- Crunchy Spider Surprise
 r(33276),	-- Lynx Steak

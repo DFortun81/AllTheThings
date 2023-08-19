@@ -618,8 +618,8 @@ root(ROOTS.Zones, {
 					n(45286, {	-- KTC Train-a-Tron Deluxe <Professions Trainer & Vendor>
 						["coord"] = { 45.7, 65.8, THE_LOST_ISLES },
 						["groups"] = {
-							i(21219),	-- Recipe: Sagefish Delight
-							i(21099),	-- Recipe: Smoked Sagefish
+							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 						},
 					}),
 					n(36430, {	-- Sally "Salvager" Sandscrew <Slightly Damp Salvage>

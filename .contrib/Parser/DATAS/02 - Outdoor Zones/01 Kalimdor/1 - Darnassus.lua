@@ -1135,8 +1135,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sym"] = {{"sub", "common_recipes_vendor", 49701}},	-- Jon Casper <Sous Chef>
 					-- #endif
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(4232, {	-- Glorandiir <Axe Merchant>

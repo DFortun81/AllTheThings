@@ -2650,7 +2650,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(35566, {	-- Recipe: Juicy Bear Burger
 							["timeline"] = { "added 2.4.0.7897", "removed 4.1.0" },	-- Moved to Trainers
 						}),
-						i(16110),	-- Recipe: Monster Omelet
+						i(16110),	-- Recipe: Monster Omelet (RECIPE!)
 					},
 				}),
 				n(48577, {	-- Ciana <Weaponsmith>
@@ -2666,8 +2666,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 43.8, 29.8, FELWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(11555, {	-- Gorn One Eye
@@ -2721,7 +2721,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(35566, {	-- Recipe: Juicy Bear Burger
 							["timeline"] = { "added 2.4.0.7897", "removed 4.1.0" },	-- Moved to Trainers
 						}),
-						i(16110),	-- Recipe: Monster Omelet
+						i(16110),	-- Recipe: Monster Omelet (RECIPE!)
 					},
 				}),
 				n(14522, {	-- Ur'dan

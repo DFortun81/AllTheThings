@@ -1701,8 +1701,8 @@ root(ROOTS.Zones, {
 							["coord"] = { 22.6, 66.0, GRIZZLY_HILLS },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								i(21219),	-- Recipe: Sagefish Delight
-								i(21099),	-- Recipe: Smoked Sagefish
+								i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+								i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 							},
 						}),
 						n(27730, {	-- Purkom <Venture Coin Vendor>

@@ -6447,9 +6447,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6325),	-- Recipe: Brilliant Smallfish
-						i(6330),	-- Recipe: Bristle Whisker Catfish
-						i(6368),	-- Recipe: Rainbow Fin Albacore
+						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
+						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 						i(6365),	-- Strong Fishing Pole
 					},
 				}),
@@ -6534,8 +6534,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 7.3.5.25716" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(1304, {	-- Darian Singh <Fireworks Vendor>
@@ -6673,8 +6673,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(164942, {	-- Evelyn Thorn <Warlock Trainer>
@@ -7185,19 +7185,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(2889),	-- Recipe: Beer Basted Boar Ribs
-						i(3679),	-- Recipe: Blood Sausage
-						i(2698),	-- Recipe: Cooked Crab Claw
-						i(3681),	-- Recipe: Crocolisk Gumbo
-						i(3678),	-- Recipe: Crocolisk Steak
-						i(3682),	-- Recipe: Curiously Tasty Omelet
-						i(3683),	-- Recipe: Gooey Spider Cake
-						i(2697),	-- Recipe: Goretusk Liver Pie
-						i(3680),	-- Recipe: Murloc Fin Soup
-						i(2699),	-- Recipe: Redridge Goulash
-						i(2701),	-- Recipe: Seasoned Wolf Kabob
-						i(2700),	-- Recipe: Succulent Pork Ribs
-						i(728),		-- Recipe: Westfall Stew
+						i(2889),	-- Recipe: Beer Basted Boar Ribs (RECIPE!)
+						i(3679),	-- Recipe: Blood Sausage (RECIPE!)
+						i(2698),	-- Recipe: Cooked Crab Claw (RECIPE!)
+						i(3681),	-- Recipe: Crocolisk Gumbo (RECIPE!)
+						i(3678),	-- Recipe: Crocolisk Steak (RECIPE!)
+						i(3682),	-- Recipe: Curiously Tasty Omelet (RECIPE!)
+						i(3683),	-- Recipe: Gooey Spider Cake (RECIPE!)
+						i(2697),	-- Recipe: Goretusk Liver Pie (RECIPE!)
+						i(3680),	-- Recipe: Murloc Fin Soup (RECIPE!)
+						i(2699),	-- Recipe: Redridge Goulash (RECIPE!)
+						i(2701),	-- Recipe: Seasoned Wolf Kabob (RECIPE!)
+						i(2700),	-- Recipe: Succulent Pork Ribs (RECIPE!)
+						i(728),		-- Recipe: Westfall Stew (RECIPE!)
 					},
 				}),
 				applyclassicphase(WRATH_PHASE_FOUR, n(34084, {	-- Knight-Lieutenant Moonstrike <Northrend Armor Quartermaster> // Original S8 Vendor // Furious Gladiator: Season 8 Honor Gear

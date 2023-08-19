@@ -1674,10 +1674,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 81.0, 30.8, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6325),	-- Recipe: Brilliant Smallfish
-						i(6328),	-- Recipe: Longjaw Mud Snapper
-						i(17062),	-- Recipe: Mithril Head Trout
-						i(6369),	-- Recipe: Rockscale Cod
+						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
+						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
 					},
 				}),
 				n(4557, {	-- Louis Warren
@@ -1830,10 +1830,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6330),	-- Recipe: Bristle Whisker Catfish
-						i(6368),	-- Recipe: Rainbow Fin Albacore
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(4597, {	-- Samuel Van Brunt <Blacksmithing Supplies>

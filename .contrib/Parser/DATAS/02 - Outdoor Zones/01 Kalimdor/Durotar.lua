@@ -3293,7 +3293,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(5483),	-- Recipe: Scorpid Surprise
+						i(5483),	-- Recipe: Scorpid Surprise (RECIPE!)
 					},
 				}),
 				n(113615, {	-- Ravika <Darkspear Quartermaster> Legion Version
@@ -3327,8 +3327,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6368),	-- Recipe: Rainbow Fin Albacore
-						i(6326),	-- Recipe: Slitherskin Mackerel
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+						i(6326),	-- Recipe: Slitherskin Mackerel (RECIPE!)
 					},
 				}),
 				n(7952, {	-- Zjolnir <Raptor Handler>

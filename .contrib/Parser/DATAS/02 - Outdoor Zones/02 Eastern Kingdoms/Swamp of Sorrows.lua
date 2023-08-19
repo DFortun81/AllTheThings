@@ -1435,8 +1435,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(11223, {	-- Formula: Enchant Bracer - Dodge (RECIPE!) / Formula: Enchant Bracer - Deflection
 							["isLimited"] = true,
 						}),
-						i(12232),	-- Recipe: Carrion Surprise
-						i(16111),	-- Recipe: Spiced Chili Crab
+						i(12232),	-- Recipe: Carrion Surprise (RECIPE!)
+						i(16111),	-- Recipe: Spiced Chili Crab (RECIPE!)
 					},
 				}),
 				n(8176, {	-- Gharash <Blacksmithing Supplies>

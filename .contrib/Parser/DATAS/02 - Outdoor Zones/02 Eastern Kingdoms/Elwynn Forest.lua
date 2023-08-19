@@ -2182,7 +2182,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 8.1.0.28724" },
 					["lvl"] = 110,
 					["groups"] = {
-						i(3678),	-- Recipe: Crocolisk Steak
+						i(3678),	-- Recipe: Crocolisk Steak (RECIPE!)
 						i(7997),	-- Red Defias Mask
 						i(2057, {	-- Pitted Defias Shortsword
 							["timeline"] = { "removed 4.0.3", "added 8.1.0.28724" },
@@ -2312,8 +2312,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(6270, {	-- Pattern: Blue Linen Vest
 							["isLimited"] = true,
 						}),
-						i(6325),	-- Recipe: Brilliant Smallfish
-						i(6328),	-- Recipe: Longjaw Mud Snapper
+						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
+						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
 					},
 				}),
 			}),

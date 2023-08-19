@@ -2076,7 +2076,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(12226),	-- Recipe: Crispy Bat Wing
+						i(12226),	-- Recipe: Crispy Bat Wing (RECIPE!)
 					},
 				}),
 				n(11057, {	-- Apothecary Dithers
@@ -2175,8 +2175,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 65.8, 59.6, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6325),	-- Recipe: Brilliant Smallfish
-						i(6326),	-- Recipe: Slitherskin Mackerel
+						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
+						i(6326),	-- Recipe: Slitherskin Mackerel (RECIPE!)
 					},
 				}),
 				n(12943, {	-- Werg Thickblade <Leatherworking Supplies>

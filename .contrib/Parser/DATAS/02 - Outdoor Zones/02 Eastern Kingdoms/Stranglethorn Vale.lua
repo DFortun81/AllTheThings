@@ -2482,8 +2482,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(12231),	-- Recipe: Jungle Stew
-						i(12228),	-- Recipe: Roast Raptor
+						i(12231),	-- Recipe: Jungle Stew (RECIPE!)
+						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
 				n(2672, {	-- Cowardly Crosby <Tailoring Supplies>
@@ -2598,14 +2598,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 28.2, 74.4, STRANGLETHORN_VALE },
 					-- #endif
 					["groups"] = {
-						i(13940),	-- Recipe: Cooked Glossy Mightfish
-						i(13941),	-- Recipe: Filet of Redgill
-						i(6039),	-- Recipe: Giant Clam Scorcho
-						i(13943),	-- Recipe: Hot Smoked Bass
-						i(17062),	-- Recipe: Mithril Head Trout
-						i(6369),	-- Recipe: Rockscale Cod
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(13940),	-- Recipe: Cooked Glossy Mightfish (RECIPE!)
+						i(13941),	-- Recipe: Filet of Redgill (RECIPE!)
+						i(6039),	-- Recipe: Giant Clam Scorcho (RECIPE!)
+						i(13943),	-- Recipe: Hot Smoked Bass (RECIPE!)
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(2840, {	-- Kizz Bluntstrike <Macecrafter>
@@ -2675,9 +2675,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(21943, {	-- Design: Truesilver Crab
 							["isLimited"] = true,
 						}),
-						i(3682),	-- Recipe: Curiously Tasty Omelet
-						i(12231),	-- Recipe: Jungle Stew
-						i(12228),	-- Recipe: Roast Raptor
+						i(3682),	-- Recipe: Curiously Tasty Omelet (RECIPE!)
+						i(12231),	-- Recipe: Jungle Stew (RECIPE!)
+						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
 				n(2626, {	-- Old Man Heming <Fisherman>
@@ -2716,7 +2716,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(16111),	-- Recipe: Spiced Chili Crab
+						i(16111),	-- Recipe: Spiced Chili Crab (RECIPE!)
 					},
 				}),
 				n(1146, {	-- Vharr <Superior Weaponsmith>

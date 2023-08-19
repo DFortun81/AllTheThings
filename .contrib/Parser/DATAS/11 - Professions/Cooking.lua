@@ -2923,11 +2923,11 @@ profession(COOKING, {
 			un(REMOVED_FROM_GAME, i(16072, {	-- Expert Cookbook
 				["spellID"] = 0,	-- replacing the spellID that is automatically pulled from the itemDB, which shows this item as "unknown" when it's not collectible
 			})),
-			un(REMOVED_FROM_GAME, i(5485)),		-- Recipe: Fillet of Frenzy
-			un(REMOVED_FROM_GAME, i(13939)),	-- Recipe: Spotted Yellowtail
-			un(REMOVED_FROM_GAME, i(13942)),	-- Recipe: Grilled Squid
-			un(REMOVED_FROM_GAME, i(13945)),	-- Recipe: Nightfin Soup
-			un(REMOVED_FROM_GAME, i(13946)),	-- Recipe: Poached Sunscale Salmon
+			un(REMOVED_FROM_GAME, i(5485)),		-- Recipe: Fillet of Frenzy (RECIPE!)
+			un(REMOVED_FROM_GAME, i(13939)),	-- Recipe: Spotted Yellowtail (RECIPE!)
+			un(REMOVED_FROM_GAME, i(13942)),	-- Recipe: Grilled Squid (RECIPE!)
+			un(REMOVED_FROM_GAME, i(13945)),	-- Recipe: Nightfin Soup (RECIPE!)
+			un(REMOVED_FROM_GAME, i(13946)),	-- Recipe: Poached Sunscale Salmon (RECIPE!)
 		}),
 	}),
 	-- #endif

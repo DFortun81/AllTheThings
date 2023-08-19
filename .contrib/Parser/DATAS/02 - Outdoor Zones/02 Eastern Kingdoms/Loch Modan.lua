@@ -542,7 +542,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								1693,	-- Loch Crocolisk
 							},
 						}),
-						i(3678),	-- Recipe: Crocolisk Steak
+						i(3678),	-- Recipe: Crocolisk Steak (RECIPE!)
 						i(2240, {	-- Rugged Cape
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -1282,7 +1282,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 7,
 					["groups"] = {
 						i(3220),	-- Blood Sausage
-						i(3679),	-- Recipe: Blood Sausage
+						i(3679),	-- Recipe: Blood Sausage (RECIPE!)
 					},
 				}),
 				q(26860, {	-- Thelsamar Blood Sausages
@@ -1291,7 +1291,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(3679),	-- Recipe: Blood Sausage
+						i(3679),	-- Recipe: Blood Sausage (RECIPE!)
 					},
 				}),
 				q(27025, {	-- Thistle While You Work
@@ -1694,7 +1694,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 35.6, 49.0, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6892),	-- Recipe: Smoked Bear Meat
+						i(6892),	-- Recipe: Smoked Bear Meat (RECIPE!)
 					},
 				}),
 				n(954, {	-- Kat Sampson <Leather Armor Merchant>
@@ -1713,9 +1713,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 40.4, 39.4, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6325),	-- Recipe: Brilliant Smallfish
-						i(6329),	-- Recipe: Loch Frenzy Delight
-						i(6328),	-- Recipe: Longjaw Mud Snapper
+						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
+						i(6329),	-- Recipe: Loch Frenzy Delight (RECIPE!)
+						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
 					},
 				}),
 				n(167, {	-- Morhan Coppertongue <Metalsmith>
@@ -1795,7 +1795,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1177,  -- Tunnel Rat Surveyor
 				}),
-				i(2700, {	-- Recipe: Succulent Pork Ribs
+				i(2700, {	-- Recipe: Succulent Pork Ribs (RECIPE!)
 					["description"] = "Can drop from any mob in the zone.",
 				}),
 				i(2281, {	-- Rodentia Flint Axe

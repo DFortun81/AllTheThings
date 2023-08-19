@@ -116,7 +116,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					},
 					["lvl"] = 60,
 					["groups"] = {
-						i(21025),	-- Recipe: Dirge's Kickin' Chimaerok Chops
+						i(21025),	-- Recipe: Dirge's Kickin' Chimaerok Chops (RECIPE!)
 					},
 				}),
 				q(8733, {	-- Eranikus, Tyrant of the Dream

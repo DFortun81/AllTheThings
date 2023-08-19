@@ -2232,8 +2232,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 63.4, 68.6, SHATTRATH_CITY },
 						["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
 						["groups"] = {
-							i(21219),	-- Recipe: Sagefish Delight
-							i(21099),	-- Recipe: Smoked Sagefish
+							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 						},
 					}),
 					n(19049, {	-- Karokka  <Alchemy Trainer>

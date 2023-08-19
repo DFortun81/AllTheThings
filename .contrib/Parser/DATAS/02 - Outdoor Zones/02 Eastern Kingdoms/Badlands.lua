@@ -371,7 +371,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 33,
 					["groups"] = {
 						i(4457),	-- Barbecued Buzzard Wing
-						i(4609),	-- Recipe: Barbecued Buzzard Wing (available from a vendor still)
+						i(4609),	-- Recipe: Barbecued Buzzard Wing (available from a vendor still) (RECIPE!)
 					},
 				}),
 				q(27881, {	-- Bloodwatcher Point
@@ -1872,9 +1872,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 65.0, 38.8, BADLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
-						i(16767, {	-- Recipe: Undermine Clam Chowder
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+						i(16767, {	-- Recipe: Undermine Clam Chowder (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

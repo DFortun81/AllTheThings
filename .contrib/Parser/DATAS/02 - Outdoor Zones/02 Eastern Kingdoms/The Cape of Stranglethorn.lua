@@ -2018,14 +2018,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(2664, {	-- Kelsey Yance <Cook>
 					["coord"] = { 42.8, 69.0, THE_CAPE_OF_STRANGLETHORN },
 					["groups"] = {
-						i(13940),	-- Recipe: Cooked Glossy Mightfish
-						i(13941),	-- Recipe: Filet of Redgill
-						i(6039),	-- Recipe: Giant Clam Scorcho
-						i(13943),	-- Recipe: Hot Smoked Bass
-						i(17062),	-- Recipe: Mithril Head Trout
-						i(6369),	-- Recipe: Rockscale Cod
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(13940),	-- Recipe: Cooked Glossy Mightfish (RECIPE!)
+						i(13941),	-- Recipe: Filet of Redgill (RECIPE!)
+						i(6039),	-- Recipe: Giant Clam Scorcho (RECIPE!)
+						i(13943),	-- Recipe: Hot Smoked Bass (RECIPE!)
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(2840, {	-- Kizz Bluntstrike <Macecrafter>
@@ -2054,9 +2054,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 42.7, 72.7, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { "added 4.2.0.14241" },
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
-						i(16767, {	-- Recipe: Undermine Clam Chowder
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+						i(16767, {	-- Recipe: Undermine Clam Chowder (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

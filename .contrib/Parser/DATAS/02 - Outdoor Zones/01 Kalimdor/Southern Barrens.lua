@@ -536,7 +536,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(5478),	-- Dig Rat Stew
-						i(5487, {	-- Recipe: Dig Rat Stew
+						i(5487, {	-- Recipe: Dig Rat Stew (RECIPE!)
 							["timeline"] = { "removed 4.3.0" },
 						}),
 					},
@@ -2032,7 +2032,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(6663, {	-- Recipe: Elixir of Giant Growth (RECIPE!)
 					["description"] = "Can drop from any mob in the Barrens.",
 				}),
-				i(6661, {	-- Recipe: Savory Deviate Delight
+				i(6661, {	-- Recipe: Savory Deviate Delight (RECIPE!)
 					["description"] = "Can drop from any mob in the Barrens.",
 				}),
 			}),

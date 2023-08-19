@@ -2938,8 +2938,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 58.1, 83.6, THE_JADE_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							i(21219),	-- Recipe: Sagefish Delight
-							i(21099),	-- Recipe: Smoked Sagefish
+							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 						},
 					}),
 					n(56406, {	-- Rivett Clutchpop

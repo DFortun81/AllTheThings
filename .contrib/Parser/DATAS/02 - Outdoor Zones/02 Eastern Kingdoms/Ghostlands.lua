@@ -1322,8 +1322,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 -- #if AFTER WRATH
 -- Add the 2 recipes that aren't TBC Phase One, they get added to his loot table in Wrath.
 for i,o in ipairs({
-	i(21219),	-- Recipe: Sagefish Delight
-	i(21099),	-- Recipe: Smoked Sagefish
+	i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+	i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 }) do table.insert(MASTER_CHEF_GROUPS, o); end
 -- #endif
 

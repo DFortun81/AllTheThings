@@ -4883,8 +4883,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 7.3.5.25692" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				-- #if NOT ANYCLASSIC
@@ -5347,8 +5347,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(3331, {	-- Kareth
@@ -6674,9 +6674,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(17062),	-- Recipe: Mithril Head Trout
-						i(6368),	-- Recipe: Rainbow Fin Albacore
-						i(6369),	-- Recipe: Rockscale Cod
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
 						i(6365),	-- Strong Fishing Pole
 					},
 				}),
@@ -6877,8 +6877,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(3356, {	-- Sumi <Blacksmithing Supplies>
@@ -7414,8 +7414,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(3405, {	-- Zeal'aya

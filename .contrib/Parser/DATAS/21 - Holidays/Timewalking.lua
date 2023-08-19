@@ -2372,15 +2372,15 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 						["cost"] = { { "c", 1166, 1500 } },	-- 1500x Timewarped Badge
 						["timeline"] = { "timewalking 9.1" },
 					}),
-					i(5489, {	-- Recipe: Lean Venison
+					i(5489, {	-- Recipe: Lean Venison (RECIPE!)
 						["cost"] = { { "c", 1166, 1500 } },	-- 1500x Timewarped Badge
 						["timeline"] = { "timewalking 9.1" },
 					}),
-					i(3734, {	-- Recipe: Big Bear Steak
+					i(3734, {	-- Recipe: Big Bear Steak (RECIPE!)
 						["cost"] = { { "c", 1166, 1500 } },	-- 1500x Timewarped Badge
 						["timeline"] = { "timewalking 9.1" },
 					}),
-					i(12227, {	-- Recipe: Lean Wolf Steak
+					i(12227, {	-- Recipe: Lean Wolf Steak (RECIPE!)
 						["cost"] = { { "c", 1166, 1500 } },	-- 1500x Timewarped Badge
 						["timeline"] = { "timewalking 9.1" },
 					}),

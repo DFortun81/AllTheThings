@@ -880,8 +880,8 @@ root(ROOTS.Zones, m(PANDARIA, {
 				n(64084, {	-- Jojo <Cooking Supplies>
 					["coord"] = { 63.0, 26.8, 393 },
 					["g"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(64052, {	-- Raishen the Needle <Tailoring Supplies>

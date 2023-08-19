@@ -1053,10 +1053,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6330),	-- Recipe: Bristle Whisker Catfish
-						i(6328),	-- Recipe: Longjaw Mud Snapper
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(3012, {	-- Nata Dawnstrider <Enchanting Supplies>
@@ -1139,8 +1139,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.8, 47.0, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6325),	-- Recipe: Brilliant Smallfish
-						i(6330),	-- Recipe: Bristle Whisker Catfish
+						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
+						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 					},
 				}),
 				n(8363, {	-- Shadi Mistrunner <Trade Supplies>

@@ -1897,7 +1897,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						}),
 						-- #endif
-						i(12228),	-- Recipe: Roast Raptor
+						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
 				n(1471, {	-- Jannos Ironwill <Superior Macecrafter>
@@ -1945,8 +1945,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(11163, {	-- Formula: Enchant Bracer - Lesser Dodge / CLASSIC: Formula: Enchant Bracer - Lesser Deflection (RECIPE!)
 							["timeline"] = { "removed 4.1.0" },	-- Learned by trainer
 						}),
-						i(3682),	-- Recipe: Curiously Tasty Omelet
-						i(12228),	-- Recipe: Roast Raptor
+						i(3682),	-- Recipe: Curiously Tasty Omelet (RECIPE!)
+						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
 				n(9555, {	-- Mu'uta <Bowyer>
@@ -1970,7 +1970,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(4609),	-- Recipe: Barbecued Buzzard Wing
+						i(4609),	-- Recipe: Barbecued Buzzard Wing (RECIPE!)
 					},
 				}),
 				n(2819, {	-- Tunkk <Leatherworking Supplies>

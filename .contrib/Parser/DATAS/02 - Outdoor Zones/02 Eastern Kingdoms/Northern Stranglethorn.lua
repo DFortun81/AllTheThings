@@ -2530,8 +2530,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(12231),	-- Recipe: Jungle Stew
-						i(12228),	-- Recipe: Roast Raptor
+						i(12231),	-- Recipe: Jungle Stew (RECIPE!)
+						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
 				n(2687, {	-- Gnaz Blunderflame <Engineering Supplies>
@@ -2584,9 +2584,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(21943, {	-- Design: Truesilver Crab
 							["isLimited"] = true,
 						}),
-						i(3682),	-- Recipe: Curiously Tasty Omelet
-						i(12231),	-- Recipe: Jungle Stew
-						i(12228),	-- Recipe: Roast Raptor
+						i(3682),	-- Recipe: Curiously Tasty Omelet (RECIPE!)
+						i(12231),	-- Recipe: Jungle Stew (RECIPE!)
+						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
 				n(1149, {	-- Uthok <General Supplies>
@@ -2597,7 +2597,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(16111),	-- Recipe: Spiced Chili Crab
+						i(16111),	-- Recipe: Spiced Chili Crab (RECIPE!)
 					},
 				}),
 				n(1146, {	-- Vharr <Superior Weaponsmith>

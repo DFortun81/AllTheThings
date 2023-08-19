@@ -1690,8 +1690,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6325),	-- Recipe: Brilliant Smallfish
-						i(6328),	-- Recipe: Longjaw Mud Snapper
+						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
+						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
 					},
 				}),
 				n(3081, {	-- Wunna Darkmane <Trade Goods>
@@ -1702,7 +1702,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(5484),	-- Recipe: Roasted Kodo Meat
+						i(5484),	-- Recipe: Roasted Kodo Meat (RECIPE!)
 					},
 				}),
 			}),

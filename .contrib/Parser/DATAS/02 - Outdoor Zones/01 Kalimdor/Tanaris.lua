@@ -5176,14 +5176,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.6, 29.0, TANARIS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
-						i(18046),	-- Recipe: Tender Wolf Steak
+						i(18046),	-- Recipe: Tender Wolf Steak (RECIPE!)
 					},
 				}),
 				n(8125, {	-- Dirge Quikcleave <Butcher>
 					["coord"] = { 52.6, 28.0, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(18046),	-- Recipe: Tender Wolf Steak
+						i(18046),	-- Recipe: Tender Wolf Steak (RECIPE!)
 					},
 				}),
 				-- #if NOT ANYCLASSIC
@@ -5199,16 +5199,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 66.6, 22.1, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(13939, {	-- Recipe: Spotted Yellowtail
+						i(13939, {	-- Recipe: Spotted Yellowtail (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },	-- Moved to Trainers
 						}),
-						i(13942, {	-- Recipe: Grilled Squid
+						i(13942, {	-- Recipe: Grilled Squid (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },	-- Moved to Trainers
 						}),
-						i(13945, {	-- Recipe: Nightfin Soup
+						i(13945, {	-- Recipe: Nightfin Soup (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },	-- Moved to Trainers
 						}),
-						i(13946, {	-- Recipe: Poached Sunscale Salmon
+						i(13946, {	-- Recipe: Poached Sunscale Salmon (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },	-- Moved to Trainers
 						}),
 					},
@@ -5241,7 +5241,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.6, 27.0, TANARIS },
 					["timeline"] = { "added 7.0.3.22396" },
 					["groups"] = {
-						i(18046),	-- Recipe: Tender Wolf Steak
+						i(18046),	-- Recipe: Tender Wolf Steak (RECIPE!)
 					},
 				}),
 				n(7733, {	-- Innkeeper Fizzgrimble <Innkeeper>
@@ -5251,14 +5251,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.4, 27.8, TANARIS },
 					-- #endif
 					["groups"] = {
-						i(18046),	-- Recipe: Tender Wolf Steak
+						i(18046),	-- Recipe: Tender Wolf Steak (RECIPE!)
 					},
 				}),
 				n(8139, {	-- Jabbey <General Goods>
 					["coord"] = { 67.0, 22.0, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(16767, {	-- Recipe: Undermine Clam Chowder
+						i(16767, {	-- Recipe: Undermine Clam Chowder (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

@@ -213,7 +213,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(3561, {	-- Resilient Poncho
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(3681),	-- Recipe: Crocolisk Gumbo
+						i(3681),	-- Recipe: Crocolisk Gumbo (RECIPE!)
 					},
 				}),
 				q(25780, {	-- Assault on Menethil Keep
@@ -747,7 +747,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(5246, {	-- Excavation Rod
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(3682),	-- Recipe: Curiously Tasty Omelet
+						i(3682),	-- Recipe: Curiously Tasty Omelet (RECIPE!)
 					},
 				}),
 				q(634, {	-- Plea To The Alliance
@@ -1767,9 +1767,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(17062),	-- Recipe: Mithril Head Trout
-						i(6368),	-- Recipe: Rainbow Fin Albacore
-						i(6369),	-- Recipe: Rockscale Cod
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
 					},
 				}),
 				n(1460, {	-- Unger Statforth <Horse Breeder>

@@ -2256,7 +2256,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 61.2, 39.0, WINTERSPRING },
 					-- #endif
 					["groups"] = {
-						i(16110),	-- Recipe: Monster Omelet
+						i(16110),	-- Recipe: Monster Omelet (RECIPE!)
 					},
 				}),
 				n(52830, {	-- Michelle De Rum <Pet Collector>

@@ -123,7 +123,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["lvl"] = 5,
 							["groups"] = {
 								i(2888),	-- Beer Basted Boar Ribs
-								i(2889),	-- Recipe: Beer Basted Boar Ribs
+								i(2889),	-- Recipe: Beer Basted Boar Ribs (RECIPE!)
 							},
 						}),
 						q(1599, {	-- Beginnings
@@ -2576,7 +2576,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6325),	-- Recipe: Brilliant Smallfish
+						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
 					},
 				}),
 				n(1247, {	-- Innkeeper Belm <Innkeeper>

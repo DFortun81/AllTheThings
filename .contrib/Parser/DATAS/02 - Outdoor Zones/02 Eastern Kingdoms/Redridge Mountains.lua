@@ -735,7 +735,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 15,
 					["groups"] = {
 						i(1082),	-- Redridge Goulash
-						i(2699),	-- Recipe: Redridge Goulash
+						i(2699),	-- Recipe: Redridge Goulash (RECIPE!)
 					},
 				}),
 				q(26570, {	-- Render's Army
@@ -815,7 +815,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(1322, {	-- Fishliver Oil
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(3680),	-- Recipe: Murloc Fin Soup
+						i(3680),	-- Recipe: Murloc Fin Soup (RECIPE!)
 					},
 				}),
 				q(115, {	-- Shadow Magic
@@ -1526,8 +1526,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(793, {	-- Kara Adams <Shield Crafter>
@@ -1660,7 +1660,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 544,	-- Murloc Nightcrawler
 				}),
-				i(2700, {	-- Recipe: Succulent Pork Ribs
+				i(2700, {	-- Recipe: Succulent Pork Ribs (RECIPE!)
 					["description"] = "Can drop from any mob in the zone.",
 				}),
 				i(1219, {	-- Redridge Machete

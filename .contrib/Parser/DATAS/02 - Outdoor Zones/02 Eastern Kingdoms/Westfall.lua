@@ -353,7 +353,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 9,
 					["groups"] = {
 						i(724),		-- Goretusk Liver Pie
-						i(2697),	-- Recipe: Goretusk Liver Pie
+						i(2697),	-- Recipe: Goretusk Liver Pie (RECIPE!)
 					},
 				}),
 				q(26252, {	-- Heart of the Watcher
@@ -1412,10 +1412,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 36.2, 90.0, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(5528),	-- Recipe: Clam Chowder
-						i(6368),	-- Recipe: Rainbow Fin Albacore
-						i(6326),	-- Recipe: Slitherskin Mackerel
-						i(16111),	-- Recipe: Spiced Chili Crab
+						i(5528),	-- Recipe: Clam Chowder (RECIPE!)
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+						i(6326),	-- Recipe: Slitherskin Mackerel (RECIPE!)
+						i(16111),	-- Recipe: Spiced Chili Crab (RECIPE!)
 					},
 				}),
 				n(1668, {	-- William MacGregor <Bowyer>
@@ -1554,10 +1554,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				-- #if AFTER 4.0.3
-				i(2698, {	-- Recipe: Cooked Crab Claw
+				i(2698, {	-- Recipe: Cooked Crab Claw (RECIPE!)
 					["description"] = "Can drop from any mob in the zone, would recommend farming the murlocs in the north.",
 				}),
-				i(728, {	-- Recipe: Westfall Stew
+				i(728, {	-- Recipe: Westfall Stew (RECIPE!)
 					["description"] = "Can drop from any mob in the zone, would recommend farming the Riverpaw Gnolls.",
 				}),
 				-- #endif

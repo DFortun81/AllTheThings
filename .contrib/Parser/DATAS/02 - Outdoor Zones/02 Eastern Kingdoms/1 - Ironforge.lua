@@ -1440,8 +1440,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = {{"sub", "common_recipes_vendor", 49701}}, -- Jon Casper <Sous Chef>
 					-- #endif
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(5175, {	-- Gearcutter Cogspinner <Engineering Supplies>
@@ -1950,10 +1950,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 47.8, 6.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6328),	-- Recipe: Longjaw Mud Snapper
-						i(17062),	-- Recipe: Mithril Head Trout
-						i(6369),	-- Recipe: Rockscale Cod
-						i(6326),	-- Recipe: Slitherskin Mackerel
+						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
+						i(6326),	-- Recipe: Slitherskin Mackerel (RECIPE!)
 					},
 				}),
 				n(7976, {	-- Thalgus Thunderfist

@@ -2856,8 +2856,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(40226, {	-- Pratt McGrubben <Leatherworking Supplies>
@@ -2896,10 +2896,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 74.6, 42.8, FERALAS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(13949),	-- Recipe: Baked Salmon
-						i(12229),	-- Recipe: Hot Wolf Ribs
-						i(13947),	-- Recipe: Lobster Stew
-						i(13948),	-- Recipe: Mightfish Steak
+						i(13949),	-- Recipe: Baked Salmon (RECIPE!)
+						i(12229),	-- Recipe: Hot Wolf Ribs (RECIPE!)
+						i(13947),	-- Recipe: Lobster Stew (RECIPE!)
+						i(13948),	-- Recipe: Mightfish Steak (RECIPE!)
 					},
 				}),
 				n(7947, {	-- Vivianna <Trade Supplies>
@@ -2910,10 +2910,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(13949),	-- Recipe: Baked Salmon
-						i(12229),	-- Recipe: Hot Wolf Ribs
-						i(13947),	-- Recipe: Lobster Stew
-						i(13948),	-- Recipe: Mightfish Steak
+						i(13949),	-- Recipe: Baked Salmon (RECIPE!)
+						i(12229),	-- Recipe: Hot Wolf Ribs (RECIPE!)
+						i(13947),	-- Recipe: Lobster Stew (RECIPE!)
+						i(13948),	-- Recipe: Mightfish Steak (RECIPE!)
 					},
 				}),
 				n(8159, {	-- Worb Strongstitch <Light Armor Merchant>
