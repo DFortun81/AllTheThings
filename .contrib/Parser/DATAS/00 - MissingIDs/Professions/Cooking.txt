@@ -182,46 +182,9 @@ r(338117),	-- Seared Cutlets
 Missing in CookingItemDB.lua
 
 
-5.0.3.15890
-r(104237),	-- Golden Carp Consomme
-r(104297),	-- Fish Cake
-r(104381),	-- Cooking
-r(105190),	-- Pandaren Banquet
-r(105194),	-- Great Pandaren Banquet
-r(124029),	-- Viseclaw Soup
-r(124032),	-- Krasarang Fritters
-r(124223),	-- Pounded Rice Cake
-r(124224),	-- Yak Cheese Curds
-r(124225),	-- Toasted Fish Jerky
-r(124226),	-- Dried Peaches
-r(124227),	-- Dried Needle Mushrooms
-r(124228),	-- Boiled Silkworm Pupa
-r(124229),	-- Red Bean Bun
-r(124230),	-- Tangy Yogurt
-r(124231),	-- Green Curry Fish
-r(124232),	-- Peach Pie
-r(124233),	-- Blanched Needle Mushrooms
-r(124234),	-- Skewered Peanut Chicken
-r(125067),	-- Perfectly Cooked Instant Noodles
-r(125078),	-- Roasted Barley Tea
-r(125080),	-- Pearl Milk Tea
-r(125117),	-- Sliced Peaches
-r(125120),	-- Spicy Salmon
-r(125121),	-- Wildfowl Ginseng Soup
-r(125122),	-- Rice Pudding
-r(125123),	-- Spicy Vegetable Chips
-r(126654),	-- Four Senses Brew
-r(126655),	-- Banana-Infused Rum \\ Banana Infused Rum
 6.0.1.18179
 r(89719),	-- Archaeology
-r(145038),	-- Noodle Cart Kit
-r(145061),	-- Deluxe Noodle Cart Kit
-r(145062),	-- Pandaren Treasure Noodle Cart Kit
-r(145167),	-- Grand Noodle Cart Kit
-r(145170),	-- Grand Deluxe Noodle Cart Kit
-r(145197),	-- Grand Pandaren Treasure Noodle Cart Kit
-r(145308),	-- Mango Ice
-r(158765),	-- Cooking
+r(0, 158765),	-- Cooking (Draenor Master)
 r(160958),	-- Hearty Elekk Steak
 r(160961),	-- UNUSED
 r(160962),	-- Blackrock Ham

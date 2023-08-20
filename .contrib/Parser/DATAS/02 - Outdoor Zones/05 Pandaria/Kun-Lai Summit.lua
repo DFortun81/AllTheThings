@@ -347,7 +347,7 @@ root(ROOTS.Zones, {
 							o(213765, {	-- Tablet of Ren Yun
 								["questID"] = 31417,	-- FLAG - Tablet of Ren Yun
 								["g"] = {
-									i(86393),	-- Tablet of Ren Yun
+									i(86393),	-- Tablet of Ren Yun (RECIPE!)
 								},
 							}),
 						},

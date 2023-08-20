@@ -311,6 +311,55 @@ i(68688, 96133);	-- Scalding Murglesnout
 -- ITEM --
 i(78342, 6417);	-- Dig Rat Stew
 
+-----------------
+-- PATCH 5.0.4 --
+-----------------
+-- TRAINER --
+i(0, 124233);	-- Blanched Needle Mushrooms
+i(0, 124228);	-- Boiled Silkworm Pupa
+i(0, 104381);	-- Cooking (Zen Master)
+i(0, 124227);	-- Dried Needle Mushrooms
+i(0, 124226);	-- Dried Peaches
+i(0, 104297);	-- Fish Cake
+i(0, 104237);	-- Golden Carp Consomme
+i(0, 124231);	-- Green Curry Fish
+i(0, 124232);	-- Peach Pie
+i(0, 125080);	-- Pearl Milk Tea
+i(0, 125067);	-- Perfectly Cooked Instant Noodles
+i(0, 124223);	-- Pounded Rice Cake
+i(0, 124229);	-- Red Bean Bun
+i(0, 125122);	-- Rice Pudding
+i(0, 125078);	-- Roasted Barley Tea
+i(0, 124234);	-- Skewered Peanut Chicken
+i(0, 125117);	-- Sliced Peaches
+i(0, 124230);	-- Tangy Yogurt
+i(0, 124225);	-- Toasted Fish Jerky
+i(0, 125121);	-- Wildfowl Ginseng Soup
+i(0, 124224);	-- Yak Cheese Curds
+-- ITEM --
+i(87266, 126655);	-- Banana Infused Rum / Banana-Infused Rum
+i(86393, 126654);	-- Four Senses Brew
+i(75017, 105194);	-- Great Pandaren Banquet
+i(85505, 124032);	-- Krasarang Fritters
+i(75013, 105190);	-- Pandaren Banquet
+i(74657, 125120);	-- Spicy Salmon
+i(74658, 125123);	-- Spicy Vegetable Chips
+i(85502, 124029);	-- Viseclaw Soup
+
+-----------------
+-- PATCH 5.4.0 --
+-----------------
+-- ITEM --
+i(101767, 145308);	-- Mango Ice
+-- QUEST --
+i(0, 145061);	-- Deluxe Noodle Cart Kit
+i(0, 145038);	-- Noodle Cart Kit
+i(0, 145062);	-- Pandaren Treasure Noodle Cart Kit
+-- NYI --
+i(0, 145170);	-- Grand Deluxe Noodle Cart Kit
+i(0, 145167);	-- Grand Noodle Cart Kit
+i(0, 145197);	-- Grand Pandaren Treasure Noodle Cart Kit
+
 ------------------
 -- PATCH 10.0.0 --
 ------------------

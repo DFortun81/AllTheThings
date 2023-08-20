@@ -51,7 +51,7 @@ root(ROOTS.Zones, {
 								["questID"] = 31411,	-- Barrel of Banana Infused Rum Quest Tracker
 								["coord"] = { 54.0, 88.0, KRASARANG_WILDS },
 								["g"] = {
-									i(87266),	-- Recipe: Banana-Infused Rum
+									i(87266),	-- Recipe: Banana-Infused Rum (RECIPE!)
 								},
 							}),
 							o(213651, {	-- Equipment Locker
@@ -1755,8 +1755,8 @@ root(ROOTS.Zones, {
 										}),
 										i(88710),	-- Nat's Hat -- NOT MOGGABLE
 										i(84660),	-- Pandaren Fishing Pole -- NOT MOGGABLE
-										i(85505),	-- Recipe: Krasarang Fritters
-										i(85502),	-- Recipe: Viseclaw Soup
+										i(85505),	-- Recipe: Krasarang Fritters (RECIPE!)
+										i(85502),	-- Recipe: Viseclaw Soup (RECIPE!)
 										i(81354, {	-- Azure Water Strider (MOUNT!)
 											["cost"] = 9500000,	-- 950g
 										}),

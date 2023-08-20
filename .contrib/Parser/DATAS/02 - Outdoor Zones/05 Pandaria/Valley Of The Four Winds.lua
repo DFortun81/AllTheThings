@@ -4093,10 +4093,10 @@ root(ROOTS.Zones, {
 							i(89869, {	-- Pandaren Scarecrow (TOY!)
 								["cost"] = 2125000,	-- 212g 50s
 							}),
-							i(74657, {	-- Recipe: Spicy Salmon
+							i(74657, {	-- Recipe: Spicy Salmon (RECIPE!)
 								["cost"] = 8500,	-- 85s
 							}),
-							i(74658, {	-- Recipe: Spicy Vegetable Chips
+							i(74658, {	-- Recipe: Spicy Vegetable Chips (RECIPE!)
 								["cost"] = 8500,	-- 85s
 							}),
 							i(89391, {	-- Black Riding Goat (MOUNT!)
@@ -5797,10 +5797,10 @@ root(ROOTS.Zones, {
 							i(92748, {	-- Portable Refrigerator
 								["cost"] = { { "c", 402, MONK }, },	-- 10x Ironpaw Token
 							}),
-							i(75017, {	-- Recipe: Great Pandaren Banquet
+							i(75017, {	-- Recipe: Great Pandaren Banquet (RECIPE!)
 								["cost"] = { { "c", 402, MONK }, },	-- 10x Ironpaw Token
 							}),
-							i(75013, {	-- Recipe: Pandaren Banquet
+							i(75013, {	-- Recipe: Pandaren Banquet (RECIPE!)
 								["cost"] = { { "c", 402, MONK }, },	-- 10x Ironpaw Token
 							}),
 							i(86558, {	-- Rolling Pin
@@ -6575,7 +6575,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 				}),
-				
+
 			},
 		}),
 	}),
