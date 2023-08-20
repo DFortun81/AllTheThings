@@ -65271,7 +65271,7 @@ s(169108)/i(190901),	-- Solemn Watchman's Helm
 s(188051)/i(206597),	--
 s(188667)/i(207089),	--
 s(188668)/i(207090),	--
-s(189611)/i(208207),	--
+s(189611)/i(208207),	-- Morchie's Timeworn Shoulderpads
 s(189766)/i(208474),	-- Forsaken Champion's Spaulders
 s(189767)/i(208476),	-- Forsaken Champion's Chestguard
 s(189768)/i(208477),	-- Forsaken Champion's Belt
@@ -65326,7 +65326,7 @@ s(189914)/i(205084),	-- Zaralek Surveyor's Mantle
 s(189915)/i(207624),	-- Anomalous Pauldrons
 s(189916)/i(204950),	-- Starless Mantle
 s(189917)/i(204610),	-- Bestowed Pauldrons \\ Firestorm Pauldrons
-s(189918)/i(208600),	--
+s(189918)/i(208600),	-- Chromie's Timespun Shoulderpads
 s(189941)/i(208620),	-- Ashamane's Helm of Rebirth
 s(189942)/i(208621),	-- Ashamane's Spaulders of Rebirth
 s(189943)/i(208622),	-- Ashamane's Fangs of Rebirth
@@ -65403,8 +65403,8 @@ s(190172)/i(209023),	-- The Horseman's Horrific Hood
 s(190176)/i(209044),	-- Orange Brewfest Bulwark
 s(190177)/i(209053),	-- Green Brewfest Bulwark
 10.1.7.50730
-s(190178)/i(209065),	--
-s(190179)/i(209068),	--
+s(190178)/i(209065),	-- Forsaken Champion's Tabard
+s(190179)/i(209068),	-- Queen Loyalist's Tabard
 s(190688)/i(209357),	-- Dreambound Shawl
 s(190689)/i(209359),	-- Dreambound Warglaive
 s(190690)/i(209360),	-- Dreambound Staff
@@ -65467,3 +65467,5 @@ s(190746)/i(209411),	-- Dreambound Vestment
 s(190747)/i(209412),	-- Dreambound Greatcloak
 s(190748)/i(209413),	-- Dreambound Cape
 s(190749)/i(209414),	-- Dreambound Drape
+10.1.7.50893
+s(191878)/i(210054),	-- Forsaken Champion's Vest

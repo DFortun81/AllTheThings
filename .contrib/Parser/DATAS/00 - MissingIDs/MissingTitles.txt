@@ -1,6 +1,8 @@
 3.4.1.47966
 title(210),	-- Battlemaster %s
 10.1.7.50505
-title(515),	-- Easter Kingdoms Racer %s
+title(515),	-- Eastern Kingdoms Racer %s \\ Easter Kingdoms Racer %s
 10.1.7.50793
 title(519),	-- Honorary Preservationist %s
+10.1.7.50893
+title(521),	-- Outland Racer %s

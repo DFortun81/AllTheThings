@@ -1,5 +1,3 @@
-7.3.0.24473
-i(38578),	-- Flag of Ownership \\ The Flag of Ownership
 10.1.7.50442
 i(208229),	-- Honor of the Forsaken
 i(208421),	-- Compendium of the New Moon
@@ -10,16 +8,4 @@ i(208880),	-- Brewhahat
 i(209052),	-- Brew Barrel
 
 
-
-
-Missing in ToyDB.lua
-
-7.3.0.24473
-i(38578),	-- Flag of Ownership \\ The Flag of Ownership
-10.1.7.50442
-i(208229),	-- Honor of the Forsaken
-i(208421),	-- Compendium of the New Moon
-10.1.7.50505
-i(208880),	-- Brewhahat
-10.1.7.50587
-i(209052),	-- Brew Barrel
+Nothing is Missing in ToyDB.lua! Good Work!

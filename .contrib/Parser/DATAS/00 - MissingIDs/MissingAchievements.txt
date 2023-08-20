@@ -873,4 +873,17 @@ ach(18908),	-- Chromatic Calibration: Bio-Optic Killshades
 ach(19008),	-- Dream Shaper
 ach(19028),	-- Lil' Frostwing
 10.1.7.50793
-ach(19079),	-- Master of the Troubled Timeways
+ach(19079),	-- Master of the Turbulent Timeways \\ Master of the Troubled Timeways
+10.1.7.50893
+ach(19092),	-- Outland: Bronze
+ach(19097),	-- Outland: Silver
+ach(19098),	-- Outland: Gold
+ach(19099),	-- Outland Advanced: Bronze
+ach(19100),	-- Outland Advanced: Silver
+ach(19101),	-- Outland Advanced: Gold
+ach(19102),	-- Outland Reverse: Bronze
+ach(19103),	-- Outland Reverse: Silver
+ach(19104),	-- Outland Reverse: Gold
+ach(19105),	-- Outland Racing Completionist
+ach(19106),	-- Outland Racing Completionist: Silver
+ach(19107),	-- Outland Racing Completionist: Gold

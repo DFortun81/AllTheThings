@@ -718,6 +718,16 @@ root(ROOTS.Unsorted, {
 			i(209835),	-- Crate of Dreambound Plate
 			i(209870),	-- Surge Catcher
 			i(209997),	-- Distilled Knowledge of Timeways
+			--
+			i(208207),	-- Morchie's Timeworn Shoulderpads
+			i(208485),	-- The Scarlet Key
+			i(208600),	-- Chromie's Timespun Shoulderpads
+			i(209065),	-- Forsaken Champion's Tabard
+			i(209068),	-- Queen Loyalist's Tabard
+			i(210024),	-- Ensemble: Temporal Burdens
+			i(210054),	-- Forsaken Champion's Vest
+			i(210062),	-- Ironbound Satchel of Helpful Goods
+			i(210063),	-- Invader's Satchel of Helpful Goods
 		})),
 		tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
 			filter(COSMETIC, {

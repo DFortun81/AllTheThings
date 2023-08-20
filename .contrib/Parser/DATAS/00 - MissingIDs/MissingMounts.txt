@@ -1,7 +1,4 @@
 3.4.2.49311
-mount(61442),	-- Swift Mooncloth Carpet
-mount(348459),	-- Reawakened Phase-Hunter
-mount(372677),	-- Kalu'ak Whalebone Glider
 mount(387308),	-- Magic Rooster
 mount(387311),	-- X-51 Nether-Rocket X-TREME
 mount(387319),	-- Big Battle Bear
@@ -9,7 +6,6 @@ mount(387320),	-- Blazing Hippogryph
 mount(387321),	-- Wooly White Rhino
 mount(387323),	-- X-51 Nether-Rocket
 mount(388516),	-- Hao-Yue, River Foreseer
-mount(394209),	-- Festering Emerald Drake
 6.0.1.18179
 mount(0),	-- TEST - Grand Wyvern \\ TEST - Running Wild \\ TEST - Traveler's Tundra Mammoth (Alliance)
 mount(3363),	-- Nether Drake
@@ -31,20 +27,12 @@ mount(44825),	-- Flying Reindeer
 mount(44827),	-- Flying Reindeer
 mount(46980),	-- Northrend Nerubian Mount (Test)
 mount(47037),	-- Swift War  Elekk
-mount(48023),	-- Headless Horseman's Mount
-mount(48024),	-- Headless Horseman's Mount
 mount(50281),	-- Black Warp Stalker
 mount(50869),	-- Brewfest Kodo
 mount(50870),	-- Brewfest Ram
-mount(51617),	-- Headless Horseman's Mount
-mount(51621),	-- Headless Horseman's Mount
 mount(51960),	-- Frost Wyrm Mount
-mount(54726),	-- Winged Steed of the Ebon Blade
-mount(54727),	-- Winged Steed of the Ebon Blade
 mount(55293),	-- Amani War Bear
 mount(58819),	-- Swift Brown Steed
-mount(58997),	-- Big Blizzard Bear
-mount(58999),	-- Big Blizzard Bear
 mount(59802),	-- Grand Ice Mammoth
 mount(59804),	-- Grand Ice Mammoth
 mount(61983),	-- Dan's Test Mount
@@ -54,23 +42,6 @@ mount(66907),	-- Argent Warhorse
 mount(68768),	-- Little White Stallion
 mount(68769),	-- Little Ivory Raptor
 mount(68930),	-- Brood of Onyxia
-mount(71344),	-- Big Love Rocket
-mount(71345),	-- Big Love Rocket
-mount(71346),	-- Big Love Rocket
-mount(71347),	-- Big Love Rocket
-mount(72281),	-- Invincible
-mount(72282),	-- Invincible
-mount(72283),	-- Invincible
-mount(72284),	-- Invincible
-mount(74854),	-- Blazing Hippogryph
-mount(74855),	-- Blazing Hippogryph
-mount(75617),	-- Celestial Steed
-mount(75618),	-- Celestial Steed
-mount(75619),	-- Celestial Steed
-mount(75620),	-- Celestial Steed
-mount(75972),	-- X-53 Touring Rocket
-mount(76153),	-- Celestial Steed
-mount(76154),	-- X-53 Touring Rocket
 mount(79361),	-- Twilight Phoenix
 mount(86579),	-- Wooden Raft
 mount(87840),	-- Running Wild
@@ -93,33 +64,17 @@ mount(148972),	-- Dreadsteed
 mount(150926),	-- Draenor Chimera
 7.3.0.24473
 mount(205656),	-- Charger
-mount(221883),	-- Charger
-mount(221885),	-- Great Sunwalker Kodo
-mount(221886),	-- Thalassian Charger
-mount(221887),	-- Great Exarch's Elekk
-7.3.0.24727
-mount(254471),	-- Valorous Charger
-mount(254472),	-- Vengeful Charger
-mount(254473),	-- Vigilant Charger
-mount(254474),	-- Golden Charger
-8.0.1.25902
-mount(244457),	-- Default AI Mount Record
-8.0.1.26522
-mount(276111),	-- Dawnforge Ram
-mount(276112),	-- Darkforge Ram
-9.1.5.40622
-mount(363608),	-- Lightforged Ruinstrider
 10.0.0.44649
 mount(359408),	-- Divine Kiss of Ohn'ahra \\ [PH] White Wind Eagle \\ PH Wind Eagle
-10.1.5.50130
-mount(419002),	-- Whelpling \\ Temp
-10.1.5.50747
-mount(417245),	-- Ancestral Clefthoof
+10.0.0.44795
+mount(385262),	-- [PH] Dark Wind Eagle
 10.1.7.50442
 mount(419567),	-- Ginormous Grrloc
 mount(420097),	-- Azure Worldchiller
 10.1.7.50505
 mount(419345),	-- Eve's Ghastly Rider
+10.1.7.50793
+mount(408654),	-- Sandy Shalewing
 
 
 
@@ -128,7 +83,6 @@ Missing in MountDB.lua
 
 3.4.2.49311
 mount(6896),	-- Black Ram
-mount(61442),	-- Swift Mooncloth Carpet
 mount(387308),	-- Magic Rooster
 mount(387311),	-- X-51 Nether-Rocket X-TREME
 mount(387319),	-- Big Battle Bear
@@ -155,20 +109,12 @@ mount(44825),	-- Flying Reindeer
 mount(44827),	-- Flying Reindeer
 mount(46980),	-- Northrend Nerubian Mount (Test)
 mount(47037),	-- Swift War  Elekk
-mount(48023),	-- Headless Horseman's Mount
-mount(48024),	-- Headless Horseman's Mount
 mount(50281),	-- Black Warp Stalker
 mount(50869),	-- Brewfest Kodo
 mount(50870),	-- Brewfest Ram
-mount(51617),	-- Headless Horseman's Mount
-mount(51621),	-- Headless Horseman's Mount
 mount(51960),	-- Frost Wyrm Mount
-mount(54726),	-- Winged Steed of the Ebon Blade
-mount(54727),	-- Winged Steed of the Ebon Blade
 mount(55293),	-- Amani War Bear
 mount(58819),	-- Swift Brown Steed
-mount(58997),	-- Big Blizzard Bear
-mount(58999),	-- Big Blizzard Bear
 mount(59802),	-- Grand Ice Mammoth
 mount(59804),	-- Grand Ice Mammoth
 mount(61983),	-- Dan's Test Mount
@@ -178,23 +124,6 @@ mount(66907),	-- Argent Warhorse
 mount(68768),	-- Little White Stallion
 mount(68769),	-- Little Ivory Raptor
 mount(68930),	-- Brood of Onyxia
-mount(71344),	-- Big Love Rocket
-mount(71345),	-- Big Love Rocket
-mount(71346),	-- Big Love Rocket
-mount(71347),	-- Big Love Rocket
-mount(72281),	-- Invincible
-mount(72282),	-- Invincible
-mount(72283),	-- Invincible
-mount(72284),	-- Invincible
-mount(74854),	-- Blazing Hippogryph
-mount(74855),	-- Blazing Hippogryph
-mount(75617),	-- Celestial Steed
-mount(75618),	-- Celestial Steed
-mount(75619),	-- Celestial Steed
-mount(75620),	-- Celestial Steed
-mount(75972),	-- X-53 Touring Rocket
-mount(76153),	-- Celestial Steed
-mount(76154),	-- X-53 Touring Rocket
 mount(79361),	-- Twilight Phoenix
 mount(86579),	-- Wooden Raft
 mount(87840),	-- Running Wild
@@ -216,34 +145,8 @@ mount(148970),	-- Felsteed
 mount(148972),	-- Dreadsteed
 mount(150926),	-- Draenor Chimera
 7.3.0.24473
-mount(194046),	-- Swift Spectral Rylak
 mount(205656),	-- Charger
-mount(221883),	-- Charger
-mount(221885),	-- Great Sunwalker Kodo
-mount(221886),	-- Thalassian Charger
-mount(221887),	-- Great Exarch's Elekk
-7.3.0.24727
-mount(254471),	-- Valorous Charger
-mount(254472),	-- Vengeful Charger
-mount(254473),	-- Vigilant Charger
-mount(254474),	-- Golden Charger
-8.0.1.25902
-mount(244457),	-- Default AI Mount Record
-8.0.1.26522
-mount(276111),	-- Dawnforge Ram
-mount(276112),	-- Darkforge Ram
-9.1.5.40622
-mount(363608),	-- Lightforged Ruinstrider
 9.2.5.43022
 mount(370770),	-- Tuskarr Shoreglider
 10.0.0.44649
 mount(359408),	-- Divine Kiss of Ohn'ahra \\ [PH] White Wind Eagle \\ PH Wind Eagle
-10.1.5.50130
-mount(419002),	-- Whelpling \\ Temp
-10.1.5.50747
-mount(417245),	-- Ancestral Clefthoof
-10.1.7.50442
-mount(419567),	-- Ginormous Grrloc
-mount(420097),	-- Azure Worldchiller
-10.1.7.50505
-mount(419345),	-- Eve's Ghastly Rider

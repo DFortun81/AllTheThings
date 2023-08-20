@@ -14,9 +14,7 @@ r(6500),	-- Goblin Deviled Clams
 r(18260),	-- Cooking
 1.13.0.28211
 r(21175),	-- Spider Sausage
-r(30047),	-- Crystal Throat Lozenge
 2.0.0.6080
-r(33285),	-- Sporeling Snack
 r(33359),	-- Cooking
 2.4.3.8606
 r(37836),	-- Spice Bread
@@ -183,11 +181,6 @@ r(338117),	-- Seared Cutlets
 
 Missing in CookingItemDB.lua
 
-0.5.3.3368
-r(44977, 6417),	-- Dig Rat Stew (Wrath BoP Version) (3.1.0)
-r(78342, 6417),	-- Dig Rat Stew [ADDED 4.3.0]
-0.6.0.3592
-r(18160, 9513),	-- Thistle Tea (Vendor Version) [ADDED 4.0.3]
 4.0.1.12911
 r(88003),	-- Baked Rockfish
 r(88004),	-- Basilisk Liverdog
