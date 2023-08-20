@@ -437,6 +437,7 @@ for filterID,filterData in pairs({
 		readable = "Quest Items",
 		icon = [[~_.asset("Interface_Quest_header")]],
 		constant = "QUEST_ITEMS",
+		export = true,
 		text = {
 			en = [[~AUCTION_CATEGORY_QUEST_ITEMS]],
 		},

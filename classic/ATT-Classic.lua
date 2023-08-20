@@ -61,7 +61,14 @@ local HORDE_FACTION_ID = Enum.FlightPathFaction.Horde;
 local SearchForField, SearchForFieldContainer
 	= app.SearchForField, app.SearchForFieldContainer;
 
--- Add a header debugger
+-- Add a Feader & Filter debugger
+setmetatable(app.FilterConstants, {
+	__index = function(t, key)
+		print("MISSING FilterConstant:", key);
+		rawset(t, key, -9999999999);
+		return -9999999999;
+	end
+});
 setmetatable(app.HeaderConstants, {
 	__index = function(t, key)
 		print("MISSING HeaderConstant:", key);
@@ -160,7 +167,7 @@ local function PendingCollectionCoroutine()
 		wipe(pendingCollection);
 		
 		-- Check if there was a mount.
-		if allTypes[100] then
+		if allTypes[app.FilterConstants.MOUNTS] then
 			app:PlayRareFindSound();
 		else
 			app:PlayFanfare();
@@ -969,7 +976,7 @@ local function CreateObject(t)
 			elseif t.recipeID then
 				t = app.CreateRecipe(t.recipeID, t);
 			elseif t.spellID then
-				if t.f == 200 then
+				if t.f == app.FilterConstants.RECIPES then
 					t = app.CreateRecipe(t.spellID, t);
 				else
 					t = app.CreateSpell(t.spellID, t);
@@ -3786,7 +3793,8 @@ end,
 		local t = row.ref;
 		local template,r = {},{};
 		for i,o in pairs(SearchForFieldContainer("spellID")) do
-			if ((o[1].f and o[1].f == 100) or (o[1].filterID and o[1].filterID == 100)) and not r[i] then
+			if ((o[1].f and o[1].f == app.FilterConstants.MOUNTS) 
+			or (o[1].filterID and o[1].filterID == app.FilterConstants.MOUNTS)) and not r[i] then
 				table.insert(template, o[1]);
 				r[i] = 1;
 			end
@@ -4584,7 +4592,8 @@ else
 		if app.Settings.Collectibles.Mounts then
 			local count,r = 0,{};
 			for i,g in pairs(SearchForFieldContainer("spellID")) do
-				if ((g[1].f and g[1].f == 100) or (g[1].filterID and g[1].filterID == 100)) and not r[i] then
+				if ((g[1].f and g[1].f == app.FilterConstants.MOUNTS) 
+				or (g[1].filterID and g[1].filterID == app.FilterConstants.MOUNTS)) and not r[i] then
 					if g[1].collected then count = count + 1; end
 					r[i] = 1;
 				end
@@ -4632,7 +4641,8 @@ else
 			local template,r = {},{};
 			for i,o in pairs(SearchForFieldContainer("spellID")) do
 				local p = o[1];
-				if ((p.f and p.f == 100) or (p.filterID and p.filterID == 100)) and not r[i] then
+				if ((p.f and p.f == app.FilterConstants.MOUNTS) 
+				or (p.filterID and p.filterID == app.FilterConstants.MOUNTS)) and not r[i] then
 					r[i] = 1;
 					if p.visible then
 						c = c + 1;
@@ -4935,7 +4945,7 @@ local SetMountCollected = function(t, spellID, collected)
 end
 local speciesFields = {
 	["f"] = function(t)
-		return 101;
+		return app.FilterConstants.BATTLE_PETS;
 	end,
 	["collectible"] = function(t)
 		return app.Settings.Collectibles.BattlePets;
@@ -4968,7 +4978,7 @@ local mountFields = {
 		return (t.itemID and select(2, GetItemInfo(t.itemID))) or GetSpellLink(t.spellID);
 	end,
 	["f"] = function(t)
-		return 100;
+		return app.FilterConstants.MOUNTS;
 	end,
 	["collectible"] = function(t)
 		return app.Settings.Collectibles.Mounts;
@@ -5999,7 +6009,7 @@ app.CreateGarrisonBuilding = app.CreateClass("GarrisonBuilding", "garrisonBuildi
 		return string.format("i:%d", t.itemID);
 	end,
 	f = function(t)
-		return 200;
+		return app.FilterConstants.RECIPES;
 	end,
 	collectible = function(t)
 		return app.Settings.Collectibles.Recipes;
@@ -6237,9 +6247,9 @@ local itemFields = {
 		return 2;
 	end,
 	["f"] = function(t)
-		if t.questID then return 104; end
+		if t.questID then return app.FilterConstants.QUEST_ITEMS; end
 		if #SearchForField("itemIDAsCost", t.itemID) > 0 then
-			return 104;
+			return app.FilterConstants.QUEST_ITEMS;
 		end
 	end,
 	["tsm"] = function(t)
@@ -8315,7 +8325,7 @@ recipeFields.collected = function(t)
 	return app.SetCollectedForSubType(t, "Spells", "Recipes", t.spellID, isKnown);
 end;
 recipeFields.f = function(t)
-	return 200;
+	return app.FilterConstants.RECIPES;
 end;
 local createRecipe = app.CreateClass("Recipe", "spellID", recipeFields,
 "WithItem", {
@@ -8337,7 +8347,7 @@ local createRecipe = app.CreateClass("Recipe", "spellID", recipeFields,
 }, (function(t) return t.itemID; end));
 local createItem = app.CreateItem;	-- Temporary Recipe fix until someone fixes parser.
 app.CreateItem = function(id, t)
-	if t and t.spellID and t.f == 200 then	-- This is pretty slow, would be great it someone fixes it.
+	if t and t.spellID and t.f == app.FilterConstants.RECIPES then	-- This is pretty slow, would be great it someone fixes it.
 		t.f = nil;
 		t.itemID = id;
 		return createRecipe(t.spellID, t);
@@ -13509,7 +13519,7 @@ app:GetWindow("Tradeskills", {
 					else
 						spell = app.CreateSpell(spellID);
 					end
-					if spell.f == 200 then
+					if spell.f == app.FilterConstants.RECIPES then
 						app.SetCollectedForSubType(spell, "Spells", "Recipes", spellID, true);
 					else
 						app.SetCollected(spell, "Spells", spellID, true);

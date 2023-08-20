@@ -63,7 +63,14 @@ local CacheFields, SearchForField, SearchForFieldContainer, SearchForSourceIDQui
 local AttachTooltipSearchResults = app.Modules.Tooltip.AttachTooltipSearchResults;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 
--- Add a header debugger
+-- Add a Feader & Filter debugger
+setmetatable(app.FilterConstants, {
+	__index = function(t, key)
+		print("MISSING FilterConstant:", key);
+		rawset(t, key, -9999999999);
+		return -9999999999;
+	end
+});
 setmetatable(app.HeaderConstants, {
 	__index = function(t, key)
 		print("MISSING HeaderConstant:", key);

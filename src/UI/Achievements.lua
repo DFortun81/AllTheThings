@@ -84,7 +84,7 @@ app:GetWindow("Achievements", {
 		SlashCmdList["ATTACHIEVEMENTS"] = function(cmd)
 			self:Toggle();
 		end
-		self.data = app.CreateFilter(105, {
+		self.data = app.CreateCustomHeader(app.HeaderConstants.ACHIEVEMENTS, {
 			description = "This list shows you all of the achievements that you can collect.",
 			visible = true,
 			expanded = true,
