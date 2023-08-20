@@ -8,7 +8,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 		["coord"] = { 59.3, 64.8, MALDRAXXUS },
 		["maps"] = {
 			1674,	-- Plaguefall
-			1697,	-- Plaguefall
+			1697,	-- The Festering Sanctum
 		},
 		["g"] = {
 			n(QUESTS, {

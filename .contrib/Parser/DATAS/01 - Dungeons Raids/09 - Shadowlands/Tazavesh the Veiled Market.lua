@@ -173,7 +173,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 				},
 			}),
 			-- #if AFTER 9.2.0
-			d(HeroicPlus, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
+			d(HeroicPlus, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0 } }, {
 				e(2437, {	-- Zo'phex the Sentinel
 					["crs"] = { 175616 },	-- Zo'phex
 					["g"] = {

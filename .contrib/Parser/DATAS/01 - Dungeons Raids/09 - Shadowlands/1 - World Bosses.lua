@@ -5,7 +5,6 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["modID"] = 14,
-		["lvl"] = { 60 },
 		["g"] = sharedData({
 			["isWorldQuest"] = true,
 			["isRaid"] = true,
@@ -82,7 +81,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 				["sym"] = {{"select","itemID",
 					187882,    -- Alpaca Soul
 				}},
-				["g"] = bubbleDown({ ["modID"] = 3 }, {
+				["g"] = sharedData({ ["modID"] = 3 }, {
 					i(187507),	-- Adaptive Armor Fragment
 					i(187506),	-- Condensed Anima Sphere
 					i(190619),	-- Antecedent's Aliform Joggers
@@ -93,7 +92,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 					i(190617),	-- Destruction-Core Handlers
 					i(190618),	-- Lattice of the Distant Keeper
 					i(190620),	-- Sav'thul's Calamitous Tantour
-					i(189709, {	-- Pocopoc's Cobalt and Copper Body
+					ig(189709, {	-- Pocopoc's Cobalt and Copper Body
 						["questID"] = 65473,
 					}),
 				}),
@@ -115,7 +114,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 				["coord"] = { 69.1, 44.2, THE_MAW },
 				["maps"] = { 1820, 1821, 1822, 1823 },	-- all maps in the Maw
 				["creatureID"] = 178958,	-- Mor'geth <Tormentor of the Damned>
-				["g"] = bubbleDown({ ["modID"] = 3 }, {
+				["g"] = sharedData({ ["modID"] = 3 }, {
 					i(187507),	-- Adaptive Armor Fragment
 					i(187506),	-- Condensed Anima Sphere
 					i(187061),	-- Shard of Rev
@@ -146,7 +145,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 				["questID"] = 62810,
 				["coord"] = { 32.1, 67.3, MALDRAXXUS },
 				["creatureID"] = 167525,	-- Mortanis
-				["g"] = bubbleDown({["modID"] = 3}, {
+				["g"] = sharedData({["modID"] = 3}, {
 					i(183341),	-- Memory of a Guile Charm
 					i(183386),	-- Memory of Fujieda
 					i(183295),	-- Memory of Keefer
@@ -174,7 +173,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 				["questID"] = 62812,
 				["coord"] = { 27.2, 14.9, REVENDRETH },
 				["creatureID"] = 167526,	-- Nurgash Muckformed
-				["g"] = bubbleDown({["modID"] = 3}, {
+				["g"] = sharedData({["modID"] = 3}, {
 					i(182638),	-- Memory of a Frenzied Monstrosity
 					i(183215),	-- Memory of an Erratic Fel Core
 					i(183376),	-- Memory of Azj'Aqir's Madness
@@ -202,7 +201,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 				["questID"] = 62811,
 				["coord"] = { 20.2, 63.6, ARDENWEALD },
 				["creatureID"] = 167527,	-- Oranomonos the Everbranching
-				["g"] = bubbleDown({["modID"] = 3}, {
+				["g"] = sharedData({["modID"] = 3}, {
 					i(183274),	-- Memory of a Fevered Incantation
 					i(183261),	-- Memory of Surging Shots
 					i(183238),	-- Memory of the Verdant Infusion
@@ -230,7 +229,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 				["questID"] = 62809,
 				["coord"] = { 26.3, 22.4, BASTION },
 				["creatureID"] = 167524,	-- Valinor, the Light of Eons
-				["g"] = bubbleDown({["modID"] = 3}, {
+				["g"] = sharedData({["modID"] = 3}, {
 					i(183325),	-- Memory of Archbishop Benedictus
 					i(183311),	-- Memory of the Final Verdict
 					i(183353),	-- Memory of the Windspeaker's Lava Resurgence

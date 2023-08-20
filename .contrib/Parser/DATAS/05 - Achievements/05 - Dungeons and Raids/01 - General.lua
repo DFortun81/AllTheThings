@@ -736,15 +736,5 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(9),		-- Imperator Mar'gok (Highmaul)
 			crit(10),		-- Warlord Blackhand (Blackrock Foundry)
 		}),
-		ach(14418, {	-- Shadowlands Dungeon Hero
-			crit(1),		-- Heroic: De Other Side
-			crit(2),		-- Heroic: Halls of Atonement
-			crit(3),		-- Heroic: Mists of Tirna Scithe
-			crit(4),		-- Heroic: Plaguefall
-			crit(5),		-- Heroic: Sanguine Depths
-			crit(6),		-- Heroic: Spires of Ascension
-			crit(7),		-- Heroic: The Necrotic Wake
-			crit(8),		-- Heroic: Theater of Pain
-		}),
 	}),
 }));

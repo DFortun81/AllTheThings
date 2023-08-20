@@ -1075,5 +1075,6 @@ root(ROOTS.HiddenQuestTriggers, tier(BFA_TIER, {
 		q(58542),	-- Mythic: Vexiona
 		q(58546),	-- Mythic: Ra-den
 		q(58538),	-- Mythic: Il'gynoth
+		q(58534),	-- Mythic: N'zoth
 	}),
 }));

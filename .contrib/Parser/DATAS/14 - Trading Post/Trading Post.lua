@@ -189,9 +189,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(190143, { -- Shard of Frozen Secrets
 					["cost"] = { { "c", TRADERS_TENDER, 200 }, },
 				}),
-				i(190557, { -- Sinister Fel Staff
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-				}),
 			}),
 		}),
 		n(UNAVAILABLE, {
@@ -328,12 +325,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 						i(190448),	-- Trapper's Shot Pouch
 					},
 				}),
-				-- i(, {	-- Ensemble: Vagabond's Crimson Trappings	-- spellID 368272
-				-- 	["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-				-- 	["g"] = {
-						i(190827),	-- Vagabond's Crimson Cape
-						i(190828),	-- Vagabond's Crimson Hood
-				-- 	},
 				i(202178, {	-- Ensemble: Vagabond's Carrot Threads
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 					["g"] = {
@@ -487,9 +478,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(190600, {	-- Shadowy Blademaster's Greatsword
 					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
-				}),
-				i(190143, {	-- Shard of Frozen Secrets
-					["cost"] = { { "c", TRADERS_TENDER, 200 }, },
 				}),
 				i(190205, {	-- Sharpened Shank
 					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
@@ -748,14 +736,14 @@ root(ROOTS.NeverImplemented, {
 			}),
 			filter(MOUNTS, bubbleDown({ ["cost"] = { { "c", TRADERS_TENDER, 900 }, }, },{
 				i(190767),	-- Armored Golden Pterrordax (MOUNT!) (Unknown 2023)
-				mount(369480),	-- Cerulean Marsh Hopper (MOUNT!)
+				mount(369480),	-- Cerulean Marsh Hopper (MOUNT!) (Unknown 2023)
 				i(190539),	-- Coral-Stalker Waveray (MOUNT!) (Unknown 2023)
 				i(190168),	-- Crusty Crawler (MOUNT!) (Unknown 2023)
-				i(137576, {	-- Dim Coldflame Core (MOUNT!)
+				i(137576, {	-- Dim Coldflame Core (MOUNT!) (Unknown 2023)
 					["cost"] = { { "c", TRADERS_TENDER, 700 }, },
 					["timeline"] = { ADDED_10_1_7 },
 				}),
-				i(137615, {	-- Molten Flarecore (MOUNT!)
+				i(137615, {	-- Molten Flarecore (MOUNT!) (Unknown 2023)
 					["cost"] = { { "c", TRADERS_TENDER, 700 }, },
 					["timeline"] = { ADDED_10_1_7 },
 				}),
@@ -1282,6 +1270,17 @@ filter(MOUNTS, {
 				}),
 				i(190851, { -- Ensemble Vagabonds Crimson Threads
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(190827),	-- Vagabonds Crimson Cape
+						i(190828),	-- Vagabonds Crimson Hood
+				 	},
+				}),
+				i(190577, {	-- Ensemble: Wanderer's Azure Trappings
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(190573),	-- Wanderer's Azure Cloak
+						i(190542),	-- Wanderer's Azure Scarf
+					},
 				}),
 				i(190850, { -- Ensemble Wanderers Crimson Trappings
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
@@ -1310,9 +1309,6 @@ filter(MOUNTS, {
 				}),
 				i(190143, { -- Shard of Frozen Secrets
 					["cost"] = { { "c", TRADERS_TENDER, 200 }, },
-				}),
-				i(190557, { -- Sinister Fel Staff
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 				}),
 			}),
 		}),

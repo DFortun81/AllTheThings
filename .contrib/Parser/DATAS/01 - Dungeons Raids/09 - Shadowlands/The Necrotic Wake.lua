@@ -7,9 +7,9 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 	inst(1182, {	-- Necrotic Wake
 		["coord"] = { 40.0, 55.3, BASTION },
 		["maps"] = {
-			1666,	-- Necrotic Wake
-			1667,	-- Necrotic Wake
-			1668,	-- Necrotic Wake
+			1666,	-- The Necrotic Wake
+			1667,	-- Stitchwerks
+			1668,	-- Zolramus
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {

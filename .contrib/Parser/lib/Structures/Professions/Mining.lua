@@ -8,16 +8,6 @@ CLASSIC_MINING = {
 		-- #endif
 		["rank"] = 1,
 	}),
-	-- #if NOT ANYCLASSIC
-	-- Crieve NOTE: This recipe doesn't exist in the game.
-	-- Double check your resources and possibly move to this NYI instead.
-	r(8388, {	-- Find Minerals [Rank 2]
-		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
-		-- #endif
-		["rank"] = 2,
-	}),
-	-- #endif
 	r(2575, {	-- Mining (Apprentice)
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,

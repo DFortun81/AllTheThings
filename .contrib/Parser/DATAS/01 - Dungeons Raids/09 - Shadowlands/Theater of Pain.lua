@@ -9,7 +9,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 		["maps"] = {
 			1683,	-- Theater of Pain
 			1684,	-- Chamber of Conquest
-			1685,	-- Theater of Pain
+			1685,	-- Altars of Agony
 			1686,	-- Upper Barrow of Carnage
 			1687,	-- Lower Barrow of Carnage
 		},

@@ -32,7 +32,7 @@ root(ROOTS.Unsorted, {
 			-- Drustvar
 			n(ARMOR, {
 				filter(CLOTH, {
-					-- Loads on Wowhead & ingame	
+					-- Loads on Wowhead & ingame
 					i(155465),	-- Wickerwoven Cord
 					i(158588),	-- Wickerwoven Walkers
 					i(158603),	-- Wickerwoven Handwraps
@@ -584,6 +584,10 @@ root(ROOTS.Unsorted, {
 				i(208880),	-- Brewhahat (TOY!)
 				i(209052),	-- Brew Barrel (TOY!)
 			}),
+			filter(MOUNTS, {
+				i(208598),	-- Eve's Ghastly Rider (MOUNT!)
+				mount(419567),	-- Ginormous Grrloc (MOUNT!)
+			}),
 			filter(COSMETIC, {
 				---- TRADING POST ----
 				i(208620),	-- Ashamane's Helm of Rebirth
@@ -683,15 +687,11 @@ root(ROOTS.Unsorted, {
 			i(205223),	-- Ancient Centaur Axe
 			i(205224),	-- Just a Rock
 			i(205328),	-- Earthen Emissary's Edge
-			i(207963),	-- Alabaster Thunderwing
-			i(207964),	-- Alabaster Stormtalon
 			i(208099),	-- Quickened Sand
 			i(208182),	-- Bronze Timepiece
 			i(208546),	-- Explorer's Rose-Tinted Glasses
 			i(208547),	-- Explorer's Reading Spectacles
 			i(208549),	-- Canned Meat Product
-			i(208572),	-- Azure Worldchiller
-			i(208598),	-- Eve's Ghastly Rider
 			i(208674),	-- Savage Champion's Trophies
 			i(208675),	-- Savage Champion's Aggression
 			i(208733),	-- Dragonhorn Flute
@@ -911,33 +911,20 @@ root(ROOTS.Unsorted, {
 			i(133589),	-- Dalape�o Pepper
 			i(208567),	-- Medal of Conquest
 			--
-			i(206167),	-- Way of the Wonderous Wavewhisker
+
 			--
 			i(190601),	-- Sunny
-			--[[
 				i(190091),	-- Fanciful Corsage
 				i(190694),	-- Solemn Watchman's Belt
 				i(190695),	-- Solemn Watchman's Boots
 				i(190728),	-- Gothic Corsage
 				i(190797),	-- Ensemble: Bones of the Bloodhunter
-				i(190812),	-- Azure Nexus Crescent
 				i(190845),	-- Solemn Watchman's Trousers
-				i(190850),	-- Ensemble: Wanderer's Crimson Trappings
-				i(190851),	-- Ensemble: Vagabond's Crimson Threads
-				i(190870),	-- City Guard Heater Shield
-				i(190871),	-- Grunt's Buckler
 				i(190872),	-- Solemn Watchman's Cuirass
 				i(190896),	-- Solemn Watchman's Spaulders
 				i(190901),	-- Solemn Watchman's Helm
 				i(200925),	-- Ensemble: Solemn Watchman's Garb
-				i(207821),	-- Ancestral Clefthoof
-				i(207957),	-- Aquamarine Felfire Bulwark
-				i(207959),	-- Aquamarine Felfire Splitblade
-				i(207962),	-- Spirit of Competition
-				i(207963),	-- Alabaster Thunderwing
-				i(207964),	-- Alabaster Stormtalon
-				i(208039),	-- Ember Court Soiree Gloves
-				i(208040),	-- Queen's Conservatory Ball Gloves
+
 
 			--]]
 		})),
@@ -1374,7 +1361,6 @@ root(ROOTS.Unsorted, {
 				n(WEAPONS, {
 					-- One-Hand Wep
 					i(190675),	-- Arborcidal Peon's Chopper
-					i(190078),	-- Blade of Brutal Sacrifice
 					i(190446),	-- Blazing Forgehammer
 					i(190430),	-- Chipped Gladius
 					i(190689),	-- Corrupted Bladefist
@@ -1645,16 +1631,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(COSMETIC, {
 				n(SETS, {
-					-- Bloodhunter Set
-					i(190789),	-- Bloodhunter Visage
-					i(190790),	-- Bloodhunter Handguards
-					i(190791),	-- Bloodhunter Subligar
-					i(190792),	-- Bloodhunter Loincloth
-					i(190793),	-- Bloodhunter Footwraps
-					i(190794),	-- Bloodhunter Warcloak
-					i(190795),	-- Bloodhunter Hornmantle
-					i(190798),	-- Bloodhunter Harness
-
 					-- Buccaneer Sets
 					i(190904),	-- Dashing Buccaneer's Tunic
 					i(190905),	-- Dashing Buccaneer's Sash
@@ -1711,8 +1687,6 @@ root(ROOTS.Unsorted, {
 				i(190674),	-- Leaky Bucket
 				i(194314),	-- Light of the Enlightened
 				i(194331),	-- Pristine Research Journal
-				i(190909),	-- Ruby Felfire Splitblade
-				i(190910),	-- Ruby Felfire Bulwark
 				i(194316),	-- Tome of Forgotten Legends
 				i(191647),	-- Tuskarr Fishing Pole
 				-- Only Ruby Spaulders used.. The others might be in other Metas later in expansion / Braghe

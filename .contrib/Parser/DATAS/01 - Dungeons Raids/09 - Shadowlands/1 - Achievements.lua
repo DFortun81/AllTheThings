@@ -36,6 +36,19 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 				spell(373192),	-- Path of the First Ones
 			},
 		})),
+		ach(14418, {	-- Shadowlands Dungeon Hero
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				14408,	-- Heroic: De Other Side
+				14410,	-- Heroic: Halls of Atonement
+				14412,	-- Heroic: Mists of Tirna Scithe
+				14414,	-- Heroic: Plaguefall
+				14198,	-- Heroic: Sanguine Depths
+				14324,	-- Heroic: Spires of Ascension
+				14367,	-- Heroic: The Necrotic Wake
+				14416,	-- Heroic: Theater of Pain
+			}},
+		}),
 		ach(15651, {	-- Myths of the Shadowlands Dungeons
 			["timeline"] = { ADDED_9_2_5 },
 			-- Meta Achievement

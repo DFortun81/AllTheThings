@@ -27,6 +27,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		}),
 		filter(RECIPES, {
 			tier(CLASSIC_TIER, {
+				r(8388),	-- Find Minerals [Rank 2]
 				r(2577),	-- Mining
 				r(2578),	-- Mining
 				r(2579),	-- Mining

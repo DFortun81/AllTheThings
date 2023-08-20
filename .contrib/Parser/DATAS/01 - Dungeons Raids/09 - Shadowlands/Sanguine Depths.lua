@@ -7,8 +7,8 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 	inst(1189, {	-- Sanguine Depths
 		["coord"] = { 51.0, 30.1, REVENDRETH },
 		["maps"] = {
-			1675,	-- Sanguine Depths
-			1676,	-- Amphitheater of Sorrow / Ring of Souls
+			1675,	-- Depths of Despair
+			1676,	-- Amphitheater of Sorrow
 		},
 		["g"] = {
 			n(QUESTS, {

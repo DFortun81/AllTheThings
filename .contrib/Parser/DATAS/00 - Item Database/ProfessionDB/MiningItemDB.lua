@@ -8,7 +8,6 @@ i(0, 2576);			-- Mining (Journeyman) [REMOVED: 8.0.1]
 i(0, 3564);			-- Mining (Expert) [REMOVED: 8.0.1]
 i(0, 10248);		-- Mining (Artisan) [REMOVED: 8.0.1]
 i(0, 2580);			-- Find Minerals [Rank 1]
-i(0, 8388);			-- Find Minerals [Rank 2]
 i(0, 2656);			-- Mining Journal \\ Smelting
 i(0, 2659);			-- Smelt Bronze
 i(0, 2657);			-- Smelt Copper
@@ -29,6 +28,7 @@ i(0, 22967);		-- Smelt Enchanted Elementium
 --- QUEST ---
 i(0, 14891);		-- Smelt Dark Iron
 --- NYI ---
+i(0, 8388);			-- Find Minerals [Rank 2]
 i(0, 2577);			-- Mining
 i(0, 2578);			-- Mining
 i(0, 2579);			-- Mining

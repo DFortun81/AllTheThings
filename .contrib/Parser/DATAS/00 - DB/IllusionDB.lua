@@ -4,13 +4,9 @@ local i = function(itemID, illusionID, questID)
 end
 
 -----------------
--- PATCH 6.0.1 --
------------------
-i(118572, 5394, 42946);		-- Flames of Ragnaros
-
------------------
 -- PATCH 6.0.2 --
 -----------------
+i(118572, 5394, 42946);		-- Flames of Ragnaros
 i(120286, 5396, 42949);		-- Glorious Tyranny
 i(120287, 5397, 42950);		-- Primal Victory
 

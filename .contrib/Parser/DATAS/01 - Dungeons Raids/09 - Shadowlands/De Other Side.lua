@@ -7,10 +7,10 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 	inst(1188, {	-- De Other Side
 		["coord"] = { 68.6, 66.5, ARDENWEALD },
 		["maps"] = {
-			1678,	-- De Other Side - Mechagon
-			1680,	-- De Other Side
-			1677,	-- The Heap
+			1677,	-- Ardenweald
+			1678,	-- Mechagon
 			1679,	-- Zul'Gurub
+			1680,	-- De Other Side
 		},
 		["g"] = {
 			n(QUESTS, {
@@ -106,7 +106,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 						i(182736),	-- Rolling Agony
 						-- Items
 						i(182178),	-- Raptor Soul (SS!)
-						i(186998, {	-- Pallid Oracle Bones (RECIPE!)
+						i(186998, {	-- Pattern: Pallid Oracle Bones (RECIPE!)
 							["timeline"] = { ADDED_9_1_0 },
 						}),
 						i(179355),	-- Death God's Signet

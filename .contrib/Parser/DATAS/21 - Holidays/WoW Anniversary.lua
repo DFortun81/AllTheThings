@@ -910,7 +910,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 		}),
 	})),
-	n(WOW_ANNIVERSARY_SEVENTEEN, bubbleDown({ ["timeline"] = { "added 9.1.0.39185", "removed 9.1.0.39185" } }, {
+	n(WOW_ANNIVERSARY_SEVENTEEN, bubbleDown({ ["timeline"] = { "added 9.1.5.41031", "removed 9.1.5.41359" } }, {
 		ach(14942),	-- WoW's 17th Anniversary
 		n(MAILBOX, {
 			i(185906, {	-- Anniversary Gift
@@ -1949,7 +1949,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 		}),
 	})),
-	n(WOW_ANNIVERSARY_SEVENTEEN, bubbleDownSelf({ ["timeline"] = { "added 9.1.0.39185" } },{
+	n(WOW_ANNIVERSARY_SEVENTEEN, bubbleDownSelf({ ["timeline"] = { "added 9.1.5.41031" } },{
 		n(QUESTS, {
 			q(60215, {	-- Doomwalkin' Has Come Knockin'
 				["qg"] = 157113,	-- Chromie
@@ -2006,6 +2006,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		i(208210),	-- Celebration Package
 		i(208211),	-- Anniversary Gift
 		i(208543),	-- Lil' Frostwing (PET!)
+		i(208572),	-- Azure Worldchiller (MOUNT!)
 	})),
 })));
 --[[

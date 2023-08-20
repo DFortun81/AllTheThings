@@ -73,8 +73,8 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(95341, {	-- Armored Bloodwing (MOUNT!)
 			["timeline"] = { "added 5.2.0.16486", "removed 8.3.0" },
 		}),
-		i(190636, {	-- Armored Siege Kodo (MOUNT!)
-			["timeline"] = { "added 10.1.5" },
+		mount(367875, {	-- Armored Siege Kodo (MOUNT!)
+			["timeline"] = { ADDED_10_1_5 },
 		}),
 		i(54811, {	-- Celestial Steed (MOUNT!)
 			-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
@@ -202,7 +202,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(118516, {	-- Argi (PET!)
 			["timeline"] = { "added 6.0.1.18711" },
 		}),
-		battlepet(156, {	-- Bananas
+		pet(156, {	-- Bananas
 			["timeline"] = { ADDED_9_0_5, REMOVED_9_1_5 },
 		}),
 		pet(3153, {	-- Blinky

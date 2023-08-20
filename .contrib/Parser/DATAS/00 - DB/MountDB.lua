@@ -2,7 +2,6 @@ local Items = ItemDBConditional;
 local i = function(itemID, spellID)
 	Items[itemID] = { ["mountID"] = spellID, ["ignoreBonus"] = true };
 end
-
 -- If the mount is obtained from an item, use i(itemID, mountID);
 -- Otherwise use i(0, mountID); example if the mount is obtained from store.
 -- At the end the comment should contain the mount name not item name.
@@ -10,7 +9,17 @@ end
 -- MissingIDs also host mountIDs that are still missing in our database. For a full list of mountID see Database Harvester > Raw > Mounts.txt
 
 -----------------
---   CLASSIC   --
+-- CLASSIC WOW --
+-----------------
+-- TBC Classic --
+i(184865, 348459);	-- Reawakened Phase-Hunter
+
+-- Wrath Classic --
+i(192455, 372677);	-- Kalu'ak Whalebone Glider
+i(201699, 394209);	-- Festering Emerald Drake
+
+-----------------
+-- PATCH 1.0.0 --
 -----------------
 i(12302, 16056);	-- Ancient Frostsaber
 i(12351, 16081);	-- Arctic Wolf
@@ -365,7 +374,7 @@ i(43962, 54753);	-- White Polar Bear
 i(44230, 59791);	-- Wooly Mammoth (A)
 i(44231, 59793);	-- Wooly Mammoth (H)
 -- NYI --
-i(44555, 61443);	-- Swift Mooncloth Carpet	/	Swift Mooncloth Carpet (NOT IN GAME)
+i(44555, 61442);	-- Swift Mooncloth Carpet	/	Swift Mooncloth Carpet (NOT IN GAME)
 i(44557, 61444);	-- Swift Shadoweave Carpet	/	Swift Ebonweave Carpet (NOT IN GAME)
 i(44556, 61446);	-- Swift Spellfire Carpet	/	Swift Spellfire Carpet (NOT IN GAME)
 
@@ -850,7 +859,7 @@ i(128480, 190690);	-- Bristling Hellboar	/	Bristling Hellboar
 -- PATCH 6.2.1 --
 -----------------
 -- NYI --
---(0, 194046);	-- Swift Spectral Rylak
+i(0, 194046);		-- Swift Spectral Rylak
 
 -----------------
 -- PATCH 6.2.2 --
@@ -869,7 +878,7 @@ i(133543, 201098);	-- Infinite Timereaver
 -----------------
 -- PATCH 7.0.1 --
 -----------------
-i(0, 200175);	-- Felsaber
+i(0, 200175);		-- Felsaber
 
 -----------------
 -- PATCH 7.0.3 --
@@ -1187,8 +1196,13 @@ i(0, 302797);		-- Swift Spectral Pterrordax
 -----------------
 -- PATCH 8.2.5 --
 -----------------
+-- #if AFTER 10.1.5
+i(207964, 302361);		-- Alabaster Stormtalon
+i(207963, 302362);		-- Alabaster Thunderwing
+-- #else
 i(0, 302361);		-- Alabaster Stormtalon
 i(0, 302362);		-- Alabaster Thunderwing
+-- #endif
 i(173297, 307263);	-- Explorer's Dunetrekker
 i(173299, 307256);	-- Explorer's Jungle Hopper
 i(172023, 306421);	-- Frostwolf Snarler
@@ -1237,6 +1251,19 @@ i(0, 326390);		-- Steamscale Incinerator
 -----------------
 -- PATCH 9.0.1 --
 -----------------
+--- NYI ---
+i(0, 312772);		-- Gilded Prowler
+i(0, 332257);		-- Gorm (Yellow)
+i(0, 332908);		-- PH Devourer Mite (Green)
+i(0, 312758);		-- PH Epic Phalynx
+i(0, 312756);		-- PH Phalynx
+i(182083, 332482);	-- Bonecleaver's Skullboar
+i(181817, 318052);	-- Deathbringer's Flayedwing
+i(184035, 0);		-- Silessa's Harness
+
+-----------------
+-- PATCH 9.0.2 --
+-----------------
 i(183800, 342666);	-- Amber Ardenmoth
 i(182650, 339632);	-- Arboreal Gulper
 i(181815, 332466);	-- Armored Bonehoof Tauralus
@@ -1283,6 +1310,7 @@ i(182079, 336042);	-- Hulking Deathroc
 i(184161, 344576);	-- Infested Necroray
 i(182954, 332923);	-- Inquisition Gargon
 i(182589, 333027);	-- Loyal Gorger
+i(0, 308087);		-- Lucky Yun
 i(182082, 332484);	-- Lurid Bloodtusk
 i(181819, 336036);	-- Marrowfang
 i(184167, 312762);	-- Mawsworn Soulhunter
@@ -1298,12 +1326,14 @@ i(182596, 332903);	-- Rampart Screecher
 i(180413, 332243);	-- Shadeleaf Runestag
 i(180727, 332252);	-- Shimmermist Runner
 i(180748, 318051);	-- Silky Shimmermoth
+i(0, 346141);		-- Slime Serpent
 i(181316, 312777);	-- Silvertip Dredwing
 i(180772, 334433);	-- Silverwind Larion
 i(183715, 332927);	-- Sinfall Gargon
 i(183937, 332400);	-- Sinful Gladiator's Soul Eater
 i(182614, 339588);	-- Sinrunner Blanchy
 i(182717, 340068);	-- Sintouched Deathwalker
+i(0, 341821);		-- Snowstorm
 i(180725, 334364);	-- Spinemaw Gladechewer
 i(180773, 312765);	-- Sundancer
 i(180728, 312767);	-- Swift Gloomhoof
@@ -1318,22 +1348,6 @@ i(183615, 341766);	-- Warstitched Darkhound
 i(180730, 334366);	-- Wild Glimmerfur Prowler
 i(180731, 334352);	-- Wildseed Cradle
 i(180415, 332245);	-- Winterborn Runestag
--- NYI --
-i(182083, 332482);	-- Bonecleaver's Skullboar		/	Bonecleaver's Skullboar
-i(181817, 318052);	-- Deathbringer's Flayedwing	/	Deathbringer's Flayedwing
-i(0, 312772);		-- Gilded Prowler
-i(0, 332257);		-- Gorm (Yellow)
-i(0, 332908);		-- PH Devourer Mite (Green)
-i(0, 312758);		-- PH Epic Phalynx
-i(0, 312756);		-- PH Phalynx
-i(184035, 0);		-- Silessa's Harness
-
------------------
--- PATCH 9.0.2 --
------------------
-i(0, 308087);		-- Lucky Yun
-i(0, 346141);		-- Slime Serpent
-i(0, 341821);		-- Snowstorm
 
 -----------------
 -- PATCH 9.0.5 --
@@ -1342,7 +1356,7 @@ i(184168, 344577);	-- Bound Shadehound
 i(0, 347812);		-- Sapphire Skyblazer
 i(0, 346136);		-- Viridian Phase-Hunter
 i(0, 348162);		-- Wandering Ancient
--- NYI --
+--- NYI ---
 i(0, 347813);		-- Fireplume Phoenix
 
 -----------------
@@ -1369,7 +1383,6 @@ i(186653, 339957);	-- Hand of Hrestimorak
 i(186713, 354354);	-- Hand of Nilganihmaht
 i(186654, 354355);	-- Hand of Salaranga
 i(185996, 332904);	-- Harvester's Dredwing
-i(186469, 62048);	-- Illidari Doomhawk
 i(186489, 347250);	-- Lord of the Corpseflies
 i(186643, 354362);	-- Maelie The Wanderer
 i(186487, 353883);	-- Maldraxxian Corpsefly
@@ -1396,20 +1409,21 @@ i(186178, 348770);	-- Vicious War Gorm (A)
 i(186179, 348769);	-- Vicious War Gorm (H)
 i(186000, 352441);	-- Wild Hunt Legsplitter
 i(186495, 353858);	-- Winter Wilderling
--- NYI --
-i(186639, 353264);	-- Pilfered Gearglider	/	Pilfered Gearglider
+--- NYI ---
+i(186639, 353264);	-- Pilfered Gearglider
+i(186640, 353265);	-- Silver Gearglide
+i(186491, 353860);	-- Spring Wilderling
 i(187412, 0);		-- Shardhide Ka-Sha
-i(186640, 353265);	-- Silver Gearglider	/	Silver Gearglider
-i(186491, 353860);	-- Spring Wilderling	/	Spring Wilderling Harness
 
 -----------------
 -- PATCH 9.1.5 --
 -----------------
+i(186469, 62048);	-- Illidari Doomhawk
 i(0, 363613);		-- Lightforged Ruinstrider
 i(188674, 359318);	-- Soaring Spelltome
 i(187595, 359013);	-- Val'sharah Hippogryph
 i(0, 359317);		-- Wen Lo, the River's Edge
--- NYI --
+--- NYI ---
 i(0, 350529);		-- NAK's Test Mount [DNT]
 
 -----------------
@@ -1458,9 +1472,9 @@ i(187642, 349823);	-- Vicious Warstalker (H)
 i(187660, 342678);	-- Vespoid Flutterer
 i(187682, 359407);	-- Wastewarped Deathwalker
 i(190768, 368158);	-- Zereth Overseer
--- NYI --
-i(187674, 0);		-- [PH] Progenitor Jellyfish (Dark)
+--- NYI ---
 i(0, 356802);		-- Holy Lightstrider
+i(187674, 0);		-- [PH] Progenitor Jellyfish (Dark)
 
 -----------------
 -- PATCH 9.2.5 --
@@ -1472,23 +1486,61 @@ i(190170, 366791);	-- Jigglesworth Sr.
 i(0, 367676);		-- Nether-Gorged Greatwyrm
 i(192557, 334482);	-- Restoration Deathwalker
 i(0, 359843);		-- Tangled Dreamweaver
+--- NYI ---
+i(0, 367190);		-- [DND] Test Mount JZB
+i(190581, 0);		-- Nether-Gorged Greatwyrm
 
 -----------------
 -- PATCH 9.2.7 --
 -----------------
 i(0, 386452);		-- Frostbrood Proto-Wyrm
--- NYI --
-i(0, 367190);	-- [DND] Test Mount JZB model:88719
-
------------------
--- PATCH 9.2.7 --
------------------
-i(191290, 370346);	-- Eternal Gladiator's Soul Eater
-i(192557, 334482);	-- Restoration Deathwalker
 
 ------------------
 -- PATCH 10.0.0 --
 ------------------
+i(0, 315132);		-- Gargantuan Grrloc
+i(0, 381529);		-- Telix the Stormhorn
+--- NYI ---
+i(0, 371571);		-- Dragon Isles Drake Model Test
+i(0, 372995);		-- Swift Spectral Drake
+i(0, 376898);		-- [PH] Black Armored River Otter
+i(0, 376909);		-- [PH] Blue Armored River Otter
+i(0, 387948);		-- [PH] Wind Proto-Drake
+i(0, 351404);		-- PH Mammoth V2 Lava
+i(0, 385767);		-- PH White Slyvern
+i(0, 385771);		-- PH Yellow Slyvern
+i(194722, 377849);	-- Carrier Yeti
+i(192804, 374263);	-- Restless Hornstrider
+i(198823, 385253);	-- [PH] Brown Wind Eagle
+i(192766, 349943);	-- [PH] Dragonfly Orange
+i(192765, 374071);	-- [PH] Dragonfly Yellow
+i(192788, 374181);	-- [PH] Mammoth V2 Blue
+i(192787, 351403);	-- [PH] Mammoth V2 Dark
+i(192789, 374172);	-- [PH] Mammoth V2 Gray
+i(198822, 385260);	-- [PH] Sepia Wind Eagle
+i(192771, 352927);	-- [PH] Water Salamander Blue
+i(192773, 374093);	-- [PH] Water Salamander Orange
+i(192774, 374097);	-- [PH] Water Salamander Pink
+i(192748, 373913);	-- PH Moose Bull Brown
+i(192751, 373967);	-- PH Moose Bull Dark
+i(192781, 374140);	-- PH Lava Slug Blue
+i(192778, 350220);	-- PH Lava Slug Orange
+i(192780, 350220);	-- PH Lava Slug Orange [ItenName: [PH] Lava Snail Orange]
+i(192782, 374142);	-- PH Lava Slug Yellow
+i(192802, 374258);	-- PH Primal Tallstrider Black
+i(192803, 374259);	-- PH Primal Tallstrider Red
+i(192801, 374255);	-- PH Primal Tallstrider White
+i(192793, 374200);	-- PH Thunder Lizard Black
+i(192794, 374201);	-- PH Thunder Lizard Blue
+i(192792, 351408);	-- PH Thunder Lizard Green
+i(192796, 374204);	-- PH Thunder Lizard Light
+i(194106, 0);		-- Highland Drake
+i(192770, 0);		-- [PH] Moose Bull Black
+
+------------------
+-- PATCH 10.0.2 --
+------------------
+i(191114, 369476);	-- Amalgam of Rage
 i(198809, 385131);	-- Armored Vorquin Leystrider
 i(192762, 374034);	-- Azure Skitterfly
 i(201720, 394219);	-- Bronze Vorquin
@@ -1498,11 +1550,12 @@ i(194521, 368901);	-- Cliffside Wylderdrake
 i(202086, 377071);	-- Crimson Gladiator's Drake
 i(201702, 394216);	-- Crimson Vorquin
 i(198821, 395644);	-- Divine Kiss of Ohn'ahra
-i(0, 315132);		-- Gargantuan Grrloc
 i(198808, 384963);	-- Guardian Vorquin
+i(199412, 387231);	-- Hailstorm Armoredon
 i(194705, 360954);	-- Highland Drake
 i(198871, 359409);	-- Iskaara Trader's Ottuk
 i(198873, 376879);	-- Ivory Trader's Ottuk
+i(0, 369451);		-- Jade, Bright Foreseer
 i(201440, 359622);	-- Liberated Slyvern
 i(192799, 374247);	-- Lizi, Thunderspine Tramper
 i(192601, 373859);	-- Loyal Magmammoth
@@ -1520,74 +1573,26 @@ i(192784, 374155);	-- Shellack
 i(192775, 374098);	-- Stormhide Salamanther
 i(198810, 385134);	-- Swift Armored Vorquin
 i(192761, 374032);	-- Tamed Skitterfly
-i(0, 381529);		-- Telix the Stormhorn
 i(201454, 385738);	-- Temperamental Skyclaw
 i(192764, 374048);	-- Verdant Skitterfly
+i(201789, 394737);	-- Vicious Sabertooth [A]
+i(201788, 394738);	-- Vicious Sabertooth [H]
 i(194549, 368899);	-- Windborne Velocidrake
 i(200118, 376880);	-- Yellow Scouting Ottuk
 i(201425, 376913);	-- Yellow War Ottuk
 i(198825, 385266);	-- Zenet Hatchling
--- NYI --
-i(194722, 377849);	-- Carrier Yeti				/	Carrier Yeti
-i(0, 371571);		-- Dragon Isles Drake Model Test
-i(194106, 0);		-- Highland Drake
-i(192770, 0);		-- Noble Elderhorn				/	[PH] Moose Bull Black
-i(192804, 374263);	-- Restless Hornstrider			/	Restless Hornstrider
-i(0, 372995);		-- Swift Spectral Drake
-i(0, 376898);		-- [PH] Black Armored River Otter
-i(0, 376909);		-- [PH] Blue Armored River Otter
-i(198823, 385253);	-- [PH] Brown Wind Eagle		/	[PH] Brown Wind Eagle
-i(198824, 385262);	-- [PH] Dark Wind Eagle			/	[PH] Dark Wind Eagle
-i(192766, 349943);	-- [PH] Dragonfly Orange		/	[PH] Dragonfly Orange
-i(192765, 374071);	-- [PH] Dragonfly Yellow		/	[PH] Dragonfly Yellow
-i(192788, 374181);	-- [PH] Mammoth V2 Blue			/	[PH] Mammoth V2 Blue
-i(192787, 351403);	-- [PH] Mammoth V2 Dark			/	[PH] Mammoth V2 Dark
-i(192789, 374172);	-- [PH] Mammoth V2 Gray			/	[PH] Mammoth V2 Gray
-i(198822, 385260);	-- [PH] Sepia Wind Eagle		/	[PH] Sepia Wind Eagle
-i(192771, 352927);	-- [PH] Water Salamander Blue	/	[PH] Water Salamander Blue
-i(192773, 374093);	-- [PH] Water Salamander Orange	/	[PH] Water Salamander Orange
-i(192774, 374097);	-- [PH] Water Salamander Pink	/	[PH] Water Salamander Pink
-i(0, 387948);		-- [PH] Wind Proto-Drake
-i(192748, 373913);	-- PH Moose Bull Brown			/	[PH] Moose Bull Brown
-i(192751, 373967);	-- PH Moose Bull Dark			/	[PH] Moose Bull Dark
-i(192807, 374278);	-- PH Lava Mammoth Yellow		/	PH Lava Mammoth Yellow
-i(192781, 374140);	-- PH Lava Slug Blue			/	[PH] Lava Slug Blue
-i(192778, 350220);	-- PH Lava Slug Orange			/	[PH] Lava Slug Orange
-i(192780, 350220);	-- PH Lava Slug Orange			/	[PH] Lava Snail Orange
-i(192782, 374142);	-- PH Lava Slug Yellow			/	[PH] Lava Slug Yellow
-i(0, 351404);		-- PH Mammoth V2 Lava
-i(192802, 374258);	-- PH Primal Tallstrider Black	/	PH Primal Tallstrider Black
-i(192803, 374259);	-- PH Primal Tallstrider Red	/	PH Primal Tallstrider Red
-i(192801, 374255);	-- PH Primal Tallstrider White	/	PH Primal Tallstrider White
-i(192793, 374200);	-- PH Thunder Lizard Black		/	PH Thunder Lizard Black
-i(192794, 374201);	-- PH Thunder Lizard Blue		/	PH Thunder Lizard Blue
-i(192792, 351408);	-- PH Thunder Lizard Green		/	PH Thunder Lizard Green
-i(192796, 374204);	-- PH Thunder Lizard Light		/	PH Thunder Lizard Light
-i(0, 385767);		-- PH White Slyvern
-i(0, 385771);		-- PH Yellow Slyvern
-
-------------------
--- PATCH 10.0.2 --
-------------------
-i(191114, 369476);	-- Amalgam of Rage
-i(199412, 387231);	-- Hailstorm Armoredon
-i(201789, 394737);	-- Vicious Sabertooth [A]
-i(201788, 394738);	-- Vicious Sabertooth [H]
-i(0, 369451);		-- Jade Foreseer
 
 ------------------
 -- PATCH 10.0.5 --
 ------------------
 i(190231, 366962);	-- Ash'adar, Harbinger of Dawn
 i(192800, 352926);	-- Skyskin Hornstrider
--- NYI --
-i(0, 397406);		-- [PH] Magical Fish Mount
-i(190767, 368126);	-- Armored Golden Pterrordax
+--- NYI ---
 i(0, 369480);		-- Cerulean Marsh Hopper
+i(190767, 368126);	-- Armored Golden Pterrordax
 i(190539, 367620);	-- Coral-Stalker Waveray
 i(190168, 366789);	-- Crusty Crawler
 i(203226, 399708);	-- Stormfused Salamanther
-i(0, 395095);		-- Whelpling
 
 ------------------
 -- PATCH 10.0.7 --
@@ -1607,6 +1612,7 @@ i(205155, 408313);	-- Big Slick in the City
 i(205209, 408653);	-- Boulder Hauler
 i(205204, 408651);	-- Cataloged Shalewing
 i(205203, 408647);	-- Cobalt Shalewing
+i(206027, 411565);	-- Felcrystal Scorpion
 i(206156, 412088);	-- Grotto Netherwing Drake
 i(205197, 408627);	-- Igneous Shalewing
 i(204798, 406637);	-- Inferno Armoredon
@@ -1622,15 +1628,15 @@ i(205246, 409034);	-- Vicious War Snail [A]
 i(205245, 409032);	-- Vicious War Snail [H]
 i(204361, 368893);	-- Winding Slitherdrake
 i(0, 397406);		-- Wonderous Wavewhisker
-
--- NYI
-i(206027, 411565);	-- Felcrystal Scorpion
+--- NYI ---
 i(205206, 408648);	-- Shalewing, Fire [PH]
+i(206167, 0);		-- Way of the Wonderous Wavewhisker
 
 ------------------
 -- PATCH 10.1.5 --
 ------------------
-i(190636, 367875);	-- Armored Siege Kodo (Shop)
+i(207821, 417245);	-- Ancestral Clefthoof
+i(0, 367875);		-- Armored Siege Kodo
 i(206676, 414326);	-- Felstorm Dragon
 i(206675, 414324);	-- Gold-Toed Albatross
 i(206567, 413827);	-- Harbor Gryphon
@@ -1643,26 +1649,16 @@ i(206680, 414334);	-- Scourgebound Vanquisher
 i(206678, 414327);	-- Sulfur Hound
 i(206585, 413922);	-- Valiance
 i(206673, 414316);	-- White War Wolf
-
 --- NYI ---
-i(0, 417554);		-- Cliffside Wylderdrake
-i(0, 413409);		-- Highland Drake
-i(0, 417548);		-- Renewed Proto-Drake
-i(0, 417552);		-- Windborne Velocidrake
-i(0, 417556);		-- Winding Slitherdrake
-
+i(190636, 0);		-- Armored Siege Kodo
 
 ------------------
 -- PATCH 10.1.7 --
 ------------------
-i(205208, 408654);	-- Sandy Shalewing TODO: The Item doesnt exist in the DB at the moment... Maybe you never get it? Check Later
-
------------------
--- CLASSIC WOW --
------------------
--- TBC Classic --
-i(184865, 348459);	-- Reawakened Phase-Hunter
-
--- Wrath Classic --
-i(192455, 372677);	-- Kalu'ak Whalebone Glider
-i(201699, 394209);	-- Festering Emerald Drake
+i(208572, 420097);	-- Azure Worldchiller
+i(198824, 385262);	-- Duskwing Ohuna
+i(192807, 374278);	-- Renewed Magmammoth
+i(205208, 408654);	-- Sandy Shalewing [TODO: Check if you actually get item]
+-- Unsorted
+i(208598, 419345);	-- Eve's Ghastly Rider
+i(0, 419567);		-- Ginormous Grrloc
