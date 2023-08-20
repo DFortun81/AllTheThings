@@ -51,7 +51,6 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { AD
 				}),
 				q(50046, {	-- It's a Sabotage
 					["qg"] = 130030,	-- Kelsey Steelspark
-					["sourceQuest"] = 49981,	-- Witness to the Wound
 					["coord"] = { 69.4, 17.6, SILITHUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
