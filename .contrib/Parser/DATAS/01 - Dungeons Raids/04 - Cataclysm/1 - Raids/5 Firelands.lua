@@ -888,27 +888,30 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 root(ROOTS.NeverImplemented, {
 	tier(CATA_TIER, {
 		inst(78, {	-- Firelands
-			i(71570),	-- Bracers of Forked Lightning
-			i(71400),	-- Girdle of the Indomitable Flame
-			i(71583),	-- Bracers of Imperious Truths
-			i(71584),	-- Gigantiform Bracers
-			i(71585),	-- Bracers of Regal Force
-			i(71582),	-- Bracers of Misting Ash
-			i(71394),	-- Flamebinding Girdle
-			i(71569),	-- Flamebinder Bracers
-			i(71581),	-- Smolderskull Bindings
-			d(NORMAL_RAID, {
-				-- Normal version tokens that don't exist (here in NYI with Normal wrapper just in case someone gets them to drop)
-				i(71679),	-- Chest of the Fiery Conqueror
-				i(71672),	-- Chest of the Fiery Vanquisher
-				i(71686),	-- Chest of the Fiery Protector
-				i(71676),	-- Gauntlets of the Fiery Conqueror
-				i(71683),	-- Gauntlets of the Fiery Protector
-				i(71669),	-- Gauntlets of the Fiery Vanquisher
-				i(71678),	-- Leggings of the Fiery Conqueror
-				i(71685),	-- Leggings of the Fiery Protector
-				i(71671),	-- Leggings of the Fiery Vanquisher
-			}),
+			["maps"] = { 367, 368, 369 },
+			["groups"] = {
+				i(71570),	-- Bracers of Forked Lightning
+				i(71400),	-- Girdle of the Indomitable Flame
+				i(71583),	-- Bracers of Imperious Truths
+				i(71584),	-- Gigantiform Bracers
+				i(71585),	-- Bracers of Regal Force
+				i(71582),	-- Bracers of Misting Ash
+				i(71394),	-- Flamebinding Girdle
+				i(71569),	-- Flamebinder Bracers
+				i(71581),	-- Smolderskull Bindings
+				d(NORMAL_RAID, {
+					-- Normal version tokens that don't exist (here in NYI with Normal wrapper just in case someone gets them to drop)
+					i(71679),	-- Chest of the Fiery Conqueror
+					i(71672),	-- Chest of the Fiery Vanquisher
+					i(71686),	-- Chest of the Fiery Protector
+					i(71676),	-- Gauntlets of the Fiery Conqueror
+					i(71683),	-- Gauntlets of the Fiery Protector
+					i(71669),	-- Gauntlets of the Fiery Vanquisher
+					i(71678),	-- Leggings of the Fiery Conqueror
+					i(71685),	-- Leggings of the Fiery Protector
+					i(71671),	-- Leggings of the Fiery Vanquisher
+				}),
+			},
 		}),
 	}),
 });

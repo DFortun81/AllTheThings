@@ -299,7 +299,10 @@ root(ROOTS.HiddenQuestTriggers, {
 root(ROOTS.NeverImplemented, {
 	tier(CATA_TIER, {
 		inst(69, {	-- Lost City of the Tol'vir
-			i(56405),	-- Oasis Bracers (Lost City)
+			["mapID"] = 277,
+			["groups"] = {
+				i(56405),	-- Oasis Bracers (Lost City)
+			},
 		}),
 	}),
 });

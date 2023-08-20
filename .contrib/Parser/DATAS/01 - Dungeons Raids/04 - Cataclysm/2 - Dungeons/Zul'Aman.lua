@@ -288,9 +288,12 @@ root(ROOTS.HiddenQuestTriggers, {
 root(ROOTS.NeverImplemented, {
 	tier(CATA_TIER, {
 		inst(77, {	-- Zul'Aman
-			filter(MAIL, {
-				i(33964),	-- Helm of the Stormcaller - Never Added
-			}),
+			["mapID"] = ZULAMAN,
+			["groups"] = {
+				filter(MAIL, {
+					i(33964),	-- Helm of the Stormcaller - Never Added
+				}),
+			},
 		}),
 	}),
 });

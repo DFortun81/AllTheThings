@@ -791,83 +791,86 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 root(ROOTS.NeverImplemented, {
 	tier(CATA_TIER, {
 		inst(187, {	-- Dragon Soul
-			i(78499),	-- Bones of the Damned
-			i(78503),	-- Shining Carapace of Glory
-			i(78525),	-- Grimfist Crushers
-			i(78529),	-- Gleaming Grips of Mending
-			i(78534),	-- Visage of Petrification
-			i(78538),	-- Glowing Wings of Hope
-			i(78563),	-- Blinding Girdle of Truth
-			i(78564),	-- Demonbone Waistguard
-			i(78569),	-- Heartcrusher Wristplates
-			i(78573),	-- Flashing Bracers of Warmth
-			i(78578),	-- Shining Carapace of Glory
-			i(78583),	-- Bones of the Damned
-			i(78584),	-- Chestplate of the Unshakable Titan
-			i(78605),	-- Grimfist Crushers
-			i(78606),	-- Gauntlets of Feathery Blows
-			i(78612),	-- Gleaming Grips of Mending
-			i(78614),	-- Visage of Petrification
-			i(78615),	-- Jaw of Repudiation
-			i(78621),	-- Glowing Wings of Hope
-			i(78644),	-- Blinding Girdle of Truth
-			i(78645),	-- Demonbone Waistguard
-			i(78646),	-- Forgesmelter Waistplate
-			i(78648),	-- Flashing Bracers of Warmth
-			i(78649),	-- Heartcrusher Wristplates
-			i(78650),	-- Bracers of Unrelenting Excellence
-			i(78532),	-- Clockwinder's Immaculate Gloves
-			i(78533),	-- The Hands of Gilly
-			i(78541),	-- Hood of Hidden Flesh
-			i(78542),	-- Soulgaze Cowl
-			i(78555),	-- Robes of Searing Shadow
-			i(78556),	-- Lightwarper Vestments
-			i(78607),	-- The Hands of Gilly
-			i(78608),	-- Clockwinder's Immaculate Gloves
-			i(78620),	-- Soulgaze Cowl
-			i(78635),	-- Lightwarper Vestments
-			i(78501),	-- Dragonflayer Vest
-			i(78502),	-- Ghostworld Chestguard
-			i(78512),	-- Boneshard Boots
-			i(78513),	-- Sabatons of the Graceful Spirit
-			i(78527),	-- Arrowflick Gauntlets
-			i(78528),	-- Gloves of Ghostly Dreams
-			i(78536),	-- Zeherah's Dragonskull Crown
-			i(78537),	-- Wolfdream Circlet
-			i(78561),	-- Cord of Dragon Sinew
-			i(78562),	-- Girdle of Shamanic Fury
-			i(78571),	-- Dragonbelly Bracers
-			i(78572),	-- Bracers of the Spectral Wolf
-			i(78579),	-- Dragonflayer Vest
-			i(78596),	-- Boneshard Boots
-			i(78610),	-- Arrowflick Gauntlets
-			i(78619),	-- Zeherah's Dragonskull Crown
-			i(78642),	-- Cord of Dragon Sinew
-			i(78653),	-- Dragonbelly Bracers
-			i(78504),	-- Shadowbinder Chestguard
-			i(78505),	-- Decaying Herbalist's Robes
-			i(78516),	-- Rooftop Griptoes
-			i(78517),	-- Boots of Fungoid Growth
-			i(78530),	-- Lightfinger Handwraps
-			i(78531),	-- Fungus-Born Gloves
-			i(78539),	-- Nocturnal Gaze
-			i(78540),	-- Helmet of Perpetual Rebirth
-			i(78565),	-- Belt of Hidden Keys
-			i(78566),	-- Belt of Universal Curing
-			i(78574),	-- Bracers of Manifold Pockets
-			i(78575),	-- Luminescent Bracers
-			i(78581),	-- Shadowbinder Chestguard
-			i(78582),	-- Decaying Herbalist's Robes
-			i(78592),	-- Boots of Fungoid Growth
-			i(78594),	-- Rooftop Griptoes
-			i(78604),	-- Fungus-Born Gloves
-			i(78609),	-- Lightfinger Handwraps
-			i(78617),	-- Nocturnal Gaze
-			i(78618),	-- Helmet of Perpetual Rebirth
-			i(78640),	-- Belt of Hidden Keys
-			i(78641),	-- Belt of Universal Curing
-			i(78652),	-- Luminescent Bracers
-			i(78654),	-- Bracers of Manifold Pockets
+			["mapID"] = 409,	--  Wyrmrest Temple [Starting Area]
+			["groups"] = {
+				i(78499),	-- Bones of the Damned
+				i(78503),	-- Shining Carapace of Glory
+				i(78525),	-- Grimfist Crushers
+				i(78529),	-- Gleaming Grips of Mending
+				i(78534),	-- Visage of Petrification
+				i(78538),	-- Glowing Wings of Hope
+				i(78563),	-- Blinding Girdle of Truth
+				i(78564),	-- Demonbone Waistguard
+				i(78569),	-- Heartcrusher Wristplates
+				i(78573),	-- Flashing Bracers of Warmth
+				i(78578),	-- Shining Carapace of Glory
+				i(78583),	-- Bones of the Damned
+				i(78584),	-- Chestplate of the Unshakable Titan
+				i(78605),	-- Grimfist Crushers
+				i(78606),	-- Gauntlets of Feathery Blows
+				i(78612),	-- Gleaming Grips of Mending
+				i(78614),	-- Visage of Petrification
+				i(78615),	-- Jaw of Repudiation
+				i(78621),	-- Glowing Wings of Hope
+				i(78644),	-- Blinding Girdle of Truth
+				i(78645),	-- Demonbone Waistguard
+				i(78646),	-- Forgesmelter Waistplate
+				i(78648),	-- Flashing Bracers of Warmth
+				i(78649),	-- Heartcrusher Wristplates
+				i(78650),	-- Bracers of Unrelenting Excellence
+				i(78532),	-- Clockwinder's Immaculate Gloves
+				i(78533),	-- The Hands of Gilly
+				i(78541),	-- Hood of Hidden Flesh
+				i(78542),	-- Soulgaze Cowl
+				i(78555),	-- Robes of Searing Shadow
+				i(78556),	-- Lightwarper Vestments
+				i(78607),	-- The Hands of Gilly
+				i(78608),	-- Clockwinder's Immaculate Gloves
+				i(78620),	-- Soulgaze Cowl
+				i(78635),	-- Lightwarper Vestments
+				i(78501),	-- Dragonflayer Vest
+				i(78502),	-- Ghostworld Chestguard
+				i(78512),	-- Boneshard Boots
+				i(78513),	-- Sabatons of the Graceful Spirit
+				i(78527),	-- Arrowflick Gauntlets
+				i(78528),	-- Gloves of Ghostly Dreams
+				i(78536),	-- Zeherah's Dragonskull Crown
+				i(78537),	-- Wolfdream Circlet
+				i(78561),	-- Cord of Dragon Sinew
+				i(78562),	-- Girdle of Shamanic Fury
+				i(78571),	-- Dragonbelly Bracers
+				i(78572),	-- Bracers of the Spectral Wolf
+				i(78579),	-- Dragonflayer Vest
+				i(78596),	-- Boneshard Boots
+				i(78610),	-- Arrowflick Gauntlets
+				i(78619),	-- Zeherah's Dragonskull Crown
+				i(78642),	-- Cord of Dragon Sinew
+				i(78653),	-- Dragonbelly Bracers
+				i(78504),	-- Shadowbinder Chestguard
+				i(78505),	-- Decaying Herbalist's Robes
+				i(78516),	-- Rooftop Griptoes
+				i(78517),	-- Boots of Fungoid Growth
+				i(78530),	-- Lightfinger Handwraps
+				i(78531),	-- Fungus-Born Gloves
+				i(78539),	-- Nocturnal Gaze
+				i(78540),	-- Helmet of Perpetual Rebirth
+				i(78565),	-- Belt of Hidden Keys
+				i(78566),	-- Belt of Universal Curing
+				i(78574),	-- Bracers of Manifold Pockets
+				i(78575),	-- Luminescent Bracers
+				i(78581),	-- Shadowbinder Chestguard
+				i(78582),	-- Decaying Herbalist's Robes
+				i(78592),	-- Boots of Fungoid Growth
+				i(78594),	-- Rooftop Griptoes
+				i(78604),	-- Fungus-Born Gloves
+				i(78609),	-- Lightfinger Handwraps
+				i(78617),	-- Nocturnal Gaze
+				i(78618),	-- Helmet of Perpetual Rebirth
+				i(78640),	-- Belt of Hidden Keys
+				i(78641),	-- Belt of Universal Curing
+				i(78652),	-- Luminescent Bracers
+				i(78654),	-- Bracers of Manifold Pockets
+			},
 		}),
 	}),
 });
