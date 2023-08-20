@@ -178,6 +178,196 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 			["coord"] = { 54.6, 39,  SHATTRATH_CITY },
 			["provider"] = { "n", 123252 },	-- Vormu
 			["isWeekly"] = true,
+			["g"] = {
+				i(208091, {	-- Cache of Timewarped Treasures (BC)
+					i(133543),	-- Infinite Timereaver (MOUNT!)
+					i(171942),	-- Cowl of Absolution
+					i(171941),	-- Cowl o the Tempest
+					i(171943),	-- Hood of Absolution
+					i(171940),	-- Hood of the Malefic
+					i(171929),	-- Lightbringer Faceguard
+					i(171930),	-- Lightbringer Greathelm
+					i(171931),	-- Lightbringer War-Helm
+					i(171932),	-- Gronnstalker's Helmet
+					i(171927),	-- Onslaught Battle-Helm
+					i(171928),	-- Onslaught Greathelm
+					i(171935),	-- Skyshatter Cover
+					i(171934),	-- Skyshatter Headguard
+					i(171933),	-- Skyshatter Helmet
+					i(171936),	-- Slayer's Helm
+					i(171938),	-- Thunderheart Cover
+					i(171939),	-- Thunderheart Headguard
+					i(171937),	-- Thunderheart Helmet
+					i(171502),	-- Apostle of Argus
+					i(171496),	-- Cataclysm's Edge
+					i(171504),	-- Tempest of Chaos
+					i(171500),	-- Bristleblitz Striker
+					i(171503),	-- Antonidas' Aegis of Rapt Concentration
+					i(171505),	-- Scepter of Purification
+					i(171501),	-- Mail of Fevered Pursuit
+					i(171499),	-- Midnight Chestguard
+					i(171507),	-- Robes of Rhonin
+					i(171498),	-- Savior's Grasp
+					i(171506),	-- Leggings of Eternity
+					i(171497),	-- Legguards of Endless Rage
+					i(122112),	-- Hyjal Wisp (PET!)
+					i(171912),	-- Crystalforge Faceguard
+					i(171914),	-- Crystalforge Greathelm
+					i(171913),	-- Crystalforge War-Helm
+					i(171916),	-- Deathmantle Helm
+					i(171919),	-- Cataclysm Headguard
+					i(171920),	-- Cataclysm Headpiece
+					i(171921),	-- Cataclysm Helm
+					i(171925),	-- Nordrassil Headdress
+					i(171924),	-- Nordrassil Headguard
+					i(171926),	-- Nordrassil Headpiece
+					i(171917),	-- Cowl of the Avatar
+					i(171918),	-- Hood of the Avatar
+					i(171910),	-- Destroyer Battle-Helm
+					i(171911),	-- Destroyer Greathelm
+					i(171915),	-- Rift Stalker Helm
+					i(171922),	-- Cowl of Tirisfall
+					i(171923),	-- Hood of the Corruptor
+					i(171481),	-- Glorious Gauntlets of Crestfall
+					i(171471),	-- Krakken-Heart Breastplate
+					i(171472),	-- Fang of Vashj
+					i(171474),	-- Serpent Spine Longbow
+					i(171477),	-- Lightfathom Scepter
+					i(171480),	-- Runetotem's Mantle
+					i(171476),	-- Vestments of the Sea-Witch
+					i(171475),	-- Belt of One-Hundred Deaths
+					i(171473),	-- Cobta-Lash Boots
+					i(171479),	-- Coral Band of the Revived
+					i(171478),	-- Ring of Endless Coils
+					i(171482),	-- Prism of Inner Calm
+					i(97554),	-- Coilfang Stalker (PET!)
+					i(171902),	-- Cataclysm Chestguard
+					i(171903),	-- Cataclysm Chestpiece
+					i(171904),	-- Cataclysm Chestplate
+					i(171896),	-- Crystalforge Breastplate
+					i(171895),	-- Crystalforge Chestguard
+					i(171897),	-- Crystalforge Chestpiece
+					i(171889),	-- Deathmantle Chestguard
+					i(171894),	-- Destroyer Breastplate
+					i(171893),	-- Destroyer Chestguard
+					i(171899),	-- Deathmantle Chestguard
+					i(171907),	-- Nordrassil Chestguard
+					i(171909),	-- Nordrassil Chestpiece
+					i(171908),	-- Nordrassil Chestplate
+					i(171901),	-- Shroud of the Avatar
+					i(171900),	-- Vestments of the Avatar
+					i(171898),	-- Rift Stalker Hauberk
+					i(171906),	-- Robe of the Corruptor
+					i(171905),	-- Robes of Tirisfal
+					i(171494),	-- Band of the Ranger-General
+					i(171487),	-- Crown of the Sun
+					i(171484),	-- Gauntlets of the Sun King
+					i(171492),	-- Leggings of Murderous Intent
+					i(171493),	-- Rod of the Sun King
+					i(171489),	-- Royal Cloak of the Sunstriders
+					i(171495),	-- Royal Gauntlets of Silvermoon
+					i(171488),	-- Sunhawk Leggings
+					i(171486),	-- Sunshower Light Cloak
+					i(171491),	-- Thalassian Wildercloak
+					i(171485),	-- The Nexus Key
+					i(171490),	-- Twinblade of the Phoenix
+					i(32458),	-- Ashes of Al'ar (MOUNT!)
+				}),
+				--[[["sym"] = {{"select","itemID",	-- Can also contain any item from BT
+						133543,	-- Infinite Timereaver (MOUNT!)
+						171942,	-- Cowl of Absolution
+						171941,	-- Cowl o the Tempest
+						171943,	-- Hood of Absolution
+						171940,	-- Hood of the Malefic
+						171929,	-- Lightbringer Faceguard
+						171930,	-- Lightbringer Greathelm
+						171931,	-- Lightbringer War-Helm
+						171932,	-- Gronnstalker's Helmet
+						171927,	-- Onslaught Battle-Helm
+						171928,	-- Onslaught Greathelm
+						171935,	-- Skyshatter Cover
+						171934,	-- Skyshatter Headguard
+						171933,	-- Skyshatter Helmet
+						171936,	-- Slayer's Helm
+						171938,	-- Thunderheart Cover
+						171939,	-- Thunderheart Headguard
+						171937,	-- Thunderheart Helmet
+						171502,	-- Apostle of Argus
+						171496,	-- Cataclysm's Edge
+						171504,	-- Tempest of Chaos
+						171500,	-- Bristleblitz Striker
+						171503,	-- Antonidas' Aegis of Rapt Concentration
+						171505,	-- Scepter of Purification
+						171501,	-- Mail of Fevered Pursuit
+						171499,	-- Midnight Chestguard
+						171507,	-- Robes of Rhonin
+						171498,	-- Savior's Grasp
+						171506,	-- Leggings of Eternity
+						171497,	-- Legguards of Endless Rage
+						122112,	-- Hyjal Wisp (PET!)
+						171912,	-- Crystalforge Faceguard
+						171914,	-- Crystalforge Greathelm
+						171913,	-- Crystalforge War-Helm
+						171916,	-- Deathmantle Helm
+						171919,	-- Cataclysm Headguard
+						171920,	-- Cataclysm Headpiece
+						171921,	-- Cataclysm Helm
+						171925,	-- Nordrassil Headdress
+						171924,	-- Nordrassil Headguard
+						171926,	-- Nordrassil Headpiece
+						171917,	-- Cowl of the Avatar
+						171918,	-- Hood of the Avatar
+						171910,	-- Destroyer Battle-Helm
+						171911,	-- Destroyer Greathelm
+						171915,	-- Rift Stalker Helm
+						171922,	-- Cowl of Tirisfall
+						171923,	-- Hood of the Corruptor
+						171481,	-- Glorious Gauntlets of Crestfall
+						171471,	-- Krakken-Heart Breastplate
+						171472,	-- Fang of Vashj
+						171474,	-- Serpent Spine Longbow
+						171477,	-- Lightfathom Scepter
+						171480,	-- Runetotem's Mantle
+						171476,	-- Vestments of the Sea-Witch
+						171475,	-- Belt of One-Hundred Deaths
+						171473,	-- Cobta-Lash Boots
+						171479,	-- Coral Band of the Revived
+						171478,	-- Ring of Endless Coils
+						171482,	-- Prism of Inner Calm
+						97554,	-- Coilfang Stalker (PET!)
+						171902,	-- Cataclysm Chestguard
+						171903,	-- Cataclysm Chestpiece
+						171904,	-- Cataclysm Chestplate
+						171896,	-- Crystalforge Breastplate
+						171895,	-- Crystalforge Chestguard
+						171897,	-- Crystalforge Chestpiece
+						171889,	-- Deathmantle Chestguard
+						171894,	-- Destroyer Breastplate
+						171893,	-- Destroyer Chestguard
+						171899,	-- Deathmantle Chestguard
+						171907,	-- Nordrassil Chestguard
+						171909,	-- Nordrassil Chestpiece
+						171908,	-- Nordrassil Chestplate
+						171901,	-- Shroud of the Avatar
+						171900,	-- Vestments of the Avatar
+						171898,	-- Rift Stalker Hauberk
+						171906,	-- Robe of the Corruptor
+						171905,	-- Robes of Tirisfal
+						171494,	-- Band of the Ranger-General
+						171487,	-- Crown of the Sun
+						171484,	-- Gauntlets of the Sun King
+						171492,	-- Leggings of Murderous Intent
+						171493,	-- Rod of the Sun King
+						171489,	-- Royal Cloak of the Sunstriders
+						171495,	-- Royal Gauntlets of Silvermoon
+						171488,	-- Sunhawk Leggings
+						171486,	-- Sunshower Light Cloak
+						171491,	-- Thalassian Wildercloak
+						171485,	-- The Nexus Key
+						171490,	-- Twinblade of the Phoenix
+						32458,	-- Ashes of Al'ar (MOUNT!)
+					}},--]]
+			},
 		}),
 		q(40168, {	-- The Swirling Vial
 			["provider"] = { "i", 129747 },	-- Swirling Timewarped Vial
