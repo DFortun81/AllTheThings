@@ -655,23 +655,6 @@ do a[key] = value; end
 --TODO: L.CUSTOM_DIFFICULTIES[-3] = "Normal (5.4)";
 --TODO: L.CUSTOM_DIFFICULTIES[-4] = "Heroic (5.4)";
 
-local a = L.FILTER_ID_TYPES;
-for key,value in pairs({
-	-- "Armor Types"
-		--TODO: [11] = "Artifacts";									-- Artifacts
-
-	-- PADDING for extra types, if necessary
-	--TODO: [55] = "Consumables";									-- Consumable (Artifact Power, etc)
-	--TODO: [59] = "Class Books";									-- Class Books (Classic Spells, Ashran Books, etc)
-
-	-- "Non-Equipment Types"
-		--TODO: [103] = "Illusions";								-- Illusions
-		--TODO: [107] = "Vignettes";								-- Vignettes
-
-	--TODO: [999] = "Event Item";									-- Event Item
-})
-do a[key] = value; end
-
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Allied Races

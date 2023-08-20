@@ -1,6 +1,7 @@
 -- Database
 -- #IMPORT: 00 - DB\\CategoryDB.lua
 -- #IMPORT: 00 - DB\\ClassInfoDB.lua
+-- #IMPORT: 00 - DB\\FilterDB.lua
 -- #IMPORT: 00 - DB\\FlightPathDB.lua
 -- #IMPORT: 00 - DB\\FlightPathDB_Conditionals.lua
 -- #IMPORT: 00 - DB\\IllusionDB.lua

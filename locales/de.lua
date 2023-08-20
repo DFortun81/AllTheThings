@@ -656,23 +656,6 @@ L.CUSTOM_DIFFICULTIES[-2] = "Flexible (5.4)";
 L.CUSTOM_DIFFICULTIES[-3] = "Normal (5.4)";
 L.CUSTOM_DIFFICULTIES[-4] = "Heroisch (5.4)";
 
-local a = L.FILTER_ID_TYPES;
-for key,value in pairs({
-	-- "Armor Types"
-		[11] = "Artefakte";									-- Artifacts
-
-	-- PADDING for extra types, if necessary
-	--TODO: [55] = "Consumables";									-- Consumable (Artifact Power, etc)
-	--TODO: [59] = "Class Books";									-- Class Books (Classic Spells, Ashran Books, etc)
-
-	-- "Non-Equipment Types"
-		[103] = "Waffenverzauberungen";								-- Illusions
-		--TODO: [107] = "Vignettes";								-- Vignettes
-
-	--TODO: [999] = "Event Item";									-- Event Item
-})
-do a[key] = value; end
-
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Garrison

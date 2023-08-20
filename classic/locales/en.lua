@@ -160,98 +160,7 @@ app.L = {
 		[-3] = "Normal (5.4)",
 		[-4] = "Heroic (5.4)",
 	};
-	["FILTER_ID_TYPES"] = {
-		-- Armor
-		[1] = INVTYPE_HOLDABLE, 								-- Held in Off-Hand
-		[2] = "Cosmetic",										-- Cosmetic
-		[3] = INVTYPE_CLOAK,									-- Cloaks
-		[4] = GetItemSubClassInfo(4,1),							-- Cloth
-		[5] = GetItemSubClassInfo(4,2),							-- Leather
-		[6] = GetItemSubClassInfo(4,3),							-- Mail
-		[7] = GetItemSubClassInfo(4,4), 						-- Plate
-		[8] = GetItemSubClassInfo(4,6),							-- Shields
-		[9] = INVTYPE_TABARD,									-- Tabards
-		[10] = INVTYPE_BODY,									-- Shirts
-
-		-- Weapons
-		[20] = GetItemSubClassInfo(2,15),						-- Daggers
-		[21] = GetItemSubClassInfo(2,0),						-- 1H Axes
-		[22] = GetItemSubClassInfo(2,1), 						-- 2H Axes
-		[23] = GetItemSubClassInfo(2,4),						-- 1H Maces
-		[24] = GetItemSubClassInfo(2,5),						-- 2H Maces
-		[25] = GetItemSubClassInfo(2,7),						-- 1H Swords
-		[26] = GetItemSubClassInfo(2,8),						-- 2H Swords
-		[27] = GetItemSubClassInfo(2,19),						-- Wands
-		[28] = GetItemSubClassInfo(2,10),						-- Staffs
-		[29] = GetItemSubClassInfo(2,6),						-- Polearms
-		[30] = GetItemSubClassInfo(2,17),						-- Spears
-		[31] = GetItemSubClassInfo(2,3),						-- Guns
-		[32] = GetItemSubClassInfo(2,2),						-- Bows
-		[33] = GetItemSubClassInfo(2,18),						-- Crossbows
-		[34] = GetItemSubClassInfo(2,13),						-- Fist Weapons
-		[35] = INVTYPE_AMMO,									-- Ammo
-		[36] = INVTYPE_THROWN,									-- Thrown
-
-		-- Accessories
-		[50] = AUCTION_CATEGORY_MISCELLANEOUS,					-- Miscellaneous
-		[51] = INVTYPE_NECK,									-- Neck
-		[52] = INVTYPE_FINGER,									-- Finger
-		[53] = INVTYPE_TRINKET,									-- Trinket
-		[54] = INVTYPE_RELIC,									-- Relic / Libram / Idols
-		[55] = AUCTION_CATEGORY_CONSUMABLES,					-- Consumable
-		[57] = GetItemSubClassInfo(2,20),						-- Fishing Poles
-
-		-- Non-Equipment
-		[100] = MOUNTS,											-- Mounts
-		[101] = AUCTION_CATEGORY_BATTLE_PETS,					-- Battle Pets
-		[102] = TOY,											-- Toys
-		[103] = "Illusions",
-		[104] = AUCTION_CATEGORY_QUEST_ITEMS, 					-- Quest Items
-		[105] = TRACKER_FILTER_ACHIEVEMENTS,					-- Achievements
-		[113] = INVTYPE_BAG, 									-- Bags
-		[200] = AUCTION_CATEGORY_RECIPES,						-- Recipes
-	};
-	["FILTER_ID_ICONS"] = {
-		[1] = "Interface\\Icons\\inv_misc_orb_01",							-- Held in Off-hand
-		[2] = "Interface\\Icons\\Ability_Mage_IceForm",						-- Cosmetic
-		[3] = "Interface\\Icons\\inv_misc_cape_11",							-- Cloaks
-		[4] = "Interface\\Icons\\inv_chest_cloth_21",						-- Cloth Armor
-		[5] = "Interface\\Icons\\inv_chest_leather_09",						-- Leather Armor
-		[6] = "Interface\\Icons\\inv_chest_chain_05",						-- Mail Armor
-		[7] = "Interface\\Icons\\inv_chest_plate01",						-- Plate Armor
-		[8] = "Interface\\Icons\\inv_shield_06",							-- Shield
-		[9] = "Interface\\Icons\\inv_shirt_guildtabard_01",					-- Tabards
-		[10] = "Interface\\Icons\\inv_shirt_grey_01",						-- Shirts
-		[20] = "Interface\\Icons\\inv_weapon_shortblade_01",				-- Daggers
-		[21] = "Interface\\Icons\\inv_axe_17",								-- 1H Axes
-		[22] = "Interface\\Icons\\inv_axe_09",								-- 2H Axes
-		[23] = "Interface\\Icons\\inv_mace_02",								-- 1H Maces
-		[24] = "Interface\\Icons\\inv_hammer_16",							-- 2H Maces
-		[25] = "Interface\\Icons\\inv_sword_04",							-- 1H Swords
-		[26] = "Interface\\Icons\\inv_sword_07",							-- 2H Swords
-		[27] = "Interface\\Icons\\inv_wand_02",								-- Wands
-		[28] = "Interface\\Icons\\inv_staff_27",							-- Staves
-		[29] = "Interface\\Icons\\inv_spear_04",							-- Polearms
-		[31] = "Interface\\Icons\\inv_weapon_rifle_01",						-- Guns
-		[32] = "Interface\\Icons\\inv_weapon_bow_05",						-- Bows
-		[33] = "Interface\\Icons\\inv_weapon_crossbow_01",					-- Crossbows
-		[34] = "Interface\\Icons\\inv_misc_monsterclaw_02",					-- Fist Weapons
-		[35] = "Interface\\Icons\\inv_ammo_bullet_01",						-- Ammo
-		[36] = "Interface\\Icons\\inv_throwingknife_02",					-- Thrown
-		[50] = "Interface\\Icons\\Spell_Misc_Drink",						-- Miscellaneous
-		[51] = "Interface\\Icons\\INV_Jewelry_Necklace_02",					-- Neck
-		[52] = "Interface\\Icons\\INV_Jewelry_Ring_04",						-- Finger
-		[53] = "Interface\\Icons\\INV_Trinket_Naxxramas05",					-- Trinket
-		[54] = "Interface\\Icons\\Inv_relics_libramofhope",					-- Relic / Libram / Idols
-		[57] = "Interface\\Icons\\inv_fishingpole_01",						-- Fishing Poles
-		[100] = app.asset("Category_Mounts"),								-- Mounts
-		[101] = app.asset("Category_PetJournal"),							-- Battle Pets
-		[102] = app.asset("Category_ToyBox"),								-- Toys
-		[105] = app.asset("Category_Achievements"),							-- Achievements
-		[113] = "Interface\\Icons\\INV_Misc_Bag_08",						-- Bag
-		[200] = "Interface\\Icons\\inv_scroll_05",							-- Recipes
-	},
-
+	
 	-- These need to be localized manually.
 	["ACHIEVEMENT_DATA"] = {
 		[6] = { 92, "Level 10", app.asset("Achievement_Level_10") },
@@ -586,13 +495,12 @@ app.L = {
 		[15301] = { -1, "Expansion Features" },
 	},
 	
-	-- Deprecated!
+	-- Deprecated! (move these eventually)
 	["HEADER_ICONS"] = {};
 	["HEADER_NAMES"] = {},
 	["HEADER_DESCRIPTIONS"] = {};
 	["HEADER_EVENTS"] = {};
 	["HEADER_LORE"] = {};
-	
 	["EVENT_REMAPPING"] = {};
 	["EVENT_TOOLTIPS"] = {};
 	

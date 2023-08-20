@@ -19,6 +19,7 @@
         ExportDebugData,
         ExportCategoryDB,
         ExportCustomHeaders,
+        ExportFilterDB,
         ExportFlightPathDB,
         ExportObjectDB,
         ExportAddonData,

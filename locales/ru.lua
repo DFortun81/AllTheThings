@@ -641,23 +641,6 @@ L.CUSTOM_DIFFICULTIES[-2] = "Гибкий (5.4)";
 L.CUSTOM_DIFFICULTIES[-3] = "Обычный (5.4)";
 L.CUSTOM_DIFFICULTIES[-4] = "Героический (5.4)";
 
-local a = L.FILTER_ID_TYPES;
-for key,value in pairs({
-	-- "Armor Types"
-		[11] = "Артефакты";									-- Artifacts
-
-	-- PADDING for extra types, if necessary
-	[55] = "Расходуемые";									-- Consumable (Artifact Power, etc)
-	[59] = "Классовые Книги";								-- Class Books (Classic Spells, Ashran Books, etc)
-
-	-- "Non-Equipment Types"
-		[103] = "Иллюзии";									-- Illusions (TODO: чары для оружия? Предметы, что дают Чары для оружия в коллекцию, называются Иллюзиями)
-		[107] = "Особые";									-- Vignettes
-
-	[999] = "Предметы Событий";								-- Event Item
-})
-do a[key] = value; end
-
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Garrison

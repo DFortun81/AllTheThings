@@ -854,127 +854,7 @@ app.L = {
 
 		[1168] = 461821,	-- Guild
 	};
-
-	["FILTER_ID_TYPES"] = {
-		-- "Armor Types"
-		[1] = INVTYPE_HOLDABLE,									-- Held in Off-Hand
-		[2] = GetItemSubClassInfo(4,5),							-- Cosmetic
-		[3] = GetItemSubClassInfo(8,3),							-- Cloaks
-		[4] = GetItemSubClassInfo(4,1),							-- Cloth
-		[5] = GetItemSubClassInfo(4,2),							-- Leather
-		[6] = GetItemSubClassInfo(4,3),							-- Mail
-		[7] = GetItemSubClassInfo(4,4),							-- Plate
-		[8] = GetItemSubClassInfo(4,6),							-- Shields
-		[9] = INVTYPE_TABARD,									-- Tabards
-		[10] = INVTYPE_BODY,									-- Shirts
-		[11] = "Artifacts",										-- Artifacts
-
-		-- PADDING for extra types, if necessary
-
-		-- "Weapon Types"
-		[20] = GetItemSubClassInfo(2,15),						-- Daggers
-		[21] = GetItemSubClassInfo(2,0),						-- 1H Axes
-		[22] = GetItemSubClassInfo(2,1),						-- 2H Axes
-		[23] = GetItemSubClassInfo(2,4),						-- 1H Maces
-		[24] = GetItemSubClassInfo(2,5),						-- 2H Maces
-		[25] = GetItemSubClassInfo(2,7),						-- 1H Swords
-		[26] = GetItemSubClassInfo(2,8),						-- 2H Swords
-		[27] = GetItemSubClassInfo(2,19),						-- Wands
-		[28] = GetItemSubClassInfo(2,10),						-- Staffs
-		[29] = GetItemSubClassInfo(2,6),						-- Polearms
-		[31] = GetItemSubClassInfo(2,3),						-- Guns
-		[32] = GetItemSubClassInfo(2,2),						-- Bows
-		[33] = GetItemSubClassInfo(2,18),						-- Crossbows
-		[34] = GetItemSubClassInfo(2,13),						-- Fist Weapons
-		[35] = GetItemSubClassInfo(2,9),						-- Warglaives
-
-		-- PADDING for extra types, if necessary
-		[50] = GetItemSubClassInfo(2,14),						-- Miscellaneous
-		[51] = GetItemSubClassInfo(8,1),						-- Neck
-		[52] = GetItemSubClassInfo(8,10),						-- Finger
-		[53] = INVTYPE_TRINKET,									-- Trinket
-		[54] = GetItemSubClassInfo(3,11),						-- Relic
-		[55] = "Consumables",									-- Consumable (Artifact Power, etc)
-		[56] = GetItemClassInfo(5),								-- Reagents (Crafting, etc)
-		[57] = INVTYPE_PROFESSION_GEAR,							-- Profession Equipment (Equipment & Tools)
-		[58] = AUCTION_CATEGORY_CONTAINERS,						-- Containers (Tier Tokens, Timeless Isle BoA gear tokens, Bags of loot, etc)
-		[59] = "Class Books",									-- Class Books (Classic Spells, Ashran Books, etc)
-		[60] = GetSpellInfo(181765),							-- S.E.L.F.I.E. Camera (For various filters)
-		[61] = GetItemClassInfo(3),								-- Gems
-
-		-- "Non-Equipment Types"
-		[100] = MOUNTS,											-- Mounts
-		[101] = AUCTION_CATEGORY_BATTLE_PETS,					-- Battle Pets
-		[102] = TOY_BOX,										-- Toy Box
-		[103] = "Illusions",									-- Illusions
-		[104] = ITEM_BIND_QUEST,								-- Quest Items
-		[105] = TRACKER_FILTER_ACHIEVEMENTS,					-- Achievements
-		[106] = CALENDAR_FILTER_WEEKLY_HOLIDAYS,				-- Holiday
-		[107] = "Vignettes",
-		[108] = ENABLE_MUSIC.." "..ROLL,						-- Music Rolls
-		[109] = HEIRLOOMS,										-- Heirlooms		-- NOTE: This shouldn't be a filter, it's extra
-		[110] = PAPERDOLL_SIDEBAR_TITLES,						-- Titles
-		[111] = GetItemClassInfo(16),							-- Glyph
-		[112] = FACTION,										-- Factions
-		[113] = INVTYPE_BAG,									-- Bags
-		[114] = GetItemSubClassInfo(13,0),						-- Key
-
-		-- "Recipes"
-		[200] = AUCTION_CATEGORY_RECIPES,						-- Recipes
-
-		[999] = "Event Item",
-	};
-	["FILTER_ID_ICONS"] = {
-		[1] = "Interface\\Icons\\inv_misc_orb_01",								-- Held in Off-hand
-		[2] = "Interface\\Icons\\Ability_Mage_IceForm",							-- Cosmetic
-		[3] = "Interface\\Icons\\inv_misc_cape_11",								-- Cloaks
-		[4] = "Interface\\Icons\\inv_chest_cloth_21",							-- Cloth Armor
-		[5] = "Interface\\Icons\\inv_chest_leather_09",							-- Leather Armor
-		[6] = "Interface\\Icons\\inv_chest_chain_05",							-- Mail Armor
-		[7] = "Interface\\Icons\\inv_chest_plate01",							-- Plate Armor
-		[8] = "Interface\\Icons\\inv_shield_06",								-- Shield
-		[9] = "Interface\\Icons\\inv_misc_tournaments_tabard_gnome",			-- Tabards
-		[10] = "Interface\\Icons\\inv_shirt_grey_01",							-- Shirts
-		[11] = "Interface\\Icons\\Paladin_Protection",							-- Artifacts
-		[20] = "Interface\\Icons\\inv_weapon_shortblade_01",					-- Daggers
-		[21] = "Interface\\Icons\\inv_axe_17",									-- 1H Axes
-		[22] = "Interface\\Icons\\inv_axe_09",									-- 2H Axes
-		[23] = "Interface\\Icons\\inv_mace_02",									-- 1H Maces
-		[24] = "Interface\\Icons\\inv_hammer_16",								-- 2H Maces
-		[25] = "Interface\\Icons\\inv_sword_04",								-- 1H Swords
-		[26] = "Interface\\Icons\\inv_sword_07",								-- 2H Swords
-		[27] = "Interface\\Icons\\inv_wand_02",									-- Wands
-		[28] = "Interface\\Icons\\inv_staff_27",								-- Staves
-		[29] = "Interface\\Icons\\inv_spear_04",								-- Polearms
-		[31] = "Interface\\Icons\\inv_weapon_rifle_01",							-- Guns
-		[32] = "Interface\\Icons\\inv_weapon_bow_05",							-- Bows
-		[33] = "Interface\\Icons\\inv_weapon_crossbow_01",						-- Crossbows
-		[34] = "Interface\\Icons\\inv_misc_monsterclaw_02",						-- Fist Weapons
-		[35] = "Interface\\Icons\\inv_weapon_glave_01",							-- Warglaives
-		[50] = "Interface\\Icons\\Spell_Misc_Drink",							-- Miscellaneous
-		[51] = "Interface\\Icons\\INV_Jewelry_Necklace_02",						-- Neck
-		[52] = "Interface\\Icons\\INV_Jewelry_Ring_04",							-- Finger
-		[53] = "Interface\\Icons\\INV_Trinket_Naxxramas05",						-- Trinket
-		[54] = "Interface\\Icons\\inv_staff_2h_felfireraid_d_03",				-- Relic
-		[55] = "Interface\\Icons\\INV_Drink_25_HoneyTea",						-- Consumables
-		[56] = app.asset("Interface_Zone_drop"),								-- Reagents (@DeadSerious maybe a new one sometime?)
-		[57] = 132932,															-- Fishing Poles
-		[59] = "Interface\\Icons\\INV_Misc_Book_03",							-- Class Books
-		[61] = "Interface\\Icons\\inv_misc_gem_ruby_02",						-- Gems
-		[100] = app.asset("Category_Mounts"),									-- Mounts
-		[101] = "Interface\\Icons\\Tracking_WildPet",							-- Battle Pets
-		[102] = app.asset("Category_ToyBox"),									-- Toy Box
-		[103] = "Interface\\Icons\\inv_inscription_weaponscroll03",				-- Illusions
-		[104] = app.asset("Interface_Quest_header"),							-- Quest Items
-		[109] = app.asset("Weapon_Type_Heirloom"),								-- Heirlooms
-		[110] = app.asset("Category_Titles"),									-- Titles
-		[111] = "Interface\\Icons\\Inv_glyph_minorwarrior",						-- Glyph
-		[113] = "Interface\\Icons\\INV_Misc_Bag_08",							-- Bag
-		[114] = "Interface\\Icons\\inv_blacksmith_leystonehoofplates_orange",	-- Mount Equipment
-		[200] = "Interface\\Icons\\inv_scroll_05",								-- Recipes
-		[999] = "Interface\\Icons\\INV_Holiday_Christmas_Present_01",			-- Event Item
-	};
-
+	
 	-- These need to be localized manually.
 	-- Can also use the direct IconID, i.e. wowhead.com/icon=###
 	-- https://www.wowhead.com/icons
@@ -1384,10 +1264,11 @@ app.L = {
 		[-10081] = "Corrupted Area",
 		[-10082] = "Lost Area",
 	};
+	
+	-- Deprecated! (move these eventually)
 	["HEADER_DESCRIPTIONS"] = {};
 	["HEADER_EVENTS"] = {};
 	["HEADER_LORE"] = {};
-
 	["EVENT_REMAPPING"] = {};
 	["EVENT_TOOLTIPS"] = {};
 

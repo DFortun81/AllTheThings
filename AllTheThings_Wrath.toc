@@ -13,24 +13,12 @@
 lib\LibStub\LibStub.lua
 lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
 lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
+db\RaceDB.lua
+src\base.lua
 lib\Colors.lua
 lib\Sort.lua
 lib\Table.lua
-classic\Presets.lua
-db\RaceDB.lua
-db\Wrath\FlightPathDB.lua
-db\Wrath\ExplorationDB.lua
-src\base.lua
 classic\locales\en.lua
-src\Cache.lua
-lib\Audio.lua
-db\Wrath\CategoryDB.lua
-db\Wrath\ObjectDB.lua
-classic\src-Classes-base.lua
-src\Modules\Events.lua
-src\Classes\Filter Types.lua
-src\Classes\Illusions.lua
-src\Classes\PVP Ranks.lua
 classic\locales\es.lua
 classic\locales\de.lua
 classic\locales\fr.lua
@@ -39,7 +27,16 @@ classic\locales\ko.lua
 classic\locales\pt.lua
 classic\locales\ru.lua
 classic\locales\cn.lua
-db\Wrath\Custom Headers.lua
+classic\src-Classes-base.lua
+src\Modules\Events.lua
+db\Wrath\ExplorationDB.lua
+db\Wrath\LocalizationDB.lua
+classic\Presets.lua
+src\Cache.lua
+lib\Audio.lua
+src\Classes\Filter Types.lua
+src\Classes\Illusions.lua
+src\Classes\PVP Ranks.lua
 classic\Settings.lua
 classic\ATT-Classic.lua
 db\Wrath\Categories.lua

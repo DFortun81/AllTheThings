@@ -9,7 +9,9 @@ using System.Linq;
 using System.Net.NetworkInformation;
 using System.Reflection;
 using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.ComTypes;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Text.RegularExpressions;
 using static ATT.Export;
@@ -169,6 +171,11 @@ namespace ATT
         /// All of the Custom Header IDs that have been referenced somewhere in the database.
         /// </summary>
         private static Dictionary<long, bool> CUSTOM_HEADERS_WITH_REFERENCES = new Dictionary<long, bool>();
+
+        /// <summary>
+        /// All of the Filter IDs that have been referenced somewhere in the database.
+        /// </summary>
+        private static Dictionary<long, bool> FILTERS_WITH_REFERENCES = new Dictionary<long, bool>();
 
         /// <summary>
         /// All of the Flight Path IDs that have been referenced somewhere in the database.
@@ -392,6 +399,12 @@ namespace ATT
         /// The CustomHeaders table from main.lua that is used to generate custom headers.
         /// </summary>
         internal static Dictionary<long, object> CustomHeaders { get; private set; }
+
+        /// <summary>
+        /// All of the filters that have been loaded into the database.
+        /// NOTE: This is exclusively used for text localizations.
+        /// </summary>
+        internal static Dictionary<long, Dictionary<string, object>> FilterDB { get; private set; } = new Dictionary<long, Dictionary<string, object>>();
 
         /// <summary>
         /// All of the flight paths that have been loaded into the database.
@@ -731,6 +744,7 @@ namespace ATT
                 {
                     // Parse it!
                     filter = (Objects.Filters)f;
+                    FILTERS_WITH_REFERENCES[f] = true;
                 }
                 // remove modID from things which shouldn't have it
                 if (f >= 56 && data.Remove("modID"))
@@ -1753,6 +1767,12 @@ namespace ATT
             if (data.TryGetValue("type", out string type) && type == "TODO")
             {
                 data.Remove("type");
+            }
+
+
+            if (data.TryGetValue("f", out long f))
+            {
+                FILTERS_WITH_REFERENCES[f] = true;
             }
 
             // clean up any Parser metadata tags
@@ -3902,15 +3922,15 @@ namespace ATT
                     case "CategoryDB":
                         {
                             // The format of the Category DB is a dictionary of Category ID <-> Category pairs.
-                            if (pair.Value is Dictionary<long, object> categoryDB)
+                            if (pair.Value is Dictionary<long, object> db)
                             {
-                                foreach (var keyValuePair in categoryDB)
+                                foreach (var keyValuePair in db)
                                 {
                                     if (keyValuePair.Value is Dictionary<string, object> data)
                                     {
-                                        if (!CategoryDB.TryGetValue(keyValuePair.Key, out Dictionary<string, object> categoryData))
+                                        if (!CategoryDB.TryGetValue(keyValuePair.Key, out Dictionary<string, object> dataEntry))
                                         {
-                                            CategoryDB[keyValuePair.Key] = categoryData = new Dictionary<string, object>();
+                                            CategoryDB[keyValuePair.Key] = dataEntry = new Dictionary<string, object>();
                                         }
 
                                         // Merge over the complex text data.
@@ -3919,18 +3939,18 @@ namespace ATT
                                             data.Remove("text");
                                             if (textObject is Dictionary<string, object> textLocales)
                                             {
-                                                if (categoryData.TryGetValue("text", out textObject) && textObject is Dictionary<string, object> currentTextLocales)
+                                                if (dataEntry.TryGetValue("text", out textObject) && textObject is Dictionary<string, object> currentTextLocales)
                                                 {
                                                     foreach (var textObjectPair in textLocales)
                                                     {
                                                         currentTextLocales[textObjectPair.Key] = textObjectPair.Value;
                                                     }
                                                 }
-                                                else categoryData["text"] = textLocales;
+                                                else dataEntry["text"] = textLocales;
                                             }
                                             else
                                             {
-                                                categoryData["text"] = new Dictionary<string, object>
+                                                dataEntry["text"] = new Dictionary<string, object>
                                                 {
                                                     { "en", textObject }
                                                 };
@@ -3940,7 +3960,7 @@ namespace ATT
                                         // Merge over simple data. (a simple replace is fine)
                                         foreach (var dataPair in data)
                                         {
-                                            categoryData[dataPair.Key] = dataPair.Value;
+                                            dataEntry[dataPair.Key] = dataPair.Value;
                                         }
                                     }
                                     else
@@ -4024,18 +4044,18 @@ namespace ATT
                             }
                             break;
                         }
-                    case "FlightPathDB":
+                    case "FilterDB":
                         {
-                            // The format of the Object DB is a dictionary of Flight Path ID <-> Flight Path pairs.
-                            if (pair.Value is Dictionary<long, object> flightPathDB)
+                            // The format of the Filter DB is a dictionary of Filter ID <-> Filter pairs.
+                            if (pair.Value is Dictionary<long, object> db)
                             {
-                                foreach (var keyValuePair in flightPathDB)
+                                foreach (var keyValuePair in db)
                                 {
                                     if (keyValuePair.Value is Dictionary<string, object> data)
                                     {
-                                        if (!FlightPathDB.TryGetValue(keyValuePair.Key, out Dictionary<string, object> flightPathData))
+                                        if (!FilterDB.TryGetValue(keyValuePair.Key, out Dictionary<string, object> dataEntry))
                                         {
-                                            FlightPathDB[keyValuePair.Key] = flightPathData = new Dictionary<string, object>();
+                                            FilterDB[keyValuePair.Key] = dataEntry = new Dictionary<string, object>();
                                         }
 
                                         // Merge over the complex text data.
@@ -4044,28 +4064,94 @@ namespace ATT
                                             data.Remove("text");
                                             if (textObject is Dictionary<string, object> textLocales)
                                             {
-                                                if (flightPathData.TryGetValue("text", out textObject) && textObject is Dictionary<string, object> currentTextLocales)
+                                                if (dataEntry.TryGetValue("text", out textObject) && textObject is Dictionary<string, object> currentTextLocales)
                                                 {
                                                     foreach (var textObjectPair in textLocales)
                                                     {
                                                         currentTextLocales[textObjectPair.Key] = textObjectPair.Value;
                                                     }
                                                 }
-                                                else flightPathData["text"] = textLocales;
+                                                else dataEntry["text"] = textLocales;
                                             }
                                             else
                                             {
-                                                flightPathData["text"] = new Dictionary<string, object>
+                                                dataEntry["text"] = textLocales = new Dictionary<string, object>
+                                                {
+                                                    { "en", textObject }
+                                                };
+                                            }
+                                        }
+
+                                        // Explicitly mark a thing as an export
+                                        if (data.TryGetValue("export", out object value) && (bool)value)
+                                        {
+                                            FILTERS_WITH_REFERENCES[keyValuePair.Key] = true;
+                                        }
+
+                                        // Merge over simple data. (a simple replace is fine)
+                                        foreach (var dataPair in data)
+                                        {
+                                            dataEntry[dataPair.Key] = dataPair.Value;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        LogError($"FilterDB {keyValuePair.Key} not in the correct format!");
+                                        Console.WriteLine(CurrentFileName);
+                                        Console.ReadLine();
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                LogError("FilterDB not in the correct format!");
+                                Console.WriteLine(CurrentFileName);
+                                Console.ReadLine();
+                            }
+                            break;
+                        }
+                    case "FlightPathDB":
+                        {
+                            // The format of the Object DB is a dictionary of Flight Path ID <-> Flight Path pairs.
+                            if (pair.Value is Dictionary<long, object> db)
+                            {
+                                foreach (var keyValuePair in db)
+                                {
+                                    if (keyValuePair.Value is Dictionary<string, object> data)
+                                    {
+                                        if (!FlightPathDB.TryGetValue(keyValuePair.Key, out Dictionary<string, object> dataEntry))
+                                        {
+                                            FlightPathDB[keyValuePair.Key] = dataEntry = new Dictionary<string, object>();
+                                        }
+
+                                        // Merge over the complex text data.
+                                        if (data.TryGetValue("text", out object textObject))
+                                        {
+                                            data.Remove("text");
+                                            if (textObject is Dictionary<string, object> textLocales)
+                                            {
+                                                if (dataEntry.TryGetValue("text", out textObject) && textObject is Dictionary<string, object> currentTextLocales)
+                                                {
+                                                    foreach (var textObjectPair in textLocales)
                                                     {
-                                                        { "en", textObject }
-                                                    };
+                                                        currentTextLocales[textObjectPair.Key] = textObjectPair.Value;
+                                                    }
+                                                }
+                                                else dataEntry["text"] = textLocales;
+                                            }
+                                            else
+                                            {
+                                                dataEntry["text"] = new Dictionary<string, object>
+                                                {
+                                                    { "en", textObject }
+                                                };
                                             }
                                         }
 
                                         // Merge over simple data. (a simple replace is fine)
                                         foreach (var dataPair in data)
                                         {
-                                            flightPathData[dataPair.Key] = dataPair.Value;
+                                            dataEntry[dataPair.Key] = dataPair.Value;
                                         }
                                     }
                                     else
@@ -4078,7 +4164,7 @@ namespace ATT
                             }
                             else
                             {
-                                LogError("ObjectDB not in the correct format!");
+                                LogError("FlightPathDB not in the correct format!");
                                 Console.WriteLine(CurrentFileName);
                                 Console.ReadLine();
                             }
@@ -4087,42 +4173,50 @@ namespace ATT
                     case "ObjectDB":
                         {
                             // The format of the Object DB is a dictionary of Object ID <-> Object pairs.
-                            if (pair.Value is Dictionary<long, object> objectDB)
+                            if (pair.Value is Dictionary<long, object> db)
                             {
-                                foreach (var objectPair in objectDB)
+                                foreach (var keyValuePair in db)
                                 {
-                                    if (objectPair.Value is Dictionary<string, object> data)
+                                    if (keyValuePair.Value is Dictionary<string, object> data)
                                     {
-                                        if (ObjectDB.TryGetValue(objectPair.Key, out Dictionary<string, object> objectData))
+                                        if (!ObjectDB.TryGetValue(keyValuePair.Key, out Dictionary<string, object> dataEntry))
                                         {
-                                            // Merge over the complex text data.
-                                            if (data.TryGetValue("text", out object textObject))
-                                            {
-                                                data.Remove("text");
-                                                if (textObject is Dictionary<string, object> textLocales)
-                                                {
-                                                    if (objectData.TryGetValue("text", out textObject) && textObject is Dictionary<string, object> currentTextLocales)
-                                                    {
-                                                        foreach (var textObjectPair in textLocales)
-                                                        {
-                                                            currentTextLocales[textObjectPair.Key] = textObjectPair.Value;
-                                                        }
-                                                    }
-                                                    else objectData["text"] = textLocales;
-                                                }
-                                            }
+                                            ObjectDB[keyValuePair.Key] = dataEntry = new Dictionary<string, object>();
+                                        }
 
-                                            // Merge over simple data. (a simple replace is fine)
-                                            foreach (var dataPair in data)
+                                        // Merge over the complex text data.
+                                        if (data.TryGetValue("text", out object textObject))
+                                        {
+                                            data.Remove("text");
+                                            if (textObject is Dictionary<string, object> textLocales)
                                             {
-                                                objectData[dataPair.Key] = dataPair.Value;
+                                                if (dataEntry.TryGetValue("text", out textObject) && textObject is Dictionary<string, object> currentTextLocales)
+                                                {
+                                                    foreach (var textObjectPair in textLocales)
+                                                    {
+                                                        currentTextLocales[textObjectPair.Key] = textObjectPair.Value;
+                                                    }
+                                                }
+                                                else dataEntry["text"] = textLocales;
+                                            }
+                                            else
+                                            {
+                                                dataEntry["text"] = new Dictionary<string, object>
+                                                {
+                                                    { "en", textObject }
+                                                };
                                             }
                                         }
-                                        else ObjectDB[objectPair.Key] = data;
+
+                                        // Merge over simple data. (a simple replace is fine)
+                                        foreach (var dataPair in data)
+                                        {
+                                            dataEntry[dataPair.Key] = dataPair.Value;
+                                        }
                                     }
                                     else
                                     {
-                                        LogError($"ObjectDB {objectPair.Key} not in the correct format!");
+                                        LogError($"ObjectDB {keyValuePair.Key} not in the correct format!");
                                         Console.WriteLine(CurrentFileName);
                                         Console.ReadLine();
                                     }
@@ -4761,31 +4855,31 @@ namespace ATT
                                 if (textLocales != null)
                                 {
                                     // Sort and then ensure es comes after en, to match previous convention.
-                                    var localeKeys = textLocales.Keys.ToList();
-                                    localeKeys.Sort();
-                                    if (localeKeys.Contains("es"))
+                                    var supportedLocales = textLocales.Keys.ToList();
+                                    supportedLocales.Sort();
+                                    if (supportedLocales.Contains("es"))
                                     {
-                                        localeKeys.Remove("es");
-                                        localeKeys.Insert(0, "es");
+                                        supportedLocales.Remove("es");
+                                        supportedLocales.Insert(0, "es");
                                     }
-                                    if (localeKeys.Contains("en"))
+                                    if (supportedLocales.Contains("en"))
                                     {
-                                        localeKeys.Remove("en");
-                                        localeKeys.Insert(0, "en");
+                                        supportedLocales.Remove("en");
+                                        supportedLocales.Insert(0, "en");
                                     }
-                                    if (localeKeys.Contains("ko"))
+                                    if (supportedLocales.Contains("ko"))
                                     {
-                                        localeKeys.Remove("ko");
-                                        localeKeys.Add("ko");
+                                        supportedLocales.Remove("ko");
+                                        supportedLocales.Add("ko");
                                     }
-                                    if (localeKeys.Contains("cn"))
+                                    if (supportedLocales.Contains("cn"))
                                     {
-                                        localeKeys.Remove("cn");
-                                        localeKeys.Add("cn");
+                                        supportedLocales.Remove("cn");
+                                        supportedLocales.Add("cn");
                                     }
 
                                     builder.AppendLine("\t\ttext = {");
-                                    foreach (var localeKey in localeKeys)
+                                    foreach (var localeKey in supportedLocales)
                                     {
                                         builder.Append("\t\t\t").Append(localeKey).Append(" = ");
                                         ExportStringValue(builder, textLocales[localeKey].ToString()).AppendLine(",");
@@ -4953,9 +5047,84 @@ namespace ATT
                             keys.Sort(new Comparison<long>((i1, i2) => i2.CompareTo(i1)));
 
                             // Check to make sure the content is different since Diff tools are dumb as hell.
-                            var filename = Path.Combine(debugFolder.FullName, "Custom Headers.lua");
-                            var content = builder.ToString().Replace("\r\n", "\n").Trim();
-                            if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content, Encoding.UTF8);
+                            File.WriteAllText(Path.Combine(debugFolder.FullName, "Custom Headers.lua"), builder.ToString().Replace("\r\n", "\n").Trim(), Encoding.UTF8);
+                        }
+
+                        // Export the FilterDB file.
+                        if (FilterDB.Any())
+                        {
+                            // Export the new format.
+                            var builder = new StringBuilder("-----------------------------------------------------\n--   F I L T E R   D A T A B A S E   M O D U L E   --\n-----------------------------------------------------\n");
+                            var keys = FilterDB.Keys.ToList();
+                            keys.Sort();
+                            builder.Append("local FilterDB = FilterDB; for key,value in pairs({").AppendLine();
+                            foreach (var key in keys)
+                            {
+                                Dictionary<string, object> filterData = FilterDB[key];
+                                builder.Append("\t[").Append(key).AppendLine("] = {");
+
+                                // Attempt to get the text locale data object.
+                                filterData.TryGetValue("text", out object textLocaleObject);
+                                Dictionary<string, object> textLocales = textLocaleObject as Dictionary<string, object>;
+
+                                // Export the "readable" field. (database only, not exported to game)
+                                if (filterData.TryGetValue("readable", out string treadable))
+                                {
+                                    builder.Append("\t\treadable = ");
+                                    ExportStringValue(builder, treadable).AppendLine(",");
+                                }
+                                else if (textLocales != null && textLocales.TryGetValue("en", out string name))
+                                {
+                                    builder.Append("\t\treadable = ");
+                                    ExportStringValue(builder, name).AppendLine(",");
+                                }
+
+                                // Export the "icon" field.
+                                if (filterData.TryGetValue("icon", out string icon))
+                                {
+                                    builder.Append("\t\ticon = ");
+                                    ExportStringValue(builder, icon.Replace("\\", "/")).AppendLine(",");
+                                }
+
+                                // Export the complex "text" locales field.
+                                if (textLocales != null)
+                                {
+                                    // Sort and then ensure es comes after en, to match previous convention.
+                                    var supportedLocales = textLocales.Keys.ToList();
+                                    supportedLocales.Sort();
+                                    if (supportedLocales.Contains("es"))
+                                    {
+                                        supportedLocales.Remove("es");
+                                        supportedLocales.Insert(0, "es");
+                                    }
+                                    if (supportedLocales.Contains("en"))
+                                    {
+                                        supportedLocales.Remove("en");
+                                        supportedLocales.Insert(0, "en");
+                                    }
+                                    if (supportedLocales.Contains("ko"))
+                                    {
+                                        supportedLocales.Remove("ko");
+                                        supportedLocales.Add("ko");
+                                    }
+                                    if (supportedLocales.Contains("cn"))
+                                    {
+                                        supportedLocales.Remove("cn");
+                                        supportedLocales.Add("cn");
+                                    }
+
+                                    builder.AppendLine("\t\ttext = {");
+                                    foreach (var localeKey in supportedLocales)
+                                    {
+                                        builder.Append("\t\t\t").Append(localeKey).Append(" = ");
+                                        ExportStringValue(builder, textLocales[localeKey].ToString()).AppendLine(",");
+                                    }
+                                    builder.AppendLine("\t\t},");
+                                }
+                                builder.AppendLine("\t},");
+                            }
+                            builder.AppendLine("})").AppendLine("do FilterDB[key] = value; end");
+                            File.WriteAllText(Path.Combine(debugFolder.FullName, "FilterDB.lua"), builder.ToString(), Encoding.UTF8);
                         }
 
                         // Export the Flight Paths DB file.
@@ -4979,31 +5148,31 @@ namespace ATT
                                 if (textLocales != null)
                                 {
                                     // Sort and then ensure es comes after en, to match previous convention.
-                                    var localeKeys = textLocales.Keys.ToList();
-                                    localeKeys.Sort();
-                                    if (localeKeys.Contains("es"))
+                                    var supportedLocales = textLocales.Keys.ToList();
+                                    supportedLocales.Sort();
+                                    if (supportedLocales.Contains("es"))
                                     {
-                                        localeKeys.Remove("es");
-                                        localeKeys.Insert(0, "es");
+                                        supportedLocales.Remove("es");
+                                        supportedLocales.Insert(0, "es");
                                     }
-                                    if (localeKeys.Contains("en"))
+                                    if (supportedLocales.Contains("en"))
                                     {
-                                        localeKeys.Remove("en");
-                                        localeKeys.Insert(0, "en");
+                                        supportedLocales.Remove("en");
+                                        supportedLocales.Insert(0, "en");
                                     }
-                                    if (localeKeys.Contains("ko"))
+                                    if (supportedLocales.Contains("ko"))
                                     {
-                                        localeKeys.Remove("ko");
-                                        localeKeys.Add("ko");
+                                        supportedLocales.Remove("ko");
+                                        supportedLocales.Add("ko");
                                     }
-                                    if (localeKeys.Contains("cn"))
+                                    if (supportedLocales.Contains("cn"))
                                     {
-                                        localeKeys.Remove("cn");
-                                        localeKeys.Add("cn");
+                                        supportedLocales.Remove("cn");
+                                        supportedLocales.Add("cn");
                                     }
 
                                     builder.AppendLine("\t\ttext = {");
-                                    foreach (var localeKey in localeKeys)
+                                    foreach (var localeKey in supportedLocales)
                                     {
                                         builder.Append("\t\t\t").Append(localeKey).Append(" = ");
                                         ExportStringValue(builder, textLocales[localeKey].ToString()).AppendLine(",");
@@ -5062,31 +5231,31 @@ namespace ATT
                                 if (textLocales != null)
                                 {
                                     // Sort and then ensure es comes after en, to match previous convention.
-                                    var localeKeys = textLocales.Keys.ToList();
-                                    localeKeys.Sort();
-                                    if (localeKeys.Contains("es"))
+                                    var supportedLocales = textLocales.Keys.ToList();
+                                    supportedLocales.Sort();
+                                    if (supportedLocales.Contains("es"))
                                     {
-                                        localeKeys.Remove("es");
-                                        localeKeys.Insert(0, "es");
+                                        supportedLocales.Remove("es");
+                                        supportedLocales.Insert(0, "es");
                                     }
-                                    if (localeKeys.Contains("en"))
+                                    if (supportedLocales.Contains("en"))
                                     {
-                                        localeKeys.Remove("en");
-                                        localeKeys.Insert(0, "en");
+                                        supportedLocales.Remove("en");
+                                        supportedLocales.Insert(0, "en");
                                     }
-                                    if (localeKeys.Contains("ko"))
+                                    if (supportedLocales.Contains("ko"))
                                     {
-                                        localeKeys.Remove("ko");
-                                        localeKeys.Add("ko");
+                                        supportedLocales.Remove("ko");
+                                        supportedLocales.Add("ko");
                                     }
-                                    if (localeKeys.Contains("cn"))
+                                    if (supportedLocales.Contains("cn"))
                                     {
-                                        localeKeys.Remove("cn");
-                                        localeKeys.Add("cn");
+                                        supportedLocales.Remove("cn");
+                                        supportedLocales.Add("cn");
                                     }
 
                                     builder.AppendLine("\t\ttext = {");
-                                    foreach (var localeKey in localeKeys)
+                                    foreach (var localeKey in supportedLocales)
                                     {
                                         builder.Append("\t\t\t").Append(localeKey).Append(" = ");
                                         ExportStringValue(builder, textLocales[localeKey].ToString()).AppendLine(",");
@@ -5132,14 +5301,32 @@ namespace ATT
                     }
                 }
 
+                // Prepare a Localization Database file.
+                StringBuilder localizationDatabase = new StringBuilder()
+                    .AppendLine("-----------------------------------------------------------------")
+                    .AppendLine("--   L O C A L I Z A T I O N   D A T A B A S E   M O D U L E   --")
+                    .AppendLine("-----------------------------------------------------------------")
+                    .AppendLine("local localize = function(t, data) for k,v in pairs(data) do t[k] = v; end end")
+                    .AppendLine("local appName, _, a = ...;")
+                    .AppendLine("local L = _.L;").AppendLine();
+                Dictionary<string, StringBuilder> localizationByLocale = new Dictionary<string, StringBuilder>();
+                foreach(var language in new List<string>
+                {
+                    // 8 non-english locales, 9 supported in all. (English is written right away and acts as the default)
+                    "es", "de", "fr", "it",
+                    "pt", "ru", "ko", "zh", // NOTE: "cn" is not valid, it's actually "zh"!
+                })
+                {
+                    // Generate a string builder for each language. (an empty builder at the end will not be exported)
+                    localizationByLocale[language] = new StringBuilder();
+                }
+
+
                 // Export the Category DB file.
                 if (CATEGORIES_WITH_REFERENCES.Any())
                 {
                     CurrentParseStage = ParseStage.ExportCategoryDB;
-                    var builder = new StringBuilder("---------------------------------------------------------\n--   C A T E G O R Y   D A T A B A S E   M O D U L E   --\n---------------------------------------------------------\n")
-                        .AppendLine("local appName, _ = ...;")
-                        .AppendLine("local simplifiedLocale = string.sub(GetLocale(),1,2);").AppendLine();
-
+                    var builder = new StringBuilder("-- Category Database Module").AppendLine();
                     var icons = new Dictionary<long, string>();
                     var localizationForText = new Dictionary<string, Dictionary<long, string>>();
 
@@ -5195,16 +5382,6 @@ namespace ATT
                         }
                     }
 
-                    builder.AppendLine("_.CategoryIcons = {");
-                    foreach (var key in keys)
-                    {
-                        if (icons.TryGetValue(key, out string icon))
-                        {
-                            ExportStringKeyValue(builder, key, icon).AppendLine();
-                        }
-                    }
-                    builder.AppendLine("}").AppendLine();
-
                     // Convert all "cn" into "zh" dictionaries, it makes the comparison later easier.
                     if (localizationForText.TryGetValue("cn", out Dictionary<long, string> data))
                     {
@@ -5234,34 +5411,40 @@ namespace ATT
                                 ExportStringKeyValue(builder, key, name).AppendLine();
                             }
                         }
-                        builder.AppendLine("}").AppendLine();
+                        builder.AppendLine("}");
                     }
 
                     // Now grab the non-english localizations and conditionally write them to the file.
-                    var localeKeys = localizationForText.Keys.ToList();
-                    localeKeys.Sort();
-                    foreach (var localeKey in localeKeys)
+                    foreach (var localePair in localizationForText)
                     {
-                        if (localizationForText.TryGetValue(localeKey, out data) && data.Any())
+                        if (localePair.Value.Any())
                         {
-                            builder.Append("if simplifiedLocale == \"").Append(localeKey).AppendLine("\" then");
-                            builder.AppendLine("local a = _.CategoryNames;").AppendLine("for key,value in pairs({");
+                            var localeBuilder = localizationByLocale[localePair.Key];
+                            localeBuilder.AppendLine("localize(_.CategoryNames, {");
                             foreach (var key in keys)
                             {
-                                if (data.TryGetValue(key, out string name))
+                                if (localePair.Value.TryGetValue(key, out string name))
                                 {
-                                    ExportStringKeyValue(builder, key, name).AppendLine();
+                                    ExportStringKeyValue(localeBuilder, key, name).AppendLine();
                                 }
                             }
-                            builder.AppendLine("}) do a[key] = value; end");
-                            builder.AppendLine("end").AppendLine();
+                            localeBuilder.AppendLine("});");
                         }
                     }
 
-                    // Check to make sure the content is different since Diff tools are dumb as hell.
-                    var filename = Path.Combine(addonRootFolder, $"db/{dbRootFolder}CategoryDB.lua");
-                    var content = builder.ToString().Replace("\r\n", "\n").Trim();
-                    if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content, Encoding.UTF8);
+                    // Now write the icons last.
+                    builder.AppendLine("_.CategoryIcons = {");
+                    foreach (var key in keys)
+                    {
+                        if (icons.TryGetValue(key, out string icon))
+                        {
+                            ExportStringKeyValue(builder, key, icon).AppendLine();
+                        }
+                    }
+                    builder.AppendLine("}");
+
+                    // Append the file content to our localization database.
+                    localizationDatabase.AppendLine(builder.ToString());
                 }
 
                 // Export the Custom Headers file.
@@ -5270,10 +5453,7 @@ namespace ATT
                     CurrentParseStage = ParseStage.ExportCustomHeaders;
 
                     // Now export it based on what we know.
-                    var builder = new StringBuilder("-------------------------------------------------------\n--   C U S T O M   H E A D E R S   M O D U L E   --\n-------------------------------------------------------\n")
-                        .AppendLine("local appName, _ = ...;")
-                        .AppendLine("local L = _.L;")
-                        .AppendLine("local simplifiedLocale = string.sub(GetLocale(),1,2);").AppendLine();
+                    var builder = new StringBuilder("-- Custom Header Database Module").AppendLine();
                     var keys = new List<long>();
                     var eventIDs = new Dictionary<long, long>();
                     var eventRemaps = new Dictionary<long, long>();
@@ -5374,6 +5554,7 @@ namespace ATT
                     }
                     keys.Sort(new Comparison<long>((i1, i2) => i2.CompareTo(i1)));
 
+                    // Write the header constants!
                     builder.AppendLine("_.HeaderConstants = {");
                     var headerKeys = constants.Keys.ToList();
                     headerKeys.Sort(StringComparer.InvariantCulture);
@@ -5381,12 +5562,111 @@ namespace ATT
                     {
                         builder.Append("\t").Append(key).Append(" = ").Append(constants[key]).AppendLine(",");
                     }
-                    builder.AppendLine("};").AppendLine();
+                    builder.AppendLine("};");
 
+                    // Convert all "cn" into "zh" dictionaries, it makes the comparison later easier.
+                    if (localizationForText.TryGetValue("cn", out Dictionary<long, string> data))
+                    {
+                        localizationForText.Remove("cn");
+                        if (!localizationForText.TryGetValue("zh", out Dictionary<long, string> zh))
+                        {
+                            localizationForText["zh"] = data;
+                        }
+                        else
+                        {
+                            foreach (var pair in data)
+                            {
+                                zh[pair.Key] = pair.Value;
+                            }
+                        }
+                    }
+                    if (localizationForDescriptions.TryGetValue("cn", out data))
+                    {
+                        localizationForDescriptions.Remove("cn");
+                        if (!localizationForDescriptions.TryGetValue("zh", out Dictionary<long, string> zh))
+                        {
+                            localizationForDescriptions["zh"] = data;
+                        }
+                        else
+                        {
+                            foreach (var pair in data)
+                            {
+                                zh[pair.Key] = pair.Value;
+                            }
+                        }
+                    }
+                    if (localizationForLore.TryGetValue("cn", out data))
+                    {
+                        localizationForLore.Remove("cn");
+                        if (!localizationForLore.TryGetValue("zh", out Dictionary<long, string> zh))
+                        {
+                            localizationForLore["zh"] = data;
+                        }
+                        else
+                        {
+                            foreach (var pair in data)
+                            {
+                                zh[pair.Key] = pair.Value;
+                            }
+                        }
+                    }
 
+                    // Get all of the english translations and always write them to the file.
+                    if (localizationForText.TryGetValue("en", out data))
+                    {
+                        localizationForText.Remove("en");
+                        builder.AppendLine("localize(L.HEADER_NAMES, {");
+                        foreach (var key in keys)
+                        {
+                            if (data.TryGetValue(key, out string name))
+                            {
+                                ExportStringKeyValue(builder, key, name).AppendLine();
+                            }
+                        }
+                        builder.AppendLine("});");
+                    }
+                    if (localizationForDescriptions.TryGetValue("en", out data))
+                    {
+                        localizationForDescriptions.Remove("en");
+                        builder.AppendLine("localize(L.HEADER_DESCRIPTIONS, {");
+                        foreach (var key in keys)
+                        {
+                            if (data.TryGetValue(key, out string name))
+                            {
+                                ExportStringKeyValue(builder, key, name).AppendLine();
+                            }
+                        }
+                        builder.AppendLine("});");
+                    }
+                    if (localizationForLore.TryGetValue("en", out data))
+                    {
+                        localizationForLore.Remove("en");
+                        builder.AppendLine("localize(L.HEADER_LORE, {");
+                        foreach (var key in keys)
+                        {
+                            if (data.TryGetValue(key, out string name))
+                            {
+                                ExportStringKeyValue(builder, key, name).AppendLine();
+                            }
+                        }
+                        builder.AppendLine("});");
+                    }
+
+                    // Write the icons last.
+                    builder.AppendLine("localize(L.HEADER_ICONS, {");
+                    foreach (var key in keys)
+                    {
+                        if (icons.TryGetValue(key, out string icon))
+                        {
+                            ExportStringKeyValue(builder, key, icon).AppendLine();
+                        }
+                    }
+                    builder.AppendLine("});");
+
+                    // Write the event information!
                     if (eventIDs.Any())
                     {
-                        builder.AppendLine("local a = L.HEADER_EVENTS;").AppendLine("for key,value in pairs({");
+                        builder.AppendLine("localize(L.HEADER_EVENTS, {");
                         foreach (var key in keys)
                         {
                             if (eventIDs.TryGetValue(key, out long eventID))
@@ -5394,16 +5674,16 @@ namespace ATT
                                 ExportObjectKeyValue(builder, key, eventID).AppendLine();
                             }
                         }
-                        builder.AppendLine("}) do a[key] = value; end").AppendLine();
+                        builder.AppendLine("});");
                     }
                     if (eventRemaps.Any())
                     {
-                        builder.AppendLine("local a = L.EVENT_REMAPPING;").AppendLine("for key,value in pairs({");
+                        builder.AppendLine("localize(L.EVENT_REMAPPING, {");
                         foreach (var pair in eventRemaps)
                         {
                             ExportObjectKeyValue(builder, pair.Key, pair.Value).AppendLine();
                         }
-                        builder.AppendLine("}) do a[key] = value; end").AppendLine();
+                        builder.AppendLine("});").AppendLine();
                     }
                     if (eventSchedules.Any())
                     {
@@ -5412,18 +5692,141 @@ namespace ATT
                         {
                             builder.Append("_.Modules.Events.SetEventInformation(").Append(pair.Key).Append(", ").Append(pair.Value).Append(");").AppendLine();
                         }
-                        builder.AppendLine();
                     }
 
-                    builder.AppendLine("local a = L.HEADER_ICONS;").AppendLine("for key,value in pairs({");
-                    foreach (var key in keys)
+                    // Now grab the non-english localizations and conditionally write them to the file.
+                    foreach (var localePair in localizationForText)
                     {
-                        if (icons.TryGetValue(key, out string icon))
+                        if (localePair.Value.Any())
                         {
-                            ExportStringKeyValue(builder, key, icon).AppendLine();
+                            var localeBuilder = localizationByLocale[localePair.Key];
+                            localeBuilder.AppendLine("localize(L.HEADER_NAMES, {");
+                            foreach (var key in keys)
+                            {
+                                if (localePair.Value.TryGetValue(key, out string name))
+                                {
+                                    ExportStringKeyValue(localeBuilder, key, name).AppendLine();
+                                }
+                            }
+                            localeBuilder.AppendLine("});");
                         }
                     }
-                    builder.AppendLine("}) do a[key] = value; end").AppendLine();
+                    foreach (var localePair in localizationForDescriptions)
+                    {
+                        if (localePair.Value.Any())
+                        {
+                            var localeBuilder = localizationByLocale[localePair.Key];
+                            localeBuilder.AppendLine("localize(L.HEADER_DESCRIPTIONS, {");
+                            foreach (var key in keys)
+                            {
+                                if (localePair.Value.TryGetValue(key, out string name))
+                                {
+                                    ExportStringKeyValue(localeBuilder, key, name).AppendLine();
+                                }
+                            }
+                            localeBuilder.AppendLine("});");
+                        }
+                    }
+                    foreach (var localePair in localizationForLore)
+                    {
+                        if (localePair.Value.Any())
+                        {
+                            var localeBuilder = localizationByLocale[localePair.Key];
+                            localeBuilder.AppendLine("localize(L.HEADER_LORE, {");
+                            foreach (var key in keys)
+                            {
+                                if (localePair.Value.TryGetValue(key, out string name))
+                                {
+                                    ExportStringKeyValue(localeBuilder, key, name).AppendLine();
+                                }
+                            }
+                            localeBuilder.AppendLine("});");
+                        }
+                    }
+
+                    // Append the file content to our localization database.
+                    localizationDatabase.AppendLine(builder.ToString());
+                }
+
+                // Export the Filter DB file.
+                if (FILTERS_WITH_REFERENCES.Any())
+                {
+                    CurrentParseStage = ParseStage.ExportFilterDB;
+                    var builder = new StringBuilder("-- Filter Database Module").AppendLine();
+
+                    var icons = new Dictionary<long, string>();
+                    var constants = new Dictionary<string, long>();
+                    var localizationForText = new Dictionary<string, Dictionary<long, string>>();
+
+                    // Include Only Referenced data!
+                    var keys = FILTERS_WITH_REFERENCES.Keys.ToList();
+                    keys.Sort();
+                    foreach (var key in keys)
+                    {
+                        // Check to see if DB has any information for this id.
+                        if (!FilterDB.TryGetValue(key, out Dictionary<string, object> dataEntry))
+                        {
+                            // If not, report that it is missing.
+                            Console.Write("Missing Filter data for #");
+                            Console.WriteLine(key);
+                            continue;
+                        }
+                        if (dataEntry.TryGetValue("text", out object value))
+                        {
+                            if (!(value is IDictionary<string, object> localeData))
+                            {
+                                localeData = new Dictionary<string, object>
+                                {
+                                    ["en"] = value
+                                };
+                            }
+                            if (localeData.TryGetValue("en", out string englishValue))
+                            {
+                                if (!localizationForText.TryGetValue("en", out Dictionary<long, string> sublocale))
+                                {
+                                    localizationForText["en"] = sublocale = new Dictionary<long, string>();
+                                }
+                                sublocale[key] = englishValue;
+
+                                foreach (var locale in localeData)
+                                {
+                                    if (locale.Key == "en") continue;
+
+                                    string localizedValue = locale.Value.ToString();
+                                    if (!localizedValue.Contains(englishValue))
+                                    {
+                                        if (!localizationForText.TryGetValue(locale.Key, out sublocale))
+                                        {
+                                            localizationForText[locale.Key] = sublocale = new Dictionary<long, string>();
+                                        }
+                                        sublocale[key] = localizedValue;
+                                    }
+                                }
+                            }
+                        }
+                        if (dataEntry.TryGetValue("icon", out object icon))
+                        {
+                            icons[key] = icon.ToString().Replace("\\", "/");
+                        }
+
+                        if (dataEntry.TryGetValue("constant", out value))
+                        {
+                            constants[value.ToString()] = key;
+                        }
+                    }
+
+                    // Write the header constants!
+                    if (constants.Any())
+                    {
+                        builder.AppendLine("_.FilterConstants = {");
+                        var headerKeys = constants.Keys.ToList();
+                        headerKeys.Sort(StringComparer.InvariantCulture);
+                        foreach (var key in headerKeys)
+                        {
+                            builder.Append("\t").Append(key).Append(" = ").Append(constants[key]).AppendLine(",");
+                        }
+                        builder.AppendLine("};");
+                    }
 
                     // Convert all "cn" into "zh" dictionaries, it makes the comparison later easier.
                     if (localizationForText.TryGetValue("cn", out Dictionary<long, string> data))
@@ -5446,7 +5849,7 @@ namespace ATT
                     if (localizationForText.TryGetValue("en", out data))
                     {
                         localizationForText.Remove("en");
-                        builder.AppendLine("local a = L.HEADER_NAMES;").AppendLine("for key,value in pairs({");
+                        builder.AppendLine("L.FILTER_ID_TYPES = {");
                         foreach (var key in keys)
                         {
                             if (data.TryGetValue(key, out string name))
@@ -5454,109 +5857,50 @@ namespace ATT
                                 ExportStringKeyValue(builder, key, name).AppendLine();
                             }
                         }
-                        builder.AppendLine("}) do a[key] = value; end").AppendLine();
-                    }
-                    if (localizationForDescriptions.TryGetValue("en", out data))
-                    {
-                        localizationForDescriptions.Remove("en");
-                        builder.AppendLine("local a = L.HEADER_DESCRIPTIONS;").AppendLine("for key,value in pairs({");
-                        foreach (var key in keys)
-                        {
-                            if (data.TryGetValue(key, out string name))
-                            {
-                                ExportStringKeyValue(builder, key, name).AppendLine();
-                            }
-                        }
-                        builder.AppendLine("}) do a[key] = value; end").AppendLine();
-                    }
-                    if (localizationForLore.TryGetValue("en", out data))
-                    {
-                        localizationForLore.Remove("en");
-                        builder.AppendLine("local a = L.HEADER_LORE;").AppendLine("for key,value in pairs({");
-                        foreach (var key in keys)
-                        {
-                            if (data.TryGetValue(key, out string name))
-                            {
-                                ExportStringKeyValue(builder, key, name).AppendLine();
-                            }
-                        }
-                        builder.AppendLine("}) do a[key] = value; end").AppendLine();
+                        builder.AppendLine("}");
                     }
 
                     // Now grab the non-english localizations and conditionally write them to the file.
-                    var localeKeys = localizationForText.Keys.ToList();
-                    localeKeys.Sort();
-                    foreach (var localeKey in localeKeys)
+                    foreach (var localePair in localizationForText)
                     {
-                        if (localizationForText.TryGetValue(localeKey, out data) && data.Any())
+                        if (localePair.Value.Any())
                         {
-                            builder.Append("if simplifiedLocale == \"").Append(localeKey).AppendLine("\" then");
-                            builder.AppendLine("a = L.HEADER_NAMES;").AppendLine("for key,value in pairs({");
+                            var localeBuilder = localizationByLocale[localePair.Key];
+                            localeBuilder.AppendLine("localize(L.FILTER_ID_TYPES, {");
                             foreach (var key in keys)
                             {
-                                if (data.TryGetValue(key, out string name))
+                                if (localePair.Value.TryGetValue(key, out string name))
                                 {
-                                    ExportStringKeyValue(builder, key, name).AppendLine();
+                                    ExportStringKeyValue(localeBuilder, key, name).AppendLine();
                                 }
                             }
-                            builder.AppendLine("}) do a[key] = value; end");
-                            builder.AppendLine("end").AppendLine();
+                            localeBuilder.AppendLine("});");
                         }
                     }
 
-                    localeKeys = localizationForDescriptions.Keys.ToList();
-                    localeKeys.Sort();
-                    foreach (var localeKey in localeKeys)
+                    // Write the icons last.
+                    if (icons.Any())
                     {
-                        if (localizationForDescriptions.TryGetValue(localeKey, out data) && data.Any())
+                        builder.AppendLine("L.FILTER_ID_ICONS = {");
+                        foreach (var key in keys)
                         {
-                            builder.Append("if simplifiedLocale == \"").Append(localeKey).AppendLine("\" then");
-                            builder.AppendLine("a = L.HEADER_DESCRIPTIONS;").AppendLine("for key,value in pairs({");
-                            foreach (var key in keys)
+                            if (icons.TryGetValue(key, out string icon))
                             {
-                                if (data.TryGetValue(key, out string name))
-                                {
-                                    ExportStringKeyValue(builder, key, name).AppendLine();
-                                }
+                                ExportStringKeyValue(builder, key, icon).AppendLine();
                             }
-                            builder.AppendLine("}) do a[key] = value; end");
-                            builder.AppendLine("end").AppendLine();
                         }
+                        builder.AppendLine("}");
                     }
 
-                    localeKeys = localizationForLore.Keys.ToList();
-                    localeKeys.Sort();
-                    foreach (var localeKey in localeKeys)
-                    {
-                        if (localizationForLore.TryGetValue(localeKey, out data) && data.Any())
-                        {
-                            builder.Append("if simplifiedLocale == \"").Append(localeKey).AppendLine("\" then");
-                            builder.AppendLine("a = L.HEADER_LORE;").AppendLine("for key,value in pairs({");
-                            foreach (var key in keys)
-                            {
-                                if (data.TryGetValue(key, out string name))
-                                {
-                                    ExportStringKeyValue(builder, key, name).AppendLine();
-                                }
-                            }
-                            builder.AppendLine("}) do a[key] = value; end");
-                            builder.AppendLine("end").AppendLine();
-                        }
-                    }
-
-                    // Check to make sure the content is different since Diff tools are dumb as hell.
-                    var filename = Path.Combine(addonRootFolder, $"db/{dbRootFolder}Custom Headers.lua");
-                    var content = builder.ToString().Replace("\r\n", "\n").Trim();
-                    if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content, Encoding.UTF8);
+                    // Append the file content to our localization database.
+                    localizationDatabase.AppendLine(builder.ToString());
                 }
 
                 // Export the Flight Paths DB file.
                 if (FLIGHTPATHS_WITH_REFERENCES.Any())
                 {
                     CurrentParseStage = ParseStage.ExportFlightPathDB;
-                    var builder = new StringBuilder("-------------------------------------------------------\n--   F L I G H T   P A T H S   D A T A B A S E   M O D U L E   --\n-------------------------------------------------------\n")
-                        .AppendLine("local appName, _ = ...;")
-                        .AppendLine("local simplifiedLocale = string.sub(GetLocale(),1,2);").AppendLine();
+                    var builder = new StringBuilder("-- Flight Path Database Module").AppendLine();
 
                     var localizationForText = new Dictionary<string, Dictionary<long, string>>();
 
@@ -5637,43 +5981,36 @@ namespace ATT
                                 ExportStringKeyValue(builder, key, name).AppendLine();
                             }
                         }
-                        builder.AppendLine("}").AppendLine();
+                        builder.AppendLine("}");
                     }
 
                     // Now grab the non-english localizations and conditionally write them to the file.
-                    var localeKeys = localizationForText.Keys.ToList();
-                    localeKeys.Sort();
-                    foreach (var localeKey in localeKeys)
+                    foreach (var localePair in localizationForText)
                     {
-                        if (localizationForText.TryGetValue(localeKey, out data) && data.Any())
+                        if (localePair.Value.Any())
                         {
-                            builder.Append("if simplifiedLocale == \"").Append(localeKey).AppendLine("\" then");
-                            builder.AppendLine("local a = _.FlightPathNames;").AppendLine("for key,value in pairs({");
+                            var localeBuilder = localizationByLocale[localePair.Key];
+                            localeBuilder.AppendLine("localize(L.FlightPathNames, {");
                             foreach (var key in keys)
                             {
-                                if (data.TryGetValue(key, out string name))
+                                if (localePair.Value.TryGetValue(key, out string name))
                                 {
-                                    ExportStringKeyValue(builder, key, name).AppendLine();
+                                    ExportStringKeyValue(localeBuilder, key, name).AppendLine();
                                 }
                             }
-                            builder.AppendLine("}) do a[key] = value; end");
-                            builder.AppendLine("end").AppendLine();
+                            localeBuilder.AppendLine("});");
                         }
                     }
 
-                    // Check to make sure the content is different since Diff tools are dumb as hell.
-                    var filename = Path.Combine(addonRootFolder, $"db/{dbRootFolder}FlightPathDB.lua");
-                    var content = builder.ToString().Replace("\r\n", "\n").Trim();
-                    if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content, Encoding.UTF8);
+                    // Append the file content to our localization database.
+                    localizationDatabase.AppendLine(builder.ToString());
                 }
 
                 // Export the Object DB file.
                 if (OBJECTS_WITH_REFERENCES.Any())
                 {
                     CurrentParseStage = ParseStage.ExportObjectDB;
-                    var builder = new StringBuilder("-------------------------------------------------------\n--   O B J E C T   D A T A B A S E   M O D U L E   --\n-------------------------------------------------------\n")
-                        .AppendLine("local appName, _ = ...;")
-                        .AppendLine("local simplifiedLocale = string.sub(GetLocale(),1,2);").AppendLine();
+                    var builder = new StringBuilder("-- Object Database Module").AppendLine();
 
                     var icons = new Dictionary<long, string>();
                     var modelIDs = new Dictionary<long, long>();
@@ -5744,27 +6081,6 @@ namespace ATT
                         }
                     }
 
-                    builder.AppendLine("_.ObjectIcons = {");
-                    foreach (var key in keys)
-                    {
-                        if (icons.TryGetValue(key, out string icon))
-                        {
-                            ExportStringKeyValue(builder, key, icon).AppendLine();
-                        }
-                    }
-                    builder.AppendLine("}").AppendLine();
-
-
-                    builder.AppendLine("_.ObjectModels = {");
-                    foreach (var key in keys)
-                    {
-                        if (modelIDs.TryGetValue(key, out long modelID))
-                        {
-                            ExportObjectKeyValue(builder, key, modelID).AppendLine();
-                        }
-                    }
-                    builder.AppendLine("}").AppendLine();
-
                     // Convert all "cn" into "zh" dictionaries, it makes the comparison later easier.
                     if (localizationForText.TryGetValue("cn", out Dictionary<long, string> data))
                     {
@@ -5794,34 +6110,74 @@ namespace ATT
                                 ExportStringKeyValue(builder, key, name).AppendLine();
                             }
                         }
-                        builder.AppendLine("}").AppendLine();
+                        builder.AppendLine("}");
                     }
 
                     // Now grab the non-english localizations and conditionally write them to the file.
-                    var localeKeys = localizationForText.Keys.ToList();
-                    localeKeys.Sort();
-                    foreach (var localeKey in localeKeys)
+                    foreach (var localePair in localizationForText)
                     {
-                        if (localizationForText.TryGetValue(localeKey, out data) && data.Any())
+                        if (localePair.Value.Any())
                         {
-                            builder.Append("if simplifiedLocale == \"").Append(localeKey).AppendLine("\" then");
-                            builder.AppendLine("local a = _.ObjectNames;").AppendLine("for key,value in pairs({");
+                            var localeBuilder = localizationByLocale[localePair.Key];
+                            localeBuilder.AppendLine("localize(L.ObjectNames, {");
                             foreach (var key in keys)
                             {
-                                if (data.TryGetValue(key, out string name))
+                                if (localePair.Value.TryGetValue(key, out string name))
                                 {
-                                    ExportStringKeyValue(builder, key, name).AppendLine();
+                                    ExportStringKeyValue(localeBuilder, key, name).AppendLine();
                                 }
                             }
-                            builder.AppendLine("}) do a[key] = value; end");
-                            builder.AppendLine("end").AppendLine();
+                            localeBuilder.AppendLine("});");
                         }
                     }
 
-                    // Check to make sure the content is different since Diff tools are dumb as hell.
-                    var filename = Path.Combine(addonRootFolder, $"db/{dbRootFolder}ObjectDB.lua");
-                    var content = builder.ToString().Replace("\r\n", "\n").Trim();
-                    if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content, Encoding.UTF8);
+                    // Now write the icons after the text.
+                    builder.AppendLine("_.ObjectIcons = {");
+                    foreach (var key in keys)
+                    {
+                        if (icons.TryGetValue(key, out string icon))
+                        {
+                            ExportStringKeyValue(builder, key, icon).AppendLine();
+                        }
+                    }
+                    builder.AppendLine("}");
+
+                    // Write the model information last.
+                    builder.AppendLine("_.ObjectModels = {");
+                    foreach (var key in keys)
+                    {
+                        if (modelIDs.TryGetValue(key, out long modelID))
+                        {
+                            ExportObjectKeyValue(builder, key, modelID).AppendLine();
+                        }
+                    }
+                    builder.AppendLine("}");
+
+                    // Append the file content to our localization database.
+                    localizationDatabase.AppendLine(builder.ToString());
+                }
+
+                // Now write the localization for each locale to the localization database builder.
+                var localeKeys = localizationByLocale.Keys.ToList();
+                localeKeys.Sort();
+                localizationDatabase.AppendLine("-- Supported Locales")
+                    .AppendLine("local simplifiedLocale = string.sub(GetLocale(),1,2);");
+                foreach (var localeKey in localeKeys)
+                {
+                    if (localizationByLocale.TryGetValue(localeKey, out StringBuilder builder) && builder.Length > 0)
+                    {
+                        localizationDatabase.Append("if simplifiedLocale == \"").Append(localeKey).AppendLine("\" then");
+                        localizationDatabase.Append(builder.ToString());
+                        localizationDatabase.AppendLine("end");
+                    }
+                }
+
+                // Check to make sure the content is different since Diff tools are dumb as hell.
+                var filename = Path.Combine(addonRootFolder, $"db/{dbRootFolder}LocalizationDB.lua");
+                var localizationDatabaseContent = localizationDatabase.ToString().Replace("\r\n", "\n").Trim();
+                if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8).Replace("\r\n", "\n").Trim() != localizationDatabaseContent)
+                {
+                    File.WriteAllText(filename, localizationDatabaseContent, Encoding.UTF8);
                 }
 
                 CurrentParseStage = ParseStage.ExportAddonData;

@@ -670,23 +670,6 @@ L.CUSTOM_DIFFICULTIES[-2] = "弹性 (5.4)";
 L.CUSTOM_DIFFICULTIES[-3] = "普通 (5.4)";
 L.CUSTOM_DIFFICULTIES[-4] = "英雄 (5.4)";
 
-local a = L.FILTER_ID_TYPES;
-for key,value in pairs({
-	-- "Armor Types"
-		[11] = "神器";												-- Artifacts
-
-	-- PADDING for extra types, if necessary
-	[55] = "消耗品";													-- Consumable (Artifact Power, etc)
-	[59] = "职业技能书";													-- Class Books (Classic Spells, Ashran Books, etc)
-
-	-- "Non-Equipment Types"
-		[103] = "幻象";												-- Illusions
-		[107] = "事件";												-- Vignettes
-
-	[999] = "事件物品";													-- Event Item
-})
-do a[key] = value; end
-
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Garrisons
