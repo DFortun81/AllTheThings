@@ -531,7 +531,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			-- Artisan Curios
 			FirstCraft(74477, 400808, ADDED_10_0_7);	-- Ancient Ceremonial Trident
 			-- Legendary
-			--FirstCraft(x, 409224, ADDED_10_1_0);	-- Reclaimed Gauntlet Chassis
+			FirstCraft(75418, 409224, ADDED_10_1_0);	-- Reclaimed Gauntlet Chassis
 		})),
 		filter(MISC, {
 			i(203408, {["timeline"] = {ADDED_10_0_7}}),	-- Ancient Ceremonial Trident
@@ -1220,7 +1220,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			-- Artisan Curios
 			FirstCraft(74312, 400810, ADDED_10_0_7);	-- Gnomish Voicebox
 			-- Legendary
-			--FirstCraft(x, 407170, ADDED_10_1_0);	-- Inspired Order Recalibrator
+			FirstCraft(75435, 407170, ADDED_10_1_0);	-- Inspired Order Recalibrator
 		})),
 		filter(MISC, {
 			i(198549),	-- Black Fireflight
@@ -2193,7 +2193,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			-- Artisan Curios
 			FirstCraft(74482, 400812, ADDED_10_0_7);	-- Crystal Tuning Fork
 			-- Legendary
-			--FirstCraft(x, 407161, ADDED_10_1_0);	-- Immaculate Coalescing Dracothyst
+			FirstCraft(75434, 407161, ADDED_10_1_0);	-- Immaculate Coalescing Dracothyst
 		})),
 		filter(GEMS, {
 			i(192917),	-- Crafty Alexstraszite+

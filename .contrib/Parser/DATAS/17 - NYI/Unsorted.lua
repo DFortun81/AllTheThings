@@ -1099,10 +1099,7 @@ root(ROOTS.Unsorted, {
 				q(75342),	-- Kronkapace
 				q(75376),	-- Suffuse, Reuse, Recycle
 				q(75389),	--
-				q(75418),	--
 				q(75429),	--
-				q(75434),	--
-				q(75435),	--
 				q(75442),	--
 				q(75443),	--
 				q(75445),	--
@@ -1200,8 +1197,6 @@ root(ROOTS.Unsorted, {
 				q(76200),	--
 				q(76202),	--
 				-- 10.1.0.49679
-				q(74924),	-- Nasz'uro, the Unbound Legacy
-				q(75623),	-- Take Item (DNT) (spellID 408549)
 				q(75659),	--
 				q(76087),	--
 				-- 10.1.0.49741

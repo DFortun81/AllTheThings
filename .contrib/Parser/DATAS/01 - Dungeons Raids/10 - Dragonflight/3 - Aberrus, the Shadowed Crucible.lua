@@ -26,12 +26,15 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					["g"] = {
 						r(407161, {	-- Immaculate Coalescing Dracothyst
 							["requireSkill"] = JEWELCRAFTING,
+							["u"] = TRAINING,
 						}),
 						r(407170, {	-- Inspired Order Recalibrator
 							["requireSkill"] = ENGINEERING,
+							["u"] = TRAINING,
 						}),
 						r(409224, {	-- Reclaimed Gauntlet Chassis
 							["requireSkill"] = BLACKSMITHING,
+							["u"] = TRAINING,
 						}),
 					},
 				}),
@@ -70,14 +73,14 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 							i(204808),	-- Empowered Temporal Gossamer
 						},
 					}),
-					--q(, {	-- Nasz'uro, the Unbound Legacy
-					--	["sourceQuests"] = { 74923 },	-- It Takes a Village to Make an Artifact
-					--	["provider"] = { "n",  },	--
-					--	["g"] = {
+					q(74924, {	-- Nasz'uro, the Unbound Legacy
+						["sourceQuests"] = { 74923 },	-- It Takes a Village to Make an Artifact
+						["provider"] = { "n", 187669 },	-- Nozdormu
+						["g"] = {
 							i(204177),	-- Nasz'uro, the Unbound Legacy
 							ach(18256),	-- Nasz'uro, the Unbound Legacy
-					--	},
-					--}),
+						},
+					}),
 				})),
 			}),
 			n(ACHIEVEMENTS, {
@@ -1647,5 +1650,8 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDE
 		q(76087),	-- Sarkareth HC kill on Evoker; Legendary 'higher chance' lockout?
 		q(76088),	-- Normal Sarkareth Kill?
 		q(76089),	-- Normal Sarkareth Kill?
+
+		-- Nasz'uro, the Unbound Legacy
+		q(75623),	-- Triggers when you recieve the legendary during the last quest (spellID 408549)
 	}),
 })));
