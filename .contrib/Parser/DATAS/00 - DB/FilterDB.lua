@@ -256,7 +256,11 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_throwingknife_02",
 		constant = "THROWN",
 		text = {
+			-- #if AFTER WRATH
 			en = [[~INVTYPE_THROWN]],
+			-- #else
+			en = [[~GetItemSubClassInfo(2,16)]],
+			-- #endif
 		},
 	},
 	[37] = {
