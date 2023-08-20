@@ -30,13 +30,56 @@ root(ROOTS.Zones, {
 						},
 					}),
 				}),
+				n(QUESTS, {
+					q(32613, {	-- Giant Dinosaur Bone
+						["qg"] = 70022,	-- Ku'ma <The Bone Collector>
+						["cost"] = {{ "i", 94288, 1 }},	-- Giant Dinosaur Bone
+						["repeatable"] = true,
+					}),
+					q(32614, {	-- More Giant Dinosaur Bones
+						["qg"] = 70022,	-- Ku'ma <The Bone Collector>
+						["cost"] = {{ "i", 94288, 9 }},	-- Giant Dinosaur Bone
+						["repeatable"] = true,
+						["groups"] = {
+							i(89112),	-- Mote of Harmony
+						},
+					}),
+					q(32615, {	-- Many More Giant Dinosaur Bones
+						["qg"] = 70022,	-- Ku'ma <The Bone Collector>
+						["cost"] = {{ "i", 94288, 99 }},	-- Giant Dinosaur Bone
+						["repeatable"] = true,
+						["groups"] = {
+							i(76061),	-- Spirit of Harmony
+						},
+					}),
+					q(32616, {	-- A Large Pile of Dinosaur Bones
+						["qg"] = 70022,	-- Ku'ma <The Bone Collector>
+						["cost"] = {{ "i", 94288, 999 }},	-- Giant Dinosaur Bone
+						["repeatable"] = true,
+						["g"] = {
+							i(94190),	-- Spectral Porcupette (PET!)
+						},
+					}),
+					q(32617, {	-- A Mountian of Dinosaur Bones
+						["qg"] = 70022,	-- Ku'ma <The Bone Collector>
+						["cost"] = {{ "i", 94288, 9999 }},	-- Giant Dinosaur Bone
+						["repeatable"] = true,
+						["g"] = {
+							ach(8092, {	-- I've Got 9999 Problems but a Bone-White Primal Raptor Ain't One
+								["provider"] = { "i", 94290 },	-- Bone-White Primal Raptor
+								["f"] = MOUNTS,
+							}),
+							i(94290),	-- Bone-White Primal Raptor (MOUNT!)
+						},
+					}),
+				}),
 				n(ZONE_DROPS, {
 					i(94573, {	-- Direhorn Runt (PET!)
 						["crs"] = { 69983 },	-- Primal Direhorn
 						["timeline"] = { "added 5.3.0.16758" },
 					}),
 					i(94288, {	-- Giant Dinosaur Bone
-						["description"] = "These bones can be gathered and turned into Ku'ma on the Isle of Giants.\n\n        1 Bone = 1g 14s\n      9 Bones = 1 Mote of Harmony\n    99 Bones = 1 Spirit of Harmony\n  999 Bones = Spectral Porcupette\n9999 Bones = Primal Raptor",
+						["description"] = "These bones can be gathered and turned into Ku'ma on the Isle of Giants.",
 						["coords"] = {
 							{ 27.32, 58.07, ISLE_OF_GIANTS },	-- Cave Entrance
 							{ 32.72, 54.26, ISLE_OF_GIANTS },	-- Ku'ma
@@ -67,41 +110,9 @@ root(ROOTS.Zones, {
 							70006,	-- Young Primal Devilsaur [West - Gold]
 							69993,	-- Young Primal Devilsaur [West - Red]
 						},
-						["g"] = {
-							q(32613, {	-- Giant Dinosaur Bone
-								["repeatable"] = true,
-								["provider"] = { "n", 70022 },	-- Ku'ma <The Bone Collector>
-							}),
-							q(32614, {	-- More Giant Dinosaur Bones
-								["repeatable"] = true,
-								["provider"] = { "n", 70022 },	-- Ku'ma <The Bone Collector>
-							}),
-							q(32615, {	-- Many More Giant Dinosaur Bones
-								["repeatable"] = true,
-								["provider"] = { "n", 70022 },	-- Ku'ma <The Bone Collector>
-							}),
-							q(32616, {	-- A Large Pile of Dinosaur Bones
-								["repeatable"] = true,
-								["provider"] = { "n", 70022 },	-- Ku'ma <The Bone Collector>
-								["g"] = {
-									i(94190),	-- Spectral Porcupette (PET!)
-								},
-							}),
-							q(32617, {	-- A Mountian of Dinosaur Bones
-								["repeatable"] = true,
-								["provider"] = { "n", 70022 },	-- Ku'ma <The Bone Collector>
-								["g"] = {
-									ach(8092, {	-- I've Got 9999 Problems but a Bone-White Primal Raptor Ain't One
-										["provider"] = { "i", 94290 },	-- Bone-White Primal Raptor
-										["filterID"] = MOUNTS,
-									}),
-									i(94290),	-- Bone-White Primal Raptor (MOUNT!)
-								},
-							}),
-						},
 					}),
 					i(94295, {	-- Primal Egg
-						["description"] = "This egg can be obtained from the Treasures/Spoils of the Thunder King or zone wide on the Isle of Giants.",
+						["provider"] = { "i", 94296 },	-- Cracked Primal Egg
 						["crs"] = {
 							69991,	-- Primal Devilsaur [East - Blue]
 							70010,	-- Primal Devilsaur [East - Tan]
@@ -131,11 +142,9 @@ root(ROOTS.Zones, {
 							60491,	-- Sha of Anger
 						},
 						["g"] = {
-							i(94296, {  -- Cracked Primal Egg
-								i(94292),	-- Black Primal Raptor (MOUNT!)
-								i(94293),	-- Green Primal Raptor  (MOUNT!)
-								i(94291),	-- Red Primal Raptor (MOUNT!)
-							}),
+							i(94292),	-- Black Primal Raptor (MOUNT!)
+							i(94293),	-- Green Primal Raptor  (MOUNT!)
+							i(94291),	-- Red Primal Raptor (MOUNT!)
 						},
 					}),
 					n(69925, {	-- Zandalari Dinomancer
