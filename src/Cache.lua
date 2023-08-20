@@ -593,6 +593,7 @@ local function VerifyCache()
 end
 
 -- External API Functions
+app.AllCaches = AllCaches;	-- Needed for now, due to the UpdateRawID function not being able to be moved into this file yet. TODO: Move it and then remove this.
 app.CacheField = CacheField;	-- This doesn't seem to have any external uses, apparently was used by Flight Paths at some point.
 app.CacheFields = CacheFields;
 app.CreateDataCache = CreateDataCache;

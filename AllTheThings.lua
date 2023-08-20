@@ -5839,7 +5839,7 @@ local function UpdateSearchResults(searchResults)
 	-- app.PrintDebug("UpdateSearchResults Done")
 end
 
-local DataCaches = {};
+local DataCaches = app.AllCaches;
 -- Pulls all cached fields for the field/id and passes the results into UpdateSearchResults
 local function UpdateRawID(field, id)
 	-- app.PrintDebug("UpdateRawID",field,id)
