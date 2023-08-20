@@ -353,7 +353,9 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					}),
 					-- Choose Zone
 					q(41112, {	-- The Great Akazamzarak
+						-- #if BEFORE 8.0.1
 						["sourceQuests"] = { 41125 },	-- Unlocked Potential
+						-- #endif
 						["provider"] = { "n", 102700 },	-- Meryl Felstorm
 						["coord"] = { 56.5, 33.8, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
 					}),
