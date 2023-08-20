@@ -7715,20 +7715,22 @@ end
 -- Will print a warning message and play a warning sound if the given QuestID being completed will prevent being able to complete a breadcrumb
 -- (as far as ATT is capable of knowing)
 app.CheckForBreadcrumbPrevention = function(title, questID)
-	local nextQuests = SearchForField("nextQuests", questID);
-	if #nextQuests > 0 then
-		local warning;
-		for _,group in pairs(nextQuests) do
-			if not group.collected and app.RecursiveCharacterRequirementsFilter(group) then
-				app.print(sformat(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"],
-					title,
-					app:Linkify(questID, app.Colors.ChatLink, "search:questID:"..questID),
-					group.text or RETRIEVING_DATA,
-					app:Linkify(group.questID, app.Colors.Locked, "search:questID:"..group.questID)));
-				warning = true;
+	if questID then
+		local nextQuests = SearchForField("nextQuests", questID);
+		if #nextQuests > 0 then
+			local warning;
+			for _,group in pairs(nextQuests) do
+				if not group.collected and app.RecursiveCharacterRequirementsFilter(group) then
+					app.print(sformat(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"],
+						title,
+						app:Linkify(questID, app.Colors.ChatLink, "search:questID:"..questID),
+						group.text or RETRIEVING_DATA,
+						app:Linkify(group.questID, app.Colors.Locked, "search:questID:"..group.questID)));
+					warning = true;
+				end
 			end
+			if warning then app:PlayRemoveSound(); end
 		end
-		if warning then app:PlayRemoveSound(); end
 	end
 end
 
