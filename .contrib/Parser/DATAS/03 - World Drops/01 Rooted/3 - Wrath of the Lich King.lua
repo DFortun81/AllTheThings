@@ -1125,10 +1125,10 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		}),
 		-- #endif
 		prof(COOKING, {
-			i(43509),	-- Recipe: Bad Clams
-			i(43510),	-- Recipe: Haunted Herring
-			i(43508),	-- Recipe: Last Week's Mammoth
-			i(43507),	-- Recipe: Tasty Cupcake
+			i(43509),	-- Recipe: Bad Clams (RECIPE!)
+			i(43510),	-- Recipe: Haunted Herring (RECIPE!)
+			i(43508),	-- Recipe: Last Week's Mammoth (RECIPE!)
+			i(43507),	-- Recipe: Tasty Cupcake (RECIPE!)
 		}),
 		-- #if BEFORE 8.0.1.10000
 		prof(FIRST_AID, {

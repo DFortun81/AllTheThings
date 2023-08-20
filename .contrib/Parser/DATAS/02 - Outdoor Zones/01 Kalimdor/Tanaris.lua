@@ -3283,7 +3283,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(16971),	-- Clamlette Surprise
 						-- #if AFTER WRATH
-						recipe(64054),	-- Clamlette Magnifique
+						recipe(64054),	-- Clamlette Magnifique (RECIPE!)
 						-- #endif
 					},
 				}),
@@ -3292,11 +3292,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 6611,	-- To Gadgetzan You Go!
 					["coord"] = { 52.63, 28.12, TANARIS },
 					["timeline"] = { "added 3.1.0.9637", "removed 4.0.3" },
-					["lockCriteria"] = { 1, "spellID", 64054 },	-- Clamlette Magnifique
+					["lockCriteria"] = { 1, "spellID", 64054 },	-- Clamlette Magnifique (RECIPE!)
 					["requireSkill"] = COOKING,
 					["groups"] = {
 						i(16971),	-- Clamlette Surprise
-						recipe(64054),	-- Clamlette Magnifique
+						recipe(64054),	-- Clamlette Magnifique (RECIPE!)
 					},
 				}),
 				q(2882, {	-- Cuergo's Gold

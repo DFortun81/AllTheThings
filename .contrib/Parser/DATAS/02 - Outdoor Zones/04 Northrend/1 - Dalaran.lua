@@ -3801,7 +3801,7 @@ root(ROOTS.Zones, {
 							["coord"] = { 44.2, 25.6, NORTHREND_THE_UNDERBELLY },
 							["requireSkill"] = COOKING,
 							["groups"] = {
-								recipe(53056),	-- Kungaloosh
+								recipe(53056),	-- Kungaloosh (RECIPE!)
 							},
 						}),
 						q(12853, {	-- Luxurious Getaway!
@@ -5938,30 +5938,30 @@ root(ROOTS.Zones, {
 								["timeline"] = { "added 7.0.3.22248" },
 							})),
 							epicurean(1, i(43007)),	-- Northern Spices
-							epicurean(3, i(43035)),	-- Recipe: Blackened Dragonfin
-							epicurean(3, i(43032)),	-- Recipe: Blackened Worg Steak
-							epicurean(3, i(43029)),	-- Recipe: Critter Bites
-							epicurean(3, i(43033)),	-- Recipe: Cuttlesteak
-							epicurean(3, i(43036)),	-- Recipe: Dragonfin Filet
-							epicurean(3, i(43024)),	-- Recipe: Firecracker Salmon
-							epicurean(5, i(43017)),	-- Recipe: Fish Feast
-							epicurean(3, i(43505)),	-- Recipe: Gigantic Feast
-							epicurean(3, i(43030)),	-- Recipe: Hearty Rhino
-							epicurean(3, i(43026)),	-- Recipe: Imperial Manta Steak
-							epicurean(3, i(43018)),	-- Recipe: Mega Mammoth Meal
-							epicurean(3, i(43022)),	-- Recipe: Mighty Rhino Dogs
-							epicurean(3, i(43023)),	-- Recipe: Poached Northern Sculpin
-							epicurean(3, i(43028)),	-- Recipe: Rhinolicious Wormsteak
-							epicurean(3, i(43506)),	-- Recipe: Small Feast
-							epicurean(3, i(43031)),	-- Recipe: Snapper Extreme
-							epicurean(3, i(43034)),	-- Recipe: Spiced Mammoth Treats
-							epicurean(3, i(43020)),	-- Recipe: Spiced Worm Burger
-							epicurean(3, i(43025)),	-- Recipe: Spicy Blue Nettlefish
-							epicurean(3, i(43027)),	-- Recipe: Spicy Fried Herring
-							epicurean(3, i(43019)),	-- Recipe: Tender Shoveltusk Steak
-							epicurean(3, i(43037)),	-- Recipe: Tracker Snacks
-							epicurean(3, i(43021)),	-- Recipe: Very Burnt Worg
-							epicurean(3, i(44954)),	-- Recipe: Worg Tartare
+							epicurean(3, i(43035)),	-- Recipe: Blackened Dragonfin (RECIPE!)
+							epicurean(3, i(43032)),	-- Recipe: Blackened Worg Steak (RECIPE!)
+							epicurean(3, i(43029)),	-- Recipe: Critter Bites (RECIPE!)
+							epicurean(3, i(43033)),	-- Recipe: Cuttlesteak (RECIPE!)
+							epicurean(3, i(43036)),	-- Recipe: Dragonfin Filet (RECIPE!)
+							epicurean(3, i(43024)),	-- Recipe: Firecracker Salmon (RECIPE!)
+							epicurean(5, i(43017)),	-- Recipe: Fish Feast (RECIPE!)
+							epicurean(3, i(43505)),	-- Recipe: Gigantic Feast (RECIPE!)
+							epicurean(3, i(43030)),	-- Recipe: Hearty Rhino (RECIPE!)
+							epicurean(3, i(43026)),	-- Recipe: Imperial Manta Steak (RECIPE!)
+							epicurean(3, i(43018)),	-- Recipe: Mega Mammoth Meal (RECIPE!)
+							epicurean(3, i(43022)),	-- Recipe: Mighty Rhino Dogs (RECIPE!)
+							epicurean(3, i(43023)),	-- Recipe: Poached Northern Sculpin (RECIPE!)
+							epicurean(3, i(43028)),	-- Recipe: Rhinolicious Wormsteak (RECIPE!)
+							epicurean(3, i(43506)),	-- Recipe: Small Feast (RECIPE!)
+							epicurean(3, i(43031)),	-- Recipe: Snapper Extreme (RECIPE!)
+							epicurean(3, i(43034)),	-- Recipe: Spiced Mammoth Treats (RECIPE!)
+							epicurean(3, i(43020)),	-- Recipe: Spiced Worm Burger (RECIPE!)
+							epicurean(3, i(43025)),	-- Recipe: Spicy Blue Nettlefish (RECIPE!)
+							epicurean(3, i(43027)),	-- Recipe: Spicy Fried Herring (RECIPE!)
+							epicurean(3, i(43019)),	-- Recipe: Tender Shoveltusk Steak (RECIPE!)
+							epicurean(3, i(43037)),	-- Recipe: Tracker Snacks (RECIPE!)
+							epicurean(3, i(43021)),	-- Recipe: Very Burnt Worg (RECIPE!)
+							epicurean(3, i(44954)),	-- Recipe: Worg Tartare (RECIPE!)
 						},
 					}),
 					n(34252, {	-- Dubin Clay <Plate Armor Merchant>
@@ -6648,30 +6648,30 @@ root(ROOTS.Zones, {
 								["timeline"] = { "added 7.0.3.22248" },
 							})),
 							epicurean(1, i(43007)),	-- Northern Spices
-							epicurean(3, i(43035)),	-- Recipe: Blackened Dragonfin
-							epicurean(3, i(43032)),	-- Recipe: Blackened Worg Steak
-							epicurean(3, i(43029)),	-- Recipe: Critter Bites
-							epicurean(3, i(43033)),	-- Recipe: Cuttlesteak
-							epicurean(3, i(43036)),	-- Recipe: Dragonfin Filet
-							epicurean(3, i(43024)),	-- Recipe: Firecracker Salmon
-							epicurean(5, i(43017)),	-- Recipe: Fish Feast
-							epicurean(3, i(43505)),	-- Recipe: Gigantic Feast
-							epicurean(3, i(43030)),	-- Recipe: Hearty Rhino
-							epicurean(3, i(43026)),	-- Recipe: Imperial Manta Steak
-							epicurean(3, i(43018)),	-- Recipe: Mega Mammoth Meal
-							epicurean(3, i(43022)),	-- Recipe: Mighty Rhino Dogs
-							epicurean(3, i(43023)),	-- Recipe: Poached Northern Sculpin
-							epicurean(3, i(43028)),	-- Recipe: Rhinolicious Wormsteak
-							epicurean(3, i(43506)),	-- Recipe: Small Feast
-							epicurean(3, i(43031)),	-- Recipe: Snapper Extreme
-							epicurean(3, i(43034)),	-- Recipe: Spiced Mammoth Treats
-							epicurean(3, i(43020)),	-- Recipe: Spiced Worm Burger
-							epicurean(3, i(43025)),	-- Recipe: Spicy Blue Nettlefish
-							epicurean(3, i(43027)),	-- Recipe: Spicy Fried Herring
-							epicurean(3, i(43019)),	-- Recipe: Tender Shoveltusk Steak
-							epicurean(3, i(43037)),	-- Recipe: Tracker Snacks
-							epicurean(3, i(43021)),	-- Recipe: Very Burnt Worg
-							epicurean(3, i(44954)),	-- Recipe: Worg Tartare
+							epicurean(3, i(43035)),	-- Recipe: Blackened Dragonfin (RECIPE!)
+							epicurean(3, i(43032)),	-- Recipe: Blackened Worg Steak (RECIPE!)
+							epicurean(3, i(43029)),	-- Recipe: Critter Bites (RECIPE!)
+							epicurean(3, i(43033)),	-- Recipe: Cuttlesteak (RECIPE!)
+							epicurean(3, i(43036)),	-- Recipe: Dragonfin Filet (RECIPE!)
+							epicurean(3, i(43024)),	-- Recipe: Firecracker Salmon (RECIPE!)
+							epicurean(5, i(43017)),	-- Recipe: Fish Feast (RECIPE!)
+							epicurean(3, i(43505)),	-- Recipe: Gigantic Feast (RECIPE!)
+							epicurean(3, i(43030)),	-- Recipe: Hearty Rhino (RECIPE!)
+							epicurean(3, i(43026)),	-- Recipe: Imperial Manta Steak (RECIPE!)
+							epicurean(3, i(43018)),	-- Recipe: Mega Mammoth Meal (RECIPE!)
+							epicurean(3, i(43022)),	-- Recipe: Mighty Rhino Dogs (RECIPE!)
+							epicurean(3, i(43023)),	-- Recipe: Poached Northern Sculpin (RECIPE!)
+							epicurean(3, i(43028)),	-- Recipe: Rhinolicious Wormsteak (RECIPE!)
+							epicurean(3, i(43506)),	-- Recipe: Small Feast (RECIPE!)
+							epicurean(3, i(43031)),	-- Recipe: Snapper Extreme (RECIPE!)
+							epicurean(3, i(43034)),	-- Recipe: Spiced Mammoth Treats (RECIPE!)
+							epicurean(3, i(43020)),	-- Recipe: Spiced Worm Burger (RECIPE!)
+							epicurean(3, i(43025)),	-- Recipe: Spicy Blue Nettlefish (RECIPE!)
+							epicurean(3, i(43027)),	-- Recipe: Spicy Fried Herring (RECIPE!)
+							epicurean(3, i(43019)),	-- Recipe: Tender Shoveltusk Steak (RECIPE!)
+							epicurean(3, i(43037)),	-- Recipe: Tracker Snacks (RECIPE!)
+							epicurean(3, i(43021)),	-- Recipe: Very Burnt Worg (RECIPE!)
+							epicurean(3, i(44954)),	-- Recipe: Worg Tartare (RECIPE!)
 						},
 					}),
 					n(29529, {	-- Ninsianna <Relics>

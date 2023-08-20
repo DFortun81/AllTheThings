@@ -742,21 +742,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					i(46809, {	-- Bountiful Cookbook
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(44859),	-- Recipe: Candied Sweet Potato
-							i(44858),	-- Recipe: Cranberry Chutney
-							i(44862),	-- Recipe: Pumpkin Pie
-							i(44861),	-- Recipe: Slow-Roasted Turkey
-							i(44860),	-- Recipe: Spice Bread Stuffing
+							i(44859),	-- Recipe: Candied Sweet Potato (RECIPE!)
+							i(44858),	-- Recipe: Cranberry Chutney (RECIPE!)
+							i(44862),	-- Recipe: Pumpkin Pie (RECIPE!)
+							i(44861),	-- Recipe: Slow-Roasted Turkey (RECIPE!)
+							i(44860),	-- Recipe: Spice Bread Stuffing (RECIPE!)
 						},
 					}),
 					i(46810, {	-- Bountiful Cookbook
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(46806),	-- Recipe: Candied Sweet Potato
-							i(46805),	-- Recipe: Cranberry Chutney
-							i(46804),	-- Recipe: Pumpkin Pie
-							i(46807),	-- Recipe: Slow-Roasted Turkey
-							i(46803),	-- Recipe: Spice Bread Stuffing
+							i(46806),	-- Recipe: Candied Sweet Potato (RECIPE!)
+							i(46805),	-- Recipe: Cranberry Chutney (RECIPE!)
+							i(46804),	-- Recipe: Pumpkin Pie (RECIPE!)
+							i(46807),	-- Recipe: Slow-Roasted Turkey (RECIPE!)
+							i(46803),	-- Recipe: Spice Bread Stuffing (RECIPE!)
 						},
 					}),
 					i(44853),	-- Honey

@@ -218,7 +218,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 					i(46718, {	-- Orange Marigold
 						["timeline"] = { "added 3.2.2.10505" },
 					}),
-					i(46710, {	-- Recipe: Bread of the Dead
+					i(46710, {	-- Recipe: Bread of the Dead (RECIPE!)
 						["timeline"] = { "added 3.2.2.10505" },
 					}),
 					i(46711, {	-- Spirit Candle

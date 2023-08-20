@@ -159,6 +159,97 @@ i(34834, 45695);	-- Captain Rumsey's Lager
 i(35564, 46684);	-- Charred Bear Kabobs (4.1.0)
 i(35566, 46688);	-- Juicy Bear Burger (4.1.0)
 
+-----------------
+-- PATCH 3.0.2 --
+-----------------
+-- TRAINER --
+i(0, 45569);	-- Baked Manta Ray
+i(0, 51296);	-- Cooking (Grand Master)
+i(0, 58065);	-- Dalaran Clam Chowder
+i(0, 45554);	-- Great Feast
+i(0, 45561);	-- Grilled Bonescale
+i(0, 45563);	-- Grilled Sculpin
+i(0, 45549);	-- Mammoth Meal
+i(0, 45566);	-- Pickled Fangtooth
+i(0, 45565);	-- Poached Nettlefish
+i(0, 45553);	-- Rhino Dogs
+i(0, 45552);	-- Roasted Worg
+i(0, 45562);	-- Sauteed Goby
+i(0, 45550);	-- Shoveltusk Steak
+i(0, 45560);	-- Smoked Rockfin
+i(0, 45564);	-- Smoked Salmon
+i(0, 45551);	-- Worm Delight
+-- ITEM --
+i(43509, 58523);	-- Bad Clams
+i(43035, 57441);	-- Blackened Dragonfin
+i(43032, 57438);	-- Blackened Worg Steak
+i(43029, 57435);	-- Critter Bites
+i(43033, 57439);	-- Cuttlesteak
+i(43036, 57442);	-- Dragonfin Filet
+i(43024, 45568);	-- Firecracker Salmon
+i(43505, 58527);	-- Gigantic Feast
+i(43510, 58525);	-- Haunted Herring
+i(43030, 57436);	-- Hearty Rhino
+i(43026, 45570);	-- Imperial Manta Steak
+i(43508, 58521);	-- Last Week's Mammoth
+i(43018, 45555);	-- Mega Mammoth Meal
+i(43022, 45559);	-- Mighty Rhino Dogs
+i(43023, 45567);	-- Poached Northern Sculpin
+i(43028, 57434);	-- Rhinolicious Wormsteak
+i(43506, 58528);	-- Small Feast
+i(43031, 57437);	-- Snapper Extreme
+i(43034, 57440);	-- Spiced Mammoth Treats
+i(43020, 45557);	-- Spiced Worm Burger
+i(43025, 45571);	-- Spicy Blue Nettlefish
+i(43027, 57433);	-- Spicy Fried Herring
+i(43019, 45556);	-- Tender Shoveltusk Steak
+i(43037, 57443);	-- Tracker Snacks
+i(43021, 45558);	-- Very Burnt Worg
+-- QUEST --
+i(0, 57421);	-- Northern Stew
+-- NYI --
+i(34126, 44438);	-- Shoveltusk Soup
+i(39692, 45547);	-- Succulent Orca Stew
+
+-----------------
+-- PATCH 3.0.3 --
+-----------------
+-- ITEM --
+i(43507, 58512);	-- Tasty Cupcake
+-- QUEST --
+i(0, 53056);	-- Kungaloosh
+
+-----------------
+-- PATCH 3.0.8 --
+-----------------
+-- ITEM --
+i(43017, 57423);	-- Fish Feast
+i(44954, 62350);	-- Worg Tartare
+
+-----------------
+-- PATCH 3.1.0 --
+-----------------
+-- TRAINER --
+i(0, 64358);	-- Black Jelly
+-- QUEST --
+i(0, 64054);	-- Clamlette Magnifique
+
+-----------------
+-- PATCH 3.2.2 --
+-----------------
+-- ITEM --
+i(46710, 65454);	-- Bread of the Dead
+i(44859, 62051);	-- Candied Sweet Potato (A)
+i(46806, 66034);	-- Candied Sweet Potato (H)
+i(44858, 62049);	-- Cranberry Chutney (A)
+i(46805, 66035);	-- Cranberry Chutney (H)
+i(44862, 62044);	-- Pumpkin Pie (A)
+i(46804, 66036);	-- Pumpkin Pie (H)
+i(44861, 62045);	-- Slow-Roasted Turkey (A)
+i(46807, 66037);	-- Slow-Roasted Turkey (H)
+i(44860, 62050);	-- Spice Bread Stuffing (A)
+i(46803, 66038);	-- Spice Bread Stuffing (H)
+
 ------------------
 -- PATCH 10.0.0 --
 ------------------
