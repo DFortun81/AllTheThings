@@ -658,3 +658,6 @@
 515@@@Easter Kingdoms Racer %s
 10.1.7.50793
 519@@@Honorary Preservationist %s
+10.1.7.50893
+515@@@Eastern Kingdoms Racer %s
+521@@@Outland Racer %s

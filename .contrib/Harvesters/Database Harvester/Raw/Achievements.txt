@@ -12939,3 +12939,17 @@
 19028@@@Lil' Frostwing
 10.1.7.50793
 19079@@@Master of the Troubled Timeways
+10.1.7.50893
+19079@@@Master of the Turbulent Timeways
+19092@@@Outland: Bronze
+19097@@@Outland: Silver
+19098@@@Outland: Gold
+19099@@@Outland Advanced: Bronze
+19100@@@Outland Advanced: Silver
+19101@@@Outland Advanced: Gold
+19102@@@Outland Reverse: Bronze
+19103@@@Outland Reverse: Silver
+19104@@@Outland Reverse: Gold
+19105@@@Outland Racing Completionist
+19106@@@Outland Racing Completionist: Silver
+19107@@@Outland Racing Completionist: Gold
