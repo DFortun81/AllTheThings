@@ -179,7 +179,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 			["provider"] = { "n", 123252 },	-- Vormu
 			["isWeekly"] = true,
 			["g"] = {
-				i(208091, {	-- Cache of Timewarped Treasures (BC)
+				i(208091, {	-- Cache of Timewarped Treasures (BC)	-- Can also contain any item from BT
 					i(133543),	-- Infinite Timereaver (MOUNT!)
 					i(171942),	-- Cowl of Absolution
 					i(171941),	-- Cowl o the Tempest
