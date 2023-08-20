@@ -21,7 +21,11 @@ i(0, 16153);		-- Smelt Thorium
 i(0, 3304);			-- Smelt Tin
 i(0, 10098);		-- Smelt Truesilver
 --- ITEM ---
+-- #if AFTER WRATH
 i(44956, 22967);	-- Smelt Enchanted Elementium
+-- #else
+i(0, 22967);		-- Smelt Enchanted Elementium
+-- #endif
 --- QUEST ---
 i(0, 14891);		-- Smelt Dark Iron
 --- NYI ---
