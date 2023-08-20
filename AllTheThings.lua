@@ -22078,6 +22078,9 @@ app.InitDataCoroutine = function()
 	-- Let a frame go before hitting the initial refresh to make sure as much time as possible is allowed for the operation
 	-- print("Yield prior to Refresh")
 	coroutine.yield();
+	
+	-- Prepare the Sound Pack!
+	app.Audio:ReloadSoundPack();
 
 	app.__FirstRefresh = true;
 	app.RefreshCollections();

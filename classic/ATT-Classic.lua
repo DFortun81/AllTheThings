@@ -14102,6 +14102,9 @@ end
 app.events.VARIABLES_LOADED = function()
 	app:StartATTCoroutine("Startup", function()
 		coroutine.yield();
+	
+		-- Prepare the Sound Pack!
+		app.Audio:ReloadSoundPack();
 		
 		-- Cache some things
 		app.CurrentMapID = app.GetCurrentMapID();

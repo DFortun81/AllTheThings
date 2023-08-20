@@ -3838,9 +3838,19 @@ local checkboxScreenshotCollectedThings = child:CreateCheckBox(L["SCREENSHOT_COL
 checkboxScreenshotCollectedThings:SetATTTooltip(L["SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP"])
 checkboxScreenshotCollectedThings:AlignBelow(checkboxWarnRemovedThings)
 
+local checkboxPlayDeathSound = child:CreateCheckBox("Play a sound when you die" --[[L["PLAY_DEATH_SOUND_CHECKBOX"] ]],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("PlayDeathSound"))
+end,
+function(self)
+	settings:SetTooltipSetting("PlayDeathSound", self:GetChecked())
+end)
+--checkboxPlayDeathSound:SetATTTooltip(L["PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP"])
+checkboxPlayDeathSound:AlignBelow(checkboxScreenshotCollectedThings)
+
 local headerMinimapButton = child:CreateHeaderLabel(L["MINIMAP_LABEL"])
 headerMinimapButton:SetPoint("LEFT", headerCelebrations, 0, 0)
-headerMinimapButton:SetPoint("TOP", checkboxScreenshotCollectedThings, "BOTTOM", 0, -10)
+headerMinimapButton:SetPoint("TOP", checkboxPlayDeathSound, "BOTTOM", 0, -10)
 
 local checkboxShowMinimapButton = child:CreateCheckBox(L["MINIMAP_BUTTON_CHECKBOX"],
 function(self)
