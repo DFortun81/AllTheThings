@@ -4,8 +4,8 @@
 -- CRIEVE NOTE: Don't touch this file without asking. <-- Did someone forget?
 -- Burden of Truth: Classic & TBC.
 local MASTER_CHEF_GROUPS = {
-	i(27687),	-- Recipe: Bat Bites
-	i(22647),	-- Recipe: Crunchy Spider Surprise
+	i(27687),	-- Recipe: Bat Bites (RECIPE!)
+	i(22647),	-- Recipe: Crunchy Spider Surprise (RECIPE!)
 };
 local RATHIS_TOMBER_GROUPS = {};
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
@@ -325,7 +325,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(12, 12, 1),
 					["groups"] = {
-						i(22647),	-- Recipe: Crunchy Spider Surprise
+						i(22647),	-- Recipe: Crunchy Spider Surprise (RECIPE!)
 						i(22645),	-- Crunchy Spider Surprise
 					},
 				}),

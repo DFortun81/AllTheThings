@@ -1495,7 +1495,7 @@ root(ROOTS.Zones, {
 					i(35348, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_0 } }, {	-- Bag of Fishing Treasures
 						["description"] = "This bag is exclusive to the Crocolisk in the City Daily Quest.",
 						["groups"] = {
-							i(34834),	-- Recipe: Captain Rumsey's Lager
+							i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
 							i(34837),	-- The 2 Ring
 							i(35350),	-- Chuck (PET!)
 							i(34826),	-- Gold Wedding Band
@@ -1511,7 +1511,7 @@ root(ROOTS.Zones, {
 					i(34863, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_0 } }, {	-- Bag of Fishing Treasures
 						["description"] = "Shared reward bag for all the non-Croc dailies.",
 						["groups"] = {
-							i(34834),	-- Recipe: Captain Rumsey's Lager
+							i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
 							i(34831),	-- Eye of the Sea
 							i(34826),	-- Gold Wedding Band
 							i(34827),	-- Noble's Monocle
@@ -1555,16 +1555,16 @@ root(ROOTS.Zones, {
 						["coord"] = { 56.6, 53.2, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(27699),	-- Recipe: Golden Fish Sticks
-							i(27700),	-- Recipe: Spicy Crawdad
+							i(27699),	-- Recipe: Golden Fish Sticks (RECIPE!)
+							i(27700),	-- Recipe: Spicy Crawdad (RECIPE!)
 						},
 					}),
 					n(18957, {	-- Innkeeper Grilka <Innkeeper>
 						["coord"] = { 48.8, 45.0, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(27690),	-- Recipe: Blackened Basilisk
-							i(27692),	-- Recipe: Warp Burger
+							i(27690),	-- Recipe: Blackened Basilisk (RECIPE!)
+							i(27692),	-- Recipe: Warp Burger (RECIPE!)
 						},
 					}),
 					n(19042, {	-- Leeli Longhaggle <Trade Goods>
@@ -1586,8 +1586,8 @@ root(ROOTS.Zones, {
 							i(25848, {	-- Formula: Runed Adamantite Rod (RECIPE!)
 								["timeline"] = { "added 2.0.1", "removed 5.0.4" },
 							}),
-							i(27699),	-- Recipe: Golden Fish Sticks
-							i(27700),	-- Recipe: Spicy Crawdad
+							i(27699),	-- Recipe: Golden Fish Sticks (RECIPE!)
+							i(27700),	-- Recipe: Spicy Crawdad (RECIPE!)
 						},
 					}),
 					n(19772, {	-- Spirit Sage Gartok
@@ -1684,8 +1684,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.8, 53.0, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(27690),	-- Recipe: Blackened Basilisk
-							i(27692),	-- Recipe: Warp Burger
+							i(27690),	-- Recipe: Blackened Basilisk (RECIPE!)
+							i(27692),	-- Recipe: Warp Burger (RECIPE!)
 						},
 					}),
 				}),

@@ -85,16 +85,79 @@ i(17201, 21144);	-- Winter Veil Egg Nog / Egg Nog
 -- QUEST --
 i(0, 24801);	-- Smoked Desert Dumplings
 -- MOVED TO TRAINER --
-i(5485, 6415);		-- Fillet of Frenzy (Moved to Trainer 4.0.3)
-i(13942, 18240);	-- Grilled Squid (Moved to Trainer 4.0.3)
-i(5482, 6412);		-- Kaldorei Spider Kabob (Moved to Trainer 4.0.3)
-i(13945, 18243);	-- Nightfin Soup (Moved to Trainer 4.0.3)
-i(13946, 18244);	-- Poached Sunscale Salmon (Moved to Trainer 4.0.3)
-i(3737, 3400);		-- Soothing Turtle Bisque (Moved to Trainer 4.0.3)
-i(13939, 18238);	-- Spotted Yellowtail (Moved to Trainer 4.0.3)
-i(3736, 3399);		-- Tasty Lion Steak (Moved to Trainer 4.0.3)
+i(5485, 6415);		-- Fillet of Frenzy (4.0.3)
+i(13942, 18240);	-- Grilled Squid (4.0.3)
+i(5482, 6412);		-- Kaldorei Spider Kabob (4.0.3)
+i(13945, 18243);	-- Nightfin Soup (4.0.3)
+i(13946, 18244);	-- Poached Sunscale Salmon (4.0.3)
+i(3737, 3400);		-- Soothing Turtle Bisque (4.0.3)
+i(13939, 18238);	-- Spotted Yellowtail (4.0.3)
+i(3736, 3399);		-- Tasty Lion Steak (4.0.3)
 -- NYI --
 i(23690, 30047);	-- Crystal Throat Lozenge
+
+-----------------
+-- PATCH 2.0.1 --
+-----------------
+-- TRAINER --
+i(0, 33359);	-- Cooking (Master)
+i(0, 37836);	-- Spice Bread
+-- ITEM --
+i(27687, 33278);	-- Bat Bites
+i(27690, 33286);	-- Blackened Basilisk
+i(27696, 33292);	-- Blackened Sporefish
+i(27694, 33290);	-- Blackened Trout
+i(27684, 33279);	-- Buzzard Bites
+i(30156, 36210);	-- Clam Bar
+i(31674, 38868);	-- Crunchy Serpent
+i(22647, 28267);	-- Crunchy Spider Surprise
+i(27695, 33291);	-- Feltail Delight
+i(27699, 33295);	-- Golden Fish Sticks
+i(27697, 33293);	-- Grilled Mudfish
+i(27685, 33276);	-- Lynx Steak
+i(31675, 38867);	-- Mok'Nathal Shortribs
+i(27698, 33294);	-- Poached Bluefish
+i(27688, 33284);	-- Ravager Dog
+i(27691, 33287);	-- Roasted Clefthoof
+i(27700, 33296);	-- Spicy Crawdad
+i(27693, 33289);	-- Talbuk Steak
+i(27692, 33288);	-- Warp Burger
+
+-----------------
+-- PATCH 2.0.3 --
+-----------------
+-- ITEM --
+i(27686, 33277);	-- Roasted Moongraze Tenderloin
+i(27689, 33285);	-- Sporeling Snack [REMOVED 4.2.0]
+
+-----------------
+-- PATCH 2.1.2 --
+-----------------
+-- TRAINER --
+i(0, 42302);	-- Fisherman's Feast
+i(0, 42305);	-- Hot Buttered Trout
+i(0, 42296);	-- Stewed Trout
+
+-----------------
+-- PATCH 2.3.0 --
+-----------------
+-- ITEM --
+i(33869, 43761);	-- Broiled Bloodfin
+i(33925, 43779);	-- Delicious Chocolate Cake
+i(34413, 45022);	-- Hot Apple Cider
+i(33875, 43772);	-- Kibler's Bits
+i(33870, 43707);	-- Skullfish Soup
+i(33873, 43765);	-- Spicy Hot Talbuk
+i(33871, 43758);	-- Stormchops
+
+-----------------
+-- PATCH 2.4.0 --
+-----------------
+-- ITEM --
+i(34834, 45695);	-- Captain Rumsey's Lager
+-- MOVED TO TRAINERS --
+i(35564, 46684);	-- Charred Bear Kabobs (4.1.0)
+i(35566, 46688);	-- Juicy Bear Burger (4.1.0)
 
 ------------------
 -- PATCH 10.0.0 --

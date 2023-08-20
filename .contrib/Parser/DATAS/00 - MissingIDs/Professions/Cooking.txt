@@ -188,44 +188,6 @@ r(44977, 6417),	-- Dig Rat Stew (Wrath BoP Version) (3.1.0)
 r(78342, 6417),	-- Dig Rat Stew [ADDED 4.3.0]
 0.6.0.3592
 r(18160, 9513),	-- Thistle Tea (Vendor Version) [ADDED 4.0.3]
-2.0.0.6080
-r(28267),	-- Crunchy Spider Surprise
-r(33276),	-- Lynx Steak
-r(33277),	-- Roasted Moongraze Tenderloin
-r(33278),	-- Bat Bites
-r(33279),	-- Buzzard Bites
-r(33284),	-- Ravager Dog
-r(33285),	-- Sporeling Snack
-r(33286),	-- Blackened Basilisk
-r(33287),	-- Roasted Clefthoof
-r(33288),	-- Warp Burger
-r(33289),	-- Talbuk Steak
-r(33290),	-- Blackened Trout
-r(33291),	-- Feltail Delight
-r(33292),	-- Blackened Sporefish
-r(33293),	-- Grilled Mudfish
-r(33294),	-- Poached Bluefish
-r(33295),	-- Golden Fish Sticks
-r(33296),	-- Spicy Crawdad
-r(33359),	-- Cooking
-2.4.3.8606
-r(36210),	-- Clam Bar
-r(37836),	-- Spice Bread
-r(38867),	-- Mok'Nathal Shortribs
-r(38868),	-- Crunchy Serpent
-r(42296),	-- Stewed Trout
-r(42302),	-- Fisherman's Feast
-r(42305),	-- Hot Buttered Trout
-r(43707),	-- Skullfish Soup
-r(43758),	-- Stormchops
-r(43761),	-- Broiled Bloodfin
-r(43765),	-- Spicy Hot Talbuk
-r(43772),	-- Kibler's Bits
-r(43779),	-- Delicious Chocolate Cake
-r(45022),	-- Hot Apple Cider
-r(45695),	-- Captain Rumsey's Lager
-r(46684),	-- Charred Bear Kabobs
-r(46688),	-- Juicy Bear Burger
 3.0.1.8303
 r(44438),	-- Shoveltusk Soup
 r(45547),	-- Succulent Orca Stew

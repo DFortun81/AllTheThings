@@ -1259,7 +1259,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
 					["groups"] = {
-						i(27686),	-- Recipe: Roasted Moongraze Tenderloin
+						i(27686),	-- Recipe: Roasted Moongraze Tenderloin (RECIPE!)
 					},
 				}),
 				q(10324, {	-- The Great Moongraze Hunt (2/2)

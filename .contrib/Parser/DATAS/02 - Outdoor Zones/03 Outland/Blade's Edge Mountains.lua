@@ -903,8 +903,8 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(65, 65, 20),
 						["groups"] = {
-							i(31674),	-- Recipe: Crunchy Serpent
-							i(31675),	-- Recipe: Mok'Nathal Shortribs
+							i(31674),	-- Recipe: Crunchy Serpent (RECIPE!)
+							i(31675),	-- Recipe: Mok'Nathal Shortribs (RECIPE!)
 						},
 					}),
 					q(10671, {	-- More than a Pound of Flesh
@@ -2047,8 +2047,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 61.2, 68.8, BLADES_EDGE_MOUNTAINS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(31674),	-- Recipe: Crunchy Serpent
-							i(31675),	-- Recipe: Mok'Nathal Shortribs
+							i(31674),	-- Recipe: Crunchy Serpent (RECIPE!)
+							i(31675),	-- Recipe: Mok'Nathal Shortribs (RECIPE!)
 						},
 					}),
 					n(21494, {	-- Smiles O'Byron <Engineer>
@@ -2074,8 +2074,8 @@ root(ROOTS.Zones, {
 						["description"] = "This vendor stocks a limited supply of these items.  Alliance players can purchase them from Sassa Weldwell, who sells unlimited quantities.  Horde players who don't wish to wait for Xerintha to restock can complete the quest |cFFefc400Mok'Nathal Treats|r, which awards both recipes.",
 						["coord"] = { 62.4, 40.2, BLADES_EDGE_MOUNTAINS },
 						["groups"] = {
-							i(31674),	-- Recipe: Crunchy Serpent
-							i(31675),	-- Recipe: Mok'Nathal Shortribs
+							i(31674),	-- Recipe: Crunchy Serpent (RECIPE!)
+							i(31675),	-- Recipe: Mok'Nathal Shortribs (RECIPE!)
 						},
 					}),
 					n(20917, {	-- Zinyen Swiftstrider <Weapon Vendor>

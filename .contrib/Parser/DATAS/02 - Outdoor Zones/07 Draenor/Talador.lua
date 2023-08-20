@@ -2644,7 +2644,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 39.2, 41.7, TALADOR },
 						["g"] = {
 							i(112623, {	-- Pack of Fishing Supplies
-								i(34834),	-- Recipe: Captain Rumsey's Lager
+								i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
 								i(33820),	-- Weather-Beaten Fishing Hat
 								i(44983),	-- Strand Crawler (PET!)
 								i(45991),	-- Bone Fishing Pole

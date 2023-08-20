@@ -2199,7 +2199,7 @@ root(ROOTS.Zones, {
 								["coord"] = { 62.9, 66.6, HELLFIRE_PENINSULA },
 								["cr"] = 16972,	-- Bonestripper Buzzard
 							}),
-							i(27684),	-- Recipe: Buzzard Bites
+							i(27684),	-- Recipe: Buzzard Bites (RECIPE!)
 							i(27651),	-- Buzzard Bites x5
 						},
 					}),
@@ -3039,7 +3039,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 54.6, 41.0, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(27688),	-- Recipe: Ravager Dog
+							i(27688),	-- Recipe: Ravager Dog (RECIPE!)
 						},
 					}),
 					n(18997, {	-- Fallesh Sunfallow <Weapon Merchant>
@@ -3348,7 +3348,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 54.2, 63.6, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(27688),	-- Recipe: Ravager Dog
+							i(27688),	-- Recipe: Ravager Dog (RECIPE!)
 						},
 					}),
 					n(19001, {	-- Talaara <Weapon Merchant>

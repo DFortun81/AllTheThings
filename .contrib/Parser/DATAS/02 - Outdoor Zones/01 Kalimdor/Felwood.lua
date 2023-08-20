@@ -2644,10 +2644,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(35564, {	-- Recipe: Charred Bear Kabobs
+						i(35564, {	-- Recipe: Charred Bear Kabobs (RECIPE!)
 							["timeline"] = { "added 2.4.0.7897", "removed 4.1.0" },	-- Moved to Trainers
 						}),
-						i(35566, {	-- Recipe: Juicy Bear Burger
+						i(35566, {	-- Recipe: Juicy Bear Burger (RECIPE!)
 							["timeline"] = { "added 2.4.0.7897", "removed 4.1.0" },	-- Moved to Trainers
 						}),
 						i(16110),	-- Recipe: Monster Omelet (RECIPE!)
@@ -2715,10 +2715,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(35564, {	-- Recipe: Charred Bear Kabobs
+						i(35564, {	-- Recipe: Charred Bear Kabobs (RECIPE!)
 							["timeline"] = { "added 2.4.0.7897", "removed 4.1.0" },	-- Moved to Trainers
 						}),
-						i(35566, {	-- Recipe: Juicy Bear Burger
+						i(35566, {	-- Recipe: Juicy Bear Burger (RECIPE!)
 							["timeline"] = { "added 2.4.0.7897", "removed 4.1.0" },	-- Moved to Trainers
 						}),
 						i(16110),	-- Recipe: Monster Omelet (RECIPE!)

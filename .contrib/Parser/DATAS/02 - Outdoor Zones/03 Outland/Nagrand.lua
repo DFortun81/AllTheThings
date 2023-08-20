@@ -1790,10 +1790,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 58.0, 35.6, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(27697),	-- Recipe: Grilled Mudfish
-							i(27698),	-- Recipe: Poached Bluefish
-							i(27691),	-- Recipe: Roasted Clefthoof
-							i(27693),	-- Recipe: Talbuk Steak
+							i(27697),	-- Recipe: Grilled Mudfish (RECIPE!)
+							i(27698),	-- Recipe: Poached Bluefish (RECIPE!)
+							i(27691),	-- Recipe: Roasted Clefthoof (RECIPE!)
+							i(27693),	-- Recipe: Talbuk Steak (RECIPE!)
 						},
 					}),
 					n(23007, {	-- Paulsta'ats <Consortium Quartermaster>
@@ -2140,10 +2140,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 56.2, 73.2, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(27697),	-- Recipe: Grilled Mudfish
-							i(27698),	-- Recipe: Poached Bluefish
-							i(27691),	-- Recipe: Roasted Clefthoof
-							i(27693),	-- Recipe: Talbuk Steak
+							i(27697),	-- Recipe: Grilled Mudfish (RECIPE!)
+							i(27698),	-- Recipe: Poached Bluefish (RECIPE!)
+							i(27691),	-- Recipe: Roasted Clefthoof (RECIPE!)
+							i(27693),	-- Recipe: Talbuk Steak (RECIPE!)
 						},
 					}),
 				}),

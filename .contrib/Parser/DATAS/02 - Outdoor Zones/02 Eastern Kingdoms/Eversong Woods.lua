@@ -1837,7 +1837,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 49.0, 47.0, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(27685),	-- Recipe: Lynx Steak
+						i(27685),	-- Recipe: Lynx Steak (RECIPE!)
 					},
 				}),
 				n(50484, {	-- Magistrix Nizara <Silvermoon City Quartermaster>

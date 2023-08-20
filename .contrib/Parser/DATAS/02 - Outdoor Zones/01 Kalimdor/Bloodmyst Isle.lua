@@ -1292,7 +1292,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 53.4, 56.6, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(22647),	-- Recipe: Crunchy Spider Surprise
+						i(22647),	-- Recipe: Crunchy Spider Surprise (RECIPE!)
 					},
 				}),
 			}),

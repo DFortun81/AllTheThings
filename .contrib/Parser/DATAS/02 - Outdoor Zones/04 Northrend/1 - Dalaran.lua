@@ -5457,9 +5457,9 @@ root(ROOTS.Zones, {
 						["requireSkill"] = COOKING,
 						["groups"] = {
 							currency(81),	-- Epicurean's Award
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33871),	-- Recipe: Stormchops
+							i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
+							i(33925),	-- Recipe: Delicious Chocolate Cake (RECIPE!)
+							i(33871),	-- Recipe: Stormchops (RECIPE!)
 							i(43007),	-- Northern Spices
 							i(44228),	-- Baby Spice
 							i(44114),	-- Old Spices

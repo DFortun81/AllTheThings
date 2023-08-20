@@ -338,22 +338,22 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 					i(33844, {	-- Barrel of Fish
 						["cost"] = { { "c", 1166, 25 }, },	-- 25x Timewarped Badge
 						["g"] = {
-							i(33869),	-- Recipe: Broiled Bloodfin
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33875),	-- Recipe: Kibler's Bits
-							i(33870),	-- Recipe: Skullfish Soup
-							i(33871),	-- Recipe: Stormchops
+							i(33869),	-- Recipe: Broiled Bloodfin (RECIPE!)
+							i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
+							i(33925),	-- Recipe: Delicious Chocolate Cake (RECIPE!)
+							i(33875),	-- Recipe: Kibler's Bits (RECIPE!)
+							i(33870),	-- Recipe: Skullfish Soup (RECIPE!)
+							i(33871),	-- Recipe: Stormchops (RECIPE!)
 						},
 					}),
 					i(33857, {	-- Crate of Meat
 						["cost"] = { { "c", 1166, 25 }, },	-- 25x Timewarped Badge
 						["g"] = {
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33875),	-- Recipe: Kibler's Bits
-							i(33873),	-- Recipe: Spicy Hot Talbuk
-							i(33871),	-- Recipe: Stormchops
+							i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
+							i(33925),	-- Recipe: Delicious Chocolate Cake (RECIPE!)
+							i(33875),	-- Recipe: Kibler's Bits (RECIPE!)
+							i(33873),	-- Recipe: Spicy Hot Talbuk (RECIPE!)
+							i(33871),	-- Recipe: Stormchops (RECIPE!)
 							i(33855),	-- Tarnished Silver Ring
 						},
 					}),
@@ -1297,9 +1297,9 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 					i(44113, {	-- Small Spice Bag
 						["cost"] = { { "c", 1166, 25 }, },	-- 25x Timewarped Badge
 						["g"] = {
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33871),	-- Recipe: Stormchops
+							i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
+							i(33925),	-- Recipe: Delicious Chocolate Cake (RECIPE!)
+							i(33871),	-- Recipe: Stormchops (RECIPE!)
 						},
 					}),
 				},

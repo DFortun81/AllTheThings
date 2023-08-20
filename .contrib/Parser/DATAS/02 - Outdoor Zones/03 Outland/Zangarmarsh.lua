@@ -1438,8 +1438,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 42.2, 27.8, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(27694),	-- Recipe: Blackened Trout
-							i(27695),	-- Recipe: Feltail Delight
+							i(27694),	-- Recipe: Blackened Trout (RECIPE!)
+							i(27695),	-- Recipe: Feltail Delight (RECIPE!)
 						},
 					}),
 					n(17904, {	-- Fedryen Swiftspear <Cenarion Expedition Quartermaster>
@@ -1539,7 +1539,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.6, 49.2, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(27694),	-- Recipe: Blackened Trout
+							i(27694),	-- Recipe: Blackened Trout (RECIPE!)
 						},
 					}),
 					n(18005, {	-- Haalrun <Alchemy Supplies>
@@ -1605,7 +1605,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { "removed 3.1.0" },
 								["rank"] = 5,
 							}),
-							i(27696),	-- Recipe: Blackened Sporefish
+							i(27696),	-- Recipe: Blackened Sporefish (RECIPE!)
 						},
 					}),
 					n(19694, {	-- Loolruna <Armorer>
@@ -1647,13 +1647,13 @@ root(ROOTS.Zones, {
 							i(38229, {	-- Pattern: Mycah's Botanical Bag
 								["cost"] = { { "i", 24245, 25 }, },	-- 25x Glowcap
 							}),
-							i(30156, {	-- Recipe: Clam Bar
+							i(30156, {	-- Recipe: Clam Bar (RECIPE!)
 								["cost"] = { { "i", 24245, 1 }, },	-- 1x Glowcap
 							}),
 							i(22906, {	-- Recipe: Shrouding Potion (RECIPE!)
 								["cost"] = { { "i", 24245, 30 }, },	-- 30x Glowcap
 							}),
-							i(27689, {	-- Recipe: Sporeling Snack
+							i(27689, {	-- Recipe: Sporeling Snack (RECIPE!)
 								["cost"] = { { "i", 24245, 2 }, },	-- 2x Glowcap
 								["timeline"] = { "removed 4.2.0", "deleted 4.2.0" },
 							}),
@@ -1714,7 +1714,7 @@ root(ROOTS.Zones, {
 							i(21898, {	-- Pattern: Imbued Netherweave Pants
 								["isLimited"] = true,
 							}),
-							i(27695),	-- Recipe: Feltail Delight
+							i(27695),	-- Recipe: Feltail Delight (RECIPE!)
 						},
 					}),
 				}),
