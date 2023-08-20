@@ -181,43 +181,7 @@ r(338117),	-- Seared Cutlets
 
 Missing in CookingItemDB.lua
 
-4.0.1.12911
-r(88003),	-- Baked Rockfish
-r(88004),	-- Basilisk Liverdog
-r(88005),	-- Beer-Basted Crocolisk
-r(88006),	-- Blackened Surprise
-r(88011),	-- Broiled Dragon Feast
-r(88012),	-- Broiled Mountain Trout
-r(88013),	-- Chocolate Cookie
-r(88014),	-- Crocolisk Au Gratin
-r(88015),	-- Darkbrew Lager
-r(88016),	-- Delicious Sagefish Tail
-r(88017),	-- Feathered Lure
-r(88018),	-- Fish Fry
-r(88019),	-- Fortune Cookie
-r(88020),	-- Grilled Dragon
-r(88021),	-- Hearty Seafood Soup
-r(88022),	-- Highland Spirits
-r(88024),	-- Lavascale Fillet
-r(88025),	-- Lavascale Minestrone
-r(88028),	-- Lightly Fried Lurker
-r(88030),	-- Lurker Lunch
-r(88031),	-- Mushroom Sauce Mudfish
-r(88033),	-- Pickled Guppy
-r(88034),	-- Blackbelly Sushi
-r(88035),	-- Salted Eye
-r(88036),	-- Seafood Magnifique Feast
-r(88037),	-- Seasoned Crab
-r(88039),	-- Severed Sagefish Head
-r(88042),	-- Skewered Eel
-r(88044),	-- South Island Iced Tea
-r(88045),	-- Starfire Espresso
-r(88046),	-- Tender Baked Turtle
-r(88047),	-- Whitecrest Gumbo
-r(88053),	-- Cooking
-4.3.4.15595
-r(93741),	-- Venison Jerky
-r(96133),	-- Scalding Murglesnout
+
 5.0.3.15890
 r(104237),	-- Golden Carp Consomme
 r(104297),	-- Fish Cake

@@ -1077,7 +1077,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					n(105982, {	-- Smudge Thunderwood <Herbal Concoctions>
 						["coord"] = { 64.6, 44.2, THE_HALL_OF_SHADOWS },
 						["g"] = {
-							i(18160),	-- Recipe: Thistle Tea
+							i(18160),	-- Recipe: Thistle Tea (RECIPE!)
 						},
 					}),
 					n(121282, {	-- Zan Shivsproket

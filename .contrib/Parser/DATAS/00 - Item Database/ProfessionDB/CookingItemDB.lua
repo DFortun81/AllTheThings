@@ -231,6 +231,8 @@ i(44954, 62350);	-- Worg Tartare
 -----------------
 -- TRAINER --
 i(0, 64358);	-- Black Jelly
+-- ITEM --
+i(44977, 6417);	-- Dig Rat Stew (Wrath BoP Version) [DELETED 4.3.0]
 -- QUEST --
 i(0, 64054);	-- Clamlette Magnifique
 
@@ -249,6 +251,65 @@ i(44861, 62045);	-- Slow-Roasted Turkey (A)
 i(46807, 66037);	-- Slow-Roasted Turkey (H)
 i(44860, 62050);	-- Spice Bread Stuffing (A)
 i(46803, 66038);	-- Spice Bread Stuffing (H)
+
+-----------------
+-- PATCH 4.0.1 --
+-----------------
+-- TRAINER --
+i(0, 93741);	-- Venison Jerky
+-- ITEM --
+i(65426, 88003);	-- Baked Rockfish
+i(65427, 88004);	-- Basilisk Liverdog
+i(65429, 88005);	-- Beer-Basted Crocolisk
+i(65424, 88034);	-- Blackbelly Sushi
+i(65411, 88012);	-- Broiled Mountain Trout
+i(65431, 88013);	-- Chocolate Cookie
+i(65430, 88014);	-- Crocolisk Au Gratin
+i(65422, 88016);	-- Delicious Sagefish Tail
+i(65408, 88017);	-- Feathered Lure
+i(65423, 88018);	-- Fish Fry
+i(65432, 88019);	-- Fortune Cookie
+i(65428, 88020);	-- Grilled Dragon
+i(65418, 88021);	-- Hearty Seafood Soup
+i(65415, 88022);	-- Highland Spirits
+i(65407, 88024);	-- Lavascale Fillet
+i(65409, 88025);	-- Lavascale Minestrone
+i(65412, 88028);	-- Lightly Fried Lurker
+i(65416, 88030);	-- Lurker Lunch
+i(65420, 88031);	-- Mushroom Sauce Mudfish
+i(65417, 88033);	-- Pickled Guppy
+i(65410, 88035);	-- Salted Eye
+i(65413, 88037);	-- Seasoned Crab
+i(65421, 88039);	-- Severed Sagefish Head
+i(65425, 88042);	-- Skewered Eel
+i(65433, 88044);	-- South Island Iced Tea
+i(65414, 88045);	-- Starfire Espresso
+i(65419, 88046);	-- Tender Baked Turtle
+i(65406, 88047);	-- Whitecrest Gumbo
+
+-----------------
+-- PATCH 4.0.3 --
+-----------------
+-- TRAINER --
+i(0, 88006);	-- Blackened Surprise
+i(0, 88053);	-- Cooking (Illustrious)
+i(0, 88015);	-- Darkbrew Lager
+-- ITEM --
+i(62799, 88011);	-- Broiled Dragon Feast
+i(62800, 88036);	-- Seafood Magnifique Feast
+i(18160, 9513);		-- Thistle Tea (Vendor Version)
+
+-----------------
+-- PATCH 4.0.6 --
+-----------------
+-- ITEM --
+i(68688, 96133);	-- Scalding Murglesnout
+
+-----------------
+-- PATCH 4.3.0 --
+-----------------
+-- ITEM --
+i(78342, 6417);	-- Dig Rat Stew
 
 ------------------
 -- PATCH 10.0.0 --

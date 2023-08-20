@@ -7100,35 +7100,35 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						chefsaward(3, i(65426)),	-- Recipe: Baked Rockfish
-						chefsaward(3, i(65427)),	-- Recipe: Basilisk Liverdog
-						chefsaward(3, i(65429)),	-- Recipe: Beer-Basted Crocolisk
-						chefsaward(3, i(65424)),	-- Recipe: Blackbelly Sushi
-						chefsaward(3, i(65411)),	-- Recipe: Broiled Mountain Trout
-						chefsaward(3, i(65431)),	-- Recipe: Chocolate Cookie
-						chefsaward(3, i(65430)),	-- Recipe: Crocolisk Au Gratin
-						chefsaward(3, i(65422)),	-- Recipe: Delicious Sagefish Tail
-						chefsaward(3, i(65408)),	-- Recipe: Feathered Lure
-						chefsaward(3, i(65423)),	-- Recipe: Fish Fry
-						chefsaward(5, i(65432)),	-- Recipe: Fortune Cookie
-						chefsaward(3, i(65428)),	-- Recipe: Grilled Dragon
-						chefsaward(3, i(65418)),	-- Recipe: Hearty Seafood Soup
-						chefsaward(3, i(65415)),	-- Recipe: Highland Spirits
-						chefsaward(3, i(65407)),	-- Recipe: Lavascale Fillet
-						chefsaward(3, i(65409)),	-- Recipe: Lavascale Minestrone
-						chefsaward(3, i(65412)),	-- Recipe: Lightly Fried Lurker
-						chefsaward(3, i(65416)),	-- Recipe: Lurker Lunch
-						chefsaward(3, i(65420)),	-- Recipe: Mushroom Sauce Mudfish
-						chefsaward(3, i(65417)),	-- Recipe: Pickled Guppy
-						chefsaward(3, i(65410)),	-- Recipe: Salted Eye
-						chefsaward(3, i(68688)),	-- Recipe: Scalding Murglesnout
-						chefsaward(3, i(65413)),	-- Recipe: Seasoned Crab
-						chefsaward(3, i(65421)),	-- Recipe: Severed Sagefish Head
-						chefsaward(3, i(65425)),	-- Recipe: Skewered Eel
-						chefsaward(5, i(65433)),	-- Recipe: South Island Iced Tea
-						chefsaward(3, i(65414)),	-- Recipe: Starfire Espresso
-						chefsaward(3, i(65419)),	-- Recipe: Tender Baked Turtle
-						chefsaward(3, i(65406)),	-- Recipe: Whitecrest Gumbo
+						chefsaward(3, i(65426)),	-- Recipe: Baked Rockfish (RECIPE!)
+						chefsaward(3, i(65427)),	-- Recipe: Basilisk Liverdog (RECIPE!)
+						chefsaward(3, i(65429)),	-- Recipe: Beer-Basted Crocolisk (RECIPE!)
+						chefsaward(3, i(65424)),	-- Recipe: Blackbelly Sushi (RECIPE!)
+						chefsaward(3, i(65411)),	-- Recipe: Broiled Mountain Trout (RECIPE!)
+						chefsaward(3, i(65431)),	-- Recipe: Chocolate Cookie (RECIPE!)
+						chefsaward(3, i(65430)),	-- Recipe: Crocolisk Au Gratin (RECIPE!)
+						chefsaward(3, i(65422)),	-- Recipe: Delicious Sagefish Tail (RECIPE!)
+						chefsaward(3, i(65408)),	-- Recipe: Feathered Lure (RECIPE!)
+						chefsaward(3, i(65423)),	-- Recipe: Fish Fry (RECIPE!)
+						chefsaward(5, i(65432)),	-- Recipe: Fortune Cookie (RECIPE!)
+						chefsaward(3, i(65428)),	-- Recipe: Grilled Dragon (RECIPE!)
+						chefsaward(3, i(65418)),	-- Recipe: Hearty Seafood Soup (RECIPE!)
+						chefsaward(3, i(65415)),	-- Recipe: Highland Spirits (RECIPE!)
+						chefsaward(3, i(65407)),	-- Recipe: Lavascale Fillet (RECIPE!)
+						chefsaward(3, i(65409)),	-- Recipe: Lavascale Minestrone (RECIPE!)
+						chefsaward(3, i(65412)),	-- Recipe: Lightly Fried Lurker (RECIPE!)
+						chefsaward(3, i(65416)),	-- Recipe: Lurker Lunch (RECIPE!)
+						chefsaward(3, i(65420)),	-- Recipe: Mushroom Sauce Mudfish (RECIPE!)
+						chefsaward(3, i(65417)),	-- Recipe: Pickled Guppy (RECIPE!)
+						chefsaward(3, i(65410)),	-- Recipe: Salted Eye (RECIPE!)
+						chefsaward(3, i(68688)),	-- Recipe: Scalding Murglesnout (RECIPE!)
+						chefsaward(3, i(65413)),	-- Recipe: Seasoned Crab (RECIPE!)
+						chefsaward(3, i(65421)),	-- Recipe: Severed Sagefish Head (RECIPE!)
+						chefsaward(3, i(65425)),	-- Recipe: Skewered Eel (RECIPE!)
+						chefsaward(5, i(65433)),	-- Recipe: South Island Iced Tea (RECIPE!)
+						chefsaward(3, i(65414)),	-- Recipe: Starfire Espresso (RECIPE!)
+						chefsaward(3, i(65419)),	-- Recipe: Tender Baked Turtle (RECIPE!)
+						chefsaward(3, i(65406)),	-- Recipe: Whitecrest Gumbo (RECIPE!)
 					},
 				}),
 				n(55684, {	-- Jordan Smith <Blacksmithing Trainer & Supplies>

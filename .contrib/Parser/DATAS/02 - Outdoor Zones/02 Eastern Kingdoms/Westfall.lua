@@ -529,7 +529,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if BEFORE 4.0.3
 						recipe(8681),	-- Instant Poison
 						-- #endif
-						i(18160),	-- Recipe: Thistle Tea
+						i(18160),	-- Recipe: Thistle Tea (RECIPE!)
 					},
 				}),
 				q(26228, {	-- Livin' the Life

@@ -1980,7 +1980,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(44977, {	-- Recipe: Dig Rat Stew
+						i(44977, {	-- Recipe: Dig Rat Stew (RECIPE!)
 							["timeline"] = { "added 3.1.0.9626", "deleted 4.3.0.15005" },
 						}),
 					},
@@ -2020,7 +2020,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 3459,	-- Razormane Warfrenzy
 				}),
-				i(44977, {	-- Recipe: Dig Rat Stew
+				i(44977, {	-- Recipe: Dig Rat Stew (RECIPE!)
 					["timeline"] = { "added 3.1.0.9626", "deleted 4.3.0.15005" },
 					["crs"] = {
 						39153,	-- Excavation Raider

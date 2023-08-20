@@ -194,13 +194,13 @@ root(ROOTS.Factions, {
 			ach(5467, {	-- Set the Oven to "Cataclysmic"
 				["collectible"] = false,
 				["g"] = {
-					i(62799),	-- Recipe: Broiled Dragon Feast
+					i(62799),	-- Recipe: Broiled Dragon Feast (RECIPE!)
 				},
 			}),
 			ach(5036, {	-- That's a Lot of Bait
 				["collectible"] = false,
 				["g"] = {
-					i(62800),	-- Recipe: Seafood Magnifique Feast
+					i(62800),	-- Recipe: Seafood Magnifique Feast (RECIPE!)
 				},
 			}),
 			ach(5812, {	-- United Nations (A)

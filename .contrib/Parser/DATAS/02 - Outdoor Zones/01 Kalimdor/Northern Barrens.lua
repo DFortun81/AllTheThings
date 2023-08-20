@@ -2054,7 +2054,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["cost"] = {{ "i", 8072, 1 }},	-- Silixiz's Tower Key
 						}),
-						i(18160),	-- Recipe: Thistle Tea
+						i(18160),	-- Recipe: Thistle Tea (RECIPE!)
 					}
 				}),
 				q(29111, {	-- Mor'shan Caravan Delivery
@@ -3979,7 +3979,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(5051),	-- Dig Rat
-						i(44977, {	-- Recipe: Dig Rat Stew
+						i(44977, {	-- Recipe: Dig Rat Stew (RECIPE!)
 							["timeline"] = { "added 3.1.0.9626", "deleted 4.3.0.15005" },
 						}),
 					},
