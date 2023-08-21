@@ -4,7 +4,7 @@
 TIMBERMAW_HOLD = createHeader({
 	readable = "Timbermaw Hold",
 	-- #if AFTER WRATH
-	["icon"] = [[~_.asset("achievement_reputation_timbermaw")]],
+	icon = [[~_.asset("achievement_reputation_timbermaw")]],
 	-- #endif
 	text = {
 		en = [[~C_Map.GetAreaInfo(1216)]],
