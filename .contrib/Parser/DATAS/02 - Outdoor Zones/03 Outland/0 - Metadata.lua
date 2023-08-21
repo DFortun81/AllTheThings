@@ -7,6 +7,7 @@ root(ROOTS.Zones, {
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\Achievement_Zone_Outland_01",
 		-- #endif
+		["timeline"] = { "added 2.0.1" },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(1312, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Bloody Rare
