@@ -9910,7 +9910,7 @@ localize(L.FILTER_ID_TYPES, {
 	[60] = "S.E.L.F.I.E.-Kamera",
 	[103] = "Waffenverzauberungen",
 });
-localize(L.ObjectNames, {
+localize(_.ObjectNames, {
 	[31] = "Alte Löwenstatue",
 	[34] = "Alter Henkelkrug",
 	[35] = "Schließkiste des Kapitäns",
@@ -12962,7 +12962,7 @@ localize(L.HEADER_NAMES, {
 localize(L.FILTER_ID_TYPES, {
 	[60] = "Cámara SELFI",
 });
-localize(L.ObjectNames, {
+localize(_.ObjectNames, {
 	[31] = "Estatua de león antigua",
 	[34] = "Vieja jarra",
 	[35] = "Baúl del Capitán",
@@ -16012,7 +16012,7 @@ localize(L.FILTER_ID_TYPES, {
 	[11] = "Artéfact",
 	[60] = "Appareil photo P.R.O.F.I.L",
 });
-localize(L.ObjectNames, {
+localize(_.ObjectNames, {
 	[31] = "Statue du vieux lion",
 	[34] = "Vieille cruche",
 	[35] = "Coffre du capitaine",
@@ -19062,7 +19062,7 @@ localize(L.HEADER_NAMES, {
 localize(L.FILTER_ID_TYPES, {
 	[60] = "Fotocamera S.E.L.F.I.E.",
 });
-localize(L.ObjectNames, {
+localize(_.ObjectNames, {
 	[31] = "Vecchia Statua di Leone",
 	[34] = "Vecchio Fiasco",
 	[35] = "Scrigno del Capitano",
@@ -22027,7 +22027,7 @@ localize(L.HEADER_NAMES, {
 localize(L.FILTER_ID_TYPES, {
 	[60] = "\"셀카\" 사진기",
 });
-localize(L.ObjectNames, {
+localize(_.ObjectNames, {
 	[31] = "오래된 사자상",
 	[34] = "낡은 단지",
 	[35] = "선장의 사물함",
@@ -24826,7 +24826,7 @@ localize(L.HEADER_NAMES, {
 localize(L.FILTER_ID_TYPES, {
 	[60] = "Câmera de S.E.L.F.I.E.",
 });
-localize(L.ObjectNames, {
+localize(_.ObjectNames, {
 	[31] = "Estátua de Leão Antiga",
 	[34] = "Velho Garrafão",
 	[35] = "Maleta do Capitão",
@@ -27895,7 +27895,7 @@ localize(L.FILTER_ID_TYPES, {
 	[60] = "Камера СЕЛФИ",
 	[103] = "Иллюзии",
 });
-localize(L.ObjectNames, {
+localize(_.ObjectNames, {
 	[31] = "Статуя старого льва",
 	[34] = "Старый кувшин",
 	[35] = "Сундучок капитана",
@@ -31063,7 +31063,7 @@ localize(L.FILTER_ID_TYPES, {
 	[60] = "自拍神器",
 	[103] = "幻象",
 });
-localize(L.ObjectNames, {
+localize(_.ObjectNames, {
 	[31] = "陈旧的石狮子",
 	[34] = "旧罐子",
 	[35] = "船长的手提箱",

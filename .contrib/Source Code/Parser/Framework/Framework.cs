@@ -6144,7 +6144,7 @@ namespace ATT
                         if (localePair.Value.Any())
                         {
                             var localeBuilder = localizationByLocale[localePair.Key];
-                            localeBuilder.AppendLine("localize(L.ObjectNames, {");
+                            localeBuilder.AppendLine("localize(_.ObjectNames, {");
                             foreach (var key in keys)
                             {
                                 if (localePair.Value.TryGetValue(key, out string name))

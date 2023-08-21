@@ -282,19 +282,19 @@ localize(L.HEADER_NAMES, {
 	[-1000189] = "Lunar Festival",
 	[-1000191] = "Midsummer Fire Festival",
 	[-1000192] = "Noblegarden",
-	[-1000196] = "Stranglethorn Fishing Extravaganza",
-	[-1000203] = "The Ahn'Qiraj War Effort",
-	[-1000204] = "The Opening of the Dark Portal",
-	[-1000205] = "The Scepter of the Shifting Sands",
-	[-1000206] = "The Scourge Invasion",
-	[-1000207] = "The Silithyst Must Flow",
-	[-1000212] = "BlizzCon",
-	[-1000213] = "Collector's Edition",
-	[-1000230] = "iCoke",
-	[-1000231] =  AUCTION_CATEGORY_MISCELLANEOUS,
-	[-1000236] = "Ensembles",
-	[-1000237] = "Arsenals",
-	[-1000238] = "Sourceless",
+	[-1000197] = "Stranglethorn Fishing Extravaganza",
+	[-1000204] = "The Ahn'Qiraj War Effort",
+	[-1000205] = "The Opening of the Dark Portal",
+	[-1000206] = "The Scepter of the Shifting Sands",
+	[-1000207] = "The Scourge Invasion",
+	[-1000208] = "The Silithyst Must Flow",
+	[-1000213] = "BlizzCon",
+	[-1000214] = "Collector's Edition",
+	[-1000231] = "iCoke",
+	[-1000232] =  AUCTION_CATEGORY_MISCELLANEOUS,
+	[-1000237] = "Ensembles",
+	[-1000238] = "Arsenals",
+	[-1000239] = "Sourceless",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000014] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -310,14 +310,14 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000156] = "This part of the instance can be accessed from the western-most portal. (left side)",
 	[-1000164] = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Live\" or \"Scarlet\" side, which the Scarlet Crusade has taken over.",
 	[-1000165] = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Dead\" or \"Scourge\" side, which the Scourge has taken over.",
-	[-1000203] = "When Phase 5 is eventually released, the Ruins of Ahn'Qiraj and Temple of Ahn'Qiraj will not be immediately available. Instead, server communities will have to undertake a massive war effort to open the raids by gathering supplies to prepare for the war and completing an epic questline that ultimately culminates in the banging of a gong to open the gates and release the horrors within upon the world.\n\nOnce both factions have finished their contribution, there is a 5-day grace period where. Afterwards, there is a server-wide 10 hour event which spans several zones in Kalimdor the moment someone bangs the gong.\n\nHow quickly Ahn'Qiraj opens depends on the server and its faction balance.\n\nWe recommend delaying the War Effort as long as possible to allow for the most number of people to obtain the Scarab Lord mount as everyone that finishes The Scepter of the Shifting Sands quest line will be granted the same rewards!",
-	[-1000204] = "The Opening of the Dark Portal was a one-time event that happened between Prepatch and the launch of TBC and subsequentially removed after. The tabard is the only tabard in the game with the Flex emote built into it and is highly covetted by collectors. Highlord Kruul would spawn randomly outside of the major cities and max level zones of the time.",
-	[-1000205] = "In addition to all players on a realm working towards completing the War Effort, one player had to create the Scepter of the Shifting Sands - a very difficult task that could only be solved by a server's top guild back when the questline was added. After the war effort was finished and the army of the Alliance and the Horde arrived in Silithus, the Scepter of the Shifting Sands could be used on the Scarab Gong. Doing so resulted in the opening of Ahn'Qiraj. The first player to bang the Scarab Gong on each server would be rewarded with the Scarab Lord title (in Burning Crusade, the title will not be available in Classic!) and the Black Qiraji Resonating Crystal mount. Anyone else who followed them within 10 hours was rewarded with the title as well.\n\nAlthough it is still possible to complete the questline for the Scepter of the Shifting Sands after the gates have been opened on your server, doing so will not reward neither the Black Qiraji Resonating Crystal nor the Scarab Lord title.",
-	[-1000206] = "The Scourge Invasion was a world event in Patch 1.11 and again during the Wrath of the Lich King Pre-Patch during 3.0.1 that heralded the opening of Naxxramas, the citadel of the dreaded Kel'Thuzad.\n\nSeveral regions of Azeroth came under attack by Scourge forces. Members of the Argent Dawn organized a worldwide counter to the Scourge invasion, keeping an eye out for any necropolis sightings and passing on their information to all adventurers willing to aid them in their struggle.\n\nWith each victory against the Scourge, the defense grows stronger. As more and more invasion attempts are beaten back by the defenders, the Argent Dawn will be able to bestow increasingly more powerful blessings upon those fighting the invaders. If the mortal races focus on clearing the Scourge camps all over the world that have sprung up beneath each necropolis, perhaps the invasion can effectively be halted or even repelled. Those who wish to take up arms against the undead invaders should speak with a representative of the Argent Dawn to learn what regions need help and how the defense is holding up.",
-	[-1000207] = "The Silithyst Must Flow is the name of the world PvP event in Silithus, where players of both factions must try and secure as much Silithyst as possible. Silithyst is a red crystalline dust that reaches the surface through geysers exclusive to the Silithus desert. Both the Alliance and the Horde have taken an interest in this new substance, and researchers on both sides have discovered unique and valuable properties in the dust. The Horde and Alliance camps in the region have both been outfitted with turn-in stations where players can unload the Silithyst they collect.",
-	[-1000230] = "These were only available through the 2006 iCoke Promotion (China Only)",
-	[-1000231] = "This section is for miscellaneous promotions that took place in the real world or something to do with account management.",
-	[-1000238] = "This Category contains Things that probably exist in the game but no known source.",
+	[-1000204] = "When Phase 5 is eventually released, the Ruins of Ahn'Qiraj and Temple of Ahn'Qiraj will not be immediately available. Instead, server communities will have to undertake a massive war effort to open the raids by gathering supplies to prepare for the war and completing an epic questline that ultimately culminates in the banging of a gong to open the gates and release the horrors within upon the world.\n\nOnce both factions have finished their contribution, there is a 5-day grace period where. Afterwards, there is a server-wide 10 hour event which spans several zones in Kalimdor the moment someone bangs the gong.\n\nHow quickly Ahn'Qiraj opens depends on the server and its faction balance.\n\nWe recommend delaying the War Effort as long as possible to allow for the most number of people to obtain the Scarab Lord mount as everyone that finishes The Scepter of the Shifting Sands quest line will be granted the same rewards!",
+	[-1000205] = "The Opening of the Dark Portal was a one-time event that happened between Prepatch and the launch of TBC and subsequentially removed after. The tabard is the only tabard in the game with the Flex emote built into it and is highly covetted by collectors. Highlord Kruul would spawn randomly outside of the major cities and max level zones of the time.",
+	[-1000206] = "In addition to all players on a realm working towards completing the War Effort, one player had to create the Scepter of the Shifting Sands - a very difficult task that could only be solved by a server's top guild back when the questline was added. After the war effort was finished and the army of the Alliance and the Horde arrived in Silithus, the Scepter of the Shifting Sands could be used on the Scarab Gong. Doing so resulted in the opening of Ahn'Qiraj. The first player to bang the Scarab Gong on each server would be rewarded with the Scarab Lord title (in Burning Crusade, the title will not be available in Classic!) and the Black Qiraji Resonating Crystal mount. Anyone else who followed them within 10 hours was rewarded with the title as well.\n\nAlthough it is still possible to complete the questline for the Scepter of the Shifting Sands after the gates have been opened on your server, doing so will not reward neither the Black Qiraji Resonating Crystal nor the Scarab Lord title.",
+	[-1000207] = "The Scourge Invasion was a world event in Patch 1.11 and again during the Wrath of the Lich King Pre-Patch during 3.0.1 that heralded the opening of Naxxramas, the citadel of the dreaded Kel'Thuzad.\n\nSeveral regions of Azeroth came under attack by Scourge forces. Members of the Argent Dawn organized a worldwide counter to the Scourge invasion, keeping an eye out for any necropolis sightings and passing on their information to all adventurers willing to aid them in their struggle.\n\nWith each victory against the Scourge, the defense grows stronger. As more and more invasion attempts are beaten back by the defenders, the Argent Dawn will be able to bestow increasingly more powerful blessings upon those fighting the invaders. If the mortal races focus on clearing the Scourge camps all over the world that have sprung up beneath each necropolis, perhaps the invasion can effectively be halted or even repelled. Those who wish to take up arms against the undead invaders should speak with a representative of the Argent Dawn to learn what regions need help and how the defense is holding up.",
+	[-1000208] = "The Silithyst Must Flow is the name of the world PvP event in Silithus, where players of both factions must try and secure as much Silithyst as possible. Silithyst is a red crystalline dust that reaches the surface through geysers exclusive to the Silithus desert. Both the Alliance and the Horde have taken an interest in this new substance, and researchers on both sides have discovered unique and valuable properties in the dust. The Horde and Alliance camps in the region have both been outfitted with turn-in stations where players can unload the Silithyst they collect.",
+	[-1000231] = "These were only available through the 2006 iCoke Promotion (China Only)",
+	[-1000232] = "This section is for miscellaneous promotions that took place in the real world or something to do with account management.",
+	[-1000239] = "This Category contains Things that probably exist in the game but no known source.",
 });
 localize(L.HEADER_LORE, {
 	[-1000046] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -411,19 +411,19 @@ localize(L.HEADER_ICONS, {
 	[-1000189] = _.asset("Holiday_Lunar"),
 	[-1000191] = _.asset("Holiday_Midsummer"),
 	[-1000192] = _.asset("Holiday_noblegarden"),
-	[-1000196] = "Interface/Icons/inv_misc_fish_06",
-	[-1000203] = "Interface/Icons/inv_box_01",
-	[-1000204] = "Interface/Icons/achievement_dungeon_outland_dungeonmaster",
-	[-1000205] = "Interface/Icons/Inv_hammer_25",
-	[-1000206] = "Interface/Icons/inv_stone_02",
-	[-1000207] = "Interface/Icons/spell_holiday_tow_spicecloud",
-	[-1000212] = _.asset("Promotion_Blizzcon"),
-	[-1000213] = _.asset("Promotion_Collector"),
-	[-1000230] = "Interface/Icons/Inv_drink_10",
-	[-1000231] = "Interface/Icons/Spell_Misc_Drink",
-	[-1000236] = "Interface/Icons/inv_chest_leather_08",
-	[-1000237] = "Interface/Icons/inv_mace_1h_bastionquest_b_02",
-	[-1000238] = "Interface/Icons/inv_misc_questionmark",
+	[-1000197] = "Interface/Icons/inv_misc_fish_06",
+	[-1000204] = "Interface/Icons/inv_box_01",
+	[-1000205] = "Interface/Icons/achievement_dungeon_outland_dungeonmaster",
+	[-1000206] = "Interface/Icons/Inv_hammer_25",
+	[-1000207] = "Interface/Icons/inv_stone_02",
+	[-1000208] = "Interface/Icons/spell_holiday_tow_spicecloud",
+	[-1000213] = _.asset("Promotion_Blizzcon"),
+	[-1000214] = _.asset("Promotion_Collector"),
+	[-1000231] = "Interface/Icons/Inv_drink_10",
+	[-1000232] = "Interface/Icons/Spell_Misc_Drink",
+	[-1000237] = "Interface/Icons/inv_chest_leather_08",
+	[-1000238] = "Interface/Icons/inv_mace_1h_bastionquest_b_02",
+	[-1000239] = "Interface/Icons/inv_misc_questionmark",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000173] = 201,
@@ -435,8 +435,8 @@ localize(L.HEADER_EVENTS, {
 	[-1000189] = 327,
 	[-1000191] = 341,
 	[-1000192] = 181,
-	[-1000196] = 301,
-	[-1000212] = 1181,
+	[-1000197] = 301,
+	[-1000213] = 1181,
 });
 localize(L.EVENT_REMAPPING, {
 	[374] = 479,
@@ -1866,15 +1866,15 @@ localize(L.HEADER_NAMES, {
 	[-1000163] = "Kathedrale",
 	[-1000174] = "Dunkelmond-Jahrmarkt",
 	[-1000191] = "Sonnenwendfest",
-	[-1000196] = "Anglerwettbewerb im Schlingendorntal",
-	[-1000204] = "Die Öffnung des Dunklen Portals",
-	[-1000205] = "Das Szepter der Sandstürme",
+	[-1000197] = "Anglerwettbewerb im Schlingendorntal",
+	[-1000205] = "Die Öffnung des Dunklen Portals",
+	[-1000206] = "Das Szepter der Sandstürme",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000023] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
 	[-1000038] = "Ein Waffenmeister ist ein NPC, der Charakteren die Möglichkeit bietet, bestimmte Waffenfertigkeiten zu erlernen, deren Verfügbarkeit von Waffenmeister zu Waffenmeister unterschiedlich ist. Alle Waffenfähigkeiten können auf Stufe 1 trainiert werden, mit Ausnahme von Stangenwaffen, für die Stufe 20 erforderlich ist.\n\nDas Training mit einem Waffenmeister wurde in Patch 4.0.1 obsolet, da nun alle klassengerechten Waffenfertigkeiten von jeder Klasse bei der Erstellung erlernt werden. Waffenmeister wurden kurz darauf aus dem Spiel entfernt.",
 });
-localize(L.ObjectNames, {
+localize(_.ObjectNames, {
 	[31] = "Alte Löwenstatue",
 	[34] = "Alter Henkelkrug",
 	[35] = "Schließkiste des Kapitäns",
@@ -2292,14 +2292,14 @@ localize(L.HEADER_NAMES, {
 	[-1000149] = "Los Cuatro Jinetes",
 	[-1000174] = "Feria de la Luna Negra",
 	[-1000191] = "Festival del Fuego del Solsticio de Verano",
-	[-1000196] = "Gran espectáculo de pesca de Tuercespina",
-	[-1000204] = "La apertura del Portal Oscuro",
-	[-1000205] = "El cetro del Mar de Dunas",
+	[-1000197] = "Gran espectáculo de pesca de Tuercespina",
+	[-1000205] = "La apertura del Portal Oscuro",
+	[-1000206] = "El cetro del Mar de Dunas",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000038] = "Un maestro de armas es un PNJ que ofrece a los personajes la oportunidad de aprender habilidades específicas con armas, cuya disponibilidad varía de un maestro de armas a otro. Todas las habilidades con armas se pueden entrenar en el nivel 1, excepto las armas de asta que requieren el nivel 20.\n\nEl entrenamiento con un maestro de armas quedó obsoleto en el parche 4.0.1, ya que cada clase ahora aprende todas las competencias de armas apropiadas para la clase en el momento de la creación. Los maestros de armas se eliminaron del juego poco después.",
 });
-localize(L.ObjectNames, {
+localize(_.ObjectNames, {
 	[31] = "Estatua de león antigua",
 	[34] = "Vieja jarra",
 	[35] = "Baúl del Capitán",
@@ -2727,17 +2727,17 @@ localize(L.HEADER_NAMES, {
 	[-1000166] = "Défenseurs Atal'ai",
 	[-1000174] = "Foire de Sombrelune",
 	[-1000191] = "Fête du Feu du solstice d’été",
-	[-1000196] = "Concours de pêche de Strangleronce",
-	[-1000203] = "Effort de guerre d’Ahn'Qiraj",
-	[-1000204] = "L'ouverture de la Porte des ténèbres",
-	[-1000205] = "Le Sceptre des Sables changeants",
-	[-1000213] = "Edition Collector",
+	[-1000197] = "Concours de pêche de Strangleronce",
+	[-1000204] = "Effort de guerre d’Ahn'Qiraj",
+	[-1000205] = "L'ouverture de la Porte des ténèbres",
+	[-1000206] = "Le Sceptre des Sables changeants",
+	[-1000214] = "Edition Collector",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000031] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
 	[-1000038] = "Un maître d'armes est un PNJ qui offre aux personnages la possibilité d'apprendre des compétences d'armes spécifiques, dont la disponibilité varie d'un maître d'armes à l'autre. Toutes les compétences d'armes peuvent être entraînées au niveau 1, à l'exception des armes d'hast qui nécessitent le niveau 20.\n\nL'entraînement avec un maître d'armes est devenu obsolète dans le patch 4.0.1, car toutes les compétences d'armes appropriées à la classe sont désormais apprises par chaque classe lors de sa création. Les maîtres d'armes ont été retirés du jeu peu de temps après.",
 });
-localize(L.ObjectNames, {
+localize(_.ObjectNames, {
 	[31] = "Statue du vieux lion",
 	[34] = "Vieille cruche",
 	[35] = "Coffre du capitaine",
@@ -3151,11 +3151,11 @@ localize(L.HEADER_NAMES, {
 	[-1000149] = "I Cavalieri dell'Apocalisse",
 	[-1000174] = "Fiera di Lunacupa",
 	[-1000191] = "Fuochi di Mezza Estate",
-	[-1000196] = "Gara di Pesca a Rovotorto",
-	[-1000204] = "L'apertura del Portale Oscuro",
-	[-1000205] = "Scettro delle Sabbie Mutevoli",
+	[-1000197] = "Gara di Pesca a Rovotorto",
+	[-1000205] = "L'apertura del Portale Oscuro",
+	[-1000206] = "Scettro delle Sabbie Mutevoli",
 });
-localize(L.ObjectNames, {
+localize(_.ObjectNames, {
 	[31] = "Vecchia Statua di Leone",
 	[34] = "Vecchio Fiasco",
 	[35] = "Scrigno del Capitano",
@@ -3487,14 +3487,14 @@ localize(L.HEADER_NAMES, {
 	[-1000149] = "4인 기사단",
 	[-1000174] = "다크문 유랑단",
 	[-1000191] = "한여름 불꽃축제",
-	[-1000196] = "가시덤불 골짜기 낚시왕 선발대회",
-	[-1000204] = "어둠의 문 열기",
-	[-1000205] = "흐르는 모래의 홀",
+	[-1000197] = "가시덤불 골짜기 낚시왕 선발대회",
+	[-1000205] = "어둠의 문 열기",
+	[-1000206] = "흐르는 모래의 홀",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000038] = "웨폰 마스터는 캐릭터에게 특정 무기 기술을 배울 수 있는 기회를 제공하는 NPC로, 사용 가능 여부는 웨폰 마스터마다 다릅니다. 모든 무기 기술은 레벨 20이 필요한 폴암을 제외하고 레벨 1에서 훈련할 수 있습니다.\n\n4.0.1 패치에서는 각 병과가 생성 시 모든 병과에 적합한 무기 숙련도를 배우게 되므로 무기 전문가와의 훈련은 더 이상 필요하지 않게 되었습니다. 무기 마스터는 곧 게임에서 제거되었습니다.",
 });
-localize(L.ObjectNames, {
+localize(_.ObjectNames, {
 	[31] = "오래된 사자상",
 	[34] = "낡은 단지",
 	[35] = "선장의 사물함",
@@ -3908,14 +3908,14 @@ localize(L.HEADER_NAMES, {
 	[-1000149] = "Os Quatro Cavaleiros",
 	[-1000174] = "Feira de Negraluna",
 	[-1000191] = "Festival do Fogo do Solstício",
-	[-1000196] = "Festerê de Pesca da Selva do Espinhaço",
-	[-1000204] = "A abertura do Portal Negro",
-	[-1000205] = "Cetro das Areias Cambiantes",
+	[-1000197] = "Festerê de Pesca da Selva do Espinhaço",
+	[-1000205] = "A abertura do Portal Negro",
+	[-1000206] = "Cetro das Areias Cambiantes",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000038] = "Um mestre de armas é um NPC que oferece aos personagens a oportunidade de aprender habilidades específicas com armas, cuja disponibilidade varia de um mestre de armas para outro. Todas as habilidades com armas podem ser treinadas no nível 1, exceto as armas de haste, que exigem nível 20.\n\nO treinamento com um mestre de armas tornou-se obsoleto no Patch 4.0.1, já que todas as proficiências de armas apropriadas à classe agora são aprendidas por cada classe após a criação. Os mestres de armas foram removidos do jogo logo depois.",
 });
-localize(L.ObjectNames, {
+localize(_.ObjectNames, {
 	[31] = "Estátua de Leão Antiga",
 	[34] = "Velho Garrafão",
 	[35] = "Maleta do Capitão",
@@ -4345,20 +4345,20 @@ localize(L.HEADER_NAMES, {
 	[-1000166] = "Защитники Атал'ай",
 	[-1000174] = "Ярмарка Новолуния",
 	[-1000191] = "Огненный Солнцеворот",
-	[-1000196] = "Рыбомания Тернистой долины",
-	[-1000203] = "Война в Ан'Кираже",
-	[-1000204] = "Открытие Темного портала",
-	[-1000205] = "Скипетр Зыбучих песков",
-	[-1000206] = "Вторжение Плети",
-	[-1000213] = "Коллекционное издание",
-	[-1000238] = "Без Источника",
+	[-1000197] = "Рыбомания Тернистой долины",
+	[-1000204] = "Война в Ан'Кираже",
+	[-1000205] = "Открытие Темного портала",
+	[-1000206] = "Скипетр Зыбучих песков",
+	[-1000207] = "Вторжение Плети",
+	[-1000214] = "Коллекционное издание",
+	[-1000239] = "Без Источника",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000023] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",
 	[-1000031] = "Штучки, которые можно получить в награду с разного контента в родительской секции.\nОни собраны здесь, чтобы уменьшить количество источников, когда Штучка доступна из многих мест.",
 	[-1000038] = "Мастер оружия - это NPC, который предлагает персонажам возможность изучить определенные навыки обращения с оружием, доступность которых варьируется от одного мастера к другому. Все навыки обращения с оружием можно изучить на уровне 1, кроме древкового оружия, для которого требуется уровень 20.\n\nОбучение с мастером оружия стало устаревшим в патче 4.0.1, так как все соответствующие классу навыки владения оружием теперь изучаются каждым классом при создании. Вскоре после этого из игры были удалены мастера оружия.",
 });
-localize(L.ObjectNames, {
+localize(_.ObjectNames, {
 	[31] = "Статуя старого льва",
 	[34] = "Старый кувшин",
 	[35] = "Сундучок капитана",
@@ -4790,23 +4790,23 @@ localize(L.HEADER_NAMES, {
 	[-1000166] = "阿塔莱防御者",
 	[-1000174] = "暗月马戏团",
 	[-1000191] = "仲夏火焰节",
-	[-1000196] = "荆棘谷钓鱼大赛",
-	[-1000203] = "安其拉之战捐献",
-	[-1000204] = "开启黑暗之门",
-	[-1000205] = "流沙节杖",
-	[-1000206] = "天灾入侵",
-	[-1000207] = "希利苏斯流沙",
-	[-1000212] = "暴雪嘉年华",
-	[-1000213] = "典藏版",
-	[-1000230] = "可口可乐活动",
-	[-1000238] = "无来源",
+	[-1000197] = "荆棘谷钓鱼大赛",
+	[-1000204] = "安其拉之战捐献",
+	[-1000205] = "开启黑暗之门",
+	[-1000206] = "流沙节杖",
+	[-1000207] = "天灾入侵",
+	[-1000208] = "希利苏斯流沙",
+	[-1000213] = "暴雪嘉年华",
+	[-1000214] = "典藏版",
+	[-1000231] = "可口可乐活动",
+	[-1000239] = "无来源",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000023] = "你可能需要在特定的节日活动中才能完成本节中的事物。",
 	[-1000031] = "包含有奖励或可从包含部分中的其他内容获得的事物。\n在此处合并以减少来自许多可能重复来源。",
 	[-1000038] = "武器大师是一个 NPC，为角色提供学习特定武器技能的机会，不同武器大师的可用性各不相同。所有武器技能都可以在 1 级进行训练，长柄武器除外，需要 20 级。\n\n在补丁 4.0.1 中，武器大师的训练已经过时，因为现在每个班级在创建时都会学习所有适合班级的武器熟练程度。不久之后，武器大师就被从游戏中删除了。",
 });
-localize(L.ObjectNames, {
+localize(_.ObjectNames, {
 	[31] = "陈旧的石狮子",
 	[34] = "旧罐子",
 	[35] = "船长的手提箱",
