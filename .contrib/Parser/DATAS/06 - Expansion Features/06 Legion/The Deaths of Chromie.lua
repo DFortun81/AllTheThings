@@ -259,7 +259,7 @@ root(ROOTS.ExpansionFeatures,
 						["provider"] = { "n", 27856 },	-- Chromie
 						["sourceQuest"] = 47550,	-- The Many Advantages of Being a Time Dragon
 						["g"] = {
-							currency(1166),	-- Timewarped Badge x250
+							currency(TIMEWARPED_BADGE),
 						},
 					}),
 					q(47545, {	-- Rewind
@@ -267,14 +267,14 @@ root(ROOTS.ExpansionFeatures,
 						["provider"] = { "n", 27856 },	-- Chromie
 						["sourceQuest"] = 47543,	-- The Day That Chromie Dies
 						["g"] = {
-							currency(1166),	-- Timewarped Badge x50
+							currency(TIMEWARPED_BADGE),
 						},
 					}),
 					q(47543, {	-- The Day That Chromie Dies
 						["coord"] = { 60.0, 54.5, DRAGONBLIGHT },
 						["provider"] = { "n", 27856 },	-- Chromie
 						["g"] = {
-							currency(1166),	-- Timewarped Badge x50
+							currency(TIMEWARPED_BADGE),
 						},
 					}),
 					q(47808, {	-- The Dead Walk
@@ -290,7 +290,7 @@ root(ROOTS.ExpansionFeatures,
 						["provider"] = { "n", 27856 },	-- Chromie
 						["sourceQuest"] = 47545,	-- Rewind
 						["g"] = {
-							currency(1166),	-- Timewarped Badge x50
+							currency(TIMEWARPED_BADGE),
 						},
 					}),
 					q(47807, {	-- Worried About My Friends

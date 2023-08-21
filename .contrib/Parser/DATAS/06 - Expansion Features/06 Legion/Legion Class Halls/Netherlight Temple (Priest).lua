@@ -533,7 +533,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["coord"] = { 50.4, 21.8, NETHERLIGHT_TEMPLE },
 						["maps"] = { 839 },	-- THe Maelstrom
 						["g"] = {
-							i(142224),	-- High Priest's Lightsworn Seeker (MOUNT!)
+							mount(229377),	-- High Priest's Lightsworn Seeker (MOUNT!)
 						},
 					}),
 					q(43375, {	-- An Ample Supply

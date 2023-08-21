@@ -463,14 +463,12 @@ r(3946),	-- Heavy Dynamite
 r(3947),	-- Crafted Solid Shot
 r(3949),	-- Silver-plated Shotgun
 r(3950),	-- Big Bronze Bomb
-r(3952),	-- Minor Recombobulator
 r(3953),	-- Bronze Framework
 r(3954),	-- Moonsight Rifle
 r(3955),	-- Explosive Sheep
 r(3956),	-- Green Tinted Goggles
 r(3957),	-- Ice Deflector
 r(3958),	-- Iron Strut
-r(3959),	-- Discombobulator Ray
 r(3960),	-- Portable Bronze Mortar
 r(3961),	-- Gyrochronatom
 r(3962),	-- Iron Grenade

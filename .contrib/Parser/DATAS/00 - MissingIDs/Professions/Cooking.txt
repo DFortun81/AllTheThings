@@ -181,10 +181,9 @@ r(338117),	-- Seared Cutlets
 
 Missing in CookingItemDB.lua
 
-
 6.0.1.18179
 r(89719),	-- Archaeology
-r(0, 158765),	-- Cooking (Draenor Master)
+r(158765),	-- Cooking
 r(160958),	-- Hearty Elekk Steak
 r(160961),	-- UNUSED
 r(160962),	-- Blackrock Ham

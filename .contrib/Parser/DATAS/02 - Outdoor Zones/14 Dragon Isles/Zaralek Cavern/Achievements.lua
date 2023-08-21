@@ -43,8 +43,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				crit(59199, {	-- Karokta
 					["_npcs"] = { 203625 },	-- Karokta
 				}),
-				crit(59184, {	-- Kaprachu
-					["_npcs"] = { 203466 },	-- Kaprachu
+				crit(59184, {	-- Kapraku
+					["_npcs"] = { 203466 },	-- Kapraku
 				}),
 				crit(59198, {	-- Klakatak
 					["_npcs"] = { 203618 },	-- Klakatak
@@ -116,67 +116,64 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["cost"] = { { "i", 205686, 21 } },	-- 21x Clacking Claw
 				["g"] = {
 					i(205904),	-- Vibrant Clacking Claw (TOY!)
-					crit(1, {
+					crit(59491, {
 						["_npcs"] = { 203515 },	-- Alcanon
 					}),
-					crit(2, {
+					crit(59492, {
 						["_npcs"] = { 203468 },	-- Aquifon
 					}),
-					crit(3, {
-						["_npcs"] = { 203621 },	-- Brulsef the Stronk
+					crit(59493, {
+						["_npcs"] = { 203621 },	-- Brullo the Strong
 					}),
-					crit(4, {
+					crit(59494, {
 						["_npcs"] = { 204093 },	-- Colossian
 					}),
-					crit(5, {
+					crit(59495, {
 						["_npcs"] = { 203664 },	-- Emberdusk
 					}),
-					crit(6, {
+					crit(59496, {
 						["_npcs"] = { 203660 },	-- Flowfy
 					}),
-					crit(7, {
+					crit(59497, {
 						["_npcs"] = { 203592 },	-- General Zskorro
 					}),
-					crit(8, {
+					crit(59498, {
 						["_npcs"] = { 203477 },	-- Goopal
 					}),
-					crit(9, {
+					crit(59499, {
 						["_npcs"] = { 203627 },	-- Invohq
 					}),
-					crit(10, {
-						["_npcs"] = { 203646 },	-- Jrumm
+					crit(59500, {
+						["_npcs"] = { 203646 },	-- Dinn
 					}),
-					crit(11, {
-						["_npcs"] = { 203625 },	-- Karokta
+					crit(59501, {
+						["_npcs"] = { 203466 },	-- Kapraku
 					}),
-					crit(12, {
-						["_npcs"] = { 203466 },	-- Kaprachu
-					}),
-					crit(13, {
+					crit(59503, {
 						["_npcs"] = { 203618 },	-- Klakatak
 					}),
-					crit(14, {
+					crit(59504, {
 						["_npcs"] = { 203462 },	-- Kob'rok
 					}),
-					crit(15, {
+					crit(59505, {
 						["_npcs"] = { 200111 },	-- Magtembo
 					}),
-					crit(16, {
+					crit(59506, {
 						["_npcs"] = { 203521 },	-- Professor Gastrinax
 					}),
-					crit(17, {
+					crit(59507, {
 						["_npcs"] = { 203643 },	-- Skornak
 					}),
-					crit(18, {
+					crit(59508, {
 						["_npcs"] = { 203480 },	-- Spinmarrow
 					}),
-					crit(19, {
+					crit(59509, {
 						["_npcs"] = { 203662 },	-- Subterrax
 					}),
-					crit(20, {
+					crit(59510, {
 						["_npcs"] = { 203593 },	-- Underlight Queen
 					}),
-					crit(21, {
+					crit(59511, {
 						["_npcs"] = { 201029 },	-- Viridian King
 					}),
 				},

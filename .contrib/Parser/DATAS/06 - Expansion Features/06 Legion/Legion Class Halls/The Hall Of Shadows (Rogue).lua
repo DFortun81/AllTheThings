@@ -751,7 +751,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["coord"] = { 20.0, 21.4, THE_HALL_OF_SHADOWS },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							i(143493),	-- Shadowblade's Murderous Omen (MOUNT!)
+							mount(231434),	-- Shadowblade's Murderous Omen (MOUNT!)
 						},
 					})),
 					q(46178, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Hiding in Plain Sight (H)
@@ -760,7 +760,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["coord"] = { 20.0, 21.4, THE_HALL_OF_SHADOWS },
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(143493),	-- Shadowblade's Murderous Omen (MOUNT!)
+							mount(231434),	-- Shadowblade's Murderous Omen (MOUNT!)
 						},
 					})),
 					-- Side Quest

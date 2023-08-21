@@ -808,7 +808,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					199533,	-- Green Stocking Cap
 					199537,	-- Forest Green Ear Warmer
 					199535,	-- Crimson Ear Warmer
-					199534,	-- Blue Stocking Cap
 				}},
 			}),
 			n(194059, {	-- Rokkutuk <Lead Craftsman>

@@ -67,6 +67,22 @@ REMOVED_2_4_2 = "removed 2.4.2.8209";					-- The Burning Crusade 2.4.2 Launch on
 CREATED_2_4_3 = "created 2.4.3.8606";					-- The Burning Crusade 2.4.3 Launch on July 15th, 2008
 ADDED_2_4_3 = "added 2.4.3.8606";						-- The Burning Crusade 2.4.3 Launch on July 15th, 2008
 REMOVED_2_4_3 = "removed 2.4.3.8606";					-- The Burning Crusade 2.4.3 Launch on July 15th, 2008
+--- CLASSIC TIMELINES ---
+CREATED_2_5_1 = "created 2.5.1.38707";					-- The Burning Crusade Classic 2.5.1 Launch on May 18th, 2021 and Launch on June 1st, 2021
+ADDED_2_5_1 = "added 2.5.1.38707";						-- The Burning Crusade Classic 2.5.1 Launch on May 18th, 2021 and Launch on June 1st, 2021
+REMOVED_2_5_1 = "removed 2.5.1.38707";					-- The Burning Crusade Classic 2.5.1 Launch on May 18th, 2021 and Launch on June 1st, 2021
+CREATED_2_5_2 = "created 2.5.2.39926";					-- The Burning Crusade Classic 2.5.2 Launch on August 31th, 2021
+ADDED_2_5_2 = "added 2.5.2.39926";						-- The Burning Crusade Classic 2.5.2 Launch on August 31th, 2021
+REMOVED_2_5_2 = "removed 2.5.2.39926";					-- The Burning Crusade Classic 2.5.2 Launch on August 31th, 2021
+CREATED_2_5_3 = "created 2.5.3.41812";					-- The Burning Crusade Classic 2.5.3 Launch on January 18th, 2022
+ADDED_2_5_3 = "added 2.5.3.41812";						-- The Burning Crusade Classic 2.5.3 Launch on January 18th, 2022
+REMOVED_2_5_3 = "removed 2.5.3.41812";					-- The Burning Crusade Classic 2.5.3 Launch on January 18th, 2022
+CREATED_2_5_4 = "created 2.5.4.42800";					-- The Burning Crusade Classic 2.5.4 Launch on March 22nd, 2022
+ADDED_2_5_4 = "added 2.5.4.42800";						-- The Burning Crusade Classic 2.5.4 Launch on March 22nd, 2022
+REMOVED_2_5_4 = "removed 2.5.4.42800";					-- The Burning Crusade Classic 2.5.4 Launch on March 22nd, 2022
+CREATED_2_5_4_A = "created 2.5.4.43638";				-- The Burning Crusade Classic 2.5.4a Launch on May 12th, 2022
+ADDED_2_5_4_A = "added 2.5.4.43638";					-- The Burning Crusade Classic 2.5.4a Launch on May 12th, 2022
+REMOVED_2_5_4_A = "removed 2.5.4.43638";				-- The Burning Crusade Classic 2.5.4a Launch on May 12th, 2022
 
 ----------------------------
 -- WRATH OF THE LICH KING --
@@ -110,6 +126,19 @@ REMOVED_3_3_3 = "removed 3.3.3.11685";					-- Wrath of the Lich King 3.3.3 Launc
 CREATED_3_3_5 = "created 3.3.5.12213";					-- Wrath of the Lich King 3.3.5 Launch on June 22nd, 2010
 ADDED_3_3_5 = "added 3.3.5.12213";						-- Wrath of the Lich King 3.3.5 Launch on June 22nd, 2010
 REMOVED_3_3_5 = "removed 3.3.5.12213";					-- Wrath of the Lich King 3.3.5 Launch on June 22nd, 2010
+--- CLASSIC TIMELINES ---
+CREATED_3_4_0 = "created 3.4.0.45327";					-- Wrath of the Lich King Classic 3.4.0 Launch on August 30th, 2022
+ADDED_3_4_0 = "added 3.4.0.45327";						-- Wrath of the Lich King Classic 3.4.0 Launch on August 30th, 2022
+REMOVED_3_4_0 = "removed 3.4.0.45327";					-- Wrath of the Lich King Classic 3.4.0 Launch on August 30th, 2022
+CREATED_3_4_1 = "created 3.4.1.47612";					-- Wrath of the Lich King Classic 3.4.1 Launch on January 17th, 2023
+ADDED_3_4_1 = "added 3.4.1.47612";						-- Wrath of the Lich King Classic 3.4.1 Launch on January 17th, 2023
+REMOVED_3_4_1 = "removed 3.4.1.47612";					-- Wrath of the Lich King Classic 3.4.1 Launch on January 17th, 2023
+CREATED_3_4_2 = "created 3.4.2.50664";					-- Wrath of the Lich King Classic 3.4.2 Launch on July 28th, 2023
+ADDED_3_4_2 = "added 3.4.2.50664";						-- Wrath of the Lich King Classic 3.4.2 Launch on July 28th, 2023
+REMOVED_3_4_2 = "removed 3.4.2.50664";					-- Wrath of the Lich King Classic 3.4.2 Launch on July 28th, 2023
+CREATED_3_4_3 = "created 3.4.3";						-- Wrath of the Lich King Classic 3.4.3 Launch on
+ADDED_3_4_3 = "added 3.4.3";							-- Wrath of the Lich King Classic 3.4.3 Launch on
+REMOVED_3_4_3 = "removed 3.4.3";						-- Wrath of the Lich King Classic 3.4.3 Launch on
 
 ---------------
 -- CATACLYSM --

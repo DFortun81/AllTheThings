@@ -510,7 +510,6 @@ root(ROOTS.NeverImplemented, {
 					}),
 					n(HANDS, {
 						i(131854),	-- Rockbitten Gloves
-						i(131626),	-- Shrouded Gauntlets
 						i(131925),	-- Wanderer's Grips
 					}),
 					n(FEET, {

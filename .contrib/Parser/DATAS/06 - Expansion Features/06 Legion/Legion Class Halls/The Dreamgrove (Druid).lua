@@ -854,17 +854,8 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						q(46319, {	-- You Can't Take the Sky from Me
 							["provider"] = { "n", 106299 },	-- Thisalee Crow
 							["sourceQuests"] = { 46318 },	-- Defense of Aviana
-								["g"] = {
-								spell(231437),	-- Archdruid's Lunarwing Form
-								spell(241857),	-- Archdruid's Lunarwing Form
-								spell(243612),	-- Archdruid's Lunarwing Form
-								spell(243719),	-- Archdruid's Lunarwing Form
-								spell(243616),	-- Archdruid's Lunarwing Form
-								spell(243619),	-- Archdruid's Lunarwing Form
-								--[[ Lightsky: The spellID associated with this item, 231437, isn't taught to the player. It's cast on the player
-									changing the model of the flight form. There are several spell IDs for this 'mount', so not sure if all races
-									use the same spell or differing spells per model.
-								]]
+							["g"] = {
+								mount(231437),	-- Archdruid's Lunarwing Form
 							},
 						}),
 					}),
@@ -1067,12 +1058,6 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 		})),
 	}),
 })));
-root(ROOTS.NeverImplemented, {
-	tier(LEGION_TIER, {
-		-- While it can show as collected for some players, you never received an item. It does not count for any mount achievements.
-		i(143638),	-- Archdruid's Lunarwing Form (MOUNT!)
-	}),
-});
 
 root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {

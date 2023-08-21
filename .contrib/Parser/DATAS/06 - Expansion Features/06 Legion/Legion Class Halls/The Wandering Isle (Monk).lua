@@ -715,7 +715,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["provider"] = { "n", 120726 },	-- Waterspeaker Ryuli
 						["coord"] = { 73.9, 88.9, KUN_LAI_SUMMIT },
 						["g"] = {
-							i(142225),	-- Ban-Lu, Grandmaster's Companion (MOUNT!)
+							mount(229385),	-- Ban-Lu, Grandmaster's Companion (MOUNT!)
 						},
 					})),
 					-- Misc

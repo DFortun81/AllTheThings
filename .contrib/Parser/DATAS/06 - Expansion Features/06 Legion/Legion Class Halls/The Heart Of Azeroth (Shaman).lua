@@ -695,7 +695,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["coord"] = { 28.4, 45.0, THE_HEART_Of_AZEROTH },
 						["maps"] = { 857 },	-- Throne of the Four Winds (Scenario Map)
 						["g"] = {
-							i(143489),	-- Farseer's Raging Tempest (MOUNT!)
+							mount(231442),	-- Farseer's Raging Tempest (MOUNT!)
 						},
 					})),
 					-- Misc

@@ -187,11 +187,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(170739, {	-- Sunswarmed Sand
 							["timeline"] = { "added 8.2.0.30918" },
-							["cost"] = { { "c", 1166, 10 }, },		-- 10x Timewarped Badge
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 10 }},
 						}),
 						i(170380, {	-- Jar of the Sunwarmed Sand (TOY!)
 							["timeline"] = { "added 8.2.0.30918" },
-							["cost"] = { { "c", 1166, 1000 }, },	-- 1,000x Timewarped Badge
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
 						}),
 					},
 				}),

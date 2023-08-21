@@ -615,7 +615,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							871,	-- The Lost Glacier (Scenario Map)
 						},
 						["g"] = {
-							i(142231),	-- Deathlord's Vilebrood Vanquisher (MOUNT!)
+							mount(229387),	-- Deathlord's Vilebrood Vanquisher (MOUNT!)
 						},
 					}),
 					-- Misc

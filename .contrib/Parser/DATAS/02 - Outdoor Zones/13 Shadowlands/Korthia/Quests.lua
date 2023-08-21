@@ -1441,6 +1441,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["coord"] = { 60.5, 27.6, KORTHIA },
 				["g"] = {
 					ach(15055),	-- Friend of Ooz
+					i(187000),	-- Pattern: Elusive Pet Treat (RECIPE!)
 				},
 			}),
 			q(63989, {	-- Oozing with Character (Plaguey)
@@ -1449,6 +1450,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["coord"] = { 60.5, 27.6, KORTHIA },
 				["g"] = {
 					ach(15057),		-- Friend of Plaguey
+					i(187000),	-- Pattern: Elusive Pet Treat (RECIPE!)
 				},
 			}),
 			q(63935, {	-- Precious Roots

@@ -160,14 +160,14 @@ WOW_FIFTEENTH_ANNIVERSARY_COLLECTORS_EDITION = createHeader({
 		en = "These rewards were made available to anyone who purchased a World of Warcraft 15th Anniversary Collector's Edition.",
 	},
 });
-root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
-	tier(CLASSIC_TIER, {
+root(ROOTS.Promotions, n(COLLECTORS_EDITION, {
+	tier(CLASSIC_TIER, bubbleDownSelf({ ["timeline"] = { REMOVED_2_0_1 } }, {
 		["description"] = "These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",
 		["groups"] = {
 			n(QUESTS, {
 				q(8547, {	-- Welcome! (Blood Elf)
 					["provider"] = { "i", 20938 },	-- Falconwing Square [Wrath+] / Sunstrider Isle Gift Voucher
-					["timeline"] = { "added 2.0.1" },
+					["timeline"] = { ADDED_2_0_1 },
 					["maps"] = { EVERSONG_WOODS },
 					["races"] = { BLOODELF },
 					["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
@@ -181,7 +181,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDown({ ["u"] = REMOVED_FROM_G
 				}),
 				q(9278, {	-- Welcome! (Draenei)
 					["provider"] = { "i", 22888 },	-- Azure Watch Gift Voucher
-					["timeline"] = { "added 2.0.1" },
+					["timeline"] = { ADDED_2_0_1 },
 					["maps"] = { AZUREMYST_ISLE },
 					["classes"] = { DRAENEI },
 					["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
@@ -242,13 +242,13 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDown({ ["u"] = REMOVED_FROM_G
 				},
 				["groups"] = {
 					ach(662, {	-- Collector's Edition: Mini-Diablo
-						["timeline"] = { "added 3.0.1" },
+						["timeline"] = { ADDED_3_0_2 },
 					}),
 					ach(663, {	-- Collector's Edition: Panda
-						["timeline"] = { "added 3.0.1" },
+						["timeline"] = { ADDED_3_0_2 },
 					}),
 					ach(664, {	-- Collector's Edition: Zergling
-						["timeline"] = { "added 3.0.1" },
+						["timeline"] = { ADDED_3_0_2 },
 					}),
 					i(13584, {	-- Mini Diablo (PET!)
 						["timeline"] = { "added 1.11.1.5462" },
@@ -262,22 +262,21 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDown({ ["u"] = REMOVED_FROM_G
 				},
 			}),
 		},
-	}),
-	tier(TBC_TIER, {
+	})),
+	tier(TBC_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 } }, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",
-		["timeline"] = { "added 2.0.1" },
 		["groups"] = {
 			ach(665, {	-- Collector's Edition: Netherwhelp
-				["timeline"] = { "added 3.0.1" },
+				["timeline"] = { ADDED_3_0_2, REMOVED_3_0_2 },
 			}),
 			i(25535),	-- Netherwhelp (PET!)
 			i(30360, {	-- Lurky (PET!)
 				["description"] = "This was only available in the EU.",
 			}),
 		},
-	}),
-	n(TBC_CLASSIC_DELUXE_EDITION, {
-		["timeline"] = { "added 2.5.1" },
+	})),
+	n(TBC_CLASSIC_DELUXE_EDITION, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_1, REMOVED_3_4_0 } }, {
+		["description"] = "These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",
 		["groups"] = {
 			-- #if ANYCLASSIC
 			n(DARK_PORTAL_PASS, {
@@ -318,18 +317,17 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDown({ ["u"] = REMOVED_FROM_G
 			mount(346136),	-- Viridian Phase-Hunter (MOUNT!)
 			-- #endif
 		},
-	}),
-	tier(WOTLK_TIER, {
+	})),
+	tier(WOTLK_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_3, REMOVED_3_3_5 } }, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
-		["timeline"] = { "added 3.0.1" },
 		["groups"] = {
 			ach(683),	-- Collector's Edition: Frost Wyrm Whelp
 			i(39286),	-- Frosty (PET!)
 		},
-	}),
+	})),
 	-- #if ANYCLASSIC
-	n(WOTLK_CLASSIC_NORTHREND_HEROIC_UPGRADE, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
-		["timeline"] = { "added 3.3.5" },
+	n(WOTLK_CLASSIC_NORTHREND_HEROIC_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_4_A, REMOVED_3_4_3 }, ["u"] = BLIZZARD_BALANCE }, {
+		["description"] = "These rewards were made available to anyone who purchased a Heroic Upgrade Edition of The Burning Crusade Classic.",
 		["groups"] = {
 			i(198665),	-- Pebble's Pebble
 			i(198647),	-- Fishspeaker's Lucky Lure
@@ -359,8 +357,8 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDown({ ["u"] = REMOVED_FROM_G
 		},
 	})),
 	-- #endif
-	n(WOTLK_CLASSIC_NORTHREND_EPIC_UPGRADE, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
-		["timeline"] = { "added 3.3.5" },
+	n(WOTLK_CLASSIC_NORTHREND_EPIC_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_4_A, REMOVED_3_4_3 }, ["u"] = BLIZZARD_BALANCE }, {
+		["description"] = "These rewards were made available to anyone who purchased a Eric Upgrade Edition of The Burning Crusade Classic.",
 		["groups"] = {
 			-- #if ANYCLASSIC
 			i(192455),	-- Kalu'ak Whalebone Glider
@@ -369,47 +367,42 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDown({ ["u"] = REMOVED_FROM_G
 			-- #endif
 		},
 	})),
-	tier(CATA_TIER, {
+	tier(CATA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_5, REMOVED_4_3_2 } }, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Cataclysm.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
-		["timeline"] = { "added 4.0.1" },
 		["groups"] = {
 			ach(5377),	-- Collector's Edition: Lil' Deathwing
 			i(62540),	-- Lil' Deathwing (PET!)
 		},
-	}),
-	tier(MOP_TIER, {
+	})),
+	tier(MOP_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_2, REMOVED_5_4_7 } }, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Mists of Pandaria.\n\nThe rewards can be purchased from the in-game shop.",
-		["timeline"] = { ADDED_5_0_4 },
 		["groups"] = {
 			ach(6849),	-- Collector's Edition: Imperial Quilen
 			ach(6848),	-- Collector's Edition: Lucky Quilen Cub
 			i(85870),	-- Imperial Quilen (MOUNT!)
 			i(85871),	-- Lucky Quilen Cub (PET!)
 		},
-	}),
-	tier(WOD_TIER, {
+	})),
+	tier(WOD_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_7, REMOVED_6_2_2 } }, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Warlords of Draenor.",
-		["timeline"] = { ADDED_5_4_7 },
 		["groups"] = {
 			ach(8917),	-- Collector's Edition: Dread Hatchling
 			ach(8916),	-- Collector's Edition: Dread Raven
 			i(109014),	-- Dread Hatchling (PET!)
 			i(109013),	-- Dread Raven (MOUNT!)
 		},
-	}),
-	tier(LEGION_TIER, {
+	})),
+	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2, REMOVED_7_3_5 } }, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Legion.\n\nThe rewards can be purchased from the in-game shop.",
-		["timeline"] = { ADDED_6_2_2 },
 		["groups"] = {
 			ach(10321),	-- Collector's Edition: Nibbles
 			ach(10320),	-- Collector's Edition: Illidari Felstalker
 			i(128426),	-- Nibbles (PET!)
 			i(128425),	-- Illidari Felstalker (MOUNT!)
 		},
-	}),
-	tier(BFA_TIER, {
+	})),
+	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5, REMOVED_8_3_7 } }, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of BFA.\n\nThe rewards can be purchased from the in-game shop.",
-		["timeline"] = { "added 8.0.1" },
 		["groups"] = {
 			h(ach(12230)),	-- Collector's Edition: Gilded Ravasaur
 			a(ach(12229)),	-- Collector's Edition: Seabraid Stallion
@@ -418,8 +411,8 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDown({ ["u"] = REMOVED_FROM_G
 			a(i(153539)),	-- Seabraid Stallion (MOUNT!)
 			i(153541),	-- Tottle (PET!)
 		},
-	}),
-	tier(SL_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE, ["timeline"] = { ADDED_9_0_1 }, }, {
+	})),
+	tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_3_7, REMOVED_9_2_5 } }, {
 		["description"] = "These rewards are available to anyone who purchases Shadowlands Heroic Edition.",
 		["groups"] = {
 			ach(14283, {	-- Heroic Edition: Ensorcelled Everwyrm
@@ -453,7 +446,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDown({ ["u"] = REMOVED_FROM_G
 			}),
 		},
 	})),
-	tier(DF_TIER, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
+	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 }, ["u"] = BLIZZARD_BALANCE }, {
 		["description"] = "These rewards are available to anyone who purchases Dragonflight Heroic Edition.",
 		["timeline"] = { ADDED_9_2_5 },
 		["groups"] = {
@@ -480,71 +473,75 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDown({ ["u"] = REMOVED_FROM_G
 			}),
 		},
 	})),
-	-- #if NOT ANYCLASSIC
-	n(WOW_FIFTEENTH_ANNIVERSARY_COLLECTORS_EDITION, {
-		["timeline"] = { "added 8.2.5.31958" },
+
+	-- Anniversary
+	n(WOW_FIFTEENTH_ANNIVERSARY_COLLECTORS_EDITION, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5, REMOVED_10_1_0 } }, {
+		["description"] = "These rewards are available to anyone who purchases World of Warcraft 15th Anniversary Collection.",
 		["groups"] = {
-			a(mount(302361)),	-- Alabaster Stormtalon (MOUNT!)
-			h(mount(302362)),	-- Alabaster Thunderwing (MOUNT!)
+			mount(302361, {	-- Alabaster Stormtalon (MOUNT!)
+				["races"] = ALLIANCE_ONLY,
+			}),
+			mount(302362, {	-- Alabaster Thunderwing (MOUNT!)
+				["races"] = HORDE_ONLY,
+			}),
 		},
-	}),
-	-- #endif
+	})),
 
 	-- Other Blizzard Games
-	n(DIABLO_III, {
-		["timeline"] = { "added 4.3.0.15005" },
+	n(DIABLO_III, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0, REMOVED_10_0_2 } }, {
+		["description"] = "These rewards are available to anyone who purchases Diablo 3 Collection.",
 		["groups"] = {
 			ach(7412),	-- Collector's Edition: Fetish Shaman
 			i(76062),	-- Fetish Shaman (PET!)
 		},
-	}),
-	n(DIABLO_III_REAPER_OF_SOULS, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
-		["timeline"] = { "added 5.4.2.17585" },
+	})),
+	n(DIABLO_III_REAPER_OF_SOULS, bubbleDownSelf({ ["timeline"] = { "added 5.4.2.17585", REMOVED_10_0_2 } }, {
+		["description"] = "These rewards are available to anyone who purchases Diablo 3: Reaper of Souls Collection.",
 		["groups"] = {
 			ach(8795),	-- Collector's Edition: Treasure Goblin
 			i(106256),	-- Treasure Goblin (PET!)
 		},
 	})),
-	n(DIABLO_IV, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
-		["timeline"] = { "added 10.0.2.46999" },
+	n(DIABLO_IV, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2 }, ["u"] = BLIZZARD_BALANCE }, {
+		["description"] = "These rewards are available to anyone who purchases Diablo 4 Standard Edition.",
 		["groups"] = {
 			i(191114),	-- Amalgam of Rage (MOUNT!)
 			ach(15640),	-- Return to Darkness
 		},
 	})),
-	n(OVERWATCH_ORIGINS, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
-		["timeline"] = { "added 6.2.3.20716" },
+	n(OVERWATCH_ORIGINS, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_3, REMOVED_10_0_2 } }, {
+		["description"] = "These rewards are available to anyone who purchases Overwatch Origins Collection.",
 		["groups"] = {
 			ach(11064),	-- Collector's Edition: Baby Winston
 			i(134047),	-- Baby Winston (PET!)
 		},
 	})),
-	n(STARCRAFT_II_WINGS_OF_LIBERTY, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
-		["timeline"] = { "added 3.3.5.12340" },
+	n(STARCRAFT_II_WINGS_OF_LIBERTY, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_5 }, ["u"] = BLIZZARD_BALANCE }, {
+		["description"] = "These rewards are available to anyone who purchases Starcraft 2: Wings of Liberty Collection.",
 		["groups"] = {
 			ach(4824),	-- Collector's Edition: Mini Thor
 			i(56806),	-- Mini Thor (PET!)
 		},
 	})),
-	n(STARCRAFT_II_HEART_OF_THE_SWARM, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
-		["timeline"] = { "added 5.0.4.15913" },
+	n(STARCRAFT_II_HEART_OF_THE_SWARM, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 }, ["u"] = BLIZZARD_BALANCE }, {
+		["description"] = "These rewards are available to anyone who purchases Starcraft 2: Heart of the Swarm Collection.",
 		["groups"] = {
 			ach(7842),	-- Collector's Edition: Baneling
 			i(90177),	-- Baneling (PET!)
 		},
 	})),
-	n(STARCRAFT_II_LEGACY_OF_THE_VOID, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
-		["timeline"] = { "added 6.2.2.20395" },
+	n(STARCRAFT_II_LEGACY_OF_THE_VOID, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 }, ["u"] = BLIZZARD_BALANCE }, {
+		["description"] = "These rewards are available to anyone who purchases Starcraft 2: Legacy of the Void Collection.",
 		["groups"] = {
 			ach(10309),	-- Collector's Edition: Zeradar
 			i(128423),	-- Zeradar (PET!)
 		},
 	})),
-	n(WARCRAFT_III_REFORGED_SPOILS_OF_WAR, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
-		["timeline"] = { "added 8.1.0.28724" },
+	n(WARCRAFT_III_REFORGED_SPOILS_OF_WAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 }, ["u"] = BLIZZARD_BALANCE }, {
+		["description"] = "These rewards are available to anyone who purchases Warcraft 3: Refogred, Spoils of War Edition.",
 		["groups"] = {
 			ach(13196),	-- Meat Marauder
 			i(164571),	-- Meat Wagon (MOUNT!)
 		},
 	})),
-})));
+}));

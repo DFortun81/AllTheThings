@@ -1,6 +1,12 @@
 348459@@@Reawakened Phase-Hunter [Classic]
 372677@@@Kalu'ak Whalebone Glider [Classic]
 394209@@@Festering Emerald Drake [Classic]
+25675@@@Reindeer
+25858@@@Reindeer
+25859@@@Reindeer
+44824@@@Flying Reindeer
+44825@@@Flying Reindeer
+44827@@@Flying Reindeer
 48023@@@Headless Horseman's Mount [Different Speeds]
 48024@@@Headless Horseman's Mount [Different Speeds]
 51617@@@Headless Horseman's Mount [Different Speeds]

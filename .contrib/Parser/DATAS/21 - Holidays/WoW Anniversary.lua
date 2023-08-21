@@ -954,19 +954,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(136925, {	-- Corgi Pup (PET!)
-						["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 200 }},
 					}),
 					i(128506, {	-- Celebration Wand - Gnoll
-						["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
 					}),
 					i(128505, {	-- Celebration Wand - Murloc
-						["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
 					}),
 					i(128510, {	-- Exquisite Costume Set: "Edwin VanCleef"
-						["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 200 }},
 					}),
 					i(128507, {	-- Inflatable Thunderfury, Blessed Blade of the Windseeker
-						["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						["groups"] = {
 							ach(10335),	-- Did Someone Say...?
 						},
@@ -978,19 +978,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(136925, {	-- Corgi Pup (PET!)
-						["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 200 }},
 					}),
 					i(128506, {	-- Celebration Wand - Gnoll
-						["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
 					}),
 					i(128505, {	-- Celebration Wand - Murloc
-						["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
 					}),
 					i(128510, {	-- Exquisite Costume Set: "Edwin VanCleef"
-						["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 200 }},
 					}),
 					i(128507, {	-- Inflatable Thunderfury, Blessed Blade of the Windseeker
-						["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						["groups"] = {
 							ach(10335),	-- Did Someone Say...?
 						},
@@ -1147,16 +1147,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(147885, {	-- Bronze-Tinted Sunglasses
-						["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 200 }},
 					}),
 					i(147883, {	-- Celebration Wand - Quillboar
-						["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
 					}),
 					i(147882, {	-- Celebration Wand - Trogg
-						["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
 					}),
 					i(147884, {	-- Tranquil Mechanical Yeti Costume
-						["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 					}),
 				},
 			}),
@@ -1165,16 +1165,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["coord"] = { 84.6, 25.0, STORMWIND_CITY },
 				["groups"] = {
 					i(147885, {	-- Bronze-Tinted Sunglasses
-						["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 200 }},
 					}),
 					i(147883, {	-- Celebration Wand - Quillboar
-						["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
 					}),
 					i(147882, {	-- Celebration Wand - Trogg
-						["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
 					}),
 					i(147884, {	-- Tranquil Mechanical Yeti Costume
-						["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 					}),
 				},
 			}),
@@ -1187,7 +1187,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(158149, {	-- Overtuned Corgi Goggles (TOY!)
-						["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 200 }},
 					}),
 				},
 			}),
@@ -1196,7 +1196,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(158149, {	-- Overtuned Corgi Goggles (TOY!)
-						["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 200 }},
 					}),
 				},
 			}),
@@ -1460,13 +1460,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								i(172100, {	-- Frostwolf Advisor's Cloak
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 								i(172098, {	-- Frostwolf Legionnaire's Cloak
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 							}),
@@ -1474,13 +1474,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								i(172120, {	-- Frost Runed Headdress
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 								i(172105, {	-- Frostwolf Cloth Belt
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 							}),
@@ -1488,19 +1488,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								i(172124, {	-- Deep Rooted Ring
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 								i(172138, {	-- Don Julio's Band
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 								i(172140, {	-- Don Rodrigo's Band
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 							}),
@@ -1508,13 +1508,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								i(172104, {	-- Frostwolf Leather Belt
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 								i(172128, {	-- Yeti Hide Bracers
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 							}),
@@ -1522,13 +1522,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								i(172103, {	-- Frostwolf Mail Belt
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 								i(172126, {	-- Winteraxe Epaulets
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 							}),
@@ -1536,13 +1536,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								i(172111, {	-- Frostwolf Advisor's Pendant
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 								i(172110, {	-- Frostwolf Legionnaire's Pendant
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 							}),
@@ -1550,13 +1550,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								i(172102, {	-- Frostwolf Plate Belt
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 								i(172127, {	-- Frozen Steel Vambraces
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 							}),
@@ -1564,103 +1564,103 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								i(172122, {	-- Bloodseeker
 									["cost"] = {
 										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 90 },	-- 90x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 90 },
 									},
 								}),
 								i(172125, {	-- Cold Forged Blade
 									["cost"] = {
 										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 40 },	-- 40x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 40 },
 									},
 								}),
 								i(172139, {	-- Cold Forged Hammer
 									["cost"] = {
 										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 40 },	-- 40x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 40 },
 									},
 								}),
 								i(172118, {	-- Frostbite
 									["cost"] = {
 										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 40 },	-- 40x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 40 },
 									},
 								}),
 								i(172114, {	-- Glacial Blade
 									["cost"] = {
 										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 40 },	-- 40x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 40 },
 									},
 								}),
 								i(172121, {	-- Ice Barbed Spear
 									["cost"] = {
 										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 90 },	-- 90x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 90 },
 									},
 								}),
 								i(172133, {	-- Lei of the Lifegiver
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 30 },	-- 30x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 30 },
 									},
 								}),
 								i(172135, {	-- The Immovable Object
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 30 },	-- 30x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 30 },
 									},
 								}),
 								i(172137, {	-- The Lobotomizer
 									["cost"] = {
 										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 40 },	-- 40x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 40 },
 									},
 								}),
 								i(172134, {	-- Therazane's Touch
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 30 },	-- 30x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 30 },
 									},
 								}),
 								i(172136, {	-- The Unstoppable Force
 									["cost"] = {
 										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 90 },	-- 90x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 90 },
 									},
 								}),
 								i(172129, {	-- Tome of Arcane Domination
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 30 },	-- 30x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 30 },
 									},
 								}),
 								i(172130, {	-- Tome of Shadow Force
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 30 },	-- 30x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 30 },
 									},
 								}),
 								i(172132, {	-- Tome of the Fiery Arcana
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 30 },	-- 30x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 30 },
 									},
 								}),
 								i(172131, {	-- Tome of the Ice Lord
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 30 },	-- 30x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 30 },
 									},
 								}),
 								i(172123, {	-- Wand of Biting Cold
 									["cost"] = {
 										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 40 },	-- 40x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 40 },
 									},
 								}),
 								i(172116, {	-- Whiteout Staff
 									["cost"] = {
 										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 90 },	-- 40x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 40 },
 									},
 								}),
 							}),
@@ -1674,13 +1674,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								i(172101, {	-- Stormpike Sage's Cloak
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 								i(172099, {	-- Stormpike Soldier's Cloak
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 							}),
@@ -1688,13 +1688,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								i(172120, {	-- Frost Runed Headdress
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 								i(172109, {	-- Stormpike Cloth Girdle
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 							}),
@@ -1702,19 +1702,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								i(172124, {	-- Deep Rooted Ring
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 								i(172138, {	-- Don Julio's Band
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 								i(172140, {	-- Don Rodrigo's Band
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 							}),
@@ -1722,13 +1722,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								i(172108, {	-- Stormpike Leather Girdle
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 								i(172128, {	-- Yeti Hide Bracers
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 							}),
@@ -1736,13 +1736,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								i(172107, {	-- Stormpike Mail Girdle
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 								i(172126, {	-- Winteraxe Epaulets
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 							}),
@@ -1750,13 +1750,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								i(172127, {	-- Frozen Steel Vambraces
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 								i(172106, {	-- Stormpike Plate Girdle
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 							}),
@@ -1764,13 +1764,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								i(172113, {	-- Stormpike Sage's Pendant
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 								i(172112, {	-- Stormpike Soldier's Pendant
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 20 },
 									},
 								}),
 							}),
@@ -1778,103 +1778,103 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								i(172122, {	-- Bloodseeker
 									["cost"] = {
 										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 90 },	-- 90x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 90 },
 									},
 								}),
 								i(172125, {	-- Cold Forged Blade
 									["cost"] = {
 										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 40 },	-- 40x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 40 },
 									},
 								}),
 								i(172139, {	-- Cold Forged Hammer
 									["cost"] = {
 										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 40 },	-- 40x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 40 },
 									},
 								}),
 								i(172117, {	-- Crackling Staff
 									["cost"] = {
 										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 90 },	-- 90x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 90 },
 									},
 								}),
 								i(172115, {	-- Electrified Dagger
 									["cost"] = {
 										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 40 },	-- 40x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 40 },
 									},
 								}),
 								i(172121, {	-- Ice Barbed Spear
 									["cost"] = {
 										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 90 },	-- 90x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 90 },
 									},
 								}),
 								i(172133, {	-- Lei of the Lifegiver
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 30 },	-- 30x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 30 },
 									},
 								}),
 								i(172119, {	-- Stormstrike Hammer
 									["cost"] = {
 										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 40 },	-- 40x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 40 },
 									},
 								}),
 								i(172135, {	-- The Immovable Object
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 30 },	-- 30x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 30 },
 									},
 								}),
 								i(172137, {	-- The Lobotomizer
 									["cost"] = {
 										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 40 },	-- 40x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 40 },
 									},
 								}),
 								i(172134, {	-- Therazane's Touch
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 30 },	-- 30x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 30 },
 									},
 								}),
 								i(172136, {	-- The Unstoppable Force
 									["cost"] = {
 										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 90 },	-- 90x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 90 },
 									},
 								}),
 								i(172129, {	-- Tome of Arcane Domination
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 30 },	-- 30x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 30 },
 									},
 								}),
 								i(172130, {	-- Tome of Shadow Force
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 30 },	-- 30x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 30 },
 									},
 								}),
 								i(172132, {	-- Tome of the Fiery Arcana
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 30 },	-- 30x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 30 },
 									},
 								}),
 								i(172131, {	-- Tome of the Ice Lord
 									["cost"] = {
 										{ "i", 137642, 1 },	-- 1x  Mark of Honor
-										{ "c", 1166, 30 },	-- 30x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 30 },
 									},
 								}),
 								i(172123, {	-- Wand of Biting Cold
 									["cost"] = {
 										{ "i", 137642, 2 },	-- 2x  Mark of Honor
-										{ "c", 1166, 40 },	-- 40x Timewarped Badge
+										{ "c", TIMEWARPED_BADGE, 40 },
 									},
 								}),
 							}),
@@ -1901,37 +1901,37 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["coord"] = { 50.7, 41.1, CAVERNS_OF_TIME },
 				["groups"] = {
 					i(147885, {	-- Bronze-Tinted Sunglasses
-						["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 200 }},
 					}),
 					i(128506, {	-- Celebration Wand - Gnoll
-						["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
 					}),
 					i(128505, {	-- Celebration Wand - Murloc
-						["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
 					}),
 					i(147883, {	-- Celebration Wand - Quillboar
-						["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
 					}),
 					i(147882, {	-- Celebration Wand - Trogg
-						["cost"] = { { "c", 1166, 25 } },	-- 25x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
 					}),
 					i(136925, {	-- Corgi Pup (PET!)
-						["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 200 }},
 					}),
 					i(128510, {	-- Exquisite Costume Set: "Edwin VanCleef"
-						["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 200 }},
 					}),
 					i(128507, {	-- Inflatable Thunderfury, Blessed Blade of the Windseeker
-						["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 						["groups"] = {
 							ach(10335),	-- Did Someone Say...?
 						},
 					}),
 					i(158149, {	-- Overtuned Corgi Goggles (TOY!)
-						["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 200 }},
 					}),
 					i(147884, {	-- Tranquil Mechanical Yeti Costume
-						["cost"] = { { "c", 1166, 50 } },	-- 50x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 					}),
 				},
 			}),
@@ -1943,7 +1943,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["coord"] = { 50.7, 41.1, CAVERNS_OF_TIME },
 				["groups"] = {
 					i(178514, {	-- Crafted Cloak of War
-						["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 200 }},
 					}),
 				},
 			}),
@@ -1962,7 +1962,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["coord"] = { 50.7, 41.1, CAVERNS_OF_TIME },
 				["groups"] = {
 					i(186556, {	-- Timeless Mechanical Dragonling (PET!)
-						["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 200 }},
 					}),
 				},
 			}),

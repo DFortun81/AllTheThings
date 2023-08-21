@@ -318,7 +318,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						}),
 					},
 				}),
-
 				-------------------------------------------
 				-- DO NOT TOUCH THIS PART OR I KNIFE YOU --
 				----------------LG GOLD -------------------
@@ -327,7 +326,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 				e(2538, {	-- Chrono-Lord Deios and the Infinite Dragonflight
 					["crs"] = { 199000 },	-- Chrono-Lord Deios
 					["g"] = sharedData({
-						["description"] = "This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r\n\n|cFF1EFF0CPossible Item Sources:\nAny Available Raid\nAny Dungeon (including removed, but not revamped)\nEvents such as Timewalking (including removed Events)\nGarrison Token (WoD)\nNever obtainable Items (if its listed in the appearance journal)\nOutdoor Drops (including removed)\nScenario Cache (MoP)\nTorghast|r\n\n|cFFFF0000Impossible Item Sources:\nCrafted Items\nNot listed in the Appearance Journal\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items|r",
+						["description"] = "This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed, but not revamped)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions \nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight Items\nCrafted Items\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",
 					},{
 						i(208061, {	-- Quantum Headpiece
 							["groups"] = {
@@ -460,6 +459,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						i(208111, {	-- Quantum Axe			(1Hand)
 						}),
 						i(208117, {	-- Quantum Bow
+							ig(4474),	-- Ravenwood Bow					(Removed)(Unique)
 						}),
 						i(208118, {	-- Quantum Crossbow
 						}),
@@ -487,6 +487,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							ig(5749),	-- Scythe Axe 						(Removed)(Unique)
 							ig(756),	-- Tunnel Pick 						(Removed)
 							ig(3325),	-- Vile Fin Battle Axe				(Removed)
+							ig(5194),	-- Taskmaster Axe					(Removed)(Unique)(Dungeon)
 							ig(23171),	-- The Axe of Severing				(Removed)
 
 							ig(9425),	-- Pendumlum of Doom				(Very Rare BoE)
@@ -534,12 +535,15 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							ig(7094),	-- Driftwood Branch					(Removed)
 							ig(1539),	-- Gnarled hermit's staff			(Removed)(Unique)
 							ig(2280),	-- Kam's Walking Stick				(Removed)
+							ig(1300),	-- Lesser Staff of the Spire Staff 	(Removed)(Unique)
 							ig(3227),	-- Nightbane Staff 					(Removed)(Unique)
+							ig(2226),	-- Ogremage Staff 					(Removed)(Unique)
 							ig(1473),	-- Riverside Staff					(Removed)
-							ig(880),	-- Staff of Horrors
+							ig(880),	-- Staff of Horrors					(Removed)
 						}),
 						i(208109, {	-- Quantum Sword		(1Hand)
 							ig(8223),	-- Blade of the Basilisk 			(Removed)
+							ig(2065),	-- Rockjaw Blade					(Removed)(Unique)
 						}),
 						i(208122, {	-- Quantum Warglaives
 						}),

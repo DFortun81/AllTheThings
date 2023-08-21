@@ -711,7 +711,6 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["coord"] = { 35.6, 38.4, DREADSCAR_RIFT },
 						["g"] = {
 							mount(232412),	-- Netherlord's Chaotic Wrathsteed (MOUNT!)
-							spell(241851),	-- Netherlord's Chaotic Wrathsteed
 						},
 					})),
 					-- Misc

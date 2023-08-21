@@ -22,4 +22,75 @@ r(280733),	-- Magical Intrusion Dampener
 r(280734),	-- Magical Intrusion Dampener
 
 
-Nothing is Missing in OtherItemDB.lua! Good Work!
+
+
+Missing in OtherItemDB.lua
+
+5.0.3.15890
+r(104298),	-- Charbroiled Tiger Steak
+r(104299),	-- Eternal Blossom Fish
+r(104300),	-- Black Pepper Ribs and Shrimp
+r(104301),	-- Sauteed Carrots
+r(104302),	-- Valley Stir Fry
+r(104303),	-- Sea Mist Rice Noodles
+r(104304),	-- Swirling Mist Soup
+r(104305),	-- Braised Turtle
+r(104306),	-- Mogu Fish Stew
+r(104307),	-- Shrimp Dumplings
+r(104308),	-- Fire Spirit Salmon
+r(104309),	-- Steamed Crab Surprise
+r(104310),	-- Wildfowl Roast
+r(104311),	-- Twin Fish Platter
+r(104312),	-- Chun Tian Spring Rolls
+r(124052),	-- Ginseng Tea
+r(124053),	-- Jade Witch Brew
+r(124054),	-- Mad Brewer's Breakfast
+r(124694),	-- Way of the Grill
+r(125141),	-- Banquet of the Grill
+r(125142),	-- Great Banquet of the Grill
+r(125584),	-- Way of the Wok
+r(125586),	-- Way of the Pot
+r(125587),	-- Way of the Steamer
+r(125588),	-- Way of the Oven
+r(125589),	-- Way of the Brew
+r(125594),	-- Banquet of the Wok
+r(125595),	-- Great Banquet of the Wok
+r(125596),	-- Banquet of the Pot
+r(125597),	-- Great Banquet of the Pot
+r(125598),	-- Banquet of the Steamer
+r(125599),	-- Great Banquet of the Steamer
+r(125600),	-- Banquet of the Oven
+r(125601),	-- Great Banquet of the Oven
+r(125602),	-- Banquet of the Brew
+r(125603),	-- Great Banquet of the Brew
+r(125889),	-- Apprentice Cookbook
+r(125898),	-- Journeyman Cookbook
+6.0.1.18179
+r(126654),	-- Four Senses Brew
+r(126655),	-- Banana-Infused Rum \\ Banana Infused Rum
+r(145305),	-- Seasoned Pomfruit Slices
+r(145307),	-- Spiced Blossom Soup
+r(145309),	-- Farmer's Delight
+r(145310),	-- Stuffed Lushrooms
+r(145311),	-- Fluffy Silkfeather Omelet
+r(158883),	--
+r(158898),	--
+r(158913),	--
+r(161211),	-- Garrison Enchanting
+8.0.1.25902
+r(258965),	-- (TEST) Legion Blacksmithing
+r(264160),	-- (TEST) Legion Engineering
+r(264191),	-- (TEST) Pandaria Engineering
+8.0.1.26734
+r(280282),	-- Heartsbane Hexwurst
+r(280671),	-- Barbaric Iron Hauberk
+8.0.1.26788
+r(280732),	-- Magical Intrusion Dampener
+r(280733),	-- Magical Intrusion Dampener
+r(280734),	-- Magical Intrusion Dampener
+10.0.0.44649
+r(383325),	-- Darkmoon Deck Box: Inferno \\ DNT Test Darkmoon Deckbox: Inferno
+10.0.0.44707
+r(383767),	-- Darkmoon Deck Box: Rime \\ Darkmoon Deck Box: Awakened Chill
+r(383770),	-- Darkmoon Deck Box: Dance \\ Darkmoon Deck Box: Refreshing Dance
+r(383772),	-- Darkmoon Deck Box: Watcher

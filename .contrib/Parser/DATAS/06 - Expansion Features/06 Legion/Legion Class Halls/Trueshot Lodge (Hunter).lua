@@ -747,7 +747,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 						["coord"] = { 42.9, 45.7, TRUESHOT_LODGE },
 						["maps"] = { 877 },	-- Fields of the Eternal Hunt (Scenario Map)
 						["g"] = {
-							i(142227),	-- Huntmaster's Loyal Wolfhawk (MOUNT!)
+							mount(229386),	-- Huntmaster's Loyal Wolfhawk (MOUNT!)
 						},
 					})),
 					-- Misc
