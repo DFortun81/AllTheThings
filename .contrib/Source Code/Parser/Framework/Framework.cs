@@ -3582,6 +3582,7 @@ namespace ATT
                 case "tierID":
                 case "vignetteID":
                 case "visualID":
+                case "zone-text-areaID":
 
                 // metadata parser tags
                 case "_area":

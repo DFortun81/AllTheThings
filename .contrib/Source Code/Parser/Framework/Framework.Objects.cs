@@ -1484,6 +1484,7 @@ end");
                         case "isRaid":
                         case "mapID":
                         case "races":
+                        case "zone-text-areaID":
                             npcData[pair.Key] = pair.Value;
                             break;
 
@@ -1855,6 +1856,7 @@ end");
                     case "questIDA":
                     case "questIDH":
                     case "sqreq":
+                    case "zone-text-areaID":
                         {
                             try
                             {

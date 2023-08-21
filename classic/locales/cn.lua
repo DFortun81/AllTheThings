@@ -78,7 +78,6 @@ for key,value in pairs({
 	["黑翼之巢"] = 287,	-- Blackwing Lair
 	["黑石山"] = 33,	-- Blackrock Mountain
 	["黑石塔"] = 250,	-- Blackrock Spire
-	[DUNGEON_FLOOR_TANARIS18] = 75,	-- Caverns of Time
 	["厄运之槌"] = 234,	-- Dire Maul
 	["矿道地铁"] = 499,	-- Deeprun Tram
 	["诺莫瑞根"] = 226,	-- Gnomeregan

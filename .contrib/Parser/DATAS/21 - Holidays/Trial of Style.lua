@@ -12,7 +12,7 @@ TRIAL_OF_STYLE_HEADER = createHeader({
 });
 local TRIAL_OF_STYLE_TOKEN = 151134;
 root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, bubbleDownSelf({ ["timeline"] = { "added 7.2.5" } }, {
-	["mapID"] = TRIAL_OF_STYLE_MAPID,
+	["zone-text-areaID"] = 8712,
 	["groups"] = {
 		n(REWARDS, {
 			i(TRIAL_OF_STYLE_TOKEN),

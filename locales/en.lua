@@ -1277,8 +1277,6 @@ app.L = {
 
 	-- This is necessary to have because Blizzard does not always have the correct map ID at the time of zone change.
 	["ZONE_TEXT_TO_MAP_ID"] = {
-		["Onyxia's Lair"] = 248,
-		["The Trial of Style"] = -777,
 		["Razorfen Downs"] = 300,
 		[C_Map.GetAreaInfo(1581)] = 291,	-- "The Deadmines" now points to the Deadmines.
 		[C_Map.GetAreaInfo(3217)] = 234,	-- "The Maul" now points to Dire Maul.

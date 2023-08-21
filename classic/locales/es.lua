@@ -12,7 +12,6 @@ for key,value in pairs({
 	["Guarida Alanegra"] = 287,	-- Blackwing Lair
 	["Montaña Roca Negra"] = 33,	-- Blackrock Mountain
 	["Cumbre de Roca Negra"] = 250,	-- Blackrock Spire
-	[DUNGEON_FLOOR_TANARIS18] = 75,	-- Caverns of Time
 	["La Masacre"] = 234,	-- Dire Maul
 	["Tranvía Subterráneo"] = 499,	-- Deeprun Tram
 	["Gnomeregan"] = 226,	-- Gnomeregan

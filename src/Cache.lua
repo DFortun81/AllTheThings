@@ -4,6 +4,7 @@ local appName, app = ...;
 -- Global locals
 local ipairs, tinsert, pairs, rawset, type, wipe
 	= ipairs, tinsert, pairs, rawset, type, wipe;
+local C_Map_GetAreaInfo = C_Map.GetAreaInfo;
 
 -- App locals
 local contains, classIndex, raceIndex, factionID =
@@ -196,6 +197,7 @@ local cacheProviderOrCost = function(group, provider)
 	providerTypeConverters[provider[1]](group, provider[2]);
 end
 
+local nextCustomMapID = -2;
 local uncacheMap = function(group, mapID, field)
 	if mapID then
 		local count = currentMapCounters[mapID];
@@ -400,6 +402,22 @@ local fieldConverters = {
 		for i=1,#value,1 do
 			CacheField(group, "sourceQuestID", value[i]);
 		end
+	end,
+	
+	-- Localization Helpers
+	["zone-text-areaID"] = function(group, value)
+		local mapID = group.mapID;
+		if not mapID then
+			-- Generate a unique NEGATIVE mapID and cache the object to it.
+			mapID = nextCustomMapID;
+			nextCustomMapID = nextCustomMapID - 1;
+			group.mapID = mapID;
+			CacheField(group, "mapID", mapID);
+		end
+		
+		-- Then uses the ZONE_TEXT_TO_MAP_ID localizer to force the minilist to display this as if it was a map file.
+		local name = C_Map_GetAreaInfo(value);
+		if name then app.L.ZONE_TEXT_TO_MAP_ID[name] = mapID; end
 	end,
 };
 

@@ -189,7 +189,8 @@ namespace ATT
                     {
                         // If this is NOT the first field, append a comma.
                         if (fieldCount++ > 0) builder.Append(',');
-                        builder.Append(field).Append('=');
+                        if (field.Contains('-')) builder.Append("[\"").Append(field).Append("\"]=");
+                        else builder.Append(field).Append('=');
 
                         // Append the undetermined object's format to the builder.
                         if (field == "sym" || field == "cost")
