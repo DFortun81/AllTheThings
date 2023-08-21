@@ -7211,7 +7211,7 @@ local createCustomHeader = app.CreateClass("Header", "headerID", {
 		return L["HEADER_NAMES"][t.headerID];
 	end,
 	["icon"] = function(t)
-		return L["HEADER_ICONS"][t.headerID];
+		return L["HEADER_ICONS"][t.headerID] or app.asset("Category_Zones");
 	end,
 	["description"] = function(t)
 		return L["HEADER_DESCRIPTIONS"][t.headerID];
