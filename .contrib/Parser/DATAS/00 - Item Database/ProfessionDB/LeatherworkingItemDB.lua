@@ -442,7 +442,7 @@ i(0, 36079, nil, DRAGONSCALE);	-- Golden Dragonstrike Breastplate
 i(0, 35582, nil, DRAGONSCALE);	-- Netherstrike Belt [REMOVED: 4.0.3]
 i(0, 35584, nil, DRAGONSCALE);	-- Netherstrike Bracers [REMOVED: 4.0.3]
 i(0, 35580, nil, DRAGONSCALE);	-- Netherstrike Breastplate [REMOVED: 4.0.3]
--- #endif
+-- #else
 i(0, 36076);	-- Dragonstrike Leggings
 i(0, 35576);	-- Ebon Netherscale Belt [REMOVED: 4.0.3]
 i(0, 35577);	-- Ebon Netherscale Bracers [REMOVED: 4.0.3]
@@ -451,6 +451,7 @@ i(0, 36079);	-- Golden Dragonstrike Breastplate
 i(0, 35582);	-- Netherstrike Belt [REMOVED: 4.0.3]
 i(0, 35584);	-- Netherstrike Bracers [REMOVED: 4.0.3]
 i(0, 35580);	-- Netherstrike Breastplate [REMOVED: 4.0.3]
+-- #endif
 --- ELEMENTAL ---
 -- #if BEFORE CATA
 i(0, 36074, nil, ELEMENTAL);	-- Blackstorm Leggings
@@ -458,12 +459,13 @@ i(0, 36077, nil, ELEMENTAL);	-- Primalstorm Breastplate
 i(0, 35590, nil, ELEMENTAL);	-- Primalstrike Belt [REMOVED: 4.0.3]
 i(0, 35591, nil, ELEMENTAL);	-- Primalstrike Bracers [REMOVED: 4.0.3]
 i(0, 35589, nil, ELEMENTAL);	-- Primalstrike Vest [REMOVED: 4.0.3]
--- #endif
+-- #else
 i(0, 36074);	-- Blackstorm Leggings
 i(0, 36077);	-- Primalstorm Breastplate
 i(0, 35590);	-- Primalstrike Belt [REMOVED: 4.0.3]
 i(0, 35591);	-- Primalstrike Bracers [REMOVED: 4.0.3]
 i(0, 35589);	-- Primalstrike Vest [REMOVED: 4.0.3]
+-- #endif
 --- TRIBAL ---
 -- #if BEFORE CATA
 i(0, 36078, nil, TRIBAL);	-- Living Crystal Breastplate
@@ -471,12 +473,13 @@ i(0, 36075, nil, TRIBAL);	-- Wildfeather Leggings
 i(0, 35587, nil, TRIBAL);	-- Windhawk Belt [REMOVED: 4.0.3]
 i(0, 35588, nil, TRIBAL);	-- Windhawk Bracers [REMOVED: 4.0.3]
 i(0, 35585, nil, TRIBAL);	-- Windhawk Hauberk [REMOVED: 4.0.3]
--- #endif
+-- #else
 i(0, 36078);	-- Living Crystal Breastplate
 i(0, 36075);	-- Wildfeather Leggings
 i(0, 35587);	-- Windhawk Belt [REMOVED: 4.0.3]
 i(0, 35588);	-- Windhawk Bracers [REMOVED: 4.0.3]
 i(0, 35585);	-- Windhawk Hauberk [REMOVED: 4.0.3]
+-- #endif
 
 ------------------
 -- PATCH 2.1.0 --

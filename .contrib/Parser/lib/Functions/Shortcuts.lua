@@ -1494,7 +1494,7 @@ local ItemRecipeHelper = function(itemID, recipeID, unobtainStatus, requireSkill
 	elseif originalRequireSkill ~= requireSkill then
 		-- Replace it, but also show a warning.
 		if itemID == 0 then
-			print("Recipe requireSkill changed", originalRequireSkill, ">", requireSkill);
+			print("Recipe", recipeID, "requireSkill changed", originalRequireSkill, ">", requireSkill);
 		else
 			print("Item", itemID, "requireSkill changed", originalRequireSkill, ">", requireSkill);
 		end
