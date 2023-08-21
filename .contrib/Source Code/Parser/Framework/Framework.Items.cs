@@ -149,9 +149,8 @@ namespace ATT
             /// </summary>
             /// <param name="itemID">The Item ID.</param>
             /// <returns>A dictionary representing the item.</returns>
-            public static IDictionary<string, object> Get(IDictionary<string, object> data)
+            private static IDictionary<string, object> _Get(decimal itemID)
             {
-                decimal itemID = GetSpecificItemID(data);
                 var item = GetNull(itemID);
                 // Attempt to get an existing specific item dictionary
                 if (item != null)
@@ -167,6 +166,20 @@ namespace ATT
                 {
                     { "itemID", itemID }
                 };
+            }
+
+            /// <summary>
+            /// Get the Item which matches the data
+            /// If a matching Item does not exist and the data contains an 'itemID', one will be created.
+            /// </summary>
+            /// <param name="itemID">The Item ID.</param>
+            /// <returns>A dictionary representing the item.</returns>
+            public static IDictionary<string, object> Get(IDictionary<string, object> data)
+            {
+                decimal itemID = GetSpecificItemID(data);
+                decimal truncatedItemID = decimal.Truncate(itemID);
+                if (truncatedItemID != itemID) _Get(truncatedItemID);   // This ensures that conditional item DB can properly write its data regarding the base itemID.
+                return _Get(itemID);
             }
 
             /// <summary>
@@ -552,9 +565,12 @@ namespace ATT
 
                     // Conditional Fields -- only merge if NOT Location Sourced data
                     // there are situations where the same Item is BoP in some places and BoE in others...
+                    // CRIEVE NOTE: I'm not sure what the above is trying to fix, if you know, please let me know and we can solve it a different way.
+                    // With the if statement is left intact, it doesn't allow the ItemDBConditional to properly assign the b field for Heirlooms and stuff.
+                    // There are other cases as well, but that one is the most problematic.
                     case "b":
-                        if (!item.ContainsKey(field))
-                        {
+                        //if (!item.ContainsKey(field))
+                        //{
                             var b = Convert.ToInt64(value);
                             // any 0 value should simply be removed for cleanliness
                             if (b == 0)
@@ -566,7 +582,7 @@ namespace ATT
                             {
                                 item[field] = b;
                             }
-                        }
+                        //}
                         break;
                     case "e":
                         if (!ProcessingMergeData) break;
@@ -900,17 +916,33 @@ namespace ATT
                 var item = GetNull(specificItemID);
                 if (item == null)
                 {
-                    // only report if this is a specific ItemID...
-                    if (decimal.Truncate(specificItemID) != specificItemID)
+                    // If we couldn't find the exact item information, let's see if we should merge the object anyways based on the filter.
+                    // Recipes should always merge since they discard their mod/bonus IDs. TODO: Investigate if other filter IDs should as well?
+                    long truncatedItemID = (long)specificItemID;
+                    item = GetNull(truncatedItemID);
+                    if (item == null)
                     {
                         // Report that the specific item is missing.
                         Log($"Could not find item #{specificItemID} in the database", data);
+                        return;
                     }
-                    return;
+                    else if (!(item.ContainsKey("recipeID") || (item.TryGetValue("f", out long f) && f == 200)))
+                    {
+                        // If the item is NOT a recipe, then yeah, return immediately.
+                        Log($"Could not find non-recipe item #{specificItemID} in the database", data);
+                        return;
+                    }
+                    else
+                    {
+                        // Yeah, it's a recipe. Merge that shit! Fuck your modID/bonusID shenanigans!
+                        MergeInto(truncatedItemID, item, data);
+                    }
                 }
-
-                // Merge the specific item with the data dictionary.
-                MergeInto(specificItemID, item, data);
+                else
+                {
+                    // Merge the specific item with the data dictionary.
+                    MergeInto(specificItemID, item, data);
+                }
             }
 
             /// <summary>
@@ -1045,11 +1077,11 @@ namespace ATT
                 }
 
                 data.TryGetValue("itemID", out decimal itemID);
-                data.TryGetValue("modID", out long modID);
-                data.TryGetValue("bonusID", out long bonusID);
-
                 if (itemID == 0)
                     return 0;
+
+                data.TryGetValue("modID", out long modID);
+                data.TryGetValue("bonusID", out long bonusID);
 
                 modItemID = GetSpecificItemID(itemID, modID, bonusID);
                 data["_modItemID"] = modItemID;

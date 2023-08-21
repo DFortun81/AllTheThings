@@ -6332,7 +6332,7 @@ app.CreateItem = app.CreateClass("Item", "itemID", itemFields,
 -- No difference between an item and an heirloom in classic, yet.
 app.CreateHeirloom = function(id, t)
 	t = app.CreateItem(id, t);
-	t.b = 2;
+	--t.b = 2;
 	return t;
 end
 

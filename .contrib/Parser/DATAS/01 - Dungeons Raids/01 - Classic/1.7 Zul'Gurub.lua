@@ -1235,6 +1235,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 				["groups"] = {
 					i(19727, {	-- Blood Scythe
 						["requireSkill"] = HERBALISM,
+						["b"] = 1,
 					}),
 					i(19821),	-- Punctured Voodoo Doll [Druid]
 					i(19816),	-- Punctured Voodoo Doll [Hunter]

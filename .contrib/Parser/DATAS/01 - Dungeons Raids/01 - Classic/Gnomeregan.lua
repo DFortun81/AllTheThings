@@ -713,7 +713,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(9282),	-- Blue Punch Card
 					i(14639, {	-- Schematic: Minor Recombobulator
 						["description"] = "If you are an Engineer, you will also get these plans by turning in the Yellow Punch Card.",
-						["requireSkill"] = ENGINEERING,
 					}),
 				},
 			}),
@@ -760,7 +759,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(4413, {	-- Schematic: Discombobulator Ray
 						["description"] = "If you are an Engineer and have a 'Security DELTA Access Card', you will also get these plans when you turn in your Red Punch Card.",
 						["cost"] = { { "i", 9327, 1 } },	-- Security DELTA Data Access Card
-						["requireSkill"] = ENGINEERING,
 					}),
 				},
 			}),

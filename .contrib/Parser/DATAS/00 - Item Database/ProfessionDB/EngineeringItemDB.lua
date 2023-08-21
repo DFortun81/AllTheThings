@@ -8,8 +8,10 @@ i(18661, 23129, nil, GNOMISH_ENGINEER);		-- Schematic: World Enlarger
 -- Goblin Engineering
 i(18653, 23078, nil, GOBLIN_ENGINEER);		-- Schematic: Goblin Jumper Cables XL
 
-
+-- TODO:
 i(11827, 15633);	-- Schematic: Lil' Smoky
+i(4413, 3959);	-- Schematic: Discombobulator Ray
+i(14639, 3952);	-- Schematic: Minor Recombobulator
 
 ------------------
 -- PATCH 10.0.0 --

@@ -1773,6 +1773,31 @@ namespace ATT
             if (data.TryGetValue("f", out long f))
             {
                 FILTERS_WITH_REFERENCES[f] = true;
+
+                /*
+                if (data.TryGetValue("requireSkill", out long  requiredSkill))
+                {
+                    // if this data has a recipeID, cache the information
+                    if (!(data.TryGetValue("recipeID", out long recipeID) || f == 200))
+                    {
+                        if (data.TryGetValue("itemID", out long itemID))
+                        {
+                            long b = 0;
+                            if (!data.TryGetValue("b", out b) || b != 1)
+                            {
+                                Console.Write("BoE/Unbound Item (");
+                                Console.Write(b);
+                                Console.Write(") marked as requiring a profession, but not being a recipe: ");
+                                Console.Write(itemID);
+                                Console.Write(" (");
+                                Console.Write(requiredSkill);
+                                Console.WriteLine(")");
+                                Console.WriteLine("This is going to cause an issue with folks seeing it in the list when they should.");
+                            }
+                        }
+                    }
+                }
+                */
             }
 
             // clean up any Parser metadata tags
