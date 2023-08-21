@@ -4664,7 +4664,7 @@ else
 				app.IgnoredReputationsForAchievements = ignored;
 			end
 			for factionID,g in pairs(SearchForFieldContainer("factionID")) do
-				if not ignored[factionID] and g[1].standing == 8 then
+				if not ignored[factionID] and #g > 0 and g[1].standing == 8 then
 					count = count + 1;
 				end
 			end
