@@ -1485,6 +1485,7 @@ end");
                         case "mapID":
                         case "races":
                         case "zone-text-areaID":
+                        case "zone-text-areas":
                             npcData[pair.Key] = pair.Value;
                             break;
 
@@ -1935,6 +1936,7 @@ end");
                     case "qgs":
                     case "crs":
                     case "titleIDs":
+                    case "zone-text-areas":
                         {
                             MergeIntegerArrayData(item, field, value);
                             break;

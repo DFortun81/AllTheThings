@@ -19,64 +19,6 @@ local OnTooltipForEverlook = [[function(t)
 		GameTooltip:AddLine(" * PROTIP: Ratchet is faster.", 1, 1, 1);
 	end
 end]];
-local OnTooltipForTimbermawHold = [[function(t)
-	local reputation = t.reputation;
-	if reputation < 42000 then
-		local isHuman = _.RaceIndex == 1;
-		-- #if BEFORE CATA
-		if reputation >= ]] .. NEUTRAL .. [[ then
-			if not t.deadwood then
-				local f = _.SearchForField("questID", 8470);
-				if f and #f > 0 then t.deadwood = f[1]; end
-			end
-			if not t.winterfall then
-				local f = _.SearchForField("questID", 8471);
-				if f and #f > 0 then t.winterfall = f[1]; end
-			end
-			if not t.deadwood.collected then GameTooltip:AddLine("Complete 'Deadwood Ritual Totem'.", 1, 1, 1); end
-			if not t.winterfall.collected then GameTooltip:AddLine("Complete 'Winterfall Ritual Totem'.", 1, 1, 1); end
-		end
-		-- #endif
-		-- #if AFTER CATA
-		local repPerKill = isHuman and 22 or 20;
-		local x, n = math.ceil((42000 - t.reputation) / repPerKill), math.ceil(84000 / repPerKill);
-		GameTooltip:AddDoubleLine("Kill Deadwood or Winterfall Furbolgs", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		-- #elseif AFTER TBC
-		if reputation < ]] .. REVERED .. [[ then
-			local repPerKill = isHuman and 11 or 10;
-			local x, n = math.ceil((]] .. REVERED .. [[ - t.reputation) / repPerKill), math.ceil(]] .. (REVERED + 42000) .. [[ / repPerKill);
-			GameTooltip:AddDoubleLine("Kill Deadwood or Winterfall Furbolgs (Stops at Revered)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		end
-		-- #else
-		if reputation < ]] .. HONORED .. [[ then
-			local repPerKill = isHuman and 5.5 or 5;
-			local x, n = math.ceil((]] .. HONORED .. [[ - t.reputation) / repPerKill), math.ceil(]] .. (HONORED + 42000) .. [[ / repPerKill);
-			GameTooltip:AddDoubleLine("Kill Deadwood or Winterfall Furbolgs (Stops at Honored)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		end
-		-- #endif
-		-- #if AFTER CATA
-		local repPerTurnIn = isHuman and 2200 or 2000;
-		-- #elseif AFTER WRATH
-		local repPerTurnIn = isHuman and 330 or 300;
-		-- #elseif AFTER TBC
-		local repPerTurnIn = isHuman and 165 or 150;
-		-- #else
-		local repPerTurnIn = isHuman and 55 or 50;
-		-- #endif
-		local x, n = math.ceil((42000 - t.reputation) / repPerTurnIn), math.ceil(84000 / repPerTurnIn);
-		GameTooltip:AddDoubleLine("Turn in Deadwood Feathers (x5) in Felwood", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		GameTooltip:AddDoubleLine("Turn in Winterfall Beads (x5) in Winterspring", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		local remaining = ((x * 5) - GetItemCount(21383, true) - GetItemCount(21377, true));
-		if remaining > 0 then GameTooltip:AddLine("You need " .. remaining .. " more feathers/beads for Exalted.", 1, 1, 0); end
-		-- #if BEFORE CATA
-		-- #if BEFORE TBC
-		if reputation < ]] .. HONORED .. [[ then GameTooltip:AddLine("PROTIP: Do NOT turn in the totems or feathers until after Honored!", 1, 0.2, 0.2); end
-		-- #else
-		if reputation < ]] .. REVERED .. [[ then GameTooltip:AddLine("PROTIP: Do NOT turn in the totems or feathers until after Revered!", 1, 0.2, 0.2); end
-		-- #endif
-		-- #endif
-	end
-end]];
 -- #if BEFORE CATA
 -- Crieve NOTE: This is done by completing the 'They Grow Up So Fast' quest for Cata+.
 local OnTooltipForWintersaberTrainers = [[function(t)
@@ -203,12 +145,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Explore Winterspring, revealing the covered areas of the world map.",
 					-- #endif
 				}),
-				achWithRep(944, 576, {	-- They Love Me In That Tunnel
-					-- #if BEFORE WRATH
-					["description"] = "Raise your reputation with Timbermaw Hold to Exalted.",
-					-- #endif
-					["maps"] = { FELWOOD },
-				}),
 				-- #if AFTER CATA
 				ach(3356, {	-- Winterspring Frostsaber
 					["provider"] = { "i", 13086 },	-- Reins of the Winterspring Frostsaber
@@ -306,10 +242,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
 					["OnTooltip"] = OnTooltipForEverlook,
 					["maps"] = { TANARIS, THE_BARRENS },
-				}),
-				faction(576, {	-- Timbermaw Hold
-					["OnTooltip"] = OnTooltipForTimbermawHold,
-					["maps"] = { FELWOOD },
 				}),
 				faction(589, {	-- Wintersaber Trainers
 					["icon"] = "Interface\\Icons\\ability_mount_pinktiger",
@@ -503,17 +435,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(15778),	-- Mechanical Yeti
 					},
 				}),
-				q(8469, {	-- Beads for Salfa
-					["qg"] = 11556,	-- Salfa
-					["sourceQuest"] = 8464,	-- Winterfall Activity
-					["coord"] = { 27.8, 34.6, WINTERSPRING },
-					["maxReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
-					["minReputation"] = { 576, NEUTRAL },	-- Timbermaw Hold, Neutral.
-					["cost"] = { { "i", 21383, 5 } },	-- Winterfall Spirit Beads
-					["timeline"] = { "removed 4.0.3" },
-					["repeatable"] = true,
-					["lvl"] = 50,
-				}),
 				q(28614, {	-- Bearzerker
 					["qg"] = 48722,	-- Burndl
 					["coord"] = { 65.3, 46.1, WINTERSPRING },
@@ -693,13 +614,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
 					},
-				}),
-				q(28524, {	-- Delivery for Donova
-					["qg"] = 11556,	-- Salfa
-					["coord"] = { 21.0, 46.1, WINTERSPRING },
-					["minReputation"] = { 576, NEUTRAL },	-- Timbermaw Hold, Neutral.
-					["timeline"] = { "added 4.0.3.13277" },
-					["isBreadcrumb"] = true,
 				}),
 				q(28535, {	-- Descendants of the High Elves
 					["qg"] = 48659,	-- Quel'dorei Spirit
@@ -1085,16 +999,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 					},
-				}),
-				q(28523, {	-- More Beads for Salfa
-					["qg"] = 11556,	-- Salfa
-					["sourceQuest"] = 28522,	-- Winterfall Activity
-					["coord"] = { 21.0, 46.1, WINTERSPRING },
-					["maxReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
-					["minReputation"] = { 576, NEUTRAL },	-- Timbermaw Hold, Neutral.
-					["cost"] = { { "i", 21383, 5 } },	-- Winterfall Spirit Beads
-					["timeline"] = { "added 4.0.3.13277" },
-					["repeatable"] = true,
 				}),
 				q(28467, {	-- Mystery Goo
 					["provider"] = { "o", 207179 },	-- Winterfall Cauldron
@@ -1815,43 +1719,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(28522, {	-- Winterfall Activity
-					["qg"] = 11556,	-- Salfa
-					["sourceQuest"] = 28521,	-- Speak to Salfa
-					["coord"] = { 21.0, 46.1, WINTERSPRING },
-					["minReputation"] = { 576, NEUTRAL },	-- Timbermaw Hold, Neutral.
-					["timeline"] = { "added 4.0.3.13277" },
-					["cost"] = {{ "i", 21383, 10 }},	-- Winterfall Spirit Beads
-					["groups"] = {
-						i(21318),	-- Earth Warder's Gloves
-						i(21319),	-- Gloves of the Pathfinder
-						i(21320),	-- Vest of the Den Watcher
-						i(21322),	-- Ursa's Embrace
-					},
-				}),
-				q(8464, {	-- Winterfall Activity
-					["qg"] = 11556,	-- Salfa
-					["coord"] = { 27.8, 34.6, WINTERSPRING },
-					["minReputation"] = { 576, NEUTRAL },	-- Timbermaw Hold, Neutral.
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 45,
-					["groups"] = {
-						objective(1, {	-- 0/8 Winterfall Shaman slain
-							["provider"] = { "n", 7439 },	-- Winterfall Shaman
-						}),
-						objective(2, {	-- 0/8 Winterfall Den Watcher slain
-							["provider"] = { "n", 7440 },	-- Winterfall Den Watcher
-						}),
-						objective(3, {	-- 0/8 Winterfall Ursa slain
-							["provider"] = { "n", 7438 },	-- Winterfall Ursa
-						}),
-						i(21318),	-- Earth Warder's Gloves
-						i(21319),	-- Gloves of the Pathfinder
-						i(21320),	-- Vest of the Den Watcher
-						i(21322),	-- Ursa's Embrace
-					},
-				}),
 				q(5083, {	-- Winterfall Firewater
 					["provider"] = { "i", 12771 },	-- Empty Firewater Flask
 					["timeline"] = { "removed 4.0.3" },
@@ -1883,21 +1750,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "n", 7438 },	-- Winterfall Ursa
 						}),
 					},
-				}),
-				q(8471, {	-- Winterfall Ritual Totem
-					["provider"] = { "i", 20742 },	-- Winterfall Ritual Totem
-					["minReputation"] = { 576, NEUTRAL },	-- Timbermaw Hold
-					["timeline"] = { "removed 4.0.3" },
-					["crs"] = {
-						10738,	-- High Chief Winterfall
-						7440,	-- Winterfall Den Watcher
-						7442,	-- Winterfall Pathfinder
-						10916,	-- Winterfall Runner
-						7439,	-- Winterfall Shaman
-						7441,	-- Winterfall Totemic
-						7438,	-- Winterfall Ursa
-					},
-					["lvl"] = 50,
 				}),
 				q(28469, {	-- Winterfall Runners
 					["qg"] = 9298,	-- Donova Snowden

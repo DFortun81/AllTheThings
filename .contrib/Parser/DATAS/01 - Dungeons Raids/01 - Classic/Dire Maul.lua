@@ -125,6 +125,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 		-- #if BEFORE MOP
 		["lore"] = "Dire Maul is a three-wing instance found in north-central Feralas. It was once a proud Highborne city called Eldre'Thalas, but now lies in ruins, overrun by ogres, satyrs, and undead. Only a tiny remnant of the original Highborne population remains in the form of a murderous sect called the Shen'dralar.",
 		-- #endif
+		["zone-text-areas"] = {
+			3217,	-- "The Maul" now points to Dire Maul.
+			-- #if AFTER CATA
+			-- This areaID doesn't exist until Cataclysm!
+			4992,	-- "Broken Commons" now points to Dire Maul.
+			-- #endif
+		},
 		["mapID"] = DIRE_MAUL,
 		["lvl"] = lvlsquish(44, 44, 15),
 		["groups"] = {

@@ -843,64 +843,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(28338, {	-- Deadwood of the North
-					["qg"] = 15395,	-- Nafien
-					["sourceQuests"] = {
-						28392,	-- The Timbermaw Tribe
-						28373,	-- Timbermaw Hold
-					},
-					["coord"] = { 64.0, 10.3, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
-					["groups"] = {
-						i(21317),	-- Helm of the Pathfinder
-						i(21316),	-- Leggings of the Ursa
-					},
-				}),
-				q(8461, {	-- Deadwood of the North
-					["qg"] = 15395,	-- Nafien
-					["coord"] = { 64.8, 8.2, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
-					["lvl"] = 45,
-					["groups"] = {
-						i(21317),	-- Helm of the Pathfinder
-						i(21316),	-- Leggings of the Ursa
-					},
-				}),
-				q(8470, {	-- Deadwood Ritual Totem
-					["provider"] = { "i", 20741 },	-- Deadwood Ritual Totem
-					["minReputation"] = { 576, NEUTRAL },	-- Timbermaw Hold, Neutral.
-					["crs"] = {
-						7157,	-- Deadwood Avenger
-						7156,	-- Deadwood Den Watcher
-						7158,	-- Deadwood Shaman
-					},
-					["lvl"] = lvlsquish(45, 45, 15),
-				}),
 				q(28261, {	-- Deceivers In Our Midst
 					["qg"] = 47923,	-- Feronas Sindweller
 					["sourceQuest"] = 28257,	-- The Fall of Tichondrius
 					["coord"] = { 45.5, 20.1, FELWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
-				}),
-				q(28366, {	-- Disarming Bears
-					["qg"] = 15395,	-- Nafien
-					["sourceQuest"] = 28392,	-- The Timbermaw Tribe
-					["coord"] = { 64.0, 10.3, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
-					["groups"] = {
-						i(65343, {	-- Timbermaw Breastplate
-							["timeline"] = { "added 4.0.3.13277" },
-						}),
-						i(65294, {	-- Timbermaw Bracers
-							["timeline"] = { "added 4.0.3.13277" },
-						}),
-						i(65313, {	-- Timbermaw Leggings
-							["timeline"] = { "added 4.0.3.13277" },
-						}),
-						i(65332, {	-- Timbermaw Boots
-							["timeline"] = { "added 4.0.3.13277" },
-						}),
-					},
 				}),
 				q(28000, {	-- Do the Imp-Possible
 					["qg"] = 47341,	-- Arcanist Delaris
@@ -999,38 +946,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["cost"] = {{ "i", 21377, 5 }},	-- Deadwood Headdress Feather
 					["repeatable"] = true,
-				}),
-				q(8466, {	-- Feathers for Grazle
-					["qg"] = 11554,	-- Grazle
-					["sourceQuest"] = 8460,	-- Timbermaw Ally
-					["coord"] = { 50.9, 85.0, FELWOOD },
-					["maxReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
-					["timeline"] = { "removed 4.0.3" },
-					["cost"] = {{ "i", 21377, 5 }},	-- Deadwood Headdress Feather
-					["repeatable"] = true,
-					["lvl"] = 45,
-				}),
-				q(28395, {	-- Feathers for Nafien
-					["qg"] = 15395,	-- Nafien
-					["sourceQuests"] = {
-						28338,	-- Deadwood of the North
-						28366,	-- Disarming Bears
-					},
-					["coord"] = { 64.0, 10.3, FELWOOD },
-					["maxReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
-					["timeline"] = { "added 4.0.3.13277" },
-					["cost"] = {{ "i", 21377, 5 }},	-- Deadwood Headdress Feather
-					["repeatable"] = true,
-				}),
-				q(8467, {	-- Feathers for Nafien
-					["qg"] = 15395,	-- Nafien
-					["sourceQuest"] = 8460,	-- Timbermaw Ally
-					["coord"] = { 64.8, 8.2, FELWOOD },
-					["maxReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
-					["timeline"] = { "removed 4.0.3" },
-					["cost"] = {{ "i", 21377, 5 }},	-- Deadwood Headdress Feather
-					["repeatable"] = true,
-					["lvl"] = 45,
 				}),
 				q(28342, {	-- Fel To Pieces
 					["qg"] = 48339,	-- Elessa Starbreeze
@@ -1471,21 +1386,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(6031, {	-- Runecloth
-					["qg"] = 11557,	-- Meilosh
-					-- #if AFTER CATA
-					["coord"] = { 64.8, 5.2, FELWOOD },
-					-- #else
-					["coord"] = { 65.6, 2.8, FELWOOD },
-					-- #endif
-					["minReputation"] = { 576, FRIENDLY },	-- Timbermaw Hold, Friendly.
-					["cost"] = {{ "i", 14047, 30 }},	-- Runecloth
-					["lvl"] = lvlsquish(40, 40, 15),
-					["groups"] = {
-						i(15822),	-- Shadowskin Spaulders
-						i(15823),	-- Bricksteel Gauntlets
-					},
-				}),
 				q(28360, {	-- Running Their Course
 					["qg"] = 48459,	-- Tender Puregrove
 					["sourceQuest"] = 28306,	-- Whisperwind Grove
@@ -1503,21 +1403,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 28100,	-- A Talking Totem
 					["coord"] = { 51.4, 83.7, FELWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
-				}),
-				q(6032, {	-- Sacred Cloth
-					["qg"] = 11557,	-- Meilosh
-					-- #if AFTER CATA
-					["coord"] = { 64.8, 5.2, FELWOOD },
-					-- #else
-					["coord"] = { 65.6, 2.8, FELWOOD },
-					-- #endif
-					["minReputation"] = { 576, FRIENDLY },	-- Timbermaw Hold, Friendly.
-					["cost"] = {{ "i", 14342, 2 }},	-- Mooncloth
-					["requireSkill"] = TAILORING,
-					["lvl"] = lvlsquish(40, 40, 15),
-					["groups"] = {
-						recipe(19435),	-- Mooncloth Boots
-					},
 				}),
 				q(5886, {	-- Salve via Disenchanting (1/2)
 					["qg"] = 9528,	-- Arathandris Silversky
@@ -1934,39 +1819,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(8462, {	-- Speak to Nafien
-					["qg"] = 11554,	-- Grazle
-					["sourceQuest"] = 8460,	-- Timbermaw Ally
-					["coord"] = { 50.9, 85.0, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
-					["lvl"] = 45,
-				}),
-				q(28521, {	-- Speak to Salfa
-					["qg"] = 15395,	-- Nafien
-					["sourceQuests"] = {
-						28338,	-- Deadwood of the North
-						28366,	-- Disarming Bears
-						28364,	-- The Chieftain's Key
-					},
-					["coord"] = { 64.0, 10.4, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
-					["isBreadcrumb"] = true,
-				}),
-				q(8465, {	-- Speak to Salfa
-					["qg"] = 15395,	-- Nafien
-					["sourceQuest"] = 8461,	-- Deadwood of the North
-					["coord"] = { 64.8, 8.2, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
-					["lvl"] = 45,
-				}),
 				q(28361, {	-- Squirrely Clean
 					["qg"] = 48459,	-- Tender Puregrove
 					["coord"] = { 43.3, 30.4, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
-				}),
-				q(28362, {	-- Stupid Drizle!
-					["qg"] = 48461,	-- Ferli
-					["coord"] = { 64.1, 10.3, FELWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
 				q(28357, {	-- Take it to the Tree
@@ -1999,23 +1854,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 45,
 				},
-				q(28364, {	-- The Chieftain's Key
-					["qg"] = 47556,	-- Drizle
-					["sourceQuest"] = 28362,	-- Stupid Drizle!
-					["coord"] = { 60.5, 9.5, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
-					["groups"] = {
-						i(65293, {	-- Leggings of Mischief
-							["timeline"] = { "added 4.0.3.13277" },
-						}),
-						i(65312, {	-- Vest of Sobbing
-							["timeline"] = { "added 4.0.3.13277" },
-						}),
-						i(65331, {	-- Bloodmaw's Belt
-							["timeline"] = { "added 4.0.3.13277" },
-						}),
-					},
-				}),
 				q(28359, {	-- The Core of Kroshius
 					["qg"] = 48349,	-- Hurak Wildhorn
 					["coord"] = { 44.0, 27.8, FELWOOD },
@@ -2157,26 +1995,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(8481, {	-- The Root of All Evil
-					["qg"] = 11555,	-- Gorn One Eye
-					-- #if AFTER CATA
-					["coord"] = { 64.4, 5.1, FELWOOD },
-					-- #else
-					["coord"] = { 65.2, 2.6, FELWOOD },
-					-- #endif
-					["minReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
-					["maps"] = { WINTERSPRING },
-					["lvl"] = lvlsquish(45, 45, 15),
-					["groups"] = {
-						objective(1, {	-- 0/1 Essence of Xandivious
-							["provider"] = { "i", 21145 },	-- Essence of Xandivious
-							["coord"] = { 68.0, 37.6, WINTERSPRING },
-							["cost"] = { { "i", 21144, 1 } },	-- Demon Summoning Torch
-							["cr"] = 15623,	-- Xandivious
-						}),
-						i(21326),	-- Defender of the Timbermaw
-					},
-				}),
 				q(28337, {	-- The Shredders of Irontree
 					["qg"] = 48493,	-- Alton Redding
 					["sourceQuest"] = 28384,	-- Into the Clearing
@@ -2235,29 +2053,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28220,	-- Seeking Soil
 					},
 					["timeline"] = { "added 4.0.3.13277" },
-				}),
-				q(8460, {	-- Timbermaw Ally
-					["qg"] = 11554,	-- Grazle
-					["altQuests"] = { 6131 },	-- Timbermaw Ally (old version, deprecated)
-					["coord"] = { 50.9, 85.0, FELWOOD },
-					["timeline"] = { "removed 4.0.3" },
-					["lvl"] = 45,
-					["groups"] = {
-						i(21311, {	-- Earth Warder's Vest
-							["timeline"] = { "removed 4.0.3" },
-						}),
-						i(21312, {	-- Belt of the Den Watcher
-							["timeline"] = { "removed 4.0.3" },
-						}),
-					},
-				}),
-				q(28373, {	-- Timbermaw Hold
-					["qg"] = 48127,	-- Darla Drilldozer
-					["sourceQuest"] = 28368,	-- Fire in the Hole!
-					["coord"] = { 56.3, 8.1, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
 				}),
 				q(28044, {	-- Touch the Untouchable
 					["qg"] = 47366,	-- Impsy
@@ -2423,14 +2218,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 41.2, 49.9, FELWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
-				}),
-				q(28768, {	-- Winterspring!
-					["qg"] = 15395,	-- Nafien
-					["sourceQuest"] = 28368,	-- Fire in the Hole!	TODO: could be earlier, but was available at this point
-					["coord"] = { 64.0, 10.4, FELWOOD },
-					["timeline"] = { "added 4.0.3.13277" },
-					["isBreadcrumb"] = true,
-					--["description"] = "Only available between level 15 and XX.", TODO: before level squish it was available from level 15 till level 60, now min is 15 but max is unknown
 				}),
 				q(28370, {	-- Wisp-napping
 					["qg"] = 48127,	-- Darla Drilldozer
@@ -2668,43 +2455,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-					},
-				}),
-				n(11555, {	-- Gorn One Eye
-					-- #if AFTER CATA
-					["coord"] = { 64.4, 5.1, FELWOOD },
-					-- #else
-					["coord"] = { 65.2, 2.6, FELWOOD },
-					-- #endif
-					["minReputation"] = { 576, HONORED },	-- Timbermaw Hold, Honored.
-					["groups"] = {
-						i(16768),	-- Furbolg Medicine Pouch
-						i(16769),	-- Furbolg Medicine Totem
-					},
-				}),
-				n(11557, {	-- Meilosh
-					-- #if AFTER CATA
-					["coord"] = { 64.8, 5.2, FELWOOD },
-					-- #else
-					["coord"] = { 65.6, 2.8, FELWOOD },
-					-- #endif
-					["minReputation"] = { 576, NEUTRAL },	-- Timbermaw Hold, Neutral.
-					["groups"] = {
-						applyclassicphase(PHASE_THREE, i(22392)),	-- Formula: Enchant 2H Weapon - Agility (RECIPE!)
-						applyclassicphase(PHASE_THREE, i(19445)),	-- Formula: Enchant Weapon - Agility (RECIPE!)
-						applyclassicphase(PHASE_THREE, i(19218)),	-- Pattern: Mantle of the Timbermaw
-						applyclassicphase(PHASE_THREE, i(19326)),	-- Pattern: Might of the Timbermaw (RECIPE!)
-						applyclassicphase(PHASE_THREE, i(19327)),	-- Pattern: Timbermaw Brawlers (RECIPE!)
-						i(20253),	-- Pattern: Warbear Harness
-						i(20254),	-- Pattern: Warbear Woolies
-						applyclassicphase(PHASE_THREE, i(19215)),	-- Pattern: Wisdom of the Timbermaw
-						applyclassicphase(PHASE_THREE, i(19202)),	-- Plans: Heavy Timbermaw Belt (RECIPE!)
-						applyclassicphase(PHASE_THREE, i(19204)),	-- Plans: Heavy Timbermaw Boots (RECIPE!)
-						i(13484),	-- Recipe: Transmute Earth to Water (RECIPE!)
-						i(66888, {	-- Stave of Fur and Claw Toy (TOY!)
-							["minReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
-							["timeline"] = { "added 4.0.1.12984" },
-						}),
 					},
 				}),
 				n(2803, {	-- Malygen <General Goods>
