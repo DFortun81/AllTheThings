@@ -209,7 +209,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { WORGEN },
 							["classes"] = { ROGUE },
 							["sourceQuests"] = {
+								-- #if BEFORE 9.0.1
 								14272,	-- Eviscerate
+								-- #endif
 								14269,	-- Someone's Looking for You
 							},
 						}),
