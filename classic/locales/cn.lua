@@ -86,7 +86,6 @@ for key,value in pairs({
 	["剃刀高地"] = 300,	-- Razorfen Downs
 	["剃刀沼泽"] = 301,	-- Razorfen Kraul
 	["安其拉废墟"] = 247,	-- Ruins of Ahn'Qiraj
-	["血色修道院"] = 435,	-- Scarlet Monastery
 	["影牙城堡"] = 310,	-- Shadowfang Keep
 	["斯坦索姆"] = 317,	-- Stratholme
 	["安其拉神庙"] = 320,	-- Temple of Ahn'Qiraj

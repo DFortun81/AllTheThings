@@ -19,7 +19,6 @@ for key,value in pairs({
 	["Sima Ígnea"] = 213,	-- Ragefire Chasm
 	["Horado Rajacieno"] = 301,	-- Razorfen Kraul
 	["Ruinas de Ahn'Qiraj"] = 247,	-- Ruins of Ahn'Qiraj
-	["Monasterio Escarlata"] = 435,	-- Scarlet Monastery
 	["Castillo de Colmillo Oscuro"] = 310,	-- Shadowfang Keep
 	["Stratholme"] = 317,	-- Stratholme
 	["Templo de Ahn'Qiraj"] = 320,	-- Temple of Ahn'Qiraj

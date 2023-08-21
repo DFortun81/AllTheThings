@@ -20,7 +20,6 @@ for key,value in pairs({
 	["Ragefireabgrund"] = 213,	-- Ragefire Chasm
 	["Der Kral von Razorfen"] = 301,	-- Razorfen Kraul
 	["Ruinen von Ahn'Qiraj"] = 247,	-- Ruins of Ahn'Qiraj
-	["Das scharlachrote Kloster"] = 435,	-- Scarlet Monastery
 	["Burg Schattenfang"] = 310,	-- Shadowfang Keep
 	["Strathholme"] = 317,	-- Stratholme
 	["Tempel von Ahn'Qiraj"] = 320,	-- Temple of Ahn'Qiraj

@@ -20,7 +20,6 @@ for key,value in pairs({
 	["Cavernas Ígneas"] = 213,	-- Ragefire Chasm
 	["Urzal dos Tuscos"] = 301,	-- Razorfen Kraul
 	["Ruínas de Ahn'Qiraj"] = 247,	-- Ruins of Ahn'Qiraj
-	["Monastério Escarlate"] = 435,	-- Scarlet Monastery
 	["Bastilha da Presa Negra"] = 310,	-- Shadowfang Keep
 	["Stratholme"] = 317,	-- Stratholme
 	["Templo de Ahn'Qiraj"] = 320,	-- Temple of Ahn'Qiraj

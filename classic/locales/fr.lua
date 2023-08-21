@@ -19,7 +19,6 @@ for key,value in pairs({
 	["Gouffre de Ragefeu"] = 213,	-- Ragefire Chasm
 	["Kraal de Tranchebauge"] = 301,	-- Razorfen Kraul
 	["Ruines d'Ahn'Qiraj"] = 247,	-- Ruins of Ahn'Qiraj
-	["Monastère écarlate"] = 435,	-- Scarlet Monastery
 	["Donjon d'Ombrecroc"] = 310,	-- Shadowfang Keep
 	["Strathholme"] = 317,	-- Stratholme
 	["Temple d'Ahn'Qiraj"] = 320,	-- Temple of Ahn'Qiraj

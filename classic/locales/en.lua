@@ -585,7 +585,6 @@ app.L = {
 		["Ragefire Chasm"] = 213,
 		["Razorfen Kraul"] = 301,
 		["Ruins of Ahn'Qiraj"] = 247,
-		["Scarlet Monastery"] = 435,
 		["Shadowfang Keep"] = 310,
 		["Stratholme"] = 317,
 		["Temple of Ahn'Qiraj"] = 320,

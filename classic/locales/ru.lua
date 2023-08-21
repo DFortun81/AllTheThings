@@ -23,7 +23,6 @@ for key,value in pairs({
 	["Огненная пропасть"] = 213,	-- Ragefire Chasm
 	["Лабиринты Иглошкурых"] = 301,	-- Razorfen Kraul
 	["Руины Ан'Киража"] = 247,	-- Ruins of Ahn'Qiraj
-	["Монастырь Алого ордена"] = 435,	-- Scarlet Monastery
 	["Крепость Темного Клыка"] = 310,	-- Shadowfang Keep
 	["Стратхольм"] = 317,	-- Stratholme
 	["Храм Ан'Киража"] = 320,	-- Temple of Ahn'Qiraj

@@ -19,7 +19,6 @@ for key,value in pairs({
 	["Ragefire Chasm"] = 213,	-- Ragefire Chasm
 	["Razorfen Kraul"] = 301,	-- Razorfen Kraul
 	["Ruins of Ahn'Qiraj"] = 247,	-- Ruins of Ahn'Qiraj
-	["Scarlet Monastery"] = 435,	-- Scarlet Monastery
 	["Shadowfang Keep"] = 310,	-- Shadowfang Keep
 	["Stratholme"] = 317,	-- Stratholme
 	["Temple of Ahn'Qiraj"] = 320,	-- Temple of Ahn'Qiraj

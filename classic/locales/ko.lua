@@ -20,7 +20,6 @@ for key,value in pairs({
 	["성난불길 협곡"] = 213,	-- Ragefire Chasm
 	["가시덩굴 우리"] = 301,	-- Razorfen Kraul
 	["안퀴라즈 폐허"] = 247,	-- Ruins of Ahn'Qiraj
-	["붉은십자군 수도원"] = 435,	-- Scarlet Monastery
 	["그림자송곳니 성채"] = 310,	-- Shadowfang Keep
 	["스트라솔름"] = 317,	-- Stratholme
 	["안퀴라즈 사원"] = 320,	-- Temple of Ahn'Qiraj
