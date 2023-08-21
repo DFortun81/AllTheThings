@@ -23,7 +23,6 @@ for key,value in pairs({
 	["Stratholme"] = 317,	-- Stratholme
 	["Templo de Ahn'Qiraj"] = 320,	-- Temple of Ahn'Qiraj
 	["El Templo de Atal'Hakkar"] = 220,	-- The Temple of Atal'hakkar
-	["Las Mazmorras"] = 225,	-- The Stockade
 	["Uldaman"] = 230,	-- Uldaman
 	["Cuevas de los Lamentos"] = 279,	-- Wailing Caverns
 	["Zul'Farrak"] = 219,	-- Zul'Farrak

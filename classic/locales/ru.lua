@@ -27,7 +27,6 @@ for key,value in pairs({
 	["Стратхольм"] = 317,	-- Stratholme
 	["Храм Ан'Киража"] = 320,	-- Temple of Ahn'Qiraj
 	["Храм Атал'Хаккара"] = 220,	-- The Temple of Atal'hakkar
-	["Тюрьма"] = 225,	-- The Stockade
 	["Ульдаман"] = 230,	-- Uldaman
 	["Пещеры Стенаний"] = 279,	-- Wailing Caverns
 	["Зул'Фаррак"] = 219,	-- Zul'Farrak

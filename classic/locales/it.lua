@@ -25,7 +25,6 @@ for key,value in pairs({
 	["The Deadmines"] = 291,	-- The Deadmines
 	["The Temple of Atal'hakkar"] = 220,	-- The Temple of Atal'hakkar
 	["The Temple of Atal'Hakkar"] = 220,	-- The Temple of Atal'Hakkar
-	["The Stockade"] = 225,	-- The Stockade
 	["Uldaman"] = 230,	-- Uldaman
 	["Wailing Caverns"] = 279,	-- Wailing Caverns
 	["Zul'Farrak"] = 219,	-- Zul'Farrak

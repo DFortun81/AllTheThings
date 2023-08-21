@@ -25,7 +25,6 @@ for key,value in pairs({
 	["Tempel von Ahn'Qiraj"] = 320,	-- Temple of Ahn'Qiraj
 	["Tempel von Atal'Hakkar"] = 220,	-- The Temple of Atal'hakkar
 	["Der Tempel von Atal'Hakkar"] = 220,	-- The Temple of Atal'Hakkar
-	["Das Verlies"] = 225,	-- The Stockade
 	["Uldaman"] = 230,	-- Uldaman
 	["Die Höhlen des Wehklagens"] = 279,	-- Wailing Caverns
 	["Zul'Farrak"] = 219,	-- Zul'Farrak

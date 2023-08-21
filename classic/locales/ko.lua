@@ -24,7 +24,6 @@ for key,value in pairs({
 	["스트라솔름"] = 317,	-- Stratholme
 	["안퀴라즈 사원"] = 320,	-- Temple of Ahn'Qiraj
 	["아탈학카르 신전"] = 220,	-- The Temple of Atal'hakkar
-	["스톰윈드 지하감옥"] = 225,	-- The Stockade
 	["울다만"] = 230,	-- Uldaman
 	["통곡의 동굴"] = 279,	-- Wailing Caverns
 	["줄파락"] = 219,	-- Zul'Farrak

@@ -83,14 +83,12 @@ for key,value in pairs({
 	["熔火之心"] = 232,	-- Molten Core
 	["纳克萨玛斯"] = 162,	-- Naxxramas
 	["怒焰裂谷"] = 213,	-- Ragefire Chasm
-	["剃刀高地"] = 300,	-- Razorfen Downs
 	["剃刀沼泽"] = 301,	-- Razorfen Kraul
 	["安其拉废墟"] = 247,	-- Ruins of Ahn'Qiraj
 	["影牙城堡"] = 310,	-- Shadowfang Keep
 	["斯坦索姆"] = 317,	-- Stratholme
 	["安其拉神庙"] = 320,	-- Temple of Ahn'Qiraj
 	["阿塔哈卡神庙"] = 220,	-- The Temple of Atal'hakkar
-	["监狱"] = 225,	-- The Stockade
 	["奥达曼"] = 230,	-- Uldaman
 	["哀嚎洞穴"] = 279,	-- Wailing Caverns
 	["祖尔法拉克"] = 219,	-- Zul'Farrak
