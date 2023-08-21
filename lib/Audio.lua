@@ -114,7 +114,7 @@ local function PlayAudio(soundType, setting)
 					SoundDelays[soundType] = now + 1;
 					local soundFile = targetAudio[math.random(1, audioCount)];
 					if soundFile then
-						PlaySoundFile(soundFile, app.Settings:GetTooltipSetting("Channel"));
+						(type(soundFile) == "string" and PlaySoundFile or PlaySound)(soundFile, app.Settings:GetTooltipSetting("Channel"));
 					end
 				end
 			end
