@@ -366,7 +366,11 @@ root(ROOTS.Professions, prof(MINING, {
 			},
 		}),
 		header(HEADERS.Spell, 184490, {	-- Living Leystone [Rank 3]
-			["crs"] = { 104877 },	-- Leystone Basilisk
+			["description"] = "Best spot is in Valsharah during the 'Leystone Basilisks' World Quest.",
+			["crs"] = { 
+				{ 104877 },	-- Leystone Basilisk (Mining Proc)
+				{ 103514 },	-- Leystone Basilisk (WQ Valsharah)
+			},
 			["maps"] = {
 				AZSUNA,
 				SURAMAR,
