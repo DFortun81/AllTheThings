@@ -823,7 +823,7 @@ BFA_BLACKSMITHING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] =
 		r(282868, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Deckpounder [Rank 1]
 		r(282859, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Polearm [Rank 1]
 		r(282862, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Shanker [Rank 1]
-		r(282878, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Shield [Rank 1]
+		r(282876, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Shield [Rank 1]
 		r(282865, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Spellblade [Rank 1]
 		r(253156),	-- Stormsteel Dagger [Rank 1]
 		r(253157),	-- Stormsteel Dagger [Rank 2]
