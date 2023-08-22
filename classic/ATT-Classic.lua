@@ -3846,7 +3846,7 @@ local categoryFields = {
 		return app.asset("Category_Achievements");
 	end,
 };
-if GetCategoryInfo and GetCategoryInfo(92) ~= "" then
+if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil) then
 	-- Achievements are in. We can use the API.
 	local GetAchievementCategory = _G["GetAchievementCategory"];
 	fields.text = function(t)
@@ -3905,7 +3905,7 @@ if GetCategoryInfo and GetCategoryInfo(92) ~= "" then
 			return SetAchievementCollected;
 		else
 			print("Attempted to retrieve the function SetAchievementCollected from the Achievement object. (no longer available)");
-			return function(achievementID, collected)
+			return function(t, achievementID, collected)
 				print("Attempted to set achievement " .. achievementID .. " as collected: " .. (collected and 1 or 0));
 			end
 		end
@@ -5070,22 +5070,27 @@ else
 	mountFields.name = function(t)
 		return GetSpellInfo(t.spellID) or RETRIEVING_DATA;
 	end
-	if GetCompanionInfo then
+	if GetCompanionInfo and GetNumCompanions("CRITTER") ~= nil then
 		local CollectedBattlePetHelper = {};
 		local CollectedMountHelper = {};
 		local function RefreshCompanionCollectionStatus(companionType)
 			local anythingNew = false;
 			if not companionType or companionType == "CRITTER" then
 				setmetatable(CollectedBattlePetHelper, nil);
-				for i=GetNumCompanions("CRITTER"),1,-1 do
-					local spellID = select(3, GetCompanionInfo("CRITTER", i));
-					if spellID then
-						if not CollectedBattlePetHelper[spellID] then
-							CollectedBattlePetHelper[spellID] = true;
-							anythingNew = true;
+				local critterCount = GetNumCompanions("CRITTER");
+				if not critterCount then
+					print("Failed to get Companion Info for Critters");
+				else
+					for i=critterCount,1,-1 do
+						local spellID = select(3, GetCompanionInfo("CRITTER", i));
+						if spellID then
+							if not CollectedBattlePetHelper[spellID] then
+								CollectedBattlePetHelper[spellID] = true;
+								anythingNew = true;
+							end
+						else
+							print("Failed to get Companion Info for Critter ".. i);
 						end
-					else
-						print("Failed to get Companion Info for Critter ".. i);
 					end
 				end
 			end
