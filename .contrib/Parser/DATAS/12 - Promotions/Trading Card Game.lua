@@ -115,6 +115,14 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { "added 3.2.2.10468" },
 			}),
 		}),
+		filter(MISC, {
+			i(49288, {	-- Little Ivory Raptor
+				["timeline"] = { ADDED_3_2_0 },
+			}),
+			i(49289, {	-- Little White Stallion
+				["timeline"] = { ADDED_3_2_0 },
+			}),
+		}),
 		filter(MOUNTS, {
 			i(68825, {	-- Amani Dragonhawk (MOUNT!)
 				["timeline"] = { "added 4.1.0.13682" },
@@ -140,10 +148,10 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 			i(93671, {	-- Ghastly Charger (MOUNT!)
 				["timeline"] = { "added 5.2.0.16408" },
 			}),
-			i(46778, {	-- Magic Rooster Egg (MOUNT!)
+			i(46778, {	-- Magic Rooster Egg (MOUNT!) [BoP]
 				["timeline"] = { "added 3.2.0.10026", "removed 3.2.0.10147" },
 			}),
-			i(49290, {	-- Magic Rooster Egg (MOUNT!)
+			i(49290, {	-- Magic Rooster Egg (MOUNT!) [BoE]
 				["timeline"] = { "added 3.2.0.10147" },
 			}),
 			i(68008, {	-- Mottled Drake (MOUNT!)

@@ -110,59 +110,59 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubble
 			["groups"] = {
 				i(122338, {	-- Ancient Heirloom Armor Casing
 					["cost"] = {{ "c", TIMEWARPED_BADGE, 750 }},
-					["sym"] = { { "fill" } },	-- simply fill this item
+					["sym"] = {{ "fill" }},
 				}),
 				i(122339, {	-- Ancient Heirloom Scabbard
 					["cost"] = {{ "c", TIMEWARPED_BADGE, 900 }},
-					["sym"] = { { "fill" } },	-- simply fill this item
+					["sym"] = {{ "fill" }},
 				}),
 				i(204336, {	-- Awakened Heirloom Armor Casing
 					["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
 					["timeline"] = { ADDED_10_0_7 },
-					["sym"] = { { "fill" } },	-- simply fill this item
+					["sym"] = {{ "fill" }},
 				}),
 				i(204337, {	-- Awakened Heirloom Scabbard
 					["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
 					["timeline"] = { ADDED_10_0_7 },
-					["sym"] = { { "fill" } },	-- simply fill this item
+					["sym"] = {{ "fill" }},
 				}),
 				i(167731, {	-- Battle-Hardened Heirloom Armor Casing
 					["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
 					["timeline"] = { ADDED_8_1_5 },
-					["sym"] = { { "fill" } },	-- simply fill this item
+					["sym"] = {{ "fill" }},
 				}),
 				i(167732, {	-- Battle-Hardened Heirloom Scabbard
 					["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
 					["timeline"] = { ADDED_8_1_5 },
-					["sym"] = { { "fill" } },	-- simply fill this item
+					["sym"] = {{ "fill" }},
 				}),
 				i(187997, {	-- Eternal Heirloom Armor Casing
 					["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
 					["timeline"] = { ADDED_9_1_5 },
-					["sym"] = { { "fill" } },	-- simply fill this item
+					["sym"] = {{ "fill" }},
 				}),
 				i(187998, {	-- Eternal Heirloom Scabbard
 					["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
 					["timeline"] = { ADDED_9_1_5 },
-					["sym"] = { { "fill" } },	-- simply fill this item
+					["sym"] = {{ "fill" }},
 				}),
 				i(122340, {	-- Timeworn Heirloom Armor Casing
 					["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
-					["sym"] = { { "fill" } },	-- simply fill this item
+					["sym"] = {{ "fill" }},
 				}),
 				i(122341, {	-- Timeworn Heirloom Scabbard
 					["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
-					["sym"] = { { "fill" } },	-- simply fill this item
+					["sym"] = {{ "fill" }},
 				}),
 				i(151614, {	-- Weathered Heirloom Armor Casing
 					["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
 					["timeline"] = { ADDED_7_2_5 },
-					["sym"] = { { "fill" } },	-- simply fill this item
+					["sym"] = {{ "fill" }},
 				}),
 				i(151615, {	-- Weathered Heirloom Scabbard
 					["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
 					["timeline"] = { ADDED_7_2_5 },
-					["sym"] = { { "fill" } },	-- simply fill this item
+					["sym"] = {{ "fill" }},
 				}),
 			},
 		}),
@@ -430,7 +430,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 				-- Containers
 					i(35348, {	-- Bag of Fishing Treasures
 						["cost"] = {{ "c", TIMEWARPED_BADGE, 150 }},
-						["sym"] = { { "fill" } },	-- fill the content
+						["sym"] = {{ "fill" }},
 					}),
 					i(33844, {	-- Barrel of Fish
 						["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
@@ -1374,7 +1374,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 					-- Containers
 					i(46007, {  -- Bag of Fishing Treasure
 						["cost"] = {{ "c", TIMEWARPED_BADGE, 150 }},
-						["sym"] = { { "fill" } },	-- fill the content
+						["sym"] = {{ "fill" }},
 					}),
 					i(44113, {	-- Small Spice Bag
 						["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},

@@ -846,7 +846,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						{ "i", 191507, 1 },	-- 1xExultant Incense+++
 					},
 					["g"] = {
-						i(198821),	-- Divine Kiss of Ohn'ahra (MOUNT!)
+						mount(395644),	-- Divine Kiss of Ohn'ahra (MOUNT!)
 					},
 				}),
 			})),
