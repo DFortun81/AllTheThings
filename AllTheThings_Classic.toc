@@ -18,15 +18,7 @@ src\base.lua
 lib\Colors.lua
 lib\Sort.lua
 lib\Table.lua
-classic\locales\en.lua
-classic\locales\es.lua
-classic\locales\de.lua
-classic\locales\fr.lua
-classic\locales\it.lua
-classic\locales\ko.lua
-classic\locales\pt.lua
-classic\locales\ru.lua
-classic\locales\cn.lua
+classic\locales.lua
 classic\src-Classes-base.lua
 src\Modules\Events.lua
 db\Classic\ExplorationDB.lua
