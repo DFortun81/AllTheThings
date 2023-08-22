@@ -7079,12 +7079,16 @@ end
 app.events.ZONE_CHANGED = function()
 	app.CurrentMapID = app.GetCurrentMapID();
 end
+app.events.ZONE_CHANGED_INDOORS = function()
+	app.CurrentMapID = app.GetCurrentMapID();
+end
 app.events.ZONE_CHANGED_NEW_AREA = function()
 	app.CurrentMapID = app.GetCurrentMapID();
 end
 app:RegisterEvent("MAP_EXPLORATION_UPDATED");
 app:RegisterEvent("UI_INFO_MESSAGE");
 app:RegisterEvent("ZONE_CHANGED");
+app:RegisterEvent("ZONE_CHANGED_INDOORS");
 app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 end)();
 
@@ -12653,6 +12657,7 @@ app:GetWindow("CurrentInstance", {
 		handlers.QUEST_TURNED_IN = delayedUpdate;
 		handlers.QUEST_LOG_UPDATE = delayedUpdate;
 		handlers.ZONE_CHANGED = RefreshLocation;
+		handlers.ZONE_CHANGED_INDOORS = RefreshLocation;
 		handlers.ZONE_CHANGED_NEW_AREA = RefreshLocation;
 		self.SetMapID = function(self, mapID)
 			if mapID ~= self.displayedMapID then
@@ -12663,6 +12668,7 @@ app:GetWindow("CurrentInstance", {
 	end,
 	OnLoad = function(self, settings)
 		self:RegisterEvent("ZONE_CHANGED");
+		self:RegisterEvent("ZONE_CHANGED_INDOORS");
 		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 		self:SetMapID(settings.mapID or app.CurrentMapID or app.GetCurrentMapID());
 		RefreshLocation();
