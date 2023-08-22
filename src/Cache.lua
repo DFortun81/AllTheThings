@@ -500,23 +500,8 @@ fieldConverters.otherQuestData = function(group, value)
 end
 
 -- Performance Tracking for Caching
-local performance = app.__perf;
-if performance then
-	-- init table for this object type
-	local perf = performance.CacheFields;
-	local cacheConverters = {};
-	for key,func in pairs(fieldConverters) do
-		-- replace each function with itself wrapped in a perf update
-		-- app.PrintDebug("Replaced Cache function",key)
-		local typePerf = perf[key];
-		cacheConverters[key] = function(group, value)
-			local now = GetTimePreciseSec();
-			func(group, value);
-			typePerf.time = typePerf.time + (GetTimePreciseSec() - now);
-			typePerf.count = typePerf.count + 1;
-		end
-	end
-	fieldConverters = cacheConverters;
+if app.__perf then
+	app.__perf.CaptureTable(fieldConverters, "CacheFields");
 end
 
 -- Returns: A table containing all subgroups which contain a given value of field relative to the group or nil.

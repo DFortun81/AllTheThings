@@ -22928,29 +22928,5 @@ app.DoModuleEvent("OnLoad")
 
 -- Performance Tracking for AllTheThings Functions
 if app.__perf then
-	local scope, unpack = appName, unpack
-	local perf = app.__perf[scope]
-	-- local origFunctions = {};
-	for key,val in pairs(app) do
-		if type(val) == "function" and type(key) == "string" then
-			-- replace each function with itself wrapped in a perf update
-			-- origFunctions[key] = func;
-			app.PrintDebug("Replaced",scope,"function",key)
-
-			local typePerf = perf[key];
-			app[key] = function(...)
-				local now = GetTimePreciseSec();
-				local res = {val(...)};
-				typePerf.time = typePerf.time + (GetTimePreciseSec() - now);
-				typePerf.count = typePerf.count + 1;
-				return unpack(res);
-			end
-
-			-- app[key] = function(...)
-			-- 	app.PrintDebug("app.",key)
-			-- 	return val(...)
-			-- end
-		end
-	end
+	app.__perf.CaptureTable(app, appName);
 end
-

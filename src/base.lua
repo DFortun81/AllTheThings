@@ -59,51 +59,6 @@ app.PrintDebugPrior = function(...)
 		DEBUG_PRINT_LAST = GetTimePreciseSec();
 	end
 end
---[[ Performance Tracking ]
--- app.__perf[Key][Tracker(Count,Time)]
-do
-local pairs, tinsert, table_concat, type
-	= pairs, tinsert, table.concat, type;
-local keyMeta = {
-	__index = function(t, key)
-		local scopeKey = { count = 0, time = 0};
-		rawset(t, key, scopeKey);
-		return scopeKey;
-	end,
-};
-local performance = setmetatable({}, {
-	__index = function(t, scopeName)
-		local scope = setmetatable({}, keyMeta);
-		rawset(t, scopeName, scope);
-		return scope;
-	end,
-});
-app.__perf = performance;
-app.PrintPerf = function()
-	local blob, line = {}, {};
-	for typeKey,typeData in pairs(performance) do
-		for k,v in pairs(typeData) do
-			-- if type(v) == "table" then
-				line[1] = typeKey;
-				line[2] = k;
-				line[3] = v.count;
-				line[4] = v.time;
-				tinsert(blob, table_concat(line, ","))
-			-- else print("Why is this a number",typeKey,k,v)
-			-- end
-		end
-	end
-	local csv = table_concat(blob, "\n");
-	app:ShowPopupDialogWithMultiLineEditBox(csv);
-end
-app.ClearPerf = function()
-	for _,typeData in pairs(performance) do
-		wipe(typeData);
-	end
-	app.print("Cleared Performance Stats");
-end
-end	-- Performance Tracking --]]
-
 
 -- API Functions
 local function AssignFieldValue(group, field, value)
@@ -463,7 +418,12 @@ function app:ShowPopupDialogToReport(reportReason, text)
 end
 
 -- Define Modules
-app.Modules = {};
+if app.__perf then
+	local perf = app.__perf
+	app.Modules = setmetatable({}, perf.MetaCapture)
+else
+	app.Modules = {};
+end
 
 -- Global Variables
 AllTheThingsSavedVariables = {};
