@@ -2,7 +2,7 @@
 --						L O C A L I Z A T I O N  F I L E					  --
 --------------------------------------------------------------------------------
 local name, app = ...;
-app.L = {
+local L = {
 	-- General Text
 	["TITLE"] = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
 	["SHORTTITLE"] = "|c" .. app.Colors.ATT .. "ATT|r";
@@ -634,7 +634,7 @@ app.L = {
 		[35] = {2, "|CFFAAFFAAThis was not available until Phase 6 of Wrath Classic.|r", "Phase 6", 30400, 30404, "\n \n|CFFFFAAAAThe Elemental Unrest Pre-Expansion Event?|r" },
 	};
 };
-
+app.L = L;
 
 
 if GetLocale() == "esES" or GetLocale() == "esMX" then
