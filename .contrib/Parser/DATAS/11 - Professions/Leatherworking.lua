@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-local LEATHERWORKING_KNOWLEDGE = 2023;
+local LEATHERWORKING_KNOWLEDGE = 2025;
 profession(LEATHERWORKING, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18884),	-- A Test of Scale IV
