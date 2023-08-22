@@ -367,7 +367,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, {
 			-- #endif
 		},
 	})),
-	tier(CATA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_5, REMOVED_4_3_2 } }, {
+	tier(CATA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_1, REMOVED_4_3_2 } }, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Cataclysm.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
 		["groups"] = {
 			ach(5377),	-- Collector's Edition: Lil' Deathwing
