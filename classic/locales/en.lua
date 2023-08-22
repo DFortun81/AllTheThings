@@ -123,7 +123,6 @@ app.L = {
 
 	["ABBREVIATIONS"] = {
 		["ALL THE THINGS"] = "ATT",
-		["ATT%-Classic"] = "ATT",
 		["Expansion Pre"] = "Pre",
 		["Dungeons & Raids"] = "D&R",
 		["Player vs Player"] = STAT_CATEGORY_PVP,

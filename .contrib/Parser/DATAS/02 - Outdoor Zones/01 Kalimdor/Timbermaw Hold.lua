@@ -265,6 +265,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 64.1, 10.3, FELWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
+				{	-- The Brokering of Peace
+					["allianceQuestData"] = q(8484, {	-- The Brokering of Peace (A)
+						["maps"] = { IRONFORGE },
+					}),
+					["hordeQuestData"] = q(8485, {	-- The Brokering of Peace (H)
+						["maps"] = { ORGRIMMAR },
+					}),
+					["providers"] = {
+						{ "n", 11555 },	-- Gorn One Eye
+						{ "i", 21155 },	-- Timbermaw Offering of Peace
+					},
+					-- #if AFTER CATA
+					["coord"] = { 64.4, 5.1, FELWOOD },
+					-- #else
+					["coord"] = { 65.2, 2.6, FELWOOD },
+					-- #endif
+					["minReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
+					["timeline"] = { "removed 4.0.3" },
+					["lvl"] = 45,
+				},
 				q(28364, {	-- The Chieftain's Key
 					["qg"] = 47556,	-- Drizle
 					["sourceQuest"] = 28362,	-- Stupid Drizle!

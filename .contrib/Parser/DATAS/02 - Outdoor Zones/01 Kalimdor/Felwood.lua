@@ -1834,26 +1834,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
-				{	-- The Brokering of Peace
-					["allianceQuestData"] = q(8484, {	-- The Brokering of Peace (A)
-						["maps"] = { IRONFORGE },
-					}),
-					["hordeQuestData"] = q(8485, {	-- The Brokering of Peace (H)
-						["maps"] = { ORGRIMMAR },
-					}),
-					["providers"] = {
-						{ "n", 11555 },	-- Gorn One Eye
-						{ "i", 21155 },	-- Timbermaw Offering of Peace
-					},
-					-- #if AFTER CATA
-					["coord"] = { 64.4, 5.1, FELWOOD },
-					-- #else
-					["coord"] = { 65.2, 2.6, FELWOOD },
-					-- #endif
-					["minReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
-					["timeline"] = { "removed 4.0.3" },
-					["lvl"] = 45,
-				},
 				q(28359, {	-- The Core of Kroshius
 					["qg"] = 48349,	-- Hurak Wildhorn
 					["coord"] = { 44.0, 27.8, FELWOOD },
