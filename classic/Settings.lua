@@ -191,11 +191,11 @@ local OnClickForTab = function(self)
 end;
 settings.Initialize = function(self)
 	PanelTemplates_SetNumTabs(self, #self.Tabs);
-	
+
 	local global_ATTClassicSettings = _G["ATTClassicSettings"];
 	if global_ATTClassicSettings then ATTClassicSettings = global_ATTClassicSettings; end
 	_G["ATTClassicSettings"] = ATTClassicSettings;
-	
+
 	local global_ATTClassicSettingsPerCharacter = _G["ATTClassicSettingsPerCharacter"];
 	if global_ATTClassicSettingsPerCharacter then ATTClassicSettingsPerCharacter = global_ATTClassicSettingsPerCharacter; end
 	_G["ATTClassicSettingsPerCharacter"] = ATTClassicSettingsPerCharacter;
@@ -229,7 +229,7 @@ settings.Initialize = function(self)
 	end
 	OnClickForTab(self.Tabs[1]);
 	self:UpdateMode();
-	
+
 	-- Account Synchronization
 	--self.TabsByName["Features"]:InitializeSyncWindow();
 end
@@ -245,7 +245,7 @@ settings.CheckSeasonalDate = function(self, eventID, startMonth, startDay, endMo
 		start = time({day=startDay,month=startMonth,year=year,hour=0,min=0,sec=0});
 		ends = time({day=endDay,month=endMonth,year=year + 1,hour=0,min=0,sec=0});
 	end
-	
+
 	local active = (now >= start and now <= ends);
 	app.ActiveEvents[eventID] = active;
 end
@@ -273,7 +273,7 @@ settings.GetModeString = function(self)
 				mode = "Account " .. mode;
 			end
 		end
-		
+
 		if self:Get("Hide:PvP") then
 			mode = "PvE " .. mode;
 		end
@@ -479,24 +479,24 @@ settings.UpdateMode = function(self)
 	if self:Get("DebugMode") then
 		app.GroupFilter = app.NoFilter;
 		app.VisibilityFilter = app.NoFilter;
-		
+
 		app.ItemTypeFilter = app.NoFilter;
 		app.ClassRequirementFilter = app.NoFilter;
 		app.RaceRequirementFilter = app.NoFilter;
 		app.RequiredSkillFilter = app.NoFilter;
 		app.RequireFactionFilter = app.NoFilter;
 		app.RequireEventFilter = app.NoFilter;
-		
+
 		local accountWideSettings = self.AccountWide;
 		for key,value in pairs(accountWideSettings) do
 			accountWideSettings[key] = true;
 		end
-		
+
 		local collectibleSettings = self.Collectibles;
 		for key,value in pairs(collectibleSettings) do
 			collectibleSettings[key] = true;
 		end
-		
+
 		-- Modules
 		app.Modules.PVPRanks.SetCollectible(true);
 	else
@@ -507,12 +507,12 @@ settings.UpdateMode = function(self)
 		for key,value in pairs(accountWideSettings) do
 			accountWideSettings[key] = self:Get("AccountWide:" .. key);
 		end
-		
+
 		local collectibleSettings = self.Collectibles;
 		for key,value in pairs(collectibleSettings) do
 			collectibleSettings[key] = self:Get("Thing:" .. key);
 		end
-		
+
 		-- Modules
 		app.Modules.PVPRanks.SetCollectible(self:Get("Thing:PVPRanks"));
 
@@ -533,14 +533,14 @@ settings.UpdateMode = function(self)
 			app.RequiredSkillFilter = app.FilterItemClass_RequiredSkill;
 			app.RequireFactionFilter = app.FilterItemClass_RequireFaction;
 		end
-		
+
 		if self:Get("Show:OnlyActiveEvents") then
 			app.RequireEventFilter = app.Modules.Events.FilterIsEventActive;
 		else
 			app.RequireEventFilter = app.NoFilter;
 		end
 	end
-	
+
 	local filters = ATTClassicSettingsPerCharacter.Filters;
 	for filterID,state in pairs({
 		[100] = self.Collectibles.Mounts,
@@ -1456,10 +1456,10 @@ function(self)
 	end
 	if not self.total or self.total == 0 then
 		local total = 0;
-		local container = app.SearchForFieldContainer("itemID");
+		local container = app.SearchForFieldContainer("itemID"); -- TODO: use toyID
 		for i,o in pairs(container) do
 			for i,p in ipairs(o) do
-				if p.isToy then
+				if p.isToy then -- TODO: use toyID & remove
 					total = total + 1;
 					break;
 				end
@@ -2682,7 +2682,7 @@ function tab:InitializeSyncWindow()
 		self:SetSize(300, 530);
 		oldHide(self);
 	end
-	
+
 	tinsert(tab.objects, syncWindow);
 end
 end)();

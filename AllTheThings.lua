@@ -11138,9 +11138,6 @@ end
 fields.itemID = function(t)
 	return t.toyID;
 end
-fields.isToy = function(t)
-	return true;
-end
 
 app.BaseToy = app.BaseObjectFields(fields, "BaseToy");
 app.CreateToy = function(id, t)

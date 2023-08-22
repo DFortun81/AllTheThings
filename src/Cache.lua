@@ -2,8 +2,8 @@ do
 local appName, app = ...;
 
 -- Global locals
-local ipairs, tinsert, pairs, rawset, type, wipe
-	= ipairs, tinsert, pairs, rawset, type, wipe;
+local ipairs, tinsert, pairs, rawset, type, wipe, setmetatable
+	= ipairs, tinsert, pairs, rawset, type, wipe, setmetatable;
 local C_Map_GetAreaInfo = C_Map.GetAreaInfo;
 
 -- App locals
@@ -265,7 +265,6 @@ local fieldConverters = {
 		CacheField(group, "instanceID", value);
 	end,
 	["itemID"] = function(group, value)
-		if group.isToy then CacheField(group, "toyID", value); end
 		local modItemID = group.modItemID or value;
 		if modItemID ~= value then
 			CacheField(group, "itemID", modItemID);
@@ -312,7 +311,7 @@ local fieldConverters = {
 		CacheField(group, "toyID", value);
 		CacheField(group, "itemID", value);
 	end,
-	
+
 	-- Complex Converters
 	["altQuests"] = function(group, value)
 		for i=1,#value,1 do
@@ -403,7 +402,7 @@ local fieldConverters = {
 			CacheField(group, "sourceQuestID", value[i]);
 		end
 	end,
-	
+
 	-- Localization Helpers
 	["sins"] = function(group, value)
 		local mapID = group.mapID;
@@ -429,7 +428,7 @@ local fieldConverters = {
 			group.mapID = mapID;
 			CacheField(group, "mapID", mapID);
 		end
-		
+
 		-- Then uses the ZONE_TEXT_TO_MAP_ID localizer to force the minilist to display this as if it was a map file.
 		local name = C_Map_GetAreaInfo(value);
 		if name then app.L.ZONE_TEXT_TO_MAP_ID[name] = mapID; end
