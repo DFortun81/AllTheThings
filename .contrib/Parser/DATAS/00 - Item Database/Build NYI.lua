@@ -13,25 +13,25 @@ root(ROOTS.NeverImplemented, {
 	n(ACHIEVEMENTS),
 	n(ARMOR),
 	filter(BAGS),
-	filter(BATTLE_PETS),	-- completed up to 10.1.0
+	filter(BATTLE_PETS),	-- completed up to 10.1.5
 	-- #if AFTER CATA
 	n(CLASS_TRIAL),			-- completed up to 10.1.0
 	-- #endif
 	filter(CONSUMABLES),
 	n(FACTIONS),
 	n(FLIGHT_PATHS),		-- completed up to 10.1.0
-	n(FOLLOWERS, {			-- completed up to 10.1.0
+	n(FOLLOWERS, {			-- completed up to 10.1.5
 		["timeline"] = { "added 6.0.1" },
 	}),
 	-- #if AFTER 8.0.1
-	filter(ILLUSIONS),		-- completed up to 10.1.0
+	filter(ILLUSIONS),		-- completed up to 10.1.5
 	-- #endif
 	-- #if AFTER 7.2.0
 	n(MAPS),
 	-- #endif
 	filter(MISC),
-	filter(MOUNTS),
-	n(PARTY_SYNC, {	-- completed up to 9.2.5
+	filter(MOUNTS),			-- completed up to 10.1.5
+	n(PARTY_SYNC, {			-- completed up to 9.2.5
 		["timeline"] = { "added 8.2.5" },
 	}),
 	n(PROFESSIONS, {
@@ -55,7 +55,7 @@ root(ROOTS.NeverImplemented, {
 	-- #if AFTER 3.0.1
 	filter(TITLES),
 	-- #endif
-	filter(TOYS),			-- completed up to 10.0.7
+	filter(TOYS),			-- completed up to 10.1.5
 	n(WEAPONS),
 });
 root(ROOTS.HiddenAchievementTriggers, {

@@ -207,7 +207,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 2.x.x
-		n(P2xx, {
+		n(P2xx, bubbleDownSelf({ ["timeline"] = { CREATED_2_0_1 } }, {
 			mount(44317, {	-- Merciless Nether Drake (MOUNT!)
 				["modelID"] = 20344,
 			}),
@@ -221,7 +221,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(28025, {	-- Video Mount (MOUNT!)
 				["modelID"] = 6569,
 			}),
-		}),
+		})),
 	}),
 	tier(WOTLK_TIER, {
 		-- 3.0.2
