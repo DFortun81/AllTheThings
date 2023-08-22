@@ -570,12 +570,6 @@ local L = {
 		["The Eye"] = 334,
 	};
 	
-	-- This is necessary because sometimes the names of spells do not match for different languages.
-	["ALT_PROFESSION_TEXT_TO_ID"] = {
-		["Riding"] = 33388,	-- Riding
-		["Herbalism"] = 2366,	-- Herb Gathering
-	};
-	
 	-- Unobtainable Listing
 	["UNOBTAINABLE_ITEM_TEXTURES"] = {
 		"Interface\\FriendsFrame\\StatusIcon-DnD", 		-- No Hope
@@ -636,81 +630,36 @@ local L = {
 };
 app.L = L;
 
+-- Crieve tested all professions in non-english locales and the skill was not detected without these.
+L["SPELL_NAME_TO_SPELL_ID"] = {
+	-- Riding
+	["Riding"] = 33388,
+	["Equitación"] = 33388,
+	["Reiten"] = 33388,
+	["Monte"] = 33388,
+	["Montaria"] = 33388,
+	["Верховая езда"] = 33388,
+	["탈것 타기"] = 33388,
+	["骑术"] = 33388,
+	
+	-- Herb Gathering
+	-- The skill name is "Herbalism", not "Herb Gathering"
+	["Herbalism"] = 2366,
+	["Herboristería"] = 2366,
+	["Kräuterkunde"] = 2366,
+	["Herboristerie"] = 2366,
+	["Herborismo"] = 2366,
+	["Травничество"] = 2366,
+	["약초채집"] = 2366,
+	["草药学"] = 2366,
+	["草藥學"] = 2366,
+	
+	["Ganzúa"] = 1809,		-- Lock Pick	-- Required for ES (EU)
+	["Desollar"] = 8613,	-- Skinning		-- Required for ES (EU)
+	["Cнятие шкур"] = 8613,	-- Skinning		-- Required for RU
+};
 
-if GetLocale() == "esES" or GetLocale() == "esMX" then
-local a = L.ALT_PROFESSION_TEXT_TO_ID;
-for key,value in pairs({
-	["Ingeniería"] = 4036,	-- Engineering
-	["Primeros auxilios"] = 3273,	-- First Aid
-	["Herboristería"] = 2366,	-- Herb Gathering
-	["Marroquinería"] = 2108,	-- Leatherworking
-	["Equitación"] = 33388,	-- Riding
-})
-do a[key] = value; end
-end
 
-if GetLocale() == "deDE" then
-local a = L.ALT_PROFESSION_TEXT_TO_ID;
-for key,value in pairs({
-	["Ingenieurskunst"] = 4036,	-- Engineering
-	["Erste Hilfe"] = 3273,	-- First Aid
-	["Kräuterkunde"] = 2366,	-- Herb Gathering
-	["Lederverarbeitung"] = 2108,	-- Leatherworking
-	["Reiten"] = 33388,	-- Riding
-})
-do a[key] = value; end
-end
-
-if GetLocale() == "frFR" then
-local a = L.ALT_PROFESSION_TEXT_TO_ID;
-for key,value in pairs({
-	["Ingénierie"] = 4036,	-- Engineering
-	["Secourisme"] = 3273,	-- First Aid
-	["Herboristerie"] = 2366,	-- Herb Gathering
-	["Travail du cuir"] = 2108,	-- Leatherworking
-	["Monte"] = 33388,	-- Riding
-})
-do a[key] = value; end
-end
-
-if GetLocale() == "ptBR" then
-	local a = L.ALT_PROFESSION_TEXT_TO_ID;
-	for key,value in pairs({
-		["Engenharia"] = 4036,	-- Engineering
-		["Primeiros Socorros"] = 3273,	-- First Aid
-		["Herborismo"] = 2366,	-- Herb Gathering
-		["Couraria"] = 2108,	-- Leatherworking
-		["Montaria"] = 33388,	-- Riding
-	})
-	do a[key] = value; end
-end
-
-if GetLocale() == "ruRU" then
-	L.FACTION_MODE_TOOLTIP = "Включите данную настройку, если Вы хотите отслеживать Штучки в Режиме Аккаунта только для рас и классов Вашей текущей фракции.";
-	L.TOGGLE_FACTION_MODE = "Переключить режим Фракции";
-
-	local a = L.ALT_PROFESSION_TEXT_TO_ID;
-	for key,value in pairs({
-		["Инженерное дело"] = 4036,	-- Engineering
-		["Первая помощь"] = 3273,	-- First Aid
-		["Травничество"] = 2366,	-- Herb Gathering
-		["Кожевничество"] = 2108,	-- Leatherworking
-		["Верховая езда"] = 33388,	-- Riding
-	})
-	do a[key] = value; end
-end
-
-if GetLocale() == "koKR" then
-local a = L.ALT_PROFESSION_TEXT_TO_ID;
-for key,value in pairs({
-	["기계공학"] = 4036,	-- Engineering
-	["응급치료"] = 3273,	-- First Aid
-	["약초채집"] = 2366,	-- Herb Gathering
-	["가죽 세공"] = 2108,	-- Leatherworking
-	["탈것 타기"] = 33388,	-- Riding
-})
-do a[key] = value; end
-end
 
 if GetLocale() == "zhCN" or GetLocale() == "zhTW" then
 
@@ -779,14 +728,4 @@ L["COMPLETE"] = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47已完成|r"
 L["INCOMPLETE"] = "|T" .. app.asset("unknown") .. ":0|t |cffff9333未完成|r" -- Acquired the colors and icon from CanIMogIt.
 L["KNOWN_ON_CHARACTER"] = "|T" .. app.asset("known") .. ":0|t |c" .. app.Colors.Completed .. "当前角色已知|r"
 L["UNKNOWN_ON_CHARACTER"] = "|T" .. app.asset("unknown") .. ":0|t |cffff9333当前角色未知|r"
-
-local a = L.ALT_PROFESSION_TEXT_TO_ID;
-for key,value in pairs({
-	["工程学"] = 4036,	-- Engineering
-	["急救"] = 3273,	-- First Aid
-	["草药学"] = 2366,	-- Herb Gathering
-	["制皮"] = 2108,	-- Leatherworking
-	["骑术"] = 33388,	-- Riding
-})
-do a[key] = value; end
 end

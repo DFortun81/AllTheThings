@@ -8223,7 +8223,7 @@ app.IsSpellKnown = function(spellID, rank, ignoreHigherRanks)
 		end
 	end
 end
-app.SpellNameToSpellID = setmetatable(L.ALT_PROFESSION_TEXT_TO_ID, {
+app.SpellNameToSpellID = setmetatable(L.SPELL_NAME_TO_SPELL_ID, {
 	__index = function(t, key)
 		for _,spellID in pairs(app.SkillIDToSpellID) do
 			app.GetSpellName(spellID);

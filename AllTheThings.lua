@@ -12639,7 +12639,7 @@ local GetSpellName = function(spellID)
 	end
 end
 app.GetSpellName = GetSpellName;
-SpellNameToSpellID = setmetatable({}, {
+SpellNameToSpellID = setmetatable(L.SPELL_NAME_TO_SPELL_ID, {
 	__index = function(t, key)
 		local cache = SearchForFieldContainer("spellID");
 		for spellID,g in pairs(cache) do
