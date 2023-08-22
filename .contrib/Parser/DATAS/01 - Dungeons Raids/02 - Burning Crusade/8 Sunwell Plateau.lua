@@ -4,6 +4,7 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 	inst(752, {	-- Sunwell Plateau
 		["lore"] = "Nearly seven thousand years ago, the Highborne were exiled from Kalimdor for refusing to give up arcane magic. Led by Dath'Remar Sunstrider, these elves founded their own kingdom of Quel'Thalas. For millennia the mystical pool of energy known as the Sunwell fueled the potent magic of the exiled high elves. Now, the remnants of this ancient fountain have become the Burning Legion's latest target as the demons prepare to summon their commander, Kil'jaeden, with the Sunwell's energy.",
+		["zone-text-areaID"] = 4075,	-- Sunwell Plateau
 		["sins"] = {
 			"The Sunwell",
 			"Der Sonnenbrunnen",

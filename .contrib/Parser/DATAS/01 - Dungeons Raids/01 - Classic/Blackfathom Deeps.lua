@@ -6,6 +6,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		-- #if BEFORE MOP
 		["lore"] = "Situated along the Zoram Strand of Ashenvale, Blackfathom Deeps was once a glorious temple dedicated to the night elves' moon-goddess, Elune. However, the great Sundering shattered the temple - sinking it beneath the waves of the Veiled Sea. There it remained untouched - until, drawn by its ancient power - the naga and satyr emerged to plumb its secrets. Legends hold that the ancient beast, Aku'mai, has taken up residence within the temple's ruins. Aku'mai, a favored pet of the primordial Old Gods, has preyed upon the area ever since. Drawn to Aku'mai's presence, the cult known as the Twilight's Hammer has also come to bask in the Old Gods' evil presence.",
 		-- #endif
+		["zone-text-areaID"] = 719,	-- Blackfathom Deeps
 		-- #if AFTER CATA
 		["coords"] = {
 			{ 16.5, 11.0, ASHENVALE },

@@ -35,6 +35,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		-- #if BEFORE MOP
 		["lore"] = "Protected by the fierce Maraudine centaur, Maraudon is one of the most sacred sites within Desolace. The great temple/cavern is the burial place of Zaetar, one of two immortal sons born to the demigod, Cenarius. Legend holds that Zaetar and the earth elemental princess, Theradras, sired the misbegotten centaur race. It is said that upon their emergence, the barbaric centaur turned on their father and killed him. Some believe that Theradras, in her grief, trapped Zaetar's spirit within the winding cavern - used its energies for some malign purpose. The subterranean tunnels are populated by the vicious, long-dead ghosts of the Centaur Khans, as well as Theradras' own raging, elemental minions.",
 		-- #endif
+		["zone-text-areaID"] = 2100,	-- Maraudon
 		["mapID"] = MARAUDON,
 		["maps"] = { MARAUDON_LEVEL2, 67, 68 },
 		["lvl"] = lvlsquish(41, 30, 10),

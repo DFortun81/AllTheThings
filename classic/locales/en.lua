@@ -568,62 +568,11 @@ app.L = {
 			["lvl"] = 58,
 		},
 	};
-
-	-- This is necessary to have because Blizzard does not always have the correct map ID at the time of zone change.
-	["ZONE_TEXT_TO_MAP_ID"] = {
-		-- Classic
-		["Blackfathom Deeps"] = 221,
-		["Blackrock Depths"] = 242,
-		["Blackwing Lair"] = 287,
-		["Blackrock Spire"] = 250,
-		["Gnomeregan"] = 226,
-		["Maraudon"] = 280,
-		["Naxxramas"] = 162,
-		["Ragefire Chasm"] = 213,
-		["Razorfen Kraul"] = 301,
-		["Ruins of Ahn'Qiraj"] = 247,
-		["Shadowfang Keep"] = 310,
-		["Stratholme"] = 317,
-		["Temple of Ahn'Qiraj"] = 320,
-		["The Temple of Atal'hakkar"] = 220,
-		["Uldaman"] = 230,
-		["Wailing Caverns"] = 279,
-		["Zul'Farrak"] = 219,
-		["Zul'Gurub"] = 337,
-
-		-- TBC
-		["Auchenai Crypts"] = 256,
-		["Karazhan"] = 350,
-		["Gruul's Lair"] = 330,
-		["Hellfire Ramparts"] = 347,
-		["Hyjal Summit"] = 329,
-		["Magister's Terrace"] = 348,
-		["Magtheridon's Lair"] = 331,
-		["Mana Tombs"] = 272,
-		["Old Hillsbrad Foothills"] = 274,
-		["Serpentshrine Cavern"] = 332,
-		["Sethekk Halls"] = 258,
-		["Shadow Labyrinth"] = 260,
-		["Tempest Keep"] = 334,
-		["The Arcatraz"] = 269,
-		["The Black Morass"] = 273,
-		["The Black Temple"] = 340,
-		["The Blood Furnace"] = 261,
-		["The Botanica"] = 266,
-		["The Mechanar"] = 267,
-		["The Shattered Halls"] = 246,
-		["The Slave Pens"] = 265,
-		["The Steamvault"] = 263,
-		["The Underbog"] = 262,
-		["Sunwell Plateau"] = 335,
-		["Zul'Aman"] = 333,
-	};
 	
 	-- These are alternative map names that we don't want to display, but used for mapID calculations.
 	-- If there is a name provided in the table above, it will prefer that name association.
+	["ZONE_TEXT_TO_MAP_ID"] = {};
 	["ALT_ZONE_TEXT_TO_MAP_ID"] = {
-		["Ahn'Qiraj"] = 320,
-		["The Wailing Caverns"] = 279,
 		["Gates of Ahn'Qiraj"] = 1451,
 		["The Temple of Atal'Hakkar"] = 220,
 		["The Battle for Mount Hyjal"] = 329,

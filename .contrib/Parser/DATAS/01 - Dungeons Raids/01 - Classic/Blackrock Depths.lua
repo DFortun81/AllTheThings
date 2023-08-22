@@ -55,6 +55,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		-- #if BEFORE MOP
 		["lore"] = "Once the capital city of the Dark Iron dwarves, this volcanic labyrinth now serves as the seat of power for Ragnaros the Firelord. Ragnaros has uncovered the secret to creating life from stone and plans to build an army of unstoppable golems to aid him in conquering the whole of Blackrock Mountain. Obsessed with defeating Nefarian and his draconic minions, Ragnaros will go to any extreme to achieve final victory.",
 		-- #endif
+		["zone-text-areaID"] = 1584,	-- Blackrock Depths
 		["coord"] = { 39.06, 18.12, BLACKROCK_MOUNTAIN_LEVEL3 },
 		["mapID"] = BLACKROCK_DEPTHS,
 		["maps"] = { 243 },

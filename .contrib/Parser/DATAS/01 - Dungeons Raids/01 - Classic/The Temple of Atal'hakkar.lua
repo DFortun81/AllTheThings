@@ -36,7 +36,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		-- #if BEFORE MOP
 		["lore"] = "Over a thousand years ago, the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, attempted to bring back an ancient blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire buckled in upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows. There they erected a great temple to Hakkar - where they could prepare for his arrival into the physical world. The great dragon Aspect, Ysera, learned of the Atal'ai's plans and smashed the temple beneath the marshes. To this day, the temple's drowned ruins are guarded by the green dragons who prevent anyone from getting in or out. However, it is believed that some of the fanatical Atal'ai may have survived Ysera's wrath - and recommitted themselves to the dark service of Hakkar.",
 		-- #endif
-		["sins"] = { "Sunken Temple" },	-- The full name is actually The Temple of Atal'hakkar, but the saved instance data is wrong.
+		["zone-text-areaID"] = 1417,	-- Sunken Temple
 		-- #if AFTER CATA
 		["coord"] = { 76.04, 45.21, SWAMP_OF_SORROWS },
 		-- #else

@@ -69,69 +69,6 @@ L["INCOMPLETE"] = "|T" .. app.asset("unknown") .. ":0|t |cffff9333未完成|r" -
 L["KNOWN_ON_CHARACTER"] = "|T" .. app.asset("known") .. ":0|t |c" .. app.Colors.Completed .. "当前角色已知|r"
 L["UNKNOWN_ON_CHARACTER"] = "|T" .. app.asset("unknown") .. ":0|t |cffff9333当前角色未知|r"
 
-local a = L.ZONE_TEXT_TO_MAP_ID;
-wipe(a);
-for key,value in pairs({
-	-- Classic
-	["黑暗深渊"] = 221,	-- Blackfathom Deeps
-	["黑石深渊"] = 242,	-- Blackrock Depths
-	["黑翼之巢"] = 287,	-- Blackwing Lair
-	["黑石塔"] = 250,	-- Blackrock Spire
-	["诺莫瑞根"] = 226,	-- Gnomeregan
-	["玛拉顿"] = 280,	-- Maraudon
-	["纳克萨玛斯"] = 162,	-- Naxxramas
-	["怒焰裂谷"] = 213,	-- Ragefire Chasm
-	["剃刀沼泽"] = 301,	-- Razorfen Kraul
-	["安其拉废墟"] = 247,	-- Ruins of Ahn'Qiraj
-	["影牙城堡"] = 310,	-- Shadowfang Keep
-	["斯坦索姆"] = 317,	-- Stratholme
-	["安其拉神庙"] = 320,	-- Temple of Ahn'Qiraj
-	["阿塔哈卡神庙"] = 220,	-- The Temple of Atal'hakkar
-	["奥达曼"] = 230,	-- Uldaman
-	["哀嚎洞穴"] = 279,	-- Wailing Caverns
-	["祖尔法拉克"] = 219,	-- Zul'Farrak
-	["祖尔格拉布"] = 337,	-- Zul'Gurub
-	
-	-- TBC
-	["奥金尼地穴"] = 256,	-- Auchenai Crypts
-	["卡拉赞"] = 350,	-- Karazhan
-	["格鲁尔的巢穴"] = 330,	-- Gruul's Lair
-	["地狱火城墙"] = 347,	-- Hellfire Ramparts
-	["海加尔峰"] = 329,	-- Hyjal Summit
-	["魔导师平台"] = 348,	-- Magister's Terrace
-	["玛瑟里顿的巢穴"] = 331,	-- Magtheridon's Lair
-	["法力陵墓"] = 272,	-- Mana Tombs
-	["旧希尔斯布莱德丘陵"] = 274,	-- Old Hillsbrad Foothills
-	["毒蛇神殿"] = 332,	-- Serpentshrine Cavern
-	["塞泰克大厅"] = 258,	-- Sethekk Halls
-	["暗影迷宫"] = 260,	-- Shadow Labyrinth
-	["太阳之井高地"] = 335,	-- Sunwell Plataeu
-	["风暴要塞"] = 334,	-- Tempest Keep
-	["禁魔监狱"] = 269,	-- The Arcatraz
-	["黑色沼泽"] = 273,	-- The Black Morass
-	["鲜血熔炉"] = 261,	-- The Blood Furnace
-	["黑暗神殿"] = 340,	-- The Black Temple
-	["生态船"] = 266,	-- The Botanica
-	["能源舰"] = 267,	-- The Mechanar
-	["破碎大厅"] = 246,	-- The Shattered Halls
-	["奴隶围栏"] = 265,	-- The Slave Pens
-	["蒸汽地窟"] = 263,	-- The Steamvault
-	["幽暗沼泽"] = 262,	-- The Underbog
-	["祖阿曼"] = 333,	-- Zul'Aman
-})
-do a[key] = value; end
-
-local a = L.ALT_ZONE_TEXT_TO_MAP_ID;
-wipe(a);
-for key,value in pairs({
-	-- Classic
-	["安其拉"] = 320,	-- Ahn'Qiraj
-	["取消管理"] = 291,	-- Deadmines
-	["安其拉之门"] = 1451,	-- Gates of Ahn'Qiraj
-	["眼"] = 334,	-- The Eye
-})
-do a[key] = value; end
-
 local a = L.ALT_PROFESSION_TEXT_TO_ID;
 for key,value in pairs({
 	["工程学"] = 4036,	-- Engineering

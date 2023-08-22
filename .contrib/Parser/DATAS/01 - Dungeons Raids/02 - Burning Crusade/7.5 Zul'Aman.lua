@@ -24,6 +24,7 @@ local FOREST_FROG = n(24396, {	-- Forest Frog
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 	inst(77, bubbleDownSelf({ ["timeline"] = { "added 2.3.0", "removed 4.1.0" } }, {	-- Zul'Aman
 		["lore"] = "When the high elves were first exiled and landed in Lordaeron, they met violent clashes with the forest trolls, who viewed them as defiling their homeland. At the time of the founding of Quel'Thalas, the Amani Empire was the most powerful empire in the Eastern Kingdoms; they still held much of northern Lordaeron in their territorial grasp.\n\nEventually, the high elves joined with the humans of Arathor and defeated the forest trolls in an immense battle that signaled the end of the forest trolls' empire. The Amani would never recover enough to extend their land beyond their home province of Zul'Aman, but they continued to be an enemy of humans and elves for thousands of years.\n\nZul'jin, planning to take revenge against Quel'Thalas, saw the opportunity when most of the blood elves and Horde were busy fighting on Outland. He had his champions harness the power of the loa with the help of the cunning Hex Lord Malacrass.",
+		["zone-text-areaID"] = 3805,	-- Zul'Aman
 		["coord"] = { 81.8, 64.3, GHOSTLANDS },	-- Zul'Aman, Ghostlands
 		["mapID"] = ZULAMAN,
 		["isRaid"] = true,

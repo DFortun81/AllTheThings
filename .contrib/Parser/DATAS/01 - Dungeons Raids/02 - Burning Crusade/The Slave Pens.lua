@@ -4,6 +4,7 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(260, {	-- The Slave Pens
 		["lore"] = "The Slave Pens is the place where the Naga force their Broken workers to toil for resources in the darkness in order to achieve their goal of draining the marsh completely and claiming control of its water.",
+		["zone-text-areaID"] = 3717,	-- The Slave Pens
 		["sins"] = {
 			"Coilfang: Slave Pens",
 			"Coilfang: The Slave Pens",

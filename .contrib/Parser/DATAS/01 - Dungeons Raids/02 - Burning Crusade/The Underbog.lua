@@ -4,6 +4,7 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(262, {	-- The Underbog
 		["lore"] = "Underbog is the 2nd 5-man instance within the Coilfang Reservoir found on the east side of the naga invested complex. The Underbog is home to the last vestiges of natural life left within Coilfang Reservoir that has not been completely stamped out by the Naga incursion. The only Naga presence in this section defends the structure they built to house their hydra god, Ghaz'an. The rest of the Underbog is a natural habitat, home to the most powerful species of animal life in Zangarmarsh.",
+		["zone-text-areaID"] = 3716,	-- The Underbog
 		["sins"] = {
 			"Coilfang: Underbog",
 			"Coilfang: The Underbog",

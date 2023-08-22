@@ -1271,8 +1271,16 @@ app.L = {
 	["HEADER_LORE"] = {};
 	["EVENT_REMAPPING"] = {};
 	["EVENT_TOOLTIPS"] = {};
+	
+	-- These are alternative map names that we don't want to display, but used for mapID calculations.
+	-- If there is a name provided in the table above, it will prefer that name association.
 	["ZONE_TEXT_TO_MAP_ID"] = {};
-	["ALT_ZONE_TEXT_TO_MAP_ID"] = {};
+	["ALT_ZONE_TEXT_TO_MAP_ID"] = {
+		["Gates of Ahn'Qiraj"] = 1451,
+		["The Temple of Atal'Hakkar"] = 220,
+		["The Battle for Mount Hyjal"] = 329,
+		["The Eye"] = 334,
+	};
 
 	-- Module Localizations
 	["PVP_RANK_DESCRIPTION"] = "There are a total of 14 ranks for both factions. Each rank requires a minimum amount of Rating Points to be calculated every week, then calculated in comparison to other players on your server.\n\nEach rank grants access to different rewards, from PvP consumables to Epic Mounts that do not require Epic Riding Skill and Epic pieces of gear at the highest ranks. Each rank is also applied to your character as a Title.";

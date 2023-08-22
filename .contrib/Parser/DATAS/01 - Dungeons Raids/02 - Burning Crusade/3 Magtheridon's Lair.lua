@@ -4,6 +4,7 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(747, {	-- Magtheridon's Lair
 		["lore"] = "After the Legion came to Outland, Magtheridon controlled all but small pockets of Outland. Even so, he was taken largely by surprise when Illidan and his allies conquered the Black Temple. Many believed that Magtheridon had been slain in the attack, but, when Illidan discovered that Magtheridon's blood had a transformative, corrupting effect on orcs, the beaten pit lord was dragged to Hellfire Citadel.\n\nBound by chains both physical and magical, Magtheridon survives, at the brink of death. Each day, Illidan's minions drain his tainted blood, pooling it for a purpose as malevolent as Magtheridon himself: the creation of a new army of barbaric fel orcs.",
+		["zone-text-areaID"] = 3836,	-- Magtheridon's Lair
 		["coord"] = { 47.51, 52.08, HELLFIRE_PENINSULA },	-- Magtheridon's Lair, Hellfire Peninsula
 		["mapID"] = MAGTHERIDONS_LAIR,
 		["sharedLockout"] = 1,
