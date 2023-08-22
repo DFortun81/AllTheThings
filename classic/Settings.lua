@@ -1456,14 +1456,9 @@ function(self)
 	end
 	if not self.total or self.total == 0 then
 		local total = 0;
-		local container = app.SearchForFieldContainer("itemID"); -- TODO: use toyID
+		local container = app.SearchForFieldContainer("toyID");
 		for i,o in pairs(container) do
-			for i,p in ipairs(o) do
-				if p.isToy then -- TODO: use toyID & remove
-					total = total + 1;
-					break;
-				end
-			end
+			total = total + 1;
 		end
 		self.total = total;
 	end

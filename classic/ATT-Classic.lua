@@ -982,7 +982,7 @@ local function CreateObject(t)
 					t = app.CreateSpell(t.spellID, t);
 				end
 			elseif t.itemID then
-				if t.isToy then	-- TODO: use toyID
+				if t.toyID then
 					t = app.CreateToy(t.itemID, t);
 				else
 					t = app.CreateItem(t.itemID, t);
@@ -6346,10 +6346,12 @@ fields.collectible = function(t)
 	return app.Settings.Collectibles.Toys;
 end
 fields.collected = function(t)
-	if t.itemID then return app.SetCollected(t, "Toys", t.itemID, GetItemCount(t.itemID, true) > 0); end
+	if t.toyID then return app.SetCollected(t, "Toys", t.toyID, GetItemCount(t.toyID, true) > 0); end
 end
-fields.isToy = function(t) return true; end 	-- TODO: use toyID
-app.CreateToy = app.CreateClass("Toy", "itemID", fields);
+fields.itemID = function(t)
+	return t.toyID;
+end
+app.CreateToy = app.CreateClass("Toy", "toyID", fields);
 
 local HarvestedItemDatabase = {};
 local itemHarvesterFields = CloneDictionary(itemFields);
