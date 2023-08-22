@@ -7,6 +7,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		["lore"] = "Recently, a night elf druid named Naralex discovered a network of underground caverns within the heart of the Barrens. Dubbed the 'Wailing Caverns', these natural caves were filled with steam fissures which produced long, mournful wails as they vented. Naralex believed he could use the caverns' underground springs to restore lushness and fertility to the Barrens - but to do so would require siphoning the energies of the fabled Emerald Dream.\n\nOnce connected to the Dream, however, the druid's vision somehow became a nightmare. Soon the Wailing Caverns began to change - the waters turned foul and the once-docile creatures inside metamorphosed into vicious, deadly predators. It is said that Naralex himself still resides somewhere inside the heart of the labyrinth, trapped beyond the edges of the Emerald Dream. Even his former acolytes have been corrupted by their master's waking nightmare - transformed into the wicked Druids of the Fang.",
 		-- #endif
 		["zone-text-areaID"] = 718,	-- Wailing Caverns
+		["sins"] = {
+			"The Wailing Caverns",
+		},
 		["mapID"] = WAILING_CAVERNS,
 		-- #if AFTER CATA
 		["coord"] = { 55.19, 66.09, 11 },	-- Wailing Caverns, Northern Barrens
