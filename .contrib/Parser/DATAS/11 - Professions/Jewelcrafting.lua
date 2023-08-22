@@ -1,3 +1,4 @@
+-- #if AFTER TBC
 local REMOVED_WITH_CATA = "removed 4.0.1";
 applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 	tier(CLASSIC_TIER, {
@@ -6119,4 +6120,5 @@ recipeCache = nil;	-- Disable the cache validation.
 root(ROOTS.HiddenQuestTriggers, {
 	q(55631),	-- Jewelcrafting Diode shrine. harvesting gems from them triggered this quest. Nazmir location
 });
+-- #endif
 -- #endif
