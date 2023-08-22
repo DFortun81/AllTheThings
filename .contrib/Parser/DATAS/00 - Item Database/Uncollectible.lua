@@ -732,6 +732,7 @@ i(203389);	-- Shiny Rock
 i(203442);	-- Snail Slime
 i(203393);	-- Spongy Loamshroom
 i(202647);	-- Stolen Goods
+i(204273);	-- Stolen Supplies
 i(204069);	-- Sulfuric Crystal
 i(204713);	-- Sundered Flame Expedition Notes
 i(202620);	-- Toxin Antidote

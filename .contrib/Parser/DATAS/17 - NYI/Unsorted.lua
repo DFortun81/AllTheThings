@@ -1017,7 +1017,6 @@ root(ROOTS.Unsorted, {
 				i(204175),	-- Unknown Core
 				i(204197),	-- Shard of an Earth Portal
 				i(204198),	-- Shard of an Fire Portal
-				i(204273),	-- Stolen Supplies
 				i(204315),	-- Zaqali Bone Needle
 				i(204325),	-- Crude Key Fragment
 				i(204326),	-- Strange Artifact
