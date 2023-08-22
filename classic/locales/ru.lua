@@ -15,10 +15,8 @@ for key,value in pairs({
 	["Глубины Черной горы"] = 242,	-- Blackrock Depths
 	["Логово Крыла Тьмы"] = 287,	-- Blackwing Lair
 	["Вершина Черной горы"] = 250,	-- Blackrock Spire
-	["Забытый Город"] = 234,	-- Dire Maul
 	["Гномреган"] = 226,	-- Gnomeregan
 	["Мародон"] = 280,	-- Maraudon
-	["Огненные Недра"] = 232,	-- Molten Core
 	["Наксрамас"] = 162,	-- Naxxramas
 	["Огненная пропасть"] = 213,	-- Ragefire Chasm
 	["Лабиринты Иглошкурых"] = 301,	-- Razorfen Kraul

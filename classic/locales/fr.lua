@@ -11,10 +11,8 @@ for key,value in pairs({
 	["Profondeurs de Blackrock"] = 242,	-- Blackrock Depths
 	["Repaire de l'Aile noire"] = 287,	-- Blackwing Lair
 	["Pic Blackrock"] = 250,	-- Blackrock Spire
-	["Hache-tripes"] = 234,	-- Dire Maul
 	["Gnomeregan"] = 226,	-- Gnomeregan
 	["Maraudon"] = 280,	-- Maraudon
-	["Cœur du Magma"] = 232,	-- Molten Core
 	["Naxxramas"] = 162,	-- Naxxramas
 	["Gouffre de Ragefeu"] = 213,	-- Ragefire Chasm
 	["Kraal de Tranchebauge"] = 301,	-- Razorfen Kraul

@@ -6,10 +6,7 @@ local REMOVED_WITH_WRATH = { "added 1.0.1", "removed 3.0.8" };
 root(ROOTS.Instances, tier(CLASSIC_TIER, {
 	inst(741, {	-- Molten Core
 		["lore"] = "The Molten Core was created during the War of the Three Hammers more than 300 years ago. Near the end of the war, Thaurissan, the leader of the Dark Iron Dwarves, sought to summon a powerful fire elemental to defeat the combined forces of the Bronzebeard and Wildhammer clans. He was more successful than he could have imagined, as he released Ragnaros the Firelord from millennia of captivity under the Redridge Mountains.\n\nRagnaros destroyed the city of Thaurissan and created the volcano of Blackrock Mountain. He dwells there to this day with his elemental servants and the enslaved remnants of the Dark Iron dwarf clan. The burning lake where Ragnaros lies sleeping acts as a rift connecting to the plane of fire, allowing the malicious elementals to pass through.",
-		["sins"] = {
-			"Geschmolzener Kern",	-- DE
-			"Огненные Недра",		-- RU
-		},
+		["zone-text-areaID"] = 2717,	-- Molten Core
 		["mapID"] = MOLTEN_CORE,
 		["coord"] = { 54.18, 83.25, BLACKROCK_MOUNTAIN },
 		-- #if BEFORE 5.4.0

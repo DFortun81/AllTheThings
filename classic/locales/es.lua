@@ -11,10 +11,8 @@ for key,value in pairs({
 	["Profundidades de Roca Negra"] = 242,	-- Blackrock Depths
 	["Guarida Alanegra"] = 287,	-- Blackwing Lair
 	["Cumbre de Roca Negra"] = 250,	-- Blackrock Spire
-	["La Masacre"] = 234,	-- Dire Maul
 	["Gnomeregan"] = 226,	-- Gnomeregan
 	["Maraudon"] = 280,	-- Maraudon
-	["Núcleo de Magma"] = 232,	-- Molten Core
 	["Naxxramas"] = 162,	-- Naxxramas
 	["Sima Ígnea"] = 213,	-- Ragefire Chasm
 	["Horado Rajacieno"] = 301,	-- Razorfen Kraul

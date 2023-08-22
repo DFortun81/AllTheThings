@@ -11,11 +11,9 @@ for key,value in pairs({
 	["검은바위 나락"] = 242,	-- Blackrock Depths
 	["검은날개 둥지"] = 287,	-- Blackwing Lair
 	["검은바위 첨탑"] = 250,	-- Blackrock Spire
-	["혈투의 전장"] = 234,	-- Dire Maul
 	["깊은굴 지하철"] = 499,	-- Deeprun Tram
 	["놈리건"] = 226,	-- Gnomeregan
 	["마라우돈"] = 280,	-- Maraudon
-	["화산 심장부"] = 232,	-- Molten Core
 	["낙스라마스"] = 162,	-- Naxxramas
 	["성난불길 협곡"] = 213,	-- Ragefire Chasm
 	["가시덩굴 우리"] = 301,	-- Razorfen Kraul

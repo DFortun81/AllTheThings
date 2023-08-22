@@ -77,10 +77,8 @@ for key,value in pairs({
 	["黑石深渊"] = 242,	-- Blackrock Depths
 	["黑翼之巢"] = 287,	-- Blackwing Lair
 	["黑石塔"] = 250,	-- Blackrock Spire
-	["厄运之槌"] = 234,	-- Dire Maul
 	["诺莫瑞根"] = 226,	-- Gnomeregan
 	["玛拉顿"] = 280,	-- Maraudon
-	["熔火之心"] = 232,	-- Molten Core
 	["纳克萨玛斯"] = 162,	-- Naxxramas
 	["怒焰裂谷"] = 213,	-- Ragefire Chasm
 	["剃刀沼泽"] = 301,	-- Razorfen Kraul

@@ -38,7 +38,7 @@ local C_DateAndTime_GetServerTimeLocal
 	= C_DateAndTime.GetServerTimeLocal;
 local ipairs, tinsert, pairs, rawset, rawget, pcall
 	= ipairs, tinsert, pairs, rawset, rawget, pcall;
-local C_Map_GetMapInfo = C_Map.GetMapInfo;
+local C_Map_GetMapInfo, C_Map_GetAreaInfo = C_Map.GetMapInfo, C_Map.GetAreaInfo;
 local C_Map_GetPlayerMapPosition = C_Map.GetPlayerMapPosition;
 local GetAchievementInfo = _G["GetAchievementInfo"];
 local GetAchievementNumCriteria = _G["GetAchievementNumCriteria"];
@@ -6515,28 +6515,28 @@ local mapIDToMapName, mapIDToAreaID = {}, {
 	[348] = { 4095 },	-- Magisters' Terrace
 };
 for mapID,area in pairs(mapIDToAreaID) do
-	local info = C_Map.GetAreaInfo(area[1]);
+	local info = C_Map_GetAreaInfo(area[1]);
 	if info then
 		mapIDToMapName[mapID] = info;
 		L.ZONE_TEXT_TO_MAP_ID[info] = mapID;
 		if #area > 1 then
 			for i=2,#area,1 do
-				local info = C_Map.GetAreaInfo(area[i]);
+				local info = C_Map_GetAreaInfo(area[i]);
 				if info then L.ALT_ZONE_TEXT_TO_MAP_ID[info] = mapID; end
 			end
 		end
 	end
 end
 app.GetCurrentMapID = function()
-	local real = GetRealZoneText();
-	if real then
-		local otherMapID = L.ZONE_TEXT_TO_MAP_ID[real] or L.ALT_ZONE_TEXT_TO_MAP_ID[real];
-		if otherMapID then return otherMapID; end
-	end
-	local zone = GetSubZoneText();
+	local zone = GetRealZoneText();
 	if zone then
-		local otherMapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
-		if otherMapID then return otherMapID; end
+		local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
+		if mapID then return mapID; end
+	end
+	zone = GetSubZoneText();
+	if zone then
+		local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
+		if mapID then return mapID; end
 	end
 	return C_Map_GetBestMapForUnit("player");
 end
@@ -6566,7 +6566,7 @@ end
 
 app.CreateExploration = app.CreateClass("Exploration", "explorationID", {
 	["text"] = function(t)
-		return C_Map.GetAreaInfo(t.explorationID) or RETRIEVING_DATA;
+		return C_Map_GetAreaInfo(t.explorationID) or RETRIEVING_DATA;
 	end,
 	["title"] = function(t)
 		return t.maphash;
@@ -6877,7 +6877,7 @@ app.SortExplorationDB = function()
 		local s = {};
 		t[mapID] = s;
 		for i,areaID in ipairs(areas) do
-			tinsert(s, { areaID, C_Map.GetAreaInfo(areaID) });
+			tinsert(s, { areaID, C_Map_GetAreaInfo(areaID) });
 		end
 		app.Sort(s, function(a, b)
 			return a[2] < b[2];
@@ -6905,27 +6905,6 @@ local createMap, mapClass = app.CreateClass("Map", "mapID", {
 	end,
 	["lvl"] = function(t)
 		return C_Map_GetMapLevels(t.mapID);
-	end,
-	["locks"] = function(t)
-		local lockouts = app.CurrentCharacter.Lockouts;
-		local locks = lockouts[t.name];
-		if locks then
-			t.locks = locks;
-			return locks;
-		end
-		local sins = t.sins;
-		if sins then
-			for i=1,#sins,1 do
-				lock = sins[i];
-				if locks then
-					t.locks = locks;
-					return locks;
-				end
-			end
-		end
-	end,
-	["saved"] = function(t)
-		return t.locks;
 	end,
 });
 app.BaseMap = mapClass;
@@ -7029,7 +7008,18 @@ app.CreateInstance = app.CreateClass("Instance", "instanceID", {
 		local sins = t.sins;
 		if sins then
 			for i=1,#sins,1 do
-				lock = lockouts[sins[i]];
+				locks = lockouts[sins[i]];
+				if locks then
+					t.locks = locks;
+					return locks;
+				end
+			end
+		end
+		local areaID = t["zone-text-areaID"];
+		if areaID then
+			local name = C_Map_GetAreaInfo(areaID);
+			if name then
+				locks = lockouts[name];
 				if locks then
 					t.locks = locks;
 					return locks;
@@ -7071,7 +7061,7 @@ app.events.MAP_EXPLORATION_UPDATED = function(...)
 						newArea = true;
 						if not app.ExplorationAreaPositionDB[areaID] then
 							local coord = {px, py, app.CurrentMapID};
-							print("New Coordinate: ", C_Map.GetAreaInfo(areaID), coord);
+							print("New Coordinate: ", C_Map_GetAreaInfo(areaID), coord);
 							app.ExplorationAreaPositionDB[areaID] = { coord };
 						end
 					end

@@ -11,10 +11,8 @@ for key,value in pairs({
 	["Blackrock Depths"] = 242,	-- Blackrock Depths
 	["Blackwing Lair"] = 287,	-- Blackwing Lair
 	["Blackrock Spire"] = 250,	-- Blackrock Spire
-	["Dire Maul"] = 234,	-- Dire Maul
 	["Gnomeregan"] = 226,	-- Gnomeregan
 	["Maraudon"] = 280,	-- Maraudon
-	["Molten Core"] = 232,	-- Molten Core
 	["Naxxramas"] = 162,	-- Naxxramas
 	["Ragefire Chasm"] = 213,	-- Ragefire Chasm
 	["Razorfen Kraul"] = 301,	-- Razorfen Kraul
@@ -22,7 +20,6 @@ for key,value in pairs({
 	["Shadowfang Keep"] = 310,	-- Shadowfang Keep
 	["Stratholme"] = 317,	-- Stratholme
 	["Temple of Ahn'Qiraj"] = 320,	-- Temple of Ahn'Qiraj
-	["The Deadmines"] = 291,	-- The Deadmines
 	["The Temple of Atal'hakkar"] = 220,	-- The Temple of Atal'hakkar
 	["The Temple of Atal'Hakkar"] = 220,	-- The Temple of Atal'Hakkar
 	["Uldaman"] = 230,	-- Uldaman

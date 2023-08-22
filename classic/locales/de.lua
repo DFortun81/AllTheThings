@@ -11,11 +11,8 @@ for key,value in pairs({
 	["Blackrocktiefen"] = 242,	-- Blackrock Depths
 	["Pechschwingenhort"] = 287,	-- Blackwing Lair
 	["Blackrockspitze"] = 250,	-- Blackrock Spire
-	["Höhlen der Zeit"] = 75,	-- Caverns of Time
-	["Düsterbruch"] = 234,	-- Dire Maul
 	["Gnomeregan"] = 226,	-- Gnomeregan
 	["Maraudon"] = 280,	-- Maraudon
-	["Geschmolzener Kern"] = 232,	-- Molten Core
 	["Naxxramas"] = 162,	-- Naxxramas
 	["Ragefireabgrund"] = 213,	-- Ragefire Chasm
 	["Der Kral von Razorfen"] = 301,	-- Razorfen Kraul

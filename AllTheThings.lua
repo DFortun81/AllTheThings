@@ -10346,7 +10346,18 @@ local fields = {
 		local sins = t.sins;
 		if sins then
 			for i=1,#sins,1 do
-				lock = lockouts[sins[i]];
+				locks = lockouts[sins[i]];
+				if locks then
+					t.locks = locks;
+					return locks;
+				end
+			end
+		end
+		local areaID = t["zone-text-areaID"];
+		if areaID then
+			local name = C_Map.GetAreaInfo(areaID);
+			if name then
+				locks = lockouts[name];
 				if locks then
 					t.locks = locks;
 					return locks;
@@ -11568,15 +11579,14 @@ app.GetCurrentMapID = function()
 		local map = C_Map_GetMapInfo(uiMapID);
 		if map then
 			app.CurrentMapInfo = map;
-			local ZONE_TEXT_TO_MAP_ID = L["ZONE_TEXT_TO_MAP_ID"];
-			local real = GetRealZoneText();
-			local otherMapID = real and ZONE_TEXT_TO_MAP_ID[real];
+			local zone = GetRealZoneText();
+			local otherMapID = zone and L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
 			if otherMapID then
 				uiMapID = otherMapID;
 			else
-				local zone = GetSubZoneText();
+				zone = GetSubZoneText();
 				if zone then
-					otherMapID = ZONE_TEXT_TO_MAP_ID[zone];
+					otherMapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
 					if otherMapID then uiMapID = otherMapID; end
 				end
 			end

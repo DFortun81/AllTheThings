@@ -11,11 +11,9 @@ for key,value in pairs({
 	["Abismo Rocha Negra"] = 242,	-- Blackrock Depths
 	["Covil Asa Negra"] = 287,	-- Blackwing Lair
 	["Pico da Rocha Negra"] = 250,	-- Blackrock Spire
-	["Gládio Cruel"] = 234,	-- Dire Maul
 	["Metrô Correfundo"] = 499,	-- Deeprun Tram
 	["Gnomeregan"] = 226,	-- Gnomeregan
 	["Maraudon"] = 280,	-- Maraudon
-	["Núcleo Derretido"] = 232,	-- Molten Core
 	["Naxxramas"] = 162,	-- Naxxramas
 	["Cavernas Ígneas"] = 213,	-- Ragefire Chasm
 	["Urzal dos Tuscos"] = 301,	-- Razorfen Kraul
