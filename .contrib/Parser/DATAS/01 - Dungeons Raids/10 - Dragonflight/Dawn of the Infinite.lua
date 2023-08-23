@@ -554,3 +554,11 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 		},
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, {
+	tier(DF_TIER, {
+		q(77624),	-- when you learn everything from Quantum Legs (Leather / Druid)
+		q(77628),	-- when you learn everything from Quantum Headpiece (Leather / Druid)
+		q(77636),	-- when you learn everything from Quantum Chestpiece (Leather / Druid)
+	}),
+});

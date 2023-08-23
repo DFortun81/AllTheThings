@@ -453,8 +453,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(73016, {	-- Hibernation
 					["sourceQuests"] = { 73015 },	-- A Sleepy Pet
-					["provider"] = { "n", 199259 },	-- Lasztak
-					["coord"] = { 13.3, 57.5, VALDRAKKEN },
+					["provider"] = { "n", 182082 },	-- Agapanthus
+					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 					["g"] = {
 						i(206979),	-- Posidriss (PET!)
 					},
