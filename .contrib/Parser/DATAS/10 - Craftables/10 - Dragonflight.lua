@@ -1751,6 +1751,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			-- Glyphs
 			FirstCraft(75582, 408277, ADDED_10_1_0);	-- Glyph of the Chosen Glaive
 			FirstCraft(75583, 408273, ADDED_10_1_0);	-- Glyph of the Heaved Armament
+			FirstCraft(76602, 416137, ADDED_10_1_5);	-- Glyph of the Shath'Yar
 		})),
 		i(194829, {	-- Fated Fortune Card
 			i(198127),	-- Recipe: Fated Fortune Cookie (RECIPE!)
