@@ -262,7 +262,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71283, 370533);	-- Residual Neural Channeling Agent
 			FirstCraft(75213, 405832, ADDED_10_1_0);	-- Stinky Bright Potion
 			-- Cauldrons
-			--FirstCraft(x, 405879, ADDED_10_1_0);	-- Cauldron of Extracted Putrescence
+			FirstCraft(75225, 405879, ADDED_10_1_0);	-- Cauldron of Extracted Putrescence
 			FirstCraft(71247, 370673);	-- Cauldron of the Pooka
 			FirstCraft(75243, 406106, ADDED_10_1_0);	-- Draconic Phial Cauldron
 			FirstCraft(71295, 370672);	-- Potion Cauldron of Ultimate Power

@@ -1082,7 +1082,6 @@ root(ROOTS.Unsorted, {
 				q(75022),	-- Vinyeti
 				q(75027),	-- Aerial Domination
 				q(75203),	--
-				q(75225),	--
 				q(75226),	--
 				q(75229),	--
 				q(75242),	--
