@@ -1385,9 +1385,6 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(198334),	-- P.E.W. x2
 			i(198335),	-- Sophisticated Problem Solver
 		}),
-		n(DROPS, {
-			i(198970),	-- Infinitely Attachable Pair o' Docks
-		}),
 	}),
 	prof(FISHING, {
 		i(198438, {	-- Draconic Recipe in a Bottle
