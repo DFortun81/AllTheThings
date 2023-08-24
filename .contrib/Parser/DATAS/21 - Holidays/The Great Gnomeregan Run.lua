@@ -4,7 +4,7 @@
 THE_GREAT_GNOMEREGAN_RUN_HEADER = createHeader({
 	readable = "The Great Gnomeregan Run",
 	constant = "THE_GREAT_GNOMEREGAN_RUN_HEADER",
-	icon = "236445",
+	icon = _.asset("Holiday_GnomeRun"),
 	eventID = EVENTS.THE_GREAT_GNOMEREGAN_RUN,
 	text = {
 		en = "The Great Gnomeregan Run",

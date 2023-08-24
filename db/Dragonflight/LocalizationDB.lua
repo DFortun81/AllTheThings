@@ -1216,7 +1216,7 @@ localize(L.HEADER_ICONS, {
 	[-1000292] = _.asset("Holiday_Pirate"),
 	[-1000293] = "Interface/Icons/calendar_secretsofazerothstart",
 	[-1000294] = "Interface/Icons/inv_misc_fish_06",
-	[-1000295] = "236445",
+	[-1000295] = _.asset("Holiday_GnomeRun"),
 	[-1000297] = _.asset("Difficulty_Timewalking"),
 	[-1000298] = _.asset("Holiday_Trialofstyle"),
 	[-1000299] = "Interface/Icons/inv_misc_celebrationcake_01",
