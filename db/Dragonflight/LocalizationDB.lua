@@ -972,7 +972,7 @@ localize(L.HEADER_ICONS, {
 	[-1000031] = _.asset("Interface_Rewards"),
 	[-1000033] = _.asset("Category_Secrets"),
 	[-1000034] = "Interface/Icons/achievement_transmog_collections",
-	[-1000035] = "Interface/Icons/Inv_archaeology_70_starlightbeacon",
+	[-1000035] =  _.asset("Interface_Special"),
 	[-1000036] = _.asset("Interface_Tchest"),
 	[-1000037] = _.asset("Interface_Vendor"),
 	[-1000039] = "3753381",

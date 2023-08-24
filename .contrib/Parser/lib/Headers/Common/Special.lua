@@ -5,7 +5,7 @@ SPECIAL = createHeader({
 	export = true,	-- This is referenced in topHeaders
 	-- #endif
 	-- #if AFTER LEGION
-	icon = "Interface\\Icons\\Inv_archaeology_70_starlightbeacon",
+	icon = _.asset("Interface_Special"),
 	-- #else
 	icon = "Interface\\Icons\\inv_sword_40",
 	-- #endif
