@@ -587,7 +587,7 @@ L.FILTER_ID_TYPES = {
 }
 L.FILTER_ID_ICONS = {
 	[1] = "Interface/Icons/inv_misc_orb_01",
-	[2] = "Interface/Icons/Ability_Mage_IceForm",
+	[2] = _.asset("Interface_Cosmetic"),
 	[3] = "Interface/Icons/inv_misc_cape_11",
 	[4] = "Interface/Icons/inv_chest_cloth_21",
 	[5] = "Interface/Icons/inv_chest_leather_09",

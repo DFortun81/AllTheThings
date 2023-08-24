@@ -16,7 +16,7 @@ for filterID,filterData in pairs({
 	},
 	[2] = {
 		readable = "Cosmetic",
-		icon = "Interface/Icons/Ability_Mage_IceForm",
+		icon = _.asset("Interface_Cosmetic"),
 		constant = "COSMETIC",
 		text = {
 			-- #if AFTER LEGION
