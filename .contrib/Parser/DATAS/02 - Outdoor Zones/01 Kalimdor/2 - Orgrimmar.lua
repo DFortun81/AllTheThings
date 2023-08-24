@@ -3163,7 +3163,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(29219, {	-- Bwemba's Spirit
 					["qg"] = 53081,	-- Bwemba
+					-- #if BEFORE 7.0.1
 					["sourceQuest"] = 29157,	-- The Zandalari Menace
+					-- #endif
 					["coord"] = { 32.6, 68.6, ORGRIMMAR },
 					["timeline"] = { "added 4.1.0.13726" },
 					["races"] = HORDE_ONLY,
