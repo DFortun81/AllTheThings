@@ -157,7 +157,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				18788,	-- Zaralek Cavern Challenge: Gold
 			}},
 			["g"] = {
-				title(792),	-- Isles Ace <Name>
+				title(523),	-- Isles Ace <Name>
 			}
 		})),
 		ach(18559, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Many Boxes, Many Rockses
