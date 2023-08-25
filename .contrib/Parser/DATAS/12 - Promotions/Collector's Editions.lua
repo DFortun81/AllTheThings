@@ -160,14 +160,14 @@ WOW_FIFTEENTH_ANNIVERSARY_COLLECTORS_EDITION = createHeader({
 		en = "These rewards were made available to anyone who purchased a World of Warcraft 15th Anniversary Collector's Edition.",
 	},
 });
-root(ROOTS.Promotions, n(COLLECTORS_EDITION, {
+root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_BALANCE }, {
 	tier(CLASSIC_TIER, bubbleDownSelf({ ["timeline"] = { REMOVED_2_0_1 } }, {
 		["description"] = "These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",
 		["groups"] = {
 			n(QUESTS, {
 				q(8547, {	-- Welcome! (Blood Elf)
 					["provider"] = { "i", 20938 },	-- Falconwing Square [Wrath+] / Sunstrider Isle Gift Voucher
-					["timeline"] = { ADDED_2_0_1 },
+					["timeline"] = { ADDED_2_0_1 }, 
 					["maps"] = { EVERSONG_WOODS },
 					["races"] = { BLOODELF },
 					["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
@@ -326,7 +326,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, {
 		},
 	})),
 	-- #if ANYCLASSIC
-	n(WOTLK_CLASSIC_NORTHREND_HEROIC_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_4_A, REMOVED_3_4_3 }, ["u"] = BLIZZARD_BALANCE }, {
+	n(WOTLK_CLASSIC_NORTHREND_HEROIC_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_4_A, REMOVED_3_4_3 } }, {
 		["description"] = "These rewards were made available to anyone who purchased a Heroic Upgrade Edition of The Burning Crusade Classic.",
 		["groups"] = {
 			i(198665),	-- Pebble's Pebble
@@ -357,7 +357,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, {
 		},
 	})),
 	-- #endif
-	n(WOTLK_CLASSIC_NORTHREND_EPIC_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_4_A, REMOVED_3_4_3 }, ["u"] = BLIZZARD_BALANCE }, {
+	n(WOTLK_CLASSIC_NORTHREND_EPIC_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_4_A, REMOVED_3_4_3 } }, {
 		["description"] = "These rewards were made available to anyone who purchased a Eric Upgrade Edition of The Burning Crusade Classic.",
 		["groups"] = {
 			-- #if ANYCLASSIC
@@ -446,7 +446,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, {
 			}),
 		},
 	})),
-	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 }, ["u"] = BLIZZARD_BALANCE }, {
+	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } }, {
 		["description"] = "These rewards are available to anyone who purchases Dragonflight Heroic Edition.",
 		["timeline"] = { ADDED_9_2_5 },
 		["groups"] = {
@@ -502,7 +502,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, {
 			i(106256),	-- Treasure Goblin (PET!)
 		},
 	})),
-	n(DIABLO_IV, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2 }, ["u"] = BLIZZARD_BALANCE }, {
+	n(DIABLO_IV, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2 } }, {
 		["description"] = "These rewards are available to anyone who purchases Diablo 4 Standard Edition.",
 		["groups"] = {
 			i(191114),	-- Amalgam of Rage (MOUNT!)
@@ -516,32 +516,32 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, {
 			i(134047),	-- Baby Winston (PET!)
 		},
 	})),
-	n(STARCRAFT_II_WINGS_OF_LIBERTY, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_5 }, ["u"] = BLIZZARD_BALANCE }, {
+	n(STARCRAFT_II_WINGS_OF_LIBERTY, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_5 } }, {
 		["description"] = "These rewards are available to anyone who purchases Starcraft 2: Wings of Liberty Collection.",
 		["groups"] = {
 			ach(4824),	-- Collector's Edition: Mini Thor
 			i(56806),	-- Mini Thor (PET!)
 		},
 	})),
-	n(STARCRAFT_II_HEART_OF_THE_SWARM, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 }, ["u"] = BLIZZARD_BALANCE }, {
+	n(STARCRAFT_II_HEART_OF_THE_SWARM, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 		["description"] = "These rewards are available to anyone who purchases Starcraft 2: Heart of the Swarm Collection.",
 		["groups"] = {
 			ach(7842),	-- Collector's Edition: Baneling
 			i(90177),	-- Baneling (PET!)
 		},
 	})),
-	n(STARCRAFT_II_LEGACY_OF_THE_VOID, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 }, ["u"] = BLIZZARD_BALANCE }, {
+	n(STARCRAFT_II_LEGACY_OF_THE_VOID, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {
 		["description"] = "These rewards are available to anyone who purchases Starcraft 2: Legacy of the Void Collection.",
 		["groups"] = {
 			ach(10309),	-- Collector's Edition: Zeradar
 			i(128423),	-- Zeradar (PET!)
 		},
 	})),
-	n(WARCRAFT_III_REFORGED_SPOILS_OF_WAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 }, ["u"] = BLIZZARD_BALANCE }, {
+	n(WARCRAFT_III_REFORGED_SPOILS_OF_WAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {
 		["description"] = "These rewards are available to anyone who purchases Warcraft 3: Refogred, Spoils of War Edition.",
 		["groups"] = {
 			ach(13196),	-- Meat Marauder
 			i(164571),	-- Meat Wagon (MOUNT!)
 		},
 	})),
-}));
+})));
