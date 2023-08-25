@@ -24,7 +24,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coords"] = {
 					{ 51.2, 43.3, THALDRASZUS },
 					{ 58.3, 67.7, THE_WAKING_SHORES },
-					{ 64.1, 41.7, OHNAHRAN_PLAINS }
+					{ 64.1, 41.7, OHNAHRAN_PLAINS },
+					{ 45.6, 39.8, THE_AZURE_SPAN },
 				},
 				["g"] = {
 					i(209833),	-- Crate of Dreambound Armor
@@ -35,7 +36,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coords"] = {
 					{ 51.2, 43.3, THALDRASZUS },
 					{ 58.3, 67.7, THE_WAKING_SHORES },
-					{ 64.1, 41.7, OHNAHRAN_PLAINS }
+					{ 64.1, 41.7, OHNAHRAN_PLAINS },
+					{ 45.6, 39.8, THE_AZURE_SPAN },
 				},
 				["isWeekly"] = true,
 				["g"] = {
@@ -96,6 +98,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 51.1, 43.4, THALDRASZUS },
 					{ 58.4, 67.8, THE_WAKING_SHORES },
 					{ 64.2, 41.6, OHNAHRAN_PLAINS},
+					{ 45.6, 39.7, THE_AZURE_SPAN },
 				},
 				["g"] = bubbleDownFiltered({
 					["cost"] = {{ "i", DREAMSURGE_COALESCENCE, 100 }},
@@ -162,10 +165,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(205010, {	-- Crimson Swoglet (PET!)
 						["cost"] = {{ "i", DREAMSURGE_COALESCENCE, 250 }},
 					}),
-					i(209858, {	-- Dreamsurge Remnant
+					i(209858, {	-- Dreamsurge Remnant (TOY!)
 						["cost"] = {{ "i", DREAMSURGE_COALESCENCE, 500 }},
 					}),
-					i(209944, {	-- Friendsurge Defenders
+					i(209944, {	-- Friendsurge Defenders (TOY!)
 						["cost"] = {{ "i", DREAMSURGE_COALESCENCE, 500 }},
 					}),
 				}),
@@ -175,6 +178,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 51.2, 43.3, THALDRASZUS },
 					{ 58.4, 67.7, THE_WAKING_SHORES },
 					{ 64.1, 41.7, OHNAHRAN_PLAINS },
+					{ 45.6, 39.8, THE_AZURE_SPAN },
 				},
 				["g"] = bubbleDownFiltered({
 					["cost"] = {{ "i", DREAMSURGE_CHRYSALIS, 1 }},
