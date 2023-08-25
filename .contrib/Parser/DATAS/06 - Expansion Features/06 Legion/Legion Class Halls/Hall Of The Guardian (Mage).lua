@@ -329,6 +329,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							11997,	-- The Frozen Flame
 							42479,	-- The Mage Hunter
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 112440 },	-- Jackson Watkins
 						["coord"] = { 44.8, 57.8, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
 						["g"] = {
