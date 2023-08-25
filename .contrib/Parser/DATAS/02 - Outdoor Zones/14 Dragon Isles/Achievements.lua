@@ -156,6 +156,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				18750,	-- Waking Shores Challenge: Gold
 				18788,	-- Zaralek Cavern Challenge: Gold
 			}},
+			["g"] = {
+				title(792),	-- Isles Ace <Name>
+			}
 		})),
 		ach(18559, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Many Boxes, Many Rockses
 			["cost"] = {{"i", 199216, 50 }},	-- 50x A Box of Rocks
