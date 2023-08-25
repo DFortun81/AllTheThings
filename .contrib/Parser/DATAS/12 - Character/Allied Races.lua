@@ -565,7 +565,9 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				},
 				["sourceQuests"] = {
 					50239,	-- A Choice of Allies (A)
+					-- #if BEFORE 10.1.5
 					55736,	-- Welcome to the Resistance
+					-- #endif
 				},
 				["races"] = ALLIANCE_ONLY,
 			}),
