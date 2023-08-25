@@ -16,7 +16,7 @@ for filterID,filterData in pairs({
 	},
 	[2] = {
 		readable = "Cosmetic",
-		icon = _.asset("Interface_Cosmetic"),
+		icon = [[~_.asset("Interface_Cosmetic")]],
 		constant = "COSMETIC",
 		text = {
 			-- #if AFTER LEGION
