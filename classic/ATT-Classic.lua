@@ -4592,10 +4592,13 @@ else
 		if app.Settings.Collectibles.Mounts then
 			local count,r = 0,{};
 			for i,g in pairs(SearchForFieldContainer("spellID")) do
-				if ((g[1].f and g[1].f == app.FilterConstants.MOUNTS)
-				or (g[1].filterID and g[1].filterID == app.FilterConstants.MOUNTS)) and not r[i] then
-					if g[1].collected then count = count + 1; end
-					r[i] = 1;
+				for j,o in ipairs(g) do
+					if ((o.f and o.f == app.FilterConstants.MOUNTS)
+					or (o.filterID and o.filterID == app.FilterConstants.MOUNTS)) and not r[i] then
+						if o.collected then count = count + 1; end
+						r[i] = 1;
+						break;
+					end
 				end
 			end
 			if t.rank > 1 then
