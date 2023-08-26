@@ -12,7 +12,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 		-- #if BEFORE WRATH
 		["zone-text-areaID"] = 19,	-- Zul'Gurub
 		-- #endif
-		["mapID"] = ZULGURUB,
+		["maps"] = {
+			ZULGURUB,
+			-- #if ANYCLASSIC
+			233,
+			-- #endif
+		},
 		["timeline"] = { "removed 4.0.3" },
 		["isRaid"] = true,
 		["lvl"] = 58,
