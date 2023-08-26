@@ -36,8 +36,17 @@ root(ROOTS.Promotions, {
 			}),
 			i(34519, {	-- Silver Pig Coin
 				["description"] = "Amazon Prime Gaming reward from July 25th 2023 till August 24th 2023.",
-				["timeline"] = { "added 10.1.5.50585", "removed 10.1.5.99999" },
+				["timeline"] = { "added 10.1.5.50585", "removed 10.1.5.50791" },
+				["u"] = REMOVED_FROM_GAME,
 			}),
+			i(38312, {	-- Tabard of Brilliance
+				["description"] = "Amazon Prime Gaming reward from August 24th 2023 till September 28th 2023.",
+				["timeline"] = { "added 10.1.5.50791", "removed 10.1.7.99999" },
+			}),
+			--[[i(23709, {	-- Tabard of Frost
+				["description"] = "Amazon Prime Gaming reward from August 24th 2023 till September 28th 2023.",
+				["timeline"] = { "added 10.1.5.50585", "removed 10.1.7.99999" },
+			}),--]]
 		},
 	}),
 });
