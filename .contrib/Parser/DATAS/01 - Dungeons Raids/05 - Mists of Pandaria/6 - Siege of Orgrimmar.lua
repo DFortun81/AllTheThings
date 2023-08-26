@@ -1880,11 +1880,11 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					-- i(113226),	-- Cape of the Alpha
 					-- i(113230),	-- Drape of the Omega
 					-- i(113223),	-- Turtleshell Greatcloak
-					i(113225),	-- Kalaena's Arcane Handwraps [Confirmed 2022-04-28]
+					-- i(113225),	-- Kalaena's Arcane Handwraps [Confirmed 2022-04-28] By who? Remarking this unconfirmed due to discussion in schrodingers-loot  with Carbion, Ony, Emerno on 2023-08-26
 					-- i(113218),	-- Seebo's Sainted Touch
-					i(113220),	-- Crimson Gauntlets of Death
+					-- i(113220),	-- Crimson Gauntlets of Death [Remarking this unconfirmed due to discussion in schrodingers-loot on 2023-08-26 with Carbion, Ony, Emerno]
 					-- i(113221),	-- Siid's Silent Stranglers
-					i(113222),	-- Keengrip Arrowpullers
+					-- i(113222),	-- Keengrip Arrowpullers [Remarking this unconfirmed due to discussion in schrodingers-loot on 2023-08-26 with Carbion, Ony, Emerno]
 					-- i(113227),	-- Marco's Crackling Gloves
 					-- i(113228),	-- Gauntlets of Discarded Time
 					-- i(113219),	-- Romy's Reliable Grips
