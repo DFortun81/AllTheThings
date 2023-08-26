@@ -2937,9 +2937,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 							i(142098, {	-- Drudge Ghoul (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
-							i(138955, {	-- Illusion: Rune of Razorice
+							i(138955, {	-- Illusion: Rune of Razorice (ILLUSION!)
 								["classes"] = { DEATHKNIGHT },
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(51799),	-- Halion, Staff of Forgotten Love
 							i(51797),	-- Tainted Twig of Nordrassil
@@ -3294,9 +3294,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 							i(142099, {	-- Wicked Soul (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
-							i(138955, {	-- Illusion: Rune of Razorice
+							i(138955, {	-- Illusion: Rune of Razorice (ILLUSION!)
 								["classes"] = { DEATHKNIGHT },
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(51943),	-- Halion, Staff of Forgotten Love
 							i(51945),	-- Tainted Twig of Nordrassil
@@ -3601,9 +3601,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						["creatureID"] = 36789,	-- Valithria Dreamwalker
 						["groups"] = {
 							ach(4619),	-- Portal Jockey (25 player)
-							i(138832, {	-- Illusion: Earthliving
+							i(138832, {	-- Illusion: Earthliving (ILLUSION!)
 								["classes"] = { SHAMAN },
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(50183),	-- Lungbreaker
 							i(50472),	-- Nightmare Ender
@@ -3653,9 +3653,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 							i(142098, {	-- Drudge Ghoul (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
-							i(138955, {	-- Illusion: Rune of Razorice
+							i(138955, {	-- Illusion: Rune of Razorice (ILLUSION!)
 								["classes"] = { DEATHKNIGHT },
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(50429),	-- Archus, Greatstaff of Antonidas
 							i(50070),	-- Glorenzelg, High-Blade of the Silver Hand
@@ -3969,9 +3969,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						["creatureID"] = 36789,	-- Valithria Dreamwalker
 						["groups"] = {
 							ach(4619),	-- Portal Jockey (25 player)
-							i(138832, {	-- Illusion: Earthliving
+							i(138832, {	-- Illusion: Earthliving (ILLUSION!)
 								["classes"] = { SHAMAN },
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(50621),	-- Lungbreaker
 							i(50631),	-- Nightmare Ender
@@ -4035,9 +4035,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 							i(142099, {	-- Wicked Soul (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
-							i(138955, {	-- Illusion: Rune of Razorice
+							i(138955, {	-- Illusion: Rune of Razorice (ILLUSION!)
 								["classes"] = { DEATHKNIGHT },
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(50731),	-- Archus, Greatstaff of Antonidas
 							i(50730),	-- Glorenzelg, High-Blade of the Silver Hand

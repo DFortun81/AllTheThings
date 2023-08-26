@@ -1463,13 +1463,13 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 	}),
 	filter(ILLUSIONS, {
-		ill(5387),	-- Agility
-		ill(5861),	-- Beastslayer
-		ill(5393),	-- Crusader
-		ill(1898),	-- Lifestealing
-		ill(5360),	-- Hide Weapon Enchant
-		ill(5389),	-- Striking
-		ill(5862),	-- Titanguard
+		ill(5387),	-- Agility (ILLUSION!)
+		ill(5861),	-- Beastslayer (ILLUSION!)
+		ill(5393),	-- Crusader (ILLUSION!)
+		ill(1898),	-- Lifestealing (ILLUSION!)
+		ill(5360),	-- Hide Weapon Enchant (ILLUSION!)
+		ill(5389),	-- Striking (ILLUSION!)
+		ill(5862),	-- Titanguard (ILLUSION!)
 	}),
 	filter(SHIRTS, {
 		i(6125, {	-- Brawler's Harness

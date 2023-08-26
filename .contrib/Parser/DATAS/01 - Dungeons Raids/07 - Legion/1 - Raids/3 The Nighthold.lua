@@ -197,7 +197,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						ach(10829, crit(3)),	-- Arcing Aqueducts / Chronomatic Anomaly
 						i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 1] (RECIPE!)
 						i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 2] (RECIPE!)
-						i(138828),	-- Illusion: Chronos
+						i(138828),	-- Illusion: Chronos (ILLUSION!)
 						i(140903),	-- Hood of Fading Opportunity
 						i(140894),	-- Zealous Timestone Pendant
 						i(140853),	-- Chaos-Scarred Mantle
@@ -530,7 +530,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					ach(10697),	-- Grand Opening
 					i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 1] (RECIPE!)
 					i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 2] (RECIPE!)
-					i(138828),	-- Illusion: Chronos
+					i(138828),	-- Illusion: Chronos (ILLUSION!)
 					i(140903),	-- Hood of Fading Opportunity
 					i(140894),	-- Zealous Timestone Pendant
 					i(140853),	-- Chaos-Scarred Mantle
@@ -892,7 +892,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				cr(104415, e(1725, {	-- Chronomatic Anomaly
 					i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 1] (RECIPE!)
 					i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 2] (RECIPE!)
-					i(138828),	-- Illusion: Chronos
+					i(138828),	-- Illusion: Chronos (ILLUSION!)
 					i(140903),	-- Hood of Fading Opportunity
 					i(140894),	-- Zealous Timestone Pendant
 					i(140853),	-- Chaos-Scarred Mantle
@@ -1246,7 +1246,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					ach(10842),	-- Mythic: Chronomatic Anomaly
 					i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 1] (RECIPE!)
 					i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 2] (RECIPE!)
-					i(138828),	-- Illusion: Chronos
+					i(138828),	-- Illusion: Chronos (ILLUSION!)
 					i(140903),	-- Hood of Fading Opportunity
 					i(140894),	-- Zealous Timestone Pendant
 					i(140853),	-- Chaos-Scarred Mantle

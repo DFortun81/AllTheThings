@@ -65,7 +65,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
-					i(184352, {	-- Illusion: Transcendent Soul
+					i(184352, {	-- Illusion: Transcendent Soul (ILLUSION!)
 						["cost"] = {
 							{ "c", ANIMA, 1500 },
 							{ "c", GRATEFUL, 30 },

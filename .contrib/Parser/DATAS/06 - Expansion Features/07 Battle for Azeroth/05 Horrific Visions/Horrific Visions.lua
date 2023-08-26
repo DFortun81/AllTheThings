@@ -294,7 +294,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						n(158157, {	-- Overlord Mathias Shaw
 							["description"] = "Assist Valeera with some Defias Company downsizing in Old Town.",
 							["g"] = {
-								i(174932),	-- Illusion: Void Edge -- Valeera
+								i(174932),	-- Illusion: Void Edge (ILLUSION!)
 								i(173289),	-- Pulsing Azerite Geode (Rank 2)
 							},
 						}),

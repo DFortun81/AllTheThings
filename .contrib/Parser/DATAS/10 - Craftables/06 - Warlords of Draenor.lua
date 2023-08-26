@@ -238,8 +238,8 @@ root(ROOTS.Craftables, tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDow
 		}),
 		filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
 			i(138795, {	-- Tome of Illusions: Draenor
-				ill(5334),	-- Mark of the Frostwolf
-				ill(5330),	-- Mark of the Thunderlord
+				ill(5334),	-- Mark of the Frostwolf (ILLUSION!)
+				ill(5330),	-- Mark of the Thunderlord (ILLUSION!)
 			}),
 		})),
 		filter(MISC, {

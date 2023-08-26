@@ -289,7 +289,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						i(116251),	-- Ironshatter Legplates
 						i(116042),	-- Ram-Carrier's Treads
 						i(116317),	-- Storage House Key
-						i(138809),	-- Illusion: Mark of Blackrock
+						i(138809, {	-- Illusion: Mark of Blackrock (ILLUSION!)
+							["timeline"] = { ADDED_7_0_3 },
+						}),
 						i(122200),	-- Music Roll: A Siege of Worlds
 						un(REMOVED_FROM_GAME, i(115523)),	-- Blackhand's Severed Arm
 					})),
@@ -785,7 +787,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 							})),
 						},
 					}),
-					i(138809),	-- Illusion: Mark of Blackrock
+					i(138809, {	-- Illusion: Mark of Blackrock (ILLUSION!)
+						["timeline"] = { ADDED_7_0_3 },
+					}),
 					i(122200),	-- Music Roll: A Siege of Worlds
 					i(113988),	-- Blackhand Doomstaff
 					i(113980),	-- Iron Soldier's Saber
@@ -1269,7 +1273,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 							})),
 						},
 					}),
-					i(138809),	-- Illusion: Mark of Blackrock
+					i(138809, {	-- Illusion: Mark of Blackrock (ILLUSION!)
+						["timeline"] = { ADDED_7_0_3 },
+					}),
 					i(122200),	-- Music Roll: A Siege of Worlds
 					i(113988),	-- Blackhand Doomstaff
 					i(113980),	-- Iron Soldier's Saber
@@ -1772,7 +1778,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						},
 					}),
 					i(116660),	-- Ironhoof Destroyer (MOUNT!)
-					i(138809),	-- Illusion: Mark of Blackrock
+					i(138809, {	-- Illusion: Mark of Blackrock (ILLUSION!)
+						["timeline"] = { ADDED_7_0_3 },
+					}),
 					i(122200),	-- Music Roll: A Siege of Worlds
 					i(113988),	-- Blackhand Doomstaff
 					i(113980),	-- Iron Soldier's Saber

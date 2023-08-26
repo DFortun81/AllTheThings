@@ -22,7 +22,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 				}),
 				ach(14971, {	-- Duelist: Shadowlands Season 2
 					i(185302),	-- Unchained Gladiator's Prestigious Cloak
-					ill(6344),	-- Unchained Fury
+					ill(6344),	-- Unchained Fury (ILLUSION!)
 				}),
 				ach(14974, {	-- Elite: Shadowlands Season 2
 					i(185303),	-- Unchained Gladiator's Tabard
@@ -193,7 +193,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 							i(185293),	-- Unchained Aspirant's Warglaive
 						}),
 					},
-				}),							
+				}),
 			})),
 			n(PVP_GLADIATOR, bubbleDown({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH } }, {
 				n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>

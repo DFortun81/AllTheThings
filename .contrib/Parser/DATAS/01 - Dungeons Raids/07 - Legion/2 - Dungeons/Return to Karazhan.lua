@@ -278,7 +278,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				e(1837, {	-- Moroes
 					["creatureID"] = 114312,	-- Moroes
 					["g"] = {
-						i(138797),	-- Illusion: Mongoose
+						i(138797),	-- Illusion: Mongoose (ILLUSION!)
 						i(142246, {	-- Broken Pocket Watch
 							["description"] = "This is a rare drop that eventually leads to adding Moroes as a follower.",
 						}),
@@ -310,7 +310,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				e(1817, {	-- Shade of Medivh
 					["creatureID"] = 114350,	-- Shade of Medivh
 					["g"] = {
-						i(138798),	-- Illusion: Sunfire
+						i(138798),	-- Illusion: Sunfire (ILLUSION!)
 						i(142207),	-- Amulet of the Last Guardian
 						i(142157),	-- Aran's Relaxing Ruby
 						i(142131),	-- Frozen-Link Chestguard
@@ -474,7 +474,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["creatureID"] = 114312,	-- Moroes
 					["g"] = {
 						ach(11338),	-- Dine and Bash
-						i(138797),	-- Illusion: Mongoose
+						i(138797),	-- Illusion: Mongoose (ILLUSION!)
 						i(142246, {	-- Broken Pocket Watch
 							["description"] = "This is a rare drop that eventually leads to adding Moroes as a follower.",
 						}),
@@ -532,7 +532,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["creatureID"] = 114350,	-- Shade of Medivh
 					["g"] = {
 						ach(11432),	-- Scared Straight
-						i(138798),	-- Illusion: Sunfire
+						i(138798),	-- Illusion: Sunfire (ILLUSION!)
 						i(142207),	-- Amulet of the Last Guardian
 						i(142157),	-- Aran's Relaxing Ruby
 						i(142131),	-- Frozen-Link Chestguard

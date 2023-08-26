@@ -285,8 +285,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			i(117394, {	-- Satchel of Chilled Goods [Epic Quality]
 				["timeline"] = { "added 6.0.1.18594" },
 				["groups"] = {
-					i(138838, {	-- Illusion: Deathfrost
-						["timeline"] = { "added 7.0.3.22248" },
+					i(138838, {	-- Illusion: Deathfrost (ILLUSION!)
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 					i(117373, {	-- Frostscythe of Lord Ahune
 						["timeline"] = { "added 6.0.1.18594" },
@@ -317,8 +317,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["description"] = "This item can be looted and completed once per character.",
 				["timeline"] = { "added 2.4.0.7994" },
 			}),
-			i(138838, {	-- Illusion: Deathfrost
-				["timeline"] = { "added 7.0.3.22248" },
+			i(138838, {	-- Illusion: Deathfrost (ILLUSION!)
+				["timeline"] = { ADDED_7_0_3 },
 			}),
 			applyclassicphase(TBC_PHASE_THREE, i(35498, {["timeline"]={"added 2.4.2"}})),	-- Formula: Enchant Weapon - Deathfrost (RECIPE!)
 

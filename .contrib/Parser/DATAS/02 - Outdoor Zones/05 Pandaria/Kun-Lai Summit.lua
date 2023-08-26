@@ -5600,7 +5600,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 35.4, 83.2, KUN_LAI_SUMMIT },
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							un(ELITE_PVP_REQUIREMENT, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
+							i(120286, { -- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
+								["u"] = ELITE_PVP_REQUIREMENT,
+								["timeline"] = { ADDED_6_0_2 },
+							}),
 							n(WEAPONS, {
 								i(144250, {	-- Arsenal: Prideful Gladiator's Weapons (A)
 									["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor

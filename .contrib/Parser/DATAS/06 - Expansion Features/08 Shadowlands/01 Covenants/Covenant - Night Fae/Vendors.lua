@@ -244,7 +244,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 							{ "c", GRATEFUL, 20 },
 						},
 					}),
-					i(184164, {	-- Illusion: Wild Soul
+					i(184164, {	-- Illusion: Wild Soul (ILLUSION!)
 						["cost"] = { { "c", ANIMA, 2500 } },
 					}),
 					MEMORY_OF_A_VITAL_SACRIFICE,

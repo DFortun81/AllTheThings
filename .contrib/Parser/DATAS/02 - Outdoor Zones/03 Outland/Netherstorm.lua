@@ -1647,8 +1647,8 @@ root(ROOTS.Zones, {
 							i(29456),	-- Gift of the Ethereal
 							i(29121),	-- Guile of Khoraazi
 							i(29119),	-- Haramad's Bargain
-							i(138796, {	-- Illusion: Executioner
-								["timeline"] = { "added 7.0.3.22248" },
+							i(138796, {	-- Illusion: Executioner (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(29122),	-- Nether Runner's Cowl
 							i(29457),	-- Nethershard

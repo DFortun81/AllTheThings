@@ -70,9 +70,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 			e(1567, {	-- Hydross the Unstable
 				["creatureID"] = 21216,
 				["groups"] = {
-					i(138834, {	-- Illusion: Frostbrand
+					i(138834, {	-- Illusion: Frostbrand (ILLUSION!)
 						["classes"] = { SHAMAN },
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 					i(97553, {	-- Tainted Waveling (PET!)
 						["timeline"] = { "added 5.3.0.16758" },
@@ -105,9 +105,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_TWO, {
 						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
-					i(138834, {	-- Illusion: Frostbrand
+					i(138834, {	-- Illusion: Frostbrand (ILLUSION!)
 						["classes"] = { SHAMAN },
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 					i(30058),	-- Mallet of the Tides
 					i(30059),	-- Choker of Animalistic Fury

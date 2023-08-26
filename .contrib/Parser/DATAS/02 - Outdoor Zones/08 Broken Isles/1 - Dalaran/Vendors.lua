@@ -2007,7 +2007,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 29.6, 74.8, LEGION_DALARAN },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(147778)),	-- Enchanter's Illusion - Demonic Tyranny
+						un(ELITE_PVP_REQUIREMENT, i(147778)),	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
 						--i(139775),	-- Alliance Enthusiast (PET!)
 						--i(142379),	-- Dutiful Squire (PET!)
 						un(ELITE_PVP_REQUIREMENT, i(147337)),	-- Cruel Gladiator's Tabard [Elite Rating]
@@ -5264,7 +5264,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 57.0, 27.8, LEGION_DALARAN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(147778)),	-- Enchanter's Illusion - Demonic Tyranny
+						un(ELITE_PVP_REQUIREMENT, i(147778)),	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
 					--	i(142380),	-- Dutiful Gruntling (PET!)
 					--	i(139776),	-- Horde Fanatic (PET!)
 						un(ELITE_PVP_REQUIREMENT, i(147336)),	-- Cruel Gladiator's Tabard [Elite Rating]

@@ -1562,7 +1562,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(62377),	-- Cloak of the Dryads
 						i(62386),	-- Cord of the Raven Queen
 						i(62375),	-- Galrond's Band
-						i(138803),	-- Illusion: Mending
+						i(138803, {	-- Illusion: Mending (ILLUSION!)
+							["timeline"] = { ADDED_7_0_3 },
+						}),
 						i(62376),	-- Mountain's Mouth
 						i(62374),	-- Sly Fox Jerkin
 						i(65906),	-- Tabard of the Guardians of Hyjal

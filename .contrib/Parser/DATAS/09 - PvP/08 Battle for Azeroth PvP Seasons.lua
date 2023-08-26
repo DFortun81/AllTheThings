@@ -10,7 +10,7 @@ root(ROOTS.PVP, {
 				ach(12959),	-- Challenger: Battle for Azeroth Season 1
 				ach(13199),	-- Combatant: Battle for Azeroth Season 1
 				ach(12962, {	-- Duelist: Battle for Azeroth Season 1
-					ill(6096),	-- Dreadflame
+					ill(6096),	-- Dreadflame (ILLUSION!)
 					i(164575),	-- Dread Gladiator's Cloak (A)
 					i(164574),	-- Dread Gladiator's Cloak (H)
 				}),
@@ -542,7 +542,7 @@ root(ROOTS.PVP, {
 				ach(13203),	-- Challenger: Battle for Azeroth Season 2
 				ach(13204),	-- Combatant: Battle for Azeroth Season 2
 				ach(13209, {	-- Duelist: Battle for Azeroth Season 2
-					ill(6096),	-- Dreadflame
+					ill(6096),	-- Dreadflame (ILLUSION!)
 					i(165060),	-- Alliance Sinister Gladiator's Cloak
 					i(165059),	-- Horde Sinister Gladiator's Cloak
 				}),
@@ -1098,7 +1098,7 @@ root(ROOTS.PVP, {
 				ach(13634),	-- Challenger: Battle for Azeroth Season 3
 				ach(13639),	-- Combatant: Battle for Azeroth Season 3
 				ach(13642, {	-- Duelist: Battle for Azeroth Season 3
-					ill(6096),	-- Dreadflame
+					ill(6096),	-- Dreadflame (ILLUSION!)
 					i(167382),	-- Notorious Gladiator's Cloak (A)
 					i(167381),	-- Notorious Gladiator's Cloak (H)
 				}),
@@ -1702,7 +1702,7 @@ root(ROOTS.PVP, {
 					["filterID"] = MOUNTS,
 				}),
 				ach(13964, {	-- Duelist: Battle for Azeroth Season 4
-					ill(6096),	-- Dreadflame
+					ill(6096),	-- Dreadflame (ILLUSION!)
 					i(172671),	-- Corrupted Gladiator's Cloak (A)
 					i(172670),	-- Corrupted Gladiator's Cloak (H)
 				}),

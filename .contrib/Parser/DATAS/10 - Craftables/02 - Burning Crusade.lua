@@ -381,9 +381,9 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 		}))),
 		filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
 			i(138789, {	-- Tome of Illusions: Outland
-				ill(5390),	-- Battlemaster
-				ill(2674),	-- Spellsurge
-				ill(5864),	-- Netherflame
+				ill(5390),	-- Battlemaster (ILLUSION!)
+				ill(2674),	-- Spellsurge (ILLUSION!)
+				ill(5864),	-- Netherflame (ILLUSION!)
 			}),
 		})),
 		filter(MISC, {

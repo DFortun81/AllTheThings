@@ -224,7 +224,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			i(90918),	-- Celebration Package
 		}),
 	})),
-	n(WOW_ANNIVERSARY_TEN, bubbleDownSelf({ ["timeline"] = { "added 6.0.1.18125", "removed 6.2.0.19953" } },{
+	n(WOW_ANNIVERSARY_TEN, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2, "removed 6.2.0.19953" } },{
 		ach(8820, {	-- 10th Anniversary
 			i(115301),	-- Molten Corgi (PET!)
 		}),
@@ -238,7 +238,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					i(115484),	-- Core Hound (MOUNT!)
 				}),
 				i(118574),	-- Hatespark the Tiny (PET!)
-				i(118572),	-- Illusion: Flames of Ragnaros
+				i(118572),	-- Illusion: Flames of Ragnaros (ILLUSION!)
 				i(118942),	-- Crown of Power
 				i(118941),	-- Crown of Woe
 				i(118939),	-- Crown of Destruction

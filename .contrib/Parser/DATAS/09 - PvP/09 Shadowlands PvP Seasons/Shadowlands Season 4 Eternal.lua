@@ -23,7 +23,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 				ach(15602),		-- Rival I: Shadowlands Season 4
 				ach(15603),		-- Rival II: Shadowlands Season 4
 				ach(15604, {	-- Duelist: Shadowlands Season 4
-					ill(6378),	-- Eternal Flux
+					ill(6378),	-- Eternal Flux (ILLUSION!)
 					i(192205),	-- Eternal Gladiator's Prestigious Cloak
 				}),
 				ach(15639, {	-- Elite: Shadowlands Season 4

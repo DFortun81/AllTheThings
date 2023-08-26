@@ -323,9 +323,9 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 		}),
 		filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
 			i(138790, {	-- Tome of Illusions: Northrend
-				ill(5391),	-- Berserking
-				ill(5388),	-- Greater Spellpower
-				ill(1894),	-- Icy Chill
+				ill(5391),	-- Berserking (ILLUSION!)
+				ill(5388),	-- Greater Spellpower (ILLUSION!)
+				ill(1894),	-- Icy Chill (ILLUSION!)
 			}),
 		})),
 		filter(MISC, {

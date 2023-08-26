@@ -257,7 +257,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						i(128612),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 3] (RECIPE!)
 						i(139639),	-- Vantus Rune Technique: Xavius [Rank 1] (RECIPE!)
 						i(137751),	-- Vantus Rune Technique: Xavius [Rank 2] (RECIPE!)
-						i(138827),	-- Illusion: Nightmare
+						i(138827),	-- Illusion: Nightmare (ILLUSION!)
 						i(139189),	-- Hood of Darkened Visions
 						i(139332),	-- Blackened Portalstone Necklace
 						i(139232),	-- Midnight Herald's Pauldrons
@@ -491,7 +491,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(128612),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 3] (RECIPE!)
 					i(139639),	-- Vantus Rune Technique: Xavius [Rank 1] (RECIPE!)
 					i(137751),	-- Vantus Rune Technique: Xavius [Rank 2] (RECIPE!)
-					i(138827),	-- Illusion: Nightmare
+					i(138827),	-- Illusion: Nightmare (ILLUSION!)
 					i(139189),	-- Hood of Darkened Visions
 					i(139332),	-- Blackened Portalstone Necklace
 					i(139232),	-- Midnight Herald's Pauldrons
@@ -709,7 +709,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(128612),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 3] (RECIPE!)
 					i(139639),	-- Vantus Rune Technique: Xavius [Rank 1] (RECIPE!)
 					i(137751),	-- Vantus Rune Technique: Xavius [Rank 2] (RECIPE!)
-					i(138827),	-- Illusion: Nightmare
+					i(138827),	-- Illusion: Nightmare (ILLUSION!)
 					i(139189),	-- Hood of Darkened Visions
 					i(139332),	-- Blackened Portalstone Necklace
 					i(139232),	-- Midnight Herald's Pauldrons
@@ -943,7 +943,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(128612),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 3] (RECIPE!)
 					i(139639),	-- Vantus Rune Technique: Xavius [Rank 1] (RECIPE!)
 					i(137751),	-- Vantus Rune Technique: Xavius [Rank 2] (RECIPE!)
-					i(138827),	-- Illusion: Nightmare
+					i(138827),	-- Illusion: Nightmare (ILLUSION!)
 					i(139189),	-- Hood of Darkened Visions
 					i(139332),	-- Blackened Portalstone Necklace
 					i(139232),	-- Midnight Herald's Pauldrons

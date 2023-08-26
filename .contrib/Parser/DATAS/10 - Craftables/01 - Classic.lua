@@ -800,9 +800,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		}))),
 		filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
 			i(138787, {	-- Tome of Illusions: Azeroth
-				ill(803),	-- Fiery Weapon
-				ill(1899),	-- Unholy Weapon
-				ill(5863),	-- Coldlight
+				ill(803),	-- Fiery Weapon (ILLUSION!)
+				ill(1899),	-- Unholy Weapon (ILLUSION!)
+				ill(5863),	-- Coldlight (ILLUSION!)
 			}),
 		})),
 		filter(MISC, {

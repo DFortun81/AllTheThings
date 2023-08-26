@@ -12,7 +12,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 				ach(14686),		-- Challenger: Shadowlands Season 1
 				ach(14687),		-- Rival: Shadowlands Season 1
 				ach(14688, {	-- Duelist: Shadowlands Season 1
-					ill(6266),	-- Sinful Flame
+					ill(6266),	-- Sinful Flame (ILLUSION!)
 					i(180424),	-- Sinful Gladiator's Prestigious Cloak
 				}),
 				ach(14691, {	-- Elite: Shadowlands Season 1

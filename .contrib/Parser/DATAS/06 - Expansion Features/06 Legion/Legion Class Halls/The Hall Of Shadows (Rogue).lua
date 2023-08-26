@@ -981,7 +981,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(34249),	-- Hula Girl Doll
-							i(138954, {	-- Illusion: Poisoned
+							i(138954, {	-- Illusion: Poisoned (ILLUSION!)
 								["cost"] = { { "c", 1416, 25000 }, },	-- 25,000x Coin of Air
 							}),
 							i(120434, {	-- Immaculate White Mask

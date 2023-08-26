@@ -889,11 +889,11 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(75235, 405937, ADDED_10_1_0);	-- Titan Training Matrix V
 		})),
 		filter(ILLUSIONS, {
-			i(200883),	-- Illusion: Primal Air
-			i(200905),	-- Illusion: Primal Earth
-			i(200906),	-- Illusion: Primal Fire
-			i(200907),	-- Illusion: Primal Frost
-			i(200470),	-- Illusion: Primal Mastery
+			i(200883),	-- Illusion: Primal Air (ILLUSION!)
+			i(200905),	-- Illusion: Primal Earth (ILLUSION!)
+			i(200906),	-- Illusion: Primal Fire (ILLUSION!)
+			i(200907),	-- Illusion: Primal Frost (ILLUSION!)
+			i(200470),	-- Illusion: Primal Mastery (ILLUSION!)
 		}),
 		filter(MISC, {
 			i(203410, {["timeline"] = {ADDED_10_0_7}}),	-- Glowing Crystal Bookmark

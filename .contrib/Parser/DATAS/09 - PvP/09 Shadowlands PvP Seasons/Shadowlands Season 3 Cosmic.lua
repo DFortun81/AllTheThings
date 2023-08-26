@@ -23,7 +23,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 				ach(15350),		-- Rival I: Shadowlands Season 3
 				ach(15378),		-- Rival II: Shadowlands Season 3
 				ach(15351, {	-- Duelist: Shadowlands Season 3
-					ill(6351),	-- Cosmic Flow
+					ill(6351),	-- Cosmic Flow (ILLUSION!)
 					i(186776),	-- Cosmic Gladiator's Prestigious Cloak
 				}),
 				ach(15354, {	-- Elite: Shadowlands Season 3

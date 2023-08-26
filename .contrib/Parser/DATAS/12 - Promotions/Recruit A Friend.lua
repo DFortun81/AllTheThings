@@ -88,7 +88,7 @@ root(ROOTS.Promotions, {
 				i(171331),	-- Renowned Explorer's Versatile Vest
 			},
 		})),
-		i(171363, {	-- Illusion: Stinging Sands
+		i(171363, {	-- Illusion: Stinging Sands (ILLUSION!)
 			["timeline"] = { "added 8.2.5.31958", REMOVED_10_0_7 },
 		}),
 		i(173299, {	-- Explorer's Jungle Hopper (MOUNT!)
@@ -115,7 +115,7 @@ root(ROOTS.Promotions, {
 			["timeline"] = { "added 8.2.5.31958", REMOVED_10_0_7 },
 		}),
 	})),
-	
+
 	-- Current Rewards
 	n(RECRUIT_A_FRIEND, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(173301, {	-- Game Time

@@ -790,8 +790,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(142090, {	-- Winter Rageling (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
-							i(138800, {	-- Illusion: Blade Ward
-								["timeline"] = { "added 7.0.3.22248" },
+							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(45650),	-- Leggings of the Wayward Conqueror
 							i(45651),	-- Leggings of the Wayward Protector
@@ -822,8 +822,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							}),
 							revampAch(2977),	-- Siffed (10 player)
 							revampAch(2975),	-- Who Needs Bloodlust? (10 player)
-							i(138800, {	-- Illusion: Blade Ward
-								["timeline"] = { "added 7.0.3.22248" },
+							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(45659),	-- Spaulders of the Wayward Conqueror
 							i(45660),	-- Spaulders of the Wayward Protector
@@ -854,8 +854,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(142091, {	-- Snaplasher (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
-							i(138800, {	-- Illusion: Blade Ward
-								["timeline"] = { "added 7.0.3.22248" },
+							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(45644),	-- Gloves of the Wayward Conqueror
 							i(45645),	-- Gloves of the Wayward Protector
@@ -894,8 +894,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								crit(2),	-- A Rocket Strike
 								crit(3),	-- A Bomb Bot
 							}),
-							i(138800, {	-- Illusion: Blade Ward
-								["timeline"] = { "added 7.0.3.22248" },
+							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(142092, {	-- G0-R41-0N Ultratonk (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
@@ -909,7 +909,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(45976),	-- Static Charge Handwraps
 							i(45975),	-- Cable of the Metrognome
 							i(140782, {	-- Neural Net Detangler
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 						},
 					}),
@@ -980,8 +980,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								["crs"] = { 33134 },	-- Sara
 							}),
 							revampAch(3014),	-- They're Coming Out of the Walls (10 player)
-							i(138801, {	-- Illusion: Blood Draining
-								["timeline"] = { "added 7.0.3.22248" },
+							i(138801, {	-- Illusion: Blood Draining (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(142093, {	-- Creeping Tentacle (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
@@ -1716,8 +1716,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(142090, {	-- Winter Rageling (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
-							i(138800, {	-- Illusion: Blade Ward
-								["timeline"] = { "added 7.0.3.22248" },
+							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(45632),	-- Breastplate of the Wayward Conqueror
 							i(45633),	-- Breastplate of the Wayward Protector
@@ -1749,8 +1749,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							}),
 							revampAch(2978),	-- Siffed (25 player)
 							revampAch(2976),	-- Who Needs Bloodlust? (25 player)
-							i(138800, {	-- Illusion: Blade Ward
-								["timeline"] = { "added 7.0.3.22248" },
+							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(45638),	-- Crown of the Wayward Conqueror
 							i(45639),	-- Crown of the Wayward Protector
@@ -1782,8 +1782,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(142091, {	-- Snaplasher (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
-							i(138800, {	-- Illusion: Blade Ward
-								["timeline"] = { "added 7.0.3.22248" },
+							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(45653),	-- Legplates of the Wayward Conqueror
 							i(45654),	-- Legplates of the Wayward Protector
@@ -1823,8 +1823,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								crit(2),	-- A Rocket Strike
 								crit(3),	-- A Bomb Bot
 							}),
-							i(138800, {	-- Illusion: Blade Ward
-								["timeline"] = { "added 7.0.3.22248" },
+							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(142092, {	-- G0-R41-0N Ultratonk (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
@@ -1838,7 +1838,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(45491),	-- Waistguard of the Creator
 							i(45490),	-- Pandora's Plea
 							i(140782, {	-- Neural Net Detangler
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 						},
 					}),
@@ -1921,8 +1921,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								["crs"] = { 33134 },	-- Sara
 							}),
 							revampAch(3017),	-- They're Coming Out of the Walls (25 player)
-							i(138801, {	-- Illusion: Blood Draining
-								["timeline"] = { "added 7.0.3.22248" },
+							i(138801, {	-- Illusion: Blood Draining (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(142093, {	-- Creeping Tentacle (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
@@ -2605,8 +2605,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						i(142090, {	-- Winter Rageling (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
-						i(138800, {	-- Illusion: Blade Ward
-							["timeline"] = { "added 7.0.3.22248" },
+						i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(45632),	-- Breastplate of the Wayward Conqueror
 						i(45633),	-- Breastplate of the Wayward Protector
@@ -2652,8 +2652,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						}),
 						ach(12351),	-- Siffed
 						ach(12350),	-- Who Needs Bloodlust?
-						i(138800, {	-- Illusion: Blade Ward
-							["timeline"] = { "added 7.0.3.22248" },
+						i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(45638),	-- Crown of the Wayward Conqueror
 						i(45639),	-- Crown of the Wayward Protector
@@ -2699,8 +2699,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						i(142091, {	-- Snaplasher (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
 						}),
-						i(138800, {	-- Illusion: Blade Ward
-							["timeline"] = { "added 7.0.3.22248" },
+						i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(45644),	-- Gloves of the Wayward Conqueror
 						i(45645),	-- Gloves of the Wayward Protector
@@ -2752,8 +2752,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							crit(2),	-- A Rocket Strike
 							crit(3),	-- A Bomb Bot
 						}),
-						i(138800, {	-- Illusion: Blade Ward
-							["timeline"] = { "added 7.0.3.22248" },
+						i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(142092, {	-- G0-R41-0N Ultratonk (PET!)
 							["timeline"] = { "added 7.1.0.22731" },
@@ -2775,7 +2775,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						i(45491),	-- Waistguard of the Creator
 						i(45490),	-- Pandora's Plea
 						i(140782, {	-- Neural Net Detangler
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2879,8 +2879,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							["crs"] = { 33134 },	-- Sara
 						}),
 						ach(12397),	-- They're Coming Out of the Walls
-						i(138801, {	-- Illusion: Blood Draining
-							["timeline"] = { "added 7.0.3.22248" },
+						i(138801, {	-- Illusion: Blood Draining (ILLUSION!)
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(142093, {	-- Creeping Tentacle (PET!)
 							["timeline"] = { "added 7.1.0.22731" },

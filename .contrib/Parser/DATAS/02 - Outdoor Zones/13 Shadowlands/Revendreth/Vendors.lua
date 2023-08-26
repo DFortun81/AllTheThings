@@ -154,7 +154,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(184726),	-- Courtier's Mantle
 					i(184727),	-- Courtier's Shoulderguard
 					i(184755),	-- Reinforced High Collar
-					i(182207),	-- Illusion: Sinsedge
+					i(182207),	-- Illusion: Sinsedge (ILLUSION!)
 					i(190644, {	-- Vessel of Profound Possibilities
 						["timeline"] = { "added 9.2.0" },
 						["sym"] = {

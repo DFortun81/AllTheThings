@@ -2058,11 +2058,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		i(17726, {	-- Smokywood Pastures Special Gift
 			i(17725),	-- Formula: Enchant Weapon - Winter's Might (RECIPE!)
 			-- #if AFTER 6.2.2
-			i(128649, {	-- Illusion: Winter's Grasp
-				["timeline"] = { "added 6.2.2.20395" },
+			i(128649, {	-- Illusion: Winter's Grasp (ILLUSION!)
+				["timeline"] = { ADDED_6_2_2 },
 			}),
-			i(118572, {	-- Illusion: Flames of Ragnaros
-				["timeline"] = { "added 6.0.1.18711" },
+			i(118572, {	-- Illusion: Flames of Ragnaros (ILLUSION!)
+				["timeline"] = { ADDED_6_0_2 },
 			}),
 			-- #endif
 			i(17722),	-- Pattern: Gloves of the Greatfather (RECIPE!)
@@ -2171,11 +2171,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					["races"] = HORDE_ONLY,
 				}),
 				-- Illusions
-				i(128649, {	-- Illusion: Winter's Grasp
-					["timeline"] = { "added 6.2.2.20395" },
+				i(128649, {	-- Illusion: Winter's Grasp (ILLUSION!)
+					["timeline"] = { ADDED_6_2_2 },
 				}),
-				i(118572, {	-- Illusion: Flames of Ragnaros
-					["timeline"] = { "added 6.0.1.18711" },
+				i(118572, {	-- Illusion: Flames of Ragnaros (ILLUSION!)
+					["timeline"] = { ADDED_6_0_2 },
 				}),
 				-- Appearances
 				i(143898, {	-- Miniature Winter Veil Tree (Level 1 - Cosmetic)

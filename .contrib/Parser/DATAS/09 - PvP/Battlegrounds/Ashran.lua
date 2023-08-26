@@ -883,8 +883,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				n(82876, {	-- Grand Marshal Tremblade Elite S1-S2-S3
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
-						un(ELITE_PVP_REQUIREMENT, i(120287)),	-- Enchanter's Illusion - Primal Victory
+						i(120286, { -- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
+							["u"] = ELITE_PVP_REQUIREMENT,
+							["timeline"] = { ADDED_7_0_3 },
+						}),
+						i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
+							["u"] = ELITE_PVP_REQUIREMENT,
+							["timeline"] = { ADDED_7_0_3 },
+						}),
 						un(REMOVED_FROM_GAME, i(115979)),	-- Primal Gladiator's Greatcloak
 						un(REMOVED_FROM_GAME, i(115972)),	-- Primal Gladiator's Tabard
 						un(REMOVED_FROM_GAME, i(127377)),	-- Warmongering Gladiator's Greatcloak
@@ -1448,8 +1454,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = HORDE_ONLY,
 					--["u"] = REMOVED_FROM_GAME,	-- Vendor doesn't sell anything in 7.0+
 					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
-						un(ELITE_PVP_REQUIREMENT, i(120287)),	-- Enchanter's Illusion - Primal Victory
+						i(120286, { -- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
+							["u"] = ELITE_PVP_REQUIREMENT,
+							["timeline"] = { ADDED_7_0_3 },
+						}),
+						i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
+							["u"] = ELITE_PVP_REQUIREMENT,
+							["timeline"] = { ADDED_7_0_3 },
+						}),
 						un(REMOVED_FROM_GAME, i(115979)),	-- Primal Gladiator's Greatcloak
 						un(REMOVED_FROM_GAME, i(115972)),	-- Primal Gladiator's Tabard
 						un(REMOVED_FROM_GAME, i(127376)),	-- Warmongering Gladiator's Greatcloak
@@ -2067,7 +2079,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["description"] = "Can be looted from enemy Worgen players.",
 					["races"] = HORDE_ONLY,
 				}),
-				
+
 				i(118333),	-- Universal Language Compensator [Part 1 of 3]
 				i(118334),	-- Universal Language Filter [Part 2 of 3]
 				i(118335),	-- Universal Language Repository [Part 3 of 3]

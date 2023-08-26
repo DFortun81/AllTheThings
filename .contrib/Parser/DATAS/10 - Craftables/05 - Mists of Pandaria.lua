@@ -387,13 +387,13 @@ root(ROOTS.Craftables, tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDow
 		}),
 		filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
 			i(138793, {	-- Tome of Illusions: Pandaria
-				ill(4441),	-- Windsong
-				ill(4443),	-- Elemental Force
-				ill(5868),	-- Breath of Yu'lon
+				ill(4441),	-- Windsong (ILLUSION!)
+				ill(4443),	-- Elemental Force (ILLUSION!)
+				ill(5868),	-- Breath of Yu'lon (ILLUSION!)
 			}),
 			i(138794, {	-- Tome of Illusions: Secrets of the Shado-Pan
-				ill(4446),	-- River's Song
-				ill(4444),	-- Dancing Steel
+				ill(4446),	-- River's Song (ILLUSION!)
+				ill(4444),	-- Dancing Steel (ILLUSION!)
 			}),
 		})),
 		n(WEAPON_ENCHANTMENTS, {

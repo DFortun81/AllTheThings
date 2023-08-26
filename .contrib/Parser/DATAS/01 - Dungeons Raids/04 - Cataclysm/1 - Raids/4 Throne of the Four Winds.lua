@@ -51,8 +51,9 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 							i(63683),	-- Helm of the Forlorn Conqueror
 							i(63684),	-- Helm of the Forlorn Protector
 							i(63682),	-- Helm of the Forlorn Vanquisher
-							i(138836, {	-- Illusion: Windfury
+							i(138836, {	-- Illusion: Windfury (ILLUSION!)
 								["classes"] = { SHAMAN },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(64315),	-- Mantle of the Forlorn Conqueror
 							i(64316),	-- Mantle of the Forlorn Protector
@@ -120,8 +121,9 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 							i(65000),	-- Crown of the Forlorn Protector
 							i(65002),	-- Crown of the Forlorn Vanquisher
 							i(66998),	-- Essence of the Forlorn
-							i(138836, {	-- Illusion: Windfury
+							i(138836, {	-- Illusion: Windfury (ILLUSION!)
 								["classes"] = { SHAMAN },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(63041),	-- Drake of the South Wind (MOUNT!)
 							i(65088),	-- Shoulders of the Forlorn Conqueror

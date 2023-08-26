@@ -70,7 +70,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 					["crs"] = { 60143 },	-- Gara'jal the Spiritbinder
 					["timeline"] = { ADDED_8_1_5 },
 				}),
-				i(138804, {	-- Illusion: Colossus
+				i(138804, {	-- Illusion: Colossus (ILLUSION!)
 					["crs"] = {
 						60400,	-- Jan-xi <Emperor's Open Hand>
 						60399,	-- Qin-xi <Emperor's Closed Fist>

@@ -72,7 +72,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 					i(183716, {	-- Venthyr Sinstone (TOY!)
 						["cost"] = { { "c", ANIMA, 750 } },
 					}),
-					i(182204, {	-- Illusion: Sinwrath
+					i(182204, {	-- Illusion: Sinwrath (ILLUSION!)
 						["cost"] = { { "c", ANIMA, 2500 } },
 					}),
 					i(182433, {	-- Barbedged Dredblade

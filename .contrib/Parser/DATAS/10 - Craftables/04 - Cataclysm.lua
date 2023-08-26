@@ -208,14 +208,14 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 		}),
 		filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
 			i(138791, {	-- Tome of Illusions: Cataclysm
-				ill(4098),	-- Windwalk
-				ill(4084),	-- Heartsong
-				ill(5867),	-- Light of the Earth-Warder
+				ill(4098),	-- Windwalk (ILLUSION!)
+				ill(4084),	-- Heartsong (ILLUSION!)
+				ill(5867),	-- Light of the Earth-Warder (ILLUSION!)
 			}),
 			i(138792, {	-- Tome of Illusions: Elemental Lords
-				ill(4067),	-- Avalanche
-				ill(4099),	-- Landslide
-				ill(4074),	-- Elemental Slayer
+				ill(4067),	-- Avalanche (ILLUSION!)
+				ill(4099),	-- Landslide (ILLUSION!)
+				ill(4074),	-- Elemental Slayer (ILLUSION!)
 			}),
 		})),
 		filter(MISC, {

@@ -5452,13 +5452,10 @@ root(ROOTS.PVP, {
 			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 5.4.0", "removed 5.4.7" }, }, {
 				ach(8649),	-- Challenger: Mists of Pandaria Season 3/Season 14
 				ach(8645, {	-- Duelist: Mists of Pandaria Season 3/Season 14
-					-- #if AFTER 7.3.2
-					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
-							ill(5396),		-- Glorious Tyranny
-						})),
-					},
-					-- #endif
+					i(120286, { -- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
+						["u"] = ELITE_PVP_REQUIREMENT,
+						["timeline"] = { ADDED_7_3_2 },
+					}),
 				}),
 				ach(8644, {	-- Gladiator: Mists of Pandaria Season 3/Season 14
 					i(104326),	-- Grievous Gladiator's Cloud Serpent
@@ -5478,23 +5475,21 @@ root(ROOTS.PVP, {
 				}),
 				ach(8654, {	-- Hero of the Alliance: Grievous
 					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER 7.3.2
 					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
-							ill(5396),		-- Glorious Tyranny
-						})),
+						i(120286, { -- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
+							["u"] = ELITE_PVP_REQUIREMENT,
+							["timeline"] = { ADDED_7_3_2 },
+						}),
 					},
-					-- #endif
 				}),
 				ach(8657, {	-- Hero of the Horde: Grievous
 					["races"] = HORDE_ONLY,
-					-- #if AFTER 7.3.2
 					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
-							ill(5396),		-- Glorious Tyranny
-						})),
+						i(120286, { -- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
+							["u"] = ELITE_PVP_REQUIREMENT,
+							["timeline"] = { ADDED_7_3_2 },
+						}),
 					},
-					-- #endif
 				}),
 				ach(8646),	-- Rival: Mists of Pandaria Season 3/Season 14
 			})),
@@ -8655,36 +8650,31 @@ root(ROOTS.PVP, {
 			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 5.4.7", "removed 6.0.0" }, }, {
 				ach(8670),	-- Challenger: Mists of Pandaria Season 4/Season 15
 				ach(8668, {	-- Duelist: Mists of Pandaria Season 4/Season 15
-					-- #if AFTER 7.3.2
-					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
-							ill(5396),		-- Glorious Tyranny
-						})),
-					},
-					-- #endif
+					i(120286, { -- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
+						["u"] = ELITE_PVP_REQUIREMENT,
+						["timeline"] = { ADDED_7_3_2 },
+					}),
 				}),
 				ach(8667, {	-- Gladiator: Mists of Pandaria Season 4/Season 15
 					i(104327),	-- Prideful Gladiator's Cloud Serpent
 				}),
 				ach(8658, {	-- Hero of the Alliance: Prideful
 					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER 7.3.2
 					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
-							ill(5396),		-- Glorious Tyranny
-						})),
+						i(120286, { -- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
+							["u"] = ELITE_PVP_REQUIREMENT,
+							["timeline"] = { ADDED_7_3_2 },
+						}),
 					},
-					-- #endif
 				}),
 				ach(8659, {	-- Hero of the Horde: Prideful
 					["races"] = HORDE_ONLY,
-					-- #if AFTER 7.3.2
 					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
-							ill(5396),		-- Glorious Tyranny
-						})),
+						i(120286, { -- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
+							["u"] = ELITE_PVP_REQUIREMENT,
+							["timeline"] = { ADDED_7_3_2 },
+						}),
 					},
-					-- #endif
 				}),
 				ach(8642, {	-- Prideful Combatant (Alliance) Mists of Pandaria Season 4/Season 15
 					["races"] = ALLIANCE_ONLY,

@@ -1600,7 +1600,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 					i(156288),	-- Elemental Focus Stone
 				})),
 				cr(32845, e(1644, {	-- Hodir
-					i(138800),	-- Illusion: Blade Ward
+					i(138800),	-- Illusion: Blade Ward (ILLUSION!)
 					i(142090),	-- Winter Rageling (PET!)
 					i(156299),	-- Icecore Staff
 					i(156179),	-- Staff of Endless Winter
@@ -1646,7 +1646,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 					i(156132),	-- Valorous Worldbreaker Kilt
 				})),
 				cr(32865, e(1645, {	-- Thorim
-					i(138800),	-- Illusion: Blade Ward
+					i(138800),	-- Illusion: Blade Ward (ILLUSION!)
 					i(156309),	-- Combatant's Bootblade
 					i(156302),	-- Legacy of Thunder
 					i(156185),	-- Vulmir, the Northern Tempest
@@ -1692,7 +1692,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 				})),
 				cr(32906, e(1646, {	-- Freya
 					i(142091),	-- Snaplasher (PET!)
-					i(138800),	-- Illusion: Blade Ward
+					i(138800),	-- Illusion: Blade Ward (ILLUSION!)
 					i(156613),	-- Dreambinder
 					i(156196),	-- The Lifebinder
 					i(156312),	-- Unraveling Reach
@@ -1742,7 +1742,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 						33670,	-- Aerial Command Unit
 					},
 					["g"] = {
-						i(138800),	-- Illusion: Blade Ward
+						i(138800),	-- Illusion: Blade Ward (ILLUSION!)
 						i(142092),	-- G0-R41-0N Ultratonk (PET!)
 						i(156211),	-- Delirium's Touch
 						i(156329),	-- Fusion Blade
@@ -1823,7 +1823,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 					ach(12388, {	-- Alone in the Darkness
 						i(45693)	-- Mimiron's Head (MOUNT!)
 					}),
-					i(138801),	-- Illusion: Blood Draining
+					i(138801),	-- Illusion: Blood Draining (ILLUSION!)
 					i(142093),	-- Creeping Tentacle (PET!)
 					i(156341),	-- Abaddon
 					i(156243),	-- Dark Edge of Depravity
@@ -4287,7 +4287,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORD
 					{"sub", "common_wod_dungeon_drop_tw", 24, FINGER},
 				},
 				["g"] = {
-					i(138806),	-- Illusion: Mark of Shadowmoon
+					i(138806),	-- Illusion: Mark of Shadowmoon (ILLUSION!)
 					i(110039),	-- Portal-Ripper's Staff
 					i(110038),	-- Ner'zhul's Ritual Blade
 				},

@@ -43,9 +43,9 @@ root(ROOTS.BlackMarket, bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(183634),	-- Papa's Mint Condition Bag (9.1)
 	}),
 	filter(ILLUSIONS, {
-		i(138838),	-- Illusion: Deathfrost
-		i(118572),	-- Illusion: Flame of Ragnaros
-		i(128649),	-- Illusion: Winter's Grasp
+		i(138838),	-- Illusion: Deathfrost (ILLUSION!)
+		i(118572),	-- Illusion: Flame of Ragnaros (ILLUSION!)
+		i(128649),	-- Illusion: Winter's Grasp (ILLUSION!)
 	}),
 	filter(MOUNTS, {
 		i(143643),	-- Abyss Worm (MOUNT!)

@@ -216,7 +216,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 						},
 					}),
 					cr(90378, e(1396, {	-- Kilrogg Deadeye
-						ig(138808),	-- Illusion: Mark of the Bleeding Hollow
+						ig(138808, {	-- Illusion: Mark of the Bleeding Hollow (ILLUSION!)
+							["timeline"] = { ADDED_7_0_3 },
+						}),
 						i(128093),	-- Demonhorn Spike
 						i(128192),	-- Balanced Machete
 						i(128074),	-- Hollowheart Helm
@@ -529,7 +531,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 					},
 				}),
 				cr(90378, e(1396, {	-- Kilrogg Deadeye
-					ig(138808),	-- Illusion: Mark of the Bleeding Hollow
+					ig(138808, {	-- Illusion: Mark of the Bleeding Hollow (ILLUSION!)
+						["timeline"] = { ADDED_7_0_3 },
+					}),
 					i(124379),	-- Bite of the Bleeding Hollow
 					i(124364),	-- Fallen Warlord's Mindcarver
 					i(124366),	-- Ruinous Gutripper
@@ -1064,7 +1068,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 					},
 				}),
 				cr(90378, e(1396, {	-- Kilrogg Deadeye
-					ig(138808),	-- Illusion: Mark of the Bleeding Hollow
+					ig(138808, {	-- Illusion: Mark of the Bleeding Hollow (ILLUSION!)
+						["timeline"] = { ADDED_7_0_3 },
+					}),
 					i(124379),	-- Bite of the Bleeding Hollow
 					i(124364),	-- Fallen Warlord's Mindcarver
 					i(124366),	-- Ruinous Gutripper
@@ -1586,7 +1592,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 				}),
 				cr(90378, e(1396, {	-- Kilrogg Deadeye
 					ach(10035),	-- Mythic: Kilrogg Deadeye
-					ig(138808),	-- Illusion: Mark of the Bleeding Hollow
+					ig(138808, {	-- Illusion: Mark of the Bleeding Hollow (ILLUSION!)
+						["timeline"] = { ADDED_7_0_3 },
+					}),
 					i(124379),	-- Bite of the Bleeding Hollow
 					i(124364),	-- Fallen Warlord's Mindcarver
 					i(124366),	-- Ruinous Gutripper

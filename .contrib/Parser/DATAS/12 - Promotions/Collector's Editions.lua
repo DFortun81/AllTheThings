@@ -167,7 +167,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 			n(QUESTS, {
 				q(8547, {	-- Welcome! (Blood Elf)
 					["provider"] = { "i", 20938 },	-- Falconwing Square [Wrath+] / Sunstrider Isle Gift Voucher
-					["timeline"] = { ADDED_2_0_1 }, 
+					["timeline"] = { ADDED_2_0_1 },
 					["maps"] = { EVERSONG_WOODS },
 					["races"] = { BLOODELF },
 					["_drop"] = { "g" },	-- API includes the pets and they are listed below separately
@@ -441,7 +441,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 				["groups"] = {
 					pet(2779),	-- Anima Wyrmling (PET!)
 					i(172179),	-- Eternal Traveler's Hearthstone (TOY!)
-					i(172177),	-- Illusion: Wraithchill
+					i(172177),	-- Illusion: Wraithchill (ILLUSION!)
 				},
 			}),
 		},

@@ -783,7 +783,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 					i(186488, {	-- Regal Corpsefly (MOUNT!)
 						["cost"] = { { "c", ANIMA, 7500 } },
 					}),
-					i(183462, {	-- Illusion: Unbreakable Resolve
+					i(183462, {	-- Illusion: Unbreakable Resolve (ILLUSION!)
 						["cost"] = { { "c", ANIMA, 2500 } },
 					}),
 					MEMORY_OF_A_VITAL_SACRIFICE,

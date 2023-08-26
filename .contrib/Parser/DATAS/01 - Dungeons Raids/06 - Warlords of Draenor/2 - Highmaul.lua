@@ -83,7 +83,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 				}),
 				header(HEADERS.Achievement, 8986, {	-- The Walled City
 					cr(78714, e(1128, {	-- Kargath Bladefist <Warlord of the Shattered Hand>
-						i(138807),	-- Illusion: Mark of the Shattered Hand
+						i(138807, {	-- Illusion: Mark of the Shattered Hand (ILLUSION!)
+							["timeline"] = { ADDED_7_0_3 },
+						}),
 						i(116360),	-- Blade Dancer's Claws
 						i(116236),	-- Iron Bomb Spaulders
 						i(116298),	-- Flamescarred Drape
@@ -115,8 +117,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 				}),
 				header(HEADERS.Achievement, 8987, {	-- Arcane Sanctum
 					cr(78948, e(1195, {	-- Tectus <The Living Mountain>
-						i(138835, {	-- Illusion: Rockbiter
+						i(138835, {	-- Illusion: Rockbiter (ILLUSION!)
 							["classes"] = { SHAMAN },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(116362),	-- Shard of Crystalline Fury
 						i(116363),	-- Shield of Violent Upheaval
@@ -211,7 +214,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 				}),
 				cr(78714, e(1128, {	-- Kargath Bladefist <Warlord of the Shattered Hand>
 					ach(8948),	-- Flame On!
-					i(138807),	-- Illusion: Mark of the Shattered Hand
+					i(138807, {	-- Illusion: Mark of the Shattered Hand (ILLUSION!)
+						["timeline"] = { ADDED_7_0_3 },
+					}),
 					i(113591),	-- The Bladefist
 					i(113592),	-- Bileslinger's Censer
 					i(113600),	-- Casque of the Iron Bomber
@@ -258,8 +263,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 				})),
 				cr(78948, e(1195, {	-- Tectus <The Living Mountain>
 					ach(8974),	-- More Like Wrecked-us
-					i(138835, {	-- Illusion: Rockbiter
+					i(138835, {	-- Illusion: Rockbiter (ILLUSION!)
 						["classes"] = { SHAMAN },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 					i(113640),	-- Earthwarped Bladestaff
 					i(113639),	-- Spire of Tectus
@@ -369,7 +375,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 				}),
 				cr(78714, e(1128, {	-- Kargath Bladefist <Warlord of the Shattered Hand>
 					ach(8948),	-- Flame On!
-					i(138807),	-- Illusion: Mark of the Shattered Hand
+					i(138807, {	-- Illusion: Mark of the Shattered Hand (ILLUSION!)
+						["timeline"] = { ADDED_7_0_3 },
+					}),
 					i(113591),	-- The Bladefist
 					i(113592),	-- Bileslinger's Censer
 					i(113600),	-- Casque of the Iron Bomber
@@ -416,8 +424,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 				})),
 				cr(78948, e(1195, {	-- Tectus <The Living Mountain>
 					ach(8974),	-- More Like Wrecked-us
-					i(138835, {	-- Illusion: Rockbiter
+					i(138835, {	-- Illusion: Rockbiter (ILLUSION!)
 						["classes"] = { SHAMAN },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 					i(113640),	-- Earthwarped Bladestaff
 					i(113639),	-- Spire of Tectus
@@ -529,7 +538,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 				cr(78714, e(1128, {	-- Kargath Bladefist <Warlord of the Shattered Hand>
 					ach(8949),	-- Mythic: Kargath Bladefist
 					ach(8948),	-- Flame On!
-					i(138807),	-- Illusion: Mark of the Shattered Hand
+					i(138807, {	-- Illusion: Mark of the Shattered Hand (ILLUSION!)
+						["timeline"] = { ADDED_7_0_3 },
+					}),
 					i(113591),	-- The Bladefist
 					i(113592),	-- Bileslinger's Censer
 					i(113600),	-- Casque of the Iron Bomber
@@ -579,8 +590,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 				cr(78948, e(1195, {	-- Tectus <The Living Mountain>
 					ach(8961),	-- Mythic: Tectus
 					ach(8974),	-- More Like Wrecked-us
-					i(138835, {	-- Illusion: Rockbiter
+					i(138835, {	-- Illusion: Rockbiter (ILLUSION!)
 						["classes"] = { SHAMAN },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 					i(113640),	-- Earthwarped Bladestaff
 					i(113639),	-- Spire of Tectus

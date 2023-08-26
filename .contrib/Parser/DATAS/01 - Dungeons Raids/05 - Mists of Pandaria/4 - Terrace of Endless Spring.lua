@@ -43,7 +43,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 					["crs"] = { 62983 },	-- Lei Shi
 					["timeline"] = { ADDED_8_1_5 },
 				}),
-				i(138805, {	-- Illusion: Jade Spirit
+				i(138805, {	-- Illusion: Jade Spirit (ILLUSION!)
 					["crs"] = { 60999 },	-- Sha of Fear
 					["timeline"] = { ADDED_7_0_3 },
 				}),

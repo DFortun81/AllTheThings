@@ -62,7 +62,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						i(184738),	-- Chainmail of the March Warden
 						i(184737),	-- Chestplate of the March Warden
 						i(180456),	-- Colors of the Undying Army
-						i(183189),	-- Illusion: Undying Spirit
+						i(183189),	-- Illusion: Undying Spirit (ILLUSION!)
 						i(182082),	-- Lurid Bloodtusk (MOUNT!)
 						i(184736),	-- Robe of the March Warden
 						i(184745),	-- Tunic of the March Warden

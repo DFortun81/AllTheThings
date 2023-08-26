@@ -166,7 +166,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 							i(63683),	-- Helm of the Forlorn Conqueror
 							i(63684),	-- Helm of the Forlorn Protector
 							i(63682),	-- Helm of the Forlorn Vanquisher
-							i(138802),	-- Illusion: Power Torrent
+							i(138802),	-- Illusion: Power Torrent (ILLUSION!)
 							i(152968, {	-- Rattlejaw (PET!)
 								["timeline"] = { ADDED_7_3_0 },
 							}),
@@ -307,7 +307,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 							i(65001),	-- Crown of the Forlorn Conqueror
 							i(65000),	-- Crown of the Forlorn Protector
 							i(65002),	-- Crown of the Forlorn Vanquisher
-							i(138802),	-- Illusion: Power Torrent
+							i(138802),	-- Illusion: Power Torrent (ILLUSION!)
 							i(152968, {	-- Rattlejaw (PET!)
 								["timeline"] = { ADDED_7_3_0 },
 							}),
