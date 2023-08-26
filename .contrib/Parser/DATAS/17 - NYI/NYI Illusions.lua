@@ -14,16 +14,5 @@ root(ROOTS.NeverImplemented, filter(ILLUSIONS, {
 			i(174933),	-- Voidwrath (ILLUSION!)
 		})),
 	}),
-	tier(DF_TIER, {
-		-- 10.0.7
-		tier(DF_TIER, 0.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
-			ill(6786),	-- Primal Storm (ILLUSION!)
-		})),
-
-		-- 10.1.0
-		tier(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
-			ill(6836),	-- Shadow Flame (ILLUSION!)
-		})),
-	}),
 }));
 -- #endif

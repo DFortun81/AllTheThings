@@ -464,8 +464,6 @@ i(0, 114783);	-- Transmute: Trillium Bar
 i(0, 114776);	-- Transmute: Vermilion Onyx
 i(0, 114767);	-- Transmute: Wild Jade
 i(0, 114765);	-- Virmen's Bite
--- NYI --
-i(0, 110955);	-- Unknown
 
 -----------------
 -- PATCH 6.0.1 --

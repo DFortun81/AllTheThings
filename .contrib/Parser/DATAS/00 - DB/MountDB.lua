@@ -1,6 +1,6 @@
 local Items = ItemDBConditional;
 local i = function(itemID, spellID)
-	Items[itemID] = { ["mountID"] = spellID, ["ignoreBonus"] = true };
+	Items[itemID] = { ["mountID"] = spellID, ["ignoreBonus"] = true, ["_drop"] = { "spellID" } };
 end
 -- If the mount is obtained from an item, use i(itemID, mountID);
 -- Otherwise use i(0, mountID); example if the mount is obtained from store.
@@ -230,7 +230,7 @@ i(25664, 32420);	-- Old Crappy McWeakSauce [Item: Crappy's Bell]
 -- PATCH 2.0.8 --
 -----------------
 --- NYI ---
-i(29225, 35028);	-- Swift Warstrider [Item: zzoldSwift Warstrider]
+i(29225, 0);		-- zzoldSwift Warstrider
 
 -----------------
 -- PATCH 2.1.0 --
@@ -330,9 +330,9 @@ i(37598, 48954);	-- Swift Zhevra [Item: Swift Zhevra OLD]
 -----------------
 --- NYI ---
 i(0, 44317);		-- Merciless Nether Drake
-i(27819, 24242);	-- Swift Razzashi Raptor [Item: Crazy Raptor 75]
-i(27853, 24242);	-- Swift Razzashi Raptor [Item: Crazy Raptor 150]
 i(28025, 33631);	-- Video Mount
+i(27819, 0);		-- Crazy Raptor 75
+i(27853, 0);		-- Crazy Raptor 150
 
 
 -----------------
@@ -684,11 +684,11 @@ i(87786, 127209);	-- Black Riding Yak
 i(87787, 127213);	-- Brown Riding Yak
 i(84728, 123160);	-- Crimson Riding Crane
 i(87794, 127278);	-- Golden Water Strider
-i(91016, 120822);	-- Great Red Dragon Turtle
 i(87793, 127274);	-- Jade Water Strider
 i(87784, 127178);	-- Jungle Riding Crane
 i(87792, 127272);	-- Orange Water Strider
 i(84753, 123182);	-- White Riding Yak
+i(91016, 0);		-- Reins of the Great Red Dragon Turtle
 
 -----------------
 -- PATCH 5.1.0 --
@@ -921,8 +921,8 @@ i(137580, 213165);	-- Viridian Sharptalon
 --- NYI ---
 i(137576, 171840);	-- Coldflame Infernal [TODO: Might become TRADING POST]
 i(137615, 213349);	-- Flarecore Infernal [TODO: Might become TRADING POST]
-i(129744, 142910);	-- Ironbound Wraithcharger
 i(138386, 0);		-- Fel Bat (Test)
+i(129744, 0);		-- Iron Warhorse
 
 -----------------
 -- PATCH 7.1.0 --

@@ -21,6 +21,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				ach(17795),		-- Rival I: Dragonflight Season 2
 				ach(17796),		-- Rival II: Dragonflight Season 2
 				ach(17794, {	-- Duelist: Dragonflight Season 2
+					ill(6836),	-- Shadow Flame
 					i(205361),	-- Obsidian Gladiator's Prestigious Cloak
 				}),
 				ach(17831, {	-- Elite: Dragonflight Season 2

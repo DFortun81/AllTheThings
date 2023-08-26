@@ -21,6 +21,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				ach(15952),		-- Rival I: Dragonflight Season 1
 				ach(15953),		-- Rival II: Dragonflight Season 1
 				ach(15954, {	-- Duelist: Dragonflight Season 1
+					ill(6786, {["timeline"] = { ADDED_10_0_7 }}),	-- Primal Storm
 					i(202089, {["timeline"] = { ADDED_10_0_5 }}),	-- Crimson Gladiator's Prestigious Cloak
 				}),
 				ach(15984, {	-- Elite: Dragonflight Season 1
