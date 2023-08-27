@@ -450,6 +450,14 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 				{ "o", 192046 },	-- Musselback Sculpin School
 				{ "o", 192057 },	-- Nettlefish School
 			},
+			["maps"] = {
+				BOREAN_TUNDRA,
+				CRYSTALSONG_FOREST,
+				DRAGONBLIGHT,
+				GRIZZLY_HILLS,
+				HOWLING_FJORD,
+				SHOLAZAR_BASIN,
+			},
 		}),
 	}),
 	prof(HERBALISM, {

@@ -12558,7 +12558,7 @@ local function RebuildMapData(self, mapID)
 				MergeObject(explorationHeader.g, clone);
 			elseif group.key == "flightPathID" then
 				MergeObject(flightPathsHeader.g, clone);
-			elseif group.key == "itemID" then
+			elseif group.key == "itemID" or group.key == "spellID" then
 				if GetRelativeField(group, "headerID", app.HeaderConstants.ZONE_DROPS) then
 					MergeObject(zoneDropsHeader.g, clone);
 				else
