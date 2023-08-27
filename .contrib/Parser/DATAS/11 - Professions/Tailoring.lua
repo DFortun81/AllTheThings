@@ -115,6 +115,38 @@ root(ROOTS.Professions, prof(TAILORING, {
 			}),
 		})),
 	}),
+	tier(WOD_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+		q(36236, {	-- The Cryptic Tome of Tailoring
+			["provider"] = { "i", 114972 },	-- Cryptic Tome of Tailoring
+			["description"] = "This item can drop from any Draenor mob.",
+			["timeline"] = { "added 6.0.1.18522" },
+			["requireSkill"] = TAILORING,
+			["races"] = ALLIANCE_ONLY,
+			["maps"] = {
+				FROSTFIRE_RIDGE,
+				GORGROND,
+				DRAENOR_NAGRAND,
+				DRAENOR_SHADOWMOON_VALLEY,
+				SPIRES_OF_ARAK,
+				TALADOR,
+			},
+		}),
+		q(36301, {	-- Trega's Tailoring Kit
+			["provider"] = { "i", 114973 },	-- Frostwolf Tailoring Kit
+			["description"] = "This item can drop from any Draenor mob.",
+			["timeline"] = { "added 6.0.1.18522" },
+			["requireSkill"] = TAILORING,
+			["races"] = HORDE_ONLY,
+			["maps"] = {
+				FROSTFIRE_RIDGE,
+				GORGROND,
+				DRAENOR_NAGRAND,
+				DRAENOR_SHADOWMOON_VALLEY,
+				SPIRES_OF_ARAK,
+				TALADOR,
+			},
+		}),
+	})),
 	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	})),
 	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
@@ -3794,36 +3826,6 @@ profession(TAILORING, {
 	})),
 	applyclassicphase(WOD_PHASE_ONE, tier(WOD_TIER, {
 		n(DROPS, {
-			q(36236, {	-- The Cryptic Tome of Tailoring
-				["provider"] = { "i", 114972 },	-- Cryptic Tome of Tailoring
-				["description"] = "This item can drop from any Draenor mob.",
-				["timeline"] = { "added 6.0.1.18522" },
-				["requireSkill"] = TAILORING,
-				["races"] = ALLIANCE_ONLY,
-				["maps"] = {
-					FROSTFIRE_RIDGE,
-					GORGROND,
-					DRAENOR_NAGRAND,
-					DRAENOR_SHADOWMOON_VALLEY,
-					SPIRES_OF_ARAK,
-					TALADOR,
-				},
-			}),
-			q(36301, {	-- Trega's Tailoring Kit
-				["provider"] = { "i", 114973 },	-- Frostwolf Tailoring Kit
-				["description"] = "This item can drop from any Draenor mob.",
-				["timeline"] = { "added 6.0.1.18522" },
-				["requireSkill"] = TAILORING,
-				["races"] = HORDE_ONLY,
-				["maps"] = {
-					FROSTFIRE_RIDGE,
-					GORGROND,
-					DRAENOR_NAGRAND,
-					DRAENOR_SHADOWMOON_VALLEY,
-					SPIRES_OF_ARAK,
-					TALADOR,
-				},
-			}),
 		}),
 		-- #if AFTER SHADOWLANDS
 		{
