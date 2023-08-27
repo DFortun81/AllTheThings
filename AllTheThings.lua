@@ -11956,7 +11956,7 @@ local fields = {
 		if t.crs and #t.crs > 0 then
 			for i,id in ipairs(t.crs) do
 				return L["SELFIE_DESC"] .. (select(2, GetItemInfo(122674)) or "Selfie Camera MkII") .. L["SELFIE_DESC_2"] .. (app.NPCNameFromID[id] or "???")
-				.. "|r" .. (t.maps and (" in |cffff8000" .. (app.GetMapName(t.maps[1]) or "???") .. "|r.") or ".");
+				.. "|r" .. (t.maps and (" in |cffff8000" .. app.GetMapName(t.maps[1]) .. "|r.") or ".");
 			end
 		end
 	end,
@@ -14668,7 +14668,7 @@ local function AddQuestInfoToTooltip(tooltip, quests)
 				or (q.coord and q.coord[3])
 				or (q.coords and q.coords[1] and q.coords[1][3]);
 			if mapID then
-				text = text .. " (" .. (app.GetMapName(mapID) or RETRIEVING_DATA) .. ")";
+				text = text .. " (" .. app.GetMapName(mapID) .. ")";
 			end
 			tooltip:AddLine(text);
 		end
@@ -15149,7 +15149,7 @@ RowOnEnter = function (self)
 				local x, y = coord[1], coord[2];
 				local mapID = coord[3] or currentMapID;
 				if mapID ~= currentMapID then
-					str = app.GetMapName(mapID) or "??";
+					str = app.GetMapName(mapID);
 					if app.Settings:GetTooltipSetting("mapID") then
 						str = str .. " (" .. mapID .. ")";
 					end

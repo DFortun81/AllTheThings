@@ -6618,7 +6618,6 @@ app.GetMapName = function(mapID)
 	else
 		return "Map ID #???";
 	end
-	
 end
 
 app.CreateExploration = app.CreateClass("Exploration", "explorationID", {
@@ -10755,7 +10754,7 @@ local function RowOnEnter(self)
 		-- Show Quest Prereqs
 		local isDebugMode = app.Settings:Get("DebugMode");
 		if reference.sourceQuests and (isDebugMode or not reference.saved) then
-			local prereqs, bc = {}, {};
+			local currentMapID, prereqs, bc = app.CurrentMapID, {}, {};
 			for i,sourceQuestID in ipairs(reference.sourceQuests) do
 				if sourceQuestID > 0 and (isDebugMode or not IsQuestFlaggedCompleted(sourceQuestID)) then
 					local sqs = SearchForField("questID", sourceQuestID);
@@ -10791,13 +10790,8 @@ local function RowOnEnter(self)
 				GameTooltip:AddLine("This quest has an incomplete prerequisite quest that you need to complete first.");
 				for i,prereq in ipairs(prereqs) do
 					local text = "   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA);
-					if prereq.mapID then
-						text = text .. " (" .. (app.GetMapName(prereq.mapID) or RETRIEVING_DATA) .. ")";
-					elseif prereq.maps then
-						text = text .. " (" .. (app.GetMapName(prereq.maps[1]) or RETRIEVING_DATA) .. ")";
-					elseif prereq.coords then
-						text = text .. " (" .. (app.GetMapName(prereq.coords[1][3]) or RETRIEVING_DATA) .. ")";
-					end
+					local mapID = GetBestMapForGroup(prereq, currentMapID);
+					if mapID and mapID ~= currentMapID then text = text .. " (" .. app.GetMapName(mapID) .. ")"; end
 					GameTooltip:AddDoubleLine(text, GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)));
 				end
 			end
@@ -10805,13 +10799,8 @@ local function RowOnEnter(self)
 				GameTooltip:AddLine("This quest has a breadcrumb quest that you may be unable to complete after completing this one.");
 				for i,prereq in ipairs(bc) do
 					local text = "   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA);
-					if prereq.mapID then
-						text = text .. " (" .. (app.GetMapName(prereq.mapID) or RETRIEVING_DATA) .. ")";
-					elseif prereq.maps then
-						text = text .. " (" .. (app.GetMapName(prereq.maps[1]) or RETRIEVING_DATA) .. ")";
-					elseif prereq.coords then
-						text = text .. " (" .. (app.GetMapName(prereq.coords[1][3]) or RETRIEVING_DATA) .. ")";
-					end
+					local mapID = GetBestMapForGroup(prereq, currentMapID);
+					if mapID and mapID ~= currentMapID then text = text .. " (" .. app.GetMapName(mapID) .. ")"; end
 					GameTooltip:AddDoubleLine(text, GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)));
 				end
 			end
