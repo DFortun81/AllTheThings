@@ -17917,8 +17917,12 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		self.initialized = true;
 		self.openedOnLogin = false;
 		self.CurrentMaps = {};
-		self.IsSameMapData = function(self)
-			if not self.mapID or self.CurrentMaps[self.mapID] then return true; end
+		self.IsSameMapData = function(self, results)
+			if self.data and results then
+				return results.hash == self.data.hash;
+			else
+				return false;
+			end
 		end
 		self.SetMapID = function(self, mapID)
 			-- print("SetMapID",mapID)
@@ -18013,7 +18017,8 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		local rootGroups, mapGroups = {}, {};
 		self.Rebuild = function(self)
 			-- app.PrintDebug("Rebuild",self.mapID);
-			wipe(self.CurrentMaps);
+			local currentMaps = {};
+			
 			-- Get all results for this map, without any results that have been cloned into Source Ignored groups
 			results = app.CleanInheritingGroups(SearchForField("mapID", self.mapID), "sourceIgnored");
 			if results then
@@ -18023,7 +18028,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				wipe(rootGroups);
 				wipe(mapGroups);
 				header = app.CreateMap(self.mapID, { g = groups });
-				self.CurrentMaps[self.mapID] = true;
+				currentMaps[self.mapID] = true;
 				isInInstance = IsInInstance();
 				headerKeys = isInInstance and subGroupInstanceKeys or subGroupKeys;
 				-- split search results by whether they represent the 'root' of the minilist or some other mapped content
@@ -18047,7 +18052,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				for _,group in ipairs(rootGroups) do
 					if group.maps then
 						for _,m in ipairs(group.maps) do
-							self.CurrentMaps[m] = true;
+							currentMaps[m] = true;
 						end
 					end
 					-- app.PrintDebug("Merge as Root",group.hash)
@@ -18181,84 +18186,90 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					header.instanceID and app.BaseInstance
 					or header.classID and app.BaseCharacterClass
 					or header.achID and app.BaseMapWithAchievementID or app.BaseMap);
+				
+				if not self:IsSameMapData(header) then
+					-- Swap out the map data for the header.
+					self:SetData(header);
+					-- Fill up the groups that need to be filled!
+					app.FillGroups(header);
 
-				-- Swap out the map data for the header.
-				self:SetData(header);
-				-- Fill up the groups that need to be filled!
-				app.FillGroups(header);
-
-				-- sort top level by name if not in an instance
-				if not GetRelativeValue(header, "instanceID") then
-					app.SortGroup(header, "name");
-				end
-				-- and conditionally sort the entire list (sort groups which contain 'mapped' content)
-				app.SortGroup(header, "name", nil, true, "sort");
-
-				local expanded;
-				-- if enabled, minimize rows based on difficulty
-				local difficultyID = select(3, GetInstanceInfo());
-				if app.Settings:GetTooltipSetting("Expand:Difficulty") then
-					if difficultyID and difficultyID > 0 and header.g then
-						for _,row in ipairs(header.g) do
-							if row.difficultyID or row.difficulties then
-								if (row.difficultyID or -1) == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-									if not row.expanded then
-										ExpandGroupsRecursively(row, true, true);
-										expanded = true;
-									end
-								elseif row.expanded then
-									ExpandGroupsRecursively(row, false, true);
-								end
-							-- Zone Drops/Common Boss Drops should also be expanded within instances
-							-- elseif row.headerID == app.HeaderConstants.ZONE_DROPS or row.headerID == app.HeaderConstants.COMMON_BOSS_DROPS then
-							-- 	if not row.expanded then ExpandGroupsRecursively(row, true); expanded = true; end
-							end
-						end
-						-- No difficulty found to expand, so just expand everything in the list once it is built
-						if not expanded then
-							self.ExpandInfo = { Expand = true };
-							expanded = true;
-						end
+					-- sort top level by name if not in an instance
+					if not GetRelativeValue(header, "instanceID") then
+						app.SortGroup(header, "name");
 					end
-				end
-				-- app.PrintDebug("Warn:Difficulty")
-				if app.Settings:GetTooltipSetting("Warn:Difficulty") then
-					if difficultyID and difficultyID > 0 and header.g then
-						local missing, found, other;
-						for _,row in ipairs(header.g) do
-							-- app.PrintDebug("Check Minilist Header for Progress for Difficulty",difficultyID,row.difficultyID,row.difficulties)
-							if not found and not missing then
-								-- check group for the current difficulty for incomplete content
-								if (row.difficultyID == difficultyID) or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-									found = true;
-									-- app.PrintDebug("Found current")
-									if CheckGroup(row, IsNotComplete) then
-										-- app.PrintDebug("Current Difficulty is NOT complete")
-										missing = true;
+					-- and conditionally sort the entire list (sort groups which contain 'mapped' content)
+					app.SortGroup(header, "name", nil, true, "sort");
+
+					local expanded;
+					-- if enabled, minimize rows based on difficulty
+					local difficultyID = select(3, GetInstanceInfo());
+					if app.Settings:GetTooltipSetting("Expand:Difficulty") then
+						if difficultyID and difficultyID > 0 and header.g then
+							for _,row in ipairs(header.g) do
+								if row.difficultyID or row.difficulties then
+									if (row.difficultyID or -1) == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+										if not row.expanded then
+											ExpandGroupsRecursively(row, true, true);
+											expanded = true;
+										end
+									elseif row.expanded then
+										ExpandGroupsRecursively(row, false, true);
 									end
-								-- grab another difficulty with incomplete groups in case current difficulty is complete
-								elseif not other and row.difficultyID then
-									if CheckGroup(row, IsNotComplete) then
-										-- app.PrintDebug("Found another incomplete",row.text)
-										other = row.text;
-									end
+								-- Zone Drops/Common Boss Drops should also be expanded within instances
+								-- elseif row.headerID == app.HeaderConstants.ZONE_DROPS or row.headerID == app.HeaderConstants.COMMON_BOSS_DROPS then
+								-- 	if not row.expanded then ExpandGroupsRecursively(row, true); expanded = true; end
 								end
 							end
-						end
-						-- current matching difficulty is not missing anything, and we have another difficulty text to announce
-						if found and not missing and other then
-							print(L["DIFF_COMPLETED_1"] .. other .. L["DIFF_COMPLETED_2"]);
+							-- No difficulty found to expand, so just expand everything in the list once it is built
+							if not expanded then
+								self.ExpandInfo = { Expand = true };
+								expanded = true;
+							end
 						end
 					end
-				end
+					-- app.PrintDebug("Warn:Difficulty")
+					if app.Settings:GetTooltipSetting("Warn:Difficulty") then
+						if difficultyID and difficultyID > 0 and header.g then
+							local missing, found, other;
+							for _,row in ipairs(header.g) do
+								-- app.PrintDebug("Check Minilist Header for Progress for Difficulty",difficultyID,row.difficultyID,row.difficulties)
+								if not found and not missing then
+									-- check group for the current difficulty for incomplete content
+									if (row.difficultyID == difficultyID) or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+										found = true;
+										-- app.PrintDebug("Found current")
+										if CheckGroup(row, IsNotComplete) then
+											-- app.PrintDebug("Current Difficulty is NOT complete")
+											missing = true;
+										end
+									-- grab another difficulty with incomplete groups in case current difficulty is complete
+									elseif not other and row.difficultyID then
+										if CheckGroup(row, IsNotComplete) then
+											-- app.PrintDebug("Found another incomplete",row.text)
+											other = row.text;
+										end
+									end
+								end
+							end
+							-- current matching difficulty is not missing anything, and we have another difficulty text to announce
+							if found and not missing and other then
+								print(L["DIFF_COMPLETED_1"] .. other .. L["DIFF_COMPLETED_2"]);
+							end
+						end
+					end
 
-				self:BuildData();
+					self:BuildData();
 
-				-- check to expand groups after they have been built and updated
-				-- dont re-expand if the user has previously full-collapsed the minilist
-				-- need to force expand if so since the groups haven't been updated yet
-				if not expanded and not self.fullCollapsed then
-					self.ExpandInfo = { Expand = true };
+					-- check to expand groups after they have been built and updated
+					-- dont re-expand if the user has previously full-collapsed the minilist
+					-- need to force expand if so since the groups haven't been updated yet
+					if not expanded and not self.fullCollapsed then
+						self.ExpandInfo = { Expand = true };
+					end
+					self.CurrentMaps = currentMaps;
+					
+					-- Make sure to scroll to the top when being rebuilt
+					self.ScrollBar:SetValue(1);
 				end
 			else
 				-- If we don't have any data cached for this mapID and it exists in game, report it to the chat window.
@@ -18301,8 +18312,6 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				}));
 				self:BuildData();
 			end
-			-- Make sure to scroll to the top when being rebuilt
-			self.ScrollBar:SetValue(1);
 			return true;
 		end
 		end)();
