@@ -820,9 +820,33 @@ end
 
 
 
-local function GetBestMapForGroup(group)
+local function GetBestMapForGroup(group, currentMapID)
 	if group then
-		return group.mapID or (group.maps and group.maps[1]) or (group.coords and group.coords[1][3]) or GetBestMapForGroup(group.parent);
+		local mapID = group.mapID;
+		if mapID and mapID == currentMapID then
+			return mapID;
+		end
+		
+		local coords = group.coords;
+		if coords then
+			for i,coord in ipairs(coords) do
+				mapID = coord[3];
+				if mapID == currentMapID then
+					return mapID;
+				end
+			end
+		end
+		local maps = group.maps;
+		if maps then
+			for i,otherMapID in ipairs(maps) do
+				mapID = otherMapID;
+				if mapID == currentMapID then
+					return mapID;
+				end
+			end
+		end
+		
+		return mapID or GetBestMapForGroup(group.parent, currentMapID);
 	end
 end
 local function GetRelativeDifficulty(group, difficultyID)
@@ -2084,14 +2108,15 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				local entries = {};
 				BuildContainsInfo(group.g, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
 				if #entries > 0 then
+					local currentMapID = app.CurrentMapID;
 					local realmName, left, right = GetRealmName();
 					tinsert(info, { left = "Contains:" });
 					if #entries < 25 then
 						for i,item in ipairs(entries) do
 							left = item.group.text or RETRIEVING_DATA;
 							if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
-							local mapID = GetBestMapForGroup(item.group);
-							if mapID and mapID ~= app.CurrentMapID then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
+							local mapID = GetBestMapForGroup(item.group, currentMapID);
+							if mapID and mapID ~= currentMapID then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
 							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 							tinsert(info, { left = item.prefix .. left, right = item.right });
 
@@ -2122,8 +2147,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							local item = entries[i];
 							left = item.group.text or RETRIEVING_DATA;
 							if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
-							local mapID = GetBestMapForGroup(item.group);
-							if mapID and mapID ~= app.CurrentMapID then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
+							local mapID = GetBestMapForGroup(item.group, currentMapID);
+							if mapID and mapID ~= currentMapID then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
 							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 							tinsert(info, { left = item.prefix .. left, right = item.right });
 
