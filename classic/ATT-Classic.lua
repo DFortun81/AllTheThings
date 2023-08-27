@@ -60,6 +60,7 @@ local HORDE_FACTION_ID = Enum.FlightPathFaction.Horde;
 -- App & Module locals
 local SearchForField, SearchForFieldContainer
 	= app.SearchForField, app.SearchForFieldContainer;
+local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 
 -- Add a Feader & Filter debugger
 setmetatable(app.FilterConstants, {
@@ -140,8 +141,7 @@ local function PendingCollectionCoroutine()
 			if retries > 0 then
 				retries = retries - 1;
 				thing[1] = retries;
-				local text = thing[2].text;
-				if not text or text == RETRIEVING_DATA then
+				if IsRetrieving(thing[2].text) then
 					retrievingCollection[hash] = nil;
 					anyRetrieving = true;
 				end
@@ -190,8 +190,7 @@ end
 local function AddToCollection(group)
 	if not group then return; end
 	local hash = group.hash;
-	local text = group.text;
-	if not text or text == RETRIEVING_DATA then
+	if IsRetrieving(group.text) then
 		retrievingCollection[hash] = { 5, group };
 	end
 
@@ -207,8 +206,7 @@ end
 local function RemoveFromCollection(group)
 	if not group then return; end
 	local hash = group.hash;
-	local text = group.text;
-	if not text or text == RETRIEVING_DATA then
+	if IsRetrieving(group.text) then
 		retrievingCollection[hash] = { 5, group };
 	end
 
@@ -2114,7 +2112,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					if #entries < 25 then
 						for i,item in ipairs(entries) do
 							left = item.group.text or RETRIEVING_DATA;
-							if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
+							if IsRetrieving(left) then working = true; end
 							local mapID = GetBestMapForGroup(item.group, currentMapID);
 							if mapID and mapID ~= currentMapID then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
 							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
@@ -2146,7 +2144,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						for i=1,math.min(25, #entries) do
 							local item = entries[i];
 							left = item.group.text or RETRIEVING_DATA;
-							if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
+							if IsRetrieving(left) then working = true; end
 							local mapID = GetBestMapForGroup(item.group, currentMapID);
 							if mapID and mapID ~= currentMapID then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
 							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
@@ -2194,7 +2192,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							end);
 							for i,item in ipairs(entries) do
 								left = item.group.text or RETRIEVING_DATA;
-								if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
+								if IsRetrieving(left) then working = true; end
 								if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 								tinsert(info, { left = item.prefix .. left, right = item.right });
 							end
@@ -2202,7 +2200,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							for i=1,math.min(25, #entries) do
 								local item = entries[i];
 								left = item.group.text or RETRIEVING_DATA;
-								if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
+								if IsRetrieving(left) then working = true; end
 								if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 								tinsert(info, { left = item.prefix .. left, right = item.right });
 							end
@@ -2232,7 +2230,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							end);
 							for i,item in ipairs(entries) do
 								left = item.group.text or RETRIEVING_DATA;
-								if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
+								if IsRetrieving(left) then working = true; end
 								if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 								tinsert(info, { left = item.prefix .. left, right = item.right });
 							end
@@ -2240,7 +2238,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							for i=1,math.min(25, #entries) do
 								local item = entries[i];
 								left = item.group.text or RETRIEVING_DATA;
-								if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
+								if IsRetrieving(left) then working = true; end
 								if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 								tinsert(info, { left = item.prefix .. left, right = item.right });
 							end
@@ -2281,7 +2279,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 								end);
 								for i,item in ipairs(entries) do
 									left = item.group.text or RETRIEVING_DATA;
-									if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
+									if IsRetrieving(left) then working = true; end
 									if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 									tinsert(info, { left = item.prefix .. left, right = item.right });
 								end
@@ -2289,7 +2287,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 								for i=1,math.min(25, #entries) do
 									local item = entries[i];
 									left = item.group.text or RETRIEVING_DATA;
-									if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
+									if IsRetrieving(left) then working = true; end
 									if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 									tinsert(info, { left = item.prefix .. left, right = item.right });
 								end

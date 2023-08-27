@@ -404,21 +404,6 @@ local fieldConverters = {
 	end,
 
 	-- Localization Helpers
-	["sins"] = function(group, value)
-		local mapID = group.mapID;
-		if not mapID then
-			-- Generate a unique NEGATIVE mapID and cache the object to it.
-			mapID = nextCustomMapID;
-			nextCustomMapID = nextCustomMapID - 1;
-			group.mapID = mapID;
-			CacheField(group, "mapID", mapID);
-		end
-		for i=1,#value,1 do
-			-- Then uses the ALT_ZONE_TEXT_TO_MAP_ID localizer to force the minilist to display this as if it was a map file.
-			local name = value[i];
-			if name then app.L.ALT_ZONE_TEXT_TO_MAP_ID[name] = mapID; end
-		end
-	end,
 	["zone-text-areaID"] = function(group, value)
 		local mapID = group.mapID;
 		if not mapID then

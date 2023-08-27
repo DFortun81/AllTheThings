@@ -21,6 +21,7 @@ lib\Table.lua
 classic\locales.lua
 classic\src-Classes-base.lua
 src\Modules\Events.lua
+src\Modules\RetrievingData.lua
 db\TBC\ExplorationDB.lua
 db\TBC\LocalizationDB.lua
 classic\Presets.lua
