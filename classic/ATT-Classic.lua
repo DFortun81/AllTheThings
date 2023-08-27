@@ -6568,7 +6568,7 @@ app.GetCurrentMapID = function()
 		if mapID then return mapID; end
 	end
 	zone = GetSubZoneText();
-	if zone then
+	if zone and zone ~= "" then
 		local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
 		if mapID then return mapID; end
 	end
@@ -6928,6 +6928,12 @@ local createMap, mapClass = app.CreateClass("Map", "mapID", {
 	end,
 	["icon"] = function(t)
 		return t.headerID and L["HEADER_ICONS"][t.headerID] or app.asset("Category_Zones");
+	end,
+	["lore"] = function(t)
+		return t.headerID and L["HEADER_LORE"][t.headerID];
+	end,
+	["description"] = function(t)
+		return t.headerID and L["HEADER_DESCRIPTIONS"][t.headerID];
 	end,
 	["back"] = function(t)
 		if app.CurrentMapID == t.mapID or (t.maps and contains(t.maps, app.CurrentMapID)) then
@@ -12463,7 +12469,7 @@ local function RefreshLocationCoroutine()
 
 	-- Acquire the new map ID.
 	local mapID = app.GetCurrentMapID();
-	while not mapID or mapID < 0 do
+	while not mapID do
 		coroutine.yield();
 		mapID = app.GetCurrentMapID();
 	end
@@ -12532,6 +12538,10 @@ local function RebuildMapData(self, mapID)
 					MergeObject(vendorsHeader.g, clone, 1);
 				elseif GetRelativeField(group, "headerID", app.HeaderConstants.QUESTS) then	-- It's a Quest.
 					MergeObject(questsHeader.g, clone, 1);
+				elseif group.mapID and (mapID < 0 and group.mapID == mapID) then
+					header.key = group.key;
+					header[group.key] = group[group.key];
+					MergeObject({header}, clone);
 				else
 					MergeObject(groups, clone);
 				end
@@ -12561,7 +12571,11 @@ local function RebuildMapData(self, mapID)
 					end
 				end
 			elseif group.key == "headerID" then
-				if not GetRelativeValue(group, "instanceID") then
+				if group.mapID and (mapID < 0 and group.mapID == mapID) then
+					header.key = group.key;
+					header[group.key] = group[group.key];
+					MergeObject({header}, clone);
+				elseif not GetRelativeValue(group, "instanceID") then
 					MergeObject(groups, clone);
 				end
 			else

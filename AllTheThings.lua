@@ -1363,7 +1363,21 @@ local function CreateObject(t, rootOnly)
 		return s;
 	-- use the highest-priority piece of data which exists in the table to turn it into an object
 	else
-		if t.mapID then
+		local meta = getmetatable(t);
+		if meta then
+			local s = {};
+			for k,v in pairs(t) do
+				rawset(s, k, v);
+			end
+			if t.g then
+				s.g = {};
+				for i,o in ipairs(t.g) do
+					tinsert(s.g, CreateObject(o));
+				end
+			end
+			setmetatable(s, meta);
+			return s;
+		elseif t.mapID then
 			t = app.CreateMap(t.mapID, t);
 		elseif t.s then
 			t = app.CreateItemSource(t.s, t.itemID, t);
@@ -2063,7 +2077,7 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef, c
 		"```elixir",	-- discord fancy box start
 	};
 	local coord;
-	local mapID = app.GetCurrentMapID();
+	local mapID = app.CurrentMapID;
 	local position = mapID and C_Map.GetPlayerMapPosition(mapID, "player");
 	local covID, covInfo = C_Covenants.GetActiveCovenantID();
 	if covID and covID > 0 then
@@ -11582,29 +11596,17 @@ end)();
 local C_Map_GetMapLevels, C_Map_GetBestMapForUnit, C_Map_GetPlayerMapPosition
 	= C_Map.GetMapLevels, C_Map.GetBestMapForUnit, C_Map.GetPlayerMapPosition;
 app.GetCurrentMapID = function()
-	local uiMapID = C_Map_GetBestMapForUnit("player");
-	if uiMapID then
-		local map = C_Map_GetMapInfo(uiMapID);
-		if map then
-			app.CurrentMapInfo = map;
-			local zone = GetRealZoneText();
-			local otherMapID = zone and L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
-			if otherMapID then
-				uiMapID = otherMapID;
-			else
-				zone = GetSubZoneText();
-				if zone then
-					otherMapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
-					if otherMapID then uiMapID = otherMapID; end
-				end
-			end
-		end
-		-- print("Current UI Map ID: ", uiMapID);
-		-- if entering an instance, clear the search Cache so that proper difficulty tooltips are re-generated
-		if IsInInstance() then wipe(searchCache); end
-		app.CurrentMapID = uiMapID;
+	local zone = GetRealZoneText();
+	if zone then
+		local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
+		if mapID then return mapID; end
 	end
-	return uiMapID;
+	zone = GetSubZoneText();
+	if zone and zone ~= "" then
+		local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
+		if mapID then return mapID; end
+	end
+	return C_Map_GetBestMapForUnit("player");
 end
 app.GetMapName = function(mapID)
 	if mapID and mapID > 0 then
@@ -11707,12 +11709,16 @@ app.CreateMapWithStyle = function(id)
 	return mapObject;
 end
 
+app.events.ZONE_CHANGED = function()
+	app.CurrentMapID = app.GetCurrentMapID();
+end
 app.events.ZONE_CHANGED_INDOORS = function()
-	app.GetCurrentMapID();
+	app.CurrentMapID = app.GetCurrentMapID();
 end
 app.events.ZONE_CHANGED_NEW_AREA = function()
-	app.GetCurrentMapID();
+	app.CurrentMapID = app.GetCurrentMapID();
 end
+app:RegisterEvent("ZONE_CHANGED");
 app:RegisterEvent("ZONE_CHANGED_INDOORS");
 app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 end)();
@@ -13511,7 +13517,7 @@ local SLCovenantId;
 local CCFuncs = {
 	["NPE"] = function()
 		-- needs mapID to check this
-		if not app.GetCurrentMapID() then return; end
+		if not app.CurrentMapID then return; end
 		-- print("first check");
 		-- check if the current MapID is in Exile's Reach
 		local maps = { [1409] = 1, [1609] = 1, [1610] = 1, [1611] = 1, [1726] = 1, [1727] = 1 };
@@ -15119,7 +15125,7 @@ RowOnEnter = function (self)
 		if reference.flightPathID and app.Settings:GetTooltipSetting("flightPathID")  then GameTooltip:AddDoubleLine(L["FLIGHT_PATH_ID"], tostring(reference.flightPathID)); end
 		if reference.mapID and app.Settings:GetTooltipSetting("mapID") then GameTooltip:AddDoubleLine(L["MAP_ID"], tostring(reference.mapID)); end
 		if reference.coords and app.Settings:GetTooltipSetting("Coordinates") then
-			local currentMapID, str = app.GetCurrentMapID();
+			local currentMapID, str = app.CurrentMapID;
 			local coords = reference.coords;
 			-- more than 10 coords, put into an additional line
 			local coordLimit, coordCount = 11, #coords;
@@ -17871,6 +17877,30 @@ customWindowUpdates["CosmicInfuser"] = function(self, force)
 		self:BaseUpdate(force);
 	end
 end;
+local IsSameMap = function(data, results)
+	if data.mapID then
+		-- Exact same map?
+		if data.mapID == results.mapID then
+			return true;
+		end
+
+		-- Does the result map have an array of associated maps and this map is in there?
+		if results.maps and contains(results.maps, data.mapID) then
+			return true;
+		end
+	end
+	if data.maps then
+		-- Does the old map data contain this map?
+		if contains(data.maps, results.mapID) then
+			return true;
+		end
+
+		-- Does the result map have an array of associated maps and this map is in there?
+		if results.maps and containsAny(results.maps, data.maps) then
+			return true;
+		end
+	end
+end
 customWindowUpdates["CurrentInstance"] = function(self, force, got)
 	-- app.PrintDebug("CurrentInstance:Update",force,got)
 	if not self.initialized then
@@ -17974,11 +18004,6 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		local rootGroups, mapGroups = {}, {};
 		self.Rebuild = function(self)
 			-- app.PrintDebug("Rebuild",self.mapID);
-			-- check if this is the same 'map' for data purposes
-			if self:IsSameMapData() then
-				self.data.mapID = self.mapID;
-				return;
-			end
 			wipe(self.CurrentMaps);
 			-- Get all results for this map, without any results that have been cloned into Source Ignored groups
 			results = app.CleanInheritingGroups(SearchForField("mapID", self.mapID), "sourceIgnored");
@@ -17997,7 +18022,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					-- do not use any raw Source groups in the final list
 					group = CreateObject(group);
 					-- Instance/Map/Class groups are allowed as root of minilist
-					if (group.instanceID or group.mapID or group.key == "classID")
+					if (group.instanceID or (group.mapID and (group.key == "mapID" or (group.key == "headerID" and group.mapID < 0 and group.mapID == self.mapID))) or group.key == "classID")
 						-- and actually match this minilist...
 						-- only if this group mapID matches the minilist mapID directly or by maps
 						and (group.mapID == self.mapID or (group.maps and contains(group.maps, self.mapID))) then
@@ -18258,7 +18283,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 							["icon"] = "Interface\\Icons\\INV_Misc_Map_01",
 							["description"] = L["UPDATE_LOCATION_NOW_DESC"],
 							["OnClick"] = function(row, button)
-								Push(self, "ResetMapID", function() self.displayedMapID = -1; self:SetMapID(app.GetCurrentMapID()) end);
+								Push(self, "ResetMapID", function() self.displayedMapID = -1; self:SetMapID(app.CurrentMapID) end);
 								return true;
 							end,
 							["OnUpdate"] = app.AlwaysShowUpdate,
@@ -18299,14 +18324,12 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			-- force update when showing the minilist
 			Callback(self.Update, self, true);
 		end
-		local function OpenMiniListForCurrentZone()
-			OpenMiniList(app.GetCurrentMapID(), true);
-		end
 		local function RefreshLocation()
 			-- Acquire the new map ID.
 			local mapID = app.GetCurrentMapID();
+			app.CurrentMapID = mapID;
 			-- app.PrintDebug("RefreshLocation",mapID)
-			if not mapID or mapID < 0 then
+			if not mapID then
 				AfterCombatCallback(RefreshLocation);
 				return;
 			end
@@ -18323,7 +18346,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			if self:IsVisible() then
 				self:Hide();
 			else
-				OpenMiniListForCurrentZone();
+				RefreshLocation();
 			end
 		end
 		local function LocationTrigger()
@@ -18333,7 +18356,6 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			end
 		end
 		app.OpenMiniList = OpenMiniList;
-		app.OpenMiniListForCurrentZone = OpenMiniListForCurrentZone;
 		app.ToggleMiniListForCurrentZone = ToggleMiniListForCurrentZone;
 		app.LocationTrigger = LocationTrigger;
 		self:SetScript("OnEvent", function(self, e, ...)
@@ -18343,6 +18365,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		self:RegisterEvent("NEW_WMO_CHUNK");
 		self:RegisterEvent("WAYPOINT_UPDATE");
 		self:RegisterEvent("SCENARIO_UPDATE");
+		self:RegisterEvent("ZONE_CHANGED");
 		self:RegisterEvent("ZONE_CHANGED_INDOORS");
 		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 	end
@@ -20986,7 +21009,7 @@ app.LoadDebugger = function()
 				-- print("---")
 				-- Bubble Up the Maps
 				local mapInfo;
-				local mapID = app.GetCurrentMapID();
+				local mapID = app.CurrentMapID;
 				if mapID then
 					if info then
 						local pos = C_Map.GetPlayerMapPosition(mapID, "player");
@@ -22379,7 +22402,7 @@ end
 
 	-- function app:TestReportDialog()
 	-- 	local coord;
-	-- 	local mapID = app.GetCurrentMapID();
+	-- 	local mapID = app.CurrentMapID;
     -- 	local position = C_Map.GetPlayerMapPosition(mapID, "player")
 	-- 	if position then
     --     	local x,y = position:GetXY();
@@ -22394,7 +22417,7 @@ end
 	-- 					"race:"..app.RaceID,
 	-- 					"class:"..app.ClassIndex,
 	-- 					"lvl:"..app.Level,
-	-- 					"mapID:"..app.GetCurrentMapID(),
+	-- 					"mapID:"..app.CurrentMapID,
 	-- 					"coord:"..coord,
 
 	-- 					"```",	-- discord fancy box
