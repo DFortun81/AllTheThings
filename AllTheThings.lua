@@ -11609,7 +11609,18 @@ app.GetCurrentMapID = function()
 	return C_Map_GetBestMapForUnit("player");
 end
 app.GetMapName = function(mapID)
-	if mapID and mapID > 0 then
+	if mapID then
+		for name,m in pairs(L.ZONE_TEXT_TO_MAP_ID) do
+			if mapID == m then
+				return name;
+			end
+		end
+		for name,m in pairs(L.ALT_ZONE_TEXT_TO_MAP_ID) do
+			if mapID == m then
+				return name;
+			end
+		end
+		
 		local info = C_Map_GetMapInfo(mapID);
 		return (info and info.name) or ("Map ID #" .. mapID);
 	else

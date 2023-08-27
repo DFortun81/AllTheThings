@@ -6600,27 +6600,25 @@ app.GetCurrentMapID = function()
 	return C_Map_GetBestMapForUnit("player");
 end
 app.GetMapName = function(mapID)
-	if mapID and mapID > 0 then
+	if mapID then
 		if mapIDToMapName[mapID] then return mapIDToMapName[mapID]; end
-		local info = C_Map_GetMapInfo(mapID);
-		if info then
-			return info.name;
-		else
-			for name,m in pairs(L.ZONE_TEXT_TO_MAP_ID) do
-				if mapID == m then
-					return name;
-				end
-			end
-			for name,m in pairs(L.ALT_ZONE_TEXT_TO_MAP_ID) do
-				if mapID == m then
-					return name;
-				end
+		for name,m in pairs(L.ZONE_TEXT_TO_MAP_ID) do
+			if mapID == m then
+				return name;
 			end
 		end
-		return "Map ID #" .. mapID;
+		for name,m in pairs(L.ALT_ZONE_TEXT_TO_MAP_ID) do
+			if mapID == m then
+				return name;
+			end
+		end
+		
+		local info = C_Map_GetMapInfo(mapID);
+		return (info and info.name) or ("Map ID #" .. mapID);
 	else
 		return "Map ID #???";
 	end
+	
 end
 
 app.CreateExploration = app.CreateClass("Exploration", "explorationID", {
