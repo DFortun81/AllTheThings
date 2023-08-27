@@ -7104,6 +7104,8 @@ app.CreateInstance = app.CreateClass("Instance", "instanceID", {
 	end
 end));
 
+app:RegisterEvent("MAP_EXPLORATION_UPDATED");
+app:RegisterEvent("UI_INFO_MESSAGE");
 app.events.MAP_EXPLORATION_UPDATED = function(...)
 	app.CurrentMapID = app.GetCurrentMapID();
 	app:StartATTCoroutine("RefreshExploration", function()
@@ -7141,20 +7143,17 @@ app.events.UI_INFO_MESSAGE = function(messageID)
 		app.events.MAP_EXPLORATION_UPDATED();
 	end
 end
-app.events.ZONE_CHANGED = function()
+
+local function UpdateMap()
 	app.CurrentMapID = app.GetCurrentMapID();
 end
-app.events.ZONE_CHANGED_INDOORS = function()
-	app.CurrentMapID = app.GetCurrentMapID();
-end
-app.events.ZONE_CHANGED_NEW_AREA = function()
-	app.CurrentMapID = app.GetCurrentMapID();
-end
-app:RegisterEvent("MAP_EXPLORATION_UPDATED");
-app:RegisterEvent("UI_INFO_MESSAGE");
 app:RegisterEvent("ZONE_CHANGED");
 app:RegisterEvent("ZONE_CHANGED_INDOORS");
 app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
+app.events.ZONE_CHANGED = UpdateMap;
+app.events.ZONE_CHANGED_INDOORS = UpdateMap;
+app.events.ZONE_CHANGED_NEW_AREA = UpdateMap;
+UpdateMap();
 end)();
 
 -- NPC Lib
