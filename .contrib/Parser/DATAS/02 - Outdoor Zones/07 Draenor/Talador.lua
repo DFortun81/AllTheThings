@@ -884,7 +884,7 @@ root(ROOTS.Zones, {
 					}),
 					q(33740, {	-- Burning Sky
 						["provider"] = { "n", 75896 },	-- Crystal-Shaper Barum
-						["coord"] = { 73.0, 38.7, 353 },
+						["coord"] = { 73.0, 38.7, TALADOR },
 						["sourceQuests"] = {
 							34685,	-- As The Smoke Rises (breadcrumb)
 							34566,	-- At Your Command
