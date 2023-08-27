@@ -64,40 +64,45 @@ root(ROOTS.WorldDrops, {
 				}},
 			}),
 			i(16882, {	-- Battered Junkbox
-				i(11968),	-- Amber Hoop
-				i(4999),	-- Azora's Will
-				i(4446),	-- Blackvenom Blade
-				i(11984),	-- Cobalt Ring
-				i(11994),	-- Coral Band
-				i(12054),	-- Demon Band
-				i(2567),	-- Evocator's Blade
-				i(6375),	-- Formula: Enchant Bracer - Lesser Versatility / CLASSIC: Formula: Enchant Bracer - Lesser Spirit (RECIPE!)
-				i(5002),	-- Glowing Green Talisman
-				i(11969),	-- Jacinth Circle
-				i(6454),	-- Manual: Strong Anti-Venom
-				i(12006),	-- Meadow Ring
-				i(7360),	-- Pattern: Dark Leather Gloves (RECIPE!)
-				i(5972),	-- Pattern: Fine Leather Pants (RECIPE!)
-				i(2601),	-- Pattern: Gray Woolen Robe
-				i(7092),	-- Pattern: Hands of Darkness
-				i(7364),	-- Pattern: Heavy Earthen Gloves (RECIPE!)
-				i(7363),	-- Pattern: Pilferer's Gloves (RECIPE!)
-				i(4350),	-- Pattern: Spider Silk Slippers
-				i(6390),	-- Pattern: Stylish Blue Shirt
-				i(3611),	-- Plans: Green Iron Boots (RECIPE!)
-				i(6044),	-- Plans: Iron Shield Spike (RECIPE!)
-				i(3608),	-- Plans: Mighty Iron Hammer (RECIPE!)
-				i(5578),	-- Plans: Silvered Bronze Breastplate (RECIPE!)
-				i(10424),	-- Plans: Silvered Bronze Leggings (RECIPE!)
-				i(2882),	-- Plans: Silvered Bronze Shoulders (RECIPE!)
-				i(12007),	-- Prairie Ring
-				i(3396),	-- Recipe: Elixir of Lesser Agility (RECIPE!)
-				i(12008),	-- Savannah Ring
-				i(5756),	-- Sliverblade
-				i(4454, {	-- Talon of Vultros
-					["timeline"] = { "added 7.2.5.18522" }, -- Unclear when exactly. Going with the big return of items in 7.2.5
-				}),
-				i(11967),	-- Zircon Band
+				["groups"] = {
+					i(4446),	-- Blackvenom Blade
+					i(2567),	-- Evocator's Blade
+					i(5756),	-- Sliverblade
+					i(4454, {	-- Talon of Vultros
+						["timeline"] = { "added 7.2.5.18522" }, -- Unclear when exactly. Going with the big return of items in 7.2.5
+					}),
+				},
+				["sym"] = { {
+					"select", "itemID",
+				    11968,	-- Amber Hoop
+					4999,	-- Azora's Will
+					11984,	-- Cobalt Ring
+					11994,	-- Coral Band
+					12054,	-- Demon Band
+					6375,   -- Formula: Enchant Bracer - Lesser Versatility / CLASSIC: Formula: Enchant Bracer - Lesser Spirit (RECIPE!)
+					5002,   -- Glowing Green Talisman
+					11969,  -- Jacinth Circle
+					6454,   -- Manual: Strong Anti-Venom
+					12006,  -- Meadow Ring
+					7360,   -- Pattern: Dark Leather Gloves (RECIPE!)
+					5972,   -- Pattern: Fine Leather Pants (RECIPE!)
+					2601,   -- Pattern: Gray Woolen Robe
+					7092,   -- Pattern: Hands of Darkness
+					7364,   -- Pattern: Heavy Earthen Gloves (RECIPE!)
+					7363,   -- Pattern: Pilferer's Gloves (RECIPE!)
+					4350,   -- Pattern: Spider Silk Slippers
+					6390,   -- Pattern: Stylish Blue Shirt
+					3611,   -- Plans: Green Iron Boots (RECIPE!)
+					6044,   -- Plans: Iron Shield Spike (RECIPE!)
+					3608,   -- Plans: Mighty Iron Hammer (RECIPE!)
+					5578,   -- Plans: Silvered Bronze Breastplate (RECIPE!)
+					10424,  -- Plans: Silvered Bronze Leggings (RECIPE!)
+					2882,   -- Plans: Silvered Bronze Shoulders (RECIPE!)
+					12007,  -- Prairie Ring
+					3396,   -- Recipe: Elixir of Lesser Agility (RECIPE!)
+					12008,  -- Savannah Ring
+					11967,  -- Zircon Band
+				}},
 			}),
 			i(5760, {	-- Eternium Lockbox
 				i(12058),	-- Demonic Bone Ring
