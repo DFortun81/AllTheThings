@@ -73,7 +73,7 @@ local OnTooltipForTimbermawHold = [[function(t)
 end]];
 root(ROOTS.Zones, m(KALIMDOR, {
 	n(TIMBERMAW_HOLD, {
-		["zone-text-areaID"] = 1216,
+		["zone-text-areaID"] = 1769,
 		["maps"] = { FELWOOD, WINTERSPRING },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
