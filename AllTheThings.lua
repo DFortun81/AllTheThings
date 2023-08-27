@@ -10353,7 +10353,7 @@ local fields = {
 		return cache.GetCachedField(t, "link", CacheInfo);
 	end,
 	["back"] = function(t)
-		if app.CurrentMapID == t.mapID or (t.maps and contains(t.maps, app.CurrentMapID)) then
+		if (t.mapID and app.CurrentMapID == t.mapID) or (t.maps and contains(t.maps, app.CurrentMapID)) then
 			return 1;
 		end
 	end,
@@ -11709,18 +11709,16 @@ app.CreateMapWithStyle = function(id)
 	return mapObject;
 end
 
-app.events.ZONE_CHANGED = function()
-	app.CurrentMapID = app.GetCurrentMapID();
-end
-app.events.ZONE_CHANGED_INDOORS = function()
-	app.CurrentMapID = app.GetCurrentMapID();
-end
-app.events.ZONE_CHANGED_NEW_AREA = function()
+local function UpdateMap()
 	app.CurrentMapID = app.GetCurrentMapID();
 end
 app:RegisterEvent("ZONE_CHANGED");
 app:RegisterEvent("ZONE_CHANGED_INDOORS");
 app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
+app.events.ZONE_CHANGED = UpdateMap;
+app.events.ZONE_CHANGED_INDOORS = UpdateMap;
+app.events.ZONE_CHANGED_NEW_AREA = UpdateMap;
+UpdateMap();
 end)();
 
 -- Mount Lib
@@ -18324,29 +18322,23 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			-- force update when showing the minilist
 			Callback(self.Update, self, true);
 		end
-		local function RefreshLocation()
+		local function RefreshLocation(show)
 			-- Acquire the new map ID.
 			local mapID = app.GetCurrentMapID();
-			app.CurrentMapID = mapID;
 			-- app.PrintDebug("RefreshLocation",mapID)
 			if not mapID then
 				AfterCombatCallback(RefreshLocation);
 				return;
 			end
-			local mapInfo = app.CurrentMapInfo;
-			-- don't auto-load minimap to anything higher than a 'Zone', unless it has no parent?
-			if mapInfo and mapInfo.parentMapID and (mapInfo.mapType or 0) < 3 then
-				-- app.PrintDebug("Don't load Large Maps in minilist")
-				return;
-			end
-			OpenMiniList(mapID);
+			app.CurrentMapID = mapID;
+			OpenMiniList(mapID, show);
 		end
 		local function ToggleMiniListForCurrentZone()
 			local self = app:GetWindow("CurrentInstance");
 			if self:IsVisible() then
 				self:Hide();
 			else
-				RefreshLocation();
+				RefreshLocation(true);
 			end
 		end
 		local function LocationTrigger()
