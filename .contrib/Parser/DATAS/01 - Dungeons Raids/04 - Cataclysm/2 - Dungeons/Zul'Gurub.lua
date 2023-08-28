@@ -50,28 +50,28 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_1_0 },
 						crit(2),	-- Waterlogged Gurubashi Cache
 					})),
 					ach(5744, {	-- Gurubashi Headhunter
-						crit(1, {	-- Gub
+						crit(16808, {	-- Gub
 							["_npcs"] = { 52440 },	-- Gub
 						}),
-						crit(2, {	-- Mortaxx
+						crit(16809, {	-- Mortaxx
 							["_npcs"] = { 52438 },	-- Mortaxx
 						}),
-						crit(3, {	-- Kaulema
+						crit(16810, {	-- Kaulema
 							["_npcs"] = { 52422 },	-- Kaulema
 						}),
-						crit(4, {	-- Mor'Lek
+						crit(16811, {	-- Mor'Lek
 							["_npcs"] = { 52405 },	-- Mor'Lek
 						}),
-						crit(5, {	-- Hive Queen
+						crit(16812, {	-- Hive Queen
 							["_npcs"] = { 52442 },	-- Florawing Hive Queen
 						}),
-						crit(6, {	-- Lost Offspring
+						crit(16813, {	-- Lost Offspring
 							["_npcs"] = { 52418 },	-- Lost Offspring of Gahz'ranka
 						}),
-						crit(7, {	-- Gurubashi Master Chef
+						crit(16814, {	-- Gurubashi Master Chef
 							["_npcs"] = { 52392 },	-- Gurubashi Master Chef
 						}),
-						crit(8, {	-- Tor-Tun
+						crit(17022, {	-- Tor-Tun
 							["_npcs"] = { 52414 },	-- Tor-Tun
 						}),
 					}),

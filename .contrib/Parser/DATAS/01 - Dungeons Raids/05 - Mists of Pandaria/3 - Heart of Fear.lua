@@ -14,24 +14,24 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(6718, {	-- The Dread Approach
-					crit(1, {	-- Imperial Vizier Zor'lok
+					crit(19628, {	-- Imperial Vizier Zor'lok
 						["_encounter"] = { 745, 7 },
 					}),
-					crit(2, {	-- Blade Lord Ta'yak
+					crit(19629, {	-- Blade Lord Ta'yak
 						["_encounter"] = { 744, 7 },
 					}),
-					crit(3, {	-- Garalon
+					crit(19632, {	-- Garalon
 						["_encounter"] = { 713, 7 },
 					}),
 				}),
 				ach(6845, {	-- Nightmare of Shek'zeer
-					crit(1, {	-- Wind Lord Mel'jarak
+					crit(19631, {	-- Wind Lord Mel'jarak
 						["_encounter"] = { 741, 7 },
 					}),
-					crit(2, {	-- Amber-Shaper Un'sok
+					crit(19633, {	-- Amber-Shaper Un'sok
 						["_encounter"] = { 737, 7 },
 					}),
-					crit(3, {	-- Grand Empress Shek'zeer
+					crit(19634, {	-- Grand Empress Shek'zeer
 						["_encounter"] = { 743, 7 },
 					}),
 				}),
@@ -335,10 +335,10 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 						["crs"] = { 62837 },	-- Grand Empress Shek'zeer
 						["g"] = {
 							ach(6922, {	-- Timing is Everything
-								crit(1, {	-- Defeat 2 Kor'thik Reavers within 10 seconds of each other
+								crit(21105, {	-- Defeat 2 Kor'thik Reavers within 10 seconds of each other
 									["cr"] = 63591,	-- Kor'thik Reaver
 								}),
-								crit(2, {	-- Defeat Grand Empress Shek'zeer
+								crit(21107, {	-- Defeat Grand Empress Shek'zeer
 								}),
 							}),
 							ach(8246, {	-- Ahead of the Curve: Grand Empress Shek'zeer

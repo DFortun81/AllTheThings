@@ -106,52 +106,52 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 				ach(18557),	-- Never Bothered, Anyway
 				ach(18616, {	-- Putting Wilhelm Out of Business
-					crit(1, {	-- Omarion's Notes - Pages 1 & 2
+					crit(60649, {	-- Omarion's Notes - Pages 1 & 2
 						["_quests"] = { 76291 },
 					}),
-					crit(2, {	-- Omarion's Notes - Pages 3 & 4
+					crit(60650, {	-- Omarion's Notes - Pages 3 & 4
 						["_quests"] = { 76292 },
 					}),
-					crit(3, {	-- Omarion's Notes - Pages 5 & 6
+					crit(60651, {	-- Omarion's Notes - Pages 5 & 6
 						["_quests"] = { 76293 },
 					}),
-					crit(4, {	-- Omarion's Notes - Pages 7 & 8
+					crit(60652, {	-- Omarion's Notes - Pages 7 & 8
 						["_quests"] = { 76294 },
 					}),
-					crit(5, {	-- Omarion's Notes - Pages 9 & 10
+					crit(60653, {	-- Omarion's Notes - Pages 9 & 10
 						["_quests"] = { 76295 },
 					}),
-					crit(6, {	-- Omarion's Notes - Pages 11 & 12
+					crit(60654, {	-- Omarion's Notes - Pages 11 & 12
 						["_quests"] = { 76296 },
 					}),
-					crit(7, {	-- Omarion's Notes - Pages 13 & 14
+					crit(60655, {	-- Omarion's Notes - Pages 13 & 14
 						["_quests"] = { 76297 },
 					}),
-					crit(8, {	-- Omarion's Notes - Pages 15 & 16
+					crit(60656, {	-- Omarion's Notes - Pages 15 & 16
 						["_quests"] = { 76298 },
 					}),
-					crit(9, {	-- Omarion's Notes - Pages 17 & 18
+					crit(60657, {	-- Omarion's Notes - Pages 17 & 18
 						["_quests"] = { 76299 },
 					}),
-					crit(10, {	-- Omarion's Notes - Pages 19 & 20
+					crit(60658, {	-- Omarion's Notes - Pages 19 & 20
 						["_quests"] = { 76300 },
 					}),
-					crit(11, {	-- Omarion's Notes - Pages 21 & 22
+					crit(60659, {	-- Omarion's Notes - Pages 21 & 22
 						["_quests"] = { 76301 },
 					}),
-					crit(12, {	-- Omarion's Notes - Pages 23 & 24
+					crit(60660, {	-- Omarion's Notes - Pages 23 & 24
 						["_quests"] = { 76302 },
 					}),
-					crit(13, {	-- Omarion's Notes - Pages 25 & 26
+					crit(60661, {	-- Omarion's Notes - Pages 25 & 26
 						["_quests"] = { 76303 },
 					}),
-					crit(14, {	-- Omarion's Notes - Pages 27 & 28
+					crit(60662, {	-- Omarion's Notes - Pages 27 & 28
 						["_quests"] = { 76304 },
 					}),
-					crit(15, {	-- Omarion's Notes - Pages 29 & 30
+					crit(60663, {	-- Omarion's Notes - Pages 29 & 30
 						["_quests"] = { 76305 },
 					}),
-					crit(16, {	-- Omarion's Notes - Pages 31 & 32
+					crit(60664, {	-- Omarion's Notes - Pages 31 & 32
 						["_quests"] = { 76306 },
 					}),
 				}),

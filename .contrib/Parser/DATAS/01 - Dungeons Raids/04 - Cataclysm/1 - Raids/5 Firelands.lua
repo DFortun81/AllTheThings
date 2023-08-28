@@ -77,25 +77,25 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(5802, {	-- Firelands
-					crit(1, {	-- Beth'tilac
+					crit(17430, {	-- Beth'tilac
 						["_encounter"] = { 192, NORMAL_RAID },
 					}),
-					crit(2, {	-- Lord Rhyolith
+					crit(17431, {	-- Lord Rhyolith
 						["_encounter"] = { 193, NORMAL_RAID },
 					}),
-					crit(3, {	-- Alysrazor
+					crit(17435, {	-- Alysrazor
 						["_encounter"] = { 194, NORMAL_RAID },
 					}),
-					crit(4, {	-- Shannox
+					crit(17429, {	-- Shannox
 						["_encounter"] = { 195, NORMAL_RAID },
 					}),
-					crit(5, {	-- Baleroc, the Gatekeeper
+					crit(17432, {	-- Baleroc, the Gatekeeper
 						["_encounter"] = { 196, NORMAL_RAID },
 					}),
-					crit(6, {	-- Majordomo Staghelm
+					crit(17433, {	-- Majordomo Staghelm
 						["_encounter"] = { 197, NORMAL_RAID },
 					}),
-					crit(7, {	-- Ragnaros
+					crit(17434, {	-- Ragnaros
 						["_encounter"] = { 198, NORMAL_RAID },
 					}),
 				}),

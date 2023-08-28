@@ -23,30 +23,30 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(6106, {	-- Siege of Wyrmrest Temple
-					crit(1, {	-- Morchok
+					crit(18445, {	-- Morchok
 						["_encounter"] = { 311, 7 },	-- LFR
 					}),
-					crit(2, {	-- Warlord Zon'ozz
+					crit(18446, {	-- Warlord Zon'ozz
 						["_encounter"] = { 324, 7 },	-- LFR
 					}),
-					crit(3, {	-- Yor'sahj the Unsleeping
+					crit(18447, {	-- Yor'sahj the Unsleeping
 						["_encounter"] = { 325, 7 },	-- LFR
 					}),
-					crit(4, {	-- Hagara the Stormbinder
+					crit(18448, {	-- Hagara the Stormbinder
 						["_encounter"] = { 317, 7 },	-- LFR
 					}),
 				}),
 				ach(6107, {	-- Fall of Deathwing
-					crit(1, {	-- Ultraxion
+					crit(18449, {	-- Ultraxion
 						["_encounter"] = { 331, 7 },	-- LFR
 					}),
-					crit(2, {	-- Warmaster Blackthorn
+					crit(18450, {	-- Warmaster Blackthorn
 						["_encounter"] = { 332, 7 },	-- LFR
 					}),
-					crit(3, {	-- Spine of Deathwing
+					crit(18451, {	-- Spine of Deathwing
 						["_encounter"] = { 318, 7 },	-- LFR
 					}),
-					crit(4, {	-- Madness of Deathwing
+					crit(18452, {	-- Madness of Deathwing
 						["_encounter"] = { 333, 7 },	-- LFR
 					}),
 				}),
@@ -457,13 +457,13 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 					cr(55312, e(325, {	-- Yor'sahj the Unsleeping
 						ach(6129, {	-- Taste the Rainbow!
 							-- TODO: [crs] or what?
-							crit(1, {	-- Black and Yellow
+							crit(18495, {	-- Black and Yellow
 							}),
-							crit(2, {	-- Red and Green
+							crit(18496, {	-- Red and Green
 							}),
-							crit(3, {	-- Black and Blue
+							crit(18497, {	-- Black and Blue
 							}),
-							crit(4, {	-- Purple and Yellow
+							crit(18498, {	-- Purple and Yellow
 							}),
 						}),
 						i(78181),	-- Leggings of the Corrupted Conqueror
@@ -548,16 +548,16 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 					})),
 					cr(56173, e(333, {	-- Madness of Deathwing
 						ach(6180, {	-- Chromatic Champion
-							crit(1, {	-- Alexstrasza Assaulted First
+							crit(18658, {	-- Alexstrasza Assaulted First
 								["cr"] = 56099,
 							}),
-							crit(2, {	-- Kalecgos Assaulted First
+							crit(18659, {	-- Kalecgos Assaulted First
 								["cr"] = 56101,
 							}),
-							crit(3, {	-- Nozdormu Assaulted First
+							crit(18660, {	-- Nozdormu Assaulted First
 								["cr"] = 56102,
 							}),
-							crit(4, {	-- Ysera Assaulted First
+							crit(18661, {	-- Ysera Assaulted First
 								["cr"] = 56100,
 							}),
 						}),

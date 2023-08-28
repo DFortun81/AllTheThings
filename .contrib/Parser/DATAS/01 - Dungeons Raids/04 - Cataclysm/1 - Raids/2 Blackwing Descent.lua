@@ -15,22 +15,22 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(4842, {	-- Blackwing Descent
-					crit(1, {
+					crit(13537, {
 						["_encounter"] = { 170, NORMAL_DUNGEON },	-- Magmaw
 					}),
-					crit(2, {
+					crit(13538, {
 						["_encounter"] = { 169, NORMAL_DUNGEON },	-- Omnotron Defense System
 					}),
-					crit(3, {
+					crit(13539, {
 						["_encounter"] = { 173, NORMAL_DUNGEON },	-- Maloriak
 					}),
-					crit(4, {
+					crit(13540, {
 						["_encounter"] = { 171, NORMAL_DUNGEON },	-- Atramedes
 					}),
-					crit(5, {
+					crit(13541, {
 						["_encounter"] = { 172, NORMAL_DUNGEON },	-- Chimaeron
 					}),
-					crit(6, {
+					crit(13542, {
 						["_encounter"] = { 174, NORMAL_DUNGEON },	-- Nefarian's End
 					}),
 				}),

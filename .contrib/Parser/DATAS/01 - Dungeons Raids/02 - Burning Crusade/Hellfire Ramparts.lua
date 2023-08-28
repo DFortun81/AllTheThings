@@ -298,13 +298,13 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				["lvl"] = lvlsquish(70, 70, 30),
 				["groups"] = {
 					ach(667, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Heroic: Hellfire Ramparts
-						crit(1, {	-- Omor the Unscarred
+						crit(3705, {	-- Omor the Unscarred
 							["_encounter"] = { 528, HEROIC_DUNGEON },
 						}),
-						crit(2, {	-- Nazan
+						crit(3706, {	-- Nazan
 							["_encounter"] = { 529, HEROIC_DUNGEON },
 						}),
-						crit(3, {	-- Vazruden
+						crit(3816, {	-- Vazruden
 							["_encounter"] = { 529, HEROIC_DUNGEON },
 						}),
 					})),

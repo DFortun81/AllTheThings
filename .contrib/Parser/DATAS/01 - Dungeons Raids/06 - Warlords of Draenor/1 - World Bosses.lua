@@ -133,10 +133,10 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 				},
 			}),
 			ach(9423, {	-- Goliaths of Gorgrond
-				crit(1, { -- Tarlna the Ageless
+				crit(25767, { -- Tarlna the Ageless
 					["_quests"] = { 37462 },
 				}),
-				crit(2, { -- Drov the Ruiner
+				crit(25768, { -- Drov the Ruiner
 					["_quests"] = { 37460 },
 				}),
 			}),

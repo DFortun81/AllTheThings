@@ -14,24 +14,24 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(6458, {	-- Guardians of Mogu'shan
-					crit(1, {	-- The Stone Guard
+					crit(19110, {	-- The Stone Guard
 						["_encounter"] = { 679, 7 },
 					}),
-					crit(2, {	-- Feng the Accursed
+					crit(19111, {	-- Feng the Accursed
 						["_encounter"] = { 689, 7 },
 					}),
-					crit(3, {	-- Gara'jal the Spiritbinder
+					crit(19112, {	-- Gara'jal the Spiritbinder
 						["_encounter"] = { 682, 7 },
 					}),
 				}),
 				ach(6844, {	-- The Vault of Mysteries
-					crit(1, {	-- The Spirit Kings
+					crit(19113, {	-- The Spirit Kings
 						["_encounter"] = { 687, 7 },
 					}),
-					crit(2, {	-- Elegon
+					crit(19767, {	-- Elegon
 						["_encounter"] = { 726, 7 },
 					}),
-					crit(3, {	-- Will of the Emperor
+					crit(19115, {	-- Will of the Emperor
 						["_encounter"] = { 677, 7 },
 					}),
 				}),

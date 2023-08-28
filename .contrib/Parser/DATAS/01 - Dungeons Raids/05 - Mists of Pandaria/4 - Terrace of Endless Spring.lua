@@ -11,16 +11,16 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(6689, {	-- Terrace of Endless Spring
-					crit(1, {	-- Protectors of the Endless
+					crit(19518, {	-- Protectors of the Endless
 						["_encounter"] = { 683, 7 },
 					}),
-					crit(2, {	-- Tsulong
+					crit(19519, {	-- Tsulong
 						["_encounter"] = { 742, 7 },
 					}),
-					crit(3, {	-- Lei Shi
+					crit(19520, {	-- Lei Shi
 						["_encounter"] = { 729, 7 },
 					}),
-					crit(4, {	-- Sha of Fear
+					crit(19521, {	-- Sha of Fear
 						["_encounter"] = { 709, 7 },
 					}),
 				}),
@@ -210,13 +210,13 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 						},
 						["g"] = {
 							ach(6717, {	-- Power Overwhelming
-								crit(1, {	-- Protector Kaolan defeated last
+								crit(19624, {	-- Protector Kaolan defeated last
 									["cr"] = 60583,	-- Protector Kaolan
 								}),
-								crit(2, {	-- Elder Regail defeated last
+								crit(19625, {	-- Elder Regail defeated last
 									["cr"] = 60585,	-- Elder Regail
 								}),
-								crit(3, {	-- Elder Asani defeated last
+								crit(19626, {	-- Elder Asani defeated last
 									["cr"] = 60586,	-- Elder Asani
 								}),
 							}),

@@ -131,19 +131,19 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_1_0 },
 								["timeline"] = { "added 2.3.0.7382" },
 							}),
 							ach(5761, {	-- Hex Mix
-								crit(1, {	-- Rosa saved.
+								crit(16836, {	-- Rosa saved.
 									["provider"] = { "n", 52905 },	-- Rosa
 								}),
-								crit(2, {	-- Eulinda saved.
+								crit(16837, {	-- Eulinda saved.
 									["provider"] = { "n", 52914 },	-- Eulinda
 								}),
-								crit(3, {	-- Lenzo saved.
+								crit(16838, {	-- Lenzo saved.
 									["provider"] = { "n", 52917 },	-- Lenzo
 								}),
-								crit(4, {	-- Melasong saved.
+								crit(16839, {	-- Melasong saved.
 									["provider"] = { "n", 52916 },	-- Melasong
 								}),
-								crit(5, {	-- Harald saved.
+								crit(16840, {	-- Harald saved.
 									["provider"] = { "n", 52915 },	-- Harald
 									["groups"] = {
 										i(33926, {	-- Sealed Scroll Case
@@ -151,25 +151,25 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_1_0 },
 										})
 									}
 								}),
-								crit(6, {	-- Relissa saved.
+								crit(16841, {	-- Relissa saved.
 									["provider"] = { "n", 52912 },	-- Relissa
 								}),
-								crit(7, {	-- Kaldrick saved.
+								crit(16842, {	-- Kaldrick saved.
 									["provider"] = { "n", 52918 },	-- Kaldrick
 								}),
-								crit(8, {	-- Arinoth saved.
+								crit(16843, {	-- Arinoth saved.
 									["provider"] = { "n", 52919 },	-- Arinoth
 								}),
-								crit(9, {	-- Micah saved.
+								crit(16844, {	-- Micah saved.
 									["provider"] = { "n", 52910 },	-- Micah
 								}),
-								crit(10, {	-- Tyllan saved.
+								crit(16845, {	-- Tyllan saved.
 									["provider"] = { "n", 52909 },	-- Tyllan
 								}),
-								crit(11, {	-- Mawago saved.
+								crit(16846, {	-- Mawago saved.
 									["provider"] = { "n", 52920 },	-- Mawago
 								}),
-								crit(12, {	-- Melissa saved.
+								crit(16847, {	-- Melissa saved.
 									["provider"] = { "n", 52947 },	-- Melissa
 								}),
 							}),

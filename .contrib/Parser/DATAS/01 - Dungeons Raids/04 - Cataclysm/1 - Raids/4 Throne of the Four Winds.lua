@@ -12,10 +12,10 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(4851, {		-- Throne of the Four Winds
-					crit(1, {	-- Conclave of Wind
+					crit(14097, {	-- Conclave of Wind
 						["_encounter"] = { 154, NORMAL_DUNGEON },
 					}),
-					crit(2, {	-- Al'Akir
+					crit(13581, {	-- Al'Akir
 						["_encounter"] = { 155, NORMAL_DUNGEON },
 					}),
 				}),

@@ -15,10 +15,10 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["timeline"] = { ADDED_10_1_5 },
 		}),
 		ach(18558, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Leaders of Scholomance
-			crit(1, {	-- Darkmaster Gandling
+			crit(549, {	-- Darkmaster Gandling
 				["_npcs"] = { 1853 },
 			}),
-			crit(2, {	-- Kirtonos the Herald
+			crit(60409, {	-- Kirtonos the Herald
 				["_npcs"] = { 10506 },
 			}),
 		})),

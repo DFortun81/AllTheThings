@@ -13,16 +13,16 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(4850, {	-- The Bastion of Twilight
-					crit(1, {	-- Halfus Wyrmbreaker
+					crit(13577, {	-- Halfus Wyrmbreaker
 						["_encounter"] = { 156, NORMAL_DUNGEON },
 					}),
-					crit(2, {	-- Valiona and Theralion
+					crit(13576, {	-- Valiona and Theralion
 						["_encounter"] = { 157, NORMAL_DUNGEON },
 					}),
-					crit(3, {	-- Ascendant Council
+					crit(13578, {	-- Ascendant Council
 						["_encounter"] = { 158, NORMAL_DUNGEON },
 					}),
-					crit(4, {	-- Cho'gall
+					crit(13579, {	-- Cho'gall
 						["_encounter"] = { 167, NORMAL_DUNGEON },
 					}),
 				}),

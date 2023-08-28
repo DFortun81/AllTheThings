@@ -901,16 +901,16 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 				},
 				["g"] = {
 					ach(8535, {	-- Celestial Challenge
-						crit(1, {	-- Chi-Ji slain
+						crit(23743, {	-- Chi-Ji slain
 							["_encounter"] =  { 857 },
 						}),
-						crit(2, {	-- Niuzao slain
+						crit(23745, {	-- Niuzao slain
 							["_encounter"] =  { 859 },
 						}),
-						crit(3, {	-- Xuen slain
+						crit(23746, {	-- Xuen slain
 							["_encounter"] =  { 860 },
 						}),
-						crit(4, {	-- Yu'lon slain
+						crit(23744, {	-- Yu'lon slain
 							["_encounter"] =  { 858 },
 						}),
 					}),
