@@ -1252,7 +1252,10 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			n(9218, {	-- Spirestone Battle Lord (Rare)
 				["coord"] = { 39.0, 64.0, LBRS_HORDEMAR_CITY },	-- Mok'Doom
+				-- #if BEFORE 6.0.1
 				["description"] = "This is a rare that is not always present.",
+				-- #endif
+				["description"] = "This is a rare that is not always present.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command.",
 				["groups"] = {
 					i(13285),	-- The Blackrock Slicers
 					i(13284),	-- Swiftdart Battleboots
@@ -1260,7 +1263,10 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			n(9219, {	-- Spirestone Butcher (Rare)
 				["coord"] = { 54.0, 58.0, LBRS_HORDEMAR_CITY },
+				-- #if BEFORE 6.0.1
 				["description"] = "This is a rare that is not always present.",
+				-- #endif
+				["description"] = "This is a rare that is not always present.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command.",
 				["groups"] = {
 					i(13286),	-- Rivenspike
 					i(12608),	-- Butcher's Apron
@@ -1445,7 +1451,10 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			-- #endif
 			n(10376, {	-- Crystal Fang (Rare)
 				["coord"] = { 55.0, 75.0, LBRS_SKITTERWEB_TUNNELS },
+				-- #if BEFORE 6.0.1
 				["description"] = "This is a rare that is not always present.",
+				-- #endif
+				["description"] = "This is a rare that is not always present.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command.",
 				["groups"] = {
 					i(13218),	-- Fang of the Crystal Spider
 					i(13185),	-- Sunderseer Mantle
@@ -1543,7 +1552,10 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					{ 36.0, 72.0, LBRS_HALYCONS_LAIR },
 					{ 36.0, 60.0, LBRS_HALYCONS_LAIR },
 				},
+				-- #if BEFORE 6.0.1
 				["description"] = "This is a rare that is not always present.",
+				-- #endif
+				["description"] = "This is a rare that is not always present.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command.",
 				["groups"] = {
 					i(13204),	-- Bashguuder
 					i(13198),	-- Hurd Smasher
