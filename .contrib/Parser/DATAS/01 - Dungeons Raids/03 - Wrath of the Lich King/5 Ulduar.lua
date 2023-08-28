@@ -56,19 +56,19 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 				ach(12297, {	-- The Siege of Ulduar
 					["timeline"] = { "added 7.3.5.25727" },
 					["groups"] = {
-						crit(1, {	-- Flame Leviathan
+						crit(39267, {	-- Flame Leviathan
 							["timeline"] = { "added 7.3.5.25727" },
 							["_npcs"] = { 33113 },
 						}),
-						crit(2, {	-- Razorscale
+						crit(39268, {	-- Razorscale
 							["timeline"] = { "added 7.3.5.25727" },
 							["_npcs"] = { 33186 },
 						}),
-						crit(3, {	-- Ignis the Furnace Master
+						crit(39270, {	-- Ignis the Furnace Master
 							["timeline"] = { "added 7.3.5.25727" },
 							["_npcs"] = { 33118 },
 						}),
-						crit(4, {	-- XT-002 Deconstructor
+						crit(39269, {	-- XT-002 Deconstructor
 							["timeline"] = { "added 7.3.5.25727" },
 							["_npcs"] = { 33293 },
 						}),
@@ -77,15 +77,15 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 				ach(12302, {	-- The Antechamber of Ulduar
 					["timeline"] = { "added 7.3.5.25727" },
 					["groups"] = {
-						crit(1, {	-- Assembly of Iron
+						crit(39285, {	-- Assembly of Iron
 							["timeline"] = { "added 7.3.5.25727" },
 							["_npcs"] = { 32867 },
 						}),
-						crit(2, {	-- Kologarn
+						crit(39287, {	-- Kologarn
 							["timeline"] = { "added 7.3.5.25727" },
 							["_npcs"] = { 32930 },
 						}),
-						crit(3, {	-- Auriaya
+						crit(39286, {	-- Auriaya
 							["timeline"] = { "added 7.3.5.25727" },
 							["_npcs"] = { 33515 },
 						}),
@@ -94,19 +94,19 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 				ach(12309, {	-- The Keepers of Ulduar
 					["timeline"] = { "added 7.3.5.25727" },
 					["groups"] = {
-						crit(1, {	-- Hodir
+						crit(39289, {	-- Hodir
 							["timeline"] = { "added 7.3.5.25727" },
 							["_npcs"] = { 32845 },
 						}),
-						crit(2, {	-- Thorim
+						crit(39291, {	-- Thorim
 							["timeline"] = { "added 7.3.5.25727" },
 							["_npcs"] = { 32865 },
 						}),
-						crit(3, {	-- Freya
+						crit(39292, {	-- Freya
 							["timeline"] = { "added 7.3.5.25727" },
 							["_npcs"] = { 32906 },
 						}),
-						crit(4, {	-- Mimiron
+						crit(39293, {	-- Mimiron
 							["timeline"] = { "added 7.3.5.25727" },
 							["_npcs"] = { 33350 },
 						}),
@@ -115,11 +115,11 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 				ach(12310, {	-- The Descent into Madness
 					["timeline"] = { "added 7.3.5.25727" },
 					["groups"] = {
-						crit(1, {	-- General Vezax
+						crit(39294, {	-- General Vezax
 							["timeline"] = { "added 7.3.5.25727" },
 							["_npcs"] = { 33271 },
 						}),
-						crit(2, {	-- Yogg-Saron
+						crit(39295, {	-- Yogg-Saron
 							["timeline"] = { "added 7.3.5.25727" },
 							["_npcs"] = { 33288 },
 						}),

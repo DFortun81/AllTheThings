@@ -48,10 +48,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["sourceQuest"] = 5263,	-- Above and Beyond
 					-- #endif
 					["groups"] = {
-						crit(1, {	-- Balnazzar
+						crit(550, {	-- Balnazzar
 							["_npcs"] = { 10813 },
 						}),
-						crit(2, {	-- Lord Aurius Rivendare
+						crit(18471, {	-- Lord Aurius Rivendare
 							["_npcs"] = {
 								-- #if AFTER 4.0.3
 								45412,	-- Lord Aurius Rivendare
