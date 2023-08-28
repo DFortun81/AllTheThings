@@ -243,49 +243,53 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(23892, {	-- Ominous Letter [Horde]
 							["races"] = HORDE_ONLY,
 						}),
-						n(17536, {	-- Nazan
-							i(23901),	-- Nazan's Head
-						}),
-						o(185168, {	-- Reinforced Fel Iron Chest
-							i(24044),	-- Hellreaver
-							i(24155),	-- Ursol's Claw
-							-- #if AFTER 7.3.5
-							i(29346),	-- Feltooth Eviscerator
-							i(27455),	-- Irondrake Faceguard
-							i(27454),	-- Volcanic Pauldrons
-							-- #endif
-							i(24150),	-- Mok'Nathal Wildercloak
-							-- #if AFTER 7.3.5
-							i(27461),	-- Chestguard of the Prowler
-							i(27456),	-- Raiments of Nature's Breath
-							i(27452),	-- Light Scribe Bands
-							i(27459),	-- Vambraces of Daring
-							i(27457),	-- Life Bearer's Gauntlets
-							i(32077),	-- Wrath-Infused Gauntlets
-							i(29238),	-- Lion's Heart Girdle
-							-- #endif
-							i(24063),	-- Shifting Sash of Midnight
-							-- #if AFTER 7.3.5
-							i(29264),	-- Tree-Mender's Belt
-							-- #endif
-							i(24046),	-- Kilt of Rolling Thunders
-							i(24083),	-- Lifegiver Britches
-							-- #if AFTER 7.3.5
-							i(27458),	-- Oceansong Kilt
-							-- #endif
-							i(24064),	-- Ironsole Clompers
-							-- #if AFTER 7.3.5
-							i(27453),	-- Averinn's Ring of Slaying
-							-- #endif
-							i(24045),	-- Band of Renewal
-							i(24151),	-- Mok'Nathal Clan Ring
-							-- #if AFTER 7.3.5
-							i(27460),	-- Reavers' Ring
-							-- #endif
-							i(24154),	-- Witching Band
-						}),
 					},
-				})
+				}),
+				n(17536, {	-- Nazan
+					i(23901),	-- Nazan's Head
+				}),
+				o(185168, {	-- Reinforced Fel Iron Chest
+					["description"] = "Available after defeating both Vazruden the Herald and Nazan.",
+					["crs"] = { 17307, 17536 },	-- Vazruden and Nazan
+					["groups"] = {
+						i(24044),	-- Hellreaver
+						i(24155),	-- Ursol's Claw
+						-- #if AFTER 7.3.5
+						i(29346),	-- Feltooth Eviscerator
+						i(27455),	-- Irondrake Faceguard
+						i(27454),	-- Volcanic Pauldrons
+						-- #endif
+						i(24150),	-- Mok'Nathal Wildercloak
+						-- #if AFTER 7.3.5
+						i(27461),	-- Chestguard of the Prowler
+						i(27456),	-- Raiments of Nature's Breath
+						i(27452),	-- Light Scribe Bands
+						i(27459),	-- Vambraces of Daring
+						i(27457),	-- Life Bearer's Gauntlets
+						i(32077),	-- Wrath-Infused Gauntlets
+						i(29238),	-- Lion's Heart Girdle
+						-- #endif
+						i(24063),	-- Shifting Sash of Midnight
+						-- #if AFTER 7.3.5
+						i(29264),	-- Tree-Mender's Belt
+						-- #endif
+						i(24046),	-- Kilt of Rolling Thunders
+						i(24083),	-- Lifegiver Britches
+						-- #if AFTER 7.3.5
+						i(27458),	-- Oceansong Kilt
+						-- #endif
+						i(24064),	-- Ironsole Clompers
+						-- #if AFTER 7.3.5
+						i(27453),	-- Averinn's Ring of Slaying
+						-- #endif
+						i(24045),	-- Band of Renewal
+						i(24151),	-- Mok'Nathal Clan Ring
+						-- #if AFTER 7.3.5
+						i(27460),	-- Reavers' Ring
+						-- #endif
+						i(24154),	-- Witching Band
+					},
+				}),
 			}),
 			d(HEROIC_DUNGEON, {
 				-- #if BEFORE 4.2.0
@@ -300,9 +304,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					ach(667, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Heroic: Hellfire Ramparts
 						crit(3705, {	-- Omor the Unscarred
 							["_encounter"] = { 528, HEROIC_DUNGEON },
-						}),
-						crit(3706, {	-- Nazan
-							["_encounter"] = { 529, HEROIC_DUNGEON },
 						}),
 						crit(3816, {	-- Vazruden
 							["_encounter"] = { 529, HEROIC_DUNGEON },
@@ -392,50 +393,58 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(23892, {	-- Ominous Letter [Horde]
 								["races"] = HORDE_ONLY,
 							}),
-							n(17536, {	-- Nazan
-								i(23901),	-- Nazan's Head
-								i(33833),	-- Nazan's Riding Crop
-							}),
-							o(185168, {	-- Reinforced Fel Iron Chest
-								-- #if AFTER 7.3.5
-								i(24044),	-- Hellreaver
-								i(24155),	-- Ursol's Claw
-								-- #endif
-								i(29346),	-- Feltooth Eviscerator
-								i(27455),	-- Irondrake Faceguard
-								i(27454),	-- Volcanic Pauldrons
-								-- #if AFTER 7.3.5
-								i(24150),	-- Mok'Nathal Wildercloak
-								-- #endif
-								i(27461),	-- Chestguard of the Prowler
-								i(27456),	-- Raiments of Nature's Breath
-								i(27452),	-- Light Scribe Bands
-								i(27459),	-- Vambraces of Daring
-								i(27457),	-- Life Bearer's Gauntlets
-								i(32077),	-- Wrath-Infused Gauntlets
-								i(29238),	-- Lion's Heart Girdle
-								-- #if AFTER 7.3.5
-								i(24063),	-- Shifting Sash of Midnight
-								-- #endif
-								i(29264),	-- Tree-Mender's Belt
-								-- #if AFTER 7.3.5
-								i(24046),	-- Kilt of Rolling Thunders
-								i(24083),	-- Lifegiver Britches
-								-- #endif
-								i(27458),	-- Oceansong Kilt
-								-- #if AFTER 7.3.5
-								i(24064),	-- Ironsole Clompers
-								-- #endif
-								i(27453),	-- Averinn's Ring of Slaying
-								-- #if AFTER 7.3.5
-								i(24045),	-- Band of Renewal
-								i(24151),	-- Mok'Nathal Clan Ring
-								-- #endif
-								i(27460),	-- Reavers' Ring
-								-- #if AFTER 7.3.5
-								i(24154),	-- Witching Band
-								-- #endif
-							}),
+						},
+					}),
+					n(17536, {	-- Nazan
+						crit(3706, {	-- Nazan
+							["achievementID"] = 667,
+							["timeline"] = { "added 3.0.1" },
+						}),
+						i(23901),	-- Nazan's Head
+						i(33833),	-- Nazan's Riding Crop
+					}),
+					o(185168, {	-- Reinforced Fel Iron Chest
+						["description"] = "Available after defeating both Vazruden the Herald and Nazan.",
+						["crs"] = { 17307, 17536 },	-- Vazruden and Nazan
+						["groups"] = {
+							-- #if AFTER 7.3.5
+							i(24044),	-- Hellreaver
+							i(24155),	-- Ursol's Claw
+							-- #endif
+							i(29346),	-- Feltooth Eviscerator
+							i(27455),	-- Irondrake Faceguard
+							i(27454),	-- Volcanic Pauldrons
+							-- #if AFTER 7.3.5
+							i(24150),	-- Mok'Nathal Wildercloak
+							-- #endif
+							i(27461),	-- Chestguard of the Prowler
+							i(27456),	-- Raiments of Nature's Breath
+							i(27452),	-- Light Scribe Bands
+							i(27459),	-- Vambraces of Daring
+							i(27457),	-- Life Bearer's Gauntlets
+							i(32077),	-- Wrath-Infused Gauntlets
+							i(29238),	-- Lion's Heart Girdle
+							-- #if AFTER 7.3.5
+							i(24063),	-- Shifting Sash of Midnight
+							-- #endif
+							i(29264),	-- Tree-Mender's Belt
+							-- #if AFTER 7.3.5
+							i(24046),	-- Kilt of Rolling Thunders
+							i(24083),	-- Lifegiver Britches
+							-- #endif
+							i(27458),	-- Oceansong Kilt
+							-- #if AFTER 7.3.5
+							i(24064),	-- Ironsole Clompers
+							-- #endif
+							i(27453),	-- Averinn's Ring of Slaying
+							-- #if AFTER 7.3.5
+							i(24045),	-- Band of Renewal
+							i(24151),	-- Mok'Nathal Clan Ring
+							-- #endif
+							i(27460),	-- Reavers' Ring
+							-- #if AFTER 7.3.5
+							i(24154),	-- Witching Band
+							-- #endif
 						},
 					}),
 				}
