@@ -135,6 +135,7 @@ root(ROOTS.Character, filter(MISC, {
 		}),
 		i(162625, {	-- Tome of Polymorph: Direhorn (CI!)
 			["timeline"] = { ADDED_8_0_1_LAUNCH },
+			["races"] =  HORDE_ONLY,
 		}),
 		i(200205, {	-- Tome of Polymorph: Duck (CI!)
 			["timeline"] = { ADDED_10_0_2_LAUNCH },
