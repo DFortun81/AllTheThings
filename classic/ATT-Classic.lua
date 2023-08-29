@@ -1601,7 +1601,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				local o = { prefix = indent, group = group, right = right };
 				if group.u then
 					local reason = L["UNOBTAINABLE_ITEM_REASONS"][group.u];
-					if reason and (not reason[5] or select(4, GetBuildInfo()) < reason[5]) then
+					if reason and (not reason[5] or app.GameBuildVersion < reason[5]) then
 						o.texture = L["UNOBTAINABLE_ITEM_TEXTURES"][reason[1]];
 					end
 				elseif group.e then
@@ -1821,7 +1821,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 				if u < 99999999 then
 					local reason = L["UNOBTAINABLE_ITEM_REASONS"][u];
-					if reason and (not reason[5] or select(4, GetBuildInfo()) < reason[5]) then
+					if reason and (not reason[5] or app.GameBuildVersion < reason[5]) then
 						tinsert(info, { left = reason[2], wrap = true });
 					end
 				end
@@ -1890,7 +1890,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					local right = " ";
 					if j.u then
 						local reason = L["UNOBTAINABLE_ITEM_REASONS"][j.u];
-						if reason and (not reason[5] or select(4, GetBuildInfo()) < reason[5]) then
+						if reason and (not reason[5] or app.GameBuildVersion < reason[5]) then
 							right = "|T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][reason[1]] .. ":0|t";
 						end
 					end
@@ -3510,7 +3510,7 @@ else
 	WorldMapTooltip:HookScript("OnTooltipCleared", ClearTooltip);
 	WorldMapTooltip:HookScript("OnShow", AttachTooltip);
 end
-if select(4, GetBuildInfo()) > 11403 then
+if app.GameBuildVersion > 11403 then
 	app:RegisterEvent("CURSOR_CHANGED");
 	app.events.CURSOR_CHANGED = function()
 		app:StartATTCoroutine("UpdateTooltip", function()
@@ -4770,12 +4770,16 @@ end)();
 
 -- Category Lib
 (function()
+local defaultIcon = "Interface/ICONS/INV_Misc_Gear_02";
+if app.GameBuildVersion > 60001 then
+	defaultIcon = "Interface/ICONS/INV_Garrison_Blueprints1";
+end
 app.CreateCategory = app.CreateClass("Category", "categoryID", {
 	["text"] = function(t)
 		return AllTheThingsAD.LocalizedCategoryNames[t.categoryID] or ("Unknown Category #" .. t.categoryID);
 	end,
 	["icon"] = function(t)
-		return ATTC.CategoryIcons[t.categoryID] or "Interface/ICONS/INV_Misc_Gear_02";
+		return app.CategoryIcons[t.categoryID] or defaultIcon;
 	end,
 });
 end)();
@@ -8775,7 +8779,7 @@ end
 function app.FilterItemClass_RequireRaces(item)
 	return not item.nmr;
 end
-if select(4, GetBuildInfo()) > 11403 then
+if app.GameBuildVersion > 11403 then
 	function app.FilterItemClass_RequireRacesCurrentFaction(item)
 		if item.nmr then
 			if item.r then
@@ -9900,7 +9904,7 @@ local function SetRowData(self, row, data)
 	local indicatorTexture = data.e and L["UNOBTAINABLE_ITEM_TEXTURES"][4];
 	if data.u then
 		local reason = L["UNOBTAINABLE_ITEM_REASONS"][data.u];
-		if reason and (not reason[5] or select(4, GetBuildInfo()) < reason[5]) then
+		if reason and (not reason[5] or app.GameBuildVersion < reason[5]) then
 			indicatorTexture = L["UNOBTAINABLE_ITEM_TEXTURES"][reason[1]];
 		end
 	end
@@ -10267,7 +10271,7 @@ local function RowOnEnter(self)
 					GameTooltip:AddLine("Item #" .. reference.itemID);
 					if reference and reference.u then
 						local reason = L["UNOBTAINABLE_ITEM_REASONS"][reference.u];
-						if reason and (not reason[5] or select(4, GetBuildInfo()) < reason[5]) then GameTooltip:AddLine(reason[2], 1, 1, 1, true); end
+						if reason and (not reason[5] or app.GameBuildVersion < reason[5]) then GameTooltip:AddLine(reason[2], 1, 1, 1, true); end
 					end
 					if reference.e then
 						local reason = app.Modules.Events.GetEventTooltipNoteForGroup(reference);
@@ -10603,7 +10607,7 @@ local function RowOnEnter(self)
 			end
 			if reference.u then
 				local reason = L["UNOBTAINABLE_ITEM_REASONS"][reference.u];
-				if reason and (not reason[5] or select(4, GetBuildInfo()) < reason[5]) then GameTooltip:AddLine(reason[2], 1, 1, 1, true); end
+				if reason and (not reason[5] or app.GameBuildVersion < reason[5]) then GameTooltip:AddLine(reason[2], 1, 1, 1, true); end
 			end
 			if reference.e then
 				local reason = app.Modules.Events.GetEventTooltipNoteForGroup(reference);

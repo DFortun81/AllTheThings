@@ -651,7 +651,6 @@ f:SetATTTooltip("Click this button to copy the url to get to my Twitch Channel.\
 f.copypasta = "twitch.tv/crieve";
 settings.twitch = f;
 
-local currentBuild = select(4, GetBuildInfo());
 local reasons = L["UNOBTAINABLE_ITEM_REASONS"];
 local UnobtainableFilterOnClick = function(self)
 	local checked = self:GetChecked();
@@ -674,7 +673,7 @@ local UnobtainableOnRefresh = function(self)
 		self:SetChecked(settings:GetUnobtainableFilter(self.u));
 
 		local minimumBuild = reasons[self.u][4];
-		if minimumBuild and minimumBuild > currentBuild then
+		if minimumBuild and minimumBuild > app.GameBuildVersion then
 			self:Disable();
 			self:SetAlpha(0.2);
 		else
@@ -1908,8 +1907,8 @@ end;
 -- Update the default unobtainable states based on build version.
 for u,reason in pairs(reasons) do
 	if reason[4] then
-		if currentBuild >= reason[4] then
-			if reason[5] and currentBuild >= reason[5] then
+		if app.GameBuildVersion >= reason[4] then
+			if reason[5] and app.GameBuildVersion >= reason[5] then
 				UnobtainableSettingsBase.__index[u] = true;
 			else
 				UnobtainableSettingsBase.__index[u] = false;

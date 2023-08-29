@@ -14,6 +14,7 @@ if string.match(app.Version, "version") then
 else
 	app.Version = "v" .. app.Version;
 end
+app.GameBuildVersion = select(4, GetBuildInfo());
 
 -- ReloadUI slash command (for ease of use)
 SLASH_RELOADUI1 = "/reloadui";
