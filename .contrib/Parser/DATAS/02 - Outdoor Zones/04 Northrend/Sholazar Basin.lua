@@ -4,52 +4,56 @@
 local OnTooltipForFrenzyheart = [[function(t)
 	local reputation = t.reputation;
 	if reputation < 0 then
-		if not t.champion then
-			local f = _.SearchForField("questID", 12582);
-			if f and #f > 0 then t.champion = f[1]; end
+		local champion = t.champion;
+		if not champion then
+			champion = _.SearchForField("questID", 12582)[1];
+			t.champion = champion;
 		end
-		GameTooltip:AddDoubleLine("Complete " .. (t.champion.text or RETRIEVING_DATA), _.L[t.champion.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
+		GameTooltip:AddDoubleLine("Complete " .. (champion.text or RETRIEVING_DATA), _.L[champion.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
 	elseif reputation < 42000 then
 		local isHuman = _.RaceIndex == 1;
 		GameTooltip:AddLine("Daily Quests:");
 		local chickenRep = isHuman and 550 or 500;
-		if not t.chicken then
-			local f = _.SearchForField("questID", 12702);
-			if f and #f > 0 then t.chicken = f[1]; end
+		local chicken = t.chicken;
+		if not chicken then
+			chicken = _.SearchForField("questID", 12702)[1];
+			t.chicken = chicken;
 		end
-		GameTooltip:AddDoubleLine(t.chicken.text or RETRIEVING_DATA, _.L[t.chicken.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. chickenRep .. " Rep");
+		GameTooltip:AddDoubleLine(chicken.text or RETRIEVING_DATA, _.L[chicken.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. chickenRep .. " Rep");
 
 		local rejekRep = isHuman and 550 or 500;
-		if not t.rejek then
-			local rejek = {};
-			local f = _.SearchForField("questID", 12758);
-			if f and #f > 0 then tinsert(rejek, f[1]); end
-			f = _.SearchForField("questID", 12734);
-			if f and #f > 0 then tinsert(rejek, f[1]); end
-			f = _.SearchForField("questID", 12741);
-			if f and #f > 0 then tinsert(rejek, f[1]); end
-			f = _.SearchForField("questID", 12732);
-			if f and #f > 0 then tinsert(rejek, f[1]); end
+		local rejek = t.rejek;
+		if not rejek then
+			rejek = {};
+			for i,questID in ipairs({ 12758, 12734, 12741, 12732 }) do
+				for j,quest in ipairs(_.SearchForField("questID", questID)) do
+					if quest.questID == questID then
+						tinsert(rejek, quest);
+					end
+				end
+			end
 			t.rejek = rejek;
 		end
 		local completedAny = false;
-		for i,quest in ipairs(t.rejek) do if quest.saved then completedAny = true; break; end end
+		for i,quest in ipairs(rejek) do if quest.saved then completedAny = true; break; end end
 		GameTooltip:AddDoubleLine("Complete 1 of 4 quests offered by Rejek:", _.L[completedAny and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. rejekRep .. " Rep");
-		for i,quest in ipairs(t.rejek) do GameTooltip:AddLine("  " .. (quest.text or RETRIEVING_DATA)); end
+		for i,quest in ipairs(rejek) do GameTooltip:AddLine("  " .. (quest.text or RETRIEVING_DATA)); end
 
 		local vekgarRep = isHuman and 770 or 700;
-		if not t.vekgar then
-			local vekgar = {};
-			local f = _.SearchForField("questID", 12703);
-			if f and #f > 0 then tinsert(vekgar, f[1]); end
-			f = _.SearchForField("questID", 12760);
-			if f and #f > 0 then tinsert(vekgar, f[1]); end
-			f = _.SearchForField("questID", 12759);
-			if f and #f > 0 then tinsert(vekgar, f[1]); end
+		local vekgar = t.vekgar;
+		if not vekgar then
+			vekgar = {};
+			for i,questID in ipairs({ 12703, 12760, 12759 }) do
+				for j,quest in ipairs(_.SearchForField("questID", questID)) do
+					if quest.questID == questID then
+						tinsert(vekgar, quest);
+					end
+				end
+			end
 			t.vekgar = vekgar;
 		end
-		GameTooltip:AddDoubleLine("Complete 1 of 3 quests offered by Vekgar:", _.L[t.vekgar[1].saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. vekgarRep .. " Rep");
-		for i,quest in ipairs(t.vekgar) do GameTooltip:AddLine("  " .. (quest.text or RETRIEVING_DATA)); end
+		GameTooltip:AddDoubleLine("Complete 1 of 3 quests offered by Vekgar:", _.L[vekgar[1].saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. vekgarRep .. " Rep");
+		for i,quest in ipairs(vekgar) do GameTooltip:AddLine("  " .. (quest.text or RETRIEVING_DATA)); end
 
 		local repPerDay = chickenRep + rejekRep + vekgarRep;
 		local x, n = math.ceil((42000 - t.reputation) / repPerDay), math.ceil(42000 / repPerDay);
@@ -59,30 +63,33 @@ end]];
 local OnTooltipForOracles = [[function(t)
 	local reputation = t.reputation;
 	if reputation < 0 then
-		if not t.hand then
-			local f = _.SearchForField("questID", 12689);
-			if f and #f > 0 then t.hand = f[1]; end
+		local hand = t.hand;
+		if not hand then
+			hand = _.SearchForField("questID", 12689)[1];
+			t.hand = hand;
 		end
-		GameTooltip:AddDoubleLine("Complete " .. (t.hand.text or RETRIEVING_DATA), _.L[t.hand.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
+		GameTooltip:AddDoubleLine("Complete " .. (hand.text or RETRIEVING_DATA), _.L[hand.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
 	elseif reputation < 42000 then
 		local isHuman = _.RaceIndex == 1;
 		GameTooltip:AddLine("Daily Quests:");
 		local appeasingRep = isHuman and 550 or 500;
-		if not t.appeasing then
-			local f = _.SearchForField("questID", 12704);
-			if f and #f > 0 then t.appeasing = f[1]; end
+		local appeasing = t.appeasing;
+		if not appeasing then
+			appeasing = _.SearchForField("questID", 12704)[1];
+			t.appeasing = appeasing;
 		end
-		GameTooltip:AddDoubleLine(t.appeasing.text or RETRIEVING_DATA, _.L[t.appeasing.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. appeasingRep .. " Rep");
+		GameTooltip:AddDoubleLine(appeasing.text or RETRIEVING_DATA, _.L[appeasing.saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. appeasingRep .. " Rep");
 
 		local soodowRep = isHuman and 770 or 700;
 		if not t.soodow then
 			local soodow = {};
-			local f = _.SearchForField("questID", 12761);
-			if f and #f > 0 then tinsert(soodow, f[1]); end
-			f = _.SearchForField("questID", 12762);
-			if f and #f > 0 then tinsert(soodow, f[1]); end
-			f = _.SearchForField("questID", 12705);
-			if f and #f > 0 then tinsert(soodow, f[1]); end
+			for i,questID in ipairs({ 12761, 12762, 12705 }) do
+				for j,quest in ipairs(_.SearchForField("questID", questID)) do
+					if quest.questID == questID then
+						tinsert(soodow, quest);
+					end
+				end
+			end
 			t.soodow = soodow;
 		end
 		GameTooltip:AddDoubleLine("Complete 1 of 3 quests offered by Oracle Soo-dow:", _.L[t.soodow[1].saved and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"] .. " " .. soodowRep .. " Rep");
@@ -91,14 +98,13 @@ local OnTooltipForOracles = [[function(t)
 		local sooneeRep = isHuman and 550 or 500;
 		if not t.soonee then
 			local soonee = {};
-			local f = _.SearchForField("questID", 12735);
-			if f and #f > 0 then tinsert(soonee, f[1]); end
-			f = _.SearchForField("questID", 12737);
-			if f and #f > 0 then tinsert(soonee, f[1]); end
-			f = _.SearchForField("questID", 12736);
-			if f and #f > 0 then tinsert(soonee, f[1]); end
-			f = _.SearchForField("questID", 12726);
-			if f and #f > 0 then tinsert(soonee, f[1]); end
+			for i,questID in ipairs({ 12735, 12737, 12736, 12726 }) do
+				for j,quest in ipairs(_.SearchForField("questID", questID)) do
+					if quest.questID == questID then
+						tinsert(soonee, quest);
+					end
+				end
+			end
 			t.soonee = soonee;
 		end
 		local completedAny = false;
