@@ -11615,11 +11615,6 @@ app.GetMapName = function(mapID)
 				return name;
 			end
 		end
-		for name,m in pairs(L.ALT_ZONE_TEXT_TO_MAP_ID) do
-			if mapID == m then
-				return name;
-			end
-		end
 		
 		local info = C_Map_GetMapInfo(mapID);
 		return (info and info.name) or ("Map ID #" .. mapID);
