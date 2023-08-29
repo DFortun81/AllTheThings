@@ -49,6 +49,7 @@ local GetFactionInfoByID = _G["GetFactionInfoByID"];
 local GetItemInfo = _G["GetItemInfo"];
 local GetItemInfoInstant = _G["GetItemInfoInstant"];
 local GetItemCount = _G["GetItemCount"];
+local PlayerHasToy = _G["PlayerHasToy"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local GetSpellInfo, IsPlayerSpell, IsSpellKnown, IsSpellKnownOrOverridesKnown, IsTitleKnown =
 	  GetSpellInfo, IsPlayerSpell, IsSpellKnown, IsSpellKnownOrOverridesKnown, IsTitleKnown;
@@ -262,6 +263,12 @@ app.SetDataMember = SetDataMember;
 app.GetDataMember = GetDataMember;
 app.SetDataSubMember = SetDataSubMember;
 app.GetDataSubMember = GetDataSubMember;
+app.SetAccountCollected = function()
+	app.print("SetCollected not initialized yet...");
+end;
+app.SetAccountCollectedForSubType = function()
+	app.print("SetCollectedForSubType not initialized yet...");
+end
 app.SetCollected = function()
 	app.print("SetCollected not initialized yet...");
 end;
@@ -2317,11 +2324,19 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						table.insert(knownBy, character);
 					end
 				end
+			elseif group.toyID then
+				if not PlayerHasToy then
+					kind = "Owned by ";
+					for guid,character in pairs(ATTCharacterData) do
+						if character.Toys and character.Toys[group.itemID] then
+							table.insert(knownBy, character);
+						end
+					end
+				end
 			elseif group.itemID then
 				kind = "Owned by ";
 				for guid,character in pairs(ATTCharacterData) do
-					if (character.RWP and character.RWP[group.itemID])
-					or (character.Toys and character.Toys[group.itemID]) then
+					if (character.RWP and character.RWP[group.itemID]) then
 						table.insert(knownBy, character);
 					end
 				end
@@ -6395,11 +6410,19 @@ local fields = CloneDictionary(itemFields);
 fields.collectible = function(t)
 	return app.Settings.Collectibles.Toys;
 end
-fields.collected = function(t)
-	if t.toyID then return app.SetCollected(t, "Toys", t.toyID, GetItemCount(t.toyID, true) > 0); end
-end
 fields.itemID = function(t)
 	return t.toyID;
+end
+if PlayerHasToy then
+	-- Toy API is in!
+	fields.collected = function(t)
+		return ATTAccountWideData.Toys[t.toyID];
+	end
+else
+	-- Toy API is not available.
+	fields.collected = function(t)
+		return app.SetCollected(t, "Toys", t.toyID, GetItemCount(t.toyID, true) > 0);
+	end
 end
 app.CreateToy = app.CreateClass("Toy", "toyID", fields);
 
@@ -9138,6 +9161,19 @@ local function RefreshCollections()
 			local collectedIllusions = ATTAccountWideData.Illusions;
 			for _,illusion in ipairs(C_TransmogCollection.GetIllusions()) do
 				if illusion.isCollected then collectedIllusions[illusion.sourceID] = 1; end
+			end
+			coroutine.yield();
+		end
+		
+		-- Refresh Toys
+		if PlayerHasToy then
+			for id,t in pairs(app.SearchForFieldContainer("toyID")) do
+				app.SetAccountCollected(t[1], "Toys", id, PlayerHasToy(id) or GetItemCount(id, true) > 0);
+			end
+			coroutine.yield();
+		else
+			for id,t in pairs(app.SearchForFieldContainer("toyID")) do
+				app.SetCollected(t[1], "Toys", id, GetItemCount(id, true) > 0);
 			end
 			coroutine.yield();
 		end
@@ -13750,7 +13786,7 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 						response = a;
 						for i=3,#args,1 do
 							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (app.CurrentCharacter.Toys[b] and 1 or 0);
+							response = response .. "\t" .. b .. "\t" .. (ATTAccountWideData.Toys[b] and 1 or 0);
 						end
 					end
 				else
@@ -13879,7 +13915,11 @@ app.events.ADDON_LOADED = function(addonName)
 	if not currentCharacter.Spells then currentCharacter.Spells = {}; end
 	if not currentCharacter.SpellRanks then currentCharacter.SpellRanks = {}; end
 	if not currentCharacter.Titles then currentCharacter.Titles = {}; end
-	if not currentCharacter.Toys then currentCharacter.Toys = {}; end
+	
+	if not PlayerHasToy then
+		-- If Toys aren't account wide yet, then we must track them per character.
+		if not currentCharacter.Toys then currentCharacter.Toys = {}; end
+	end
 
 	-- Update timestamps.
 	local now = time();
@@ -14032,6 +14072,46 @@ app.events.ADDON_LOADED = function(addonName)
 
 	-- Account Wide Settings
 	local accountWideSettings = app.Settings.AccountWide;
+	local function SetAccountCollected(t, field, id, collected)
+		local container = accountWideData[field];
+		local oldstate = container[id];
+		if collected then
+			if not oldstate then
+				local now = time();
+				timeStamps[field] = now;
+				currentCharacter.lastPlayed = now;
+				AddToCollection(t);
+				container[id] = 1;
+			end
+			return 1;
+		elseif oldstate then
+			local now = time();
+			timeStamps[field] = now;
+			currentCharacter.lastPlayed = now;
+			RemoveFromCollection(t);
+			container[id] = nil;
+		end
+	end
+	local function SetAccountCollectedForSubType(t, field, subtype, id, collected)
+		local container = accountWideData[field];
+		local oldstate = container[id];
+		if collected then
+			if not oldstate then
+				local now = time();
+				timeStamps[field] = now;
+				currentCharacter.lastPlayed = now;
+				AddToCollection(t);
+				container[id] = 1;
+			end
+			return 1;
+		elseif oldstate then
+			local now = time();
+			timeStamps[field] = now;
+			currentCharacter.lastPlayed = now;
+			RemoveFromCollection(t);
+			container[id] = nil;
+		end
+	end
 	local function SetCollected(t, field, id, collected)
 		local container = currentCharacter[field];
 		local oldstate = container[id];
@@ -14104,6 +14184,8 @@ app.events.ADDON_LOADED = function(addonName)
 			return 2;
 		end
 	end
+	app.SetAccountCollected = SetAccountCollected;
+	app.SetAccountCollectedForSubType = SetAccountCollectedForSubType;
 	app.SetCollected = SetCollected;
 	app.SetCollectedForSubType = SetCollectedForSubType;
 

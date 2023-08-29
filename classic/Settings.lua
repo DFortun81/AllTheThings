@@ -1475,7 +1475,20 @@ ToysCheckBox.OnTooltip = function(t)
 end
 ToysCheckBox:SetPoint("TOPLEFT", TitlesCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ToysAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local ToysAccountWideCheckBox;
+if PlayerHasToy then
+ToysAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+function(self)
+	self:SetChecked(true);
+	self:Disable();
+	self:SetAlpha(0.2);
+end,
+function(self)
+	-- Do nothing.
+end);
+ToysAccountWideCheckBox:SetATTTooltip("Toys are now account wide!");
+else
+ToysAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Toys"));
 	if settings:Get("DebugMode") or not settings:Get("Thing:Toys") then
@@ -1492,6 +1505,7 @@ function(self)
 	app:RefreshDataCompletely("ToysAccountWideCheckBox");
 end);
 ToysAccountWideCheckBox:SetATTTooltip("Toys are not normally tracked account wide in Blizzard's database, but we can do that.");
+end
 ToysAccountWideCheckBox:SetPoint("TOPLEFT", ToysCheckBox, "TOPLEFT", 220, 0);
 
 local ShowMinimapButtonCheckBox = settings:CreateCheckBox("Show the Minimap Button",
