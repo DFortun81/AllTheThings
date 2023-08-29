@@ -10,6 +10,8 @@ if exist "%~1\" (
 	echo Checking "%~1\"
 	call :link_expansion "%~1\_classic_"
 	call :link_expansion "%~1\_classic_era_"
+	call :link_expansion "%~1\_classic_ptr_"
+	call :link_expansion "%~1\_classic_era_ptr_"
 	call :link_expansion "%~1\_retail_"
 )
 EXIT /B 0
