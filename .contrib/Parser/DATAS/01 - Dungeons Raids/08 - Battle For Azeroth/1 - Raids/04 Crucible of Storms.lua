@@ -14,10 +14,10 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0"
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(13414, {	-- Crucible of Storms
-                    crit(1, {    -- The Restless Cabal
+                    crit(44051, {    -- The Restless Cabal
                         ["_encounter"] = { 2328, LFR_RAID },
                     }),
-                    crit(2, {    -- Uu'nat, Harbinger of the Void
+                    crit(44052, {    -- Uu'nat, Harbinger of the Void
                         ["_encounter"] = { 2332, LFR_RAID },
                     }),
 				}),

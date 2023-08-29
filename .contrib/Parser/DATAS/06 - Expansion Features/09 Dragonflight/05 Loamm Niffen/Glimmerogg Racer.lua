@@ -7,16 +7,16 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			n(ACHIEVEMENTS, {
 				ach(17741, {	-- Slow and Steady Wins the Race
 					i(205231),	-- Roggy (PET!)
-					crit(1, {	-- Bashful wins
+					crit(59148, {	-- Bashful wins
 						["sourceQuests"] = { 75662 },	-- A Race To The Finish
 					}),
-					crit(2, {	-- Tricky wins
+					crit(59149, {	-- Tricky wins
 						["sourceQuests"] = { 75706 },	-- A Race To The Finish
 					}),
-					crit(3, {	-- Brulee wins
+					crit(59150, {	-- Brulee wins
 						["sourceQuests"] = { 75707 },	-- A Race To The Finish
 					}),
-					crit(4, {	-- Roggy wins
+					crit(59151, {	-- Roggy wins
 						["sourceQuests"] = { 75708 },	-- A Race To The Finish
 					}),
 				}),

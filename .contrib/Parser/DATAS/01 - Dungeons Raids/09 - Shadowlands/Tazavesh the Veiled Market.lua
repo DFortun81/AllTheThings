@@ -18,27 +18,27 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(15190, {	-- Mischief!
-					crit(1, {	-- Pickle
+					crit(52460, {	-- Pickle
 						["cr"] = 180817,	-- Pickle
 						["coord"] = { 39.91, 38.78, TAZAVESH_THE_MENAGERIE },
 					}),
-					crit(2, {	-- Oswald
+					crit(52461, {	-- Oswald
 						["cr"] = 180818,	-- Oswald
 						["coord"] = { 36.63, 33.37, TAZAVESH_THE_VEILED_MARKET },
 					}),
-					crit(3, {	-- Sassafras
+					crit(52462, {	-- Sassafras
 						["cr"] = 180821,	-- Sassafras
 						["coord"] = { 39.48, 65.67, TAZAVESH_THE_VEILED_MARKET },
 					}),
-					crit(4, {	-- Goblin
+					crit(52463, {	-- Goblin
 						["cr"] = 180822,	-- Goblin
 						["coord"] = { 59.59, 45.99, TAZAVESH_THE_VEILED_MARKET },
 					}),
-					crit(5, {	-- Pancake
+					crit(52465, {	-- Pancake
 						["cr"] = 180823,	-- Pancake
 						["coord"] = { 55.43, 64.69, TAZAVESH_THE_VEILED_MARKET },
 					}),
-					crit(6, {	-- Waffle
+					crit(52464, {	-- Waffle
 						["cr"] = 180824,	-- Waffle
 						["coord"] = { 77.29, 45.70, TAZAVESH_THE_VEILED_MARKET }
 					}),

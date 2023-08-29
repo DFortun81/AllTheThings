@@ -33,25 +33,25 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 		})),
 		achraw(14763, {	-- Crypt Couture
 			i(183693),	-- Plague Doctor's Mask
-			crit(1, {	-- Ashen Ink
+			crit(49929, {	-- Ashen Ink
 				["provider"] = {"i",183690},
 			}),
-			crit(2, {	-- Jagged Bonesaw
+			crit(49930, {	-- Jagged Bonesaw
 				["provider"] = {"i",183692},
 			}),
-			crit(3, {	-- Discarded Grimoire
+			crit(49931, {	-- Discarded Grimoire
 				["provider"] = {"i",183394},
 			}),
-			crit(4, {	-- Sorcerer's Blade
+			crit(49932, {	-- Sorcerer's Blade
 				["provider"] = {"i",183397},
 			}),
-			crit(5, {	-- Mucosal Pigment
+			crit(49933, {	-- Mucosal Pigment
 				["provider"] = {"i",183691},
 			}),
-			crit(6, {	-- Amethystine Dye
+			crit(49934, {	-- Amethystine Dye
 				["provider"] = {"i",183401},
 			}),
-			crit(7, {	-- Ritualist's Mantle
+			crit(49935, {	-- Ritualist's Mantle
 				["provider"] = {"i",183399},
 			}),
 		}),

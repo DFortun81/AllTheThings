@@ -51,28 +51,28 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			},
 		}),
 		ach(17321, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {	-- Elders of the Dragon Isles
-			crit(1, {
+			crit(57843, {
 				["_quests"] = { 73848 },	-- Iskaara Elder Shomkol
 			}),
-			crit(2, {
+			crit(57840, {
 				["_quests"] = { 73716 },	-- Aylaag Elder
 			}),
-			crit(3, {
+			crit(57841, {
 				["_quests"] = { 73172 },	-- Shikaar Elder
 			}),
-			crit(4, {
+			crit(57842, {
 				["_quests"] = { 73717 },	-- Ohn'ir Elder
 			}),
-			crit(5, {
+			crit(57839, {
 				["_quests"] = { 73858 },	-- Iskaara Elder Nemaglek
 			}),
-			crit(6, {
+			crit(57844, {
 				["_quests"] = { 73860 },	-- Elder Dekidig
 			}),
-			crit(7, {
+			crit(57845, {
 				["_quests"] = { 73859 },	-- Iskaara Elder Sik'ek
 			}),
-			crit(8, {
+			crit(57846, {
 				["_quests"] = { 73861 },	-- Elder Stormdrifter
 			}),
 		})),

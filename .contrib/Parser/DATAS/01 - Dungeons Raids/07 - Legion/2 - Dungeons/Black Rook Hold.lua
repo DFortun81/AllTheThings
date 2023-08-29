@@ -11,22 +11,22 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				ach(10709, {	-- You Used to Scrawl Me In Your Fel Tome
 					["description"] = "These spawn on any difficulty, but you'll only get one per run, making this achievement a six-run minimum.",
 					["g"] = {
-						crit(1, {	-- Torn Page read
+						crit(31357, {	-- Torn Page read
 							["description"] = "Found in the Chamber of War Room immediately after the Amalgam of Souls fight, on a desk by the southern part of the room.",
 						}),
-						crit(2, {	-- Worn-Edged Page read
+						crit(31358, {	-- Worn-Edged Page read
 							["description"] = "Found in the Grand Hall, to the left of the broken staircase, by the bookshelves.",
 						}),
-						crit(3, {	-- Dog-Eared Page read
+						crit(31359, {	-- Dog-Eared Page read
 							["description"] = "Found in the Grand Hall, it's in the hallway connecting to the stairwell that takes you to Illysanna Ravencrest, tucked in the back on a desk.",
 						}),
-						crit(4, {	-- Singed Page read
+						crit(31360, {	-- Singed Page read
 							["description"] = "Found in Rookshold, the room filled with Wyrmtongue Tricker, on a table by three bookshelves and two weapon racks.",
 						}),
-						crit(5, {	-- Ink-Splattered Page read
+						crit(31361, {	-- Ink-Splattered Page read
 							["description"] = "Found in Rook's Rise, in the small round room connected to the stairs leading to Lord Ravencrest's Chamber after defeating Smashspite the Hateful.",
 						}),
-						crit(6, {	-- Hastily-Scrawled Page read
+						crit(31362, {	-- Hastily-Scrawled Page read
 							["description"] = "Found in Lord Ravencrest's Chamber on the desk, at the end of the instance.",
 						}),
 					},

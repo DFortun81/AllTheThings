@@ -675,22 +675,22 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			},
 		})),
 		ach(16808, {	-- Friend of the Dragon Isles
-			crit(1, {	-- A Mystery, Sealed
+			crit(57032, {	-- A Mystery, Sealed
 				["_quests"] = { 66128 },	-- Next Steps
 			}),
-			crit(2, {	-- In the Halls of Titans
+			crit(57033, {	-- In the Halls of Titans
 				["_quests"] = { 66547 },	-- It Belongs in a Museum... Eventually
 			}),
-			crit(3, {	-- Garden of Secrets
+			crit(57035, {	-- Garden of Secrets
 				["_quests"] = { 66191 },	-- And Yet So Far
 			}),
-			crit(4, {	-- The Dreamer
+			crit(57036, {	-- The Dreamer
 				["_quests"] = { 66402 },	-- Like Mother, Like Daughter
 			}),
-			crit(5, {	-- The Chieftain's Duty
+			crit(57034, {	-- The Chieftain's Duty
 				["_quests"] = { 66444 },	-- While the Iron Is Hot
 			}),
-			crit(6, {	-- The Silver Purpose
+			crit(57037, {	-- The Silver Purpose
 				["_quests"] = { 67084 },	-- The Silver Purpose
 			}),
 		}),

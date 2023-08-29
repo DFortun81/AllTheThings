@@ -90,16 +90,16 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 				["difficulties"] = { 8, MYTHIC_DUNGEON },
 				["g"] = {
 					ach(12722, {	-- It Belongs in a Mausoleum!
-						crit(1, {	-- First trinket found
+						crit(41269, {	-- First trinket found
 							["description"] = "The first trinket is in the first room, on the pedestal in the center of the room.",
 						}),
-						crit(2, {	-- Second trinket found
+						crit(41270, {	-- Second trinket found
 							["description"] = "The trinket is located on the inside of the stairwell that leads up to the closed door in the room that is next to the pedestal for the rejected serpent followers.",
 						}),
-						crit(3, {	-- Third trinket found
+						crit(41271, {	-- Third trinket found
 							["description"] = "At 44.2 / 32.6, the brute slams the ground and knocks you up. The trinket is on the ledge.",
 						}),
-						crit(4, {	-- Fourth trinket found
+						crit(41272, {	-- Fourth trinket found
 							["description"] = "It is on the right pillar after coming down the stairs to the final boss.",
 						}),
 					}),

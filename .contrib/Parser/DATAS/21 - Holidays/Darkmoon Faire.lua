@@ -2947,16 +2947,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						["description"] = "Four people fighting the Death Metal Knight will need to successfully perform the roles from Taking this Show on the Road.  This achievement technically does not require a group, but it would be easier to coordinate roles with one!",
 					}),
 					ach(11919, {	-- Taking this Show on the Road
-						crit(1, {	-- Guitarist
+						crit(37025, {	-- Guitarist
 							["description"] = "Get hit by one banshee wave; miss one bolt of light.",
 						}),
-						crit(2, {	-- Bassist
+						crit(37026, {	-- Bassist
 							["description"] = "Do not get hit by any banshee waves; miss one bolt of light.",
 						}),
-						crit(3, {	-- Drummer
+						crit(37027, {	-- Drummer
 							["description"] = "Do not get hit by any banshee waves; catch every bolt of light.",
 						}),
-						crit(4, {	-- Vocals
+						crit(37028, {	-- Vocals
 							["description"] = "Get hit by one banshee wave; catch every bolt of light.",
 						}),
 					}),

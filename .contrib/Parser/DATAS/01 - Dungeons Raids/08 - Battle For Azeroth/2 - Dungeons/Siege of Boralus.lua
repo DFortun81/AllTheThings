@@ -118,13 +118,13 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					ach(12489, {	-- Losing My Profession
 						["collectible"] = false,
 						["g"] = {
-							crit(6, {	-- Threshanator 3000
+							crit(40749, {	-- Threshanator 3000
 								["cr"] = 141805,	-- Threshanator 3000
 							}),
-							crit(7, {	-- Brutik Blackanvil
+							crit(40750, {	-- Brutik Blackanvil
 								["cr"] = 141800,	-- Brutik Blackanvil
 							}),
-							crit(8, {	-- Liz Vilepot
+							crit(40751, {	-- Liz Vilepot
 								["cr"] = 141792,	-- Liz Vilepot
 							}),
 						},

@@ -24,13 +24,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		}),
 		ach(18645, {
 			i(208149),	-- Brown Tweed Cap
-			crit(1, {	-- 	Tricked-Out Thinking Cap
+			crit(60754, {	-- 	Tricked-Out Thinking Cap
 				-- ["provider"] = { "i",  },	-- 	Tricked-Out Thinking Cap
 			}),
-			crit(2, {	-- 	Torch of Pyrreth
+			crit(60755, {	-- 	Torch of Pyrreth
 				-- ["provider"] = { "i",  },	-- 	Torch of Pyrreth
 			}),
-			crit(3, {	-- 	Idol of Ohn'ara
+			crit(60756, {	-- 	Idol of Ohn'ara
 				-- ["provider"] = { "i",  },	-- 	Idol of Ohn'ara
 			}),
 		}),

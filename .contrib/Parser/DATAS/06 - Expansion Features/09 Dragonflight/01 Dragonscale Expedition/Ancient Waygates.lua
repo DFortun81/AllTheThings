@@ -105,10 +105,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["g"] = {
 						ach(16291),	-- An Ancient Awakening
 						i(198858),	-- Energized Arcana Vessel
-						crit(2, {	-- Cobalt Assembly
+						crit(54646, {	-- Cobalt Assembly
 							["achievementID"] = 16292,	-- Mastering the Waygates
 						}),
-						crit(3, {	-- Rubyscale Outpost
+						crit(54646, {	-- Rubyscale Outpost
 							["achievementID"] = 16292,	-- Mastering the Waygates
 						}),
 					},
@@ -140,7 +140,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["description"] = "Spawns Anywhere on Dragon Isles. \n\nIn order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
 					["g"] = {
 						i(200527),	-- Enchanted Arcana Vessel
-						crit(7, {	-- Rusza'thar Reach
+						crit(54641, {	-- Rusza'thar Reach
 							["achievementID"] = 16292,	-- Mastering the Waygates
 						}),
 					},
@@ -162,7 +162,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["description"] = "Spawns Anywhere on Dragon Isles. \n\nIn order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
 					["g"] = {
 						i(200556),	-- Enchanted Arcana Vessel
-						crit(8, {	-- Skytop Observatory
+						crit(54645, {	-- Skytop Observatory
 							["achievementID"] = 16292,	-- Mastering the Waygates
 						}),
 					},
@@ -184,7 +184,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["description"] = "Spawns Anywhere on Dragon Isles. \n\nIn order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
 					["g"] = {
 						i(200557),	-- Enchanted Arcana Vessel
-						crit(6, {	-- Vakthros
+						crit(54639, {	-- Vakthros
 							["achievementID"] = 16292,	-- Mastering the Waygates
 						}),
 					},
@@ -206,7 +206,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["description"] = "Spawns Anywhere on Dragon Isles. \n\nIn order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
 					["g"] = {
 						i(200558),	-- Enchanted Arcana Vessel
-						crit(1, {	-- Algeth'era
+						crit(54642, {	-- Algeth'era
 							["achievementID"] = 16292,	-- Mastering the Waygates
 						}),
 					},
@@ -228,7 +228,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["description"] = "Spawns Anywhere on Dragon Isles. \n\nIn order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
 					["g"] = {
 						i(200560),	-- Enchanted Arcana Vessel
-						crit(5, {	-- Eon's Fringe
+						crit(54640, {	-- Eon's Fringe
 							["achievementID"] = 16292,	-- Mastering the Waygates
 						}),
 					},
@@ -250,7 +250,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["description"] = "Spawns Anywhere on Dragon Isles. \n\nIn order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
 					["g"] = {
 						i(199556),	-- Enchanted Arcana Vessel
-						crit(4, {	-- Shady Sanctuary
+						crit(54643, {	-- Shady Sanctuary
 							["achievementID"] = 16292,	-- Mastering the Waygates
 						}),
 					},

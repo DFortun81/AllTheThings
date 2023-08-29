@@ -25,26 +25,26 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 	n(PROFESSIONS, {
 		n(ACHIEVEMENTS, {
 			ach(16683, {	-- In Tyr's Footsteps
-				crit(1, {	-- Lock and Shock
+				crit(56165, {	-- Lock and Shock
 					["_quests"] = { 70180 },	-- Jump-Start? Jump-Starting!
 				}),
-				crit(2, {	-- First Challenge: Finesse
+				crit(56166, {	-- First Challenge: Finesse
 					["_quests"] = { 70181 },	-- First Challenge of Tyr: Finesse
 				}),
-				crit(3, {	-- Second Challenge: Might
+				crit(56167, {	-- Second Challenge: Might
 					["_quests"] = { 70376 },	-- Second Challenge of Tyr: Might
 				}),
-				crit(4, {	-- Third Challenge: Persistence
+				crit(56168, {	-- Third Challenge: Persistence
 					["_quests"] = { 70509 },	-- Third Challenge of Tyr: Persistence
 				}),
-				crit(5, {	-- Fourth Challenge: Resourcefulness
+				crit(56169, {	-- Fourth Challenge: Resourcefulness
 					["_quests"] = { 70881 },	-- Fourth Challenge of Tyr: Resourcefulness
 				}),
-				crit(6, {	-- Fifth Challenge: Ingenuity
+				crit(56170, {	-- Fifth Challenge: Ingenuity
 					["_quests"] = { 70899 },	-- Fifth Challenge of Tyr: Ingenuity
 					["timeline"] = { ADDED_10_0_5 },
 				}),
-				crit(7, {	-- Innovation Complete
+				crit(56171, {	-- Innovation Complete
 					["_quests"] = { 70900 },	-- Innovating the Engine
 					["timeline"] = { ADDED_10_0_5 }
 				}),

@@ -9,97 +9,97 @@ root(ROOTS.Professions, prof(TAILORING, {
 		ach(18886),	-- Quite the Quilt II
 		ach(18885),	-- Quite the Quilt I
 		ach(18903, {	-- Ton of Tops
-			crit(1, {	-- Red Linen Shirt
+			crit(61714, {	-- Red Linen Shirt
 				["provider"] = { "i", 2575 },	-- Red Linen Shirt
 			}),
-			crit(2, {	-- White Linen Shirt
+			crit(61715, {	-- White Linen Shirt
 				["provider"] = { "i", 2576 },	-- White Linen Shirt
 			}),
-			crit(3, {	-- Blue Linen Shirt
+			crit(61716, {	-- Blue Linen Shirt
 				["provider"] = { "i", 2577 },	-- Blue Linen Shirt
 			}),
-			crit(4, {	-- Green Linen Shirt
+			crit(61717, {	-- Green Linen Shirt
 				["provider"] = { "i", 2579 },	-- Green Linen Shirt
 			}),
-			crit(5, {	-- Gray Woolen Shirt
+			crit(61718, {	-- Gray Woolen Shirt
 				["provider"] = { "i", 2587 },	-- Gray Woolen Shirt
 			}),
-			crit(6, {	-- Stylish Red Shirt
+			crit(61719, {	-- Stylish Red Shirt
 				["provider"] = { "i", 4330 },	-- Stylish Red Shirt
 			}),
-			crit(7, {	-- Bright Yellow Shirt
+			crit(61720, {	-- Bright Yellow Shirt
 				["provider"] = { "i", 4332 },	-- Bright Yellow Shirt
 			}),
-			crit(8, {	-- Dark Silk Shirt
+			crit(61721, {	-- Dark Silk Shirt
 				["provider"] = { "i", 4333 },	-- Dark Silk Shirt
 			}),
-			crit(9, {	-- Formal White Shirt
+			crit(61722, {	-- Formal White Shirt
 				["provider"] = { "i", 4334 },	-- Formal White Shirt
 			}),
-			crit(10, {	-- Rich Purple Silk Shirt
+			crit(61723, {	-- Rich Purple Silk Shirt
 				["provider"] = { "i", 4335 },	-- Rich Purple Silk Shirt
 			}),
-			crit(11, {	-- Black Swashbuckler's Shirt
+			crit(61724, {	-- Black Swashbuckler's Shirt
 				["provider"] = { "i", 4336 },	-- Black Swashbuckler's Shirt
 			}),
-			crit(12, {	-- Brown Linen Shirt
+			crit(61725, {	-- Brown Linen Shirt
 				["provider"] = { "i", 4344 },	-- Brown Linen Shirt
 			}),
-			crit(13, {	-- Stylish Blue Shirt
+			crit(61726, {	-- Stylish Blue Shirt
 				["provider"] = { "i", 6384 },	-- Stylish Blue Shirt
 			}),
-			crit(14, {	-- Stylish Green Shirt
+			crit(61727, {	-- Stylish Green Shirt
 				["provider"] = { "i", 6385 },	-- Stylish Green Shirt
 			}),
-			crit(15, {	-- White Swashbuckler's Shirt
+			crit(61728, {	-- White Swashbuckler's Shirt
 				["provider"] = { "i", 6795 },	-- White Swashbuckler's Shirt
 			}),
-			crit(16, {	-- Red Swashbuckler's Shirt
+			crit(61729, {	-- Red Swashbuckler's Shirt
 				["provider"] = { "i", 6796 },	-- Red Swashbuckler's Shirt
 			}),
-			crit(17, {	-- Orange Mageweave Shirt
+			crit(61730, {	-- Orange Mageweave Shirt
 				["provider"] = { "i", 10056 },	-- Orange Mageweave Shirt
 			}),
-			crit(18, {	-- Orange Martial Shirt
+			crit(61731, {	-- Orange Martial Shirt
 				["provider"] = { "i", 10052 },	-- Orange Martial Shirt
 			}),
-			crit(19, {	-- Lavender Mageweave Shirt
+			crit(61732, {	-- Lavender Mageweave Shirt
 				["provider"] = { "i", 10054 },	-- Lavender Mageweave Shirt
 			}),
-			crit(20, {	-- Pink Mageweave Shirt
+			crit(61733, {	-- Pink Mageweave Shirt
 				["provider"] = { "i", 10055 },	-- Pink Mageweave Shirt
 			}),
-			crit(21, {	-- Green Holiday Shirt
+			crit(61735, {	-- Green Holiday Shirt
 				["provider"] = { "i", 17723 },	-- Green Holiday Shirt
 			}),
-			crit(22, {	-- Red Lumberjack Shirt
+			crit(61736, {	-- Red Lumberjack Shirt
 				["provider"] = { "i", 41248 },	-- Red Lumberjack Shirt
 			}),
-			crit(23, {	-- Blue Lumberjack Shirt
+			crit(61737, {	-- Blue Lumberjack Shirt
 				["provider"] = { "i", 41249 },	-- Blue Lumberjack Shirt
 			}),
-			crit(24, {	-- Yellow Lumberjack Shirt
+			crit(61738, {	-- Yellow Lumberjack Shirt
 				["provider"] = { "i", 41251 },	-- Yellow Lumberjack Shirt
 			}),
-			crit(25, {	-- Green Lumberjack Shirt
+			crit(61739, {	-- Green Lumberjack Shirt
 				["provider"] = { "i", 41250 },	-- Green Lumberjack Shirt
 			}),
-			crit(26, {	-- Red Workman's Shirt
+			crit(61740, {	-- Red Workman's Shirt
 				["provider"] = { "i", 41252 },	-- Red Workman's Shirt
 			}),
-			crit(27, {	-- Blue Workman's Shirt
+			crit(61741, {	-- Blue Workman's Shirt
 				["provider"] = { "i", 41253 },	-- Blue Workman's Shirt
 			}),
-			crit(28, {	-- Rustic Workman's Shirt
+			crit(61742, {	-- Rustic Workman's Shirt
 				["provider"] = { "i", 41254 },	-- Rustic Workman's Shirt
 			}),
-			crit(29, {	-- Green Workman's Shirt
+			crit(61743, {	-- Green Workman's Shirt
 				["provider"] = { "i", 41255 },	-- Green Workman's Shirt
 			}),
-			crit(30, {	-- Tuxedo Shirt
+			crit(61734, {	-- Tuxedo Shirt
 				["provider"] = { "i", 10034 },	-- Tuxedo Shirt
 			}),
-			crit(31, {	-- Tuxedo Pants
+			crit(61744, {	-- Tuxedo Pants
 				["provider"] = { "i", 10035 },	-- Tuxedo Pants
 			}),
 		}),

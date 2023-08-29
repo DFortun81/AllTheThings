@@ -339,22 +339,22 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 				}),
 			}),
 			ach(12587, {	-- Unbound Monstrosities
-				crit(1, { -- Warbringer Yenajz
+				crit(40529, { -- Warbringer Yenajz
 					["_quests"] = { 52166 },
 				}),
-				crit(2, { -- Hailstone Construct
+				crit(40530, { -- Hailstone Construct
 					["_quests"] = { 52157 },
 				}),
-				crit(3, { -- T'zane
+				crit(40531, { -- T'zane
 					["_quests"] = { 52181 },
 				}),
-				crit(4, { -- Ji'arak
+				crit(40532, { -- Ji'arak
 					["_quests"] = { 52169 },
 				}),
-				crit(5, { -- Dunegorger Kraulok
+				crit(40533, { -- Dunegorger Kraulok
 					["_quests"] = { 52196 },
 				}),
-				crit(6, { -- Azurethos
+				crit(40534, { -- Azurethos
 					["_quests"] = { 52163 },
 				}),
 			}),

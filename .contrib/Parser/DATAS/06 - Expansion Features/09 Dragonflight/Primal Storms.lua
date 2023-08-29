@@ -139,58 +139,58 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				ach(16461, {	-- Stormed Off
 					["g"] = {
-						crit(1, {
+						crit(55461, {
 							["_npcs"] = { 193648 },	-- Infernum
 						}),
-						crit(2, {
+						crit(55462, {
 							["_npcs"] = { 193645 },	-- Crystalus
 						}),
-						crit(3, {
+						crit(55463, {
 							["_npcs"] = { 193644 },	-- Bouldron
 						}),
-						crit(4, {
+						crit(55464, {
 							["_npcs"] = { 193647 },	-- Karantun
 						}),
-						crit(5, {
+						crit(55465, {
 							["_npcs"] = { 193686 },	-- Neela Firebane
 						}),
-						crit(6, {
+						crit(55466, {
 							["_npcs"] = { 193682 },	-- Rouen Icewind
 						}),
-						crit(7, {
+						crit(55467, {
 							["_npcs"] = { 193680 },	-- Zurgaz Corebreaker
 						}),
-						crit(8, {
+						crit(55468, {
 							["_npcs"] = { 193684 },	-- Pipspark Thundersnap
 						}),
-						crit(9, {
+						crit(55469, {
 							["_npcs"] = { 193652 },	-- Grizzlerock
 						}),
-						crit(10, {
+						crit(55470, {
 							["_npcs"] = { 193674 },	-- Voraazka
 						}),
-						crit(11, {
+						crit(55471, {
 							["_npcs"] = { 193675 },	-- Kain Firebrand
 						}),
-						crit(12, {
+						crit(55472, {
 							["_npcs"] = { 193677 },	-- Maeleera <First Iceblade>
 						}),
-						crit(13, {
+						crit(55473, {
 							["_npcs"] = { 193678 },	-- Fieraan <Second Iceblade>
 						}),
-						crit(14, {
+						crit(55474, {
 							["_npcs"] = { 193679 },	-- Leerain <Third Iceblade>
 						}),
-						crit(15, {
+						crit(55475, {
 							["_npcs"] = { 193653 },	-- Gaelzion <Progeny of Air>
 						}),
-						crit(16, {
+						crit(55476, {
 							["_npcs"] = { 193654 },	-- Gravlion <Progeny of Earth>
 						}),
-						crit(17, {
+						crit(55477, {
 							["_npcs"] = { 193650 },	-- Emblazion <Progeny of Fire>
 						}),
-						crit(18, {
+						crit(55478, {
 							["_npcs"] = { 193655 },	-- Frozion <Progeny of Water>
 						}),
 					},

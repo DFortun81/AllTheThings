@@ -20,85 +20,85 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 		}),
 		ach(18934),	-- Excessive Experimentation
 		ach(18904, {	-- Iron to Vendor Gold
-			crit(1, {	-- Philosopher's Stone
+			crit(61746, {	-- Philosopher's Stone
 				["provider"] = { "i", 9149 },	-- Philosopher's Stone
 			}),
-			crit(2, {	-- Guardian's Alchemist Stone
+			crit(61747, {	-- Guardian's Alchemist Stone
 				["provider"] = { "i", 35748 },	-- Guardian's Alchemist Stone
 			}),
-			crit(3, {	-- Sorcerer's Alchemist Stone
+			crit(61748, {	-- Sorcerer's Alchemist Stone
 				["provider"] = { "i", 35749 },	-- Sorcerer's Alchemist Stone
 			}),
-			crit(4, {	-- Redeemer's Alchemist Stone
+			crit(61749, {	-- Redeemer's Alchemist Stone
 				["provider"] = { "i", 35750 },	-- Redeemer's Alchemist Stone
 			}),
-			crit(5, {	-- Assassin's Alchemist Stone
+			crit(61750, {	-- Assassin's Alchemist Stone
 				["provider"] = { "i", 35751 },	-- Assassin's Alchemist Stone
 			}),
-			crit(6, {	-- Alchemist Stone
+			crit(61751, {	-- Alchemist Stone
 				["provider"] = { "i", 13503 },	-- Alchemist Stone
 			}),
-			crit(7, {	-- Mercurial Alchemist Stone
+			crit(61752, {	-- Mercurial Alchemist Stone
 				["provider"] = { "i", 44322 },	-- Mercurial Alchemist Stone
 			}),
-			crit(8, {	-- Indestructible Alchemist Stone
+			crit(61753, {	-- Indestructible Alchemist Stone
 				["provider"] = { "i", 44323 },	-- Indestructible Alchemist Stone
 			}),
-			crit(9, {	-- Mighty Alchemist Stone
+			crit(61754, {	-- Mighty Alchemist Stone
 				["provider"] = { "i", 44324 },	-- Mighty Alchemist Stone
 			}),
-			crit(10, {	-- Lifebound Alchemist Stone
+			crit(61755, {	-- Lifebound Alchemist Stone
 				["provider"] = { "i", 58483 },	-- Lifebound Alchemist Stone
 			}),
-			crit(11, {	-- Volatile Alchemist Stone
+			crit(61756, {	-- Volatile Alchemist Stone
 				["provider"] = { "i", 68775 },	-- Volatile Alchemist Stone
 			}),
-			crit(12, {	-- Quicksilver Alchemist Stone
+			crit(61757, {	-- Quicksilver Alchemist Stone
 				["provider"] = { "i", 68776 },	-- Quicksilver Alchemist Stone
 			}),
-			crit(13, {	-- Vibrant Alchemist Stone
+			crit(61758, {	-- Vibrant Alchemist Stone
 				["provider"] = { "i", 68777 },	-- Vibrant Alchemist Stone
 			}),
-			crit(14, {	-- Zen Alchemist Stone
+			crit(61759, {	-- Zen Alchemist Stone
 				["provider"] = { "i", 75274 },	-- Zen Alchemist Stone
 			}),
-			crit(15, {	-- Draenic Philosopher's Stone
+			crit(61760, {	-- Draenic Philosopher's Stone
 				["provider"] = { "i", 109262 },	-- Draenic Philosopher's Stone
 			}),
-			crit(16, {	-- Infernal Alchemist Stone
+			crit(61761, {	-- Infernal Alchemist Stone
 				["provider"] = { "i", 127842 },	-- Infernal Alchemist Stone
 			}),
-			crit(17, {	-- Astral Alchemist Stone
+			crit(61764, {	-- Astral Alchemist Stone
 				["provider"] = { "i", 151607 },	-- Astral Alchemist Stone
 			}),
-			crit(18, {	-- Siren's Alchemist Stone
+			crit(61767, {	-- Siren's Alchemist Stone
 				["provider"] = { "i", 152637 },	-- Siren's Alchemist Stone
 			}),
-			crit(19, {	-- Surging Alchemist Stone
+			crit(61770, {	-- Surging Alchemist Stone
 				["provider"] = { "i", 152632 },	-- Surging Alchemist Stone
 			}),
-			crit(20, {	-- Sanguinated Alchemist Stone
+			crit(61773, {	-- Sanguinated Alchemist Stone
 				["provider"] = { "i", 166974 },	-- Sanguinated Alchemist Stone
 			}),
-			crit(21, {	-- Imbued Alchemist Stone
+			crit(61774, {	-- Imbued Alchemist Stone
 				["provider"] = { "i", 166975 },	-- Imbued Alchemist Stone
 			}),
-			crit(22, {	-- Emblazoned Alchemist Stone
+			crit(61775, {	-- Emblazoned Alchemist Stone
 				["provider"] = { "i", 166976 },	-- Emblazoned Alchemist Stone
 			}),
-			crit(23, {	-- Tidal Alchemist Stone
+			crit(61776, {	-- Tidal Alchemist Stone
 				["provider"] = { "i", 165926 },	-- Tidal Alchemist Stone
 			}),
-			crit(24, {	-- Spirited Alchemist Stone
+			crit(61777, {	-- Spirited Alchemist Stone
 				["provider"] = { "i", 165927 },	-- Spirited Alchemist Stone
 			}),
-			crit(25, {	-- Eternal Alchemist Stone
+			crit(61778, {	-- Eternal Alchemist Stone
 				["provider"] = { "i", 165928 },	-- Eternal Alchemist Stone
 			}),
-			crit(26, {	-- Ascended Alchemist Stone
+			crit(61779, {	-- Ascended Alchemist Stone
 				["provider"] = { "i", 168676 },	-- Ascended Alchemist Stone
 			}),
-			crit(27, {	-- Peerless Alchemist Stone
+			crit(61780, {	-- Peerless Alchemist Stone
 				["provider"] = { "i", 171085 },	-- Peerless Alchemist Stone
 			}),
 		}),

@@ -115,7 +115,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
 				["g"] = {
-					crit(3, {	-- Matron Folnuna
+					crit(37452, {	-- Matron Folnuna
 						["achievementID"] = 12026,	-- Invasion Obliteration
 					}),
 					i(207296, {	-- Grimoire of the Netherbound Imp (CI!)
@@ -155,7 +155,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
 				["g"] = {
-					crit(5, {	-- Mistress Alluradel
+					crit(37454, {	-- Mistress Alluradel
 						["achievementID"] = 12026,	-- Invasion Obliteration
 					}),
 					i(152351),	-- Mesmerizing Soul Hood
@@ -192,7 +192,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
 				["g"] = {
-					crit(4, {	-- Inquisitor Meto
+					crit(37453, {	-- Inquisitor Meto
 						["achievementID"] = 12026,	-- Invasion Obliteration
 					}),
 					i(152361),	-- Horned Hood of Retaliation
@@ -229,7 +229,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
 				["g"] = {
-					crit(1, {	-- Occularus
+					crit(37450, {	-- Occularus
 						["achievementID"] = 12026,	-- Invasion Obliteration
 					}),
 					i(152369),	-- Helm of the Vigilant Eye
@@ -264,7 +264,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
 				["g"] = {
-					crit(2, {	-- Sotanathor
+					crit(37451, {	-- Sotanathor
 						["achievementID"] = 12026,	-- Invasion Obliteration
 					}),
 					i(152361),	-- Horned Hood of Retaliation
@@ -301,7 +301,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
 				["g"] = {
-					crit(6, {	-- Pit Lord Vilemus
+					crit(37455, {	-- Pit Lord Vilemus
 						["achievementID"] = 12026,	-- Invasion Obliteration
 					}),
 					i(152376),	-- Crown of Burning Resolve
