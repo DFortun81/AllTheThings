@@ -24,11 +24,12 @@ app:GetWindow("Factions", {
 			OnUpdate = function(data)
 				local g = data.g;
 				if #g < 1 then
-					for i,matches in pairs(app.SearchForFieldContainer("factionID")) do
-						local faction = app.CreateFaction(tonumber(i));
+					for factionID,matches in pairs(app.SearchForFieldContainer("factionID")) do
+						local faction = app.CreateFaction(factionID);
 						for j,o in ipairs(matches) do
-							if o.key == "factionID" then
+							if o.key == "factionID" and o.factionID == factionID then
 								for key,value in pairs(o) do faction[key] = value; end
+								break;
 							end
 						end
 						if not faction.u or faction.u ~= 1 then
