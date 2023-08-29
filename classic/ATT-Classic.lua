@@ -5061,42 +5061,64 @@ if C_PetJournal then
 	speciesFields.collected = function(t)
 		return SetBattlePetCollected(t, t.speciesID, C_PetJournal.GetNumCollectedInfo(t.speciesID) > 0);
 	end
-
-	local SpellIDToMountID = setmetatable({}, { __index = function(t, id)
-		local allMountIDs = C_MountJournal.GetMountIDs();
-		if allMountIDs and #allMountIDs > 0 then
-			for i,mountID in ipairs(allMountIDs) do
-				local spellID = select(2, C_MountJournal.GetMountInfoByID(mountID));
-				if spellID then rawset(t, spellID, mountID); end
+	
+	local C_MountJournal = _G["C_MountJournal"];
+	if C_MountJournal then
+		local SpellIDToMountID = setmetatable({}, { __index = function(t, id)
+			local allMountIDs = C_MountJournal.GetMountIDs();
+			if allMountIDs and #allMountIDs > 0 then
+				for i,mountID in ipairs(allMountIDs) do
+					local spellID = select(2, C_MountJournal.GetMountInfoByID(mountID));
+					if spellID then rawset(t, spellID, mountID); end
+				end
+				setmetatable(t, nil);
+				return rawget(t, id);
 			end
-			setmetatable(t, nil);
-			return rawget(t, id);
+		end });
+		mountFields.mountID = function(t)
+			return SpellIDToMountID[t.spellID];
 		end
-	end });
-	mountFields.mountID = function(t)
-		return SpellIDToMountID[t.spellID];
-	end
-	mountFields.name = function(t)
-		local mountID = t.mountID;
-		if mountID then return C_MountJournal.GetMountInfoByID(mountID); end
-		return GetSpellInfo(t.spellID) or RETRIEVING_DATA;
-	end
-	mountFields.displayID = function(t)
-		local mountID = t.mountID;
-		if mountID then return C_MountJournal.GetMountInfoExtraByID(mountID); end
-	end
-	mountFields.lore = function(t)
-		local mountID = t.mountID;
-		if mountID then return select(2, C_MountJournal.GetMountInfoExtraByID(mountID)); end
-	end
-	mountFields.collected = function(t)
-		local spellID = t.spellID;
-		for i,o in ipairs(SearchForField("spellID", spellID)) do
-			if o.explicitlyCollected then
-				return SetMountCollected(t, spellID, true);
+		mountFields.name = function(t)
+			local mountID = t.mountID;
+			if mountID then return C_MountJournal.GetMountInfoByID(mountID); end
+			return GetSpellInfo(t.spellID) or RETRIEVING_DATA;
+		end
+		mountFields.displayID = function(t)
+			local mountID = t.mountID;
+			if mountID then return C_MountJournal.GetMountInfoExtraByID(mountID); end
+		end
+		mountFields.lore = function(t)
+			local mountID = t.mountID;
+			if mountID then return select(2, C_MountJournal.GetMountInfoExtraByID(mountID)); end
+		end
+		mountFields.collected = function(t)
+			local mountID = t.mountID;
+			if mountID then
+				local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal.GetMountInfoByID(mountID);
+				return SetMountCollected(t, spellID, isCollected);
+			else
+				local spellID = t.spellID;
+				for i,o in ipairs(SearchForField("spellID", spellID)) do
+					if o.explicitlyCollected then
+						return SetMountCollected(t, spellID, true);
+					end
+				end
+				return SetMountCollected(t, spellID, false);
 			end
 		end
-		return SetMountCollected(t, spellID, false);
+	else
+		mountFields.name = function(t)
+			return GetSpellInfo(t.spellID) or RETRIEVING_DATA;
+		end
+		mountFields.collected = function(t)
+			local spellID = t.spellID;
+			for i,o in ipairs(SearchForField("spellID", spellID)) do
+				if o.explicitlyCollected then
+					return SetMountCollected(t, spellID, true);
+				end
+			end
+			return SetMountCollected(t, spellID, false);
+		end
 	end
 else
 	speciesFields.icon = function(t)
