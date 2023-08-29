@@ -8,7 +8,7 @@
 ## X-Interface: 30402
 ## X-Wago-ID: yQKyY5K7
 ## X-Curse-Project-ID: 267285
-## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSavedVariables, ATTClassicSettings, ATTClassicAD, ATTClassicAuctionData, ATTClassicDebugData
+## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSavedVariables, AllTheThingsAD, ATTClassicSettings, ATTClassicAD, ATTClassicAuctionData, ATTClassicDebugData
 ## SavedVariablesPerCharacter: ATTClassicSettingsPerCharacter
 lib\LibStub\LibStub.lua
 lib\CallbackHandler-1.0\CallbackHandler-1.0.lua

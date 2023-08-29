@@ -43,7 +43,7 @@ app:GetWindow("Flight Paths", {
 							end
 						end
 					end
-					for i,name in pairs(ATTClassicAD.LocalizedFlightPathNames) do
+					for i,name in pairs(AllTheThingsAD.LocalizedFlightPathNames) do
 						if not fps[i] then
 							local fp = app.CreateFlightPath(tonumber(i));
 							fps[i] = fp;

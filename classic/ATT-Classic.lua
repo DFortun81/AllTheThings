@@ -223,39 +223,39 @@ end
 
 -- Data Lib
 local attData;
-local ATTClassicAD = {};			-- For account-wide data.
+local AllTheThingsAD = {};			-- For account-wide data.
 local function SetDataMember(member, data)
-	ATTClassicAD[member] = data;
+	AllTheThingsAD[member] = data;
 end
 local function GetDataMember(member, default)
-	attData = ATTClassicAD[member];
+	attData = AllTheThingsAD[member];
 	if attData == nil then
-		ATTClassicAD[member] = default;
+		AllTheThingsAD[member] = default;
 		return default;
 	else
 		return attData;
 	end
 end
 local function SetDataSubMember(member, submember, data)
-	attData = ATTClassicAD[member];
+	attData = AllTheThingsAD[member];
 	if attData == nil then
-		ATTClassicAD[member] = { [submember] = data };
+		AllTheThingsAD[member] = { [submember] = data };
 	else
 		attData[submember] = data;
 	end
 end
 local function GetDataSubMember(member, submember, default)
-	attData = ATTClassicAD[member];
+	attData = AllTheThingsAD[member];
 	if attData then
 		attData = attData[submember];
 		if attData == nil then
-			ATTClassicAD[member][submember] = default;
+			AllTheThingsAD[member][submember] = default;
 			return default;
 		else
 			return attData;
 		end
 	else
-		ATTClassicAD[member] = { [submember] = default };
+		AllTheThingsAD[member] = { [submember] = default };
 		return default;
 	end
 end
@@ -4772,7 +4772,7 @@ end)();
 (function()
 app.CreateCategory = app.CreateClass("Category", "categoryID", {
 	["text"] = function(t)
-		return ATTClassicAD.LocalizedCategoryNames[t.categoryID] or ("Unknown Category #" .. t.categoryID);
+		return AllTheThingsAD.LocalizedCategoryNames[t.categoryID] or ("Unknown Category #" .. t.categoryID);
 	end,
 	["icon"] = function(t)
 		return ATTC.CategoryIcons[t.categoryID] or "Interface/ICONS/INV_Misc_Gear_02";
@@ -5879,7 +5879,7 @@ app.CacheFlightPathData = function()
 		if allNodeData then
 			for j,nodeData in ipairs(allNodeData) do
 				if nodeData.name then
-					ATTClassicAD.LocalizedFlightPathNames[nodeData.nodeID] = nodeData.name;
+					AllTheThingsAD.LocalizedFlightPathNames[nodeData.nodeID] = nodeData.name;
 					if #SearchForField("flightPathID", nodeData.nodeID) < 1 then
 						newNodes[nodeData.nodeID] = nodeData.name;
 						anyNew = true;
@@ -5965,7 +5965,7 @@ app.CreateFlightPath = app.CreateClass("FlightPath", "flightPathID", {
 		return t.name;
 	end,
 	["name"] = function(t)
-		return ATTClassicAD.LocalizedFlightPathNames[t.flightPathID] or "Visit the Flight Master to cache.";
+		return AllTheThingsAD.LocalizedFlightPathNames[t.flightPathID] or "Visit the Flight Master to cache.";
 	end,
 	["icon"] = function(t)
 		local r = t.r;
@@ -6501,7 +6501,7 @@ itemHarvesterFields.text = function(t)
 			t.info = info;
 			t.retries = nil;
 			HarvestedItemDatabase[t.itemID] = info;
-			ATTClassicAD.HarvestedItemDatabase = HarvestedItemDatabase;
+			AllTheThingsAD.HarvestedItemDatabase = HarvestedItemDatabase;
 			return link;
 		end
 	end
@@ -6861,8 +6861,8 @@ local simplifyExplorationData = function()
 			end
 		end
 	end
-	ATTClassicAD.ExplorationDB = explorationDB;
-	ATTClassicAD.ExplorationAreaPositionDB = explorationAreaPositionDB;
+	AllTheThingsAD.ExplorationDB = explorationDB;
+	AllTheThingsAD.ExplorationAreaPositionDB = explorationAreaPositionDB;
 	app.ExplorationDB = explorationDB;
 	app.ExplorationAreaPositionDB = explorationAreaPositionDB;
 	app.print("Done Simplifying Exploration Data.");
@@ -6928,10 +6928,10 @@ local onMapUpdate = function(t)
 				if not coords then
 					coords = {};
 					app.ExplorationAreaPositionDB[areaID] = coords;
-					local missing = ATTClassicAD.ExplorationAreaPositionDB;
+					local missing = AllTheThingsAD.ExplorationAreaPositionDB;
 					if not missing then
 						missing = {};
-						--ATTClassicAD.ExplorationAreaPositionDB = missing;
+						--AllTheThingsAD.ExplorationAreaPositionDB = missing;
 					end
 					missing[areaID] = coords;
 				end
@@ -6977,7 +6977,7 @@ app.SortExplorationDB = function()
 			return a[2] < b[2];
 		end);
 	end
-	ATTClassicAD.NamedExplorationDB = t;
+	AllTheThingsAD.NamedExplorationDB = t;
 end
 local createMap, mapClass = app.CreateClass("Map", "mapID", {
 	["text"] = function(t)
@@ -7034,7 +7034,7 @@ app.CreateMap = function(id, t)
 		if not areaIDs then
 			areaIDs = {};
 			app.ExplorationDB[id] = areaIDs;
-			--ATTClassicAD.ExplorationDB = ATTC.ExplorationDB;
+			--AllTheThingsAD.ExplorationDB = ATTC.ExplorationDB;
 		else
 			for _,areaID in ipairs(areaIDs) do
 				if not explorationByAreaID[areaID] then
@@ -13877,11 +13877,16 @@ app.events.ADDON_LOADED = function(addonName)
 	-- Only execute for this addon.
 	if addonName ~= appName then return; end
 	app:UnregisterEvent("ADDON_LOADED");
-
-	ATTClassicAD = _G["ATTClassicAD"];	-- For account-wide data.
-	if not ATTClassicAD then
-		ATTClassicAD = { };
-		_G["ATTClassicAD"] = ATTClassicAD;
+	
+	AllTheThingsAD = _G["AllTheThingsAD"];	-- For account-wide data.
+	if not AllTheThingsAD then
+		AllTheThingsAD = _G["ATTClassicAD"];
+		if AllTheThingsAD then
+			_G["ATTClassicAD"] = nil;
+		else
+			AllTheThingsAD = { };
+		end
+		_G["AllTheThingsAD"] = AllTheThingsAD;
 	end
 	app:UpdateWindowColors();
 	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
@@ -13893,11 +13898,11 @@ app.events.ADDON_LOADED = function(addonName)
 	});
 
 	-- Cache the Localized Category Data
-	ATTClassicAD.LocalizedCategoryNames = setmetatable(ATTClassicAD.LocalizedCategoryNames or {}, { __index = app.CategoryNames });
+	AllTheThingsAD.LocalizedCategoryNames = setmetatable(AllTheThingsAD.LocalizedCategoryNames or {}, { __index = app.CategoryNames });
 	app.CategoryNames = nil;
 
 	-- Cache the Localized Flight Path Data
-	ATTClassicAD.LocalizedFlightPathNames = setmetatable(ATTClassicAD.LocalizedFlightPathNames or {}, { __index = app.FlightPathNames });
+	AllTheThingsAD.LocalizedFlightPathNames = setmetatable(AllTheThingsAD.LocalizedFlightPathNames or {}, { __index = app.FlightPathNames });
 	app.FlightPathDB = nil;
 
 	-- Character Data Storage
@@ -14240,11 +14245,11 @@ app.events.ADDON_LOADED = function(addonName)
 		"SoftReservePersistence",
 		"ValidSuffixesPerItemID",
 	}) do
-		oldsettings[key] = ATTClassicAD[key];
+		oldsettings[key] = AllTheThingsAD[key];
 	end
-	wipe(ATTClassicAD);
+	wipe(AllTheThingsAD);
 	for key,value in pairs(oldsettings) do
-		ATTClassicAD[key] = value;
+		AllTheThingsAD[key] = value;
 	end
 
 	-- Wipe the Debugger Data
