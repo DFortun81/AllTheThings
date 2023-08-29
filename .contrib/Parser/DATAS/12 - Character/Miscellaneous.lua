@@ -132,6 +132,7 @@ root(ROOTS.Character, filter(MISC, {
 		}),
 		i(162626, {	-- Tome of Polymorph: Bumblebee (CI!)
 			["timeline"] = { ADDED_8_0_1_LAUNCH },
+			["races"] = ALLIANCE_ONLY,
 		}),
 		i(162625, {	-- Tome of Polymorph: Direhorn (CI!)
 			["timeline"] = { ADDED_8_0_1_LAUNCH },
