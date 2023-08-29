@@ -1930,6 +1930,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				i(4616, {	-- Ryedol's Lucky Pick
 					["timeline"] = { "removed 4.0.3" },
+					["collectible"] = false,	-- This is a quest item where you have to be on the quest to get it, keep it, and not turn it in for several years to get the transmog for.
 					["crs"] = {
 						2740,	-- Shadowforge Darkweaver
 						2739,	-- Shadowforge Tunneler
