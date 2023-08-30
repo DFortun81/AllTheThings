@@ -2466,7 +2466,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(7054),	-- Robe of Power
 			i(14152),	-- Robe of the Archmage
 			i(14153, {	-- Robe of the Void
-				["timeline"] = { "removed 5.0.4.15890" },
+				["timeline"] = { "removed 5.0.4.15890", ADDED_10_1_5 },
 				-- #if BEFORE WRATH
 				["classes"] = { WARLOCK },
 				-- #endif
