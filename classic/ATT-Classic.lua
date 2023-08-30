@@ -4043,7 +4043,24 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 			if achievementID then
 				local criteriaID = t.criteriaID;
 				if criteriaID then
-					return t.GetInfo(achievementID, criteriaID, true) or ("achievementID:" .. achievementID .. ":" .. criteriaID);
+					local name = t.GetInfo(achievementID, criteriaID, true);
+					if not IsRetrieving(name) then return name; end
+					
+					local providers = t.providers;
+					if providers then
+						for k,v in ipairs(providers) do
+							if v[2] > 0 then
+								if v[1] == "o" then
+									return app.ObjectNames[v[2]];
+								elseif v[1] == "i" then
+									return GetItemInfo(v[2]);
+								elseif v[1] == "n" then
+									return app.NPCDisplayIDFromID[v[2]];
+								end
+							end
+						end
+					end
+					return "achievementID:" .. achievementID .. ":" .. criteriaID;
 				end
 			end
 		end,
