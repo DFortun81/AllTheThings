@@ -16123,7 +16123,7 @@ end
 -- content which matches the specified .dynamic 'field' of the group
 -- NOTE: Content must be cached using the dynamic 'field'
 local DynamicCategory_Simple = function(self)
-	local dynamicCache = SearchForFieldContainer(self.dynamic);
+	local dynamicCache = app.GetRawFieldContainer(self.dynamic);
 	if dynamicCache then
 		local rootATT = app:GetWindow("Prime").data;
 		local top, topText, thing;
@@ -17316,7 +17316,7 @@ function app:BuildSearchResponse(field, value, clear)
 
 		-- app.PrintDebug("BSR:",field,value,clear)
 		SetRescursiveFilters();
-		local cacheContainer = SearchForFieldContainer(field);
+		local cacheContainer = app.GetRawFieldContainer(field);
 		if cacheContainer then
 			BuildSearchResponseViaCacheContainer(cacheContainer, value, clear);
 		elseif value ~= nil then
@@ -19744,7 +19744,7 @@ customWindowUpdates["list"] = function(self, force, got)
 				min = 0;
 			end
 			dataType = cacheKey;
-			for itemID,groups in pairs(SearchForFieldContainer(dataType) or SearchForFieldContainer(cacheKeyID)) do
+			for itemID,groups in pairs(app.GetRawFieldContainer(dataType) or app.GetRawFieldContainer(cacheKeyID) or app.EmptyTable) do
 				for _,o in ipairs(groups) do
 					cacheID = tonumber(o.modItemID or o[dataType] or o[cacheKeyID]);
 					if imin < cacheID and cacheID < imax and not added[cacheID] then
@@ -20110,7 +20110,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 			if app.Settings.Collectibles.Recipes then
 				-- app.PrintDebug("RefreshRecipes")
 				-- Cache Learned Spells
-				local skillCache = SearchForFieldContainer("spellID");
+				local skillCache = app.GetRawFieldContainer("spellID");
 				if not skillCache then return; end
 
 				local tradeSkillID = app.GetTradeSkillLine();

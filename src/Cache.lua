@@ -2,8 +2,8 @@ do
 local appName, app = ...;
 
 -- Global locals
-local ipairs, tinsert, pairs, rawset, type, wipe, setmetatable
-	= ipairs, tinsert, pairs, rawset, type, wipe, setmetatable;
+local ipairs, tinsert, pairs, rawset, type, wipe, setmetatable, rawget
+	= ipairs, tinsert, pairs, rawset, type, wipe, setmetatable, rawget;
 local C_Map_GetAreaInfo = C_Map.GetAreaInfo;
 
 -- App locals
@@ -528,6 +528,12 @@ local function SearchForFieldContainer(field)
 	return currentCache[field];
 end
 
+-- Returns: The actual table containing all groups which contain a given field
+-- NOTE: Can be nil for simplicity in use
+local function GetRawFieldContainer(field)
+	return rawget(currentCache, field);
+end
+
 -- Returns: A table containing all groups which contain the provided id for a given field.
 local function SearchForField(field, id)
 	return SearchForFieldContainer(field)[id], field, id;
@@ -616,6 +622,7 @@ app.AllCaches = AllCaches;	-- Needed for now, due to the UpdateRawID function no
 app.CacheField = CacheField;	-- This doesn't seem to have any external uses, apparently was used by Flight Paths at some point.
 app.CacheFields = CacheFields;
 app.CreateDataCache = CreateDataCache;
+app.GetRawFieldContainer = GetRawFieldContainer;
 app.SearchForFieldRecursively = SearchForFieldRecursively;
 app.SearchForFieldContainer = SearchForFieldContainer;
 app.SearchForField = SearchForField;
