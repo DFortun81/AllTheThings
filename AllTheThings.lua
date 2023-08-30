@@ -6804,59 +6804,6 @@ app.CreateCache = function(idField)
 end
 end)();
 
--- Common Wrapper Types
-do
-local Wrap = app.WrapObject;
-local HeaderCloneFields = {
-	-- Fields in the wrapped object which should not persist when represented as a Header
-	["collectible"] = app.ReturnNil,
-	["trackable"] = app.ReturnNil,
-	["collectibleAsCost"] = app.ReturnNil,
-	["costCollectibles"] = app.ReturnNil,
-	["hasUpgradeNested"] = app.ReturnNil,
-	["costNested"] = app.ReturnNil,
-	["g"] = app.ReturnNil,
-	-- Filter-affecting fields
-	["customCollect"] = app.ReturnNil,
-	["requireSkill"] = app.ReturnNil,
-	["u"] = app.ReturnNil,
-	["e"] = app.ReturnNil,
-	["races"] = app.ReturnNil,
-	["r"] = app.ReturnNil,
-	["c"] = app.ReturnNil,
-	["nmc"] = app.ReturnNil,
-	["nmr"] = app.ReturnNil,
-	["sym"] = app.ReturnNil,
-	-- ["back"] = function(t)
-	-- 	return 0.3;	-- visibility of which rows are cloned
-	-- end,
-};
-local BaseHeaderClone = app.BaseObjectFields(HeaderCloneFields, "HeaderClone");
--- Wraps a given object such that it can act as a non-filtered Header of the object
-app.CreateWrapHeader = function(t)
-	return Wrap(t, BaseHeaderClone);
-end
-
-local FilterHeaderCloneFields = {
-	-- Fields in the wrapped object which should not persist when represented as a Header
-	["collectible"] = app.ReturnNil,
-	["trackable"] = app.ReturnNil,
-	["collectibleAsCost"] = app.ReturnNil,
-	["costCollectibles"] = app.ReturnNil,
-	["hasUpgradeNested"] = app.ReturnNil,
-	["costNested"] = app.ReturnNil,
-	["g"] = app.ReturnNil,
-	-- ["back"] = function(t)
-	-- 	return 0.3;	-- visibility of which rows are cloned
-	-- end,
-};
-local BaseFilterHeaderClone = app.BaseObjectFields(FilterHeaderCloneFields, "FilterHeaderClone");
--- Wraps a given object such that it can act as a filtered Header of the object
-app.CreateWrapFilterHeader = function(t)
-	return Wrap(t, BaseFilterHeaderClone);
-end
-end	-- Common Wrapper Types
-
 -- Quest Lib
 -- Quests first because a lot of other Thing libs use Quest logic
 (function()
@@ -10911,8 +10858,8 @@ local weaponTextures = {
 	"Interface/ICONS/inv_weapon_shortblade_84",
 };
 
-local isWeapon = { 20, 29, 28, 21, 22, 23, 24, 25, 26, 50, 57, 34, 35, 27, 33, 32, 31 };
-local fields = {
+local weaponFilterIDs = { 20, 29, 28, 21, 22, 23, 24, 25, 26, 50, 57, 34, 35, 27, 33, 32, 31 };
+local hierloomLevelFields = {
 	["key"] = function(t)
 		return "heirloomLevelID";
 	end,
@@ -10945,16 +10892,13 @@ local fields = {
 	end,
 	["trackable"] = app.ReturnTrue,
 	["isWeapon"] = function(t)
-		if t.f and contains(isWeapon, t.f) then
-			t.isWeapon = true;
-			return true;
-		end
-		t.isWeapon = false;
-		return false;
+		local isWeapon = t.f and contains(weaponFilterIDs, t.f);
+		t.isWeapon = isWeapon;
+		return isWeapon;
 	end,
 };
-fields.collected = fields.saved;
-local BaseHeirloomLevel = app.BaseObjectFields(fields, "BaseHeirloomLevel");
+hierloomLevelFields.collected = hierloomLevelFields.saved;
+local BaseHeirloomLevel = app.BaseObjectFields(hierloomLevelFields, "BaseHeirloomLevel");
 local function CreateHeirloomLevel(level, heirloom)
 	return setmetatable(level, BaseHeirloomLevel);
 end
@@ -10993,15 +10937,7 @@ fields.collected = function(t)
 fields.saved = function(t)
 		return t.collected == 1;
 	end
-fields.isWeapon = function(t)
-		local f = t.f;
-		if f and contains(isWeapon, f) then
-			t.isWeapon = true;
-			return true;
-		end
-		t.isWeapon = false;
-		return false;
-	end
+fields.isWeapon = hierloomLevelFields.isWeapon;
 fields.g = function(t)
 		-- unlocking the heirloom is the only thing contained in the heirloom
 		if C_Heirloom_GetHeirloomMaxUpgradeLevel(t.itemID) then
@@ -11028,117 +10964,123 @@ end
 -- upgrade levels into the respective upgrade tokens
 app.CacheHeirlooms = function()
 	-- app.PrintDebug("CacheHeirlooms",#heirloomIDs)
-	if #heirloomIDs < 1 then return; end
-
-	-- setup the armor tokens which will contain the upgrades for the heirlooms
-	-- Note: The order of these is essential to how they are filled!
-	local armorTokens = {
-		-- Rank 6
-		app.CreateItem(204336),	-- Awakened Heirloom Armor Casing
-		-- Rank 5
-		app.CreateItem(187997),	-- Eternal Heirloom Armor Casing
-		-- Rank 4
-		app.CreateItem(167731),	-- Battle-Hardened Heirloom Armor Casing
-		-- Rank 3
-		app.CreateItem(151614),	-- Weathered Heirloom Armor Casing
-		-- Rank 2
-		app.CreateItem(122340),	-- Timeworn Heirloom Armor Casing
-		-- Rank 1
-		app.CreateItem(122338),	-- Ancient Heirloom Armor Casing
-	};
-	local weaponTokens = {
-		-- Rank 6
-		app.CreateItem(204337),	-- Awakened Heirloom Scabbard
-		-- Rank 5
-		app.CreateItem(187998),	-- Eternal Heirloom Scabbard
-		-- Rank 4
-		app.CreateItem(167732),	-- Battle-Hardened Heirloom Scabbard
-		-- Rank 3
-		app.CreateItem(151615),	-- Weathered Heirloom Scabbard
-		-- Rank 2
-		app.CreateItem(122341),	-- Timeworn Heirloom Scabbard
-		-- Rank 1
-		app.CreateItem(122339),	-- Ancient Heirloom Scabbard
-	};
-
-	-- cache the heirloom upgrade tokens
-	for i,item in ipairs(armorTokens) do
-		item.g = {};
-	end
-	for i,item in ipairs(weaponTokens) do
-		item.g = {};
-	end
-	-- for each cached heirloom, push a copy of itself with respective upgrade level under the respective upgrade token
-	local heirloom, upgrades, isWeapon, u, e;
-	local Search, ClonedHeader = app.SearchForObject, app.CreateWrapHeader;
-	local uniques = {};
-	for _,itemID in ipairs(heirloomIDs) do
-		if not uniques[itemID] then
-			uniques[itemID] = true;
-			heirloom = Search("itemID", itemID, "field");
-			if heirloom then
-				upgrades = C_Heirloom_GetHeirloomMaxUpgradeLevel(itemID);
-				if upgrades then
-					isWeapon = heirloom.isWeapon;
-					u = heirloom.u;
-					e = heirloom.e;
-
-					local heirloomHeader;
-					for i=1,upgrades,1 do
-						-- Create a non-collectible version of the heirloom item itself to hold the upgrade within the token
-						heirloomHeader = ClonedHeader(heirloom);
-						-- put the upgrade object into the header heirloom object
-						heirloomHeader.g = { CreateHeirloomLevel({
-							level = i,
-							levelMax = upgrades,
-							heirloomLevelID = itemID,
-							e = e,
-							u = u,
-						}) };
-
-						-- add the header into the appropriate upgrade token
-						if isWeapon then
-							tinsert(weaponTokens[upgrades + 1 - i].g, heirloomHeader);
-						else
-							tinsert(armorTokens[upgrades + 1 - i].g, heirloomHeader);
+	if #heirloomIDs < 1 or not C_Heirloom_GetHeirloomMaxUpgradeLevel then return; end
+	
+	-- Are heirloom upgrades available? (6.1.0.19445)
+	local gameBuildVersion = app.GameBuildVersion;
+	if gameBuildVersion > 60100 then
+		-- Setup upgrade tokens that contain levels for the heirlooms. Order matters.
+		-- Ranks 1 & 2 were added with WOD (6.1.0.19445)
+		local armorTokenItemIDs = {
+			122338,	-- Rank 1: Ancient Heirloom Armor Casing
+			122340,	-- Rank 2: Timeworn Heirloom Armor Casing
+		};
+		local weaponTokenItemIDs = {
+			122339,	-- Rank 1: Ancient Heirloom Scabbard
+			122341,	-- Rank 2: Timeworn Heirloom Scabbard
+		};
+		
+		-- Rank 3 was added with Legion (7.2.5.24076)
+		if gameBuildVersion > 70205 then
+			tinsert(armorTokenItemIDs, 151614);		-- Weathered Heirloom Armor Casing
+			tinsert(weaponTokenItemIDs, 151615);		-- Weathered Heirloom Scabbard
+		
+			-- Rank 4 was added with BFA (8.1.5.29701)
+			if gameBuildVersion > 80105 then
+				tinsert(armorTokenItemIDs, 167731);		-- Battle-Hardened Heirloom Armor Casing
+				tinsert(weaponTokenItemIDs, 167732);		-- Battle-Hardened Heirloom Scabbard
+				
+				-- Rank 5 was added with Shadowlands (9.1.5.40871)
+				if gameBuildVersion > 90105 then
+					tinsert(armorTokenItemIDs, 187997);		-- Eternal Heirloom Armor Casing
+					tinsert(weaponTokenItemIDs, 187998);		-- Eternal Heirloom Scabbard
+					
+					-- Rank 6 was added with Dragonflight (10.1.0.49407)
+					if gameBuildVersion > 100100 then
+						tinsert(armorTokenItemIDs, 204336);		-- Awakened Heirloom Armor Casing
+						tinsert(weaponTokenItemIDs, 204337);		-- Awakened Heirloom Scabbard
+					end
+				end
+			end
+		end
+		
+		-- Build headers that will contain each type.
+		local armorTokens, weaponTokens = {}, {};
+		for i=#armorTokenItemIDs,1,-1 do
+			tinsert(armorTokens, app.CreateItem(armorTokenItemIDs[i], {
+				collectible = false,
+				g = {},
+			}));
+			tinsert(weaponTokens, app.CreateItem(weaponTokenItemIDs[i], {
+				collectible = false,
+				g = {},
+			}));
+		end
+		
+		
+		-- for each cached heirloom, push a copy of itself with respective upgrade level under the respective upgrade token
+		local Search = app.SearchForObject;
+		local uniques, heirloom, upgrades = {};
+		for _,itemID in ipairs(heirloomIDs) do
+			if not uniques[itemID] then
+				uniques[itemID] = true;
+				heirloom = Search("itemID", itemID, "field");
+				if heirloom then
+					upgrades = C_Heirloom_GetHeirloomMaxUpgradeLevel(itemID);
+					if upgrades and upgrades > 0 then
+						local meta = { __index = heirloom };
+						local tokenType = heirloom.isWeapon and weaponTokens or armorTokens;
+						for i=1,upgrades,1 do
+							-- Create a non-collectible version of the heirloom item itself to hold the upgrade within the token
+							tinsert(tokenType[upgrades + 1 - i].g, 
+							setmetatable({ collectible = false, g = {
+								CreateHeirloomLevel({
+									heirloomLevelID = itemID,
+									levelMax = upgrades,
+									level = i,
+									f = heirloom.f,
+									e = heirloom.e,
+									u = heirloom.u,
+								})
+							}}, meta));
 						end
 					end
 				end
 			end
 		end
-	end
 
-	-- build groups for each upgrade token
-	-- and copy the set of upgrades into the cached versions of the upgrade tokens so they therefore exist in the main list
-	-- where the sources of the upgrade tokens exist
-	for i,item in ipairs(armorTokens) do
-		for _,token in ipairs(SearchForField("itemID", item.itemID)) do
-			-- ensure the tokens do not have a modID attached
-			token.modID = nil;
-			token.modItemID = nil;
-			if not token.sym then
-				for _,heirloom in ipairs(item.g) do
-					NestObject(token, heirloom, true);
+		-- build groups for each upgrade token
+		-- and copy the set of upgrades into the cached versions of the upgrade tokens so they therefore exist in the main list
+		-- where the sources of the upgrade tokens exist
+		for i,item in ipairs(armorTokens) do
+			for _,token in ipairs(SearchForField("itemID", item.itemID)) do
+				-- ensure the tokens do not have a modID attached
+				token.modID = nil;
+				token.modItemID = nil;
+				if not token.sym then
+					for _,heirloom in ipairs(item.g) do
+						NestObject(token, heirloom, true);
+					end
+					BuildGroups(token);
 				end
-				BuildGroups(token);
 			end
 		end
-	end
-	for i,item in ipairs(weaponTokens) do
-		for _,token in ipairs(SearchForField("itemID", item.itemID)) do
-			-- ensure the tokens do not have a modID attached
-			token.modID = nil;
-			token.modItemID = nil;
-			if not token.sym then
-				for _,heirloom in ipairs(item.g) do
-					NestObject(token, heirloom, true);
+		for i,item in ipairs(weaponTokens) do
+			for _,token in ipairs(SearchForField("itemID", item.itemID)) do
+				-- ensure the tokens do not have a modID attached
+				token.modID = nil;
+				token.modItemID = nil;
+				if not token.sym then
+					for _,heirloom in ipairs(item.g) do
+						NestObject(token, heirloom, true);
+					end
+					BuildGroups(token);
 				end
-				BuildGroups(token);
 			end
 		end
-	end
 
-	wipe(heirloomIDs);
+		wipe(heirloomIDs);
+	end
 end
 end -- Heirloom Lib
 
@@ -17291,12 +17233,11 @@ end
 end	-- Dynamic/Main Data
 
 do -- Search Response Logic
-local IncludeUnavailableRecipes, IgnoreBoEFilter, CloneGroup;
+local IncludeUnavailableRecipes, IgnoreBoEFilter;
 -- Set some logic which is used during recursion without needing to set it on every recurse
 local function SetRescursiveFilters()
 	IncludeUnavailableRecipes = not app.BuildSearchResponse_IgnoreUnavailableRecipes;
 	IgnoreBoEFilter = app.Modules.Filter.SettingsFilters.IgnoreBoEFilter;
-	CloneGroup = app.CreateWrapFilterHeader;
 end
 -- If/when this section becomes a module, set Module.SearchResponse.SearchNil instead
 app.SearchNil = "zsxdcfawoidsajd"
@@ -17304,8 +17245,26 @@ local MainRoot, UnsortedRoot;
 local ClonedHierarchyGroups = {};
 local ClonedHierarachyMapping = {};
 local SearchGroups = {};
+local Wrap = app.WrapObject;
+local BaseFilterHeaderClone = app.BaseObjectFields({
+	-- Fields in the wrapped object which should not persist when represented as a Header
+	["collectible"] = app.ReturnNil,
+	["trackable"] = app.ReturnNil,
+	["collectibleAsCost"] = app.ReturnNil,
+	["costCollectibles"] = app.ReturnNil,
+	["hasUpgradeNested"] = app.ReturnNil,
+	["costNested"] = app.ReturnNil,
+	["g"] = app.ReturnNil,
+	-- ["back"] = function(t)
+	-- 	return 0.3;	-- visibility of which rows are cloned
+	-- end,
+}, "FilterHeaderClone");
+-- Wraps a given object such that it can act as a filtered Header of the object
+app.CreateWrapFilterHeader = function(t)
+	return Wrap(t, BaseFilterHeaderClone);
+end
 local function CloneGroupIntoHeirarchy(group)
-	local groupCopy = CloneGroup(group);
+	local groupCopy = app.CreateWrapFilterHeader(group);
 	-- always a parent, so it will have a .g
 	groupCopy.g = {};
 	ClonedHierarachyMapping[group] = groupCopy;
