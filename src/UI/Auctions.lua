@@ -3,7 +3,7 @@ local appName, app = ...;
 local CloneReference = app.CloneReference;
 
 -- Global locals
-local _GetAuctionItemInfo, _GetAuctionItemLink = GetAuctionItemInfo, GetAuctionItemLink;
+local tinsert, _GetAuctionItemInfo, _GetAuctionItemLink = tinsert, GetAuctionItemInfo, GetAuctionItemLink;
 
 -- Module locals
 local auctionData = {};
@@ -318,7 +318,7 @@ app:GetWindow("Auctions", {
 					local g = data.g;
 					if #g < 1 then
 						for i,option in ipairs(data.options) do
-							table.insert(g, option);
+							tinsert(g, option);
 						end
 						
 						-- Determine if anything is cached in the Auction Data.
@@ -396,7 +396,7 @@ app:GetWindow("Auctions", {
 											if searchResults and #searchResults > 0 then
 												local craftedItem = CloneReference(searchResults[1]);
 												craftedItem.indent = 2;
-												table.insert(entry.g, craftedItem);
+												tinsert(entry.g, craftedItem);
 											end
 										end
 									else
@@ -418,12 +418,12 @@ app:GetWindow("Auctions", {
 								end
 								subdata.g = {};
 								for i,j in pairs(searchResults) do
-									table.insert(subdata.g, j);
+									tinsert(subdata.g, j);
 								end
-								table.insert(g, subdata);
+								tinsert(g, subdata);
 							end
 						else
-							table.insert(g, { text = "No auctions cached. Waiting on Auction data." });
+							tinsert(g, { text = "No auctions cached. Waiting on Auction data." });
 						end
 					end
 				end,

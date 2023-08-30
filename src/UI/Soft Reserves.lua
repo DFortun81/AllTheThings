@@ -9,7 +9,7 @@ local GetRaidRosterInfo, GuildControlGetNumRanks, GetGuildRosterInfo, GetGuildRo
 local GetItemInfo, GetItemInfoInstant = GetItemInfo, GetItemInfoInstant;
 local GetLootMethod, GetRealmName, UnitName, UnitGUID, UnitInRaid, UnitInParty =
 	  GetLootMethod, GetRealmName, UnitName, UnitGUID, UnitInRaid, UnitInParty;
-local strsplit, strsub = strsplit, strsub;
+local strsplit, strsub, tinsert, tremove = strsplit, strsub, tinsert, tremove;
 
 -- App locals
 local GetRelativeValue = app.GetRelativeValue;
@@ -226,7 +226,7 @@ local function QuerySoftReserve(guid, cmd, target)
 						for i,guid in ipairs(reservesForItem) do
 							if guid and (all or IsGUIDInGroup(guid)) then
 								local unit = app.CreateSoftReserveUnit(guid);
-								table.insert(sr, unit.name or guid);
+								tinsert(sr, unit.name or guid);
 							end
 						end
 					end
@@ -310,7 +310,7 @@ local function UpdateSoftReserveInternal(guid, itemID, timeStamp, isCurrentPlaye
 			if reservesForItem then
 				for i,value in ipairs(reservesForItem) do
 					if value == guid then
-						table.remove(reservesForItem, i);
+						tremove(reservesForItem, i);
 						break;
 					end
 				end
@@ -329,7 +329,7 @@ local function UpdateSoftReserveInternal(guid, itemID, timeStamp, isCurrentPlaye
 			reservesForItem = {};
 			SoftReservesByItemID[itemID] = reservesForItem;
 		end
-		table.insert(reservesForItem, guid);
+		tinsert(reservesForItem, guid);
 	else
 		itemID = 0;
 		reserves[guid] = nil;
@@ -560,7 +560,7 @@ SoftReserveWindow = app:GetWindow("SoftReserves", {
 				reservesForItem = {};
 				SoftReservesByItemID[itemID] = reservesForItem;
 			end
-			table.insert(reservesForItem, guid);
+			tinsert(reservesForItem, guid);
 		end
 		
 		-- Push the player's SR
@@ -933,7 +933,7 @@ SoftReserveWindow = app:GetWindow("SoftReserves", {
 					local numRanks = GuildControlGetNumRanks();
 					if numRanks > 0 then
 						for rankIndex = #g + 1, numRanks, 1 do
-							table.insert(g, {
+							tinsert(g, {
 								text = GuildControlGetRankName(rankIndex),
 								icon = format("Interface\\PvPRankBadges\\PvPRank%02d",  (15 - rankIndex)),
 								--OnUpdate = app.AlwaysShowUpdate,
@@ -954,7 +954,7 @@ SoftReserveWindow = app:GetWindow("SoftReserves", {
 										local yearsOffline, monthsOffline, daysOffline, hoursOffline = GetGuildRosterLastOnline(guildIndex);
 										if (((yearsOffline or 0) * 12) + (monthsOffline or 0)) < 3 or debugMode then
 											local a = g[rankIndex + 1];
-											if a then table.insert(a.g, app.CreateSoftReserveUnit(guid, { parent = a, visible = true })); end
+											if a then tinsert(a.g, app.CreateSoftReserveUnit(guid, { parent = a, visible = true })); end
 										end
 									end
 								end
@@ -1044,16 +1044,16 @@ SoftReserveWindow = app:GetWindow("SoftReserves", {
 					-- Insert every groupie! (including yourself!)
 					for name,member in pairs(groupMembers) do
 						if groupies[name] then
-							table.insert(g, member);
+							tinsert(g, member);
 						end
 					end
 				else
 					-- Insert just you!
-					table.insert(g, me);
+					tinsert(g, me);
 				end
 				for i,option in ipairs(options) do
 					option.parent = data;
-					table.insert(g, option);
+					tinsert(g, option);
 				end
 				app.Sort(g, SortByTextAndPriority);
 			end,

@@ -191,10 +191,11 @@ end
 (function()
 -- Extend the Frame Class and give them ATT-Style Coroutines and Tooltips!
 local coroutineStack = {};
+local tinsert, tremove = tinsert, tremove;
 local function OnCoroutineUpdate()
 	for i=#coroutineStack,1,-1 do
 		if not coroutineStack[i][3]() then
-			table.remove(coroutineStack, i);
+			tremove(coroutineStack, i);
 			if #coroutineStack < 1 then
 				frame:SetScript("OnUpdate", nil);
 				--print("Coroutines Finished.");
@@ -210,7 +211,7 @@ local function Push(self, name, method)
 	end
 	local owner = self.Suffix or (self.GetName and self:GetName()) or self.text;
 	--print(owner, "Push ->", name);
-	table.insert(coroutineStack, { owner, name, method });
+	tinsert(coroutineStack, { owner, name, method });
 end
 local function StartATTCoroutine(self, name, method)
 	if method then

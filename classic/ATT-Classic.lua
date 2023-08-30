@@ -36,8 +36,8 @@ BINDING_NAME_ALLTHETHINGS_REROLL_RANDOM = L["REROLL_RANDOM"]
 -- While this may seem silly, caching references to commonly used APIs is actually a performance gain...
 local C_DateAndTime_GetServerTimeLocal
 	= C_DateAndTime.GetServerTimeLocal;
-local ipairs, tinsert, pairs, rawset, rawget, pcall
-	= ipairs, tinsert, pairs, rawset, rawget, pcall;
+local ipairs, pairs, rawset, rawget, pcall, tinsert, tremove
+	= ipairs, pairs, rawset, rawget, pcall, tinsert, tremove;
 local C_Map_GetMapInfo, C_Map_GetAreaInfo = C_Map.GetMapInfo, C_Map.GetAreaInfo;
 local C_Map_GetPlayerMapPosition = C_Map.GetPlayerMapPosition;
 local GetAchievementInfo = _G["GetAchievementInfo"];
@@ -1229,18 +1229,18 @@ ResolveSymbolicLink = function(o)
 							if ref then
 								if s.g then
 									for i,m in ipairs(s.g) do
-										table.insert(searchResults, m);
+										tinsert(searchResults, m);
 									end
 								end
 								for i,m in ipairs(ref) do
-									table.insert(searchResults, m);
+									tinsert(searchResults, m);
 								end
 							else
-								table.insert(searchResults, s);
+								tinsert(searchResults, s);
 							end
 						end
 					elseif field == "itemID" then
-						table.insert(searchResults, app.CreateItem(sym[i], {
+						tinsert(searchResults, app.CreateItem(sym[i], {
 							description = "This was dynamically filled using a symlink, but the information wasn't found in the addon.",
 						}));
 					else
@@ -1258,13 +1258,13 @@ ResolveSymbolicLink = function(o)
 						cache = cache - 1;
 					end
 					if parent then
-						table.insert(searchResults, parent);
+						tinsert(searchResults, parent);
 					else
 						print("Failed to select parent " .. sym[2] .. " levels up.");
 					end
 				else
 					-- Select the direct parent object.
-					table.insert(searchResults, o.parent);
+					tinsert(searchResults, o.parent);
 				end
 			elseif cmd == "selectprofession" then
 				local requireSkill, response = sym[2];
@@ -1293,14 +1293,14 @@ ResolveSymbolicLink = function(o)
 							if ref then
 								if s.g then
 									for i,m in ipairs(s.g) do
-										table.insert(searchResults, m);
+										tinsert(searchResults, m);
 									end
 								end
 								for i,m in ipairs(ref) do
-									table.insert(searchResults, m);
+									tinsert(searchResults, m);
 								end
 							else
-								table.insert(searchResults, s);
+								tinsert(searchResults, s);
 							end
 						end
 					end
@@ -1315,7 +1315,7 @@ ResolveSymbolicLink = function(o)
 				for k,s in ipairs(orig) do
 					if s.g then
 						for l,t in ipairs(s.g) do
-							table.insert(searchResults, t);
+							tinsert(searchResults, t);
 						end
 					end
 				end
@@ -1325,7 +1325,7 @@ ResolveSymbolicLink = function(o)
 				for k=#searchResults,1,-1 do
 					local s = searchResults[k];
 					if not s[key] or s[key] ~= value then
-						table.remove(searchResults, k);
+						tremove(searchResults, k);
 					end
 				end
 			elseif cmd == "index" then
@@ -1336,7 +1336,7 @@ ResolveSymbolicLink = function(o)
 				for k=#orig,1,-1 do
 					local s = orig[k];
 					if s.g and index <= #s.g then
-						table.insert(searchResults, s.g[index]);
+						tinsert(searchResults, s.g[index]);
 					end
 				end
 			elseif cmd == "not" then
@@ -1356,7 +1356,7 @@ ResolveSymbolicLink = function(o)
 							end
 						end
 						if matched then
-							table.remove(searchResults, k);
+							tremove(searchResults, k);
 						end
 					end
 				else
@@ -1364,7 +1364,7 @@ ResolveSymbolicLink = function(o)
 					for k=#searchResults,1,-1 do
 						local s = searchResults[k];
 						if s[key] and s[key] == value then
-							table.remove(searchResults, k);
+							tremove(searchResults, k);
 						end
 					end
 				end
@@ -1373,26 +1373,26 @@ ResolveSymbolicLink = function(o)
 				local key = sym[2];
 				for k=#searchResults,1,-1 do
 					local s = searchResults[k];
-					if not s[key] then table.remove(searchResults, k); end
+					if not s[key] then tremove(searchResults, k); end
 				end
 			elseif cmd == "isnt" then
 				-- Instruction to include only search results where a key doesn't exist
 				local key = sym[2];
 				for k=#searchResults,1,-1 do
 					local s = searchResults[k];
-					if s[key] then table.remove(searchResults, k); end
+					if s[key] then tremove(searchResults, k); end
 				end
 			elseif cmd == "contains" then
 				-- Instruction to include only search results where a key value contains a value.
 				local key = sym[2];
 				local clone = {unpack(sym)};
-				table.remove(clone, 1);
-				table.remove(clone, 1);
+				tremove(clone, 1);
+				tremove(clone, 1);
 				if #clone > 0 then
 					for k=#searchResults,1,-1 do
 						local s = searchResults[k];
 						if not s[key] or not contains(clone, s[key]) then
-							table.remove(searchResults, k);
+							tremove(searchResults, k);
 						end
 					end
 				end
@@ -1400,26 +1400,26 @@ ResolveSymbolicLink = function(o)
 				-- Instruction to exclude search results where a key value contains a value.
 				local key = sym[2];
 				local clone = {unpack(sym)};
-				table.remove(clone, 1);
-				table.remove(clone, 1);
+				tremove(clone, 1);
+				tremove(clone, 1);
 				if #clone > 0 then
 					for k=#searchResults,1,-1 do
 						local s = searchResults[k];
 						if s[key] and contains(clone, s[key]) then
-							table.remove(searchResults, k);
+							tremove(searchResults, k);
 						end
 					end
 				end
 			elseif cmd == "finalize" then
 				-- Instruction to finalize the current search results and prevent additional queries from affecting this selection.
 				for k,s in ipairs(searchResults) do
-					table.insert(finalized, s);
+					tinsert(finalized, s);
 				end
 				wipe(searchResults);
 			elseif cmd == "merge" then
 				-- Instruction to take all of the finalized and non-finalized search results and merge them back in to the processing queue.
 				for k,s in ipairs(searchResults) do
-					table.insert(finalized, s);
+					tinsert(finalized, s);
 				end
 				searchResults = finalized;
 				finalized = {};
@@ -1431,12 +1431,12 @@ ResolveSymbolicLink = function(o)
 			elseif cmd == "invtype" then
 				-- Instruction to include only search results where an item is of a specific inventory type.
 				local types = {unpack(sym)};
-				table.remove(types, 1);
+				tremove(types, 1);
 				if #types > 0 then
 					for k=#searchResults,1,-1 do
 						local s = searchResults[k];
 						if s.itemID and not contains(types, select(4, GetItemInfoInstant(s.itemID))) then
-							table.remove(searchResults, k);
+							tremove(searchResults, k);
 						end
 					end
 				end
@@ -1444,14 +1444,14 @@ ResolveSymbolicLink = function(o)
 				local subroutine = subroutines[sym[2]];
 				if subroutine then
 					local args = {unpack(sym)};
-					table.remove(args, 1);
-					table.remove(args, 1);
+					tremove(args, 1);
+					tremove(args, 1);
 					local commands = subroutine(unpack(args));
 					if commands then
 						local results = ResolveSymbolicLink(setmetatable({sym=commands}, {__index=o}));
 						if results then
 							for k,s in ipairs(results) do
-								table.insert(searchResults, s);
+								tinsert(searchResults, s);
 							end
 						end
 					end
@@ -1465,15 +1465,15 @@ ResolveSymbolicLink = function(o)
 					-- If the subroutine's conditional was successful.
 					if sym[3] and (sym[3])(o) then
 						local args = {unpack(sym)};
-						table.remove(args, 1);
-						table.remove(args, 1);
-						table.remove(args, 1);
+						tremove(args, 1);
+						tremove(args, 1);
+						tremove(args, 1);
 						local commands = subroutine(unpack(args));
 						if commands then
 							local results = ResolveSymbolicLink(setmetatable({sym=commands}, {__index=o}));
 							if results then
 								for k,s in ipairs(results) do
-									table.insert(searchResults, s);
+									tinsert(searchResults, s);
 								end
 							end
 						end
@@ -1525,11 +1525,11 @@ ResolveSymbolicLink = function(o)
 								local cs = CloneReference(s);
 								if not cs.g then cs.g = {}; end
 								for i,m in ipairs(ref) do
-									table.insert(cs.g, m);
+									tinsert(cs.g, m);
 								end
-								table.insert(searchResults, cs);
+								tinsert(searchResults, cs);
 							else
-								table.insert(searchResults, s);
+								tinsert(searchResults, s);
 							end
 						end
 					else
@@ -1547,7 +1547,7 @@ ResolveSymbolicLink = function(o)
 		-- If we have any pending finalizations to make, then merge them into the finalized table. [Equivalent to a "finalize" instruction]
 		if #searchResults > 0 then
 			for k,s in ipairs(searchResults) do
-				table.insert(finalized, s);
+				tinsert(finalized, s);
 			end
 		end
 
@@ -1932,7 +1932,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						splitCounts[left] = splitCount;
 					end
 					if right and not contains(splitCount.variants, right) then
-						table.insert(splitCount.variants, right);
+						tinsert(splitCount.variants, right);
 						if string.find(right, BATTLE_PET_SOURCE_2) then
 							splitCount.count = splitCount.count + 1;
 						end
@@ -1962,7 +1962,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 				if count > maximum + 1 then
 					for i=count,maximum + 1,-1 do
-						table.remove(info, 1);
+						tremove(info, 1);
 					end
 					tinsert(info, 1, "And " .. (count - maximum) .. " other sources...");
 				end
@@ -2314,14 +2314,14 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				kind = "Owned by ";
 				for guid,character in pairs(ATTCharacterData) do
 					if character.BattlePets and character.BattlePets[group.speciesID] then
-						table.insert(knownBy, character);
+						tinsert(knownBy, character);
 					end
 				end
 			elseif group.spellID then
 				kind = "Known by ";
 				for guid,character in pairs(ATTCharacterData) do
 					if character.Spells and character.Spells[group.spellID] then
-						table.insert(knownBy, character);
+						tinsert(knownBy, character);
 					end
 				end
 			elseif group.toyID then
@@ -2329,7 +2329,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					kind = "Owned by ";
 					for guid,character in pairs(ATTCharacterData) do
 						if character.Toys and character.Toys[group.itemID] then
-							table.insert(knownBy, character);
+							tinsert(knownBy, character);
 						end
 					end
 				end
@@ -2337,21 +2337,21 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				kind = "Owned by ";
 				for guid,character in pairs(ATTCharacterData) do
 					if (character.RWP and character.RWP[group.itemID]) then
-						table.insert(knownBy, character);
+						tinsert(knownBy, character);
 					end
 				end
 			elseif group.achievementID then
 				kind = "Completed by ";
 				for guid,character in pairs(ATTCharacterData) do
 					if character.Achievements and character.Achievements[group.achievementID] then
-						table.insert(knownBy, character);
+						tinsert(knownBy, character);
 					end
 				end
 			elseif group.questID then
 				kind = "Completed by ";
 				for guid,character in pairs(ATTCharacterData) do
 					if character.Quests and character.Quests[group.questID] then
-						table.insert(knownBy, character);
+						tinsert(knownBy, character);
 					end
 				end
 			end
@@ -2546,7 +2546,7 @@ end
 local function SearchForMissingItemsRecursively(group, listing)
 	if group.visible then
 		if (group.collectible or (group.itemID and group.total and group.total > 0)) and (not group.b or group.b == 2 or group.b == 3) then
-			table.insert(listing, group);
+			tinsert(listing, group);
 		end
 		if group.g and group.expanded then
 			-- Go through the sub groups and determine if any of them have a response.
@@ -2572,7 +2572,7 @@ local function SearchForMissingItemNames(group)
 	-- Build the array of names.
 	local arr = {};
 	for key,value in pairs(uniqueNames) do
-		table.insert(arr, key);
+		tinsert(arr, key);
 	end
 	return arr;
 end
@@ -2747,7 +2747,7 @@ function app:GetDataCache()
 
 		-- Dungeons & Raids
 		if app.Categories.Instances then
-			table.insert(g, {
+			tinsert(g, {
 				text = GROUP_FINDER,
 				icon = app.asset("Category_D&R"),
 				g = app.Categories.Instances
@@ -2756,7 +2756,7 @@ function app:GetDataCache()
 
 		-- Outdoor Zones
 		if app.Categories.Zones then
-			table.insert(g, {
+			tinsert(g, {
 				mapID = 947,
 				text = BUG_CATEGORY2,
 				icon = app.asset("Category_Zones"),
@@ -2766,7 +2766,7 @@ function app:GetDataCache()
 
 		-- World Drops
 		if app.Categories.WorldDrops then
-			table.insert(g, {
+			tinsert(g, {
 				text = TRANSMOG_SOURCE_4,
 				icon = app.asset("Category_WorldDrops"),
 				g = app.Categories.WorldDrops,
@@ -2776,7 +2776,7 @@ function app:GetDataCache()
 
 		-- Crafted Items
 		if app.Categories.Craftables then
-			table.insert(g, {
+			tinsert(g, {
 				text = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,
 				icon = app.asset("Category_Crafting"),
 				DontEnforceSkillRequirements = true,
@@ -2787,7 +2787,7 @@ function app:GetDataCache()
 
 		-- Professions
 		if app.Categories.Professions then
-			table.insert(g, {
+			tinsert(g, {
 				text = TRADE_SKILLS,
 				icon = app.asset("Category_Professions"),
 				description = "This section will only show your character's professions outside of Account and Debug Mode.",
@@ -2797,7 +2797,7 @@ function app:GetDataCache()
 
 		-- Holidays
 		if app.Categories.Holidays then
-			table.insert(g, app.CreateNPC(app.HeaderConstants.HOLIDAYS, {
+			tinsert(g, app.CreateNPC(app.HeaderConstants.HOLIDAYS, {
 				description = "These events occur at consistent dates around the year based on and themed around real world holiday events.",
 				g = app.Categories.Holidays,
 				OnUpdate = function(t)
@@ -2809,7 +2809,7 @@ function app:GetDataCache()
 					for i=#t.g,1,-1 do
 						local a = t.g[i];
 						if a and a.nextEvent and a.nextEvent["end"] < now then
-							table.remove(t.g, i);
+							tremove(t.g, i);
 							tinsert(temp, a);
 						end
 					end
@@ -2823,7 +2823,7 @@ function app:GetDataCache()
 
 		-- Expansion Features
 		if app.Categories.ExpansionFeatures and #app.Categories.ExpansionFeatures > 0 then
-			table.insert(g, {
+			tinsert(g, {
 				text = "Expansion Features",
 				icon = app.asset("Category_ExpansionFeatures"),
 				g = app.Categories.ExpansionFeatures
@@ -2832,7 +2832,7 @@ function app:GetDataCache()
 
 		-- In-Game Store
 		if app.Categories.InGameShop then
-			table.insert(g, app.CreateNPC(app.HeaderConstants.IN_GAME_SHOP, {
+			tinsert(g, app.CreateNPC(app.HeaderConstants.IN_GAME_SHOP, {
 				g = app.Categories.InGameShop,
 				expanded = false
 			}));
@@ -2840,7 +2840,7 @@ function app:GetDataCache()
 
 		-- PvP
 		if app.Categories.PVP then
-			table.insert(g, app.CreateNPC(app.HeaderConstants.PVP, {
+			tinsert(g, app.CreateNPC(app.HeaderConstants.PVP, {
 				g = app.Categories.PVP,
 				isPVPCategory = true
 			}));
@@ -2848,7 +2848,7 @@ function app:GetDataCache()
 
 		-- Promotions
 		if app.Categories.Promotions then
-			table.insert(g, {
+			tinsert(g, {
 				text = BATTLE_PET_SOURCE_8,
 				icon = app.asset("Category_Promo"),
 				description = "This section is for real world promotions that seeped extremely rare content into the game prior to some of them appearing within the In-Game Shop.",
@@ -2859,7 +2859,7 @@ function app:GetDataCache()
 
 		-- Skills
 		if app.Categories.Skills then
-			table.insert(g, {
+			tinsert(g, {
 				text = SKILLS,
 				icon = "Interface\\ICONS\\SPELL_NATURE_THUNDERCLAP",
 				g = app.Categories.Skills
@@ -2868,7 +2868,7 @@ function app:GetDataCache()
 
 		-- World Events
 		if app.Categories.WorldEvents then
-			table.insert(g, {
+			tinsert(g, {
 				text = BATTLE_PET_SOURCE_7;
 				icon = app.asset("Category_Event"),
 				description = "These events occur at different times in the game's timeline, typically as one time server wide events. Special celebrations such as Anniversary events and such may be found within this category.",
@@ -2883,21 +2883,21 @@ function app:GetDataCache()
 		-- The achievements window has a mix of dynamic and non-dynamic information.
 		local achievementDynamicCategory = app.CreateDynamicCategory("Achievements");
 		BuildGroups(achievementDynamicCategory.dynamicWindow.data);
-		table.insert(g, achievementDynamicCategory);
+		tinsert(g, achievementDynamicCategory);
 
 		-- Dynamic Categories (Content generated and managed by a separate Window)
-		table.insert(g, app.CreateDynamicCategory("Battle Pets"));
-		table.insert(g, app.CreateDynamicCategory("Factions"));
-		table.insert(g, app.CreateDynamicCategory("Flight Paths"));
-		table.insert(g, app.CreateDynamicCategory("Mounts"));
-		table.insert(g, app.CreateDynamicCategory("Titles"));
-		table.insert(g, app.CreateDynamicCategory("Toys"));
+		tinsert(g, app.CreateDynamicCategory("Battle Pets"));
+		tinsert(g, app.CreateDynamicCategory("Factions"));
+		tinsert(g, app.CreateDynamicCategory("Flight Paths"));
+		tinsert(g, app.CreateDynamicCategory("Mounts"));
+		tinsert(g, app.CreateDynamicCategory("Titles"));
+		tinsert(g, app.CreateDynamicCategory("Toys"));
 
 		-- Track Deaths!
-		table.insert(g, app:CreateDeathClass());
+		tinsert(g, app:CreateDeathClass());
 
 		-- Yourself.
-		table.insert(g, app.CreateUnit("player", {
+		tinsert(g, app.CreateUnit("player", {
 			description = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.",
 			races = { app.RaceIndex },
 			c = { app.ClassIndex },
@@ -2932,7 +2932,7 @@ function app:GetDataCache()
 						-- Remove the tier object reference.
 						for i=#parent.g,1,-1 do
 							if parent.g[i] == value then
-								table.remove(parent.g, i);
+								tremove(parent.g, i);
 								break;
 							end
 						end
@@ -2941,7 +2941,7 @@ function app:GetDataCache()
 						if value.g then
 							for i,child in ipairs(value.g) do
 								child.parent = parent;
-								table.insert(parent.g, child);
+								tinsert(parent.g, child);
 							end
 						end
 					end
@@ -3677,7 +3677,7 @@ local commonAchievementHandlers = {
 		local t = row.ref;
 		local template = {};
 		for i,o in pairs(SearchForFieldContainer("speciesID")) do
-			table.insert(template, o[1]);
+			tinsert(template, o[1]);
 		end
 
 		local clone = app:CreateMiniListForGroup(app.CreateAchievement(t[t.key], template)).data;
@@ -3833,7 +3833,7 @@ end,
 		for i,o in pairs(SearchForFieldContainer("spellID")) do
 			if ((o[1].f and o[1].f == app.FilterConstants.MOUNTS)
 			or (o[1].filterID and o[1].filterID == app.FilterConstants.MOUNTS)) and not r[i] then
-				table.insert(template, o[1]);
+				tinsert(template, o[1]);
 				r[i] = 1;
 			end
 		end
@@ -3853,7 +3853,7 @@ end,
 			if o.headerID == app.HeaderConstants.FACTIONS then
 				for j,p in ipairs(o.g) do
 					if (not p.minReputation or (p.minReputation[1] == p.factionID and p.minReputation[2] >= 41999)) and (not p.maxReputation or (p.maxReputation[1] ~= p.factionID and p.reputation >= 0)) then
-						table.insert(template, p);
+						tinsert(template, p);
 					end
 				end
 			end
@@ -5341,7 +5341,7 @@ local CurrencyCollectedAsCost = setmetatable({}, { __index = function(t, id)
 	t[id] = false;
 	return false;
 end });
-table.insert(app.EventHandlers.OnRecalculate, function()
+tinsert(app.EventHandlers.OnRecalculate, function()
 	wipe(CurrencyCollectibleAsCost);
 	wipe(CurrencyCollectedAsCost);
 end);
@@ -5445,7 +5445,7 @@ local fields = {
 		local c = {};
 		for _,character in pairs(ATTCharacterData) do
 			if character and character.Deaths and character.Deaths > 0 then
-				table.insert(c, character);
+				tinsert(c, character);
 			end
 		end
 		if #c > 0 then
@@ -6533,7 +6533,7 @@ app.CreateItemHarvester = app.CreateClass("ItemHarvester", "itemID", itemHarvest
 								local classes = {};
 								local _,list = strsplit(":", text);
 								for i,s in ipairs({strsplit(",", list)}) do
-									table.insert(classes, app.ClassDB[strtrim(s)]);
+									tinsert(classes, app.ClassDB[strtrim(s)]);
 								end
 								if #classes > 0 then
 									t.info.classes = classes;
@@ -6542,7 +6542,7 @@ app.CreateItemHarvester = app.CreateClass("ItemHarvester", "itemID", itemHarvest
 								local races = {};
 								local _,list = strsplit(":", text);
 								for i,s in ipairs({strsplit(",", list)}) do
-									table.insert(races, app.RaceDB[strtrim(s)]);
+									tinsert(races, app.RaceDB[strtrim(s)]);
 								end
 								if #races > 0 then
 									t.info.races = races;
@@ -6573,11 +6573,11 @@ app.CreateItemHarvester = app.CreateClass("ItemHarvester", "itemID", itemHarvest
 													t.info.requireSkill = skillID;
 												else
 													print("Unknown Skill '" .. spellName .. "'");
-													table.insert(requirements, spellName);
+													tinsert(requirements, spellName);
 												end
 											else
 												print("Unknown Spell '" .. spellName .. "'");
-												table.insert(requirements, spellName);
+												tinsert(requirements, spellName);
 											end
 										end
 									end
@@ -6843,7 +6843,7 @@ local simplifyExplorationData = function()
 		while #hitsByCount > 0 do
 			local index = math.random(#hitsByCount);
 			local hit = hitsByCount[index];
-			table.remove(hitsByCount, index);
+			tremove(hitsByCount, index);
 			for i,areaID in ipairs(hit[3]) do
 				local hits = hitsByAreaID[areaID];
 				if #hits < 10 then tinsert(hits, hit[2]); end
@@ -6947,7 +6947,7 @@ local onMapUpdate = function(t)
 				explorationHeader.g = {};
 			end
 			for i,o in ipairs(newExplorationObjects) do
-				table.insert(explorationHeader.g, o);
+				tinsert(explorationHeader.g, o);
 				o.parent = explorationHeader;
 			end
 		else
@@ -7052,7 +7052,7 @@ app.CreateMap = function(id, t)
 					explorationHeader.g = {};
 				end
 				for i,o in ipairs(newExplorationObjects) do
-					table.insert(explorationHeader.g, o);
+					tinsert(explorationHeader.g, o);
 					o.parent = explorationHeader;
 				end
 			else
@@ -8146,7 +8146,7 @@ app.CompareQuestieDB = function()
 		for id,_ in pairs(QuestieDB.QuestPointers) do
 			local s = SearchForField("questID", id);
 			if #s == 0 then
-				table.insert(missingQuestIDs, id);
+				tinsert(missingQuestIDs, id);
 			end
 		end
 		app.Sort(missingQuestIDs, app.SortDefaults.Number);
@@ -10409,7 +10409,7 @@ local function RowOnEnter(self)
 				for _,character in pairs(ATTCharacterData) do
 					if character.ActiveSkills and not character.ignored then
 						local skills = character.ActiveSkills[reference.spellID];
-						if skills then table.insert(knownBy, { character, skills[1], skills[2] }); end
+						if skills then tinsert(knownBy, { character, skills[1], skills[2] }); end
 					end
 				end
 				if #knownBy > 0 then
@@ -10816,13 +10816,13 @@ local function RowOnEnter(self)
 						end
 						if bestMatch then
 							if bestMatch.isBreadcrumb then
-								table.insert(bc, bestMatch);
+								tinsert(bc, bestMatch);
 							else
-								table.insert(prereqs, bestMatch);
+								tinsert(prereqs, bestMatch);
 							end
 						end
 					else
-						table.insert(prereqs, app.CreateQuest(sourceQuestID));
+						tinsert(prereqs, app.CreateQuest(sourceQuestID));
 					end
 				end
 			end
@@ -10880,7 +10880,7 @@ CreateRow = function(self)
 		row:SetPoint("TOPLEFT", self.rows[row.index], "BOTTOMLEFT");
 		row:SetPoint("TOPRIGHT", self.rows[row.index], "BOTTOMRIGHT");
 	end
-	table.insert(self.rows, row);
+	tinsert(self.rows, row);
 
 	-- Setup highlighting and event handling
 	row:SetHighlightTexture("Interface\\QuestFrame\\UI-QuestTitleHighlight", "ADD");
@@ -12044,7 +12044,7 @@ local function OnInitForPopout(self, group)
 						sourceQuest = o.key .. o[o.key];
 						if sourceQuests[sourceQuest] then
 							-- Already exists in the hierarchy. Uh oh.
-							table.remove(prereqs, i);
+							tremove(prereqs, i);
 						else
 							sourceQuests[sourceQuest] = true;
 						end
@@ -12068,7 +12068,7 @@ local function OnInitForPopout(self, group)
 				local n = #prereqs;
 				local lastprereq = prereqs[n];
 				if lastprereq.text == "Upon Completion" and n > 1 then
-					table.remove(prereqs, n);
+					tremove(prereqs, n);
 					local g = prereqs[n-1].g;
 					if not g then
 						g = {};
@@ -12076,7 +12076,7 @@ local function OnInitForPopout(self, group)
 					end
 					if lastprereq.g then
 						for i,data in ipairs(lastprereq.g) do
-							table.insert(g, data);
+							tinsert(g, data);
 						end
 					end
 					prereqs = g;
@@ -12539,21 +12539,21 @@ local function RebuildMapData(self, mapID)
 		local groups = {};
 		local header = { mapID = mapID, back = 1, g = groups };
 		local achievementsHeader = app.CreateNPC(app.HeaderConstants.ACHIEVEMENTS, { ["g"] = {} });
-		table.insert(groups, achievementsHeader);
+		tinsert(groups, achievementsHeader);
 		local explorationHeader = app.CreateNPC(app.HeaderConstants.EXPLORATION, { ["g"] = {} });
-		table.insert(groups, explorationHeader);
+		tinsert(groups, explorationHeader);
 		local factionsHeader = app.CreateNPC(app.HeaderConstants.FACTIONS, { ["g"] = {} });
-		table.insert(groups, factionsHeader);
+		tinsert(groups, factionsHeader);
 		local flightPathsHeader = app.CreateNPC(app.HeaderConstants.FLIGHT_PATHS, { ["g"] = {} });
-		table.insert(groups, flightPathsHeader);
+		tinsert(groups, flightPathsHeader);
 		local questsHeader = app.CreateNPC(app.HeaderConstants.QUESTS, { ["g"] = {} });
-		table.insert(groups, questsHeader);
+		tinsert(groups, questsHeader);
 		local raresHeader = app.CreateNPC(app.HeaderConstants.RARES, { ["g"] = {} });
-		table.insert(groups, raresHeader);
+		tinsert(groups, raresHeader);
 		local vendorsHeader = app.CreateNPC(app.HeaderConstants.VENDORS, { ["g"] = {} });
-		table.insert(groups, vendorsHeader);
+		tinsert(groups, vendorsHeader);
 		local zoneDropsHeader = app.CreateNPC(app.HeaderConstants.ZONE_DROPS, { ["g"] = {} });
-		table.insert(groups, zoneDropsHeader);
+		tinsert(groups, zoneDropsHeader);
 		for i, group in ipairs(results) do
 			local clone = {};
 			for key,value in pairs(group) do
@@ -12666,30 +12666,30 @@ local function RebuildMapData(self, mapID)
 			for i=#results.g,1,-1 do
 				local o = results.g[i];
 				if o.key == "factionID" then
-					table.remove(results.g, i);
+					tremove(results.g, i);
 					MergeObject(factionsHeader.g, o, 1);
 				elseif o.key == "flightPathID" then
-					table.remove(results.g, i);
+					tremove(results.g, i);
 					MergeObject(flightPathsHeader.g, o, 1);
 				elseif o.key == "questID" then
-					table.remove(results.g, i);
+					tremove(results.g, i);
 					MergeObject(questsHeader.g, o, 1);
 				end
 			end
 			for i=#results.g,1,-1 do
 				local o = results.g[i];
 				if o.isRaid then
-					table.remove(results.g, i);
-					table.insert(top, o);
+					tremove(results.g, i);
+					tinsert(top, o);
 				elseif o.g and #o.g < 1 and o.key == "headerID" then
-					table.remove(results.g, i);
+					tremove(results.g, i);
 				end
 			end
 			for i,o in ipairs(top) do
-				table.insert(results.g, 1, o);
+				tinsert(results.g, 1, o);
 			end
 			for i,o in ipairs(bottom) do
-				table.insert(results.g, o);
+				tinsert(results.g, o);
 			end
 		end
 
@@ -12949,7 +12949,7 @@ app:GetWindow("Debugger", {
 								end
 
 								-- Parse as an ITEM LINK.
-								table.insert(rawGroups, {["itemID"] = tonumber(link:match("item:(%d+)")), ["cost"] = cost});
+								tinsert(rawGroups, {["itemID"] = tonumber(link:match("item:(%d+)")), ["cost"] = cost});
 							end
 						end
 
@@ -12994,19 +12994,19 @@ app:GetWindow("Debugger", {
 				local rawGroups = {};
 				for i=1,GetNumQuestRewards(),1 do
 					local link = GetQuestItemLink("reward", i);
-					if link then table.insert(rawGroups, { ["itemID"] = GetItemInfoInstant(link) }); end
+					if link then tinsert(rawGroups, { ["itemID"] = GetItemInfoInstant(link) }); end
 				end
 				for i=1,GetNumQuestChoices(),1 do
 					local link = GetQuestItemLink("choice", i);
-					if link then table.insert(rawGroups, { ["itemID"] = GetItemInfoInstant(link) }); end
+					if link then tinsert(rawGroups, { ["itemID"] = GetItemInfoInstant(link) }); end
 				end
 				for i=1,GetNumQuestLogRewardSpells(questID),1 do
 					local texture, name, isTradeskillSpell, isSpellLearned, hideSpellLearnText, isBoostSpell, garrFollowerID, genericUnlock, spellID = GetQuestLogRewardSpell(i, questID);
 					if spellID then
 						if isTradeskillSpell then
-							table.insert(rawGroups, { ["recipeID"] = spellID, ["name"] = name });
+							tinsert(rawGroups, { ["recipeID"] = spellID, ["name"] = name });
 						else
-							table.insert(rawGroups, { ["spellID"] = spellID, ["name"] = name });
+							tinsert(rawGroups, { ["spellID"] = spellID, ["name"] = name });
 						end
 					end
 				end
@@ -13078,10 +13078,10 @@ app:GetWindow("ItemFilter", {
 					self.dirty = nil;
 
 					local g = {};
-					table.insert(g, 1, data.setItemFilter);
+					tinsert(g, 1, data.setItemFilter);
 					if #data.results > 0 then
 						for i,result in ipairs(data.results) do
-							table.insert(g, result);
+							tinsert(g, result);
 						end
 					end
 					data.g = g;
@@ -13189,7 +13189,7 @@ app:GetWindow("ItemFinder", {
 						if count > 0 then
 							for i=count,1,-1 do
 								if g[i].collected then
-									table.remove(g, i);
+									tremove(g, i);
 								end
 							end
 						end
@@ -13439,7 +13439,7 @@ app:GetWindow("Tradeskills", {
 									end
 								end
 							end
-							table.insert(g, cache);
+							tinsert(g, cache);
 						end
 					end
 					if #g > 0 then

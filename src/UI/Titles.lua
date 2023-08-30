@@ -3,7 +3,7 @@ local appName, app = ...;
 
 -- Global locals
 local ipairs, pairs, tinsert, tremove =
-	  ipairs, pairs, tinsert, table.remove;
+	  ipairs, pairs, tinsert, tremove;
 
 -- Implementation
 app:GetWindow("Titles", {

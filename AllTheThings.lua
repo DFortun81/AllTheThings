@@ -52,8 +52,8 @@ local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
-local rawget, rawset, tinsert, string_lower, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tremove, sformat, strsplit, GetTimePreciseSec, type
-	= rawget, rawset, tinsert, string.lower, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tremove, string.format, strsplit, GetTimePreciseSec, type;
+local rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove, string_lower, sformat, strsplit, GetTimePreciseSec, type
+	= rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove, string.lower, string.format, strsplit, GetTimePreciseSec, type;
 local ATTAccountWideData;
 
 -- App & Module locals
@@ -5466,7 +5466,7 @@ app.CharacterSyncTables = whiteListedFields;
 local function splittoarray(sep, inputstr)
 	local t = {};
 	for str in string.gmatch(inputstr, "([^" .. (sep or "%s") .. "]+)") do
-		table.insert(t, str);
+		tinsert(t, str);
 	end
 	return t;
 end
@@ -17037,7 +17037,7 @@ function app:GetDataCache()
 
 			local p = getAchievementCategory(categories, c.parentCategoryID);
 			if not p.g then p.g = {}; end
-			table.insert(p.g, c);
+			tinsert(p.g, c);
 			c.parent = p;
 		end
 		return c;
@@ -19509,7 +19509,7 @@ customWindowUpdates["Sync"] = function(self)
 							local g = {};
 							for guid,character in pairs(ATTCharacterData) do
 								if character then
-									table.insert(g, app.CreateUnit(guid, {
+									tinsert(g, app.CreateUnit(guid, {
 										['datalink'] = guid,
 										['OnClick'] = OnRightButtonDeleteCharacter,
 										['OnTooltip'] = OnTooltipForCharacter,
@@ -19520,7 +19520,7 @@ customWindowUpdates["Sync"] = function(self)
 							end
 
 							if #g < 1 then
-								table.insert(g, {
+								tinsert(g, {
 									['text'] = L["NO_CHARACTERS_FOUND"],
 									['icon'] = "Interface\\FriendsFrame\\Battlenet-Portrait",
 									['visible'] = true,
@@ -19554,7 +19554,7 @@ customWindowUpdates["Sync"] = function(self)
 							for playerName,allowed in pairs(AllTheThingsAD.LinkedAccounts) do
 								local character = charactersByName[playerName];
 								if character then
-									table.insert(data.g, app.CreateUnit(playerName, {
+									tinsert(data.g, app.CreateUnit(playerName, {
 										['datalink'] = playerName,
 										['OnClick'] = OnRightButtonDeleteLinkedAccount,
 										['OnTooltip'] = OnTooltipForLinkedAccount,
@@ -19563,7 +19563,7 @@ customWindowUpdates["Sync"] = function(self)
 									}));
 								elseif string.find("#", playerName) then
 									-- Garbage click handler for unsync'd account data.
-									table.insert(data.g, {
+									tinsert(data.g, {
 										['text'] = playerName,
 										['datalink'] = playerName,
 										['icon'] = "Interface\\FriendsFrame\\Battlenet-Portrait",
@@ -19574,7 +19574,7 @@ customWindowUpdates["Sync"] = function(self)
 									});
 								else
 									-- Garbage click handler for unsync'd character data.
-									table.insert(data.g, {
+									tinsert(data.g, {
 										['text'] = playerName,
 										['datalink'] = playerName,
 										['icon'] = "Interface\\FriendsFrame\\Battlenet-WoWicon",
@@ -19587,7 +19587,7 @@ customWindowUpdates["Sync"] = function(self)
 							end
 
 							if #data.g < 1 then
-								table.insert(data.g, {
+								tinsert(data.g, {
 									['text'] = L["NO_LINKED_ACCOUNTS"],
 									['icon'] = "Interface\\FriendsFrame\\Battlenet-Portrait",
 									['visible'] = true,

@@ -37,7 +37,7 @@ local function getAchievementCategory(categories, achievementCategoryID)
 		
 		local p = getAchievementCategory(categories, c.parentCategoryID);
 		if not p.g then p.g = {}; end
-		table.insert(p.g, c);
+		tinsert(p.g, c);
 		c.parent = p;
 	end
 	return c;
@@ -178,7 +178,7 @@ app:GetWindow("Achievements", {
 											local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaID = GetAchievementCriteriaInfo(achievementID, j);
 											local criteriaObject = app.CreateAchievementCriteria(criteriaID);
 											criteriaObject.parent = achievement;
-											table.insert(g, criteriaObject);
+											tinsert(g, criteriaObject);
 										end
 										achievement.g = g;
 									end

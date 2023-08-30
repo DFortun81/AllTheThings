@@ -1,5 +1,6 @@
 -- App locals
 local appName, app = ...;
+local tinsert = tinsert;
 
 -- Implementation
 app:GetWindow("RWP", {
@@ -28,7 +29,7 @@ app:GetWindow("RWP", {
 					local results = app:BuildSearchResponseForField(app:GetDataCache().g, "rwp");
 					if #results > 0 then
 						for i,result in ipairs(results) do
-							table.insert(g, result);
+							tinsert(g, result);
 						end
 					end
 				end

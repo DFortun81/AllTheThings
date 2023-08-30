@@ -548,7 +548,7 @@ app:GetWindow("RaidAssistant", {
 								local method = app.CreateLootMethod(key);
 								method.OnUpdate = app.AlwaysShowUpdate;
 								method.parent = data;
-								table.insert(g, method);
+								tinsert(g, method);
 							end
 						end
 						data.visible = true;
@@ -612,7 +612,7 @@ app:GetWindow("RaidAssistant", {
 									else
 										member.isML = isML;
 									end
-									table.insert(data.g, member);
+									tinsert(data.g, member);
 								end
 							end
 						end

@@ -2,8 +2,8 @@
 local appName, app = ...;
 
 -- Global locals
-local ipairs, pairs, tinsert, time, strsplit, strgmatch, strgsub, strsub =
-	  ipairs, pairs, tinsert, time, strsplit, string.gmatch, string.gsub, string.sub;
+local ipairs, pairs, time, strsplit, tinsert, tremove, strgmatch, strgsub, strsub =
+	  ipairs, pairs, time, strsplit, tinsert, tremove, string.gmatch, string.gsub, string.sub;
 local BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo = 
 	  BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo;
 -- NOTES: BNGetFriendInfo and BNGetNumFriends are useless
@@ -669,8 +669,8 @@ MESSAGE_HANDLERS.rawchar = function(self, sender, content, responses)
 	if not LinkedCharacters[sender] then return false; end
 	local guid = content[2];
 	if not guid then return false; end
-	table.remove(content, 1);
-	table.remove(content, 1);
+	tremove(content, 1);
+	tremove(content, 1);
 	
 	-- Parse the content
 	local fieldCount = #content;
@@ -690,7 +690,7 @@ MESSAGE_HANDLERS.rawchar = function(self, sender, content, responses)
 		local fieldDataString = content[i];
 		local fieldData = SplitString(";", fieldDataString);
 		local fieldName = fieldData[1];
-		table.remove(fieldData, 1);
+		tremove(fieldData, 1);
 		local data = (deserializers[fieldName] or defaultDeserializer)(fieldName, character[fieldName], fieldData);
 		if data then character[fieldName] = data; end
 	end
@@ -986,12 +986,12 @@ app:GetWindow("Synchronization", {
 									characters[guid] = character;
 								end
 								character.saved = not characterData.ignored and 1;
-								table.insert(g, character);
+								tinsert(g, character);
 							end
 						end
 						
 						if #g < 1 then
-							table.insert(g, {
+							tinsert(g, {
 								text = "No characters found.",
 								icon = "Interface\\FriendsFrame\\Battlenet-Portrait",
 								visible = true,
@@ -1013,7 +1013,7 @@ app:GetWindow("Synchronization", {
 						local g = data.g;
 						wipe(g);
 						for playerName,allowed in pairs(LinkedCharacters) do
-							table.insert(g, app.CreateUnit(playerName, {
+							tinsert(g, app.CreateUnit(playerName, {
 								datalink = playerName,
 								OnClick = OnClickForLinkedAccount,
 								OnTooltip = OnTooltipForLinkedAccount,
@@ -1024,7 +1024,7 @@ app:GetWindow("Synchronization", {
 						end
 						
 						if #g < 1 then
-							table.insert(g, {
+							tinsert(g, {
 								text = "No linked accounts found.",
 								icon = "Interface\\FriendsFrame\\Battlenet-Portrait",
 								visible = true,
@@ -1049,7 +1049,7 @@ app:GetWindow("Synchronization", {
 					if #g < 1 then
 						for i,option in ipairs(options) do
 							option.parent = data;
-							table.insert(g, option);
+							tinsert(g, option);
 						end
 					end
 				end,

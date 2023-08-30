@@ -4,7 +4,7 @@ local contains, MergeClone = app.contains, app.MergeClone;
 
 -- Global locals
 local ipairs, pairs, tinsert, tremove =
-	  ipairs, pairs, tinsert, table.remove;
+	  ipairs, pairs, tinsert, tremove;
 
 -- App locals
 local GetRelativeValue = app.GetRelativeValue;
