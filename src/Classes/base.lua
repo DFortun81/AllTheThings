@@ -35,6 +35,7 @@ local UniqueCounter = setmetatable({}, {
 		return count;
 	end
 });
+app.UniqueCounter = UniqueCounter;
 
 -- Proper unique hash for a Class Object is not as simple as ID..Value, there are many situations where that does not provide adequate uniqueness
 local function CreateHash(t)

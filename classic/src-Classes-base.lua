@@ -34,6 +34,7 @@ local UniqueCounter = setmetatable({}, {
 		return count;
 	end
 });
+app.UniqueCounter = UniqueCounter;
 
 -- Proper unique hash for a Class Object is not as simple as ID..Value, there are many situations where that does not provide adequate uniqueness
 local function CreateHash(t)
@@ -248,12 +249,31 @@ app.ExtendClass = function(baseClassName, className, classKey, fields, ...)
 	return app.CreateClass(className, classKey, fields, ...);
 end
 
--- Allows wrapping a Type Object with another Base Type. This allows for multiple inheritance of
--- Objects without requiring a full definition of altered field functions
-app.WrapObject = function(object, base)
-	return setmetatable({}, {
+-- Allows wrapping one Type Object with another Type Object. This allows for fall-through field logic
+-- without requiring a full copied definition of identical field functions and raw Object content
+app.WrapObject = function(object, baseObject)
+	if not object or not baseObject then
+		error("Tried to WrapObject with none provided!",object,baseObject)
+	end
+	-- need to preserve the existing object's meta AND return the object being wrapped while also allowing fallback to the base object
+	local objectMeta = getmetatable(object)
+	if not objectMeta then
+		error("Tried to WrapObject which has no metatable! (Wrapping not necessary)")
+	end
+	objectMeta = objectMeta.__index
+	if not objectMeta then
+		error("Tried to WrapObject which has no index!")
+	end
+	if type(objectMeta) == "function" then
+		return setmetatable(object, {
+			__index = function(t, key)
+				return objectMeta(t, key) or baseObject[key];
+			end
+		});
+	end
+	return setmetatable(object, {
 		__index = function(t, key)
-			return base[key] or object[key];
+			return objectMeta[key] or baseObject[key];
 		end
 	});
 end

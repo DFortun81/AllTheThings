@@ -2397,16 +2397,6 @@ NestObjects,
 PriorityNestObjects;
 app.searchCache = searchCache;
 (function()
-local uniques = {};
--- Provides a Unique Counter value for the Key referenced on each reference
-local UniqueCounter = setmetatable({}, {
-	__index = function(t, key)
-		local next = (uniques[key] or 0) + 1;
-		-- app.PrintDebug("UniqueCounter",key,next)
-		uniques[key] = next;
-		return next;
-	end
-});
 local function CreateHash(t)
 	local key = t.key or t.text;
 	if key then
@@ -2461,7 +2451,7 @@ local function CreateHash(t)
 			-- app.PrintDebug("hash.rank",hash)
 		end
 		if t.nomerge then
-			hash = hash.."__"..UniqueCounter["Hash"];
+			hash = hash.."__"..app.UniqueCounter["Hash"];
 		end
 		t.hash = hash;
 		return hash;
