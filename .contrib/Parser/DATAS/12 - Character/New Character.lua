@@ -5,6 +5,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	n(ACHIEVEMENTS, {
 		------ Epic ------
 		ach(18366, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Draconically Epic
+			--[[
 			crit(1),	-- Head
 			crit(2),	-- Neck
 			crit(3),	-- Shoulder
@@ -20,6 +21,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			crit(13),	-- Second Trinket
 			crit(14),	-- Cloak
 			crit(15),	-- Weapon
+			]]--
 		})),
 		ach(14797, {	-- Epic [Shadowlands]
 			["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_1_5 },
@@ -44,6 +46,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 		------ Superior ------
 		ach(18365, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Draconically Superior
+			--[[
 			crit(1),	-- Head
 			crit(2),	-- Neck
 			crit(3),	-- Shoulder
@@ -59,6 +62,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			crit(13),	-- Second Trinket
 			crit(14),	-- Cloak
 			crit(15),	-- Weapon
+			]]--
 		})),
 		ach(14796, {	-- Superior [Shadowlands]
 			["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_1_5 },
