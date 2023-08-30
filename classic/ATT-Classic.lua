@@ -926,7 +926,11 @@ end
 local searchCache = {};
 app.searchCache = searchCache;
 local function GetHash(t)
-	return t.hash or app.CreateHash(t);
+	local hash = t.hash;
+	if hash then return hash; end
+	hash = app.CreateHash(t);
+	--app.PrintDebug("No hash for object:", hash, t.text);
+	return hash;
 end
 local function CreateObject(t)
 	local s = {};
@@ -1010,45 +1014,43 @@ local function MergeObjects(g, g2)
 end
 MergeObject = function(g, t, index)
 	local hash = GetHash(t);
-	if hash then
-		for i,o in ipairs(g) do
-			if GetHash(o) == hash then
-				if t.g then
-					local tg = t.g;
-					t.g = nil;
-					if o.g then
-						MergeObjects(o.g, tg);
-					else
-						o.g = tg;
-					end
+	for i,o in ipairs(g) do
+		if GetHash(o) == hash then
+			if t.g then
+				local tg = t.g;
+				t.g = nil;
+				if o.g then
+					MergeObjects(o.g, tg);
+				else
+					o.g = tg;
 				end
-				for k,v in pairs(t) do
-					if k == "races" or k == "c" then
-						local c = rawget(o, k);
-						if not c then
-							c = CloneArray(v);
-							rawset(o, k, c);
-						else
-							for _,p in ipairs(v) do
-								if not contains(c, p) then
-									tinsert(c, p);
-								end
+			end
+			for k,v in pairs(t) do
+				if k == "races" or k == "c" then
+					local c = rawget(o, k);
+					if not c then
+						c = CloneArray(v);
+						rawset(o, k, c);
+					else
+						for _,p in ipairs(v) do
+							if not contains(c, p) then
+								tinsert(c, p);
 							end
 						end
-					elseif k == "r" then
-						if o[k] and o[k] ~= v then
-							rawset(o, k, nil);
-						else
-							rawset(o, k, v);
-						end
-					elseif k ~= "expanded" then
+					end
+				elseif k == "r" then
+					if o[k] and o[k] ~= v then
+						rawset(o, k, nil);
+					else
 						rawset(o, k, v);
 					end
+				elseif k ~= "expanded" then
+					rawset(o, k, v);
 				end
-				rawset(o, "nmr", (o.races and not contains(o.races, app.RaceIndex)) or (o.r and o.r ~= app.FactionID));
-				rawset(o, "nmc", o.c and not contains(o.c, app.ClassIndex));
-				return o;
 			end
+			rawset(o, "nmr", (o.races and not contains(o.races, app.RaceIndex)) or (o.r and o.r ~= app.FactionID));
+			rawset(o, "nmc", o.c and not contains(o.c, app.ClassIndex));
+			return o;
 		end
 	end
 	if index then

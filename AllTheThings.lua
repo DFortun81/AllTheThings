@@ -2397,19 +2397,23 @@ NestObjects,
 PriorityNestObjects;
 app.searchCache = searchCache;
 (function()
+local function GetHash(t)
+	local hash = t.hash;
+	if hash then return hash; end
+	hash = app.CreateHash(t);
+	print("No hash for object:", hash);
+	--app.PrintDebug("No hash for object:", hash, t.text);
+	return hash;
+end
 MergeObject = function(g, t, index, newCreate)
 	if g and t then
-		local hash = t.hash;
-		-- print("_",hash);
-		if hash then
-			for i,o in ipairs(g) do
-				if o.hash == hash then
-					MergeProperties(o, t, true);
-					NestObjects(o, t.g, newCreate);
-					return o;
-				end
+		local hash = GetHash(t);
+		for i,o in ipairs(g) do
+			if GetHash(o) == hash then
+				MergeProperties(o, t, true);
+				NestObjects(o, t.g, newCreate);
+				return o;
 			end
-		-- else app.PrintDebug("NO Hash for MergeObject",t.text)
 		end
 		if newCreate then t = CreateObject(t); end
 		if index then
