@@ -55,6 +55,14 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				-- Fashion
 				ach(18249),		-- Obsidian Tie Event
 			})),
+			filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
+				i(205246, {	-- Vicious War Snail [A] (MOUNT!)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(205245, {	-- Vicious War Snail [H] (MOUNT!)
+					["races"] = HORDE_ONLY,
+				}),
+			})),
 			filter(TITLES, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }, ["collectible"] = false }, {
 				title(78),	-- Combatant <Name>
 				title(32),	-- Challenger <Name>
@@ -1609,14 +1617,6 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							})),
 						}),
 					},
-				}),
-			})),
-			filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
-				i(205246, {	-- Vicious War Snail [A] (MOUNT!)
-					["races"] = ALLIANCE_ONLY,
-				}),
-				i(205245, {	-- Vicious War Snail [H] (MOUNT!)
-					["races"] = HORDE_ONLY,
 				}),
 			})),
 			filter(RECIPES, {

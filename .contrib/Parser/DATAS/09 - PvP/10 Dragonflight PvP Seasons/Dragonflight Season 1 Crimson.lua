@@ -54,6 +54,14 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				-- Fashion
 				ach(16764),		-- Crimson Carpet Fashion
 			})),
+			filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
+				i(201789, {	-- Vicious Sabertooth [A] (MOUNT!)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(201788, {	-- Vicious Sabertooth [H] (MOUNT!)
+					["races"] = HORDE_ONLY,
+				}),
+			})),
 			filter(TITLES, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }, ["collectible"] = false }, {
 				title(78),	-- Combatant <Name>
 				title(32),	-- Challenger <Name>
@@ -1611,14 +1619,6 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							}),
 						}),
 					},
-				}),
-			})),
-			filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
-				i(201789, {	-- Vicious Sabertooth [A] (MOUNT!)
-					["races"] = ALLIANCE_ONLY,
-				}),
-				i(201788, {	-- Vicious Sabertooth [H] (MOUNT!)
-					["races"] = HORDE_ONLY,
 				}),
 			})),
 			filter(RECIPES, {
