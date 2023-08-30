@@ -17193,7 +17193,7 @@ local BaseFilterHeaderClone = app.BaseObjectFields({
 }, "FilterHeaderClone");
 -- Wraps a given object such that it can act as a filtered Header of the object
 app.CreateWrapFilterHeader = function(t)
-	return Wrap(t, BaseFilterHeaderClone);
+	return Wrap(t, BaseFilterHeaderClone.__index);
 end
 local function CloneGroupIntoHeirarchy(group)
 	local groupCopy = app.CreateWrapFilterHeader(group);
