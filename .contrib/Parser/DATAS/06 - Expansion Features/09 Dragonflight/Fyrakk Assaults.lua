@@ -90,6 +90,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 201860 },	-- Khanam Matra Sarest
 					["coord"] = { 75.6, 69.9, OHNAHRAN_PLAINS },
 				}),
+				q(74572, {	-- Make it Rain
+					["provider"] = { "n", 201861 },	-- Tigari Khan
+					["coord"] = { 75.6, 69.1, OHNAHRAN_PLAINS },
+				}),
 				q(74568, {	-- They Who Would Burn Us
 					["provider"] = { "n", 201090 },	-- Mayla Highmountain
 					["coord"] = { 74.9, 69.6, OHNAHRAN_PLAINS },
