@@ -9091,7 +9091,7 @@ app.CreateCurrencyClass = function(id, t)
 end
 -- Wraps the given Type Object as a Cost Currency, allowing altered functionality representing this being a calculable 'cost'
 app.CreateCostCurrency = function(t, total)
-	local c = app.WrapObject(t, BaseCostCurrency.__index);
+	local c = app.WrapObject(t, BaseCostCurrency);
 	c.count = total;
 	-- cost currency should always be visible for clarity
 	c.OnUpdate = app.AlwaysShowUpdate;
@@ -10664,7 +10664,7 @@ app.CreateItem = function(id, t)
 end
 -- Wraps the given Type Object as a Cost Item, allowing altered functionality representing this being a calculable 'cost'
 app.CreateCostItem = function(t, total)
-	local c = app.WrapObject(t, BaseCostItem.__index);
+	local c = app.WrapObject(t, BaseCostItem);
 	c.count = total;
 	-- cost items should always be visible for clarity
 	c.OnUpdate = app.AlwaysShowUpdate;
@@ -17193,7 +17193,7 @@ local BaseFilterHeaderClone = app.BaseObjectFields({
 }, "FilterHeaderClone");
 -- Wraps a given object such that it can act as a filtered Header of the object
 app.CreateWrapFilterHeader = function(t)
-	return Wrap(t, BaseFilterHeaderClone.__index);
+	return Wrap(t, BaseFilterHeaderClone);
 end
 local function CloneGroupIntoHeirarchy(group)
 	local groupCopy = app.CreateWrapFilterHeader(group);
