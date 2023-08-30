@@ -2401,7 +2401,6 @@ local function GetHash(t)
 	local hash = t.hash;
 	if hash then return hash; end
 	hash = app.CreateHash(t);
-	print("No hash for object:", hash);
 	--app.PrintDebug("No hash for object:", hash, t.text);
 	return hash;
 end
