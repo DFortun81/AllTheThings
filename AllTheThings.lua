@@ -7331,8 +7331,6 @@ local questFields = {
 			end
 			if t.repeatable then
 				icon = app.asset("Interface_Questd");
-			elseif t._missing then
-				icon = 134400;	-- Inv_misc_questionmark
 			else
 				icon = app.asset("Interface_Quest");
 			end
