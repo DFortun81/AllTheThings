@@ -3630,13 +3630,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					darkmoondaggermaw(25, i(184625, {	-- Recipe: Extra Sugary Fish Feast
 						["timeline"] = { "added 9.0.2.36639" },
 					})),
-					darkmoondaggermaw(50, i(126929, {	-- Recipe: Fancy Darkmoon Feast
+					darkmoondaggermaw(50, i(126929, {	-- Recipe: Fancy Darkmoon Feast (RECIPE!)
 						["timeline"] = { ADDED_6_2_0 },
 					})),
-					darkmoondaggermaw(10, i(126928, {	-- Recipe: Lemon Herb Filet
+					darkmoondaggermaw(10, i(126928, {	-- Recipe: Lemon Herb Filet (RECIPE!)
 						["timeline"] = { ADDED_6_2_0 },
 					})),
-					darkmoondaggermaw(25, i(126927, {	-- Recipe: Sugar-Crusted Fish Feast
+					darkmoondaggermaw(25, i(126927, {	-- Recipe: Sugar-Crusted Fish Feast (RECIPE!)
 						["timeline"] = { ADDED_6_2_0 },
 					})),
 					darkmoondaggermaw(25, i(126931, {	-- Seafarer's Slidewhistle (TOY!)

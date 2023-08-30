@@ -88,12 +88,12 @@ root(ROOTS.ExpansionFeatures,
 				n(80159, {	-- Arsenio Zerep <Cook>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(122556),	-- Recipe: Buttered Sturgeon
-						i(122557),	-- Recipe: Jumbo Sea Dog
-						i(122558),	-- Recipe: Pickled Eel
-						i(122559),	-- Recipe: Salty Squid Roll
-						i(122555),	-- Recipe: Sleeper Sushi
-						i(122560),	-- Recipe: Whiptail Fillet
+						i(122556),	-- Recipe: Buttered Sturgeon (RECIPE!)
+						i(122557),	-- Recipe: Jumbo Sea Dog (RECIPE!)
+						i(122558),	-- Recipe: Pickled Eel (RECIPE!)
+						i(122559),	-- Recipe: Salty Squid Roll (RECIPE!)
+						i(122555),	-- Recipe: Sleeper Sushi (RECIPE!)
+						i(122560),	-- Recipe: Whiptail Fillet (RECIPE!)
 					},
 				}),
 				n(88779, {	-- Benjamin Brode <Traveling Merchant>
@@ -301,12 +301,12 @@ root(ROOTS.ExpansionFeatures,
 				n(76928, {	-- Kraank <Food & Drink>
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(122556),	-- Recipe: Buttered Sturgeon
-						i(122557),	-- Recipe: Jumbo Sea Dog
-						i(122558),	-- Recipe: Pickled Eel
-						i(122559),	-- Recipe: Salty Squid Roll
-						i(122555),	-- Recipe: Sleeper Sushi
-						i(122560),	-- Recipe: Whiptail Fillet
+						i(122556),	-- Recipe: Buttered Sturgeon (RECIPE!)
+						i(122557),	-- Recipe: Jumbo Sea Dog (RECIPE!)
+						i(122558),	-- Recipe: Pickled Eel (RECIPE!)
+						i(122559),	-- Recipe: Salty Squid Roll (RECIPE!)
+						i(122555),	-- Recipe: Sleeper Sushi (RECIPE!)
+						i(122560),	-- Recipe: Whiptail Fillet (RECIPE!)
 					},
 				}),
 				n(88635, {	-- Nalya Battlehorn <Contracts>

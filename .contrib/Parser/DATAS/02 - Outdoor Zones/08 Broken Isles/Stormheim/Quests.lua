@@ -62,7 +62,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 60.0, 50.7, STORMHEIM },
 					["provider"] = { "n", 92539 },	-- Havi
 					["g"] = {
-						i(133813),	-- Recipe: Pickled Stormray (Rank 1)
+						i(133813),	-- Recipe: Pickled Stormray [Rank 1] (RECIPE!)
 					},
 				}),
 				q(40120, {	-- A Murky Fate

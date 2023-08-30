@@ -1971,12 +1971,12 @@ root(ROOTS.Zones, {
 						["g"] = {
 							i(90470),	-- Design: Jade Owl
 							i(90471),	-- Design: Sapphire Cub
-							i(101768),	-- Recipe: Farmer's Delight
-							i(101770),	-- Recipe: Fluffy Silkfeather Omelet
+							i(101768),	-- Recipe: Farmer's Delight (RECIPE!)
+							i(101770),	-- Recipe: Fluffy Silkfeather Omelet (RECIPE!)
 							i(101767),	-- Recipe: Mango Ice (RECIPE!)
-							i(101765),	-- Recipe: Seasoned Pomfruit Slices
-							i(101766),	-- Recipe: Spiced Blossom Soup
-							i(101769),	-- Recipe: Stuffed Lushrooms
+							i(101765),	-- Recipe: Seasoned Pomfruit Slices (RECIPE!)
+							i(101766),	-- Recipe: Spiced Blossom Soup (RECIPE!)
+							i(101769),	-- Recipe: Stuffed Lushrooms (RECIPE!)
 							i(90815),	-- Relic of Guo-Lai
 							i(103624),	-- Treasures of the Vale
 							i(102541),	-- Aged Balsamic Vinegar

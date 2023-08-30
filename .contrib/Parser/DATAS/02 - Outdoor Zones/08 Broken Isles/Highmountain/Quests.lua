@@ -396,7 +396,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 39.9, 52.2, HIGHMOUNTAIN },
 					["provider"] = { "n", 95438 },	-- Ellias
 					["g"] = {
-						i(133810),	-- Recipe: Salt and Pepper Shank [Rank 1]
+						i(133810),	-- Recipe: Salt and Pepper Shank [Rank 1] (RECIPE!)
 					},
 				}),
 				q(40219, {	-- In Defiance of Deathwing
@@ -491,7 +491,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 42.7, 10.8, HIGHMOUNTAIN },
 					["provider"] = { "n", 98067 },	-- King Mrgl-Mrgl
 					["g"] = {
-						i(133818),	-- Recipe: Barracuda Mrglgagh [Rank 1]
+						i(133818),	-- Recipe: Barracuda Mrglgagh [Rank 1] (RECIPE!)
 					},
 				}),
 				q(40045, {	-- Nature vs. Nurture

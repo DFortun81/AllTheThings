@@ -7,10 +7,10 @@ local i = GetRecipeHelperForProfession(COOKING);
 -- TRAINER --
 i(0, 6499);		-- Boiled Clams
 i(0, 2538);		-- Charred Wolf Meat
-i(0, 2550);		-- Cooking (Apprentice)
-i(0, 18260);	-- Cooking (Artisan)
-i(0, 3413);		-- Cooking (Expert)
-i(0, 3102);		-- Cooking (Journeyman)
+i(0, 2550);		-- Cooking (Apprentice) [REMOVED 8.0.1]
+i(0, 18260);	-- Cooking (Artisan) [REMOVED 8.0.1]
+i(0, 3413);		-- Cooking (Expert) [REMOVED 8.0.1]
+i(0, 3102);		-- Cooking (Journeyman) [REMOVED 8.0.1]
 i(0, 818);		-- Cooking Fire / Basic Campfire
 i(0, 2541);		-- Coyote Steak
 i(0, 2544);		-- Crab Cake
@@ -100,7 +100,7 @@ i(23690, 30047);	-- Crystal Throat Lozenge
 -- PATCH 2.0.1 --
 -----------------
 -- TRAINER --
-i(0, 33359);	-- Cooking (Master)
+i(0, 33359);	-- Cooking (Master) [REMOVED 8.0.1]
 i(0, 37836);	-- Spice Bread
 -- ITEM --
 i(27687, 33278);	-- Bat Bites
@@ -164,7 +164,7 @@ i(35566, 46688);	-- Juicy Bear Burger (4.1.0)
 -----------------
 -- TRAINER --
 i(0, 45569);	-- Baked Manta Ray
-i(0, 51296);	-- Cooking (Grand Master)
+i(0, 51296);	-- Cooking (Grand Master) [REMOVED 8.0.1]
 i(0, 58065);	-- Dalaran Clam Chowder
 i(0, 45554);	-- Great Feast
 i(0, 45561);	-- Grilled Bonescale
@@ -256,6 +256,7 @@ i(46803, 66038);	-- Spice Bread Stuffing (H)
 -- PATCH 4.0.1 --
 -----------------
 -- TRAINER --
+i(0, 88053);	-- Cooking (Illustrious) [REMOVED 8.0.1]
 i(0, 93741);	-- Venison Jerky
 -- ITEM --
 i(65426, 88003);	-- Baked Rockfish
@@ -292,7 +293,6 @@ i(65406, 88047);	-- Whitecrest Gumbo
 -----------------
 -- TRAINER --
 i(0, 88006);	-- Blackened Surprise
-i(0, 88053);	-- Cooking (Illustrious)
 i(0, 88015);	-- Darkbrew Lager
 -- ITEM --
 i(62799, 88011);	-- Broiled Dragon Feast
@@ -315,14 +315,36 @@ i(78342, 6417);	-- Dig Rat Stew
 -- PATCH 5.0.4 --
 -----------------
 -- TRAINER --
+i(0, 125602);	-- Banquet of the Brew
+i(0, 125141);	-- Banquet of the Grill
+i(0, 125600);	-- Banquet of the Oven
+i(0, 125596);	-- Banquet of the Pot
+i(0, 125598);	-- Banquet of the Steamer
+i(0, 125594);	-- Banquet of the Wok
+i(0, 104300);	-- Black Pepper Ribs and Shrimp
 i(0, 124233);	-- Blanched Needle Mushrooms
 i(0, 124228);	-- Boiled Silkworm Pupa
-i(0, 104381);	-- Cooking (Zen Master)
+i(0, 104305);	-- Braised Turtle
+i(0, 104298);	-- Charbroiled Tiger Steak
+i(0, 104312);	-- Chun Tian Spring Rolls
+i(0, 104381);	-- Cooking (Zen Master) [REMOVED 8.0.1]
 i(0, 124227);	-- Dried Needle Mushrooms
 i(0, 124226);	-- Dried Peaches
+i(0, 104299);	-- Eternal Blossom Fish
+i(0, 104308);	-- Fire Spirit Salmon
 i(0, 104297);	-- Fish Cake
+i(0, 124052);	-- Ginseng Tea
 i(0, 104237);	-- Golden Carp Consomme
+i(0, 125603);	-- Great Banquet of the Brew
+i(0, 125142);	-- Great Banquet of the Grill
+i(0, 125601);	-- Great Banquet of the Oven
+i(0, 125597);	-- Great Banquet of the Pot
+i(0, 125599);	-- Great Banquet of the Steamer
+i(0, 125595);	-- Great Banquet of the Wok
 i(0, 124231);	-- Green Curry Fish
+i(0, 124053);	-- Jade Witch Brew
+i(0, 124054);	-- Mad Brewer's Breakfast
+i(0, 104306);	-- Mogu Fish Stew
 i(0, 124232);	-- Peach Pie
 i(0, 125080);	-- Pearl Milk Tea
 i(0, 125067);	-- Perfectly Cooked Instant Noodles
@@ -330,11 +352,19 @@ i(0, 124223);	-- Pounded Rice Cake
 i(0, 124229);	-- Red Bean Bun
 i(0, 125122);	-- Rice Pudding
 i(0, 125078);	-- Roasted Barley Tea
+i(0, 104301);	-- Sauteed Carrots
+i(0, 104303);	-- Sea Mist Rice Noodles
+i(0, 104307);	-- Shrimp Dumplings
 i(0, 124234);	-- Skewered Peanut Chicken
 i(0, 125117);	-- Sliced Peaches
+i(0, 104309);	-- Steamed Crab Surprise
+i(0, 104304);	-- Swirling Mist Soup
 i(0, 124230);	-- Tangy Yogurt
 i(0, 124225);	-- Toasted Fish Jerky
+i(0, 104311);	-- Twin Fish Platter
+i(0, 104302);	-- Valley Stir Fry
 i(0, 125121);	-- Wildfowl Ginseng Soup
+i(0, 104310);	-- Wildfowl Roast
 i(0, 124224);	-- Yak Cheese Curds
 -- ITEM --
 i(87266, 126655);	-- Banana Infused Rum / Banana-Infused Rum
@@ -345,12 +375,27 @@ i(75013, 105190);	-- Pandaren Banquet
 i(74657, 125120);	-- Spicy Salmon
 i(74658, 125123);	-- Spicy Vegetable Chips
 i(85502, 124029);	-- Viseclaw Soup
+-- QUEST --
+i(0, 125589);	-- Way of the Brew
+i(0, 124694);	-- Way of the Grill
+i(0, 125588);	-- Way of the Oven
+i(0, 125586);	-- Way of the Pot
+i(0, 125587);	-- Way of the Steamer
+i(0, 125584);	-- Way of the Wok
+-- NYI --
+i(0, 125889);	-- Apprentice Cookbook
+i(0, 125898);	-- Journeyman Cookbook
 
 -----------------
 -- PATCH 5.4.0 --
 -----------------
 -- ITEM --
+i(101768, 145309);	-- Farmer's Delight
+i(101770, 145311);	-- Fluffy Silkfeather Omelet
 i(101767, 145308);	-- Mango Ice
+i(101765, 145305);	-- Seasoned Pomfruit Slices
+i(101766, 145307);	-- Spiced Blossom Soup
+i(101769, 145310);	-- Stuffed Lushrooms
 -- QUEST --
 i(0, 145061);	-- Deluxe Noodle Cart Kit
 i(0, 145038);	-- Noodle Cart Kit
@@ -359,6 +404,208 @@ i(0, 145062);	-- Pandaren Treasure Noodle Cart Kit
 i(0, 145170);	-- Grand Deluxe Noodle Cart Kit
 i(0, 145167);	-- Grand Noodle Cart Kit
 i(0, 145197);	-- Grand Pandaren Treasure Noodle Cart Kit
+
+-----------------
+-- PATCH 6.0.2 --
+-----------------
+-- TRAINER --
+i(0, 158765);	-- Cooking (Draenor Master) [REMOVED 8.0.1]
+i(0, 161002);	-- Grilled Saberfish
+i(0, 161001);	-- Saberfish Broth
+-- ITEM --
+i(118323, 160986);	-- Blackrock Barbecue
+i(118311, 160962);	-- Blackrock Ham
+i(118313, 160968);	-- Braised Riverbeast
+i(118326, 160999);	-- Calamari Crepes
+i(118315, 160971);	-- Clefthoof Sausages
+i(118319, 160981);	-- Fat Sleeper Cakes
+i(118328, 173978);	-- Feast of Blood
+i(118329, 173979);	-- Feast of the Waters
+i(118320, 160982);	-- Fiery Calamari
+i(118324, 160987);	-- Frosty Stew
+i(118327, 161000);	-- Gorgrond Chowder
+i(118317, 160978);	-- Grilled Gulper
+i(118310, 160958);	-- Hearty Elekk Steak
+i(118312, 160966);	-- Pan-Seared Talbuk
+i(118314, 160969);	-- Rylak Crepes
+i(118321, 160983);	-- Skulker Chowder
+i(118325, 160989);	-- Sleeper Surprise
+i(118316, 160973);	-- Steamed Scorpion
+i(118318, 160979);	-- Sturgeon Stew
+i(118322, 160984);	-- Talador Surf and Turf
+-- NYI --
+i(0, 169696);	-- Marinated Elekk Steak
+i(0, 169699);	-- Seasoned Elekk Ribeye
+i(0, 160961);	-- UNUSED
+i(0, 160967);	-- UNUSED
+i(0, 160976);	-- UNUSED
+i(0, 160980);	-- UNUSED
+i(0, 160985);	-- UNUSED
+i(0, 160988);	-- UNUSED
+i(0, 169693);	-- Whole Pot-Roasted Elekk
+
+-----------------
+-- PATCH 6.1.0 --
+-----------------
+-- ITEM --
+i(122556, 180761);	-- Buttered Sturgeon
+i(122557, 180759);	-- Jumbo Sea Dog
+i(122558, 180758);	-- Pickled Eel
+i(122559, 180757);	-- Salty Squid Roll
+i(122555, 180762);	-- Sleeper Sushi
+i(122560, 180760);	-- Whiptail Fillet
+
+-----------------
+-- PATCH 6.2.0 --
+-----------------
+-- ITEM --
+i(126929, 185705);	-- Fancy Darkmoon Feast
+i(128501, 190788);	-- Fel Eggs and Ham
+i(126928, 185704);	-- Lemon Herb Filet
+i(126927, 185708);	-- Sugar-Crusted Fish Feast
+
+-----------------
+-- PATCH 7.0.3 --
+-----------------
+-- TRAINER --
+i(0, 195128);	-- Cooking (Legion) [REMOVED 8.0.1]
+-- ITEM --
+i(133822, 201506);	-- Azshari Salad [Rank 1]
+i(133842, 201535);	-- Azshari Salad [Rank 2]
+i(133862, 201555);	-- Azshari Salad [Rank 3]
+i(133818, 201502);	-- Barracuda Mrglgagh [Rank 1]
+i(133838, 201531);	-- Barracuda Mrglgagh [Rank 2]
+i(133858, 201551);	-- Barracuda Mrglgagh [Rank 3]
+i(133827, 201513);	-- Bear Tartare [Rank 1]
+i(133847, 201540);	-- Bear Tartare [Rank 2]
+i(133867, 201560);	-- Bear Tartare [Rank 3]
+i(133871, 201683);	-- Crispy Bacon (Rank 1)
+i(133872, 201684);	-- Crispy Bacon (Rank 2)
+i(133873, 201685);	-- Crispy Bacon (Rank 3)
+i(133812, 201496);	-- Deep-Fried Mossgill [Rank 1]
+i(133832, 201525);	-- Deep-Fried Mossgill [Rank 2]
+i(133852, 201545);	-- Deep-Fried Mossgill [Rank 3]
+i(133826, 201512);	-- Dried Mackerel Strips [Rank 1]
+i(133846, 201539);	-- Dried Mackerel Strips [Rank 2]
+i(133866, 201559);	-- Dried Mackerel Strips [Rank 3]
+i(133820, 201504);	-- Drogbar-Style Salmon [Rank 1]
+i(133840, 201533);	-- Drogbar-Style Salmon [Rank 2]
+i(133860, 201553);	-- Drogbar-Style Salmon [Rank 3]
+i(133814, 201498);	-- Faronaar Fizz [Rank 1]
+i(133834, 201527);	-- Faronaar Fizz [Rank 2]
+i(133854, 201547);	-- Faronaar Fizz [Rank 3]
+i(152565, 251258);	-- Feast of the Fishes
+i(133828, 201514);	-- Fighter Chow [Rank 1]
+i(133848, 201541);	-- Fighter Chow [Rank 2]
+i(133868, 201561);	-- Fighter Chow [Rank 3]
+i(133825, 201511);	-- Fishbrul Special [Rank 1]
+i(133845, 201538);	-- Fishbrul Special [Rank 2]
+i(133865, 201558);	-- Fishbrul Special [Rank 3]
+i(133829, 201515);	-- Hearty Feast [Rank 1]
+i(133849, 201542);	-- Hearty Feast [Rank 2]
+i(133869, 201562);	-- Hearty Feast [Rank 3]
+i(133819, 201503);	-- Koi-Scented Stormray [Rank 1]
+i(133839, 201532);	-- Koi-Scented Stormray [Rank 2]
+i(133859, 201552);	-- Koi-Scented Stormray [Rank 3]
+i(133830, 201516);	-- Lavish Suramar Feast [Rank 1]
+i(133850, 201543);	-- Lavish Suramar Feast [Rank 2]
+i(133870, 201563);	-- Lavish Suramar Feast [Rank 3]
+i(133816, 201500);	-- Leybeque Ribs [Rank 1]
+i(133836, 201529);	-- Leybeque Ribs [Rank 2]
+i(133856, 201549);	-- Leybeque Ribs [Rank 3]
+i(133823, 201507);	-- Nightborne Delicacy Platter [Rank 1]
+i(133843, 201536);	-- Nightborne Delicacy Platter [Rank 2]
+i(133863, 201556);	-- Nightborne Delicacy Platter [Rank 3]
+i(133813, 201497);	-- Pickled Stormray [Rank 1]
+i(133833, 201526);	-- Pickled Stormray [Rank 2]
+i(133853, 201546);	-- Pickled Stormray [Rank 3]
+i(133810, 201413);	-- Salt and Pepper Shank [Rank 1]
+i(133831, 201524);	-- Salt and Pepper Shank [Rank 2]
+i(133851, 201544);	-- Salt and Pepper Shank [Rank 3]
+i(133824, 201508);	-- Seed-Battered Fish Plate [Rank 1]
+i(133844, 201537);	-- Seed-Battered Fish Plate [Rank 2]
+i(133864, 201557);	-- Seed-Battered Fish Plate [Rank 3]
+i(142331, 230046);	-- Spiced Falcosaur Omelet
+i(133815, 201499);	-- Spiced Rib Roast [Rank 1]
+i(133835, 201528);	-- Spiced Rib Roast [Rank 2]
+i(133855, 201548);	-- Spiced Rib Roast [Rank 3]
+i(133817, 201501);	-- Suramar Surf and Turf [Rank 1]
+i(133837, 201530);	-- Suramar Surf and Turf [Rank 2]
+i(133857, 201550);	-- Suramar Surf and Turf [Rank 3]
+i(133821, 201505);	-- The Hungry Magister [Rank 1]
+i(133841, 201534);	-- The Hungry Magister [Rank 2]
+i(133861, 201554);	-- The Hungry Magister [Rank 3]
+
+-----------------
+-- PATCH 8.0.1 --
+-----------------
+i(0, 264632);	-- Classic Cooking
+i(0, 264634);	-- Outland Cooking
+i(0, 264636);	-- Northrend Cooking
+i(0, 264638);	-- Cataclysm Cooking
+i(0, 264640);	-- Pandaria Cooking
+i(0, 264642);	-- Draenor Cooking
+i(0, 264644);	-- Legion Cooking
+i(0, 264646);	-- Kul Tiran Cooking
+i(0, 265817);	-- Zandalari Cooking
+-- TRAINER --
+i(0, 259421);	-- Bountiful Captain's Feast [Rank 1]
+i(0, 259418);	-- Galley Banquet [Rank 1]
+i(0, 259419);	-- Galley Banquet [Rank 2]
+i(0, 259430);	-- Grilled Catfish / Grilled Snapper [Rank 1]
+i(0, 259431);	-- Grilled Catfish / Grilled Snapper [Rank 2]
+i(0, 259414);	-- Honey-Glazed Haunches [Rank 1]
+i(0, 259415);	-- Honey-Glazed Haunches [Rank 2]
+i(0, 259411);	-- Kul Tiramisu [Rank 1]
+i(0, 259412);	-- Kul Tiramisu [Rank 2]
+i(0, 259436);	-- Loa Loaf [Rank 1]
+i(0, 259437);	-- Loa Loaf [Rank 2]
+i(0, 259442);	-- Mon'Dazi [Rank 1]
+i(0, 259443);	-- Mon'Dazi [Rank 2]
+i(0, 259424);	-- Ravenberry Tarts [Rank 1]
+i(0, 259425);	-- Ravenberry Tarts [Rank 2]
+i(0, 259439);	-- Sailor's Pie [Rank 1]
+i(0, 259440);	-- Sailor's Pie [Rank 2]
+i(0, 259433);	-- Seasoned Loins [Rank 1]
+i(0, 259434);	-- Seasoned Loins [Rank 2]
+i(0, 259445);	-- Spiced Snapper / Spiced Catfish [Rank 1]
+i(0, 259446);	-- Spiced Snapper / Spiced Catfish [Rank 2]
+i(0, 259427);	-- Swamp Fish 'n Chips [Rank 1]
+i(0, 259428);	-- Swamp Fish 'n Chips [Rank 2]
+-- ITEM --
+i(162288, 259422);	-- Bountiful Captain's Feast [Rank 2]
+i(162289, 259423);	-- Bountiful Captain's Feast [Rank 3]
+i(162287, 259420);	-- Galley Banquet [Rank 3]
+i(162292, 259432);	-- Grilled Catfish / Grilled Snapper [Rank 3]
+i(163833, 280282);	-- Heartsbane Hexwurst
+i(162286, 259416);	-- Honey-Glazed Haunches [Rank 3]
+i(162285, 259413);	-- Kul Tiramisu [Rank 3]
+i(162294, 259438);	-- Loa Loaf [Rank 3]
+i(162296, 259444);	-- Mon'Dazi [Rank 3]
+i(162290, 259426);	-- Ravenberry Tarts [Rank 3]
+i(162295, 259441);	-- Sailor's Pie [Rank 3]
+i(162293, 259435);	-- Seasoned Loins [Rank 3]
+i(162297, 259447);	-- Spiced Snapper / Spiced Catfish [Rank 3]
+i(162291, 259429);	-- Swamp Fish 'n Chips [Rank 3]
+
+-----------------
+-- PATCH 8.1.0 --
+-----------------
+-- TRAINER --
+i(0, 290471);	-- Boralus Blood Sausage [Rank 1]
+i(0, 286381);	-- Honey Potpie
+i(0, 287108);	-- Sanguinated Feast [Rank 1]
+i(0, 288030);	-- Seasoned Steak and Potatoes [Rank 1]
+i(0, 288032);	-- Seasoned Steak and Potatoes [Rank 2]
+i(0, 288027);	-- Wild Berry Bread [Rank 1]
+i(0, 288028);	-- Wild Berry Bread [Rank 2]
+-- ITEM --
+i(166806, 290472);	-- Boralus Blood Sausage [Rank 2]
+i(166807, 290473);	-- Boralus Blood Sausage [Rank 3]
+i(166263, 287110);	-- Sanguinated Feast [Rank 2]
+i(166264, 287112);	-- Sanguinated Feast [Rank 3]
+i(166368, 288033);	-- Seasoned Steak and Potatoes [Rank 3]
+i(166367, 288029);	-- Wild Berry Bread [Rank 3]
 
 ------------------
 -- PATCH 10.0.0 --
@@ -436,6 +683,7 @@ i(198096, 0);	-- Sweet and Sour Clam Chowder
 i(198121, 0);	-- Thousandbone Tongueslicer
 i(198092, 0);	-- Twice-Baked Potato
 i(198107, 0);	-- Zesty Water
+
 ------------------
 -- PATCH 10.0.5 --
 ------------------

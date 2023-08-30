@@ -231,7 +231,7 @@ root(ROOTS.Zones, {
 							["achievementID"] = 11263,	-- Adventurer of Stormheim
 							["criteriaID"] = 14,	-- Mordvigbjorn
 						},
-						i(133827),	-- Recipe: Bear Tartare [Rank 1]
+						i(133827),	-- Recipe: Bear Tartare [Rank 1] (RECIPE!)
 						i(129035),	-- Indomitable Bearskin Cloak
 					},
 				}),

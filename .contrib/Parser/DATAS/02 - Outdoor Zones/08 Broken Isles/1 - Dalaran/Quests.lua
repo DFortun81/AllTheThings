@@ -1148,7 +1148,7 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 110018 },	-- Gazrix Gearlock <Steamwheedle Cartel>
 					["g"] = {
 						i(140601, {	-- Sixtrigger Resource Crate
-							i(133815),	-- Recipe: Spiced Rib Roast
+							i(133815),	-- Recipe: Spiced Rib Roast [Rank 1] (RECIPE!)
 							i(140600),	-- Sixtrigger Lucky Ring
 						}),
 						i(140599),	-- Pretty Silk Gloves

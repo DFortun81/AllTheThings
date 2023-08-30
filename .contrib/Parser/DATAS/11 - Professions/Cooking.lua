@@ -1764,26 +1764,26 @@ profession(COOKING, {
 		n(DISCOVERY, {
 			["description"] = "These items have a chance to appear in your bag after cooking any recipe from Warlords of Draenor.",
 			["groups"] = {
-				i(118311),	-- Recipe Idea: Blackrock Ham
-				i(118313),	-- Recipe Idea: Braised Riverbeast
-				i(118315),	-- Recipe Idea: Clefthoof Sausages
-				i(118319),	-- Recipe Idea: Fat Sleeper Cakes
-				i(118320),	-- Recipe Idea: Fiery Calamari
-				i(118317),	-- Recipe Idea: Grilled Gulper
-				i(118310),	-- Recipe Idea: Hearty Elekk Steak
-				i(118312),	-- Recipe Idea: Pan-Seared Talbuk
-				i(118314),	-- Recipe Idea: Rylak Crepes
-				i(118321),	-- Recipe Idea: Skulker Chowder
-				i(118316),	-- Recipe Idea: Steamed Scorpion
-				i(118318),	-- Recipe Idea: Sturgeon Stew
-				i(118323),	-- Recipe Idea: Blackrock Barbecue
-				i(118326),	-- Recipe Idea: Calamari Crepes
-				i(118324),	-- Recipe Idea: Frosty Stew
-				i(118327),	-- Recipe Idea: Gorgrond Chowder
-				i(118325),	-- Recipe Idea: Sleeper Surprise
-				i(118322),	-- Recipe Idea: Talador Surf and Turf
-				i(118328),	-- Recipe Idea: Feast of Blood
-				i(118329),	-- Recipe Idea: Feast of the Waters
+				i(118311),	-- Recipe Idea: Blackrock Ham (RECIPE!)
+				i(118313),	-- Recipe Idea: Braised Riverbeast (RECIPE!)
+				i(118315),	-- Recipe Idea: Clefthoof Sausages (RECIPE!)
+				i(118319),	-- Recipe Idea: Fat Sleeper Cakes (RECIPE!)
+				i(118320),	-- Recipe Idea: Fiery Calamari (RECIPE!)
+				i(118317),	-- Recipe Idea: Grilled Gulper (RECIPE!)
+				i(118310),	-- Recipe Idea: Hearty Elekk Steak (RECIPE!)
+				i(118312),	-- Recipe Idea: Pan-Seared Talbuk (RECIPE!)
+				i(118314),	-- Recipe Idea: Rylak Crepes (RECIPE!)
+				i(118321),	-- Recipe Idea: Skulker Chowder (RECIPE!)
+				i(118316),	-- Recipe Idea: Steamed Scorpion (RECIPE!)
+				i(118318),	-- Recipe Idea: Sturgeon Stew (RECIPE!)
+				i(118323),	-- Recipe Idea: Blackrock Barbecue (RECIPE!)
+				i(118326),	-- Recipe Idea: Calamari Crepes (RECIPE!)
+				i(118324),	-- Recipe Idea: Frosty Stew (RECIPE!)
+				i(118327),	-- Recipe Idea: Gorgrond Chowder (RECIPE!)
+				i(118325),	-- Recipe Idea: Sleeper Surprise (RECIPE!)
+				i(118322),	-- Recipe Idea: Talador Surf and Turf (RECIPE!)
+				i(118328),	-- Recipe Idea: Feast of Blood (RECIPE!)
+				i(118329),	-- Recipe Idea: Feast of the Waters (RECIPE!)
 				i(110684),	-- Lil' Leftovers (PET!)
 			},
 		}),

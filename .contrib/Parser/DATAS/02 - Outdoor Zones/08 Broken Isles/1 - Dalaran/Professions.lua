@@ -282,189 +282,189 @@ root(ROOTS.Zones, {
 						["description"] = "Takes various meat, fish, and other reagents for Work Orders (similar to the Draenor garrison), 5 at a time. He can maintain a maximum of 24 work orders at one time.\n\nEach Work Order takes 4 hours to complete. After a Work Order (or multiple Work Orders) complete, you will receive a recipe, meat/fish, Badly Burnt Food (often), or some combination of these when you collect them from the Test Kitchen Results table.\n\nThe Work Order options that Nomi gives you are based on the materials you have in your inventory (your bags, bank, and reagent bank). You can queue up all work orders with one material, or you can use multiple different materials for any number of Work Orders, as long as the total Work Orders active is maximum 24.",
 						["groups"] = appendAllGroups(
 							sharedData({["cost"]={{"i",124119,5}}}, {	-- Big Gamy Ribs
-								i(133835),	-- Recipe: Spiced Rib Roast [Rank 2]
-								i(133855),	-- Recipe: Spiced Rib Roast [Rank 3]
-								i(133829),	-- Recipe: Hearty Feast [Rank 1]
-								i(133849),	-- Recipe: Hearty Feast [Rank 2]
-								i(133869),	-- Recipe: Hearty Feast [Rank 3]
-								i(133836),	-- Recipe: Leybeque Ribs [Rank 2]
-								i(133856),	-- Recipe: Leybeque Ribs [Rank 3]
-								i(133821),	-- Recipe: The Hungry Magister [Rank 1]
-								i(133841),	-- Recipe: The Hungry Magister [Rank 2]
-								i(133861),	-- Recipe: The Hungry Magister [Rank 3]
-								i(133830),	-- Recipe: Lavish Suramar Feast [Rank 1]
-								i(133850),	-- Recipe: Lavish Suramar Feast [Rank 2]
-								i(133870),	-- Recipe: Lavish Suramar Feast [Rank 3]
+								i(133835),	-- Recipe: Spiced Rib Roast [Rank 2] (RECIPE!)
+								i(133855),	-- Recipe: Spiced Rib Roast [Rank 3] (RECIPE!)
+								i(133829),	-- Recipe: Hearty Feast [Rank 1] (RECIPE!)
+								i(133849),	-- Recipe: Hearty Feast [Rank 2] (RECIPE!)
+								i(133869),	-- Recipe: Hearty Feast [Rank 3] (RECIPE!)
+								i(133836),	-- Recipe: Leybeque Ribs [Rank 2] (RECIPE!)
+								i(133856),	-- Recipe: Leybeque Ribs [Rank 3] (RECIPE!)
+								i(133821),	-- Recipe: The Hungry Magister [Rank 1] (RECIPE!)
+								i(133841),	-- Recipe: The Hungry Magister [Rank 2] (RECIPE!)
+								i(133861),	-- Recipe: The Hungry Magister [Rank 3] (RECIPE!)
+								i(133830),	-- Recipe: Lavish Suramar Feast [Rank 1] (RECIPE!)
+								i(133850),	-- Recipe: Lavish Suramar Feast [Rank 2] (RECIPE!)
+								i(133870),	-- Recipe: Lavish Suramar Feast [Rank 3] (RECIPE!)
 							}),
 							sharedData({["cost"]={{"i",124112,5}}}, {	-- Black Barracuda
-								i(133838),	-- Recipe: Barracuda Mrglgagh [Rank 2]
-								i(133858),	-- Recipe: Barracuda Mrglgagh [Rank 3]
-								i(133825),	-- Recipe: Fishbrul Special [Rank 1]
-								i(133845),	-- Recipe: Fishbrul Special [Rank 2]
-								i(133865),	-- Recipe: Fishbrul Special [Rank 3]
-								i(133830),	-- Recipe: Lavish Suramar Feast [Rank 1]
-								i(133850),	-- Recipe: Lavish Suramar Feast [Rank 2]
-								i(133870),	-- Recipe: Lavish Suramar Feast [Rank 3]
-								i(133823),	-- Recipe: Nightborne Delicacy Platter [Rank 1]
-								i(133843),	-- Recipe: Nightborne Delicacy Platter [Rank 2]
-								i(133863),	-- Recipe: Nightborne Delicacy Platter [Rank 3]
+								i(133838),	-- Recipe: Barracuda Mrglgagh [Rank 2] (RECIPE!)
+								i(133858),	-- Recipe: Barracuda Mrglgagh [Rank 3] (RECIPE!)
+								i(133825),	-- Recipe: Fishbrul Special [Rank 1] (RECIPE!)
+								i(133845),	-- Recipe: Fishbrul Special [Rank 2] (RECIPE!)
+								i(133865),	-- Recipe: Fishbrul Special [Rank 3] (RECIPE!)
+								i(133830),	-- Recipe: Lavish Suramar Feast [Rank 1] (RECIPE!)
+								i(133850),	-- Recipe: Lavish Suramar Feast [Rank 2] (RECIPE!)
+								i(133870),	-- Recipe: Lavish Suramar Feast [Rank 3] (RECIPE!)
+								i(133823),	-- Recipe: Nightborne Delicacy Platter [Rank 1] (RECIPE!)
+								i(133843),	-- Recipe: Nightborne Delicacy Platter [Rank 2] (RECIPE!)
+								i(133863),	-- Recipe: Nightborne Delicacy Platter [Rank 3] (RECIPE!)
 							}),
 							sharedData({["cost"]={{"i",124107,5}}}, {	-- Cursed Queenfish
-								i(133848),	-- Recipe: Fighter Chow [Rank 2]
-								i(133868),	-- Recipe: Fighter Chow [Rank 3]
-								i(133825),	-- Recipe: Fishbrul Special [Rank 1]
-								i(133845),	-- Recipe: Fishbrul Special [Rank 2]
-								i(133865),	-- Recipe: Fishbrul Special [Rank 3]
+								i(133848),	-- Recipe: Fighter Chow [Rank 2] (RECIPE!)
+								i(133868),	-- Recipe: Fighter Chow [Rank 3] (RECIPE!)
+								i(133825),	-- Recipe: Fishbrul Special [Rank 1] (RECIPE!)
+								i(133845),	-- Recipe: Fishbrul Special [Rank 2] (RECIPE!)
+								i(133865),	-- Recipe: Fishbrul Special [Rank 3] (RECIPE!)
 							}),
 							sharedData({["cost"]={{"i",124118,5}}}, {	-- Fatty Bearsteak
-								i(133847),	-- Recipe: Bear Tartare [Rank 2]
-								i(133867),	-- Recipe: Bear Tartare [Rank 3]
+								i(133847),	-- Recipe: Bear Tartare [Rank 2] (RECIPE!)
+								i(133867),	-- Recipe: Bear Tartare [Rank 3] (RECIPE!)
 							}),
 							sharedData({["cost"]={{"i",124109,5}}}, {	-- Highmountain Salmon
-								i(133840),	-- Recipe: Drogbar-Style Salmon [Rank 2]
-								i(133860),	-- Recipe: Drogbar-Style Salmon [Rank 3]
-								i(133825),	-- Recipe: Fishbrul Special [Rank 1]
-								i(133845),	-- Recipe: Fishbrul Special [Rank 2]
-								i(133865),	-- Recipe: Fishbrul Special [Rank 3]
-								i(133821),	-- Recipe: The Hungry Magister [Rank 1]
-								i(133841),	-- Recipe: The Hungry Magister [Rank 2]
-								i(133861),	-- Recipe: The Hungry Magister [Rank 3]
-								i(133830),	-- Recipe: Lavish Suramar Feast [Rank 1]
-								i(133850),	-- Recipe: Lavish Suramar Feast [Rank 2]
-								i(133870),	-- Recipe: Lavish Suramar Feast [Rank 3]
+								i(133840),	-- Recipe: Drogbar-Style Salmon [Rank 2] (RECIPE!)
+								i(133860),	-- Recipe: Drogbar-Style Salmon [Rank 3] (RECIPE!)
+								i(133825),	-- Recipe: Fishbrul Special [Rank 1] (RECIPE!)
+								i(133845),	-- Recipe: Fishbrul Special [Rank 2] (RECIPE!)
+								i(133865),	-- Recipe: Fishbrul Special [Rank 3] (RECIPE!)
+								i(133821),	-- Recipe: The Hungry Magister [Rank 1] (RECIPE!)
+								i(133841),	-- Recipe: The Hungry Magister [Rank 2] (RECIPE!)
+								i(133861),	-- Recipe: The Hungry Magister [Rank 3] (RECIPE!)
+								i(133830),	-- Recipe: Lavish Suramar Feast [Rank 1] (RECIPE!)
+								i(133850),	-- Recipe: Lavish Suramar Feast [Rank 2] (RECIPE!)
+								i(133870),	-- Recipe: Lavish Suramar Feast [Rank 3] (RECIPE!)
 							}),
 							sharedData({["cost"]={{"i",124117,5}}}, {	-- Lean Steak
-								i(133831),	-- Recipe: Salt and Pepper Shank [Rank 2]
-								i(133851),	-- Recipe: Salt and Pepper Shank [Rank 3]
-								i(133829),	-- Recipe: Hearty Feast [Rank 1]
-								i(133849),	-- Recipe: Hearty Feast [Rank 2]
-								i(133869),	-- Recipe: Hearty Feast [Rank 3]
-								i(133837),	-- Recipe: Suramar Surf and Turf [Rank 2]
-								i(133857),	-- Recipe: Suramar Surf and Turf [Rank 3]
-								i(133822),	-- Recipe: Azshari Salad [Rank 1]
-								i(133842),	-- Recipe: Azshari Salad [Rank 2]
-								i(133862),	-- Recipe: Azshari Salad [Rank 3]
-								i(133836),	-- Recipe: Leybeque Ribs [Rank 2]
-								i(133856),	-- Recipe: Leybeque Ribs [Rank 3]
-								i(133821),	-- Recipe: The Hungry Magister [Rank 1]
-								i(133841),	-- Recipe: The Hungry Magister [Rank 2]
-								i(133861),	-- Recipe: The Hungry Magister [Rank 3]
-								i(133830),	-- Recipe: Lavish Suramar Feast [Rank 1]
-								i(133850),	-- Recipe: Lavish Suramar Feast [Rank 2]
-								i(133870),	-- Recipe: Lavish Suramar Feast [Rank 3]
+								i(133831),	-- Recipe: Salt and Pepper Shank [Rank 2] (RECIPE!)
+								i(133851),	-- Recipe: Salt and Pepper Shank [Rank 3] (RECIPE!)
+								i(133829),	-- Recipe: Hearty Feast [Rank 1] (RECIPE!)
+								i(133849),	-- Recipe: Hearty Feast [Rank 2] (RECIPE!)
+								i(133869),	-- Recipe: Hearty Feast [Rank 3] (RECIPE!)
+								i(133837),	-- Recipe: Suramar Surf and Turf [Rank 2] (RECIPE!)
+								i(133857),	-- Recipe: Suramar Surf and Turf [Rank 3] (RECIPE!)
+								i(133822),	-- Recipe: Azshari Salad [Rank 1] (RECIPE!)
+								i(133842),	-- Recipe: Azshari Salad [Rank 2] (RECIPE!)
+								i(133862),	-- Recipe: Azshari Salad [Rank 3] (RECIPE!)
+								i(133836),	-- Recipe: Leybeque Ribs [Rank 2] (RECIPE!)
+								i(133856),	-- Recipe: Leybeque Ribs [Rank 3] (RECIPE!)
+								i(133821),	-- Recipe: The Hungry Magister [Rank 1] (RECIPE!)
+								i(133841),	-- Recipe: The Hungry Magister [Rank 2] (RECIPE!)
+								i(133861),	-- Recipe: The Hungry Magister [Rank 3] (RECIPE!)
+								i(133830),	-- Recipe: Lavish Suramar Feast [Rank 1] (RECIPE!)
+								i(133850),	-- Recipe: Lavish Suramar Feast [Rank 2] (RECIPE!)
+								i(133870),	-- Recipe: Lavish Suramar Feast [Rank 3] (RECIPE!)
 							}),
 							sharedData({["cost"]={{"i",124120,5}}}, {	-- Leyblood
-								i(133838),	-- Recipe: Barracuda Mrglgagh [Rank 2]
-								i(133858),	-- Recipe: Barracuda Mrglgagh [Rank 3]
-								i(133830),	-- Recipe: Lavish Suramar Feast [Rank 1]
-								i(133850),	-- Recipe: Lavish Suramar Feast [Rank 2]
-								i(133870),	-- Recipe: Lavish Suramar Feast [Rank 3]
+								i(133838),	-- Recipe: Barracuda Mrglgagh [Rank 2] (RECIPE!)
+								i(133858),	-- Recipe: Barracuda Mrglgagh [Rank 3] (RECIPE!)
+								i(133830),	-- Recipe: Lavish Suramar Feast [Rank 1] (RECIPE!)
+								i(133850),	-- Recipe: Lavish Suramar Feast [Rank 2] (RECIPE!)
+								i(133870),	-- Recipe: Lavish Suramar Feast [Rank 3] (RECIPE!)
 							}),
 							sharedData({["cost"]={{"i",124108,5}}}, {	-- Mossgill Perch
-								i(133832),	-- Recipe: Deep-Fried Mossgill [Rank 2]
-								i(133852),	-- Recipe: Deep-Fried Mossgill [Rank 3]
-								i(133829),	-- Recipe: Hearty Feast [Rank 1]
-								i(133849),	-- Recipe: Hearty Feast [Rank 2]
-								i(133869),	-- Recipe: Hearty Feast [Rank 3]
-								i(133825),	-- Recipe: Fishbrul Special [Rank 1]
-								i(133845),	-- Recipe: Fishbrul Special [Rank 2]
-								i(133865),	-- Recipe: Fishbrul Special [Rank 3]
+								i(133832),	-- Recipe: Deep-Fried Mossgill [Rank 2] (RECIPE!)
+								i(133852),	-- Recipe: Deep-Fried Mossgill [Rank 3] (RECIPE!)
+								i(133829),	-- Recipe: Hearty Feast [Rank 1] (RECIPE!)
+								i(133849),	-- Recipe: Hearty Feast [Rank 2] (RECIPE!)
+								i(133869),	-- Recipe: Hearty Feast [Rank 3] (RECIPE!)
+								i(133825),	-- Recipe: Fishbrul Special [Rank 1] (RECIPE!)
+								i(133845),	-- Recipe: Fishbrul Special [Rank 2] (RECIPE!)
+								i(133865),	-- Recipe: Fishbrul Special [Rank 3] (RECIPE!)
 							}),
 							sharedData({["cost"]={{"i",124111,5}}}, {	-- Runescale Koi
-								i(133839),	-- Recipe: Koi-Scented Stormray [Rank 2]
-								i(133859),	-- Recipe: Koi-Scented Stormray [Rank 3]
-								i(133837),	-- Recipe: Suramar Surf and Turf [Rank 2]
-								i(133857),	-- Recipe: Suramar Surf and Turf [Rank 3]
-								i(133822),	-- Recipe: Azshari Salad [Rank 1]
-								i(133842),	-- Recipe: Azshari Salad [Rank 2]
-								i(133862),	-- Recipe: Azshari Salad [Rank 3]
-								i(133824),	-- Recipe: Seed-Battered Fish Plate [Rank 1]
-								i(133844),	-- Recipe: Seed-Battered Fish Plate [Rank 2]
-								i(133864),	-- Recipe: Seed-Battered Fish Plate [Rank 3]
-								i(133830),	-- Recipe: Lavish Suramar Feast [Rank 1]
-								i(133850),	-- Recipe: Lavish Suramar Feast [Rank 2]
-								i(133870),	-- Recipe: Lavish Suramar Feast [Rank 3]
+								i(133839),	-- Recipe: Koi-Scented Stormray [Rank 2] (RECIPE!)
+								i(133859),	-- Recipe: Koi-Scented Stormray [Rank 3] (RECIPE!)
+								i(133837),	-- Recipe: Suramar Surf and Turf [Rank 2] (RECIPE!)
+								i(133857),	-- Recipe: Suramar Surf and Turf [Rank 3] (RECIPE!)
+								i(133822),	-- Recipe: Azshari Salad [Rank 1] (RECIPE!)
+								i(133842),	-- Recipe: Azshari Salad [Rank 2] (RECIPE!)
+								i(133862),	-- Recipe: Azshari Salad [Rank 3] (RECIPE!)
+								i(133824),	-- Recipe: Seed-Battered Fish Plate [Rank 1] (RECIPE!)
+								i(133844),	-- Recipe: Seed-Battered Fish Plate [Rank 2] (RECIPE!)
+								i(133864),	-- Recipe: Seed-Battered Fish Plate [Rank 3] (RECIPE!)
+								i(133830),	-- Recipe: Lavish Suramar Feast [Rank 1] (RECIPE!)
+								i(133850),	-- Recipe: Lavish Suramar Feast [Rank 2] (RECIPE!)
+								i(133870),	-- Recipe: Lavish Suramar Feast [Rank 3] (RECIPE!)
 							}),
 							sharedData({["cost"]={{"i",133607,5}}}, {	-- Silver Mackerel
-								i(133846),	-- Recipe: Dried Mackerel Strips [Rank 2]
-								i(133866),	-- Recipe: Dried Mackerel Strips [Rank 3]
+								i(133846),	-- Recipe: Dried Mackerel Strips [Rank 2] (RECIPE!)
+								i(133866),	-- Recipe: Dried Mackerel Strips [Rank 3] (RECIPE!)
 							}),
 							sharedData({["cost"]={{"i",133680,5}}}, {	-- Slice of Bacon
-								i(133871),	-- Recipe: Crispy Bacon [Rank 1]
-								i(133872),	-- Recipe: Crispy Bacon [Rank 2]
-								i(133873),	-- Recipe: Crispy Bacon [Rank 3]
-								i(133829),	-- Recipe: Hearty Feast [Rank 1]
-								i(133849),	-- Recipe: Hearty Feast [Rank 2]
-								i(133869),	-- Recipe: Hearty Feast [Rank 3]
+								i(133871),	-- Recipe: Crispy Bacon [Rank 1] (RECIPE!)
+								i(133872),	-- Recipe: Crispy Bacon [Rank 2] (RECIPE!)
+								i(133873),	-- Recipe: Crispy Bacon [Rank 3] (RECIPE!)
+								i(133829),	-- Recipe: Hearty Feast [Rank 1] (RECIPE!)
+								i(133849),	-- Recipe: Hearty Feast [Rank 2] (RECIPE!)
+								i(133869),	-- Recipe: Hearty Feast [Rank 3] (RECIPE!)
 							}),
 							sharedData({["cost"]={{"i",124110,5}}}, {	-- Stormray
-								i(133833),	-- Recipe: Pickled Stormray [Rank 2]
-								i(133853),	-- Recipe: Pickled Stormray [Rank 3]
-								i(133829),	-- Recipe: Hearty Feast [Rank 1]
-								i(133849),	-- Recipe: Hearty Feast [Rank 2]
-								i(133869),	-- Recipe: Hearty Feast [Rank 3]
-								i(133839),	-- Recipe: Koi-Scented Stormray [Rank 2]
-								i(133859),	-- Recipe: Koi-Scented Stormray [Rank 3]
-								i(133824),	-- Recipe: Seed-Battered Fish Plate [Rank 1]
-								i(133844),	-- Recipe: Seed-Battered Fish Plate [Rank 2]
-								i(133864),	-- Recipe: Seed-Battered Fish Plate [Rank 3]
-								i(133830),	-- Recipe: Lavish Suramar Feast [Rank 1]
-								i(133850),	-- Recipe: Lavish Suramar Feast [Rank 2]
-								i(133870),	-- Recipe: Lavish Suramar Feast [Rank 3]
+								i(133833),	-- Recipe: Pickled Stormray [Rank 2] (RECIPE!)
+								i(133853),	-- Recipe: Pickled Stormray [Rank 3] (RECIPE!)
+								i(133829),	-- Recipe: Hearty Feast [Rank 1] (RECIPE)
+								i(133849),	-- Recipe: Hearty Feast [Rank 2] (RECIPE)
+								i(133869),	-- Recipe: Hearty Feast [Rank 3] (RECIPE)
+								i(133839),	-- Recipe: Koi-Scented Stormray [Rank 2] (RECIPE!)
+								i(133859),	-- Recipe: Koi-Scented Stormray [Rank 3] (RECIPE!)
+								i(133824),	-- Recipe: Seed-Battered Fish Plate [Rank 1] (RECIPE!)
+								i(133844),	-- Recipe: Seed-Battered Fish Plate [Rank 2] (RECIPE!)
+								i(133864),	-- Recipe: Seed-Battered Fish Plate [Rank 3] (RECIPE!)
+								i(133830),	-- Recipe: Lavish Suramar Feast [Rank 1] (RECIPE!)
+								i(133850),	-- Recipe: Lavish Suramar Feast [Rank 2] (RECIPE!)
+								i(133870),	-- Recipe: Lavish Suramar Feast [Rank 3] (RECIPE!)
 							}),
 							sharedData({["cost"]={{"i",124121,5}}}, {	-- Wildfowl Egg
-								i(133834),	-- Recipe: Faronaar Fizz [Rank 2]
-								i(133854),	-- Recipe: Faronaar Fizz [Rank 3]
-								i(133829),	-- Recipe: Hearty Feast [Rank 1]
-								i(133849),	-- Recipe: Hearty Feast [Rank 2]
-								i(133869),	-- Recipe: Hearty Feast [Rank 3]
-								i(133823),	-- Recipe: Nightborne Delicacy Platter [Rank 1]
-								i(133843),	-- Recipe: Nightborne Delicacy Platter [Rank 2]
-								i(133863),	-- Recipe: Nightborne Delicacy Platter [Rank 3]
+								i(133834),	-- Recipe: Faronaar Fizz [Rank 2] (RECIPE!)
+								i(133854),	-- Recipe: Faronaar Fizz [Rank 3] (RECIPE!)
+								i(133829),	-- Recipe: Hearty Feast [Rank 1] (RECIPE!)
+								i(133849),	-- Recipe: Hearty Feast [Rank 2] (RECIPE!)
+								i(133869),	-- Recipe: Hearty Feast [Rank 3] (RECIPE!)
+								i(133823),	-- Recipe: Nightborne Delicacy Platter [Rank 1] (RECIPE!)
+								i(133843),	-- Recipe: Nightborne Delicacy Platter [Rank 2] (RECIPE!)
+								i(133863),	-- Recipe: Nightborne Delicacy Platter [Rank 3] (RECIPE!)
 							}),
 							sharedData({["sym"]={{"select","itemID",
-									133842,	-- Recipe: Azshari Salad [Rank 2]
-									133862,	-- Recipe: Azshari Salad [Rank 3]
-									133838,	-- Recipe: Barracuda Mrglgagh [Rank 2]
-									133858,	-- Recipe: Barracuda Mrglgagh [Rank 3]
-									133847,	-- Recipe: Bear Tartare [Rank 2]
-									133867,	-- Recipe: Bear Tartare [Rank 3]
-									133872,	-- Recipe: Crispy Bacon [Rank 2]
-									133873,	-- Recipe: Crispy Bacon [Rank 3]
-									133832,	-- Recipe: Deep-Fried Mossgill [Rank 2]
-									133852,	-- Recipe: Deep-Fried Mossgill [Rank 3]
-									133846,	-- Recipe: Dried Mackerel Strips [Rank 2]
-									133866,	-- Recipe: Dried Mackerel Strips [Rank 3]
-									133840,	-- Recipe: Drogbar-Style Salmon [Rank 2]
-									133860,	-- Recipe: Drogbar-Style Salmon [Rank 3]
-									133834,	-- Recipe: Faronaar Fizz [Rank 2]
-									133854,	-- Recipe: Faronaar Fizz [Rank 3]
-									133848,	-- Recipe: Fighter Chow [Rank 2]
-									133868,	-- Recipe: Fighter Chow [Rank 3]
-									133845,	-- Recipe: Fishbrul Special [Rank 2]
-									133865,	-- Recipe: Fishbrul Special [Rank 3]
-									133849,	-- Recipe: Hearty Feast [Rank 2]
-									133869,	-- Recipe: Hearty Feast [Rank 3]
-									133839,	-- Recipe: Koi-Scented Stormray [Rank 2]
-									133859,	-- Recipe: Koi-Scented Stormray [Rank 3]
-									133850,	-- Recipe: Lavish Suramar Feast [Rank 2]
-									133870,	-- Recipe: Lavish Suramar Feast [Rank 3]
-									133836, -- Recipe: Leybeque Ribs [Rank 2]
-									133856, -- Recipe: Leybeque Ribs [Rank 3]
-									133843,	-- Recipe: Nightborne Delicacy Platter [Rank 2]
-									133863,	-- Recipe: Nightborne Delicacy Platter [Rank 3]
-									133833,	-- Recipe: Pickled Stormray [Rank 2]
-									133853,	-- Recipe: Pickled Stormray [Rank 3]
-									133831,	-- Recipe: Salt and Pepper Shank [Rank 2]
-									133851,	-- Recipe: Salt and Pepper Shank [Rank 3]
-									133844,	-- Recipe: Seed-Battered Fish Plate [Rank 2]
-									133864,	-- Recipe: Seed-Battered Fish Plate [Rank 3]
-									133835,	-- Recipe: Spiced Rib Roast [Rank 2]
-									133855,	-- Recipe: Spiced Rib Roast [Rank 3]
-									133837,	-- Recipe: Suramar Surf and Turf [Rank 2]
-									133857,	-- Recipe: Suramar Surf and Turf [Rank 3]
-									133841,	-- Recipe: The Hungry Magister [Rank 2]
-									133861,	-- Recipe: The Hungry Magister [Rank 3]
+									133842,	-- Recipe: Azshari Salad [Rank 2] (RECIPE!)
+									133862,	-- Recipe: Azshari Salad [Rank 3] (RECIPE!)
+									133838,	-- Recipe: Barracuda Mrglgagh [Rank 2] (RECIPE!)
+									133858,	-- Recipe: Barracuda Mrglgagh [Rank 3] (RECIPE!)
+									133847,	-- Recipe: Bear Tartare [Rank 2] (RECIPE!)
+									133867,	-- Recipe: Bear Tartare [Rank 3] (RECIPE!)
+									133872,	-- Recipe: Crispy Bacon [Rank 2] (RECIPE!)
+									133873,	-- Recipe: Crispy Bacon [Rank 3] (RECIPE!)
+									133832,	-- Recipe: Deep-Fried Mossgill [Rank 2] (RECIPE!)
+									133852,	-- Recipe: Deep-Fried Mossgill [Rank 3] (RECIPE!)
+									133846,	-- Recipe: Dried Mackerel Strips [Rank 2] (RECIPE!)
+									133866,	-- Recipe: Dried Mackerel Strips [Rank 3] (RECIPE!)
+									133840,	-- Recipe: Drogbar-Style Salmon [Rank 2] (RECIPE!)
+									133860,	-- Recipe: Drogbar-Style Salmon [Rank 3] (RECIPE!)
+									133834,	-- Recipe: Faronaar Fizz [Rank 2] (RECIPE!)
+									133854,	-- Recipe: Faronaar Fizz [Rank 3] (RECIPE!)
+									133848,	-- Recipe: Fighter Chow [Rank 2] (RECIPE!)
+									133868,	-- Recipe: Fighter Chow [Rank 3] (RECIPE!)
+									133845,	-- Recipe: Fishbrul Special [Rank 2] (RECIPE!)
+									133865,	-- Recipe: Fishbrul Special [Rank 3] (RECIPE!)
+									133849,	-- Recipe: Hearty Feast [Rank 2] (RECIPE!)
+									133869,	-- Recipe: Hearty Feast [Rank 3] (RECIPE!)
+									133839,	-- Recipe: Koi-Scented Stormray [Rank 2] (RECIPE!)
+									133859,	-- Recipe: Koi-Scented Stormray [Rank 3] (RECIPE!)
+									133850,	-- Recipe: Lavish Suramar Feast [Rank 2] (RECIPE!)
+									133870,	-- Recipe: Lavish Suramar Feast [Rank 3] (RECIPE!)
+									133836, -- Recipe: Leybeque Ribs [Rank 2] (RECIPE!)
+									133856, -- Recipe: Leybeque Ribs [Rank 3] (RECIPE!)
+									133843,	-- Recipe: Nightborne Delicacy Platter [Rank 2] (RECIPE!)
+									133863,	-- Recipe: Nightborne Delicacy Platter [Rank 3] (RECIPE!)
+									133833,	-- Recipe: Pickled Stormray [Rank 2] (RECIPE!)
+									133853,	-- Recipe: Pickled Stormray [Rank 3] (RECIPE!)
+									133831,	-- Recipe: Salt and Pepper Shank [Rank 2] (RECIPE!)
+									133851,	-- Recipe: Salt and Pepper Shank [Rank 3] (RECIPE!)
+									133844,	-- Recipe: Seed-Battered Fish Plate [Rank 2] (RECIPE!)
+									133864,	-- Recipe: Seed-Battered Fish Plate [Rank 3] (RECIPE!)
+									133835,	-- Recipe: Spiced Rib Roast [Rank 2] (RECIPE!)
+									133855,	-- Recipe: Spiced Rib Roast [Rank 3] (RECIPE!)
+									133837,	-- Recipe: Suramar Surf and Turf [Rank 2] (RECIPE!)
+									133857,	-- Recipe: Suramar Surf and Turf [Rank 3] (RECIPE!)
+									133841,	-- Recipe: The Hungry Magister [Rank 2] (RECIPE!)
+									133861,	-- Recipe: The Hungry Magister [Rank 3] (RECIPE!)
 							}}}, {
 								i(151653, { -- Broken Isles Recipe Scrap
 									["description"] = "Use 10 of these to create an unlearned recipe.",
@@ -476,14 +476,14 @@ root(ROOTS.Zones, {
 							n(VENDORS, {
 								["description"] = "Before Nomi will sell you any of these, you need to complete the quest that awards them.\n\nUse the ATT Source Text in the tooltip for more information on where you can find them.",
 								["sym"] = { {"select","itemID",
-									133818,	-- Recipe: Barracuda Mrglgagh [Rank 1]
-									133812,	-- Recipe: Deep-Fried Mossgill [Rank 1]
-									133826,	-- Recipe: Dried Mackerel Strips [Rank 1]
-									133814,	-- Recipe: Faronaar Fizz [Rank 1]
-									133828,	-- Recipe: Fighter Chow [Rank 1]
-									133813,	-- Recipe: Pickled Stormray [Rank 1]
-									133810,	-- Recipe: Salt and Pepper Shank [Rank 1]
-									133815,	-- Recipe: Spiced Rib Roast [Rank 1]
+									133818,	-- Recipe: Barracuda Mrglgagh [Rank 1] (RECIPE!)
+									133812,	-- Recipe: Deep-Fried Mossgill [Rank 1] (RECIPE!)
+									133826,	-- Recipe: Dried Mackerel Strips [Rank 1] (RECIPE!)
+									133814,	-- Recipe: Faronaar Fizz [Rank 1] (RECIPE!)
+									133828,	-- Recipe: Fighter Chow [Rank 1] (RECIPE!)
+									133813,	-- Recipe: Pickled Stormray [Rank 1] (RECIPE!)
+									133810,	-- Recipe: Salt and Pepper Shank [Rank 1] (RECIPE!)
+									133815,	-- Recipe: Spiced Rib Roast [Rank 1] (RECIPE!)
 								}, },
 							})
 						),
@@ -506,7 +506,7 @@ root(ROOTS.Zones, {
 					q(44581, {	-- Spicing Things Up
 						["provider"] = { "n", 101846 },	-- Nomi
 						["g"] = {
-							i(133826),	-- Recipe: Dried Mackerel Strips
+							i(133826),	-- Recipe: Dried Mackerel Strips [Rank 1] (RECIPE!)
 						},
 					}),
 					q(40989, {	-- The Prodigal Sous Chef
@@ -514,14 +514,14 @@ root(ROOTS.Zones, {
 						-- ["sourceQuest"] = ,
 						["provider"] = { "n", 102546 },	-- Nomi
 						["groups"] = {
-							i(133826),	-- Recipe: Dried Mackerel Strips [Rank 1]
+							i(133826),	-- Recipe: Dried Mackerel Strips [Rank 1] (RECIPE!)
 						},
 					}),
 					q(40988, {	-- Too Many Chefs
 						["description"] = "If you did not cook with Nomi while questing in Pandaria, you will receive this quest instead of 'The Prodigal Sous Chef'.",
 						["provider"] = { "n", 102546 },	-- Nomi
 						["groups"] = {
-							i(133826),	-- Recipe: Dried Mackerel Strips [Rank 1]
+							i(133826),	-- Recipe: Dried Mackerel Strips [Rank 1] (RECIPE!)
 						},
 					}),
 				})),

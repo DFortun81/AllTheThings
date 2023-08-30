@@ -11,8 +11,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["g"] = {
 					i(166245, {	-- Tortollan Seekers Supplies
 						i(166704),	-- Bowl of Glowing Pufferfish (TOY!)
-						i(166807),	-- Recipe: Boralus Blood Sausage [Rank 3]
-						i(166264),	-- Recipe: Sanguiated Feast [Rank 3]
+						i(166807),	-- Recipe: Boralus Blood Sausage [Rank 3] (RECIPE!)
+						i(166264),	-- Recipe: Sanguiated Feast [Rank 3] (RECIPE!)
 					}),
 				},
 			})),

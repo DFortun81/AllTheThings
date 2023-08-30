@@ -116,7 +116,7 @@ root(ROOTS.Zones, {
 					ach(10262, {	-- Jungle Treasure Master
 						ach(10261),		-- Jungle Treasure Hunter
 					}),
-					
+
 					ach(10334, {	-- Predator
 						title(59),	-- Predator
 					}),
@@ -1524,7 +1524,7 @@ root(ROOTS.Zones, {
 					n(96240, {	-- Lok'goron Hashslinger
 						["coord"] = { 40.4, 45.8, TANAAN_JUNGLE },
 						["g"] = {
-							i(128501),	-- Recipe: Fel Eggs and Ham
+							i(128501),	-- Recipe: Fel Eggs and Ham (RECIPE!)
 						},
 					}),
 					n(93002, {	-- Magwia

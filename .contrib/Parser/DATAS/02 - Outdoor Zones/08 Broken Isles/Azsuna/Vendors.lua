@@ -72,7 +72,7 @@ root(ROOTS.Zones, {
 						i(142333, {	-- Manual: Feathered Luffa
 							["cost"] = 6000000,		-- 600g
 						}),
-						i(142331, {	-- Recipe: Spiced Falcosaur Omelet
+						i(142331, {	-- Recipe: Spiced Falcosaur Omelet (RECIPE!)
 							["cost"] = 10000000,	-- 1,000g
 						}),
 						i(137713, {	-- Schematic: Bolt-Action Headgun [Rank 3] (RECIPE!)

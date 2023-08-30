@@ -450,7 +450,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					["coord"] = { 37.1, 58.4, VALSHARAH },
 					["provider"] = { "n", 94117 },	-- Cecily Radcliffe
 					["groups"] = {
-						i(133812),	-- Recipe: Deep-Fried Mossgill
+						i(133812),	-- Recipe: Deep-Fried Mossgill [Rank 1] (RECIPE!)
 						i(129168),	-- Band of Sablehide
 						i(130009),	-- Bonefeather Talisman
 					},
