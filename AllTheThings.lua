@@ -6732,19 +6732,6 @@ function(fields, type)
 	end;
 	return fields;
 end
--- Sets a given base table/function to act as the meta-table __index for another table
-app.SetBaseObject = function(t, base)
-	if not t then return; end
-	local mt = getmetatable(t);
-	if mt then
-		-- app.PrintDebug("SetBase",base.hash)
-		mt.__index = base;
-	else
-		-- app.PrintDebug("NewBase",base.hash)
-		setmetatable(t, { __index = base } );
-	end
-	return t;
-end
 -- Allows wrapping a Type Object with another Base Type. This allows for multiple inheritance of
 -- Objects without requiring a full definition of altered field functions
 app.WrapObject = function(t, base)
@@ -6819,7 +6806,7 @@ end)();
 
 -- Common Wrapper Types
 do
-local Wrap, SetBase = app.WrapObject, app.SetBaseObject;
+local Wrap = app.WrapObject;
 local HeaderCloneFields = {
 	-- Fields in the wrapped object which should not persist when represented as a Header
 	["collectible"] = app.ReturnNil,
@@ -6868,13 +6855,6 @@ local BaseFilterHeaderClone = app.BaseObjectFields(FilterHeaderCloneFields, "Fil
 app.CreateWrapFilterHeader = function(t)
 	return Wrap(t, BaseFilterHeaderClone);
 end
--- Returns a 'read-only' wrap of the given object such that it is represented as itself via field access of the raw object if nil, but any table assignment
--- affects only the raw object and not the read-only object
--- app.CreateReadOnlyObject = function(t)
--- 	t = SetBase({}, t);
--- 	t.__readonly = true;
--- 	return t;
--- end
 end	-- Common Wrapper Types
 
 -- Quest Lib
@@ -19807,7 +19787,6 @@ customWindowUpdates["list"] = function(self, force, got)
 		self.initialized = true;
 		force = true;
 		local DGU, DGR, SearchObject = app.DirectGroupUpdate, app.DirectGroupRefresh, app.SearchForObject;
-		local SetBase = app.SetBaseObject;
 
 		-- custom params for initialization
 		local dataType = (app.GetCustomWindowParam("list", "type") or "quest");
@@ -19908,10 +19887,11 @@ customWindowUpdates["list"] = function(self, force, got)
 				-- app.PrintDebug("OTF",id)
 				id = CacheFields[id];
 				-- app.PrintDebug("OTF:CacheID",dataType,id)
-				return SetBase({visible = true},
-					SearchObject(dataType, id, "key") or
-					SearchObject(dataType, id, "field") or
-					CreateObject({[dataType]=id}));
+				return setmetatable({ visible = true }, {
+					__index = SearchObject(dataType, id, "key")
+					or SearchObject(dataType, id, "field")
+					or CreateObject({[dataType]=id})
+				});
 			end
 			-- app.PrintDebug("SetLimit",#CacheFields)
 			self.Limit = #CacheFields;
@@ -19922,11 +19902,11 @@ customWindowUpdates["list"] = function(self, force, got)
 		local function CreateTypeObject(type, id)
 			-- app.PrintDebug("DLO-Obj:",type,id)
 			local func = ObjectTypeFuncs[type];
-			if func then
-				return func(id);
-			end
+			if func then return func(id); end
 			-- Simply a visible table whose Base will be the actual referenced object
-			return SetBase({visible = true}, SearchObject(type, id, "field") or CreateObject({[type]=id}));
+			return setmetatable({ visible = true }, {
+				__index = SearchObject(type, id, "field") or CreateObject({[type]=id})
+			});
 		end
 
 		-- info about the Window

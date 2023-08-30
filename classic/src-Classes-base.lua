@@ -149,6 +149,7 @@ local BaseObjectFields = function(fields, className)
 		end
 	};
 end
+app.BaseObjectFields = BaseObjectFields;
 app.BaseClass = BaseObjectFields(nil, "BaseClass");
 
 app.CreateClass = function(className, classKey, fields, ...)
@@ -282,4 +283,3 @@ for i,instance in ipairs({
 	instance.OnTest(instance);
 end
 ]]--
-app.BaseObjectFields = BaseObjectFields;

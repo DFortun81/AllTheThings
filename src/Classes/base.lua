@@ -8,6 +8,7 @@ local type, pairs, tonumber, setmetatable, rawget, tinsert
 
 -- App locals
 local GetRelativeValue = app.GetRelativeValue;
+local containsValue = app.containsValue;
 
 -- Lib Helpers
 local constructor = function(id, t, typeID)
@@ -106,7 +107,6 @@ local DefaultValues = {
 app.ClassDefaultValues_TEMP = DefaultValues;
 
 -- Represents default field evaluation logic for all Classes unless defined within the Class
-local containsValue = app.containsValue;
 local DefaultFields = {
 	-- Cloned groups will not directly have a parent, but they will instead have a sourceParent, so fill in with that instead
 	["parent"] = function(t)
