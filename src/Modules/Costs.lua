@@ -10,13 +10,12 @@ local rawget, ipairs, pairs
 	= rawget, ipairs, pairs;
 
 -- App locals
-local SearchForField, SearchForFieldContainer
-	= app.SearchForField, app.SearchForFieldContainer;
+local EmptyFunction, SearchForField, SearchForFieldContainer
+	= app.EmptyFunction, app.SearchForField, app.SearchForFieldContainer;
 
 -- Module locals
 local RecursiveGroupRequirementsFilter, GroupFilter, DGU, UpdateRunner, CheckCanBeCollected;
 -- Ideally never used, but weird situations are possible to cause logic to execute prior to ATT even loading
-local function EmptyFunction() end
 local function CanBeCollected(ref)
 	return not ref.questID or not ref.saved;
 end

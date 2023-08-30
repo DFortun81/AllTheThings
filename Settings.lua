@@ -853,7 +853,7 @@ ATTSettingsPanelMixin = {
 		local title_text = opts.title or ""
 		local width = opts.width or 0
 		local default_val = opts.defaultVal or ""
-		local change_func = opts.changeFunc or function() end
+		local change_func = opts.changeFunc or app.EmptyFunction
 		local template = opts.template or "UIDropDownMenuTemplate"
 
 		local dropdown = CreateFrame("Frame", dropdown_name, self, template)
@@ -4235,7 +4235,7 @@ local buttonCreateProfile = child:CreateButton(
 					return true
 				end
 				-- TODO dialog about existing profile
-				-- app:ShowPopupDialog("Profile already exists!", function() end)
+				-- app:ShowPopupDialog("Profile already exists!", app.EmptyFunction)
 			end
 		-- end
 	end,
@@ -4260,7 +4260,7 @@ local buttonDeleteProfile = child:CreateButton(
 				return true
 			end
 			-- TODO dialog about not deleting a profile
-			-- app:ShowPopupDialog("Profile cannot be deleted!", function() end)
+			-- app:ShowPopupDialog("Profile cannot be deleted!", app.EmptyFunction)
 		end
 	end
 })

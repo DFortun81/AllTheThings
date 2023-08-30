@@ -156,10 +156,6 @@ end
 --]]
 
 -- Coroutine Helper Functions
-app.EmptyFunction = function() end;
-app.ReturnTrue = function() return true; end
-app.ReturnFalse = function() return false; end
-app.ReturnNil = function() return; end
 app.AlwaysShowUpdate = function(data) data.visible = true; return true; end
 app.AlwaysShowUpdateWithoutReturn = function(data) data.visible = true; end
 local Push = app.Push;
@@ -21539,7 +21535,7 @@ app.OpenAuctionModule = function(self)
 	if true then return; end
 
 	if IsAddOnLoaded("TradeSkillMaster") then -- Why, TradeSkillMaster, why are you like this?
-		C_Timer.After(2, function() end);
+		C_Timer.After(2, app.EmptyFunction);
 	end
 	if app.Blizzard_AuctionHouseUILoaded then
 		-- Localize some global APIs
@@ -21560,7 +21556,7 @@ app.OpenAuctionModule = function(self)
 		PanelTemplates_EnableTab  (AuctionHouseFrame, tabID);
 
 		-- Garbage collect the function after this is executed.
-		app.OpenAuctionModule = function() end;
+		app.OpenAuctionModule = app.EmptyFunction;
 		app.AuctionModuleTabID = tabID;
 
 		-- Create the movable Auction Data window.

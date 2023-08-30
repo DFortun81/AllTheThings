@@ -3345,7 +3345,7 @@ if TooltipDataProcessor then
 			local name, link, id = TooltipUtil.GetDisplayedItem(tooltip);
 			if link and id then
 				if id == 137642 then -- skip Mark of Honor for now
-					AttachTooltipSearchResults(self, 1, link, (function() end), "itemID", 137642);
+					AttachTooltipSearchResults(self, 1, link, app.EmptyFunction, "itemID", 137642);
 					return true;
 				else
 					AttachTooltipSearchResults(tooltip, 1, link, SearchForLink, link);
@@ -4034,9 +4034,7 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 		["collectible"] = function(t)
 			return app.Settings.Collectibles.Achievements;
 		end,
-		["trackable"] = function(t)
-			return true;
-		end,
+		["trackable"] = app.ReturnTrue,
 		["text"] = function(t)
 			return "|cffffff00[Criteria: " .. (t.name or RETRIEVING_DATA) .. "]|r";
 		end,
@@ -4945,15 +4943,9 @@ app.CreateUnit = app.CreateClass("Unit", "unit", {
 	end,
 });
 app.CreateQuestUnit = app.ExtendClass("Unit", "QuestUnit", "unit", {
-	["visible"] = function(t)
-		return true;
-	end,
-	["collectible"] = function(t)
-		return true;
-	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["visible"] = app.ReturnTrue,
+	["collectible"] = app.ReturnTrue,
+	["trackable"] = app.ReturnTrue,
 	["collected"] = function(t)
 		return t.saved;
 	end,
@@ -5063,7 +5055,8 @@ if C_PetJournal then
 		return select(6, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
 	end
 	speciesFields.collected = function(t)
-		return SetBattlePetCollected(t, t.speciesID, C_PetJournal.GetNumCollectedInfo(t.speciesID) > 0);
+		local count = C_PetJournal.GetNumCollectedInfo(t.speciesID);
+		return SetBattlePetCollected(t, t.speciesID, count and count > 0);
 	end
 	
 	local C_MountJournal = _G["C_MountJournal"];
@@ -5644,9 +5637,7 @@ if EJ_GetEncounterInfo then
 		end,
 	},
 	"WithQuest", {
-		trackable = function(t)
-			return true;
-		end,
+		trackable = app.ReturnTrue,
 		saved = function(t)
 			return IsQuestFlaggedCompletedForObject(t) == 1;
 		end
@@ -5771,9 +5762,7 @@ local fields = {
 	["icon"] = function(t)
 		return app.asset("Category_Factions");
 	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["trackable"] = app.ReturnTrue,
 	["collectible"] = function(t)
 		if app.Settings.Collectibles.Reputations then
 			-- If your reputation is higher than the maximum for a different faction, return partial completion.
@@ -6155,9 +6144,7 @@ app.CreateGarrisonTalent = app.CreateClass("GarrisonTalent", "garrisonTalentID",
 	description = function(t)
 		return t.info.description;
 	end,
-	trackable = function(t)
-		return true;
-	end,
+	trackable = app.ReturnTrue,
 	saved = function(t)
 		return C_Garrison_GetTalentInfo(t.garrisonTalentID).researched;
 	end,
@@ -6390,9 +6377,7 @@ app.CreateItem = app.CreateClass("Item", "itemID", itemFields,
 		if app.CurrentCharacter.Factions[t.factionID] then return 1; end
 		if app.Settings.AccountWide.Reputations and ATTAccountWideData.Factions[t.factionID] then return 2; end
 	end,
-	trackable = function(t)
-		return true;
-	end,
+	trackable = app.ReturnTrue,
 	saved = function(t)
 		return IsQuestFlaggedCompletedForObject(t) == 1;
 	end
@@ -6404,9 +6389,7 @@ app.CreateItem = app.CreateClass("Item", "itemID", itemFields,
 	collected = function(t)
 		return IsQuestFlaggedCompletedForObject(t) or t.collectedAsCost;
 	end,
-	trackable = function(t)
-		return true;
-	end,
+	trackable = app.ReturnTrue,
 	saved = function(t)
 		return IsQuestFlaggedCompletedForObject(t) == 1;
 	end
@@ -6457,9 +6440,7 @@ local itemHarvesterFields = CloneDictionary(itemFields);
 itemHarvesterFields.collectible = function(t)
 	return true;
 end
-itemHarvesterFields.collected = function(t)
-	return false;
-end
+itemHarvesterFields.collected = app.ReturnFalse;
 itemHarvesterFields.text = function(t)
 	local link = t.link;
 	if link then
@@ -6598,7 +6579,7 @@ app.CreateItemHarvester = app.CreateClass("ItemHarvester", "itemID", itemHarvest
 			return link;
 		end
 	end
-}, (function(t) return false; end));
+}, app.ReturnFalse);
 end)();
 
 -- Map Lib
@@ -7293,9 +7274,7 @@ local createNPC = app.CreateClass("NPC", "npcID", {
 	collected = function(t)
 		return IsQuestFlaggedCompletedForObject(t);
 	end,
-	trackable = function(t)
-		return true;
-	end,
+	trackable = app.ReturnTrue,
 	saved = function(t)
 		return IsQuestFlaggedCompletedForObject(t) == 1;
 	end
@@ -7425,9 +7404,7 @@ app.CreateHeader = app.CreateClass("AutomaticHeader", "autoID", {
 	collected = function(t)
 		return IsQuestFlaggedCompletedForObject(t);
 	end,
-	trackable = function(t)
-		return true;
-	end,
+	trackable = app.ReturnTrue,
 	saved = function(t)
 		return IsQuestFlaggedCompletedForObject(t) == 1;
 	end
@@ -7480,9 +7457,7 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 	collected = function(t)
 		return IsQuestFlaggedCompletedForObject(t);
 	end,
-	trackable = function(t)
-		return true;
-	end,
+	trackable = app.ReturnTrue,
 	saved = function(t)
 		return IsQuestFlaggedCompletedForObject(t) == 1;
 	end
@@ -7863,9 +7838,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		end
 		return IsQuestFlaggedCompletedForObject(t);
 	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t) == 1;
 	end,
@@ -8402,9 +8375,7 @@ local spellFields = {
 	["craftTypeID"] = function(t)
 		return app.CurrentCharacter.SpellRanks[t.spellID];
 	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["trackable"] = app.ReturnTrue,
 	["saved"] = function(t)
 		return GetSpellCooldown(t.spellID) > 0 and 1;
 	end,
@@ -8603,9 +8574,7 @@ app.CreateTitle = app.CreateClass("Title", "titleID", {
 	["collectible"] = function(t)
 		return app.Settings.Collectibles.Titles;
 	end,
-	["trackable"] = function(t)
-		return true;
-	end,
+	["trackable"] = app.ReturnTrue,
 	["collected"] = function(t)
 		local titleID = t.titleID;
 		return app.SetCollected(t, "Titles", titleID, IsTitleKnown(titleID));

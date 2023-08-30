@@ -87,9 +87,7 @@ if GetLootMethod and SetLootMethod then
 		description = function(t)
 			return lootMethodDescriptions[t.id];
 		end,
-		visible = function(t)
-			return true;
-		end,
+		visible = app.ReturnTrue,
 		OnClick = function(t)
 			return setLootMethod;
 		end,
@@ -126,9 +124,7 @@ if GetLootThreshold and SetLootThreshold then
 		description = function(t)
 			return NEWBIE_TOOLTIP_UNIT_LOOT_THRESHOLD;
 		end,
-		visible = function(t)
-			return true;
-		end,
+		visible = app.ReturnTrue,
 		OnClick = function(t)
 			return setLootThreshold;
 		end,

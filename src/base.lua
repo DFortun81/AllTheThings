@@ -25,6 +25,10 @@ local assetRootPath = "Interface\\Addons\\" .. appName .. "\\assets\\";
 app.asset = function(path)
 	return assetRootPath .. path;
 end
+app.EmptyFunction = function() end;
+app.ReturnTrue = function() return true; end
+app.ReturnFalse = function() return false; end
+app.ReturnNil = function() return; end
 
 -- External API
 -- TODO: We will use a common API eventually.

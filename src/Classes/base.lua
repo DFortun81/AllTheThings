@@ -229,7 +229,7 @@ app.CreateClass = function(className, classKey, fields, ...)
 		for key,method in pairs(fields) do
 			simpleclass[key] = method;
 		end
-		simpleclass.collectibleAsCost = function(t) return false; end;
+		simpleclass.collectibleAsCost = app.ReturnFalse;
 		simpleclass.collectedAsCost = nil;
 		local simplemeta = BaseObjectFields(simpleclass, "Simple" .. className);
 		fields.simplemeta = function(t) return simplemeta; end;
@@ -253,7 +253,7 @@ app.CreateClass = function(className, classKey, fields, ...)
 					for key,method in pairs(class) do
 						simpleclass[key] = method;
 					end
-					simpleclass.collectibleAsCost = function(t) return false; end;
+					simpleclass.collectibleAsCost = app.ReturnFalse;
 					simpleclass.collectedAsCost = nil;
 					local simplemeta = BaseObjectFields(simpleclass, "Simple" .. className .. args[i]);
 					class.simplemeta = function(t) return simplemeta; end;

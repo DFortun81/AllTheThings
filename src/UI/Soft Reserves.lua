@@ -1187,9 +1187,7 @@ app.CreateSoftReserveUnit = app.ExtendClass("Unit", "SoftReserveUnit", "unit", {
 			return " (" .. app.GetMapName(mapID) .. ")";
 		end
 	end,
-	["visible"] = function(t)
-		return true;
-	end,
+	["visible"] = app.ReturnTrue,
 	["itemID"] = function(t)
 		local guid = t.guid;
 		if guid then
