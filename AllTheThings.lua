@@ -2397,67 +2397,6 @@ NestObjects,
 PriorityNestObjects;
 app.searchCache = searchCache;
 (function()
-local function CreateHash(t)
-	local key = t.key or t.text;
-	if key then
-		local hash = key .. (t[key] or "NOKEY");
-		if key == "criteriaID" and t.achievementID then
-			hash = hash .. ":" .. t.achievementID;
-		elseif key == "itemID" and t.modItemID and t.modItemID ~= t.itemID then
-			hash = key .. t.modItemID;
-		elseif key == "creatureID" then
-			if t.encounterID then hash = hash .. ":" .. t.encounterID; end
-			local difficultyID = GetRelativeValue(t, "difficultyID");
-			if difficultyID then hash = hash .. "-" .. difficultyID; end
-		elseif key == "encounterID" then
-			if t.creatureID then hash = hash .. ":" .. t.creatureID; end
-			local difficultyID = GetRelativeValue(t, "difficultyID");
-			if difficultyID then hash = hash .. "-" .. difficultyID; end
-			if t.crs then
-				local numCrs = #t.crs;
-				if numCrs == 1 then
-					hash = hash .. t.crs[1];
-				elseif numCrs == 2 then
-					hash = hash .. t.crs[1] .. t.crs[2];
-				elseif numCrs > 2 then
-					hash = hash .. t.crs[1] .. t.crs[2] .. t.crs[3];
-				end
-			end
-		elseif key == "difficultyID" then
-			local instanceID = GetRelativeValue(t, "instanceID") or GetRelativeValue(t, "headerID");
-			if instanceID then hash = hash .. "-" .. instanceID; end
-		elseif key == "headerID" then
-			-- for custom headers, they may be used in conjunction with other bits of data that we don't want to merge together (because it makes no sense)
-			-- Separate if using Class requirements
-			if t.c then
-				for _,class in pairs(t.c) do
-					hash = hash .. "C" .. class;
-				end
-			end
-			-- Separate if using Faction/Race requirements
-			if t.r then
-				hash = "F" .. t.r .. hash;
-			elseif t.races then
-				for _,race in pairs(t.races) do
-					hash = hash .. "R" .. race;
-				end
-			end
-		elseif key == "spellID" and t.itemID then
-			-- Some recipes teach the same spell, so need to differentiate by their itemID as well
-			hash = hash .. ":" .. t.itemID;
-		end
-		if t.rank then
-			hash = hash .. "." .. t.rank;
-			-- app.PrintDebug("hash.rank",hash)
-		end
-		if t.nomerge then
-			hash = hash.."__"..app.UniqueCounter["Hash"];
-		end
-		t.hash = hash;
-		return hash;
-	end
-end
-app.CreateHash = CreateHash;
 MergeObject = function(g, t, index, newCreate)
 	if g and t then
 		local hash = t.hash;
@@ -2472,10 +2411,11 @@ MergeObject = function(g, t, index, newCreate)
 			end
 		-- else app.PrintDebug("NO Hash for MergeObject",t.text)
 		end
+		if newCreate then t = CreateObject(t); end
 		if index then
-			tinsert(g, index, newCreate and CreateObject(t) or t);
+			tinsert(g, index, t);
 		else
-			tinsert(g, newCreate and CreateObject(t) or t);
+			tinsert(g, t);
 		end
 	end
 end

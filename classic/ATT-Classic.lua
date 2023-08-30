@@ -952,14 +952,8 @@ local function GetKey(t)
 		end
 	end
 end
-local function CreateHash(t)
-	local key = t.key or GetKey(t);
-	if key then
-		return key .. t[key];
-	end
-end
 local function GetHash(t)
-	return t.hash or CreateHash(t);
+	return t.hash or app.CreateHash(t);
 end
 local function CreateObject(t)
 	local s = {};
@@ -1060,18 +1054,10 @@ MergeObject = function(g, t, index)
 						local c = rawget(o, k);
 						if not c then
 							c = CloneArray(v);
-							if o.itemID and o.itemID == 46752 then
-								for _,p in ipairs(c) do
-									print("INSERTING (CLONE)", p, C_CreatureInfo.GetRaceInfo(p).raceName);
-								end
-							end
 							rawset(o, k, c);
 						else
 							for _,p in ipairs(v) do
 								if not contains(c, p) then
-									if o.itemID and o.itemID == 46752 then
-										print("INSERTING", p, C_CreatureInfo.GetRaceInfo(p).raceName);
-									end
 									tinsert(c, p);
 								end
 							end
@@ -1096,11 +1082,6 @@ MergeObject = function(g, t, index)
 		tinsert(g, index, t);
 	else
 		tinsert(g, t);
-	end
-	if t.itemID and t.itemID == 46752 and t.races then
-		for _,p in ipairs(t.races) do
-			print("INSERTING (BASE)", p, C_CreatureInfo.GetRaceInfo(p).raceName);
-		end
 	end
 	rawset(t, "nmr", (t.races and not contains(t.races, app.RaceIndex)) or (t.r and t.r ~= app.FactionID));
 	rawset(t, "nmc", t.c and not contains(t.c, app.ClassIndex));

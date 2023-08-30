@@ -97,6 +97,7 @@ local function CreateHash(t)
 		return hash;
 	end
 end
+app.CreateHash = CreateHash;
 
 -- Represents default field evaluation logic for all Classes unless defined within the Class
 local DefaultFields = {
