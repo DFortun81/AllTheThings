@@ -807,6 +807,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["g"] = {
 							i(207178, {	-- Grimoire of the Darkfire Imp (CI!)
 								["timeline"] = { ADDED_10_1_5 },
+								["cost"] = 150000000,	-- 15,000g
 							}),
 						},
 					}),

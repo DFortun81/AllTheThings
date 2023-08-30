@@ -207,6 +207,7 @@ root(ROOTS.Character, filter(MISC, {
 		}),
 		i(207178, {	-- Grimoire of the Darkfire Imp (CI!)
 			["timeline"] = { ADDED_10_1_5 },
+			["cost"] = 150000000,	-- 15,000g
 		}),
 		i(207295, {	-- Grimoire of the Dreadfire Imp (CI!)
 			["timeline"] = { ADDED_10_1_5 },

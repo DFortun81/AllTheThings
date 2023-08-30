@@ -3453,7 +3453,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				o(403534, {	-- Trampled Doll
 					["description"] = "Located by a meat wagon in Darrowshire.",
 					["sourceQuests"] = { 76250 },	-- Spectral Essence
-					["coord"] = { 35.7, 84.7, EASTERN_PLAGUELANDS },
+					["coord"] = { 35.7, 83.6, EASTERN_PLAGUELANDS },
 					["groups"] = {
 						i(206361),	-- Trampled Doll
 					},
