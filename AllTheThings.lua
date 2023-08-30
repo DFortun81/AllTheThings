@@ -6690,9 +6690,6 @@ app.BaseObjectFields = not app.__perf and function(fields, type)
 		-- use default key value if existing
 		local def = ObjectDefaults[key];
 		if def ~= nil then return def; end
-		-- object is a wrapper for another Type object?
-		local base = rawget(t, "__base");
-		if base then return base[key]; end
 	end;
 	-- app.PrintDebug("BaseObjectFields",type,fields)
 	return fields;
@@ -6711,19 +6708,8 @@ function(fields, type)
 		objFunc = rawget(fields, key) or ObjectFunctions[key];
 		if objFunc then
 			result = objFunc(t);
-			key = tostring(key);
 		else
 			result = ObjectDefaults[key];
-			if result == nil and not objFunc then
-				-- object is a wrapper for another Type object?
-				local base = rawget(t, "__base");
-				if base then
-					result = base[key];
-					key = tostring(key).."__base";
-				end
-			else
-				key = tostring(key).."_miss";
-			end
 		end
 		local keyPerf = perf[key];
 		keyPerf.time = keyPerf.time + (GetTimePreciseSec() - now);
@@ -6732,11 +6718,7 @@ function(fields, type)
 	end;
 	return fields;
 end
--- Allows wrapping a Type Object with another Base Type. This allows for multiple inheritance of
--- Objects without requiring a full definition of altered field functions
-app.WrapObject = function(t, base)
-	return setmetatable({ __base=t}, base);
-end
+
 -- Clones an Object, fills any symlinks, builds groups, and does an Update pass before returning the Object
 app.RecreateObject = function(t)
 	local obj = CreateObject(t);
@@ -9158,7 +9140,7 @@ app.CreateCurrencyClass = function(id, t)
 end
 -- Wraps the given Type Object as a Cost Currency, allowing altered functionality representing this being a calculable 'cost'
 app.CreateCostCurrency = function(t, total)
-	local c = app.WrapObject(t, BaseCostCurrency);
+	local c = app.WrapObject(t, BaseCostCurrency.__index);
 	c.count = total;
 	-- cost currency should always be visible for clarity
 	c.OnUpdate = app.AlwaysShowUpdate;
@@ -10731,7 +10713,7 @@ app.CreateItem = function(id, t)
 end
 -- Wraps the given Type Object as a Cost Item, allowing altered functionality representing this being a calculable 'cost'
 app.CreateCostItem = function(t, total)
-	local c = app.WrapObject(t, BaseCostItem);
+	local c = app.WrapObject(t, BaseCostItem.__index);
 	c.count = total;
 	-- cost items should always be visible for clarity
 	c.OnUpdate = app.AlwaysShowUpdate;
@@ -15776,7 +15758,6 @@ RowOnEnter = function (self)
 		end
 		local fields = {
 			"__type",
-			"__base",
 			"key",
 			"hash",
 			"name",

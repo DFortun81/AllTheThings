@@ -198,9 +198,6 @@ local BaseObjectFields = function(fields, className)
 			-- use default key value if existing
 			local def = DefaultValues[key];
 			if def ~= nil then return def; end
-			-- object is a wrapper for another Type object?
-			local base = rawget(t, "__base");
-			if base then return base[key]; end
 		end
 	};
 end
@@ -297,6 +294,16 @@ app.ExtendClass = function(baseClassName, className, classKey, fields, ...)
 		print("Could not find specified base class:", baseClassName);
 	end
 	return app.CreateClass(className, classKey, fields, ...);
+end
+
+-- Allows wrapping a Type Object with another Base Type. This allows for multiple inheritance of
+-- Objects without requiring a full definition of altered field functions
+app.WrapObject = function(object, base)
+	return setmetatable({}, {
+		__index = function(t, key)
+			return base[key] or object[key];
+		end
+	});
 end
 
 --[[
