@@ -23,6 +23,7 @@ local constructor = function(id, t, typeID)
 		return {[typeID] = id};
 	end
 end
+local returnZero = function() return 0; end;
 
 -- Provides a Unique Counter value for the Key referenced on each reference
 local uniques = setmetatable({}, { __index = function(t, key) return 0; end });
@@ -97,15 +98,6 @@ local function CreateHash(t)
 	end
 end
 
--- Represents non-nil default values which are valid for all Classes regardless of Object content
-local DefaultValues = {
-	["progress"] = 0,
-	["total"] = 0,
-	["costProgress"] = 0,
-	["costTotal"] = 0,
-};
-app.ClassDefaultValues_TEMP = DefaultValues;
-
 -- Represents default field evaluation logic for all Classes unless defined within the Class
 local DefaultFields = {
 	-- Cloned groups will not directly have a parent, but they will instead have a sourceParent, so fill in with that instead
@@ -163,8 +155,11 @@ local DefaultFields = {
 		t.nmr = nmr;
 		return nmr;
 	end,
+	["costProgress"] = returnZero,
+    ["costTotal"] = returnZero,
+	["progress"] = returnZero,
+    ["total"] = returnZero,
 };
-app.ClassDefaultFields_TEMP = DefaultFields;
 
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
 local classDefinitions, _cache = {};
@@ -185,22 +180,19 @@ local BaseObjectFields = function(fields, className)
 	end
 	
 	-- Inject the default fields into the class
-	-- don't need to copy these into every class, just reference them if missing
-	-- for key,method in pairs(DefaultFields) do
-	-- 	if not rawget(class, key) then
-	-- 		class[key] = method;
-	-- 	end
-	-- end
+	for key,method in pairs(DefaultFields) do
+		if not rawget(class, key) then
+			class[key] = method;
+		end
+	end
 	return {
 		__index = function(t, key)
-			_cache = rawget(class, key) or DefaultFields[key];
+			_cache = rawget(class, key);
 			if _cache then return _cache(t); end
-			-- use default key value if existing
-			local def = DefaultValues[key];
-			if def ~= nil then return def; end
 		end
 	};
 end
+app.BaseObjectFields = BaseObjectFields;
 app.BaseClass = BaseObjectFields(nil, "BaseClass");
 
 app.CreateClass = function(className, classKey, fields, ...)

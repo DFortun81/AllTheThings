@@ -22,6 +22,7 @@ local constructor = function(id, t, typeID)
 		return {[typeID] = id};
 	end
 end
+local returnZero = function() return 0; end;
 
 -- Provides a Unique Counter value for the Key referenced on each reference
 local uniques = setmetatable({}, { __index = function(t, key) return 0; end });
@@ -96,7 +97,7 @@ local function CreateHash(t)
 	end
 end
 
--- Represents non-nil default values which are valid for all Classes regardless of Object content
+-- Represents default field evaluation logic for all Classes unless defined within the Class
 local DefaultFields = {
 	-- Cloned groups will not directly have a parent, but they will instead have a sourceParent, so fill in with that instead
 	["parent"] = function(t)
@@ -114,8 +115,10 @@ local DefaultFields = {
 	["repeatable"] = function(t)
 		return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly or t.isWorldQuest;
 	end,
-	["progress"] = function(t) return 0; end,
-	["total"] = function(t) return 0; end,
+	["costProgress"] = returnZero,
+    ["costTotal"] = returnZero,
+	["progress"] = returnZero,
+	["total"] = returnZero,
 };
 
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
@@ -243,6 +246,16 @@ app.ExtendClass = function(baseClassName, className, classKey, fields, ...)
 		print("Could not find specified base class:", baseClassName);
 	end
 	return app.CreateClass(className, classKey, fields, ...);
+end
+
+-- Allows wrapping a Type Object with another Base Type. This allows for multiple inheritance of
+-- Objects without requiring a full definition of altered field functions
+app.WrapObject = function(object, base)
+	return setmetatable({}, {
+		__index = function(t, key)
+			return base[key] or object[key];
+		end
+	});
 end
 
 --[[
