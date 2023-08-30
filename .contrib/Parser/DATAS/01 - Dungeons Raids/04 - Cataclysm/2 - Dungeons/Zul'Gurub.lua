@@ -46,8 +46,12 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_1_0 },
 			d(HEROIC_DUNGEON, {
 				n(ACHIEVEMENTS, {
 					ach(17367, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {	-- Deadliest Cache
-						crit(1),	-- Gain Jostled Gurubashi Cache
-						crit(2),	-- Waterlogged Gurubashi Cache
+						crit(58126, {	-- Jostled Gurubashi Cache
+							["provider"] = { "i", 203743 },	-- Jostled Gurubashi Cache
+						}),
+						crit(58125, {	-- Waterlogged Gurubashi Cache
+							["provider"] = { "i", 203742 },	-- Waterlogged Gurubashi Cache
+						}),
 					})),
 					ach(5744, {	-- Gurubashi Headhunter
 						crit(16808, {	-- Gub
