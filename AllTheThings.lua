@@ -9091,7 +9091,7 @@ app.CreateCurrencyClass = function(id, t)
 end
 -- Wraps the given Type Object as a Cost Currency, allowing altered functionality representing this being a calculable 'cost'
 app.CreateCostCurrency = function(t, total)
-	local c = app.WrapObject(t, BaseCostCurrency);
+	local c = app.WrapObject(setmetatable(constructor(t.currencyID, nil, "currencyID"), BaseCostCurrency), t);
 	c.count = total;
 	-- cost currency should always be visible for clarity
 	c.OnUpdate = app.AlwaysShowUpdate;
@@ -10664,7 +10664,7 @@ app.CreateItem = function(id, t)
 end
 -- Wraps the given Type Object as a Cost Item, allowing altered functionality representing this being a calculable 'cost'
 app.CreateCostItem = function(t, total)
-	local c = app.WrapObject(t, BaseCostItem);
+	local c = app.WrapObject(setmetatable(constructor(t.itemID, nil, "itemID"), BaseCostItem), t);
 	c.count = total;
 	-- cost items should always be visible for clarity
 	c.OnUpdate = app.AlwaysShowUpdate;
@@ -17191,14 +17191,12 @@ local BaseFilterHeaderClone = app.BaseObjectFields({
 	-- 	return 0.3;	-- visibility of which rows are cloned
 	-- end,
 }, "FilterHeaderClone");
--- Wraps a given object such that it can act as a filtered Header of the object
-app.CreateWrapFilterHeader = function(t)
-	return Wrap(t, BaseFilterHeaderClone);
+-- Wraps a given object such that it can act as a filtered Header of the base group
+local CreateWrapFilterHeader = function(base)
+	return Wrap(setmetatable(constructor(nil, {g={}}, "WrapFilterHeader"), BaseFilterHeaderClone), base);
 end
 local function CloneGroupIntoHeirarchy(group)
-	local groupCopy = app.CreateWrapFilterHeader(group);
-	-- always a parent, so it will have a .g
-	groupCopy.g = {};
+	local groupCopy = CreateWrapFilterHeader(group);
 	ClonedHierarachyMapping[group] = groupCopy;
 	return groupCopy;
 end
