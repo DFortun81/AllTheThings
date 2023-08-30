@@ -925,33 +925,6 @@ end
 -- Search Caching
 local searchCache = {};
 app.searchCache = searchCache;
-local keysByPriority = {	-- Sorted by frequency of use.
-	"itemID",
-	"questID",
-	"npcID",
-	"creatureID",
-	"objectID",
-	"mapID",
-	"currencyID",
-	"spellID",
-	"classID",
-	"professionID",
-	"categoryID",
-	"illusionID",
-	"headerID",
-};
-local function GetKey(t)
-	for i,key in ipairs(keysByPriority) do
-		if rawget(t, key) then
-			return key;
-		end
-	end
-	for i,key in ipairs(keysByPriority) do
-		if t[key] then	-- This goes a bit deeper.
-			return key;
-		end
-	end
-end
 local function GetHash(t)
 	return t.hash or app.CreateHash(t);
 end
