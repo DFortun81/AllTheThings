@@ -403,16 +403,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["_npcs"] = { 175821 },
 				}),
 			}),
-			ach(14747, {	-- Make it Double!
-				crit(1, {
-					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
-				}),
-			}),
-			ach(14746, {	-- Prepare for Trouble!
-				crit(1, {
-					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
-				}),
-			}),
 			ach(14658, {	-- Soulkeeper's Burden
 				["crs"] = {
 					174129,	-- Agonized Soul

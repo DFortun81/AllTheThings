@@ -266,12 +266,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["description"] = "Requires Tentative reputation with Ve'nari.",
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
+					["groups"] = {
+						ach(14746),	-- Prepare for Trouble!
+					},
 				}),
 				q(60285, {	-- Rule 6: Concealment is Everything
 					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
 					["description"] = "Requires Ambivalent reputation with Ve'nari.",
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
+					["groups"] = {
+						ach(14747),	-- Make it Double!
+					},
 				}),
 				q(62461, {	-- Stalking the Warrens
 					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
