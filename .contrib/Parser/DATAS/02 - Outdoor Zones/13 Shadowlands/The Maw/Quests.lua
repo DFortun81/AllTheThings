@@ -148,6 +148,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59767 },	-- The Path to Salvation
 					["provider"] = { "n", 167833 },	-- Anduin Wrynn
 					["coord"] = { 42.3, 42.1, 1648 },	-- pre-SL scenario
+					["groups"] = {
+						ach(14334),	-- Into the Maw
+					},
 				}),
 			}),
 			header(HEADERS.Achievement, 14761, {	-- Deciphering Death's Intentions

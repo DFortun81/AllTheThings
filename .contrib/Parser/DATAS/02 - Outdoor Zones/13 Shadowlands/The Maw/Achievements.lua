@@ -344,11 +344,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["_quests"] = { 63194 }
 				}),
 			}),
-			ach(14334, {	-- Into the Maw
-				crit(1, {
-					["sourceQuests"] = { 59770 },	-- Stand as One
-				}),
-			}),
 			ach(14660, {	-- It's About Sending a Message
 				crit(1, {	-- Drifting Sorrow
 					["_npcs"] = { 158314 },
