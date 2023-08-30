@@ -65,16 +65,16 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 			crit(61760, {	-- Draenic Philosopher's Stone
 				["provider"] = { "i", 109262 },	-- Draenic Philosopher's Stone
 			}),
-			crit(61761, {	-- Infernal Alchemist Stone
+			crit(15, {	-- Infernal Alchemist Stone
 				["provider"] = { "i", 127842 },	-- Infernal Alchemist Stone
 			}),
-			crit(61764, {	-- Astral Alchemist Stone
+			crit(16, {	-- Astral Alchemist Stone
 				["provider"] = { "i", 151607 },	-- Astral Alchemist Stone
 			}),
-			crit(61767, {	-- Siren's Alchemist Stone
+			crit(17, {	-- Siren's Alchemist Stone
 				["provider"] = { "i", 152637 },	-- Siren's Alchemist Stone
 			}),
-			crit(61770, {	-- Surging Alchemist Stone
+			crit(18, {	-- Surging Alchemist Stone
 				["provider"] = { "i", 152632 },	-- Surging Alchemist Stone
 			}),
 			crit(61773, {	-- Sanguinated Alchemist Stone
