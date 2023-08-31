@@ -4323,7 +4323,12 @@ root(ROOTS.Zones, {
 				-- #if AFTER MOP
 				filter(BATTLE_PETS, {
 					pet(1604, {	-- Nethaera's Light (PET!)
-						["description"] = "To obtain this pet do /cheer at it.",
+						["description"] = "To obtain this pet do /cheer at it.\nNote: May go to the closest player who does not already have the pet.",
+						["coords"] = {
+							{ 41.2, 41.6, NORTHREND_DALARAN },
+							{ 53.3, 35.3, NORTHREND_DALARAN },
+						},
+						["crs"] = { 93432 },	-- Nethaera's Light
 						["timeline"] = { ADDED_6_2_0 },
 					}),
 				}),

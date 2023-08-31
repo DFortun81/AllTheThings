@@ -20,7 +20,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			i(208150),	-- Blue Tweed Cap
 		}),
 		ach(18642, {	-- The Inquisitive
-			title(512),	-- <Name> The Inquisitve
+			["cost"] = {{"i",207580,1}},	-- Shomko's Unyielding Spear
+			["coord"] = { 33.6, 58.4, BOREAN_TUNDRA },
+			["groups"] = {
+				title(512),	-- <Name> The Inquisitve
+			},
 		}),
 		ach(18645, {
 			i(208149),	-- Brown Tweed Cap
@@ -35,6 +39,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			}),
 		}),
 		ach(18646, {	-- Whodunnit?
+			-- TODO: proper criteria
 			i(208152),	-- Pattie (MOUNT!)
 		}),
 	}),
@@ -62,6 +67,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 					["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
 					["cost"] = {{"i",207105,1}},	-- Tuskarr Ceremonial Spear
 				}),
+				i(208190, {	-- The Elder's Drawing
+					["provider"] = { "n", 26194 },	-- Elder Ko'nani
+					["coord"] = { 48.0, 74.8, DRAGONBLIGHT },
+					["cost"] = {{"i",207580,1}},	-- Shomko's Unyielding Spear
+				}),
 			},
 		})
 	}),
@@ -69,4 +79,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 
 root(ROOTS.Holidays, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 	q(77204),	-- placed 'Golden Chalice'
+	q(76987),	-- completed 'The Inquisitive'
+	q(76995),	-- looted Crazed Looter first time (208182)
 })))
