@@ -12677,7 +12677,6 @@ app:GetWindow("CurrentInstance", {
 		handlers.ZONE_CHANGED_INDOORS = RefreshLocation;
 		handlers.ZONE_CHANGED_NEW_AREA = RefreshLocation;
 		handlers.PLAYER_DIFFICULTY_CHANGED = function()
-			print("PLAYER_DIFFICULTY_CHANGED");
 			wipe(CachedMapData);
 			self.displayedMapID = nil;
 			self:Rebuild();
@@ -12704,7 +12703,6 @@ app:GetWindow("CurrentInstance", {
 		local mapID = self.mapID;
 		if mapID then
 			if not self.data or mapID ~= self.displayedMapID then
-				print("OnRebuild");
 				local results = CachedMapData[mapID];
 				if results then
 					self.displayedMapID = mapID;
