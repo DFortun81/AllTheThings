@@ -506,7 +506,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 		n(FACTIONS, {
 			faction(909, {	-- Darkmoon Faire
 				["icon"] = [[~_.asset("Event_dmf")]],
-				-- #if BEFOR 4.3.0
+				-- #if BEFORE 4.3.0
 				["OnTooltip"] = OnTooltipForDarkmoonFaire,
 				-- #endif
 			}),
