@@ -1045,6 +1045,7 @@ end
 dragonridingrace = function(id, t)						-- Creates a QUEST which is for a Dragonriding Race
 	t = q(id, t);
 	t.repeatable = true;
+	t.collectible = false;	-- quest literally cannot be completed
 	t.sourceQuestNumRequired = 1;
 	t.sourceQuests = {
 		68795,	-- Dragonriding
