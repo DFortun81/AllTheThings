@@ -12496,17 +12496,18 @@ local function SortForMiniList(a,b)
 		-- neither a or b exists, equality returns false
 		return false;
 	end
-	--[[
+	
 	if a.isRaid then
-		return b.isRaid;
+		if not b.isRaid then
+			return true;
+		end
 	elseif b.isRaid then
 		return false;
-	elseif a.maps then
-		return not not b.maps;
 	elseif b.maps then
-		return true;
+		if not a.maps then
+			return true;
+		end
 	end
-	]]---
 	
 	-- Any two similar-type groups with text
 	return tostring(a.name or a.text) < tostring(b.name or b.text);
@@ -12644,31 +12645,7 @@ local function RebuildMapData(self, mapID)
 		setmetatable(results,
 			results.classID and app.BaseCharacterClass
 			or app.BaseMap);
-
-		-- Move all "isRaid" entries to the top of the list.
-		--[[
-		if results.g then
-			local bottom = {};
-			local top = {};
-			for i=#results.g,1,-1 do
-				local o = results.g[i];
-				if o.isRaid then
-					tremove(results.g, i);
-					tinsert(top, o);
-				elseif o.maps then
-					tremove(results.g, i);
-					tinsert(bottom, o);
-				end
-			end
-			for i,o in ipairs(top) do
-				tinsert(results.g, 1, o);
-			end
-			for i,o in ipairs(bottom) do
-				tinsert(results.g, o);
-			end
-		end
-		]]--
-
+		
 		local difficultyID = (IsInInstance() and select(3, GetInstanceInfo())) or (EJ_GetDifficulty and EJ_GetDifficulty()) or 0;
 		if difficultyID ~= 0 then
 			for _,row in ipairs(header.g) do
