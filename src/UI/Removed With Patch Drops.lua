@@ -22,7 +22,7 @@ app:GetWindow("RWPD", {
 		self.data = {
 			text = "Removed With Patch Drops",
 			icon = app.asset("WindowIcon_RWP"), 
-			description = "This window shows you all of the things that get removed in a future patch from zone drop, rare, and world drop sources.",
+			description = "This window shows you all of the things excluding recipes that get removed in a future patch from zone drop, rare, and world drop sources.",
 			visible = true, 
 			expanded = true,
 			back = 1,
@@ -32,9 +32,9 @@ app:GetWindow("RWPD", {
 				local g = data.g;
 				if #g < 1 then
 					local results = app:BuildSearchFilteredResponse(app:GetDataCache().g, function(group)
-						if group.rwp and group.itemID then
+						if group.rwp and group.itemID and (not group.f or group.f ~= 200) then	-- Exclude recipes.
 							local headerID = GetRelativeValue(group, "headerID");
-							if headerID and allowedHeaders[headerID] and not (group.parent.rwp or group.parent.u == 1) then
+							if headerID and allowedHeaders[headerID] and (not (group.parent.rwp or group.parent.u == 1) or group.parent.awp) then
 								return true;
 							end
 						end
