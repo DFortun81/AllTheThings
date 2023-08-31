@@ -2137,14 +2137,14 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange, forceShow)
 	if questRef and questRef.questID and (not questRef.itemID or not questRef.u) then
 		-- app.PrintDebug("CheckInaccurateQuestInfo",questRef.questID,questChange)
 		local id = questRef.questID;
-		local completed = app.CurrentCharacter.Quests[id] and true;
+		local completed = app.CurrentCharacter.Quests[id];
 		-- expectations for accurate quest data
 		-- meets current character filters
-		local filter = app.CurrentCharacterFilters(questRef) and true;
+		local filter = app.CurrentCharacterFilters(questRef);
 		-- is marked as in the game
-		local inGame = app.Modules.Filter.Filters.InGame(questRef) and true;
+		local inGame = app.Modules.Filter.Filters.InGame(questRef);
 		-- repeatable or not previously completed or the accepted quest was immediately completed prior to the check, or character in party sync
-		local incomplete = (questRef.repeatable or not completed or app.LastQuestTurnedIn == completed or app.IsInPartySync) and true;
+		local incomplete = (questRef.repeatable or not completed or app.LastQuestTurnedIn == completed or app.IsInPartySync);
 		-- not missing pre-requisites
 		local metPrereq = not questRef.missingReqs;
 		if forceShow or not (
@@ -2161,10 +2161,10 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange, forceShow)
 
 			local popupID = "quest-filter-" .. id;
 			local checks = {
-				["Filter"] = filter,
-				["InGame"] = inGame,
-				["Incomplete"] = incomplete,
-				["PreReq"] = metPrereq,
+				["Filter"] = filter and true or false,
+				["InGame"] = inGame and true or false,
+				["Incomplete"] = incomplete and true or false,
+				["PreReq"] = metPrereq and true or false,
 			};
 			if app:SetupReportDialog(popupID, "Inaccurate Quest Info: " .. id,
 				app.BuildDiscordQuestInfoTable(id, "inaccurate-quest", questChange, questRef, checks))
