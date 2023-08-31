@@ -12446,30 +12446,6 @@ app:GetWindow("Prime", {
 
 
 
-local IsSameMap = function(data, results)
-	if data.mapID then
-		-- Exact same map?
-		if data.mapID == results.mapID then
-			return true;
-		end
-
-		-- Does the result map have an array of associated maps and this map is in there?
-		if results.maps and contains(results.maps, data.mapID) then
-			return true;
-		end
-	end
-	if data.maps then
-		-- Does the old map data contain this map?
-		if contains(data.maps, results.mapID) then
-			return true;
-		end
-
-		-- Does the result map have an array of associated maps and this map is in there?
-		if results.maps and containsAny(results.maps, data.maps) then
-			return true;
-		end
-	end
-end
 local function RefreshLocationCoroutine()
 	-- Wait a second, will ya? The position detection is BAD.
 	for i=1,30,1 do coroutine.yield(); end
@@ -12515,175 +12491,161 @@ end
 local function RefreshLocation()
 	app:StartATTCoroutine("RefreshLocation", RefreshLocationCoroutine);
 end
-local function RebuildMapData(self, mapID)
-	local results = SearchForField("mapID", mapID);
-	if #results > 0 then
-		-- Simplify the returned groups
-		local groups = {};
-		local headers = setmetatable({}, {
-			__index = function(t, headerID)
-				for i=1,#groups,1 do
-					local o = groups[i];
-					if o.headerID == headerID then
-						if not o.g then o.g = {}; end
-						t[headerID] = o;
-						return o;
+
+local CachedMapData = setmetatable({}, {
+	__index = function(cachedMapData, mapID)
+		local results = SearchForField("mapID", mapID);
+		if #results > 0 then
+			-- Simplify the returned groups
+			local groups = {};
+			local headers = setmetatable({}, {
+				__index = function(t, headerID)
+					for i=1,#groups,1 do
+						local o = groups[i];
+						if o.headerID == headerID then
+							if not o.g then o.g = {}; end
+							t[headerID] = o;
+							return o;
+						end
 					end
+					
+					local o = app.CreateNPC(headerID);
+					tinsert(groups, o);
+					t[headerID] = o;
+					o.g = {};
+					return o;
 				end
-				
-				local o = app.CreateNPC(headerID);
-				tinsert(groups, o);
-				t[headerID] = o;
-				o.g = {};
-				return o;
+			});
+			local function MergeIntoHeader(headerID, o)
+				MergeObject(headers[headerID].g, o);
 			end
-		});
-		local function MergeIntoHeader(headerID, o)
-			MergeObject(headers[headerID].g, o);
-		end
-		
-		local header = {};
-		header.mapID = mapID;
-		header.g = groups;
-		for i, group in ipairs(results) do
-			local clone = {};
-			for key,value in pairs(group) do
-				if key == "maps" then
-					local maps = {};
-					for i,mapID in ipairs(value) do
-						tinsert(maps, mapID);
-					end
-					clone[key] = maps;
-				elseif key == "g" then
-					local g = {};
-					for i,o in ipairs(value) do
-						o = CloneReference(o);
-						ExpandGroupsRecursively(o, false);
-						tinsert(g, o);
-					end
-					clone[key] = g;
-				else
-					clone[key] = value;
-				end
-			end
-			local c = GetRelativeValue(group, "c");
-			if c then clone.c = c; end
-			local r = GetRelativeValue(group, "r");
-			if r then clone.r = r; end
-			setmetatable(clone, getmetatable(group));
 			
-			local key = group.key;
-			if (key == "mapID" or key == "instanceID") or ((key == "headerID" or key == "npcID") and (group.maps and (mapID < 0 and contains(group.maps, mapID)))) then
-				header.key = key;
-				header[key] = group[key];
-				MergeObject({header}, clone);
-			elseif key == "criteriaID" then
-				clone.achievementID = group.achievementID;
-				MergeIntoHeader(app.HeaderConstants.ACHIEVEMENTS, clone);
-			elseif key == "achievementID" then
-				MergeIntoHeader(app.HeaderConstants.ACHIEVEMENTS, clone);
-			elseif key == "questID" then
-				MergeIntoHeader(app.HeaderConstants.QUESTS, clone);
-			elseif key == "factionID" then
-				MergeIntoHeader(app.HeaderConstants.FACTIONS, clone);
-			elseif key == "explorationID" then
-				MergeIntoHeader(app.HeaderConstants.EXPLORATION, clone);
-			elseif key == "flightPathID" then
-				MergeIntoHeader(app.HeaderConstants.FLIGHT_PATHS, clone);
-			elseif key == "itemID" or key == "spellID" then
-				if GetRelativeField(group, "headerID", app.HeaderConstants.ZONE_DROPS) then
-					MergeIntoHeader(app.HeaderConstants.ZONE_DROPS, clone);
-				else
-					local requireSkill = GetRelativeValue(group, "requireSkill");
-					if requireSkill then
-						MergeObject(groups, app.CreateProfession(requireSkill, { g = { clone } }));
+			local header = {};
+			header.mapID = mapID;
+			header.g = groups;
+			for i, group in ipairs(results) do
+				local clone = {};
+				for key,value in pairs(group) do
+					if key == "maps" then
+						local maps = {};
+						for i,mapID in ipairs(value) do
+							tinsert(maps, mapID);
+						end
+						clone[key] = maps;
+					elseif key == "g" then
+						local g = {};
+						for i,o in ipairs(value) do
+							o = CloneReference(o);
+							ExpandGroupsRecursively(o, false);
+							tinsert(g, o);
+						end
+						clone[key] = g;
 					else
-						local headerID = GetRelativeValue(group, "headerID");
-						if headerID then
-							MergeIntoHeader(headerID, clone);
+						clone[key] = value;
+					end
+				end
+				local c = GetRelativeValue(group, "c");
+				if c then clone.c = c; end
+				local r = GetRelativeValue(group, "r");
+				if r then clone.r = r; end
+				setmetatable(clone, getmetatable(group));
+				
+				local key = group.key;
+				if (key == "mapID" or key == "instanceID") or ((key == "headerID" or key == "npcID") and (group.maps and (mapID < 0 and contains(group.maps, mapID)))) then
+					header.key = key;
+					header[key] = group[key];
+					MergeObject({header}, clone);
+				elseif key == "criteriaID" then
+					clone.achievementID = group.achievementID;
+					MergeIntoHeader(app.HeaderConstants.ACHIEVEMENTS, clone);
+				elseif key == "achievementID" then
+					MergeIntoHeader(app.HeaderConstants.ACHIEVEMENTS, clone);
+				elseif key == "questID" then
+					MergeIntoHeader(app.HeaderConstants.QUESTS, clone);
+				elseif key == "factionID" then
+					MergeIntoHeader(app.HeaderConstants.FACTIONS, clone);
+				elseif key == "explorationID" then
+					MergeIntoHeader(app.HeaderConstants.EXPLORATION, clone);
+				elseif key == "flightPathID" then
+					MergeIntoHeader(app.HeaderConstants.FLIGHT_PATHS, clone);
+				elseif key == "itemID" or key == "spellID" then
+					if GetRelativeField(group, "headerID", app.HeaderConstants.ZONE_DROPS) then
+						MergeIntoHeader(app.HeaderConstants.ZONE_DROPS, clone);
+					else
+						local requireSkill = GetRelativeValue(group, "requireSkill");
+						if requireSkill then
+							MergeObject(groups, app.CreateProfession(requireSkill, { g = { clone } }));
 						else
-							MergeObject(groups, clone);
+							local headerID = GetRelativeValue(group, "headerID");
+							if headerID then
+								MergeIntoHeader(headerID, clone);
+							else
+								MergeObject(groups, clone);
+							end
+						end
+					end
+				elseif key == "headerID" then
+					MergeObject(groups, clone);
+				else
+					local headerID = GetRelativeValue(group, "headerID");
+					if headerID then
+						MergeIntoHeader(headerID, clone);
+					else
+						MergeObject(groups, clone);
+					end
+				end
+			end
+			
+			-- Swap out the map data for the header.
+			results = ((results.classID and app.CreateCharacterClass) or (header.key == "instanceID" and app.CreateInstance) or app.CreateMap)(header[header.key], header);
+			ExpandGroupsRecursively(results, true);
+			results.visible = true;
+			results.expanded = true;
+			results.mapID = mapID;
+			results.back = 1;
+			results.indent = 0;
+			
+			local difficultyID = (IsInInstance() and select(3, GetInstanceInfo())) or (EJ_GetDifficulty and EJ_GetDifficulty()) or 0;
+			if difficultyID ~= 0 then
+				for _,row in ipairs(header.g) do
+					if row.difficultyID or row.difficulties then
+						if (row.difficultyID or -1) == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+							if not row.expanded then ExpandGroupsRecursively(row, true, true); expanded = true; end
+						elseif row.expanded then
+							ExpandGroupsRecursively(row, false, true);
 						end
 					end
 				end
-			elseif key == "headerID" then
-				MergeObject(groups, clone);
-			else
-				local headerID = GetRelativeValue(group, "headerID");
-				if headerID then
-					MergeIntoHeader(headerID, clone);
-				else
-					MergeObject(groups, clone);
-				end
 			end
-		end
-		
-		-- Swap out the map data for the header.
-		results = (header.key == "instanceID" and app.CreateInstance or app.CreateMap)(header.mapID, header);
-		results.back = 1;
-		
-		-- Sort the groups.
-		app.Sort(groups, SortForMiniList);
 
-		local oldData = self.data;
-		if oldData then
-			if IsSameMap(oldData, results) then
-				ReapplyExpand(oldData.g, results.g);
-			else
-				ExpandGroupsRecursively(results, true);
-			end
-			results.e = nil;
-			results.u = nil;
+			-- Check to see completion...
+			BuildGroups(results);
+			app.Sort(groups, SortForMiniList);
+			cachedMapData[mapID] = results;
+			return results;
 		else
-			ExpandGroupsRecursively(results, true);
-		end
-		results.mapID = mapID;
-		results.visible = true;
-		results.expanded = true;
-		results.back = 1;
-		results.indent = 0;
-		setmetatable(results,
-			results.classID and app.BaseCharacterClass
-			or app.BaseMap);
-		
-		local difficultyID = (IsInInstance() and select(3, GetInstanceInfo())) or (EJ_GetDifficulty and EJ_GetDifficulty()) or 0;
-		if difficultyID ~= 0 then
-			for _,row in ipairs(header.g) do
-				if row.difficultyID or row.difficulties then
-					if (row.difficultyID or -1) == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-						if not row.expanded then ExpandGroupsRecursively(row, true, true); expanded = true; end
-					elseif row.expanded then
-						ExpandGroupsRecursively(row, false, true);
+			-- If we don't have any map data on this area, report it to the chat window.
+			print("No map found for this location ", app.GetMapName(mapID), " [", mapID, "]");
+
+			local mapInfo = C_Map_GetMapInfo(mapID);
+			if mapInfo then
+				local mapPath = mapInfo.name or ("Map ID #" .. mapID);
+				mapID = mapInfo.parentMapID;
+				while mapID do
+					mapInfo = C_Map_GetMapInfo(mapID);
+					if mapInfo then
+						mapPath = (mapInfo.name or ("Map ID #" .. mapID)) .. " > " .. mapPath;
+						mapID = mapInfo.parentMapID;
+					else
+						break;
 					end
 				end
+				print("Path: ", mapPath);
 			end
+			print("Please report this to the ATT Discord! Thanks! ", app.Version);
 		end
-
-		-- Check to see completion...
-		BuildGroups(results);
-		return results;
-	else
-		-- If we don't have any map data on this area, report it to the chat window.
-		print("No map found for this location ", app.GetMapName(mapID), " [", mapID, "]");
-
-		local mapInfo = C_Map_GetMapInfo(mapID);
-		if mapInfo then
-			local mapPath = mapInfo.name or ("Map ID #" .. mapID);
-			mapID = mapInfo.parentMapID;
-			while mapID do
-				mapInfo = C_Map_GetMapInfo(mapID);
-				if mapInfo then
-					mapPath = (mapInfo.name or ("Map ID #" .. mapID)) .. " > " .. mapPath;
-					mapID = mapInfo.parentMapID;
-				else
-					break;
-				end
-			end
-			print("Path: ", mapPath);
-		end
-		print("Please report this to the ATT Discord! Thanks! ", app.Version);
 	end
-end
+});
 app:GetWindow("CurrentInstance", {
 	parent = UIParent,
 	Silent = true,
@@ -12712,6 +12674,12 @@ app:GetWindow("CurrentInstance", {
 		handlers.ZONE_CHANGED = RefreshLocation;
 		handlers.ZONE_CHANGED_INDOORS = RefreshLocation;
 		handlers.ZONE_CHANGED_NEW_AREA = RefreshLocation;
+		handlers.PLAYER_DIFFICULTY_CHANGED = function()
+			print("PLAYER_DIFFICULTY_CHANGED");
+			wipe(CachedMapData);
+			self.displayedMapID = nil;
+			self:Rebuild();
+		end
 		self.SetMapID = function(self, mapID)
 			if mapID ~= self.displayedMapID then
 				self.mapID = mapID;
@@ -12723,6 +12691,7 @@ app:GetWindow("CurrentInstance", {
 		self:RegisterEvent("ZONE_CHANGED");
 		self:RegisterEvent("ZONE_CHANGED_INDOORS");
 		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
+		pcall(self.RegisterEvent, self, "PLAYER_DIFFICULTY_CHANGED");
 		self:SetMapID(settings.mapID or app.CurrentMapID or app.GetCurrentMapID());
 		RefreshLocation();
 	end,
@@ -12733,7 +12702,8 @@ app:GetWindow("CurrentInstance", {
 		local mapID = self.mapID;
 		if mapID then
 			if not self.data or mapID ~= self.displayedMapID then
-				local results = RebuildMapData(self, mapID);
+				print("OnRebuild");
+				local results = CachedMapData[mapID];
 				if results then
 					self.displayedMapID = mapID;
 					self.data = results;
