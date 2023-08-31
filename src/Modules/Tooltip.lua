@@ -320,6 +320,24 @@ local function AttachTooltip(self, ttdata)
 		end
 	end
 
+	if id and app.Debugging then
+		self:AddDoubleLine("UID",id)
+		local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",id);
+		if spawn_uid then
+			local spawnEpoch = GetServerTime() - (GetServerTime() % 2^23)
+			local spawnEpochOffset = bit.band(tonumber(string.sub(spawn_uid, 5), 16), 0x7fffff)
+			local spawnIndex = bit.rshift(bit.band(tonumber(string.sub(spawn_uid, 1, 5), 16), 0xffff8), 3)
+			local spawnTime = spawnEpoch + spawnEpochOffset
+
+			if spawnTime > GetServerTime() then
+				-- This only occurs if the epoch has rolled over since a unit has spawned.
+				spawnTime = spawnTime - ((2^23) - 1)
+			end
+			self:AddDoubleLine("Spawned at:", date("%Y-%m-%d %H:%M:%S", spawnTime))
+			self:AddDoubleLine("Spawn index:", spawnIndex)
+		end
+	end
+
 	-- Does the tooltip have a target?
 	if self.AllTheThingsProcessing and target and id then
 		-- Yes.
