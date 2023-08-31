@@ -607,6 +607,107 @@ i(166264, 287112);	-- Sanguinated Feast [Rank 3]
 i(166368, 288033);	-- Seasoned Steak and Potatoes [Rank 3]
 i(166367, 288029);	-- Wild Berry Bread [Rank 3]
 
+-----------------
+-- PATCH 8.2.0 --
+-----------------
+-- TRAINER --
+i(0, 297084);	-- Abyssal-Fried Rissole [Rank 1]
+i(0, 297085);	-- Abyssal-Fried Rissole [Rank 2]
+i(0, 297081);	-- Baked Port Tato [Rank 1]
+i(0, 297082);	-- Baked Port Tato [Rank 2]
+i(0, 297087);	-- Bil'Tong [Rank 1]
+i(0, 297088);	-- Bil'Tong [Rank 2]
+i(0, 297105);	-- Famine Evaluator And Snack Table [Rank 1]
+i(0, 297077);	-- Fragrant Kakavia [Rank 1]
+i(0, 297075);	-- Fragrant Kakavia [Rank 2]
+i(0, 297078);	-- Mech-Dowel's "Big Mech" [Rank 1]
+i(0, 297079);	-- Mech-Dowel's "Big Mech" [Rank 2]
+-- ITEM --
+i(168332, 297086);	-- Abyssal-Fried Rissole [Rank 3]
+i(168331, 297083);	-- Baked Port Tato [Rank 3]
+i(168333, 297089);	-- Bil'Tong [Rank 3]
+i(168369, 297106);	-- Famine Evaluator And Snack Table [Rank 2]
+i(170211, 297107);	-- Famine Evaluator And Snack Table [Rank 3] (Drop)
+i(168368, 297107);	-- Famine Evaluator And Snack Table [Rank 3] (Reputation)
+i(168334, 297074);	-- Fragrant Kakavia [Rank 3]
+i(168330, 297080);	-- Mech-Dowel's "Big Mech" [Rank 3]
+i(170212, 301392);	-- Mecha-Bytes
+i(170075, 303788);	-- Unagi Skewer
+
+-----------------
+-- PATCH 8.3.0 --
+-----------------
+-- TRAINER (BOOK) --
+i(0, 314959);	-- Baked Voidfin / G'Zpacho
+i(0, 314961);	-- Dubious Delight / B'Sque
+i(0, 314962);	-- Ghastly Goulash / G'Ulash
+i(0, 314963);	-- Grilled Gnasher / B'Rscht
+i(0, 314960);	-- K'Bab
+
+-----------------
+-- PATCH 9.0.1 --
+-----------------
+-- TRAINER --
+i(0, 308415);	-- Banana Beef Pudding / 9.0 Cooking - Stam Food 02
+i(0, 308410);	-- Biscuits and Caviar / 9.0 Cooking - Health Food 01
+i(0, 308397);	-- Butterscotch Marinated Ribs / 9.0 Cooking - Crit Food 01
+i(0, 308411);	-- Candied Amberjack Cakes / 9.0 Cooking - Health Food 02
+i(0, 308404);	-- Cinnamon Bonefish Stew / 9.0 Cooking - Haste Food 01
+i(0, 308413);	-- Iridescent Ravioli with Apple Sauce / Crawler Ravioli with Apple Sauce / 9.0 Cooking - Mastery Food 02
+i(0, 308412);	-- Meaty Apple Dumplings / 9.0 Cooking - Mastery Food 01
+i(0, 308414);	-- Pickled Meat Smoothie / 9.0 Cooking - Stam Food 01
+i(0, 308417);	-- Seraph Tenders / Health / Mana Regenwich
+i(0, 309830);	-- Shadowlands Cooking
+i(0, 308419);	-- Smothered Shank / Pungent Sole Pinwheel
+i(0, 308400);	-- Spinefin Souffle and Fries / Phantasmal Souffle and Fries / 9.0 Cooking - Crit Food 02
+i(0, 308426);	-- Steak a la Mode / 9.0 Cooking - Vers Food 02
+i(0, 308402);	-- Surprisingly Palatable Feast / 9.0 Cooking - Feast 01
+i(0, 308425);	-- Sweet Silvergill Sausages / 9.0 Cooking - Vers Food 01
+i(0, 308405);	-- Tenebrous Crown Roast Aspic / 9.0 Cooking - Haste Food 02
+-- ITEM --
+i(182668, 308403);	-- Feast of Gluttonous Hedonism / 9.0 Cooking - Feast 02
+-- QUEST --
+i(0, 338100);	-- Arden Apple Pie
+i(0, 338107);	-- Diced Vegetables
+i(0, 338115);	-- Ember Sauce
+i(0, 338106);	-- Grazer Bone Broth
+i(0, 338101);	-- Oat Pie Crust
+i(0, 338117);	-- Seared Cutlets
+i(0, 338116);	-- Skewered Meats
+i(0, 338102);	-- Sliced Arden Apples
+i(0, 338110);	-- Spider Jerky
+i(0, 338105);	-- Steward Stew
+i(0, 338113);	-- Thick Spider Meat
+-- NYI --
+i(0, 308421);	-- Ardenweald Zonewich
+i(0, 308422);	-- Bastion Zonewich
+i(0, 308420);	-- Fried Bonefish / Speed Boostwich
+i(0, 308423);	-- Maldraxxus Zonewich
+i(0, 308416);	-- Quiethounds
+i(0, 308424);	-- Revendreth Zonewich
+
+-----------------
+-- PATCH 9.0.2 --
+-----------------
+-- ITEM --
+i(184689, 347509);	-- Extra Fancy Darkmoon Feast
+i(184683, 347457);	-- Extra Lemony Herb Filet
+i(184625, 347176);	-- Extra Sugary Fish Feast
+
+-----------------
+-- PATCH 9.1.0 --
+-----------------
+-- ITEM --
+i(187007, 354766);	-- Bonemeal Bread
+i(187008, 354768);	-- Porous Rock Candy
+i(187006, 354764);	-- Twilight Tea
+
+-----------------
+-- PATCH 9.2.0 --
+-----------------
+-- ITEM --
+i(187804, 359333);	-- Empty Kettle of Stone Soup
+
 ------------------
 -- PATCH 10.0.0 --
 ------------------

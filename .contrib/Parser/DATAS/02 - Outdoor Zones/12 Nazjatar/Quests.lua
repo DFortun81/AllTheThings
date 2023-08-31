@@ -779,7 +779,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["coord"] = { 25.5, 26.5, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				i(170075),	-- Recipe: Unagi Skewer
+				i(170075),	-- Recipe: Unagi Skewer (RECIPE!)
 			},
 		}),
 		q(56265, {	-- Drunk Angry Murlocs
@@ -790,7 +790,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["isDaily"] = true,
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				i(170075),	-- Recipe: Unagi Skewer
+				i(170075),	-- Recipe: Unagi Skewer (RECIPE!)
 			},
 		}),
 		q(55569, {	-- Echoes of Pain

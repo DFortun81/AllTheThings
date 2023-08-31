@@ -3621,13 +3621,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					darkmoondaggermaw(100, i(126930, {	-- Faded Treasure Map
 						["timeline"] = { ADDED_6_2_0 },
 					})),
-					darkmoondaggermaw(50, i(184689, {	-- Recipe: Extra Fancy Darkmoon Feast
+					darkmoondaggermaw(50, i(184689, {	-- Recipe: Extra Fancy Darkmoon Feast (RECIPE!)
 						["timeline"] = { "added 9.0.2.36639" },
 					})),
-					darkmoondaggermaw(10, i(184683, {	-- Recipe: Extra Lemony Herb Filet
+					darkmoondaggermaw(10, i(184683, {	-- Recipe: Extra Lemony Herb Filet (RECIPE!)
 						["timeline"] = { "added 9.0.2.36639" },
 					})),
-					darkmoondaggermaw(25, i(184625, {	-- Recipe: Extra Sugary Fish Feast
+					darkmoondaggermaw(25, i(184625, {	-- Recipe: Extra Sugary Fish Feast (RECIPE!)
 						["timeline"] = { "added 9.0.2.36639" },
 					})),
 					darkmoondaggermaw(50, i(126929, {	-- Recipe: Fancy Darkmoon Feast (RECIPE!)

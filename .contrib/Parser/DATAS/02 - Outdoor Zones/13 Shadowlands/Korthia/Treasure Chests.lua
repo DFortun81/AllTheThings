@@ -223,7 +223,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					i(186748),	-- Vault Guardian's Visor
 				}),
 				i(187442),	-- Scholar's Ancient Pack
-				i(187008),	-- Recipe: Porous Rock Candy
+				i(187008),	-- Recipe: Porous Rock Candy (RECIPE!)
 				-- Objects
 				o(369333, {	-- Nest of Unusual Materials
 					["coord"] = { 41.0, 39.7, KORTHIA },
@@ -290,7 +290,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["isDaily"] = true,
 				["g"] = {
 					i(186999),	-- Pattern: Pallid Bone Flute (RECIPE!)
-					i(187007),	-- Recipe: Bonemeal Bread
+					i(187007),	-- Recipe: Bonemeal Bread (RECIPE!)
 					i(187442),	-- Scholar's Ancient Pack
 				},
 			}),

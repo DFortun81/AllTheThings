@@ -73,19 +73,19 @@ i(7678, 9513, "removed 4.0.3"); -- Recipe: Thistle Tea (RECIPE!)
 -- #IF AFTER WRATH
 -- #IF AFTER CATA
 -- #IF AFTER MOP
-i(86393, 126654); -- Four Senses Brew / Tablet of Ren Yun
+i(86393, 126654); -- Four Senses Brew / Tablet of Ren Yun (RECIPE!)
 -- #IF AFTER WOD
 -- #IF AFTER LEGION
 -- #IF AFTER BFA
 -- #IF AFTER SHADOWLANDS
-i(187007, 354766); -- Recipe: Bonemeal Bread
-i(187804, 359333); -- Recipe: Empty Kettle of Stone Soup
-i(184625, 347176); -- Recipe: Extra Sugary Fish Feast
-i(184683, 347457); -- Recipe: Extra Lemony Herb Filet
-i(184689, 347509); -- Recipe: Extra Fancy Darkmoon Feast
-i(182668, 308403); -- Recipe: Feast of Gluttonous Hedonism
-i(187008, 354768); -- Recipe: Porous Rock Candy
-i(187006, 354764); -- Recipe: Twilight Tea
+i(187007, 354766); -- Recipe: Bonemeal Bread (RECIPE!)
+i(187804, 359333); -- Recipe: Empty Kettle of Stone Soup (RECIPE!)
+i(184625, 347176); -- Recipe: Extra Sugary Fish Feast (RECIPE!)
+i(184683, 347457); -- Recipe: Extra Lemony Herb Filet (RECIPE!)
+i(184689, 347509); -- Recipe: Extra Fancy Darkmoon Feast (RECIPE!)
+i(182668, 308403); -- Recipe: Feast of Gluttonous Hedonism (RECIPE!)
+i(187008, 354768); -- Recipe: Porous Rock Candy (RECIPE!)
+i(187006, 354764); -- Recipe: Twilight Tea (RECIPE!)
 -- #ENDIF
 -- #ENDIF
 -- #ENDIF
