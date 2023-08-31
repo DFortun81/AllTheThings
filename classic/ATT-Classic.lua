@@ -12484,6 +12484,33 @@ local function RefreshLocationCoroutine()
 	local window = app:GetWindow("CurrentInstance");
 	if window then window:SetMapID(mapID); end
 end
+local function SortForMiniList(a,b)
+	-- If either object doesn't exist
+	if a then
+		if not b then
+			return true;
+		end
+	elseif b then
+		return false;
+	else
+		-- neither a or b exists, equality returns false
+		return false;
+	end
+	--[[
+	if a.isRaid then
+		return b.isRaid;
+	elseif b.isRaid then
+		return false;
+	elseif a.maps then
+		return not not b.maps;
+	elseif b.maps then
+		return true;
+	end
+	]]---
+	
+	-- Any two similar-type groups with text
+	return tostring(a.name or a.text) < tostring(b.name or b.text);
+end
 local function RefreshLocation()
 	app:StartATTCoroutine("RefreshLocation", RefreshLocationCoroutine);
 end
@@ -12492,23 +12519,31 @@ local function RebuildMapData(self, mapID)
 	if #results > 0 then
 		-- Simplify the returned groups
 		local groups = {};
-		local header = { mapID = mapID, back = 1, g = groups };
-		local achievementsHeader = app.CreateNPC(app.HeaderConstants.ACHIEVEMENTS, { ["g"] = {} });
-		tinsert(groups, achievementsHeader);
-		local explorationHeader = app.CreateNPC(app.HeaderConstants.EXPLORATION, { ["g"] = {} });
-		tinsert(groups, explorationHeader);
-		local factionsHeader = app.CreateNPC(app.HeaderConstants.FACTIONS, { ["g"] = {} });
-		tinsert(groups, factionsHeader);
-		local flightPathsHeader = app.CreateNPC(app.HeaderConstants.FLIGHT_PATHS, { ["g"] = {} });
-		tinsert(groups, flightPathsHeader);
-		local questsHeader = app.CreateNPC(app.HeaderConstants.QUESTS, { ["g"] = {} });
-		tinsert(groups, questsHeader);
-		local raresHeader = app.CreateNPC(app.HeaderConstants.RARES, { ["g"] = {} });
-		tinsert(groups, raresHeader);
-		local vendorsHeader = app.CreateNPC(app.HeaderConstants.VENDORS, { ["g"] = {} });
-		tinsert(groups, vendorsHeader);
-		local zoneDropsHeader = app.CreateNPC(app.HeaderConstants.ZONE_DROPS, { ["g"] = {} });
-		tinsert(groups, zoneDropsHeader);
+		local headers = setmetatable({}, {
+			__index = function(t, headerID)
+				for i=1,#groups,1 do
+					local o = groups[i];
+					if o.headerID == headerID then
+						if not o.g then o.g = {}; end
+						t[headerID] = o;
+						return o;
+					end
+				end
+				
+				local o = app.CreateNPC(headerID);
+				tinsert(groups, o);
+				t[headerID] = o;
+				o.g = {};
+				return o;
+			end
+		});
+		local function MergeIntoHeader(headerID, o)
+			MergeObject(headers[headerID].g, o);
+		end
+		
+		local header = {};
+		header.mapID = mapID;
+		header.g = groups;
 		for i, group in ipairs(results) do
 			local clone = {};
 			for key,value in pairs(group) do
@@ -12535,63 +12570,59 @@ local function RebuildMapData(self, mapID)
 			local r = GetRelativeValue(group, "r");
 			if r then clone.r = r; end
 			setmetatable(clone, getmetatable(group));
-
-			if group.key == "mapID" or group.key == "instanceID" then
-				header.key = group.key;
-				header[group.key] = group[group.key];
+			
+			local key = group.key;
+			if (key == "mapID" or key == "instanceID") or ((key == "headerID" or key == "npcID") and (group.maps and (mapID < 0 and contains(group.maps, mapID)))) then
+				header.key = key;
+				header[key] = group[key];
 				MergeObject({header}, clone);
-			elseif group.key == "npcID" then
-				if GetRelativeField(group, "headerID", app.HeaderConstants.VENDORS) or GetRelativeField(group, "headerID", -173) then	-- It's a Vendor. (or a timewaking vendor)
-					MergeObject(vendorsHeader.g, clone, 1);
-				elseif GetRelativeField(group, "headerID", app.HeaderConstants.QUESTS) then	-- It's a Quest.
-					MergeObject(questsHeader.g, clone, 1);
-				elseif group.mapID and (mapID < 0 and group.mapID == mapID) then
-					header.key = group.key;
-					header[group.key] = group[group.key];
-					MergeObject({header}, clone);
-				else
-					MergeObject(groups, clone);
-				end
-			elseif group.key == "criteriaID" then
+			elseif key == "criteriaID" then
 				clone.achievementID = group.achievementID;
-				MergeObject(achievementsHeader.g, clone);
-			elseif group.key == "achievementID" then
-				MergeObject(achievementsHeader.g, clone);
-			elseif group.key == "questID" then
-				MergeObject(questsHeader.g, clone, 1);
-			elseif group.key == "factionID" then
-				MergeObject(factionsHeader.g, clone);
-			elseif group.key == "explorationID" then
-				MergeObject(explorationHeader.g, clone);
-			elseif group.key == "flightPathID" then
-				MergeObject(flightPathsHeader.g, clone);
-			elseif group.key == "itemID" or group.key == "spellID" then
+				MergeIntoHeader(app.HeaderConstants.ACHIEVEMENTS, clone);
+			elseif key == "achievementID" then
+				MergeIntoHeader(app.HeaderConstants.ACHIEVEMENTS, clone);
+			elseif key == "questID" then
+				MergeIntoHeader(app.HeaderConstants.QUESTS, clone);
+			elseif key == "factionID" then
+				MergeIntoHeader(app.HeaderConstants.FACTIONS, clone);
+			elseif key == "explorationID" then
+				MergeIntoHeader(app.HeaderConstants.EXPLORATION, clone);
+			elseif key == "flightPathID" then
+				MergeIntoHeader(app.HeaderConstants.FLIGHT_PATHS, clone);
+			elseif key == "itemID" or key == "spellID" then
 				if GetRelativeField(group, "headerID", app.HeaderConstants.ZONE_DROPS) then
-					MergeObject(zoneDropsHeader.g, clone);
+					MergeIntoHeader(app.HeaderConstants.ZONE_DROPS, clone);
 				else
 					local requireSkill = GetRelativeValue(group, "requireSkill");
 					if requireSkill then
-						clone = app.CreateProfession(requireSkill, { g = { clone } });
-						MergeObject(groups, clone);
+						MergeObject(groups, app.CreateProfession(requireSkill, { g = { clone } }));
 					else
-						MergeObject(groups, clone);
+						local headerID = GetRelativeValue(group, "headerID");
+						if headerID then
+							MergeIntoHeader(headerID, clone);
+						else
+							MergeObject(groups, clone);
+						end
 					end
 				end
-			elseif group.key == "headerID" then
-				if group.mapID and (mapID < 0 and group.mapID == mapID) then
-					header.key = group.key;
-					header[group.key] = group[group.key];
-					MergeObject({header}, clone);
-				elseif not GetRelativeValue(group, "instanceID") then
+			elseif key == "headerID" then
+				MergeObject(groups, clone);
+			else
+				local headerID = GetRelativeValue(group, "headerID");
+				if headerID then
+					MergeIntoHeader(headerID, clone);
+				else
 					MergeObject(groups, clone);
 				end
-			else
-				MergeObject(groups, clone);
 			end
 		end
-
+		
 		-- Swap out the map data for the header.
 		results = (header.key == "instanceID" and app.CreateInstance or app.CreateMap)(header.mapID, header);
+		results.back = 1;
+		
+		-- Sort the groups.
+		app.Sort(groups, SortForMiniList);
 
 		local oldData = self.data;
 		if oldData then
@@ -12615,29 +12646,18 @@ local function RebuildMapData(self, mapID)
 			or app.BaseMap);
 
 		-- Move all "isRaid" entries to the top of the list.
+		--[[
 		if results.g then
 			local bottom = {};
 			local top = {};
 			for i=#results.g,1,-1 do
 				local o = results.g[i];
-				if o.key == "factionID" then
-					tremove(results.g, i);
-					MergeObject(factionsHeader.g, o, 1);
-				elseif o.key == "flightPathID" then
-					tremove(results.g, i);
-					MergeObject(flightPathsHeader.g, o, 1);
-				elseif o.key == "questID" then
-					tremove(results.g, i);
-					MergeObject(questsHeader.g, o, 1);
-				end
-			end
-			for i=#results.g,1,-1 do
-				local o = results.g[i];
 				if o.isRaid then
 					tremove(results.g, i);
 					tinsert(top, o);
-				elseif o.g and #o.g < 1 and o.key == "headerID" then
+				elseif o.maps then
 					tremove(results.g, i);
+					tinsert(bottom, o);
 				end
 			end
 			for i,o in ipairs(top) do
@@ -12647,6 +12667,7 @@ local function RebuildMapData(self, mapID)
 				tinsert(results.g, o);
 			end
 		end
+		]]--
 
 		local difficultyID = (IsInInstance() and select(3, GetInstanceInfo())) or (EJ_GetDifficulty and EJ_GetDifficulty()) or 0;
 		if difficultyID ~= 0 then
