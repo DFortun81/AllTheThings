@@ -130,18 +130,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 460,	-- Alamar Grimm <Warlock Trainer>
 							["coord"] = { 28.6, 66.1, DUN_MOROGH },
 							["altQuests"] = { 1598 },	-- The Stolen Tome
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 3.3.0" },
 							["races"] = ALLIANCE_ONLY,
 							["classes"] = { WARLOCK },
+							-- #if BEFORE 3.3.0
 							["groups"] = {
 								objective(1, {	-- 0/3 Feather Charm
 									["provider"] = { "i", 6753 },	-- Feather Charm
 									["cr"] = 946,	-- Frostmane Novice
 								}),
-								-- #if BEFORE 4.0.3
 								recipe(688),	-- Summon Imp
-								-- #endif
 							},
+							-- #endif
 						}),
 						q(3365, {	-- Bring Back the Mug
 							["providers"] = {

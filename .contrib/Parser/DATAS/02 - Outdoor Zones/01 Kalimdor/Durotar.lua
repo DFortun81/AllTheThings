@@ -1482,7 +1482,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 3145,	-- Zureetha Fargaze
 							["coord"] = { 42.85, 69.14, DUROTAR },
 							["timeline"] = { "removed 4.0.3" },
+							-- #if BEFORE 3.3.0
 							["classes"] = exclude(WARLOCK, ALL_CLASSES),
+							-- #endif
 							["races"] = HORDE_ONLY,
 							["lvl"] = 2,
 							["groups"] = {
@@ -1509,32 +1511,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(1485, {	-- Vile Familiars (Part 1 - Warlocks only!)
 							["qg"] = 5765,	-- Ruzan
 							["coord"] = { 42.6, 69.0, DUROTAR },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 3.3.0" },
 							["classes"] = { WARLOCK },
 							["races"] = HORDE_ONLY,
+							-- #if BEFORE 3.3.0
 							["groups"] = {
 								objective(1, {	-- 0/8 Vile Familiar Head
 									["provider"] = { "i", 6487 },	-- Vile Familiar Head
 									["cr"] = 3101,	-- Vile Familiar
 								}),
-								-- #if BEFORE 4.0.3
 								recipe(688),	-- Summon Imp
-								-- #endif
 							},
+							-- #endif
 						}),
 						q(1499, {	-- Vile Familiars (Part 2 - Warlocks only!)
 							["qg"] = 5765,	-- Ruzan
 							["sourceQuest"] = 1485,	-- Vile Familiars (Part 1 - Warlocks only!)
 							["coord"] = { 42.6, 69.0, DUROTAR },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 3.3.0" },
 							["classes"] = { WARLOCK },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(4925, {	-- Primitive Hand Blade
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { "removed 3.3.0" },
 								}),
 								i(5778, {	-- Primitive Walking Stick
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { "removed 3.3.0" },
 								}),
 							},
 						}),
