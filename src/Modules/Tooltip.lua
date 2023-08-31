@@ -135,7 +135,7 @@ end
 local function AttachTooltipRawSearchResults(self, lineNumber, group)
 	if group then
 		-- app.PrintDebug("Tooltip lines before search results",group.hash,group.tooltipInfo and #group.tooltipInfo)
-		-- if app.DEBUG_PRINT then app.PrintTable(group.tooltipInfo) end
+		-- if app.Debugging then app.PrintTable(group.tooltipInfo) end
 		-- If there was info text generated for this search result, then display that first.
 		if group.tooltipInfo and #group.tooltipInfo > 0 then
 			local left, right;

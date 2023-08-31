@@ -109,7 +109,7 @@ app.PrintGroup = function(group,depth)
 end
 app.PrintTable = function(t,depth)
 	-- only allowing table prints when Debug print is active
-	if not app.DEBUG_PRINT then return; end
+	if not app.Debugging then return; end
 	if not t then print("nil"); return; end
 	if type(t) ~= "table" then print(type(t),t); return; end
 	depth = depth or 0;
@@ -1352,7 +1352,7 @@ local function CreateObject(t, rootOnly)
 	elseif t[1] then
 		local s = {};
 		-- array
-		-- if app.DEBUG_PRINT then print("CreateObject on array",#t); end
+		-- if app.Debugging then print("CreateObject on array",#t); end
 		for i,o in ipairs(t) do
 			s[i] = CreateObject(o, rootOnly);
 		end
@@ -1461,7 +1461,7 @@ local function CreateObject(t, rootOnly)
 	if rootOnly then
 		t.g = nil;
 	else
-		-- if app.DEBUG_PRINT then print("CreateObject key/value",t.key,t[t.key]); end
+		-- if app.Debugging then print("CreateObject key/value",t.key,t[t.key]); end
 		-- if g, then replace each object in all sub groups with an object version of the table
 		local g = t.g;
 		if g then
@@ -2613,7 +2613,7 @@ local function FillSymLinks(group, recursive)
 		-- make sure this group doesn't waste time getting resolved again somehow
 		group.sym = nil;
 	end
-	-- if app.DEBUG_PRINT == group then app.DEBUG_PRINT = nil; end
+	-- if app.Debugging == group then app.Debugging = nil; end
 	return group;
 end
 
@@ -3611,13 +3611,13 @@ ResolveSymbolicLink = function(o)
 		-- Verify the final result is finalized
 		cmdFunc = ResolveFunctions.finalize;
 		cmdFunc(finalized, searchResults);
-		-- if app.DEBUG_PRINT then print("Forced Finalize",oKey,oKey and o[oKey],#finalized) end
+		-- if app.Debugging then print("Forced Finalize",oKey,oKey and o[oKey],#finalized) end
 
 		-- If we had any finalized search results, then clone all the records, store the results, and return them
 		if #finalized > 0 then
 			local cloned = {};
 			MergeObjects(cloned, finalized, true);
-			-- if app.DEBUG_PRINT then print("Symbolic Link for", oKey,oKey and o[oKey], "contains", #cloned, "values after filtering.") end
+			-- if app.Debugging then print("Symbolic Link for", oKey,oKey and o[oKey], "contains", #cloned, "values after filtering.") end
 			-- if any symlinks are left at the lowest level, go ahead and fill them
 			-- Apply any modID if necessary
 			local sHash;
@@ -3671,7 +3671,7 @@ ResolveSymbolicLink = function(o)
 			end
 			return cloned;
 		else
-			-- if app.DEBUG_PRINT then print("Symbolic Link for ", oKey, " ",oKey and o[oKey], " contained no values after filtering.") end
+			-- if app.Debugging then print("Symbolic Link for ", oKey, " ",oKey and o[oKey], " contained no values after filtering.") end
 		end
 	end
 end
@@ -3714,7 +3714,7 @@ local function BuildContainsInfo(item, entries, indent, layer)
 					ContainsExceeded = ContainsExceeded + 1;
 				else
 					-- Insert into the display.
-					-- app.PrintDebug("INCLUDE",app.DEBUG_PRINT,GetProgressTextForRow(group),group.hash,group.key,group.key and group[group.key])
+					-- app.PrintDebug("INCLUDE",app.Debugging,GetProgressTextForRow(group),group.hash,group.key,group.key and group[group.key])
 					local o = { group = group, right = GetProgressTextForRow(group) };
 					local indicator = Indicator(group);
 					o.prefix = indicator and (sub(indent, 4) .. "|T" .. indicator .. ":0|t ") or indent;
@@ -3732,7 +3732,7 @@ local function BuildContainsInfo(item, entries, indent, layer)
 					BuildContainsInfo(group, entries, indent .. "  ", layer + 1);
 				end
 				-- else
-				-- 	if app.DEBUG_PRINT then print("EXCLUDE",app.DEBUG_PRINT,GetProgressTextForRow(group),group.hash,group.key,group.key and group[group.key]) end
+				-- 	if app.Debugging then print("EXCLUDE",app.Debugging,GetProgressTextForRow(group),group.hash,group.key,group.key and group[group.key]) end
 			end
 		end
 	end
@@ -4523,11 +4523,11 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 		if group.g and app.Settings:GetTooltipSetting("SummarizeThings") then
 			-- app.PrintDebug("SummarizeThings",group.hash,group.g and #group.g)
 			local entries = {};
-			-- app.DEBUG_PRINT = "CONTAINS-"..group.hash;
+			-- app.Debugging = "CONTAINS-"..group.hash;
 			ContainsLimit = app.Settings:GetTooltipSetting("ContainsCount") or 25;
 			ContainsExceeded = 0;
 			BuildContainsInfo(group, entries, "  ", app.noDepth and 99 or 1);
-			-- app.DEBUG_PRINT = nil;
+			-- app.Debugging = nil;
 			-- app.PrintDebug(entries and #entries,"contains entries")
 			if #entries > 0 then
 				local left, right;
@@ -5081,7 +5081,7 @@ app.FillGroups = function(group)
 		-- app.PrintDebugPrior("FG",group.hash)
 	end
 
-	-- if app.DEBUG_PRINT then app.PrintTable(included) end
+	-- if app.Debugging then app.PrintTable(included) end
 	-- app.PrintDebug("FillGroups Complete",group.hash,group.__type)
 end
 end	-- Auto-Expansion Logic
@@ -6446,7 +6446,7 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 		-- this source unlocks a visual that the current character may tmog, so all shared visuals should be considered 'collected' regardless of restriction
 		local currentCharacterUsable = currentCharacterOnly and not knownItem.nmc and not knownItem.nmr;
 		-- For each shared Visual SourceID
-		-- if knownSource.visualID == 322 then app.DEBUG_PRINT = true; app.PrintTable(knownSource); end
+		-- if knownSource.visualID == 322 then app.Debugging = true; app.PrintTable(knownSource); end
 		-- account cannot collect sourceID? not available for transmog?
 		-- local _, canCollect = C_TransmogCollection.AccountCanCollectSource(knownSourceID); -- pointless, always false if sourceID is known
 		-- local unknown1 = select(8, C_TransmogCollection.GetAppearanceSourceInfo(knownSourceID)); -- pointless, returns nil for many valid transmogs
@@ -6462,13 +6462,13 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 		if not canMog then return; end
 		local factionRaces = app.Modules.FactionData.FACTION_RACES;
 		for _,sourceID in ipairs(visualIDs) do
-			-- if app.DEBUG_PRINT then print("visualID",knownSource.visualID,"s",sourceID,"known:",acctSources[sourceID)] end
+			-- if app.Debugging then print("visualID",knownSource.visualID,"s",sourceID,"known:",acctSources[sourceID)] end
 			-- If it is not currently marked collected on the account
 			if not acctSources[sourceID] then
 				-- for current character only, all we care is that the knownItem is not exclusive to another
 				-- race/class to consider all shared appearances as 'collected' for the current character
 				if currentCharacterUsable then
-					-- if app.DEBUG_PRINT then print("current character usable") end
+					-- if app.Debugging then print("current character usable") end
 					acctSources[sourceID] = 2;
 				else
 					-- Find the check Source in ATT
@@ -6518,7 +6518,7 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 										or checkSource.categoryID == 4 --[[CHEST: Robe vs Armor]]
 										or app.SlotByInventoryType[knownSource.invType] == app.SlotByInventoryType[checkSource.invType])
 								then
-									-- if app.DEBUG_PRINT then print("Unique Collected s:",sourceID); end
+									-- if app.Debugging then print("Unique Collected s:",sourceID); end
 									acctSources[sourceID] = 2;
 								-- else print("sources share visual and filters but different equips",item.s,sourceID)
 								end
@@ -6542,7 +6542,7 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 				end
 			end
 		end
-		-- app.DEBUG_PRINT = nil;
+		-- app.Debugging = nil;
 	end
 end
 local function RefreshAppearanceSources()
@@ -7419,7 +7419,7 @@ local function TryPopulateQuestRewards(questObject)
 	for j=1,numCurrencies,1 do
 		currencyID = select(4, GetQuestLogRewardCurrencyInfo(j, questID));
 		if currencyID then
-			-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards_currencies:found",questID,currencyID,questObject.missingCurr) end
+			-- if app.Debugging then print("TryPopulateQuestRewards_currencies:found",questID,currencyID,questObject.missingCurr) end
 
 			currencyID = tonumber(currencyID);
 			local item = { ["currencyID"] = currencyID };
@@ -7474,16 +7474,16 @@ local function TryPopulateQuestRewards(questObject)
 					for _,o in ipairs(data.g) do
 						-- nest cached non-items
 						if not o.itemID then
-							-- if app.DEBUG_PRINT then print("nested-nonItem",o.hash) end
+							-- if app.Debugging then print("nested-nonItem",o.hash) end
 							tinsert(nonItemNested, o);
 						-- cached items need to merge with corresponding API item based on simple itemID
 						elseif apiItems[o.itemID] then
-							-- if app.DEBUG_PRINT then print("nested-merged",o.hash) end
+							-- if app.Debugging then print("nested-merged",o.hash) end
 							MergeProperties(apiItems[o.itemID], o, true);
 						--  if it is not a WQ or is a 'raid' (world boss)
 						elseif questObject.isRaid or not questObject.isWorldQuest then
 							-- otherwise just get nested
-							-- if app.DEBUG_PRINT then print("nested-item",o.hash) end
+							-- if app.Debugging then print("nested-item",o.hash) end
 							tinsert(nonItemNested, o);
 						end
 					end
@@ -7953,7 +7953,7 @@ local criteriaFields = {
 			if criteriaID then
 				local name = t.GetInfo(achievementID, criteriaID, true);
 				if not IsRetrieving(name) then return name; end
-				
+
 				local providers = t.providers;
 				if providers then
 					for k,v in ipairs(providers) do
@@ -9763,7 +9763,7 @@ app.CreateFlightPath = function(id, t)
 end
 app.events.TAXIMAP_OPENED = function()
 	local mapID = GetTaxiMapID();
-	if app.DEBUG_PRINT then
+	if app.Debugging then
 		if not contains(FlightPathMapIDs, mapID) then
 			local info = C_Map_GetMapInfo(mapID);
 			local mapName = info and info.name or UNKNOWN;
@@ -10316,14 +10316,14 @@ local function default_costCollectibles(t)
 	if modItemID and modItemID ~= t.itemID then
 		id = modItemID;
 		results = SearchForField("itemIDAsCost", id);
-		-- if app.DEBUG_PRINT then print("itemIDAsCost.modItemID",id,results and #results) end
+		-- if app.Debugging then print("itemIDAsCost.modItemID",id,results and #results) end
 	end
 	-- If no results, search by itemID + modID only if different
 	if not results or #results < 1 then
 		id = GetGroupItemIDWithModID(nil, t.itemID, t.modID);
 		if id ~= modItemID then
 			results = SearchForField("itemIDAsCost", id);
-			-- if app.DEBUG_PRINT then print("itemIDAsCost.modID",id,results and #results) end
+			-- if app.Debugging then print("itemIDAsCost.modID",id,results and #results) end
 		end
 	end
 	-- If no results, search by plain itemID only
@@ -10831,7 +10831,7 @@ end
 app.CacheHeirlooms = function()
 	-- app.PrintDebug("CacheHeirlooms",#heirloomIDs)
 	if #heirloomIDs < 1 or not C_Heirloom_GetHeirloomMaxUpgradeLevel then return; end
-	
+
 	-- Are heirloom upgrades available? (6.1.0.19445)
 	local gameBuildVersion = app.GameBuildVersion;
 	if gameBuildVersion > 60100 then
@@ -10845,22 +10845,22 @@ app.CacheHeirlooms = function()
 			122339,	-- Rank 1: Ancient Heirloom Scabbard
 			122341,	-- Rank 2: Timeworn Heirloom Scabbard
 		};
-		
+
 		-- Rank 3 was added with Legion (7.2.5.24076)
 		if gameBuildVersion > 70205 then
 			tinsert(armorTokenItemIDs, 151614);		-- Weathered Heirloom Armor Casing
 			tinsert(weaponTokenItemIDs, 151615);		-- Weathered Heirloom Scabbard
-		
+
 			-- Rank 4 was added with BFA (8.1.5.29701)
 			if gameBuildVersion > 80105 then
 				tinsert(armorTokenItemIDs, 167731);		-- Battle-Hardened Heirloom Armor Casing
 				tinsert(weaponTokenItemIDs, 167732);		-- Battle-Hardened Heirloom Scabbard
-				
+
 				-- Rank 5 was added with Shadowlands (9.1.5.40871)
 				if gameBuildVersion > 90105 then
 					tinsert(armorTokenItemIDs, 187997);		-- Eternal Heirloom Armor Casing
 					tinsert(weaponTokenItemIDs, 187998);		-- Eternal Heirloom Scabbard
-					
+
 					-- Rank 6 was added with Dragonflight (10.1.0.49407)
 					if gameBuildVersion > 100100 then
 						tinsert(armorTokenItemIDs, 204336);		-- Awakened Heirloom Armor Casing
@@ -10869,7 +10869,7 @@ app.CacheHeirlooms = function()
 				end
 			end
 		end
-		
+
 		-- Build headers that will contain each type.
 		local armorTokens, weaponTokens = {}, {};
 		for i=#armorTokenItemIDs,1,-1 do
@@ -10882,8 +10882,8 @@ app.CacheHeirlooms = function()
 				g = {},
 			}));
 		end
-		
-		
+
+
 		-- for each cached heirloom, push a copy of itself with respective upgrade level under the respective upgrade token
 		local Search = app.SearchForObject;
 		local uniques, heirloom, upgrades = {};
@@ -10898,7 +10898,7 @@ app.CacheHeirlooms = function()
 						local tokenType = heirloom.isWeapon and weaponTokens or armorTokens;
 						for i=1,upgrades,1 do
 							-- Create a non-collectible version of the heirloom item itself to hold the upgrade within the token
-							tinsert(tokenType[upgrades + 1 - i].g, 
+							tinsert(tokenType[upgrades + 1 - i].g,
 							setmetatable({ collectible = false, g = {
 								CreateHeirloomLevel({
 									heirloomLevelID = itemID,
@@ -11311,7 +11311,7 @@ app.ImportRawLink = function(group, rawlink, ignoreSource)
 				local s = GetSourceID(rawlink);
 				-- app.PrintDebug("IRL:GS",rawlink,s)
 				if s then group.s = s; end
-				-- if app.DEBUG_PRINT then app.PrintTable(group) end
+				-- if app.Debugging then app.PrintTable(group) end
 			end
 		end
 	end
@@ -11421,7 +11421,7 @@ app.GetMapName = function(mapID)
 				return name;
 			end
 		end
-		
+
 		local info = C_Map_GetMapInfo(mapID);
 		return (info and info.name) or ("Map ID #" .. mapID);
 	else
@@ -13060,7 +13060,7 @@ local function UpdateGroup(parent, group)
 		-- Check if this is a group
 		local g = group.g;
 		if g then
-			-- if app.DEBUG_PRINT then print("UpdateGroup.g",group.progress,group.total,group.__type) end
+			-- if app.Debugging then print("UpdateGroup.g",group.progress,group.total,group.__type) end
 
 			-- skip Character filtering for sub-groups if this Item meets the Ignore BoE filter logic, since it can be moved to the designated character
 			-- local ItemBindFilter, NoFilter = app.ItemBindFilter, app.NoFilter;
@@ -13081,7 +13081,7 @@ local function UpdateGroup(parent, group)
 				UpdateGroups(group, g);
 			end
 
-			-- if app.DEBUG_PRINT then print("UpdateGroup.g.Updated",group.progress,group.total,group.__type) end
+			-- if app.Debugging then print("UpdateGroup.g.Updated",group.progress,group.total,group.__type) end
 			SetGroupVisibility(parent, group);
 		else
 			SetThingVisibility(parent, group);
@@ -13096,8 +13096,8 @@ local function UpdateGroup(parent, group)
 		end
 	end
 
-	-- if app.DEBUG_PRINT then print("UpdateGroup.Done",group.progress,group.total,group.visible,group.__type) end
-	-- if app.DEBUG_PRINT == 134 then app.DEBUG_PRINT = nil; end
+	-- if app.Debugging then print("UpdateGroup.Done",group.progress,group.total,group.visible,group.__type) end
+	-- if app.Debugging == 134 then app.Debugging = nil; end
 end
 app.UpdateGroup = UpdateGroup;
 UpdateGroups = function(parent, g)
@@ -20000,7 +20000,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 						end
 
 						-- moved to stand-alone on-demand function across all known professions, or called if DEBUG_PRINT is enabled to harvest un-sourced recipes
-						if app.DEBUG_PRINT then
+						if app.Debugging then
 							CacheRecipeSchematic(recipeID);
 						end
 					end
@@ -20881,7 +20881,7 @@ app.LoadDebugger = function()
 						if IgnoredNPCs[npc_id] then return true; end
 
 						local numItems = GetMerchantNumItems();
-						if app.DEBUG_PRINT then print("MERCHANT DETAILS", ty, npc_id, numItems); end
+						if app.Debugging then print("MERCHANT DETAILS", ty, npc_id, numItems); end
 
 						local rawGroups = {};
 						for i=1,numItems,1 do
@@ -20930,7 +20930,7 @@ app.LoadDebugger = function()
 
 			-- Setup Event Handlers and register for events
 			self:SetScript("OnEvent", function(self, e, ...)
-				if app.DEBUG_PRINT then print(e, ...); end
+				if app.Debugging then print(e, ...); end
 				if e == "ZONE_CHANGED_NEW_AREA" or e == "NEW_WMO_CHUNK" then
 					AddObject();
 				elseif e == "MERCHANT_SHOW" or e == "MERCHANT_UPDATE" then
@@ -21032,7 +21032,7 @@ app.LoadDebugger = function()
 					end
 					local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid;
 					if guid then type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid); end
-					if app.DEBUG_PRINT then print("QUEST_DETAIL", questStartItemID, " => Quest #", questID, type, npc_id, app.NPCNameFromID[npc_id]); end
+					if app.Debugging then print("QUEST_DETAIL", questStartItemID, " => Quest #", questID, type, npc_id, app.NPCNameFromID[npc_id]); end
 
 					local rawGroups = {};
 					for i=1,GetNumQuestRewards(),1 do
@@ -21100,13 +21100,13 @@ app.LoadDebugger = function()
 								for s=1,#source,2 do
 									type, zero, server_id, instance_id, zone_uid, id, spawn_uid = strsplit("-",source[s]);
 									-- TODO: test this with Item containers
-									if app.DEBUG_PRINT then print("Add Loot",itemID,"from",type,id) end
+									if app.Debugging then print("Add Loot",itemID,"from",type,id) end
 									info = { [(type == "GameObject") and "objectID" or "npcID"] = tonumber(id), ["g"] = { { ["itemID"] = itemID, ["rawlink"] = loot } } };
 									-- print("Add Loot")
 									-- app.PrintTable(info);
 									AddObject(info);
 								end
-							elseif app.DEBUG_PRINT then
+							elseif app.Debugging then
 								print("No ItemID!",loot)
 							end
 						end

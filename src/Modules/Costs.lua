@@ -141,10 +141,10 @@ local function UpdateCosts()
 
 	-- Get all itemIDAsCost entries
 	for itemID,refs in pairs(SearchForFieldContainer("itemIDAsCost")) do
-		-- app.DEBUG_PRINT = nil
-		-- if itemID == 105867.06 then app.DEBUG_PRINT = true end
-		-- if itemID == 105867 then app.DEBUG_PRINT = true end
-		-- if itemID == 163036 then app.DEBUG_PRINT = true end	-- Polished Pet Charms
+		-- app.Debugging = nil
+		-- if itemID == 105867.06 then app.Debugging = true end
+		-- if itemID == 105867 then app.Debugging = true end
+		-- if itemID == 163036 then app.Debugging = true end	-- Polished Pet Charms
 		-- app.PrintDebug("Check Cost Item",itemID)
 		UpdateCostsByItemID(itemID, refresh, refs);
 	end
@@ -152,12 +152,12 @@ local function UpdateCosts()
 
 	-- Get all currencyIDAsCost entries
 	for currencyID,refs in pairs(SearchForFieldContainer("currencyIDAsCost")) do
-		-- app.DEBUG_PRINT = nil
-		-- if currencyID == 2029 then app.DEBUG_PRINT = true end
+		-- app.Debugging = nil
+		-- if currencyID == 2029 then app.Debugging = true end
 		-- app.PrintDebug("Check Cost Curr",currencyID)
 		UpdateCostsByCurrencyID(currencyID, refresh, refs);
 	end
-	-- app.DEBUG_PRINT = true
+	-- app.Debugging = true
 	-- app.PrintDebugPrior("UpdateCosts:Done",app._SettingsRefresh)
 end
 
