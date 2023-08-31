@@ -11,7 +11,7 @@ local contains, classIndex, raceIndex, factionID =
 	app.contains, app.ClassIndex, app.RaceIndex, app.FactionID;
 
 -- Module locals
-local AllCaches = {};
+local AllCaches, runners = {}, {};
 local containerMeta = {
 	__index = function(t, id)
 		if id then
@@ -410,11 +410,13 @@ local fieldConverters = {
 			-- Generate a unique NEGATIVE mapID and cache the object to it.
 			mapID = nextCustomMapID;
 			nextCustomMapID = nextCustomMapID - 1;
-			if group.maps then
-				tinsert(group.maps, mapID)
-			else
-				group.maps = {mapID};
-			end
+			tinsert(runners, function()
+				if group.maps then
+					tinsert(group.maps, mapID)
+				else
+					group.maps = {mapID};
+				end
+			end);
 			CacheField(group, "mapID", mapID);
 		end
 
@@ -428,11 +430,13 @@ local fieldConverters = {
 			-- Generate a unique NEGATIVE mapID and cache the object to it.
 			mapID = nextCustomMapID;
 			nextCustomMapID = nextCustomMapID - 1;
-			if group.maps then
-				tinsert(group.maps, mapID)
-			else
-				group.maps = {mapID};
-			end
+			tinsert(runners, function()
+				if group.maps then
+					tinsert(group.maps, mapID)
+				else
+					group.maps = {mapID};
+				end
+			end);
 			CacheField(group, "mapID", mapID);
 		end
 		-- Then uses the ZONE_TEXT_TO_MAP_ID localizer to force the minilist to display this as if it was a map file.
@@ -481,9 +485,14 @@ local function _CacheFields(group)
 end
 CacheFields = function(group, skipMapCaching)
 	wipe(currentMapCounters);
+	wipe(runners);
 	currentMapCounters[-1] = skipMapCaching and 1 or 0;
 	_CacheFields(group);
+	for i,runner in ipairs(runners) do
+		runner();
+	end
 	wipe(currentMapCounters);
+	wipe(runners);
 	return group;
 end
 
