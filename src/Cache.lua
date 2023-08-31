@@ -410,7 +410,11 @@ local fieldConverters = {
 			-- Generate a unique NEGATIVE mapID and cache the object to it.
 			mapID = nextCustomMapID;
 			nextCustomMapID = nextCustomMapID - 1;
-			group.mapID = mapID;
+			if group.maps then
+				tinsert(group.maps, mapID)
+			else
+				group.maps = {mapID};
+			end
 			CacheField(group, "mapID", mapID);
 		end
 
@@ -424,7 +428,11 @@ local fieldConverters = {
 			-- Generate a unique NEGATIVE mapID and cache the object to it.
 			mapID = nextCustomMapID;
 			nextCustomMapID = nextCustomMapID - 1;
-			group.mapID = mapID;
+			if group.maps then
+				tinsert(group.maps, mapID)
+			else
+				group.maps = {mapID};
+			end
 			CacheField(group, "mapID", mapID);
 		end
 		-- Then uses the ZONE_TEXT_TO_MAP_ID localizer to force the minilist to display this as if it was a map file.
