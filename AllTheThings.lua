@@ -17857,9 +17857,6 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 						tinsert(mapGroups, group);
 					end
 				end
-				if #rootGroups == 0 then
-					app.PrintDebug("No root Map groups!",self.mapID)
-				end
 				-- first merge all root groups into the list
 				for _,group in ipairs(rootGroups) do
 					if group.maps then
@@ -17989,6 +17986,17 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				-- 		end
 				-- 	end
 				-- end
+
+				if #rootGroups == 0 then
+					-- app.PrintDebug("No root Map groups!",self.mapID)
+					-- if only one group in the map root, then shift it up as the map root instead
+					local headerGroups = header.g;
+					if #headerGroups == 1 then
+						header.g = nil;
+						MergeProperties(header, headerGroups[1], true);
+						NestObjects(header, headerGroups[1].g);
+					end
+				end
 
 				header.u = nil;
 				header.e = nil;
