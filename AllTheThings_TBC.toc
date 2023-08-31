@@ -51,6 +51,7 @@ src\UI\Objects.lua
 src\UI\Quests.lua
 src\UI\Raid Assistant.lua
 src\UI\Random.lua
+src\UI\Removed With Patch Drops.lua
 src\UI\Removed With Patch Loot.lua
 src\UI\Soft Reserves.lua
 src\UI\Sync.lua
