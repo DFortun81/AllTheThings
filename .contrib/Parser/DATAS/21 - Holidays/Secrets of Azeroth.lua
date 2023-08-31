@@ -38,4 +38,35 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			i(208152),	-- Pattie (MOUNT!)
 		}),
 	}),
+	n(QUESTS, {
+		q(77203, {	-- Preserving Rarities
+			["qg"] = 206864,	-- Preservationist Kathos
+			["coord"] = { 47.4, 48.1, VALDRAKKEN },
+			-- TODO: is breadcrumb? does it go away after event?
+			["groups"] = {
+				i(208054, {	-- A Mystery Box
+					i(208056),	-- Golden Chalice
+					i(208055),	-- A Clue: The Golden Chalice
+				}),
+			},
+		}),
+		q(76735, {	-- Rise in Relic Theft
+			["qg"] = 206864,	-- Preservationist Kathos
+			["coord"] = { 47.4, 48.1, VALDRAKKEN },
+			["sourceQuests"] = { 77203 },	-- Preserving Rarities
+			["groups"] = {
+				i(207105),	-- Tuskarr Ceremonial Spear
+				-- TODO: not really sure how to list this situation yet...
+				i(207580, {	-- Shomko's Unyielding Spear
+					["provider"] = { "n", 186448 },	-- Elder Poa
+					["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
+					["cost"] = {{"i",207105,1}},	-- Tuskarr Ceremonial Spear
+				}),
+			},
+		})
+	}),
 }))));
+
+root(ROOTS.Holidays, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+	q(77204),	-- placed 'Golden Chalice'
+})))
