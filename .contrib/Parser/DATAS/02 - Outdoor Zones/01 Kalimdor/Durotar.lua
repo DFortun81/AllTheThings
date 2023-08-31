@@ -851,6 +851,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			m(VALLEY_OF_TRIALS, {
 				["lore"] = "The Valley of Trials in southern Durotar is where all young orc adventurers begin their journey. Within the valley, they are safe from external threats while taking on challenges that enable them to get used to their new status as recruits of the Horde.",
+				-- #if BEFORE 6.0.0
+				-- CRIEVE NOTE: I actually have no idea when they added the proper mapID for this subzone.
+				["zone-text-areas"] = {
+					363,	-- Valley of Trials
+					364,	-- The Den
+					365,	-- Burning Blade Coven
+				},
+				-- #endif
 				-- #if AFTER WRATH
 				["icon"] = "Interface\\Icons\\Achievement_Character_Orc_Male",
 				-- #else
@@ -1447,6 +1455,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["groups"] = {
 								objective(1, {	-- 0/1 Thazz'ril's Pick
 									["provider"] = { "i", 16332},
+									["providers"] = {
+										{ "i",  16332 },	-- Thazz'ril's Pick
+										{ "o", 178087 },	-- Thazz'ril's Pick
+									},
 									["coord"] = { 43.8, 53.8, DUROTAR },
 								}),
 							},

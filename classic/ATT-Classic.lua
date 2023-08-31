@@ -6568,7 +6568,6 @@ local mapIDToMapName, mapIDToAreaID = {}, {
 	[465] = { 154 },	-- Deathknell
 	[425] = { 9, 59, 24, 34 },	-- Northshire Valley, Northshire Vineyards, Northshire Abbey, Echo Ridge Mine
 	[460] = { 188 },	-- Shadowglen
-	[461] = { 363 },	-- Valley of Trials
 	[462] = { 221 },	-- Camp Narache
 	[467] = { 3431 },	-- Sunstrider Isle
 	[468] = { 3526, 3527, 3560, 3528, 3559, 3529, 3530, 3561 },	-- Ammen Vale, Crash Site, Ammen Fields, Silverline Lake, Nestlewood Hills, Nestlewood Thicket, Shadow Ridge, The Sacred Grove
