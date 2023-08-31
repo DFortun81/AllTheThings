@@ -12483,6 +12483,8 @@ local function SortForMiniList(a,b)
 		if not a.maps then
 			return true;
 		end
+	elseif a.maps then
+		return false;
 	end
 	
 	-- Any two similar-type groups with text
