@@ -44,10 +44,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		}),
 	}),
 	n(QUESTS, {
+		q(77202, {	-- The Preservationists
+			["qg"] = 199261,	-- Holiday Enthusiast
+			["coords"] = {
+				{ 55.0, 37.0, VALDRAKKEN },
+			},
+			["isBreadcrumb"] = true,
+		}),
 		q(77203, {	-- Preserving Rarities
 			["qg"] = 206864,	-- Preservationist Kathos
 			["coord"] = { 47.4, 48.1, VALDRAKKEN },
-			-- TODO: is breadcrumb? does it go away after event?
+			["sourceQuests"] = { 77202 },	-- The Preservationists
+			-- TODO: does it go away after event?
 			["groups"] = {
 				i(208054, {	-- A Mystery Box
 					i(208056),	-- Golden Chalice
@@ -79,6 +87,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 
 root(ROOTS.Holidays, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 	q(77204),	-- placed 'Golden Chalice'
-	q(76987),	-- completed 'The Inquisitive'
+	q(76987),	-- completed 'The Inquisitive' (account-wide completion)
 	q(76995),	-- looted Crazed Looter first time (208182)
 })))
