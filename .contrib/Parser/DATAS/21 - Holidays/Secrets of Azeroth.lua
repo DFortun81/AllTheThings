@@ -4,7 +4,7 @@
 SECRETS_OF_AZEROTH_HEADER = createHeader({
 	readable = "Secrets of Azeroth",
 	constant = "SECRETS_OF_AZEROTH_HEADER",
-	icon = "Interface\\Icons\\calendar_secretsofazerothstart",
+	icon = [[~_.asset("Holiday_SecretsAz")]],
 	eventID = EVENTS.SECRETS_OF_AZEROTH,
 	text = {
 		en = "Secrets of Azeroth",
