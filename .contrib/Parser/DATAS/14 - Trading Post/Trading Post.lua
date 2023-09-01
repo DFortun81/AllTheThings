@@ -44,6 +44,11 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 		}),
 		q(76105, {	-- Report to the Trading Post -- August 2023
 			["timeline"] = { ADDED_10_1_5 },
+			["u"] = REMOVED_FROM_GAME,
+			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
+		}),
+		q(76106, {	-- Report to the Trading Post -- September 2023
+			["timeline"] = { ADDED_10_1_5 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 		}),
 	}),
@@ -201,7 +206,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["groups"] = {
 						i(208398),	-- Mantle of the Unnamed Cult
 						i(208399),	-- Sash of the Unnamed Cult
-						i(208400),	-- Silks of the Unnamed Cult
+						i(208397),	-- Hood of the Unnamed Cult
 					},
 				}),
 				i(190155, {	-- Trusty Treasure Trove
@@ -345,15 +350,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 						i(190549),	-- Kvaldir Scout Wristguard
 						i(190552),	-- Kvaldir Scout Shoulderpads
 						i(190574),	-- Kvaldir Scout Hood
-					},
-				}),
-				i(190799, {	-- Ensemble: Swashbuckling Buccaneer's Slops
-					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
-					["g"] = {
-						i(190786),	-- Swashbuckling Buccaneer's Boots
-						i(190785),	-- Swashbuckling Buccaneer's Breeches
-						i(190784),	-- Swashbuckling Buccaneer's Sash
-						i(190783),	-- Swashbuckling Buccaneer's Tunic
 					},
 				}),
 				i(190540, {	-- Ensemble: Trapper's Munitions
@@ -537,9 +533,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(190092, {	-- Triumphant Blademaster's Greatsword
 					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
-				}),
-				i(190155, {	-- Trusty Treasure Trove
-					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
 				}),
 				i(190431, {	-- Veteran Grunt's Chopper
 					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
