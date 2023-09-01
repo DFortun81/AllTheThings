@@ -1,7 +1,21 @@
 -- App locals
 local appName, app = ...;
-local tinsert = tinsert;
+local tinsert, ipairs = tinsert, ipairs;
 local GetRelativeValue = app.GetRelativeValue;
+
+-- Temp Functions
+-- TODO: Move this to a module.
+local function BuildSourceTextForChat(group, l)
+	if group.parent then
+		if l < 1 then
+			return BuildSourceTextForChat(group.parent, l + 1);
+		else
+			return BuildSourceTextForChat(group.parent, l + 1) .. " > " .. (group.text or "*");
+		end
+		return group.text or "*";
+	end
+	return "ATT";
+end
 
 -- Local functions
 local ExcludeRecipes, ExcludeRemovedMaps, ExcludeRemovedRares;
@@ -33,6 +47,16 @@ local function ReapplyExpand(g, g2)
 				end
 				break;
 			end
+		end
+	end
+end
+local function Export(g, strings)
+	if g then
+		for i,o in ipairs(g) do
+			if o.itemID then
+				tinsert(strings, o.itemID .. "\\t" .. (o.name or RETRIEVING_DATA) .. "\\t" .. (o.spellID or 0) .. "\\t" .. BuildSourceTextForChat(o, 0));
+			end
+			Export(o.g, strings);
 		end
 	end
 end
@@ -113,6 +137,28 @@ app:GetWindow("RWPD", {
 					data.saved = ExcludeRemovedRares;
 					return true;
 				end,
+			},
+			{	-- Export Data Button
+				text = "Export Data",
+				icon = "Interface\\Icons\\Spell_Shadow_LifeDrain02",
+				description = "Press this button to open an edit box containing the full content of the list.",
+				visible = true,
+				priority = 6,
+				OnClick = function(row, button)
+					local data, s, count = {}, "", 0;
+					Export(self.data.g, data);
+					for i,str in ipairs(data) do
+						if count > 0 then
+							s = s .. "\n";
+						end
+						s = s .. str;
+						count = count + 1;
+					end
+					
+					app:ShowPopupDialogWithMultiLineEditBox(s);
+					return true;
+				end,
+				OnUpdate = app.ReturnTrue,
 			},
 		};
 		
