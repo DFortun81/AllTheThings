@@ -13677,10 +13677,6 @@ function app:CreateMiniListForGroup(group)
 		-- 		group = CreateObject(group);
 		-- 	end
 		-- end
-		-- if popping out a thing with a sourced parent, generate a Source group to allow referencing the Source of the thing directly
-		app.BuildSourceParent(group);
-		-- if popping out a thing with a Cost, generate a Cost group to allow referencing the Cost things directly
-		app.BuildCost(group);
 
 		-- TODO: Crafting Information
 		-- TODO: Lock Criteria
@@ -14031,6 +14027,11 @@ function app:CreateMiniListForGroup(group)
 				questChainHeader.sourceQuests = nil;
 			end
 		end
+
+		-- if popping out a thing with a sourced parent, generate a Source group to allow referencing the Source of the thing directly
+		app.BuildSourceParent(popout.data);
+		-- if popping out a thing with a Cost, generate a Cost group to allow referencing the Cost things directly
+		app.BuildCost(popout.data);
 
 		popout.data.hideText = true;
 		popout.data.visible = true;
