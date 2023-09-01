@@ -10,8 +10,8 @@ local rawget, ipairs, pairs
 	= rawget, ipairs, pairs;
 
 -- App locals
-local EmptyFunction, SearchForField, SearchForFieldContainer
-	= app.EmptyFunction, app.SearchForField, app.SearchForFieldContainer;
+local SearchForField, SearchForFieldContainer
+	= app.SearchForField, app.SearchForFieldContainer;
 
 -- Module locals
 local RecursiveGroupRequirementsFilter, GroupFilter, DGU, UpdateRunner, CheckCanBeCollected;
@@ -61,7 +61,7 @@ local function SubCheckCollectible(ref)
 		local o;
 		for i=1,#g do
 			o = g[i];
-			if (GroupFilter or EmptyFunction)(o) and SubCheckCollectible(o) then
+			if GroupFilter(o) and SubCheckCollectible(o) then
 				-- app.PrintDebug("Cost via sub-group collectible",ref.hash)
 				return true;
 			end
@@ -72,7 +72,7 @@ end
 local function CheckCollectible(ref)
 	-- app.PrintDebug("CheckCollectible",ref.hash,ref.__sourcePath)
 	-- don't include groups which don't meet the current filters
-	if (RecursiveGroupRequirementsFilter or EmptyFunction)(ref) then
+	if RecursiveGroupRequirementsFilter(ref) then
 		return SubCheckCollectible(ref);
 	end
 end
@@ -136,19 +136,24 @@ end
 
 local function UpdateCosts()
 	CacheFilters();
-	-- app.PrintDebug("UpdateCosts",app._SettingsRefresh)
 	local refresh = app._SettingsRefresh;
+	-- app.PrintDebug("UpdateCosts",refresh)
 
+	-- app.Debugging = nil
 	-- Get all itemIDAsCost entries
 	for itemID,refs in pairs(SearchForFieldContainer("itemIDAsCost")) do
 		-- app.Debugging = nil
 		-- if itemID == 105867.06 then app.Debugging = true end
 		-- if itemID == 105867 then app.Debugging = true end
 		-- if itemID == 163036 then app.Debugging = true end	-- Polished Pet Charms
+		-- if itemID == 40619 then app.Debugging = true end	-- Leggings of the Lost Conqueror
 		-- app.PrintDebug("Check Cost Item",itemID)
 		UpdateCostsByItemID(itemID, refresh, refs);
+		-- app.Debugging = nil
 	end
+	-- app.Debugging = true
 	-- app.PrintDebugPrior("UpdateCosts:Items")
+	-- app.Debugging = nil
 
 	-- Get all currencyIDAsCost entries
 	for currencyID,refs in pairs(SearchForFieldContainer("currencyIDAsCost")) do
@@ -234,5 +239,6 @@ app.Modules.Costs = api;
 api.OnLoad = function()
 	DGU = app.DirectGroupUpdate;
 	UpdateRunner = app.UpdateRunner;
+	CacheFilters();
 end
 api.OnRefreshData_NewSettings = UpdateCosts;
