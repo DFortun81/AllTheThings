@@ -11583,27 +11583,28 @@ local function CacheInfo(t, field)
 	end
 	local name, _, icon = GetSpellInfo(id);
 	if name then
-		_t.text = "|cffb19cd9"..name.."|r";
+		_t.text = Colorize(name, app.Colors.Mount)
 		_t.icon = icon;
 	end
 	if itemID then
-		local itemName = select(2, GetItemInfo(itemID));
+		local itemLink = select(2, GetItemInfo(itemID));
 		-- item info might not be available on first request, so don't cache the data
-		if itemName then
-			_t.link = itemName;
+		if itemLink then
+			_t.link = itemLink;
 		end
 	else
 		_t.link = GetSpellLink(id);
 	end
-	-- track retries on cacheing mount info... some mounts just never return info
+	-- track retries on caching mount info... some mounts just never return info
 	local retries = _t.retries or 0;
 	retries = retries + 1;
 	if retries > 20 then
 		local name = (itemID and sformat("Item #%d",itemID)) or
 					(id and sformat("Spell #%d",id));
-		_t.text = name;
-		_t.name = name;
-		_t.icon = 134400;	-- question mark
+		_t.text = _t.text or Colorize(name, app.Colors.Mount);
+		_t.name = _t.name or name;
+		_t.icon = _t.icon or 134400;	-- question mark
+		_t.link = GetSpellLink(id);
 	end
 	_t.retries = retries;
 	if field then return _t[field]; end
@@ -11626,6 +11627,7 @@ local mountFields = {
 	["_cache"] = function(t)
 		return cache;
 	end,
+	-- Mounts use special text coloring instead of default text
 	["text"] = function(t)
 		return cache.GetCachedField(t, "text", CacheInfo);
 	end,
@@ -11635,14 +11637,23 @@ local mountFields = {
 	["link"] = function(t)
 		return cache.GetCachedField(t, "link", CacheInfo);
 	end,
+	["lore"] = function(t)
+		return cache.GetCachedField(t, "lore", CacheInfo);
+	end,
+	["displayID"] = function(t)
+		return cache.GetCachedField(t, "displayID", CacheInfo);
+	end,
+	["name"] = function(t)
+		return cache.GetCachedField(t, "name", CacheInfo);
+	end,
+	["costCollectibles"] = function(t)
+		return cache.GetCachedField(t, "costCollectibles", default_costCollectibles);
+	end,
 	["filterID"] = function(t)
 		return 100;
 	end,
 	["collectible"] = function(t)
 		return app.Settings.Collectibles.Mounts;
-	end,
-	["costCollectibles"] = function(t)
-		return cache.GetCachedField(t, "costCollectibles", default_costCollectibles);
 	end,
 	["collectibleAsCost"] = app.CollectibleAsCost,
 	["collected"] = function(t)
@@ -11657,15 +11668,6 @@ local mountFields = {
 	end,
 	["spellID"] = function(t)
 		return t.mountID;
-	end,
-	["lore"] = function(t)
-		return cache.GetCachedField(t, "lore", CacheInfo);
-	end,
-	["displayID"] = function(t)
-		return cache.GetCachedField(t, "displayID", CacheInfo);
-	end,
-	["name"] = function(t)
-		return cache.GetCachedField(t, "name", CacheInfo);
 	end,
 	["tsm"] = function(t)
 		if t.itemID then return sformat("i:%d", t.itemID); end

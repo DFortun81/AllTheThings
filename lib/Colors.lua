@@ -22,6 +22,7 @@ app.Colors = {
 	DefaultDifficulty = "ff1eff00",
 	RemovedWithPatch = "ffffaaaa",
 	AddedWithPatch = "ffaaffaa",
+	Mount = "ffb19cd9",
 	Renown = "ff00bff3",
 	Unavailable = "ff808080",
 	TimeUnder30Min = "ffff0000",
