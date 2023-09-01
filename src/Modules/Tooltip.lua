@@ -437,7 +437,7 @@ local function AttachTooltip(self, ttdata)
 			end
 		end
 		if knownSearchField and ttId then
-			-- app.PrintDebug("TT Search",knownSearchField,id)
+			-- app.PrintDebug("TT Search",knownSearchField,ttId)
 			AttachTooltipSearchResults(self, 1, knownSearchField..":"..ttId, SearchForField, knownSearchField, tonumber(ttId));
 			return true;
 		end

@@ -22182,13 +22182,6 @@ end
 			-- elseif type == "nav" then
 			-- 	print(type,paramA,paramB)
 			end
-		elseif type == "quest" then
-			-- Attach Quest info to Quest links in chat
-			if ItemRefTooltip then
-				-- print("show quest info",info)
-				AttachTooltipSearchResults(ItemRefTooltip, 1, "quest:"..info, SearchForField, "questID", info);
-				ItemRefTooltip:Show();
-			end
 		end
 	end);
 
