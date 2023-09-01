@@ -50,18 +50,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	n(SPECIAL, bubbleDownSelf({ ["description"] = "This is rewarded for filling the Travel Points Progress Bar in the month." }, {
 		n(AVAILABLE, {
 			filter(MOUNTS, {
+				i(190168),	-- Crusty Crawler (MOUNT!) (Sep 2023)
 			}),
 			filter(COSMETIC, {
-				i(190797, {	-- Ensemble: Bones of the Bloodhunter
-					i(190793),	-- Bloodhunter Footwraps
-					i(190790),	-- Bloodhunter Handguards
-					i(190798),	-- Bloodhunter Harness
-					i(190795),	-- Bloodhunter Hornmantle
-					i(190792),	-- Bloodhunter Loincloth
-					i(190791),	-- Bloodhunter Subligar
-					i(190794),	-- Bloodhunter Warcloak
-					i(190789),	-- Bloodhunter Visage
-				}),
 			}),
 		}),
 		n(UNAVAILABLE, {
@@ -74,6 +65,16 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(190164, {	-- Arsenal: Blades of Elune
 					i(190093),	-- Elune's Fury
 					i(190094),	-- Elune's Wrath
+				}),
+				i(190797, {	-- Ensemble: Bones of the Bloodhunter
+					i(190793),	-- Bloodhunter Footwraps
+					i(190790),	-- Bloodhunter Handguards
+					i(190798),	-- Bloodhunter Harness
+					i(190795),	-- Bloodhunter Hornmantle
+					i(190792),	-- Bloodhunter Loincloth
+					i(190791),	-- Bloodhunter Subligar
+					i(190794),	-- Bloodhunter Warcloak
+					i(190789),	-- Bloodhunter Visage
 				}),
 				i(190504, {	-- Ensemble: Darkmoon Harlequin's Bells
 					i(190492),	-- Darkmoon Harlequin's Belt
@@ -90,6 +91,130 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	n(VENDORS, {
 		n(AVAILABLE, {
 			filter(MOUNTS, {
+			}),
+			filter(BATTLE_PETS, {
+				i(208045, {	-- Slyvy (PET!)
+					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
+				}),
+			}),
+			filter(TOYS, {
+			}),
+			filter(COSMETIC, {
+				i(190712, {	-- Ancestral Skychaser Totem
+					["cost"] = { { "c", TRADERS_TENDER, 250 }, },
+				}),
+				i(190693, {	-- Ancestral Stonehoof Totem
+					["cost"] = { { "c", TRADERS_TENDER, 250 }, },
+				}),
+				i(208177, {	-- Armaments of the Light Avenger
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+					["classes"] = PALADIN,
+					["groups"] = {
+						i(208165),	-- Hammer of the Light Avenger
+						i(208164),	-- Kite of the Light Avenger
+						i(208166),	-- Club of of the Light Avenger
+					},
+				}),	
+				i(208179, {	-- Blood Onyx Blades
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+					["classes"] = ROGUE,
+					["groups"] = {
+						i(208173),	-- Blood Onyx Serrated Edge
+						i(208174),	-- Blood Onyx Impaler
+						i(208175),	-- Blood Onyx Shortblade
+					},
+				}),
+				i(208405, {	-- Blood Onyx Uniform
+					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+					["classes"] = ROGUE,
+					["groups"] = {
+						i(208402),	-- Blood Onyx Cowl
+						i(208403),	-- Blood Onyx Pauldrons
+						i(208404),	-- Blood Onyx Buckle
+					},
+				}),
+				i(208148, {	-- Burgundy Cap
+					["cost"] = { { "c", TRADERS_TENDER, 150 }, },
+				}),
+				i(189882, {	-- Dread Admiral's Bicorne
+					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
+				}),
+				i(190799, {	-- Ensemble Swashbuckling Buccaneer's Slops
+					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
+					["groups"] = {
+						i(190786),	-- Swashbuckling Buccaneer's Boots
+						i(190785),	-- Swashbuckling Buccaneer's Breeches
+						i(190783),	-- Swashbuckling Buccaneer's Tunic
+						i(190784),	-- Swashbuckling Buccaneer's Sash
+					},
+				}),
+				i(206321, {	-- Ensemble Vagabonds Sunny Threads
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["groups"] = {
+						i(206277),	-- Vagabond's Sunny Cape
+						i(206288),	-- Vagabond's Sunny Hood
+					},
+				}),
+				i(206332, {	-- Ensemble Wanderers Sunny Trappings
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["groups"] = {
+						i(206310),	-- Wanderer's Sunny Cloak
+						i(206300),	-- Wanderer's Sunny Scarf
+					},
+				}),
+				i(190699, {	-- Gorian Mining Pick
+					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+				}),
+				i(190698, {	-- Gently Used Cleaver
+					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+				}),
+				i(208423, {	-- Homebrewer's Sampling Crest
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+				}),
+				i(190144, {	-- Irontide Raiders Bicorne
+					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
+				}),
+				i(189895, {	-- Watchman's Flare
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				}),
+				i(208176, {	-- Plate of the Light Avenger
+					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+					["classes"] = PALADIN,
+					["groups"] = {
+						i(208161),	-- Helm of the Light Avenger
+						i(208162),	-- Shoulders Shoulderguards of the Light Avenger
+						i(208163),	-- Waist Cinch of the Light Avenger
+					},
+				}),
+				i(208178, {	-- Secrets of the Unnamed Cult
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+					["classes"] = PRIEST,
+					["groups"] = {
+						i(208167),	-- Libram of the Unnamed Cult
+						i(208169),	-- Scepter of the Unnamed Cult
+						i(208171),	-- Staff of the Unnamed Cult
+					},
+				}),
+				i(208400, {	-- Silk of the Unnamed Cult
+					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+					["classes"] = PRIEST,
+					["groups"] = {
+						i(208398),	-- Mantle of the Unnamed Cult
+						i(208399),	-- Sash of the Unnamed Cult
+						i(208400),	-- Silks of the Unnamed Cult
+					},
+				}),
+				i(190155, {	-- Trusty Treasure Trove
+					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+				}),
+				i(208147, {	-- Yellow Tweed Cap
+					["cost"] = { { "c", TRADERS_TENDER, 150 }, },
+				}),
+			}),
+		}),
+		n(UNAVAILABLE, { 
+		--	["description"] = "Although these items are not available at the moment, they have been accessible in the past and will become available again in the future. The exact timing of their availability is currently unknown.",
+			filter(MOUNTS, bubbleDown({ ["cost"] = { { "c", TRADERS_TENDER, 900 }, }, },{
 				i(207964, {	-- Alabaster Stormtalon (MOUNT!)
 					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
 					["races"] = ALLIANCE_ONLY,
@@ -101,99 +226,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(207821, {	-- Ancestral Clefthoof (MOUNT!)
 					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
 				}),
-			}),
-			filter(BATTLE_PETS, {
-				i(207962, {	-- Spirit of Competition (PET!)
-					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
-				}),
-			}),
-			filter(TOYS, {
-				i(206268, { -- Ethereal Transmogrifier (TOY!)
-					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
-				}),
-			}),
-			filter(COSMETIC, {
-				i(207957, { -- Aquamarine Felfire Bulwark
-					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
-				}),
-				i(207959, { -- Aquamarine Felfire Splitblade
-					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
-				}),
-				i(190071, { -- Azure Scalesworn Longbow
-					["cost"] = { { "c", TRADERS_TENDER, 200 }, },
-				}),
-				i(190812, { -- Azure Nexus Crescent
-					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
-				}),
-				i(190078, { -- Blade of Brutal Sacrifice
-					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
-				}),
-				i(190870, { -- City Guard Heater Shield
-					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
-				}),
-				i(190438, { -- Crimson Nexus Crescent
-					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
-				}),
-				i(95475, { -- Crown of Eternal Winter
-					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
-				}),
-				i(208039, { -- Ember Court Soiree Gloves
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-				}),
-				i(190576, { -- Ensemble Vagabonds Azure Threads
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-					["g"] = {
-						i(190541),	-- Vagabond's Azure Cape
-						i(190572),	-- Vagabond's Azure Hood
-					},
-				}),
-				i(190851, { -- Ensemble Vagabonds Crimson Threads
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-					["g"] = {
-						i(190827),	-- Vagabonds Crimson Cape
-						i(190828),	-- Vagabonds Crimson Hood
-				 	},
-				}),
-				i(190577, {	-- Ensemble: Wanderer's Azure Trappings
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-					["g"] = {
-						i(190573),	-- Wanderer's Azure Cloak
-						i(190542),	-- Wanderer's Azure Scarf
-					},
-				}),
-				i(190850, { -- Ensemble Wanderers Crimson Trappings
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-					["g"] = {
-						i(190825),	-- Wanderer's Crimson Cloak
-						i(190826),	-- Wanderer's Crimson Scarf
-				 	},
-				}),
-				i(189898, { -- Fury of the Firelord
-					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
-				}),
-				i(190871, { -- Grunts Buckler
-					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
-				}),
-				i(97213, { -- Hood of Hungering Darkness
-					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
-				}),
-				i(208040, { -- Queens Conservatory Ball Gloves
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-				}),
-				i(190909, { -- Ruby Felfire Splitblade
-					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
-				}),
-				i(190910, { -- Ruby Felfire Bulwark
-					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
-				}),
-				i(190143, { -- Shard of Frozen Secrets
-					["cost"] = { { "c", TRADERS_TENDER, 200 }, },
-				}),
-			}),
-		}),
-		n(UNAVAILABLE, { 
-		--	["description"] = "Although these items are not available at the moment, they have been accessible in the past and will become available again in the future. The exact timing of their availability is currently unknown.",
-			filter(MOUNTS, bubbleDown({ ["cost"] = { { "c", TRADERS_TENDER, 900 }, }, },{
 				i(54811),	-- Celestial Steed (MOUNT!)
 				i(118515),	-- Cindermane Charger (MOUNT!)
 				i(206027, {	-- Felcrystal Scorpion (MOUNT!)
@@ -228,6 +260,14 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(49343, {	-- Spectral Tiger Cub (PET!)
 					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
 				}),
+				i(207962, {	-- Spirit of Competition (PET!)
+					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
+				}),
+			}),
+			filter(TOYS, {
+				i(206268, { -- Ethereal Transmogrifier (TOY!)
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+				}),
 			}),
 			filter(COSMETIC, {
 				i(190441, {	-- Black Iron Blunderbuss
@@ -238,9 +278,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(190130, {	-- Drape of Foreboding Mists
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-				}),
-				i(189882, {	-- Dread Admiral's Bicorne
-					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
 				}),
 				i(190869, {	-- Emberstone Dress
 					["cost"] = { { "c", TRADERS_TENDER, 150 }, },
@@ -507,9 +544,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(190431, {	-- Veteran Grunt's Chopper
 					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
 				}),
-				i(189895, {	-- Watchman's Flare
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-				}),
 				i(190199, {	-- Well-Worn Grimskull Cinch
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 				}),
@@ -581,6 +615,82 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(190557, {	-- Sinister Fel Staff
 					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
+				}),
+				i(207957, { -- Aquamarine Felfire Bulwark
+					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
+				}),
+				i(207959, { -- Aquamarine Felfire Splitblade
+					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
+				}),
+				i(190071, { -- Azure Scalesworn Longbow
+					["cost"] = { { "c", TRADERS_TENDER, 200 }, },
+				}),
+				i(190812, { -- Azure Nexus Crescent
+					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
+				}),
+				i(190078, { -- Blade of Brutal Sacrifice
+					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
+				}),
+				i(190870, { -- City Guard Heater Shield
+					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+				}),
+				i(190438, { -- Crimson Nexus Crescent
+					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
+				}),
+				i(95475, { -- Crown of Eternal Winter
+					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
+				}),
+				i(208039, { -- Ember Court Soiree Gloves
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				}),
+				i(190576, { -- Ensemble Vagabonds Azure Threads
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(190541),	-- Vagabond's Azure Cape
+						i(190572),	-- Vagabond's Azure Hood
+					},
+				}),
+				i(190851, { -- Ensemble Vagabonds Crimson Threads
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(190827),	-- Vagabonds Crimson Cape
+						i(190828),	-- Vagabonds Crimson Hood
+				 	},
+				}),
+				i(190577, {	-- Ensemble: Wanderer's Azure Trappings
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(190573),	-- Wanderer's Azure Cloak
+						i(190542),	-- Wanderer's Azure Scarf
+					},
+				}),
+				i(190850, { -- Ensemble Wanderers Crimson Trappings
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(190825),	-- Wanderer's Crimson Cloak
+						i(190826),	-- Wanderer's Crimson Scarf
+				 	},
+				}),
+				i(189898, { -- Fury of the Firelord
+					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+				}),
+				i(190871, { -- Grunts Buckler
+					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+				}),
+				i(97213, { -- Hood of Hungering Darkness
+					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
+				}),
+				i(208040, { -- Queens Conservatory Ball Gloves
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				}),
+				i(190909, { -- Ruby Felfire Splitblade
+					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
+				}),
+				i(190910, { -- Ruby Felfire Bulwark
+					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
+				}),
+				i(190143, { -- Shard of Frozen Secrets
+					["cost"] = { { "c", TRADERS_TENDER, 200 }, },
 				}),
 			}),
 		}),
@@ -739,7 +849,6 @@ root(ROOTS.NeverImplemented, {
 				i(190767),	-- Armored Golden Pterrordax (MOUNT!) (Unknown 2023)
 				mount(369480),	-- Cerulean Marsh Hopper (MOUNT!) (Unknown 2023)
 				i(190539),	-- Coral-Stalker Waveray (MOUNT!) (Unknown 2023)
-				i(190168),	-- Crusty Crawler (MOUNT!) (Unknown 2023)
 				i(137576, {	-- Dim Coldflame Core (MOUNT!) (Unknown 2023)
 					["cost"] = { { "c", TRADERS_TENDER, 700 }, },
 					["timeline"] = { ADDED_10_1_7 },
@@ -1323,4 +1432,131 @@ filter(COSMETIC, {
     }),
 }),
 
+--------------------
+-- SEPTEMBER 2023 --
+--------------------
+
+
+filter(MOUNTS, {
+				i(190168),	-- Crusty Crawler (MOUNT!) (Sep 2023)
+			}),
+filter(BATTLE_PETS, {
+				i(208045, {	-- Slyvy (PET!)
+					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
+				}),
+			}),
+			filter(TOYS, {
+			}),
+			filter(COSMETIC, {
+				i(190712, {	-- Ancestral Skychaser Totem
+					["cost"] = { { "c", TRADERS_TENDER, 250 }, },
+				}),
+				i(190693, {	-- Ancestral Stonehoof Totem
+					["cost"] = { { "c", TRADERS_TENDER, 250 }, },
+				}),
+				i(208177, {	-- Armaments of the Light Avenger
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+					["classes"] = PALADIN,
+					["groups"] = {
+						i(208165),	-- Hammer of the Light Avenger
+						i(208164),	-- Kite of the Light Avenger
+						i(208166),	-- Club of of the Light Avenger
+					},
+				}),	
+				i(208179, {	-- Blood Onyx Blades
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+					["classes"] = ROGUE,
+					["groups"] = {
+						i(208173),	-- Blood Onyx Serrated Edge
+						i(208174),	-- Blood Onyx Impaler
+						i(208175),	-- Blood Onyx Shortblade
+					},
+				}),
+				i(208405, {	-- Blood Onyx Uniform
+					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+					["classes"] = ROGUE,
+					["groups"] = {
+						i(208402),	-- Blood Onyx Cowl
+						i(208403),	-- Blood Onyx Pauldrons
+						i(208404),	-- Blood Onyx Buckle
+					},
+				}),
+				i(208148, {	-- Burgundy Cap
+					["cost"] = { { "c", TRADERS_TENDER, 150 }, },
+				}),
+				i(189882, {	-- Dread Admiral's Bicorne
+					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
+				}),
+				i(190799, {	-- Ensemble Swashbuckling Buccaneer's Slops
+					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
+					["groups"] = {
+						i(190786),	-- Swashbuckling Buccaneer's Boots
+						i(190785),	-- Swashbuckling Buccaneer's Breeches
+						i(190783),	-- Swashbuckling Buccaneer's Tunic
+						i(190784),	-- Swashbuckling Buccaneer's Sash
+					},
+				}),
+				i(206321, {	-- Ensemble Vagabonds Sunny Threads
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["groups"] = {
+						i(206277),	-- Vagabond's Sunny Cape
+						i(206288),	-- Vagabond's Sunny Hood
+					},
+				}),
+				i(206332, {	-- Ensemble Wanderers Sunny Trappings
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["groups"] = {
+						i(206310),	-- Wanderer's Sunny Cloak
+						i(206300),	-- Wanderer's Sunny Scarf
+					},
+				}),
+				i(190699, {	-- Gorian Mining Pick
+					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+				}),
+				i(190698, {	-- Gently Used Cleaver
+					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+				}),
+				i(208423, {	-- Homebrewer's Sampling Crest
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+				}),
+				i(190144, {	-- Irontide Raiders Bicorne
+					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
+				}),
+				i(189895, {	-- Watchman's Flare
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				}),
+				i(208176, {	-- Plate of the Light Avenger
+					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+					["classes"] = PALADIN,
+					["groups"] = {
+						i(208161),	-- Helm of the Light Avenger
+						i(208162),	-- Shoulders Shoulderguards of the Light Avenger
+						i(208163),	-- Waist Cinch of the Light Avenger
+					},
+				}),
+				i(208178, {	-- Secrets of the Unnamed Cult
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+					["classes"] = PRIEST,
+					["groups"] = {
+						i(208167),	-- Libram of the Unnamed Cult
+						i(208169),	-- Scepter of the Unnamed Cult
+						i(208171),	-- Staff of the Unnamed Cult
+					},
+				}),
+				i(208400, {	-- Silk of the Unnamed Cult
+					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+					["classes"] = PRIEST,
+					["groups"] = {
+						i(208398),	-- Mantle of the Unnamed Cult
+						i(208399),	-- Sash of the Unnamed Cult
+						i(208400),	-- Silks of the Unnamed Cult
+					},
+				}),
+				i(190155, {	-- Trusty Treasure Trove
+					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+				}),
+				i(208147, {	-- Yellow Tweed Cap
+					["cost"] = { { "c", TRADERS_TENDER, 150 }, },
+				}),
+			}),
 --]]

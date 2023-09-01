@@ -116,6 +116,11 @@ root(ROOTS.Promotions, {
 				["timeline"] = { "added 10.1.5." }, -- "removed 10.1.0.49570" },
 				["u"] = REMOVED_FROM_GAME,	-- 18th July 2023
 			}),
+			i(190923, {	-- Ensemble: Dashing Buccaneer's Slops
+				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between September 5th, 10:00 a.m. & September 12th, 01:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
+				["timeline"] = { "added 10.1.5." }, -- "removed 10.1.0.49570" },
+			--	["u"] = REMOVED_FROM_GAME,	-- 12th September 2023
+			}),
 		},
 	}),
 });
