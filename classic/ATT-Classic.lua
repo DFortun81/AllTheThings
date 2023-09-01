@@ -12479,8 +12479,8 @@ local function SortForMiniList(a,b)
 		end
 	elseif b.isRaid then
 		return false;
-	elseif b.maps then
-		if not a.maps then
+	elseif b.maps or b.mapID then
+		if not (a.maps or a.mapID) then
 			return true;
 		end
 	elseif a.maps then
@@ -12619,10 +12619,14 @@ local CachedMapData = setmetatable({}, {
 					end
 				end
 			end
+			
+			-- Sort the list, but not for instances.
+			if not results.instanceID then
+				app.Sort(groups, SortForMiniList);
+			end
 
 			-- Check to see completion...
 			BuildGroups(results);
-			app.Sort(groups, SortForMiniList);
 			cachedMapData[mapID] = results;
 			return results;
 		else
@@ -12678,11 +12682,10 @@ app:GetWindow("CurrentInstance", {
 		handlers.ZONE_CHANGED_NEW_AREA = RefreshLocation;
 		handlers.PLAYER_DIFFICULTY_CHANGED = function()
 			wipe(CachedMapData);
-			self.displayedMapID = nil;
 			self:Rebuild();
 		end
 		self.SetMapID = function(self, mapID)
-			if mapID ~= self.displayedMapID then
+			if mapID ~= self.mapID then
 				self.mapID = mapID;
 				self:Rebuild();
 			end
@@ -12697,19 +12700,10 @@ app:GetWindow("CurrentInstance", {
 		RefreshLocation();
 	end,
 	OnSave = function(self, settings)
-		settings.mapID = self.displayedMapID;
+		settings.mapID = self.mapID;
 	end,
 	OnRebuild = function(self)
-		local mapID = self.mapID;
-		if mapID then
-			if not self.data or mapID ~= self.displayedMapID then
-				local results = CachedMapData[mapID];
-				if results then
-					self.displayedMapID = mapID;
-					self.data = results;
-				end
-			end
-		end
+		self.data = CachedMapData[self.mapID];
 	end,
 });
 
