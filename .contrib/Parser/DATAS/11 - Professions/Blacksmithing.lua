@@ -2407,7 +2407,7 @@ profession(BLACKSMITHING, {
 				-- #endif
 				{
 					["name"] = "Volcanic Hammer",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { "removed 4.0.1", "added 10.1.7" },
 					["recipeID"] = 16984,
 				},
 				applyclassicphase(TBC_PHASE_ONE, {

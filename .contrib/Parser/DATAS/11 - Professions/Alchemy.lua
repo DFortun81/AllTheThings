@@ -765,7 +765,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Greater Shadow Protection Potion",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },
 					["recipeID"] = 17578
 				},
 				{
