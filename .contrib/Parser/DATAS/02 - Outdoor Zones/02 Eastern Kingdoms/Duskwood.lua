@@ -1781,7 +1781,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(4474, {	-- Ravenwood Bow
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },
 						}),
 						i(6204, {	-- Tribal Worg Helm
 							["timeline"] = { "removed 4.0.3" },

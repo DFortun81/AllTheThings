@@ -2255,7 +2255,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE CATA
 					["coord"] = { 79.4, 26.0, TIRISFAL_GLADES },
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },
 					["cr"] = 1665,	-- Captain Melrache
 				}),
 				i(3332, {	-- Perrine's Boots
@@ -2278,7 +2278,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 1753,	-- Maggot Eye
 				}),
 				i(4263, {	-- Standard Issue Shield
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },
 					["cr"] = 1660,	-- Scarlet Bodyguard
 				}),
 				i(3325, {	-- Vile Fin Battle Axe
