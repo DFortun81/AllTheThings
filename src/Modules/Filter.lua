@@ -255,6 +255,8 @@ api.Set.Race = function(active, factionOnly)
 		CharacterFilters.Race = nil;
 	end
 end
+-- manually track Race in CurrentCharacterFilters
+RawCharacterFilters.Race = api.Filters.Race;
 
 -- CustomCollect -- FilterItemClass_CustomCollect
 DefineToggleFilter("CustomCollect", CharacterFilters,
