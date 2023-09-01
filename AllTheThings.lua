@@ -960,13 +960,13 @@ local function GetTrackableIcon(data, iconOnly)
 end
 local function GetCostIconForRow(data, iconOnly)
 	-- cost only in nested groups, or if itself is a cost
-	if (not data.window and (data.filledCost or data.costNested)) or (data.costTotal or 0) > 0 then
+	if (not data.window and (data.filledCost or data.costNested)) or (data.costTotal or 0) > 0 or data.collectibleAsCost then
 		return iconOnly and L["COST_ICON"] or L["COST_TEXT"];
 	end
 end
 local function GetCostIconForTooltip(data, iconOnly)
 	-- cost only if itself is a cost
-	if (data.costTotal or 0) > 0 then
+	if (data.costTotal or 0) > 0 or data.collectibleAsCost then
 		return iconOnly and L["COST_ICON"] or L["COST_TEXT"];
 	end
 end
@@ -1186,6 +1186,7 @@ app.MergeSkipFields = {
 	["modItemID"] = true,
 	["rawlink"] = true,
 	["sourceIgnored"] = true,
+	["costTotal"] = true,
 	["costNested"] = true,
 	["hasUpgradeNested"] = true,
 	-- 1 -> only when cloning
@@ -4976,14 +4977,6 @@ local function SkipFillingGroup(group, FillData)
 		-- direct parent is a saved quest, then do not fill with stuff
 		if parent and parent.questID and parent.saved then return true; end
 	end
-
-	-- mark this group as being filled since it is not being skipped (unless it's a basic header/class header)
-	if not (
-		group.headerID or
-		group.classID
-	) then
-		if groupHash then included[groupHash] = true; end
-	end
 end
 -- Iterates through all groups of the group, filling them with appropriate data, then recursively follows the next layer of groups
 local function FillGroupsRecursive(group, FillData)
@@ -5002,16 +4995,28 @@ local function FillGroupsRecursive(group, FillData)
 		DetermineSymlinkGroups(group),
 		DetermineNPCDrops(group));
 
-	-- if groups and #groups > 0 then
-	-- 	app.PrintDebug("FillGroups-MergeResults",group.hash,groups and #groups)
-	-- end
+	if groups and #groups > 0 then
+		-- app.PrintDebug("FillGroups-MergeResults",group.hash,groups and #groups)
+		-- mark this group as being filled since it actually received filled content (unless it's a basic header/class header)
+		if not (
+			group.headerID or
+			group.classID
+		) then
+			local groupHash = group.hash;
+			if groupHash then
+				-- app.PrintDebug("FG-Included",groupHash,#groups)
+				FillData.Included[groupHash] = true;
+			end
+		end
+	end
 	-- Adding the groups normally based on available-source priority
 	PriorityNestObjects(group, groups, nil, app.RecursiveCharacterRequirementsFilter);
 
-	if group.g then
+	local g = group.g;
+	if g then
 		-- app.PrintDebug(".g",group.hash,#group.g)
 		-- Then nest anything further
-		for _,o in ipairs(group.g) do
+		for _,o in ipairs(g) do
 			FillGroupsRecursive(o, FillData);
 		end
 	end
@@ -5043,13 +5048,25 @@ local function FillGroupsRecursiveAsync(group, FillData)
 	if #groups > 0 then
 		BuildGroups(group);
 		app.DirectGroupUpdate(group);
+		-- mark this group as being filled since it actually received filled content (unless it's a basic header/class header)
+		if not (
+			group.headerID or
+			group.classID
+		) then
+			local groupHash = group.hash;
+			if groupHash then
+				-- app.PrintDebug("FG-Included",groupHash,#groups)
+				FillData.Included[groupHash] = true;
+			end
+		end
 	end
 
-	if group.g then
+	local g = group.g;
+	if g then
 		local Run = app.FillRunner.Run;
 		-- app.PrintDebug(".g",group.hash,#group.g)
 		-- Then nest anything further
-		for _,o in ipairs(group.g) do
+		for _,o in ipairs(g) do
 			Run(FillGroupsRecursiveAsync, o, FillData);
 		end
 	end
@@ -12938,7 +12955,7 @@ local function SetGroupVisibility(parent, group)
 		visible = group.progress < group.total or GroupVisibilityFilter(group);
 	end
 	-- Cost
-	if not visible and (group.costNested or (group.costTotal or 0) > 0) then
+	if not visible and (group.costNested or (group.costTotal or 0) > 0 or group.collectibleAsCost) then
 		visible = not group.saved;
 		-- Only persist nested costs from visible groups
 		if parent and visible then
@@ -12987,7 +13004,7 @@ local function SetThingVisibility(parent, group)
 		visible = group.progress < group.total or ThingVisibilityFilter(group);
 	end
 	-- Cost
-	if not visible and (group.costNested or (group.costTotal or 0) > 0) then
+	if not visible and (group.costNested or (group.costTotal or 0) > 0 or group.collectibleAsCost) then
 		visible = not group.saved;
 		-- Only persist nested costs from visible groups
 		if parent and visible then
