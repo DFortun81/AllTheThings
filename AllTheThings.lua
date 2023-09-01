@@ -3741,9 +3741,9 @@ end
 -- Fields on groups which can be utilized in tooltips to show additional Source location info for that group (by order of priority)
 local TooltipSourceFields = {
 	"professionID",
+	"instanceID",
 	"mapID",
 	"maps",
-	"instanceID",
 	"npcID",
 	"questID"
 };
