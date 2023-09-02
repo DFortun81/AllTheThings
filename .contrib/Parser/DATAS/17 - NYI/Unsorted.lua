@@ -898,7 +898,6 @@ root(ROOTS.Unsorted, {
 			i(207102),	-- TESTING ITEM DELETE ME
 			i(205199),	-- Slime Sheathed Shell
 			i(207594),	-- Looter's Purse
-			i(207956),	-- Thunderspine Nest
 			i(208029),	-- Scareloc Parts
 			i(207984),	-- Chroniton Wand
 			i(208001),	-- Timewalker's Cudgel

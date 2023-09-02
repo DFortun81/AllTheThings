@@ -67,6 +67,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			["qg"] = 206864,	-- Preservationist Kathos
 			["coord"] = { 47.4, 48.1, VALDRAKKEN },
 			["sourceQuests"] = { 77203 },	-- Preserving Rarities
+			["isDaily"] = true,	-- this reset after the first day? are the secrets on rotation?
 			["groups"] = {
 				i(207105),	-- Tuskarr Ceremonial Spear
 				-- TODO: not really sure how to list this situation yet...
@@ -81,7 +82,71 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 					["cost"] = {{"i",207580,1}},	-- Shomko's Unyielding Spear
 				}),
 			},
-		})
+		}),
+		q(77165, {	-- A Secretive Contact
+			["qg"] = 207696,	-- Bobby Carlisle
+			["coord"] = { 47.9, 46.8, VALDRAKKEN },
+			["groups"] = {
+				i(207802),	-- Bobby Carlisle's Thinking Cap Notes
+				i(208416, {	-- Thunderspine Nest Shopping List
+					["provider"] = { "n", 185556 },	-- Erugosa
+					["coord"] = { 46.5, 46.2, VALDRAKKEN },
+				}),
+				i(207956, {	-- Thunderspine Nest
+					["provider"] = { "n", 185556 },	-- Erugosa
+					["coord"] = { 46.5, 46.2, VALDRAKKEN },
+					["cost"] = {
+						{"i",201419,5},	-- Apexis Asiago
+						{"i",198441,5},	-- Thunderspine Tenders
+						{"i",205693,5},	-- Latticed Stinkhorn
+					},
+				}),
+				i(207814, {	-- Thought Calculating Apparatus
+					["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
+					["coord"] = { 42.2, 48.6, VALDRAKKEN },
+					["cost"] = {{"i",207956,5}},	-- Thunderspine Nest
+				}),
+				i(207812, {	-- Fresh Tyranha
+					["crs"] = 191451,	-- Hungering Tyranha
+					["coords"] = {
+						{ 45.3, 93.1, VALDRAKKEN },
+					},
+				}),
+				i(207813, {	-- Downy Helmet Liner
+					["provider"] = { "n", 197781 },	-- Gryffin
+					["coord"] = { 42.4, 49.4, VALDRAKKEN },
+					["cost"] = {{"i",207812,1}},	-- Fresh Tyranha
+				}),
+				q(77230, {
+					["name"] = "Pay Shakey's Tab",
+					["repeatable"] = true,
+					["cost"] = 3464358,
+				}),
+				i(207816, {	-- Crystal Ocular Lenses
+					["provider"] = { "n", 198586 },	-- Shakey Flatlap
+					["coord"] = { 38.9, 61.8, VALDRAKKEN },
+					["sourceQuest"] = 77230,	-- Pay Shakey's Tab (HQT)
+				}),
+				i(207827, {	-- Unfinished Thinking Cap
+					["cost"] = {
+						{"i",207814,1},	-- Thought Calculating Apparatus
+						{"i",207813,1},	-- Downy Helmet Liner
+						{"i",207816,1},	-- Crystal Ocular Lenses
+					},
+				}),
+				q(77237, {	-- Unfinished Thinking Cap
+					["provider"] = { "i", 207827 },	-- Unfinished Thinking Cap
+					["crs"] = 207697,	-- Fangli Hoot
+					["coords"] = {
+						-- noted that this NPC 'moves around', perhaps daily?
+						{ 26.6, 53.9, VALDRAKKEN },
+					},
+					["groups"] = {
+						i(206696),	-- Tricked-Out Thinking Cap
+					},
+				}),
+			},
+		}),
 	}),
 }))));
 
@@ -89,4 +154,7 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(77204),	-- placed 'Golden Chalice'
 	q(76987),	-- completed 'The Inquisitive' (account-wide completion)
 	q(76995),	-- looted Crazed Looter first time (208182)
+	q(77687),	-- completed 'A Secretive Contact' (77165)
+	q(77230),	-- paying Shakey's tab during 'A Secretive Contact' (77165)
+	q(78202),	-- completed 'Unfinished Thinking Cap' (77237)
 })))
