@@ -119,7 +119,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 						i(208164),	-- Kite of the Light Avenger
 						i(208166),	-- Club of of the Light Avenger
 					},
-				}),	
+				}),
 				i(208179, {	-- Blood Onyx Blades
 					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
 					["classes"] = ROGUE,
@@ -173,6 +173,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(190698, {	-- Gently Used Cleaver
 					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
 				}),
+				i(210265, {	-- High Scholar's Grand Staff
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+				}),
 				i(208423, {	-- Homebrewer's Sampling Crest
 					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
 				}),
@@ -217,7 +220,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		}),
-		n(UNAVAILABLE, { 
+		n(UNAVAILABLE, {
 		--	["description"] = "Although these items are not available at the moment, they have been accessible in the past and will become available again in the future. The exact timing of their availability is currently unknown.",
 			filter(MOUNTS, bubbleDown({ ["cost"] = { { "c", TRADERS_TENDER, 900 }, }, },{
 				i(207964, {	-- Alabaster Stormtalon (MOUNT!)
@@ -1455,7 +1458,7 @@ filter(BATTLE_PETS, {
 						i(208164),	-- Kite of the Light Avenger
 						i(208166),	-- Club of of the Light Avenger
 					},
-				}),	
+				}),
 				i(208179, {	-- Blood Onyx Blades
 					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
 					["classes"] = ROGUE,
