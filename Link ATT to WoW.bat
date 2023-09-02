@@ -1,13 +1,14 @@
 :: Run this batch script to link the AllTheThings addon with all non-PTR versions of the game.
 @echo off
 
+call :link_wowfolder "C:\Program Files\World of Warcraft"
+call :link_wowfolder "C:\Program Files (x86)\World of Warcraft"
 call :link_wowfolder "..\World of Warcraft"
 call :report_taskcomplete
 goto :EOF
 
 :link_wowfolder
 if exist "%~1\" (
-	echo Checking "%~1\"
 	call :link_expansion "%~1\_classic_"
 	call :link_expansion "%~1\_classic_era_"
 	call :link_expansion "%~1\_classic_ptr_"
