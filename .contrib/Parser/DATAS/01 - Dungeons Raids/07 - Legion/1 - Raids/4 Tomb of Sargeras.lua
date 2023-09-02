@@ -18,44 +18,59 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(11787, {    -- The Gates of Hell
-                    crit(1, {    -- Goroth
+                    crit(36469, {    -- Goroth
                         ["_encounter"] = { 1862, LFR_RAID },
                     }),
-                    crit(2, {    -- Harjatan
+                    crit(36470, {    -- Harjatan
                         ["_encounter"] = { 1856, LFR_RAID },
                     }),
-                    crit(3, {    -- Mistress Sassz'ine
+                    crit(36471, {    -- Mistress Sassz'ine
                         ["_encounter"] = { 1861, LFR_RAID },
                     }),
                 }),
 				ach(11788, {    -- Wailing Halls
-                    crit(1, {    -- Demonic Inquisition
+                    crit(36472, {    -- Demonic Inquisition
                         ["_encounter"] = { 1867, LFR_RAID },
                     }),
-                    crit(2, {    -- Sisters of the Moon
+                    crit(36473, {    -- Sisters of the Moon
                         ["_encounter"] = { 1903, LFR_RAID },
                     }),
-                    crit(3, {    -- The Desolate Host
+                    crit(36474, {    -- The Desolate Host
                         ["_encounter"] = { 1896, LFR_RAID },
                     }),
                 }),
 				ach(11789, {    -- Chamber of the Avatar
-                    crit(1, {    -- Maiden of Vigilance
+                    crit(36475, {    -- Maiden of Vigilance
                         ["_encounter"] = { 1897, LFR_RAID },
                     }),
-                    crit(2, {    -- Fallen Avatar
+                    crit(36476, {    -- Fallen Avatar
                         ["_encounter"] = { 1873, LFR_RAID },
                     }),
                 }),
 				ach(11790, {    -- Deceiver's Fall
-                    crit(1, {    -- Kil'jaeden
+                    crit(36477, {    -- Kil'jaeden
                         ["_encounter"] = { 1898, LFR_RAID },
                     }),
                 }),
-				-- TODO: meta-achievement symlink
 				ach(11763, {	-- Glory of the Tomb Raider
-					title(362),	-- <Name> the Tomb Raider
-					i(101426),	-- Micronax (PET!)
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						11724,	-- Fel Turkey!
+						11696,	-- Grin and Bear It
+						11683,	-- Bingo!
+						11676,	-- Five Course Seafood Buffet
+						11675,	-- Sky Walker
+						11674,	-- Great Soul, Great Purpose
+						11773,	-- Wax On, Wax Off
+						11770,	-- Dark Souls
+						11699,	-- Grand Fin-ale
+					}},
+					["groups"] = {
+						title(362, {	-- , the Tomb Raider
+							["style"] = 3,
+						}),
+						i(101426),		-- Micronax (PET!)
+					},
 				}),
 				ach(11782),	-- Tomb of Sargeras Guild Run
 			}),
@@ -564,7 +579,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				e(1856, {	-- Harjatan
 					["creatureID"] = 116407,	-- Harjatan
 					["g"] = {
-						ach(11699),	-- Grand Fin-ale
+						ach(11699, {	-- Grand Fin-ale
+							["crs"] = { 121071 },	-- Elder Murk-Eye
+						}),
 						i(147037),	-- Dripping Arcfin Shoulderpads
 						i(147043),	-- Hauberk of Frozen Mist
 						i(146994),	-- Robe of Aqueous Command
@@ -599,7 +616,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						118518,	-- Sisters of the Moon (Priestess Lunaspyre)
 					},
 					["g"] = {
-						ach(11773),	-- Wax On, Wax Off
+						ach(11773, {	-- Wax On, Wax Off
+							["crs"] = { 121498 },	-- Twilight Soul
+						}),
 						i(147033),	-- Lunar-Wrath Headgear
 						i(147054),	-- Mantle of Waning Radiance
 						i(146997),	-- Shoulderpads of Whispering Twilight
@@ -752,7 +771,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				e(1898, {	-- Kil'jaeden
 					["creatureID"] = 117269,	-- Kil'jaeden
 					["g"] = {
-						ach(11770),	-- Dark Souls
+						ach(11770, {	-- Dark Souls
+							["crs"] = { 121193 },	-- Shadowsoul
+						}),
 						i(151539, {	-- Technique: Glyph of Ember Shards (RECIPE!)
 							["timeline"] = { "added 7.2.5" },
 						}),

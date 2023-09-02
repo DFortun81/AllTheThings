@@ -406,6 +406,10 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				10699,	-- Infinitesimal
 				10696,	-- I've Got My Eyes On You
 			}},
+			["maps"] = {
+				764, 765, 766, 767, 768, 769, 770, 771, 772,	-- The Nighthold
+				777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789,	-- The Emerald Nightmare
+			},
 			["groups"] = {
 				i(141216),		-- Grove Defiler (MOUNT!)
 			},
@@ -556,21 +560,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				}),
 			},
 		})),
-		ach(11763, {	-- Glory of the Tomb Raider
-			title(362, {	-- , the Tomb Raider
-				["style"] = 3,
-			}),
-			i(101426),		-- Micronax (PET!) (you also get this - Crieve)
-			crit(1),		-- Fel Turkey!
-			crit(2),		-- Grin and Bear It
-			crit(3),		-- Bingo!
-			crit(4),		-- Five Course Seafood Buffet
-			crit(5),		-- Sky Walker
-			crit(6),		-- Great Soul, Great Purpose
-			crit(7),		-- Wax On, Wax Off
-			crit(8),		-- Dark Souls
-			crit(9),		-- Grand Fin-ale
-		}),
 		ach(12806, {	-- Glory of the Uldir Raider
 			i(163216),		-- Bloodgorged Crawg (MOUNT!)
 			crit(1),		-- Double Dribble

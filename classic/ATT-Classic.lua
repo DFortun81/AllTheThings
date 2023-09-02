@@ -4011,7 +4011,7 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 								elseif v[1] == "i" then
 									return GetItemInfo(v[2]);
 								elseif v[1] == "n" then
-									return app.NPCDisplayIDFromID[v[2]];
+									return app.NPCNameFromID[v[2]];
 								end
 							end
 						end

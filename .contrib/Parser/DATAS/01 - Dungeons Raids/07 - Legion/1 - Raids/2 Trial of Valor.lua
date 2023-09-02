@@ -11,24 +11,24 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(11394, {	-- Trial of Valor
-					crit(1, { -- Odyn
+					crit(34578, { -- Odyn
 						["_encounter"] = { 1819, LFR_RAID },
 					}),
-					crit(2, { -- Guarm
+					crit(34800, { -- Guarm
 						["_encounter"] = { 1830, LFR_RAID },
 					}),
-					crit(3, { -- Helya
+					crit(34799, { -- Helya
 						["_encounter"] = { 1829, LFR_RAID },
 					}),
 				}),
 				ach(11426, {	-- Heroic: Trial of Valor
-					crit(1, { -- Odyn
+					crit(34839, { -- Odyn
 						["_encounter"] = { 1819, HEROIC_RAID },
 					}),
-					crit(2, { -- Guarm
+					crit(34841, { -- Guarm
 						["_encounter"] = { 1830, HEROIC_RAID },
 					}),
-					crit(3, { -- Helya
+					crit(34840, { -- Helya
 						["_encounter"] = { 1829, HEROIC_RAID },
 					}),
 				}),
@@ -264,7 +264,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						114323,	-- Guarm
 					},
 					["g"] = {
-						ach(11386),	-- Boneafide Tri Tip
+						ach(11386, {	-- Boneafide Tri Tip
+							["crs"] = { 116404 },	-- Guarm's Chew Toy
+						}),
 						i(142111),	-- Vantus Rune Technique: Guarm [Rank 1] (RECIPE!)
 						i(142105),	-- Vantus Rune Technique: Guarm [Rank 2] (RECIPE!)
 						i(142412),	-- Windwhipped Sailcloth

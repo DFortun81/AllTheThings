@@ -7980,7 +7980,7 @@ local criteriaFields = {
 							elseif v[1] == "i" then
 								return GetItemInfo(v[2]);
 							elseif v[1] == "n" then
-								return app.NPCDisplayIDFromID[v[2]];
+								return app.NPCNameFromID[v[2]];
 							end
 						end
 					end

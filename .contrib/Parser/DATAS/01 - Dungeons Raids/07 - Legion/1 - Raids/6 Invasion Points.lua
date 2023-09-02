@@ -41,68 +41,74 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						126499,	-- Invasion Point: Val
 					},
 					["g"] = {
-						{	-- Mazgoroth
-							["criteriaID"] = 1,	-- Mazgoroth
-							["creatureID"] = 125137,	-- Mazgoroth
-						},
-						{	-- Gorgoloth
-							["criteriaID"] = 2,	-- Gorgoloth
-							["creatureID"] = 125148,	-- Gorgoloth
-						},
-						{	-- Dread Knight Zak'gal
-							["criteriaID"] = 3,	-- Dread Knight Zak'gal
-							["creatureID"] = 125252,	-- Dread Knight Zak'gal
-						},
-						{	-- Fel Lord Kaz'ral
-							["criteriaID"] = 4,	-- Fel Lord Kaz'ral
-							["creatureID"] = 125272,	-- Fel Lord Kaz'ral
-						},
-						{	-- Flamecaller Vezrah
-							["criteriaID"] = 5,	-- Flamecaller Vezrah
-							["creatureID"] = 125280,	-- Flamecaller Vezrah
-						},
-						{	-- Flameweaver Verathix
-							["criteriaID"] = 6,	-- Flameweaver Verathix
-							["creatureID"] = 125314,	-- Flameweaver Verathix
-						},
-						{	-- Harbinger Drel'nathar
-							["criteriaID"] = 7,	-- Harbinger Drel'nathar
-							["creatureID"] = 125483,	-- Harbinger Drel'nathar
-						},
-						{	-- Dreadbringer Valus
-							["criteriaID"] = 8,	-- Dreadbringer Valus
-							["creatureID"] = 125527,	-- Dreadbringer Valus
-						},
-						{	-- Malphazel
-							["criteriaID"] = 9,	-- Malphazel
-							["creatureID"] = 125578,	-- Malphazel
-						},
-						{	-- Vogrethar the Defiled
-							["criteriaID"] = 10,	-- Vogrethar the Defiled
-							["creatureID"] = 125587,	-- Vogrethar the Defiled
-						},
-						{	-- Vel'thrak the Punisher
-							["criteriaID"] = 11,	-- Vel'thrak the Punisher
-							["creatureID"] = 125634,	-- Vel'thrak the Punisher
-						},
-						{	-- Flamebringer Az'rothel
-							["criteriaID"] = 12,	-- Flamebringer Az'rothel
-							["creatureID"] = 125655,	-- Flamebringer Az'rothel
-						},
-						{	-- Baldrazar
-							["criteriaID"] = 13,	-- Baldrazar
-							["creatureID"] = 125666,	-- Baldrazar
-						},
+						crit(37456, {	-- Mazgoroth
+							["crs"] = { 125137 },	-- Mazgoroth
+						}),
+						crit(37457, {	-- Gorgoloth
+							["crs"] = { 125148 },	-- Gorgoloth
+						}),
+						crit(37458, {	-- Dread Knight Zak'gal
+							["crs"] = { 125252 },	-- Dread Knight Zak'gal
+						}),
+						crit(37459, {	-- Fel Lord Kaz'ral
+							["crs"] = { 125272 },	-- Fel Lord Kaz'ral
+						}),
+						crit(37460, {	-- Flamecaller Vezrah
+							["crs"] = { 125280 },	-- Flamecaller Vezrah
+						}),
+						crit(37461, {	-- Flameweaver Verathix
+							["crs"] = { 125314 },	-- Flameweaver Verathix
+						}),
+						crit(37462, {	-- Harbinger Drel'nathar
+							["crs"] = { 125483 },	-- Harbinger Drel'nathar
+						}),
+						crit(37463, {	-- Dreadbringer Valus
+							["crs"] = { 125527 },	-- Dreadbringer Valus
+						}),
+						crit(37464, {	-- Malphazel
+							["crs"] = { 125578 },	-- Malphazel
+						}),
+						crit(37465, {	-- Vogrethar the Defiled
+							["crs"] = { 125587 },	-- Vogrethar the Defiled
+						}),
+						crit(37466, {	-- Vel'thrak the Punisher
+							["crs"] = { 125634 },	-- Vel'thrak the Punisher
+						}),
+						crit(37467, {	-- Flamebringer Az'rothel
+							["crs"] = { 125655 },	-- Flamebringer Az'rothel
+						}),
+						crit(37468, {	-- Baldrazar
+							["crs"] = { 125666 },	-- Baldrazar
+						}),
 					},
 				}),
-				ach(12026),	-- Invasion Obliteration
+				ach(12026, {	-- Invasion Obliteration
+					crit(37450, {	-- Occularus
+						["_npcs"] = { 124492 },	-- Occularus
+					}),
+					crit(37451, {	-- Sotanathor
+						["_npcs"] = { 124555 },	-- Sotanathor
+					}),
+					crit(37452, {	-- Matron Folnuna
+						["_npcs"] = { 124514 },	-- Matron Folnuna
+					}),
+					crit(37453, {	-- Inquisitor Meto
+						["_npcs"] = { 124592 },	-- Inquisitor Meto
+					}),
+					crit(37454, {	-- Mistress Alluradel
+						["_npcs"] = { 124625 },	-- Mistress Alluradel
+					}),
+					crit(37455, {	-- Pit Lord Vilemus
+						["_npcs"] = { 124719 },	-- Pit Lord Vilemus
+					}),
+				}),
 			}),
 			e(2010, {	-- Matron Folnuna
+				["creatureID"] = 124514,	-- Matron Folnuna
+				["crs"] = { 127528 },	-- Greater Invasion Point: Matron Folnuna
 				["questID"] = 49169,
 				["modelScale"] = 0.65,
-				["creatureID"] = 124514,
 				["isRaid"] = true,
-				["crs"] = { 127528 },	-- Greater Invasion Point: Matron Folnuna
 				["maps"] = {
 					929,	-- Greater Invasion Point: Matron Folnuna
 					KROKUUN,
@@ -115,9 +121,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
 				["g"] = {
-					crit(37452, {	-- Matron Folnuna
-						["achievementID"] = 12026,	-- Invasion Obliteration
-					}),
 					i(207296, {	-- Grimoire of the Netherbound Imp (CI!)
 						["timeline"] = { ADDED_10_1_5 },
 					}),
@@ -138,11 +141,11 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				},
 			}),
 			e(2011, {	-- Mistress Alluradel
+				["creatureID"] = 124625,	-- Mistress Alluradel
+				["crs"] = { 127536 },	-- Greater Invasion Point: Mistress Alluradel
 				["questID"] = 49167,
 				["modelScale"] = 0.95,
-				["creatureID"] = 124625,
 				["isRaid"] = true,
-				["crs"] = { 127536 },	-- Greater Invasion Point: Mistress Alluradel
 				["maps"] = {
 					928,	-- Greater Invasion Point: Mistress Alluradel
 					KROKUUN,
@@ -155,9 +158,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
 				["g"] = {
-					crit(37454, {	-- Mistress Alluradel
-						["achievementID"] = 12026,	-- Invasion Obliteration
-					}),
 					i(152351),	-- Mesmerizing Soul Hood
 					i(152354),	-- Accursed Defiler's Mantle
 					i(152363),	-- Fel-Spike Shoulderpads
@@ -175,11 +175,11 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				},
 			}),
 			e(2012, {	-- Inquisitor Meto
+				["creatureID"] = 124592,	-- Inquisitor Meto
+				["crs"] = { 127535 },	-- Greater Invasion Point: Inquisitor Meto
 				["questID"] = 49166,
 				["modelScale"] = 0.85,
-				["creatureID"] = 124592,
 				["isRaid"] = true,
-				["crs"] = { 127535 },	-- Greater Invasion Point: Inquisitor Meto
 				["maps"] = {
 					930,	-- Greater Invasion Point: Inquisitor Meto
 					KROKUUN,
@@ -192,9 +192,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
 				["g"] = {
-					crit(37453, {	-- Inquisitor Meto
-						["achievementID"] = 12026,	-- Invasion Obliteration
-					}),
 					i(152361),	-- Horned Hood of Retaliation
 					i(152371),	-- Shoulderguards of Despondent Masses
 					i(152378),	-- Breastplate of Terminal End
@@ -212,11 +209,11 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				},
 			}),
 			e(2013, {	-- Occularus
+				["creatureID"] = 124492,	-- Occularus
+				["crs"] = { 127533 },	-- Greater Invasion Point: Occularus
 				["questID"] = 49170,
 				["modelScale"] = 0.50,
-				["creatureID"] = 124492,
 				["isRaid"] = true,
-				["crs"] = { 127533 },	-- Greater Invasion Point: Occularus
 				["maps"] = {
 					932,	-- Greater Invasion Point: Occularus
 					KROKUUN,
@@ -229,9 +226,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
 				["g"] = {
-					crit(37450, {	-- Occularus
-						["achievementID"] = 12026,	-- Invasion Obliteration
-					}),
 					i(152369),	-- Helm of the Vigilant Eye
 					i(152351),	-- Mesmerizing Soul Hood
 					i(152354),	-- Accursed Defiler's Mantle
@@ -247,11 +241,11 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				},
 			}),
 			e(2014, {	-- Sotanathor
+				["creatureID"] = 124555,		-- Sotanathor
+				["crs"] = { 127532 },	-- Greater Invasion Point: Sotanathor
 				["questID"] = 49171,
 				["modelScale"] = 0.75,
-				["creatureID"] = 124555,
 				["isRaid"] = true,
-				["crs"] = { 127532 },	-- Greater Invasion Point: Sotanathor
 				["maps"] = {
 					931,	-- Greater Invasion Point: Sotanathor
 					KROKUUN,
@@ -264,9 +258,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
 				["g"] = {
-					crit(37451, {	-- Sotanathor
-						["achievementID"] = 12026,	-- Invasion Obliteration
-					}),
 					i(152361),	-- Horned Hood of Retaliation
 					i(152379),	-- Spaulders of Vile Determination
 					i(152366),	-- Enthralling Chain Armor
@@ -284,11 +275,11 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				},
 			}),
 			e(2015, {	-- Pit Lord Vilemus
+				["creatureID"] = 124719,	-- Pit Lord Vilemus
+				["crs"] = { 127531 },	-- Greater Invasion Point: Pit Lord Vilemus
 				["questID"] = 49168,
 				["modelScale"] = 1.15,
-				["creatureID"] = 124719,
 				["isRaid"] = true,
-				["crs"] = { 127531 },	-- Greater Invasion Point: Pit Lord Vilemus
 				["maps"] = {
 					927,	-- Greater Invasion Point: Pit Lord Vilemus
 					KROKUUN,
@@ -301,9 +292,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
 				["g"] = {
-					crit(37455, {	-- Pit Lord Vilemus
-						["achievementID"] = 12026,	-- Invasion Obliteration
-					}),
 					i(152376),	-- Crown of Burning Resolve
 					i(152363),	-- Fel-Spike Shoulderpads
 					i(152378),	-- Breastplate of Terminal End
@@ -320,8 +308,8 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				},
 			}),
 			q(48982, {	-- Invasion Point: Aurinor
-				["icon"] = "Interface\\Icons\\inv_legionadventure",
 				["crs"] = { 125849 },	-- Invasion Point: Aurinor
+				["icon"] = "Interface\\Icons\\inv_legionadventure",
 				["repeatable"] = true,
 				["maps"] = {
 					921,	-- Invasion Point: Aurinor
@@ -340,8 +328,8 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				},
 			}),
 			q(49099, {	-- Invasion Point: Bonich
-				["icon"] = "Interface\\Icons\\inv_legionadventure",
 				["crs"] = { 126547 },	-- Invasion Point: Bonich
+				["icon"] = "Interface\\Icons\\inv_legionadventure",
 				["repeatable"] = true,
 				["maps"] = {
 					922,	-- Invasion Point: Bonich
@@ -360,8 +348,8 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				},
 			}),
 			q(49098, {	-- Invasion Point: Cen'gar
-				["icon"] = "Interface\\Icons\\inv_legionadventure",
 				["crs"] = { 126120 },	-- Invasion Point: Cen'gar
+				["icon"] = "Interface\\Icons\\inv_legionadventure",
 				["repeatable"] = true,
 				["maps"] = {
 					923,	-- Invasion Point: Cen'gar
@@ -380,8 +368,8 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				},
 			}),
 			q(49096, {	-- Invasion Point: Naigtal
-				["icon"] = "Interface\\Icons\\inv_legionadventure",
 				["crs"] = { 126593 },	-- Invasion Point: Naigtal
+				["icon"] = "Interface\\Icons\\inv_legionadventure",
 				["repeatable"] = true,
 				["maps"] = {
 					924,	-- Invasion Point: Naigtal
@@ -400,8 +388,8 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				},
 			}),
 			q(49097, {	-- Invasion Point: Sangua
-				["icon"] = "Interface\\Icons\\inv_legionadventure",
 				["crs"] = { 125863 },	-- Invasion Point: Sangua
+				["icon"] = "Interface\\Icons\\inv_legionadventure",
 				["repeatable"] = true,
 				["maps"] = {
 					925,	-- Invasion Point: Sangua
@@ -420,8 +408,8 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				},
 			}),
 			q(49091, {	-- Invasion Point: Val
-				["icon"] = "Interface\\Icons\\inv_legionadventure",
 				["crs"] = { 126499 },	-- Invasion Point: Val
+				["icon"] = "Interface\\Icons\\inv_legionadventure",
 				["repeatable"] = true,
 				["maps"] = {
 					926,	-- Invasion Point: Val
