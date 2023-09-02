@@ -1,13 +1,14 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local AllDifficulties = {LFR_RAID,NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID};
 root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	inst(457, {	-- Blackrock Foundry
-		["isRaid"] = true,
-		["lvl"] = 100,
 		["mapID"] = 598,
 		["maps"] = { 596, 597, 599, 600 },
 		["coord"] = { 51.55, 27.23, GORGROND },
+		["isRaid"] = true,
+		["lvl"] = 100,
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(8989, {	-- Slagworks
@@ -50,35 +51,58 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 				}),
 				ach(9417),	-- Blackrock Foundry Guild Run
 			}),
-			d(LFR_RAID, {	-- Queue NPC
-				["crs"] = { 94870 },	-- Seer Kazal <Shadowmoon Exile>
-			}),
-			d(LFR_RAID, {
-				n(ZONE_DROPS, {
+			n(COMMON_BOSS_DROPS, {
+				["crs"] = {
+					77182,	-- Oregorger
+					76877,	-- Gruul
+					76806,	-- The Blast Furnace
+					76973,	-- Hans'gar and Franzo
+					76814,	-- Flamebender Ka'graz
+					77692,	-- Kromog
+					76865,	-- Beastlord Darmac
+					76906,	-- Operator Thogar
+					76557,	-- The Iron Maidens
+					77325,	-- Blackhand
+				},
+				["groups"] = {
 					un(REMOVED_FROM_GAME, i(115510, {	-- Elemental Rune
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(115509)),	-- Elemental Tablet
 						},
-						["crs"] = {
-							77182,	-- Oregorger
-							76877,	-- Gruul
-							76806,	-- The Blast Furnace
-							76973,	-- Hans'gar and Franzo
-							76814,	-- Flamebender Ka'graz
-							77692,	-- Kromog
-							76865,	-- Beastlord Darmac
-							76906,	-- Operator Thogar
-							76557,	-- The Iron Maidens
-							77325,	-- Blackhand
-						},
 					})),
+				},
+			}),
+			d(AllDifficulties, {
+				cr(76806, e(1154, {	-- The Blast Furnace
+					un(REMOVED_FROM_GAME, i(115479)),	-- Heart of the Fury
+				})),
+				cr(76814, e(1123, {	-- Flamebender Ka'graz
+					un(REMOVED_FROM_GAME, i(115493)),	-- Flamebender's Tome
+				})),
+				e(1203, {	-- The Iron Maidens
+					["crs"] = {
+						77557,	-- Admiral Gar'an
+						77231,	-- Enforcer Sorka
+						77477,	-- Marak the Blooded
+					},
+					["g"] = {
+						un(REMOVED_FROM_GAME, i(115494)),	-- Draenic Thaumaturgical Orb
+					},
 				}),
+				cr(77325, e(959, {	-- Blackhand
+					un(REMOVED_FROM_GAME, i(115523)),	-- Blackhand's Severed Arm
+					i(138809, {	-- Illusion: Mark of Blackrock (ILLUSION!)
+						["timeline"] = { ADDED_7_0_3 },
+					}),
+					i(122200),	-- Music Roll: A Siege of Worlds
+				})),
+			}),
+			d(LFR_RAID, {	-- Queue NPC
+				["crs"] = { 94870 },	-- Seer Kazal <Shadowmoon Exile>
+			}),
+			d(LFR_RAID, {
 				header(HEADERS.Achievement, 8989, {	-- Slagworks
 					cr(77182, e(1202, {	-- Oregorger
-						{
-							["achievementID"] = 8989,	-- Slagworks
-							["criteriaID"] = 2,			-- Oregorger
-						},
 						i(116381),	-- Oregorger's Blackrock Shanker
 						i(116380),	-- Oregorger's Venomous Canine
 						i(116257),	-- Acid-Munched Greathelm
@@ -92,10 +116,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						i(116021),	-- Chasmwalker Sandals
 					})),
 					cr(76877, e(1161, {	-- Gruul
-						{
-							["achievementID"] = 8989,	-- Slagworks
-							["criteriaID"] = 1,			-- Gruul
-						},
 						i(116229),	-- Gaze of the Gronn Killer
 						i(116307),	-- Cloak of Unfulfilled Potential
 						i(116045),	-- Spelunker's Chestguard
@@ -107,10 +127,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						i(116299),	-- Eye of the Gronn
 					})),
 					cr(76806, e(1154, {	-- The Blast Furnace
-						{
-							["achievementID"] = 8989,	-- Slagworks
-							["criteriaID"] = 3,			-- Blast Furnace
-						},
 						i(116382),	-- Spire of Pyroclastic Flame
 						i(116379),	-- Flickering Lantern Wisp
 						i(116004),	-- Pyroclastic Hood
@@ -126,29 +142,26 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						i(120379),	-- Sootfur Legwraps
 						i(116303),	-- Firecaller's Scorched Seal
 						i(116315),	-- Furyheart Talisman
-						un(REMOVED_FROM_GAME, i(115479)),	-- Heart of the Fury
 					})),
 				}),
 				header(HEADERS.Achievement, 8990, {	-- Black Forge
-					cr(76973, e(1155, {	-- Hans'gar and Franzok (76974)
-						{
-							["achievementID"] = 8990,	-- Black Forge
-							["criteriaID"] = 1,			-- Hans'gar and Franzok
+					e(1155, {	-- Hans'gar and Franzok
+						["crs"] = {
+							76973,	-- Hans'gar
+							76974,	-- Franzok
 						},
-						i(116012),	-- Fresh-Face Hood
-						i(116311),	-- Choker of Infinite Durability
-						i(116256),	-- Elbow Drop Spaulders
-						i(116305),	-- Scorchburn Cloak
-						i(116227),	-- Blood-Binder Chestguard
-						i(116217),	-- Brawler Brother's Bracers
-						i(116034),	-- Drop Kickers
-						i(116238),	-- Heel Protectors
-					})),
+						["groups"] = {
+							i(116012),	-- Fresh-Face Hood
+							i(116311),	-- Choker of Infinite Durability
+							i(116256),	-- Elbow Drop Spaulders
+							i(116305),	-- Scorchburn Cloak
+							i(116227),	-- Blood-Binder Chestguard
+							i(116217),	-- Brawler Brother's Bracers
+							i(116034),	-- Drop Kickers
+							i(116238),	-- Heel Protectors
+						},
+					}),
 					cr(76814, e(1123, {	-- Flamebender Ka'graz
-						{
-							["achievementID"] = 8990,	-- Black Forge
-							["criteriaID"] = 2,			-- Flamebender Ka'graz
-						},
 						i(116385),	-- Magma Monsoon Mace
 						i(116384),	-- Steelbringer's Polished Shield
 						i(116245),	-- Maw of Charring Breath
@@ -164,13 +177,8 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						i(116040),	-- Magma-Mauled Leggings
 						i(116011),	-- Fixated Treads
 						i(116316),	-- Captured Flickerspark
-						un(REMOVED_FROM_GAME, i(115493)),	-- Flamebender's Tome
 					})),
 					cr(77692, e(1162, {	-- Kromog <Legend of the Mountain>
-						{
-							["achievementID"] = 8990,	-- Black Forge
-							["criteriaID"] = 3,			-- Kromog
-						},
 						i(116387),	-- Axe of the Stone Geyser
 						i(116386),	-- Earthbound Shield
 						i(116035),	-- Rockbreaker Warcap
@@ -191,10 +199,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 				}),
 				header(HEADERS.Achievement, 8991, {	-- Iron Assembly
 					cr(76865, e(1122, {	-- Beastlord Darmac
-						{
-							["achievementID"] = 8991,	-- Iron Assembly
-							["criteriaID"] = 1,			-- Beastlord Darmac
-						},
 						i(116306),	-- Dreaded Wing
 						i(116255),	-- Heartsmasher Chestplate
 						i(116016),	-- Robes of Brutal Tantrums
@@ -207,10 +211,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						i(116302),	-- Thunderlord Trainer's Insignia
 					})),
 					cr(76906, e(1147, {	-- Operator Thogar
-						{
-							["achievementID"] = 8991,	-- Iron Assembly
-							["criteriaID"] = 2,			-- Operator Thogar
-						},
 						i(116388),	-- Crack-Shot Longrifle
 						i(116389),	-- Thogar's Imperialistic Spire
 						i(120388),	-- Ashlink Pauldrons
@@ -233,10 +233,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 							77477,	-- Marak the Blooded
 						},
 						["g"] = {
-							{
-								["achievementID"] = 8991,	-- Iron Assembly
-								["criteriaID"] = 3,			-- The Iron Maidens
-							},
 							i(116390),	-- Battle Medic's Wand
 							i(116220),	-- Grapeshot Hood
 							i(116263),	-- Vortex Plate Helm
@@ -252,7 +248,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 							i(116010),	-- Incendiary Leggings
 							i(116250),	-- Impaler's Greatboots
 							i(116314),	-- Blackheart Enforcer's Medallion
-							un(REMOVED_FROM_GAME, i(115494)),	-- Draenic Thaumaturgical Orb
 						},
 					}),
 				}),
@@ -274,45 +269,89 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						i(116251),	-- Ironshatter Legplates
 						i(116042),	-- Ram-Carrier's Treads
 						i(116317),	-- Storage House Key
-						i(138809, {	-- Illusion: Mark of Blackrock (ILLUSION!)
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(122200),	-- Music Roll: A Siege of Worlds
-						un(REMOVED_FROM_GAME, i(115523)),	-- Blackhand's Severed Arm
 					})),
 				}),
+			}),
+			d({NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID}, {
+				cr(77182, e(1202, {	-- Oregorger
+					ach(8979),	-- He Shoots, He Ores
+				})),
+				cr(76877, e(1161, {	-- Gruul
+					ach(8978),	-- The Iron Price
+				})),
+				cr(76806, e(1154, {	-- The Blast Furnace
+					ach(8930, {	-- Ya, We've Got Time...
+						["crs"] = { 76815 },	-- Primal Elementalist
+					}),
+				})),
+				e(1155, {	-- Hans'gar and Franzok
+					["crs"] = {
+						76973,	-- Hans'gar
+						76974,	-- Franzok
+					},
+					["groups"] = {
+						ach(8980),	-- Stamp Stamp Revolution
+					},
+				}),
+				cr(76814, e(1123, {	-- Flamebender Ka'graz
+					ach(8929, {	-- The Steel Has Been Brought
+						["crs"] = { 77337 },	-- Aknor Steelbringer
+						["groups"] = {
+							follower(225),	-- Aknor Steelbringer
+						},
+					}),
+				})),
+				cr(77692, e(1162, {	-- Kromog <Legend of the Mountain>
+					ach(8983, {	-- Would You Give Me a Hand?
+						["crs"] = { 77893 },	-- Grasping Earth
+					}),
+				})),
+				cr(76865, e(1122, {	-- Beastlord Darmac
+					ach(8981, {	-- Fain Would Lie Down
+						crit(24675, {	-- Dreadwing Mounted First
+							["provider"] = { "n", 76874 },	-- Dreadwing
+						}),
+						crit(24676, {	-- Ironcrusher Mounted First
+							["provider"] = { "n", 76945 },	-- Ironcrusher
+						}),
+						crit(24677, {	-- Cruelfang Mounted First
+							["provider"] = { "n", 76884 },	-- Cruelfang
+						}),
+					}),
+				})),
+				cr(76906, e(1147, {	-- Operator Thogar
+					ach(8982, {	-- There's Always a Bigger Train
+						["providers"] = {
+							{ "n", 81071 },	-- Exulting Wind-Up Train Wrecker
+							{ "i", 45057 },	-- Wind-Up Train Wrecker
+							{ "i", 44606 },	-- Toy Train Set
+						},
+					}),
+				})),
+				e(1203, {	-- The Iron Maidens
+					["crs"] = {
+						77557,	-- Admiral Gar'an
+						77231,	-- Enforcer Sorka
+						77477,	-- Marak the Blooded
+					},
+					["g"] = {
+						ach(8984),	-- Be Quick or Be Dead
+					},
+				}),
+				cr(77325, e(959, {	-- Blackhand
+					ach(8952),	-- Ashes, Ashes...
+				})),
 			}),
 			d(NORMAL_RAID, {
 				n(QUESTS, {
 					q(37029, {	-- Sigil of the Black Hand
-						["description"] = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
+						["description"] = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r",
 						["altQuests"] = {
 							37030,	-- Sigil of the Black Hand (Heroic)
 							37031,	-- Sigil of the Black Hand (Mythic)
 						},
-						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
 					}),
-				}),
-				n(COMMON_BOSS_DROPS, {
-					["crs"] = {
-						77182,	-- Oregorger
-						76877,	-- Gruul
-						76806,	-- The Blast Furnace
-						76973,	-- Hans'gar and Franzo
-						76814,	-- Flamebender Ka'graz
-						77692,	-- Kromog
-						76865,	-- Beastlord Darmac
-						76906,	-- Operator Thogar
-						76557,	-- The Iron Maidens
-						77325,	-- Blackhand
-					},
-					["groups"] = {
-						un(REMOVED_FROM_GAME, i(115510, {	-- Elemental Rune
-							["g"] = {
-								un(REMOVED_FROM_GAME, i(115509)),	-- Elemental Tablet
-							},
-						})),
-					},
 				}),
 				n(ZONE_DROPS, {
 					i(119332),	-- Bracers of Darkened Skies
@@ -325,7 +364,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(119339),	-- Treads of the Veteran Smith
 				}),
 				cr(77182, e(1202, {	-- Oregorger
-					ach(8979),	-- He Shoots, He Ores
 					i(119448),	-- Head-Lopper Skullscythe
 					i(113874),	-- Oregorger's Acid-Etched Gutripper
 					i(113879),	-- Caged Living Ooze
@@ -341,7 +379,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(119194),	-- Goren Soul Repository
 				})),
 				cr(76877, e(1161, {	-- Gruul
-					ach(8978),	-- The Iron Price
 					i(113869),	-- Inferno-Flame Staff
 					i(113862),	-- Taner's Terrible Spine
 					i(113868),	-- Flare-Eyed Hood
@@ -358,7 +395,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(118114),	-- Meaty Dragonspine Trophy
 				})),
 				cr(76806, e(1154, {	-- The Blast Furnace
-					ach(8930),	-- Ya, We've Got Time...
 					i(115569),	-- Legplates of Guiding Light
 					i(115587),	-- Shadow Council's Leggings
 					i(115564),	-- Soul Priest's Leggings
@@ -382,28 +418,29 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(113888),	-- Slagstomper Treads
 					i(113893),	-- Blast Furnace Door
 					i(113889),	-- Elementalist's Shielding Talisman
-					un(REMOVED_FROM_GAME, i(115479)),	-- Heart of the Fury
 				})),
-				cr(76973, e(1155, {	-- Hans'gar and Franzok (76974)
-					ach(8980),	-- Stamp Stamp Revolution
-					i(113904),	-- Franzok's Headsmasher
-					i(113897),	-- Hans'gar's Forgehammer
-					i(113910),	-- Hardened Greathelm
-					i(113900),	-- Vertebrae Protector
-					i(113903),	-- Giant Pumpers
-					i(113899),	-- Neckbreaker Shoulderguards
-					i(113902),	-- Chestguard of Unending Roars
-					i(113898),	-- Eye-Catching Gilded Robe
-					i(113906),	-- Gauntlets of Dramatic Blows
-					i(113907),	-- Girdle of Unconquered Glory
-					i(113908),	-- Razoredge Blade Ring
-					i(113901),	-- Six-Eyed Band
-					i(113905),	-- Tablet of Turnbuckle Teamwork
-				})),
+				e(1155, {	-- Hans'gar and Franzok
+					["crs"] = {
+						76973,	-- Hans'gar
+						76974,	-- Franzok
+					},
+					["groups"] = {
+						i(113904),	-- Franzok's Headsmasher
+						i(113897),	-- Hans'gar's Forgehammer
+						i(113910),	-- Hardened Greathelm
+						i(113900),	-- Vertebrae Protector
+						i(113903),	-- Giant Pumpers
+						i(113899),	-- Neckbreaker Shoulderguards
+						i(113902),	-- Chestguard of Unending Roars
+						i(113898),	-- Eye-Catching Gilded Robe
+						i(113906),	-- Gauntlets of Dramatic Blows
+						i(113907),	-- Girdle of Unconquered Glory
+						i(113908),	-- Razoredge Blade Ring
+						i(113901),	-- Six-Eyed Band
+						i(113905),	-- Tablet of Turnbuckle Teamwork
+					},
+				}),
 				cr(76814, e(1123, {	-- Flamebender Ka'graz
-					ach(8929, {	-- The Steel Has Been Brought
-						follower(225),	-- Aknor Steelbringer
-					}),
 					i(115566),	-- Battleplate of Guiding Light
 					i(115588),	-- Shadow Council's Robes
 					i(115560),	-- Soul Priest's Raiment
@@ -430,10 +467,8 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(113917),	-- Cinderwolf Signet
 					i(113922),	-- Seal of Unquenchable Flame
 					i(119193),	-- Horn of Screaming Spirits
-					un(REMOVED_FROM_GAME, i(115493)),	-- Flamebender's Tome
 				})),
 				cr(77692, e(1162, {	-- Kromog <Legend of the Mountain>
-					ach(8983),	-- Would You Give Me a Hand?
 					i(115568),	-- Helmet of Guiding Light
 					i(115586),	-- Shadow Council's Hood
 					i(115563),	-- Soul Priest's Hood
@@ -460,17 +495,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(113931),	-- Beating Heart of the Mountain
 				})),
 				cr(76865, e(1122, {	-- Beastlord Darmac
-					ach(8981, {	-- Fain Would Lie Down
-						crit(1, {	-- Dreadwing Mounted First
-							["creatureID"] = 76874,	-- Dreadwing
-						}),
-						crit(2, {	-- Ironcrusher Mounted First
-							["creatureID"] = 76945,	-- Ironcrusher
-						}),
-						crit(3, {	-- Cruelfang Mounted First
-							["creatureID"] = 76884,	-- Cruelfang
-						}),
-					}),
 					i(113939),	-- Tal'rak, Bloody Skull of the Thunderlords
 					i(113946),	-- Heart of the Clefthoof
 					i(113952),	-- Choker of Bestial Force
@@ -488,7 +512,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(119192),	-- Ironspike Chew Toy
 				})),
 				cr(76906, e(1147, {	-- Operator Thogar
-					ach(8982),	-- There's Always a Bigger Train
 					i(115565),	-- Pauldrons of Guiding Light
 					i(115589),	-- Shadow Council's Mantle
 					i(115561),	-- Soul Priest's Shoulderguards
@@ -520,7 +543,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						77477,	-- Marak the Blooded
 					},
 					["g"] = {
-						ach(8984),	-- Be Quick or Be Dead
 						i(115567),	-- Gauntlets of Guiding Light
 						i(115585),	-- Shadow Council's Gloves
 						i(115562),	-- Soul Priest's Gloves
@@ -546,18 +568,15 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						i(113974),	-- Treads of the Dark Hunt
 						i(113975),	-- Uk'urogg's Corrupted Seal
 						i(113969),	-- Vial of Convulsive Shadows
-						un(REMOVED_FROM_GAME, i(115494)),	-- Draenic Thaumaturgical Orb
 					},
 				}),
 				cr(77325, e(959, {	-- Blackhand
-					ach(8952),	-- Ashes, Ashes...
-					ach(8992),	-- Blackhand's Crucible
 					i(120277, {	-- Essence of the Iron Conqueror
 						["questID"] = 37553,
-						["races"] = ALLIANCE_ONLY,
-						["repeatable"] = true,
 						["modID"] = 0,	-- in-game this drops with no modID
 						["_drop"] = { "g" },	-- API lists all 3 token types
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
 						["g"] = {
 							i(120215, sharedData({["modID"] = 3},{	-- Helm of the Iron Conqueror
 								i(115568),	--
@@ -588,10 +607,10 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					}),
 					i(119310, {	-- Essence of the Iron Conqueror
 						["questID"] = 37540,
-						["races"] = HORDE_ONLY,
-						["repeatable"] = true,
 						["modID"] = 0,	-- in-game this drops with no modID
 						["_drop"] = { "g" },	-- API lists all 3 token types
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
 						["g"] = {
 							i(120215, sharedData({["modID"] = 3},{	-- Helm of the Iron Conqueror
 								i(115568),	--
@@ -776,10 +795,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 							})),
 						},
 					}),
-					i(138809, {	-- Illusion: Mark of Blackrock (ILLUSION!)
-						["timeline"] = { ADDED_7_0_3 },
-					}),
-					i(122200),	-- Music Roll: A Siege of Worlds
 					i(113988),	-- Blackhand Doomstaff
 					i(113980),	-- Iron Soldier's Saber
 					i(113979),	-- The Black Hand
@@ -792,7 +807,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(113984),	-- Blackiron Micro Crucible
 					i(113983),	-- Forgemaster's Insignia
 					i(113985),	-- Humming Blackiron Trigger
-					un(REMOVED_FROM_GAME, i(115523)),	-- Blackhand's Severed Arm
 				})),
 			}),
 			d(HEROIC_RAID, {
@@ -812,23 +826,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(119342),	-- Furnace Stoker's Footwraps
 					i(119340),	-- Iron-Flecked Sandals
 					i(119339),	-- Treads of the Veteran Smith
-					un(REMOVED_FROM_GAME, i(115510, {	-- Elemental Rune
-						["g"] = {
-							un(REMOVED_FROM_GAME, i(115509)),	-- Elemental Tablet
-						},
-						["crs"] = {
-							77182,	-- Oregorger
-							76877,	-- Gruul
-							76806,	-- The Blast Furnace
-							76973,	-- Hans'gar and Franzo
-							76814,	-- Flamebender Ka'graz
-							77692,	-- Kromog
-							76865,	-- Beastlord Darmac
-							76906,	-- Operator Thogar
-							76557,	-- The Iron Maidens
-							77325,	-- Blackhand
-						},
-					})),
 				}),
 				cr(77182, e(1202, {	-- Oregorger
 					i(119448),	-- Head-Lopper Skullscythe
@@ -885,23 +882,28 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(113888),	-- Slagstomper Treads
 					i(113893),	-- Blast Furnace Door
 					i(113889),	-- Elementalist's Shielding Talisman
-					un(REMOVED_FROM_GAME, i(115479)),	-- Heart of the Fury
 				})),
-				cr(76973, e(1155, {	-- Hans'gar and Franzok (76974)
-					i(113904),	-- Franzok's Headsmasher
-					i(113897),	-- Hans'gar's Forgehammer
-					i(113910),	-- Hardened Greathelm
-					i(113900),	-- Vertebrae Protector
-					i(113903),	-- Giant Pumpers
-					i(113899),	-- Neckbreaker Shoulderguards
-					i(113902),	-- Chestguard of Unending Roars
-					i(113898),	-- Eye-Catching Gilded Robe
-					i(113906),	-- Gauntlets of Dramatic Blows
-					i(113907),	-- Girdle of Unconquered Glory
-					i(113908),	-- Razoredge Blade Ring
-					i(113901),	-- Six-Eyed Band
-					i(113905),	-- Tablet of Turnbuckle Teamwork
-				})),
+				e(1155, {	-- Hans'gar and Franzok
+					["crs"] = {
+						76973,	-- Hans'gar
+						76974,	-- Franzok
+					},
+					["groups"] = {
+						i(113904),	-- Franzok's Headsmasher
+						i(113897),	-- Hans'gar's Forgehammer
+						i(113910),	-- Hardened Greathelm
+						i(113900),	-- Vertebrae Protector
+						i(113903),	-- Giant Pumpers
+						i(113899),	-- Neckbreaker Shoulderguards
+						i(113902),	-- Chestguard of Unending Roars
+						i(113898),	-- Eye-Catching Gilded Robe
+						i(113906),	-- Gauntlets of Dramatic Blows
+						i(113907),	-- Girdle of Unconquered Glory
+						i(113908),	-- Razoredge Blade Ring
+						i(113901),	-- Six-Eyed Band
+						i(113905),	-- Tablet of Turnbuckle Teamwork
+					},
+				}),
 				cr(76814, e(1123, {	-- Flamebender Ka'graz
 					i(115566),	-- Battleplate of Guiding Light
 					i(115588),	-- Shadow Council's Robes
@@ -929,7 +931,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(113917),	-- Cinderwolf Signet
 					i(113922),	-- Seal of Unquenchable Flame
 					i(119193),	-- Horn of Screaming Spirits
-					un(REMOVED_FROM_GAME, i(115493)),	-- Flamebender's Tome
 				})),
 				cr(77692, e(1162, {	-- Kromog <Legend of the Mountain>
 					i(115568),	-- Helmet of Guiding Light
@@ -1031,7 +1032,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						i(113974),	-- Treads of the Dark Hunt
 						i(113975),	-- Uk'urogg's Corrupted Seal
 						i(113969),	-- Vial of Convulsive Shadows
-						un(REMOVED_FROM_GAME, i(115494)),	-- Draenic Thaumaturgical Orb
 					},
 				}),
 				cr(77325, e(959, {	-- Blackhand
@@ -1262,10 +1262,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 							})),
 						},
 					}),
-					i(138809, {	-- Illusion: Mark of Blackrock (ILLUSION!)
-						["timeline"] = { ADDED_7_0_3 },
-					}),
-					i(122200),	-- Music Roll: A Siege of Worlds
 					i(113988),	-- Blackhand Doomstaff
 					i(113980),	-- Iron Soldier's Saber
 					i(113979),	-- The Black Hand
@@ -1278,14 +1274,13 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(113984),	-- Blackiron Micro Crucible
 					i(113983),	-- Forgemaster's Insignia
 					i(113985),	-- Humming Blackiron Trigger
-					un(REMOVED_FROM_GAME, i(115523)),	-- Blackhand's Severed Arm
 				}))
 			}),
 			d(MYTHIC_RAID, {
 				n(QUESTS, {
 					q(37031, {	-- Sigil of the Black Hand (Mythic)
-						["description"] = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Mythic difficulty each week.",
 						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
+						["description"] = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Mythic difficulty each week.",
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -1297,23 +1292,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(119342),	-- Furnace Stoker's Footwraps
 					i(119340),	-- Iron-Flecked Sandals
 					i(119339),	-- Treads of the Veteran Smith
-					un(REMOVED_FROM_GAME, i(115510, {	-- Elemental Rune
-						["g"] = {
-							un(REMOVED_FROM_GAME, i(115509)),	-- Elemental Tablet
-						},
-						["crs"] = {
-							77182,	-- Oregorger
-							76877,	-- Gruul
-							76806,	-- The Blast Furnace
-							76973,	-- Hans'gar and Franzo
-							76814,	-- Flamebender Ka'graz
-							77692,	-- Kromog
-							76865,	-- Beastlord Darmac
-							76906,	-- Operator Thogar
-							76557,	-- The Iron Maidens
-							77325,	-- Blackhand
-						},
-					})),
 				}),
 				cr(77182, e(1202, {	-- Oregorger
 					ach(8967),	-- Mythic: Oregorger
@@ -1373,24 +1351,29 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(113888),	-- Slagstomper Treads
 					i(113893),	-- Blast Furnace Door
 					i(113889),	-- Elementalist's Shielding Talisman
-					un(REMOVED_FROM_GAME, i(115479)),	-- Heart of the Fury
 				})),
-				cr(76973, e(1155, {	-- Hans'gar and Franzok (76974)
-					ach(8968),	-- Mythic: Hans'gar and Franzok
-					i(113904),	-- Franzok's Headsmasher
-					i(113897),	-- Hans'gar's Forgehammer
-					i(113910),	-- Hardened Greathelm
-					i(113900),	-- Vertebrae Protector
-					i(113903),	-- Giant Pumpers
-					i(113899),	-- Neckbreaker Shoulderguards
-					i(113902),	-- Chestguard of Unending Roars
-					i(113898),	-- Eye-Catching Gilded Robe
-					i(113906),	-- Gauntlets of Dramatic Blows
-					i(113907),	-- Girdle of Unconquered Glory
-					i(113908),	-- Razoredge Blade Ring
-					i(113901),	-- Six-Eyed Band
-					i(113905),	-- Tablet of Turnbuckle Teamwork
-				})),
+				e(1155, {	-- Hans'gar and Franzok
+					["crs"] = {
+						76973,	-- Hans'gar
+						76974,	-- Franzok
+					},
+					["groups"] = {
+						ach(8968),	-- Mythic: Hans'gar and Franzok
+						i(113904),	-- Franzok's Headsmasher
+						i(113897),	-- Hans'gar's Forgehammer
+						i(113910),	-- Hardened Greathelm
+						i(113900),	-- Vertebrae Protector
+						i(113903),	-- Giant Pumpers
+						i(113899),	-- Neckbreaker Shoulderguards
+						i(113902),	-- Chestguard of Unending Roars
+						i(113898),	-- Eye-Catching Gilded Robe
+						i(113906),	-- Gauntlets of Dramatic Blows
+						i(113907),	-- Girdle of Unconquered Glory
+						i(113908),	-- Razoredge Blade Ring
+						i(113901),	-- Six-Eyed Band
+						i(113905),	-- Tablet of Turnbuckle Teamwork
+					},
+				}),
 				cr(76814, e(1123, {	-- Flamebender Ka'graz
 					ach(8932),	-- Mythic: Flamebender Ka'graz
 					i(115566),	-- Battleplate of Guiding Light
@@ -1419,7 +1402,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(113917),	-- Cinderwolf Signet
 					i(113922),	-- Seal of Unquenchable Flame
 					i(119193),	-- Horn of Screaming Spirits
-					un(REMOVED_FROM_GAME, i(115493)),	-- Flamebender's Tome
 				})),
 				cr(77692, e(1162, {	-- Kromog <Legend of the Mountain>
 					ach(8971),	-- Mythic: Kromog
@@ -1525,7 +1507,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						i(113974),	-- Treads of the Dark Hunt
 						i(113975),	-- Uk'urogg's Corrupted Seal
 						i(113969),	-- Vial of Convulsive Shadows
-						un(REMOVED_FROM_GAME, i(115494)),	-- Draenic Thaumaturgical Orb
 					},
 				}),
 				cr(77325, e(959, {	-- Blackhand
@@ -1767,10 +1748,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						},
 					}),
 					i(116660),	-- Ironhoof Destroyer (MOUNT!)
-					i(138809, {	-- Illusion: Mark of Blackrock (ILLUSION!)
-						["timeline"] = { ADDED_7_0_3 },
-					}),
-					i(122200),	-- Music Roll: A Siege of Worlds
 					i(113988),	-- Blackhand Doomstaff
 					i(113980),	-- Iron Soldier's Saber
 					i(113979),	-- The Black Hand
@@ -1783,7 +1760,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(113984),	-- Blackiron Micro Crucible
 					i(113983),	-- Forgemaster's Insignia
 					i(113985),	-- Humming Blackiron Trigger
-					un(REMOVED_FROM_GAME, i(115523)),	-- Blackhand's Severed Arm
 				}))
 			})
 		},

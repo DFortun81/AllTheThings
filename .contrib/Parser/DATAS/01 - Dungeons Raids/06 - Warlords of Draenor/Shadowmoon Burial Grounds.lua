@@ -102,7 +102,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						{"sub", "common_wod_dungeon_drop", 2, HANDS},
 					},
 					["g"] = {
-						ach(9025),	-- Icky Ichors
+						ach(9025, {	-- Icky Ichors
+							["crs"] = { 77006 },	-- Corpse Skitterling
+						}),
 						i(110037),	-- Bonetooth Longbow
 						i(110012),	-- Bonemaw's Big Toe
 					},
@@ -117,7 +119,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					["g"] = {
 						ach(9054),	-- Heroic: Shadowmoon Burial Grounds
 						ach(9375),	-- Heroic: Shadowmoon Burial Grounds Guild Run
-						ach(9026),	-- Souls of the Lost
+						ach(9026, {	-- Souls of the Lost
+							["crs"] = { 76518 },	-- Ritual of Bones
+						}),
 						i(138806, {	-- Illusion: Mark of Shadowmoon (ILLUSION!)
 							["timeline"] = { ADDED_7_0_3 },
 						}),

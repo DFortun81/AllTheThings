@@ -3,117 +3,53 @@
 -----------------------------------------------------
 root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
-		ach(9631,  {	-- Mythic Draenor Raider (A)
+		-- CRIEVE NOTE (2023-09-01): These should probably move to the Garrisons file.
+		-- The reward is literally a Garrison Monument.
+		ach(9631, {	-- Mythic Draenor Raider (A)
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				8966, -- Mythic: Gruul
+				8967, -- Mythic: Oregorger
+				8968, -- Mythic: Hans'gar and Franzok
+				8956, -- Mythic: Beastlord Darmac
+				8932, -- Mythic: Flamebender Ka'graz
+				8969, -- Mythic: Operator Thogar
+				8970, -- Mythic: Blast Furnace
+				8971, -- Mythic: Kromog
+				8972, -- Mythic: Iron Maidens
+				8973, -- Mythic: Blackhand's Crucible
+				8949, -- Mythic: Kargath Bladefist
+				8960, -- Mythic: The Butcher
+				8961, -- Mythic: Tectus
+				8962, -- Mythic: Brackenspore
+				8963, -- Mythic: Twin Ogron
+				8964, -- Mythic: Ko'ragh
+				8965, -- Mythic: Imperator's Fall
+			}},
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
-				crit(1, { -- Mythic: Gruul
-					["_encounter"] = { 1161, 16 },
-				}),
-				crit(2, { -- Mythic: Oregorger
-					["_encounter"] = { 1202, 16 },
-				}),
-				crit(3, { -- Mythic: Hans'gar and Franzok
-					["_encounter"] = { 1155, 16 },
-				}),
-				crit(4, { -- Mythic: Beastlord Darmac
-					["_encounter"] = { 1122, 16 },
-				}),
-				crit(5, { -- Mythic: Flamebender Ka'graz
-					["_encounter"] = { 1123, 16 },
-				}),
-				crit(6, { -- Mythic: Operator Thogar
-					["_encounter"] = { 1147, 16 },
-				}),
-				crit(7, { -- Mythic: Blast Furnace
-					["_encounter"] = { 1154, 16 },
-				}),
-				crit(8, { -- Mythic: Kromog
-					["_encounter"] = { 1162, 16 },
-				}),
-				crit(9, { -- Mythic: Iron Maidens
-					["_encounter"] = { 1203, 16 },
-				}),
-				crit(10, { -- Mythic: Blackhand's Crucible
-					["_encounter"] = { 959, 16 },
-				}),
-				crit(11, { -- Mythic: Kargath Bladefist
-					["_encounter"] = { 1128, 16 },
-				}),
-				crit(12, { -- Mythic: The Butcher
-					["_encounter"] = { 971, 16 },
-				}),
-				crit(13, { -- Mythic: Tectus
-					["_encounter"] = { 1195, 16 },
-				}),
-				crit(14, { -- Mythic: Brackenspore
-					["_encounter"] = { 1196, 16 },
-				}),
-				crit(15, { -- Mythic: Twin Ogron
-					["_encounter"] = { 1148, 16 },
-				}),
-				crit(16, { -- Mythic: Ko'ragh
-					["_encounter"] = { 1153, 16 },
-				}),
-				crit(17, { -- Mythic: Imperator's Fall
-					["_encounter"] = { 1197, 16 },
-				}),
-			},
 		}),
-		ach(9255,  {	-- Mythic Draenor Raider (H)
+		ach(9255, {	-- Mythic Draenor Raider (H)
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				8966, -- Mythic: Gruul
+				8967, -- Mythic: Oregorger
+				8968, -- Mythic: Hans'gar and Franzok
+				8956, -- Mythic: Beastlord Darmac
+				8932, -- Mythic: Flamebender Ka'graz
+				8969, -- Mythic: Operator Thogar
+				8970, -- Mythic: Blast Furnace
+				8971, -- Mythic: Kromog
+				8972, -- Mythic: Iron Maidens
+				8973, -- Mythic: Blackhand's Crucible
+				8949, -- Mythic: Kargath Bladefist
+				8960, -- Mythic: The Butcher
+				8961, -- Mythic: Tectus
+				8962, -- Mythic: Brackenspore
+				8963, -- Mythic: Twin Ogron
+				8964, -- Mythic: Ko'ragh
+				8965, -- Mythic: Imperator's Fall
+			}},
 			["races"] = HORDE_ONLY,
-			["g"] = {
-				crit(1, { -- Mythic: Gruul
-					["_encounter"] = { 1161, 16 },
-				}),
-				crit(2, { -- Mythic: Oregorger
-					["_encounter"] = { 1202, 16 },
-				}),
-				crit(3, { -- Mythic: Hans'gar and Franzok
-					["_encounter"] = { 1155, 16 },
-				}),
-				crit(4, { -- Mythic: Beastlord Darmac
-					["_encounter"] = { 1122, 16 },
-				}),
-				crit(5, { -- Mythic: Flamebender Ka'graz
-					["_encounter"] = { 1123, 16 },
-				}),
-				crit(6, { -- Mythic: Operator Thogar
-					["_encounter"] = { 1147, 16 },
-				}),
-				crit(7, { -- Mythic: Blast Furnace
-					["_encounter"] = { 1154, 16 },
-				}),
-				crit(8, { -- Mythic: Kromog
-					["_encounter"] = { 1162, 16 },
-				}),
-				crit(9, { -- Mythic: Iron Maidens
-					["_encounter"] = { 1203, 16 },
-				}),
-				crit(10, { -- Mythic: Blackhand's Crucible
-					["_encounter"] = { 959, 16 },
-				}),
-				crit(11, { -- Mythic: Kargath Bladefist
-					["_encounter"] = { 1128, 16 },
-				}),
-				crit(12, { -- Mythic: The Butcher
-					["_encounter"] = { 971, 16 },
-				}),
-				crit(13, { -- Mythic: Tectus
-					["_encounter"] = { 1195, 16 },
-				}),
-				crit(14, { -- Mythic: Brackenspore
-					["_encounter"] = { 1196, 16 },
-				}),
-				crit(15, { -- Mythic: Twin Ogron
-					["_encounter"] = { 1148, 16 },
-				}),
-				crit(16, { -- Mythic: Ko'ragh
-					["_encounter"] = { 1153, 16 },
-				}),
-				crit(17, { -- Mythic: Imperator's Fall
-					["_encounter"] = { 1197, 16 },
-				}),
-			},
 		}),
 	}),
 })));

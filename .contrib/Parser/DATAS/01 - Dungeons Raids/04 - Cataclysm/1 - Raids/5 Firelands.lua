@@ -76,6 +76,21 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 		["lvl"] = 85,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				ach(5828, {		-- Glory of the Firelands Raider
+					i(69230),	-- Corrupted Fire Hawk (MOUNT!)
+					crit(1),	-- Heroic: Beth'tilac
+					crit(2),	-- Heroic: Lord Rhyolith
+					crit(3),	-- Heroic: Shannox
+					crit(4),	-- Heroic: Alysrazor
+					crit(5),	-- Heroic: Baleroc
+					crit(6),	-- Heroic: Majordomo Fandral Staghelm
+					crit(7),	-- Death from Above
+					crit(8),	-- Not an Ambi-Turner
+					crit(9),	-- Do a Barrel Roll!
+					crit(10),	-- Bucket List
+					crit(11),	-- Share the Pain
+					crit(12),	-- Only the Penitent...
+				}),
 				ach(5802, {	-- Firelands
 					crit(17430, {	-- Beth'tilac
 						["_encounter"] = { 192, NORMAL_RAID },

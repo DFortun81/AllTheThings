@@ -102,7 +102,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						{"sub", "common_wod_dungeon_drop", 2, HANDS},
 					},
 					["g"] = {
-						ach(9035),	-- I Saw Solis
+						ach(9035, {	-- I Saw Solis
+							["crs"] = { 76227 },	-- Solar Flare
+						}),
 						i(110032),	-- Beakbreaker Scimitar
 						i(110006),	-- Rukhran's Quill
 					},
@@ -117,8 +119,12 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					["g"] = {
 						ach(8844),	-- Heroic: Skyreach
 						ach(9372),	-- Heroic: Skyreach Guild Run
-						ach(9034),	-- Magnify... Enhance
-						ach(9036),	-- Monomania
+						ach(9034, {	-- Magnify... Enhance
+							["crs"] = { 86919 },	-- Empowered Construct
+						}),
+						ach(9036, {	-- Monomania
+							["crs"] = { 76292 },	-- Skyreach Shield Construct
+						}),
 						i(110033),	-- Arcanic of the High Sage
 						i(110034),	-- Viryx's Indomitable Bulwark
 						i(110011),	-- Fires of the Sun

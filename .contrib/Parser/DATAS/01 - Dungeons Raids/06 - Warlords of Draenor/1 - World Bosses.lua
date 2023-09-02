@@ -15,6 +15,14 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						["_quests"] = { 37460 },
 					}),
 				}),
+				ach(9418, {	-- Goliaths of Gorgrond Guild Run
+					crit(25769, { -- Tarlna the Ageless
+						["_quests"] = { 37462 },
+					}),
+					crit(25770, { -- Drov the Ruiner
+						["_quests"] = { 37460 },
+					}),
+				}),
 			}),
 			e(1291, {	-- Drov the Ruiner
 				["creatureID"] = 81252,	-- Drov the Ruiner
@@ -23,7 +31,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 				["isWeekly"] = true,
 				["isRaid"] = true,
 				["g"] = {
-					ach(9418),	-- Goliaths of Gorgrond Guild Run
 					i(120086),	-- Bone Charm Chain
 					i(120084),	-- Braided Magnaron Plait
 					i(120087),	-- Drov's Durable Gorget
@@ -103,7 +110,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 				["isWeekly"] = true,
 				["isRaid"] = true,
 				["g"] = {
-					ach(9418),	-- Goliaths of Gorgrond Guild Run
 					i(120089),	-- Chestguard of Rejuvenation
 					i(120090),	-- Falling Leaf Breastplate
 					i(120091),	-- Robes of the Ageless

@@ -121,6 +121,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 			d(HEROIC_DUNGEON, {
 				n(ACHIEVEMENTS, {
 					ach(9058, {	-- Leeeeeeeeeeeeeroy...?
+						["crs"] = { 77075 },	-- Leeroy Jenkins
 						["g"] = {
 							follower(178),	-- Leeroy Jenkins
 							title(110, {	-- Jenkins
@@ -196,7 +197,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						{"sub", "common_wod_dungeon_drop", 2, WAIST},
 					},
 					["g"] = {
-						ach(9057),	-- Dragonmaw? More Like Dragonfall!
+						ach(9057, {	-- Dragonmaw? More Like Dragonfall!
+							["crs"] = { 82428 },	-- Emberscale Ironflight
+						}),
 						ach(9055),	-- Heroic: Upper Blackrock Spire
 						ach(9376),	-- Heroic: Upper Blackrock Spire Guild Run
 						i(118740),	-- Bleakblade of Shahram

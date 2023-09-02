@@ -73,7 +73,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						{"sub", "common_wod_dungeon_drop", 2, FINGER},
 					},
 					["g"] = {
-						ach(9024),	-- This Is Why We Can't Have Nice Things
+						ach(9024, {	-- This Is Why We Can't Have Nice Things
+							["crs"] = { 81834 },	-- Priceless Paraphernalia
+						}),
 						i(110051),	-- Overseer's Final Word
 					},
 				}),
@@ -87,7 +89,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						{"sub", "common_wod_dungeon_drop", 2, CHEST},
 					},
 					["g"] = {
-						ach(9007),	-- No Ticket
+						ach(9007, {	-- No Ticket
+							["crs"] = { 80936 },	-- Grom'kar Grenadier
+						}),
 						i(110052),	-- Scepter of Brutality
 						i(109996),	-- Thundertower's Targeting Reticle
 					},

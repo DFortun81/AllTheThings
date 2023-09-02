@@ -157,7 +157,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					["g"] = {
 						ach(9053),	-- Heroic: The Everbloom
 						ach(9374),	-- Heroic: The Everbloom Guild Run
-						ach(9223),	-- Weed Whacker
+						ach(9223, {	-- Weed Whacker
+							["crs"] = { 84329 },	-- Kirin Tor Battle-Mage
+						}),
 						i(119181),	-- Hoof of Yalnu
 						i(110004),	-- Coagulated Genesaur Blood
 						un(REMOVED_FROM_GAME, i(114138)),	-- Core of Life

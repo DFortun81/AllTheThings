@@ -71,6 +71,57 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 		["lvl"] = 80,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				applyclassicphase(WRATH_PHASE_FOUR, ach(4602, {	-- Glory of the Icecrown Raider (10 player)
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						4628,	-- Heroic: Storming the Citadel (10 player)
+						4629,	-- Heroic: The Plagueworks (10 player)
+						4630,	-- Heroic: The Crimson Hall (10 player)
+						4631,	-- Heroic: The Frostwing Halls (10 player)
+						4534,	-- Boned (10 player)
+						4535,	-- Full House (10 player)
+						4536,	-- I'm on a Boat (10 player)
+						4537,	-- I've Gone and Made a Mess (10 player)
+						4538,	-- Dances with Oozes (10 player)
+						4577,	-- Flu Shot Shortage (10 player)
+						4578,	-- Nausea, Heartburn, Indigestion... (10 player)
+						4582,	-- The Orb Whisperer (10 player)
+						4539,	-- Once Bitten, Twice Shy (10 player)
+						4579,	-- Portal Jockey (10 player)
+						4580,	-- All You Can Eat (10 player)
+						4601,	-- Been Waiting a Long Time for This (10 player)
+					}},
+					["timeline"] = { "added 3.0.1" },
+					["groups"] = {
+						i(51954),		-- Bloodbathed Frostbrood Vanquisher (MOUNT!)
+					},
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, ach(4603, {	-- Glory of the Icecrown Raider (25 player)
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						4632,	-- Heroic: Storming the Citadel (25 player)
+						4633,	-- Heroic: The Plagueworks (25 player)
+						4634,	-- Heroic: The Crimson Hall (25 player)
+						4635,	-- Heroic: The Frostwing Halls (25 player)
+						4610,	-- Boned (25 player)
+						4611,	-- Full House (25 player)
+						4612,	-- I'm on a Boat (25 player)
+						4613,	-- I've Gone and Made a Mess (25 player)
+						4614,	-- Dances with Oozes (25 player)
+						4615,	-- Flu Shot Shortage (25 player)
+						4616,	-- Nausea, Heartburn, Indigestion... (25 player)
+						4617,	-- The Orb Whisperer (25 player)
+						4618,	-- Once Bitten, Twice Shy (25 player)
+						4619,	-- Portal Jockey (25 player)
+						4620,	-- All You Can Eat (25 player)
+						4621,	-- Been Waiting a Long Time for This (25 player)
+						4622,	-- Neck-Deep in Vile (25 player)
+					}},
+					["timeline"] = { "added 3.0.1" },
+					["groups"] = {
+						i(51955),		-- Icebound Frostbrood Vanquisher (MOUNT!)
+					},
+				})),
 				ach(4532, {	-- Fall of the Lich King (10 player)
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",

@@ -91,7 +91,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						{"sub", "common_wod_dungeon_drop", 2, NECK},
 					},
 					["g"] = {
-						ach(9023),	-- ...They All Fall Down
+						ach(9023, {	-- ...They All Fall Down
+							["crs"] = { 76283 },	-- Malefic Defender
+						}),
 						i(110046),	-- Hammer of the Soulbinder
 						i(110047),	-- Soulcutter Mageblade
 					},

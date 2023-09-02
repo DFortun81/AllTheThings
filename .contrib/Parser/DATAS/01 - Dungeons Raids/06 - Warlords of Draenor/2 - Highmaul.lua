@@ -1,79 +1,92 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local AllDifficulties = {LFR_RAID,NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID};
 root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	inst(477, {	-- Highmaul
-		["isRaid"] = true,
-		["lvl"] = 100,
 		["mapID"] = 612,
 		["maps"] = { 610, 611, 613, 614, 615 },
 		["coord"] = { 32.9, 38.3, DRAENOR_NAGRAND },
+		["isRaid"] = true,
+		["lvl"] = 100,
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(8986, {	-- The Walled City
-					crit(1, {	-- Kargath Bladefist
+					crit(25010, {	-- Kargath Bladefist
 						["_encounter"] = { 1128, LFR_RAID },
 					}),
-					crit(2, {	-- The Butcher
+					crit(25012, {	-- The Butcher
 						["_encounter"] = { 971, LFR_RAID },
 					}),
-					crit(3, {	-- Brackenspore
+					crit(25016, {	-- Brackenspore
 						["_encounter"] = { 1196, LFR_RAID },
 					}),
 				}),
 				ach(8987, {	-- Arcane Sanctum
-					crit(1, {	-- Tectus
+					crit(25011, {	-- Tectus
 						["_encounter"] = { 1195, LFR_RAID },
 					}),
-					crit(2, {	-- Twin Ogron
+					crit(25014, {	-- Twin Ogron
 						["_encounter"] = { 1148, LFR_RAID },
 					}),
-					crit(3, {	-- Ko'ragh
+					crit(25015, {	-- Ko'ragh
 						["_encounter"] = { 1153, LFR_RAID },
 					}),
 				}),
 				ach(8988, {	-- Imperator's Fall
-					crit(1, {	-- Imperator Mar'gok
+					crit(25018, {	-- Imperator Mar'gok
+						-- CRIEVE NOTE: If we want to keep this criteria, keep the provider so it has a proper name.
+						["provider"] = { "n", 77428 },	-- Imperator Mar'gok <Sorcerer King>
 						["_encounter"] = { 1197, LFR_RAID },
 					}),
 				}),
 				ach(9416),	-- Highmaul Guild Run
 			}),
+			n(COMMON_BOSS_DROPS, {
+				["crs"] = {
+					78714,	-- Kargath
+					77404,	-- The Butcher
+					78491,	-- Brackenspore
+					78948,	-- Tectus
+					78237,	-- Twin Ogron (Phemos)
+					78238,	-- Twin Ogron (Pol)
+					79015,	-- Ko'ragh
+					77428,	-- Imperator Mar'gok
+				},
+				["groups"] = {
+					un(REMOVED_FROM_GAME, i(115280, {	-- Abrogator Stone
+						
+					})),
+					un(REMOVED_FROM_GAME, i(115981, {	-- Abrogator Stone Cluster
+						
+					})),
+				},
+			}),
+			d(AllDifficulties, {
+				cr(78714, e(1128, {	-- Kargath Bladefist <Warlord of the Shattered Hand>
+					i(138807, {	-- Illusion: Mark of the Shattered Hand (ILLUSION!)
+						["timeline"] = { ADDED_7_0_3 },
+					}),
+				})),
+				cr(78948, e(1195, {	-- Tectus <The Living Mountain>
+					i(138835, {	-- Illusion: Rockbiter (ILLUSION!)
+						["classes"] = { SHAMAN },
+						["timeline"] = { ADDED_7_0_3 },
+					}),
+				})),
+				cr(79015, e(1153, {	-- Ko'ragh <Breaker of Magic>
+					un(REMOVED_FROM_GAME, i(115288)),	-- Felbreaker's Tome
+				})),
+				cr(77428, e(1197, {	-- Imperator Mar'gok <Sorcerer King>
+					un(REMOVED_FROM_GAME, i(115289)),	-- Sigil of the Sorcerer King
+				})),
+			}),
 			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = { 94870 },	-- Seer Kazal <Shadowmoon Exile>
 			}),
 			d(LFR_RAID, {
-				n(ZONE_DROPS, {
-					un(REMOVED_FROM_GAME, i(115280, {	-- Abrogator Stone
-						["crs"] = {
-							78714,	-- Kargath
-							77404,	-- The Butcher
-							78491,	-- Brackenspore
-							78948,	-- Tectus
-							78237,	-- Twin Ogron (Phemos)
-							78238,	-- Twin Ogron (Pol)
-							79015,	-- Ko'ragh
-							77428,	-- Imperator Mar'gok
-						},
-					})),
-					un(REMOVED_FROM_GAME, i(115981, {	-- Abrogator Stone Cluster
-						["crs"] = {
-							78714,	-- Kargath
-							77404,	-- The Butcher
-							78491,	-- Brackenspore
-							78948,	-- Tectus
-							78237,	-- Twin Ogron (Phemos)
-							78238,	-- Twin Ogron (Pol)
-							79015,	-- Ko'ragh
-							77428,	-- Imperator Mar'gok
-						},
-					})),
-				}),
 				header(HEADERS.Achievement, 8986, {	-- The Walled City
 					cr(78714, e(1128, {	-- Kargath Bladefist <Warlord of the Shattered Hand>
-						i(138807, {	-- Illusion: Mark of the Shattered Hand (ILLUSION!)
-							["timeline"] = { ADDED_7_0_3 },
-						}),
 						i(116360),	-- Blade Dancer's Claws
 						i(116236),	-- Iron Bomb Spaulders
 						i(116298),	-- Flamescarred Drape
@@ -105,10 +118,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 				}),
 				header(HEADERS.Achievement, 8987, {	-- Arcane Sanctum
 					cr(78948, e(1195, {	-- Tectus <The Living Mountain>
-						i(138835, {	-- Illusion: Rockbiter (ILLUSION!)
-							["classes"] = { SHAMAN },
-							["timeline"] = { ADDED_7_0_3 },
-						}),
 						i(116362),	-- Shard of Crystalline Fury
 						i(116363),	-- Shield of Violent Upheaval
 						i(116237),	-- Crown of the Crags
@@ -146,7 +155,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						i(116029),	-- Crackle-Proof Chestguard
 						i(116231),	-- Legplates of Arcanic Absorbtion
 						i(116293),	-- Idol of Suppression
-						un(REMOVED_FROM_GAME, i(115288)),	-- Felbreaker's Tome
 					})),
 				}),
 				header(HEADERS.Achievement, 8988, {	-- Imperator's Fall
@@ -160,7 +168,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						i(116002),	-- High Arcanist Leggings
 						i(116206),	-- Warmage's Legwraps
 						i(116280),	-- Seal of Arcane Wrath
-						un(REMOVED_FROM_GAME, i(115289)),	-- Sigil of the Sorcerer King
 					})),
 				}),
 			}),
@@ -175,35 +182,10 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(119335),	-- Eyeripper Girdle
 					i(119338),	-- Belt of Inebriated Sorrows
 					i(119337),	-- Ripswallow Plate Belt
-					un(REMOVED_FROM_GAME, i(115280, {	-- Abrogator Stone
-						["crs"] = {
-							78714,	-- Kargath
-							77404,	-- The Butcher
-							78491,	-- Brackenspore
-							78948,	-- Tectus
-							78237,	-- Twin Ogron (Phemos)
-							78238,	-- Twin Ogron (Pol)
-							79015,	-- Ko'ragh
-							77428,	-- Imperator Mar'gok
-						},
-					})),
-					un(REMOVED_FROM_GAME, i(115981, {	-- Abrogator Stone Cluster
-						["crs"] = {
-							78714,	-- Kargath
-							77404,	-- The Butcher
-							78491,	-- Brackenspore
-							78948,	-- Tectus
-							78237,	-- Twin Ogron (Phemos)
-							78238,	-- Twin Ogron (Pol)
-							79015,	-- Ko'ragh
-							77428,	-- Imperator Mar'gok
-						},
-					})),
 				}),
 				cr(78714, e(1128, {	-- Kargath Bladefist <Warlord of the Shattered Hand>
-					ach(8948),	-- Flame On!
-					i(138807, {	-- Illusion: Mark of the Shattered Hand (ILLUSION!)
-						["timeline"] = { ADDED_7_0_3 },
+					ach(8948, {	-- Flame On!
+						["crs"] = { 88123 },	-- Fire Pillar
 					}),
 					i(113591),	-- The Bladefist
 					i(113592),	-- Bileslinger's Censer
@@ -219,7 +201,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(113604),	-- Kargath's Last Link
 				})),
 				cr(77404, e(971, {	-- The Butcher
-					ach(8947),	-- Hurry Up, Maggot!
+					ach(8947, {	-- Hurry Up, Maggot!
+						["crs"] = { 80728 },	-- Maggot
+					}),
 					i(113606),	-- Butcher's Bloody Cleaver
 					i(113607),	-- Butcher's Terrible Tenderizer
 					i(113608),	-- Hood of Dispassionate Execution
@@ -250,10 +234,8 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(113658),	-- Bottle of Infesting Spores
 				})),
 				cr(78948, e(1195, {	-- Tectus <The Living Mountain>
-					ach(8974),	-- More Like Wrecked-us
-					i(138835, {	-- Illusion: Rockbiter (ILLUSION!)
-						["classes"] = { SHAMAN },
-						["timeline"] = { ADDED_7_0_3 },
+					ach(8974, {	-- More Like Wrecked-us
+						["crs"] = { 80557 },	-- Mote of Tectus <Mote of the Mountain>
 					}),
 					i(113640),	-- Earthwarped Bladestaff
 					i(113639),	-- Spire of Tectus
@@ -304,10 +286,11 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(113846),	-- Seal of Unbound Frost
 					i(113843),	-- Spell-Sink Signet
 					i(113842),	-- Emblem of Caustic Healing
-					un(REMOVED_FROM_GAME, i(115288)),	-- Felbreaker's Tome
 				})),
 				cr(77428, e(1197, {	-- Imperator Mar'gok <Sorcerer King>
-					ach(8977),	-- Lineage of Power
+					ach(8977, {	-- Lineage of Power
+						["crs"] = { 78121 },	-- Gorian Warmage
+					}),
 					i(113848),	-- Gor'gah, High Blade of the Gorians
 					i(113857),	-- Staff of the Grand Imperator
 					i(113858),	-- Choker of Violent Displacement
@@ -322,7 +305,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(113861),	-- Evergaze Arcane Eidolon
 					i(113854),	-- Mark of Rapid Replication
 					i(113859),	-- Quiescent Runestone
-					un(REMOVED_FROM_GAME, i(115289)),	-- Sigil of the Sorcerer King
 				})),
 			}),
 			d(HEROIC_RAID, {
@@ -336,36 +318,8 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(119335),	-- Eyeripper Girdle
 					i(119338),	-- Belt of Inebriated Sorrows
 					i(119337),	-- Ripswallow Plate Belt
-					un(REMOVED_FROM_GAME, i(115280, {	-- Abrogator Stone
-						["crs"] = {
-							78714,	-- Kargath
-							77404,	-- The Butcher
-							78491,	-- Brackenspore
-							78948,	-- Tectus
-							78237,	-- Twin Ogron (Phemos)
-							78238,	-- Twin Ogron (Pol)
-							79015,	-- Ko'ragh
-							77428,	-- Imperator Mar'gok
-						},
-					})),
-					un(REMOVED_FROM_GAME, i(115981, {	-- Abrogator Stone Cluster
-						["crs"] = {
-							78714,	-- Kargath
-							77404,	-- The Butcher
-							78491,	-- Brackenspore
-							78948,	-- Tectus
-							78237,	-- Twin Ogron (Phemos)
-							78238,	-- Twin Ogron (Pol)
-							79015,	-- Ko'ragh
-							77428,	-- Imperator Mar'gok
-						},
-					})),
 				}),
 				cr(78714, e(1128, {	-- Kargath Bladefist <Warlord of the Shattered Hand>
-					ach(8948),	-- Flame On!
-					i(138807, {	-- Illusion: Mark of the Shattered Hand (ILLUSION!)
-						["timeline"] = { ADDED_7_0_3 },
-					}),
 					i(113591),	-- The Bladefist
 					i(113592),	-- Bileslinger's Censer
 					i(113600),	-- Casque of the Iron Bomber
@@ -380,7 +334,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(113604),	-- Kargath's Last Link
 				})),
 				cr(77404, e(971, {	-- The Butcher
-					ach(8947),	-- Hurry Up, Maggot!
 					i(113606),	-- Butcher's Bloody Cleaver
 					i(113607),	-- Butcher's Terrible Tenderizer
 					i(113608),	-- Hood of Dispassionate Execution
@@ -396,7 +349,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(113612),	-- Scales of Doom
 				})),
 				cr(78491, e(1196, {	-- Brackenspore <Walker of the Deep>
-					ach(8975),	-- A Fungus Among Us
 					i(113652),	-- Crystalline Branch of the Brackenspore
 					i(113653),	-- Maw of Souls
 					i(113662),	-- Collar of Wailing Mouths
@@ -411,11 +363,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(113658),	-- Bottle of Infesting Spores
 				})),
 				cr(78948, e(1195, {	-- Tectus <The Living Mountain>
-					ach(8974),	-- More Like Wrecked-us
-					i(138835, {	-- Illusion: Rockbiter (ILLUSION!)
-						["classes"] = { SHAMAN },
-						["timeline"] = { ADDED_7_0_3 },
-					}),
 					i(113640),	-- Earthwarped Bladestaff
 					i(113639),	-- Spire of Tectus
 					i(113647),	-- Flechette-Riddled Chain
@@ -436,7 +383,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						78238,	-- Twin Ogron (Pol)
 					},
 					["g"] = {
-						ach(8958),	-- Brothers in Arms
 						i(113667),	-- Phemos' Double Slasher
 						i(113666),	-- Absalom's Bloody Bulwark
 						i(113833),	-- Odyssian Choker
@@ -452,7 +398,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					},
 				}),
 				cr(79015, e(1153, {	-- Ko'ragh <Breaker of Magic>
-					ach(8976),	-- Pair Annihilation
 					i(113838),	-- Gar'tash, Hammer of the Breakers
 					i(113836),	-- Ko'ragh's Boot Knife
 					i(113837),	-- Rod of Fel Nullification
@@ -465,11 +410,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(113846),	-- Seal of Unbound Frost
 					i(113843),	-- Spell-Sink Signet
 					i(113842),	-- Emblem of Caustic Healing
-					un(REMOVED_FROM_GAME, i(115288)),	-- Felbreaker's Tome
 				})),
 				cr(77428, e(1197, {	-- Imperator Mar'gok <Sorcerer King>
 					un(REMOVED_FROM_GAME, ach(9441)),	-- Ahead of the Curve: Imperator's Fall
-					ach(8977),	-- Lineage of Power
 					i(113848),	-- Gor'gah, High Blade of the Gorians
 					i(113857),	-- Staff of the Grand Imperator
 					i(113858),	-- Choker of Violent Displacement
@@ -484,7 +427,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(113861),	-- Evergaze Arcane Eidolon
 					i(113854),	-- Mark of Rapid Replication
 					i(113859),	-- Quiescent Runestone
-					un(REMOVED_FROM_GAME, i(115289)),	-- Sigil of the Sorcerer King
 				})),
 			}),
 			d(MYTHIC_RAID, {
@@ -498,37 +440,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(119335),	-- Eyeripper Girdle
 					i(119338),	-- Belt of Inebriated Sorrows
 					i(119337),	-- Ripswallow Plate Belt
-					un(REMOVED_FROM_GAME, i(115280, {	-- Abrogator Stone
-						["crs"] = {
-							78714,	-- Kargath
-							77404,	-- The Butcher
-							78491,	-- Brackenspore
-							78948,	-- Tectus
-							78237,	-- Twin Ogron (Phemos)
-							78238,	-- Twin Ogron (Pol)
-							79015,	-- Ko'ragh
-							77428,	-- Imperator Mar'gok
-						},
-					})),
-					un(REMOVED_FROM_GAME, i(115981, {	-- Abrogator Stone Cluster
-						["crs"] = {
-							78714,	-- Kargath
-							77404,	-- The Butcher
-							78491,	-- Brackenspore
-							78948,	-- Tectus
-							78237,	-- Twin Ogron (Phemos)
-							78238,	-- Twin Ogron (Pol)
-							79015,	-- Ko'ragh
-							77428,	-- Imperator Mar'gok
-						},
-					})),
 				}),
 				cr(78714, e(1128, {	-- Kargath Bladefist <Warlord of the Shattered Hand>
 					ach(8949),	-- Mythic: Kargath Bladefist
-					ach(8948),	-- Flame On!
-					i(138807, {	-- Illusion: Mark of the Shattered Hand (ILLUSION!)
-						["timeline"] = { ADDED_7_0_3 },
-					}),
 					i(113591),	-- The Bladefist
 					i(113592),	-- Bileslinger's Censer
 					i(113600),	-- Casque of the Iron Bomber
@@ -544,7 +458,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 				})),
 				cr(77404, e(971, {	-- The Butcher
 					ach(8960),	-- Mythic: The Butcher
-					ach(8947),	-- Hurry Up, Maggot!
 					i(113606),	-- Butcher's Bloody Cleaver
 					i(113607),	-- Butcher's Terrible Tenderizer
 					i(113608),	-- Hood of Dispassionate Execution
@@ -561,7 +474,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 				})),
 				cr(78491, e(1196, {	-- Brackenspore <Walker of the Deep>
 					ach(8962),	-- Mythic: Brackenspore
-					ach(8975),	-- A Fungus Among Us
 					i(113652),	-- Crystalline Branch of the Brackenspore
 					i(113653),	-- Maw of Souls
 					i(113662),	-- Collar of Wailing Mouths
@@ -577,11 +489,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 				})),
 				cr(78948, e(1195, {	-- Tectus <The Living Mountain>
 					ach(8961),	-- Mythic: Tectus
-					ach(8974),	-- More Like Wrecked-us
-					i(138835, {	-- Illusion: Rockbiter (ILLUSION!)
-						["classes"] = { SHAMAN },
-						["timeline"] = { ADDED_7_0_3 },
-					}),
 					i(113640),	-- Earthwarped Bladestaff
 					i(113639),	-- Spire of Tectus
 					i(113647),	-- Flechette-Riddled Chain
@@ -603,7 +510,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					},
 					["g"] = {
 						ach(8963),	-- Mythic: Twin Ogron
-						ach(8958),	-- Brothers in Arms
 						i(113667),	-- Phemos' Double Slasher
 						i(113666),	-- Absalom's Bloody Bulwark
 						i(113833),	-- Odyssian Choker
@@ -620,7 +526,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 				}),
 				cr(79015, e(1153, {	-- Ko'ragh <Breaker of Magic>
 					ach(8964),	-- Mythic: Ko'ragh
-					ach(8976),	-- Pair Annihilation
 					i(113838),	-- Gar'tash, Hammer of the Breakers
 					i(113836),	-- Ko'ragh's Boot Knife
 					i(113837),	-- Rod of Fel Nullification
@@ -633,7 +538,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(113846),	-- Seal of Unbound Frost
 					i(113843),	-- Spell-Sink Signet
 					i(113842),	-- Emblem of Caustic Healing
-					un(REMOVED_FROM_GAME, i(115288)),	-- Felbreaker's Tome
 				})),
 				e(1197, {	-- Imperator Mar'gok <Sorcerer King>
 					["crs"] = {
@@ -641,14 +545,13 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						78623,	-- Cho'gall
 					},
 					["g"] = {
+						un(REMOVED_FROM_GAME, ach(9441)),	-- Ahead of the Curve: Imperator's Fall
+						un(REMOVED_FROM_GAME, ach(9442)),	-- Cutting Edge: Imperator's Fall
+						un(REMOVED_FROM_GAME, ach(9397)),	-- Realm First! Imperator's Fall
 						ach(8965, {	-- Mythic: Imperator's Fall
 							title(304),	-- <Name>, Empire's Twilight
 						}),
 						ach(9420),	-- Mythic: Imperator's Fall Guild Run
-						un(REMOVED_FROM_GAME, ach(9441)),	-- Ahead of the Curve: Imperator's Fall
-						un(REMOVED_FROM_GAME, ach(9442)),	-- Cutting Edge: Imperator's Fall
-						un(REMOVED_FROM_GAME, ach(9397)),	-- Realm First! Imperator's Fall
-						ach(8977),	-- Lineage of Power
 						i(113848),	-- Gor'gah, High Blade of the Gorians
 						i(113857),	-- Staff of the Grand Imperator
 						i(113858),	-- Choker of Violent Displacement
@@ -663,7 +566,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						i(113861),	-- Evergaze Arcane Eidolon
 						i(113854),	-- Mark of Rapid Replication
 						i(113859),	-- Quiescent Runestone
-						un(REMOVED_FROM_GAME, i(115289)),	-- Sigil of the Sorcerer King
 					},
 				}),
 			}),
