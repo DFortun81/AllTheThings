@@ -54,9 +54,11 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				ach(9828, {	-- Ten Hit Tunes (Alliance) (10)
+					["sym"] = {{ "achievement_criteria" }},
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(9912, {	-- Azeroth's Top Twenty Tunes (Alliance) (20)
+					["sym"] = {{ "achievement_criteria" }},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(122700),	-- Portable Audiophone (TOY!)
@@ -67,9 +69,11 @@ root(ROOTS.ExpansionFeatures,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(9897, {	-- Ten Hit Tunes (Horde) (10)
+					["sym"] = {{ "achievement_criteria" }},
 					["races"] = HORDE_ONLY,
 				}),
 				ach(9914, {	-- Azeroth's Top Twenty Tunes (Horde) (20)
+					["sym"] = {{ "achievement_criteria" }},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(122700),	-- Portable Audiophone (TOY!)
