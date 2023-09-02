@@ -1886,11 +1886,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 1043,	-- Lost Whelp
 				}),
 				i(3073, {	-- Smoldering Pants
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 					["cr"] = 1069,	-- Crimson Whelp
 				}),
 				i(3072, {	-- Smoldering Robe
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 					["cr"] = 1044,	-- Flamesnorting Whelp
 				}),
 				i(6315, {	-- Steelarrow Crossbow

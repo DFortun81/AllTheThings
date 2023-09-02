@@ -1331,7 +1331,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(2058, {	-- Kazon's Maul
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 						}),
 					},
 				}),
@@ -1614,7 +1614,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(1213, {	-- Gnoll Kindred Bracers
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 					["cr"] = 712,	-- Redridge Thrasher
 				}),
 				i(1214, {	-- Gnoll Punisher
@@ -1629,7 +1629,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 446,	-- Redridge Basher
 				}),
 				i(1211, {	-- Gnoll War Harness
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 					["cr"] = 423,	-- Redridge Mongrel
 				}),
 				-- #if BEFORE 4.0.3
@@ -1680,7 +1680,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 545,	-- Murloc Tidecaller
 				}),
 				i(2566, {	-- Sacrificial Robes
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 					["cr"] = 397,	-- Morganth / Grand Magus Doane [CATA+]
 				}),
 				i(1469, {	-- Scimitar of Atun

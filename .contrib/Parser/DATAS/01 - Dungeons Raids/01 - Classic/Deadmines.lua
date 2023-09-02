@@ -350,7 +350,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 						["timeline"] = { "removed 4.0.3" },
 					}),
 					i(4660, {	-- Walking Boots
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 					}),
 				},
 			}),
@@ -406,7 +406,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				["cr"] = 1726,	-- Defias Magician
 			}),
 			i(1925, {	-- Defias Rapier
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 				["cr"] = 1725,	-- Defias Watchman
 			}),
 			i(1943, {	-- Goblin Mail Leggings
