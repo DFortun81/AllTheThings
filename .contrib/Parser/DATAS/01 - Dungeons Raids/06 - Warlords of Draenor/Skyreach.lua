@@ -7,14 +7,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 		["maps"] = { 601, 602 },
 		["coord"] = { 35.5, 33.6, SPIRES_OF_ARAK },
 		["groups"] = {
-			n(ACHIEVEMENTS, {
-				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
-					["collectible"] = false,
-					["g"] = {
-						crit(6),	-- High Sage Viryx
-					},
-				}),
-			}),
 			d(NORMAL_DUNGEON, {
 				e(965, {	-- Ranjit
 					["crs"] = { 75964 },

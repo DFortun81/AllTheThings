@@ -975,7 +975,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["sym"] = {{"select","itemID",143727}},	-- Champion's Salute (TOY!)
 						["g"] = {
 							i(147537, {	-- A Tiny Set of Warglaives (TOY!)
-								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+								["cost"] = { { "c", 1220, 10000 }, },	-- 10,000x Order Resources
 							}),
 							i(139721, {	-- Belt of the Shattered Abyss
 								["cost"] = 5000000,	-- 500g

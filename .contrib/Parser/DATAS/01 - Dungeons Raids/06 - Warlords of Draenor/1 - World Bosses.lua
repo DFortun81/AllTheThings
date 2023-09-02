@@ -6,23 +6,24 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 		["isRaid"] = true,
 		["lvl"] = 100,
 		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(9423, {	-- Goliaths of Gorgrond
+					crit(25767, { -- Tarlna the Ageless
+						["_quests"] = { 37462 },
+					}),
+					crit(25768, { -- Drov the Ruiner
+						["_quests"] = { 37460 },
+					}),
+				}),
+			}),
 			e(1291, {	-- Drov the Ruiner
-				["isWeekly"] = true,
-				["questID"] = 37460,
-				["isRaid"] = true,
+				["creatureID"] = 81252,	-- Drov the Ruiner
 				["coord"] = { 44.1, 39.9, GORGROND },
-				["crs"] = {
-					81252,	-- Drov the Ruiner
-					87437,	-- Drov the Ruiner
-				},
+				["questID"] = 37460,
+				["isWeekly"] = true,
+				["isRaid"] = true,
 				["g"] = {
 					ach(9418),	-- Goliaths of Gorgrond Guild Run
-					ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
-						["collectible"] = false,
-						["g"] = {
-							crit(27),	-- Drov the Ruiner
-						},
-					}),
 					i(120086),	-- Bone Charm Chain
 					i(120084),	-- Braided Magnaron Plait
 					i(120087),	-- Drov's Durable Gorget
@@ -39,23 +40,14 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 				},
 			}),
 			e(1262, {	-- Rukhmar
-				["isWeekly"] = true,
-				["questID"] = 37464,
-				["isRaid"] = true,
+				["creatureID"] = 83746,	-- Rukhmar
 				["coord"] = { 37.0, 39.3, SPIRES_OF_ARAK },
-				["crs"] = {
-					87493,	-- Rukhmar (WoWHead)
-					83746,	-- Rukhmar (Crieve)
-				},
+				["questID"] = 37464,
+				["isWeekly"] = true,
+				["isRaid"] = true,
 				["g"] = {
 					ach(9424),	-- Rukhmar Guild Run
 					ach(9425),	-- So Grossly Incandescent
-					ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
-						["collectible"] = false,
-						["g"] = {
-							crit(28),	-- Rukhmar
-						},
-					}),
 					i(116771),	-- Solar Spirehawk (MOUNT!)
 					i(127775, {	-- Gemcutter Module: Stamina
 						["requireSkill"] = JEWELCRAFTING,
@@ -78,11 +70,11 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 				},
 			}),
 			e(1452, {	-- Supreme Lord Kazzak
-				["isWeekly"] = true,
-				["questID"] = 39380,
-				["isRaid"] = true,
-				["coord"] = { 47.5, 22.1, TANAAN_JUNGLE },
 				["creatureID"] = 94015,	-- Supreme Lord Kazzak
+				["coord"] = { 47.5, 22.1, TANAAN_JUNGLE },
+				["questID"] = 39380,
+				["isWeekly"] = true,
+				["isRaid"] = true,
 				["g"] = {
 					ach(10175),	-- Kazzak Guild Run
 					ach(10071),	-- The Legion Will NOT Conquer All
@@ -105,19 +97,13 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 				},
 			}),
 			e(1211, {	-- Tarlna the Ageless
-				["isWeekly"] = true,
-				["questID"] = 37462,
-				["isRaid"] = true,
-				["coord"] = { 47.0, 86.7, GORGROND },
 				["creatureID"] = 81535,	-- Tarlna the Ageless
+				["coord"] = { 47.0, 86.7, GORGROND },
+				["questID"] = 37462,
+				["isWeekly"] = true,
+				["isRaid"] = true,
 				["g"] = {
 					ach(9418),	-- Goliaths of Gorgrond Guild Run
-					ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
-						["collectible"] = false,
-						["g"] = {
-							crit(26),	-- Tarlna the Ageless
-						},
-					}),
 					i(120089),	-- Chestguard of Rejuvenation
 					i(120090),	-- Falling Leaf Breastplate
 					i(120091),	-- Robes of the Ageless
@@ -131,14 +117,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(115430),	-- Cord of Ruination
 					i(115432),	-- Waistplate of Bladed Force
 				},
-			}),
-			ach(9423, {	-- Goliaths of Gorgrond
-				crit(25767, { -- Tarlna the Ageless
-					["_quests"] = { 37462 },
-				}),
-				crit(25768, { -- Drov the Ruiner
-					["_quests"] = { 37460 },
-				}),
 			}),
 		},
 	}),

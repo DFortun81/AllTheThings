@@ -7,14 +7,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 		["maps"] = { UPPER_BLACKROCK_SPIRE_WOD, 617, 618 },
 		["lvl"] = 100,
 		["g"] = {
-			n(ACHIEVEMENTS, {
-				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
-					["collectible"] = false,
-					["g"] = {
-						crit(3),	-- Warlord Zaela
-					},
-				}),
-			}),
 			d(NORMAL_DUNGEON, {
 				e(1226,  {	-- Orebender Gor'ashan
 					["crs"] = { 76413 },	-- Orebender Gor'ashan

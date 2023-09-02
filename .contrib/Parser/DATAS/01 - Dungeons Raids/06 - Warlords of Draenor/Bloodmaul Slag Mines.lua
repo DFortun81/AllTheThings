@@ -7,14 +7,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 		["mapID"] = 573,
 		["coord"] = { 49.93, 24.8, FROSTFIRE_RIDGE },
 		["g"] = {
-			n(ACHIEVEMENTS, {
-				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
-					["collectible"] = false,
-					["g"] = {
-						crit(1),	-- Gug'rokk
-					},
-				}),
-			}),
 			d(NORMAL_DUNGEON, {
 				e(888, {	-- Slave Watcher Crushto
 					["crs"] = { 74787 },	-- Slave Watcher Crushto

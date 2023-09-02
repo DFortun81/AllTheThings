@@ -38,18 +38,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					}),
 				}),
 				ach(9416),	-- Highmaul Guild Run
-				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
-					["collectible"] = false,
-					["g"] = {
-						crit(9),	-- Kargath Bladefist
-						crit(10),	-- The Butcher
-						crit(11),	-- Brackenspore
-						crit(12),	-- Tectus, the Living Mountain
-						crit(13),	-- Twin Ogron
-						crit(14),	-- Ko'ragh
-						crit(15),	-- Imperator Mar'gok
-					},
-				}),
 			}),
 			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = { 94870 },	-- Seer Kazal <Shadowmoon Exile>

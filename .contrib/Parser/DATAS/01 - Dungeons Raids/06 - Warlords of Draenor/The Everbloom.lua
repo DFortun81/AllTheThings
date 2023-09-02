@@ -7,14 +7,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 		["maps"] = { 620, 621 },
 		["lvl"] = 100,
 		["g"] = {
-			n(ACHIEVEMENTS, {
-				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
-					["collectible"] = false,
-					["g"] = {
-						crit(4),	-- Yalnu
-					},
-				}),
-			}),
 			d(NORMAL_DUNGEON, {
 				e(1214, {	-- Witherbark
 					["crs"] = { 81522 },	-- Witherbark

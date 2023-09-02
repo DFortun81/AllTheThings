@@ -7,14 +7,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 		["maps"] = { 606, 607, 608, 609 },
 		["lvl"] = 100,
 		["g"] = {
-			n(ACHIEVEMENTS, {
-				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
-					["collectible"] = false,
-					["g"] = {
-						crit(5),	-- Skylord Tovra
-					},
-				}),
-			}),
 			d(NORMAL_DUNGEON, {
 				e(1138, {	-- Rocketspark and Borka
 					["crs"] = {

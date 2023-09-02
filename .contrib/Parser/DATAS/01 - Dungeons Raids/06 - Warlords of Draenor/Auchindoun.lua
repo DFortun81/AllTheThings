@@ -7,14 +7,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 		["mapID"] = 593,
 		["coord"] = { 46.27, 73.92, TALADOR },
 		["groups"] = {
-			n(ACHIEVEMENTS, {
-				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
-					["collectible"] = false,
-					["g"] = {
-						crit(8),	-- Teron'gor
-					},
-				}),
-			}),
 			d(NORMAL_DUNGEON, {
 				e(1185, {	-- Vigilant Kaathar
 					["crs"] = { 75839 },

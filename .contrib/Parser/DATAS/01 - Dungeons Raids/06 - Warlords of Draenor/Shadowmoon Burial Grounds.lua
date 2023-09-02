@@ -7,14 +7,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 		["maps"] = { 574, 575, 576 },
 		["coord"] = { 31.91, 42.55, DRAENOR_SHADOWMOON_VALLEY },
 		["groups"] = {
-			n(ACHIEVEMENTS, {
-				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
-					["collectible"] = false,
-					["g"] = {
-						crit(7),	-- Ner'zhul
-					},
-				}),
-			}),
 			d(NORMAL_DUNGEON, {
 				e(1139, {	-- Sadana Bloodfury
 					["crs"] = { 75509 },

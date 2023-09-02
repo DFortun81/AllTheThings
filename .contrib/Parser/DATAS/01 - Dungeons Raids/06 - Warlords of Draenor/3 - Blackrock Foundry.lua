@@ -49,21 +49,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					}),
 				}),
 				ach(9417),	-- Blackrock Foundry Guild Run
-				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
-					["collectible"] = false,
-					["g"] = {
-						crit(16),	-- Oregorger the Devourer
-						crit(17),	-- Gruul
-						crit(18),	-- Hans'gar & Franzok
-						crit(19),	-- Flamebender Ka'graz
-						crit(20),	-- Beastlord Darmac
-						crit(21),	-- Operator Thogar
-						crit(22),	-- Blast Furnace
-						crit(23),	-- Kromog, Legend of the Mountain
-						crit(24),	-- The Iron Maidens
-						crit(25),	-- Blackhand
-					},
-				}),
 			}),
 			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = { 94870 },	-- Seer Kazal <Shadowmoon Exile>
@@ -308,6 +293,27 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
 					}),
 				}),
+				n(COMMON_BOSS_DROPS, {
+					["crs"] = {
+						77182,	-- Oregorger
+						76877,	-- Gruul
+						76806,	-- The Blast Furnace
+						76973,	-- Hans'gar and Franzo
+						76814,	-- Flamebender Ka'graz
+						77692,	-- Kromog
+						76865,	-- Beastlord Darmac
+						76906,	-- Operator Thogar
+						76557,	-- The Iron Maidens
+						77325,	-- Blackhand
+					},
+					["groups"] = {
+						un(REMOVED_FROM_GAME, i(115510, {	-- Elemental Rune
+							["g"] = {
+								un(REMOVED_FROM_GAME, i(115509)),	-- Elemental Tablet
+							},
+						})),
+					},
+				}),
 				n(ZONE_DROPS, {
 					i(119332),	-- Bracers of Darkened Skies
 					i(119333),	-- Bracers of Shattered Limbs
@@ -317,23 +323,6 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					i(119342),	-- Furnace Stoker's Footwraps
 					i(119340),	-- Iron-Flecked Sandals
 					i(119339),	-- Treads of the Veteran Smith
-					un(REMOVED_FROM_GAME, i(115510, {	-- Elemental Rune
-						["g"] = {
-							un(REMOVED_FROM_GAME, i(115509)),	-- Elemental Tablet
-						},
-						["crs"] = {
-							77182,	-- Oregorger
-							76877,	-- Gruul
-							76806,	-- The Blast Furnace
-							76973,	-- Hans'gar and Franzo
-							76814,	-- Flamebender Ka'graz
-							77692,	-- Kromog
-							76865,	-- Beastlord Darmac
-							76906,	-- Operator Thogar
-							76557,	-- The Iron Maidens
-							77325,	-- Blackhand
-						},
-					})),
 				}),
 				cr(77182, e(1202, {	-- Oregorger
 					ach(8979),	-- He Shoots, He Ores
