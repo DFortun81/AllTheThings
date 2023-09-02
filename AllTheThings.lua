@@ -16716,7 +16716,7 @@ function app:GetDataCache()
 		tinsert(g, {
 			["text"] = sformat(L["CLICK_TO_CREATE_FORMAT"], L["DYNAMIC_CATEGORY_LABEL"]);
 			["description"] = dynamicSetting == 1 and L["DYNAMIC_CATEGORY_SIMPLE_TOOLTIP"] or L["DYNAMIC_CATEGORY_NESTED_TOOLTIP"],
-			["icon"] = 4200123,	-- misc-rnrgreengobutton
+			["icon"] = app.asset("Interface_CreateDynamic"),
 			["OnUpdate"] = app.AlwaysShowUpdate,
 			["OnClick"] = function(row, button)
 				local ref = row.ref;
