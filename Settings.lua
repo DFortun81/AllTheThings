@@ -202,6 +202,7 @@ local TooltipSettingsBase = {
 		["LevelRequirements"] = true,
 		["CompletedBy"] = true,
 		["Updates:AdHoc"] = true,
+		["creatures"] = true,
 	},
 }
 

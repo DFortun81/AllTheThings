@@ -163,6 +163,7 @@ local TooltipSettingsBase = {
 		["SourceLocations:Things"] = true,
 		["SummarizeThings"] = true,
 		["Warn:Removed"] = true,
+		["creatures"] = true,
 	},
 };
 local UnobtainableSettingsBase = {
