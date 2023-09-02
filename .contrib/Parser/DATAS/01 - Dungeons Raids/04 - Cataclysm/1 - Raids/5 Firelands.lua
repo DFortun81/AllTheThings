@@ -70,26 +70,31 @@ local SHOULDER_VANQ = i(71674, {	-- Mantle of the Fiery Vanquisher
 
 root(ROOTS.Instances, tier(CATA_TIER, {
 	inst(78, {	-- Firelands
-		["isRaid"] = true,
 		["coord"] = { 47.3, 78.1, MOUNT_HYJAL },
 		["maps"] = { 367, 368, 369 },
+		["isRaid"] = true,
 		["lvl"] = 85,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(5828, {		-- Glory of the Firelands Raider
-					i(69230),	-- Corrupted Fire Hawk (MOUNT!)
-					crit(1),	-- Heroic: Beth'tilac
-					crit(2),	-- Heroic: Lord Rhyolith
-					crit(3),	-- Heroic: Shannox
-					crit(4),	-- Heroic: Alysrazor
-					crit(5),	-- Heroic: Baleroc
-					crit(6),	-- Heroic: Majordomo Fandral Staghelm
-					crit(7),	-- Death from Above
-					crit(8),	-- Not an Ambi-Turner
-					crit(9),	-- Do a Barrel Roll!
-					crit(10),	-- Bucket List
-					crit(11),	-- Share the Pain
-					crit(12),	-- Only the Penitent...
+				ach(5828, {	-- Glory of the Firelands Raider
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						5807,	-- Heroic: Beth'tilac
+						5808,	-- Heroic: Lord Rhyolith
+						5806,	-- Heroic: Shannox
+						5809,	-- Heroic: Alysrazor
+						5805,	-- Heroic: Baleroc
+						5804,	-- Heroic: Majordomo Fandral Staghelm
+						5821,	-- Death from Above
+						5810,	-- Not an Ambi-Turner
+						5813,	-- Do a Barrel Roll!
+						5829,	-- Bucket List
+						5830,	-- Share the Pain
+						5799,	-- Only the Penitent...
+					}},
+					["groups"] = {
+						i(69230),	-- Corrupted Fire Hawk (MOUNT!)
+					},
 				}),
 				ach(5802, {	-- Firelands
 					crit(17430, {	-- Beth'tilac
@@ -367,54 +372,61 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 				}),
 			}),
 			n(VENDORS, {
-				n(54401, {	-- Naresir Stormfury
-					i(70930),
-					i(71229),
-					i(71228),
-					i(71230),
-					i(71227),
-					i(71258),
-					i(71249),
-					i(71131),
-					i(71255),
-					i(71254),
-					i(71250),
-					i(70933),
-					i(71253),
+				n(54401, {	-- Naresir Stormfury <Avengers of Hyjal Quartermaster>
+					i(71227),	-- Bladed Flamewrath Cover
+					i(70930),	-- Durable Flamewrath Greatcloak
+					i(71229),	-- Flowing Flamewrath Cape
+					i(71230),	-- Rippling Flamewrath Drape
+					i(71228),	-- Sleek Flamewrath Cloak
+					i(71253),	-- Belt of the Seven Seals
+					i(71250),	-- Cinch of the Flaming Ember
+					i(71258),	-- Embereye Belt
+					i(71255),	-- Firearrow Belt
+					i(71254),	-- Firemend Cinch
+					i(71249),	-- Firescar Sash
+					i(71131),	-- Flamebinding Girdle
+					i(70933),	-- Girdle of the Indomitable Flame
+					i(70934),	-- Adamantine Signet of the Avengers
+					i(71217),	-- Infernal Signet of the Avengers
+					i(71215),	-- Obsidian Signet of the Avengers
+					i(71237),	-- Quicksilver Signet of the Avengers
+					i(69001),	-- Ancient Petrified Seed
+					i(69002),	-- Essence of the Eternal Flame
+					i(69000),	-- Fiery Quintessence
+					i(68998),	-- Rune of Zeth
+					i(68996),	-- Stay of Execution
 				}),
 			}),
 			n(ZONE_DROPS, {
-				["groups"] = {
-					i(69976),	-- Pattern: Boots of the Black Flame
-					i(69966),	-- Pattern: Don Tayo's Inferno Mittens
-					i(69975),	-- Pattern: Endless Dream  Walkers
-					i(69965),	-- Pattern: Grips of Altered Reality
-					i(69962),	-- Pattern: Clutches of Evil (RECIPE!)
-					i(69960),	-- Pattern: Dragonfire Gloves (RECIPE!)
-					i(69971),	-- Pattern: Earthen Scale Sabatons (RECIPE!)
-					i(69974),	-- Pattern: Ethereal Footfalls (RECIPE!)
-					i(69972),	-- Pattern: Footwraps of Quenched Fire (RECIPE!)
-					i(69961),	-- Pattern: Gloves of Unforgiving Flame (RECIPE!)
-					i(69963),	-- Pattern: Heavenly Gloves of the Moon (RECIPE!)
-					i(69973),	-- Pattern: Treads of the Craft (RECIPE!)
-					i(69970),	-- Plans: Emberforged Elementium Boots (RECIPE!)
-					i(69969),	-- Plans: Mirrored Boots (RECIPE!)
-					i(69968),	-- Plans: Warboots of Mighty Lords (RECIPE!)
-					i(69958),	-- Plans: Eternal Elementium Handguards (RECIPE!)
-					i(69957),	-- Plans: Fists of Fury (RECIPE!)
-					i(69959),	-- Plans: Holy Flame Gauntlets (RECIPE!)
-					i(68972),	-- Apparatus of Khaz'goroth
-					i(71359),	-- Chelley's Sterilized Scalpel
-					i(70929),	-- Firebound Gorget
-					i(71365),	-- Hide-Bound Chains
-					i(71366),	-- Lava Bolt Crossbow
-					i(71362),	-- Obsidium Cleaver
-					i(71361),	-- Ranseur of Hatred
-					i(71640),	-- Riplimb's Lost Collar
-					i(71360),	-- Spire of Scarlet Pain
-					i(68915),	-- Scales of Life
-					i(71367),	-- Theck's Emberseal
-				},
+				i(69976),	-- Pattern: Boots of the Black Flame
+				i(69966),	-- Pattern: Don Tayo's Inferno Mittens
+				i(69975),	-- Pattern: Endless Dream  Walkers
+				i(69965),	-- Pattern: Grips of Altered Reality
+				i(69962),	-- Pattern: Clutches of Evil (RECIPE!)
+				i(69960),	-- Pattern: Dragonfire Gloves (RECIPE!)
+				i(69971),	-- Pattern: Earthen Scale Sabatons (RECIPE!)
+				i(69974),	-- Pattern: Ethereal Footfalls (RECIPE!)
+				i(69972),	-- Pattern: Footwraps of Quenched Fire (RECIPE!)
+				i(69961),	-- Pattern: Gloves of Unforgiving Flame (RECIPE!)
+				i(69963),	-- Pattern: Heavenly Gloves of the Moon (RECIPE!)
+				i(69973),	-- Pattern: Treads of the Craft (RECIPE!)
+				i(69970),	-- Plans: Emberforged Elementium Boots (RECIPE!)
+				i(69969),	-- Plans: Mirrored Boots (RECIPE!)
+				i(69968),	-- Plans: Warboots of Mighty Lords (RECIPE!)
+				i(69958),	-- Plans: Eternal Elementium Handguards (RECIPE!)
+				i(69957),	-- Plans: Fists of Fury (RECIPE!)
+				i(69959),	-- Plans: Holy Flame Gauntlets (RECIPE!)
+				i(68972),	-- Apparatus of Khaz'goroth
+				i(71359),	-- Chelley's Sterilized Scalpel
+				i(70929),	-- Firebound Gorget
+				i(71365),	-- Hide-Bound Chains
+				i(71366),	-- Lava Bolt Crossbow
+				i(71362),	-- Obsidium Cleaver
+				i(71361),	-- Ranseur of Hatred
+				i(71640),	-- Riplimb's Lost Collar
+				i(71360),	-- Spire of Scarlet Pain
+				i(68915),	-- Scales of Life
+				i(71367),	-- Theck's Emberseal
 			}),
 			d(NORMAL_RAID, {
 				["difficulties"] = { 1, 3, 4 },
@@ -444,7 +456,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						["creatureID"] = 52498,
 						["groups"] = {
 							ach(5821),	-- Death from Above
-							i(152976,	{	-- Cinderweb Recluse (PET!)
+							i(152976, {	-- Cinderweb Recluse (PET!)
 								["timeline"] = { ADDED_7_3_0 },
 							}),
 							i(71039),	-- Funeral Pyre
@@ -518,7 +530,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 								crit(4),	-- The Ridge of Ancient Flame
 								crit(5),	-- Shatterstone
 							}),
-							i(152975,	{	-- Blazehound (PET!)
+							i(152975, {	-- Blazehound (PET!)
 								["timeline"] = { ADDED_7_3_0 },
 							}),
 							i(71014),	-- Skullstealer Greataxe
@@ -729,7 +741,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						["creatureID"] = 52498,
 						["groups"] = {
 							ach(5807),	-- Heroic: Beth'tilac
-							i(152976,	{	-- Cinderweb Recluse (PET!)
+							i(152976, {	-- Cinderweb Recluse (PET!)
 								["timeline"] = { ADDED_7_3_0 },
 							}),
 							i(71409),	-- Funeral Pyre
@@ -798,7 +810,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 							i(71678),	-- Leggings of the Fiery Conqueror
 							i(71685),	-- Leggings of the Fiery Protector
 							i(71671),	-- Leggings of the Fiery Vanquisher
-							i(152975,	{	-- Blazehound (PET!)
+							i(152975, {	-- Blazehound (PET!)
 								["timeline"] = { ADDED_7_3_0 },
 							}),
 							i(71445),	-- Skullstealer Greataxe
@@ -871,11 +883,11 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						["creatureID"] = 52409,
 						["sym"] = {{"select","itemID",175158}},	-- Flames of Fury (Bag of Tricks addition)
 						["groups"] = {
+							un(REMOVED_FROM_GAME, ach(5985)),	-- Realm First! Ragnaros
 							ach(5803, {	-- Heroic: Ragnaros
 								title(190),	-- Firelord
 							}),
 							ach(5984),	-- Heroic: Ragnaros Guild Run
-							un(REMOVED_FROM_GAME, ach(5985)),	-- Realm First! Ragnaros
 							i(71677),	-- Crown of the Fiery Conqueror
 							i(71684),	-- Crown of the Fiery Protector
 							i(71670),	-- Crown of the Fiery Vanquisher
