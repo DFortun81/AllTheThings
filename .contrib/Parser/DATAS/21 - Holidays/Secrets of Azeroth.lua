@@ -50,6 +50,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 				{ 55.0, 37.0, VALDRAKKEN },
 			},
 			["isBreadcrumb"] = true,
+			["DisablePartySync"] = true,
+			-- Attempting to Party Sync and pickup/have shared this quest, the game says 'Must complete all pre-requisites'
+			-- I'm not sure what shenanigans Blizzard is doing where you can be missing quest pre-requisites while also in a Party Sync
+			-- and the other player is able to pickup the quest
+			-- If someone figures this out, please adjust the quest
 		}),
 		q(77203, {	-- Preserving Rarities
 			["qg"] = 206864,	-- Preservationist Kathos
