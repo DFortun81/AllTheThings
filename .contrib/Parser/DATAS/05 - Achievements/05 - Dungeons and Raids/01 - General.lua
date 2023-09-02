@@ -344,33 +344,38 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			},
 		})),
 		ach(11163, {	-- Glory of the Legion Hero
-			i(141217),		-- Leyfeather Hippogryph (MOUNT!)
-			crit(1),		-- But You Say He's Just a Friend
-			crit(2),		-- Stay Salty
-			crit(3),		-- Ready for Raiding V
-			crit(4),		-- Egg-cellent!
-			crit(5),		-- Burning Down the House
-			crit(6),		-- Got to Ketchum All
-			crit(7),		-- Can't Eat Just One
-			crit(8),		-- Stag Party
-			crit(9),		-- I Got What You Mead
-			crit(10),		-- Surge Protector
-			crit(11),		-- I Made a Food!
-			crit(12),		-- You're Just Making It WORSE!
-			crit(13),		-- I Ain't Even Cold
-			crit(14),		-- Who's Afraid of the Dark?
-			crit(15),		-- A Specter, Illuminated
-			crit(16),		-- You Used to Scrawl Me In Your Fel Tome
-			crit(17),		-- Black Rook Moan
-			crit(18),		-- Adds? More Like Bads
-			crit(19),		-- Instant Karma
-			crit(20),		-- Helheim Hath No Fury
-			crit(21),		-- Poor Unfortunate Souls
-			crit(22),		-- No Time to Waste
-			crit(23),		-- Clean House
-			crit(24),		-- Arcanic Cling
-			crit(25),		-- Waiting for Gerdo
-			crit(26),		-- Dropping Some Eaves
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				10456,	-- But You Say He's Just a Friend
+				10457,	-- Stay Salty
+				10458,	-- Ready for Raiding V
+				10766,	-- Egg-cellent!
+				10769,	-- Burning Down the House
+				10996,	-- Got to Ketchum All
+				10875,	-- Can't Eat Just One
+				10544,	-- Stag Party
+				10542,	-- I Got What You Mead
+				10543,	-- Surge Protector
+				10554,	-- I Made a Food!
+				10553,	-- You're Just Making It WORSE!
+				10679,	-- I Ain't Even Cold
+				10680,	-- Who's Afraid of the Dark?
+				10707,	-- A Specter, Illuminated
+				10709,	-- You Used to Scrawl Me In Your Fel Tome
+				10710,	-- Black Rook Moan
+				10711,	-- Adds? More Like Bads
+				10413,	-- Instant Karma
+				10411,	-- Helheim Hath No Fury
+				10412,	-- Poor Unfortunate Souls
+				10776,	-- No Time to Waste
+				10775,	-- Clean House
+				10773,	-- Arcanic Cling
+				10610,	-- Waiting for Gerdo
+				10611,	-- Dropping Some Eaves
+			}},
+			["groups"] = {
+				i(141217),		-- Leyfeather Hippogryph (MOUNT!)
+			},
 		}),
 		ach(11180, {	-- Glory of the Legion Raider
 			["sym"] = {{"meta_achievement",

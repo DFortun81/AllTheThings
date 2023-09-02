@@ -199,7 +199,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						i(137307),	-- Corrupted Knot
 					})),
 					cr(99200, e(1656, {	-- Dresaron
-						ach(10766),	-- Egg-cellent!
+						ach(10766, {	-- Egg-cellent!
+							["crs"] = { 111008 },	-- Hatespawn Abomination
+						}),
 						i(139082),	-- Bramblemail Greaves
 						i(137311),	-- Chain of the Green Flight
 						i(137310),	-- Greatbelt of Disruption

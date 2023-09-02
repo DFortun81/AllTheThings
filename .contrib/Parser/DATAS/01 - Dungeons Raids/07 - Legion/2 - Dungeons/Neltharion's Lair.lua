@@ -243,7 +243,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						i(137346),	-- Murmuring Idol
 					})),
 					cr(91005, e(1673, {	-- Naraxas
-						ach(10875),	-- Can't Eat Just One
+						ach(10875, {	-- Can't Eat Just One
+							["crs"] = { 101075 },	-- Wormspeaker Devout
+						}),
 						i(134524),	-- Band of the Wyrm Matron
 						i(137348),	-- Gauntlets of Innumerable Barbs
 						i(137349),	-- Naraxas' Spiked Tongue

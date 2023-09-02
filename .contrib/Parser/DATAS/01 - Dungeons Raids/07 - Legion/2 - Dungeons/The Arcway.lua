@@ -164,7 +164,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				cr(98208, e(1501, {	-- Advisor Vandros
 					ach(10813),	-- Mythic: The Arcway
 					ach(10864),	-- Mythic: The Arcway Guild Run
-					ach(10776),	-- No Time to Waste
+					ach(10776, {	-- No Time to Waste
+						["crs"] = { 103130 },	-- Timeless Wraith
+					}),
 					i(137851),	-- Design: Tranquil Necklace of Prophecy [Rank 3] (RECIPE!)
 					i(137897),	-- Pattern: Dreadleather Gloves [Rank 3] (RECIPE!)
 					i(127927),	-- Recipe: Potion of the Old War [Rank 2] (RECIPE!)

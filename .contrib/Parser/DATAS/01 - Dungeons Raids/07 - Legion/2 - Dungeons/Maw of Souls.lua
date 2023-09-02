@@ -132,7 +132,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 			}),
 			d(MYTHIC_DUNGEON, {
 				cr(96756, e(1502, {	-- Ymiron, the Fallen King
-					ach(10413),	-- Instant Karma
+					ach(10413, {	-- Instant Karma
+						["crs"] = { 98246 },	-- Risen Warrior
+					}),
 					i(134199),	-- Biornskin Belt
 					i(134217),	-- Bonespeaker Gloves
 					i(133629),	-- Crown of Fallen Kings
@@ -170,9 +172,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					ach(10412, {	-- Poor Unfortunate Souls
 						["description"] = "Absorb the soul at the beginning of Blackrook Hold, clear the dungeon, then clear Maw of Souls. You must not die at all through both dungeons.\n\nWARNING: You must do this with a group of 5 players for the buffs to upgrade after each boss kill.",
 						["maps"] = { 751, 752, 753, 754, 755, 756 },	-- Black Rook Hold
-						["crs"] = {
-							98806,	-- Soul Essence
-						},
+						["crs"] = { 98806 },	-- Soul Essence
 						["groups"] = {
 							i(140323),	-- Lagan (PET!)
 						},

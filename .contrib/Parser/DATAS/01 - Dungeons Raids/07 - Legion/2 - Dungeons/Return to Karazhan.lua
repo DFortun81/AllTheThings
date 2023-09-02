@@ -153,6 +153,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 			n(TREASURES, {
 				i(208048, {	-- Ritual of the Voidmaw Felhunter (CI!)
 					["description"] = "Located by a bookshelf on the second floor of the library in Legion Karazhan, after killing Mana Devourer.",
+					["provider"] = { "o", 405286 },	-- Torn Page
 					["timeline"] = { ADDED_10_1_5 },
 				}),
 			}),
@@ -354,34 +355,86 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 			d(MYTHIC_DUNGEON, {
 				n(ACHIEVEMENTS, {
 					ach(11433, {	-- Burn After Reading
-						crit(1, {	-- Legacy of the Mountain King
-							["itemID"] = 142049,	-- Legacy of the Mountain King
-						}),
-						crit(2, {	-- Redemption of the Fallen
-							["itemID"] = 142052,	-- Redemption of the Fallen
-						}),
-						crit(3, {	-- Torment of the Worgen
-							["itemID"] = 142051,	-- Torment of the Worgen
-						}),
-						crit(4, {	-- Wrath of the Titans
-							["itemID"] = 142073,	-- Wrath of the Titans
-						}),
+						["provider"] = { "o", 265602 },	-- Sealed Tome
+						["groups"] = {
+							crit(34852, {	-- Legacy of the Mountain King
+								["provider"] = { "i", 142049 },	-- Legacy of the Mountain King
+							}),
+							crit(34853, {	-- Redemption of the Fallen
+								["provider"] = { "i", 142052 },	-- Redemption of the Fallen
+							}),
+							crit(34854, {	-- Torment of the Worgen
+								["provider"] = { "i", 142051 },	-- Torment of the Worgen
+							}),
+							crit(34855, {	-- Wrath of the Titans
+								["provider"] = { "i", 142073 },	-- Wrath of the Titans
+							}),
+						},
 					}),
 					ach(11430, {	-- One Night in Karazhan
-						["description"] = "1. Go to Opera and complete the encounter.  Loot the crystal in the audience.\n\n2. Head towards Maiden.  Loot the crystal in the room just before the boss.\n\n3. Go to Moroes and complete the encounter.  Loot the crystal behind the table.  Pick up the key that appears on the ground after Moroes dies.\n\n4. Go to the spider room (the far top-right corner of Servant's Quarters) and loot the crystal.\n\n5. Go to Curator, complete the encounter, and loot the crystal.\n\nRun down to where Nightbane was summoned in the Burning Crusade days. Medivh will be there.\n\nTalk to Medivh.\n",
+						["description"] = "1. Go to Opera and complete the encounter.  Click the fragment in the audience.\n\n2. Head towards Maiden.  Click the fragment in the room just before the boss.\n\n3. Go to Moroes and complete the encounter.  Click the fragment behind the table.  Pick up the key that appears on the ground after Moroes dies.\n\n4. Go to the spider room (the far top-right corner of Servant's Quarters) and click the fragment.\n\n5. Go to Curator, complete the encounter, and click the fragment.\n\nRun down to where Nightbane was summoned in the Burning Crusade days. Medivh will be there.\n\nTalk to Medivh.\n",
+						["crs"] = {
+							115038,	-- Image of Medivh
+							115013,	-- Soul Fragment
+						},
 					}),
-					ach(11335),	-- Season Tickets
+					ach(11335, {	-- Season Tickets
+						crit(34615, {	-- Beautiful Beast
+							["_encounter"] = { 1827, MYTHIC_DUNGEON },
+						}),
+						crit(34614, {	-- Westfall Story
+							["_encounter"] = { 1826, MYTHIC_DUNGEON },
+						}),
+						crit(34613, {	-- Wikket
+							["_encounter"] = { 1820, MYTHIC_DUNGEON },
+						}),
+					}),
 				}),
-				e(1820,   {	-- Opera Hall: Wikket
+				e(1827, {	-- Opera Hall: Beautiful Beast
+					["crs"] = {
+						114339,	-- Barnes <The Stage Manager>
+						114328,	-- Coggleston
+						114330,	-- Babblet
+						114329,	-- Luminore
+						114522,	-- Mrs. Cauldrons
+					},
+					["g"] = {
+						i(142196),	-- Cinch of Improbable Desire
+						i(142206),	-- Cloak of Sweltering Flame
+						i(142197),	-- Legguards of Imprisonment
+						i(142168),	-- Majordomo's Dinner Bell
+						i(142202),	-- Trousers of Royal Vanity
+						i(142304),	-- Visage of Brutish Iron
+						i(142184),	-- Candle of Flickering Lumens
+						i(142192),	-- Ghastly Curse
+						i(142188),	-- Spellbound Rose Petal
+					},
+				}),
+				e(1826, {	-- Opera Hall: Westfall Story
+					["crs"] = {
+						114339,	-- Barnes <The Stage Manager>
+						114260,	-- Mrrgria
+						114261,	-- Toe Knee
+					},
+					["g"] = {
+						i(142302),	-- Armguards of Burning Passion
+						i(142146),	-- Blackfin Wristband
+						i(142154),	-- Bracelets of the Sorrowful Bridge
+						i(142201),	-- Mantle of Conflicted Loyalties
+						i(142160),	-- Mrrgria's Favor
+						i(142164),	-- Toe Knee's Promise
+						i(142190),	-- Love's Intermission
+						i(142186),	-- Mrrmgmrl Grmmlmflrg
+						i(142178),	-- Ruffian's Poisoned Blade
+					},
+				}),
+				e(1820, {	-- Opera Hall: Wikket
 					["crs"] = {
 						114339,	-- Barnes <The Stage Manager>
 						114284,	-- Elfyra
 						114251,	-- Galindre
 					},
 					["g"] = {
-						crit(1, {	-- Wikket
-							["achievementID"] = 11335,	-- Season Tickets
-						}),
 						i(142298),	-- Astonishingly Scarlet Slippers
 						i(142204),	-- Boots of False Promise
 						i(142300),	-- Greaves of Miraculous Magnificence
@@ -395,51 +448,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						i(142179),	-- Memory of Betrayal
 					},
 				}),
-				e(1826,   {	-- Opera Hall: Westfall Story
-					["crs"] = {
-						114339,	-- Barnes <The Stage Manager>
-						114260,	-- Mrrgria
-						114261,	-- Toe Knee
-					},
-					["g"] = {
-						crit(2, {	-- Westfall Story
-							["achievementID"] = 11335,	-- Season Tickets
-						}),
-						i(142302),	-- Armguards of Burning Passion
-						i(142146),	-- Blackfin Wristband
-						i(142154),	-- Bracelets of the Sorrowful Bridge
-						i(142201),	-- Mantle of Conflicted Loyalties
-						i(142160),	-- Mrrgria's Favor
-						i(142164),	-- Toe Knee's Promise
-						i(142190),	-- Love's Intermission
-						i(142186),	-- Mrrmgmrl Grmmlmflrg
-						i(142178),	-- Ruffian's Poisoned Blade
-					},
-				}),
-				e(1827,   {	-- Opera Hall: Beautiful Beast
-					["crs"] = {
-						114339,	-- Barnes <The Stage Manager>
-						114328,	-- Coggleston
-						114330,	-- Babblet
-						114329,	-- Luminore
-						114522,	-- Mrs. Cauldrons
-					},
-					["g"] = {
-						crit(3, {	-- Beautiful Beast
-							["achievementID"] = 11335,	-- Season Tickets
-						}),
-						i(142196),	-- Cinch of Improbable Desire
-						i(142206),	-- Cloak of Sweltering Flame
-						i(142197),	-- Legguards of Imprisonment
-						i(142168),	-- Majordomo's Dinner Bell
-						i(142202),	-- Trousers of Royal Vanity
-						i(142304),	-- Visage of Brutish Iron
-						i(142184),	-- Candle of Flickering Lumens
-						i(142192),	-- Ghastly Curse
-						i(142188),	-- Spellbound Rose Petal
-					},
-				}),
-				e(1825,   {	-- Maiden of Virtue
+				e(1825, {	-- Maiden of Virtue
 					["creatureID"] = 113971,	-- Maiden of Virtue
 					["g"] = {
 						i(142138),	-- Confiscated Manacle
@@ -452,7 +461,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						i(142187),	-- Virtuous Directive
 					},
 				}),
-				e(1835,   {	-- Attumen the Huntsman
+				e(1835, {	-- Attumen the Huntsman
 					["crs"] = {
 						114262,	-- Attumen the Huntsman
 						114264,	-- Midnight
@@ -470,7 +479,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						i(142183),	-- Lava-Quenched Hoofplate
 					},
 				}),
-				e(1837,   {	-- Moroes
+				e(1837, {	-- Moroes
 					["creatureID"] = 114312,	-- Moroes
 					["g"] = {
 						ach(11338),	-- Dine and Bash
@@ -513,7 +522,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						i(143523),	-- Talisman of the Violet Eye
 					},
 				}),
-				e(1836,   {	-- The Curator
+				e(1836, {	-- The Curator
 					["creatureID"] = 114247,	-- The Curator
 					["g"] = {
 						i(142130),	-- Bite-Marked Wristplates
@@ -528,7 +537,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						i(142181),	-- Seeping Corruption
 					},
 				}),
-				e(1817,   {	-- Shade of Medivh
+				e(1817, {	-- Shade of Medivh
 					["creatureID"] = 114350,	-- Shade of Medivh
 					["g"] = {
 						ach(11432),	-- Scared Straight
@@ -544,10 +553,12 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						i(142310),	-- Anthology of Horrors
 					},
 				}),
-				e(1818,   {	-- Mana Devourer
+				e(1818, {	-- Mana Devourer
 					["creatureID"] = 114252,	-- Mana Devourer
 					["g"] = {
-						ach(11431),	-- The Rat Pack
+						ach(11431, {	-- The Rat Pack
+							["crs"] = { 116802 },	-- Rodent of Usual Size
+						}),
 						i(142162),	-- Fluctuating Energy
 						i(142150),	-- Hood of Uncanny Perspectives
 						i(142135),	-- Legguards of Countless Hours
@@ -559,7 +570,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						i(142305),	-- Suffused Manapearl
 					},
 				}),
-				e(1838,   {	-- Viz'aduum the Watcher
+				e(1838, {	-- Viz'aduum the Watcher
 					["creatureID"] = 114790,	-- Viz'aduum the Watcher
 					["g"] = {
 						ach(11429),	-- Mythic: Return to Karazhan
