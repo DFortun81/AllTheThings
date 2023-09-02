@@ -86,20 +86,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(7),		-- Heroic: Shadowmoon Burial Grounds
 			crit(8),		-- Heroic: Upper Blackrock Spire
 		}),
-		ach(11987, {	-- Glory of the Argus Raider
-			i(152815),		-- Antoran Gloomhound (MOUNT!)
-			crit(1),		-- Hard to Kill
-			crit(2),		-- Together We Stand
-			crit(3),		-- Worm-monger
-			crit(4),		-- Portal Combat
-			crit(5),		-- Don't Sweat the Technique
-			crit(6),		-- Hounds Good To Me
-			crit(7),		-- This is the War Room!
-			crit(8),		-- Spheres of Influence
-			crit(9),		-- The World Revolves Around Me
-			crit(10),		-- Remember the Titans
-			crit(11),		-- Stardust Crusaders
-		}),
 		ach(4845, {		-- Glory of the Cataclysm Hero
 			i(62900),		-- Volcanic Stone Drake (MOUNT!)
 			crit(1),		-- Cataclysm Dungeon Hero

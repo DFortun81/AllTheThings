@@ -259,7 +259,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				["lvl"] = 110,
 				["groups"] = {
 					cr(101995, e(1693, {	-- Festerface
-						ach(10554),	-- I Made a Food!
+						ach(10554, {	-- I Made a Food!
+							["crs"] = { 102169 },	-- Black Bile
+						}),
 						i(137438),	-- Band of Decaying Rubies
 						i(137435),	-- Blightbile Waistband
 						i(137479),	-- Cowl of Promising News
