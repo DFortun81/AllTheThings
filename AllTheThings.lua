@@ -267,7 +267,10 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 		__index = function(t, key)
 			-- load the object if it matches the load field and not yet loaded
 			if not o and key == loadField then
-				o = objFunc(unpack(params));
+				o = objFunc(unpack(params))
+				if not o then
+					error("DLO failed to generate an Object when loading!",unpack(params))
+				end
 				-- parent of the underlying object should correspond to the hierarchical parent of t (dlo)
 				local dloParent = rawget(t, "parent");
 				rawset(o, "parent", dloParent);
@@ -19752,9 +19755,10 @@ customWindowUpdates["list"] = function(self, force, got)
 				id = CacheFields[id];
 				-- app.PrintDebug("OTF:CacheID",dataType,id)
 				return setmetatable({ visible = true }, {
-					__index = SearchObject(dataType, id, "key")
-					or SearchObject(dataType, id, "field")
-					or CreateObject({[dataType]=id})
+					__index = id and (SearchObject(dataType, id, "key")
+									or SearchObject(dataType, id, "field")
+									or CreateObject({[dataType]=id}))
+								or setmetatable({name=EMPTY}, app.BaseClass)
 				});
 			end
 			-- app.PrintDebug("SetLimit",#CacheFields)

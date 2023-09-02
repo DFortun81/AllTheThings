@@ -19,7 +19,7 @@ local containerMeta = {
 			rawset(t, id, container);
 			return container;
 		else
-			error("Attempting to get a nil id to a cache!");
+			error("Attempting to get a nil cache container!");
 		end
 	end,
 };

@@ -1,3 +1,4 @@
+-- I don't know when the ItemDBConditional was moved again, but it needs to load BEFORE this file.
 -- Used by the Harvester (Parser)
 local Items = ItemDBConditional;
 function Harvest(things)
