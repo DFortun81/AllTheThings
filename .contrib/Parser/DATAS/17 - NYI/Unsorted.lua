@@ -1175,7 +1175,6 @@ root(ROOTS.Unsorted, {
 				q(76012),	--
 				-- 10.1.0.48898
 				q(76082),	--
-				q(76106),	--
 				q(76107),	--
 				q(76108),	--
 				q(76111),	-- Ensemble: Enmity Hood and Cloak

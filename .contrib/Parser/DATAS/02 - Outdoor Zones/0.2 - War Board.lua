@@ -137,6 +137,10 @@ root(ROOTS.Zones, {
 			}),
 			q(39206, {	-- Warchief's Command: Grizzly Hills!
 				["isBreadcrumb"] = true,
+				["altQuests"] = {
+					12487,	-- To Conquest Hold, But Be Careful!
+					12488,	-- The High Executor Needs You
+				},
 			}),
 			q(28560, {	-- Warchief's Command: Ghostlands!
 				["isBreadcrumb"] = true,

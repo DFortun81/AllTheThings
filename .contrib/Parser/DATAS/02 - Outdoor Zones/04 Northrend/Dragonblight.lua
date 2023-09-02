@@ -1831,6 +1831,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 36.6, 46.5, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
 						["qg"] = 26415,	-- Senior Sergeant Juktok
+						["altQuests"] = {
+							12487,	-- To Conquest Hold, But Be Careful!
+							-- #if AFTER 6.2.0.19953
+							39206,	-- Warchief's Command: Grizzly Hills!
+							-- #endif
+						},
 						["isBreadcrumb"] = true,
 					}),
 					q(12511, {	-- The Hills Have Us
@@ -2035,6 +2041,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 76.8, 63.2, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
 						["qg"] = 27243,	-- High Executor Wroth
+						["altQuests"] = {
+							12488,	-- The High Executor Needs You
+							-- #if AFTER 6.2.0.19953
+							39206,	-- Warchief's Command: Grizzly Hills!
+							-- #endif
+						},
 						["isBreadcrumb"] = true,
 					}),
 					q(12095, {	-- To Dragon's Fall
