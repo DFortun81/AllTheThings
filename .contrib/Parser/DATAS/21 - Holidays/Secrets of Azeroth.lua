@@ -147,7 +147,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 						{ 26.6, 53.9, VALDRAKKEN },
 					},
 					["groups"] = {
-						i(206696),	-- Tricked-Out Thinking Cap
+						i(206696),	-- Tricked-Out Thinking Cap (TOY!)
 					},
 				}),
 			},
