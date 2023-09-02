@@ -1,12 +1,13 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local AllDifficulties = {RAID_FINDER,NORMAL_DUNGEON,HEROIC_DUNGEON};
+local AnyDifficultyID = MultiDifficultyID(AllDifficulties);
+local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON};
+local NormalPlusDifficultyID = MultiDifficultyID(NormalPlus);
 
 root(ROOTS.Instances, tier(CATA_TIER, {
 	inst(187, {	-- Dragon Soul
-		["isRaid"] = true,
-		["sharedLockout"] = 1,
-		["lvl"] = 85,
 		["mapID"] = 409,	--  Wyrmrest Temple [Starting Area]
 		["maps"] = {
 			412,	-- Dragon Soul: Eye of Eternity
@@ -20,37 +21,53 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 			{ 64.7, 49.9, TANARIS },	-- entrance to CoT
 			{ 61.9, 27.2, CAVERNS_OF_TIME },	-- actual raid entrance
 		},
+		["isRaid"] = true,
+		["sharedLockout"] = 1,
+		["lvl"] = 85,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(6106, {	-- Siege of Wyrmrest Temple
 					crit(18445, {	-- Morchok
-						["_encounter"] = { 311, 7 },	-- LFR
+						["_encounter"] = { 311, AnyDifficultyID },
 					}),
 					crit(18446, {	-- Warlord Zon'ozz
-						["_encounter"] = { 324, 7 },	-- LFR
+						["_encounter"] = { 324, AnyDifficultyID },
 					}),
 					crit(18447, {	-- Yor'sahj the Unsleeping
-						["_encounter"] = { 325, 7 },	-- LFR
+						["_encounter"] = { 325, AnyDifficultyID },
 					}),
 					crit(18448, {	-- Hagara the Stormbinder
-						["_encounter"] = { 317, 7 },	-- LFR
+						["_encounter"] = { 317, AnyDifficultyID },
 					}),
 				}),
 				ach(6107, {	-- Fall of Deathwing
 					crit(18449, {	-- Ultraxion
-						["_encounter"] = { 331, 7 },	-- LFR
+						["_encounter"] = { 331, AnyDifficultyID },
 					}),
 					crit(18450, {	-- Warmaster Blackthorn
-						["_encounter"] = { 332, 7 },	-- LFR
+						["_encounter"] = { 332, AnyDifficultyID },
 					}),
 					crit(18451, {	-- Spine of Deathwing
-						["_encounter"] = { 318, 7 },	-- LFR
+						["_encounter"] = { 318, AnyDifficultyID },
 					}),
 					crit(18452, {	-- Madness of Deathwing
-						["_encounter"] = { 333, 7 },	-- LFR
+						["_encounter"] = { 333, AnyDifficultyID },
 					}),
 				}),
 				ach(6123),	-- Dragon Soul Guild Run
+			}),
+			n(COMMON_BOSS_DROPS, {
+				["crs"] = {
+					55265,	-- Morchok
+					55308,	-- Warlord Zon'ozz
+					55312,	-- Yor'sahj the Unsleeping
+					55689,	-- Hagara the Stormbinder
+					55294,	-- Ultraxion
+					56427,	-- Warmaster Blackhorn
+				},
+				["groups"] = {
+					currency(614),	-- Mote of Darkness
+				},
 			}),
 			n(QUALITY_LEGENDARY, {
 				["title"] = "Fangs of the Father",
@@ -199,7 +216,46 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 					}),
 				}),
 			}),
-			d(7, {	-- LFR
+			d(AllDifficulties, {
+				cr(55265, e(311, {	-- Morchok
+					-- Placeholder for criteria
+				})),
+				cr(55308, e(324, {	-- Warlord Zon'ozz
+					-- Placeholder for criteria
+				})),
+				cr(55312, e(325, {	-- Yor'sahj the Unsleeping
+					i(152979, {	-- Faceless Mindlasher (PET!)
+						["timeline"] = { ADDED_7_3_0 },
+					}),
+				})),
+				cr(55689, e(317, {	-- Hagara the Stormbinder
+					-- Placeholder for criteria
+				})),
+				cr(55294, e(331, {	-- Ultraxion
+					-- Placeholder for criteria
+				})),
+				cr(56427, e(332, {	-- Warmaster Blackthorn
+					-- Placeholder for criteria
+				})),
+				cr(53879, e(318, {	-- Spine of Deathwing
+					i(152980, {	-- Corrupted Blood (PET!)
+						["timeline"] = { ADDED_7_3_0 },
+					}),
+					i(122198),	-- Music Roll: The Shattering [Note: Crieve got on stream]
+				})),
+				cr(56173, e(333, {	-- Madness of Deathwing
+					i(152981, {	-- Unstable Tendril (PET!)
+						["timeline"] = { ADDED_7_3_0 },
+					}),
+					i(122198),	-- Music Roll: The Shattering [Confirmed in #errors]
+					currency(615),	-- Essence of Corrupted Deathwing
+				})),
+			}),
+			d(RAID_FINDER, {
+				-- #if AFTER 6.0.1.18322
+				["crs"] = { 80675 },	-- Auridormi <Raid Finder Guardian>
+				["coord"] = { 63.0, 27.6, CAVERNS_OF_TIME },
+				-- #endif
 				["ignoreBonus"] = true,
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
@@ -210,7 +266,6 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 							55689,	-- Hagara the Stormbinder
 							55294,	-- Ultraxion
 							56427,	-- Warmaster Blackhorn
-							80675,	-- Auridormi <Raid Finder Guardian>
 						},
 						["groups"] = {
 							i(78869),	-- Crown of the Corrupted Conqueror
@@ -240,135 +295,205 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 							i(77983),	-- Indomitable Pride
 							i(77979),	-- Vial of Shadows
 							i(77981),	-- Windward Heart
-							currency(614),	-- Mote of Darkness
 						},
 					}),
 					header(HEADERS.Achievement, 6106, {	-- Siege of Wyrmrest Temple
-						["crs"] = {
-							80675,	-- Auridormi <Raid Finder Guardian>
-						},
-						["groups"] = {
-							cr(55265, e(311, {	-- Morchok
-								i(78379),	-- Hand of Morchok
-								i(78383),	-- Vagaries of Time
-								i(78382),	-- Petrified Fungal Heart
-								i(78378),	-- Brackenshell Shoulderplates
-								i(78381),	-- Mosswrought Shoulderguards
-								i(78375),	-- Underdweller's Spaulders
-								i(78380),	-- Robe of Glowing Stone
-								i(78384),	-- Mycosynth Wristguards
-								i(78377),	-- Rockhide Bracers
-								i(78376),	-- Sporebeard Gauntlets
-								i(78385),	-- Girdle of Shattered Stone
-								i(78386),	-- Pillarfoot Greaves
-							})),
-							cr(55308, e(324, {	-- Warlord Zon'ozz
-								i(78399),	-- Finger of Zon'ozz
-								i(78394),	-- Horrifying Horn Arbalest (not listed on drop table on wowhead)
-								i(78397),	-- Graveheart Bracers
-								i(78400),	-- Grotesquely Writhing Bracers
-								i(78395),	-- Belt of Flayed Skin
-								i(78398),	-- Cord of the Slain Champion
-								i(78396),	-- Treads of Crushed Flesh
-								i(77969),	-- Seal of the Signs [Dropped for Lucetia]
-							})),
-							cr(55312, e(325, {	-- Yor'sahj the Unsleeping
-								i(152979, {	-- Faceless Mindlasher (PET!)
-									["timeline"] = { ADDED_7_3_0 },
-								}),
-								i(78409),	-- Experimental Specimen Slicer
-								i(78407),	-- Spire of Coagulated Globules
-								i(78410),	-- Scalpel of Unrelenting Agony (not listed on drop table on wowhead)
-								i(78412),	-- Heartblood Wristplates
-								i(78408),	-- Interrogator's Bloody Footpads
-								i(78411),	-- Mindstrainer Treads
-								i(77971),	-- Insignia of the Corrupted Mind
-								i(77970),	-- Soulshifter Vortex
-							})),
-							cr(55689, e(317, {	-- Hagara the Stormbinder
-								i(78426),	-- Lightning Rod
-								i(78422),	-- Electrowing Dagger
-								i(78425),	-- Bracers of the Banished
-								i(78428),	-- Girdle of the Grotesque
-								i(78424),	-- Runescriven Demon Collar
-								i(78423),	-- Treads of Dormant Dreams
-								i(78427),	-- Ring of the Raven
-								i(78421),	-- Signet of Grasping Mouths
-							})),
-						},
+						cr(55265, e(311, {	-- Morchok
+							i(78379),	-- Hand of Morchok
+							i(78383),	-- Vagaries of Time
+							i(78382),	-- Petrified Fungal Heart
+							i(78378),	-- Brackenshell Shoulderplates
+							i(78381),	-- Mosswrought Shoulderguards
+							i(78375),	-- Underdweller's Spaulders
+							i(78380),	-- Robe of Glowing Stone
+							i(78384),	-- Mycosynth Wristguards
+							i(78377),	-- Rockhide Bracers
+							i(78376),	-- Sporebeard Gauntlets
+							i(78385),	-- Girdle of Shattered Stone
+							i(78386),	-- Pillarfoot Greaves
+						})),
+						cr(55308, e(324, {	-- Warlord Zon'ozz
+							i(78399),	-- Finger of Zon'ozz
+							i(78394),	-- Horrifying Horn Arbalest (not listed on drop table on wowhead)
+							i(78397),	-- Graveheart Bracers
+							i(78400),	-- Grotesquely Writhing Bracers
+							i(78395),	-- Belt of Flayed Skin
+							i(78398),	-- Cord of the Slain Champion
+							i(78396),	-- Treads of Crushed Flesh
+							i(77969),	-- Seal of the Signs [Dropped for Lucetia]
+						})),
+						cr(55312, e(325, {	-- Yor'sahj the Unsleeping
+							i(78409),	-- Experimental Specimen Slicer
+							i(78407),	-- Spire of Coagulated Globules
+							i(78410),	-- Scalpel of Unrelenting Agony (not listed on drop table on wowhead)
+							i(78412),	-- Heartblood Wristplates
+							i(78408),	-- Interrogator's Bloody Footpads
+							i(78411),	-- Mindstrainer Treads
+							i(77971),	-- Insignia of the Corrupted Mind
+							i(77970),	-- Soulshifter Vortex
+						})),
+						cr(55689, e(317, {	-- Hagara the Stormbinder
+							i(78426),	-- Lightning Rod
+							i(78422),	-- Electrowing Dagger
+							i(78425),	-- Bracers of the Banished
+							i(78428),	-- Girdle of the Grotesque
+							i(78424),	-- Runescriven Demon Collar
+							i(78423),	-- Treads of Dormant Dreams
+							i(78427),	-- Ring of the Raven
+							i(78421),	-- Signet of Grasping Mouths
+						})),
 					}),
 					header(HEADERS.Achievement, 6107, {	-- Fall of Deathwing
-						["crs"] = {
-							80675,	-- Auridormi <Raid Finder Guardian>
-						},
-						["groups"] = {
-							cr(55294, e(331, {	-- Ultraxion
-								i(78437),	-- Morningstar of Heroic Will
-								i(78441),	-- Ledger of Revolting Rituals
-								i(78443),	-- Imperfect Specimens 27 and 28
-								i(78438),	-- Bracers of Looming Darkness
-								i(78444),	-- Dragonfracture Belt
-								i(78439),	-- Stillheart Warboots
-								i(78442),	-- Treads of Sordid Screams
-								i(77972),	-- Creche of the Final Dragon
-								i(78440),	-- Curled Twilight Claw
-							})),
-							cr(56427, e(332, {	-- Warmaster Blackthorn
-								i(78453),	-- Ataraxis, Cudgel of the Warmaster
-								i(78459),	-- Visage of the Destroyer
-								i(78456),	-- Blackhorn's Mighty Bulwark
-								i(78458),	-- Timepiece of the Bronze Flight
-								i(78454),	-- Shadow Wing Armbands
-								i(78455),	-- Belt of the Beloved Companion
-								i(78460),	-- Goriona's Collar
-								i(78457),	-- Janglespur Jackboots
-								i(77973),	-- Starcatcher Compass
-							})),
-							cr(53879, e(318, {	-- Spine of Deathwing
-								i(152980,	{	-- Corrupted Blood (PET!)
-									["timeline"] = { ADDED_7_3_0 },
-								}),
-								i(78470),	-- Backbreaker Spaulders
-								i(78466),	-- Gloves of Liquid Smoke
-								i(78469),	-- Gauntlets of the Golden Thorn
-								i(78467),	-- Molten Blood Footpads
-								i(78468),	-- Belt of Shattered Elementium
-								i(77977),	-- Eye of Unmaking
-								i(77976),	-- Heart of Unliving
-								i(77978),	-- Resolve of Undying
-								i(77975),	-- Will of Unbinding
-								i(77974),	-- Wrath of Unchaining
-								i(122198),	-- Music Roll: The Shattering [Note: Crieve got on stream]
-							})),
-							cr(56173, e(333, {	-- Madness of Deathwing
-								i(152981, {	-- Unstable Tendril (PET!)
-									["timeline"] = { ADDED_7_3_0 },
-								}),
-								i(78482),	-- Kiril, Fury of Beasts
-								i(78487),	-- Gurthalak, Voice of the Deeps
-								i(78483),	-- Blade of the Unmaker
-								i(78485),	-- Maw of the Dragonlord
-								i(78481),	-- No'Kaled, the Elements of Death
-								i(78484),	-- Rathrak, the Poisonous Mind
-								i(78488),	-- Souldrinker
-								i(78486),	-- Ti'tahk, the Steps of Time
-								i(78480),	-- Vishanka, Jaws of the Earth
-								i(89810),	-- Bounty of a Sundered Land
-								i(122198),	-- Music Roll: The Shattering [Confirmed in #errors]
-								currency(615),	-- Essence of Corrupted Deathwing
-							})),
-						},
+						cr(55294, e(331, {	-- Ultraxion
+							i(78437),	-- Morningstar of Heroic Will
+							i(78441),	-- Ledger of Revolting Rituals
+							i(78443),	-- Imperfect Specimens 27 and 28
+							i(78438),	-- Bracers of Looming Darkness
+							i(78444),	-- Dragonfracture Belt
+							i(78439),	-- Stillheart Warboots
+							i(78442),	-- Treads of Sordid Screams
+							i(77972),	-- Creche of the Final Dragon
+							i(78440),	-- Curled Twilight Claw
+						})),
+						cr(56427, e(332, {	-- Warmaster Blackthorn
+							i(78453),	-- Ataraxis, Cudgel of the Warmaster
+							i(78459),	-- Visage of the Destroyer
+							i(78456),	-- Blackhorn's Mighty Bulwark
+							i(78458),	-- Timepiece of the Bronze Flight
+							i(78454),	-- Shadow Wing Armbands
+							i(78455),	-- Belt of the Beloved Companion
+							i(78460),	-- Goriona's Collar
+							i(78457),	-- Janglespur Jackboots
+							i(77973),	-- Starcatcher Compass
+						})),
+						cr(53879, e(318, {	-- Spine of Deathwing
+							i(78470),	-- Backbreaker Spaulders
+							i(78466),	-- Gloves of Liquid Smoke
+							i(78469),	-- Gauntlets of the Golden Thorn
+							i(78467),	-- Molten Blood Footpads
+							i(78468),	-- Belt of Shattered Elementium
+							i(77977),	-- Eye of Unmaking
+							i(77976),	-- Heart of Unliving
+							i(77978),	-- Resolve of Undying
+							i(77975),	-- Will of Unbinding
+							i(77974),	-- Wrath of Unchaining
+						})),
+						cr(56173, e(333, {	-- Madness of Deathwing
+							i(78482),	-- Kiril, Fury of Beasts
+							i(78487),	-- Gurthalak, Voice of the Deeps
+							i(78483),	-- Blade of the Unmaker
+							i(78485),	-- Maw of the Dragonlord
+							i(78481),	-- No'Kaled, the Elements of Death
+							i(78484),	-- Rathrak, the Poisonous Mind
+							i(78488),	-- Souldrinker
+							i(78486),	-- Ti'tahk, the Steps of Time
+							i(78480),	-- Vishanka, Jaws of the Earth
+							i(89810),	-- Bounty of a Sundered Land
+						})),
 					}),
 				},
 			}),
-			d(NORMAL_DUNGEON, {
+			d(NormalPlus, {
+				["difficulties"] = { 3, 4, 5, 6 },
 				["ignoreBonus"] = true,
-				["difficulties"] = { 3, 4 },
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {
 							55265,	-- Morchok
-							55308,	-- Warlord	Zon'ozz
+							55308,	-- Warlord Zon'ozz
+							55312,	-- Yor'sahj the Unsleeping
+							55689,	-- Hagara the Stormbinder
+							55294,	-- Ultraxion
+							56427,	-- Warmaster Blackthorn
+						},
+						["groups"] = {
+							i(71998),	-- Essence of Destruction
+							i(77952, {	-- Elementium Gem Cluster
+								i(77951),	-- Shadowy Gem
+							}),
+						},
+					}),
+					cr(55265, e(311, {	-- Morchok
+						ach(6174),    -- Don't Stand So Close to Me
+					})),
+					cr(55308, e(324, {	-- Warlord Zon'ozz
+						ach(6128),	-- Ping Pong Champion
+					})),
+					cr(55312, e(325, {	-- Yor'sahj the Unsleeping
+						ach(6129, {	-- Taste the Rainbow!
+							crit(18495, {	-- Black and Yellow
+								["crs"] = {
+									55867,	-- Dark Globule <Blood of Shu'ma>
+									55864,	-- Glowing Globule <Blood of Shu'ma>
+								},
+							}),
+							crit(18496, {	-- Red and Green
+								["crs"] = {
+									55865,	-- Crimson Globule <Blood of Shu'ma>
+									55862,	-- Acidic Globule <Blood of Shu'ma>
+								},
+							}),
+							crit(18497, {	-- Black and Blue
+								["crs"] = {
+									55867,	-- Dark Globule <Blood of Shu'ma>
+									55866,	-- Cobalt Globule <Blood of Shu'ma>
+								},
+							}),
+							crit(18498, {	-- Purple and Yellow
+								["crs"] = {
+									55863,	-- Shadowed Globule <Blood of Shu'ma>
+									55864,	-- Glowing Globule <Blood of Shu'ma>
+								},
+							}),
+						}),
+					})),
+					cr(55689, e(317, {	-- Hagara the Stormbinder
+						ach(6175),	-- Holding Hands
+						i(74246, {	-- Cryptomancer's Decoder Ring
+							["b"] = 1,	-- BoP
+							["description"] = "You need to pickpocket this from the boss.",
+						}),
+					})),
+					cr(55294, e(331, {	-- Ultraxion
+						ach(6084),	-- Minutes to Midnight
+					})),
+					cr(56427, e(332, {	-- Warmaster Blackthorn
+						ach(6105),	-- Deck Defender
+					})),
+					cr(53879, e(318, {	-- Spine of Deathwing
+						ach(6133),    -- Maybe He'll Get Dizzy...
+					})),
+					cr(56173, e(333, {	-- Madness of Deathwing
+						ach(6180, {	-- Chromatic Champion
+							crit(18658, {	-- Alexstrasza Assaulted First
+								["provider"] = { "n", 56099 },	-- Alexstrasza
+							}),
+							crit(18659, {	-- Kalecgos Assaulted First
+								["provider"] = { "n", 56101 },	-- Kalecgos
+							}),
+							crit(18660, {	-- Nozdormu Assaulted First
+								["provider"] = { "n", 56102 },	-- Nozdormu
+							}),
+							crit(18661, {	-- Ysera Assaulted First
+								["provider"] = { "n", 56100 },	-- Ysera
+							}),
+						}),
+						ach(6177, {	-- Destroyer's End
+							title(196),	-- , Destroyer's End
+						}),
+						i(77067),	-- Blazing Drake (MOUNT!)
+						i(78352),	-- Fragment of Deathwing's Jaw
+					})),
+				},
+			}),
+			d(NORMAL_DUNGEON, {
+				["difficulties"] = { 3, 4 },
+				["ignoreBonus"] = true,
+				["groups"] = {
+					n(COMMON_BOSS_DROPS, {
+						["crs"] = {
+							55265,	-- Morchok
+							55308,	-- Warlord Zon'ozz
 							55312,	-- Yor'sahj the Unsleeping
 							55689,	-- Hagara the Stormbinder
 							55294,	-- Ultraxion
@@ -385,48 +510,40 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 							i(77211),	-- Indomitable Pride
 							i(77207),	-- Vial of Shadows
 							i(77209),	-- Windward Heart
-							i(71998),	-- Essence of Destruction
-							currency(614),	-- Mote of Darkness
-							i(77952, {	-- Elementium Gem Cluster
-								i(77951),	-- Shadowy Gem
-							}),
 						},
 					}),
 					n(ZONE_DROPS, {
-						["groups"] = {
-							i(78886),	-- Belt of Ghostly Graces
-							i(78885),	-- Dragoncarver Belt
-							i(77938),	-- Dragonfire Orb
-							i(78884),	-- Girdle of Fungal Dreams
-							i(78887),	-- Girdle of Soulful Mending
-							i(78882),	-- Nightblind Cinch
-							i(72006),	-- Pattern: Bladeshadow Leggings (RECIPE!)
-							i(72010),	-- Pattern: Bladeshadow Wristguards (RECIPE!)
-							i(72008),	-- Pattern: Bracers of Flowing Serenity (RECIPE!)
-							i(72011),	-- Pattern: Bracers of the Hunter-Killer (RECIPE!)
-							i(72004),	-- Pattern: Bracers of Unconquered Power
-							i(72005),	-- Pattern: Deathscale Leggings (RECIPE!)
-							i(72003),	-- Pattern: Dreamwraps of the Light
-							i(72002),	-- Pattern: Lavaquake Legwraps
-							i(71999),	-- Pattern: Leggings of Nature's Champion (RECIPE!)
-							i(72007),	-- Pattern: Rended Earth Leggings (RECIPE!)
-							i(72009),	-- Pattern: Thundering Deathscale Wristguards (RECIPE!)
-							i(72000),	-- Pattern: World Mender's Pants
-							i(72015),	-- Plans: Bracers of Destructive Strength (RECIPE!)
-							i(72013),	-- Plans: Foundations of Courage (RECIPE!)
-							i(72001),	-- Plans: Pyrium Legplates of Purified Evil (RECIPE!)
-							i(72014),	-- Plans: Soul Redeemer Bracers (RECIPE!)
-							i(72016),	-- Plans: Titanguard Wristplates (RECIPE!)
-							i(72012),	-- Plans: Unstoppable Destroyer's Legplates (RECIPE!)
-							i(77192),	-- Ruinblaster Shotgun
-							i(78879),	-- Sash of Relentless Truth
-							i(78878),	-- Spine of the Thousand Cuts
-							i(78888),	-- Waistguard of Bleeding Bone
-							i(78889),	-- Waistplate of the Desecrated Future
-						},
+						i(78886),	-- Belt of Ghostly Graces
+						i(78885),	-- Dragoncarver Belt
+						i(77938),	-- Dragonfire Orb
+						i(78884),	-- Girdle of Fungal Dreams
+						i(78887),	-- Girdle of Soulful Mending
+						i(78882),	-- Nightblind Cinch
+						i(72006),	-- Pattern: Bladeshadow Leggings (RECIPE!)
+						i(72010),	-- Pattern: Bladeshadow Wristguards (RECIPE!)
+						i(72008),	-- Pattern: Bracers of Flowing Serenity (RECIPE!)
+						i(72011),	-- Pattern: Bracers of the Hunter-Killer (RECIPE!)
+						i(72004),	-- Pattern: Bracers of Unconquered Power
+						i(72005),	-- Pattern: Deathscale Leggings (RECIPE!)
+						i(72003),	-- Pattern: Dreamwraps of the Light
+						i(72002),	-- Pattern: Lavaquake Legwraps
+						i(71999),	-- Pattern: Leggings of Nature's Champion (RECIPE!)
+						i(72007),	-- Pattern: Rended Earth Leggings (RECIPE!)
+						i(72009),	-- Pattern: Thundering Deathscale Wristguards (RECIPE!)
+						i(72000),	-- Pattern: World Mender's Pants
+						i(72015),	-- Plans: Bracers of Destructive Strength (RECIPE!)
+						i(72013),	-- Plans: Foundations of Courage (RECIPE!)
+						i(72001),	-- Plans: Pyrium Legplates of Purified Evil (RECIPE!)
+						i(72014),	-- Plans: Soul Redeemer Bracers (RECIPE!)
+						i(72016),	-- Plans: Titanguard Wristplates (RECIPE!)
+						i(72012),	-- Plans: Unstoppable Destroyer's Legplates (RECIPE!)
+						i(77192),	-- Ruinblaster Shotgun
+						i(78879),	-- Sash of Relentless Truth
+						i(78878),	-- Spine of the Thousand Cuts
+						i(78888),	-- Waistguard of Bleeding Bone
+						i(78889),	-- Waistplate of the Desecrated Future
 					}),
 					cr(55265, e(311, {	-- Morchok
-						ach(6174),    -- Don't Stand So Close to Me
 						i(77212),	-- Hand of Morchok
 						i(77214),	-- Vagaries of Time
 						i(77262),	-- Petrified Fungal Heart
@@ -441,7 +558,6 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						i(77265),	-- Pillarfoot Greaves
 					})),
 					cr(55308, e(324, {	-- Warlord Zon'ozz
-						ach(6128),	-- Ping Pong Champion
 						i(78183),	-- Gauntlets of the Corrupted Conqueror
 						i(78178),	-- Gauntlets of the Corrupted Protector
 						i(78173),	-- Gauntlets of the Corrupted Vanquisher
@@ -455,23 +571,9 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						i(77204),	-- Seal of the Seven Signs
 					})),
 					cr(55312, e(325, {	-- Yor'sahj the Unsleeping
-						ach(6129, {	-- Taste the Rainbow!
-							-- TODO: [crs] or what?
-							crit(18495, {	-- Black and Yellow
-							}),
-							crit(18496, {	-- Red and Green
-							}),
-							crit(18497, {	-- Black and Blue
-							}),
-							crit(18498, {	-- Purple and Yellow
-							}),
-						}),
 						i(78181),	-- Leggings of the Corrupted Conqueror
 						i(78176),	-- Leggings of the Corrupted Protector
 						i(78171),	-- Leggings of the Corrupted Vanquisher
-						i(152979, {	-- Faceless Mindlasher (PET!)
-							["timeline"] = { ADDED_7_3_0 },
-						}),
 						i(77217),	-- Experimental Specimen Slicer
 						i(77218),	-- Spire of Coagulated Globules
 						i(77219),	-- Scalpel of Unrelenting Agony
@@ -482,7 +584,6 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						i(77206),	-- Soulshifter Vortex
 					})),
 					cr(55689, e(317, {	-- Hagara the Stormbinder
-						ach(6175),	-- Holding Hands
 						i(78180),	-- Shoulders of the Corrupted Conqueror
 						i(78175),	-- Shoulders of the Corrupted Protector
 						i(78170),	-- Shoulders of the Corrupted Vanquisher
@@ -494,13 +595,8 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						i(77251),	-- Treads of Dormant Dreams
 						i(78012),	-- Ring of the Riven
 						i(78011),	-- Signet of Grasping Mouths
-						i(74246, {	-- Cryptomancer's Decoder Ring
-							["b"] = 1,	-- BoP
-							["description"] = "You need to pickpocket this from the boss.",
-						}),
 					})),
 					cr(55294, e(331, {	-- Ultraxion
-						ach(6084),	-- Minutes to Midnight
 						i(78184),	-- Chest of the Corrupted Conqueror
 						i(78179),	-- Chest of the Corrupted Protector
 						i(78174),	-- Chest of the Corrupted Vanquisher
@@ -516,7 +612,6 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						i(77205),	-- Creche of the Final Dragon
 					})),
 					cr(56427, e(332, {	-- Warmaster Blackthorn
-						ach(6105),	-- Deck Defender
 						i(78182),	-- Crown of the Corrupted Conqueror
 						i(78177),	-- Crown of the Corrupted Protector
 						i(78172),	-- Crown of the Corrupted Vanquisher
@@ -531,10 +626,6 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						i(77202),	-- Starcatcher Compass
 					})),
 					cr(53879, e(318, {	-- Spine of Deathwing
-						ach(6133),    -- Maybe He'll Get Dizzy...
-						i(152980,	{	-- Corrupted Blood (PET!)
-							["timeline"] = { ADDED_7_3_0 },
-						}),
 						i(77236),	-- Backbreaker Spaulders
 						i(77235),	-- Gauntlets of the Golden Thorn
 						i(78357),	-- Gloves of Liquid Smoke
@@ -547,27 +638,6 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						i(77197),	-- Wrath of Unchaining
 					})),
 					cr(56173, e(333, {	-- Madness of Deathwing
-						ach(6180, {	-- Chromatic Champion
-							crit(18658, {	-- Alexstrasza Assaulted First
-								["cr"] = 56099,
-							}),
-							crit(18659, {	-- Kalecgos Assaulted First
-								["cr"] = 56101,
-							}),
-							crit(18660, {	-- Nozdormu Assaulted First
-								["cr"] = 56102,
-							}),
-							crit(18661, {	-- Ysera Assaulted First
-								["cr"] = 56100,
-							}),
-						}),
-						ach(6177, {	-- Destroyer's End
-							title(196),	-- , Destroyer's End
-						}),
-						i(77067),	-- Blazing Drake (MOUNT!)
-						i(152981, {	-- Unstable Tendril (PET!)
-							["timeline"] = { ADDED_7_3_0 },
-						}),
 						i(77191),	-- Gurthalak, Voice of the Deeps
 						i(77194),	-- Kiril, Fury of Beasts
 						i(77190),	-- Ti'tahk, the Steps of Time
@@ -577,20 +647,17 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						i(77195),	-- Rathrak, the Poisonous Mind
 						i(77193),	-- Souldrinker
 						i(78359),	-- Vishanka, Jaws of the Earth
-						i(122198),	-- Music Roll: The Shattering
-						i(78352),	-- Fragment of Deathwing's Jaw
-						currency(615),	-- Essence of Corrupted Deathwing
 					})),
 				},
 			}),
 			d(HEROIC_DUNGEON, {
-				["ignoreBonus"] = true,
 				["difficulties"] = { 5, 6 },
+				["ignoreBonus"] = true,
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {
 							55265,	-- Morchok
-							55308,	-- Warlord	Zon'ozz
+							55308,	-- Warlord Zon'ozz
 							55312,	-- Yor'sahj the Unsleeping
 							55689,	-- Hagara the Stormbinder
 							55294,	-- Ultraxion
@@ -607,11 +674,6 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 							i(78003),	-- Indomitable Pride
 							i(77999),	-- Vial of Shadows
 							i(78001),	-- Windward Heart
-							i(71998),	-- Essence of Destruction
-							currency(614),	-- Mote of Darkness
-							i(77952, {	-- Elementium Gem Cluster
-								i(77951),	-- Shadowy Gem
-							}),
 						},
 					}),
 					n(ZONE_DROPS, {
@@ -681,9 +743,6 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						i(78856),	-- Leggings of the Corrupted Conqueror
 						i(78857),	-- Leggings of the Corrupted Protector
 						i(78858),	-- Leggings of the Corrupted Vanquisher
-						i(152979, {	-- Faceless Mindlasher (PET!)
-							["timeline"] = { ADDED_7_3_0 },
-						}),
 						i(78403),	-- Experimental Specimen Slicer
 						i(78401),	-- Spire of Coagulated Globules
 						i(78404),	-- Scalpel of Unrelenting Agony
@@ -706,10 +765,6 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						i(78415),	-- Treads of Dormant Dreams
 						i(78419),	-- Ring of the Riven
 						i(78413),	-- Signet of Grasping Mouths
-						i(74246, {	-- Cryptomancer's Decoder Ring
-							["b"] = 1,	-- BoP
-							["description"] = "You need to pickpocket this from the boss.",
-						}),
 					})),
 					cr(55294, e(331, {	-- Ultraxion
 						ach(6113),	-- Heroic: Ultraxion
@@ -744,9 +799,6 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 					})),
 					cr(53879, e(318, {	-- Spine of Deathwing
 						ach(6115),	-- Heroic: Spine of Deathwing
-						i(152980,	{	-- Corrupted Blood (PET!)
-							["timeline"] = { ADDED_7_3_0 },
-						}),
 						i(78465),	-- Backbreaker Spaulders
 						i(78464),	-- Gauntlets of the Golden Thorn
 						i(78461),	-- Gloves of Liquid Smoke
@@ -759,16 +811,12 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						i(77994),	-- Wrath of Unchaining
 					})),
 					cr(56173, e(333, {	-- Madness of Deathwing
+						un(REMOVED_FROM_GAME, ach(6126)),	-- Realm First! Deathwing
 						ach(6116, {	-- Heroic: Madness of Deathwing
 							title(194),	-- , Savior of Azeroth
 						}),
 						ach(6125),	-- Heroic: Deathwing Guild Run
-						un(REMOVED_FROM_GAME, ach(6126)),	-- Realm First! Deathwing
 						i(77069),	-- Life-Binder's Handmaiden (MOUNT!)
-						i(77067),	-- Blazing Drake (MOUNT!)
-						i(152981, {	-- Unstable Tendril (PET!)
-							["timeline"] = { ADDED_7_3_0 },
-						}),
 						i(78478),	-- Gurthalak, Voice of the Deeps
 						i(78473),	-- Kiril, Fury of Beasts
 						i(78477),	-- Ti'tahk, the Steps of Time
@@ -778,9 +826,6 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						i(78475),	-- Rathrak, the Poisonous Mind
 						i(78479),	-- Souldrinker
 						i(78471),	-- Vishanka, Jaws of the Earth
-						i(122198),	-- Music Roll: The Shattering
-						i(78352),	-- Fragment of Deathwing's Jaw
-						currency(615),	-- Essence of Corrupted Deathwing
 					})),
 				},
 			}),

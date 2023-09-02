@@ -1,6 +1,7 @@
 -- Difficulties
 NORMAL_DUNGEON = 1;
 HEROIC_DUNGEON = 2;
+RAID_FINDER = 7;
 MYTHIC_DUNGEON = 23;
 TIMEWALKING_DUNGEON = 24;
 LFR_RAID = 17;
@@ -16,7 +17,7 @@ DifficultyDB = {
 	[4] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },
 	[5] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 1 },
 	[6] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 1 },
-	[7] = { icon = "Interface/Worldmap/Skull_64Grey", modID = 1 },
+	[RAID_FINDER] = { icon = "Interface/Worldmap/Skull_64Grey", modID = 1 },
 	[NORMAL_RAID] = { icon = "Interface/Worldmap/Skull_64Green", modID = 3 },
 	[HEROIC_RAID] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 5 },
 	[MYTHIC_RAID] = { icon = "Interface/Worldmap/Skull_64Purple", modID = 6 },

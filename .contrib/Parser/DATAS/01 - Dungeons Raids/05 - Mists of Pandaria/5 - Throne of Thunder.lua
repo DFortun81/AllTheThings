@@ -228,11 +228,11 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 					i(96340),	-- Vaultwalker Sabatons
 				}),
 			}),
-			d(7, {	-- LFR Queue NPC
+			d(RAID_FINDER, {	-- Queue NPC
 				["crs"] = { 80633 },	-- Lorewalker Han <Raid Finder Storyteller>
 				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },
 			}),
-			d(7, {	-- LFR
+			d(RAID_FINDER, {
 				i(95343, {	-- Treasures of the Thunder
 					["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
 					["timeline"] = { ADDED_5_2_0, REMOVED_8_0_1 },

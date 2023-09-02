@@ -66,11 +66,11 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 					["timeline"] = { ADDED_8_1_5 },
 				}),
 			}),
-			d(7, {	-- LFR Queue NPC
+			d(RAID_FINDER, {	-- Queue NPC
 				["crs"] = { 80633 },	-- Lorewalker Han <Raid Finder Storyteller>
 				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },
 			}),
-			d(7, {	-- LFR
+			d(RAID_FINDER, {
 				["description"] = "Loot from this LFR is NOT tradeable to others in group.",
 				["ignoreBonus"] = true,
 				["g"] = {
