@@ -85,7 +85,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 	}),
 }))));
 
-root(ROOTS.Holidays, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 	q(77204),	-- placed 'Golden Chalice'
 	q(76987),	-- completed 'The Inquisitive' (account-wide completion)
 	q(76995),	-- looted Crazed Looter first time (208182)
