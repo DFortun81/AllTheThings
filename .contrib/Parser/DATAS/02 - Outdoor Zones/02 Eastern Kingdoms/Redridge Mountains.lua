@@ -1630,11 +1630,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1214, {	-- Gnoll Punisher
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 					["crs"] = {
 						14271,	-- Ribchaser
 						426,	-- Redridge Brute
 					},
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 17.4, 64.4, REDRIDGE_MOUNTAINS },
+						{ 31.0, 82.2, REDRIDGE_MOUNTAINS },
+						{ 39.0, 33.0, REDRIDGE_MOUNTAINS },
+						{ 24.0, 38.6, REDRIDGE_MOUNTAINS },
+					},
+					-- #else
+					["coords"] = {
+						{ 30.8, 61.4, REDRIDGE_MOUNTAINS },
+						{ 30.8, 73.8, REDRIDGE_MOUNTAINS },
+						{ 18.6, 60.0, REDRIDGE_MOUNTAINS },
+					},
+					-- #endif
 				}),
 				i(1440, {	-- Gnoll Skull Basher
 					["timeline"] = { "removed 4.0.3" },
