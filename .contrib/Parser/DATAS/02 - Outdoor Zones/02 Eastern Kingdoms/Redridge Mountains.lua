@@ -1705,7 +1705,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 397,	-- Grand Magus Doane (Name changed)
 					["coord"] = { 71.4, 44.8, REDRIDGE_MOUNTAINS },
 					-- #endif
-					},
 				}),
 				i(1469, {	-- Scimitar of Atun
 					["timeline"] = { "removed 4.0.3" },
