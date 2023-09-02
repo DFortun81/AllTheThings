@@ -407,7 +407,12 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			}),
 			i(1925, {	-- Defias Rapier
 				["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
+				-- #if BEFORE 4.0.3
 				["cr"] = 1725,	-- Defias Watchman
+				-- #elseif AFTER 10.1.7
+				["description"] = "Defias Pirates are located on & around the boat.",
+				["cr"] = 48522,	-- Defias Pirate
+				-- #endif
 			}),
 			i(1943, {	-- Goblin Mail Leggings
 				["timeline"] = { "removed 4.0.3" },

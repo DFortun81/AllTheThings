@@ -2252,11 +2252,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 1549,	-- Ravenous Darkhound
 				}),
 				i(3331, {	-- Melrache's Cape
-					-- #if BEFORE CATA
 					["coord"] = { 79.4, 26.0, TIRISFAL_GLADES },
-					-- #endif
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },
 					["cr"] = 1665,	-- Captain Melrache
+					["description"] = "This NPC is friendly to the alliance.",
 				}),
 				i(3332, {	-- Perrine's Boots
 					-- #if BEFORE CATA
@@ -2270,6 +2269,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 1529,	-- Bleeding Horror
 				}),
 				i(3328, {	-- Spider Web Robe
+					["coord"] = { 86.6, 53.8, TIRISFAL_GLADES },
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 					["cr"] = 1555,	-- Vicious Night Web Spider
 				}),
@@ -2278,7 +2278,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 1753,	-- Maggot Eye
 				}),
 				i(4263, {	-- Standard Issue Shield
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },
+					["coord"] = { 79.4, 25.6, TIRISFAL_GLADES },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 					["cr"] = 1660,	-- Scarlet Bodyguard
 				}),
 				i(3325, {	-- Vile Fin Battle Axe

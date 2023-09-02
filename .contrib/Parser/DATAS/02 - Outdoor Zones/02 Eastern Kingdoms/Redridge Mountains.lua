@@ -1616,6 +1616,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(1213, {	-- Gnoll Kindred Bracers
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 					["cr"] = 712,	-- Redridge Thrasher
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 17.4, 62.4, REDRIDGE_MOUNTAINS },
+						{ 28.8, 81.6, REDRIDGE_MOUNTAINS },
+					},
+					-- #else
+					["coords"] = {
+						{ 17.8, 59.6, REDRIDGE_MOUNTAINS },
+						{ 33.6, 62.4, REDRIDGE_MOUNTAINS },
+						{ 30.0, 73.4, REDRIDGE_MOUNTAINS },
+					},
+					-- #endif
 				}),
 				i(1214, {	-- Gnoll Punisher
 					["timeline"] = { "removed 4.0.3" },
@@ -1631,6 +1643,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(1211, {	-- Gnoll War Harness
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 					["cr"] = 423,	-- Redridge Mongrel
+					["coords"] = {
+						{ 30.6, 62.6, REDRIDGE_MOUNTAINS },
+						{ 30.0, 71.6, REDRIDGE_MOUNTAINS },
+						{ 17.8, 57.8, REDRIDGE_MOUNTAINS },
+					},
 				}),
 				-- #if BEFORE 4.0.3
 				i(2296, {	-- Great Goretusk Snout
@@ -1681,7 +1698,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(2566, {	-- Sacrificial Robes
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
-					["cr"] = 397,	-- Morganth / Grand Magus Doane [CATA+]
+					-- #if BEFORE 4.0.3
+					["cr"] = 397,	-- Morganth
+					["coord"] = { 80.0, 49.6, REDRIDGE_MOUNTAINS },
+					-- #else
+					["cr"] = 397,	-- Grand Magus Doane (Name changed)
+					["coord"] = { 71.4, 44.8, REDRIDGE_MOUNTAINS },
+					-- #endif
+					},
 				}),
 				i(1469, {	-- Scimitar of Atun
 					["timeline"] = { "removed 4.0.3" },

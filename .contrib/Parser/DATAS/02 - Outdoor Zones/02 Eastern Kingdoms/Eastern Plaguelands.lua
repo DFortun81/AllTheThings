@@ -3850,10 +3850,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(13499, {	-- Recipe: Greater Shadow Protection Potion (RECIPE!)
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- Kamboozle DATA Discord 1.10.2023
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 41.0, 50.2, EASTERN_PLAGUELANDS },
+						{ 67.8, 39.8, EASTERN_PLAGUELANDS },
+						{ 83.6, 44.0, EASTERN_PLAGUELANDS },
+					},
+					-- #else AFTER 10.1.7
 					["coords"] = {
 						{ 36.6, 45.2, EASTERN_PLAGUELANDS },
 						{ 33.8, 44.6, EASTERN_PLAGUELANDS },
 					},
+					-- #endif
 					["crs"] = {
 						8546,	-- Dark Adept <Cult of the Damned>
 						8550,	-- Shadowmage <Cult of the Damned>
