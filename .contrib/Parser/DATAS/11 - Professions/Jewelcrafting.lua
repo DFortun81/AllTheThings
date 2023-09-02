@@ -10,62 +10,79 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, {
 		ach(18891),	-- Generations of Gemstones IV
 		ach(18897, {	-- Can't Crush These
 			crit(1, {	-- Shipment: Blood Jade Amulet
-				["provider"] = { "q", 12958 },	-- Shipment: Blood Jade Amulet
+				["_quests"] = { 12958 },	-- Shipment: Blood Jade Amulet
 			}),
 			crit(2, {	-- Shipment: Glowing Ivory Figurine
-				["provider"] = { "q", 12959 },	-- Shipment: Glowing Ivory Figurine
+				["_quests"] = { 12959 },	-- Shipment: Glowing Ivory Figurine
 			}),
 			crit(3, {	-- Shipment: Wicked Sun Brooch
-				["provider"] = { "q", 12960 },	-- Shipment: Wicked Sun Brooch
+				["_quests"] = { 12960 },	-- Shipment: Wicked Sun Brooch
 			}),
 			crit(4, {	-- Shipment: Intricate Bone Figurine
-				["provider"] = { "q", 12961 },	-- Shipment: Intricate Bone Figurine
+				["_quests"] = { 12961 },	-- Shipment: Intricate Bone Figurine
 			}),
 			crit(5, {	-- Shipment: Bright Armor Relic
-				["provider"] = { "q", 12962 },	-- Shipment: Bright Armor Relic
+				["_quests"] = { 12962 },	-- Shipment: Bright Armor Relic
 			}),
 			crit(6, {	-- Shipment: Shifting Sun Curio
-				["provider"] = { "q", 12963 },	-- Shipment: Shifting Sun Curio
+				["_quests"] = { 12963 },	-- Shipment: Shifting Sun Curio
 			}),
 			crit(7, {	-- Nibbler! No! [A]
-				["provider"] = { "q", 25105 },	-- Nibbler! No!
+				["_quests"] = { 25105 },	-- Nibbler! No!
 				["races"] = ALLIANCE_ONLY,
 			}),
 			crit(8, {	-- Nibbler! No! [H]
-				["provider"] = {"q", 25158 },	-- Nibbler! No!
+				["_quests"] = { 25158 },	-- Nibbler! No!
 				["races"] = HORDE_ONLY,
 			}),
 			crit(9, {	-- A Present for Lila [A]
-				["provider"] = { "q", 25154 },	-- A Present for Lila
+				["_quests"] = { 25154 },	-- A Present for Lila
 				["races"] = ALLIANCE_ONLY,
 			}),
 			crit(10, {	-- A Present for Lila [H]
-				["provider"] = { "q", 25160 },	-- A Present for Lila
+				["_quests"] = { 25160 },	-- A Present for Lila
 				["races"] = HORDE_ONLY,
 			}),
 			crit(11, {	-- Ogrezonians in the Mood [A]
-				["provider"] = { "q", 25155 },	-- Ogrezonians in the Mood
+				["_quests"] = { 25155 },	-- Ogrezonians in the Mood
 				["races"] = ALLIANCE_ONLY,
 			}),
 			crit(12, {	-- Ogrezonians in the Mood [H]
-				["provider"] = { "q", 25161 },	-- Ogrezonians in the Mood
+				["_quests"] = { 25161 },	-- Ogrezonians in the Mood
 				["races"] = HORDE_ONLY,
 			}),
 			crit(13, {	-- Elemental Goo [A]
-				["provider"] = { "q", 25156 },	-- Elemental Goo
+				["_quests"] = { 25156 },	-- Elemental Goo
 				["races"] = ALLIANCE_ONLY,
 			}),
 			crit(14, {	-- Elemental Goo [H]
-				["provider"] = { "q", 25162 },	-- Elemental Goo
+				["_quests"] = { 25162 },	-- Elemental Goo
 				["races"] = HORDE_ONLY,
 			}),
 			crit(15, {	-- The Latest Fashion! [A]
-				["provider"] = { "q", 25157 },	-- The Latest Fashion!
+				["_quests"] = { 25157 },	-- The Latest Fashion!
 				["races"] = ALLIANCE_ONLY,
 			}),
 			crit(16, {	-- The Latest Fashion! [H]
-				["provider"] = { "q", 25159 },	-- The Latest Fashion!
+				["_quests"] = { 25159 },	-- The Latest Fashion!
 				["races"] = HORDE_ONLY,
+			}),
+		}),
+		ach(18941, {	-- Dazzling Dragons
+			crit(1, {	-- Jeweled Ruby Whelpling
+				["provider"] = { "i", 193887 },	-- Jeweled Ruby Whelpling
+			}),
+			crit(2, {	-- Jeweled Emerald Whelpling
+				["provider"] = { "i", 193888 },	-- Jeweled Emerald Whelpling
+			}),
+			crit(3, {	-- Jeweled Sapphire Whelpling
+				["provider"] = { "i", 193886 },	-- Jeweled Sapphire Whelpling
+			}),
+			crit(4, {	-- Jeweled Onyx Whelpling
+				["provider"] = { "i", 193889 },	-- Jeweled Onyx Whelpling
+			}),
+			crit(5, {	-- Jeweled Amber Whelpling
+				["provider"] = { "i", 193885 },	-- Jeweled Amber Whelpling
 			}),
 		}),
 		ach(18909, {	-- Fantastic Figurines
@@ -145,24 +162,25 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, {
 				["provider"] = { "i", 44063 },	-- Figurine - Monarch Crab
 			}),
 			crit(26, {	-- Figurine - King of Boars
-				["provider"] = { "q", 28778 },	-- Broken Boar Figurine
+				["_quests"] = { 28778 },	-- Broken Boar Figurine
 			}),
 			crit(27, {	-- Figurine - Demon Panther
-				["provider"] = { "q", 25047 },	-- Broken Panther Figurine
+				["_quests"] = { 25047 },	-- Broken Panther Figurine
 			}),
 			crit(28, {	-- Figurine - Earthen Guardian
-				["provider"] = { "q", 28776 },	-- Broken Earthen Figurine
+				["_quests"] = { 28776 },	-- Broken Earthen Figurine
 			}),
 			crit(29, {	-- Figurine - Jeweled Serpent
-				["provider"] = { "q", 28775 },	-- Broken Serpent Figurine
+				["_quests"] = { 28775 },	-- Broken Serpent Figurine
 			}),
 			crit(30, {	-- Figurine - Dream Owl
-				["provider"] = { "q", 28777 },	-- Broken Owl Figurine
+				["_quests"] = { 28777 },	-- Broken Owl Figurine
 			}),
 		}),
 		ach(18773, {	-- Jewelhammer's Focus
 			["provider"] = { "i", 153716 },	-- Jewelhammer's Focus
 		}),
+		ach(18893),	-- Plentiful Prospects
 		ach(18727),	-- Rave Leader
 		})),
 	}));
