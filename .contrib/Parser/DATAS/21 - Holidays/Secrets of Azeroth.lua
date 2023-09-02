@@ -139,17 +139,25 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 						{"i",207816,1},	-- Crystal Ocular Lenses
 					},
 				}),
-				q(77237, {	-- Unfinished Thinking Cap
-					["provider"] = { "i", 207827 },	-- Unfinished Thinking Cap
-					["crs"] = 207697,	-- Fangli Hoot
-					["coords"] = {
-						-- noted that this NPC 'moves around', perhaps daily?
-						{ 26.6, 53.9, VALDRAKKEN },
-					},
-					["groups"] = {
-						i(206696),	-- Tricked-Out Thinking Cap (TOY!)
-					},
-				}),
+			},
+		}),
+		q(77237, {	-- Unfinished Thinking Cap
+			["provider"] = { "i", 207827 },	-- Unfinished Thinking Cap
+			["crs"] = 207697,	-- Fangli Hoot
+			["coords"] = {
+				-- noted that this NPC 'moves around', perhaps daily?
+				{ 26.6, 53.9, VALDRAKKEN },
+			},
+			["groups"] = {
+				i(206696),	-- Tricked-Out Thinking Cap (TOY!)
+			},
+		}),
+		q(76504, {	-- The Tricked-Out Thinking Cap
+			["provider"] = { "n", 207697 },	-- Fangli Hoot
+			["coord"] = { 26.7, 53.9, VALDRAKKEN },
+			["sourceQuest"] = 77237,	-- Unfinished Thinking Cap
+			["groups"] = {
+				i(206944),	-- A Clue: The Thinking Cap
 			},
 		}),
 	}),
@@ -162,4 +170,6 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(77687),	-- completed 'A Secretive Contact' (77165)
 	q(77230),	-- paying Shakey's tab during 'A Secretive Contact' (77165)
 	q(78202),	-- completed 'Unfinished Thinking Cap' (77237)
+	q(76505),	-- completed 'The Tricked-Out Thinking Cap' (76504)
+	q(77513),	-- completed 'The Tricked-Out Thinking Cap' (76504)
 })))
