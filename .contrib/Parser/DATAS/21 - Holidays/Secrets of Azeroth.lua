@@ -202,4 +202,9 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(76505),	-- completed 'The Tricked-Out Thinking Cap' (76504)
 	q(77513),	-- completed 'The Tricked-Out Thinking Cap' (76504)
 	q(77521),	-- completed 'Preservationist Cleared' (77277)
+
+	-- TODO: Someone add these under Community Rumors achievement in a suitable structure please
+	q(77289),	-- Community Satchel 1 (Eastern Plague Lands @ 55.1, 59.4)
+	q(77288),	-- Community Satchel 2 (Felwood @ 42.1, 48.1)
+	q(77291),	-- Community Satchel 3 (Thousand Needles @ 42.7, 30.7)
 })))
