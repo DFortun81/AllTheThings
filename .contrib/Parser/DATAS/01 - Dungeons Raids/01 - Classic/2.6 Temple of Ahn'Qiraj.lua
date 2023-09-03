@@ -1502,6 +1502,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					i(20927),	-- Ouro's Intact Hide
 					i(20931),	-- Skin of the Great Sandworm
 					i(23557),	-- Larvae of the Great Worm
+					i(21613, {	-- Wormhide Boots
+						["timeline"] = { "added 10.1.7" },
+					}),
 					i(21610),	-- Wormscale Blocker
 					i(21615),	-- Don Rigoberto's Lost Hat
 					i(21611),	-- Burrower Bracers

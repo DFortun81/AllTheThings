@@ -957,7 +957,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					i(21482, {	-- Boots of the Fiery Sands
 						["timeline"] = {
 							"added 1.13.0.28211",
-							"removed 4.2.2.28211"
+							"removed 4.2.2.28211",
+							"added 10.1.7",
 						},
 					}),
 					i(21483),	-- Ring of the Desert Winds
