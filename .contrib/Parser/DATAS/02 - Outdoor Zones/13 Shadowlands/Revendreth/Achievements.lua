@@ -92,26 +92,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 64.0, 62.0, REVENDRETH },
 				},
 			}),
-			ach(14306, {	-- Explore Revendreth
-				crit(1),		-- Caretaker's Manor
-				crit(2),		-- Archivam
-				crit(3),		-- Witherfall Ruin
-				crit(4),		-- The Endmire
-				crit(5),		-- Catacombs of Regret
-				crit(6),		-- Old Gate
-				crit(7),		-- The Night Market
-				crit(8),		-- The Banewood
-				crit(9),		-- Stalker's Lodge
-				crit(10),		-- Chalice District
-				crit(11),		-- Redelav District
-				crit(12),		-- Dredhollow
-				crit(13),		-- Ember Ward
-				crit(14),		-- Darkwall Tower
-				crit(15),		-- Court of the Harvesters
-				crit(16),		-- Dominance Gate
-				crit(17),		-- The Shrouded Asylum
-				crit(18),		-- Dominance Keep
-			}),
+			explorationAch(14306),	-- Explore Revendreth
 			ach(14798, {	-- Sojourner of Revendreth
 				crit(1, {	-- The Duelist's Debt
 					["sourceQuests"] = { 59726 },	-- It's a Trap

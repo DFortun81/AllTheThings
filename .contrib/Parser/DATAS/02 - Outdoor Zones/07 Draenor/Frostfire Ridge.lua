@@ -24,23 +24,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 37204,	-- Rekindling an Old Flame
 					}),
 					ach(9534),	-- Delectable Ogre Delicacies (Bloodmaul Stronghold)
-					ach(8937, {	-- Explore Frostfire Ridge
-						crit(1),		-- Bladespire Citadel
-						crit(2),		-- Bloodmaul Stronghold
-						crit(3),		-- Bones of Agurak
-						crit(4),		-- Colossal's Fall
-						crit(5),		-- Daggermaw Ravine
-						crit(6),		-- Frostwind Crag
-						crit(7),		-- Grimfrost Hill
-						crit(8),		-- Grom'gar
-						crit(9),		-- Iron Siegeworks
-						crit(10),		-- Iron Waystation
-						crit(11),		-- Magnarok
-						crit(12),		-- Stonefang Outpost
-						crit(13),		-- The Boneslag
-						crit(14),		-- The Cracking Plains
-						crit(15),		-- Wor'gol
-					}),
+					explorationAch(8937),	-- Explore Frostfire Ridge
 					ach(9606, {	-- Frostfire Fridge
 						["races"] = HORDE_ONLY,
 						["g"] = {

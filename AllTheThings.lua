@@ -3023,25 +3023,25 @@ local ResolveFunctions = {
 				return;
 			end
 			local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id, criteriaObject;
-			for criteriaID=1,GetAchievementNumCriteria(achievementID),1 do
-				criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id = GetAchievementCriteriaInfo(achievementID, criteriaID);
-
+			for criteriaID=1,GetAchievementNumCriteria(achievementID, true),1 do
+				criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id = GetAchievementCriteriaInfo(achievementID, criteriaID, true);
+				criteriaObject = app.CreateAchievementCriteria(id, {["achievementID"] = achievementID}, true);
+				
 				-- SourceQuest
 				if criteriaType == 27 then
 					for _,c in ipairs(SearchForField("questID", assetID)) do
 						-- criteria inherit their achievement data ONLY when the achievement data is actually referenced... this is required for proper caching
-						criteriaObject = app.CreateAchievementCriteria(id, {["achievementID"] = achievementID}, true);
 						NestObject(c, criteriaObject);
 						BuildGroups(c);
 						CacheFields(criteriaObject);
 						app.DirectGroupUpdate(c);
+						criteriaObject = app.CreateAchievementCriteria(id, {["achievementID"] = achievementID}, true);
 						-- app.PrintDebug("Add-Crit",achievementID,id,"=>",c.hash)
 					end
 					-- added to the quest(s) groups, not added to achievement
 					criteriaObject = nil;
 				-- Items
 				elseif criteriaType == 36 or criteriaType == 42 then
-					criteriaObject = app.CreateAchievementCriteria(id, {["achievementID"] = achievementID}, true);
 					criteriaObject.providers = {{ "i", assetID }};
 				elseif criteriaType == 110	-- Casting spells on specific target
 					or criteriaType == 29 or criteriaType == 69	-- Buff Gained
@@ -3050,7 +3050,7 @@ local ResolveFunctions = {
 					or criteriaType == 43 then	-- Exploration
 					-- Ignored
 				else
-					app.print("Unhandled Criteria Type", criteriaType, assetID, achievementID);
+					--app.print("Unhandled Criteria Type", criteriaType, assetID, achievementID);
 				end
 				-- Criteria was not Sourced, so put it under the Achievement
 				if criteriaObject then

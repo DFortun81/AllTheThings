@@ -56,22 +56,7 @@ root(ROOTS.Zones, {
 				ach(10398, {	-- Drum Circle
 					["description"] = "This achievement can be soloed since after 'Battle for Azeroth'. Repeatedly jump for 1-3 minutes in the middle ring on the lower floor of Thunder Totem. It CANNOT be completed while you are on 'Assault on Thunder Totem' and you must be able to hear the drum beats to know the achievement is working."
 				}),
-				ach(10667, {	-- Explore Highmountain
-					crit(1),	-- Bloodhunt Highlands
-					crit(2),	-- Blind Marshlands
-					crit(3),	-- Frosthoof Watch
-					crit(4),	-- Ironhorn Enclave
-					crit(5),	-- Nightwatcher's Perch
-					crit(6),	-- Pinerock Basin
-					crit(7),	-- Riverbend
-					crit(8),	-- Rockaway Shallows
-					crit(9),	-- Shipwreck Cove
-					crit(10),	-- Skyhorn
-					crit(11),	-- Stonehoof Watch
-					crit(12),	-- Sylvan Falls
-					crit(13),	-- Thunder Totem
-					crit(14),	-- Trueshot Lodge
-				}),
+				explorationAch(10667),	-- Explore Highmountain
 				ach(10626, {	-- Zoom!
 					i(137298),	-- Zoom (PET!)
 				}),

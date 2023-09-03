@@ -27,22 +27,7 @@ root(ROOTS.Zones, {
 						crit(6),		-- Throne of Kil'jaeden
 						crit(7),		-- Zeth'gol
 					})),
-					ach(10260, {	-- Explore Tanaan Jungle
-						crit(1),		-- Zeth'Kur
-						crit(2),		-- Rangari Refuge
-						crit(3),		-- Fang'rila
-						crit(4),		-- The Fel Forge
-						crit(5),		-- Hellfire Citadel
-						crit(6),		-- The Iron Front
-						crit(7),		-- Ironhold Harbor
-						crit(8),		-- Throne of Kil'jaeden
-						crit(9),		-- Ruins of Kra'nak
-						crit(10),		-- Lion's Watch
-						crit(11),		-- Zorammarsh
-						crit(12),		-- Temple of Sha'naar
-						crit(13),		-- Vol'mar
-						crit(14),		-- Zeth'Gol
-					}),
+					explorationAch(10260),	-- Explore Tanaan Jungle
 					ach(10061, {	-- Hellbane
 						crit(1),		-- Terrorfist, Son of Kormrok
 						crit(2),		-- Deathtalon, Avatar of Iskar

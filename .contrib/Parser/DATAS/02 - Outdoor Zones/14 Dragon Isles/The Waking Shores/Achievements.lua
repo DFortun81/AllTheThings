@@ -181,20 +181,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			ach(15986, {	-- Dragon Glyphs: Wingrest Embassy
 				["coord"] = { 74.9, 37.4, THE_WAKING_SHORES },
 			}),
-			ach(16400, {	-- Explore the Waking Shores
-				crit(1),	-- Apex Canopy
-				crit(2),	-- Dragonheart Outpost
-				crit(3),	-- Frostflash Assault
-				crit(4),	-- Life-Binder Conservatory
-				crit(5),	-- Obsidian Bulwark
-				crit(6),	-- Obsidian Citadel
-				crit(7),	-- Overflowing Rapids
-				crit(8),	-- Ruby Life Pools
-				crit(9),	-- Scalecracker Keep
-				crit(10),	-- Skytop Observatory
-				crit(11),	-- Wild Coast
-				crit(12),	-- Wild Preserve
-			}),
+			explorationAch(16400),	-- Explore the Waking Shores
 			ach(16736),	-- Grand Theft Mammoth
 			ach(16493, {	-- Petty Theft Mammoth
 				["description"] = "Find Mammoths to ride from the individual locations to the location specified on this achievement.",

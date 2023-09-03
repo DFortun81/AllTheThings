@@ -136,17 +136,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["_npcs"] = { 177336 },	-- Zelnithop
 				}),
 			}),
-			ach(15053, {	-- Explore Korthia
-				crit(1),	-- Estuary of Awakening
-				crit(2),	-- Hope's Ascent
-				crit(3),	-- Keeper's Respite
-				crit(4),	-- Mauler's Outlook
-				crit(5),	-- Sanctuary of Guidance
-				crit(6),	-- Scholar's Den
-				crit(7),	-- Seeker's Quorum
-				crit(8),	-- Vault of Secrets
-				crit(9),	-- Windswept Aerie
-			}),
+			explorationAch(15053),	-- Explore Korthia
 			ach(15066, {	-- Reliquary Restoration
 				crit(1, {
 					["sourceQuests"] = { 63860 },	-- Talisman of the Eternal Scholar

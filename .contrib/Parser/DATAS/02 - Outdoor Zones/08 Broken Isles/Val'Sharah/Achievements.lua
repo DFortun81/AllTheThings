@@ -66,21 +66,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					["_npcs"] = { 93679 },	-- Gathenak the Subjugator
 				}),
 			}),
-			ach(10666, {	-- Explore Val'sharah
-				crit(1),	-- Andutalah
-				crit(2),	-- Black Rook Hold
-				crit(3),	-- Bradensbrook
-				crit(4),	-- The Dreamgrove
-				crit(5),	-- Gloaming Reef
-				crit(6),	-- Grove of Cenarius
-				crit(7),	-- Lorlathil
-				crit(8),	-- Mistvale
-				crit(9),	-- Moonclaw Vale
-				crit(10),	-- Shala'nir
-				crit(11),	-- Smolderhide Thicket
-				crit(12),	-- Temple of Elune
-				crit(13),	-- Thas'talah
-			}),
+			explorationAch(10666),	-- Explore Val'sharah
 			ach(10698, {	-- That's Val'sharah Folks!
 				crit(1, {	-- Archdruid of the Vale
 					["sourceQuests"] = { 40573 },	-- The Nightmare Lord

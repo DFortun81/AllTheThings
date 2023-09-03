@@ -167,20 +167,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			ach(16063, {	-- Dragon Glyphs: Windsong Rise
 				["coord"] = { 61.6, 64.4, OHNAHRAN_PLAINS },
 			}),
-			ach(16457, {	-- Explore the Ohn'ahran Plains
-				crit(1),	-- Ancient Bough
-				crit(2),	-- Broadhoof Outpost
-				crit(3),	-- Emberwatch
-				crit(4),	-- Emerald Gardens
-				crit(5),	-- Forkriver Crossing
-				crit(6),	-- Maruukai
-				crit(7),	-- Nokhudon Hold
-				crit(8),	-- Horn of Drusahl
-				crit(9),	-- Rusza'thar Reach
-				crit(10),	-- Teerakai
-				crit(11),	-- Mirewood Fen
-				crit(12),	-- Windsong Rise
-			}),
+			explorationAch(16457),	-- Explore the Ohn'ahran Plains
 			achraw(16423, {	-- Honor Our Ancestors
 				["provider"] = { "i", 201323 },	-- 1x Essence of Awakening
 				["g"] = {

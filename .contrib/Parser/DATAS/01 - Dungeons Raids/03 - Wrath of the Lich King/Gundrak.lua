@@ -124,19 +124,19 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				-- #endif
 				ach(495,  {	-- Heroic: Gundrak
 					crit(6839, { -- Slad'ran
-						["_encounter"] = { 592, 2 },
+						["_encounter"] = { 592, HEROIC_DUNGEON },
 					}),
 					crit(6840, { -- Moorabi
-						["_encounter"] = { 594, 2 },
+						["_encounter"] = { 594, HEROIC_DUNGEON },
 					}),
 					crit(6841, { -- Drakkari Colossus
-						["_encounter"] = { 593, 2 },
+						["_encounter"] = { 593, HEROIC_DUNGEON },
 					}),
 					crit(5614, { -- Gal'darah
-						["_encounter"] = { 596, 2 },
+						["_encounter"] = { 596, HEROIC_DUNGEON },
 					}),
 					crit(5053, { -- Eck the Ferocious
-						["_encounter"] = { 595, 2 },
+						["_encounter"] = { 595, HEROIC_DUNGEON },
 					}),
 				}),
 			}),

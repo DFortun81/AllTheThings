@@ -149,21 +149,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 58724 },	-- The Queen's Request
 				}),
 			}),
-			ach(14304, {	-- Explore Ardenweald
-				crit(1),		-- Dusty Burrows
-				crit(2),		-- The Stalks
-				crit(3),		-- Starlit Overlook
-				crit(4),		-- Shimmerbough
-				crit(5),		-- Tirna Scithe
-				crit(6),		-- Hibernal Hollow
-				crit(7),		-- Heart of the Forest
-				crit(8),		-- Gormhive
-				crit(9),		-- Glitterfall Basin
-				crit(10),		-- Tirna Noch
-				crit(11),		-- Darkreach
-				crit(12),		-- Crumbled Ridge
-				crit(13),		-- Gossamer Cliffs
-			}),
+			explorationAch(14304),	-- Explore Ardenweald
 			ach(14788, {	-- Fractured Faerie Tales
 				crit(1, {	-- A Meandering Story
 					["sourceQuests"] = { 62619 },	-- A Meandering Story

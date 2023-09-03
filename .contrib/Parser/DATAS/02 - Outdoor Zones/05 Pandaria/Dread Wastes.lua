@@ -66,20 +66,7 @@ root(ROOTS.Zones, {
 							["sourceQuest"] = 31354,	-- Mazu's Bounty
 						}),
 					}),
-					ach(6978, {	-- Explore Dread Wastes
-						crit(1),	-- Heart of Fear
-						crit(2),	-- Klaxxi'vess
-						crit(3),	-- Kypari Vor
-						crit(4),	-- Kypari Zar
-						crit(5),	-- Rikkitun Village
-						crit(6),	-- Soggy's Gamble
-						crit(7),	-- Terrace of Gurthan
-						crit(8),	-- The Briny Muck
-						crit(9),	-- The Clutches of Shek'zeer
-						crit(10),	-- The Sunset Brewgarden
-						crit(11),	-- Writhingwood
-						crit(12),	-- Zan'vess
-					}),
+					explorationAch(6978),	-- Explore Dread Wastes
 					ach(7284, {	-- Is Another Man's Treasure
 						["collectible"] = false,
 						["g"] = {

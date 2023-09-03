@@ -40,19 +40,7 @@ root(ROOTS.Zones, {
 					crit(31),		-- Mar'tura
 					crit(32),		-- Lieutenant Strathmar
 				}),
-				ach(10669, {	-- Explore Suramar
-					crit(1),	-- Ambervale
-					crit(2),	-- Crimson Thicket
-					crit(3),	-- Falanaar
-					crit(4),	-- Felsoul Hold
-					crit(5),	-- The Grand Pomenade
-					crit(6),	-- Jandvik
-					crit(7),	-- Moon Guard Stronghold
-					crit(8),	-- Moonwhisper Gulch
-					crit(9),	-- Ruins of Elun'eth
-					crit(10),	-- Suramar City
-					crit(11),	-- Tel'anor
-				}),
+				explorationAch(10669),	-- Explore Suramar
 				ach(11124, {	-- Good Suramaritan
 					crit(1,  {	-- An Ancient Gift
 						["sourceQuest"] = 42230,	-- The Valewalker's Burden

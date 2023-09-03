@@ -106,19 +106,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					ach(8938, {	-- Explore Shadowmoon Valley
-						crit(1),		-- Anguish Fortress
-						crit(2),		-- Darktide Roost
-						crit(3),		-- Elodor
-						crit(4),		-- Embaari Village
-						crit(5),		-- Gloomshade Grove
-						crit(6),		-- Gul'var
-						crit(7),		-- Karabor
-						crit(8),		-- Shaz'gul
-						crit(9),		-- The Shimmer Moor
-						crit(10),		-- Socrethar's Rise
-						crit(11),		-- Isle of Shadows
-					}),
+					explorationAch(8938),	-- Explore Shadowmoon Valley
 					ach(9436, {	-- It's the Stones! (Socrethar's Rise)
 						["description"] = "Must be on the daily quest Assault on Socrethar's Rise.",
 						["coords"] = {

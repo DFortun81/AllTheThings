@@ -193,17 +193,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					["icon"] = "Interface\\Icons\\INV_Misc_SpineLeaf _01",
 				}),
 			}),
-			ach(12561, {	-- Explore Nazmir
-				crit(1),		-- Primal Wetlands
-				crit(2),		-- Heart of Darkness
-				crit(3),		-- The Rivermarsh
-				crit(4),		-- The Necropolis
-				crit(5),		-- Zalamar
-				crit(6),		-- Torga's Rest
-				crit(7),		-- Nazwatha
-				crit(8),		-- Zal'amak
-				crit(9),		-- The Frogmarsh
-			}),
+			explorationAch(12561),	-- Explore Nazmir
 			petbattle(ach(13279, {	-- Family Battler
 				["collectible"] = false,
 				["g"] = {

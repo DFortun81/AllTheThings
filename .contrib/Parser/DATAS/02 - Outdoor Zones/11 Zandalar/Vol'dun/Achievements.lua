@@ -125,21 +125,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["npcID"] = 143255
 				]]--
 			}),
-			ach(12560, {	-- Explore Vol'dun
-				crit(1),		-- Atul'Aman
-				crit(2),		-- Darkwood Shoal
-				crit(3),		-- Port of Zem'lan
-				crit(4),		-- Redrock Harbor
-				crit(5),		-- Shatterstone Harbor
-				crit(6),		-- Slithering Gulch
-				crit(7),		-- Temple of Akunda
-				crit(8),		-- Terrace of the Devoted
-				crit(9),		-- The Bone Pit
-				crit(10),		-- The Brine Basin
-				crit(11),		-- The Cracked Coast
-				crit(12),		-- Tortaka Refuge
-				crit(13),		-- Whistlebloom Oasis
-			}),
+			explorationAch(12560),	-- Explore Vol'dun
 			petbattle(ach(13279, {	-- Family Battler
 				["collectible"] = false,
 				["g"] = {

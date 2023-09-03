@@ -106,20 +106,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					-- ["_npcs"] = { NPCID },
 				}),
 			}),
-			ach(12559, {	-- Explore Zuldazar
-				crit(1),		-- Atal'Dazar
-				crit(2),		-- Atal'Gral
-				crit(3),		-- Blood Gate
-				crit(4),		-- Dazar'alor
-				crit(5),		-- Dreadpearl Shallows
-				crit(6),		-- Garden of the Loa
-				crit(7),		-- Savagelands
-				crit(8),		-- The Sliver
-				crit(9),		-- Tusk Isle
-				crit(10),		-- Talanji's Rebuke
-				crit(11),		-- Xibala
-				crit(12),		-- Zeb'ahari
-			}),
+			explorationAch(12559),	-- Explore Zuldazar
 			petbattle(ach(13279, {	-- Family Battler
 				["collectible"] = false,
 				["g"] = {

@@ -108,23 +108,7 @@ root(ROOTS.Zones, {
 							["_quests"] = { 37136 },
 						}),
 					}),
-					ach(8942, {		-- Explore Nagrand
-						crit(1),		-- Ancestral Grounds
-						crit(2),		-- Broken Precipice
-						crit(3),		-- Gates of Grommashar
-						crit(4),		-- Hallvalor
-						crit(5),		-- Highmaul Harbor
-						crit(6),		-- Ironfist Harbor
-						crit(7),		-- Lok-rath
-						crit(8),		-- Mar'gok's Overwatch
-						crit(9),		-- Mok'gol Watchpost
-						crit(10),		-- Oshu'gun
-						crit(11),		-- Telaar
-						crit(12),		-- The Ring of Blood
-						crit(13),		-- The Ring of Trials
-						crit(14),		-- Throne of the Elements
-						crit(15),		-- Zangar Shore
-					}),
+					explorationAch(8942),	-- Explore Nagrand
 					achraw(9610,  {	-- History of Violence (Broken Precipice)
 						["description"] = "In order to get the relics, except the Bust, use Jewel of Transformation in the area and then break boulder piles.",
 						["g"] = {

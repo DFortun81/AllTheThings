@@ -26,24 +26,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					ach(6975, {	-- Explore Krasarang Wilds
-						crit(1),	-- Anglers Wharf
-						crit(2),	-- Cradle of Chi-Ji
-						crit(3),	-- Dojani River
-						crit(4),	-- Fallsong Village
-						crit(5),	-- Krasarang Cove
-						crit(6),	-- The Krasari Ruins
-						crit(7),	-- Nayeli Lagoon
-						crit(8),	-- Crane Wing Refuge
-						crit(9),	-- Ruins of Dojan
-						crit(10),	-- Ruins of Korja
-						crit(11),	-- Temple of the Red Crane
-						crit(12),	-- The Deepwild
-						crit(13),	-- The Forbidden Jungle
-						crit(14),	-- The Southern Isles
-						crit(15),	-- Unga Ingoo
-						crit(16),	-- Zhu's Watch
-					}),
+					explorationAch(6975),	-- Explore Krasarang Wilds
 					ach(7284, {	-- Is Another Man's Treasure
 						["collectible"] = false,
 						["g"] = {

@@ -13,26 +13,7 @@ root(ROOTS.Zones, {
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(7294),	-- A Taste of Things to Come (Halfhill)
-					ach(6969, {	-- Explore Valley of the Four Winds
-						crit(1),	-- Winds' Edge
-						crit(2),	-- Dustback Gorge
-						crit(3),	-- Gilded Fan
-						crit(4),	-- The Imperial Granary
-						crit(5),	-- Halfhill
-						crit(6),	-- Stoneplow
-						crit(7),	-- Kunzen Village
-						crit(8),	-- Mudmug's Place
-						crit(9),	-- Nesingwary Safari
-						crit(10),	-- Paoquan Hollow
-						crit(11),	-- Pools of Purity
-						crit(12),	-- Rumbling Terrace
-						crit(13),	-- Silken Fields
-						crit(14),	-- Singing Marshes
-						crit(15),	-- Stormstout Brewery
-						crit(16),	-- The Heartland
-						crit(17),	-- Thunderfoot Ranch
-						crit(18),	-- Zhu's Descent
-					}),
+					explorationAch(6969),	-- Explore Valley of the Four Winds
 					ach(6846, {	-- Fish Tales
 						["collectible"] = false,
 						["g"] = {

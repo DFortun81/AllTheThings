@@ -16,19 +16,7 @@ root(ROOTS.Zones, {
 					ach(7318),	-- A Taste of History
 					ach(7323),	-- Collateral Damage
 					ach(7320),	-- Dog Pile
-					ach(6979, {	-- Explore Vale of Eternal Blossoms
-						crit(1),	-- Ruins of Guo-Lai
-						crit(2),	-- Mistfall Village
-						crit(3),	-- Mogu'shan Palace
-						crit(4),	-- Setting Sun Garrison
-						crit(5),	-- The Golden Stair
-						crit(6),	-- Shrine of Seven Stars
-						crit(7),	-- The Golden Pagoda
-						crit(8),	-- Tu Shen Burial Ground
-						crit(9),	-- Shrine of Two Moons
-						crit(10),	-- Whitepetal Lake
-						crit(11),	-- The Five Sisters
-					}),
+					explorationAch(6979),	-- Explore Vale of Eternal Blossoms
 					ach(7317),	-- One Many Army
 					ach(7324, {	-- One Step at a Time
 						crit(1),	-- Complete The Crumbling Hall without taking any damage.

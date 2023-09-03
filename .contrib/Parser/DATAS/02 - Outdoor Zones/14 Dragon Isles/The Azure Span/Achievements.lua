@@ -195,19 +195,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			ach(16071, {	-- Dragon Glyphs: Zelthrak Outpost
 				["coord"] = { 52.9, 49.0, THE_AZURE_SPAN },
 			}),
-			ach(16460, {	-- Explore the Azure Span
-				crit(1),	-- Camp Antonidas
-				crit(2),	-- Azure Archives
-				crit(3),	-- Big Tree Hills
-				crit(4),	-- Brackenhide Hollow
-				crit(5),	-- Camp Nowhere
-				crit(6),	-- Cobalt Assembly
-				crit(7),	-- Iskaara
-				crit(8),	-- Snowhide Den
-				crit(9),	-- Theron's Watch
-				crit(10),	-- Three-Falls Lookout
-				crit(11),	-- Vakthros
-			}),
+			explorationAch(16460),	-- Explore the Azure Span
 			ach(16580, {	-- Lend a Helping Span
 				crit(1, {	-- WANTED: Frigellus
 					["sourceQuests"] = { 67036 },	-- Wrath of the Kirin Tor

@@ -133,23 +133,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					ach(8940, {		-- Explore Talador
-						crit(1),		-- Aruuna
-						crit(2),		-- Auchindoun
-						crit(3),		-- Duskfall Island
-						crit(4),		-- Court of Souls
-						crit(5),		-- Fort Wrynn
-						crit(6),		-- Gordal Fortress
-						crit(7),		-- Gul'rok
-						crit(8),		-- The Path of Glory
-						crit(9),		-- Orunai Coast
-						crit(10),		-- Anchorite's Sojourn
-						crit(11),		-- Shattrath City
-						crit(12),		-- Telmor
-						crit(13),		-- Tomb of Lights
-						crit(14),		-- Tuurem
-						crit(15),		-- Zangarra
-					}),
+					explorationAch(8940),		-- Explore Talador
 					ach(9486),		-- Goodness Gracious
 					ach(9638, {		-- Heralds of the Legion (Shattrath City)
 						crit(1),		-- Orumo the Observer

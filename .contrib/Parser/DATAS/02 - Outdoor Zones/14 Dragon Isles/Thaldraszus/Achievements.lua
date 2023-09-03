@@ -131,16 +131,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			ach(16105, {	-- Dragon Glyphs: Veiled Ossuary
 				["coord"] = { 67.1, 11.8, THALDRASZUS },
 			}),
-			ach(16518, {	-- Explore Thaldraszus
-				crit(1),	-- Valdrakken
-				crit(2),	-- Tyrhold
-				crit(3),	-- Gelikyr Post
-				crit(4),	-- South Hold Gate
-				crit(5),	-- Temporal Conflux
-				crit(6),	-- Algeth'ar Academy
-				crit(7),	-- Vault of the Incarnates
-				crit(8),	-- Veiled Ossuary
-			}),
+			explorationAch(16518),	-- Explore Thaldraszus
 			achraw(16634, {	-- Framing a New Perspective
 				["description"] = "Exact point in the world will be within a light pink beam of light when using the 'Selfie Camera MkII' near the proper location.",
 				["g"] = {

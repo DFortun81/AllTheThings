@@ -141,19 +141,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					-- ["_npcs"] = { NPCID },
 				}),
 			}),
-			ach(12556, {	-- Explore Tiragarde Sound
-				crit(1),		-- Anglepoint Wharf
-				crit(2),		-- Boralus
-				crit(3),		-- Fernwood Ridge
-				crit(4),		-- Freehold
-				crit(5),		-- Norwington Estate
-				crit(6),		-- Krakenbane Cove
-				crit(7),		-- Abandoned Junkheap
-				crit(8),		-- Kennings Lodge
-				crit(9),		-- The Wailing Tideway
-				crit(10),		-- Vigil Hill
-				crit(11),		-- Waning Glacier
-			}),
+			explorationAch(12556),	-- Explore Tiragarde Sound
 			petbattle(ach(13279, {	-- Family Battler
 				["collectible"] = false,
 				["g"] = {

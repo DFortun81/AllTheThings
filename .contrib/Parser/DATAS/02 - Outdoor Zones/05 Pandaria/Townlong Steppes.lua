@@ -11,19 +11,7 @@ root(ROOTS.Zones, {
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(7310),	-- Defender of Gods
-					ach(6977, {	-- Explore Townlong Steppes
-						crit(1),	-- Gao-Ran Battlefront
-						crit(2),	-- Kri'vess
-						crit(3),	-- Rensai's Watchpost
-						crit(4),	-- Niuzao Temple
-						crit(5),	-- Fire Camp Osul
-						crit(6),	-- Hatred's Vice
-						crit(7),	-- Shado-Pan Garrison
-						crit(8),	-- Shan'ze Dao
-						crit(9),	-- Sik'vess
-						crit(10),	-- Sra'vess
-						crit(11),	-- The Sumprushes
-					}),
+					explorationAch(6977),	-- Explore Townlong Steppes
 					ach(7309),	-- Fire in the Yaung-hole!
 					ach(7298, {	-- Getting Around with the Shado-Pan
 						crit(6),	-- Chao the Voice

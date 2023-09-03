@@ -55,19 +55,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 				}),
-				ach(10665, {	-- Explore Azsuna
-					crit(1),		-- Faronaar
-					crit(2),		-- Felblaze Ingress
-					crit(3),		-- The Greenway
-					crit(4),		-- Isle of the Watchers
-					crit(5),		-- Llothien Highlands
-					crit(6),		-- Lost Orchard
-					crit(7),		-- Nar'thalas
-					crit(8),		-- Oceanus Cove
-					crit(9),		-- Ruined Sanctum
-					crit(10),		-- Temple of Lights
-					crit(11),		-- Ley-Ruins of Zarkhenar
-				}),
+				explorationAch(10665),	-- Explore Azsuna
 				ach(11256),	-- Treasures of Azsuna
 			}),
 		}),

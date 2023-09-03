@@ -114,17 +114,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["sourceQuests"] = { 52130 },	-- Deadliest Cache: Carpe Diem
 				["races"] = ALLIANCE_ONLY,
 			}),
-			ach(12558, {	-- Explore Stormsong Valley
-				crit(1),		-- Brennadam
-				crit(2),		-- Briarback Kraul
-				crit(3),		-- Mariner's Strand
-				crit(4),		-- Warfang Hold
-				crit(5),		-- Deadwash
-				crit(6),		-- Fort Daelin
-				crit(7),		-- Sagehold
-				crit(8),		-- Shrine of the Storm
-				crit(9),		-- Millstone Hamlet
-			}),
+			explorationAch(12558),	-- Explore Stormsong Valley
 			ach(13045),		-- Every Day I'm Truffling
 			petbattle(ach(13279, {	-- Family Battler
 				["collectible"] = false,

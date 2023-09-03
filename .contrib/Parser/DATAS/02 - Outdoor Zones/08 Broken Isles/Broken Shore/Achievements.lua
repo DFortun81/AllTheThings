@@ -68,16 +68,7 @@ root(ROOTS.Zones, {
 					crit(9),		-- The Creeping Grotto
 				}),
 				ach(11737),	-- Disrupting the Nether
-				ach(11543, {	-- Explore Broken Shore
-					crit(1),	-- Deliverance Point
-					crit(2),	-- Deadwood Landing
-					crit(3),	-- Soul Ruin
-					crit(4),	-- Broken Valley
-					crit(5),	-- The Weeping Terrace
-					crit(6),	-- Tomb of Sargeras
-					crit(7),	-- Felrage Strand
-					crit(8),	-- Felfire Pass
-				}),
+				explorationAch(11543),	-- Explore Broken Shore
 				ach(11738),	-- It'll Nether Happen
 				ach(11735),	-- Take Command
 			}),

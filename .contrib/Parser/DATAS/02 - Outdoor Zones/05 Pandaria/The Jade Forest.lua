@@ -23,25 +23,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					ach(6351, {	-- Explore Jade Forest
-						crit(1),	-- Tian Monastery
-						crit(2),	-- Dawn's Blossom
-						crit(3),	-- Dreamer's Pavillion
-						crit(4),	-- Emperor's Omen
-						crit(5),	-- Pearl Lake
-						crit(6),	-- Grookin Hill
-						crit(7),	-- Greenstone Quarry
-						crit(8),	-- Nectarbreeze Orchard
-						crit(9),	-- Camp Nooka Nooka
-						crit(10),	-- Terrace of Ten Thunders
-						crit(11),	-- Serpent's Heart
-						crit(12),	-- Slingtail Pits
-						crit(13),	-- Temple of the Jade Serpent
-						crit(14),	-- The Arboretum
-						crit(15),	-- Garrosh'ar Point
-						crit(16),	-- Windward Isle
-						crit(17),	-- Honeydew Village
-					}),
+					explorationAch(6351),	-- Explore Jade Forest
 					ach(7290),	-- How To Strain Your Dragon
 					ach(7291),	-- In a Trail of Smoke
 					ach(7284, {	-- Is Another Man's Treasure

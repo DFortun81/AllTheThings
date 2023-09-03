@@ -253,22 +253,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					ach(6976, {	-- Explore Kun-Lai Summit
-						crit(1),	-- Binan Village
-						crit(2),	-- Firebough Nook
-						crit(3),	-- Gate of the August Celestials
-						crit(4),	-- Isle of Reckoning
-						crit(5),	-- Kota Peak
-						crit(6),	-- Mogujia
-						crit(7),	-- Mount Neverest
-						crit(8),	-- Muskpaw Ranch
-						crit(9),	-- Peak of Serenity
-						crit(10),	-- Shado-Pan Monastery
-						crit(11),	-- Temple of the White Tiger
-						crit(12),	-- The Burlap Trail
-						crit(13),	-- Valley of Emperors
-						crit(14),	-- Zouchin Village
-					}),
+					explorationAch(6976),	-- Explore Kun-Lai Summit
 					ach(7286, {	-- Finish Them! (Temple of the White Tiger)
 						crit(1),	-- Brewmaster Chani
 						crit(2),	-- Lun-Chi

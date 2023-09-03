@@ -280,20 +280,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					["objectID"] = 297632,
 				}),
 			}),
-			ach(12557, {	-- Explore Drustvar
-				crit(1),		-- Arom's Stand
-				crit(2),		-- Barrowknoll Cemetery
-				crit(3),		-- Carver's Harbor
-				crit(4),		-- Corlain
-				crit(5),		-- Crimson Forest
-				crit(6),		-- Fallhaven
-				crit(7),		-- Fletcher's Hollow
-				crit(8),		-- Gol Koval
-				crit(9),		-- Highroad Pass
-				crit(10),		-- Western Watch
-				crit(11),		-- Iceveil Glacier
-				crit(12),		-- Waycrest Manor
-			}),
+			explorationAch(12557),	-- Explore Drustvar
 			ach(13082, {	-- Everything Old Is New Again
 				["races"] = ALLIANCE_ONLY,
 				["description"] = "Turn in all items at 44.90, 27.41.",

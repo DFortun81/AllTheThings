@@ -174,25 +174,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					ach(9612),		-- Eggs in One Basket
-					ach(8941, {		-- Explore Spires of Arak
-						crit(1),		-- Skettis
-						crit(2),		-- The Howling Crag
-						crit(3),		-- The Writhing Mire
-						crit(4),		-- Pinchwhistle Point
-						crit(5),		-- Veil Zekk
-						crit(6),		-- Veil Akraz
-						crit(7),		-- Southport
-						crit(8),		-- Windswept Terrace
-						crit(9),		-- Terrace of Dawn
-						crit(10),		-- Sethekk Hollow
-						crit(11),		-- Bladefist Hold
-						crit(12),		-- Admiral Taylor's Garrison
-						crit(13),		-- Lost Veil Anzu
-						crit(14),		-- Pinchwhistle Gearworks
-						crit(15),		-- Ravenskar
-						crit(16),		-- Bloodmane Valley
-						crit(17),		-- Axefall
-					}),
+					explorationAch(8941),		-- Explore Spires of Arak
 					ach(9613),		-- Fish Gotta Swim, Birds Gotta Eat
 					ach(9601, {		-- King of the Monsters (Lost Veil Anzu)
 						crit(1, {	-- Morphed Sentient

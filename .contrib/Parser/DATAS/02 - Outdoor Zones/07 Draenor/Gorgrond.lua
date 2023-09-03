@@ -97,22 +97,7 @@ root(ROOTS.Zones, {
 						crit(9),	-- Hunter Bal'ra
 					}),
 					ach(9667),		-- Burn It to the Ground (Everbloom Wilds)
-					ach(8939, {		-- Explore Gorgrond
-						crit(1),		-- Bastion Rise
-						crit(2),		-- Beastwatch
-						crit(3),		-- Grimrail Depot
-						crit(4),		-- Crimson Fen
-						crit(5),		-- Deadgrin
-						crit(6),		-- Everbloom Wilds
-						crit(7),		-- Evermorn Springs
-						crit(8),		-- Gronn Canyon
-						crit(9),		-- Highpass
-						crit(10),		-- Iyun Weald
-						crit(11),		-- Stonemaul Arena
-						crit(12),		-- Tangleheart
-						crit(13),		-- The Iron Approach
-						crit(14),		-- The Pit
-					}),
+					explorationAch(8939),		-- Explore Gorgrond
 					ach(9655, {		-- Fight the Power (The Pit)
 						crit(1),		-- Maniacal Madgard
 						crit(2),		-- Defector Dazgo

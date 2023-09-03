@@ -35,7 +35,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["timeline"] = { "added 4.0.3" },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(750, {	-- Explore Northern Barrens
+				explorationAch(750, {	-- Explore Northern Barrens
 					["timeline"] = { "added 4.0.3" },
 				}),
 				ach(4933, {	-- Northern Barrens Quests

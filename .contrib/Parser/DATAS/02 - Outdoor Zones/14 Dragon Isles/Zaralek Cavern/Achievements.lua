@@ -225,16 +225,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 75417 },	-- Symbol of Hope
 				}),
 			}),
-			ach(17766, {	-- Explore Zaralek Cavern
-				crit(1),	-- Aberrus Approach
-				crit(2),	-- Buried Vault
-				crit(3),	-- Glimmerogg
-				crit(4),	-- Loamm
-				crit(5),	-- Nal ks'kol
-				crit(6),	-- Sulfur Wastes
-				crit(7),	-- The Throughway
-				crit(8),	-- Zaqali Caldera
-			}),
+			explorationAch(17766),	-- Explore Zaralek Cavern
 			petbattle(ach(17934, {	-- Family Battler of Zaralek Cavern
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",

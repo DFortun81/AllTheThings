@@ -205,20 +205,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 				},
 			}),
-			ach(14663, {	-- Explore The Maw
-				crit(1),		-- Calcis
-				crit(2),		-- Cocyrus
-				crit(3),		-- Crucible of the Damned
-				crit(4),		-- Desmotaeron
-				crit(5),		-- Gorgoa, River of Souls
-				crit(6),		-- Marrow's Coppice
-				crit(7),		-- Perdition Hold
-				crit(8),		-- Planes of Torment
-				crit(9),		-- Ravener's Lament
-				crit(10),		-- The Altar of Damnation
-				crit(11),		-- The Beastwarrens
-				crit(12),		-- Zovaal's Cauldron
-			}),
+			explorationAch(14663),	-- Explore The Maw
 			achraw(14895, {	-- 'Ghast Five
 				crit(1, {		-- Vessel of Unfortunate Spirits
 					["provider"] = { "i", 184620 },
