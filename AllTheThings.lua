@@ -8085,7 +8085,7 @@ app.BaseAchievementCriteria = app.BaseObjectFields(criteriaFields, "BaseAchievem
 
 local criteriaFieldsWithIndex = RawCloneData(criteriaFields);
 local function GetAchievementCriteriaInfoWithoutThrowingADumbassError(achievementID, criteriaID, hidden)
-	if criteriaID <= GetAchievementNumCriteria(achievementID) then
+	if criteriaID <= GetAchievementNumCriteria(achievementID, true) then
 		return GetAchievementCriteriaInfo(achievementID, criteriaID, hidden);
 	else
 		app.print("Invalid Achievement Criteria Index", achievementID, criteriaID);
