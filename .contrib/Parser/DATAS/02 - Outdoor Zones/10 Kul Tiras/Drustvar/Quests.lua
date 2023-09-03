@@ -1321,6 +1321,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 27.5, 58.8, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 1045 },	-- Thros, The Blighted Lands
+				["groups"] = {
+					ach(12997, {	-- The Pride of Kul Tiras
+						["races"] = ALLIANCE_ONLY,
+					}),
+				},
 			}),
 			q(48504, {	-- Through the Old Roads
 				["provider"] = { "n", 135021 },	-- Inquisitor Cleardawn

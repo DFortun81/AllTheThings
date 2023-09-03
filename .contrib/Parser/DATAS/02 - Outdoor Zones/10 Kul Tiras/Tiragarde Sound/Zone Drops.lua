@@ -4,6 +4,20 @@
 
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(TIRAGARDE_SOUND, {
+		n(ZONE_DROPS, {
+			i(162580, {	-- Fading Treasure Map
+				["questID"] = 52854,
+			}),
+			i(162584, {	-- Singed Treasure Map
+				["questID"] = 52860,
+			}),
+			i(162571, {	-- Soggy Treasure Map
+				["questID"] = 52853,
+			}),
+			i(162581, {	-- Yellowed Treasure Map
+				["questID"] = 52859,
+			}),
+		}),
 		n(ZONE_DROPS, bubbleDown({["bonusID"] = 4796, }, {
 			i(159184),	-- Foxhollow Circlet
 			i(159189),	-- Foxhollow Amice

@@ -131,6 +131,11 @@ root(ROOTS.ExpansionFeatures,
 							["sourceQuests"] = { 47186 },	-- Sanctum of Sages
 							["coord"] = { 68.1, 21.9, BORALUS },
 							["provider"] = { "n", 121235 },	-- Taelia
+							["groups"] = {
+								ach(12582, {	-- Come Sail Away
+									["races"] = ALLIANCE_ONLY,
+								}),
+							},
 						}),
 						q(52654, {	-- The War Campaign
 							["sourceQuests"] = { 47189 },	-- A Nation Divided

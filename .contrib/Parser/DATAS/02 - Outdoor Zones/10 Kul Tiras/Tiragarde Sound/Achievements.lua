@@ -334,142 +334,35 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			}),
 			pvp(ach(12577)),	-- Tour of Duty: Tiragarde Sound
 			ach(12852, {	-- Treasures of Tiragarde Sound
-				-- TODO: use _quests and move objects to /Treasures.lua
-				-- crit(1, {	-- Hay Covered Chest
-				-- 	["_quests"] = { QUESTID },
-				-- }),
-				-- crit(2, {	-- Cutwater Treasure Chest
-				-- 	["_quests"] = { QUESTID },
-				-- }),
-				-- crit(3, {	-- Precarious Noble Cache
-				-- 	["_quests"] = { QUESTID },
-				-- }),
-				-- crit(4, {	-- Forgotten Smuggler's Stash
-				-- 	["_quests"] = { QUESTID },
-				-- }),
-				-- crit(5, {	-- Scrimshaw Cache
-				-- 	["_quests"] = { QUESTID },
-				-- }),
-				-- crit(6, {	-- Secret of the Depths
-				-- 	["_quests"] = { QUESTID },
-				-- }),
-				-- crit(7, {	-- Soggy Treasure Map
-				-- 	["_quests"] = { QUESTID },
-				-- }),
-				-- crit(8, {	-- Faded Treasure Map
-				-- 	["_quests"] = { QUESTID },
-				-- }),
-				-- crit(9, {	-- Yellowed Treasure Map
-				-- 	["_quests"] = { QUESTID },
-				-- }),
-				-- crit(10, {	-- Singed Treasure Map
-				-- 	["_quests"] = { QUESTID },
-				-- }),
-				o(281397, {	-- Cutwater Treasure Chest [Localized]
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
-					["coord"] = { 72.5, 58.1, TIRAGARDE_SOUND },
-					["questID"] = 50442,
-					["g"] = {
-						crit(2, {	-- Cutwater Treasure Chest
-							["achievementID"] = 12852
-						}),
-						i(155381),  -- Cutwater-Captain's Sapphire Ring
-					},
+				crit(41012, {	-- Hay Covered Chest
+					["_quests"] = { 49963 },	-- Hay Covered Chest
 				}),
-				o(293962, {	-- Precarious Noble Cache [Localized]
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
-					["coord"] = { 56.0, 33.1, TIRAGARDE_SOUND },
-					["questID"] = 52866,
-					["g"] = {
-						crit(3, {	-- Precarious Noble Cache
-							["achievementID"] = 12852
-						}),
-					},
+				crit(41013, {	-- Cutwater Treasure Chest
+					["_quests"] = { 50442 },	-- Cutwater Treasure Chest
 				}),
-				o(293964, {	-- Forgotten Smuggler's Stash [Localized]
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
-					["coord"] = { 61.7, 62.7, TIRAGARDE_SOUND },
-					["questID"] = 52867,
-					["g"] = {
-						crit(4, {	-- Forgotten Smuggler's Stash
-							["achievementID"] = 12852
-						}),
-					},
+				crit(41014, {	-- Precarious Noble Cache
+					["_quests"] = { 52866 },	-- Precarious Noble Cache
 				}),
-				o(293965, {	-- Scrimshaw Cache [Localized]
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
-					["coord"] = { 72.6, 21.5, TIRAGARDE_SOUND },
-					["questID"] = 52870,
-					["g"] = {
-						crit(5, {	-- Scrimshaw Cache
-							["achievementID"] = 12852
-						}),
-					},
+				crit(41015, {	-- Forgotten Smuggler's Stash
+					["_quests"] = { 52867 },	-- Forgotten Smuggler's Stash
 				}),
-				i(162571, {	-- Soggy Treasure Map
-					["questID"] = 52853,
-					["g"] = {
-						o(293852, {	-- Buried Treasure Chest
-							["questID"] = 52807,
-							["coord"] = { 55.01, 46.01, TIRAGARDE_SOUND },
-							["description"] = "At the bottom of the ocean.",
-							["icon"] = "Interface\\Icons\\garrison_bronzechest",
-							["g"] = {
-								crit(7, {	-- Soggy Treasure Map
-									["achievementID"] = 12852
-								}),
-							},
-						}),
-					},
+				crit(41016, {	-- Scrimshaw Cache
+					["_quests"] = { 52870 },	-- Scrimshaw Cache
 				}),
-				i(162580, {	-- Fading Treasure Map
-					["questID"] = 52854,
-					["g"] = {
-						o(293880, {	-- Buried Treasure Chest
-							["questID"] = 52833,
-							["coord"] = { 29.26, 25.35, TIRAGARDE_SOUND },
-							["icon"] = "Interface\\Icons\\garrison_bronzechest",
-							["g"] = {
-								crit(8, {	-- Faded Treasure Map
-									["achievementID"] = 12852
-								}),
-							},
-						}),
-					},
+				crit(41017, {	-- Secret of the Depths
+					["_quests"] = { 52195 },	-- Secrets of the Depths (Gem of Acquiescence)
 				}),
-				i(162581, {	-- Yellowed Treasure Map
-					["questID"] = 52859,
-					["g"] = {
-						o(293881, {	-- Buried Treasure Chest
-							["questID"] = 52836,
-							["coord"] = { 90.49, 75.53, TIRAGARDE_SOUND },
-							["icon"] = "Interface\\Icons\\garrison_bronzechest",
-							["g"] = {
-								crit(9, {	-- Yellowed Treasure Map
-									["achievementID"] = 12852
-								}),
-							},
-						}),
-					},
+				crit(41018, {	-- Soggy Treasure Map
+					["_quests"] = { 52807 },	-- Soggy Treasure Map
 				}),
-				i(162584, {	-- Singed Treasure Map
-					["questID"] = 52860,
-					["g"] = {
-						o(293884, {	-- Buried Treasure Chest
-							["questID"] = 52845,
-							["coord"] = { 48.96, 37.75, TIRAGARDE_SOUND },
-							["icon"] = "Interface\\Icons\\garrison_bronzechest",
-							["g"] = {
-								crit(10, {	-- Singed Treasure Map
-									["achievementID"] = 12852
-								}),
-							},
-						}),
-					},
+				crit(41019, {	-- Faded Treasure Map
+					["_quests"] = { 52833 },	-- Faded Treasure Map
 				}),
-				crit(6, {	-- Secrets of the Deep
-					["description"] = "This can be found in Boralus and requires that you find a number of scrolls before finishing the criteria.",
-					["coord"] = { 61.94, 84.5, TIRAGARDE_SOUND },
+				crit(41020, {	-- Yellowed Treasure Map
+					["_quests"] = { 52836 },	-- Yellowed Treasure Map
+				}),
+				crit(41021, {	-- Singed Treasure Map
+					["_quests"] = { 52845 },	-- Singed Treasure Map
 				}),
 			}),
 		}),
