@@ -1800,9 +1800,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(503, {  -- Lord Malathrom
 					-- #if BEFORE 4.0.3
 					["description"] = "Spawns in the Dawning Wood Catacombs",
+					-- #elseif AFTER 10.1.7
+					["description"] = "Spawns in the Dawning Wood Catacombs",
 					-- #endif
 					["coord"] = { 25.6, 30.2, DUSKWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 					["groups"] = {
 						i(4462, {	-- Cloak of Rot
 							["timeline"] = { "removed 4.0.3" },

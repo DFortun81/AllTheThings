@@ -2420,8 +2420,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(ZONE_DROPS, {
 				i(2620, {	-- Augural Shroud
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 03.09.2023 Data Discord
+					-- #if BEFORE 4.0.3
 					["cr"] = 4684,	-- Nether Sorceress
+					["coords"] = {
+						{ 52.2, 83.6, DESOLACE },
+						{ 48.2, 75.8, DESOLACE },
+						{ 53.2, 71.0, DESOLACE },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 4679,	-- Nether Maiden
+					["coords"] = {
+						{ 52.6, 83.8, DESOLACE },
+						{ 50.6, 77.0, DESOLACE },
+						{ 50.2, 71.6, DESOLACE },
+					},
+					-- #endif
 				}),
 				o(176582, {	-- Shellfish Trap
 					["coords"] = {

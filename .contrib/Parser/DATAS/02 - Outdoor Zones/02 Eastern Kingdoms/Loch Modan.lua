@@ -1465,7 +1465,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(1938, {	-- Block Mallet
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 						}),
 						i(1215, {	-- Support Girdle
 							["timeline"] = { "removed 4.0.3" },
