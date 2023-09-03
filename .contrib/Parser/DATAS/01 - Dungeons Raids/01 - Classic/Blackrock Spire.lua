@@ -1344,7 +1344,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						-- #if ANYCLASSIC
 						["description"] = "This item seems to have disappeared in Classic. If you get this item in Classic Era or Wrath Classic, please screenshot this and send it directly to @crieve on Discord!",
 						-- #endif
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { "removed 2.0.1", "added 10.1.7" },
 					}),
 					i(13177),	-- Talisman of Evasion
 					i(13179),	-- Brazecore Armguards
@@ -1589,7 +1589,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						-- #if ANYCLASSIC
 						["description"] = "This item seems to have disappeared in Classic. If you get this item in Classic Era or Wrath Classic, please screenshot this and send it directly to @crieve on Discord!",
 						-- #endif
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { "removed 2.0.1", "added 10.1.7" },
 					}),
 					i(13163),	-- Relentless Scythe
 					i(13161),	-- Trindlehaven Staff
