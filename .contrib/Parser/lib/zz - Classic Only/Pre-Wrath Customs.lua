@@ -1285,16 +1285,6 @@ root("Achievements", {
 				["requireSkill"] = COOKING,
 				["rank"] = 25,
 			}),
-			applyclassicphase(WRATH_PHASE_ONE, ach(1780, {	-- Second That Emotion
-				["providers"] = {
-					{ "i", 43492 },	-- Haunted Herring
-					{ "i", 43491 },	-- Bad Clams
-					{ "i", 43490 },	-- Tasty Cupcake
-					{ "i", 43488 },	-- Last Weeks Mammoth
-				},
-				["timeline"] = { "added 3.0.1" },
-				["requireSkill"] = COOKING,
-			})),
 			ach(1796, {	-- Short Order Cook
 				["timeline"] = { "added 3.0.1" },
 				["requireSkill"] = COOKING,
