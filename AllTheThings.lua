@@ -8085,7 +8085,7 @@ app.BaseAchievementCriteria = app.BaseObjectFields(criteriaFields, "BaseAchievem
 
 local criteriaFieldsWithIndex = RawCloneData(criteriaFields);
 local function GetAchievementCriteriaInfoWithoutThrowingADumbassError(achievementID, criteriaID, hidden)
-	if criteriaID <= GetAchievementNumCriteria(achievementID, true) then
+	if criteriaID <= GetAchievementNumCriteria(achievementID, hidden) then
 		return GetAchievementCriteriaInfo(achievementID, criteriaID, hidden);
 	else
 		app.print("Invalid Achievement Criteria Index", achievementID, criteriaID);
@@ -8094,13 +8094,12 @@ end
 criteriaFieldsWithIndex.GetInfo = function() return GetAchievementCriteriaInfoWithoutThrowingADumbassError; end;
 app.BaseAchievementCriteriaWithIndex = app.BaseObjectFields(criteriaFieldsWithIndex, "BaseAchievementCriteriaWithIndex");
 app.CreateAchievementCriteria = function(id, t, init)
+	t = setmetatable(constructor(id, t, "criteriaID"), id < 500 and app.BaseAchievementCriteriaWithIndex or app.BaseAchievementCriteria);
 	if init then
-		t = setmetatable(constructor(id, t, "criteriaID"), id < 500 and app.BaseAchievementCriteriaWithIndex or app.BaseAchievementCriteria);
 		GetParentAchievementInfo(t, "");
 		-- app.PrintDebug("CreateAchievementCriteria.Init",t.hash)
-		return t;
 	end
-	return setmetatable(constructor(id, t, "criteriaID"), id < 500 and app.BaseAchievementCriteriaWithIndex or app.BaseAchievementCriteria);
+	return t;
 end
 
 local HarvestedAchievementDatabase = {};

@@ -38,19 +38,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						crit(1, {	-- Pond Predators
+						crit(17759, {	-- Pond Predators
 							["_quests"] = { 29345 },
 						}),
-						crit(2, {	-- The Ring's the Thing
+						crit(17760, {	-- The Ring's the Thing
 							["_quests"] = { 29346 },
 						}),
-						crit(3, {	-- The Race to Restock
+						crit(17761, {	-- The Race to Restock
 							["_quests"] = { 29348 },
 						}),
-						crit(4, {	-- Craving Crayfish
+						crit(17762, {	-- Craving Crayfish
 							["_quests"] = { 29349 },
 						}),
-						crit(5, {	-- Shiny Baubles
+						crit(17763, {	-- Shiny Baubles
 							["_quests"] = { 29354 },
 						}),
 					},
@@ -60,19 +60,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						crit(2, {	-- "Magic" Mushrooms
+						crit(17734, {	-- "Magic" Mushrooms
 							["_quests"] = { 29362 },
 						}),
-						crit(4, {	-- Corn Mash
+						crit(17736, {	-- Corn Mash
 							["_quests"] = { 29364 },
 						}),
-						crit(3, {	-- Mulgore Spice Bread
+						crit(17735, {	-- Mulgore Spice Bread
 							["_quests"] = { 29363 },
 						}),
-						crit(5, {	-- Perfectly Picked Portions
+						crit(17737, {	-- Perfectly Picked Portions
 							["_quests"] = { 29365 },
 						}),
-						crit(1, {	-- Pining for Nuts
+						crit(17733, {	-- Pining for Nuts
 							["_quests"] = { 29358 },
 						}),
 					},

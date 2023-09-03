@@ -166,20 +166,27 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 				["difficulties"] = { 8, MYTHIC_DUNGEON },
 				["lvl"] = 120,
 				["g"] = {
-					ach(12270),	-- Bringing Hexy Back
+					n(ACHIEVEMENTS, {
+						ach(12270, {	-- Bringing Hexy Back
+							crit(38504, {	-- Vol'kaal defeated
+								["_encounter"] = { 2036, MYTHIC_DUNGEON },
+							}),
+							crit(38505, {	-- Priestess Alun'za defeated
+								["_encounter"] = { 2082, MYTHIC_DUNGEON },
+							}),
+							crit(38506, {	-- Rezan defeated
+								["_encounter"] = { 2083, MYTHIC_DUNGEON },
+							}),
+							crit(38507, {	-- Yazma defeated
+								["_encounter"] = { 2030, MYTHIC_DUNGEON },
+							}),
+						}),
+					}),
+					
 					e(2082, {	-- Priestess Alun'za
 						["crs"] = { 122967 },	-- Priestess Alun'za
 						["g"] = {
 							ach(12272),	-- Gold Fever
-							-- NOTE:: blizzard switched boss criteria numbers for horde and alliance here [Pr3vention]
-							crit(2, {	-- Vol'kaal defeated
-								["achievementID"] = 12270,	-- Bringing Hexy Back
-								["races"] = ALLIANCE_ONLY,
-							}),
-							crit(1, {	-- Vol'kaal defeated
-								["achievementID"] = 12270,	-- Bringing Hexy Back
-								["races"] = HORDE_ONLY,
-							}),
 							i(158321),	-- Wand of Zealous Purification
 							i(158322),	-- Aureus Vessel
 							i(158309),	-- Wristlinks of Alchemical Transfusion
@@ -194,15 +201,6 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					e(2036, {	-- Vol'kaal
 						["crs"] = { 122965 },	-- Vol'kaal
 						["g"] = {
-							-- NOTE:: blizzard switched boss criteria numbers for horde and alliance here [Pr3vention]
-							crit(1, {	-- Priestess Alun'za defeated
-								["achievementID"] = 12270,	-- Bringing Hexy Back
-								["races"] = ALLIANCE_ONLY,
-							}),
-							crit(2, {	-- Priestess Alun'za defeated
-								["achievementID"] = 12270,	-- Bringing Hexy Back
-								["races"] = HORDE_ONLY,
-							}),
 							i(159632),	-- Adulation Enforcer
 							i(158375),	-- Drape of the Loyal Vassal
 							i(158348),	-- Wraps of Everliving Fealty
@@ -215,9 +213,6 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					e(2083, {	-- Rezan
 						["crs"] = { 122963 },	-- Rezan
 						["g"] = {
-							crit(3, {	-- Rezan defeated
-								["achievementID"] = 12270,	-- Bringing Hexy Back
-							}),
 							i(168139),	-- Long Regal Sinew (LW reagent, has the highest drop chance from this boss)
 							i(160269),	-- Soulrending Claw
 							i(158711),	-- Hallowed Ossein Longbow
@@ -236,9 +231,6 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 							ach(12826),	-- Mythic: Atal'Dazar
 							ach(13002),	-- Mythic: Atal'Dazar Guild Run
 							ach(12273),	-- It's Lit!
-							crit(4, {	-- Yazma defeated
-								["achievementID"] = 12270,	-- Bringing Hexy Back
-							}),
 							i(162520),	-- Recipe: Mystical Cauldron (Rank 2)
 							i(158323),	-- Soulrender's Fang
 							i(159358),	-- Coif of the Court Spider

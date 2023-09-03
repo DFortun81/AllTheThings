@@ -43,13 +43,22 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(163715),	-- Forbidden Sea Shanty of Fruit Counting
 				},
 			}),
-			o(293962, {	-- Precarious Noble Cache
-				["questID"] = 52866,	-- Precarious Noble Cache
-				["coord"] = { 56.0, 33.1, TIRAGARDE_SOUND },
+			o(279750, {	-- Hay Covered Chest
+				["sourceQuest"] = 49983,	-- Ride Horse Back
+				["coord"] = { 67.4, 51.7, TIRAGARDE_SOUND },
+				["crs"] = { 131453 },	-- Roan Berthold
+				["questID"] = 49963,
+				["g"] = {
+					i(155571),	-- Garyl's Riding Blanket
+				},
 			}),
 			o(293964, {	-- Forgotten Smuggler's Stash
 				["questID"] = 52867,	-- Forgotten Smuggler's Stash
 				["coord"] = { 61.7, 62.7, TIRAGARDE_SOUND },
+			}),
+			o(293962, {	-- Precarious Noble Cache
+				["questID"] = 52866,	-- Precarious Noble Cache
+				["coord"] = { 56.0, 33.1, TIRAGARDE_SOUND },
 			}),
 			o(297934, {	-- Scoundrel's Songbook
 				["questID"] = 53411,	-- Shanty of the Horse [Criteria]
