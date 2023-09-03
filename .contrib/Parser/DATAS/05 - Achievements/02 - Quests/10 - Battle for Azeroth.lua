@@ -235,7 +235,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 					})),
 				})),
 				a(ach(12997)),	-- The Pride of Kul Tiras
-				crit(3),		-- A Nation United
 			})),
 			a(ach(13467, {	-- Tides of Vengeance (A)
 				crit(1),		-- War Marches On
