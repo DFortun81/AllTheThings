@@ -117,58 +117,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				["sym"] = {{ "achievement_criteria" }},
 				["maps"] = ALLIANCE_PILGRIM_MAPS,
 				["races"] = ALLIANCE_ONLY,
-				--[[
-				["groups"] = {
-					crit(1),	-- Candied Sweet Potato
-					crit(2),	-- Cranberry Chutney
-					crit(3),	-- Pumpkin Pie
-					crit(4),	-- Slow-Roasted Turkey
-					crit(5),	-- Spice Bread Stuffing
-				},
-				]]--
 			}),
 			ach(3577, {	-- Now We're Cookin' (H)
 				["timeline"] = { "added 3.2.2.10505" },
 				["sym"] = {{ "achievement_criteria" }},
 				["maps"] = HORDE_PILGRIM_MAPS,
 				["races"] = HORDE_ONLY,
-				--[[
-				["groups"] = {
-					crit(1),	-- Candied Sweet Potato
-					crit(2),	-- Cranberry Chutney
-					crit(3),	-- Pumpkin Pie
-					crit(4),	-- Slow-Roasted Turkey
-					crit(5),	-- Spice Bread Stuffing
-				},
-				]]--
 			}),
 			ach(3556, {	-- Pilgrim's Paunch (A)
 				["timeline"] = { "added 3.2.2.10505" },
 				["sym"] = {{ "achievement_criteria" }},
 				["maps"] = ALLIANCE_PILGRIM_MAPS,
 				["races"] = ALLIANCE_ONLY,
-				--[[
-				["groups"] = {
-					crit(1),	-- Darnassus
-					crit(2),	-- The Exodar
-					crit(3),	-- Ironforge
-					crit(4),	-- Stormwind
-				},
-				]]--
 			}),
 			ach(3557, {	-- Pilgrim's Paunch (H)
 				["timeline"] = { "added 3.2.2.10505" },
 				["sym"] = {{ "achievement_criteria" }},
 				["maps"] = HORDE_PILGRIM_MAPS,
 				["races"] = HORDE_ONLY,
-				--[[
-				["groups"] = {
-					crit(1),	-- Orgrimmar
-					crit(2),	-- Silvermoon City
-					crit(3),	-- Thunder Bluff
-					crit(4),	-- Undercity
-				},
-				]]--
 			}),
 			ach(3580, {	-- Pilgrim's Peril (A)
 				["timeline"] = { "added 3.2.2.10505" },
@@ -180,14 +146,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					{ "i", 46824, 1 },	-- Pilgrim's Robe
 				},
 				["races"] = ALLIANCE_ONLY,
-				--[[
-				["groups"] = {
-					crit(1),	-- Orgrimmar
-					crit(2),	-- Silvermoon City
-					crit(3),	-- Thunder Bluff
-					crit(4),	-- Undercity
-				},
-				]]--
 			}),
 			ach(3581, {	-- Pilgrim's Peril (H)
 				["timeline"] = { "added 3.2.2.10505" },
@@ -199,14 +157,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					{ "i", 46824, 1 },	-- Pilgrim's Robe
 				},
 				["races"] = HORDE_ONLY,
-				--[[
-				["groups"] = {
-					crit(1),	-- Darnassus
-					crit(2),	-- The Exodar
-					crit(3),	-- Ironforge
-					crit(4),	-- Stormwind
-				},
-				]]--
 			}),
 			ach(3596, {	-- Pilgrim's Progress (A)
 				["timeline"] = { "added 3.2.2.10505" },
@@ -256,15 +206,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				["timeline"] = { "added 3.2.2.10505" },
 				["sym"] = {{ "achievement_criteria" }},
 				["maps"] = ALL_PILGIM_MAPS,
-				--[[
-				["groups"] = {
-					crit(1),	-- Candied Sweet Potatoes
-					crit(2),	-- Cranberry Chutney
-					crit(3),	-- Pumpkin Pie
-					crit(4),	-- Slow-Roasted Turkey
-					crit(5),	-- Spice Bread Stuffing
-				},
-				]]--
 			}),
 			ach(3582, {	-- Terokkar Turkey Time
 				["timeline"] = { "added 3.2.2.10505" },
@@ -294,20 +235,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				},
 				["timeline"] = { "added 3.2.2.10505" },
 				["sym"] = {{ "achievement_criteria" }},
-				--[[
-				["groups"] = {
-					crit(1),	-- Blood Elf Rogue
-					crit(2),	-- Dwarf Rogue
-					crit(3),	-- Gnome Rogue
-					crit(4),	-- Goblin Rogue
-					crit(5),	-- Human Rogue
-					crit(6),	-- Night Elf Rogue
-					crit(7),	-- Orc Rogue
-					crit(8),	-- Troll Rogue
-					crit(9),	-- Undead Rogue
-					crit(10),	-- Worgen Rogue
-				},
-				]]--
 			}),
 		}),
 		-- #endif

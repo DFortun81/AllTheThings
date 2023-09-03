@@ -5,23 +5,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	n(ACHIEVEMENTS, {
 		------ Epic ------
 		ach(18366, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Draconically Epic
-			--[[
-			crit(1),	-- Head
-			crit(2),	-- Neck
-			crit(3),	-- Shoulder
-			crit(4),	-- Chest
-			crit(5),	-- Waist
-			crit(6),	-- Legs
-			crit(7),	-- Feet
-			crit(8),	-- Wrist
-			crit(9),	-- Hands
-			crit(10),	-- Left Ring
-			crit(11),	-- Right Ring
-			crit(12),	-- First Trinket
-			crit(13),	-- Second Trinket
-			crit(14),	-- Cloak
-			crit(15),	-- Weapon
-			]]--
+			["sym"] = {{"achievement_criteria"}},
 		})),
 		ach(14797, {	-- Epic [Shadowlands]
 			["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_1_5 },
@@ -46,23 +30,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 		------ Superior ------
 		ach(18365, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Draconically Superior
-			--[[
-			crit(1),	-- Head
-			crit(2),	-- Neck
-			crit(3),	-- Shoulder
-			crit(4),	-- Chest
-			crit(5),	-- Waist
-			crit(6),	-- Legs
-			crit(7),	-- Feet
-			crit(8),	-- Wrist
-			crit(9),	-- Hands
-			crit(10),	-- Left Ring
-			crit(11),	-- Right Ring
-			crit(12),	-- First Trinket
-			crit(13),	-- Second Trinket
-			crit(14),	-- Cloak
-			crit(15),	-- Weapon
-			]]--
+			["sym"] = {{"achievement_criteria"}},
 		})),
 		ach(14796, {	-- Superior [Shadowlands]
 			["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_1_5 },
