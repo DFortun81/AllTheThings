@@ -12,12 +12,18 @@ local rawget, ipairs, pairs
 -- App locals
 local SearchForField, SearchForFieldContainer
 	= app.SearchForField, app.SearchForFieldContainer;
+local AccountWideQuests = app.EmptyTable
 
 -- Module locals
-local RecursiveGroupRequirementsFilter, GroupFilter, DGU, UpdateRunner, CheckCanBeCollected;
--- Ideally never used, but weird situations are possible to cause logic to execute prior to ATT even loading
+local RecursiveGroupRequirementsFilter, GroupFilter, DGU, UpdateRunner, CheckCanBeCollected
+-- If a Thing which has a cost is not a quest or not saved
 local function CanBeCollected(ref)
 	return not ref.questID or not ref.saved;
+end
+-- If a Thing which has a cost is not a quest or not saved or not an Account-Wide Quest
+local function CanBeAccountCollected(ref)
+	local questID = ref.questID
+	return not questID or not ref.saved or not AccountWideQuests[questID]
 end
 
 -- Function which returns if a Thing has a cost based on a given 'ref' Thing, which has been previously determined as a
@@ -25,7 +31,7 @@ end
 local function SubCheckCollectible(ref)
 	-- Collectibles that have a Cost but are already 'saved' should not indicate they are needed as a Cost
 	if CheckCanBeCollected and not CheckCanBeCollected(ref) then
-		-- app.PrintDebug("Saved Thing not collectible as cost",ref.hash)
+		-- app.PrintDebug("Saved Thing not collectible as cost",ref.hash,ref.questID,ref.saved,AccountWideQuests[ref.questID])
 		return;
 	end
 	-- app.PrintDebug("SubCheckCollectible",ref.hash)
@@ -81,7 +87,7 @@ local function CacheFilters()
 	-- Cache repeat-used functions/values
 	RecursiveGroupRequirementsFilter = app.RecursiveGroupRequirementsFilter;
 	GroupFilter = app.GroupFilter;
-	CheckCanBeCollected = not app.MODE_DEBUG_OR_ACCOUNT and CanBeCollected or nil;
+	CheckCanBeCollected = app.MODE_DEBUG_OR_ACCOUNT and CanBeAccountCollected or CanBeCollected;
 end
 local function UpdateCostsByItemID(itemID, refresh, refs)
 	local costs = SearchForField("itemID", itemID);
@@ -240,5 +246,8 @@ api.OnLoad = function()
 	DGU = app.DirectGroupUpdate;
 	UpdateRunner = app.UpdateRunner;
 	CacheFilters();
+end
+api.OnStartup = function(AccountData)
+	AccountWideQuests = AccountData.OneTimeQuests
 end
 api.OnRefreshData_NewSettings = UpdateCosts;
