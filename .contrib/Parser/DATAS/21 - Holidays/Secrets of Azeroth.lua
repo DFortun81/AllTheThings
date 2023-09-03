@@ -44,6 +44,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		}),
 	}),
 	n(QUESTS, {
+		-- Day 1 --
 		q(77202, {	-- The Preservationists
 			["qg"] = 199261,	-- Holiday Enthusiast
 			["coords"] = {
@@ -88,6 +89,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 				}),
 			},
 		}),
+
+		-- Day 2 --
 		q(77165, {	-- A Secretive Contact
 			["qg"] = 207696,	-- Bobby Carlisle
 			["coord"] = { 47.9, 46.8, VALDRAKKEN },
@@ -160,6 +163,32 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 				i(206944),	-- A Clue: The Thinking Cap
 			},
 		}),
+
+		-- Day 3 --
+		q(77276, {	-- An Inside Job?
+			["qg"] = 207696,	-- Bobby Carlisle
+			["coord"] = { 47.9, 46.8, VALDRAKKEN },
+			["groups"] = {
+				i(208129),	-- Copied Artifact Storage Key
+				i(208128),	-- Fangli's Note
+				i(208130, {	-- Maruuk Burial Banner
+					["provider"] = { "o", 405489 },	-- Preservationist's Locker
+					["coord"] = { 48.8, 47.8, VALDRAKKEN },
+				}),
+				q(77397, {
+					["name"] = "Talk with 'Appraiser' Sazsel Stickyfingers",
+					["coord"] = { 62.8, 72.8, VALDRAKKEN },
+				}),
+			},
+		}),
+		q(77277, {	-- Preservationist Cleared
+			["qg"] = 208620,	-- "Appraiser" Sazsel Stickyfingers
+			["coord"] = { 62.8, 72.8, VALDRAKKEN },
+			["sourceQuest"] = 77276,	-- An Inside Job?
+			["groups"] = {
+				i(208130),	-- Maruuk Burial Banner
+			},
+		}),
 	}),
 }))));
 
@@ -172,4 +201,5 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(78202),	-- completed 'Unfinished Thinking Cap' (77237)
 	q(76505),	-- completed 'The Tricked-Out Thinking Cap' (76504)
 	q(77513),	-- completed 'The Tricked-Out Thinking Cap' (76504)
+	q(77521),	-- completed 'Preservationist Cleared' (77277)
 })))

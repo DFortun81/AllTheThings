@@ -5587,6 +5587,7 @@ _.ObjectNames = {
 	[405068] = "Forgotten Grimoire",
 	[405286] = "Torn Page",
 	[405388] = "Familiar Journal",
+	[405489] = "Preservationist's Locker",
 	[9000000] = "Wind Sculpted Stone",
 	[9999890] = "Corrupted Loot",
 	[9999891] = "Main Objective Only",
@@ -9735,6 +9736,7 @@ _.ObjectModels = {
 	[405068] = 1367406,
 	[405286] = 4324473,
 	[405388] = 198038,
+	[405489] = 4216697,
 }
 
 -- Supported Locales
