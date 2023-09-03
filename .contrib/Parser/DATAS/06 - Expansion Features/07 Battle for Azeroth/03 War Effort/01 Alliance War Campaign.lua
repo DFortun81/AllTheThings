@@ -64,9 +64,11 @@ root(ROOTS.ExpansionFeatures,
 					a(ach(13925, {	-- The Fourth War
 					--	not nesting 'ready for war' and 'tides of vengeance' achievements inside, because when you try to utilize the sourceQuests on 'the fourth war' it does not display properly.
 						["sourceQuests"] = { 57002 },	-- Old Soldier
+						["sym"] = {{"meta_achievement",
+							12510,	-- Ready for War
+							13467,	-- Tides of Vengeance
+						}},
 						["g"] = {
-							crit(1),	-- Ready for War
-							crit(2),	-- Tides of Vengeance
 							title(412),	-- Veteran of the Fourth War
 						},
 					})),
