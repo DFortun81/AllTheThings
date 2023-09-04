@@ -16372,7 +16372,7 @@ function app:GetDataCache()
 
 		-- Dailies - Dynamic
 		db = {};
-		db.icon = 236677;	-- Achievement_quests_completed_daily_06
+		db.icon = app.asset("Interface_Questd");	-- Achievement_quests_completed_daily_06
 		db.text = DAILY;
 		db.name = db.text;
 		db.parent = quests;
@@ -16380,7 +16380,7 @@ function app:GetDataCache()
 
 		-- Weeklies - Dynamic
 		db = {};
-		db.icon = 236675;	-- Achievement_quests_completed_daily_04
+		db.icon = app.asset("Interface_Questw");	-- Achievement_quests_completed_daily_04
 		db.text = CALENDAR_REPEAT_WEEKLY;
 		db.name = db.text;
 		db.parent = quests;
