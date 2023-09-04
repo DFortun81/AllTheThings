@@ -16300,7 +16300,7 @@ function app:GetDataCache()
 		db = {};
 		db.text = L["FILTER_ID_TYPES"][103];
 		db.name = db.text;
-		db.icon = 132853;
+		db.icon = app.asset("Category_Illusions");
 		db.parent = primeData;
 		tinsert(g, DynamicCategory(db, "illusionID"));
 
