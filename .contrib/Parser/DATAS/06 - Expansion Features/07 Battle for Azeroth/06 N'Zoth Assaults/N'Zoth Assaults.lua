@@ -13,7 +13,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(14159, {	-- Combating the Corruption
-					crit(1,  {		-- Corrupted Acolyte slain
+					crit(47211,  {		-- Corrupted Acolyte slain
 						["description"] = "Shares a spawn with Acolyte of N'Zoth.",
 						["cr"] = 162249,	-- Corrupted Acolyte
 						["coords"] = {
@@ -34,7 +34,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							{ 51.8, 60.4, 1530 },
 						},
 					}),
-					crit(2,  {		-- Corrupted Assassin slain
+					crit(47212,  {		-- Corrupted Assassin slain
 						["description"] = "Shares a spawn with Black Empire Assassin.",
 						["cr"] = 162250,	-- Corrupted Assassin
 						["coords"] = {
@@ -53,7 +53,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							{ 50.0, 71.7, 1527 },
 						},
 					}),
-					crit(3,  {		-- Corrupted Beheader slain
+					crit(47213,  {		-- Corrupted Beheader slain
 						["description"] = "Shares a spawn with Black Empire Beheader.",
 						["cr"] = 162252,	-- Corrupted Beheader
 						["coords"] = {
@@ -70,7 +70,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							{ 57.0, 58.8, 1530 },
 						},
 					}),
-					crit(4,	 {		-- Corrupted Bloodseeker slain
+					crit(47214,	 {		-- Corrupted Bloodseeker slain
 						["description"] = "This doesn't appear to share a spawn with any other mob, but it's an elite shark that spawns off the southern coast of Uldum.  It can swim very far out, close to fatigue waters, so if you're searching for Corrupted Bloodseeker it may be helpful to follow the outside edge rather than sticking to the coast.",
 						["cr"] = 162290,	-- Corrupted Bloodseeker
 						["coords"] = {
@@ -79,7 +79,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							{ 46.6, 91.2, 1527 },
 						},
 					}),
-					crit(5,	 {		-- Corrupted Bonestripper slain
+					crit(47215,	 {		-- Corrupted Bonestripper slain
 						["description"] = "Shares a spawn with N'Zoth Bonestripper.  Found in most water locations.",
 						["cr"] = 159087,	-- Corrupted Bonestripper
 						["coords"] = {
@@ -96,7 +96,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							{ 72.8, 29.8, 1530 },
 						},
 					}),
-					crit(6,	 {		-- Corrupted Despoiler slain
+					crit(47216,	 {		-- Corrupted Despoiler slain
 						["description"] = "Shares a spawn with Faceless Despoiler and Mind Eater.  Can also result in Corrupted Mind Eater spawning.",
 						["cr"] = 156709,	-- Corrupted Despoiler
 						["coords"] = {
@@ -127,7 +127,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							{ 75.0, 23.6, 1530 },
 						},
 					}),
-					crit(7,	 {		-- Corrupted Dominator slain
+					crit(47217,	 {		-- Corrupted Dominator slain
 						["description"] = "Shares a spawn with Faceless Dominator.",
 						["cr"] = 162246,	-- Corrupted Dominator
 						["coords"] = {
@@ -139,7 +139,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							{ 56.5, 42.1, 1527 },
 						},
 					}),
-					crit(8,  {		-- Corrupted Doomsayer slain
+					crit(47218,  {		-- Corrupted Doomsayer slain
 						["description"] = "Shares a spawn with K'thir Doomsayer.",
 						["cr"] = 162244,	-- Corrupted Doomsayer
 						["coords"] = {
@@ -166,7 +166,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							{ 86.2, 42.4, 1530 },
 						},
 					}),
-					crit(9,  {		-- Corrupted Fleshbeast slain
+					crit(47219,  {		-- Corrupted Fleshbeast slain
 						["description"] = "Shares a spawn with Burbling Fleshbeast.",
 						["cr"] = 158632,	-- Corrupted Fleshbeast
 						["coords"] = {
@@ -190,7 +190,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							{ 84.8, 46.8, 1530 },
 						},
 					}),
-					crit(10, {		-- Corrupted Jailer slain
+					crit(47220, {		-- Corrupted Jailer slain
 						["description"] = "Shares a spawn with Faceless Jailer.",
 						["cr"] = 162247,	-- Corrupted Jailer
 						["coords"] = {
@@ -200,7 +200,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							{ 62.2, 67.4, 1527 },
 						},
 					}),
-					crit(11, {		-- Corrupted Mind Eater slain
+					crit(47221, {		-- Corrupted Mind Eater slain
 						["description"] = "Shares a spawn with Mind Eater and Faceless Despoiler.  Can also result in Corrupted Despoiler spawning.",
 						["cr"] = 162243,	-- Corrupted Mind Eater
 						["coords"] = {
@@ -231,7 +231,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							{ 75.0, 23.6, 1530 },
 						},
 					}),
-					crit(12, {		-- Corrupted Neferset Guard slain
+					crit(47222, {		-- Corrupted Neferset Guard slain
 						["description"] = "Shares a spawn with Voidwarped Neferset and Voidwarped Neferset High Guard.",
 						["cr"] = 158531,	-- Corrupted Neferset Guard
 						["coords"] = {
@@ -249,7 +249,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							{ 50.5, 75.0, 1527 },
 						},
 					}),
-					crit(13, {		-- Corrupted Observer slain
+					crit(47223, {		-- Corrupted Observer slain
 						["description"] = "Shares a spawn with Foul Observer.",	-- add Vale mob to description (can't remember what it's called, the eye mob ugh)
 						["cr"] = 162254,	-- Corrupted Observer
 						["coords"] = {
@@ -276,7 +276,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							{ 86.0, 46.6, 1530 },
 						},
 					}),
-					crit(14, {		-- Corrupted Putrefaction slain
+					crit(47224, {		-- Corrupted Putrefaction slain
 						["description"] = "Shares a spawn with Oozing Putrefaction.",
 						["cr"] = 158706,	-- Corrupted Putrefaction
 						["coords"] = {
@@ -287,7 +287,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							{ 60.8, 37.1, 1527 },
 						},
 					}),
-					crit(15, {		-- Corrupted Summoner slain
+					crit(47225, {		-- Corrupted Summoner slain
 						["description"] = "Shares a spawn with Black Empire Conjurers.",
 						["cr"] = 162251,	-- Corrupted Summoner
 						["coords"] = {
@@ -307,7 +307,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							{ 51.9, 50.1, 1527 },
 						},
 					}),
-					crit(16, {		-- Corrupted Thaumaturge slain
+					crit(47226, {		-- Corrupted Thaumaturge slain
 						["description"] = "Shares a spawn with Black Empire Thaumaturge and Black Empire Conjurer.",
 						["cr"] = 162253,	-- Corrupted Thaumaturge
 						["coords"] = {
@@ -326,7 +326,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 							{ 52.6, 66.0, 1530 },
 						},
 					}),
-					crit(17, {		-- Corrupted Thoughtstealer slain
+					crit(47227, {		-- Corrupted Thoughtstealer slain
 						["description"] = "Shares a spawn with K'thir Thoughtstealer.",
 						["coords"] = {
 							{ 62.7, 75.4, 1527 },
@@ -338,7 +338,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						},
 						["cr"] = 162241,	-- Corrupted Thoughtstealer
 					}),
-					crit(18, {		-- Corrupted Tormentor slain -- TODO:: Add coords
+					crit(47228, {		-- Corrupted Tormentor slain -- TODO:: Add coords
 						["description"] = "Shares a spawn with Tentacle Tormentors, found off the southern coast of Uldum.",
 						["coords"] = {
 							{ 13.0, 64.6, 1527 },
@@ -349,7 +349,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						},
 						["cr"] = 162245,	-- Corrupted Tormentor
 					}),
-					crit(19, {		-- Corrupted Watcher slain
+					crit(47229, {		-- Corrupted Watcher slain
 						["description"] = "Shares a spawn with Voidwarped Watcher.",
 						["coords"] = {
 							{ 61.8, 73.0, 1527 },

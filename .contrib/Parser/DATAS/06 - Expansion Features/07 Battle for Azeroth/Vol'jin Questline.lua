@@ -49,7 +49,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "adde
 			["provider"] = { "n", 140405 },	-- Bwonsamdi
 			["maps"] = { 934, 935 },	-- Atal'Dazar
 			["g"] = {
-				crit(1, {	-- The Fallen Chieftain
+				crit(40709, {	-- The Fallen Chieftain
 					["achievementID"] = 12719,	-- Spirits Be With You
 				}),
 			},
@@ -70,7 +70,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "adde
 			["coord"] = { 57.6, 63.0, ZULDAZAR },
 			["maps"] = { 1148, 1149, 1150, 1151, 1152, 1153, 1154, 1155 },	-- Uldir
 			["g"] = {
-				crit(2, {	-- Justice for the Fallen
+				crit(40710, {	-- Justice for the Fallen
 					["achievementID"] = 12719,	-- Spirits Be With You
 				}),
 			},

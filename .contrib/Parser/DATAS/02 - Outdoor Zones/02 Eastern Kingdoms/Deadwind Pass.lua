@@ -71,7 +71,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 7.0.3.21796" },
 					["lvl"] = 110,
 					["groups"] = {
-						crit(1, {	-- Waterlogged Tome
+						crit(33145, {	-- Waterlogged Tome
 							["achievementID"] = 11240,	-- Harbinger
 						}),
 					},

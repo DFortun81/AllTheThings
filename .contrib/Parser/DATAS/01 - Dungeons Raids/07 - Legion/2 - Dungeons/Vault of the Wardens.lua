@@ -11,7 +11,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				q(44486, {	-- Fel-Ravaged Tome
 					["provider"] = { "o", 258979 },	-- Fel-Ravaged Tome
 					["g"] = {
-						crit(2, {	-- Fel-Ravaged Tome
+						crit(33146, {	-- Fel-Ravaged Tome
 							["achievementID"] = 11240,	-- Harbinger
 						}),
 					},

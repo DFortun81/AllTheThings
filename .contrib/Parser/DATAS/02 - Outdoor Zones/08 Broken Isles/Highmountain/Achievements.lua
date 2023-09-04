@@ -31,25 +31,25 @@ root(ROOTS.Zones, {
 					crit(22),		-- Slumbering Bear
 				}),
 				ach(10059, {	-- Ain't No Mountain High Enough
-					crit(1, {	-- The Rivermane Tribe
+					crit(28963, {	-- The Rivermane Tribe
 						["sourceQuests"] = { 39487 },	-- Crystal Fury
 					}),
-					crit(2, {	-- Riverbend
+					crit(28966, {	-- Riverbend
 						["sourceQuests"] = { 38909 },	-- Get to High Ground
 					}),
-					crit(3, {	-- The Skyhorn Tribe
+					crit(28405, {	-- The Skyhorn Tribe
 						["sourceQuests"] = { 39387 },	-- The Skies of Highmountain
 					}),
-					crit(4, {	-- The Bloodtotem Tribe
+					crit(28964, {	-- The Bloodtotem Tribe
 						["sourceQuests"] = { 39426 },	-- Blood Debt
 					}),
-					crit(5, {	-- Huln's War
+					crit(29135, {	-- Huln's War
 						["sourceQuests"] = { 39992 },	-- Huln's War - The Nathrezim
 					}),
-					crit(6, {	-- Secrets of Highmountain
+					crit(28965, {	-- Secrets of Highmountain
 						["sourceQuests"] = { 39579 },	-- The Backdoor
 					}),
-					crit(7, {	-- Battle of Snowblind Mesa
+					crit(28212, {	-- Battle of Snowblind Mesa
 						["sourceQuests"] = { 39780 },	-- The Underking
 					}),
 				}),

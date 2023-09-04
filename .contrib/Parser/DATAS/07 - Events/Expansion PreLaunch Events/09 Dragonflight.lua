@@ -6,16 +6,16 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 	tier(DF_TIER, {
 		n(ACHIEVEMENTS, {
 			ach(16431, {	-- Against the Elements
-				crit(1, {
+				crit(55367, {
 					["_npcs"] = { 185784 },	-- Unbridled Storm Lord
 				}),
-				crit(2, {
+				crit(55368, {
 					["_npcs"] = { 189954 },	-- Rumbling Earth Lord
 				}),
-				crit(3, {
+				crit(55369, {
 					["_npcs"] = { 189955 },	-- Raging Fire Lord
 				}),
-				crit(4, {
+				crit(55370, {
 					["_npcs"] = { 189933 },	-- Glacial Ice Lord
 				}),
 			}),

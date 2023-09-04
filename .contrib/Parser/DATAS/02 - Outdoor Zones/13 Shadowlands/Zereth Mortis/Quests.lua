@@ -818,7 +818,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				}),
 				------ The End ------
 			}),
-			crit(1, {	--  Small Pet Problems
+			crit(53309, {	--  Small Pet Problems
 				["achievementID"] = 15515,	-- Path to Enlightenment
 				["collectible"] = false,
 				["g"] = {
@@ -863,7 +863,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					}),
 				},
 			}),
-			crit(2, {	--  Not Al Are Lost
+			crit(53310, {	--  Not Al Are Lost
 				["achievementID"] = 15515,	-- Path to Enlightenment
 				["collectible"] = false,
 				["g"] = {
@@ -912,7 +912,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					}),
 				},
 			}),
-			crit(3, {	--  A Return to Grace
+			crit(53311, {	--  A Return to Grace
 				["achievementID"] = 15515,	-- Path to Enlightenment
 				["collectible"] = false,
 				["g"] = {

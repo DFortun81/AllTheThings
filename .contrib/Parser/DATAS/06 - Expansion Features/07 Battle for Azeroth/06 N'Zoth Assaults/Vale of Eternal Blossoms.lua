@@ -858,13 +858,13 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 			n(-10072, {	-- N'Zoth Assault
 				n(ACHIEVEMENTS, {
 					ach(14154, {	-- Defend the Vale
-						crit(1, {	-- Assault: The Warring Clans
+						crit(47204, {	-- Assault: The Warring Clans
 							["_quests"] = { 57008 },
 						}),
-						crit(2, {	-- Assault: The Endless Swarm
+						crit(47205, {	-- Assault: The Endless Swarm
 							["_quests"] = { 57728 },
 						}),
-						crit(3, {	-- Assault: The Black Empire
+						crit(47206, {	-- Assault: The Black Empire
 							["_quests"] = { 56064 },
 						}),
 					}),

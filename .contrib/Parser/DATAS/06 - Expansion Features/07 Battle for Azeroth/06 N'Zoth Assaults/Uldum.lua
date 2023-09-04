@@ -1037,13 +1037,13 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 			n(-10072, {	-- N'Zoth Assault
 				n(ACHIEVEMENTS, {
 					ach(14153, {	-- Uldum Under Assault
-						crit(1, {	-- Assault: Amathet Advance
+						crit(47201, {	-- Assault: Amathet Advance
 							["_quests"] = { 55350 },
 						}),
-						crit(2, {	-- Assault: Aqir Unearthed
+						crit(47202, {	-- Assault: Aqir Unearthed
 							["_quests"] = { 56308 },
 						}),
-						crit(3, {	-- Assault: The Black Empire
+						crit(47203, {	-- Assault: The Black Empire
 							["_quests"] = { 57157 },
 						}),
 					}),

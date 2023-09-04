@@ -160,17 +160,17 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			ach(7994),	-- Treasure of Pandaria
 		}),
 		ach(6754, {	-- The Dark Heart of the Mogu
-			crit(1, {	-- Valley of the Emperors
+			crit(19662, {	-- Valley of the Emperors
 				["coord"] = { 53.0, 46.58, KUN_LAI_SUMMIT },
 				["description"] = "The scroll is in the first big room."
 			}),
-			crit(2, {	-- The Lost Dynasty
+			crit(19663, {	-- The Lost Dynasty
 				["coord"] = { 52.96, 27.42, KRASARANG_WILDS },
 			}),
-			crit(3, {	-- Spirit Binders
+			crit(19664, {	-- Spirit Binders
 				["coord"] = { 42.26, 17.46, THE_JADE_FOREST },
 			}),
-			crit(4, {	-- The Thunder King
+			crit(19665, {	-- The Thunder King
 				["coords"] = {
 					{ 40.19, 75.63, VALE_OF_ETERNAL_BLOSSOMS },
 					{ 40.19, 75.63, 1530 },	-- BFA alternate zone

@@ -1169,7 +1169,7 @@ root(ROOTS.Zones, {
 					n(58778, {	-- Aetha
 						["coord"] = { 35.0, 89.9, VALE_OF_ETERNAL_BLOSSOMS },
 						["g"] = {
-							crit(5, {	-- Aetha
+							crit(20521, {	-- Aetha
 								["achievementID"] = 7317,	-- One Many Army
 							}),
 							i(103624),	-- Treasures of the Vale
@@ -1201,7 +1201,7 @@ root(ROOTS.Zones, {
 					n(58949, {	-- Bai-Jin the Butcher
 						["coord"] = { 17.0, 48.7, VALE_OF_ETERNAL_BLOSSOMS },
 						["g"] = {
-							crit(14, {	-- Bai-Jin the Butcher
+							crit(20530, {	-- Bai-Jin the Butcher
 								["achievementID"] = 7317,	-- One Many Army
 							}),
 							i(103624),	-- Treasures of the Vale
@@ -1210,7 +1210,7 @@ root(ROOTS.Zones, {
 					n(63695, {	-- Baolai the Immolator
 						["coord"] = { 28.7, 43.3, VALE_OF_ETERNAL_BLOSSOMS },
 						["g"] = {
-							crit(8, {	-- Baolai the Immolator
+							crit(20524, {	-- Baolai the Immolator
 								["achievementID"] = 7317,	-- One Many Army
 							}),
 							i(103624),	-- Treasures of the Vale
@@ -1222,7 +1222,7 @@ root(ROOTS.Zones, {
 							{ 22.4, 26.7, 395 },	-- Entrance
 						},
 						["g"] = {
-							crit(10, {	-- Bloodtip
+							crit(20526, {	-- Bloodtip
 								["achievementID"] = 7317,	-- One Many Army
 							}),
 							i(103624),	-- Treasures of the Vale
@@ -1231,7 +1231,7 @@ root(ROOTS.Zones, {
 					n(58768, {	-- Cracklefang
 						["coord"] = { 46.4, 59.3, VALE_OF_ETERNAL_BLOSSOMS },
 						["g"] = {
-							crit(1, {	-- Cracklefang
+							crit(20517, {	-- Cracklefang
 								["achievementID"] = 7317,	-- One Many Army
 							}),
 							i(103624),	-- Treasures of the Vale
@@ -1243,7 +1243,7 @@ root(ROOTS.Zones, {
 							{ 22.4, 26.7, 395 },	-- Entrance
 						},
 						["g"] = {
-							crit(9, {	-- Gaohun the Soul-Severer
+							crit(20525, {	-- Gaohun the Soul-Severer
 								["achievementID"] = 7317,	-- One Many Army
 							}),
 							i(103624),	-- Treasures of the Vale
@@ -1255,7 +1255,7 @@ root(ROOTS.Zones, {
 							{ 28.9, 56.3, VALE_OF_ETERNAL_BLOSSOMS },
 						},
 						["g"] = {
-							crit(3, {	-- General Temuja
+							crit(20519, {	-- General Temuja
 								["achievementID"] = 7317,	-- One Many Army
 							}),
 							i(103624),	-- Treasures of the Vale
@@ -1264,7 +1264,7 @@ root(ROOTS.Zones, {
 					n(62880, {	-- Gochao the Ironfist
 						["coord"] = { 26.86, 13.08, VALE_OF_ETERNAL_BLOSSOMS },
 						["g"] = {
-							crit(12, {	-- Gochao the Ironfist
+							crit(20528, {	-- Gochao the Ironfist
 								["achievementID"] = 7317,	-- One Many Army
 							}),
 							i(103624),	-- Treasures of the Vale
@@ -1277,7 +1277,7 @@ root(ROOTS.Zones, {
 							{ 22.43, 26.75, 395 },	-- Entrance
 						},
 						["g"] = {
-							crit(13, {	-- Huo-Shuang
+							crit(20529, {	-- Huo-Shuang
 								["achievementID"] = 7317,	-- One Many Army
 							}),
 							i(103624),	-- Treasures of the Vale
@@ -1304,7 +1304,7 @@ root(ROOTS.Zones, {
 					n(63978, {	-- Kri'chon
 						["coord"] = { 6.27, 58.5, VALE_OF_ETERNAL_BLOSSOMS },
 						["g"] = {
-							crit(15, {	-- Kri'chon
+							crit(20531, {	-- Kri'chon
 								["achievementID"] = 7317,	-- One Many Army
 							}),
 							i(103624),	-- Treasures of the Vale
@@ -1313,7 +1313,7 @@ root(ROOTS.Zones, {
 					n(50840, {	-- Major Nanners
 						["coord"] = { 30.7, 91.5, VALE_OF_ETERNAL_BLOSSOMS },
 						["g"] = {
-							crit(7, {	-- Major Nanners
+							crit(20523, {	-- Major Nanners
 								["achievementID"] = 7439,	-- Glorious!
 							}),
 							i(86594),	-- Helpful Wikky's Whistle (TOY!)
@@ -1334,7 +1334,7 @@ root(ROOTS.Zones, {
 					n(58771, {	-- Quid
 						["coord"] = { 66.4, 39.3, VALE_OF_ETERNAL_BLOSSOMS },
 						["g"] = {
-							crit(6, {	-- Quid
+							crit(20522, {	-- Quid
 								["achievementID"] = 7317,	-- One Many Army
 							}),
 							i(103624),	-- Treasures of the Vale
@@ -1352,7 +1352,7 @@ root(ROOTS.Zones, {
 					n(63240, {	-- Shadowmaster Sydow
 						["coord"] = { 30.5, 78.4, VALE_OF_ETERNAL_BLOSSOMS },
 						["g"] = {
-							crit(4, {	-- Shadowmaster Sydow
+							crit(20520, {	-- Shadowmaster Sydow
 								["achievementID"] = 7317,	-- One Many Army
 							}),
 							i(103624),	-- Treasures of the Vale
@@ -1361,7 +1361,7 @@ root(ROOTS.Zones, {
 					n(58817, {	-- Spirit of Lao-Fe
 						["coord"] = { 47.4, 65.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["g"] = {
-							crit(7, {	-- Spirit of Lao-Fe
+							crit(20523, {	-- Spirit of Lao-Fe
 								["achievementID"] = 7317,	-- One Many Army
 							}),
 							i(103624),	-- Treasures of the Vale
@@ -1379,7 +1379,7 @@ root(ROOTS.Zones, {
 					n(58769, {	-- Vicejaw
 						["coord"] = { 37.4, 50.9, VALE_OF_ETERNAL_BLOSSOMS },
 						["g"] = {
-							crit(2, {	-- Vicejaw
+							crit(20518, {	-- Vicejaw
 								["achievementID"] = 7317,	-- One Many Army
 							}),
 							i(103624),	-- Treasures of the Vale
@@ -1388,7 +1388,7 @@ root(ROOTS.Zones, {
 					n(63977, {	-- Vyraxxis
 						["coord"] = { 7.92, 33.8, VALE_OF_ETERNAL_BLOSSOMS },
 						["g"] = {
-							crit(16, {	-- Vyraxxis
+							crit(20532, {	-- Vyraxxis
 								["achievementID"] = 7317,	-- One Many Army
 							}),
 							i(103624),	-- Treasures of the Vale
@@ -1400,7 +1400,7 @@ root(ROOTS.Zones, {
 							{ 40.2, 77.1, VALE_OF_ETERNAL_BLOSSOMS },
 						},
 						["g"] = {
-							crit(11, {	-- Wulon
+							crit(20527, {	-- Wulon
 								["achievementID"] = 7317,	-- One Many Army
 							}),
 							i(103624),	-- Treasures of the Vale

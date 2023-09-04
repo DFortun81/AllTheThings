@@ -54,19 +54,19 @@ root(ROOTS.Zones, {
 						crit(2),	-- Wu Kao Assassins
 					}),
 					ach(6539, {	-- One Steppe Forward, Two Steppes Back
-						crit(1, {	-- Fire Camp Osul
+						crit(19372, {	-- Fire Camp Osul
 							["sourceQuest"] = 30784,	-- The Point of No Return
 						}),
-						crit(2, {	-- Mistlurkers in the Sumprushes
+						crit(19375, {	-- Mistlurkers in the Sumprushes
 							["sourceQuest"] = 30793,	-- Mists' Opportunity
 						}),
-						crit(3, {	-- On Hatred's Path
+						crit(19373, {	-- On Hatred's Path
 							["sourceQuest"] = 30900,	-- Terror of the Dread Wastes
 						}),
-						crit(4, {	-- The Sha of Hatred
+						crit(19374, {	-- The Sha of Hatred
 							["sourceQuest"] = 30968,	-- The Sha of hatred
 						}),
-						crit(5, {	-- Tai Ho's Investigation
+						crit(19376, {	-- Tai Ho's Investigation
 							["sourceQuest"] = 30926,	-- The Terrible Truth
 						}),
 					}),

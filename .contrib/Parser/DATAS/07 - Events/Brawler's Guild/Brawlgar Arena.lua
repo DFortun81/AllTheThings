@@ -376,7 +376,7 @@ root(ROOTS.WorldEvents, m(503,
 					i(142290, {	-- Rumble Card: Battle of the Brew
 						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
 						["groups"] = {
-							crit(3, {	-- Battle of the Brew
+							crit(35477, {	-- Battle of the Brew
 								["achievementID"] = 11573,	-- Rumble Club
 							}),
 						},
@@ -385,7 +385,7 @@ root(ROOTS.WorldEvents, m(503,
 						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
 						["groups"] = {
 							n(114943, {	-- Grief Warden <Enmity Moose>
-								crit(2, {	-- Grief Warden
+								crit(35472, {	-- Grief Warden
 									["achievementID"] = 11573,	-- Rumble Club
 								}),
 							}),
@@ -395,7 +395,7 @@ root(ROOTS.WorldEvents, m(503,
 						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
 						["groups"] = {
 							n(68251, {	-- Mazhareen
-								crit(1, {	-- Mazhareen
+								crit(35473, {	-- Mazhareen
 									["achievementID"] = 11573,	-- Rumble Club
 								}),
 							}),
@@ -405,7 +405,7 @@ root(ROOTS.WorldEvents, m(503,
 						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
 						["groups"] = {
 							n(117102, {	-- Mindbreaker Gzzaj
-								crit(4, {	-- Mindbreaker Gzzaj
+								crit(35474, {	-- Mindbreaker Gzzaj
 									["achievementID"] = 11573,	-- Rumble Club
 								}),
 							}),
@@ -415,7 +415,7 @@ root(ROOTS.WorldEvents, m(503,
 						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
 						["groups"] = {
 							n(115185, {	-- Penguin Stampede
-								crit(6, {	-- Penguin Stampede
+								crit(35478, {	-- Penguin Stampede
 									["achievementID"] = 11573,	-- Rumble Club
 								}),
 							}),
@@ -425,7 +425,7 @@ root(ROOTS.WorldEvents, m(503,
 						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
 						["groups"] = {
 							n(115357, {	-- Senya
-								crit(5, {	-- Senya
+								crit(35476, {	-- Senya
 									["achievementID"] = 11573,	-- Rumble Club
 								}),
 							}),
@@ -434,7 +434,7 @@ root(ROOTS.WorldEvents, m(503,
 					i(142292, {	-- Rumble Card: Stranglethorn Streak
 						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
 						["groups"] = {
-							crit(7, {	-- Stranglethorn Streak
+							crit(35475, {	-- Stranglethorn Streak
 								["achievementID"] = 11573,	-- Rumble Club
 							}),
 						},

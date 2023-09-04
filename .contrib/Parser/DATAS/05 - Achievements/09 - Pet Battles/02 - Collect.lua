@@ -74,16 +74,16 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			crit(35),		-- Stormstruck Beaver (Stormheim)
 		})),
 		petbattle(ach(8519, {	-- Celestial Family
-			crit(1, {	-- Xu-Fu, Cub of Xuen
+			crit(23600, {	-- Xu-Fu, Cub of Xuen
 				["provider"] = { "i", 101771 },
 			}),
-			crit(2, {	-- Chi-Chi, Hatchling of Chi-Ji
+			crit(23719, {	-- Chi-Chi, Hatchling of Chi-Ji
 				["provider"] = { "i", 102145 },
 			}),
-			crit(3, {	-- Yu'la, Broodling of Yu'lon
+			crit(23720, {	-- Yu'la, Broodling of Yu'lon
 				["provider"] = { "i", 102147 },
 			}),
-			crit(4, {	-- Zao, Calfling of Niuzao
+			crit(23721, {	-- Zao, Calfling of Niuzao
 				["provider"] = { "i", 102146 },
 			}),
 		})),

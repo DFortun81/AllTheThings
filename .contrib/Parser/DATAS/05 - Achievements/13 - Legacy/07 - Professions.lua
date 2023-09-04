@@ -8,7 +8,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 		ach(10585, {	-- Fel-Smelter
 			["u"] = REMOVED_FROM_GAME,
 			["g"] = {
-				crit(1, {	-- Firing Up the Forge
+				crit(29873, {	-- Firing Up the Forge
 					["u"] = REMOVED_FROM_GAME,
 				}),
 			}

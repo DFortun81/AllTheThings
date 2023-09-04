@@ -85,64 +85,64 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 			ach(13125),		-- Azerite Admiral
 			ach(13126),		-- Give Me The Energy
 			ach(13127, {	-- Tell Me A Tale
-				crit(1, {	-- Weathered Pamphlet
+				crit(41937, {	-- Weathered Pamphlet
 					["_quests"] = { 53184 },
 				}),
-				crit(2, {	-- Wriggling Mass
+				crit(41938, {	-- Wriggling Mass
 					["_quests"] = { 53183 },
 				}),
-				crit(3, {	-- Strangling Root
+				crit(41939, {	-- Strangling Root
 					["_quests"] = { 53182 },
 				}),
-				crit(4, {	-- Druidic Fur
+				crit(41940, {	-- Druidic Fur
 					["_quests"] = { 53181 },
 				}),
-				crit(5, {	-- Vorus'arak's Carapace
+				crit(41941, {	-- Vorus'arak's Carapace
 					["_quests"] = { 53180 },
 				}),
-				crit(6, {	-- Razorfin Hunting Spear
+				crit(41942, {	-- Razorfin Hunting Spear
 					["_quests"] = { 53178 },
 				}),
-				crit(7, {	-- Broken Compass
+				crit(41943, {	-- Broken Compass
 					["_quests"] = { 53177 },
 				}),
-				crit(8, {	-- Glittering Scarab
+				crit(41944, {	-- Glittering Scarab
 					["_quests"] = { 53176 },
 				}),
-				crit(9, {	-- Murloc Eye
+				crit(41945, {	-- Murloc Eye
 					["_quests"] = { 53174 },
 				}),
-				crit(10, {	-- Venture Co. Business Plan
+				crit(41946, {	-- Venture Co. Business Plan
 					["_quests"] = { 53172 },
 				}),
-				crit(11, {	-- Battered Twilight Scale
+				crit(41947, {	-- Battered Twilight Scale
 					["_quests"] = { 53171 },
 				}),
-				crit(12, {	-- Unscarred Black Scale
+				crit(41948, {	-- Unscarred Black Scale
 					["_quests"] = { 53170 },
 				}),
-				crit(13, {	-- Elemental Core
+				crit(41949, {	-- Elemental Core
 					["_quests"] = { 53169 },
 				}),
-				crit(14, {	-- Magical Spyglass
+				crit(41950, {	-- Magical Spyglass
 					["_quests"] = { 53168 },
 				}),
-				crit(15, {	-- Icetusk Fur Cloak
+				crit(41951, {	-- Icetusk Fur Cloak
 					["_quests"] = { 53167 },
 				}),
-				crit(16, {	-- Sonic Stone
+				crit(41952, {	-- Sonic Stone
 					["_quests"] = { 53164 },
 				}),
-				crit(17, {	-- Bloodwake Drinking Horn
+				crit(41953, {	-- Bloodwake Drinking Horn
 					["_quests"] = { 53163 },
 				}),
-				crit(18, {	-- Ring of the Reefs
+				crit(41954, {	-- Ring of the Reefs
 					["_quests"] = { 53161 },
 				}),
-				crit(19, {	-- Ancient Crypt Key
+				crit(41955, {	-- Ancient Crypt Key
 					["_quests"] = { 53160 },
 				}),
-				crit(20, {	-- Notched Coin
+				crit(41956, {	-- Notched Coin
 					["_quests"] = { 53155 },
 				}),
 			}),

@@ -51,49 +51,49 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["isWeekly"] = true,
 				["g"] = {
 					ach(15054, {	-- Minions of the Cold Dark
-						crit(1, {	-- Versya the Damned
+						crit(51655, {	-- Versya the Damned
 							["_npcs"] = { 177981 },
 						}),
-						crit(2, {	-- Gralebboih
+						crit(51654, {	-- Gralebboih
 							["_npcs"] = { 177979 },
 						}),
-						crit(3, {	-- Promathiz
+						crit(51644, {	-- Promathiz
 							["_npcs"] = { 177330 },
 						}),
-						crit(4, {	-- Sentinel Pyrophus
+						crit(51643, {	-- Sentinel Pyrophus
 							["_npcs"] = { 177331 },
 						}),
-						crit(5, {	-- Gruukuuek the Elder
+						crit(51653, {	-- Gruukuuek the Elder
 							["_npcs"] = { 177980 },
 						}),
-						crit(6, {	-- Zul'gath the Flayer
+						crit(52101, {	-- Zul'gath the Flayer
 							["_npcs"] = { 178886 },
 						}),
-						crit(7, {	-- Mugrem the Soul Devourer
+						crit(51660, {	-- Mugrem the Soul Devourer
 							["_npcs"] = { 178002 },
 						}),
-						crit(8, {	-- The Mass of Souls
+						crit(51639, {	-- The Mass of Souls
 							["_npcs"] = { 177427 },
 						}),
-						crit(9, {	-- Algel the Hunter
+						crit(52102, {	-- Algel the Hunter
 							["_npcs"] = { 178897 },
 						}),
-						crit(10, {	-- Sentinel Shakorzeth
+						crit(52103, {	-- Sentinel Shakorzeth
 							["_npcs"] = { 178883 },
 						}),
-						crit(11, {	-- Kazj the Sentinel
+						crit(52104, {	-- Kazj the Sentinel
 							["_npcs"] = { 178882 },
 						}),
-						crit(12, {	-- Intercessor Razzram
+						crit(51661, {	-- Intercessor Razzram
 							["_npcs"] = { 178004 },
 						}),
-						crit(13, {	-- Malleus Grakizz
+						crit(51648, {	-- Malleus Grakizz
 							["_npcs"] = { 177972 },
 						}),
-						crit(14, {	-- Manifestation of Pain
+						crit(52105, {	-- Manifestation of Pain
 							["_npcs"] = { 178899 },
 						}),
-						crit(15, {	-- Golmak the Monstrosity
+						crit(52106, {	-- Golmak the Monstrosity
 							["_npcs"] = { 178898 },
 						}),
 					}),

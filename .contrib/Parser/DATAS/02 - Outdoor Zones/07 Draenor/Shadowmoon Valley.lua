@@ -348,7 +348,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "o", 258980 },	-- Cursed Tome
 						["coord"] = { 37.6, 59.3, DRAENOR_SHADOWMOON_VALLEY },
 						["g"] = {
-							crit(3, {	-- Cursed Tome
+							crit(33147, {	-- Cursed Tome
 								["achievementID"] = 11240,	-- Harbinger
 							}),
 						},

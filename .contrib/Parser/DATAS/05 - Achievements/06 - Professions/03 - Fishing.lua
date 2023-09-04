@@ -116,126 +116,126 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ [
 			["description"] = "First, acquire the Secret Fish Goggles from Danielle Anglers in Mechagon.\n\nWhen you use the goggles, you gain a 1-hour buff that allows you to see Secret Fish, which appear in bubbles around your character. When you see one, approach it and click on it, and you'll get a fish. That fish will be a BfA, or zone-relevant common fish, or one of the requirements for this achievement (assuming you fulfill the requirements for each fish).",
 			["provider"] = { "i", 167698 },	-- Secret Fish Goggles
 			["g"] = {
-				crit(1, {	-- Ancient Mana Fin
+				crit(44803, {	-- Ancient Mana Fin
 					["itemID"] = 167708,	-- Ancient Mana Fin
 					["description"] = "Found in Suramar City Harbor.",
 				}),
-				crit(2, {	-- Barbed Fjord Fin
+				crit(44804, {	-- Barbed Fjord Fin
 					["itemID"] = 167710,	-- Barbed Fjord Fin
 					["description"] = "Found in Howling Fjord.",
 				}),
-				crit(3, {	-- Camouflaged Snark
+				crit(44805, {	-- Camouflaged Snark
 					["itemID"] = 167717,	-- Camouflaged Snark
 					["description"] = "Can be caught anywhere at any time.",
 				}),
-				crit(4, {	-- Collectable Saltfin
+				crit(44806, {	-- Collectable Saltfin
 					["itemID"] = 167718,	-- Collectable Saltfin
 					["description"] = "Can be caught anywhere at any time.",
 				}),
-				crit(5, {	-- Dead Fel Bone
+				crit(44807, {	-- Dead Fel Bone
 					["itemID"] = 167711,	-- Dead Fel Bone
 					["description"] = "Found in Krokuun and the Antoran Wastes on Argus.",
 				}),
-				crit(6, {	-- Deadeye Wally
+				crit(44821, {	-- Deadeye Wally
 					["itemID"] = 167727,	-- Deadeye Wally
 					["description"] = "Can be caught anywhere, but only while you're dead.",
 				}),
-				crit(7, {	-- Deceptive Maw
+				crit(44808, {	-- Deceptive Maw
 					["itemID"] = 167729,	-- Deceptive Maw
 					["description"] = "Can be caught anywhere at any time.",
 				}),
-				crit(8, {	-- Drowned Goldfish
+				crit(44809, {	-- Drowned Goldfish
 					["itemID"] = 167709,	-- Drowned Goldfish
 					["description"] = "Found at around |cffffffff46, 50|r, at the Drowned Lands in Stormsong Valley.",
 					["coord"] = { 46.0, 50.0, STORMSONG_VALLEY },
 				}),
-				crit(9, {	-- Elusive Moonfish
+				crit(44810, {	-- Elusive Moonfish
 					["itemID"] = 167715,	-- Elusive Moonfish
 					["description"] = "Can be caught anywhere at night, from 9:30pm to 8am.",
 				}),
-				crit(10, {	-- Golden Sunsoaker
+				crit(44811, {	-- Golden Sunsoaker
 					["itemID"] = 167719,	-- Golden Sunsoaker
 					["description"] = "Can be caught anywhere during the day, from 8am to 9:30pm.",
 				}),
-				crit(11, {	-- Inconspicuous Catfish
+				crit(44812, {	-- Inconspicuous Catfish
 					["itemID"] = 167730,	-- Inconspicuous Catfish
 					["description"] = "Can be caught anywhere at any time.",
 				}),
-				crit(12, {	-- Invisible Smelt
+				crit(44813, {	-- Invisible Smelt
 					["itemID"] = 167721,	-- Invisible Smelt
 					["description"] = "Can be caught anywhere at any time.",
 				}),
-				crit(13, {	-- Jade Story Fish
+				crit(44815, {	-- Jade Story Fish
 					["itemID"] = 167706,	-- Jade Story Fish
 					["description"] = "Found in the Jade Forest.",
 				}),
-				crit(14, {	-- Kirin Tor Clown
+				crit(44816, {	-- Kirin Tor Clown
 					["itemID"] = 167707,	-- Kirin Tor Clown
 					["description"] = "Found in Dalaran (Broken Isles or Northrend).",
 				}),
-				crit(15, {	-- Mechanized Mackerel
+				crit(44817, {	-- Mechanized Mackerel
 					["itemID"] = 167705,	-- Mechanized Mackerel
 					["description"] = "Found in Mechagon.",
 				}),
-				crit(16, {	-- Prisoner Fish
+				crit(44814, {	-- Prisoner Fish
 					["itemID"] = 167722,	-- Prisoner Fish
 					["description"] = "Found in Tol Barad (PvP area).",
 				}),
-				crit(17, {	-- Queen's Delight
+				crit(44818, {	-- Queen's Delight
 					["itemID"] = 167728,	-- Queen's Delight
 					["description"] = "Found in Nazjatar.",
 				}),
-				crit(18, {	-- Quiet Floater
+				crit(44819, {	-- Quiet Floater
 					["itemID"] = 167726,	-- Quiet Floater
 					["description"] = "Can be caught anywhere, but only while you're dead.",
 				}),
-				crit(19, {	-- Rotted Blood Cod
+				crit(44820, {	-- Rotted Blood Cod
 					["itemID"] = 167712,	-- Rotted Blood Cod
 					["description"] = "Found in Zul'Nazman, Nazmir (the area surrounding Uldir).",
 				}),
-				crit(20, {	-- Thunderous Flounder
+				crit(44822, {	-- Thunderous Flounder
 					["itemID"] = 167723,	-- Thunderous Flounder
 					["description"] = "Found on the Isle of Thunder.",
 				}),
-				crit(21, {	-- Tortollan Tank Dweller
+				crit(44828, {	-- Tortollan Tank Dweller
 					["itemID"] = 167724,	-- Tortollan Tank Dweller
 					["description"] = "Found in Anyport, Drustvar, inside the Tortollan inn named 'The Drunk Tank.'",
 					["coord"] = { 19.6, 42.8, DRUSTVAR },
 				}),
-				crit(22, {	-- Travelling Goby
+				crit(44823, {	-- Travelling Goby
 					["itemID"] = 167714,	-- Travelling Goby
 					["description"] = "Can be caught anywhere at any time.",
 				}),
-				crit(23, {	-- Unseen Mimmic
+				crit(44824, {	-- Unseen Mimmic
 					["itemID"] = 167716,	-- Unseen Mimmic
 					["description"] = "Can be caught anywhere at any time.",
 				}),
-				crit(24, {	-- Spiritual Salmon
+				crit(44825, {	-- Spiritual Salmon
 					["itemID"] = 167725,	-- Spiritual Salmon
 					["description"] = "Can be caught anywhere, but only while you're dead.",
 				}),
-				crit(25, {	-- Veiled Ghost
+				crit(44826, {	-- Veiled Ghost
 					["itemID"] = 167713,	-- Veiled Ghost
 					["description"] = "Can be caught anywhere, but only while you're dead.",
 				}),
-				crit(26, {	-- Very Tiny Whale
+				crit(44827, {	-- Very Tiny Whale
 					["itemID"] = 167720,	-- Very Tiny Whale
 					["description"] = "Can be caught anywhere at any time.",
 				}),
-				crit(27, {	-- Green Roughy
+				crit(45754, {	-- Green Roughy
 					["itemID"] = 169884,	-- Green Roughy
 					["description"] = "Can be caught anywhere, but requires the |cffffffff[Painted Green]|r buff from Mechagon. Head over to the painting station at |cffffffff63, 42|r and get the buff.",
 					["coord"] = { 63.0, 42.0, MECHAGON },
 				}),
-				crit(28, {	-- Displaced Scrapfin
+				crit(45755, {	-- Displaced Scrapfin
 					["itemID"] = 169870,	-- Displaced Scrapfin
 					["description"] = "Can be caught in Alternate Mechagon. Wait for Chromie to give you the quest 'The Other Place', or craft a Personal Time Displacer from Mechagon Tinkering.",
 				}),
-				crit(29, {	-- Thin Air Flounder
+				crit(45952, {	-- Thin Air Flounder
 					["itemID"] = 169897,	-- Thin Air Flounder
 					["description"] = "Found at Neverest Pinnacle atop Kun-Lai Summit.",
 				}),
-				crit(30, {	-- Well Lurker
+				crit(45953, {	-- Well Lurker
 					["itemID"] = 169898,	-- Well Lurker
 					["description"] = "Found in Mount Hyjal, in the lake under Nordrassil.",
 				}),
