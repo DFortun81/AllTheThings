@@ -1443,8 +1443,9 @@ ResolveSymbolicLink = function(o)
 					local achievementID = o.achievementID;
 					local cache;
 					for criteriaID=1,GetAchievementNumCriteria(achievementID),1 do
-						local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id = GetAchievementCriteriaInfo(achievementID, criteriaID, true);
-						local criteriaObject = app.CreateAchievementCriteria(id);
+						local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, uniqueID = GetAchievementCriteriaInfo(achievementID, criteriaID, true);
+						if not uniqueID or uniqueID <= 0 then uniqueID = criteriaID; end
+						local criteriaObject = app.CreateAchievementCriteria(uniqueID);
 						criteriaObject.achievementID = achievementID;
 						if criteriaType == 27 then
 							cache = SearchForField("questID", assetID);
