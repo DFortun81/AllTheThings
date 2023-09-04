@@ -49,7 +49,7 @@ local GetFactionInfoByID = _G["GetFactionInfoByID"];
 local GetItemInfo = _G["GetItemInfo"];
 local GetItemInfoInstant = _G["GetItemInfoInstant"];
 local GetItemCount = _G["GetItemCount"];
-local PlayerHasToy = _G["PlayerHasToy"];
+local C_ToyBox, PlayerHasToy = _G["C_ToyBox"], _G["PlayerHasToy"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local GetSpellInfo, IsPlayerSpell, IsSpellKnown, IsSpellKnownOrOverridesKnown, IsTitleKnown =
 	  GetSpellInfo, IsPlayerSpell, IsSpellKnown, IsSpellKnownOrOverridesKnown, IsTitleKnown;
@@ -2282,12 +2282,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 				end
 			elseif group.toyID then
-				if not PlayerHasToy then
-					kind = "Owned by ";
-					for guid,character in pairs(ATTCharacterData) do
-						if character.Toys and character.Toys[group.itemID] then
-							tinsert(knownBy, character);
-						end
+				kind = "Owned by ";
+				for guid,character in pairs(ATTCharacterData) do
+					if character.Toys and character.Toys[group.itemID] then
+						tinsert(knownBy, character);
 					end
 				end
 			elseif group.itemID then
@@ -3066,19 +3064,9 @@ local function AttachTooltip(self)
 				-- Does the tooltip have an owner?
 				local owner = self:GetOwner();
 				if owner then
-					if owner.SpellHighlightTexture then
+					if owner.SpellHighlightTexture and false then
 						-- Actionbars, don't want that.
 						return true;
-					end
-					if owner.cooldownWrapper then
-						local parent = owner:GetParent();
-						if parent then
-							parent = parent:GetParent();
-							if parent and parent.fanfareToys then
-								-- Toy Box, don't want that.
-								return true;
-							end
-						end
 					end
 				end
 
@@ -3146,7 +3134,20 @@ local function AttachTooltip(self)
 
 				-- Does the tooltip have an itemlink?
 				local link = select(2, self:GetItem());
-				if link then AttachTooltipSearchResults(self, 1, link, SearchForLink, link); end
+				if link then 
+					AttachTooltipSearchResults(self, 1, link, SearchForLink, link);
+					if owner and owner.cooldownWrapper then
+						local parent = owner:GetParent();
+						if parent then
+							parent = parent:GetParent();
+							if parent and parent.fanfareToys then
+								-- Toy Box, it needs a Show call.
+								self:Show();
+								return true;
+							end
+						end
+					end
+				end
 
 				-- If the owner has a ref, it's an ATT row. Ignore it.
 				if owner and owner.ref then return true; end
@@ -6393,18 +6394,43 @@ local fields = CloneDictionary(itemFields);
 fields.collectible = function(t)
 	return app.Settings.Collectibles.Toys;
 end
+fields.collected = function(t)
+	return app.SetCollected(t, "Toys", t.toyID, GetItemCount(t.toyID, true) > 0);
+end
 fields.itemID = function(t)
 	return t.toyID;
 end
-if PlayerHasToy then
+if C_ToyBox then
 	-- Toy API is in!
-	fields.collected = function(t)
-		return ATTAccountWideData.Toys[t.toyID];
+	local function isBNETCollectible(toyID)
+		if C_ToyBox.GetToyInfo(toyID) then
+			return true;
+		end
 	end
-else
-	-- Toy API is not available.
 	fields.collected = function(t)
-		return app.SetCollected(t, "Toys", t.toyID, GetItemCount(t.toyID, true) > 0);
+		local toyID = t.toyID;
+		if isBNETCollectible(toyID) then
+			if ATTAccountWideData.Toys[toyID] then return 1; end
+			return app.SetAccountCollected(t, "Toys", toyID, PlayerHasToy(toyID));
+		else
+			return app.SetCollected(t, "Toys", toyID, GetItemCount(toyID, true) > 0);
+		end
+	end;
+	fields.description = function(t)
+		if not isBNETCollectible(t.toyID) then
+			return "This is not a Toy as classified by Blizzard, but it is something that SHOULD be a Toy! Keep this in your inventory somewhere on an alt until Blizzard fixes it.";
+		end
+	end;
+	fields.isBNETCollectible = function(t)
+		return isBNETCollectible(t.toyID);
+	end
+	
+	app:RegisterEvent("TOYS_UPDATED");
+	app.events.TOYS_UPDATED = function(toyID, new)
+		if toyID then
+			app.SetAccountCollected(app.SearchForField("toyID", toyID)[1] or app.CreateToy(toyID), "Toys", toyID, PlayerHasToy(toyID));
+			app:RefreshDataQuietly("TOYS_UPDATED", true);
+		end
 	end
 end
 app.CreateToy = app.CreateClass("Toy", "toyID", fields);
@@ -9151,17 +9177,11 @@ local function RefreshCollections()
 		end
 		
 		-- Refresh Toys
-		if PlayerHasToy then
-			for id,t in pairs(app.SearchForFieldContainer("toyID")) do
-				app.SetAccountCollected(t[1], "Toys", id, PlayerHasToy(id) or GetItemCount(id, true) > 0);
-			end
-			coroutine.yield();
-		else
-			for id,t in pairs(app.SearchForFieldContainer("toyID")) do
-				app.SetCollected(t[1], "Toys", id, GetItemCount(id, true) > 0);
-			end
-			coroutine.yield();
+		local collected;
+		for id,t in pairs(app.SearchForFieldContainer("toyID")) do
+			collected = t[1].collected;	-- Run the collected field's code.
 		end
+		coroutine.yield();
 
 		RefreshSkills();
 		app:RefreshDataCompletely("RefreshCollections");
@@ -13867,11 +13887,7 @@ app.events.ADDON_LOADED = function(addonName)
 	if not currentCharacter.Spells then currentCharacter.Spells = {}; end
 	if not currentCharacter.SpellRanks then currentCharacter.SpellRanks = {}; end
 	if not currentCharacter.Titles then currentCharacter.Titles = {}; end
-	
-	if not PlayerHasToy then
-		-- If Toys aren't account wide yet, then we must track them per character.
-		if not currentCharacter.Toys then currentCharacter.Toys = {}; end
-	end
+	if not currentCharacter.Toys then currentCharacter.Toys = {}; end
 
 	-- Update timestamps.
 	local now = time();
