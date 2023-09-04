@@ -3133,20 +3133,26 @@ local function AttachTooltip(self)
 				end
 
 				-- Does the tooltip have an itemlink?
-				local link = select(2, self:GetItem());
+				local itemName, link = self:GetItem();
 				if link then 
-					AttachTooltipSearchResults(self, 1, link, SearchForLink, link);
 					if owner and owner.cooldownWrapper then
 						local parent = owner:GetParent();
 						if parent then
 							parent = parent:GetParent();
 							if parent and parent.fanfareToys then
 								-- Toy Box, it needs a Show call.
+								-- Also the ToyBox UI is broken and returns the wrong item information when you look at any other item's tooltip before looking at the toybox.
+								local leftSide = _G[self:GetName() .. "TextLeft1"]:GetText();
+								if itemName ~= leftSide then link = select(2, GetItemInfo(leftSide)); end
+								AttachTooltipSearchResults(self, 1, link, SearchForLink, link);
 								self:Show();
 								return true;
 							end
 						end
 					end
+					
+					-- Normal item tooltip, not on the Toy Box.
+					AttachTooltipSearchResults(self, 1, link, SearchForLink, link);
 				end
 
 				-- If the owner has a ref, it's an ATT row. Ignore it.

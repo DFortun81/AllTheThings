@@ -28,15 +28,17 @@ app:GetWindow("Mounts", {
 				if #g < 1 then
 					local headers, mounts = {}, {};
 					for i,matches in pairs(app.SearchForFieldContainer("spellID")) do
-						if not mounts[i] then
-							local result = matches[1];
-							if (result.f and result.f == 100) or (result.filterID and result.filterID == 100) then
-								local mount = app.CreateMount(tonumber(i));
-								mounts[i] = self.BuildCategory(data, headers, matches, mount);
-								if mount.u and mount.u < 3 then
-									for j,o in ipairs(matches) do
-										if o.itemID and (not o.u or o.u >= 3) then
-											mount.u = nil;
+						if #matches > 0 then
+							if not mounts[i] then
+								local result = matches[1];
+								if (result.f and result.f == 100) or (result.filterID and result.filterID == 100) then
+									local mount = app.CreateMount(tonumber(i));
+									mounts[i] = self.BuildCategory(data, headers, matches, mount);
+									if mount.u and mount.u < 3 then
+										for j,o in ipairs(matches) do
+											if o.itemID and (not o.u or o.u >= 3) then
+												mount.u = nil;
+											end
 										end
 									end
 								end
