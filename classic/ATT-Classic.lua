@@ -3795,10 +3795,12 @@ end,
 		local t = row.ref;
 		local template,r = {},{};
 		for i,o in pairs(SearchForFieldContainer("spellID")) do
-			if ((o[1].f and o[1].f == app.FilterConstants.MOUNTS)
-			or (o[1].filterID and o[1].filterID == app.FilterConstants.MOUNTS)) and not r[i] then
-				tinsert(template, o[1]);
-				r[i] = 1;
+			if #o > 0 then
+				if ((o[1].f and o[1].f == app.FilterConstants.MOUNTS)
+				or (o[1].filterID and o[1].filterID == app.FilterConstants.MOUNTS)) and not r[i] then
+					tinsert(template, o[1]);
+					r[i] = 1;
+				end
 			end
 		end
 
@@ -5377,7 +5379,7 @@ GameTooltip.SetCurrencyToken = function(self, tokenID)
 			-- Determine which currencyID is the one that we're dealing with.
 			for currencyID,results in pairs(SearchForFieldContainer("currencyID")) do
 				-- Compare the name of the currency vs the name of the token
-				if results[1].text == name then
+				if #results > 0 and results[1].text == name then
 					if not GameTooltip_SetCurrencyToken then
 						GameTooltip:AddLine(results[1].text or RETRIEVING_DATA, 1, 1, 1);
 					end
@@ -9185,7 +9187,9 @@ local function RefreshCollections()
 		-- Refresh Toys
 		local collected;
 		for id,t in pairs(app.SearchForFieldContainer("toyID")) do
-			collected = t[1].collected;	-- Run the collected field's code.
+			if #t > 0 then
+				collected = t[1].collected;	-- Run the collected field's code.
+			end
 		end
 		coroutine.yield();
 
