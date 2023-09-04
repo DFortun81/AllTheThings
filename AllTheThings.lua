@@ -3024,8 +3024,8 @@ local ResolveFunctions = {
 			end
 			local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id, criteriaObject;
 			for criteriaID=1,GetAchievementNumCriteria(achievementID, true),1 do
-				criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id = GetAchievementCriteriaInfo(achievementID, criteriaID, true);
-				criteriaObject = app.CreateAchievementCriteria(id, {["achievementID"] = achievementID}, true);
+				criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, uniqueID = GetAchievementCriteriaInfo(achievementID, criteriaID, true);
+				criteriaObject = app.CreateAchievementCriteria(uniqueID, {["achievementID"] = achievementID}, true);
 				
 				-- SourceQuest
 				if criteriaType == 27 then
@@ -3035,8 +3035,8 @@ local ResolveFunctions = {
 						BuildGroups(c);
 						CacheFields(criteriaObject);
 						app.DirectGroupUpdate(c);
-						criteriaObject = app.CreateAchievementCriteria(id, {["achievementID"] = achievementID}, true);
-						-- app.PrintDebug("Add-Crit",achievementID,id,"=>",c.hash)
+						criteriaObject = app.CreateAchievementCriteria(uniqueID, {["achievementID"] = achievementID}, true);
+						-- app.PrintDebug("Add-Crit",achievementID,uniqueID,"=>",c.hash)
 					end
 					-- added to the quest(s) groups, not added to achievement
 					criteriaObject = nil;
