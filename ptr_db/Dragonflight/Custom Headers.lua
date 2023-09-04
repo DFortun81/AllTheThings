@@ -155,7 +155,7 @@ for key,value in pairs({
 	[-1000002] = "Interface/Icons/misc_arrowdown",
 	[-1000003] = "Interface/Icons/misc_arrowleft",
 	[-1000004] = _.asset("Category_Achievements"),
-	[-1000005] = "Interface/Icons/Inv_misc_map08",
+	[-1000005] = _.asset("Interface_Bonus_objectives"),
 	[-1000006] = _.asset("Interface_World_boss"),
 	[-1000007] = "Interface/Icons/ability_bossmagistrix_timewarp1",
 	[-1000008] = "Interface/MINIMAP/TRACKING/Class",

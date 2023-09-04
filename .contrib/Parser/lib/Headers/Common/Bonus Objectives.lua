@@ -5,7 +5,7 @@ BONUS_OBJECTIVES = createHeader({
 	export = true,	-- This is referenced in topHeaders
 	-- #endif
 	-- #if AFTER 5.0.1
-	icon = "Interface\\Icons\\Inv_misc_map08",
+	icon = _.asset("Interface_Bonus_objectives"),
 	-- #else
 	icon = "Interface\\Icons\\Inv_misc_map_01",
 	-- #endif
