@@ -10,20 +10,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				petbattle(ach(9069, {	-- An Awfully Big Adventure
-					["timeline"] = { "added 6.0.2" },
-					["collectible"] = false,
-					["filterID"] = BATTLE_PETS,
-					["groups"] = {
-						crit(17, {	-- Goz Banefury
-							["coord"] = { 56.6, 56.8, TWILIGHT_HIGHLANDS },
-							["cr"] = 66822,	-- Goz Banefury <Master Pet Tamer>
-						}),
-					},
-				})),
 				ach(5451, {	-- Consumed by Nightmare
 					["sourceQuest"] = 27380,	-- Nightmare
 					["timeline"] = { "added 4.0.3" },
+				}),
+				achWithRep(4886, 1172, {	-- Dragonmaw Clan
+					["races"] = HORDE_ONLY,
 				}),
 				ach(5482, {	-- Dragonmaw Tour of Duty
 					["timeline"] = { "added 4.0.3" },
@@ -132,16 +124,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				ach(5320, {	-- King of the Mountain (Alliance)
-					["sourceQuest"] = 27787,	-- Skullcrusher the Mountain (Alliance)
-					["timeline"] = { "added 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				ach(5321, {	-- King of the Mountain (Horde)
-					["sourceQuest"] = 27788,	-- Skullcrusher the Mountain (Horde)
-					["timeline"] = { "added 4.0.3" },
-					["races"] = HORDE_ONLY,
-				}),
 				ach(4960, {	-- Round Three. Fight!
 					["sourceQuest"] = 27868,	-- The Crucible of Carnage: The Twilight Terror!
 					["timeline"] = { "added 4.0.3" },
@@ -154,6 +136,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 27868,	-- The Crucible of Carnage: The Twilight Terror!
 						}),
 					},
+				}),
+				achWithRep(4885, 1174, {	-- Wildhammer Clan
+					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(5481, {	-- Wildhammer Tour of Duty
 					["timeline"] = { "added 4.0.3" },
@@ -181,20 +166,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					398,	-- Black Rat (PET!)
 					393,	-- Cockroach (PET!)
+					647,	-- Grizzly Squirrel (PET!)
 					648,	-- Huge Toad (PET!)
 					414,	-- Scorpid (PET!)
 					388,	-- Shore Crab (PET!)
 					418,	-- Water Snake (PET!)
 				}},
 				["groups"] = {
-					p(647, {	-- Grizzly Squirrel
-						["crs"] = { 62818 },
-					}),
 					pet(550),	-- Highlands Mouse (PET!)
 					pet(823),	-- Highlands Skunk (PET!)
 					pet(645, {	-- Highlands Turkey (PET!)
@@ -225,8 +207,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 					pet(549),	-- Yellow-Bellied Marmot (PET!)
 				},
-			})),
-			-- #endif
+			}),
+			n(FACTIONS, {
+				faction(1172, {	-- Dragonmaw Clan
+					["icon"] = "Interface\\Icons\\inv_misc_tabard_dragonmawclan",
+					["races"] = HORDE_ONLY,
+				}),
+				faction(1174, {	-- Wildhammer Clan
+					["icon"] = "Interface\\Icons\\inv_misc_tabard_wildhammerclan",
+					["races"] = ALLIANCE_ONLY,
+				}),
+			}),
 			n(FLIGHT_PATHS, {
 				fp(659, {	-- Bloodgulch, Twilight Highlands
 					["cr"] = 47156,	-- Bramok Gorewing <Wind Rider Master>
@@ -283,6 +274,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			petbattles({
+				n(66822, {	-- Goz Banefury <Master Pet Tamer>
+					["coord"] = { 56.6, 56.8, TWILIGHT_HIGHLANDS },
+				}),
+			}),
 			n(PROFESSIONS, {
 				prof(MINING, {
 					["description"] = "Elementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.",
@@ -292,16 +288,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				prof(FISHING, {
 					o(208311, {	-- Deepsea Sagefish School
-						i(22739, {	-- Tome of Polymorph: Turtle
-							["classes"] = { MAGE },
-							["f"] = RECIPES,
-						}),
+						i(22739),	-- Tome of Polymorph: Turtle (CI!)
 					}),
 					o(202777, {	-- Highland Guppy School
-						i(22739, {	-- Tome of Polymorph: Turtle
-							["classes"] = { MAGE },
-							["f"] = RECIPES,
-						}),
+						i(22739),	-- Tome of Polymorph: Turtle (CI!)
 					}),
 				}),
 			}),
@@ -1742,11 +1732,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27787, {	-- Skullcrusher the Mountain (A)
+					["qg"] = 46717,	-- The Hammer of Twilight
 					["sourceQuest"] = 27784,	-- The Hammer of Twilight
 					["coord"] = { 45.2, 87.8, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 46717,	-- The Hammer of Twilight
 					["groups"] = {
+						ach(5320),	-- King of the Mountain (Alliance)
 						i(63708),	-- Overly Intelligent Robe
 						i(63707),	-- Shaw's Finest Leggings
 						i(63706),	-- Coulton's Crushers
@@ -1755,10 +1746,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27788, {	-- Skullcrusher the Mountain (H)
 					["qg"] = 46717,	-- The Hammer of Twilight
+					["sourceQuest"] = 27786,	-- The Hammer of Twilight
 					["coord"] = { 45.3, 87.9, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 27786,	-- The Hammer of Twilight
 					["groups"] = {
+						ach(5321),	-- King of the Mountain (Horde)
 						i(63704),	-- Overly Intelligent Robes
 						i(63703),	-- Garona's Finest Leggings
 						i(63702),	-- Coulton's Crushers
@@ -2396,7 +2388,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"select", "itemID", 67312},	-- Formula: Magic Lamp (RECIPE!)
 						{"exclude","itemID",
 							6343,	-- Formula: Enchant Chest - Lesser Mana
-						    67308,	-- Formula: Enchanted Lantern
+						    67308,	-- Formula: Enchanted Lantern (RECIPE!)
 						},
 					},
 				}),

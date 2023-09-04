@@ -714,7 +714,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			header(HEADERS.AchCriteria, 16428.06, {	-- Creektooth Den
 				q(65279, {	-- By Royal Decree
-					["sourceQuests"] = { 65686 },	-- To the Azure Span
+					["sourceQuests"] = {
+						65686,	-- To the Azure Span
+						DF_ACCOUNT_CAMPAIGN_QUEST,
+					},
+					["sourceQuestNumRequired"] = 1,
 					["providers"] = {
 						{ "n", 183997 },	-- Gnoll Mon-Ark
 						{ "n", 185749 },	-- Gnoll Mon-Ark [Follows you Around]
@@ -722,7 +726,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 16.2, 20.9, THE_AZURE_SPAN },
 				}),
 				q(65306, {	-- Rot Rancher
-					["sourceQuests"] = { 65686 },	-- To the Azure Span
+					["sourceQuests"] = {
+						65686,	-- To the Azure Span
+						DF_ACCOUNT_CAMPAIGN_QUEST,
+					},
+					["sourceQuestNumRequired"] = 1,
 					["providers"] = {
 						{ "n", 183997 },	-- Gnoll Mon-Ark
 						{ "n", 185749 },	-- Gnoll Mon-Ark [Follows you Around]
@@ -1283,7 +1291,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 66.4, 33.3, THE_AZURE_SPAN },
 					["classes"] = { MAGE },
 					["g"] = {
-						i(200205),	-- Tome of Polymorph: Duck
+						i(200205),	-- Tome of Polymorph: Duck (CI!)
 					},
 				}),
 			}),
@@ -1310,38 +1318,39 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 			}),
 			------ Hemet Nesingwary ------
+			-- TODO: perhaps verify these further...? either has no quest pre-req, or requires DF_ACCOUNT_CAMPAIGN_QUEST | 65686
 			q(66972, {	-- Old Stonetusk
-				["sourceQuests"] = { 65686 },	-- To the Azure Span
+				-- ["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
 				["coord"] = { 45.0, 40.1, THE_AZURE_SPAN },
 				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
 			}),
 			q(66958, {	-- Protect And Herd
-				["sourceQuests"] = { 65686 },	-- To the Azure Span
+				-- ["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
 				["coord"] = { 18.8, 49.2, THE_AZURE_SPAN },
 				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
 			}),
 			q(66968, {	-- Pruning The Pack
-				["sourceQuests"] = { 65686 },	-- To the Azure Span
+				-- ["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
 				["coord"] = { 65.5, 25.9, THE_AZURE_SPAN },
 				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
 			}),
 			q(66957, {	-- A Shadow In The Ice
-				["sourceQuests"] = { 65686 },	-- To the Azure Span
+				-- ["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
 				["coord"] = { 46.7, 38.7, THE_AZURE_SPAN },
 				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
 			}),
 			q(66939, {	-- Hunting the Huntmaster
-				["sourceQuests"] = { 65686 },	-- To the Azure Span
+				-- ["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
 				["coord"] = { 62.7, 60.1, THE_AZURE_SPAN },
 				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
 			}),
 			q(66971, {	-- The Face of Death
-				["sourceQuests"] = { 65686 },	-- To the Azure Span
+				-- ["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
 				["coord"] = { 63.5, 15.6, THE_AZURE_SPAN },
 				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
@@ -1392,7 +1401,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(202200),	-- Solemn Seashell String
 				},
 			}),
-			------ Misc ------
+			------ Miscellaneous ------
 			q(67174, {	-- Arcane Detection
 				["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 192750 },	-- Miva Star-Eye

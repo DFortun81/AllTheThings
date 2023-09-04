@@ -3,32 +3,8 @@
 ---------------------------------------------------------------
 -- Everything in this file hasn't been implemented yet.
 
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, {
 	filter(RECIPES, {
-		n(CLASSES, {
-			cl(MAGE, {
-				tier(WOTLK_TIER, 0.3, {
-					i(44600, {	-- Tome of Polymorph: Serpent (Never made it out of beta)
-						["f"] = RECIPES,
-					}),
-				}),
-				tier(WOTLK_TIER, 3.5, {
-					i(44811, {	-- Tome of Polymorph: Turkey
-						["f"] = RECIPES,
-					}),
-				}),
-			}),
-			cl(HUNTER, {
-				tier(LEGION_TIER, 2.0, {
-					i(147770),	-- Tome of the PTR Beast
-				}),
-			}),
-			cl(SHAMAN, {
-				tier(LEGION_TIER, 0.3, {
-					i(136971),	-- Tome of Hex: Snake
-				}),
-			}),
-		}),
 		prof(ALCHEMY, {
 			tier(CLASSIC_TIER, {
 				i(5641),	-- Recipe: Cowardly Flight Potion
@@ -133,7 +109,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			tier(CLASSIC_TIER, {
 				i(16073),	-- Artisan Cookbook
 				i(6891),	-- Recipe: Herb Baked Egg
-				i(7678),	-- Recipe: Thistle Tea
 			}),
 			tier(WOTLK_TIER, {
 				-- 3.0.1
@@ -290,8 +265,11 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			tier(LEGION_TIER, {
 				-- 7.0.3
 				tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = {"created 7.0.3"} }, {
-					i(141061),	-- Technique: Glyph of the Abyssal (Item never made it into the game)
-					i(141065),	-- Technique: Glyph of the Terrorguard (Item never made it into the game)
+					-- #if BEFORE 10.1.5
+					i(141061),	-- Technique: Grimoire of the Abyssal (Item never made it into the game)
+					-- #endif
+					i(141065),	-- Technique: Grimoire of the Terrorguard (Item never made it into the game)
+					i(141065),	-- Technique: Grimoire of the Terrorguard
 				})),
 
 				-- 7.2.0
@@ -607,4 +585,4 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 		}),
 	}),
-}));
+});

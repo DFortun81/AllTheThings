@@ -47,17 +47,32 @@ namespace ATT
                 }
                 builder.AppendLine("};").AppendLine("-- #endif");
             }
-            File.WriteAllText(Path.Combine(databaseFolder, "00 - DB/ItemDB.lua"), builder.ToString());
+            File.WriteAllText(Path.Combine(databaseFolder, "00 - DB/ItemDB.lua"), builder.ToString(), Encoding.UTF8);
         }
 
         static void Export(StringBuilder builder, object o)
         {
-            if (o is Dictionary<string, object> dict) Export(builder, dict);
+            if (o is IDictionary<string, object> dict) Export(builder, dict);
             else if (o is Dictionary<long, object> longDict) Export(builder, longDict);
             else if (o is List<object> list) Export(builder, list);
-            else if (o is string str) builder.Append("\"").Append(o.ToString().Replace("\"", "\\\"")).Append("\"");
+            else if (o is string str) ExportStringValue(builder, o.ToString());
             else if (o is bool b) builder.Append(b ? 1 : 0);
             else builder.Append(o);
+        }
+
+        static StringBuilder ExportStringValue(StringBuilder builder, string value)
+        {
+            value = value.Replace("\n", "\\n").Replace("\r", "\\r");
+            if (value.StartsWith("~"))
+            {
+                return builder.Append(value.Substring(1));
+            }
+            else if (value.StartsWith("GetSpellInfo") || value.StartsWith("GetItem") || value.StartsWith("select(") || value.StartsWith("C_")
+                || value.StartsWith("_."))
+            {
+                return builder.Append(value);
+            }
+            return builder.Append("\"").Append(value).Append("\"");
         }
 
         static void Export(StringBuilder builder, List<object> list)
@@ -72,7 +87,7 @@ namespace ATT
             builder.Append("}");
         }
 
-        static void Export<T>(StringBuilder builder, Dictionary<T, object> dict)
+        static void Export<T>(StringBuilder builder, IDictionary<T, object> dict)
         {
             builder.Append("{");
             var i = 0;

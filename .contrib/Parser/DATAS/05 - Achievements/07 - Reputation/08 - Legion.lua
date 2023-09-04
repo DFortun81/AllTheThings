@@ -26,9 +26,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 		}),
 		ach(12292),		-- Highmountain Tribe
 		ach(11545),		-- Legionfall Commander
-		ach(12081),		-- Officer of the Light
 		ach(11653),		-- Paragon of the Broken Isles
-		ach(12076),		-- Protector of the Argussian Reach
 		ach(10778),		-- The Nightfallen
 		ach(11652),		-- The Reputable
 	}),

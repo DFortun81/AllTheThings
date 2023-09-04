@@ -3,7 +3,4 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, tier(BFA_TIER, {
-	-- #if ANYCLASSIC
-	["u"] = BFA_PHASE_ONE,
-	-- #endif
-}))
+}));

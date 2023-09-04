@@ -6,6 +6,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		-- #if BEFORE MOP
 		["lore"] = "Recently, a night elf druid named Naralex discovered a network of underground caverns within the heart of the Barrens. Dubbed the 'Wailing Caverns', these natural caves were filled with steam fissures which produced long, mournful wails as they vented. Naralex believed he could use the caverns' underground springs to restore lushness and fertility to the Barrens - but to do so would require siphoning the energies of the fabled Emerald Dream.\n\nOnce connected to the Dream, however, the druid's vision somehow became a nightmare. Soon the Wailing Caverns began to change - the waters turned foul and the once-docile creatures inside metamorphosed into vicious, deadly predators. It is said that Naralex himself still resides somewhere inside the heart of the labyrinth, trapped beyond the edges of the Emerald Dream. Even his former acolytes have been corrupted by their master's waking nightmare - transformed into the wicked Druids of the Fang.",
 		-- #endif
+		["zone-text-areaID"] = 718,	-- Wailing Caverns
+		["sins"] = {
+			"The Wailing Caverns",
+		},
 		["mapID"] = WAILING_CAVERNS,
 		-- #if AFTER CATA
 		["coord"] = { 55.19, 66.09, 11 },	-- Wailing Caverns, Northern Barrens
@@ -67,7 +71,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							objective(4, {	-- 0/7 Deviate Dreadfang slain
 								["provider"] = { "n", 5056 },	-- Deviate Dreadfang
 							}),
-							i(6476, {	-- Pattern: Deviate Scale Belt
+							i(6476, {	-- Pattern: Deviate Scale Belt (RECIPE!)
 								["timeline"] = { "removed 4.0.3.13277" },
 							}),
 							i(8071, {	-- Sizzle Stick
@@ -244,10 +248,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["coord"] = { 45.9, 35.7, THE_BARRENS },
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(6474, {	-- Pattern: Deviate Scale Cloak
+						i(6474, {	-- Pattern: Deviate Scale Cloak (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(6475, {	-- Pattern: Deviate Scale Gloves
+						i(6475, {	-- Pattern: Deviate Scale Gloves (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
@@ -264,12 +268,21 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				i(6443, {	-- Deviate Hide
 					["description"] = "Drops from Deviate creatures in the Wailing Caverns.",
 				}),
-				i(10413, {	-- Gloves of the Fang
-					["cr"] = 3840,	-- Druid of the Fang
-				}),
-				i(132743, {	-- Slither-Scale Gauntlets
-					["timeline"] = { "added 7.0.3.22248" },
-					["cr"] = 3840,	-- Druid of the Fang
+				n(3840, {	-- Druid of the Fang
+					i(10413),	-- Gloves of the Fang
+					i(132743, {	-- Slither-Scale Gauntlets
+						["timeline"] = { "added 7.0.3.22248" },
+					}),
+					i(208015, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Stuffed Deviate Scale Pouch
+						i(208016),	-- Deviate Scale Pouch
+						i(208020),	-- Dagmire Gloves
+						i(208018),	-- Fangblade
+						i(6476),	-- Pattern: Deviate Scale Belt (RECIPE!)
+						i(6474),	-- Pattern: Deviate Scale Cloak (RECIPE!)
+						i(6475),	-- Pattern: Deviate Scale Gloves (RECIPE!)
+						i(208019),	-- Quagmire Trudgers
+						i(208021),	-- Sizzling Stick
+					})),
 				}),
 			}),
 			prof(SKINNING, {
@@ -374,10 +387,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			e(481, {	-- Mutanus the Devourer
 				["creatureID"] = 3654,
 				["groups"] = {
-					classicAch(630, {	-- Wailing Caverns
+					ach(630, {	-- Wailing Caverns
 						-- #if BEFORE WRATH
 						["sourceQuest"] = 6981,	-- The Glowing Shard
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5039, {	-- Wailing Caverns Guild Run

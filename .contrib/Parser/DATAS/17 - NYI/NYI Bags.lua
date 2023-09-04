@@ -3,11 +3,16 @@
 ---------------------------------------------------------------
 -- Everything in this file hasn't been implemented yet.
 
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, {
 	filter(BAGS, {
 		tier(CLASSIC_TIER, {
 			-- 1.x.x
 			n(P1xx, {
+				i(21194),	-- D'Sak's Big Sack
+				i(21193),	-- D'Sak's Sack
+				i(21195),	-- D'Sak's Sacktastic
+				i(21313),	-- D'Sak's Small bag
+				i(21857),	-- Test Herb Bag
 				i(22233),	-- Zigris' Footlocker
 			}),
 		}),
@@ -49,4 +54,4 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 		}),
 	}),
-}));
+});

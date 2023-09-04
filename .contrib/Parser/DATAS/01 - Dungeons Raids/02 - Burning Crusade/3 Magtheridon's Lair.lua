@@ -4,6 +4,9 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(747, {	-- Magtheridon's Lair
 		["lore"] = "After the Legion came to Outland, Magtheridon controlled all but small pockets of Outland. Even so, he was taken largely by surprise when Illidan and his allies conquered the Black Temple. Many believed that Magtheridon had been slain in the attack, but, when Illidan discovered that Magtheridon's blood had a transformative, corrupting effect on orcs, the beaten pit lord was dragged to Hellfire Citadel.\n\nBound by chains both physical and magical, Magtheridon survives, at the brink of death. Each day, Illidan's minions drain his tainted blood, pooling it for a purpose as malevolent as Magtheridon himself: the creation of a new army of barbaric fel orcs.",
+		-- #if BEFORE WRATH
+		["zone-text-areaID"] = 3836,	-- Magtheridon's Lair
+		-- #endif
 		["coord"] = { 47.51, 52.08, HELLFIRE_PENINSULA },	-- Magtheridon's Lair, Hellfire Peninsula
 		["mapID"] = MAGTHERIDONS_LAIR,
 		["sharedLockout"] = 1,
@@ -50,11 +53,8 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							["timeline"] = { "removed 2.3.0" },
 							-- #endif
 						}),
-						classicAch(432, {	-- Champion of the Naaru (Achievement)
+						ach(432, {	-- Champion of the Naaru (Achievement)
 							["sourceQuest"] = 10888,	-- Trial of the Naaru: Magtheridon
-							-- #if BEFORE WRATH
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
-							-- #endif
 							["timeline"] = { "removed 3.0.1" },
 						}),
 						title(36, {	-- Champion of the Naaru
@@ -83,7 +83,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 			e(1566, {
 				["creatureID"] = 17257,
 				["groups"] = {
-					classicAch(693, {	-- Magtheridon's Lair
+					ach(693, {	-- Magtheridon's Lair
 						-- #if BEFORE WRATH
 						["sourceQuests"] = {
 							11002,	-- The Fall of Magtheridon
@@ -91,7 +91,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							10888,	-- Trial of the Naaru: Magtheridon
 							11116,	-- Trial of the Naaru: (QUEST FLAG)
 						},
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5087, {	-- Magtheridon's Lair Guild Run
@@ -126,12 +125,10 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					i(28778),	-- Terror Pit Girdle
 					i(28789),	-- Eye of Magtheridon
 					i(34846, {	-- Black Sack of Gems
-						-- #if ANYCLASSIC
 						-- #if BEFORE WRATH
 						["description"] = "The epic gems may not be available until Black Temple is released, however, some users have reported getting one out of this bag already.",
 						-- #endif
 						["timeline"] = { "added 2.4.0.7923" },
-						-- #endif
 						["groups"] = {
 							i(32227),	-- Crimson Spinel
 							i(32228),	-- Empyrean Sapphire

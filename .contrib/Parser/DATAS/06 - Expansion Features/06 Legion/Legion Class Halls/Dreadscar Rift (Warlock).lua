@@ -711,7 +711,6 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["coord"] = { 35.6, 38.4, DREADSCAR_RIFT },
 						["g"] = {
 							mount(232412),	-- Netherlord's Chaotic Wrathsteed (MOUNT!)
-							spell(241851),	-- Netherlord's Chaotic Wrathsteed
 						},
 					})),
 					-- Misc
@@ -802,6 +801,15 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							["provider"] = { "n", 110408 },	-- Murr
 							["coord"] = { 57.6, 52.6, DREADSCAR_RIFT },
 						}),
+					}),
+					n(106216, {	-- Imp Mother Dyala <Recruiter>
+						["coord"] = { 65.0, 33.0, DREADSCAR_RIFT },
+						["g"] = {
+							i(207178, {	-- Grimoire of the Darkfire Imp (CI!)
+								["timeline"] = { ADDED_10_1_5 },
+								["cost"] = 150000000,	-- 15,000g
+							}),
+						},
 					}),
 				}),
 				n(VENDORS, {

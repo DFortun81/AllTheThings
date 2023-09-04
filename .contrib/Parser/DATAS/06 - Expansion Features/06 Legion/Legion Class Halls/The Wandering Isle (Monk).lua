@@ -216,6 +216,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							41003,	-- The Emperor's Gift
 							40570,	-- Into The Heavens
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 112338 },	-- Caydori Brightstar
 						["coord"] = { 50.3, 59.0, THE_WANDERING_ISLE },
 						["g"] = {
@@ -714,7 +715,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["provider"] = { "n", 120726 },	-- Waterspeaker Ryuli
 						["coord"] = { 73.9, 88.9, KUN_LAI_SUMMIT },
 						["g"] = {
-							i(142225),	-- Ban-Lu, Grandmaster's Companion (MOUNT!)
+							mount(229385),	-- Ban-Lu, Grandmaster's Companion (MOUNT!)
 						},
 					})),
 					-- Misc
@@ -797,9 +798,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							i(139737, {	-- Grandmaster's Waistband
 								["cost"] = 5000000,	-- 500g
 							}),
-							i(136800, {	-- Meditation Manual: Zen Flight
-								["f"] = RECIPES,
-							}),
+							i(136800),	-- Meditation Manual: Zen Flight (CI!)
 							i(140564),	-- Rod of the Broken Temple
 							i(140551),	-- Staff of the Broken Temple
 						},

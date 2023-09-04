@@ -20,7 +20,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["groups"] = {
 			m(ECHO_ISLES, {
 				["lore"] = "The Echoes Isles are the ancestral home of the Darkspear Trolls. Vol'jin, the leader of the trolls, has relocated here after tensions between Hellscream and the trolls.",
+				-- #if AFTER WRATH
 				["icon"] = "Interface\\Icons\\Achievement_Character_Troll_Male",
+				-- #else
+				["icon"] = [[~_.asset("Achievement_Character_Troll_Male")]],
+				-- #endif
 				["timeline"] = { "added 4.0.3.13277" },
 				["maps"] = { 464 },	-- Spitescale Cavern
 				["groups"] = {
@@ -847,8 +851,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			m(VALLEY_OF_TRIALS, {
 				["lore"] = "The Valley of Trials in southern Durotar is where all young orc adventurers begin their journey. Within the valley, they are safe from external threats while taking on challenges that enable them to get used to their new status as recruits of the Horde.",
+				-- #if BEFORE 6.0.0
+				-- CRIEVE NOTE: I actually have no idea when they added the proper mapID for this subzone.
+				["zone-text-areas"] = {
+					363,	-- Valley of Trials
+					364,	-- The Den
+					365,	-- Burning Blade Coven
+				},
+				-- #endif
 				-- #if AFTER WRATH
 				["icon"] = "Interface\\Icons\\Achievement_Character_Orc_Male",
+				-- #else
+				["icon"] = [[~_.asset("Achievement_Character_Orc_Male")]],
 				-- #endif
 				["maps"] = { 2 },	-- Burning Blade Coven
 				["groups"] = {
@@ -1441,6 +1455,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["groups"] = {
 								objective(1, {	-- 0/1 Thazz'ril's Pick
 									["provider"] = { "i", 16332},
+									["providers"] = {
+										{ "i",  16332 },	-- Thazz'ril's Pick
+										{ "o", 178087 },	-- Thazz'ril's Pick
+									},
 									["coord"] = { 43.8, 53.8, DUROTAR },
 								}),
 							},
@@ -1476,7 +1494,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 3145,	-- Zureetha Fargaze
 							["coord"] = { 42.85, 69.14, DUROTAR },
 							["timeline"] = { "removed 4.0.3" },
+							-- #if BEFORE 3.3.0
 							["classes"] = exclude(WARLOCK, ALL_CLASSES),
+							-- #endif
 							["races"] = HORDE_ONLY,
 							["lvl"] = 2,
 							["groups"] = {
@@ -1503,32 +1523,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(1485, {	-- Vile Familiars (Part 1 - Warlocks only!)
 							["qg"] = 5765,	-- Ruzan
 							["coord"] = { 42.6, 69.0, DUROTAR },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 3.3.0" },
 							["classes"] = { WARLOCK },
 							["races"] = HORDE_ONLY,
+							-- #if BEFORE 3.3.0
 							["groups"] = {
 								objective(1, {	-- 0/8 Vile Familiar Head
 									["provider"] = { "i", 6487 },	-- Vile Familiar Head
 									["cr"] = 3101,	-- Vile Familiar
 								}),
-								-- #if BEFORE 4.0.3
 								recipe(688),	-- Summon Imp
-								-- #endif
 							},
+							-- #endif
 						}),
 						q(1499, {	-- Vile Familiars (Part 2 - Warlocks only!)
 							["qg"] = 5765,	-- Ruzan
 							["sourceQuest"] = 1485,	-- Vile Familiars (Part 1 - Warlocks only!)
 							["coord"] = { 42.6, 69.0, DUROTAR },
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 3.3.0" },
 							["classes"] = { WARLOCK },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(4925, {	-- Primitive Hand Blade
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { "removed 3.3.0" },
 								}),
 								i(5778, {	-- Primitive Walking Stick
-									["timeline"] = { "removed 4.0.3" },
+									["timeline"] = { "removed 3.3.0" },
 								}),
 							},
 						}),
@@ -1562,17 +1582,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
-				pet(635),	-- Adder
-				pet(468),	-- Creepy Crawly
-				pet(467),	-- Dung Beetle
-				pet(448),	-- Hare
-				pet(466),	-- Spiny Lizard
-				pet(420),	-- Toad
-				pet(418),	-- Water Snake
-			})),
-			-- #endif
+			battlepets({
+				pet(635),	-- Adder (PET!)
+				pet(468),	-- Creepy Crawly (PET!)
+				pet(467),	-- Dung Beetle (PET!)
+				pet(448),	-- Hare (PET!)
+				pet(466),	-- Spiny Lizard (PET!)
+				pet(420),	-- Toad (PET!)
+				pet(418),	-- Water Snake (PET!)
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["128:110:464:33"] = 817,	-- Skull Rock
@@ -1746,15 +1764,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(7129, {	-- Brutal Gauntlets
 							["timeline"] = { "removed 4.0.3" },
-							-- #if ANYCLASSIC
-							["OnUpdate"] = [[function(t)
-								if _.Level >= 40 then
-									t.f = ]] .. PLATE .. [[;
-								else
-									t.f = ]] .. MAIL .. [[;
-								end
-							end]],
-							-- #endif
 						}),
 					},
 				}),
@@ -2238,7 +2247,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(32671, {	-- Learn To Ride
 					["description"] = "This quest is available to Trolls upon reaching level 10.",
-					["timeline"] = { "added 5.2.0.16486" },
+					["timeline"] = { "added 5.2.0.16486", REMOVED_10_1_5 },
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
 					["lockCriteria"] = { 1,
@@ -3036,7 +3045,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25236, {	-- Thunder Down Under
 					["qg"] = 39379,	-- Gor the Enforcer
-					["sourceQuest"] = 25196,	-- The Dranosh'ar Blockade
 					["coord"] = { 44.9, 14.7, DUROTAR },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
@@ -3267,6 +3275,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 			}),
+			-- #if BEFORE TBC
+			n(RIDING_TRAINER, {
+				n(7953, {	-- Xar'Ti <Raptor Riding Trainer>
+					["coord"] = { 55.3, 75.5, DUROTAR },
+					["races"] = { ORC, TROLL, UNDEAD },
+
+					-- Available to Trolls without faction requirements.
+					["minReputation"] = { 530, EXALTED },	-- Darkspear Trolls, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. TROLL .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
+					["groups"] = {
+						recipe(10861, {	-- Raptor Riding
+							["cost"] = 200000,
+							["lvl"] = 40,
+						}),
+					},
+				}),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(3881, {	-- Grimtak
 					-- #if AFTER CATA
@@ -3276,7 +3307,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(5483),	-- Recipe: Scorpid Surprise
+						i(5483),	-- Recipe: Scorpid Surprise (RECIPE!)
 					},
 				}),
 				n(113615, {	-- Ravika <Darkspear Quartermaster> Legion Version
@@ -3310,8 +3341,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6368),	-- Recipe: Rainbow Fin Albacore
-						i(6326),	-- Recipe: Slitherskin Mackerel
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+						i(6326),	-- Recipe: Slitherskin Mackerel (RECIPE!)
 					},
 				}),
 				n(7952, {	-- Zjolnir <Raptor Handler>

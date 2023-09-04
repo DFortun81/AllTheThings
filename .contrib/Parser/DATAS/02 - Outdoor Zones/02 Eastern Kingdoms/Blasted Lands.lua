@@ -41,8 +41,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					635,	-- Adder (PET!)
 					415,	-- Fire Beetle (PET!)
@@ -54,8 +53,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 59.6, 60.8, BLASTED_LANDS },
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, {
 				exploration(1441, "185:155:310:133"),	-- Altar of Storms
@@ -1824,7 +1822,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(9300, {	-- Recipe: Elixir of Demonslaying
+						i(9300, {	-- Recipe: Elixir of Demonslaying (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -1934,7 +1932,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(10593, {	-- Imperfect Draenethyst Fragment (drops from pretty much the whole zone)
 					["description"] = "A rare zone drop from any mob in the zone.",
 				}),
-				i(15727, {	-- Pattern: Heavy Scorpid Vest
+				i(15727, {	-- Pattern: Heavy Scorpid Vest (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					-- #if AFTER TBC
 					["crs"] = {

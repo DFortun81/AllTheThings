@@ -4,7 +4,7 @@
 
 root(ROOTS.ExpansionFeatures,
 	tier(WOD_TIER, {
-		n(LEGENDARY_QUESTLINE, {
+		n(QUALITY_LEGENDARY, {
 			["title"] = "Darkness Incarnate",
 			["icon"] = 1097305,
 			["isRaid"] = true,

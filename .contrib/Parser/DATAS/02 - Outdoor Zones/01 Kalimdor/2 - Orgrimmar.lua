@@ -2517,7 +2517,7 @@ local TIER_ELEVEN_COMMON_GROUPS = {
 	i(57923),	-- Hermit's Lamp
 	i(58122),	-- Hillside Striders
 	i(68812),	-- Hornet-Sting Band
-	i(57921),	-- Incense Infused Cummerbund
+	i(57921),	-- Incense-Infused Cummerbund
 	i(58160),	-- Leggings of Charity
 	i(58140),	-- Leggings of Late Blooms
 	i(58127),	-- Leggings of Soothing Silence
@@ -2641,17 +2641,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				ach(1836, applyclassicphase(TBC_PHASE_ONE, {	-- Old Crafty
+				applyclassicphase(TBC_PHASE_ONE, ach(1836, {	-- Old Crafty
 					["provider"] = { "i", 34486 },	-- Old Crafty
-					["requireSkill"] = FISHING,
 					-- #if BEFORE WRATH
 					["description"] = "Fish up Old Crafty in Orgrimmar.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
+					["requireSkill"] = FISHING,
 				})),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					467,	-- Dung Beetle (PET!)
 					471,	-- Robo-Chick (PET!)
@@ -2659,25 +2657,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					420,	-- Toad (PET!)
 					418,	-- Water Snake (PET!)
 				}},
-			})),
-			-- #endif
+			}),
 			n(FACTIONS, {
 				faction(530, {	-- Darkspear Trolls
 					-- #if AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Troll_Male",
 					-- #else
-					["icon"] = asset("Achievement_Character_Troll_Male"),
+					["icon"] = [[~_.asset("Achievement_Character_Troll_Male")]],
 					-- #endif
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForCityFactionReputation,
 					-- #endif
 					["races"] = HORDE_ONLY,
 				}),
-				faction(76, {	-- Orgrimmar
+				faction(FACTION_ORGRIMMAR, {
 					-- #if AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Orc_Male",
 					-- #else
-					["icon"] = asset("Achievement_Character_Orc_Male"),
+					["icon"] = [[~_.asset("Achievement_Character_Orc_Male")]],
 					-- #endif
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForCityFactionReputation,
@@ -2771,7 +2768,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["timeline"] = { "added 2.3.0.7561" },
 					}),
 				}),
-				-- #if NOT ANYCLASSIC
+				prof(HERBALISM, {
+					n(3404, {	-- Jandi <Herbalism Trainer>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 34.6, 63.2, ORGRIMMAR },
+							-- #else
+							{ 55.6, 39.6, ORGRIMMAR },
+							-- #endif
+						},
+						["races"] = HORDE_ONLY,
+						["groups"] = appendGroups(CLASSIC_HERBALISM,
+							-- #if AFTER CATA
+							CATA_HERBALISM
+							-- #else
+							{}
+							-- #endif
+						),
+					}),
+				}),
+				-- #if AFTER WRATH
 				prof(INSCRIPTION, {
 					n(30706, {	-- Jo'mah <Inscription Trainer>
 						["coord"] = { 35.6, 69.2, ORGRIMMAR },
@@ -2781,6 +2797,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				-- #endif
+				-- #if AFTER CATA
 				prof(JEWELCRAFTING, {
 					n(46675, {	-- Lugrah <Jewelcrafting Trainer>
 						["coord"] = { 72.5, 34.3, ORGRIMMAR },
@@ -2791,6 +2808,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								["timeline"] = { ADDED_10_0_7 },
 							}),
 						},
+					}),
+				}),
+				-- #endif
+				prof(LEATHERWORKING, {
+					n(3365, {	-- Karolek <Leatherworking Trainer>
+						["coords"] = {
+							-- #if BEFORE CATA
+							{ 62.8, 44.6, ORGRIMMAR },
+							-- #else
+							{ 60.8, 54.8, ORGRIMMAR },
+							-- #endif
+						},
+						["races"] = HORDE_ONLY,
+						["groups"] = CLASSIC_CATA_LEGION_LEATHERWORKING,
+					}),
+				}),
+				prof(MINING, {
+					n(3357, {	-- Makaru <Mining Trainer>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 72.4, 35.6, ORGRIMMAR },
+							-- #else
+							{ 73.0, 27.0, ORGRIMMAR },
+							-- #endif
+						},
+						["races"] = HORDE_ONLY,
+						["groups"] = CLASSIC_CATA_MINING,
 					}),
 				}),
 			}),
@@ -2952,7 +2996,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 168431,	-- Warlord Breka Grimaxe
 					["coord"] = { 48.3, 71.4, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -3106,7 +3150,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Complete the prerequisite quest, switch to another timeline, then switch back to Burning Crusade and you will get this quest.",
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["repeatable"] = true,
 				}),
 				q(60123, {	-- Burning Crusade: To Outland!
@@ -3114,12 +3158,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["isBreadcrumb"] = true,
 				}),
 				q(29219, {	-- Bwemba's Spirit
 					["qg"] = 53081,	-- Bwemba
+					-- #if BEFORE 7.0.1
 					["sourceQuest"] = 29157,	-- The Zandalari Menace
+					-- #endif
 					["coord"] = { 32.6, 68.6, ORGRIMMAR },
 					["timeline"] = { "added 4.1.0.13726" },
 					["races"] = HORDE_ONLY,
@@ -3147,7 +3193,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 				}),
@@ -3516,7 +3562,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(32673, {	-- Learn To Ride (Goblin)
 					["description"] = "This quest is available to Goblins upon reaching level 10.",
-					["timeline"] = { "added 5.2.0.16486" },
+					["timeline"] = { "added 5.2.0.16486", REMOVED_10_1_5 },
 					["races"] = { GOBLIN },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
@@ -3530,7 +3576,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(32669, {	-- Learn To Ride (Orc)
 					["description"] = "This quest is available to Orcs upon reaching level 10.",
-					["timeline"] = { "added 5.2.0.16486" },
+					["timeline"] = { "added 5.2.0.16486", REMOVED_10_1_5 },
 					["races"] = { ORC },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
@@ -3544,7 +3590,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(32667, {	-- Learn To Ride (Pandaren)
 					["description"] = "This quest is available to Pandaren upon reaching level 10.",
-					["timeline"] = { "added 5.2.0.16486" },
+					["timeline"] = { "added 5.2.0.16486", REMOVED_10_1_5 },
 					["races"] = { PANDAREN_HORDE },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
@@ -3575,7 +3621,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["repeatable"] = true,
 				}),
 				q(32471, {	-- Light Camera Action (H)
@@ -3654,7 +3700,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["repeatable"] = true,
 				}),
 				q(60126, {	-- Mists of Pandaria: To Pandaria!
@@ -3662,7 +3708,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["isBreadcrumb"] = true,
 				}),
 				q(1509, {	-- News of Dogran (1/2)
@@ -4149,7 +4195,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["repeatable"] = true,
 				}),
 				q(1944, {	-- Waters of Xavian
@@ -4248,14 +4294,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["description"] = "Complete the prerequisite quest, switch to another timeline, then switch back to Wrath of the Lich King and you will get this quest.",
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["repeatable"] = true,
 				}),
 				q(60097, {	-- Wrath of the Lich King: To Northrend!
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["isBreadcrumb"] = true,
 				}),
 				q(2382, {	-- Wrenix of Ratchet
@@ -4307,6 +4353,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(134831, {	-- Doomsayer's Robes (TOY!)
 							["timeline"] = { "added 7.0.3.22248" },
+						}),
+					},
+				}),
+			}),
+			-- #endif
+			-- #if BEFORE TBC
+			n(RIDING_TRAINER, {
+				n(4752, {	-- Kildar <Wolf Riding Instructor>
+					["coord"] = { 69.2, 13.0, ORGRIMMAR },
+					["races"] = { ORC, TROLL, UNDEAD },
+
+					-- Available to Orcs without faction requirements.
+					["minReputation"] = { 76, EXALTED },	-- Orgrimmar, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. ORC .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
+					["groups"] = {
+						recipe(825, {	-- Wolf Riding
+							["cost"] = 200000,
+							["lvl"] = 40,
 						}),
 					},
 				}),
@@ -4502,7 +4571,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 									["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
 								}),
 							}),
-							n(-386, {	-- Trinkets
+							n(TRINKET, {
 								i(172849, {	-- Corrupted Aspirant's Badge
 									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
 								}),
@@ -4551,10 +4620,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(104324, {	-- Foot Ball (TOY!)
 							["timeline"] = { "added 5.4.0.17227" },
 						}),
-						i(69895, {	-- Green Balloon Toy (TOY!)
+						applyevent(EVENTS.CHILDRENS_WEEK, i(69895, {	-- Green Balloon Toy (TOY!)
 							["timeline"] = { "added 4.1.0.13875" },
-							["u"] = CHILDRENS_WEEK,
-						}),
+						})),
 						i(137663, {	-- Soft Foam Sword (TOY!)
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
@@ -4573,10 +4641,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(45057, {	-- Wind-Up Train Wrecker Toy (TOY!)
 							["timeline"] = { "added 3.1.0.9626" },
 						}),
-						i(69896, {	-- Yellow Balloon Toy (TOY!)
+						applyevent(EVENTS.CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon Toy (TOY!)
 							["timeline"] = { "added 4.1.0.13875" },
-							["u"] = CHILDRENS_WEEK,
-						}),
+						})),
 					},
 				}),
 				n(69977, {	-- Blood Guard Zar'shi <Ruthless Gladiator>
@@ -4587,7 +4654,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{"sub", "pvp_gear_base", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR },
 						{"merge"},	-- Subroutines are automatically finalized, so merge back for further processing
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", NECK, FINGER, -386 },	-- Exclude Neck, Finger and Trinkets
+						{"exclude", "headerID", NECK, FINGER, TRINKET },	-- Exclude Neck, Finger and Trinkets
 					},
 				}),
 				n(54659, {	-- Blood Guard Zar'shi Original CATA S10 ELITE VENDOR
@@ -4776,7 +4843,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{"sub", "pvp_gear_base", CATA_TIER, SEASON_VICIOUS, PVP_GLADIATOR },
 						{"merge"},	-- Subroutines are automatically finalized, so merge back for further processing
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", NECK, FINGER, -386 },	-- Exclude Neck, Finger and Trinkets
+						{"exclude", "headerID", NECK, FINGER, TRINKET },	-- Exclude Neck, Finger and Trinkets
 						{"finalize"},	-- Push the Set items to the finalized list.
 					},
 				}),
@@ -4818,8 +4885,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 7.3.5.25692" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				-- #if NOT ANYCLASSIC
@@ -5146,10 +5213,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(5643, {	-- Recipe: Great Rage Potion
+						i(5643, {	-- Recipe: Great Rage Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5640, {	-- Recipe: Rage Potion
+						i(5640, {	-- Recipe: Rage Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -5209,17 +5276,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				applyholiday(WOW_ANNIVERSARY, n(110035, {	-- Historian Ju'pa
+				applyevent(EVENTS.WOW_ANNIVERSARY, n(110035, {	-- Historian Ju'pa
 					["coord"] = { 36.6, 74.6, ORGRIMMAR },
 					["timeline"] = { "added 7.1.0.22810" },
 					["races"] = HORDE_ONLY,
-					["u"] = WOW_ANNIVERSARY,
 					["sym"] = {
-						{"select", "headerID", FIFTEENTH_ANNIVERSARY },	-- Select WoW's 15th Anniversary
-						{"pop"},										-- Discard Header and aquire their children
-						{"where", "headerID", VENDORS },				-- Select Vendors
-						{"pop"},										-- Discard Header and aquire their children
-						{"where", "npcID", 158061},						-- Select Historian Ma'di
+						{"select", "npcID", 158061},					-- Select Historian Ma'di
 						{"pop"},										-- Discard Header and aquire their children
 					},
 				})),
@@ -5287,8 +5349,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(3331, {	-- Kareth
@@ -5329,11 +5391,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(189719, {	-- Barbed Collar of the Incubus
-							["timeline"] = { ADDED_9_2_0 },
+						i(189719, {	-- Tattered Collar of the Incubus
+							["timeline"] = { ADDED_9_2_0, REMOVED_10_0_5 },
 						}),
-						i(189720, {	-- Barbed Collar of the Succubus
-							["timeline"] = { ADDED_9_2_0 },
+						i(189720, {	-- Tattered Collar of the Succubus
+							["timeline"] = { ADDED_9_2_0, REMOVED_10_0_5 },
 						}),
 					},
 				}),
@@ -5380,7 +5442,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(8122, {	-- Kizzak Sparks
 					["coord"] = { 57.8, 56.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
+					-- #if BEFORE 10.1
 					["description"] = "This NPC is only available on July 4th (US) or September 30th (EU).",
+					-- #else
+					["description"] = "This NPC is only available on July 4th.",
+					-- #endif
 					["groups"] = {
 						i(8626),	-- Blue Sparkler
 						i(8625),	-- White Sparkler
@@ -5412,10 +5478,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(13478, {	-- Recipe: Elixir of Superior Defense
+						i(13478, {	-- Recipe: Elixir of Superior Defense (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5642, {	-- Recipe: Free Action Potion
+						i(5642, {	-- Recipe: Free Action Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -6599,7 +6665,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sym"] = {
 						{"sub", "pvp_gear_base", CATA_TIER, SEASON_CATACLYSMIC, PVP_GLADIATOR },{"merge"},	-- Subroutines are automatically finalized
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", NECK, FINGER, -386 },	-- Exclude Neck, Finger and Trinkets
+						{"exclude", "headerID", NECK, FINGER, TRINKET },	-- Exclude Neck, Finger and Trinkets
 					},
 				}),
 				n(3333, {	-- Shankys <Fishing Supplies>
@@ -6610,9 +6676,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(17062),	-- Recipe: Mithril Head Trout
-						i(6368),	-- Recipe: Rainbow Fin Albacore
-						i(6369),	-- Recipe: Rockscale Cod
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
 						i(6365),	-- Strong Fishing Pole
 					},
 				}),
@@ -6621,35 +6687,35 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						chefsaward(3, i(65426)),	-- Recipe: Baked Rockfish
-						chefsaward(3, i(65427)),	-- Recipe: Basilisk Liverdog
-						chefsaward(3, i(65429)),	-- Recipe: Beer-Basted Crocolisk
-						chefsaward(3, i(65424)),	-- Recipe: Blackbelly Sushi
-						chefsaward(3, i(65411)),	-- Recipe: Broiled Mountain Trout
-						chefsaward(3, i(65431)),	-- Recipe: Chocolate Cookie
-						chefsaward(3, i(65430)),	-- Recipe: Crocolisk Au Gratin
-						chefsaward(3, i(65422)),	-- Recipe: Delicious Sagefish Tail
-						chefsaward(3, i(65408)),	-- Recipe: Feathered Lure
-						chefsaward(3, i(65423)),	-- Recipe: Fish Fry
-						chefsaward(5, i(65432)),	-- Recipe: Fortune Cookie
-						chefsaward(3, i(65428)),	-- Recipe: Grilled Dragon
-						chefsaward(3, i(65418)),	-- Recipe: Hearty Seafood Soup
-						chefsaward(3, i(65415)),	-- Recipe: Highland Spirits
-						chefsaward(3, i(65407)),	-- Recipe: Lavascale Fillet
-						chefsaward(3, i(65409)),	-- Recipe: Lavascale Minestrone
-						chefsaward(3, i(65412)),	-- Recipe: Lightly Fried Lurker
-						chefsaward(3, i(65416)),	-- Recipe: Lurker Lunch
-						chefsaward(3, i(65420)),	-- Recipe: Mushroom Sauce Mudfish
-						chefsaward(3, i(65417)),	-- Recipe: Pickled Guppy
-						chefsaward(3, i(65410)),	-- Recipe: Salted Eye
-						chefsaward(3, i(68688)),	-- Recipe: Scalding Murglesnout
-						chefsaward(3, i(65413)),	-- Recipe: Seasoned Crab
-						chefsaward(3, i(65421)),	-- Recipe: Severed Sagefish Head
-						chefsaward(3, i(65425)),	-- Recipe: Skewered Eel
-						chefsaward(5, i(65433)),	-- Recipe: South Island Iced Tea
-						chefsaward(3, i(65414)),	-- Recipe: Starfire Espresso
-						chefsaward(3, i(65419)),	-- Recipe: Tender Baked Turtle
-						chefsaward(3, i(65406)),	-- Recipe: Whitecrest Gumbo
+						chefsaward(3, i(65426)),	-- Recipe: Baked Rockfish (RECIPE!)
+						chefsaward(3, i(65427)),	-- Recipe: Basilisk Liverdog (RECIPE!)
+						chefsaward(3, i(65429)),	-- Recipe: Beer-Basted Crocolisk (RECIPE!)
+						chefsaward(3, i(65424)),	-- Recipe: Blackbelly Sushi (RECIPE!)
+						chefsaward(3, i(65411)),	-- Recipe: Broiled Mountain Trout (RECIPE!)
+						chefsaward(3, i(65431)),	-- Recipe: Chocolate Cookie (RECIPE!)
+						chefsaward(3, i(65430)),	-- Recipe: Crocolisk Au Gratin (RECIPE!)
+						chefsaward(3, i(65422)),	-- Recipe: Delicious Sagefish Tail (RECIPE!)
+						chefsaward(3, i(65408)),	-- Recipe: Feathered Lure (RECIPE!)
+						chefsaward(3, i(65423)),	-- Recipe: Fish Fry (RECIPE!)
+						chefsaward(5, i(65432)),	-- Recipe: Fortune Cookie (RECIPE!)
+						chefsaward(3, i(65428)),	-- Recipe: Grilled Dragon (RECIPE!)
+						chefsaward(3, i(65418)),	-- Recipe: Hearty Seafood Soup (RECIPE!)
+						chefsaward(3, i(65415)),	-- Recipe: Highland Spirits (RECIPE!)
+						chefsaward(3, i(65407)),	-- Recipe: Lavascale Fillet (RECIPE!)
+						chefsaward(3, i(65409)),	-- Recipe: Lavascale Minestrone (RECIPE!)
+						chefsaward(3, i(65412)),	-- Recipe: Lightly Fried Lurker (RECIPE!)
+						chefsaward(3, i(65416)),	-- Recipe: Lurker Lunch (RECIPE!)
+						chefsaward(3, i(65420)),	-- Recipe: Mushroom Sauce Mudfish (RECIPE!)
+						chefsaward(3, i(65417)),	-- Recipe: Pickled Guppy (RECIPE!)
+						chefsaward(3, i(65410)),	-- Recipe: Salted Eye (RECIPE!)
+						chefsaward(3, i(68688)),	-- Recipe: Scalding Murglesnout (RECIPE!)
+						chefsaward(3, i(65413)),	-- Recipe: Seasoned Crab (RECIPE!)
+						chefsaward(3, i(65421)),	-- Recipe: Severed Sagefish Head (RECIPE!)
+						chefsaward(3, i(65425)),	-- Recipe: Skewered Eel (RECIPE!)
+						chefsaward(5, i(65433)),	-- Recipe: South Island Iced Tea (RECIPE!)
+						chefsaward(3, i(65414)),	-- Recipe: Starfire Espresso (RECIPE!)
+						chefsaward(3, i(65419)),	-- Recipe: Tender Baked Turtle (RECIPE!)
+						chefsaward(3, i(65406)),	-- Recipe: Whitecrest Gumbo (RECIPE!)
 					},
 				}),
 				n(3361, {	-- Shoma <Weapon Vendor>
@@ -6707,7 +6773,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						}),
 						i(22729, {	-- Schematic: Steam Tonk Controller
-							["timeline"] = { "created 1.12.1", "added 2.1.0" },
+							["timeline"] = { "created 1.12.1", "added 2.3.0" },
 							["isLimited"] = true,
 						}),
 					},
@@ -6737,7 +6803,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if NOT ANYCLASSIC
 				-- TODO: Finish this part.
 				n(12794, {	-- Stone Guard Zarg <Legacy Weapon Quartermaster>
-					["description"] = "Blizzard strikes again. In order to transmog these, you need to have the original title associated with the gear. However, you can still collect them even if you've never had the title. /n/nThese items will require a refresh/reload to register as collected, and it's highly recommended that you keep them in your bank/void storage for later. You'll likely randomly lose credit for them and have to re-equip them to remind the game they exist.",
+					["description"] = "Blizzard strikes again. In order to transmog these, you need to have the original title associated with the gear. However, you can still collect them even if you've never had the title.\n\nThese items will require a refresh/reload to register as collected, and it's highly recommended that you keep them in your bank/void storage for later. You'll likely randomly lose credit for them and have to re-equip them to remind the game they exist.",
 					["coord"] = { 38.6, 72.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = pvp({
@@ -6813,8 +6879,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(3356, {	-- Sumi <Blacksmithing Supplies>
@@ -6838,7 +6904,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, {
-						i(18731, {	-- Pattern: Heavy Leather Ball
+						i(18731, {	-- Pattern: Heavy Leather Ball (RECIPE!)
 							["isLimited"] = true,
 						}),
 					}),
@@ -7069,7 +7135,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 						i(22729, {	-- Schematic: Steam Tonk Controller
-							["timeline"] = { "created 1.12.1", "added 2.1.0" },
+							["timeline"] = { "created 1.12.1", "added 2.3.0" },
 							["isLimited"] = true,
 						}),
 					},
@@ -7316,7 +7382,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 						i(22729, {	-- Schematic: Steam Tonk Controller
-							["timeline"] = { "created 1.12.1", "added 2.1.0" },
+							["timeline"] = { "created 1.12.1", "added 2.3.0" },
 							["isLimited"] = true,
 						}),
 					},
@@ -7350,8 +7416,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(3405, {	-- Zeal'aya
@@ -7416,7 +7482,7 @@ root(ROOTS.HiddenQuestTriggers, {
 -- #endif
 
 -- #if AFTER 3.3.3.11723
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(WOTLK_TIER, {
 		n(ARMOR, {
 			filter(NECK_F, {
@@ -7429,5 +7495,5 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});
 -- #endif

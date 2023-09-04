@@ -15,16 +15,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					478,	-- Forest Moth (PET!)
 					378,	-- Rabbit (PET!)
 					503,	-- Silky Moth (PET!)
 					379,	-- Squirrel (PET!)
 				}},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["555:510:244:89"] = 656,	-- Lake Elune'ara
@@ -773,26 +771,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(141041, {	-- Technique: Glyph of the Forest Path (RECIPE!)
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
-						i(136795, {	-- Tome of the Wilds: Charm Woodland Creature
-							["spellID"] = 127757,	-- Charm Woodland Creature
-							["timeline"] = { "added 7.0.3.22248" },
+						i(136795, {	-- Tome of the Wilds: Charm Woodland Creature (CI!)
+							["timeline"] = { ADDED_7_0_3_LAUNCH },
 						}),
-						i(136794, {	-- Tome of the Wilds: Flap
-							["spellID"] = 164862,	-- Flap
-							["timeline"] = { "added 7.0.3.22248" },
+						i(136794, {	-- Tome of the Wilds: Flap (CI!)
+							["timeline"] = { ADDED_7_0_3_LAUNCH },
 						}),
-						i(136789, {	-- Tome of the Wilds: Stag Form
-							["spellID"] = 210053,	-- Stag Form
-							["timeline"] = { "added 7.0.3.22248" },
+						i(136789, {	-- Tome of the Wilds: Mount Form (CI!)
+							["timeline"] = { ADDED_7_0_3_LAUNCH },
 						}),
-						i(136790, {	-- Tome of the Wilds: Track Beasts
-							-- TODO: Is this really not trackable? Can we do it?
-							["spellID"] = 0,	-- Invalidate the Spell ID (this makes it uncollectible)
-							["timeline"] = { "added 7.0.3.22248" },
+						i(136790, {	-- Tome of the Wilds: Track Beasts (CI!)
+							["timeline"] = { ADDED_7_0_3_LAUNCH },
 						}),
-						i(136787, {	-- Tome of the Wilds: Treant Form
-							["spellID"] = 114282,	-- Treant Form
-							["timeline"] = { "added 7.0.3.22248" },
+						i(136787, {	-- Tome of the Wilds: Treant Form (CI!)
+							["timeline"] = { ADDED_7_0_3_LAUNCH },
 						}),
 					},
 				}),

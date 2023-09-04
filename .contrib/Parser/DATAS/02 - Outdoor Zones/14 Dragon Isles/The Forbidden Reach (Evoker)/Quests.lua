@@ -281,5 +281,4 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 			}),
 		}),
 	})),
-	--]]
 })));

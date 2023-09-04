@@ -19,64 +19,6 @@ local OnTooltipForEverlook = [[function(t)
 		GameTooltip:AddLine(" * PROTIP: Ratchet is faster.", 1, 1, 1);
 	end
 end]];
-local OnTooltipForTimbermawHold = [[function(t)
-	local reputation = t.reputation;
-	if reputation < 42000 then
-		local isHuman = _.RaceIndex == 1;
-		-- #if BEFORE CATA
-		if reputation >= ]] .. NEUTRAL .. [[ then
-			if not t.deadwood then
-				local f = _.SearchForField("questID", 8470);
-				if f and #f > 0 then t.deadwood = f[1]; end
-			end
-			if not t.winterfall then
-				local f = _.SearchForField("questID", 8471);
-				if f and #f > 0 then t.winterfall = f[1]; end
-			end
-			if not t.deadwood.collected then GameTooltip:AddLine("Complete 'Deadwood Ritual Totem'.", 1, 1, 1); end
-			if not t.winterfall.collected then GameTooltip:AddLine("Complete 'Winterfall Ritual Totem'.", 1, 1, 1); end
-		end
-		-- #endif
-		-- #if AFTER CATA
-		local repPerKill = isHuman and 22 or 20;
-		local x, n = math.ceil((42000 - t.reputation) / repPerKill), math.ceil(84000 / repPerKill);
-		GameTooltip:AddDoubleLine("Kill Deadwood or Winterfall Furbolgs", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		-- #elseif AFTER TBC
-		if reputation < ]] .. REVERED .. [[ then
-			local repPerKill = isHuman and 11 or 10;
-			local x, n = math.ceil((]] .. REVERED .. [[ - t.reputation) / repPerKill), math.ceil(]] .. (REVERED + 42000) .. [[ / repPerKill);
-			GameTooltip:AddDoubleLine("Kill Deadwood or Winterfall Furbolgs (Stops at Revered)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		end
-		-- #else
-		if reputation < ]] .. HONORED .. [[ then
-			local repPerKill = isHuman and 5.5 or 5;
-			local x, n = math.ceil((]] .. HONORED .. [[ - t.reputation) / repPerKill), math.ceil(]] .. (HONORED + 42000) .. [[ / repPerKill);
-			GameTooltip:AddDoubleLine("Kill Deadwood or Winterfall Furbolgs (Stops at Honored)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		end
-		-- #endif
-		-- #if AFTER CATA
-		local repPerTurnIn = isHuman and 2200 or 2000;
-		-- #elseif AFTER WRATH
-		local repPerTurnIn = isHuman and 330 or 300;
-		-- #elseif AFTER TBC
-		local repPerTurnIn = isHuman and 165 or 150;
-		-- #else
-		local repPerTurnIn = isHuman and 55 or 50;
-		-- #endif
-		local x, n = math.ceil((42000 - t.reputation) / repPerTurnIn), math.ceil(84000 / repPerTurnIn);
-		GameTooltip:AddDoubleLine("Turn in Deadwood Feathers (x5) in Felwood", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		GameTooltip:AddDoubleLine("Turn in Winterfall Beads (x5) in Winterspring", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		local remaining = ((x * 5) - GetItemCount(21383, true) - GetItemCount(21377, true));
-		if remaining > 0 then GameTooltip:AddLine("You need " .. remaining .. " more feathers/beads for Exalted.", 1, 1, 0); end
-		-- #if BEFORE CATA
-		-- #if BEFORE TBC
-		if reputation < ]] .. HONORED .. [[ then GameTooltip:AddLine("PROTIP: Do NOT turn in the totems or feathers until after Honored!", 1, 0.2, 0.2); end
-		-- #else
-		if reputation < ]] .. REVERED .. [[ then GameTooltip:AddLine("PROTIP: Do NOT turn in the totems or feathers until after Revered!", 1, 0.2, 0.2); end
-		-- #endif
-		-- #endif
-	end
-end]];
 -- #if BEFORE CATA
 -- Crieve NOTE: This is done by completing the 'They Grow Up So Fast' quest for Cata+.
 local OnTooltipForWintersaberTrainers = [[function(t)
@@ -116,17 +58,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				petbattle(ach(9069, {	-- An Awfully Big Adventure
-					["timeline"] = { "added 6.0.2" },
-					["collectible"] = false,
-					["filterID"] = BATTLE_PETS,
-					["groups"] = {
-						crit(34, {	-- Stone Cold Trixy
-							["coord"] = { 65.6, 64.6, WINTERSPRING },
-							["cr"] = 66466,	-- Stone Cold Trixxy <Grand Master Pet Tamer>
-						}),
-					},
-				})),
 				ach(5443, {		-- E'ko Madness
 					["timeline"] = { "added 4.0.3" },
 					["groups"] = {
@@ -214,26 +145,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Explore Winterspring, revealing the covered areas of the world map.",
 					-- #endif
 				}),
-				classicAch(944, {	-- They Love Me In That Tunnel
-					-- #if BEFORE WRATH
-					["description"] = "Raise your reputation with Timbermaw Hold to Exalted.",
-					-- #endif
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 576); end]],
-					-- #endif
-					["maps"] = { FELWOOD },
-				}),
 				-- #if AFTER CATA
-				classicAch(3356, {	-- Winterspring Frostsaber
+				ach(3356, {	-- Winterspring Frostsaber
 					["provider"] = { "i", 13086 },	-- Reins of the Winterspring Frostsaber
-					["races"] = ALLIANCE_ONLY,
-					["f"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain a Winterspring Frosaber.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
+					["races"] = ALLIANCE_ONLY,
+					["f"] = MOUNTS,
 				}),
 				-- #endif
 				ach(4940, {	-- Winterspring Quests
@@ -274,16 +193,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
+					441,	-- Alpine Hare (PET!)
 					633,	-- Mountain Skunk (PET!)
 					472,	-- Rabid Nut Varmint 5000 (PET!)
 					471,	-- Robo-Chick (PET!)
 				}},
 				["groups"] = {
 					pet(487),	-- Alpine Chipmunk (PET!)
-					pet(441),	-- Alpine Hare (PET!)
 					pet(1163, {	-- Anodized Robo Cub (PET!)
 						["description"] = "Found in Everlook.",
 						["timeline"] = { ADDED_5_1_0 },
@@ -295,8 +213,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["description"] = "Starts spawning December 21st. Stops spawning March 20th",
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["125:165:611:242"] = 2247,	-- Ice Thistle Hills
@@ -322,16 +239,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #endif
 			n(FACTIONS, {
 				faction(577, {	-- Everlook
-					["icon"] = icon("INV_Misc_Coin_01"),
+					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
 					["OnTooltip"] = OnTooltipForEverlook,
 					["maps"] = { TANARIS, THE_BARRENS },
 				}),
-				faction(576, {	-- Timbermaw Hold
-					["OnTooltip"] = OnTooltipForTimbermawHold,
-					["maps"] = { FELWOOD },
-				}),
 				faction(589, {	-- Wintersaber Trainers
-					["icon"] = icon("ability_mount_pinktiger"),
+					["icon"] = "Interface\\Icons\\ability_mount_pinktiger",
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForWintersaberTrainers,
 					-- #endif
@@ -356,6 +269,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 60.4, 36.4, WINTERSPRING },
 					-- #endif
 					["races"] = HORDE_ONLY,
+				}),
+			}),
+			petbattles({
+				n(66466, {	-- Stone Cold Trixxy <Grand Master Pet Tamer>
+					["coord"] = { 65.6, 64.6, WINTERSPRING },
 				}),
 			}),
 			n(QUESTS, {
@@ -516,17 +434,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(15778),	-- Mechanical Yeti
 					},
-				}),
-				q(8469, {	-- Beads for Salfa
-					["qg"] = 11556,	-- Salfa
-					["sourceQuest"] = 8464,	-- Winterfall Activity
-					["coord"] = { 27.8, 34.6, WINTERSPRING },
-					["maxReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
-					["minReputation"] = { 576, NEUTRAL },	-- Timbermaw Hold, Neutral.
-					["cost"] = { { "i", 21383, 5 } },	-- Winterfall Spirit Beads
-					["timeline"] = { "removed 4.0.3" },
-					["repeatable"] = true,
-					["lvl"] = 50,
 				}),
 				q(28614, {	-- Bearzerker
 					["qg"] = 48722,	-- Burndl
@@ -707,13 +614,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
 					},
-				}),
-				q(28524, {	-- Delivery for Donova
-					["qg"] = 11556,	-- Salfa
-					["coord"] = { 21.0, 46.1, WINTERSPRING },
-					["minReputation"] = { 576, NEUTRAL },	-- Timbermaw Hold, Neutral.
-					["timeline"] = { "added 4.0.3.13277" },
-					["isBreadcrumb"] = true,
 				}),
 				q(28535, {	-- Descendants of the High Elves
 					["qg"] = 48659,	-- Quel'dorei Spirit
@@ -923,6 +823,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4882, {	-- Guarding Secrets (1/2)
 					["provider"] = { "i", 12558 },	-- Blue-feathered Necklace
+					["sourceQuest"] = 4741,	-- Wild Guardians (2/3)
 					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { FELWOOD },
 					["crs"] = {
@@ -1098,16 +999,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 					},
-				}),
-				q(28523, {	-- More Beads for Salfa
-					["qg"] = 11556,	-- Salfa
-					["sourceQuest"] = 28522,	-- Winterfall Activity
-					["coord"] = { 21.0, 46.1, WINTERSPRING },
-					["maxReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
-					["minReputation"] = { 576, NEUTRAL },	-- Timbermaw Hold, Neutral.
-					["cost"] = { { "i", 21383, 5 } },	-- Winterfall Spirit Beads
-					["timeline"] = { "added 4.0.3.13277" },
-					["repeatable"] = true,
 				}),
 				q(28467, {	-- Mystery Goo
 					["provider"] = { "o", 207179 },	-- Winterfall Cauldron
@@ -1828,43 +1719,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(28522, {	-- Winterfall Activity
-					["qg"] = 11556,	-- Salfa
-					["sourceQuest"] = 28521,	-- Speak to Salfa
-					["coord"] = { 21.0, 46.1, WINTERSPRING },
-					["minReputation"] = { 576, NEUTRAL },	-- Timbermaw Hold, Neutral.
-					["timeline"] = { "added 4.0.3.13277" },
-					["cost"] = {{ "i", 21383, 10 }},	-- Winterfall Spirit Beads
-					["groups"] = {
-						i(21318),	-- Earth Warder's Gloves
-						i(21319),	-- Gloves of the Pathfinder
-						i(21320),	-- Vest of the Den Watcher
-						i(21322),	-- Ursa's Embrace
-					},
-				}),
-				q(8464, {	-- Winterfall Activity
-					["qg"] = 11556,	-- Salfa
-					["coord"] = { 27.8, 34.6, WINTERSPRING },
-					["minReputation"] = { 576, NEUTRAL },	-- Timbermaw Hold, Neutral.
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 45,
-					["groups"] = {
-						objective(1, {	-- 0/8 Winterfall Shaman slain
-							["provider"] = { "n", 7439 },	-- Winterfall Shaman
-						}),
-						objective(2, {	-- 0/8 Winterfall Den Watcher slain
-							["provider"] = { "n", 7440 },	-- Winterfall Den Watcher
-						}),
-						objective(3, {	-- 0/8 Winterfall Ursa slain
-							["provider"] = { "n", 7438 },	-- Winterfall Ursa
-						}),
-						i(21318),	-- Earth Warder's Gloves
-						i(21319),	-- Gloves of the Pathfinder
-						i(21320),	-- Vest of the Den Watcher
-						i(21322),	-- Ursa's Embrace
-					},
-				}),
 				q(5083, {	-- Winterfall Firewater
 					["provider"] = { "i", 12771 },	-- Empty Firewater Flask
 					["timeline"] = { "removed 4.0.3" },
@@ -1896,21 +1750,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "n", 7438 },	-- Winterfall Ursa
 						}),
 					},
-				}),
-				q(8471, {	-- Winterfall Ritual Totem
-					["provider"] = { "i", 20742 },	-- Winterfall Ritual Totem
-					["minReputation"] = { 576, NEUTRAL },	-- Timbermaw Hold
-					["timeline"] = { "removed 4.0.3" },
-					["crs"] = {
-						10738,	-- High Chief Winterfall
-						7440,	-- Winterfall Den Watcher
-						7442,	-- Winterfall Pathfinder
-						10916,	-- Winterfall Runner
-						7439,	-- Winterfall Shaman
-						7441,	-- Winterfall Totemic
-						7438,	-- Winterfall Ursa
-					},
-					["lvl"] = 50,
 				}),
 				q(28469, {	-- Winterfall Runners
 					["qg"] = 9298,	-- Donova Snowden
@@ -2163,7 +2002,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 54.6, 42.6, WINTERSPRING },
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(21548, {	-- Pattern: Stormshroud Gloves
+						i(21548, {	-- Pattern: Stormshroud Gloves (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						-- #if BEFORE 4.0.3
@@ -2255,9 +2094,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						-- #if AFTER 4.0.3
-						i(20013),	-- Recipe: Living Action Potion
+						i(20013),	-- Recipe: Living Action Potion (RECIPE!)
 						-- #endif
-						i(13480, {	-- Recipe: Major Healing Potion
+						i(13480, {	-- Recipe: Major Healing Potion (RECIPE!)
 							["timeline"] = { "removed 2.0.1" },	-- Moved to Trainers
 						}),
 					},
@@ -2269,7 +2108,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 61.2, 39.0, WINTERSPRING },
 					-- #endif
 					["groups"] = {
-						i(16110),	-- Recipe: Monster Omelet
+						i(16110),	-- Recipe: Monster Omelet (RECIPE!)
 					},
 				}),
 				n(52830, {	-- Michelle De Rum <Pet Collector>
@@ -2295,7 +2134,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(16221, {	-- Formula: Enchant Chest - Major Health (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(15740, {	-- Pattern: Frostsaber Boots
+						i(15740, {	-- Pattern: Frostsaber Boots (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(14526),	-- Pattern: Mooncloth
@@ -2320,14 +2159,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						-- #if BEFORE CATA
-						classicAch(3356, {	-- Winterspring Frostsaber
+						ach(3356, {	-- Winterspring Frostsaber
 							["provider"] = { "i", 13086 },	-- Reins of the Winterspring Frostsaber
-							["races"] = ALLIANCE_ONLY,
-							["f"] = MOUNTS,
 							-- #if BEFORE WRATH
 							["description"] = "Obtain a Winterspring Frosaber.",
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 							-- #endif
+							["races"] = ALLIANCE_ONLY,
+							["f"] = MOUNTS,
 						}),
 						-- #endif
 						i(13086),	-- Winterspring Frostsaber (MOUNT!)
@@ -2342,6 +2180,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(21939, {	-- Fel Elemental Rod
 							["cost"] = 400000,	-- 40g
+						}),
+						i(207295, {	-- Grimoire of the Dreadfire Imp (CI!)
+							["timeline"] = { ADDED_10_1_5 },
 						}),
 					},
 				}),
@@ -2475,15 +2316,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						10664,	-- Scryer
 					},
 				}),
-				i(15761, {	-- Pattern: Frostsaber Gloves
+				i(15761, {	-- Pattern: Frostsaber Gloves (RECIPE!)
 					["timeline"] = { "removed 7.3.5" },
 					["cr"] = 7441,	-- Winterfall Totemic
 				}),
-				i(15747, {	-- Pattern: Frostsaber Leggings
+				i(15747, {	-- Pattern: Frostsaber Leggings (RECIPE!)
 					["timeline"] = { "removed 7.3.5" },
 					["cr"] = 7440,	-- Winterfall Den Watcher
 				}),
-				i(15779, {	-- Pattern: Frostsaber Tunic
+				i(15779, {	-- Pattern: Frostsaber Tunic (RECIPE!)
 					["timeline"] = { "removed 7.3.5" },
 					["cr"] = 7438,	-- Winterfall Ursa
 				}),
@@ -2491,11 +2332,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 7437,	-- Cobalt Mageweaver
 				}),
-				i(13497, {	-- Recipe: Greater Arcane Protection Potion
+				i(13497, {	-- Recipe: Greater Arcane Protection Potion (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 7437,	-- Cobalt Mageweaver
 				}),
-				i(13495, {	-- Recipe: Greater Frost Protection Potion
+				i(13495, {	-- Recipe: Greater Frost Protection Potion (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 7428,	-- Frostmaul Giant
 				}),

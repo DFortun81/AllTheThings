@@ -333,9 +333,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				},
 			}),
 			q(58672, {	-- A Gathering of Champions
+				["sourceQuests"] = {
+					58631,	-- Into Dreams
+					58632,	-- Ny'alotha, the Waking City: The Corruptor's End
+				},
 				["coord"] = { 55.9, 30.3, THE_GREAT_SEAL },
 				["provider"] = { "n", 161458 },	-- Valeera Sanguinar
-				["sourceQuest"] = 58631,	-- Into Dreams
 				["races"] = HORDE_ONLY,
 			}),
 			q(51465, {	-- A Load of Scrap
@@ -512,8 +515,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			}),
 			q(49768, {	-- Nesingwary's Trek
 				["sourceQuests"] = {
-					47439,	-- Gonk, Lord of the Pack
-					47440,	-- Pa'ku, Master of Winds
+					47438,	-- Picking a Side [One pre-req back from previous, Discord 2023-8-2]
+					-- 47514,	-- Zuldazar [Cross-referenced latest quest from completion sequence, Discord 2023-8-2]
 				},
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 130785 },	-- Huntmaster Kil'ja
@@ -774,10 +777,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 125312 },	-- Scrollsage Rooka
 			}),
 			q(56030, {	-- The Warchief's Order
-			--	TODO: Marking this as removed in an attempt to information gather. Currently we have no knowledge of how to pop this or the Alliance equivalent- if we receive error reports, ASK FOR MORE INFORMATION!
-				["u"] = REMOVED_FROM_GAME,
-				["sourceQuests"] = { 52451 },	-- Uniting Zandalar
-				["description"] = "Automatically granted upon hitting 120 and completing Uniting Zandalar to unlock World Quests.  If it doesn't pop up, relog.",
+				-- ["sourceQuests"] = { 52451 },	-- Uniting Zandalar
+				["description"] = "If not encountered the regular way, this can be obtained via party sync. You need to sync with a character has not yet started BFA. You then need to pick up the quest A Dying World and run it again. Continue up to and finish the quest Infusing the Heart. Then this quest should pop up for you.",
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
 			}),
@@ -978,6 +979,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 58.5, 62.6, THE_GREAT_SEAL },
 				["provider"] = { "n", 136683 },	-- Trade Prince Gallywix
 				["races"] = HORDE_ONLY,
+			}),
+
+			q(75874, {	-- Time to Fly
+				["description"] = "Reaching Level 30 will make this quest pop up.",
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_10_1_5 },
+				["g"] = {
+					i(206566),	-- Scarlet Pterrordax (MOUNT!)
+				},
 			}),
 		}),
 	}),

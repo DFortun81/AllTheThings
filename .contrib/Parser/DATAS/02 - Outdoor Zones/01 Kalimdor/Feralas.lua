@@ -57,8 +57,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					378,	-- Rabbit (PET!)
 					379,	-- Squirrel (PET!)
@@ -73,8 +72,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["timeline"] = { ADDED_5_1_0 },
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["110:110:493:70"] = 1113,	-- Oneiros
@@ -175,6 +173,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Best fished at 62.0 52.0",
 				}),
 			}),--]]	-- Maybe Mog in the future
+			n(PROFESSIONS, {
+				prof(LEATHERWORKING, {
+					n(7870, {	-- Caryssia Moonhunter <Tribal Leatherworking Trainer>
+						["coord"] = { 89.4, 46.4, FERALAS },
+						["races"] = ALLIANCE_ONLY,
+						["timeline"] = { REMOVED_4_0_3 },
+						["g"] = CLASSIC_TBC_TRIBAL,
+					}),
+					n(11098, {	-- Hahrana Ironhide <Master Leatherworker>
+						["coord"] = { 74.4, 43.0, FERALAS },
+						["races"] = HORDE_ONLY,
+						-- #if BEFORE 2.1.0
+						["g"] = EXPERT_ARTISAN_LEATHERWORKING,
+						-- #endif
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(25362, {	-- A Grim Discovery
 					["qg"] = 4544,	-- Krueg Skullsplitter
@@ -2326,7 +2341,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["lvl"] = 30,
 					["groups"] = {
-						i(8405, {	-- Pattern: Wild Leather Helmet
+						i(8405, {	-- Pattern: Wild Leather Helmet (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
@@ -2375,7 +2390,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["lvl"] = 30,
 					["groups"] = {
-						i(8403, {	-- Pattern: Wild Leather Shoulders
+						i(8403, {	-- Pattern: Wild Leather Shoulders (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
@@ -2400,7 +2415,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["lvl"] = 30,
 					["groups"] = {
-						i(8404, {	-- Pattern: Wild Leather Vest
+						i(8404, {	-- Pattern: Wild Leather Vest (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
@@ -2781,10 +2796,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 76.0, 43.4, FERALAS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(9302, {	-- Recipe: Ghost Dye
+						i(9302, {	-- Recipe: Ghost Dye (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(6057, {	-- Recipe: Nature Protection Potion
+						i(6057, {	-- Recipe: Nature Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2806,16 +2821,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(7451, {	-- Pattern: Green Whelp Bracers
+						i(7451, {	-- Pattern: Green Whelp Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(15734, {	-- Pattern: Living Shoulders
+						i(15734, {	-- Pattern: Living Shoulders (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(8409, {	-- Pattern: Nightscape Shoulders
+						i(8409, {	-- Pattern: Nightscape Shoulders (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(8385, {	-- Pattern: Turtle Scale Gloves
+						i(8385, {	-- Pattern: Turtle Scale Gloves (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2828,10 +2843,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(9302, {	-- Recipe: Ghost Dye
+						i(9302, {	-- Recipe: Ghost Dye (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(6057, {	-- Recipe: Nature Protection Potion
+						i(6057, {	-- Recipe: Nature Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2841,8 +2856,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(40226, {	-- Pratt McGrubben <Leatherworking Supplies>
@@ -2850,13 +2865,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(7451, {	-- Pattern: Green Whelp Bracers
+						i(7451, {	-- Pattern: Green Whelp Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(15734, {	-- Pattern: Living Shoulders
+						i(15734, {	-- Pattern: Living Shoulders (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(8385, {	-- Pattern: Turtle Scale Gloves
+						i(8385, {	-- Pattern: Turtle Scale Gloves (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2866,13 +2881,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(7451, {	-- Pattern: Green Whelp Bracers
+						i(7451, {	-- Pattern: Green Whelp Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(15734, {	-- Pattern: Living Shoulders
+						i(15734, {	-- Pattern: Living Shoulders (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(8385, {	-- Pattern: Turtle Scale Gloves
+						i(8385, {	-- Pattern: Turtle Scale Gloves (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2881,10 +2896,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 74.6, 42.8, FERALAS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(13949),	-- Recipe: Baked Salmon
-						i(12229),	-- Recipe: Hot Wolf Ribs
-						i(13947),	-- Recipe: Lobster Stew
-						i(13948),	-- Recipe: Mightfish Steak
+						i(13949),	-- Recipe: Baked Salmon (RECIPE!)
+						i(12229),	-- Recipe: Hot Wolf Ribs (RECIPE!)
+						i(13947),	-- Recipe: Lobster Stew (RECIPE!)
+						i(13948),	-- Recipe: Mightfish Steak (RECIPE!)
 					},
 				}),
 				n(7947, {	-- Vivianna <Trade Supplies>
@@ -2895,10 +2910,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(13949),	-- Recipe: Baked Salmon
-						i(12229),	-- Recipe: Hot Wolf Ribs
-						i(13947),	-- Recipe: Lobster Stew
-						i(13948),	-- Recipe: Mightfish Steak
+						i(13949),	-- Recipe: Baked Salmon (RECIPE!)
+						i(12229),	-- Recipe: Hot Wolf Ribs (RECIPE!)
+						i(13947),	-- Recipe: Lobster Stew (RECIPE!)
+						i(13948),	-- Recipe: Mightfish Steak (RECIPE!)
 					},
 				}),
 				n(8159, {	-- Worb Strongstitch <Light Armor Merchant>

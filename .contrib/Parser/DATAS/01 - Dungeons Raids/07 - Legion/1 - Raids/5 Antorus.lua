@@ -1,6 +1,8 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local AllDifficulties = {LFR_RAID,NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID};
+
 root(ROOTS.Instances, tier(LEGION_TIER, {
 	inst(946, {	-- Antorus, the Burning Throne
 		["isRaid"] = true,
@@ -22,50 +24,65 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 		["lvl"] = { 45 },
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(11988, {    -- Light's Breach
-                    crit(1, {    -- Garothi Worldbreaker
+				ach(11988, {	-- Light's Breach
+                    crit(37232, {    -- Garothi Worldbreaker
                         ["_encounter"] = { 1992, LFR_RAID },
                     }),
-                    crit(2, {    -- Felhounds of Sargeras
+                    crit(37233, {    -- Felhounds of Sargeras
                         ["_encounter"] = { 1987, LFR_RAID },
                     }),
-                    crit(3, {    -- Antoran High Command
+                    crit(37234, {    -- Antoran High Command
                         ["_encounter"] = { 1997, LFR_RAID },
                     }),
                 }),
-				ach(11989, {    -- Hope's End
-                    crit(1, {    -- Eonar the Life-Bender
+				ach(11989, {	-- Hope's End
+                    crit(37236, {    -- Eonar the Life-Bender
                         ["_encounter"] = { 2025, LFR_RAID },
                     }),
-                    crit(2, {    -- Portal Keeper Hasabel
+                    crit(37235, {    -- Portal Keeper Hasabel
                         ["_encounter"] = { 1985, LFR_RAID },
                     }),
-                    crit(3, {    -- Imonar the Soulhunter
+                    crit(37237, {    -- Imonar the Soulhunter
                         ["_encounter"] = { 2009, LFR_RAID },
                     }),
                 }),
-				ach(11990, {    -- Forbidden Descent
-                    crit(1, {    -- Kin'garoth
+				ach(11990, {	-- Forbidden Descent
+                    crit(37238, {    -- Kin'garoth
                         ["_encounter"] = { 2004, LFR_RAID },
                     }),
-                    crit(2, {    -- Varimathras
+                    crit(37239, {    -- Varimathras
                         ["_encounter"] = { 1983, LFR_RAID },
                     }),
-                    crit(3, {    -- The Coven of Shivarra
+                    crit(37240, {    -- The Coven of Shivarra
                         ["_encounter"] = { 1986, LFR_RAID },
                     }),
                 }),
-				ach(11991, {    -- Seat of the Pantheon
-                    crit(1, {    -- Aggramar
+				ach(11991, {	-- Seat of the Pantheon
+                    crit(37241, {    -- Aggramar
                         ["_encounter"] = { 1984, LFR_RAID },
                     }),
-                    crit(2, {    -- Argus the Unmaker
+                    crit(37242, {    -- Argus the Unmaker
                         ["_encounter"] = { 2031, LFR_RAID },
                     }),
                 }),
-				-- TODO: meta-achieve symlink
 				ach(11987, {	-- Glory of the Argus Raider (NORMAL+ ONLY)
-					i(152815),	-- Antoran Glooomhound (MOUNT!)
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						11949,	-- Hard to Kill
+						11948,	-- Together We Stand
+						11930,	-- Worm-monger
+						11928,	-- Portal Combat
+						11915,	-- Don't Sweat the Technique
+						12065,	-- Hounds Good To Me
+						12129,	-- This is the War Room!
+						12067,	-- Spheres of Influence
+						12030,	-- The World Revolves Around Me
+						12046,	-- Remember the Titans
+						12257,	-- Stardust Crusaders
+					}},
+					["groups"] = {
+						i(152815),		-- Antoran Gloomhound (MOUNT!)
+					},
 				}),
 				ach(12112),	-- Antorus, the Burning Throne Guild Run
 			}),
@@ -74,7 +91,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["provider"] = { "i", 152900 },	-- Blood of the Unmaker
 					["timeline"] = { "added 7.3", "removed 8.0" },
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(152901)),	-- Violet Spellwing (MOUNT!)
+						i(152901, {	-- Violet Spellwing (MOUNT!)
+							["timeline"] = { "added 7.3", "removed 8.0" },
+						}),
 					},
 				}),
 				q(49077, {	-- Moments of Reflection
@@ -82,6 +101,12 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["g"] = {
 						i(153555),	-- Alor'idal Crystal (quest item in bags)
 					},
+				}),
+			}),
+			n(SPECIAL, {
+				i(208050, {	-- Grimoire of the Xorothian Felhunter (CI!)
+					["description"] = "Defeat Portal Keeper Hasabel in Antorus, the Burning Throne, while wearing a staff transmogged into  Zhar'doom, Greatstaff of the Devourer. Enter the Orange portal of the boss encounter to be teleported to a different platform. Interact with the deactivated portal near the center of the platform while wearing the transmogged staff and select <Channel the power of your weapon into the gateway.>",
+					["timeline"] = { ADDED_10_1_5 },
 				}),
 			}),
 			n(COMMON_BOSS_DROPS, {
@@ -110,6 +135,19 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(151655),	-- Vantus Rune Technique: Antorus, the Burning Throne [Rank 2] (RECIPE!)
 					i(151656),	-- Vantus Rune Technique: Antorus, the Burning Throne [Rank 3] (RECIPE!)
 				},
+			}),
+			d(AllDifficulties, {
+				e(1987, {	-- Felhounds of Sargeras
+					["crs"] = {
+						122477,	-- F'harg
+						122135,	-- Shatug
+					},
+					["g"] = {
+						i(208051, {	-- Grimoire of the Antoran Felhunter (CI!)
+							["timeline"] = { ADDED_10_1_5 },
+						}),
+					},
+				}),
 			}),
 			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = { 111246 },	-- Archmage Timear
@@ -234,8 +272,8 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 							122333,	-- General Erodus
 						},
 						["g"] = {
-							i(151742),	-- Pattern: Fiendish Shoulderguards (Rank 3)
-							i(151745),	-- Pattern: Fiendish Spaulders (Rank 3)
+							i(151742),	-- Pattern: Fiendish Shoulderguards [Rank 3] (RECIPE!)
+							i(151745),	-- Pattern: Fiendish Spaulders [Rank 3] (RECIPE!)
 							i(151985),	-- General Erodus' Tricorne
 							i(152019),	-- Pauldrons of the Eternal Offensive
 							i(152125),	-- Bearmantle Cloak
@@ -577,7 +615,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				e(1992, {	-- Garothi Worldbreaker
 					["crs"] = { 122450 },	-- Garothi Worldbreaker
 					["g"] = {
-						ach(11930),	-- Worm-monger
+						ach(11930, {	-- Worm-monger
+							["crs"] = { 124436 },	-- Blightscale Worm
+						}),
 						i(151713),	-- Plans: Empyrial Breastplate (Rank 3)
 						i(151943),	-- Crown of Relentless Annihilation
 						i(151988),	-- Shoulderpads of the Demonic Blitz
@@ -634,8 +674,8 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					},
 					["g"] = {
 						ach(12129),	-- This is the War Room!
-						i(151742),	-- Pattern: Fiendish Shoulderguards (Rank 3)
-						i(151745),	-- Pattern: Fiendish Spaulders (Rank 3)
+						i(151742),	-- Pattern: Fiendish Shoulderguards [Rank 3] (RECIPE!)
+						i(151745),	-- Pattern: Fiendish Spaulders [Rank 3] (RECIPE!)
 						i(151985),	-- General Erodus' Tricorne
 						i(152019),	-- Pauldrons of the Eternal Offensive
 						i(152125),	-- Bearmantle Cloak
@@ -838,7 +878,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				e(1984, {	-- Aggramar
 					["crs"] = { 121975 },	-- Aggramar
 					["g"] = {
-						ach(11915),	-- Don't Sweat the Technique
+						ach(11915, {	-- Don't Sweat the Technique
+							["crs"] = { 123531 },	-- Manifestation of Taeshalach
+						}),
 						i(152094),	-- Taeshalach
 						i(152127),	-- Bearmantle Headdress
 						i(152163),	-- Cavalier Hat of the Dashing Scoundrel
@@ -1034,8 +1076,8 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						122333,	-- General Erodus
 					},
 					["g"] = {
-						i(151742),	-- Pattern: Fiendish Shoulderguards (Rank 3)
-						i(151745),	-- Pattern: Fiendish Spaulders (Rank 3)
+						i(151742),	-- Pattern: Fiendish Shoulderguards [Rank 3] (RECIPE!)
+						i(151745),	-- Pattern: Fiendish Spaulders [Rank 3] (RECIPE!)
 						i(151985),	-- General Erodus' Tricorne
 						i(152019),	-- Pauldrons of the Eternal Offensive
 						i(152125),	-- Bearmantle Cloak
@@ -1262,8 +1304,12 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					},
 				}),
 				cr(124828, e(2031, {	-- Argus the Unmaker
-					un(REMOVED_FROM_GAME, i(152900)),	-- Blood of the Unmaker
-					un(REMOVED_FROM_GAME, ach(12110)),	-- Ahead of the Curve: Argus the Unmaker
+					ach(12110, {	-- Ahead of the Curve: Argus the Unmaker
+						["timeline"] = { "added 7.3", "removed 8.0" },
+					}),
+					i(152900, {	-- Blood of the Unmaker
+						["timeline"] = { "added 7.3", "removed 8.0" },
+					}),
 					i(153115),	-- Scythe of the Unmaker [BLUE]
 					i(152423),	-- Helm of the Awakened Soul
 					i(152283),	-- Chain of the Unmaker
@@ -1427,8 +1473,8 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					},
 					["g"] = {
 						ach(11994),	-- Mythic: Antoran High Command
-						i(151742),	-- Pattern: Fiendish Shoulderguards (Rank 3)
-						i(151745),	-- Pattern: Fiendish Spaulders (Rank 3)
+						i(151742),	-- Pattern: Fiendish Shoulderguards [Rank 3] (RECIPE!)
+						i(151745),	-- Pattern: Fiendish Spaulders [Rank 3] (RECIPE!)
 						i(151985),	-- General Erodus' Tricorne
 						i(152019),	-- Pauldrons of the Eternal Offensive
 						i(152125),	-- Bearmantle Cloak
@@ -1662,8 +1708,12 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					},
 				}),
 				cr(124828, e(2031, {	-- Argus the Unmaker
-					un(REMOVED_FROM_GAME, ach(12111)),	-- Cutting Edge: Argus the Unmaker
-					un(REMOVED_FROM_GAME, ach(12258)),	-- Realm First! Argus the Unmaker
+					ach(12111, {	-- Cutting Edge: Argus the Unmaker
+						["timeline"] = { "added 7.3", "removed 8.0" },
+					}),
+					ach(12258, {	-- Realm First! Argus the Unmaker
+						["timeline"] = { "added 7.3", "removed 8.0" },
+					}),
 					ach(12002, {	-- Mythic: Argus the Unmaker
 						title(364),		-- Titanslayer
 					}),
@@ -1741,9 +1791,10 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(49718),	-- Argus - first kill - received "Khaz'goroth's Courage" (itemID 154176 / "Aggramar's Conviction" (itemID 154173)
 		q(49362),	-- full raid cleared
 		q(48570),	-- Tracking Quest - triggers when the door opens to Kin'garoth
+		q(77246, {["timeline"]={ADDED_10_1_5}}),	-- after <Channel the power of your weapon into the gateway.> for Grimoire of the Xorothian Felhunter (itemID 208050)
 	}),
 });
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(LEGION_TIER, {
 		inst(946, {	-- Antorus, the Burning Throne
 			-- Added in 9.1 Why? Noone knows
@@ -1752,4 +1803,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(180539),	-- Vambraces of Life's Assurance
 		}),
 	}),
-}));
+});

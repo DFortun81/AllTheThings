@@ -302,8 +302,8 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						i(174758),	-- Voidwarped Relic Fragment
 					}),
 					i(173372, {	-- Cache of the Black Empire
-						i(173375),	-- Rajani Insignia (BoP)
-						i(173374),	-- Rajani Insignia (BoA)
+						i(173375),	-- Rajani Insignia [BOP]
+						i(173374),	-- Rajani Insignia [BOA]
 					}),
 				},
 			}),

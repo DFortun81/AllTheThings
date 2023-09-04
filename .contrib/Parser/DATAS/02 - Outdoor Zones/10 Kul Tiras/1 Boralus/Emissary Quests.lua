@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["g"] = {
 					i(165872, {	-- 7th Legion Equipment Cache (awarded for all incursions)
 						["sym"] = {
-							{"select", "headerID", -10057},	-- War Effort
+							{"select", "headerID", WARFRONT },
 							{"pop"},	-- Discard the War Effort Header and acquire the children.
 							{"where", "mapID", ARATHI_HIGHLANDS },
 							{"pop"},	-- Discard the Map Header and acquire the children.

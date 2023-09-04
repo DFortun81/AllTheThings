@@ -540,7 +540,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { "ad
 	}),
 })));
 
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED},{
+root(ROOTS.NeverImplemented, {
 	tier(BFA_TIER, {	-- Battle For Azeroth
 		n(EXPANSION_PRELAUNCH, {
 			n(QUESTS, {
@@ -558,4 +558,4 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED},{
 			}),
 		}),
 	}),
-}));
+});

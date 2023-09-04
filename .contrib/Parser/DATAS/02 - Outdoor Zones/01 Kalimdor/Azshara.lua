@@ -69,8 +69,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					378,	-- Rabbit (PET!)
 					417,	-- Rat (PET!)
@@ -95,8 +94,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["description"] = "Can commonly be found on the beaches of Azshara.",
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["120:155:818:107"] = 1229,	-- Tower of Eldara
@@ -171,6 +169,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 				-- #endif
+			}),
+			n(PROFESSIONS, {
+				prof(LEATHERWORKING, {
+					n(7866, {	-- Peter Galen <Master Dragonscale Leatherworker>
+						["coord"] = { 37.6, 65.4, AZSHARA },
+						["races"] = ALLIANCE_ONLY,
+						["timeline"] = { REMOVED_4_0_3 },
+						["g"] = CLASSIC_TBC_DRAGONSCALE,
+					}),
+				}),
 			}),
 			n(QUESTS, {
 				q(3382, {	-- A Crew Under Fire
@@ -2149,10 +2157,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 45.2, 90.8, AZSHARA },
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(15751, {	-- Pattern: Blue Dragonscale Breastplate
+						i(15751, {	-- Pattern: Blue Dragonscale Breastplate (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(15729, {	-- Pattern: Chimeric Gloves
+						i(15729, {	-- Pattern: Chimeric Gloves (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
@@ -2179,8 +2187,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(49884, {	-- Sally "Salvager" Sandscrew <Armor Vendor>
@@ -2251,7 +2259,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 6375,	-- Thunderhead Hippogryph
 				}),
 				-- #endif
-				i(15763, {	-- Pattern: Blue Dragonscale Shoulders
+				i(15763, {	-- Pattern: Blue Dragonscale Shoulders (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 6146,	-- Cliff Breaker
 				}),
@@ -2263,19 +2271,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },	-- Learned from trainer
 					["cr"] = 7864,	-- Lingering Highborne
 				}),
-				i(15753, {	-- Pattern: Stormshroud Armor
+				i(15753, {	-- Pattern: Stormshroud Armor (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 6138,	-- Arkkoran Oracle
 				}),
-				i(15764, {	-- Pattern: Stormshroud Shoulders
+				i(15764, {	-- Pattern: Stormshroud Shoulders (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 6144,	-- Son of Arkkoroc
 				}),
-				i(15728, {	-- Pattern: Wicked Leather Bracers
+				i(15728, {	-- Pattern: Wicked Leather Bracers (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },	-- Learned from trainer
 					["cr"] = 6201,	-- Legashi Rogue
 				}),
-				i(13491, {	-- Recipe: Elixir of the Mongoose
+				i(13491, {	-- Recipe: Elixir of the Mongoose (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 6201,	-- Legashi Rogue
 				}),
@@ -2301,10 +2309,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 	}),
 }));
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	n(QUESTS, {
 		tier(CATA_TIER, {
 			q(14231),	-- Useless quest record
 		}),
 	}),
-}));
+});

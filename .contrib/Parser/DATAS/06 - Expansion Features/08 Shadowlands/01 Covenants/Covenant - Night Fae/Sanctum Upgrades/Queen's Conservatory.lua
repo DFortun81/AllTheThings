@@ -589,11 +589,11 @@ for _,g in ipairs({T2_DUTIFUL_GROUP,T2_MARTIAL_GROUP,T2_UNTAMED_GROUP,T2_PRIDEFU
 	end
 end
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(SL_TIER, {
 		n(NIGHT_FAE, {
 			i(179775),	-- Conservator's Leather Tunic (reported as not being awarded from ensemble 184112)
 			i(179659),	-- Conservator's Silken Tunic
 		})
 	}),
-}));
+});

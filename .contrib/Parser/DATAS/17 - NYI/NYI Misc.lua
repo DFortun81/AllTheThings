@@ -3,16 +3,18 @@
 ---------------------------------------------------------------
 -- Everything in this file hasn't been implemented yet.
 
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, {
 	filter(MISC, {
 		tier(CLASSIC_TIER, {
 			-- 1.x.x
 			n(P1xx, {
 				i(8502),	-- Bronze Lotterybox
+				i(17968),	-- Charged Scale of Onyxia
 				i(9023),	-- Codex of Shadow Protection III
 				i(8503),	-- Heavy Bronze Lotterybox
 				i(8505),	-- Heavy Iron Lotterybox
 				i(8507),	-- Heavy Mithril Lotterybox
+				i(20367),	-- Hunting Gear
 				i(8504),	-- Iron Lotterybox
 				i(5126, {	-- Knowledge: Defias Disguise
 				spell(5169),	-- Defias Disguise
@@ -34,6 +36,9 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 				i(8506),	-- Mithril Lotterybox
 				i(19804),	-- Pale Ghoulfish
+				i(17967),	-- Refined Scale of Onyxia
+				i(3895),	-- TEST Legendary
+				i(22316),	-- Test Relic
 				i(994),		-- Tome of Ice Armor
 				i(8802),	-- Tome of Arcane Intellect
 				i(8868),	-- Tome of Conjure Water VI
@@ -75,12 +80,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			-- 3.1.0
 			tier(WOTLK_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 3.1.0" } }, {
 				i(45924),	-- Certificate of Appreciation
-			})),
-
-			-- 3.2.0
-			tier(WOTLK_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 3.2.0" } }, {
-				i(47558),	-- Regalia of the Grand Protector
-				i(47559),	-- Regalia of the Grand Vanquisher
 			})),
 
 			-- 3.3.3
@@ -389,9 +388,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(183939),	-- Carefully Bottled Holy Water
 				i(180875),	-- Carriage Cargo
 				i(179928),	-- Cell Chain Pull
-				i(181140),	-- Charm of Alacrity
 				i(181240),	-- Charm of Buff 7
-				i(181159),	-- Charm of Energizing
 				i(174038),	-- Chime of Celerity
 				i(178888),	-- Choofa
 				i(183125),	-- Combat Meditation: Power
@@ -733,6 +730,17 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(201251),	-- Pillaged Contender's Strongbox
 			})),
 
+			-- 10.0.5
+			tier(DF_TIER, 0.5, bubbleDown({ ["timeline"] = { CREATED_10_0_5 } }, {
+				i(203461),	-- Chronologically Reallocated Rations
+				i(202112),	-- Crystal Shattering Armaments
+				i(202310),	-- Defective Doomsday Device
+				i(201990),	-- Primal Mote
+				i(204277),	-- Ruby Whelp Treat
+				i(204236),	-- Sack of Stolen Dragon Glyphs
+				i(202035),	-- Self-Heating Rations
+			})),
+
 			-- 10.0.7
 			tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
 				i(202663),	-- [DNT] Dragonscale Expedition Item 01
@@ -755,13 +763,30 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(202687),	-- [DNT] Valdrakken Accord Item 03
 				i(202688),	-- [DNT] Valdrakken Accord Item 04
 				i(202689),	-- [DNT] Valdrakken Accord Item 05
-				i(203798),	-- Copy Jin'do's Bag of Whammies
 				i(203211),	-- Ensemble: Lion's Heritage Blue Armor Set
 				i(203212),	-- Ensemble: Lion's Heritage Scarlet Armor Set
 				i(203213),	-- Ensemble: Lion's Heritage White Armor Set
 				i(203214),	-- Ensemble: Wolf's Heritage Blackrock Armor Set
 				i(203215),	-- Ensemble: Wolf's Heritage Frostwolf Armor Set
 				i(203216),	-- Ensemble: Wolf's Heritage Warsong Armor Set
+				i(204312),	-- Ettin Skin
+				i(203465),	-- Draconic Artifact
+				i(203210),	-- Dragonscale Supply Box
+				i(203466),	-- Dragonscale Surplus Crate
+				i(204313),	-- Handful of Scales
+				i(204330),	-- Inert Primordial Fragments
+				i(203218),	-- Iskaara Supply Pouch
+				i(203221),	-- Maruuk Supply Sack
+				i(204310),	-- Mycelial Threads
+				i(204307),	-- Ornate Bronze Lockbox
+				i(204216),	-- Primordial Pulverizing
+				i(204008),	-- Prodigious Sand Stone
+				i(202202),	-- Revealing Mask
+				i(203730),	-- Rustic Winterpelt Supplies
+				i(204213),	-- Short-Range Teleport
+				i(202075),	-- Temp Currency
+				i(203657),	-- Toxin Antidote
+				i(203223),	-- Valdrakken Supply Coffe
 				i(203854),	-- Warblades of the Hakkari, Reborn
 			})),
 
@@ -774,4 +799,4 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 		}),
 	}),
-}));
+});

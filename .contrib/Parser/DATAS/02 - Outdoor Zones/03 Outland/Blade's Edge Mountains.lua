@@ -48,14 +48,9 @@ root(ROOTS.Zones, {
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					ach(896, applyclassicphase(TBC_PHASE_TWO_OGRILA, {	-- A Quest a Day Keeps the Ogres at Bay
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, achWithRep(896, 1038, {	-- A Quest a Day Keeps the Ogres at Bay
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with Ogri'la to Exalted.",
-						-- #endif
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1038); end]],
 						-- #endif
 					})),
 					explorationAch(865, {	-- Explore Blade's Edge Mountains
@@ -63,7 +58,7 @@ root(ROOTS.Zones, {
 						["description"] = "Explore Blade's Edge Mountains, revealing the covered areas of the world map.",
 						-- #endif
 					}),
-					classicAch(1193, {	-- On the Blade's Edge
+					ach(1193, {	-- On the Blade's Edge
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
 						["sourceQuests"] = {
@@ -138,8 +133,7 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
 						449,	-- Brown Marmot (PET!)
 						378,	-- Rabbit (PET!)
@@ -160,8 +154,7 @@ root(ROOTS.Zones, {
 							["description"] = "Found only in the two caves that connect Blade's Edge to Zangarmarsh.",
 						}),
 					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(3864, "256:256:422:0"),			-- Bash'ir Landing
@@ -431,7 +424,9 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 20),
 						["groups"] = {
-							ach(1276),	-- Blade's Edge Bomberman
+							ach(1276, {	-- Blade's Edge Bomberman
+								["timeline"] = { "added 3.0.1" },
+							}),
 						},
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11102, {	-- Bombing Run (druid)
@@ -908,8 +903,8 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(65, 65, 20),
 						["groups"] = {
-							i(31674),	-- Recipe: Crunchy Serpent
-							i(31675),	-- Recipe: Mok'Nathal Shortribs
+							i(31674),	-- Recipe: Crunchy Serpent (RECIPE!)
+							i(31675),	-- Recipe: Mok'Nathal Shortribs (RECIPE!)
 						},
 					}),
 					q(10671, {	-- More than a Pound of Flesh
@@ -1322,7 +1317,9 @@ root(ROOTS.Zones, {
 					q(10455, {	-- The Encroaching Wilderness (A)
 						["qg"] = 21066,	-- Rina Moonspring
 						["sourceQuests"] = {
+							-- #if AFTER 6.2.0.19953
 							39199,	-- Hero's Call: Blade's Edge Mountains!
+							-- #endif
 							9794,	-- No Time for Curiosity
 						},
 						["coord"] = { 36.2, 67.2, BLADES_EDGE_MOUNTAINS },
@@ -1332,8 +1329,10 @@ root(ROOTS.Zones, {
 					q(10486, {	-- The Encroaching Wilderness (H)
 						["qg"] = 21117,	-- Gor'drek
 						["sourceQuests"] = {
-							39198,	-- Warchief's Command: Blade's Edge Mountains!
 							9795,	-- The Ogre Threat
+							-- #if AFTER 6.2.0.19953
+							39198,	-- Warchief's Command: Blade's Edge Mountains!
+							-- #endif
 						},
 						["coord"] = { 52.4, 57.9, BLADES_EDGE_MOUNTAINS },
 						["races"] = HORDE_ONLY,
@@ -1531,10 +1530,12 @@ root(ROOTS.Zones, {
 							11065,	-- Wrangle Some Aether Rays!
 						},
 						["coord"] = { 27.4, 52.7, BLADES_EDGE_MOUNTAINS },
-						["cost"] = {
-							{ "i", 32732, 1 },	--	Dragon Teeth
-						},
 						["lvl"] = lvlsquish(70, 70, 20),
+						["groups"] = {
+							objective(1, {	-- 0/1 Dragon Teeth
+								["provider"] = { "i", 32732 },	-- Dragon Teeth
+							}),
+						},
 					})),
 					q(10674, {	-- Trapping the Light Fantastic
 						["qg"] = 21691,	-- Toshley
@@ -1963,16 +1964,16 @@ root(ROOTS.Zones, {
 						["coord"] = { 51.0, 57.8, BLADES_EDGE_MOUNTAINS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(22900, {	-- Recipe: Elixir of Camouflage
+							i(22900, {	-- Recipe: Elixir of Camouflage (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(22909, {	-- Recipe: Elixir of Major Defense
+							i(22909, {	-- Recipe: Elixir of Major Defense (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(22911, {	-- Recipe: Major Dreamless Sleep Potion
+							i(22911, {	-- Recipe: Major Dreamless Sleep Potion (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(22907, {	-- Recipe: Super Mana Potion
+							i(22907, {	-- Recipe: Super Mana Potion (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},
@@ -2046,8 +2047,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 61.2, 68.8, BLADES_EDGE_MOUNTAINS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(31674),	-- Recipe: Crunchy Serpent
-							i(31675),	-- Recipe: Mok'Nathal Shortribs
+							i(31674),	-- Recipe: Crunchy Serpent (RECIPE!)
+							i(31675),	-- Recipe: Mok'Nathal Shortribs (RECIPE!)
 						},
 					}),
 					n(21494, {	-- Smiles O'Byron <Engineer>
@@ -2073,8 +2074,8 @@ root(ROOTS.Zones, {
 						["description"] = "This vendor stocks a limited supply of these items.  Alliance players can purchase them from Sassa Weldwell, who sells unlimited quantities.  Horde players who don't wish to wait for Xerintha to restock can complete the quest |cFFefc400Mok'Nathal Treats|r, which awards both recipes.",
 						["coord"] = { 62.4, 40.2, BLADES_EDGE_MOUNTAINS },
 						["groups"] = {
-							i(31674),	-- Recipe: Crunchy Serpent
-							i(31675),	-- Recipe: Mok'Nathal Shortribs
+							i(31674),	-- Recipe: Crunchy Serpent (RECIPE!)
+							i(31675),	-- Recipe: Mok'Nathal Shortribs (RECIPE!)
 						},
 					}),
 					n(20917, {	-- Zinyen Swiftstrider <Weapon Vendor>
@@ -2592,7 +2593,7 @@ root(ROOTS.Zones, {
 						},
 						["cr"] = 16952,	-- Anger Guard
 					}),
-					i(22925, {	-- Recipe: Major Holy Protection Potion
+					i(22925, {	-- Recipe: Major Holy Protection Potion (RECIPE!)
 						["coords"] = {
 							{ 26.6, 83.6, BLADES_EDGE_MOUNTAINS },
 							{ 28.0, 82.2, BLADES_EDGE_MOUNTAINS },

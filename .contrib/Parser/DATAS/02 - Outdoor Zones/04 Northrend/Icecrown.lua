@@ -9,17 +9,6 @@ root(ROOTS.Zones, {
 			["maps"] = { 170 },	-- Hrothgar's Landing
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["groups"] = {
-							crit(23, {	-- Major Payne
-								["coord"] = { 77.4, 19.6, ICECROWN },
-								["cr"] = 66675,	-- Major Payne
-							}),
-						},
-					})),
 					explorationAch(1270),	-- Explore Icecrown
 					ach(40, {	-- Icecrown: The Final Goal
 						-- #if ANYCLASSIC
@@ -95,34 +84,19 @@ root(ROOTS.Zones, {
 						}),
 						-- #endif
 					}),
-					ach(945, {	-- The Argent Champion
-						["maps"] = { WESTERN_PLAGUELANDS, EASTERN_PLAGUELANDS },
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnUpdate(t, 529, 1106); end]],
+					achWithReps(945, { 529, 1106 }, {	-- The Argent Champion
+						-- #if BEFORE WRATH
+						["description"] = "Earn exalted status with the Argent Dawn and the Argent Crusade.",
 						-- #endif
+						["maps"] = { WESTERN_PLAGUELANDS, EASTERN_PLAGUELANDS },
 						["groups"] = {
 							title(99),	-- %s the Argent Champion
 						},
 					}),
-					ach(947, {	-- The Argent Crusade
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1106); end]],
-						-- #endif
-					}),
-					ach(1009, {	-- Knights of the Ebon Blade
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1098); end]],
-						-- #endif
-					}),
+					achWithRep(947, 1106),	-- The Argent Crusade
+					achWithRep(1009, 1098),	-- Knights of the Ebon Blade
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
 						635,	-- Adder (PET!)
 						641,	-- Arctic Hare (PET!)
@@ -133,8 +107,7 @@ root(ROOTS.Zones, {
 						pet(393),	-- Cockroach (PET!)
 						pet(538),	-- Scourged Whelpling (PET!)
 					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(4510),	-- Aldur'thar: The Desolation Gate
@@ -197,6 +170,11 @@ root(ROOTS.Zones, {
 					fp(333, {	-- The Shadow Vault
 						["cr"] = 30314,	-- Morlia Doomwing <Flight Master>
 						["coord"] = { 43.6, 24.4, ICECROWN },
+					}),
+				}),
+				petbattles({
+					n(66675, {	-- Major Payne
+						["coord"] = { 77.4, 19.6, ICECROWN },
 					}),
 				}),
 				n(QUESTS, {
@@ -2215,8 +2193,8 @@ root(ROOTS.Zones, {
 							-- #endif
 							i(44305),	-- Kilt of Dark Mercy
 							i(42183),	-- Pattern: Abyssal Bag
-							i(44512, {	-- Pattern: Nerubian Reinforced Quiver
-								["timeline"] = { "removed 4.0.1" },
+							i(44512, {	-- Pattern: Nerubian Reinforced Quiver (RECIPE!)
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(44250),	-- Reaper of Dark Souls
 							i(44249),	-- Runeblade of Demonstrable Power
@@ -2274,9 +2252,6 @@ root(ROOTS.Zones, {
 					i(50379),	-- Battered Hilt (Alliance) - These are dropping zone-wide during Shadowlands Prepatch Event; remains to be seen whether they will permanently drop from here.
 					i(50380),	-- Battered Hilt (Horde)
 					-- #endif
-					applyclassicphase(WRATH_PHASE_TWO, i(47035, {	-- Discarded Soul Crystal
-						["provider"] = { "o", 195344 },	-- Discarded Soul Crystal
-					})),
 					i(37330, {	-- Formula: Enchant Cloak - Superior Arcane Resistance (RECIPE!)
 						["timeline"] = { "added 3.0.1", "removed 5.0.4" },
 						["crs"] = {
@@ -2303,40 +2278,40 @@ root(ROOTS.Zones, {
 						["timeline"] = { "added 3.0.1", "removed 5.0.4" },
 						["cr"] = 32349,	-- Cultist Shard Watcher
 					}),
-					i(44563, {	-- Pattern: Fur Lining - Arcane Resist
-						["timeline"] = { "removed 5.0.4" },
+					i(44563, {	-- Pattern: Fur Lining - Arcane Resist (RECIPE!)
+						["timeline"] = { ADDED_3_0_3, REMOVED_5_0_4 },
 						["crs"] = {
 							32297,	-- Cult Researcher
 							31702,	-- Frostbrood Spawn
 						},
 					}),
-					i(44559, {	-- Pattern: Fur Lining - Fire Resist
-						["timeline"] = { "removed 5.0.4" },
+					i(44559, {	-- Pattern: Fur Lining - Fire Resist (RECIPE!)
+						["timeline"] = { ADDED_3_0_3, REMOVED_5_0_4 },
 						["crs"] = {
 							31321,	-- Skeletal Runesmith
 							30921,	-- Skeletal Runesmith
 						},
 					}),
-					i(44560, {	-- Pattern: Fur Lining - Frost Resist
-						["timeline"] = { "removed 5.0.4" },
+					i(44560, {	-- Pattern: Fur Lining - Frost Resist (RECIPE!)
+						["timeline"] = { ADDED_3_0_3, REMOVED_5_0_4 },
 						["cr"] = 32289,	-- Damned Apothecary
 					}),
-					i(44562, {	-- Pattern: Fur Lining - Nature Resist
-						["timeline"] = { "removed 5.0.4" },
+					i(44562, {	-- Pattern: Fur Lining - Nature Resist (RECIPE!)
+						["timeline"] = { ADDED_3_0_3, REMOVED_5_0_4 },
 						["cr"] = 32290,	-- Cult Alchemist <Cult of the Damned>
 					}),
-					i(44561, {	-- Pattern: Fur Lining - Shadow Resist
-						["timeline"] = { "removed 5.0.4" },
+					i(44561, {	-- Pattern: Fur Lining - Shadow Resist (RECIPE!)
+						["timeline"] = { ADDED_3_0_3, REMOVED_5_0_4 },
 						["cr"] = 32349,	-- Cultist Shard Watcher
 					}),
-					i(44564, {	-- Recipe: Mighty Arcane Protection Potion
+					i(44564, {	-- Recipe: Mighty Arcane Protection Potion (RECIPE!)
 						["coord"] = { 50.1, 31.8, ICECROWN },
 						["crs"] = {
 							32297,	-- Cult Researcher
 							31702,	-- Frostbrood Spawn
 						},
 					}),
-					i(44565, {	-- Recipe: Mighty Fire Protection Potion
+					i(44565, {	-- Recipe: Mighty Fire Protection Potion (RECIPE!)
 						["coord"] = { 58.5, 73.1, ICECROWN },
 						["crs"] = {
 							31321,	-- Skeletal Runesmith
@@ -2345,15 +2320,15 @@ root(ROOTS.Zones, {
 							30922,	-- Umbral Brute
 						},
 					}),
-					i(44566, {	-- Recipe: Mighty Frost Protection Potion
+					i(44566, {	-- Recipe: Mighty Frost Protection Potion (RECIPE!)
 						["coord"] = { 52.1, 32.0, ICECROWN },
 						["cr"] = 32289,	-- Damned Apothecary
 					}),
-					i(44567, {	-- Recipe: Mighty Nature Protection Potion
+					i(44567, {	-- Recipe: Mighty Nature Protection Potion (RECIPE!)
 						["coord"] = { 50.1, 31.8, ICECROWN },
 						["cr"] = 32290,	-- Cult Alchemist <Cult of the Damned>
 					}),
-					i(44568, {	-- Recipe: Mighty Shadow Protection Potion
+					i(44568, {	-- Recipe: Mighty Shadow Protection Potion (RECIPE!)
 						["coord"] = { 48.0, 67.8, ICECROWN },
 						["cr"] = 32349,	-- Cultist Shard Watcher
 					}),

@@ -688,8 +688,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
 						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
 						["g"] = {
-							i(143502, {	-- Highlord's Golden Charger (MOUNT!)
-									}),
+							mount(231435),	-- Highlord's Golden Charger (MOUNT!)
 						},
 					}),
 					q(42377, {	-- The Brother's Trail
@@ -778,9 +777,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							i(139693, {	-- Crown of the Silver Hand
 								["cost"] = 5000000,	-- 500g
 							}),
-							i(136801, {	-- Divine Tome: Contemplation
-								["f"] = RECIPES,
-							}),
+							i(136801),	-- Divine Tome: Contemplation (CI!)
 							i(139692, {	-- Gauntlets of the Silver Hand
 								["cost"] = 5000000,	-- 500g
 							}),

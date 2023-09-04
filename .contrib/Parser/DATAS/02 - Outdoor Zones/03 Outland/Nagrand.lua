@@ -63,25 +63,9 @@ root(ROOTS.Zones, {
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["groups"] = {
-							crit(26, {	-- Narrok
-								["coord"] = { 61.0, 49.4, NAGRAND },
-								["cr"] = 66552,	-- Narrok <Master Pet Tamer>
-							}),
-						},
-					})),
-					classicAch(902, {	-- Chief Exalted Officer
+					achWithRep(902, 933, {	-- Chief Exalted Officer
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with The Consortium to Exalted.",
-						-- #endif
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 933); end]],
 						-- #endif
 					}),
 					explorationAch(866, {	-- Explore Nagrand
@@ -89,25 +73,19 @@ root(ROOTS.Zones, {
 						["description"] = "Explore Nagrand, revealing the covered areas of the world map.",
 						-- #endif
 					}),
-					classicAch(939, {	-- Hills Like White Elekk
+					ach(939, {	-- Hills Like White Elekk
 						["sourceQuest"] = 9852,	-- The Ultimate Bloodsport
 						-- #if BEFORE WRATH
 						["description"] = "Complete all of Hemet Nesingwary quests in Nagrand up to and including The Ultimate Bloodsport.",
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
-					classicAch(901, {	-- Mag'har of Draenor
+					achWithRep(901, 941, {	-- Mag'har of Draenor
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with the Mag'har to Exalted.",
 						-- #endif
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 941); end]],
-						-- #endif
 						["races"] = HORDE_ONLY,
 					}),
-					classicAch(1273, {	-- Nagrand Slam (Horde)
+					ach(1273, {	-- Nagrand Slam (Horde)
 						["races"] = HORDE_ONLY,
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -208,7 +186,7 @@ root(ROOTS.Zones, {
 						},
 						-- #endif
 					}),
-					classicAch(1192, {	-- Nagrand Slam (Alliance)
+					ach(1192, {	-- Nagrand Slam (Alliance)
 						["races"] = ALLIANCE_ONLY,
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -301,20 +279,14 @@ root(ROOTS.Zones, {
 						},
 						-- #endif
 					}),
-					classicAch(899, {	-- Oh My, Kurenai
+					achWithRep(899, 978, {	-- Oh My, Kurenai
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with the Kurenai to Exalted.",
-						-- #endif
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 978); end]],
 						-- #endif
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
 						635,	-- Adder (PET!)
 						386,	-- Prarie Dog (PET!)
@@ -325,8 +297,7 @@ root(ROOTS.Zones, {
 					["groups"] = {
 						pet(518),	-- Clefthoof Runt (PET!)
 					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(3610, "256:334:660:334"),	-- Burning Blade Ruins
@@ -369,22 +340,26 @@ root(ROOTS.Zones, {
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182959 },	-- Bluefish School
 						["criteriaID"] = 3866,	-- Bluefish School
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182958 },	-- Mudfish School
 						["criteriaID"] = 3867,	-- Mudfish School
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
 					-- #else
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182959 },	-- Bluefish School
 						["criteriaID"] = 3624,	-- Bluefish School
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182958 },	-- Mudfish School
 						["criteriaID"] = 3625,	-- Mudfish School
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
 					-- #endif
@@ -400,6 +375,11 @@ root(ROOTS.Zones, {
 						["cr"] = 18789,	-- Furgu <Hippogryph Master>
 						["coord"] = { 54.2, 75.0, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
+					}),
+				}),
+				petbattles({
+					n(66552, {	-- Narrok <Master Pet Tamer>
+						["coord"] = { 61.0, 49.4, NAGRAND },
 					}),
 				}),
 				n(QUESTS, {
@@ -1053,7 +1033,11 @@ root(ROOTS.Zones, {
 						["qg"] = 18817,	-- Chief Researcher Kartos
 						["coord"] = { 41.2, 44.2, NAGRAND },
 						["description"] = "This quest is only accessible when the Alliance controls Halaa.",
+						-- #if AFTER 3.1.0
+						["cost"] = { { "i", 26043, 10 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #else
 						["cost"] = { { "i", 26043, 20 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #endif
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(26044),	-- Halaa Research Token
@@ -1064,7 +1048,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10076,	-- Oshu'gun Crystal Powder (Alliance Version)
 						["coord"] = { 41.2, 44.2, NAGRAND },
 						["description"] = "This quest is only accessible when the Alliance controls Halaa.",
+						-- #if AFTER 3.1.0
+						["cost"] = { { "i", 26043, 10 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #else
 						["cost"] = { { "i", 26043, 20 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #endif
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 						["groups"] = {
@@ -1075,7 +1063,11 @@ root(ROOTS.Zones, {
 						["qg"] = 18816,	-- Chief Researcher Amereldine
 						["coord"] = { 41.2, 44.2, NAGRAND },
 						["description"] = "This quest is only accessible when the Horde controls Halaa.",
-						["cost"] = { { "i", 26042, 20 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #if AFTER 3.1.0
+						["cost"] = { { "i", 26043, 10 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #else
+						["cost"] = { { "i", 26043, 20 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #endif
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(26044),	-- Halaa Research Token
@@ -1086,7 +1078,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10074,	-- Oshu'gun Crystal Powder (Horde Version)
 						["coord"] = { 41.2, 44.2, NAGRAND },
 						["description"] = "This quest is only accessible when the Horde controls Halaa.",
-						["cost"] = { { "i", 26042, 20 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #if AFTER 3.1.0
+						["cost"] = { { "i", 26043, 10 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #else
+						["cost"] = { { "i", 26043, 20 }, },	-- Oshu'gun Crystal Powder Sample
+						-- #endif
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 						["groups"] = {
@@ -1138,7 +1134,7 @@ root(ROOTS.Zones, {
 					}),
 					q(9878, {	-- Solving the Problem
 						["qg"] = 18224,	-- Poli'lukluk the Wiser
-						["sourceQuest"] = 9918,	-- Not On My Watch!
+						-- ["sourceQuest"] = 9918,	-- Not On My Watch! [2023.07.13 Discord]
 						["coord"] = { 54.4, 72.2, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1234,7 +1230,9 @@ root(ROOTS.Zones, {
 						["qg"] = 18106,	-- Jorin Deadeye
 						["sourceQuests"] = {
 							9797,	-- Reinforcements for Garadar
+							-- #if AFTER 6.2.0.19953
 							39196,	-- Warchief's Command: Nagrand!
+							-- #endif
 						},
 						["coord"] = { 55.6, 37.6, NAGRAND },
 						["description"] = "Completing this quest will grant Neutral with The Mag'har.",
@@ -1749,10 +1747,8 @@ root(ROOTS.Zones, {
 								["timeline"] = { "added 7.0.3.22248" },
 								["classes"] = { SHAMAN },
 							}),
-							i(136938, {	-- Tome of Hex: Compy
+							i(136938, {	-- Tome of Hex: Compy (CI!)
 								["timeline"] = { "added 7.0.3.22248" },
-								["classes"] = { SHAMAN },
-								["f"] = RECIPES,
 							}),
 							i(136937, {	-- Vol'jin's Serpent Totem (TOY!)
 								["timeline"] = { "added 7.0.3.22248" },
@@ -1783,7 +1779,7 @@ root(ROOTS.Zones, {
 					}),
 					n(19021, {	-- Nancila
 						["coord"] = { 55.2, 70.6, NAGRAND },
-						["races"] = HORDE_ONLY,
+						["races"] = ALLIANCE_ONLY,
 						["sym"] = {{"select","itemID",
 							30758,	-- Aldor Guardian Rifle
 							30757,	-- Draenic Light Crossbow
@@ -1794,10 +1790,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 58.0, 35.6, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(27697),	-- Recipe: Grilled Mudfish
-							i(27698),	-- Recipe: Poached Bluefish
-							i(27691),	-- Recipe: Roasted Clefthoof
-							i(27693),	-- Recipe: Talbuk Steak
+							i(27697),	-- Recipe: Grilled Mudfish (RECIPE!)
+							i(27698),	-- Recipe: Poached Bluefish (RECIPE!)
+							i(27691),	-- Recipe: Roasted Clefthoof (RECIPE!)
+							i(27693),	-- Recipe: Talbuk Steak (RECIPE!)
 						},
 					}),
 					n(23007, {	-- Paulsta'ats <Consortium Quartermaster>
@@ -1831,16 +1827,16 @@ root(ROOTS.Zones, {
 							i(29456),	-- Gift of the Ethereal
 							i(29121),	-- Guile of Khoraazi
 							i(29119),	-- Haramad's Bargain
-							i(138796, {	-- Illusion: Executioner
-								["timeline"] = { "added 7.0.3.22248" },
+							i(138796, {	-- Illusion: Executioner (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(29122),	-- Nether Runner's Cowl
 							i(29457),	-- Nethershard
 							i(29116),	-- Nomad's Leggings
 							i(24314),	-- Pattern: Bag of Jewels
-							i(25733),	-- Pattern: Fel Leather Boots
-							i(25732),	-- Pattern: Fel Leather Gloves
-							i(25734),	-- Pattern: Fel Leather Leggings
+							i(25733),	-- Pattern: Fel Leather Boots (RECIPE!)
+							i(25732),	-- Pattern: Fel Leather Gloves (RECIPE!)
+							i(25734),	-- Pattern: Fel Leather Leggings (RECIPE!)
 							i(23874),	-- Schematic: Elemental Seaforium Charge
 							i(29118, {	-- Smuggler's Ammo Pouch
 								["timeline"] = { "removed 4.0.1.12941" },
@@ -1860,17 +1856,21 @@ root(ROOTS.Zones, {
 							i(29135),	-- Earthcaller's Headdress
 							i(29137),	-- Hellscream's Will
 							i(31773),	-- Mag'har Tabard
-							i(34174),	-- Pattern: Drums of Restoration
-							i(34172),	-- Pattern: Drums of Speed
+							i(34174, {	-- Pattern: Drums of Restoration [H] (RECIPE!)
+								["timeline"] = { ADDED_2_3_0 },
+							}),
+							i(34172, {	-- Pattern: Drums of Speed [H] (RECIPE!)
+								["timeline"] = { ADDED_2_3_0 },
+							}),
 							-- #if ANYCLASSIC
-							applyclassicphase(TBC_PHASE_FOUR, i(185924)),	-- Pattern: Greater Drums of Restoration
-							applyclassicphase(TBC_PHASE_FOUR, i(185923)),	-- Pattern: Greater Drums of Speed
+							applyclassicphase(TBC_PHASE_FOUR, i(185924)),	-- Pattern: Greater Drums of Restoration (RECIPE!)
+							applyclassicphase(TBC_PHASE_FOUR, i(185923)),	-- Pattern: Greater Drums of Speed (RECIPE!)
 							-- #endif
-							i(25741),	-- Pattern: Netherfury Belt
-							i(25743),	-- Pattern: Netherfury Boots
-							i(25742),	-- Pattern: Netherfury Leggings
+							i(25741),	-- Pattern: Netherfury Belt [H] (RECIPE!)
+							i(25743),	-- Pattern: Netherfury Boots [H] (RECIPE!)
+							i(25742),	-- Pattern: Netherfury Leggings [H] (RECIPE!)
 							i(29664),	-- Pattern: Reinforced Mining Bag
-							i(22917),	-- Recipe: Transmute Primal Fire to Earth
+							i(22917),	-- Recipe: Transmute Primal Fire to Earth (RECIPE!)
 							i(31829),	-- Cobalt Riding Talbuk (H) (MOUNT!)
 							i(29102),	-- Cobalt War Talbuk (H) (MOUNT!)
 							i(31831),	-- Silver Riding Talbuk (H) (MOUNT!)
@@ -1942,7 +1942,7 @@ root(ROOTS.Zones, {
 									{ "i", 26044, 2 },	-- 2x Halaa Research Token
 								},
 							}),
-							i(32071, {	-- Recipe: Elixir of Ironskin
+							i(32071, {	-- Recipe: Elixir of Ironskin (RECIPE!)
 								["cost"] = { { "i", 26044, 2 }, },	-- 2x Halaa Research Token
 							}),
 							i(27650, {	-- Shadowstalker's Leggings
@@ -2042,7 +2042,7 @@ root(ROOTS.Zones, {
 									{ "i", 26044, 2 },	-- 2x Halaa Research Token
 								},
 							}),
-							i(32071, {	-- Recipe: Elixir of Ironskin
+							i(32071, {	-- Recipe: Elixir of Ironskin (RECIPE!)
 								["cost"] = { { "i", 26044, 2 }, },	-- 2x Halaa Research Token
 							}),
 							i(27650, {	-- Shadowstalker's Leggings
@@ -2108,17 +2108,21 @@ root(ROOTS.Zones, {
 							i(29136),	-- Far Seer's Helm
 							i(29142),	-- Kurenai Kilt
 							i(31774),	-- Kurenai Tabard
-							i(34175),	-- Pattern: Drums of Restoration
-							i(34173),	-- Pattern: Drums of Speed
+							i(34175, {	-- Pattern: Drums of Restoration [A] (RECIPE!)
+								["timeline"] = { ADDED_2_3_0 },
+							}),
+							i(34173, {	-- Pattern: Drums of Speed [A] (RECIPE!)
+								["timeline"] = { ADDED_2_3_0 },
+							}),
 							-- #if ANYCLASSIC
-							applyclassicphase(TBC_PHASE_FOUR, i(187048)),	-- Pattern: Greater Drums of Restoration
-							applyclassicphase(TBC_PHASE_FOUR, i(187049)),	-- Pattern: Greater Drums of Speed
+							applyclassicphase(TBC_PHASE_FOUR, i(187048)),	-- Pattern: Greater Drums of Restoration (RECIPE!)
+							applyclassicphase(TBC_PHASE_FOUR, i(187049)),	-- Pattern: Greater Drums of Speed (RECIPE!)
 							-- #endif
-							i(29217),	-- Pattern: Netherfury Belt
-							i(29218),	-- Pattern: Netherfury Boots
-							i(29219),	-- Pattern: Netherfury Leggings
-							i(30444),	-- Pattern: Reinforced Mining Bag
-							i(30443),	-- Recipe: Transmute Primal Fire to Earth
+							i(29217),	-- Pattern: Netherfury Belt [A] (RECIPE!)
+							i(29218),	-- Pattern: Netherfury Boots [A] (RECIPE!)
+							i(29219),	-- Pattern: Netherfury Leggings [A] (RECIPE!)
+							i(30444),	-- Pattern: Reinforced Mining Bag (RECIPE!)
+							i(30443),	-- Recipe: Transmute Primal Fire to Earth (RECIPE!)
 							i(31830),	-- Cobalt Riding Talbuk (A) (MOUNT!)
 							i(29227),	-- Cobalt War Talbuk (A) (MOUNT!)
 							i(31832),	-- Silver Riding Talbuk (A) (MOUNT!)
@@ -2136,10 +2140,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 56.2, 73.2, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(27697),	-- Recipe: Grilled Mudfish
-							i(27698),	-- Recipe: Poached Bluefish
-							i(27691),	-- Recipe: Roasted Clefthoof
-							i(27693),	-- Recipe: Talbuk Steak
+							i(27697),	-- Recipe: Grilled Mudfish (RECIPE!)
+							i(27698),	-- Recipe: Poached Bluefish (RECIPE!)
+							i(27691),	-- Recipe: Roasted Clefthoof (RECIPE!)
+							i(27693),	-- Recipe: Talbuk Steak (RECIPE!)
 						},
 					}),
 				}),
@@ -2158,7 +2162,7 @@ root(ROOTS.Zones, {
 					i(23611, {	-- Plans: Ragesteel Gloves (RECIPE!)
 						["cr"] = 17136,	-- Boulderfist Warrior
 					}),
-					i(22923, {	-- Recipe: Major Arcane Protection Potion
+					i(22923, {	-- Recipe: Major Arcane Protection Potion (RECIPE!)
 						["cr"] = 17150,	-- Vir'aani Arcanist
 					}),
 					i(25433, {	-- Obsidian Warbeads

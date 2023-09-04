@@ -4,19 +4,17 @@
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(CAVERNS_OF_TIME, {
 		["lore"] = "Located in the eastern part of Tanaris, the Caverns of Time contain various portals to different key historical periods and events in Warcraft history.",
+		["zone-text-areaID"] = 1941,	-- Caverns of Time
 		["maps"] = { 74 },	-- Caverns of Time Entrance
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\INV_Misc_Head_Dragon_Bronze",
 		-- #endif
 		["groups"] = {
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({ ADDED_5_1_0 }, {
 				pet(1161, {	-- Infinite Whelpling (PET!)
 					["description"] = "This pet can be found around the Caverns of Time entrance and the pathway leading to the main chamber.",
-					["timeline"] = { ADDED_5_1_0 },
 				}),
-			})),
-			-- #endif
+			}),
 			-- #if AFTER TBC
 			n(FACTIONS, {
 				applyclassicphase(TBC_PHASE_ONE, faction(989, {	-- Keepers of Time
@@ -131,20 +129,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
 							["OnTooltip"] = [[function(t)
 								local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
-								if ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FOUR .. [[] then
+								if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FOUR .. [[) then
 									tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);
 								else
 									tooltip:AddLine("This will be available at Honored reputation after TBC Phase 4.", 0.4, 0.8, 1, 1);
 								end
 								tooltip:Show();
 							end]],
-							["OnUpdate"] = [[function(t)
-								if not t.otherItemID then
-									t.otherItemID = 185693;
-									_.CacheField(t, "itemID", t.otherItemID);
-									t.GetItemCount = function(t) return GetItemCount(t.itemID, true) + GetItemCount(t.otherItemID, true); end
-									t.OnUpdate = nil;
-								end
+							["OnInit"] = [[function(t)
+								t.otherItemID = 185693;
+								t.GetItemCount = function(t) return GetItemCount(t.itemID, true) + GetItemCount(t.otherItemID, true); end
+								return t;
 							end]],
 							-- #endif
 							-- #endif
@@ -180,11 +175,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(29186, {	-- Glyph of the Defender
 							["timeline"] = { "removed 5.0.4" },
 						}),
-						i(29713),	-- Pattern: Drums of Panic
+						i(29713),	-- Pattern: Drums of Panic (RECIPE!)
 						-- #if ANYCLASSIC
-						applyclassicphase(TBC_PHASE_FOUR, i(185925)),	-- Pattern: Greater Drums of Panic
+						applyclassicphase(TBC_PHASE_FOUR, i(185925)),	-- Pattern: Greater Drums of Panic (RECIPE!)
 						-- #endif
-						i(31355),	-- Recipe: Flask of Supreme Power
+						i(31355),	-- Recipe: Flask of Supreme Power (RECIPE!)
 					},
 				}),
 				n(155944, {	-- Otela <Time-Lost Baubles>
@@ -193,11 +188,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(170739, {	-- Sunswarmed Sand
 							["timeline"] = { "added 8.2.0.30918" },
-							["cost"] = { { "c", 1166, 10 }, },		-- 10x Timewarped Badge
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 10 }},
 						}),
 						i(170380, {	-- Jar of the Sunwarmed Sand (TOY!)
 							["timeline"] = { "added 8.2.0.30918" },
-							["cost"] = { { "c", 1166, 1000 }, },	-- 1,000x Timewarped Badge
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
 						}),
 					},
 				}),

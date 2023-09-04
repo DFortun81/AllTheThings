@@ -102,7 +102,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			i(169349),	-- Kelpfin (PET!)
 		}))),
 		petbattle(ach(8348,  {	-- The Longest Day*
-			i(98715),	-- Marked Flawless Battle-Stone
+		--	i(98715),	-- Marked Flawless Battle-Stone
 			crit(1),	-- Nicki Tinytech [Hellfire Peninsula)
 			crit(2),	-- Ras'an [Zangarmarsh)
 			crit(3),	-- Narrok [Nagrand)

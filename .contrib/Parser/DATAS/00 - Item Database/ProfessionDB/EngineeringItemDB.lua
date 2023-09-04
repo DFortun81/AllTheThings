@@ -1,41 +1,6 @@
-local Items = root(ROOTS.ItemDBConditional);
-local Recipes = root(ROOTS.RecipeDB);
-local ProfessionID = ENGINEERING;
+local i = GetRecipeHelperForProfession(ENGINEERING);
 local GNOMISH_ENGINEER = 20219;
 local GOBLIN_ENGINEER = 20222;
-local i = function(itemID, recipeID, unobtainStatus, requireSkill)
-	if Items[itemID] then
-		print("Duplicate Recipe Item Defined!",itemID,recipeID);
-	elseif itemID == 0 then
-		local recipe = { ["requireSkill"] = requireSkill or ProfessionID, ["f"] = RECIPES };
-		-- allow for timeline to be a raw 'u' value or single string of 'timeline' or table of multiple 'timeline' values
-		local unobtainType = unobtainStatus and type(unobtainStatus);
-		if unobtainType then
-			if unobtainType == "number" then
-				recipe.u = unobtainStatus;
-			elseif unobtainType == "string" then
-				recipe.timeline = { unobtainStatus };
-			elseif unobtainType == "table" then
-				recipe.timeline = unobtainStatus;
-			end
-		end
-		Recipes[recipeID] = recipe;
-	else
-		local item = { ["recipeID"] = recipeID, ["requireSkill"] = requireSkill or ProfessionID, ["f"] = RECIPES };
-		-- allow for timeline to be a raw 'u' value or single string of 'timeline' or table of multiple 'timeline' values
-		local unobtainType = unobtainStatus and type(unobtainStatus);
-		if unobtainType then
-			if unobtainType == "number" then
-				item.u = unobtainStatus;
-			elseif unobtainType == "string" then
-				item.timeline = { unobtainStatus };
-			elseif unobtainType == "table" then
-				item.timeline = unobtainStatus;
-			end
-		end
-		Items[itemID] = item;
-	end
-end
 
 -- Gnomish Engineering
 i(18654, 23096, nil, GNOMISH_ENGINEER);		-- Schematic: Gnomish Alarm-o-Bot
@@ -43,11 +8,10 @@ i(18661, 23129, nil, GNOMISH_ENGINEER);		-- Schematic: World Enlarger
 -- Goblin Engineering
 i(18653, 23078, nil, GOBLIN_ENGINEER);		-- Schematic: Goblin Jumper Cables XL
 
-
--- TEMP
--- #IF NOT ANYCLASSIC
+-- TODO:
 i(11827, 15633);	-- Schematic: Lil' Smoky
--- #ENDIF
+i(4413, 3959);	-- Schematic: Discombobulator Ray
+i(14639, 3952);	-- Schematic: Minor Recombobulator
 
 ------------------
 -- PATCH 10.0.0 --
@@ -245,6 +209,14 @@ i(205178, 408230);	-- Mallard Mortar
 i(204844, 407005);	-- Polarity Bomb
 i(205036, 408052);	-- Tinker: Shadowflame Rockets
 -- DISCOVERY --
-i(0, 407006);	-- EZ-Thro Polarity Bomb
+i(0, 407006);		-- EZ-Thro Polarity Bomb
 -- SPECIAL --
 i(0, 407170);		-- Inspired Order Recalibrator
+
+------------------
+-- PATCH 10.1.5 --
+------------------
+--- ITEM ---
+i(207576, 416691);	-- Refurbished Purifier
+i(206559, 413759);	-- Replaced Servo Arm
+i(207574, 416689);	-- Skullstone Bludgeon

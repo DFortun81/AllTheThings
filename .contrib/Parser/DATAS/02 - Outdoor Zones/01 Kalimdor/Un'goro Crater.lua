@@ -35,8 +35,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					406,	-- Beetle (PET!)
 					393,	-- Cockroach (PET!)
@@ -56,8 +55,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["description"] = "Only found around water in Un'goro.",
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["285:285:582:67"] = 1943,	-- Ironstone Plateau
@@ -609,7 +607,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 47,
 					["groups"] = {
-						i(13481, {	-- Recipe: Elixir of Brute Force
+						i(13481, {	-- Recipe: Elixir of Brute Force (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },	-- Moved to Trainers
 						}),
 					},
@@ -1499,15 +1497,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["lvl"] = lvlsquish(48, 48, 15),
 					["groups"] = {
-						classicAch(3357, {	-- Venomhide Ravasaur
+						ach(3357, {	-- Venomhide Ravasaur
 							["provider"] = { "i", 46102 },	-- Whistle of the Venomhide Ravasaur
 							["timeline"] = { "added 3.2.0.10026" },
-							["races"] = HORDE_ONLY,
-							["f"] = MOUNTS,
 							-- #if BEFORE WRATH
 							["description"] = "Obtain a Venomhide Ravasaur.",
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 							-- #endif
+							["races"] = HORDE_ONLY,
+							["f"] = MOUNTS,
 						}),
 						i(46102, {	-- Venomhide Ravasaur (MOUNT!)
 							["timeline"] = { "added 3.2.0.10026" },
@@ -1790,11 +1787,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 43.2, 7.8, UNGORO_CRATER },
 					-- #endif
 					["groups"] = {
-						i(15758, {	-- Pattern: Devilsaur Gauntlets
+						i(15758, {	-- Pattern: Devilsaur Gauntlets (RECIPE!)
 							["isLimited"] = true,
 						}),
 						-- #if AFTER CATA
-						i(15772, {	-- Pattern: Devilsaur Leggings
+						i(15772, {	-- Pattern: Devilsaur Leggings (RECIPE!)
 							["isLimited"] = true,
 						}),
 						-- #endif
@@ -1832,7 +1829,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(199092, {	-- Inert Phoenix Ash
 					["timeline"] = { ADDED_10_0_7 },
-					["cr"] = 6520,	-- Scorching Elemental
+					["crs"] = {
+						6521,	-- Living Blaze
+						6520,	-- Scorching Elemental
+					},
 					["coords"] = {
 						{ 52.8, 42.4, UNGORO_CRATER },
 						{ 46.0, 46.6, UNGORO_CRATER },
@@ -1847,12 +1847,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						6559,	-- Glutinous Ooze
 						6557,	-- Primal Ooze
 					},
-					["groups"] = {
-						i(20769),	-- Disgusting Oozeling (PET!)
-					},
+					["sym"] = {{"select","itemID", 20769}},	-- Disgusting Oozeling (PET!)
 				}),
 				-- #if BEFORE 4.0.3
-				i(15772, {	-- Pattern: Devilsaur Leggings
+				i(15772, {	-- Pattern: Devilsaur Leggings (RECIPE!)
 					["crs"] = {
 						9477,	-- Cloned Ooze
 						6559,	-- Glutinous Ooze

@@ -46,7 +46,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 				8940,	-- Explore Talador
 			}},
 		})),
-		classicAch(42, {	-- Eastern Kingdoms Explorer [7.0.3] / Explore Eastern Kingdoms
+		ach(42, {	-- Eastern Kingdoms Explorer [7.0.3] / Explore Eastern Kingdoms
 			-- #if AFTER WRATH
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -140,7 +140,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(43),	-- Orgrimmar for Horde | Stormwind for Alliance
 		}),
 		ach(1833),	-- It's Happy Hour Somewhere
-		classicAch(43, {	-- Kalimdor Explorer [7.0.3] / Explore Kalimdor
+		ach(43, {	-- Kalimdor Explorer [7.0.3] / Explore Kalimdor
 			-- #if AFTER WRATH
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -215,18 +215,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
 			["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_ACHCAT_OnUpdate(t, ]] .. ACHIEVEMENT_CATEGORY_OUTLAND_EXP .. [[); end]],
 			-- #endif
-		})),
-		applyclassicphase(MOP_PHASE_ONE, ach(6974, {	-- Pandaria Explorer [7.0.3] / Explore Pandaria
-			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
-				6978,	-- Explore Dread Wastes
-				6351,	-- Explore Jade Forest
-				6975,	-- Explore Krasarang Wilds
-				6976,	-- Explore Kun-Lai Summit
-				6977,	-- Explore Townlong Steppes
-				6979,	-- Explore Vale of Eternal Blossoms
-				6969,	-- Explore Valley of the Four Winds
-			}},
 		})),
 		ach(2556, {	-- Pest Control
 			crit(1),	-- Larva (Naxxramas, Ghostlands)

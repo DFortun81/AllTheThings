@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(LEGION_DALARAN, {
@@ -49,7 +48,6 @@ root(ROOTS.Zones, {
 				}),
 				n(119486, {	-- Apothecary Lee <Legion Gladiator>
 					["races"] = HORDE_ONLY,
-					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 56.5, 28.1, LEGION_DALARAN },
 					["g"] = {
 						n(PVP_COMBATANT, {	-- Season1+Season2
@@ -1601,20 +1599,17 @@ root(ROOTS.Zones, {
 							}),
 						}),
 						filter(RECIPES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
+							i(137894, {	-- Pattern: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(137926, {	-- Pattern: Gravenscale Spaulders [Rank 3] (RECIPE!)
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
 							i(137975, {	-- Pattern: Imbued Silkweave Epaulets [Rank 3] (RECIPE!)
 								["requireSkill"] = TAILORING,
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 							i(123950, {	-- Plans: Demonsteel Pauldrons [Rank 3] (RECIPE!)
-								["requireSkill"] = BLACKSMITHING,
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(137894, {	-- Pattern: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
-								["requireSkill"] = LEATHERWORKING,
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(137926, {	-- Pattern: Gravenscale Spaulders [Rank 3] (RECIPE!)
-								["requireSkill"] = LEATHERWORKING,
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						})),
@@ -2012,7 +2007,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 29.6, 74.8, LEGION_DALARAN },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(147778)),	-- Enchanter's Illusion - Demonic Tyranny
+						un(ELITE_PVP_REQUIREMENT, i(147778)),	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
 						--i(139775),	-- Alliance Enthusiast (PET!)
 						--i(142379),	-- Dutiful Squire (PET!)
 						un(ELITE_PVP_REQUIREMENT, i(147337)),	-- Cruel Gladiator's Tabard [Elite Rating]
@@ -2025,7 +2020,6 @@ root(ROOTS.Zones, {
 						un(ELITE_PVP_REQUIREMENT, i(149449)),	-- Dominant Gladiator's Cloak [Elite Rating]
 						un(ELITE_PVP_REQUIREMENT, i(149451)),	-- Demonic Gladiator's Tabard [Elite Rating]
 						un(ELITE_PVP_REQUIREMENT, i(149453)),	-- Demonic Gladiator's Cloak [Elite Rating]
-
 						n(PVP_ELITE, {	-- Season1+Season2
 							cl(DEATHKNIGHT, {
 								un(ELITE_PVP_REQUIREMENT, i(146220, {	-- Ensemble: Elite Vindictive Gladiator's Dreadplate Armor (A)
@@ -2921,9 +2915,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(136629),	-- Felgibber Shotgun
-						i(136782, {	-- Fireworks Instruction Manual
-							["spellID"] = 127933,	-- Fireworks
-						}),
+						i(136782),	-- Fireworks Instruction Manual (CI!)
 						i(137709),	-- Schematic: Auto-Hammer [Rank 2] (RECIPE!)
 						i(137705),	-- Schematic: Deployable Bullet Dispenser [Rank 2] (RECIPE!)
 						i(133673),	-- Schematic: Double-Barreled Cranial Cannon [Rank 1] (RECIPE!)
@@ -3033,7 +3025,6 @@ root(ROOTS.Zones, {
 						i(141030),	-- Technique: Glyph of Cracked Ice (RECIPE!)
 						i(137735),	-- Technique: Glyph of Crackling Crane Lightning (RECIPE!)
 						i(141900),	-- Technique: Glyph of Falling Thunder (RECIPE!)
-						i(137731),	-- Technique: Glyph of Fel Imp (RECIPE!)
 						i(141036),	-- Technique: Glyph of Fel-Enemies (RECIPE!)
 						i(137730),	-- Technique: Glyph of Ghostly Fade (RECIPE!)
 						i(141037),	-- Technique: Glyph of Mana Touched Souls (RECIPE!)
@@ -3048,6 +3039,7 @@ root(ROOTS.Zones, {
 						i(137734),	-- Technique: Glyph of the Sentinel (RECIPE!)
 						i(137736),	-- Technique: Glyph of the Spectral Raptor (RECIPE!)
 						i(141055),	-- Technique: Glyph of Yu'lon's Grace (RECIPE!)
+						i(137731),	-- Technique: Grimoire of the Fel Imp (RECIPE!)
 					},
 				}),
 				n(97009, {	-- Jawknee <Axe Merchant>
@@ -3094,7 +3086,6 @@ root(ROOTS.Zones, {
 				}),
 				n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
 					["races"] = ALLIANCE_ONLY,
-					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 29.4, 75.6, LEGION_DALARAN },
 					["g"] = {
 						n(PVP_COMBATANT, {	-- Season1+Season2
@@ -4646,20 +4637,17 @@ root(ROOTS.Zones, {
 							}),
 						}),
 						filter(RECIPES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
+							i(137894, {	-- Pattern: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(137926, {	-- Pattern: Gravenscale Spaulders [Rank 3] (RECIPE!)
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
 							i(137975, {	-- Pattern: Imbued Silkweave Epaulets [Rank 3] (RECIPE!)
 								["requireSkill"] = TAILORING,
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 							i(123950, {	-- Plans: Demonsteel Pauldrons [Rank 3] (RECIPE!)
-								["requireSkill"] = BLACKSMITHING,
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(137894, {	-- Pattern: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
-								["requireSkill"] = LEATHERWORKING,
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(137926, {	-- Pattern: Gravenscale Spaulders [Rank 3] (RECIPE!)
-								["requireSkill"] = LEATHERWORKING,
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 						})),
@@ -5245,12 +5233,11 @@ root(ROOTS.Zones, {
 						i(137888),	-- Pattern: Dreadleather Mask [Rank 2] (RECIPE!)
 						i(137887),	-- Pattern: Dreadleather Pants [Rank 2] (RECIPE!)
 						i(137886),	-- Pattern: Dreadleather Shoulderguard [Rank 2] (RECIPE!)
-						i(142407),	-- Pattern: Drums of the Mountain [Rank 1] (RECIPE!)
-						i(141850, {	-- Pattern: Elderhorn Riding Harness
+						i(142407, {	-- Pattern: Drums of the Mountain [Rank 1] (RECIPE!)
+							["timeline"] = { ADDED_7_1_0 },
+						}),
+						i(141850, {	-- Pattern: Elderhorn Riding Harness (RECIPE!)
 							["description"] = "The vendor will only sell this recipe to those who have already completed the quest that rewards it. This is in case you deleted the recipe without learning it, or if you dropped Leatherworking after doing the quest and decided to relearn it later.",
-							["g"] = {
-								i(129962),	-- Great Northern Elderhorn (MOUNT!)
-							},
 						}),
 						i(137916),	-- Pattern: Gravenscale Armbands [Rank 2] (RECIPE!)
 						i(137921),	-- Pattern: Gravenscale Grips [Rank 2] (RECIPE!)
@@ -5277,7 +5264,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 57.0, 27.8, LEGION_DALARAN },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(147778)),	-- Enchanter's Illusion - Demonic Tyranny
+						un(ELITE_PVP_REQUIREMENT, i(147778)),	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
 					--	i(142380),	-- Dutiful Gruntling (PET!)
 					--	i(139776),	-- Horde Fanatic (PET!)
 						un(ELITE_PVP_REQUIREMENT, i(147336)),	-- Cruel Gladiator's Tabard [Elite Rating]
@@ -6684,7 +6671,7 @@ root(ROOTS.Zones, {
 						i(136699, {	-- Plans: Flamespike (RECIPE!)
 							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
 						}),
-						i(137935, {	-- Pattern: Leather Love Seat
+						i(137935, {	-- Pattern: Leather Love Seat (RECIPE!)
 							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
 						}),
 						i(137727, {	-- Schematic: Mecha-Bond Imprint Matrix

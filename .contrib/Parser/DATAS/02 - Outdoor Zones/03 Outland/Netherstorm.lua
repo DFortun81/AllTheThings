@@ -16,7 +16,7 @@ root(ROOTS.Zones, {
 						["description"] = "Explore Netherstorm, revealing the covered areas of the world map.",
 						-- #endif
 					}),
-					classicAch(1194, {	-- Into the Nether
+					ach(1194, {	-- Into the Nether
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
 						["sourceQuests"] = {
@@ -90,14 +90,12 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					pet(521, {	-- Fledgling Nether Ray (PET!)
 						["description"] = "Found only around Manaforges.",
 					}),
 					pet(638),	-- Nether Roach (PET!)
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(3723, "256:256:328:397"),		-- Arklon Ruins
@@ -464,7 +462,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10174,	-- Curse of the Violet Tower
 						["groups"] = {
 							i(30401),	-- Farahlite Studded Boots
-							i(29955),	-- Mana Infused Wristguards
+							i(29955),	-- Mana-Infused Wristguards
 							i(29954),	-- Spiritbinder's Mantle
 							i(29959),	-- Spiritualist's Gauntlets
 						},
@@ -1649,16 +1647,16 @@ root(ROOTS.Zones, {
 							i(29456),	-- Gift of the Ethereal
 							i(29121),	-- Guile of Khoraazi
 							i(29119),	-- Haramad's Bargain
-							i(138796, {	-- Illusion: Executioner
-								["timeline"] = { "added 7.0.3.22248" },
+							i(138796, {	-- Illusion: Executioner (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(29122),	-- Nether Runner's Cowl
 							i(29457),	-- Nethershard
 							i(29116),	-- Nomad's Leggings
 							i(24314),	-- Pattern: Bag of Jewels
-							i(25733),	-- Pattern: Fel Leather Boots
-							i(25732),	-- Pattern: Fel Leather Gloves
-							i(25734),	-- Pattern: Fel Leather Leggings
+							i(25733),	-- Pattern: Fel Leather Boots (RECIPE!)
+							i(25732),	-- Pattern: Fel Leather Gloves (RECIPE!)
+							i(25734),	-- Pattern: Fel Leather Leggings (RECIPE!)
 							i(23874),	-- Schematic: Elemental Seaforium Charge
 							i(29118, {	-- Smuggler's Ammo Pouch
 								["timeline"] = { "removed 4.0.1.12941" },
@@ -2150,11 +2148,11 @@ appendGroups(COMMON_ENCHANTING_RECIPES, ASARNAN_MALIJ_GROUPS);
 
 -- #if AFTER TBC
 -- These quests never made it in.
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	n(ARMOR, {
 		i(134012, {	-- X-52 Rocket Helmet [Might be the transmog it applies when you use the toy itself.]
 			["timeline"] = { "removed 7.0.3.22248" },
 		}),
 	}),
-}));
+});
 -- #endif

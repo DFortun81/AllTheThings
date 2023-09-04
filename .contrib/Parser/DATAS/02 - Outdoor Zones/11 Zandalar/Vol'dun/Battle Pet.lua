@@ -7,11 +7,13 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 		filter(BATTLE_PETS, {
 			["sym"] = {{"select","speciesID",
 				2388,	-- Bloodfever Tarantula (PET!)
-				2399,	-- Hermit Crab (PET!)
 				2390,	-- Leafy Flutterwing (PET!)
 				2392,	-- Young Sand Sifter (PET!)
 			}},
 			["g"] = {
+				pet(2399, {	-- Hermit Crab (PET!)
+					["description"] = "Best found around the coastline of Vol'dun. Can also be found in Tiragarde, best spot is East-ish of Bridgeport.",
+				}),
 				o(311903, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Loose Parts (A)
 					["icon"] = "Interface\\Icons\\INV_Engineering_ReavesBattery",
 					["races"] = ALLIANCE_ONLY,

@@ -173,7 +173,7 @@ root(ROOTS.Character, n(HEIRLOOMS, {
 			i(122372),	-- Strengthened Stockade Pauldrons
 
 		}),
-		n(-386, {	-- Trinket
+		n(TRINKET, {
 			un(REMOVED_FROM_GAME, i(93899)),	-- Bequeathed Insignia of the Alliance
 			un(REMOVED_FROM_GAME, i(93898)),	-- Bequeathed Insignia of the Horde
 			i(126948),	-- Defending Champion
@@ -304,7 +304,7 @@ root(ROOTS.Character, n(HEIRLOOMS, {
 	}),
 }));
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(CATA_TIER, {
 		n(HEIRLOOMS, {
 			tier(CATA_TIER, 0.3, {
@@ -333,4 +333,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

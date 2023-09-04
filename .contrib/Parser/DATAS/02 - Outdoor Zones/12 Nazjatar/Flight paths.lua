@@ -38,14 +38,16 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		fp(2483, {	-- The Tidal Conflux (A)
 			["coord"] = { 49.8, 23.6, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
-			["description"] = "Must complete the zone storyline to unlock this path.",
-			-- TODO: sourceQuest?
+			["sourceQuests"] = {
+				56325,	-- Changing Tides
+			},
 		}),
 		fp(2482, {	-- The Tidal Conflux (H)
 			["coord"] = { 51.1, 23.6, NAZJATAR },
 			["races"] = HORDE_ONLY,
-			["description"] = "Must complete the zone storyline to unlock this path.",
-			-- TODO: sourceQuest?
+			["sourceQuests"] = {
+				55799,	-- The Tide Turns
+			},
 		}),
 		fp(2407, {	-- Utama's Stand
 			["coord"] = { 61.7, 36.5, NAZJATAR },

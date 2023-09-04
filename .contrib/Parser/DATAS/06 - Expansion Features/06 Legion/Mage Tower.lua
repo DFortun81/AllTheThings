@@ -427,10 +427,10 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(64922),	-- unlocking what I assume is the Fel Bear druid form, popped at the same time as 64925
 	}),
 });
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, tier(SL_TIER, {
+root(ROOTS.NeverImplemented, tier(SL_TIER, {
 	n(-10048, {	-- Mage Tower
 		cl(MAGE, {	-- Regalia of the Arcane Tempest set
 			i(188643),	-- Raiment of the Arcane Tempest
 		}),
 	}),
-})));
+}));

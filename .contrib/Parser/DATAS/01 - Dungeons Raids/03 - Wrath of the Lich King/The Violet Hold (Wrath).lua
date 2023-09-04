@@ -5,27 +5,32 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(283, {	-- The Violet Hold (Wrath)
 		["mapID"] = THE_VIOLET_HOLD_WRATH,
 		["coord"] = { 66.6, 67.9, NORTHREND_DALARAN },
+		["sins"] = {
+			"Violet Hold",	-- This one is all sorts of messed up.
+			"The Violet Hold",
+			"Violette Festung",
+		},
 		["lvl"] = lvlsquish(75, 75, 15),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(1865, {	-- Lockdown!
 					crit(7137, { -- Xevozz
-						["_encounter"] = { 629, 2 },
+						["_encounter"] = { 629, HEROIC_DUNGEON },
 					}),
 					crit(7138, { -- Levanthor
-						["_encounter"] = { 630, 2 },
+						["_encounter"] = { 630, HEROIC_DUNGEON },
 					}),
 					crit(7139, { -- Ichoron
-						["_encounter"] = { 628, 2 },
+						["_encounter"] = { 628, HEROIC_DUNGEON },
 					}),
 					crit(7140, { -- Zuramat the Obliterator
-						["_encounter"] = { 631, 2 },
+						["_encounter"] = { 631, HEROIC_DUNGEON },
 					}),
 					crit(7141, { -- Erekem
-						["_encounter"] = { 626, 2 },
+						["_encounter"] = { 626, HEROIC_DUNGEON },
 					}),
 					crit(7142, { -- Moragg
-						["_encounter"] = { 627, 2 },
+						["_encounter"] = { 627, HEROIC_DUNGEON },
 					}),
 				}),
 			}),
@@ -263,6 +268,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								i(39293),	-- Blackened Legplates of Feugen
 								i(39281),	-- Infection Repulser
 							})),
+							applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
+								i(45289),	-- Lifespark Visage
+								i(45935),	-- Ironbark Faceguard
+							})),
 							-- #endif
 						},
 					}),
@@ -286,6 +295,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								i(39292),	-- Repelling Charge
 								i(39280),	-- Leggings of Innumerable Barbs
 								i(39274),	-- Retcher's Shoulderpads
+							})),
+							applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
+								i(45935),	-- Ironbark Faceguard
 							})),
 							-- #endif
 						},
@@ -311,6 +323,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								i(39273),	-- Sullen Cloth Boots
 								i(39279),	-- Blistered Belt of Decay
 								i(39291),	-- Torment of the Banished
+							})),
+							applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
+								i(45941),	-- Chestguard of the Lasher
 							})),
 							-- #endif
 						},
@@ -339,6 +354,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								i(39285),	-- Handgrips of Turmoil
 								i(39272),	-- Drape of Surgery
 							})),
+							applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
+								i(45285),	-- Might of the Leviathan
+							})),
 							-- #endif
 						},
 					}),
@@ -366,6 +384,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								i(39271),	-- Blade of Dormant Memories
 								i(39307),	-- Iron Rings of Endurance
 							})),
+							applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
+								i(45284),	-- Kinetic Ripper
+								i(45935),	-- Ironbark Faceguard
+							})),
 							-- #endif
 						},
 					}),
@@ -391,6 +413,11 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								i(39276),	-- The Skull of Ruin
 								i(39282),	-- Bone-Linked Amulet
 							})),
+							applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
+								i(45289),	-- Lifespark Visage
+								i(45936),	-- Legplates of Fluorishing Resolve
+								i(45934),	-- Unraveling Reach
+							})),
 							-- #endif
 						},
 					}),
@@ -411,6 +438,11 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								i(40619),	-- Leggings of the Lost Conqueror
 								i(40620),	-- Leggings of the Lost Protector
 								i(40621),	-- Leggings of the Lost Vanquisher
+							})),
+							applyclassicphase(WRATH_PHASE_THREE, ach(18595, {	-- Defense Protocol Beta: The Violet Hold
+								currency(SIDEREAL_ESSENCE),
+								i(46009),	-- Bindings of the Depths
+								i(46010),	-- Darkstone Ring
 							})),
 							-- #endif
 							ach(494),	-- Heroic: The Violet Hold

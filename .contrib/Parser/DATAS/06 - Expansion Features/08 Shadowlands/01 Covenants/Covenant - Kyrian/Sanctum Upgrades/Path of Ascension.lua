@@ -149,8 +149,7 @@ local CHAMPIONS_PELT = 180478;
 local ELYSIAN_FEATHERS = 180477;
 local NIGHTFORGED_STEEL = 180595;
 local SOUL_MIRROR = 179378;
-
-root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_KYR" }, {
+root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["customCollect"] = "SL_COV_KYR" }, {
 	n(KYRIAN, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = "Interface\\Icons\\Inv_misc_sigil_bastion01",
@@ -158,7 +157,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				n(PATH_OF_ASCENSION, {
 					["maps"] = { 1711 },	-- Path of Ascension Coliseum
 					["g"] = {
-						currency(1819, {	-- Medallion of Service
+						currency(MEDALLION_OF_SERVICE, {
 							["description"] = "This is granted from all types of activities in the Shadowlands.",
 						}),
 						n(ACHIEVEMENTS, {
@@ -250,52 +249,52 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								filter(RECIPES, {
 									-- Lures
 									recipe(333530, {	-- Anointment Oil
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333548, {	-- Ashfallen Key
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333545, {	-- Catalyst of Creation
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333535, {	-- Fountain of Rejuvenation
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333533, {	-- Heartpiercer Javelin
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333549, {	-- Humility's Guard
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(328321, {	-- Overcharged Goliath Core
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333546, {	-- Praetor Resonance Beacon
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(328680, {	-- Soul Mirror
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333547, {	-- Soulseeker Crystal
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 
 									-- Boons
 									recipe(345786, {	-- Artisan Tool Belt
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(342521),	-- Empyrean Refreshment
 									recipe(345760, {	-- Gilded Abacus
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(345713),	-- Kyrian Smith's Kit
 									recipe(345894),	-- Medallion of Service
 									recipe(335705, {	-- Sigil of Haunting Memories
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(342503),	-- Skystrider Glider
 									recipe(345757, {	-- Steward Mail Pouch
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(345916),	-- Vesper of Calling
 
@@ -308,22 +307,22 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 
 									-- Equipment
 									recipe(333230, {	-- Deep Echo Trident
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333209, {	-- Herald's Footpads
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333372, {	-- Phial of Serenity
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(345978, {	-- Ring of Warding
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333374, {	-- Spiritforged Aegis
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 									recipe(333362, {	-- Vial of Lichfrost
-										["collectible"] = false,
+										["u"] = TRAINING,
 									}),
 								}),
 								n(CRAFTABLES, {
@@ -414,7 +413,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 											{ "i", NIGHTFORGED_STEEL, 16 },
 										},
 									}),
-									currency(1819),	-- Medallion of Service (No Cost since it will just go around in circle(see vendor))
+									currency(MEDALLION_OF_SERVICE),
 									i(181166, {	-- Sigil of Haunting Memories
 										["cost"] = {
 											{ "i", CALLOUSED_BONE, 8 },
@@ -445,22 +444,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 									}),
 
 									-- Charms
-									i(181140, {	-- Charm of Alacrity
-										["cost"] = {
-											{ "i", ELYSIAN_FEATHERS, 4 },
-											{ "i", NIGHTFORGED_STEEL, 2 },
-										},
-									}),
 									i(181157, {	-- Charm of Discord
 										["cost"] = {
 											{ "i", CALLOUSED_BONE, 4 },
 											{ "i", NIGHTFORGED_STEEL, 4 },
-										},
-									}),
-									i(181159, {	-- Charm of Energizing
-										["cost"] = {
-											{ "i", CALLOUSED_BONE, 4 },
-											{ "i", ELYSIAN_FEATHERS, 3 },
 										},
 									}),
 									i(181239, {	-- Charm of Focus
@@ -1644,16 +1631,14 @@ for _,g in ipairs({ECHTHRA_GROUP,BINKIROS_GROUP,PHIXIN_GROUP,ZELESKOS_GROUP,{BRI
 	end
 end
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	prof(ASCENSION_CRAFTING, {
-		recipe(335849),	-- Charm of Energizing
-		recipe(335596),	-- Charm of Alacrity
 		q(60937),	-- [DNT] Blueprint: Herald's Footpads
 		q(61265, {	-- Blueprint: Charm of Alacrity
 			i(181139),	-- Blueprint: Charm of Alacrity
 		}),
 	}),
-}));
+});
 
 root(ROOTS.HiddenQuestTriggers, {
 	-- COURAGE DIFFICULTY KILL
@@ -1783,9 +1768,9 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- LOYALTY BRAZIERS | WILL UNFLAG IF BRAZIER IS USED AGAIN
 	q(62770),	-- Loyalty | no brazier #1 - CONFIRMED
 	q(62771),	-- Loyalty | no brazier #2 - CONFIRMED
-	q(65227),	-- Rightmost brazier added in 9.1.5
+	q(65227),	-- Rightmost brazier added in 9.1.5 (spellID 362556)
 
-	q(63165),	-- after earning To the Moon achievement
+	q(63165),	-- after earning "To the Moon" (achievementID 14887) (spellID 347027)
 	q(62989),	-- Arsenal: Doubt's Weapon Cache
 	q(62990),	-- Arsenal: Wisdom's Weapon Cache
 	q(63018),	-- learning Ensemble: Vestments of the Discordant

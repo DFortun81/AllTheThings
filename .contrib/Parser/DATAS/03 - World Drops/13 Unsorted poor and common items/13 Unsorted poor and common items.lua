@@ -10,7 +10,7 @@
 root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"] = "This item is currently in a temporary group of unsorted items under World Drops. It will be sorted soon.\nYou don't need to report this." }, {
 	-- I AM HIDING THIS FOR NOW -Darkal
 	--[[
-	n(-123456, {	-- Poor
+	n(QUALITY_POOR, {
 		n(ARMOR, {
 			filter(FINGER_F, {
 				i(180352),	-- Cracked Inquisitor's Band	-- TODO Shadowlands
@@ -203,7 +203,7 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 		}),
 	}),
 	--]]
-	n(-123457, {	-- Common
+	n(QUALITY_COMMON, {
 		n(ARMOR, {
 			filter(CLOAKS, {
 			--	i(53048),	-- Doomsday Message	-- TODO Cataclysm

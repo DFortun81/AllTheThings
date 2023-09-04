@@ -189,40 +189,32 @@ root(ROOTS.Zones, {
 						},
 						-- #endif
 					}),
-					ach(1012, {	-- The Winds of the North (A)
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1037); end]],
-						-- #endif
+					achWithRep(1012, 1037, {	-- The Winds of the North (A)
 						["races"] = ALLIANCE_ONLY,
 					}),
-					ach(1011, {	-- The Winds of the North (H)
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1052); end]],
-						-- #endif
+					achWithRep(1011, 1052, {	-- The Winds of the North (H)
 						["races"] = HORDE_ONLY,
 					}),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
-					pet(641),	-- Arctic Hare (PET!)
-					pet(639),	-- Borean Marmot (PET!)
-					pet(1165, {	-- Nexus Whelpling (PET!)
-						["timeline"] = { ADDED_5_1_0 },
-					}),
-					pet(530, {	-- Oily Slimeling (PET!)
-						["description"] = "Found in the oil pools from Fizzcrank Airstrip to the Geyser Fields.",
-					}),
-					pet(388),	-- Shore Crab (PET!)
-					pet(536),	-- Tundra Penguin (PET!)
-					pet(1238, {	-- Unborn Val'kyr (PET!)
-						["timeline"] = { "added 5.3.0.16758" },
-					}),
-				})),
-				-- #endif
+				battlepets({
+					["sym"] = {{"select","speciesID",
+						388,	-- Shore Crab (PET!)
+					}},
+					["g"] = {
+						pet(641),	-- Arctic Hare (PET!)
+						pet(639),	-- Borean Marmot (PET!)
+						pet(1165, {	-- Nexus Whelpling (PET!)
+							["timeline"] = { ADDED_5_1_0 },
+						}),
+						pet(530, {	-- Oily Slimeling (PET!)
+							["description"] = "Found in the oil pools from Fizzcrank Airstrip to the Geyser Fields.",
+						}),
+						pet(536),	-- Tundra Penguin (PET!)
+						pet(1238, {	-- Unborn Val'kyr (PET!)
+							["timeline"] = { "added 5.3.0.16758" },
+						}),
+					},
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(4023),	-- Amber Ledge
@@ -729,7 +721,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 11936,	-- Hatching a Plan
 						["groups"] = {
 							i(37382),	-- Charred Drakehide Belt
-							i(37435),	-- Flame Infused Bindings
+							i(37435),	-- Flame-Infused Bindings
 							i(37513),	-- Helm of the Crimson Drakonid
 							i(37226),	-- Sweltering Robes
 						},
@@ -776,10 +768,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11672, {	-- Enlistment Day
+						["qg"] = 25307,	-- Recruitment Officer Blythe
+						-- #if AFTER 4.0.3.13277
+						["sourceQuest"] = 28709,	-- Hero's Call: Borean Tundra!
+						-- #endif
 						["coord"] = { 57.8, 67.5, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25307,	-- Recruitment Officer Blythe
-						["sourceQuest"] = 28709,	-- Hero's Call: Borean Tundra!
 					}),
 					q(11570, {	-- Escape from the Winterfin Caverns
 						["qg"] = 25208,	-- Lurgglbr

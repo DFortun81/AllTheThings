@@ -8,15 +8,11 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 		["lvl"] = 80,
 		["groups"] = {
 			n(ACHIEVEMENTS, {	-- non-pvp map
-				ach(5375, {	-- Baradin's Wardens
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1177); end]],
-					-- #endif
+				achWithRep(5375, 1177, {	-- Baradin's Wardens
 					["races"] = ALLIANCE_ONLY,
 				}),
-				ach(5376, {	-- Hellscream's Reach
+				ach(4874),	-- Breaking Out of Tol Barad
+				achWithRep(5376, 1178, {	-- Hellscream's Reach
 					["races"] = HORDE_ONLY,
 				}),
 				-- TODO: add _quests for these criteria
@@ -225,7 +221,9 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 				})),
 			}),
 			petbattle(filter(BATTLE_PETS, {
-				p(410),	-- Wharf Rat
+				["sym"] = {{"select","speciesID",
+					410, -- Wharf Rat (PET!)
+				}},
 			})),
 			n(FACTIONS, {
 				faction(1177, {	-- Baradin's Wardens
@@ -418,13 +416,11 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 			})),
 			n(PROFESSIONS, {
 				prof(FISHING, {
-					i(22739, {	-- Tome of Polymorph: Turtle
+					i(22739, {	-- Tome of Polymorph: Turtle (CI!)
 						["providers"] = {
 							{ "o", 202780 },	-- Fathom Eel Swarm
 							{ "o", 207724 },	-- Shipwreck Debris
 						},
-						["classes"] = { MAGE },
-						["f"] = RECIPES,
 					}),
 				}),
 				prof(MINING, {

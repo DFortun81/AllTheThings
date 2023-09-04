@@ -1,3 +1,568 @@
+-----------------------------------------------------
+--       P R O F E S S I O N S   M O D U L E       --
+-----------------------------------------------------
+local TAILORING_KNOWLEDGE = 2026;
+root(ROOTS.Professions, prof(TAILORING, {
+	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+		ach(18888),	-- Quite the Quilt IV
+		ach(18887),	-- Quite the Quilt III
+		ach(18886),	-- Quite the Quilt II
+		ach(18885),	-- Quite the Quilt I
+		ach(18903, {	-- Ton of Tops
+			crit(61714, {	-- Red Linen Shirt
+				["provider"] = { "i", 2575 },	-- Red Linen Shirt
+			}),
+			crit(61715, {	-- White Linen Shirt
+				["provider"] = { "i", 2576 },	-- White Linen Shirt
+			}),
+			crit(61716, {	-- Blue Linen Shirt
+				["provider"] = { "i", 2577 },	-- Blue Linen Shirt
+			}),
+			crit(61717, {	-- Green Linen Shirt
+				["provider"] = { "i", 2579 },	-- Green Linen Shirt
+			}),
+			crit(61718, {	-- Gray Woolen Shirt
+				["provider"] = { "i", 2587 },	-- Gray Woolen Shirt
+			}),
+			crit(61719, {	-- Stylish Red Shirt
+				["provider"] = { "i", 4330 },	-- Stylish Red Shirt
+			}),
+			crit(61720, {	-- Bright Yellow Shirt
+				["provider"] = { "i", 4332 },	-- Bright Yellow Shirt
+			}),
+			crit(61721, {	-- Dark Silk Shirt
+				["provider"] = { "i", 4333 },	-- Dark Silk Shirt
+			}),
+			crit(61722, {	-- Formal White Shirt
+				["provider"] = { "i", 4334 },	-- Formal White Shirt
+			}),
+			crit(61723, {	-- Rich Purple Silk Shirt
+				["provider"] = { "i", 4335 },	-- Rich Purple Silk Shirt
+			}),
+			crit(61724, {	-- Black Swashbuckler's Shirt
+				["provider"] = { "i", 4336 },	-- Black Swashbuckler's Shirt
+			}),
+			crit(61725, {	-- Brown Linen Shirt
+				["provider"] = { "i", 4344 },	-- Brown Linen Shirt
+			}),
+			crit(61726, {	-- Stylish Blue Shirt
+				["provider"] = { "i", 6384 },	-- Stylish Blue Shirt
+			}),
+			crit(61727, {	-- Stylish Green Shirt
+				["provider"] = { "i", 6385 },	-- Stylish Green Shirt
+			}),
+			crit(61728, {	-- White Swashbuckler's Shirt
+				["provider"] = { "i", 6795 },	-- White Swashbuckler's Shirt
+			}),
+			crit(61729, {	-- Red Swashbuckler's Shirt
+				["provider"] = { "i", 6796 },	-- Red Swashbuckler's Shirt
+			}),
+			crit(61730, {	-- Orange Mageweave Shirt
+				["provider"] = { "i", 10056 },	-- Orange Mageweave Shirt
+			}),
+			crit(61731, {	-- Orange Martial Shirt
+				["provider"] = { "i", 10052 },	-- Orange Martial Shirt
+			}),
+			crit(61732, {	-- Lavender Mageweave Shirt
+				["provider"] = { "i", 10054 },	-- Lavender Mageweave Shirt
+			}),
+			crit(61733, {	-- Pink Mageweave Shirt
+				["provider"] = { "i", 10055 },	-- Pink Mageweave Shirt
+			}),
+			crit(61735, {	-- Green Holiday Shirt
+				["provider"] = { "i", 17723 },	-- Green Holiday Shirt
+			}),
+			crit(61736, {	-- Red Lumberjack Shirt
+				["provider"] = { "i", 41248 },	-- Red Lumberjack Shirt
+			}),
+			crit(61737, {	-- Blue Lumberjack Shirt
+				["provider"] = { "i", 41249 },	-- Blue Lumberjack Shirt
+			}),
+			crit(61738, {	-- Yellow Lumberjack Shirt
+				["provider"] = { "i", 41251 },	-- Yellow Lumberjack Shirt
+			}),
+			crit(61739, {	-- Green Lumberjack Shirt
+				["provider"] = { "i", 41250 },	-- Green Lumberjack Shirt
+			}),
+			crit(61740, {	-- Red Workman's Shirt
+				["provider"] = { "i", 41252 },	-- Red Workman's Shirt
+			}),
+			crit(61741, {	-- Blue Workman's Shirt
+				["provider"] = { "i", 41253 },	-- Blue Workman's Shirt
+			}),
+			crit(61742, {	-- Rustic Workman's Shirt
+				["provider"] = { "i", 41254 },	-- Rustic Workman's Shirt
+			}),
+			crit(61743, {	-- Green Workman's Shirt
+				["provider"] = { "i", 41255 },	-- Green Workman's Shirt
+			}),
+			crit(61734, {	-- Tuxedo Shirt
+				["provider"] = { "i", 10034 },	-- Tuxedo Shirt
+			}),
+			crit(61744, {	-- Tuxedo Pants
+				["provider"] = { "i", 10035 },	-- Tuxedo Pants
+			}),
+		}),
+	})),
+	tier(CATA_TIER, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+			ach(18815, {	-- Speed Dreamin'
+				crit(1),	-- Dream of Skywall
+				crit(2),	-- Dream of Deepholm
+				crit(3),	-- Dream of Hyjal
+				crit(4),	-- Dream of Ragnaros
+				crit(5),	-- Dream of Azshara
+			}),
+		})),
+	}),
+	tier(WOD_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+		q(36236, {	-- The Cryptic Tome of Tailoring
+			["provider"] = { "i", 114972 },	-- Cryptic Tome of Tailoring
+			["description"] = "This item can drop from any Draenor mob.",
+			["timeline"] = { "added 6.0.1.18522" },
+			["requireSkill"] = TAILORING,
+			["races"] = ALLIANCE_ONLY,
+			["maps"] = {
+				FROSTFIRE_RIDGE,
+				GORGROND,
+				DRAENOR_NAGRAND,
+				DRAENOR_SHADOWMOON_VALLEY,
+				SPIRES_OF_ARAK,
+				TALADOR,
+			},
+		}),
+		q(36301, {	-- Trega's Tailoring Kit
+			["provider"] = { "i", 114973 },	-- Frostwolf Tailoring Kit
+			["description"] = "This item can drop from any Draenor mob.",
+			["timeline"] = { "added 6.0.1.18522" },
+			["requireSkill"] = TAILORING,
+			["races"] = HORDE_ONLY,
+			["maps"] = {
+				FROSTFIRE_RIDGE,
+				GORGROND,
+				DRAENOR_NAGRAND,
+				DRAENOR_SHADOWMOON_VALLEY,
+				SPIRES_OF_ARAK,
+				TALADOR,
+			},
+		}),
+	})),
+	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	})),
+	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+			ach(18774, {	-- Synchronous Thread
+				["provider"] = { "i", 164733 },	-- Synchronous Thread
+			}),
+			ach(18896, {	-- United as Three
+				["providers"] = {
+					{ "i", 154706 },	-- Battle Flag: Phalanx Defense
+					{ "i", 154705 },	-- Battle Flag: Rallying Swiftness
+					{ "i", 154707 },	-- Battle Flag: Spirit of Freedom
+				}
+			}),
+		})),
+		q(54483, {	-- Tailored Training [A]
+			["provider"] = { "n", 136071 },	-- Daniel Brineweaver <Tailoring Trainer>
+			["coord"] = { 76.8, 11.2, BORALUS },
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
+		}),
+		q(54484, {	-- Tailored Training [H]
+			["provider"] = { "n", 122700 },	-- Pin'jin the Patient <Tailoring Trainer>
+			["coord"] = { 44.5, 33.9, DAZARALOR },
+			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
+		}),
+		------ Tools of Trade Questline ------
+		q(53805, {	-- A Friend in Needle [A]
+			["provider"] = { "n", 145022 },	-- Timeweaver Delormi
+			["coord"] = { 76.6, 11.8, BORALUS },
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(53938, {	-- A Friend in Needle [H]
+			["provider"] = { "n", 145022 },	-- Timeweaver Delormi
+			["coord"] = { 43.5, 34.8, DAZARALOR },
+			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(53807, {	-- A Stitch in Time [A]
+			["sourceQuests"] = { 53805 },	-- A Friend in Needle [A]
+			["provider"] = { "n", 145022 },	-- Timeweaver Delormi
+			["coord"] = { 76.6, 11.8, BORALUS },
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(53940, {	-- A Stitch in Time [H]
+			["sourceQuests"] = { 53938 },	-- A Friend in Needle [H]
+			["provider"] = { "n", 145022 },	-- Timeweaver Delormi
+			["coord"] = { 43.5, 34.8, DAZARALOR },
+			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(55177, {	-- Tearing at the Seams [A]
+			["sourceQuests"] = { 53807 },	-- A Stitch in Time [A]
+			["provider"] = { "n", 145022 },	-- Timeweaver Delormi
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(55188, {	-- Tearing at the Seams [H]
+			["sourceQuests"] = { 53940 },	-- A Stitch in Time [H]
+			["provider"] = { "n", 145022 },	-- Timeweaver Delormi
+			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(53810, {	-- The Severed Thread
+			["sourceQuests"] = {
+				55177,	-- Tearing at the Seams [A]
+				55188,	-- Tearing at the Seams [H]
+			},
+			["provider"] = { "n", 151134 },	-- Timeweaver Delormi
+			["coord"] = { 62.0, 53.9, CAVERNS_OF_TIME },
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(53813, {	-- Rolling Up the Sleeves
+			["sourceQuests"] = {
+				55177,	-- Tearing at the Seams [A]
+				55188,	-- Tearing at the Seams [H]
+			},
+			["provider"] = { "n", 151134 },	-- Timeweaver Delormi
+			["coord"] = { 43.5, 34.8, CAVERNS_OF_TIME },
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(53858, {	-- Step Into Her Shoes
+			["sourceQuests"] = {
+				53810,	-- The Severed Thread
+				53813,	-- Rolling Up the Sleeves
+			},
+			["provider"] = { "n", 151134 },	-- Timeweaver Delormi
+			["coord"] = { 39.1, 63.3, CAVERNS_OF_TIME },
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(53866, {	-- If The Shoe Fits...
+			["sourceQuests"] = { 53858 },	-- Step Into Her Shoes
+			["provider"] = { "n", 151134 },	-- Timeweaver Delormi
+			["coord"] = { 63.8, 68.8, SURAMAR },
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(55214, {	-- Seam Stress
+			["sourceQuests"] = { 53866 },	-- If The Shoe Fits...
+			["provider"] = { "n", 151134 },	-- Timeweaver Delormi
+			["coord"] = { 64.2, 69.5, SURAMAR },
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(53868, {	-- Saving Nine
+			["sourceQuests"] = { 55214 },	-- Seam Stress
+			["provider"] = { "n", 151134 },	-- Timeweaver Delormi
+			["coord"] = { 7.2, 24.5, STORMSONG_VALLEY },
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(53869, {	-- Killing Time
+			["sourceQuests"] = { 53868 },	-- Saving Nine
+			["provider"] = { "n", 151134 },	-- Timeweaver Delormi
+			["coord"] = { 71.6, 39.8, DRAGONBLIGHT },
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(53881, {	-- Cut from the Same Cloth [A]
+			["sourceQuests"] = { 53869 },	-- Killing Time
+			["provider"] = { "n", 151134 },	-- Timeweaver Delormi
+			["coord"] = { 71.6, 39.8, DRAGONBLIGHT },
+			["races"] = ALLIANCE_ONLY,
+			["groups"] = {
+				r(292946),	-- Recipe: Synchronous Thread (RECIPE!)
+			},
+		}),
+		q(53962, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Cut from the Same Cloth [H]
+			["sourceQuests"] = { 53869 },	-- Killing Time
+			["provider"] = { "n", 151134 },	-- Timeweaver Delormi
+			["coord"] = { 71.6, 39.8, DRAGONBLIGHT },
+			["races"] = HORDE_ONLY,
+			["groups"] = {
+				r(292946),	-- Recipe: Synchronous Thread (RECIPE!)
+			},
+		})),
+		q(50123, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- A Recipe For the Ages [A]
+			["description"] = "Requires 150 Kul Tiran Blacksmithing.",
+			["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
+			["coord"] = { 73.6, 8.6, BORALUS },
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		})),
+	})),
+	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+			ach(18902, {	-- Uncertified Nurse
+				["cost"] = {{ "i", 194048, 500 }},	-- Wildercloth Bandage
+			}),
+		})),
+		n(QUESTS, {
+			q(72249, {	-- Dragon Isles Tailoring
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Tailoring.",
+				["sourceQuests"] = {
+					67700,	-- To the Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "n", 192565 },	-- Zayn Starmaker <Tailoring Trainer>
+				["coord"] = { 75.8, 33.2, THE_WAKING_SHORES },
+				["lockCriteria"] = { 1, "spellID", 366258 },	-- Dragon Isles Tailoring
+			}),
+			q(70366, {	-- Dragon Isles Tailoring
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Tailoring.",
+				["sourceQuests"] = {
+					67700,	-- To the Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "n", 191894 },	-- Krillonn
+				["coord"] = { 61.3, 70.1, THE_WAKING_SHORES },
+				["lockCriteria"] = { 1, "spellID", 366258 },	-- Dragon Isles Tailoring
+			}),
+			q(70027, {	-- Artisan's Supply: Surveyor's Cloth Bands
+				["provider"] = { "n", 191894 },	-- Krillonn <Tailoring Trainer>
+				["coord"] = { 61.4, 70.0, THE_WAKING_SHORES },
+				["cost"] = {{ "i", 193497, 2 }},	-- 2xSurveyor's Cloth Bands
+				["_drop"] = { "g" },
+			}),
+			q(70260, {	-- Hidden Profession Master Tailoring
+				["name"] = "Hidden Profession Master: Tailoring",
+				["description"] = "Above the Rostrum of Transformation, on a ledge.",
+				["provider"] = { "n", 194845 },	-- Elysa Raywinder
+				["coord"] = { 27.9,45.6, VALDRAKKEN },
+			}),
+			q(70194, {	-- Specialized Secrets: Tailoring
+				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
+				["provider"] = { "n", 193110 },	-- Khadin
+				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
+				["cost"] = {{ "i", 191784, 1 }},	-- Dragon Shard of Knowledge
+				["isRepeatable"] = true,
+				["g"] = {
+					i(190456),	-- Artisan's Mettle
+				},
+			}),
+		}),
+		n(QUESTS, sharedData({
+			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
+			["isWeekly"] = true,
+			["g"] = {
+				i(198609),	-- Tailoring Examples
+			},
+		},{
+			q(66953, {	-- All Things Fluffy
+				["description"] = "Requires 25 Skill.",
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+			}),
+			q(66899, {	-- Fuzzy Legs
+				["description"] = "Requires 25 Skill.",
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+			}),
+			q(72410, {	-- Pincers and Needles
+				["description"] = "Requires 25 Skill.",
+				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
+				["coord"] = { 36.8, 62.8, VALDRAKKEN },
+			}),
+			q(70595, {	-- Tailoring Services Requested
+				["description"] = "Requires 25 Skill.",
+				["provider"] = { "n", 194026 },	-- Azley
+				["coord"] = { 35.6, 58.8, VALDRAKKEN },
+			}),
+			q(66952, {	-- The Gnoll's Clothes
+				["description"] = "Requires 25 Skill.",
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+			}),
+
+			-- Requires 45 Skill
+			q(70587, {	-- A Knapsack Problem
+				["description"] = "Requires 45 Skill.",
+				["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
+				["coord"] = { 31.8, 67.6, VALDRAKKEN },
+			}),
+			q(70586, {	-- Sew Many Cooks
+				["description"] = "Requires 45 Skill.",
+				["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
+				["coord"] = { 31.8, 67.6, VALDRAKKEN },
+			}),
+			q(70572, {	-- The Cold Does Bother Them, Actually
+				["description"] = "Requires 45 Skill.",
+				["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
+				["coord"] = { 31.8, 67.6, VALDRAKKEN },
+			}),
+			q(70582, {	-- Weave Well Enough Alone
+				["description"] = "Requires 45 Skill.",
+				["provider"] = { "n", 193649 },	-- Threadfinder Fulafong
+				["coord"] = { 31.8, 67.6, VALDRAKKEN },
+			}),
+
+			-- Requires ?? Skill - Patch 10.1.0.
+			q(75407, {	-- Silk Scavenging
+				["provider"] = { "n", 203516 },	-- Kayann
+				["coord"] = { 36.5, 62.5, VALDRAKKEN },
+				["timeline"] = { ADDED_10_1_0 }
+			}),
+			q(75600, {	-- Silk's Silk
+				["provider"] = { "n", 203516 },	-- Kayann
+				["coord"] = { 36.5, 62.5, VALDRAKKEN },
+				["timeline"] = { ADDED_10_1_0 }
+			}),
+		})),
+		filter(RECIPES, {
+			["description"] = "These are learned by specialization.",
+			["g"] = sharedData({ ["cost"] = {{ "c", TAILORING_KNOWLEDGE, 1 }}, }, {
+				r(376556),	-- Azureweave Bolt
+				r(376502),	-- Azureweave Mantle
+				r(376500),	-- Azureweave Robe
+				r(376557),	-- Chronocloth Bolt
+				r(376503),	-- Chronocloth Gloves
+				r(376504),	-- Chronocloth Leggings
+				r(376546),	-- Dragoncloth Tailoring Vestments
+				r(376569),	-- Market Tent
+				r(376513),	-- Vibrant Wildercloth Handwraps
+				r(376512),	-- Vibrant Wildercloth Slippers
+				r(376514),	-- Vibrant Wildercloth Headcover
+				r(376510),	-- Vibrant Wildercloth Shawl
+				r(376511),	-- Vibrant Wildercloth Vestments
+				r(376515),	-- Vibrant Wildercloth Slacks
+				r(376516),	-- Vibrant Wildercloth Shoulderspikes
+				r(376517),	-- Vibrant Wildercloth Girdle
+				r(376518),	-- Vibrant Wildercloth Wristwraps
+			}),
+		}),
+		n(TREASURES, {
+			o(402868, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Abandoned Reserve Chute
+				["coord"] = { 47.2, 48.6, ZARALEK_CAVERN },
+				["questID"] = 76102,
+				["g"] = {
+					i(206019),	-- Abandoned Reserve Chute
+				},
+			})),
+			o(380763, {	-- Ancient Dragonweave Loom
+				["description"] = "Interact with the loom and complete the minigame to be awared this treasure.",
+				["questID"] = 70372,
+				["coord"] = { 58.6, 45.8, THALDRASZUS },
+				["g"] = {
+					i(201019),	-- Ancient Dragonweave Bolt
+				},
+			}),
+			o(380597, {	-- Battle Hardened Centaur Carpet
+				["questID"] = 70295,
+				["coord"] = { 35.3, 40.1, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(198692),	-- Noteworthy Scrap of Carpet
+				},
+			}),
+			o(380583, {	-- Decaying Brackenhide Blanket
+				["questID"] = 70284,
+				["coord"] = { 16.2, 38.8, THE_AZURE_SPAN },
+				["g"] = {
+					i(198680),	-- Decaying Brackenhide Blanket
+				},
+			}),
+			o(402887, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Exquisitely Embroidered Banner
+				["coord"] = { 44.5, 15.7, ZARALEK_CAVERN },
+				["questID"] = 76116,
+				["g"] = {
+					i(206030),	-- Exquisitely Embroidered Banner
+				},
+			})),
+			o(380549, {	-- Intriguing Bolt of Blue Cloth
+				["questID"] = 70267,
+				["coord"] = { 40.7, 54.9, THE_AZURE_SPAN },
+				["g"] = {
+					i(198662),	-- Intriguing Bolt of Blue Cloth
+				},
+			}),
+			o(380607, {	-- Itinerant Singed Fabric
+				["questID"] = 70304,
+				["coord"] = { 24.9, 69.7, THE_WAKING_SHORES },
+				["g"] = {
+					i(198702),	-- Itinerant Singed Fabric
+				},
+			}),
+			o(380588, {	-- Miniature Bronze Dragonflight Banner
+				["questID"] = 70288,
+				["coord"] = { 60.5, 79.7, THALDRASZUS },
+				["g"] = {
+					i(198684),	-- Miniature Bronze Dragonflight Banner
+				},
+			}),
+			o(380604, {	-- Mysterious Banner
+				["questID"] = 70302,
+				["coord"] = { 74.7, 37.9, THE_WAKING_SHORES },
+				["g"] = {
+					i(198699),	-- Mysterious Banner
+				},
+			}),
+			o(380608, {	-- Silky Surprise
+				["description"] = "Interact with the Catnip Frond, gather 5 Catnip Leaves and throw them at the Playful Prowler. Then the treasure will appear.",
+				["questID"] = 70303,
+				["coord"] = { 66.1, 52.9, OHNAHRAN_PLAINS },
+				["crs"] = { 194873 },	-- Playful Prowler
+				["g"] = {
+					i(201020),	-- Silky Surprise
+				},
+			}),
+			o(402878, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Used Medical Wrap Kit
+				["coord"] = { 59.1, 73.1, ZARALEK_CAVERN },
+				["questID"] = 76110,
+				["g"] = {
+					i(206025),	-- Used Medical Wrap Kit
+				},
+			})),
+		}),
+		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
+			["isWeekly"] = true,
+			["g"] = {
+				currency(TAILORING_KNOWLEDGE),
+			},
+		},{
+			i(198609),	-- Tailoring Examples
+			q(74115, {	-- Inscription Order: Tailoring
+				["name"] = "Inscription Order: Tailoring",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 194698 },	-- Draconic Treatise on Tailoring
+			}),
+			q(66386, {	-- Weekly Tailoring Knowledgepoint #1
+				["name"] = "Tailoring Treasure #1",
+				["provider"] = { "i", 193898 },	-- Umbral Bone Needle
+			}),
+			q(66387, {	-- Weekly Tailoring Knowledgepoint #2
+				["name"] = "Tailoring Treasure #2",
+				["provider"] = { "i", 193899 },	-- Primalweave Spindle
+			}),
+			q(70525, {	-- Weekly Tailoring Knowledgepoint #3
+				["name"] = "Tailoring Drop #1: Beast Humanoid",
+				["description"] = "Drops from any beastlike Humanoid.\nCoordinates link to the spot(s) we found best.",
+				["crs"] = {
+					192500,	-- Fetid Slogger
+					192506,	-- Hyena Tender
+				},
+				["coords"] = {
+					{ 56.6, 29.2, THALDRASZUS },
+					{ 57.0, 30.6, THALDRASZUS },
+				},
+				["provider"] = { "i", 198978 },	-- Stupidly Effective Stitchery
+			}),
+			q(70524, {	-- Weekly Tailoring Knowledgepoint #4
+				["name"] = "Tailoring Drop #2: Ohn'ahran Humanoid",
+				["description"] = "Drops from any Ohn'ahran Humanoid.\nCoordinates link to the spot(s) we found best.",
+				["crs"] = {
+					193840,	-- Nokhud Raider
+				},
+				["coords"] = {
+					{ 87.0, 51.4, OHNAHRAN_PLAINS },
+					{ 85.0, 55.8, OHNAHRAN_PLAINS },
+				},
+				["provider"] = { "i", 198977 },	-- Ohn'arhan Weave
+			}),
+		})),
+	})),
+}));
+
+
+
+-- #if ANYCLASSIC
 local TIME_LOST_TRADER_GROUPS = {};
 local applytraining = function(g)
 	-- #if NOT ANYCLASSIC
@@ -92,7 +657,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Gordok Ogre Suit",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.5" },
 					["recipeID"] = 22813
 				}),
 				{
@@ -136,7 +701,7 @@ profession(TAILORING, {
 				}),
 				{
 					["name"] = "Felcloth Bag",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { "removed 4.0.1", "added 10.1.5" },
 					["recipeID"] = 26086,
 				},
 				{
@@ -347,7 +912,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodvine Vest",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 					["recipeID"] = 24091,
 				}),
 				{
@@ -402,11 +967,11 @@ profession(TAILORING, {
 					["name"] = "Felcloth Robe",
 					["recipeID"] = 18451
 				},
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Festival Dress",
 					["recipeID"] = 26403,
 				}),
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Festival Suit",
 					["recipeID"] = 26407,
 				}),
@@ -443,7 +1008,7 @@ profession(TAILORING, {
 					["name"] = "Green Silk Armor",
 					["recipeID"] = 8784
 				},
-				applyholiday(FEAST_OF_WINTER_VEIL, {
+				applyevent(EVENTS.FEAST_OF_WINTER_VEIL, {
 					["name"] = "Green Winter Clothes",
 					["timeline"] = { "added 2.3.0.7382" },
 					["recipeID"] = 44950,
@@ -452,7 +1017,7 @@ profession(TAILORING, {
 					["name"] = "Green Woolen Vest",
 					["recipeID"] = 2399
 				},
-				applyholiday(FEAST_OF_WINTER_VEIL, {
+				applyevent(EVENTS.FEAST_OF_WINTER_VEIL, {
 					["name"] = "Haliscan Jacket",
 					["timeline"] = { "added 2.4.2.8301" },
 					["recipeID"] = 50644
@@ -481,7 +1046,7 @@ profession(TAILORING, {
 					["name"] = "Red Mageweave Vest",
 					["recipeID"] = 12056
 				},
-				applyholiday(FEAST_OF_WINTER_VEIL, {
+				applyevent(EVENTS.FEAST_OF_WINTER_VEIL, {
 					["name"] = "Red Winter Clothes",
 					["timeline"] = { "added 2.3.0.7382" },
 					["recipeID"] = 44958,
@@ -743,7 +1308,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodvine Leggings",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 					["recipeID"] = 24092,
 				}),
 				{
@@ -851,7 +1416,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodvine Boots",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.0.7" },
 					["recipeID"] = 24093,
 				}),
 				{
@@ -1025,7 +1590,7 @@ profession(TAILORING, {
 					["name"] = "Gray Woolen Shirt",
 					["recipeID"] = 2406
 				},
-				applyholiday(FEAST_OF_WINTER_VEIL, {
+				applyevent(EVENTS.FEAST_OF_WINTER_VEIL, {
 					["name"] = "Green Holiday Shirt",
 					["recipeID"] = 21945,
 				}),
@@ -3261,36 +3826,6 @@ profession(TAILORING, {
 	})),
 	applyclassicphase(WOD_PHASE_ONE, tier(WOD_TIER, {
 		n(DROPS, {
-			q(36236, {	-- The Cryptic Tome of Tailoring
-				["provider"] = { "i", 114972 },	-- Cryptic Tome of Tailoring
-				["description"] = "This item can drop from any Draenor mob.",
-				["timeline"] = { "added 6.0.1.18522" },
-				["requireSkill"] = TAILORING,
-				["races"] = ALLIANCE_ONLY,
-				["maps"] = {
-					FROSTFIRE_RIDGE,
-					GORGROND,
-					DRAENOR_NAGRAND,
-					DRAENOR_SHADOWMOON_VALLEY,
-					SPIRES_OF_ARAK,
-					TALADOR,
-				},
-			}),
-			q(36301, {	-- Trega's Tailoring Kit
-				["provider"] = { "i", 114973 },	-- Frostwolf Tailoring Kit
-				["description"] = "This item can drop from any Draenor mob.",
-				["timeline"] = { "added 6.0.1.18522" },
-				["requireSkill"] = TAILORING,
-				["races"] = HORDE_ONLY,
-				["maps"] = {
-					FROSTFIRE_RIDGE,
-					GORGROND,
-					DRAENOR_NAGRAND,
-					DRAENOR_SHADOWMOON_VALLEY,
-					SPIRES_OF_ARAK,
-					TALADOR,
-				},
-			}),
 		}),
 		-- #if AFTER SHADOWLANDS
 		{
@@ -4882,153 +5417,6 @@ profession(TAILORING, {
 				},
 			},
 		}),
-		n(QUESTS, {
-			-- Tools of Trade Questline
-			q(53805, {	-- A Friend in Needle (A)
-				["qg"] = 145022,	-- Timeweaver Delormi
-				["coord"] = { 76.6, 11.8, BORALUS },
-				["requireSkill"] = TAILORING,
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 120,
-			}),
-			q(53938, {	-- A Friend in Needle (H)
-				["qg"] = 145022,	-- Timeweaver Delormi
-				["coord"] = { 43.5, 34.8, DAZARALOR },
-				["requireSkill"] = TAILORING,
-				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
-			}),
-			q(53807, {	-- A Stitch in Time (A)
-				["qg"] = 145022,	-- Timeweaver Delormi
-				["sourceQuest"] = 53805,	-- A Friend in Needle (A)
-				["coord"] = { 76.6, 11.8, BORALUS },
-				["requireSkill"] = TAILORING,
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 120,
-			}),
-			q(53940, {	-- A Stitch in Time (H)
-				["qg"] = 145022,	-- Timeweaver Delormi
-				["sourceQuest"] = 53938,	-- A Friend in Needle (H)
-				["coord"] = { 43.5, 34.8, DAZARALOR },
-				["requireSkill"] = TAILORING,
-				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
-			}),
-			q(55177, {	-- Tearing at the Seams (A)
-				["qg"] = 145022,	-- Timeweaver Delormi
-				["sourceQuest"] = 53807,	-- A Stitch in Time (A)
-				["requireSkill"] = TAILORING,
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 120,
-			}),
-			q(55188, {	-- Tearing at the Seams (H)
-				["qg"] = 145022,	-- Timeweaver Delormi
-				["sourceQuest"] = 53940,	-- A Stitch in Time (H)
-				["requireSkill"] = TAILORING,
-				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
-			}),
-			q(53810, {	-- The Severed Thread
-				["qg"] = 151134,	-- Timeweaver Delormi
-				["sourceQuests"] = {
-					55177,	-- Tearing at the Seams (A)
-					55188,	-- Tearing at the Seams (H)
-				},
-				["coord"] = { 62.0, 53.9, CAVERNS_OF_TIME },
-				["requireSkill"] = TAILORING,
-				["lvl"] = 120,
-			}),
-			q(53813, {	-- Rolling Up the Sleeves
-				["qg"] = 151134,	-- Timeweaver Delormi
-				["sourceQuests"] = {
-					55177,	-- Tearing at the Seams (A)
-					55188,	-- Tearing at the Seams (H)
-				},
-				["coord"] = { 43.5, 34.8, CAVERNS_OF_TIME },
-				["requireSkill"] = TAILORING,
-				["lvl"] = 120,
-			}),
-			q(53858, {	-- Step Into Her Shoes
-				["qg"] = 151134,	-- Timeweaver Delormi
-				["sourceQuests"] = {
-					53810,	-- The Severed Thread
-					53813,	-- Rolling Up the Sleeves
-				},
-				["coord"] = { 39.1, 63.3, CAVERNS_OF_TIME },
-				["requireSkill"] = TAILORING,
-				["lvl"] = 120,
-			}),
-			q(53866, {	-- If The Shoe Fits...
-				["qg"] = 151134,	-- Timeweaver Delormi
-				["sourceQuest"] = 53858,	-- Step Into Her Shoes
-				["coord"] = { 63.8, 68.8, SURAMAR },
-				["requireSkill"] = TAILORING,
-				["lvl"] = 120,
-			}),
-			q(55214, {	-- Seam Stress
-				["qg"] = 151134,	-- Timeweaver Delormi
-				["sourceQuest"] = 53866,	-- If The Shoe Fits...
-				["coord"] = { 64.2, 69.5, SURAMAR },
-				["requireSkill"] = TAILORING,
-				["lvl"] = 120,
-			}),
-			q(53868, {	-- Saving Nine
-				["qg"] = 151134,	-- Timeweaver Delormi
-				["sourceQuest"] = 55214,	-- Seam Stress
-				["coord"] = { 7.2, 24.5, STORMSONG_VALLEY },
-				["requireSkill"] = TAILORING,
-				["lvl"] = 120,
-			}),
-			q(54483, {	-- Tailored Training (A)
-				["qg"] = 136071,	-- Daniel Brineweaver <Tailoring Trainer>
-				["coord"] = { 76.8, 11.2, BORALUS },
-				["requireSkill"] = TAILORING,
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 110,
-				["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
-			}),
-			q(54484, {	-- Tailored Training (H)
-				["qg"] = 122700,	-- Pin'jin the Patient <Tailoring Trainer>
-				["coord"] = { 44.5, 33.9, DAZARALOR },
-				["requireSkill"] = TAILORING,
-				["races"] = HORDE_ONLY,
-				["lvl"] = 110,
-				["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
-			}),
-			q(53869, {	-- Killing Time
-				["qg"] = 151134,	-- Timeweaver Delormi
-				["sourceQuest"] = 53868,	-- Saving Nine
-				["coord"] = { 71.6, 39.8, DRAGONBLIGHT },
-				["requireSkill"] = TAILORING,
-				["lvl"] = 120,
-			}),
-			q(53881, {	-- Cut from the Same Cloth (A)
-				["qg"] = 151134,	-- Timeweaver Delormi
-				["sourceQuest"] = 53869,	-- Killing Time
-				["coord"] = { 71.6, 39.8, DRAGONBLIGHT },
-				["requireSkill"] = TAILORING,
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 120,
-				["groups"] = {
-					recipe(292946, {	-- Recipe: Synchronous Thread
-						["requireSkill"] = TAILORING,
-					}),
-				},
-			}),
-			q(53962, {	-- Cut from the Same Cloth (H)
-				["qg"] = 151134,	-- Timeweaver Delormi
-				["sourceQuest"] = 53869,	-- Killing Time
-				["coord"] = { 71.6, 39.8, DRAGONBLIGHT },
-				["requireSkill"] = TAILORING,
-				["races"] = HORDE_ONLY,
-				["lvl"] = 120,
-				["groups"] = {
-					recipe(292946, {	-- Recipe: Synchronous Thread
-						["requireSkill"] = TAILORING,
-					}),
-				},
-			}),
-		}),
 	})),
 	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(SL_TIER, {
 		applytraining({
@@ -5718,14 +6106,14 @@ itemrecipe("Pattern: Glacial Cloak", 22685, 28208, PHASE_SIX);
 itemrecipe("Pattern: Glacial Vest", 22686, 28207, PHASE_SIX);
 itemrecipe("Pattern: Glacial Wrists", 22687, 28209, PHASE_SIX);
 
-applyholiday(FEAST_OF_WINTER_VEIL, itemrecipe("Pattern: Green Holiday Shirt", 17724, 21945));
-applyholiday(LUNAR_FESTIVAL, itemrecipe("Pattern: Festival Dress", 21722, 26403));
-applyholiday(LUNAR_FESTIVAL, itemrecipe("Pattern: Festival Suit", 21723, 26407));
+applyevent(EVENTS.FEAST_OF_WINTER_VEIL, itemrecipe("Pattern: Green Holiday Shirt", 17724, 21945));
+applyevent(EVENTS.LUNAR_FESTIVAL, itemrecipe("Pattern: Festival Dress", 21722, 26403));
+applyevent(EVENTS.LUNAR_FESTIVAL, itemrecipe("Pattern: Festival Suit", 21723, 26407));
 
 -- #if AFTER TBC
 -- TBC Recipes
-applyholiday(FEAST_OF_WINTER_VEIL, itemrecipe("Pattern: Green Winter Clothes", 34261, 44950));
-applyholiday(FEAST_OF_WINTER_VEIL, itemrecipe("Pattern: Red Winter Clothes", 34319, 44958));
+applyevent(EVENTS.FEAST_OF_WINTER_VEIL, itemrecipe("Pattern: Green Winter Clothes", 34261, 44950));
+applyevent(EVENTS.FEAST_OF_WINTER_VEIL, itemrecipe("Pattern: Red Winter Clothes", 34319, 44958));
 
 itemrecipe("Pattern: Frozen Shadoweave Shoulders", 21912, 26756, TBC_PHASE_ONE);
 itemrecipe("Pattern: Frozen Shadoweave Robe", 21913, 26758, TBC_PHASE_ONE);
@@ -5870,8 +6258,8 @@ itemrecipe("Pattern: Spellweave Robe", 42201, 56028, WRATH_PHASE_ONE);	-- NYI, t
 itemrecipe("Pattern: Wispcloak", 42189, 56016, WRATH_PHASE_ONE);	-- NYI, taught by trainers
 itemrecipe("Pattern: Yellow Lumberjack Shirt", 42174, 55995, WRATH_PHASE_ONE);
 
-applyholiday(LUNAR_FESTIVAL, itemrecipe("Pattern: Festival Dress", 44916, 26403));
-applyholiday(LUNAR_FESTIVAL, itemrecipe("Pattern: Festival Suit", 44917, 26407));
+applyevent(EVENTS.LUNAR_FESTIVAL, itemrecipe("Pattern: Festival Dress", 44916, 26403));
+applyevent(EVENTS.LUNAR_FESTIVAL, itemrecipe("Pattern: Festival Suit", 44917, 26407));
 -- #endif
 
 -- #if AFTER CATA
@@ -5904,7 +6292,12 @@ itemrecipe("Pattern: World Mender's Pants", 72000, 101920, CATA_PHASE_THREE);
 -- Never Implemented Recipe and Crafted Item Database
 local nyi_ = root(ROOTS.NeverImplemented, {});
 local neverimplemented = function(thing)
-	table.insert(nyi_, prof(TAILORING, { thing }));
+	local nyi_g = {};
+	table.insert(nyi_, n(PROFESSIONS, { prof(TAILORING, { g = nyi_g }) }));
+	neverimplemented = function(thing2)
+		table.insert(nyi_g, thing2);
+	end;
+	neverimplemented(thing);
 end
 recipeCache = nil;	-- Disable the cache validation.
 
@@ -6021,6 +6414,4 @@ neverimplemented(i(162430));	-- Pattern: Embroidered Deep Sea Breeches (Rank 3)
 -- #if AFTER SHADOWLANDS
 
 -- #endif
-
--- Apply the Never Implemented flag to the Never Implemented things.
-bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, nyi_);
+-- #endif

@@ -93,8 +93,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					417,	-- Rat (PET!)
 					424,	-- Roach (PET!)
@@ -109,8 +108,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["description"] = "Can be found on the Blackfathom Deeps beach in Ashenvale.",
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["128:195:131:137"] = 441,	-- Lake Falathim
@@ -964,7 +962,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(13875, {	-- Gurtar's Request
 					["qg"] = 34242,	-- Guardian Gurtar
-					["sourceQuest"] = 13871,	-- Security!
+					["sourceQuest"] = 13873,	-- Sheelah's Last Wish
 					["coord"] = { 89.5, 48.6, ASHENVALE },
 					["timeline"] = { "added 4.0.3.13287" },
 					["races"] = HORDE_ONLY,
@@ -3210,7 +3208,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
-						i(6054, {	-- Recipe: Shadow Protection Potion
+						i(6054, {	-- Recipe: Shadow Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -3222,7 +3220,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(7361, {	-- Pattern: Herbalist's Gloves
+						i(7361, {	-- Pattern: Herbalist's Gloves (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -3235,7 +3233,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					-- #if BEFORE CATA
 					["groups"] = {
-						i(7361, {	-- Pattern: Herbalist's Gloves
+						i(7361, {	-- Pattern: Herbalist's Gloves (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -3245,7 +3243,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 34.8, 49.8, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(5973, {	-- Pattern: Barbaric Leggings
+						i(5973, {	-- Pattern: Barbaric Leggings (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -3272,10 +3270,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(3734, {	-- Recipe: Big Bear Steak
+						i(3734, {	-- Recipe: Big Bear Steak (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(5489, {	-- Recipe: Lean Venison
+						i(5489, {	-- Recipe: Lean Venison (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
@@ -3288,8 +3286,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(17062),	-- Recipe: Mithril Head Trout
-						i(6369),	-- Recipe: Rockscale Cod
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
 					},
 				}),
 			}),

@@ -747,7 +747,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 						["coord"] = { 42.9, 45.7, TRUESHOT_LODGE },
 						["maps"] = { 877 },	-- Fields of the Eternal Hunt (Scenario Map)
 						["g"] = {
-							i(142227),	-- Huntmaster's Loyal Wolfhawk (MOUNT!)
+							mount(229386),	-- Huntmaster's Loyal Wolfhawk (MOUNT!)
 						},
 					})),
 					-- Misc
@@ -932,12 +932,8 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							i(139710, {	-- Mask of the Unseen Path
 								["cost"] = 5000000,	-- 500g
 							}),
-							i(136781, {	-- Pet Training Manual: Fetch
-								["f"] = RECIPES,
-							}),
-							i(136780, {	-- Pet Training Manual: Play Dead
-								["f"] = RECIPES,
-							}),
+							i(136781),	-- Pet Training Manual: Fetch (CI!)
+							i(136780),	-- Pet Training Manual: Play Dead (CI!)
 							i(139712, {	-- Spaulders of the Unseen Path
 								["cost"] = 5000000,	-- 500g
 							}),
@@ -953,12 +949,10 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 						["sourceQuests"] = { 46337 },	-- Night of the Wilds
 						["coord"] = { 58.8, 31.8, TRUESHOT_LODGE },
 						["g"] = {
-							i(147580, {	-- Tome of the Hybrid Beast
+							i(147580, {	-- Tome of the Hybrid Beast (CI!)
 								["sourceQuest"] = 46337,	-- Night of the Wilds
-								["spellID"] = 242155,	-- Hybrid Kinship
 								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 								["timeline"] = { "added 7.2.0" },
-								["f"] = RECIPES,
 							}),
 							i(142228, {	-- Huntmaster's Dire Wolfhawk (MOUNT!)
 								["sourceQuest"] = 46337,	-- Night of the Wilds
@@ -1004,6 +998,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(44395),	-- Tracking Quest: Unseen Protection 5 - completed the "Unseen Protection: Drogbar Delicacy" mission
 	}),
 	tier(SL_TIER, {
-		q(66309),	-- After obtaining Dark Ranger's Ensemble
+		q(66309),	-- Ensemble: Dark Ranger's Attire
 	}),
 });

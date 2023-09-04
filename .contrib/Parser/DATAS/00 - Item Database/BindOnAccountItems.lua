@@ -1,9 +1,9 @@
 
-local Items = root(ROOTS.ItemDBConditional);
 -- There is not currently an automatic way to know whether an Item is BoA or BoP since in both
 -- situations [b] = 1
 -- Items listed in this file will be directly marked as BoE to allow ATT to properly
 -- treat them for their BoA status
+local Items = ItemDBConditional;
 local i = function(itemID)
 	local item = { ["b"] = 2 };
 	Items[itemID] = item;
@@ -14,8 +14,10 @@ end
 
 -- DF Currencies
 i(199211);	-- Primeval Essence
-i(201254);	-- Medal of Honor [A]
-i(201255);	-- Medal of Honor [H]
+i(201254);	-- Medal of Honor [A] (Season 1)
+i(201255);	-- Medal of Honor [H] (Season 1)
+i(204179);	-- Medal of Honor [A] (Season 2)
+i(204180);	-- Medal of Honor [H] (Season 2)
 
 -- BoA Cost Items
 i(137642);	-- Mark of Honor
@@ -246,6 +248,49 @@ i(48691);	-- Tattered Dreadmist Robe
 i(42945);	-- Venerable Dal'Rend's Sacred Charge
 i(48716);	-- Venerable Mass of McGowan
 
+-----------------
+--   CLASSIC   --
+-----------------
+i(12844);	-- Argent Dawn Valor Token
+
+-----------------
+-- PATCH 6.2.2 --
+-----------------
+i(129941);	-- Commendation of the Ebon Blade [BOA]
+
+-----------------
+-- PATCH 7.2.0 --
+-----------------
+i(146950);	-- Legionfall Insignia [BOA]
+
+-----------------
+-- PATCH 8.2.0 --
+-----------------
+i(168497);	-- Rustbolt Resistance Insignia [BOA]
+
+-----------------
+-- PATCH 8.3.0 --
+-----------------
+i(173374);	-- Rajani Insignia [BOA]
+
+------------------
+-- PATCH 10.0.2 --
+------------------
+i(200447);	-- Centaur Hunting Trophy
+i(200287);	-- Iskaara Tuskarr Insignia [Uncommon]
+i(200453);	-- Iskaara Tuskarr Insignia [Rare]
+i(201922);	-- Iskaara Tuskarr Insignia [Epic]
+i(202092);	-- Iskaara Tuskarr Insignia [Epic 2.5k]
+i(200288);	-- Maruuk Centaur Insignia [Uncommon]
+i(200454);	-- Maruuk Centaur Insignia [Rare]
+i(201923);	-- Maruuk Centaur Insignia [Epic]
+i(202094);	-- Maruuk Centaur Insignia [Epic 2.5k]
+i(200449);	-- Sacred Tuskarr Totem
+i(200450);	-- Titan Relic
+i(200289);	-- Valdrakken Accord Insignia [Uncommon]
+i(200455);	-- Valdrakken Accord Insignia [Rare]
+i(201924);	-- Valdrakken Accord Insignia [Epic]
+i(202093);	-- Valdrakken Accord Insignia [Epic 2.5k]
 
 ------------------
 -- PATCH 10.0.7 --
@@ -283,3 +328,17 @@ i(203611);	-- Primalist Plate Helm
 i(203623);	-- Primalist Plate Leggings
 i(203626);	-- Primalist Plate Spaulders
 i(203650);	-- Primalist Weapon
+
+------------------
+-- PATCH 10.1.0 --
+------------------
+i(205365);	-- Loamm Niffen Insignia [Uncommon]
+i(205342);	-- Loamm Niffen Insignia [Rare]
+i(205985);	-- Loamm Niffen Insignia [Epic]
+
+------------------
+-- PATCH 10.1.5 --
+------------------
+i(206375);	-- Corruptor's Scourgestone
+i(206576);	-- Death's Bargaining Chip
+i(206374);	-- Invader's Scourgestone

@@ -20,6 +20,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			i(202669),	-- Sealed Fish Scroll
 			i(202670),	-- Sealed Knowledge Scroll
 			i(202668),	-- Sealed Spirit Scroll
+
+			-- Misc
+			i(204311),	-- Fluorescent Veil
 		}),
 	}),
 })));

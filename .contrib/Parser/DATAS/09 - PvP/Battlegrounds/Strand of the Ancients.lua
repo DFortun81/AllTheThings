@@ -6,7 +6,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 		["icon"] = "Interface\\Icons\\achievement_bg_winsoa",
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				classicAch(2194, {	-- Master of Strand of the Ancients (Alliance - before 4.3.0)
+				ach(2194, {	-- Master of Strand of the Ancients (Alliance - before 4.3.0)
 					-- Meta Achievement should symlink the contained Achievements from Source
 					["sym"] = {{"meta_achievement",
 						1309,	-- Strand of the Ancients Veteran
@@ -33,7 +33,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
 				}),
-				classicAch(2195, {	-- Master of Strand of the Ancients (Horde - before 4.3.0)
+				ach(2195, {	-- Master of Strand of the Ancients (Horde - before 4.3.0)
 					-- Meta Achievement should symlink the contained Achievements from Source
 					["sym"] = {{"meta_achievement",
 						1309,	-- Strand of the Ancients Veteran
@@ -53,26 +53,26 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["timeline"] = { "added 3.0.1", "deleted 4.3.0" },
 					["races"] = HORDE_ONLY,
 				}),
-				classicAch(1308, {	-- Strand of the Ancients Victory
+				ach(1308, {	-- Strand of the Ancients Victory
 					["rank"] = 1,
 				}),
-				classicAch(1309, {	-- Strand of the Ancients Veteran
+				ach(1309, {	-- Strand of the Ancients Veteran
 					["rank"] = 100,
 				}),
-				classicAch(1310),	-- Storm the Beach
-				classicAch(2191),	-- Ancient Courtyard Protector
-				classicAch(1766),	-- Ancient Protector
-				classicAch(2189),	-- Artillery Expert
-				classicAch(1763),	-- Artillery Veteran
-				a(classicAch(1757)),	-- Defense of the Ancients (Alliance)
-				h(classicAch(2200)),	-- Defense of the Ancients (Horde)
-				classicAch(1764),	-- Drop It!
-				classicAch(2190),	-- Drop It Now!
-				classicAch(2193),	-- Explosives Expert
-				a(classicAch(1762)),	-- Not Even a Scratch (Alliance)
-				h(classicAch(2192)),	-- Not Even a Scratch (Horde)
-				classicAch(1765),		-- Steady Hands
-				classicAch(1761),		-- The Dapper Sapper
+				ach(1310),	-- Storm the Beach
+				ach(2191),	-- Ancient Courtyard Protector
+				ach(1766),	-- Ancient Protector
+				ach(2189),	-- Artillery Expert
+				ach(1763),	-- Artillery Veteran
+				a(ach(1757)),	-- Defense of the Ancients (Alliance)
+				h(ach(2200)),	-- Defense of the Ancients (Horde)
+				ach(1764),	-- Drop It!
+				ach(2190),	-- Drop It Now!
+				ach(2193),	-- Explosives Expert
+				a(ach(1762)),	-- Not Even a Scratch (Alliance)
+				h(ach(2192)),	-- Not Even a Scratch (Horde)
+				ach(1765),		-- Steady Hands
+				ach(1761),		-- The Dapper Sapper
 			}),
 		},
 	}))),

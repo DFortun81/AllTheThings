@@ -190,6 +190,171 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 				}),
 			}),
+			header(HEADERS.Achievement, 18792, bubbleDownSelf({ ["timeline"] = ADDED_10_1_7 }, {	-- Dragonriding Challenge: Dragon Isles: Gold
+				n(ACHIEVEMENTS, {
+					ach(18760, {	-- Thaldraszus Challenge: Bronze
+						-- Meta Achievement
+						["sym"] = {{"meta_achievement",
+							18009,	-- Academy Ascent Challenge: Bronze
+							18012,	-- Academy Ascent Reverse Challenge: Bronze
+							18021,	-- Caverns Criss-Cross Challenge: Bronze
+							18024,	-- Caverns Criss-Cross Reverse Challenge: Bronze
+							18003,	-- Cliffside Circuit Challenge: Bronze
+							18006,	-- Cliffside Circuit Reverse Challenge: Bronze
+							18015,	-- Garden Gallivant Challenge: Bronze
+							18018,	-- Garden Gallivant Reverse Challenge: Bronze
+							17991,	-- The Flowing Forest Flight Challenge: Bronze
+							17994,	-- The Flowing Forest Flight Reverse Challenge: Bronze
+							17997,	-- Tyrhold Trial Challenge: Bronze
+							18000,	-- Tyrhold Trial Reverse Challenge: Bronze
+						}},
+					}),
+					ach(18761, {	-- Thaldraszus Challenge: Silver
+						-- Meta Achievement
+						["sym"] = {{"meta_achievement",
+							18010,	-- Academy Ascent Challenge: Silver
+							18013,	-- Academy Ascent Reverse Challenge: Silver
+							18022,	-- Caverns Criss-Cross Challenge: Silver
+							18025,	-- Caverns Criss-Cross Reverse Challenge: Silver
+							18004,	-- Cliffside Circuit Challenge: Silver
+							18007,	-- Cliffside Circuit Reverse Challenge: Silver
+							18016,	-- Garden Gallivant Challenge: Silver
+							18019,	-- Garden Gallivant Reverse Challenge: Silver
+							17992,	-- The Flowing Forest Flight Challenge: Silver
+							17995,	-- The Flowing Forest Flight Reverse Challenge: Silver
+							17998,	-- Tyrhold Trial Challenge: Silver
+							18001,	-- Tyrhold Trial Reverse Challenge: Silver
+						}},
+					}),
+					ach(18762, {	-- Thaldraszus Challenge: Gold
+						-- Meta Achievement
+						["sym"] = {{"meta_achievement",
+							18011,	-- Academy Ascent Challenge: Gold
+							18014,	-- Academy Ascent Reverse Challenge: Gold
+							18023,	-- Caverns Criss-Cross Challenge: Gold
+							18026,	-- Caverns Criss-Cross Reverse Challenge: Gold
+							18005,	-- Cliffside Circuit Challenge: Gold
+							18008,	-- Cliffside Circuit Reverse Challenge: Gold
+							18017,	-- Garden Gallivant Challenge: Gold
+							18020,	-- Garden Gallivant Reverse Challenge: Gold
+							17993,	-- The Flowing Forest Flight Challenge: Gold
+							17996,	-- The Flowing Forest Flight Reverse Challenge: Gold
+							17999,	-- Tyrhold Trial Challenge: Gold
+							18002,	-- Tyrhold Trial Reverse Challenge: Gold
+						}},
+					}),
+				}),
+				n(QUESTS, {
+					dragonridingrace(75826, {	-- Academy Ascent Challenge
+						["provider"] = { "n", 193951 },	-- Bronze Timekeeper
+						["coord"] = { 60.3, 41.6, THALDRASZUS },
+						["g"] = {
+							ach(18009),	-- Academy Ascent Challenge: Bronze
+							ach(18010),	-- Academy Ascent Challenge: Silver
+							ach(18011),	-- Academy Ascent Challenge: Gold
+						},
+					}),
+					dragonridingrace(75827, {	-- Academy Ascent - Reverse Challenge
+						["provider"] = { "n", 193951 },	-- Bronze Timekeeper
+						["coord"] = { 60.3, 41.6, THALDRASZUS },
+						["g"] = {
+							ach(18012),	-- Academy Ascent Reverse Challenge: Bronze
+							ach(18013),	-- Academy Ascent Reverse Challenge: Silver
+							ach(18014),	-- Academy Ascent Reverse Challenge: Gold
+						},
+					}),
+					dragonridingrace(75829, {	-- Caverns Criss-Cross Challenge
+						["provider"] = { "n", 194372 },	-- Bronze Timekeeper
+						["coord"] = { 58.1, 33.6, THALDRASZUS },
+						["g"] = {
+							ach(18021),	-- Caverns Criss-Cross Challenge: Bronze
+							ach(18022),	-- Caverns Criss-Cross Challenge: Silver
+							ach(18023),	-- Caverns Criss-Cross Challenge: Gold
+						},
+					}),
+					dragonridingrace(75830, {	-- Caverns Criss-Cross - Reverse Challenge
+						["provider"] = { "n", 194372 },	-- Bronze Timekeeper
+						["coord"] = { 58.1, 33.6, THALDRASZUS },
+						["g"] = {
+							ach(18024),	-- Caverns Criss-Cross Reverse Challenge: Bronze
+							ach(18025),	-- Caverns Criss-Cross Reverse Challenge: Silver
+							ach(18026),	-- Caverns Criss-Cross Reverse Challenge: Gold
+						},
+					}),
+					dragonridingrace(75824, {	-- Cliffside Circuit Challenge
+						["provider"] = { "n", 193911 },	-- Bronze Timekeeper
+						["coord"] = { 37.7, 48.9, THALDRASZUS },
+						["g"] = {
+							ach(18003),	-- Cliffside Circuit Challenge: Bronze
+							ach(18004),	-- Cliffside Circuit Challenge: Silver
+							ach(18005),	-- Cliffside Circuit Challenge: Gold
+						},
+					}),
+					dragonridingrace(75825, {	-- Cliffside Circuit - Reverse Challenge
+						["provider"] = { "n", 193911 },	-- Bronze Timekeeper
+						["coord"] = { 37.7, 48.9, THALDRASZUS },
+						["g"] = {
+							ach(18006),	-- Cliffside Circuit Reverse Challenge: Bronze
+							ach(18007),	-- Cliffside Circuit Reverse Challenge: Silver
+							ach(18008),	-- Cliffside Circuit Reverse Challenge: Gold
+						},
+					}),
+					dragonridingrace(75784, {	-- Garden Gallivant Challenge
+						["provider"] = { "n", 194348 },	-- Bronze Timekeeper
+						["coord"] = { 39.5, 76.2, THALDRASZUS },
+						["g"] = {
+							ach(18015),	-- Garden Gallivant Challenge: Bronze
+							ach(18016),	-- Garden Gallivant Challenge: Silver
+							ach(18017),	-- Garden Gallivant Challenge: Gold
+						},
+					}),
+					dragonridingrace(75828, {	-- Garden Gallivant - Revese Challenge
+						["provider"] = { "n", 194348 },	-- Bronze Timekeeper
+						["coord"] = { 39.5, 76.2, THALDRASZUS },
+						["g"] = {
+							ach(18018),	-- Garden Gallivant Reverse Challenge: Bronze
+							ach(18019),	-- Garden Gallivant Reverse Challenge: Silver
+							ach(18020),	-- Garden Gallivant Reverse Challenge: Gold
+						},
+					}),
+					dragonridingrace(75820, {	-- Flowing Forest Flight Challenge
+						["provider"] = { "n", 192555 },	-- Bronze Timekeeper
+						["coord"] = { 57.8, 75.0, THALDRASZUS },
+						["g"] = {
+							ach(17991),	-- The Flowing Forest Flight Challenge: Bronze
+							ach(17992),	-- The Flowing Forest Flight Challenge: Silver
+							ach(17993),	-- The Flowing Forest Flight Challenge: Gold
+						},
+					}),
+					dragonridingrace(75821, {	-- Flowing Forest Flight - Reverse Challenge
+						["provider"] = { "n", 192555 },	-- Bronze Timekeeper
+						["coord"] = { 57.8, 75.0, THALDRASZUS },
+						["g"] = {
+							ach(17994),	-- The Flowing Forest Flight Reverse Challenge: Bronze
+							ach(17995),	-- The Flowing Forest Flight Reverse Challenge: Silver
+							ach(17996),	-- The Flowing Forest Flight Reverse Challenge: Gold
+						},
+					}),
+					dragonridingrace(75822, {	-- Tyrhold Trial Challenge
+						["provider"] = { "n", 193651 },	-- Bronze Timekeeper
+						["coord"] = { 57.2, 66.9, THALDRASZUS },
+						["g"] = {
+							ach(17997),	-- Tyrhold Trial Challenge: Bronze
+							ach(17998),	-- Tyrhold Trial Challenge: Silver
+							ach(17999),	-- Tyrhold Trial Challenge: Gold
+						},
+					}),
+					dragonridingrace(75823, {	-- Tyrhold Trial - Reverse Challenge
+						["provider"] = { "n", 193651 },	-- Bronze Timekeeper
+						["coord"] = { 57.2, 66.9, THALDRASZUS },
+						["g"] = {
+							ach(18000),	-- Tyrhold Trial Reverse Challenge: Bronze
+							ach(18001),	-- Tyrhold Trial Reverse Challenge: Silver
+							ach(18002),	-- Tyrhold Trial Reverse Challenge: Gold
+						},
+					}),
+				}),
+			})),
 			header(HEADERS.Achievement, 17332, bubbleDownSelf({ ["timeline"] = ADDED_10_0_5 }, {	-- Reverse Racer: Gold
 				n(ACHIEVEMENTS, {
 					ach(17204, {	-- Thaldraszus Reverse: Bronze

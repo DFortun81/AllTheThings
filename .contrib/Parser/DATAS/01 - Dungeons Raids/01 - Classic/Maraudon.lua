@@ -1,11 +1,41 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+MARAUDON_PORTAL = createHeader({
+	readable = "Maraudon Portal",
+	icon = "Interface\\Icons\\spell_arcane_portalironforge",
+	text = {
+		en = [[~GetSpellInfo(21127)]],
+	},
+});
+FOULSPORE_CAVERN = createHeader({
+	readable = "Foulspore Cavern",
+	icon = "Interface\\Icons\\INV_Misc_Gem_Opal_01",
+	text = {
+		-- #if AFTER 7.3.0
+		en = [[~DUNGEON_FLOOR_DESOLACE22.." ("..GetSpellInfo(251097)..")"]],
+		-- #else
+		en = [[~DUNGEON_FLOOR_DESOLACE22.." (Orange Path)"]],
+		-- #endif
+	},
+});
+WICKED_GROTTO = createHeader({
+	readable = "The Wicked Grotto",
+	icon = "Interface\\Icons\\INV_Misc_Gem_Amethyst_02",
+	text = {
+		-- #if AFTER 7.3.0
+		en = [[~DUNGEON_FLOOR_DESOLACE21.." ("..GetSpellInfo(251095)..")"]],
+		-- #else
+		en = [[~DUNGEON_FLOOR_DESOLACE21.." (Purple Path)"]],
+		-- #endif
+	},
+});
 root(ROOTS.Instances, tier(CLASSIC_TIER, {
 	inst(232, {	-- Maraudon
 		-- #if BEFORE MOP
 		["lore"] = "Protected by the fierce Maraudine centaur, Maraudon is one of the most sacred sites within Desolace. The great temple/cavern is the burial place of Zaetar, one of two immortal sons born to the demigod, Cenarius. Legend holds that Zaetar and the earth elemental princess, Theradras, sired the misbegotten centaur race. It is said that upon their emergence, the barbaric centaur turned on their father and killed him. Some believe that Theradras, in her grief, trapped Zaetar's spirit within the winding cavern - used its energies for some malign purpose. The subterranean tunnels are populated by the vicious, long-dead ghosts of the Centaur Khans, as well as Theradras' own raging, elemental minions.",
 		-- #endif
+		["zone-text-areaID"] = 2100,	-- Maraudon
 		["mapID"] = MARAUDON,
 		["maps"] = { MARAUDON_LEVEL2, 67, 68 },
 		["lvl"] = lvlsquish(41, 30, 10),
@@ -332,7 +362,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				}),
 				i(17684),	-- Theradric Crystal Carving
 			}),
-			n(-70, {	-- Foulspore Cavern [Orange]
+			n(FOULSPORE_CAVERN, {
 				["coord"] = { 78.01, 55.68, 67 },	-- Maraudon [Orange], The Wicked Grotto [Desolace]
 				["groups"] = {
 					e(423, {	-- Noxxion
@@ -370,7 +400,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					}),
 				},
 			}),
-			n(-71, {	-- The Wicked Grotto [Purple]
+			n(WICKED_GROTTO, {
 				["coord"] = { 51.68, 24.73, 68 },	-- Maraudon [Purple], Foulspore Cavern [Desolace]
 				["groups"] = {
 					-- #if AFTER 4.0.3
@@ -412,7 +442,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					}),
 				},
 			}),
-			n(-69, {	-- Maraudon Portal
+			n(MARAUDON_PORTAL, {
 				["coord"] = { 44.49, 77.14, 68 },	-- Maraudon [Falls], Foulspore Cavern [Desolace]
 				-- #if BEFORE 3.0.8
 				["sourceQuest"] = 7046,	-- The Scepter of Celebras
@@ -475,13 +505,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["creatureID"] = 12201,
 						["modelScale"] = 2,
 						["groups"] = {
-							classicAch(640, {	-- Maraudon
+							ach(640, {	-- Maraudon
 								-- #if BEFORE WRATH
 								["sourceQuests"] = {
 									7065,	-- Corruption of Earth and Seed
 									7064,	-- Corruption of Earth and Seed
 								},
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
 							}),
 							ach(5049, {	-- Maraudon Guild Run

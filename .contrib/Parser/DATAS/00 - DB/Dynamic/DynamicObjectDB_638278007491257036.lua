@@ -1,0 +1,63 @@
+﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+	[122195] = {
+		readable = "SI:7 Lockbox",
+		model = 196976,
+		text = {
+			en = "SI:7 Lockbox",
+			es = "[SI:7 Lockbox]",
+			de = "[SI:7 Lockbox]",
+			fr = "[SI:7 Lockbox]",
+			it = "[SI:7 Lockbox]",
+			pt = "[SI:7 Lockbox]",
+			ru = "[SI:7 Lockbox]",
+			ko = "[SI:7 Lockbox]",
+			cn = "[SI:7 Lockbox]",
+		},
+	},
+	[122196] = {
+		readable = "SI:7 Lockbox",
+		model = 196976,
+		text = {
+			en = "SI:7 Lockbox",
+			es = "[SI:7 Lockbox]",
+			de = "[SI:7 Lockbox]",
+			fr = "[SI:7 Lockbox]",
+			it = "[SI:7 Lockbox]",
+			pt = "[SI:7 Lockbox]",
+			ru = "[SI:7 Lockbox]",
+			ko = "[SI:7 Lockbox]",
+			cn = "[SI:7 Lockbox]",
+		},
+	},
+	[122197] = {
+		readable = "SI:7 Lockbox",
+		model = 196976,
+		text = {
+			en = "SI:7 Lockbox",
+			es = "[SI:7 Lockbox]",
+			de = "[SI:7 Lockbox]",
+			fr = "[SI:7 Lockbox]",
+			it = "[SI:7 Lockbox]",
+			pt = "[SI:7 Lockbox]",
+			ru = "[SI:7 Lockbox]",
+			ko = "[SI:7 Lockbox]",
+			cn = "[SI:7 Lockbox]",
+		},
+	},
+	[122198] = {
+		readable = "SI:7 Lockbox",
+		model = 196976,
+		text = {
+			en = "SI:7 Lockbox",
+			es = "[SI:7 Lockbox]",
+			de = "[SI:7 Lockbox]",
+			fr = "[SI:7 Lockbox]",
+			it = "[SI:7 Lockbox]",
+			pt = "[SI:7 Lockbox]",
+			ru = "[SI:7 Lockbox]",
+			ko = "[SI:7 Lockbox]",
+			cn = "[SI:7 Lockbox]",
+		},
+	},
+})
+do ObjectDB[objectID] = objectData; end

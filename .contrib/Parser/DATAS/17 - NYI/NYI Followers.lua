@@ -2,8 +2,8 @@
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
 -- Everything in this file hasn't been implemented yet.
-
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+-- #if AFTER WOD
+root(ROOTS.NeverImplemented, {
 	n(FOLLOWERS, {
 		tier(WOD_TIER, {
 			-- 6.0.1
@@ -163,4 +163,5 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 		}),
 	}),
-}));
+});
+-- #endif

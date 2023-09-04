@@ -11,15 +11,20 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, {
 			}),
 			-- #IF BEFORE BFA
 			ach(137, {	-- Stocking Up
+				["provider"] = { "i", 34722 },	-- Heavy Frostweave Bandage
 				["requireSkill"] = FIRST_AID,
 			}),
 			ach(141, {	-- Ultimate Triage
-				["cost"] = {
-					{ "i", 34722, 1 },	-- Heavy Frostweave Bandage
-					{ "i", 53049, 1 },	-- Embersilk Bandage
-					{ "i", 53051, 1 },	-- Dense Embersilk Bandage
-					{ "i", 72985, 1 },	-- Windwool Bandage
-					{ "i", 72986, 1 },	-- Heavy Windwool Bandage
+				["providers"] = {
+					{ "i", 34722 },	-- Heavy Frostweave Bandage
+					-- #if AFTER CATA
+					{ "i", 53049 },	-- Embersilk Bandage
+					{ "i", 53051 },	-- Dense Embersilk Bandage
+					-- #endif
+					-- #if AFTER MOP
+					{ "i", 72985 },	-- Windwool Bandage
+					{ "i", 72986 },	-- Heavy Windwool Bandage
+					-- #endif
 				},
 			}),
 			-- #ENDIF
@@ -27,15 +32,20 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, {
 		-- #IF AFTER BFA
 		prof(TAILORING, {
 			ach(137, {	-- Stocking Up
+				["provider"] = { "i", 34722 },	-- Heavy Frostweave Bandage
 				["requireSkill"] = TAILORING,
 			}),
 			ach(141, {	-- Ultimate Triage
-				["cost"] = {
-					{ "i", 34722, 1 },	-- Heavy Frostweave Bandage
-					{ "i", 53049, 1 },	-- Embersilk Bandage
-					{ "i", 53051, 1 },	-- Dense Embersilk Bandage
-					{ "i", 72985, 1 },	-- Windwool Bandage
-					{ "i", 72986, 1 },	-- Heavy Windwool Bandage
+				["providers"] = {
+					{ "i", 34722 },	-- Heavy Frostweave Bandage
+					-- #if AFTER CATA
+					{ "i", 53049 },	-- Embersilk Bandage
+					{ "i", 53051 },	-- Dense Embersilk Bandage
+					-- #endif
+					-- #if AFTER MOP
+					{ "i", 72985 },	-- Windwool Bandage
+					{ "i", 72986 },	-- Heavy Windwool Bandage
+					-- #endif
 				},
 			}),
 		}),

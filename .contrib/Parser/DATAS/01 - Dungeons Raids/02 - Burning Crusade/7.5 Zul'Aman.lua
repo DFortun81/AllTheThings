@@ -24,6 +24,9 @@ local FOREST_FROG = n(24396, {	-- Forest Frog
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 	inst(77, bubbleDownSelf({ ["timeline"] = { "added 2.3.0", "removed 4.1.0" } }, {	-- Zul'Aman
 		["lore"] = "When the high elves were first exiled and landed in Lordaeron, they met violent clashes with the forest trolls, who viewed them as defiling their homeland. At the time of the founding of Quel'Thalas, the Amani Empire was the most powerful empire in the Eastern Kingdoms; they still held much of northern Lordaeron in their territorial grasp.\n\nEventually, the high elves joined with the humans of Arathor and defeated the forest trolls in an immense battle that signaled the end of the forest trolls' empire. The Amani would never recover enough to extend their land beyond their home province of Zul'Aman, but they continued to be an enemy of humans and elves for thousands of years.\n\nZul'jin, planning to take revenge against Quel'Thalas, saw the opportunity when most of the blood elves and Horde were busy fighting on Outland. He had his champions harness the power of the loa with the help of the cunning Hex Lord Malacrass.",
+		-- #if BEFORE WRATH
+		["zone-text-areaID"] = 3805,	-- Zul'Aman
+		-- #endif
 		["coord"] = { 81.8, 64.3, GHOSTLANDS },	-- Zul'Aman, Ghostlands
 		["mapID"] = ZULAMAN,
 		["isRaid"] = true,
@@ -170,10 +173,10 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 					EXECUTIONER_RECIPE,
 				}),
 				FOREST_FROG,
-				n(-78, {	-- Timed Events
+				n(ZULAMAN_TIMED_EVENT, {
 					["description"] = "The event starts as soon as you open the gate. You now have 20 minutes to defeat the first animal-boss of your choice. Any of the loa spirit bosses will do and there is no required order, however killing Nalorakk will add 15 minutes and killing Akil'zon will add an additional 10 minutes to your timer. This is generally why players kill these two bosses first.\n\nThe loot from the event is dependent on the number of hostages you rescue, not which chest you loot first.",
 					["groups"] = {
-						n(-79, {	-- First Chest
+						n(ZULAMAN_CHEST_1, {
 							i(33489),	-- Mantle of Ill Intent
 							i(33481),	-- Pauldrons of Stone Resolve
 							i(33590),	-- Cloak of Fiends
@@ -183,7 +186,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 							i(33971),	-- Elunite Imbued Leggings
 							i(33805),	-- Shadowhunter's Treads
 						}),
-						n(-80, {	-- Second Chest
+						n(ZULAMAN_CHEST_2, {
 							i(33494),	-- Amani Divining Staff
 							i(33495),	-- Rage
 							i(33490),	-- Staff of Dark Mending
@@ -191,24 +194,23 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 							i(33491),	-- Tuskbreaker
 							i(33493),	-- Umbral Shiv
 						}),
-						n(-81, {	-- Third Chest
+						n(ZULAMAN_CHEST_3, {
 							i(33497),	-- Mana Attuned Band
 							i(33500),	-- Signet of Eternal Life
 							i(33499),	-- Signet of the Last Defender
 							i(33496),	-- Signet of Primal Wrath
 							i(33498),	-- Signet of the Quiet Forest
 						}),
-						n(-82, {	-- Final Chest
+						n(ZULAMAN_CHEST_4, {
 							["description"] = "This item could only be found after the fourth animal boss had been defeated within the required time limit for the event.\n\nOnly one player can receive this within a given raid lockout.",
 							["groups"] = {
-								classicAch(430, {	-- Amani War Bear
+								ach(430, {	-- Amani War Bear
 									["provider"] = { "i", 33809 },	-- Amani War Bear
-									["timeline"] = { "removed 3.0.2" },
-									["filterID"] = MOUNTS,
 									-- #if BEFORE WRATH
 									["description"] = "Obtain the Amani War Bear from the final chest in Zul'Aman.",
-									["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 									-- #endif
+									["timeline"] = { "removed 3.0.2" },
+									["filterID"] = MOUNTS,
 								}),
 								i(33809, {	-- Amani War Bear (MOUNT!)
 									["timeline"] = { "removed 3.0.2" },
@@ -304,10 +306,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 					-- #endif
 					["hideText"] = true,
 					["groups"] = {
-						classicAch(691, {	-- Zul'Aman: Defeat Zul'jin in the Zul'Aman raid.
+						ach(691, {	-- Zul'Aman: Defeat Zul'jin in the Zul'Aman raid.
 							-- #if BEFORE WRATH
 							["sourceQuest"] = 11178,	-- Blood of the Warlord
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						i(33102),	-- Blood of Zul'jin
@@ -339,8 +340,5 @@ FOREST_FROG.timeline = nil;
 -- also clean up the children
 for _,item in pairs(FOREST_FROG.groups) do item.timeline = nil; end
 MOJO_PET.timeline = nil;
-
--- #if ANYCLASSIC
 -- We don't want to apply a phase ID for this in this raid, that will be done elsewhere.
 BADGE_OF_JUSTICE.timeline = nil;
--- #endif

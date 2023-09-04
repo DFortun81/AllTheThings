@@ -22,7 +22,7 @@ local function MarkOfWHOOOWHATNow(t)
 end
 -- #if BEFORE 5.0.1
 local HATEFUL_GLADIATOR_ONUPDATE = [[function(t)
-	if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_TWO .. [[] then
+	if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_TWO .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
 		t.u = ]] .. WRATH_PHASE_ONE .. [[;
@@ -30,7 +30,7 @@ local HATEFUL_GLADIATOR_ONUPDATE = [[function(t)
 	if not t.rwp then t.rwp = 30100; end
 end]];
 local DEADLY_GLADIATOR_ONUPDATE = [[function(t)
-	if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_TWO .. [[] then
+	if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_TWO .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
 		t.u = ]] .. WRATH_PHASE_ONE .. [[;
@@ -38,7 +38,7 @@ local DEADLY_GLADIATOR_ONUPDATE = [[function(t)
 	if not t.rwp then t.rwp = 30100; end
 end]];
 local FURIOUS_GLADIATOR_ONUPDATE = [[function(t)
-	if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_THREE .. [[] then
+	if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
 		t.u = ]] .. WRATH_PHASE_TWO .. [[;
@@ -46,7 +46,7 @@ local FURIOUS_GLADIATOR_ONUPDATE = [[function(t)
 	if not t.rwp then t.rwp = 30200; end
 end]];
 local RELENTLESS_GLADIATOR_ONUPDATE = [[function(t)
-	if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_FOUR .. [[] then
+	if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_FOUR .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
 		t.u = ]] .. WRATH_PHASE_THREE .. [[;
@@ -54,7 +54,7 @@ local RELENTLESS_GLADIATOR_ONUPDATE = [[function(t)
 	if not t.rwp then t.rwp = 30302; end
 end]];
 local WRATHFUL_GLADIATOR_ONUPDATE = [[function(t)
-	if ATTClassicSettings.Unobtainables[]] .. CATA_PHASE_ONE .. [[] then
+	if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_ONE .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
 		t.u = ]] .. WRATH_PHASE_FOUR .. [[;
@@ -70,10 +70,10 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 			["OnUpdate"] = DEADLY_GLADIATOR_ONUPDATE,
 			-- #endif
 		}, n(ACHIEVEMENTS, {
-			classicAch(3336, {	-- Deadly Gladiator: Wrath of the Lich King Season 1
+			ach(3336, {	-- Deadly Gladiator: Wrath of the Lich King Season 1
 				title(56),	-- Deadly Gladiator <Name>
 			}),
-			classicAch(3096, {	-- Deadly Gladiator's Frost Wyrm
+			ach(3096, {	-- Deadly Gladiator's Frost Wyrm
 				["provider"] = { "i", 46708 },	-- Deadly Gladiator's Frost Wyrm
 				["filterID"] = MOUNTS,
 			}),
@@ -458,7 +458,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 				}),
 			}),
 			-- #if ANYCLASSIC
-			filter(RELICS, bubbleDown({
+			filter(RELICS_F, bubbleDown({
 				["timeline"] = { "added 3.0.1", "removed 3.1.0" },
 				-- #if BEFORE 5.0.1
 				["OnUpdate"] = DEADLY_GLADIATOR_ONUPDATE,
@@ -1132,7 +1132,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 				i(42110),	-- Hateful Gladiator's Band of Dominance
 				i(42112),	-- Hateful Gladiator's Band of Triumph
 			})),
-			filter(RELICS, bubbleDown({
+			filter(RELICS_F, bubbleDown({
 				["timeline"] = { "added 3.0.1", "removed 3.1.0" },
 				-- #if BEFORE 5.0.1
 				["OnUpdate"] = HATEFUL_GLADIATOR_ONUPDATE,
@@ -1795,7 +1795,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 				i(42114),	-- Deadly Gladiator's Band of Ascendancy
 				i(42115),	-- Deadly Gladiator's Band of Victory
 			}),
-			filter(RELICS, bubbleDown({
+			filter(RELICS_F, bubbleDown({
 				["timeline"] = { "added 3.0.1", "removed 3.1.0" },
 				-- #if BEFORE 5.0.1
 				["OnUpdate"] = DEADLY_GLADIATOR_ONUPDATE,
@@ -1849,10 +1849,10 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 			["OnUpdate"] = FURIOUS_GLADIATOR_ONUPDATE,
 			-- #endif
 		}, n(ACHIEVEMENTS, {
-			classicAch(3436, {	-- Furious Gladiator: Wrath of the Lich King Season 2
+			ach(3436, {	-- Furious Gladiator: Wrath of the Lich King Season 2
 				title(132),	-- Furious Gladiator <Name>
 			}),
-			classicAch(3756, {	-- Furious Gladiator's Frost Wyrm
+			ach(3756, {	-- Furious Gladiator's Frost Wyrm
 				["provider"] = { "i", 46171 },	-- Furious Gladiator's Frost Wyrm
 				["filterID"] = MOUNTS,
 			}),
@@ -2507,7 +2507,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 				i(42116),	-- Furious Gladiator's Band of Dominance
 				i(42117),	-- Furious Gladiator's Band of Triumph
 			}),
-			filter(RELICS, bubbleDown({
+			filter(RELICS_F, bubbleDown({
 				["timeline"] = { "added 3.1.0", "removed 3.2.0" },
 				-- #if BEFORE 5.0.1
 				["OnUpdate"] = FURIOUS_GLADIATOR_ONUPDATE,
@@ -3254,7 +3254,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 				i(42118),	-- Relentless Gladiator's Band of Ascendancy
 				i(42119),	-- Relentless Gladiator's Band of Victory
 			}),
-			filter(RELICS, bubbleDown({
+			filter(RELICS_F, bubbleDown({
 				["timeline"] = { "added 3.2.0", "removed 3.3.2" },
 				-- #if BEFORE 5.0.1
 				["OnUpdate"] = RELENTLESS_GLADIATOR_ONUPDATE,
@@ -3335,10 +3335,10 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 			["OnUpdate"] = WRATHFUL_GLADIATOR_ONUPDATE,
 			-- #endif
 		}, n(ACHIEVEMENTS, {
-			classicAch(4599, {	-- Wrathful Gladiator: Wrath of the Lich King Season  4
+			ach(4599, {	-- Wrathful Gladiator: Wrath of the Lich King Season  4
 				title(142),	-- Wrathful Gladiator <Name>
 			}),
-			classicAch(4600, {	-- Wrathful Gladiator's Frost Wyrm
+			ach(4600, {	-- Wrathful Gladiator's Frost Wyrm
 				["provider"] = { "i", 50435 },	-- Wrathful Gladiator's Frost Wyrm
 				["filterID"] = MOUNTS,
 			}),
@@ -4002,7 +4002,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 				i(51336),	-- Wrathful Gladiator's Band of Dominance
 				i(51358),	-- Wrathful Gladiator's Band of Triumph
 			}),
-			filter(RELICS, bubbleDown({
+			filter(RELICS_F, bubbleDown({
 				["timeline"] = { "added 3.3.2", "removed 5.0.4" },
 				-- #if BEFORE 5.0.1
 				["OnUpdate"] = WRATHFUL_GLADIATOR_ONUPDATE,
@@ -4149,7 +4149,7 @@ root(ROOTS.HiddenQuestTriggers, {
 });
 -- #endif
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(WOTLK_TIER, {
 		n(SEASON_DEADLY, {
 			n(WEAPONS, {
@@ -4174,4 +4174,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

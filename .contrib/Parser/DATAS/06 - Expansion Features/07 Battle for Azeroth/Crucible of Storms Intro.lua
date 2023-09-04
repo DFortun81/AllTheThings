@@ -196,7 +196,7 @@ root(ROOTS.ExpansionFeatures, {
 	}),
 });
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(BFA_TIER, {
 		n(ARMOR, {
 			-- You get the transmog attached to your head during 'Twist the Knife' but you dont get the item to learn the mog
@@ -206,4 +206,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

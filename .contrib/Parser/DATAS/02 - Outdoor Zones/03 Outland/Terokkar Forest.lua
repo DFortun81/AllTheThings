@@ -44,45 +44,45 @@ root(ROOTS.Zones, {
 						["description"] = "Explore Terokkar Forest, revealing the covered areas of the world map.",
 						-- #endif
 					}),
-					ach(894, applyclassicphase(TBC_PHASE_TWO_SKYGUARD, {	-- Flying High Over Skettis
+					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, achWithRep(894, 1031, {	-- Flying High Over Skettis
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with the Sha'tari Skyguard to Exalted.",
 						-- #endif
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1031); end]],
-						-- #endif
 					})),
-					classicAch(726, {	-- Mr. Pinchy's Magical Crawdad Box
+					ach(726, {	-- Mr. Pinchy's Magical Crawdad Box
 						["provider"] = { "i", 27445 },	-- Magical Crawdad Box
-						["requireSkill"] = FISHING,
 						-- #if BEFORE WRATH
 						["description"] = "Fish your way to Mr. Pinchy's Magical Crawdad Box.",
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 						-- #endif
+						["requireSkill"] = FISHING,
 					}),
 					ach(905, {	-- Old Man Barlowned
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 						["groups"] = {
 							crit(5706, {	-- Crocolisks in the City
+								["timeline"] = { "added 3.0.1" },
 								["_quests"] = { 11665 },
 							}),
 							crit(5707, {	-- Bait Bandits
+								["timeline"] = { "added 3.0.1" },
 								["_quests"] = { 11666 },
 							}),
 							crit(5708, {	-- Felblood Fillet
+								["timeline"] = { "added 3.0.1" },
 								["_quests"] = { 11669 },
 							}),
 							crit(5709, {	-- The One That Got Away
+								["timeline"] = { "added 3.0.1" },
 								["_quests"] = { 11667 },
 							}),
 							crit(5710, {	-- Shrimpin' Ain't Easy
+								["timeline"] = { "added 3.0.1" },
 								["_quests"] = { 11668 },
 							}),
 						},
 					}),
-					classicAch(1191, {	-- Terror of Terokkar (A)
+					ach(1191, {	-- Terror of Terokkar (A)
 						["races"] = ALLIANCE_ONLY,
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -177,7 +177,7 @@ root(ROOTS.Zones, {
 						},
 						-- #endif
 					}),
-					classicAch(1272, {	-- Terror of Terokkar (H)
+					ach(1272, {	-- Terror of Terokkar (H)
 						["races"] = HORDE_ONLY,
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -271,8 +271,7 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
 						417,	-- Rat (PET!)
 						397,	-- Skunk (PET!)
@@ -286,8 +285,7 @@ root(ROOTS.Zones, {
 						}),
 						pet(517),	-- Warpstalker Hatchling (PET!)
 					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(3684, "256:256:480:277"),	-- Allerian Stronghold
@@ -321,7 +319,7 @@ root(ROOTS.Zones, {
 				-- #endif
 				n(FACTIONS, {
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, faction(1031, {	-- Sha'tari Skyguard
-						["icon"] = icon("ability_hunter_pet_netherray"),
+						["icon"] = "Interface\\Icons\\ability_hunter_pet_netherray",
 						["OnTooltip"] = OnTooltipForSkyguard,
 					})),
 				}),
@@ -331,12 +329,14 @@ root(ROOTS.Zones, {
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182957 },	-- Highland Mixed School
 						["criteriaID"] = 3869,	-- Highland Mixed School
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
 					-- #else
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182957 },	-- Highland Mixed School
 						["criteriaID"] = 3627,	-- Highland Mixed School
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
 					-- #endif
@@ -357,12 +357,14 @@ root(ROOTS.Zones, {
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182956 },	-- School of Darter
 						["criteriaID"] = 3868,	-- School of Darter
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
 					-- #else
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182956 },	-- School of Darter
 						["criteriaID"] = 3628,	-- School of Darter
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
 					-- #endif
@@ -502,7 +504,9 @@ root(ROOTS.Zones, {
 									{ "o", 185549 },	-- Monstrous Kaliri Egg
 								},
 							}),
-							ach(1275),	-- Bombs Away
+							ach(1275, {	-- Bombs Away
+								["timeline"] = { "added 3.0.1" },
+							}),
 						},
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11056, {	-- Hazzik's Bargain
@@ -931,8 +935,10 @@ root(ROOTS.Zones, {
 							9957,	-- What's Wrong at Cenarion Thicket?
 							9961,	-- What's Wrong at Cenarion Thicket?
 							9960,	-- What's Wrong at Cenarion Thicket?
+							-- #if AFTER 6.2.0.19953
 							39182,	-- Warchief's Command: Terokkar Forest!
 							39188,	-- Hero's Call: Terokkar Forest!
+							-- #endif
 						},
 					}),
 					q(9986, {	-- Stymying the Arakkoa (A)
@@ -1486,10 +1492,10 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(REWARDS, {
-					i(35348, {	-- Bag of Fishing Treasures
+					i(35348, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_0 } }, {	-- Bag of Fishing Treasures
 						["description"] = "This bag is exclusive to the Crocolisk in the City Daily Quest.",
 						["groups"] = {
-							i(34834),	-- Recipe: Captain Rumsey's Lager
+							i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
 							i(34837),	-- The 2 Ring
 							i(35350),	-- Chuck (PET!)
 							i(34826),	-- Gold Wedding Band
@@ -1501,11 +1507,11 @@ root(ROOTS.Zones, {
 							i(33820),	-- Weather-Beaten Fishing Hat
 							i(34109),	-- Weather-Beaten Journal
 						},
-					}),
-					i(34863, {	-- Bag of Fishing Treasures
+					})),
+					i(34863, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_0 } }, {	-- Bag of Fishing Treasures
 						["description"] = "Shared reward bag for all the non-Croc dailies.",
 						["groups"] = {
-							i(34834),	-- Recipe: Captain Rumsey's Lager
+							i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
 							i(34831),	-- Eye of the Sea
 							i(34826),	-- Gold Wedding Band
 							i(34827),	-- Noble's Monocle
@@ -1515,7 +1521,7 @@ root(ROOTS.Zones, {
 							i(33820),	-- Weather-Beaten Fishing Hat
 							i(34109),	-- Weather-Beaten Journal
 						},
-					}),
+					})),
 				}),
 				n(VENDORS, {
 					n(18962, {	-- Bar Talet
@@ -1533,7 +1539,9 @@ root(ROOTS.Zones, {
 							i(32771),	-- Airman's Ribbon Gallantry
 							i(32319),	-- Blue Riding Nether Ray (MOUNT!)
 							i(32314),	-- Green Riding Nether Ray (MOUNT!)
-							i(38628),	-- Nether Ray Fry (PET!)
+							i(38628, {	-- Nether Ray Fry (PET!)
+								["timeline"] = { ADDED_2_4_2 },
+							}),
 							i(32316),	-- Purple Riding Nether Ray (MOUNT!)
 							i(32317),	-- Red Riding Nether Ray (MOUNT!)
 							i(32318),	-- Silver Riding Nether Ray (MOUNT!)
@@ -1547,26 +1555,26 @@ root(ROOTS.Zones, {
 						["coord"] = { 56.6, 53.2, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(27699),	-- Recipe: Golden Fish Sticks
-							i(27700),	-- Recipe: Spicy Crawdad
+							i(27699),	-- Recipe: Golden Fish Sticks (RECIPE!)
+							i(27700),	-- Recipe: Spicy Crawdad (RECIPE!)
 						},
 					}),
 					n(18957, {	-- Innkeeper Grilka <Innkeeper>
 						["coord"] = { 48.8, 45.0, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(27690),	-- Recipe: Blackened Basilisk
-							i(27692),	-- Recipe: Warp Burger
+							i(27690),	-- Recipe: Blackened Basilisk (RECIPE!)
+							i(27692),	-- Recipe: Warp Burger (RECIPE!)
 						},
 					}),
 					n(19042, {	-- Leeli Longhaggle <Trade Goods>
 						["coord"] = { 57.6, 53.4, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(22911, {	-- Recipe: Major Dreamless Sleep Potion
+							i(22911, {	-- Recipe: Major Dreamless Sleep Potion (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(22901, {	-- Recipe: Sneaking Potion
+							i(22901, {	-- Recipe: Sneaking Potion (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},
@@ -1578,8 +1586,8 @@ root(ROOTS.Zones, {
 							i(25848, {	-- Formula: Runed Adamantite Rod (RECIPE!)
 								["timeline"] = { "added 2.0.1", "removed 5.0.4" },
 							}),
-							i(27699),	-- Recipe: Golden Fish Sticks
-							i(27700),	-- Recipe: Spicy Crawdad
+							i(27699),	-- Recipe: Golden Fish Sticks (RECIPE!)
+							i(27700),	-- Recipe: Spicy Crawdad (RECIPE!)
 						},
 					}),
 					n(19772, {	-- Spirit Sage Gartok
@@ -1676,19 +1684,20 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.8, 53.0, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(27690),	-- Recipe: Blackened Basilisk
-							i(27692),	-- Recipe: Warp Burger
+							i(27690),	-- Recipe: Blackened Basilisk (RECIPE!)
+							i(27692),	-- Recipe: Warp Burger (RECIPE!)
 						},
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(34491, {    -- Pattern: Bag of Many Hides
+					i(34491, {    -- Pattern: Bag of Many Hides (RECIPE!)
 						["crs"] = {
 							22143,    -- Gordunni Back-Breaker
 							22144,    -- Gordunni Elementalist
 							22148,    -- Gordunni Head-Splitter
 							23022,    -- Gordunni Soulreaper
 						},
+						["timeline"] = { ADDED_2_3_0 },
 					}),
 					applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR, i(34255, {	-- Razorthorn Flayer Gland
 						["cr"] = 24920,	-- Razorthorn Flayer

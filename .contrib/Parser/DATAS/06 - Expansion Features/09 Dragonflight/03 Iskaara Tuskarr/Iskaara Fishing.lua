@@ -1,9 +1,18 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+ISKAARA_FISHING = createHeader({
+	readable = "Iskaara Fishing",
+	icon = "Interface\\Icons\\inv_polearm_2h_kultirasharpoon_a_01",
+	text = {
+		en = "Iskaara Fishing",
+		ru = "Искарское рыболовство",
+		cn = "伊斯卡拉渔具",
+	},
+});
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(ISKAARA_TUSKARR, {
-		n(ISKAARA_FISHING, {
+		n(ISKAARA_FISHING, bubbleDownSelf({ ["minReputation"] = { FACTION_ISKAARA_TUSKARR, 4 } }, {
 			n(ACHIEVEMENTS, {
 				ach(16531),	-- A Whole Heap of Lunkers
 				ach(16322, {	-- Best in Slot
@@ -13,7 +22,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					crit(2, {	-- Harpoon head
 						["_quests"] = { 70797 },	-- Jagged Serevite Harpoon Head
 					}),
-					crit(3, {	-- harpoon rope
+					crit(3, {	-- Harpoon rope
 						["_quests"] = { 70799 },	-- Braided Seavine Harpoon Rope
 					}),
 					crit(4, {	-- Fishing net weights
@@ -23,7 +32,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						["_quests"] = { 70803 },	-- Double Imbu Knot
 					}),
 				}),
-				ach(16321),	-- Cutting Tusk Equipment
+				ach(16321, {	-- Cutting Tusk Equipment
+					crit(1, {	-- Iskaaran Harpoon
+						["_quests"] = { 70792 },	-- Iskaaran Harpoon
+					}),
+					crit(2, {	-- Iskaaran Fishing Net
+						["_quests"] = { 70793 },	-- Iskaaran Fishing Net
+					}),
+				}),
 				ach(16550),	-- Giving Back to Nature
 				ach(16552),	-- Giving Even More Back to Nature
 				ach(16551),	-- Giving More Back to Nature
@@ -40,87 +56,85 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				ach(16546),	-- What's Down There?
 			}),
 			n(QUESTS, {
-					-- RENOWN 4 --
+				------ RENOWN 4 ------
 				q(70941, {	-- Fishing Holes
-					["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4
 					["description"] = "Spawns Anywhere on Dragon Isles.",
 					["provider"] = { "n", 197631 },	-- Rowie
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
-					-- RENOWN 5 --
+				------ RENOWN 5 ------
 				q(71230, {	-- Tuskarr Fishing Gear
-					["minReputation"] = { 2511, 5 },	-- Iskaara Tuskarr Renown 5
+					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 5 },
 					["description"] = "Spawns Anywhere on Dragon Isles.",
 					["provider"] = { "n", 197631 },	-- Rowie
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
 				q(70871, {	-- Iskaaran Fishing Net
-					["minReputation"] = { 2511, 5 },	-- Iskaara Tuskarr Renown 5
+					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 5 },
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 					["g"] = {
 						i(199925),	-- Stone With Hole
 						i(199924),	-- Strong Sea Kelp
-						crit(2, {	-- Iskaaran Fishing Net
-							["achievementID"] = 16321,	-- Cutting Tusk Equipment
-						}),
 					},
 				}),
 				q(72584, {	-- Setting Your Very Own Net
-					["minReputation"] = { 2511, 5 },	-- Iskaara Tuskarr Renown 5
+					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 5 },
 					["sourceQuests"] = { 70871 },	-- Iskaaran Fishing Net
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
-					-- RENOWN 6 --
+				------ RENOWN 6 ------
 				q(70942, {	-- Highland Fishing
-					["minReputation"] = { 2511, 6 },	-- Iskaara Tuskarr Renown 6
+					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 6 },
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
-					-- RENOWN 7 --
+				------ RENOWN 7 ------
 				q(70943, {	-- Harpooning
-					["minReputation"] = { 2511, 7 },	-- Iskaara Tuskarr Renown 7
+					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 7 },
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
-					-- RENOWN 10 --
+				------ RENOWN 10 ------
 				q(70944, {	-- Ice Fishing
-					["minReputation"] = { 2511, 10 },	-- Iskaara Tuskarr Renown 10
+					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 10 },
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
-					-- RENOWN 13 --
+				------ RENOWN 13 ------
 				q(70945, {	-- Netting More
-					["minReputation"] = { 2511, 13 },	-- Iskaara Tuskarr Renown 13
+					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 13 },
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
-					-- RENOWN 15 --
+				------ RENOWN 15 ------
 				q(70948, {	-- Hook, Line, and Swelter!
-					["minReputation"] = { 2511, 15 },	-- Iskaara Tuskarr Renown 15
+					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 15 },
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
-					-- RENOWN 18 --
+				------ RENOWN 18 ------
 				q(70950, {	-- Fishy Entertainment
-					["minReputation"] = { 2511, 18 },	-- Iskaara Tuskarr Renown 18
+					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 18 },
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
-					-- RENOWN 27 --
+				------ RENOWN 27 ------
 				q(70952, {	-- Abandoned... or Hidden Caches
-					["minReputation"] = { 2511, 27 },	-- Iskaara Tuskarr Renown 27
+					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 27 },
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				}),
-					-- Dailies --
+			}),
+			n(QUESTS, sharedData({
+				["minReputation"] = { FACTION_ISKAARA_TUSKARR, 4 },
+				["isDaily"] = true,
+			}, {
 					-- The Waking Shores --
 				q(70438, {	-- Flying Fish
 					["provider"] = { "n", 195338 },	-- Fisherman Pasqaa
 					["coord"] = { 63.7, 76.5, THE_WAKING_SHORES },
-					["isDaily"] = true,
-					["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4
 					["g"] = {
 						i(198855),	-- Throw Net
 					},
@@ -128,20 +142,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(70450, {	-- Otter Devastation
 					["provider"] = { "n", 195444 },	-- Brix Rocketcast
 					["coord"] = { 63.6, 75, THE_WAKING_SHORES },
-					["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4
-					["isDaily"] = true,
 				}),
 				q(71194, {	-- Frogs of Fire
 					["provider"] = { "n", 198767 },	-- Explorative Fisher
 					["coord"] = { 34.5, 65.2, THE_WAKING_SHORES },
-					["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4
-					["isDaily"] = true,
 				}),
 				q(72075, {	-- Hot Stock
 					["provider"] = { "n", 198767 },	-- Explorative Fisher
 					["coord"] = { 34.5, 65.2, THE_WAKING_SHORES },
-					["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4
-					["isDaily"] = true,
 					["g"] = {
 						i(198855),	-- Throw Net
 					},
@@ -150,8 +158,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(72072, {	-- Dragonsprings Drop
 					["provider"] = { "n", 198766 },	-- Thrifty Fisher
 					["coord"] = { 80.8, 78.4, OHNAHRAN_PLAINS },
-					["isDaily"] = true,
-					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
 					["g"] = {
 						i(198855),	-- Throw Net
 					},
@@ -159,127 +165,82 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(71192, {	-- Predator Control
 					["provider"] = { "n", 198766 },	-- Thrifty Fisher
 					["coord"] = { 80.8, 78.4, OHNAHRAN_PLAINS },
-					["isDaily"] = true,
-					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
 				}),
 					-- The Azure Span --
 				q(71191, {	-- Net Worth
 					["provider"] = { "n", 197700 },	-- Gruff Fisher
 					["coord"] = { 58.6, 34.4, OHNAHRAN_PLAINS },
-					["isDaily"] = true,
-					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
 				}),
 				q(72069, {	-- Subglacial Refill
 					["provider"] = { "n", 197700 },	-- Gruff Fisher
 					["coord"] = { 58.6, 34.4, OHNAHRAN_PLAINS },
-					["isDaily"] = true,
-					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
 				}),
 					-- Thaldraszus
 				q(71193, {	-- Underwater Menace
 					["provider"] = { "n", 197597 },	-- Cautious Fisher
 					["coord"] = { 57.2, 65.3, THALDRASZUS },
-					["isDaily"] = true,
-					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
 				}),
 				q(72074, {	-- Highland Habitat
 					["provider"] = { "n", 197597 },	-- Cautious Fisher
 					["coord"] = { 57.2, 65.3, THALDRASZUS },
-					["isDaily"] = true,
-					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
 				}),
 					-- Forbidden Reach
 				q(73226, {	-- Dragonskull Shoal
 					["provider"] = { "n", 200947 },	-- Reclusive Fisher
 					["coord"] = { 74.1, 40.5, THE_FORBIDDEN_REACH },
-					["isDaily"] = true,
-					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
 					["g"] = {
 						i(198855),	-- Throw Net
 					},
 				}),
-					-- Repeatables --
-				q(70201, {	-- Catch and Release: Aileron Seamoth
-					["provider"] = { "n", 194584 },	-- Khuri
-					["coord"] = { 63.3, 75.8, THE_WAKING_SHORES },
-					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
-					["isRepeatable"] = true,
-				}),
-				q(70202, {	-- Catch and Release: Cerulean Spinefish
-					["provider"] = { "n", 194584 },	-- Khuri
-					["coord"] = { 63.3, 75.8, THE_WAKING_SHORES },
-					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
-					["isRepeatable"] = true,
-				}),
-				q(70935, {	-- Catch and Release: Islefin Dorado
-					["provider"] = { "n", 194584 },	-- Khuri
-					["coord"] = { 63.3, 75.8, THE_WAKING_SHORES },
-					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
-					["isRepeatable"] = true,
-				}),
-				q(70199, {	-- Catch and Release: Scalebelly Mackerel
-					["provider"] = { "n", 194584 },	-- Khuri
-					["coord"] = { 63.3, 75.8, THE_WAKING_SHORES },
-					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
-					["isRepeatable"] = true,
-				}),
-				q(70203, {	-- Catch and Release: Temporal Dragonhead
-					["provider"] = { "n", 194584 },	-- Khuri
-					["coord"] = { 63.3, 75.8, THE_WAKING_SHORES },
-					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
-					["isRepeatable"] = true,
-				}),
-				q(70200, {	-- Catch and Release: Thousandbite Piranha
-					["provider"] = { "n", 194584 },	-- Khuri
-					["coord"] = { 63.3, 75.8, THE_WAKING_SHORES },
-					--["minReputation"] = { 2511, 4 },	-- Iskaara Tuskarr Renown 4	-- TODO: CONFIRM
-					["isRepeatable"] = true,
-				}),
-					-- Fishing Gear Repeatables --
-				q(72787, {	-- Contribute Supplies: Battered Imbu-made Net
-					["provider"] = { "n", 195935 },	-- Tavio
-					["coord"] = { 12.8, 49.1, THE_AZURE_SPAN },
-					["minReputation"] = { 2511, 13 },	-- Iskaara Tuskarr Renown 13
-					["isRepeatable"] = true,
-				}),
-				q(72789, {	-- Contribue Supplies: Salinated Serevite
-					["provider"] = { "n", 195935 },	-- Tavio
-					["coord"] = { 12.8, 49.1, THE_AZURE_SPAN },
-					["minReputation"] = { 2511, 13 },	-- Iskaara Tuskarr Renown 13
-					["isRepeatable"] = true,
-				}),
-				q(72790, {	-- Contribute Supplies: Khaz'gorite-infused Resin
-					["provider"] = { "n", 195935 },	-- Tavio
-					["coord"] = { 12.8, 49.1, THE_AZURE_SPAN },
-					["minReputation"] = { 2511, 13 },	-- Iskaara Tuskarr Renown 13
-					["isRepeatable"] = true,
-				}),
-				q(72786, {	-- Contribue Supplies: Strong Seavine
-					["provider"] = { "n", 195935 },	-- Tavio
-					["coord"] = { 12.8, 49.1, THE_AZURE_SPAN },
-					["minReputation"] = { 2511, 13 },	-- Iskaara Tuskarr Renown 13
-					["isRepeatable"] = true,
-				}),
-				q(72788, {	-- Contribue Supplies: Irontree Branch
-					["provider"] = { "n", 195935 },	-- Tavio
-					["coord"] = { 12.8, 49.1, THE_AZURE_SPAN },
-					["minReputation"] = { 2511, 13 },	-- Iskaara Tuskarr Renown 13
-					["isRepeatable"] = true,
-				}),
-				q(72791, {	-- Contribute Supplies: Khaz'gorite Wire
-					["provider"] = { "n", 195935 },	-- Tavio
-					["coord"] = { 12.8, 49.1, THE_AZURE_SPAN },
-					["minReputation"] = { 2511, 13 },	-- Iskaara Tuskarr Renown 13
-					["isRepeatable"] = true,
-				}),
-			}),
+			})),
+			n(QUESTS, sharedData({
+				["minReputation"] = { FACTION_ISKAARA_TUSKARR, 4 },
+				["providers"] = {
+					{ "n", 197645 },	-- Daring Fisher
+					{ "n", 194584 },	-- Khuri
+					{ "n", 196840 },	-- Young Quickhands
+				},
+				["coords"] = {
+					{ 63.3, 75.8, THE_WAKING_SHORES },
+					{ 81.6, 78.4, OHNAHRAN_PLAINS },
+					{ 58.8, 34.8, THE_AZURE_SPAN },
+					{ 56.8, 64.8, THALDRASZUS },
+					{ 74.2, 41.4, THE_FORBIDDEN_REACH },
+				},
+				["isRepeatable"] = true,
+				["sym"] = {{"select","achievementID",
+					16550,	-- Giving Back to Nature
+					16552,	-- Giving Even More Back to Nature
+					16551,	-- Giving More Back to Nature
+				}},
+			}, {
+				q(70201),	-- Catch and Release: Aileron Seamoth
+				q(70202),	-- Catch and Release: Cerulean Spinefish
+				q(70935),	-- Catch and Release: Islefin Dorado
+				q(70199),	-- Catch and Release: Scalebelly Mackerel
+				q(70203),	-- Catch and Release: Temporal Dragonhead
+				q(70200),	-- Catch and Release: Thousandbite Piranha
+			})),
+			n(QUESTS, sharedData({
+				["minReputation"] = { FACTION_ISKAARA_TUSKARR, 13 },
+				["provider"] = { "n", 195935 },	-- Tavio
+				["coord"] = { 12.8, 49.1, THE_AZURE_SPAN },
+				["isRepeatable"] = true,
+			}, {
+				q(72787),	-- Contribute Supplies: Battered Imbu-made Net
+				q(72789),	-- Contribue Supplies: Salinated Serevite
+				q(72790),	-- Contribute Supplies: Khaz'gorite-infused Resin
+				q(72786),	-- Contribue Supplies: Strong Seavine
+				q(72788),	-- Contribue Supplies: Irontree Branch
+				q(72791),	-- Contribute Supplies: Khaz'gorite Wire
+			})),
 			prof(TUSKARR_FISHING_GEAR, sharedData({
 				["requireSkill"] = FISHING,	-- Minimum 25, but it shows in the tooltip
 			},{
 				["crs"] = { 195935 },
 				["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 				["g"] = {
-					filter(RECIPES, {
+					filter(RECIPES, sharedData({ ["u"] = TRAINING }, {
 						r(388251),	-- Braided Seavine Harpoon Rope
 						r(388253),	-- Dense Draconium Net Weights
 						r(388255),	-- Double Imbu Knot
@@ -295,106 +256,121 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						r(387594),	-- Reinforced Irontree Harpoon Handle
 						r(388250),	-- Seavine Harpoon Rope
 						r(387375),	-- Serevite Harpoon Head
+					})),
+					-- These "Recipes" show as learned, but when you have learned them, they dissapear causing ATT to think you no longer have them learned.
+
+					i(199847, {	-- Braided Seavine Harpoon Rope
+						["spellID"] = 388251,	-- Braided Seavine Harpoon Rope
+						["questID"] = 70799,	-- Triggered after crafting 'Braided Seavine Harpoon Rope'
+						["cost"] = {
+							{ "i", 200081, 6 },	-- 6x Strong Seavine
+							{ "i", 200086, 1 },	-- 1x Khaz'gorite-infused Resin
+						},
 					}),
-					n(CRAFTABLES, {
-						i(199847, {	-- Braided Seavine Harpoon Rope
-							["questID"] = 70799,	-- Triggered after crafting 'Braided Seavine Harpoon Rope'
-							["cost"] = {
-								{ "i", 200081, 6 },	-- 6x Strong Seavine
-								{ "i", 200086, 1 },	-- 1x Khaz'gorite-infused Resin
-							},
-						}),
-						i(199849, {	-- Dense Draconium Net Weight
-							["questID"] = 70801,	-- Triggered after crafting 'Dense Draconium Net Weights'
-							["cost"] = {
-								{ "i", 200080, 6 },	-- 6x Draconium Nugget
-								{ "i", 200085, 1 },	-- 1x Khaz'gorite Wire
-							},
-						}),
-						i(199851, {	-- Double Imbu Knot
-							["questID"] = 70803,	-- Triggered after crafting 'Double Imbu Knot'
-							["cost"] = {
-								{ "i", 200082, 6 },	-- 6x Battered Imbu-made Net
-								{ "i", 200085, 1 },	-- 1x Khaz'gorite Wire
-							},
-						}),
-						i(199848, {	-- Draconium Net Weights
-							["questID"] = 70800,	-- Triggered after crafting 'Draconium Net Weights'
-							["cost"] = {
-								{ "i", 200080, 3 },	-- 3x Draconium Nugget
-							},
-						}),
-						i(199694, {	-- Flying Fish Bone Charm
-							["questID"] = 67139,	-- Triggered after crafting 'Flying Fish Bone Charm'
-							["cost"] = {
-								{ "i", 200075, 1 },	-- 1x Flying Fish Bones
-							},
-						}),
-						i(199850, {	-- Imbu Knot
-							["questID"] = 70802,	-- Triggered after crafting 'Imbu Knot'
-							["cost"] = {
-								{ "i", 200082, 3 },	-- 3x Battered Imbu-made Net
-							},
-						}),
-						i(199698, {	-- Irontree Harpoon Handle
-							["questID"] = 70794,	-- Triggered after crafting 'Irontree Harpoon Handle'
-							["cost"] = {
-								{ "i", 200083, 3 },	-- 3x Irontree Branch
-							},
-						}),
-						i(199695, {	-- Iskaaran Fishing Net
-							["questID"] = 70793,	-- Triggered after crafting 'Iskaaran Fishing Net'
-							["cost"] = {
-								{ "i", 199925, 2 },	-- 2x Stone With Hole
-								{ "i", 199924, 3 },	-- 3x Strong Sea Kelp
-							},
-						}),
-						i(194510, {	-- Iskaaran Harpoon
-							["questID"] = 70792,	-- Triggered after crafting 'Iskaaran Harpoon'
-							["cost"] = {
-								{ "i", 200076, 1 },	-- 1x Harpoon Head
-								{ "i", 198070, 1 },	-- 1x Tattered Seavine
-								{ "i", 200077, 1 },	-- 1x Wooden Pole
-							},
-						}),
-						i(199696, {	-- Iskaaran Ice Axe
-							["questID"] = 67141,	-- Triggered after crafting 'Iskaaran Ice Axe'
-							["cost"] = {
-								{ "i", 200078, 1 },	-- 1x Pickaxe Blade
-							},
-						}),
-						i(199845, {	-- Jagged Serevite Harpoon Head
-							["questID"] = 70797,	-- Triggered after crafting 'Jagged Serevite Harpoon Head'
-							["cost"] = {
-								{ "i", 200084, 6 },	-- 6x Salinated Serevite
-								{ "i", 200086, 1 },	-- 1x Khaz'gorite-infused Resin
-							},
-						}),
-						i(199697, {	-- Polished Basalt Bracelet
-							["questID"] = 67140,	-- Triggered after crafting 'Polished Basalt Bracelet'
-							["cost"] = {
-								{ "i", 200079, 3 },	-- 3x Sea-Polished Basalt
-							},
-						}),
-						i(199641, {	-- Reinforced Irontree Harpoon Handle
-							["questID"] = 70795,	-- Triggered after crafting 'Reinforced Irontree Harpoon Handle'
-							["cost"] = {
-								{ "i", 200083, 6 },	-- 6x Irontree Branch
-								{ "i", 200086, 1 },	-- 1x Khaz'gorite-infused Resin
-							},
-						}),
-						i(199846, {	-- Seavine Harpoon Rope
-							["questID"] = 70798,	-- Triggered after crafting 'Seavine Harpoon Rope'
-							["cost"] = {
-								{ "i", 200081, 3 },	-- 3x Strong Seavine
-							},
-						}),
-						i(199844, {	-- Serevite Harpoon Head
-							["questID"] = 70796,	-- Triggered after crafting 'Serevite Harpoon Head'
-							["cost"] = {
-								{ "i", 200084, 3 },	-- 3x Salinated Serevite
-							},
-						}),
+					i(199849, {	-- Dense Draconium Net Weight
+						["spellID"] = 388253,	-- Dense Draconium Net Weights
+						["questID"] = 70801,	-- Triggered after crafting 'Dense Draconium Net Weights'
+						["cost"] = {
+							{ "i", 200080, 6 },	-- 6x Draconium Nugget
+							{ "i", 200085, 1 },	-- 1x Khaz'gorite Wire
+						},
+					}),
+					i(199851, {	-- Double Imbu Knot
+						["spellID"] = 388255,	-- Double Imbu Knot
+						["questID"] = 70803,	-- Triggered after crafting 'Double Imbu Knot'
+						["cost"] = {
+							{ "i", 200082, 6 },	-- 6x Battered Imbu-made Net
+							{ "i", 200085, 1 },	-- 1x Khaz'gorite Wire
+						},
+					}),
+					i(199848, {	-- Draconium Net Weights
+						["spellID"] = 388252,	-- Draconium Net Weights
+						["questID"] = 70800,	-- Triggered after crafting 'Draconium Net Weights'
+						["cost"] = {
+							{ "i", 200080, 3 },	-- 3x Draconium Nugget
+						},
+					}),
+					i(199694, {	-- Flying Fish Bone Charm
+						["spellID"] = 387827,	-- Flying Fish Bone Charm
+						["questID"] = 67139,	-- Triggered after crafting 'Flying Fish Bone Charm'
+						["cost"] = {
+							{ "i", 200075, 1 },	-- 1x Flying Fish Bones
+						},
+					}),
+					i(199850, {	-- Imbu Knot
+						["spellID"] = 388254,	-- Imbu Knot
+						["questID"] = 70802,	-- Triggered after crafting 'Imbu Knot'
+						["cost"] = {
+							{ "i", 200082, 3 },	-- 3x Battered Imbu-made Net
+						},
+					}),
+					i(199698, {	-- Irontree Harpoon Handle
+						["spellID"] = 387836,	-- Irontree Harpoon Handle
+						["questID"] = 70794,	-- Triggered after crafting 'Irontree Harpoon Handle'
+						["cost"] = {
+							{ "i", 200083, 3 },	-- 3x Irontree Branch
+						},
+					}),
+					i(199695, {	-- Iskaaran Fishing Net
+						["spellID"] = 387828,	-- Iskaaran Fishing Net
+						["questID"] = 70793,	-- Triggered after crafting 'Iskaaran Fishing Net'
+						["cost"] = {
+							{ "i", 199925, 2 },	-- 2x Stone With Hole
+							{ "i", 199924, 3 },	-- 3x Strong Sea Kelp
+						},
+					}),
+					i(194510, {	-- Iskaaran Harpoon
+						["spellID"] = 387831,	-- Iskaaran Harpoon
+						["questID"] = 70792,	-- Triggered after crafting 'Iskaaran Harpoon'
+						["cost"] = {
+							{ "i", 200076, 1 },	-- 1x Harpoon Head
+							{ "i", 198070, 1 },	-- 1x Tattered Seavine
+							{ "i", 200077, 1 },	-- 1x Wooden Pole
+						},
+					}),
+					i(199696, {	-- Iskaaran Ice Axe
+						["spellID"] = 387832,	-- Iskaaran Ice Axe
+						["questID"] = 67141,	-- Triggered after crafting 'Iskaaran Ice Axe'
+						["cost"] = {
+							{ "i", 200078, 1 },	-- 1x Pickaxe Blade
+						},
+					}),
+					i(199845, {	-- Jagged Serevite Harpoon Head
+						["spellID"] = 388249,	-- Jagged Serevite Harpoon Head
+						["questID"] = 70797,	-- Triggered after crafting 'Jagged Serevite Harpoon Head'
+						["cost"] = {
+							{ "i", 200084, 6 },	-- 6x Salinated Serevite
+							{ "i", 200086, 1 },	-- 1x Khaz'gorite-infused Resin
+						},
+					}),
+					i(199697, {	-- Polished Basalt Bracelet
+						["spellID"] = 387833,	-- Polished Basalt Bracelet
+						["questID"] = 67140,	-- Triggered after crafting 'Polished Basalt Bracelet'
+						["cost"] = {
+							{ "i", 200079, 3 },	-- 3x Sea-Polished Basalt
+						},
+					}),
+					i(199641, {	-- Reinforced Irontree Harpoon Handle
+						["spellID"] = 387594,	-- Reinforced Irontree Harpoon Handle
+						["questID"] = 70795,	-- Triggered after crafting 'Reinforced Irontree Harpoon Handle'
+						["cost"] = {
+							{ "i", 200083, 6 },	-- 6x Irontree Branch
+							{ "i", 200086, 1 },	-- 1x Khaz'gorite-infused Resin
+						},
+					}),
+					i(199846, {	-- Seavine Harpoon Rope
+						["spellID"] = 388250,	-- Seavine Harpoon Rope
+						["questID"] = 70798,	-- Triggered after crafting 'Seavine Harpoon Rope'
+						["cost"] = {
+							{ "i", 200081, 3 },	-- 3x Strong Seavine
+						},
+					}),
+					i(199844, {	-- Serevite Harpoon Head
+						["spellID"] = 387375,	-- Serevite Harpoon Head
+						["questID"] = 70796,	-- Triggered after crafting 'Serevite Harpoon Head'
+						["cost"] = {
+							{ "i", 200084, 3 },	-- 3x Salinated Serevite
+						},
 					}),
 				},
 			})),
@@ -403,7 +379,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["cost"] = { { "i", 194701, 5 } },	-- 5x Ominous Conch
 				["isDaily"] = true,
 				["g"] = {
-					i(200086),	-- Khaz'gorite Infused Resin
+					i(200086),	-- Khaz'gorite-Infused Resin
 				},
 			},{
 				n(197411, {	-- Astray Splasher <Lunker>
@@ -433,7 +409,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 33.8, 64.4, THE_WAKING_SHORES },
 					["questID"] = 74078,
 					["g"] = {
-						i(200086),	-- Khaz'gorite Infused Resin
+						i(200086),	-- Khaz'gorite-Infused Resin
 						i(200218),	-- Charred Fishing Pole
 					},
 				}),
@@ -475,7 +451,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						{ "n", 197596 },	-- Deep Ice Fishing Hole
 					},
 				}),
-				i(200086, {	-- Khaz'gorite Infused Resin
+				i(200086, {	-- Khaz'gorite-Infused Resin
 					["description"] = "Obtained from Rares summoned by using Ominous Conch at Large Lunker Sightings.",
 					["providers"] = {
 						{ "n", 193706 },	-- Snufflegust
@@ -565,7 +541,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					i(199339),	-- Silver Coin of the Isles
 				},
 			}),
-		})
+		})),
 	}),
 })));
 

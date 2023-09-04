@@ -5,9 +5,9 @@ struct = function(field, id, t)
 		print("ERROR: Don't use 'g' or 'groups' with an array of objects! Fix Group: "..field..":"..id);
 		return;
 	elseif not t.groups and t[1] then
-		t = { ["groups"] = bubbleUp(t) };
+		t = { ["groups"] = validateGroups(t) };
 	elseif t.groups then
-		t.groups = bubbleUp(t.groups);
+		validateGroups(t.groups);
 	end
 	if not id then
 		print("Missing ID for",field,"group");
@@ -197,37 +197,14 @@ bubbleDownSelf = function(data, t)
 	-- then apply regular bubbleDown on the group
 	return bubbleDown(data, t);
 end
-bubbleUp = function(t)
+-- Validates and returns 't' (expected 'groups' content) ensuring that contained content is in the expected formats
+validateGroups = function(t)
 	if t then
-		local t2 = {};
-		for i, group in pairs(t) do
-			table.insert(t2, group);
-		end
-		for i=#t,1,-1 do
-			table.remove(t, i);
-		end
-		for i, group in pairs(t2) do
+		for i,group in pairs(t) do
 			if type(i) ~= "number" then
-				print("You're trying to use '" .. i .. "' in a 'groups' field. (can't do that!)");
+				error("You're trying to use '" .. i .. "' in a 'groups' field. (can't do that!)");
 			elseif type(group) ~= "table" then
-				print("You're trying to use '" .. group .. "' in a 'groups' field. (can't do that!)");
-			else
-				if group.bubble then
-					-- this isn't just a normal group object, merge up the contents.
-					if group.groups or group.g then
-						for j,subgroup in pairs(group.groups or group.g) do
-							if type(j) ~= "number" then
-								print("You're trying to use '" .. j .. "' in a 'groups' field. (can't do that!)");
-							elseif type(subgroup) ~= "table" then
-								print("You're trying to use '" .. subgroup .. "' in a 'groups' field. (can't do that!)");
-							else
-								table.insert(t, subgroup);
-							end
-						end
-					end
-				else
-					table.insert(t, group);
-				end
+				error("You're trying to use '" .. group .. "' in a 'groups' field. (can't do that!)");
 			end
 		end
 		return t;
@@ -288,10 +265,20 @@ merge = function(...)
 	end
 	return t;
 end
-repVendor = function(rep, group)
+bubbleDownRepSkip = function(rep, group)
 	local t = {};
 	for i,groups in ipairs(group) do
 		groups = bubbleDown({["minReputation"] = {rep, i+3}}, groups)
+		for j,o in ipairs(groups) do
+			table.insert(t, o);
+		end
+	end
+	return t;
+end
+bubbleDownRep = function(rep, group)
+	local t = {};
+	for i,groups in ipairs(group) do
+		groups = bubbleDown({["minReputation"] = {rep, i}}, groups)
 		for j,o in ipairs(groups) do
 			table.insert(t, o);
 		end
@@ -322,29 +309,30 @@ unpack = function(t, i)
 end
 
 -- Helper Functions
-applyholiday = function(holiday, data)
-	return bubbleDown({ ["u"] = holiday }, data);
+asset = function(path)
+	print("ASSET: " .. path);
+	error("The asset function has been deprecated");
+end
+icon = function(path)
+	print("ICON: " .. path);
+	error("The icon function has been deprecated");
+end
+applyevent = function(eventID, data)
+	if not eventID then
+		print("INVALID EVENT ID PASSED TO APPLYHOLIDAY");
+		print(CurrentSubFileName or CurrentFileName);
+	end
+	return bubbleDown({ ["e"] = eventID }, data);
 end
 -- #if ANYCLASSIC
--- Classic Only
-asset = function(path)
-	return "Interface\\Addons\\ATT-Classic\\assets\\" .. path;
-end
 applyclassicphase = function(phase, data, force)
 	return (force and bubbleDownAndReplace or bubbleDown)({ ["u"] = phase }, data);
 end
 -- #else
--- Retail Only
-asset = function(path)
-	return "Interface\\Addons\\AllTheThings\\assets\\" .. path;
-end
 applyclassicphase = function(phase, data, force)
 	return data;
 end
 -- #endif
-icon = function(path)
-	return "Interface\\Icons\\" .. path;
-end
 
 local squishes = {};
 lvlsquish = function(originalLvl, cataLvl, shadowlandsLvl)
@@ -392,6 +380,14 @@ chefsaward = function(cost, item)						-- Assign a Chef's Award or Epicurean's A
 end
 daljewelcraftingtoken = function(cost, item)			-- Assign a Dalaran Jewelcrafter's Token cost to an item.
 	applycost(item, { "c", 61, cost });
+	return item;
+end
+darkmoondaggermaw = function(cost, item)				-- Assign a Darkmoon Daggermaw cost to an item.
+	applycost(item, { "i", 124669, cost });	-- Darkmoon Daggermaw
+	return item;
+end
+darkmoonprizeticket = function(cost, item)				-- Assign a Darkmoon Prize Ticket cost to an item.
+	applycost(item, { "c", 515, cost });	-- Darkmoon Prize Ticket
 	return item;
 end
 emoc = function(cost, item)								-- Assign a Emblem of Conquest cost to an item with proper timeline & phase requirements.
@@ -454,6 +450,12 @@ moh = function(cost, item)								-- Assign a Mark of Honor cost to an item with
 	-- #endif
 	return item;
 end
+siderealessence = function(cost, item)					-- Assign a Sidereal Essence (Defense Protocol Beta - Wrath Classic) cost to an item with proper timeline requirements.
+	-- #if ANYCLASSIC
+	applycost(item, { "c", SIDEREAL_ESSENCE, cost });
+	-- #endif
+	return item;
+end
 vicioussaddle = function(item)							-- Assign a Vicious Saddle cost to an item with proper timeline requirements.
 	-- #if AFTER 5.4.0.17153
 	applycost(item, { "i", 103533, 1 });	-- Vicious Saddle
@@ -471,7 +473,7 @@ writ = function(item)									-- Assign a Champion's Writ cost to an item with p
 	return applyclassicphase(WRATH_PHASE_TWO, item);
 end
 
--- SHORTCUTS for Object Class Types
+-- Achievement Shortcuts
 ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
 	if t or type(altID) == "number" then
 		t = struct("allianceAchievementID", id, t or {});
@@ -479,21 +481,102 @@ ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
 	else
 		t = struct("achievementID", id, altID);
 	end
-	-- #if ANYCLASSIC
-	if not t.timeline then bubbleDown({ ["timeline"] = { "added 3.0.1" } }, t); end
+
+	-- #if BEFORE WRATH
+	-- These are helper variables (capitalized for a reason)
+	local AllProvidersRequiredForAchievement = t.AllProvidersRequiredForAchievement;
+	t.AllProvidersRequiredForAchievement = nil;
+	local AllSourceQuestsRequiredForAchievement = t.AllSourceQuestsRequiredForAchievement;
+	t.AllSourceQuestsRequiredForAchievement = nil;
+	if not t.OnUpdate then
+		if t.providers then
+			-- A lot of achievements are proc'd by having an item, quests with providers on them pretty much guarantee it works.
+			t.OnUpdate = AllProvidersRequiredForAchievement and [[_.CommonAchievementHandlers.ALL_ITEM_PROVIDERS]] or [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]];
+		elseif t.sourceQuests then
+			-- For Classic, we can detect if you've completed an achievement if there's a quest that involves killing the mob in question.
+			t.OnUpdate = AllSourceQuestsRequiredForAchievement and [[_.CommonAchievementHandlers.ALL_SOURCE_QUESTS]] or [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]];
+		end
+	end
 	-- #endif
 	return t;
 end
-achcat = function(id, t)								-- Create an ACHIEVEMENT CATEGORY Object
-	return struct("achievementCategoryID", id, t);
+achWithRep = function(id, factionID, t)					-- Create an ACHIEVEMENT Object with getting Exalted with a Faction as a requirement.
+	t = ach(id, t);
+	-- #if ANYCLASSIC
+	-- CRIEVE NOTE: This function is temporary until I get the handlers cleared out of the main files.
+	t.OnInit = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnInit(t, ]] .. factionID ..[[); end]];
+	-- #if BEFORE 4.1.0
+	if not t.OnUpdate then
+		-- #if AFTER 3.0.1
+		if id == 5788 then	-- Agent of Shen'dralar still needs this until after 4.1.0
+		-- #endif
+			t.OnUpdate = [[_.CommonAchievementHandlers.EXALTED_REP_OnUpdate]];
+		-- #if AFTER 3.0.1
+		end
+		-- #endif
+	end
+	t.OnClick = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]];
+	t.OnTooltip = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]];
+	-- #endif
+	-- #endif
+	return t;
 end
-achraw = function(id, altID, t)							-- Create an ACHIEVEMENT Object whose Criteria will not be adjusted by the Parser
+achWithReps = function(id, factions, t)					-- Create an ACHIEVEMENT Object with getting Exalted with seveneral Factions as a requirement.
+	t = ach(id, t);
+	-- #if ANYCLASSIC
+	-- CRIEVE NOTE: This function is temporary until I get the handlers cleared out of the main files.
+	local init = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnInit(t, ]] .. factions[1];
+	for i=2,#factions,1 do init = init .. "," .. factions[i]; end
+	t.OnInit = init ..[[); end]];
+	-- #if BEFORE 3.0.1
+	if not t.OnUpdate then
+		t.OnUpdate = [[_.CommonAchievementHandlers.EXALTED_REPS_OnUpdate]];
+	end
+	-- #endif
+	t.OnClick = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]];
+	t.OnTooltip = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]];
+	-- #endif
+	return t;
+end
+achWithAnyReps = function(id, factions, t)				-- Create an ACHIEVEMENT Object with getting Exalted with seveneral Factions as a requirement.
+	t = ach(id, t);
+	-- #if ANYCLASSIC
+	-- CRIEVE NOTE: This function is temporary until I get the handlers cleared out of the main files.
+	local init = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnInit(t, ]] .. factions[1];
+	for i=2,#factions,1 do init = init .. "," .. factions[i]; end
+	t.OnInit = init ..[[); end]];
+	-- #if BEFORE 3.0.1
+	if not t.OnUpdate then
+		t.OnUpdate = [[_.CommonAchievementHandlers.EXALTED_REPS_ANY_OnUpdate]];
+	end
+	-- #endif
+	t.OnClick = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]];
+	t.OnTooltip = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]];
+	-- #endif
+	return t;
+end
+achraw = function(id, altID, t)							-- Create an ACHIEVEMENT Object whose Criteria will not be adjusted by AchievementDB info
 	t = ach(id, altID, t);
 	-- TODO: hopefully we can define a better way for these Criteria to exist such that the Criteria can be moved as expected again
 	-- they were being moved under HQT defined in _quests via AchievementDB from Blizzard
 	-- but for now prevent the Criteria from disappearing into the Unsorted window
 	bubbleDown({ _noautomation = true }, t);
 	return t;
+end
+explorationAch = function(id, t)						-- Create an EXPLORATION ACHIEVEMENT Object
+	t = struct("achievementID", id, t or {});
+	-- #if ANYCLASSIC
+	t.OnClick = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]];
+	t.OnUpdate = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]];
+	-- #else
+	t.sym = {{ "achievement_criteria" }};
+	-- #endif
+	return t;
+end
+
+-- SHORTCUTS for Object Class Types
+achcat = function(id, t)								-- Create an ACHIEVEMENT CATEGORY Object
+	return struct("achievementCategoryID", id, t);
 end
 achievementCategory = achcat;
 artifact = function(id, t)								-- Create an ARTIFACT Object
@@ -516,22 +599,13 @@ azeriteItem = function(id, t)							-- Create an Item which is marked as having 
 end
 azewrongItem = function(id, t)							-- Create an Item which is marked as having not obtained the Heart of Azeroth
 	t = i(id, t);
-	t.customCollect = { "~HOA" };
+	t.customCollect = { "!HOA" };
 	return t;
 end
 battlepet = function(id, t)								-- Create a BATTLE PET Object (Battle Pet == Species == Pet)
 	t = struct("speciesID", id, t);
 	if not t.itemID then t.u = MOP_PHASE_ONE; end
 	return t;
-end
-classicAch = function(id, altID, t)						-- Create an ACHIEVEMENT Object that doesn't have a timeline built into it.
-	if t or type(altID) == "number" then
-		t = struct("allianceAchievementID", id, t or {});
-		t["hordeAchievementID"] = altID;
-		return t;
-	else
-		return struct("achievementID", id, altID);
-	end
 end
 pet = battlepet;										-- Create a BATTLE PET Object (alternative shortcut)
 p = battlepet;											-- Create a BATTLE PET Object (alternative shortcut)
@@ -604,11 +678,17 @@ currency = function(id, t)								-- Create a CURRENCY Object
 	return struct("currencyID", id, t);
 end
 d = function(id, t)										-- Create a DIFFICULTY Object
-	t = struct("difficultyID", id, t);
-	-- #if AFTER MOP
-	local db = DifficultyDB[id];
-	if db then t.modID = db.modID; end
-	-- #endif
+	-- Multiple Difficulties
+	if type(id) == "table" then
+		t = struct("difficultyID", MultiDifficultyID(id), t);
+		t.difficulties = id;
+	else
+		t = struct("difficultyID", id, t);
+		-- #if AFTER MOP
+		local db = DifficultyDB[id];
+		if db then t.modID = db.modID; end
+		-- #endif
+	end
 	return t;
 end
 -- #if AFTER WRATH
@@ -654,16 +734,6 @@ end
 exploration = function(id, t)							-- Create an EXPLORATION Object
 	if type(t) == "string" then t = { ["maphash"] = t }; end
 	return struct("explorationID", id, t);
-end
-explorationAch = function(id, t)						-- Create an EXPLORATION ACHIEVEMENT Object
-	t = struct("achievementID", id, t or {});
-	-- #if ANYCLASSIC
-	t.OnClick = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]];
-	t.OnUpdate = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]];
-	-- #else
-	t.sym = {{ "achievement_criteria" }};
-	-- #endif
-	return t;
 end
 explorationBatch = function(data)
 	local groups = {};
@@ -719,10 +789,6 @@ end
 heir = function(id, t)									-- Create an HEIRLOOM Object(NOTE: You should only use this if not an appearance)
 	return struct("itemID", id, t);
 end
-holiday = function(id, t)								-- Create an HOLIDAY Object
-	return struct("holidayID", id, t);
-end
-ho = holiday;											-- Create an HOLIDAY Object (alternative shortcut)
 hqt = function(id, t)									-- Create a HQT (Hidden Quest Tracker) Object
 	-- currently this is simply a 'Quest' but will soon be an actual new Type to track
 	return q(id, t);
@@ -742,6 +808,25 @@ ig = function(id, t)									-- Create an ITEM Object that ignores bonus IDs.
 	-- #endif
 	return t;
 end
+iupgrade = function(itemID, modID, bonusID, t)			-- Create an ITEM Object which can be Upgraded to another Item version (specified by ModID/BonusID)
+	if (modID or 0) == 0 and (bonusID or 0) == 0 then
+		error("Item Upgrade needs ModID or BonusID!");
+	end
+	local i = i(itemID, t);
+	-- use ModID/BonusID combination to represent the new Item available via Upgrading
+	i.up = (tonumber(modID) or 0) + ((tonumber(bonusID) or 0) / 10000);
+	return i;
+end
+iexact = function(itemID, modID, bonusID, t)			-- Create an exact ITEM Object (specified by ModID/BonusID)
+	local i = i(itemID, t);
+	if modID and modID ~= 0 then
+		i.modID = modID;
+	end
+	if bonusID and bonusID ~= 0 then
+		i.bonusID = bonusID;
+	end
+	return i;
+end
 inst = function(id, t)									-- Create an INSTANCE Object
 	if t then
 		t = struct("instanceID", id, t);
@@ -759,7 +844,7 @@ inst = function(id, t)									-- Create an INSTANCE Object
 						t.maps = nil;
 					end
 				else
-					error("Instance Missing a MapID.");
+					error("Instance Missing a MapID: " .. id);
 				end
 				return t;
 			end
@@ -771,27 +856,6 @@ inst = function(id, t)									-- Create an INSTANCE Object
 	else
 		return struct("instanceID", id, t);
 	end
-end
-inst_tw = function(id, t)								-- Create a TIMEWALKING INSTANCE Object
-	t = inst(id, t);
-	t.u = TIMEWALKING;
-	-- Look for the CreatureID's
-	local groups = t.groups or t.g;
-	if groups then
-		for _,data in ipairs(groups) do
-			if data.encounterID then
-				if data.creatureID and data.creatureID > 0 then
-					table.insert(TIMEWALKING_DUNGEON_CREATURE_IDS, data.creatureID);
-				end
-				if data.crs then
-					for _,creatureID in ipairs(data.crs) do
-						table.insert(TIMEWALKING_DUNGEON_CREATURE_IDS, creatureID);
-					end
-				end
-			end
-		end
-	end
-	return t;
 end
 map = function(id, t)									-- Create a MAP Object
 	return struct("mapID", id, t);
@@ -900,10 +964,6 @@ end
 r = recipe;												-- Create a RECIPE Object (alternative shortcut)
 root = function(category, g)							-- Create a ROOT CATEGORY Object
 	if not g then g = g or {}; end
-	-- Automatically apply data to specific categories
-	if category == ROOTS.NeverImplemented then
-		g = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, g);
-	end
 	local o = _[category];
 	if not o then
 		if isarray(g) then
@@ -985,12 +1045,29 @@ end
 dragonridingrace = function(id, t)						-- Creates a QUEST which is for a Dragonriding Race
 	t = q(id, t);
 	t.repeatable = true;
+	t.collectible = false;	-- quest literally cannot be completed
 	t.sourceQuestNumRequired = 1;
 	t.sourceQuests = {
 		68795,	-- Dragonriding
 		DF_ACCOUNT_CAMPAIGN_QUEST,
 	};
 	return t;
+end
+
+-- Outdoor Zones Headers with Filters
+battlepets = function(timeline, t)						-- Creates a BATTLE_PETS header with pet battle filter on it. Use this with Outdoor Zones.
+	if not t then
+		t = timeline;
+		timeline = { ADDED_5_0_4 };
+	end
+	return petbattle(filter(BATTLE_PETS, bubbleDownSelf({ ["timeline"] = timeline }, t)));
+end
+petbattles = function(timeline, t)						-- Creates a PET_BATTLE header with pet battle filter on it. Use this with Outdoor Zones.
+	if not t then
+		t = timeline;
+		timeline = { ADDED_5_0_4 };
+	end
+	return petbattle(n(PET_BATTLE, bubbleDownSelf({ ["timeline"] = timeline }, t)));
 end
 
 -- SHORTCUTS for Field Modifiers (not objects, you can apply these anywhere)
@@ -1057,3 +1134,325 @@ model = function(displayID, t)
 	return t;
 end
 un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.
+
+-- Create a Header. Returns a UNIQUE ID, starting at 0.
+(function()
+local customHeaders,nextHeaderID = {},-1000000;	-- TODO: Change this to 0.
+CustomHeaders = customHeaders;	-- This is global, so that it can be found by Parser!
+local concatKeyPairs = function(t)
+	local keys = {};
+	for key,value in pairs(t) do
+		table.insert(keys, key);
+	end
+	table.sort(keys);
+	local schedule = "{";
+	for i,key in ipairs(keys) do
+		if i > 1 then
+			schedule = schedule .. ",";
+		end
+		schedule = schedule .. "[\"" .. key .. "\"]=" .. t[key];
+	end
+	return schedule .. "}";
+end
+local getTimestamp = function(t)
+	return os.time({
+		year=t.year,
+		month=t.month,
+		day=t.monthDay,
+		hour=t.hour,
+		minute=t.minute,
+	});
+end
+createHeader = function(data)
+	if not data then
+		print("INVALID HEADER: You must pass data into the createHeader function.");
+	elseif not data.readable then
+		print("INVALID HEADER (missing 'readable')", data.readable or (type(data.text) == "table" and data.text.en) or data.text);
+	elseif not (data.text and (type(data.text) == "string" or (type(data.text) == "table" and data.text.en))) then
+		print("INVALID HEADER", data.readable, data.text);
+	else
+		if data.eventSchedule then
+			local schedule = "{";
+			local currentDate = os.date("*t");
+			if data.eventSchedule[1] == 0 then	-- Set Start and End Date
+				local startTime = {
+					year=data.eventSchedule[2],
+					month=data.eventSchedule[3],
+					monthDay=data.eventSchedule[4],
+					--weekday=7,	-- generated below
+					hour=0,
+					minute=0,
+				};
+				local endTime = {
+					year=data.eventSchedule[5] or (currentDate.year + 1),
+					month=data.eventSchedule[6] or data.eventSchedule[3],
+					monthDay=data.eventSchedule[7] or data.eventSchedule[4],
+					--weekday=7,	-- generated below
+					hour=0,
+					minute=0,
+				};
+
+				-- Generate Time Stamps and add the weekday to the objects
+				startTime.weekday = os.date("*t", getTimestamp(startTime)).wday;
+				endTime.weekday = os.date("*t", getTimestamp(endTime)).wday;
+
+				-- Append the schedule
+				schedule = schedule .. "\n\t_.Modules.Events.CreateSchedule(" .. concatKeyPairs(startTime) .. "," .. concatKeyPairs(endTime)  .. ")";
+			elseif data.eventSchedule[1] == 1 then	-- Recurring, every year forever on the same dates.
+				local veryfirst = true;
+				for yearOffset = -1,1,1 do
+					if veryfirst then
+						veryfirst = false;
+					else
+						schedule = schedule .. ",";
+					end
+					local startTime = {
+						year=currentDate.year + yearOffset,
+						month=data.eventSchedule[2],
+						monthDay=data.eventSchedule[3],
+						--weekday=7,	-- generated below
+						hour=data.eventSchedule[4],
+						minute=data.eventSchedule[5],
+					};
+					local endTime = {
+						year=currentDate.year + yearOffset,
+						month=data.eventSchedule[6],
+						monthDay=data.eventSchedule[7],
+						--weekday=7,	-- generated below
+						hour=data.eventSchedule[8],
+						minute=data.eventSchedule[9],
+					};
+					-- Feast of Winter Veil, for example, goes from Dec (Month 12) to Jan (Month 01)
+					if endTime.month < startTime.month then
+						endTime.year = endTime.year + 1;
+					end
+
+					-- Generate Time Stamps and add the weekday to the objects
+					startTime.weekday = os.date("*t", getTimestamp(startTime)).wday;
+					endTime.weekday = os.date("*t", getTimestamp(endTime)).wday;
+
+					-- Append the schedule
+					schedule = schedule .. "\n\t_.Modules.Events.CreateSchedule(" .. concatKeyPairs(startTime) .. "," .. concatKeyPairs(endTime) .. ")";
+				end
+			elseif data.eventSchedule[1] == 2 then	-- Recurring every month on the first Sunday until the next Sunday.
+				-- START_YEAR, START_MONTH
+				-- Example: 2023, 5
+				local eventIDs = data.eventIDs;
+				if not eventIDs then
+					print("INVALID HEADER", data.readable, " INVALID SCHEDULE, MISSING EVENT IDs!");
+					return;
+				end
+				local totalEventIDs = #eventIDs;
+				if totalEventIDs < 1 then
+					print("INVALID HEADER", data.readable, " INVALID SCHEDULE, EVENT IDs EMPTY!");
+					return;
+				end
+
+				-- Calculate the difference between the specified month/year and the current month/year
+				local year, month, totalMonthOffset = data.eventSchedule[2], data.eventSchedule[3], 0;
+				local currentYear, currentMonth = currentDate.year, currentDate.month;
+				while year < currentYear do
+					while month <= 12 do
+						month = month + 1;
+						totalMonthOffset = totalMonthOffset + 1;
+					end
+					month = 1;
+					year = year + 1;
+				end
+				while month < currentMonth do
+					month = month + 1;
+					totalMonthOffset = totalMonthOffset + 1;
+				end
+
+				-- Go back one month, to get last month's data.
+				totalMonthOffset = (totalMonthOffset + totalEventIDs) - 1;	-- Ensure the offset is 0 or more
+				month = month - 1;
+				if month == 0 then month = 12; end
+
+				local veryfirst = true;
+				for monthOffset = 0,10,1 do
+					if veryfirst then
+						veryfirst = false;
+					else
+						schedule = schedule .. ",";
+					end
+
+					-- Grab the current eventID
+					local eventID = eventIDs[(totalMonthOffset % totalEventIDs) + 1];
+
+					-- Determine the first sunday
+					local startTime = {
+						year=year,
+						month=month,
+						monthDay=1,
+						--weekday=7,	-- generated below
+						hour=0,
+						minute=0,
+					};
+					local startTimeStamp = getTimestamp(startTime);
+
+					-- Find the first Sunday of the Month
+					for dayOffset = 1,14,1 do
+						if os.date("*t", startTimeStamp).wday == 1 then
+							break;
+						end
+						startTime.monthDay = startTime.monthDay + 1;
+						startTimeStamp = getTimestamp(startTime);
+					end
+
+					-- Determine the next Sunday
+					local endTime = {
+						year=startTime.year,
+						month=startTime.month,
+						monthDay=startTime.monthDay + 7,
+						--weekday=7,	-- generated below
+						hour=0,
+						minute=0,
+					};
+					local endTimeStamp = getTimestamp(endTime);
+					startTime.weekday = os.date("*t", startTimeStamp).wday;
+					endTime.weekday = os.date("*t", endTimeStamp).wday;
+
+					-- Append the schedule
+					schedule = schedule .. "\n\t_.Modules.Events.CreateSchedule(" .. concatKeyPairs(startTime) .. "," .. concatKeyPairs(endTime) .. ",{[\"remappedID\"]=" .. eventID .. "})";
+
+					totalMonthOffset = totalMonthOffset + 1;
+					month = month + 1;
+					if month > 12 then
+						month = 1;
+						year = year + 1;
+					end
+				end
+			else
+				print("INVALID HEADER", data.readable, " INVALID SCHEDULE TYPE", data.eventSchedule[1]);
+				return;
+			end
+			data.eventSchedule = schedule .. "\n}";
+		end
+
+		local headerID = nextHeaderID;
+		customHeaders[headerID] = data;
+		nextHeaderID = nextHeaderID - 1;
+		data.filepath = CurrentSubFileName or CurrentFileName;
+		--print("HEADER", headerID .. ":", data.readable or (type(data.text) == "table" and data.text.en) or data.text);
+		return headerID;
+	end
+end
+--[[
+-- Here's an example showing all the different supported fields.
+CRIEVES_SUPER_COOL_HEADER = createHeader({
+	readable = "Crieve's Super Cool Header",
+	constant = "CRIEVES_SUPER_COOL_HEADER",	-- If you specify a constant, the identifier will become accessible in the addon code (app.HeaderConstants.CRIEVES_SUPER_COOL_HEADER)
+	icon = "INTERFACE\\ICONS\\Interface_Icon_Lol",
+	text = {
+		en = "Crieve's Super Cool Header",
+		ru = "TODO: Russion Translation Here",
+	},
+	description = {
+		en = "This is just an example!",
+	},
+});
+]]--
+end)();
+
+-- ItemDBConditional is used in libs/Functions prior to it being defined, so let's define it even earlier in the Parsing sequence!
+do
+-- ItemDBConditional contains a bunch of micro object modifications, but since we're using it everywhere, it is losing the item data due to what is known as "data chomping" with how we are using it.
+local itemDBConditional = CreateDatabaseContainer("ItemDBConditional", {
+	__index = function(t, key)
+		key = tonumber(key);
+		local item = { itemID = key };
+		rawset(t, key, item);
+		return item;
+	end,
+});
+ItemDBConditional = itemDBConditional;
+
+local CurrentProfessionID, recipeDB = ALCHEMY;
+local ItemRecipeHelper = function(itemID, recipeID, unobtainStatus, requireSkill)
+	-- Cache the object.
+	local object;
+	if itemID == 0 then
+		-- The RecipeDB table isn't setup to always return a value.
+		object = recipeDB[recipeID];
+		if not object then
+			object = {};
+			recipeDB[recipeID] = object;
+		end
+	else
+		-- Cache the object as an item
+		object = itemDBConditional[itemID];
+
+		-- Update the recipeID.
+		local originalSpellID = object.spellID;
+		local originalRecipeID = object.recipeID;
+		if not originalRecipeID then
+			object.recipeID = recipeID;
+		elseif originalRecipeID ~= recipeID then
+			-- Replace it, but also show a warning.
+			print("Item", itemID, "recipeID changed", originalRecipeID, ">", recipeID);
+			object.recipeID = recipeID;
+		end
+
+		-- Check for a spellID.
+		if originalSpellID then
+			object.spellID = nil;
+			if not (originalSpellID == originalRecipeID or originalSpellID == recipeID) then
+				print("Item", itemID, "spellID changed", originalSpellID, "> nil");
+			end
+		end
+	end
+
+	-- Mark it as a recipe.
+	object.f = RECIPES;
+
+	-- Update the skill requirement.
+	requireSkill = requireSkill or CurrentProfessionID;
+	local originalRequireSkill = object.requireSkill;
+	if not originalRequireSkill then
+		object.requireSkill = requireSkill;
+	elseif originalRequireSkill ~= requireSkill then
+		-- Replace it, but also show a warning.
+		if itemID == 0 then
+			print("Recipe", recipeID, "requireSkill changed", originalRequireSkill, ">", requireSkill);
+		else
+			print("Item", itemID, "requireSkill changed", originalRequireSkill, ">", requireSkill);
+		end
+		object.requireSkill = requireSkill;
+	end
+
+	-- allow for timeline to be a raw 'u' value or single string of 'timeline' or table of multiple 'timeline' values
+	local unobtainType = unobtainStatus and type(unobtainStatus);
+	if unobtainType then
+		if unobtainType == "number" then
+			object.u = unobtainStatus;
+		elseif unobtainType == "string" then
+			object.timeline = { unobtainStatus };
+		elseif unobtainType == "table" then
+			object.timeline = unobtainStatus;
+		end
+	end
+	return object;
+end
+GetRecipeHelperForProfession = function(professionID)
+	recipeDB = root(ROOTS.RecipeDB);	-- NOTE: This value doesn't get persisted yet.
+	CurrentProfessionID = professionID;
+	return ItemRecipeHelper;
+end
+
+
+--[[
+-- Proof of Concept:
+-- If you assign new partial data to the item, it'll retain its previous data instead of discarding it.
+local disgustingOozeling = ItemDBConditional[20769];
+disgustingOozeling.spellID = 25162;
+disgustingOozeling.speciesID = 114;
+
+ItemDBConditional[20769] = { description = "What a shame it would be to lose this data..." };
+
+print("Disgusting Oozeling contains:");
+for key,value in pairs(ItemDBConditional[20769]) do
+	print(" " .. key .. ": " .. value);
+end
+]]--
+end

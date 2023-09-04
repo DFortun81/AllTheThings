@@ -1,9 +1,19 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+GRAND_HUNTS = createHeader({
+	readable = "Grand Hunts",
+	icon = "Interface\\Icons\\ability_evoker_masterygiantkiller",
+	text = {
+		en = "Grand Hunts",
+		fr = "Grandes Chasses",
+		ru = "Великая охота",
+		cn = "洪荒狩猎",
+	},
+});
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(MARUUK_CENTAUR, {
-		n(GRAND_HUNTS, {
+		n(GRAND_HUNTS, bubbleDownSelf({ ["minReputation"] = { FACTION_MARUUK_CENTAUR, 5 } }, {
 			n(ACHIEVEMENTS, {
 				ach(16544),	-- Grand Hunter
 				ach(16540, {	-- Hunt Master
@@ -109,101 +119,86 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 			header(HEADERS.Map, OHNAHRAN_PLAINS, {
-				n(-1123, {	-- North
-					n(190907, {	-- Blitztusk	-- North Only
+				n(NORTH, sharedData({ ["isDaily"] = true }, {
+					n(190907, {	-- Blitztusk
 						["coord"] = { 77.0, 20.6, OHNAHRAN_PLAINS },
 						["questID"] = 73908,
-						["isDaily"] = true,
 						["g"] = {
 							i(200296),	-- Mammoth Tusk Wraps
 						},
 					}),
-					n(191450, {	-- Boolk	-- North Only
+					n(191450, {	-- Boolk
 						["coord"] = { 86.9, 18.1, OHNAHRAN_PLAINS },
 						["questID"] = 73909,
-						["isDaily"] = true,
 					}),
-					n(190968, {	-- Norbett	-- North Only
+					n(190968, {	-- Norbett
 						["coord"] = { 83.1, 18.8, OHNAHRAN_PLAINS },
 						["questID"] = 73929,
-						["isDaily"] = true,
 					}),
-					n(190161, {	-- Sarana	-- North Only
+					n(190161, {	-- Sarana
 						["coord"] = { 85.4, 15.6, OHNAHRAN_PLAINS },
 						["questID"] = 73932,
-						["isDaily"] = true,
 						["g"] = {
 							i(200440),	-- Helm of Feline Instinct
 						},
 					}),
-					n(191103, {	-- Uranto the Swift	-- North Only
+					n(191103, {	-- Uranto the Swift
 						["coords"] = {
 							{ 77.2, 21.0, OHNAHRAN_PLAINS },
 							{ 79.0, 22.2, OHNAHRAN_PLAINS },
 							{ 81.4, 21.4, OHNAHRAN_PLAINS },
 						},
 						["questID"] = 73943,
-						["isDaily"] = true,
 					}),
-				}),
-				n(-1124, {	-- East
-					n(194608, {	-- Kholdeg	-- East Only
+				})),
+				n(EAST, sharedData({ ["isDaily"] = true }, {
+					n(194608, {	-- Kholdeg
 						["coord"] = { 79.7, 55.4, OHNAHRAN_PLAINS },
 						["questID"] = 73920,
-						["isDaily"] = true,
 					}),
-					n(194601, {	-- Zagdech	-- East Only
+					n(194601, {	-- Zagdech
 						["coord"] = { 76.7, 53.0, OHNAHRAN_PLAINS },
 						["questID"] = 73948,
-						["isDaily"] = true,
 					}),
-				}),
-				n(-1126, {	-- West
-					n(194409, {	-- Ergburk	-- West Only
+				})),
+				n(WEST, sharedData({ ["isDaily"] = true }, {
+					n(194409, {	-- Ergburk
 						["coord"] = { 57.2, 47.7, OHNAHRAN_PLAINS },
 						["questID"] = 73914,
-						["isDaily"] = true,
 					}),
 					n(194438, {	-- Khomuur
 						["coord"] = { 50.6, 50.0, OHNAHRAN_PLAINS },
 						["questID"] = 73921,
-						["isDaily"] = true,
 					}),
-					n(194458, {	-- Rokzul -- West Only
+					n(194458, {	-- Rokzul
 						["coord"] = { 56.2, 51.5, OHNAHRAN_PLAINS },
 						["questID"] = 73930,
-						["isDaily"] = true,
 					}),
 					n(194624, {	-- Zumakh
 						["coord"] = { 72.5, 45.7, OHNAHRAN_PLAINS },
 						["questID"] = 73949,
-						["isDaily"] = true,
 					}),
-				}),
+				})),
 			}),
 			header(HEADERS.Map, THALDRASZUS, {
-				n(-1123, {	-- North
+				n(NORTH, sharedData({ ["isDaily"] = true }, {
 					n(195431, {	-- Diluu
 						["coord"] = { 50.8, 46.6, THALDRASZUS },
 						["questID"] = 73912,
-						["isDaily"] = true,
 					}),
 					n(195430, {	-- Molkeej
 						["coord"] = { 51.1, 49.3, THALDRASZUS },
 						["questID"] = 73925,
-						["isDaily"] = true,
 					}),
 					n(195417, {	-- Tsokorg
 						["coord"] = { 50.0, 47.8, THALDRASZUS },
 						["questID"] = 73942,
-						["isDaily"] = true,
 					}),
-				}),
-				n(-1125, {	-- South
+				})),
+				n(SOUTH, sharedData({ ["isDaily"] = true }, {
 					n(193341, {	-- Angen
 						["coord"] = { 33.2, 72.4, THALDRASZUS },
 						["questID"] = 73906,
-						["isDaily"] = true,
 						["g"] = {
 							i(200128),	-- Zephyr's Razor
 						},
@@ -211,7 +206,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					n(193330, {	-- Galzuda
 						["coord"] = { 36.0, 68.6, THALDRASZUS },
 						["questID"] = 73916,
-						["isDaily"] = true,
 						["g"] = {
 							i(200261),	-- White Chitin Bands
 						},
@@ -219,116 +213,97 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					n(193311, {	-- Melkhop
 						["coord"] = { 33.2, 67.9, THALDRASZUS },
 						["questID"] = 73924,
-						["isDaily"] = true,
 					}),
-				}),
+				})),
 			}),
 			header(HEADERS.Map, THE_AZURE_SPAN, {
-				n(-1124, {	-- East
+				n(EAST, sharedData({ ["isDaily"] = true }, {
 					n(195093, {	-- Moskhoi
 						["coord"] = { 67.6, 27.8, THE_AZURE_SPAN },
 						["questID"] = 73926,
-						["isDaily"] = true,
 					}),
 					n(195132, {	-- Tevgai
 						["coord"] = { 72.8, 27.2, THE_AZURE_SPAN },
 						["questID"] = 73939,
-						["isDaily"] = true,
 					}),
 					n(195101, {	-- Yaankhi
-						["questID"] = 73946,
-						["isDaily"] = true,
 						["coord"] = { 68.6, 26.3, THE_AZURE_SPAN },
+						["questID"] = 73946,
 					}),
-				}),
-				n(-1125, {	-- South
+				})),
+				n(SOUTH, sharedData({ ["isDaily"] = true }, {
 					n(195300, {	-- Arkhuu
 						["coord"] = { 66.4, 59.5, THE_AZURE_SPAN },
 						["questID"] = 73907,
-						["isDaily"] = true,
 					}),
 					n(195286, {	-- Mantai
 						["coord"] = { 67.4, 55.5, THE_AZURE_SPAN },
 						["questID"] = 73923,
-						["isDaily"] = true,
 					}),
 					n(195283, {	-- Yamakh
 						["description"] = "Behind Rock Wall.",
-						["questID"] = 73947,
-						["isDaily"] = true,
 						["coord"] = { 66.1, 51.2, THE_AZURE_SPAN },
+						["questID"] = 73947,
 					}),
-				}),
-				n(-1126, {	-- West
+				})),
+				n(WEST, sharedData({ ["isDaily"] = true }, {
 					n(194761, {	-- Khuumog
 						["coord"] = { 38.7, 43.5, THE_AZURE_SPAN },
 						["questID"] = 73922,
-						["isDaily"] = true,
 					}),
 					n(194763, {	-- Tenmod
 						["coord"] = { 33.2, 40.3, THE_AZURE_SPAN },
 						["questID"] = 73938,
-						["isDaily"] = true,
 					}),
 					n(194760, {	-- Uurhilt
-						["questID"] = 73944,
-						["isDaily"] = true,
 						["coord"] = { 36.3, 36.9, THE_AZURE_SPAN },
+						["questID"] = 73944,
 					}),
-				}),
+				})),
 			}),
 			header(HEADERS.Map, THE_WAKING_SHORES, {
-				n(-1124, {	-- East
+				n(EAST, sharedData({ ["isDaily"] = true }, {
 					n(193896, {	-- Borzgas
 						["coord"] = { 69.2, 56.6, THE_WAKING_SHORES },
 						["questID"] = 73910,
-						["isDaily"] = true,
 					}),
 					n(193853, {	-- Galnmor
 						["coord"] = { 69.6, 64.8, THE_WAKING_SHORES },
 						["questID"] = 73915,
-						["isDaily"] = true,
 					}),
-				}),
-				n(-1123, {	-- North
+				})),
+				n(NORTH, sharedData({ ["isDaily"] = true }, {
 					n(194251, {	-- Degmakh
 						["coord"] = { 41.0, 84.6, THE_WAKING_SHORES },
 						["questID"] = 73911,
-						["isDaily"] = true,
 					}),
 					n(194240, {	-- Gamgus
 						["coord"] = { 37.6, 76.8, THE_WAKING_SHORES },
 						["questID"] = 73917,
-						["isDaily"] = true,
 					}),
 					n(194225, {	-- Muugurv
 						["coord"] = { 47.8, 77.0, THE_WAKING_SHORES },
 						["questID"] = 73927,
-						["isDaily"] = true,
 					}),
 					n(193885, {	-- Salkii
 						["coord"] = { 66.4, 65.2, THE_WAKING_SHORES },
 						["questID"] = 73931,
-						["isDaily"] = true,
 					}),
-				}),
-				n(-1125, {	-- South
+				})),
+				n(SOUTH, sharedData({ ["isDaily"] = true }, {
 					n(193704, {	-- Honmor
 						["coord"] = { 24.0, 96.6, THE_WAKING_SHORES },
 						["questID"] = 73918,
-						["isDaily"] = true,
 					}),
 					n(193722, {	-- Tomnu
 						["coord"] = { 23.2, 89.4, THE_WAKING_SHORES },
 						["questID"] = 73940,
-						["isDaily"] = true,
 					}),
 					n(193724, {	-- Uurtus
 						["coord"] = { 26.6, 88.6, THE_WAKING_SHORES },
 						["questID"] = 73945,
-						["isDaily"] = true,
 					}),
-				}),
+				})),
 			}),
 			n(REWARDS, {
 				i(200290),	-- Bakar Companion (PET!)
@@ -366,10 +341,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				i(194085),	-- Proof of Might
 				i(194099),	-- Shikaar Hunting Horn
 				i(194092),	-- Timbertooth Pelt
-
 				q(70906, {
 					["name"] = "1st Weekly Grand Hunt",
-					-- ["sourceQuests"] = { },
 					["isWeekly"] = true,
 					["g"] = {
 						i(200468, {	-- Grant Hunt Spoils [Epic]
@@ -437,8 +410,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							-- likely rewards various items from lower tiers as well, pls symlink at lowest level received until confirmed only source
 							["sym"] = {{"select","itemID",
 								-- confirmed items here
-								200093,	-- Centaur Hunting Trophy
-								200447,	-- Centaur Hunting Trophy
 								194095,	-- Ohuna Companion Color: Sepia
 								194091,	-- Bakar Companion Color: Golden Brown
 
@@ -448,10 +419,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				i(193360),	-- Centaur's Trophy Necklace
 				i(201732),	-- Pattern: Fierce Armor Kit (RECIPE!)
-				i(200093),	-- Centaur Hunting Trophy
-				i(200447),	-- Centaur Hunting Trophy
 			}),
-		}),
+		})),
 	}),
 })));
 

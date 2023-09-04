@@ -4,8 +4,8 @@
 
 -- Never Implemented Common Items --
 -- Do not move this elsewhere, please leave it here for now. -Darkal
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
-	n(-123457, {	-- Common
+root(ROOTS.NeverImplemented, {
+	n(QUALITY_COMMON, {
 		tier(CLASSIC_TIER, {
 			-- NYI Classic Common Items
 			n(WEAPONS, {
@@ -147,7 +147,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				}),
 				filter(TWO_HANDED_AXES, {
 					i(21034),	-- 3300 Test 2h Axe 60 white
-					i(30502),	-- Monster - Draenei_D01_Red	
+					i(30502),	-- Monster - Draenei_D01_Red
 				}),
 				filter(BOWS, {
 					i(21036),	-- 2800 test bow
@@ -510,11 +510,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					}),
 					n(HANDS, {
 						i(131854),	-- Rockbitten Gloves
-						i(131626),	-- Shrouded Gauntlets
 						i(131925),	-- Wanderer's Grips
-					}),
-					n(LEGS, {
-						i(131213),	-- Chain Kodo-Rider's Pants
 					}),
 					n(FEET, {
 						i(131873),	-- Chaser's Boots
@@ -692,7 +688,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(168119),	-- Parrying Dagger
 					i(168118),	-- Swift Dagger
 				}),
-				filter(PROF_EQUIP, {
+				filter(PROFESSION_EQUIPMENT, {
 					i(177030),	-- Aquatic Extractor
 				}),
 				filter(GUNS, {
@@ -746,4 +742,4 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 		}),
 	}),
-}));
+});

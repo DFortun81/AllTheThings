@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["icon"] = "Interface\\Icons\\achievement_zone_stranglethorn_01",
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(871, applyclassicphase(PHASE_ONE, {	-- Avast Ye, Admiral!
+				applyclassicphase(PHASE_ONE, ach(871, {	-- Avast Ye, Admiral!
 					["sourceQuest"] = 4621,	-- Avast Ye, Admiral!
 					["groups"] = {
 						title(111, {	-- Bloodsail Admiral <Name>
@@ -45,7 +45,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["description"] = "Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",
 				["coord"] = { 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
 				["groups"] = {
-					classicAch(389, {	-- Gurubashi Arena Master
+					ach(389, {	-- Gurubashi Arena Master
 						["provider"] = { "i", 18706 },	-- Arena Master
 					}),
 					i(18706),	-- Arena Master
@@ -63,8 +63,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				},
 			})),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					406,	-- Beetle (PET!)
 					421,	-- Crimson Moth (PET!)
@@ -83,14 +82,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["description"] = "Can be found relaibly as secondary pets alongside Baby Apes, but also found in Booty Bay.",
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			n(FACTIONS, {
 				faction(87, {	-- Bloodsail Buccaneers
-					["icon"] = icon("INV_Misc_Bandana_03"),
+					["icon"] = "Interface\\Icons\\INV_Misc_Bandana_03",
 				}),
 				faction(21, {	-- Booty Bay
-					["icon"] = icon("INV_Misc_Coin_01"),
+					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
 				}),
 			}),
 			n(FLIGHT_PATHS, {
@@ -115,13 +113,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 35.0, 29.2, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = HORDE_ONLY,
-				}),
-			}),
-			n(PROFESSIONS, {
-				prof(BLACKSMITHING, {
-					n(2836, {	-- Brikk Keencraft <Master Blacksmith>
-						["coord"] = { 29.0, 75.4, THE_CAPE_OF_STRANGLETHORN },
-					}),
 				}),
 			}),
 			n(QUESTS, {
@@ -239,7 +230,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cost"] = { { "i", 18706, 12 } },	-- Arena Master (trinket)
 					["repeatable"] = true,
 					["groups"] = {
-						classicAch(396, {	-- Arena Grandmaster
+						ach(396, {	-- Arena Grandmaster
 							["provider"] = { "i", 19024 },	-- Arena Grand Master
 						}),
 						i(19024),	-- Arena Grand Master
@@ -1952,10 +1943,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(2846, {	-- Blixrez Goodstitch <Leatherworking Supplies>
 					["coord"] = { 42.8, 74.1, THE_CAPE_OF_STRANGLETHORN },
 					["groups"] = {
-						i(5789, {	-- Pattern: Murloc Scale Bracers
+						i(5789, {	-- Pattern: Murloc Scale Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5788, {	-- Pattern: Thick Murloc Armor
+						i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -1987,10 +1978,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(2848, {	-- Glyx Brewright <Alchemy Supplies>
 					["coord"] = { 42.7, 75.1, THE_CAPE_OF_STRANGLETHORN },
 					["groups"] = {
-						i(6056, {	-- Recipe: Frost Protection Potion
+						i(6056, {	-- Recipe: Frost Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(6057, {	-- Recipe: Nature Protection Potion
+						i(6057, {	-- Recipe: Nature Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2027,14 +2018,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(2664, {	-- Kelsey Yance <Cook>
 					["coord"] = { 42.8, 69.0, THE_CAPE_OF_STRANGLETHORN },
 					["groups"] = {
-						i(13940),	-- Recipe: Cooked Glossy Mightfish
-						i(13941),	-- Recipe: Filet of Redgill
-						i(6039),	-- Recipe: Giant Clam Scorcho
-						i(13943),	-- Recipe: Hot Smoked Bass
-						i(17062),	-- Recipe: Mithril Head Trout
-						i(6369),	-- Recipe: Rockscale Cod
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(13940),	-- Recipe: Cooked Glossy Mightfish (RECIPE!)
+						i(13941),	-- Recipe: Filet of Redgill (RECIPE!)
+						i(6039),	-- Recipe: Giant Clam Scorcho (RECIPE!)
+						i(13943),	-- Recipe: Hot Smoked Bass (RECIPE!)
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(2840, {	-- Kizz Bluntstrike <Macecrafter>
@@ -2063,9 +2054,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 42.7, 72.7, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { "added 4.2.0.14241" },
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
-						i(16767, {	-- Recipe: Undermine Clam Chowder
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+						i(16767, {	-- Recipe: Undermine Clam Chowder (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2091,8 +2082,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(2699, {	-- Rikqiz <Leatherworking Supplies>
 					["coord"] = { 43.2, 71.7, THE_CAPE_OF_STRANGLETHORN },
-					["groups"] = {
-						i(14635, {	-- Pattern: Gem-Studded Leather Belt
+					["g"] = {
+						i(14635, {	-- Pattern: Gem-Studded Leather Belt (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(18239, {	-- Pattern: Shadowskin Gloves (RECIPE!)
@@ -2191,7 +2182,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(8116, {	-- Ziggle Sparks
 					["coord"] = { 41.6, 74.4, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
+					-- #if BEFORE 10.1
 					["description"] = "This NPC is only available on July 4th (US) or September 30th (EU).",
+					-- #else
+					["description"] = "This NPC is only available on July 4th.",
+					-- #endif
 					["sym"] = {{"select", "itemID",
 						8626,	-- Blue Sparkler
 						8625,	-- White Sparkler
@@ -2209,7 +2204,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(8494, {	-- Hyacinth Macaw (PET!)
 					["timeline"] = { "added 1.11.1.5462" },
 				}),
-				i(5789, {	-- Pattern: Murloc Scale Bracers
+				i(5789, {	-- Pattern: Murloc Scale Bracers (RECIPE!)
 					["cr"] = 1561,	-- Bloodsail Raider
 				}),
 				i(48126, {	-- Razzashi Hatchling (PET!)

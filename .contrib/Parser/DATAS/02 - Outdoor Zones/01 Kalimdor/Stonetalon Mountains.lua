@@ -60,8 +60,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					487,	-- Alpine Chipmunk (PET!)
 					633,	-- Mountain Skunk (PET!)
@@ -79,8 +78,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["description"] = "Can be found south of Windshear Hold in Webwinder Hollow with larger spiders.",
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["125:125:475:433"] = 2541,	-- Sishir Canyon
@@ -2107,7 +2105,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6055, {	-- Recipe: Fire Protection Potion
+						i(6055, {	-- Recipe: Fire Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2130,6 +2128,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(42028, {	-- Krom'gar Quartermaster <Quartermaster>
 					["coord"] = { 65.8, 64.0, STONETALON_MOUNTAINS },
+					["description"] = "Some items require specific Krom'gar ranks, which are obtained by completing the main storyline in the zone. The story line starts with 'We're Here to Do One Thing, Maybe Two...' & ends with 'To Be Horde...'",
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["groups"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13277" }, }, {

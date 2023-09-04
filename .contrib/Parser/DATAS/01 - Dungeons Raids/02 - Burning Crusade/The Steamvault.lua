@@ -4,6 +4,11 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(261, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {	-- The Steamvault
 		["lore"] = "The Steamvault serves as the mechanical heart of the Naga's draining operations in Zangarmarsh. The mechanisms on display within the massive cavern supply the power for the actual act of removing the marsh's water.",
+		["zone-text-areaID"] = 3715,	-- The Steamvault
+		["sins"] = {
+			"Coilfang: The Steamvault",
+			"Echsenkessel: Dampfkammer",
+		},
 		["coord"] = { 50.35, 33.39, ZANGARMARSH },	-- The Steamvault, Zangarmarsh
 		["maps"] = {
 			COILFANG_RESERVOIR_STEAMVAULT,
@@ -129,8 +134,8 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						-- #endif
 						i(27783),	-- Moonrage Girdle
 						i(27784),	-- Scintillating Coral Band
-						i(29673, {	-- Pattern: Frost Armor Kit
-							["timeline"] = { "removed 5.0.4" },
+						i(29673, {	-- Pattern: Frost Armor Kit (RECIPE!)
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						i(30828),	-- Vial of Underworld Loam
 					},
@@ -158,13 +163,12 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(575, {	-- Warlord Kalithresh
 					["creatureID"] = 17798,
 					["groups"] = {
-						classicAch(656, {	-- The Steamvault
+						ach(656, {	-- The Steamvault
 							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								9763,	-- The Warlord's Hideout
 								10885,	-- Trial of the Naaru: Strength
 							},
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						-- #if AFTER 7.3.5
@@ -235,8 +239,8 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							-- #endif
 							i(27783),	-- Moonrage Girdle
 							i(27784),	-- Scintillating Coral Band
-							i(29673, {	-- Pattern: Frost Armor Kit
-								["timeline"] = { "removed 5.0.4" },
+							i(29673, {	-- Pattern: Frost Armor Kit (RECIPE!)
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(30828),	-- Vial of Underworld Loam
 						},
@@ -264,10 +268,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(575, {	-- Warlord Kalithresh
 						["creatureID"] = 17798,
 						["groups"] = {
-							classicAch(677, {	-- Heroic: The Steamvault
+							ach(677, {	-- Heroic: The Steamvault
 								-- #if BEFORE WRATH
 								["sourceQuest"] = 10885,	-- Trial of the Naaru: Strength
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
 							}),
 							ach(5077, {	-- Heroic: The Steamvault Guild Run

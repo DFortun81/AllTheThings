@@ -13,7 +13,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["g"] = {
 					bo(75285, true),
 					i(203307),	-- Winding Slitherdrake: Plated Brow (DM!)
-					i(205306),	-- Aquiferous Raiment
 					i(205318),	-- Guardian Golem's Legplates
 					i(205309),	-- Loyal Attendant's Gaze
 				},
@@ -24,6 +23,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["g"] = {
 					bo(75271, true),
 					i(205154),	-- Aquapo (PET!)
+					i(205306),	-- Aquiferous Raiment
 					i(205295),	-- Sediment Sifters
 				},
 			}),
@@ -70,9 +70,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75361,	-- Old QuestID: 75567
 				["g"] = {
 					bo(75364, true),
+					i(203363),	-- Winding Slitherdrake: Large Finned Throat (DM!)
 					i(205293),	-- Emberdusk's Embrace
 					i(205201),	-- Smoldering Howler Horn
 					i(205335),	-- Talisman of the Dusk
+					i(205196),	-- Zaqali Hand Cauldron
 				},
 			}),
 			n(203660, {	-- Flowfy

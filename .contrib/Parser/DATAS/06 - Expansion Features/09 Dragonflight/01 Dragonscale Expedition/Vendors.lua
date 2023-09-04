@@ -309,6 +309,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						["cost"] = {
 							{ "c", DRAGON_SUPPLIES, 75 },
 						},
+						["questID"] = 69996,
 					}),
 						-- RENOWN 12 --
 					i(198737, {	-- Relic Handler's Gauntlets

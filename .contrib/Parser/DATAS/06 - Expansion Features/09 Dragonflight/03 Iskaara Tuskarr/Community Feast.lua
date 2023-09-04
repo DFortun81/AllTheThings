@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(ISKAARA_TUSKARR, {
-		q(70893, {	-- Community Feast
+		q(70893, bubbleDownSelf({ ["minReputation"] = { FACTION_ISKAARA_TUSKARR, 3 } }, {	-- Community Feast
 			["provider"] = { "n", 196620 },	-- Pleeqi
 			["isWeekly"] = true,
 			["g"] = {
@@ -72,17 +72,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					i(204291),	-- Thrice-Charred Mammoth Ribs
 				}),
 			},
-		}),
+		})),
 	}),
 })));
 
 root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(ISKAARA_TUSKARR, {
-		n(COMMUNITY_FEAST, {
-			q(70925),	-- triggers repeatedly during 'Community Feast' (70925) to show in objective pane
-			q(74382),	-- catching a 'Gungle' / purchasing 'Piping Hot Orca Milk' during Community Feast event
-			q(72079),	-- tasting/sniffing the soup during Community Feast event
-			--q(70924),	-- probably some task during Community Feast event
-		}),
+		q(70925),	-- triggers repeatedly during 'Community Feast' (70925) to show in objective pane
+		q(74382),	-- catching a 'Gungle' / purchasing 'Piping Hot Orca Milk' during Community Feast event
+		q(72079),	-- tasting/sniffing the soup during Community Feast event
+		--q(70924),	-- probably some task during Community Feast event
 	}),
 })));

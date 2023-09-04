@@ -1,4 +1,4 @@
-local Items = root(ROOTS.ItemDBConditional);
+local Items = ItemDBConditional;
 local i = function(itemID, buildingID)
 	Items[itemID] = { ["buildingID"] = buildingID };
 end

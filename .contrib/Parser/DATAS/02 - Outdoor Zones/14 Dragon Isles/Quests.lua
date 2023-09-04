@@ -48,7 +48,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			["coord"] = { 63.1, 13.6, THE_AZURE_SPAN },
 		}),
 		q(72972, {	-- The Waking Shores Reverse Tour
-			["sourceQuests"] = { 72488 },	-- The Thaldraszus Advanced Tour
+			["sourceQuests"] = {
+				72488,	-- The Thaldraszus Advanced Tour
+				DF_ACCOUNT_CAMPAIGN_QUEST,
+			},
+			["sourceQuestNumRequired"] = 1,
 			["provider"] = { "n", 193411 },	-- Celormu
 			["coord"] = { 73.3, 52.1, THE_WAKING_SHORES },
 			["timeline"] = { ADDED_10_0_5 },
@@ -70,6 +74,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			["provider"] = { "n", 199119 },	-- Celormu
 			["coord"] = { 63.1, 13.6, THE_AZURE_SPAN },
 			["timeline"] = { ADDED_10_0_5 },
+		}),
+		q(78113, {	-- The Challenge Tour
+			-- TODO: ["sourceQuests"] = { 72985 },	-- The Thaldraszus Reverse Tour
+			-- TODO: ["provider"] = { "n", 199119 },	-- Celormu
+			-- TODO: ["coord"] = { 63.1, 13.6, THE_AZURE_SPAN },
+			["timeline"] = { ADDED_10_1_7 },
 		}),
 	}),
 })));

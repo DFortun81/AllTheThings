@@ -68,8 +68,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					398,	-- Black Rat (PET!)
 					393,	-- Cockroach (PET!)
@@ -84,8 +83,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 54.6, 33.0, WETLANDS },
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["175:128:13:314"] = 150,	-- Menethil Harbor
@@ -215,7 +213,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(3561, {	-- Resilient Poncho
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(3681),	-- Recipe: Crocolisk Gumbo
+						i(3681),	-- Recipe: Crocolisk Gumbo (RECIPE!)
 					},
 				}),
 				q(25780, {	-- Assault on Menethil Keep
@@ -749,7 +747,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(5246, {	-- Excavation Rod
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(3682),	-- Recipe: Curiously Tasty Omelet
+						i(3682),	-- Recipe: Curiously Tasty Omelet (RECIPE!)
 					},
 				}),
 				q(634, {	-- Plea To The Alliance
@@ -1586,7 +1584,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = { "added 3.3.0.10958" },
 					["groups"] = {
-						i(48124, {	-- Razormaw Hatchling Pet
+						i(48124, {	-- Razormaw Hatchling (PET!)
 							["timeline"] = { "added 3.2.0.10072" },
 						}),
 					},
@@ -1769,9 +1767,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(17062),	-- Recipe: Mithril Head Trout
-						i(6368),	-- Recipe: Rainbow Fin Albacore
-						i(6369),	-- Recipe: Rockscale Cod
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
 					},
 				}),
 				n(1460, {	-- Unger Statforth <Horse Breeder>
@@ -1795,10 +1793,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(7114, {	-- Pattern: Azure Silk Gloves
 							["isLimited"] = true,
 						}),
-						i(7613, {	-- Pattern: Green Leather Armor
+						i(7613, {	-- Pattern: Green Leather Armor (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(7290, {	-- Pattern: Red Whelp Gloves
+						i(7290, {	-- Pattern: Red Whelp Gloves (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(4835, {	-- Elite Shoulders
@@ -1875,7 +1873,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(3340),	-- Incendicite Ore
 				-- #if BEFORE 4.0.3
-				i(5788, {	-- Pattern: Thick Murloc Armor
+				i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
 					["cr"] = 1160,	-- Captain Halyndor
 				}),
 				-- #endif
@@ -1888,12 +1886,54 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 1043,	-- Lost Whelp
 				}),
 				i(3073, {	-- Smoldering Pants
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
+					-- #if BEFORE 4.0.3
 					["cr"] = 1069,	-- Crimson Whelp
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						42043,	-- Ebon Slavehunter
+						42041,	-- Dragonmaw Whelpstealer
+					},
+					-- #endif
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 61.8, 31.2, WETLANDS },
+						{ 65.4, 43.0, WETLANDS },
+						{ 68.8, 45.6, WETLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["coords"] = {
+						{ 68.0, 47.2, WETLANDS },
+						{ 63.4, 49.8, WETLANDS },
+						{ 67.0, 46.2, WETLANDS },
+						{ 61.0, 44.8, WETLANDS },
+					},
+					-- #endif
 				}),
 				i(3072, {	-- Smoldering Robe
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
+					-- #if BEFORE 4.0.3
 					["cr"] = 1044,	-- Flamesnorting Whelp
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						42043,	-- Ebon Slavehunter
+						42041,	-- Dragonmaw Whelpstealer
+					},
+					-- #endif
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 71.8, 47.6, WETLANDS },
+						{ 66.4, 40.4, WETLANDS },
+						{ 63.8, 33.6, WETLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["coords"] = {
+						{ 68.0, 47.2, WETLANDS },
+						{ 63.4, 49.8, WETLANDS },
+						{ 67.0, 46.2, WETLANDS },
+						{ 61.0, 44.8, WETLANDS },
+					},
+					-- #endif
 				}),
 				i(6315, {	-- Steelarrow Crossbow
 					["timeline"] = { "removed 4.0.3" },

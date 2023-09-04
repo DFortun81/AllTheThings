@@ -53,7 +53,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 		n(FINGER, {
 			i(150989),	-- Foul-Sadist's Seal
 		}),
-		n(-387, {	-- Relic
+		n(RELICS, {
 			i(151009),	-- Annihilan Heart
 			i(151006),	-- Augari Manuscript
 			i(151005),	-- Dram of Light

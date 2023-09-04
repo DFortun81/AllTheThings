@@ -4,7 +4,7 @@
 
 root(ROOTS.ExpansionFeatures,
 	tier(BFA_TIER, {
-		n(-10057, {	-- War Effort
+		n(WARFRONT, {
 			n(-253, {	-- Horde War Campaign
 				["races"] = HORDE_ONLY,
 				["g"] = {
@@ -61,9 +61,11 @@ root(ROOTS.ExpansionFeatures,
 								57095,	-- Old Soldier
 								57152,	-- Most Loyal
 							},
+							["sym"] = {{"meta_achievement",
+								12509,	-- Ready for War
+								13466,	-- Tides of Vengeance
+							}},
 							["g"] = {
-								crit(1),	-- Ready for War
-								crit(2),	-- Tides of Vengeance
 								title(412),	-- Veteran of the Fourth War
 							},
 						})),

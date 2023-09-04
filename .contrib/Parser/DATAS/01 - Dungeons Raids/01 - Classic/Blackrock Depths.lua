@@ -1,6 +1,28 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+DETENTION_BLOCK = createHeader({
+	readable = "Detention Block",
+	-- #if AFTER WRATH
+	icon = "Interface\\Icons\\Achievement_Zone_Blackrock_01",
+	-- #else
+	icon = [[~_.asset("Achievement_Zone_Blackrock_01")]],
+	-- #endif
+	text = {
+		en = [[~DUNGEON_FLOOR_BLACKROCKDEPTHS1]],
+	},
+});
+SHADOWFORGE_CITY = createHeader({
+	readable = "Shadowforge City",
+	-- #if AFTER WRATH
+	icon = "Interface\\Icons\\Achievement_Zone_Blackrock_01",
+	-- #else
+	icon = [[~_.asset("Achievement_Zone_Blackrock_01")]],
+	-- #endif
+	text = {
+		en = [[~DUNGEON_FLOOR_BLACKROCKDEPTHS2]],
+	},
+});
 local OnTooltipForThoriumBrotherhood = [[function(t)
 	local reputation = t.reputation;
 	if reputation < 42000 then
@@ -33,6 +55,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		-- #if BEFORE MOP
 		["lore"] = "Once the capital city of the Dark Iron dwarves, this volcanic labyrinth now serves as the seat of power for Ragnaros the Firelord. Ragnaros has uncovered the secret to creating life from stone and plans to build an army of unstoppable golems to aid him in conquering the whole of Blackrock Mountain. Obsessed with defeating Nefarian and his draconic minions, Ragnaros will go to any extreme to achieve final victory.",
 		-- #endif
+		["zone-text-areaID"] = 1584,	-- Blackrock Depths
 		["coord"] = { 39.06, 18.12, BLACKROCK_MOUNTAIN_LEVEL3 },
 		["mapID"] = BLACKROCK_DEPTHS,
 		["maps"] = { 243 },
@@ -1513,9 +1536,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["cr"] = 9037,	-- Gloom'rel
 					["lvl"] = 40,
 					["groups"] = {
-						recipe(14891, {	-- Smelt Dark Iron
-							["requireSkill"] = MINING,
-						}),
+						r(14891),	-- Smelt Dark Iron
 					},
 				}),
 				q(4183, {	-- The True Masters (1/6)
@@ -2214,16 +2235,16 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					applyclassicphase(PHASE_THREE, i(19444, {	-- Formula: Enchant Weapon - Strength (RECIPE!)
 						["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
 					})),
-					i(17025, {	-- Pattern: Black Dragonscale Boots
+					i(17025, {	-- Pattern: Black Dragonscale Boots (RECIPE!)
 						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
 					}),
-					applyclassicphase(PHASE_THREE, i(19331, {	-- Pattern: Chromatic Gauntlets
+					applyclassicphase(PHASE_THREE, i(19331, {	-- Pattern: Chromatic Gauntlets (RECIPE!)
 						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
 					})),
-					applyclassicphase(PHASE_THREE, i(19332, {	-- Pattern: Corehound Belt
+					applyclassicphase(PHASE_THREE, i(19332, {	-- Pattern: Corehound Belt (RECIPE!)
 						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
 					})),
-					i(17022, {	-- Pattern: Corehound Boots
+					i(17022, {	-- Pattern: Corehound Boots (RECIPE!)
 						["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
 					}),
 					i(17018, {	-- Pattern: Flarecore Gloves
@@ -2238,13 +2259,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					applyclassicphase(PHASE_THREE, i(19219, {	-- Pattern: Flarecore Robe
 						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
 					})),
-					applyclassicphase(PHASE_THREE, i(19330, {	-- Pattern: Lava Belt
+					applyclassicphase(PHASE_THREE, i(19330, {	-- Pattern: Lava Belt (RECIPE!)
 						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
 					})),
-					applyclassicphase(PHASE_THREE, i(19333, {	-- Pattern: Molten Belt
+					applyclassicphase(PHASE_THREE, i(19333, {	-- Pattern: Molten Belt (RECIPE!)
 						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
 					})),
-					i(17023, {	-- Pattern: Molten Helm
+					i(17023, {	-- Pattern: Molten Helm (RECIPE!)
 						["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
 					}),
 					applyclassicphase(PHASE_THREE, i(19208, {	-- Plans: Black Amnesty (RECIPE!)
@@ -2289,13 +2310,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					applyclassicphase(PHASE_THREE, i(19212, {	-- Plans: Nightfall (RECIPE!)
 						["minReputation"] = { 59, EXALTED },	-- The Thorium Brotherhood, Exalted.
 					})),
-					applyclassicphase(PHASE_FIVE, i(20761, {	-- Recipe: Transmute Elemental Fire
+					applyclassicphase(PHASE_FIVE, i(20761, {	-- Recipe: Transmute Elemental Fire (RECIPE!)
 						["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
 					})),
 				}),
 				n(9499, {	-- Plugger Spazzring
-					i(15759),	-- Pattern:	Black Dragonscale Breastplate
-					i(13483),	-- Recipe: Transmute Fire to Earth
+					i(15759),	-- Pattern: Black Dragonscale Breastplate (RECIPE!)
+					i(13483),	-- Recipe: Transmute Fire to Earth (RECIPE!)
 					i(11325),	-- Dark Iron Ale Mug
 				}),
 				n(45843, {	-- Yuka Screwspigot <Engineering Supplies>
@@ -2318,10 +2339,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						8907,	-- Wrath Hammer Construct
 					},
 				}),
-				i(15781, {	-- Pattern: Black Dragonscale Leggings
+				i(15781, {	-- Pattern: Black Dragonscale Leggings (RECIPE!)
 					["cr"] = 8903,	-- Anvilrage Captain
 				}),
-				i(15770, {	-- Pattern: Black Dragonscale Shoulders
+				i(15770, {	-- Pattern: Black Dragonscale Shoulders (RECIPE!)
 					["cr"] = 8898,	-- Anvilrage Marshal
 				}),
 				i(11614, {	-- Plans: Dark Iron Mail (RECIPE!)
@@ -2376,7 +2397,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				i(12551),	-- Stoneshield Cloak
 				i(12528),	-- The Judge's Gavel
 			}),
-			n(-75, {	-- Detention Block
+			n(DETENTION_BLOCK, {
 				e(369, {	-- High Interrogator Gerstahn
 					["creatureID"] = 9018,
 					["groups"] = {
@@ -2423,9 +2444,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				applyclassicphase(PHASE_FIVE, n(16059,	-- Theldren
 				-- #if AFTER 4.0.3
 				{
-				-- This Update function unmarks the removed from game flag for folks with the banner.
-				["OnUpdate"] = [[function(t)
-					t.OnUpdate = nil;
+				-- This init function unmarks the removed from game flag for folks with the banner.
+				["OnInit"] = [[function(t)
 					if GetItemCount(21986, true) > 0 then
 						t.u = nil;
 						for i,o in ipairs(t.g) do
@@ -2441,6 +2461,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							end
 						end
 					end
+					return t;
 				end]],
 				-- #else
 				bubbleDown({
@@ -2557,7 +2578,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					},
 				}),
 			}),
-			n(-76, {	-- Shadowforge City
+			n(SHADOWFORGE_CITY, {
 				e(373, {	-- Pyromancer Loregrain
 					["creatureID"] = 9024,
 					["groups"] = {
@@ -2602,10 +2623,15 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 								i(11944),	-- Dark Iron Baby Booties
 							},
 						}),
-						o(161495, {	-- Secret Safe
-							["description"] = "This lootable chest spawns after defeating Watchman Doomgrip.",
+						o(165554, {	-- Heart of the Mountain
+							["description"] = "This spawns after defeating Watchman Doomgrip.",
 							["groups"] = {
 								i(11309),	-- The Heart of the Mountain
+							},
+						}),
+						o(161495, {	-- Secret Safe
+							["description"] = "This spawns after defeating Watchman Doomgrip.",
+							["groups"] = {
 								-- #if BEFORE 1.13.5
 								i(11923),	-- The Hammer of Grace
 								i(11920),	-- Wraith Scythe
@@ -2631,9 +2657,16 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						9441,	-- Dark Keeper Zimrel
 					},
 					["groups"] = {
-						i(11197, {	-- Dark Keeper Key
-							["description"] = "The Dark Coffer contains one or more random world drop BoEs. Usually greens.",
+						o(160845, {	-- Dark Coffer
+							["description"] = "Contains one or more random world drop BoEs. Usually greens. The named unique items found within are used to turn in Librams.",
+							["cost"] = {{ "i", 11197, 1 }},	-- Dark Keeper Key
+							["groups"] = {
+								i(11752),	-- Black Blood of the Tormented
+								i(11751),	-- Burning Essence
+								i(11753),	-- Eye of Kajal
+							},
 						}),
+						i(11197),	-- Dark Keeper Key
 					},
 				}),
 				e(378, {	-- General Angerforge
@@ -2838,13 +2871,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				e(387, {	-- Emperor Dagran Thaurissan
 					["creatureID"] = 9019,
 					["groups"] = {
-						classicAch(642, {	-- Blackrock Depths
+						ach(642, {	-- Blackrock Depths
 							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								4362,	-- The Fate of the Kingdom
 								4003,	-- The Royal Rescue
 							},
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						ach(5051, {	-- Blackrock Depths Guild Run

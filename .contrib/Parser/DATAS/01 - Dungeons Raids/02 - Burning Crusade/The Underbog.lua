@@ -4,6 +4,12 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(262, {	-- The Underbog
 		["lore"] = "Underbog is the 2nd 5-man instance within the Coilfang Reservoir found on the east side of the naga invested complex. The Underbog is home to the last vestiges of natural life left within Coilfang Reservoir that has not been completely stamped out by the Naga incursion. The only Naga presence in this section defends the structure they built to house their hydra god, Ghaz'an. The rest of the Underbog is a natural habitat, home to the most powerful species of animal life in Zangarmarsh.",
+		["zone-text-areaID"] = 3716,	-- The Underbog
+		["sins"] = {
+			"Coilfang: Underbog",
+			"Coilfang: The Underbog",
+			"Echsenkessel: Tiefensumpf",
+		},
 		["coord"] = { 54.24, 34.45, ZANGARMARSH },	-- The Underbog, Zangarmarsh
 		["mapID"] = COILFANG_RESERVOIR_UNDERBOG,
 		["lvl"] = lvlsquish(60, 60, 10),
@@ -99,8 +105,8 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						objective(1, {	-- 0/1 Brain of the Black Stalker
 							["provider"] = { "i", 24248 },	-- Brain of the Black Stalker
 						}),
-						i(28109),	-- Essence Infused Mushroom
-						i(28108),	-- Power Infused Mushroom
+						i(28109),	-- Essence-Infused Mushroom
+						i(28108),	-- Power-Infused Mushroom
 					},
 				}),
 				q(9719, {	-- Stalk the Stalker
@@ -112,8 +118,8 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						objective(1, {	-- 0/1 Brain of the Black Stalker
 							["provider"] = { "i", 24248 },	-- Brain of the Black Stalker
 						}),
-						i(28109),	-- Essence Infused Mushroom
-						i(28108),	-- Power Infused Mushroom
+						i(28109),	-- Essence-Infused Mushroom
+						i(28108),	-- Power-Infused Mushroom
 					},
 				}),
 			}),
@@ -201,10 +207,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(579, {	-- The Black Stalker
 					["creatureID"] = 17882,
 					["groups"] = {
-						classicAch(650, {	-- Underbog
+						ach(650, {	-- Underbog
 							-- #if BEFORE WRATH
 							["sourceQuest"] = 9719,	-- Stalk the Stalker
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						-- #if AFTER 7.3.5
@@ -334,7 +339,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(579, {	-- The Black Stalker
 						["creatureID"] = 17882,
 						["groups"] = {
-							ach(670),	-- Heroic: Underbog
+							ach(670, {	-- Heroic: Underbog
+								["timeline"] = { "added 3.0.1" },
+							}),
 							ach(5070, {	-- Heroic: Underbog Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),
@@ -372,13 +379,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					}),
 				},
 			}),
-			-- #if AFTER 9.1.5
-			d(TIMEWALKING_DUNGEON, {
-				["sym"] = {	-- link in Timewalking content
-					{"sub", "tw_instance", 262 },	-- this instance version of timewalking
-				},
-			}),
-			-- #endif
 		},
 	}),
 })));

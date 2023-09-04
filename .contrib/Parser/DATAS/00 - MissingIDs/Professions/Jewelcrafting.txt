@@ -82,7 +82,7 @@ r(73642),	-- Figurine - Jeweled Serpent
 r(73643),	-- Figurine - Dream Owl
 5.0.3.15890
 r(110420),	-- Jewelcrafting
-r(110955),	-- 
+r(110955),	--
 6.0.1.18179
 r(158750),	-- Jewelcrafting
 7.3.0.24473
@@ -134,11 +134,6 @@ r(382978),	-- Cataclysm Prospecting
 r(382979),	-- Northrend Prospecting
 r(382980),	-- Outland Prospecting
 r(382995),	-- Classic Prospecting
-10.1.5.49516
-r(412557),	-- TEST CRUSHING (DNT)
-r(413743),	-- Gem of the Nerubians
-r(413751),	-- Frostwyrm's Icy Gaze
-r(413752),	-- Frostwyrm's Frigid Stare
 
 
 
@@ -1097,7 +1092,7 @@ r(107766),	-- Powerful Primal Diamond
 r(107767),	-- Reverberating Primal Diamond
 r(107768),	-- Revitalizing Primal Diamond
 r(110420),	-- Jewelcrafting
-r(110955),	-- 
+r(110955),	--
 r(120045),	-- Jeweled Onyx Panther
 r(121841),	-- Ruby Panther
 r(121842),	-- Sapphire Panther
@@ -1508,8 +1503,3 @@ r(359672),	-- Crafter's Mark of the First Ones
 r(359701),	-- Vestige of the Eternal
 r(360016),	-- Aealic Harmonizing Stone \\ Ephemera Harmonizing Stone
 r(360317),	-- Devourer Essence Stone
-10.1.5.49516
-r(412557),	-- TEST CRUSHING (DNT)
-r(413743),	-- Gem of the Nerubians
-r(413751),	-- Frostwyrm's Icy Gaze
-r(413752),	-- Frostwyrm's Frigid Stare

@@ -37,6 +37,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(70720, {	-- Can't Have These
 					["coord"] = { 12.4, 42.4, THE_AZURE_SPAN },
 				}),
+				q(70787, {	-- Caught In a Dusk Storm
+					["coord"] = { 27.3, 45.7, THE_AZURE_SPAN },
+				}),
 				q(70631, {	-- Clearing the Skies
 					["coord"] = { 53.1, 32.8, THE_AZURE_SPAN },
 				}),

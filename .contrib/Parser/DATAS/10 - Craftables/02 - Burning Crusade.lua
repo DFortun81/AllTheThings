@@ -1,7 +1,7 @@
----------------------------------------------
+---------------------------------------------2.1
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
+root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_5 } }, {
 	prof(ALCHEMY, {
 		category(632, {	-- Cauldrons
 			i(32839),	-- Cauldron of Major Arcane Protection
@@ -93,16 +93,16 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 		prof(9788, {	-- Armorsmith
 			["description"] = "These items can only be crafted by Blacksmiths who have completed the Art of the Armorsmith quest chain.",
 			["groups"] = {
-				i(28483, {["timeline"]={"added 2.1.0","removed 4.0.3"}}),	-- Breastplate of Kings
-				i(28484, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Bulwark of Kings
-				i(28485, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Bulwark of the Ancient Kings
-				i(30069, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Earthforged Leggings
-				i(23565, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Embrace of the Twisting Nether
-				i(30074, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Heavy Earthforged Breastplate
-				i(23563, {["timeline"]={"added 2.1.0","removed 4.0.3"}}),	-- Nether Chain Shirt / Nether Plate Shirt[LEGION+]
-				i(30076, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Stormforged Hauberk
-				i(23564, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Twisting Nether Chain Shirt / Nether Plate Shirt[LEGION+]
-				i(30070, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Windforged Leggings
+				i(28483, {["timeline"] = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Breastplate of Kings
+				i(28484, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Bulwark of Kings
+				i(28485, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Bulwark of the Ancient Kings
+				i(30069, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Earthforged Leggings
+				i(23565, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Embrace of the Twisting Nether
+				i(30074, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Heavy Earthforged Breastplate
+				i(23563, {["timeline"] = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Nether Chain Shirt / Nether Plate Shirt[LEGION+]
+				i(30076, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Stormforged Hauberk
+				i(23564, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Twisting Nether Chain Shirt / Nether Plate Shirt[LEGION+]
+				i(30070, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Windforged Leggings
 			},
 		}),
 		prof(9787, {	-- Weaponsmith
@@ -111,48 +111,48 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 				prof(17041, {	-- Master Axesmith
 					["description"] = "These items can only be crafted by Master Axesmith specialized Weaponsmiths.",
 					["groups"] = {
-						i(28432, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Black Planar Edge
-						i(28436, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Bloodmoon
-						i(28434, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Lunar Crescent
-						i(28435, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Mooncleaver
-						i(30088, {["timeline"]={"added 2.0.1","removed 4.0.3","added 7.1.5"}}),	-- Skyforged Great Axe
-						i(30087, {["timeline"]={"added 2.0.1","removed 4.0.3","added 7.1.5"}}),	-- Stormforged Axe
-						i(28431, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- The Planar Edge
-						i(28433, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Wicked Edge of the Planes
+						i(28432, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Black Planar Edge
+						i(28436, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Bloodmoon
+						i(28434, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Lunar Crescent
+						i(28435, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Mooncleaver
+						i(30088, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3, ADDED_7_1_5}}),	-- Skyforged Great Axe
+						i(30087, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3, ADDED_7_1_5}}),	-- Stormforged Axe
+						i(28431, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- The Planar Edge
+						i(28433, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Wicked Edge of the Planes
 					},
 				}),
 				prof(17040, {	-- Master Hammersmith
 					["description"] = "These items can only be crafted by Master Hammersmith specialized Weaponsmiths.",
 					["groups"] = {
-						i(28441, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Deep Thunder
-						i(28438, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Dragonmaw
-						i(28439, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Dragonstrike
-						i(28437, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Drakefist Hammer
-						i(30093, {["timeline"]={"added 2.0.1","removed 4.0.3","added 7.1.5"}}),	-- Great Earthforged Hammer
-						i(30089, {["timeline"]={"added 2.0.1","removed 4.0.3","added 7.1.5"}}),	-- Lavaforged Warhammer
-						i(28442, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Stormherald
-						i(28440, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Thunder
+						i(28441, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Deep Thunder
+						i(28438, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Dragonmaw
+						i(28439, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Dragonstrike
+						i(28437, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Drakefist Hammer
+						i(30093, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3, ADDED_7_1_5}}),	-- Great Earthforged Hammer
+						i(30089, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3, ADDED_7_1_5}}),	-- Lavaforged Warhammer
+						i(28442, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Stormherald
+						i(28440, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Thunder
 					},
 				}),
 				prof(17039, {	-- Master Swordsmith
 					["description"] = "These items can only be crafted by Master Swordsmith specialized Weaponsmiths.",
 					["groups"] = {
-						i(28427, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Blazefury
-						i(28426, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Blazeguard
-						i(28425, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Fireguard
-						i(28428, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Lionheart Blade
-						i(28429, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Lionheart Champion
-						i(28430, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Lionheart Executioner
-						i(30086, {["timeline"]={"added 2.0.1","removed 4.0.3","added 7.1.5"}}),	-- Stoneforged Claymore
-						i(30077, {["timeline"]={"added 2.0.1","removed 4.0.3","added 7.1.5"}}),	-- Windforged Rapier
+						i(28427, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Blazefury
+						i(28426, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Blazeguard
+						i(28425, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Fireguard
+						i(28428, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Lionheart Blade
+						i(28429, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Lionheart Champion
+						i(28430, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Lionheart Executioner
+						i(30086, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3, ADDED_7_1_5}}),	-- Stoneforged Claymore
+						i(30077, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3, ADDED_7_1_5}}),	-- Windforged Rapier
 					},
 				}),
 				n(WEAPONS, {
 					["description"] = "These can be crafted by any Weaponsmith.",
 					["groups"] = {
-						i(30071, {["timeline"]={"added 2.0.1","removed 4.0.3","added 7.1.5"}}),	-- Light Earthforged Blade
-						i(30073, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Light Emberforged Hammer
-						i(30072, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Light Skyforged Axe
+						i(30071,  {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3, ADDED_7_1_5}}),	-- Light Earthforged Blade
+						i(30073, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Light Emberforged Hammer
+						i(30072, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Light Skyforged Axe
 					},
 				}),
 			},
@@ -162,13 +162,13 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 			i(23507),	-- Adamantite Breastplate
 			i(23506),	-- Adamantite Plate Bracers
 			i(23508),	-- Adamantite Plate Gloves
-			applyclassicphase(TBC_PHASE_TWO, i(30034, {["timeline"]={"added 2.1.0"}})),	-- Belt of the Guardian
+			applyclassicphase(TBC_PHASE_TWO, i(30034, {["timeline"] = {ADDED_2_1_0}})),	-- Belt of the Guardian
 			i(23537),	-- Black Felsteel Bracers
 			i(23539),	-- Blessed Bracers
-			applyclassicphase(TBC_PHASE_TWO, i(30033, {["timeline"]={"added 2.1.0"}})),	-- Boots of the Protecto
+			applyclassicphase(TBC_PHASE_TWO, i(30033, {["timeline"] = {ADDED_2_1_0}})),	-- Boots of the Protector
 			i(23538),	-- Bracers of the Green Fortress
-			applyclassicphase(TBC_PHASE_THREE, i(32571, {["timeline"]={"added 2.1.0"}})),	-- Dawnsteel Bracers
-			applyclassicphase(TBC_PHASE_THREE, i(32573, {["timeline"]={"added 2.1.0"}})),	-- Dawnsteel Shoulders
+			applyclassicphase(TBC_PHASE_THREE, i(32571, {["timeline"] = {ADDED_2_1_0}})),	-- Dawnsteel Bracers
+			applyclassicphase(TBC_PHASE_THREE, i(32573, {["timeline"] = {ADDED_2_1_0}})),	-- Dawnsteel Shoulders
 			i(23527),	-- Earthpeace Breastplate
 			i(23510),	-- Enchanted Adamantite Belt
 			i(23511),	-- Enchanted Adamantite Boots
@@ -192,8 +192,8 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 			i(23514),	-- Flamebane Gloves
 			i(23516),	-- Flamebane Helm
 			i(23532),	-- Gauntlets of the Iron Tower
-			applyclassicphase(TBC_PHASE_FIVE, i(34378, {["timeline"]={"added 2.4.0"}})),	-- Hard Khorium Battlefists
-			applyclassicphase(TBC_PHASE_FIVE, i(34377, {["timeline"]={"added 2.4.0"}})),	-- Hard Khorium Battleplate
+			applyclassicphase(TBC_PHASE_FIVE, i(34378,{["timeline"] = {ADDED_2_4_0}})),	-- Hard Khorium Battlefists
+			applyclassicphase(TBC_PHASE_FIVE, i(34377,{["timeline"] = {ADDED_2_4_0}})),	-- Hard Khorium Battleplate
 			i(23535),	-- Helm of the Stalwart Defender
 			i(31369),	-- Iceguard Breastplate
 			i(31371),	-- Iceguard Helm
@@ -205,43 +205,43 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 			i(23522),	-- Ragesteel Breastplate
 			i(23520),	-- Ragesteel Gloves
 			i(23521),	-- Ragesteel Helm
-			i(33173, {["timeline"]={"added 2.2.0"}}),	-- Ragesteel Shoulders
-			applyclassicphase(TBC_PHASE_TWO, i(30032, {["timeline"]={"added 2.1.0"}})),	-- Red Belt of Battle
-			applyclassicphase(TBC_PHASE_TWO, i(30031, {["timeline"]={"added 2.1.0"}})),	-- Red Havoc Boots
-			applyclassicphase(TBC_PHASE_THREE, i(32403, {["timeline"]={"added 2.1.0"}})),	-- Shadesteel Bracers
-			applyclassicphase(TBC_PHASE_THREE, i(32401, {["timeline"]={"added 2.1.0"}})),	-- Shadesteel Girdle
-			applyclassicphase(TBC_PHASE_THREE, i(32404, {["timeline"]={"added 2.1.0"}})),	-- Shadesteel Greaves
-			applyclassicphase(TBC_PHASE_THREE, i(32402, {["timeline"]={"added 2.1.0"}})),	-- Shadesteel Sabots
+			i(33173, {["timeline"] = {ADDED_2_2_0}}),	-- Ragesteel Shoulders
+			applyclassicphase(TBC_PHASE_TWO, i(30032, {["timeline"] = {ADDED_2_1_0}})),	-- Red Belt of Battle
+			applyclassicphase(TBC_PHASE_TWO, i(30031, {["timeline"] = {ADDED_2_1_0}})),	-- Red Havoc Boots
+			applyclassicphase(TBC_PHASE_THREE, i(32403, {["timeline"] = {ADDED_2_1_0}})),	-- Shadesteel Bracers
+			applyclassicphase(TBC_PHASE_THREE, i(32401, {["timeline"] = {ADDED_2_1_0}})),	-- Shadesteel Girdle
+			applyclassicphase(TBC_PHASE_THREE, i(32404, {["timeline"] = {ADDED_2_1_0}})),	-- Shadesteel Greaves
+			applyclassicphase(TBC_PHASE_THREE, i(32402, {["timeline"] = {ADDED_2_1_0}})),	-- Shadesteel Sabots
 			i(23533),	-- Steelgrip Gauntlets
 			i(23534),	-- Storm Helm
-			applyclassicphase(TBC_PHASE_FIVE, i(34379, {["timeline"]={"added 2.4.0"}})),	-- Sunblessed Breastplate
-			applyclassicphase(TBC_PHASE_FIVE, i(34380, {["timeline"]={"added 2.4.0"}})),	-- Sunblessed Gauntlets
-			applyclassicphase(TBC_PHASE_THREE, i(32568, {["timeline"]={"added 2.1.0"}})),	-- Swiftsteel Bracers
+			applyclassicphase(TBC_PHASE_FIVE, i(34379,{["timeline"] = {ADDED_2_4_0}})),	-- Sunblessed Breastplate
+			applyclassicphase(TBC_PHASE_FIVE, i(34380,{["timeline"] = {ADDED_2_4_0}})),	-- Sunblessed Gauntlets
+			applyclassicphase(TBC_PHASE_THREE, i(32568, {["timeline"] = {ADDED_2_1_0}})),	-- Swiftsteel Bracers
 			i(23526),	-- Swiftsteel Gloves
-			applyclassicphase(TBC_PHASE_THREE, i(32570, {["timeline"]={"added 2.1.0"}})),	-- Swiftsteel Shoulders
+			applyclassicphase(TBC_PHASE_THREE, i(32570, {["timeline"] = {ADDED_2_1_0}})),	-- Swiftsteel Shoulders
 			i(31364),	-- Wildguard Breastplate
 			i(31368),	-- Wildguard Helm
 			i(31367),	-- Wildguard Leggings
 			-- #if AFTER CATA
-			i(28483, {["timeline"]={"added 2.1.0","removed 4.0.3"}}),	-- Breastplate of Kings
-			i(28484, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Bulwark of Kings
-			i(28485, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Bulwark of the Ancient Kings
-			i(30069, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Earthforged Leggings
-			i(23565, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Embrace of the Twisting Nether
-			i(30074, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Heavy Earthforged Breastplate
-			i(23563, {["timeline"]={"added 2.1.0","removed 4.0.3"}}),	-- Nether Chain Shirt / Nether Plate Shirt[LEGION+]
-			i(30076, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Stormforged Hauberk
-			i(23564, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Twisting Nether Chain Shirt / Nether Plate Shirt[LEGION+]
-			i(30070, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Windforged Leggings
+			i(28483, {["timeline"] = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Breastplate of Kings
+			i(28484, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Bulwark of Kings
+			i(28485, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Bulwark of the Ancient Kings
+			i(30069, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Earthforged Leggings
+			i(23565, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Embrace of the Twisting Nether
+			i(30074, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Heavy Earthforged Breastplate
+			i(23563, {["timeline"] = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Nether Chain Shirt / Nether Plate Shirt[LEGION+]
+			i(30076, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Stormforged Hauberk
+			i(23564, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Twisting Nether Chain Shirt / Nether Plate Shirt[LEGION+]
+			i(30070, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Windforged Leggings
 			-- #endif
 		}),
 		filter(MISC, {
-			i(33185, {["timeline"]={"added 2.3.0"}}),	-- Adamantite Weapon Chain
-			i(25844, {["timeline"]={"added 2.0.1","removed 5.0.4"}}),	-- Adamantite Rod
+			i(33185, {["timeline"] = {ADDED_2_3_0}}),	-- Adamantite Weapon Chain
+			i(25844, {["timeline"] = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Adamantite Rod
 			i(23529),	-- Adamantite Sharpening Stone
 			i(28421),	-- Adamantite Weightstone
-			i(25845, {["timeline"]={"added 2.0.1","removed 5.0.4"}}),	-- Eternium Rod
-			i(25843, {["timeline"]={"added 2.0.1","removed 5.0.4"}}),	-- Fel Iron Rod
+			i(25845, {["timeline"] = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Eternium Rod
+			i(25843, {["timeline"] = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Fel Iron Rod
 			i(23528),	-- Fel Sharpening Stone
 			i(28420),	-- Fel Weightstone
 			i(23530),	-- Felsteel Shield Spike
@@ -264,38 +264,38 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 			i(23497),	-- Fel Iron Hatchet
 			i(23540),	-- Felsteel Longblade
 			i(23543),	-- Felsteel Reaper
-			i(29204, {["timeline"]={"added 2.0.1","removed 5.0.4"}}),	-- Felsteel Whisper Knives
-			i(32854, {["timeline"]={"added 2.3.0"}}),	-- Hammer of Righteous Might
+			i(29204, {["timeline"] = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Felsteel Whisper Knives
+			i(32854, {["timeline"] = {ADDED_2_3_0}}),	-- Hammer of Righteous Might
 			i(23556),	-- Hand of Eternity
 			i(23541),	-- Khorium Champion
 			i(23544),	-- Runic Hammer
 			-- #if AFTER CATA
-			i(28432, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Black Planar Edge
-			i(28427, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Blazefury
-			i(28426, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Blazeguard
-			i(28436, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Bloodmoon
-			i(28441, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Deep Thunder
-			i(28438, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Dragonmaw
-			i(28439, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Dragonstrike
-			i(28437, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Drakefist Hammer
-			i(28425, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Fireguard
-			i(30093, {["timeline"]={"added 2.0.1","removed 4.0.3","added 7.1.5"}}),	-- Great Earthforged Hammer
-			i(30089, {["timeline"]={"added 2.0.1","removed 4.0.3","added 7.1.5"}}),	-- Lavaforged Warhammer
-			i(30073, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Light Emberforged Hammer
-			i(30072, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Light Skyforged Axe
-			i(28428, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Lionheart Blade
-			i(28429, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Lionheart Champion
-			i(28430, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Lionheart Executioner
-			i(28434, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Lunar Crescent
-			i(28435, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Mooncleaver
-			i(30088, {["timeline"]={"added 2.0.1","removed 4.0.3","added 7.1.5"}}),	-- Skyforged Great Axe
-			i(30086, {["timeline"]={"added 2.0.1","removed 4.0.3","added 7.1.5"}}),	-- Stoneforged Claymore
-			i(30087, {["timeline"]={"added 2.0.1","removed 4.0.3","added 7.1.5"}}),	-- Stormforged Axe
-			i(28442, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Stormherald
-			i(28431, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- The Planar Edge
-			i(28440, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Thunder
-			i(28433, {["timeline"]={"added 2.0.1","removed 4.0.3"}}),	-- Wicked Edge of the Planes
-			i(30077, {["timeline"]={"added 2.0.1","removed 4.0.3","added 7.1.5"}}),	-- Windforged Rapier
+			i(28432, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Black Planar Edge
+			i(28427, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Blazefury
+			i(28426, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Blazeguard
+			i(28436, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Bloodmoon
+			i(28441, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Deep Thunder
+			i(28438, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Dragonmaw
+			i(28439, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Dragonstrike
+			i(28437, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Drakefist Hammer
+			i(28425, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Fireguard
+			i(30093, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3, ADDED_7_1_5}}),	-- Great Earthforged Hammer
+			i(30089, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3, ADDED_7_1_5}}),	-- Lavaforged Warhammer
+			i(30073, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Light Emberforged Hammer
+			i(30072, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Light Skyforged Axe
+			i(28428, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Lionheart Blade
+			i(28429, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Lionheart Champion
+			i(28430, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Lionheart Executioner
+			i(28434, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Lunar Crescent
+			i(28435, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Mooncleaver
+			i(30088, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3, ADDED_7_1_5}}),	-- Skyforged Great Axe
+			i(30086, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3, ADDED_7_1_5}}),	-- Stoneforged Claymore
+			i(30087, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3, ADDED_7_1_5}}),	-- Stormforged Axe
+			i(28442, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Stormherald
+			i(28431, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- The Planar Edge
+			i(28440, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Thunder
+			i(28433, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Wicked Edge of the Planes
+			i(30077, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3, ADDED_7_1_5}}),	-- Windforged Rapier
 			-- #endif
 		}),
 	}),
@@ -334,15 +334,13 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 			i(22448),	-- Small Prismatic Shard
 			i(22450),	-- Void Crystal
 		}),
-		applyclassicphase(WRATH_PHASE_ONE, cat(681, sharedDataSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Boot Enchantments
+		applyclassicphase(WRATH_PHASE_ONE, n(ARMOR_ENCHANTMENTS, sharedDataSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 			i(38944),	-- Enchant Boots - Boar's Speed
 			i(38943),	-- Enchant Boots - Cat's Swiftness
 			i(37603),	-- Enchant Boots - Dexterity
 			i(38909),	-- Enchant Boots - Fortitude
 			i(38910),	-- Enchant Boots - Surefooted
 			i(38908),	-- Enchant Boots - Vitality
-		}))),
-		applyclassicphase(WRATH_PHASE_ONE, cat(682, sharedDataSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Bracer Enchantments
 			i(38897),	-- Enchant Bracer - Brawn
 			i(38902),	-- Enchant Bracer - Fortitude
 			i(38899),	-- Enchant Bracer - Greater Dodge / TBC: Major Defense
@@ -352,30 +350,24 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 			i(38898),	-- Enchant Bracer - Stats
 			i(38900),	-- Enchant Bracer - Superior Healing
 			i(38901),	-- Enchant Bracer - Versatility Prime / TBC: Restore Mana Prime
-		}))),
-		applyclassicphase(WRATH_PHASE_ONE, cat(683, sharedDataSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Chest Enchantments
 			i(38999),	-- Enchant Chest - Dodge / TBC: Defense
 			i(38911),	-- Enchant Chest - Exceptional Health
 			i(38913),	-- Enchant Chest - Exceptional Stats
 			i(38930),	-- Enchant Chest - Major Armor / TBC:Major Resilience
 			i(38928),	-- Enchant Chest - Major Versatility / TBC: Major Spirit
 			i(38929),	-- Enchant Chest - Versatility Prime / TBC: Restore Mana Prime
-		}))),
-		applyclassicphase(WRATH_PHASE_ONE, cat(684, sharedDataSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Cloak Enchantments
 			i(38940),	-- Enchant Cloak - Greater Agility
-			i(38941, {["timeline"]={"added 3.0.1","removed 5.0.4"}}),	-- Enchant Cloak - Greater Arcane Resistance
+			i(38941, {["timeline"] = {ADDED_3_0_2, REMOVED_5_0_4}}),	-- Enchant Cloak - Greater Arcane Resistance
 			i(39000),	-- Enchant Cloak - Greater Dodge / TBC: Steelweave
-			i(38942, {["timeline"]={"added 3.0.1","removed 5.0.4"}}),	-- Enchant Cloak - Greater Shadow Resistance
+			i(38942, {["timeline"] = {ADDED_3_0_2, REMOVED_5_0_4}}),	-- Enchant Cloak - Greater Shadow Resistance
 			i(38914),	-- Enchant Cloak - Major Armor
-			i(38915, {["timeline"]={"added 3.0.1","removed 5.0.4"}}),	-- Enchant Cloak - Major Resistance
+			i(38915, {["timeline"] = {ADDED_3_0_2, REMOVED_5_0_4}}),	-- Enchant Cloak - Major Resistance
 			i(38939),	-- Enchant Cloak - Empowerment
 			-- #if AFTER BFA
 			i(38895),	-- Enchant Cloak - Dodge
 			i(38893),	-- Enchant Cloak - Stealth
 			i(38894),	-- Enchant Cloak - Subtlety
 			-- #endif
-		}))),
-		applyclassicphase(WRATH_PHASE_ONE, cat(685, sharedDataSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Glove Enchantments
 			i(38934),	-- Enchant Gloves - Assault
 			i(38931),	-- Enchant Gloves - Blasting
 			i(38936),	-- Enchant Gloves - Major Healing
@@ -387,35 +379,29 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 			i(38885),	-- Enchant Gloves - Threat
 			-- #endif
 		}))),
-		applyclassicphase(LEGION_PHASE_ONE, filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {
+		filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
 			i(138789, {	-- Tome of Illusions: Outland
-				ill(5390),	-- Battlemaster
-				ill(2674),	-- Spellsurge
-				ill(5864),	-- Netherflame
+				ill(5390),	-- Battlemaster (ILLUSION!)
+				ill(2674),	-- Spellsurge (ILLUSION!)
+				ill(5864),	-- Netherflame (ILLUSION!)
 			}),
-		}))),
-		cat(688, {	-- Oils
+		})),
+		filter(MISC, {
+			i(22460),	-- Prismatic Sphere
+			i(22462, {["timeline"] = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Runed Adamantite Rod
+			i(22463, {["timeline"] = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Runed Eternium Rod
+			i(22461, {["timeline"] = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Runed Fel Iron Rod
 			i(22521),	-- Superior Mana Oil
 			i(22522),	-- Superior Wizard Oil
-		}),
-		cat(689, {	-- Other
-			i(22460),	-- Prismatic Sphere
 			i(22459),	-- Void Sphere
 		}),
-		cat(697, sharedDataSelf({ ["timeline"] = { "added 2.0.1", "removed 5.0.4" } }, {	-- Rods
-			i(22462),	-- Runed Adamantite Rod
-			i(22463),	-- Runed Eternium Rod
-			i(22461),	-- Runed Fel Iron Rod
-		})),
-		applyclassicphase(WRATH_PHASE_ONE, cat(687, sharedDataSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Shield Enchantments
+		applyclassicphase(WRATH_PHASE_ONE, n(WEAPON_ENCHANTMENTS, sharedDataSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 			i(38949),	-- Enchant Shield - Armor / TBC: Resilience
 			i(38905),	-- Enchant Shield - Intellect
 			i(38904),	-- Enchant Shield - Lesser Dodge / TBC: Tough Shield
 			i(38945),	-- Enchant Shield - Major Stamina
 			i(38906),	-- Enchant Shield - Parry / TBC: Shield Block
-			i(38907, {["timeline"]={"added 3.0.1","removed 5.0.4"}}),	-- Enchant Shield - Resistance
-		}))),
-		applyclassicphase(WRATH_PHASE_ONE, cat(686, sharedDataSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Weapon Enchantments
+			i(38907, {["timeline"] = {ADDED_3_0_2, REMOVED_5_0_4}}),	-- Enchant Shield - Resistance
 			i(38927),	-- Enchant Weapon - Battlemaster
 			i(38948),	-- Enchant Weapon - Executioner
 			i(38998),	-- Enchant Weapon - Deathfrost
@@ -578,23 +564,44 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 		i(27429),	-- Zangarian Sporefish
 	}),
 	prof(HERBALISM, {
-		["description"] = "The following items can be gathered by Herbalists out in the world.",
-		["groups"] = {
+		n(DISCOVERY, {
+			r(55502, {	-- Lifeblood (Rank 5) / Rank 6 [CATA]
+				-- #if AFTER CATA
+				["rank"] = 6,
+				-- #else
+				["rank"] = 5,
+				-- #endif
+				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
+			}),
+		}),
+		spell(2366, {	-- Herb Gathering
 			i(22790),	-- Ancient Lichen
+			i(108348, {["timeline"] = {ADDED_6_0_2}}),	-- Ancient Lichen Petal
 			i(22786),	-- Dreaming Glory
+			i(108345, {["timeline"] = {ADDED_6_0_2}}),	-- Dreaming Glory Petal
 			i(22795),	-- Fel Blossom
 			i(22794),	-- Fel Lotus
 			i(22785),	-- Felweed
+			i(108344, {["timeline"] = {ADDED_6_0_2}}),	-- Felweed Stalk
 			i(22788),	-- Flame Cap
 			i(22793),	-- Mana Thistle
-			i(35229),	-- Nether Residue
+			i(108351, {["timeline"] = {ADDED_6_0_2}}),	-- Mana Thistle Leaf
+			i(35229, {["timeline"] = {ADDED_2_4_0}}),	-- Nether Residue
 			i(22791),	-- Netherbloom
-			i(32468),	-- Netherdust Pollen
+			i(108349, {["timeline"] = {ADDED_6_0_2}}),	-- Netherbloom Leaf
+			i(32468, {["timeline"] = {ADDED_2_1_0}}),	-- Netherdust Pollen
+			i(22797),	-- Nightmare Seed
 			i(22792),	-- Nightmare Vine
+			i(108350, {["timeline"] = {ADDED_6_0_2}}),	-- Nightmare Vine Stem
 			i(22787),	-- Ragveil
+			i(108346, {["timeline"] = {ADDED_6_0_2}}),	-- Ragveil Cap
 			i(22789),	-- Terocone
+			i(108347, {["timeline"] = {ADDED_6_0_2}}),	-- Terocone Leaf
 			i(24401),	-- Unidentified Plant Parts
-		},
+			-- Not Herb --
+			i(22575),	-- Mote of Life
+			i(22576),	-- Mote of Mana
+		}),
 	}),
 	-- #if AFTER WRATH
 	prof(INSCRIPTION, {
@@ -727,319 +734,175 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 		}),
 	}),
 	prof(LEATHERWORKING, {
+		-- #if BEFORE CATA
 		prof(10656, {	-- Dragonscale Leatherworking
 			["description"] = "These items can only be crafted by Leatherworkers who have completed the associated quest.",
 			["groups"] = {
-				category(932, {	-- Chest
-					applyclassicphase(TBC_PHASE_ONE, i(29515, {	-- Ebon Netherscale Breastplate
-						["timeline"] = {
-							"added 2.0.1.6180",
-							"removed 4.0.1.13287",
-						},
-					})),
-					-- #if BEFORE CATA
-					applyclassicphase(TBC_PHASE_ONE, i(29975)),	-- Golden Dragonstrike Breastplate
-					-- #endif
-					applyclassicphase(TBC_PHASE_ONE, i(29519, {	-- Netherstrike Breastplate
-						["timeline"] = {
-							"added 2.0.1.6180",
-							"removed 4.0.1.13287",
-						},
-					})),
-				}),
-				category(933, {	-- Bracers
-					applyclassicphase(TBC_PHASE_ONE, i(29517, {	-- Ebon Netherscale Bracers
-						["timeline"] = {
-							"added 2.0.1.6180",
-							"removed 4.0.1.13287",
-						},
-					})),
-					applyclassicphase(TBC_PHASE_ONE, i(29521, {	-- Netherstrike Bracers
-						["timeline"] = {
-							"added 2.0.1.6180",
-							"removed 4.0.1.13287",
-						},
-					})),
-				}),
-				category(935, {	-- Belts
-					applyclassicphase(TBC_PHASE_ONE, i(29516, {	-- Ebon Netherscale Belt
-						["timeline"] = {
-							"added 2.0.1.6180",
-							"removed 4.0.1.13287",
-						},
-					})),
-					applyclassicphase(TBC_PHASE_ONE, i(29520, {	-- Netherstrike Belt
-						["timeline"] = {
-							"added 2.0.1.6180",
-							"removed 4.0.1.13287",
-						},
-					})),
-				}),
-				-- #if BEFORE CATA
-				category(936, {	-- Pants
-					applyclassicphase(TBC_PHASE_ONE, i(29971)),	-- Dragonstrike Leggings
-				}),
-				-- #endif
+				i(29971),	-- Dragonstrike Leggings
+				i(29516, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Ebon Netherscale Belt
+				i(29517, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Ebon Netherscale Bracers
+				i(29515, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Ebon Netherscale Breastplate
+				i(29975),	-- Golden Dragonstrike Breastplate
+				i(29520, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Netherstrike Belt
+				i(29521, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Netherstrike Bracers
+				i(29519, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Netherstrike Breastplate
 			},
 		}),
 		prof(10658, {	-- Elemental Leatherworking
 			["description"] = "These items can only be crafted by Leatherworkers who have completed the associated quest.",
 			["groups"] = {
-				category(932, {	-- Chest
-					-- #if BEFORE CATA
-					applyclassicphase(TBC_PHASE_ONE, i(29973)),	-- Primalstorm Breastplate
-					-- #endif
-					applyclassicphase(TBC_PHASE_ONE, i(29525, {	-- Primalstrike Vest
-						["timeline"] = {
-							"added 2.0.1.6180",
-							"removed 4.0.1.13287",
-						},
-					})),
-				}),
-				category(933, {	-- Bracers
-					applyclassicphase(TBC_PHASE_ONE, i(29527, {	-- Primalstrike Bracers
-						["timeline"] = {
-							"added 2.0.1.6180",
-							"removed 4.0.1.13287",
-						},
-					})),
-				}),
-				category(935, {	-- Belts
-					applyclassicphase(TBC_PHASE_ONE, i(29526, {	-- Primalstrike Belt
-						["timeline"] = {
-							"added 2.0.1.6180",
-							"removed 4.0.1.13287",
-						},
-					})),
-				}),
-				-- #if BEFORE CATA
-				category(936, {	-- Pants
-					applyclassicphase(TBC_PHASE_ONE, i(29964)),	-- Blackstorm Leggings
-				}),
-				-- #endif
+				i(29964),	-- Blackstorm Leggings
+				i(29973),	-- Primalstorm Breastplate
+				i(29526, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Primalstrike Belt
+				i(29527, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Primalstrike Bracers
+				i(29525, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Primalstrike Vest
 			},
 		}),
 		prof(10660, {	-- Tribal Leatherworking
 			["description"] = "These items can only be crafted by Leatherworkers who have completed the associated quest.",
 			["groups"] = {
-				category(932, {	-- Chest
-					-- #if BEFORE CATA
-					applyclassicphase(TBC_PHASE_ONE, i(29974)),	-- Living Crystal Breastplate
-					-- #endif
-					applyclassicphase(TBC_PHASE_ONE, i(29522, {	-- Windhawk Hauberk
-						["timeline"] = {
-							"added 2.0.1.6180",
-							"removed 4.0.1.13287",
-						},
-					})),
-				}),
-				category(933, {	-- Bracers
-					applyclassicphase(TBC_PHASE_ONE, i(29523, {	-- Windhawk Bracers
-						["timeline"] = {
-							"added 2.1.0.6655",
-							"removed 4.0.1.13287",
-						},
-					})),
-				}),
-				category(935, {	-- Belts
-					applyclassicphase(TBC_PHASE_ONE, i(29524, {	-- Windhawk Belt
-						["timeline"] = {
-							"added 2.1.0.6655",
-							"removed 4.0.1.13287",
-						},
-					})),
-				}),
-				-- #if BEFORE CATA
-				category(936, {	-- Pants
-					applyclassicphase(TBC_PHASE_ONE, i(29970)),	-- Wildfeather Leggings
-				}),
-				-- #endif
+				i(29974),	-- Living Crystal Breastplate
+				i(29970),	-- Wildfeather Leggings
+				i(29522, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Windhawk Hauberk
+				i(29523, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Windhawk Bracers
+				i(29524, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Windhawk Belt
 			},
 		}),
-		category(927, {	-- Materials
-			i(23793),	-- Heavy Knothide Leather
-			i(21887),	-- Knothide Leather
-		}),
-		category(928, {	-- Armor Kits
-			i(29488, {	-- Arcane Armor Kit
-				["timeline"] = { "removed 5.0.4" },
+		-- #endif
+		n(ARMOR, {
+			n(BACK, {
+				applyclassicphase(TBC_PHASE_THREE, i(33122, {["timeline"] = {ADDED_2_2_0}})),	-- Cloak of Darkness
 			}),
+			filter(LEATHER, {
+				applyclassicphase(TBC_PHASE_TWO, i(30040, {["timeline"] = {ADDED_2_1_0}})),	-- Belt of Deep Shadow
+				applyclassicphase(TBC_PHASE_TWO, i(30042, {["timeline"] = {ADDED_2_1_0}})),	-- Belt of Natural Power
+				i(29500),	-- Blastguard Belt
+				i(29499),	-- Blastguard Boots
+				i(29498),	-- Blastguard Pants
+				applyclassicphase(TBC_PHASE_TWO, i(30041, {["timeline"] = {ADDED_2_1_0}})),	-- Boots of Natural Grace
+				applyclassicphase(TBC_PHASE_TWO, i(30039, {["timeline"] = {ADDED_2_1_0}})),	-- Boots of Utter Darkness
+				applyclassicphase(TBC_PHASE_THREE, i(32582)),	-- Bracers of Renewed Life
+				applyclassicphase(TBC_PHASE_FIVE, i(34369, {["timeline"] = {ADDED_2_4_0}})),	-- Carapace of Sun and Shadow
+				i(29503),	-- Cobrascale Gloves
+				i(29502),	-- Cobrascale Hood
+				i(29497),	-- Enchanted Clefthoof Boots
+				i(29496),	-- Enchanted Clefthoof Gloves
+				i(29495),	-- Enchanted Clefthoof Leggings
+				i(25686),	-- Fel Leather Boots
+				i(25685),	-- Fel Leather Gloves
+				i(25687),	-- Fel Leather Leggings
+				applyclassicphase(TBC_PHASE_FIVE, i(34370, {["timeline"] = {ADDED_2_4_0}})),	-- Gloves of Immortal Dusk
+				i(29506),	-- Gloves of the Living Touch
+				i(25691),	-- Heavy Clefthoof Boots
+				i(25690),	-- Heavy Clefthoof Leggings
+				i(25689),	-- Heavy Clefthoof Vest
+				i(29505),	-- Hood of Primal Life
+				applyclassicphase(TBC_PHASE_THREE, i(32393, {["timeline"] = {ADDED_2_1_0}})),	-- Redeemed Soul Cinch
+				applyclassicphase(TBC_PHASE_THREE, i(32396, {["timeline"] = {ADDED_2_1_0}})),	-- Redeemed Soul Legguards
+				applyclassicphase(TBC_PHASE_THREE, i(32394, {["timeline"] = {ADDED_2_1_0}})),	-- Redeemed Soul Moccasins
+				applyclassicphase(TBC_PHASE_THREE, i(32395, {["timeline"] = {ADDED_2_1_0}})),	-- Redeemed Soul Wristguards
+				applyclassicphase(TBC_PHASE_THREE, i(33204, {["timeline"] = {ADDED_2_2_0}})),	-- Shadowprowler's Chestguard
+				applyclassicphase(TBC_PHASE_THREE, i(32583, {["timeline"] = {ADDED_2_1_0}})),	-- Shoulderpads of Renewed Life
+				i(25682),	-- Stylin' Jungle Hat
+				i(25680),	-- Stylin' Purple Hat
+				applyclassicphase(TBC_PHASE_THREE, i(32580, {["timeline"] = {ADDED_2_1_0}})),	-- Swiftstrike Bracers
+				applyclassicphase(TBC_PHASE_THREE, i(32581, {["timeline"] = {ADDED_2_1_0}})),	-- Swiftstrike Shoulders
+				i(25669),	-- Thick Draenic Gloves
+				i(25670),	-- Thick Draenic Pants
+				i(25668),	-- Thick Draenic Boots
+				i(25671),	-- Thick Draenic Vest
+				i(29504),	-- Windscale Hood
+				i(29507),	-- Windslayer Wraps
+
+
+				-- #if AFTER CATA
+				i(29973),	-- Primalstorm Breastplate
+				i(29526, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Primalstrike Belt
+				i(29527, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Primalstrike Bracers
+				i(29525, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Primalstrike Vest
+
+				i(29974),	-- Living Crystal Breastplate
+				i(29522, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Windhawk Hauberk
+				i(29523, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Windhawk Bracers
+				i(29524, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Windhawk Belt
+				-- #endif
+			}),
+			filter(MAIL, {
+				applyclassicphase(TBC_PHASE_TWO, i(30046, {["timeline"] = {ADDED_2_1_0}})),	-- Belt of the Black Eagle
+				applyclassicphase(TBC_PHASE_THREE, i(32574, {["timeline"] = {ADDED_2_1_0}})),	-- Bindings of Lightning Reflexes
+				applyclassicphase(TBC_PHASE_THREE, i(32398, {["timeline"] = {ADDED_2_1_0}})),	-- Boots of Shackled Souls
+				applyclassicphase(TBC_PHASE_TWO, i(30045, {["timeline"] = {ADDED_2_1_0}})),	-- Boots of the Crimson Hawk
+				applyclassicphase(TBC_PHASE_THREE, i(32399, {["timeline"] = {ADDED_2_1_0}})),	-- Bracers of Shackled Souls
+				i(29512),	-- Earthen Netherscale Boots
+				applyclassicphase(TBC_PHASE_FIVE, i(34373, {["timeline"] = {ADDED_2_4_0}})),	-- Embrace of the Phoenix
+				i(29491),	-- Enchanted Felscale Boots
+				i(29490),	-- Enchanted Felscale Gloves
+				i(29489),	-- Enchanted Felscale Leggings
+				i(25654),	-- Felscale Gloves
+				i(25655),	-- Felscale Boots
+				i(25656),	-- Felscale Pants
+				i(25657),	-- Felscale Breastplate
+				i(25695),	-- Felstalker Belt
+				i(25697),	-- Felstalker Bracers
+				i(25696),	-- Felstalker Breastplate
+				i(29494),	-- Flamescale Belt
+				i(29493),	-- Flamescale Boots
+				i(29492),	-- Flamescale Leggings
+				applyclassicphase(TBC_PHASE_FIVE, i(34374, {["timeline"] = {ADDED_2_4_0}})),	-- Fletcher's Gloves of the Phoenix
+				applyclassicphase(TBC_PHASE_THREE, i(32400, {["timeline"] = {ADDED_2_1_0}})),	-- Greaves of Shackled Souls
+				applyclassicphase(TBC_PHASE_TWO, i(30043, {["timeline"] = {ADDED_2_1_0}})),	-- Hurricane Boots
+				applyclassicphase(TBC_PHASE_FIVE, i(34371, {["timeline"] = {ADDED_2_4_0}})),	-- Leather Chestguard of the Sun
+				applyclassicphase(TBC_PHASE_FIVE, i(34372, {["timeline"] = {ADDED_2_4_0}})),	-- Leather Gauntlets of the Sun
+				i(29508),	-- Living Dragonscale Helm
+				applyclassicphase(TBC_PHASE_THREE, i(32577, {["timeline"] = {ADDED_2_1_0}})),	-- Living Earth Bindings
+				applyclassicphase(TBC_PHASE_THREE, i(32579, {["timeline"] = {ADDED_2_1_0}})),	-- Living Earth Shoulders
+				applyclassicphase(TBC_PHASE_TWO, i(30044, {["timeline"] = {ADDED_2_1_0}})),	-- Monsoon Belt
+				i(29511),	-- Netherdrake Gloves
+				i(29510),	-- Netherdrake Helm
+				i(25694),	-- Netherfury Belt
+				i(25693),	-- Netherfury Boots
+				i(25692),	-- Netherfury Leggings
+				i(25662),	-- Scaled Draenic Pants
+				i(25661),	-- Scaled Draenic Gloves
+				i(25660),	-- Scaled Draenic Vest
+				i(25659),	-- Scaled Draenic Boots
+				applyclassicphase(TBC_PHASE_THREE, i(32575, {["timeline"] = {ADDED_2_1_0}})),	-- Shoulders of Lightning Reflexes
+				i(25681),	-- Stylin' Adventure Hat
+				i(25683),	-- Stylin' Crimson Hat
+				applyclassicphase(TBC_PHASE_FIVE, i(34375, {["timeline"] = {ADDED_2_4_0}})),	-- Sun-Drenched Scale Chestguard
+				applyclassicphase(TBC_PHASE_FIVE, i(34376, {["timeline"] = {ADDED_2_4_0}})),	-- Sun-Drenched Scale Gloves
+				i(29514),	-- Thick Netherscale Breastplate
+				applyclassicphase(TBC_PHASE_THREE, i(32397, {["timeline"] = {ADDED_2_1_0}})),	-- Waistguard of Shackled Souls
+				i(25673),	-- Wild Draenish Boots
+				i(25674),	-- Wild Draenish Gloves
+				i(25675),	-- Wild Draenish Leggings
+				i(25676),	-- Wild Draenish Vest
+				i(29509),	-- Windstrike Gloves
+				-- #if AFTER CATA
+				i(29516, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Ebon Netherscale Belt
+				i(29517, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Ebon Netherscale Bracers
+				i(29515, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Ebon Netherscale Breastplate
+				i(29975),	-- Golden Dragonstrike Breastplate
+				i(29520, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Netherstrike Belt
+				i(29521, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Netherstrike Bracers
+				i(29519, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Netherstrike Breastplate
+				-- #endif
+			}),
+		}),
+		filter(MISC, {
+			i(29488, {["timeline"] = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Arcane Armor Kit
+			i(34490, {["timeline"] = {ADDED_2_3_0}}),	-- Bag of Many Hides
 			i(29534),	-- Clefthide Leg Armor
 			i(29533),	-- Cobrahide Leg Armor
 			i(25679),	-- Comfortable Insoles
-			i(29485, {	-- Flame Armor Kit
-				["timeline"] = { "removed 5.0.4" },
-			}),
-			i(29486, {	-- Frost Armor Kit
-				["timeline"] = { "removed 5.0.4" },
-			}),
-			i(34207),	-- Glove Reinforcements
-			i(34330),	-- Heavy Knothide Armor Kit
-			i(25650),	-- Knothide Armor Kit
-			i(25652),	-- Magister's Armor Kit
-			i(29487, {	-- Nature Armor Kit
-				["timeline"] = { "removed 5.0.4" },
-			}),
-			i(29536),	-- Nethercleft Leg Armor
-			i(29535),	-- Nethercobra Leg Armor
-			i(29483, {	-- Shadow Armor Kit
-				["timeline"] = { "removed 5.0.4" },
-			}),
-			i(25651),	-- Vindicator's Armor Kit
-		}),
-		category(929, {	-- Bags
-			i(34490),	-- Bag of Many Hides
-			applyclassicphase(TBC_PHASE_FOUR, i(34099, {	-- Knothide Ammo Pouch
-				["timeline"] = {
-					"added 2.3.0.7382",
-					"removed 4.0.1.13287",
-				},
-			})),
-			applyclassicphase(TBC_PHASE_FOUR, i(34100, {	-- Knothide Quiver
-				["timeline"] = {
-					"added 2.3.0.7382",
-					"removed 4.0.1.13287",
-				},
-			})),
-			i(34482),	-- Leatherworker's Satchel
-			applyclassicphase(TBC_PHASE_THREE, i(34106, {	-- Netherscale Ammo Pouch
-				["timeline"] = {
-					"added 2.3.0.7382",
-					"removed 4.0.1.13287",
-				},
-			})),
-			applyclassicphase(TBC_PHASE_THREE, i(34105, {	-- Quiver of a Thousand Feathers
-				["timeline"] = {
-					"added 2.3.0.7382",
-					"removed 4.0.1.13287",
-				},
-			})),
-			i(29540),	-- Reinforced Mining Bag
-		}),
-		category(930, {	-- Helms
-			i(29502),	-- Cobrascale Hood
-			i(29505),	-- Hood of Primal Life
-			i(29508),	-- Living Dragonscale Helm
-			i(29510),	-- Netherdrake Helm
-			i(25681),	-- Stylin' Adventure Hat
-			i(25683),	-- Stylin' Crimson Hat
-			i(25682),	-- Stylin' Jungle Hat
-			i(25680),	-- Stylin' Purple Hat
-			i(29504),	-- Windscale Hood
-		}),
-		category(931, {	-- Shoulders
-			applyclassicphase(TBC_PHASE_THREE, i(32579)),	-- Living Earth Shoulders
-			applyclassicphase(TBC_PHASE_THREE, i(32583)),	-- Shoulderpads of Renewed Life
-			applyclassicphase(TBC_PHASE_THREE, i(32575)),	-- Shoulders of Lightning Reflexes
-			applyclassicphase(TBC_PHASE_THREE, i(32581)),	-- Swiftstrike Shoulders
-		}),
-		category(932, {	-- Chest
-			applyclassicphase(TBC_PHASE_FIVE, i(34369)),	-- Carapace of Sun and Shadow
-			applyclassicphase(TBC_PHASE_FIVE, i(34373)),	-- Embrace of the Phoenix
-			i(25657),	-- Felscale Breastplate
-			i(25696),	-- Felstalker Breastplate
-			-- #if AFTER CATA
-			applyclassicphase(TBC_PHASE_ONE, i(29975)),	-- Golden Dragonstrike Breastplate
-			-- #endif
-			i(25689),	-- Heavy Clefthoof Vest
-			applyclassicphase(TBC_PHASE_FIVE, i(34371)),	-- Leather Chestguard of the Sun
-			-- #if AFTER CATA
-			applyclassicphase(TBC_PHASE_ONE, i(29974)),	-- Living Crystal Breastplate
-			applyclassicphase(TBC_PHASE_ONE, i(29973)),	-- Primalstorm Breastplate
-			-- #endif
-			i(25660),	-- Scaled Draenic Vest
-			applyclassicphase(TBC_PHASE_THREE, i(33204)),	-- Shadowprowler's Chestguard
-			applyclassicphase(TBC_PHASE_FIVE, i(34375)),	-- Sun-Drenched Scale Chestguard
-			i(25671),	-- Thick Draenic Vest
-			i(29514),	-- Thick Netherscale Breastplate
-			i(25676),	-- Wild Draenish Vest
-		}),
-		category(933, {	-- Bracers
-			applyclassicphase(TBC_PHASE_THREE, i(32574)),	-- Bindings of Lightning Reflexes
-			applyclassicphase(TBC_PHASE_THREE, i(32582)),	-- Bracers of Renewed Life
-			applyclassicphase(TBC_PHASE_THREE, i(32399)),	-- Bracers of Shackled Souls
-			i(25697),	-- Felstalker Bracers
-			applyclassicphase(TBC_PHASE_THREE, i(32577)),	-- Living Earth Bindings
-			applyclassicphase(TBC_PHASE_THREE, i(32395)),	-- Redeemed Soul Wristguards
-			applyclassicphase(TBC_PHASE_THREE, i(32580)),	-- Swiftstrike Bracers
-		}),
-		category(934, {	-- Gloves
-			i(29503),	-- Cobrascale Gloves
-			i(29496),	-- Enchanted Clefthoof Gloves
-			i(29490),	-- Enchanted Felscale Gloves
-			i(25685),	-- Fel Leather Gloves
-			i(25654),	-- Felscale Gloves
-			applyclassicphase(TBC_PHASE_FIVE, i(34374)),	-- Fletcher's Gloves of the Phoenix
-			applyclassicphase(TBC_PHASE_FIVE, i(34370)),	-- Gloves of Immortal Dusk
-			i(29506),	-- Gloves of the Living Touch
-			applyclassicphase(TBC_PHASE_FIVE, i(34372)),	-- Leather Gauntlets of the Sun
-			i(29511),	-- Netherdrake Gloves
-			i(25661),	-- Scaled Draenic Gloves
-			applyclassicphase(TBC_PHASE_FIVE, i(34376)),	-- Sun-Drenched Scale Gloves
-			i(25669),	-- Thick Draenic Gloves
-			i(25674),	-- Wild Draenish Gloves
-			i(29507),	-- Windslayer Wraps
-			i(29509),	-- Windstrike Gloves
-		}),
-		category(935, {	-- Belts
-			applyclassicphase(TBC_PHASE_TWO, i(30040)),	-- Belt of Deep Shadow
-			applyclassicphase(TBC_PHASE_TWO, i(30042)),	-- Belt of Natural Power
-			applyclassicphase(TBC_PHASE_TWO, i(30046)),	-- Belt of the Black Eagle
-			i(29500),	-- Blastguard Belt
-			i(25695),	-- Felstalker Belt
-			i(29494),	-- Flamescale Belt
-			applyclassicphase(TBC_PHASE_TWO, i(30044)),	-- Monsoon Belt
-			i(25694),	-- Netherfury Belt
-			applyclassicphase(TBC_PHASE_THREE, i(32393)),	-- Redeemed Soul Cinch
-			applyclassicphase(TBC_PHASE_THREE, i(32397)),	-- Waistguard of Shackled Souls
-		}),
-		category(936, {	-- Pants
-			i(29498),	-- Blastguard Pants
-			i(29495),	-- Enchanted Clefthoof Leggings
-			i(29489),	-- Enchanted Felscale Leggings
-			i(25687),	-- Fel Leather Leggings
-			i(25656),	-- Felscale Pants
-			i(29492),	-- Flamescale Leggings
-			applyclassicphase(TBC_PHASE_THREE, i(32400)),	-- Greaves of Shackled Souls
-			i(25690),	-- Heavy Clefthoof Leggings
-			i(25692),	-- Netherfury Leggings
-			applyclassicphase(TBC_PHASE_THREE, i(32396)),	-- Redeemed Soul Legguards
-			i(25662),	-- Scaled Draenic Pants
-			i(25670),	-- Thick Draenic Pants
-			i(25675),	-- Wild Draenish Leggings
-		}),
-		category(937, {	-- Boots
-			i(29499),	-- Blastguard Boots
-			applyclassicphase(TBC_PHASE_TWO, i(30041)),	-- Boots of Natural Grace
-			applyclassicphase(TBC_PHASE_THREE, i(32398)),	-- Boots of Shackled Souls
-			applyclassicphase(TBC_PHASE_TWO, i(30045)),	-- Boots of the Crimson Hawk
-			applyclassicphase(TBC_PHASE_TWO, i(30039)),	-- Boots of Utter Darkness
-			i(29512),	-- Earthen Netherscale Boots
-			i(29497),	-- Enchanted Clefthoof Boots
-			i(29491),	-- Enchanted Felscale Boots
-			i(25686),	-- Fel Leather Boots
-			i(25655),	-- Felscale Boots
-			i(29493),	-- Flamescale Boots
-			i(25691),	-- Heavy Clefthoof Boots
-			applyclassicphase(TBC_PHASE_TWO, i(30043)),	-- Hurricane Boots
-			i(25693),	-- Netherfury Boots
-			applyclassicphase(TBC_PHASE_THREE, i(32394)),	-- Redeemed Soul Moccasins
-			i(25659),	-- Scaled Draenic Boots
-			i(25668),	-- Thick Draenic Boots
-			i(25673),	-- Wild Draenish Boots
-		}),
-		category(938, {	-- Cloaks
-			applyclassicphase(TBC_PHASE_THREE, i(33122)),	-- Cloak of Darkness
-		}),
-		category(939, {	-- Special
-			i(25653),	-- Riding Crop
-		}),
-		category(940, {	-- Drums
 			i(29529),	-- Drums of Battle
 			i(29532),	-- Drums of Panic
 			i(29531),	-- Drums of Restoration
 			i(29530),	-- Drums of Speed
 			i(29528),	-- Drums of War
+			i(29485, {["timeline"] = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Flame Armor Kit
+			i(29486, {["timeline"] = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Frost Armor Kit
+			i(34207, {["timeline"] = {ADDED_2_3_0}}),	-- Glove Reinforcements
 			-- #if ANYCLASSIC
 			applyclassicphase(TBC_PHASE_FOUR, i(185848)),	-- Greater Drums of Battle
 			applyclassicphase(TBC_PHASE_FOUR, i(185849)),	-- Greater Drums of Panic
@@ -1047,36 +910,79 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 			applyclassicphase(TBC_PHASE_FOUR, i(185851)),	-- Greater Drums of Speed
 			applyclassicphase(TBC_PHASE_FOUR, i(185852)),	-- Greater Drums of War
 			-- #endif
+			i(34330, {["timeline"] = {ADDED_2_3_0}}),	-- Heavy Knothide Armor Kit
+			i(23793),	-- Heavy Knothide Leather
+			applyclassicphase(TBC_PHASE_FOUR, i(34099, {["timeline"] = {ADDED_2_3_0, REMOVED_4_0_1}})),	-- Knothide Ammo Pouch
+			i(25650),	-- Knothide Armor Kit
+			i(21887),	-- Knothide Leather
+			applyclassicphase(TBC_PHASE_FOUR, i(34100, {["timeline"] = {ADDED_2_3_0, REMOVED_4_0_1}})),	-- Knothide Quiver
+			i(34482, {["timeline"] = {ADDED_2_3_0}}),	-- Leatherworker's Satchel
+			i(25652),	-- Magister's Armor Kit
+			i(29487, {["timeline"] = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Nature Armor Kit
+			i(29536),	-- Nethercleft Leg Armor
+			i(29535),	-- Nethercobra Leg Armor
+			applyclassicphase(TBC_PHASE_THREE, i(34106, {["timeline"] = {ADDED_2_3_0, REMOVED_4_0_1}})),	-- Netherscale Ammo Pouch
+			applyclassicphase(TBC_PHASE_THREE, i(34105, {["timeline"] = {ADDED_2_3_0, REMOVED_4_0_1}})),	-- Quiver of a Thousand Feathers
+			i(29540),	-- Reinforced Mining Bag
+			i(29483, {["timeline"] = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Shadow Armor Kit
+			i(25651),	-- Vindicator's Armor Kit
+		}),
+		filter(TRINKET_F, {
+			i(25653),	-- Riding Crop
 		}),
 	}),
 	prof(MINING, {
-		["description"] = "The following items can be gathered by Miners out in the world.",
-		["groups"] = {
-			spell(2656, {	-- Smelting
-				["description"] = "The following items can be smelted by Miners in a city.",
-				["groups"] = {
-					i(23446),	-- Adamantite Bar
-					i(23447),	-- Eternium Bar
-					i(23445),	-- Fel Iron Bar
-					i(23448),	-- Felsteel Bar
-					i(23573),	-- Hardened Adamantite Bar
-					applyclassicphase(TBC_PHASE_FIVE, i(35128)),	-- Hardened Khorium Bar
-					i(23449),	-- Khorium Bar
-				},
-			}),
+		n(DISCOVERY, {
+			r(53124, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}, ["rank"] = 5 }),	-- Toughness [Rank 5]
+		}),
+		spell(2575, {	-- Mining
 			i(23425),	-- Adamantite Ore
+			i(108302, {["timeline"] = {ADDED_6_0_2}}),	-- Adamantite Ore Nugget
 			i(23427),	-- Eternium Ore
+			i(108303, {["timeline"] = {ADDED_6_0_2}}),	-- Eternium Ore Nugget
 			i(23424),	-- Fel Iron Ore
+			i(108301, {["timeline"] = {ADDED_6_0_2}}),	-- Fel Iron Ore Nugget
 			i(23426),	-- Khorium Ore
-			i(35229),	-- Nether Residue
-			i(32464),	-- Nethercite Ore
-		},
+			i(108304, {["timeline"] = {ADDED_6_0_2}}),	-- Khorium Ore Nugget
+			i(35229, {["timeline"] = {ADDED_2_4_0}}),	-- Nether Residue
+			i(32464, {["timeline"] = {ADDED_2_1_0}}),	-- Nethercite Ore
+			-- Not Ore --
+			i(23117),	-- Azure Moonstone
+			i(23077),	-- Blood Garnet
+			i(32227, {["timeline"] = {ADDED_2_1_0}}),	-- Crimson Spinel
+			i(23440),	-- Dawnstone
+			i(23079),	-- Deep Peridot
+			i(32228, {["timeline"] = {ADDED_2_1_0}}),	-- Empyrean Sapphire
+			i(21929),	-- Flame Spessarite
+			i(23112),	-- Golden Draenite
+			i(32229, {["timeline"] = {ADDED_2_1_0}}),	-- Lionseye
+			i(23436),	-- Living Ruby
+			i(22573),	-- Mote of Earth
+			i(22574),	-- Mote of Fire
+			i(23441),	-- Nightseye
+			i(23439),	-- Noble Topaz
+			i(32231, {["timeline"] = {ADDED_2_1_0}}),	-- Pyrestone
+			i(32249, {["timeline"] = {ADDED_2_1_0}}),	-- Seaspray Emerald
+			i(23107),	-- Shadow Draenite
+			i(32230, {["timeline"] = {ADDED_2_1_0}}),	-- Shadowsong Amethyst
+			i(23438),	-- Star of Elune
+			i(23437),	-- Talasite
+		}),
+		spell(2656, {	-- Smelting
+			i(23446),	-- Adamantite Bar
+			i(23447),	-- Eternium Bar
+			i(23445),	-- Fel Iron Bar
+			i(23448),	-- Felsteel Bar
+			i(23573),	-- Hardened Adamantite Bar
+			applyclassicphase(TBC_PHASE_FIVE, i(35128, {["timeline"] = {ADDED_2_4_0}})),	-- Hardened Khorium Bar
+			i(23449),	-- Khorium Bar
+		}),
 	}),
 	prof(SKINNING, {
 		["description"] = "The following items can be gathered by skinning creatures out in the world.",
 		["groups"] = {
 			i(29539),	-- Cobra Scales
-			i(25699),	-- Crystal Infused Leather
+			i(25699),	-- Crystal-Infused Leather
 			i(25707),	-- Fel Hide
 			i(25700),	-- Fel Scales
 			i(21887),	-- Knothide Leather
@@ -1244,7 +1150,7 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 		}),
 	}),
 }))));
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	n(PROFESSIONS, {
 		prof(JEWELCRAFTING, {
 			tier(TBC_TIER, {
@@ -1264,4 +1170,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

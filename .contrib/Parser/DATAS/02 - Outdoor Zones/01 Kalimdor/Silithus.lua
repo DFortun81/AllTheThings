@@ -41,8 +41,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["description"] = "This is an outdoor zone, a non-instanced version of Temple of Ahn'Qiraj and Ruins of Ahn'Qiraj.",
 				["icon"] = "Interface\\Icons\\achievement_zone_silithus_01",
 				["groups"] = {
-					-- #if AFTER MOP
-					petbattle(filter(BATTLE_PETS, {
+					battlepets({
 						["sym"] = {{"select","speciesID",
 							513,	-- Qiraji Guardling (PET!)
 							511,	-- Sidewinder (PET!)
@@ -52,8 +51,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								["description"] = "Can be found near the gates of Ahn'Qiraj, or in the un-instanced zone south of Silithus.",
 							}),
 						},
-					})),
-					-- #endif
+					}),
 					n(RARES, {
 						n(50747, {	-- Tix
 							["coord"] = { 60.8, 6.6, AHNQIRAJ_THE_FALLEN_KINGDOM },
@@ -90,8 +88,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					406,	-- Beetle (PET!)
 					484,	-- Desert Spider (PET!)
@@ -106,8 +103,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					pet(433),	-- Spiky Lizard (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, {
 				exploration(3427, {	-- Bronzebeard Encampment
@@ -1821,7 +1817,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				q(8320, {	-- Twilight Geolords
 					["qg"] = 15270,	-- Huum Wildmane
+					-- #if AFTER CATA
+					["coord"] = { 53.2, 35.0, SILITHUS },
+					-- #else
 					["coord"] = { 48.7, 37.9, SILITHUS },
+					-- #endif
 					["lvl"] = lvlsquish(60, 60, 15),
 					["groups"] = {
 						objective(1, {	-- 0/10 Twilight Geolord slain
@@ -2439,7 +2439,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(18677, {	-- Zephyr Cloak
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(21548, {	-- Pattern: Stormshroud Gloves
+						i(21548, {	-- Pattern: Stormshroud Gloves (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						applyclassicphase(PHASE_THREE, i(19268)),	-- Ace of Elementals
@@ -2711,16 +2711,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 62.6, 49.8, SILITHUS },
 					-- #endif
 					["groups"] = {
-						applyclassicphase(PHASE_FIVE_CATCH_UP, i(22769)),	-- Pattern: Bramblewood Belt
-						applyclassicphase(PHASE_FIVE_CATCH_UP, i(22770)),	-- Pattern: Bramblewood Boots
-						applyclassicphase(PHASE_FIVE_CATCH_UP, i(22771)),	-- Pattern: Bramblewood Helm
-						applyclassicphase(PHASE_FOUR, i(20382)),	-- Pattern: Dreamscale Breastplate
-						applyclassicphase(PHASE_FOUR, i(20509)),	-- Pattern: Sandstalker Bracers
-						applyclassicphase(PHASE_FOUR, i(20511)),	-- Pattern: Sandstalker Breastplate
-						applyclassicphase(PHASE_FOUR, i(20510)),	-- Pattern: Sandstalker Gauntlets
-						applyclassicphase(PHASE_FOUR, i(20506)),	-- Pattern: Spitfire Bracers
-						applyclassicphase(PHASE_FOUR, i(20508)),	-- Pattern: Spitfire Breastplate
-						applyclassicphase(PHASE_FOUR, i(20507)),	-- Pattern: Spitfire Gauntlets
+						applyclassicphase(PHASE_FIVE_CATCH_UP, i(22769)),	-- Pattern: Bramblewood Belt (RECIPE!)
+						applyclassicphase(PHASE_FIVE_CATCH_UP, i(22770)),	-- Pattern: Bramblewood Boots (RECIPE!)
+						applyclassicphase(PHASE_FIVE_CATCH_UP, i(22771)),	-- Pattern: Bramblewood Helm (RECIPE!)
+						applyclassicphase(PHASE_FOUR, i(20382)),	-- Pattern: Dreamscale Breastplate (RECIPE!)
+						applyclassicphase(PHASE_FOUR, i(20509)),	-- Pattern: Sandstalker Bracers (RECIPE!)
+						applyclassicphase(PHASE_FOUR, i(20511)),	-- Pattern: Sandstalker Breastplate (RECIPE!)
+						applyclassicphase(PHASE_FOUR, i(20510)),	-- Pattern: Sandstalker Gauntlets (RECIPE!)
+						applyclassicphase(PHASE_FOUR, i(20506)),	-- Pattern: Spitfire Bracers (RECIPE!)
+						applyclassicphase(PHASE_FOUR, i(20508)),	-- Pattern: Spitfire Breastplate (RECIPE!)
+						applyclassicphase(PHASE_FOUR, i(20507)),	-- Pattern: Spitfire Gauntlets (RECIPE!)
 					},
 				}),
 				n(15174, {	-- Calandrath <Innkeeper>
@@ -2731,7 +2731,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					-- #if AFTER 4.0.3
 					["groups"] = {
-						i(13496, {	-- Recipe: Greater Nature Protection Potion
+						i(13496, {	-- Recipe: Greater Nature Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2802,10 +2802,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 81.8, 17.8, SILITHUS },
 					-- #endif
 					["groups"] = {
-						i(15724, {	-- Pattern: Heavy Scorpid Bracers
+						i(15724, {	-- Pattern: Heavy Scorpid Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(15762, {	-- Pattern: Heavy Scorpid Helm
+						i(15762, {	-- Pattern: Heavy Scorpid Helm (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},

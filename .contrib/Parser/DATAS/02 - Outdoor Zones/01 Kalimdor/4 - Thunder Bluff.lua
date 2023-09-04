@@ -38,19 +38,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						crit(1, {	-- Pond Predators
+						crit(17759, {	-- Pond Predators
 							["_quests"] = { 29345 },
 						}),
-						crit(2, {	-- The Ring's the Thing
+						crit(17760, {	-- The Ring's the Thing
 							["_quests"] = { 29346 },
 						}),
-						crit(3, {	-- The Race to Restock
+						crit(17761, {	-- The Race to Restock
 							["_quests"] = { 29348 },
 						}),
-						crit(4, {	-- Craving Crayfish
+						crit(17762, {	-- Craving Crayfish
 							["_quests"] = { 29349 },
 						}),
-						crit(5, {	-- Shiny Baubles
+						crit(17763, {	-- Shiny Baubles
 							["_quests"] = { 29354 },
 						}),
 					},
@@ -60,41 +60,39 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						crit(2, {	-- "Magic" Mushrooms
+						crit(17734, {	-- "Magic" Mushrooms
 							["_quests"] = { 29362 },
 						}),
-						crit(4, {	-- Corn Mash
+						crit(17736, {	-- Corn Mash
 							["_quests"] = { 29364 },
 						}),
-						crit(3, {	-- Mulgore Spice Bread
+						crit(17735, {	-- Mulgore Spice Bread
 							["_quests"] = { 29363 },
 						}),
-						crit(5, {	-- Perfectly Picked Portions
+						crit(17737, {	-- Perfectly Picked Portions
 							["_quests"] = { 29365 },
 						}),
-						crit(1, {	-- Pining for Nuts
+						crit(17733, {	-- Pining for Nuts
 							["_quests"] = { 29358 },
 						}),
 					},
 				}),
 			}),
 			-- #endif
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					477,	-- Gazelle Fawn (PET!)
 					385,	-- Mouse  (PET!)
 					386,	-- Prarie Dog (PET!)
 					378,	-- Rabbit (PET!)
 				}},
-			})),
-			-- #endif
+			}),
 			n(FACTIONS, {
 				faction(81, {	-- Thunder Bluff
 					-- #if AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Tauren_Male",
 					-- #else
-					["icon"] = asset("Achievement_Character_Tauren_Male"),
+					["icon"] = [[~_.asset("Achievement_Character_Tauren_Male")]],
 					-- #endif
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForCityFactionReputation,
@@ -225,15 +223,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(7130, {	-- Brutal Helm
 							["timeline"] = { "removed 4.0.3" },
-							-- #if ANYCLASSIC
-							["OnUpdate"] = [[function(t)
-								if _.Level >= 40 then
-									t.f = ]] .. PLATE .. [[;
-								else
-									t.f = ]] .. MAIL .. [[;
-								end
-							end]],
-							-- #endif
 						}),
 					},
 				}),
@@ -355,7 +344,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 					["groups"] = {
-						i(5083),	-- Pattern: Kodo Hide Bag
+						i(5083),	-- Pattern: Kodo Hide Bag (RECIPE!)
 					},
 				}),
 				q(1130, {	-- Melor Sends Word
@@ -901,7 +890,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 62.2, 58.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(10394),	-- Prairie Dog Whistle (PET!)
+						i(10394),	-- Brown Prairie Dog (PET!)
 					},
 				}),
 				n(8358, {	-- Hewa <Cloth Armor Merchant>
@@ -1064,10 +1053,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6330),	-- Recipe: Bristle Whisker Catfish
-						i(6328),	-- Recipe: Longjaw Mud Snapper
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(3012, {	-- Nata Dawnstrider <Enchanting Supplies>
@@ -1141,7 +1130,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(18647, {	-- Schematic: Red Firework
 							["isLimited"] = true,
 						}),
-						i(22729, {	-- Steam Tonk Controller
+						i(22729, {	-- Schematic: Steam Tonk Controller
 							["isLimited"] = true,
 						}),
 					},
@@ -1150,8 +1139,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.8, 47.0, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6325),	-- Recipe: Brilliant Smallfish
-						i(6330),	-- Recipe: Bristle Whisker Catfish
+						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
+						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 					},
 				}),
 				n(8363, {	-- Shadi Mistrunner <Trade Supplies>

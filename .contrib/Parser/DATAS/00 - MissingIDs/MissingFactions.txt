@@ -391,6 +391,7 @@ faction(1338),	-- Gurthan Mogu
 faction(1339),	-- Harthak Mogu
 faction(1340),	-- Korgesh Mogu
 faction(1351),	-- The Brewmasters
+faction(1357),	-- Nomi
 faction(1364),	-- Friendly, Force Reaction 2
 faction(1366),	-- Friendly, Force Reaction 3
 faction(1367),	-- Friendly, Force Reaction 4
@@ -466,7 +467,6 @@ faction(1920),	-- Moon Guard
 faction(1947),	-- Illidari
 faction(1953),	-- Nightmare
 faction(1962),	-- Nightborne Civilian
-faction(1975),	-- Conjurer Margoss
 faction(1984),	-- The First Responders
 faction(1989),	-- Moon Guard
 faction(2010),	-- Brawl'gar Arena (Season 3) \\ Brawl'gar Arena
@@ -481,12 +481,6 @@ faction(2088),	-- Dreamweavers (Paragon)
 faction(2089),	-- The Nightfallen (Paragon)
 faction(2090),	-- The Wardens (Paragon)
 faction(2091),	-- Armies of Legionfall (Paragon)
-faction(2097),	-- Ilyssia of the Waters
-faction(2098),	-- Keeper Raynae
-faction(2099),	-- Akule Riverhorn
-faction(2100),	-- Corbyn
-faction(2101),	-- Sha'leth
-faction(2102),	-- Impus
 faction(2135),	-- Chromie
 7.3.0.24608
 faction(2166),	-- Army of the Light (Paragon)
@@ -601,27 +595,21 @@ faction(2480),	-- Automa
 faction(2481),	-- Automa (Paragon)
 faction(2502),	-- Zereth Mortis Lured Monsters
 10.0.0.44649
-faction(2503),	-- Maruuk Centaur
 faction(2504),	-- Maruuk Centaur (Paragon)
 faction(2506),	-- Dragonflight
 faction(2507),	-- Dragonscale Expedition
 faction(2508),	-- Dragonscale Expedition (Paragon)
 faction(2509),	-- Clan Shikaar
-faction(2510),	-- Valdrakken Accord
-faction(2511),	-- Iskaara Tuskarr
 faction(2512),	-- Clan Aylaag
 faction(2513),	-- Clan Ohn'ir
 faction(2514),	-- Primalists
 faction(2516),	-- Djaradin
-faction(2517),	-- Wrathion
-faction(2518),	-- Sabellian
 faction(2519),	-- Reclaimers
 faction(2520),	-- Clan Nokhud
 faction(2521),	-- Clan Nokhud (Paragon)
 faction(2522),	-- Clan Teerai
 faction(2525),	-- Elemental, Fire
 faction(2542),	-- Clan Ukhel
-faction(2544),	-- Artisan's Consortium - Dragon Isles Branch
 faction(2545),	-- Maruuk Centaur (Renown)
 faction(2546),	-- Iskaara Tuskarr (Renown)
 faction(2547),	-- Dragonscale Expedition (Renown)
@@ -629,13 +617,12 @@ faction(2548),	-- Valdrakken Accord (Renown)
 10.0.0.44795
 faction(2551),	-- Iskaara Tuskarr (Paragon)
 faction(2552),	-- Valdrakken Accord (Paragon)
-10.0.0.44999
-faction(2553),	-- Soridormi \\ Timewalkers
 10.0.0.45141
 faction(2554),	-- Clan Toghus
 faction(2555),	-- Clan Kaighan
 10.0.7.47910
 faction(2557),	-- Hearthfire Fellowship
 10.1.0.48480
-faction(2564),	-- Loamm Niffen
 faction(2565),	-- Loamm Niffen (Paragon)
+10.1.7.50442
+faction(2576),	-- Druids of the Flame

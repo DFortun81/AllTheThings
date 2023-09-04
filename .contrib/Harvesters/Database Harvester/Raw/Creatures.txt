@@ -20012,6 +20012,9 @@
 205311@@@Disruptive Arcana
 10.1.0.49801
 204974@@@Dinn's Drum
+10.1.0.49890
+201902@@@Iron Vrykul
+203049@@@Keeper Tyr
 10.1.5.49516
 200541@@@Iggy
 200810@@@Emerald Whelpling
@@ -20253,3 +20256,67 @@
 208225@@@Blood Horde Grunt
 208248@@@Time Rift
 208253@@@Time Rift
+10.1.5.49908
+207925@@@Drest'Agath the Corrupted
+208491@@@Prophet Skitra
+208500@@@Imperial Vizier Zor'lok
+208514@@@Klaxxi
+208542@@@Empowered Felguard
+208545@@@Empowered Imp
+208624@@@Briarhorn Hatchling
+208630@@@Gill'dan
+208631@@@Jeepers
+208634@@@Doomrubble
+208636@@@Killbot 9000
+208637@@@Obsidian Warwhelp
+208639@@@N'Ruby
+208643@@@Tobias
+10.1.5.50006
+207386@@@Hand of the Lich King
+207601@@@Warlich
+208774@@@Test Nozdormu
+208791@@@Empowered Felhunter
+208818@@@Finduin Wryngrrlgulgll
+208820@@@Finduin Wryngrrlgulgll
+208822@@@Finduin Wryngrrlgulgll
+208882@@@Empowered Pit Lord
+10.1.5.50130
+207598@@@Great Glorious Alliance Cannoneer
+209020@@@Siaszerathel
+209027@@@[DNT] Spell Target Bunny
+10.1.5.50232
+209480@@@Background
+10.1.5.50379
+205795@@@Blub
+10.1.5.50438
+207632@@@Vyranoth
+208052@@@Nozdormu
+208462@@@Chromie
+208464@@@Morchie
+208466@@@Infinite Dragon
+10.1.5.50622
+171025@@@Sunny
+10.1.7.50442
+119629@@@Lord Hel'nurath
+205742@@@Curious Whelpling
+205929@@@Curious Whelpling
+205930@@@Curious Whelpling
+205931@@@Curious Whelpling
+205932@@@Curious Whelpling
+205944@@@Katy Stampwhistle
+205948@@@Ring
+205981@@@Lokou
+207100@@@Chomps
+207102@@@Rusty
+207947@@@Winglord Dezran
+207967@@@Bubbling Brews Credit - Small
+207995@@@Barrel
+207996@@@Bubbling Brews Credit - Large
+208117@@@Hel'nurathian Felmaw
+209224@@@Blongotron
+209259@@@Lil' Frostwing
+209891@@@Kevo ye Shango
+10.1.7.50730
+210721@@@Perpetual Present
+10.1.7.50893
+211144@@@Forsaken Soldier

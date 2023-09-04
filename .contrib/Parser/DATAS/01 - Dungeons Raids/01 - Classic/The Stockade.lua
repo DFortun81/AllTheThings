@@ -6,6 +6,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		-- #if BEFORE MOP
 		["lore"] = "The Stockade is a high-security prison complex, hidden beneath the canal district of Stormwind city. Presided over by Warden Thelwater, the Stockade is home to petty crooks, political insurgents, murderers and a score of the most dangerous criminals in the land. Recently, a prisoner-led revolt has resulted in a state of pandemonium within the stockade - where the guards have been driven out and the convicts roam free. Warden Thelwater has managed to escape the holding area and is currently enlisting brave thrill-seekers to venture into the prison and kill the uprising's mastermind - the cunning felon, Bazil Thredd.",
 		-- #endif
+		-- #if BEFORE WRATH
+		["zone-text-areaID"] = 717,	-- The Stockade
+		-- #endif
+		["sins"] = { [[~DUNGEON_FLOOR_THESTOCKADE1]] },
 		-- #if AFTER CATA
 		["coord"] = { 50.48, 66.46, STORMWIND_CITY },
 		-- #else
@@ -199,15 +203,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					}),
 					i(3228, {	-- Jimmied Handcuffs
 						["timeline"] = { "removed 4.0.1.12984" },
-						-- #if ANYCLASSIC
-						["OnUpdate"] = [[function(t)
-							if _.Level >= 40 and _.ClassIndex ~= ]] .. HUNTER .. [[ and _.ClassIndex ~= ]] .. SHAMAN .. [[ then
-								t.f = ]] .. PLATE .. [[;
-							else
-								t.f = ]] .. MAIL .. [[;
-							end
-						end]],
-						-- #endif
 					}),
 					i(2941, {	-- Prison Shank
 						["timeline"] = { "removed 4.0.1.12984" },
@@ -248,10 +243,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				["timeline"] = { "removed 4.0.1.12984" },
 				["groups"] = {
 					-- #if BEFORE 4.0.1
-					classicAch(633, {	-- Stormwind Stockade
+					ach(633, {	-- Stormwind Stockade
 						-- #if BEFORE WRATH
 						["sourceQuest"] = 391,	-- The Stockade Riots
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						["races"] = ALLIANCE_ONLY,
 						-- #endif
 					}),
@@ -303,7 +297,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				["creatureID"] = 46254,
 				["timeline"] = { "added 4.0.1.12984" },
 				["groups"] = {
-					ach(633),	-- Stormwind Stockade
+					ach(633, {	-- Stormwind Stockade
+						["timeline"] = { "added 3.0.1" },
+					}),
 					ach(5042, {	-- Stormwind Stockade Guild Run
 						["timeline"] = { "added 4.0.3" },
 					}),

@@ -1,0 +1,56 @@
+291524@@@Scrap Trap
+291598@@@500S-Cybergenic Powercore
+291600@@@Emergency Powerpack
+291601@@@Emergency Repair Kit
+291788@@@Vaultbot Key \\ Armored Vaultbot Key
+291789@@@Rustbolt Gramophone \\ Rustbolt Jukebox
+291869@@@Mechano-Treat
+291987@@@Ultrasafe Transporter: Mechagon
+293394@@@Hundred-Fathom Lure
+294193@@@Mechanocat Laser Pointer
+294360@@@Canned Minnows \\ Canned Minnow Meat
+294420@@@G99.99 Landshark \\ Super Sticky Ooze Trap
+295288@@@Rustbolt Kegerator
+295290@@@Scrap Grenade
+295362@@@Beastbot Powerpack
+296386@@@Encrypted Radio Receiver
+296595@@@BAWLD-371
+298134@@@Protocol Transference Device
+298136@@@Emergency Rocket Chicken \\ Self-Propelled Hen-Glider
+298137@@@Battle Box
+298138@@@Rustbolt Resistance Insignia
+298140@@@Rustbolt Requisitions
+298141@@@Subroutine: Optimization
+299186@@@Experimental Adventurer Augment
+299411@@@Holographic Digitalization Hearthstone \\ Holigraphic Digitalization Hearthstone
+299864@@@Advanced Adventurer Augment
+299952@@@Extraordinary Adventurer Augment
+300122@@@Scrapmaster's Blowtorch
+300265@@@Personal Time Displacer
+300266@@@Orange Spraybot \\ TK21
+300267@@@Green Spraybot \\ TK22
+300268@@@Blue Spraybot \\ TK23
+300269@@@Utility Mechanoclaw \\ TK24
+300270@@@Microbot XD \\ TK25
+300271@@@Perfectly Timed Differential \\ TK26
+300272@@@Anti-Gravity Pack \\ TK27[DNT] \\ TK27
+300273@@@Rustbolt Pocket Turret \\ TK28[DNT] \\ TK28
+300274@@@Annoy-o-Tron Gang \\ TK29[DNT] \\ TK29
+300275@@@Encrypted Black Market Radio \\ TK30[DNT] \\ TK30
+300277@@@Re-Procedurally Generated Punchcard \\ TK31[DNT] \\ TK31
+300278@@@Galvanic Oscillator \\ TK32[DNT] \\ TK32
+300279@@@Chain Ignitercoils \\ TK33[DNT] \\ TK33
+300280@@@TK34[DNT] \\ TK34
+300281@@@TK35[DNT] \\ TK35
+300282@@@TK36[DNT] \\ TK36
+300283@@@TK37[DNT] \\ TK37
+300284@@@TK38[DNT] \\ TK38
+300285@@@TK39[DNT] \\ TK39
+300286@@@TK40[DNT] \\ TK40
+300287@@@TK41[DNT] \\ TK41
+300288@@@TK42[DNT] \\ TK42
+300289@@@TK43[DNT] \\ TK43
+300290@@@TK44[DNT] \\ TK44
+300291@@@S.P.A.R.E. Crate \\ Mega-Sized Spare Part \\ TK45
+300465@@@Pocket-Sized Computation Device
+303000@@@Sapphronetta Flivvers Action Figure

@@ -125,7 +125,7 @@ local function GetPusher()
 					app.PrintDebug("PUSH.Run.Error",co)
 					-- Throw the error. Returning nothing is the same as canceling the work.
 					-- local instanceTrace = debugstack(instance);
-					if app.DEBUG_PRINT then
+					if app.Debugging then
 						local instanceTrace = debugstack(co);
 						print(instanceTrace)
 					end
@@ -237,7 +237,7 @@ local function CreateRunner(name)
 		else
 			app.PrintDebug("Stack.Run.Error",Name)
 			-- Throw the error. Returning nothing is the same as canceling the work.
-			if app.DEBUG_PRINT then
+			if app.Debugging then
 				local instanceTrace = debugstack(RunnerCoroutine);
 				print(instanceTrace)
 			end

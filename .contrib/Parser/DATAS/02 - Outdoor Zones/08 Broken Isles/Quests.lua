@@ -416,7 +416,7 @@ root(ROOTS.Zones, {
 										i(140606),	-- Earth-Crushing Sabatons
 										i(140602),	-- Earth-Plate Legguards
 										i(140605),	-- Earthmender's Pantaloons
-										i(140607),	-- Elementally-Infused Boots
+										i(140607),	-- Elementally Infused Boots
 										i(140603),	-- Nobundo's Earthshaper Kilt
 										i(140609),	-- Slippers of the Earthen Healer
 									}

@@ -11,15 +11,12 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 					["icon"] = "Interface\\Icons\\Sanctum_features_transportationnetwork_ardenweald",
 					["g"] = sharedData({ ["icon"] = "Interface\\Icons\\Sanctum_features_transportationnetwork_ardenweald" }, {
 						n(ACHIEVEMENTS, {
-							["icon"] = asset("Category_Achievements"),
-							["g"] = {
-								ach(14775, {	-- Mush Appreciated
-									["maps"] = { 1819 },	-- Fungal Terminus
-									["g"] = {
-										title(435),	-- Fun Guy / Fun Gal
-									},
-								}),
-							},
+							ach(14775, {	-- Mush Appreciated
+								["maps"] = { 1819 },	-- Fungal Terminus
+								["g"] = {
+									title(435),	-- Fun Guy / Fun Gal
+								},
+							}),
 						}),
 						n(FACTIONS, {
 							faction(2463, {	-- Marasmius
@@ -116,7 +113,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 							})),
 						}),
 						n(VENDORS, {
-							["icon"] = asset("Interface_Vendor"),
+							["icon"] = [[~_.asset("Interface_Vendor")]],
 							["g"] = {
 								n(174609, {	-- Zaki
 									["coord"] = { 51.8, 19.6, THE_ROOTS },
@@ -188,9 +185,3 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 		}),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, {
-	q(62958),	-- triggered during Marasmius dailies
-	q(62962),	-- triggered when turning in 'Into the Unknown' (62296)
-	q(62963),	-- triggered when turning in 'Go Beyond' (??)
-});

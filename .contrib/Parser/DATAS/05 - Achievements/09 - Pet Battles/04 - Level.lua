@@ -15,7 +15,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			ach(6609),	-- No Favorites (Lvl 10)
 		}),
 		ach(6582, {	-- Pro Pet Mob (75)
-			i(88147),	-- Singing Cricket Cage
+			i(88147),	-- Singing Cricket (PET!)
 			ach(6581),	-- Pro Pet Crew (30)
 			ach(6578),	-- Pro Pet Group (15)
 		}),

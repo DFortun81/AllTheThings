@@ -240,3 +240,6 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 		},
 	}),
 }));
+root(ROOTS.HiddenQuestTriggers, tier(BFA_TIER, {
+	q(52868),	-- Ensemble: Vestments of the Tidesages
+}));

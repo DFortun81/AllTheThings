@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using KeraLua;
 using NLua;
 
 namespace ATT
@@ -13,7 +14,7 @@ namespace ATT
     {
         private static bool Errored { get; set; }
 
-        private static string[] PreProcessorTags { get; set; }
+        public static Dictionary<string, bool> PreProcessorTags { get; set; } = new Dictionary<string, bool>();
 
         static void Main(string[] args)
         {
@@ -25,8 +26,7 @@ namespace ATT
 #endif
 
             Framework.CurrentParseStage = ParseStage.InitializeParserConfigs;
-            // Ensure the Retail Parser uses the default config always, input arg can change config values
-            Framework.InitConfigSettings("parser.config");
+
 
             // Determine if running in Debug Mode or not.
             if (args != null && args.Length > 0)
@@ -43,20 +43,27 @@ namespace ATT
                 }
             }
 
+            if (!Framework.HasConfig())
+            {
+                // Ensure the Parser uses the default config if nothing is specified.
+                Framework.InitConfigSettings("parser.config");
+            }
+
             Framework.ApplyConfigSettings();
 
             try
             {
-                PreProcessorTags = Framework.Config["PreProcessorTags"] ?? Array.Empty<string>();
+                var preprocessorArray = Framework.Config["PreProcessorTags"];
+                if (preprocessorArray != null)
+                {
+                    foreach(var preprocessor in preprocessorArray)
+                    {
+                        PreProcessorTags[preprocessor] = true;
+                    }
+                }
+
                 // Prepare console output to a file.
-#if ANYCLASSIC
-                string databaseRootFolder = "../.db";
-#else
-                string databaseRootFolder = Framework.Config["root-data"] ?? ".";
-#endif
-
-
-                Directory.CreateDirectory("../Debugging");
+                string databaseRootFolder = Framework.Config["root-data"] ?? "./DATAS";
 
                 Framework.CurrentParseStage = ParseStage.RawJsonMerge;
                 do
@@ -64,11 +71,8 @@ namespace ATT
                     Errored = false;
                     // Load all of the RAW JSON Data into the database.
                     var files = Directory.EnumerateFiles(databaseRootFolder, "*.json", SearchOption.AllDirectories).ToList();
-#if ANYCLASSIC
+                    files.Sort(StringComparer.InvariantCulture);
                     foreach (var f in files) ParseJSONFile(f);
-#else
-                    files.AsParallel().ForAll(f => ParseJSONFile(f));
-#endif
 
                     if (Errored)
                     {
@@ -80,10 +84,10 @@ namespace ATT
                 while (Errored);
 
                 // Load all of the Lua files into the database.
-                var mainFileName = $"{databaseRootFolder}\\_main.lua";
+                var mainFileName = $"{databaseRootFolder}\\..\\_main.lua";
                 var luaFiles = Directory.GetFiles(databaseRootFolder, "*.lua", SearchOption.AllDirectories).ToList();
                 // Do not iterate over the header file.
-                if (!luaFiles.Remove(mainFileName))
+                if (!File.Exists(mainFileName))
                 {
                     Trace.WriteLine("Could not find the '_main.lua' header file.");
                     Trace.WriteLine("Operation cannot continue without it.");
@@ -91,12 +95,13 @@ namespace ATT
                     Console.ReadLine();
                     return;
                 }
-                luaFiles.Sort();
-
-                Lua lua = new Lua();
+                luaFiles.Sort(StringComparer.InvariantCulture);
+                NLua.Lua lua = new NLua.Lua();
+                lua.State.Encoding = Encoding.UTF8;
                 // link the Lua 'print' function to instead perform a Trace print
                 lua.RegisterFunction("print", typeof(Program).GetMethod(nameof(LuaPrintAsTrace), BindingFlags.NonPublic | BindingFlags.Static));
-                lua.DoString(ProcessContent(File.ReadAllText(mainFileName)));
+                lua.DoString($"CurrentFileName = [[{mainFileName.Replace("\\", "/")}]];CurrentSubFileName = nil;");
+                lua.DoString(ProcessContent(File.ReadAllText(mainFileName, Encoding.UTF8)));
                 Framework.IgnoredValue = lua.GetString("IGNORED_VALUE");
 
                 // Try to Copy in the Alliance Only / Horde Only lists
@@ -145,6 +150,20 @@ namespace ATT
                     ParseLUAFile(lua, fileName);
                 }
 
+                try
+                {
+                    // Try to grab the contents of the global variable "CustomHeaders".
+                    var customHeaders = lua.GetTable("CustomHeaders");
+                    if (customHeaders != null)
+                    {
+                        Framework.AssignCustomHeaders(Framework.ParseAsDictionary<long>(customHeaders));
+                    }
+                }
+                catch (Exception e)
+                {
+                    Trace.WriteLine(e);
+                }
+
                 Framework.CurrentParseStage = ParseStage.PreProcessingSetup;
                 do
                 {
@@ -173,14 +192,12 @@ namespace ATT
                 Trace.Write(Framework.Items.Count);
                 Trace.WriteLine(" Items loaded in the database.");
 
-#if !ANYCLASSIC
-                if (Framework.IsErrored && !PreProcessorTags.Contains("IGNORE_ERRORS"))
+                if (Framework.IsErrored && !PreProcessorTags.ContainsKey("IGNORE_ERRORS"))
                 {
                     Trace.WriteLine("-- Errors encountered during Parse. Please fix them to allow exporting addon DB properly.");
                     Console.ReadLine();
                     return;
                 }
-#endif
 
                 // Export all of the data for the Framework.
                 Framework.Export();
@@ -223,7 +240,7 @@ namespace ATT
                 //const string TOC_PATH = "..\\..\\AllTheThings.toc";
                 //if (File.Exists(TOC_PATH))
                 //{
-                //    string fullToc = File.ReadAllText(TOC_PATH);
+                //    string fullToc = File.ReadAllText(TOC_PATH, Encoding.UTF8);
 
                 //}
             }
@@ -238,6 +255,10 @@ namespace ATT
         {
             switch (name)
             {
+                case "baseconfig":
+                    if (!string.IsNullOrWhiteSpace(value))
+                        Framework.InitConfigSettings(value, true);
+                    break;
                 case "config":
                     if (!string.IsNullOrWhiteSpace(value))
                         Framework.InitConfigSettings(value);
@@ -311,7 +332,7 @@ namespace ATT
                     ProcessImportCommand(command, builder, content, ref index, length);
                     break;
                 default:
-                    throw new Exception($"Malformed #{command[0]} statement: Expected #IF statement first... '{string.Join(" ", command)}'");
+                    throw new Exception($"Malformed #{command[0]} statement: Expected #IF statement first... '{string.Join(" ", command)}'\nNear Index {index}:\n{content.Substring(Math.Max(0, index - 15), Math.Min(index, 15))}");
             }
         }
 
@@ -336,7 +357,7 @@ namespace ATT
             else if (command.Length > 1)
             {
                 // Config PreProcessorTags
-                if (PreProcessorTags.Contains(command[1]))
+                if (PreProcessorTags.ContainsKey(command[1]))
                     return true;
 
                 switch (command[1])
@@ -377,18 +398,11 @@ namespace ATT
                             }
                         }
                         throw new Exception($"Malformed #IF AFTER statement. '{string.Join(" ", command)}'");
+
+                    // These are flagged in the parser.config files. (PreProcessorTags returns true above the switch statement)
                     case "ANYCLASSIC":
-#if ANYCLASSIC
-                        return true;
-#else
-                        return false;
-#endif
                     case "CRIEVE":
-#if CRIEVE
-                        return true;
-#else
                         return false;
-#endif
                     default:
                         // If the command matches the name of a possible release phase, then return it.
                         if (Framework.FIRST_EXPANSION_PHASE.ContainsKey(command[1])) return Framework.CURRENT_RELEASE_PHASE_NAME == command[1];
@@ -410,23 +424,27 @@ namespace ATT
             if (index > 0) builder.Append("\n");
             builder.Append("-- ").Append(shortname).AppendLine();
 
-            string filename = "..\\..\\..\\..\\..\\..\\_retail_\\Interface\\AddOns\\AllTheThings\\.contrib\\Parser\\DATAS\\" + shortname;
+            // Are we already using the Retail DB?
+            string filename = ".\\DATAS\\" + shortname;
             if (Directory.Exists(filename))
             {
                 int fileCount = 0;
-                foreach (var file in Directory.GetFiles(filename, "*.lua", SearchOption.AllDirectories))
+                var files = Directory.GetFiles(filename, "*.lua", SearchOption.AllDirectories).ToList();
+                files.Sort(StringComparer.InvariantCulture);
+                foreach (var file in files)
                 {
                     if (fileCount > 0) builder.AppendLine();
                     builder.Append("-- ").Append(shortname).Append(file.Replace(filename, "")).AppendLine();
-                    builder.Append("(function()\n").Append(ProcessContent(File.ReadAllText(file))).Append("\nend)();");
+                    builder.Append("CurrentSubFileName = \"").Append(shortname.Replace("\\", "/").Replace("..//", "")).Append(file.Replace(filename, "").Replace("\\", "/")).AppendLine("\";");
+                    builder.Append("(function()\n").Append(ProcessContent(File.ReadAllText(file, Encoding.UTF8))).Append("\nend)();");
                     ++fileCount;
                 }
             }
             else if (File.Exists(filename))
             {
-                builder.Append("(function()\n").Append(ProcessContent(File.ReadAllText(filename))).Append("\nend)();");
+                builder.Append("(function()\n").Append(ProcessContent(File.ReadAllText(filename, Encoding.UTF8))).Append("\nend)();");
             }
-            else
+            else if(!(filename.EndsWith("\\") || filename.EndsWith("/")))
             {
                 Console.WriteLine();
                 Console.WriteLine("File doesn't exist:");
@@ -488,7 +506,7 @@ namespace ATT
         private static void ParseJSONFile(string fileName)
         {
             // Load the text and then convert it to a common JSON data format.
-            var data = Framework.ToDictionary(File.ReadAllText(fileName));
+            var data = Framework.ToDictionary(File.ReadAllText(fileName, Encoding.UTF8));
             if (data == null)
             {
                 Trace.WriteLine(fileName + ": Invalid format!");
@@ -503,7 +521,7 @@ namespace ATT
             }
         }
 
-        private static void ParseLUAFile(Lua lua, string fileName)
+        private static void ParseLUAFile(NLua.Lua lua, string fileName)
         {
             // copy the base LUA state for use on this file due to shared access issues
             //Lua lua = new Lua(mainLua.State);
@@ -515,8 +533,8 @@ namespace ATT
                 try
                 {
                     //Trace.WriteLine("Parsing:" + fileName);
-                    lua.DoString("AllTheThings = {};_ = AllTheThings;");
-                    lua.DoString(content = ProcessContent(File.ReadAllText(fileName)));
+                    lua.DoString($"AllTheThings = {{}};_ = AllTheThings;CurrentFileName = [[{fileName.Replace("\\", "/")}]];CurrentSubFileName = nil;");
+                    lua.DoString(content = ProcessContent(File.ReadAllText(fileName, Encoding.UTF8)));
                     Framework.Merge(lua.GetTable("AllTheThings"));
                     break;
                 }
@@ -524,9 +542,7 @@ namespace ATT
                 catch (InvalidDataException e)
                 {
                     Framework.Log(e.Message);
-#if CRIEVE
-                    File.WriteAllText("D://ATT-ERROR-FILE.txt", content);
-#endif
+                    File.WriteAllText("./ATT-ERROR-FILE.txt", content, Encoding.UTF8);
                     Trace.WriteLine("Press Enter once you have resolved the issue.");
                     Console.ReadLine();
                 }
@@ -556,9 +572,9 @@ namespace ATT
                         }
                     }
                     else Trace.WriteLine(e);
-#if CRIEVE
-                    File.WriteAllText("D://ATT-ERROR-FILE.txt", content);
-#endif
+                    
+
+                    File.WriteAllText("./ATT-ERROR-FILE.txt", content, Encoding.UTF8);
                     Trace.WriteLine("Press Enter once you have resolved the issue.");
                     Console.ReadLine();
                 }

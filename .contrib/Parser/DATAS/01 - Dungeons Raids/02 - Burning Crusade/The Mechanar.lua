@@ -4,6 +4,11 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(258, {	-- The Mechanar
 		["lore"] = "Among the satellites of Tempest Keep, the Mechanar has been chosen by Kael'thas to be a factory to create large amounts of power. Mechano-Lord Capacitus appears to be the one creating it using the naaru-technology found in Tempest Keep, and the power is stored in manacells which piles up into walls and heaps inside the satellite. The large amount of manacells are smuggled by ethereals to the Sunwell where Kael'thas plans to use them to power up the summoning of Kil'jaeden.",
+		["zone-text-areaID"] = 3849,	-- The Mechanar
+		["sins"] = {
+			"Tempest Keep: The Mechanar",
+			"Festung der Stürme: Die Mechanar",
+		},
 		["coord"] = { 70.61, 69.75, NETHERSTORM },	-- The Mechanar, Netherstorm
 		["maps"] = {
 			TEMPEST_KEEP_MECHANAR,
@@ -72,7 +77,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				i(21906, {	-- Pattern: Arcanoweave Boots
 					["cr"] = 19168,	-- Sunseeker Astromage
 				}),
-				i(22920, {	-- Recipe: Major Fire Protection Potion
+				i(22920, {	-- Recipe: Major Fire Protection Potion (RECIPE!)
 					["cr"] = 19168,	-- Sunseeker Astromage
 				}),
 			}),
@@ -128,16 +133,15 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							["timeline"] = { "removed 5.0.4" },
 						}),
 						-- #endif
-						i(22920),	-- Recipe: Major Fire Protection Potion
+						i(22920),	-- Recipe: Major Fire Protection Potion (RECIPE!)
 					},
 				}),
 				e(565, {	-- Pathaleon the Calculator
 					["creatureID"] = 19220,
 					["groups"] = {
-						classicAch(658, {	-- The Mechanar
+						ach(658, {	-- The Mechanar
 							-- #if BEFORE WRATH
 							["sourceQuest"] = 10704,	-- How to Break Into the Arcatraz
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						i(28288),	-- Abacus of Violent Odds
@@ -226,13 +230,15 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								["timeline"] = { "removed 5.0.4" },
 							}),
 							-- #endif
-							i(22920),	-- Recipe: Major Fire Protection Potion
+							i(22920),	-- Recipe: Major Fire Protection Potion (RECIPE!)
 						},
 					}),
 					e(565, {	-- Pathaleon the Calculator
 						["creatureID"] = 19220,
 						["groups"] = {
-							ach(679),	-- Heroic: The Mechanar
+							ach(679, {	-- Heroic: The Mechanar
+								["timeline"] = { "added 3.0.1" },
+							}),
 							ach(5079, {	-- Heroic: The Mechanar Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),

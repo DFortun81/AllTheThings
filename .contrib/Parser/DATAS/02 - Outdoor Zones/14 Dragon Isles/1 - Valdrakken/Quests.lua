@@ -11,19 +11,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				-- #endif
 			}),
 			i(200453, {	-- Iskaara Tuskarr Insignia
-				["minReputation"] = { 2511, 30 },	-- Iskaara Tuskarr Renown 30
+				["minReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
 				-- #if BEFORE 10.0.7
 				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				-- #endif
 			}),
 			i(200454, {	-- Maruuk Centaur Insignia
-				["minReputation"] = { 2503, 25 },	-- Maruuk Centaur renown 25
+				["minReputation"] = { FACTION_MARUUK_CENTAUR, 25 },
 				-- #if BEFORE 10.0.7
 				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				-- #endif
 			}),
 			i(200455, {	-- Valdrakken Accord Insignia
-				["minReputation"] = { 2510, 30 },	-- Valdrakken Accord Renown 30
+				["minReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
 				-- #if BEFORE 10.0.7
 				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				-- #endif
@@ -87,7 +87,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["g"] = {
 							i(200887),	-- Charred Porter
 							i(200888),	-- Coal-Fired Rib Rack
-							i(200889),	-- Highly-Spiced Haunch
+							i(200889),	-- Highly Spiced Haunch
 						},
 					}),
 					------ Day 3 ------
@@ -119,7 +119,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["provider"] = { "n", 187025 },	-- Warden Captain Sinjoirmi
 						["coord"] = { 60.2, 82.2, THALDRASZUS },
 						["g"] = {
-							i(200893),	-- Azsunian-Poached Lobster
+							i(200893),	-- Azsunian Poached Lobster
 							i(200894),	-- Rare Vintage Arcwine
 							i(200895),	-- Fine Taladorian Cheese Platter
 						},
@@ -261,7 +261,43 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 				},
 			}),
-			------ Misc ------
+			------ Evoker ------
+			q(75408, {	-- Calling All Dracthyr!
+				["sourceQuests"] = { 75417 },	-- Symbol of Hope
+				["provider"] = { "o", 398674 },	-- Vibrant Flyer
+				["coord"] = { 55.1, 40.0, VALDRAKKEN },
+				["timeline"] = { ADDED_10_1_0 },
+				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+				["classes"] = { EVOKER },
+			}),
+			q(73092, {	-- Something Like Family
+				["sourceQuests"] = { 75408 },	-- Calling All Dracthyr!
+				["provider"] = { "n", 201764 },	-- Talon Scaralesh
+				["coord"] = { 23.1, 32.1, VALDRAKKEN },
+				["timeline"] = { ADDED_10_1_0 },
+				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+				["classes"] = { EVOKER },
+			}),
+			q(73086, {	-- Healthy Competition
+				["sourceQuests"] = { 73092 },	-- Something Like Family
+				["provider"] = { "n", 203325 },	-- Amythora
+				["coord"] = { 26.3, 35.9, VALDRAKKEN },
+				["timeline"] = { ADDED_10_1_0 },
+				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+				["classes"] = { EVOKER },
+			}),
+			q(73093, {	-- Empty Chairs
+				["sourceQuests"] = { 73086 },	-- Healthy Competition
+				["provider"] = { "n", 203629 },	-- Marithos
+				["coord"] = { 24.0, 35.8, VALDRAKKEN },
+				["timeline"] = { ADDED_10_1_0 },
+				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+				["classes"] = { EVOKER },
+				["g"] = {
+					i(205252),	-- Momento of Rekindled Bonds
+				},
+			}),
+			------ Miscellaneous ------
 			q(67007, {	-- Archival Assistance
 				["provider"] = { "o", 381687 },	-- Discarded Note
 				["coord"] = { 47.8, 46.6, VALDRAKKEN },
@@ -275,36 +311,33 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 49.9, 56, VALDRAKKEN },
 				["isBreadcrumb"] = true,	-- unconfirmed
 			}),
+		}),
+		n(QUESTS, sharedData({
+			["provider"] = { "n", 194026 },	-- Azley
+			["coord"] = { 35.4, 58.8, VALDRAKKEN },
+			["repeatable"] = true,
+			["g"] = {
+				i(200288),	-- Maruuk Centaur Insignia [Uncommon]
+				i(200287),	-- Iskaara Tuskarr Insignia [Uncommon]
+				i(200289),	-- Valdrakken Accord Insignia [Uncommon]
+			},
+		}, bubbleDown({
+			["timeline"] = { ADDED_10_0_7 },
+		}, {
 			------ Repeatables ------
 			q(75164, {	-- In Need of Primal Foci
-				["provider"] = { "n", 194026 },	-- Azley
-				["coord"] = { 35.4, 58.8, VALDRAKKEN },
 				["cost"] = { { "i", 200686, 2 } },	-- 2x Primal Focus
-				["repeatable"] = true,
-				["timeline"] = { ADDED_10_0_7 },
 			}),
 			q(75166, {	-- In Need of Many Primal Foci
-				["provider"] = { "n", 194026 },	-- Azley
-				["coord"] = { 35.4, 58.8, VALDRAKKEN },
 				["cost"] = { { "i", 200686, 10 } },	-- 10x Primal Focus
-				["repeatable"] = true,
-				["timeline"] = { ADDED_10_0_7 },
 			}),
 			q(75165, {	-- In Need of Concentrated Primal Foci
-				["provider"] = { "n", 194026 },	-- Azley
-				["coord"] = { 35.4, 58.8, VALDRAKKEN },
-				["cost"] = { { "i", 200686, 1 } },	-- 1x Concentrated Primal Focus
-				["repeatable"] = true,
-				["timeline"] = { ADDED_10_0_7 },
+				["cost"] = { { "i", 190455, 1 } },	-- 1x Concentrated Primal Focus
 			}),
 			q(75167, {	-- In Need of Many Concentrated Primal Foci
-				["provider"] = { "n", 194026 },	-- Azley
-				["coord"] = { 35.4, 58.8, VALDRAKKEN },
 				["cost"] = { { "i", 190455, 10 } },	-- 10x Concentrated Primal Focus
-				["repeatable"] = true,
-				["timeline"] = { ADDED_10_0_7 },
 			}),
-		}),
+		}))),
 		n(QUESTS, sharedData({
 				["isWeekly"] = true,
 			}, {
@@ -315,6 +348,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["g"] = {
 					i(206135),	-- Heroic Dungeon Delver's Trophy Chest
 					i(206136),	-- Heroic Dungeon Delver's Trophy Crest
+					------ Reputation ------
+					i(200288),	-- Maruuk Centaur Insignia [Uncommon]
+					i(200287),	-- Iskaara Tuskarr Insignia [Uncommon]
+					i(205365),	-- Loamm Niffen Insignia [Uncommon]
+					i(200289),	-- Valdrakken Accord Insignia [Uncommon]
 				},
 			}),
 			q(66867, {	-- Relic Recovery: Algeth'ar Academy
@@ -403,20 +441,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(VALDRAKKEN, {
-		q(72596),	-- After Open Orientation
-		q(69935),	-- triggered with 'A Dryadic Remedy' (questID 67606 & 69937)
-		q(72011),	-- triggeres when accepting 'The Ruby Feast!' (71238)
-		q(72009),	-- triggered with 'Warm Away These Shivers' (67047)
-		q(72258, {["name"] = "Ruby Feast Daily Lockout",["isDaily"] = true}),	-- daily lockout of Ruby Feast quest progression
-		q(67055),	-- triggered with 'Warm Away These Shivers' (67047)
-		q(67056),	-- triggered after '10,000 Years of Roasting' (67063)
-		q(67057),	-- triggered after 'Rambling Delight' (67064)
-		q(67058),	-- triggered after 'Future-Fresh Fungi' (67065)
-		q(67059),	-- triggered after 'Delights to Delve For' (67066)
-		q(67060),	-- triggered after 'Navigating the Leapmaize' (67067)
-		q(67061),	-- triggered after 'Anything But a Breeze' (67068)
-		q(72010),	-- triggered after 'What a Long, Sweet Trip It's Been' (67071)
-		q(65041),	-- Talked with Scalecommanders Cindretresh and Azurathel
+		q(72596),	-- After Open Orientation (spellID 396185)
+		q(69935),	-- triggered with 'A Dryadic Remedy' (questID 67606 & 69937) (spellID 381859)
+		q(72011),	-- triggeres when accepting 'The Ruby Feast!' (questID 71238) (spellID 391778 & 377492)
+		q(72009),	-- triggered with 'Warm Away These Shivers' (questID 67047) (spellID 377492 & 377494 & 377495 & 377496 & 377497 & 377498 & 377499 & 391779)
+		q(72258, {["name"] = "Ruby Feast Daily Lockout",["isDaily"] = true}),	-- daily lockout of Ruby Feast quest progression (spellID 393805)
+		q(67055),	-- triggered with 'Warm Away These Shivers' (questID 67047) (spellID 377492)
+		q(67056),	-- triggered after '10,000 Years of Roasting' (questID 67063) (spellID 377494)
+		q(67057),	-- triggered after 'Rambling Delight' (questID 67064) (spellID 377495)
+		q(67058),	-- triggered after 'Future-Fresh Fungi' (questID 67065) (spellID 377496)
+		q(67059),	-- triggered after 'Delights to Delve For' (questID 67066) (spellID 377497)
+		q(67060),	-- triggered after 'Navigating the Leapmaize' (questID 67067) (spellID 377498)
+		q(67061),	-- triggered after 'Anything But a Breeze' (questID 67068) (spellID 377499)
+		q(72010),	-- triggered after 'What a Long, Sweet Trip It's Been' (questID 67071) (spellID 391779)
+		q(65041),	-- Talked with Scalecommanders Cindretresh and Azurathel (spellID 388943)
 	}),
 }));
 

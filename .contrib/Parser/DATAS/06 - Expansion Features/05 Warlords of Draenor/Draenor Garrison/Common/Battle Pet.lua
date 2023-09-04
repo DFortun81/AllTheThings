@@ -17,6 +17,7 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 85418 },	-- Lio the Lioness
 							["coord"] = { 28.3, 38.8, LUNARFALL },
 							["races"] = ALLIANCE_ONLY,
+							["_drop"] = { "g" },	-- Drop Shiny Pet Charm
 						}),
 						q(40329,  {	-- Battle Pet Tamers: Warlords
 							["isWeekly"] = true,
@@ -32,6 +33,7 @@ root(ROOTS.ExpansionFeatures,
 								{ 28.3, 38.8, LUNARFALL },	-- lvl 2/3 garrison
 								{ 32.6, 39.8, FROSTWALL },
 							},
+							["_drop"] = { "g" },	-- Drop Flawless Battle-Training Stone
 						}),
 						q(38299,  bubbleDownSelf({ ["timeline"] = { ADDED_6_1_0 } }, {	-- Critters of Draenor
 							["isDaily"] = true,
@@ -51,6 +53,7 @@ root(ROOTS.ExpansionFeatures,
 									i(122533),	-- Young Talbuk (PET!)
 								}),
 							},
+							["_drop"] = { "g" },	-- Drop Flawless Battle-Training Stone
 						})),
 						q(38300, bubbleDownSelf({ ["timeline"] = { ADDED_6_1_0 } }, {	-- Critters of Draenor
 							["isDaily"] = true,
@@ -70,6 +73,7 @@ root(ROOTS.ExpansionFeatures,
 									i(122533),	-- Young Talbuk (PET!)
 								}),
 							},
+							["_drop"] = { "g" },	-- Drop Flawless Battle-Training Stone
 						})),
 						q(37644,  {	-- Mastering the Menagerie
 							["isDaily"] = true,
@@ -129,6 +133,7 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 79858 },	-- Serr'ah
 							["coord"] = { 32.6, 39.8, FROSTWALL },
 							["races"] = HORDE_ONLY,
+							["_drop"] = { "g" },	-- Drop Shiny Pet Charm
 						}),
 						q(38241, {	-- Unearthed Magic
 							["sourceQuests"] = { 36615 },	-- My Very Own Castle

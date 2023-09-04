@@ -88,7 +88,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 			}),
 			d(MYTHIC_DUNGEON, {
 				n(ACHIEVEMENTS, {
-					ach(10611),	-- Dropping some Eaves
+					ach(10611, {	-- Dropping Some Eaves
+						["description"] = "Don't let any of the 5 Sentries complete their Sound Alarm cast, disable the 5 beacons before engaging the first boss, kill all 3 demons separately before pulling Talixae and then guess spy on the first try.",
+					}),
 				}),
 				cr(104215, e(1718, {	-- Patrol Captain Gerdo
 					ach(10610),	-- Waiting for Gerdo
@@ -144,13 +146,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(137493),	-- Edge of the First Blade
 				})),
 			}),
-			-- #if AFTER 9.1.5
-			d(TIMEWALKING_DUNGEON, {
-				["sym"] = {	-- link in Timewalking content
-					{"sub", "tw_instance", 800 },	-- this instance version of timewalking
-				},
-			}),
-			-- #endif
 		},
 	}),
 }));

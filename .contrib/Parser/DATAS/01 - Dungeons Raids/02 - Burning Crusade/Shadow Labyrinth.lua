@@ -4,6 +4,12 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(253, {	-- Shadow Labyrinth
 		["lore"] = "Auchindoun is a former draenei holy site and Horde fortress in the middle of the Bone Wastes in Outland's Terokkar Forest. It was a hallowed ground until the Shadow Council took over, summoned an extremely powerful demon as old as time itself, and destroyed half of Terokkar Forest in the process. Different factions now vie for power in this magical spot: Ethereals suck the arcane energy from the Mana-Tombs, the Burning Legion harvests souls inside the Auchenai Crypts, arakkoa zealots work dark magic in the Sethekk Halls, and the Shadow Council plots its domination of Outland from within the Shadow Labyrinth.",
+		["zone-text-areaID"] = 3789,	-- Shadow Labyrinth
+		["sins"] = {
+			"Auchindoun: Shadow Labyrinth",
+			"Auchindoun: The Shadow Labyrinth",
+			"Auchindoun: Schattenlabyrinth",
+		},
 		["coord"] = { 39.63, 73.55, TEROKKAR_FOREST },	-- Shadow Labyrinth, Terokkar Forest
 		["mapID"] = AUCHINDOUN_SHADOW_LABYRINTH,
 		-- #if BEFORE CATA
@@ -86,7 +92,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(29643, {	-- The Codex of Blood
 					["qg"] = 54890,	-- Field Commander Mahfuun
-					["sourceQuest"] = 29642,	-- Trouble at Auchindoun
 					["coord"] = {50.4, 45.3, SHATTRATH_CITY },
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(68, 68, 20),
@@ -158,7 +163,8 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 18893,	-- Spymistress Mehlisah Highcrown
 					["coord"] = { 50.2, 45.4, SHATTRATH_CITY },
 					["timeline"] = { "added 4.3.0.14732" },
-					["isBreadcrumb"] = true,
+					-- This was available to a character with 29643 already completed, the follow up of this 'breadcrumb'...
+					-- ["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(68, 68, 20),
 					["altQuests"] = {
 						10094,	-- The Codex of Blood (pre 4.0.3)
@@ -210,7 +216,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(27892),	-- Cloak of the Inciter
 						i(27893),	-- Ornate Leggings of the Venerated
 						i(27891),	-- Adamantine Figurine
-						i(25728),	-- Pattern: Stylin' Purple Hat
+						i(25728),	-- Pattern: Stylin' Purple Hat (RECIPE!)
 						i(30808),	-- Book of Fel Names
 					},
 				}),
@@ -230,13 +236,12 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(547, {	-- Murmur
 					["creatureID"] = 18708,
 					["groups"] = {
-						classicAch(654, {	-- Shadow Labyrinth
+						ach(654, {	-- Shadow Labyrinth
 							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								10095,	-- Into the Heart of the Labyrinth
 								10885,	-- Trial of the Naaru: Strength
 							},
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						i(27903),	-- Sonic Spear
@@ -310,7 +315,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(27892),	-- Cloak of the Inciter
 							i(27893),	-- Ornate Leggings of the Venerated
 							i(27891),	-- Adamantine Figurine
-							i(25728),	-- Pattern: Stylin' Purple Hat
+							i(25728),	-- Pattern: Stylin' Purple Hat (RECIPE!)
 							i(30808),	-- Book of Fel Names
 						},
 					}),
@@ -329,10 +334,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(547, {	-- Murmur
 						["creatureID"] = 18708,
 						["groups"] = {
-							classicAch(675, {	-- Heroic: Shadow Labyrinth
+							ach(675, {	-- Heroic: Shadow Labyrinth
 								-- #if BEFORE WRATH
 								["sourceQuest"] = 10885,	-- Trial of the Naaru: Strength
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
 							}),
 							ach(5075, {	-- Heroic: Shadow Labyrinth Guild Run

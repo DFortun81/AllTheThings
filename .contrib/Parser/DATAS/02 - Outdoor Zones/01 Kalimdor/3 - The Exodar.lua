@@ -37,14 +37,12 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 		-- #endif
 		["isRaid"] = true,
 		["groups"] = {
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					464,	-- Grey Moth (PET!)
 					385,	-- Mouse (PET!)
 				}},
-			})),
-			-- #endif
+			}),
 			n(FACTIONS, {
 				faction(930, {	-- Exodar
 					-- #if BEFORE CATA
@@ -147,7 +145,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 20914,	-- Aalun <Riding Trainer>
 					["coord"] = { 81.4, 52.6, THE_EXODAR },
 					["description"] = "This quest is automatically offered to Draenei upon reaching the specified level.",
-					["timeline"] = { "added 5.2.0" },
+					["timeline"] = { "added 5.2.0", REMOVED_10_1_5 },
 					["maps"] = { AZUREMYST_ISLE },
 					["races"] = { DRAENEI },
 					["DisablePartySync"] = true,
@@ -228,10 +226,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 28.1, 61.9, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(22900, {	-- Recipe: Elixir of Camouflage
+						i(22900, {	-- Recipe: Elixir of Camouflage (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(23574, {	-- Recipe: Transmute Primal Might
+						i(23574, {	-- Recipe: Transmute Primal Might (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -403,10 +401,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sym"] = { { "sub", "common_recipes_vendor", 3366 } },	-- Tamar <Leatherworking Supplies>
 					-- #endif
 					["groups"] = {
-						i(25726, {	-- Pattern: Comfortable Insoles
-							["requireSkill"] = LEATHERWORKING,
+						i(25726, {	-- Pattern: Comfortable Insoles (RECIPE!)
 							["isLimited"] = true,
-							["f"] = RECIPES,
 						}),
 						i(25720, {	-- Pattern: Heavy Knothide Leather
 							["timeline"] = { "removed 3.2.0"},
@@ -615,8 +611,8 @@ for i,o in ipairs({
 	i(16060),	-- Common White Shirt
 }) do table.insert(GORNII_GROUPS, o); end
 for i,o in ipairs({
-	i(21219),	-- Recipe: Sagefish Delight
-	i(21099),	-- Recipe: Smoked Sagefish
+	i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+	i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 }) do table.insert(PHEA_GROUPS, o); end
 for i,o in ipairs({
 	i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)

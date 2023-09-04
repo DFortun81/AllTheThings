@@ -3,7 +3,7 @@
 ---------------------------------------------------------------
 
 
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, {
 	n(QUESTS, {
 		tier(CLASSIC_TIER, {
 			-- 1.x.x
@@ -89,6 +89,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(5703, { ["name"] = "<NYI> The Rites of Old", }),
 				q(1443, { ["name"] = "<nyi> The Shakedown", }),
 				q(5659, { ["name"] = "<NYI> Touch of Weakness", }),
+				q(1288, { ["name"] = "<nyi> Vimes's Report", }),
 				q(1289, { ["name"] = "<nyi> Vimes's Report", }),
 				q(1292, { ["name"] = "<nyi><TXT> Centaur Hoofprints", }),
 				q(241, { ["name"] = "<TEST> HEY MISTER WILSON!", }),
@@ -105,6 +106,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(497, { ["name"] = "<UNUSED>", }),
 				q(534, { ["name"] = "<UNUSED>", }),
 				q(612, { ["name"] = "<UNUSED>", }),
+				q(774, { ["name"] = "<UNUSED>", }),	-- Mulgore
 				q(807, { ["name"] = "<UNUSED>", }),
 				q(810, { ["name"] = "<UNUSED>", }),
 				q(811, { ["name"] = "<UNUSED>", }),
@@ -169,6 +171,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(5696, { ["name"] = "<UNUSED>", }),
 				q(5697, { ["name"] = "<UNUSED>", }),
 				q(6841, { ["name"] = "<UNUSED>", }),
+				q(6842, { ["name"] = "<UNUSED>", }),	-- Silithus
 				q(7904, { ["name"] = "<UNUSED>", }),
 				q(8247, { ["name"] = "<UNUSED>", }),
 				q(8248, { ["name"] = "<UNUSED>", }),
@@ -178,10 +181,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(8571, { ["name"] = "<UNUSED> Armor Kits", }),
 				q(6202, { ["name"] = "<UNUSED> Good and Evil", }),
 				q(6201, { ["name"] = "<UNUSED> The Legacy of the Ashbringer", }),
-				q(9412, { ["name"] = "<UNUSED>Crystal Flake Throat Lozenget Lozenge", }),
-				q(9413, { ["name"] = "<UNUSED>Crystal Flake Throat Lozenget Lozenge", }),
-				q(9411, { ["name"] = "<UNUSED>Infused Bandages", }),
-				q(9414, { ["name"] = "<UNUSED>Infused Bandages", }),
+				q(6606, { ["name"] = "A Little Luck", }),	-- Winterspring
 				q(785, { ["name"] = "A Strategic Alliance", }),
 				q(908, { ["name"] = "Amongst the Ruins", }),
 				q(8489, { ["name"] = "An Intact Converter", }),
@@ -189,11 +189,14 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(8478, { ["name"] = "Choose Your Weapon", }),
 				q(8230, { ["name"] = "Collin's Test Quest", }),
 				q(7906, { ["name"] = "Darkmoon Cards - Beast", }),
+				q(1272, { ["name"] = "Finding Reethe <CHANGE INTO GOSSIP>", }),	-- Dustwallow Marsh
+				q(1283, { ["name"] = "Fire at the Shady Rest <CHANGE TO GOSSIP>", }),	-- Dustwallow Marsh
 				q(1127, { ["name"] = "Fool's Stout", }),
 				q(1174, { ["name"] = "Gnomes Win!", }),
 				q(1099, { ["name"] = "Goblins Win!", }),
 				q(7681, { ["name"] = "Hunter test quest", }),
 				q(7682, { ["name"] = "Hunter test quest2", }),
+				q(1281, { ["name"] = "Jim's Song <CHANGE TO GOSSIP>", }),	-- Dustwallow Marsh
 				q(5383, { ["name"] = "Krastinov's Bag of Horrors", }),
 				q(636, { ["name"] = "Legends of the Earth <NYI>", }),
 				q(7479, { ["name"] = "Libram of Focus", }),
@@ -211,16 +214,29 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(7869, { ["name"] = "test quest - do not use", }),
 				q(7870, { ["name"] = "test quest2 - do not use", }),
 				q(708, { ["name"] = "The Black Box", }),
+				q(1263, { ["name"] = "The Burning Inn <CHANGE TO GOSSIP>", }),	-- Dustwallow Marsh
+				q(9065, { ["name"] = "The \"Chow\" Quest (123)aa", }),	-- Dustwallow Marsh
 				q(8896, { ["name"] = "The Dwarven Spy", }),
 				q(3911, { ["name"] = "The Last Element", }),
 				q(787, { ["name"] = "The New Horde", }),
-				q(9695, { ["name"] = "The Sun King's Command", }),
 				q(7462, { ["name"] = "The Treasure of the Shen'dralar", }),
 				q(7790, { ["name"] = "The Written Word", }),
+				q(2019, { ["name"] = "Tools of the Trade", }),
 				q(8340, { ["name"] = "Twilight Signet Ring <NYI> <TXT>", }),
 				q(1318, { ["name"] = "Unfinished Gordok Business", }),
 				q(7962, { ["name"] = "Wabbit Pelts", }),
 				q(7961, { ["name"] = "Waskily Wabbits!", }),
+				q(9296, { ["name"] = "reuse", }),	-- Scourge Invasion (Unused)
+				q(9297, { ["name"] = "reuse", }),	-- Scourge Invasion (Unused)
+				q(9298, { ["name"] = "reuse", }),	-- Scourge Invasion (Unused)
+				q(9411, { ["name"] = "<UNUSED>Infused Bandages", }),
+				q(9412, { ["name"] = "<UNUSED>Crystal Flake Throat Lozenget Lozenge", }),
+				q(9413, { ["name"] = "<UNUSED>Crystal Flake Throat Lozenget Lozenge", }),
+				q(9414, { ["name"] = "<UNUSED>Infused Bandages", }),
+				q(9695, { ["name"] = "The Sun King's Command", }),
+				i(20946, { ["name"] = "Tactical Task Briefing III", }),	-- Silithus
+				i(21246, { ["name"] = "Combat Task Briefing I", }),	-- Silithus
+				i(21247, { ["name"] = "Combat Task Briefing II", }),	-- Silithus
 			}),
 		}),
 		tier(TBC_TIER, {
@@ -510,6 +526,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(28541),	-- Cache of Mau'ari
 			q(14446),	-- Cataclysm!
 			q(28516),	-- Centuries of Suffering
+			q(25413),	-- Change of Plans
 			q(28907),	-- Daily Normal Random (1st)
 			q(28908),	-- Daily Normal Random (Nth)
 			q(29185),	-- Daily Tier 2 Heroic (1st)
@@ -526,7 +543,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(24898),	-- Going, Going, Guano!
 			q(24899),	-- Going, Going, Guano!
 			q(26527),	-- Gryphon Master Talonaxe
-			q(25413),	-- Change of Plans
 			q(29028),	-- Into Jaedenar
 			q(14481),	-- Into The Abyss
 			q(28905),	-- LFGDungeons - Cataclysm - Heroic Dungeon - 1st
@@ -540,7 +556,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(25435),	-- Pressure is Mounting
 			q(25384),	-- Raw Materials
 			q(26459),	-- Researching the Corruption
-			q(24716),	-- Returning A-Me 01
 			q(26704),	-- REUSE
 			q(28270),	-- Riding Shotgun
 			q(29572),	-- Safety is Job One
@@ -568,7 +583,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			q(27634),	-- The God Hakkar
 			q(27018),	-- The Herald <NYI>
 			q(28606),	-- The Keys to the Hot Rod
-			q(27150),	-- The Menders' Stead [H]
 			q(29672),	-- The Opening of the Dark Portal
 			q(29683),	-- The Scryer's Scryer
 			q(26243),	-- The World Pillar
@@ -883,13 +897,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(32291, { ["name"] = "[PH] The Fall of Shan Bu", }),	-- [PH] The Fall of Shan Bu
 			})),
 
-			-- 5.3.0
-			tier(MOP_TIER, 3.0, bubbleDownSelf({ ["timeline"] = {"created 5.3.0"} }, {
-				q(32825, { ["name"] = "Re-Use Me", }),	-- Re-Use Me
-				q(32826, { ["name"] = "Re-Use Me", }),	-- Re-Use Me
-				q(32827, { ["name"] = "Re-Use Me", }),	-- Re-Use Me
-			})),
-
 			-- 5.4.0
 			tier(MOP_TIER, 4.0, bubbleDownSelf({ ["timeline"] = {"created 5.4.0"} }, {
 				q(33360, { ["name"] = "5.4 Raid - RRP - Boss 1 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 1 Legendary Quest
@@ -1117,6 +1124,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(35755, { ["name"] = "Intricately Carved Battle Staff", }),	-- Intricately Carved Battle Staff
 				q(33987, { ["name"] = "Intro Tracking", }),	-- Intro Tracking
 				q(33496, { ["name"] = "Iron Horde in Karabor", }),	-- Iron Horde in Karabor
+				q(35504, { ["name"] = "Iron Joker", }),	-- Iron Joker
 				q(35020, { ["name"] = "Jared's Test Quest", }),	-- Jared's Test Quest
 				q(35294, { ["name"] = "Jasper Moves", }),	-- Jasper Moves
 				q(34690, { ["name"] = "Just the Beginning", }),	-- Just the Beginning
@@ -3232,87 +3240,34 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					["sourceQuests"] = { 54106 },	-- Tracking Tipoff
 					["races"] = HORDE_ONLY,
 					["maps"] = { REDRIDGE_MOUNTAINS },
-					["u"] = NEVER_IMPLEMENTED,
 				}),
-				q(49769, {	-- Wreckage of the Cataclysm
-					["u"] = NEVER_IMPLEMENTED,	-- this doesn't appear to have ever made it live
-				}),
-				q(56110, {	-- A Defender Emerges
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(56112, {	-- A Royal Awakening
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(50132, {	-- A Sticky Proposition
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(51110, {	-- Clearing the Skies
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(56109, {	-- Defender of the Hive
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(51066, {	-- Destroy Mine Carts
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(50285, {	-- Don't Be Crabby
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(51756, {	-- Economic Downturn
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(49732, {	-- Evacuate!
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(51750, {	-- Field Promotions
-					["u"] = NEVER_IMPLEMENTED,
-				}),
+				q(56110),	-- A Defender Emerges
+				q(56112),	-- A Royal Awakening
+				q(50132),	-- A Sticky Proposition
+				q(51110),	-- Clearing the Skies
+				q(56109),	-- Defender of the Hive
+				q(51066),	-- Destroy Mine Carts
+				q(50285),	-- Don't Be Crabby
+				q(51756),	-- Economic Downturn
+				q(49732),	-- Evacuate!
+				q(51750),	-- Field Promotions
 				q(51883, {	-- Grizz's Lunch
 					["provider"] = { "i", 160897 },	-- Grizz's Lunchbox
-					["u"] = NEVER_IMPLEMENTED,
 				}),
-				q(50060, {	-- Honey, Slimes!
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(51557, {	-- Irontide Warning
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(50383, {	-- Mankrik's Wrath
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(51202, {	-- Millstone Hamlet Quest Template
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(50815, {	-- Orcs Versus Humans
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(50907, {	-- Poor Souls
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(51724, {	-- Powered Up
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(49742, {	-- Respect Your Elders
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(50816, {	-- Roarke's Missing
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(51334, {	-- Securing The Square
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(49743, {	-- Shoot First, Questions Later
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(50743, {	-- The Immediate Problem
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(56111, {	-- The Usurper
-					["u"] = NEVER_IMPLEMENTED,
-				}),
-				q(51708, {	-- Warfang Hold Quest Template
-					["u"] = NEVER_IMPLEMENTED,
-				}),
+				q(50060),	-- Honey, Slimes!
+				q(51557),	-- Irontide Warning
+				q(50383),	-- Mankrik's Wrath
+				q(51202),	-- Millstone Hamlet Quest Template
+				q(50815),	-- Orcs Versus Humans
+				q(50907),	-- Poor Souls
+				q(51724),	-- Powered Up
+				q(49742),	-- Respect Your Elders
+				q(50816),	-- Roarke's Missing
+				q(51334),	-- Securing The Square
+				q(49743),	-- Shoot First, Questions Later
+				q(50743),	-- The Immediate Problem
+				q(56111),	-- The Usurper
+				q(51708),	-- Warfang Hold Quest Template
 				-- Unsorted
 				q(47246, {
 					["description"] = "Area: |cFFf09f26Nazmir|r",
@@ -4893,28 +4848,24 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(56129),	-- Heroic: Battle for Stromgarde
 				q(56206),	-- Heroic: Battle for Stromgarde
 				q(56164, {	-- Desperate Need (A)
-					["u"] = NEVER_IMPLEMENTED,
 					["provider"] = { "n", 151763 },	-- Isla
 					["coord"] = { 37.7, 55.3, NAZJATAR },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 56156,	-- A Tempered Blade
 				}),
 				q(56176, {	-- Desperate Need (H)
-					["u"] = NEVER_IMPLEMENTED,
 					["provider"] = { "n", 154208 },	-- Jonah Lowtide
 					["coord"] = { 50.5, 66.2, NAZJATAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55500,	-- Save a Friend
 				}),
 				q(56166, {	-- The Needs of the People
-					["u"] = NEVER_IMPLEMENTED,
 					["provider"] = { "n", 151763 },	-- Isla
 					["coord"] = { 37.7, 55.3, NAZJATAR },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 56164,	-- Desperate Need
 				}),
 				q(56179, {	-- The Needs of the People
-					["u"] = NEVER_IMPLEMENTED,
 					["provider"] = { "n", 154208 },	-- Jonah Lowtide
 					["coord"] = { 50.5, 66.2, NAZJATAR },
 					["races"] = HORDE_ONLY,
@@ -5222,14 +5173,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(55372),	--
 				q(55402),	--
 				q(55406),	--
-				q(55415),	--
-				q(55416),	--
-				q(55417),	--
-				q(55418),	--
-				q(55419),	--
-				q(55420),	--
-				q(55421),	--
-				q(55422),	--
 				q(55501),	--
 				q(55540),	--
 				q(55541),	--
@@ -5268,10 +5211,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(56228),	--
 				q(56229),	--
 				q(56230),	--
-				q(56251),	--
-				q(56252),	--
-				q(56253),	--
-				q(56254),	--
 				q(56317),	--
 				q(56331),	--
 				-- 8.2.0.30093
@@ -5283,11 +5222,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 8.2.0.30170
 				-- 8.2.0.30203
 				-- 8.2.0.30262
-				q(56509),	--
-				q(56510),	--
-				q(56512),	--
-				q(56513),	--
-				q(56514),	--
 				q(56531),	--
 				q(56545),	--
 				q(56546),	--
@@ -6873,7 +6807,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				-- 9.0.2.35854
 				q(62815),	--
 				q(62816),	--
-				q(62818),	--
+				q(62818),	-- Pumpkin Head	(spellID 344765)
 				q(62820),	--
 				-- 9.0.2.35938
 				q(62828, { ["name"] = "[DNT] Door of Shadows", }),	-- [DNT] Door of Shadows
@@ -7165,8 +7099,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(64980),	--
 				q(64991),	--
 				q(65012),	--
-				q(65013),	--
-				q(65088),	--
+				q(65013),	-- Chest Unlocked (spellID 370679)
 				-- 9.1.5.40071
 				-- 9.1.5.40078
 				q(65139),	--
@@ -7363,7 +7296,6 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				q(65645),	--
 				-- 9.2.0.41827
 				-- 9.2.0.41962
-				q(65697),	--
 				q(65708),	--
 				q(65715),	--
 				q(65733),	--
@@ -7436,6 +7368,10 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			-- 10.0.7
 			tier(DF_TIER, 0.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
 				q(74955, { ["_drop"] = { "g" }, }),	-- An Egg-centric Discovery
+				q(74363),	-- Ensemble: Cloudburst Regalia
+				q(74364),	-- Ensemble: Dust Devil Armor
+				q(74365),	-- Ensemble: Cyclonic Battlegear
+				q(74366),	-- Ensemble: Firestorm Armor
 			})),
 
 			-- 10.1.0
@@ -7444,4 +7380,4 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 		}),
 	}),
-}));
+});

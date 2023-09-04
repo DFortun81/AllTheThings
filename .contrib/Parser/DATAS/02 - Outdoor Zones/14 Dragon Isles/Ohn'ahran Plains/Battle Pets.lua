@@ -27,7 +27,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				pet(3353),	-- Stoneshell (PET!)
 				pet(3389, {	-- The Quackcestor (PET!)
-					["minReputation"] = { 2503, 7 },	-- Maruuk Centaur Renown 7
+					["minReputation"] = { FACTION_MARUUK_CENTAUR, 7 },
 					["description"] = "Buy the |cFFefc400Essence of Awakening|r from |cFFefc400Quartermaster Huseng|r and use it to be able to see this pet.",
 					["coords"] = {
 						{ 41.6, 45.2, OHNAHRAN_PLAINS },

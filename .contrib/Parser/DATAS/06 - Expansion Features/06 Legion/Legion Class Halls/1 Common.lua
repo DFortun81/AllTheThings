@@ -237,6 +237,11 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 		n(93787, {	-- Scouting Map
 			["crs"] = CLASS_HALL_MISSION_TABLES,
 			["g"] = {
+				n(ACHIEVEMENTS, {
+					ach(11218, {	-- There's a Boss In There
+						["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_7_3_5 },
+					}),
+				}),
 				n(QUESTS, {
 					q(44057, {	-- A "Noble" Event
 						["provider"] = { "i", 140495 },	-- Torn Invitation
@@ -359,10 +364,6 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 					un(REMOVED_FROM_GAME, q(44263, {	-- The Arcway: Into the Arcway (Mythic)
 						un(REMOVED_FROM_GAME, i(141182)),	-- Unmarked Suramar Vault Crate (Mythic)
 					})),
-					q(39731, {	-- The Tranquil Forest
-						["lvl"] = 98,
-						["isBreadcrumb"] = true,
-					}),
 					un(REMOVED_FROM_GAME, q(43556, {	-- Vault of the Wardens: Into the Vault of the Wardens (Normal)
 						un(REMOVED_FROM_GAME, i(141163)),	-- Bag of Confiscated Materials (Normal)
 					})),
@@ -519,7 +520,8 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 				i(150929),	-- Greater Wardens Insignia
 				i(141341),	-- Highmountain Tribe Insignia
 				i(146944),	-- Highmountain Tribe Insignia
-				i(146950),	-- Legionfall Insignia
+				i(146950),	-- Legionfall Insignia [BOA]
+				i(146949),	-- Legionfall Insignia [BOP]
 				i(141343),	-- Nightfallen Insignia
 				i(146946),	-- Nightfallen Insignia
 				i(141338),	-- Valarjar Insignia

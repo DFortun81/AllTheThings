@@ -115,6 +115,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["questID"] = 71995,
 					["coord"] = { 28.0, 25.9, THE_PRIMALIST_FUTURE },
 					["timeline"] = { ADDED_10_0_2_LAUNCH },
+					["isWeekly"] = true,
 					["g"]= {
 						i(194640),	-- Design: Ring-Bound Hourglass (RECIPE!)
 						i(201447),	-- Primal Revenant's Breezeblade

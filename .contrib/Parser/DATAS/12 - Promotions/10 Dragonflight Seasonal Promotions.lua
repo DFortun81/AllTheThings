@@ -1,10 +1,21 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
+DRAGONFLIGHT_SEASONAL_PROMOTIONS = createHeader({
+	readable = "Dragonflight Seasonal Promotions",
+	icon = [[~_.asset("Expansion_DF")]],
+	text = {
+		en = "Dragonflight Seasonal Promotions",
+		ru = "Промо Dragonflight",
+		cn = "巨龙时代季节性促销",
+	},
+	description = {
+		en = "These promotions happened during the time Dragonflight was the most recent content between 25th October 2022 & 12th November 2024.\n\nThey are listed in the order of their first appearance.",
+	},
+});
 root(ROOTS.Promotions, {
-	n(-584, {	-- Dragonflight Seasonal Promotions
+	n(DRAGONFLIGHT_SEASONAL_PROMOTIONS, {
 		["timeline"] = { "added 10.0.0.46366" },
-		["description"] = "These promotions happened during the time Dragonflight was the most recent content between 25th October 2022 & 12nd November 2024.\n\nThey are listed in the order of their first appearance.",
 		["groups"] = {
 			-- "Pre" Season
 			mount(315132, {	-- Gargantuan Grrloc (MOUNT!)
@@ -79,10 +90,11 @@ root(ROOTS.Promotions, {
 			i(203716, {	-- Thundering Banner of the Aspects (TOY!)
 				["description"] = "Break the Meta: DF Season 1\n\nInstead of teams fighting to beat their opponent's time, Break the Meta is focused on teams pushing keys as high as they can with Season's 1 off-meta specs and classes.\n\nRegister for the event on |cFFFFFFFFRaider.io/break-the-meta-2023/signups|r and complete 2 or more eligible timed keystones at level 15 or higher during BTM S1, and the Thundering Banner of the Aspects will be automatically added to your collection in-game within 30 days of the conclusion of the event.\n\nThe Event starts on April 18th for US, April 19th for EU & April 20th for KR/TW & lasts for 2 entire resets of your region.",
 				["timeline"] = {
-					ADDED_10_0_7,
+					"added 10.0.7",
 					"removed 10.1.0",	-- Removed again on May 2nd 2023
 				},
 			}),
+			-- Season 2
 			i(54452, {	-- Ethereal Portal (TOY!)
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between May 2nd, 10:00 a.m. & May 9th, 9:59 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_10_1_0, "removed 10.1.0.49474" },
@@ -91,10 +103,30 @@ root(ROOTS.Promotions, {
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between May 9th, 10:00 a.m. & May 17th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { "added 10.1.0.49474", "removed 10.1.0.49570" },
 			}),
-			-- i(XXXXXX, {	-- Smoldering Banner of the Aspectss (TOY!)
-			-- 	["description"] = "Participants in The Great Push 2023 whom complete the Proving Grounds will be eligible for the new Smoldering Banner of the Aspects.",
-			-- 	["timeline"] = { "added 10.1.0.XXXXX", "removed 10.1.0.99999" },
-			-- }),
+			i(208057, {	-- Smoldering Banner of the Aspects (TOY!)
+				["description"] = "The Great Push returns in Dragonflight Season 2\n\nInstead of teams fighting to beat their opponent's time, The Great Push is focused on teams pushing keys as high as they can, striving to out survive their competitors and be crowned the champion!\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Smoldering Banner of the Aspects to use in-game!\nSign-ups close 30 Jun 2023 and The Proving Grounds are on 5-10 July (US).",
+				["timeline"] = { "added 10.1.5", "removed 10.1.5" },
+			}),
+			mount(397406, {	-- Wonderous Wavewhisker
+				["description"] = "Obtained if you set up a 6-Month WoW Subscription. Promotion valid through January 9, 2024.",
+				["timeline"] = { "added 10.1.0." }, -- "removed 10.2.5.49570" },
+			}),
+			i(32566, {	-- Picnic Basket (TOY!)
+				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between July 11th, 10:00 a.m. & July 18th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
+				["timeline"] = { "added 10.1.5." }, -- "removed 10.1.0.49570" },
+				["u"] = REMOVED_FROM_GAME,	-- 18th July 2023
+			}),
+			i(190923, {	-- Ensemble: Dashing Buccaneer's Slops
+				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between September 5th, 10:00 a.m. & September 12th, 01:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
+				["timeline"] = { "added 10.1.5." }, -- "removed 10.1.0.49570" },
+				["g"] = {
+					i(190906),	-- Dashing Buccaneer's Breeches
+					i(190907),	-- Dashing Buccaneer's Boots
+					i(190905),	-- Dashing Buccaneer's Sash
+					i(190904),	-- Dashing Buccaneer's Tunic
+				},
+			--	["u"] = REMOVED_FROM_GAME,	-- 12th September 2023
+			}),
 		},
 	}),
 });

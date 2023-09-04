@@ -4,6 +4,12 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(255, {	-- The Black Morass
 		["lore"] = "The Black Morass (also known as Opening of the Dark Portal) is one of the timeways accessible in the Caverns of Time. In this wing, a group of players must defend the last Guardian Medivh, in a swamp known as The Black Morass. The Guardian Medivh, possessed by Sargeras, attempts to open the Dark Portal to Draenor, while wave upon wave of dragonkin of the Infinite Dragonflight attempt to defeat Medivh in order to alter time and halt the invasion of Azeroth from Draenor.",
+		["zone-text-areaID"] = 2366,	-- The Black Morass
+		["sins"] = {
+			"Caverns of Time: The Black Morass",
+			"Opening of the Dark Portal",
+			"Öffnung des Dunklen Portals",
+		},
 		["coord"] = { 37.2, 83.3, CAVERNS_OF_TIME },
 		["mapID"] = CAVERNS_OF_TIME_BLACK_MORASS,
 		["lvl"] = lvlsquish(65, 65, 25),
@@ -76,7 +82,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						17839,	-- Rift Lord
 					},
 				}),
-				i(25730, {	-- Pattern: Stylin' Jungle Hat
+				i(25730, {	-- Pattern: Stylin' Jungle Hat (RECIPE!)
 					["crs"] = {
 						21104,	-- Rift Keeper
 						17839,	-- Rift Lord
@@ -97,8 +103,8 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(27873),	-- Moonglade Pants (7.3.5 -- Moved from Aeonus)
 						-- #endif
 						i(27996),	-- Ring of Spiritual Precision
-						i(29675, {	-- Pattern: Arcane Armor Kit
-							["timeline"] = { "removed 5.0.4" },
+						i(29675, {	-- Pattern: Arcane Armor Kit (RECIPE!)
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 					},
 				}),
@@ -122,13 +128,12 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(554, {	-- Aeonus
 					["creatureID"] = 17881,
 					["groups"] = {
-						classicAch(655, {	-- Opening of the Dark Portal
+						ach(655, {	-- Opening of the Dark Portal
 							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								9836,	-- The Master's Touch
 								10297,	-- The Opening of the Dark Portal
 							},
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						i(28188),	-- Bloodfire Greatstaff
@@ -194,8 +199,8 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(27873),	-- Moonglade Pants (7.3.5 -- Moved from Aeonus)
 							-- #endif
 							i(27996),	-- Ring of Spiritual Precision
-							i(29675, {	-- Pattern: Arcane Armor Kit
-								["timeline"] = { "removed 5.0.4" },
+							i(29675, {	-- Pattern: Arcane Armor Kit (RECIPE!)
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -219,7 +224,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(554, {	-- Aeonus
 						["creatureID"] = 17881,
 						["groups"] = {
-							ach(676),	-- Heroic: Opening of the Dark Portal
+							ach(676, {	-- Heroic: Opening of the Dark Portal
+								["timeline"] = { "added 3.0.1" },
+							}),
 							ach(5076, {	-- Heroic: Opening of the Dark Portal Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),
@@ -253,13 +260,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					})
 				}
 			}),
-			-- #if AFTER 6.2.3.20601
-			d(TIMEWALKING_DUNGEON, {
-				["sym"] = {	-- link in Timewalking content
-					{"sub", "tw_instance", 255 },	-- this instance version of timewalking
-				},
-			}),
-			-- #endif
 		},
 	}),
 })));

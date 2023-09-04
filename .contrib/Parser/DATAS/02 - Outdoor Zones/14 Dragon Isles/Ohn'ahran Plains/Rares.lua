@@ -45,6 +45,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["description"] = "Chance to spawn after killing any nearby Nokhud Mobs. Yells 'Filth! I will end you for your actions!' upon spawning.",
 				["questID"] = 74063,
 				["g"] = {
+					-- #if AFTER 10.0.5
+					bo(74441, true),	-- Bonus Objective was added in 10.0.5
+					-- #endif
 					i(200536),	-- Tamed Eagle
 				},
 			}),
@@ -156,8 +159,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["isDaily"] = IGNORED_VALUE,
 			}),
 			n(192557, {	-- Quackers the Terrible
+				-- #if BEFORE 10.0.5
 				["description"] = "Requires Duck Trap Kit, purchased from a nearby camp (northern waypoint).\n\nYou'll need a rank 1 of these reagents:\n\n1 x Primal Molten Alloy\n\n3 x Resilient Leather\n\n4 x Spool of Wilderthread\n\nUse the item to trap a duck and then go to southern waypoint & put the trapped duck into the nest.",
-				["coords"] = {
+				-- #else
+				["description"] = "Requires Duck Trap Kit, purchased from a nearby camp (northern waypoint).\n\nYou'll need a rank 1 of these reagents:\n\n1 x Large Sturdy Femur\n\n3 x Contoured Fowlfeather\n\n2 x Tallstrider Sinew\n\nUse the item to trap a duck and then go to southern waypoint & put the trapped duck into the nest.",
+				-- #endif
+					["coords"] = {
 					{ 68.2, 79.2, OHNAHRAN_PLAINS },
 					{ 70.43, 63.49, OHNAHRAN_PLAINS },
 				},
@@ -198,7 +205,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			n(193188, {	-- Seeker Teryx
-				["coord"] = { 61.0, 13.6, OHNAHRAN_PLAINS },
+				["coord"] = { 61.9, 13.0, OHNAHRAN_PLAINS },
 				["questID"] = 73894,
 				["g"] = {
 					i(200875),	-- Seeker's Bands

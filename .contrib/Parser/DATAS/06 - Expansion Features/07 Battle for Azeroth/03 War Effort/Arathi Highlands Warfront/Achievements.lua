@@ -4,8 +4,8 @@
 
 root(ROOTS.ExpansionFeatures,
 	tier(BFA_TIER, {
-		n(-10057, {	-- War Effort
-			n(-233, {	-- Warfront: The Battle for Stromgarde
+		n(WARFRONT, {
+			n(WARFRONT_BATTLE_FOR_STROMGARDE, {
 				n(ACHIEVEMENTS, {	-- Achievements
 					ach(12874, {	-- An Eventful Battle
 						crit(1),	-- Fozruk

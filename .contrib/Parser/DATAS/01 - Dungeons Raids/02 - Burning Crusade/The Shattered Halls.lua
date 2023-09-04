@@ -4,6 +4,11 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(259, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {	-- The Shattered Halls
 		["lore"] = "For years, this gargantuan fortress was thought to be abandoned, but it's now inhabited by marauding bands of red, furious fel orcs. The presence of this new, savage breed presents something of a mystery, though what is far more disconcerting is that the numbers of these fel orcs seem to be... growing.",
+		["zone-text-areaID"] = 3714,	-- The Shattered Halls
+		["sins"] = {
+			"Hellfire Citadel: The Shattered Halls",
+			"Höllenfeuerzitadelle: Die Zerschmetterten Hallen",
+		},
 		["coord"] = { 47.66, 51.98, HELLFIRE_PENINSULA },	-- The Shattered Halls, Hellfire Peninsula
 		["mapID"] = HELLFIRE_CITADEL_SHATTERED_HALLS,
 		-- #if BEFORE CATA
@@ -442,7 +447,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(569, {	-- Warchief Kargath Bladefist
 					["creatureID"] = 16808,
 					["groups"] = {
-						classicAch(657, {	-- The Shattered Halls
+						ach(657, {	-- The Shattered Halls
 							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								10884,	-- Trial of the Naaru: Mercy
@@ -451,7 +456,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 								9525,	-- Imprisoned in the Citadel
 								9495,	-- The Will of the Warchief
 							},
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						i(27533),	-- Demonblood Eviscerator
@@ -575,14 +579,13 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(569, {	-- Warchief Kargath Bladefist
 						["creatureID"] = 16808,
 						["groups"] = {
-							classicAch(678, {	-- Heroic: The Shattered Halls
+							ach(678, {	-- Heroic: The Shattered Halls
 								-- #if BEFORE WRATH
 								["sourceQuests"] = {
 									10884,	-- Trial of the Naaru: Mercy
 									9524,	-- Imprisoned in the Citadel
 									9525,	-- Imprisoned in the Citadel
 								},
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
 							}),
 							ach(5078, {	-- Heroic: The Shattered Halls Guild Run
@@ -621,13 +624,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					}),
 				},
 			}),
-			-- #if AFTER 6.2.3.20601
-			d(TIMEWALKING_DUNGEON, {
-				["sym"] = {	-- link in Timewalking content
-					{"sub", "tw_instance", 259 },	-- this instance version of timewalking
-				},
-			}),
-			-- #endif
 		},
 	})),
 })));

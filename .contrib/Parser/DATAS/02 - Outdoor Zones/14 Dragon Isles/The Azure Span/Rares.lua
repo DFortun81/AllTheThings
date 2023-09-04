@@ -59,7 +59,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			n(193691, {	-- Fisherman Tinnak <Angered Ghost>
-				["minReputation"] = { 2511, 7 },	-- Iskaara Tuskarr Renown 7
+				["minReputation"] = { FACTION_ISKAARA_TUSKARR, 7 },
 				["description"] = "Collect the Broken Fishing Pole, Torn Fishing Net and Old Harpoon around to summon him.\n\nRewards you with 950 Reputation if you are summoner or 60 Reputation with a normal tag.",
 				["coord"] = { 49.5, 36.1, THE_AZURE_SPAN },
 				["questID"] = 72730,

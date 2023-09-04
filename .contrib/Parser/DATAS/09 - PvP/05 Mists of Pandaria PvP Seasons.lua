@@ -1515,10 +1515,6 @@ root(ROOTS.PVP, {
 						i(84947),	-- Malevolent Gladiator's Waistband of Cruelty
 						i(84959),	-- Malevolent Gladiator's Waistguard of Cruelty
 						i(84946),	-- Malevolent Gladiator's Waistguard of Meditation
-						-- Never
-						un(NEVER_IMPLEMENTED, i(97930)),	-- Malevolent Gladiator's Cord of Accuracy
-						un(NEVER_IMPLEMENTED, i(97840)),	-- Malevolent Gladiator's Cord of Accuracy
-						un(NEVER_IMPLEMENTED, i(97523)),	-- Malevolent Gladiator's Cord of Cruelty
 					}),
 					n(FEET, {
 						-- From Sha of Anger
@@ -1537,10 +1533,6 @@ root(ROOTS.PVP, {
 						i(84816),	-- Malevolent Gladiator's Treads of Meditation
 						i(84822),	-- Malevolent Gladiator's Warboots of Alacrity
 						i(84810),	-- Malevolent Gladiator's Warboots of Cruelty
-						-- Never
-						un(NEVER_IMPLEMENTED, i(97526)),	-- Malevolent Gladiator's Treads of Alacrity
-						un(NEVER_IMPLEMENTED, i(97842)),	-- Malevolent Gladiator's Treads of Cruelty
-						un(NEVER_IMPLEMENTED, i(97932)),	-- Malevolent Gladiator's Treads of Cruelty
 					}),
 					filter(NECK_F, {
 						-- From Sha of Anger
@@ -1551,9 +1543,6 @@ root(ROOTS.PVP, {
 						i(84886),	-- Malevolent Gladiator's Pendant of Alacrity
 						i(84887),	-- Malevolent Gladiator's Pendant of Cruelty
 						i(84888),	-- Malevolent Gladiator's Pendant of Meditation
-						-- Never
-						un(NEVER_IMPLEMENTED, i(97924)),	-- Malevolent Gladiator's Pendant of Cruelty
-						un(NEVER_IMPLEMENTED, i(97834)),	-- Malevolent Gladiator's Pendant of Cruelty
 					}),
 					filter(FINGER_F, {
 						-- From Sha of Anger
@@ -1564,11 +1553,6 @@ root(ROOTS.PVP, {
 						i(84826),	-- Malevolent Gladiator's Ring of Cruelty
 						i(84829),	-- Malevolent Gladiator's Signet of Accuracy
 						i(84828),	-- Malevolent Gladiator's Signet of Cruelty
-						-- Never
-						un(NEVER_IMPLEMENTED, i(97844)),	-- Malevolent Gladiator's Band of Accuracy
-						un(NEVER_IMPLEMENTED, i(97933)),	-- Malevolent Gladiator's Band of Cruelty
-						un(NEVER_IMPLEMENTED, i(97843)),	-- Malevolent Gladiator's Band of Cruelty
-						un(NEVER_IMPLEMENTED, i(97528)),	-- Malevolent Gladiator's Band of Cruelty
 					}),
 					filter(TRINKET_F, {
 						un(REMOVED_FROM_GAME, i(84934)),	-- Malevolent Gladiator's Badge of Conquest
@@ -1586,13 +1570,6 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(84944)),	-- Malevolent Gladiator's Medallion of Cruelty (H)
 						un(REMOVED_FROM_GAME, i(84933)),	-- Malevolent Gladiator's Medallion of Meditation (H)
 						un(REMOVED_FROM_GAME, i(84931)),	-- Malevolent Gladiator's Medallion of Tenacity (H)
-						-- Never
-						un(NEVER_IMPLEMENTED, i(97531)),	-- Malevolent Gladiator's Badge of Dominance
-						un(NEVER_IMPLEMENTED, i(97532)),	-- Malevolent Gladiator's Badge of Dominance
-						un(NEVER_IMPLEMENTED, i(97936)),	-- Malevolent Gladiator's Badge of Dominance
-						un(NEVER_IMPLEMENTED, i(97533)),	-- Malevolent Gladiator's Medallion of Cruelty (H)
-						un(NEVER_IMPLEMENTED, i(97845)),	-- Malevolent Gladiator's Medallion of Cruelty (H)
-						un(NEVER_IMPLEMENTED, i(97935)),	-- Malevolent Gladiator's Medallion of Cruelty (H)
 					}),
 				},
 			}),
@@ -5475,13 +5452,10 @@ root(ROOTS.PVP, {
 			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 5.4.0", "removed 5.4.7" }, }, {
 				ach(8649),	-- Challenger: Mists of Pandaria Season 3/Season 14
 				ach(8645, {	-- Duelist: Mists of Pandaria Season 3/Season 14
-					-- #if AFTER 7.3.2
-					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
-							ill(5396),		-- Glorious Tyranny
-						})),
-					},
-					-- #endif
+					i(120286, { -- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
+						["u"] = ELITE_PVP_REQUIREMENT,
+						["timeline"] = { ADDED_7_3_2 },
+					}),
 				}),
 				ach(8644, {	-- Gladiator: Mists of Pandaria Season 3/Season 14
 					i(104326),	-- Grievous Gladiator's Cloud Serpent
@@ -5501,23 +5475,21 @@ root(ROOTS.PVP, {
 				}),
 				ach(8654, {	-- Hero of the Alliance: Grievous
 					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER 7.3.2
 					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
-							ill(5396),		-- Glorious Tyranny
-						})),
+						i(120286, { -- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
+							["u"] = ELITE_PVP_REQUIREMENT,
+							["timeline"] = { ADDED_7_3_2 },
+						}),
 					},
-					-- #endif
 				}),
 				ach(8657, {	-- Hero of the Horde: Grievous
 					["races"] = HORDE_ONLY,
-					-- #if AFTER 7.3.2
 					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
-							ill(5396),		-- Glorious Tyranny
-						})),
+						i(120286, { -- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
+							["u"] = ELITE_PVP_REQUIREMENT,
+							["timeline"] = { ADDED_7_3_2 },
+						}),
 					},
-					-- #endif
 				}),
 				ach(8646),	-- Rival: Mists of Pandaria Season 3/Season 14
 			})),
@@ -8678,36 +8650,31 @@ root(ROOTS.PVP, {
 			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 5.4.7", "removed 6.0.0" }, }, {
 				ach(8670),	-- Challenger: Mists of Pandaria Season 4/Season 15
 				ach(8668, {	-- Duelist: Mists of Pandaria Season 4/Season 15
-					-- #if AFTER 7.3.2
-					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
-							ill(5396),		-- Glorious Tyranny
-						})),
-					},
-					-- #endif
+					i(120286, { -- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
+						["u"] = ELITE_PVP_REQUIREMENT,
+						["timeline"] = { ADDED_7_3_2 },
+					}),
 				}),
 				ach(8667, {	-- Gladiator: Mists of Pandaria Season 4/Season 15
 					i(104327),	-- Prideful Gladiator's Cloud Serpent
 				}),
 				ach(8658, {	-- Hero of the Alliance: Prideful
 					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER 7.3.2
 					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
-							ill(5396),		-- Glorious Tyranny
-						})),
+						i(120286, { -- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
+							["u"] = ELITE_PVP_REQUIREMENT,
+							["timeline"] = { ADDED_7_3_2 },
+						}),
 					},
-					-- #endif
 				}),
 				ach(8659, {	-- Hero of the Horde: Prideful
 					["races"] = HORDE_ONLY,
-					-- #if AFTER 7.3.2
 					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120286, {	-- Enchanter's Illusion - Glorious Tyranny
-							ill(5396),		-- Glorious Tyranny
-						})),
+						i(120286, { -- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
+							["u"] = ELITE_PVP_REQUIREMENT,
+							["timeline"] = { ADDED_7_3_2 },
+						}),
 					},
-					-- #endif
 				}),
 				ach(8642, {	-- Prideful Combatant (Alliance) Mists of Pandaria Season 4/Season 15
 					["races"] = ALLIANCE_ONLY,
@@ -10472,7 +10439,7 @@ root(ROOTS.HiddenQuestTriggers, {
 });
 -- #endif
 -- The items never made it in.
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(MOP_TIER, {
 		n(SEASON_MALEVOLENT, {
 			n(WEAPONS, {
@@ -10655,4 +10622,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

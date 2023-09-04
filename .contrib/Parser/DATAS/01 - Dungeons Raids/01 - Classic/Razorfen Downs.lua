@@ -6,6 +6,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		-- #if BEFORE MOP
 		["lore"] = "Crafted from the same mighty vines as Razorfen Kraul, Razorfen Downs is the traditional capital city of the quillboar race. The sprawling, thorn-ridden labyrinth houses a veritable army of loyal quillboar as well as their high priests - the Death's Head tribe. Recently, however, a looming shadow has fallen over the crude den. Agents of the undead Scourge - led by the lich, Amnennar the Coldbringer - have taken control over the quillboar race and turned the maze of thorns into a bastion of undead might. Now the quillboar fight a desperate battle to reclaim their beloved city before Amnennar spreads his control across the Barrens.",
 		-- #endif
+		["zone-text-areaID"] = 722,	-- Razorfen Downs
 		-- #if AFTER CATA
 		["coord"] = { 43.5, 25.2, THOUSAND_NEEDLES },	-- Razorfen Downs
 		-- #else
@@ -288,15 +289,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(10777),	-- Arachnid Gloves
 				},
 			}),
-			-- o(XXXXXX, {	-- Henry's Handbag
-			--	--["timeline"] = { ADDED_10_0_5 },
-			--	--["groups"] = {
-					i(202249, {	-- Recipe: Goldthorn Tea
-						["timeline"] = { ADDED_10_0_5 },
-						["description"] = "Head to the Murder Pens area and look for hanging bag, recipe is inside."	-- TODO: Move this description to the object
-					}),
-			--	--},
-			-- }),
+			o(385581, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
+				["description"] = "Head to the Murder Pens area and look for hanging bag, recipe is inside.",
+				["groups"] = {
+					i(202691),	-- Henry's Handbag
+					i(202249),	-- Recipe: Goldthorn Tea (RECIPE!)
+				},
+			})),
 			n(8696, {	-- Henry Stern
 				["description"] = "The only source of acquiring Goldthorn Tea.",
 				["timeline"] = { "removed 6.0.2" },
@@ -328,8 +327,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				},
 			}),
 			-- #if BEFORE 6.0.2
-			e(433, {	-- Mordresh Fire Eye
-				["creatureID"] = 7357,	-- Mordresh Fire Eye
+			n(7357, {	-- Mordresh Fire Eye
 				["timeline"] = { "removed 6.0.2" },
 				["groups"] = {
 					i(10770),	-- Mordresh's Lifeless Skull
@@ -378,13 +376,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			n(7358, {	-- Amnennar the Coldbringer
 				["timeline"] = { "removed 6.0.2" },
 				["groups"] = {
-					classicAch(636, {	-- Razorfen Downs
+					ach(636, {	-- Razorfen Downs
 						-- #if BEFORE WRATH
 						["sourceQuests"] = {
 							3636,	-- Bring the Light
 							3341,	-- Bring the End
 						},
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5045, {	-- Razorfen Downs Guild Run

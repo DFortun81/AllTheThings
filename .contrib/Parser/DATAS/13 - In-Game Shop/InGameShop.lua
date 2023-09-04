@@ -73,6 +73,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(95341, {	-- Armored Bloodwing (MOUNT!)
 			["timeline"] = { "added 5.2.0.16486", "removed 8.3.0" },
 		}),
+		mount(367875, {	-- Armored Siege Kodo (MOUNT!)
+			["timeline"] = { ADDED_10_1_5 },
+		}),
 		i(54811, {	-- Celestial Steed (MOUNT!)
 			-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
 			["timeline"] = { "added 3.3.3.11723", "removed 10.0.2.47213" },
@@ -188,6 +191,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		mount(359317, {	-- Wen Lo, the River's Edge (MOUNT!)
 			["timeline"] = { "added 9.1.5.42010" },
 		}),
+		mount(397406, {	-- Wonderous Wavewhisker
+			["timeline"] = { "added 10.1.0.50000" },
+		}),
 	}),
 	filter(BATTLE_PETS, {
 		i(106240, {	-- Alterac Brew-Pup (PET!)
@@ -196,7 +202,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(118516, {	-- Argi (PET!)
 			["timeline"] = { "added 6.0.1.18711" },
 		}),
-		battlepet(156, {	-- Bananas
+		pet(156, {	-- Bananas
 			["timeline"] = { ADDED_9_0_5, REMOVED_9_1_5 },
 		}),
 		pet(3153, {	-- Blinky
@@ -216,6 +222,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		}),
 		i(92707, {	-- Cinder Kitten (PET!)
 			["timeline"] = { "added 5.1.0.16309" },
+		}),
+		i(190608, {	-- Crushhoof
+			["timeline"] = { "added 10.1.5" },
 		}),
 		pet(2780, {	-- Daisy (PET!)
 			["timeline"] = { ADDED_9_0_5 },
@@ -250,7 +259,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 4.0.3.13286" },
 		}),
 		i(85871, {	-- Lucky Quilen Cub (PET!)
-			["timeline"] = { "added 5.0.1.15662" },
+			["timeline"] = { ADDED_5_0_4 },
 		}),
 		i(141893, {	-- Mischief (PET!)
 			["timeline"] = { "added 7.1.0.22996" },
@@ -258,11 +267,11 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(68384, {	-- Moonkin Egg (You had to open the Egg on both faction sides before 6.0.1 to receive your Moonkin Pet). You get both now automaticly
 			["timeline"] = { "added 4.0.3.13286", "removed 8.3.0" },
 		}),
-		i(68618, {	-- Moonkin Hatchling (A)
+		i(68618, {	-- Moonkin Hatchling [A] (PET!)
 			["timeline"] = { "added 4.0.3.13286", "removed 8.3.0" },
 			["races"] = ALLIANCE_ONLY,
 		}),
-		i(68619, {	-- Moonkin Hatchling (H)
+		i(68619, {	-- Moonkin Hatchling [H] (PET!)
 			["timeline"] = { "added 4.0.3.13286", "removed 8.3.0" },
 			["races"] = HORDE_ONLY,
 		}),
@@ -278,6 +287,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		}),
 		i(78916, {	-- Soul of the Aspects (PET!)
 			["timeline"] = { "added 4.3.0.15005" },
+		}),
+		i(190601, {	-- Sunny
+			["timeline"] = { "added 10.1.5" },
 		}),
 		i(153541, {	-- Tottle (PET!)
 			["timeline"] = { "added 7.3.5.25937" },

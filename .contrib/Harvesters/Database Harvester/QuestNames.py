@@ -98,7 +98,7 @@ def get_quest_names() -> None:
                             quest_name = quest_name+f" {name_dict[expansion]}\t"
                         else:
                             quest_name = quest_name+f" {expansion}:{name_dict[expansion]}\t"
-                missing_lines[index] = f"{quest_name}\n"
+                missing_lines[index] = f"{quest_name.rstrip()}\n"
             else:
                 if version.parse(missing_line) < version.parse("2.0.0.0"):
                     expansion_dict = {
@@ -126,16 +126,16 @@ def get_quest_names() -> None:
                         "Retail": "",
                     }
                     print("Cata-SL :", missing_line)
-                elif version.parse(missing_line) < version.parse("10.1.0.99999"):
+                elif version.parse(missing_line) < version.parse("10.1.5.99999"):
                     expansion_dict = {
                         "Retail": "",
                         "PTR": "ptr",
                     }
-                    print("10.0.0-10.1.0 :", missing_line)
-                elif version.parse(missing_line) > version.parse("10.1.5.0"):
+                    print("10.0.0-10.1.5 :", missing_line)
+                elif version.parse(missing_line) > version.parse("10.1.7.0"):
                     expansion_dict = {
                         "PTR": "ptr",
                     }
-                    print("10.1.5 :", missing_line)
+                    print("10.1.7 :", missing_line)
     with open(missing_path, "w") as missing_file:
         missing_file.writelines(missing_lines)

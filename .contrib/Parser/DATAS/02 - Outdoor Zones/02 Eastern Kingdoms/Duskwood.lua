@@ -45,8 +45,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					646,	-- Chicken (PET!)
 					385,	-- Mouse (PET!)
@@ -65,8 +64,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(397),	-- Skunk (PET!)
 					pet(400),	-- Widow Spiderling (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["275:250:55:342"] = 536,	-- Addle's Stead
@@ -1783,7 +1781,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(4474, {	-- Ravenwood Bow
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 						}),
 						i(6204, {	-- Tribal Worg Helm
 							["timeline"] = { "removed 4.0.3" },
@@ -1802,15 +1800,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(503, {  -- Lord Malathrom
 					-- #if BEFORE 4.0.3
 					["description"] = "Spawns in the Dawning Wood Catacombs",
+					-- #elseif AFTER 10.1.7
+					["description"] = "Spawns in the Dawning Wood Catacombs",
 					-- #endif
 					["coord"] = { 25.6, 30.2, DUSKWOOD },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 					["groups"] = {
 						i(4462, {	-- Cloak of Rot
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(1187, {	-- Spiked Collar
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 						}),
 					},
 				}),
@@ -1864,7 +1864,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(4449, {	-- Naraxis' Fang
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 						}),
 					},
 				}),
@@ -1880,7 +1880,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(4477, {	-- Nefarious Buckler
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 						}),
 					},
 				}),
@@ -1920,8 +1920,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 18.0, 54.4, DUSKWOOD },
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(6068, {	-- Recipe: Shadow Oil
-							["timeline"] = { "removed 4.0.3" },
+						i(6068, {	-- Recipe: Shadow Oil (RECIPE!)
+							["timeline"] = { "removed 4.0.3" }, -- Moved to trainers
 						}),
 					},
 				}),
@@ -1967,7 +1967,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(4827, {	-- Wizard's Belt
 							["isLimited"] = true,
 						}),
-						i(6053, {	-- Recipe: Holy Protection Potion
+						i(6053, {	-- Recipe: Holy Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(7561, {	-- Schematic: Goblin Jumper Cables
@@ -2019,8 +2019,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 1270,	-- Fetid Corpse
 				}),
 				i(886, {	-- Black Metal Shortsword
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 					["cr"] = 210,	-- Bone Chewer
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 25.6, 32.4, DUSKWOOD },
+						{ 24.4, 37.4, DUSKWOOD },
+					},
+					-- #else
+					["coords"] = {
+						{ 15.8, 35.0, DUSKWOOD },
+						{ 17.0, 31.2, DUSKWOOD },
+						{ 23.4, 35.4, DUSKWOOD },
+					},
+					-- #endif
 				}),
 				i(2015, {	-- Black Metal War Axe
 					["timeline"] = { "removed 4.0.3" },
@@ -2059,8 +2071,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 889,	-- Splinter Fist Ogre
 				}),
 				i(914, {	-- Large Ogre Chain Armor
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
+					-- #if BEFORE 4.0.3
 					["cr"] = 1487,	-- Splinter Fist Enslaver
+					["coords"] = {
+						{ 38.0, 80.6, DUSKWOOD },
+						{ 37.4, 84.6, DUSKWOOD },
+					},
+					-- #else
+					["cr"] = 889,	-- Splinter Fist Ogre
+					["coords"] = {
+						{ 39.0, 72.2, DUSKWOOD },
+						{ 36.8, 78.6, DUSKWOOD },
+						{ 33.8, 70.8, DUSKWOOD },
+					},
+					-- #endif
 				}),
 				i(897, {	-- Madwolf Bracers
 					["timeline"] = { "removed 4.0.3" },

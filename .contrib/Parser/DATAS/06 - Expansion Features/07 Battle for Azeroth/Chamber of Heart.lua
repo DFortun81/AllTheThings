@@ -29,7 +29,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				}),
 				ach(13998),	-- Pure of Heart
 				ach(14157, {	-- The Corruptor's End
-					crit(1, {	-- Ny'alotha, the Waking City: The Corruptor's End
+					crit(47209, {	-- Ny'alotha, the Waking City: The Corruptor's End
 						["sourceQuest"] = 58632,	-- Ny'alotha, the Waking City: The Corruptor's End
 					}),
 				}),

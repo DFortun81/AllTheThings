@@ -40,7 +40,7 @@ root(ROOTS.ExpansionFeatures,
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
 						i(122705, {	-- Plans: Riddle of Truesteel (RECIPE!)
-							["timeline"] = { "added 6.1.0" },
+							["timeline"] = { ADDED_6_1_0 },
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
 						i(127743, {	-- Plans: Savage Steelforged Essence (RECIPE!)
@@ -88,12 +88,12 @@ root(ROOTS.ExpansionFeatures,
 				n(80159, {	-- Arsenio Zerep <Cook>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(122556),	-- Recipe: Buttered Sturgeon
-						i(122557),	-- Recipe: Jumbo Sea Dog
-						i(122558),	-- Recipe: Pickled Eel
-						i(122559),	-- Recipe: Salty Squid Roll
-						i(122555),	-- Recipe: Sleeper Sushi
-						i(122560),	-- Recipe: Whiptail Fillet
+						i(122556),	-- Recipe: Buttered Sturgeon (RECIPE!)
+						i(122557),	-- Recipe: Jumbo Sea Dog (RECIPE!)
+						i(122558),	-- Recipe: Pickled Eel (RECIPE!)
+						i(122559),	-- Recipe: Salty Squid Roll (RECIPE!)
+						i(122555),	-- Recipe: Sleeper Sushi (RECIPE!)
+						i(122560),	-- Recipe: Whiptail Fillet (RECIPE!)
 					},
 				}),
 				n(88779, {	-- Benjamin Brode <Traveling Merchant>
@@ -122,6 +122,9 @@ root(ROOTS.ExpansionFeatures,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
 							["timeline"] = { REMOVED_10_0_5 },
+						}),
+						i(122549, {	-- Pattern: Powerful Hexweave Essence (RECIPE!)
+							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
 						}),
 						i(127742, {	-- Pattern: Savage Hexweave Essence
 							["description"] = WOD_REMOVED_RECIPE_STR,
@@ -227,6 +230,9 @@ root(ROOTS.ExpansionFeatures,
 							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
 							["timeline"] = { REMOVED_10_0_5 },
 						}),
+						i(122549, {	-- Pattern: Powerful Hexweave Essence (RECIPE!)
+							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
+						}),
 						i(127742, {	-- Pattern: Savage Hexweave Essence
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
@@ -273,33 +279,34 @@ root(ROOTS.ExpansionFeatures,
 								{ "i", 111557, 5 },					-- 5x Sumptuous Fur
 							},
 						}),
-						i(127722, {	-- Pattern: Mighty Burnished Essence
+						i(127722, {	-- Pattern: Mighty Burnished Essence (RECIPE!)
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
 							["timeline"] = { REMOVED_10_0_5 },
 						}),
 						un(REMOVED_FROM_GAME, i(122547)),	-- Pattern: Powerful Burnished Essence
-						i(127740, {	-- Pattern: Savage Burnished Essence
+						i(127740, {	-- Pattern: Savage Burnished Essence (RECIPE!)
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
 							["timeline"] = { REMOVED_10_0_5 },
 						}),
-						i(122715, {	-- Pattern: Spiritual Leathercraft
+						i(122715, {	-- Pattern: Spiritual Leathercraft (RECIPE!)
 							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
+							["timeline"] = { ADDED_6_1_0 },
 						}),
 					},
 				}),
 				n(76928, {	-- Kraank <Food & Drink>
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(122556),	-- Recipe: Buttered Sturgeon
-						i(122557),	-- Recipe: Jumbo Sea Dog
-						i(122558),	-- Recipe: Pickled Eel
-						i(122559),	-- Recipe: Salty Squid Roll
-						i(122555),	-- Recipe: Sleeper Sushi
-						i(122560),	-- Recipe: Whiptail Fillet
+						i(122556),	-- Recipe: Buttered Sturgeon (RECIPE!)
+						i(122557),	-- Recipe: Jumbo Sea Dog (RECIPE!)
+						i(122558),	-- Recipe: Pickled Eel (RECIPE!)
+						i(122559),	-- Recipe: Salty Squid Roll (RECIPE!)
+						i(122555),	-- Recipe: Sleeper Sushi (RECIPE!)
+						i(122560),	-- Recipe: Whiptail Fillet (RECIPE!)
 					},
 				}),
 				n(88635, {	-- Nalya Battlehorn <Contracts>
@@ -393,10 +400,10 @@ root(ROOTS.ExpansionFeatures,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
 						}),
-						i(122710, {	-- Recipe: Primal Alchemy
+						i(122710, {	-- Recipe: Primal Alchemy (RECIPE!)
 							["cost"] = { { "i", 109127, 60 }, },	-- 60x Starflower
 						}),
-						i(122600, {	-- Recipe: Savage Blood
+						i(122600, {	-- Recipe: Savage Blood (RECIPE!)
 							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
 						}),
 						i(128160, {	-- Recipe: Wildswater
@@ -469,7 +476,7 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						i(122605, {	-- Tome of the Stones
-							["spellID"] = 0,
+							["f"] = MISC,
 							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
 							["g"] = {
 								recipe(181650),	-- Stone of Fire
@@ -695,10 +702,10 @@ root(ROOTS.ExpansionFeatures,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
 						}),
-						i(122710, {	-- Recipe: Primal Alchemy
+						i(122710, {	-- Recipe: Primal Alchemy (RECIPE!)
 							["cost"] = { { "i", 109127, 60 }, },	-- 60x Starflower
 						}),
-						i(122600, {	-- Recipe: Savage Blood
+						i(122600, {	-- Recipe: Savage Blood (RECIPE!)
 							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
 						}),
 						i(128160, {	-- Recipe: Wildswater
@@ -771,7 +778,7 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						i(122605, {	-- Tome of the Stones
-							["spellID"] = 0,
+							["f"] = MISC,
 							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
 							["g"] = {
 								recipe(181650),	-- Stone of Fire
@@ -842,9 +849,9 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						i(122420, {	-- Scouting Missive: Gorian Proving Grounds
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+							["timeline"] = { "created 6.1.0.19445" },
 							["questID"] = 38194,
 							["repeatable"] = true,
-							["u"] = NEVER_IMPLEMENTED,
 						}),
 						i(122406, {	-- Scouting Missive: Iron Siegeworks
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
@@ -966,9 +973,9 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						i(122419, {	-- Scouting Missive: Gorian Proving Grounds
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+							["timeline"] = { "created 6.1.0.19445" },
 							["questID"] = 38202,
 							["repeatable"] = true,
-							["u"] = NEVER_IMPLEMENTED,
 						}),
 						i(122402, {	-- Scouting Missive: Iron Siegeworks
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
@@ -1280,7 +1287,7 @@ root(ROOTS.ExpansionFeatures,
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
 						i(122705, {	-- Plans: Riddle of Truesteel (RECIPE!)
-							["timeline"] = { "added 6.1.0" },
+							["timeline"] = { ADDED_6_1_0 },
 							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
 						}),
 						i(127743, {	-- Plans: Savage Steelforged Essence (RECIPE!)
@@ -1337,21 +1344,22 @@ root(ROOTS.ExpansionFeatures,
 								{ "i", 111557, 5 },					-- 5x Sumptuous Fur
 							},
 						}),
-						i(127722, {	-- Pattern: Mighty Burnished Essence
+						i(127722, {	-- Pattern: Mighty Burnished Essence (RECIPE!)
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
 							["timeline"] = { REMOVED_10_0_5 },
 						}),
 						un(REMOVED_FROM_GAME, i(122547)),	-- Pattern: Powerful Burnished Essence
-						i(127740, {	-- Pattern: Savage Burnished Essence
+						i(127740, {	-- Pattern: Savage Burnished Essence (RECIPE!)
 							["description"] = WOD_REMOVED_RECIPE_STR,
 							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
 							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
 							["timeline"] = { REMOVED_10_0_5 },
 						}),
-						i(122715, {	-- Pattern: Spiritual Leathercraft
+						i(122715, {	-- Pattern: Spiritual Leathercraft (RECIPE!)
 							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
+							["timeline"] = { ADDED_6_1_0 },
 						}),
 					},
 				}),

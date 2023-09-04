@@ -225,19 +225,19 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					ach(12489, {	-- Losing My Profession
 						["collectible"] = false,
 						["g"] = {
-							crit(1, {	-- Governess Tabitha
+							crit(40145, {	-- Governess Tabitha
 								["creatureID"] = 131595,	-- Governess Tabitha
 							}),
-							crit(2, {	-- Head Vintner Justin
+							crit(40146, {	-- Head Vintner Justin
 								["creatureID"] = 131615,	-- Head Vintner Justin
 							}),
-							crit(3, {	-- Groundskeeper Lilith
+							crit(40147, {	-- Groundskeeper Lilith
 								["creatureID"] = 131617,	-- Groundskeeper Lilith
 							}),
-							crit(4, {	-- Seamstress Johanna
+							crit(40148, {	-- Seamstress Johanna
 								["creatureID"] = 131619,	-- Seamstress Johanna
 							}),
-							crit(5, {	-- Huntmaster Grath
+							crit(40149, {	-- Huntmaster Grath
 								["creatureID"] = 131853,	-- Huntmaster Grath
 							}),
 						},

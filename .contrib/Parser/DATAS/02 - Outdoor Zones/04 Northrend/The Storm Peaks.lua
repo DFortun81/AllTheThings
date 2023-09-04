@@ -238,10 +238,9 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
-						641,	-- Arctic Hare
+						641,	-- Arctic Hare (PET!)
 						393,	-- Cockroach (PET!)
 						633,	-- Mountain Skunk (PET!)
 						412,	-- Spider (PET!)
@@ -252,8 +251,7 @@ root(ROOTS.Zones, {
 							["description"] = "Only spawns while it is snowing. Weather in this area seems to be character specific.",
 						}),
 					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(4452),	-- Bor's Breath
@@ -1620,7 +1618,7 @@ root(ROOTS.Zones, {
 								["filterID"] = CONSUMABLES,
 							}),
 							i(42184),	-- Pattern: Glacial Bag
-							i(44510),	-- Pattern: Mammoth Mining Bag
+							i(44510),	-- Pattern: Mammoth Mining Bag (RECIPE!)
 							i(44190),	-- Spaulders of Frozen Knives
 							i(44195),	-- Spaulders of the Giant Lords
 							i(44192),	-- Stalactite Chopper

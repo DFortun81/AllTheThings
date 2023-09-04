@@ -39,8 +39,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					628,	-- Infected Fawn (PET!)
 					627,	-- Infected Squirrel (PET!)
@@ -53,8 +52,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["groups"] = {
 					pet(455),	-- Blighted Squirrel (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["140:125:391:446"] = 204,	-- Pyrewood Village
@@ -529,7 +527,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27181, {	-- Excising the Taint
 					["qg"] = 45195,	-- Bloodfang Stalker
-					["sourceQuest"] = 27180,	-- Honor the Dead
+					["sourceQuest"] = 27098,	-- Lordaeron [Shifted back 1 quest... no history in report Discord 2023-07-29]
 					["coord"] = { 46.1, 50.2, SILVERPINE_FOREST },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
@@ -1346,7 +1344,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
-						i(4597, {	-- Recipe: Discolored Healing Potion
+						i(4597, {	-- Recipe: Discolored Healing Potion (RECIPE!)
 							["description"] = "This item can be sold on the Neutral Auction House to Alliance Alchemists for a... nominal fee.\n\nOnly naturally accessible to Horde Alchemists.",
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -1590,16 +1588,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(6272, {	-- Pattern: Blue Linen Robe
 							["isLimited"] = true,
 						}),
-						i(5786, {	-- Pattern: Murloc Scale Belt
+						i(5786, {	-- Pattern: Murloc Scale Belt (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5787, {	-- Pattern: Murloc Scale Breastplate
+						i(5787, {	-- Pattern: Murloc Scale Breastplate (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(5771, {	-- Pattern: Red Linen Bag
 							["isLimited"] = true,
 						}),
-						i(6892),	-- Recipe: Smoked Bear Meat
+						i(6892),	-- Recipe: Smoked Bear Meat (RECIPE!)
 					},
 				}),
 				n(5748, {	-- Killian Sanatha <Fisherman>
@@ -1610,8 +1608,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6328),	-- Recipe: Longjaw Mud Snapper
-						i(6368),	-- Recipe: Rainbow Fin Albacore
+						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 					},
 				}),
 				n(5758, {	-- Leo Sarn <Enchanting Supplies>

@@ -56,16 +56,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 				crit(4),	-- Rustbolt Armory
 				crit(5),	-- Reclamation Rig
 			}),
-			ach(13776, {	-- Explore Mechagon
-				crit(1),	-- Rustbolt
-				crit(2),	-- Sparkweaver Point
-				crit(3),	-- Junkwatt Depot
-				crit(4),	-- The Heaps
-				crit(5),	-- Scrapbone Den
-				crit(6),	-- Western Spray
-				crit(7),	-- The Outflow
-				crit(8),	-- The Fleeting Forrest
-			}),
+			explorationAch(13776),	-- Explore Mechagon
 			ach(13482),	-- Head Financier of Mechagon
 			ach(13555, {	-- Junkyard Tinkmaster
 				-- Meta Achievement should symlink the contained Achievements from Source
@@ -395,7 +386,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 					["_npcs"] = { 150575 },
 				}),
 				crit(7, {	-- Arachnoid Harvester
-					["_npcs"] = { 151934, 154342 },
+					["_npcs"] = { 151934 },
 				}),
 				crit(8,	{	-- Killsaw
 					["_npcs"] = { 152007 },

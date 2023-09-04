@@ -75,23 +75,12 @@ root(ROOTS.Zones, {
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["groups"] = {
-							crit(31, {	-- Ras'an
-								["coord"] = { 17.2, 50.6, ZANGARMARSH },
-								["cr"] = 66551,	-- Ras'an <Master Pet Tamer>
-							}),
-						},
-					})),
 					explorationAch(863, {	-- Explore Zangarmarsh
 						-- #if BEFORE WRATH
 						["description"] = "Explore Zangarmarsh, revealing the covered areas of the world map.",
 						-- #endif
 					}),
-					classicAch(1190, {	-- Mysteries of the Marsh
+					ach(1190, {	-- Mysteries of the Marsh
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
 						["sourceQuests"] = {
@@ -237,33 +226,22 @@ root(ROOTS.Zones, {
 						}),
 						-- #endif
 					}),
-					ach(953, applyclassicphase(TBC_PHASE_ONE, {	-- Guardian of Cenarius
+					applyclassicphase(TBC_PHASE_ONE, achWithReps(953, { 609, 942 }, {	-- Guardian of Cenarius
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with the Cenarion Circle and Cenarion Expedition to Exalted.",
-						-- #endif
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnUpdate(t, 609, 942); end]],
 						-- #endif
 						["groups"] = {
 							-- NOTE: Achievement says it awards 132, but that's wrong.
 							applyclassicphase(WRATH_PHASE_ONE, title(100)),	-- %, Guardian of Cenarius
 						},
 					})),
-					classicAch(900, {	-- The Czar of Sporeggar
+					achWithRep(900, 970, {	-- The Czar of Sporeggar
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with Sporeggar to Exalted.",
 						-- #endif
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 970); end]],
-						-- #endif
 					}),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
 						419,	-- Small Frog (PET!)
 						387,	-- Snake (PET!)
@@ -274,8 +252,7 @@ root(ROOTS.Zones, {
 							["description"] = "Found only in Sporeggar. Requires FRIENDLY reputation with the Sporeggar faction.",
 						}),
 					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(3650, "256:256:88:50"),		-- Ango'rosh Grounds
@@ -315,12 +292,14 @@ root(ROOTS.Zones, {
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182954 },	-- Brackish Mixed School
 						["criteriaID"] = 3865,	-- Brackish Mixed School
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
 					-- #else
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182954 },	-- Brackish Mixed School
 						["criteriaID"] = 3623,	-- Brackish Mixed School
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
 					-- #endif
@@ -334,12 +313,14 @@ root(ROOTS.Zones, {
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182953 },	-- Sporefish School
 						["criteriaID"] = 3870,	-- Sporefish School
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
 					-- #else
 					ach(1225, {	-- Outland Angler
 						["provider"] = { "o", 182953 },	-- Sporefish School
 						["criteriaID"] = 3628,	-- Sporefish School
+						["timeline"] = { "added 3.0.1" },
 						["requireSkill"] = FISHING,
 					}),
 					-- #endif
@@ -364,6 +345,11 @@ root(ROOTS.Zones, {
 						["cr"] = 18791,	-- Du'ga <Wind Rider Master>
 						["coord"] = { 33.0, 51.0, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
+					}),
+				}),
+				petbattles({
+					n(66551, {	-- Ras'an <Master Pet Tamer>
+						["coord"] = { 17.2, 50.6, ZANGARMARSH },
 					}),
 				}),
 				n(QUESTS, {
@@ -564,8 +550,10 @@ root(ROOTS.Zones, {
 						["qg"] = 17841,	-- Ysiel Windsinger
 						["sourceQuests"] = {
 							9912,	-- The Cenarion Expedition
+							-- #if AFTER 6.2.0.19953
 							39181,	-- Hero's Call: Zangarmarsh!
 							39180,	-- Warchief's Command: Zangarmarsh!
+							-- #endif
 						},
 						["coord"] = { 78.4, 62.0, ZANGARMARSH },
 						["lvl"] = lvlsquish(61, 61, 10),
@@ -1450,21 +1438,20 @@ root(ROOTS.Zones, {
 						["coord"] = { 42.2, 27.8, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(27694),	-- Recipe: Blackened Trout
-							i(27695),	-- Recipe: Feltail Delight
+							i(27694),	-- Recipe: Blackened Trout (RECIPE!)
+							i(27695),	-- Recipe: Feltail Delight (RECIPE!)
 						},
 					}),
 					n(17904, {	-- Fedryen Swiftspear <Cenarion Expedition Quartermaster>
 						["coord"] = { 79.3, 63.7, ZANGARMARSH },
 						["groups"] = {
 							i(31804),	-- Cenarion Expedition Tabard
-							classicAch(893, {	-- Cenarion War Hippogryph
+							ach(893, {	-- Cenarion War Hippogryph
 								["provider"] = { "i", 33999 },	-- Cenarion War Hippogryph
-								["filterID"] = MOUNTS,
 								-- #if BEFORE WRATH
 								["description"] = "Obtain the Cenarion War Hippogryph from the Cenarion Expedition in Zangarmarsh.",
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 								-- #endif
+								["filterID"] = MOUNTS,
 							}),
 							i(33999),	-- Cenarion War Hippogryph (MOUNT!)
 							i(30623, {	-- Reservoir Key [Revered]
@@ -1474,20 +1461,17 @@ root(ROOTS.Zones, {
 								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
 								["OnTooltip"] = [[function(t)
 									local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
-									if ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FOUR .. [[] then
+									if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FOUR .. [[) then
 										tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);
 									else
 										tooltip:AddLine("This will be available at Honored reputation after TBC Phase 4.", 0.4, 0.8, 1, 1);
 									end
 									tooltip:Show();
 								end]],
-								["OnUpdate"] = [[function(t)
-									if not t.otherItemID then
-										t.otherItemID = 185690;
-										_.CacheField(t, "itemID", t.otherItemID);
-										t.GetItemCount = function(t) return GetItemCount(t.itemID, true) + GetItemCount(t.otherItemID, true); end
-										t.OnUpdate = nil;
-									end
+								["OnInit"] = [[function(t)
+									t.otherItemID = 185690;
+									t.GetItemCount = function(t) return GetItemCount(t.itemID, true) + GetItemCount(t.otherItemID, true); end
+									return t;
 								end]],
 								-- #endif
 								-- #endif
@@ -1520,11 +1504,11 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_TWO, i(35365)),	-- Kodohide Robe
 							applyclassicphase(TBC_PHASE_TWO, i(35336)),	-- Mooncloth Shoulderpads
 							applyclassicphase(TBC_PHASE_TWO, i(35367)),	-- Opportunist's Leather Helm
-							i(29720),	-- Pattern: Clefthide Leg Armor
-							i(25737),	-- Pattern: Heavy Clefthoof Boots
-							i(25736),	-- Pattern: Heavy Clefthoof Leggings
-							i(25735),	-- Pattern: Heavy Clefthoof Vest
-							i(29721),	-- Pattern: Nethercleft Leg Armor
+							i(29720),	-- Pattern: Clefthide Leg Armor (RECIPE!)
+							i(25737),	-- Pattern: Heavy Clefthoof Boots (RECIPE!)
+							i(25736),	-- Pattern: Heavy Clefthoof Leggings (RECIPE!)
+							i(25735),	-- Pattern: Heavy Clefthoof Vest (RECIPE!)
+							i(29721),	-- Pattern: Nethercleft Leg Armor (RECIPE!)
 							i(23618),	-- Plans: Adamantite Sharpening Stone (RECIPE!)
 							i(28632),	-- Plans: Adamantite Weightstone (RECIPE!)
 							i(25526),	-- Plans: Greater Rune of Warding (RECIPE!)
@@ -1532,11 +1516,11 @@ root(ROOTS.Zones, {
 							i(31392),	-- Plans: Wildguard Helm (RECIPE!)
 							i(31391),	-- Plans: Wildguard Leggings (RECIPE!)
 							i(25836),	-- Preserver's Cudgel
-							i(32070),	-- Recipe: Earthen Elixir
-							i(31356),	-- Recipe: Flask of Distilled Wisdom
-							i(22922),	-- Recipe: Major Nature Protection Potion
-							i(25869),	-- Recipe: Transmute Earthstorm Diamond
-							i(22918),	-- Recipe: Transmute Primal Water to Air
+							i(32070),	-- Recipe: Earthen Elixir (RECIPE!)
+							i(31356),	-- Recipe: Flask of Distilled Wisdom (RECIPE!)
+							i(22922),	-- Recipe: Major Nature Protection Potion (RECIPE!)
+							i(25869),	-- Recipe: Transmute Earthstorm Diamond (RECIPE!)
+							i(22918),	-- Recipe: Transmute Primal Water to Air (RECIPE!)
 							applyclassicphase(TBC_PHASE_TWO, i(35342)),	-- Satin Robe
 							applyclassicphase(TBC_PHASE_TWO, i(35408)),	-- Savage Plate Gauntlets
 							i(23814),	-- Schematic: Green Smoke Flare
@@ -1555,20 +1539,20 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.6, 49.2, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(27694),	-- Recipe: Blackened Trout
+							i(27694),	-- Recipe: Blackened Trout (RECIPE!)
 						},
 					}),
 					n(18005, {	-- Haalrun <Alchemy Supplies>
 						["coord"] = { 67.8, 48.0, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(22909, {	-- Recipe: Elixir of Major Defense
+							i(22909, {	-- Recipe: Elixir of Major Defense (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(22902, {	-- Recipe: Elixir of Major Frost Power
+							i(22902, {	-- Recipe: Elixir of Major Frost Power (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(22907, {	-- Recipe: Super Mana Potion
+							i(22907, {	-- Recipe: Super Mana Potion (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},
@@ -1621,7 +1605,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { "removed 3.1.0" },
 								["rank"] = 5,
 							}),
-							i(27696),	-- Recipe: Blackened Sporefish
+							i(27696),	-- Recipe: Blackened Sporefish (RECIPE!)
 						},
 					}),
 					n(19694, {	-- Loolruna <Armorer>
@@ -1663,17 +1647,17 @@ root(ROOTS.Zones, {
 							i(38229, {	-- Pattern: Mycah's Botanical Bag
 								["cost"] = { { "i", 24245, 25 }, },	-- 25x Glowcap
 							}),
-							i(30156, {	-- Recipe: Clam Bar
+							i(30156, {	-- Recipe: Clam Bar (RECIPE!)
 								["cost"] = { { "i", 24245, 1 }, },	-- 1x Glowcap
 							}),
-							i(22906, {	-- Recipe: Shrouding Potion
+							i(22906, {	-- Recipe: Shrouding Potion (RECIPE!)
 								["cost"] = { { "i", 24245, 30 }, },	-- 30x Glowcap
 							}),
-							i(27689, {	-- Recipe: Sporeling Snack
+							i(27689, {	-- Recipe: Sporeling Snack (RECIPE!)
 								["cost"] = { { "i", 24245, 2 }, },	-- 2x Glowcap
 								["timeline"] = { "removed 4.2.0", "deleted 4.2.0" },
 							}),
-							i(22916, {	-- Recipe: Transmute Primal Earth to Water
+							i(22916, {	-- Recipe: Transmute Primal Earth to Water (RECIPE!)
 								["cost"] = { { "i", 24245, 25 }, },	-- 25x Glowcap
 							}),
 							i(29150, {	-- Hardened Stone Shard
@@ -1712,10 +1696,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 32.4, 51.8, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(22902, {	-- Recipe: Elixir of Major Frost Power
+							i(22902, {	-- Recipe: Elixir of Major Frost Power (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(22901, {	-- Recipe: Sneaking Potion
+							i(22901, {	-- Recipe: Sneaking Potion (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},
@@ -1730,7 +1714,7 @@ root(ROOTS.Zones, {
 							i(21898, {	-- Pattern: Imbued Netherweave Pants
 								["isLimited"] = true,
 							}),
-							i(27695),	-- Recipe: Feltail Delight
+							i(27695),	-- Recipe: Feltail Delight (RECIPE!)
 						},
 					}),
 				}),
@@ -1745,8 +1729,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					i(29960, {	-- Firefly (PET!)
-						["cr"] = 20197,	-- Bogflare Needler
-						["description"] = "This pet is an extremely rare drop."
+						["description"] = "This pet is an extremely rare drop.",
+						["crs"] = { 20197 },	-- Bogflare Needler
+						["timeline"] = { ADDED_2_1_0 },
 					}),
 					i(24449, {	-- Fertile Spore
 						["crs"] = {

@@ -8,33 +8,16 @@ root(ROOTS.Zones, {
 			["icon"] = "Interface\\Icons\\achievement_zone_crystalsong_01",
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					-- #if AFTER 6.0.2
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["groups"] = {
-							crit(27, {	-- Nearly Headless Jacob
-								["coord"] = { 50.2, 59.0, CRYSTALSONG_FOREST },
-								["cr"] = 66636,	-- Nearly Headless Jacob <Master Pet Tamer>
-							}),
-						},
-					})),
-					-- #endif
 					explorationAch(1457),	-- Explore Crystalsong Forest
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
-						378,	-- Rabbit
-						379,	-- Squirrel
-						1238,	-- Unborn Val'kyr
+						385,	-- Mouse (PET!)
+						378,	-- Rabbit (PET!)
+						379,	-- Squirrel (PET!)
+						1238,	-- Unborn Val'kyr (PET!)
 					}},
-					["groups"] = {
-						pet(385),	-- Mouse
-					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(4553),	-- Forlorn Woods
@@ -70,6 +53,11 @@ root(ROOTS.Zones, {
 						["cr"] = 30271,	-- Galendror Whitewing <Hippogryph Master>
 						["coord"] = { 72.0, 80.8, CRYSTALSONG_FOREST },
 						["races"] = ALLIANCE_ONLY,
+					}),
+				}),
+				petbattles({
+					n(66636, {	-- Nearly Headless Jacob <Master Pet Tamer>
+						["coord"] = { 50.2, 59.0, CRYSTALSONG_FOREST },
 					}),
 				}),
 				n(ZONE_DROPS, {

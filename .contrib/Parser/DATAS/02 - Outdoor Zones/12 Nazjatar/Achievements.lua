@@ -4,24 +4,7 @@
 
 root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 	n(ACHIEVEMENTS, {
-		ach(13712, {	-- Explore Nazjatar
-			crit(1),	-- Ashen Strand
-			crit(2),	-- Azsh'ari Terrace
-			crit(3),	-- Coral Forest
-			crit(4),	-- Deepcoil Tunnels
-			crit(5),	-- Dragon's Teeth Basin
-			crit(6),	-- The Drowned Market
-			crit(7),	-- Elun'alor Temple
-			crit(8),	-- The Empress's Approach
-			crit(9),	-- Gate of the Queen
-			crit(10),	-- The Hanging Reef
-			crit(11),	-- Kal'methir
-			crit(12),	-- Shirakess Repository
-			crit(13),	-- Spears of Azshara
-			crit(14),	-- Zanj'ir Terrace
-			crit(15),	-- Zanj'ir Wash
-			crit(16),	-- Zin-Azshari
-		}),
+		explorationAch(13712),	-- Explore Nazjatar
 		petbattle(ach(13715, {	-- From the Belly of the Jelly
 			["filterID"] = BATTLE_PETS,
 		})),
@@ -491,56 +474,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 					["_quests"] = { 56003 },
 				}),
 			}),
-			ach(13712, {	-- Explore Nazjatar
-				crit(1, {	-- Ashen Strand
-					["coord"] = { 28.6, 40.7, NAZJATAR },
-				}),
-				crit(2, {	-- Azsh'ari Terrace
-					["coord"] = { 61.5, 24.8, NAZJATAR },
-				}),
-				crit(3, {	-- Coral Forest
-					["coord"] = { 57.5, 50.1, NAZJATAR },
-				}),
-				crit(4, {	-- Deepcoil Tunnels
-					["coord"] = { 66.2, 26.4, NAZJATAR },
-				}),
-				crit(5, {	-- Dragon's Teeth Basin
-					["coord"] = { 48.3, 48.5, NAZJATAR },
-				}),
-				crit(6, {	-- The Drowned Market
-					["coord"] = { 78.2, 44.9, NAZJATAR },
-				}),
-				crit(7, {	-- Elun'alor Temple
-					["coord"] = { 78.8, 33.7, NAZJATAR },
-				}),
-				crit(8, {	-- The Empress's Approach
-					["coord"] = { 47.4, 40.6, NAZJATAR },
-				}),
-				crit(9, {	-- Gate of the Queen
-					["coord"] = { 51.6, 15.2, NAZJATAR },
-				}),
-				crit(10, {	-- The Hanging Reef
-					["coord"] = { 43.1, 60.9, NAZJATAR },
-				}),
-				crit(11, {	-- Kal'methir
-					["coord"] = { 64.2, 42.3, NAZJATAR },
-				}),
-				crit(12, {	-- Shirakess Repository
-					["coord"] = { 60.1, 15.6, NAZJATAR },
-				}),
-				crit(13, {	-- Spears of Azshara
-					["coord"] = { 38.1, 74.1, NAZJATAR },
-				}),
-				crit(14, {	-- Zanj'ir Terrace
-					["coord"] = { 38.1, 28.7, NAZJATAR },
-				}),
-				crit(15, {	-- Zanj'ir Wash
-					["coord"] = { 43.1, 41.1, NAZJATAR },
-				}),
-				crit(16, {	-- Zin-Azshari
-					["coord"] = { 73.2, 31.7, NAZJATAR },
-				}),
-			}),
+			explorationAch(13712),	-- Explore Nazjatar
 			ach(13558, {	-- Waveblade Ankoan
 				["races"] = ALLIANCE_ONLY,
 			}),

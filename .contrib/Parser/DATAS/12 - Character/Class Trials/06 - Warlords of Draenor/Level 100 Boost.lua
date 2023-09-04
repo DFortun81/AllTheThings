@@ -455,7 +455,7 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 	})),
 }));
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	n(CLASS_TRIAL, {
 		tier(WOD_TIER, {
 			cl(DEATHKNIGHT, {
@@ -519,4 +519,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

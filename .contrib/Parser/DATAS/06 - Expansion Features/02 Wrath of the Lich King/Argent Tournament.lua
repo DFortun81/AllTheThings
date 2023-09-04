@@ -1,6 +1,14 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+ARGENT_TOURNAMENT = createHeader({
+	readable = "The Argent Tournament",
+	icon = "Interface\\Icons\\achievement_reputation_argentchampion",
+	text = {
+		en = [[~select(1,GetCategoryInfo(14941))]],
+	},
+});
+
 local ASPIRANTS_SEAL = i(45192);	-- Aspirant's Seal
 local CHAMPIONS_PURSE = currency(241, {	-- Champion's Seal
 	["provider"] = { "i", 45724 },	-- Champion's Purse
@@ -87,11 +95,11 @@ local VALIANT_DAILY_OnUpdate = function() end
 -- #ENDIF
 
 root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, bubbleDown({ ["timeline"] = { "added 3.2.0" } }, {
-	n(-363, {	-- The Argent Tournament
+	n(ARGENT_TOURNAMENT, {
 		["maps"] = { ICECROWN, 170 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(3676, {	-- A Silver Confidant
+				achWithRep(3676, 1094, {	-- A Silver Confidant
 					["sourceQuests"] = {
 						13735,	-- A Champion Rises (A) (Darnassus)
 						13733,	-- A Champion Rises (A) (Gnomeregan)
@@ -99,11 +107,6 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						13702,	-- A Champion Rises (A) (Stormwind City)
 						13734,	-- A Champion Rises (A) (The Exodar)
 					},
-					-- #if ANYCLASSIC
-					["OnClick"] = [[function(...) _.CommonAchievementHandlers.EXALTED_REP_OnClick(...); end]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1094); end]],	-- The Silver Covenant
-					-- #endif
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(2756, {	-- Argent Aspiration
@@ -204,7 +207,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 				applyclassicphase(WRATH_PHASE_THREE, ach(3736, {	-- Pony Up!
 					["provider"] = { "i", 47541 },	-- Argent Pony Bridle
 				})),
-				ach(3677, {	-- The Sunreavers
+				achWithRep(3677, 1124, {	-- The Sunreavers
 					["sourceQuests"] = {
 						13737,	-- A Champion Rises (H) (Darkspear Trolls)
 						13736,	-- A Champion Rises (H) (Orgrimmar)
@@ -212,11 +215,6 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						13738,	-- A Champion Rises (H) (Thunder Bluff)
 						13739,	-- A Champion Rises (H) (Undercity)
 					},
-					-- #if ANYCLASSIC
-					["OnClick"] = [[function(...) _.CommonAchievementHandlers.EXALTED_REP_OnClick(...); end]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1124); end]],	-- The Sunreavers
-					-- #endif
 					["races"] = HORDE_ONLY,
 				}),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(4596, {	-- The Sword in the Skull
@@ -225,16 +223,12 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						NORTHREND_DALARAN,
 						ISLE_OF_QUELDANAS,
 					},
-					["cost"] = {
-						{ "i", 50379, 1 },	-- Battered Hilt (A)
-						{ "i", 50380, 1 },	-- Battered Hilt (H)
-					},
 					["groups"] = {
 						a(q(14443, {	-- The Battered Hilt (A)
-							["provider"] = { "i", 50379 },	-- Battered Hilt
+							["provider"] = { "i", 50379 },	-- Battered Hilt (A)
 						})),
 						h(q(24554, {	-- The Battered Hilt (H)
-							["provider"] = { "i", 50380 },	-- Battered Hilt
+							["provider"] = { "i", 50380 },	-- Battered Hilt (H)
 						})),
 						q(14444, {	-- What The Dragons Know (A)
 							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
@@ -1006,7 +1000,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["timeline"] = { "added 3.1.0.9767", "removed 4.0.1" },
 					["maps"] = { THE_STORM_PEAKS },
 					-- #if BEFORE CATA
-					["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_THREE .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_TWO .. [[; end]],
+					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_TWO .. [[; end]],
 					-- #endif
 					["isDaily"] = true,
 					["groups"] = {
@@ -2076,6 +2070,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					},
 					["coord"] = { 69.6, 22.8, ICECROWN },
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
+					["isBreadcrumb"] = true,	-- [Possible to not have this quest completed and still pick up following dailies...]
 				}),
 				applyclassicphase(WRATH_PHASE_THREE, q(14108, {	-- Get Kraken!
 					["qg"] = 35094,	-- Crusader Silverdawn
@@ -2146,7 +2141,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["timeline"] = { "added 3.1.0.9767", "removed 4.0.1" },
 					["maps"] = { CRYSTALSONG_FOREST },
 					-- #if BEFORE CATA
-					["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_THREE .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_TWO .. [[; end]],
+					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_TWO .. [[; end]],
 					-- #endif
 					["isDaily"] = true,
 					["groups"] = {
@@ -2611,7 +2606,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["coord"] = { 69.6, 22.8, ICECROWN },
 					["timeline"] = { "added 3.1.0.9767", "removed 4.0.1" },
 					-- #if BEFORE CATA
-					["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_THREE .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_TWO .. [[; end]],
+					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_TWO .. [[; end]],
 					-- #endif
 					["isBreadcrumb"] = true,
 				}),
@@ -2843,8 +2838,9 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 							["providers"] = {
 								{ "n", 32149 },	-- Fallen Hero's Spirit
 								{ "i", 47033 },	-- Light-Blessed Relic
+								{ "o", 195344 },-- Discarded Soul Crystal
+								{ "i", 47035 },	-- Discarded Soul Crystal
 							},
-							["cost"] = {{ "i", 47035, 1 }},	-- Discarded Soul Crystal
 						}),
 					},
 				})),
@@ -3497,9 +3493,11 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["maps"] = { CRYSTALSONG_FOREST },
 					["groups"] = {
 						objective(1, {	-- 0/1 Murderer's Toolkit
-							["provider"] = { "i", 45082 },	-- Murderer's Toolkit
+							["providers"] = {
+								{ "i", 45082 },	-- Murderer's Toolkit
+								{ "i", 45080 },	-- Large Femur
+							},
 							["coord"] = { 38.6, 59.6, CRYSTALSONG_FOREST },
-							["cost"] = {{ "i", 45080, 1 }},	-- Large Femur
 							["cr"] = 33498,	-- Maloric <The Black Knight's Squire>
 						}),
 					},
@@ -4007,7 +4005,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR },{"merge"},
 						{"exclude", "itemID", 146550 },	-- Exclude DK Ensemble
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", WEAPONS, BACK, WRIST, WAIST, FEET, NECK, FINGER, -386 },	-- Exclude Weapon, Back, Wrist, Waist, Feet Neck, Finger and Trinkets
+						{"exclude", "headerID", WEAPONS, BACK, WRIST, WAIST, FEET, NECK, FINGER, TRINKET },	-- Exclude Weapon, Back, Wrist, Waist, Feet Neck, Finger and Trinkets
 					},
 				})),
 				n(33853, {	-- Broxel Goldgrasp <Souvenirs>
@@ -4445,7 +4443,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["sym"] = {
 						{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR },{"merge"},
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", WEAPONS, BACK, WRIST, WAIST, FEET, NECK, FINGER, -386 },	-- Exclude Weapon, Back, Wrist, Waist, Feet Neck, Finger and Trinkets
+						{"exclude", "headerID", WEAPONS, BACK, WRIST, WAIST, FEET, NECK, FINGER, TRINKET },	-- Exclude Weapon, Back, Wrist, Waist, Feet Neck, Finger and Trinkets
 					},
 				})),
 				n(33595, {	-- Mera Mistrunner <Cooking Supplies>
@@ -4458,30 +4456,30 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 								["timeline"] = { "added 7.0.3.22248" },
 							})),
 							epicurean(1, i(43007)),	-- Northern Spices
-							epicurean(3, i(43035)),	-- Recipe: Blackened Dragonfin
-							epicurean(3, i(43032)),	-- Recipe: Blackened Worg Steak
-							epicurean(3, i(43029)),	-- Recipe: Critter Bites
-							epicurean(3, i(43033)),	-- Recipe: Cuttlesteak
-							epicurean(3, i(43036)),	-- Recipe: Dragonfin Filet
-							epicurean(3, i(43024)),	-- Recipe: Firecracker Salmon
-							epicurean(5, i(43017)),	-- Recipe: Fish Feast
-							epicurean(3, i(43505)),	-- Recipe: Gigantic Feast
-							epicurean(3, i(43030)),	-- Recipe: Hearty Rhino
-							epicurean(3, i(43026)),	-- Recipe: Imperial Manta Steak
-							epicurean(3, i(43018)),	-- Recipe: Mega Mammoth Meal
-							epicurean(3, i(43022)),	-- Recipe: Mighty Rhino Dogs
-							epicurean(3, i(43023)),	-- Recipe: Poached Northern Sculpin
-							epicurean(3, i(43028)),	-- Recipe: Rhinolicious Wormsteak
-							epicurean(3, i(43506)),	-- Recipe: Small Feast
-							epicurean(3, i(43031)),	-- Recipe: Snapper Extreme
-							epicurean(3, i(43034)),	-- Recipe: Spiced Mammoth Treats
-							epicurean(3, i(43020)),	-- Recipe: Spiced Worm Burger
-							epicurean(3, i(43025)),	-- Recipe: Spicy Blue Nettlefish
-							epicurean(3, i(43027)),	-- Recipe: Spicy Fried Herring
-							epicurean(3, i(43019)),	-- Recipe: Tender Shoveltusk Steak
-							epicurean(3, i(43037)),	-- Recipe: Tracker Snacks
-							epicurean(3, i(43021)),	-- Recipe: Very Burnt Worg
-							epicurean(3, i(44954)),	-- Recipe: Worg Tartare
+							epicurean(3, i(43035)),	-- Recipe: Blackened Dragonfin (RECIPE!)
+							epicurean(3, i(43032)),	-- Recipe: Blackened Worg Steak (RECIPE!)
+							epicurean(3, i(43029)),	-- Recipe: Critter Bites (RECIPE!)
+							epicurean(3, i(43033)),	-- Recipe: Cuttlesteak (RECIPE!)
+							epicurean(3, i(43036)),	-- Recipe: Dragonfin Filet (RECIPE!)
+							epicurean(3, i(43024)),	-- Recipe: Firecracker Salmon (RECIPE!)
+							epicurean(5, i(43017)),	-- Recipe: Fish Feast (RECIPE!)
+							epicurean(3, i(43505)),	-- Recipe: Gigantic Feast (RECIPE!)
+							epicurean(3, i(43030)),	-- Recipe: Hearty Rhino (RECIPE!)
+							epicurean(3, i(43026)),	-- Recipe: Imperial Manta Steak (RECIPE!)
+							epicurean(3, i(43018)),	-- Recipe: Mega Mammoth Meal (RECIPE!)
+							epicurean(3, i(43022)),	-- Recipe: Mighty Rhino Dogs (RECIPE!)
+							epicurean(3, i(43023)),	-- Recipe: Poached Northern Sculpin (RECIPE!)
+							epicurean(3, i(43028)),	-- Recipe: Rhinolicious Wormsteak (RECIPE!)
+							epicurean(3, i(43506)),	-- Recipe: Small Feast (RECIPE!)
+							epicurean(3, i(43031)),	-- Recipe: Snapper Extreme (RECIPE!)
+							epicurean(3, i(43034)),	-- Recipe: Spiced Mammoth Treats (RECIPE!)
+							epicurean(3, i(43020)),	-- Recipe: Spiced Worm Burger (RECIPE!)
+							epicurean(3, i(43025)),	-- Recipe: Spicy Blue Nettlefish (RECIPE!)
+							epicurean(3, i(43027)),	-- Recipe: Spicy Fried Herring (RECIPE!)
+							epicurean(3, i(43019)),	-- Recipe: Tender Shoveltusk Steak (RECIPE!)
+							epicurean(3, i(43037)),	-- Recipe: Tracker Snacks (RECIPE!)
+							epicurean(3, i(43021)),	-- Recipe: Very Burnt Worg (RECIPE!)
+							epicurean(3, i(44954)),	-- Recipe: Worg Tartare (RECIPE!)
 					},
 				}),
 				n(33650, {	-- Rillie Spindlenut <Gnomeregan Quartermaster>

@@ -38,15 +38,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 		-- #endif
 		["isRaid"] = true,
 		["groups"] = {
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					459,	-- Cat (PET!)
 					385,	-- Mouse (PET!)
 					378,	-- Rabbit (PET!)
 				}},
-			})),
-			-- #endif
+			}),
 			n(FACTIONS, {
 				faction(911, {	-- Silvermoon City
 					-- #if BEFORE CATA
@@ -641,10 +639,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 67.0, 19.2, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(22900, {	-- Recipe: Elixir of Camouflage
+						i(22900, {	-- Recipe: Elixir of Camouflage (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(23574, {	-- Recipe: Transmute Primal Might
+						i(23574, {	-- Recipe: Transmute Primal Might (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -805,10 +803,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sym"] = { { "sub", "common_recipes_vendor", 3366 } }, -- Tamar <Leatherworking Supplies>
 					-- #endif
 					["groups"] = {
-						i(25726, {	-- Pattern: Comfortable Insoles
-							["requireSkill"] = LEATHERWORKING,
+						i(25726, {	-- Pattern: Comfortable Insoles (RECIPE!)
 							["isLimited"] = true,
-							["f"] = RECIPES,
 						}),
 						i(25720, {	-- Pattern: Heavy Knothide Leather
 							["timeline"] = { "removed 3.2.0"},
@@ -875,8 +871,8 @@ for i,o in ipairs({
 	i(16060),	-- Common White Shirt
 }) do table.insert(ANDRA_ZYANDREL_GROUPS, o); end
 for i,o in ipairs({
-	i(21219),	-- Recipe: Sagefish Delight
-	i(21099),	-- Recipe: Smoked Sagefish
+	i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+	i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 }) do table.insert(QUELIS_GROUPS, o); end
 for i,o in ipairs({
 	i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)

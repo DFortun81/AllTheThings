@@ -49,8 +49,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					441, 	-- Alpine Hare (PET!)
 					417,	-- Rat (PET!)
@@ -62,8 +61,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["groups"] = {
 					pet(437),	-- Little Black Ram (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["195:250:109:370"] = 924,	-- Valley of Kings
@@ -294,7 +292,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26843, {	-- A Tiny, Clever Commander
 					["qg"] = 1343,	-- Mountaineer Stormpike
-					["sourceQuest"] = 13636,	-- Stormpike's Orders
+					-- ["sourceQuest"] = 13636,	-- Stormpike's Orders [Not Required, Discord 2023-7-31]
 					["coord"] = { 25.4, 17.9, LOCH_MODAN },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
@@ -544,7 +542,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								1693,	-- Loch Crocolisk
 							},
 						}),
-						i(3678),	-- Recipe: Crocolisk Steak
+						i(3678),	-- Recipe: Crocolisk Steak (RECIPE!)
 						i(2240, {	-- Rugged Cape
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -1168,7 +1166,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
 				}),
-				q(13636, {	-- Stormpike's Orders
+				q(13636, {	-- Stormpike's Orders [TODO: confirm if breadcrumb]
 					["qg"] = 1340,	-- Mountaineer Kadrell
 					["coord"] = { 35.0, 46.5, LOCH_MODAN },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -1284,7 +1282,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 7,
 					["groups"] = {
 						i(3220),	-- Blood Sausage
-						i(3679),	-- Recipe: Blood Sausage
+						i(3679),	-- Recipe: Blood Sausage (RECIPE!)
 					},
 				}),
 				q(26860, {	-- Thelsamar Blood Sausages
@@ -1293,7 +1291,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(3679),	-- Recipe: Blood Sausage
+						i(3679),	-- Recipe: Blood Sausage (RECIPE!)
 					},
 				}),
 				q(27025, {	-- Thistle While You Work
@@ -1467,7 +1465,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(1938, {	-- Block Mallet
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 						}),
 						i(1215, {	-- Support Girdle
 							["timeline"] = { "removed 4.0.3" },
@@ -1611,7 +1609,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(3571, {	-- Trogg Beater
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 						}),
 					},
 				}),
@@ -1696,7 +1694,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 35.6, 49.0, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6892),	-- Recipe: Smoked Bear Meat
+						i(6892),	-- Recipe: Smoked Bear Meat (RECIPE!)
 					},
 				}),
 				n(954, {	-- Kat Sampson <Leather Armor Merchant>
@@ -1715,9 +1713,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 40.4, 39.4, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6325),	-- Recipe: Brilliant Smallfish
-						i(6329),	-- Recipe: Loch Frenzy Delight
-						i(6328),	-- Recipe: Longjaw Mud Snapper
+						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
+						i(6329),	-- Recipe: Loch Frenzy Delight (RECIPE!)
+						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
 					},
 				}),
 				n(167, {	-- Morhan Coppertongue <Metalsmith>
@@ -1760,10 +1758,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 82.6, 63.2, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6053, {	-- Recipe: Holy Protection Potion
+						i(6053, {	-- Recipe: Holy Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5640, {	-- Recipe: Rage Potion
+						i(5640, {	-- Recipe: Rage Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -1797,7 +1795,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1177,  -- Tunnel Rat Surveyor
 				}),
-				i(2700, {	-- Recipe: Succulent Pork Ribs
+				i(2700, {	-- Recipe: Succulent Pork Ribs (RECIPE!)
 					["description"] = "Can drop from any mob in the zone.",
 				}),
 				i(2281, {	-- Rodentia Flint Axe

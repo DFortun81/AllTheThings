@@ -11,29 +11,29 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 			n(ACHIEVEMENTS, {
 				ach(479, {	-- The Culling of Stratholme
 					crit(5467, { -- Meathook
-						["_encounter"] = { 611, 1 },
+						["_encounter"] = { 611, NORMAL_DUNGEON },
 					}),
 					crit(5468, { -- Chrono-Lord Epoch
-						["_encounter"] = { 613, 1 },
+						["_encounter"] = { 613, NORMAL_DUNGEON },
 					}),
 					crit(5469, { -- Salramm the Fleshcrafter
-						["_encounter"] = { 612, 1 },
+						["_encounter"] = { 612, NORMAL_DUNGEON },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					crit(6432, { -- Mal'Ganis
-						["_encounter"] = { 614, 1 },
+						["_encounter"] = { 614, NORMAL_DUNGEON },
 					}),
 					-- #else
 					crit(6433, { -- Mal'Ganis
-						["_encounter"] = { 614, 1 },
+						["_encounter"] = { 614, NORMAL_DUNGEON },
 					}),
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17302, {	-- Defense Protocol Alpha: The Culling of Stratholme
 					crit(57771, { -- Meathook
-						["_encounter"] = { 611, 2 },
+						["_encounter"] = { 611, HEROIC_DUNGEON },
 						["groups"] = {
 							i(43992),	-- Volitant Amulet
 							i(40429),	-- Crimson Steel
@@ -41,7 +41,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 					crit(57773, { -- Salramm the Fleshcrafter
-						["_encounter"] = { 612, 2 },
+						["_encounter"] = { 612, HEROIC_DUNGEON },
 						["groups"] = {
 							i(43991),	-- Legguards of Composure
 							i(43989),	-- Remembrance Girdle
@@ -49,7 +49,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 					crit(57772, { -- Chrono-Lord Epoch
-						["_encounter"] = { 613, 2 },
+						["_encounter"] = { 613, HEROIC_DUNGEON },
 						["groups"] = {
 							i(43990),	-- Blade-Scarred Tunic
 							i(40430),	-- Majestic Dragon Figurine
@@ -57,7 +57,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 					crit(57770, { -- Mal'Ganis
-						["_encounter"] = { 614, 2 },
+						["_encounter"] = { 614, HEROIC_DUNGEON },
 						["groups"] = {
 							i(40475),	-- Barricade of Eternity
 							i(39235),	-- Bone-Framed Bracers
@@ -74,19 +74,50 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 				})),
+				applyclassicphase(WRATH_PHASE_THREE, ach(18601, {	-- Defense Protocol Beta: The Culling of Stratholme
+					crit(60614, { -- Meathook
+						["_encounter"] = { 611, HEROIC_DUNGEON },
+						["groups"] = {
+							i(45694),	-- Conductive Cord
+							i(46339),	-- Mimiron's Repeater
+						},
+					}),
+					crit(60616, { -- Salramm the Fleshcrafter
+						["_encounter"] = { 612, HEROIC_DUNGEON },
+						["groups"] = {
+							i(45695),	-- Spire of Withering Dreams
+						},
+					}),
+					crit(60615, { -- Chrono-Lord Epoch
+						["_encounter"] = { 613, HEROIC_DUNGEON },
+						["groups"] = {
+							i(45685),	-- Plasma Foil
+							i(45675),	-- Power Enhancing Loop
+						},
+					}),
+					crit(60613, { -- Mal'Ganis
+						["_encounter"] = { 614, HEROIC_DUNGEON },
+						["groups"] = {
+							currency(SIDEREAL_ESSENCE),
+							i(46016),	-- Abaddon
+							i(46025),	-- Devotion
+							i(46018),	-- Deliverance
+						},
+					}),
+				})),
 				-- #endif
 				ach(500,  {	-- Heroic: The Culling of Stratholme
 					crit(6805, { -- Meathook
-						["_encounter"] = { 611, 2 },
+						["_encounter"] = { 611, HEROIC_DUNGEON },
 					}),
 					crit(6806, { -- Chrono-Lord Epoch
-						["_encounter"] = { 613, 2 },
+						["_encounter"] = { 613, HEROIC_DUNGEON },
 					}),
 					crit(6807, { -- Salramm the Fleshcrafter
-						["_encounter"] = { 612, 2 },
+						["_encounter"] = { 612, HEROIC_DUNGEON },
 					}),
 					crit(6434, { -- Mal'Ganis
-						["_encounter"] = { 614, 2 },
+						["_encounter"] = { 614, HEROIC_DUNGEON },
 					}),
 				}),
 			}),
@@ -309,6 +340,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(39473),	-- Contortion
 							i(39470),	-- Medallion of the Disgraced
 							i(39467),	-- Minion Bracers
+						})),
+						applyclassicphase(WRATH_PHASE_THREE, header(HEADERS.Spell, 412397, {	-- Defense Protocol Beta
+							i(45682),	-- Pulsing Spellshield
+							i(45686),	-- Vest of the Glowing Crescent
 						})),
 						-- #endif
 					}),

@@ -9,6 +9,13 @@ local ANACHRONOS_COORD = { 65, 50, TANARIS };
 root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 	inst(744, {	-- Temple of Ahn'Qiraj
 		["lore"] = "Dark whispers ride on the winds of Silithus desert. An old god stirs in his wretched lair and the entire world shall soon be the target of his wrath.\n\nAfter thousands of years of slumber, the old god, C'thun has awakened and is quickly regenerating his power. Once he has reached full potential nothing will be able to stop him. The dragons that so humbly sacrificed themselves so long ago to imprison C'thun are weakened or enslaved in the temple, so the charge of protecting the land falls to other heroes.\n\nHeroes must enter Temple of Ahn'Qiraj, challenge C'thun's most wicked servants, and slay a god. The road will not be easy and it is wrought with peril at every turn. Will the heroes turn back now or face C'thun in his mighty lair and put an end to him once and for all?",
+		-- #if BEFORE WRATH
+		["zone-text-areaID"] = 3428,	-- Ahn'Qiraj
+		-- #endif
+		["sins"] = {
+			"Temple of Ahn'Qiraj",	-- In Classic the map name is actually just "Ahn'Qiraj", not sure which expansion this changes.
+			"Ahn'Qiraj Temple",	-- In Retail the full name is actually Temple of Ahn'Qiraj, but the saved instance data is wrong.
+		},
 		["coord"] = { 46.76, 7.53, AHNQIRAJ_THE_FALLEN_KINGDOM },
 		["maps"] = {
 			TEMPLE_OF_AHNQIRAJ,	-- The Temple Gates
@@ -19,22 +26,17 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 		["lvl"] = 50,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				classicAch(956, {	-- Brood of Nozdormu
+				achWithRep(956, 910, {	-- Brood of Nozdormu
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Brood of Nozdormu to Exalted.",
 					-- #endif
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 910); end]],
-					-- #endif
-					["maps"] = { CAVERNS_OF_TIME },
+					["maps"] = { CAVERNS_OF_TIME, SILITHUS },
 				}),
 			}),
 			n(FACTIONS, {
 				faction(910, {	-- Brood of Nozdormu
 					["icon"] = "Interface\\Icons\\INV_Misc_Head_Dragon_Bronze",
-					["maps"] = { CAVERNS_OF_TIME },
+					["maps"] = { CAVERNS_OF_TIME, SILITHUS },
 				}),
 			}),
 			n(QUESTS, {
@@ -1075,13 +1077,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				},
 			}),
 			n(ZONE_DROPS, {
-				classicAch(424, {	-- Why? Because It's Red
+				ach(424, {	-- Why? Because It's Red
 					["provider"] = { "i", 21321 },	-- Red Qiraji Resonating Crystal
-					["filterID"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain a Red Qiraji Resonating Crystal.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
+					["filterID"] = MOUNTS,
 				}),
 				i(21218),	-- Blue Qiraji Battle Tank (MOUNT!)
 				i(21323),	-- Green Qiraji Battle Tank (MOUNT!)
@@ -1319,9 +1320,15 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				["description"] = "This can be a fairly -buggy- encounter if you don't do it right. Kill 1 boss at a time and allow it to get consumed. Then kill the next one and allow it to also get consumed. The last boss you leave alive determines the loot that can drop.",
 				["groups"] = {
 			-- #endif
-					n(	-- Silithid Royalty
+					n(
 					-- #if ANYCLASSIC
-					-20,
+					createHeader({
+						readable = "Silithid Royalty",
+						icon = "Interface\\Icons\\Inv_misc_ahnqirajtrinket_06",
+						text = {
+							en = "Silithid Royalty",
+						},
+					}),
 					-- #else
 					COMMON_BOSS_DROPS,
 					-- #endif
@@ -1495,6 +1502,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					i(20927),	-- Ouro's Intact Hide
 					i(20931),	-- Skin of the Great Sandworm
 					i(23557),	-- Larvae of the Great Worm
+					i(21613, {	-- Wormhide Boots
+						["timeline"] = { "added 10.1.7" },
+					}),
 					i(21610),	-- Wormscale Blocker
 					i(21615),	-- Don Rigoberto's Lost Hat
 					i(21611),	-- Burrower Bracers
@@ -1505,10 +1515,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 			e(1551, {	-- C'Thun
 				["creatureID"] = 15727,
 				["groups"] = {
-					classicAch(687, {	-- Temple of Ahn'Qiraj
+					ach(687, {	-- Temple of Ahn'Qiraj
 						-- #if BEFORE WRATH
 						["sourceQuest"] = 8801,	-- C'Thun's Legacy
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5058, {	-- Temple of Ahn'Qiraj Guild Run

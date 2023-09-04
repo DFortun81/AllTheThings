@@ -7,21 +7,25 @@ local RAZZASHI_HATCHLING = i(48126, {	-- Razzashi Hatchling
 	["cr"] = 14821,	-- Razzashi Raptor
 });
 root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
-	map(ZULGURUB, {
+	inst(76, {	-- Zul'Gurub
 		["lore"] = "Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",
+		-- #if BEFORE WRATH
+		["zone-text-areaID"] = 19,	-- Zul'Gurub
+		-- #endif
+		["maps"] = {
+			ZULGURUB,
+			-- #if ANYCLASSIC
+			233,
+			-- #endif
+		},
 		["timeline"] = { "removed 4.0.3" },
 		["isRaid"] = true,
 		["lvl"] = 58,
 		["groups"] = bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, {
 			n(ACHIEVEMENTS, {
-				classicAch(957, {	-- Hero of the Zandalar Tribe
+				achWithRep(957, 270, {	-- Hero of the Zandalar Tribe
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Zandalar Tribe to Exalted.",
-					-- #endif
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 270); end]],
 					-- #endif
 					["maps"] = { STRANGLETHORN_VALE },
 				}),
@@ -938,24 +942,24 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 					["groups"] = {
 						applyclassicphase(PHASE_FIVE, i(20757)),	-- Formula: Brilliant Mana Oil (RECIPE!)
 						applyclassicphase(PHASE_FIVE, i(20756)),	-- Formula: Brilliant Wizard Oil (RECIPE!)
-						i(19772),	-- Pattern: Blood Tiger Breastplate
-						i(19773),	-- Pattern: Blood Tiger Shoulders
+						i(19772),	-- Pattern: Blood Tiger Breastplate (RECIPE!)
+						i(19773),	-- Pattern: Blood Tiger Shoulders (RECIPE!)
 						i(19766),	-- Pattern: Bloodvine Boots
 						i(19765),	-- Pattern: Bloodvine Leggings
 						i(19764),	-- Pattern: Bloodvine Vest
-						i(19771),	-- Pattern: Primal Batskin Bracers
-						i(19770),	-- Pattern: Primal Batskin Gloves
-						i(19769),	-- Pattern: Primal Batskin Jerkin
+						i(19771),	-- Pattern: Primal Batskin Bracers (RECIPE!)
+						i(19770),	-- Pattern: Primal Batskin Gloves (RECIPE!)
+						i(19769),	-- Pattern: Primal Batskin Jerkin (RECIPE!)
 						i(19776),	-- Plans: Bloodsoul Breastplate (RECIPE!)
 						i(19778),	-- Plans: Bloodsoul Gauntlets (RECIPE!)
 						i(19777),	-- Plans: Bloodsoul Shoulders (RECIPE!)
 						i(19779),	-- Plans: Darksoul Breastplate (RECIPE!)
 						i(19780),	-- Plans: Darksoul Leggings (RECIPE!)
 						i(19781),	-- Plans: Darksoul Shoulders (RECIPE!)
-						i(20012),	-- Recipe: Greater Dreamless Sleep Potion
-						i(20013),	-- Recipe: Living Action Potion
-						i(20011),	-- Recipe: Mageblood Potion
-						i(20014),	-- Recipe: Major Troll's Blood Potion
+						i(20012),	-- Recipe: Greater Dreamless Sleep Potion (RECIPE!)
+						i(20013),	-- Recipe: Living Action Potion (RECIPE!)
+						i(20011),	-- Recipe: Mageblood Potion (RECIPE!)
+						i(20014),	-- Recipe: Major Troll's Blood Potion (RECIPE!)
 						i(20000),	-- Schematic: Bloodvine Goggles
 						i(20001),	-- Schematic: Bloodvine Lens
 					},
@@ -1239,6 +1243,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 				["groups"] = {
 					i(19727, {	-- Blood Scythe
 						["requireSkill"] = HERBALISM,
+						["b"] = 1,
 					}),
 					i(19821),	-- Punctured Voodoo Doll [Druid]
 					i(19816),	-- Punctured Voodoo Doll [Hunter]
@@ -1278,14 +1283,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 				i(19871),	-- Talisman of Protection
 			}),
 			n(11382, {	-- Bloodlord Mandokir
-				classicAch(881, {	-- Swift Razzashi Raptor
+				ach(881, {	-- Swift Razzashi Raptor
 					["provider"] = { "i", 19872 },	-- Swift Razzashi Raptor
-					["timeline"] = { "removed 4.0.3", "blackmarket 6.0.2" },
-					["filterID"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain the Swift Razzashi Raptor from Bloodlord Mandokir in Zul'Gurub.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
+					["timeline"] = { "removed 4.0.3", "blackmarket 6.0.2" },
+					["filterID"] = MOUNTS,
 				}),
 				i(19872, {	-- Swift Razzashi Raptor (MOUNT!)
 					["timeline"] = { "removed 4.0.3", "blackmarket 6.0.2" },
@@ -1426,14 +1430,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 				},
 			}),
 			n(14509, {	-- High Priest Thekal
-				classicAch(880, {	-- Swift Zulian Tiger
+				ach(880, {	-- Swift Zulian Tiger
 					["provider"] = { "i", 19902 },	-- Swift Zulian Tiger
-					["timeline"] = { "removed 4.0.3", "blackmarket 6.0.2" },
-					["filterID"] = MOUNTS,
 					-- #if BEFORE WRATH
 					["description"] = "Obtain the Swift Zulian Tiger from High Priest Thekal in Zul'Gurub.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 					-- #endif
+					["timeline"] = { "removed 4.0.3", "blackmarket 6.0.2" },
+					["filterID"] = MOUNTS,
 				}),
 				i(19902, {	-- Swift Zulian Tiger (MOUNT!)
 					["timeline"] = { "removed 4.0.3", "blackmarket 6.0.2" },
@@ -1465,12 +1468,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 					{ "i", 19975, 5 },	-- Zulian Mudskunk
 				},
 				["groups"] = {
-					classicAch(560, {	-- Deadliest Catch
+					ach(560, {	-- Deadliest Catch
 						-- #if BEFORE WRATH
-						["description"] = "Fish up Gahz'ranka in Zul'Gurub using the Mudskunk Lure.\n\nPROTIP: You can get free credit for this achievement on Prepatch if your character has a Mudskunk Lure in its inventory.",
-						["provider"] = { "i", 19974 },	-- Mudskunk Lure
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
+						["description"] = "Fish up Gahz'ranka in Zul'Gurub using the Mudskunk Lure.",
 						-- #endif
+						["timeline"] = { "added 3.0.1" },
 					}),
 					i(19944),	-- Nat Pagle's Fish Terminator
 					i(19946),	-- Tigule's Harpoon
@@ -1506,11 +1508,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 				i(22637),	-- Primal Hakkari Idol
 			}),
 			n(14834, {	-- Hakkar the Soulflayer
-				classicAch(688, {	-- Zul'Gurub
+				ach(688, {	-- Zul'Gurub
 					-- #if BEFORE WRATH
 					["description"] = "Defeat Hakkar and deliver his Heart to the Zandalari.",
 					["sourceQuest"] = 8183,	-- The Heart of Hakkar
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 					-- #endif
 				}),
 				i(19802),	-- Heart of Hakkar

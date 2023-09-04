@@ -38,8 +38,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					415,	-- Fire Beetle (PET!)
 				}},
@@ -48,8 +47,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(423),	-- Lava Crab (PET!)
 					pet(428),	-- Molten Hatchling (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["275:235:77:366"] = 1957,	-- Blackchar Cave
@@ -82,6 +80,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 3305,	-- Grisha <Wind Rider Master>
 					["coord"] = { 34.8, 30.6, SEARING_GORGE },
 					["races"] = HORDE_ONLY,
+				}),
+			}),
+			n(PROFESSIONS, {
+				prof(LEATHERWORKING, {
+					n(7868, {	-- Sarah Tanner <Master Elemental Leatherworker>
+						["coord"] = { 63.6, 75.8, SEARING_GORGE },
+						["races"] = ALLIANCE_ONLY,
+						["timeline"] = { REMOVED_4_0_3 },
+						["g"] = CLASSIC_TBC_ELEMENTAL,
+					}),
 				}),
 			}),
 			n(QUESTS, {
@@ -1384,7 +1392,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 5840,	-- Dark Iron Steamsmith
 				}),
 				-- #endif
-				applyclassicphase(PHASE_FIVE, i(21547, {	-- Recipe: Elixir of Greater Firepower
+				applyclassicphase(PHASE_FIVE, i(21547, {	-- Recipe: Elixir of Greater Firepower (RECIPE!)
 					["timeline"] = { "removed 4.0.1" },
 					["crs"] = {
 						5844,	-- Dark Iron Slaver

@@ -6,20 +6,18 @@ root(ROOTS.Achievements, pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 	achcat(ACHIEVEMENT_CATEGORY_ALTERAC_VALLEY, {
 		["maps"] = { ALTERAC_VALLEY },
 		["g"] = {
-			ach(13928, {	-- Alterac Valley of Olde (A)
+			applyevent(EVENTS.WOW_ANNIVERSARY, ach(13928, {	-- Alterac Valley of Olde (A)
 				["races"] = ALLIANCE_ONLY,
-				["u"] = WOW_ANNIVERSARY,
 				["g"] = {
 					i(172022),	-- Stormpike Battle Ram (MOUNT!)
 				},
-			}),
-			ach(13930, {	-- Alterac Valley of Olde (H)
+			})),
+			applyevent(EVENTS.WOW_ANNIVERSARY, ach(13930, {	-- Alterac Valley of Olde (H)
 				["races"] = HORDE_ONLY,
-				["u"] = WOW_ANNIVERSARY,
 				["g"] = {
 					i(172023),	-- Frostwolf Snarler (MOUNT!)
 				},
-			}),
+			})),
 			ach(708, {	-- Hero of the Frostwolf Clan
 				["races"] = HORDE_ONLY,
 			}),

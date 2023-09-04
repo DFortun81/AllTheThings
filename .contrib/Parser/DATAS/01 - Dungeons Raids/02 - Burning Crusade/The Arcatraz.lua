@@ -4,6 +4,11 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(254, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {	-- The Arcatraz
 		["lore"] = "The Arcatraz is a prison where the naaru jailed the most terrifying and dangerous creatures they encountered on their journeys. When Kael'thas and his followers took the Keep, he sent a warden and guards to the Arcatraz. Kael's blood elves, however, were corruptible and the prisoners have begun to break free...",
+		["zone-text-areaID"] = 3846,	-- The Arcatraz
+		["sins"] = {
+			"Tempest Keep: The Arcatraz",
+			"Festung der Stürme: Die Arkatraz",
+		},
 		["coord"] = { 74.42, 57.72, NETHERSTORM },	-- The Arcatraz, Netherstorm
 		["maps"] = {
 			TEMPEST_KEEP_ARCATRAZ,	-- Stasis Block: Trion
@@ -128,9 +133,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				i(21905, {	-- Pattern: Arcanoweave Bracers
 					["cr"] = 20869,	-- Arcatraz Sentinel
 				}),
-				i(29672, {	-- Pattern: Flame Armor Kit
+				i(29672, {	-- Pattern: Flame Armor Kit (RECIPE!)
 					["cr"] = 20898,	-- Gargantuan Abyssal
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 				}),
 				i(23606, {	-- Plans: Felsteel Leggings
 					["cr"] = 20900,	-- Unchained Doombringer
@@ -205,13 +210,12 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(551, {	-- Harbinger Skyriss
 					["creatureID"] = 20912,
 					["groups"] = {
-						classicAch(660, {	-- The Arcatraz
+						ach(660, {	-- The Arcatraz
 							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								10882,	-- Harbinger of Doom
 								10886,	-- Trial of the Naaru: Tenacity
 							},
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						-- #if BEFORE 7.3.5
@@ -332,10 +336,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(551, {	-- Harbinger Skyriss
 						["creatureID"] = 20912,
 						["groups"] = {
-							classicAch(681, {	-- Heroic: The Arcatraz
+							ach(681, {	-- Heroic: The Arcatraz
 								-- #if BEFORE WRATH
 								["sourceQuest"] = 10886,	-- Trial of the Naaru: Tenacity
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 								-- #endif
 							}),
 							ach(5081, {	-- Heroic: The Arcatraz Guild Run
@@ -373,13 +376,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					}),
 				},
 			}),
-			-- #if AFTER 6.2.3.20601
-			d(TIMEWALKING_DUNGEON, {
-				["sym"] = {	-- link in Timewalking content
-					{"sub", "tw_instance", 254 },	-- this instance version of timewalking
-				},
-			}),
-			-- #endif
 		},
 	})),
 })));

@@ -1,29 +1,28 @@
-## Author: Crieve-Sargeras
-## Interface: 100100
-## X-Curse-Project-ID: 267285
-## X-Wago-ID: yQKyY5K7
 ## Title: AllTheThings
 ## IconTexture: Interface/Addons/AllTheThings/assets/logo_32x32
 ## Name: AllTheThings
-## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSettings, AllTheThingsAD, AllTheThingsProfiles, AllTheThingsAuctionData, AllTheThingsDebugData, AllTheThingsArtifactsItems, AllTheThingsHarvestItems
-## SavedVariablesPerCharacter: AllTheThingsSettingsPerCharacter
 ## Notes: Addon for Tracking Collections & Account Completion
+## Author: Crieve-Sargeras
 ## Version: @project-version@
-src\base.lua
-lib\Callback.lua
-lib\Runner.lua
-lib\Audio.lua
-lib\Refresh.lua
+## Interface: 100105
+## X-Interface: 100105
+## X-Wago-ID: yQKyY5K7
+## X-Curse-Project-ID: 267285
+## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSavedVariables, AllTheThingsSettings, AllTheThingsAD, AllTheThingsProfiles, AllTheThingsAuctionData, AllTheThingsDebugData, AllTheThingsArtifactsItems, AllTheThingsHarvestItems
+## SavedVariablesPerCharacter: AllTheThingsSettingsPerCharacter
 lib\LibStub\LibStub.lua
 lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
 lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
-db\Presets.lua
-db\CategoryDB.lua
-db\ObjectDB.lua
 db\RaceDB.lua
-db\ReagentsDB.lua
+src\base.lua
+lib\Callback.lua
+lib\Colors.lua
+lib\Runner.lua
+lib\Audio.lua
+lib\Refresh.lua
+lib\Sort.lua
+lib\Table.lua
 locales\en.lua
-locales\en_auto.lua
 locales\es.lua
 locales\de.lua
 locales\fr.lua
@@ -32,6 +31,24 @@ locales\ko.lua
 locales\pt.lua
 locales\ru.lua
 locales\cn.lua
+src\Cache.lua
+src\Modules\RetrievingData.lua
+src\Modules\FactionData.lua
+src\Modules\Color.lua
+src\Modules\Costs.lua
+src\Modules\Events.lua
+src\Modules\Filter.lua
+src\Modules\Tooltip.lua
+src\Modules\Upgrade.lua
+db\Dragonflight\ExplorationDB.lua
+db\Dragonflight\LocalizationDB.lua
+db\Dragonflight\en_auto.lua
+db\Presets.lua
+db\ReagentsDB.lua
+src\Classes\base.lua
+src\Classes\Filter Types.lua
+src\Classes\Illusions.lua
+src\Classes\PVP Ranks.lua
 Settings.lua
 AllTheThings.lua
-db\Categories.lua
+db\Dragonflight\Categories.lua

@@ -4,6 +4,12 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(247, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {	-- Auchenai Crypts
 		["lore"] = "Auchenai Crypts is the main seat of power for the Auchenai - a renegade religious sect of draenei led by the Exarch Maladaar. The crypts are populated by these draenei and the unliving creatures they have summoned. The most important remains interred within the crypt are those of D'ore, one of the naaru. D'ore perished in the collision that brought Oshu'gun (and the draenei) to Draenor. In death, D'ore entered its void stage. The dark energies exuded by this phenomenon resulted, directly or indirectly, in the evils that have since befallen the crypts.",
+		["zone-text-areaID"] = 3790,	-- Auchenai Crypts
+		["sins"] = {
+			"Auchindoun: Auchenai Crypts",
+			"Auchindoun: Auchenaikrypta",
+			"Auchindoun: Crypts",
+		},
 		["coord"] = { 34.34, 65.61, TEROKKAR_FOREST },	-- Auchenai Crypts, Terokkar Forest
 		["maps"] = {
 			AUCHINDOUN_AUCHENAI_CRYPTS,	-- Halls of Hereafter
@@ -154,13 +160,12 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(524, {	-- Exarch Maladaar
 					["creatureID"] = 18373,
 					["groups"] = {
-						classicAch(666, {	-- Auchenai Crypts
+						ach(666, {	-- Auchenai Crypts
 							-- #if BEFORE WRATH
 							["sourceQuests"] = {
 								10167,	-- Auchindoun...
 								10164,	-- Everything Will Be Alright
 							},
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						i(27412),	-- Ironstaff of Regeneration
@@ -235,7 +240,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(524, {	-- Exarch Maladaar
 						["creatureID"] = 18373,
 						["groups"] = {
-							ach(672),	-- Heroic: Auchenai Crypts
+							ach(672, {	-- Heroic: Auchenai Crypts
+								["timeline"] = { "added 3.0.1" },
+							}),
 							ach(5072, {	-- Heroic: Auchenai Crypts Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),

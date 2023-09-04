@@ -1,10 +1,19 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
+AMAZON_PRIME_GAMING = createHeader({
+	readable = "Amazon Prime Gaming",
+	icon = "136101",
+	text = {
+		en = "Amazon Prime Gaming",
+	},
+	description = {
+		en = "Amazon Prime Gaming offers in-game content for World of Warcraft Retail. Depending on your country, Amazon Prime (which includes Gaming) costs between 4-16 $/€ per month with the occasional monthly free trial available.\n\nCreate a Twitch account & connect it with your Prime Account. Next connect your B.Net Account with your Twitch Account. Lastly claim your monthly reward under 'gaming.amazon.com/loot/wow'.\n\nAmazon Prime also comes with a free Twitch subscription which you can use to support AllTheThings.\n\nTwitch.tv/Crieve\nTwitch.tv/Goldenshacal",
+	},
+});
 root(ROOTS.Promotions, {
-	n(-586, {	-- Amazon Prime Gaming
+	n(AMAZON_PRIME_GAMING, {
 		["timeline"] = { ADDED_10_0_7 },
-		["description"] = "Amazon Prime Gaming offers in-game content for World of Warcraft Retail. Depending on your country, Amazon Prime (which includes Gaming) costs between 4-16 $/€ per month with the occasional monthly free trial available.\n\nCreate a Twitch account & connect it with your Prime Account. Next connect your B.Net Account with your Twitch Account. Lastly claim your monthly reward under 'gaming.amazon.com/loot/wow'.\n\nAmazon Prime also comes with a free Twitch subscription which you can use to support AllTheThings.\n\nTwitch.tv/Crieve\nTwitch.tv/Goldenshacal",
 		["groups"] = {
 			i(49282, {	-- Big Battle Bear
 				["description"] = "Amazon Prime Gaming reward from March 30th 2023 till April 27th 2023.",
@@ -16,9 +25,28 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_10_0_7, "removed 10.1.0.49741" },
 			}),
 			i(45037, {	-- Epic Purple Shirt
-				["description"] = "Amazon Prime Gaming reward from May 25th 2023 till June 22nd 2023.",
-				["timeline"] = { "added 10.1.0.49741", "removed 10.1.0.99999" },
+				["description"] = "Amazon Prime Gaming reward from May 25th 2023 till June 29th 2023.",
+				["timeline"] = { "added 10.1.0.49741", "removed 10.1.0.50000" },
+				["u"] = REMOVED_FROM_GAME,
 			}),
+			i(71718, {	-- Swift Shorestrider
+				["description"] = "Amazon Prime Gaming reward from June 29th 2023 till July 27th 2023.",
+				["timeline"] = { "added 10.1.0.50000", "removed 10.1.5.50585" },
+				["u"] = REMOVED_FROM_GAME,
+			}),
+			i(34519, {	-- Silver Pig Coin
+				["description"] = "Amazon Prime Gaming reward from July 25th 2023 till August 24th 2023.",
+				["timeline"] = { "added 10.1.5.50585", "removed 10.1.5.50791" },
+				["u"] = REMOVED_FROM_GAME,
+			}),
+			i(38312, {	-- Tabard of Brilliance
+				["description"] = "Amazon Prime Gaming reward from August 24th 2023 till September 28th 2023.",
+				["timeline"] = { "added 10.1.5.50791", "removed 10.1.7.99999" },
+			}),
+			--[[i(23709, {	-- Tabard of Frost
+				["description"] = "Amazon Prime Gaming reward from August 24th 2023 till September 28th 2023.",
+				["timeline"] = { "added 10.1.5.50585", "removed 10.1.7.99999" },
+			}),--]]
 		},
 	}),
 });

@@ -25,7 +25,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(13779, {		-- Phenomenal Cosmic Power
 			un(REMOVED_FROM_GAME, title(407)),		-- , Azeroth's Champion"
 		})),
-		un(REMOVED_FROM_GAME, ach(13078)),	-- Realm First! Battle for Azeroth Keystone Master
 		un(REMOVED_FROM_GAME, ach(3259, {	-- Realm First! Celestial Defender
 			un(REMOVED_FROM_GAME, title(125)),	-- the Celestial Defender
 		})),
@@ -67,7 +66,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
 		un(REMOVED_FROM_GAME, ach(5389)),	-- Realm First! Illustrious Scribe
 		un(REMOVED_FROM_GAME, ach(5393)),	-- Realm First! Illustrious Skinner
 		un(REMOVED_FROM_GAME, ach(5394)),	-- Realm First! Illustrious Tailor
-		un(REMOVED_FROM_GAME, ach(11224)),	-- Realm First! Keystone Master
 		un(REMOVED_FROM_GAME, ach(457)),	-- Realm First! Level 80
 		un(REMOVED_FROM_GAME, ach(1405)),	-- Realm First! Level 80 Blood Elf
 		un(REMOVED_FROM_GAME, ach(461)),	-- Realm First! Level 80 Death Knight

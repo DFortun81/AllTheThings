@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 } }, {
-	n(-10057, {	-- War Effort
+	n(WARFRONT, {
 		m(DARKSHORE, {
 			n(RARES, {
 				n(149652, {	-- Agathe Wyrmwood [A Only]

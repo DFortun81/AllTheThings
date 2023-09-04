@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+--[[
 local SymPvP = function(SeasonID)
 	SymLink = {
 		{"select", "tierID", SL_TIER},			-- Select Shadowlands
@@ -50,7 +51,8 @@ local SymRaid = function(InstanceID, Remove)
 	end
 	return SymLink
 end
-root(ROOTS.Zones, m(SHADOWLANDS, {
+--]]
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(ORIBOS, {
 		o(353484, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH } }, {	-- The Great Vault
 			["coord"] = { 64.3, 32.1, ORIBOS },
@@ -61,6 +63,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 				i(199202, {	-- Attendant's Token of Merit
 					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 },
 				}),
+				--[[
 				inst(1190, {	-- Castle Nathria
 					["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0, ADDED_9_2_5, REMOVED_10_0_0 },
 					["sym"] = SymRaid(1190, {
@@ -194,7 +197,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 						["sym"] = SymPvP(SEASON_ETERNAL),
 					}),
 				})),
+				--]]
 			},
 		})),
 	}),
-}))
+})));

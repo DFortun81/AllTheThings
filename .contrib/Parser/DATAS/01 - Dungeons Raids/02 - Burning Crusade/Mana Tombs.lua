@@ -4,6 +4,12 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(250, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {	-- Mana Tombs
 		["lore"] = "Its inhabitants are mostly ethereals opposing the Consortium. The ethereals of the Consortium cannot enter due to the anti-ethereal wards set by Nexus-Prince Shaffar; they have attempted to breach the gates with little success, but have still tested whether or not their efforts worked - often resulting in the spotaneous combustion (for lack of a better term) of the ethereal tester sent through the gate. According to the Consortium, the ethereals in the Mana-Tombs are robbing it blind and if you wish to do business with them, you'll have to aid in taking out the competition.",
+		["sins"] = {
+			[[~DUNGEON_FLOOR_MANATOMBS1]],
+			"Auchindoun: Mana-Tombs",
+			"Auchindoun: The Mana Tombs",
+			"Auchindoun: Managruft",
+		},
 		["coord"] = { 39.63, 57.67, TEROKKAR_FOREST },	-- Mana-Tombs, Terokkar Forest
 		["mapID"] = AUCHINDOUN_MANA_TOMBS,
 		["lvl"] = lvlsquish(61, 61, 15),
@@ -143,9 +149,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(29575, {	-- Undercutting the Competition
 					["qg"] = 54692,	-- Artificer Morphalius
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 28490, 1 },	-- Shaffar's Wrappings
-					},
 					["lvl"] = lvlsquish(62, 62, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Shaffar's Wrappings
@@ -233,10 +236,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(537, {	-- Nexus-Prince Shaffar
 					["creatureID"] = 18344,
 					["groups"] = {
-						classicAch(651, {	-- Mana-Tombs
+						ach(651, {	-- Mana-Tombs
 							-- #if BEFORE WRATH
 							["sourceQuest"] = 10165,	-- Undercutting the Competition
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						-- #if AFTER 7.3.5
@@ -274,7 +276,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(27828),	-- Warp-Scarab Brooch
 						-- #endif
 						i(28490),	-- Shaffar's Wrappings
-						i(22921),	-- Recipe: Major Frost Protection Potion
+						i(22921),	-- Recipe: Major Frost Protection Potion (RECIPE!)
 					},
 				}),
 			}),
@@ -383,7 +385,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(537, {	-- Nexus-Prince Shaffar
 						["creatureID"] = 18344,
 						["groups"] = {
-							ach(671),	-- Heroic: Mana-Tombs
+							ach(671, {	-- Heroic: Mana-Tombs
+								["timeline"] = { "added 3.0.1" },
+							}),
 							ach(5071, {	-- Heroic: Mana-Tombs Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),
@@ -422,18 +426,11 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(28490),	-- Shaffar's Wrappings
 							i(33835),	-- Shaffar's Wondrous Amulet
-							i(22921),	-- Recipe: Major Frost Protection Potion
+							i(22921),	-- Recipe: Major Frost Protection Potion (RECIPE!)
 						},
 					}),
 				},
 			}),
-			-- #if AFTER 6.2.3.20601
-			d(TIMEWALKING_DUNGEON, {
-				["sym"] = {	-- link in Timewalking content
-					{"sub", "tw_instance", 250 },	-- this instance version of timewalking
-				},
-			}),
-			-- #endif
 		},
 	})),
 })));

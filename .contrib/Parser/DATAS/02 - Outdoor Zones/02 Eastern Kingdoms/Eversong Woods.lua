@@ -11,6 +11,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\achievement_zone_eversongwoods",
 		-- #endif
+		["timeline"] = { "added 2.0.1.6180" },
 		["groups"] = {
 			m(SUNSTRIDER_ISLE, {
 				["lore"] = "Sunstrider Isle is an island located in northwestern Eversong Woods. After the Third War, no elf was alive on the isle. It was through here that the red dragon Korialstrasz flew over when Prince Kael'thas destroyed the corrupted Sunwell. By the year 25, the isle was reclaimed and thriving.",
@@ -381,6 +382,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 38, 21, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
+							["isBreadcrumb"] = true,
 							["lvl"] = lvlsquish(1, 1, 1),
 						}),
 						q(9392, {	-- Rogue Training
@@ -849,8 +851,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					459,	-- Cat (PET!)
 					419,	-- Small Frog (PET!)
@@ -860,8 +861,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				["groups"] = {
 					pet(460),	-- Ruby Sapling (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, {
 				exploration(3472, "256:256:669:228"),	-- Azurebreeze Coast [TBC]
@@ -1230,7 +1230,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16280,	-- Perascamin <Riding Trainer>
 					["coord"] = { 61.2, 54, EVERSONG_WOODS },
 					["description"] = "This quest is automatically offered to Blood Elves upon reaching the specified level.",
-					["timeline"] = { "added 5.2.0" },
+					["timeline"] = { "added 5.2.0", REMOVED_10_1_5 },
 					["races"] = { BLOODELF },
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
@@ -1837,7 +1837,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 49.0, 47.0, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(27685),	-- Recipe: Lynx Steak
+						i(27685),	-- Recipe: Lynx Steak (RECIPE!)
 					},
 				}),
 				n(50484, {	-- Magistrix Nizara <Silvermoon City Quartermaster>
@@ -1949,13 +1949,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 })));
 
 -- #if AFTER 4.0.3.13287
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(TBC_TIER, {
 		cl(MAGE, {
 			i(47102),	-- Manaweave Robe Mage Quest reward
 		}),
 	}),
-}));
+});
 -- #endif
 
 -- Remove the phase requirement from Sense Undead.

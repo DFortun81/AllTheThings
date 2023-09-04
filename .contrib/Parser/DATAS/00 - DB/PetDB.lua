@@ -1,15 +1,1023 @@
+-- This data is needed in environments that don't have Pet Journal.
+-- Parser will rip out the spellID for builds that support Pet Journal.
+local CompanionPetSpellIDToSpeciesID = {};
+local CompanionPetSpeciesIDToSpellID = {
+	[39] = 4055,	-- Mechanical Squirrel
+	[40] = 10673,	-- Bombay Cat
+	[41] = 10674,	-- Cornish Rex Cat
+	[42] = 10675,	-- Black Tabby Cat
+	[43] = 10676,	-- Orange Tabby Cat
+	[44] = 10677,	-- Siamese Cat
+	[45] = 10678,	-- Silver Tabby Cat
+	[46] = 10679,	-- White Kitten
+	[47] = 10680,	-- Cockatiel
+	[49] = 10682,	-- Hyacinth Macaw
+	[50] = 10683,	-- Green Wing Macaw
+	[51] = 10684,	-- Senegal
+	[52] = 10685,	-- Ancona Chicken
+	[55] = 10688,	-- Undercity Cockroach
+	[56] = 10695,	-- Dark Whelpling
+	[57] = 10696,	-- Azure Whelpling
+	[58] = 10697,	-- Crimson Whelpling
+	[59] = 10698,	-- Emerald Whelpling
+	[64] = 10703,	-- Wood Frog
+	[65] = 10704,	-- Tree Frog
+	[67] = 10706,	-- Hawk Owl
+	[68] = 10707,	-- Great Horned Owl
+	[70] = 10709,	-- Brown Prairie Dog
+	[72] = 10711,	-- Snowshoe Rabbit
+	[74] = 10713,	-- Albino Snake
+	[75] = 10714,	-- Black Kingsnake
+	[77] = 10716,	-- Brown Snake
+	[78] = 10717,	-- Crimson Snake
+	[83] = 12243,	-- Mechanical Chicken
+	[84] = 13548,	-- Westfall Chicken
+	[85] = 15048,	-- Pet Bombling
+	[86] = 15049,	-- Lil' Smoky
+	[87] = 15067,	-- Sprite Darter Hatchling
+	[89] = 15999,	-- Worg Pup
+	[90] = 16450,	-- Smolderweb Hatchling
+	[92] = 17707,	-- Panda Cub
+	[93] = 17708,	-- Mini Diablo
+	[94] = 17709,	-- Zergling
+	[95] = 19772,	-- Lifelike Toad
+	[106] = 23811,	-- Jubling
+	[107] = 24696,	-- Murky
+	[111] = 24988,	-- Lurky
+	[114] = 25162,	-- Disgusting Oozeling
+	[115] = 172695,	-- Land Shark
+	[116] = 26010,	-- Tranquil Mechanical Yeti
+	[117] = 26045,	-- Tiny Snowman
+	[118] = 26529,	-- Winter Reindeer
+	[119] = 26533,	-- Father Winter's Helper
+	[120] = 26541,	-- Winter's Little Helper
+	[121] = 27241,	-- Gurky
+	[122] = 27570,	-- Peddlefeet
+	[124] = 28505,	-- Poley
+	[125] = 28738,	-- Speedy
+	[126] = 28739,	-- Mr. Wiggles
+	[127] = 28740,	-- Whiskers the Rat
+	[128] = 28871,	-- Spirit of Summer
+	[130] = 30156,	-- Hippogryph Hatchling
+	[131] = 32298,	-- Netherwhelp
+	[132] = 33050,	-- Magical Crawdad
+	[136] = 35156,	-- Mana Wyrmling
+	[137] = 35239,	-- Brown Rabbit
+	[138] = 35907,	-- Blue Moth
+	[139] = 35909,	-- Red Moth
+	[140] = 35910,	-- Yellow Moth
+	[141] = 35911,	-- White Moth
+	[142] = 36027,	-- Golden Dragonhawk Hatchling
+	[143] = 36028,	-- Red Dragonhawk Hatchling
+	[144] = 36029,	-- Silver Dragonhawk Hatchling
+	[145] = 36031,	-- Blue Dragonhawk Hatchling
+	[146] = 36034,	-- Firefly
+	[149] = 39181,	-- Miniwing
+	[153] = 39709,	-- Wolpertinger
+	[155] = 40405,	-- Lucky
+	[156] = 40549,	-- Bananas
+	[157] = 40613,	-- Willy
+	[158] = 40614,	-- Egbert
+	[159] = 40634,	-- Peanut
+	[160] = 40990,	-- Stinker
+	[162] = 42609,	-- Sinister Squashling
+	[163] = 43697,	-- Toothy
+	[164] = 43698,	-- Muckbreath
+	[165] = 43918,	-- Mojo
+	[166] = 44369,	-- Pint-Sized Pink Pachyderm
+	[167] = 45082,	-- Tiny Sporebat
+	[168] = 45125,	-- Rocket Chicken
+	[169] = 45127,	-- Dragon Kite
+	[170] = 45174,	-- Golden Pig
+	[171] = 45175,	-- Silver Pig
+	[172] = 45890,	-- Searing Scorchling
+	[173] = 46425,	-- Snarly
+	[174] = 46426,	-- Chuck
+	[175] = 46599,	-- Phoenix Hatchling
+	[179] = 48406,	-- Spirit of Competition
+	[180] = 48408,	-- Essence of Competition
+	[183] = 49964,	-- Ethereal Soul-Trader
+	[186] = 51716,	-- Nether Ray Fry
+	[187] = 51851,	-- Vampiric Batling
+	[188] = 52615,	-- Frosty
+	[189] = 53082,	-- Mini Tyrael
+	[190] = 53316,	-- Ghostly Skull
+	[191] = 54187,	-- Clockwork Rocket Bot
+	[192] = 55068,	-- Mr. Chilly
+	[193] = 59250,	-- Giant Sewer Rat
+	[194] = 61348,	-- Tickbird Hatchling
+	[195] = 61349,	-- White Tickbird Hatchling
+	[196] = 61350,	-- Proto-Drake Whelp
+	[197] = 61351,	-- Cobra Hatchling
+	[198] = 61357,	-- Pengu
+	[199] = 61472,	-- Kirin Tor Familiar
+	[200] = 61725,	-- Spring Rabbit
+	[201] = 61773,	-- Plump Turkey
+	[202] = 61855,	-- Baby Blizzard Bear
+	[203] = 61991,	-- Little Fawn
+	[204] = 62491,	-- Teldrassil Sproutling
+	[205] = 62508,	-- Dun Morogh Cub
+	[206] = 62510,	-- Tirisfal Batling
+	[207] = 62513,	-- Durotar Scorpion
+	[209] = 62516,	-- Elwynn Lamb
+	[210] = 62542,	-- Mulgore Hatchling
+	[211] = 62561,	-- Strand Crawler
+	[212] = 62562,	-- Ammen Vale Lashling
+	[213] = 62564,	-- Enchanted Broom
+	[214] = 62609,	-- Argent Squire
+	[215] = 62674,	-- Mechanopeep
+	[216] = 62746,	-- Argent Gruntling
+	[217] = 63318,	-- Murkimus the Gladiator
+	[218] = 63712,	-- Sen'jin Fetish
+	[220] = 65046,	-- Withers
+	[224] = 65358,	-- Calico Cat
+	[225] = 65381,	-- Curious Oracle Hatchling
+	[226] = 65382,	-- Curious Wolvar Pup
+	[227] = 65682,	-- Warbot
+	[228] = 66030,	-- Grunty
+	[229] = 66096,	-- Shimmering Wyrmling
+	[231] = 66520,	-- Jade Tiger
+	[232] = 67413,	-- Darting Hatchling
+	[233] = 67414,	-- Deviate Hatchling
+	[234] = 67415,	-- Gundrak Hatchling
+	[235] = 67416,	-- Leaping Hatchling
+	[236] = 67417,	-- Obsidian Hatchling
+	[237] = 67418,	-- Ravasaur Hatchling
+	[238] = 67419,	-- Razormaw Hatchling
+	[239] = 67420,	-- Razzashi Hatchling
+	[240] = 67527,	-- Onyx Panther
+	[241] = 68767,	-- Tuskarr Kite
+	[242] = 68810,	-- Spectral Tiger Cub
+	[243] = 69002,	-- Onyxian Whelpling
+	[244] = 69452,	-- Core Hound Pup
+	[245] = 69535,	-- Gryphon Hatchling
+	[246] = 69536,	-- Wind Rider Cub
+	[247] = 69539,	-- Zipao Tiger
+	[248] = 69541,	-- Pandaren Monk
+	[249] = 69677,	-- Lil' K.T.
+	[250] = 70613,	-- Perky Pug
+	[251] = 71840,	-- Toxic Wasteling
+	[253] = 74932,	-- Frigid Frostling
+	[254] = 75134,	-- Blue Clockwork Rocket Bot
+	[255] = 75613,	-- Celestial Dragon
+	[256] = 75906,	-- Lil' XT
+	[257] = 75936,	-- Murkimus the Gladiator
+	[258] = 78381,	-- Mini Thor
+	[259] = 78683,	-- Blue Mini Jouster
+	[260] = 78685,	-- Gold Mini Jouster
+	[261] = 81937,	-- Personal World Destroyer
+	[262] = 82173,	-- De-Weaponized Mechanical Companion
+	[264] = 84263,	-- Crawling Claw
+	[265] = 84492,	-- Pebble
+	[266] = 84752,	-- Fossilized Hatchling
+	[267] = 93836,	-- Enchanted Lantern
+	[268] = 87344,	-- Lil' Deathwing
+	[270] = 89039,	-- Dark Phoenix Hatchling
+	[271] = 89472,	-- Rustberg Gull
+	[272] = 89670,	-- Armadillo Pup
+	[277] = 90523,	-- Clockwork Gnome
+	[278] = 90637,	-- Fox Kit
+	[279] = 91343,	-- Tiny Shale Spider
+	[280] = 92395,	-- Guild Page
+	[281] = 92396,	-- Guild Page
+	[282] = 92397,	-- Guild Herald
+	[283] = 92398,	-- Guild Herald
+	[285] = 93624,	-- Landro's Lil' XT
+	[286] = 93739,	-- Mr. Grubbs
+	[287] = 93813,	-- Tiny Flamefly
+	[289] = 93817,	-- Scooter the Snail
+	[291] = 93823,	-- Singing Sunflower
+	[292] = 93837,	-- Magic Lamp
+	[293] = 93838,	-- Elementium Geode
+	[294] = 94070,	-- Deathy
+	[296] = 95786,	-- Moonkin Hatchling
+	[297] = 95787,	-- Lil' Ragnaros
+	[298] = 95909,	-- Moonkin Hatchling
+	[301] = 96571,	-- Panther Cub
+	[302] = 96817,	-- Landro's Lichling
+	[303] = 96819,	-- Nightsaber Cub
+	[306] = 97638,	-- Winterspring Cub
+	[307] = 97779,	-- Lashtail Hatchling
+	[308] = 98079,	-- Legs
+	[309] = 98571,	-- Pterrordax Hatchling
+	[310] = 98587,	-- Voodoo Figurine
+	[311] = 98736,	-- Guardian Cub
+	[316] = 99578,	-- Cenarion Hatchling
+	[317] = 99663,	-- Hyjal Bear Cub
+	[318] = 99668,	-- Crimson Lasher
+	[319] = 100330,	-- Feline Familiar
+	[320] = 100576,	-- Lil' Tarecgosa
+	[321] = 100684,	-- Creepy Crate
+	[323] = 100970,	-- Nuts
+	[325] = 101424,	-- Brilliant Kaliri
+	[328] = 101493,	-- Purple Puffer
+	[329] = 101606,	-- Murkablo
+	[330] = 101733,	-- Darkmoon Monkey
+	[331] = 101986,	-- Alliance Balloon
+	[332] = 101989,	-- Horde Balloon
+	[333] = 102317,	-- Gregarious Grell
+	[335] = 103074,	-- Darkmoon Turtle
+	[336] = 103076,	-- Darkmoon Balloon
+	[337] = 103125,	-- Lumpy
+	[338] = 103544,	-- Darkmoon Tonk
+	[339] = 103549,	-- Darkmoon Zeppelin
+	[340] = 103588,	-- Sea Pony
+	[341] = 104047,	-- Lunar Lantern
+	[342] = 104049,	-- Festival Lantern
+	[343] = 105122,	-- Darkmoon Cub
+	[344] = 105228,	-- Green Balloon
+	[345] = 105229,	-- Yellow Balloon
+	[346] = 105633,	-- Fetish Shaman
+	[347] = 110029,	-- Soul of the Aspects
+	[348] = 112994,	-- Eye of the Legion
+	[381] = 118414,	-- Porcupette
+	[382] = 231215,	-- Sun Darter Hatchling
+	[384] = 118419,	-- Otter Pup
+	--[462] = 89472,	-- Jacob the Test Seagull [NYI]
+	[629] = 123212,	-- Shore Crawler
+	[630] = 123214,	-- Gilnean Raven
+	[650] = 123778,	-- Terrible Turnip
+	[652] = 124000,	-- Tiny Goldfish
+	[665] = 102353,	-- Sand Scarab
+	[666] = 249870,	-- Micronax
+	[671] = 124660,	-- Lucky Quilen Cub
+	[757] = 23531,	-- Tiny Green Dragon
+	[758] = 23530,	-- Tiny Red Dragon
+	[792] = 127816,	-- Jade Crane Chick
+	[802] = 127813,	-- Thundering Serpent Hatchling
+	[820] = 127815,	-- Singing Cricket
+	[821] = 124152,	-- Feral Vermling
+	[834] = 126251,	-- Grinder
+	[835] = 126247,	-- Hopling
+	[836] = 126249,	-- Aqua Strider
+	[844] = 126885,	-- Mechanical Pandaren Dragonling
+	[845] = 120501,	-- Jade Owl
+	[846] = 120507,	-- Sapphire Cub
+	[847] = 122748,	-- Fishy
+	[848] = 114090,	-- Darkmoon Rabbit
+	[849] = 127008,	-- Chi-Ji Kite
+	[850] = 127006,	-- Yu'lon Kite
+	[855] = 130759,	-- Venus
+	[856] = 130726,	-- Jade Tentacle
+	[868] = 131590,	-- Pandaren Water Spirit
+	[903] = 131650,	-- Baneling
+	[1039] = 132574,	-- Imperial Moth
+	[1040] = 132580,	-- Imperial Silkworm
+	[1042] = 123784,	-- Red Cricket
+	[1061] = 132762,	-- Darkmoon Hatchling
+	[1063] = 132789,	-- Darkmoon Eye
+	[1073] = 28487,	-- Terky
+	[1117] = 134538,	-- Cinder Kitten
+	[1124] = 134892,	-- Pandaren Fire Spirit
+	[1125] = 134894,	-- Pandaren Air Spirit
+	[1126] = 134895,	-- Pandaren Earth Spirit
+	[1127] = 132759,	-- Spectral Cub
+	[1142] = 135156,	-- Clock'em
+	[1143] = 135254,	-- Giant Bone Spider
+	[1144] = 135255,	-- Fungal Abomination
+	[1145] = 135256,	-- Mr. Bigglesworth
+	[1146] = 135257,	-- Stitched Pup
+	[1147] = 135258,	-- Harbinger of Flame
+	[1149] = 135259,	-- Corefire Imp
+	[1150] = 135261,	-- Ashstone Core
+	[1151] = 135263,	-- Untamed Hatchling
+	[1152] = 135264,	-- Chrominius
+	[1153] = 135265,	-- Death Talon Whelpguard
+	[1154] = 135266,	-- Viscidus Globule
+	[1155] = 135267,	-- Anubisath Idol
+	[1156] = 135268,	-- Mini Mindslayer
+	[1168] = 25018,	-- Murki
+	[1174] = 136484,	-- Gusting Grimoire
+	[1176] = 137568,	-- Red Panda
+	[1177] = 137977,	-- Living Sandling
+	[1178] = 138082,	-- Sunreaver Micro-Sentry
+	[1180] = 138087,	-- Zandalari Kneebiter
+	[1183] = 138161,	-- Son of Animus
+	[1184] = 138287,	-- Stunted Direhorn
+	[1185] = 138285,	-- Spectral Porcupette
+	[1196] = 138380,	-- Sunfur Panda
+	[1197] = 138381,	-- Snowy Panda
+	[1198] = 138382,	-- Mountain Panda
+	[1200] = 138825,	-- Pygmy Direhorn
+	[1201] = 138913,	-- Spawn of G'nathus
+	[1202] = 139148,	-- Ji-Kun Hatchling
+	[1204] = 138824,	-- Pierre
+	[1205] = 139153,	-- Direhorn Runt
+	[1206] = 139361,	-- Tiny Red Carp
+	[1207] = 139362,	-- Tiny Blue Carp
+	[1208] = 139363,	-- Tiny Green Carp
+	[1209] = 139365,	-- Tiny White Carp
+	[1211] = 139932,	-- Zandalari Anklerender
+	[1212] = 139933,	-- Zandalari Footslasher
+	[1213] = 139934,	-- Zandalari Toenibbler
+	[1226] = 141433,	-- Lil' Bad Wolf
+	[1227] = 141434,	-- Menagerie Custodian
+	[1228] = 141435,	-- Netherspace Abyssal
+	[1229] = 141451,	-- Fiendish Imp
+	[1230] = 141436,	-- Tideskipper
+	[1231] = 141437,	-- Tainted Waveling
+	[1232] = 141446,	-- Coilfang Stalker
+	[1233] = 141447,	-- Pocket Reaver
+	[1234] = 141448,	-- Lesser Voidcaller
+	[1235] = 141449,	-- Phoenix Hawk Hatchling
+	[1236] = 141450,	-- Tito
+	[1237] = 141789,	-- Gahz'rooki
+	[1243] = 142028,	-- Living Fluid
+	[1244] = 142029,	-- Viscous Horror
+	[1245] = 142030,	-- Filthling
+	[1248] = 142880,	-- Blossoming Ancient
+	[1255] = 143637,	-- Zeradar
+	[1256] = 143703,	-- Rascal-Bot
+	[1257] = 143732,	-- Crafty
+	[1266] = 145696,	-- Xu-Fu, Cub of Xuen
+	[1276] = 144761,	-- Moon Moon
+	[1303] = 145697,	-- Chi-Chi, Hatchling of Chi-Ji
+	[1304] = 145698,	-- Yu'la, Broodling of Yu'lon
+	[1305] = 145699,	-- Zao, Calfling of Niuzao
+	[1320] = 147124,	-- Lil' Bling
+	[1322] = 148049,	-- Blackfuse Bombling
+	[1323] = 148046,	-- Ashleaf Spriteling
+	[1324] = 148068,	-- Ashwing Moth
+	[1325] = 148069,	-- Flamering Moth
+	[1326] = 148065,	-- Skywisp Moth
+	[1328] = 148050,	-- Ruby Droplet
+	[1329] = 148051,	-- Dandelion Frolicker
+	[1330] = 148052,	-- Death Adder Hatchling
+	[1331] = 148058,	-- Droplet of Y'Shaarj
+	[1332] = 148059,	-- Gooey Sha-ling
+	[1333] = 148060,	-- Jademist Dancer
+	[1334] = 148061,	-- Kovok
+	[1335] = 148551,	-- Ominous Flame
+	[1336] = 148063,	-- Skunky Alemental
+	[1337] = 148066,	-- Spineclaw Crab
+	[1338] = 148067,	-- Gulp Froglet
+	[1343] = 148373,	-- Bonkers
+	[1344] = 148427,	-- Vengeful Porcupette
+	[1345] = 148527,	-- Gu'chi Swarmling
+	[1346] = 148530,	-- Harmonious Porcupette
+	[1348] = 148552,	-- Jadefire Spirit
+	[1349] = 148567,	-- Rotten Little Helper
+	[1350] = 148684,	-- Sky Lantern
+	[1351] = 66175,	-- Macabre Marionette
+	[1363] = 149787,	-- Alterac Brew-Pup
+	[1364] = 149792,	-- Murkalot
+	[1365] = 149810,	-- Treasure Goblin
+	[1384] = 170267,	-- Hogs
+	[1386] = 155748,	-- Dread Hatchling
+	[1387] = 155838,	-- Iron Starlette
+	[1395] = 159296,	-- Lil' Leftovers
+	[1396] = 159581,	-- Crazy Carrot
+	--[1401] = 53082,	-- Tyri	[This is a Garrison Fight, not tameable]
+	--[1402] = 149810,	-- Puzzle	[This is a Garrison Fight, not tameable]
+	[1403] = 160403,	-- Mechanical Axebeak
+	[1410] = 161522,	-- Mechanical Training Dummy
+	[1411] = 161643,	-- Royal Peachick
+	[1412] = 162135,	-- Lifelike Mechanical Frostboar
+	[1416] = 164212,	-- Teroclaw Hatchling
+	[1426] = 166071,	-- Elekk Plushie
+	[1429] = 167389,	-- Autumnal Sproutling
+	[1430] = 167390,	-- Forest Sproutling
+	[1431] = 167392,	-- Kelp Sproutling
+	[1432] = 167394,	-- Nightshade Sproutling
+	[1433] = 167395,	-- Sassy Sproutling
+	[1434] = 167397,	-- Sun Sproutling
+	[1446] = 168668,	-- Meadowstomper Calf
+	[1448] = 168977,	-- Sea Calf
+	[1449] = 169220,	-- Deathwatch Hatchling
+	[1450] = 169666,	-- Draenei Micro Defender
+	[1451] = 169695,	-- Molten Corgi
+	[1453] = 223110,	-- River Calf
+	[1454] = 190036,	-- Murkidan
+	[1458] = 170286,	-- Bone Wasp
+	[1466] = 190035,	-- Brightpaw
+	[1467] = 170292,	-- Sky-Bo
+	[1471] = 170285,	-- Fruit Hunter
+	[1478] = 170774,	-- Syd the Squid
+	[1495] = 170280,	-- Ore Eater
+	[1511] = 171118,	-- Lovebird Hatchling
+	[1514] = 171222,	-- Mystical Spring Bouquet
+	[1515] = 170282,	-- Stonegrinder
+	[1516] = 171500,	-- Bush Chicken
+	[1517] = 171552,	-- Blazing Cindercrawler
+	[1518] = 171758,	-- Stout Alemental
+	[1521] = 171912,	-- Cursed Birman
+	[1523] = 171915,	-- Widget the Departed
+	[1524] = 170269,	-- Netherspawn, Spawn of Netherspawn
+	[1530] = 170274,	-- Frostwolf Ghostpup
+	[1531] = 172632,	-- Ancient Nest Guardian
+	[1532] = 170270,	-- Ikky
+	[1533] = 172998,	-- Lanticore Spawnling
+	[1536] = 173532,	-- Zangar Spore
+	[1537] = 173542,	-- Crimson Spore
+	[1538] = 173543,	-- Umbrafen Spore
+	[1539] = 173544,	-- Seaborne Spore
+	[1540] = 173547,	-- Brilliant Spore
+	[1541] = 170273,	-- Hydraling
+	[1542] = 170281,	-- Frostwolf Pup
+	[1543] = 177216,	-- Pygmy Cow
+	[1544] = 170268,	-- Hatespark the Tiny
+	[1545] = 170291,	-- Firewing
+	[1546] = 170289,	-- Stormwing
+	[1563] = 10699,	-- Bronze Whelpling
+	[1564] = 170272,	-- Doom Bloom
+	[1565] = 170288,	-- Mechanical Scorpid
+	[1566] = 176137,	-- Everbloom Peachick
+	[1567] = 176140,	-- Sentinel's Companion
+	[1568] = 170279,	-- Puddle Terror
+	[1569] = 170276,	-- Soul of the Forge
+	[1570] = 177227,	-- Sunfire Kaliri
+	[1571] = 170287,	-- Albino River Calf
+	[1574] = 170277,	-- Son of Sethe
+	[1575] = 170271,	-- Sky Fry
+	[1576] = 170275,	-- Eye of Observation
+	[1577] = 187384,	-- Bloodthorn Hatchling
+	[1588] = 187383,	-- Dusty Sporewing
+	[1596] = 170283,	-- Veilwatcher Hatchling
+	[1597] = 177215,	-- Kaliri Hatchling
+	[1598] = 187376,	-- Glowing Sporebat
+	[1600] = 177238,	-- Bone Serpent
+	[1601] = 170278,	-- Servant of Demidos
+	[1602] = 177234,	-- Grommloc
+	[1603] = 177232,	-- Argi
+	[1604] = 177220,	-- Nethaera's Light
+	[1605] = 177233,	-- Trunks
+	[1622] = 179811,	-- Grotesque
+	[1623] = 179830,	-- Leviathan Hatchling
+	[1624] = 179831,	-- Abyssius
+	[1625] = 179832,	-- Fragment of Anger
+	[1626] = 179833,	-- Fragment of Suffering
+	[1627] = 179834,	-- Fragment of Desire
+	[1628] = 179835,	-- Sister of Temptation
+	[1629] = 179836,	-- Stinkrot
+	[1631] = 179837,	-- Hyjal Wisp
+	[1632] = 179838,	-- Sunblade Micro-Defender
+	[1633] = 179839,	-- Chaos Pup
+	[1634] = 179840,	-- Wretched Servant
+	[1635] = 179841,	-- K'ute
+	[1636] = 179954,	-- Race MiniZep
+	[1639] = 181086,	-- Graves
+	--[1642] = 170272,	-- Salad	[This is a Garrison Fight, not tameable]
+	[1655] = 177223,	-- Slithershock Elver
+	[1656] = 177218,	-- Young Talbuk
+	[1660] = 184480,	-- Fel Pup
+	[1661] = 184481,	-- Lost Netherpup
+	[1662] = 184482,	-- Cinder Pup
+	[1663] = 187555,	-- Periwinkle Calf
+	[1664] = 185055,	-- Nightmare Bell
+	[1665] = 185591,	-- Ghostshell Crab
+	[1666] = 185601,	-- Blorp
+	[1672] = 187532,	-- Corrupted Nest Guardian
+	[1687] = 188084,	-- Left Shark
+	[1688] = 188235,	-- Crusher
+	[1690] = 189357,	-- Shard of Cyrukh
+	[1691] = 190020,	-- Nibbles
+	[1692] = 190682,	-- Savage Cub
+	[1693] = 190681,	-- Blazing Firehawk
+	[1699] = 191071,	-- Enchanted Cauldron
+	[1700] = 191072,	-- Enchanted Torch
+	[1701] = 191073,	-- Enchanted Pen
+	[1705] = 186299,	-- Grumpy
+	[1706] = 191425,	-- Ashmaw Cub
+	[1711] = 193680,	-- Skyhorn Nestling
+	[1715] = 194393,	-- Nightwatch Swooper
+	[1716] = 210669,	-- Fledgling Warden Owl
+	[1717] = 210671,	-- Extinguished Eye
+	[1718] = 210672,	-- Hateful Eye
+	[1719] = 210673,	-- Eye of Inquisition
+	[1720] = 193388,	-- Emmigosa
+	[1721] = 193514,	-- Stormborne Whelpling
+	[1722] = 210674,	-- Dream Whelpling
+	[1723] = 210675,	-- Nightmare Whelpling
+	[1725] = 191967,	-- Grumpling
+	[1727] = 194357,	-- Nursery Spider
+	[1751] = 193279,	-- Son of Goredome
+	[1752] = 193368,	-- Crispin
+	[1753] = 193434,	-- Bleakwater Jelly
+	[1754] = 210677,	-- Sewer-Pipe Jelly
+	[1755] = 194330,	-- Plump Jelly
+	[1756] = 210678,	-- Ridgeback Piglet
+	[1757] = 210679,	-- Brown Piglet
+	[1758] = 210680,	-- Black Piglet
+	[1759] = 210681,	-- Thaumaturgical Piglet
+	[1760] = 194294,	-- Fel Piglet
+	[1764] = 193572,	-- Energized Manafiend
+	[1765] = 193589,	-- Empyreal Manafiend
+	[1766] = 193588,	-- Empowered Manafiend
+	[1777] = 193943,	-- Broot
+	[1802] = 195368,	-- Fetid Waveling
+	[1803] = 195369,	-- Thistleleaf Adventurer
+	[1804] = 195370,	-- Risen Saber Kitten
+	[1805] = 210682,	-- Alarm-o-Bot
+	[1806] = 210683,	-- Knockoff Blingtron
+	[1808] = 210691,	-- Leyline Broodling
+	[1828] = 204148,	-- Baby Winston
+	[1884] = 210694,	-- Baby Elderhorn
+	[1885] = 210695,	-- Sunborne Val'kyr
+	[1886] = 210696,	-- Trigger
+	[1887] = 210697,	-- Wyrmy Tunkins
+	[1888] = 210698,	-- Celestial Calf
+	[1889] = 210699,	-- Felbat Pup
+	[1890] = 210701,	-- Corgi Pup
+	[1907] = 215560,	-- Pygmy Owl
+	[1911] = 217218,	-- Sting Ray Pup
+	[1918] = 221684,	-- Alliance Enthusiast
+	[1919] = 221683,	-- Horde Fanatic
+	[1920] = 221906,	-- Transmutant
+	[1921] = 221907,	-- Untethered Wyrmling
+	[1922] = 221908,	-- Lurking Owl Kitten
+	[1926] = 223027,	-- Hungering Claw
+	[1927] = 30152,	-- Ash'ana
+	[1928] = 223339,	-- Firebat Pup
+	[1929] = 223359,	-- Corgnelius
+	[1930] = 223409,	-- Lagan
+	[1931] = 224403,	-- Court Scribe
+	[1932] = 224536,	-- Nightmare Lasher
+	[1933] = 224786,	-- Nightmare Treant
+	[1934] = 225200,	-- Benax
+	[1936] = 225761,	-- Mischief
+	[1937] = 226682,	-- Wondrous Wisdomball
+	[1938] = 226813,	-- Rescued Fawn
+	[1939] = 227051,	-- Legionnaire Murky
+	[1940] = 227052,	-- Knight-Captain Murky
+	[1941] = 227093,	-- Snowfang
+	[1943] = 227113,	-- Noblegarden Bunny
+	[1952] = 229090,	-- Dreadmaw
+	[1953] = 229091,	-- Snobold Runt
+	[1954] = 229092,	-- Nerubian Swarmer
+	[1955] = 229093,	-- Magma Rageling
+	[1956] = 229094,	-- Ironbound Proto-Whelp
+	[1957] = 229095,	-- Runeforged Servitor
+	[1958] = 229096,	-- Sanctum Cub
+	[1959] = 229097,	-- Winter Rageling
+	[1960] = 229098,	-- Snaplasher
+	[1961] = 229099,	-- G0-R41-0N Ultratonk
+	[1962] = 229100,	-- Creeping Tentacle
+	[1963] = 229101,	-- Boneshard
+	[1964] = 229102,	-- Blood Boil
+	[1965] = 229103,	-- Blightbreath
+	[1966] = 229104,	-- Soulbroken Whelpling
+	[1967] = 229105,	-- Drudge Ghoul
+	[1968] = 229106,	-- Wicked Soul
+	[1969] = 229110,	-- Stardust
+	[1974] = 230073,	-- Snowfeather Hatchling
+	[1975] = 230074,	-- Direbeak Hatchling
+	[1976] = 230075,	-- Sharptalon Hatchling
+	[1977] = 230076,	-- Bloodgazer Hatchling
+	[1978] = 230443,	-- Dutiful Squire
+	[1979] = 230444,	-- Dutiful Gruntling
+	[1984] = 231017,	-- Albino Buzzard
+	[1997] = 232867,	-- Crackers
+	[1998] = 233331,	-- Everliving Spore
+	[1999] = 233333,	-- Cavern Moccasin
+	[2000] = 233335,	-- Young Venomfang
+	[2001] = 233647,	-- Dibbler
+	[2002] = 233649,	-- Naxxy
+	[2003] = 233650,	-- Hearthy
+	[2004] = 233805,	-- Trashy
+	[2017] = 234555,	-- Infinite Hatchling
+	[2018] = 234556,	-- Paradox Spirit
+	[2022] = 236285,	-- Tylarr Gronnden
+	[2035] = 237250,	-- Bloodbrood Whelpling
+	[2036] = 237251,	-- Frostbrood Whelpling
+	[2037] = 237252,	-- Vilebrood Whelpling
+	[2042] = 240064,	-- Scraps
+	[2046] = 240385,	-- Arne's Test Pet
+	[2047] = 240794,	-- Ban-Fu, Cub of Ban-Lu
+	[2048] = 241072,	-- Golden Retriever
+	[2049] = 242047,	-- Son of Skum
+	[2050] = 243136,	-- Orphaned Felbat
+	[2051] = 243499,	-- Twilight
+	[2062] = 246105,	-- Shadow
+	[2063] = 247123,	-- Sneaky Marmot
+	[2065] = 247474,	-- Dig Rat
+	[2071] = 248025,	-- Bronze Proto-Whelp
+	[2072] = 248240,	-- Ageless Bronze Drake
+	[2077] = 251191,	-- Ghost Shark
+	[2078] = 253788,	-- Tinytron
+	[2079] = 253790,	-- Discarded Experiment
+	[2080] = 253799,	-- Rattlejaw
+	[2081] = 253805,	-- Twilight Clutch-Sister
+	[2082] = 253809,	-- Bound Stream
+	[2083] = 253813,	-- Faceless Minion
+	[2084] = 253816,	-- Zephyrian Prince
+	[2085] = 253818,	-- Drafty
+	[2086] = 253916,	-- Blazehound
+	[2087] = 253918,	-- Cinderweb Recluse
+	[2088] = 253924,	-- Surger
+	[2089] = 253925,	-- Infernal Pyreclaw
+	[2090] = 253926,	-- Faceless Mindlasher
+	[2091] = 253927,	-- Corrupted Blood
+	[2092] = 253928,	-- Unstable Tendril
+	[2093] = 253929,	-- Amalgam of Destruction
+	[2113] = 254255,	-- Felclaw Marsuul
+	[2115] = 254196,	-- Cross Gazer
+	[2116] = 254197,	-- Orphaned Marsuul
+	[2117] = 254271,	-- Fel Lasher
+	[2118] = 254295,	-- Docile Skyfin
+	[2119] = 254296,	-- Fel-Afflicted Skyfin
+	[2120] = 254297,	-- Grasping Manifestation
+	[2121] = 254298,	-- Fossorial Bile Larva
+	[2135] = 254749,	-- Rebellious Imp
+	[2136] = 254763,	-- Uuna
+	[2143] = 255702,	-- Tottle
+	[2144] = 256010,	-- REUSE
+	[2146] = 257603,	-- Perculia's Peculiar Parrot
+	[2157] = 259758,	-- Dart
+	[2163] = 261755,	-- Silithid Mini-Tank
+	[2165] = 264001,	-- Francois
+	[2184] = 272771,	-- Whomper
+	[2185] = 272772,	-- Cap'n Crackers
+	[2186] = 273159,	-- Spawn of Merektha
+	[2187] = 273184,	-- Filthy Slime
+	[2188] = 273195,	-- Poda
+	[2189] = 273215,	-- Smoochums
+	[2190] = 273839,	-- Guardian Cobra Hatchling
+	[2192] = 273869,	-- Vengeful Chicken
+	[2196] = 274202,	-- Lil' Tika
+	[2197] = 274348,	-- Direhorn Hatchling
+	[2198] = 274353,	-- Taptaf
+	[2199] = 274380,	-- Restored Revenant
+	[2201] = 274760,	-- Enchanted Tiki Mask
+	[2202] = 274776,	-- Miimii
+	[2352] = 277461,	-- Baa'l
+	[2401] = 279129,	-- Rooter
+	[2402] = 279171,	-- Brutus
+	[2403] = 279205,	-- Abyssal Eel
+	[2404] = 279206,	-- Seabreeze Bumblebee
+	[2405] = 279207,	-- Corlain Falcon
+	[2406] = 279208,	-- Drustvar Piglet
+	[2407] = 279209,	-- Frenzied Cottontail
+	[2408] = 279210,	-- Bilefang Skitterer
+	[2409] = 279211,	-- Greatwing Macaw
+	[2410] = 279212,	-- Mechanical Prairie Dog
+	[2411] = 279213,	-- Wicker Pup
+	[2412] = 279214,	-- Tiny Direhorn
+	[2413] = 279215,	-- Zandalari Shinchomper
+	[2414] = 279216,	-- Bloodfeaster Larva
+	[2415] = 279217,	-- Tragg the Curious
+	[2416] = 279218,	-- Lil' Ben'fon
+	[2417] = 279219,	-- Ranishu Runt
+	[2418] = 279220,	-- Child of Jani
+	[2419] = 279221,	-- Swamp Toad
+	[2420] = 279224,	-- Accursed Hexxer
+	[2421] = 279225,	-- Saurolisk Hatchling
+	[2422] = 279226,	-- Blue Flitter
+	[2423] = 279227,	-- Freshwater Pincher
+	[2424] = 279228,	-- Crimson Frog
+	[2425] = 279230,	-- Barnacled Hermit Crab
+	[2426] = 279231,	-- Sandstinger Wasp
+	[2427] = 279232,	-- Cou'pa
+	[2428] = 279233,	-- Carnivorous Lasher
+	[2429] = 279234,	-- Azeriti
+	[2430] = 279433,	-- Lost Platysaur
+	[2431] = 279576,	-- Dreadtick Leecher
+	[2432] = 279631,	-- Fuzzy Creepling
+	[2433] = 279638,	-- Aldrusian Sproutling
+	[2434] = 279643,	-- Voidwiggler
+	[2435] = 279657,	-- Teeny Titan Orb
+	[2436] = 279686,	-- Scabby
+	[2437] = 279723,	-- Ragepeep
+	[2438] = 279724,	-- Foulfeather
+	[2439] = 279365,	-- Azerite Puddle
+	[2440] = 279929,	-- Fozling
+	[2441] = 279930,	-- Squawkling
+	[2442] = 280157,	-- Bumbles
+	[2443] = 280185,	-- Lil' Siege Tower
+	[2444] = 280188,	-- Lil' War Machine
+	[2445] = 177244,	-- Scuttle
+	[2446] = 177237,	-- Sparkleshell Sandcrawler
+	[2447] = 177236,	-- Kindleweb Spiderling
+	[2448] = 177235,	-- Craghoof Kid
+	[2449] = 177231,	-- False Knucklebump
+	[2450] = 177230,	-- Tinder Pup
+	[2451] = 280332,	-- Bloodstone Tunneler
+	[2452] = 177241,	-- Poro
+	[2453] = 280335,	-- Juvenile Brineshell
+	[2454] = 280336,	-- Kunchong Hatchling
+	[2455] = 177243,	-- Captain Nibs
+	[2456] = 177242,	-- Barnaby
+	[2457] = 280337,	-- Coldlight Surfrunner
+	[2458] = 280334,	-- Muskflank Calfling
+	[2459] = 280333,	-- Snort
+	[2460] = 280338,	-- Voru'kar Leecher
+	[2461] = 177239,	-- Inky
+	[2462] = 177240,	-- Octopode Fry
+	[2463] = 177229,	-- Sandshell Chitterer
+	[2464] = 177228,	-- Deathsting Scorpid
+	[2465] = 177222,	-- Playful Frostkin
+	[2466] = 177225,	-- Giggling Flame
+	[2467] = 177221,	-- Mischievous Zephyr
+	[2468] = 177224,	-- Laughing Stonekin
+	[2469] = 177226,	-- Thistlebrush Bud
+	[2471] = 177219,	-- Littlehoof
+	[2472] = 177217,	-- Snapper
+	[2473] = 280331,	-- Sunscale Hatchling
+	[2474] = 280617,	-- Gearspring Hopper
+	[2475] = 280619,	-- Slippy
+	[2476] = 280618,	-- Bloated Bloodfeaster
+	[2477] = 279435,	-- Baby Crawg
+	[2478] = 280728,	-- Sir Snips
+	[2479] = 280727,	-- Bucketshell
+	[2480] = 281878,	-- Test Pet
+	[2482] = 283744,	-- Wolf Balloon
+	[2483] = 283741,	-- Murloc Balloon
+	[2484] = 283740,	-- Horse Balloon
+	[2525] = 285843,	-- Redridge Tarantula
+	[2526] = 286474,	-- Feathers
+	[2527] = 286483,	-- Child of Pa'ku
+	[2528] = 286484,	-- Spawn of Krag'wa
+	[2529] = 286482,	-- Thunder Lizard Runt
+	[2530] = 286514,	-- Mechantula
+	[2531] = 286574,	-- Mechanical Cockroach
+	[2532] = 286576,	-- Leper Rat
+	[2533] = 286582,	-- Alarm-O-Dog
+	[2534] = 286790,	-- Mini Spider Tank
+	[2535] = 286837,	-- Wicker Wraith
+	[2538] = 287997,	-- Dasher
+	[2539] = 288006,	-- Trecker
+	[2540] = 288009,	-- Tanzil
+	[2541] = 288054,	-- Proper Parrot
+	[2544] = 288486,	-- Darkshore Sentinel
+	[2545] = 288582,	-- Gust of Cyclarus
+	[2546] = 288592,	-- Detective Ray
+	[2547] = 288595,	-- Hydrath Droplet
+	[2548] = 288597,	-- Everburning Treant
+	[2549] = 288598,	-- Void Jelly
+	[2550] = 288600,	-- Zur'aj the Depleted
+	[2551] = 288867,	-- Baby Stonehide
+	[2552] = 288868,	-- Leatherwing Screecher
+	[2553] = 288870,	-- Rotting Ghoul
+	[2554] = 288875,	-- Needleback Pup
+	[2555] = 288890,	-- Albino Duskwatcher
+	[2556] = 288889,	-- Shadefeather Hatchling
+	[2557] = 288895,	-- Firesting Buzzer
+	[2558] = 288901,	-- Lord Woofington
+	[2559] = 288910,	-- Tonguelasher
+	[2560] = 288914,	-- Scritches
+	[2561] = 288916,	-- Thunderscale Whelpling
+	[2562] = 288919,	-- Crimson Octopode
+	[2563] = 289359,	-- Nightwreathed Watcher
+	[2564] = 289604,	-- Rebuilt Gorilla Bot
+	[2565] = 289605,	-- Rebuilt Mechanical Spider
+	[2566] = 289606,	-- Albatross Hatchling
+	[2567] = 289622,	-- Crimson Bat Pup
+	[2568] = 289629,	-- Cobalt Raven
+	[2569] = 289633,	-- Violet Abyssal Eel
+	[2575] = 291203,	-- Mr. Crabs
+	[2576] = 291214,	-- Beakbert
+	[2577] = 291215,	-- Froglet
+	[2578] = 291223,	-- Scaley
+	[2579] = 291513,	-- Stoneclaw
+	[2580] = 291515,	-- Wayward Spirit
+	[2581] = 291517,	-- Comet
+	[2582] = 291533,	-- Baoh-Xi
+	[2583] = 291537,	-- Azure Windseeker
+	[2584] = 291547,	-- Spirit of the Spring
+	[2585] = 291548,	-- Kor'thik Swarmling
+	[2586] = 291549,	-- Amberglow Stinger
+	[2587] = 291553,	-- Spawn of Garalon
+	[2589] = 291556,	-- Living Amber
+	[2590] = 291560,	-- Ravenous Prideling
+	[2591] = 291561,	-- Happiness
+	[2621] = 294206,	-- Lil' Nefarian
+	[2622] = 294211,	-- Jingles
+	[2623] = 294231,	-- Dottie
+	[2638] = 300387,	-- Minimancer
+	[2680] = 301015,	-- Zanj'ir Poker
+	[2681] = 301042,	-- Murgle
+	[2682] = 301043,	-- Necrofin Tadpole
+	[2683] = 301020,	-- Kelpfin
+	[2684] = 301021,	-- Glittering Diamondshell
+	[2685] = 301022,	-- Sandclaw Nestseeker
+	[2686] = 301023,	-- Pearlescent Glimmershell
+	[2687] = 301024,	-- Lustrous Glimmershell
+	[2688] = 301025,	-- Brilliant Glimmershell
+	[2689] = 301026,	-- Chitterspine Needler
+	[2690] = 301027,	-- Caverndark Nightmare
+	[2691] = 301028,	-- Chitterspine Devourer
+	[2692] = 301029,	-- Lightless Ambusher
+	[2693] = 301030,	-- Spawn of Nalaada
+	[2694] = 301031,	-- Mindlost Bloodfrenzy
+	[2695] = 301032,	-- Daggertooth Frenzy
+	[2696] = 301033,	-- Nameless Octopode
+	[2697] = 301034,	-- Amethyst Softshell
+	[2698] = 301035,	-- Prismatic Softshell
+	[2699] = 301036,	-- Damplight Slug
+	[2700] = 301037,	-- Wriggler
+	[2701] = 301038,	-- Seafury
+	[2702] = 301039,	-- Stormwrath
+	[2703] = 301040,	-- Sandkeep
+	[2704] = 301041,	-- Scalebrood Hydra
+	[2706] = 301044,	-- Brinestone Algan
+	[2707] = 301045,	-- Budding Algan
+	[2708] = 301046,	-- Coral Lashling
+	[2709] = 301047,	-- Skittering Eel
+	[2710] = 301048,	-- Drowned Hatchling
+	[2711] = 301049,	-- Golden Snorf
+	[2712] = 301050,	-- Snowsoft Nibbler
+	[2713] = 301051,	-- Mustyfur Snooter
+	[2714] = 301052,	-- OOX-35/MG
+	[2715] = 301053,	-- Lost Robogrip
+	[2716] = 301054,	-- Utility Mechanoclaw
+	[2717] = 301055,	-- Microbot XD
+	[2718] = 301056,	-- Microbot 8D
+	[2719] = 301136,	-- Bonebiter
+	[2720] = 301137,	-- Arachnoid Skitterbot
+	[2721] = 301162,	-- Echoing Oozeling
+	[2747] = 301985,	-- Gruesome Belcher
+	[2748] = 301992,	-- Ziggy
+	[2749] = 301996,	-- Crypt Fiend
+	[2750] = 302003,	-- Shrieker
+	[2753] = 303023,	-- Spraybot 0D
+	[2754] = 300367,	-- Ghostly Whelpling
+	[2755] = 300934,	-- Adventurous Hopling
+	[2756] = 303608,	-- Irradiated Elementaling
+	[2757] = 294275,	-- Slimy Otter
+	[2758] = 294278,	-- Slimy Eel
+	[2760] = 294276,	-- Slimy Octopode
+	[2761] = 294277,	-- Slimy Fangtooth
+	[2762] = 294279,	-- Slimy Darkhunter
+	[2763] = 294280,	-- Slimy Hermit Crab
+	[2765] = 294274,	-- Slimy Sea Slug
+	[2766] = 303784,	-- Armored Vaultbot
+	[2767] = 303899,	-- Burnout
+	[2776] = 307264,	-- Rikki
+	[2777] = 307654,	-- Gillvanas
+	[2778] = 307655,	-- Finduin
+	[2779] = 308067,	-- Anima Wyrmling
+	[2780] = 308369,	-- Daisy
+	[2792] = 309516,	-- Papi
+	[2793] = 309519,	-- Sunsoaked Flitter
+	[2794] = 309522,	-- Crimson Skipper
+	[2795] = 311289,	-- Jenafur
+	[2796] = 312029,	-- Void-Scarred Toad
+	[2797] = 312030,	-- Void-Scarred Pup
+	[2798] = 312833,	-- Plagueborn Slime
+	[2832] = 315221,	-- Muar
+	[2833] = 315225,	-- Void-Scarred Anubisath
+	[2834] = 315229,	-- Aqir Hivespawn
+	[2835] = 315231,	-- Ra'kim
+	[2836] = 315270,	-- Eye of Corruption
+	[2837] = 315285,	-- Gloop
+	[2838] = 315290,	-- C'Thuffer
+	[2839] = 315297,	-- Void-Scarred Hare
+	[2840] = 315298,	-- Void-Scarred Cat
+	[2841] = 315301,	-- Void-Scarred Rat
+	[2842] = 315302,	-- Anomalus
+	[2843] = 315303,	-- Void-Scarred Beetle
+	[2844] = 315304,	-- Reek
+	[2845] = 315339,	-- K'uddly
+	[2846] = 315353,	-- Corrupted Tentacle
+	[2847] = 315355,	-- Rotbreath
+	[2848] = 315360,	-- Aqir Tunneler
+	[2849] = 315363,	-- Pygmy Camel
+	[2850] = 315367,	-- Cursed Dune Watcher
+	[2851] = 315370,	-- Wicked Lurker
+	[2852] = 315371,	-- Jade Defender
+	[2853] = 315372,	-- Windfeather Chick
+	[2868] = 316629,	-- Experiment 13
+	[2869] = 316628,	-- Tinyclaw
+	[2870] = 316627,	-- Wailing Lasher
+	[2872] = 318300,	-- Shadowbarb Hatchling
+	[2878] = 318876,	-- Renny
+	[2888] = 329900,	-- Glimr
+	[2889] = 330997,	-- PHA7-YNX
+	[2891] = 333794,	-- Blushing Spiderling
+	[2892] = 333796,	-- Bound Lightspawn
+	[2893] = 333797,	-- Animated Tome
+	[2894] = 333800,	-- Burdened Soul
+	[2896] = 333799,	-- Primordial Bogling
+	[2897] = 333795,	-- Wrathling
+	[2898] = 333802,	-- Raw Emotion
+	[2899] = 333804,	-- Court Messenger
+	[2900] = 333819,	-- Dal
+	[2901] = 333803,	-- Trapped Stonefiend
+	[2903] = 333865,	-- Crimson Dredwing Pup
+	[2904] = 333868,	-- Violet Dredwing Pup
+	[2905] = 334160,	-- Dodger
+	[2907] = 334159,	-- Rocky
+	[2908] = 334158,	-- Chirpy Valeshrieker
+	[2909] = 334157,	-- Cloudfeather Fledgling
+	[2910] = 334156,	-- Floofa
+	[2911] = 334155,	-- Amber Glitterwing
+	[2912] = 334154,	-- Dusty Sporeflutterer
+	[2913] = 334153,	-- Fuzzy Shimmermoth
+	[2914] = 334151,	-- Starry Dreamfoal
+	[2915] = 334150,	-- Willowbreeze
+	[2916] = 334149,	-- Hungry Burrower
+	[2917] = 334146,	-- Gloober, as G'huun
+	[2918] = 334145,	-- Grubby
+	[2920] = 334143,	-- Gorm Needler
+	[2921] = 334142,	-- Gorm Harrier
+	[2922] = 334141,	-- Devouring Animite
+	[2923] = 334139,	-- Pearlwing Heron
+	[2925] = 334789,	-- Golden Cloudfeather
+	[2928] = 334987,	-- Helpful Glimmerfly
+	[2931] = 334798,	-- Brightscale Hatchling
+	[2932] = 335050,	-- Silvershell Snapper
+	[2933] = 334796,	-- Sable
+	[2934] = 335053,	-- Goldenpaw Kit
+	[2935] = 335056,	-- Purity
+	[2938] = 335076,	-- Gilded Wader
+	[2940] = 335083,	-- Devoured Wader
+	[2941] = 335085,	-- Indigo
+	[2942] = 335087,	-- Spirited Skyfoal
+	[2944] = 335698,	-- Oonar's Arm
+	[2945] = 335753,	-- Corpulent Bonetusk
+	[2946] = 335755,	-- Pernicious Bonetusk
+	[2947] = 335762,	-- Luminous Webspinner
+	[2948] = 335764,	-- Boneweave Hatchling
+	[2949] = 335765,	-- Skittering Venomspitter
+	[2952] = 335966,	-- Bubbling Pustule
+	[2953] = 335969,	-- Shy Melvin
+	[2954] = 335972,	-- Plaguelouse Larva
+	[2955] = 335974,	-- Corpselouse Larva
+	[2956] = 335977,	-- Feasting Larva
+	[2957] = 335979,	-- Writhing Spine
+	[2958] = 335980,	-- Backbone
+	[2959] = 336020,	-- Micromancer
+	[2960] = 336021,	-- Invertebrate Oil
+	[2961] = 336022,	-- Sludge Feeler
+	[2962] = 336024,	-- Toenail
+	[2963] = 336030,	-- Mu'dud
+	[2964] = 336031,	-- Foulwing Buzzer
+	[2965] = 336311,	-- Bloodfeaster Spiderling
+	[2966] = 337031,	-- Sinheart
+	[2967] = 337694,	-- Dredger Butler
+	[3006] = 339590,	-- Stoneskin Dredwing Pup
+	[3008] = 339593,	-- Lost Quill
+	[3009] = 339668,	-- The Count
+	[3010] = 339670,	-- Sinfall Screecher
+	[3011] = 339671,	-- Battie
+	[3012] = 339674,	-- Stony
+	[3013] = 339677,	-- Bloodlouse Larva
+	[3016] = 339976,	-- Fun Guss
+	[3017] = 339981,	-- Leafadore
+	[3018] = 339982,	-- Trootie
+	[3019] = 339983,	-- Stemmins
+	[3020] = 339997,	-- Runelight Leaper
+	[3022] = 339999,	-- Shimmerbough Hoarder
+	[3023] = 340002,	-- Sir Reginald
+	[3024] = 340710,	-- Char
+	[3025] = 340717,	-- Carpal
+	[3026] = 340721,	-- Tower Deathroach
+	[3027] = 340722,	-- Hissing Deathroach
+	[3028] = 340723,	-- Severs
+	[3029] = 341289,	-- Maw Crawler
+	[3030] = 341292,	-- Ashen Chomper
+	[3032] = 341293,	-- Frenzied Mawrat
+	[3033] = 341295,	-- Maw Stalker
+	[3034] = 341298,	-- Torghast Lurker
+	[3035] = 341301,	-- Lavender Nibbler
+	[3036] = 341302,	-- Will of Remornia
+	[3037] = 341492,	-- Dread
+	[3038] = 341493,	-- Undying Deathroach
+	[3039] = 341494,	-- Decaying Mawrat
+	[3040] = 341495,	-- Sharpclaw
+	[3041] = 341497,	-- Death Seeker
+	[3042] = 341515,	-- Ruffle
+	[3043] = 341516,	-- Jiggles
+	[3044] = 341519,	-- Spinemaw Gormling
+	[3045] = 341635,	-- Iridescent Ooze
+	[3046] = 341825,	-- Putrid Geist
+	[3047] = 343161,	-- Spinebug
+	[3053] = 344755,	-- Moon-Touched Netherwhelp
+	[3054] = 344792,	-- Archivist's Quill
+	[3061] = 345740,	-- Steward Featherling
+	[3062] = 345741,	-- Lost Featherling
+	[3063] = 345742,	-- Larion Pouncer
+	[3064] = 345744,	-- Larion Cub
+	[3065] = 345743,	-- Courage
+	[3066] = 346192,	-- Lucy
+	[3067] = 346236,	-- Spriggan Trickster
+	[3079] = 346260,	-- Winterleaf Spriggan
+	[384796] = 384796,	-- Pebble
+	[388541] = 388541,	-- Hoplet
+	[407786] = 407786,	-- Glub
+	[359755] = 359755,	-- Flurky
+};
+for key,value in pairs(CompanionPetSpeciesIDToSpellID) do
+	if CompanionPetSpellIDToSpeciesID[value] then
+		print("CompanionPetSpellIDToSpeciesID ALREADY HAS KEY ", key, value);
+	else
+		CompanionPetSpellIDToSpeciesID[value] = key;
+	end
+end
 
-local ItemDB = root(ROOTS.ItemDBConditional);
-local petDB = root("_petDB");
+local Pets = root("_petDB");
+local Items = ItemDBConditional;
 local i = function(itemID, speciesID, altSpeciesID)
-	local item = { ["speciesID"] = speciesID, ["ignoreBonus"] = true };
+	local item = Items[itemID];
+	item.speciesID = speciesID;
+	item.ignoreBonus = true;
+	local spellID = CompanionPetSpeciesIDToSpellID[speciesID];
+	if spellID then item.spellID = spellID; end
 	if altSpeciesID then item.altSpeciesID = altSpeciesID; end
-	ItemDB[itemID] = item;
 	return item;
 end
 local n = function(npcID, speciesID)
 	local pet = { ["speciesID"] = speciesID, ["cr"] = npcID, ["ignoreBonus"] = true };
-	petDB[npcID] = pet;
+	Pets[npcID] = pet;
 	return pet;
 end
 
@@ -25,9 +1033,8 @@ end
 	-- The speciesID is the number by the icon that looks like a cogwheel on the card that pops up when you hover over a pet.
 -- MissingIDs also host speciesIDs that are still missing in our database. For a full list of speciesID see Database Harvester > Raw > Pets.txt
 
-
 -----------------
--- PATCH 1.11.1 --
+--   CLASSIC   --
 -----------------
 -- ITEM --
 i(11023, 52);		-- Ancona Chicken
@@ -46,7 +1053,6 @@ i(8498, 59);		-- Emerald Whelpling
 i(21301, 119);		-- Father Winter's Helper
 i(8500, 68);		-- Great Horned Owl
 i(8492, 50);		-- Green Wing Macaw
-i(22114, 121);		-- Gurky
 i(8501, 67);		-- Hawk Owl
 i(8494, 49);		-- Hyacinth Macaw
 i(19450, 106);		-- Jubling
@@ -61,18 +1067,23 @@ i(8487, 43);		-- Orange Tabby Cat
 i(13583, 92);		-- Panda Cub
 i(22235, 122);		-- Peddlefeet
 i(11825, 85);		-- Pet Bombling
+i(22781, 124);		-- Poley
 i(8495, 51);		-- Senegal
 i(8490, 44);		-- Siamese Cat
 i(8488, 45);		-- Silver Tabby Cat
-i(12529, 90);		-- Smolderweb Hatchling (Old)
+i(12529, 90);		-- Smolderweb Hatchling [Old]
 i(8497, 72);		-- Snowshoe Rabbit
 i(23002, 125);		-- Speedy
 i(23083, 128);		-- Spirit of Summer
 i(11474, 87);		-- Sprite Darter Hatchling
+i(22780, 1073);		-- Terky
+i(19055, 757);		-- Tiny Green Dragon
+i(19054, 758);		-- Tiny Red Dragon
 i(21309, 117);		-- Tiny Snowman
 i(21277, 116);		-- Tranquil Mechanical Yeti
 i(11026, 65);		-- Tree Frog
 i(10393, 55);		-- Undercity Cockroach
+i(11110, 84);		-- Westfall Chicken
 i(23015, 127);		-- Whiskers the Rat
 i(8489, 46);		-- White Kitten
 i(21308, 118);		-- Winter Reindeer
@@ -80,24 +1091,11 @@ i(21305, 120);		-- Winter's Little Helper
 i(11027, 64);		-- Wood Frog
 i(12264, 89);		-- Worg Pup
 i(13582, 94);		-- Zergling
-
------------------
--- PATCH 1.12.1 --
------------------
--- ITEM --
-i(44822, 74);		-- Albino Snake
-i(30360, 111);		-- Lurky
-i(20651, 1168);		-- Murki
-i(19055, 757);		-- Tiny Green Dragon
-i(19054, 758);		-- Tiny Red Dragon
--- NPC --
-n(7554, 69);		-- Snowy Owl
-
------------------
--- PATCH 2.0.0 --
------------------
--- ITEM --
-i(23713, 130);		-- Hippogryph Hatchling
+-- NYI --
+i(11903, 0);		-- Cat Carrier (Corrupted Kitten)
+i(18964, 0);		-- Loggerhead Snapjaw / Turtle Egg (Loggerhead)
+i(13342, 0);		-- Pet Fish
+i(13343, 0);		-- Pet Stone
 
 -----------------
 -- PATCH 2.0.1 --
@@ -108,9 +1106,12 @@ i(29958, 145);		-- Blue Dragonhawk Hatchling
 i(29901, 138);		-- Blue Moth
 i(29364, 137);		-- Brown Rabbit
 i(29953, 142);		-- Golden Dragonhawk Hatchling
+i(23713, 130);		-- Hippogryph Hatchling
+i(30360, 111);		-- Lurky
 i(27445, 132);		-- Magical Crawdad
 i(29363, 136);		-- Mana Wyrmling
 i(31760, 149);		-- Miniwing
+i(25535, 131);		-- Netherwhelp
 i(29956, 143);		-- Red Dragonhawk Hatchling
 i(29902, 139);		-- Red Moth
 i(29957, 144);		-- Silver Dragonhawk Hatchling
@@ -118,15 +1119,34 @@ i(29904, 141);		-- White Moth
 i(29903, 140);		-- Yellow Moth
 
 -----------------
--- PATCH 2.2.2 --
+-- PATCH 2.0.3 --
+-----------------
+-- ITEM --
+i(22114, 121);		-- Gurky
+
+-----------------
+-- PATCH 2.1.0 --
 -----------------
 -- ITEM --
 i(32616, 158);		-- Egbert
-i(29960, 146);		-- Firefly
-i(32498, 155);		-- Lucky
-i(25535, 131);		-- Netherwhelp
+i(20651, 1168);		-- Murki
 i(32622, 159);		-- Peanut
 i(32617, 157);		-- Willy
+
+-----------------
+-- PATCH 2.1.1 --
+-----------------
+-- NYI --
+i(31665, 0);		-- Toy RC Mortar Tank
+
+-----------------
+-- PATCH 2.2.2 --
+-----------------
+-- ITEM --
+i(29960, 146);		-- Firefly
+i(32498, 155);		-- Lucky
+-- NYI --
+i(32465, 154);		-- Lucky
 
 -----------------
 -- PATCH 2.2.2 --
@@ -142,27 +1162,26 @@ i(32233, 153);		-- Wolpertinger
 i(34535, 57);		-- Azure Whelpling
 i(34425, 191);		-- Clockwork Rocket Bot
 i(34493, 169);		-- Dragon Kite
+i(34518, 170);		-- Golden Pig
 i(33993, 165);		-- Mojo
 i(34492, 168);		-- Rocket Chicken
+i(34519, 171);		-- Silver Pig
 i(34478, 167);		-- Tiny Sporebat
-i(69991, 167);		-- Tiny Sporebat
 
 -----------------
 -- PATCH 2.4.0 --
 -----------------
 -- ITEM --
-i(23712, 1927);		-- Ash'ana
 i(35350, 174);		-- Chuck
-i(34518, 170);		-- Golden Pig
 i(33818, 164);		-- Muckbreath
 i(35504, 175);		-- Phoenix Hatchling
-i(22781, 124);		-- Poley
 i(34955, 172);		-- Searing Scorchling
-i(34519, 171);		-- Silver Pig
 i(35349, 173);		-- Snarly
-i(40653, 160);		-- Stinker
-i(22780, 1073);		-- Terky
 i(33816, 163);		-- Toothy
+-- NYI --
+-- #if BEFORE 7.0.3
+i(23712, 0);		-- White Tiger Cub, Comment: Later reused for Ash'ana.
+-- #endif
 
 -----------------
 -- PATCH 2.4.2 --
@@ -183,14 +1202,11 @@ i(37297, 179);		-- Spirit of Competition
 -- PATCH 3.0.2 --
 -----------------
 -- ITEM ---
-i(39973, 190);		-- Ghostly Skull
-i(43698, 193);		-- Giant Sewer Rat
-i(44723, 198);		-- Pengu
-i(44721, 196);		-- Proto-Drake Whelp
-i(39896, 194);		-- Tickbird Hatchling
+i(40653, 160);		-- Stinker
 i(38658, 187);		-- Vampiric Batling
-i(11110, 84);		-- Westfall Chicken
-i(39899, 195);		-- White Tickbird Hatchling
+-- NYI --
+i(39148, 0);		-- Baby Coralshell Turtle
+i(21168, 0);		-- Baby Shark
 
 -----------------
 -- PATCH 3.0.3 --
@@ -199,78 +1215,78 @@ i(39899, 195);		-- White Tickbird Hatchling
 i(44819, 202);		-- Baby Blizzard Bear
 i(39898, 197);		-- Cobra Hatchling
 i(39286, 188);		-- Frosty
+i(39973, 190);		-- Ghostly Skull
+i(43698, 193);		-- Giant Sewer Rat
 i(44738, 199);		-- Kirin Tor Familiar
-
------------------
--- PATCH 3.0.8 --
------------------
--- ITEM --
-i(44841, 203);		-- Little Fawn
+i(44723, 198);		-- Pengu
+i(44721, 196);		-- Proto-Drake Whelp
+i(39896, 194);		-- Tickbird Hatchling
+i(39899, 195);		-- White Tickbird Hatchling
 
 -----------------
 -- PATCH 3.1.0 --
 -----------------
 -- ITEM --
-i(45022, 216);		-- Argent Gruntling
-i(44998, 214);		-- Argent Squire
-i(44980, 210);		-- Mulgore Hatchling
-i(44983, 211);		-- Strand Crawler
-
------------------
--- PATCH 3.1.1 --
------------------
--- ITEM --
-i(44984, 212);		-- Ammen Vale Lashling
-i(44970, 205);		-- Dun Morogh Cub
-i(44973, 207);		-- Durotar Scorpion
-i(44974, 209);		-- Elwynn Lamb
-i(44982, 213);		-- Enchanted Broom
-i(45002, 215);		-- Mechanopeep
-i(45606, 218);		-- Sen'jin Fetish
+i(44822, 74);		-- Albino Snake
+i(44841, 203);		-- Little Fawn
 i(44794, 200);		-- Spring Rabbit
-i(44965, 204);		-- Teldrassil Sproutling
-i(44971, 206);		-- Tirisfal Batling
+i(44983, 211);		-- Strand Crawler
+-- NYI --
+i(45942, 0);		-- XS-001 Constructor Bot
 
 -----------------
 -- PATCH 3.1.2 --
 -----------------
 -- ITEM --
-i(41133, 192);		-- Mr. Chilly
-i(45180, 217);		-- Murkimus' Little Spear (Murkimus the Gladiator)
-i(46892, 217);		-- Murkimus' Tiny Spear (Murkimus the Gladiator)
-i(100870, 217);		-- Murkimus' Tyrannical Spear (Murkimus the Gladiator)
+i(45180, 217);		-- Murkimus the Gladiator [Murkimus' Little Spear]
 
 -----------------
 -- PATCH 3.2.0 --
 -----------------
 -- ITEM --
+i(44984, 212);		-- Ammen Vale Lashling
+i(45022, 216);		-- Argent Gruntling
+i(44998, 214);		-- Argent Squire
 i(46545, 225);		-- Curious Oracle Hatchling
 i(46544, 226);		-- Curious Wolvar Pup
 i(48112, 232);		-- Darting Hatchling
 i(48114, 233);		-- Deviate Hatchling
+i(44970, 205);		-- Dun Morogh Cub
+i(44973, 207);		-- Durotar Scorpion
+i(44974, 209);		-- Elwynn Lamb
+i(44982, 213);		-- Enchanted Broom
 i(46802, 228);		-- Grunty
 i(48116, 234);		-- Gundrak Hatchling
 i(48118, 235);		-- Leaping Hatchling
+i(45002, 215);		-- Mechanopeep
+i(44980, 210);		-- Mulgore Hatchling
 i(48120, 236);		-- Obsidian Hatchling
 i(46707, 166);		-- Pint-Sized Pink Pachyderm
 i(48122, 237);		-- Ravasaur Hatchling
 i(48124, 238);		-- Razormaw Hatchling
 i(48126, 239);		-- Razzashi Hatchling
-i(69992, 229);		-- Shimmering Wyrmling (No Rep Requirement)
-i(46820, 229);		-- Shimmering Wyrmling (Alliance)
-i(46821, 229);		-- Shimmering Wyrmling (Horde)
+i(45606, 218);		-- Sen'jin Fetish
+i(46820, 229);		-- Shimmering Wyrmling [A]
+i(46821, 229);		-- Shimmering Wyrmling [H]
+i(44965, 204);		-- Teldrassil Sproutling
+i(44971, 206);		-- Tirisfal Batling
 
 -----------------
 -- PATCH 3.2.2 --
 -----------------
 -- ITEM --
 i(49693, 249);		-- Lil' K.T.
-i(46831, 1351);		-- Macabre Marionette
+-- #if AFTER MOP
+i(46831, 1351);		-- Macabre Marionette [NOTE: This pet could not be learned until MOP!]
+-- #endif
+i(41133, 192);		-- Mr. Chilly
 i(49362, 243);		-- Onyxian Whelpling
 i(49665, 248);		-- Pandaren Monk
 i(49343, 242);		-- Spectral Tiger Cub
 i(44810, 201);		-- Plump Turkey
 i(49287, 241);		-- Tuskarr Kite
+-- NYI --
+i(0, 230);			-- Macabre Marionette
 
 -----------------
 -- PATCH 3.3.0 --
@@ -279,13 +1295,13 @@ i(49287, 241);		-- Tuskarr Kite
 i(46398, 224);		-- Calico Cat
 i(49646, 244);		-- Core Hound Pup
 i(49912, 250);		-- Perky Pug
+i(50446, 251);		-- Toxic Wasteling
 
 -----------------
 -- PATCH 3.3.2 --
 -----------------
 -- ITEM --
 i(49662, 245);		-- Gryphon Hatchling
-i(50446, 251);		-- Toxic Wasteling
 i(49663, 246);		-- Wind Rider Cub
 
 -----------------
@@ -306,10 +1322,11 @@ i(56806, 258);		-- Mini Thor
 -- PATCH 4.0.1 --
 -----------------
 -- ITEM --
-i(64372, 277);		-- Clockwork Gnome
 i(67418, 294);		-- Deathy
-i(63355, 271);		-- Rustberg Gull (Alliance)
-i(64996, 271);		-- Rustberg Gull (Horde)
+i(62540, 268);		-- Lil' Deathwing
+-- NYI --
+i(67417, 0);		-- [DND] Lil' Deathwing Placeholder
+i(44972, 0);		-- Alarming Clockbot (NOT IN USE)
 
 -----------------
 -- PATCH 4.0.3 --
@@ -317,7 +1334,7 @@ i(64996, 271);		-- Rustberg Gull (Horde)
 -- ITEM --
 i(63398, 272);		-- Armadillo Pup
 i(65661, 259);		-- Blue Mini Jouster
-i(54810, 255);		-- Celestial Dragon
+i(64372, 277);		-- Clockwork Gnome
 i(60847, 264);		-- Crawling Claw
 i(63138, 270);		-- Dark Phoenix Hatchling
 i(60216, 262);		-- De-Weaponized Mechanical Companion
@@ -325,30 +1342,34 @@ i(67282, 293);		-- Elementium Geode
 i(67274, 267);		-- Enchanted Lantern
 i(60955, 266);		-- Fossilized Hatchling
 i(64403, 278);		-- Fox Kit
-i(90897, 278);		-- Fox Kit
-i(90898, 278);		-- Fox Kit
 i(65662, 260);		-- Gold Mini Jouster
-i(65363, 282);		-- Guild Herald (Alliance)
-i(65364, 283);		-- Guild Herald (Horde)
-i(65361, 280);		-- Guild Page (Alliance)
-i(65362, 281);		-- Guild Page (Horde)
+i(65363, 282);		-- Guild Herald [A]
+i(65364, 283);		-- Guild Herald [H]
+i(65361, 280);		-- Guild Page [A]
+i(65362, 281);		-- Guild Page [H]
 i(46894, 231);		-- Jade Tiger
 i(67128, 285);		-- Landro's Lil' XT
-i(62540, 268);		-- Lil' Deathwing
 i(68385, 297);		-- Lil' Ragnaros
 i(67275, 292);		-- Magic Lamp
-i(68618, 296);		-- Moonkin Hatchling (Alliance)
-i(68619, 298);		-- Moonkin Hatchling (Horde)
+i(68618, 296);		-- Moonkin Hatchling [A]
+i(68619, 298);		-- Moonkin Hatchling [H]
 i(66076, 286);		-- Mr. Grubbs
 i(48527, 240);		-- Onyx Panther
 i(60869, 265);		-- Pebble
 i(59597, 261);		-- Personal World Destroyer
+i(63355, 271);		-- Rustberg Gull [A]
+i(64996, 271);		-- Rustberg Gull [H]
 i(66073, 289);		-- Scooter the Snail
 i(66067, 291);		-- Singing Sunflower
 i(66080, 287);		-- Tiny Flamefly
 i(64494, 279);		-- Tiny Shale Spider
 i(46325, 220);		-- Withers
 i(49664, 247);		-- Zipao Tiger
+-- NYI --
+i(66075, 0);		-- Bubbles
+i(62769, 0);		-- Hardboiled Egg
+i(67600, 0);		-- Lil' Alexstrasza
+i(66070, 0);		-- Lizzy
 
 -----------------
 -- PATCH 4.0.6 --
@@ -367,6 +1388,8 @@ i(69648, 308);		-- Legs
 i(68841, 303);		-- Nightsaber Cub
 i(68833, 301);		-- Panther Cub
 i(69821, 309);		-- Pterrordax Hatchling
+i(69992, 229);		-- Shimmering Wyrmling (No Rep Requirement)
+i(69991, 167);		-- Tiny Sporebat
 i(69824, 310);		-- Voodoo Figurine
 i(69239, 306);		-- Winterspring Cub
 
@@ -376,20 +1399,19 @@ i(69239, 306);		-- Winterspring Cub
 -- ITEM --
 i(72042, 331);		-- Alliance Balloon
 i(71387, 325);		-- Brilliant Kaliri
+i(54810, 255);		-- Celestial Dragon
+i(71076, 321);		-- Creepy Crate
 i(70160, 318);		-- Crimson Lasher
+i(70908, 319);		-- Feline Familiar
+i(72068, 311);		-- Guardian Cub
 i(72045, 332);		-- Horde Balloon
 i(70140, 317);		-- Hyjal Bear Cub
 i(71033, 320);		-- Lil' Tarecgosa
 i(71726, 329);		-- Murkablo
+i(46892, 217);		-- Murkimus the Gladiator [Murkimus' Tiny Spear]
 i(71140, 323);		-- Nuts
-
------------------
--- PATCH 4.2.2 --
------------------
--- ITEM --
-i(71076, 321);		-- Creepy Crate
-i(70908, 319);		-- Feline Familiar
-i(72068, 311);		-- Guardian Cub
+-- NYI --
+i(0, 257);			-- Murkimus the Gladiator
 
 -----------------
 -- PATCH 4.3.0 --
@@ -402,11 +1424,22 @@ i(73903, 338);		-- Darkmoon Tonk
 i(73765, 335);		-- Darkmoon Turtle
 i(73905, 339);		-- Darkmoon Zeppelin
 i(74611, 342);		-- Festival Lantern
+i(76062, 346);		-- Fetish Shaman
 i(72134, 333);		-- Gregarious Grell
 i(73797, 337);		-- Lumpy
 i(74610, 341);		-- Lunar Lantern
 i(71624, 328);		-- Purple Puffer
+i(72153, 665);		-- Sand Scarab
 i(73953, 340);		-- Sea Pony
+i(78916, 347);		-- Soul of the Aspects
+-- NYI --
+i(0, 344);			-- Green Balloon
+i(0, 345);			-- Yellow Balloon
+
+-----------------
+-- PATCH 4.3.2 --
+-----------------
+i(79744, 348);		-- Eye of the Legion
 
 -----------------
 -- PATCH 5.0.4 --
@@ -416,25 +1449,21 @@ i(86563, 836);		-- Aqua Strider
 i(90177, 903);		-- Baneling
 i(89368, 849);		-- Chi-Ji Kite
 i(80008, 848);		-- Darkmoon Rabbit
-i(79744, 348);		-- Eye of the Legion
 i(85578, 821);		-- Feral Vermling
-i(76062, 346);		-- Fetish Shaman
 i(84105, 847);		-- Fishy
+i(90897, 278);		-- Fox Kit [A]
+i(90898, 278);		-- Fox Kit [H]
 i(86564, 834);		-- Grinder
 i(86562, 835);		-- Hopling
-i(88148, 792);		-- Jade Crane Chick
 i(82774, 845);		-- Jade Owl
 i(89686, 856);		-- Jade Tentacle
 i(85871, 671);		-- Lucky Quilen Cub
 i(87526, 844);		-- Mechanical Pandaren Dragonling
-i(90173, 868);		-- Pandaren Water Spirit
 i(89587, 381);		-- Porcupette
 i(85222, 1042);		-- Red Cricket
-i(72153, 665);		-- Sand Scarab
 i(82775, 846);		-- Sapphire Cub
-i(78916, 347);		-- Soul of the Aspects
+i(88147, 820);		-- Singing Cricket
 i(90953, 1127);		-- Spectral Cub
-i(142223, 382);		-- Sun Darter Hatchling
 i(85220, 650);		-- Terrible Turnip
 i(85513, 802);		-- Thundering Serpent Hatchling
 i(85447, 652);		-- Tiny Goldfish
@@ -593,6 +1622,8 @@ n(62120, 472);		-- Rabid Nut Varmint 5000
 n(64352, 743);		-- Rapana Whelk
 n(61366, 417);		-- Rat
 n(61258, 399);		-- Rat Snake
+n(61439, 431);		-- Rattlesnake
+n(62051, 465);		-- Ravager Hatchling
 n(61757, 452);		-- Red-Tailed Chipmunk
 n(61168, 392);		-- Redridge Rat
 n(64238, 744);		-- Resilient Roach
@@ -629,6 +1660,7 @@ n(61255, 397);		-- Skunk
 n(61071, 419);		-- Small Frog
 n(61142, 387);		-- Snake
 n(61689, 440);		-- Snow Cub
+n(7554, 69);		-- Snowy Owl
 n(63060, 713);		-- Softshell Snapling
 n(62201, 489);		-- Spawn of Onyxia
 n(61327, 412);		-- Spider
@@ -638,6 +1670,7 @@ n(63293, 723);		-- Spiny Terrapin
 n(63005, 572);		-- Spirebound Crab
 n(62034, 463);		-- Spirit Crab
 n(62564, 515);		-- Sporeling Sprout
+n(62370, 502);		-- Spotted Bell Frog
 n(61081, 379);		-- Squirrel
 n(62256, 492);		-- Stinkbug
 n(62187, 485);		-- Stone Armadillo
@@ -681,145 +1714,178 @@ n(65321, 819);		-- Wild Crimson Hatchling
 n(65324, 818);		-- Wild Golden Hatchling
 n(65323, 817);		-- Wild Jade Hatchling
 n(62900, 548);		-- Wildhammer Gryphon Hatchling
-n(85254, 1463);		-- Wood Wasp
 n(63957, 740);		-- Yakrat
 n(63849, 752);		-- Yellow-Bellied Bullfrog
 n(62904, 549);		-- Yellow-Bellied Marmot
 n(63555, 731);		-- Zooey Snake
+-- SPECIAL --
+i(0, 792);			-- Jade Crane Chick
 -- TRAINER --
-n(0, 897);		-- Acidous
-n(0, 901);		-- Ambershell
-n(0, 987);		-- Amythel
-n(0, 941);		-- Anklor
-n(0, 964);		-- Arcanus
-n(0, 981);		-- Ashtail
-n(0, 925);		-- Beacon
-n(0, 978);		-- Beakmaster X-225
-n(0, 922);		-- Beamer
-n(0, 948);		-- Bishibosh
-n(0, 881);		-- Blackfang
-n(0, 913);		-- Blaze
-n(0, 935);		-- Bleakspinner
-n(0, 1001);		-- Bleat
-n(0, 974);		-- Blight
-n(0, 927);		-- Blizzy
-n(0, 977);		-- Bloom
-n(0, 902);		-- Bounder
-n(0, 995);		-- Brood of Mothallus
-n(0, 888);		-- Burgle
-n(0, 976);		-- Cadavus
-n(0, 936);		-- Carrion
-n(0, 1012);		-- Chirrup
-n(0, 915);		-- Cho'guana
-n(0, 961);		-- Chomps
-n(0, 989);		-- Clatter
-n(0, 908);		-- Cluckatron
-n(0, 875);		-- Clucks
-n(0, 946);		-- Comet
-n(0, 899);		-- Constrictor
-n(0, 932);		-- Corpsefeeder
-n(0, 959);		-- Cragmaw
-n(0, 942);		-- Croaker
-n(0, 1009);		-- Crusher
-n(0, 984);		-- Crystallus
-n(0, 943);		-- Dampwing
-n(0, 880);		-- Darkwidow
-n(0, 1006);		-- Diamond
-n(0, 967);		-- Dinner
-n(0, 878);		-- Dipsy
-n(0, 992);		-- Dor the Wall
-n(0, 957);		-- Dramaticus
-n(0, 973);		-- Drogar
-n(0, 952);		-- ED-005
-n(0, 883);		-- Emeralda
-n(0, 887);		-- Eyegouger
-n(0, 993);		-- Fangor
-n(0, 873);		-- Fangs
-n(0, 911);		-- Firetooth
-n(0, 912);		-- Flameclaw
-n(0, 975);		-- Fleshrender
-n(0, 877);		-- Flipsy
-n(0, 879);		-- Flufftail
-n(0, 894);		-- Flutterby
-n(0, 876);		-- Foe Reaper 800
-n(0, 983);		-- Fracture
-n(0, 928);		-- Frostmaw
-n(0, 953);		-- Fungor
-n(0, 939);		-- Garnestrasz
-n(0, 909);		-- Gizmo
-n(0, 906);		-- Glimmer
-n(0, 955);		-- Glitterfly
-n(0, 960);		-- Gnasher
-n(0, 966);		-- Gobbles
-n(0, 951);		-- Goliath
-n(0, 979);		-- Grizzle
-n(0, 923);		-- Hatewalker
-n(0, 986);		-- Helios
-n(0, 945);		-- Ignious
-n(0, 980);		-- Incinderous
-n(0, 917);		-- Indigon
-n(0, 949);		-- Jack
-n(0, 963);		-- Jadefire
-n(0, 982);		-- Kali
-n(0, 924);		-- Lacewing
-n(0, 1002);		-- Lapin
-n(0, 1000);		-- Lightstalker
-n(0, 893);		-- Longneck
-n(0, 896);		-- Mister Pinch
-n(0, 1005);		-- Mollus
-n(0, 944);		-- Moltar
-n(0, 884);		-- Moonstalker
-n(0, 968);		-- Mort
-n(0, 889);		-- Mumtar
-n(0, 1007);		-- Mutilator
-n(0, 885);		-- Nanners
-n(0, 999);		-- Needleback
-n(0, 962);		-- Netherbite
-n(0, 947);		-- Nightstalker
-n(0, 937);		-- Obsidion
-n(0, 898);		-- Odoron
-n(0, 895);		-- Oozer
-n(0, 1003);		-- Piqua
-n(0, 916);		-- Plague
-n(0, 934);		-- Plaguebringer
-n(0, 931);		-- Plop
-n(0, 1008);		-- Pounder
-n(0, 904);		-- Prancer
-n(0, 958);		-- Prince Wart
-n(0, 991);		-- Pyth
-n(0, 905);		-- Rasp
-n(0, 891);		-- Ripper
-n(0, 900);		-- Rockhide
-n(0, 971);		-- Rot
-n(0, 985);		-- Ruby
-n(0, 997);		-- Siren
-n(0, 1004);		-- Skimmer
-n(0, 994);		-- Skyshaper
-n(0, 972);		-- Sleet
-n(0, 872);		-- Slither
-n(0, 890);		-- Spike
-n(0, 950);		-- Sploder
-n(0, 892);		-- Springtail
-n(0, 970);		-- Spooky Strangler
-n(0, 990);		-- Spring
-n(0, 969);		-- Stitch
-n(0, 956);		-- Stompy
-n(0, 1011);		-- Stormlash
-n(0, 933);		-- Subject 142
-n(0, 874);		-- Teensy
-n(0, 929);		-- Tinygos
-n(0, 996);		-- Toothbreaker
-n(0, 954);		-- Tripod
-n(0, 988);		-- Twilight
-n(0, 921);		-- Ultramus
-n(0, 938);		-- Veridia
-n(0, 965);		-- Warble
-n(0, 882);		-- Webwinder
-n(0, 907);		-- Whirls
-n(0, 1010);		-- Whiskers
-n(0, 926);		-- Willow
-n(0, 998);		-- Woodcarver
-n(0, 886);		-- Young Beaky
+n(0, 897);			-- Acidous
+n(0, 901);			-- Ambershell
+n(0, 987);			-- Amythel
+n(0, 941);			-- Anklor
+n(0, 964);			-- Arcanus
+n(0, 981);			-- Ashtail
+n(0, 925);			-- Beacon
+n(0, 978);			-- Beakmaster X-225
+n(0, 922);			-- Beamer
+n(0, 948);			-- Bishibosh
+n(0, 881);			-- Blackfang
+n(0, 913);			-- Blaze
+n(0, 935);			-- Bleakspinner
+n(0, 1001);			-- Bleat
+n(0, 974);			-- Blight
+n(0, 927);			-- Blizzy
+n(0, 977);			-- Bloom
+n(0, 902);			-- Bounder
+n(0, 995);			-- Brood of Mothallus
+n(0, 888);			-- Burgle
+n(0, 976);			-- Cadavus
+n(0, 936);			-- Carrion
+n(0, 1012);			-- Chirrup
+n(0, 915);			-- Cho'guana
+n(0, 961);			-- Chomps
+n(0, 989);			-- Clatter
+n(0, 908);			-- Cluckatron
+n(0, 875);			-- Clucks
+n(0, 946);			-- Comet
+n(0, 899);			-- Constrictor
+n(0, 932);			-- Corpsefeeder
+n(0, 959);			-- Cragmaw
+n(0, 942);			-- Croaker
+n(0, 1009);			-- Crusher
+n(0, 984);			-- Crystallus
+n(0, 943);			-- Dampwing
+n(0, 880);			-- Darkwidow
+n(0, 1006);			-- Diamond
+n(0, 967);			-- Dinner
+n(0, 878);			-- Dipsy
+n(0, 992);			-- Dor the Wall
+n(0, 957);			-- Dramaticus
+n(0, 973);			-- Drogar
+n(0, 952);			-- ED-005
+n(0, 883);			-- Emeralda
+n(0, 887);			-- Eyegouger
+n(0, 993);			-- Fangor
+n(0, 873);			-- Fangs
+n(0, 911);			-- Firetooth
+n(0, 912);			-- Flameclaw
+n(0, 975);			-- Fleshrender
+n(0, 877);			-- Flipsy
+n(0, 879);			-- Flufftail
+n(0, 894);			-- Flutterby
+n(0, 876);			-- Foe Reaper 800
+n(0, 983);			-- Fracture
+n(0, 928);			-- Frostmaw
+n(0, 953);			-- Fungor
+n(0, 939);			-- Garnestrasz
+n(0, 909);			-- Gizmo
+n(0, 906);			-- Glimmer
+n(0, 955);			-- Glitterfly
+n(0, 960);			-- Gnasher
+n(0, 966);			-- Gobbles
+n(0, 951);			-- Goliath
+n(0, 979);			-- Grizzle
+n(0, 923);			-- Hatewalker
+n(0, 986);			-- Helios
+n(0, 945);			-- Ignious
+n(0, 980);			-- Incinderous
+n(0, 917);			-- Indigon
+n(0, 949);			-- Jack
+n(0, 963);			-- Jadefire
+n(0, 982);			-- Kali
+n(0, 924);			-- Lacewing
+n(0, 1002);			-- Lapin
+n(0, 1000);			-- Lightstalker
+n(0, 893);			-- Longneck
+n(0, 896);			-- Mister Pinch
+n(0, 1005);			-- Mollus
+n(0, 944);			-- Moltar
+n(0, 884);			-- Moonstalker
+n(0, 968);			-- Mort
+n(0, 889);			-- Mumtar
+n(0, 1007);			-- Mutilator
+n(0, 885);			-- Nanners
+n(0, 999);			-- Needleback
+n(0, 962);			-- Netherbite
+n(0, 947);			-- Nightstalker
+n(0, 937);			-- Obsidion
+n(0, 898);			-- Odoron
+n(0, 895);			-- Oozer
+n(0, 1003);			-- Piqua
+n(0, 916);			-- Plague
+n(0, 934);			-- Plaguebringer
+n(0, 931);			-- Plop
+n(0, 1008);			-- Pounder
+n(0, 904);			-- Prancer
+n(0, 958);			-- Prince Wart
+n(0, 991);			-- Pyth
+n(0, 905);			-- Rasp
+n(0, 891);			-- Ripper
+n(0, 900);			-- Rockhide
+n(0, 971);			-- Rot
+n(0, 985);			-- Ruby
+n(0, 997);			-- Siren
+n(0, 1004);			-- Skimmer
+n(0, 994);			-- Skyshaper
+n(0, 972);			-- Sleet
+n(0, 872);			-- Slither
+n(0, 890);			-- Spike
+n(0, 950);			-- Sploder
+n(0, 892);			-- Springtail
+n(0, 970);			-- Spooky Strangler
+n(0, 990);			-- Spring
+n(0, 969);			-- Stitch
+n(0, 956);			-- Stompy
+n(0, 1011);			-- Stormlash
+n(0, 933);			-- Subject 142
+n(0, 874);			-- Teensy
+n(0, 929);			-- Tinygos
+n(0, 996);			-- Toothbreaker
+n(0, 954);			-- Tripod
+n(0, 988);			-- Twilight
+n(0, 921);			-- Ultramus
+n(0, 938);			-- Veridia
+n(0, 965);			-- Warble
+n(0, 882);			-- Webwinder
+n(0, 907);			-- Whirls
+n(0, 1010);			-- Whiskers
+n(0, 926);			-- Willow
+n(0, 998);			-- Woodcarver
+n(0, 886);			-- Young Beaky
+-- NYI --
+i(0, 705);			-- Amorous Rooster
+i(0, 832);			-- Boomy Jr.
+i(0, 390);			-- Deer
+i(0, 833);			-- Dr. Stinky
+i(0, 2);			-- Dumptruck
+i(0, 476);			-- Gazelle
+i(0, 462);			-- Jacob the Test Seagull
+i(0, 827);			-- Lady Burninator
+i(0, 828);			-- Lord Landslide
+i(0, 829);			-- Madam Flapsalot
+i(0, 831);			-- Miss Mystical
+i(0, 825);			-- Mr. Growls
+i(0, 826);			-- Mrs. Skitters
+i(0, 824);			-- Ms. Croaker
+i(0, 800);			-- Muffin
+i(0, 486);			-- Mule Deer
+i(0, 384);			-- Otter Pup
+i(0, 354);			-- PattyMack - WildBattlePet Test
+i(0, 444);			-- PattyMack 2.0 - WildBattlePet Test
+i(0, 510);			-- Rabbot
+i(0, 434);			-- Ram
+i(0, 394);			-- Sheep
+i(0, 830);			-- Sir Buckethead
+i(0, 864);			-- Spider
+i(0, 375);			-- The Gurkster
+i(0, 863);			-- Widow Spiderling
+i(0, 715);			-- Wild Silkworm
+i(0, 71);			-- Unknown
+i(0, 73);			-- Unknown
+i(88148, 0);		-- Jade Crane Chick
+i(82800, 0);		-- Pet Cage
 
 -----------------
 -- PATCH 5.1.0 --
@@ -844,6 +1910,7 @@ i(93031, 1145);		-- Mr. Bigglesworth
 i(92799, 1125);		-- Pandaren Air Spirit
 i(92800, 1126);		-- Pandaren Earth Spirit
 i(92798, 1124);		-- Pandaren Fire Spirit
+i(90173, 868);		-- Pandaren Water Spirit
 i(93029, 1146);		-- Stitched Pup
 i(93036, 1151);		-- Untamed Hatchling
 i(93039, 1154);		-- Viscidus Globule
@@ -889,6 +1956,7 @@ i(93669, 1174);		-- Gusting Grimoire
 i(94835, 1202);		-- Ji-Kun Hatchling
 i(94125, 1177);		-- Living Sandling
 i(94210, 1198);		-- Mountain Panda
+i(100870, 217);		-- Murkimus the Gladiator [Murkimus' Tyrannical Spear]
 i(94903, 1204);		-- Pierre
 i(94025, 1176);		-- Red Panda
 i(94209, 1197);		-- Snowy Panda
@@ -1022,6 +2090,7 @@ i(0, 1317);			-- Yu'la, Broodling of Yu'lon
 i(0, 1319);			-- Zao, Calfling of Niuzao
 -- NYI --
 i(0, 1258);			-- Angara
+i(0, 1354);			-- C92 Annihilator
 i(0, 1257);			-- Crafty
 
 -----------------
@@ -1139,6 +2208,7 @@ n(88359, 1590);		-- Swamplighter Firefly
 n(85007, 1456);		-- Thicket Skitterer
 n(85253, 1464);		-- Twilight Wasp
 n(88355, 1593);		-- Waterfly
+n(85254, 1463);		-- Wood Wasp
 n(88466, 1582);		-- Zangar Crawler
 -- SPECIAL --
 i(0, 1532);			-- Ikky
@@ -1208,6 +2278,7 @@ i(0, 1423);			-- Bitey
 i(0, 1420);			-- Evil Widowling
 i(0, 1352);			-- Lord Piglet
 i(0, 1404);			-- Mechanical Scorpid
+i(0, 1410);			-- Mechanical Training Dummy
 i(0, 1610);			-- Unborn Val'kyr
 i(0, 1259);			-- Widowling
 i(118597, 1431);	-- Kelp Sproutling
@@ -1345,6 +2416,7 @@ i(128424, 1466);	-- Brightpaw
 -- ITEM --
 i(136910, 1805);	-- Alarm-o-Bot
 i(139775, 1918);	-- Alliance Enthusiast
+i(23712, 1927);		-- Ash'ana
 i(128690, 1706);	-- Ashmaw Cub
 i(118599, 1429);	-- Autumnal Sproutling
 i(136919, 1884);	-- Baby Elderhorn
@@ -1601,6 +2673,7 @@ i(147540, 2036);	-- Frostbrood Whelpling
 i(147841, 2050);	-- Orphaned Felbat
 i(146953, 2042);	-- Scraps
 i(147543, 2049);	-- Son of Skum
+i(142223, 382);		-- Sun Darter Hatchling
 i(147541, 2037);	-- Vilebrood Whelpling
 i(143755, 2000);	-- Young Venomfang
 -- TRAINER --
@@ -2807,7 +3880,6 @@ i(190607, 3252);	-- Garrlok
 i(193855, 3334);	-- Time-Lost Vorquin Foal
 -- NYI --
 i(0, 3255);			-- Buttercup
-i(0, 3253);			-- Crushhoof
 i(0, 3254);			-- Watcher of the Huntress
 i(190604, 3251);	-- Buzzworth
 i(190176, 3244);	-- Drazka'zet the Wrathful
@@ -2914,7 +3986,6 @@ n(203313, 3485);	-- Hollow Moth
 n(203358, 3486);	-- Lithengale
 n(203287, 3477);	-- Puddlehopper
 n(203288, 3478);	-- Rock Martin
-n(198612, 3589);	-- Rusziona
 n(203364, 3487);	-- Scarlapod
 n(203312, 3484);	-- Slabwing
 n(203308, 3481);	-- Stonewhisker
@@ -2947,7 +4018,6 @@ i(205148, 3542);	-- Dread Shalewing
 i(205156, 3549);	-- Heartseeker Moth
 i(205018, 3520);	-- Jade Skitterbug
 i(205116, 3534);	-- Jerrie
-i(205009, 3515);	-- Karrit
 i(205166, 3556);	-- Kromos
 i(205013, 3518);	-- Lettuce
 i(205153, 3547);	-- Mikah
@@ -2967,15 +4037,52 @@ i(205232, 0);		-- [DNT] REUSE
 -- PATCH 10.1.5 --
 ------------------
 i(205165, 3555);	-- Axel
+i(208012, 4255);	-- Briarhorn Hatchling
+i(190608, 3253);	-- Crushhoof (Shop)
+i(208008, 4259);	-- Doomrubble
+i(208009, 4257);	-- Gill'dan
+i(208010, 4258);	-- Jeepers
+i(206763, 3596);	-- Kabluey
+i(208013, 4260);	-- Killbot 9000
 i(205162, 3553);	-- Nelthara
+i(208011, 4261);	-- Obsidian Warwhelp
+i(208138, 4262);	-- N'Ruby
+i(0, 4263);			-- Tobias [Maybe Get itemID later??]
+i(190601, 2890);	-- Sunny (Shop)
+i(207962, 179);		-- Spirit of Competition (Trading Post)
+-- TRAINER --
+i(0, 3587);			-- Lifelike Mechanical Duckling
+i(0, 3608);			-- Lifelike Mechanical Turtle
+i(0, 3609);			-- Sporeflower
+i(0, 3975);			-- Midnight Terrorwing
+i(0, 4237);			-- Treanthony
+-- Whelptender?
+i(206682, 3589);	-- Rusziona
+i(205232, 3588);	-- Iggy
+i(207019, 3597);	-- Princess Vorquistrasza
+i(206758, 3590);	-- Belastrasza
+i(205009, 3515);	-- Annuna
+i(206971, 3598);	-- Zhusadormu
+i(206973, 3600);	-- Pallibrius
+i(206974, 3599);	-- Zalethgos
+i(206978, 3602);	-- Somnius
+i(206979, 3601);	-- Posidriss
+--- NYI ---
+i(206174, 3582);	-- Blub
+
+------------------
+-- PATCH 10.1.7 --
+------------------
+i(208543, 4265);	-- Lil' Frostwing
 
 
--- #if ANYCLASSIC
+
+
 -----------------
 -- CLASSIC WOW --
 -----------------
--- #if AFTER WRATH
+-- NOTE: When the Pet Journal is added later, we need to get the actual Battle Pet ID.
 i(198665, 384796);	-- Pebble's Pebble
 i(200060, 388541);	-- Hoplet
--- #endif
--- #endif
+i(204982, 407786);	-- Glub
+i(187794, 359755);	-- Flurky

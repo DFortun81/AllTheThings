@@ -5,7 +5,7 @@ local EMBLEM_OF_TRIUMPH_QUARTERMASTER_GROUPS = {
 	emot(1, i(44711, {	-- Argent Crusade Commendation Badge
 		["timeline"] = { "deleted 6.0.2" },
 	})),
-	emot(1, i(44713, {	-- Ebon Blade Commendation Badge
+	emot(1, i(44713, {	-- Ebon Blade Commendation Badge [BOP]
 		["timeline"] = { "deleted 6.0.2" },
 	})),
 	emot(1, i(43950, {	-- Kirin Tor Commendation Badge
@@ -3777,319 +3777,321 @@ root(ROOTS.Zones, {
 			["lvl"] = 58,
 			["groups"] = {
 				m(NORTHREND_THE_UNDERBELLY, {
-					n(ACHIEVEMENTS, {
-						ach(1958, {	-- I Smell A Giant Rat
-							["provider"] = { "i", 43698 },	-- Giant Sewer Rat
-							["requireSkill"] = FISHING,
+					["zone-text-areaID"] = 4560,	-- The Underbelly
+					["icon"] = "Interface\\LFGFRAME\\LFGICON-DALARANSEWERS",
+					["groups"] = {
+						n(ACHIEVEMENTS, {
+							ach(1958, {	-- I Smell A Giant Rat
+								["provider"] = { "i", 43698 },	-- Giant Sewer Rat
+								["requireSkill"] = FISHING,
+							}),
 						}),
-					}),
-					prof(COOKING, {
-						i(43100, {	-- Infused Mushroom
-							["provider"] = { "o", 192818 },	-- Infused Mushroom
+						prof(COOKING, {
+							i(43100, {	-- Infused Mushroom
+								["provider"] = { "o", 192818 },	-- Infused Mushroom
+							}),
 						}),
-					}),
-					prof(FISHING, {
-						i(45903),	-- Corroded Jewelry
-						i(43698, {	-- Giant Sewer Rat (PET!)
-							["timeline"] = { "added 3.0.2.8926" },
+						prof(FISHING, {
+							i(45903),	-- Corroded Jewelry
+							i(43698, {	-- Giant Sewer Rat (PET!)
+								["timeline"] = { "added 3.0.2.8926" },
+							}),
 						}),
-					}),
-					n(QUESTS, {
-						q(13571, {	-- Fletcher's Lost and Found
-							["qg"] = 32516,	-- Washed-Up Mage
-							["sourceQuest"] = 12645,	-- The Taste Test
-							["coord"] = { 44.2, 25.6, NORTHREND_THE_UNDERBELLY },
-							["requireSkill"] = COOKING,
-							["groups"] = {
-								recipe(53056),	-- Kungaloosh
-							},
-						}),
-						q(12853, {	-- Luxurious Getaway!
-							["qg"] = 30490,	-- Rin Duoctane
-							-- #if AFTER 7.3.5.25600
-							["sourceQuests"] = {
-								49554,	-- Hero's Call: Storm Peaks!
-								49536,	-- Warchief's Command: Storm Peaks!
-							},
-							-- #endif
-							["coord"] = { 31.2, 49.6, NORTHREND_THE_UNDERBELLY },
-						}),
-						q(13845, {	-- Sealed Vial of Poison
-							["providers"] = {
-								{ "i", 46004 },	-- Sealed Vial of Poison
-								{ "i", 46004 },	-- Sealed Vial of Poison
-								{ "n", 29535 },	-- Alchemist Cinesra <Poison Vendor>
-							},
-							["coord"] = { 63.6, 12.0, NORTHREND_THE_UNDERBELLY },
-							["repeatable"] = true,
-						}),
-					}),
-					n(VENDORS, {
-						n(29535, {	-- Alchemist Cinesra
-							["coord"] = { 63.2, 11.4, NORTHREND_THE_UNDERBELLY },
-							["sym"] = {{"select","itemID",
-								4565,	-- Simple Dagger
-							}},
-						}),
-						n(30885, {	-- Blazik Fireclaw <Hateful Gladiator> [Legion?] / Blazik Fireclaw <Legacy Arena Armor> [CATA+] / Blazik Fireclaw <Water Vendor> [WRATH]
-							["coord"] = { 59.5, 57.9, NORTHREND_THE_UNDERBELLY },
-							-- #if AFTER LEGION
-							["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL },{ "pop" }},	-- Hateful Gladiator's Set
-							-- #elseif AFTER CATA
-							["sym"] = {{"sub", "pvp_gear_base", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR },{ "pop" }},	-- Brutal Gladiator's Set [TODO: Specifically Just the Armor...]
-							-- #endif
-						}),
-						n(106887, {	-- Cravitz Lorent <Shady Book Dealer>
-							["description"] = "This vendor is not always present. It can appear in either version of Dalaran.",
-							["coord"] = { 47.0, 28.1, NORTHREND_THE_UNDERBELLY },
-							["timeline"] = { "added 7.0.3.22290" },
-							["groups"] = {
-								i(136803, {	-- Dirty Tricks, Vol 1: Detection
-									--["spellID"] = 210108,	-- Detection
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
-								i(136927, {	-- Scarlet Confessional Book (TOY!)
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
-								i(141056, {	-- Technique: Glyph of Burnout (RECIPE!)
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
-								i(136972, {	-- Tome of Hex: Cockroach
-									["timeline"] = { "added 7.0.3.22248" },
-									["f"] = RECIPES,
-								}),
-							},
-						}),
-						n(29537, {	-- Darahir <Reagents & Magical Goods>
-							["coord"] = { 63.4, 16.2, NORTHREND_THE_UNDERBELLY },
-							["groups"] = {
-								i(39973, {	-- Ghostly Skull (PET!)
-									["timeline"] = { "added 3.0.2.8970" },
-								}),
-							},
-						}),
-						n(69321, {	-- Herwin Steampop <Deadly Gladiator>
-							["coord"] = { 59.4, 57.8, NORTHREND_THE_UNDERBELLY },
-							["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" }},	-- Deadly Gladiator's Set
-							["timeline"] = { "added 5.2.0.16577" },
-						}),
-						n(29538, {	-- Hexil Garrot <Tools of the Trade>
-							["coord"] = { 60.6, 11.9, NORTHREND_THE_UNDERBELLY },
-							["groups"] = {
-								emov(60, i(40739)),	-- Bands of the Great Tree
-								emof(60, i(50994)),	-- Belt of Petrified Ivy
-								emoc(28, i(45830)),	-- Belt of the Living Thicket
-								emoc(28, i(45829)),	-- Belt of the Twilight Assassin
-								emov(40, i(40748)),	-- Boots of Captain Ellis
-								emof(60, i(50982)),	-- Cat Burglar's Grips
-								i(44652),	-- Dalaran Dagger
-								i(44644, {	-- Dalaran Dart
-									["timeline"] = { "removed 5.0.4" },
-								}),
-								i(44641),	-- Dalaran Knuckles
-								emoc(28, i(45838)),	-- Gloves of the Blind Stalker
-								emof(60, i(50981)),	-- Gloves of the Great Horned Owl
-								emoc(28, i(45839)),	-- Grips of the Secret Grove
-								emoh(40, i(40694)),	-- Jorach's Crocolisk Skin Belt
-								emoc(39, i(45846)),	-- Leggings of Wavering Shadow
-								emoh(15, i(40716, {	-- Lillehoff's Winged Blades
-									["timeline"] = { "removed 5.0.4" },
-								})),
-								emoh(50, i(40704)),	-- Pride
-								emov(40, i(40749)),	-- Rainey's Chewed Boots
-								emoh(50, i(40702)),	-- Rolfsen's Ripper
-								emof(95, i(50972)),	-- Shadow Seeker's Tunic
-								emof(60, i(50995)),	-- Vengeful Noose
-								emof(95, i(50973)),	-- Vestments of Spruce and Fir
-								emoh(40, i(40695)),	-- Vine Belt of the Woodland Dryad
-								emoc(39, i(45847)),	-- Wildstrider Legguards
-								emov(60, i(40738)),	-- Wristwraps of the Cutthroat
-							},
-						}),
-						n(69318, {	-- Kylo Kelwin <Furious Gladiator>
-							["coord"] = { 59.0, 57.6, NORTHREND_THE_UNDERBELLY },
-							["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
-							["timeline"] = { "added 5.2.0.16577" },
-						}),
-						applyclassicphase(CATA_PHASE_THREE, n(54653, {	-- Nargle Lashcord <Glorious Conquest Quartermaster>
-							["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
-							-- #if BEFORE 7.0.1
-							["sym"] = {{"sub", "pvp_gear_base", CATA_TIER, SEASON_CATACLYSMIC, PVP_GLADIATOR },{"merge"},},	-- Cataclysmic Gladiator's Set
-							-- #endif
-							["timeline"] = { "added 4.3.0", "removed 7.0.1" },
-						})),
-						applyclassicphase(CATA_PHASE_TWO, n(52541, {	-- Nargle Lashcord <Glorious Conquest Quartermaster>
-							["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
-							-- #if BEFORE 5.0.1
-							["sym"] = {{"sub", "pvp_gear_base", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR },{"merge"},},	-- Ruthless Gladiator's Set
-							-- #endif
-							["timeline"] = { "added 4.2.0.14333", "removed 4.3.0" },
-						})),
-						applyclassicphase(CATA_PHASE_ONE, n(40211, {	-- Nargle Lashcord <Glorious Conquest Quartermaster>
-							["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
-							-- #if BEFORE 5.0.1
-							["sym"] = {{"sub", "pvp_gear_base", CATA_TIER, SEASON_VICIOUS, PVP_GLADIATOR },{"merge"},},	-- Vicious Gladiator's Set
-							-- #endif
-							["timeline"] = { "added 4.0.3.13277", "removed 4.2.0.14333" },
-						})),
-						applyclassicphase(WRATH_PHASE_FOUR, n(33936, {	-- Nargle Lashcord <Veteran Arena Vendor> // Original S8 Vendor // Wrathful Gladiator: Season 8 Gladiator Gear
-							["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
-							-- #if BEFORE 4.0.3.13277
-							["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_WRATHFUL, PVP_GLADIATOR },{ "pop" }},	-- Wrathful Gladiator's Set
-							-- #endif
-							["timeline"] = { "removed 4.0.3.13277" },
-						})),
-						applyclassicphase(WRATH_PHASE_THREE, n(33927, {	-- Nargle Lashcord <Veteran Arena Vendor> // Original S7 Vendor // Relentless Gladiator: Season 7 Gladiator Gear
-							["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
-							-- #if BEFORE 4.0.3.13277
-							["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR },{ "pop" }},	-- Relentless Gladiator's Set
-							-- #endif
-							["timeline"] = { "removed 4.0.3.13277" },
-						})),
-						applyclassicphase(WRATH_PHASE_TWO, n(33921, {	-- Nargle Lashcord <Veteran Arena Vendor> // Original S6 Vendor // Furious Gladiator: Season 6 Gladiator Gear
-							["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
-							-- #if BEFORE 4.0.3.13277
-							["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
-							-- #endif
-							["timeline"] = { "removed 4.0.3.13277" },
-						})),
-						applyclassicphase(WRATH_PHASE_ONE, n(31863, {	-- Nargle Lashcord <Veteran Arena Vendor> // Original S5 Vendor // Deadly Gladiator: Season 5 Gladiator Gear
-							["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
-							-- #if BEFORE 4.0.3.13277
-							["sym"] = {
-								{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" },		-- Deadly Gladiator's Set
-								-- #if ANYCLASSIC
-								{ "select", "itemID", 201993 },	-- Deadly Gladiator's Tabard (Wrath Classic Only)
+						n(QUESTS, {
+							q(13571, {	-- Fletcher's Lost and Found
+								["qg"] = 32516,	-- Washed-Up Mage
+								["sourceQuest"] = 12645,	-- The Taste Test
+								["coord"] = { 44.2, 25.6, NORTHREND_THE_UNDERBELLY },
+								["requireSkill"] = COOKING,
+								["groups"] = {
+									recipe(53056),	-- Kungaloosh (RECIPE!)
+								},
+							}),
+							q(12853, {	-- Luxurious Getaway!
+								["qg"] = 30490,	-- Rin Duoctane
+								-- #if AFTER 7.3.5.25600
+								["sourceQuests"] = {
+									49554,	-- Hero's Call: Storm Peaks!
+									49536,	-- Warchief's Command: Storm Peaks!
+								},
 								-- #endif
-							},
-							-- #endif
-							["timeline"] = { "removed 4.0.3.13277" },
-						})),
-						applyclassicphase(CATA_PHASE_ONE, n(40212, {	-- Trapjaw Rix <Savage Gladiator> [Legion?] / Blazik Fireclaw <Legacy Arena Armor> [CATA+]
-							["coord"] = { 59.3, 57.3, NORTHREND_THE_UNDERBELLY },
-							-- #if AFTER LEGION
-							["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR },{ "pop" }},	-- Savage Gladiator's Set
-							-- #elseif AFTER CATA
-							["sym"] = {{"sub", "pvp_gear_base", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR },{ "pop" }},	-- Brutal Gladiator's Set [TODO: Specifically Just the Weapons...]
-							-- #endif
-							["timeline"] = { "added 4.0.3.13277" },
-						})),
-						applyclassicphase(WRATH_PHASE_FOUR, n(34095, {	-- Trapjaw Rix <Veteran Arena Vendor> / <Exceptional Arena Weaponry> [WRATH] Original WOTLK S8 ELITE VENDOR
-							["coord"] = { 59.9, 57.0, NORTHREND_THE_UNDERBELLY },
-							-- #if BEFORE 4.0.3.13277
-							["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_WRATHFUL, PVP_ELITE },{"merge"}},	-- Wrathful Gladiator's Elite Set
-							-- #endif
-							["timeline"] = { "removed 4.0.3.13277" },
-						})),
-						applyclassicphase(WRATH_PHASE_THREE, n(34092, {	-- Trapjaw Rix <Veteran Arena Vendor> / <Exceptional Arena Weaponry> [WRATH] Original WOTLK S7 ELITE VENDOR
-							["coord"] = { 59.9, 57.0, NORTHREND_THE_UNDERBELLY },
-							-- #if BEFORE 4.0.3.13277
-							["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_RELENTLESS, PVP_ELITE },{"merge"}},	-- Relentless Gladiator's Elite Set
-							-- #endif
-							["timeline"] = { "removed 4.0.3.13277" },
-						})),
-						applyclassicphase(WRATH_PHASE_TWO, n(34087, {	-- Trapjaw Rix <Veteran Arena Vendor> / <Exceptional Arena Weaponry> [WRATH] Original WOTLK S6 ELITE VENDOR
-							["coord"] = { 59.9, 57.0, NORTHREND_THE_UNDERBELLY },
-							-- #if BEFORE 4.0.3.13277
-							["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_FURIOUS, PVP_ELITE },{"merge"}},	-- Furious Gladiator's Elite Set
-							-- #endif
-							["timeline"] = { "removed 4.0.3.13277" },
-						})),
-						n(69971, {	-- Xazi Smolderpipe <Wrathful Gladiator> [Legion?] / Xazi Smolderpipe <Conquest Quartermaster> [MOP?]
-							["coord"] = { 58.5, 58.3, NORTHREND_THE_UNDERBELLY },
-							-- #if AFTER LEGION
-							["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_WRATHFUL, PVP_GLADIATOR },{ "pop" }},	-- Wrathful Gladiator's Set
-							-- #else
-							["sym"] = {{"sub", "pvp_gear_base", CATA_TIER, SEASON_CATACLYSMIC, PVP_GLADIATOR },{ "pop" }},	-- Cataclysmic Gladiator's Set
-							-- #endif
-							["timeline"] = { "added 5.2.0.16577" },
+								["coord"] = { 31.2, 49.6, NORTHREND_THE_UNDERBELLY },
+							}),
+							q(13845, {	-- Sealed Vial of Poison
+								["providers"] = {
+									{ "i", 46004 },	-- Sealed Vial of Poison
+									{ "i", 46004 },	-- Sealed Vial of Poison
+									{ "n", 29535 },	-- Alchemist Cinesra <Poison Vendor>
+								},
+								["coord"] = { 63.6, 12.0, NORTHREND_THE_UNDERBELLY },
+								["repeatable"] = true,
+							}),
 						}),
-						applyclassicphase(WRATH_PHASE_FOUR, n(33937, {	-- Xazi Smolderpipe <Arena Vendor> // Original S8 Vendor // Relentless Gladiator: Season 7 Gladiator Gear
-							["coord"] = { 58.8, 59.6, NORTHREND_THE_UNDERBELLY },
-							-- #if BEFORE 4.0.3.13277
-							["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR },{ "pop" }},	-- Relentless Gladiator's Set
-							-- #endif
-							["timeline"] = { "removed 4.0.3.13277" },
-						})),
-						applyclassicphase(WRATH_PHASE_THREE, n(33926, {	-- Xazi Smolderpipe <Arena Vendor> // Original S7 Vendor // Furious Gladiator: Season 6 Gladiator Gear
-							["coord"] = { 58.8, 59.6, NORTHREND_THE_UNDERBELLY },
-							-- #if BEFORE 4.0.3.13277
-							["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
-							-- #endif
-							["timeline"] = { "removed 4.0.3.13277" },
-						})),
-						applyclassicphase(WRATH_PHASE_TWO, n(33922, {	-- Xazi Smolderpipe <Arena Vendor> // Original S6 Vendor // Deadly Gladiator: Season 5 Gladiator Gear
-							["coord"] = { 58.8, 59.6, NORTHREND_THE_UNDERBELLY },
-							-- #if BEFORE 4.0.3.13277
-							["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" }},	-- Deadly Gladiator's Set
-							-- #endif
-							["timeline"] = { "removed 4.0.3.13277" },
-						})),
-						applyclassicphase(WRATH_PHASE_ONE, n(31864, {	-- Xazi Smolderpipe <Arena Vendor> // Original S5 Vendor // Hateful Gladiator: Season 5 Gladiator Gear
-							["coord"] = { 58.8, 59.6, NORTHREND_THE_UNDERBELLY },
-							-- #if BEFORE 4.0.3.13277
-							["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL },{ "pop" }},	-- Hateful Gladiator's Set
-							-- #endif
-							["timeline"] = { "removed 4.0.3.13277" },
-						})),
-						n(69973, {	-- Zom Bocom <Relentless Gladiator> [Legion?] / Zom Bocom <Honor Quartermaster> [MOP?]
-							["coord"] = { 59.0, 58.8, NORTHREND_THE_UNDERBELLY },
-							-- #if AFTER LEGION
-							["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR },{ "pop" }},	-- Relentless Gladiator's Set
-							-- #else
-							["sym"] = {{"sub", "pvp_gear_base", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR },{ "pop" }},	-- Ruthless Gladiator's Set
-							-- #endif
-							["timeline"] = { "added 5.2.0.16577" },
+						n(VENDORS, {
+							n(29535, {	-- Alchemist Cinesra
+								["coord"] = { 63.2, 11.4, NORTHREND_THE_UNDERBELLY },
+								["sym"] = {{"select","itemID",
+									4565,	-- Simple Dagger
+								}},
+							}),
+							n(30885, {	-- Blazik Fireclaw <Hateful Gladiator> [Legion?] / Blazik Fireclaw <Legacy Arena Armor> [CATA+] / Blazik Fireclaw <Water Vendor> [WRATH]
+								["coord"] = { 59.5, 57.9, NORTHREND_THE_UNDERBELLY },
+								-- #if AFTER LEGION
+								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL },{ "pop" }},	-- Hateful Gladiator's Set
+								-- #elseif AFTER CATA
+								["sym"] = {{"sub", "pvp_gear_base", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR },{ "pop" }},	-- Brutal Gladiator's Set [TODO: Specifically Just the Armor...]
+								-- #endif
+							}),
+							n(106887, {	-- Cravitz Lorent <Shady Book Dealer>
+								["description"] = "This vendor is not always present. It can appear in either version of Dalaran.",
+								["coord"] = { 47.0, 28.1, NORTHREND_THE_UNDERBELLY },
+								["timeline"] = { "added 7.0.3.22290" },
+								["groups"] = {
+									i(136803, {	-- Dirty Tricks, Vol 1: Detection (CI!)
+										["timeline"] = { "added 7.0.3.22248" },
+									}),
+									i(136927, {	-- Scarlet Confessional Book (TOY!)
+										["timeline"] = { "added 7.0.3.22248" },
+									}),
+									i(141056, {	-- Technique: Glyph of Burnout (RECIPE!)
+										["timeline"] = { "added 7.0.3.22248" },
+									}),
+									i(136972, {	-- Tome of Hex: Cockroach (CI!)
+										["timeline"] = { "added 7.0.3.22248" },
+									}),
+								},
+							}),
+							n(29537, {	-- Darahir <Reagents & Magical Goods>
+								["coord"] = { 63.4, 16.2, NORTHREND_THE_UNDERBELLY },
+								["groups"] = {
+									i(39973, {	-- Ghostly Skull (PET!)
+										["timeline"] = { "added 3.0.2.8970" },
+									}),
+								},
+							}),
+							n(69321, {	-- Herwin Steampop <Deadly Gladiator>
+								["coord"] = { 59.4, 57.8, NORTHREND_THE_UNDERBELLY },
+								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" }},	-- Deadly Gladiator's Set
+								["timeline"] = { "added 5.2.0.16577" },
+							}),
+							n(29538, {	-- Hexil Garrot <Tools of the Trade>
+								["coord"] = { 60.6, 11.9, NORTHREND_THE_UNDERBELLY },
+								["groups"] = {
+									emov(60, i(40739)),	-- Bands of the Great Tree
+									emof(60, i(50994)),	-- Belt of Petrified Ivy
+									emoc(28, i(45830)),	-- Belt of the Living Thicket
+									emoc(28, i(45829)),	-- Belt of the Twilight Assassin
+									emov(40, i(40748)),	-- Boots of Captain Ellis
+									emof(60, i(50982)),	-- Cat Burglar's Grips
+									i(44652),	-- Dalaran Dagger
+									i(44644, {	-- Dalaran Dart
+										["timeline"] = { "removed 5.0.4" },
+									}),
+									i(44641),	-- Dalaran Knuckles
+									emoc(28, i(45838)),	-- Gloves of the Blind Stalker
+									emof(60, i(50981)),	-- Gloves of the Great Horned Owl
+									emoc(28, i(45839)),	-- Grips of the Secret Grove
+									emoh(40, i(40694)),	-- Jorach's Crocolisk Skin Belt
+									emoc(39, i(45846)),	-- Leggings of Wavering Shadow
+									emoh(15, i(40716, {	-- Lillehoff's Winged Blades
+										["timeline"] = { "removed 5.0.4" },
+									})),
+									emoh(50, i(40704)),	-- Pride
+									emov(40, i(40749)),	-- Rainey's Chewed Boots
+									emoh(50, i(40702)),	-- Rolfsen's Ripper
+									emof(95, i(50972)),	-- Shadow Seeker's Tunic
+									emof(60, i(50995)),	-- Vengeful Noose
+									emof(95, i(50973)),	-- Vestments of Spruce and Fir
+									emoh(40, i(40695)),	-- Vine Belt of the Woodland Dryad
+									emoc(39, i(45847)),	-- Wildstrider Legguards
+									emov(60, i(40738)),	-- Wristwraps of the Cutthroat
+								},
+							}),
+							n(69318, {	-- Kylo Kelwin <Furious Gladiator>
+								["coord"] = { 59.0, 57.6, NORTHREND_THE_UNDERBELLY },
+								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
+								["timeline"] = { "added 5.2.0.16577" },
+							}),
+							applyclassicphase(CATA_PHASE_THREE, n(54653, {	-- Nargle Lashcord <Glorious Conquest Quartermaster>
+								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
+								-- #if BEFORE 7.0.1
+								["sym"] = {{"sub", "pvp_gear_base", CATA_TIER, SEASON_CATACLYSMIC, PVP_GLADIATOR },{"merge"},},	-- Cataclysmic Gladiator's Set
+								-- #endif
+								["timeline"] = { "added 4.3.0", "removed 7.0.1" },
+							})),
+							applyclassicphase(CATA_PHASE_TWO, n(52541, {	-- Nargle Lashcord <Glorious Conquest Quartermaster>
+								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
+								-- #if BEFORE 5.0.1
+								["sym"] = {{"sub", "pvp_gear_base", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR },{"merge"},},	-- Ruthless Gladiator's Set
+								-- #endif
+								["timeline"] = { "added 4.2.0.14333", "removed 4.3.0" },
+							})),
+							applyclassicphase(CATA_PHASE_ONE, n(40211, {	-- Nargle Lashcord <Glorious Conquest Quartermaster>
+								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
+								-- #if BEFORE 5.0.1
+								["sym"] = {{"sub", "pvp_gear_base", CATA_TIER, SEASON_VICIOUS, PVP_GLADIATOR },{"merge"},},	-- Vicious Gladiator's Set
+								-- #endif
+								["timeline"] = { "added 4.0.3.13277", "removed 4.2.0.14333" },
+							})),
+							applyclassicphase(WRATH_PHASE_FOUR, n(33936, {	-- Nargle Lashcord <Veteran Arena Vendor> // Original S8 Vendor // Wrathful Gladiator: Season 8 Gladiator Gear
+								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
+								-- #if BEFORE 4.0.3.13277
+								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_WRATHFUL, PVP_GLADIATOR },{ "pop" }},	-- Wrathful Gladiator's Set
+								-- #endif
+								["timeline"] = { "removed 4.0.3.13277" },
+							})),
+							applyclassicphase(WRATH_PHASE_THREE, n(33927, {	-- Nargle Lashcord <Veteran Arena Vendor> // Original S7 Vendor // Relentless Gladiator: Season 7 Gladiator Gear
+								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
+								-- #if BEFORE 4.0.3.13277
+								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR },{ "pop" }},	-- Relentless Gladiator's Set
+								-- #endif
+								["timeline"] = { "removed 4.0.3.13277" },
+							})),
+							applyclassicphase(WRATH_PHASE_TWO, n(33921, {	-- Nargle Lashcord <Veteran Arena Vendor> // Original S6 Vendor // Furious Gladiator: Season 6 Gladiator Gear
+								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
+								-- #if BEFORE 4.0.3.13277
+								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
+								-- #endif
+								["timeline"] = { "removed 4.0.3.13277" },
+							})),
+							applyclassicphase(WRATH_PHASE_ONE, n(31863, {	-- Nargle Lashcord <Veteran Arena Vendor> // Original S5 Vendor // Deadly Gladiator: Season 5 Gladiator Gear
+								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
+								-- #if BEFORE 4.0.3.13277
+								["sym"] = {
+									{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" },		-- Deadly Gladiator's Set
+									-- #if ANYCLASSIC
+									{ "select", "itemID", 201993 },	-- Deadly Gladiator's Tabard (Wrath Classic Only)
+									-- #endif
+								},
+								-- #endif
+								["timeline"] = { "removed 4.0.3.13277" },
+							})),
+							applyclassicphase(CATA_PHASE_ONE, n(40212, {	-- Trapjaw Rix <Savage Gladiator> [Legion?] / Blazik Fireclaw <Legacy Arena Armor> [CATA+]
+								["coord"] = { 59.3, 57.3, NORTHREND_THE_UNDERBELLY },
+								-- #if AFTER LEGION
+								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR },{ "pop" }},	-- Savage Gladiator's Set
+								-- #elseif AFTER CATA
+								["sym"] = {{"sub", "pvp_gear_base", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR },{ "pop" }},	-- Brutal Gladiator's Set [TODO: Specifically Just the Weapons...]
+								-- #endif
+								["timeline"] = { "added 4.0.3.13277" },
+							})),
+							applyclassicphase(WRATH_PHASE_FOUR, n(34095, {	-- Trapjaw Rix <Veteran Arena Vendor> / <Exceptional Arena Weaponry> [WRATH] Original WOTLK S8 ELITE VENDOR
+								["coord"] = { 59.9, 57.0, NORTHREND_THE_UNDERBELLY },
+								-- #if BEFORE 4.0.3.13277
+								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_WRATHFUL, PVP_ELITE },{"merge"}},	-- Wrathful Gladiator's Elite Set
+								-- #endif
+								["timeline"] = { "removed 4.0.3.13277" },
+							})),
+							applyclassicphase(WRATH_PHASE_THREE, n(34092, {	-- Trapjaw Rix <Veteran Arena Vendor> / <Exceptional Arena Weaponry> [WRATH] Original WOTLK S7 ELITE VENDOR
+								["coord"] = { 59.9, 57.0, NORTHREND_THE_UNDERBELLY },
+								-- #if BEFORE 4.0.3.13277
+								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_RELENTLESS, PVP_ELITE },{"merge"}},	-- Relentless Gladiator's Elite Set
+								-- #endif
+								["timeline"] = { "removed 4.0.3.13277" },
+							})),
+							applyclassicphase(WRATH_PHASE_TWO, n(34087, {	-- Trapjaw Rix <Veteran Arena Vendor> / <Exceptional Arena Weaponry> [WRATH] Original WOTLK S6 ELITE VENDOR
+								["coord"] = { 59.9, 57.0, NORTHREND_THE_UNDERBELLY },
+								-- #if BEFORE 4.0.3.13277
+								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_FURIOUS, PVP_ELITE },{"merge"}},	-- Furious Gladiator's Elite Set
+								-- #endif
+								["timeline"] = { "removed 4.0.3.13277" },
+							})),
+							n(69971, {	-- Xazi Smolderpipe <Wrathful Gladiator> [Legion?] / Xazi Smolderpipe <Conquest Quartermaster> [MOP?]
+								["coord"] = { 58.5, 58.3, NORTHREND_THE_UNDERBELLY },
+								-- #if AFTER LEGION
+								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_WRATHFUL, PVP_GLADIATOR },{ "pop" }},	-- Wrathful Gladiator's Set
+								-- #else
+								["sym"] = {{"sub", "pvp_gear_base", CATA_TIER, SEASON_CATACLYSMIC, PVP_GLADIATOR },{ "pop" }},	-- Cataclysmic Gladiator's Set
+								-- #endif
+								["timeline"] = { "added 5.2.0.16577" },
+							}),
+							applyclassicphase(WRATH_PHASE_FOUR, n(33937, {	-- Xazi Smolderpipe <Arena Vendor> // Original S8 Vendor // Relentless Gladiator: Season 7 Gladiator Gear
+								["coord"] = { 58.8, 59.6, NORTHREND_THE_UNDERBELLY },
+								-- #if BEFORE 4.0.3.13277
+								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR },{ "pop" }},	-- Relentless Gladiator's Set
+								-- #endif
+								["timeline"] = { "removed 4.0.3.13277" },
+							})),
+							applyclassicphase(WRATH_PHASE_THREE, n(33926, {	-- Xazi Smolderpipe <Arena Vendor> // Original S7 Vendor // Furious Gladiator: Season 6 Gladiator Gear
+								["coord"] = { 58.8, 59.6, NORTHREND_THE_UNDERBELLY },
+								-- #if BEFORE 4.0.3.13277
+								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
+								-- #endif
+								["timeline"] = { "removed 4.0.3.13277" },
+							})),
+							applyclassicphase(WRATH_PHASE_TWO, n(33922, {	-- Xazi Smolderpipe <Arena Vendor> // Original S6 Vendor // Deadly Gladiator: Season 5 Gladiator Gear
+								["coord"] = { 58.8, 59.6, NORTHREND_THE_UNDERBELLY },
+								-- #if BEFORE 4.0.3.13277
+								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" }},	-- Deadly Gladiator's Set
+								-- #endif
+								["timeline"] = { "removed 4.0.3.13277" },
+							})),
+							applyclassicphase(WRATH_PHASE_ONE, n(31864, {	-- Xazi Smolderpipe <Arena Vendor> // Original S5 Vendor // Hateful Gladiator: Season 5 Gladiator Gear
+								["coord"] = { 58.8, 59.6, NORTHREND_THE_UNDERBELLY },
+								-- #if BEFORE 4.0.3.13277
+								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL },{ "pop" }},	-- Hateful Gladiator's Set
+								-- #endif
+								["timeline"] = { "removed 4.0.3.13277" },
+							})),
+							n(69973, {	-- Zom Bocom <Relentless Gladiator> [Legion?] / Zom Bocom <Honor Quartermaster> [MOP?]
+								["coord"] = { 59.0, 58.8, NORTHREND_THE_UNDERBELLY },
+								-- #if AFTER LEGION
+								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR },{ "pop" }},	-- Relentless Gladiator's Set
+								-- #else
+								["sym"] = {{"sub", "pvp_gear_base", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR },{ "pop" }},	-- Ruthless Gladiator's Set
+								-- #endif
+								["timeline"] = { "added 5.2.0.16577" },
+							}),
+							applyclassicphase(CATA_PHASE_THREE, n(54651, {	-- Zom Bocom <Honor Quartermaster>
+								-- #if BEFORE 5.2.0.16577
+								["sym"] = {{"sub", "pvp_gear_base", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR },{"merge"},},	-- Ruthless Gladiator's Set
+								-- #endif
+								["timeline"] = { "added 4.3.0", "removed 5.2.0.16577" },
+							})),
+							applyclassicphase(CATA_PHASE_TWO, n(52534, {	-- Zom Bocom <Honor Quartermaster>
+								["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
+								-- #if BEFORE 5.0.1
+								["sym"] = {{"sub", "pvp_gear_base", CATA_TIER, SEASON_VICIOUS, PVP_GLADIATOR },{"merge"},},	-- Vicious Gladiator's Set
+								-- #endif
+								["timeline"] = { "added 4.2.0.14333", "removed 4.3.0" },
+							})),
+							applyclassicphase(CATA_PHASE_ONE, n(40205, {	-- Zom Bocom <Honor Quartermaster>
+								["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
+								-- #if BEFORE 5.0.1
+								["sym"] = {{"sub", "pvp_gear_base", CATA_TIER, SEASON_VICIOUS, PVP_HONOR },{"merge"},},	-- Bloodthirsty Gladiator's Set
+								-- #endif
+								["timeline"] = { "added 4.0.3.13277", "removed 4.2.0.14333" },
+							})),
+							applyclassicphase(WRATH_PHASE_FOUR, n(33938, {	-- Zom Bocom <Apprentice Arena Vendor> // Original S8 Vendor // Furious Gladiator: Season 8 Honor Gear
+								["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
+								-- #if BEFORE 4.0.3.13277
+								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
+								-- #endif
+								["timeline"] = { "removed 4.0.3.13277" },
+							})),
+							applyclassicphase(WRATH_PHASE_THREE, n(33925, {	-- Zom Bocom <Apprentice Arena Vendor> // Original S7 Vendor // Deadly Gladiator: Season 7 Honor Gear
+								["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
+								-- #if BEFORE 4.0.3.13277
+								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" }},	-- Deadly Gladiator's Set
+								-- #endif
+								["timeline"] = { "removed 4.0.3.13277" },
+							})),
+							applyclassicphase(WRATH_PHASE_TWO, n(33923, {	-- Zom Bocom <Apprentice Arena Vendor> // Original S6 Vendor // Hateful Gladiator: Season 6 Honor Gear
+								["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
+								-- #if BEFORE 4.0.3.13277
+								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL },{ "pop" }},	-- Hateful Gladiator's Set
+								-- #endif
+								["timeline"] = { "removed 4.0.3.13277" },
+							})),
+							applyclassicphase(WRATH_PHASE_ONE, n(31865, {	-- Zom Bocom <Apprentice Arena Vendor> // Original S5 Vendor // Savage Gladiator: Season 5 Honor Gear
+								["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
+								-- #if BEFORE 4.0.3.13277
+								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR },{ "pop" }},	-- Savage Gladiator's Set
+								-- #endif
+								["timeline"] = { "removed 4.0.3.13277" },
+							})),
 						}),
-						applyclassicphase(CATA_PHASE_THREE, n(54651, {	-- Zom Bocom <Honor Quartermaster>
-							-- #if BEFORE 5.2.0.16577
-							["sym"] = {{"sub", "pvp_gear_base", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR },{"merge"},},	-- Ruthless Gladiator's Set
-							-- #endif
-							["timeline"] = { "added 4.3.0", "removed 5.2.0.16577" },
-						})),
-						applyclassicphase(CATA_PHASE_TWO, n(52534, {	-- Zom Bocom <Honor Quartermaster>
-							["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
-							-- #if BEFORE 5.0.1
-							["sym"] = {{"sub", "pvp_gear_base", CATA_TIER, SEASON_VICIOUS, PVP_GLADIATOR },{"merge"},},	-- Vicious Gladiator's Set
-							-- #endif
-							["timeline"] = { "added 4.2.0.14333", "removed 4.3.0" },
-						})),
-						applyclassicphase(CATA_PHASE_ONE, n(40205, {	-- Zom Bocom <Honor Quartermaster>
-							["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
-							-- #if BEFORE 5.0.1
-							["sym"] = {{"sub", "pvp_gear_base", CATA_TIER, SEASON_VICIOUS, PVP_HONOR },{"merge"},},	-- Bloodthirsty Gladiator's Set
-							-- #endif
-							["timeline"] = { "added 4.0.3.13277", "removed 4.2.0.14333" },
-						})),
-						applyclassicphase(WRATH_PHASE_FOUR, n(33938, {	-- Zom Bocom <Apprentice Arena Vendor> // Original S8 Vendor // Furious Gladiator: Season 8 Honor Gear
-							["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
-							-- #if BEFORE 4.0.3.13277
-							["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
-							-- #endif
-							["timeline"] = { "removed 4.0.3.13277" },
-						})),
-						applyclassicphase(WRATH_PHASE_THREE, n(33925, {	-- Zom Bocom <Apprentice Arena Vendor> // Original S7 Vendor // Deadly Gladiator: Season 7 Honor Gear
-							["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
-							-- #if BEFORE 4.0.3.13277
-							["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" }},	-- Deadly Gladiator's Set
-							-- #endif
-							["timeline"] = { "removed 4.0.3.13277" },
-						})),
-						applyclassicphase(WRATH_PHASE_TWO, n(33923, {	-- Zom Bocom <Apprentice Arena Vendor> // Original S6 Vendor // Hateful Gladiator: Season 6 Honor Gear
-							["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
-							-- #if BEFORE 4.0.3.13277
-							["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL },{ "pop" }},	-- Hateful Gladiator's Set
-							-- #endif
-							["timeline"] = { "removed 4.0.3.13277" },
-						})),
-						applyclassicphase(WRATH_PHASE_ONE, n(31865, {	-- Zom Bocom <Apprentice Arena Vendor> // Original S5 Vendor // Savage Gladiator: Season 5 Honor Gear
-							["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
-							-- #if BEFORE 4.0.3.13277
-							["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR },{ "pop" }},	-- Savage Gladiator's Set
-							-- #endif
-							["timeline"] = { "removed 4.0.3.13277" },
-						})),
-					}),
+					},
 				}),
 				n(ACHIEVEMENTS, {
 					ach(2094, {	-- A Penny For Your Thoughts
@@ -4176,16 +4178,11 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					ach(1010, {	-- Northrend Vanguard
+					achWithReps(1010, { 1106, 1090, 1098, 1091 }, {	-- Northrend Vanguard
 						["maps"] = {
 							DRAGONBLIGHT,
 							ICECROWN,
 						},
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnUpdate(t, 1106, 1090, 1098, 1091); end]],
-						-- #endif
 					}),
 					ach(1782, {	-- Our Daily Bread (A)
 						["requireSkill"] = COOKING,
@@ -4297,13 +4294,7 @@ root(ROOTS.Zones, {
 							i(44430),		-- Titanium Seal of Dalaran (TOY!)
 						},
 					}),
-					ach(1008, {	-- The Kirin Tor
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1090); end]],
-						-- #endif
-					}),
+					achWithRep(1008, 1090),	-- The Kirin Tor
 					ach(1957, {	-- There's Gold In That There Fountain
 						["sym"] = {{ "achievement_criteria" }},
 						["requireSkill"] = FISHING,
@@ -4333,7 +4324,12 @@ root(ROOTS.Zones, {
 				-- #if AFTER MOP
 				filter(BATTLE_PETS, {
 					pet(1604, {	-- Nethaera's Light (PET!)
-						["description"] = "To obtain this pet do /cheer at it.",
+						["description"] = "To obtain this pet do /cheer at it.\nNote: May go to the closest player who does not already have the pet.",
+						["coords"] = {
+							{ 41.2, 41.6, NORTHREND_DALARAN },
+							{ 53.3, 35.3, NORTHREND_DALARAN },
+						},
+						["crs"] = { 93432 },	-- Nethaera's Light
 						["timeline"] = { ADDED_6_2_0 },
 					}),
 				}),
@@ -4390,12 +4386,10 @@ root(ROOTS.Zones, {
 						}),
 						n(29505, {	-- Imindril Spearsong <Blacksmithing Trainer>
 							["coord"] = { 45.6, 28.6, NORTHREND_DALARAN },
-							["requireSkill"] = 9788,	-- Weaponsmith
 							["groups"] = WRATH_WEAPONSMITHING,
 						}),
 						n(29506, {	-- Orland Schaeffer <Blacksmithing Trainer>
 							["coord"] = { 45.0, 28.0, NORTHREND_DALARAN },
-							["requireSkill"] = 9788,	-- Armorsmith
 							["groups"] = WRATH_ARMORSMITHING,
 						}),
 					}),
@@ -4405,8 +4399,37 @@ root(ROOTS.Zones, {
 							["groups"] = WRATH_ENCHANTING,
 						}),
 					}),
+					prof(HERBALISM, {
+						n(28704, {	-- Dorothy Egan <Herbalism Trainer>
+							["coord"] = { 43.8, 34.8, NORTHREND_DALARAN },
+							["groups"] = WRATH_HERBALISM,
+						}),
+					}),
+					prof(LEATHERWORKING, {
+						n(28700, {	-- Diane Cannings <Leatherworking Trainer>
+							["coord"] = { 35.0, 28.6, NORTHREND_DALARAN },
+							["groups"] = WRATH_LEATHERWORKING,
+						}),
+					}),
+					prof(MINING, {
+						n(28698, {	-- Jedidiah Handers <Mining Trainer>
+							["coord"] = { 41.2, 27.0, NORTHREND_DALARAN },
+							["groups"] = WRATH_MINING,
+						}),
+					}),
 				}),
 				n(QUESTS, {
+					applyclassicphase(WRATH_PHASE_THREE, q(14409, {	-- A Cautious Return
+						["providers"] = {
+							{ "n", 36506 },	-- Daros Moonlance <The Highborne>
+							{ "i", 49335 },	-- Daros' Journal
+						},
+						["coord"] = { 36.4, 61.0, NORTHREND_DALARAN },
+						["timeline"] = { "added 3.3.0.10772", "removed 4.0.1" },	-- This was a pre-introduction quest for Night Elf Mages in Cataclysm.
+						["maps"] = { DARNASSUS },
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 71,
+					})),
 					q(29608, {	-- Allies in Dalaran
 						["qgs"] = {
 							23736,	-- Pricilla Winterwind
@@ -4420,7 +4443,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,	-- Gold said this gets invalidated by something, but idk what.
 					}),
-					q(13986, {	-- An Injured Colleague
+					applyclassicphase(WRATH_PHASE_THREE, q(13986, {	-- An Injured Colleague
 						["providers"] = {
 							{ "n", 35471 },	-- Sorn Proudmane
 							{ "i", 46775 },	-- Battered Tribal Shield
@@ -4430,7 +4453,7 @@ root(ROOTS.Zones, {
 						["maps"] = { THUNDER_BLUFF },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 71,
-					}),
+					})),
 					applyclassicphase(WRATH_PHASE_FOUR, q(24580, {	-- Anub'Rekhan Must Die!
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
@@ -4672,7 +4695,9 @@ root(ROOTS.Zones, {
 							12791,	-- The Magical Kingdom of Dalaran (Horde only - Grizzly Hills, Dragonblight, Borean Tundra, Howling Fjord)
 							12794,	-- The Magical Kingdom of Dalaran (Alliance only - Grizzly Hills, Dragonblight, Borean Tundra, Howling Fjord)
 							12796,	-- The Magical Kingdom of Dalaran (Zul'Drak)
+							-- #if AFTER 6.2.0.19953
 							39210,	-- The Magical Kingdom of Dalaran (Adventure Guide)
+							-- #endif
 						},
 						["coord"] = { 56.3, 46.7, NORTHREND_DALARAN },
 						["maps"] = { CRYSTALSONG_FOREST },
@@ -5219,7 +5244,7 @@ root(ROOTS.Zones, {
 							i(44711, {	-- Argent Crusade Commendation Badge
 								["timeline"] = { "deleted 6.0.2" },
 							}),
-							i(44713, {	-- Ebon Blade Commendation Badge
+							i(44713, {	-- Ebon Blade Commendation Badge [BOP]
 								["timeline"] = { "deleted 6.0.2" },
 							}),
 							i(43950, {	-- Kirin Tor Commendation Badge
@@ -5248,7 +5273,7 @@ root(ROOTS.Zones, {
 							i(44711, {	-- Argent Crusade Commendation Badge
 								["timeline"] = { "deleted 6.0.2" },
 							}),
-							i(44713, {	-- Ebon Blade Commendation Badge
+							i(44713, {	-- Ebon Blade Commendation Badge [BOP]
 								["timeline"] = { "deleted 6.0.2" },
 							}),
 							i(43950, {	-- Kirin Tor Commendation Badge
@@ -5277,7 +5302,7 @@ root(ROOTS.Zones, {
 							i(44711, {	-- Argent Crusade Commendation Badge
 								["timeline"] = { "deleted 6.0.2" },
 							}),
-							i(44713, {	-- Ebon Blade Commendation Badge
+							i(44713, {	-- Ebon Blade Commendation Badge [BOP]
 								["timeline"] = { "deleted 6.0.2" },
 							}),
 							i(43950, {	-- Kirin Tor Commendation Badge
@@ -5306,7 +5331,7 @@ root(ROOTS.Zones, {
 							i(44711, {	-- Argent Crusade Commendation Badge
 								["timeline"] = { "deleted 6.0.2" },
 							}),
-							i(44713, {	-- Ebon Blade Commendation Badge
+							i(44713, {	-- Ebon Blade Commendation Badge [BOP]
 								["timeline"] = { "deleted 6.0.2" },
 							}),
 							i(43950, {	-- Kirin Tor Commendation Badge
@@ -5441,9 +5466,9 @@ root(ROOTS.Zones, {
 						["requireSkill"] = COOKING,
 						["groups"] = {
 							currency(81),	-- Epicurean's Award
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33871),	-- Recipe: Stormchops
+							i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
+							i(33925),	-- Recipe: Delicious Chocolate Cake (RECIPE!)
+							i(33871),	-- Recipe: Stormchops (RECIPE!)
 							i(43007),	-- Northern Spices
 							i(44228),	-- Baby Spice
 							i(44114),	-- Old Spices
@@ -5500,6 +5525,77 @@ root(ROOTS.Zones, {
 							i(44693),	-- Wound Dressing
 						},
 					}),
+					-- #if ANYCLASSIC
+					applyclassicphase(WRATH_PHASE_THREE, n(207128, {	-- Animated Constellation <Sidereal Essence Exchange>
+						["coords"] = {
+							{ 38.0, 56.6, NORTHREND_DALARAN },
+							{ 66.4, 24.6, NORTHREND_DALARAN },
+						},
+						["groups"] = {
+							siderealessence(3, i(47556)),	-- Crusader Orb
+							siderealessence(38, i(45868)),	-- Aesir's Edge
+							siderealessence(38, i(46035)),	-- Aesuga, Hand of the Ardent Champion
+							siderealessence(19, i(46068)),	-- Amice of Inconceivable Horror
+							siderealessence(19, i(46048)),	-- Band of Lights
+							siderealessence(19, i(45455)),	-- Belt of the Crystal Tree
+							siderealessence(15, i(45888)),	-- Bitter Cold Armguards
+							siderealessence(25, i(45867)),	-- Breastplate of the Stoneshaper
+							siderealessence(32, i(46039)),	-- Breastplate of the Timeless
+							siderealessence(25, i(46097)),	-- Caress of Insanity
+							siderealessence(25, i(45930)),	-- Combatant's Bootblade
+							siderealessence(24, i(46038)),	-- Dark Matter
+							siderealessence(15, i(46032)),	-- Drape of the Faceless General
+							siderealessence(19, i(46042)),	-- Drape of the Messenger
+							siderealessence(15, i(45946)),	-- Fire Orchid Signet
+							siderealessence(15, i(45869)),	-- Fluxing Energy Coils
+							siderealessence(25, i(45982)),	-- Fused Alloy Legplates
+							siderealessence(38, i(45990)),	-- Fusion Blade
+							siderealessence(19, i(45928)),	-- Gauntlets of the Thunder God
+							siderealessence(25, i(45295)),	-- Gilded Steel Legplates
+							siderealessence(24, i(46043)),	-- Gloves of the Endless Dark
+							siderealessence(19, i(45943)),	-- Gloves of Whispering Winds
+							siderealessence(19, i(45988)),	-- Greaves of the Iron Army
+							siderealessence(38, i(46067)),	-- Hammer of Crushing Whispers
+							siderealessence(19, i(45293)),	-- Handguards of Potent Cures
+							siderealessence(25, i(45887)),	-- Ice Layered Barrier
+							siderealessence(38, i(45886)),	-- Icecore Staff
+							siderealessence(25, i(46034)),	-- Leggings of Profound Darkness
+							siderealessence(15, i(45456)),	-- Loop of the Agile
+							siderealessence(38, i(45870)),	-- Magnetized Projectile Emitter
+							siderealessence(19, i(45300)),	-- Mantle of Fiery Vengeance
+							siderealessence(24, i(46051)),	-- Meteorite Crystal
+							siderealessence(25, i(45993)),	-- Mimiron's Flight Goggles
+							siderealessence(19, i(45931)),	-- Mjolnir Runestone
+							siderealessence(19, i(46046)),	-- Nebula Band
+							siderealessence(24, i(46044)),	-- Observer's Mantle
+							siderealessence(15, i(45933)),	-- Pendant of the Shallow Grave
+							siderealessence(19, i(46047)),	-- Pendant of the Somber Witness
+							siderealessence(25, i(45448)),	-- Perilous Bite
+							siderealessence(15, i(45294)),	-- Petrified Ivy Sprig
+							siderealessence(24, i(46045)),	-- Pulsar Gloves
+							siderealessence(15, i(45871)),	-- Seal of Ulduar
+							siderealessence(15, i(45945)),	-- Seed of Budding Carnage
+							siderealessence(25, i(45947)),	-- Serilas, Blood Blade of Invar One-Arm
+							siderealessence(15, i(45297)),	-- Shimmering Seal
+							siderealessence(25, i(45876)),	-- Shiver
+							siderealessence(24, i(46037)),	-- Shoulderplates of the Celestial Watch
+							siderealessence(19, i(45929)),	-- Sif's Remembrance
+							siderealessence(15, i(46096)),	-- Signet of Soft Lament
+							siderealessence(19, i(46095)),	-- Soul-Devouring Cinch
+							siderealessence(24, i(46041)),	-- Starfall Girdle
+							siderealessence(24, i(46050)),	-- Starlight Treads
+							siderealessence(19, i(46040)),	-- Strength of the Heavens
+							siderealessence(19, i(45989)),	-- Tempered Mercury Greaves
+							siderealessence(25, i(45877)),	-- The Boreal Guard
+							siderealessence(25, i(45449)),	-- The Masticator
+							siderealessence(38, i(46033)),	-- Tortured Earth
+							siderealessence(15, i(45296)),	-- Twirling Blades
+							siderealessence(25, i(46036)),	-- Void Sabre
+							siderealessence(15, i(45447)),	-- Watchful Eye of Fate
+							siderealessence(32, i(46049)),	-- Zodiac Leggings
+						},
+					})),
+					-- #endif
 					n(28990, {	-- Anthony Durain <Shield Merchant>
 						["coord"] = { 46.8, 27.6, NORTHREND_DALARAN },
 						["groups"] = {
@@ -5584,155 +5680,7 @@ root(ROOTS.Zones, {
 					}),
 					n(32515, {	-- Braeg Stoutbeard
 						["coord"] = { 37.33, 28.69, NORTHREND_DALARAN },
-						["groups"] = {
-							i(44128, {	-- Arctic Fur
-								["cost"] = { { "i", 38425, 10 }, },	-- 10x Heavy Borean Leather
-							}),
-							i(44553, {	-- Pattern: Earthgiving Boots
-								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
-							}),
-							i(44552, {	-- Pattern: Earthgiving Legguards
-								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
-							}),
-							i(44516, {	-- Pattern: Eviscerator's Bindings
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44515, {	-- Pattern: Eviscerator's Chestguard
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44513, {	-- Pattern: Eviscerator's Facemask
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44517, {	-- Pattern: Eviscerator's Gauntlets
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44519, {	-- Pattern: Eviscerator's Legguards
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44514, {	-- Pattern: Eviscerator's Shoulderpads
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44520, {	-- Pattern: Eviscerator's Treads
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44518, {	-- Pattern: Eviscerator's Waistguard
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44547, {	-- Pattern: Giantmaim Bracers
-								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
-							}),
-							i(44546, {	-- Pattern: Giantmaim Legguards
-								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
-							}),
-							i(44588, {	-- Pattern: Icy Scale Belt
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44589, {	-- Pattern: Icy Scale Boots
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44587, {	-- Pattern: Icy Scale Chestguard
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44526, {	-- Pattern: Overcast Belt
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44528, {	-- Pattern: Overcast Boots
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44524, {	-- Pattern: Overcast Bracers
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44523, {	-- Pattern: Overcast Chestguard
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44525, {	-- Pattern: Overcast Handwraps
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44521, {	-- Pattern: Overcast Headguard
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44527, {	-- Pattern: Overcast Leggings
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44522, {	-- Pattern: Overcast Spaulders
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44586, {	-- Pattern: Polar Boots
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44585, {	-- Pattern: Polar Cord
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44584, {	-- Pattern: Polar Vest
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44548, {	-- Pattern: Revenant's Breastplate
-								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
-							}),
-							i(44549, {	-- Pattern: Revenant's Treads
-								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
-							}),
-							i(44543, {	-- Pattern: Stormhide Belt
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44538, {	-- Pattern: Stormhide Crown
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44542, {	-- Pattern: Stormhide Grips
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44540, {	-- Pattern: Stormhide Hauberk
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44544, {	-- Pattern: Stormhide Legguards
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44539, {	-- Pattern: Stormhide Shoulders
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44545, {	-- Pattern: Stormhide Stompers
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44541, {	-- Pattern: Stormhide Wristguards
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44535, {	-- Pattern: Swiftarrow Belt
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44537, {	-- Pattern: Swiftarrow Boots
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44533, {	-- Pattern: Swiftarrow Bracers
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44534, {	-- Pattern: Swiftarrow Gauntlets
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44532, {	-- Pattern: Swiftarrow Hauberk
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44530, {	-- Pattern: Swiftarrow Helm
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44536, {	-- Pattern: Swiftarrow Leggings
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44531, {	-- Pattern: Swiftarrow Shoulderguards
-								["cost"] = { { "i", 38425, 3 }, },	-- 3x Heavy Borean Leather
-							}),
-							i(44551, {	-- Pattern: Trollwoven Girdle
-								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
-							}),
-							i(44550, {	-- Pattern: Trollwoven Spaulders
-								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
-							}),
-							i(44932, {	-- Pattern: Windripper Boots
-								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
-							}),
-							i(44933, {	-- Pattern: Windripper Leggings
-								["cost"] = { { "i", 44128, 2 }, },	-- 2x Arctic Fur
-							}),
-						},
+						["groups"] = COMMON_WRATH_LEATHERWORKING_RECIPES,
 					}),
 					n(29523, {	-- Bragund Brightlink <Mail Armor Merchant>
 						["coord"] = { 51.2, 72.8, NORTHREND_DALARAN },
@@ -5879,9 +5827,8 @@ root(ROOTS.Zones, {
 					n(28722, {	-- Bryan Landers <Engineering Supplies>
 						["coord"] = { 39.0, 26.0, NORTHREND_DALARAN },
 						["groups"] = {
-							i(136782, {	-- Fireworks Instruction Manual
-								["timeline"] = { "added 7.0.3.22248" },
-								["spellID"] = 127933,	-- Fireworks
+							i(136782, {	-- Fireworks Instruction Manual (CI!)
+								["timeline"] = { ADDED_7_0_3_LAUNCH },
 							}),
 							i(23817, {	-- Schematic: Titanium Toolbox
 								["isLimited"] = true,
@@ -6000,30 +5947,30 @@ root(ROOTS.Zones, {
 								["timeline"] = { "added 7.0.3.22248" },
 							})),
 							epicurean(1, i(43007)),	-- Northern Spices
-							epicurean(3, i(43035)),	-- Recipe: Blackened Dragonfin
-							epicurean(3, i(43032)),	-- Recipe: Blackened Worg Steak
-							epicurean(3, i(43029)),	-- Recipe: Critter Bites
-							epicurean(3, i(43033)),	-- Recipe: Cuttlesteak
-							epicurean(3, i(43036)),	-- Recipe: Dragonfin Filet
-							epicurean(3, i(43024)),	-- Recipe: Firecracker Salmon
-							epicurean(5, i(43017)),	-- Recipe: Fish Feast
-							epicurean(3, i(43505)),	-- Recipe: Gigantic Feast
-							epicurean(3, i(43030)),	-- Recipe: Hearty Rhino
-							epicurean(3, i(43026)),	-- Recipe: Imperial Manta Steak
-							epicurean(3, i(43018)),	-- Recipe: Mega Mammoth Meal
-							epicurean(3, i(43022)),	-- Recipe: Mighty Rhino Dogs
-							epicurean(3, i(43023)),	-- Recipe: Poached Northern Sculpin
-							epicurean(3, i(43028)),	-- Recipe: Rhinolicious Wormsteak
-							epicurean(3, i(43506)),	-- Recipe: Small Feast
-							epicurean(3, i(43031)),	-- Recipe: Snapper Extreme
-							epicurean(3, i(43034)),	-- Recipe: Spiced Mammoth Treats
-							epicurean(3, i(43020)),	-- Recipe: Spiced Worm Burger
-							epicurean(3, i(43025)),	-- Recipe: Spicy Blue Nettlefish
-							epicurean(3, i(43027)),	-- Recipe: Spicy Fried Herring
-							epicurean(3, i(43019)),	-- Recipe: Tender Shoveltusk Steak
-							epicurean(3, i(43037)),	-- Recipe: Tracker Snacks
-							epicurean(3, i(43021)),	-- Recipe: Very Burnt Worg
-							epicurean(3, i(44954)),	-- Recipe: Worg Tartare
+							epicurean(3, i(43035)),	-- Recipe: Blackened Dragonfin (RECIPE!)
+							epicurean(3, i(43032)),	-- Recipe: Blackened Worg Steak (RECIPE!)
+							epicurean(3, i(43029)),	-- Recipe: Critter Bites (RECIPE!)
+							epicurean(3, i(43033)),	-- Recipe: Cuttlesteak (RECIPE!)
+							epicurean(3, i(43036)),	-- Recipe: Dragonfin Filet (RECIPE!)
+							epicurean(3, i(43024)),	-- Recipe: Firecracker Salmon (RECIPE!)
+							epicurean(5, i(43017)),	-- Recipe: Fish Feast (RECIPE!)
+							epicurean(3, i(43505)),	-- Recipe: Gigantic Feast (RECIPE!)
+							epicurean(3, i(43030)),	-- Recipe: Hearty Rhino (RECIPE!)
+							epicurean(3, i(43026)),	-- Recipe: Imperial Manta Steak (RECIPE!)
+							epicurean(3, i(43018)),	-- Recipe: Mega Mammoth Meal (RECIPE!)
+							epicurean(3, i(43022)),	-- Recipe: Mighty Rhino Dogs (RECIPE!)
+							epicurean(3, i(43023)),	-- Recipe: Poached Northern Sculpin (RECIPE!)
+							epicurean(3, i(43028)),	-- Recipe: Rhinolicious Wormsteak (RECIPE!)
+							epicurean(3, i(43506)),	-- Recipe: Small Feast (RECIPE!)
+							epicurean(3, i(43031)),	-- Recipe: Snapper Extreme (RECIPE!)
+							epicurean(3, i(43034)),	-- Recipe: Spiced Mammoth Treats (RECIPE!)
+							epicurean(3, i(43020)),	-- Recipe: Spiced Worm Burger (RECIPE!)
+							epicurean(3, i(43025)),	-- Recipe: Spicy Blue Nettlefish (RECIPE!)
+							epicurean(3, i(43027)),	-- Recipe: Spicy Fried Herring (RECIPE!)
+							epicurean(3, i(43019)),	-- Recipe: Tender Shoveltusk Steak (RECIPE!)
+							epicurean(3, i(43037)),	-- Recipe: Tracker Snacks (RECIPE!)
+							epicurean(3, i(43021)),	-- Recipe: Very Burnt Worg (RECIPE!)
+							epicurean(3, i(44954)),	-- Recipe: Worg Tartare (RECIPE!)
 						},
 					}),
 					n(34252, {	-- Dubin Clay <Plate Armor Merchant>
@@ -6057,54 +6004,39 @@ root(ROOTS.Zones, {
 					n(28715, {	-- Endora Moorehead
 						["coord"] = { 38.62, 55.57, NORTHREND_DALARAN },
 						["groups"] = {
-							i(82470, {	-- Ancient Tome of Portal: Dalaran
-								["timeline"] = { "added 5.0.1.15464" },
-								["spellID"] = 120146,	-- Ancient Portal: Dalaran
-								["classes"] = { MAGE },
+							i(82470, {	-- Ancient Tome of Portal: Dalaran (CI!)
+								["timeline"] = { ADDED_5_0_4 },
 								["isLimited"] = true,
 							}),
 							i(137294, {	-- Dalaran Initiates' Pin (TOY!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3_LAUNCH },
 								["classes"] = { MAGE },
 								["isLimited"] = true,
 							}),
 							i(136846, {	-- Familiar Stone (TOY!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3_LAUNCH },
 								["classes"] = { MAGE },
 							}),
-							i(136797, {	-- Mystical Tome: Arcane Linguist
-								["timeline"] = { "added 7.0.3.22248" },
-								["spellID"] = 210086,	-- Arcane Linguist
-								["classes"] = { MAGE },
+							i(136797, {	-- Mystical Tome: Arcane Linguist (CI!)
+								["timeline"] = { ADDED_7_0_3_LAUNCH },
 							}),
-							i(136799, {	-- Mystical Tome: Illusion
-								["timeline"] = { "added 7.0.3.22248" },
-								["spellID"] = 131784,	-- Illusion
-								["classes"] = { MAGE },
+							i(136799, {	-- Mystical Tome: Illusion (CI!)
+								["timeline"] = { ADDED_7_0_3_LAUNCH },
 							}),
 							i(167733, {	-- Technique: Glyph of Dalaran Brilliance (RECIPE!)
 								["timeline"] = { "added 8.1.5.29701" },
 								["isLimited"] = true,
 							}),
-							i(44714, {	-- Tome of Dalaran Brilliance
-								["timeline"] = { "removed 7.0.3" },
-								["spellID"] = 61316,	-- Dalaran Brilliance
-								["classes"] = { MAGE },
+							i(44714, {	-- Tome of Dalaran Brilliance (CI!)
+								["timeline"] = { ADDED_3_0_3, REMOVED_7_0_3 },
 								["isLimited"] = true,
-								["f"] = RECIPES,
 							}),
-							i(44602, {	-- Tome of Dalaran Intellect
-								["timeline"] = { "removed 7.0.3" },
-								["spellID"] = 61024,	-- Dalaran Intellect
-								["classes"] = { MAGE },
+							i(44602, {	-- Tome of Dalaran Intellect (CI!)
+								["timeline"] = { ADDED_3_0_3, REMOVED_7_0_3 },
 								["isLimited"] = true,
-								["f"] = RECIPES,
 							}),
-							i(44709, {	-- Tome of Polymorph: Black Cat
-								["spellID"] = 61305,	-- Polymorph
-								["classes"] = { MAGE },
+							i(44709, {	-- Tome of Polymorph: Black Cat (CI!)
 								["isLimited"] = true,
-								["f"] = RECIPES,
 							}),
 						},
 					}),
@@ -6725,30 +6657,30 @@ root(ROOTS.Zones, {
 								["timeline"] = { "added 7.0.3.22248" },
 							})),
 							epicurean(1, i(43007)),	-- Northern Spices
-							epicurean(3, i(43035)),	-- Recipe: Blackened Dragonfin
-							epicurean(3, i(43032)),	-- Recipe: Blackened Worg Steak
-							epicurean(3, i(43029)),	-- Recipe: Critter Bites
-							epicurean(3, i(43033)),	-- Recipe: Cuttlesteak
-							epicurean(3, i(43036)),	-- Recipe: Dragonfin Filet
-							epicurean(3, i(43024)),	-- Recipe: Firecracker Salmon
-							epicurean(5, i(43017)),	-- Recipe: Fish Feast
-							epicurean(3, i(43505)),	-- Recipe: Gigantic Feast
-							epicurean(3, i(43030)),	-- Recipe: Hearty Rhino
-							epicurean(3, i(43026)),	-- Recipe: Imperial Manta Steak
-							epicurean(3, i(43018)),	-- Recipe: Mega Mammoth Meal
-							epicurean(3, i(43022)),	-- Recipe: Mighty Rhino Dogs
-							epicurean(3, i(43023)),	-- Recipe: Poached Northern Sculpin
-							epicurean(3, i(43028)),	-- Recipe: Rhinolicious Wormsteak
-							epicurean(3, i(43506)),	-- Recipe: Small Feast
-							epicurean(3, i(43031)),	-- Recipe: Snapper Extreme
-							epicurean(3, i(43034)),	-- Recipe: Spiced Mammoth Treats
-							epicurean(3, i(43020)),	-- Recipe: Spiced Worm Burger
-							epicurean(3, i(43025)),	-- Recipe: Spicy Blue Nettlefish
-							epicurean(3, i(43027)),	-- Recipe: Spicy Fried Herring
-							epicurean(3, i(43019)),	-- Recipe: Tender Shoveltusk Steak
-							epicurean(3, i(43037)),	-- Recipe: Tracker Snacks
-							epicurean(3, i(43021)),	-- Recipe: Very Burnt Worg
-							epicurean(3, i(44954)),	-- Recipe: Worg Tartare
+							epicurean(3, i(43035)),	-- Recipe: Blackened Dragonfin (RECIPE!)
+							epicurean(3, i(43032)),	-- Recipe: Blackened Worg Steak (RECIPE!)
+							epicurean(3, i(43029)),	-- Recipe: Critter Bites (RECIPE!)
+							epicurean(3, i(43033)),	-- Recipe: Cuttlesteak (RECIPE!)
+							epicurean(3, i(43036)),	-- Recipe: Dragonfin Filet (RECIPE!)
+							epicurean(3, i(43024)),	-- Recipe: Firecracker Salmon (RECIPE!)
+							epicurean(5, i(43017)),	-- Recipe: Fish Feast (RECIPE!)
+							epicurean(3, i(43505)),	-- Recipe: Gigantic Feast (RECIPE!)
+							epicurean(3, i(43030)),	-- Recipe: Hearty Rhino (RECIPE!)
+							epicurean(3, i(43026)),	-- Recipe: Imperial Manta Steak (RECIPE!)
+							epicurean(3, i(43018)),	-- Recipe: Mega Mammoth Meal (RECIPE!)
+							epicurean(3, i(43022)),	-- Recipe: Mighty Rhino Dogs (RECIPE!)
+							epicurean(3, i(43023)),	-- Recipe: Poached Northern Sculpin (RECIPE!)
+							epicurean(3, i(43028)),	-- Recipe: Rhinolicious Wormsteak (RECIPE!)
+							epicurean(3, i(43506)),	-- Recipe: Small Feast (RECIPE!)
+							epicurean(3, i(43031)),	-- Recipe: Snapper Extreme (RECIPE!)
+							epicurean(3, i(43034)),	-- Recipe: Spiced Mammoth Treats (RECIPE!)
+							epicurean(3, i(43020)),	-- Recipe: Spiced Worm Burger (RECIPE!)
+							epicurean(3, i(43025)),	-- Recipe: Spicy Blue Nettlefish (RECIPE!)
+							epicurean(3, i(43027)),	-- Recipe: Spicy Fried Herring (RECIPE!)
+							epicurean(3, i(43019)),	-- Recipe: Tender Shoveltusk Steak (RECIPE!)
+							epicurean(3, i(43037)),	-- Recipe: Tracker Snacks (RECIPE!)
+							epicurean(3, i(43021)),	-- Recipe: Very Burnt Worg (RECIPE!)
+							epicurean(3, i(44954)),	-- Recipe: Worg Tartare (RECIPE!)
 						},
 					}),
 					n(29529, {	-- Ninsianna <Relics>

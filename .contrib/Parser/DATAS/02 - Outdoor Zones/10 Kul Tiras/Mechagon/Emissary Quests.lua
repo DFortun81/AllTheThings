@@ -30,7 +30,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 						i(168906),	-- Blueprint: Holographic Digitalization Relay
 						i(169171),	-- Blueprint: Microbot XD
 						i(168494),	-- Blueprint: Rustbolt Resistance Insignia
-						i(168368),	-- Recipe: Famine Evaluator And Snack Table (Rank 3)
+						i(168368),	-- Recipe: Famine Evaluator And Snack Table [Rank 3] (RECIPE!)
 					}),
 				},
 			}),

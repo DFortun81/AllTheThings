@@ -97,7 +97,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							179735,	-- Torglluun
 						}
 					}),
-					i(187006),	-- Recipe: Twilight Tea
+					i(187006),	-- Recipe: Twilight Tea (RECIPE!)
 				}),
 			},
 		}),

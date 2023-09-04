@@ -481,7 +481,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["sourceQuests"] = {
 							45344,	-- Sampling the Source
 							45345,	-- Mischievous Spirites
-							45436,	-- Shambling Specimens
+							45346,	-- Shambling Specimens
 						},
 						["provider"] = { "n", 118528 },	-- Aelthalyste
 						["coord"] = { 30.0, 55.9, HIGHMOUNTAIN },
@@ -533,7 +533,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["coord"] = { 50.4, 21.8, NETHERLIGHT_TEMPLE },
 						["maps"] = { 839 },	-- THe Maelstrom
 						["g"] = {
-							i(142224),	-- High Priest's Lightsworn Seeker (MOUNT!)
+							mount(229377),	-- High Priest's Lightsworn Seeker (MOUNT!)
 						},
 					}),
 					q(43375, {	-- An Ample Supply

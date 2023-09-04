@@ -3,7 +3,7 @@
 ---------------------------------------------------------------
 -- Everything in this file hasn't been implemented yet.
 
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, {
 	tier(CLASSIC_TIER, {
 		n(ARMOR, {
 			n(BACK, {
@@ -37,8 +37,8 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(12616),	-- Savage Boots
 				i(12617),	-- Savage Pauldrons
 				i(21584),	-- Bracers of Eternal Reckoning
-				i(21588),	-- Wristguards of Elemental Fury
 				i(21612),	-- Wormscale Stompers
+				i(21588),	-- Wristguards of Elemental Fury
 			}),
 			filter(PLATE, {
 				--
@@ -47,12 +47,16 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(21587),	-- Wristguards of Castigation
 			}),
 			filter(NECK_F, {
-				i(5005),	-- Emberspark Pendant
-				i(13811),	-- Necklace of the Dawn
-				i(23058),	-- Life Channeling Necklace
-				--
-				i(7550),	-- Warrior's Honor
 				i(18023),	-- Blood Ruby Pendant
+				i(7427),	-- Cerulean Talisman
+				i(5005),	-- Emberspark Pendant
+				i(23058),	-- Life Channeling Necklace
+				i(13811),	-- Necklace of the Dawn
+				i(7548),	-- Onyx Choker
+				i(17783),	-- Talisman of Binding Fragment
+				i(7467),	-- Vermilion Necklace
+				i(7550),	-- Warrior's Honor
+				i(19122),	-- Woven Ivy Necklace DEPRECATED
 			}),
 			filter(FINGER_F, {
 				i(13812),	-- Ring of the Dawn
@@ -65,6 +69,9 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(5008),	-- Quicksilver Ring
 			}),
 			filter(TRINKET_F, {
+				-- #if BEFORE TBC
+				i(13503),	-- Alchemists' Stone
+				-- #endif
 				i(12805),	-- Orb of Fire
 				i(18355),	-- Ferras Collar
 				i(18438),	-- Sergeant's Mark
@@ -296,6 +303,7 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			cl(ROGUE, {
 				tier(CATA_TIER, 0.3, {
 					i(54692),	-- Armor of Thero-Shan
+					i(59600),	-- Phosphora Fedora
 				}),
 			}),
 			n(BACK, {
@@ -2352,6 +2360,12 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 					i(198434),	-- zzOldDarkmoon Deckbox: Refreshing Dance
 					i(198435),	-- zzOldDarkmoon Deckbox: Watcher
 				})),
+
+				-- 10.0.7
+				tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
+					i(204192),	-- Ascendancy
+					i(203680),	-- Totem Toss
+				})),
 			}),
 			-- 10.0.0
 			tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {	-- Unknown
@@ -2359,4 +2373,4 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			})),
 		}),
 	}),
-}));
+});

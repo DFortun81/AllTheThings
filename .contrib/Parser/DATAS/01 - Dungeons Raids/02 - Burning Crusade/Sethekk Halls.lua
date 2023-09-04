@@ -4,6 +4,11 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(252, {	-- Sethekk Halls
 		["lore"] = "Sethekk Halls is populated by renegade arakkoa and led by the insane Talon King Ikiss. The Sethekk are renegades who broke away from Skettis at the insistence of Ikiss and Darkweaver Syth, and believe themselves to be the true servants of the mysterious master of all arakkoa. When Auchindoun exploded due to the summoning of Murmur in the Shadow Labyrinth, Ikiss and Syth led their followers to Auchindoun, believing this to be a sign of their master's return. There they remain, still searching for the master in the temple's ruins.",
+		["zone-text-areaID"] = 3791,	-- Sethekk Halls
+		["sins"] = {
+			"Auchindoun: Sethekk Halls",
+			"Auchindoun: Sethekkhallen",
+		},
 		["coord"] = { 44.93, 65.61, TEROKKAR_FOREST },	-- Sethekk Halls, Terokkar Forest
 		["maps"] = {
 			AUCHINDOUN_SETHEKK_HALLS,	-- Veil Sethekk
@@ -130,15 +135,14 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							["provider"] = { "i", 32449 },	-- Essence-Infused Moonstone
 							["cr"] = 23035,	-- Anzu
 						}),
-						classicAch(2359, {	-- Swift Flight Form
+						ach(2359, {	-- Swift Flight Form
 							["sourceQuest"] = 11001,	-- Vanquish the Raven God
+							-- #if BEFORE WRATH
+							["description"] = "Completed the druid quest to obtain Swift Flight Form.",
+							-- #endif
 							["timeline"] = { "removed 4.0.1" },
 							["classes"] = { DRUID },
 							["filterID"] = MOUNTS,
-							-- #if BEFORE WRATH
-							["description"] = "Completed the druid quest to obtain Swift Flight Form.",
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
-							-- #endif
 						}),
 						-- #if BEFORE 4.0.1
 						recipe(40120),	-- Swift Flight Form
@@ -169,10 +173,11 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "added 4.3.0.14942" },
 					["cr"] = 19428,	-- Cobalt Serpent
 				}),
-				i(29669, {	-- Pattern: Shadow Armor Kit
+				i(29669, {	-- Pattern: Shadow Armor Kit (RECIPE!)
+					["timeline"] = { REMOVED_5_0_4 },
 					["cr"] = 18320,	-- Time-Lost Shadowmage
 				}),
-				i(25731, {	-- Pattern: Stylin' Crimson Hat
+				i(25731, {	-- Pattern: Stylin' Crimson Hat (RECIPE!)
 					["cr"] = 18322,	-- Sethekk Ravenguard
 				}),
 			}),
@@ -199,10 +204,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(543, {	-- Talon King Ikiss
 					["creatureID"] = 18473,
 					["groups"] = {
-						classicAch(653, {	-- Sethekk Halls
+						ach(653, {	-- Sethekk Halls
 							-- #if BEFORE WRATH
 							["sourceQuest"] = 10098,	-- Terokk's Legacy
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						i(27986),	-- Crow Wing Reaper
@@ -290,13 +294,12 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						-- #endif
 						["creatureID"] = 23035,
 						["groups"] = {
-							classicAch(883, {	-- Reins of the Raven Lord
+							ach(883, {	-- Reins of the Raven Lord
 								["provider"] = { "i", 32768 },	-- Reins of the Raven Lord
-								["filterID"] = MOUNTS,
 								-- #if BEFORE WRATH
 								["description"] = "Obtain the Reins of the Raven Lord from Anzu in Sethekk Halls.",
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 								-- #endif
+								["filterID"] = MOUNTS,
 							}),
 							i(32768),	-- Raven Lord (MOUNT!)
 							i(32781),	-- Talon of Anzu
@@ -312,7 +315,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(543, {	-- Talon King Ikiss
 						["creatureID"] = 18473,
 						["groups"] = {
-							ach(674),	-- Heroic: Sethekk Halls
+							ach(674, {	-- Heroic: Sethekk Halls
+								["timeline"] = { "added 3.0.1" },
+							}),
 							ach(5074, {	-- Heroic: Sethekk Halls Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),

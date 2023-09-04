@@ -1,6 +1,36 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+local BROKEN_MIRROR_INFO = {
+	readable = "Broken Mirror",
+	icon = "3854020",
+	text = {
+		en = "Broken Mirror",
+		es = "Espejo roto",
+		de = "Zerbrochener Spiegel",
+		fr = "Miroir brisé",
+		it = "Specchio Rotto",
+		pt = "Espelho Quebrado",
+		ru = "Разбитое зеркало",
+		ko = "깨진 거울",
+		cn = "残破的镜子",
+	},
+};
+BROKEN_MIRROR_A1 = createHeader( BROKEN_MIRROR_INFO );
+BROKEN_MIRROR_A2 = createHeader( BROKEN_MIRROR_INFO );
+BROKEN_MIRROR_A3 = createHeader( BROKEN_MIRROR_INFO );
+
+BROKEN_MIRROR_B1 = createHeader( BROKEN_MIRROR_INFO );
+BROKEN_MIRROR_B2 = createHeader( BROKEN_MIRROR_INFO );
+BROKEN_MIRROR_B3 = createHeader( BROKEN_MIRROR_INFO );
+
+BROKEN_MIRROR_C1 = createHeader( BROKEN_MIRROR_INFO );
+BROKEN_MIRROR_C2 = createHeader( BROKEN_MIRROR_INFO );
+BROKEN_MIRROR_C3 = createHeader( BROKEN_MIRROR_INFO );
+
+BROKEN_MIRROR_D1 = createHeader( BROKEN_MIRROR_INFO );
+BROKEN_MIRROR_D2 = createHeader( BROKEN_MIRROR_INFO );
+BROKEN_MIRROR_D3 = createHeader( BROKEN_MIRROR_INFO );
 
 root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL_COV_VEN" }, {
 	n(VENTHYR, {
@@ -62,7 +92,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 									n(-968, {	-- Set A
 										["description"] = "Wowhead: |cffffffffGroup 2|r",
 										["g"] = {
-											n(-1433951, {	-- Broken Mirror A-1
+											n(BROKEN_MIRROR_A1, {
 												["questID"] = 61819,
 												["isDaily"] = true,
 												["coord"] = { 39.1, 52.2, REVENDRETH },
@@ -74,7 +104,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 													}),
 												},
 											}),
-											n(-1433952, {	-- Broken Mirror A-2
+											n(BROKEN_MIRROR_A2, {
 												["questID"] = 61823,
 												["isDaily"] = true,
 												["coord"] = { 58.8, 67.8, REVENDRETH },
@@ -86,7 +116,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 													}),
 												},
 											}),
-											n(-1433953, {	-- Broken Mirror A-3
+											n(BROKEN_MIRROR_A3, {
 												["questID"] = 61827,
 												["isDaily"] = true,
 												["coord"] = { 70.9, 43.6, REVENDRETH },
@@ -103,7 +133,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 									n(-969, {	-- Set B
 										["description"] = "Wowhead: |cffffffffGroup 3|r",
 										["g"] = {
-											n(-1433954, {	-- Broken Mirror B-1
+											n(BROKEN_MIRROR_B1, {
 												["description"] = "Coordinates are for a crypt entrance.  The mirror is at the bottom of the crypt in the room on the right.",
 												["questID"] = 61817,
 												["isDaily"] = true,
@@ -116,7 +146,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 													}),
 												},
 											}),
-											n(-1433955, {	-- Broken Mirror B-2
+											n(BROKEN_MIRROR_B2, {
 												["questID"] = 61821,
 												["isDaily"] = true,
 												["coord"] = { 40.3, 77.1, REVENDRETH },
@@ -128,7 +158,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 													}),
 												},
 											}),
-											n(-1433956, {	-- Broken Mirror B-3
+											n(BROKEN_MIRROR_B3, {
 												["description"] = "Inside a house near the top of the elevator.  There are elite mobs in the area.",
 												["questID"] = 61825,
 												["isDaily"] = true,
@@ -146,7 +176,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 									n(-970, {	-- Set C
 										["description"] = "Wowhead: |cffffffffGroup 1|r",
 										["g"] = {
-											n(-1433957, {	-- Broken Mirror C-1
+											n(BROKEN_MIRROR_C1, {
 												["description"] = "Not up on the ramparts, but at the bottom level inside a crumbled wall.  There is an elite spider in the room.",
 												["questID"] = 61826,
 												["isDaily"] = true,
@@ -159,7 +189,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 													}),
 												},
 											}),
-											n(-1433958, {	-- Broken Mirror C-2
+											n(BROKEN_MIRROR_C2, {
 												["description"] = "On the middle level of the crumbled edifice.",
 												["questID"] = 61818,
 												["isDaily"] = true,
@@ -172,7 +202,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 													}),
 												},
 											}),
-											n(-1433959, {	-- Broken Mirror C-3
+											n(BROKEN_MIRROR_C3, {
 												["questID"] = 61822,
 												["isDaily"] = true,
 												["coord"] = { 40.4, 73.3, REVENDRETH },
@@ -189,7 +219,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 									n(-971, {	-- Set D
 										["description"] = "Wowhead: |cffffffffGroup 4|r",
 										["g"] = {
-											n(-1433960, {	-- Broken Mirror D-1
+											n(BROKEN_MIRROR_D1, {
 												["questID"] = 59236,
 												["isDaily"] = true,
 												["coord"] = { 20.7, 54.2, REVENDRETH },
@@ -201,7 +231,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 													}),
 												},
 											}),
-											n(-1433961, {	-- Broken Mirror D-2
+											n(BROKEN_MIRROR_D2, {
 												["questID"] = 61824,
 												["isDaily"] = true,
 												["coord"] = { 29.6, 25.8, REVENDRETH },
@@ -213,7 +243,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 													}),
 												},
 											}),
-											n(-1433962, {	-- Broken Mirror D-3
+											n(BROKEN_MIRROR_D3, {
 												["description"] = "Coordinates are for a crypt entrance.  The mirror is at the bottom of the crypt in the room on the left.",
 												["questID"] = 61820,
 												["isDaily"] = true,

@@ -117,20 +117,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["description"] = "Mount the horse located at 62.1, 51.8 and ride it to Roan Berthold at 67.3, 51.6.",
 				["questID"] = 49983,	-- Ride Horse Back
 				["coord"] = { 62.1, 51.8, TIRAGARDE_SOUND },	--  Guardian of the Spring
-				["g"] = {
-					o(279750, {	-- Hay Covered Chest [Localized]
-						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["coord"] = { 67.4, 51.7, TIRAGARDE_SOUND },
-						["crs"] = { 131453 },	-- Roan Berthold
-						["questID"] = 49963,
-						["g"] = {
-							crit(1, {	-- Hay Covered Chest
-								["achievementID"] = 12852
-							}),
-							i(155571),	-- Garyl's Riding Blanket
-						},
-					}),
-				},
 			}),
 			n(139233, {	-- Gulliver
 				["questID"] = 53373,
@@ -337,9 +323,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			}),
 			n(132052, {	-- Vol'Jim
 				["description"] = "It looks like this NPC didn't make it to live from beta.",
-				["u"] = NEVER_IMPLEMENTED,
+				["timeline"] = { "created 8.0.1.26131" },
 				["g"] = {
-					un(NEVER_IMPLEMENTED, i(155074)),	-- Toll Enforcer
+					i(155074, {	-- Toll Enforcer
+						["timeline"] = { "created 8.0.1.26131" },
+					}),
 				},
 			}),
 			n(137176, {	-- Walter Ferrell

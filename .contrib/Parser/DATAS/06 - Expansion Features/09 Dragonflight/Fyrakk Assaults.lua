@@ -25,11 +25,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(205002),	-- Blaise (PET!)
 					}),
 					n(DRAKEWATCHER_MANUSCRIPTS, {
-						i(196965),	-- Cliffside Wylderdrake: Bronze and Teal Armor (DM!)
-						i(197156),	-- Highland Drake: Bronze and Green Armor (DM!)
-						i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor (DM!)
-						i(197577),	-- Windborne Velocidrake: Bronze and Green Armor (DM!)
-						i(203299),	-- Winding Slitherdrake: Green and Bronze Armor (DM!)
+						i(197348),	-- Renewed Proto-Drake: Black and Red Armor (DM!) [Discord]
+						i(202277),	-- Renewed Proto-Drake: Bruiser Horns (DM!) [Mount Discord/Runaway]
 					}),
 					i(203710),	-- Everburning Key
 					i(206043),	-- Fyrakk's Frenzy (TOY!)
@@ -43,6 +40,21 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						{ 55.6, 55.0, ZARALEK_CAVERN },
 					},
 					["isWeekly"] = IGNORED_VALUE,
+				}),
+				q(75888, {	-- Suffusion Camp
+					["providers"] = {
+						{ "n", 201648 },	-- Somnikus
+						{ "n", 203520 },	-- Stellagosa
+					},
+					["coords"] = {
+						{ 75.2, 69.2, OHNAHRAN_PLAINS },
+						{ 58.0, 34.6, THE_AZURE_SPAN },
+					},
+					["g"] = {
+						ach(18867, {	-- Through the Ashes and Flames
+							["timeline"] = { ADDED_10_1_7 },
+						}),
+					},
 				}),
 					-- Ohn'haran Plains --
 				q(74573, {	-- Aerial Support
@@ -60,12 +72,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 201090 },	-- Mayla Highmountain
 					["coord"] = { 74.9, 69.6, OHNAHRAN_PLAINS },
 				}),
-				q(74568, {	-- They Who Would Burn Us
-					["provider"] = { "n", 201090 },	-- Mayla Highmountain
-					["coord"] = { 74.9, 69.6, OHNAHRAN_PLAINS },
+				q(74571, {	-- Clear a Path
+					["provider"] = { "n", 201876 },	-- Baine Bloodhoof
+					["coord"] = { 75.1, 69.6, OHNAHRAN_PLAINS },
 				}),
 				q(74569, {	-- Deny Them Resources
-					["provider"] = { "n", 201860 },	-- Tigari Khan
+					["provider"] = { "n", 201860 },	-- Khanam Matra Sarest
 					["coord"] = { 75.6, 69.9, OHNAHRAN_PLAINS },
 				}),
 				q(74775, {	-- Disciple of Fyrakk: Kretchenwrath
@@ -74,9 +86,17 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["isWeekly"] = IGNORED_VALUE,	-- One-Time
 					["_drop"] = { "g" },	-- Drop Crest
 				}),
-				q(75888, {	-- Suffusion Camp
-					["provider"] = { "n", 201648 },	-- Somnikus
-					["coord"] = { 75.2, 69.2, OHNAHRAN_PLAINS },
+				q(75182, {	-- Grand Theft Mammoth
+					["provider"] = { "n", 201860 },	-- Khanam Matra Sarest
+					["coord"] = { 75.6, 69.9, OHNAHRAN_PLAINS },
+				}),
+				q(74572, {	-- Make it Rain
+					["provider"] = { "n", 201861 },	-- Tigari Khan
+					["coord"] = { 75.6, 69.1, OHNAHRAN_PLAINS },
+				}),
+				q(74568, {	-- They Who Would Burn Us
+					["provider"] = { "n", 201090 },	-- Mayla Highmountain
+					["coord"] = { 74.9, 69.6, OHNAHRAN_PLAINS },
 				}),
 				q(75181, {	-- Volunteer Fire Fighters
 					["provider"] = { "n", 201861 },	-- Tigari Khan
@@ -96,6 +116,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					-- ["maps"] = { THE_AZURE_SPAN },
 					["isWeekly"] = IGNORED_VALUE,	-- One-Time
 					["_drop"] = { "g" },	-- Drop Crest
+				}),
+				q(75372, {	-- Drive Them Before Us
+					["provider"] = { "n", 203601 },	-- Blubberwall
+					["coord"] = { 57.7, 34.4, THE_AZURE_SPAN },
 				}),
 				q(75383, {	-- Hideaway No More
 					["provider"] = { "n", 203604 },	-- Old Grimtusk
@@ -225,11 +249,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							i(205003),	-- Ambre (PET!)
 							i(205002),	-- Blaise (PET!)
 						}),
-						i(196965),	-- Cliffside Wylderdrake: Bronze and Teal Armor (DM!)
-						i(197156),	-- Highland Drake: Bronze and Green Armor (DM!)
-						i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor (DM!)
-						i(197577),	-- Windborne Velocidrake: Bronze and Green Armor (DM!)
-						i(203299),	-- Winding Slitherdrake: Green and Bronze Armor (DM!)
+						i(196965),	-- Cliffside Wylderdrake: Bronze and Teal Armor (DM!) [Wowhead]
+						i(197156),	-- Highland Drake: Bronze and Green Armor (DM!) [Wowhead]
+						i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor (DM!) [Wowhead]
+						i(197577),	-- Windborne Velocidrake: Bronze and Green Armor (DM!) [Wowhead]
+						i(203299),	-- Winding Slitherdrake: Green and Bronze Armor (DM!) [Wowhead]
 						-- Objects
 						o(398815, {	-- Secured Shipment
 							["coord"] = { 73.8, 72.5, OHNAHRAN_PLAINS },
@@ -281,6 +305,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	n(FYRAKK_ASSAULTS, {
 		q(75448),	-- Ward of Ingira Elite
 		q(75447),	-- Ward of Fyrakk Elite / Forgemaster 1st kill
-		q(75157),	-- Completes alongside 75888
+		q(75157),	-- Completes with 'Suffusion Camp' (questID 75888) (spellID 411135)
 	}),
 }));

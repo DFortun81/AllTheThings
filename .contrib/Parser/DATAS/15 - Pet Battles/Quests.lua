@@ -843,6 +843,7 @@ root(ROOTS.PetBattles, petbattle({
 			["g"] = {
 				i(199175),	-- Lubbins (PET!)
 			},
+			["_drop"] = { "g" },	-- Drop Battle Pet Bandage
 		}),
 		q(70697, {	-- An Expert Opinion
 			["description"] = "Account-Wide Quest.",
@@ -855,19 +856,18 @@ root(ROOTS.PetBattles, petbattle({
 			["sourceQuests"] = { 70697 },	-- An Expert Opinion
 			["provider"] = { "n", 196069 },	-- Patchu
 			["coord"] = { 13.9, 49.8, THE_AZURE_SPAN },
-			["g"] = {
-				i(92683),	-- Flawless Dragonkin Battle-Stone
-				i(163936),	-- Polished Pet Charm
-			},
+			["_drop"] = { "g" },	-- Drop Polished Pet Charm
+			["sym"] = {{"select","itemID",
+				92683,	-- Flawless Dragonkin Battle-Stone
+				163036,	-- Polished Pet Charm
+			}},
 		}),
 		q(70732, {	-- A Practice Bout
 			["description"] = "Account-Wide Quest.",
 			["sourceQuests"] = { 70722 },	-- What Lubbins Needs
 			["provider"] = { "n", 196069 },	-- Patchu
 			["coord"] = { 13.9, 49.8, THE_AZURE_SPAN },
-			["g"] = {
-				i(122457),	-- Ultimate Battle-Training Stone
-			},
+			["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 		}),
 		q(70849, {	-- This Calls for a Specialist
 			["description"] = "Account-Wide Quest.",
@@ -880,19 +880,21 @@ root(ROOTS.PetBattles, petbattle({
 			["sourceQuests"] = { 70849 },	-- This Calls for a Specialist
 			["provider"] = { "n", 196264 },	-- Haniko
 			["coord"] = { 38.9, 83.3, THE_WAKING_SHORES },
-			["g"] = {
-				i(163936),	-- Polished Pet Charm
-			},
+			["_drop"] = { "g" },	-- Drop Polished Pet Charm
+			["sym"] = {{"select","itemID",
+				163036,	-- Polished Pet Charm
+			}},
 		}),
 		q(70853, {	-- A Friend for Lubbins
 			["description"] = "Account-Wide Quest.",
 			["sourceQuests"] = { 70851 },	-- Born to Be Wilder
 			["provider"] = { "n", 196264 },	-- Haniko
 			["coord"] = { 38.9, 83.3, THE_WAKING_SHORES },
-			["g"] = {
-				i(163936),	-- Polished Pet Charm
-				i(116421),	-- Flying Battle-Training Stone
-			},
+			["_drop"] = { "g" },	-- Drop Polished Pet Charm
+			["sym"] = {{"select","itemID",
+				116421,	-- Flying Battle-Training Stone
+				163036,	-- Polished Pet Charm
+			}},
 		}),
 		q(70854, {	-- So How Did It Go?
 			["description"] = "Account-Wide Quest.",
@@ -900,10 +902,10 @@ root(ROOTS.PetBattles, petbattle({
 			["provider"] = { "n", 196264 },	-- Haniko
 			["coord"] = { 38.9, 83.3, THE_WAKING_SHORES },
 			["g"] = {
-				i(122457),	-- Ultimate Battle-Training Stone
 				i(200519),	-- Mister Toots (PET!)
 				ach(16399),	-- Lovin' Lubbins
 			},
+			["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 		}),
 	})),
 	-- Daily Quests
@@ -1066,296 +1068,301 @@ root(ROOTS.PetBattles, petbattle({
 			["races"] = HORDE_ONLY,
 			["sourceQuests"] = { 31812 },	-- Zunta, The Pet Tramer
 		}),
-		-- TBC
-		q(31922, {	-- Nicki Tinytech
-			["qg"] = 66550,	-- Nicki Tinytech
-			["coord"] = { 64.3, 49.3, HELLFIRE_PENINSULA },
+		tier(TBC_TIER, {
+			q(31922, {	-- Nicki Tinytech
+				["qg"] = 66550,	-- Nicki Tinytech
+				["coord"] = { 64.3, 49.3, HELLFIRE_PENINSULA },
+			}),
+			q(31924, {	-- Narrok
+				["coord"] = { 61.0, 49.4, NAGRAND },
+				["provider"] = { "n", 66552 },	-- Narrok <Master Pet Tamer>
+			}),
+			q(31926, {	-- Grand Master Antari
+				["sourceQuests"] = { 31920 },	-- Grand Master Antari
+				["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
+				["provider"] = { "n", 66557 },	-- Bloodknight Antari <Grand Master Pet Tamer>
+				["g"] = {
+					SACK_OF_PET_SUPPLIES
+				},
+			}),
+			q(31923, {	-- Ras'an
+				["coord"] = { 17.2, 50.5, ZANGARMARSH },
+				["provider"] = { "n", 66551 },	-- Ras'an <Master Pet Tamer>
+			}),
+			q(31925, {	-- Morulu The Elder
+				["coord"] = { 59.0, 70.0, SHATTRATH_CITY },
+				["provider"] = { "n", 66553 },	-- Morulu The Elder
+			}),
 		}),
-		q(31924, {	-- Narrok
-			["coord"] = { 61.0, 49.4, NAGRAND },
-			["provider"] = { "n", 66552 },	-- Narrok <Master Pet Tamer>
+		tier(WOTLK_TIER, {
+			q(31932, {	-- Nearly Headless Jacob
+				["provider"] = { "n", 66636 },	-- Nearly Headless Jacob
+				["coord"] = { 50.2, 59.0, CRYSTALSONG_FOREST },
+			}),
+			q(31933, {	-- Okrut Dragonwaste
+				["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
+				["provider"] = { "n", 66638 },	-- Okrut Dragonwaste
+			}),
+			q(31931, {	-- Beegle Blastfuse
+				["provider"] = { "n", 66635 },	-- Beegle Blastfuse
+				["coord"] = { 28.6, 33.8, HOWLING_FJORD },
+				["repeatable"] = true,
+			}),
+			q(31935, {	-- Grand Master Payne
+				["sourceQuests"] = { 31928 },	-- Grand Master Payne
+				["coord"] = { 77.4, 19.6, ICECROWN },
+				["provider"] = { "n", 66675 },	-- Major Payne
+				["g"] = {
+					SACK_OF_PET_SUPPLIES
+				},
+			}),
+			q(31934, {	-- Gutretch
+				["coord"] = { 13.2, 66.7, ZULDRAK },
+				["provider"] = { "n", 66639 },
+			}),
 		}),
-		q(31926, {	-- Grand Master Antari
-			["sourceQuests"] = { 31920 },	-- Grand Master Antari
-			["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
-			["provider"] = { "n", 66557 },	-- Bloodknight Antari <Grand Master Pet Tamer>
-			["g"] = {
-				SACK_OF_PET_SUPPLIES
-			},
+		tier(CATA_TIER, {
+			q(31972, {	-- Brok
+				["provider"] = { "n", 66819 },	-- Brok
+				["coord"] = { 61.4, 32.7, MOUNT_HYJAL },
+			}),
+			q(31974, {	-- Goz Banefury
+				["provider"] = { "n", 66822 },	-- Goz Banefury
+				["coord"] = { 56.5, 56.7, TWILIGHT_HIGHLANDS },
+			}),
+			q(31971, {	-- Grand Master Obalis
+				["sourceQuests"] = { 31970 },	-- Grand Master Obalis
+				["provider"] = { "n", 66824 },	-- Obalis
+				["coord"] = { 56.6, 41.8, ULDUM },
+				["g"] = {
+					SACK_OF_PET_SUPPLIES
+				},
+			}),
+			q(31973, {	-- Bordin Steadyfist
+				["provider"] = { "n", 66815 },	-- Bordin Steadyfist
+				["coord"] = { 49.9, 57.1, DEEPHOLM },
+				["repeatable"] = true,
+			}),
 		}),
-		q(31923, {	-- Ras'an
-			["coord"] = { 17.2, 50.5, ZANGARMARSH },
-			["provider"] = { "n", 66551 },	-- Ras'an <Master Pet Tamer>
+		tier(MOP_TIER, {
+			q(31957, {	-- Grand Master Shu
+				["coord"] = { 55.1, 37.6, DREAD_WASTES },
+				["provider"] = { "n", 66739 },	-- Wastewalker Shu
+				["g"] = {
+					SACK_OF_PET_SUPPLIES
+				},
+			}),
+			q(32439, {	-- Flowing Pandaren Spirit
+				["coord"] = { 61.1, 87.5, DREAD_WASTES },
+				["provider"] = { "n", 68462 },	-- Flowing Pandaren Spirit
+				["sourceQuest"] = 32428,	-- Pandaren Spirit Tamer
+				["g"] = {
+					i(93147, {	-- Pandaren Spirit Pet Supplies
+						["sym"] = {{"select","itemID",
+							89139,	-- Chain Pet Leash
+							44820,	-- Red Ribbon Pet Leash
+							37460,	-- Rope Pet Leash
+						}},
+						["g"] = {
+							i(90173),	-- Pandaren Water Spirit (PET!)
+						},
+					})
+				},
+			}),
+			q(31954, {	-- Grand Master Mo'ruk
+				["coord"] = { 62.6, 45.8, KRASARANG_WILDS },
+				["provider"] = { "n", 66733 },
+				["g"] = {
+					SACK_OF_PET_SUPPLIES
+				},
+			}),
+			q(31956, {	-- Grand Master Yon
+				["coord"] = { 35.8, 73.6, KUN_LAI_SUMMIT },
+				["provider"] = { "n", 66738 },	-- Courageous Yon
+				["g"] = {
+					SACK_OF_PET_SUPPLIES
+				},
+			}),
+			q(63435,	-- Temple Throwdown
+			bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
+				["provider"] = { "n", 176655 },	-- Anthea <Carefree Pet Tamer>
+				["coord"] = { 70.4, 51.4, KUN_LAI_SUMMIT },
+				["g"] = {
+					i(184866, {	-- Grummlepouch
+						i(89587),	-- Porcupette (PET!)
+						i(184867),	-- Squibbles (PET!)
+					}),
+				},
+			})),
+			q(32441, {	-- Thundering Pandaren Spirit
+				["coord"] = { 64.9, 93.8, KUN_LAI_SUMMIT },
+				["provider"] = { "n", 68465 },	-- Thundering Pandaren Spirit
+				["sourceQuest"] = 32428,	-- Pandaren Spirit Tamer
+				["g"] = {
+					i(93149, {	-- Pandaren Spirit Pet Supplies
+						["sym"] = {{"select","itemID",
+							89139,	-- Chain Pet Leash
+							44820,	-- Red Ribbon Pet Leash
+							37460,	-- Rope Pet Leash
+						}},
+						["g"] = {
+							i(92800),	-- Pandaren Earth Spirit (PET!)
+						},
+					}),
+				},
+			}),
+			q(31953, {	-- Grand Master Hyuna
+				["coord"] = { 47.9, 54.1, THE_JADE_FOREST },
+				["provider"] = { "n", 66730 },	-- Hyuna of the Shrines
+				["g"] = {
+					SACK_OF_PET_SUPPLIES
+				},
+			}),
+			q(32440, {	-- Whispering Pandaren Spirit
+				["sourceQuests"] = { 32428 },	-- Pandaren Spirit Tamer
+				["provider"] = { "n", 68464 },	-- Whispering Pandaren Spirit
+				["coord"] = { 28.9, 36.0, THE_JADE_FOREST },
+				["g"] = {
+					i(93148, {	-- Pandaren Spirit Pet Supplies
+						["sym"] = {{"select","itemID",
+							89139,	-- Chain Pet Leash
+							44820,	-- Red Ribbon Pet Leash
+							37460,	-- Rope Pet Leash
+						}},
+						["g"] = {
+							i(92799),	-- Pandaren Air Spirit (PET!)
+						},
+					})
+				},
+			}),
+			q(31991, {	-- Grand Master Zusshi
+				["coord"] = { 36.3, 52.2, TOWNLONG_STEPPES },
+				["provider"] = { "n", 66918 },	-- Seeker Zusshi
+				["g"] = {
+					SACK_OF_PET_SUPPLIES
+				},
+			}),
+			q(32434, {	-- Burning Pandaren Spirit
+				["coord"] = { 57.2, 42.1, TOWNLONG_STEPPES },
+				["provider"] = { "n", 68463 },
+				["sourceQuests"] = { 32428 },	-- Pandaren Spirit Tamer
+				["g"] = {
+					i(93146, {	-- Pandaren Spirit Pet Supplies
+						["sym"] = {{"select","itemID",
+							89139,	-- Chain Pet Leash
+							44820,	-- Red Ribbon Pet Leash
+							37460,	-- Rope Pet Leash
+						}},
+						["g"] = {
+							i(92798),	-- Pandaren Fire Spirit (PET!)
+						},
+					})
+				},
+			}),
+			q(32604, {	-- Beasts of Fable Book I
+				["description"] = "Account-Wide Daily Quest. Must have completed the quest Beasts of Fable.|r",
+				["sourceQuests"] = { 32603 },	-- Beasts of Fable
+				["providers"] = {
+					{ "n", 64572 },	-- Sara Finkleswitch
+					{ "n", 64582 },	-- Gentle San
+				},
+				["coords"] = {
+					{ 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
+					{ 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
+				},
+				["g"] = {
+					FABLED_PANDAREN_PET_SUPPLIES
+				},
+			}),
+			q(32868, {	-- Beasts of Fable Book II
+				["description"] = "Account-Wide Daily Quest. Must have completed the quest Beasts of Fable.|r",
+				["sourceQuests"] = { 32603 },	-- Beasts of Fable
+				["providers"] = {
+					{ "n", 64572 },	-- Sara Finkleswitch
+					{ "n", 64582 },	-- Gentle San
+				},
+				["coords"] = {
+					{ 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
+					{ 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
+				},
+				["g"] = {
+					FABLED_PANDAREN_PET_SUPPLIES
+				},
+			}),
+			q(32869, {	-- Beasts of Fable Book III
+				["description"] = "Account-Wide Daily Quest. Must have completed the quest Beasts of Fable.|r",
+				["sourceQuests"] = { 32603 },	-- Beasts of Fable
+				["providers"] = {
+					{ "n", 64572 },	-- Sara Finkleswitch
+					{ "n", 64582 },	-- Gentle San
+				},
+				["coords"] = {
+					{ 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
+					{ 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
+				},
+				["g"] = {
+					FABLED_PANDAREN_PET_SUPPLIES
+				},
+			}),
+			q(31958, {	-- Grand Master Aki
+				["sourceQuests"] = { 31951 },	-- Grand Master Aki
+				["provider"] = { "n", 66741 },	-- Aki the Chosen
+				["coord"] = { 31.2, 74.2, VALE_OF_ETERNAL_BLOSSOMS },
+				["g"] = {
+					SACK_OF_PET_SUPPLIES
+				},
+			}),
+			q(31955, {	-- Grand Master Nishi
+				["provider"] = { "n", 66734 },	-- Farmer Nishi
+				["coord"] = { 46.0, 43.6, VALLEY_OF_THE_FOUR_WINDS },
+				["g"] = {
+					SACK_OF_PET_SUPPLIES
+				},
+			}),
 		}),
-		q(31925, {	-- Morulu The Elder
-			["coord"] = { 59.0, 70.0, SHATTRATH_CITY },
-			["provider"] = { "n", 66553 },	-- Morulu The Elder
-		}),
-		-- Wrath
-		q(31932, {	-- Nearly Headless Jacob
-			["provider"] = { "n", 66636 },	-- Nearly Headless Jacob
-			["coord"] = { 50.2, 59.0, CRYSTALSONG_FOREST },
-		}),
-		q(31933, {	-- Okrut Dragonwaste
-			["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
-			["provider"] = { "n", 66638 },	-- Okrut Dragonwaste
-		}),
-		q(31931, {	-- Beegle Blastfuse
-			["provider"] = { "n", 66635 },	-- Beegle Blastfuse
-			["coord"] = { 28.6, 33.8, HOWLING_FJORD },
-			["repeatable"] = true,
-		}),
-		q(31935, {	-- Grand Master Payne
-			["sourceQuests"] = { 31928 },	-- Grand Master Payne
-			["coord"] = { 77.4, 19.6, ICECROWN },
-			["provider"] = { "n", 66675 },	-- Major Payne
-			["g"] = {
-				SACK_OF_PET_SUPPLIES
-			},
-		}),
-		q(31934, {	-- Gutretch
-			["coord"] = { 13.2, 66.7, ZULDRAK },
-			["provider"] = { "n", 66639 },
-		}),
-		-- Cata
-		q(31972, {	-- Brok
-			["provider"] = { "n", 66819 },	-- Brok
-			["coord"] = { 61.4, 32.7, MOUNT_HYJAL },
-		}),
-		q(31974, {	-- Goz Banefury
-			["provider"] = { "n", 66822 },	-- Goz Banefury
-			["coord"] = { 56.5, 56.7, TWILIGHT_HIGHLANDS },
-		}),
-		q(31971, {	-- Grand Master Obalis
-			["sourceQuests"] = { 31970 },	-- Grand Master Obalis
-			["provider"] = { "n", 66824 },	-- Obalis
-			["coord"] = { 56.6, 41.8, ULDUM },
-			["g"] = {
-				SACK_OF_PET_SUPPLIES
-			},
-		}),
-		q(31973, {	-- Bordin Steadyfist
-			["provider"] = { "n", 66815 },	-- Bordin Steadyfist
-			["coord"] = { 49.9, 57.1, DEEPHOLM },
-			["repeatable"] = true,
-		}),
-		-- MoP
-		q(31957, {	-- Grand Master Shu
-			["coord"] = { 55.1, 37.6, DREAD_WASTES },
-			["provider"] = { "n", 66739 },	-- Wastewalker Shu
-			["g"] = {
-				SACK_OF_PET_SUPPLIES
-			},
-		}),
-		q(32439, {	-- Flowing Pandaren Spirit
-			["coord"] = { 61.1, 87.5, DREAD_WASTES },
-			["provider"] = { "n", 68462 },	-- Flowing Pandaren Spirit
-			["sourceQuest"] = 32428,	-- Pandaren Spirit Tamer
-			["g"] = {
-				i(93147, {	-- Pandaren Spirit Pet Supplies
-					["sym"] = {{"select","itemID",
-						89139,	-- Chain Pet Leash
-						44820,	-- Red Ribbon Pet Leash
-						37460,	-- Rope Pet Leash
-					}},
-					["g"] = {
-						i(90173),	-- Pandaren Water Spirit (PET!)
-					},
-				})
-			},
-		}),
-		q(31954, {	-- Grand Master Mo'ruk
-			["coord"] = { 62.6, 45.8, KRASARANG_WILDS },
-			["provider"] = { "n", 66733 },
-			["g"] = {
-				SACK_OF_PET_SUPPLIES
-			},
-		}),
-		q(31956, {	-- Grand Master Yon
-			["coord"] = { 35.8, 73.6, KUN_LAI_SUMMIT },
-			["provider"] = { "n", 66738 },	-- Courageous Yon
-			["g"] = {
-				SACK_OF_PET_SUPPLIES
-			},
-		}),
-		q(63435,	-- Temple Throwdown
-		bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
-			["provider"] = { "n", 176655 },	-- Anthea <Carefree Pet Tamer>
-			["coord"] = { 70.4, 51.4, KUN_LAI_SUMMIT },
-			["g"] = {
-				i(184866, {	-- Grummlepouch
-					i(89587),	-- Porcupette (PET!)
-					i(184867),	-- Squibbles (PET!)
-				}),
-			},
-		})),
-		q(32441, {	-- Thundering Pandaren Spirit
-			["coord"] = { 64.9, 93.8, KUN_LAI_SUMMIT },
-			["provider"] = { "n", 68465 },	-- Thundering Pandaren Spirit
-			["sourceQuest"] = 32428,	-- Pandaren Spirit Tamer
-			["g"] = {
-				i(93149, {	-- Pandaren Spirit Pet Supplies
-					["sym"] = {{"select","itemID",
-						89139,	-- Chain Pet Leash
-						44820,	-- Red Ribbon Pet Leash
-						37460,	-- Rope Pet Leash
-					}},
-					["g"] = {
-						i(92800),	-- Pandaren Earth Spirit (PET!)
-					},
-				}),
-			},
-		}),
-		q(31953, {	-- Grand Master Hyuna
-			["coord"] = { 47.9, 54.1, THE_JADE_FOREST },
-			["provider"] = { "n", 66730 },	-- Hyuna of the Shrines
-			["g"] = {
-				SACK_OF_PET_SUPPLIES
-			},
-		}),
-		q(32440, {	-- Whispering Pandaren Spirit
-			["sourceQuests"] = { 32428 },	-- Pandaren Spirit Tamer
-			["provider"] = { "n", 68464 },	-- Whispering Pandaren Spirit
-			["coord"] = { 28.9, 36.0, THE_JADE_FOREST },
-			["g"] = {
-				i(93148, {	-- Pandaren Spirit Pet Supplies
-					["sym"] = {{"select","itemID",
-						89139,	-- Chain Pet Leash
-						44820,	-- Red Ribbon Pet Leash
-						37460,	-- Rope Pet Leash
-					}},
-					["g"] = {
-						i(92799),	-- Pandaren Air Spirit (PET!)
-					},
-				})
-			},
-		}),
-		q(31991, {	-- Grand Master Zusshi
-			["coord"] = { 36.3, 52.2, TOWNLONG_STEPPES },
-			["provider"] = { "n", 66918 },	-- Seeker Zusshi
-			["g"] = {
-				SACK_OF_PET_SUPPLIES
-			},
-		}),
-		q(32434, {	-- Burning Pandaren Spirit
-			["coord"] = { 57.2, 42.1, TOWNLONG_STEPPES },
-			["provider"] = { "n", 68463 },
-			["sourceQuests"] = { 32428 },	-- Pandaren Spirit Tamer
-			["g"] = {
-				i(93146, {	-- Pandaren Spirit Pet Supplies
-					["sym"] = {{"select","itemID",
-						89139,	-- Chain Pet Leash
-						44820,	-- Red Ribbon Pet Leash
-						37460,	-- Rope Pet Leash
-					}},
-					["g"] = {
-						i(92798),	-- Pandaren Fire Spirit (PET!)
-					},
-				})
-			},
-		}),
-		q(32604, {	-- Beasts of Fable Book I
-			["description"] = "Account-Wide Daily Quest. Must have completed the quest Beasts of Fable.|r",
-			["sourceQuests"] = { 32603 },	-- Beasts of Fable
-			["providers"] = {
-				{ "n", 64572 },	-- Sara Finkleswitch
-				{ "n", 64582 },	-- Gentle San
-			},
-			["coords"] = {
-				{ 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
-				{ 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
-			},
-			["g"] = {
-				FABLED_PANDAREN_PET_SUPPLIES
-			},
-		}),
-		q(32868, {	-- Beasts of Fable Book II
-			["description"] = "Account-Wide Daily Quest. Must have completed the quest Beasts of Fable.|r",
-			["sourceQuests"] = { 32603 },	-- Beasts of Fable
-			["providers"] = {
-				{ "n", 64572 },	-- Sara Finkleswitch
-				{ "n", 64582 },	-- Gentle San
-			},
-			["coords"] = {
-				{ 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
-				{ 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
-			},
-			["g"] = {
-				FABLED_PANDAREN_PET_SUPPLIES
-			},
-		}),
-		q(32869, {	-- Beasts of Fable Book III
-			["description"] = "Account-Wide Daily Quest. Must have completed the quest Beasts of Fable.|r",
-			["sourceQuests"] = { 32603 },	-- Beasts of Fable
-			["providers"] = {
-				{ "n", 64572 },	-- Sara Finkleswitch
-				{ "n", 64582 },	-- Gentle San
-			},
-			["coords"] = {
-				{ 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
-				{ 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
-			},
-			["g"] = {
-				FABLED_PANDAREN_PET_SUPPLIES
-			},
-		}),
-		q(31958, {	-- Grand Master Aki
-			["sourceQuests"] = { 31951 },	-- Grand Master Aki
-			["provider"] = { "n", 66741 },	-- Aki the Chosen
-			["coord"] = { 31.2, 74.2, VALE_OF_ETERNAL_BLOSSOMS },
-			["g"] = {
-				SACK_OF_PET_SUPPLIES
-			},
-		}),
-		q(31955, {	-- Grand Master Nishi
-			["provider"] = { "n", 66734 },	-- Farmer Nishi
-			["coord"] = { 46.0, 43.6, VALLEY_OF_THE_FOUR_WINDS },
-			["g"] = {
-				SACK_OF_PET_SUPPLIES
-			},
-		}),
-		-- WoD
-		q(37205, {	-- Gargra
-			["coord"] = { 68.5, 64.7, FROSTFIRE_RIDGE },
-			["provider"] = { "n", 87122 },	-- Gargra
-			["g"] = {
-				SHINY_PET_CHARM
-			},
-		}),
-		q(37201, {	-- Cymre Brightblade
-			["coord"] = { 51.1, 70.6, GORGROND },
-			["provider"] = { "n", 83837 },	-- Cymre Brightblade
-			["g"] = {
-				SHINY_PET_CHARM
-			},
-		}),
-		q(37206, {	-- Tarr the Terrible
-			["provider"] = { "n", 87110 },	-- Tar the Terrible
-			["coord"] = { 56.2, 9.8, DRAENOR_NAGRAND },
-			["g"] = {
-				SHINY_PET_CHARM
-			},
-		}),
-		q(37203, {	-- Ashlei
-			["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },
-			["provider"] = { "n", 87124 },	-- Ashlei
-			["g"] = {
-				SHINY_PET_CHARM
-			},
-		}),
-		q(37207, {	-- Vesharr
-			["provider"] = { "n", 87123 },	-- Vesharr
-			["coord"] = { 46.2, 45.3, SPIRES_OF_ARAK },
-			["g"] = {
-				SHINY_PET_CHARM
-			},
-		}),
-		q(37208, {	-- Taralune
-			["coord"] = { 49.0, 80.3, TALADOR },
-			["provider"] = { "n", 87125 },	-- Taralune
-			["g"] = {
-				SHINY_PET_CHARM
-			},
+		tier(WOD_TIER, {
+			q(37203, {	-- Ashlei
+				["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },
+				["provider"] = { "n", 87124 },	-- Ashlei
+				["g"] = {
+					SHINY_PET_CHARM
+				},
+			}),
+			q(37201, {	-- Cymre Brightblade
+				["coord"] = { 51.1, 70.6, GORGROND },
+				["provider"] = { "n", 83837 },	-- Cymre Brightblade
+				["g"] = {
+					SHINY_PET_CHARM
+				},
+			}),
+			q(37205, {	-- Gargra
+				["coord"] = { 68.5, 64.7, FROSTFIRE_RIDGE },
+				["provider"] = { "n", 87122 },	-- Gargra
+				["g"] = {
+					SHINY_PET_CHARM
+				},
+			}),
+			q(37208, {	-- Taralune
+				["coord"] = { 49.0, 80.3, TALADOR },
+				["provider"] = { "n", 87125 },	-- Taralune
+				["g"] = {
+					SHINY_PET_CHARM
+				},
+			}),
+			q(37206, {	-- Tarr the Terrible
+				["provider"] = { "n", 87110 },	-- Tar the Terrible
+				["coord"] = { 56.2, 9.8, DRAENOR_NAGRAND },
+				["g"] = {
+					SHINY_PET_CHARM
+				},
+			}),
+			q(37207, {	-- Vesharr
+				["provider"] = { "n", 87123 },	-- Vesharr
+				["coord"] = { 46.2, 45.3, SPIRES_OF_ARAK },
+				["g"] = {
+					SHINY_PET_CHARM
+				},
+			}),
 		}),
 	})),
 	-- Weeklies
@@ -1370,9 +1377,7 @@ root(ROOTS.PetBattles, petbattle({
 				{ "i", 122681 },	-- Sternfathom's Pet Journal
 			},
 			["coord"] = { 49.3, 45.4, AZSUNA },
-			["g"] = {
-				SHINY_PET_CHARM
-			},
+			["_drop"] = { "g" },	-- Drop Shiny Pet Charm
 		}),
 		-- PvP Weekly
 		pvp(q(32863, {	-- What We've Been Training For
@@ -1395,18 +1400,16 @@ root(ROOTS.PetBattles, petbattle({
 						89139,	-- Chain Pet Leash
 						44820,	-- Red Ribbon Pet Leash
 						37460,	-- Rope Pet Leash
+						92679,	-- Flawless Aquatic Battle-Stone
+						92675,	-- Flawless Beast Battle-Stone
+						92676,	-- Flawless Critter Battle-Stone
+						92665,	-- Flawless Elemental Battle-Stone
+						92677,	-- Flawless Flying Battle-Stone
+						92682,	-- Flawless Humanoid Battle-Stone
+						92678,	-- Flawless Magic Battle-Stone
+						92680,	-- Flawless Mechanical Battle-Stone
+						92681,	-- Flawless Undead Battle-Stone
 					}},
-					["g"] = {
-						i(92679),	-- Flawless Aquatic Battle-Stone
-						i(92675),	-- Flawless Beast Battle-Stone
-						i(92676),	-- Flawless Critter Battle-Stone
-						i(92665),	-- Flawless Elemental Battle-Stone
-						i(92677),	-- Flawless Flying Battle-Stone
-						i(92682),	-- Flawless Humanoid Battle-Stone
-						i(92678),	-- Flawless Magic Battle-Stone
-						i(92680),	-- Flawless Mechanical Battle-Stone
-						i(92681),	-- Flawless Undead Battle-Stone
-					},
 				})
 			},
 		})),

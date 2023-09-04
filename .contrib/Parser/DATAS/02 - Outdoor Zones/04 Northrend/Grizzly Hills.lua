@@ -160,8 +160,7 @@ root(ROOTS.Zones, {
 						},
 					})),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
 						1238,	-- Unborn Val'kyr (PET!)
 					}},
@@ -170,8 +169,7 @@ root(ROOTS.Zones, {
 						pet(534),	-- Imperial Eagle Chick (PET!)
 						pet(633),	-- Mountain Skunk (PET!)
 					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(4204),	-- Amberpine Lodge
@@ -800,7 +798,9 @@ root(ROOTS.Zones, {
 						["qg"] = 26875,	-- Lieutenant Dumont
 						["sourceQuests"] = {
 							12511,	-- The Hills Have Us
+							-- #if AFTER 6.2.0.19953
 							39207,	-- Hero's Call: Grizzly Hills!
+							-- #endif
 						},
 						["coord"] = { 31.8, 60.1, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
@@ -1220,7 +1220,9 @@ root(ROOTS.Zones, {
 						["qg"] = 26860,	-- Conqueror Krenna
 						["sourceQuests"] = {
 							12487,	-- To Conquest Hold, But Be Careful!
+							-- #if AFTER 6.2.0.19953
 							39206,	-- Warchief's Command: Grizzly Hills!
+							-- #endif
 						},
 						["coord"] = { 20.7, 64.1, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
@@ -1699,8 +1701,8 @@ root(ROOTS.Zones, {
 							["coord"] = { 22.6, 66.0, GRIZZLY_HILLS },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								i(21219),	-- Recipe: Sagefish Delight
-								i(21099),	-- Recipe: Smoked Sagefish
+								i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+								i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 							},
 						}),
 						n(27730, {	-- Purkom <Venture Coin Vendor>

@@ -4,7 +4,7 @@
 
 root(ROOTS.ExpansionFeatures,
 	tier(BFA_TIER, {
-		n(-10057, {	-- War Effort
+		n(WARFRONT, {
 			n(-236, {	-- Alliance War Campaign
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
@@ -64,9 +64,11 @@ root(ROOTS.ExpansionFeatures,
 					a(ach(13925, {	-- The Fourth War
 					--	not nesting 'ready for war' and 'tides of vengeance' achievements inside, because when you try to utilize the sourceQuests on 'the fourth war' it does not display properly.
 						["sourceQuests"] = { 57002 },	-- Old Soldier
+						["sym"] = {{"meta_achievement",
+							12510,	-- Ready for War
+							13467,	-- Tides of Vengeance
+						}},
 						["g"] = {
-							crit(1),	-- Ready for War
-							crit(2),	-- Tides of Vengeance
 							title(412),	-- Veteran of the Fourth War
 						},
 					})),
@@ -131,6 +133,11 @@ root(ROOTS.ExpansionFeatures,
 							["sourceQuests"] = { 47186 },	-- Sanctum of Sages
 							["coord"] = { 68.1, 21.9, BORALUS },
 							["provider"] = { "n", 121235 },	-- Taelia
+							["groups"] = {
+								ach(12582, {	-- Come Sail Away
+									["races"] = ALLIANCE_ONLY,
+								}),
+							},
 						}),
 						q(52654, {	-- The War Campaign
 							["sourceQuests"] = { 47189 },	-- A Nation Divided

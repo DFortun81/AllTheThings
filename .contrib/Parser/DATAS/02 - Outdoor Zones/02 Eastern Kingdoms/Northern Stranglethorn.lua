@@ -44,7 +44,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				classicAch(940, {	-- The Green Hills of Stranglethorn
+				ach(940, {	-- The Green Hills of Stranglethorn
 					-- #if AFTER CATA
 					["sourceQuest"] = 208,	-- Big Game Hunter
 					-- #else
@@ -55,12 +55,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					-- #if BEFORE WRATH
 					["description"] = "Complete all of Hemet Nesingwary quests in Stranglethorn Vale up to and including The Green Hills of Stranglethorn and Big Game Hunter.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ALL_SOURCE_QUESTS]],
+					["AllSourceQuestsRequiredForAchievement"] = true,
 					-- #endif
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					407,	-- Forest Spiderling (PET!)
 					404,	-- Long-tailed Mole (PET!)
@@ -76,8 +75,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(409),	-- Polly (PET!)
 					pet(405),	-- Tree Python (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			n(FLIGHT_PATHS, {
 				fp(593, {	-- Bambala, Stranglethorn
 					["cr"] = 43052,	-- Raskha <Flight Master>
@@ -110,6 +108,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["timeline"] = { "added 2.3.0.7382" },
 					["races"] = ALLIANCE_ONLY,
+				}),
+			}),
+			n(PROFESSIONS, {
+				prof(LEATHERWORKING, {
+					n(7871, {	-- Se'Jib <Master Tribal Leatherworker>
+						["coord"] = { 45.2, 58.6, NORTHERN_STRANGLETHORN },
+						["races"] = HORDE_ONLY,
+						["g"] = CLASSIC_TBC_TRIBAL,
+					}),
 				}),
 			}),
 			n(QUESTS, {
@@ -1118,8 +1125,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26407, {	-- Mosh'Ogg Handiwork
 					["provider"] = { "i", 58491 },	-- Disfigured Mosh'Ogg Hand
-					["sourceQuest"] = 26278,	-- The Defense of Grom'gol: Raptor Risk
-					["description"] = "Drops during |cFFFFD700The Defense of Grom'gol: Ogre Oppression|r.",
+					-- ["sourceQuest"] = 26278,	-- The Defense of Grom'gol: Raptor Risk [Not Required, Discord 2023-07-29]
+					["description"] = "Typically drops during |cFFFFD700The Defense of Grom'gol: Ogre Oppression|r.",
 					["timeline"] = { "added 4.0.3.13277" },
 					["crs"] = {
 						1142,	-- Mosh'Ogg Brute
@@ -2523,8 +2530,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(12231),	-- Recipe: Jungle Stew
-						i(12228),	-- Recipe: Roast Raptor
+						i(12231),	-- Recipe: Jungle Stew (RECIPE!)
+						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
 				n(2687, {	-- Gnaz Blunderflame <Engineering Supplies>
@@ -2577,9 +2584,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(21943, {	-- Design: Truesilver Crab
 							["isLimited"] = true,
 						}),
-						i(3682),	-- Recipe: Curiously Tasty Omelet
-						i(12231),	-- Recipe: Jungle Stew
-						i(12228),	-- Recipe: Roast Raptor
+						i(3682),	-- Recipe: Curiously Tasty Omelet (RECIPE!)
+						i(12231),	-- Recipe: Jungle Stew (RECIPE!)
+						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
 				n(1149, {	-- Uthok <General Supplies>
@@ -2590,7 +2597,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(16111),	-- Recipe: Spiced Chili Crab
+						i(16111),	-- Recipe: Spiced Chili Crab (RECIPE!)
 					},
 				}),
 				n(1146, {	-- Vharr <Superior Weaponsmith>
@@ -2692,7 +2699,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(8494),	-- Hyacinth Macaw (PET!)
 				-- #if BEFORE CATA
-				i(5788, {	-- Pattern: Thick Murloc Armor
+				i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
 					["cr"] = 938,	-- Kurzen Commando
 				}),
 				-- #endif
@@ -2703,7 +2710,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(48126, {	-- Razzashi Hatchling (PET!)
 					["timeline"] = { "added 3.2.0.10128" },
 				}),
-				i(9294, {	-- Recipe: Wildvine Potion
+				i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
 					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
 					["maps"] = { THE_HINTERLANDS },
 					["timeline"] = { "added 1.11.1", "removed 4.0.1" },

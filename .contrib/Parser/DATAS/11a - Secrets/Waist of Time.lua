@@ -241,7 +241,6 @@ root(ROOTS.Secrets, header(HEADERS.Item, 162690, bubbleDown({ ["timeline"] = { A
 			["coord"] = { 88.4, 69.2, ARATHI_HIGHLANDS },	-- Rotten Potato
 		}),
 		o(294703, {	-- Grimmy's Rusty Lockbox
-			["model"] = 196989,
 			["questID"] = 52922,
 			["sourceQuests"] = { 52921 },
 			["description"] = "After asking Grimmy how you smell, go outside behind and above his house, and on the hill will be Grimmy's Rusty Lockbox waiting for you to open it.",

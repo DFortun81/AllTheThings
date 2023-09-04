@@ -1,9 +1,26 @@
 --------------------------------------------
 --       E V E N T S    M O D U L E       --
 --------------------------------------------
-root(ROOTS.WorldEvents, n(-539,	-- The Scepter of the Shifting Sands
+THE_SCEPTER_OF_THE_SHIFTING_SANDS = createHeader({
+	readable = "The Scepter of the Shifting Sands",
+	icon = "Interface\\Icons\\Inv_hammer_25",
+	text = {
+		en = "The Scepter of the Shifting Sands",
+		es = "El cetro del Mar de Dunas",
+		de = "Das Szepter der Sandstürme",
+		fr = "Le Sceptre des Sables changeants",
+		it = "Scettro delle Sabbie Mutevoli",
+		pt = "Cetro das Areias Cambiantes",
+		ru = "Скипетр Зыбучих песков",
+		ko = "흐르는 모래의 홀",
+		cn = "流沙节杖",
+	},
+	description = {
+		en = "In addition to all players on a realm working towards completing the War Effort, one player had to create the Scepter of the Shifting Sands - a very difficult task that could only be solved by a server's top guild back when the questline was added. After the war effort was finished and the army of the Alliance and the Horde arrived in Silithus, the Scepter of the Shifting Sands could be used on the Scarab Gong. Doing so resulted in the opening of Ahn'Qiraj. The first player to bang the Scarab Gong on each server would be rewarded with the Scarab Lord title (in Burning Crusade, the title will not be available in Classic!) and the Black Qiraji Resonating Crystal mount. Anyone else who followed them within 10 hours was rewarded with the title as well.\n\nAlthough it is still possible to complete the questline for the Scepter of the Shifting Sands after the gates have been opened on your server, doing so will not reward neither the Black Qiraji Resonating Crystal nor the Scarab Lord title.",
+	},
+});
+root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 	applyclassicphase(PHASE_FIVE, bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, {
-		["description"] = "In addition to all players on a realm working towards completing the War Effort, one player had to create the Scepter of the Shifting Sands - a very difficult task that could only be solved by a server's top guild back when the questline was added. After the war effort was finished and the army of the Alliance and the Horde arrived in Silithus, the Scepter of the Shifting Sands could be used on the Scarab Gong. Doing so resulted in the opening of Ahn'Qiraj. The first player to bang the Scarab Gong on each server would be rewarded with the Scarab Lord title (in Burning Crusade, the title will not be available in Classic!) and the Black Qiraji Resonating Crystal mount. Anyone else who followed them within 10 hours was rewarded with the title as well.\n\nAlthough it is still possible to complete the questline for the Scepter of the Shifting Sands after the gates have been opened on your server, doing so will not reward neither the Black Qiraji Resonating Crystal nor the Scarab Lord title.",
 		["maps"] = {
 			CAVERNS_OF_TIME,
 			TANARIS,
@@ -44,11 +61,8 @@ root(ROOTS.WorldEvents, n(-539,	-- The Scepter of the Shifting Sands
 					["coord"] = { 25.7, 90.9, SILITHUS },
 					["lvl"] = 60,
 					["groups"] = {
-						classicAch(416, {	-- Scarab Lord (Achievement)
+						ach(416, {	-- Scarab Lord (Achievement)
 							["sourceQuest"] = 8743,	-- Bang a Gong!
-							-- #if BEFORE WRATH
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
-							-- #endif
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						title(33, {	-- Scarab Lord Crieve
@@ -102,7 +116,7 @@ root(ROOTS.WorldEvents, n(-539,	-- The Scepter of the Shifting Sands
 					},
 					["lvl"] = 60,
 					["groups"] = {
-						i(21025),	-- Recipe: Dirge's Kickin' Chimaerok Chops
+						i(21025),	-- Recipe: Dirge's Kickin' Chimaerok Chops (RECIPE!)
 					},
 				}),
 				q(8733, {	-- Eranikus, Tyrant of the Dream
@@ -240,12 +254,11 @@ root(ROOTS.WorldEvents, n(-539,	-- The Scepter of the Shifting Sands
 					["qg"] = 15180,	-- Baristolth of the Shifting Sands
 					["sourceQuest"] = 8301,	-- The Path of the Righteous
 					["coord"] = { 49.5, 36.4, SILITHUS },
+					["maxReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral
+					["cost"] = {{ "i", 20384, 200 }},	-- Silithid Carapace Fragment
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
-						objective(1, {	-- 0/200 Silithid Carapace Fragment
-							["provider"] = { "i", 20384 },	-- Silithid Carapace Fragment
-						}),
 						i(20403),	-- Proxy of Nozdormu
 					},
 				}),

@@ -66,6 +66,12 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				["coord"] = { 53.2, 9.3, DAZARALOR },
 			}),
 		}),
+		pvp(ach(12573, {	-- Band of Brothers
+			crit(1),		-- Honorable Kill
+			crit(2),		-- Loot Player Bounty
+			crit(3),		-- Complete Rare Elite World Quest
+			crit(4),		-- Loot War Supply Chest
+		})),
 		ach(12989, {	-- Battle for Azeroth Pathfinder, Part One
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -100,6 +106,45 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 			ach(13701),	-- Battlefield Brawler
 			ach(13702),	-- Battlefield Tactician
 		}),
+		pvp(ach(12571)),	-- Bounty Hunting
+		pvp(ach(12605, {	-- Conqueror of Azeroth (A)
+			["races"] = ALLIANCE_ONLY,
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				12573,	-- Band of Brothers
+				12571,	-- Bounty Hunting
+				12572,	-- War Supplied
+				12574,	-- Tour of Duty: Nazmir
+				12576,	-- Tour of Duty: Vol'dun
+				12579,	-- Tour of Duty: Drustvar
+				12578,	-- Tour of Duty: Stormsong Valley
+				12577,	-- Tour of Duty: Tiragarde Sound
+				12575,	-- Tour of Duty: Zuldazar
+			}},
+			["g"] = {
+				i(163577),	-- Conquerer's Scythemaw (MOUNT!)
+				title(377),	-- %s, Conqueror of Azeroth
+			},
+		})),
+		pvp(ach(12604, {	-- Conqueror of Azeroth (H)
+			["races"] = HORDE_ONLY,
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				12573,	-- Band of Brothers
+				12571,	-- Bounty Hunting
+				12572,	-- War Supplied
+				12574,	-- Tour of Duty: Nazmir
+				12576,	-- Tour of Duty: Vol'dun
+				12579,	-- Tour of Duty: Drustvar
+				12578,	-- Tour of Duty: Stormsong Valley
+				12577,	-- Tour of Duty: Tiragarde Sound
+				12575,	-- Tour of Duty: Zuldazar
+			}},
+			["g"] = {
+				i(163577),	-- Conquerer's Scythemaw (MOUNT!)
+				title(377),	-- %s, Conqueror of Azeroth
+			},
+		})),
 		un(BLACK_MARKET, ach(14183, {	-- Conspicuous Consumption
 			["provider"] = { "i", 163042 },	-- Mighty Caravan Brutosaur
 		})),
@@ -150,6 +195,54 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 			}),
 			crit(4, {	-- Loot 5 War Supply Chests in Nazjatar
 				["maps"] = { NAZJATAR },
+			}),
+		})),
+		pvp(a(ach(13402))),	-- Frontline Slayer (A)
+		pvp(h(ach(13403))),	-- Frontline Slayer (H)
+		pvp(achraw(13387, {	-- Frontline Veteran (A)
+			["races"] = ALLIANCE_ONLY,
+			["g"] = bubbleDown({["description"] = "Requires War Mode Active" }, {
+				crit(1, {		-- A Sound Defense
+					["_quests"] = { 53711 },	-- A Sound Defense (Faction Assault WQ)
+				}),
+				crit(2, {		-- Storm's Rage
+					["_quests"] = { 51982 },	-- Storm's Rage (Faction Assault WQ)
+				}),
+				crit(3, {		-- A Drust Cause
+					["_quests"] = { 53701 },	-- A Drust Cause (Faction Assault WQ)
+				}),
+				crit(4, {		-- Many Fine Heroes
+					["_quests"] = { 54134 },	-- Many Fine Heroes (Faction Assault WQ)
+				}),
+				crit(5, {		-- March on the Marsh
+					["_quests"] = { 54136 },	-- March on the Marsh (Faction Assault WQ)
+				}),
+				crit(6, {		-- Ritual Rampage
+					["_quests"] = { 54138 },	-- Ritual Rampage (Faction Assault WQ)
+				}),
+			}),
+		})),
+		pvp(achraw(13388, {	-- Frontline Veteran (H)
+			["races"] = HORDE_ONLY,
+			["g"] = bubbleDown({["description"] = "Requires War Mode Active" }, {
+				crit(1, {		-- Breaching Boralus
+					["_quests"] = { 53939 },	-- Breaching Boralus (Faction Assault WQ)
+				}),
+				crit(2, {		-- Romp in the Swamp
+					["_quests"] = { 54135 },	-- Romp in the Swamp (Faction Assault WQ)
+				}),
+				crit(3, {		-- Isolated Victory
+					["_quests"] = { 53885 },	-- Isolated Victory (Faction Assault WQ)
+				}),
+				crit(4, {		-- Shores of Zuldazar
+					["_quests"] = { 53883 },	-- Shores of Zuldazar (Faction Assault WQ)
+				}),
+				crit(5, {		-- In Every Dark Corner
+					["_quests"] = { 54137 },	-- In Every Dark Corner (Faction Assault WQ)
+				}),
+				crit(6, {		-- Horde of Heroes
+					["_quests"] = { 54132 },	-- Horde of Heroes (Faction Assault WQ)
+				}),
 			}),
 		})),
 		ach(12740, {	-- Full of Scrap!
@@ -329,6 +422,16 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				["provider"] = { "i", 163719 },	-- Forbidden Sea Shanty of the Horse
 			}),
 		}),
+		pvp(ach(13317, {	-- Supplied and Ready
+			["maps"] = {
+				DRUSTVAR,
+				NAZMIR,
+				STORMSONG_VALLEY,
+				TIRAGARDE_SOUND,
+				VOLDUN,
+				ZULDAZAR
+			},
+		})),
 		ach(12872),	-- The Dirty Five
 		ach(13061, {	-- Three Sheets to the Wind
 			crit(1, {	-- "Aurora Borealis"
@@ -448,5 +551,6 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				["coord"] = { 52.75, 83.73, VOLDUN },
 			}),
 		}),
+		pvp(ach(12572)),	-- War Supplied
 	}),
 }));

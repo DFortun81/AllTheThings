@@ -4,32 +4,14 @@
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(MOUNT_HYJAL, {
 		["lore"] = "Mount Hyjal is the zone most players quest in when starting Cataclysm zones. Between Ragnaros attacking Hyjal with the help of the Twilight Cultists and Malfurion Stormrage back from the Emerald Dream, this zone is filled with familiar faces and epic quests from the start. The scenery alternates between lush forests and scorched earth, as the player attempts to heal the land and regrow the forests.",
+		["icon"] = 409547,	-- "Interface\\Icons\\Achievement_zone_mount-hyjal",	-- NOTE: Icon path didn't work. Check again in Cata Classic.
 		["timeline"] = { "added 4.0.3" },
 		["maps"] = {
 			738,	-- Firelands
 			760,	-- Malorne's Nightmare
 		},
-		["achievementID"] = 4863,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				petbattle(ach(9069, {	-- An Awfully Big Adventure
-					["timeline"] = { "added 6.0.2" },
-					["collectible"] = false,
-					["filterID"] = BATTLE_PETS,
-					["groups"] = {
-						crit(7, {	-- Brok
-							["coord"] = { 61.4, 32.8, MOUNT_HYJAL },
-							["cr"] = 66819,	-- Brok <Master Pet Tamer>
-						}),
-					},
-				})),
-				ach(5868, {	-- And the Meek Shall Inherit Kalimdor
-					crit(1),	-- Angry Little Squirrel
-					crit(2),	-- Hyjal Bear Cub
-					crit(3),	-- Alpine Songbird slain
-					crit(4),	-- Child of Tortolla
-				}),
-				ach(4959),	-- Beware of the 'Unbeatable?' Pterodactyl
 				ach(5483),	-- Bounce
 				ach(4870, {	-- Coming Down the Mountain
 					crit(1, {	-- The Return of the Ancients
@@ -68,53 +50,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				explorationAch(4863),	-- Explore Hyjal
-				ach(5864),	-- Gang War
-				ach(5865, {	-- Have... Have We Met?
-					crit(4),	-- Chromie
-					crit(2),	-- Hemet Nesingwary
-					crit(1),	-- Linken
-					crit(5),	-- Mankrik
-					crit(3),	-- Nat Pagle
-					crit(6),	-- Thassarian
-				}),
-				ach(5869, {	-- Infernal Ambassadors
-					crit(4),	-- Slay Galenges before he is weakened a second time
-					crit(3),	-- Slay Lylagar without taking damage from Lylagar Breath. slain
-					crit(2),	-- Slay Millagazor without taking damage from Gout of Flame. slain
-					crit(5),	-- Slay Nemesis at Ashen Lake without taking damage from Molten Fury. slain
-					crit(1),	-- Slay Pyrachnis without using the Emerald of Aessina. slain
-				}),
-				ach(5862),	-- Ludicrous Speed
 				ach(5860, {		-- The 'Unbeatable?' Pterodactyl: BEATEN.
 					i(69838, {		-- Chirping Box (Blue / Gold Mini Jouster - which ever wasnt picked during !Vigilance on Wings)
 						["description"] = "Contains either the Blue or Gold Mini Jouster, whichever was not picked during the quest Vigilance on Wings.",
 						["groups"] = {
-							i(65661, {	-- Blue Mini Jouster (PET!)
-								["timeline"] = { "added 4.0.1.12984" },
-							}),
-							i(65662, {	-- Gold Mini Jouster (PET!)
-								["timeline"] = { "added 4.0.1.12984" },
-							}),
+							i(65661),	-- Blue Mini Jouster (PET!)
+							i(65662),	-- Gold Mini Jouster (PET!)
 						},
 					}),
 				}),
-				ach(5861, {	-- The Fiery Lords of Sethria's Roost
-					crit(3, {	-- Andrazor slain
-						["cr"] = 53267,	-- Andrazor
-					}),
-					crit(4, {	-- Fah Jarakk slain
-						["cr"] = 53271,	-- Fah Jarakk
-					}),
-					crit(2, {	-- Kelbnar slain
-						["cr"] = 53265,	-- Kelbnar
-					}),
-					crit(1, {	-- Searris slain
-						["cr"] = 53264,	-- Searris
-					}),
-				}),
+				achWithRep(4882, 1158),	-- The Guardians of Hyjal
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					487,	-- Alpine Chipmunk (PET!)
 					632,	-- Ash Lizard (PET!)
@@ -147,14 +94,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["description"] = "Can be found in areas where the Twilight Hammer have set up camp.",
 					}),
 				},
-			})),
-			-- #endif
+			}),
+			n(FACTIONS, {
+				faction(1158, {	-- Guardians of Hyjal
+					["icon"] = "Interface\\Icons\\inv_misc_tabard_guardiansofhyjal",
+				}),
+			}),
 			prof(FISHING, {
 				o(202776, {	-- Mountain Trout School
-					i(22739, {	-- Tome of Polymorph: Turtle
-						["classes"] = { MAGE },
-						["f"] = RECIPES,
-					}),
+					i(22739),	-- Tome of Polymorph: Turtle (CI!)
 				}),
 			}),
 			n(FLIGHT_PATHS, {
@@ -480,12 +428,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25544,	-- Wave Two
 					["groups"] = {
 						ach(4959),	-- Beware of the 'Unbeatable?' Pterodactyl
-						i(65662, {	-- Gold Mini Jouster (PET!)
-							["timeline"] = { "added 4.0.1.12984" },
-						}),
-						i(65661, {	-- Blue Mini Jouster (PET!)
-							["timeline"] = { "added 4.0.1.12984" },
-						}),
+						i(65662),	-- Gold Mini Jouster (PET!)
+						i(65661),	-- Blue Mini Jouster (PET!)
 					},
 				}),
 				q(25303, {	-- Elementary!
@@ -1531,6 +1475,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25274,	-- Signed in Blood
 				}),
 			}),
+			petbattles({
+				n(66819, {	-- Brok <Master Pet Tamer>
+					["coord"] = { 61.4, 32.8, MOUNT_HYJAL },
+				}),
+			}),
 			n(RARES, {
 				n(54318, {	-- Ankha
 					["coords"] = {
@@ -1613,7 +1562,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(62377),	-- Cloak of the Dryads
 						i(62386),	-- Cord of the Raven Queen
 						i(62375),	-- Galrond's Band
-						i(138803),	-- Illusion: Mending
+						i(138803, {	-- Illusion: Mending (ILLUSION!)
+							["timeline"] = { ADDED_7_0_3 },
+						}),
 						i(62376),	-- Mountain's Mouth
 						i(62374),	-- Sly Fox Jerkin
 						i(65906),	-- Tabard of the Guardians of Hyjal

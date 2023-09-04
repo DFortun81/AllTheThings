@@ -81,23 +81,12 @@ root(ROOTS.Zones, {
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["groups"] = {
-							crit(28, {	-- Nicki Tinytech
-								["coord"] = { 64.4, 49.2, HELLFIRE_PENINSULA },
-								["cr"] = 66550,	-- Nicki Tinytech <Master Pet Tamer>
-							}),
-						},
-					})),
 					explorationAch(862, {	-- Explore Hellfire Peninsula
 						-- #if BEFORE WRATH
 						["description"] = "Explore Hellfire Peninsula, revealing the covered areas of the world map.",
 						-- #endif
 					}),
-					classicAch(1189, {	-- To Hellfire and Back [Alliance Version]
+					ach(1189, {	-- To Hellfire and Back [Alliance Version]
 						["races"] = ALLIANCE_ONLY,
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -188,7 +177,7 @@ root(ROOTS.Zones, {
 						},
 						-- #endif
 					}),
-					classicAch(1271, {	-- To Hellfire and Back [Horde Version]
+					ach(1271, {	-- To Hellfire and Back [Horde Version]
 						["races"] = HORDE_ONLY,
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -294,16 +283,14 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
 						635,	-- Adder (PET!)
 					}},
 					["groups"] = {
 						pet(414),	-- Scorpid (PET!)
 					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(3556, "256:256:182:412"),	-- Den of Haal'esh
@@ -380,6 +367,11 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 				}),
+				petbattles({
+					n(66550, {	-- Nicki Tinytech <Master Pet Tamer>
+						["coord"] = { 64.4, 49.2, HELLFIRE_PENINSULA },
+					}),
+				}),
 				n(PROFESSIONS, {
 					prof(BLACKSMITHING, {
 						["crs"] = {
@@ -405,6 +397,39 @@ root(ROOTS.Zones, {
 							{ 52.5, 36.0, HELLFIRE_PENINSULA },
 						},
 						["groups"] = TBC_ENCHANTING,
+					}),
+					prof(HERBALISM, {
+						["crs"] = {
+							18776,	-- Rorelien <Herbalism Trainer> (A)
+							18748,	-- Ruak Stronghorn <Herbalism Trainer> (H)
+						},
+						["coords"] = {
+							{ 53.6, 65.8, HELLFIRE_PENINSULA },
+							{ 52.2, 36.2, HELLFIRE_PENINSULA },
+						},
+						["groups"] = TBC_HERBALISM,
+					}),
+					prof(LEATHERWORKING, {
+						["crs"] = {
+							18771,	-- Brumman <Leatherworking Trainer> (A)
+							18754,	-- Barim Spilthoof <Leatherworking Trainer> (H)
+						},
+						["coords"] = {
+							{ 54.0, 64.0, HELLFIRE_PENINSULA },
+							{ 56.2, 38.6, HELLFIRE_PENINSULA },
+						},
+						["groups"] = TBC_LEATHERWORKING,
+					}),
+					prof(MINING, {
+						["crs"] = {
+							18779,	-- Hurnak Grimmord <Mining Trainer> (A)
+							18747,	-- Krugosh <Mining Trainer> (H)
+						},
+						["coords"] = {
+							{ 56.6, 63.8, HELLFIRE_PENINSULA },
+							{ 55.4, 37.6, HELLFIRE_PENINSULA },
+						},
+						["groups"] = TBC_MINING,
 					}),
 				}),
 				n(QUESTS, {
@@ -1115,7 +1140,7 @@ root(ROOTS.Zones, {
 					}),
 					q(9498, {	-- Falcon Watch [Non-Blood Elf]
 						["qg"] = 16577,	-- Martik Tor'seldori
-						["sourceQuest"] = 10124,	-- Forward Base: Reaver's Fall
+						-- ["sourceQuest"] = 10124,	-- Forward Base: Reaver's Fall [Not required, Discord 2023-07-29]
 						["coord"] = { 55.1, 39.1, HELLFIRE_PENINSULA },
 						["races"] = exclude(BLOODELF, HORDE_ONLY),
 						["isBreadcrumb"] = true,
@@ -1123,7 +1148,7 @@ root(ROOTS.Zones, {
 					}),
 					q(9499, {	-- Falcon Watch [Blood Elf]
 						["qg"] = 16577,	-- Martik Tor'seldori
-						["sourceQuest"] = 10124,	-- Forward Base: Reaver's Fall
+						["sourceQuest"] = 10124,	-- Forward Base: Reaver's Fall [Likely not required, Discord 2023-07-29]
 						["coord"] = { 55.1, 39.1, HELLFIRE_PENINSULA },
 						["races"] = { BLOODELF },
 						["isBreadcrumb"] = true,
@@ -1426,7 +1451,7 @@ root(ROOTS.Zones, {
 					}),
 					q(13409, {	-- Hellfire Fortifications [Horde, Non-Death Knights]
 						["qg"] = 18267,	-- Battlecryer Blackeye
-						["sourceQuest"] = 10124,	-- Forward Base: Reaver's Fall
+						-- ["sourceQuest"] = 10124,	-- Forward Base: Reaver's Fall [Not required, Discord 2023-07-29]
 						["coord"] = { 55.9, 39.2, HELLFIRE_PENINSULA },
 						["timeline"] = { "added 3.3.0.10958" },
 						["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
@@ -2174,7 +2199,7 @@ root(ROOTS.Zones, {
 								["coord"] = { 62.9, 66.6, HELLFIRE_PENINSULA },
 								["cr"] = 16972,	-- Bonestripper Buzzard
 							}),
-							i(27684),	-- Recipe: Buzzard Bites
+							i(27684),	-- Recipe: Buzzard Bites (RECIPE!)
 							i(27651),	-- Buzzard Bites x5
 						},
 					}),
@@ -2248,7 +2273,7 @@ root(ROOTS.Zones, {
 					}),
 					q(9400, {	-- The Assassin
 						["qg"] = 3230,	-- Nazgrel
-						["sourceQuest"] = 10124,	-- Forward Base: Reaver's Fall
+						["sourceQuest"] = 10291,	-- Report to Nazgrel
 						["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
@@ -2924,7 +2949,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 53.8, 65.8, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(22900, {	-- Recipe: Elixir of Camouflage
+							i(22900, {	-- Recipe: Elixir of Camouflage (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},
@@ -2933,7 +2958,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 52.2, 36.4, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(22900, {	-- Recipe: Elixir of Camouflage
+							i(22900, {	-- Recipe: Elixir of Camouflage (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},
@@ -3014,7 +3039,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 54.6, 41.0, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(27688),	-- Recipe: Ravager Dog
+							i(27688),	-- Recipe: Ravager Dog (RECIPE!)
 						},
 					}),
 					n(18997, {	-- Fallesh Sunfallow <Weapon Merchant>
@@ -3140,20 +3165,17 @@ root(ROOTS.Zones, {
 								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
 								["OnTooltip"] = [[function(t)
 									local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
-									if ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FOUR .. [[] then
+									if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FOUR .. [[) then
 										tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);
 									else
 										tooltip:AddLine("This will be available at Honored reputation after TBC Phase 4.", 0.4, 0.8, 1, 1);
 									end
 									tooltip:Show();
 								end]],
-								["OnUpdate"] = [[function(t)
-									if not t.otherItemID then
-										t.otherItemID = 185687;
-										_.CacheField(t, "itemID", t.otherItemID);
-										t.GetItemCount = function(t) return GetItemCount(t.itemID, true) + GetItemCount(t.otherItemID, true); end
-										t.OnUpdate = nil;
-									end
+								["OnInit"] = [[function(t)
+									t.otherItemID = 185687;
+									t.GetItemCount = function(t) return GetItemCount(t.itemID, true) + GetItemCount(t.otherItemID, true); end
+									return t;
 								end]],
 								-- #endif
 								-- #endif
@@ -3184,32 +3206,17 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_TWO, i(35470)),	-- Kodohide Spaulders
 							applyclassicphase(TBC_PHASE_TWO, i(35467)),	-- Mooncloth Vestments
 							applyclassicphase(TBC_PHASE_TWO, i(35468)),	-- Opportunist's Leather Gloves
-							i(29719, {	-- Pattern: Cobrahide Leg Armor
-								["spellID"] = 35549,	-- Cobrahide Leg Armor
-								["requireSkill"] = LEATHERWORKING,
-							}),
-							i(29213, {	-- Pattern: Felstalker Belt
-								["spellID"] = 32498,	-- Felstalker Belt
-								["requireSkill"] = LEATHERWORKING,
-							}),
-							i(29214, {	-- Pattern: Felstalker Bracers
-								["spellID"] = 32499,	-- Felstalker Bracers
-								["requireSkill"] = LEATHERWORKING,
-							}),
-							i(29215, {	-- Pattern: Felstalker Breastplate
-								["spellID"] = 32500,	-- Felstalker Breastplate
-								["requireSkill"] = LEATHERWORKING,
-							}),
-							i(29722, {	-- Pattern: Nethercobra Leg Armor
-								["spellID"] = 35554,	-- Nethercobra Leg Armor
-								["requireSkill"] = LEATHERWORKING,
-							}),
-							applyclassicphase(TBC_PHASE_THREE, i(34218, {	-- Pattern: Netherscale Ammo Pouch
-								["timeline"] = { "removed 4.0.1" },
+							i(29719),	-- Pattern: Cobrahide Leg Armor [A] (RECIPE!)
+							i(29213),	-- Pattern: Felstalker Belt [A] (RECIPE!)
+							i(29214),	-- Pattern: Felstalker Bracers [A] (RECIPE!)
+							i(29215),	-- Pattern: Felstalker Breastplate [A] (RECIPE!)
+							i(29722),	-- Pattern: Nethercobra Leg Armor [A] (RECIPE!)
+							applyclassicphase(TBC_PHASE_THREE, i(34218, {	-- Pattern: Netherscale Ammo Pouch [A] (RECIPE!)
+								["timeline"] = { ADDED_2_3_0, REMOVED_4_0_1 },
 							})),
 							i(23619),	-- Plans: Felsteel Shield Spike (RECIPE!)
-							i(22905),	-- Recipe: Elixir of Major Agility
-							i(25870),	-- Recipe: Transmute Skyfire Diamond
+							i(22905),	-- Recipe: Elixir of Major Agility (RECIPE!)
+							i(25870),	-- Recipe: Transmute Skyfire Diamond (RECIPE!)
 							i(29169),	-- Ring of Convalescence
 							i(25826),	-- Sage's Band
 							applyclassicphase(TBC_PHASE_TWO, i(35466)),	-- Satin Hood
@@ -3254,20 +3261,17 @@ root(ROOTS.Zones, {
 								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
 								["OnTooltip"] = [[function(t)
 									local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
-									if ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FOUR .. [[] then
+									if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FOUR .. [[) then
 										tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);
 									else
 										tooltip:AddLine("This will be available at Honored reputation after TBC Phase 4.", 0.4, 0.8, 1, 1);
 									end
 									tooltip:Show();
 								end]],
-								["OnUpdate"] = [[function(t)
-									if not t.otherItemID then
-										t.otherItemID = 185686;
-										_.CacheField(t, "itemID", t.otherItemID);
-										t.GetItemCount = function(t) return GetItemCount(t.itemID, true) + GetItemCount(t.otherItemID, true); end
-										t.OnUpdate = nil;
-									end
+								["OnInit"] = [[function(t)
+									t.otherItemID = 185686;
+									t.GetItemCount = function(t) return GetItemCount(t.itemID, true) + GetItemCount(t.otherItemID, true); end
+									return t;
 								end]],
 								-- #endif
 								-- #endif
@@ -3299,32 +3303,17 @@ root(ROOTS.Zones, {
 							i(29152),	-- Marksman's Bow
 							applyclassicphase(TBC_PHASE_TWO, i(35337)),	-- Mooncloth Vestments
 							applyclassicphase(TBC_PHASE_TWO, i(35366)),	-- Opportunist's Leather Gloves
-							i(31361, {	-- Pattern: Cobrahide Leg Armor
-								["spellID"] = 35549,	-- Cobrahide Leg Armor
-								["requireSkill"] = LEATHERWORKING,
-							}),
-							i(25738, {	-- Pattern: Felstalker Belt
-								["spellID"] = 32498,	-- Felstalker Belt
-								["requireSkill"] = LEATHERWORKING,
-							}),
-							i(25739, {	-- Pattern: Felstalker Bracers
-								["spellID"] = 32499,	-- Felstalker Bracers
-								["requireSkill"] = LEATHERWORKING,
-							}),
-							i(25740, {	-- Pattern: Felstalker Breastplate
-								["spellID"] = 32500,	-- Felstalker Breastplate
-								["requireSkill"] = LEATHERWORKING,
-							}),
-							i(31362, {	-- Pattern: Nethercobra Leg Armor
-								["spellID"] = 35554,	-- Nethercobra Leg Armor
-								["requireSkill"] = LEATHERWORKING,
-							}),
-							applyclassicphase(TBC_PHASE_THREE, i(34201, {	-- Pattern: Netherscale Ammo Pouch
-								["timeline"] = { "removed 4.0.1" },
+							i(31361),	-- Pattern: Cobrahide Leg Armor [H] (RECIPE!)
+							i(25738),	-- Pattern: Felstalker Belt [H] (RECIPE!)
+							i(25739),	-- Pattern: Felstalker Bracers [H] (RECIPE!)
+							i(25740),	-- Pattern: Felstalker Breastplate [H] (RECIPE!)
+							i(31362),	-- Pattern: Nethercobra Leg Armor [H] (RECIPE!)
+							applyclassicphase(TBC_PHASE_THREE, i(34201, {	-- Pattern: Netherscale Ammo Pouch [H] (RECIPE!)
+								["timeline"] = { ADDED_2_3_0, REMOVED_4_0_1 },
 							})),
 							i(24002),	-- Plans: Felsteel Shield Spike (RECIPE!)
-							i(24001),	-- Recipe: Elixir of Major Agility
-							i(29232),	-- Recipe: Transmute Skyfire Diamond
+							i(24001),	-- Recipe: Elixir of Major Agility (RECIPE!)
+							i(29232),	-- Recipe: Transmute Skyfire Diamond (RECIPE!)
 							applyclassicphase(TBC_PHASE_TWO, i(35339)),	-- Satin Hood
 							applyclassicphase(TBC_PHASE_TWO, i(35409)),	-- Savage Plate Helm
 							applyclassicphase(TBC_PHASE_TWO, i(35383)),	-- Seer's Linked Helm
@@ -3359,7 +3348,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 54.2, 63.6, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(27688),	-- Recipe: Ravager Dog
+							i(27688),	-- Recipe: Ravager Dog (RECIPE!)
 						},
 					}),
 					n(19001, {	-- Talaara <Weapon Merchant>

@@ -39,22 +39,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
-					385,	-- Mouse
-					386,	-- Prarie Dog
-					387,	-- Snake
-					419,	-- Small Frog
-					379,	-- Squirrel
+					385,	-- Mouse (PET!)
+					386,	-- Prarie Dog (PET!)
+					387,	-- Snake (PET!)
+					419,	-- Small Frog (PET!)
+					379,	-- Squirrel (PET!)
 				}},
 				["groups"] = {
-					pet(646), 	-- Chicken
-					pet(388), 	-- Shore Crab
-					pet(389),	-- Tiny Harvester
+					pet(646), 	-- Chicken (PET!)
+					pet(388), 	-- Shore Crab (PET!)
+					pet(389),	-- Tiny Harvester (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["305:210:204:260"] = 219,	-- Alexston Farmstead
@@ -355,7 +353,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 9,
 					["groups"] = {
 						i(724),		-- Goretusk Liver Pie
-						i(2697),	-- Recipe: Goretusk Liver Pie
+						i(2697),	-- Recipe: Goretusk Liver Pie (RECIPE!)
 					},
 				}),
 				q(26252, {	-- Heart of the Watcher
@@ -531,7 +529,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if BEFORE 4.0.3
 						recipe(8681),	-- Instant Poison
 						-- #endif
-						i(18160),	-- Recipe: Thistle Tea
+						i(18160),	-- Recipe: Thistle Tea (RECIPE!)
 					},
 				}),
 				q(26228, {	-- Livin' the Life
@@ -1382,7 +1380,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(4789, {	-- Stable Boots
 							["isLimited"] = true,
 						}),
-						i(5640, {	-- Recipe: Rage Potion
+						i(5640, {	-- Recipe: Rage Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -1399,10 +1397,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(6274, {	-- Pattern: Blue Overalls
 							["isLimited"] = true,
 						}),
-						i(5786, {	-- Pattern: Murloc Scale Belt
+						i(5786, {	-- Pattern: Murloc Scale Belt (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5787, {	-- Pattern: Murloc Scale Breastplate
+						i(5787, {	-- Pattern: Murloc Scale Breastplate (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(5771, {	-- Pattern: Red Linen Bag
@@ -1414,10 +1412,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 36.2, 90.0, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(5528),	-- Recipe: Clam Chowder
-						i(6368),	-- Recipe: Rainbow Fin Albacore
-						i(6326),	-- Recipe: Slitherskin Mackerel
-						i(16111),	-- Recipe: Spiced Chili Crab
+						i(5528),	-- Recipe: Clam Chowder (RECIPE!)
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+						i(6326),	-- Recipe: Slitherskin Mackerel (RECIPE!)
+						i(16111),	-- Recipe: Spiced Chili Crab (RECIPE!)
 					},
 				}),
 				n(1668, {	-- William MacGregor <Bowyer>
@@ -1556,10 +1554,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				-- #if AFTER 4.0.3
-				i(2698, {	-- Recipe: Cooked Crab Claw
+				i(2698, {	-- Recipe: Cooked Crab Claw (RECIPE!)
 					["description"] = "Can drop from any mob in the zone, would recommend farming the murlocs in the north.",
 				}),
-				i(728, {	-- Recipe: Westfall Stew
+				i(728, {	-- Recipe: Westfall Stew (RECIPE!)
 					["description"] = "Can drop from any mob in the zone, would recommend farming the Riverpaw Gnolls.",
 				}),
 				-- #endif

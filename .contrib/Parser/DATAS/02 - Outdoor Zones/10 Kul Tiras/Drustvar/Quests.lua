@@ -20,11 +20,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["provider"] = { "n", 129642 },	-- Lucille Waycrest
 			}),
 			q(50327, {	-- A Little 'Pick Me Up'
-				["sourceQuests"] = { 50306 },	-- Odds and Ends
+				["sourceQuests"] = {
+					50306,	-- Odds and Ends
+					50265,	-- Saving Master Ashton
+				},
 				["coord"] = { 20.6, 57.4, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 133126 },	-- Marten Webb
-				-- May have additional requirements; needs confirmation.
 			}),
 			q(50174, {	-- All Wrapped Up
 				["provider"] = { "n", 132374 },	-- Elsie Wright
@@ -101,7 +103,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					azeriteItem(160890),	-- Waycrest Militia Battleplate
 					azeriteItem(160889),	-- Crone-Seeker's Chainmail
 					azeriteItem(155106),	-- Crone-Seeker's Helm
-					un(NEVER_IMPLEMENTED, azeriteItem(160891)), -- Wickerwoven Robe
+					azeriteItem(160891, { ["timeline"] = { "created 8.0.1.26433" }}), -- Wickerwoven Robe
 					azeriteItem(160887),	-- Wickerwoven Vestments
 					azeriteItem(155105),	-- Wickerwoven Crown
 					azewrongItem(175301),	-- Banisher Cowl (no azerite version)
@@ -1028,7 +1030,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["sourceQuests"] = {
 					50585,	-- Hexecutioner
 					50584,	-- Ruinous Rituals
-					50586,	-- The Fall of Corlain
 					50583,	-- To the Other Side
 					-- Definitely requires Hexecutioner; may not require others.  Needs confirmation.
 					-- Awarded "Storming the Manor" criteria.
@@ -1320,6 +1321,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 27.5, 58.8, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 1045 },	-- Thros, The Blighted Lands
+				["groups"] = {
+					ach(12997, {	-- The Pride of Kul Tiras
+						["races"] = ALLIANCE_ONLY,
+					}),
+				},
 			}),
 			q(48504, {	-- Through the Old Roads
 				["provider"] = { "n", 135021 },	-- Inquisitor Cleardawn
@@ -1537,33 +1543,3 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 		}),
 	}),
 })));
-
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	tier(BFA_TIER, {
-		n(ARMOR, {
-			filter(CLOTH, {
-				i(158603),	-- Wickerwoven Handwraps
-				i(160197),	-- Wickerwoven Pantaloons
-			}),
-			filter(LEATHER, {
-				i(158589),	-- Banisher Striders
-				i(158604),	-- Banisher Mitts
-				i(158620),	-- Banisher Waistwrap
-				i(158632),	-- Banisher Bindings
-				i(160198),	-- Banisher Britches
-				i(155473),	-- Banisher Cinch
-			}),
-			filter(MAIL, {
-				i(158605),	-- Crone-Seeker's Grips
-				i(160199),	-- Crone-Seeker's Leggings
-			}),
-			filter(PLATE, {
-				i(158606),	-- Waycrest Militia Gloves
-				i(160200),	-- Waycrest Militia Pants
-			}),
-		}),
-		n(WEAPONS, {
-			i(161296),	-- Autumnvale Hunting Rifle
-		}),
-	}),
-}));

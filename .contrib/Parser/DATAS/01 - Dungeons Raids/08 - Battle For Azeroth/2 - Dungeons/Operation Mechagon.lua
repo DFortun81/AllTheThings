@@ -1,7 +1,28 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
+MECHAGON_JUNKYARD = createHeader({
+	readable = "Junkyard",
+	icon = "Interface\\Icons\\inv_misc_blizzcon09_graphicscard",
+	text = {
+		en = "Junkyard",
+		de = "Schrottplatz",
+		es = "Desguace",
+		fr = "La casse",
+		it = "Discarica",
+		pt = "Ferro-velho",
+		ru = "Свалка",
+		ko = "고철장",
+		cn = "垃圾场",
+	},
+});
+MECHAGON_WORKSHOP = createHeader({
+	readable = "Workshop",
+	icon = "Interface\\Icons\\inv_misc_key_06",
+	text = {
+		en = [[~GetSpellInfo(251998)]],
+	},
+});
 root(ROOTS.Instances, tier(BFA_TIER, {
 	inst(1178, {	-- Operation: Mechagon
 		["coord"] = { 73.1, 36.3, MECHAGON },
@@ -15,8 +36,8 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 		["lvl"] = 120,
 		["g"] = {
 			n(ZONE_DROPS, {
-				i(170212),	-- Mecha-Bytes
-				i(170211),	-- Recipe: Famine Evaluator and Snack Table
+				i(170212),	-- Recipe: Mecha-Bytes (RECIPE!)
+				i(170211),	-- Recipe: Famine Evaluator and Snack Table [Rank 3] (RECIPE!)
 				i(170210),	-- Recipe: Abyssal Healing Potion (Rank 3)
 				i(170208),	-- Recipe: Potion of Unbridled Fury (Rank 3)
 				i(170209),	-- Recipe: Potion of Wild Mending (Rank 3)
@@ -37,7 +58,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 			d(HEROIC_DUNGEON, {
 				["lvl"] = 120,
 				["g"] = {
-					n(-379, {	-- Junkyard
+					n(MECHAGON_JUNKYARD, {
 						e(2357, {	-- King Gobbamak
 							["crs"] = { 150159 },	-- King Gobbamak
 							["g"] = {
@@ -113,7 +134,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 							},
 						}),
 					}),
-					n(-380, {	-- Workshop
+					n(MECHAGON_WORKSHOP, {
 						e(2336, {	-- Tussle Tonks
 							["crs"] = {
 								144244,	-- The Platinum Pummeler
@@ -214,7 +235,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 							}),
 						},
 					}),
-					n(-379, {	-- Junkyard
+					n(MECHAGON_JUNKYARD, {
 						e(2357, {	-- King Gobbamak
 							["crs"] = { 150159 },	-- King Gobbamak
 							["g"] = {
@@ -294,7 +315,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 							},
 						}),
 					}),
-					n(-380, {	-- Workshop
+					n(MECHAGON_WORKSHOP, {
 						e(2336, {	-- Tussle Tonks
 							["crs"] = {
 								144244,	-- The Platinum Pummeler

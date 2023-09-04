@@ -19,33 +19,17 @@ root(ROOTS.Zones, {
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["groups"] = {
-							crit(5, {	-- Bloodknight Antari
-								["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
-								["cr"] = 66557,	-- Bloodknight Antari <Grand Master Pet Tamer>
-							}),
-						},
-					})),
 					explorationAch(864, {	-- Explore Shadowmoon Valley
 						-- #if BEFORE WRATH
 						["description"] = "Explore Shadowmoon Valley, revealing the covered areas of the world map.",
 						-- #endif
 					}),
-					ach(898, applyclassicphase(TBC_PHASE_THREE_NETHERWING, {	-- On Wings of Nether
+					applyclassicphase(TBC_PHASE_THREE_NETHERWING, achWithRep(898, 1015, {	-- On Wings of Nether
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with the Netherwing to Exalted.",
 						-- #endif
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1015); end]],
-						-- #endif
 					})),
-					classicAch(1195, {	-- Shadow of the Betrayer
+					ach(1195, {	-- Shadow of the Betrayer
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
 						["sourceQuests"] = {
@@ -139,8 +123,7 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
 						425,	-- Ash Viper (PET!)
 						414,	-- Scorpid (PET!)
@@ -151,8 +134,7 @@ root(ROOTS.Zones, {
 							["description"] = "Found around the Hand of Gul'dan in old Shadowmoon Valley and fel areas in Tanaan.",
 						}),
 					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(3754, "256:256:520:93"),	-- Altar of Sha'tar
@@ -210,6 +192,11 @@ root(ROOTS.Zones, {
 				prof(MINING, {
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32506)),	-- Netherwing Egg
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32464)),	-- Nethercite Ore
+				}),
+				petbattles({
+					n(66557, {	-- Bloodknight Antari <Grand Master Pet Tamer>
+						["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
+					}),
 				}),
 				prof(SKINNING, {
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32470)),	-- Nethermine Flayer Hide
@@ -711,11 +698,8 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 11070,	-- Dragonmaw Race: Wing Commander Mulverick
 						["coord"] = { 65.5, 85.3, SHADOWMOON_VALLEY },
 						["groups"] = {
-							classicAch(1638, {	-- Skyshattered
+							ach(1638, {	-- Skyshattered
 								["sourceQuest"] = 11071,	-- Dragonmaw Race: Captain Skyshatter
-								-- #if BEFORE WRATH
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
-								-- #endif
 							}),
 							i(32863),	-- Skybreaker Whip
 						},
@@ -2189,7 +2173,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(68, 68, 10),
 					}),
-					i(31682, {	-- Recipe: Fel Mana Potion
+					i(31682, {	-- Recipe: Fel Mana Potion (RECIPE!)
 						["crs"] = {
 							19796,	-- Eclipsion Archmage
 							19795,	-- Eclipsion Blood Knight
@@ -2200,7 +2184,7 @@ root(ROOTS.Zones, {
 							22017,	-- Eclipsion Spellbinder
 						},
 					}),
-					i(31681, {	-- Recipe: Fel Regeneration Potion
+					i(31681, {	-- Recipe: Fel Regeneration Potion (RECIPE!)
 						["crs"] = {
 							20878,	-- Deathforge Guardian
 							20887,	-- Deathforge Imp
@@ -2208,7 +2192,7 @@ root(ROOTS.Zones, {
 							19754,	-- Deathforge Tinkerer
 						},
 					}),
-					i(31680, {	-- Recipe: Fel Strength Elixir
+					i(31680, {	-- Recipe: Fel Strength Elixir (RECIPE!)
 						["crs"] = {
 							19755,	-- Mo'arg Weaponsmith
 							21302,	-- Shadow Council Warlock
@@ -2216,7 +2200,7 @@ root(ROOTS.Zones, {
 							19740,	-- Wrathwalker
 						},
 					}),
-					i(22924, {	-- Recipe: Major Shadow Protection Potion
+					i(22924, {	-- Recipe: Major Shadow Protection Potion (RECIPE!)
 						["crs"] = { 21302 },	-- Shadow Council Warlock
 					}),
 					i(23806, {	-- Schematic: Hyper-Vision Goggles
@@ -2270,7 +2254,7 @@ root(ROOTS.Zones, {
 
 -- #if AFTER TBC
 -- These quests never made it in.
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	n(QUESTS, {
 		-- #if BEFORE WRATH
 		q(10871),	-- BETA Ally of the Netherwing
@@ -2278,5 +2262,5 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(11052),	-- OLD Akama's Promise (awarded "Akama's Promise" criteria)
 		-- #endif
 	}),
-}));
+});
 -- #endif

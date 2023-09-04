@@ -22,7 +22,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						},
 					}),
 					ach(18257),	-- Can You Dig It?
-					ach(18271),	-- He'sSss All Mine
+					ach(18271, {	-- He'sSss All Mine
+						["provider"] = { "i", 205151 },	-- Salverun
+					}),
 					ach(18255, {	-- Proof of Myrrit [_quests handled by AchievementDB]
 						crit(1),	-- Vertical Anomaly
 						crit(2),	-- Flapping and Screaming
@@ -60,7 +62,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						},{"prune"}},	-- prune the sub-groups of these Quests
 					}),
 				}),
-				n(BONUS_OBJECTIVES, {
+				n(BONUS_OBJECTIVES, sharedData({ ["repeatable"] = true }, {
 					q(76015, {	-- Heart of Iron
 						["g"] = {
 							i(205939),	-- Iron Titan Key
@@ -145,7 +147,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							i(205941),  -- Spit-covered Key
 						},
 					}),
-				}),
+				})),
 				-- Quest Starting Items... apparently random on any digs
 				n(DROPS, sharedData({
 					["description"] = "Randomly available to pick up during a Dig.",
@@ -197,10 +199,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 				}),
 				n(QUESTS, sharedData({
-					["minReputation"] = { 2564, 9 },	-- Loamm Niffen Renown 9
-					["g"] = {
-						i(204985),  -- 2x Barter Brick
-					},
+					["minReputation"] = { FACTION_LOAMM_NIFFEN, 9 },
 				}, {
 					-- Sniffen Sage --
 					q(75772, {	-- Flask Manage
@@ -244,16 +243,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					q(75998, {	-- Crispety Crunchety
 						["provider"] = { "i", 205901 },	-- Crunchy Beetle
 						["coord"] = { 57.3, 49.3, ZARALEK_CAVERN },
+						["maxReputation"] = { FACTION_LOAMM_NIFFEN, 20 },
 						["isWeekly"] = true,
 					}),
 					q(76004, {	-- Deep Cuts
 						["provider"] = { "i", 205902 },	-- Deepflayer Claw
 						["coord"] = { 57.6, 56.4, ZARALEK_CAVERN },
+						["maxReputation"] = { FACTION_LOAMM_NIFFEN, 20 },
 						["isWeekly"] = true,
 					}),
 					q(75936, {	-- Slimy Yet Satisfying
 						["provider"] = { "i", 205795 },	-- Wriggling Worm
 						["coord"] = { 56.9, 52.1, ZARALEK_CAVERN },
+						["maxReputation"] = { FACTION_LOAMM_NIFFEN, 20 },
 						["isWeekly"] = true,
 					}),
 				})),
@@ -271,7 +273,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							{"pop"},
 						},
 					}),
-					i(205342),	-- Loamm Niffen Insignia
+					i(205342),	-- Loamm Niffen Insignia [Rare]
 				}),
 				n(SPECIAL, {
 					i(206009),	-- Ouroboros Tablet
@@ -317,13 +319,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	n(SNIFFENSEEKING, {
-		q(75241),	-- Sniffenseeking unlocked?
+		q(75241),	-- Flag Niffen Cave Account Tracking (spellID 407744)
 		q(75747),	-- Completing a Sniffenseeking quest
 		q(75748),	-- Completing a Sniffenseeking quest
 		q(75749),	-- Completing a Sniffenseeking quest
 		q(75997),	-- Completing Heart of Iron Sniffenseeking Quest
 		q(75914),	-- Starting the first Sniffenseeking map after tutorial, unflagged after completing Sniffenseeking quest
 		q(75883),	-- 3rd charge (map) for adventure / unflagged when 3rd map completed
+		q(76109),	-- Salverun (spellID 411721) [Summon Salverun as a battle pet]
 
 		q(75904),	-- Unknown [When going to Those Rascally Wroms (75397)] /Unflagged after complete
 		q(75880),	-- Completed Those Rascally Wroms (75397),			This Might Be Achievement Tracker/Daily/weekly etc..

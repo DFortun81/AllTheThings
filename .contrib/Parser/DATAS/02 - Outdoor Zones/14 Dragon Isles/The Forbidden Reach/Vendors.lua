@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local ARTISANS_METTLE = 190456;
 local ELEMENTAL_OVERFLOW = 2118;
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 	m(THE_FORBIDDEN_REACH, {
@@ -68,10 +67,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["cost"] = { { "i", 204276, 1 } },	-- Untapped Forbidden Knowledge
 					["modID"] = 14,
 					["bonusID"] = 9344,
-				},
-				-- only apply the bubbleDown to Items
-				function(t) return t.itemID; end,
-				{
+				},FILTERFUNC_itemID,{
 					n(BACK, {
 						i(199450),	-- Cape of Raging Tempests
 						i(199451),	-- Cloak of Raging Tempests
@@ -185,7 +181,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						},
 						["g"] = {
 							i(204029),	-- Prophetic Twilight Stone
-							i(204015),	-- Swirling Mojo Stone
+							i(204015, {	-- Swirling Mojo Stone
+								i(204244),	-- Breathing Mojo Crystal
+								i(204245),	-- Hateful Mojo Crystal
+								i(204239),	-- Shadowy Mojo Crystal
+							}),
 						},
 					}),
 					i(204577, {	-- Condensed Nature Magic
@@ -194,7 +194,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						},
 						["g"] = {
 							i(204001),	-- Echoing Thunder Stone
-							i(204000),	-- Storm Infused Stone
+							i(204000),	-- Storm-Infused Stone
 							i(204020),	-- Wild Spirit Stone
 						},
 					}),
@@ -251,49 +251,31 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["coord"] = { 35.9, 57.5, THE_FORBIDDEN_REACH },
 				["g"] = {
 					i(203426, {	-- Design: Crystal Tuning Fork (RECIPE!)
-						["cost"] = {
-							{ "i", ARTISANS_METTLE, 10 },
-						},
+						["cost"] = {{ "i", ARTISANS_METTLE, 10 }},
 					}),
 					i(203423, {	-- Formula: Glowing Crystal Bookmark (RECIPE!)
-						["cost"] = {
-							{ "i", ARTISANS_METTLE, 10 },
-						},
+						["cost"] = {{ "i", ARTISANS_METTLE, 10 }},
 					}),
 					i(203427, {	-- Pattern: Reinforced Pristine Leather (RECIPE!)
-						["cost"] = {
-							{ "i", ARTISANS_METTLE, 10 },
-						},
+						["cost"] = {{ "i", ARTISANS_METTLE, 10 }},
 					}),
 					i(203428, {	-- Pattern: Traditional Morqut Kite (RECIPE!)
-						["cost"] = {
-							{ "i", ARTISANS_METTLE, 10 },
-						},
+						["cost"] = {{ "i", ARTISANS_METTLE, 10 }},
 					}),
 					i(203421, {	-- Plans: Ancient Ceremonial Trident (RECIPE!)
-						["cost"] = {
-							{ "i", ARTISANS_METTLE, 10 },
-						},
+						["cost"] = {{ "i", ARTISANS_METTLE, 10 }},
 					}),
 					i(203420, {	-- Recipe: Draconic Suppression Powder (RECIPE!)
-						["cost"] = {
-							{ "i", ARTISANS_METTLE, 10 },
-						},
+						["cost"] = {{ "i", ARTISANS_METTLE, 10 }},
 					}),
 					i(203422, {	-- Recipe: Sparkling Spice Pouch (RECIPE!)
-						["cost"] = {
-							{ "i", ARTISANS_METTLE, 10 },
-						},
+						["cost"] = {{ "i", ARTISANS_METTLE, 10 }},
 					}),
 					i(203424, {	-- Schematic: Gnomish Voicebox (RECIPE!)
-						["cost"] = {
-							{ "i", ARTISANS_METTLE, 10 },
-						},
+						["cost"] = {{ "i", ARTISANS_METTLE, 10 }},
 					}),
 					i(203425, {	-- Technique: Arcane Dispelling Rune (RECIPE!)
-						["cost"] = {
-							{ "i", ARTISANS_METTLE, 10 },
-						},
+						["cost"] = {{ "i", ARTISANS_METTLE, 10 }},
 					}),
 				},
 			}),
@@ -377,13 +359,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				},
 			}),
 		}),
-	}),
-})));
-root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
-	n(THE_FORBIDDEN_REACH, {
-		q(74363),	-- Ensemble: Cloudburst Regalia
-		q(74364),	-- Ensemble: Dust Devil Armor
-		q(74365),	-- Ensemble: Cyclonic Battlegear
-		q(74366),	-- Ensemble: Firestorm Armor
 	}),
 })));

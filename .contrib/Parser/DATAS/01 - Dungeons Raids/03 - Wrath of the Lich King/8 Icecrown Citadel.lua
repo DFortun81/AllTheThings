@@ -1,11 +1,69 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+STORMING_THE_CITADEL = createHeader({
+	readable = "Storming the Citadel",
+	icon = "Interface\\Icons\\achievement_dungeon_icecrown_icecrownentrance",
+	text = {
+		en = "Storming the Citadel",
+		es = "Asaltar la Ciudadela",
+		de = "Sturm auf die Zitadelle",
+		fr = "La prise de la citadelle",
+		it = "Assalto alla rocca",
+		pt = "Invasão da Cidadela",
+		ru = "Штурм цитадели",
+		ko = "성채 몰아치기",
+		cn = "进攻堡垒",
+	},
+});
+THE_PLAGUEWORKS = createHeader({
+	readable = "The Plagueworks",
+	icon = "Interface\\Icons\\achievement_dungeon_plaguewing",
+	text = {
+		en = "The Plagueworks",
+		es = "Los Talleres de la Peste",
+		de = "Die Seuchenwerke",
+		fr = "La Pesterie",
+		it = "Sale della Pestilenza",
+		pt = "Antro da Peste",
+		ru = "Чумодельня",
+		ko = "역병작업장",
+		cn = "天灾工厂",
+	},
+});
+THE_CRIMSON_HALLS = createHeader({
+	readable = "The Crimson Halls",
+	icon = "Interface\\Icons\\achievement_dungeon_crimsonhall",
+	text = {
+		en = [[~C_Map.GetAreaInfo(4892)]],
+	},
+});
+THE_FROSTWING_HALLS = createHeader({
+	readable = "The Frostwing Halls",
+	icon = "Interface\\Icons\\achievement_dungeon_icecrown_frostwinghalls",
+	text = {
+		-- #if AFTER BFA
+		en = [[~C_Map.GetAreaInfo(7932)]],
+		-- #else
+		en = "The Frostwing Halls",
+		es = "Las Cámaras de Alaescarcha",
+		de = "Die Frostschwingenhallen",
+		fr = "Les salles de l'Aile de givre",
+		it = "Sale delle Ali del Gelo",
+		pt = "Salões da Asa Gélida",
+		ru = "Залы Ледокрылых",
+		ko = "서리날개 전당",
+		cn = "霜翼大厅",
+		-- #endif
+	},
+});
+
 root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbleDown({ ["timeline"] = { "added 3.3.0" } }, {
 	inst(758, {	-- Icecrown Citadel
 		["mapID"] = ICECROWN_CITADEL,
 		["maps"] = { 187, 188, 189, 190, 191, 192, 193, 699, 1359 },	-- 1359 may be a specific scenario map - it was reported as missing in early 2019, but i couldn't find context for it
 		["coord"] = { 53.7, 87.0, ICECROWN },
+		["sins"] = { "Eiskronenzitadelle" },
 		-- #if AFTER CATA
 		["sharedLockout"] = 1,
 		-- #endif
@@ -13,6 +71,57 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 		["lvl"] = 80,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				applyclassicphase(WRATH_PHASE_FOUR, ach(4602, {	-- Glory of the Icecrown Raider (10 player)
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						4628,	-- Heroic: Storming the Citadel (10 player)
+						4629,	-- Heroic: The Plagueworks (10 player)
+						4630,	-- Heroic: The Crimson Hall (10 player)
+						4631,	-- Heroic: The Frostwing Halls (10 player)
+						4534,	-- Boned (10 player)
+						4535,	-- Full House (10 player)
+						4536,	-- I'm on a Boat (10 player)
+						4537,	-- I've Gone and Made a Mess (10 player)
+						4538,	-- Dances with Oozes (10 player)
+						4577,	-- Flu Shot Shortage (10 player)
+						4578,	-- Nausea, Heartburn, Indigestion... (10 player)
+						4582,	-- The Orb Whisperer (10 player)
+						4539,	-- Once Bitten, Twice Shy (10 player)
+						4579,	-- Portal Jockey (10 player)
+						4580,	-- All You Can Eat (10 player)
+						4601,	-- Been Waiting a Long Time for This (10 player)
+					}},
+					["timeline"] = { "added 3.0.1" },
+					["groups"] = {
+						i(51954),		-- Bloodbathed Frostbrood Vanquisher (MOUNT!)
+					},
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, ach(4603, {	-- Glory of the Icecrown Raider (25 player)
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						4632,	-- Heroic: Storming the Citadel (25 player)
+						4633,	-- Heroic: The Plagueworks (25 player)
+						4634,	-- Heroic: The Crimson Hall (25 player)
+						4635,	-- Heroic: The Frostwing Halls (25 player)
+						4610,	-- Boned (25 player)
+						4611,	-- Full House (25 player)
+						4612,	-- I'm on a Boat (25 player)
+						4613,	-- I've Gone and Made a Mess (25 player)
+						4614,	-- Dances with Oozes (25 player)
+						4615,	-- Flu Shot Shortage (25 player)
+						4616,	-- Nausea, Heartburn, Indigestion... (25 player)
+						4617,	-- The Orb Whisperer (25 player)
+						4618,	-- Once Bitten, Twice Shy (25 player)
+						4619,	-- Portal Jockey (25 player)
+						4620,	-- All You Can Eat (25 player)
+						4621,	-- Been Waiting a Long Time for This (25 player)
+						4622,	-- Neck-Deep in Vile (25 player)
+					}},
+					["timeline"] = { "added 3.0.1" },
+					["groups"] = {
+						i(51955),		-- Icebound Frostbrood Vanquisher (MOUNT!)
+					},
+				})),
 				ach(4532, {	-- Fall of the Lich King (10 player)
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
@@ -53,21 +162,14 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						4584,	-- The Light of Dawn
 					}},
 				}),
-				ach(4598, {	-- The Ashen Verdict
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1156); end]],
-					-- #endif
-					["groups"] = {
-						title(141),	-- <Name> of the Ashen Verdict
-					},
+				achWithRep(4598, 1156, {	-- The Ashen Verdict
+					title(141),	-- <Name> of the Ashen Verdict
 				}),
 			}),
 			n(FACTIONS, {
 				faction(1156),	-- The Ashen Verdict
 			}),
-			n(LEGENDARY_QUESTLINE, {
+			n(QUALITY_LEGENDARY, {
 				["description"] = "These quests can only be completed on 25-Man Normal or Heroic difficulty.",
 				["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 				["title"] = "Shadowmourne",
@@ -147,7 +249,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						["qg"] = 37120,	-- Highlord Darion Mograine
 						["sourceQuest"] = 24548,	-- The Splintered Throne
 						["groups"] = {
-							i(49623)	-- Shadowmourne
+							i(49623),	-- Shadowmourne
+							ach(4623),	-- Shadowmourne
 						},
 					}),
 					q(24748, {	-- The Lich King's Last Stand
@@ -686,37 +789,37 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 					},
 				}),
 				n(37687, {	-- Alchemist Finklestein
-					i(49959, {	-- Pattern: Bladeborn Leggings
+					i(49959, {	-- Pattern: Bladeborn Leggings (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 					}),
-					i(49958, {	-- Pattern: Blessed Cenarion Boots
+					i(49958, {	-- Pattern: Blessed Cenarion Boots (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 					}),
 					i(49954, {	-- Pattern: Deathfrost Boots
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 					}),
-					i(49965, {	-- Pattern: Draconic Bonesplinter Legguards
+					i(49965, {	-- Pattern: Draconic Bonesplinter Legguards (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 					}),
-					i(49963, {	-- Pattern: Earthsoul Boots
+					i(49963, {	-- Pattern: Earthsoul Boots (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 					}),
-					i(49961, {	-- Pattern: Footpads of Impending Death
+					i(49961, {	-- Pattern: Footpads of Impending Death (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 					}),
 					i(49953, {	-- Pattern: Leggings of Woven Death
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 					}),
-					i(49957, {	-- Pattern: Legwraps of Unleashed Nature
+					i(49957, {	-- Pattern: Legwraps of Unleashed Nature (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 					}),
-					i(49962, {	-- Pattern: Lightning-Infused Leggings
+					i(49962, {	-- Pattern: Lightning-Infused Leggings (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 					}),
 					i(49955, {	-- Pattern: Lightweave Leggings
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 					}),
-					i(49966, {	-- Pattern: Rock-Steady Treads
+					i(49966, {	-- Pattern: Rock-Steady Treads (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 					}),
 					i(49956, {	-- Pattern: Sandals of Consecration
@@ -1153,7 +1256,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR },
 						{"merge"},	-- Subroutines are automatically finalized, so merge back for further processing
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", NECK, FINGER, -386, BACK, WRIST, WAIST, FEET, WEAPONS },	-- Exclude Neck, Finger, Trinkets, Back, Wrist, Waist, Feet and Weapons
+						{"exclude", "headerID", NECK, FINGER, TRINKET, BACK, WRIST, WAIST, FEET, WEAPONS },	-- Exclude Neck, Finger, Trinkets, Back, Wrist, Waist, Feet and Weapons
 						{"isnt","c"},	-- Discard headers for Classes [c]
 					},
 					["groups"] = {
@@ -2590,18 +2693,18 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				}),
 			}),
 			d(3, {	-- 10-Player (Normal)
-				n(-393, {	-- Storming the Citadel
+				n(STORMING_THE_CITADEL, {
 					ach(4531, {	-- Storming the Citadel (10 player)
-						crit(1, {	-- Lord Marrowgar
+						crit(12770, {	-- Lord Marrowgar
 							["_encounter"] = { 1624, 3 },
 						}),
-						crit(2, {	-- Lady Deathwhisper
+						crit(12773, {	-- Lady Deathwhisper
 							["_encounter"] = { 1625, 3 },
 						}),
-						crit(3, {	-- Icecrown Gunship Battle
+						crit(12771, {	-- Icecrown Gunship Battle
 							["_encounter"] = { 1626, 3 },
 						}),
-						crit(4, {	-- Deathbringer Saurfang
+						crit(12772, {	-- Deathbringer Saurfang
 							["_encounter"] = { 1628, 3 },
 						}),
 					}),
@@ -2698,15 +2801,15 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-394, {	-- The Plagueworks
+				n(THE_PLAGUEWORKS, {
 					ach(4528, {	-- The Plagueworks (10 player)
-						crit(1, {	-- Festergut
+						crit(12759, {	-- Festergut
 							["_encounter"] = { 1629, 3 },
 						}),
-						crit(2, {	-- Rotface
+						crit(12760, {	-- Rotface
 							["_encounter"] = { 1630, 3 },
 						}),
-						crit(3, {	-- Professor Putricide
+						crit(12761, {	-- Professor Putricide
 							["_encounter"] = { 1631, 3 },
 						}),
 					}),
@@ -2773,12 +2876,12 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-395, {	-- The Crimson Hall
+				n(THE_CRIMSON_HALLS, {
 					ach(4529, {	-- The Crimson Hall (10 player)
-						crit(1, {	-- Blood Prince Council
+						crit(12762, {	-- Blood Prince Council
 							["_encounter"] = { 1632, 3 },
 						}),
-						crit(2, {	-- Blood-Queen Lana'thel
+						crit(12763, {	-- Blood-Queen Lana'thel
 							["_encounter"] = { 1633, 3 },
 						}),
 					}),
@@ -2826,12 +2929,12 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-396, {	-- The Frostwing Halls
+				n(THE_FROSTWING_HALLS, {
 					ach(4527, {	-- The Frostwing Halls (10 player)
-						crit(1, {	-- Valithria Dreamwalker
+						crit(12757, {	-- Valithria Dreamwalker
 							["_encounter"] = { 1634, 3 },
 						}),
-						crit(2, {	-- Sindragosa
+						crit(12758, {	-- Sindragosa
 							["_encounter"] = { 1635, 3 },
 						}),
 					}),
@@ -2885,9 +2988,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 							i(142098, {	-- Drudge Ghoul (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
-							i(138955, {	-- Illusion: Rune of Razorice
+							i(138955, {	-- Illusion: Rune of Razorice (ILLUSION!)
 								["classes"] = { DEATHKNIGHT },
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(51799),	-- Halion, Staff of Forgotten Love
 							i(51797),	-- Tainted Twig of Nordrassil
@@ -2929,18 +3032,18 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-393, {	-- Storming the Citadel
+				n(STORMING_THE_CITADEL, {
 					ach(4628, {	-- Heroic: Storming the Citadel (10 player)
-						crit(1, {	-- Lord Marrowgar
+						crit(13090, {	-- Lord Marrowgar
 							["_encounter"] = { 1624, 5 },
 						}),
-						crit(2, {	-- Lady Deathwhisper
+						crit(13104, {	-- Lady Deathwhisper
 							["_encounter"] = { 1625, 5 },
 						}),
-						crit(3, {	-- Icecrown Gunship Battle
+						crit(13110, {	-- Icecrown Gunship Battle
 							["_encounter"] = { 1626, 5 },
 						}),
-						crit(4, {	-- Deathbringer Saurfang
+						crit(13113, {	-- Deathbringer Saurfang
 							["_encounter"] = { 1628, 5 },
 						}),
 					}),
@@ -3040,15 +3143,15 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-394, {	-- The Plagueworks
+				n(THE_PLAGUEWORKS, {
 					ach(4629, {	-- Heroic: The Plagueworks (10 player)
-						crit(1, {	-- Festergut
+						crit(13116, {	-- Festergut
 							["_encounter"] = { 1629, 5 },
 						}),
-						crit(2, {	-- Rotface
+						crit(13119, {	-- Rotface
 							["_encounter"] = { 1630, 5 },
 						}),
-						crit(3, {	-- Professor Putricide
+						crit(13128, {	-- Professor Putricide
 							["_encounter"] = { 1631, 5 },
 						}),
 					}),
@@ -3118,12 +3221,12 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-395, {	-- The Crimson Hall
+				n(THE_CRIMSON_HALLS, {
 					ach(4630, {	-- Heroic: The Crimson Hall (10 player)
-						crit(1, {	-- Blood Prince Council
+						crit(13122, {	-- Blood Prince Council
 							["_encounter"] = { 1632, 5 },
 						}),
-						crit(2, {	-- Blood-Queen Lana'thel
+						crit(13131, {	-- Blood-Queen Lana'thel
 							["_encounter"] = { 1633, 5 },
 						}),
 					}),
@@ -3174,12 +3277,12 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-396, {	-- The Frostwing Halls
+				n(THE_FROSTWING_HALLS, {
 					ach(4631, {	-- Heroic: The Frostwing Halls (10 player)
-						crit(1, {	-- Valithria Dreamwalker
+						crit(13125, {	-- Valithria Dreamwalker
 							["_encounter"] = { 1634, 5 },
 						}),
-						crit(2, {	-- Sindragosa
+						crit(13134, {	-- Sindragosa
 							["_encounter"] = { 1635, 5 },
 						}),
 					}),
@@ -3242,9 +3345,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 							i(142099, {	-- Wicked Soul (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
-							i(138955, {	-- Illusion: Rune of Razorice
+							i(138955, {	-- Illusion: Rune of Razorice (ILLUSION!)
 								["classes"] = { DEATHKNIGHT },
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(51943),	-- Halion, Staff of Forgotten Love
 							i(51945),	-- Tainted Twig of Nordrassil
@@ -3286,18 +3389,18 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-393, {	-- Storming the Citadel
+				n(STORMING_THE_CITADEL, {
 					ach(4604, {	-- Storming the Citadel (25 player)
-						crit(1, {	-- Lord Marrowgar
+						crit(12945, {	-- Lord Marrowgar
 							["_encounter"] = { 1624, 4 },
 						}),
-						crit(2, {	-- Lady Deathwhisper
+						crit(12948, {	-- Lady Deathwhisper
 							["_encounter"] = { 1625, 4 },
 						}),
-						crit(3, {	-- Icecrown Gunship Battle
+						crit(12947, {	-- Icecrown Gunship Battle
 							["_encounter"] = { 1626, 4 },
 						}),
-						crit(4, {	-- Deathbringer Saurfang
+						crit(12946, {	-- Deathbringer Saurfang
 							["_encounter"] = { 1628, 4 },
 						}),
 					}),
@@ -3399,15 +3502,15 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-394, {	-- The Plagueworks
+				n(THE_PLAGUEWORKS, {
 					ach(4605, {	-- The Plagueworks (25 player)
-						crit(1, {	-- Festergut
+						crit(12949, {	-- Festergut
 							["_encounter"] = { 1629, 4 },
 						}),
-						crit(2, {	-- Rotface
+						crit(12950, {	-- Rotface
 							["_encounter"] = { 1630, 4 },
 						}),
-						crit(3, {	-- Professor Putricide
+						crit(12951, {	-- Professor Putricide
 							["_encounter"] = { 1631, 4 },
 						}),
 					}),
@@ -3483,12 +3586,12 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-395, {	-- The Crimson Hall
+				n(THE_CRIMSON_HALLS, {
 					ach(4606, {	-- The Crimson Hall (25 player)
-						crit(1, {	-- Blood Prince Council
+						crit(12952, {	-- Blood Prince Council
 							["_encounter"] = { 1632, 4 },
 						}),
-						crit(2, {	-- Blood-Queen Lana'thel
+						crit(12953, {	-- Blood-Queen Lana'thel
 							["_encounter"] = { 1633, 4 },
 						}),
 					}),
@@ -3536,12 +3639,12 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-396, {	-- The Frostwing Halls
+				n(THE_FROSTWING_HALLS, {
 					ach(4607, {	-- The Frostwing Halls (25 player)
-						crit(1, {	-- Valithria Dreamwalker
+						crit(12954, {	-- Valithria Dreamwalker
 							["_encounter"] = { 1634, 4 },
 						}),
-						crit(2, {	-- Sindragosa
+						crit(12955, {	-- Sindragosa
 							["_encounter"] = { 1635, 4 },
 						}),
 					}),
@@ -3549,9 +3652,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						["creatureID"] = 36789,	-- Valithria Dreamwalker
 						["groups"] = {
 							ach(4619),	-- Portal Jockey (25 player)
-							i(138832, {	-- Illusion: Earthliving
+							i(138832, {	-- Illusion: Earthliving (ILLUSION!)
 								["classes"] = { SHAMAN },
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(50183),	-- Lungbreaker
 							i(50472),	-- Nightmare Ender
@@ -3601,9 +3704,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 							i(142098, {	-- Drudge Ghoul (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
-							i(138955, {	-- Illusion: Rune of Razorice
+							i(138955, {	-- Illusion: Rune of Razorice (ILLUSION!)
 								["classes"] = { DEATHKNIGHT },
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(50429),	-- Archus, Greatstaff of Antonidas
 							i(50070),	-- Glorenzelg, High-Blade of the Silver Hand
@@ -3645,18 +3748,18 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-393, {	-- Storming the Citadel
+				n(STORMING_THE_CITADEL, {
 					ach(4632, {	-- Heroic: Storming the Citadel (25 player)
-						crit(1, {	-- Lord Marrowgar
+						crit(13091, {	-- Lord Marrowgar
 							["_encounter"] = { 1624, 6 },
 						}),
-						crit(2, {	-- Lady Deathwhisper
+						crit(13106, {	-- Lady Deathwhisper
 							["_encounter"] = { 1625, 6 },
 						}),
-						crit(3, {	-- Icecrown Gunship Battle
+						crit(13111, {	-- Icecrown Gunship Battle
 							["_encounter"] = { 1626, 6 },
 						}),
-						crit(4, {	-- Deathbringer Saurfang
+						crit(13114, {	-- Deathbringer Saurfang
 							["_encounter"] = { 1628, 6 },
 						}),
 					}),
@@ -3761,15 +3864,15 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-394, {	-- The Plagueworks
+				n(THE_PLAGUEWORKS, {
 					ach(4633, {	-- Heroic: The Plagueworks (25 player)
-						crit(1, {	-- Festergut
+						crit(13117, {	-- Festergut
 							["_encounter"] = { 1629, 6 },
 						}),
-						crit(2, {	-- Rotface
+						crit(13120, {	-- Rotface
 							["_encounter"] = { 1630, 6 },
 						}),
-						crit(3, {	-- Professor Putricide
+						crit(13129, {	-- Professor Putricide
 							["_encounter"] = { 1631, 6 },
 						}),
 					}),
@@ -3848,12 +3951,12 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-395, {	-- The Crimson Hall
+				n(THE_CRIMSON_HALLS, {
 					ach(4634, {	-- Heroic: The Crimson Hall (25 player)
-						crit(1, {	-- Blood Prince Council
+						crit(13123, {	-- Blood Prince Council
 							["_encounter"] = { 1632, 6 },
 						}),
-						crit(2, {	-- Blood-Queen Lana'thel
+						crit(13132, {	-- Blood-Queen Lana'thel
 							["_encounter"] = { 1633, 6 },
 						}),
 					}),
@@ -3904,12 +4007,12 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				}),
-				n(-396, {	-- The Frostwing Halls
+				n(THE_FROSTWING_HALLS, {
 					ach(4635, {	-- Heroic: The Frostwing Halls (25 player)
-						crit(1, {	-- Valithria Dreamwalker
+						crit(13126, {	-- Valithria Dreamwalker
 							["_encounter"] = { 1634, 6 },
 						}),
-						crit(2, {	-- Sindragosa
+						crit(13135, {	-- Sindragosa
 							["_encounter"] = { 1635, 6 },
 						}),
 					}),
@@ -3917,9 +4020,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						["creatureID"] = 36789,	-- Valithria Dreamwalker
 						["groups"] = {
 							ach(4619),	-- Portal Jockey (25 player)
-							i(138832, {	-- Illusion: Earthliving
+							i(138832, {	-- Illusion: Earthliving (ILLUSION!)
 								["classes"] = { SHAMAN },
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(50621),	-- Lungbreaker
 							i(50631),	-- Nightmare Ender
@@ -3983,9 +4086,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 							i(142099, {	-- Wicked Soul (PET!)
 								["timeline"] = { "added 7.1.0.22731" },
 							}),
-							i(138955, {	-- Illusion: Rune of Razorice
+							i(138955, {	-- Illusion: Rune of Razorice (ILLUSION!)
 								["classes"] = { DEATHKNIGHT },
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(50731),	-- Archus, Greatstaff of Antonidas
 							i(50730),	-- Glorenzelg, High-Blade of the Silver Hand

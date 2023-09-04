@@ -153,8 +153,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					crit(9, {	-- Beastly Ritual Skull
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
-					i(163036),	-- Polished Pet Charm
 				},
+				["sym"] = {{"select","itemID",
+					163036,	-- Polished Pet Charm
+				}},
 			}),
 			n(134706, {	-- Deathcap
 				["questID"] = 50669,
@@ -287,9 +289,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 						["achievementID"] = 12941,	-- Adventurer of Drustvar
 					}),
 					i(159518),	-- Long Fang
-					un(NEVER_IMPLEMENTED, i(160468, {	-- Longfang Paws
+					i(160468, {	-- Longfang Paws
+						["timeline"] = { "created 8.0.1.26287" },
 						["crs"] = { 127901 },	-- Henry Breakwater
-					})),
+					}),
 				},
 			}),
 			n(130138, {	-- Nevermore

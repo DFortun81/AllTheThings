@@ -5,12 +5,20 @@ local BARTER_BOULDER = 205188;
 local BARTER_BRICK = 204985;
 local PONZOS_CREAM = 205452;
 local VOUCHER = 205453;
+
+-- @ renown 13 all Costs and Rewards turn to Boulders, so let's have both listed
+local function BarterCost(bricks, boulders)
+	return {
+		{"i",BARTER_BRICK,bricks},
+		{"i",BARTER_BOULDER,boulders},
+	};
+end
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	n(LOAMM_NIFFEN, {
-		n(BARTERING, {
+		n(BARTERING, bubbleDownSelf({ ["minReputation"] = { FACTION_LOAMM_NIFFEN, 3 } }, {
 			n(ACHIEVEMENTS, {
 				ach(17841, {	-- Pyramid Scheme
-					["provider"] = { "i", 205188 },	-- Barter Boulder
+					["provider"] = { "i", 205421 },	-- Ponzo's Scheming Topper
 					["g"] = {
 						title(502),	-- <Name>, Barter Boss
 					},
@@ -20,9 +28,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["provider"] = { "n", 203516 },	-- Kayann
 				["coord"] = { 36.5, 62.5, VALDRAKKEN },
 				["isWeekly"] = true,
-				["g"] = {
-					i(BARTER_BRICK),
-				}
 			}, {
 				q(75286, {	-- Blacksmith's Back
 					["cost"] = {
@@ -73,7 +78,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["altQuests"] = { 75286, 75288, 75304, 75289, 75309, 75351, 75307, 75308 },
 				}),
 				q(75307, {	-- Road to Season City
-					["requireSkill"] = COOKING,
 					["cost"] = {
 						{ "i", 197793, 40 },	-- 40x Yusa's Hearty Stew
 						{ "i", 197794, 5 },		-- 5x Grand Banquet of the Kalu'ak
@@ -87,18 +91,26 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["altQuests"] = { 75286, 75288, 75304, 75289, 75309, 75351, 75301, 75307 },
 				}),
 			})),
+			n(REWARDS, {
+				i(BARTER_BRICK, {
+					["maxReputation"] = { FACTION_LOAMM_NIFFEN, 12 },
+				}),
+				i(BARTER_BOULDER, {
+					["minReputation"] = { FACTION_LOAMM_NIFFEN, 13 },
+				}),
+			}),
 			n(VENDORS, {
 				n(203172, {	-- Dustmonger Topuiz
 					["coord"] = { 55.9, 56.8, ZARALEK_CAVERN },
 					["g"] = {
 						i(204978, {	-- Formula: Enchant Weapon - Spore Tender (RECIPE!)
-							["cost"] = { { "i", PONZOS_CREAM, 1 } },
+							["cost"] = {{"i", PONZOS_CREAM, 1}},
 						}),
 						i(204977, {	-- Formula: Illusory Adornment: Spores (RECIPE!)
-							["cost"] = { { "i", VOUCHER, 1 } },
+							["cost"] = {{"i", VOUCHER, 1}},
 						}),
 						i(204976, {	-- Formula: Spore Keeper's Baton (RECIPE!)
-							["cost"] = { { "i", PONZOS_CREAM, 1 } },
+							["cost"] = {{"i", PONZOS_CREAM, 1}},
 						}),
 						i(205263, {	-- Empowered Flightstone
 							["cost"] = { { "c", 2245, 150 } },
@@ -109,13 +121,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 56.7, 55.3, ZARALEK_CAVERN },
 					["g"] = {
 						i(205174, {	-- Design: B.B.F. Fist (RECIPE!)
-							["cost"] = { { "i", VOUCHER, 1 } },
+							["cost"] = {{"i", VOUCHER, 1}},
 						}),
 						i(205176, {	-- Design: Figurine of the Gathering Storm (RECIPE!)
-							["cost"] = { { "i", PONZOS_CREAM, 1 } },
+							["cost"] = {{"i", PONZOS_CREAM, 1}},
 						}),
 						i(205175, {	-- Design: Statuette of Foreseen Power (RECIPE!)
-							["cost"] = { { "i", PONZOS_CREAM, 1 } },
+							["cost"] = {{"i", PONZOS_CREAM, 1}},
 						}),
 					},
 				}),
@@ -123,13 +135,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 57.3, 55.9, ZARALEK_CAVERN },
 					["g"] = {
 						i(204970, {	-- Pattern: Adaptive Dracothyst Armguards (RECIPE!)
-							["cost"] = { { "i", VOUCHER, 1 } },
+							["cost"] = {{"i", VOUCHER, 1}},
 						}),
 						i(204974, {	-- Pattern: Lambent Armor Kit (RECIPE!)
-							["cost"] = { { "i", VOUCHER, 1 } },
+							["cost"] = {{"i", VOUCHER, 1}},
 						}),
 						i(204969, {	-- Pattern: Spore Colony Shoulderguards (RECIPE!)
-							["cost"] = { { "i", PONZOS_CREAM, 1 } },
+							["cost"] = {{"i", PONZOS_CREAM, 1}},
 						}),
 					},
 				}),
@@ -137,10 +149,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 57.1, 55.0, ZARALEK_CAVERN },
 					["g"] = {
 						i(205137, {	-- Plans: Shadowed Alloy (RECIPE!)
-							["cost"] = { { "i", PONZOS_CREAM, 1 } },
+							["cost"] = {{"i", PONZOS_CREAM, 1}},
 						}),
 						i(205143, {	-- Plans: Shadowed Belt Clasp (RECIPE!)
-							["cost"] = { { "i", VOUCHER, 1 } },
+							["cost"] = {{"i", VOUCHER, 1}},
 						}),
 						i(204634),	-- Rot Resistant Cauldron
 					},
@@ -149,10 +161,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 56.0, 56.5, ZARALEK_CAVERN },
 					["g"] = {
 						i(204984, {	-- Recipe: Stinky Bright Potion (RECIPE!)
-							["cost"] = { { "i", VOUCHER, 1 } },
+							["cost"] = {{"i", VOUCHER, 1}},
 						}),
 						i(204631, {	-- Recipe: Transmute: Dracothyst (RECIPE!)
-							["cost"] = { { "i", PONZOS_CREAM, 1 } },
+							["cost"] = {{"i", PONZOS_CREAM, 1}},
 						}),
 					},
 				}),
@@ -160,149 +172,152 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 56.9, 56.3, ZARALEK_CAVERN },
 					["g"] = {
 						i(205690, {	-- Barter-B-Q
-							["cost"] = { { "i", BARTER_BRICK, 5 }, },
+							["cost"] = BarterCost(5, 1),
 						}),
 					}
 				}),
 				n(204693, {	-- Ponzo
 					["coord"] = { 58.1, 53.8, ZARALEK_CAVERN },
 					["g"] = {
+						i(BARTER_BOULDER, {
+							["cost"] = {{"i", BARTER_BRICK, 3 }},
+						}),
 						i(PONZOS_CREAM, {
-							["cost"] = { { "i", BARTER_BRICK, 25 }, },
+							["cost"] = BarterCost(25, 10),
 						}),
 						i(VOUCHER, {
-							["cost"] = { { "i", BARTER_BRICK, 80 }, },
+							["cost"] = BarterCost(80, 40),
 						}),
 						i(205984, {	-- Bartered Dig Map
 							["questID"] = 76077,
 							["isWeekly"] = true,
-							["cost"] = { { "i", BARTER_BRICK, 3 }, },
+							["cost"] = BarterCost(3, 1),
 						}),
 						i(203308, {	-- Winding Slitherdrake: Hairy Brow (DM!)
-							["cost"] = { { "i", BARTER_BRICK, 55 }, },
+							["cost"] = BarterCost(55, 30),
 						}),
 						i(203312, {	-- Winding Slitherdrake: Cluster Chin Horn (DM!)
-							["cost"] = { { "i", BARTER_BRICK, 55 }, },
+							["cost"] = BarterCost(55, 30),
 						}),
 						i(203346, {	-- Winding Slitherdrake: Curled Nose (DM!)
-							["cost"] = { { "i", BARTER_BRICK, 55 }, },
+							["cost"] = BarterCost(55, 30),
 						}),
 						i(205120, {	-- Thimblerig (PET!)
-							["cost"] = { { "i", BARTER_BRICK, 85 }, },
+							["cost"] = BarterCost(85, 45),
 						}),
 						i(205209, {	-- Boulder Hauler (MOUNT!)
-							["cost"] = { { "i", BARTER_BRICK, 170 }, },
+							["cost"] = BarterCost(170, 85),
 						}),
 						-- Professions
 						i(205440, {	-- Bartered Alchemy Journal
 							["questID"] = 75848,
 							["requireSkill"] = ALCHEMY,
-							["cost"] = { { "i", BARTER_BRICK, 90 }, },
+							["cost"] = BarterCost(90, 40),
 						}),
 						i(205439, {	-- Bartered Blacksmithing Journal
 							["questID"] = 75849,
 							["requireSkill"] = BLACKSMITHING,
-							["cost"] = { { "i", BARTER_BRICK, 90 }, },
+							["cost"] = BarterCost(90, 40),
 						}),
 						i(205438, {	-- Bartered Enchanting Journal
 							["questID"] = 75850,
 							["requireSkill"] = ENCHANTING,
-							["cost"] = { { "i", BARTER_BRICK, 90 }, },
+							["cost"] = BarterCost(90, 40),
 						}),
 						i(205436, {	-- Bartered Engineering Journal
 							["questID"] = 75851,
 							["requireSkill"] = ENGINEERING,
-							["cost"] = { { "i", BARTER_BRICK, 90 }, },
+							["cost"] = BarterCost(90, 40),
 						}),
 						i(205445, {	-- Bartered Herbalism Journal
 							["questID"] = 75852,
 							["requireSkill"] = HERBALISM,
-							["cost"] = { { "i", BARTER_BRICK, 90 }, },
+							["cost"] = BarterCost(90, 40),
 						}),
 						i(205441, {	-- Bartered Inscription Journal
 							["questID"] = 75853,
 							["requireSkill"] = INSCRIPTION,
-							["cost"] = { { "i", BARTER_BRICK, 90 }, },
+							["cost"] = BarterCost(90, 40),
 						}),
 						i(205435, {	-- Bartered Jewelcrafting Journal
 							["questID"] = 75854,
 							["requireSkill"] = JEWELCRAFTING,
-							["cost"] = { { "i", BARTER_BRICK, 90 }, },
+							["cost"] = BarterCost(90, 40),
 						}),
 						i(205437, {	-- Bartered Leatherworking Journal
 							["questID"] = 75855,
 							["requireSkill"] = LEATHERWORKING,
-							["cost"] = { { "i", BARTER_BRICK, 90 }, },
+							["cost"] = BarterCost(90, 40),
 						}),
 						i(205443, {	-- Bartered Mining Journal
 							["questID"] = 75856,
 							["requireSkill"] = MINING,
-							["cost"] = { { "i", BARTER_BRICK, 90 }, },
+							["cost"] = BarterCost(90, 40),
 						}),
 						i(205444, {	-- Bartered Skinning Journal
 							["questID"] = 75857,
 							["requireSkill"] = SKINNING,
-							["cost"] = { { "i", BARTER_BRICK, 90 }, },
+							["cost"] = BarterCost(90, 40),
 						}),
 						i(205442, {	-- Bartered Tailoring Journal
 							["questID"] = 75858,
 							["requireSkill"] = TAILORING,
-							["cost"] = { { "i", BARTER_BRICK, 90 }, },
+							["cost"] = BarterCost(90, 40),
 						}),
 						i(205429, {	-- Bartered Alchemy Notes
 							["questID"] = 75847,
 							["requireSkill"] = ALCHEMY,
-							["cost"] = { { "i", BARTER_BRICK, 35 }, },
+							["cost"] = BarterCost(35, 25),
 						}),
 						i(205428, {	-- Bartered Blacksmithing Notes
 							["questID"] = 75846,
 							["requireSkill"] = BLACKSMITHING,
-							["cost"] = { { "i", BARTER_BRICK, 35 }, },
+							["cost"] = BarterCost(35, 25),
 						}),
 						i(205427, {	-- Bartered Enchanting Notes
 							["questID"] = 75845,
 							["requireSkill"] = ENCHANTING,
-							["cost"] = { { "i", BARTER_BRICK, 35 }, },
+							["cost"] = BarterCost(35, 25),
 						}),
 						i(205425, {	-- Bartered Engineering Notes
 							["questID"] = 75844,
 							["requireSkill"] = ENGINEERING,
-							["cost"] = { { "i", BARTER_BRICK, 35 }, },
+							["cost"] = BarterCost(35, 25),
 						}),
 						i(205434, {	-- Bartered Herbalism Notes
 							["questID"] = 75843,
 							["requireSkill"] = HERBALISM,
-							["cost"] = { { "i", BARTER_BRICK, 35 }, },
+							["cost"] = BarterCost(35, 25),
 						}),
 						i(205430, {	-- Bartered Inscription Notes
 							["questID"] = 75842,
 							["requireSkill"] = INSCRIPTION,
-							["cost"] = { { "i", BARTER_BRICK, 35 }, },
+							["cost"] = BarterCost(35, 25),
 						}),
 						i(205424, {	-- Bartered Jewelcrafting Notes
 							["questID"] = 75841,
 							["requireSkill"] = JEWELCRAFTING,
-							["cost"] = { { "i", BARTER_BRICK, 35 }, },
+							["cost"] = BarterCost(35, 25),
 						}),
 						i(205426, {	-- Bartered Leatherworking Notes
 							["questID"] = 75840,
 							["requireSkill"] = LEATHERWORKING,
-							["cost"] = { { "i", BARTER_BRICK, 35 }, },
+							["cost"] = BarterCost(35, 25),
 						}),
 						i(205432, {	-- Bartered Mining Notes
 							["questID"] = 75839,
 							["requireSkill"] = MINING,
-							["cost"] = { { "i", BARTER_BRICK, 35 }, },
+							["cost"] = BarterCost(35, 25),
 						}),
 						i(205433, {	-- Bartered Skinning Notes
 							["questID"] = 75838,
 							["requireSkill"] = SKINNING,
-							["cost"] = { { "i", BARTER_BRICK, 35 }, },
+							["cost"] = BarterCost(35, 25),
 						}),
 						i(205431, {	-- Bartered Tailoring Notes
 							["questID"] = 75837,
 							["requireSkill"] = TAILORING,
-							["cost"] = { { "i", BARTER_BRICK, 35 }, },
+							["cost"] = BarterCost(35, 25),
 						}),
 						-- Cosmetic
 						i(205421, {	-- Ponzo's Scheming Topper
@@ -326,25 +341,25 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 55.8, 55.7, ZARALEK_CAVERN },
 					["g"] = {
 						i(205136, {	-- Technique: Contract: Loamm Niffen (RECIPE!)
-							["cost"] = { { "i", VOUCHER, 1 } },
+							["cost"] = {{"i", VOUCHER, 1}},
 						}),
 						i(205132, {	-- Technique: Glyph of the Chosen Glaive (RECIPE!)
-							["cost"] = { { "i", VOUCHER, 1 } },
+							["cost"] = {{"i", VOUCHER, 1}},
 						}),
 						i(205133, {	-- Technique: Glyph of the Heaved Armament (RECIPE!)
-							["cost"] = { { "i", VOUCHER, 1 } },
+							["cost"] = {{"i", VOUCHER, 1}},
 						}),
 						i(205135, {	-- Technique: Hissing Rune (RECIPE!)
-							["cost"] = { { "i", PONZOS_CREAM, 1 } },
+							["cost"] = {{"i", PONZOS_CREAM, 1}},
 						}),
 						i(205134, {	-- Technique: Vantus Rune: Aberrus, the Shadowed Crucible (RECIPE!)
-							["cost"] = { { "i", PONZOS_CREAM, 1 } },
+							["cost"] = {{"i", PONZOS_CREAM, 1}},
 						}),
 						i(205131, {	-- Technique: Winding Slitherdrake: Small Finned Throat (RECIPE!)
-							["cost"] = { { "i", PONZOS_CREAM, 1 } },
+							["cost"] = {{"i", PONZOS_CREAM, 1}},
 						}),
 						i(205130, {	-- Technique: Winding Slitherdrake: White Hair (RECIPE!)
-							["cost"] = { { "i", VOUCHER, 1 } },
+							["cost"] = {{"i", VOUCHER, 1}},
 						}),
 					},
 				}),
@@ -352,14 +367,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 55.8, 55.9, ZARALEK_CAVERN },
 					["g"] = {
 						i(205178, {	-- Schematic: Mallard Mortar (RECIPE!)
-							["cost"] = { { "i", VOUCHER, 1 } },
+							["cost"] = {{"i", VOUCHER, 1}},
 						}),
 						i(204844, {	-- Schematic: Polarity Bomb (RECIPE!)
-							["cost"] = { { "i", PONZOS_CREAM, 1 } },
+							["cost"] = {{"i", PONZOS_CREAM, 1}},
 						}),
 					},
 				}),
 			}),
-		}),
+		})),
 	}),
 })));

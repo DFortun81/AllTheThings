@@ -87,7 +87,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["questID"] = 74013,
 					["g"] = {
 						bo(69883, true),
-						i(200257),	-- Decay Infused Branch
+						i(200257),	-- Decay-Infused Branch
 					},
 				}),
 				n(193210, {	-- Phleep <Time-Lost, Mind-Lost>

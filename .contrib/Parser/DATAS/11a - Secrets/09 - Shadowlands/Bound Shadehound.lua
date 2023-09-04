@@ -9,6 +9,10 @@ root(ROOTS.Secrets, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_5 } },
 		["maps"] = { THE_MAW },
 		["cost"] = {{ "i", 184870, 1 }},	-- 1x Stygia Dowser
 		["g"] = {
+			prof(STYGIA_CRAFTING, sharedData({ ["u"] = TRAINING }, {
+				r(350276),	-- Armored Husk
+				r(350399),	-- Stygia Bar
+			})),
 			i(185618),	-- Stygia Dust
 			i(185617),	-- Stygia Sliver
 			n(177073, {	-- Runed Chest

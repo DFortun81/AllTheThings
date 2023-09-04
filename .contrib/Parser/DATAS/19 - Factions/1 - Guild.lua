@@ -50,7 +50,7 @@ root(ROOTS.Factions, {
 				["collectible"] = false,
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(65362, {	-- Guild Page (PET!) - Honored - minipet bound to Character
+					i(65362, {	-- Guild Page [H] (PET!) - Honored - minipet bound to Character
 						["races"] = HORDE_ONLY,
 					}),
 				},
@@ -58,14 +58,14 @@ root(ROOTS.Factions, {
 			ach(5024, {	-- Better Leveling Through Chemistry
 				["collectible"] = false,
 				["g"] = {
-					i(65498),	-- Recipe: Big Cauldron of Battle
+					i(65498),	-- Recipe: Big Cauldron of Battle (RECIPE!)
 				},
 			}),
 			ach(6634, {	-- Challenge Conquerors: Gold - Guild Edition
 				["collectible"] = false,
 				["g"] = {
 					i(85513, {	-- Thundering Serpent Hatchling (PET!)
-						["u"] = REMOVED_FROM_GAME,	-- They removed it from every guild in 6.0. Never confirmed to be obtainable from BMAH
+						["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 					}),
 				},
 			}),
@@ -80,7 +80,7 @@ root(ROOTS.Factions, {
 				["collectible"] = false,
 				["g"] = {
 					i(63398, {	-- Armadillo Pup (PET!) - Revered
-						["timeline"] = { "added 4.0.1.12941"},
+						["timeline"] = { ADDED_4_0_3 },
 					}),
 				},
 			}),
@@ -122,7 +122,7 @@ root(ROOTS.Factions, {
 				["collectible"] = false,
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					i(65361, {	-- Guild Page (PET!) - Honored - minipet bound to Character
+					i(65361, {	-- Guild Page [A] (PET!) - Honored - minipet bound to Character
 						["races"] = ALLIANCE_ONLY,
 					}),
 				},
@@ -141,7 +141,7 @@ root(ROOTS.Factions, {
 			ach(5465, {	-- Mix Master
 				["collectible"] = false,
 				["g"] = {
-					i(65435),	-- Recipe: Cauldron of Battle
+					i(65435),	-- Recipe: Cauldron of Battle (RECIPE!)
 				},
 			}),
 			ach(6644, {	-- Pandaren Embassy (A)
@@ -165,10 +165,10 @@ root(ROOTS.Factions, {
 			ach(5201, {	-- Profit Sharing
 				["collectible"] = false,
 				["g"] = {
-					i(65363, {	-- Guild Herald (PET!) - Revered - minipet bound to Character
+					i(65363, {	-- Guild Herald [A] (PET!) - Revered - minipet bound to Character
 						["races"] = ALLIANCE_ONLY,
 					}),
-					i(65364, {	-- Guild Herald (PET!) - Revered - minipet bound to Character
+					i(65364, {	-- Guild Herald [H] (PET!) - Revered - minipet bound to Character
 						["races"] = HORDE_ONLY,
 					}),
 				},
@@ -194,13 +194,13 @@ root(ROOTS.Factions, {
 			ach(5467, {	-- Set the Oven to "Cataclysmic"
 				["collectible"] = false,
 				["g"] = {
-					i(62799),	-- Recipe: Broiled Dragon Feast
+					i(62799),	-- Recipe: Broiled Dragon Feast (RECIPE!)
 				},
 			}),
 			ach(5036, {	-- That's a Lot of Bait
 				["collectible"] = false,
 				["g"] = {
-					i(62800),	-- Recipe: Seafood Magnifique Feast
+					i(62800),	-- Recipe: Seafood Magnifique Feast (RECIPE!)
 				},
 			}),
 			ach(5812, {	-- United Nations (A)

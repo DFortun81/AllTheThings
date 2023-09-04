@@ -23,6 +23,33 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["coord"] = { 58.8, 59.2, ANTORAN_WASTES },
 				["questID"] = 49017,
 			}),
+			o(276425, {	-- Intact Fiend Bone
+				["description"] = "Near Vrax'thul, on the east side of a black pillar.",
+				["cost"] = {{ "i", 152786, 1 }},	-- Call of the Devourer
+				["coord"] = { 52.4, 35.3, ANTORAN_WASTES },
+				["g"] = {
+					i(152991),	-- Fiend Bone
+				},
+			}),
+			o(276424, {	-- Intact Imp Bones
+				["description"] = "Can be found inside the imp cave.",
+				["cost"] = {{ "i", 152786, 1 }},	-- Call of the Devourer
+				["coords"] = {
+					{ 65.6, 26.3, ANTORAN_WASTES },	-- Entrance
+					{ 65.9, 19.4, ANTORAN_WASTES },	-- Imp Bone
+				},
+				["g"] = {
+					i(152992),	-- Imp Bone
+				},
+			}),
+			o(276426, {	-- Intact Ur'zul Bone
+				["description"] = "Next to the altar.",
+				["cost"] = {{ "i", 152786, 1 }},	-- Call of the Devourer
+				["coord"] = { 50.4, 56.1, ANTORAN_WASTES },
+				["g"] = {
+					i(152993),	-- Ur'zul Bone
+				},
+			}),
 			o(277207, {	-- Legion Treasure Hoard
 				["description"] = "Located behind the fel waterfall.",
 				["coord"] = { 49.2, 59.5, ANTORAN_WASTES },

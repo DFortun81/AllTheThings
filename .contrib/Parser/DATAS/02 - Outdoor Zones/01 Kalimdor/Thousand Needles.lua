@@ -54,8 +54,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					398,	-- Black Rat (PET!)
 					424,	-- Roach (PET!)
@@ -70,8 +69,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["190:190:31:155"] = 482,	-- Highperch
@@ -394,6 +392,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #IF NOT ANYCLASSIC
+				q(25561, {	-- Circle the Wagons... er, Boats [A]
+					["qg"] = 40475,	-- Jinky Twizzlefixxit
+					["altQuests"] = { 25542 },	-- Circle the Wagons... er, Boats [A]
+					["sourceQuest"] = 25532,	-- Pirate Accuracy Increasing [A]
+					["coord"] = { 76.4, 73.6, THOUSAND_NEEDLES },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{"select","questID",25542},{"pop"}},
+				}),
+				-- #ENDIF
 				q(25543, {	-- Circle the Wagons... er, Boats [H]
 					["qg"] = 40487,	-- Razzeric
 					["altQuests"] = { 25562 },	-- Circle the Wagons... er, Boats [H]
@@ -419,6 +428,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #IF NOT ANYCLASSIC
+				q(25562, {	-- Circle the Wagons... er, Boats [H]
+					["qg"] = 40487,	-- Razzeric
+					["altQuests"] = { 25543 },	-- Circle the Wagons... er, Boats [H]
+					["sourceQuest"] = 25533,	-- Pirate Accuracy Increasing [H]
+					["coord"] = { 77, 74.4, THOUSAND_NEEDLES },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = HORDE_ONLY,
+					["sym"] = {{"select","questID",25543},{"pop"}},
+				}),
+				-- #ENDIF
 				q(28139, {	-- Codemaster's Code
 					["qg"] = 47580,	-- Lakota Windsong
 					["sourceQuests"] = {
@@ -2372,7 +2392,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(8223, {	-- Blade of the Basilisk
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 03.09.2023 Data Discord
 						}),
 					},
 				}),
@@ -2479,7 +2499,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "added 2.0.1", "removed 4.1.0" },	-- Moved to Trainer
 							["isLimited"] = true,
 						}),
-						i(5973, {	-- Pattern: Barbaric Leggings
+						i(5973, {	-- Pattern: Barbaric Leggings (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2513,7 +2533,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 45.2, 50.6, THOUSAND_NEEDLES },
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(6068, {  -- Recipe: Shadow Oil
+						i(6068, {  -- Recipe: Shadow Oil (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },	-- Moved to trainers
 						}),
 					},

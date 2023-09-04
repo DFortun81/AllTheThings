@@ -1,39 +1,4 @@
-local Items = root(ROOTS.ItemDBConditional);
-local Recipes = root(ROOTS.RecipeDB);
-local ProfessionID = JEWELCRAFTING;
-local i = function(itemID, recipeID, unobtainStatus, requireSkill)
-	if Items[itemID] then
-		print("Duplicate Recipe Item Defined!",itemID,recipeID);
-	elseif itemID == 0 then
-		local recipe = { ["requireSkill"] = requireSkill or ProfessionID, ["f"] = RECIPES };
-		-- allow for timeline to be a raw 'u' value or single string of 'timeline' or table of multiple 'timeline' values
-		local unobtainType = unobtainStatus and type(unobtainStatus);
-		if unobtainType then
-			if unobtainType == "number" then
-				recipe.u = unobtainStatus;
-			elseif unobtainType == "string" then
-				recipe.timeline = { unobtainStatus };
-			elseif unobtainType == "table" then
-				recipe.timeline = unobtainStatus;
-			end
-		end
-		Recipes[recipeID] = recipe;
-	else
-		local item = { ["recipeID"] = recipeID, ["requireSkill"] = requireSkill or ProfessionID, ["f"] = RECIPES };
-		-- allow for timeline to be a raw 'u' value or single string of 'timeline' or table of multiple 'timeline' values
-		local unobtainType = unobtainStatus and type(unobtainStatus);
-		if unobtainType then
-			if unobtainType == "number" then
-				item.u = unobtainStatus;
-			elseif unobtainType == "string" then
-				item.timeline = { unobtainStatus };
-			elseif unobtainType == "table" then
-				item.timeline = unobtainStatus;
-			end
-		end
-		Items[itemID] = item;
-	end
-end
+local i = GetRecipeHelperForProfession(JEWELCRAFTING);
 
 -- NOT ORGANIZED
 i(0, 382978);	-- Cataclysm Prospecting
@@ -200,7 +165,7 @@ i(203426, 400812);	-- Crystal Tuning Fork
 i(0, 404740);	-- Cataclysm Crushing
 i(204406, 405205);	-- Square Holders
 i(204219, 403483);	-- Unstable Elementium
--- UNSORTED --
+-- NYI --
 i(204218, 403464);	-- Primordial Pulverizing
 
 ------------------
@@ -213,3 +178,13 @@ i(204147, 403132);	-- Obsidian Combatant's Jeweled Signet
 i(205175, 408397);	-- Statuette of Foreseen Power
 -- SPECIAL --
 i(0, 407161);		-- Immaculate Coalescing Dracothyst
+
+------------------
+-- PATCH 10.1.5 --
+------------------
+--- ITEM ---
+i(206552, 413752);	-- Frostwyrm's Frigid Stare
+i(206551, 413751);	-- Frostwyrm's Icy Gaze
+i(206543, 413743);	-- Gem of the Nerubians
+--- NYI ---
+i(0, 412557);		-- TEST CRUSHING (DNT)

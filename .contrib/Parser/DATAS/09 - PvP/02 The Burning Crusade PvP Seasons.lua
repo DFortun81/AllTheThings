@@ -22,7 +22,7 @@ local function MarkOfWHOOOWHATNow(t)
 end
 -- #if BEFORE 4.0.1
 local SEASONONE_GLADIATOR_ONUPDATE = [[function(t)
-	if ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_TWO .. [[] then
+	if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_TWO .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
 		t.u = ]] .. TBC_PHASE_ONE .. [[;
@@ -30,7 +30,7 @@ local SEASONONE_GLADIATOR_ONUPDATE = [[function(t)
 	if not t.rwp then t.rwp = 20102; end
 end]];
 local MERCILESS_GLADIATOR_ONUPDATE = [[function(t)
-	if ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FOUR .. [[] then
+	if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FOUR .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
 		t.u = ]] .. TBC_PHASE_TWO .. [[;
@@ -38,7 +38,7 @@ local MERCILESS_GLADIATOR_ONUPDATE = [[function(t)
 	if not t.rwp then t.rwp = 20300; end
 end]];
 local VENGEFUL_GLADIATOR_ONUPDATE = [[function(t)
-	if ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE .. [[] then
+	if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FIVE .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
 		t.u = ]] .. TBC_PHASE_THREE .. [[;
@@ -46,7 +46,7 @@ local VENGEFUL_GLADIATOR_ONUPDATE = [[function(t)
 	if not t.rwp then t.rwp = 20403; end
 end]];
 local BRUTAL_GLADIATOR_ONUPDATE = [[function(t)
-	if ATTClassicSettings.Unobtainables[]] .. WRATH_PHASE_ONE .. [[] then
+	if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_ONE .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
 		t.u = ]] .. TBC_PHASE_FIVE .. [[;
@@ -57,7 +57,7 @@ end]];
 root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown({ ["timeline"] = { "added 2.0.1" } }, pvp(tier(TBC_TIER, {
 	n(PVP_HONOR, {
 		-- Players have said that the Alliance versions were available through Wrath.
-		n(FACTION_HEADER_ALLIANCE, bubbleDownFiltered({ ["timeline"] = { "added 2.0.1", "removed 4.0.1" } }, function(t) return t.itemID; end, {
+		n(FACTION_HEADER_ALLIANCE, bubbleDownFiltered({ ["timeline"] = { "added 2.0.1", "removed 4.0.1" } }, FILTERFUNC_itemID, {
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				n(WEAPONS, {
@@ -206,7 +206,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 				}),
 			},
 		})),
-		n(FACTION_HEADER_HORDE, bubbleDownFiltered({ ["timeline"] = { "added 2.0.1", "removed 3.0.1" } }, function(t) return t.itemID; end, {
+		n(FACTION_HEADER_HORDE, bubbleDownFiltered({ ["timeline"] = { "added 2.0.1", "removed 3.0.1" } }, FILTERFUNC_itemID, {
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				n(WEAPONS, {
@@ -362,7 +362,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 			["OnUpdate"] = SEASONONE_GLADIATOR_ONUPDATE,
 			-- #endif
 		}, n(ACHIEVEMENTS, {
-			classicAch(886, {	-- Swift Nether Drake
+			ach(886, {	-- Swift Nether Drake
 				["provider"] = { "i", 30609 },	-- Swift Nether Drake
 				["filterID"] = MOUNTS,
 			}),
@@ -1270,7 +1270,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					["timeline"] = { "added 2.0.3", "removed 6.0.1" },
 				}),
 			}),
-			filter(RELICS, {
+			filter(RELICS_F, {
 				i(33945, { -- Gladiator's Idol of Resolve
 					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 				}),
@@ -1308,10 +1308,10 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 			["OnUpdate"] = MERCILESS_GLADIATOR_ONUPDATE,
 			-- #endif
 		}, n(ACHIEVEMENTS, {
-			classicAch(418, {	-- Merciless Gladiator: Burning Crusade Season 2
+			ach(418, {	-- Merciless Gladiator: Burning Crusade Season 2
 				title(37),	-- Merciless Gladiator <Name>
 			}),
-			classicAch(887, {	-- Merciless Nether Drake
+			ach(887, {	-- Merciless Nether Drake
 				["provider"] = { "i", 34092 },	-- Merciless Nether Drake
 				["filterID"] = MOUNTS,
 			}),
@@ -1989,7 +1989,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					["timeline"] = { "added 2.0.3", "removed 2.5.4" },
 				}),
 			}),
-			filter(RELICS, {
+			filter(RELICS_F, {
 				i(33946, { -- Merciless Gladiator's Idol of Resolve
 					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 				}),
@@ -2027,10 +2027,10 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 			["OnUpdate"] = VENGEFUL_GLADIATOR_ONUPDATE,
 			-- #endif
 		}, n(ACHIEVEMENTS, {
-			classicAch(419, {	-- Vengeful Gladiator: Burning Crusade Season 3
+			ach(419, {	-- Vengeful Gladiator: Burning Crusade Season 3
 				title(40),	-- Vengeful Gladiator <Name>
 			}),
-			classicAch(888, {	-- Vengeful Nether Drake
+			ach(888, {	-- Vengeful Nether Drake
 				["provider"] = { "i", 37676 },	-- Vengeful Nether Drake
 				["filterID"] = MOUNTS,
 			}),
@@ -2730,7 +2730,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 				}),
 			}),
-			filter(RELICS, {
+			filter(RELICS_F, {
 				i(33947, { -- Vengeful Gladiator's Idol of Resolve
 					["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 				}),
@@ -2788,10 +2788,10 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 			["OnUpdate"] = BRUTAL_GLADIATOR_ONUPDATE,
 			-- #endif
 		}, n(ACHIEVEMENTS, {
-			classicAch(420, {	-- Brutal Gladiator: Burning Crusade Season 4
+			ach(420, {	-- Brutal Gladiator: Burning Crusade Season 4
 				title(49),	-- Brutal Gladiator <Name>
 			}),
-			classicAch(2316, {	-- Brutal Nether Drake
+			ach(2316, {	-- Brutal Nether Drake
 				["provider"] = { "i", 43516 },	-- Brutal Nether Drake
 				["filterID"] = MOUNTS,
 			}),
@@ -3534,7 +3534,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					["timeline"] = { "added 2.0.3", "removed 4.0.3" },
 				}),
 			}),
-			filter(RELICS, {
+			filter(RELICS_F, {
 				i(35019, {	-- Brutal Gladiator's Idol of Resolve
 					["timeline"] = { "added 2.0.3", "removed 5.0.4" },
 				}),
@@ -3649,7 +3649,7 @@ root(ROOTS.HiddenQuestTriggers, {
 });
 -- #endif
 -- #if AFTER TBC
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(TBC_TIER, {
 		-- #if BEFORE 4.0.1.12941
 		i(30491, {	-- General's Plate Sabatons / General's Plate Greaves Tier 2 [TBC]
@@ -3658,5 +3658,5 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 		-- #endif
 	}),
-}));
+});
 -- #endif

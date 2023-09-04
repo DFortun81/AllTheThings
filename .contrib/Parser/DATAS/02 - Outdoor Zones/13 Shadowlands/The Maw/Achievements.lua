@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(THE_MAW, {
 		n(ACHIEVEMENTS, {
 			ach(14744, {	-- Better to be Lucky than Dead
@@ -205,20 +205,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					}),
 				},
 			}),
-			ach(14663, {	-- Explore The Maw
-				crit(1),		-- Calcis
-				crit(2),		-- Cocyrus
-				crit(3),		-- Crucible of the Damned
-				crit(4),		-- Desmotaeron
-				crit(5),		-- Gorgoa, River of Souls
-				crit(6),		-- Marrow's Coppice
-				crit(7),		-- Perdition Hold
-				crit(8),		-- Planes of Torment
-				crit(9),		-- Ravener's Lament
-				crit(10),		-- The Altar of Damnation
-				crit(11),		-- The Beastwarrens
-				crit(12),		-- Zovaal's Cauldron
-			}),
+			explorationAch(14663),	-- Explore The Maw
 			achraw(14895, {	-- 'Ghast Five
 				crit(1, {		-- Vessel of Unfortunate Spirits
 					["provider"] = { "i", 184620 },
@@ -287,7 +274,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					["_npcs"] = { 165047 },
 				}),
 				crit(7, {	-- Warren Mongrel [This NPC has no info or comment on wowhead nor ATT... >.<]
-					["_npcs"] = { 165973 },
+					-- ["_npcs"] = { 165973 },	-- NPC doesn't exist
 					["timeline"] = { "created 9.0.1" },
 				}),
 				crit(8, {	-- Cyrixia <The Willbreaker>
@@ -342,11 +329,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				}),
 				crit(4, {	-- Complete Hunt: Winged Soul Eaters
 					["_quests"] = { 63194 }
-				}),
-			}),
-			ach(14334, {	-- Into the Maw
-				crit(1, {
-					["sourceQuests"] = { 59770 },	-- Stand as One
 				}),
 			}),
 			ach(14660, {	-- It's About Sending a Message
@@ -406,16 +388,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				}),
 				crit(19, {	-- Ratgusher <10,000 Mawrats in a Suit of Armor>
 					["_npcs"] = { 175821 },
-				}),
-			}),
-			ach(14747, {	-- Make it Double!
-				crit(1, {
-					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
-				}),
-			}),
-			ach(14746, {	-- Prepare for Trouble!
-				crit(1, {
-					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
 				}),
 			}),
 			ach(14658, {	-- Soulkeeper's Burden

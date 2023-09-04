@@ -12,7 +12,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 61.6, 68.6, THE_WAKING_SHORES },
 				}),
 				q(65779, {	-- Into the Plains
-					["sourceQuests"] = { 65795 },	-- Next Steppes
+					["sourceQuests"] = {
+						65795,	-- Next Steppes
+						DF_ACCOUNT_CAMPAIGN_QUEST,
+					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 185878 },	-- Ambassador Taurasza
 					["coord"] = { 48.3, 88.7, THE_WAKING_SHORES },
 					["g"] = {
@@ -445,7 +449,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			header(HEADERS.AchCriteria, 16405.02, {	-- Initiate's Day Out
 				q(65906, {	-- A Disgruntled Initiate
-					["sourceQuests"] = { 65779 },	-- Into the Plains
+					["sourceQuests"] = {
+						65779,	-- Into the Plains
+						DF_ACCOUNT_CAMPAIGN_QUEST,
+					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 195302 },	-- Windsage Ordven
 					["coord"] = { 63.1, 34.1, OHNAHRAN_PLAINS },
 					["isBreadcrumb"] = true,
@@ -554,16 +562,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 			}),
 			header(HEADERS.AchCriteria, 16405.04, {	-- Pinewood Post
-				q(65837, {	-- Trouble In The Pines
-					["sourceQuests"] = {
-						65779,	-- Into the Plains
-						DF_ACCOUNT_CAMPAIGN_QUEST,
-					},
-					["sourceQuestNumRequired"] = 1,
-					["provider"] = { "n", 195524 },	-- Beastmaster Tirren
-					["coord"] = { 62.0, 41.8, OHNAHRAN_PLAINS },
-					["isBreadcrumb"] = true,
-				}),
 				q(66680, {	-- Counting Sheep
 					["sourceQuests"] = { 65837 },	-- Trouble In The Pines
 					["provider"] = { "n", 190025 },	-- Scout Watu
@@ -574,10 +572,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 				q(66681, {	-- Tempests Abound
-					["sourceQuests"] = { 65779 },	-- Into the Plains
+					["sourceQuests"] = { 65837 },	-- Trouble In The Pines
 					["provider"] = { "n", 190024 },	-- Sentinel Olekk
 					["coord"] = { 81.0, 58.9, OHNAHRAN_PLAINS },
 				}),
+				q(65837, {	-- Trouble In The Pines
+				["sourceQuests"] = {
+					65779,	-- Into the Plains
+					DF_ACCOUNT_CAMPAIGN_QUEST,
+				},
+				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 195524 },	-- Beastmaster Tirren
+				["coord"] = { 62.0, 41.8, OHNAHRAN_PLAINS },
+				["isBreadcrumb"] = true,
+			}),
 				q(66689, {	-- More Than a Rock
 					["sourceQuests"] = { 66681 },	-- Tempests Abound
 					["provider"] = { "i", 194031 },	-- Stormtouched Shards
@@ -611,7 +619,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			header(HEADERS.AchCriteria, 16405.05, {	-- Elder Nazuun
 					q(66687, {	-- Land of the Apex
-						["sourceQuests"] = { 66201 },	-- Hooves of War
+						["sourceQuests"] = {
+							66201,	-- Hooves of War
+							DF_ACCOUNT_CAMPAIGN_QUEST,
+						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 190164 },	-- Elder Nazuun
 						["coord"] = { 41.6, 56.7, OHNAHRAN_PLAINS },
 					}),
@@ -658,6 +670,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66652 },	-- Return to Mender
 					["provider"] = { "n", 188225 },	-- Initiate Zorig
 					["coord"] = { 39.1, 66.0, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(193257),	-- Clump of Sacred Soil (QI!)
+					},
 				}),
 				q(69936, {	-- Zambul, Head Vandal
 					["sourceQuests"] = {
@@ -698,6 +713,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 65783 },	-- Welcome at Our Fire
 					["provider"] = { "n", 186650 },	-- Farrier Roscha
 					["coord"] = { 84.4, 25.0, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(191541),	-- Shikaar Supplies (QI!)
+					},
 				}),
 				q(65955, {	-- A Centaur's Best Friend
 					["sourceQuests"] = {
@@ -716,6 +734,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 80.6, 30.7, OHNAHRAN_PLAINS },
 					["g"] = {
 						i(197960),	-- Bag of Biscuits
+						i(191540),	-- Batu's Collar (QI!)
+						i(191539),	-- Sarnai's Collar (QI!)
 					},
 				}),
 				q(65953, {	-- The Ora-cull
@@ -725,6 +745,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 186649 },	-- Khasar
 					["coord"] = { 80.6, 30.7, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(191143),	-- Mudfin Totem (QI!)
+					},
 				}),
 				q(65952, {	-- A Chief of Legends
 					["sourceQuests"] = {
@@ -811,9 +834,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 			}),
-			header(HEADERS.Item, 198821, {	-- Divine Kiss of Ohn'ahra
+			header(HEADERS.Item, 198821, bubbleDownSelf({ ["minReputation"] = { FACTION_MARUUK_CENTAUR, 25 } }, {	-- Divine Kiss of Ohn'ahra
 				q(72512, {	-- A Whispering Breeze
-					["minReputation"] = { 2503, 25 },	-- Maruuk Centaur Renown 25
 					["description"] = "Speak to Godoloto to get the clues then gather the cost objects.",
 					["sourceQuests"] = { 66676 },	-- Sneaking In
 					["provider"] = { "n", 190022 },	-- Godoloto
@@ -824,13 +846,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						{ "i", 191507, 1 },	-- 1xExultant Incense+++
 					},
 					["g"] = {
-						i(198821),	-- Divine Kiss of Ohn'ahra (MOUNT!)
+						mount(395644),	-- Divine Kiss of Ohn'ahra (MOUNT!)
 					},
 				}),
-			}),
-			header(HEADERS.Item, 192799, {	-- Lizi, Thunderspine Tramper
+			})),
+			header(HEADERS.Item, 192799, bubbleDownSelf({ ["minReputation"] = { FACTION_MARUUK_CENTAUR, 9 } }, {	-- Lizi, Thunderspine Tramper
 				q(71196, {	-- To Tame A Thunderspine
-					["minReputation"] = { 2503, 19 },	-- Maruuk Centaur Renown 19
 					["sourceQuests"] = { 66676 },	-- Sneaking In
 					["provider"] = { "n", 190014 },	-- Initiate Radiya
 					["coord"] = { 56.1, 77.0, OHNAHRAN_PLAINS },
@@ -883,10 +904,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(192799),	-- Lizi, Thunderspine Tramper (MOUNT!)
 					},
 				}),
-			}),
+			})),
 			header(HEADERS.Item, 200597, {	-- Lover's Bouquet
 				q(70739, {	-- Bloodlines, Sweets, and Teraai
-					["sourceQuests"] = { 65806 },	-- Maruukai
+					["sourceQuests"] = {
+						65806,	-- Maruukai
+						DF_ACCOUNT_CAMPAIGN_QUEST,
+					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 191924 },	-- Hunter Narman
 					["coord"] = { 63.6, 40.5, OHNAHRAN_PLAINS },
 					["cost"] = { { "i", 199918, 1 }, },	-- 1x Honey Plum Tart
@@ -1111,7 +1136,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 			})),
-			------ Misc ------
+			------ Miscellaneous ------
 			q(70155, {	-- Look, Listen, and Breathe
 				["provider"] = { "n", 194282 },	-- Threshrak
 				["coord"] = { 34.1, 59.4, OHNAHRAN_PLAINS },
@@ -1154,6 +1179,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["g"] = {
 					i(200878),	-- Wheeled Floaty Boaty Controller (TOY!)
 				},
+			}),
+			q(70368, {	-- Occupation Examination
+				["description"] = "This quest requires that you have no primary professions learned. Both versions complete at the same time.",
+				["provider"] = { "n", 192498 },	-- Hephaesta
+				["coord"] = { 71.8, 78.7, OHNAHRAN_PLAINS },
 			}),
 			q(70370, {	-- Occupation Examination
 				["description"] = "This quest requires that you have at least one open primary profession slot. Both versions complete at the same time.",
@@ -1207,30 +1237,30 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(OHNAHRAN_PLAINS, {
-		q(73701),	-- triggered during 'Unwelcome Outsider' (66021)
+		q(73701),	-- triggered during 'Unwelcome Outsider' (questID 66021) (spellID 399693)
 		q(71203),	-- daily lockout for 'To Tame A Thunderspine' series
 		q(70724),	-- triggered during 'The Calm Before the Storm'
-		q(70749),	-- triggered when looting the talisman off windsage garuman
-		q(70505),	-- triggered when talking to Tigari Khan after looting the talisman off windsage garuman
+		q(70749),	-- triggered when looting the talisman off windsage garuman (spellID 387958)
+		q(70505),	-- triggered when talking to Tigari Khan after looting the talisman off windsage garuman (spellID 386172)
 		q(72064),	-- triggered when receiving toy from Yennu
 		q(66887),	-- Choose Trophy from First Hunt (Renewal of Vows 66783)
 		q(66888),	-- Choose Blood (Renewal of Vows 66783)
 		q(66889),	-- Choose Eagle Feather (Renewal of Vows 66783)
 		q(69867),	-- Stay and Listen Merithra 18.7,51.6 (LQ 70928)
-		q(66505),	-- triggered when talking to Ranger Bolor and giving them Batu's Collar
-		q(66512),	-- triggered when talking to Hunter Zaya and giving her Sarnai's Collar
+		q(66505),	-- triggered when talking to Ranger Bolor and giving them Batu's Collar (spellID 372100)
+		q(66512),	-- triggered when talking to Hunter Zaya and giving her Sarnai's Collar (spellID 372102)
 		q(74168),	-- After killing Skaara (during leveling)
 		-- Achievement Honor Our Ancestors
-		q(71167),	-- Maruukai Ancestor
-		q(71168),	-- Timberstep Outpost Ancestor
-		q(71169),	-- Horn of Drusahl Ancestor
-		q(71170),	-- Toghusuq Village Ancestor
-		q(71171),	-- Shikaar Highlands Ancestor
-		q(71172),	-- The Carving Winds Ancestor
-		q(71173),	-- Sylvan Glade Ancestor
-		q(71174),	-- Ohn'iri Springs Ancestor
-		q(71175),	-- Teerakai Ancestor
-		q(71176),	-- The Eternal Kurgans Ancestor
+		q(71167),	-- Maruukai Ancestor (spellID 390535)
+		q(71168),	-- Timberstep Outpost Ancestor (spellID 390536)
+		q(71169),	-- Horn of Drusahl Ancestor (spellID 390538)
+		q(71170),	-- Toghusuq Village Ancestor (spellID 390539)
+		q(71171),	-- Shikaar Highlands Ancestor (spellID 390544)
+		q(71172),	-- The Carving Winds Ancestor (spellID 390545)
+		q(71173),	-- Sylvan Glade Ancestor (spellID 390547)
+		q(71174),	-- Ohn'iri Springs Ancestor (spellID 390549)
+		q(71175),	-- Teerakai Ancestor (spellID 390551)
+		q(71176),	-- The Eternal Kurgans Ancestor (spellID 390553)
 		-- q(70141),	-- Triggered when killed Skaara
 
 		q(72610, {["timeline"] = {ADDED_10_0_7}}),	-- After getting the achievement "A New Beginning"

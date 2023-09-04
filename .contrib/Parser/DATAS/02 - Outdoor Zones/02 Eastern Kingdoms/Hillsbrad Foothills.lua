@@ -35,6 +35,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				-- #if AFTER CATA
+				explorationAch(760, {	-- Explore Alterac Mountains
+					-- #if BEFORE WRATH
+					["description"] = "Explore Alterac Mountains, revealing the covered areas of the world map.",
+					-- #endif
+					["timeline"] = { "removed 4.0.3" },
+				}),
+				-- #endif
 				explorationAch(772, {	-- Explore Hillsbrad Foothills
 					-- #if BEFORE WRATH
 					["description"] = "Explore Hillsbrad Foothills, revealing the covered areas of the world map.",
@@ -69,8 +77,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					646,	-- Chicken (PET!)
 					648,	-- Huge Toad (PET!)
@@ -94,8 +101,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["description"] = "Found around the Ruins of Alterac.",
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["125:100:109:482"] = 896,	-- Purgation Isle
@@ -144,14 +150,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = HORDE_ONLY,
 				}),
-				-- #if BEFORE 4.0.3
 				fp(14, {	-- Southshore, Hillsbrad
 					["cr"] = 2432,	-- Darla Harris <Gryphon Master>
 					["coord"] = { 49.4, 52.4, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "deleted 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				-- #endif
 				fp(670, {	-- Strahnbrad, Alterac Mountains
 					["cr"] = 47665,	-- Phillip Harding <Bat Handler>
 					["coord"] = { 58.2, 26.4, HILLSBRAD_FOOTHILLS },
@@ -563,7 +567,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(3754, {	-- Shepherd's Gloves
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(3736, {	-- Recipe: Tasty Lion Steak
+						i(3736, {	-- Recipe: Tasty Lion Steak (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },	-- Moved to Trainers
 						}),
 						-- #if BEFORE 4.0.3
@@ -1021,7 +1025,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #if BEFORE 4.0.3
 						-- Recipe is not unobtainable, sold by Zargh in Nothern Barrens
-						i(3735),	-- Recipe: Hot Lion Chops
+						i(3735),	-- Recipe: Hot Lion Chops (RECIPE!)
 						-- #endif
 					},
 				}),
@@ -1846,7 +1850,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["lvl"] = 28,
 					["groups"] = {
-						i(3737, {	-- Recipe: Soothing Turtle Bisque
+						i(3737, {	-- Recipe: Soothing Turtle Bisque (RECIPE!)
 							["timeline"] = { "removed 4.0.3.2000" },
 						}),
 						i(3729),	-- Soothing Turtle Bisque
@@ -1866,7 +1870,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["lvl"] = 28,
 					["groups"] = {
-						i(3737, {	-- Recipe: Soothing Turtle Bisque
+						i(3737, {	-- Recipe: Soothing Turtle Bisque (RECIPE!)
 							["timeline"] = { "removed 4.0.3.2000" },
 						}),
 						i(3729),	-- Soothing Turtle Bisque
@@ -2329,7 +2333,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						-- #if BEFORE 4.0.3
-						i(3734),	-- Recipe: Big Bear Steak
+						i(3734),	-- Recipe: Big Bear Steak (RECIPE!)
 						{
 							["itemID"] = 3499,	-- Burnished Gold Key
 							["coord"] = { 79.6, 40.6, HILLSBRAD_FOOTHILLS },
@@ -2786,7 +2790,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(2480, {	-- Bro'kin <Alchemy Supplies> (Alterac Mountains)
 					["coord"] = { 44.0, 21.8, HILLSBRAD_FOOTHILLS },
 					["groups"] = {
-						i(14634, {	-- Recipe: Frost Oil
+						i(14634, {	-- Recipe: Frost Oil (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2804,10 +2808,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 2.0.1", "removed 4.0.3" },	-- Learned by trainer
 							["isLimited"] = true,
 						}),
-						i(5788, {	-- Pattern: Thick Murloc Armor
+						i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(6054, {	-- Recipe: Shadow Protection Potion
+						i(6054, {	-- Recipe: Shadow Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2820,9 +2824,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6330),	-- Recipe: Bristle Whisker Catfish
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(2698, {	-- George Candarte <Leatherworking Supplies>
@@ -2833,7 +2837,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(7613, {	-- Pattern: Green Leather Armor
+						i(7613, {	-- Pattern: Green Leather Armor (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2884,9 +2888,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6330),	-- Recipe: Bristle Whisker Catfish
-						i(6369),	-- Recipe: Rockscale Cod
-						i(17062),	-- Recipe: Mithril Head Trout
+						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
 					},
 				}),
 				-- #endif
@@ -2942,11 +2946,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(4355, {	-- Pattern: Icy Cloak
 							["isLimited"] = true,
 						}),
-						i(5788, {	-- Pattern: Thick Murloc Armor
+						i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(21219),	-- Recipe: Sagefish Deligh
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 						-- #endif
 					},
 				}),
@@ -2955,7 +2959,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6055, {	-- Recipe: Fire Protection Potion
+						i(6055, {	-- Recipe: Fire Protection Potion (RECIPE!)
 							-- #if BEFORE 4.0.3
 							["description"] = "This item can be sold on the Neutral Auction House to Alliance Alchemists for a... nominal fee.\n\nOnly naturally accessible to Horde players.",
 							-- #else
@@ -3041,7 +3045,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 71.0, 45.8, HILLSBRAD_FOOTHILLS },
 					["classes"] = { ROGUE },
 					["groups"] = {
-						i(18160),	-- Recipe: Thistle Tea
+						i(18160),	-- Recipe: Thistle Tea (RECIPE!)
 					},
 				}),
 				n(6777, {	-- Zan Shivsproket <Speciality Engineer> (Alterac Mountains)
@@ -3083,7 +3087,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(4838, {	-- Orb of Power
 							["isLimited"] = true,
 						}),
-						i(7362, {	-- Pattern: Earthen Leather Shoulders
+						i(7362, {	-- Pattern: Earthen Leather Shoulders (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(5772, {	-- Pattern: Red Woolen Bag

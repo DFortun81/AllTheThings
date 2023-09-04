@@ -46,7 +46,7 @@ namespace ATT
 
             try
             {
-                string configText = File.ReadAllText(filepath);
+                string configText = File.ReadAllText(filepath, Encoding.UTF8);
                 object jsonObj = MiniJSON.Json.Deserialize(configText);
                 _root = new CustomConfigurationNode(jsonObj);
             }
@@ -68,7 +68,7 @@ namespace ATT
 
             try
             {
-                string configText = File.ReadAllText(filepath);
+                string configText = File.ReadAllText(filepath, Encoding.UTF8);
                 object jsonObj = MiniJSON.Json.Deserialize(configText);
                 _root.ApplyData(jsonObj);
             }

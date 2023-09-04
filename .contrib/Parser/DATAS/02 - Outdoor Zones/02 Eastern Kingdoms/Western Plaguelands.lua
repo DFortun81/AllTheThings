@@ -71,8 +71,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #endif
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					398,	-- Black Rat (PET!)
 					648,	-- Huge Toad (PET!)
@@ -85,8 +84,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 45.4, 70.0, WESTERN_PLAGUELANDS },
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["160:125:300:311"] = 199,	-- Felstone Field
@@ -779,7 +777,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 53,
 					["groups"] = {
 						objective(1, {	-- 0/5 Andorhal Watch
-							["provider"] = { "i", 12638 },	-- Andorhal Watch
+							["providers"] = {
+								{ "i",  12638 },	-- Andorhal Watch
+								{ "o", 175802 },	-- Small Lockbox
+							},
 						}),
 						i(12650, {	-- Attuned Dampener
 							["timeline"] = { "removed 4.0.3" },
@@ -795,7 +796,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 53,
 					["groups"] = {
 						objective(1, {	-- 0/5 Andorhal Watch
-							["provider"] = { "i", 12638 },	-- Andorhal Watch
+							["providers"] = {
+								{ "i",  12638 },	-- Andorhal Watch
+								{ "o", 175802 },	-- Small Lockbox
+							},
 						}),
 						i(12650, {	-- Attuned Dampener
 							["timeline"] = { "removed 4.0.3" },
@@ -1775,7 +1779,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 55,
 					["groups"] = {
 						objective(1, {	-- 0/1 Mark of the Lightbringer
-							["provider"] = { "i", 23661 },	-- Mark of the Lightbringer
+							["providers"] = {
+								{ "i", 23661 },	-- Mark of the Lightbringer
+								{ "o", 181629 },	-- Holy Coffer
+							},
 							["coord"] = { 53.8, 24.4, WESTERN_PLAGUELANDS },
 						}),
 					},
@@ -2231,7 +2238,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 5.1.0.16309" },
 				}),
 				-- #if BEFORE 4.0.3
-				i(12843, {	-- Corruptor's Scourgestone
+				i(12843, {	-- Corruptor's Scourgestone / Inert Corruptor's Scourgestone
 					["description"] = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 					["timeline"] = { "deleted 4.0.3" },
 				}),
@@ -2402,6 +2409,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 5.2.0.16650" },
 				}),
 			}),
+			n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+				o(403535, {	-- The Deed to Andorhal
+					["description"] = "Located by the town hall in Andorhal, on a wall to the right of where Rattlegore spawns.",
+					["sourceQuests"] = { 76250 },	-- Spectral Essence
+					["coord"] = { 43.6, 69.3, WESTERN_PLAGUELANDS },
+					["groups"] = {
+						i(206362),	-- The Deed to Andorhal
+					},
+				}),
+				o(403532, {	-- Bucket of Fountain Water
+					["description"] = "Located by the water fountain in Caer Darrow.",
+					["sourceQuests"] = { 76250 },	-- Spectral Essence
+					["coord"] = { 68.8, 78.9, WESTERN_PLAGUELANDS },
+					["groups"] = {
+						i(206359),	-- Caer Darrow Fountain Water
+					},
+				}),
+			})),
 			n(VENDORS, {
 				n(11056, {	-- Alchemist Arbington
 					["coord"] = { 42.6, 83.8, WESTERN_PLAGUELANDS },
@@ -2415,6 +2440,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(10857, {	-- Argent Quartermaster Lightspark <The Argent Crusade>
 					["coord"] = { 42.8, 83.8, WESTERN_PLAGUELANDS },
+					["sym"] = {{ "select", "itemID", 206584 }},	-- Archived Crafting Techniques
 					["groups"] = {
 						i(22014, {	-- Hallowed Brazier
 							["timeline"] = { "removed 4.0.3" },
@@ -2474,11 +2500,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(19442),	-- Recipe: Powerful Anti-Venom
 						i(19216),	-- Pattern: Argent Boots
 						i(19217),	-- Pattern: Argent Shoulders
-						i(19328),	-- Pattern: Dawn Treaders
-						i(19329),	-- Pattern: Golden Mantle of the Dawn
+						applyclassicphase(PHASE_THREE, i(19328)),	-- Pattern: Dawn Treaders (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19329)),	-- Pattern: Golden Mantle of the Dawn (RECIPE!)
 						applyclassicphase(PHASE_THREE, i(19203)),	-- Plans: Girdle of the Dawn (RECIPE!)
 						applyclassicphase(PHASE_THREE, i(19205)),	-- Plans: Gloves of the Dawn (RECIPE!)
-						i(13482),	-- Recipe: Transmute Air to Fire
+						i(13482),	-- Recipe: Transmute Air to Fire (RECIPE!)
 					},
 				}),
 				-- #if ANYCLASSIC
@@ -2497,15 +2523,42 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
+				n(11936, {	-- Artist Renfray
+					["description"] = "Only visible if you have the Spectral Essence equipped.",
+					["coord"] = { 65.8, 75.4, WESTERN_PLAGUELANDS },
+					["groups"] = {
+						i(206358, {	-- Imported Candle
+							["cost"] = {{ "i", 206363, 1 }},	-- The Road Ahead
+						}),
+					},
+				}),
+				n(11316, {	-- Joseph Dirte
+					["description"] = "Only visible if you have the Spectral Essence equipped.",
+					["coord"] = { 68.0, 74.8, WESTERN_PLAGUELANDS },
+					["groups"] = {
+						i(206354, {	-- Stinky Candle
+							["cost"] = {{ "i", 206359, 1 }},	-- Caer Darrow Fountain Water
+						}),
+					},
+				}),
 				n(12942, {	-- Leonard Porter <Leatherworking Supplies>
 					["coord"] = { 43.0, 84.3, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(15741, {	-- Pattern: Stormshroud Pants
+						i(15741, {	-- Pattern: Stormshroud Pants (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(15725, {	-- Pattern: Wicked Leather Gauntlets
+						i(15725, {	-- Pattern: Wicked Leather Gauntlets (RECIPE!)
 							["isLimited"] = true,
+						}),
+					},
+				}),
+				n(11286, {	-- Magistrate Marduke
+					["description"] = "Only visible if you have the Spectral Essence equipped.",
+					["coord"] = { 70.5, 74.0, WESTERN_PLAGUELANDS },
+					["groups"] = {
+						i(206357, {	-- Authentic Andorhal Candle
+							["cost"] = {{ "i", 206362, 1 }},	-- The Deed to Andorhal
 						}),
 					},
 				}),
@@ -2519,8 +2572,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(12823),	-- Plans: Huge Thorium Battleaxe (RECIPE!)
 						i(12819),	-- Plans: Ornate Thorium Handaxe (RECIPE!)
 						i(12703),	-- Plans: Storm Gauntlets (RECIPE!)
-						i(13501),	-- Recipe: Major Mana Potion
-						i(13485),	-- Recipe: Transmute Water to Air
+						i(13501),	-- Recipe: Major Mana Potion (RECIPE!)
+						i(13485),	-- Recipe: Transmute Water to Air (RECIPE!)
+					},
+				}),
+				n(11285, {	-- Rory
+					["description"] = "Only visible if you have the Spectral Essence equipped.",
+					["coord"] = { 63.4, 75.6, WESTERN_PLAGUELANDS },
+					["groups"] = {
+						i(206355, {	-- Tobacco-Filled Candle
+							["cost"] = {{ "i", 206360, 1 }},	-- Undelivered Shipment of Smokes
+						}),
+					},
+				}),
+				n(11283, {	-- Sammy
+					["description"] = "Only visible if you have the Spectral Essence equipped.",
+					["coord"] = { 69.1, 78.7, WESTERN_PLAGUELANDS },
+					["groups"] = {
+						i(206356, {	-- Ghost-Warding Candle
+							["cost"] = {{ "i", 206361, 1 }},	-- Trampled Doll
+						}),
 					},
 				}),
 			}),
@@ -2607,11 +2678,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(16252, {	-- Formula: Enchant Weapon - Crusader
 					["cr"] = 4494,	-- Scarlet Spellbinder
 				}),
-				i(12841, {	-- Invader's Scourgestone
+				i(12841, {	-- Invader's Scourgestone / Inert Invader's Scourgestone
 					["description"] = "Can drop from any Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 					["timeline"] = { "removed 4.0.3" },
 				}),
-				i(12840, {	-- Minion's Scourgestone
+				i(12840, {	-- Minion's Scourgestone / Inert Minion's Scourgestone
 					["description"] = "Can drop from weak Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 					["timeline"] = { "removed 4.0.3" },
 				}),
@@ -2621,9 +2692,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						12387,	-- Large Vile Slime
 						1806,	-- Vile Slime
 					},
-					["groups"] = {
-						i(20769),	-- Disgusting Oozeling (PET!)
-					},
+					["sym"] = {{"select","itemID", 20769}},	-- Disgusting Oozeling (PET!)
 				}),
 				i(13357, {	-- Osseous Agitator
 					["description"] = "These only drop from skeletal mobs in Western Plaguelands while you have Vitreous Focuser in your inventory.",
@@ -2631,7 +2700,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 				}),
 				-- #endif
-				i(15771, {	-- Pattern: Living Breastplate
+				i(15771, {	-- Pattern: Living Breastplate (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1813,	-- Decaying Horror
 				}),
@@ -2640,7 +2709,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 1836,	-- Scarlet Cavalier
 				}),
 				-- #endif
-				i(9296, {	-- Recipe: Gift of Arthas
+				i(9296, {	-- Recipe: Gift of Arthas (RECIPE!)
 					-- #if AFTER CATA
 					["cr"] = 1783,	-- Skeletal Flayer
 					-- #else
@@ -2652,7 +2721,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" }, -- Maybe still drops, this tag will help with reporting if somebody does get a drop
 				}),
 				-- #if BEFORE 4.0.3
-				i(13496, {	-- Recipe: Greater Nature Protection Potion
+				i(13496, {	-- Recipe: Greater Nature Protection Potion (RECIPE!)
 					["crs"] = {
 						1813,	-- Decaying Horror
 						1812,	-- Rotting Behemoth

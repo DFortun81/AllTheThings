@@ -2516,7 +2516,7 @@ local TIER_ELEVEN_COMMON_GROUPS = {
 	i(57923),	-- Hermit's Lamp
 	i(58122),	-- Hillside Striders
 	i(68812),	-- Hornet-Sting Band
-	i(57921),	-- Incense Infused Cummerbund
+	i(57921),	-- Incense-Infused Cummerbund
 	i(58160),	-- Leggings of Charity
 	i(58140),	-- Leggings of Late Blooms
 	i(58127),	-- Leggings of Soothing Silence
@@ -2593,7 +2593,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["isRaid"] = true,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(5476, applyclassicphase(CATA_PHASE_ONE, {	-- Fish or Cut Bait: Stormwind
+				applyclassicphase(CATA_PHASE_ONE, ach(5476, {	-- Fish or Cut Bait: Stormwind
 					["timeline"] = { "added 4.2.0" },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
@@ -2615,7 +2615,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				})),
-				ach(5474, applyclassicphase(CATA_PHASE_ONE, {	-- Let's Do Lunch: Stormwind
+				applyclassicphase(CATA_PHASE_ONE, ach(5474, {	-- Let's Do Lunch: Stormwind
 					["timeline"] = { "added 4.2.0" },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
@@ -2638,21 +2638,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					378,	-- Rabbit (PET!)
 					379,	-- Squirrel (PET!)
 					675,	-- Stormwind Rat (PET!)
 				}},
-			})),
-			-- #endif
+			}),
 			n(FACTIONS, {
 				faction(72, {	-- Stormwind
 					-- #if AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Human_Female",
 					-- #else
-					["icon"] = asset("Achievement_Character_Human_Female"),
+					["icon"] = [[~_.asset("Achievement_Character_Human_Female")]],
 					-- #endif
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForCityFactionReputation,
@@ -2730,6 +2728,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 					}),
 				}),
+				prof(HERBALISM, {
+					n(5566, {	-- Tannysa <Herbalism Trainer>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 54.6, 83.6, STORMWIND_CITY },
+							-- #else
+							{ 44.8, 77.0, STORMWIND_CITY },
+							-- #endif
+						},
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = appendGroups(CLASSIC_HERBALISM,
+							-- #if AFTER CATA
+							CATA_HERBALISM
+							-- #else
+							{}
+							-- #endif
+						),
+					}),
+				}),
 				-- #if NOT ANYCLASSIC
 				prof(INSCRIPTION, {
 					n(30713, {	-- Catarina Stanford <Inscription Trainer>
@@ -2748,12 +2765,38 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(44582, {	-- Theresa Denman <Jewelcrafting Trainer>
 						["coord"] = { 63.6, 61.6, STORMWIND_CITY },
 						["timeline"] = { "added 4.0.1.12984" },
-						["races"] = HORDE_ONLY,
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							r(404740, {	-- Cataclysm Crushing
 								["timeline"] = { ADDED_10_0_7 },
 							}),
 						},
+					}),
+				}),
+				prof(LEATHERWORKING, {
+					n(5564, {	-- Simon Tanner <Expert Leatherworker>
+						["coords"] = {
+							-- #if BEFORE CATA
+							{ 67.2, 49.6, STORMWIND_CITY },
+							-- #else
+							{ 71.8, 62.8, STORMWIND_CITY },
+							-- #endif
+						},
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = CLASSIC_CATA_LEGION_LEATHERWORKING,
+					}),
+				}),
+				prof(MINING, {
+					n(5513, {	-- Gelman Stonehand <Mining Trainer>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 59.4, 37.6, STORMWIND_CITY },
+							-- #else
+							{ 51.0, 17.2, STORMWIND_CITY },
+							-- #endif
+						},
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = CLASSIC_CATA_MINING,
 					}),
 				}),
 			}),
@@ -2975,7 +3018,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.6, STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -3274,7 +3317,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 60120,	-- Burning Crusade: To Outland!
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 				}),
@@ -3282,7 +3325,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -3308,7 +3351,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 				}),
@@ -3590,15 +3633,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(6972, {	-- Fire Hardened Hauberk
 							["timeline"] = { "removed 4.0.3" },
-							-- #if ANYCLASSIC
-							["OnUpdate"] = [[function(t)
-								if _.Level >= 40 then
-									t.f = ]] .. PLATE .. [[;
-								else
-									t.f = ]] .. MAIL .. [[;
-								end
-							end]],
-							-- #endif
 						}),
 					},
 				}),
@@ -3755,15 +3789,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(6971, {	-- Fire Hardened Coif
 							["timeline"] = { "removed 4.0.3" },
-							-- #if ANYCLASSIC
-							["OnUpdate"] = [[function(t)
-								if _.Level >= 40 then
-									t.f = ]] .. PLATE .. [[;
-								else
-									t.f = ]] .. MAIL .. [[;
-								end
-							end]],
-							-- #endif
 						}),
 					},
 				}),
@@ -4065,7 +4090,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(32665, {	-- Learn To Ride
 					["description"] = "This quest is automatically granted to Pandaren upon reaching the specified level.",
-					["timeline"] = { "added 5.2.0" },
+					["timeline"] = { "added 5.2.0", REMOVED_10_1_5 },
 					["races"] = { PANDAREN_ALLIANCE },
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
@@ -4082,7 +4107,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 				}),
@@ -4306,7 +4331,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(60965, {	-- Mists of Pandaria: Onward to Adventure in Pandaria
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -4314,7 +4339,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(60125, {	-- Mists of Pandaria: To Pandaria!
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["timeline"] = { "added 7.3.5" },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -5559,7 +5584,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 				}),
@@ -5618,7 +5643,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 60096,	-- Wrath of the Lich King: To Northrend!
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 				}),
@@ -5626,7 +5651,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
 					["timeline"] = { "added 7.3.5" },
-					["lockCriteria"] = { 1, "lvl", 50 },
+					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -5951,7 +5976,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
 								}),
 							}),
-							n(-386, {	-- Trinkets
+							n(TRINKET, {
 								i(172849, {	-- Corrupted Aspirant's Badge
 									["cost"] = { { "c", 1792, 700 } },	-- 700x Honor
 								}),
@@ -6149,7 +6174,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = {
 						{"sub", "pvp_gear_base", CATA_TIER, SEASON_CATACLYSMIC, PVP_GLADIATOR },{"merge"},
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", NECK, FINGER, -386 },	-- Exclude Neck, Finger and Trinkets
+						{"exclude", "headerID", NECK, FINGER, TRINKET },	-- Exclude Neck, Finger and Trinkets
 					},
 				}),
 				-- 54661: Captain Dirgehammer <Cataclysmic Gladiator> (Cataclysmic?)
@@ -6208,13 +6233,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"merge"},
 						{"pop"},
 						{ "exclude", "headerID", WEAPONS, BACK },
-						{ "exclude", "filterID", NECK_F, FINGER_F, RELICS, TRINKET_F },
+						{ "exclude", "filterID", NECK_F, FINGER_F, RELICS_F, TRINKET_F },
 						{"postprocess"},
 					},
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 				}),
-				n(49877, {	-- Captain Lancy Revshon <Stormwind Quartermaster>
+				n(49877, {	-- Captain Lancy Revshon <Stormwind Quartermaster>
 					["coord"] = { 67.6, 72.8, STORMWIND_CITY },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
@@ -6422,9 +6447,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6325),	-- Recipe: Brilliant Smallfish
-						i(6330),	-- Recipe: Bristle Whisker Catfish
-						i(6368),	-- Recipe: Rainbow Fin Albacore
+						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
+						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 						i(6365),	-- Strong Fishing Pole
 					},
 				}),
@@ -6478,7 +6503,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(104324, {	-- Foot Ball (TOY!)
 							["timeline"] = { "added 5.4.0.17227" },
 						}),
-						applyholiday(CHILDRENS_WEEK, i(69895, {	-- Green Balloon Toy (TOY!)
+						applyevent(EVENTS.CHILDRENS_WEEK, i(69895, {	-- Green Balloon Toy (TOY!)
 							["timeline"] = { "added 4.1.0.13875" },
 						})),
 						i(137663, {	-- Soft Foam Sword (TOY!)
@@ -6499,7 +6524,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(45057, {	-- Wind-Up Train Wrecker Toy (TOY!)
 							["timeline"] = { "added 3.1.0.9626" },
 						}),
-						applyholiday(CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon Toy (TOY!)
+						applyevent(EVENTS.CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon Toy (TOY!)
 							["timeline"] = { "added 4.1.0.13875" },
 						})),
 					},
@@ -6509,8 +6534,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 7.3.5.25716" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(1304, {	-- Darian Singh <Fireworks Vendor>
@@ -6648,19 +6673,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(164942, {	-- Evelyn Thorn <Warlock Trainer>
 					["coord"] = { 79.4, 69.8, STORMWIND_CITY },
 					["timeline"] = { ADDED_9_0_1 },
 					["groups"] = {
-						i(189719, {	-- Barbed Collar of the Incubus
-							["timeline"] = { ADDED_9_2_0 },
+						i(189719, {	-- Tattered Collar of the Incubus
+							["timeline"] = { ADDED_9_2_0, REMOVED_10_0_5 },
 						}),
-						i(189720, {	-- Barbed Collar of the Succubus
-							["timeline"] = { ADDED_9_2_0 },
+						i(189720, {	-- Tattered Collar of the Succubus
+							["timeline"] = { ADDED_9_2_0, REMOVED_10_0_5 },
 						}),
 					},
 				}),
@@ -7017,21 +7042,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(2534),	-- Rondel
 					},
 				}),
-				n(110034, {	-- Historian Llore <The Timewalkers>
+				n(110034, {	-- Historian Llore <The Timewalkers>
 					["coord"] = { 84.6, 25.0, STORMWIND_CITY },
 					["timeline"] = { "added 7.1.0.22810" },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = WOW_ANNIVERSARY,
 					["sym"] = {
-						{"select", "headerID", FIFTEENTH_ANNIVERSARY },	-- Select WoW's 15th Anniversary
-						{"pop"},										-- Discard Header and aquire their children
-						{"where", "headerID", VENDORS },				-- Select Vendors
-						{"pop"},										-- Discard Header and aquire their children
-						{"where", "npcID", 158061},						-- Select Historian Ma'di
+						{"select", "npcID", 158061},					-- Select Historian Ma'di
 						{"pop"},										-- Discard Header and aquire their children
 					},
 				}),
-				n(50480, {	-- Isabel Jones <Jewelcrafting Design Vendor>
+				n(50480, {	-- Isabel Jones <Jewelcrafting Design Vendor>
 					["coord"] = { 63.8, 61.3, STORMWIND_CITY },
 					["timeline"] = { "added 4.0.3.13277" },
 					["sym"] = {{ "sub", "common_recipes_vendor", 50482 }},	-- Marith Lazuria <Jewelcrafting Supplies>
@@ -7080,35 +7100,35 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						chefsaward(3, i(65426)),	-- Recipe: Baked Rockfish
-						chefsaward(3, i(65427)),	-- Recipe: Basilisk Liverdog
-						chefsaward(3, i(65429)),	-- Recipe: Beer-Basted Crocolisk
-						chefsaward(3, i(65424)),	-- Recipe: Blackbelly Sushi
-						chefsaward(3, i(65411)),	-- Recipe: Broiled Mountain Trout
-						chefsaward(3, i(65431)),	-- Recipe: Chocolate Cookie
-						chefsaward(3, i(65430)),	-- Recipe: Crocolisk Au Gratin
-						chefsaward(3, i(65422)),	-- Recipe: Delicious Sagefish Tail
-						chefsaward(3, i(65408)),	-- Recipe: Feathered Lure
-						chefsaward(3, i(65423)),	-- Recipe: Fish Fry
-						chefsaward(5, i(65432)),	-- Recipe: Fortune Cookie
-						chefsaward(3, i(65428)),	-- Recipe: Grilled Dragon
-						chefsaward(3, i(65418)),	-- Recipe: Hearty Seafood Soup
-						chefsaward(3, i(65415)),	-- Recipe: Highland Spirits
-						chefsaward(3, i(65407)),	-- Recipe: Lavascale Fillet
-						chefsaward(3, i(65409)),	-- Recipe: Lavascale Minestrone
-						chefsaward(3, i(65412)),	-- Recipe: Lightly Fried Lurker
-						chefsaward(3, i(65416)),	-- Recipe: Lurker Lunch
-						chefsaward(3, i(65420)),	-- Recipe: Mushroom Sauce Mudfish
-						chefsaward(3, i(65417)),	-- Recipe: Pickled Guppy
-						chefsaward(3, i(65410)),	-- Recipe: Salted Eye
-						chefsaward(3, i(68688)),	-- Recipe: Scalding Murglesnout
-						chefsaward(3, i(65413)),	-- Recipe: Seasoned Crab
-						chefsaward(3, i(65421)),	-- Recipe: Severed Sagefish Head
-						chefsaward(3, i(65425)),	-- Recipe: Skewered Eel
-						chefsaward(5, i(65433)),	-- Recipe: South Island Iced Tea
-						chefsaward(3, i(65414)),	-- Recipe: Starfire Espresso
-						chefsaward(3, i(65419)),	-- Recipe: Tender Baked Turtle
-						chefsaward(3, i(65406)),	-- Recipe: Whitecrest Gumbo
+						chefsaward(3, i(65426)),	-- Recipe: Baked Rockfish (RECIPE!)
+						chefsaward(3, i(65427)),	-- Recipe: Basilisk Liverdog (RECIPE!)
+						chefsaward(3, i(65429)),	-- Recipe: Beer-Basted Crocolisk (RECIPE!)
+						chefsaward(3, i(65424)),	-- Recipe: Blackbelly Sushi (RECIPE!)
+						chefsaward(3, i(65411)),	-- Recipe: Broiled Mountain Trout (RECIPE!)
+						chefsaward(3, i(65431)),	-- Recipe: Chocolate Cookie (RECIPE!)
+						chefsaward(3, i(65430)),	-- Recipe: Crocolisk Au Gratin (RECIPE!)
+						chefsaward(3, i(65422)),	-- Recipe: Delicious Sagefish Tail (RECIPE!)
+						chefsaward(3, i(65408)),	-- Recipe: Feathered Lure (RECIPE!)
+						chefsaward(3, i(65423)),	-- Recipe: Fish Fry (RECIPE!)
+						chefsaward(5, i(65432)),	-- Recipe: Fortune Cookie (RECIPE!)
+						chefsaward(3, i(65428)),	-- Recipe: Grilled Dragon (RECIPE!)
+						chefsaward(3, i(65418)),	-- Recipe: Hearty Seafood Soup (RECIPE!)
+						chefsaward(3, i(65415)),	-- Recipe: Highland Spirits (RECIPE!)
+						chefsaward(3, i(65407)),	-- Recipe: Lavascale Fillet (RECIPE!)
+						chefsaward(3, i(65409)),	-- Recipe: Lavascale Minestrone (RECIPE!)
+						chefsaward(3, i(65412)),	-- Recipe: Lightly Fried Lurker (RECIPE!)
+						chefsaward(3, i(65416)),	-- Recipe: Lurker Lunch (RECIPE!)
+						chefsaward(3, i(65420)),	-- Recipe: Mushroom Sauce Mudfish (RECIPE!)
+						chefsaward(3, i(65417)),	-- Recipe: Pickled Guppy (RECIPE!)
+						chefsaward(3, i(65410)),	-- Recipe: Salted Eye (RECIPE!)
+						chefsaward(3, i(68688)),	-- Recipe: Scalding Murglesnout (RECIPE!)
+						chefsaward(3, i(65413)),	-- Recipe: Seasoned Crab (RECIPE!)
+						chefsaward(3, i(65421)),	-- Recipe: Severed Sagefish Head (RECIPE!)
+						chefsaward(3, i(65425)),	-- Recipe: Skewered Eel (RECIPE!)
+						chefsaward(5, i(65433)),	-- Recipe: South Island Iced Tea (RECIPE!)
+						chefsaward(3, i(65414)),	-- Recipe: Starfire Espresso (RECIPE!)
+						chefsaward(3, i(65419)),	-- Recipe: Tender Baked Turtle (RECIPE!)
+						chefsaward(3, i(65406)),	-- Recipe: Whitecrest Gumbo (RECIPE!)
 					},
 				}),
 				n(55684, {	-- Jordan Smith <Blacksmithing Trainer & Supplies>
@@ -7165,19 +7185,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(2889),	-- Recipe: Beer Basted Boar Ribs
-						i(3679),	-- Recipe: Blood Sausage
-						i(2698),	-- Recipe: Cooked Crab Claw
-						i(3681),	-- Recipe: Crocolisk Gumbo
-						i(3678),	-- Recipe: Crocolisk Steak
-						i(3682),	-- Recipe: Curiously Tasty Omelet
-						i(3683),	-- Recipe: Gooey Spider Cake
-						i(2697),	-- Recipe: Goretusk Liver Pie
-						i(3680),	-- Recipe: Murloc Fin Soup
-						i(2699),	-- Recipe: Redridge Goulash
-						i(2701),	-- Recipe: Seasoned Wolf Kabob
-						i(2700),	-- Recipe: Succulent Pork Ribs
-						i(728),		-- Recipe: Westfall Stew
+						i(2889),	-- Recipe: Beer Basted Boar Ribs (RECIPE!)
+						i(3679),	-- Recipe: Blood Sausage (RECIPE!)
+						i(2698),	-- Recipe: Cooked Crab Claw (RECIPE!)
+						i(3681),	-- Recipe: Crocolisk Gumbo (RECIPE!)
+						i(3678),	-- Recipe: Crocolisk Steak (RECIPE!)
+						i(3682),	-- Recipe: Curiously Tasty Omelet (RECIPE!)
+						i(3683),	-- Recipe: Gooey Spider Cake (RECIPE!)
+						i(2697),	-- Recipe: Goretusk Liver Pie (RECIPE!)
+						i(3680),	-- Recipe: Murloc Fin Soup (RECIPE!)
+						i(2699),	-- Recipe: Redridge Goulash (RECIPE!)
+						i(2701),	-- Recipe: Seasoned Wolf Kabob (RECIPE!)
+						i(2700),	-- Recipe: Succulent Pork Ribs (RECIPE!)
+						i(728),		-- Recipe: Westfall Stew (RECIPE!)
 					},
 				}),
 				applyclassicphase(WRATH_PHASE_FOUR, n(34084, {	-- Knight-Lieutenant Moonstrike <Northrend Armor Quartermaster> // Original S8 Vendor // Furious Gladiator: Season 8 Honor Gear
@@ -7216,7 +7236,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = {
 						{"sub", "pvp_gear_base", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR },{"merge"},
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", NECK, FINGER, -386 },	-- Exclude Neck, Finger and Trinkets
+						{"exclude", "headerID", NECK, FINGER, TRINKET },	-- Exclude Neck, Finger and Trinkets
 					},
 				}),
 				n(40606, {	-- Knight-Lieutenant T'Maire Sydes >S10< Elite Vendor
@@ -7291,7 +7311,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(12784, {	-- Lieutenant Jackspring <Legacy Weapon Quartermaster> [WRATH+] / Lieutenant Jackspring <Weapons Quartermaster>
 					-- #if AFTER WRATH
 					["coord"] = { 75.2, 67.2, STORMWIND_CITY },
-					["description"] = "Blizzard strikes again. In order to transmog these, you need to have the original title associated with the gear. However, you can still collect them even if you've never had the title. /n/nThese items will require a refresh/reload to register as collected, and it's highly recommended that you keep them in your bank/void storage for later. You'll likely randomly lose credit for them and have to re-equip them to remind the game they exist.",
+					["description"] = "Blizzard strikes again. In order to transmog these, you need to have the original title associated with the gear. However, you can still collect them even if you've never had the title.\n\nThese items will require a refresh/reload to register as collected, and it's highly recommended that you keep them in your bank/void storage for later. You'll likely randomly lose credit for them and have to re-equip them to remind the game they exist.",
 					-- #else
 					["coord"] = { 71.9, 55.6, STORMWIND_CITY },
 					-- #endif
@@ -7352,7 +7372,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = {
 						{"sub", "pvp_gear_base", CATA_TIER, SEASON_VICIOUS, PVP_GLADIATOR },{"merge"},	-- Vicious Gladiator: Season 9 Gladiator Gear
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", NECK, FINGER, -386 },	-- Exclude Neck, Finger and Trinkets
+						{"exclude", "headerID", NECK, FINGER, TRINKET },	-- Exclude Neck, Finger and Trinkets
 						{"finalize"},	-- Push the Set items to the finalized list.
 					},
 				}),
@@ -7423,7 +7443,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(8118, {	-- Lillian Singh
 					["coord"] = { 62.6, 70.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					-- #if BEFORE 10.1
 					["description"] = "This NPC is only available on July 4th (US) or September 30th (EU).",
+					-- #else
+					["description"] = "This NPC is only available on July 4th.",
+					-- #endif
 					["groups"] = {
 						i(8626),	-- Blue Sparkler
 						i(8625),	-- White Sparkler
@@ -7564,7 +7588,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(9301, {	-- Recipe: Elixir of Shadow Power
+						i(9301, {	-- Recipe: Elixir of Shadow Power (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -8218,10 +8242,10 @@ root(ROOTS.HiddenQuestTriggers, {
 });
 -- #endif
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	-- #if BEFORE WRATH
+-- #if BEFORE WRATH
+root(ROOTS.NeverImplemented, {
 	i(38579, {	-- Venomous Tome
 		["timeline"] = { "created 2.4.2", "added 3.0.1.8634" },
 	}),
-	-- #endif
-}));
+});
+-- #endif

@@ -659,6 +659,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		pvp(i(201792)),	-- Highland Drake: Embodiment of the Crimson Gladiator (DM!)
 		i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
 		header(HEADERS.Item, 194521, {	-- Cliffside Wylderdrake
+			i(196961),	-- Cliffside Wylderdrake: Armor (DM!)
 			i(196991),	-- Cliffside Wylderdrake: Black Horns (DM!)
 			i(196986),	-- Cliffside Wylderdrake: Black Hair (DM!)
 			i(197013),	-- Cliffside Wylderdrake: Black Scales (DM!)
@@ -709,16 +710,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		header(HEADERS.Item, 194521, sharedData({	-- Cliffside Wylderdrake
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
-			["u"] = NEVER_IMPLEMENTED,
+			["timeline"] = { "created 10.0.0.46247" },
 		}, {
-			i(196961),	-- Cliffside Wylderdrake: Armor
 			i(196984),	-- Cliffside Wylderdrake: Finned Jaw
 			i(196967),	-- Cliffside Wylderdrake: Gold and White Armor
-			i(196990),	-- Cliffside Wylderdrake: Helm
 			i(196993),	-- Cliffside Wylderdrake: Sleek Horns
 			i(197014),	-- Cliffside Wylderdrake: White Scales
 		})),
 		header(HEADERS.Item, 194705, {	-- Highland Drake
+			i(197099),	-- Highland Drake: Armor (DM!)
 			i(197117),	-- Highland Drake: Black Hair (DM!)
 			i(197142),	-- Highland Drake: Black Scales (DM!)
 			i(197153),	-- Highland Drake: Bladed Tail (DM!)
@@ -775,14 +775,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		header(HEADERS.Item, 194705, sharedData({	-- Highland Drake
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
-			["u"] = NEVER_IMPLEMENTED,
+			["timeline"] = { "created 10.0.0.46247" },
 		}, {
-			i(197099),	-- Highland Drake: Armor
 			i(197095),	-- Highland Drake: Gold and White Armor
 			i(197119),	-- Highland Drake: Helm
 			i(197146),	-- Highland Drake: White Scales
 		})),
 		header(HEADERS.Item, 194034, {	-- Renewed Proto-Drake
+			i(197357),	-- Renewed Proto-Drake: Armor (DM!)
 			i(197401),	-- Renewed Proto-Drake: Beaked Snout (DM!)
 			i(197392),	-- Renewed Proto-Drake: Black Scales (DM!)
 			i(197368),	-- Renewed Proto-Drake: Blue Hair (DM!)
@@ -836,17 +836,16 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		header(HEADERS.Item, 194034, sharedData({	-- Renewed Proto-Drake
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
-			["u"] = NEVER_IMPLEMENTED,
+			["timeline"] = { "created 10.0.0.46247" },
 		}, {
-			i(197357),	-- Renewed Proto-Drake: Armor
 			i(197349),	-- Renewed Proto-Drake: Gold and White Armor
 			i(197371),	-- Renewed Proto-Drake: Green Hair
 			i(197356),	-- Renewed Proto-Drake: Hairy Back
-			i(197373),	-- Renewed Proto-Drake: Helm
 			i(197354),	-- Renewed Proto-Drake: Horned Back
 			i(197393),	-- Renewed Proto-Drake: White Scales
 		})),
 		header(HEADERS.Item, 194549, {	-- Windborne Velocidrake
+			i(197588),	-- Windborne Velocidrake: Armor (DM!)
 			i(197620),	-- Windborne Velocidrake: Beaked Snout (DM!)
 			i(197597),	-- Windborne Velocidrake: Black Fur (DM!)
 			i(197611),	-- Windborne Velocidrake: Black Scales (DM!)
@@ -865,7 +864,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(197580),	-- Windborne Velocidrake: Gold and Red Armor (DM!)
 			i(197598),	-- Windborne Velocidrake: Gray Hair (DM!)
 			i(197608),	-- Windborne Velocidrake: Gray Horns (DM!)
-			i(197600),	-- Windborne Velocidrake: Helm
 			i(197619),	-- Windborne Velocidrake: Hooked Snout (DM!)
 			i(197596),	-- Windborne Velocidrake: Horned Jaw (DM!)
 			i(197589),	-- Windborne Velocidrake: Large Head Fin (DM!)
@@ -889,9 +887,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		header(HEADERS.Item, 194549, sharedData({	-- Windborne Velocidrake
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
-			["u"] = NEVER_IMPLEMENTED,
+			["timeline"] = { "created 10.0.0.46247" },
 		}, {
-			i(197588),	-- Windborne Velocidrake: Armor
 			i(197621),	-- Windborne Velocidrake: Exposed Finned Tail
 			i(197616),	-- Windborne Velocidrake: White Scales
 			i(197582),	-- Windborne Velocidrake: White and Pink Armor
@@ -936,10 +933,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 	})),
 	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
-		i(205876),	-- Highland Drake: Embodiment of the Hellforged (DM!)
+		i(205876),	-- Highland Drake: Embodiment of the Hellforged (DM!) [Mythic]
+		i(206955),	-- Highland Drake: Embodiment of the Hellforged (DM!) [LFR, Normal, Heroic]
 		pvp(i(205865)),	-- Winding Slitherdrake: Embodiment of the Obsidian Gladiator (DM!)
 		header(HEADERS.Item, 194521, {	-- Cliffside Wylderdrake
 			i(196965),	-- Cliffside Wylderdrake: Bronze and Teal Armor (DM!)
+			i(196990),	-- Cliffside Wylderdrake: Helm (DM!)
 			i(196978),	-- Cliffside Wylderdrake: Small Head Spikes (DM!)
 			i(197021),	-- Cliffside Wylderdrake: Spiked Club Tail (DM!)
 			i(196997),	-- Cliffside Wylderdrake: Split Horns (DM!)
@@ -955,23 +954,24 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(197348),	-- Renewed Proto-Drake: Black and Red Armor (DM!)
 			i(197353),	-- Renewed Proto-Drake: Bronze and Pink Armor (DM!)
 			i(202277),	-- Renewed Proto-Drake: Bruiser Horns (DM!)
+			i(197373),	-- Renewed Proto-Drake: Helm (DM!)
 			i(202275),	-- Renewed Proto-Drake: Plated Jaw (DM!)
 			i(202280),	-- Renewed Proto-Drake: Pronged Tail (DM!)
 			i(197364),	-- Renewed Proto-Drake: Short Spiked Crest (DM!)
 		}),
 		header(HEADERS.Item, 194549, {	-- Windborne Velocidrake
 			i(197577),	-- Windborne Velocidrake: Bronze and Green Armor (DM!)
+			i(197600),	-- Windborne Velocidrake: Helm (DM!)
 		}),
 		header(HEADERS.Item, 204361, {	-- Winding Slitherdrake
+			i(203305),	-- Winding Slitherdrake: Armor (DM!)
 			i(203338),	-- Winding Slitherdrake: Antler Horns (DM!)
-			i(203322),	-- Winding Slitherdrake: Blonde Hair (DM!)
 			i(203300),	-- Winding Slitherdrake: Blue and Silver Armor (DM!)
 			i(203350),	-- Winding Slitherdrake: Blue Scales (DM!)
 			i(203351),	-- Winding Slitherdrake: Bronze Scales (DM!)
 			i(203323),	-- Winding Slitherdrake: Brown Hair (DM!)
 			i(203312),	-- Winding Slitherdrake: Cluster Chin Horn (DM!)
 			i(203331),	-- Winding Slitherdrake: Cluster Horns (DM!)
-			i(203340),	-- Winding Slitherdrake: Cluster Jaw Horns
 			i(203321),	-- Winding Slitherdrake: Curled Cheek Horn (DM!)
 			i(203334),	-- Winding Slitherdrake: Curled Horns (DM!)
 			i(203346),	-- Winding Slitherdrake: Curled Nose (DM!)
@@ -987,8 +987,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(203362),	-- Winding Slitherdrake: Hairy Tail (DM!)
 			i(203365),	-- Winding Slitherdrake: Hairy Throat (DM!)
 			i(205341),	-- Winding Slitherdrake: Heavy Scales (DM!)
+			i(203326),	-- Winding Slitherdrake: Helm (DM!)
 			i(203339),	-- Winding Slitherdrake: Impaler Horns (DM!)
 			i(203316),	-- Winding Slitherdrake: Large Finned Crest (DM!)
+			i(203363),	-- Winding Slitherdrake: Large Finned Throat (DM!)
 			i(203347),	-- Winding Slitherdrake: Large Spiked Nose (DM!)
 			i(203309),	-- Winding Slitherdrake: Long Chin Horn (DM!)
 			i(203341),	-- Winding Slitherdrake: Long Jaw Horns (DM!)
@@ -1011,18 +1013,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		header(HEADERS.Item, 204361, sharedData({	-- Winding Slitherdrake
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
-			["u"] = NEVER_IMPLEMENTED,
+			["timeline"] = { "created 10.1.0.49407" },
 		}, {
-			i(203305),	-- Winding Slitherdrake: Armor
-			i(203349),	-- Winding Slitherdrake: Curved Nose Horn
+			i(203340),	-- Winding Slitherdrake: Cluster Jaw Horns
 			i(203319),	-- Winding Slitherdrake: Finned Cheek
 			i(203311),	-- Winding Slitherdrake: Hairy Chin
 			i(203343),	-- Winding Slitherdrake: Hairy Jaw
 			i(203329),	-- Winding Slitherdrake: Heavy Horns
-			i(203326),	-- Winding Slitherdrake: Helm
 			i(203306),	-- Winding Slitherdrake: Horned Brow
 			i(203360),	-- Winding Slitherdrake: Large Finned Tail
-			i(203363),	-- Winding Slitherdrake: Large Finned Throat
 			i(203301),	-- Winding Slitherdrake: Light Blue and Copper Armor
 			i(203336),	-- Winding Slitherdrake: Paired Horns
 			i(203302),	-- Winding Slitherdrake: Purple and Silver Armor
@@ -1039,8 +1038,23 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		})),
 	})),
 	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {
+		header(HEADERS.Item, 194521, {	-- Cliffside Wylderdrake
+			i(208102),	-- Cliffside Wylderdrake: Visage of the Infinite (DM!)
+		}),
+		header(HEADERS.Item, 194705, {	-- Highland Drake
+			i(208103),	-- Highland Drake: Visage of the Infinite (DM!)
+		}),
+		header(HEADERS.Item, 194034, {	-- Renewed Proto-Drake
+			i(208104),	-- Renewed Proto-Drake: Visage of the Infinite (DM!)
+		}),
 		header(HEADERS.Item, 194549, {	-- Windborne Velocidrake
+			i(208105),	-- Windborne Velocidrake: Visage of the Infinite (DM!)
 			i(197615),	-- Windborne Velocidrake: Teal Scales (DM!)
+		}),
+		header(HEADERS.Item, 204361, {	-- Winding Slitherdrake
+			i(208106),	-- Winding Slitherdrake: Visage of the Infinite (DM!)
+			i(203322),	-- Winding Slitherdrake: Blonde Hair (DM!)
+			i(203349),	-- Winding Slitherdrake: Curved Nose Horn (DM!)
 		}),
 	})),
 })));

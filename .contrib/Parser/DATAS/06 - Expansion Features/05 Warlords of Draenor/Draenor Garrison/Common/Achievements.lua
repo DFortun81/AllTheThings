@@ -20,17 +20,21 @@ root(ROOTS.ExpansionFeatures,
 					["races"] = HORDE_ONLY,
 				})),
 				ach(9928, {	-- Don't Call Me Junior (A)
+					["sym"] = {{"meta_achievement",
+						9825,	-- Master Relic Hunter (A)
+					}},
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						follower(465),	-- Harrison Jones
-						crit(1),	-- Master Relic Hunter
 					},
 				}),
 				ach(9901, {	-- Don't Call Me Junior (H)
+					["sym"] = {{"meta_achievement",
+						9836,	-- Master Relic Hunter (H)
+					}},
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						follower(465),	-- Harrison Jones
-						crit(1),	-- Master Relic Hunter
 					},
 				}),
 				petbattle(ach(9264)),	-- Draenor Pet Brawler
@@ -49,84 +53,36 @@ root(ROOTS.ExpansionFeatures,
 						ach(9110),	-- Following Up
 					},
 				}),
-				ach(10015, sharedDataSelf({	-- Full Discography (A)
+				ach(9828, {	-- Ten Hit Tunes (Alliance) (10)
+					["sym"] = {{ "achievement_criteria" }},
 					["races"] = ALLIANCE_ONLY,
-				},{
-					crit(1),	-- The Burning Legion (Black Temple - Illidan Stormrage)
-					crit(2),	-- Wrath of the Lich King (Naxxramas - Kel'Thuzad)
-					crit(3),	-- Legends of Azeroth (Blackwind Descent - Nefarian)
-					crit(4),	-- The Shattering (Dragon Soul - Deathwing)
-					crit(5),	-- Heart of Pandaria (Terrace of Endless Spring - Sha of Fear)
-					crit(6),	-- A Siege of Worlds (Blackrock Foundry - Blackhand)
-					crit(7),	-- Stormwind (Garrison quest reward - Bringing the Bass)
-					crit(8),	-- High Seas (Krasarang Wilds - Proveditor Grantley - 500 Domination points)
-					crit(9),	-- Ironforge (Garrison quest reward - Bringing the Bass)
-					crit(10),	-- Cold Mountain (Fishing - Ironforge)
-					crit(11),	-- Night Song (Garrison quest reward - Bringing the Bass)
-					crit(12),	-- Gnomeregan (Garrison quest reward - Bringing the Bass)
-					crit(13),	-- Tinkertown (Garrison quest reward - Bringing the Bass)
-					crit(14),	-- Exodar (Garrison quest reward - Bringing the Bass)
-					crit(15),	-- Curse of the Worgen (Garrison quest reward - Bringing the Bass)
-					crit(16),	-- Angelic (The Cape of Stranglethorn, Stranglethorn Vale - Arena Treasure Chest)
-					crit(17),	-- Ghost (Duskwood - Forlorn Composer)
-					crit(18),	-- Mountains (Winterspring - Frozen Supplies)
-					crit(19),	-- Magic (Ashenvale - Lost Sentinel's Pouch)
-					crit(20),	-- The Black Temple (Shadowmoon Valley - Warden's Scroll Case)
-					crit(21),	-- Invincible (Icecrown Citadel - The Lich King)
-					crit(22),	-- Karazhan Opera House (Karazhan - The Big Bad Wolf, Romulo, The Crone, Julianne)
-					crit(23),	-- The Argent Tournament (Argent Tourament - Faction Vendors)
-					crit(24),	-- Lament of the Highborne (Undercity - Sylvanas' Strongbox)
-					crit(25),	-- Faerie Dragon (Tirisfal Glades - Faerie Dragon Nest)
-					crit(26),	-- Totems of the Grizzlemaw (Grizzly Hills - Remington Brode)
-					crit(27),	-- Mountains of Thunder (Halls of Lighting - Loken)
-					crit(28),	-- Darkmoon Carousel (Darkmoon Island - Chester - 90 Darkmoon Prize Tickets)
-					crit(29),	-- Shalandis Isle (Darnassus - High Priestess' Reliquary)
-					crit(30),	-- Way of the Monk (Garrison quest reward - Bringing the Bass)
-					crit(31),	-- Song of Liu Lang (Vale of Enternal Blossoms - Tan Shin Tiao - 100 gold)
-					ach(9912, {	-- Azeroth's Top Twenty Tunes (Alliance) (20)
+				}),
+				ach(9912, {	-- Azeroth's Top Twenty Tunes (Alliance) (20)
+					["sym"] = {{ "achievement_criteria" }},
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
 						i(122700),	-- Portable Audiophone (TOY!)
-					}),
-					ach(9828),	-- Ten Hit Tunes (Alliance) (10)
-				})),
-				ach(10016, sharedDataSelf({	-- Full Discography (H)
+					},
+				}),
+				ach(10015, {	-- Full Discography (A)
+					["sym"] = {{ "achievement_criteria" }},
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(9897, {	-- Ten Hit Tunes (Horde) (10)
+					["sym"] = {{ "achievement_criteria" }},
 					["races"] = HORDE_ONLY,
-				},{
-					crit(1),	-- The Burning Legion (Black Temple - Illidan Stormrage)
-					crit(2),	-- Wrath of the Lich King (Naxxramas - Kel'Thuzad)
-					crit(3),	-- Legends of Azeroth (Blackwind Descent - Nefarian)
-					crit(4),	-- The Shattering (Dragon Soul - Deathwing)
-					crit(5),	-- Heart of Pandaria (Terrace of Endless Spring - Sha of Fear)
-					crit(6),	-- A Siege of Worlds (Blackrock Foundry - Blackhand)
-					crit(7),	-- Orgrimmar (Garrison quest reward - Bringing the Bass)
-					crit(8),	-- War March (Krasarang Wilds - Ongrom Black Tooth - 500 Lion's Landing Commissions)
-					crit(9),	-- Thunder Bluff (Garrison quest reward - Bringing the Bass)
-					crit(10),	-- Mulgore Plains (Fishing - Thunder Bluff)
-					crit(11),	-- Undercity (Garrison quest reward - Bringing the Bass)
-					crit(12),	-- Zul'Gurub Voo Doo (Garrison quest reward - Bringing the Bass)
-					crit(13),	-- The Zandalari (Garrison quest reward - Bringing the Bass)
-					crit(14),	-- Silvermoon (Garrison quest reward - Bringing the Bass)
-					crit(15),	-- Rescue the Warchief (Garrison quest reward - Bringing the Bass)
-					crit(16),	-- Angelic (The Cape of Stranglethorn, Stranglethorn Vale - Arena Treasure Chest)
-					crit(17),	-- Ghost (Duskwood - Forlorn Composer)
-					crit(18),	-- Mountains (Winterspring - Frozen Supplies)
-					crit(19),	-- Magic (Ashenvale - Lost Sentinel's Pouch)
-					crit(20),	-- The Black Temple (Shadowmoon Valley - Warden's Scroll Case)
-					crit(21),	-- Invincible (Icecrown Citadel - The Lich King)
-					crit(22),	-- Karazhan Opera House (Karazhan - The Big Bad Wolf, Romulo, The Crone, Julianne)
-					crit(23),	-- The Argent Tournament (Argent Tourament - Faction Vendors)
-					crit(24),	-- Lament of the Highborne (Undercity - Sylvanas' Strongbox)
-					crit(25),	-- Faerie Dragon (Tirisfal Glades - Faerie Dragon Nest)
-					crit(26),	-- Totems of the Grizzlemaw (Grizzly Hills - Remington Brode)
-					crit(27),	-- Mountains of Thunder (Halls of Lighting - Loken)
-					crit(28),	-- Darkmoon Carousel (Darkmoon Island - Chester - 90 Darkmoon Prize Tickets)
-					crit(29),	-- Shalandis Isle (Darnassus - High Priestess' Reliquary)
-					crit(30),	-- Way of the Monk (Garrison quest reward - Bringing the Bass)
-					crit(31),	-- Song of Liu Lang (Vale of Enternal Blossoms - Tan Shin Tiao - 100 gold)
-					ach(9914, {	-- Azeroth's Top Twenty Tunes (Horde) (20)
+				}),
+				ach(9914, {	-- Azeroth's Top Twenty Tunes (Horde) (20)
+					["sym"] = {{ "achievement_criteria" }},
+					["races"] = HORDE_ONLY,
+					["groups"] = {
 						i(122700),	-- Portable Audiophone (TOY!)
-					}),
-					ach(9897),	-- Ten Hit Tunes (Horde) (10)
-				})),
+					},
+				}),
+				ach(10016, {	-- Full Discography (H)
+					["sym"] = {{ "achievement_criteria" }},
+					["races"] = HORDE_ONLY,
+				}),
 				ach(9094, {	-- Garrison Architect
 					title(260),		-- Architect
 					crit(1),		-- Draftsman
@@ -239,6 +195,34 @@ root(ROOTS.ExpansionFeatures,
 				ach(9098, {	-- Movin' On Up (Lvl 3)
 					ach(9099),		-- Time for an Upgrade (Lvl 2)
 				}),
+				a(ach(9564, {	-- Securing Draenor [A]
+					crit(1),		-- Assault on the Iron Siegeworks
+					crit(2),		-- Assault on Stonefury Cliffs
+					crit(3),		-- Assault on Magnarok
+					crit(4),		-- Assault on the Pit
+					crit(5),		-- Assault on the Everbloom Wilds
+					crit(6),		-- Assault on the Broken Precipice
+					crit(7),		-- Assault on Mok'gol Watchpost
+					crit(8),		-- Assault on Socrethar's Rise
+					crit(9),		-- Assault on Darktide Roost
+					crit(10),		-- Assault on Skettis
+					crit(11),		-- Assault on Pillars of Fate
+					crit(12),		-- Assault on Shattrath Harbor
+				})),
+				h(ach(9562, {	-- Securing Draenor [H]
+					crit(1),		-- Assault on the Iron Siegeworks
+					crit(2),		-- Assault on Stonefury Cliffs
+					crit(3),		-- Assault on Magnarok
+					crit(4),		-- Assault on the Pit
+					crit(5),		-- Assault on the Everbloom Wilds
+					crit(6),		-- Assault on the Broken Precipice
+					crit(7),		-- Assault on Shattrath Harbor
+					crit(8),		-- Assault on Mok'gol Watchpost
+					crit(9),		-- Assault on Socrethar's Rise
+					crit(10),		-- Assault on Darktide Roost
+					crit(11),		-- Assault on Pillars of Fate
+					crit(12),		-- Assault on Skettis
+				})),
 				ach(8933),		-- Staying Regular
 				ach(9491, {	-- The Garrison Campaign
 					["races"] = ALLIANCE_ONLY,

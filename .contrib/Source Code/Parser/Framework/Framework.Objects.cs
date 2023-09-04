@@ -54,7 +54,7 @@ namespace ATT
             /// <summary>
             /// All of the Quests that are in the database. This is solely used to add information to breadcrumb quests.
             /// </summary>
-            public static IDictionary<long, Dictionary<string, object>> AllQuests { get; } = new Dictionary<long, Dictionary<string, object>>();
+            public static IDictionary<long, IDictionary<string, object>> AllQuests { get; } = new Dictionary<long, IDictionary<string, object>>();
 
             /// <summary>
             /// All of the Recipes (Name,RecipeID) that are in the database, keyed by required skill
@@ -65,7 +65,7 @@ namespace ATT
             /// All of the Merged Objects (non-Items) that are in the database. This is used to ensure that various information is synced across all Sources of a given object as necessary
             /// Stored by key -> key-value -> object
             /// </summary>
-            public static IDictionary<string, Dictionary<object, Dictionary<string, object>>> MergedObjects { get; } = new Dictionary<string, Dictionary<object, Dictionary<string, object>>>();
+            public static IDictionary<string, Dictionary<object, IDictionary<string, object>>> MergedObjects { get; } = new Dictionary<string, Dictionary<object, IDictionary<string, object>>>();
 
             /// <summary>
             /// The keys which should be merged based on a given merge object key
@@ -81,7 +81,7 @@ namespace ATT
             /// <summary>
             /// Allows capturing various objects which should be merged-into the sub-content of another object
             /// </summary>
-            public static IDictionary<string, Dictionary<decimal, List<Dictionary<string, object>>>> PostProcessMergeIntos { get; } = new Dictionary<string, Dictionary<decimal, List<Dictionary<string, object>>>>();
+            public static IDictionary<string, Dictionary<decimal, List<IDictionary<string, object>>>> PostProcessMergeIntos { get; } = new Dictionary<string, Dictionary<decimal, List<IDictionary<string, object>>>>();
 
             /// <summary>
             /// Used to track what actual key/keyValues were used to merge data
@@ -253,11 +253,7 @@ namespace ATT
                             case 11:                // 11/12/13 (Bear / Cat Claw) - These do not exist?
                             case 12:                // Gonna just classify as Fist Weapon.
                             case 13: return Filters.FistWeapon;
-#if RETAIL
                             case 14: return Filters.Cosmetic;           // Many equippable white items with no restriction post 10.0.5... are they all learnable?
-#else
-                            case 14: return Filters.Miscellaneous;      // Miscellaneous (not seeing anything in this filter?)
-#endif
                             case 15: return Filters.Dagger;
                             case 16: return Filters.Thrown;            // Thrown
                             case 17: return Filters.Polearm;            // Spear (not seeing anything in this filter, so converting to Polearm instead?)
@@ -435,7 +431,7 @@ namespace ATT
             /// Merges dictionary data based on all keys from the common storage into the Source object
             /// </summary>
             /// <param name="entry"></param>
-            internal static void Merge(Dictionary<string, object> data)
+            internal static void Merge(IDictionary<string, object> data)
             {
                 foreach (string key in MergeObjectFields.Keys)
                     Merge(key, data);
@@ -446,7 +442,7 @@ namespace ATT
             /// </summary>
             /// <param name="v"></param>
             /// <param name="data"></param>
-            internal static void Merge(string key, Dictionary<string, object> data)
+            internal static void Merge(string key, IDictionary<string, object> data)
             {
                 // only bother creating a merge container if the data contains a merging key
                 if (data.ContainsAnyKey(MergeObjectFields[key]))
@@ -455,14 +451,14 @@ namespace ATT
                     if (data.TryGetValue(key, out object keyValue))
                     {
                         // get the container for objects of this key
-                        if (!MergedObjects.TryGetValue(key, out Dictionary<object, Dictionary<string, object>> typeObjects))
+                        if (!MergedObjects.TryGetValue(key, out Dictionary<object, IDictionary<string, object>> typeObjects))
                         {
-                            typeObjects = new Dictionary<object, Dictionary<string, object>>();
+                            typeObjects = new Dictionary<object, IDictionary<string, object>>();
                             MergedObjects.Add(key, typeObjects);
                         }
 
                         // get the specific merged object
-                        if (!typeObjects.TryGetValue(keyValue, out Dictionary<string, object> merged))
+                        if (!typeObjects.TryGetValue(keyValue, out IDictionary<string, object> merged))
                         {
                             merged = new Dictionary<string, object>();
                             typeObjects.Add(keyValue, merged);
@@ -483,7 +479,7 @@ namespace ATT
             /// Merges dictionary data based on all keys from the common storage into the Source object
             /// </summary>
             /// <param name="entry"></param>
-            internal static void MergeInto(Dictionary<string, object> data)
+            internal static void MergeInto(IDictionary<string, object> data)
             {
                 foreach (string key in MergeObjectFields.Keys)
                     MergeInto(key, data);
@@ -494,16 +490,16 @@ namespace ATT
             /// </summary>
             /// <param name="v"></param>
             /// <param name="data"></param>
-            internal static void MergeInto(string key, Dictionary<string, object> data)
+            internal static void MergeInto(string key, IDictionary<string, object> data)
             {
                 // does this data contain the key?
                 if (data.TryGetValue(key, out object keyValue))
                 {
                     // get the container for objects of this key
-                    if (MergedObjects.TryGetValue(key, out Dictionary<object, Dictionary<string, object>> typeObjects))
+                    if (MergedObjects.TryGetValue(key, out Dictionary<object, IDictionary<string, object>> typeObjects))
                     {
                         // get the specific merged object
-                        if (typeObjects.TryGetValue(keyValue, out Dictionary<string, object> merged))
+                        if (typeObjects.TryGetValue(keyValue, out IDictionary<string, object> merged))
                         {
                             // merge the allowed fields by the key into the data object
                             foreach (string field in MergeObjectFields[key])
@@ -520,16 +516,16 @@ namespace ATT
             /// <param name="key"></param>
             /// <param name="keyValue"></param>
             /// <param name="data"></param>
-            internal static void PostProcessMerge(string key, decimal keyValue, Dictionary<string, object> data)
+            internal static void PostProcessMerge(string key, decimal keyValue, IDictionary<string, object> data)
             {
-                if (!PostProcessMergeIntos.TryGetValue(key, out Dictionary<decimal, List<Dictionary<string, object>>> typeObjects))
-                    PostProcessMergeIntos[key] = typeObjects = new Dictionary<decimal, List<Dictionary<string, object>>>();
+                if (!PostProcessMergeIntos.TryGetValue(key, out Dictionary<decimal, List<IDictionary<string, object>>> typeObjects))
+                    PostProcessMergeIntos[key] = typeObjects = new Dictionary<decimal, List<IDictionary<string, object>>>();
 
-                if (!typeObjects.TryGetValue(keyValue, out List<Dictionary<string, object>> mergeObjects))
-                    typeObjects[keyValue] = mergeObjects = new List<Dictionary<string, object>>();
+                if (!typeObjects.TryGetValue(keyValue, out List<IDictionary<string, object>> mergeObjects))
+                    typeObjects[keyValue] = mergeObjects = new List<IDictionary<string, object>>();
 
                 //LogDebug($"Post Process Merge Added: {key}:{keyValue}", data);
-                // Processing on group shappens IN REVERSE so if we are adding content to be post-merged during that pass
+                // Processing on groups happens IN REVERSE so if we are adding content to be post-merged during that pass
                 // we will order them backwards as well so that when they are merged into the respective groups they are ordered as originally Sourced
                 mergeObjects.Insert(0, data);
             }
@@ -539,7 +535,7 @@ namespace ATT
             /// </summary>
             /// <param name="v"></param>
             /// <param name="data"></param>
-            internal static void PostProcessMergeInto(Dictionary<string, object> data)
+            internal static void PostProcessMergeInto(IDictionary<string, object> data)
             {
                 // questID : { 123, [ obj1, obj2, obj3 ] }
                 // questID:123
@@ -562,13 +558,13 @@ namespace ATT
                             var typeObjects = mergeKvp.Value;
                             //LogDebug($"Post Process MergeInto Matched: {key}:{keyValue}");
                             // get the container for objects of this key
-                            if (typeObjects.TryGetValue(keyValue, out List<Dictionary<string, object>> mergeObjects))
+                            if (typeObjects.TryGetValue(keyValue, out List<IDictionary<string, object>> mergeObjects))
                             {
                                 // track the data which is actually being merged into another group
                                 TrackPostProcessMergeKey(key, keyValue);
 
                                 // merge the objects into the data object
-                                foreach (Dictionary<string, object> mergeObject in mergeObjects)
+                                foreach (IDictionary<string, object> mergeObject in mergeObjects)
                                 {
                                     // copy the actual object when merging under another Source, since it may merge into multiple Sources
                                     Merge(data, "g", mergeObject);
@@ -594,7 +590,7 @@ namespace ATT
             {
                 foreach (var keyGroup in PostProcessMergedKeyValues)
                 {
-                    if (PostProcessMergeIntos.TryGetValue(keyGroup.Key, out Dictionary<decimal, List<Dictionary<string, object>>> keyValueDatas))
+                    if (PostProcessMergeIntos.TryGetValue(keyGroup.Key, out Dictionary<decimal, List<IDictionary<string, object>>> keyValueDatas))
                     {
                         foreach (var keyGroupValue in keyGroup.Value)
                         {
@@ -608,7 +604,7 @@ namespace ATT
                 {
                     foreach (var keyValueMergeSet in keyGroup.Value)
                     {
-                        LogDebug($"WARN: Failed to merge data which requires a Source: [{keyGroup.Key}]:[{keyValueMergeSet.Key}]");
+                        Log($"WARN: Failed to merge data which requires a Source: [{keyGroup.Key}]:[{keyValueMergeSet.Key}]", keyValueMergeSet.Value);
                     }
                 }
             }
@@ -619,7 +615,7 @@ namespace ATT
             /// </summary>
             /// <param name="data">The data dictionary.</param>
             /// <returns>The Filter ID. (Default: 0 if invalid, -1 if ignored.)</returns>
-            private static Filters CalculateFilter(Dictionary<string, object> data)
+            private static Filters CalculateFilter(IDictionary<string, object> data)
             {
                 // The presence of certain fields make calculating the Filter ID very easy.
                 if (data.ContainsKey("mountID")) return Filters.Mount;
@@ -655,7 +651,7 @@ namespace ATT
                 skillRecipes.Add(recipeID, recipeName);
             }
 
-            internal static bool FindRecipeForData(long requiredSkill, Dictionary<string, object> data, out long recipeID)
+            internal static bool FindRecipeForData(long requiredSkill, IDictionary<string, object> data, out long recipeID)
             {
                 // Expected data for a Recipe: ItemID & RecipeID
                 data.TryGetValue("itemID", out object itemID);
@@ -740,7 +736,7 @@ namespace ATT
             /// Assign the Filter ID for this data dictionary if a valid ID hasn't already been assigned.
             /// </summary>
             /// <param name="data">The data dictionary.</param>
-            public static void AssignFilterID(Dictionary<string, object> data)
+            public static void AssignFilterID(IDictionary<string, object> data)
             {
                 // If an object already has a filter ID assigned and the ID is valid, ignore it.
                 if (data.TryGetValue("f", out long f) && f > 0) return;
@@ -920,7 +916,9 @@ namespace ATT
                 {2830, 165},    // Dragon Isles Leatherworking [10.0.0]
 
                 // Lockpicking Skills
-                {633, 633 },
+                {633, 633},     // Lockpicking
+                {181, 633},     // Lockpicking
+                {242, 633},     // Lockpicking
 
                 // Mining Skills
                 {186, 186},     // Mining [7.3.5]
@@ -937,6 +935,7 @@ namespace ATT
 
                 // Runeforging [Deathknight only]
                 {960, 960},     // Runeforging
+                {776, 960},     // Runeforging
 
                 // Skinning Skills
                 {393, 393},     // Skinning [7.3.5]
@@ -967,8 +966,29 @@ namespace ATT
                 {2759, 197},    // Shadowlands Tailoring [9.0.1]
                 {2831, 197},    // Dragon Isles Tailoring [10.0.0]
 
-                // Tinkering [Mechagon]
-                {2720, 2720},   // Tinkering [8.2]
+                // Junkyard Tinkering [8.2.0]
+                {2720, 2720},   // Junkyard Tinkering
+
+                // Abominable Stitching [SL]
+                {2787, 2787},   // Abominable Stitching
+
+                // Ascension Crafting [SL]
+                {2791, 2791},   // Ascension Crafting
+
+                // Soul Cyphering [SL]
+                {2777, 2777},   // Soul Cyphering
+
+                // Stygia Crafting [9.0.5]
+                {2811, 2811},   // Stygia Crafting
+
+                // Protoform Synthesis [9.2.0]
+                {2819, 2819},   // Protoform Synthesis
+
+                // Tuskarr Fishing Gear [DF]
+                {2847, 2847},   // Tuskarr Fishing Gear
+
+                // Arcana Manipulation [DF]
+                {2821, 2821},   // Arcana Manipulation
             };
 
             /// <summary>
@@ -976,8 +996,11 @@ namespace ATT
             /// </summary>
             public static Dictionary<long, string> SKILLID_CONSTANTS = new Dictionary<long, string>()
             {
+                {2787, "ABOMINABLE_STITCHING"},
                 {171, "ALCHEMY"},
+                {2821, "ARCANA_MANIPULATION"},
                 {794, "ARCHAEOLOGY"},
+                {2791, "ASCENSION_CRAFTING"},
                 {164, "BLACKSMITHING"},
                 {185, "COOKING"},
                 {333, "ENCHANTING"},
@@ -991,16 +1014,22 @@ namespace ATT
                 {755, "JEWELCRAFTING"},
                 {2720, "JUNKYARD_TINKERING"},
                 {165, "LEATHERWORKING"},
+                {633, "LOCKPICKING"},
                 {186, "MINING"},
+                {2819, "PROTOFORM SYNTHESIS"},
+                {960, "RUNEFORGING"},
                 {393, "SKINNING"},
+                {2777, "SOUL_CYPHERING"},
+                {2811, "STYGIA_CRAFTING"},
                 {197, "TAILORING"},
+                {2847, "TUSKARR_FISHING_GEAR"},
             };
 
             /// <summary>
             /// Assign the Faction ID for this data dictionary if a valid ID hasn't already been assigned.
             /// </summary>
             /// <param name="data">The data dictionary.</param>
-            public static void AssignFactionID(Dictionary<string, object> data)
+            public static void AssignFactionID(IDictionary<string, object> data)
             {
                 // Calculate the faction ID. (0 is no faction)
                 if (data.TryGetValue("races", out object racesRef) && racesRef is List<object> races)
@@ -1031,11 +1060,11 @@ namespace ATT
             /// </summary>
             /// <param name="group">The group of objects potentially containing item data.</param>
             /// <param name="result">The result list to be exported.</param>
-            private static void ExportItems(List<object> group, List<Dictionary<string, object>> result)
+            private static void ExportItems(List<object> group, List<IDictionary<string, object>> result)
             {
                 foreach (var entry in group)
                 {
-                    if (entry is Dictionary<string, object> o)
+                    if (entry is IDictionary<string, object> o)
                     {
                         if (o.ContainsKey("itemID"))
                         {
@@ -1055,18 +1084,18 @@ namespace ATT
             public static void ExportDebug(string directory)
             {
                 // Export all of the Containers
-                File.WriteAllText(Path.Combine(directory, "Categories.lua"), ATT.Export.ExportRawLua(AllContainers).ToString());
+                File.WriteAllText(Path.Combine(directory, "Categories.lua"), ATT.Export.ExportRawLua(AllContainers).ToString(), Encoding.UTF8);
 
                 // Export as JSON!
-                File.WriteAllText(Path.Combine(directory, "Categories.json"), ToJSON(AllContainers));
+                File.WriteAllText(Path.Combine(directory, "Categories.json"), ToJSON(AllContainers), Encoding.UTF8);
 
                 // Cache the "Unsorted" list.
                 if (AllContainers.TryGetValue("Unsorted", out List<object> unsorted))
                 {
                     // Export all Unsorted items... in a sorted way.
-                    var sortedList = new List<Dictionary<string, object>>();
+                    var sortedList = new List<IDictionary<string, object>>();
                     ExportItems(unsorted, sortedList);
-                    sortedList.Sort(delegate (Dictionary<string, object> a, Dictionary<string, object> b)
+                    sortedList.Sort(delegate (IDictionary<string, object> a, IDictionary<string, object> b)
                     {
                         if (a.TryGetValue("name", out object nameRefA))
                         {
@@ -1104,7 +1133,7 @@ namespace ATT
                             else listOfItems.Add(itemNameBuilder.ToString());
                         }
                     }
-                    File.WriteAllText(Path.Combine(directory, "SortedItems.lua"), builder2.ToString());
+                    File.WriteAllText(Path.Combine(directory, "SortedItems.lua"), builder2.ToString(), Encoding.UTF8);
 
                     // Export the Binding Filtered Dictionary List.
                     builder2.Clear();
@@ -1135,10 +1164,10 @@ namespace ATT
                             builder2.AppendLine();
                         }
                     }
-                    File.WriteAllText(Path.Combine(directory, "SortedItemsByFilteredBinding.lua"), builder2.ToString());
+                    File.WriteAllText(Path.Combine(directory, "SortedItemsByFilteredBinding.lua"), builder2.ToString(), Encoding.UTF8);
 
                     // Export all Unsorted.
-                    File.WriteAllText(Path.Combine(directory, "Unsorted.lua"), ATT.Export.ExportRawLua(unsorted).ToString());
+                    File.WriteAllText(Path.Combine(directory, "Unsorted.lua"), ATT.Export.ExportRawLua(unsorted).ToString(), Encoding.UTF8);
                 }
 
                 // Load in the Locale File and Warn about Unused Header IDs.
@@ -1208,10 +1237,10 @@ namespace ATT
 
                 var filename = Path.Combine(directory, "Categories.lua");
                 var content = ATT.Export.ExportCompressedLuaCategories(AllContainerClones).ToString().Replace("\r\n", "\n").Trim();
-                if (!File.Exists(filename) || File.ReadAllText(filename).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content);
+                if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content, Encoding.UTF8);
             }
 
-            public static void ExportAutoLocale(string directory)
+            public static void ExportAutoLocale(string filename)
             {
                 var AllLocaleTypes = new SortedDictionary<string, SortedDictionary<long, object>>();
 
@@ -1224,46 +1253,49 @@ namespace ATT
                     }
                 }
 
-                var filename = Path.Combine(directory, "../locales", "en_auto.lua");
-                StringBuilder locale = new StringBuilder(10000);
-                locale.AppendLine("--   WARNING: This file is dynamically generated   --");
-                locale.AppendLine("local _, app = ...;");
-                locale.Append("local keys = ");
-                ATT.Export.AddTableNewLines = true;
-                locale.AppendLine(ATT.Export.ExportCompressedLua(AllLocaleTypes).ToString());
-                locale.AppendLine(@"
+                if (AllLocaleTypes.Any())
+                {
+                    StringBuilder locale = new StringBuilder(10000);
+                    locale.AppendLine("--   WARNING: This file is dynamically generated   --");
+                    locale.AppendLine("local appName, app = ...;");
+                    locale.Append("local keys = ");
+                    ATT.Export.AddTableNewLines = true;
+                    locale.AppendLine(ATT.Export.ExportCompressedLua(AllLocaleTypes).ToString());
+                    locale.AppendLine(@"
 local L = app.L;
 for k,t in pairs(keys) do
     L[k] = t;
 end");
 
-                string content = locale.ToString();
-                if (!File.Exists(filename) || File.ReadAllText(filename) != content) File.WriteAllText(filename, content);
+                    string content = locale.ToString();
+                    if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8) != content) File.WriteAllText(filename, content, Encoding.UTF8);
+                }
             }
 
             public static void ExportAutoItemSources(string directory)
             {
-                var sourcesDir = Path.Combine(directory, "DATAS", "00 - Item Database", "Source IDs");
-                var filename = Path.Combine(sourcesDir, "__auto-sources.lua");
-
-                foreach (string sourceFile in Directory.EnumerateFiles(sourcesDir, "*.lua"))
+                var sourcesDir = Path.Combine(directory, "00 - Item Database", "Source IDs");
+                if (Directory.Exists(sourcesDir))
                 {
-                    if (sourceFile != filename)
+                    var filename = Path.Combine(sourcesDir, "__auto-sources.lua");
+                    foreach (string sourceFile in Directory.EnumerateFiles(sourcesDir, "*.lua"))
                     {
-                        File.Delete(sourceFile);
-                        //File.Move(sourceFile, sourceFile + ".old");
+                        if (sourceFile != filename)
+                        {
+                            File.Delete(sourceFile);
+                        }
                     }
+
+                    StringBuilder data = new StringBuilder(10000);
+                    data.AppendLine("--   WARNING: This file is dynamically generated   --");
+                    data.Append("root(\"Items.SOURCES\",");
+                    ATT.Export.AddTableNewLines = true;
+                    data.AppendLine(ATT.Export.ExportCompressedLua(Items.AllItemSourceIDs).ToString());
+                    data.Append(");");
+
+                    string content = data.ToString();
+                    if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8) != content) File.WriteAllText(filename, content, Encoding.UTF8);
                 }
-
-                StringBuilder data = new StringBuilder(10000);
-                data.AppendLine("--   WARNING: This file is dynamically generated   --");
-                data.Append("root(\"Items.SOURCES\",");
-                ATT.Export.AddTableNewLines = true;
-                data.AppendLine(ATT.Export.ExportCompressedLua(Items.AllItemSourceIDs).ToString());
-                data.Append(");");
-
-                string content = data.ToString();
-                if (!File.Exists(filename) || File.ReadAllText(filename) != content) File.WriteAllText(filename, content);
             }
             #endregion
 
@@ -1272,8 +1304,8 @@ end");
             {
                 { -1, true },   // Zone Drops?
             };
-            private static Dictionary<long, Dictionary<string, object>> ITEM_DB = new Dictionary<long, Dictionary<string, object>>();
-            private static Dictionary<long, Dictionary<string, object>> NPC_DB = new Dictionary<long, Dictionary<string, object>>();
+            private static Dictionary<long, IDictionary<string, object>> ITEM_DB = new Dictionary<long, IDictionary<string, object>>();
+            private static Dictionary<long, IDictionary<string, object>> NPC_DB = new Dictionary<long, IDictionary<string, object>>();
 
             public static void ExportDB(string directory)
             {
@@ -1282,7 +1314,7 @@ end");
                 ExportDB(directory, "NPCDB", NPC_DB);
             }
 
-            public static void ExportDB(string directory, string name, Dictionary<long, Dictionary<string, object>> db)
+            public static void ExportDB(string directory, string name, Dictionary<long, IDictionary<string, object>> db)
             {
                 var builder = new StringBuilder("AllTheThings.").Append(name).Append("={");
                 var keys = db.Keys.ToList();
@@ -1313,18 +1345,18 @@ end");
                         if (entryName != null) builder.Append("\t-- ").Append(entryName);
                     }
                 }
-                File.WriteAllText(Path.Combine(directory, $"{name}.lua"), builder.AppendLine().Append("};").ToString());
+                File.WriteAllText(Path.Combine(directory, $"{name}.lua"), builder.AppendLine().Append("};").ToString(), Encoding.UTF8);
             }
 
             private static void ProcessDB(List<object> list)
             {
                 foreach (var o in list)
                 {
-                    ProcessDB(o as Dictionary<string, object>);
+                    ProcessDB(o as IDictionary<string, object>);
                 }
             }
 
-            private static void ProcessDB(Dictionary<string, object> data)
+            private static void ProcessDB(IDictionary<string, object> data)
             {
                 if (data == null) return;
                 if (data.TryGetValue("g", out object g)) ProcessDB(g as List<object>);
@@ -1335,10 +1367,10 @@ end");
                 if (data.TryGetValue("itemID", out g)) ProcessItemData(Convert.ToInt64(g), data);
             }
 
-            private static void ProcessItemData(long itemID, Dictionary<string, object> data)
+            private static void ProcessItemData(long itemID, IDictionary<string, object> data)
             {
                 // Acquire the current Item Data and add to it.
-                if (!ITEM_DB.TryGetValue(itemID, out Dictionary<string, object> itemData))
+                if (!ITEM_DB.TryGetValue(itemID, out IDictionary<string, object> itemData))
                 {
                     ITEM_DB[itemID] = itemData = new Dictionary<string, object>();
                 }
@@ -1356,6 +1388,7 @@ end");
                         case "coords":
                         case "sym":
                         case "f":
+                        case "filterForRWP":
                             itemData[pair.Key] = pair.Value;
                             break;
 
@@ -1400,7 +1433,7 @@ end");
                     }
                 }
             }
-            private static void ProcessNPCData(long npcID, Dictionary<string, object> data)
+            private static void ProcessNPCData(long npcID, IDictionary<string, object> data)
             {
                 // Do not include "Custom" NPC IDs. We use these for headers and most of these are going to be purged.
                 if (npcID < 1) return;
@@ -1409,7 +1442,7 @@ end");
                 if (BLACKLISTED_NPC_IDS.TryGetValue(npcID, out bool blacklisted) && blacklisted) return;
 
                 // Acquire the current NPC Data and add to it.
-                if (!NPC_DB.TryGetValue(npcID, out Dictionary<string, object> npcData))
+                if (!NPC_DB.TryGetValue(npcID, out IDictionary<string, object> npcData))
                 {
                     NPC_DB[npcID] = npcData = new Dictionary<string, object>();
                 }
@@ -1451,6 +1484,8 @@ end");
                         case "isRaid":
                         case "mapID":
                         case "races":
+                        case "zone-text-areaID":
+                        case "zone-text-areas":
                             npcData[pair.Key] = pair.Value;
                             break;
 
@@ -1488,6 +1523,7 @@ end");
                         case "b":
                         case "q":
                         case "f":
+                        case "filterForRWP":
                         case "s":
                         case "g":
                         case "collectible":
@@ -1514,7 +1550,7 @@ end");
             /// <param name="item">The item!</param>
             /// <param name="field">The field!</param>
             /// <param name="value">The value.</param>
-            public static void MergeIntegerArrayData(Dictionary<string, object> item, string field, object value)
+            public static void MergeIntegerArrayData(IDictionary<string, object> item, string field, object value)
             {
                 // Convert the data to a list of generic objects.
                 var newList = ConvertToList(item, field, value);
@@ -1593,8 +1629,8 @@ end");
                     }
                 }
 
-                // Sort the old list to ensure that the order is consistent, but not for titleIDs
-                if (field != "titleIDs")
+                // Sort the old list to ensure that the order is consistent, but not for titleIDs/difficulties
+                if (field != "titleIDs" && field != "difficulties")
                     oldList.Sort();
 
                 if (oldList.Count == 0)
@@ -1609,7 +1645,7 @@ end");
             /// <param name="item">The item!</param>
             /// <param name="field">The field!</param>
             /// <param name="value">The value.</param>
-            public static void MergeStringArrayData(Dictionary<string, object> item, string field, object value)
+            public static void MergeStringArrayData(IDictionary<string, object> item, string field, object value)
             {
                 // Convert the data to a list of generic objects.
                 var newList = ConvertToList(item, field, value);
@@ -1649,7 +1685,7 @@ end");
             /// <param name="item">The item dictionary to merge into.</param>
             /// <param name="field">The name of the field being merged.</param>
             /// <param name="value">The value of the merged field.</param>
-            public static void Merge(Dictionary<string, object> item, string field, object value)
+            public static void Merge(IDictionary<string, object> item, string field, object value)
             {
                 if (value is string v && v == IgnoredValue)
                     return;
@@ -1681,7 +1717,7 @@ end");
                             {
                                 Merge(groups, list);
                             }
-                            else if (value is Dictionary<string, object> data)
+                            else if (value is IDictionary<string, object> data)
                             {
                                 Merge(groups, data);
                             }
@@ -1716,6 +1752,7 @@ end");
                     case "ordered":
                     case "sort":
                     case "sourceIgnored":
+                    case "nomerge":
                         {
                             item[field] = Convert.ToBoolean(value);
                             break;
@@ -1754,6 +1791,7 @@ end");
 
                     // Decimal Data Type Fields (requires higher precision than float)
                     case "headerID":
+                    case "up":
                         {
                             if (value.TryConvert(out decimal vDecimal))
                             {
@@ -1761,7 +1799,8 @@ end");
                             }
                             else
                             {
-                                LogError($"Invalid Numeric Format for Merge - {field}:{value}");
+                                // In order to support _G, it was necessary.
+                                item[field] = value;
                             }
                             break;
                         }
@@ -1803,11 +1842,13 @@ end");
                     case "raceID":
                     case "conduitID":
                     case "f":
+                    case "filterForRWP":
                     case "u":
                     case "b":
                     case "rank":
                     case "ilvl":
                     case "q":
+                    case "e":
                     case "r":
                     case "isOffHand":
                     case "parentCategoryID":
@@ -1816,6 +1857,7 @@ end");
                     case "questIDA":
                     case "questIDH":
                     case "sqreq":
+                    case "zone-text-areaID":
                         {
                             try
                             {
@@ -1823,7 +1865,7 @@ end");
                             }
                             catch
                             {
-                                throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + ToJSON(value) + " within object: " + ToJSON(item));
+                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
                             }
                             break;
                         }
@@ -1838,7 +1880,7 @@ end");
                             }
                             catch
                             {
-                                throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + ToJSON(value) + " within object: " + ToJSON(item));
+                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
                             }
                             break;
                         }
@@ -1851,7 +1893,7 @@ end");
                             }
                             catch
                             {
-                                throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + ToJSON(value) + " within object: " + ToJSON(item));
+                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
                             }
                             break;
                         }
@@ -1864,7 +1906,7 @@ end");
                             }
                             catch
                             {
-                                throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + ToJSON(value) + " within object: " + ToJSON(item));
+                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
                             }
                             break;
                         }
@@ -1877,7 +1919,7 @@ end");
                             }
                             catch
                             {
-                                throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + ToJSON(value) + " within object: " + ToJSON(item));
+                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
                             }
                             break;
                         }
@@ -1894,6 +1936,7 @@ end");
                     case "qgs":
                     case "crs":
                     case "titleIDs":
+                    case "zone-text-areas":
                         {
                             MergeIntegerArrayData(item, field, value);
                             break;
@@ -1904,9 +1947,7 @@ end");
                         {
                             MergeIntegerArrayData(item, field, lvls);
                         }
-#if CRIEVE
-                        else item[field] = Convert.ToInt64(value);
-#endif
+                        else if (Program.PreProcessorTags.ContainsKey("CRIEVE")) item[field] = Convert.ToInt64(value);
                         break;
 
                     // Sub-Dictionary Data Type Fields (stored as Dictionary<int, int> for usability reasons)
@@ -1914,9 +1955,9 @@ end");
                     case "hqd":
                         {
                             // Convert an object type.
-                            if (value is Dictionary<string, object> data)
+                            if (value is IDictionary<string, object> data)
                             {
-                                if (!item.TryGetValue(field, out Dictionary<string, object> sourceData))
+                                if (!item.TryGetValue(field, out IDictionary<string, object> sourceData))
                                 {
                                     sourceData = new Dictionary<string, object>();
                                     item[field] = sourceData;
@@ -1928,6 +1969,7 @@ end");
 
                     // List of String Data Type Fields (stored as List<string> for usability reasons)
                     case "customCollect":
+                    case "sins":
                     case "timeline":
                         {
                             MergeStringArrayData(item, field, value);
@@ -1941,15 +1983,11 @@ end");
                             var newListOfLists = value as List<object>;
                             if (newListOfLists == null)
                             {
-                                Console.WriteLine("Ignoring 'sym' with improper format.");
-                                Console.WriteLine(ToJSON(value));
-                                Console.ReadLine();
+                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
                                 foreach (var sublist in newListOfLists)
                                 {
                                     if (sublist is List<object>) continue;
-                                    Console.WriteLine("Ignoring 'sym' with improper format.");
-                                    Console.WriteLine(ToJSON(value));
-                                    Console.ReadLine();
+                                    LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
                                 }
                             }
                             item[field] = newListOfLists;
@@ -1964,9 +2002,7 @@ end");
                         {
                             if (!(value is List<object> newList))
                             {
-                                Console.WriteLine($"Ignoring '{field}' with improper format.");
-                                Console.WriteLine(ToJSON(value));
-                                Console.ReadLine();
+                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
                                 return;
                             }
                             var newRep = new List<object>();
@@ -1992,9 +2028,7 @@ end");
                             // Convert the data to a list of generic objects.
                             if (!(value is List<object> newList))
                             {
-                                Console.WriteLine("Ignoring 'coord' with improper format.");
-                                Console.WriteLine(ToJSON(value));
-                                Console.ReadLine();
+                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
                                 return;
                             }
 
@@ -2016,9 +2050,7 @@ end");
                             }
                             catch
                             {
-                                Console.WriteLine("Ignoring 'coord' with improper format.");
-                                Console.WriteLine(ToJSON(value));
-                                Console.ReadLine();
+                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
                                 return;
                             }
 
@@ -2069,12 +2101,13 @@ end");
                             }
                             else
                             {
-                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}{Environment.NewLine}{ToJSON(item)}");
+                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
                             }
                             break;
                         }
 
                     // Functions
+                    case "OnInit":
                     case "OnClick":
                     case "OnUpdate":
                     case "OnTooltip":
@@ -2106,7 +2139,7 @@ end");
                             }
                             else
                             {
-                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}{Environment.NewLine}{ToJSON(item)}");
+                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
                             }
                             break;
                         }
@@ -2138,13 +2171,13 @@ end");
                             // Only warn the programmer once per field per session.
                             if (WARNED_FIELDS.ContainsKey(field)) return;
                             WARNED_FIELDS[field] = true;
-                            Log($"WARN: Parser is ignoring field [{field}] = {ToJSON(value)}{Environment.NewLine}{ToJSON(item)}");
+                            Log($"WARN: Parser is ignoring field [{field}] = {ToJSON(value)}{Environment.NewLine}", item);
                             break;
                         }
                 }
             }
 
-            internal static void MergeField_cost(Dictionary<string, object> item, object value)
+            internal static void MergeField_cost(IDictionary<string, object> item, object value)
             {
                 const string field = "cost";
 
@@ -2208,20 +2241,21 @@ end");
 
                     }
 
-#if ANYCLASSIC
-                    // if the cost is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
-                    if (costType == "i" && cost[1].TryConvert(out long costID))
+                    if (Program.PreProcessorTags.ContainsKey("ANYCLASSIC"))
                     {
-                        // cost item can be a ModItemID (decimal) value as well, but only care to mark the raw ItemID as referenced
-                        Items.MarkItemAsReferenced(costID);
+                        // if the cost is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
+                        if (costType == "i" && cost[1].TryConvert(out long costID))
+                        {
+                            // cost item can be a ModItemID (decimal) value as well, but only care to mark the raw ItemID as referenced
+                            Items.MarkItemAsReferenced(costID);
+                        }
                     }
-#endif
                 }
 
                 item[field] = costsList;
             }
 
-            internal static void MergeField_provider(Dictionary<string, object> item, object value)
+            internal static void MergeField_provider(IDictionary<string, object> item, object value)
             {
                 const string field = "provider";
 
@@ -2237,7 +2271,7 @@ end");
                 MergeField_providers(item, new List<object>() { newProvider });
             }
 
-            internal static void MergeField_providers(Dictionary<string, object> item, object value)
+            internal static void MergeField_providers(IDictionary<string, object> item, object value)
             {
                 const string field = "providers";
 
@@ -2269,25 +2303,7 @@ end");
                         {
                             item[field] = providers = new List<object>();
                         }
-                        if (!match)
-                        {
-                            providers.Add(newMergeProvider);
-                            if (newProvider.Item1 == "i")
-                            {
-#if ANYCLASSIC
-                                // if the provider is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
-                                Items.MarkItemAsReferenced(newProvider.Item2);
-#endif
-                            }
-                            else if (newProvider.Item1 == "n")
-                            {
-                                NPCS_WITH_REFERENCES[newProvider.Item2] = true;
-                            }
-                            else if (newProvider.Item1 == "o")
-                            {
-                                ProcessObjectInstance(item, newProvider.Item2);
-                            }
-                        }
+                        if (!match) providers.Add(newMergeProvider);
                     }
                     catch
                     {
@@ -2296,7 +2312,7 @@ end");
                 }
             }
 
-            internal static void MergeField_lockCriteria(Dictionary<string, object> item, object value)
+            internal static void MergeField_lockCriteria(IDictionary<string, object> item, object value)
             {
                 const string field = "lc";
 
@@ -2338,7 +2354,7 @@ end");
                 item[field] = lockCriteria;
             }
 
-            public static void MergeSpecificItemDataDictionary(Dictionary<string, object> data, string field, object value)
+            public static void MergeSpecificItemDataDictionary(IDictionary<string, object> data, string field, object value)
             {
                 // Get or create desired existing data for item field
                 if (data.TryGetValue(field, out object dataField) && dataField is Dictionary<long, object> existing)
@@ -2377,7 +2393,7 @@ end");
             /// </summary>
             /// <param name="item">The item dictionary to merge into.</param>
             /// <param name="data">The data to merge into the item.</param>
-            public static void Merge(Dictionary<string, object> item, Dictionary<string, object> data)
+            public static void Merge(IDictionary<string, object> item, IDictionary<string, object> data)
             {
                 // make sure we somehow do not try to merge something into itself, since that's a bit pointless
                 if (ReferenceEquals(item, data))
@@ -2388,7 +2404,7 @@ end");
             /// <summary>
             /// Checks for parser tags that need to be handled prior to merging 'data' into the 'entry'
             /// </summary>
-            public static void PreMerge(Dictionary<string, object> entry, Dictionary<string, object> data)
+            public static void PreMerge(IDictionary<string, object> entry, IDictionary<string, object> data)
             {
                 // sometimes existing data from harvests may be inaccurate, so may need to clean existing fields which have already merged in
                 if (data.TryGetValue("_drop", out object drops))
@@ -2407,7 +2423,7 @@ end");
             /// </summary>
             /// <param name="data"></param>
             /// <param name="drops"></param>
-            public static void PerformDrops(Dictionary<string, object> data, object drops)
+            public static void PerformDrops(IDictionary<string, object> data, object drops)
             {
                 if (drops is List<object> dropStrs && dropStrs.Count > 0)
                 {
@@ -2431,11 +2447,11 @@ end");
             /// </summary>
             /// <param name="container">The container to merge into.</param>
             /// <param name="data">The data to merge into the container.</param>
-            public static void Merge(List<object> container, Dictionary<string, object> data2)
+            public static void Merge(List<object> container, IDictionary<string, object> data2)
             {
-#if RETAIL
                 // clean up unique quests being treated as one quest for purposes that are irrelevant to Retail
-                if (data2.TryGetValue("aqd", out Dictionary<string, object> aqd) && data2.TryGetValue("hqd", out Dictionary<string, object> hqd))
+                if (data2.TryGetValue("aqd", out IDictionary<string, object> aqd) && data2.TryGetValue("hqd", out IDictionary<string, object> hqd)
+                    && !Program.PreProcessorTags.ContainsKey("ANYCLASSIC")) // Crieve wants AQD/HQD and doesn't agree with this, but will allow it outside of Classic Builds.
                 {
                     // questID used in both faction data objects
                     if (aqd.TryGetValue("questID", out long aQuestID) && hqd.TryGetValue("questID", out long hQuestID))
@@ -2453,8 +2469,8 @@ end");
                         {
                             // different questID
                             // split into two separate quest objects
-                            Dictionary<string, object> aQuest = new Dictionary<string, object>();
-                            Dictionary<string, object> hQuest = new Dictionary<string, object>();
+                            IDictionary<string, object> aQuest = new Dictionary<string, object>();
+                            IDictionary<string, object> hQuest = new Dictionary<string, object>();
 
                             // remove the faction-specific objects
                             data2.Remove("aqd");
@@ -2498,7 +2514,6 @@ end");
                         }
                     }
                 }
-#endif
 
                 // Only Merge in any global data if this is not the initial merge pass
                 // This way, pets/mounts/etc. have proper data existing when needing to merge into another group
@@ -2509,7 +2524,7 @@ end");
                 }
 
                 // Find the Object Dictionary that matches the data.
-                Dictionary<string, object> entry = FindMatchingData(container, data2);
+                IDictionary<string, object> entry = FindMatchingData(container, data2);
 
                 // If no object matched the data, then we need to create a new entry.
                 if (entry == null)
@@ -2553,7 +2568,7 @@ end");
             /// <summary>
             /// Handles merging the individual Quest data with the global set of Quest data references for later processing
             /// </summary>
-            public static void MergeQuestData(Dictionary<string, object> data)
+            public static void MergeQuestData(IDictionary<string, object> data)
             {
                 if (!data.TryGetValue("questID", out long questID))
                     return;
@@ -2572,7 +2587,7 @@ end");
                 }
 
                 // merge any quest information from the quest DB into the data
-                if (QUESTS.TryGetValue(questID, out Dictionary<string, object> dbQuest))
+                if (QUESTS.TryGetValue(questID, out IDictionary<string, object> dbQuest))
                 {
                     PreMerge(data, dbQuest);
                     Merge(data, dbQuest);
@@ -2585,7 +2600,7 @@ end");
                 }
                 else
                 {
-                    Dictionary<string, object> quest = AllQuests[questID];
+                    IDictionary<string, object> quest = AllQuests[questID];
                     // Copy in any additional pertinent data due to the quest information being listed in another location as well
                     if (data.TryGetValue("sourceQuests", out List<object> sourceQuests))
                     {
@@ -2601,8 +2616,14 @@ end");
             /// <summary>
             /// Attempts to find a matching 'data' object in the container based on the data that needs to merge
             /// </summary>
-            private static Dictionary<string, object> FindMatchingData(List<object> container, Dictionary<string, object> data2)
+            private static IDictionary<string, object> FindMatchingData(List<object> container, IDictionary<string, object> data2)
             {
+                // if the data is explicitly defined as not to merge
+                if (data2.TryGetValue("nomerge", out bool nomerge) && nomerge)
+                {
+                    return null;
+                }
+
                 // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
                 if (!ATT.Export.ObjectData.TryGetMostSignificantObjectType(data2, out Export.ObjectData objectData, out object keyObject))
                 {
@@ -2686,7 +2707,7 @@ end");
             {
                 foreach (var data in list)
                 {
-                    if (data is Dictionary<string, object> sDict) Merge(container, sDict);
+                    if (data is IDictionary<string, object> sDict) Merge(container, sDict);
                     else
                     {
                         LogError($"MERGE CONFUSION: {Environment.NewLine}{ToJSON(data)}");
@@ -2699,7 +2720,7 @@ end");
             /// </summary>
             /// <param name="value"></param>
             /// <returns></returns>
-            public static List<object> ConvertToList(Dictionary<string, object> item, string field, object value)
+            public static List<object> ConvertToList(IDictionary<string, object> item, string field, object value)
             {
                 if (value == null) return null;
 

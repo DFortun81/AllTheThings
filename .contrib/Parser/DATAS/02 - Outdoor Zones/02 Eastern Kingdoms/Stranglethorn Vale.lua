@@ -93,11 +93,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(871, applyclassicphase(PHASE_ONE, {	-- Avast Ye, Admiral!
+				applyclassicphase(PHASE_ONE, ach(871, {	-- Avast Ye, Admiral!
 					["sourceQuest"] = 4621,	-- Avast Ye, Admiral!
 					-- #if BEFORE WRATH
 					["description"] = "Obtain the Bloodsail Admiral's Hat... and try to get some fresh air every now and then.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 					-- #endif
 					["groups"] = {
 						title(111, {	-- Bloodsail Admiral <Name>
@@ -110,7 +109,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Explore Stranglethorn Vale, revealing the covered areas of the world map.",
 					-- #endif
 				}),
-				classicAch(940, {	-- The Green Hills of Stranglethorn
+				ach(940, {	-- The Green Hills of Stranglethorn
 					-- #if AFTER CATA
 					["sourceQuest"] = 208,	-- Big Game Hunter
 					-- #else
@@ -121,7 +120,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					-- #if BEFORE WRATH
 					["description"] = "Complete all of Hemet Nesingwary quests in Stranglethorn Vale up to and including The Green Hills of Stranglethorn and Big Game Hunter.",
-					["OnUpdate"] = [[_.CommonAchievementHandlers.ALL_SOURCE_QUESTS]],
+					["AllSourceQuestsRequiredForAchievement"] = true,
 					-- #endif
 				}),
 			}),
@@ -133,11 +132,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["coord"] = { 30.5, 47.8, STRANGLETHORN_VALE },
 				-- #endif
 				["groups"] = {
-					classicAch(389, {	-- Gurubashi Arena Master
+					ach(389, {	-- Gurubashi Arena Master
 						["provider"] = { "i", 18706 },	-- Arena Master
 						-- #if BEFORE WRATH
 						["description"] = "Loot the Arena Master trinket from the Gurubashi Arena. Keep it in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",
-						["OnUpdate"] = [[function(t) t.SetAchievementCollected(t.achievementID, GetItemCount(18706, true) > 0 or GetItemCount(19024, true) > 0); end]],
+						["OnUpdate"] = [[function(t) t:SetAchievementCollected(t.achievementID, GetItemCount(18706, true) > 0 or GetItemCount(19024, true) > 0); end]],
 						-- #endif
 					}),
 					i(18706),	-- Arena Master
@@ -208,7 +207,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			n(FACTIONS, {
 				faction(87, {	-- Bloodsail Buccaneers
-					["icon"] = icon("INV_Misc_Bandana_03"),
+					["icon"] = "Interface\\Icons\\INV_Misc_Bandana_03",
 					-- #if BEFORE CATA
 					["minReputation"] = { 87, EXALTED - 1 },	-- Bloodsail Buccaneers, must be 20999 into Revered.
 					["OnTooltip"] = OnTooltipForBloodsail,
@@ -218,7 +217,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				faction(21, {	-- Booty Bay
-					["icon"] = icon("INV_Misc_Coin_01"),
+					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
 					["OnTooltip"] = OnTooltipForBootyBay,
 					["maps"] = {
 						TANARIS,
@@ -264,6 +263,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["timeline"] = { "added 2.3.0.7382" },
 					["races"] = ALLIANCE_ONLY,
+				}),
+			}),
+			n(PROFESSIONS, {
+				prof(BLACKSMITHING, {
+					n(2836, {	-- Brikk Keencraft <Master Blacksmith>
+						["coord"] = { 29.0, 75.4, STRANGLETHORN_VALE },
+						-- #if BEFORE 2.1.0
+						["g"] = ARTISAN_BLACKSMITHING,
+						-- #endif
+					}),
+				}),
+				prof(LEATHERWORKING, {
+					n(7871, {	-- Se'Jib <Master Tribal Leatherworker>
+						["coord"] = { 36.6, 34.2, STRANGLETHORN_VALE },
+						["races"] = HORDE_ONLY,
+						["g"] = CLASSIC_TBC_TRIBAL,
+					}),
 				}),
 			}),
 			n(QUESTS, {
@@ -382,11 +398,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cost"] = { { "i", 18706, 12 } },	-- Arena Master (trinket)
 					["repeatable"] = true,
 					["groups"] = {
-						classicAch(396, {	-- Arena Grandmaster
+						ach(396, {	-- Arena Grandmaster
 							["provider"] = { "i", 19024 },	-- Arena Grand Master
 							-- #if BEFORE WRATH
 							["description"] = "Complete Short John Mithril's quest to obtain the Arena Grand Master trinket. Keep it in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 							-- #endif
 						}),
 						i(19024),	-- Arena Grand Master
@@ -2454,14 +2469,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 28.2, 77.5, STRANGLETHORN_VALE },
 					-- #endif
-					["groups"] = {
-						i(5789, {	-- Pattern: Murloc Scale Bracers
-							["isLimited"] = true,
-						}),
-						i(5788, {	-- Pattern: Thick Murloc Armor
-							["isLimited"] = true,
-						}),
-					},
+					["sym"] = {{"select", "itemID",
+						2846,	-- Pattern: Thick Murloc Armor (RECIPE!)
+						5788,	-- Pattern: Murloc Scale Bracers (RECIPE!)
+					}},
 				}),
 				n(734, {	-- Corporal Bluth <Camp Trader>
 					-- #if AFTER CATA
@@ -2471,8 +2482,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(12231),	-- Recipe: Jungle Stew
-						i(12228),	-- Recipe: Roast Raptor
+						i(12231),	-- Recipe: Jungle Stew (RECIPE!)
+						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
 				n(2672, {	-- Cowardly Crosby <Tailoring Supplies>
@@ -2518,10 +2529,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 28.0, 78.0, STRANGLETHORN_VALE },
 					-- #endif
 					["groups"] = {
-						i(6056, {	-- Recipe: Frost Protection Potion
+						i(6056, {	-- Recipe: Frost Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(6057, {	-- Recipe: Nature Protection Potion
+						i(6057, {	-- Recipe: Nature Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2587,14 +2598,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 28.2, 74.4, STRANGLETHORN_VALE },
 					-- #endif
 					["groups"] = {
-						i(13940),	-- Recipe: Cooked Glossy Mightfish
-						i(13941),	-- Recipe: Filet of Redgill
-						i(6039),	-- Recipe: Giant Clam Scorcho
-						i(13943),	-- Recipe: Hot Smoked Bass
-						i(17062),	-- Recipe: Mithril Head Trout
-						i(6369),	-- Recipe: Rockscale Cod
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(13940),	-- Recipe: Cooked Glossy Mightfish (RECIPE!)
+						i(13941),	-- Recipe: Filet of Redgill (RECIPE!)
+						i(6039),	-- Recipe: Giant Clam Scorcho (RECIPE!)
+						i(13943),	-- Recipe: Hot Smoked Bass (RECIPE!)
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(2840, {	-- Kizz Bluntstrike <Macecrafter>
@@ -2664,9 +2675,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(21943, {	-- Design: Truesilver Crab
 							["isLimited"] = true,
 						}),
-						i(3682),	-- Recipe: Curiously Tasty Omelet
-						i(12231),	-- Recipe: Jungle Stew
-						i(12228),	-- Recipe: Roast Raptor
+						i(3682),	-- Recipe: Curiously Tasty Omelet (RECIPE!)
+						i(12231),	-- Recipe: Jungle Stew (RECIPE!)
+						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
 				n(2626, {	-- Old Man Heming <Fisherman>
@@ -2689,7 +2700,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 28.4, 76.0, STRANGLETHORN_VALE },
 					-- #endif
 					["groups"] = {
-						i(14635, {	-- Pattern: Gem-Studded Leather Belt
+						i(14635, {	-- Pattern: Gem-Studded Leather Belt (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(18239, {	-- Pattern: Shadowskin Gloves (RECIPE!)
@@ -2705,7 +2716,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(16111),	-- Recipe: Spiced Chili Crab
+						i(16111),	-- Recipe: Spiced Chili Crab (RECIPE!)
 					},
 				}),
 				n(1146, {	-- Vharr <Superior Weaponsmith>
@@ -2866,11 +2877,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
-				i(5789, {	-- Pattern: Murloc Scale Bracers
+				i(5789, {	-- Pattern: Murloc Scale Bracers (RECIPE!)
 					["cr"] = 1561,	-- Bloodsail Raider
 				}),
 				-- #if BEFORE CATA
-				i(5788, {	-- Pattern: Thick Murloc Armor
+				i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
 					["cr"] = 938,	-- Kurzen Commando
 				}),
 				-- #endif
@@ -2878,7 +2889,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["cr"] = 701,	-- Bloodscalp Mystic
 				}),
-				i(9294, {	-- Recipe: Wildvine Potion
+				i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
 					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
 				}),
 				i(1624, {	-- Skullsplitter Helm

@@ -4,6 +4,12 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(OHNAHRAN_PLAINS, {
 		n(VENDORS, {
+			n(194152, {	-- Agurahl the Butcher
+				["coord"] = { 85.1, 23.4, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(198441),	-- Thunderspine Tenders
+				},
+			}),
 			n(192818, {	-- Elder Yusa
 				["description"] = "Target this NPC and /hungry emote. May have to do it twice- the first time she might emote back and not give you anything.",
 				["coord"] = { 41.6, 62.2, OHNAHRAN_PLAINS },

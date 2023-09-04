@@ -4,6 +4,47 @@
 
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(TIRAGARDE_SOUND, {
+		m(BORALUS, {
+			-- Almost all rep for the Proudmoore Faction comes from Tirisgarde, so the rep vendor should show up in the Minilist.
+			-- Horde does not have this issue, thanks blizz.
+			n(VENDORS, {
+				n(135808, {	-- Provisioner Fray <Proudmoore Admiralty Emissary>
+					["coord"] = { 67.5, 21.5, BORALUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{"select","itemID",
+						161976,	-- Admiralty Marine's Duffel
+						161574, -- Boarding Action Vambraces
+						161571,	-- Cordage Sliding Grips
+						163200,	-- Cursed Spyglass (TOY!)
+						162380,	-- Design: Tidal Amethyst Loop [Rank 3] (RECIPE!)
+						161570,	-- First Lieutenant's Ceremonial Belt
+						162304,	-- Formula: Enchant Ring - Pact of Mastery [Rank 3] (RECIPE!)
+						162317,	-- Formula: Enchant Weapon - Masterful Navigation [Rank 3] (RECIPE!)
+						162316,	-- Formula: Enchant Weapon - Siphoning [Rank 3] (RECIPE!)
+						163201,	-- Gnoll Targetting Barrel (TOY!)
+						161568,	-- Maritime Spellweaver's Leggings
+						161569,	-- Master-At-Arms Wristguards
+						160534,	-- Navy Blue Boat Cloak
+						160540,	-- Proudmoore Admiralty Tabard
+						161573,	-- Proudmoore Marine's Legplate
+						163316,	-- Recipe: Battle Potion of Intellect [Rank 3] (RECIPE!)
+						162254,	-- Recipe: Coastal Mana Potion [Rank 3] (RECIPE!)
+						162359,	-- Technique: Contract: Proudmoore Admiralty [Rank 2] (RECIPE!)
+						162134,	-- Recipe: Flask of the Vast Horizon [Rank 3] (RECIPE!)
+						162414,	-- Pattern: Hardened Tempest Knuckles [Rank 3] (RECIPE!)
+						162413,	-- Pattern: Mistscale Knuckles [Rank 3] (RECIPE!)
+						162130,	-- Recipe: Potion of Bursting Blood [Rank 3] (RECIPE!)
+						161911,	-- Admiralty Stallion (MOUNT!)
+						161879,	-- Proudmoore Sea Scout (MOUNT!)
+						161567,	-- Sailing Master's Sash
+						162327,	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 2] (RECIPE!)
+						162328,	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 3] (RECIPE!)
+						166277,	-- Schematic: Unstable Temporal Time Shift [Rank 2] (RECIPE!)
+						161572,	-- Yardarm Sharpshooter's Boots
+					}},
+				}),
+			}),
+		}),
 		n(VENDORS, {
 			n(134446, {	-- Francois
 				["coord"] = { 52.8, 31.1, TIRAGARDE_SOUND },

@@ -168,10 +168,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									["_npcs"] = { 168447 },
 								}),
 								crit(8, {	-- Rendle and Cudgelface
-									["_npcs"] = {
-										171841,	-- Cudgelface
-										171839,	-- Rendle
-									},
+									["_npcs"] = { 171839 },	-- Rendle
 								}),
 								crit(9, {	-- Choofa
 									["_npcs"] = { 168449 },
@@ -186,10 +183,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									["_npcs"] = { 171848 },
 								}),
 								crit(13, {	-- Kleia and Pelagos
-									["_npcs"] = {
-										171850,	-- Kleia
-										171851,	-- Pelagos
-									},
+									["_npcs"] = { 171850 },	-- Kleia
 								}),
 								crit(14, {	-- Plague Deviser Marileth
 									["_npcs"] = { 171852 },
@@ -407,10 +401,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									["_npcs"] = { 168447 },
 								}),
 								crit(8, {	-- Rendle and Cudgelface
-									["_npcs"] = {
-										171841,	-- Cudgelface
-										171839,	-- Rendle
-									},
+									["_npcs"] = { 171839 },	-- Rendle
 								}),
 								crit(9, {	-- Choofa
 									["_npcs"] = { 168449 },
@@ -425,10 +416,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									["_npcs"] = { 171848 },
 								}),
 								crit(13, {	-- Kleia and Pelagos
-									["_npcs"] = {
-										171850,	-- Kleia
-										171851,	-- Pelagos
-									},
+									["_npcs"] = { 171850 },	-- Kleia
 								}),
 								crit(14, {	-- Plague Deviser Marileth
 									["_npcs"] = { 171852 },
@@ -516,22 +504,58 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								["crs"] = { 165399 },	-- Lord Garridan
 								["maps"] = { REVENDRETH },
 								["g"] = {
-									faction(2450),	-- Alexandros Mograine
-									faction(2446),	-- Baroness Vashj
-									faction(2454),	-- Choofa
-									faction(2455),	-- Cryptkeeper Kassir
-									faction(2456),	-- Droman Aliothe
-									faction(2457),	-- Grandmaster Vole
-									faction(2451),	-- Hunt-Captain Korayn
-									faction(2458),	-- Kleia and Pelagos
-									faction(2447),	-- Lady Moonberry
-									faction(2448),	-- Mikanikos
-									faction(2461),	-- Plague Deviser Marileth
-									faction(2452),	-- Polemarch Adrestes
-									faction(2453),	-- Rendle and Cudgelface
-									faction(2459),	-- Sika
-									faction(2460),	-- Stonehead
-									faction(2449),	-- The Countess
+									-- Tier 1
+									faction(2454, {	-- Choofa
+										["npcID"] = 168449,
+									}),
+									faction(2455, {	-- Cryptkeeper Kassir
+										["npcID"] = 168450,
+									}),
+									faction(2461, {	-- Plague Deviser Marileth
+										["npcID"] = 171852,
+									}),
+									faction(2459, {	-- Sika
+										["npcID"] = 171854,
+									}),
+									-- Tier 2
+									faction(2456, {	-- Droman Aliothe
+										["npcID"] = 171847,
+									}),
+									faction(2457, {	-- Grandmaster Vole
+										["npcID"] = 171848,
+									}),
+									faction(2458, {	-- Kleia and Pelagos
+										["npcID"] = 171850,
+									}),
+									faction(2460, {	-- Stonehead
+										["npcID"] = 171856,
+									}),
+									-- Tier 3
+									faction(2450, {	-- Alexandros Mograine
+										["npcID"] = 171833,
+									}),
+									faction(2451, {	-- Hunt-Captain Korayn
+										["npcID"] = 171836,
+									}),
+									faction(2452, {	-- Polemarch Adrestes
+										["npcID"] = 168447,
+									}),
+									faction(2453, {	-- Rendle and Cudgelface
+										["npcID"] = 171839,
+									}),
+									-- Tier 4
+									faction(2446, {	-- Baroness Vashj
+										["npcID"] = 168444,
+									}),
+									faction(2447, {	-- Lady Moonberry
+										["npcID"] = 171830,
+									}),
+									faction(2448, {	-- Mikanikos
+										["npcID"] = 171831,
+									}),
+									faction(2449, {	-- The Countess
+										["npcID"] = 165269,
+									}),
 								},
 							}),
 						}),
@@ -618,30 +642,25 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						})),
 						-- Repeatable Event quests within Ember Court
 						n(QUESTS, sharedData({["isDaily"] = true,},{
-							q(63721, {	-- Lord Garridan's Egg
+							applyevent(EVENTS.NOBLEGARDEN, q(63721, {	-- Lord Garridan's Egg
 								["cost"] = { { "i", 185684, 1 } },	-- Lord Garridan's Egg
-								["u"] = NOBLEGARDEN,
-							}),
-							q(63720, {	-- Prince Renethal's Egg
+							})),
+							applyevent(EVENTS.NOBLEGARDEN, q(63720, {	-- Prince Renethal's Egg
 								["cost"] = { { "i", 185683, 1 } },	-- Prince Renethal's Egg
-								["u"] = NOBLEGARDEN,
-							}),
-							q(63718, {	-- Theotar's Egg
+							})),
+							applyevent(EVENTS.NOBLEGARDEN, q(63718, {	-- Theotar's Egg
 								["cost"] = { { "i", 185681, 1 } },	-- Theotar's Egg
-								["u"] = NOBLEGARDEN,
-							}),
-							q(63719, {	-- Temel's Egg
+							})),
+							applyevent(EVENTS.NOBLEGARDEN, q(63719, {	-- Temel's Egg
 								["cost"] = { { "i", 185682, 1 } },	-- Temel's Egg
-								["u"] = NOBLEGARDEN,
-							}),
-							q(64546, {	-- Visions of Sire Denathrius
+							})),
+							applyevent(EVENTS.HALLOWS_END, q(64546, {	-- Visions of Sire Denathrius
 								["provider"] = { "n", 180458 },	-- Vision of Sire Denathrius
 								["repeatable"] = true,	-- probably yearly, Blizzard API says it's daily, in practice it unflaggs right after completion
-								["u"] = HALLOWS_END,
 								["g"] = {
 									i(181442),	-- Vision of Sire Denathrius
 								},
-							}),
+							})),
 							q(62146),	-- A Little More Comfortable
 							q(62130),	-- A Quiet Moment
 							q(62126),	-- Animal Rescue
@@ -2065,111 +2084,147 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								["g"] = {
 									i(181055, {	-- Court Death Shroud Belt
 										["cost"] = { { "c", ANIMA, 750 } },
+										["minReputation"] = { 2445, HONORED },	-- The Ember Court
 									}),
 									i(181056, {	-- Court Death Shroud Bindings
 										["cost"] = { { "c", ANIMA, 750 } },
+										["minReputation"] = { 2445, HONORED },	-- The Ember Court
 									}),
 									i(181050, {	-- Court Death Shroud Boots
 										["cost"] = { { "c", ANIMA, 1500 } },
+										["minReputation"] = { 2445, FRIENDLY },	-- The Ember Court
 									}),
 									i(181053, {	-- Court Death Shroud Breeches
 										["cost"] = { { "c", ANIMA, 1500 } },
+										["minReputation"] = { 2445, FRIENDLY },	-- The Ember Court
 									}),
 									i(181057, {	-- Court Death Shroud Cloak
 										["cost"] = { { "c", ANIMA, 750 } },
+										["minReputation"] = { 2445, EXALTED },	-- The Ember Court
 									}),
 									i(181051, {	-- Court Death Shroud Gloves
 										["cost"] = { { "c", ANIMA, 1500 } },
+										["minReputation"] = { 2445, REVERED },	-- The Ember Court
 									}),
 									i(181052, {	-- Court Death Shroud Hood
 										["cost"] = { { "c", ANIMA, 2000 } },
+										["minReputation"] = { 2445, EXALTED },	-- The Ember Court
 									}),
 									i(181054, {	-- Court Death Shroud Spaulders
 										["cost"] = { { "c", ANIMA, 2000 } },
+										["minReputation"] = { 2445, REVERED },	-- The Ember Court
 									}),
 									i(181049, {	-- Court Death Shroud Vest
 										["cost"] = { { "c", ANIMA, 2000 } },
+										["minReputation"] = { 2445, HONORED },	-- The Ember Court
 									}),
 									i(181014, {	-- Dread Sentinel's Court Chestplate
 										["cost"] = { { "c", ANIMA, 2000 } },
+										["minReputation"] = { 2445, HONORED },	-- The Ember Court
 									}),
 									i(181021, {	-- Dread Sentinel's Court Cloak
 										["cost"] = { { "c", ANIMA, 750 } },
+										["minReputation"] = { 2445, EXALTED },	-- The Ember Court
 									}),
 									i(181019, {	-- Dread Sentinel's Court Girdle
 										["cost"] = { { "c", ANIMA, 750 } },
+										["minReputation"] = { 2445, HONORED },	-- The Ember Court
 									}),
 									i(181015, {	-- Dread Sentinel's Court Greatboots
 										["cost"] = { { "c", ANIMA, 1500 } },
+										["minReputation"] = { 2445, FRIENDLY },	-- The Ember Court
 									}),
 									i(181016, {	-- Dread Sentinel's Court Grips
 										["cost"] = { { "c", ANIMA, 1500 } },
+										["minReputation"] = { 2445, REVERED },	-- The Ember Court
 									}),
 									i(181013, {	-- Dread Sentinel's Court Headgear
 										["cost"] = { { "c", ANIMA, 2000 } },
+										["minReputation"] = { 2445, EXALTED },	-- The Ember Court
 									}),
 									i(181017, {	-- Dread Sentinel's Court Legguards
 										["cost"] = { { "c", ANIMA, 1500 } },
+										["minReputation"] = { 2445, FRIENDLY },	-- The Ember Court
 									}),
 									i(181018, {	-- Dread Sentinel's Court Spaulders
 										["cost"] = { { "c", ANIMA, 2000 } },
+										["minReputation"] = { 2445, REVERED },	-- The Ember Court
 									}),
 									i(181020, {	-- Dread Sentinel's Court Vambraces
 										["cost"] = { { "c", ANIMA, 750 } },
+										["minReputation"] = { 2445, HONORED },	-- The Ember Court
 									}),
 									i(181082, {	-- Fearstalker's Court Belt
 										["cost"] = { { "c", ANIMA, 750 } },
+										["minReputation"] = { 2445, HONORED },	-- The Ember Court
 									}),
 									i(181083, {	-- Fearstalker's Court Bracers
 										["cost"] = { { "c", ANIMA, 750 } },
+										["minReputation"] = { 2445, HONORED },	-- The Ember Court
 									}),
 									i(181084, {	-- Fearstalker's Court Cloak
 										["cost"] = { { "c", ANIMA, 750 } },
+										["minReputation"] = { 2445, EXALTED },	-- The Ember Court
 									}),
 									i(181078, {	-- Fearstalker's Court Gauntlets
 										["cost"] = { { "c", ANIMA, 1500 } },
+										["minReputation"] = { 2445, REVERED },	-- The Ember Court
 									}),
 									i(181076, {	-- Fearstalker's Court Hauberk
 										["cost"] = { { "c", ANIMA, 2000 } },
+										["minReputation"] = { 2445, HONORED },	-- The Ember Court
 									}),
 									i(181079, {	-- Fearstalker's Court Helm
 										["cost"] = { { "c", ANIMA, 2000 } },
+										["minReputation"] = { 2445, EXALTED },	-- The Ember Court
 									}),
 									i(181080, {	-- Fearstalker's Court Leggings
 										["cost"] = { { "c", ANIMA, 1500 } },
+										["minReputation"] = { 2445, FRIENDLY },	-- The Ember Court
 									}),
 									i(181081, {	-- Fearstalker's Court Monnion
 										["cost"] = { { "c", ANIMA, 2000 } },
+										["minReputation"] = { 2445, REVERED },	-- The Ember Court
 									}),
 									i(181077, {	-- Fearstalker's Court Sabatons
 										["cost"] = { { "c", ANIMA, 1500 } },
+										["minReputation"] = { 2445, FRIENDLY },	-- The Ember Court
 									}),
 									i(181120, {	-- Soulbreaker's Court Drape
 										["cost"] = { { "c", ANIMA, 750 } },
+										["minReputation"] = { 2445, EXALTED },	-- The Ember Court
 									}),
 									i(181114, {	-- Soulbreaker's Court Handwraps
 										["cost"] = { { "c", ANIMA, 1500 } },
+										["minReputation"] = { 2445, REVERED },	-- The Ember Court
 									}),
 									i(181115, {	-- Soulbreaker's Court Hood
 										["cost"] = { { "c", ANIMA, 2000 } },
+										["minReputation"] = { 2445, EXALTED },	-- The Ember Court
 									}),
 									i(181116, {	-- Soulbreaker's Court Leggings
 										["cost"] = { { "c", ANIMA, 1500 } },
+										["minReputation"] = { 2445, FRIENDLY },	-- The Ember Court
 									}),
 									i(181117, {	-- Soulbreaker's Court Mantle
 										["cost"] = { { "c", ANIMA, 2000 } },
+										["minReputation"] = { 2445, REVERED },	-- The Ember Court
 									}),
 									i(181118, {	-- Soulbreaker's Court Sash
 										["cost"] = { { "c", ANIMA, 750 } },
+										["minReputation"] = { 2445, HONORED },	-- The Ember Court
 									}),
 									i(181113, {	-- Soulbreaker's Court Slippers
 										["cost"] = { { "c", ANIMA, 1500 } },
+										["minReputation"] = { 2445, FRIENDLY },	-- The Ember Court
 									}),
 									i(181112, {	-- Soulbreaker's Court Vestments
 										["cost"] = { { "c", ANIMA, 2000 } },
+										["minReputation"] = { 2445, HONORED },	-- The Ember Court
 									}),
 									i(181119, {	-- Soulbreaker's Court Wraps
 										["cost"] = { { "c", ANIMA, 750 } },
+										["minReputation"] = { 2445, HONORED },	-- The Ember Court
 									}),
 								},
 							}),
@@ -2185,10 +2240,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										["cost"] = { { "c", ANIMA, 25 } },
 										["questID"] = 61457,
 									}),
-									i(187133, {	-- Bewitching Little Hat
+									applyevent(EVENTS.HALLOWS_END, i(187133, {	-- Bewitching Little Hat
 										["cost"] = { { "c", 1820, 25 } },	-- 25x Infused Ruby
-										["u"] = HALLOWS_END,
-									}),
+									})),
 									i(181517, {	-- Building: Dredger Pool (EC!)
 										["cost"] = { { "c", ANIMA, 100 } },
 										["questID"] = 61493,
@@ -2212,14 +2266,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									i(182296, {	-- Letter of Note, Premier Party Planner
 										["cost"] = { { "c", 1820, 85 } },	-- 85 Infused Ruby
 										["description"] = "This is intended to be purchased on a 'Main' Venthyr character to send to 'Alt' Venthyr characters to get a head-start on Ember Court progress.",
-										["g"] = {
-											q(61493, {	-- Dredger Pool Unlocked on Character
-												["name"] = "Dredger Pool Unlocked",
-											}),
-											q(61494, {	-- Guardhouse Unlocked on Character
-												["name"] = "Guardhouse Unlocked",
-											}),
-										},
+										["sym"] = {{"select","questID",
+											61493,	-- Dredger Pool Unlocked on Character
+											61494,	-- Guardhouse Unlocked on Character
+										}},
 									}),
 									i(182973, {	-- Leather Dredger Coif
 										["cost"] = { { "c", 1820, 10 } },	-- 10 Infused Ruby
@@ -2267,11 +2317,11 @@ end
 
 root(ROOTS.HiddenQuestTriggers, {
 	-- Dredger Butler Appearance
-		q(61581),	-- Choosing Purple during 'Shades of Muck' (61851)
-		q(61584),	-- Choosing Blue during 'Shades of Muck' (61851)
-		q(61579),	-- Choosing Green during 'Shades of Muck' (61851)
-		q(61580),	-- Choosing Red during 'Shades of Muck' (61851)
-		q(61583),	-- When completing 'Shades of Muck' (61851) with Purple chosen
+		q(61581),	-- Choosing Purple during "Shades of Muck" (questID 61851)
+		q(61584),	-- Choosing Blue during "Shades of Muck" (questID 61851)
+		q(61579),	-- Choosing Green during "Shades of Muck" (questID 61851)
+		q(61580),	-- Choosing Red during "Shades of Muck" (questID 61851)
+		q(61583),	-- When completing "Shades of Muck" (questID 61851) with Purple chosen (spellID 348799)
 		q(61793),	-- Choosing name 'Rogi' during 'Dredging up a Name' (61764)
 		q(61794),	-- Choosing name 'Grubber' during 'Dredging up a Name' (61764)
 		q(61795),	-- Choosing name 'Jeebs' during 'Dredging up a Name' (61764)
@@ -2292,7 +2342,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(61810),	-- Choosing name 'Copperworth' during 'Dredging up a Name' (61764)
 		q(61811),	-- Choosing name 'Fred' during 'Dredging up a Name' (61764)
 		q(61812),	-- Choosing name 'Raff' during 'Dredging up a Name' (61764)
-		q(61582),	-- Let's get your hair sorted. > Let's trim it off ...
+		q(61582),	-- Let's get your hair sorted. > Let's trim it off ... (spellID 348799)
 		q(61572),	-- Let's get your hair sorted. > A little grease and the proper Igor cut.
 		q(61571),	-- Let's get your hair sorted. > How about you grow it out full?
 		q(61573),	-- Let's get your hair sorted. > Let's go wild and spikey!
@@ -2301,7 +2351,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(63927),	-- Let's get your hair sorted. > It's time to don the Bewitching Little Hat
 		q(61575),	-- Let's update your clothes. > How about we try the long sleeved doublet.
 		q(61574),	-- Let's update your clothes. > Why don't you try on the short sleeved doublet.
-		q(61585),	-- It's time to dye your clothes. > Let's dye them black.
+		q(61585),	-- It's time to dye your clothes. > Let's dye them black. (spellID 348799)
 		q(61578),	-- It's time to dye your clothes. > Let's dye them green.
 		q(61576),	-- It's time to dye your clothes. > Let's dye them red.
 
@@ -2400,7 +2450,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(61918),	-- unflagged when completing Restock: Fashion Accessories (62078)
 			q(61919),	-- unflagged when completing Restock: Exploratory Meals (62094)
 			q(61938),	-- unflagged when completing Restock: My Favorite Table (62065)
-			q(61922),	-- seems to be an indicator that Restock: Stolen Rugs will be required for the next Ember Court
+			q(61922),	-- seems to be an indicator that Restock: Stolen Rugs will be required for the next Ember Court (spellID 345206)
 			q(61937),	-- seems to be an indicator that Restock: Statues will be required for the next Ember Court
 			q(61925),	-- completed when completing a 'Restock' quest
 			q(62524),	-- triggered at end of Ember Court (Vashj/Koryan/Choofa/Stonehead)

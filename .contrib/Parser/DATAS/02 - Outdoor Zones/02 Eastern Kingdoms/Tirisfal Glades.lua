@@ -22,22 +22,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER WRATH
 				["icon"] = "Interface\\Icons\\Achievement_Character_Undead_Female",
 				-- #else
-				["icon"] = asset("Achievement_Character_Undead_Female"),
+				["icon"] = [[~_.asset("Achievement_Character_Undead_Female")]],
 				-- #endif
 				-- #if AFTER CATA
 				["maps"] = { 466 },	-- Night Web's Hollow
 				-- #endif
 				["groups"] = {
-					-- #if AFTER MOP
-					petbattle(filter(BATTLE_PETS, {
-						pet(417, {	-- Rat
+					battlepets({
+						pet(417, {	-- Rat (PET!)
 							["description"] = "Found in MANY zones on Azeroth and Draenor, this place just seems to have the highest concentration of them."
 						}),
 						pet(458, {	-- Lost of Lordaeron (PET!)
 							["description"] = "Found mostly around the Ruins of Lordaeron.",
 						}),
-					})),
-					-- #endif
+					}),
 					n(QUESTS, {
 						q(8, {	-- A Rogue's Deal (1/2)
 							["providers"] = {
@@ -677,16 +675,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					417,	-- Bat (PET!)
 					646,	-- Chicken (PET!)
 					417,	-- Rat (PET!)
 					458,	-- Lost of Lordaeron (PET!)
 				}},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, {
 				exploration(157, "256:210:335:139"),	-- Agamand Mills
@@ -1237,7 +1233,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(25038, {	-- Gordo's Task
 					["qg"] = 10666,	-- Gordo
-					["sourceQuest"] = 24980,	-- The Scarlet Palisade
+					["sourceQuest"] = 24977,	-- Johaan's Experiment
 					["coord"] = { 44.2, 53.7, TIRISFAL_GLADES },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
@@ -1354,7 +1350,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(32672, {	-- Learn to Ride
 					["description"] = "This quest is available to Undead characters upon reaching level 10.",
-					["timeline"] = { "added 4.0.3.13277" },
+					["timeline"] = { "added 4.0.3.13277", REMOVED_10_1_5 },
 					["races"] = { UNDEAD },
 					["lvl"] = 10,
 					["isBreadcrumb"] = true,
@@ -2048,6 +2044,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
+			-- #if BEFORE TBC
+			n(RIDING_TRAINER, {
+				n(4773, {	-- Velma Warnam <Undead Horse Riding Instructor>
+					["coord"] = { 60.0, 52.6, TIRISFAL_GLADES },
+					["races"] = { ORC, TROLL, UNDEAD },
+
+					-- Available to Undead without faction requirements.
+					["minReputation"] = { 68, EXALTED },	-- Undercity, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. UNDEAD .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
+					["groups"] = {
+						recipe(10906, {	-- Undead Horsemanship
+							["cost"] = 200000,
+							["lvl"] = 40,
+						}),
+					},
+				}),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(2118, {	-- Abigail Shiel <Trade Supplies>
 					-- #if AFTER CATA
@@ -2057,7 +2076,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(12226),	-- Recipe: Crispy Bat Wing
+						i(12226),	-- Recipe: Crispy Bat Wing (RECIPE!)
 					},
 				}),
 				n(11057, {	-- Apothecary Dithers
@@ -2076,6 +2095,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 83.2, 68.2, TIRISFAL_GLADES },
 					-- #endif
+					["sym"] = {{ "select", "itemID", 206584 }},	-- Archived Crafting Techniques
 					["groups"] = {
 						i(22014, {	-- Hallowed Brazier
 							["timeline"] = { "removed 4.0.3" },
@@ -2135,11 +2155,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(19442),	-- Recipe: Powerful Anti-Venom
 						i(19216),	-- Pattern: Argent Boots
 						i(19217),	-- Pattern: Argent Shoulders
-						i(19328),	-- Pattern: Dawn Treaders
-						i(19329),	-- Pattern: Golden Mantle of the Dawn
+						applyclassicphase(PHASE_THREE, i(19328)),	-- Pattern: Dawn Treaders (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19329)),	-- Pattern: Golden Mantle of the Dawn (RECIPE!)
 						applyclassicphase(PHASE_THREE, i(19203)),	-- Plans: Girdle of the Dawn (RECIPE!)
 						applyclassicphase(PHASE_THREE, i(19205)),	-- Plans: Gloves of the Dawn (RECIPE!)
-						i(13482),	-- Recipe: Transmute Air to Fire
+						i(13482),	-- Recipe: Transmute Air to Fire (RECIPE!)
 					},
 				}),
 				n(3522, {	-- Constance Brisboise <Apprentice Clothier>
@@ -2155,8 +2175,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 65.8, 59.6, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6325),	-- Recipe: Brilliant Smallfish
-						i(6326),	-- Recipe: Slitherskin Mackerel
+						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
+						i(6326),	-- Recipe: Slitherskin Mackerel (RECIPE!)
 					},
 				}),
 				n(12943, {	-- Werg Thickblade <Leatherworking Supplies>
@@ -2167,10 +2187,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(15741, {	-- Pattern: Stormshroud Pants
+						i(15741, {	-- Pattern: Stormshroud Pants (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(15725, {	-- Pattern: Wicked Leather Gauntlets
+						i(15725, {	-- Pattern: Wicked Leather Gauntlets (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2232,11 +2252,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 1549,	-- Ravenous Darkhound
 				}),
 				i(3331, {	-- Melrache's Cape
-					-- #if BEFORE CATA
 					["coord"] = { 79.4, 26.0, TIRISFAL_GLADES },
-					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },
 					["cr"] = 1665,	-- Captain Melrache
+					["description"] = "This NPC is friendly to the alliance.",
 				}),
 				i(3332, {	-- Perrine's Boots
 					-- #if BEFORE CATA
@@ -2250,7 +2269,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 1529,	-- Bleeding Horror
 				}),
 				i(3328, {	-- Spider Web Robe
-					["timeline"] = { "removed 4.0.3" },
+					["coord"] = { 86.6, 53.8, TIRISFAL_GLADES },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 					["cr"] = 1555,	-- Vicious Night Web Spider
 				}),
 				i(3329, {	-- Spiked Wooden Plank
@@ -2258,7 +2278,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 1753,	-- Maggot Eye
 				}),
 				i(4263, {	-- Standard Issue Shield
-					["timeline"] = { "removed 4.0.3" },
+					["coord"] = { 79.4, 25.6, TIRISFAL_GLADES },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 					["cr"] = 1660,	-- Scarlet Bodyguard
 				}),
 				i(3325, {	-- Vile Fin Battle Axe

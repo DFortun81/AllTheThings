@@ -34,6 +34,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(75259, {	-- Aiding the Accord: Zskera Vaults
 					["timeline"] = { ADDED_10_0_7 },
 				}),
+				q(77254, {	-- Aiding the Accord: Time Rift
+					["timeline"] = { ADDED_10_1_5 },
+				}),
+				q(77976, {	-- Aiding the Accord: Dreamsurge
+					["timeline"] = { ADDED_10_1_7 },
+				}),
 			})),
 			n(REWARDS, {
 				i(200073, {	-- Valdrakken Treasures
@@ -60,15 +66,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				}),
 				i(201922, {	-- Iskaara Tuskarr Insignia
-					["minReputation"] = { 2511, 30 },	-- Iskaara Tuskarr Renown 30
+					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				}),
 				i(201923, {	-- Maruuk Centaur Insignia
-					["minReputation"] = { 2503, 25 },	-- Maruuk Centaur renown 25
+					["minReputation"] = { FACTION_MARUUK_CENTAUR, 25 },
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				}),
 				i(201924, {	-- Valdrakken Accord Insignia
-					["minReputation"] = { 2510, 30 },	-- Valdrakken Accord Renown 30
+					["minReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				}),
 			}),
@@ -81,8 +87,10 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(71243),	-- Weekly Quest?
 		q(72892),	-- After "Aiding the Accord" series
 		q(75260),	-- After "Aiding the Accord" series
-		q(75862),	-- After "Aiding the Accord" series (Suffusion Camp was in Ohn'ahran Plains)
-		q(75864),	-- After "Aiding the Accord" series (Suffusion Camp was in The Azure Span)
-		q(75863),	-- After "Aiding the Accord" series (Sniffenseeking)
+		q(75862),	-- Aiding the Accord - Researchers - Quest Complete (spellID 410069)
+		q(75864),	-- Aiding the Accord - Suffusion - Quest Complete (spellID 410068)
+		q(75863),	-- Aiding the Accord - Cave - Quest Complete (spellID 410067)
+		q(77253),	-- Aiding the Accord - Time Rifts - Quest Complete (spellID 417862)
+		q(77979),	-- Aiding the Accord - Dreamsurge - Quest Complete (spellID 421947)
 	}),
 }));

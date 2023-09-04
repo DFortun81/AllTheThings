@@ -6,6 +6,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		-- #if BEFORE MOP
 		["lore"] = "Uldaman is an ancient Titan vault buried deep within the Khaz Mountains, accessible from the Badlands. Partially excavated, it has since fallen into the hands of the Dark Iron dwarves who seek to corrupt its riches for their master, Ragnaros.",
 		-- #endif
+		-- #if BEFORE WRATH
+		["zone-text-areaID"] = 1337,	-- Uldaman
+		-- #endif
 		-- #if AFTER CATA
 		["coords"] = {
 			{ 36.63, 29.42, 16 },	-- Uldaman [Front], Uldaman [Badlands]
@@ -21,6 +24,16 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		["maps"] = { 231 },
 		["lvl"] = lvlsquish(35, 35, 15),
 		["groups"] = {
+			n(PROFESSIONS, {
+				prof(ENCHANTING, {
+					n(11073, {	-- Annora <Master Enchanter>
+						["description"] = "To get the Annora to spawn, you'll have to kill all scorpions first.",
+						-- #if BEFORE 2.1.0
+						["groups"] = EXPERT_ARTISAN_ENCHANTING,
+						-- #endif
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(2964, {	-- A Future Task [Alliance]
 					["qg"] = 2916,	-- Historian Karnik
@@ -692,13 +705,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					}),
 				},
 			}),
-			n(11073, {	-- Annora <Master Enchanter>
-				["description"] = "To get the Annora to spawn, you'll have to kill all scorpions first.",
-				-- #if BEFORE 2.1.0
-				["requireSkill"] = ENCHANTING,
-				["groups"] = EXPERT_ARTISAN_ENCHANTING,
-				-- #endif
-			}),
 			e(470, {	-- Ancient Stone Keeper
 				["creatureID"] = 7206,
 				["groups"] = {
@@ -757,14 +763,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			e(473, {	-- Archaedas
 				["creatureID"] = 2748,
 				["groups"] = {
-					classicAch(638, {	-- Uldaman
+					ach(638, {	-- Uldaman
 						-- #if BEFORE WRATH
 						["sourceQuests"] = {
 							2278,	-- The Platinum Discs
 							2204,	-- Restoring the Necklace
 							2339,	-- Find the Gems and Power Source
 						},
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5047, {	-- Uldaman Guild Run

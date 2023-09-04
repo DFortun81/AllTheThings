@@ -176,6 +176,10 @@ local function CacheAccountWideMiscQuests(accountWideData)
 		58435,	-- Heritage of the Vulpera
 		53721,	-- Heritage of the Zandalari
 		-- etc.
+
+		-- Account Unlocks
+		76390,	-- Inconvenience Fee [Naxxramas]
+
 	}) do
 		-- If this Character has the Quest completed and it is not marked as completed for Account or not for specific Character
 		if not oneTimeQuests[questID] and IsQuestFlaggedCompleted(questID) then
@@ -309,11 +313,10 @@ local function RefreshCollections()
 	coroutine.yield();
 
 	-- Refresh Factions
-	local Search, GetCache = app.SearchForObject, app.SearchForFieldContainer;
 	local faction;
 	wipe(currentCharacter.Factions);
-	for factionID,_ in pairs(GetCache("factionID")) do
-		faction = Search("factionID", factionID);
+	for factionID,_ in pairs(app.SearchForFieldContainer("factionID")) do
+		faction = app.SearchForObject("factionID", factionID);
 		-- simply reference the .saved property of each known Faction to re-calculate the character value
 		if faction and faction.saved then end
 	end
@@ -325,7 +328,7 @@ local function RefreshCollections()
 
 	-- Refresh Toys from Cache
 	local acctToys = ATTAccountWideData.Toys;
-	for id,_ in pairs(GetCache("toyID")) do
+	for id,_ in pairs(app.SearchForFieldContainer("toyID")) do
 		if PlayerHasToy(id) then
 			if not acctToys[id] then print("Added Toy",app:Linkify(id,app.Colors.ChatLink,"search:toyID:"..id)) end
 			acctToys[id] = 1;
@@ -340,7 +343,7 @@ local function RefreshCollections()
 	-- Refresh RuneforgeLegendaries from Cache
 	local acctRFLs = ATTAccountWideData.RuneforgeLegendaries;
 	local state;
-	for id,_ in pairs(GetCache("runeforgePowerID")) do
+	for id,_ in pairs(app.SearchForFieldContainer("runeforgePowerID")) do
 		state = (C_LegendaryCrafting_GetRuneforgePowerInfo(id) or app.EmptyTable).state;
 		if state == 0 then
 			if not acctRFLs[id] then print("Added Runeforge Power",app:Linkify(id,app.Colors.ChatLink,"search:runeforgePowerID:"..id)) end

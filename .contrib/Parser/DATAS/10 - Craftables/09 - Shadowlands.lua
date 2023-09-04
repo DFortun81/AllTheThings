@@ -2,7 +2,7 @@
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
 local CURRENT_EXPAC_INK_ITEMID = 173058;	-- Umbral Ink
-root(ROOTS.Craftables, tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	prof(ALCHEMY, {
 		n(HEAD, {
 			i(180751),	-- Red Noggin Candle
@@ -28,45 +28,47 @@ root(ROOTS.Craftables, tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bu
 		}),
 	}),
 	prof(BLACKSMITHING, {
-		spell(307705, {	-- Shadowghast Armguards [Rank 1]
-			r(332006),	-- Shadowghast Armguards [Rank 2]
-			r(332041),	-- Shadowghast Armguards [Rank 3]
-			r(338976),	-- Shadowghast Armguards [Rank 4]
-		}),
-		spell(307712, {	-- Shadowghast Breastplate [Rank 1]
-			r(332013),	-- Shadowghast Breastplate [Rank 2]
-			r(332048),	-- Shadowghast Breastplate [Rank 3]
-			r(338968),	-- Shadowghast Breastplate [Rank 4]
-		}),
-		spell(307710, {	-- Shadowghast Gauntlets [Rank 1]
-			r(332011),	-- Shadowghast Gauntlets [Rank 2]
-			r(332046),	-- Shadowghast Gauntlets [Rank 3]
-			r(338970),	-- Shadowghast Gauntlets [Rank 4]
-		}),
-		spell(307708, {	-- Shadowghast Greaves [Rank 1]
-			r(332009),	-- Shadowghast Greaves [Rank 2]
-			r(332044),	-- Shadowghast Greaves [Rank 3]
-			r(338972),	-- Shadowghast Greaves [Rank 4]
-		}),
-		spell(307709, {	-- Shadowghast Helm [Rank 1]
-			r(332010),	-- Shadowghast Helm [Rank 2]
-			r(332045),	-- Shadowghast Helm [Rank 3]
-			r(338971),	-- Shadowghast Helm [Rank 4]
-		}),
-		spell(307707, {	-- Shadowghast Pauldrons [Rank 1]
-			r(332008),	-- Shadowghast Pauldrons [Rank 2]
-			r(332043),	-- Shadowghast Pauldrons [Rank 3]
-			r(338974),	-- Shadowghast Pauldrons [Rank 4]
-		}),
-		spell(307711, {	-- Shadowghast Sabatons [Rank 1]
-			r(332012),	-- Shadowghast Sabatons [Rank 2]
-			r(332047),	-- Shadowghast Sabatons [Rank 3]
-			r(338969),	-- Shadowghast Sabatons [Rank 4]
-		}),
-		spell(307706, {	-- Shadowghast Waistguard [Rank 1]
-			r(332007),	-- Shadowghast Waistguard [Rank 2]
-			r(332042),	-- Shadowghast Waistguard [Rank 3]
-			r(338975),	-- Shadowghast Waistguard [Rank 4]
+		n(DISCOVERY, {
+			spell(307705, {	-- Shadowghast Armguards [Rank 1]
+				r(332006),	-- Shadowghast Armguards [Rank 2] (RECIPE!)
+				r(332041),	-- Shadowghast Armguards [Rank 3] (RECIPE!)
+				r(338976),	-- Shadowghast Armguards [Rank 4] (RECIPE!)
+			}),
+			spell(307712, {	-- Shadowghast Breastplate [Rank 1]
+				r(332013),	-- Shadowghast Breastplate [Rank 2] (RECIPE!)
+				r(332048),	-- Shadowghast Breastplate [Rank 3] (RECIPE!)
+				r(338968),	-- Shadowghast Breastplate [Rank 4] (RECIPE!)
+			}),
+			spell(307710, {	-- Shadowghast Gauntlets [Rank 1]
+				r(332011),	-- Shadowghast Gauntlets [Rank 2] (RECIPE!)
+				r(332046),	-- Shadowghast Gauntlets [Rank 3] (RECIPE!)
+				r(338970),	-- Shadowghast Gauntlets [Rank 4] (RECIPE!)
+			}),
+			spell(307708, {	-- Shadowghast Greaves [Rank 1]
+				r(332009),	-- Shadowghast Greaves [Rank 2] (RECIPE!)
+				r(332044),	-- Shadowghast Greaves [Rank 3] (RECIPE!)
+				r(338972),	-- Shadowghast Greaves [Rank 4] (RECIPE!)
+			}),
+			spell(307709, {	-- Shadowghast Helm [Rank 1]
+				r(332010),	-- Shadowghast Helm [Rank 2] (RECIPE!)
+				r(332045),	-- Shadowghast Helm [Rank 3] (RECIPE!)
+				r(338971),	-- Shadowghast Helm [Rank 4] (RECIPE!)
+			}),
+			spell(307707, {	-- Shadowghast Pauldrons [Rank 1]
+				r(332008),	-- Shadowghast Pauldrons [Rank 2] (RECIPE!)
+				r(332043),	-- Shadowghast Pauldrons [Rank 3] (RECIPE!)
+				r(338974),	-- Shadowghast Pauldrons [Rank 4] (RECIPE!)
+			}),
+			spell(307711, {	-- Shadowghast Sabatons [Rank 1]
+				r(332012),	-- Shadowghast Sabatons [Rank 2] (RECIPE!)
+				r(332047),	-- Shadowghast Sabatons [Rank 3] (RECIPE!)
+				r(338969),	-- Shadowghast Sabatons [Rank 4] (RECIPE!)
+			}),
+			spell(307706, {	-- Shadowghast Waistguard [Rank 1]
+				r(332007),	-- Shadowghast Waistguard [Rank 2] (RECIPE!)
+				r(332042),	-- Shadowghast Waistguard [Rank 3] (RECIPE!)
+				r(338975),	-- Shadowghast Waistguard [Rank 4] (RECIPE!)
+			}),
 		}),
 		n(ARMOR, {
 			i(171381),	-- Ceremonious Armguards
@@ -97,7 +99,7 @@ root(ROOTS.Craftables, tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bu
 		filter(MISC, {
 			i(173381),	-- Crafter's Mark I
 			i(173382),	-- Crafter's Mark II
-			i(173383),	-- Crafter's Mark III
+			i(173383, {["timeline"] = {ADDED_9_1_0}}),	-- Crafter's Mark III
 			i(187741, {["timeline"] = {ADDED_9_2_0}}),	-- Crafter's Mark IV
 			i(173384, {["timeline"] = {ADDED_9_1_0}}),	-- Crafter's Mark of the Chained Isle
 			i(187742, {["timeline"] = {ADDED_9_2_0}}),	-- Crafter's Mark of the First Ones
@@ -133,48 +135,26 @@ root(ROOTS.Craftables, tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bu
 			i(172231),	-- Sacred Shard
 			i(172230),	-- Soul Dust
 		}),
-		cat(1365, {	-- Boot Enchantments
-			i(172413),	-- Enchant Boots - Agile Soulwalker
-			i(172419),	-- Enchant Boots - Eternal Agility
-			i(177661),	-- Enchant Boots - Soul Treads
-		}),
-		cat(1370, {	-- Bracer Enchantments
-			i(172415),	-- Enchant Bracers - Eternal Intellect
-			i(172414),	-- Enchant Bracers - Illuminated Soul
-			i(172416),	-- Enchant Bracers - Shaded Hearthing
-		}),
-		cat(1366, {	-- Chest Enchantments
+		n(ARMOR_ENCHANTMENTS, {
 			i(177715),	-- Enchant Chest - Eternal Bounds
 			i(172418),	-- Enchant Chest - Eternal Bulwark
 			i(183738),	-- Enchant Chest - Eternal Insight
 			i(177659),	-- Enchant Chest - Eternal Skirmish
 			i(177962),	-- Enchant Chest - Eternal Stats
 			i(177716),	-- Enchant Chest - Sacred Stats
-		}),
-		cat(1367, {	-- Cloak Enchantments
 			i(172411),	-- Enchant Cloak - Fortified Avoidance
 			i(172412),	-- Enchant Cloak - Fortified Leech
 			i(172410),	-- Enchant Cloak - Fortified Speed
 			i(177660),	-- Enchant Cloak - Soul Vitality
-		}),
-		cat(1368, {	-- Glove Enchantments
+			i(172415),	-- Enchant Bracers - Eternal Intellect
+			i(172414),	-- Enchant Bracers - Illuminated Soul
+			i(172416),	-- Enchant Bracers - Shaded Hearthing
+			i(172413),	-- Enchant Boots - Agile Soulwalker
+			i(172419),	-- Enchant Boots - Eternal Agility
+			i(177661),	-- Enchant Boots - Soul Treads
 			i(172408),	-- Enchant Gloves - Eternal Strength
 			i(172406),	-- Enchant Gloves - Shadowlands Gathering
 			i(172407),	-- Enchant Gloves - Strength of Soul
-		}),
-		cat(1369, {	-- Optional Reagents
-			i(187825, {["timeline"] = { "added 9.2.0" }}),	-- Cosmic Protoweave
-			i(173381),	-- Crafter's Mark I
-			i(173382),	-- Crafter's Mark II
-			i(187823, {["timeline"] = { "added 9.2.0" }}),	-- Magically Regulated Automa Core
-			i(183942),	-- Novice Crafter's Mark
-		}),
-		cat(1371, {	-- Reagents
-			i(172437),	-- Enchanted Elethium Bar
-			i(172438),	-- Enchanted Heavy Callous Hide
-			i(172439),	-- Enchanted Lightless Silk
-		}),
-		cat(1372, {	-- Ring Enchantments
 			i(172357),	-- Enchant Ring - Bargain of Critical Strike
 			i(172358),	-- Enchant Ring - Bargain of Haste
 			i(172359),	-- Enchant Ring - Bargain of Mastery
@@ -184,18 +164,30 @@ root(ROOTS.Craftables, tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bu
 			i(172363),	-- Enchant Ring - Tenet of Mastery
 			i(172364),	-- Enchant Ring - Tenet of Versatility
 		}),
+		filter(MISC, {
+			i(187825, {["timeline"] = {ADDED_9_2_0}}),	-- Cosmic Protoweave
+			i(173381),	-- Crafter's Mark I
+			i(173382),	-- Crafter's Mark II
+			i(187823, {["timeline"] = {ADDED_9_2_0}}),	-- Magically Regulated Automa Core
+			i(183942),	-- Novice Crafter's Mark
+		}),
+		filter(REAGENTS, {
+			i(172437),	-- Enchanted Elethium Bar
+			i(172438),	-- Enchanted Heavy Callous Hide
+			i(172439),	-- Enchanted Lightless Silk
+		}),
 		filter(TOYS, sharedDataSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
 			i(186973),	-- Anima-ted Leash (TOY!)
 		})),
-		filter(WANDS, {
-			i(172462),	-- Enchanted Twilight Wand
-		}),
-		cat(1375, {	-- Weapon Echantments
+		n(WEAPON_ENCHANTMENTS, {
 			i(172365),	-- Enchant Weapon - Ascended Vigor
 			i(172366),	-- Enchant Weapon - Celestial Guidance
 			i(172367),	-- Enchant Weapon - Eternal Grace
 			i(172370),	-- Enchant Weapon - Lightless Force
 			i(172368),	-- Enchant Weapon - Sinful Revelation
+		}),
+		n(WEAPONS, {
+			i(172462),	-- Enchanted Twilight Wand
 		}),
 	}),
 	prof(ENGINEERING, {
@@ -235,32 +227,31 @@ root(ROOTS.Craftables, tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bu
 			i(187831),	-- Pure-Air Sail Extensions
 		}),
 	}),
+	prof(HERBALISM, {
+		spell(2366, {	-- Herb Gathering
+			i(169701),	-- Death Blossom
+			i(169700),	-- Death Blossom Petal
+			i(187699, {["timeline"] = {ADDED_9_2_0}}),	-- First Flower
+			i(168589),	-- Marrowroot
+			i(168591),	-- Marrowroot Petal
+			i(171315),	-- Nightshade
+			i(169697),	-- Nightshade Petal
+			i(168586),	-- Rising Glory
+			i(169550),	-- Rising Glory Petal
+			i(170554),	-- Vigil's Torch
+			i(169699),	-- Vigil's Torch Petal
+			i(168583),	-- Widowbloom
+			i(169698),	-- Widowbloom Petal
+		}),
+	}),
 	prof(INSCRIPTION, {
 		filter(GLYPHS, {
-			i(187884, {	-- Mark of the Twilight Runestag
-				["questID"] = 64986,
-				["classes"] = { DRUID },
-			}),
-			i(187934, {	-- Mark of the Midnight Runestag
-				["questID"] = 65061,
-				["classes"] = { DRUID },
-			}),
-			i(187887, {	-- Mark of the Gloomstalker Dredbat
-				["questID"] = 65048,
-				["classes"] = { DRUID },
-			}),
-			i(187936, {	-- Mark of the Sable Ardenmoth
-				["questID"] = 65062,
-				["classes"] = { DRUID },
-			}),
-			i(187888, {	-- Mark of the Shimmering Ardenmoth
-				["questID"] = 64987,
-				["classes"] = { DRUID },
-			}),
-			i(187931, {	-- Mark of the Regal Dredbat
-				["questID"] = 65059,
-				["classes"] = { DRUID },
-			}),
+			i(187887, {["timeline"] = {ADDED_9_1_5}}),	-- Mark of the Gloomstalker Dredbat (CI!)
+			i(187934, {["timeline"] = {ADDED_9_1_5}}),	-- Mark of the Midnight Runestag (CI!)
+			i(187931, {["timeline"] = {ADDED_9_1_5}}),	-- Mark of the Regal Dredbat (CI!)
+			i(187936, {["timeline"] = {ADDED_9_1_5}}),	-- Mark of the Sable Ardenmoth (CI!)
+			i(187888, {["timeline"] = {ADDED_9_1_5}}),	-- Mark of the Shimmering Ardenmoth (CI!)
+			i(187884, {["timeline"] = {ADDED_9_1_5}}),	-- Mark of the Twilight Runestag (CI!)
 		}),
 		n(HEAD, {
 			i(180755),	-- Fae Revel Masque
@@ -414,125 +405,192 @@ root(ROOTS.Craftables, tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bu
 		}),
 	}),
 	prof(LEATHERWORKING, {
-		filter(BOWS, {
-			i(172350),	-- Composite Bow
+		n(DISCOVERY, {
+			spell(309213, {	-- Boneshatter Armguards [Rank 1]
+				r(332029),	-- Boneshatter Armguards [Rank 2] (RECIPE!)
+				r(332064),	-- Boneshatter Armguards [Rank 3] (RECIPE!)
+				r(338994),	-- Boneshatter Armguards [Rank 4] (RECIPE!)
+			}),
+			spell(309208, {	-- Boneshatter Gauntlets [Rank 1]
+				r(332024),	-- Boneshatter Gauntlets [Rank 2] (RECIPE!)
+				r(332059),	-- Boneshatter Gauntlets [Rank 3] (RECIPE!)
+				r(338989),	-- Boneshatter Gauntlets [Rank 4] (RECIPE!)
+			}),
+			spell(309210, {	-- Boneshatter Greaves [Rank 1]
+				r(332026),	-- Boneshatter Greaves [Rank 2] (RECIPE!)
+				r(332061),	-- Boneshatter Greaves [Rank 3] (RECIPE!)
+				r(338991),	-- Boneshatter Greaves [Rank 4] (RECIPE!)
+			}),
+			spell(309209, {	-- Boneshatter Helm [Rank 1]
+				r(332025),	-- Boneshatter Helm [Rank 2] (RECIPE!)
+				r(332060),	-- Boneshatter Helm [Rank 3] (RECIPE!)
+				r(338990),	-- Boneshatter Helm [Rank 4] (RECIPE!)
+			}),
+			spell(309211, {	-- Boneshatter Pauldrons [Rank 1]
+				r(332027),	-- Boneshatter Pauldrons [Rank 2] (RECIPE!)
+				r(332062),	-- Boneshatter Pauldrons [Rank 3] (RECIPE!)
+				r(338992),	-- Boneshatter Pauldrons [Rank 4] (RECIPE!)
+			}),
+			spell(309206, {	-- Boneshatter Treads [Rank 1]
+				r(332022),	-- Boneshatter Treads [Rank 2] (RECIPE!)
+				r(332057),	-- Boneshatter Treads [Rank 3] (RECIPE!)
+				r(338988),	-- Boneshatter Treads [Rank 4] (RECIPE!)
+			}),
+			spell(309207, {	-- Boneshatter Vest [Rank 1]
+				r(332023),	-- Boneshatter Vest [Rank 2] (RECIPE!)
+				r(332058),	-- Boneshatter Vest [Rank 3] (RECIPE!)
+				r(338987),	-- Boneshatter Vest [Rank 4] (RECIPE!)
+			}),
+			spell(309212, {	-- Boneshatter Waistguard [Rank 1]
+				r(332028),	-- Boneshatter Waistguard [Rank 2] (RECIPE!)
+				r(332063),	-- Boneshatter Waistguard [Rank 3] (RECIPE!)
+				r(338993),	-- Boneshatter Waistguard [Rank 4] (RECIPE!)
+			}),
+			spell(309205, {	-- Umbrahide Armguards [Rank 1]
+				r(332021),	-- Umbrahide Armguards [Rank 2] (RECIPE!)
+				r(332056),	-- Umbrahide Armguards [Rank 3] (RECIPE!)
+				r(338986),	-- Umbrahide Armguards [Rank 4] (RECIPE!)
+			}),
+			spell(309200, {	-- Umbrahide Gauntlets [Rank 1]
+				r(332016),	-- Umbrahide Gauntlets [Rank 2] (RECIPE!)
+				r(332051),	-- Umbrahide Gauntlets [Rank 3] (RECIPE!)
+				r(338981),	-- Umbrahide Gauntlets [Rank 4] (RECIPE!)
+			}),
+			spell(309201, {	-- Umbrahide Helm [Rank 1]
+				r(332017),	-- Umbrahide Helm [Rank 2] (RECIPE!)
+				r(332052),	-- Umbrahide Helm [Rank 3] (RECIPE!)
+				r(338982),	-- Umbrahide Helm [Rank 4] (RECIPE!)
+			}),
+			spell(309202, {	-- Umbrahide Leggings [Rank 1]
+				r(332018),	-- Umbrahide Leggings [Rank 2] (RECIPE!)
+				r(332053),	-- Umbrahide Leggings [Rank 3] (RECIPE!)
+				r(338983),	-- Umbrahide Leggings [Rank 4] (RECIPE!)
+			}),
+			spell(309203, {	-- Umbrahide Pauldrons [Rank 1]
+				r(332019),	-- Umbrahide Pauldrons [Rank 2] (RECIPE!)
+				r(332054),	-- Umbrahide Pauldrons [Rank 3] (RECIPE!)
+				r(338984),	-- Umbrahide Pauldrons [Rank 4] (RECIPE!)
+			}),
+			spell(309198, {	-- Umbrahide Treads [Rank 1]
+				r(332014),	-- Umbrahide Treads [Rank 2] (RECIPE!)
+				r(332049),	-- Umbrahide Treads [Rank 3] (RECIPE!)
+				r(338980),	-- Umbrahide Treads [Rank 4] (RECIPE!)
+			}),
+			spell(309199, {	-- Umbrahide Vest [Rank 1]
+				r(332015),	-- Umbrahide Vest [Rank 2] (RECIPE!)
+				r(332050),	-- Umbrahide Vest [Rank 3] (RECIPE!)
+				r(338979),	-- Umbrahide Vest [Rank 4] (RECIPE!)
+			}),
+			spell(309204, {	-- Umbrahide Waistguard [Rank 1]
+				r(332020),	-- Umbrahide Waistguard [Rank 2] (RECIPE!)
+				r(332055),	-- Umbrahide Waistguard [Rank 3] (RECIPE!)
+				r(338985),	-- Umbrahide Waistguard [Rank 4] (RECIPE!)
+			}),
 		}),
-		filter(CROSSBOWS, {
-			i(172351),	-- Composite Crossbow
-		}),
-		filter(FIST_WEAPONS, {
-			i(172349),	-- Bone Bound Knuckles
-			i(172348),	-- Desolate Leather Cestus
-		}),
-		n(HEAD, {
+		n(ARMOR, {
 			filter(LEATHER, {
-				i(172317),	-- Umbrahide Helm
-				i(172253),	-- Shadebound Helm
-				i(172237),	-- Desolate Leather Helm
-			}),
-			filter(MAIL, {
-				i(172325),	-- Boneshatter Helm
-				i(172261),	-- Shadowscale Helm
-				i(172245),	-- Desolate Scale Helm
-			}),
-		}),
-		n(SHOULDER, {
-			filter(LEATHER, {
-				i(172319),	-- Umbrahide Pauldrons
-				i(172255),	-- Shadebound Pauldrons
-				i(172239),	-- Desolate Leather Pauldrons
-			}),
-			filter(MAIL, {
-				i(172327),	-- Boneshatter Pauldrons
-				i(172263),	-- Shadowscale Pauldrons
-				i(172247),	-- Desolate Scale Pauldrons
-			}),
-		}),
-		n(CHEST, {
-			filter(LEATHER, {
-				i(172314),	-- Umbrahide Vest
-				i(172250),	-- Shadebound Vest
-				i(172234),	-- Desolate Leather Vest
-			}),
-			filter(MAIL, {
-				i(172322),	-- Boneshatter Vest
-				i(172258),	-- Shadowscale Vest
-				i(172242),	-- Desolate Scale Vest
-			}),
-		}),
-		n(HANDS, {
-			filter(LEATHER, {
-				i(172316),	-- Umbrahide Gauntlets
-				i(172252),	-- Shadebound Gauntlets
-				i(172236),	-- Desolate Leather Gauntlets
-			}),
-			filter(MAIL, {
-				i(172324),	-- Boneshatter Gauntlets
-				i(172260),	-- Shadowscale Gauntlets
-				i(172244),	-- Desolate Scale Gauntlets
-			}),
-		}),
-		n(WRIST, {
-			filter(LEATHER, {
-				i(172321),	-- Umbrahide Armguards
-				i(172257),	-- Shadebound Armguards
 				i(172241),	-- Desolate Leather Armguards
+				i(172236),	-- Desolate Leather Gauntlets
+				i(172237),	-- Desolate Leather Helm
+				i(172238),	-- Desolate Leather Leggings
+				i(172239),	-- Desolate Leather Pauldrons
+				i(172235),	-- Desolate Leather Treads
+				i(172234),	-- Desolate Leather Vest
+				i(172240),	-- Desolate Leather Waistguard
+				i(172257),	-- Shadebound Armguards
+				i(172252),	-- Shadebound Gauntlets
+				i(172254),	-- Shadebound Greaves
+				i(172253),	-- Shadebound Helm
+				i(172255),	-- Shadebound Pauldrons
+				i(172251),	-- Shadebound Treads
+				i(172250),	-- Shadebound Vest
+				i(172256),	-- Shadebound Waistguard
+				i(172321),	-- Umbrahide Armguards
+				i(172316),	-- Umbrahide Gauntlets
+				i(172317),	-- Umbrahide Helm
+				i(172318),	-- Umbrahide Leggings
+				i(172319),	-- Umbrahide Pauldrons
+				i(172315),	-- Umbrahide Treads
+				i(172314),	-- Umbrahide Vest
+				i(172320),	-- Umbrahide Waistguard
 			}),
 			filter(MAIL, {
 				i(172329),	-- Boneshatter Armguards
-				i(172265),	-- Shadowscale Armguards
-				i(172249),	-- Desolate Scale Armguards
-			}),
-		}),
-		n(WAIST, {
-			filter(LEATHER, {
-				i(172320),	-- Umbrahide Waistguard
-				i(172256),	-- Shadebound Waistguard
-				i(172240),	-- Desolate Leather Waistguard
-			}),
-			filter(MAIL, {
-				i(172328),	-- Boneshatter Waistguard
-				i(172264),	-- Shadowscale Waistguard
-				i(172248),	-- Desolate Scale Waistguard
-			}),
-		}),
-		n(LEGS, {
-			filter(LEATHER, {
-				i(172318),	-- Umbrahide Leggings
-				i(172254),	-- Shadebound Greaves
-				i(172238),	-- Desolate Leather Leggings
-			}),
-			filter(MAIL, {
+				i(172324),	-- Boneshatter Gauntlets
 				i(172326),	-- Boneshatter Greaves
-				i(172262),	-- Shadowscale Greaves
-				i(172246),	-- Desolate Scale Greaves
-			}),
-		}),
-		n(FEET, {
-			filter(LEATHER, {
-				i(172315),	-- Umbrahide Treads
-				i(172251),	-- Shadebound Treads
-				i(172235),	-- Desolate Leather Treads
-			}),
-			filter(MAIL, {
+				i(172325),	-- Boneshatter Helm
+				i(172327),	-- Boneshatter Pauldrons
 				i(172323),	-- Boneshatter Treads
-				i(172259),	-- Shadowscale Treads
+				i(172322),	-- Boneshatter Vest
+				i(172328),	-- Boneshatter Waistguard
+				i(172249),	-- Desolate Scale Armguards
+				i(172244),	-- Desolate Scale Gauntlets
+				i(172246),	-- Desolate Scale Greaves
+				i(172245),	-- Desolate Scale Helm
+				i(172247),	-- Desolate Scale Pauldrons
 				i(172243),	-- Desolate Scale Treads
+				i(172242),	-- Desolate Scale Vest
+				i(172248),	-- Desolate Scale Waistguard
+				i(172265),	-- Shadowscale Armguards
+				i(172260),	-- Shadowscale Gauntlets
+				i(172262),	-- Shadowscale Greaves
+				i(172261),	-- Shadowscale Helm
+				i(172263),	-- Shadowscale Pauldrons
+				i(172259),	-- Shadowscale Treads
+				i(172258),	-- Shadowscale Vest
+				i(172264),	-- Shadowscale Waistguard
 			}),
 		}),
-		filter(TOYS, {
+		filter(MISC, {
+			i(168419),	-- Comfortable Rider's Barding
+			i(173381),	-- Crafter's Mark I
+			i(173382),	-- Crafter's Mark II
+			i(173383, {["timeline"] = {ADDED_9_1_0}}),	-- Crafter's Mark III
+			i(187741, {["timeline"] = {ADDED_9_2_0}}),	-- Crafter's Mark IV
+			i(173384, {["timeline"] = {ADDED_9_1_0}}),	-- Crafter's Mark of the Chained Isle
+			i(187742, {["timeline"] = {ADDED_9_2_0}}),	-- Crafter's Mark of the First Ones
+			i(172346),	-- Desolate Armor Kit
+			i(172233),	-- Drums of Deathly Ferocity
+			i(172347),	-- Heavy Desolate Armor Kit
+			i(183942),	-- Novice Crafter's Mark
+			i(185960, {["timeline"] = {ADDED_9_1_0}}),	-- Vestige of Origins
+			i(187784, {["timeline"] = {ADDED_9_2_0}}),	-- Vestige of the Eternal
+		}),
+		filter(REAGENTS, {
+			i(172089),	-- Desolate Leather
+			i(172097),	-- Heavy Callous Hide
+			i(172096),	-- Heavy Desolate Leather
+		}),
+		filter(TOYS, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
 			i(186985),	-- Elusive Pet Treat (TOY!)
 			i(186702),	-- Pallid Bone Flute (TOY!)
 			i(186686),	-- Pallid Oracle Bones (TOY!)
+		})),
+		n(WEAPONS, {
+			i(172349),	-- Bone Bound Knuckles
+			i(172350),	-- Composite Bow
+			i(172351),	-- Composite Crossbow
+			i(172348),	-- Desolate Leather Cestus
 		}),
-		i(185960),		-- Vestige of Origins
-		filter(MISC, {
-			i(173382),	-- Crafter's Mark II
-			i(173383),	-- Crafter's Mark III
-			i(187741),	-- Crafter's Mark IV
-			i(173384),	-- Crafter's Mark of the Chained Isle
-			i(187742),	-- Crafter's Mark of the First Ones
-			i(187784),	-- Vestige of the Eternal
+	}),
+	prof(MINING, {
+		spell(2575, {	-- Mining
+			i(171839),	-- Elethium Nugget
+			i(171833),	-- Elethium Ore
+			i(171834),	-- Laestrite Nugget
+			i(171828),	-- Laestrite Ore
+			i(171836),	-- Oxxein Nugget
+			i(171830),	-- Oxxein Ore
+			i(171837),	-- Phaedrum Nugget
+			i(171831),	-- Phaedrum Ore
+			i(171840),	-- Porous Stone
+			i(187700, {["timeline"] = {ADDED_9_2_0}}),	-- Progenium Ore
+			i(171841),	-- Shaded Stone
+			i(171838),	-- Sinvyr Nugget
+			i(171832),	-- Sinvyr Ore
+			i(171835),	-- Solenium Nugget
+			i(171829),	-- Solenium Ore
+			i(177061),	-- Twilight Bark
 		}),
 	}),
 	prof(TAILORING, {
@@ -593,8 +651,8 @@ root(ROOTS.Craftables, tier(SL_TIER, applyclassicphase(SHADOWLANDS_PHASE_ONE, bu
 			i(187784),	-- Vestige of the Eternal
 		}),
 	}),
-}))));
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+})));
+root(ROOTS.NeverImplemented, {
 	n(PROFESSIONS, {
 		prof(ALCHEMY, {
 			tier(SL_TIER, {
@@ -604,4 +662,4 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 			}),
 		}),
 	}),
-}));
+});

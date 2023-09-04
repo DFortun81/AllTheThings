@@ -1,38 +1,13 @@
 -- TODO: remove this file once all recipes are added to profession-specific DBs
-
-
-local Items = root(ROOTS.ItemDBConditional);
-local ProfessionID;
-local i = function(itemID, recipeID, unobtainStatus, requireSkill)
-	if Items[itemID] then
-		print("Duplicate Recipe Item Defined!",itemID,recipeID);
-	else
-		local item = { ["recipeID"] = recipeID, ["requireSkill"] = requireSkill or ProfessionID, ["f"] = RECIPES };
-		-- allow for timeline to be a raw 'u' value or single string of 'timeline' or table of multiple 'timeline' values
-		local unobtainType = unobtainStatus and type(unobtainStatus);
-		if unobtainType then
-			if unobtainType == "number" then
-				item.u = unobtainStatus;
-			elseif unobtainType == "string" then
-				item.timeline = { unobtainStatus };
-			elseif unobtainType == "table" then
-				item.timeline = unobtainStatus;
-			end
-		end
-		Items[itemID] = item;
-	end
-end
-
 -- The only intent of this data is to map ItemID to the learned Recipe. Any other data concerning the Item or Recipe should be Sourced in appropriate Location Source
 -- Use: i(ItemID, RecipeID, [timeline], [requireSkill])
 -- In situations where a specialization of a specific Profession is required, that can be passed as the 4th parameter
 -- Ex: Goblin Engineering, Gnomish Engineering, etc.
 
 -----------------
-ProfessionID = ALCHEMY;
+local i = GetRecipeHelperForProfession(ALCHEMY);
 -----------------
 -- #IF AFTER CLASSIC
-i(6454, 7935); -- Manual: Strong Anti-Venom
 i(9294, 11458); -- Recipe: Wildvine Potion
 i(13487, 17564); -- Recipe: Transmute Water to Undeath
 i(13486, 17563); -- Recipe: Transmute Undeath to Water
@@ -62,6 +37,7 @@ i(3832, 3453); -- Recipe: Elixir of Detect Lesser Invisibility
 -- #IF AFTER MOP
 -- #IF AFTER WOD
 -- #IF AFTER LEGION
+i(6454, 7935); -- Manual: Strong Anti-Venom
 -- #IF AFTER BFA
 -- #IF AFTER SHADOWLANDS
 i(186990, 354885); -- Recipe: Blossom Burst
@@ -86,19 +62,30 @@ i(186991, 307144); -- Transmute: Stones to Ore
 -- #ENDIF
 
 -----------------
-ProfessionID = BLACKSMITHING;
+i = GetRecipeHelperForProfession(COOKING);
 -----------------
 -- #IF AFTER CLASSIC
+i(21025, 25659, "removed 4.0.3"); -- Recipe: Dirge's Kickin' Chimaerok Chops (RECIPE!)
+applyevent(EVENTS.FEAST_OF_WINTER_VEIL, i(17200, 21143)); -- Recipe: Gingerbread Cookie (RECIPE!)
+i(3737, 3400, "removed 4.0.3.2000"); -- Recipe: Soothing Turtle Bisque (RECIPE!)
+i(7678, 9513, "removed 4.0.3"); -- Recipe: Thistle Tea (RECIPE!)
 -- #IF AFTER TBC
 -- #IF AFTER WRATH
 -- #IF AFTER CATA
 -- #IF AFTER MOP
+i(86393, 126654); -- Four Senses Brew / Tablet of Ren Yun (RECIPE!)
 -- #IF AFTER WOD
 -- #IF AFTER LEGION
 -- #IF AFTER BFA
 -- #IF AFTER SHADOWLANDS
-i(183094, 322590); -- Plans: Shadowsteel Helm
-i(183095, 322593); -- Plans: Shadowsteel Pauldrons
+i(187007, 354766); -- Recipe: Bonemeal Bread (RECIPE!)
+i(187804, 359333); -- Recipe: Empty Kettle of Stone Soup (RECIPE!)
+i(184625, 347176); -- Recipe: Extra Sugary Fish Feast (RECIPE!)
+i(184683, 347457); -- Recipe: Extra Lemony Herb Filet (RECIPE!)
+i(184689, 347509); -- Recipe: Extra Fancy Darkmoon Feast (RECIPE!)
+i(182668, 308403); -- Recipe: Feast of Gluttonous Hedonism (RECIPE!)
+i(187008, 354768); -- Recipe: Porous Rock Candy (RECIPE!)
+i(187006, 354764); -- Recipe: Twilight Tea (RECIPE!)
 -- #ENDIF
 -- #ENDIF
 -- #ENDIF
@@ -110,44 +97,7 @@ i(183095, 322593); -- Plans: Shadowsteel Pauldrons
 -- #ENDIF
 
 -----------------
-ProfessionID = COOKING;
------------------
--- #IF AFTER CLASSIC
-i(21025, 25659); -- Recipe: Dirge's Kickin' Chimaerok Chops
-i(17200, 21143, FEAST_OF_WINTER_VEIL); -- Recipe: Gingerbread Cookie
-i(3737, 3400, "removed 4.0.3.2000"); -- Recipe: Soothing Turtle Bisque
--- #if NOT ANYCLASSIC
-i(7678, 9513, REMOVED_FROM_GAME); -- Recipe: Thistle Tea
--- #endif
--- #IF AFTER TBC
--- #IF AFTER WRATH
--- #IF AFTER CATA
--- #IF AFTER MOP
-i(86393, 126654); -- Four Senses Brew / Tablet of Ren Yun
--- #IF AFTER WOD
--- #IF AFTER LEGION
--- #IF AFTER BFA
--- #IF AFTER SHADOWLANDS
-i(187007, 354766); -- Recipe: Bonemeal Bread
-i(187804, 359333); -- Recipe: Empty Kettle of Stone Soup
-i(184625, 347176); -- Recipe: Extra Sugary Fish Feast
-i(184683, 347457); -- Recipe: Extra Lemony Herb Filet
-i(184689, 347509); -- Recipe: Extra Fancy Darkmoon Feast
-i(182668, 308403); -- Recipe: Feast of Gluttonous Hedonism
-i(187008, 354768); -- Recipe: Porous Rock Candy
-i(187006, 354764); -- Recipe: Twilight Tea
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
-
------------------
-ProfessionID = ENGINEERING;
+i = GetRecipeHelperForProfession(ENGINEERING);
 -----------------
 -- #IF AFTER CLASSIC
 -- #IF AFTER TBC
@@ -173,7 +123,7 @@ i(183858, 310535); -- Schematic: Wormhole Generator: Shadowlands
 -- #ENDIF
 
 -----------------
-ProfessionID = INSCRIPTION;
+i = GetRecipeHelperForProfession(INSCRIPTION);
 -----------------
 -- #IF AFTER CLASSIC
 -- #IF AFTER TBC
@@ -208,7 +158,7 @@ i(187806, 359890); -- Vantus Rune Technique: Sepulcher of the First Ones
 -- #ENDIF
 
 -----------------
-ProfessionID = JEWELCRAFTING;
+i = GetRecipeHelperForProfession(JEWELCRAFTING);
 -----------------
 -- #IF AFTER CLASSIC
 -- #IF AFTER TBC
@@ -309,33 +259,7 @@ i(186994, 355189); -- Design: Shaded Stone Statue
 -- #ENDIF
 
 -----------------
-ProfessionID = LEATHERWORKING;
------------------
--- #IF AFTER CLASSIC
--- #IF AFTER TBC
--- #IF AFTER WRATH
--- #IF AFTER CATA
--- #IF AFTER MOP
--- #IF AFTER WOD
--- #IF AFTER LEGION
--- #IF AFTER BFA
--- #IF AFTER SHADOWLANDS
-i(187000, 355354); -- Pattern: Elusive Pet Treat
-i(183839, 308897); -- Pattern: Heavy Callous Hide
-i(183100, 324088); -- Pattern: Heavy Desolate Armor Kit
-i(186999, 354800); -- Pattern: Pallid Bone Flute
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
-
------------------
-ProfessionID = TAILORING;
+i = GetRecipeHelperForProfession(TAILORING);
 -----------------
 -- #IF AFTER CLASSIC
 -- #IF AFTER TBC

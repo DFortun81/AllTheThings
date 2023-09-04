@@ -1,6 +1,9 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+-----------------------------------------------------
+local AllDifficulties = {LFR_RAID,NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID};
+
 root(ROOTS.Instances, tier(LEGION_TIER, {
 	inst(786, {	-- The Nighthold
 		["isRaid"] = true,
@@ -13,41 +16,42 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(10829, {    -- Arcing Aqueducts
-                    crit(1, {    -- Skorpyron
+                    crit(31445, {    -- Skorpyron
                         ["_encounter"] = { 1706, LFR_RAID },
                     }),
-                    crit(2, {    -- Chronomatic Anomaly
+                    crit(31444, {    -- Chronomatic Anomaly
                         ["_encounter"] = { 1725, LFR_RAID },
                     }),
-                    crit(3, {    -- Trilliax
+                    crit(31443, {    -- Trilliax
                         ["_encounter"] = { 1731, LFR_RAID },
                     }),
                 }),
 				ach(10837, {    -- Royal Athenaeum
-                    crit(1, {    -- Spellblade Aluriel
+                    crit(31447, {    -- Spellblade Aluriel
                         ["_encounter"] = { 1751, LFR_RAID },
                     }),
-                    crit(2, {    -- Star Augur Etraeus
+                    crit(31448, {    -- Star Augur Etraeus
                         ["_encounter"] = { 1732, LFR_RAID },
                     }),
-                    crit(3, {    -- High Botanist Tel'arn
+                    crit(31449, {    -- High Botanist Tel'arn
                         ["_encounter"] = { 1761, LFR_RAID },
                     }),
                 }),
 				ach(10838, {    -- Nightspire
-                    crit(1, {    -- Tichondrius
+                    crit(31452, {    -- Tichondrius
                         ["_encounter"] = { 1762, LFR_RAID },
                     }),
-                    crit(2, {    -- Krosus
+                    crit(31451, {    -- Krosus
                         ["_encounter"] = { 1713, LFR_RAID },
                     }),
-                    crit(3, {    -- Elisande
+                    crit(31450, {    -- Elisande
                         ["_encounter"] = { 1743, LFR_RAID },
                     }),
                 }),
 				ach(10839, {    -- Betrayer's Rise
-                    crit(1, {    -- Gul'dan
+                    crit(31453, {    -- Gul'dan
                         ["_encounter"] = { 1737, LFR_RAID },
+						["provider"] = { "n", 104154 },	-- Gul'dan
                     }),
                 }),
 				ach(10868),	-- The Nighthold Guild Run
@@ -98,6 +102,19 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["provider"] = { "n", 106522 },	-- Archmage Khadgar
 					["g"] = {
 						sp(233377),	-- Gaze of Aman'Thul
+					},
+				}),
+			}),
+			d(AllDifficulties, {
+				e(1737, {	-- Gul'dan
+					["crs"] = {
+						104154,	-- Gul'dan
+						111022,	-- The Demon Within
+					},
+					["g"] = {
+						i(141061, {	-- Technique: Grimoire of the Abyssal
+							["timeline"] = { ADDED_10_1_5 },
+						}),
 					},
 				}),
 			}),
@@ -159,7 +176,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				}),
 				header(HEADERS.Achievement, 10829, {	-- Arcing Aqueducts
 					cr(102263, e(1706, {	-- Skorpyron
-						ach(10829, crit(1)),	-- Arcing Aqueducts / Skorpyron
 						i(139642),	-- Vantus Rune Technique: Skorpyron [Rank 1] (RECIPE!)
 						i(137754),	-- Vantus Rune Technique: Skorpyron [Rank 2] (RECIPE!)
 						i(140901),	-- Vintage Suramar Nobility Hat
@@ -178,10 +194,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						i(140827),	-- Manatoxin Gland
 					})),
 					cr(104415, e(1725, {	-- Chronomatic Anomaly
-						ach(10829, crit(3)),	-- Arcing Aqueducts / Chronomatic Anomaly
 						i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 1] (RECIPE!)
 						i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 2] (RECIPE!)
-						i(138828),	-- Illusion: Chronos
+						i(138828),	-- Illusion: Chronos (ILLUSION!)
 						i(140903),	-- Hood of Fading Opportunity
 						i(140894),	-- Zealous Timestone Pendant
 						i(140853),	-- Chaos-Scarred Mantle
@@ -198,7 +213,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						i(140831),	-- Suspended Nightwell Droplet
 					})),
 					cr(104288, e(1731, {	-- Trilliax
-						ach(10829, crit(2)),	-- Arcing Aqueducts / Trilliax
 						i(139644),	-- Vantus Rune Technique: Trilliax [Rank 1] (RECIPE!)
 						i(137756),	-- Vantus Rune Technique: Trilliax [Rank 2] (RECIPE!)
 						i(138375),	-- Cape of Second Sight
@@ -230,7 +244,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				}),
 				header(HEADERS.Achievement, 10837, {	-- Royal Athenaeum
 					cr(104881, e(1751, {	-- Spellblade Aluriel
-						ach(10837, crit(1)),	-- Royal Athenaeum / Spellblade Aluriel
 						i(139645),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 1] (RECIPE!)
 						i(137757),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 2] (RECIPE!)
 						i(140866),	-- Nightborne Battle-Magus Hood
@@ -249,7 +262,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						i(140834),	-- Soul of Flame
 					})),
 					cr(103758, e(1732, {	-- Star Augur Etraeus
-						ach(10837, crit(2)),	-- Royal Athenaeum / Star Augur Etraeus
 						i(142078),	-- Pattern: Imbued Silkweave Bag (Rank 3)
 						i(139649),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 1] (RECIPE!)
 						i(137761),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 2] (RECIPE!)
@@ -284,7 +296,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 							109038,	-- Solarist Tel'arn
 						},
 						["g"] = {
-							ach(10837, crit(3)),	-- Royal Athenaeum / High Botanist Tel'arn
 							i(143751),	-- Technique: Glyph of Twilight Bloom (RECIPE!)
 							i(139647),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 1] (RECIPE!)
 							i(137759),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 2] (RECIPE!)
@@ -306,7 +317,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				}),
 				header(HEADERS.Achievement, 10838, {	-- Nightspire
 					cr(103685, e(1762, {	-- Tichondrius
-						ach(10838, crit(2)),	-- Nightspire / Tichondrius
 						i(139646),	-- Vantus Rune Technique: Tichondrius [Rank 1] (RECIPE!)
 						i(137758),	-- Vantus Rune Technique: Tichondrius [Rank 2] (RECIPE!)
 						i(138338),	-- Doomblade Spaulders
@@ -332,7 +342,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						i(140824),	-- Writ of Subjugation
 					})),
 					cr(101002, e(1713, {	-- Krosus
-						ach(10838, crit(1)),	-- Nightspire / Krosus
 						i(139648),	-- Vantus Rune Technique: Krosus [Rank 1] (RECIPE!)
 						i(137760),	-- Vantus Rune Technique: Krosus [Rank 2] (RECIPE!)
 						i(140870),	-- Architect's Coif of Despair
@@ -359,9 +368,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						i(140835),	-- Unkindled Ember
 					})),
 					cr(106643, e(1743, {	-- Elisande
-						crit(3, {	-- Elisande
-							["achievementID"] = 10838,	-- Nightspire
-						}),
 						i(139650),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 1] (RECIPE!)
 						i(137762),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 2] (RECIPE!)
 						i(138332),	-- Doomblade Cowl
@@ -514,7 +520,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					ach(10697),	-- Grand Opening
 					i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 1] (RECIPE!)
 					i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 2] (RECIPE!)
-					i(138828),	-- Illusion: Chronos
+					i(138828),	-- Illusion: Chronos (ILLUSION!)
 					i(140903),	-- Hood of Fading Opportunity
 					i(140894),	-- Zealous Timestone Pendant
 					i(140853),	-- Chaos-Scarred Mantle
@@ -568,9 +574,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				})),
 				cr(104881, e(1751, {	-- Spellblade Aluriel
 					ach(10817, {	-- A Change In Scenery
-						crit(1),	-- The Shal'dorei Terrace
-						crit(2),	-- The Shattered Walkway
-						crit(3),	-- Astromancer's Rise
+						crit(31807),	-- The Shal'dorei Terrace
+						crit(31806),	-- The Shattered Walkway
+						crit(31808),	-- Astromancer's Rise
 					}),
 					i(139645),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 1] (RECIPE!)
 					i(137757),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 2] (RECIPE!)
@@ -683,7 +689,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					},
 				}),
 				cr(103758, e(1732, {	-- Star Augur Etraeus
-					ach(10851),	-- Elementalry!
+					ach(10851, {	-- Elementalry!
+						["crs"] = { 111595 },	-- Well-Traveled Nether Elemental
+					}),
 					i(142078),	-- Pattern: Imbued Silkweave Bag
 					i(139649),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 1] (RECIPE!)
 					i(137761),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 2] (RECIPE!)
@@ -717,7 +725,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(140841),	-- Tempest of the Heavens
 				})),
 				cr(106643, e(1743, {	-- Elisande
-					ach(10699),	-- Infinitesimal
+					ach(10699, {	-- Infinitesimal
+						["crs"] = { 108802 },	-- Infinite Drakeling
+					}),
 					i(139650),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 1] (RECIPE!)
 					i(137762),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 2] (RECIPE!)
 					i(143565, {	-- Helm of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
@@ -751,7 +761,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(140810),	-- Farsight Spiritjewel
 				})),
 				cr(104154, e(1737, {	-- Gul'dan
-					ach(10696),	-- I've Got My Eyes On You
+					ach(10696, {	-- I've Got My Eyes On You
+						["crs"] = { 105630 },	-- Eye of Gul'dan <Gul'dan's Minion>
+					}),
 					i(137574),	-- Felblaze Infernal (MOUNT!)
 					i(139651),	-- Vantus Rune Technique: Gul'dan [Rank 1] (RECIPE!)
 					i(137763),	-- Vantus Rune Technique: Gul'dan [Rank 2] (RECIPE!)
@@ -876,7 +888,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				cr(104415, e(1725, {	-- Chronomatic Anomaly
 					i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 1] (RECIPE!)
 					i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 2] (RECIPE!)
-					i(138828),	-- Illusion: Chronos
+					i(138828),	-- Illusion: Chronos (ILLUSION!)
 					i(140903),	-- Hood of Fading Opportunity
 					i(140894),	-- Zealous Timestone Pendant
 					i(140853),	-- Chaos-Scarred Mantle
@@ -1230,7 +1242,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					ach(10842),	-- Mythic: Chronomatic Anomaly
 					i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 1] (RECIPE!)
 					i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 2] (RECIPE!)
-					i(138828),	-- Illusion: Chronos
+					i(138828),	-- Illusion: Chronos (ILLUSION!)
 					i(140903),	-- Hood of Fading Opportunity
 					i(140894),	-- Zealous Timestone Pendant
 					i(140853),	-- Chaos-Scarred Mantle
@@ -1542,7 +1554,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(46328),	-- Triggers when the port to Elisande is activated
 	}),
 });
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(LEGION_TIER, {
 		inst(786, {	-- The Nighthold
 			i(157764),	-- Claw of the Crystalline Scorpid
@@ -1585,4 +1597,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(180620),	-- High Shadow Councilor's Wrap
 		}),
 	}),
-}));
+});

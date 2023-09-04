@@ -8,17 +8,6 @@ root(ROOTS.Zones, {
 			["icon"] = "Interface\\Icons\\Achievement_zone_zuldrak_03",
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["groups"] = {
-							crit(18, {	-- Gutretch
-								["coord"] = { 13.2, 66.8, ZULDRAK },
-								["cr"] = 66639,	-- Gutretch <Master Pet Tamer>
-							}),
-						},
-					})),
 					explorationAch(1267),	-- Explore Zul'Drak
 					ach(1596, {	-- Guru of Drakuru
 						crit(5805, {	-- Betrayal
@@ -111,8 +100,7 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
 						641,	-- Arctic Hare (PET!)
 						387,	-- Snake (PET!)
@@ -125,8 +113,7 @@ root(ROOTS.Zones, {
 							["description"] = "Spawns in the farms south of The Argent Stand.",
 						}),
 					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(4322),	-- Altar of Har'koa
@@ -184,6 +171,11 @@ root(ROOTS.Zones, {
 					fp(307, {	-- Zim'Torga
 						["cr"] = 28624,	-- Maaka <Flight Master>
 						["coord"] = { 60.0, 56.8, ZULDRAK },
+					}),
+				}),
+				petbattles({
+					n(66639, {	-- Gutretch <Master Pet Tamer>
+						["coord"] = { 13.2, 66.8, ZULDRAK },
 					}),
 				}),
 				n(QUESTS, {
@@ -479,13 +471,15 @@ root(ROOTS.Zones, {
 						["qg"] = 28401,	-- Har'koa
 						["sourceQuest"] = 12653,	-- Back to Har'koa
 					}),
-					q(12902, {	-- In Search Of Answers -- aa
-						["coord"] = { 32.1, 75.7, ZULDRAK },
+					q(12902, {	-- In Search Of Answers
 						["qg"] = 29687,	-- Crusader Lord Lantinga
+						-- #if AFTER 7.3.5.25600
 						["sourceQuests"] = {
 							49534,	-- Warchief's Command: Zul'Drak!
 							49552,	-- Hero's Call: Zul'Drak!
 						},
+						-- #endif
+						["coord"] = { 32.1, 75.7, ZULDRAK },
 					}),
 					q(12661, {	-- Infiltrating Voltarus
 						["coord"] = { 14.0, 73.7, ZULDRAK },
@@ -971,12 +965,12 @@ root(ROOTS.Zones, {
 					}),
 					q(12587, {	-- Troll Patrol
 						-- almost certainly the removed version, will check in Wrath Classic
+						-- confirmed available 2023-7-30 [70/Human/Paladin/Revered]
 						["qg"] = 28039,	-- Commander Kunz
 						["sourceQuest"] = 12596,	-- Pa'Troll
 						["coord"] = { 40.2, 66.6, ZULDRAK },
 						["maxReputation"] = { 1106, EXALTED },	-- Argent Crusade, Exalted.
 						["isDaily"] = true,
-						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(12588, {	-- Troll Patrol: Can You Dig It?
 						["coord"] = { 48.7, 78.8, ZULDRAK },
@@ -1200,6 +1194,7 @@ root(ROOTS.Zones, {
 							{ 75.2, 38.6, ZULDRAK },
 						},
 						["cr"] = 29334,	-- Gundrak Raptor
+						["timeline"] = { ADDED_3_2_0 },
 					}),
 					i(41120, {	-- Plans: Reinforced Cobalt Legplates (RECIPE!)
 						["coords"] = {

@@ -16,7 +16,7 @@ r(27028),	-- First Aid
 3.0.1.8303
 r(45542),	-- First Aid
 3.0.1.8622
-r(51801),	-- 
+r(51801),	--
 4.0.1.12911
 r(74559),	-- First Aid
 5.0.3.15890
@@ -69,7 +69,7 @@ r(45542),	-- First Aid
 r(45545),	-- Frostweave Bandage
 r(45546),	-- Heavy Frostweave Bandage
 3.0.1.8622
-r(51801),	-- 
+r(51801),	--
 4.0.1.12911
 r(74556),	-- Embersilk Bandage
 r(74557),	-- Heavy Embersilk Bandage

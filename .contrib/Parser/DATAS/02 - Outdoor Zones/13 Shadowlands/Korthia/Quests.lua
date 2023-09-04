@@ -77,7 +77,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							i(185114),	-- Redeemed Inquisitor's Wraps
 						},
 					}),
-					i(187000),	-- Pattern: Elusive Pet Treat (RECIPE!)
 					i(186017),	-- Korthite Crystal - rewarded by some dailies and found in some treasures, but does not seem statically attached to anything specific.  acquisition/availability may be based on having completed the campaign questline to the point where you get to the Vault of Secrets
 					i(186548),	-- Chompy (PET!)
 					i(187184),	-- Vesper of Clarity (TOY!)
@@ -378,18 +377,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 63.0, 25.6, KORTHIA },
 					["g"] = {
-						i(187218, {	-- Tome of Origins
-							recipe(352443, {	-- Vestige of Origins
-								["requireSkill"] = JEWELCRAFTING,
-							}),
-							recipe(352445, {	-- Vestige of Origins
-								["requireSkill"] = TAILORING,
-							}),
-							recipe(352439, {	-- Vestige of Origins
+						i(187218, {	-- Tome of Origins (RECIPE!)
+							r(352439, {	-- Vestige of Origins (RECIPE!)
 								["requireSkill"] = BLACKSMITHING,
 							}),
-							recipe(352444, {	-- Vestige of Origins
+							r(352443, {	-- Vestige of Origins (RECIPE!)
+								["requireSkill"] = JEWELCRAFTING,
+							}),
+							r(352444, {	-- Vestige of Origins (RECIPE!)
 								["requireSkill"] = LEATHERWORKING,
+							}),
+							r(352445, {	-- Vestige of Origins (RECIPE!)
+								["requireSkill"] = TAILORING,
 							}),
 						}),
 					},
@@ -782,7 +781,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["coord"] = { 63.1, 24.5, KORTHIA },
 					["_drop"] = { "g" },	-- Anima Trash
 				}),
-				------ Misc ------
+				------ Miscellaneous ------
 				q(63623, {	-- Filling an Empty Throne
 					["customCollect"] = "SL_COV_NEC",	-- Necrolord
 					["sourceQuests"] = { 63622 },	-- Victory in Our Name
@@ -1093,7 +1092,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					i(187159),	-- Shadow Slicing Shortsword (TOY!)
 				},
 			}),
-				-- MISC --
+			------ Miscellaneous ------
 			q(64106, {	-- A Unified Effort
 				["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 				["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
@@ -1368,6 +1367,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
 				["coord"] = { 60.5, 27.7, KORTHIA },
+				["g"] = {
+					i(187000),	-- Pattern: Elusive Pet Treat (RECIPE!)
+				},
 			}),
 			q(63781, {	-- Mawsworn Battle Plans
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
@@ -1430,6 +1432,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["coord"] = { 60.5, 27.6, KORTHIA },
 				["g"] = {
 					ach(15056),		-- Friend of Bloop
+					i(187000),	-- Pattern: Elusive Pet Treat (RECIPE!)
 				},
 			}),
 			q(64016, {	-- Oozing with Character (Ooz)
@@ -1438,6 +1441,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["coord"] = { 60.5, 27.6, KORTHIA },
 				["g"] = {
 					ach(15055),	-- Friend of Ooz
+					i(187000),	-- Pattern: Elusive Pet Treat (RECIPE!)
 				},
 			}),
 			q(63989, {	-- Oozing with Character (Plaguey)
@@ -1446,6 +1450,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["coord"] = { 60.5, 27.6, KORTHIA },
 				["g"] = {
 					ach(15057),		-- Friend of Plaguey
+					i(187000),	-- Pattern: Elusive Pet Treat (RECIPE!)
 				},
 			}),
 			q(63935, {	-- Precious Roots
@@ -1564,12 +1569,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	q(64563),	-- triggered when turning in #64556, "In Need of Assistance"
-	q(64737),	-- triggered when turning in #64271, "A More Civilized Way" - received i(185115), Redeemed Inquisitor's Drape - perhaps a universal 'received covenant transmog' tracking quest?  got it the next day on my Kyrian shaman, who received i(184989), Forsworn Aspirant's Wraps.  was the first covenant mog for both characters ever but perhaps could be a weekly lockout or something? (See Errors for other ways to get this)
-	q(64507),	-- triggered after picking up #64211, "Doorway in the Dark"
+	q(64563),	-- triggered when turning in 'In Need of Assistance' (questID 64556) (spellID 357754)
+	q(64737),	-- triggered when turning in 'A More Civilized Way' (questID 64271) - received i(185115), Redeemed Inquisitor's Drape - perhaps a universal 'received covenant transmog' tracking quest?  got it the next day on my Kyrian shaman, who received i(184989), Forsworn Aspirant's Wraps.  was the first covenant mog for both characters ever but perhaps could be a weekly lockout or something? (See Errors for other ways to get this)
+	q(64507),	-- triggered after picking up 'Doorway in the Dark' (questID 64211) (spellID 356686)
 	q(64533),	-- triggered after listening to the entirety of the Primus's RP after turning in "Covenants Renewed"
-	q(64377),	-- triggered after watching Thrall/Draka RP about Garrosh
+	q(64377),	-- triggered after watching Thrall/Draka RP about Garrosh (spellID 356325)
 	q(64335),	-- triggered after watching Alexandros/Darion Mograine RP about Tirion
-	q(64429),	-- triggered after watching Jaina/Uther RP about Arthas
-	q(64577),	-- triggered after watching Tal-Galan/Ve'nari RP about Zereth Mortis
+	q(64429),	-- triggered after watching Jaina/Uther RP about Arthas (spellID 356398)
+	q(64577),	-- triggered after watching Tal-Galan/Ve'nari RP about Zereth Mortis (spellID 358146)
 });

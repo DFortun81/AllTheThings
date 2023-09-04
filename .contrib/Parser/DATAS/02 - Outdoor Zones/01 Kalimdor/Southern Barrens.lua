@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["timeline"] = { "added 4.0.3" },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(4996, {	-- Explore Southern Barrens
+				explorationAch(4996, {	-- Explore Southern Barrens
 					["timeline"] = { "added 4.0.3" },
 				}),
 				ach(4937, {	-- Southern Barrens Quests (A)
@@ -97,8 +97,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					635,	-- Adder (PET!)
 					474,	-- Cheetah Cub (PET!)
@@ -111,8 +110,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["description"] = "Can be found with groups of roaming Dusthoof Giraffe.",
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, {
 				exploration(359),	-- Bael Modan
@@ -538,7 +536,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(5478),	-- Dig Rat Stew
-						i(5487, {	-- Recipe: Dig Rat Stew
+						i(5487, {	-- Recipe: Dig Rat Stew (RECIPE!)
 							["timeline"] = { "removed 4.3.0" },
 						}),
 					},
@@ -1982,7 +1980,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(44977, {	-- Recipe: Dig Rat Stew
+						i(44977, {	-- Recipe: Dig Rat Stew (RECIPE!)
 							["timeline"] = { "added 3.1.0.9626", "deleted 4.3.0.15005" },
 						}),
 					},
@@ -2022,7 +2020,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 3459,	-- Razormane Warfrenzy
 				}),
-				i(44977, {	-- Recipe: Dig Rat Stew
+				i(44977, {	-- Recipe: Dig Rat Stew (RECIPE!)
 					["timeline"] = { "added 3.1.0.9626", "deleted 4.3.0.15005" },
 					["crs"] = {
 						39153,	-- Excavation Raider
@@ -2031,10 +2029,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						3377,	-- Bael'dun Rifleman
 					},
 				}),
-				i(6663, {	-- Recipe: Elixir of Giant Growth
+				i(6663, {	-- Recipe: Elixir of Giant Growth (RECIPE!)
 					["description"] = "Can drop from any mob in the Barrens.",
 				}),
-				i(6661, {	-- Recipe: Savory Deviate Delight
+				i(6661, {	-- Recipe: Savory Deviate Delight (RECIPE!)
 					["description"] = "Can drop from any mob in the Barrens.",
 				}),
 			}),

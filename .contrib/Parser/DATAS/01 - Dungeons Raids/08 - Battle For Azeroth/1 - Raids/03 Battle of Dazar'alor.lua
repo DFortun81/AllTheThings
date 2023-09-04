@@ -262,7 +262,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }
 							i(165577),	-- Bwonsamdi's Bargain
 							i(165578),	-- Mirror of Entwined Fate
 							i(165696),	-- Formula: Enchanted Tiki Mask (RECIPE!)
-							i(165703),	-- Breath of Bwonsamdi
 							i(168129),	-- Essence of the Troll Dynasty
 						},
 					}),
@@ -347,7 +346,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }
 							i(165566),	-- Lord Admiral's Signet
 							i(165570),	-- Everchill Anchor
 							i(165576),	-- Tidestorm Codex
-							i(165703),	-- Breath of Bwonsamdi
 						},
 					}),
 				}),

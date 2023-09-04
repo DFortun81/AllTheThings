@@ -4,8 +4,8 @@
 
 root(ROOTS.ExpansionFeatures, {
 	tier(BFA_TIER, {
-		n(-10057, {	-- War Effort
-			n(-233, {	-- War Front: The Battle for Stromgarde
+		n(WARFRONT, {
+			n(WARFRONT_BATTLE_FOR_STROMGARDE, {
 				n(QUESTS, {
 					q(53673, {	-- Armor Up!
 						["races"] = ALLIANCE_ONLY,
@@ -69,8 +69,8 @@ root(ROOTS.ExpansionFeatures, {
 
 root(ROOTS.HiddenQuestTriggers, {
 	tier(BFA_TIER, {
-		n(-10057, {	-- War Effort
-			n(-233, {	-- War Front: The Battle for Stromgarde
+		n(WARFRONT, {
+			n(WARFRONT_BATTLE_FOR_STROMGARDE, {
 				q(51342, {["repeatable"]=true}),	-- completion of Normal warfront
 			}),
 		}),

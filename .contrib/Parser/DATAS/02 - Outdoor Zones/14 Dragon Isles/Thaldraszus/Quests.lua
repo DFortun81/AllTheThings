@@ -178,8 +178,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(66087, {	-- Closing Time
 					["sourceQuests"] = {
-						66083,	-- Feels Like the First Time
 						66084,	-- Times Like These
+						66085, -- If We Could Turn Back Time
 					},
 					["provider"] = { "n", 190929 },	-- Aeonormu
 					["coord"] = { 57.5, 78.9, THALDRASZUS },
@@ -394,6 +394,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuestNumRequired"] = 1,
 					["sourceQuests"] = {
 						66221,	-- Moving On
+						66159,	-- A Message Most Dire
 						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
@@ -996,16 +997,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(72422, {	-- Stop the Presses
 					["sourceQuests"] = { 72419 },	-- Cleaning up the Cliffraff
-					--["provider"] = { "n", 199301 },	-- Investigator Erima
-					--["coord"] = { 46.4, 55.9, THALDRASZUS },
+					["provider"] = { "n", 199391 },	-- Maldra Flametongue
+					["coord"] = { 46.4, 55.9, THALDRASZUS },
 					["g"] = {
 						i(203390),	-- Maldra's Ring of Elemental Binding
 					},
 				}),
 				q(72421, {	-- The Quill to Power
 					["sourceQuests"] = { 72419 },	-- Cleaning up the Cliffraff
-					--["provider"] = { "n", 199301 },	-- Investigator Erima
-					--["coord"] = { 46.4, 55.9, THALDRASZUS },
+					["provider"] = { "n", 199391 },	-- Maldra Flametongue
+					["coord"] = { 46.4, 55.9, THALDRASZUS },
 				}),
 				q(72420, {	-- Wreckonciliation
 					["sourceQuests"] = { 72419 },	-- Cleaning up the Cliffraff
@@ -1074,7 +1075,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 57.1, 64.6, THALDRASZUS },
 				}),
 			}),
-			------ Misc ------
+			------ Miscellaneous ------
 			q(67093, {	-- An Anomalous Shrine
 				["sourceQuests"] = { 65962 },	-- The Never-Final Countdown
 				["provider"] = { "n", 192543 },	-- Archivist Arenial
@@ -1156,12 +1157,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(THALDRASZUS, {
-		q(67030),	-- WQ Available?
-		q(72366, {["name"] = "Account Dragonflight Campaign Completed"}),	-- triggered after completing 'Moving On' (66221)
+		q(67030),	-- Unlocks access to Adventure Mode within the Dragon Isles (spellID 393788 & 377069)
+		q(72366, {["name"] = "Dragonflight Campaign Completed [Account]"}),	-- triggered after completing 'Moving On' (questID 66221)
 		q(72369, {["repeatable"] = true}),	-- flags complete while 'Aiding the Accord' is active/completed
-		q(72084),	-- Triggers during 'The Fog of Battle' (66246)
-		q(72110),	-- when delivering Gleamfish to spawn 'The Great Shellkhan'
-		q(72125),	-- Triggers during 'Tying Things Together' (66248)
+		q(72084),	-- Triggers during 'The Fog of Battle' (questID 66246) (spellID 392476)
+		q(72110),	-- when delivering Gleamfish to spawn 'The Great Shellkhan' (spellID 392694)
+		q(72125),	-- Triggers during 'Tying Things Together' (questID 66248) (spellID 392925)
 		-- Achievement Framing a New Perspective
 		q(72142),	-- The Seat of the Aspects
 		q(72143),	-- The Cascades
@@ -1185,6 +1186,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(75192),    -- Solicited Opinions question 1 answer 2
 		q(75191),    -- Solicited Opinions question 1 answer 1
 		-- Stay awhile Listening
-		q(73960),	--
+		q(73960),	-- (spellID 406027)
 	}),
 }));

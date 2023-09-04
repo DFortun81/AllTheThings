@@ -2849,15 +2849,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
-			-- #if AFTER CATA
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					484,	-- Desert Spider (PET!)
-					430,	-- Gold Beetle (PET!)
 					431,	-- Rattlesnake (PET!)
 					511,	-- Sidewinder (PET!)
 				}},
 				["groups"] = {
+					pet(430),	-- Gold Beetle (PET!)
 					pet(491, {	-- Sand Kitten (PET!)
 						["description"] = "This pet has very few spawn points and may be easier to find as a second pet, but is sometimes around Gadgetzan. 'Rare' kittens are not easy to come across.",
 					}),
@@ -2870,8 +2869,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					pet(492),	-- Stinkbug (PET!)
 					pet(432),	-- Stripe-Tailed Scorpid (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["110:140:611:147"] = 986,	-- Zalashji's Den
@@ -2905,7 +2903,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #endif
 			n(FACTIONS, {
 				faction(369, {	-- Gadgetzan
-					["icon"] = icon("INV_Misc_Coin_01"),
+					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForGadgetzhan,
 					-- #endif
@@ -3285,7 +3283,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(16971),	-- Clamlette Surprise
 						-- #if AFTER WRATH
-						recipe(64054),	-- Clamlette Magnifique
+						recipe(64054),	-- Clamlette Magnifique (RECIPE!)
 						-- #endif
 					},
 				}),
@@ -3294,11 +3292,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 6611,	-- To Gadgetzan You Go!
 					["coord"] = { 52.63, 28.12, TANARIS },
 					["timeline"] = { "added 3.1.0.9637", "removed 4.0.3" },
-					["lockCriteria"] = { 1, "spellID", 64054 },	-- Clamlette Magnifique
+					["lockCriteria"] = { 1, "spellID", 64054 },	-- Clamlette Magnifique (RECIPE!)
 					["requireSkill"] = COOKING,
 					["groups"] = {
 						i(16971),	-- Clamlette Surprise
-						recipe(64054),	-- Clamlette Magnifique
+						recipe(64054),	-- Clamlette Magnifique (RECIPE!)
 					},
 				}),
 				q(2882, {	-- Cuergo's Gold
@@ -5116,13 +5114,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 50.8, 27.0, TANARIS },
 					-- #endif
 					["groups"] = {
-						i(6057, {	-- Recipe: Nature Protection Potion
+						i(6057, {	-- Recipe: Nature Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(9303),	-- Recipe: Philosopher's Stone
-						i(12958),	-- Recipe: Transmute Arcanite
-						i(9304),	-- Recipe: Transmute Iron to Gold
-						i(9305, {	-- Recipe: Transmute Mithril to Truesilver
+						i(9303),	-- Recipe: Philosopher's Stone (RECIPE!)
+						i(12958),	-- Recipe: Transmute Arcanite (RECIPE!)
+						i(9304),	-- Recipe: Transmute Iron to Gold (RECIPE!)
+						i(9305, {	-- Recipe: Transmute Mithril to Truesilver (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -5150,7 +5148,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 3.3.2.11403", "removed 4.0.3.13277" },
 				}),
 				n(40216, {	-- Blazzek the Biter <Vicious Gladiator>
-					["itemID"] = 137642,	-- Mark of Honor
+
 					["coord"] = { 51.6, 28.0, TANARIS },
 					["description"] = "Some items may require you to buy specific class ensembles to unlock every item from the vendor. Shift Rightclick the item to see which ensemble.",
 					["groups"] = VICIOUS_GROUPS,
@@ -5178,14 +5176,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.6, 29.0, TANARIS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["groups"] = {
-						i(18046),	-- Recipe: Tender Wolf Steak
+						i(18046),	-- Recipe: Tender Wolf Steak (RECIPE!)
 					},
 				}),
 				n(8125, {	-- Dirge Quikcleave <Butcher>
 					["coord"] = { 52.6, 28.0, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(18046),	-- Recipe: Tender Wolf Steak
+						i(18046),	-- Recipe: Tender Wolf Steak (RECIPE!)
 					},
 				}),
 				-- #if NOT ANYCLASSIC
@@ -5201,16 +5199,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 66.6, 22.1, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(13939, {	-- Recipe: Spotted Yellowtail
+						i(13939, {	-- Recipe: Spotted Yellowtail (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },	-- Moved to Trainers
 						}),
-						i(13942, {	-- Recipe: Grilled Squid
+						i(13942, {	-- Recipe: Grilled Squid (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },	-- Moved to Trainers
 						}),
-						i(13945, {	-- Recipe: Nightfin Soup
+						i(13945, {	-- Recipe: Nightfin Soup (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },	-- Moved to Trainers
 						}),
-						i(13946, {	-- Recipe: Poached Sunscale Salmon
+						i(13946, {	-- Recipe: Poached Sunscale Salmon (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },	-- Moved to Trainers
 						}),
 					},
@@ -5243,7 +5241,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.6, 27.0, TANARIS },
 					["timeline"] = { "added 7.0.3.22396" },
 					["groups"] = {
-						i(18046),	-- Recipe: Tender Wolf Steak
+						i(18046),	-- Recipe: Tender Wolf Steak (RECIPE!)
 					},
 				}),
 				n(7733, {	-- Innkeeper Fizzgrimble <Innkeeper>
@@ -5253,14 +5251,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.4, 27.8, TANARIS },
 					-- #endif
 					["groups"] = {
-						i(18046),	-- Recipe: Tender Wolf Steak
+						i(18046),	-- Recipe: Tender Wolf Steak (RECIPE!)
 					},
 				}),
 				n(8139, {	-- Jabbey <General Goods>
 					["coord"] = { 67.0, 22.0, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {
-						i(16767, {	-- Recipe: Undermine Clam Chowder
+						i(16767, {	-- Recipe: Undermine Clam Chowder (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -5336,10 +5334,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(ZONE_DROPS, {
 				i(71714, {	-- Formula: Enchant Cloak - Lesser Agility (RECIPE!)
-					["timeline"] = { "added 4.0.3" },
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 				i(11206, {	-- Formula: Enchant Cloak - Lesser Agility (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["crs"] = {
 						5623,	-- Wastewander Assassin
@@ -5347,47 +5345,47 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
-				i(72028, {	-- Pattern: Tough Scorpid Boots
-					["timeline"] = { "added 4.0.3" },
+				i(72028, {	-- Pattern: Tough Scorpid Boots (RECIPE!)
+					["timeline"] = { ADDED_4_3_0 },
 				}),
-				i(8399, {	-- Pattern: Tough Scorpid Boots
-					["timeline"] = { "removed 4.0.3" },
+				i(8399, {	-- Pattern: Tough Scorpid Boots (RECIPE!)
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["cr"] = 5615,	-- Wastewander Rogue
 					-- #endif
 				}),
-				i(72026, {	-- Pattern: Tough Scorpid Bracers
-					["timeline"] = { "added 4.0.3" },
+				i(72026, {	-- Pattern: Tough Scorpid Bracers (RECIPE!)
+					["timeline"] = { ADDED_4_3_0 },
 				}),
-				i(8397, {	-- Pattern: Tough Scorpid Bracers
-					["timeline"] = { "removed 4.0.3" },
+				i(8397, {	-- Pattern: Tough Scorpid Bracers (RECIPE!)
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["cr"] = 5617,	-- Wastewander Shadow Mage
 					-- #endif
 				}),
-				i(72029, {	-- Pattern: Tough Scorpid Breastplate
-					["timeline"] = { "added 4.0.3" },
+				i(72029, {	-- Pattern: Tough Scorpid Breastplate (RECIPE!)
+					["timeline"] = { ADDED_4_3_0 },
 				}),
-				i(8395, {	-- Pattern: Tough Scorpid Breastplate
-					["timeline"] = { "removed 4.0.3" },
+				i(8395, {	-- Pattern: Tough Scorpid Breastplate (RECIPE!)
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["cr"] = 5618,	-- Wastewander Bandit
 					-- #endif
 				}),
-				i(72025, {	-- Pattern: Tough Scorpid Gloves
-					["timeline"] = { "added 4.0.3" },
+				i(72025, {	-- Pattern: Tough Scorpid Gloves (RECIPE!)
+					["timeline"] = { ADDED_4_3_0 },
 				}),
-				i(8398, {	-- Pattern: Tough Scorpid Gloves
-					["timeline"] = { "removed 4.0.3" },
+				i(8398, {	-- Pattern: Tough Scorpid Gloves (RECIPE!)
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["cr"] = 5616,	-- Wastewander Thief
 					-- #endif
 				}),
-				i(72033, {	-- Pattern: Tough Scorpid Helm
-					["timeline"] = { "added 4.0.3" },
+				i(72033, {	-- Pattern: Tough Scorpid Helm (RECIPE!)
+					["timeline"] = { ADDED_4_3_0 },
 				}),
-				i(8402, {	-- Pattern: Tough Scorpid Helm
-					["timeline"] = { "removed 4.0.3" },
+				i(8402, {	-- Pattern: Tough Scorpid Helm (RECIPE!)
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["crs"] = {
 						7883,	-- Andre Firebeard
@@ -5396,20 +5394,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
-				i(72030, {	-- Pattern: Tough Scorpid Leggings
-					["timeline"] = { "added 4.0.3" },
+				i(72030, {	-- Pattern: Tough Scorpid Leggings (RECIPE!)
+					["timeline"] = { ADDED_4_3_0 },
 				}),
-				i(8401, {	-- Pattern: Tough Scorpid Leggings
-					["timeline"] = { "removed 4.0.3" },
+				i(8401, {	-- Pattern: Tough Scorpid Leggings (RECIPE!)
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["cr"] = 5615,	-- Wastewander Rogue
 					-- #endif
 				}),
-				i(72027, {	-- Pattern: Tough Scorpid Shoulders
-					["timeline"] = { "added 4.0.3" },
+				i(72027, {	-- Pattern: Tough Scorpid Shoulders (RECIPE!)
+					["timeline"] = { ADDED_4_3_0 },
 				}),
-				i(8400, {	-- Pattern: Tough Scorpid Shoulders
-					["timeline"] = { "removed 4.0.3" },
+				i(8400, {	-- Pattern: Tough Scorpid Shoulders (RECIPE!)
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["crs"] = {
 						7883,	-- Andre Firebeard

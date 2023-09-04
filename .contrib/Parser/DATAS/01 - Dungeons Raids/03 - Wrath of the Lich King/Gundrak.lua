@@ -11,29 +11,29 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 			n(ACHIEVEMENTS, {
 				ach(484, {	-- Gundrak
 					crit(5448, { -- Slad'ran
-						["_encounter"] = { 592, 1 },
+						["_encounter"] = { 592, NORMAL_DUNGEON },
 					}),
 					crit(5449, { -- Moorabi
-						["_encounter"] = { 594, 1 },
+						["_encounter"] = { 594, NORMAL_DUNGEON },
 					}),
 					crit(5450, { -- Drakkari Colossus
-						["_encounter"] = { 593, 1 },
+						["_encounter"] = { 593, NORMAL_DUNGEON },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					crit(5627, { -- Gal'darah
-						["_encounter"] = { 596, 1 },
+						["_encounter"] = { 596, NORMAL_DUNGEON },
 					}),
 					-- #else
 					crit(5451, { -- Gal'darah
-						["_encounter"] = { 596, 1 },
+						["_encounter"] = { 596, NORMAL_DUNGEON },
 					}),
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17295, {	-- Defense Protocol Alpha: Gundrak
 					crit(57743, { -- Slad'ran
-						["_encounter"] = { 592, 2 },
+						["_encounter"] = { 592, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39229),	-- Embrace of the Spider
 							i(39234),	-- Plague-Impervious Boots
@@ -41,7 +41,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 					crit(57746, { -- Drakkari Colossus
-						["_encounter"] = { 593, 2 },
+						["_encounter"] = { 593, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39233),	-- Aegis of Damnation
 							i(39225),	-- Cloak of Armed Strife
@@ -49,7 +49,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 					crit(57744, { -- Moorabi
-						["_encounter"] = { 594, 2 },
+						["_encounter"] = { 594, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39232),	-- Pendant of Lost Vocations
 							i(39228),	-- Web Cocoon Grips
@@ -57,7 +57,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 					crit(57745, { -- Eck the Ferocious
-						["_encounter"] = { 595, 2 },
+						["_encounter"] = { 595, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39217),	-- Avenging Combat Leggings
 							i(39231),	-- Timeworn Silken Band
@@ -65,7 +65,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 					crit(57747, { -- Gal'darah
-						["_encounter"] = { 596, 2 },
+						["_encounter"] = { 596, HEROIC_DUNGEON },
 						["groups"] = {
 							i(40491),	-- Hailstorm
 							i(39283),	-- Putrescent Bands
@@ -82,22 +82,61 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 				})),
+				applyclassicphase(WRATH_PHASE_THREE, ach(18596, {	-- Defense Protocol Beta: Gundrak
+					crit(60592, { -- Slad'ran
+						["_encounter"] = { 592, HEROIC_DUNGEON },
+						["groups"] = {
+							i(45687),	-- Helm of Veiled Energies
+							i(45976),	-- Static Charge Handwraps
+						},
+					}),
+					crit(60595, { -- Drakkari Colossus
+						["_encounter"] = { 593, HEROIC_DUNGEON },
+						["groups"] = {
+							i(45301),	-- Bracers of the Smothering Inferno
+						},
+					}),
+					crit(60593, { -- Moorabi
+						["_encounter"] = { 594, HEROIC_DUNGEON },
+						["groups"] = {
+							i(45305),	-- Breastplate of the Afterlife
+							i(45306),	-- Binding of the Dragon Matriarch
+							i(45299),	-- Dragonsteel Faceplate
+						},
+					}),
+					crit(60594, { -- Eck the Ferocious
+						["_encounter"] = { 595, HEROIC_DUNGEON },
+						["groups"] = {
+							i(45308),	-- Eye of the Broodmother
+							i(45307),	-- Ironscale Leggings
+						},
+					}),
+					crit(60596, { -- Gal'darah
+						["_encounter"] = { 596, HEROIC_DUNGEON },
+						["groups"] = {
+							currency(SIDEREAL_ESSENCE),
+							i(45298),	-- Razorscale Talon
+							i(45893),	-- Guise of the Midgard Serpent
+							i(45973),	-- Stylish Power Cape
+						},
+					}),
+				})),
 				-- #endif
 				ach(495,  {	-- Heroic: Gundrak
 					crit(6839, { -- Slad'ran
-						["_encounter"] = { 592, 2 },
+						["_encounter"] = { 592, HEROIC_DUNGEON },
 					}),
 					crit(6840, { -- Moorabi
-						["_encounter"] = { 594, 2 },
+						["_encounter"] = { 594, HEROIC_DUNGEON },
 					}),
 					crit(6841, { -- Drakkari Colossus
-						["_encounter"] = { 593, 2 },
+						["_encounter"] = { 593, HEROIC_DUNGEON },
 					}),
 					crit(5614, { -- Gal'darah
-						["_encounter"] = { 596, 2 },
+						["_encounter"] = { 596, HEROIC_DUNGEON },
 					}),
 					crit(5053, { -- Eck the Ferocious
-						["_encounter"] = { 595, 2 },
+						["_encounter"] = { 595, HEROIC_DUNGEON },
 					}),
 				}),
 			}),
@@ -443,13 +482,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					}),
 				},
 			}),
-			-- #if AFTER 6.2.3.20601
-			d(TIMEWALKING_DUNGEON, {
-				["sym"] = {	-- link in Timewalking content
-					{"sub", "tw_instance", 274 },	-- this instance version of timewalking
-				},
-			}),
-			-- #endif
 		},
 	}),
 })));

@@ -32,6 +32,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					i(161377),	-- Azurethos' Singed Plumage
 					i(161379),	-- Galecaller's Beak
 					i(161378),	-- Plume of the Seaborne Avian
+					i(168140),	-- Ancient Blood Pigment
 				}),
 			}),
 			e(2213, {	-- Doom's Howl [Warfront]
@@ -79,6 +80,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					i(161399),	-- Cord of Flowing Sands
 					i(161408),	-- Sandswept Legionnaire's Legplates
 					i(161419),	-- Kraulok's Claw
+					i(168140),	-- Ancient Blood Pigment
 				}),
 			}),
 			e(2378, {	-- Grand Empress Shek'zara
@@ -189,6 +191,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					i(161390),	-- Savage Terrorwing Leggings
 					i(161407),	-- Windshear Leggings
 					i(161371),	-- Galebreaker's Sabatons
+					i(168140),	-- Ancient Blood Pigment
 				}),
 			}),
 			e(2139, {	-- T'zane <The Soul Terror>
@@ -211,6 +214,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					i(161395),	-- Swampwalker's Soul-Treads
 					i(161412),	-- Spiritbound Voodoo Burl
 					i(161411),	-- T'zane's Barkspines
+					i(168140),	-- Ancient Blood Pigment
 				}),
 			}),
 			e(2212, {	-- The Lion's Roar [Warfront]
@@ -335,22 +339,22 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 				}),
 			}),
 			ach(12587, {	-- Unbound Monstrosities
-				crit(1, { -- Warbringer Yenajz
+				crit(40529, { -- Warbringer Yenajz
 					["_quests"] = { 52166 },
 				}),
-				crit(2, { -- Hailstone Construct
+				crit(40530, { -- Hailstone Construct
 					["_quests"] = { 52157 },
 				}),
-				crit(3, { -- T'zane
+				crit(40531, { -- T'zane
 					["_quests"] = { 52181 },
 				}),
-				crit(4, { -- Ji'arak
+				crit(40532, { -- Ji'arak
 					["_quests"] = { 52169 },
 				}),
-				crit(5, { -- Dunegorger Kraulok
+				crit(40533, { -- Dunegorger Kraulok
 					["_quests"] = { 52196 },
 				}),
-				crit(6, { -- Azurethos
+				crit(40534, { -- Azurethos
 					["_quests"] = { 52163 },
 				}),
 			}),

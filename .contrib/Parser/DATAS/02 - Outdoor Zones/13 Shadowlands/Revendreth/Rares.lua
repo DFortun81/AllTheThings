@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(REVENDRETH, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
 			n(166393, {	-- Amalgamation of Filth
@@ -92,14 +92,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 				},
 			}),
 			n(166993, {	-- Huntmaster Petrus
-			["crs"] = { 165891 },	-- Reza
+				["crs"] = { 165891 },	-- Reza
 				["coord"] = { 61.8, 79.2, REVENDRETH },
 				["questID"] = 60022,
 				["g"] = {
-					i(180705, {	-- Gargon Training Manual
-						["questID"] = 61160,
-						["classes"] = { HUNTER },
-					}),
+					i(180705),	-- Gargon Training Manual (CI!)
 				},
 			}),
 			n(160640, {	-- Innervus
@@ -161,10 +158,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					i(180873),	-- Smolderheart (TOY!)
 				},
 			}),
-			n(160385, {	-- Soulstalker Doina
+			n(160392, {	-- Soulstalker Doina
 				["description"] = "Spawns at the top of the tower.  She will escape through mirror portals twice during the encounter.  Follow her to continue the fight.",
 				["crs"] = {
-					160392,	-- Soulstalker Doina
+					160385,	-- Soulstalker Doina
 					160393,	-- Soulstalker Doina
 					160401,	-- Grenich
 					160402,	-- Grond

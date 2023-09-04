@@ -2,43 +2,6 @@
 --   P E T    B A T T L E    M O D U L E    --
 ----------------------------------------------
 root(ROOTS.PetBattles, petbattle(n(-795, bubbleDown({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Pet Battle Dungeons
-	q(33137, {	-- The Celestial Tournament
-		["provider"] = { "n", 73082 },	-- Master Li
-		["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
-		["isWeekly"] = true,
-		["maps"] = {
-			571,	-- Pet Dungeon
-		},
-		["g"] = {
-			n(73082, {	-- Master Li <Celestial Tournament Host>
-				["coord"] = { 34.7, 59.6, TIMELESS_ISLE },
-				["g"] = {
-					i(102145, {	-- Chi-Chi, Hatchling of Chi-Ji (PET!)
-						["cost"] = { { "i", 101529, 3 }, },	-- 3x Celestial Coin
-					}),
-					i(101771, {	-- Xu-Fu, Cub of Xuen (PET!)
-						["cost"] = { { "i", 101529, 3 }, },	-- 3x Celestial Coin
-					}),
-					i(102147, {	-- Yu'la, Broodling of Yu'lon (PET!)
-						["cost"] = { { "i", 101529, 3 }, },	-- 3x Celestial Coin
-					}),
-					i(102146, {	-- Zao, Calfling of Niuzao (PET!)
-						["cost"] = { { "i", 101529, 3 }, },	-- 3x Celestial Coin
-					}),
-				},
-			}),
-			q(33136, {	-- The Rainy Day is Here
-				["provider"] = { "n", 73082 },	-- Master Li
-				["sourceQuest"] = 33137,	-- The Celestial Tournament
-				["description"] = "You can complete this quest once across your account. It is given to you after your first victory over the Celestial Tournament.",
-				["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
-				["lvl"] = 90,
-				["g"] = {
-					i(101529),	-- Celestial Coin
-				},
-			}),
-		},
-	}),
 	q(58458, bubbleDownSelf({ ["timeline"] = { ADDED_8_3_0 } }, {	-- Pet Battle Challenge: Blackrock Depths
 		["provider"] = { "n", 161782 },	-- Burt Macklyn
 		["coord"] = { 33.1, 23.1, BLACKROCK_MOUNTAIN_LEVEL3 },
@@ -78,8 +41,8 @@ root(ROOTS.PetBattles, petbattle(n(-795, bubbleDown({ ["timeline"] = { ADDED_5_4
 				["lvl"] = 120,
 				["g"] = {
 					spell(314215),	-- Manapoof Link: Blackrock Depths
-					i(122457),	-- Ultimate Battle-Training Stone
 				},
+				["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 			}),
 			n(160210, {	-- Tasha Riley
 				["coord"] = { 41.1, 49.1, 1578 },
@@ -127,8 +90,8 @@ root(ROOTS.PetBattles, petbattle(n(-795, bubbleDown({ ["timeline"] = { ADDED_5_4
 				["sourceQuest"] = 46263,	-- Deadmines, Part Three?
 				["g"] = {
 					spell(244502),	-- Manapoof Link: Westfall
-					i(122457),	-- Ultimate Battle-Training Stone
 				},
+				["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 			}),
 			n(119390, {	-- Marcus "Bagman" Brown
 				["coord"] = { 41.6, 71.2, WESTFALL },
@@ -188,8 +151,8 @@ root(ROOTS.PetBattles, petbattle(n(-795, bubbleDown({ ["timeline"] = { ADDED_5_4
 				["lvl"] = 120,
 				["g"] = {
 					spell(286079),	-- Manapoof Link: Gnomeregan
-					i(122457),	-- Ultimate Battle-Training Stone
 				},
+				["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 			}),
 			n(147070, {	-- Micro Zoox
 				["coord"] = { 31.8, 71.6, NEW_TINKERTOWN_LOWER },
@@ -261,8 +224,8 @@ root(ROOTS.PetBattles, petbattle(n(-795, bubbleDown({ ["timeline"] = { ADDED_5_4
 				["lvl"] = 120,
 				["g"] = {
 					spell(301941),	-- Manapoof Link: Stratholme
-					i(122457),	-- Ultimate Battle-Training Stone
 				},
+				["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 			}),
 			q(56914, {	-- Angry Residents
 				["isWeekly"] = true,
@@ -322,8 +285,8 @@ root(ROOTS.PetBattles, petbattle(n(-795, bubbleDown({ ["timeline"] = { ADDED_5_4
 				["lvl"] = 110,
 				["g"] = {
 					spell(244506),	-- Manapoof Link: Wailing Caverns
-					i(122457),	-- Ultimate Battle-Training Stone
 				},
+				["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 			}),
 			i(143753, {	-- Damp Pet Supplies
 				i(143754),	-- Cavern Moccasin (PET!)

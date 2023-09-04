@@ -51,8 +51,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					386,	-- Prarie Dog (PET!)
 					417,	-- Rat (PET!)
@@ -64,8 +63,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 47.0, 53.0, ARATHI_HIGHLANDS },
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, {
 				exploration(1858, "245:245:232:145"),	-- Boulder'gor
@@ -135,6 +133,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 45.8, 46.2, ARATHI_HIGHLANDS },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
+				}),
+			}),
+			n(PROFESSIONS, {
+				prof(LEATHERWORKING, {
+					n(7869, {	-- Brumn Winterhoof <Master Elemental Leatherworker>
+						["coord"] = { 28.2, 45.0, ARATHI_HIGHLANDS },
+						["races"] = HORDE_ONLY,
+						["g"] = CLASSIC_TBC_ELEMENTAL,
+					}),
 				}),
 			}),
 			n(QUESTS, {
@@ -1802,7 +1809,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(13288, {	-- Pattern: Raptor Hide Belt
+						i(13288, {	-- Pattern: Raptor Hide Belt (RECIPE!)
 							["races"] = ALLIANCE_ONLY,
 							["isLimited"] = true,
 							-- #if BEFORE 10.0.5
@@ -1869,7 +1876,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6056, {	-- Recipe: Frost Protection Potion
+						i(6056, {	-- Recipe: Frost Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -1881,16 +1888,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 46.5, 47.4, ARATHI_HIGHLANDS },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{"select", "itemID",
+						5973,	-- Pattern: Barbaric Leggings (RECIPE!)
+					}},
 					["groups"] = {
 						-- #if AFTER TBC
 						i(21942, {	-- Design: Ruby Crown of Restoration
 							["isLimited"] = true,
 						}),
 						-- #endif
-						i(5973, {	-- Pattern: Barbaric Leggings
-							["isLimited"] = true,
-						}),
-						i(12228),	-- Recipe: Roast Raptor
+						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
 				n(1471, {	-- Jannos Ironwill <Superior Macecrafter>
@@ -1926,6 +1933,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 74.0, 32.6, ARATHI_HIGHLANDS },
 					-- #endif
 					["races"] = HORDE_ONLY,
+					["sym"] = {{"select", "itemID",
+						5973,	-- Pattern: Barbaric Leggings (RECIPE!)
+					}},
 					["groups"] = {
 						-- #if AFTER TBC
 						i(21942, {	-- Design: Ruby Crown of Restoration
@@ -1935,11 +1945,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(11163, {	-- Formula: Enchant Bracer - Lesser Dodge / CLASSIC: Formula: Enchant Bracer - Lesser Deflection (RECIPE!)
 							["timeline"] = { "removed 4.1.0" },	-- Learned by trainer
 						}),
-						i(5973, {	-- Pattern: Barbaric Leggings
-							["isLimited"] = true,
-						}),
-						i(3682),	-- Recipe: Curiously Tasty Omelet
-						i(12228),	-- Recipe: Roast Raptor
+						i(3682),	-- Recipe: Curiously Tasty Omelet (RECIPE!)
+						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 					},
 				}),
 				n(9555, {	-- Mu'uta <Bowyer>
@@ -1963,7 +1970,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(4609),	-- Recipe: Barbecued Buzzard Wing
+						i(4609),	-- Recipe: Barbecued Buzzard Wing (RECIPE!)
 					},
 				}),
 				n(2819, {	-- Tunkk <Leatherworking Supplies>
@@ -1974,7 +1981,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(13287, {	-- Pattern: Raptor Hide Harness
+						i(13287, {	-- Pattern: Raptor Hide Harness (RECIPE!)
 							["races"] = HORDE_ONLY,
 							["isLimited"] = true,
 						}),

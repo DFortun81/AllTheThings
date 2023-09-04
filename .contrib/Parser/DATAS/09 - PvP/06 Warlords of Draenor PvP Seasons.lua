@@ -38,13 +38,10 @@ root(ROOTS.PVP, {
 					},
 				}),
 				ach(9240, {	-- Duelist: Warlords of Draenor Season 1
-					-- #if AFTER 7.3.2
-					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120287, {	-- Enchanter's Illusion - Primal Victory
-							ill(5397),		-- Primal Victory
-						})),
-					},
-					-- #endif
+					i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
+						["u"] = ELITE_PVP_REQUIREMENT,
+						["timeline"] = { ADDED_7_3_2 },
+					}),
 				}),
 				ach(9239, {	-- Gladiator: Warlords of Draenor Season 1
 					i(128277),	-- Primal Gladiator's Felblood Gronnling
@@ -73,23 +70,21 @@ root(ROOTS.PVP, {
 				}),
 				ach(9230, {	-- Hero of the Alliance: Primal
 					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER 7.3.2
 					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120287, {	-- Enchanter's Illusion - Primal Victory
-							ill(5397),		-- Primal Victory
-						})),
+						i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
+							["u"] = ELITE_PVP_REQUIREMENT,
+							["timeline"] = { ADDED_7_3_2 },
+						}),
 					},
-					-- #endif
 				}),
 				ach(9231, {	-- Hero of the Horde: Primal
 					["races"] = HORDE_ONLY,
-					-- #if AFTER 7.3.2
 					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120287, {	-- Enchanter's Illusion - Primal Victory
-							ill(5397),		-- Primal Victory
-						})),
+						i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
+							["u"] = ELITE_PVP_REQUIREMENT,
+							["timeline"] = { ADDED_7_3_2 },
+						}),
 					},
-					-- #endif
 				}),
 				ach(9238, {	-- Primal Combatant (Alliance) Warlords of Draenor Season 1
 					["races"] = ALLIANCE_ONLY,
@@ -846,7 +841,7 @@ root(ROOTS.PVP, {
 							un(REMOVED_FROM_GAME, i(115146)),	-- Primal Combatant's Signet of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115172)),	-- Primal Combatant's Signet of Ruthlessness (A)
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							un(REMOVED_FROM_GAME, i(115521)),	-- Primal Combatant's Badge of Adaptation (A)
 							un(REMOVED_FROM_GAME, i(115149)),	-- Primal Combatant's Badge of Conquest (A)
 							un(REMOVED_FROM_GAME, i(115154)),	-- Primal Combatant's Badge of Dominance (A)
@@ -1564,7 +1559,7 @@ root(ROOTS.PVP, {
 							un(REMOVED_FROM_GAME, i(115661)),	-- Primal Gladiator's Band of Cruelty
 							un(REMOVED_FROM_GAME, i(120104)),	-- Primal Gladiator's Signet of Endurance
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							un(REMOVED_FROM_GAME, i(122706)),	-- Primal Gladiator's Medallion of Adaptation
 							un(REMOVED_FROM_GAME, i(115749)),	-- Primal Gladiator's Badge of Conquest
 							un(REMOVED_FROM_GAME, i(115750)),	-- Primal Gladiator's Insignia of Conquest
@@ -2301,7 +2296,7 @@ root(ROOTS.PVP, {
 							un(REMOVED_FROM_GAME, i(119923)),	-- Primal Combatant's Signet of Cruelty (H)
 							un(REMOVED_FROM_GAME, i(119949)),	-- Primal Combatant's Signet of Ruthlessness (H)
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							un(REMOVED_FROM_GAME, i(120049)),	-- Primal Combatant's Badge of Adaptation (H)
 							un(REMOVED_FROM_GAME, i(119926)),	-- Primal Combatant's Badge of Conquest (H)
 							un(REMOVED_FROM_GAME, i(119931)),	-- Primal Combatant's Badge of Dominance (H)
@@ -3018,7 +3013,7 @@ root(ROOTS.PVP, {
 							un(REMOVED_FROM_GAME, i(111271)),	-- Primal Gladiator's Ring of Triumph
 							un(REMOVED_FROM_GAME, i(120103)),	-- Primal Gladiator's Signet of Endurance
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							un(REMOVED_FROM_GAME, i(111272)),	-- Primal Gladiator's Signet of Ruthlessness
 							un(REMOVED_FROM_GAME, i(111222)),	-- Primal Gladiator's Badge of Conquest
 							un(REMOVED_FROM_GAME, i(111223)),	-- Primal Gladiator's Insignia of Conquest
@@ -3250,13 +3245,10 @@ root(ROOTS.PVP, {
 					},
 				}),
 				ach(10099, {	-- Duelist: Warlords of Draenor Season 2
-					-- #if AFTER 7.3.2
-					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120287, {	-- Enchanter's Illusion - Primal Victory
-							ill(5397),		-- Primal Victory
-						})),
-					},
-					-- #endif
+					i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
+						["u"] = ELITE_PVP_REQUIREMENT,
+						["timeline"] = { ADDED_7_3_2 },
+					}),
 				}),
 				ach(10098, {	-- Gladiator: Warlords of Draenor Season 2
 					i(128281),	-- Wild Gladiator's Felblood Gronnling
@@ -3285,23 +3277,21 @@ root(ROOTS.PVP, {
 				}),
 				ach(10102, {	-- Hero of the Alliance: Wild
 					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER 7.3.2
 					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120287, {	-- Enchanter's Illusion - Primal Victory
-							ill(5397),		-- Primal Victory
-						})),
+						i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
+							["u"] = ELITE_PVP_REQUIREMENT,
+							["timeline"] = { ADDED_7_3_2 },
+						}),
 					},
-					-- #endif
 				}),
 				ach(10103, {	-- Hero of the Horde: Wild
 					["races"] = HORDE_ONLY,
-					-- #if AFTER 7.3.2
 					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120287, {	-- Enchanter's Illusion - Primal Victory
-							ill(5397),		-- Primal Victory
-						})),
+						i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
+							["u"] = ELITE_PVP_REQUIREMENT,
+							["timeline"] = { ADDED_7_3_2 },
+						}),
 					},
-					-- #endif
 				}),
 				ach(10100),	-- Rival: Warlords of Draenor Season 2
 				ach(10104, {	-- Soldier of the Alliance: Warlords of Draenor Season 2
@@ -3465,7 +3455,7 @@ root(ROOTS.PVP, {
 							un(REMOVED_FROM_GAME, i(125089)),	-- Wild Aspirant's Band of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(127118)),	-- Wild Aspirant's Signet of Accuracy (A)
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							un(REMOVED_FROM_GAME, i(125140)),	-- Wild Aspirant's Accolade of Dominance (A)
 							un(REMOVED_FROM_GAME, i(125142)),	-- Wild Aspirant's Accolade of Meditation (A)
 							un(REMOVED_FROM_GAME, i(125141)),	-- Wild Aspirant's Accolade of Victory (A)
@@ -4070,7 +4060,7 @@ root(ROOTS.PVP, {
 							un(REMOVED_FROM_GAME, i(125052)),	-- Wild Combatant's Signet of Dedication (A)
 							un(REMOVED_FROM_GAME, i(125028)),	-- Wild Combatant's Signet of Endurance (A)
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							un(REMOVED_FROM_GAME, i(125043)),	-- Wild Combatant's Badge of Adaptation (A)
 							un(REMOVED_FROM_GAME, i(125030)),	-- Wild Combatant's Badge of Conquest (A)
 							un(REMOVED_FROM_GAME, i(125035)),	-- Wild Combatant's Badge of Dominance (A)
@@ -4802,7 +4792,7 @@ root(ROOTS.PVP, {
 							un(REMOVED_FROM_GAME, i(124854)),	-- Wild Gladiator's Signet of Dedication (A)
 							un(REMOVED_FROM_GAME, i(124855)),	-- Wild Gladiator's Signet of Endurance (A)
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							un(REMOVED_FROM_GAME, i(124869)),	-- Wild Gladiator's Badge of Adaptation (A)
 							un(REMOVED_FROM_GAME, i(124856)),	-- Wild Gladiator's Badge of Conquest (A)
 							un(REMOVED_FROM_GAME, i(124861)),	-- Wild Gladiator's Badge of Dominance (A)
@@ -4946,7 +4936,7 @@ root(ROOTS.PVP, {
 							un(REMOVED_FROM_GAME, i(125543)),	-- Wild Aspirant's Ring of Prowess (H)
 							un(REMOVED_FROM_GAME, i(127119)),	-- Wild Aspirant's Signet of Accuracy (H)
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							un(REMOVED_FROM_GAME, i(125618)),	-- Wild Aspirant's Accolade of Victory (H)
 							un(REMOVED_FROM_GAME, i(125616)),	-- Wild Aspirant's Accolade of Conquest (H)
 							un(REMOVED_FROM_GAME, i(125619)),	-- Wild Aspirant's Accolade of Meditation (H)
@@ -5551,7 +5541,7 @@ root(ROOTS.PVP, {
 							un(REMOVED_FROM_GAME, i(125528)),	-- Wild Combatant's Signet of Dedication (H)
 							un(REMOVED_FROM_GAME, i(125529)),	-- Wild Combatant's Signet of Endurance (H)
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							un(REMOVED_FROM_GAME, i(125520)),	-- Wild Combatant's Badge of Adaptation (H)
 							un(REMOVED_FROM_GAME, i(125507)),	-- Wild Combatant's Badge of Conquest (H)
 							un(REMOVED_FROM_GAME, i(125512)),	-- Wild Combatant's Badge of Dominance (H)
@@ -6283,7 +6273,7 @@ root(ROOTS.PVP, {
 							un(REMOVED_FROM_GAME, i(125333)),	-- Wild Gladiator's Signet of Dedication (H)
 							un(REMOVED_FROM_GAME, i(125334)),	-- Wild Gladiator's Signet of Endurance (H)
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							un(REMOVED_FROM_GAME, i(125346)),	-- Wild Gladiator's Badge of Adaptation (H)
 							un(REMOVED_FROM_GAME, i(125335)),	-- Wild Gladiator's Badge of Conquest (H)
 							un(REMOVED_FROM_GAME, i(125340)),	-- Wild Gladiator's Badge of Dominance (H)
@@ -6518,13 +6508,10 @@ root(ROOTS.PVP, {
 					},
 				}),
 				ach(10111, {	-- Duelist: Warlords of Draenor Season 3
-					-- #if AFTER 7.3.2
-					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120287, {	-- Enchanter's Illusion - Primal Victory
-							ill(5397),		-- Primal Victory
-						})),
-					},
-					-- #endif
+					i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
+						["u"] = ELITE_PVP_REQUIREMENT,
+						["timeline"] = { ADDED_7_3_2 },
+					}),
 				}),
 				ach(10110, {	-- Gladiator: Warlords of Draenor Season 3
 					i(128282),	-- Warmongering Gladiator's Felblood Gronnling (MOUNT!)
@@ -6553,23 +6540,21 @@ root(ROOTS.PVP, {
 				}),
 				ach(10114, {	-- Hero of the Alliance: Warmongering
 					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER 7.3.2
 					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120287, {	-- Enchanter's Illusion - Primal Victory
-							ill(5397),		-- Primal Victory
-						})),
+						i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
+							["u"] = ELITE_PVP_REQUIREMENT,
+							["timeline"] = { ADDED_7_3_2 },
+						}),
 					},
-					-- #endif
 				}),
 				ach(10115, {	-- Hero of the Horde: Warmongering
 					["races"] = HORDE_ONLY,
-					-- #if AFTER 7.3.2
 					["g"] = {
-						un(ELITE_PVP_REQUIREMENT, i(120287, {	-- Enchanter's Illusion - Primal Victory
-							ill(5397),		-- Primal Victory
-						})),
+						i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
+							["u"] = ELITE_PVP_REQUIREMENT,
+							["timeline"] = { ADDED_7_3_2 },
+						}),
 					},
-					-- #endif
 				}),
 				ach(10112),	-- Rival: Warlords of Draenor Season 3
 				ach(10120, {	-- Soldier of the Alliance: Warlords of Draenor Season 3
@@ -6733,7 +6718,7 @@ root(ROOTS.PVP, {
 							i(126251),	-- Warmongering Aspirant's Signet of Dedication (A)
 							i(126252),	-- Warmongering Aspirant's Signet of Endurance (A)
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							i(126253),	-- Warmongering Aspirant's Accolade of Conquest (A)
 							i(126254),	-- Warmongering Aspirant's Accolade of Dominance (A)
 							i(126257),	-- Warmongering Aspirant's Accolade of Endurance (A)
@@ -7338,7 +7323,7 @@ root(ROOTS.PVP, {
 							i(126166),	-- Warmongering Combatant's Signet of Endurance (A)
 							i(126142),	-- Warmongering Combatant's Signet of Ruthlessness (A)
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							i(126158),	-- Warmongering Combatant's Accolade of Conquest (A)
 							i(126159),	-- Warmongering Combatant's Accolade of Dominance (A)
 							i(126162),	-- Warmongering Combatant's Accolade of Endurance (A)
@@ -8072,7 +8057,7 @@ root(ROOTS.PVP, {
 							i(125969),	-- Warmongering Gladiator's Signet of Endurance (A)
 							i(125964),	-- Warmongering Gladiator's Signet of Ruthlessness (A)
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							i(125984),	-- Warmongering Gladiator's Accolade of Conquest (A)
 							i(125985),	-- Warmongering Gladiator's Accolade of Dominance (A)
 							i(125988),	-- Warmongering Gladiator's Accolade of Endurance (A)
@@ -8221,7 +8206,7 @@ root(ROOTS.PVP, {
 							i(126728),	-- Warmongering Aspirant's Signet of Dedication (H)
 							i(126729),	-- Warmongering Aspirant's Signet of Endurance (H)
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							i(126730),	-- Warmongering Aspirant's Accolade of Conquest (H)
 							i(126731),	-- Warmongering Aspirant's Accolade of Dominance (H)
 							i(126734),	-- Warmongering Aspirant's Accolade of Endurance (H)
@@ -8830,7 +8815,7 @@ root(ROOTS.PVP, {
 							i(126643),	-- Warmongering Combatant's Signet of Endurance (H)
 							i(126619),	-- Warmongering Combatant's Signet of Ruthlessness (H)
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							i(126635),	-- Warmongering Combatant's Accolade of Conquest (H)
 							i(126636),	-- Warmongering Combatant's Accolade of Dominance (H)
 							i(126639),	-- Warmongering Combatant's Accolade of Endurance (H)
@@ -9564,7 +9549,7 @@ root(ROOTS.PVP, {
 							i(126448),	-- Warmongering Gladiator's Signet of Endurance (H)
 							i(126443),	-- Warmongering Gladiator's Signet of Ruthlessness (H)
 						}),
-						n(-386,	{	-- Trinket
+						n(TRINKET, {
 							i(126461),	-- Warmongering Gladiator's Accolade of Conquest (H)
 							i(126462),	-- Warmongering Gladiator's Accolade of Dominance (H)
 							i(126465),	-- Warmongering Gladiator's Accolade of Endurance (H)
@@ -9913,25 +9898,11 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(43221),	-- Primal Gladiator's Scaled Armor (Paladin - Horde)
 		q(43222),	-- Primal Gladiator's Silk Armor (Mage - Alliance)
 		q(43223),	-- Primal Gladiator's Silk Armor (Mage - Horde)
-
-		-- PvP Arsenals
-		q(43235),	-- Primal Combatant's Arsenal (Alliance)
-		q(43236),	-- Primal Combatant's Arsenal (Horde)
-		q(43224),	-- Primal Gladiator's Arsenal (Alliance)
-		q(43225),	-- Primal Gladiator's Arsenal (Horde)
-		q(43233),	-- Wild Combatant's Arsenal (Alliance)
-		q(43234),	-- Wild Combatant's Arsenal (Horde)
-		q(43226),	-- Wild Gladiator's Arsenal (Alliance)
-		q(43227),	-- Wild Gladiator's Arsenal (Horde)
-		q(43231),	-- Warmongering Combatant's Arsenal (Alliance)
-		q(43232),	-- Warmongering Combatant's Arsenal (Horde)
-		q(43229),	-- Warmongering Gladiator's Arsenal (Alliance)
-		q(43230),	-- Warmongering Gladiator's Arsenal (Horde)
 	}),
 });
 -- #endif
 -- The items never made it in.
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(WOD_TIER, {
 		n(SEASON_PRIMAL, {
 			n(WEAPONS, {
@@ -9944,7 +9915,7 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 		n(SEASON_WILD, {
-			n(-386, {	-- Trinket
+			n(TRINKET, {
 				i(125045),	-- Wild Combatant's Accolade of Dominance
 				i(125047),	-- Wild Combatant's Accolade of Meditation
 				i(125044),	-- Wild Combatant's Accolade of Conquest
@@ -9968,4 +9939,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			}),
 		}),
 	}),
-}));
+});

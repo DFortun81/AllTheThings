@@ -1,7 +1,6 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
-local MOH = 137642;
 root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	header(HEADERS.Achievement, SEASON_CRIMSON, {
 		["icon"] = "Interface\\Icons\\inv_drake2mountgladiator",
@@ -22,6 +21,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				ach(15952),		-- Rival I: Dragonflight Season 1
 				ach(15953),		-- Rival II: Dragonflight Season 1
 				ach(15954, {	-- Duelist: Dragonflight Season 1
+					ill(6786, {["timeline"] = { ADDED_10_0_7 }}),	-- Primal Storm (ILLUSION!)
 					i(202089, {["timeline"] = { ADDED_10_0_5 }}),	-- Crimson Gladiator's Prestigious Cloak
 				}),
 				ach(15984, {	-- Elite: Dragonflight Season 1
@@ -53,6 +53,14 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				-- Fashion
 				ach(16764),		-- Crimson Carpet Fashion
+			})),
+			filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
+				i(201789, {	-- Vicious Sabertooth [A] (MOUNT!)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(201788, {	-- Vicious Sabertooth [H] (MOUNT!)
+					["races"] = HORDE_ONLY,
+				}),
 			})),
 			filter(TITLES, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }, ["collectible"] = false }, {
 				title(78),	-- Combatant <Name>
@@ -1550,6 +1558,10 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				n(199720, {	-- Glamora
 					["coord"] = { 45.9, 38.7, VALDRAKKEN },
 					["g"] = {
+						i(202090, {	-- Crimson Gladiator's Tabard
+							["cost"] = { { "c", HONOR, 100 }, },
+							["timeline"] = { ADDED_10_0_5, REMOVED_10_1_0 },
+						}),
 						n(WEAPONS, {
 							i(202129, {	-- Crimson Gladiator's Barrier
 								["cost"] = { { "i", MOH, 5 } },
@@ -1607,14 +1619,6 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							}),
 						}),
 					},
-				}),
-			})),
-			filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
-				i(201789, {	-- Vicious Sabertooth [A] (MOUNT!)
-					["races"] = ALLIANCE_ONLY,
-				}),
-				i(201788, {	-- Vicious Sabertooth [H] (MOUNT!)
-					["races"] = HORDE_ONLY,
 				}),
 			})),
 			filter(RECIPES, {

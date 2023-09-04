@@ -675,6 +675,7 @@ root(ROOTS.Zones, {
 						{ 40.4, 77.8, STORMWIND_CITY },
 					},
 					["g"] = {
+						i(140192),	-- Dalaran Heartstone (TOY!)
 						i(143785),	-- Tome of the Tranquil Mind
 					},
 				}),
@@ -1147,7 +1148,7 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 110018 },	-- Gazrix Gearlock <Steamwheedle Cartel>
 					["g"] = {
 						i(140601, {	-- Sixtrigger Resource Crate
-							i(133815),	-- Recipe: Spiced Rib Roast
+							i(133815),	-- Recipe: Spiced Rib Roast [Rank 1] (RECIPE!)
 							i(140600),	-- Sixtrigger Lucky Ring
 						}),
 						i(140599),	-- Pretty Silk Gloves
@@ -1177,12 +1178,6 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 39986 },	-- Magic Message
 					["coord"] = { 28.4, 48.3, LEGION_DALARAN },
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
-				}),
-				q(39861, {	-- Tying Up Loose Ends
-					["sourceQuests"] = { 39731 },	-- The Tranquil Forest
-					["coord"] = { 70.1, 43.7, LEGION_DALARAN },
-					["provider"] = { "n", 91172 },	-- Archmage Khadgar
-					["isBreadcrumb"] = true,
 				}),
 				q(47057, {	-- Unholy: The Folly of Levia Laurence
 					["sourceQuests"] = {

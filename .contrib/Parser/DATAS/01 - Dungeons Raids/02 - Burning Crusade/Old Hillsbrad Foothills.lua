@@ -2,12 +2,18 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 local THOMAS_YANCE_GROUPS = {
-	i(25725),	-- Pattern: Riding Crop
+	i(25725),	-- Pattern: Riding Crop (RECIPE!)
 	i(23321),	-- Recruit's Robe
 };
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(251, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {	-- Old Hillsbrad Foothills
 		["lore"] = "Old Hillsbrad Foothills is one of the timeways accessible in the Caverns of Time. The setting is seven years before WoW's present, to when the future Warchief Thrall was a slave of Aedelas Blackmoore, master of Durnholde Keep. The questing involves helping Thrall escape. The instance area in question spans from Southshore (where familiar personalities of WoW present can be found) to Tarren Mill.",
+		["zone-text-areaID"] = 2367,	-- Old Hillsbrad Foothills
+		["sins"] = {
+			"Caverns of Time: Old Hillsbrad Foothills",
+			"The Escape from Durnholde",
+			"Flucht aus Durnholde",
+		},
 		["coord"] = { 26.8, 36.8, CAVERNS_OF_TIME },
 		["mapID"] = CAVERNS_OF_TIME_OLD_HILLSBRAD_FOOTHILLS,
 		["lvl"] = lvlsquish(63, 63, 15),
@@ -116,7 +122,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(25729, {	-- Pattern: Stylin' Adventure Hat
+				i(25729, {	-- Pattern: Stylin' Adventure Hat (RECIPE!)
 					["crs"] = {
 						28132,	-- Don Carlos
 						17820,	-- Durnholde Rifleman
@@ -174,16 +180,15 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						-- #if AFTER 7.3.5
 						i(28221),	-- Boots of the Watchful Heart
 						-- #endif
-						i(22927),	-- Recipe: Ironshield Potion
+						i(22927),	-- Recipe: Ironshield Potion (RECIPE!)
 					},
 				}),
 				e(540, {	-- Epoch Hunter
 					["creatureID"] = 18096,
 					["groups"] = {
-						classicAch(652, {	-- The Escape From Durnholde
+						ach(652, {	-- The Escape From Durnholde
 							-- #if BEFORE WRATH
 							["sourceQuest"] = 10284,	-- Escape from Durnholde
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						-- #if AFTER 7.3.5
@@ -299,13 +304,15 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(27430),	-- Scaled Greaves of Patience
 							-- #endif
 							i(28221),	-- Boots of the Watchful Heart
-							i(22927),	-- Recipe: Ironshield Potion
+							i(22927),	-- Recipe: Ironshield Potion (RECIPE!)
 						},
 					}),
 					e(540, {	-- Epoch Hunter
 						["creatureID"] = 18096,
 						["groups"] = {
-							ach(673),	-- Heroic: The Escape From Durnholde
+							ach(673, {	-- Heroic: The Escape From Durnholde
+								["timeline"] = { "added 3.0.1" },
+							}),
 							ach(5073, {	-- Heroic: The Escape From Durnholde Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),

@@ -75,13 +75,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
-						393,	-- Cockroach (PET!)
-						448,	-- Hare (PET!)
-						450,	-- Maggot (PET!)
-						417,	-- Rat (PET!)
+					393,	-- Cockroach (PET!)
+					448,	-- Hare (PET!)
+					450,	-- Maggot (PET!)
+					417,	-- Rat (PET!)
 				}},
 				["groups"] = {
 					pet(449),	-- Brown Marmot (PET!)
@@ -89,8 +88,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 58.8, 43.0, THE_HINTERLANDS },
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["145:220:158:149"] = 1882,	-- Plaguemist Ravine
@@ -149,6 +147,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 65.6, 44.8, THE_HINTERLANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+				}),
+			}),
+			n(PROFESSIONS, {
+				prof(LEATHERWORKING, {
+					n(11097, {	-- Drakk Stonehand <Master Leatherworking Trainer>
+						["coord"] = { 13.4, 43.4, THE_HINTERLANDS },
+						["races"] = ALLIANCE_ONLY,
+						-- #if BEFORE 2.1.0
+						["g"] = EXPERT_ARTISAN_LEATHERWORKING,
+						-- #endif
+					}),
 				}),
 			}),
 			n(QUESTS, {
@@ -1860,7 +1869,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(12958, {	-- Gigget Zipcoil <Trade Supplies>
 					["coord"] = { 34.4, 38.6, THE_HINTERLANDS },
 					["groups"] = {
-						i(15735, {	-- Pattern: Ironfeather Shoulders
+						i(15735, {	-- Pattern: Ironfeather Shoulders (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -1882,7 +1891,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 13.3, 43.4, THE_HINTERLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(8409, {	-- Pattern: Nightscape Shoulders
+						i(8409, {	-- Pattern: Nightscape Shoulders (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -1891,8 +1900,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 79.2, 79.0, THE_HINTERLANDS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(2688, {	-- Ruppo Zipcoil <Engineering Supplies>
@@ -1907,7 +1916,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 14.4, 42.3, THE_HINTERLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(18046),	-- Recipe: Tender Wolf Steak
+						i(18046),	-- Recipe: Tender Wolf Steak (RECIPE!)
 					},
 				}),
 			}),
@@ -1945,7 +1954,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(8704, {	-- OOX-09/HL Distress Beacon
 					["description"] = "Can drop off of any mob in the zone. Much higher chance to drop from the elites.",
 				}),
-				i(15760, {	-- Pattern: Ironfeather Breastplate
+				i(15760, {	-- Pattern: Ironfeather Breastplate (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 2644,	-- Vilebranch Hideskinner
 				}),

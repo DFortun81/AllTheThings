@@ -399,25 +399,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["_npcs"] = { 182158 },	-- Reanimatrox Marzan
 				}),
 			}),
-			ach(15224, {	-- Explore Zereth Mortis
-				crit(1),	-- Path of Inception
-				crit(2),	-- Haven
-				crit(3),	-- The Great Veldt
-				crit(4),	-- Faith's Repose
-				crit(5),	-- Terrace of Formation
-				crit(6),	-- Catalyst Gardens
-				crit(7),	-- Deserted Overlook
-				crit(8),	-- Dimensional Falls
-				crit(9),	-- The Dread Portal
-				crit(10),	-- Provis Fauna
-				crit(11),	-- Genesis Fields
-				crit(12),	-- Zovaal's Grasp
-				crit(13),	-- Pilgrim's Grace
-				crit(14),	-- Plain of Actualization
-				crit(15),	-- Arrangement Index
-				crit(16),	-- Lexical Glade
-				crit(17),	-- Resonant Peaks
-			}),
+			explorationAch(15224),	-- Explore Zereth Mortis
 			ach(15336, {	-- From A to Zereth
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",

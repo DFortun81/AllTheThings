@@ -1,6 +1,19 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+CAPTAINS = createHeader({
+	readable = "Captains",
+	icon = "Interface\\Icons\\achievement_pvp_h_12",
+	text = {
+		en = "Captains",
+		fr = "Capitaines",
+		ru = "Капитаны",
+		cn = "船长",
+	},
+	lore = {
+		en = "These can be farmed infinitely by resetting the boss.",
+	},
+});
 -- #if BEFORE CATA
 local KEYL_LOCATION = { 51.8, 39.5, SILITHUS };
 local WARDEN_LOCATION = { 51.1, 38.9, SILITHUS };
@@ -13,6 +26,9 @@ local WINDCALLER_LOCATION = { 59.4, 14.0, AHNQIRAJ_THE_FALLEN_KINGDOM };
 root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 	inst(743, {	-- Ruins of Ahn'Qiraj
 		["lore"] = "Deep within the deserts of Silithus lies an ancient and powerful race of beings known as the Qiraji. One thousand years ago, the Night Elves and Bronze Dragonflight combined their considerable powers to seal the Qiraji behind the scarab wall with the help of the children of some of the aspects. This is remembered as the \"War of the Shifting Sands\".\n\nRecently it was discovered that some of the Qiraji were finding ways past the wall. Anachronos, the bronze dragon, helped the adventurers of Azeroth open the Scarab Wall to prevent more incursions. The mortal races have now banded together to confront the evil Qiraji in their own land. A champion has opened the gate and the Horde and Alliance have driven the armies of the Qiraji back into the ruins in retreat. It now falls to heroes to delve into the lair of the Qiraji and put an end to their masters once and for all",
+		-- #if BEFORE WRATH
+		["zone-text-areaID"] = 3429,	-- Ruins of Ahn'Qiraj
+		-- #endif
 		["coord"] = { 58.93, 14.26, AHNQIRAJ_THE_FALLEN_KINGDOM },
 		["mapID"] = RUINS_OF_AHNQIRAJ,
 		["sharedLockout"] = 1,
@@ -485,9 +501,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				i(20858),	-- Stone Scarab
 				i(20768, {	-- Oozing Bag
 					["cr"] = 15335,	-- Flesh Hunter
-					["groups"] = {
-						i(20769),	-- Disgusting Oozeling (PET!)
-					},
+					["sym"] = {{"select","itemID", 20769}},	-- Disgusting Oozeling (PET!)
 				}),
 				i(21761, {	-- Scarab Coffer Key
 					["timeline"] = {
@@ -896,7 +910,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 				["description"] = "Speak with Lieutenant General Andorov in order to start the encounter. Andorov must survive the fight in order to defeat the encounter.",
 				["creatureID"] = 15341,
 				["groups"] = {
-					n(-21, {	-- Captains
+					n(CAPTAINS, {
 						["qgs"] = {
 							15390,	-- Captain Xurrem
 							15391,	-- Captain Qeez
@@ -943,7 +957,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					i(21482, {	-- Boots of the Fiery Sands
 						["timeline"] = {
 							"added 1.13.0.28211",
-							"removed 4.2.2.28211"
+							"removed 4.2.2.28211",
+							"added 10.1.7",
 						},
 					}),
 					i(21483),	-- Ring of the Desert Winds
@@ -971,10 +986,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 			e(1542, {	-- Ossirian the Unscarred
 				["creatureID"] = 15339,
 				["groups"] = {
-					classicAch(689, {	-- Ruins of Ahn'Qiraj
+					ach(689, {	-- Ruins of Ahn'Qiraj
 						-- #if BEFORE WRATH
 						["sourceQuest"] = 8791,	-- The Fall of Ossirian
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5059, {	-- Ruins of Ahn'Qiraj Guild Run

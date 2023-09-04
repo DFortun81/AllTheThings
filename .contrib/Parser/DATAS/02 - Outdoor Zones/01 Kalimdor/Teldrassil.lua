@@ -22,20 +22,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER WRATH
 				["icon"] = "Interface\\Icons\\Achievement_Character_Nightelf_Female",
 				-- #else
-				["icon"] = asset("Achievement_Character_Nightelf_Female"),
+				["icon"] = [[~_.asset("Achievement_Character_Nightelf_Female")]],
 				-- #endif
 				["maps"] = { 58 },	-- Shadowthread Cave
 				["groups"] = {
-					-- #if AFTER MOP
-					petbattle(filter(BATTLE_PETS, {
+					battlepets({
 						["sym"] = {{"select","speciesID",
 							447,	-- Fawn (PET!)
 						}},
 						["groups"] = {
 							pet(507),	-- Crested Owl (PET!)
 						},
-					})),
-					-- #endif
+					}),
 					n(QUESTS, {
 						q(28734, {	-- A Favor for Melithar
 							["qg"] = 2079,	-- Ilthalaine
@@ -205,6 +203,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "removed 4.0.3" },
 							["races"] = { NIGHTELF },
 							["classes"] = { PRIEST },
+							["isBreadcrumb"] = true,
 							["lvl"] = 5,
 						}),
 						q(28724, {	-- Iverron's Antidote
@@ -513,8 +512,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					507,	-- Crested Owl (PET!)
 					479,	-- Elfin Rabbit (PET!)
@@ -523,8 +521,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					452,	-- Red-Tailed Chipmunk (PET!)
 					419,	-- Small Frog (PET!)
 				}},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["128:100:494:548"] = 702,	-- Rut'theran Village
@@ -917,7 +914,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = { { "i", 5465, 7 } },	-- Small Spider Leg
 					["groups"] = {
-						i(5482, {	-- Recipe: Kaldorei Spider Kabob
+						i(5482, {	-- Recipe: Kaldorei Spider Kabob (RECIPE!)
 							["timeline"] = { "removed 4.0.3.2000" },
 						}),
 					},
@@ -1186,7 +1183,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(5592, {	-- Shackled Girdle
 							-- #if ANYCLASSIC
-							["description"] = "This gets completely removed. To be safe, keep this in your bank forever on a leather user.",
+							["description"] = "This gets completely removed. To be safe, keep this in your bank forever on a mail user.",
 							-- #endif
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -1791,8 +1788,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6368),	-- Recipe: Rainbow Fin Albacore
-						i(6326),	-- Recipe: Slitherskin Mackerel
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+						i(6326),	-- Recipe: Slitherskin Mackerel (RECIPE!)
 					},
 				}),
 				n(4265, {	-- Nyoma <Cooking Supplies>
@@ -1803,10 +1800,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6325),	-- Recipe: Brilliant Smallfish
-						i(6328),	-- Recipe: Longjaw Mud Snapper
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
+						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 			}),

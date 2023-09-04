@@ -1,3 +1,190 @@
+-----------------------------------------------------
+--       P R O F E S S I O N S   M O D U L E       --
+-----------------------------------------------------
+local JEWELCRAFTING_KNOWLEDGE = 2029;
+root(ROOTS.Professions, prof(JEWELCRAFTING, {
+	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+		ach(18880),	-- Generations of Gemstones I
+		ach(18889),	-- Generations of Gemstones II
+		ach(18890),	-- Generations of Gemstones III
+		ach(18891),	-- Generations of Gemstones IV
+		ach(18897, {	-- Can't Crush These
+			crit(1, {	-- Shipment: Blood Jade Amulet
+				["_quests"] = { 12958 },	-- Shipment: Blood Jade Amulet
+			}),
+			crit(2, {	-- Shipment: Glowing Ivory Figurine
+				["_quests"] = { 12959 },	-- Shipment: Glowing Ivory Figurine
+			}),
+			crit(3, {	-- Shipment: Wicked Sun Brooch
+				["_quests"] = { 12960 },	-- Shipment: Wicked Sun Brooch
+			}),
+			crit(4, {	-- Shipment: Intricate Bone Figurine
+				["_quests"] = { 12961 },	-- Shipment: Intricate Bone Figurine
+			}),
+			crit(5, {	-- Shipment: Bright Armor Relic
+				["_quests"] = { 12962 },	-- Shipment: Bright Armor Relic
+			}),
+			crit(6, {	-- Shipment: Shifting Sun Curio
+				["_quests"] = { 12963 },	-- Shipment: Shifting Sun Curio
+			}),
+			crit(7, {	-- Nibbler! No! [A]
+				["_quests"] = { 25105 },	-- Nibbler! No!
+				["races"] = ALLIANCE_ONLY,
+			}),
+			crit(8, {	-- Nibbler! No! [H]
+				["_quests"] = { 25158 },	-- Nibbler! No!
+				["races"] = HORDE_ONLY,
+			}),
+			crit(9, {	-- A Present for Lila [A]
+				["_quests"] = { 25154 },	-- A Present for Lila
+				["races"] = ALLIANCE_ONLY,
+			}),
+			crit(10, {	-- A Present for Lila [H]
+				["_quests"] = { 25160 },	-- A Present for Lila
+				["races"] = HORDE_ONLY,
+			}),
+			crit(11, {	-- Ogrezonians in the Mood [A]
+				["_quests"] = { 25155 },	-- Ogrezonians in the Mood
+				["races"] = ALLIANCE_ONLY,
+			}),
+			crit(12, {	-- Ogrezonians in the Mood [H]
+				["_quests"] = { 25161 },	-- Ogrezonians in the Mood
+				["races"] = HORDE_ONLY,
+			}),
+			crit(13, {	-- Elemental Goo [A]
+				["_quests"] = { 25156 },	-- Elemental Goo
+				["races"] = ALLIANCE_ONLY,
+			}),
+			crit(14, {	-- Elemental Goo [H]
+				["_quests"] = { 25162 },	-- Elemental Goo
+				["races"] = HORDE_ONLY,
+			}),
+			crit(15, {	-- The Latest Fashion! [A]
+				["_quests"] = { 25157 },	-- The Latest Fashion!
+				["races"] = ALLIANCE_ONLY,
+			}),
+			crit(16, {	-- The Latest Fashion! [H]
+				["_quests"] = { 25159 },	-- The Latest Fashion!
+				["races"] = HORDE_ONLY,
+			}),
+		}),
+		ach(18941, {	-- Dazzling Dragons
+			crit(1, {	-- Jeweled Ruby Whelpling
+				["provider"] = { "i", 193887 },	-- Jeweled Ruby Whelpling
+			}),
+			crit(2, {	-- Jeweled Emerald Whelpling
+				["provider"] = { "i", 193888 },	-- Jeweled Emerald Whelpling
+			}),
+			crit(3, {	-- Jeweled Sapphire Whelpling
+				["provider"] = { "i", 193886 },	-- Jeweled Sapphire Whelpling
+			}),
+			crit(4, {	-- Jeweled Onyx Whelpling
+				["provider"] = { "i", 193889 },	-- Jeweled Onyx Whelpling
+			}),
+			crit(5, {	-- Jeweled Amber Whelpling
+				["provider"] = { "i", 193885 },	-- Jeweled Amber Whelpling
+			}),
+		}),
+		ach(18909, {	-- Fantastic Figurines
+			crit(1, {	-- Figurine - Jade Owl
+				["provider"] = { "i", 21748 },	-- Figurine - Jade Owl
+			}),
+			crit(2, {	-- Figurine - Golden Hare
+				["provider"] = { "i", 21756 },	-- Figurine - Golden Hare
+			}),
+			crit(3, {	-- Figurine - Black Pearl Panther
+				["provider"] = { "i", 21758 },	-- Figurine - Black Pearl Panther
+			}),
+			crit(4, {	-- Figurine - Truesilver Crab
+				["provider"] = { "i", 21760 },	-- Figurine - Truesilver Crab
+			}),
+			crit(5, {	-- Figurine - Truesilver Boar
+				["provider"] = { "i", 21763 },	-- Figurine - Truesilver Boar
+			}),
+			crit(6, {	-- Figurine - Ruby Serpent
+				["provider"] = { "i", 21769 },	-- Figurine - Ruby Serpent
+			}),
+			crit(7, {	-- Figurine - Emerald Owl
+				["provider"] = { "i", 21777 },	-- Figurine - Emerald Owl
+			}),
+			crit(8, {	-- Figurine - Black Diamond Crab
+				["provider"] = { "i", 21784 },	-- Figurine - Black Diamond Crab
+			}),
+			crit(9, {	-- Figurine - Dark Iron Scorpid
+				["provider"] = { "i", 21789 },	-- Figurine - Dark Iron Scorpid
+			}),
+			crit(10, {	-- Figurine - Felsteel Boar
+				["provider"] = { "i", 24124 },	-- Figurine - Felsteel Boar
+			}),
+			crit(11, {	-- Figurine - Dawnstone Crab
+				["provider"] = { "i", 24125 },	-- Figurine - Dawnstone Crab
+			}),
+			--[[ crit(12, {	-- Figurine - Dark Iron Scorpid -- Duplicate?
+				["provider"] = { "i", 21789 },	-- Figurine - Dark Iron Scorpid
+			}), ]]--
+			crit(13, {	-- Figurine - Living Ruby Serpent
+				["provider"] = { "i", 24126 },	-- Figurine - Living Ruby Serpent
+			}),
+			crit(14, {	-- Figurine - Talasite Owl
+				["provider"] = { "i", 24127 },	-- Figurine - Talasite Owl
+			}),
+			crit(15, {	-- Figurine - Nightseye Panther
+				["provider"] = { "i", 24128 }	-- Figurine - Nightseye Panther
+			}),
+			crit(16, {	-- Figurine - Empyrean Tortoise
+				["provider"] = { "i", 35693 },	-- Figurine - Empyrean Tortoise
+			}),
+			crit(17, {	-- Figurine - Khorium Boar
+				["provider"] = { "i", 35694 },	-- Figurine - Khorium Boar
+			}),
+			crit(18, {	-- Figurine - Crimson Serpent
+				["provider"] = { "i", 35700 },	-- Figurine - Crimson Serpent
+			}),
+			crit(19, {	-- Figurine - Shadowsong Panther
+				["provider"] = { "i", 35702 },	-- Figurine - Shadowsong Panther
+			}),
+			crit(20, {	-- Figurine - Seaspray Albatross
+				["provider"] = { "i", 35703 },	-- Figurine - Seaspray Albatross
+			}),
+			crit(21, {	-- Figurine - Ruby Hare
+				["provider"] = { "i", 42341 },	-- Figurine - Ruby Hare
+			}),
+			crit(22, {	-- Figurine - Twilight Serpent
+				["provider"] = { "i", 42395 },	-- Figurine - Twilight Serpent
+			}),
+			crit(23, {	-- Figurine - Sapphire Owl
+				["provider"] = { "i", 42413 },	-- Figurine - Sapphire Owl
+			}),
+			crit(24, {	-- Figurine - Emerald Boar
+				["provider"] = { "i", 42418 },	-- Figurine - Emerald Boar
+			}),
+			crit(25, {	-- Figurine - Monarch Crab
+				["provider"] = { "i", 44063 },	-- Figurine - Monarch Crab
+			}),
+			crit(26, {	-- Figurine - King of Boars
+				["_quests"] = { 28778 },	-- Broken Boar Figurine
+			}),
+			crit(27, {	-- Figurine - Demon Panther
+				["_quests"] = { 25047 },	-- Broken Panther Figurine
+			}),
+			crit(28, {	-- Figurine - Earthen Guardian
+				["_quests"] = { 28776 },	-- Broken Earthen Figurine
+			}),
+			crit(29, {	-- Figurine - Jeweled Serpent
+				["_quests"] = { 28775 },	-- Broken Serpent Figurine
+			}),
+			crit(30, {	-- Figurine - Dream Owl
+				["_quests"] = { 28777 },	-- Broken Owl Figurine
+			}),
+		}),
+		ach(18773, {	-- Jewelhammer's Focus
+			["provider"] = { "i", 153716 },	-- Jewelhammer's Focus
+		}),
+		ach(18893),	-- Plentiful Prospects
+		ach(18727),	-- Rave Leader
+		})),
+	}));
+-- #if AFTER TBC
 local REMOVED_WITH_CATA = "removed 4.0.1";
 applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 	tier(CLASSIC_TIER, {
@@ -5519,7 +5706,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 }));
 
 -- Jewelcrafting Item Database
-local itemDB = root(ROOTS.ItemDBConditional, {});
+local Items = ItemDBConditional;
 
 -- Recipe Cache (for Validation)
 local recipeCache = {
@@ -5579,7 +5766,7 @@ local itemrecipe = function(name, itemID, spellID, spellIDAfterCata, timeline)
 		end
 		o.name = name;
 	end
-	itemDB[itemID] = applyclassicphase(TBC_PHASE_ONE, o);
+	Items[itemID] = applyclassicphase(TBC_PHASE_ONE, o);
 
 	-- Ensure that this recipe's spellID exists in the profession database.
 	if recipeCache then
@@ -6115,10 +6302,9 @@ local neverimplemented = function(thing)
 end
 recipeCache = nil;	-- Disable the cache validation.
 
-bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, nyi_);
-
 -- #if AFTER BFA
 root(ROOTS.HiddenQuestTriggers, {
 	q(55631),	-- Jewelcrafting Diode shrine. harvesting gems from them triggered this quest. Nazmir location
 });
+-- #endif
 -- #endif

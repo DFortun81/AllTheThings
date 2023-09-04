@@ -79,19 +79,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #endif
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					479,	-- Elfin Rabbit (PET!)
 					478,	-- Forest Moth (PET!)
 					452,	-- Red-Tailed Chipmunk (PET!)
 					419,	-- Small Frog (PET!)
 				}},
-			})),
-			-- #endif
+			}),
 			n(FACTIONS, {
 				faction(69, {	-- Darnassus
-					["icon"] = asset("Achievement_Character_Nightelf_Female"),
+					-- #if AFTER WRATH
+					["icon"] = "Interface\\Icons\\Achievement_Character_Nightelf_Female",
+					-- #else
+					["icon"] = [[~_.asset("Achievement_Character_Nightelf_Female")]],
+					-- #endif
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForCityFactionReputation,
 					-- #endif
@@ -372,7 +374,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(32664, {	-- Learn to Ride
 					["description"] = "This quest is available to Night Elves upon reaching level 10.",
-					["timeline"] = { "added 5.2.0.16486" },
+					["timeline"] = { "added 5.2.0.16486", REMOVED_10_1_5 },
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
 					["lockCriteria"] = { 1,
@@ -418,15 +420,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(6973, {	-- Fire hardened Leggings
 							["timeline"] = { "removed 4.0.3" },
-							-- #if ANYCLASSIC
-							["OnUpdate"] = [[function(t)
-								if _.Level >= 40 then
-									t.f = ]] .. PLATE .. [[;
-								else
-									t.f = ]] .. MAIL .. [[;
-								end
-							end]],
-							-- #endif
 						}),
 					},
 				}),
@@ -446,7 +439,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["lvl"] = 8,
 					["groups"] = {
-						i(6710),	-- Pattern: Moonglow Vest
+						i(6710),	-- Pattern: Moonglow Vest (RECIPE!)
 					},
 				}),
 				q(3781, {	-- Morrowgrain Research (1/2)
@@ -868,6 +861,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #endif
+			-- #if BEFORE TBC
+			n(RIDING_TRAINER, {
+				n(4753, {	-- Jartsam <Nightsaber Riding Instructor>
+					["coord"] = { 38.6, 16.0, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+
+					-- Available to Night Elves without faction requirements.
+					["minReputation"] = { 69, EXALTED },	-- Darnassus, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. NIGHTELF .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
+					["groups"] = {
+						recipe(828, {	-- Tiger Riding
+							["cost"] = 200000,
+							["lvl"] = 40,
+						}),
+					},
+				}),
+			}),
+			-- #endif
 			-- #if AFTER 6.1.0.19508
 			n(TREASURES, {
 				o(240625, {	-- High Priestess' Reliquary
@@ -1119,8 +1135,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sym"] = {{"sub", "common_recipes_vendor", 49701}},	-- Jon Casper <Sous Chef>
 					-- #endif
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(4232, {	-- Glorandiir <Axe Merchant>
@@ -1428,10 +1444,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{"sub", "common_recipes_vendor", 3366},	-- Tamar <Leatherworking Supplies>
 					},
 					["groups"] = {
-						i(18949, {	-- Pattern: Barbaric Bracers
+						i(18949, {	-- Pattern: Barbaric Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(7451, {	-- Pattern: Green Whelp Bracers
+						i(7451, {	-- Pattern: Green Whelp Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -1488,13 +1504,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(5642, {	-- Recipe: Free Action Potion
+						i(5642, {	-- Recipe: Free Action Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5643, {	-- Recipe: Great Rage Potion
+						i(5643, {	-- Recipe: Great Rage Potion (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(13477, {	-- Recipe: Superior Mana Potion
+						i(13477, {	-- Recipe: Superior Mana Potion (RECIPE!)
 							["timeline"] = { "removed 2.0.1" },	-- Moved to Trainers
 						}),
 					},

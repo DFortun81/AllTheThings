@@ -5,79 +5,85 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 	m(ZARALEK_CAVERN, {
 		n(ACHIEVEMENTS, {
 			ach(17783, {	-- Adventurer of Zaralek Cavern
-				crit(1, {
+				crit(59188, {	-- Alcanon
 					["_npcs"] = { 203515 },	-- Alcanon
 				}),
-				crit(2, {
+				crit(59185, {	-- Aquifon
 					["_npcs"] = { 203468 },	-- Aquifon
 				}),
-				crit(3, {
-					["_npcs"] = { 203621 },	-- Brulsef the Stronk
+				crit(59202, {	-- Brullo the Strong
+					["_npcs"] = { 203621 },	-- Brullo the Strong
 				}),
-				crit(4, {
+				crit(59212, {	-- Colossian
 					["_npcs"] = { 204093 },	-- Colossian
 				}),
-				crit(5, {
+				crit(59209, {	-- Emberdusk
 					["_npcs"] = { 203664 },	-- Emberdusk
 				}),
-				crit(6, {
+				crit(59207, {	-- Flowfy
 					["_npcs"] = { 203660 },	-- Flowfy
 				}),
-				crit(7, {
+				crit(59190, {	-- General Zskorro
 					["_npcs"] = { 203592 },	-- General Zskorro
 				}),
-				crit(8, {
+				crit(59186, {	-- Goopal
 					["_npcs"] = { 203477 },	-- Goopal
 				}),
-				crit(9, {
+				--[[
+				crit(9, {	-- Hadexia <Ember of Twilight>
 					["_npcs"] = { 203611 },	-- Hadexia <Ember of Twilight>
 				}),
-				crit(10, {
+				]]--
+				crit(59200, {	-- Invohq
 					["_npcs"] = { 203627 },	-- Invohq
 				}),
-				crit(11, {
+				crit(59206, {	-- Dinn
 					["_npcs"] = { 203646 },	-- Dinn
 				}),
-				crit(12, {
+				crit(59199, {	-- Karokta
 					["_npcs"] = { 203625 },	-- Karokta
 				}),
-				crit(13, {
-					["_npcs"] = { 203466 },	-- Kaprachu
+				crit(59184, {	-- Kapraku
+					["_npcs"] = { 203466 },	-- Kapraku
 				}),
-				crit(14, {
+				crit(59198, {	-- Klakatak
 					["_npcs"] = { 203618 },	-- Klakatak
 				}),
-				crit(15, {
+				crit(59183, {	-- Kob'rok
 					["_npcs"] = { 203462 },	-- Kob'rok
 				}),
-				crit(16, {
+				--[[
+				crit(16, {	-- Kronkapace
 					["_npcs"] = { 203642 },	-- Kronkapace
 				}),
-				crit(17, {
+				crit(17, {	-- Lavermix
 					["_npcs"] = { 203630 },	-- Lavermix
 				}),
-				crit(18, {
+				]]--
+				crit(59203, {	-- Magtembo
 					["_npcs"] = { 200111 },	-- Magtembo
 				}),
-				crit(19, {
+				crit(59189, {	-- Professor Gastrinax
 					["_npcs"] = { 203521 },	-- Professor Gastrinax
 				}),
-				crit(20, {
+				--[[
+				crit(20, {	-- Shadowforge Mole Machine
 					["_npcs"] = { 204096 },	-- Shadowforge Mole Machine
 				}),
-				crit(21, {
+				]]--
+				crit(59205, {	-- Skornak
 					["_npcs"] = { 203643 },	-- Skornak
 				}),
-				crit(22, {
+				crit(59187, {	-- Spinmarrow
 					["_npcs"] = { 203480 },	-- Spinmarrow
 				}),
-				crit(23, {
+				crit(59208, {	-- Subterrax
 					["_npcs"] = { 203662 },	-- Subterrax
 				}),
-				crit(24, {
+				crit(59191, {	-- Underlight Queen
 					["_npcs"] = { 203593 },	-- Underlight Queen
 				}),
-				crit(25, {
+				crit(59210, {	-- Viridian King
 					["_npcs"] = { 201029 },	-- Viridian King
 				}),
 			}),
@@ -110,67 +116,64 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["cost"] = { { "i", 205686, 21 } },	-- 21x Clacking Claw
 				["g"] = {
 					i(205904),	-- Vibrant Clacking Claw (TOY!)
-					crit(1, {
+					crit(59491, {
 						["_npcs"] = { 203515 },	-- Alcanon
 					}),
-					crit(2, {
+					crit(59492, {
 						["_npcs"] = { 203468 },	-- Aquifon
 					}),
-					crit(3, {
-						["_npcs"] = { 203621 },	-- Brulsef the Stronk
+					crit(59493, {
+						["_npcs"] = { 203621 },	-- Brullo the Strong
 					}),
-					crit(4, {
+					crit(59494, {
 						["_npcs"] = { 204093 },	-- Colossian
 					}),
-					crit(5, {
+					crit(59495, {
 						["_npcs"] = { 203664 },	-- Emberdusk
 					}),
-					crit(6, {
+					crit(59496, {
 						["_npcs"] = { 203660 },	-- Flowfy
 					}),
-					crit(7, {
+					crit(59497, {
 						["_npcs"] = { 203592 },	-- General Zskorro
 					}),
-					crit(8, {
+					crit(59498, {
 						["_npcs"] = { 203477 },	-- Goopal
 					}),
-					crit(9, {
+					crit(59499, {
 						["_npcs"] = { 203627 },	-- Invohq
 					}),
-					crit(10, {
-						["_npcs"] = { 203646 },	-- Jrumm
+					crit(59500, {
+						["_npcs"] = { 203646 },	-- Dinn
 					}),
-					crit(11, {
-						["_npcs"] = { 203625 },	-- Karokta
+					crit(59501, {
+						["_npcs"] = { 203466 },	-- Kapraku
 					}),
-					crit(12, {
-						["_npcs"] = { 203466 },	-- Kaprachu
-					}),
-					crit(13, {
+					crit(59503, {
 						["_npcs"] = { 203618 },	-- Klakatak
 					}),
-					crit(14, {
+					crit(59504, {
 						["_npcs"] = { 203462 },	-- Kob'rok
 					}),
-					crit(15, {
+					crit(59505, {
 						["_npcs"] = { 200111 },	-- Magtembo
 					}),
-					crit(16, {
+					crit(59506, {
 						["_npcs"] = { 203521 },	-- Professor Gastrinax
 					}),
-					crit(17, {
+					crit(59507, {
 						["_npcs"] = { 203643 },	-- Skornak
 					}),
-					crit(18, {
+					crit(59508, {
 						["_npcs"] = { 203480 },	-- Spinmarrow
 					}),
-					crit(19, {
+					crit(59509, {
 						["_npcs"] = { 203662 },	-- Subterrax
 					}),
-					crit(20, {
+					crit(59510, {
 						["_npcs"] = { 203593 },	-- Underlight Queen
 					}),
-					crit(21, {
+					crit(59511, {
 						["_npcs"] = { 201029 },	-- Viridian King
 					}),
 				},
@@ -222,16 +225,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 75417 },	-- Symbol of Hope
 				}),
 			}),
-			ach(17766, {	-- Explore Zaralek Cavern
-				crit(1),	-- Aberrus Approach
-				crit(2),	-- Buried Vault
-				crit(3),	-- Glimmerogg
-				crit(4),	-- Loamm
-				crit(5),	-- Nal ks'kol
-				crit(6),	-- Sulfur Wastes
-				crit(7),	-- The Throughway
-				crit(8),	-- Zaqali Caldera
-			}),
+			explorationAch(17766),	-- Explore Zaralek Cavern
 			petbattle(ach(17934, {	-- Family Battler of Zaralek Cavern
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
@@ -467,7 +461,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				crit(6,	{	-- Aimless Snail
 					["description"] = "Requires the quest The Slowest Fan Club from Briggul to be active and accepted. Hitting maximum reputation with Glimmerogg Racer means you will need party sync to get this quest to be able to see the critters.",
-					["crs"] = { 201875 },	-- Aimless Snail
+					["_npcs"] = { 201875 },	-- Aimless Snail	(Using _npcs so the criteria shows inside of the ONLY daily quest which allows it to be completed)
 					["coord"] = { 44.91, 77.71, ZARALEK_CAVERN },
 				}),
 				crit(7, {	-- Incense Cinder

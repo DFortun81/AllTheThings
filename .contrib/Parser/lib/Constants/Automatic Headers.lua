@@ -2,6 +2,7 @@
 HEADERS = {
 	Achievement = "a",
 	Class = "c",
+	Global = "_G",
 	Item = "i",
 	Map = "m",
 	NPC = "n",

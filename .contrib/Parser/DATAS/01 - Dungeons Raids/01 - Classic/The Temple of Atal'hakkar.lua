@@ -1,9 +1,19 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+ATALAI_DEFENDERS = createHeader({
+	readable = "Atal'ai Defenders",
+	icon = "Interface\\Icons\\Inv_misc_head_troll_01",
+	text = {
+		en = "Atal'ai Defenders",
+		fr = "Défenseurs Atal'ai",
+		ru = "Защитники Атал'ай",
+		cn = "阿塔莱防御者",
+	},
+});
 local ESSENCE_OF_ERANIKUS_PART_TWO_OnUpdate = [[function(t)
 	if not t.collected and C_QuestLog.IsQuestFlaggedCompleted(3373) and GetItemCount(10455, true) < 1 then
-		if not _.AccountWideQuests then
+		if not _.Settings.AccountWide.Quests then
 			t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		else
 			t.u = nil;
@@ -13,7 +23,7 @@ local ESSENCE_OF_ERANIKUS_PART_TWO_OnUpdate = [[function(t)
 end]];
 local ESSENCE_OF_ERANIKUS_OWN_WORDS_OnUpdate = [[function(t)
 	if not C_QuestLog.IsQuestFlaggedCompleted(3374) and (C_QuestLog.IsQuestFlaggedCompleted(3373) and GetItemCount(10455, true) < 1) then
-		if not _.AccountWideQuests then
+		if not _.Settings.AccountWide.Quests then
 			t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		else
 			t.u = nil;
@@ -25,6 +35,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 	inst(237, {	-- The Temple of Atal'hakkar
 		-- #if BEFORE MOP
 		["lore"] = "Over a thousand years ago, the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, attempted to bring back an ancient blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire buckled in upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows. There they erected a great temple to Hakkar - where they could prepare for his arrival into the physical world. The great dragon Aspect, Ysera, learned of the Atal'ai's plans and smashed the temple beneath the marshes. To this day, the temple's drowned ruins are guarded by the green dragons who prevent anyone from getting in or out. However, it is believed that some of the fanatical Atal'ai may have survived Ysera's wrath - and recommitted themselves to the dark service of Hakkar.",
+		-- #endif
+		-- #if BEFORE WRATH
+		["zone-text-areaID"] = 1417,	-- Sunken Temple
 		-- #endif
 		-- #if AFTER CATA
 		["coord"] = { 76.04, 45.21, SWAMP_OF_SORROWS },
@@ -556,6 +569,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					},
 				}),
 			}),
+			-- #if AFTER 10.1.5
+			prof(SKINNING, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {
+				i(20381),	-- Dreamscale
+			})),
+			-- #endif
 			n(ZONE_DROPS, {
 				i(11318, {	-- Atal'ai Haze
 					["crs"] = {
@@ -569,14 +587,14 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["timeline"] = { "deleted 4.0.3" },
 					["cr"] = 5259,	-- Atal'ai Witch Doctor
 				}),
-				i(78346, {	-- Pattern: Green Dragonscale Breastplate (New Version)
-					["timeline"] = { "added 4.3.0" },
+				i(78346, {	-- Pattern: Green Dragonscale Breastplate (New Version) (RECIPE!)
+					["timeline"] = { ADDED_4_3_0 },
 				}),
-				i(15733, {	-- Pattern: Green Dragonscale Leggings (Old Version)
-					["timeline"] = { "removed 4.0.3" },
+				i(15733, {	-- Pattern: Green Dragonscale Leggings (Old Version) (RECIPE!)
+					["timeline"] = { REMOVED_4_0_3 },
 				}),
-				i(78345, {	-- Pattern: Green Dragonscale Leggings (New Version)
-					["timeline"] = { "added 4.3.0.15005" },
+				i(78345, {	-- Pattern: Green Dragonscale Leggings (New Version) (RECIPE!)
+					["timeline"] = { ADDED_4_3_0 },
 				}),
 				i(10627),	-- Bludgeon of the Grinning Dog
 				i(10628),	-- Deathblow
@@ -651,7 +669,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					}),
 				},
 			}),
-			n(-422, {	-- Atal'ai Defenders
+			n(ATALAI_DEFENDERS, {
 				["description"] = "You must kill all 6 mini bosses around the room in order to unlock the way to Jammal'an the Prophet.",
 				["providers"] = {
 					{ "n", 5713 },	-- Gasher
@@ -761,10 +779,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			e(463, {	-- Shade of Erankikus
 				["creatureID"] = 5709,
 				["groups"] = {
-					classicAch(641, {	-- Sunken Temple
+					ach(641, {	-- Sunken Temple
 						-- #if BEFORE WRATH
 						["sourceQuest"] = 3373,	-- The Essence of Eranikus
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5050, {	-- Sunken Temple Guild Run

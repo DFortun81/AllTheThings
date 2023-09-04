@@ -8,17 +8,6 @@ root(ROOTS.Zones, {
 			["icon"] = "Interface\\Icons\\achievement_zone_howlingfjord_01",
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["groups"] = {
-							crit(3, {	-- Beegle Blastfuse
-								["coord"] = { 28.6, 33.8, HOWLING_FJORD },
-								["cr"] = 66635,	-- Beegle Blastfuse <Master Pet Tamer>
-							}),
-						},
-					})),
 					explorationAch(1263),	-- Explore Howling Fjord
 					ach(1254, {	-- Friend or Fowl?
 						["coords"] = {
@@ -197,8 +186,7 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
 						646,	-- Chicken (PET!)
 						647,	-- Grizzly Squirrel (PET!)
@@ -226,8 +214,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(4062),	-- Apothecary Camp
@@ -353,6 +340,11 @@ root(ROOTS.Zones, {
 						["cr"] = 23859,	-- Greer Orehammer <Gryphon Master>
 						["coord"] = { 31.2, 44.0, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
+					}),
+				}),
+				petbattles({
+					n(66635, {	-- Beegle Blastfuse <Master Pet Tamer>
+						["coord"] = { 28.6, 33.8, HOWLING_FJORD },
 					}),
 				}),
 				n(QUESTS, {
@@ -2187,11 +2179,8 @@ root(ROOTS.Zones, {
 							{ 33.2, 80.2, HOWLING_FJORD },
 						},
 						["groups"] = {
-							i(120139, {	-- Tome of Polymorph: Penguin
-								["spellID"] = 161355,	-- Polymorph(Penguin)
-								["timeline"] = { "added 6.0.2.18816", "removed 7.0.1" },
-								["classes"] = { MAGE },
-								["f"] = RECIPES,
+							i(120139, {	-- Tome of Polymorph: Penguin (CI!)
+								["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
 							}),
 							i(44668),	-- Egg-Warming Blanket
 						},
@@ -2342,11 +2331,11 @@ root(ROOTS.Zones, {
 							i(44723, { -- Pengu (PET!)
 								["timeline"] = { "added 3.0.2.8982" },
 							}),
-							i(44511, {	-- Pattern: Dragonscale Ammo Pouch
-								["timeline"] = { "removed 4.0.1" },
+							i(44511, {	-- Pattern: Dragonscale Ammo Pouch (RECIPE!)
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(45774),	-- Pattern: Emerald Bag
-							i(44509),	-- Pattern: Trapper's Traveling Pack
+							i(44509),	-- Pattern: Trapper's Traveling Pack (RECIPE!)
 							i(44061),	-- Pigment-Stained Robes
 							i(44052),	-- Totemic Purification Rod
 							i(44051),	-- Traditional Flensing Knife

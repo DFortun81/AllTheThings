@@ -751,7 +751,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["coord"] = { 20.0, 21.4, THE_HALL_OF_SHADOWS },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							i(143493),	-- Shadowblade's Murderous Omen (MOUNT!)
+							mount(231434),	-- Shadowblade's Murderous Omen (MOUNT!)
 						},
 					})),
 					q(46178, bubbleDownSelf({ ["timeline"] = { "added 7.2.0" } }, {	-- Hiding in Plain Sight (H)
@@ -760,7 +760,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["coord"] = { 20.0, 21.4, THE_HALL_OF_SHADOWS },
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(143493),	-- Shadowblade's Murderous Omen (MOUNT!)
+							mount(231434),	-- Shadowblade's Murderous Omen (MOUNT!)
 						},
 					})),
 					-- Side Quest
@@ -981,7 +981,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(34249),	-- Hula Girl Doll
-							i(138954, {	-- Illusion: Poisoned
+							i(138954, {	-- Illusion: Poisoned (ILLUSION!)
 								["cost"] = { { "c", 1416, 25000 }, },	-- 25,000x Coin of Air
 							}),
 							i(120434, {	-- Immaculate White Mask
@@ -1042,10 +1042,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							i(139739, {	-- Chestguard of the Uncrowned
 								["cost"] = 5000000,	-- 500g
 							}),
-							i(136803, {	-- Dirty Tricks, Vol 1: Detection
-								-- TODO: get tracking to work for these kinds of items
-								--["spellID"] = 210108,	-- Detection
-							}),
+							i(136803),	-- Dirty Tricks, Vol 1: Detection (CI!)
 							i(139740, {	-- Footpads of the Uncrowned
 								["cost"] = 5000000,	-- 500g
 							}),
@@ -1080,7 +1077,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					n(105982, {	-- Smudge Thunderwood <Herbal Concoctions>
 						["coord"] = { 64.6, 44.2, THE_HALL_OF_SHADOWS },
 						["g"] = {
-							i(18160),	-- Recipe: Thistle Tea
+							i(18160),	-- Recipe: Thistle Tea (RECIPE!)
 						},
 					}),
 					n(121282, {	-- Zan Shivsproket

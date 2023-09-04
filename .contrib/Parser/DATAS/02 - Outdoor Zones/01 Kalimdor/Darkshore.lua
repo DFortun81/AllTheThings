@@ -52,8 +52,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					378,	-- Rabbit (PET!)
 					417,	-- Rat (PET!)
@@ -67,8 +66,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["description"] = "Can commonly be found on the beaches of Old Darkshore.",
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["150:215:318:162"] = 442,	-- Auberdine
@@ -784,7 +782,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
-						i(5486),	-- Recipe: Strider Stew
+						i(5486),	-- Recipe: Strider Stew (RECIPE!)
 						i(5477),	-- Strider Stew
 					},
 				}),
@@ -2557,10 +2555,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
-						i(5528),	-- Recipe: Clam Chowder
-						i(6368),	-- Recipe: Rainbow Fin Albacore
-						i(6369),	-- Recipe: Rockscale Cod
-						i(17062),	-- Recipe: Mithril Head Trout
+						i(5528),	-- Recipe: Clam Chowder (RECIPE!)
+						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
+						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
 					},
 					-- #endif
 				}),
@@ -2569,7 +2567,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(5485, {	-- Recipe: Fillet of Frenzy
+						i(5485, {	-- Recipe: Fillet of Frenzy (RECIPE!)
 							["timeline"] = { "removed 4.0.3" },	-- Added to Trainers
 						}),
 					},
@@ -2580,8 +2578,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
-						i(5786),	-- Pattern: Murloc Scale Belt
-						i(5787),	-- Pattern: Murloc Scale Breastplate
+						i(5786),	-- Pattern: Murloc Scale Belt (RECIPE!)
+						i(5787),	-- Pattern: Murloc Scale Breastplate (RECIPE!)
 					},
 					-- #endif
 				}),

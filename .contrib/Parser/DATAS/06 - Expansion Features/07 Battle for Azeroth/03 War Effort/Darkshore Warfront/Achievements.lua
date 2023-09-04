@@ -4,8 +4,8 @@
 
 root(ROOTS.ExpansionFeatures,
 	tier(BFA_TIER, {
-		n(-10057, {	-- War Effort
-			n(-237, {	-- War Front: The Battle for Darkshore
+		n(WARFRONT, {
+			n(WARFRONT_BATTLE_FOR_DARKSHORE, {
 				n(ACHIEVEMENTS, {	-- Achievements
 					ach(13310, {	-- By Nature's Call (A)
 						["races"] = ALLIANCE_ONLY,

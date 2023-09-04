@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(BASTION, {
 		n(ACHIEVEMENTS, {
 			achraw(14307, {	-- Adventurer of Bastion
@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					["_npcs"] = { 161530 },	-- Cloudtail
 				}),
 				crit(5, {
-					["_npcs"] = { 160051 },	-- Nemaeus
+					["_npcs"] = { 161529 },	-- Nemaeus
 				}),
 				crit(6, {
 					["_npcs"] = { 160629 },	-- Baedos
@@ -107,19 +107,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					["coord"] = { 34.7, 30.0, BASTION },
 				}),
 			}),
-			ach(14303, {	-- Explore Bastion
-				crit(1),		-- Vestribule of Eternity
-				crit(2),		-- Temple of Humility
-				crit(3),		-- Purity's Pinnacle
-				crit(4),		-- Firstborne's Bounty
-				crit(5),		-- The Mnemonic Locus
-				crit(6),		-- The Eternal Forge
-				crit(7),		-- Elysian Hold
-				crit(8),		-- Citadel of Loyalty
-				crit(9),		-- Temple of Courage
-				crit(10),		-- Aspirant's Crucible
-				crit(11),		-- Agthia's Repose
-			}),
+			explorationAch(14303),	-- Explore Bastion
 			ach(14735, {	-- Flight School Graduate
 				crit(1, {		-- Flight School: Falling With Style
 					["_quests"] = { 60844 },	-- Flight School: Falling With Style

@@ -115,11 +115,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(162322, {	-- Schematic: Frost-Laced Ammunition [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(162624, {	-- Tome of Hex: Wicker Mongrel
-						["spellID"] = 277784,	-- Hex (Wicker Mongrel)
-						["classes"] = { SHAMAN },
+					i(162624, {	-- Tome of Hex: Wicker Mongrel (CI!)
 						["cost"] = 18000000,	-- 1,800g
-						["f"] = RECIPES,
 					}),
 					i(160535, {	-- Witch Hunter's Cape
 						["cost"] = 11000000,	-- 1,100g

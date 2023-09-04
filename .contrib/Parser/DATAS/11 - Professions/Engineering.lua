@@ -1,3 +1,785 @@
+-----------------------------------------------------
+--       P R O F E S S I O N S   M O D U L E       --
+-----------------------------------------------------
+local ENGINEERING_KNOWLEDGE = 2027;
+root(ROOTS.Professions, prof(ENGINEERING, {
+	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+		ach(18901, {	-- Chromatic Calibration: Holo-Gogs
+			i(209062, {	-- Ensemble: Chromatically Calibrated Holo-Gogs
+				i(208787),	-- Black Holo-Gogs
+				i(208788),	-- Blue Holo-Gogs
+				i(208789),	-- Gold Holo-Gogs
+				i(208790),	-- Green Holo-Gogs
+				i(208795),	-- Midnight Holo-Gogs
+				i(208796),	-- Orange Holo-Gogs
+				i(208791),	-- Purple Holo-Gogs
+				i(208792),	-- Red Holo-Gogs
+				i(208793),	-- Silver Holo-Gogs
+				i(208794),	-- White Holo-Gogs
+				i(208797),	-- Yellow Holo-Gogs
+			}),
+			crit(1, {	-- Gnomish Power Goggles
+				["provider"] = { "i", 23828 },	-- Gnomish Power Goggles
+			}),
+			crit(2, {	-- Deathblow X11 Goggles
+				["provider"] = { "i", 32478 },	-- Deathblow X11 Goggles
+			}),
+			crit(3, {	-- Quad Deathblow X44 Goggles
+				["provider"] = { "i", 34353 },	-- Quad Deathblow X44 Goggles
+			}),
+			crit(4, {	-- Visage Liquification Goggles
+				["provider"] = { "i", 42553 },	-- Visage Liquification Goggles
+			}),
+			crit(5, {	-- Ultra-Spectropic Detection Goggles
+				["provider"] = { "i", 23762 },	-- Ultra-Spectropic Detection Goggles
+			}),
+			crit(6, {	-- Cogspinner Goggles
+				["provider"] = { "i", 23758 },	-- Cogspinner Goggles
+			}),
+			crit(7, {	-- Justicebringer 2000 Specs
+				["provider"] = { "i", 32472 },	-- Justicebringer 2000 Specs
+			}),
+			crit(8, {	-- Justicebringer 3000 Specs
+				["provider"] = { "i", 35185 },	-- Justicebringer 3000 Specs
+			}),
+			crit(9, {	-- Living Replicator Specs
+				["provider"] = { "i", 32475 },	-- Living Replicator Specs
+			}),
+			crit(10, {	-- Primal-Attuned Goggles
+				["provider"] = { "i", 35184 },	-- Primal-Attuned Goggles
+			}),
+			crit(11, {	-- Greensight Gogs
+				["provider"] = { "i", 42554 },	-- Greensight Gogs
+			}),
+			crit(12, {	-- Surestrike Goggles v2.0
+				["provider"] = { "i", 32474 },	-- Surestrike Goggles v2.0
+			}),
+			crit(13, {	-- Surestrike Goggles v3.0
+				["provider"] = { "i", 34356 },	-- Surestrike Goggles v3.0
+			}),
+			crit(14, {	-- Hyper-Vision Goggles
+				["provider"] = { "i", 23763 },	-- Hyper-Vision Goggles
+			}),
+			crit(15, {	-- Destruction Holo-Gogs
+				["provider"] = { "i", 32494 },	-- Destruction Holo-Gogs
+			}),
+			crit(16, {	-- Annihilator Holo-Gogs
+				["provider"] = { "i", 34847 },	-- Annihilator Holo-Gogs
+			}),
+			crit(17, {	-- Gnomish Battle Goggles
+				["provider"] = { "i", 23829 },	-- Gnomish Battle Goggles
+			}),
+			crit(18, {	-- Tankatronic Goggles
+				["provider"] = { "i", 32473 },	-- Tankatronic Goggles
+			}),
+			crit(19, {	-- Magnified Moon Specs
+				["provider"] = { "i", 32480 },	-- Magnified Moon Specs
+			}),
+			crit(20, {	-- Hyper-Magnified Moon Specs
+				["provider"] = { "i", 35182 },	-- Hyper-Magnified Moon Specs
+			}),
+			crit(21, {	-- Hard Khorium Goggles
+				["provider"] = { "i", 34357 },	-- Hard Khorium Goggles
+			}),
+			crit(22, {	-- Armored Titanium Goggles
+				["provider"] = { "i", 42549 },	-- Armored Titanium Goggles
+			}),
+			crit(23, {	-- Charged Titanium Specs
+				["provider"] = { "i", 42552 },	-- Charged Titanium Specs
+			}),
+			crit(24, {	-- Wonderheal XT40 Shades
+				["provider"] = { "i", 32479 },	-- Wonderheal XT40 Shades
+			}),
+			crit(25, {	-- Wonderheal XT68 Shades
+				["provider"] = { "i", 35183 },	-- Wonderheal XT68 Shades
+			}),
+			crit(26, {	-- Unbreakable Healing Amplifiers
+				["provider"] = { "i", 44949 },	-- Unbreakable Healing Amplifiers
+			}),
+			crit(27, {	-- Mechanized Snow Goggles
+				["providers"] = {
+					-- TODO: Check This when doing Engi
+					{ "i", 41112 },	-- Mechanized Snow Goggles
+					{ "i", 44740 },	-- Mechanized Snow Goggles
+					{ "i", 44741 },	-- Mechanized Snow Goggles
+					{ "i", 44742 },	-- Mechanized Snow Goggles
+				},
+			}),
+			crit(28, {	-- Furious Gizmatic Goggles
+				["provider"] = { "i", 32461 },	-- Furious Gizmatic Goggles
+			}),
+			crit(29, {	-- Mayhem Projection Goggles
+				["provider"] = { "i", 34354 },	-- Mayhem Projection Goggles
+			}),
+			crit(30, {	-- Weakness Spectralizers
+				["provider"] = { "i", 42550 },	-- Weakness Spectralizers
+			}),
+			crit(30, {	-- Gadgetstorm Goggles
+				["provider"] = { "i", 32476 },	-- Gadgetstorm Goggles
+			}),
+			crit(30, {	-- Lightning Etched Specs
+				["provider"] = { "i", 34355 },	-- Lightning Etched Specs
+			}),
+			crit(30, {	-- Truesight Ice Blinders
+				["provider"] = { "i", 42551 },	-- Truesight Ice Blinders
+			}),
+			crit(30, {	-- Electroflux Sight Enhancers
+				["provider"] = { "i", 42555 },	-- Electroflux Sight Enhancers
+			}),
+		}),
+		ach(18875),	-- Dangerous Devices IV
+		ach(18874),	-- Dangerous Devices III
+		ach(18873),	-- Dangerous Devices II
+		ach(18872),	-- Dangerous Devices I
+		ach(18855, {	-- Portal to Everywhere
+			crit(1, {	-- Ultrasafe Transporter: Gadgetzan
+				["provider"] = { "i", 18986 },	-- Ultrasafe Transporter: Gadgetzan
+			}),
+			crit(2, {	-- Dimensional Ripper - Everlook
+				["provider"] = { "i", 18984 },	-- Dimensional Ripper - Everlook
+			}),
+			crit(3, {	-- Dimensional Ripper - Area 52
+				["provider"] = { "i", 30542 },	-- Dimensional Ripper - Area 52
+			}),
+			crit(4, {	-- Ultrasafe Transporter: Toshley's Station
+				["provider"] = { "i", 30544 },	-- Ultrasafe Transporter: Toshley's Station
+			}),
+			crit(5, {	-- Wormhole Generator: Northrend
+				["provider"] = { "i", 48933 },	-- Wormhole Generator: Northrend
+			}),
+			crit(6, {	-- Wormhole Generator: Pandaria
+				["provider"] = { "i", 87215 },	-- Wormhole Generator: Pandaria
+			}),
+			crit(7, {	-- Wormhole Centrifuge
+				["provider"] = { "i", 112059 },	-- Wormhole Centrifuge
+			}),
+			crit(8, {	-- Wormhole Generator: Argus
+				["provider"] = { "i", 151652 },	-- Wormhole Generator: Argus
+			}),
+			crit(9, {	-- Wormhole Generator: Kul Tiras
+				["provider"] = { "i", 168807 },	-- Wormhole Generator: Kul Tiras
+			}),
+			crit(10, {	-- Wormhole Generator: Zandalar
+				["provider"] = { "i", 168808 },	-- Wormhole Generator: Zandalar
+			}),
+			crit(11, {	-- Wormhole Generator: Shadowlands
+				["provider"] = { "i", 172924 },	-- Wormhole Generator: Shadowlands
+			}),
+			crit(12, {	-- Wyrmhole Generator: Dragon Isles
+				["provider"] = { "i", 198156 },	-- Wyrmhole Generator: Dragon Isles
+			}),
+		}),
+	})),
+	tier(CLASSIC_TIER, {
+		ach(18730, {	-- Goblins vs Gnomes
+			["sourceQuests"] = {
+				29477,	-- Gnomish Engineering
+				29475,	-- Goblin Engineering
+			},
+			["sourceQuestNumRequired"] = 1,
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(29477, {	-- Gnomish Engineering
+			["description"] = "Exclusive with |cFFFFD700Goblin Engineering|r. Becomes available at lvl 200 classic engineering.",
+			["qgs"] = {
+				5518,	-- Lilliam Sparkspindle <Engineering Trainer> [STORMWIND_CITY]
+				5174,	-- Springspindle Fizzlegear <Engineering Trainer> [IRONFORGE]
+				11017,	-- Roxxik <Engineering Trainer> [ORGRIMMAR]
+				52651,	-- Engineer Palehoof [THUNDER_BLUFF]
+			},
+			["altQuests"] = {
+				3526,	-- Goblin Engineering
+				3629,	-- Goblin Engineering
+				3630,	-- Gnome Engineering
+				3632,	-- Gnome Engineering
+				3633,	-- Goblin Engineering
+				3634,	-- Gnome Engineering
+				3635,	-- Gnome Engineering
+				3637,	-- Gnome Engineering
+				4181,	-- Goblin Engineering
+				29475,	-- Goblin Engineering
+				--29477,	-- Gnomish Engineering
+			},
+			["coords"] = {
+				{ 62.8, 32.0, STORMWIND_CITY },	-- Lilliam Sparkspindle
+				{ 68.8, 45.2, IRONFORGE },	-- Springspindle Fizzlegear
+				{ 56.8, 56.4, ORGRIMMAR },	-- Roxxik
+				{ 36.8, 59.6, THUNDER_BLUFF },	-- Engineer Palehoof
+			},
+			["cost"] = {
+				{ "i", 10559, 6 },	-- Mithril Tube
+				{ "i", 4392, 2 },	-- Advanced Target Dummy
+				{ "i", 4407, 1 },	-- Accurate Scope
+			},
+			["repeatable"] = true,
+			["timeline"] = { ADDED_4_3_0 },
+		}),
+		q(29475, {	-- Goblin Engineering
+			["description"] = "Exclusive with |cFFFFD700Gnomish Engineering|r. Becomes available at lvl 200 classic engineering.",
+			["qgs"] = {
+				5518,	-- Lilliam Sparkspindle <Engineering Trainer> [STORMWIND_CITY]
+				5174,	-- Springspindle Fizzlegear <Engineering Trainer> [IRONFORGE]
+				11017,	-- Roxxik <Engineering Trainer> [ORGRIMMAR]
+				52651,	-- Engineer Palehoof [THUNDER_BLUFF]
+			},
+			["altQuests"] = {
+				3526,	-- Goblin Engineering
+				3629,	-- Goblin Engineering
+				3630,	-- Gnome Engineering
+				3632,	-- Gnome Engineering
+				3633,	-- Goblin Engineering
+				3634,	-- Gnome Engineering
+				3635,	-- Gnome Engineering
+				3637,	-- Gnome Engineering
+				4181,	-- Goblin Engineering
+				--29475,	-- Goblin Engineering
+				29477,	-- Gnomish Engineering
+			},
+			["coords"] = {
+				{ 62.8, 32.0, STORMWIND_CITY },	-- Lilliam Sparkspindle
+				{ 68.8, 45.2, IRONFORGE },	-- Springspindle Fizzlegear
+				{ 56.8, 56.4, ORGRIMMAR },	-- Roxxik
+				{ 36.8, 59.6, THUNDER_BLUFF },	-- Engineer Palehoof
+			},
+			["cost"] = {
+				{ "i", 4394, 20 },	-- Big Iron Bomb
+				{ "i", 10507, 20 },	-- Solid Dynamite
+				{ "i", 4384, 5 },	-- Explosive Sheep
+			},
+			["repeatable"] = true,
+			["timeline"] = { ADDED_4_3_0 },
+		}),
+	}),
+	tier(CATA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+		ach(18908, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Bio-Optic Killshades
+			i(209063, {	-- Ensemble: Chromatically Calibrated Bio-Optic Killshades
+				i(208813),	-- Black Bio-Optic Killshades
+				i(208814),	-- Blue Bio-Optic Killshades
+				i(208815),	-- Red Bio-Optic Killshades
+				i(208812),	-- Yellow Bio-Optic Killshades
+			}),
+			crit(1, {	-- Reinforced Bio-Optic Killshades
+				["provider"] = { "i", 59359 },	-- Reinforced Bio-Optic Killshades
+			}),
+			crit(2, {	-- Specialized Bio-Optic Killshades
+				["provider"] = { "i", 59448 },	-- Specialized Bio-Optic Killshades
+			}),
+			crit(3, {	-- Deadly Bio-Optic Killshades
+				["provider"] = { "i", 59456 },	-- Deadly Bio-Optic Killshades
+			}),
+			crit(4, {	-- Energized Bio-Optic Killshades
+				["provider"] = { "i", 59458 },	-- Energized Bio-Optic Killshades
+			}),
+			crit(5, {	-- Agile Bio-Optic Killshades
+				["provider"] = { "i", 59455 },	-- Agile Bio-Optic Killshades
+			}),
+			crit(6, {	-- Camouflage Bio-Optic Killshades
+				["provider"] = { "i", 59453 },	-- Camouflage Bio-Optic Killshades
+			}),
+			crit(7, {	-- Lightweight Bio-Optic Killshades
+				["provider"] = { "i", 59449 },	-- Lightweight Bio-Optic Killshades
+			}),
+		})),
+	})),
+	tier(MOP_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+		ach(18905, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Retinal Armor
+			i(209064, {	-- Ensemble: Chromatically Calibrated Retinal Armor
+				i(208802),	-- Black Retinal Armor
+				i(208803),	-- Blue Retinal Armor
+				i(208804),	-- Green Retinal Armor
+				i(208805),	-- Red Retinal Armor
+				i(208806),	-- White Retinal Armor
+				i(208807),	-- Yellow Retinal Armor
+			}),
+			crit(1, {	-- Lightweight Retinal Armor
+				["provider"] = { "i", 77533 },	-- Lightweight Retinal Armor
+			}),
+			crit(2, {	-- Agile Retinal Armor
+				["provider"] = { "i", 77534 },	-- Agile Retinal Armor
+			}),
+			crit(3, {	-- Camouflage Retinal Armor
+				["provider"] = { "i", 77535 },	-- Camouflage Retinal Armor
+			}),
+			crit(4, {	-- Deadly Retinal Armor
+				["provider"] = { "i", 77536 },	-- Deadly Retinal Armor
+			}),
+			crit(5, {	-- Energized Retinal Armor
+				["provider"] = { "i", 77537 },	-- Energized Retinal Armor
+			}),
+			crit(6, {	-- Specialized Retinal Armor
+				["provider"] = { "i", 77538 },	-- Specialized Retinal Armor
+			}),
+			crit(7, {	-- Reinforced Retinal Armor
+				["provider"] = { "i", 77539 },	-- Reinforced Retinal Armor
+			}),
+		})),
+	})),
+	tier(WOD_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+		ach(18895, {	-- You Had it Coming
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+	})),
+	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+		ach(18855, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Cranial Cannons
+			i(209066, {	-- Ensemble: Chromatically Calibrated Cranial Cannons
+				i(208808),	-- Green Cranial Cannon
+				i(208809),	-- Orange Cranial Cannon
+				i(208810),	-- Purple Cranial Cannon
+				i(208811),	-- Yellow Cranial Cannon
+			}),
+			crit(1, {	-- Blink-Trigger Headgun
+				["provider"] = { "i", 132500 },	-- Blink-Trigger Headgun
+			}),
+			crit(2, {	-- Tactical Headgun
+				["provider"] = { "i", 132501 },	-- Tactical Headgun
+			}),
+			crit(3, {	-- Bolt-Action Headgun
+				["provider"] = { "i", 132502 },	-- Bolt-Action Headgun
+			}),
+			crit(4, {	-- Reinforced Headgun
+				["provider"] = { "i", 132503 },	-- Reinforced Headgun
+			}),
+			crit(5, {	-- Semi-Automagic Cranial Cannon
+				["provider"] = { "i", 132504 },	-- Semi-Automagic Cranial Cannon
+			}),
+			crit(6, {	-- Sawed-Off Cranial Cannon
+				["provider"] = { "i", 132505 },	-- Sawed-Off Cranial Cannon
+			}),
+			crit(7, {	-- Double-Barreled Cranial Cannon
+				["provider"] = { "i", 132506 },	-- Double-Barreled Cranial Cannon
+			}),
+			crit(8, {	-- Ironsight Cranial Cannon
+				["provider"] = { "i", 132507 },	-- Ironsight Cranial Cannon
+			}),
+			crit(9, {	-- Tailored Skullblasters
+				["provider"] = { "i", 144331 },	-- Tailored Skullblasters
+			}),
+			crit(10, {	-- Rugged Skullblasters
+				["provider"] = { "i", 144332 },	-- Rugged Skullblasters
+			}),
+			crit(11, {	-- Chain Skullblasters
+				["provider"] = { "i", 144333 },	-- Chain Skullblasters
+			}),
+			crit(12, {	-- Heavy Skullblasters
+				["provider"] = { "i", 144334 },	-- Heavy Skullblasters
+			}),
+		})),
+	})),
+	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+		ach(18776, {	-- The Ub3r-Spanner
+			["provider"] = { "i", 164740 },	-- Ub3r-Spanner
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(54475, {	-- Engineered Blueprints [A]
+			["provider"] = { "n", 136059 },	-- Layla Evenkeel
+			["coord"] = { 77.4, 14.2, BORALUS },
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
+		}),
+		q(54476, {	-- Engineered Blueprints [H]
+			["provider"] = { "n", 131840 },	-- Shuga Blastcaps
+			["coord"] = { 45.1, 40.6, DAZARALOR },
+			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
+		}),
+		------ Tools of Trade Questline ------
+		q(55028, {	-- It's Scrap Work... [A]
+			["description"] = "Requires 150 Kul Tiran Engineering.",
+			["provider"] = { "n", 136059 },	-- Layla Evenkeel
+			["coord"] = { 77.4, 14.2, BORALUS },
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(55031, {	-- It's Scrap Work... [H]
+			["description"] = "Requires 150 Zandalari Engineering.",
+			["provider"] = { "n", 131840 },	-- Shuga Blastcaps
+			["coord"] = { 45.1, 40.6, DAZARALOR },
+			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(53947, {	-- In the Dunes [A]
+			["sourceQuests"] = { 55028 },	-- It's Scrap Work... [A]
+			["provider"] = { "n", 136059 },	-- Layla Evenkeel
+			["coord"] = { 77.4, 14.2, BORALUS },
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(53783, {	-- In the Dunes [H]
+			["sourceQuests"] = { 55031 },	-- It's Scrap Work... [H]
+			["provider"] = { "n", 131840 },	-- Shuga Blastcaps
+			["coord"] = { 45.1, 40.6, DAZARALOR },
+			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(53802, {	-- Sethrak Persuasion
+			["sourceQuests"] = {
+				53947,	-- In the Dunes [A]
+				53783,	-- In the Dunes [H]
+			},
+			["provider"] = { "n", 145131 },	-- Dataguru Gryzix
+			["coord"] = { 26.3, 47.3, VOLDUN },
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(53806, {	-- Heavy is the Head
+			["sourceQuests"] = {
+				53947,	-- In the Dunes [A]
+				53783,	-- In the Dunes [H]
+			},
+			["provider"] = { "n", 145131 },	-- Dataguru Gryzix
+			["coord"] = { 26.3, 47.3, VOLDUN },
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(54930, {	-- Mechanical Liberation
+			["sourceQuests"] = {
+				53947,	-- In the Dunes [A]
+				53783,	-- In the Dunes [H]
+			},
+			["provider"] = { "n", 145131 },	-- Dataguru Gryzix
+			["coord"] = { 26.3, 47.3, VOLDUN },
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(53848, {	-- Tooling Around Vol'dun
+			["sourceQuests"] = {
+				53802,	-- Sethrak Persuasion
+				53806,	-- Heavy is the Head
+				54930,	-- Mechanical Liberation
+			},
+			["provider"] = { "n", 145131 },	-- Dataguru Gryzix
+			["coord"] = { 26.3, 47.3, VOLDUN },
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(53948, {	-- Vengeful Venture [A]
+			["sourceQuests"] = { 53848 },	-- Tooling Around Vol'dun
+			["provider"] = { "o", 307748 },	-- Venture Co. Letter
+			["coord"] = { 26.3, 47.3, VOLDUN },
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(53833, {	-- Vengeful Venture [H]
+			["sourceQuests"] = { 53848 },	-- Tooling Around Vol'dun
+			["provider"] = { "o", 307748 },	-- Venture Co. Letter
+			["coord"] = { 26.3, 47.3, VOLDUN },
+			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_8_1_5 },
+		}),
+		q(53949, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- The Ub3r-Spanner [A]
+			["sourceQuests"] = { 53948 },	-- Vengeful Venture [A]
+			["provider"] = { "n", 136059 },	-- Layla Evenkeel
+			["coord"] = { 77.4, 14.2, BORALUS },
+			["races"] = ALLIANCE_ONLY,
+			["g"] = {
+				r(282975), -- The Ub3r-Spanner (RECIPE!)
+			},
+		})),
+		q(53937, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- The Ub3r-Spanner [H]
+			["sourceQuests"] = { 53833 },	-- Vengeful Venture [H]
+			["provider"] = { "n", 131840 },	-- Shuga Blastcaps
+			["coord"] = { 45.1, 40.6, DAZARALOR },
+			["races"] = HORDE_ONLY,
+			["g"] = {
+				r(282975), -- The Ub3r-Spanner (RECIPE!)
+			},
+		})),
+	})),
+	tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+		ach(18907, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Ectoplasmic Specs
+			i(209067, {	-- Ensemble: Chromatically Calibrated Ectoplasmic Specs
+				i(208817),	-- Blue Ectoplasmic Specs
+				i(208818),	-- Green Ectoplasmic Specs
+				i(208819),	-- Red Ectoplasmic Specs
+				i(208820),	-- Yellow Ectoplasmic Specs
+			}),
+			crit(1, {	-- Flexible Ectoplasmic Specs
+				["provider"] = { "i", 172905 },	-- Flexible Ectoplasmic Specs
+			}),
+			crit(2, {	-- Grounded Ectoplasmic Specs
+				["provider"] = { "i", 172906 },	-- Grounded Ectoplasmic Specs
+			}),
+			crit(3, {	-- Articulated Ectoplasmic Specs
+				["provider"] = { "i", 172907 },	-- Articulated Ectoplasmic Specs
+			}),
+			crit(4, {	-- Reinforced Ectoplasmic Specs
+				["provider"] = { "i", 172908 },	-- Reinforced Ectoplasmic Specs
+			}),
+		})),
+	})),
+	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+			ach(18856),	-- Just an Ordinary Gas Cloud
+			ach(18857, {	-- That's No Ordinary Gas Cloud!
+				crit(1),	-- 2 Air Souls Captured
+				crit(2),	-- 2 Earth Souls Captured
+				crit(3),	-- 2 Fire Souls Captured
+				crit(4),	-- 2 Frost Souls Captured
+			}),
+		})),
+		n(QUESTS, {
+			q(72242, {	-- Dragon Isles Engineering
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Engineering.",
+				["sourceQuests"] = {
+					67700,	-- To the Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "n", 190535 },	-- Quizla Blastcaps
+				["coord"] = { 75.9, 33.2, THE_WAKING_SHORES },
+				["lockCriteria"] = { 1, "spellID", 366254 },	-- Dragon Isles Engineering
+			}),
+			q(70359, {	-- Dragon Isles Engineering
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Engineering.",
+				["sourceQuests"] = {
+					67700,	-- To the Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "n", 192165 },	-- Winnie Fingerspring <Engineering Trainer>
+				["coord"] = { 43.0, 66.5, THE_WAKING_SHORES },
+				["lockCriteria"] = { 1, "spellID", 366254 },	-- Dragon Isles Engineering
+			}),
+			q(70030, {	-- Artisan's Supply: Quality-Assured Optics
+				["provider"] = { "n", 192165 },	-- Winnie Fingerspring <Engineering Trainer>
+				["coord"] = { 43.0, 66.5, THE_WAKING_SHORES },
+				["cost"] = {{ "i", 198328, 1 }},	-- 2x Quality-Assured Optics
+				["_drop"] = { "g" },
+			}),
+			q(70252, {	-- Hidden Profession Master Engineering
+				["name"] = "Hidden Profession Master: Engineering",
+				["provider"] = { "n", 194838 },	-- Frizz Buzzcrank
+				["coord"] = { 17.7, 21.6, THE_AZURE_SPAN },
+			}),
+			q(70187, {	-- Specialized Secrets: Engineering
+				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
+				["provider"] = { "n", 193110 },	-- Khadin
+				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
+				["cost"] = {{ "i", 191784, 1 }},	-- 1x Dragon Shard of Knowledge
+				["isRepeatable"] = true,
+				["g"] = {
+					i(190456),	-- Artisan's Mettle
+				},
+			}),
+		}),
+		n(QUESTS, sharedData({
+			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
+			["isWeekly"] = true,
+			["g"] = {
+				i(198611),	-- Engineering Details
+			},
+		},{
+			------ Requires 25 Skill ------
+			q(66942, {	-- Enemy Engineering
+				["description"] = "Requires 25 Skill.",
+				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
+				["coord"] = { 36.8, 62.8, VALDRAKKEN },
+			}),
+			q(70591, {	-- Engineering Services Requested
+				["description"] = "Requires 25 Skill.",
+				["provider"] = { "n", 194026 },	-- Azley
+				["coord"] = { 35.6, 58.8, VALDRAKKEN },
+			}),
+			q(66891, {	-- Explosive Ash
+				["description"] = "Requires 25 Skill.",
+				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
+				["coord"] = { 36.8, 62.8, VALDRAKKEN },
+			}),
+			q(72396, {	-- Horns of Plenty
+				["description"] = "Requires 25 Skill.",
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+			}),
+			q(66890, {	-- Stolen Tools
+				["description"] = "Requires 25 Skill.",
+				["provider"] = { "n", 191000 },	-- Dothenos
+				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+			}),
+
+			------ Requires 45 Skill ------
+			q(70540, {	-- An Engineer's Best Friend
+				["description"] = "Requires 45 Skill.",
+				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
+				["coord"] = { 42.2, 48.8, VALDRAKKEN },
+			}),
+			q(70539, {	-- And You Thought They Did Nothing
+				["description"] = "Requires 45 Skill.",
+				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
+				["coord"] = { 42.2, 48.8, VALDRAKKEN },
+			}),
+			q(70545, {	-- Blingtron 8000...?
+				["description"] = "Requires 45 Skill.",
+				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
+				["coord"] = { 42.2, 48.8, VALDRAKKEN },
+			}),
+			q(70557, {	-- No Scopes
+				["description"] = "Requires 45 Skill.",
+				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
+				["coord"] = { 42.2, 48.8, VALDRAKKEN },
+			}),
+
+			------ Requires ?? Skill - Patch 10.1.0. ------
+			q(75575, {	-- Ballistae Bits
+				["provider"] = { "n", 203516 },	-- Kayann
+				["coord"] = { 36.5, 62.5, VALDRAKKEN },
+				["timeline"] = { ADDED_10_1_0 }
+			}),
+			q(75608, {	-- Titan Trash or Titan Treasure?
+				["provider"] = { "n", 203516 },	-- Kayann
+				["coord"] = { 36.5, 62.5, VALDRAKKEN },
+				["timeline"] = { ADDED_10_1_0 }
+			}),
+		})),
+		filter(RECIPES, {
+			["description"] = "These are learned by specialization.",
+			["g"] = sharedData({ ["cost"] = {{ "c", ENGINEERING_KNOWLEDGE, 1 }} }, {
+				r(382345),	-- Assorted Safety Fuses
+				r(382408),	-- Cartomancy Cannon
+				r(382368),	-- Centralized Precipitation Emitter
+				r(382365),	-- Completely Safe Rockets
+				r(382371),	-- Element-Infused Rocket Helmet
+				r(382366),	-- Endless Stack of Needles
+				r(382369),	-- Environmental Emulator
+				r(382370),	-- Giggle Goggles
+				r(382326),	-- High Intensity Thermal Scanner
+				r(382353),	-- I.W.I.N. Button Mk10
+				r(382381),	-- Illustrious Insight
+				r(382351),	-- Magazine of Healing Darts
+				r(382374),	-- Rummage Through Scrap
+				r(382328),	-- S.A.V.I.O.R.
+				r(382358),	-- Suspiciously Silent Crate
+				r(382354),	-- Suspiciously Ticking Crate
+				r(382359),	-- Tinker: Supercollide-O-Tron
+				r(393796),	-- Tinker: Arclight Vital Correctors
+				r(382367),	-- Wyrmhole Generator
+				r(387246),	-- Zapthrottle Soul Inhaler
+			}),
+		}),
+		n(TREASURES, {
+			o(398133,		-- Bolts and Brass/Handful of Khaz'gorite Bolts
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
+				["coord"] = { 57.7, 73.9, ZARALEK_CAVERN },
+				["questID"] = 75430,
+				["g"] = {
+					i(204850),	-- Handful of Khaz'gorite Bolts
+					i(204851),	-- Oblong Brass Sculpture
+				},
+			})),
+			o(380571, {	-- Boomthyr Rocket
+				["description"] = "Interact with the Note next to the rocket, then gather the items in the surrounding area. You may need to leave and return to the area after gathering all objects for the treasure to be clickable after that.",
+				["questID"] = 70270,
+				["coord"] = { 56.0, 44.9, THE_WAKING_SHORES },
+				["g"] = {
+					i(201014),	-- Boomthyr Rocket
+					i(198816),	-- Aerospace Grace Draconium
+					i(198815),	-- Ash
+					i(198814),	-- Boom Fumes
+					i(198817),	-- Durable Crystal
+				},
+			}),
+			o(392587,	-- Busted Wyrmhole Generator
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
+				["coord"] = { 37.8, 58.8, ZARALEK_CAVERN },
+				["questID"] = 75186,
+				["g"] = {
+					i(204475),	-- Busted Wyrmhole Generator
+					i(205954, {	-- Three-Dimensional Compass
+						["questID"] = 76017,
+					}),
+				},
+			})),
+			o(392582,	-- Defective Survival Pack
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
+				["coord"] = { 50.5, 47.9, ZARALEK_CAVERN },
+				["questID"] = 75184,
+				["g"] = {
+					i(204471),	-- Defective Survival Pack
+				},
+			})),
+			o(380560, {	-- Disabled Tesla Coil
+				["description"] = "Click on the three exposed items to make the treasure appear.",
+				["questID"] = 70275,
+				["coord"] = { 49.1, 77.5, THE_WAKING_SHORES },
+				["g"] = {
+					i(198789),	-- Intact Coil Capacitor
+				},
+			}),
+			o(398135,	-- Discarded Dracothyst Drill
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
+				["coord"] = { 49.4, 79.0, ZARALEK_CAVERN },
+				["questID"] = 75431,
+				["g"] = {
+					i(204853),	-- Discarded Dracothyst Drill
+				},
+			})),
+			o(392581,	-- Haphazardly Discarded Bomb
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
+				["coord"] = { 48.2, 27.9, ZARALEK_CAVERN },
+				["questID"] = 75183,
+				["g"] = {
+					i(204470),	-- Haphazardly Discarded Bomb
+				},
+			})),
+			o(392593,	-- Inconspicuous Data Miner
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
+				["coord"] = { 49.9, 59.3, ZARALEK_CAVERN },
+				["questID"] = 75188,
+				["g"] = {
+					i(204480),	-- Inconspicuous Data Miner
+				},
+			})),
+			o(392580,	-- Misplaced Aberrus Outflow Blueprints
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
+				["coord"] = { 48.5, 48.6, ZARALEK_CAVERN },
+				["questID"] = 75180,
+				["g"] = {
+					i(204469),	-- Misplaced Aberrus Outflow Blueprints
+				},
+			})),
+			o(398138,	-- Molten Scoutbot/Overclocked Determination Core
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
+				["coord"] = { 48.1, 16.6, ZARALEK_CAVERN },
+				["questID"] = 75433,
+				["g"] = {
+					i(204855),	-- Overclocked Determination Core
+				},
+			})),
+		}),
+		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
+			["isWeekly"] = true,
+			["g"] = {
+				currency(ENGINEERING_KNOWLEDGE),
+			},
+		},{
+			i(198611),	-- Engineering Details
+			q(74111, {	-- Inscription Order: Engineering
+				["name"] = "Inscription Order: Engineering",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 198510 },	-- Draconic Treatise on Engineering
+			}),
+			q(66379, {	-- Weekly Engineering Knowledgepoint #1
+				["name"] = "Engineering Treasure #1",
+				["provider"] = { "i", 193902 },	-- Eroded Titan Gizmo
+			}),
+			q(66380, {	-- Weekly Engineering Knowledgepoint #2
+				["name"] = "Engineering Treasure #2",
+				["provider"] = { "i", 193903 },	-- Watcher Power Core
+			}),
+			q(70517, {	-- Weekly Engineering Knowledgepoint #3
+				["name"] = "Engineering Drop #1: Dragon-esque",
+				["description"] = "Drops from any Dragon-kin/Proto Drakes/Dragonlike beasts.\nCoordinates link to the spot(s) we found best.",
+				["crs"] = { 194656 },	-- Reservoir Dapple
+				["provider"] = { "i", 198970 },		-- Infinitely Attachable Pair o' Docks
+				["coord"] = { 49.4, 62.6, THALDRASZUS },
+			}),
+			q(70516, {	-- Weekly Engineering Knowledgepoint #4
+				["name"] = "Engineering Drop #2: Tyrhold Ancient",
+				["description"] = "Drops from any Tyrhold-esque mob.\nCoordinates link to Tyrhold where almost any mob can drop it.",
+				["crs"] = { 193244 },	-- Titan Defense Matrix
+				["provider"] = { "i", 198969 },		-- Keeper's Mark
+				["coord"] = { 57.2, 60.4, THALDRASZUS },
+			}),
+		})),
+	})),
+}));
+
+
+
+-- #if ANYCLASSIC
 local applytraining = function(g)
 	-- #if NOT ANYCLASSIC
 	-- TODO: Solve this for classic, until then, only apply the filter to Retail.
@@ -198,11 +980,11 @@ profession(ENGINEERING, {
 					["name"] = "Snowmaster 9000",
 					["recipeID"] = 21940,
 				},
-				applyclassicphase(TBC_PHASE_ONE, {
+				{
 					["name"] = "Steam Tonk Controller",
-					["timeline"] = { "added 2.0.1.6180" },
+					["timeline"] = { "created 1.10.0", "added 2.0.1.6180" },
 					["recipeID"] = 28327,
-				}),
+				},
 				{
 					["name"] = "Target Dummy",
 					["recipeID"] = 3932,
@@ -335,16 +1117,21 @@ profession(ENGINEERING, {
 				{
 					["name"] = "Blue Firework",
 					["recipeID"] = 23067,
+					-- #if BEFORE 4.0.3
+					-- #if AFTER TBC
+					["races"] = ALLIANCE_ONLY,
+					-- #endif
+					-- #endif
 				},
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Blue Rocket Cluster",
 					["recipeID"] = 26423,
 				}),
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Cluster Launcher",
 					["recipeID"] = 26443,
 				}),
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Firework Launcher",
 					["recipeID"] = 26442,
 				}),
@@ -352,51 +1139,56 @@ profession(ENGINEERING, {
 					["name"] = "Green Firework",
 					["recipeID"] = 23068,
 				},
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Green Rocket Cluster",
 					["recipeID"] = 26424,
 				}),
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Large Blue Rocket",
 					["recipeID"] = 26420,
 				}),
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Large Blue Rocket Cluster",
 					["recipeID"] = 26426,
 				}),
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Large Green Rocket",
 					["recipeID"] = 26421,
 				}),
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Large Green Rocket Cluster",
 					["recipeID"] = 26427,
 				}),
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Large Red Rocket",
 					["recipeID"] = 26422,
 				}),
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Large Red Rocket Cluster",
 					["recipeID"] = 26428,
 				}),
 				{
 					["name"] = "Red Firework",
 					["recipeID"] = 23066,
+					-- #if BEFORE 4.0.3
+					-- #if AFTER TBC
+					["races"] = HORDE_ONLY,
+					-- #endif
+					-- #endif
 				},
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Red Rocket Cluster",
 					["recipeID"] = 26425,
 				}),
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Small Blue Rocket",
 					["recipeID"] = 26416,
 				}),
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Small Green Rocket",
 					["recipeID"] = 26417,
 				}),
-				applyholiday(LUNAR_FESTIVAL, {
+				applyevent(EVENTS.LUNAR_FESTIVAL, {
 					["name"] = "Small Red Rocket",
 					["recipeID"] = 26418,
 				}),
@@ -1763,7 +2555,7 @@ profession(ENGINEERING, {
 				{
 					["name"] = "Gearspring Parts",
 					["recipeID"] = 178242,
-					["u"] = NEVER_IMPLEMENTED,	-- NOTE: This version is automatically crafted after reaching maximum Draenor Engineering. (Detection is not working.)
+					["timeline"] = { "created 6.0.2.18850" },	-- NOTE: This version is automatically crafted after reaching maximum Draenor Engineering. (Detection is not working.)
 				},
 				{
 					["name"] = "Impressive Linkgrease Locksprocket",
@@ -1902,7 +2694,7 @@ profession(ENGINEERING, {
 				{
 					["name"] = "Ultimate Gnomish Army Knife",
 					["recipeID"] = 162208,
-					["u"] = NEVER_IMPLEMENTED,	-- NOTE: This version is automatically crafted after creating Gearspring Parts for the first time. (Detection is not working.),
+					["timeline"] = { "created 6.0.1.18297" },	-- NOTE: This version is automatically crafted after creating Gearspring Parts for the first time. (Detection is not working.),
 				},
 				{
 					["name"] = "Ultimate Gnomish Army Knife",
@@ -3521,7 +4313,7 @@ itemrecipe("Schematic: Master Engineer's Goggles", 16053, 19825);
 itemrecipe("Schematic: Arcanite Dragonling", 16054, 19830);
 itemrecipe("Schematic: Arcane Bomb", 16055, 19831);
 itemrecipe("Schematic: Flawless Arcanite Rifle", 16056, 19833);
-applyholiday(FEAST_OF_WINTER_VEIL, itemrecipe("Schematic: Snowmaster 9000", 17720, 21940));
+applyevent(EVENTS.FEAST_OF_WINTER_VEIL, itemrecipe("Schematic: Snowmaster 9000", 17720, 21940));
 itemrecipe("Schematic: Field Repair Bot 74A", 18235, 22704);
 itemrecipe("Schematic: Biznicks 247x128 Accurascope", 18290, 22793);
 itemrecipe("Schematic: Force Reactive Disk", 18291, 22797);
@@ -3537,28 +4329,28 @@ itemrecipe("Schematic: Powerful Seaforium Charge", 18656, 23080);
 itemrecipe("Schematic: Hyper-Radiant Flame Reflector", 18657, 23081);
 itemrecipe("Schematic: Ultra-Flash Shadow Reflector", 18658, 23082);
 itemrecipe("Schematic: Snake Burst Firework", 19027, 23507);
+itemrecipe("Schematic: Steam Tonk Controller", 22729, 28327);
 itemrecipe("Schematic: Bloodvine Goggles", 20000, 24356, PHASE_FOUR);
 itemrecipe("Schematic: Bloodvine Lens", 20001, 24357, PHASE_FOUR);
-applyholiday(LUNAR_FESTIVAL,{
-	itemrecipe("Schematic: Small Blue Rocket", 21724, 26416, LUNAR_FESTIVAL),
-	itemrecipe("Schematic: Small Green Rocket", 21725, 26417, LUNAR_FESTIVAL),
-	itemrecipe("Schematic: Small Red Rocket", 21726, 26418, LUNAR_FESTIVAL),
-	itemrecipe("Schematic: Large Blue Rocket", 21727, 26420, LUNAR_FESTIVAL),
-	itemrecipe("Schematic: Large Green Rocket", 21728, 26421, LUNAR_FESTIVAL),
-	itemrecipe("Schematic: Large Red Rocket", 21729, 26422, LUNAR_FESTIVAL),
-	itemrecipe("Schematic: Blue Rocket Cluster", 21730, 26423, LUNAR_FESTIVAL),
-	itemrecipe("Schematic: Green Rocket Cluster", 21731, 26424, LUNAR_FESTIVAL),
-	itemrecipe("Schematic: Red Rocket Cluster", 21732, 26425, LUNAR_FESTIVAL),
-	itemrecipe("Schematic: Large Blue Rocket Cluster", 21733, 26426, LUNAR_FESTIVAL),
-	itemrecipe("Schematic: Large Green Rocket Cluster", 21734, 26427, LUNAR_FESTIVAL),
-	itemrecipe("Schematic: Large Red Rocket Cluster", 21735, 26428, LUNAR_FESTIVAL),
-	itemrecipe("Schematic: Cluster Launcher", 21737, 26443, LUNAR_FESTIVAL),
-	itemrecipe("Schematic: Firework Launcher", 21738, 26442, LUNAR_FESTIVAL),
+applyevent(EVENTS.LUNAR_FESTIVAL,{
+	itemrecipe("Schematic: Small Blue Rocket", 21724, 26416),
+	itemrecipe("Schematic: Small Green Rocket", 21725, 26417),
+	itemrecipe("Schematic: Small Red Rocket", 21726, 26418),
+	itemrecipe("Schematic: Large Blue Rocket", 21727, 26420),
+	itemrecipe("Schematic: Large Green Rocket", 21728, 26421),
+	itemrecipe("Schematic: Large Red Rocket", 21729, 26422),
+	itemrecipe("Schematic: Blue Rocket Cluster", 21730, 26423),
+	itemrecipe("Schematic: Green Rocket Cluster", 21731, 26424),
+	itemrecipe("Schematic: Red Rocket Cluster", 21732, 26425),
+	itemrecipe("Schematic: Large Blue Rocket Cluster", 21733, 26426),
+	itemrecipe("Schematic: Large Green Rocket Cluster", 21734, 26427),
+	itemrecipe("Schematic: Large Red Rocket Cluster", 21735, 26428),
+	itemrecipe("Schematic: Cluster Launcher", 21737, 26443),
+	itemrecipe("Schematic: Firework Launcher", 21738, 26442),
 });
 
 -- #if AFTER TBC
 -- TBC Recipes
-itemrecipe("Schematic: Steam Tonk Controller", 22729, 28327, TBC_PHASE_ONE);
 itemrecipe("Schematic: Adamantite Rifle", 23799, 30313, TBC_PHASE_ONE);
 itemrecipe("Schematic: Felsteel Boomstick", 23800, 30314, TBC_PHASE_ONE);
 itemrecipe("Schematic: Ornate Khorium Rifle", 23802, 30315, TBC_PHASE_ONE);
@@ -3603,8 +4395,8 @@ itemrecipe("Schematic: Rocket Boots Xtreme Lite", 35582, 46697, TBC_PHASE_ONE);
 
 -- #if AFTER WRATH
 -- Wrath Recipes
-applyholiday(LUNAR_FESTIVAL, itemrecipe("Schematic: Cluster Launcher", 44918, 26443, LUNAR_FESTIVAL));
-applyholiday(LUNAR_FESTIVAL, itemrecipe("Schematic: Firework Launcher", 44919, 26442, LUNAR_FESTIVAL));
+applyevent(EVENTS.LUNAR_FESTIVAL, itemrecipe("Schematic: Cluster Launcher", 44918, 26443));
+applyevent(EVENTS.LUNAR_FESTIVAL, itemrecipe("Schematic: Firework Launcher", 44919, 26442));
 itemrecipe("Schematic: Jeeves", 49050, 68067, WRATH_PHASE_ONE);
 itemrecipe("Schematic: Mechano-hog", 44502, 60866, WRATH_PHASE_ONE);
 itemrecipe("Schematic: Mekgineer's Chopper", 44503, 60867, WRATH_PHASE_ONE);
@@ -3619,11 +4411,8 @@ itemrecipe("Schematic: Flintlocke's Woodchucker", 70177, 100587, CATA_PHASE_TWO)
 
 -- These items never made it in.
 recipeCache = nil;	-- Invalidate the cache.
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	filter(RECIPES, {
-		-- #if CLASSIC
-		i(22729),	-- Schematic: Steam Tonk Controller [This doesn't get added until TBC]
-		-- #endif
 		-- #if AFTER TBC
 		itemrecipe("Schematic: Red Smoke Flare", 23812, 30342);
 		itemrecipe("Schematic: Blue Smoke Flare", 23813, 30343);
@@ -3634,4 +4423,5 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		itemrecipe("Schematic: Remote Mail Terminal", 23885, 30555);
 		-- #endif
 	}),
-}));
+});
+-- #endif

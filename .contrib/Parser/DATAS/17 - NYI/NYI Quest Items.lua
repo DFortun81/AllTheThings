@@ -3,15 +3,16 @@
 ---------------------------------------------------------------
 -- Everything in this file hasn't been implemented yet.
 
-root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
+root(ROOTS.NeverImplemented, {
 	filter(QUEST_ITEMS, {
 		tier(CLASSIC_TIER, {
 			-- 1.x.x
 			n(P1xx, {
 				i(17409),	-- Encrusted Crystal Fragment
-				i(20883),	-- Qiraji Glyphed Jewel
 				i(20936),	-- Qiraji Blessed Jewel
 				i(20937),	-- Qiraji Encased Jewel
+				i(20887),	-- Qiraji Engraved Jewel
+				i(20883),	-- Qiraji Glyphed Jewel
 				i(17347),	-- Syndicate Man Tracker (MURP)
 			}),
 		}),
@@ -150,6 +151,28 @@ root(ROOTS.NeverImplemented, bubbleDown({["u"] = NEVER_IMPLEMENTED}, {
 				i(192128),	-- Reinforced Scale Sample
 				i(192129),	-- Azure Basilisk Belly
 			})),
+
+			-- 10.0.2
+			tier(DF_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_10_0_2 } }, {
+				i(199798),	-- Makko's Journal - Page Seven
+			})),
+
+			-- 10.0.5
+			tier(DF_TIER, 0.5, bubbleDown({ ["timeline"] = { CREATED_10_0_5 } }, {
+				i(203598),	-- Makko's Journal Cover
+			})),
+
+			-- 10.0.7
+			tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
+				i(204089),	-- Atrenosh's Spellsworn Sigil
+				i(203998),	-- Beetle Juice
+				i(202396),	-- Plains Timber
+				i(203997),	-- Raw Argali Flank
+				i(202204),	-- Receiving Stone: Final Warning
+				i(203464),	-- Sealed Spellsworn Scroll
+				i(204249),	-- Translated Correspondence of Black Dragons
+				i(202205),	-- Translated Journal of Adamanthia
+			})),
 		}),
 	}),
-}));
+});

@@ -1,6 +1,53 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+WARPWOOD_QUARTER = createHeader({
+	readable = "Warpwood Quarter",
+	-- #if AFTER WRATH
+	icon = "Interface\\Icons\\Ability_Warlock_DemonicEmpowerment",
+	-- #else
+	icon = "Interface\\Icons\\Spell_Shadow_SummonImp",
+	-- #endif
+	text = {
+		en = [[~DUNGEON_FLOOR_DIREMAUL5.." (East)"]],
+		fr = [[~DUNGEON_FLOOR_DIREMAUL5.." (Est)"]],
+		ru = [[~DUNGEON_FLOOR_DIREMAUL5.." (Восток)"]],
+		cn = [[~DUNGEON_FLOOR_DIREMAUL5.." (东)"]],
+	},
+	description = {
+		en = "This part of the instance can be accessed from the eastern-most portal. (right side)",
+	},
+});
+GORDOK_COMMONS = createHeader({
+	readable = "Gordok Commons",
+	-- #if AFTER WRATH
+	icon = "Interface\\Icons\\Achievement_Reputation_Ogre",
+	-- #else
+	icon = "Interface\\Icons\\inv_axe_10",
+	-- #endif
+	text = {
+		en = [[~DUNGEON_FLOOR_DIREMAUL1.." (North)"]],
+		fr = [[~DUNGEON_FLOOR_DIREMAUL1.." (Nord)"]],
+		ru = [[~DUNGEON_FLOOR_DIREMAUL1.." (Север)"]],
+		cn = [[~DUNGEON_FLOOR_DIREMAUL1.." (北)"]],
+	},
+	description = {
+		en = "This part of the instance can be accessed from the northern-most portal.",
+	},
+});
+CAPITAL_GARDENS = createHeader({
+	readable = "Capital Gardens",
+	icon = "Interface\\Icons\\INV_Misc_Head_Elf_02",
+	text = {
+		en = [[~DUNGEON_FLOOR_DIREMAUL2.." (West)"]],
+		fr = [[~DUNGEON_FLOOR_DIREMAUL2.." (Ouest)"]],
+		ru = [[~DUNGEON_FLOOR_DIREMAUL2.." (Запад)"]],
+		cn = [[~DUNGEON_FLOOR_DIREMAUL2.." (西)"]],
+	},
+	description = {
+		en = "This part of the instance can be accessed from the western-most portal. (left side)",
+	},
+});
 -- #if BEFORE 4.0.3
 local OnTooltipForShendralar = [[function(t)
 	local reputation = t.reputation;
@@ -78,23 +125,27 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 		-- #if BEFORE MOP
 		["lore"] = "Dire Maul is a three-wing instance found in north-central Feralas. It was once a proud Highborne city called Eldre'Thalas, but now lies in ruins, overrun by ogres, satyrs, and undead. Only a tiny remnant of the original Highborne population remains in the form of a murderous sect called the Shen'dralar.",
 		-- #endif
+		["zone-text-areas"] = {
+			2557,	-- Dire Maul
+			3217,	-- "The Maul" now points to Dire Maul.
+			-- #if AFTER CATA
+			-- This areaID doesn't exist until Cataclysm!
+			4992,	-- "Broken Commons" now points to Dire Maul.
+			-- #endif
+		},
 		["mapID"] = DIRE_MAUL,
 		["lvl"] = lvlsquish(44, 44, 15),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				classicAch(5788, {	-- Agent of the Shen'dralar
-					["maps"] = { 236 },	-- Capital Gardens
-					["timeline"] = { "removed 4.0.3" },
-					-- #if BEFORE WRATH
+				achWithRep(5788, 809, {	-- Agent of the Shen'dralar [Shen'dralar Exalted]
+					-- #if BEFORE 4.1.0
+					-- This isn't actually an achievement yet.
 					["description"] = "Earn exalted status with the Shen'dralar.",
 					-- #endif
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 809, true); end]],
-					-- #endif
+					["maps"] = { 236 },	-- Capital Gardens
+					["timeline"] = { "removed 4.0.3" },
 				}),
-				ach(644, {	-- King of Dire Maul
+				ach(644, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" }, }, {	-- King of Dire Maul
 					["maps"] = { 239, 235, 236 },	-- All Wings
 					["groups"] = {
 						crit(545, {	-- Alzzin the Wildshaper
@@ -113,7 +164,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						}),
 						-- #endif
 					},
-				}),
+				})),
 				ach(5053, {	-- King of Dire Maul Guild Run
 					["timeline"] = { "added 4.0.3" },
 				}),
@@ -128,7 +179,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 				}),
 				-- #if BEFORE 4.0.3
 				faction(169, {	-- Steamweedle Cartel
-					["icon"] = icon("INV_Misc_Coin_01"),
+					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
 					["OnTooltip"] = OnTooltipForSteamweedle,
 					["maps"] = {
 						235,	-- Gordok Commons
@@ -251,11 +302,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
 					["group"] = {
-						classicAch(2357, {	-- Dreadsteed of Xoroth
+						ach(2357, {	-- Dreadsteed of Xoroth
 							["sourceQuest"] = 7631,	-- Dreadsteed of Xoroth
 							-- #if BEFORE WRATH
 							["description"] = "Completed the Dreadsteed of Xoroth warlock quest.",
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 							["timeline"] = { "removed 4.0.3" },
 							["classes"] = { WARLOCK },
@@ -758,20 +808,17 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					},
 					["lvl"] = 56,
 					["groups"] = {
-						{
-							["recipeID"] = 22813,	-- Gordok Ogre Suit
+						r(22813, {	-- Gordok Ogre Suit
 							["timeline"] = { "removed 4.0.3" },
 							["requireSkill"] = TAILORING,
-						},
-						{
-							["recipeID"] = 22815,	-- Gordok Ogre Suit
+						}),
+						r(22815, {	-- Gordok Ogre Suit
 							["timeline"] = { "removed 4.0.3" },
 							["requireSkill"] = LEATHERWORKING,
-						},
-						{
-							["itemID"] = 18258,	-- Gordok Ogre Suit
+						}),
+						i(18258, {	-- Gordok Ogre Suit
 							["description"] = "Before using this, clear the trash before Captain Kromcrush. Tell your group to stay back while you talk to Kromcrush with this disguise on. If they aggro him, your group will fail the Tribute Run.",
-						},
+						}),
 					},
 				}),
 				q(5519, {	-- The Gordok Ogre Suit
@@ -1057,9 +1104,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					}),
 				},
 			}),
-			m(239, {	-- Warpwood Quarter [East - Demon]
-				["creatureID"] = -12,	-- Warpwood Quarter [East - Demon]
-				["description"] = "This part of the instance can be accessed from the eastern-most portal. (right side)",
+			m(239, {	-- Warpwood Quarter (East)
+				["creatureID"] = WARPWOOD_QUARTER,
 				["coord"] = { 64.83, 30.24, FERALAS },	-- Dire Maul [East]
 				["maps"] = { 240 },	-- The Shrine of Eldretharr
 				["groups"] = {
@@ -1117,7 +1163,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						["groups"] = {
 							i(18249),	-- Crescent Key
 							i(18261),	-- Book of Incantations
-							i(18267),	-- Recipe: Runn Tum Tuber Surprise
+							i(207297, {	-- Grimoire of the Felblaze Imp (CI!)
+								["timeline"] = { ADDED_10_1_5 },
+							}),
+							i(18267),	-- Recipe: Runn Tum Tuber Surprise (RECIPE!)
 						},
 					}),
 					n(14349, {	-- Pimgib
@@ -1180,9 +1229,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 							{ "i", 22057, 1 },	-- Brazier of Invocation
 						},
 						-- #if AFTER 4.0.3
-						-- This Update function unmarks the removed from game flag for folks with the brazier.
-						["OnUpdate"] = [[function(t)
-							t.OnUpdate = nil;
+						-- This init function unmarks the removed from game flag for folks with the brazier.
+						["OnInit"] = [[function(t)
 							if GetItemCount(22057, true) > 0 then
 								t.u = nil;
 								for i,o in ipairs(t.g) do
@@ -1198,6 +1246,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 									end
 								end
 							end
+							return t;
 						end]],
 						-- #endif
 						["groups"] = {
@@ -1229,7 +1278,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						["creatureID"] = 11492,
 						["groups"] = {
 							i(18501, {	-- Felvine Shard
-								["description"] = "Looted from the Felvine Shard object that spawns under the vines near the last boss in Dire Maul East.",
+								["description"] = "Spawns under the vines near the last boss in Dire Maul East.",
+								["provider"] = { "o", 179559 },	-- Felvine Shard
 							}),
 							i(18321),	-- Energetic Rod
 							i(18310),	-- Fiendish Machete
@@ -1248,16 +1298,14 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					}),
 				},
 			}),
-			m(235, {	-- Gordok Commons [North - Ogres] [Straight]
-				["creatureID"] = -13,	-- Gordok Commons [North - Ogres] [Straight]
-				["description"] = "This part of the instance can be accessed from the northern-most portal.",
+			m(235, {	-- Gordok Commons (North)
+				["creatureID"] = GORDOK_COMMONS,
 				["coord"] = { 62.48, 24.48, FERALAS },	-- Dire Maul [North]
 				-- #if BEFORE 4.0.3
 				["cost"] = { { "i", 18249, 1 } },	-- Crescent Key
 				-- #endif
 				["groups"] = {
-					-- #if BEFORE 4.0.3
-					n(ZONE_DROPS, {
+					n(ZONE_DROPS, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3", ADDED_10_1_5 } }, {
 						i(18250, {	-- Gordok Shackle Key
 							["description"] = "NOTE: Do NOT Free Knot if you are doing a Tribute Run. He runs away.",
 							["crs"] = {
@@ -1273,8 +1321,27 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 								11448,	-- Gordok Warlock
 							},
 						}),
-					}),
-					-- #endif
+					})),
+					n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+						q(77194, {	-- Free Knot!
+							["qg"] = 14338,	-- Knot Thimblejack
+							["cost"] = {
+								{ "i", 18250, 1 },	-- Gordok Shackle Key
+							},
+							["repeatable"] = true,
+							["groups"] = {
+								i(208028, {	-- Knot Thimblejack's Cache
+									i(208031),	-- Convenient Crate
+									i(18517),	-- Pattern: Chromatic Cloak (RECIPE!)
+									i(18514),	-- Pattern: Girdle of Insight (RECIPE!)
+									i(18518),	-- Pattern: Hide of the Wild (RECIPE!)
+									i(18515),	-- Pattern: Mongoose Boots (RECIPE!)
+									i(18519),	-- Pattern: Shifting Cloak (RECIPE!)
+									i(18516),	-- Pattern: Swift Flight Bracers (RECIPE!)
+								}),
+							},
+						}),
+					})),
 					n(COMMON_BOSS_DROPS, {
 						["description"] = "The following items can drop from any of the guards.",
 						["crs"] = {
@@ -1372,26 +1439,30 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						-- #endif
 					}),
 					o(179501, -- Knot Thimblejack's Cache
-						bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, {
+						bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {
 						["sourceQuest"] = 5525,	-- Free Knot!
 						-- #if BEFORE 4.0.3
 						["cost"] = { { "i", 18250, 1 } },	-- Gordok Shackle Key
 						-- #endif
 						["groups"] = {
-							i(18414),	-- Pattern: Belt of the Archmage
-							i(18517),	-- Pattern: Chromatic Cloak
-							i(18418),	-- Pattern: Cloak of Warding
-							i(18415),	-- Pattern: Felcloth Gloves
-							i(18514),	-- Pattern: Girdle of Insight
-							i(18518),	-- Pattern: Hide of the Wild
-							i(18416),	-- Pattern: Inferno Gloves
-							i(18515),	-- Pattern: Mongoose Boots
-							i(18417),	-- Pattern: Mooncloth Gloves
-							i(18519),	-- Pattern: Shifting Cloak
-							i(18516),	-- Pattern: Swift Flight Bracers
-							-- #if BEFORE 4.0.3
 							i(18240),	-- Ogre Tannin
-							-- #endif
+							i(18414),	-- Pattern: Belt of the Archmage (RECIPE!)
+							i(18517),	-- Pattern: Chromatic Cloak (RECIPE!)
+							i(18418),	-- Pattern: Cloak of Warding (RECIPE!)
+							i(18415),	-- Pattern: Felcloth Gloves (RECIPE!)
+							i(18514),	-- Pattern: Girdle of Insight (RECIPE!)
+							i(18518),	-- Pattern: Hide of the Wild (RECIPE!)
+							i(18416),	-- Pattern: Inferno Gloves (RECIPE!)
+							i(18515),	-- Pattern: Mongoose Boots (RECIPE!)
+							i(18417),	-- Pattern: Mooncloth Gloves (RECIPE!)
+							i(18519),	-- Pattern: Shifting Cloak (RECIPE!)
+							i(18516),	-- Pattern: Swift Flight Bracers (RECIPE!)
+							-- These were added during 8.1.5 to the Time-Lost Trader (BFA Tailor Questline)
+							--i(18414),	-- Pattern: Belt of the Archmage (RECIPE!)
+							--i(18418),	-- Pattern: Cloak of Warding (RECIPE!)
+							--i(18415),	-- Pattern: Felcloth Gloves (RECIPE!)
+							--i(18416),	-- Pattern: Inferno Gloves (RECIPE!)
+							--i(18417),	-- Pattern: Mooncloth Gloves (RECIPE!)
 						},
 					})),
 					o(179499, {	-- Ogre Tannin Basket
@@ -1454,6 +1525,18 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 							}),
 						},
 					}),
+					n(14338, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Knot Thimblejack
+						["groups"] = {
+							r(22813, {	-- Gordok Ogre Suit
+								["requireSkill"] = TAILORING,
+								["sourceQuest"] = 27119,	-- The Gordok Ogre Suit
+							}),
+							r(22815, {	-- Gordok Ogre Suit
+								["requireSkill"] = LEATHERWORKING,
+								["sourceQuest"] = 27119,	-- The Gordok Ogre Suit
+							}),
+						},
+					})),
 					n(14353, {	-- Mizzle the Crafty
 						["description"] = "Speak with Mizzle after killing |cFFFFD700King Gordok|r to spawn the Tribute Chest.",
 						["groups"] = {
@@ -1488,9 +1571,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					}),
 				},
 			}),
-			m(236, {	-- Capital Gardens [West - Elves] [Left Side]
-				["creatureID"] = -14,	-- Capital Gardens [West - Elves] [Left Side]
-				["description"] = "This part of the instance can be accessed from the western-most portal. (left side)",
+			m(236, {	-- Capital Gardens (West)
+				["creatureID"] = CAPITAL_GARDENS,
 				["coord"] = { 60.32, 30.17, FERALAS },	-- Dire Maul [West]
 				["maps"] = {
 					237,	-- Court of the Highborne

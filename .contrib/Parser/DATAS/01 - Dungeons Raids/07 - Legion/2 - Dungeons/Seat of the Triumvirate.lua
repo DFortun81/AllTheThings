@@ -19,9 +19,9 @@ root(ROOTS.Instances, { tier(LEGION_TIER, {
 			n(QUESTS, {
 				i(152204, {	-- Glowing Key Fragment
 					["questID"] = 48230,	-- Fragment of the Past
-					["maps"] = { EREDATH },
-					["description"] = "You must complete |cffffff00Seat of the Triumvirate: The Crest of Knowledge|r before this item will drop.",
 					["sourceQuest"] = 47654,	-- Seat of the Triumvirate: The Crest of Knowledge
+					["description"] = "You must complete |cffffff00Seat of the Triumvirate: The Crest of Knowledge|r before this item will drop.",
+					["maps"] = { EREDATH },
 					["crs"] = {
 						122316,	-- Saprish
 						126152,	-- General Zah'd
@@ -218,7 +218,9 @@ root(ROOTS.Instances, { tier(LEGION_TIER, {
 					}),
 				}),
 				cr(122313, e(1979, {	-- Zuraal the Ascended
-					ach(12004),	-- Welcome the Void
+					ach(12004, {	-- Welcome the Void
+						["crs"] = { 126283 },	-- Urjad
+					}),
 					i(151312),	-- Ampoule of Pure Void
 					i(151315),	-- Bracers of Dark Binding
 					i(151329),	-- Breastplate of the Dark Touch
@@ -233,7 +235,9 @@ root(ROOTS.Instances, { tier(LEGION_TIER, {
 					i(151293),	-- Orb of the Abandoned Magi
 				})),
 				cr(122316, e(1980, {	-- Saprish
-					ach(12005),	-- Let It All Out
+					ach(12005, {	-- Let It All Out
+						["crs"] = { 126312 },	-- Sealed Void Cache
+					}),
 					i(151321),	-- Darkfang Scale Wristguards
 					i(151327),	-- Girdle of the Shadowguard
 					i(151318),	-- Gloves of the Dark Shroud

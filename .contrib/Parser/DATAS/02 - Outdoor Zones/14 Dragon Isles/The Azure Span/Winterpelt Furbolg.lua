@@ -3,14 +3,14 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 	m(THE_AZURE_SPAN, {
-		faction(2526, {	-- Winterpelt Furbolg
+		faction(FACTION_WINTERPELT_FURBOLG, {
 			n(ACHIEVEMENTS, {
 				ach(17427),	-- Winterpelt Conversationalist
 			}),
 			n(QUESTS, {
 				-- Intro quests
 				q(72546, {	-- Academic Assistance
-					["minReputation"] = { 2526, UNFRIENDLY+2050 },	-- Winterpelt Furbolg Unfriendly + 2050
+					["minReputation"] = { FACTION_WINTERPELT_FURBOLG, UNFRIENDLY+2050 },
 					["provider"] = { "i", 204254 },	-- Sonova's Request
 					["isBreadcrumb"] = true,
 				}),
@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 					["sourceQuests"] = {
 						72546,	-- Academic Assistance
 					},
-					["minReputation"] = { 2526, UNFRIENDLY+2050 },	-- Winterpelt Furbolg Unfriendly + 2050
+					["minReputation"] = { FACTION_WINTERPELT_FURBOLG, UNFRIENDLY+2050 },
 					["provider"] = { "n", 189401 },	-- Sonova Snowden
 					["coord"] = { 65.4, 15.9, THE_AZURE_SPAN },
 				}),
@@ -26,7 +26,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 					["sourceQuests"] = {
 						72546,	-- Academic Assistance
 					},
-					["minReputation"] = { 2526, UNFRIENDLY+2050 },	-- Winterpelt Furbolg Unfriendly + 2050
+					["minReputation"] = { FACTION_WINTERPELT_FURBOLG, UNFRIENDLY+2050 },
 					["provider"] = { "n", 189401 },	-- Sonova Snowden
 					["coord"] = { 65.4, 15.9, THE_AZURE_SPAN },
 				}),
@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 						72589,	-- Honor Their Sacrifice
 						72588,	-- Primalist Pillagers
 					},
-					["minReputation"] = { 2526, UNFRIENDLY+2050 },	-- Winterpelt Furbolg Unfriendly + 2050
+					["minReputation"] = { FACTION_WINTERPELT_FURBOLG, UNFRIENDLY+2050 },
 					["provider"] = { "n", 201065 },	-- Sonova Snowden
 					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },
 					["cost"] = { { "i", 202017, 5 } },	-- 5x Liberated Furbolg Artifacts
@@ -46,7 +46,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 					["sourceQuests"] = {
 						72547,	-- Academic Acquisitions
 					},
-					["minReputation"] = { 2526, UNFRIENDLY+2050 },	-- Winterpelt Furbolg Unfriendly + 2050
+					["minReputation"] = { FACTION_WINTERPELT_FURBOLG, UNFRIENDLY+2050 },
+					["maxReputation"] = { FACTION_WINTERPELT_FURBOLG, EXALTED },
 					["provider"] = { "n", 201065 },	-- Sonova Snowden
 					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },
 					["repeatable"] = true,
@@ -59,7 +60,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 					["sourceQuests"] = {
 						72547,	-- Academic Acquisitions
 					},
-					["minReputation"] = { 2526, UNFRIENDLY+2050 },	-- Winterpelt Furbolg Unfriendly + 2050
+					["minReputation"] = { FACTION_WINTERPELT_FURBOLG, UNFRIENDLY+2050 },
+					["maxReputation"] = { FACTION_WINTERPELT_FURBOLG, EXALTED },
 					["provider"] = { "n", 201065 },	-- Sonova Snowden
 					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },
 					["repeatable"] = true,
@@ -215,112 +217,68 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 			n(VENDORS, {
 				n(201105, {	-- Kazzi
 					["coord"] = { 65.8, 12.7, THE_AZURE_SPAN },
-					["g"] = {
-						filter(CONSUMABLES, {
+					["g"] = bubbleDownRepSkip(FACTION_WINTERPELT_FURBOLG, {
+						{		-- Neutral
+						}, {	-- Friendly
 							i(202314, {	-- Big Chunk o' Meat
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 15 },
-								},
+								["cost"] = {{ "c", DRAGON_SUPPLIES, 15 }},
 							}),
 							i(202315, {	-- Frozen Solid Tea
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 15 },
-								},
+								["cost"] = {{ "c", DRAGON_SUPPLIES, 15 }},
 							}),
-						}),
-						filter(COSMETIC, {
-							i(204354, {	-- Hollowed Furbolg Food Pack
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 500 },
-								},
-							}),
-							i(204355, {	-- Hollowed Winterpelt Food Pack
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 500 },
-								},
-							}),
-							i(203995, {	-- Winter Pelt Cloak
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 75 },
-								},
-							}),
-						}),
-						n(DRAKEWATCHER_MANUSCRIPTS, {
+						}, {	-- Honored
 							i(197006, {	-- Cliffside Wylderdrake: Plated Nose (DM!)
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 50 },
-								},
-							}),
-							i(196995, {	-- Cliffside Wylderdrake: Spiked Horns (DM!)
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 100 },
-								},
-							}),
-							i(197102, {	-- Highland Drake: Horned Chin (DM!)
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 100 },
-								},
+								["cost"] = {{ "c", DRAGON_SUPPLIES, 50 }},
 							}),
 							i(197129, {	-- Highland Drake: Sleek Horns (DM!)
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 50 },
-								},
+								["cost"] = {{ "c", DRAGON_SUPPLIES, 50 }},
 							}),
-							i(202279, {	-- Renewed Proto-Drake: Malevolent Horns (DM!)
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 10 },
-								},
+							i(204354, {	-- Hollowed Furbolg Food Pack
+								["cost"] = {{ "c", DRAGON_SUPPLIES, 500 }},
+							}),
+							i(203995, {	-- Winter Pelt Cloak
+								["cost"] = {{ "c", DRAGON_SUPPLIES, 75 }},
+							}),
+							i(202282, {	-- Winterpelt Mending Totem
+								["cost"] = {{ "c", DRAGON_SUPPLIES, 150 }},
 							}),
 							i(202273, {	-- Renewed Proto-Drake: Stubby Snout (DM!)
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 50 },
-								},
+								["cost"] = {{ "c", DRAGON_SUPPLIES, 50 }},
 							}),
 							i(197583, {	-- Windborne Velocidrake: Exposed Finned Back (DM!)
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 50 },
-								},
+								["cost"] = {{ "c", DRAGON_SUPPLIES, 50 }},
 							}),
-							i(197629, {	-- Windborne Velocidrake: Spiked Neck (DM!)
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 100 },
-								},
+						}, {	-- Revered
+							i(196995, {	-- Cliffside Wylderdrake: Spiked Horns (DM!)
+								["cost"] = {{ "c", DRAGON_SUPPLIES, 100 }},
 							}),
-						}),
-						filter(BATTLE_PETS, {
-							i(202255, {	-- Driftling (PET!)
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 150 },
-								},
+							i(197102, {	-- Highland Drake: Horned Chin (DM!)
+								["cost"] = {{ "c", DRAGON_SUPPLIES, 100 }},
 							}),
-						}),
-						filter(RECIPES, {
+							i(204355, {	-- Hollowed Winterpelt Food Pack
+								["cost"] = {{ "c", DRAGON_SUPPLIES, 500 }},
+							}),
 							i(204678, {	-- Pattern: Paw-Made Winterpelt Reagent Bag (RECIPE!)
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 750 },
-								},
+								["cost"] = {{ "c", DRAGON_SUPPLIES, 750 }},
 							}),
 							i(202289, {	-- Recipe: Firewater Sorbet (RECIPE!)
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 750 },
-								},
+								["cost"] = {{ "c", DRAGON_SUPPLIES, 750 }},
 							}),
-						}),
-						filter(TOYS, {
+							i(202279, {	-- Renewed Proto-Drake: Malevolent Horns (DM!)
+								["cost"] = {{ "c", DRAGON_SUPPLIES, 100 }},
+							}),
 							i(203734, {	-- Snow Blanket (TOY!)
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 200 },
-								},
+								["cost"] = {{ "c", DRAGON_SUPPLIES, 200 }},
 							}),
-						}),
-						n(WEAPONS, {
-							i(202282, {	-- Winterpelt Mending Totem
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 150 },
-								},
+							i(197629, {	-- Windborne Velocidrake: Spiked Neck (DM!)
+								["cost"] = {{ "c", DRAGON_SUPPLIES, 100 }},
 							}),
-						}),
-					},
+						}, {	-- Exalted
+							i(202255, {	-- Driftling (PET!)
+								["cost"] = {{ "c", DRAGON_SUPPLIES, 150 }},
+							}),
+						},
+					}),
 				}),
 			}),
 			n(ZONE_DROPS, {

@@ -33,7 +33,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(199068, {	-- Time-Lost Memo
 				["questID"] = 70537,
 			}),
-			n(-1144, {	-- Weekly Profession Knowledge
+			n(WEEKLY_PROFESSION_KNOWLEDGE, {
 				i(193891, {  -- Experimental Substance
 					["requireSkill"] = ALCHEMY,
 				}),

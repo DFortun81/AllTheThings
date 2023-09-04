@@ -1,8 +1,15 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+SILITHUS_THE_WOUND = createHeader({
+	readable = "Silithus (The Wound)",
+	icon = "Interface\\Icons\\Achievement_zone_silithus_01",
+	text = {
+		en = [[~C_Map.GetAreaInfo(9310)]],
+	},
+});
 root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
-	n(-93, {	-- Silithus (The Wound)
+	n(SILITHUS_THE_WOUND, {
 		["description"] = "The Wound was a mini pre-expansion event tailored around the aftermath of the wounding of Azeroth following the conclusion of the Antorus raid. Talk to Zidormi if you are stuck in the old Silithus.",
 		["maps"] = { SILITHUS },
 		["groups"] = {
@@ -44,7 +51,9 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { AD
 				}),
 				q(50046, {	-- It's a Sabotage
 					["qg"] = 130030,	-- Kelsey Steelspark
+					-- #if BEFORE 8.0.1
 					["sourceQuest"] = 49981,	-- Witness to the Wound
+					-- #endif
 					["coord"] = { 69.4, 17.6, SILITHUS },
 					["races"] = ALLIANCE_ONLY,
 				}),

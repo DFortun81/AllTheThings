@@ -1337,14 +1337,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["description"] = "Explore Isle of Quel'Danas, revealing the covered areas of the world map.",
 					-- #endif
 				}),
-				classicAch(897, {	-- You're So Offensive
+				achWithRep(897, 1077, {	-- You're So Offensive
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Shattered Sun Offensive to Exalted.",
-					-- #endif
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1077); end]],
 					-- #endif
 				}),
 			}),
@@ -1369,7 +1364,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["timeline"] = { "removed 3.0.1" },
 					-- #if BEFORE WRATH
-					["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_B .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR .. [[; end]],
+					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_B .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR .. [[; end]],
 					-- #endif
 					["cost"] = { { "g", 100000 } },	-- 10g
 					["isDaily"] = true,
@@ -1403,9 +1398,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
 						objective(1, {	-- 0/1 Energize a Crystal Ward
-							["provider"] = { "i", 34338 },	-- Mana Remnants
+							["providers"] = {
+								{ "i",  34338 },	-- Mana Remnants
+								{ "o", 187078 },	-- Crystal Ward
+							},
 							["coord"] = { 46, 35, ISLE_OF_QUELDANAS },
-							["cr"] = 24966,	-- Wretched Fiend
+							["crs"] = {
+								24960,	-- Wretched Devourer
+								24966,	-- Wretched Fiend
+								25047,	-- Wretched Hungerer
+							},
 						}),
 					},
 				})),
@@ -1472,7 +1474,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
 					-- #if BEFORE WRATH
-					["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO .. [[; end]],
+					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO .. [[; end]],
 					-- #endif
 					["groups"] = {
 						objective(1, {	-- 0/2 Pit Overlord
@@ -1512,7 +1514,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["timeline"] = { "removed 3.0.1" },
 					["lvl"] = lvlsquish(70, 70, 25),
 					-- #if BEFORE WRATH
-					["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_ONE .. [[; end]],
+					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_ONE .. [[; end]],
 					-- #endif
 				})),
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_ONE, q(11524, {	-- Erratic Behavior (Removed completion of Phase 1)
@@ -1523,7 +1525,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
 					-- #if BEFORE WRATH
-					["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_ONE .. [[; end]],
+					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_ONE .. [[; end]],
 					-- #endif
 					["groups"] = {
 						objective(1, {	-- 0/5 Converted Sentry Deployed
@@ -1573,7 +1575,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
 					-- #if BEFORE WRATH
-					["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE .. [[; end]],
+					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE .. [[; end]],
 					-- #endif
 					["groups"] = {
 						objective(1, {	-- 0/1 Sin'loren sails burned
@@ -1641,7 +1643,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
 					-- #if BEFORE WRATH
-					["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE_B .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE .. [[; end]],
+					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE_B .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE .. [[; end]],
 					-- #endif
 					["groups"] = {
 						objective(1, {	-- 0/3 Darkspine Iron Ore
@@ -1679,7 +1681,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
 					-- #if BEFORE WRATH
-					["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_C .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR .. [[; end]],
+					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_C .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR .. [[; end]],
 					-- #endif
 					["groups"] = {
 						objective(1, {	-- 0/3 Razorthorn Root
@@ -1715,7 +1717,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["coord"] = { 47.2, 35.0, ISLE_OF_QUELDANAS },
 					["maps"] = { SHATTRATH_CITY },
 					-- #if ANYCLASSIC
-					["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO_B .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO .. [[; end]],
+					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO_B .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO .. [[; end]],
 					-- #endif
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
@@ -1744,7 +1746,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
 					-- #if BEFORE WRATH
-					["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE .. [[; end]],
+					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE .. [[; end]],
 					-- #endif
 					["groups"] = {
 						objective(1, {	-- 0/6 Dawnblade Summoner slain
@@ -1787,7 +1789,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
 					-- #if BEFORE WRATH
-					["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO .. [[; end]],
+					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO .. [[; end]],
 					-- #endif
 					["groups"] = {
 						objective(1, {	-- 0/1 Emissary of Hate Impaled
@@ -1833,13 +1835,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
 					-- #if BEFORE WRATH
-					["OnUpdate"] = [[function(t) t.u = ATTClassicSettings.Unobtainables[]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO .. [[] and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_ONE .. [[; end]],
+					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_ONE .. [[; end]],
 					-- #endif
 					["groups"] = {
 						objective(1, {	-- 0/1 Energize a Crystal Ward
-							["provider"] = { "i", 34338 },	-- Mana Remnants
+							["providers"] = {
+								{ "i",  34338 },	-- Mana Remnants
+								{ "o", 187078 },	-- Crystal Ward
+							},
 							["coord"] = { 46, 35, ISLE_OF_QUELDANAS },
-							["cr"] = 24966,	-- Wretched Fiend
+							["crs"] = {
+								24960,	-- Wretched Devourer
+								24966,	-- Wretched Fiend
+								25047,	-- Wretched Hungerer
+							},
 						}),
 					},
 				})),
@@ -1893,10 +1902,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 						i(34672),	-- Inuuro's Blade
 						i(34671),	-- K'iru's Presage
 						i(34673),	-- Legionfoe
-						i(35755),	-- Recipe: Assassin's Alchemist Stone
-						i(35752),	-- Recipe: Guardian's Alchemist Stone
-						i(35754),	-- Recipe: Redeemer's Alchemist Stone
-						i(35753),	-- Recipe: Sorcerer's Alchemist Stone
+						i(35755),	-- Recipe: Assassin's Alchemist Stone (RECIPE!)
+						i(35752),	-- Recipe: Guardian's Alchemist Stone (RECIPE!)
+						i(35754),	-- Recipe: Redeemer's Alchemist Stone (RECIPE!)
+						i(35753),	-- Recipe: Sorcerer's Alchemist Stone (RECIPE!)
 						i(34670),	-- Seeker's Gavel
 						i(34678),	-- Shattered Sun Pendant of Acumen
 						i(34679),	-- Shattered Sun Pendant of Might

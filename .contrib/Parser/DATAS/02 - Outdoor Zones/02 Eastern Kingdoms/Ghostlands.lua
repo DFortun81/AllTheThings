@@ -4,8 +4,8 @@
 -- CRIEVE NOTE: Don't touch this file without asking. <-- Did someone forget?
 -- Burden of Truth: Classic & TBC.
 local MASTER_CHEF_GROUPS = {
-	i(27687),	-- Recipe: Bat Bites
-	i(22647),	-- Recipe: Crunchy Spider Surprise
+	i(27687),	-- Recipe: Bat Bites (RECIPE!)
+	i(22647),	-- Recipe: Crunchy Spider Surprise (RECIPE!)
 };
 local RATHIS_TOMBER_GROUPS = {};
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
@@ -15,6 +15,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\achievement_zone_ghostlands",
 		-- #endif
+		["timeline"] = { "added 2.0.1.6180" },
 		["lvl"] = lvlsquish(10, 10, 1),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -67,8 +68,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					450,	-- Maggot (PET!)
 					417,	-- Rat (PET!)
@@ -82,8 +82,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						["description"] = "Found along the western coastline and on the little island.",
 					}),
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, {
 				exploration(3508, "404:436:598:232"),	-- Amani Pass [TBC]
@@ -326,7 +325,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(12, 12, 1),
 					["groups"] = {
-						i(22647),	-- Recipe: Crunchy Spider Surprise
+						i(22647),	-- Recipe: Crunchy Spider Surprise (RECIPE!)
 						i(22645),	-- Crunchy Spider Surprise
 					},
 				}),
@@ -1323,8 +1322,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 -- #if AFTER WRATH
 -- Add the 2 recipes that aren't TBC Phase One, they get added to his loot table in Wrath.
 for i,o in ipairs({
-	i(21219),	-- Recipe: Sagefish Delight
-	i(21099),	-- Recipe: Smoked Sagefish
+	i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+	i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 }) do table.insert(MASTER_CHEF_GROUPS, o); end
 -- #endif
 

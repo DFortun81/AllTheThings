@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(MALDRAXXUS, {
 		n(ZONE_DROPS, {
 			filter(REAGENTS, {
@@ -120,11 +120,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, 
 					166335,	-- Slime Giant
 				},
 			}),
-			i(183124, {	-- Simple Tome of Bone-Binding
-				["questID"] = 62255,
-				["classes"] = { HUNTER },
-				["_drop"] = { "spellID" },
-			}),
+			i(183124),	-- Simple Tome of Bone-Binding (CI!)
 			i(186727, {	-- Seal Breaker Key
 				["timeline"] = { ADDED_9_1_0 },
 			}),

@@ -1,8 +1,17 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
-root(ROOTS.Promotions, n(-573, {	-- Scroll of Resurrection
-	["description"] = "The following item sets were implemented as boosted character rewards for recipients of the Scroll of Resurrection.\n\nThey were later added to vendors in Mount Hyjal and Vash'jir once the Scroll of Resurrection Service was retired.",
+SCROLL_OF_RESURRECTION = createHeader({
+	readable = "Scroll of Resurrection",
+	icon = [[~_.asset("Promotion_Scroll_of_Rez")]],
+	text = {
+		en = [[~SCROLL_OF_RESURRECTION]],
+	},
+	description = {
+		en = "The following item sets were implemented as boosted character rewards for recipients of the Scroll of Resurrection.\n\nThey were later added to vendors in Mount Hyjal and Vash'jir once the Scroll of Resurrection Service was retired.",
+	},
+});
+root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
 	["timeline"] = { "added 4.3.0.15005", "removed 5.3.0.16781" },
 	["groups"] = {
 		cl(DEATHKNIGHT, {

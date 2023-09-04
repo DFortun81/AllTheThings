@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {
+root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	prof(ALCHEMY, {
 		n(DISCOVERY, {
 			["requireSkill"] = ALCHEMY,
@@ -126,7 +126,7 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 					i(48120, {	-- Obsidian Hatchling (PET!)
 						["timeline"] = { "added 3.2.0.10026" },
 					}),
-					i(29902),	-- Red Moth Egg
+					i(29902),	-- Red Moth (PET!)
 					i(136905, {	-- Ridgeback Piglet (PET!)
 						["timeline"] = { "added 7.0.3.22248" },
 					}),
@@ -185,7 +185,7 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 		filter(MOUNTS, {
 			i(137686, {["timeline"] = {ADDED_7_1_0}}),	-- Steelbound Devourer (MOUNT!)
 		}),
-		filter(RELICS, {
+		filter(RELICS_F, {
 			i(136685),	-- Consecrated Spike
 			i(136686),	-- Flamespike
 			i(136684),	-- Gleaming Iron Spike
@@ -198,42 +198,27 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 			i(124442),	-- Chaos Crystal
 			i(124441),	-- Leylight Shard
 		}),
-		filter(BATTLE_PETS, {
-			i(128533),	-- Enchanted Cauldron (PET!)
-			i(128535),	-- Enchanted Pen (PET!)
-			i(128534),	-- Enchanted Torch (PET!)
-		}),
-		cat(446, {	-- Cloak Enchantments
+		n(ARMOR_ENCHANTMENTS, {
 			i(128549),	-- Enchant Cloak - Binding of Agility
 			i(128550),	-- Enchant Cloak - Binding of Intellect
 			i(128548),	-- Enchant Cloak - Binding of Strength
 			i(128546),	-- Enchant Cloak - Word of Agility
 			i(128547),	-- Enchant Cloak - Word of Intellect
 			i(128545),	-- Enchant Cloak - Word of Strength
-		}),
-		cat(448, {	-- Glove Enchantments
 			i(128558),	-- Enchant Glove - Legion Herbalism
 			i(128559),	-- Enchant Glove - Legion Mining
 			i(128560),	-- Enchant Glove - Legion Skinning
 			i(128561),	-- Enchant Glove - Legion Surveying
-		}),
-		cat(444, {	-- Neck Enchantments
 			i(141910),	-- Enchant Neck - Mark of the Ancient Priestess
 			i(128551),	-- Enchant Neck - Mark of the Claw
-			i(144307, {["timeline"]={"added 7.1.5"}}),	-- Enchant Neck - Mark of the Deadly
+			i(144307, {["timeline"] = {ADDED_7_1_5}}),	-- Enchant Neck - Mark of the Deadly
 			i(128552),	-- Enchant Neck - Mark of the Distant Army
 			i(141908),	-- Enchant Neck - Mark of the Heavy Hide
 			i(128553),	-- Enchant Neck - Mark of the Hidden Satyr
-			i(144304, {["timeline"]={"added 7.1.5"}}),	-- Enchant Neck - Mark of the Master
-			i(144306, {["timeline"]={"added 7.1.5"}}),	-- Enchant Neck - Mark of the Quick
+			i(144304, {["timeline"] = {ADDED_7_1_5}}),	-- Enchant Neck - Mark of the Master
+			i(144306, {["timeline"] = {ADDED_7_1_5}}),	-- Enchant Neck - Mark of the Quick
 			i(141909),	-- Enchant Neck - Mark of the Trained Soldier
-			i(144305, {["timeline"]={"added 7.1.5"}}),	-- Enchant Neck - Mark of the Versatile
-		}),
-		cat(490, {	-- Relics
-			i(136691),	-- Immaculate Fibril
-			i(136689),	-- Soul Fibril
-		}),
-		cat(445, {	-- Ring Enchantments
+			i(144305, {["timeline"] = {ADDED_7_1_5}}),	-- Enchant Neck - Mark of the Versatile
 			i(128541),	-- Enchant Ring - Binding of Critical Strike
 			i(128542),	-- Enchant Ring - Binding of Haste
 			i(128543),	-- Enchant Ring - Binding of Mastery
@@ -242,9 +227,16 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 			i(128538),	-- Enchant Ring - Word of Haste
 			i(128539),	-- Enchant Ring - Word of Mastery
 			i(128540),	-- Enchant Ring - Word of Versatility
-		}),
-		cat(447, {	-- Shoulder Enchantments
 			i(128554),	-- Enchant Shoulder - Boon of the Scavenger
+		}),
+		filter(BATTLE_PETS, {
+			i(128533),	-- Enchanted Cauldron (PET!)
+			i(128535),	-- Enchanted Pen (PET!)
+			i(128534),	-- Enchanted Torch (PET!)
+		}),
+		filter(RELICS_F, {
+			i(136691),	-- Immaculate Fibril
+			i(136689),	-- Soul Fibril
 		}),
 		filter(TOYS, {
 			i(128536),	-- Leylight Brazier (TOY!)
@@ -272,16 +264,12 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 			i(132501),	-- Tactical Headgun*
 			i(144331),	-- Tailored Skullblasters*
 		}),
-		filter(RELICS, {
+		filter(RELICS_F, {
 			i(136687),	-- "The Felic"*
 			i(136688),	-- Shockinator*
 		}),
 		cat(472, {	-- Devices
-			i(134125, {	-- Mecha-Bond Imprint Matrix
-				["classes"] = { HUNTER },
-				["spellID"] = 205154,	-- Mecha-Bond Imprint Matrix
-				["f"] = RECIPES,
-			}),
+			i(134125),	-- Mecha-Bond Imprint Matrix (CI!)
 		}),
 		{
 			["name"] = "Robotics",
@@ -320,19 +308,71 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 			},
 		},
 	}),
+	prof(HERBALISM, {
+		n(DISCOVERY, {
+			r(195114, {	-- Herb Gathering (Legion)
+				["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
+				["collectible"] = false,
+			}),
+			r(193290),	-- Herbalism Journal
+			applyclassicphase(BFA_PHASE_ONE, r(265834, {["timeline"] = {ADDED_8_0_1}})),	-- Herb Gathering (Legion)
+		}),
+		spell(2366, {	-- Herb Gathering
+			i(151857, {["timeline"] = {ADDED_7_3_0}}),	-- Adolescent Astral Glory
+			i(124101),	-- Aethril
+			i(129117),	-- Aethril Sample
+			i(129284),	-- Aethril Seed
+			i(151565, {["timeline"] = {ADDED_7_3_0}}),	-- Astral Glory
+			i(151858, {["timeline"] = {ADDED_7_3_0}}),	-- Astral Glory Root Cluster
+			i(129141),	-- Blight-Choked Herb
+			i(129136),	-- Blight-Twisted Herb
+			i(124102),	-- Dreamleaf
+			i(129118),	-- Dreamleaf Sample
+			i(129285),	-- Dreamleaf Seed
+			i(153045, {	-- Fel Lasher (PET!)
+				["description"] = "This can be looted from any herb on Argus.",
+				["timeline"] = { ADDED_7_3_0 }
+			}),
+			i(124106),	-- Felwort
+			i(129122),	-- Felwort Sample
+			i(129289),	-- Felwort Seed
+			i(124104),	-- Fjarnskaggl
+			i(129120),	-- Fjarnskaggl Sample
+			i(129287),	-- Fjarnskaggl Seed
+			i(124103),	-- Foxflower
+			i(129278),	-- Foxflower Scent Gland
+			i(129286),	-- Foxflower Seed
+			i(129140),	-- Jeweled Spade Handle
+			i(129137),	-- Nibbled Foxflower Stem
+			i(129135),	-- Ragged Strips of Silk
+			i(129138),	-- Ram's-Horn Trowel
+			i(129142),	-- Runed Journal Page
+			i(129143),	-- Scribbled Ramblings
+			i(124105),	-- Starlight Rose
+			i(129288),	-- Starlight Rose Seed
+			i(129158),	-- Starlight Rosedust
+			i(129121),	-- Starlight Rosedust
+			i(151856, {["timeline"] = {ADDED_7_3_0}}),	-- Withered Astral Glory
+		}),
+	}),
 	prof(INSCRIPTION, {
 		filter(GLYPHS, {
-			i(140630, {	-- Glyph of the Doe
-				["questID"] = 62678,
-				["classes"] = { DRUID },
+			i(140630),	-- Mark of the Doe (CI!)
+			i(129021),	-- Mark of the Sentinel (CI!)
+			i(187933, {	-- Mark of the Duskwing Raven (CI!)
+				["timeline"] = { ADDED_9_1_5 },
 			}),
-			i(129021, {	-- Glyph of the Sentinel
-				["questID"] = 62675,
-				["classes"] = { DRUID },
+			i(139314, {	-- Grimoire of the Abyssal (CI!)
+				["timeline"] = { ADDED_10_1_5 },
 			}),
-			i(187933, {	-- Mark of the Duskwing Raven
-				["questID"] = 65058,
-				["classes"] = { DRUID },
+			i(129018),	-- Grimoire of the Fel Imp (CI!)
+			i(139312, {	-- Grimoire of the Observer (CI!)
+				["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_10_1_5 },
+			}),
+			i(139310),	-- Grimoire of the Shivarra (CI!)
+			i(139311),	-- Grimoire of the Voidlord (CI!)
+			i(139315, {	-- Grimoire of the Wrathguard (CI!)
+				["timeline"] = { ADDED_7_2_0 },
 			}),
 		}),
 		category(106, {	-- Tarot Cards
@@ -360,7 +400,7 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 		filter(TRINKET_F, {
 			i(128978),	-- Prophecy Tarot
 		}),
-		filter(RELICS, {
+		filter(RELICS_F, {
 			i(136692),	-- Aqual Mark
 			i(136693),	-- Straszan Mark
 		}),
@@ -429,90 +469,102 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 		}),
 	}),
 	prof(LEATHERWORKING, {
-		filter(COSMETIC, {
-			un(FEAST_OF_WINTER_VEIL, i(151791)),	-- Winter Boots
+		n(ARMOR, {
+			filter(LEATHER, {
+				i(128890),	-- Dreadleather Belt
+				i(128891),	-- Dreadleather Bindings
+				i(128885),	-- Dreadleather Footpads
+				i(128886),	-- Dreadleather Gloves
+				i(128884),	-- Dreadleather Jerkin
+				i(128887),	-- Dreadleather Mask
+				i(128888),	-- Dreadleather Pants
+				i(128889),	-- Dreadleather Shoulderguard
+				i(151577, {["timeline"] = {ADDED_7_3_0}}),	-- Fiendish Shoulderguards
+				i(146669, {["timeline"] = {ADDED_7_2_0}}),	-- The Sentinel's Eternal Refuge
+				i(128882),	-- Warhide Belt
+				i(128883),	-- Warhide Bindings
+				i(128877),	-- Warhide Footpads
+				i(128878),	-- Warhide Gloves
+				i(128876),	-- Warhide Jerkin
+				i(128879),	-- Warhide Mask
+				i(128880),	-- Warhide Pants
+				i(128881),	-- Warhide Shoulderguard
+			}),
+			filter(MAIL, {
+				i(128899),	-- Battlebound Armbands
+				i(128898),	-- Battlebound Girdle
+				i(128894),	-- Battlebound Grips
+				i(128892),	-- Battlebound Hauberk
+				i(128896),	-- Battlebound Leggings
+				i(128897),	-- Battlebound Spaulders
+				i(128893),	-- Battlebound Treads
+				i(128895),	-- Battlebound Warhelm
+				i(128907),	-- Gravenscale Armbands
+				i(128906),	-- Gravenscale Girdle
+				i(128902),	-- Gravenscale Grips
+				i(128900),	-- Gravenscale Hauberk
+				i(128904),	-- Gravenscale Leggings
+				i(128905),	-- Gravenscale Spaulders
+				i(128901),	-- Gravenscale Treads
+				i(128903),	-- Gravenscale Warhelm
+				i(151578, {["timeline"] = {ADDED_7_3_0}}),	-- Fiendish Spaulders
+				i(146668, {["timeline"] = {ADDED_7_2_0}}),	-- Vigilance Perch
+			}),
 		}),
-		filter(LEATHER, {
-			i(128890),	-- Dreadleather Belt
-			i(128891),	-- Dreadleather Bindings
-			i(128885),	-- Dreadleather Footpads
-			i(128886),	-- Dreadleather Gloves
-			i(128884),	-- Dreadleather Jerkin
-			i(128887),	-- Dreadleather Mask
-			i(128888),	-- Dreadleather Pants
-			i(128889),	-- Dreadleather Shoulderguard
-			i(151577),	-- Fiendish Shoulderguards
-			i(146669),	-- The Sentinel's Eternal Refuge
-			i(128882),	-- Warhide Belt
-			i(128883),	-- Warhide Bindings
-			i(128877),	-- Warhide Footpads
-			i(128878),	-- Warhide Gloves
-			i(128876),	-- Warhide Jerkin
-			i(128879),	-- Warhide Mask
-			i(128880),	-- Warhide Pants
-			i(128881),	-- Warhide Shoulderguard
+		filter(MISC, {
+			i(142406, {["timeline"] = {ADDED_7_1_0}}),	-- Drums of the Mountain
+			i(131746),	-- Stonehide Leather Barding
 		}),
-		filter(MAIL, {
-			i(128899),	-- Battlebound Armbands
-			i(128898),	-- Battlebound Girdle
-			i(128894),	-- Battlebound Grips
-			i(128892),	-- Battlebound Hauberk
-			i(128896),	-- Battlebound Leggings
-			i(128897),	-- Battlebound Spaulders
-			i(128893),	-- Battlebound Treads
-			i(128895),	-- Battlebound Warhelm
-			i(132547),	-- Blue Chain Leggings
-			i(132495),	-- Chain Belt
-			i(132494),	-- Chain Boots
-			i(132496),	-- Chain Bracers
-			i(132499),	-- Chain Gauntlets
-			i(132493),	-- Chain Hauberk
-			i(132497),	-- Chain Leggings
-			i(132498),	-- Chain Pauldrons
-			i(132545),	-- Crackling Scale Breastplate
-			i(132546),	-- Element Grips
-			i(151578),	-- Fiendish Spaulders
-			i(128907),	-- Gravenscale Armbands
-			i(128906),	-- Gravenscale Girdle
-			i(128902),	-- Gravenscale Grips
-			i(128900),	-- Gravenscale Hauberk
-			i(128904),	-- Gravenscale Leggings
-			i(128905),	-- Gravenscale Spaulders
-			i(128901),	-- Gravenscale Treads
-			i(128903),	-- Gravenscale Warhelm
-			i(132522),	-- Heavy Scale Belt
-			i(132521),	-- Heavy Scale Boots
-			i(132533),	-- Heavy Scale Gauntlets
-			i(132536),	-- Heavy Scale Hood
-			i(132532),	-- Heavy Scale Pants
-			i(132535),	-- Heavy Scale Pauldrons
-			i(132520),	-- Heavy Scale Shirt
-			i(132534),	-- Heavy Scale Wraps
-			i(132489),	-- Light Scale Belt
-			i(132488),	-- Light Scale Boots
-			i(132491),	-- Light Scale Bracers
-			i(132490),	-- Light Scale Gloves
-			i(132487),	-- Light Scale Jerkin
-			i(132492),	-- Light Scale Pants
-			i(132548),	-- Shamanic Treads
-			i(132544),	-- Spritescale Boots
-			i(132542),	-- Spritescale Britches
-			i(132539),	-- Spritescale Cinch
-			i(132537),	-- Spritescale Circlet
-			i(132543),	-- Spritescale Epaulets
-			i(132540),	-- Spritescale Gloves
-			i(132538),	-- Spritescale Jerkin
-			i(132541),	-- Spritescale Wraps
-			i(146668),	-- Vigilance Perch
-		}),
-		n(55, {	-- Consumables
-			i(142406),	-- Drums of the Mountain
+		filter(MOUNTS, {
+			i(129962),	-- Great Northern Elderhorn (MOUNT!)
 		}),
 		filter(TOYS, {
 			i(129961),	-- Flaming Hoop (TOY!)
 			i(129956),	-- Leather Love Seat (TOY!)
 			i(129960),	-- Leather Pet Bed (TOY!)
 			i(129958),	-- Leather Pet Leash (TOY!)
+		}),
+	}),
+	prof(MINING, {
+		n(DISCOVERY, {
+			r(195122, {	-- Mining (Legion)
+				["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
+				["collectible"] = false,
+			}),
+			r(2656),	-- Mining Journal / Smelting
+			applyclassicphase(BFA_PHASE_ONE, r(265849, {["timeline"] = {ADDED_8_0_1}})),	-- Mining (Legion)
+		}),
+		spell(2575, {	-- Mining
+			i(124493),	-- Battered Mining Pick
+			i(124494),	-- Chunk of Horn
+			i(151864, {["timeline"] = {ADDED_7_3_0}}),	-- Embedded Empyrium Ore
+			i(151564, {["timeline"] = {ADDED_7_3_0}}),	-- Empyrium
+			i(151865, {["timeline"] = {ADDED_7_3_0}}),	-- Empyrium Bits
+			i(151860, {["timeline"] = {ADDED_7_3_0}}),	-- Empyrium Deposit Chunk
+			i(151861, {["timeline"] = {ADDED_7_3_0}}),	-- Empyrium Dust
+			i(151863, {["timeline"] = {ADDED_7_3_0}}),	-- Empyrium Seam Chunk
+			i(123919),	-- Felslate
+			i(124496),	-- Felslate Deposit Sample
+			i(124497),	-- Felslate Seam Sample
+			i(124444),	-- Infernal Brimstone
+			i(124502),	-- Infernal Brimstone Sample
+			i(124489),	-- Leystone Deposit Sample
+			i(123918),	-- Leystone Ore
+			i(124490),	-- Leystone Seam Sample
+			i(124498),	-- Living Felslate Sample
+			i(124491),	-- Living Leystone Sample
+			i(124499),	-- Ore-Bound Eye
+			i(124501),	-- Ore-Choked Heart
+			i(124500),	-- Severed Arm
+			i(124492),	-- Torn Journal Page
+			i(151862, {["timeline"] = {ADDED_7_3_0}}),	-- Unusable Empyrium Core
+			-- Not Ore --
+			i(151718, {["timeline"] = {ADDED_7_3_0}}),	-- Argulite
+			i(151720, {["timeline"] = {ADDED_7_3_0}}),	-- Chemirine
+			i(151722, {["timeline"] = {ADDED_7_3_0}}),	-- Florid Malachite
+			i(151721, {["timeline"] = {ADDED_7_3_0}}),	-- Hesselian
+			i(151579, {["timeline"] = {ADDED_7_3_0}}),	-- Labradorite
+			i(151719, {["timeline"] = {ADDED_7_3_0}}),	-- Lightsphene
 		}),
 	}),
 	prof(TAILORING, {

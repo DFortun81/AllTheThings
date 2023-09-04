@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+--[[
 local SymPvP = function(SeasonID)
 	SymLink = {
 		{"select", "tierID", DF_TIER},			-- Select Dragonflight
@@ -50,6 +51,7 @@ local SymRaid = function(InstanceID, Remove)
 	end
 	return SymLink
 end
+--]]
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(VALDRAKKEN, {
 		o(381035, {	-- The Great Vault
@@ -57,6 +59,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			["g"] = {
 				i(201836, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }}),	-- Aspects' Token of Merit (S1)
 				i(205225, {["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }}),	-- Aspects' Token of Merit (S2)
+				--[[
 				inst(1200, {	-- Vault of the Incarnates
 					["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
 					["sym"] = SymRaid(1200),
@@ -115,6 +118,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["sym"] = SymPvP(SEASON_CRIMSON),
 					}),
 				})),
+				--]]
 			},
 		}),
 	}),

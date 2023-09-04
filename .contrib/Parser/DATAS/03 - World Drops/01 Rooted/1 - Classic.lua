@@ -2622,6 +2622,15 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(2078),	-- Northern Shortsword
 			i(727),		-- Notched Shortsword
 			i(15210),	-- Raider Shortsword
+			i(9718, {	-- Reforged Blade of Heroes
+				["cost"] = {
+					{ "i", 9719, 1 },	-- Broken Blade of Heroes
+					{ "i", 7068, 2 },	-- Elemental Fire
+					{ "i", 3486, 2 },	-- Heavy Grinding Stone
+					{ "i", 3859, 4 },	-- Steel Bar
+					{ "i", 3466, 4 },	-- Strong Flux
+				},
+			}),
 			i(15216),	-- Rune Sword
 			i(1265),	-- Scorpion Sting
 			i(13035),	-- Serpent Slicer
@@ -3408,46 +3417,46 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			-- #if AFTER 8.0.1.10000
 			i(6454),	-- Manual: Strong Anti-Venom
 			-- #endif
-			i(3832),	-- Recipe: Elixir of Detect Lesser Invisibility
-			i(9297),	-- Recipe: Elixir of Dream Vision
-			i(3830),	-- Recipe: Elixir of Fortitude
-			i(9298),	-- Recipe: Elixir of Giants
-			i(3396),	-- Recipe: Elixir of Lesser Agility
-			i(2553),	-- Recipe: Elixir of Minor Agility
-			i(6211),	-- Recipe: Elixir of Ogre's Strength
+			i(3832),	-- Recipe: Elixir of Detect Lesser Invisibility (RECIPE!)
+			i(9297),	-- Recipe: Elixir of Dream Vision (RECIPE!)
+			i(3830),	-- Recipe: Elixir of Fortitude (RECIPE!)
+			i(9298),	-- Recipe: Elixir of Giants (RECIPE!)
+			i(3396),	-- Recipe: Elixir of Lesser Agility (RECIPE!)
+			i(2553),	-- Recipe: Elixir of Minor Agility (RECIPE!)
+			i(6211),	-- Recipe: Elixir of Ogre's Strength (RECIPE!)
 			-- #if BEFORE TBC
-			i(3394),	-- Recipe: Elixir of Poison Resistance / Recipe: Potion of Curing [TBC+]
+			i(3394),	-- Recipe: Elixir of Poison Resistance / Recipe: Potion of Curing [TBC+] (RECIPE!)
 			-- #endif
 			-- #if BEFORE 3.2.0
-			i(13518),	-- Recipe: Flask of Petrification / Recipe: Potion of Petrification [3.2.0+]
+			i(13518),	-- Recipe: Flask of Petrification / Recipe: Potion of Petrification [3.2.0+] (RECIPE!)
 			-- #endif
-			i(13493, {	-- Recipe: Greater Arcane Elixir
+			i(13493, {	-- Recipe: Greater Arcane Elixir (RECIPE!)
 				["timeline"] = { "removed 2.0.1" },
 			}),
-			i(13490),	-- Recipe: Greater Stoneshield Potion
-			i(9295),	-- Recipe: Invisibility Potion
-			i(3395),	-- Recipe: Limited Invulnerability Potion
-			i(9293, {	-- Recipe: Magic Resistance Potion
+			i(13490),	-- Recipe: Greater Stoneshield Potion (RECIPE!)
+			i(9295),	-- Recipe: Invisibility Potion (RECIPE!)
+			i(3395),	-- Recipe: Limited Invulnerability Potion (RECIPE!)
+			i(9293, {	-- Recipe: Magic Resistance Potion (RECIPE!)
 				["timeline"] = { "deleted 5.0.4" },
 			}),
-			i(3831),	-- Recipe: Mighty Troll's Blood Potion / Recipe: Major Troll's Blood Elixir [Wrath+]
-			i(3393, {	-- Recipe: Minor Magic Resistance Potion
+			i(3831),	-- Recipe: Mighty Troll's Blood Potion / Recipe: Major Troll's Blood Elixir [Wrath+] (RECIPE!)
+			i(3393, {	-- Recipe: Minor Magic Resistance Potion (RECIPE!)
 				["timeline"] = { "deleted 5.0.4" },
 			}),
 			-- #if AFTER TBC
-			i(3394),	-- Recipe: Potion of Curing [TBC+] / Recipe: Elixir of Poison Resistance
+			i(3394),	-- Recipe: Potion of Curing [TBC+] / Recipe: Elixir of Poison Resistance (RECIPE!)
 			-- #endif
 			-- #if AFTER 3.2.0
-			i(13518),	-- Recipe: Potion of Petrification [3.2.0+] / Recipe: Flask of Petrification
+			i(13518),	-- Recipe: Potion of Petrification [3.2.0+] / Recipe: Flask of Petrification (RECIPE!)
 			-- #endif
-			i(13492, {	-- Recipe: Purification Potion
+			i(13492, {	-- Recipe: Purification Potion (RECIPE!)
 				["timeline"] = { "removed 3.0.1" },
 			}),
-			i(2555),	-- Recipe: Swiftness Potion
-			i(13489),	-- Recipe: Transmute Earth to Life
-			i(13488),	-- Recipe: Transmute Life to Earth
-			i(13486),	-- Recipe: Transmute Undeath to Water
-			i(13487),	-- Recipe: Transmute Water to Undeath
+			i(2555),	-- Recipe: Swiftness Potion (RECIPE!)
+			i(13489),	-- Recipe: Transmute Earth to Life (RECIPE!)
+			i(13488),	-- Recipe: Transmute Life to Earth (RECIPE!)
+			i(13486),	-- Recipe: Transmute Undeath to Water (RECIPE!)
+			i(13487),	-- Recipe: Transmute Water to Undeath (RECIPE!)
 		}),
 		prof(BLACKSMITHING, {
 			i(7992),	-- Plans: Blue Glittering Axe (RECIPE!)
@@ -3601,49 +3610,49 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(21944),	-- Design: Truesilver Boar
 		})),
 		prof(LEATHERWORKING, {
-			i(4301),	-- Pattern: Barbaric Belt
-			i(4297),	-- Pattern: Barbaric Gloves
-			i(8390),	-- Pattern: Big Voodoo Cloak
-			i(8387),	-- Pattern: Big Voodoo Mask
-			i(8389),	-- Pattern: Big Voodoo Pants
-			i(8386),	-- Pattern: Big Voodoo Robe
-			i(15737),	-- Pattern: Chimeric Boots
-			i(15746),	-- Pattern: Chimeric Leggings
-			i(15755),	-- Pattern: Chimeric Vest
-			i(8384),	-- Pattern: Comfortable Leather Hat
-			i(7360),	-- Pattern: Dark Leather Gloves
-			i(4296),	-- Pattern: Dark Leather Shoulders
-			i(2409),	-- Pattern: Dark Leather Tunic
-			i(7452),	-- Pattern: Dusky Boots
-			i(7449),	-- Pattern: Dusky Leather Leggings
-			i(2406),	-- Pattern: Fine Leather Boots
-			i(2408),	-- Pattern: Fine Leather Gloves
-			i(5972),	-- Pattern: Fine Leather Pants
-			i(7450),	-- Pattern: Green Whelp Armor
-			i(4299),	-- Pattern: Guardian Armor
-			i(4298),	-- Pattern: Guardian Belt
-			i(5974),	-- Pattern: Guardian Cloak
-			i(4300),	-- Pattern: Guardian Leather Bracers
-			i(7364),	-- Pattern: Heavy Earthen Gloves
-			i(15743),	-- Pattern: Heavy Scorpid Belt
-			i(4294),	-- Pattern: Hillman's Belt
-			i(4293),	-- Pattern: Hillman's Leather Vest
-			i(7363),	-- Pattern: Pilferer's Gloves
-			i(7288),	-- Pattern: Rugged Leather Pants
-			i(15745, {	-- Pattern: Runic Leather Belt
+			i(4301),	-- Pattern: Barbaric Belt (RECIPE!)
+			i(4297),	-- Pattern: Barbaric Gloves (RECIPE!)
+			i(8390),	-- Pattern: Big Voodoo Cloak (RECIPE!)
+			i(8387),	-- Pattern: Big Voodoo Mask (RECIPE!)
+			i(8389),	-- Pattern: Big Voodoo Pants (RECIPE!)
+			i(8386),	-- Pattern: Big Voodoo Robe (RECIPE!)
+			i(15737),	-- Pattern: Chimeric Boots (RECIPE!)
+			i(15746),	-- Pattern: Chimeric Leggings (RECIPE!)
+			i(15755),	-- Pattern: Chimeric Vest (RECIPE!)
+			i(8384),	-- Pattern: Comfortable Leather Hat (RECIPE!)
+			i(7360),	-- Pattern: Dark Leather Gloves (RECIPE!)
+			i(4296),	-- Pattern: Dark Leather Shoulders (RECIPE!)
+			i(2409),	-- Pattern: Dark Leather Tunic (RECIPE!)
+			i(7452),	-- Pattern: Dusky Boots (RECIPE!)
+			i(7449),	-- Pattern: Dusky Leather Leggings (RECIPE!)
+			i(2406),	-- Pattern: Fine Leather Boots (RECIPE!)
+			i(2408),	-- Pattern: Fine Leather Gloves (RECIPE!)
+			i(5972),	-- Pattern: Fine Leather Pants (RECIPE!)
+			i(7450),	-- Pattern: Green Whelp Armor (RECIPE!)
+			i(4299),	-- Pattern: Guardian Armor (RECIPE!)
+			i(4298),	-- Pattern: Guardian Belt (RECIPE!)
+			i(5974),	-- Pattern: Guardian Cloak (RECIPE!)
+			i(4300),	-- Pattern: Guardian Leather Bracers (RECIPE!)
+			i(7364),	-- Pattern: Heavy Earthen Gloves (RECIPE!)
+			i(15743),	-- Pattern: Heavy Scorpid Belt (RECIPE!)
+			i(4294),	-- Pattern: Hillman's Belt (RECIPE!)
+			i(4293),	-- Pattern: Hillman's Leather Vest (RECIPE!)
+			i(7363),	-- Pattern: Pilferer's Gloves (RECIPE!)
+			i(7288),	-- Pattern: Rugged Leather Pants (RECIPE!)
+			i(15745, {	-- Pattern: Runic Leather Belt (RECIPE!)
 				["timeline"] = { "removed 5.0.4" },	-- Taught by trainer
 			}),
-			i(15731, {	-- Pattern: Runic Leather Gauntlets
+			i(15731, {	-- Pattern: Runic Leather Gauntlets (RECIPE!)
 				["timeline"] = { "removed 5.0.4" },	-- Taught by trainer
 			}),
-			i(15765, {	-- Pattern: Runic Leather Pants
+			i(15765, {	-- Pattern: Runic Leather Pants (RECIPE!)
 				["timeline"] = { "removed 5.0.4" },	-- Taught by trainer
 			}),
-			i(7453),	-- Pattern: Swift Boots
-			i(8385),	-- Pattern: Turtle Scale Gloves
-			i(15742),	-- Pattern: Warbear Harness
-			i(2407),	-- Pattern: White Leather Jerkin
-			i(15757, {	-- Pattern: Wicked Leather Pants
+			i(7453),	-- Pattern: Swift Boots (RECIPE!)
+			i(8385),	-- Pattern: Turtle Scale Gloves (RECIPE!)
+			i(15742),	-- Pattern: Warbear Harness (RECIPE!)
+			i(2407),	-- Pattern: White Leather Jerkin (RECIPE!)
+			i(15757, {	-- Pattern: Wicked Leather Pants (RECIPE!)
 				["timeline"] = { "removed 5.0.4" },	-- Taught by trainer
 			}),
 		}),

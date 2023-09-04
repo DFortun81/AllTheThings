@@ -7,6 +7,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\achievement_zone_bloodmystisle_01",
 		-- #endif
+		["timeline"] = { "added 2.0.1.6180" },
 		["lvl"] = 10,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -51,8 +52,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					628,	-- Infected Fawn (PET!)
 					627,	-- Infected Squirrel (PET!)
@@ -62,8 +62,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				["groups"] = {
 					pet(465),	-- Ravager Hatchling (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, {
 				exploration(3597, "256:512:44:62"),		-- Amberweb Pass
@@ -1293,7 +1292,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 53.4, 56.6, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(22647),	-- Recipe: Crunchy Spider Surprise
+						i(22647),	-- Recipe: Crunchy Spider Surprise (RECIPE!)
 					},
 				}),
 			}),

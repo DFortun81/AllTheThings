@@ -511,7 +511,7 @@ root(ROOTS.ExpansionFeatures,
 						q(37049, {	-- Clefthoof Training: Rakkiri
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 37048,	-- Clefthoof Training: Great-Tusk
+							["sourceQuest"] = 37123,	-- The Black Claw
 						}),
 						q(37050, {	-- Clefthoof Training: Riplash
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred

@@ -4,6 +4,11 @@
 root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 	inst(257, {	-- The Botanica
 		["lore"] = "Since Kael'thas and his blood elves seized Tempest Keep from the naaru they have had quite the time to investigate and find a usage for the technology in it. The Botanica appears to be the satellite chosen especially for this purpose. Here, blood elf scientists carry out experiments on the flora in Outland, how naaru technology can be used to create and manipulate living beings, and how all this can grant the blood elves new powers. It seems, however, that the results were not quite as expected, and thus some of the experiments have gotten out of control...",
+		["zone-text-areaID"] = 3847,	-- The Botanica
+		["sins"] = {
+			"Tempest Keep: The Botanica",
+			"Festung der Stürme: Die Botanika",
+		},
 		["coord"] = { 71.74, 54.95, NETHERSTORM },	-- The Botanica, Netherstorm
 		["mapID"] = TEMPEST_KEEP_BOTANICA,
 		["lvl"] = lvlsquish(65, 65, 20),
@@ -139,10 +144,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				e(562, {	-- Warp Splinter
 					["creatureID"] = 17977,
 					["groups"] = {
-						classicAch(659, {	-- The Botanica
+						ach(659, {	-- The Botanica
 							-- #if BEFORE WRATH
 							["sourceQuest"] = 10704,	-- How to Break Into the Arcatraz
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 						i(28370),	-- Bangle of Endless Blessings
@@ -166,7 +170,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(28349),	-- Tidefury Helm (7.3.5 - Moved to Laj)
 						i(28350),	-- Warhelm of the Bold (7.3.5 - Moved to Commander Sarannis)
 						-- #endif
-						i(28342),	-- Warp Infused Drape
+						i(28342),	-- Warp-Infused Drape
 						i(28345),	-- Warp Splinter's Thorn
 						-- #if BEFORE 7.3.5
 						i(28347),	-- Warpscale Leggings (7.3.5 - Moved to Commander Sarannis)
@@ -270,7 +274,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					e(562, {	-- Warp Splinter
 						["creatureID"] = 17977,
 						["groups"] = {
-							ach(680),	-- Heroic: The Botanica
+							ach(680, {	-- Heroic: The Botanica
+								["timeline"] = { "added 3.0.1" },
+							}),
 							ach(5080, {	-- Heroic: The Botanica Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),
@@ -293,7 +299,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(28349),	-- Tidefury Helm (7.3.5 - Moved to Laj)
 							i(28350),	-- Warhelm of the Bold (7.3.5 - Moved to Commander Sarannis)
 							-- #endif
-							i(28342),	-- Warp Infused Drape
+							i(28342),	-- Warp-Infused Drape
 							i(28345),	-- Warp Splinter's Thorn
 							-- #if BEFORE 7.3.5
 							i(28347),	-- Warpscale Leggings (7.3.5 - Moved to Commander Sarannis)
@@ -307,13 +313,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					}),
 				}
 			}),
-			-- #if AFTER 9.1.5
-			d(TIMEWALKING_DUNGEON, {
-				["sym"] = {	-- link in Timewalking content
-					{"sub", "tw_instance", 257 },	-- this instance version of timewalking
-				},
-			}),
-			-- #endif
 		},
 	}),
 })));

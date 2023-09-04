@@ -34,8 +34,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					646,	-- Chicken (PET!)
 					378,	-- Rabbit (PET!)
@@ -46,8 +45,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(392),	-- Redridge Rat (PET!)
 					pet(424),	-- Roach (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["235:270:399:129"] = 97,	-- Alther's Mill
@@ -737,7 +735,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 15,
 					["groups"] = {
 						i(1082),	-- Redridge Goulash
-						i(2699),	-- Recipe: Redridge Goulash
+						i(2699),	-- Recipe: Redridge Goulash (RECIPE!)
 					},
 				}),
 				q(26570, {	-- Render's Army
@@ -817,7 +815,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(1322, {	-- Fishliver Oil
 							["timeline"] = { "removed 4.0.3" },
 						}),
-						i(3680),	-- Recipe: Murloc Fin Soup
+						i(3680),	-- Recipe: Murloc Fin Soup (RECIPE!)
 					},
 				}),
 				q(115, {	-- Shadow Magic
@@ -1333,7 +1331,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(2058, {	-- Kazon's Maul
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 						}),
 					},
 				}),
@@ -1446,7 +1444,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(20576, {	-- Pattern: Black Whelp Tunic
+						i(20576, {	-- Pattern: Black Whelp Tunic (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(5772, {	-- Pattern: Red Woolen Bag
@@ -1496,7 +1494,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(7289, {	-- Pattern: Black Whelp Cloak
+						i(7289, {	-- Pattern: Black Whelp Cloak (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -1528,8 +1526,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(793, {	-- Kara Adams <Shield Crafter>
@@ -1616,23 +1614,54 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(1213, {	-- Gnoll Kindred Bracers
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 					["cr"] = 712,	-- Redridge Thrasher
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 17.4, 62.4, REDRIDGE_MOUNTAINS },
+						{ 28.8, 81.6, REDRIDGE_MOUNTAINS },
+					},
+					-- #else
+					["coords"] = {
+						{ 17.8, 59.6, REDRIDGE_MOUNTAINS },
+						{ 33.6, 62.4, REDRIDGE_MOUNTAINS },
+						{ 30.0, 73.4, REDRIDGE_MOUNTAINS },
+					},
+					-- #endif
 				}),
 				i(1214, {	-- Gnoll Punisher
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 					["crs"] = {
 						14271,	-- Ribchaser
 						426,	-- Redridge Brute
 					},
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 17.4, 64.4, REDRIDGE_MOUNTAINS },
+						{ 31.0, 82.2, REDRIDGE_MOUNTAINS },
+						{ 39.0, 33.0, REDRIDGE_MOUNTAINS },
+						{ 24.0, 38.6, REDRIDGE_MOUNTAINS },
+					},
+					-- #else
+					["coords"] = {
+						{ 30.8, 61.4, REDRIDGE_MOUNTAINS },
+						{ 30.8, 73.8, REDRIDGE_MOUNTAINS },
+						{ 18.6, 60.0, REDRIDGE_MOUNTAINS },
+					},
+					-- #endif
 				}),
 				i(1440, {	-- Gnoll Skull Basher
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 446,	-- Redridge Basher
 				}),
 				i(1211, {	-- Gnoll War Harness
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 					["cr"] = 423,	-- Redridge Mongrel
+					["coords"] = {
+						{ 30.6, 62.6, REDRIDGE_MOUNTAINS },
+						{ 30.0, 71.6, REDRIDGE_MOUNTAINS },
+						{ 17.8, 57.8, REDRIDGE_MOUNTAINS },
+					},
 				}),
 				-- #if BEFORE 4.0.3
 				i(2296, {	-- Great Goretusk Snout
@@ -1662,7 +1691,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 544,	-- Murloc Nightcrawler
 				}),
-				i(2700, {	-- Recipe: Succulent Pork Ribs
+				i(2700, {	-- Recipe: Succulent Pork Ribs (RECIPE!)
 					["description"] = "Can drop from any mob in the zone.",
 				}),
 				i(1219, {	-- Redridge Machete
@@ -1682,8 +1711,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 545,	-- Murloc Tidecaller
 				}),
 				i(2566, {	-- Sacrificial Robes
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 397,	-- Morganth / Grand Magus Doane [CATA+]
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
+					-- #if BEFORE 4.0.3
+					["cr"] = 397,	-- Morganth
+					["coord"] = { 80.0, 49.6, REDRIDGE_MOUNTAINS },
+					-- #else
+					["cr"] = 397,	-- Grand Magus Doane (Name changed)
+					["coord"] = { 71.4, 44.8, REDRIDGE_MOUNTAINS },
+					-- #endif
 				}),
 				i(1469, {	-- Scimitar of Atun
 					["timeline"] = { "removed 4.0.3" },

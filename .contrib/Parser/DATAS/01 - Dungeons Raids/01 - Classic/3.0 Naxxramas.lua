@@ -1,6 +1,21 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+THE_FOUR_HORSEMEN = createHeader({
+	readable = "The Four Horsemen",
+	icon = "Interface\\Icons\\Ability_mount_undeadhorse",
+	text = {
+		en = "The Four Horsemen",
+		es = "Los Cuatro Jinetes",
+		de = "Die Vier Reiter",
+		fr = "Les quatre cavaliers",
+		it = "I Cavalieri dell'Apocalisse",
+		pt = "Os Quatro Cavaleiros",
+		ru = "Четыре Всадника",
+		ko = "4인 기사단",
+		cn = "四骑士",
+	},
+});
 root(ROOTS.Instances, tier(CLASSIC_TIER,
 -- #if BEFORE WRATH
 applyclassicphase(PHASE_SIX,
@@ -11,6 +26,7 @@ applyclassicphase(PHASE_SIX,
 		["lore"] = "An ancient Nerubian ziggurat, Naxxramas was torn free from the ground by agents of the Lich King to serve as Kel'Thuzad's base of operations as he spreads the plague throughout Lordaeron.\n\nDue to Kel'Thuzad fighting a war against the Scarlet Crusade, the Argent Dawn, the Forsaken and the humans of the Alliance, as well as constant incursions of adventurers from every race and nation into the Scourge-controlled Plaguelands on a daily basis, his forces have been severely taxed to maintain the security of his necropolis. But now that the gates of Naxxramas are open, Kel'Thuzad's new forces are rapidly sweeping away all opposition to the Scourge.",
 		-- #endif
 		-- #if BEFORE WRATH
+		["zone-text-areaID"] = 3456,	-- Naxxramas
 		["sourceQuest"] = 9121,	-- The Dread Citadel - Naxxramas [Honored]
 		["timeline"] = { "removed 3.0.2" },
 		-- #endif
@@ -33,7 +49,7 @@ applyclassicphase(PHASE_SIX,
 				["lvl"] = 60,
 				["groups"] = {
 			-- #endif
-					n(LEGENDARY_QUESTLINE, {
+					n(QUALITY_LEGENDARY, {
 						["title"] = "Atiesh, Greatstaff of the Guardian",
 						["icon"] = "Interface\\Icons\\INV_Staff_Medivh",
 						-- #if BEFORE WRATH
@@ -43,18 +59,17 @@ applyclassicphase(PHASE_SIX,
 						["maps"] = { CAVERNS_OF_TIME },
 						["isRaid"] = true,
 						["groups"] = {
-							classicAch(425, {	-- Atiesh, Greatstaff of the Guardian
+							ach(425, {	-- Atiesh, Greatstaff of the Guardian
 								["providers"] = {
 									{ "i", 22631 },	-- Atiesh, Greatstaff of the Guardian (Priest)
 									{ "i", 22589 },	-- Atiesh, Greatstaff of the Guardian (Mage)
 									{ "i", 22630 },	-- Atiesh, Greatstaff of the Guardian (Warlock)
 									{ "i", 22632 },	-- Atiesh, Greatstaff of the Guardian (Druid)
 								},
-								["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
 								-- #if BEFORE WRATH
 								["description"] = "Wielder of Atiesh, Greatstaff of the Guardian.",
-								["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 								-- #endif
+								["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
 							}),
 							q(9251, {	-- Atiesh, the Befouled Greatstaff
 								["qg"] = 15192,	-- Anachronos
@@ -1819,7 +1834,7 @@ applyclassicphase(PHASE_SIX,
 							},
 						}),
 					}),
-					n(-368, {	-- The Arachnid Quarter
+					n(NAXX_ARACHNID_QUARTER, {
 						["icon"] = "Interface\\Icons\\inv_trinket_naxxramas04",
 						["groups"] = {
 							n(15956, {	-- Anub'Rekhan
@@ -1848,7 +1863,7 @@ applyclassicphase(PHASE_SIX,
 							}),
 						},
 					}),
-					n(-370, {	-- The Plague Quarter
+					n(NAXX_PLAGUE_QUARTER, {
 						["icon"] = "Interface\\Icons\\Spell_Shadow_PlagueCloud",
 						["groups"] = {
 							n(15954, {	-- Noth the Plaguebringer
@@ -1879,7 +1894,7 @@ applyclassicphase(PHASE_SIX,
 							}),
 						},
 					}),
-					n(-369, {	-- The Military Quarter
+					n(NAXX_MILITARY_QUARTER, {
 						["icon"] = "Interface\\Icons\\Spell_Shadow_UnholyStrength",
 						["groups"] = {
 							n(16365, {	-- Master Craftsman Omarion <Brotherhood of the Light>
@@ -1918,30 +1933,30 @@ applyclassicphase(PHASE_SIX,
 										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
 										["requireSkill"] = BLACKSMITHING,
 									}),
-									{
-										["itemID"] = 22698,	-- Pattern: Icy Scale Bracers
+									r(28224, {	-- Icy Scale Bracers (RECIPE!)
 										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
-									},
-									{
-										["itemID"] = 22696,	-- Pattern: Icy Scale Breastplate
-										["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
-									},
-									{
-										["itemID"] = 22697,	-- Pattern: Icy Scale Gauntlets
+										["requireSkill"] = LEATHERWORKING,
+									}),
+									r(28222, {	-- Icy Scale Breastplate (RECIPE!)
+										["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Revered.
+										["requireSkill"] = LEATHERWORKING,
+									}),
+									r(28223, {	-- Icy Scale Gauntlets (RECIPE!)
 										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
-									},
-									{
-										["itemID"] = 22695,	-- Pattern: Polar Bracers
+										["requireSkill"] = LEATHERWORKING,
+									}),
+									r(28221, {	-- Polar Bracers (RECIPE!)
 										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
-									},
-									{
-										["itemID"] = 22694,	-- Pattern: Polar Gloves
+										["requireSkill"] = LEATHERWORKING,
+									}),
+									r(28220, {	-- Polar Gloves (RECIPE!)
 										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
-									},
-									{
-										["itemID"] = 22692,	-- Pattern: Polar Tunic
-										["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
-									},
+										["requireSkill"] = LEATHERWORKING,
+									}),
+									r(28219, {	-- Polar Tunic (RECIPE!)
+										["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Revered.
+										["requireSkill"] = LEATHERWORKING,
+									}),
 								},
 							}),
 							n(16061, {	-- Instructor Razuvious
@@ -1959,7 +1974,7 @@ applyclassicphase(PHASE_SIX,
 								i(23021),	-- The Soul Harvester's Bindings
 								i(23073),	-- Boots of Displacement
 							}),
-							n(-423, {	-- The Four Horsemen
+							n(THE_FOUR_HORSEMEN, {
 								["qgs"] = {
 									16062,	-- Highlord Mograine <The Ashbringer>
 									16065,	-- Lady Blaumeux
@@ -1971,9 +1986,9 @@ applyclassicphase(PHASE_SIX,
 									i(22349),	-- Desecrated Breastplate
 									i(22351),	-- Desecrated Robe
 									i(22350),	-- Desecrated Tunic
-									un(NEVER_IMPLEMENTED, {
-										["itemID"] = 13262,	-- Ashbringer
+									i(13262, {	-- Ashbringer
 										["lore"] = "This is here so that you can quickly compare the Corrupted Ashbringer with the original Ashbringer model. It was never available to players.\n\nThis weapon was eventually turned into an Artifact weapon with an updated model for the Legion expansion for Retribution Paladins.",
+										["timeline"] = { "created 1.11.1.7318" },
 										["collectible"] = false,
 									}),
 									i(22691),	-- Corrupted Ashbringer
@@ -1986,7 +2001,7 @@ applyclassicphase(PHASE_SIX,
 							}),
 						},
 					}),
-					n(-367, {	-- The Construct Quarter
+					n(NAXX_CONSTRUCT_QUARTER, {
 						["icon"] = "Interface\\Icons\\Spell_Shadow_AbominationExplosion",
 						["groups"] = {
 							n(16028, {	-- Patchwerk
@@ -2028,7 +2043,7 @@ applyclassicphase(PHASE_SIX,
 							}),
 						},
 					}),
-					n(-371, {	-- The Upper Necropolis
+					n(NAXX_UPPER_NECROPOLIS, {
 						["icon"] = "Interface\\Icons\\inv_misc_head_dragon_blue",
 						["groups"] = {
 							n(15989, {	-- Sapphiron

@@ -17,24 +17,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER WRATH
 				["icon"] = "Interface\\Icons\\Achievement_Character_Tauren_Male",
 				-- #else
-				["icon"] = asset("Achievement_Character_Tauren_Male"),
+				["icon"] = [[~_.asset("Achievement_Character_Tauren_Male")]],
 				-- #endif
 				["groups"] = {
-					-- #if AFTER MOP
-					petbattle(filter(BATTLE_PETS, {
+					battlepets({
 						["sym"] = {{"select","speciesID",
-							378,	-- Rabbit
+							385,	-- Mouse (PET!)
+							386,	-- Prairie Dog (PET!)
+							378,	-- Rabbit (PET!)
 						}},
-						["groups"] = {
-							p(385, {	-- Mouse
-								["crs"] = { 61143 },	-- Mouse
-							}),
-							p(386, {	-- Prairie Dog
-								["crs"] = { 61141 },	-- Prairie Dog
-							}),
-						},
-					})),
-					-- #endif
+					}),
 					n(QUESTS, {
 						q(752, {	-- A Humble Task (1/2)
 							["qg"] = 2981,	-- Chief Hawkwind
@@ -567,8 +559,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 			}),
-			-- #if AFTER MOP
-			petbattle(filter(BATTLE_PETS, {
+			battlepets({
 				["sym"] = {{"select","speciesID",
 					385,	-- Mouse (PET!)
 					386,	-- Prarie Dog (PET!)
@@ -577,8 +568,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["groups"] = {
 					pet(477),	-- Gazelle Fawn (PET!)
 				},
-			})),
-			-- #endif
+			}),
 			-- #if ANYCLASSIC
 			n(EXPLORATION, explorationBatch({
 				["128:120:473:260"] = 224,	-- Ravaged Caravan
@@ -713,6 +703,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								2989,	-- Bael'dun Digger
 							},
 						}),
+						i(131213, {	-- Chain Kodo-Rider's Pants
+							["timeline"] = { "added 7.0.3", "removed 7.0.3" },
+						}),
 						i(4969, {	-- Fortified Bindings
 							["timeline"] = { "removed 4.0.3" },
 						}),
@@ -781,7 +774,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
-					["timeline"] = { "added 5.2.0.16446" },
+					["timeline"] = { "added 5.2.0.16446", REMOVED_10_1_5 },
 					["races"] = { TAUREN },
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
@@ -1641,6 +1634,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
+			-- #if BEFORE TBC
+			n(RIDING_TRAINER, {
+				n(3690, {	-- Kar Stormsinger <Kodo Riding Instructor>
+					["coord"] = { 47.6, 58.4, MULGORE },
+					["races"] = HORDE_ONLY,
+
+					-- Available to Tauren without faction requirements.
+					["minReputation"] = { 81, EXALTED },	-- Thunder Bluff, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. TAUREN .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
+					["groups"] = {
+						recipe(18995, {	-- Kodo Riding
+							["cost"] = 200000,
+							["lvl"] = 40,
+						}),
+					},
+				}),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(3685, {	-- Harb Clawhoof <Kodo Mounts>
 					-- #if AFTER CATA
@@ -1674,8 +1690,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6325),	-- Recipe: Brilliant Smallfish
-						i(6328),	-- Recipe: Longjaw Mud Snapper
+						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
+						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
 					},
 				}),
 				n(3081, {	-- Wunna Darkmane <Trade Goods>
@@ -1686,7 +1702,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(5484),	-- Recipe: Roasted Kodo Meat
+						i(5484),	-- Recipe: Roasted Kodo Meat (RECIPE!)
 					},
 				}),
 			}),

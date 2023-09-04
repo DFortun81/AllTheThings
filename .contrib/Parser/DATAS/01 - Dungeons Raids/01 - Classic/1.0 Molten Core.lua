@@ -6,9 +6,12 @@ local REMOVED_WITH_WRATH = { "added 1.0.1", "removed 3.0.8" };
 root(ROOTS.Instances, tier(CLASSIC_TIER, {
 	inst(741, {	-- Molten Core
 		["lore"] = "The Molten Core was created during the War of the Three Hammers more than 300 years ago. Near the end of the war, Thaurissan, the leader of the Dark Iron Dwarves, sought to summon a powerful fire elemental to defeat the combined forces of the Bronzebeard and Wildhammer clans. He was more successful than he could have imagined, as he released Ragnaros the Firelord from millennia of captivity under the Redridge Mountains.\n\nRagnaros destroyed the city of Thaurissan and created the volcano of Blackrock Mountain. He dwells there to this day with his elemental servants and the enslaved remnants of the Dark Iron dwarf clan. The burning lake where Ragnaros lies sleeping acts as a rift connecting to the plane of fire, allowing the malicious elementals to pass through.",
+		-- #if BEFORE WRATH
+		["zone-text-areaID"] = 2717,	-- Molten Core
+		-- #endif
 		["mapID"] = MOLTEN_CORE,
 		["coord"] = { 54.18, 83.25, BLACKROCK_MOUNTAIN },
-		-- #if BEFORE WRATH
+		-- #if BEFORE 5.4.0
 		["sourceQuest"] = 7848,	-- Attunement to the Core
 		-- #endif
 		["sharedLockout"] = 1,
@@ -16,20 +19,16 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		["lvl"] = lvlsquish(50, 50, 25),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				classicAch(955, {	-- Hydraxian Waterlords
+				achWithRep(955, 749, {	-- Hydraxian Waterlords
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Hydraxian Waterlords to Exalted.",
-					-- #endif
-					-- #if ANYCLASSIC
-					["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-					["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 749); end]],
 					-- #endif
 					["maps"] = { AZSHARA },
 				}),
 			}),
 			n(FACTIONS, {
 				faction(749, {	-- Hydraxian Waterlords
+					["icon"] = "Interface\\Icons\\Spell_frost_summonwaterelemental",
 					["qg"] = 13278,	-- Duke Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
 				}),
@@ -62,7 +61,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				q(7848, {	-- Attunement to the Core
 					["qg"] = 14387,	-- Lothos Riftwaker
 					["altQuests"] = { 7487 },	-- Attunement to the Core [Original??]
-					-- #if BEFORE WRATH
+					-- #if BEFORE 5.4.0
 					["description"] = "Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",
 					-- #else
 					["description"] = "This quest is no longer required to enter Molten Core - you can now speak to Lothos and have him transport you inside without doing the attunement.",
@@ -140,11 +139,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						objective(4, {	-- 0/1 Hand of Sulfuron
 							["provider"] = { "i", 17330 },	-- Hand of Sulfuron
 						}),
-						classicAch(2496, {	-- The Fifth Element
+						ach(2496, {	-- The Fifth Element
 							-- #if BEFORE WRATH
 							["sourceQuest"] = 6824,	-- Hands of the Enemy
 							["description"] = "Obtain an Aqual Quintessence.",
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 							-- #endif
 						}),
 					},
@@ -181,13 +179,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["coord"] = { 21.7, 8.6, SILITHUS },
 					["lvl"] = 60,
 					["groups"] = {
-						classicAch(428, {	-- Thunderfury, Blessed Blade of the Windseeker
+						ach(428, {	-- Thunderfury, Blessed Blade of the Windseeker
 							["provider"] = { "i", 19019 },	-- Thunderfury, Blessed Blade of the Windseeker
-							["classes"] = { DEATHKNIGHT, DEMONHUNTER, HUNTER, MAGE, MONK, PALADIN, ROGUE, WARLOCK, WARRIOR },
 							-- #if BEFORE WRATH
 							["description"] = "Wielder of Thunderfury, Blessed Blade of the Windseeker.",
-							["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 							-- #endif
+							["classes"] = { DEATHKNIGHT, DEMONHUNTER, HUNTER, MAGE, MONK, PALADIN, ROGUE, WARLOCK, WARRIOR },
 						}),
 						i(19019),	-- Thunderfury, Blessed Blade of the Windseeker
 					},
@@ -348,7 +345,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						11988,	-- Golemagg the Incinerator
 					},
 				}),
-				i(18252, {	-- Pattern: Core Armor Kit
+				i(18252, {	-- Pattern: Core Armor Kit (RECIPE!)
 					["crs"] = {
 						12118,	-- Lucifron
 						11982,	-- Magmadar
@@ -392,7 +389,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						11988,	-- Golemagg the Incinerator
 					},
 				}),
-				i(18257, {	-- Recipe: Major Rejuvenation Potion
+				i(18257, {	-- Recipe: Major Rejuvenation Potion (RECIPE!)
 					["crs"] = {
 						12118,	-- Lucifron
 						11982,	-- Magmadar
@@ -567,11 +564,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(19144),	-- Sabatons of the Flamewalker
 					i(18821),	-- Quick Strike Ring
 					i(18820),	-- Talisman of Ephemeral Power
-					-- #if ANYCLASSIC
-					un(NEVER_IMPLEMENTED, i(17782)),	-- Talisman of Binding Shard
-					-- #else
-					un(REMOVED_FROM_GAME, i(17782)),	-- Talisman of Binding Shard
-					-- #endif
 				},
 			}),
 			e(1523, {	-- Shazzrah
@@ -619,6 +611,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(18821),	-- Quick Strike Ring
 					i(17110),	-- Seal of the Archmagus
 					i(18820),	-- Talisman of Ephemeral Power
+					i(17782, {	-- Talisman of Binding Shard
+						["lore"] = "According to Travis Day, this item was used by Blizzard in a test version of the Thunderfury quest line. The quest was removed and was not publicly released, but Blizzard initially forgot to remove the item from the loot table. It was only ever looted by Noktyn-Archimonde US of the guild Nurfed on March 23, 2005",
+						["timeline"] = { "added 1.11.1.5462", "removed 1.11.2" },
+					}),
 				},
 			}),
 			e(1525, {	-- Sulfuron Harbinger
@@ -706,25 +702,23 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			e(1528, {	-- Ragnaros
 				["creatureID"] = 11502,
 				["groups"] = {
-					classicAch(686, {	-- Molten Core
+					ach(686, {	-- Molten Core
 						-- #if BEFORE WRATH
 						["sourceQuests"] = {
 							7787,	-- Rise, Thunderfury!
 							8620,	-- The Only Prescription
 						},
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]],
 						-- #endif
 					}),
 					ach(5056, {	-- Molten Core Guild Run
 						["timeline"] = { "added 4.0.3" },
 					}),
-					classicAch(429, {	-- Sulfuras, Hand of Ragnaros
+					ach(429, {	-- Sulfuras, Hand of Ragnaros
 						["provider"] = { "i", 17182 },	-- Sulfuras, Hand of Ragnaros
-						["classes"] = { DEATHKNIGHT, DRUID, EVOKER, PALADIN, SHAMAN, WARRIOR },
 						-- #if BEFORE WRATH
 						["description"] = "Wielder of Sulfuras, Hand of Ragnaros.",
-						["OnUpdate"] = [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]],
 						-- #endif
+						["classes"] = { DEATHKNIGHT, DRUID, EVOKER, PALADIN, SHAMAN, WARRIOR },
 					}),
 					i(17182, {	-- Sulfuras, Hand of Ragnaros
 						["classes"] = { DEATHKNIGHT, DRUID, EVOKER, PALADIN, SHAMAN, WARRIOR },
@@ -742,9 +736,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(138018, {	-- Clothes Chest Pattern: Molten Core
 						["timeline"] = { "added 7.0.3.22248" },
 					}),
-					i(138833, {	-- Illusion: Flametongue
+					i(138833, {	-- Illusion: Flametongue (ILLUSION!)
 						["classes"] = { SHAMAN },
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 					i(17076),	-- Bonereaver's Edge
 					i(17104),	-- Spinal Reaper
@@ -768,11 +762,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(19138),	-- Band of Sulfuras
 					i(18815),	-- Essence of the Pure Flame
 					i(17082),	-- Shard of the Flame
-					-- #if ANYCLASSIC
-					un(NEVER_IMPLEMENTED, i(17982)),	-- Ragnaros Core
-					-- #else
-					un(REMOVED_FROM_GAME, i(17982)),	-- Ragnaros Core
-					-- #endif
+					i(17982, {	-- Ragnaros Core
+						["timeline"] = { "added 1.1.0", "removed 1.4.0" },
+					}),
 				},
 			}),
 		},

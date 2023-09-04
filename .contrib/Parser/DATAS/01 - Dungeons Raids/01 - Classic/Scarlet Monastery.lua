@@ -1,10 +1,57 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+SCARLET_MONASTERY_GRAVEYARD = createHeader({
+	readable = "Graveyard",
+	icon = "Interface\\Icons\\Inv_misc_bone_humanskull_01",
+	text = {
+		en = "Graveyard",
+		de = "Friedhof",
+		fr = "Cimetière",
+		ru = "Кладбище",
+		cn = "墓地",
+	},
+});
+SCARLET_MONASTERY_LIBRARY = createHeader({
+	readable = "Library",
+	icon = "Interface\\Icons\\INV_Misc_Book_13",
+	text = {
+		en = "Library",
+		de = "Bibliothek",
+		fr = "Librairie",
+		ru = "Библиотека",
+		cn = "图书馆",
+	},
+});
+SCARLET_MONASTERY_ARMORY = createHeader({
+	readable = "Armory",
+	icon = "Interface\\Icons\\inv_helmet_25",
+	text = {
+		en = "Armory",
+		de = "Waffenkammer",
+		fr = "Armurerie",
+		ru = "Оружейная",
+		cn = "武器库",
+	},
+});
+SCARLET_MONASTERY_CATHEDRAL = createHeader({
+	readable = "Cathedral",
+	icon = "Interface\\Icons\\inv_helmet_12",
+	text = {
+		en = "Cathedral",
+		de = "Kathedrale",
+		fr = "Cathédrale",
+		ru = "Собор",
+		cn = "修道院",
+	},
+});
 root(ROOTS.Instances, tier(CLASSIC_TIER, {
 	inst(316, {	-- Scarlet Monastery
 		-- #if BEFORE MOP
 		["lore"] = "The Monastery was once a proud bastion of Lordaeron's priesthood - a center for learning and enlightenment. With the rise of the undead Scourge during the Third War, the peaceful Monastery was converted into a stronghold of the fanatical Scarlet Crusade. The Crusaders are intolerant of all non-human races, regardless of alliance or affiliation. They believe that any and all outsiders are potential carriers of the undead plague - and must be destroyed. Reports indicate that adventurers who enter the monastery are forced to contend with Scarlet Commander Mograine - who commands a large garrison of fanatically devoted warriors. However, the monastery's true master is High Inquisitor Whitemane - a fearsome priestess who possesses the ability to resurrect fallen warriors to do battle in her name.",
+		-- #endif
+		-- #if BEFORE CATA
+		["zone-text-areaID"] = 796,	-- Scarlet Monastery, not sure when a mapID becomes available. Check Cata PTR?
 		-- #endif
 		-- #if AFTER CATA
 		["coord"] = { 69.2, 24.9, SCARLET_MONASTERY_ENTRANCE },
@@ -216,7 +263,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(7727),	-- Watchman Pauldrons
 					i(7757),	-- Windweaver Staff
 				}),
-				n(-85, {	-- Graveyard
+				n(SCARLET_MONASTERY_GRAVEYARD, {
 					["timeline"] = { "removed 5.0.4" },
 					["groups"] = {
 						n(QUESTS, {
@@ -357,15 +404,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 									}),
 									i(7688, {	-- Ironspine's Ribcage
 										["timeline"] = { "removed 5.0.4" },
-										-- #if ANYCLASSIC
-										["OnUpdate"] = [[function(t)
-											if _.Level >= 40 and _.ClassIndex ~= ]] .. HUNTER .. [[ and _.ClassIndex ~= ]] .. SHAMAN .. [[ then
-												t.f = ]] .. PLATE .. [[;
-											else
-												t.f = ]] .. MAIL .. [[;
-											end
-										end]],
-										-- #endif
 									}),
 									i(7686, {	-- Ironspine's Eye
 										["timeline"] = { "removed 5.0.4" },
@@ -397,7 +435,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
-				n(-86, {	-- Library
+				n(SCARLET_MONASTERY_LIBRARY, {
 					["timeline"] = { "removed 5.0.4" },
 					["lvl"] = 28,
 					["groups"] = {
@@ -590,7 +628,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
-				n(-87, {	-- Armory
+				n(SCARLET_MONASTERY_ARMORY, {
 					["timeline"] = { "removed 5.0.4" },
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 7146, 1 } },	-- The Scarlet Key
@@ -698,27 +736,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 								}),
 								i(7719, {	-- Raging Berserker's Helm
 									["timeline"] = { "removed 5.0.4" },
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[function(t)
-										if _.Level >= 40 and _.ClassIndex ~= ]] .. HUNTER .. [[ and _.ClassIndex ~= ]] .. SHAMAN .. [[ then
-											t.f = ]] .. PLATE .. [[;
-										else
-											t.f = ]] .. MAIL .. [[;
-										end
-									end]],
-									-- #endif
 								}),
 								i(7718, {	-- Herod's Shoulder
 									["timeline"] = { "removed 5.0.4" },
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[function(t)
-										if _.Level >= 40 and _.ClassIndex ~= ]] .. HUNTER .. [[ and _.ClassIndex ~= ]] .. SHAMAN .. [[ then
-											t.f = ]] .. PLATE .. [[;
-										else
-											t.f = ]] .. MAIL .. [[;
-										end
-									end]],
-									-- #endif
 								}),
 								i(10330, {	-- Scarlet Leggings
 									["timeline"] = { "removed 5.0.4" },
@@ -735,7 +755,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
-				n(-88, {	-- Cathedral
+				n(SCARLET_MONASTERY_CATHEDRAL, {
 					["timeline"] = { "removed 5.0.4" },
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 7146, 1 } },	-- The Scarlet Key

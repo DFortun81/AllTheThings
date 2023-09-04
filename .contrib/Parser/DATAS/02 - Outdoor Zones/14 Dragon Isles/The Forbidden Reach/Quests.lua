@@ -177,10 +177,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["isDaily"] = true,
 				["g"] = {
 					i(204561),	-- Primalist Cache Key
+					i(204852),	-- Primalist Scriptures
 				},
 			}),
 			-- Iskaara
-			q(74909, {	-- New Catches [Confirmed]
+			q(74909, {	-- New Catches
 				["sourceQuests"] = { 74381 },	-- Hidden Legacies
 				["coord"] = { 34.2, 59.9, THE_FORBIDDEN_REACH },
 			}),
@@ -191,7 +192,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["coord"] = { 34.2, 60.0, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
 			}),
-			q(74391, {	-- Harpooner's Challenge [Confirmed]
+			q(74391, {	-- Harpooner's Challenge
 				["sourceQuests"] = { 74909 },	-- New Catches
 				["sourceQuestNumRequired"] = 0, -- TODO: This relies on the relevant envoy being unlocked, but we need to map which HQT is which envoy to match them properly
 				["provider"] = { "n", 200562 },	-- Turik
@@ -243,10 +244,30 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["coord"] = { 34, 59.8, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
 			}),
-			n(BONUS_OBJECTIVES, {
-				q(74377, {	-- Capsize a Crab
-					["coord"] = { 37.4, 81.7, THE_FORBIDDEN_REACH },
-				}),
+			-- Augmentation Evoker questline
+			q(72513, {	-- Our Destiny
+				["timeline"] = { ADDED_10_1_5 },
+				["description"] = "You get this anywhere in the Dragon Isles when you specialize in Augmentation for the first time.",
+			}),
+			q(72514, {	-- The High Creche
+				["sourceQuests"] = { 72513 },	-- Our Destiny
+				["provider"] = { "n", 199135 },	-- Scalecommander Emberthal
+				["coord"] = { 58.6, 68.5, THE_FORBIDDEN_REACH },
+				["timeline"] = { ADDED_10_1_5 },
+			}),
+			q(72515, {	-- Augmenting a Dragon
+				["sourceQuests"] = { 72514 },	-- The High Creche
+				["provider"] = { "n", 199141 },	-- Scalecommander Emberthal
+				["coord"] = { 58.7, 70.4, THE_FORBIDDEN_REACH },
+				["timeline"] = { ADDED_10_1_5 },
+				["g"] = {
+					i(205162),	-- Nelthara (PET!)
+				},
+			}),
+		}),
+		n(BONUS_OBJECTIVES, {
+			q(74377, {	-- Capsize a Crab
+				["coord"] = { 37.4, 81.7, THE_FORBIDDEN_REACH },
 			}),
 		}),
 		n(QUESTS, sharedData({ ["isWeekly"] = true, ["sourceQuests"] = { 74381 } }, {
@@ -318,6 +339,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			q(73194, {	-- Up Close and Personal
 				["provider"] = { "n", 199199 },	-- Scalecommander Cindrethresh
 				["coord"] = { 35.3, 59.5, THE_FORBIDDEN_REACH },
+				["g"] = {
+					i(202642),	-- Proto-Killing Spear
+				},
 			}),
 			q(75026, {	-- Up to the Highest Height!
 				["provider"] = { "n", 200558 },	-- Tukkaraq
@@ -328,9 +352,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 })));
 
 root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
-	q(74767),	-- First Envoy
-	q(74766),	-- Second Envoy
-	q(74765),	-- Third Envoy
-	q(74764),	-- Fourth Envoy
-	q(75240),	-- Unlocking Researcher Imareth as a vendor
-})))
+	q(74767),	-- Valdrakken Accord Envoy Tasks Unlock (spellID 402876)
+	q(74766),	-- Maruuk Centaur Envoy Tasks Unlock (spellID 402875)
+	q(74765),	-- Iskaara Tuskarr Envoy Tasks Unlock (spellID 402874)
+	q(74764),	-- Dragonscale Expedition Envoy Tasks Unlock (spellID 402873)
+	q(75240),	-- Unlocking Researcher Imareth as a vendor (spellID 406060)
+})));

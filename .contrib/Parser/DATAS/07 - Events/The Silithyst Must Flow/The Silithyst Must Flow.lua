@@ -1,13 +1,23 @@
 --------------------------------------------
 --       E V E N T S    M O D U L E       --
 --------------------------------------------
+THE_SILITHYST_MUST_FLOW = createHeader({
+	readable = "The Silithyst Must Flow",
+	icon = "Interface\\Icons\\spell_holiday_tow_spicecloud",
+	text = {
+		en = "The Silithyst Must Flow",
+		cn = "希利苏斯流沙",
+	},
+	description = {
+		en = "The Silithyst Must Flow is the name of the world PvP event in Silithus, where players of both factions must try and secure as much Silithyst as possible. Silithyst is a red crystalline dust that reaches the surface through geysers exclusive to the Silithus desert. Both the Alliance and the Horde have taken an interest in this new substance, and researchers on both sides have discovered unique and valuable properties in the dust. The Horde and Alliance camps in the region have both been outfitted with turn-in stations where players can unload the Silithyst they collect.",
+	},
+});
 -- Note: This is up here to prevent the unobtainable flag from getting put on the Major Healing and Mana Potions (for now)
 local MAJOR_HEALING_POTION = i(13446);	-- Major Healing Potion
 local MAJOR_MANA_POTION = i(13444);	-- Major Mana Potion
 
-root(ROOTS.WorldEvents, n(-541,	-- The Silithyst Must Flow
+root(ROOTS.WorldEvents, n(THE_SILITHYST_MUST_FLOW,
 	applyclassicphase(PHASE_SIX_SILITHYST, {
-		["description"] = "The Silithyst Must Flow is the name of the world PvP event in Silithus, where players of both factions must try and secure as much Silithyst as possible. Silithyst is a red crystalline dust that reaches the surface through geysers exclusive to the Silithus desert. Both the Alliance and the Horde have taken an interest in this new substance, and researchers on both sides have discovered unique and valuable properties in the dust. The Horde and Alliance camps in the region have both been outfitted with turn-in stations where players can unload the Silithyst they collect. ",
 		["maps"] = { SILITHUS },
 		["lvl"] = 60,
 		["groups"] = {

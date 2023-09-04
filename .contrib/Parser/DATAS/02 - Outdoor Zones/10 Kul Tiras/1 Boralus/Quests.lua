@@ -32,7 +32,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 						i(167100, {	-- Alliance Champion's Cache
 							["modID"] = 53,	-- ilvl 415
 							["sym"] = {
-								{ "select", "headerID", -10057 },	-- War Effort
+								{ "select", "headerID", WARFRONT },
 								{ "pop" },	-- Discard the War Effort Header and acquire the children.
 								{ "where", "mapID", ARATHI_HIGHLANDS },
 								{ "pop" },	-- Discard the Map Header and acquire the children.
@@ -562,7 +562,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(58674, {	-- A Gathering of Champions
-				["sourceQuest"] = 58631,	-- Into Dreams
+				["sourceQuests"] = {
+					58631,	-- Into Dreams
+					58632,	-- Ny'alotha, the Waking City: The Corruptor's End
+				},
 				["provider"] = { "n", 135614 },	-- Master Mathias Shaw
 				["coord"] = { 70.4, 27.0, BORALUS },
 				["races"] = ALLIANCE_ONLY,
@@ -750,23 +753,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(52449, {	-- The Mysterious Island
-				["sourceQuests"] = {
-					52445,	-- Tol Dagor: The Fourth Key
-				--	also requires entirety of "A Sound Plan"
-					50531,	-- Under Their Noses
-					49404,	-- Fairwind's "Friends"
-					49740,	-- Cease Fire!
-					49736,	-- For Kul Tiras!
-					50972,	-- Proudmoore's Parley
-					49302,	-- The Deadliest Catch
-					48089,	-- Mountain Sounds
-					48088,	-- No Party Like a Trogg Party
-					48421,	-- Blood in the Tides
-					49226,	-- Silencing the Sisters
-				--	49230,	-- Local Flavor (unsure if these 3 are required for "Castaways and Cutouts" criteria
-				--	48505,	-- Lovesick and Lost
-				--	49178,	-- My Favorite Things
-				},
+				["sourceQuests"] = { 52445 },	-- Tol Dagor: The Fourth Key
 				["provider"] = { "n", 140732 },	-- Flynn Fairwind
 				["coord"] = { 68.0, 22.6, BORALUS },
 				["races"] = ALLIANCE_ONLY,
@@ -805,8 +792,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(56031, {	-- The Wolf's Offensive
-				-- TODO: Marking this as removed in an attempt to information gather. Currently we have no knowledge of how to pop this or the Horde equivalent- if we receive error reports, ASK FOR MORE INFORMATION!
-				["u"] = REMOVED_FROM_GAME,
+				["description"] = "If not encountered the regular way, this can be obtained via party sync. You need to sync with a character which has just started BFA and gotten the portals unlocked in Boralus, but hasn't proceeded further. You then need to pick up the quest A Dying World and run it again. Continue up to and finish the quest Infusing the Heart. Then this quest should pop up for you.",
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
 			}),
@@ -846,6 +832,16 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["provider"] = { "n", 143851 },	-- Kelsey Steelspark
 				["coord"] = { 67.8, 26.2, BORALUS },
 				["races"] = ALLIANCE_ONLY,
+			}),
+
+			-- Not sorted
+			q(75877, {	-- Time to Fly
+				["description"] = "Reaching Level 30 will make this quest pop up.",
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_10_1_5 },
+				["g"] = {
+					i(206567),	-- Harbor Gryphon (MOUNT!)
+				},
 			}),
 		}),
 	}),

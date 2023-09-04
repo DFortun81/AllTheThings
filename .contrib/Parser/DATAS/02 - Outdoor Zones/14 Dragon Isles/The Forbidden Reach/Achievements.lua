@@ -137,14 +137,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					17398,	-- Dragon Glyphs: Winglord's Perch
 				}},
 			}),
-			ach(17534, {	-- Explore the Forbidden Reach
-				crit(1),	-- The War Creche
-				crit(2),	-- Stormsunder Crater
-				crit(3),	-- Morqut Village
-				crit(4),	-- Froststone Vault
-				crit(5),	-- Dragonskull Island
-				crit(6),	-- Caldera of the Menders
-			}),
+			explorationAch(17534),	-- Explore the Forbidden Reach
 			ach(17529),	-- Forbidden Spoils
 			petbattle(ach(17541, {	-- Global Swarming
 				crit(1, {	-- Cutting Wind

@@ -430,7 +430,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 	}),
 })));
 
-root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+root(ROOTS.NeverImplemented, {
 	tier(SL_TIER, {
 		n(CONDUITS, {
 			i(179000),	-- [PH] Potency Conduit - Death Knight - Blood - Potency Trait 1
@@ -676,4 +676,4 @@ root(ROOTS.NeverImplemented, bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(180843),	-- Template Conduit
 		}),
 	}),
-}));
+});

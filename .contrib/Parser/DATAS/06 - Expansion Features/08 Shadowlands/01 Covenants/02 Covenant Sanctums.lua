@@ -1,8 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
+root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	n(COVENANT_SANCTUMS, {
 		["description"] = "These rewards are shared across Covenants.",
 		["g"] = {
@@ -47,16 +46,16 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 					["sourceQuestNumRequired"] = 1,
 				}),
 				ach(15647, sharedDataSelf({ ["timeline"] = { ADDED_9_2_5 } }, {	-- Dead Men Tell Some Tales
-					crit(1, {	--  Kyrian Campaign
+					crit(48005, {	--  Kyrian Campaign
 						["sourceQuests"] = { 62557 },	-- Our Realm Reclaimed
 					}),
-					crit(2, {	--  Necrolords Campaign
+					crit(48146, {	--  Necrolords Campaign
 						["sourceQuests"] = { 62406 },	-- Staff of the Primus
 					}),
-					crit(3, {	--  Night Fae Campaign
+					crit(48530, {	--  Night Fae Campaign
 						["sourceQuests"] = { 60108 },	-- Drust and Ashes
 					}),
-					crit(4, {	--  Venthyr Campaign
+					crit(46963, {	--  Venthyr Campaign
 						["sourceQuests"] = { 58407 },	-- The Medallion of Dominion
 					}),
 				})),
@@ -94,7 +93,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 				ach(14836),		-- Unwavering Bond
 				ach(14637),		-- Your Covenant's Flavor
 			}),
-			n(-914, {	-- Adventures
+			n(ADVENTURES, {
 				["crs"] = {
 					154527,	-- Command Table [Kyrian]
 					175136,	-- Command Table [Necrolord]
@@ -149,6 +148,8 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 					i(181170),	-- Pernicious Bonetusk (PET!)
 					i(182671),	-- Runelight Leaper (PET!)
 					i(180872),	-- Spirited Skyfoal (PET!)
+					-- Pet Currency
+					i(163036),	-- Polished Pet Charm
 					-- Misc.
 					i(184650),	-- Adventure Campaign Progress
 					i(184631),	-- Adventurer's Enchanting Cache
@@ -201,7 +202,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 						["description"] = "Can only spawn after completing the quest |cFFFFD700A Defector's Request'(64963)|r.",
 					}),
 					i(190178, {	-- Pouch of Protogenic Provisions
-						["timeline"] = { "added 9.2.0" },
+						["timeline"] = { ADDED_9_2_0 },
 					}),
 				},
 			}),
@@ -234,7 +235,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 						i(92683),	-- Flawless Dragonkin Battle-Stone
 					},
 				}),
-				n(-11, {	-- Common Box Drops
+				n(COMMON_BOX_DROPS, {	-- Common Box Drops
 					i(187880),	-- Goat Soul
 					i(187862),	-- Snake Soul
 				}),
@@ -244,7 +245,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 					["sym"] = {
 						{ "select", "headerID", COVENANT_SANCTUMS },{"pop"}, -- Covenant Sanctum groups
 						{ "where", "headerID", COVENANT_CALLINGS },{"pop"},	-- Covenant Callings groups
-						{ "where", "headerID", -11 },	-- Common Box Drops
+						{ "where", "headerID", COMMON_BOX_DROPS },	-- Common Box Drops
 					},
 				},{
 				-- Rare Quality Calling Rewards / Zone
@@ -255,7 +256,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 							["timeline"] = { ADDED_9_1_5 },
 						}),
 						i(190381, {	-- Technique: Glyph of the Spectral Vulpine (RECIPE!)
-							["timeline"] = { "added 9.2.0" },
+							["timeline"] = { ADDED_9_2_0 },
 						}),
 					},
 				}),
@@ -300,7 +301,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 							["timeline"] = { ADDED_9_1_5 },
 						}),
 						i(190381, {	-- Technique: Glyph of the Spectral Vulpine (RECIPE!)
-							["timeline"] = { "added 9.2.0" },
+							["timeline"] = { ADDED_9_2_0 },
 						}),
 					},
 				}),
@@ -339,7 +340,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 			})),
 		},
 	}),
-}));
+})));
 
 root(ROOTS.HiddenQuestTriggers, {
 	-- Misson Table

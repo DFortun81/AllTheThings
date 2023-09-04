@@ -39,17 +39,6 @@ root(ROOTS.Zones, {
 			["icon"] = "Interface\\Icons\\Achievement_zone_dragonblight_01",
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					petbattle(ach(9069, {	-- An Awfully Big Adventure
-						["timeline"] = { "added 6.0.2" },
-						["collectible"] = false,
-						["filterID"] = BATTLE_PETS,
-						["groups"] = {
-							crit(30, {	-- Okrut Dragonwaste
-								["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
-								["cr"] = 66638,	-- Okrut Dragonwaste <Master Pet Tamer>
-							}),
-						},
-					})),
 					explorationAch(1265),	-- Explore Dragonblight
 					ach(35, {	-- Might of Dragonblight (A)
 						["races"] = ALLIANCE_ONLY,
@@ -189,20 +178,11 @@ root(ROOTS.Zones, {
 						},
 						-- #endif
 					}),
-					ach(1007, {	-- The Wyrmrest Accord
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1091); end]],
-						-- #endif
+					achWithRep(1007, 1091, {	-- The Wyrmrest Accord
+						["maps"] = { BOREAN_TUNDRA },
 					}),
-					ach(949, {	-- Tuskarrmageddon
+					achWithRep(949, 1073, {	-- Tuskarrmageddon
 						["maps"] = { BOREAN_TUNDRA, HOWLING_FJORD },
-						-- #if ANYCLASSIC
-						["OnClick"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnUpdate(t, 1073); end]],
-						-- #endif
 					}),
 					ach(547, {	-- Veteran of the Wrathgate
 						["sourceQuests"] = {
@@ -211,18 +191,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 				}),
-				-- #if AFTER MOP
-				petbattle(filter(BATTLE_PETS, {
+				battlepets({
 					["sym"] = {{"select","speciesID",
 						641,	-- Arctic Hare (PET!)
 						536,	-- Tundra Penguin (PET!)
-						1236,	-- Unborn Val'kyr (PET!)
+						1238,	-- Unborn Val'kyr (PET!)
 					}},
 					["groups"] = {
 						pet(537),-- Dragonbone Hatchling (PET!)
 					},
-				})),
-				-- #endif
+				}),
 				-- #if ANYCLASSIC
 				n(EXPLORATION, {
 					exploration(4253),	-- 7th Legion Front
@@ -338,17 +316,25 @@ root(ROOTS.Zones, {
 						["coord"] = { 60.2, 51.4, DRAGONBLIGHT },
 					}),
 				}),
-				spell(921, {	-- Pickpocketing
-					i(38268, {	-- Spare Hand
-						["coords"] = {
-							{ 81.0, 42.8, DRAGONBLIGHT },
-							{ 82.6, 68.6, DRAGONBLIGHT },
-						},
-						["crs"] = {
-							27224,	-- Forgotten Knight
-							27401,	-- Risen Wintergarde Miner
-						},
+				petbattles({
+					n(66638, {	-- Okrut Dragonwaste <Master Pet Tamer>
+						["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
 					}),
+				}),
+				spell(921, {	-- Pickpocketing
+					["classes"] = { ROGUE },
+					["groups"] = {
+						i(38268, {	-- Spare Hand
+							["coords"] = {
+								{ 81.0, 42.8, DRAGONBLIGHT },
+								{ 82.6, 68.6, DRAGONBLIGHT },
+							},
+							["crs"] = {
+								27224,	-- Forgotten Knight
+								27401,	-- Risen Wintergarde Miner
+							},
+						}),
+					},
 				}),
 				n(QUESTS, {
 					q(12439, {	-- A Disturbance In The West
@@ -1334,7 +1320,9 @@ root(ROOTS.Zones, {
 						["qg"] = 26673,	-- Image of Archmage Modera
 						["sourceQuests"] = {
 							12439,	-- A Distrurbance in The Weset
+							-- #if AFTER 6.2.0.19953
 							39204,	-- Hero's Call: Dragonblight!
+							-- #endif
 							12440,	-- To Stars' Rest!
 							11995,	-- Your Presence is Required at Stars' Rest
 						},
@@ -1720,7 +1708,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(38151),	-- Daschal's Discarded Shiv
 							i(38152),	-- Mace of the Violet Guardian
-							i(38153),	-- Mana Infused Claw
+							i(38153),	-- Mana-Infused Claw
 							i(38129),	-- Staff of the Ley Mender
 							i(38217),	-- Tome of the Violet Tower
 						},
@@ -1733,7 +1721,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(38151),	-- Daschal's Discarded Shiv
 							i(38152),	-- Mace of the Violet Guardian
-							i(38153),	-- Mana Infused Claw
+							i(38153),	-- Mana-Infused Claw
 							i(38129),	-- Staff of the Ley Mender
 							i(38217),	-- Tome of the Violet Tower
 						},
@@ -1843,6 +1831,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 36.6, 46.5, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
 						["qg"] = 26415,	-- Senior Sergeant Juktok
+						["altQuests"] = {
+							12487,	-- To Conquest Hold, But Be Careful!
+							-- #if AFTER 6.2.0.19953
+							39206,	-- Warchief's Command: Grizzly Hills!
+							-- #endif
+						},
 						["isBreadcrumb"] = true,
 					}),
 					q(12511, {	-- The Hills Have Us
@@ -2047,6 +2041,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 76.8, 63.2, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
 						["qg"] = 27243,	-- High Executor Wroth
+						["altQuests"] = {
+							12488,	-- The High Executor Needs You
+							-- #if AFTER 6.2.0.19953
+							39206,	-- Warchief's Command: Grizzly Hills!
+							-- #endif
+						},
 						["isBreadcrumb"] = true,
 					}),
 					q(12095, {	-- To Dragon's Fall
@@ -2385,11 +2385,11 @@ root(ROOTS.Zones, {
 							i(44723, {	-- Pengu (PET!)
 								["timeline"] = { "added 3.0.2.8982" },
 							}),
-							i(44511, {	-- Pattern: Dragonscale Ammo Pouch
-								["timeline"] = { "removed 4.0.1" },
+							i(44511, {	-- Pattern: Dragonscale Ammo Pouch (RECIPE!)
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(45774),	-- Pattern: Emerald Bag
-							i(44509),	-- Pattern: Trapper's Traveling Pack
+							i(44509),	-- Pattern: Trapper's Traveling Pack (RECIPE!)
 							i(44061),	-- Pigment-Stained Robes
 							i(44052),	-- Totemic Purification Rod
 							i(44051),	-- Traditional Flensing Knife
@@ -2429,12 +2429,9 @@ root(ROOTS.Zones, {
 						},
 						["crs"] = { 27333 },	-- Onslaught Mason
 					}),
-					i(120137, {	-- Tome of Polymorph: Polar Bear Cub
-						["spellID"] = 161353,	-- Polymorph(Polar Bear Cub)
-						["timeline"] = { "added 6.0.2.18816" },
-						["classes"] = { MAGE },
+					i(120137, {	-- Tome of Polymorph: Polar Bear Cub (CI!)
+						["timeline"] = { ADDED_6_0_2 },
 						["crs"] = { 26482 },	-- Arctic Grizzly
-						["f"] = RECIPES,
 					}),
 					i(38262, {	-- Well-Worn Bat
 						["coord"] = { 68.2, 74.2, DRAGONBLIGHT },
