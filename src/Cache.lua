@@ -425,7 +425,10 @@ local fieldConverters = {
 
 		-- Then uses the ZONE_TEXT_TO_MAP_ID localizer to force the minilist to display this as if it was a map file.
 		local name = C_Map_GetAreaInfo(value);
-		if name then app.L.ZONE_TEXT_TO_MAP_ID[name] = mapID; end
+		if name then
+			app.L.MAP_ID_TO_ZONE_TEXT[mapID] = name;
+			app.L.ZONE_TEXT_TO_MAP_ID[name] = mapID;
+		end
 	end,
 	["zone-text-areas"] = function(group, value)
 		local mapID = group.mapID;
@@ -444,7 +447,10 @@ local fieldConverters = {
 		end
 		-- Then uses the ZONE_TEXT_TO_MAP_ID localizer to force the minilist to display this as if it was a map file.
 		local name = C_Map_GetAreaInfo(value[1]);
-		if name then app.L.ZONE_TEXT_TO_MAP_ID[name] = mapID; end
+		if name then
+			app.L.MAP_ID_TO_ZONE_TEXT[mapID] = name;
+			app.L.ZONE_TEXT_TO_MAP_ID[name] = mapID;
+		end
 		for i=2,#value,1 do
 			name = C_Map_GetAreaInfo(value[i]);
 			if name then app.L.ALT_ZONE_TEXT_TO_MAP_ID[name] = mapID; end

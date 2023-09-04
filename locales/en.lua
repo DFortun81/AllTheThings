@@ -887,8 +887,6 @@ local L = {
 		[-160] = 236567,																	-- Level 60 Class Trial
 	-- New Characters
 		[-211] = 1530081,																	-- New Character
-	-- Dalaran Sub-Zone
-		[-213] = "Interface\\LFGFRAME\\LFGICON-DALARANSEWERS",								-- The Underbelly
 	-- PvP
 		[-216] = "Interface\\Icons\\ability_rogue_combatreadiness",							-- Prestige
 	-- Fishing
@@ -1080,8 +1078,6 @@ local L = {
 		[-160] = string.format(SPELLBOOK_AVAILABLE_AT, 60).." "..CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER,	-- Level 60 Class Trial
 	-- Item Sets
 		[-211] = NEW.." "..CHARACTER,											-- New Character
-	-- Dalaran Sub-Zone
-		[-213] = DUNGEON_FLOOR_DALARAN2,										-- The Underbelly
 	-- PvP
 		[-216] = PVP_PRESTIGE_RANK_UP_TITLE,									-- Prestige
 	-- Fishing
@@ -1275,6 +1271,7 @@ local L = {
 	
 	-- These are alternative map names that we don't want to display, but used for mapID calculations.
 	-- If there is a name provided in the table above, it will prefer that name association.
+	["MAP_ID_TO_ZONE_TEXT"] = {};
 	["ZONE_TEXT_TO_MAP_ID"] = {};
 	["ALT_ZONE_TEXT_TO_MAP_ID"] = {
 		["Gates of Ahn'Qiraj"] = 1451,

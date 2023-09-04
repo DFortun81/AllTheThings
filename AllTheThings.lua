@@ -11421,25 +11421,43 @@ end)();
 local C_Map_GetMapLevels, C_Map_GetBestMapForUnit, C_Map_GetPlayerMapPosition
 	= C_Map.GetMapLevels, C_Map.GetBestMapForUnit, C_Map.GetPlayerMapPosition;
 app.GetCurrentMapID = function()
-	local zone = GetRealZoneText();
-	if zone then
-		local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
-		if mapID then return mapID; end
+	local originalMapID = C_Map_GetBestMapForUnit("player");
+	local zoneTextSubstitution = L.MAP_ID_TO_ZONE_TEXT[originalMapID];
+	if zoneTextSubstitution then
+		local zone = GetRealZoneText();
+		if zone then
+			if zoneTextSubstitution == zone then return originalMapID; end
+			local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
+			if mapID then
+				return mapID;
+			end
+		end
+		zone = GetSubZoneText();
+		if zone and zone ~= "" then
+			if zoneTextSubstitution == zone then return originalMapID; end
+			local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
+			if mapID then return mapID; end
+		end
+	else
+		local zone = GetRealZoneText();
+		if zone then
+			local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
+			if mapID then
+				return mapID;
+			end
+		end
+		zone = GetSubZoneText();
+		if zone and zone ~= "" then
+			local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
+			if mapID then return mapID; end
+		end
 	end
-	zone = GetSubZoneText();
-	if zone and zone ~= "" then
-		local mapID = L.ZONE_TEXT_TO_MAP_ID[zone] or L.ALT_ZONE_TEXT_TO_MAP_ID[zone];
-		if mapID then return mapID; end
-	end
-	return C_Map_GetBestMapForUnit("player");
+	return originalMapID;
 end
 app.GetMapName = function(mapID)
 	if mapID then
-		for name,m in pairs(L.ZONE_TEXT_TO_MAP_ID) do
-			if mapID == m then
-				return name;
-			end
-		end
+		local zoneTextSubstitution = L.MAP_ID_TO_ZONE_TEXT[mapID];
+		if zoneTextSubstitution then return zoneTextSubstitution; end
 
 		local info = C_Map_GetMapInfo(mapID);
 		return (info and info.name) or ("Map ID #" .. mapID);

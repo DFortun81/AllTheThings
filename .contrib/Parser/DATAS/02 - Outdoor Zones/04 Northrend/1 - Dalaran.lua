@@ -3777,6 +3777,7 @@ root(ROOTS.Zones, {
 			["lvl"] = 58,
 			["groups"] = {
 				m(NORTHREND_THE_UNDERBELLY, {
+					["zone-text-areaID"] = 4560,	-- The Underbelly
 					["icon"] = "Interface\\LFGFRAME\\LFGICON-DALARANSEWERS",
 					["groups"] = {
 						n(ACHIEVEMENTS, {
