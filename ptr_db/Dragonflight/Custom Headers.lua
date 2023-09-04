@@ -170,7 +170,7 @@ for key,value in pairs({
 	[-1000018] = _.asset("Category_Exploration"),
 	[-1000019] = _.asset("Category_Factions"),
 	[-1000020] = _.asset("Category_FlightPaths"),
-	[-1000021] = "Interface/Icons/Achievement_GarrisonFollower_LevelUp",
+	[-1000021] = _.asset("Category_Followers"),
 	[-1000022] = "Interface/Icons/inv_misc_questionmark",
 	[-1000023] = _.asset("Category_Holidays"),
 	[-1000024] = "Interface/Icons/inv_letter_17",

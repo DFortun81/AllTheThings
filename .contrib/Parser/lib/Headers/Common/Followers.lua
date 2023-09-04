@@ -4,7 +4,7 @@ FOLLOWERS = createHeader({
 	-- #if NOT ANYCLASSIC
 	export = true,	-- This is referenced as a Dynamic Category.
 	-- #endif
-	icon = "Interface\\Icons\\Achievement_GarrisonFollower_LevelUp",
+	icon = _.asset("Category_Followers"),
 	text = {
 		en = [[~GARRISON_FOLLOWERS]],
 	},
