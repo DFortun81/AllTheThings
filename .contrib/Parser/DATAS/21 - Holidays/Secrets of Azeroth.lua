@@ -14,10 +14,10 @@ SECRETS_OF_AZEROTH_HEADER = createHeader({
 root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 	n(ACHIEVEMENTS, {
 		ach(18644, {	-- Community Rumor Mill
-			pet(4263);	-- Tobias (PET!) [Maybe Get itemID later??]
-		}),
-		ach(18643, {	-- Community Rumors
-			i(208150),	-- Blue Tweed Cap
+			pet(4263),	-- Tobias (PET!) [Maybe Get itemID later??]	
+				ach(18643, {	-- Community Rumors
+					i(208150),	-- Blue Tweed Cap
+				}),
 		}),
 		ach(18642, {	-- The Inquisitive
 			["cost"] = {{"i",207580,1}},	-- Shomko's Unyielding Spear
@@ -207,4 +207,6 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(77289),	-- Community Satchel 1 (Eastern Plague Lands @ 55.1, 59.4)
 	q(77288),	-- Community Satchel 2 (Felwood @ 42.1, 48.1)
 	q(77291),	-- Community Satchel 3 (Thousand Needles @ 42.7, 30.7)
+				-- Community Satchel 4 (Shadowmoon Valley(Draenor) 539 @ 35.3 48.9)
+	q(77290),	-- Community Satchel 5 (Netherstorm @ 26.2, 68.7)
 })))
