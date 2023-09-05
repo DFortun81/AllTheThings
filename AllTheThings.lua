@@ -8097,7 +8097,8 @@ local function GetAchievementCriteriaInfoWithoutThrowingADumbassError(achievemen
 	if criteriaID <= GetAchievementNumCriteria(achievementID, hidden) then
 		return GetAchievementCriteriaInfo(achievementID, criteriaID, hidden);
 	elseif app.IsGit then
-		app.print("Invalid Achievement Criteria Index", achievementID, criteriaID);
+		-- Time to sleep for ever little print.
+		-- app.print("Invalid Achievement Criteria Index", achievementID, criteriaID);
 	end
 end
 criteriaFieldsWithIndex.GetInfo = function() return GetAchievementCriteriaInfoWithoutThrowingADumbassError; end;
