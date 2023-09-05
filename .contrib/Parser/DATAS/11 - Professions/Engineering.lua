@@ -490,6 +490,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["timeline"] = { ADDED_4_3_0 },
 			}),
 		})),
+		-- #if AFTER CATA
 		n(QUESTS, sharedData({
 			["cost"] = { { "g", 20000 } },	-- 2g
 			["lvl"] = 30,
@@ -557,6 +558,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 		})),
+		-- #endif
 	}),
 	tier(CATA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 		ach(18908, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Bio-Optic Killshades
