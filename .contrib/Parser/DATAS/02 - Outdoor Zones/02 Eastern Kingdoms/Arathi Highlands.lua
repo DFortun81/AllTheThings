@@ -1671,7 +1671,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "created 1.11.1", "added 3.0.1", "removed 4.0.3" },
 						}),
 						i(5743, {	-- Prismstone Ring
-							["timeline"] = { "created 1.11.1", "added 3.0.1", "removed 4.0.3" },
+							["timeline"] = { "created 1.11.1", "added 3.0.1", "removed 4.0.3", "added 10.1.7" },	-- Att disc 05.09.2023
 						}),
 					},
 				}),
@@ -1773,7 +1773,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(5180, {	-- Necklace of Harmony
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 						i(5181, {	-- Vibrant Silk Cape
 							["timeline"] = { "removed 4.0.3" },
