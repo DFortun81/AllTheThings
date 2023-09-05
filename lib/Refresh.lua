@@ -179,6 +179,7 @@ local function CacheAccountWideMiscQuests(accountWideData)
 
 		-- Account Unlocks
 		76390,	-- Inconvenience Fee [Naxxramas]
+		76307,	-- Makeshift Grappling Hook [206473]
 
 	}) do
 		-- If this Character has the Quest completed and it is not marked as completed for Account or not for specific Character
