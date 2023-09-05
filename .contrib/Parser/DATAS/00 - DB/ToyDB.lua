@@ -1217,6 +1217,8 @@ i(207730);	-- Idol of Ohn'ahra
 ------------------
 i(208433);	-- Bronze Racer's Pennant
 i(208421);	-- Compendium of the New Moon
+i(209858);	-- Dreamsurge Remnant
+i(209944);	-- Friendsurge Defenders
 --- Unsorted ---
 i(208229);	-- Honor of the Forsaken
 i(208880);	-- Brewhahat

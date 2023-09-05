@@ -43,6 +43,7 @@ r(7430),	-- Arclight Spanner
 0.5.5.3494
 r(8334),	-- Clockwork Box \\ Practice Lock
 0.6.0.3592
+r(8895),	-- Goblin Rocket Boots
 r(9271),	-- Aquadynamic Fish Attractor
 0.8.0.3734
 r(12584),	-- Gold Power Core
@@ -61,12 +62,31 @@ r(12619),	-- Hi-Explosive Bomb
 r(12621),	-- Mithril Gyro-Shot
 r(12622),	-- Green Lens
 r(12656),	-- Engineering
+r(12715),	-- Goblin Rocket Fuel Recipe
+r(12716),	-- Goblin Mortar
+r(12717),	-- Goblin Mining Helmet
+r(12718),	-- Goblin Construction Helmet
 r(12719),	-- Explosive Arrow
 r(12720),	-- Goblin "Boom" Box
 r(12722),	-- Goblin Radio
+r(12754),	-- The Big One
+r(12755),	-- Goblin Bomb Dispenser
+r(12758),	-- Goblin Rocket Helmet
+r(12759),	-- Gnomish Death Ray
+r(12760),	-- Goblin Sapper Charge
+r(12895),	-- Inlaid Mithril Cylinder Plans
+r(12897),	-- Gnomish Goggles
+r(12899),	-- Gnomish Shrink Ray
 r(12900),	-- Mobile Alarm
+r(12902),	-- Gnomish Net-o-Matic Projector
+r(12903),	-- Gnomish Harm Prevention Belt
 r(12904),	-- Gnomish Ham Radio
+r(12905),	-- Gnomish Rocket Boots
+r(12906),	-- Gnomish Battle Chicken
+r(12907),	-- Gnomish Mind Control Cap
+r(12908),	-- Goblin Dragon Gun
 0.9.0.3807
+r(13240),	-- The Mortar: Reloaded
 r(15255),	-- Mechanical Repair Kit
 1.1.2.4125
 r(19567),	-- Salt Shaker
@@ -96,8 +116,18 @@ r(30346),	-- Fel Iron Shells
 r(30347),	-- Adamantite Shell Machine
 r(30350),	-- Engineering
 r(30555),	-- Remote Mail Terminal
+r(30558),	-- The Bigger One
+r(30560),	-- Super Sapper Charge
 r(30561),	-- Goblin Tonk Controller
+r(30563),	-- Goblin Rocket Launcher
+r(30565),	-- Foreman's Enchanted Helmet
+r(30566),	-- Foreman's Reinforced Helmet
+r(30568),	-- Gnomish Flame Turret
+r(30569),	-- Gnomish Poultryizer
+r(30570),	-- Nigh-Invulnerability Belt
 r(30573),	-- Gnomish Tonk Controller
+r(30574),	-- Gnomish Power Goggles
+r(30575),	-- Gnomish Battle Goggles
 2.4.3.8606
 r(39971),	-- Icy Blasting Primers
 r(39973),	-- Frost Grenade \\ Frost Grenades
@@ -146,6 +176,7 @@ r(56469),	-- Gnomish Lightning Generator
 r(56470),	-- Sun Scope
 r(56471),	-- Froststeel Tube
 r(56472),	-- MOLL-E
+r(56473),	-- Gnomish X-Ray Specs
 r(56474),	-- Mammoth Cutters
 r(56475),	-- Saronite Razorheads
 r(56476),	-- Healing Injector Kit
@@ -158,6 +189,7 @@ r(56483),	-- Charged Titanium Specs
 r(56484),	-- Visage Liquification Goggles
 r(56486),	-- Greensight Gogs
 r(56487),	-- Electroflux Sight Enhancers
+r(56514),	-- Global Thermal Sapper Charge
 r(56574),	-- Truesight Ice Blinders
 3.1.0.9767
 r(60874),	-- Nesingwary 4000
@@ -198,6 +230,8 @@ r(84408),	-- R19 Threatfinder
 r(84409),	-- Volatile Seaforium Blastpack
 r(84410),	-- Safety Catch Removal Kit
 r(84411),	-- High-Powered Bolt Gun
+r(84412),	-- Personal World Destroyer
+r(84413),	-- De-Weaponized Mechanical Companion
 r(84415),	-- Lure Master Tackle Box
 r(84416),	-- Elementium Toolbox
 r(84417),	-- Volatile Thunderstick
@@ -220,13 +254,14 @@ r(82207),	-- Explosive Bolts
 r(84424),	-- Invisibility Field
 r(94748),	-- Electrified Ether
 r(95703),	-- Electrostatic Condenser
+r(95705),	-- Gnomish Gravity Well
+r(95707),	-- Big Daddy
 r(105518),	-- Open Box
 5.0.3.15890
 r(108789),	--
 r(109077),	--
 r(109099),	-- Watergliding Jets
 r(110403),	-- Engineering
-r(110955),	--
 r(126392),	-- Goblin Glider
 r(126731),	--
 r(127113),	-- Ghost Iron Bolts
@@ -251,6 +286,8 @@ r(127134),	-- Ghost Iron Dragonling
 r(127135),	-- Mechanical Pandaren Dragonling
 r(127136),	-- Big Game Hunter
 r(127137),	-- Long-Range Trillium Sniper
+r(127138),	-- Depleted-Kyparium Rocket
+r(127139),	-- Geosynchronous World Spinner
 6.0.1.18179
 r(131211),	-- Flashing Tinker's Gear
 r(131212),	-- Fractured Tinker's Gear
@@ -822,7 +859,6 @@ r(108789),	--
 r(109077),	--
 r(109099),	-- Watergliding Jets
 r(110403),	-- Engineering
-r(110955),	--
 r(126392),	-- Goblin Glider
 r(126731),	--
 r(127113),	-- Ghost Iron Bolts
