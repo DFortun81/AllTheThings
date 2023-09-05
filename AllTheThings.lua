@@ -3027,7 +3027,7 @@ local ResolveFunctions = {
 				criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, uniqueID = GetAchievementCriteriaInfo(achievementID, criteriaID, true);
 				if not uniqueID or uniqueID <= 0 then uniqueID = criteriaID; end
 				criteriaObject = app.CreateAchievementCriteria(uniqueID, {["achievementID"] = achievementID}, true);
-				
+
 				-- SourceQuest
 				if criteriaType == 27 then
 					for _,c in ipairs(SearchForField("questID", assetID)) do
@@ -5894,6 +5894,10 @@ local function SearchForLink(link)
 			kind = string.sub(kind,3);
 		end
 		if id then id = tonumber(select(1, strsplit("|[", id)) or id); end
+		if not id or not kind then
+			-- can't search for nothing!
+			return;
+		end
 		--print(string.gsub(string.gsub(link, "|c", "c"), "|h", "h"));
 		-- app.PrintDebug("SEARCH FOR FIELD",kind,id)
 		if kind == "itemid" or kind == "i" then
@@ -12009,17 +12013,15 @@ local function GetAutomaticHeaderData(id, type)
 	local altFunc = AlternateDataTypes[type];
 	if altFunc then
 		return altFunc(id);
-	else
-		local typeID = HeaderTypeAbbreviations[type] or type;
-		local obj = app.SearchForObject(typeID, id, "key") or CreateObject({[typeID]=id});
-		if obj then
-			-- app.PrintDebug("Automatic Header",obj.name or obj.link)
-			local name = obj.name or obj.link;
-			return not IsRetrieving(name) and name or nil, obj.icon;
-		else
-			app.print("Failed finding object/function for automatic header",type,id);
-		end
 	end
+	local typeID = HeaderTypeAbbreviations[type] or type;
+	local obj = app.SearchForObject(typeID, id, "key") or CreateObject({[typeID]=id});
+	if obj then
+		-- app.PrintDebug("Automatic Header",obj.name or obj.link)
+		local name = obj.name or obj.link;
+		return not IsRetrieving(name) and name or nil, obj.icon;
+	end
+	app.print("Failed finding object/function for automatic header",type,id);
 end
 -- Allows for directly accessing the Automatic Header Name logic for a specific ID/Type combination
 app.GetAutomaticHeaderData = GetAutomaticHeaderData;
