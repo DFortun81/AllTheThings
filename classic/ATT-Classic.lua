@@ -5515,10 +5515,6 @@ app.DifficultyColors = {
 	[33] = "ffe6cc80",
 };
 app.DifficultyIcons = {
-	[-1] = app.asset("Difficulty_LFR"),
-	[-2] = app.asset("Difficulty_Normal"),
-	[-3] = app.asset("Difficulty_Heroic"),
-	[-4] = app.asset("Difficulty_Mythic"),
 	[1] = app.asset("Difficulty_Normal"),
 	[2] = app.asset("Difficulty_Heroic"),
 	[3] = app.asset("Difficulty_Normal"),
@@ -5543,7 +5539,7 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 		return t.sourceParent and string.format("%s [%s]", t.name, t.sourceParent.text or UNKNOWN) or t.name;
 	end,
 	["name"] = function(t)
-		return L["CUSTOM_DIFFICULTIES"][t.difficultyID] or GetDifficultyInfo(t.difficultyID) or "Unknown Difficulty";
+		return GetDifficultyInfo(t.difficultyID) or "Unknown Difficulty";
 	end,
 	["icon"] = function(t)
 		return app.DifficultyIcons[t.difficultyID];

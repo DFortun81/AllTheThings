@@ -651,11 +651,6 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
---TODO: L.CUSTOM_DIFFICULTIES[-1] = "Raid Finder (5.4)";
---TODO: L.CUSTOM_DIFFICULTIES[-2] = "Flexible (5.4)";
---TODO: L.CUSTOM_DIFFICULTIES[-3] = "Normal (5.4)";
---TODO: L.CUSTOM_DIFFICULTIES[-4] = "Heroic (5.4)";
-
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Allied Races
@@ -681,20 +676,6 @@ for key,value in pairs({
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5202] = "힘의 균형",										-- Balance of Power
-})
-do a[key] = value; end
-
--- Fall-back 'name' values for Quests based on QuestID
-local a = L.QUEST_NAMES;
-for key,value in pairs({
-	-- [QuestID] = "Name",
-})
-do a[key] = value; end
-
--- Fall-back 'name' values for Items based on ItemID
-local a = L.ITEM_NAMES;
-for key,value in pairs({
-	-- [ItemID] = "Name",
 })
 do a[key] = value; end
 

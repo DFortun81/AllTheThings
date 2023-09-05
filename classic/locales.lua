@@ -145,12 +145,6 @@ local L = {
 		--[" %-%> " .. LFG_TYPE_ZONE] = "",
 		[TRACKER_HEADER_QUESTS] = BATTLE_PET_SOURCE_2,
 	};
-	["CUSTOM_DIFFICULTIES"] = {
-		[-1] = "Raid Finder (5.4)",
-		[-2] = "Flexible (5.4)",
-		[-3] = "Normal (5.4)",
-		[-4] = "Heroic (5.4)",
-	};
 	
 	-- These need to be localized manually.
 	["ACHIEVEMENT_DATA"] = {

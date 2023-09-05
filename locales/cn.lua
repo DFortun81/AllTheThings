@@ -668,11 +668,6 @@ if GetLocale() == "zhTW" then
 	a["『帷幕市集』塔札維許"] = "塔札維許"	-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
 end
 
-L.CUSTOM_DIFFICULTIES[-1] = "团队查找器 (5.4)";
-L.CUSTOM_DIFFICULTIES[-2] = "弹性 (5.4)";
-L.CUSTOM_DIFFICULTIES[-3] = "普通 (5.4)";
-L.CUSTOM_DIFFICULTIES[-4] = "英雄 (5.4)";
-
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Garrisons
@@ -764,20 +759,6 @@ if GetLocale() == "zhTW" then
 	a[-1120] = "莫魯克半人馬";											-- Maruuk Centaur
 	a[-1130] = "伊斯凱拉巨牙海民";										-- Iskaara Tuskarrccord
 end
-
--- Fall-back 'name' values for Quests based on QuestID
-local a = L.QUEST_NAMES;
-for key,value in pairs({
-	-- [QuestID] = "Name",
-})
-do a[key] = value; end
-
--- Fall-back 'name' values for Items based on ItemID
-local a = L.ITEM_NAMES;
-for key,value in pairs({
-	-- [ItemID] = "Name",
-})
-do a[key] = value; end
 
 local a = L.UNOBTAINABLE_ITEM_REASONS;
 for key,value in pairs({

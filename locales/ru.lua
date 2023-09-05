@@ -637,11 +637,6 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
-L.CUSTOM_DIFFICULTIES[-1] = "Поиск Рейда (5.4)";
-L.CUSTOM_DIFFICULTIES[-2] = "Гибкий (5.4)";
-L.CUSTOM_DIFFICULTIES[-3] = "Обычный (5.4)";
-L.CUSTOM_DIFFICULTIES[-4] = "Героический (5.4)";
-
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Garrison
@@ -729,20 +724,6 @@ for key,value in pairs({
 		[-10072] = "Нападение Н'Зота",								-- N'Zoth Assault
 		[-10081] = "Заражённая область",							-- Corrupted Area
 		[-10082] = "Захваченная область",							-- Lost Area
-})
-do a[key] = value; end
-
--- Fall-back 'name' values for Quests based on QuestID
-local a = L.QUEST_NAMES;
-for key,value in pairs({
-	-- [QuestID] = "Name",
-})
-do a[key] = value; end
-
--- Fall-back 'name' values for Items based on ItemID
-local a = L.ITEM_NAMES;
-for key,value in pairs({
-	-- [ItemID] = "Name",
 })
 do a[key] = value; end
 

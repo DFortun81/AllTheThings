@@ -652,11 +652,6 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
-L.CUSTOM_DIFFICULTIES[-1] = "Schlachtzugbrowser (5.4)";
-L.CUSTOM_DIFFICULTIES[-2] = "Flexible (5.4)";
-L.CUSTOM_DIFFICULTIES[-3] = "Normal (5.4)";
-L.CUSTOM_DIFFICULTIES[-4] = "Heroisch (5.4)";
-
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Garrison
@@ -706,20 +701,6 @@ for key,value in pairs({
 
 	------ ACHIEVEMENT HEADERS SECTION ------
 		[-10071] = "Visionen von N'Zoth",							-- Visions of N'Zoth
-})
-do a[key] = value; end
-
--- Fall-back 'name' values for Quests based on QuestID
-local a = L.QUEST_NAMES;
-for key,value in pairs({
-	-- [QuestID] = "Name",
-})
-do a[key] = value; end
-
--- Fall-back 'name' values for Items based on ItemID
-local a = L.ITEM_NAMES;
-for key,value in pairs({
-	-- [ItemID] = "Name",
 })
 do a[key] = value; end
 

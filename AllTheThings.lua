@@ -9146,10 +9146,6 @@ app.DifficultyColors = {
 	[33] = "ffe6cc80",
 };
 app.DifficultyIcons = {
-	[-1] = app.asset("Difficulty_LFR"),
-	[-2] = app.asset("Difficulty_Normal"),
-	[-3] = app.asset("Difficulty_Heroic"),
-	[-4] = app.asset("Difficulty_Mythic"),
 	[1] = app.asset("Difficulty_Normal"),
 	[2] = app.asset("Difficulty_Heroic"),
 	[3] = app.asset("Difficulty_Normal"),
@@ -9170,7 +9166,7 @@ app.DifficultyIcons = {
 	[33] = app.asset("Difficulty_Timewalking"),
 };
 local function GetDifficultyName(difficultyID)
-	return L["CUSTOM_DIFFICULTIES"][difficultyID] or GetDifficultyInfo(difficultyID);
+	return GetDifficultyInfo(difficultyID);
 end
 local function default_name(t)
 	local difficultyID = t.difficultyID;

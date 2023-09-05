@@ -840,13 +840,6 @@ local L = {
 		["Zaralek Cavern Racing Completionist: Gold"] = "Racing: Gold",
 	};
 
-	["CUSTOM_DIFFICULTIES"] = {
-		[-1] = "Raid Finder (5.4)",
-		[-2] = "Flexible (5.4)",
-		[-3] = "Normal (5.4)",
-		[-4] = "Heroic (5.4)",
-	};
-
 	-- Custom Icons for Factions (seems to be no automatic Faction-Icon associations in-game)
 	["FACTION_ID_ICONS"] = {
 		-- Examples --
