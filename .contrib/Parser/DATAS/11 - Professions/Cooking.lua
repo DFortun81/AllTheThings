@@ -13,7 +13,7 @@ local function AwardsCost(amount)
 		-- #endif
 	};
 end
-root(ROOTS.Professions, prof(COOKING, {
+root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKING }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 		applyclassicphase(WRATH_PHASE_ONE, ach(1563, {	-- Hail to the Chef [Alliance]
 			["sym"] = {{"meta_achievement",
@@ -32,8 +32,6 @@ root(ROOTS.Professions, prof(COOKING, {
 				1779,	-- The Northrend Gourmet (45)
 				1800,	-- The Outland Gourmet
 			}},
-			["timeline"] = { "added 3.0.1" },
-			["requireSkill"] = COOKING,
 			-- #if BEFORE 4.0.3
 			["races"] = ALLIANCE_ONLY,
 			-- #endif
@@ -55,8 +53,7 @@ root(ROOTS.Professions, prof(COOKING, {
 				1779,	-- The Northrend Gourmet (45)
 				1800,	-- The Outland Gourmet
 			}},
-			["timeline"] = { "added 3.0.1", "deleted 4.0.3" },
-			["requireSkill"] = COOKING,
+			["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				title(52),	-- Chef <Name>
@@ -505,7 +502,7 @@ root(ROOTS.Professions, prof(COOKING, {
 			}),
 		}),
 	})),
-}));
+})));
 
 
 

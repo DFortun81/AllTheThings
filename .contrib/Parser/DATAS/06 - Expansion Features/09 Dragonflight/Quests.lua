@@ -209,9 +209,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			},
 		}),
 	}),
-
-		-- Blue Dragonflight Questline
-	n(QUESTS, bubbleDown({ ["timeline"] = ADDED_10_1_0 }, {
+	header(HEADERS.Achievement, 17773, bubbleDownSelf({ ["timeline"] = ADDED_10_1_0 }, {	-- A Blue Dawn
 		q(72900, {	-- Keeper of the Ossuary
 			["provider"] = { "n", 187676 },	-- Kalecgos
 			["coord"] = { 61.4, 36.2, VALDRAKKEN },
@@ -269,7 +267,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["sourceQuests"] = { 72937 },	-- Unusual Desruptions
 			["coord"] = { 22.5, 23.8, BOREAN_TUNDRA },
 		}),
-			-- Quests to select next zone (Blizzard made them incompletable. They disapear once you choose any of the zones)
+			--- Quests to select next zone (Blizzard made them incompletable. They disapear once you choose any of the zones)
 		q(72940, {	-- Where in the World is a Lost Blue Dragon?
 			["provider"] = { "n", 190000 },	-- Kalecgos
 			["sourceQuests"] = {
@@ -647,6 +645,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 72950 },	-- The Last Conflict
 				["coord"] = { 39.3, 63.6, THE_AZURE_SPAN },
 				["groups"] = {
+					ach(17773, {	-- A Blue Dawn
+						["timeline"] = { ADDED_10_1_7 },
+					}),
 					i(205958, {	-- Ensemble: Azure Renewal Finery
 						["groups"] = {
 							i(205956),	-- Azure Renewal Cape

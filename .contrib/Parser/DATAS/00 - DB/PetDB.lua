@@ -4050,6 +4050,7 @@ i(208138, 4262);	-- N'Ruby
 i(0, 4263);			-- Tobias [Maybe Get itemID later??]
 i(190601, 2890);	-- Sunny (Shop)
 i(207962, 179);		-- Spirit of Competition (Trading Post)
+i(208045, 4253);	-- Slyvy
 -- TRAINER --
 i(0, 3587);			-- Lifelike Mechanical Duckling
 i(0, 3608);			-- Lifelike Mechanical Turtle

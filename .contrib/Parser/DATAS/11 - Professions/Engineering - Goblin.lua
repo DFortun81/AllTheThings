@@ -1,3 +1,4 @@
+-- #if ANYCLASSIC
 profession(ENGINEERING, {
 	prof(20222, {	-- Goblin Engineering
 		["description"] = "These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level a second Engineer and complete the opposing specialization.",
@@ -221,5 +222,6 @@ itemrecipe(7192, 8895);		-- Schematic: Goblin Rocket Boots
 -- #if AFTER WRATH
 -- #if BEFORE 4.0.1
 itemrecipe(52022, 72952);	-- Plans: Shatter Rounds
+-- #endif
 -- #endif
 -- #endif

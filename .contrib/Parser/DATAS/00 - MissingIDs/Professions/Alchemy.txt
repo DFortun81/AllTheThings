@@ -197,7 +197,6 @@ r(96253),	-- Quicksilver Alchemist Stone
 r(96254),	-- Vibrant Alchemist Stone
 5.0.3.15890
 r(105206),	-- Alchemy
-r(110955),	--
 r(114751),	-- Alchemist's Rejuvenation
 r(114752),	-- Master Healing Potion
 r(114753),	-- Potion of the Mountains

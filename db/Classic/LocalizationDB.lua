@@ -281,7 +281,6 @@ localize(L.HEADER_NAMES, {
 	[-1000192] = "Noblegarden",
 	[-1000197] = "Stranglethorn Fishing Extravaganza",
 	[-1000204] = "The Ahn'Qiraj War Effort",
-	[-1000205] = "The Opening of the Dark Portal",
 	[-1000206] = "The Scepter of the Shifting Sands",
 	[-1000207] = "The Scourge Invasion",
 	[-1000208] = "The Silithyst Must Flow",
@@ -308,7 +307,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000163] = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Live\" or \"Scarlet\" side, which the Scarlet Crusade has taken over.",
 	[-1000164] = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Dead\" or \"Scourge\" side, which the Scourge has taken over.",
 	[-1000204] = "When Phase 5 is eventually released, the Ruins of Ahn'Qiraj and Temple of Ahn'Qiraj will not be immediately available. Instead, server communities will have to undertake a massive war effort to open the raids by gathering supplies to prepare for the war and completing an epic questline that ultimately culminates in the banging of a gong to open the gates and release the horrors within upon the world.\n\nOnce both factions have finished their contribution, there is a 5-day grace period where. Afterwards, there is a server-wide 10 hour event which spans several zones in Kalimdor the moment someone bangs the gong.\n\nHow quickly Ahn'Qiraj opens depends on the server and its faction balance.\n\nWe recommend delaying the War Effort as long as possible to allow for the most number of people to obtain the Scarab Lord mount as everyone that finishes The Scepter of the Shifting Sands quest line will be granted the same rewards!",
-	[-1000205] = "The Opening of the Dark Portal was a one-time event that happened between Prepatch and the launch of TBC and subsequentially removed after. The tabard is the only tabard in the game with the Flex emote built into it and is highly covetted by collectors. Highlord Kruul would spawn randomly outside of the major cities and max level zones of the time.",
 	[-1000206] = "In addition to all players on a realm working towards completing the War Effort, one player had to create the Scepter of the Shifting Sands - a very difficult task that could only be solved by a server's top guild back when the questline was added. After the war effort was finished and the army of the Alliance and the Horde arrived in Silithus, the Scepter of the Shifting Sands could be used on the Scarab Gong. Doing so resulted in the opening of Ahn'Qiraj. The first player to bang the Scarab Gong on each server would be rewarded with the Scarab Lord title (in Burning Crusade, the title will not be available in Classic!) and the Black Qiraji Resonating Crystal mount. Anyone else who followed them within 10 hours was rewarded with the title as well.\n\nAlthough it is still possible to complete the questline for the Scepter of the Shifting Sands after the gates have been opened on your server, doing so will not reward neither the Black Qiraji Resonating Crystal nor the Scarab Lord title.",
 	[-1000207] = "The Scourge Invasion was a world event in Patch 1.11 and again during the Wrath of the Lich King Pre-Patch during 3.0.1 that heralded the opening of Naxxramas, the citadel of the dreaded Kel'Thuzad.\n\nSeveral regions of Azeroth came under attack by Scourge forces. Members of the Argent Dawn organized a worldwide counter to the Scourge invasion, keeping an eye out for any necropolis sightings and passing on their information to all adventurers willing to aid them in their struggle.\n\nWith each victory against the Scourge, the defense grows stronger. As more and more invasion attempts are beaten back by the defenders, the Argent Dawn will be able to bestow increasingly more powerful blessings upon those fighting the invaders. If the mortal races focus on clearing the Scourge camps all over the world that have sprung up beneath each necropolis, perhaps the invasion can effectively be halted or even repelled. Those who wish to take up arms against the undead invaders should speak with a representative of the Argent Dawn to learn what regions need help and how the defense is holding up.",
 	[-1000208] = "The Silithyst Must Flow is the name of the world PvP event in Silithus, where players of both factions must try and secure as much Silithyst as possible. Silithyst is a red crystalline dust that reaches the surface through geysers exclusive to the Silithus desert. Both the Alliance and the Horde have taken an interest in this new substance, and researchers on both sides have discovered unique and valuable properties in the dust. The Horde and Alliance camps in the region have both been outfitted with turn-in stations where players can unload the Silithyst they collect.",
@@ -411,7 +409,6 @@ localize(L.HEADER_ICONS, {
 	[-1000192] = _.asset("Holiday_noblegarden"),
 	[-1000197] = "Interface/Icons/inv_misc_fish_06",
 	[-1000204] = "Interface/Icons/inv_box_01",
-	[-1000205] = "Interface/Icons/achievement_dungeon_outland_dungeonmaster",
 	[-1000206] = "Interface/Icons/Inv_hammer_25",
 	[-1000207] = "Interface/Icons/inv_stone_02",
 	[-1000208] = "Interface/Icons/spell_holiday_tow_spicecloud",
@@ -1867,7 +1864,6 @@ localize(L.HEADER_NAMES, {
 	[-1000174] = "Dunkelmond-Jahrmarkt",
 	[-1000191] = "Sonnenwendfest",
 	[-1000197] = "Anglerwettbewerb im Schlingendorntal",
-	[-1000205] = "Die Öffnung des Dunklen Portals",
 	[-1000206] = "Das Szepter der Sandstürme",
 });
 localize(L.HEADER_DESCRIPTIONS, {
@@ -2294,7 +2290,6 @@ localize(L.HEADER_NAMES, {
 	[-1000174] = "Feria de la Luna Negra",
 	[-1000191] = "Festival del Fuego del Solsticio de Verano",
 	[-1000197] = "Gran espectáculo de pesca de Tuercespina",
-	[-1000205] = "La apertura del Portal Oscuro",
 	[-1000206] = "El cetro del Mar de Dunas",
 });
 localize(L.HEADER_DESCRIPTIONS, {
@@ -2731,7 +2726,6 @@ localize(L.HEADER_NAMES, {
 	[-1000191] = "Fête du Feu du solstice d’été",
 	[-1000197] = "Concours de pêche de Strangleronce",
 	[-1000204] = "Effort de guerre d’Ahn'Qiraj",
-	[-1000205] = "L'ouverture de la Porte des ténèbres",
 	[-1000206] = "Le Sceptre des Sables changeants",
 	[-1000214] = "Edition Collector",
 });
@@ -3155,7 +3149,6 @@ localize(L.HEADER_NAMES, {
 	[-1000174] = "Fiera di Lunacupa",
 	[-1000191] = "Fuochi di Mezza Estate",
 	[-1000197] = "Gara di Pesca a Rovotorto",
-	[-1000205] = "L'apertura del Portale Oscuro",
 	[-1000206] = "Scettro delle Sabbie Mutevoli",
 });
 localize(_.ObjectNames, {
@@ -3490,7 +3483,6 @@ localize(L.HEADER_NAMES, {
 	[-1000174] = "다크문 유랑단",
 	[-1000191] = "한여름 불꽃축제",
 	[-1000197] = "가시덤불 골짜기 낚시왕 선발대회",
-	[-1000205] = "어둠의 문 열기",
 	[-1000206] = "흐르는 모래의 홀",
 });
 localize(L.HEADER_DESCRIPTIONS, {
@@ -3912,7 +3904,6 @@ localize(L.HEADER_NAMES, {
 	[-1000174] = "Feira de Negraluna",
 	[-1000191] = "Festival do Fogo do Solstício",
 	[-1000197] = "Festerê de Pesca da Selva do Espinhaço",
-	[-1000205] = "A abertura do Portal Negro",
 	[-1000206] = "Cetro das Areias Cambiantes",
 });
 localize(L.HEADER_DESCRIPTIONS, {
@@ -4351,7 +4342,6 @@ localize(L.HEADER_NAMES, {
 	[-1000191] = "Огненный Солнцеворот",
 	[-1000197] = "Рыбомания Тернистой долины",
 	[-1000204] = "Война в Ан'Кираже",
-	[-1000205] = "Открытие Темного портала",
 	[-1000206] = "Скипетр Зыбучих песков",
 	[-1000207] = "Вторжение Плети",
 	[-1000214] = "Коллекционное издание",
@@ -4797,7 +4787,6 @@ localize(L.HEADER_NAMES, {
 	[-1000191] = "仲夏火焰节",
 	[-1000197] = "荆棘谷钓鱼大赛",
 	[-1000204] = "安其拉之战捐献",
-	[-1000205] = "开启黑暗之门",
 	[-1000206] = "流沙节杖",
 	[-1000207] = "天灾入侵",
 	[-1000208] = "希利苏斯流沙",

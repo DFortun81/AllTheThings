@@ -1,3 +1,4 @@
+-- #if ANYCLASSIC
 profession(ENGINEERING, {
 	prof(20219, {	-- Gnomish Engineering
 		["description"] = "These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level a second Engineer and complete the opposing specialization.",
@@ -211,5 +212,6 @@ itemrecipe(18661, 23129);	-- Schematic: World Enlarger
 -- #if AFTER WRATH
 -- #if BEFORE 4.0.1
 itemrecipe(52023, 72953);	-- Plans: Iceblade Arrow
+-- #endif
 -- #endif
 -- #endif

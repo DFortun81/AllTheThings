@@ -42,41 +42,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				}),
 			}),
 			prof(ENGINEERING, {
-				q(54475, {	-- Engineered Blueprints
-					["requireSkill"] = ENGINEERING,
-					["provider"] = { "n", 136059 },	-- Layla Evenkeel
-					["coord"] = { 77.4, 14.2, BORALUS },
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,	-- all introductory quests for new 8.1 recipes appear to now be unobtainable
-				}),
-				-- Tools of Trade Questline
-				q(55028, {	-- It's Scrap Work... (A)
-					["provider"] = { "n", 136059 },	-- Layla Evenkeel
-					["coord"] = { 77.4, 14.2, BORALUS },
-					["description"] = "Requires 150 Kul Tiran Engineering.",
-					["requireSkill"] = ENGINEERING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(53947, {	-- In the Dunes (A)
-					["provider"] = { "n", 136059 },	-- Layla Evenkeel
-					["coord"] = { 77.4, 14.2, BORALUS },
-					["sourceQuest"] = 55028,	-- It's Scrap Work... (A)
-					["requireSkill"] = ENGINEERING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
-				q(53949, {	-- The Ub3r-Spanner (A)
-					["provider"] = { "n", 136059 },	-- Layla Evenkeel
-					["coord"] = { 77.4, 14.2, BORALUS },
-					["sourceQuest"] = 53948,	-- Vengeful Venture (A)
-					["requireSkill"] = ENGINEERING,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-					["g"] = {
-						recipe(282975), -- Schematic: The Ub3r-Spanner
-					},
-				}),
 			}),
 			prof(HERBALISM, {
 				n(136096, {	-- Declan Senal <Herbalism Trainer>

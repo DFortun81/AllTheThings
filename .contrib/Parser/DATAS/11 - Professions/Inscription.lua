@@ -3345,7 +3345,7 @@ end
 r = oldR;
 
 local INSCRIPTION_KNOWLEDGE = 2028;
-root(ROOTS.Professions, prof(INSCRIPTION, {
+root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRIPTION }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18724),	-- Gaining an Advantus
 		ach(18879),	-- Ink and Quill IV
@@ -3629,8 +3629,8 @@ root(ROOTS.Professions, prof(INSCRIPTION, {
 			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
 		}),
 		q(39955, {	-- The Plot Thickens [A]
-		["sourceQuests"] = { 39961 },	-- An Embarrassing Revelation
-				["provider"] = { "n", 92195 },	-- Professor Pallin
+			["sourceQuests"] = { 39961 },	-- An Embarrassing Revelation
+			["provider"] = { "n", 92195 },	-- Professor Pallin
 			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
 			["races"] = ALLIANCE_ONLY,
 			["isBreadcrumb"] = true,
@@ -3722,7 +3722,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, {
 				r(209660),	-- Mass Mill Foxflower (RECIPE!)
 			},
 		}),
-		q(43929, bubbleDownSelf({ ["timeline"] = { "added 7.1.0" } }, {	-- Vantus Mastery
+		q(43929, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {	-- Vantus Mastery
 			["description"] = "Available to pick after acquired all rank 3 Vantus Techniques from EN, TOV and NH.",
 			["provider"] = { "n", 90417 },	-- Archmage Khadgar
 			["groups"] = {
@@ -3731,128 +3731,131 @@ root(ROOTS.Professions, prof(INSCRIPTION, {
 		})),
 	})),
 	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
-		ach(18772, {	-- Sanguine Feather Quill of Lana'thel
-			["provider"] = { "i", 153670 },	-- Sanguine Feather Quill of Lana'thel
-			["timeline"] = { ADDED_10_1_7 },
-		}),
-		q(54477, {	-- Inscribed Methods [A]
-			["provider"] = { "n", 130399 },	-- Zooey Inksprocket
-			["coord"] = { 73.4, 6.3, BORALUS },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
-		}),
-		q(54478, {	-- Inscribed Methods [H]
-			["provider"] = { "n", 130901 },	-- Chronicler Grazzul
-			["coord"] = { 42.3, 39.7, DAZARALOR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
-		}),
-		------ Tools of Trade Questline ------
-		q(40537, { -- Drawing Blood [A]
-			["description"] = "This quest chain requires 150 skill in Kul Tiran Inscription.",
-			["provider"] = { "n", 130399 },	-- Zooey Inksprocket
-			["coord"] = { 73.4, 6.3, BORALUS },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(49943, { -- Drawing Blood [H]
-			["description"] = "This quest chain requires 150 skill in Zandalari Inscription.",
-			["provider"] = { "n", 130901 },	-- Chronicler Grazzul
-			["coord"] = { 42.2, 39.6, DAZARALOR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(49694, { -- Turn to Drust [A]
-			["sourceQuests"] = { 40537 },	-- Drawing Blood [A]
-			["provider"] = { "n", 130399 },	-- Zooey Inksprocket
-			["coord"] = { 73.4, 6.3, BORALUS },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(49944, { -- Turn to Drust [H]
-			["sourceQuests"] = { 49943 },	-- Drawing Blood [H]
-			["provider"] = { "n", 130901 },	-- Chronicler Grazzul
-			["coord"] = { 42.2, 39.6, DAZARALOR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(49873, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, { --Sacrificial Writes
-			["sourceQuests"] = {
-				49694,	-- Turn to Drust [A]
-				49944,	-- Turn to Drust [H]
-			},
-			["provider"] = { "o", 279647 }, -- Tome of Sacrifice
-			["coord"] = { 20.6, 44, DRUSTVAR },
-			["groups"] = {
-				r(259665), -- Blood Contract: Sacrifice
-			},
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+			ach(18772, {	-- Sanguine Feather Quill of Lana'thel
+				["provider"] = { "i", 153670 },	-- Sanguine Feather Quill of Lana'thel
+			}),
 		})),
-		q(49874, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, { -- By the Book
-			["sourceQuests"] = { 49873 },	-- Sacrificial Writes
-			["provider"] = { "n", 131657 },	-- Bloodshed Compendium
-			["coord"] = { 20.7, 44, DRUSTVAR },
-			["maps"] = { 1407 }, -- Prison of Ink (Scenario Map)
-			["groups"] = {
-				r(292012), -- Blood Contract: Bloodshed
-			},
-		})),
-		q(49876, { -- Lines in the Sand [A]
-			["sourceQuests"] = { 49874 },	-- By the Book
-			["provider"] = { "n", 131386 },	-- Kronah
-			["coord"] = { 20.6, 44, DRUSTVAR },
-			["timeline"] = { ADDED_8_1_5 },
-			["races"] = ALLIANCE_ONLY,
+		n(QUESTS, {
+			q(54477, {	-- Inscribed Methods [A]
+				["provider"] = { "n", 130399 },	-- Zooey Inksprocket
+				["coord"] = { 73.4, 6.3, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
+			}),
+			q(54478, {	-- Inscribed Methods [H]
+				["provider"] = { "n", 130901 },	-- Chronicler Grazzul
+				["coord"] = { 42.3, 39.7, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
+			}),
+			------ Tools of Trade Questline ------
+			q(40537, { -- Drawing Blood [A]
+				["description"] = "This quest chain requires 150 skill in Kul Tiran Inscription.",
+				["provider"] = { "n", 130399 },	-- Zooey Inksprocket
+				["coord"] = { 73.4, 6.3, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(49943, { -- Drawing Blood [H]
+				["description"] = "This quest chain requires 150 skill in Zandalari Inscription.",
+				["provider"] = { "n", 130901 },	-- Chronicler Grazzul
+				["coord"] = { 42.2, 39.6, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(49694, { -- Turn to Drust [A]
+				["sourceQuests"] = { 40537 },	-- Drawing Blood [A]
+				["provider"] = { "n", 130399 },	-- Zooey Inksprocket
+				["coord"] = { 73.4, 6.3, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(49944, { -- Turn to Drust [H]
+				["sourceQuests"] = { 49943 },	-- Drawing Blood [H]
+				["provider"] = { "n", 130901 },	-- Chronicler Grazzul
+				["coord"] = { 42.2, 39.6, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(49873, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, { --Sacrificial Writes
+				["sourceQuests"] = {
+					49694,	-- Turn to Drust [A]
+					49944,	-- Turn to Drust [H]
+				},
+				["provider"] = { "o", 279647 }, -- Tome of Sacrifice
+				["coord"] = { 20.6, 44, DRUSTVAR },
+				["groups"] = {
+					r(259665), -- Blood Contract: Sacrifice
+				},
+			})),
+			q(49874, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, { -- By the Book
+				["sourceQuests"] = { 49873 },	-- Sacrificial Writes
+				["provider"] = { "n", 131657 },	-- Bloodshed Compendium
+				["coord"] = { 20.7, 44, DRUSTVAR },
+				["maps"] = { 1407 }, -- Prison of Ink (Scenario Map)
+				["groups"] = {
+					r(292012), -- Blood Contract: Bloodshed
+				},
+			})),
+			q(49876, { -- Lines in the Sand [A]
+				["sourceQuests"] = { 49874 },	-- By the Book
+				["provider"] = { "n", 131386 },	-- Kronah
+				["coord"] = { 20.6, 44, DRUSTVAR },
+				["timeline"] = { ADDED_8_1_5 },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(49946, { -- Lines in the Sand [H]
+				["sourceQuests"] = { 49874 },	-- By the Book
+				["provider"] = { "n", 131386 },	-- Kronah
+				["coord"] = { 20.6, 44, DRUSTVAR },
+				["timeline"] = { ADDED_8_1_5 },
+				["races"] = HORDE_ONLY,
+			}),
+			q(49877, { -- Temple of Sethraliss: Booking on a Favor
+				["sourceQuests"] = {
+					49876,	-- Lines in the Sand [A]
+					49946,	-- Lines in the Sand [H]
+				},
+				["provider"] = { "n", 150318 },	-- Veriss
+				["coord"] = { 27.6, 52.3, VOLDUN },
+				["maps"] = { 1038, 1043 }, -- Temple of Sethraliss
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(49879, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, { -- Brush With Death
+				["sourceQuests"] = { 49877 },	-- Temple of Sethraliss: Booking on a Favor
+				["provider"] = { "o", 279645 }, -- Tome of Oblivion
+				["coord"] = { 27.6, 52.3, VOLDUN },
+				["groups"] = {
+					r(292322), -- Blood Contract: Oblivion
+				},
+			})),
+			q(49878, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, { --Penning In Protection
+				["sourceQuests"] = { 49877 },	-- Temple of Sethraliss: Booking on a Favor
+				["provider"] = { "o", 279646 }, -- Bloodguard Chronicles
+				["coord"] = { 27.6, 52.2, VOLDUN },
+				["groups"] = {
+					r(292320), -- Blood Contract: Bloodguard
+				},
+			})),
+			q(49881, { -- The Final Verse
+				["sourceQuests"] = {
+					49878, -- Penning In Protection
+					49879, -- Brush With Death
+				},
+				["provider"] = { "n", 150318 },	-- Veriss
+				["coord"] = { 27.6, 52.3, VOLDUN },
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(49882, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, { -- A Test of Quills
+				["sourceQuests"] = { 49881 },	-- The Final Verse
+				["provider"] = { "n", 131397 },	-- Miju
+				["coord"] = { 32.6, 86, ZULDAZAR },
+				["groups"] = {
+					r(256301),	-- Sanguine Feather Quill of Lana'thel (RECIPE!)
+				},
+			})),
 		}),
-		q(49946, { -- Lines in the Sand [H]
-			["sourceQuests"] = { 49874 },	-- By the Book
-			["provider"] = { "n", 131386 },	-- Kronah
-			["coord"] = { 20.6, 44, DRUSTVAR },
-			["timeline"] = { ADDED_8_1_5 },
-			["races"] = HORDE_ONLY,
-		}),
-		q(49877, { -- Temple of Sethraliss: Booking on a Favor
-			["sourceQuests"] = {
-				49876,	-- Lines in the Sand [A]
-				49946,	-- Lines in the Sand [H]
-			},
-			["provider"] = { "n", 150318 },	-- Veriss
-			["coord"] = { 27.6, 52.3, VOLDUN },
-			["maps"] = { 1038, 1043 }, -- Temple of Sethraliss
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(49879, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, { -- Brush With Death
-			["sourceQuests"] = { 49877 },	-- Temple of Sethraliss: Booking on a Favor
-			["provider"] = { "o", 279645 }, -- Tome of Oblivion
-			["coord"] = { 27.6, 52.3, VOLDUN },
-			["groups"] = {
-				r(292322), -- Blood Contract: Oblivion
-			},
-		})),
-		q(49878, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, { --Penning In Protection
-			["sourceQuests"] = { 49877 },	-- Temple of Sethraliss: Booking on a Favor
-			["provider"] = { "o", 279646 }, -- Bloodguard Chronicles
-			["coord"] = { 27.6, 52.2, VOLDUN },
-			["groups"] = {
-				r(292320), -- Blood Contract: Bloodguard
-			},
-		})),
-		q(49881, { -- The Final Verse
-			["sourceQuests"] = {
-				49878, -- Penning In Protection
-				49879, -- Brush With Death
-			},
-			["provider"] = { "n", 150318 },	-- Veriss
-			["coord"] = { 27.6, 52.3, VOLDUN },
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(49882, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, { -- A Test of Quills
-			["sourceQuests"] = { 49881 },	-- The Final Verse
-			["provider"] = { "n", 131397 },	-- Miju
-			["coord"] = { 32.6, 86, ZULDAZAR },
-			["groups"] = {
-				r(256301),	-- Sanguine Feather Quill of Lana'thel (RECIPE!)
-			},
-		})),
 	})),
 	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(QUESTS, {
@@ -4120,8 +4123,9 @@ root(ROOTS.Professions, prof(INSCRIPTION, {
 			}),
 		})),
 	})),
-}));
+})));
 
+-- #if ANYCLASSIC
 -- Inscription - Skill ID  / SPELL ID
 root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRIPTION }, {
 	CLASS_GLYPHS,
@@ -5429,4 +5433,5 @@ itemrecipe("Technique: Glyph of Quick Decay", 50168, 71102, WRATH_PHASE_ONE);
 itemrecipe("Technique: Glyph of Rapid Rejuvenation", 50167, 71015, WRATH_PHASE_ONE);
 -- #endif
 itemrecipe("Technique: Rituals of the New Moon", 46108, 64051, WRATH_PHASE_ONE);
+-- #endif
 -- #endif

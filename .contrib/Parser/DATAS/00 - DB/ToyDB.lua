@@ -1205,18 +1205,20 @@ i(206565);	-- Plagued Grain
 i(208057);	-- Smoldering Banner of the Aspects
 i(208415);	-- Stasis Sand
 i(207099);	-- Tiny Box of Tiny Rocks
+i(208092);	-- Torch of Pyrreth
 i(206696);	-- Tricked-Out Thinking Cap
 i(197961);	-- Whelps on Strings
 --- NYI ---
 i(206195);	-- Path of the Naaru
-i(207730);	-- Unknown
-i(208092);	-- Unknown
+i(207730);	-- Idol of Ohn'ahra
 
 ------------------
 -- PATCH 10.1.7 --
 ------------------
 i(208433);	-- Bronze Racer's Pennant
 i(208421);	-- Compendium of the New Moon
+i(209858);	-- Dreamsurge Remnant
+i(209944);	-- Friendsurge Defenders
 --- Unsorted ---
 i(208229);	-- Honor of the Forsaken
 i(208880);	-- Brewhahat

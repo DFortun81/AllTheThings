@@ -7168,7 +7168,11 @@ local questFields = {
 			local type, id = strsplit(":", t.type);
 			local name, icon = app.GetAutomaticHeaderData(id, type);
 			t.name = name;
-			t.icon = icon;
+			if type == "s" then
+				t.icon = icon;
+			elseif type == "n" then
+				t.displayID = icon
+			end
 			return name;
 		end
 		local id = t.questID;
@@ -8092,7 +8096,7 @@ local criteriaFieldsWithIndex = RawCloneData(criteriaFields);
 local function GetAchievementCriteriaInfoWithoutThrowingADumbassError(achievementID, criteriaID, hidden)
 	if criteriaID <= GetAchievementNumCriteria(achievementID, hidden) then
 		return GetAchievementCriteriaInfo(achievementID, criteriaID, hidden);
-	else
+	elseif app.IsGit then
 		app.print("Invalid Achievement Criteria Index", achievementID, criteriaID);
 	end
 end
@@ -12002,7 +12006,7 @@ local AlternateDataTypes = {
 		return name, textureFilename;
 	end,
 	["n"] = function(id)
-		return app.NPCNameFromID[id], app.NPCDisplayIDFromID[id];
+		return app.NPCNameFromID[tonumber(id)], app.NPCDisplayIDFromID[tonumber(id)];
 	end,
 	["_G"] = function(id)
 		return _G[id];

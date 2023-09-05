@@ -1,6 +1,6 @@
 1.14.3.42926
 61544@@@Orphan Spell Visual Invisible Holder
-5.0.3.15882
+3.4.3.51126
 2671@@@Mechanical Squirrel
 7380@@@Siamese Cat
 7381@@@Silver Tabby Cat
@@ -17,7 +17,7 @@
 7392@@@Prairie Chicken
 7393@@@White Plymouth Rock
 7394@@@Ancona Chicken
-7395@@@Undercity Cockroach
+7395@@@Cockroach
 7543@@@Dark Whelpling
 7544@@@Crimson Whelpling
 7545@@@Emerald Whelpling
@@ -32,6 +32,8 @@
 7554@@@Snowy Owl
 7555@@@Hawk Owl
 7556@@@Eagle Owl
+7558@@@Cottontail Rabbit
+7559@@@Spotted Rabbit
 7560@@@Snowshoe Rabbit
 7561@@@Albino Snake
 7562@@@Brown Snake
@@ -54,10 +56,7 @@
 11326@@@Mini Diablo
 11327@@@Zergling
 12419@@@Lifelike Toad
-14143@@@Ar'lia
-14305@@@Human Orphan
 14421@@@Brown Prairie Dog
-14444@@@Orcish Orphan
 14629@@@Loggerhead Snapjaw
 14630@@@Leatherback Snapjaw
 14631@@@Olive Snapjaw
@@ -90,7 +89,7 @@
 16701@@@Spirit of Summer
 17254@@@White Tiger Cub
 17255@@@Hippogryph Hatchling
-18075@@@Mannoroth
+17709@@@Talasite Owl
 18381@@@Netherwhelp
 18839@@@Magical Crawdad
 20245@@@Mr. Kitty
@@ -110,9 +109,6 @@
 21266@@@Ravager Hatchling
 22328@@@Toy RC Mortar Tank
 22445@@@Miniwing
-22484@@@Zeppit
-22817@@@Blood Elf Orphan
-22818@@@Draenei Orphan
 22943@@@Wolpertinger
 23114@@@Lucky
 23198@@@Lucky
@@ -133,19 +129,14 @@
 25110@@@Dragon Kite
 25146@@@Golden Pig
 25147@@@Silver Pig
-25499@@@PattyMack - The Dummy
-25706@@@Searing Scorchling
+25706@@@Scorchling
 26050@@@Snarly
 26056@@@Chuck
 26119@@@Phoenix Hatchling
 26243@@@Crimson Serpent
-26613@@@Arctic Grizzly Cub
-26614@@@Snowshoe Hare
 27017@@@Depleted War Golem
 27217@@@Spirit of Competition
 27346@@@Essence of Competition
-27438@@@Rainbow Trout
-27798@@@Reincarnated Skytalon
 27914@@@Ethereal Soul-Trader
 28267@@@Coyote Spirit
 28470@@@Nether Ray Fry
@@ -153,10 +144,7 @@
 28883@@@Frosty
 29089@@@Mini Tyrael
 29147@@@Ghostly Skull
-29238@@@Scourge Haunt
-29611@@@King Varian Wrynn
 29726@@@Mr. Chilly
-29850@@@Lo'Gosh
 30379@@@Westfall Chicken
 31575@@@Giant Sewer Rat
 32589@@@Tickbird Hatchling
@@ -184,12 +172,9 @@
 33274@@@Mechanopeep
 33529@@@Curious Wolvar Pup
 33530@@@Curious Oracle Hatchling
-33532@@@Wolvar Orphan
-33533@@@Oracle Orphan
 33578@@@Murkimus the Gladiator
 33810@@@Sen'jin Fetish
 34031@@@XS-001 Constructor Bot
-34278@@@Withers
 34320@@@Venomhide Hatchling
 34364@@@Calico Cat
 34587@@@Warbot
@@ -217,16 +202,40 @@
 36979@@@Lil' K.T.
 37865@@@Perky Pug
 38374@@@Toxic Wasteling
-38976@@@Worgen Dust Bunny
-39622@@@Spirit of Lo'Gosh
-39627@@@Spirit of Goldrinn
 40198@@@Frigid Frostling
-40295@@@Blue Clockwork Rocket Bot
+40295@@@Clockwork Rocket Bot
 40624@@@Celestial Dragon
 40703@@@Lil' XT
 40721@@@Murkimus the Gladiator
-40955@@@Goldrinn
 42078@@@Mini Thor
+194870@@@Pebble
+196534@@@Hoplet
+5.0.3.15882
+7395@@@Undercity Cockroach
+14143@@@Ar'lia
+14305@@@Human Orphan
+14444@@@Orcish Orphan
+18075@@@Mannoroth
+22484@@@Zeppit
+22817@@@Blood Elf Orphan
+22818@@@Draenei Orphan
+25499@@@PattyMack - The Dummy
+25706@@@Searing Scorchling
+26613@@@Arctic Grizzly Cub
+26614@@@Snowshoe Hare
+27438@@@Rainbow Trout
+27798@@@Reincarnated Skytalon
+29238@@@Scourge Haunt
+29611@@@King Varian Wrynn
+29850@@@Lo'Gosh
+33532@@@Wolvar Orphan
+33533@@@Oracle Orphan
+34278@@@Withers
+38976@@@Worgen Dust Bunny
+39622@@@Spirit of Lo'Gosh
+39627@@@Spirit of Goldrinn
+40295@@@Blue Clockwork Rocket Bot
+40955@@@Goldrinn
 42177@@@Blue Mini Jouster
 42183@@@Gold Mini Jouster
 43800@@@Personal World Destroyer
@@ -20296,6 +20305,8 @@
 208466@@@Infinite Dragon
 10.1.5.50622
 171025@@@Sunny
+10.1.5.51130
+208436@@@Slyvy
 10.1.7.50442
 119629@@@Lord Hel'nurath
 205742@@@Curious Whelpling

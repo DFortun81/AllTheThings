@@ -296,6 +296,11 @@
 387323@@@X-51 Nether-Rocket
 388516@@@Hao-Yue, River Foreseer
 394209@@@Festering Emerald Drake
+3.4.3.51126
+34767@@@Thalassian Charger
+34769@@@Thalassian Warhorse
+55164@@@Swift Spectral Gryphon
+55531@@@Mechano-Hog
 6.0.1.18179
 0@@@TEST - Traveler's Tundra Mammoth (Alliance)
 0@@@TEST - Running Wild
@@ -354,9 +359,7 @@
 51960@@@Frost Wyrm Mount
 54726@@@Winged Steed of the Ebon Blade
 54727@@@Winged Steed of the Ebon Blade
-55164@@@Swift Spectral Gryphon
 55293@@@Amani War Bear
-55531@@@Mechano-Hog
 58819@@@Swift Brown Steed
 58997@@@Big Blizzard Bear
 58999@@@Big Blizzard Bear
@@ -582,8 +585,6 @@
 153489@@@Iron Chimaera
 7.3.0.24473
 16081@@@Arctic Wolf
-34767@@@Thalassian Charger
-34769@@@Thalassian Warhorse
 69820@@@Sunwalker Kodo
 69826@@@Great Sunwalker Kodo
 73629@@@Exarch's Elekk

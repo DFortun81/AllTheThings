@@ -661,3 +661,5 @@
 10.1.7.50893
 515@@@Eastern Kingdoms Racer %s
 521@@@Outland Racer %s
+10.1.7.51059
+523@@@Isles Ace %s

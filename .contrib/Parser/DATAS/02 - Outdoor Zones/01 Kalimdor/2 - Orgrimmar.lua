@@ -3873,27 +3873,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 7.3.5", "removed 8.0.1" },
 					["races"] = HORDE_ONLY,
 				}),
-				q(5301, {	-- The Art of the Armorsmith (H)
-					["qg"] = 11177,	-- Okothos Ironrager
-					["altQuests"] = {
-						5283,	-- The Art of the Armorsmith (A)
-						5284,	-- The Way of the Weaponsmith (A)
-						5302,	-- The Way of the Weaponsmith (H)
-					},
-					-- #if BEFORE 4.0.3
-					["description"] = "Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",
-					-- #endif
-					["coord"] = { 79.8, 23.8, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
-					["requireSkill"] = BLACKSMITHING,
-					["races"] = HORDE_ONLY,
-					["cost"] = {
-						{ "i", 7937, 4 },	-- Ornate Mithril Helm
-						{ "i", 7936, 2 },	-- Ornate Mithril Boots
-						{ "i", 7935, 1 },	-- Ornate Mithril Breastplate
-					},
-					["lvl"] = 40,
-				}),
 				q(51796, {	-- The Battle for Lordaeron
 					["providers"] = {
 						{ "n", 14720 },	-- High Overlord Saurfang
@@ -4086,28 +4065,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1013,	-- The Stockade (Scenario)
 					},
 					["races"] = HORDE_ONLY,
-				}),
-				q(5302, {	-- The Way of the Weaponsmith (H)
-					["qg"] = 11178,	-- Borgosh Corebender
-					["altQuests"] = {
-						5283,	-- The Art of the Armorsmith (A)
-						5301,	-- The Art of the Armorsmith (H)
-						5284,	-- The Way of the Weaponsmith (A)
-					},
-					-- #if BEFORE 4.0.3
-					["description"] = "Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",
-					-- #endif
-					["coord"] = { 79.6, 23.6, ORGRIMMAR },
-					["timeline"] = { "removed 4.0.3" },
-					["requireSkill"] = BLACKSMITHING,
-					["races"] = HORDE_ONLY,
-					["cost"] = {
-						{ "i", 3853, 4 },	-- Moonsteel Broadsword
-						{ "i", 3855, 4 },	-- Massive Iron Axe
-						{ "i", 7941, 2 },	-- Heavy Mithril Axe
-						{ "i", 7945, 2 },	-- Big Black Mace
-					},
-					["lvl"] = 40,
 				}),
 				q(26830, {	-- Traitor's Bait
 					["qg"] = 3144,	-- Eitrigg

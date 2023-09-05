@@ -728,6 +728,21 @@ root(ROOTS.Unsorted, {
 			i(210054),	-- Forsaken Champion's Vest
 			i(210062),	-- Ironbound Satchel of Helpful Goods
 			i(210063),	-- Invader's Satchel of Helpful Goods
+			--
+			i(206600),	-- A Clue
+			i(206760),	-- A Clue
+			i(206762),	-- A Clue
+			i(206948),	-- A Clue: The Shifting Sands
+			i(206950),	-- A Clue
+			i(206996),	-- A Clue
+			i(208406),	-- High Scholar's Circlet
+			i(208407),	-- High Scholar's Mantle
+			i(208408),	-- High Scholar's Sash
+			i(208409),	-- High Scholar's Slippers
+			i(208410),	-- High Scholar's Gloves
+			i(208411),	-- High Scholar's Gown
+			i(208412),	-- High Scholar's Arcana
+			i(208613),	-- High Scholar's Drape
 		})),
 		tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
 			filter(COSMETIC, {
@@ -914,28 +929,22 @@ root(ROOTS.Unsorted, {
 			--
 			i(206160),	-- Madam Shadow's Grimoire
 			i(206520),	-- Beverage for Pedgi
-			i(208400),	-- Silks of the Unnamed Cult
 			i(208417),	-- Chromie's Certificate of Temporal Tidiness
 			--
 			i(133589),	-- Dalape�o Pepper
 			i(208567),	-- Medal of Conquest
 			--
-
+			i(190091),	-- Fanciful Corsage
+			i(190694),	-- Solemn Watchman's Belt
+			i(190695),	-- Solemn Watchman's Boots
+			i(190728),	-- Gothic Corsage
+			i(190845),	-- Solemn Watchman's Trousers
+			i(190872),	-- Solemn Watchman's Cuirass
+			i(190896),	-- Solemn Watchman's Spaulders
+			i(190901),	-- Solemn Watchman's Helm
+			i(200925),	-- Ensemble: Solemn Watchman's Garb
 			--
-			i(190601),	-- Sunny
-				i(190091),	-- Fanciful Corsage
-				i(190694),	-- Solemn Watchman's Belt
-				i(190695),	-- Solemn Watchman's Boots
-				i(190728),	-- Gothic Corsage
-				i(190797),	-- Ensemble: Bones of the Bloodhunter
-				i(190845),	-- Solemn Watchman's Trousers
-				i(190872),	-- Solemn Watchman's Cuirass
-				i(190896),	-- Solemn Watchman's Spaulders
-				i(190901),	-- Solemn Watchman's Helm
-				i(200925),	-- Ensemble: Solemn Watchman's Garb
-
-
-			--]]
+			i(210265),	-- High Scholar's Grand Staff
 		})),
 		tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 			header(HEADERS.LFGDungeon, 2403, {	-- Aberrus, the Shadowed Crucible

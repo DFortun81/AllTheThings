@@ -2,7 +2,7 @@
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
 local ALCHEMY_KNOWLEDGE = 2024;
-root(ROOTS.Professions, prof(ALCHEMY, {
+root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEMY }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18733),	-- A Cure for All Ails IV
 		ach(18732),	-- A Cure for All Ails III
@@ -108,16 +108,17 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 		ach(18734),	-- Powerful Concoctions I
 	})),
 	tier(CLASSIC_TIER, {
-		ach(18723, {	-- Look, You're Specialized!
-			["sourceQuests"] = {
-				29481,	-- Elixir Master
-				29067,	-- Potion Master
-				29482,	-- Transmutation Master
-			},
-			["sourceQuestNumRequired"] = 1,
-			["timeline"] = { ADDED_10_1_7 },
-		}),
-		q(29481, {	-- Elixir Master
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+			ach(18723, {	-- Look, You're Specialized!
+				["sourceQuests"] = {
+					29481,	-- Elixir Master
+					29067,	-- Potion Master
+					29482,	-- Transmutation Master
+				},
+				["sourceQuestNumRequired"] = 1,
+			}),
+		})),
+		n(QUESTS, sharedData({
 			["description"] = "Requires 300 Classic Alchemy.",
 			["qgs"] = {
 				4160,	-- Ainethil
@@ -137,198 +138,161 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 			},
 			["timeline"] = { ADDED_4_3_0 },
 			["repeatable"] = true,
-		}),
-		q(29067, {	-- Potion Master
-			["description"] = "Requires 300 Classic Alchemy.",
-			["qgs"] = {
-				4160,	-- Ainethil
-				3347,	-- Yelmak
-				3009,	-- Bena Winterhoof
-				5177,	-- Tally Berryfizz
-				5499,	-- Lilyssia Nightbreeze
-				4611,	-- Doctor Herbert Halsey
-			},
-			["coords"] = {
-				{ 54.0, 38.6, DARNASSUS },	-- Ainethil
-				{ 55.6, 45.8, ORGRIMMAR },	-- Yelmak
-				{ 46.8, 33.6, THUNDER_BLUFF },	-- Bena Winterhoof
-				{ 66.6, 55.0, IRONFORGE },	-- Tally Berryfizz
-				{ 55.6, 85.8, STORMWIND_CITY },	-- Lilyssia Nightbreeze
-				{ 47.6, 72.8, UNDERCITY },	-- Doctor Herbert Halsey
-			},
-			["timeline"] = { ADDED_4_3_0 },
-			["repeatable"] = true,
-		}),
-		q(29482, {	-- Transmutation Master
-			["description"] = "Requires 300 Classic Alchemy.",
-			["qgs"] = {
-				4160,	-- Ainethil
-				3347,	-- Yelmak
-				3009,	-- Bena Winterhoof
-				5177,	-- Tally Berryfizz
-				5499,	-- Lilyssia Nightbreeze
-				4611,	-- Doctor Herbert Halsey
-			},
-			["coords"] = {
-				{ 54.0, 38.6, DARNASSUS },	-- Ainethil
-				{ 55.6, 45.8, ORGRIMMAR },	-- Yelmak
-				{ 46.8, 33.6, THUNDER_BLUFF },	-- Bena Winterhoof
-				{ 66.6, 55.0, IRONFORGE },	-- Tally Berryfizz
-				{ 55.6, 85.8, STORMWIND_CITY },	-- Lilyssia Nightbreeze
-				{ 47.6, 72.8, UNDERCITY },	-- Doctor Herbert Halsey
-			},
-			["timeline"] = { ADDED_4_3_0 },
-			["repeatable"] = true,
-		}),
+		}, {
+			q(29481),	-- Elixir Master
+			q(29067),	-- Potion Master
+			q(29482),	-- Transmutation Master
+		})),
 	}),
-	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
-	})),
 	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
-		ach(18770, {	-- Silas' Sphere of Transmutation
-			["provider"] = { "i", 156631 },	-- Silas' Sphere of Transmutation
-			["timeline"] = { ADDED_10_1_7 },
-		}),
-		q(54463, {	-- Alchemical Equations [A]
-			["provider"] = { "n", 132228 },	-- Elric Whalgrene
-			["coord"] = { 74.2, 6.60, BORALUS },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
-		}),
-		q(54464, {	-- Alchemical Equations [H]
-			["provider"] = { "n", 122703 },	-- Clever Kumali
-			["coord"] = { 42.2, 38.0, DAZARALOR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
-		}),
-		------ Tools of Trade Questline ------
-		q(50121, {	-- Casting the First Stone [A]
-			["description"] = "This quest chain requires 150 in Kul Tiran Alchemy.",
-			["provider"] = { "n", 132228 },	-- Elric Whalgrene
-			["coord"] = { 74.2, 6.5, BORALUS },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(50112, {	-- Casting the First Stone [H]
-			["description"] = "This quest chain requires 150 in Zandalari Alchemy.",
-			["provider"] = { "n", 122703 },	-- Clever Kumali
-			["coord"] = { 42.2, 38.0, DAZARALOR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(50122, {	-- Ocular Extracts [A]
-			["sourceQuests"] = { 50121 },	-- Casting the First Stone [A]
-			["provider"] = { "n", 132228 },	-- Elric Whalgrene
-			["coord"] = { 74.2, 6.5, BORALUS },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(50113, {	-- Ocular Extracts [H]
-			["sourceQuests"] = { 50112 },	-- Casting the First Stone [H]
-			["provider"] = { "n", 122703 },	-- Clever Kumali
-			["coord"] = { 42.2, 38.0, DAZARALOR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(50124, {	-- Changing the Scenery [A]
-			["sourceQuests"] = { 50121 },	-- Casting the First Stone [A]
-			["provider"] = { "n", 132228 },	-- Elric Whalgrene
-			["coord"] = { 74.2, 6.5, BORALUS },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(50115, {	-- Changing the Scenery [H]
-			["sourceQuests"] = { 50112 },	-- Casting the First Stone [H]
-			["provider"] = { "n", 122703 },	-- Clever Kumali
-			["coord"] = { 42.2, 38.0, DAZARALOR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(50125, {	-- A Possible Solution [A]
-			["sourceQuests"] = {
-				50122,	-- Ocular Extracts [A]
-				50124,	-- Changing the Scenery [A]
-			},
-			["provider"] = { "n", 132228 },	-- Elric Whalgrene
-			["coord"] = { 74.2, 6.5, BORALUS },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(50116, {	-- A Possible Solution [H]
-			["sourceQuests"] = {
-				50115,	-- Changing the Scenery [H]
-				50113,	-- Ocular Extracts [H]
-			},
-			["provider"] = { "n", 122703 },	-- Clever Kumali
-			["coord"] = { 42.2, 38.0, DAZARALOR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(50126, {	-- A Deathly Draught [A]
-			["sourceQuests"] = { 50125 },	-- A Possible Solution [A]
-			["provider"] = { "n", 132347 },	-- Quintin Whalgrene
-			["coord"] = { 30.6, 49.6, DRUSTVAR },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(50117, {	-- A Deathly Draught [H]
-			["sourceQuests"] = { 50116 },	-- A Possible Solution [H]
-			["provider"] = { "n", 132680 },	-- Zukashi
-			["coord"] = { 65.2, 36.9, NAZMIR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(50127, {	-- A Stone's Throw [A]
-			["sourceQuests"] = { 50125 },	-- A Possible Solution [A]
-			["provider"] = { "n", 132347 },	-- Quintin Whalgrene
-			["coord"] = { 30.6, 49.6, DRUSTVAR },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(50118, {	-- A Stone's Throw [H]
-			["sourceQuests"] = { 50116 },	-- A Possible Solution [H]
-			["provider"] = { "n", 132680 },	-- Zukashi
-			["coord"] = { 65.2, 36.9, NAZMIR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(50128, {	-- Chemically Compounded [A]
-			["sourceQuests"] = {
-				50126,	-- A Stone's Throw [A]
-				50127,	-- A Deathly Draught [A]
-			},
-			["provider"] = { "n", 132347 },	-- Quintin Whalgrene
-			["coord"] = { 30.6, 49.6, DRUSTVAR },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(50119, {	-- Chemically Compounded [H]
-			["sourceQuests"] = {
-				50117,	-- A Deathly Draught [H]
-				50118,	-- A Stone's Throw [H]
-			},
-			["provider"] = { "n", 132680 },	-- Zukashi
-			["coord"] = { 65.2, 36.9, NAZMIR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(50129, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- A Recipe for Success [A]
-			["sourceQuests"] = { 50128 },	-- Chemically Compounded [A]
-			["provider"] = { "o", 280755 },	-- Quintin's Satchel
-			["coord"] = { 62.9, 28.9, DRUSTVAR },
-			["races"] = ALLIANCE_ONLY,
-			["g"] = {
-				r(260403),	-- Silus' Sphere of Transmutation (RECIPE!)
-			},
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+			ach(18770, {	-- Silas' Sphere of Transmutation
+				["provider"] = { "i", 156631 },	-- Silas' Sphere of Transmutation
+			}),
 		})),
-		q(50120, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- A Recipe for Success [H]
-			["sourceQuests"] = { 50119 },	-- Chemically Compounded [H]
-			["provider"] = { "o", 280957 },	-- Zukashi's Satchel
-			["coord"] = { 62.9, 28.9, NAZMIR },
-			["races"] = HORDE_ONLY,
-			["g"] = {
-				r(260403),	-- Silus' Sphere of Transmutation (RECIPE!)
-			},
-		})),
+		n(QUESTS, {
+			q(54463, {	-- Alchemical Equations [A]
+				["provider"] = { "n", 132228 },	-- Elric Whalgrene
+				["coord"] = { 74.2, 6.60, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
+			}),
+			q(54464, {	-- Alchemical Equations [H]
+				["provider"] = { "n", 122703 },	-- Clever Kumali
+				["coord"] = { 42.2, 38.0, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
+			}),
+			------ Tools of Trade Questline ------
+			q(50121, {	-- Casting the First Stone [A]
+				["description"] = "This quest chain requires 150 in Kul Tiran Alchemy.",
+				["provider"] = { "n", 132228 },	-- Elric Whalgrene
+				["coord"] = { 74.2, 6.5, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(50112, {	-- Casting the First Stone [H]
+				["description"] = "This quest chain requires 150 in Zandalari Alchemy.",
+				["provider"] = { "n", 122703 },	-- Clever Kumali
+				["coord"] = { 42.2, 38.0, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(50122, {	-- Ocular Extracts [A]
+				["sourceQuests"] = { 50121 },	-- Casting the First Stone [A]
+				["provider"] = { "n", 132228 },	-- Elric Whalgrene
+				["coord"] = { 74.2, 6.5, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(50113, {	-- Ocular Extracts [H]
+				["sourceQuests"] = { 50112 },	-- Casting the First Stone [H]
+				["provider"] = { "n", 122703 },	-- Clever Kumali
+				["coord"] = { 42.2, 38.0, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(50124, {	-- Changing the Scenery [A]
+				["sourceQuests"] = { 50121 },	-- Casting the First Stone [A]
+				["provider"] = { "n", 132228 },	-- Elric Whalgrene
+				["coord"] = { 74.2, 6.5, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(50115, {	-- Changing the Scenery [H]
+				["sourceQuests"] = { 50112 },	-- Casting the First Stone [H]
+				["provider"] = { "n", 122703 },	-- Clever Kumali
+				["coord"] = { 42.2, 38.0, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(50125, {	-- A Possible Solution [A]
+				["sourceQuests"] = {
+					50122,	-- Ocular Extracts [A]
+					50124,	-- Changing the Scenery [A]
+				},
+				["provider"] = { "n", 132228 },	-- Elric Whalgrene
+				["coord"] = { 74.2, 6.5, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(50116, {	-- A Possible Solution [H]
+				["sourceQuests"] = {
+					50115,	-- Changing the Scenery [H]
+					50113,	-- Ocular Extracts [H]
+				},
+				["provider"] = { "n", 122703 },	-- Clever Kumali
+				["coord"] = { 42.2, 38.0, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(50126, {	-- A Deathly Draught [A]
+				["sourceQuests"] = { 50125 },	-- A Possible Solution [A]
+				["provider"] = { "n", 132347 },	-- Quintin Whalgrene
+				["coord"] = { 30.6, 49.6, DRUSTVAR },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(50117, {	-- A Deathly Draught [H]
+				["sourceQuests"] = { 50116 },	-- A Possible Solution [H]
+				["provider"] = { "n", 132680 },	-- Zukashi
+				["coord"] = { 65.2, 36.9, NAZMIR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(50127, {	-- A Stone's Throw [A]
+				["sourceQuests"] = { 50125 },	-- A Possible Solution [A]
+				["provider"] = { "n", 132347 },	-- Quintin Whalgrene
+				["coord"] = { 30.6, 49.6, DRUSTVAR },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(50118, {	-- A Stone's Throw [H]
+				["sourceQuests"] = { 50116 },	-- A Possible Solution [H]
+				["provider"] = { "n", 132680 },	-- Zukashi
+				["coord"] = { 65.2, 36.9, NAZMIR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(50128, {	-- Chemically Compounded [A]
+				["sourceQuests"] = {
+					50126,	-- A Stone's Throw [A]
+					50127,	-- A Deathly Draught [A]
+				},
+				["provider"] = { "n", 132347 },	-- Quintin Whalgrene
+				["coord"] = { 30.6, 49.6, DRUSTVAR },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(50119, {	-- Chemically Compounded [H]
+				["sourceQuests"] = {
+					50117,	-- A Deathly Draught [H]
+					50118,	-- A Stone's Throw [H]
+				},
+				["provider"] = { "n", 132680 },	-- Zukashi
+				["coord"] = { 65.2, 36.9, NAZMIR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(50129, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- A Recipe for Success [A]
+				["sourceQuests"] = { 50128 },	-- Chemically Compounded [A]
+				["provider"] = { "o", 280755 },	-- Quintin's Satchel
+				["coord"] = { 62.9, 28.9, DRUSTVAR },
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					r(260403),	-- Silus' Sphere of Transmutation (RECIPE!)
+				},
+			})),
+			q(50120, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- A Recipe for Success [H]
+				["sourceQuests"] = { 50119 },	-- Chemically Compounded [H]
+				["provider"] = { "o", 280957 },	-- Zukashi's Satchel
+				["coord"] = { 62.9, 28.9, NAZMIR },
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					r(260403),	-- Silus' Sphere of Transmutation (RECIPE!)
+				},
+			})),
+		}),
 	})),
 	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
@@ -578,7 +542,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 			}),
 		})),
 	})),
-}));
+})));
 
 
 

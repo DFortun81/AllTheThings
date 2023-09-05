@@ -697,6 +697,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		ach(18804, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Neltharion's Legacy
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
+				17773,	-- A Blue Dawn
 				18160,	-- Aberrus, the Shadowed Crucible
 				18703,	-- Dawn of the Infinite: Galakrond's Fall
 				18704,	-- Dawn of the Infinite: Murozond's Rise
