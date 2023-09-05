@@ -490,7 +490,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["timeline"] = { ADDED_4_3_0 },
 			}),
 		})),
-		-- #if AFTER CATA
+		-- #if NOT ANYCLASSIC
 		n(QUESTS, sharedData({
 			["cost"] = { { "g", 20000 } },	-- 2g
 			["lvl"] = 30,
