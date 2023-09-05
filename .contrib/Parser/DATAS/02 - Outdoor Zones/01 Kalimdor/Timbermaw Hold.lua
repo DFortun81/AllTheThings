@@ -36,15 +36,15 @@ local OnTooltipForTimbermawHold = [[function(t)
 		local x, n = math.ceil((42000 - t.reputation) / repPerKill), math.ceil(84000 / repPerKill);
 		GameTooltip:AddDoubleLine("Kill Deadwood or Winterfall Furbolgs", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
 		-- #elseif AFTER TBC
-		if reputation < ]] .. REVERED .. [[ then
+		if reputation < ]] .. (REVERED - 1) .. [[ then
 			local repPerKill = isHuman and 11 or 10;
-			local x, n = math.ceil((]] .. REVERED .. [[ - t.reputation) / repPerKill), math.ceil(]] .. (REVERED + 42000) .. [[ / repPerKill);
+			local x, n = math.ceil((]] .. (REVERED - 1) .. [[ - t.reputation) / repPerKill), math.ceil(]] .. ((REVERED - 1) + 42000) .. [[ / repPerKill);
 			GameTooltip:AddDoubleLine("Kill Deadwood or Winterfall Furbolgs (Stops at Revered)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
 		end
 		-- #else
-		if reputation < ]] .. HONORED .. [[ then
+		if reputation < ]] .. (HONORED - 1) .. [[ then
 			local repPerKill = isHuman and 5.5 or 5;
-			local x, n = math.ceil((]] .. HONORED .. [[ - t.reputation) / repPerKill), math.ceil(]] .. (HONORED + 42000) .. [[ / repPerKill);
+			local x, n = math.ceil((]] .. (HONORED - 1) .. [[ - t.reputation) / repPerKill), math.ceil(]] .. ((HONORED - 1) + 42000) .. [[ / repPerKill);
 			GameTooltip:AddDoubleLine("Kill Deadwood or Winterfall Furbolgs (Stops at Honored)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
 		end
 		-- #endif
@@ -64,9 +64,9 @@ local OnTooltipForTimbermawHold = [[function(t)
 		if remaining > 0 then GameTooltip:AddLine("You need " .. remaining .. " more feathers/beads for Exalted.", 1, 1, 0); end
 		-- #if BEFORE CATA
 		-- #if BEFORE TBC
-		if reputation < ]] .. HONORED .. [[ then GameTooltip:AddLine("PROTIP: Do NOT turn in the totems or feathers until after Honored!", 1, 0.2, 0.2); end
+		if reputation < ]] .. (HONORED - 1) .. [[ then GameTooltip:AddLine("PROTIP: Do NOT turn in the totems or feathers until after Honored!", 1, 0.2, 0.2); end
 		-- #else
-		if reputation < ]] .. REVERED .. [[ then GameTooltip:AddLine("PROTIP: Do NOT turn in the totems or feathers until after Revered!", 1, 0.2, 0.2); end
+		if reputation < ]] .. (REVERED - 1) .. [[ then GameTooltip:AddLine("PROTIP: Do NOT turn in the totems or feathers until after Revered!", 1, 0.2, 0.2); end
 		-- #endif
 		-- #endif
 	end
