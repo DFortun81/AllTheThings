@@ -1205,12 +1205,12 @@ i(206565);	-- Plagued Grain
 i(208057);	-- Smoldering Banner of the Aspects
 i(208415);	-- Stasis Sand
 i(207099);	-- Tiny Box of Tiny Rocks
+i(208092);	-- Torch of Pyrreth
 i(206696);	-- Tricked-Out Thinking Cap
 i(197961);	-- Whelps on Strings
 --- NYI ---
 i(206195);	-- Path of the Naaru
 i(207730);	-- Unknown
-i(208092);	-- Unknown
 
 ------------------
 -- PATCH 10.1.7 --

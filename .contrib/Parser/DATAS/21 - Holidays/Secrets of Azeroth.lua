@@ -189,19 +189,51 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 				i(208130),	-- Maruuk Burial Banner
 			},
 		}),
+
+		-- Day 4 --
+		q(77281, {	-- Securing an Artifact
+			["qg"] = 185562,	-- Tithris
+			["coord"] = { 47.5, 46.2, VALDRAKKEN },
+			["groups"] = {
+				i(208131),	-- Preservationist's Dispatch
+			},
+		}),
+		q(77282, {	-- Artifact Secured
+			["provider"] = { "o", 405513 },	-- Torch of Pyrreth
+			["coord"] = { 54.6, 20.4, THE_WAKING_SHORES },
+			["sourceQuest"] = 77281,	-- Securing an Artifact
+			["groups"] = {
+				i(208135),	-- Torch of Pyrreth
+				i(208092),	-- Torch of Pyrreth (TOY!)
+			},
+		}),
+		q(77263, {	-- The Torch of Pyrreth
+			["qg"] = 206864,	-- Preservationist Kathos
+			["coord"] = { 47.4, 48.1, VALDRAKKEN },
+			["sourceQuest"] = 77282,	-- Artifact Secured
+			["groups"] = {
+				i(208107),	-- Kathos' Field Glasses
+			},
+		}),
 	}),
 }))));
 
 root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 	q(77204),	-- placed 'Golden Chalice'
-	q(76987),	-- completed 'The Inquisitive' (account-wide completion)
-	q(76995),	-- looted Crazed Looter first time (208182)
-	q(77687),	-- completed 'A Secretive Contact' (77165)
-	q(77230),	-- paying Shakey's tab during 'A Secretive Contact' (77165)
-	q(78202),	-- completed 'Unfinished Thinking Cap' (77237)
-	q(76505),	-- completed 'The Tricked-Out Thinking Cap' (76504)
-	q(77513),	-- completed 'The Tricked-Out Thinking Cap' (76504)
-	q(77521),	-- completed 'Preservationist Cleared' (77277)
+	q(76987),	-- completed 'The Inquisitive' (account-wide completion) (achievementID 18642)
+	q(76995),	-- looted Crazed Looter first time (itemID 208182)
+	q(77687),	-- completed 'A Secretive Contact' (questID 77165)
+	q(77230),	-- paying Shakey's tab during 'A Secretive Contact' (questID 77165)
+	q(78202),	-- completed 'Unfinished Thinking Cap' (questID 77237)
+	q(76505),	-- completed 'The Tricked-Out Thinking Cap' (questID 76504)
+	q(77513),	-- completed 'The Tricked-Out Thinking Cap' (questID 76504)
+	q(77521),	-- completed 'Preservationist Cleared' (questID 77277)
+	q(77688),	-- accepted 'Securing an Artifact' (questID 77281)
+	q(77401),	-- using Ancient Lever  at 56.6 20.3 during 'Securing an Artifact' (questID 77281)
+	q(77402),	-- using Ancient Lever  at 57.7 23.8 during 'Securing an Artifact' (questID 77281)
+	q(77403),	-- using Ancient Lever  at 57.0 25.5 during 'Securing an Artifact' (questID 77281)
+	q(78201),	-- completed 'Artifact Secured' (questID 77282)
+	q(77522),	-- completed 'The Torch of Pyrreth' (questID 77263)
 
 	-- TODO: Someone add these under Community Rumors achievement in a suitable structure please
 	q(77289),	-- Community Satchel 1 (Eastern Plague Lands @ 55.1, 59.4)
