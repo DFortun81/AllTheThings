@@ -923,19 +923,49 @@ root(ROOTS.Unsorted, {
 
 			--
 			i(190601),	-- Sunny
-				i(190091),	-- Fanciful Corsage
-				i(190694),	-- Solemn Watchman's Belt
-				i(190695),	-- Solemn Watchman's Boots
-				i(190728),	-- Gothic Corsage
-				i(190797),	-- Ensemble: Bones of the Bloodhunter
-				i(190845),	-- Solemn Watchman's Trousers
-				i(190872),	-- Solemn Watchman's Cuirass
-				i(190896),	-- Solemn Watchman's Spaulders
-				i(190901),	-- Solemn Watchman's Helm
-				i(200925),	-- Ensemble: Solemn Watchman's Garb
+			i(190091),	-- Fanciful Corsage
+			i(190694),	-- Solemn Watchman's Belt
+			i(190695),	-- Solemn Watchman's Boots
+			i(190728),	-- Gothic Corsage
+			i(190797),	-- Ensemble: Bones of the Bloodhunter
+			i(190845),	-- Solemn Watchman's Trousers
+			i(190872),	-- Solemn Watchman's Cuirass
+			i(190896),	-- Solemn Watchman's Spaulders
+			i(190901),	-- Solemn Watchman's Helm
+			i(200925),	-- Ensemble: Solemn Watchman's Garb
+			--
+			i(190693),	-- Ancestral Stonehoof Totem
+			i(190712),	-- Ancestral Skychaser Totem
+			i(190923),	-- Ensemble: Dashing Buccaneer's Slops
+			i(208045),	-- Slyvy
+			i(208161),	-- Helm of the Light Avenger
+			i(208162),	-- Shoulderguards of the Light Avenger
+			i(208163),	-- Cinch of the Light Avenger
+			i(208164),	-- Kite of the Light Avenger
+			i(208165),	-- Hammer of the Light Avenger
+			i(208166),	-- Club of the Light Avenger
+			i(208167),	-- Libram of the Unnamed Cult
+			i(208169),	-- Scepter of the Unnamed Cult
+			i(208171),	-- Staff of the Unnamed Cult
+			i(208173),	-- Blood Onyx Serrated Edge
+			i(208174),	-- Blood Onyx Impaler
+			i(208175),	-- Blood Onyx Shortblade
+			i(208176),	-- Plate of the Light Avenger
+			i(208177),	-- Armaments of the Light Avenger
+			i(208178),	-- Secrets of the Unnamed Cult
+			i(208179),	-- Blood Onyx Blades
+			i(208397),	-- Hood of the Unnamed Cult
+			i(208398),	-- Mantle of the Unnamed Cult
+			i(208399),	-- Sash of the Unnamed Cult
+			i(208402),	-- Blood Onyx Cowl
+			i(208403),	-- Blood Onyx Pauldrons
+			i(208404),	-- Blood Onyx Buckle
+			i(208405),	-- Blood Onyx Uniform
+			i(208423),	-- Homebrewer's Sampling Crest
+			i(210265),	-- High Scholar's Grand Staff
 
 
-			--]]
+
 		})),
 		tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 			header(HEADERS.LFGDungeon, 2403, {	-- Aberrus, the Shadowed Crucible

@@ -12318,6 +12318,11 @@
 18704@@@Dawn of the Infinite: Murozond's Rise
 18705@@@Defender of the Timeways
 18706@@@Put That Thing Back Where It Came From
+10.1.5.51130
+18365@@@[Hidden] [DO NOT USE] Draconically Superior
+18366@@@[Hidden] [DO NOT USE] Draconically Epic
+18976@@@Draconically Superior
+18977@@@Draconically Epic
 10.1.7.50442
 17853@@@Ruby Lifeshrine Loop Challenge: Bronze
 17854@@@Ruby Lifeshrine Loop Challenge: Silver
@@ -12909,11 +12914,7 @@
 18960@@@Kickin' With the Wick
 18962@@@A Cleansing Fire
 10.1.7.50587
-18365@@@[Hidden] [DO NOT USE] Draconically Superior
-18366@@@[Hidden] [DO NOT USE] Draconically Epic
 18963@@@Burst Damage
-18976@@@Draconically Superior
-18977@@@Draconically Epic
 10.1.7.50730
 6313@@@[DNT] UTILITY: Promotion - China (Cenarion Hatchling)
 9030@@@Login Tracking Achievement [SERVER ONLY]
