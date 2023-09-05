@@ -2771,6 +2771,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(4724, {	-- Humbert's Helm
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+						}),
+					},
 				}),
 				n(50818, {	-- The Dark Prowler
 					["coord"] = { 33.0, 55.0, HILLSBRAD_FOOTHILLS },

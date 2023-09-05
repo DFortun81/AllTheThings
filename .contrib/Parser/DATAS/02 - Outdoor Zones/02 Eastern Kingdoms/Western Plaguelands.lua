@@ -2701,8 +2701,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(15771, {	-- Pattern: Living Breastplate (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 1813,	-- Decaying Horror
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						44485,	-- Flesh-Cobbled Brute
+						44484,	-- Flesh-Cobbled Ripper
+						44486,	-- Unholy Corpuscle
+					},
+					-- #endif
+					["coords"] = {
+						{ 64.6, 36.0, WESTERN_PLAGUELANDS },
+						{ 62.4, 36.2, WESTERN_PLAGUELANDS },
+					},
 				}),
 				-- #if BEFORE 4.0.3
 				i(12707, {	-- Plans: Runic Plate Boots

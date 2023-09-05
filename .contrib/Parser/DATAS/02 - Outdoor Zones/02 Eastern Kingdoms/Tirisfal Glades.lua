@@ -557,7 +557,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 36.6, 61.6, TIRISFAL_GLADES },
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 							["cr"] = 1919,	-- Samuel Fipps
 						}),
 						i(3293, {	-- Deadman Cleaver
@@ -566,7 +566,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 36.6, 61.8, TIRISFAL_GLADES },
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 							["cr"] = 1917,	-- Daniel Ulfman
 						}),
 						i(3294, {	-- Deadman Club
@@ -618,7 +618,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 23.8, 58.4, TIRISFAL_GLADES },
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 							["cr"] = 1688,	-- Night Web Matriarch
 						}),
 						i(3263, {	-- Webbed Pants
@@ -2248,7 +2248,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(3321, {	-- Gray Fur Booties
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["cr"] = 1549,	-- Ravenous Darkhound
 				}),
 				i(3331, {	-- Melrache's Cape

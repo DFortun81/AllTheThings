@@ -758,6 +758,8 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_1_0 },
 					i(19943),	-- Massive Mojo
 					i(RAZZASHI_COIN),
 					i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
+						["description"] = "Can drop from any troll in the Eastern Kingsdom.\nSourced under Zul Gurub as its best spot to farm the recipe (as long as you dont kill any bosses).",
+						["maps"] = { ARATHI_HIGHLANDS, DUN_MOROGH, NORTHERN_STRANGLETHORN, STRANGLETHORN_VALE, THE_HINTERLANDS },
 						["timeline"] = { "added 10.1.7" },	-- ATT Discord 05.09.2023
 					}),
 					i(SANDFURY_COIN),

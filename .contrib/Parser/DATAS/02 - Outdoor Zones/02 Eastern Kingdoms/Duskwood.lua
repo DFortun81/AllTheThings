@@ -1861,7 +1861,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(4448, {	-- Husk of Naraxis
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 						i(4449, {	-- Naraxis' Fang
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
@@ -2035,8 +2035,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(2015, {	-- Black Metal War Axe
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, DUSKWOOD },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, DUSKWOOD },
+						{ 17.8, 33.4, DUSKWOOD },
+						{ 19.8, 46.8, DUSKWOOD },
+					},
+					-- #endif
 				}),
 				i(2013, {	-- Cryptbone Staff
 					["timeline"] = { "removed 4.0.3" },

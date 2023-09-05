@@ -402,8 +402,13 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			}),
 			-- #endif
 			i(1928, {	-- Defias Mage Staff
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+				-- #if BEFORE 4.0.3
 				["cr"] = 1726,	-- Defias Magician
+				-- #elseif AFTER 10.1.7
+				["description"] = "Defias Pirates are located on & around the boat.",
+				["cr"] = 48522,	-- Defias Pirate
+				-- #endif
 			}),
 			i(1925, {	-- Defias Rapier
 				["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord

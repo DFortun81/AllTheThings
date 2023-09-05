@@ -1260,7 +1260,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(2203, {	-- Brashclaw's Chopper
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 						i(2204, {	-- Brashclaw's Skewer
 							["timeline"] = { "removed 4.0.3" },
@@ -1538,8 +1538,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(1190, {	-- Overseer's Cloak
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["cr"] = 125,	-- Riverpaw Overseer
+					["coords"] = {
+						{ 63.8, 74.6, WESTFALL },
+						{ 58.0, 72.2, WESTFALL },
+					},
 				}),
 				i(1189, {	-- Overseer's Ring
 					["timeline"] = { "removed 4.0.3" },
