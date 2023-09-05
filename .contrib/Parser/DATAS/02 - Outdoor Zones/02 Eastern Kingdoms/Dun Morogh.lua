@@ -2463,10 +2463,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(3223, {	-- Frostmane Scepter
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 						i(2546, {	-- Royal Frostmane Girdle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -2653,12 +2653,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(ZONE_DROPS, {
 				i(2886),	-- Crag Boar Rib
 				i(2067, {	-- Frostbit Staff
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1117,	-- Rockjaw Bonesnapper
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["coords"] = {
+						{ 79.2, 48.4, DUN_MOROGH },
+						{ 78.0, 54.2, DUN_MOROGH },
+					},
 				}),
 				i(2259, {	-- Frostmane Club
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1121,	-- Frostmane Snowstrider
+					--[[["coords"] = {
+						{ 41.8, 35.6, DUN_MOROGH },
+						{ 25.6, 49.8, DUN_MOROGH },
+						{ 38.0, 87.0, DUN_MOROGH },
+					},--]]
 				}),
 				i(2260, {	-- Frostmane Hand Axe
 					["timeline"] = { "removed 4.0.3" },
@@ -2666,42 +2675,95 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1123,	-- Frostmane Headhunter
 						1122,	-- Frostmane Hideskinner
 					},
+					--[[["coords"] = {
+						{ 41.6, 78.8, DUN_MOROGH },
+						{ 40.0, 83.8, DUN_MOROGH },
+						{ 38.0, 87.0, DUN_MOROGH },
+					},--]]
 				}),
 				i(2258, {	-- Frostmane Shortsword
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1120,	-- Frostmane Troll
+					--[[["coords"] = {
+						{ 41.6, 78.8, DUN_MOROGH },
+						{ 40.0, 83.8, DUN_MOROGH },
+						{ 38.0, 87.0, DUN_MOROGH },
+					},--]]
 				}),
 				i(2257, {	-- Frostmane Staff
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1124,	-- Frostmane Shadowcaster
+					--[[["coords"] = {
+						{ 41.6, 78.8, DUN_MOROGH },
+						{ 40.0, 83.8, DUN_MOROGH },
+						{ 38.0, 87.0, DUN_MOROGH },
+					},--]]
 				}),
 				i(2112, {	-- Lumberjack Jerkin
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1689,	-- Scarred Crag Boar
+					--[[["coords"] = {
+						{ 41.6, 78.8, DUN_MOROGH },
+						{ 40.0, 83.8, DUN_MOROGH },
+						{ 38.0, 87.0, DUN_MOROGH },
+					},--]]
 				}),
 				i(2898, {	-- Mountaineer Chestpiece
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1196,	-- Ice Claw Bear
+					--[[["coords"] = {
+						{ 41.6, 78.8, DUN_MOROGH },
+						{ 40.0, 83.8, DUN_MOROGH },
+						{ 38.0, 87.0, DUN_MOROGH },
+					},--]]
 				}),
 				i(2065, {	-- Rockjaw Blade
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1116,	-- Rockjaw Ambusher
+					--[[["coords"] = {
+						{ 41.6, 78.8, DUN_MOROGH },
+						{ 40.0, 83.8, DUN_MOROGH },
+						{ 38.0, 87.0, DUN_MOROGH },
+					},--]]
 				}),
 				i(2066, {	-- Skull Hatchet
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["coords"] = {
+						{ 78.2, 52.2, DUN_MOROGH },
+						{ 76.6, 58.0, DUN_MOROGH },
+					},
 					["cr"] = 1115,	-- Rockjaw Skullthumper
 				}),
 				i(2114, {	-- Snowy Robe
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1133,	-- Starving Winter Wolf
+					--[[["coords"] = {
+						{ 41.6, 78.8, DUN_MOROGH },
+						{ 40.0, 83.8, DUN_MOROGH },
+						{ 38.0, 87.0, DUN_MOROGH },
+					},--]]
 				}),
 				i(2064, {	-- Trogg Club
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1118,	-- Rockjaw Backbreaker
+					--[[["coords"] = {
+						{ 41.6, 78.8, DUN_MOROGH },
+						{ 40.0, 83.8, DUN_MOROGH },
+						{ 38.0, 87.0, DUN_MOROGH },
+					},--]]
 				}),
 				i(5767, {	-- Violet Robes
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["coords"] = {
+						{ 49.8, 37.2, DUN_MOROGH },
+						{ 46.6, 40.6, DUN_MOROGH },
+						{ 49.0, 42.6, DUN_MOROGH },
+					},
+					-- #if BEFORE 4.0.3
 					["cr"] = 1397,	-- Frostmane Seer
+					-- #elseif AFTER 10.1.7
+					["cr"] = 41121,	-- Frostmane Seer
+					-- #endif
 				}),
 			}),
 		},

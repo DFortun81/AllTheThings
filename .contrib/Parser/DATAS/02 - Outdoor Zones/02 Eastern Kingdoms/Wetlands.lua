@@ -1889,19 +1889,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 					-- #if BEFORE 4.0.3
 					["cr"] = 1069,	-- Crimson Whelp
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						42043,	-- Ebon Slavehunter
-						42041,	-- Dragonmaw Whelpstealer
-					},
-					-- #endif
-					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 61.8, 31.2, WETLANDS },
 						{ 65.4, 43.0, WETLANDS },
 						{ 68.8, 45.6, WETLANDS },
 					},
 					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						42043,	-- Ebon Slavehunter
+						42041,	-- Dragonmaw Whelpstealer
+					},
 					["coords"] = {
 						{ 68.0, 47.2, WETLANDS },
 						{ 63.4, 49.8, WETLANDS },

@@ -218,9 +218,9 @@ local QUANTUM_GROUP = sharedData({
 		ig(2280),	-- Kam's Walking Stick				(Removed)
 		ig(1300),	-- Lesser Staff of the Spire Staff 	(Removed)(Unique)
 		ig(3227),	-- Nightbane Staff 					(Removed)(Unique)
-		ig(2226),	-- Ogremage Staff 					(Removed)(Unique)
+		ig(2226),	-- Ogremage Staff 					(Removed)(Unique)	
 		ig(1473),	-- Riverside Staff					(Removed)
-		ig(880),	-- Staff of Horrors					(Removed)
+	--	ig(880),	-- Staff of Horrors					(Removed)			10.1.7
 	}),
 	i(208109, {	-- Quantum Sword		(One-Handed)
 		ig(8223),	-- Blade of the Basilisk 			(Removed)

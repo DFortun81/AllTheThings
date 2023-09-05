@@ -2040,6 +2040,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
 						{ 23.4, 35.4, DUSKWOOD },
+						{ 25.4, 35.4, DUSKWOOD },
 					},
 					-- #elseif AFTER 10.1.7
 					["crs"] = {
@@ -2138,8 +2139,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 1110,	-- Skeletal Raider
 				}),
 				i(880, {	-- Staff of Horrors
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["cr"] = 202,	-- Skeletal Horror
+					["coords"] = {
+						{ 80.6, 59.6, DUSKWOOD },
+						{ 20.8, 46.8, DUSKWOOD },
+					},
 				}),
 				i(3360, {	-- Stitches' Femur
 					["timeline"] = { "removed 4.0.3" },

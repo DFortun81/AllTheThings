@@ -2330,22 +2330,47 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						13159,  -- James Clark
 						-- #ENDIF
 					},
+					--[[["coords"] = {
+						{ 41.6, 78.8, ELWYNN_FOREST },
+						{ 40.0, 83.8, ELWYNN_FOREST },
+						{ 38.0, 87.0, ELWYNN_FOREST },
+					},--]]
 				}),
 				i(778, {	-- Kobold Excavation Pick
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 476,	-- Kobold Geomancer
+					--[[["coords"] = {
+						{ 41.6, 78.8, ELWYNN_FOREST },
+						{ 40.0, 83.8, ELWYNN_FOREST },
+						{ 38.0, 87.0, ELWYNN_FOREST },
+					},--]]
 				}),
 				i(1389, {	-- Kobold Mining Mallet
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["cr"] = 40,	-- Kobold Miner
+					["coords"] = {
+						{ 61.4, 50.4, ELWYNN_FOREST },
+						{ 64.6, 56.4, ELWYNN_FOREST },
+						{ 41.6, 80.0, ELWYNN_FOREST },
+					},
 				}),
 				i(1195, {	-- Kobold Mining Shovel
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["cr"] = 475,	-- Kobold Tunneler
+					["coords"] = {
+						{ 41.6, 78.8, ELWYNN_FOREST },
+						{ 40.0, 83.8, ELWYNN_FOREST },
+						{ 38.0, 87.0, ELWYNN_FOREST },
+					},
 				}),
 				i(1399, {	-- Magic Candle
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 476,	-- Kobold Geomancer
+					--[[["coords"] = {
+						{ 41.6, 78.8, ELWYNN_FOREST },
+						{ 40.0, 83.8, ELWYNN_FOREST },
+						{ 38.0, 87.0, ELWYNN_FOREST },
+					},--]]
 				}),
 				i(781, {	-- Stone Gnoll Hammer
 					["timeline"] = { "removed 4.0.3" },
@@ -2353,6 +2378,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						478,	-- Riverpaw Outrunner
 						97,		-- Riverpaw Runt
 					},
+					--[[["coords"] = {
+						{ 41.6, 78.8, ELWYNN_FOREST },
+						{ 40.0, 83.8, ELWYNN_FOREST },
+						{ 38.0, 87.0, ELWYNN_FOREST },
+					},--]]
 				}),
 				i(1972, {	-- Westfall Deed
 					["timeline"] = { "removed 4.0.3" },
@@ -2365,6 +2395,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						474,	-- Defias Rogue Wizard
 						880,	-- Erlan Drudgemoor
 					},
+					--[[["coords"] = {
+						{ 41.6, 78.8, ELWYNN_FOREST },
+						{ 40.0, 83.8, ELWYNN_FOREST },
+						{ 38.0, 87.0, ELWYNN_FOREST },
+					},--]]
 				}),
 			}),
 		},
