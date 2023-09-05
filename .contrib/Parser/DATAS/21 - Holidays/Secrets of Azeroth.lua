@@ -14,10 +14,10 @@ SECRETS_OF_AZEROTH_HEADER = createHeader({
 root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 	n(ACHIEVEMENTS, {
 		ach(18644, {	-- Community Rumor Mill
-			pet(4263),	-- Tobias (PET!) [Maybe Get itemID later??]	
-				ach(18643, {	-- Community Rumors
-					i(208150),	-- Blue Tweed Cap
-				}),
+			pet(4263);	-- Tobias (PET!) [Maybe Get itemID later??]
+		}),
+		ach(18643, {	-- Community Rumors
+			i(208150),	-- Blue Tweed Cap
 		}),
 		ach(18642, {	-- The Inquisitive
 			["cost"] = {{"i",207580,1}},	-- Shomko's Unyielding Spear
