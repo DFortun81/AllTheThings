@@ -137,19 +137,19 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["provider"] = { "i", 44063 },	-- Figurine - Monarch Crab
 			}),
 			crit(25, {	-- Figurine - King of Boars
-				["_quests"] = { 28778 },	-- Broken Boar Figurine
+				["sourceQuests"] = { 28778 },	-- Broken Boar Figurine
 			}),
 			crit(26, {	-- Figurine - Demon Panther
-				["_quests"] = { 25047 },	-- Broken Panther Figurine
+				["sourceQuests"] = { 25047 },	-- Broken Panther Figurine
 			}),
 			crit(27, {	-- Figurine - Earthen Guardian
-				["_quests"] = { 28776 },	-- Broken Earthen Figurine
+				["sourceQuests"] = { 28776 },	-- Broken Earthen Figurine
 			}),
 			crit(28, {	-- Figurine - Jeweled Serpent
-				["_quests"] = { 28775 },	-- Broken Serpent Figurine
+				["sourceQuests"] = { 28775 },	-- Broken Serpent Figurine
 			}),
 			crit(29, {	-- Figurine - Dream Owl
-				["_quests"] = { 28777 },	-- Broken Owl Figurine
+				["sourceQuests"] = { 28777 },	-- Broken Owl Figurine
 			}),
 		}),
 		ach(18893),	-- Plentiful Prospects

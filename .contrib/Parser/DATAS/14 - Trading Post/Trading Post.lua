@@ -1545,7 +1545,7 @@ filter(BATTLE_PETS, {
 					["groups"] = {
 						i(208398),	-- Mantle of the Unnamed Cult
 						i(208399),	-- Sash of the Unnamed Cult
-						i(208400),	-- Silks of the Unnamed Cult
+						i(208397),	-- Hood of the Unnamed Cult
 					},
 				}),
 				i(190155, {	-- Trusty Treasure Trove

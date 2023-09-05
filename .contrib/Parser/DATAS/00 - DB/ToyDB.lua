@@ -1210,7 +1210,7 @@ i(206696);	-- Tricked-Out Thinking Cap
 i(197961);	-- Whelps on Strings
 --- NYI ---
 i(206195);	-- Path of the Naaru
-i(207730);	-- Unknown
+i(207730);	-- Idol of Ohn'ahra
 
 ------------------
 -- PATCH 10.1.7 --

@@ -146,7 +146,7 @@ root(ROOTS.NeverImplemented, {
 			-- 10.1.5
 			tier(DF_TIER, 1.5, sharedDataSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
 				i(206195),	-- Path of the Naaru (TOY!)
-				i(207730),	-- Unknown (TOY!)
+				i(207730),	-- Idol of Ohn'ahra (TOY!)
 			})),
 		}),
 	}),

@@ -364,7 +364,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 					["g"] = {
 						i(207836),	-- Ahnzon's Corroded Carapace
 						i(207983),	-- Ancestor's Necromantic Focus
-						i(207921),	-- Dazhak's Dessicated Wingbones
+						i(207921),	-- Dazhak's Desiccated Wingbones
 						i(207992),	-- Fallen Drake's Bonesplitter
 						i(207912),	-- Loszkeleth's Blighted Skullhelm
 					},
@@ -708,7 +708,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						ach(18612),	-- A Slime in Need
 						i(207836),	-- Ahnzon's Corroded Carapace
 						i(207983),	-- Ancestor's Necromantic Focus
-						i(207921),	-- Dazhak's Dessicated Wingbones
+						i(207921),	-- Dazhak's Desiccated Wingbones
 						i(207992),	-- Fallen Drake's Bonesplitter
 						i(207912),	-- Loszkeleth's Blighted Skullhelm
 						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {

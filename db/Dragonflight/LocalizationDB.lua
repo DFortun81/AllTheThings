@@ -5488,6 +5488,7 @@ _.ObjectNames = {
 	[405388] = "Familiar Journal",
 	[405489] = "Preservationist's Locker",
 	[405513] = "Torch of Pyrreth",
+	[405523] = "Unveiled Tablet",
 	[9000000] = "Wind Sculpted Stone",
 	[9999890] = "Corrupted Loot",
 	[9999891] = "Main Objective Only",
