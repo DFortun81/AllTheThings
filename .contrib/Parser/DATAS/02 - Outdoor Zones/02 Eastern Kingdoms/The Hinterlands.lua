@@ -1967,6 +1967,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(8153, {	-- Wildvine
 					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
 				}),
+				i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
+					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
+					["maps"] = { THE_HINTERLANDS },
+					["timeline"] = { "added 1.11.1", "removed 4.0.1" },
+				}),
 			}),
 		},
 	}),

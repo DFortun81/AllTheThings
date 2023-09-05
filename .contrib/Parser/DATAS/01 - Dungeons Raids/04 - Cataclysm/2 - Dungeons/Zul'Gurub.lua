@@ -757,6 +757,9 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_1_0 },
 					}),
 					i(19943),	-- Massive Mojo
 					i(RAZZASHI_COIN),
+					i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
+						["timeline"] = { "added 10.1.7" },	-- ATT Discord 05.09.2023
+					}),
 					i(SANDFURY_COIN),
 					i(SKULLSPLITTER_COIN),
 					i(VILEBRANCH_COIN),
