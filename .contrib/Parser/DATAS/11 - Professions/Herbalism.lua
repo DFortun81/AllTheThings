@@ -6,25 +6,25 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18837, {	-- Broken Isles Herbalism Techniques
-				crit(1, {	-- Aethril
+				crit(61501, {	-- Aethril
 					["sourceQuests"] = { 40017 },	-- A Slip of the Hand
 				}),
-				crit(2, {	-- Astral Glory
+				crit(61507, {	-- Astral Glory
 					["sourceQuests"] = { 48029 },	-- The Heart of It
 				}),
-				crit(3, {	-- Dreamleaf
+				crit(61502, {	-- Dreamleaf
 					["sourceQuests"] = { 40023 },	-- The Last Straw
 				}),
-				crit(4, {	-- Felwort
+				crit(61506, {	-- Felwort
 					["sourceQuests"] = { 40042 },	-- The Emerald Nightmare: Felwort Mastery
 				}),
-				crit(5, {	-- Fjarnskaggl
+				crit(61504, {	-- Fjarnskaggl
 					["sourceQuests"] = { 40033 },	-- Fjarnskaggl
 				}),
-				crit(6, {	-- Foxflower
+				crit(61503, {	-- Foxflower
 					["sourceQuests"] = { 40028 },	-- The Pied Picker
 				}),
-				crit(7, {	-- Starlight Rose
+				crit(61505, {	-- Starlight Rose
 					["sourceQuests"] = { 40039 },	-- Tharillon's Fall
 				}),
 			}),
@@ -344,47 +344,47 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18838, {	-- Fourth War Herbalism Techniques
-				crit(1, {	-- 	Akunda's Bite
+				crit(61510, {	-- 	Akunda's Bite
 					["sourceQuests"] = { 51404 },	-- What Happens Next
 				}),
-				crit(2, {	-- 	Anchor Weed
+				crit(61514, {	-- 	Anchor Weed
 					["sourceQuests"] = {
 						51361,	-- More Anchor Pods [A]
 						51481,	-- More Anchor Pods [H]
 					},
 					["sourceQuestNumRequired"] = 1,
 				}),
-				crit(3, {	-- 	Riverbud
+				crit(61508, {	-- 	Riverbud
 					["sourceQuests"] = {
 						48754,	-- Breaking the Food Chain [A]
 						51243,	-- Breaking the Food Chain [H]
 					},
 					["sourceQuestNumRequired"] = 1,
 				}),
-				crit(4, {	-- 	Sea Stalk
+				crit(61513, {	-- 	Sea Stalk
 					["sourceQuests"] = {
 						48769,	-- Gathering Mementos [A]
 						51503,	-- Gathering Mementos [H]
 					},
 					["sourceQuestNumRequired"] = 1,
 				}),
-				crit(5, {	-- Siren's Pollen
+				crit(61512, {	-- Siren's Pollen
 					["sourceQuests"] = {
 						48755,	-- Pollen Punching [A]
 						51452,	-- Pollen Punching [H]
 					},
 				}),
-				crit(6, {	-- Star Moss
+				crit(61509, {	-- Star Moss
 					["sourceQuests"] = {
 						48757,	-- Ghost Busting [A]
 						51478,	-- Ghost Busting [H]
 					},
 					["sourceQuestNumRequired"] = 1,
 				}),
-				crit(7, {	-- 	Winter's Kiss
+				crit(61511, {	-- 	Winter's Kiss
 					["sourceQuests"] = { 48763 },	-- The Frigid Boon
 				}),
-				crit(8, {	-- Zin'anthid
+				crit(61515, {	-- Zin'anthid
 					["sourceQuests"] = {
 						56098,	-- Defensive in Death [A]
 						56430,	-- Defensive in Death [H]
@@ -852,12 +852,12 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					18825,	-- Botanist's Log - Writhebark
 				}},
 				["g"] = {
-					crit(1),	-- Infused Pollen Recovered
-					crit(2),	-- Dreambloom Recovered
+					crit(61434),	-- Infused Pollen Recovered
+					crit(61433),	-- Dreambloom Recovered
 				},
 			}),
 			ach(18824, {	-- Botanist's Log - Bubble Poppy
-				crit(1, {	-- Bubble Poppy
+				crit(61406, {	-- Bubble Poppy
 					["providers"] = {
 						{ "o", 375241 },	-- Bubble Poppy
 						{ "o", 398755 },	-- Bubble Poppy
@@ -871,7 +871,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(2, {	-- Lush Bubble Poppy
+				crit(61407, {	-- Lush Bubble Poppy
 					["providers"] = {
 						{ "o", 381957 },	-- Lush Bubble Poppy
 						{ "o", 398751 },	-- Lush Bubble Poppy
@@ -885,12 +885,12 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(3, {	-- Windswept Bubble Poppy
+				crit(61408, {	-- Windswept Bubble Poppy
 					["provider"] = { "o", 375245 },	-- Windswept Bubble Poppy
 					["_quests"] = { 71978 },	-- Windswept Bubble Poppy
 					["maps"] = { OHNAHRAN_PLAINS },
 				}),
-				crit(4, {	-- Frigid Bubble Poppy
+				crit(61409, {	-- Frigid Bubble Poppy
 					["provider"] = { "o", 375244 },	-- Frigid Bubble Poppy
 					["_quests"] = { 71982 },	-- Frigid Bubble Poppy
 					["maps"] = {
@@ -900,7 +900,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 						THE_WAKING_SHORES,
 					},
 				}),
-				crit(5, {	-- Titan-Touched Bubble Poppy
+				crit(61410, {	-- Titan-Touched Bubble Poppy
 					["providers"] = {
 						{ "o", 375242 },	-- Titan-Touched Bubble Poppy
 						{ "o", 398759 },	-- Titan-Touched Bubble Poppy
@@ -914,12 +914,12 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(6, {	-- Decayed Bubble Poppy
+				crit(61411, {	-- Decayed Bubble Poppy
 					["provider"] = { "o", 375246 },	-- Decayed Bubble Poppy
 					["_quests"] = { 71990 },	-- Decayed Bubble Poppy
 					["maps"] = { THE_AZURE_SPAN },
 				}),
-				crit(7, {	-- Infurious Bubble Poppy
+				crit(61412, {	-- Infurious Bubble Poppy
 					["providers"] = {
 						{ "o", 375243 },	-- Infurious Bubble Poppy
 						{ "o", 398764 },	-- Infurious Bubble Poppy
@@ -933,14 +933,14 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(8, {	-- Lambent Bubble Poppy
+				crit(61413, {	-- Lambent Bubble Poppy
 					["provider"] = { "o", 390142 },	-- Lambent Bubble Poppy
 					["_quests"] = { 75142 },	-- Lambent Bubble Poppy
 					["maps"] = { ZARALEK_CAVERN },
 				}),
 			}),
 			ach(18822, {	-- Botanist's Log - Hochenblume
-				crit(1, {	-- Lush Hochenblume
+				crit(61391, {	-- Lush Hochenblume
 					["providers"] = {
 						{ "o", 381960 },	-- Lush Hochenblume
 						{ "o", 398753 },	-- Lush Hochenblume
@@ -954,12 +954,12 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(2, {	-- Windswept Hochenblume
+				crit(61392, {	-- Windswept Hochenblume
 					["provider"] = { "o", 381213 },	-- Windswept Hochenblume
 					["_quests"] = { 71976 },	-- Windswept Hochenblume
 					["maps"] = { OHNAHRAN_PLAINS },
 				}),
-				crit(3, {	-- Frigid Hochenblume
+				crit(61393, {	-- Frigid Hochenblume
 					["provider"] = { "o", 381214 },	-- Frigid Hochenblume
 					["_quests"] = { 71980 },	-- Frigid Hochenblume
 					["maps"] = {
@@ -969,7 +969,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 						THE_WAKING_SHORES,
 					},
 				}),
-				crit(4, {	-- Titan-Touched Hochenblume
+				crit(61394, {	-- Titan-Touched Hochenblume
 					["providers"] = {
 						{ "o", 381210 },	-- Titan-Touched Hochenblume
 						{ "o", 398761 },	-- Titan-Touched Hochenblume
@@ -983,12 +983,12 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(5, {	-- Decayed Hochenblume
+				crit(61395, {	-- Decayed Hochenblume
 					["provider"] = { "o", 381212 },	-- Decayed Hochenblume
 					["_quests"] = { 71988 },	-- Decayed Hochenblume
 					["maps"] = { THE_AZURE_SPAN },
 				}),
-				crit(6, {	-- Infurious Hochenblume
+				crit(61396, {	-- Infurious Hochenblume
 					["providers"] = {
 						{ "o", 381211 },	-- Infurious Hochenblume
 						{ "o", 398766 },	-- Infurious Hochenblume
@@ -1002,14 +1002,14 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(7, {	-- Lambent Hochenblume
+				crit(61397, {	-- Lambent Hochenblume
 					["provider"] = { "o", 390139 },	-- Lambent Hochenblume
 					["_quests"] = { 75141 },	-- Lambent Hochenblume
 					["maps"] = { ZARALEK_CAVERN },
 				}),
 			}),
 			ach(18829, {	-- Botanist's Log - Overloaded Elements
-				crit(1, {	-- Overload Windswept Herb
+				crit(61422, {	-- Overload Windswept Herb
 					["providers"] = {
 						{ "o", 375245 },	-- Windswept Bubble Poppy
 						{ "o", 381213 },	-- Windswept Hochenblume
@@ -1019,7 +1019,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					["_quests"] = { 72342 },	-- Overload Windswept Herb
 					["maps"] = { OHNAHRAN_PLAINS },
 				}),
-				crit(2, {	-- Overload Frigid Herb
+				crit(61423, {	-- Overload Frigid Herb
 					["providers"] = {
 						{ "o", 375244 },	-- Frigid Bubble Poppy
 						{ "o", 381214 },	-- Frigid Hochenblume
@@ -1034,7 +1034,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 						THE_WAKING_SHORES,
 					},
 				}),
-				crit(3, {	-- Overload Titan-Touched Herb
+				crit(61424, {	-- Overload Titan-Touched Herb
 					["providers"] = {
 						{ "o", 375242 },	-- Titan-Touched Bubble Poppy
 						{ "o", 398759 },	-- Titan-Touched Bubble Poppy
@@ -1054,7 +1054,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(4, {	-- Overload Decayed Herb
+				crit(61425, {	-- Overload Decayed Herb
 					["providers"] = {
 						{ "o", 375246 },	-- Decayed Bubble Poppy
 						{ "o", 381212 },	-- Decayed Hochenblume
@@ -1064,7 +1064,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					["_quests"] = { 72345 },	--Overload Decayed Herb
 					["maps"] = { THE_AZURE_SPAN },
 				}),
-				crit(5, {	-- Overload Infurious Herb
+				crit(61426, {	-- Overload Infurious Herb
 					["providers"] = {
 						{ "o", 375243 },	-- Infurious Bubble Poppy
 						{ "o", 398764 },	-- Infurious Bubble Poppy
@@ -1084,7 +1084,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(6, {	-- Overload Lambent Herb
+				crit(61427, {	-- Overload Lambent Herb
 					["providers"] = {
 						{ "o", 390142 },	-- Lambent Bubble Poppy
 						{ "o", 390139 },	-- Lambent Hochenblume
@@ -1096,7 +1096,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 				}),
 			}),
 			ach(18823, {	-- Botanist's Log - Saxifrage
-				crit(1, {	-- Saxifrage
+				crit(61398, {	-- Saxifrage
 					["providers"] = {
 						{ "o", 381207 },	-- Saxifrage
 						{ "o", 398758 },	-- Saxifrage
@@ -1110,7 +1110,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(2, {	-- Lush Saxifrage
+				crit(61399, {	-- Lush Saxifrage
 					["providers"] = {
 						{ "o", 381959 },	-- Lush Saxifrage
 						{ "o", 398754 },	-- Lush Saxifrage
@@ -1124,12 +1124,12 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(3, {	-- Windswept Saxifrage
+				crit(61400, {	-- Windswept Saxifrage
 					["provider"] = { "o", 381202 },	-- Windswept Saxifrage
 					["_quests"] = { 71979 },	-- Windswept Saxifrage
 					["maps"] = { OHNAHRAN_PLAINS },
 				}),
-				crit(4, {	-- Frigid Saxifrage
+				crit(61401, {	-- Frigid Saxifrage
 					["provider"] = { "o", 381201 },	-- Frigid Saxifrage
 					["_quests"] = { 71983 },	-- Frigid Saxifrage
 					["maps"] = {
@@ -1139,7 +1139,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 						THE_WAKING_SHORES,
 					},
 				}),
-				crit(5, {	-- Titan-Touched Saxifrage
+				crit(61402, {	-- Titan-Touched Saxifrage
 					["providers"] = {
 						{ "o", 381205 },	-- Titan-Touched Saxifrage
 						{ "o", 398762 },	-- Titan-Touched Saxifrage
@@ -1153,12 +1153,12 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(6, {	-- Decayed Saxifrage
+				crit(61403, {	-- Decayed Saxifrage
 					["provider"] = { "o", 381203 },	-- Decayed Saxifrage
 					["_quests"] = { 71991 },	-- Decayed Saxifrage
 					["maps"] = { THE_AZURE_SPAN },
 				}),
-				crit(7, {	-- Infurious Saxifrage
+				crit(61404, {	-- Infurious Saxifrage
 					["providers"] = {
 						{ "o", 381204 },	-- Infurious Saxifrage
 						{ "o", 398767 },	-- Infurious Saxifrage
@@ -1172,14 +1172,14 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(8, {	-- Lambent Saxifrage
+				crit(61405, {	-- Lambent Saxifrage
 					["provider"] = { "o", 390140 },	-- Lambent Saxifrage
 					["_quests"] = { 75143 },	-- Lambent Saxifrage
 					["maps"] = { ZARALEK_CAVERN },
 				}),
 			}),
 			ach(18825, {	-- Botanist's Log - Writhebark
-				crit(1, {	-- Writhebark
+				crit(61414, {	-- Writhebark
 					["providers"] = {
 						{ "o", 381154 },	-- Writhebark
 						{ "o", 398756 },	-- Writhebark
@@ -1193,7 +1193,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(2, {	-- Lush Writhebark
+				crit(61415, {	-- Lush Writhebark
 					["providers"] = {
 						{ "o", 381958 },	-- Lush Writhebark
 						{ "o", 398752 },	-- Lush Writhebark
@@ -1207,12 +1207,12 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(3, {	-- Windswept Writhebark
+				crit(61416, {	-- Windswept Writhebark
 					["provider"] = { "o", 381199 },	-- Windswept Writhebark
 					["_quests"] = { 71977 },	-- Windswept Writhebark
 					["maps"] = { OHNAHRAN_PLAINS },
 				}),
-				crit(4, {	-- Frigid Writhebark
+				crit(61417, {	-- Frigid Writhebark
 					["provider"] = { "o", 381200 },	-- Frigid Writhebark
 					["_quests"] = { 71981 },	-- Frigid Writhebark
 					["maps"] = {
@@ -1222,7 +1222,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 						THE_WAKING_SHORES,
 					},
 				}),
-				crit(5, {	-- Titan-Touched Writhebark
+				crit(61418, {	-- Titan-Touched Writhebark
 					["providers"] = {
 						{ "o", 381196 },	-- Titan-Touched Writhebark
 						{ "o", 398760 },	-- Titan-Touched Writhebark
@@ -1236,12 +1236,12 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(6, {	-- Decayed Writhebark
+				crit(61419, {	-- Decayed Writhebark
 					["provider"] = { "o", 381198 },	-- Decayed Writhebark
 					["_quests"] = { 71989 },	-- Decayed Writhebark
 					["maps"] = { THE_AZURE_SPAN },
 				}),
-				crit(7, {	-- Infurious Writhebark
+				crit(61420, {	-- Infurious Writhebark
 					["providers"] = {
 						{ "o", 381197 },	-- Infurious Writhebark
 						{ "o", 398765 },	-- Infurious Writhebark
@@ -1255,7 +1255,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(8, {	-- Lambent Writhebark
+				crit(61421, {	-- Lambent Writhebark
 					["provider"] = { "o", 390141 },	-- Lambent Writhebark
 					["_quests"] = { 75144 },	-- Lambent Writhebark
 					["maps"] = { ZARALEK_CAVERN },

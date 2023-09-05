@@ -13,31 +13,31 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18839, {	-- Broken Isles Mining Techniques
-				crit(1, {	-- Empyrium Deposit
+				crit(61523, {	-- Empyrium Deposit
 					["sourceQuests"] = { 48036 },	-- Precision Perfected
 				}),
-				crit(2, {	-- Empyrium Seam
+				crit(61524, {	-- Empyrium Seam
 					["sourceQuests"] = { 48039 },	-- Balancing the Break
 				}),
-				crit(3, {	-- Leystone Deposit
+				crit(61516, {	-- Leystone Deposit
 					["sourceQuests"] = { 38792 },	-- Rethu's Lesson
 				}),
-				crit(4, {	-- Leystone Seam
+				crit(61517, {	-- Leystone Seam
 					["sourceQuests"] = { 38793 },	-- Rethu's Experience
 				}),
-				crit(5, {	-- Living Leystone
+				crit(61518, {	-- Living Leystone
 					["sourceQuests"] = { 38794 },	-- Rethu's Sacrifice
 				}),
-				crit(6, {	-- Felslate Deposit
+				crit(61519, {	-- Felslate Deposit
 					["sourceQuests"] = { 38803 },	-- Rin'thissa
 				}),
-				crit(7, {	-- Felslate Seam
+				crit(61520, {	-- Felslate Seam
 					["sourceQuests"] = { 38804 },	-- Lyrelle
 				}),
-				crit(8, {	-- Living Felslate
+				crit(61521, {	-- Living Felslate
 					["sourceQuests"] = { 38805 },	-- Ondri
 				}),
-				crit(9, {	-- Infernal Brimstone
+				crit(61522, {	-- Infernal Brimstone
 					["sourceQuests"] = { 39830 },	-- Hellfire Citadel: Hellfire and Brimstone
 				}),
 			}),
@@ -460,48 +460,48 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18840, {	-- Fourth War Mining Techniques
-				crit(1, {	-- 	Monelite Deposit
+				crit(61525, {	-- 	Monelite Deposit
 					["sourceQuests"] = {
 						48761,	-- Spiderphobia
 						51964,	-- Insufferable Bloodsuckers
 					},
 					["sourceQuestNumRequired"] = 1,
 				}),
-				crit(2, {	-- 	Storm Silver Deposit
+				crit(61526, {	-- 	Storm Silver Deposit
 					["sourceQuests"] = {
 						48768,	-- Brined Justice [A]
 						52015,	-- Brined Justice [H]
 					},
 					["sourceQuestNumRequired"] = 1,
 				}),
-				crit(3, {	-- 	Platinum Deposit
+				crit(61527, {	-- 	Platinum Deposit
 					["sourceQuests"] = {
 						52050,	-- A More Challenging Career
 						52055,	-- An Ore for an Eye
 					},
 					["sourceQuestNumRequired"] = 1,
 				}),
-				crit(4, {	-- 	Monelite Seam
+				crit(61528, {	-- 	Monelite Seam
 					["sourceQuests"] = {
 						48767,	-- Seams Familiar
 						51971,	-- An Exquisite Brooch
 					},
 					["sourceQuestNumRequired"] = 1,
 				}),
-				crit(5, {	-- Storm Silver Seam
+				crit(61529, {	-- Storm Silver Seam
 					["sourceQuests"] = {
 						51889,	-- The Wrath of Grapes [A]
 						52043,	-- The Wrath of Grapes [H]
 					},
 				}),
-				crit(6, {	-- Osmenite Deposit
+				crit(61530, {	-- Osmenite Deposit
 					["sourceQuests"] = {
 						56103,	-- Ounces of Osmenite [A]
 						56431,	-- Ounces of Osmenite [H]
 					},
 					["sourceQuestNumRequired"] = 1,
 				}),
-				crit(7, {	-- Osmenite Seam
+				crit(61531, {	-- Osmenite Seam
 					["sourceQuests"] = {
 						56126,	-- Seams to be a Problem [A]
 						56432,	-- Seams to be a Problem [H]
@@ -909,7 +909,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 				},
 			}),
 			ach(18819, {	-- Geologist's Ledger - Draconium
-				crit(1, {	-- Draconium Deposit
+				crit(61370, {	-- Draconium Deposit
 					["providers"] = {
 						{ "o", 379252 },	-- Draconium Deposit
 						{ "o", 379248 },	-- Draconium Deposit
@@ -923,7 +923,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(2, {	-- Rich Draconium Deposit
+				crit(61371, {	-- Rich Draconium Deposit
 					["providers"] = {
 						{ "o", 379263 },	-- Rich Draconium Deposit
 						{ "o", 379267 },	-- Rich Draconium Deposit
@@ -937,7 +937,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(3, {	-- Molten Draconium Deposit
+				crit(61372, {	-- Molten Draconium Deposit
 					["provider"] = { "o", 375235 },	-- Molten Draconium Deposit
 					["_quests"] = { 71954 },	-- Molten Draconium Deposit
 					["maps"] = {
@@ -948,7 +948,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(4, {	-- Hardened Draconium Deposit
+				crit(61373, {	-- Hardened Draconium Deposit
 					["provider"] = { "o", 375234 },	-- Hardened Draconium Deposit
 					["_quests"] = { 71956 },	-- Hardened Draconium Deposit
 					["maps"] = {
@@ -959,7 +959,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(5, {	-- Titan-Touched Draconium Deposit
+				crit(61374, {	-- Titan-Touched Draconium Deposit
 					["provider"] = { "o", 375238 },	-- Titan-Touched Draconium Deposit
 					["_quests"] = { 71958 },	-- Titan-Touched Draconium Deposit
 					["maps"] = {
@@ -970,7 +970,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(6, {	-- Primal Draconium Deposit
+				crit(61375, {	-- Primal Draconium Deposit
 					["provider"] = { "o", 375239 },	-- Primal Draconium Deposit
 					["_quests"] = { 71960 },	-- Primal Draconium Deposit
 					["maps"] = {
@@ -981,7 +981,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(7, {	-- Infurious Draconium Deposit
+				crit(61376, {	-- Infurious Draconium Deposit
 					["provider"] = { "o", 375240 },	-- Infurious Draconium Deposit
 					["_quests"] = { 71962 },	-- Infurious Draconium Deposit
 					["maps"] = {
@@ -992,7 +992,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(8, {	-- Draconium Seam
+				crit(61377, {	-- Draconium Seam
 					["provider"] = { "o", 379272 },	-- Draconium Seam
 					["_quests"] = { 72347 },	-- Draconium Seam
 					["maps"] = {
@@ -1000,14 +1000,14 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(9, {	-- Metamorphic Draconium
+				crit(61378, {	-- Metamorphic Draconium
 					["provider"] = { "o", 390138 },	-- Metamorphic Draconium
 					["_quests"] = { 75140 },	-- Metamorphic Draconium
 					["maps"] = { ZARALEK_CAVERN },
 				}),
 			}),
 			ach(18818, {	-- Geologist's Ledger - Serevite
-				crit(1, {	-- Rich Serevite Deposit
+				crit(61362, {	-- Rich Serevite Deposit
 					["providers"] = {
 						{ "o", 381104 },	-- Rich Serevite Deposit
 						{ "o", 381105 },	-- Rich Serevite Deposit
@@ -1021,7 +1021,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(2, {	-- Molten Serevite Deposit
+				crit(61363, {	-- Molten Serevite Deposit
 					["provider"] = { "o", 381516 },	-- Molten Serevite Deposit
 					["_quests"] = { 71953 },	-- Molten Serevite Deposit
 					["maps"] = {
@@ -1032,7 +1032,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(3, {	-- Hardened Serevite Deposit
+				crit(61364, {	-- Hardened Serevite Deposit
 					["provider"] = { "o", 381515 },	-- Hardened Serevite Deposit
 					["_quests"] = { 71955 },	-- Hardened Serevite Deposit
 					["maps"] = {
@@ -1043,7 +1043,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(4, {	-- Titan-Touched Serevite Deposit
+				crit(61365, {	-- Titan-Touched Serevite Deposit
 					["provider"] = { "o", 381517 },	-- Titan-Touched Serevite Deposit
 					["_quests"] = { 71957 },	-- Titan-Touched Serevite Deposit
 					["maps"] = {
@@ -1054,7 +1054,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(5, {	-- Primal Serevite Deposit
+				crit(61366, {	-- Primal Serevite Deposit
 					["provider"] = { "o", 381518 },	-- Primal Serevite Deposit
 					["_quests"] = { 71959 },	-- Primal Serevite Deposit
 					["maps"] = {
@@ -1065,7 +1065,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(6, {	-- Infurious Serevite Deposit
+				crit(61367, {	-- Infurious Serevite Deposit
 					["provider"] = { "o", 381519 },	-- Infurious Serevite Deposit
 					["_quests"] = { 71961 },	-- Infurious Serevite Deposit
 					["maps"] = {
@@ -1076,7 +1076,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(7, {	-- Serevite Seam
+				crit(61368, {	-- Serevite Seam
 					["provider"] = { "o", 381106 },	-- Serevite Seam
 					["_quests"] = { 72346 },	-- Serevite Seam
 					["maps"] = {
@@ -1084,14 +1084,14 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(8, {	-- Metamorphic Serevite
+				crit(61369, {	-- Metamorphic Serevite
 					["provider"] = { "o", 390137 },	-- Metamorphic Serevite
 					["_quests"] = { 75139 },	-- Metamorphic Serevite
 					["maps"] = { ZARALEK_CAVERN },
 				}),
 			}),
 			ach(18821, {	-- Geologist's Ledger - Overloaded Elements
-				crit(1, {	-- Overload Molten Node
+				crit(61382, {	-- Overload Molten Node
 					["providers"] = {
 						{ "o", 375235 },	-- Molten Draconium Deposit
 						{ "o", 381516 },	-- Molten Serevite Deposit
@@ -1105,7 +1105,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(2, {	-- Overload Hardened Node
+				crit(61383, {	-- Overload Hardened Node
 					["providers"] = {
 						{ "o", 375234 },	-- Hardened Draconium Deposit
 						{ "o", 381515 },	-- Hardened Serevite Deposit
@@ -1119,7 +1119,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(3, {	-- Overload Titan-Touched Node
+				crit(61384, {	-- Overload Titan-Touched Node
 					["providers"] = {
 						{ "o", 375238 },	-- Titan-Touched Draconium Deposit
 						{ "o", 381517 },	-- Titan-Touched Serevite Deposit
@@ -1133,7 +1133,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(4, {	-- Overload Primal Node
+				crit(61385, {	-- Overload Primal Node
 					["providers"] = {
 						{ "o", 375239 },	-- Primal Draconium Deposit
 						{ "o", 381518 },	-- Primal Serevite Deposit
@@ -1147,7 +1147,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(5, {	-- Overload Infurious Node
+				crit(61386, {	-- Overload Infurious Node
 					["providers"] = {
 						{ "o", 375240 },	-- Infurious Draconium Deposit
 						{ "o", 381519 },	-- Infurious Serevite Deposit
@@ -1161,7 +1161,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 						ZARALEK_CAVERN,
 					},
 				}),
-				crit(6, {	-- Overload Metamorphic Node
+				crit(61387, {	-- Overload Metamorphic Node
 					["providers"] = {
 						{ "o", 390138 },	-- Metamorphic Draconium
 						{ "o", 390137 },	-- Metamorphic Serevite
