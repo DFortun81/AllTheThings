@@ -8096,7 +8096,7 @@ local criteriaFieldsWithIndex = RawCloneData(criteriaFields);
 local function GetAchievementCriteriaInfoWithoutThrowingADumbassError(achievementID, criteriaID, hidden)
 	if criteriaID <= GetAchievementNumCriteria(achievementID, hidden) then
 		return GetAchievementCriteriaInfo(achievementID, criteriaID, hidden);
-	else
+	elseif app.IsGit then
 		app.print("Invalid Achievement Criteria Index", achievementID, criteriaID);
 	end
 end

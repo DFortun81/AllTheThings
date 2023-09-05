@@ -11,6 +11,7 @@ app.EmptyTable = {};
 app.Version = GetAddOnMetadata(appName, "Version");
 if string.match(app.Version, "version") then
 	app.Version = "[Git]";
+	app.IsGit = true;
 else
 	app.Version = "v" .. app.Version;
 end
