@@ -516,6 +516,12 @@ namespace ATT
             if (Program.PreProcessorTags.ContainsKey("ANYCLASSIC"))
             {
                 MAX_PHASE_ID = LAST_EXPANSION_PHASE[CURRENT_RELEASE_PHASE_NAME];
+                Console.Write("Max Phase ID: ");
+                Console.WriteLine(MAX_PHASE_ID);
+            }
+            else
+            {
+                Console.WriteLine("All Phases will be included in this build.");
             }
             string[] configUseCounts = Config["TrackUseCounts"];
             if (configUseCounts != null)

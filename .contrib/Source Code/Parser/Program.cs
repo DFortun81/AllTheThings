@@ -49,19 +49,21 @@ namespace ATT
                 Framework.InitConfigSettings("parser.config");
             }
 
+            var preprocessorArray = Framework.Config["PreProcessorTags"];
+            if (preprocessorArray != null)
+            {
+                foreach (var preprocessor in preprocessorArray)
+                {
+                    PreProcessorTags[(string)preprocessor] = true;
+                    Console.Write("PREPROCESSOR: ");
+                    Console.WriteLine((string)preprocessor);
+                }
+            }
+
             Framework.ApplyConfigSettings();
 
             try
             {
-                var preprocessorArray = Framework.Config["PreProcessorTags"];
-                if (preprocessorArray != null)
-                {
-                    foreach(var preprocessor in preprocessorArray)
-                    {
-                        PreProcessorTags[preprocessor] = true;
-                    }
-                }
-
                 // Prepare console output to a file.
                 string databaseRootFolder = Framework.Config["root-data"] ?? "./DATAS";
 
