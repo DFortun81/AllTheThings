@@ -2,7 +2,7 @@
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
 local HERBALISM_KNOWLEDGE = 2034;
-root(ROOTS.Professions, prof(HERBALISM, {
+root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERBALISM }, {
 	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18837, {	-- Broken Isles Herbalism Techniques
@@ -1366,4 +1366,4 @@ root(ROOTS.Professions, prof(HERBALISM, {
 			}),
 		})),
 	})),
-}));
+})));

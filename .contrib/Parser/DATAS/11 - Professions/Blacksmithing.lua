@@ -2,7 +2,7 @@
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
 local BLACKSMITHING_KNOWLEDGE = 2023;
-root(ROOTS.Professions, prof(BLACKSMITHING, {
+root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = BLACKSMITHING }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18866),	-- Anvil Mastery IV
 		ach(18865),	-- Anvil Mastery III
@@ -45,40 +45,125 @@ root(ROOTS.Professions, prof(BLACKSMITHING, {
 		}),
 	})),
 	tier(CLASSIC_TIER, {
-		ach(18765, {	-- Destined to be Legendary
-			["provider"] = { "i", 17193 },	-- Sulfuron Hammer
-			["timeline"] = { ADDED_10_1_7 },
-		}),
-		ach(17497, {	-- Renowned Armorsmith
-			["timeline"] = { ADDED_10_0_7, REMOVED_10_0_7 },
-		}),
-		ach(17496, {	-- Renowned Weaponsmith
-			["timeline"] = { ADDED_10_0_7, REMOVED_10_0_7 },
-		}),
-		ach(18853, {	-- Seething Flames of Hatred
-			["provider"] = { "i", 207011 },	-- Warblades of the Hakkari, Reborn
-			["timeline"] = { ADDED_10_1_7 },
-		}),
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
+			ach(18765, {	-- Destined to be Legendary
+				["provider"] = { "i", 17193 },	-- Sulfuron Hammer
+				["timeline"] = { ADDED_10_1_7 },
+			}),
+			ach(17497, {	-- Renowned Armorsmith
+				["sourceQuests"] = {
+					5283,	-- The Art of the Armorsmith [A]
+					5301,	-- The Art of the Armorsmith [H]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["timeline"] = { ADDED_10_0_7, REMOVED_10_0_7 },
+			}),
+			ach(17496, {	-- Renowned Weaponsmith
+				["sourceQuests"] = {
+					5284,	-- The Art of the Weaponsmith [A]
+					5302,	-- The Art of the Weaponsmith [H]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["timeline"] = { ADDED_10_0_7, REMOVED_10_0_7 },
+			}),
+			ach(18853, {	-- Seething Flames of Hatred
+				["provider"] = { "i", 207011 },	-- Warblades of the Hakkari, Reborn
+				["timeline"] = { ADDED_10_1_7 },
+			}),
+		})),
+		n(QUESTS, sharedData({
+			["lvl"] = 40,
+			["timeline"] = { REMOVED_4_0_3 },
+		}, {
+			q(5283, {	-- The Art of the Armorsmith [A]
+				["description"] = "Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",
+				["qg"] = 5164,	-- Grumnus Steelshaper
+				["altQuests"] = {
+					5301,	-- The Art of the Armorsmith [H]
+					5284,	-- The Way of the Weaponsmith [A]
+					5302,	-- The Way of the Weaponsmith [H]
+				},
+				["coord"] = { 50.2, 42.6, IRONFORGE },
+				["races"] = ALLIANCE_ONLY,
+				["cost"] = {
+					{ "i", 7937, 4 },	-- Ornate Mithril Helm
+					{ "i", 7936, 2 },	-- Ornate Mithril Boots
+					{ "i", 7935, 1 },	-- Ornate Mithril Breastplate
+				},
+			}),
+			q(5301, {	-- The Art of the Armorsmith [H]
+				["description"] = "Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",
+				["qg"] = 11177,	-- Okothos Ironrager
+				["altQuests"] = {
+					5283,	-- The Art of the Armorsmith [A]
+					5284,	-- The Way of the Weaponsmith [A]
+					5302,	-- The Way of the Weaponsmith [H]
+				},
+				["coord"] = { 79.8, 23.8, ORGRIMMAR },
+				["races"] = HORDE_ONLY,
+				["cost"] = {
+					{ "i", 7937, 4 },	-- Ornate Mithril Helm
+					{ "i", 7936, 2 },	-- Ornate Mithril Boots
+					{ "i", 7935, 1 },	-- Ornate Mithril Breastplate
+				},
+			}),
+			q(5284, {	-- The Way of the Weaponsmith [A]
+				["description"] = "Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",
+				["qg"] = 11146,	-- Ironus Coldsteel
+				["altQuests"] = {
+					5283,	-- The Art of the Armorsmith [A]
+					5301,	-- The Art of the Armorsmith [H]
+					5302,	-- The Way of the Weaponsmith [H]
+				},
+				["coord"] = { 49.8, 45, IRONFORGE },
+				["races"] = ALLIANCE_ONLY,
+				["cost"] = {
+					{ "i", 3853, 4 },	-- Moonsteel Broadsword
+					{ "i", 3855, 4 },	-- Massive Iron Axe
+					{ "i", 7941, 2 },	-- Heavy Mithril Axe
+					{ "i", 7945, 2 },	-- Big Black Mace
+				},
+			}),
+			q(5302, {	-- The Way of the Weaponsmith [H]
+				["description"] = "Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",
+				["qg"] = 11178,	-- Borgosh Corebender
+				["altQuests"] = {
+					5283,	-- The Art of the Armorsmith [A]
+					5301,	-- The Art of the Armorsmith [H]
+					5284,	-- The Way of the Weaponsmith [A]
+				},
+				["coord"] = { 79.6, 23.6, ORGRIMMAR },
+				["races"] = HORDE_ONLY,
+				["cost"] = {
+					{ "i", 3853, 4 },	-- Moonsteel Broadsword
+					{ "i", 3855, 4 },	-- Massive Iron Axe
+					{ "i", 7941, 2 },	-- Heavy Mithril Axe
+					{ "i", 7945, 2 },	-- Big Black Mace
+				},
+			}),
+		})),
 	}),
 	tier(MOP_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
-		ach(18852, sharedDataSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Weaponsmithing, Reborn
-			crit(1, {	-- Wicked Edge of the Planes, Reborn
-				["provider"] = { "i", 94579 },	-- Wicked Edge of the Planes, Reborn
-			}),
-			crit(2, {	-- Bloodmoon, Reborn
-				["provider"] = { "i", 94580 },	-- Bloodmoon, Reborn
-			}),
-			crit(3, {	-- Dragonstrike, Reborn
-				["provider"] = { "i", 94585 },	-- Dragonstrike, Reborn
-			}),
-			crit(4, {	-- Stormherald, Reborn
-				["provider"] = { "i", 94586 },	-- Stormherald, Reborn
-			}),
-			crit(5, {	-- Blazefury, Reborn
-				["provider"] = { "i", 94591 },	-- Blazefury, Reborn
-			}),
-			crit(6, {	-- Lionheart Executioner, Reborn
-				["provider"] = { "i", 94592 },	-- Lionheart Executioner, Reborn
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+			ach(18852, { -- Weaponsmithing, Reborn
+				crit(1, {	-- Wicked Edge of the Planes, Reborn
+					["provider"] = { "i", 94579 },	-- Wicked Edge of the Planes, Reborn
+				}),
+				crit(2, {	-- Bloodmoon, Reborn
+					["provider"] = { "i", 94580 },	-- Bloodmoon, Reborn
+				}),
+				crit(3, {	-- Dragonstrike, Reborn
+					["provider"] = { "i", 94585 },	-- Dragonstrike, Reborn
+				}),
+				crit(4, {	-- Stormherald, Reborn
+					["provider"] = { "i", 94586 },	-- Stormherald, Reborn
+				}),
+				crit(5, {	-- Blazefury, Reborn
+					["provider"] = { "i", 94591 },	-- Blazefury, Reborn
+				}),
+				crit(6, {	-- Lionheart Executioner, Reborn
+					["provider"] = { "i", 94592 },	-- Lionheart Executioner, Reborn
+				}),
 			}),
 		})),
 		n(QUESTS, {
@@ -586,118 +671,121 @@ root(ROOTS.Professions, prof(BLACKSMITHING, {
 		})),
 	})),
 	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
-		ach(18771, {	-- Khaz'gorian Smithing Hammer
-			["provider"] = { "i", 152839 },	-- Khaz'gorian Smithing Hammer
-			["timeline"] = { ADDED_10_1_7 },
-		}),
-		q(54465, {	-- Blacksmithing Plans [A]
-			["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
-			["coord"] = { 73.6, 8.6, BORALUS },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
-		}),
-		q(54466, {	-- Blacksmithing Plans [H]
-			["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
-			["coord"] = { 43.6, 38.3, DAZARALOR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
-		}),
-		------ Tools of Trade Questline ------
-		q(50123, {	-- A Recipe For the Ages [A]
-			["description"] = "Requires 150 Kul Tiran Blacksmithing.",
-			["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
-			["coord"] = { 73.6, 8.6, BORALUS },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(50276, {	-- A Recipe For the Ages [H]
-			["description"] = "Requires 150 Zandalari Blacksmithing.",
-			["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
-			["coord"] = { 43.6, 38.3, DAZARALOR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(50114, {	-- Hammering Out Information [A]
-			["sourceQuests"] = { 50123 },	-- A Recipe For the Ages [A]
-			["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
-			["coord"] = { 73.6, 8.6, BORALUS },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(50277, {	-- Hammering Out Information [H]
-			["sourceQuests"] = { 50276 },	-- A Recipe For the Ages [H]
-			["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
-			["coord"] = { 43.6, 38.3, DAZARALOR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(50270, {	-- Deep In the Core [A]
-			["sourceQuests"] = { 50114 },	-- Hammering Out Information [A]
-			["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
-			["coord"] = { 73.6, 8.6, BORALUS },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(50278, {	-- Deep In the Core [H]
-			["sourceQuests"] = { 50277 },	-- Hammering Out Information [H]
-			["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
-			["coord"] = { 43.6, 38.3, DAZARALOR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(50271, {	-- Smash and Grab
-			["sourceQuests"] = {
-				50270,	-- Deep In the Core [A]
-				50278,	-- Deep In the Core [H]
-			},
-			["provider"] = { "n", 133489 },	-- Ormhun Stonehammer
-			["coord"] = { 53.9, 50.0, DEEPHOLM },
-			["sourceQuestNumRequired"] = 1,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(50272, {	-- An Ear to the Ground
-			["sourceQuests"] = {
-				50270,	-- Deep In the Core [A]
-				50278,	-- Deep In the Core [H]
-			},
-			["provider"] = { "n", 133489 },	-- Ormhun Stonehammer
-			["coord"] = { 53.9, 50.0, DEEPHOLM },
-			["sourceQuestNumRequired"] = 1,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(50274, {	-- Titanic Forging
-			["sourceQuests"] = {
-				50271,	-- Smash and Grab
-				50272,	-- An Ear to the Ground
-			},
-			["provider"] = { "n", 133489 },	-- Ormhun Stonehammer
-			["coord"] = { 53.9, 50.0, DEEPHOLM },
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(50288, {	-- Therazane's Choice
-			["sourceQuests"] = { 50274 },	-- Titanic Forging
-			["provider"] = { "n", 133796 },	-- Therazane
-			["coord"] = { 27.5, 50.8, DEEPHOLM },
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(50275, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Anvil's Away [A]
-			["sourceQuests"] = { 50288 },	-- Therazane's Choice
-			["provider"] = { "n", 133796 },	-- Therazane
-			["coord"] = { 27.5, 50.8, DEEPHOLM },
-			["races"] = ALLIANCE_ONLY,
-			["g"] = {
-				r(253145),	-- Khaz'gorian Smithing Hammer (RECIPE!)
-			},
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+			ach(18771, {	-- Khaz'gorian Smithing Hammer
+				["provider"] = { "i", 152839 },	-- Khaz'gorian Smithing Hammer
+			}),
 		})),
-		q(50279, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Anvil's Away [H]
-			["sourceQuests"] = { 50288 },	-- Therazane's Choice
-			["provider"] = { "n", 133796 },	-- Therazane
-			["coord"] = { 27.5, 50.8, DEEPHOLM },
-			["races"] = HORDE_ONLY,
-			["g"] = {
-				r(253145),	-- Khaz'gorian Smithing Hammer (RECIPE!)
-			},
-		})),
+		n(QUESTS, {
+			q(54465, {	-- Blacksmithing Plans [A]
+				["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
+				["coord"] = { 73.6, 8.6, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
+			}),
+			q(54466, {	-- Blacksmithing Plans [H]
+				["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
+				["coord"] = { 43.6, 38.3, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
+			}),
+			------ Tools of Trade Questline ------
+			q(50123, {	-- A Recipe For the Ages [A]
+				["description"] = "Requires 150 Kul Tiran Blacksmithing.",
+				["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
+				["coord"] = { 73.6, 8.6, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(50276, {	-- A Recipe For the Ages [H]
+				["description"] = "Requires 150 Zandalari Blacksmithing.",
+				["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
+				["coord"] = { 43.6, 38.3, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(50114, {	-- Hammering Out Information [A]
+				["sourceQuests"] = { 50123 },	-- A Recipe For the Ages [A]
+				["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
+				["coord"] = { 73.6, 8.6, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(50277, {	-- Hammering Out Information [H]
+				["sourceQuests"] = { 50276 },	-- A Recipe For the Ages [H]
+				["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
+				["coord"] = { 43.6, 38.3, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(50270, {	-- Deep In the Core [A]
+				["sourceQuests"] = { 50114 },	-- Hammering Out Information [A]
+				["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
+				["coord"] = { 73.6, 8.6, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(50278, {	-- Deep In the Core [H]
+				["sourceQuests"] = { 50277 },	-- Hammering Out Information [H]
+				["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
+				["coord"] = { 43.6, 38.3, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(50271, {	-- Smash and Grab
+				["sourceQuests"] = {
+					50270,	-- Deep In the Core [A]
+					50278,	-- Deep In the Core [H]
+				},
+				["provider"] = { "n", 133489 },	-- Ormhun Stonehammer
+				["coord"] = { 53.9, 50.0, DEEPHOLM },
+				["sourceQuestNumRequired"] = 1,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(50272, {	-- An Ear to the Ground
+				["sourceQuests"] = {
+					50270,	-- Deep In the Core [A]
+					50278,	-- Deep In the Core [H]
+				},
+				["provider"] = { "n", 133489 },	-- Ormhun Stonehammer
+				["coord"] = { 53.9, 50.0, DEEPHOLM },
+				["sourceQuestNumRequired"] = 1,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(50274, {	-- Titanic Forging
+				["sourceQuests"] = {
+					50271,	-- Smash and Grab
+					50272,	-- An Ear to the Ground
+				},
+				["provider"] = { "n", 133489 },	-- Ormhun Stonehammer
+				["coord"] = { 53.9, 50.0, DEEPHOLM },
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(50288, {	-- Therazane's Choice
+				["sourceQuests"] = { 50274 },	-- Titanic Forging
+				["provider"] = { "n", 133796 },	-- Therazane
+				["coord"] = { 27.5, 50.8, DEEPHOLM },
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(50275, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Anvil's Away [A]
+				["sourceQuests"] = { 50288 },	-- Therazane's Choice
+				["provider"] = { "n", 133796 },	-- Therazane
+				["coord"] = { 27.5, 50.8, DEEPHOLM },
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					r(253145),	-- Khaz'gorian Smithing Hammer (RECIPE!)
+				},
+			})),
+			q(50279, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Anvil's Away [H]
+				["sourceQuests"] = { 50288 },	-- Therazane's Choice
+				["provider"] = { "n", 133796 },	-- Therazane
+				["coord"] = { 27.5, 50.8, DEEPHOLM },
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					r(253145),	-- Khaz'gorian Smithing Hammer (RECIPE!)
+				},
+			})),
+		}),
 	})),
 	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(QUESTS, {
@@ -978,7 +1066,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, {
 			}),
 		})),
 	})),
-}));
+})));
 
 
 

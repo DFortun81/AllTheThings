@@ -2,7 +2,7 @@
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
 local MINING_KNOWLEDGE = 2035;
-root(ROOTS.Professions, prof(MINING, {
+root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING }, {
 	tier(CLASSIC_TIER, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18841, {	-- Doing Your Share
@@ -367,7 +367,7 @@ root(ROOTS.Professions, prof(MINING, {
 		}),
 		header(HEADERS.Spell, 184490, {	-- Living Leystone [Rank 3]
 			["description"] = "Best spot is in Valsharah during the 'Leystone Basilisks' World Quest.",
-			["crs"] = { 
+			["crs"] = {
 				104877,    -- Leystone Basilisk (Mining Proc)
 				103514,    -- Leystone Basilisk (WQ Valsharah)
 			},
@@ -1259,4 +1259,4 @@ root(ROOTS.Professions, prof(MINING, {
 			}),
 		})),
 	})),
-}));
+})));

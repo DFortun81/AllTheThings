@@ -1,3 +1,4 @@
+-- #if ANYCLASSIC
 profession(ENGINEERING, {
 	prof(20222, {	-- Goblin Engineering
 		["description"] = "These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level a second Engineer and complete the opposing specialization.",
@@ -161,47 +162,6 @@ profession(ENGINEERING, {
 					},
 				},
 			},
-			n(QUESTS, {
-				q(3644, {	-- Membership Card Renewal
-					["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
-					["sourceQuest"] = 3639,	-- Show Your Work
-					["description"] = "Requires 200 Engineering to start this quest.",
-					["coord"] = { 54.4, 27.2, TANARIS },
-					["requireSkill"] = ENGINEERING,
-					["cost"] = { { "g", 20000 } },	-- 2g
-					["timeline"] = { "removed 4.0.3.2000" },
-					["repeatable"] = true,
-					["lvl"] = 30,
-					["groups"] = {
-						i(10791),	-- Goblin Engineer Membership Card
-					},
-				}),
-				q(3646, {	-- Membership Card Renewal
-					["qg"] = 8738,	-- Vazario Linkgrease <Goblin Engineering Trainer>
-					["sourceQuest"] = 3639,	-- Show Your Work
-					["description"] = "Requires 200 Engineering to start this quest.",
-					["coord"] = { 62.6, 36.2, THE_BARRENS },
-					["requireSkill"] = ENGINEERING,
-					["cost"] = { { "g", 20000 } },	-- 2g
-					["timeline"] = { "removed 4.0.3.2000" },
-					["repeatable"] = true,
-					["lvl"] = 30,
-					["groups"] = {
-						i(10791),	-- Goblin Engineer Membership Card
-					},
-				}),
-			}),
-			n(REWARDS, {
-				i(11422, {	-- Goblin Engineer's Renewal Gift
-					["description"] = "If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",
-					["timeline"] = { "removed 4.0.3.2000" },
-					["groups"] = {
-						i(4417),	-- Schematic: Large Seaforium Charge
-						i(11828),	-- Schematic: Pet Bombling
-						i(4416),	-- Schematic: Goblin Land Mine
-					},
-				}),
-			}),
 		},
 	}),
 });
@@ -221,5 +181,6 @@ itemrecipe(7192, 8895);		-- Schematic: Goblin Rocket Boots
 -- #if AFTER WRATH
 -- #if BEFORE 4.0.1
 itemrecipe(52022, 72952);	-- Plans: Shatter Rounds
+-- #endif
 -- #endif
 -- #endif

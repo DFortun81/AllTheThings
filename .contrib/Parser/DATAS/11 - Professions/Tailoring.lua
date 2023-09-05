@@ -2,7 +2,7 @@
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
 local TAILORING_KNOWLEDGE = 2026;
-root(ROOTS.Professions, prof(TAILORING, {
+root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAILORING }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18888),	-- Quite the Quilt IV
 		ach(18887),	-- Quite the Quilt III
@@ -104,17 +104,15 @@ root(ROOTS.Professions, prof(TAILORING, {
 			}),
 		}),
 	})),
-	tier(CATA_TIER, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
-			ach(18815, {	-- Speed Dreamin'
-				crit(1),	-- Dream of Skywall
-				crit(2),	-- Dream of Deepholm
-				crit(3),	-- Dream of Hyjal
-				crit(4),	-- Dream of Ragnaros
-				crit(5),	-- Dream of Azshara
-			}),
+	tier(CATA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+		ach(18815, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Speed Dreamin'
+			crit(1),	-- Dream of Skywall
+			crit(2),	-- Dream of Deepholm
+			crit(3),	-- Dream of Hyjal
+			crit(4),	-- Dream of Ragnaros
+			crit(5),	-- Dream of Azshara
 		})),
-	}),
+	})),
 	tier(WOD_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 		q(36236, {	-- The Cryptic Tome of Tailoring
 			["provider"] = { "i", 114972 },	-- Cryptic Tome of Tailoring
@@ -147,8 +145,6 @@ root(ROOTS.Professions, prof(TAILORING, {
 			},
 		}),
 	})),
-	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
-	})),
 	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18774, {	-- Synchronous Thread
@@ -162,133 +158,135 @@ root(ROOTS.Professions, prof(TAILORING, {
 				}
 			}),
 		})),
-		q(54483, {	-- Tailored Training [A]
-			["provider"] = { "n", 136071 },	-- Daniel Brineweaver <Tailoring Trainer>
-			["coord"] = { 76.8, 11.2, BORALUS },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
+		n(QUESTS, {
+			q(54483, {	-- Tailored Training [A]
+				["provider"] = { "n", 136071 },	-- Daniel Brineweaver <Tailoring Trainer>
+				["coord"] = { 76.8, 11.2, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
+			}),
+			q(54484, {	-- Tailored Training [H]
+				["provider"] = { "n", 122700 },	-- Pin'jin the Patient <Tailoring Trainer>
+				["coord"] = { 44.5, 33.9, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
+			}),
+			------ Tools of Trade Questline ------
+			q(53805, {	-- A Friend in Needle [A]
+				["provider"] = { "n", 145022 },	-- Timeweaver Delormi
+				["coord"] = { 76.6, 11.8, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(53938, {	-- A Friend in Needle [H]
+				["provider"] = { "n", 145022 },	-- Timeweaver Delormi
+				["coord"] = { 43.5, 34.8, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(53807, {	-- A Stitch in Time [A]
+				["sourceQuests"] = { 53805 },	-- A Friend in Needle [A]
+				["provider"] = { "n", 145022 },	-- Timeweaver Delormi
+				["coord"] = { 76.6, 11.8, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(53940, {	-- A Stitch in Time [H]
+				["sourceQuests"] = { 53938 },	-- A Friend in Needle [H]
+				["provider"] = { "n", 145022 },	-- Timeweaver Delormi
+				["coord"] = { 43.5, 34.8, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(55177, {	-- Tearing at the Seams [A]
+				["sourceQuests"] = { 53807 },	-- A Stitch in Time [A]
+				["provider"] = { "n", 145022 },	-- Timeweaver Delormi
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(55188, {	-- Tearing at the Seams [H]
+				["sourceQuests"] = { 53940 },	-- A Stitch in Time [H]
+				["provider"] = { "n", 145022 },	-- Timeweaver Delormi
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(53810, {	-- The Severed Thread
+				["sourceQuests"] = {
+					55177,	-- Tearing at the Seams [A]
+					55188,	-- Tearing at the Seams [H]
+				},
+				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
+				["coord"] = { 62.0, 53.9, CAVERNS_OF_TIME },
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(53813, {	-- Rolling Up the Sleeves
+				["sourceQuests"] = {
+					55177,	-- Tearing at the Seams [A]
+					55188,	-- Tearing at the Seams [H]
+				},
+				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
+				["coord"] = { 43.5, 34.8, CAVERNS_OF_TIME },
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(53858, {	-- Step Into Her Shoes
+				["sourceQuests"] = {
+					53810,	-- The Severed Thread
+					53813,	-- Rolling Up the Sleeves
+				},
+				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
+				["coord"] = { 39.1, 63.3, CAVERNS_OF_TIME },
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(53866, {	-- If The Shoe Fits...
+				["sourceQuests"] = { 53858 },	-- Step Into Her Shoes
+				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
+				["coord"] = { 63.8, 68.8, SURAMAR },
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(55214, {	-- Seam Stress
+				["sourceQuests"] = { 53866 },	-- If The Shoe Fits...
+				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
+				["coord"] = { 64.2, 69.5, SURAMAR },
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(53868, {	-- Saving Nine
+				["sourceQuests"] = { 55214 },	-- Seam Stress
+				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
+				["coord"] = { 7.2, 24.5, STORMSONG_VALLEY },
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(53869, {	-- Killing Time
+				["sourceQuests"] = { 53868 },	-- Saving Nine
+				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
+				["coord"] = { 71.6, 39.8, DRAGONBLIGHT },
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(53881, {	-- Cut from the Same Cloth [A]
+				["sourceQuests"] = { 53869 },	-- Killing Time
+				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
+				["coord"] = { 71.6, 39.8, DRAGONBLIGHT },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					r(292946),	-- Recipe: Synchronous Thread (RECIPE!)
+				},
+			}),
+			q(53962, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Cut from the Same Cloth [H]
+				["sourceQuests"] = { 53869 },	-- Killing Time
+				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
+				["coord"] = { 71.6, 39.8, DRAGONBLIGHT },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					r(292946),	-- Recipe: Synchronous Thread (RECIPE!)
+				},
+			})),
+			q(50123, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- A Recipe For the Ages [A]
+				["description"] = "Requires 150 Kul Tiran Blacksmithing.",
+				["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
+				["coord"] = { 73.6, 8.6, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			})),
 		}),
-		q(54484, {	-- Tailored Training [H]
-			["provider"] = { "n", 122700 },	-- Pin'jin the Patient <Tailoring Trainer>
-			["coord"] = { 44.5, 33.9, DAZARALOR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
-		}),
-		------ Tools of Trade Questline ------
-		q(53805, {	-- A Friend in Needle [A]
-			["provider"] = { "n", 145022 },	-- Timeweaver Delormi
-			["coord"] = { 76.6, 11.8, BORALUS },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(53938, {	-- A Friend in Needle [H]
-			["provider"] = { "n", 145022 },	-- Timeweaver Delormi
-			["coord"] = { 43.5, 34.8, DAZARALOR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(53807, {	-- A Stitch in Time [A]
-			["sourceQuests"] = { 53805 },	-- A Friend in Needle [A]
-			["provider"] = { "n", 145022 },	-- Timeweaver Delormi
-			["coord"] = { 76.6, 11.8, BORALUS },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(53940, {	-- A Stitch in Time [H]
-			["sourceQuests"] = { 53938 },	-- A Friend in Needle [H]
-			["provider"] = { "n", 145022 },	-- Timeweaver Delormi
-			["coord"] = { 43.5, 34.8, DAZARALOR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(55177, {	-- Tearing at the Seams [A]
-			["sourceQuests"] = { 53807 },	-- A Stitch in Time [A]
-			["provider"] = { "n", 145022 },	-- Timeweaver Delormi
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(55188, {	-- Tearing at the Seams [H]
-			["sourceQuests"] = { 53940 },	-- A Stitch in Time [H]
-			["provider"] = { "n", 145022 },	-- Timeweaver Delormi
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(53810, {	-- The Severed Thread
-			["sourceQuests"] = {
-				55177,	-- Tearing at the Seams [A]
-				55188,	-- Tearing at the Seams [H]
-			},
-			["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-			["coord"] = { 62.0, 53.9, CAVERNS_OF_TIME },
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(53813, {	-- Rolling Up the Sleeves
-			["sourceQuests"] = {
-				55177,	-- Tearing at the Seams [A]
-				55188,	-- Tearing at the Seams [H]
-			},
-			["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-			["coord"] = { 43.5, 34.8, CAVERNS_OF_TIME },
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(53858, {	-- Step Into Her Shoes
-			["sourceQuests"] = {
-				53810,	-- The Severed Thread
-				53813,	-- Rolling Up the Sleeves
-			},
-			["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-			["coord"] = { 39.1, 63.3, CAVERNS_OF_TIME },
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(53866, {	-- If The Shoe Fits...
-			["sourceQuests"] = { 53858 },	-- Step Into Her Shoes
-			["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-			["coord"] = { 63.8, 68.8, SURAMAR },
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(55214, {	-- Seam Stress
-			["sourceQuests"] = { 53866 },	-- If The Shoe Fits...
-			["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-			["coord"] = { 64.2, 69.5, SURAMAR },
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(53868, {	-- Saving Nine
-			["sourceQuests"] = { 55214 },	-- Seam Stress
-			["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-			["coord"] = { 7.2, 24.5, STORMSONG_VALLEY },
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(53869, {	-- Killing Time
-			["sourceQuests"] = { 53868 },	-- Saving Nine
-			["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-			["coord"] = { 71.6, 39.8, DRAGONBLIGHT },
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(53881, {	-- Cut from the Same Cloth [A]
-			["sourceQuests"] = { 53869 },	-- Killing Time
-			["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-			["coord"] = { 71.6, 39.8, DRAGONBLIGHT },
-			["races"] = ALLIANCE_ONLY,
-			["groups"] = {
-				r(292946),	-- Recipe: Synchronous Thread (RECIPE!)
-			},
-		}),
-		q(53962, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Cut from the Same Cloth [H]
-			["sourceQuests"] = { 53869 },	-- Killing Time
-			["provider"] = { "n", 151134 },	-- Timeweaver Delormi
-			["coord"] = { 71.6, 39.8, DRAGONBLIGHT },
-			["races"] = HORDE_ONLY,
-			["groups"] = {
-				r(292946),	-- Recipe: Synchronous Thread (RECIPE!)
-			},
-		})),
-		q(50123, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- A Recipe For the Ages [A]
-			["description"] = "Requires 150 Kul Tiran Blacksmithing.",
-			["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
-			["coord"] = { 73.6, 8.6, BORALUS },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		})),
 	})),
 	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
@@ -558,7 +556,7 @@ root(ROOTS.Professions, prof(TAILORING, {
 			}),
 		})),
 	})),
-}));
+})));
 
 
 

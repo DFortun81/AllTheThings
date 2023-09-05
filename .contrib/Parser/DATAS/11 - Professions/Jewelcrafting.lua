@@ -2,7 +2,7 @@
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
 local JEWELCRAFTING_KNOWLEDGE = 2029;
-root(ROOTS.Professions, prof(JEWELCRAFTING, {
+root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = JEWELCRAFTING }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18880),	-- Generations of Gemstones I
 		ach(18889),	-- Generations of Gemstones II
@@ -10,79 +10,57 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, {
 		ach(18891),	-- Generations of Gemstones IV
 		ach(18897, {	-- Can't Crush These
 			crit(1, {	-- Shipment: Blood Jade Amulet
-				["_quests"] = { 12958 },	-- Shipment: Blood Jade Amulet
+				["sourceQuests"] = { 12958 },	-- Shipment: Blood Jade Amulet
 			}),
 			crit(2, {	-- Shipment: Glowing Ivory Figurine
-				["_quests"] = { 12959 },	-- Shipment: Glowing Ivory Figurine
+				["sourceQuests"] = { 12959 },	-- Shipment: Glowing Ivory Figurine
 			}),
 			crit(3, {	-- Shipment: Wicked Sun Brooch
-				["_quests"] = { 12960 },	-- Shipment: Wicked Sun Brooch
+				["sourceQuests"] = { 12960 },	-- Shipment: Wicked Sun Brooch
 			}),
 			crit(4, {	-- Shipment: Intricate Bone Figurine
-				["_quests"] = { 12961 },	-- Shipment: Intricate Bone Figurine
+				["sourceQuests"] = { 12961 },	-- Shipment: Intricate Bone Figurine
 			}),
 			crit(5, {	-- Shipment: Bright Armor Relic
-				["_quests"] = { 12962 },	-- Shipment: Bright Armor Relic
+				["sourceQuests"] = { 12962 },	-- Shipment: Bright Armor Relic
 			}),
 			crit(6, {	-- Shipment: Shifting Sun Curio
-				["_quests"] = { 12963 },	-- Shipment: Shifting Sun Curio
+				["sourceQuests"] = { 12963 },	-- Shipment: Shifting Sun Curio
 			}),
-			crit(7, {	-- Nibbler! No! [A]
-				["_quests"] = { 25105 },	-- Nibbler! No!
-				["races"] = ALLIANCE_ONLY,
+			crit(7, {	-- Nibbler! No!
+				["sourceQuests"] = {
+					25105,	-- Nibbler! No! [A]
+					25158 ,	-- Nibbler! No! [H]
+				},
+				["sourceQuestNumRequired"] = 1,
 			}),
-			crit(8, {	-- Nibbler! No! [H]
-				["_quests"] = { 25158 },	-- Nibbler! No!
-				["races"] = HORDE_ONLY,
+			crit(8, {	-- A Present for Lila [H]
+				["sourceQuests"] = {
+					25154,	-- A Present for Lila [A]
+					25160 ,	-- A Present for Lila [H]
+				},
+				["sourceQuestNumRequired"] = 1,
 			}),
-			crit(9, {	-- A Present for Lila [A]
-				["_quests"] = { 25154 },	-- A Present for Lila
-				["races"] = ALLIANCE_ONLY,
+			crit(9, {	-- Ogrezonians in the Mood [A]
+				["sourceQuests"] = {
+					25155,	-- Ogrezonians in the Mood [A]
+					25161 ,	-- Ogrezonians in the Mood [H]
+				},
+				["sourceQuestNumRequired"] = 1,
 			}),
-			crit(10, {	-- A Present for Lila [H]
-				["_quests"] = { 25160 },	-- A Present for Lila
-				["races"] = HORDE_ONLY,
+			crit(10, {	-- Elemental Goo [H]
+				["sourceQuests"] = {
+					25156,	-- Elemental Goo [A]
+					25162 ,	-- Elemental Goo [H]
+				},
+				["sourceQuestNumRequired"] = 1,
 			}),
-			crit(11, {	-- Ogrezonians in the Mood [A]
-				["_quests"] = { 25155 },	-- Ogrezonians in the Mood
-				["races"] = ALLIANCE_ONLY,
-			}),
-			crit(12, {	-- Ogrezonians in the Mood [H]
-				["_quests"] = { 25161 },	-- Ogrezonians in the Mood
-				["races"] = HORDE_ONLY,
-			}),
-			crit(13, {	-- Elemental Goo [A]
-				["_quests"] = { 25156 },	-- Elemental Goo
-				["races"] = ALLIANCE_ONLY,
-			}),
-			crit(14, {	-- Elemental Goo [H]
-				["_quests"] = { 25162 },	-- Elemental Goo
-				["races"] = HORDE_ONLY,
-			}),
-			crit(15, {	-- The Latest Fashion! [A]
-				["_quests"] = { 25157 },	-- The Latest Fashion!
-				["races"] = ALLIANCE_ONLY,
-			}),
-			crit(16, {	-- The Latest Fashion! [H]
-				["_quests"] = { 25159 },	-- The Latest Fashion!
-				["races"] = HORDE_ONLY,
-			}),
-		}),
-		ach(18941, {	-- Dazzling Dragons
-			crit(1, {	-- Jeweled Ruby Whelpling
-				["provider"] = { "i", 193887 },	-- Jeweled Ruby Whelpling
-			}),
-			crit(2, {	-- Jeweled Emerald Whelpling
-				["provider"] = { "i", 193888 },	-- Jeweled Emerald Whelpling
-			}),
-			crit(3, {	-- Jeweled Sapphire Whelpling
-				["provider"] = { "i", 193886 },	-- Jeweled Sapphire Whelpling
-			}),
-			crit(4, {	-- Jeweled Onyx Whelpling
-				["provider"] = { "i", 193889 },	-- Jeweled Onyx Whelpling
-			}),
-			crit(5, {	-- Jeweled Amber Whelpling
-				["provider"] = { "i", 193885 },	-- Jeweled Amber Whelpling
+			crit(11, {	-- The Latest Fashion! [A]
+				["sourceQuests"] = {
+					25157,	-- The Latest Fashion! [A]
+					25159 ,	-- The Latest Fashion! [H]
+				},
+				["sourceQuestNumRequired"] = 1,
 			}),
 		}),
 		ach(18909, {	-- Fantastic Figurines
@@ -110,80 +88,394 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, {
 			crit(8, {	-- Figurine - Black Diamond Crab
 				["provider"] = { "i", 21784 },	-- Figurine - Black Diamond Crab
 			}),
-			crit(9, {	-- Figurine - Dark Iron Scorpid
-				["provider"] = { "i", 21789 },	-- Figurine - Dark Iron Scorpid
-			}),
-			crit(10, {	-- Figurine - Felsteel Boar
+			crit(9, {	-- Figurine - Felsteel Boar
 				["provider"] = { "i", 24124 },	-- Figurine - Felsteel Boar
 			}),
-			crit(11, {	-- Figurine - Dawnstone Crab
+			crit(10, {	-- Figurine - Dawnstone Crab
 				["provider"] = { "i", 24125 },	-- Figurine - Dawnstone Crab
 			}),
-			--[[ crit(12, {	-- Figurine - Dark Iron Scorpid -- Duplicate?
+			crit(11, {	-- Figurine - Dark Iron Scorpid
 				["provider"] = { "i", 21789 },	-- Figurine - Dark Iron Scorpid
-			}), ]]--
-			crit(13, {	-- Figurine - Living Ruby Serpent
+			}),
+			crit(12, {	-- Figurine - Living Ruby Serpent
 				["provider"] = { "i", 24126 },	-- Figurine - Living Ruby Serpent
 			}),
-			crit(14, {	-- Figurine - Talasite Owl
+			crit(13, {	-- Figurine - Talasite Owl
 				["provider"] = { "i", 24127 },	-- Figurine - Talasite Owl
 			}),
-			crit(15, {	-- Figurine - Nightseye Panther
+			crit(14, {	-- Figurine - Nightseye Panther
 				["provider"] = { "i", 24128 }	-- Figurine - Nightseye Panther
 			}),
-			crit(16, {	-- Figurine - Empyrean Tortoise
+			crit(15, {	-- Figurine - Empyrean Tortoise
 				["provider"] = { "i", 35693 },	-- Figurine - Empyrean Tortoise
 			}),
-			crit(17, {	-- Figurine - Khorium Boar
+			crit(16, {	-- Figurine - Khorium Boar
 				["provider"] = { "i", 35694 },	-- Figurine - Khorium Boar
 			}),
-			crit(18, {	-- Figurine - Crimson Serpent
+			crit(17, {	-- Figurine - Crimson Serpent
 				["provider"] = { "i", 35700 },	-- Figurine - Crimson Serpent
 			}),
-			crit(19, {	-- Figurine - Shadowsong Panther
+			crit(18, {	-- Figurine - Shadowsong Panther
 				["provider"] = { "i", 35702 },	-- Figurine - Shadowsong Panther
 			}),
-			crit(20, {	-- Figurine - Seaspray Albatross
+			crit(19, {	-- Figurine - Seaspray Albatross
 				["provider"] = { "i", 35703 },	-- Figurine - Seaspray Albatross
 			}),
-			crit(21, {	-- Figurine - Ruby Hare
+			crit(20, {	-- Figurine - Ruby Hare
 				["provider"] = { "i", 42341 },	-- Figurine - Ruby Hare
 			}),
-			crit(22, {	-- Figurine - Twilight Serpent
+			crit(21, {	-- Figurine - Twilight Serpent
 				["provider"] = { "i", 42395 },	-- Figurine - Twilight Serpent
 			}),
-			crit(23, {	-- Figurine - Sapphire Owl
+			crit(22, {	-- Figurine - Sapphire Owl
 				["provider"] = { "i", 42413 },	-- Figurine - Sapphire Owl
 			}),
-			crit(24, {	-- Figurine - Emerald Boar
+			crit(23, {	-- Figurine - Emerald Boar
 				["provider"] = { "i", 42418 },	-- Figurine - Emerald Boar
 			}),
-			crit(25, {	-- Figurine - Monarch Crab
+			crit(24, {	-- Figurine - Monarch Crab
 				["provider"] = { "i", 44063 },	-- Figurine - Monarch Crab
 			}),
-			crit(26, {	-- Figurine - King of Boars
+			crit(25, {	-- Figurine - King of Boars
 				["_quests"] = { 28778 },	-- Broken Boar Figurine
 			}),
-			crit(27, {	-- Figurine - Demon Panther
+			crit(26, {	-- Figurine - Demon Panther
 				["_quests"] = { 25047 },	-- Broken Panther Figurine
 			}),
-			crit(28, {	-- Figurine - Earthen Guardian
+			crit(27, {	-- Figurine - Earthen Guardian
 				["_quests"] = { 28776 },	-- Broken Earthen Figurine
 			}),
-			crit(29, {	-- Figurine - Jeweled Serpent
+			crit(28, {	-- Figurine - Jeweled Serpent
 				["_quests"] = { 28775 },	-- Broken Serpent Figurine
 			}),
-			crit(30, {	-- Figurine - Dream Owl
+			crit(29, {	-- Figurine - Dream Owl
 				["_quests"] = { 28777 },	-- Broken Owl Figurine
 			}),
 		}),
-		ach(18773, {	-- Jewelhammer's Focus
-			["provider"] = { "i", 153716 },	-- Jewelhammer's Focus
-		}),
 		ach(18893),	-- Plentiful Prospects
 		ach(18727),	-- Rave Leader
+	})),
+	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+			ach(18773, {	-- Jewelhammer's Focus
+				["provider"] = { "i", 153716 },	-- Jewelhammer's Focus
+			}),
 		})),
-	}));
+		n(QUESTS, {
+			------ Tools of Trade Questline ------
+		}),
+	})),
+	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+			ach(18941, {	-- Dazzling Dragons
+				crit(1, {	-- Jeweled Ruby Whelpling
+					["provider"] = { "i", 193887 },	-- Jeweled Ruby Whelpling
+				}),
+				crit(2, {	-- Jeweled Emerald Whelpling
+					["provider"] = { "i", 193888 },	-- Jeweled Emerald Whelpling
+				}),
+				crit(3, {	-- Jeweled Sapphire Whelpling
+					["provider"] = { "i", 193886 },	-- Jeweled Sapphire Whelpling
+				}),
+				crit(4, {	-- Jeweled Onyx Whelpling
+					["provider"] = { "i", 193889 },	-- Jeweled Onyx Whelpling
+				}),
+				crit(5, {	-- Jeweled Amber Whelpling
+					["provider"] = { "i", 193885 },	-- Jeweled Amber Whelpling
+				}),
+			}),
+		})),
+		n(QUESTS, {
+			q(70365, {	-- To the Dragon Isles: Jewelcrafting
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Jewelcrafting.",
+				["sourceQuests"] = {
+					67700,	-- To the Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "n", 192121 },	-- Falron Greygold
+				["coord"] = { 25.4, 54.2, THE_WAKING_SHORES },
+				["lockCriteria"] = { 1, "spellID", 366250 },	-- Dragon Isles Jewelcrafting
+			}),
+			q(72247, {	-- To the Dragon Isles: Jewelcrafting
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Jewelcrafting.",
+				["sourceQuests"] = {
+					67700,	-- To the Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "n", 198398 },	-- Misty Catseye
+				["coord"] = { 76.2, 33.6, THE_WAKING_SHORES },
+				["lockCriteria"] = { 1, "spellID", 366250 },	-- Dragon Isles Jewelcrafting
+			}),
+			q(70032, {	-- Artisan's Supply: Jeweler's Specs
+				["provider"] = { "n", 192121 },	-- Falron Greygold
+				["coord"] = { 25.4, 54.2, THE_WAKING_SHORES },
+				["cost"] = {{ "i", 193037, 1 }},	-- Sundered Onyx Loupe
+				["_drop"] = { "g" },
+			}),
+			q(70255, {	-- Hidden Profession Master Jewelcrafting
+				["name"] = "Hidden Profession Master: Jewelcrafting",
+				["provider"] = { "n", 194841 },	-- Pluutar
+				["coord"] = { 46.2, 40.8, THE_AZURE_SPAN },
+			}),
+			q(70189, {	-- Specialized Secrets: Jewelcrafting
+				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
+				["provider"] = { "n", 193110 },	-- Khadin
+				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
+				["cost"] = {{ "i", 191784, 1 }},	-- Dragon Shard of Knowledge
+				["isRepeatable"] = true,
+				["g"] = {
+					i(190456),	-- Artisan's Mettle
+				},
+			}),
+		}),
+		n(QUESTS, sharedData({
+			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
+			["isWeekly"] = true,
+			["g"] = {
+				i(198612),	-- Jeweler's Cuts
+			},
+		},{
+			-- Requires 25 Skill
+			q(66950, {	-- Heart of a Giant
+				["description"] = "Requires 25 Skill.",
+				["provider"] = { "n", 191004 },	-- Temnaayu
+				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+			}),
+			q(72428, {	-- Hornswog Hoarders
+				["description"] = "Requires 25 Skill.",
+				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
+				["coord"] = { 36.8, 62.8, VALDRAKKEN },
+			}),
+			q(70593, {	-- Jewelcrafting Services Requested
+				["description"] = "Requires 25 Skill.",
+				["provider"] = { "n", 194026 },	-- Azley
+				["coord"] = { 35.6, 58.8, VALDRAKKEN },
+			}),
+			q(66516, {	-- Mundane Gems, I Think not!
+				["description"] = "Requires 25 Skill.",
+				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
+				["coord"] = { 36.8, 62.8, VALDRAKKEN },
+			}),
+			q(66949, {	-- Trinket Bandits
+				["description"] = "Requires 25 Skill.",
+				["provider"] = { "n", 191004 },	-- Temnaayu
+				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+			}),
+
+			-- Requires 45 Skill
+			q(70565, {	-- Separation by Saturation
+				["description"] = "Requires 45 Skill.",
+				["provider"] = { "n", 190094 },	-- Tuluradormi
+				["coord"] = { 40.6, 61.2, VALDRAKKEN },
+			}),
+			q(70564, {	-- Spectacular
+				["description"] = "Requires 45 Skill.",
+				["provider"] = { "n", 190094 },	-- Tuluradormi
+				["coord"] = { 40.6, 61.2, VALDRAKKEN },
+			}),
+			q(70563, {	-- The Exhibition
+				["description"] = "Requires 45 Skill.",
+				["provider"] = { "n", 190094 },	-- Tuluradormi
+				["coord"] = { 40.6, 61.2, VALDRAKKEN },
+			}),
+			q(70562, {	-- The Plumbers, Mason
+				["description"] = "Requires 45 Skill.",
+				["provider"] = { "n", 190094 },	-- Tuluradormi
+				["coord"] = { 40.6, 61.2, VALDRAKKEN },
+			}),
+
+			-- Requires ?? Skill - Patch 10.1.0.
+			q(75362, {	-- Cephalo-Crystalization
+				["provider"] = { "n", 203516 },	-- Kayann
+				["coord"] = { 36.5, 62.5, VALDRAKKEN },
+				["timeline"] = { ADDED_10_1_0 }
+			}),
+			q(75602, {	-- Chips off the Old Crystal Block
+				["provider"] = { "n", 203516 },	-- Kayann
+				["coord"] = { 36.5, 62.5, VALDRAKKEN },
+				["timeline"] = { ADDED_10_1_0 }
+			}),
+		})),
+		filter(RECIPES, {
+			["description"] = "These are learned by specialization.",
+			["g"] = sharedData({ ["cost"] = {{ "c", JEWELCRAFTING_KNOWLEDGE, 1 }} }, {
+				r(374483),	-- Blotting Sand
+				r(374442),	-- Crafty Alexstraszite
+				r(374450),	-- Crafty Ysemerald
+				r(374445),	-- Deadly Alexstraszite
+				r(374547),	-- Dreamer's Vision
+				r(374549),	-- Earthwarden's Prize
+				r(392697),	-- Empty Soul Cage
+				r(374467),	-- Fierce Illimited Diamond
+				r(374459),	-- Fractured Neltharite
+				r(391782),	-- Illustrious Insight
+				r(374465),	-- Inscribed Illimited Diamond
+				r(374551),	-- Jeweled Dragon's Heart
+				r(374522),	-- Jeweled Offering
+				r(374548),	-- Keeper's Glory
+				r(374502),	-- Narcissist's Sculpture
+				r(374484),	-- Pounce
+				r(374518),	-- Projection Prism
+				r(374546),	-- Queen's Gift
+				r(374455),	-- Quick Ysemerald
+				r(374470),	-- Resplendent Illimited Diamond
+				r(374497),	-- Signet of Titanic Insight
+				r(374468),	-- Skillful Illimited Diamond
+				r(377960),	-- Split-Lens Specs
+				r(374508),	-- Statue of Tyr's Herald
+				r(374449),	-- Stormy Malygite
+				r(374472),	-- Tiered Medallion Setting
+				r(394621),	-- Torc of Passed Time
+				r(374448),	-- Zen Malygite
+				r(374458),	-- Zen Neltharite
+			}),
+		}),
+		n(TREASURES, {
+			o(401299, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Broken Barter Boulder
+				["coord"] = { 54.4, 32.5, ZARALEK_CAVERN },
+				["questID"] = 75654,
+				["g"] = {
+					i(205219),	-- Broken Barter Boulder
+				},
+			})),
+			o(380591, {	-- Closely Guarded Shiny
+				["questID"] = 70292,
+				["coord"] = { 50.4, 45.1, THE_WAKING_SHORES },
+				["g"] = {
+					i(198687),	-- Closely Guarded Shiny
+				},
+			}),
+			o(380569, {	-- Crystalline Overgrowth
+				["questID"] = 70277,
+				["coord"] = { 45.01, 61.3, THE_AZURE_SPAN },
+				["g"] = {
+					i(198664),	-- Crystalline Overgrowth
+				},
+			}),
+			o(380585, {	-- Erupted Alexstraszite Cluster
+				["questID"] = 70285,
+				["coord"] = { 59.8, 65.2, THALDRASZUS },
+				["g"] = {
+					i(198682),	-- Alexstraszite Cluster
+				},
+			}),
+			o(380548, {	-- Forgotten Jewelry Box
+				["questID"] = 70263,
+				["coord"] = { 61.8, 13.0, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(198657),	-- Forgotten Jewelry Box
+					i(198660),	-- Fragmented Key
+				},
+			}),
+			o(401292, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Gently Jostled Jewels
+				["coord"] = { 34.5, 45.5, ZARALEK_CAVERN },
+				["questID"] = 75653,
+				["g"] = {
+					i(205216),	-- Gently Jostled Jewels
+				},
+			})),
+			o(380556, {	-- Harmonic Chest
+				["description"] = "Click the key next to the chest, then click the three crystals in the same lake. Return to the chest to collect the treasure.",
+				["questID"] = 70271,
+				["coord"] = { 44.6, 61.2, THE_AZURE_SPAN },
+				["g"] = {
+					i(201016),	-- Harmonic Crystal Harmonizer
+				},
+			}),
+			o(380822, {	-- Igneous Gem
+				["description"] = "Click the three crystals on the nearby small islands (quickly), then return to collect the treasure.",
+				["questID"] = 70273,
+				["coord"] = { 33.9, 63.7, THE_WAKING_SHORES },
+				["g"] = {
+					i(201017),	-- Igneous Gem
+				},
+			}),
+			o(384318, {	-- Inconspicuous Bookmark
+				["coord"] = { 58.5, 36.7, THALDRASZUS },
+				["questID"] = 72356,
+				["g"] = {
+					i(194654),	-- Design: Convergent Prism (RECIPE!)
+				}
+			}),
+			o(380577, {	-- Lofty Malygite
+				["questID"] = 70282,
+				["coord"] = { 25.2, 34.8, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(198670),	-- Lofty Malygite
+				},
+			}),
+			o(380545, {	-- Painter's Pretty Jewel
+				["description"] = "Inside the foilage of a lantern, very small! May also be bugged in War Mode.",
+				["questID"] = 70261,
+				["coord"] = { 56.9, 43.7, THALDRASZUS },
+				["g"] = {
+					i(198656),	-- Painter's Pretty Jewel
+				},
+			}),
+			o(401241, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Snubbed Snail Shells
+				["coord"] = { 40.4, 80.7, ZARALEK_CAVERN },
+				["questID"] = 75652,
+				["g"] = {
+					i(205214),	-- Snubbed Snail Shells
+				},
+			})),
+		}),
+		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
+			["isWeekly"] = true,
+			["g"] = {
+				currency(JEWELCRAFTING_KNOWLEDGE),
+			},
+		},{
+			i(198612),	-- Jeweler's Cuts
+			q(74112, {	-- Inscription Order: Jewelcrafting
+				["name"] = "Inscription Order: Jewelcrafting",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 194703 },	-- Draconic Treatise on Jewelcrafting
+			}),
+			q(66388, {	-- Weekly Jewelcrafting Knowledgepoint #1
+				["name"] = "Jewelcrafting Treasure #1",
+				["provider"] = { "i", 193909 },		-- Ancient Gem Fragments
+			}),
+			q(66389, {	-- Weekly Jewelcrafting Knowledgepoint #2
+				["name"] = "Jewelcrafting Treasure #2",
+				["provider"] = { "i", 193907 },		-- Chipped Tyrstone
+			}),
+			q(70521, {	-- Weekly Jewelcrafting Knowledgepoint #3
+				["name"] = "Jewelcrafting Drop #1: Well Dressed",
+				["description"] = "Drops from any Well Dressed Humanoids & Dragonkins.\nCoordinates link to the spot(s) we found best.",
+				["crs"] = {
+					195215,	-- Rebel Bruiser
+					195062,	-- Rebel Incinerator
+					195063,	-- Rebel Conjurer
+					195060,	-- Rebel Mender
+				},
+				["provider"] = { "i", 198974 },	-- Elegantly Engraved Embellishment
+				["coords"] = {
+					{ 46.8, 59.6, THALDRASZUS },
+					{ 45.8 ,58.2, THALDRASZUS },
+				},
+			}),
+			q(70520, {	-- Weekly Jewelcrafting Knowledgepoint #4
+				["name"] = "Jewelcrafting Drop #2: Earth Elemental",
+				["description"] = "Drops from any Earth Elemental.\nCoordinates link to the spot(s) we found best.",
+				["crs"] = {
+					194212,	-- Unleashed Rubble
+					194517,	-- Crushing Elemental
+				},
+				["provider"] = { "i", 198973 },	-- Incandescent Curio
+				["coords"] = {
+					{ 50.6, 57.6, THALDRASZUS },
+					{ 48.8, 60.6, THALDRASZUS },
+					{ 47.8, 35.6, THE_WAKING_SHORES },
+					{ 50.6, 33.2, THE_WAKING_SHORES },
+					{ 53.6, 31.0, THE_WAKING_SHORES },
+				},
+			}),
+		})),
+	})),
+})));
+
+-- #if ANYCLASSIC
 -- #if AFTER TBC
 local REMOVED_WITH_CATA = "removed 4.0.1";
 applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
@@ -6306,5 +6598,6 @@ recipeCache = nil;	-- Disable the cache validation.
 root(ROOTS.HiddenQuestTriggers, {
 	q(55631),	-- Jewelcrafting Diode shrine. harvesting gems from them triggered this quest. Nazmir location
 });
+-- #endif
 -- #endif
 -- #endif

@@ -1,3 +1,4 @@
+-- #if ANYCLASSIC
 profession(ENGINEERING, {
 	prof(20219, {	-- Gnomish Engineering
 		["description"] = "These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level a second Engineer and complete the opposing specialization.",
@@ -151,47 +152,6 @@ profession(ENGINEERING, {
 					},
 				},
 			},
-			n(QUESTS, {
-				q(3645, {	-- Membership Card Renewal
-					["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
-					["sourceQuest"] = 3643,	-- Show Your Work
-					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
-					["cost"] = { { "g", 20000 } },	-- 2g
-					["timeline"] = { "removed 4.0.3.2000" },
-					["requireSkill"] = ENGINEERING,
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
-					["lvl"] = 30,
-					["groups"] = {
-						i(10790),	-- Gnome Engineer Membership Card
-					},
-				}),
-				q(3647, {	-- Membership Card Renewal
-					["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
-					["sourceQuest"] = 3641,	-- Show Your Work
-					["coord"] = { 69.8, 50.2, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
-					["cost"] = { { "g", 20000 } },	-- 2g
-					["timeline"] = { "removed 4.0.3.2000" },
-					["requireSkill"] = ENGINEERING,
-					["repeatable"] = true,
-					["lvl"] = 30,
-					["groups"] = {
-						i(10790),	-- Gnome Engineer Membership Card
-					},
-				}),
-			}),
-			n(REWARDS, {
-				i(11423, {	-- Gnome Engineer's Renewal Gift
-					["description"] = "If you destroy your Gnome Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",
-					["timeline"] = { "removed 4.0.3.2000" },
-					["groups"] = {
-						i(10603),	-- Schematic: Catseye Ultra Goggles
-						i(11827),	-- Schematic: Lil' Smoky
-						i(10606),	-- Schematic: Parachute Cloak
-					},
-				}),
-			}),
 		},
 	}),
 });
@@ -211,5 +171,6 @@ itemrecipe(18661, 23129);	-- Schematic: World Enlarger
 -- #if AFTER WRATH
 -- #if BEFORE 4.0.1
 itemrecipe(52023, 72953);	-- Plans: Iceblade Arrow
+-- #endif
 -- #endif
 -- #endif

@@ -2,7 +2,7 @@
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
 local LEATHERWORKING_KNOWLEDGE = 2025;
-profession(LEATHERWORKING, {
+root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] = LEATHERWORKING }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18884),	-- A Test of Scale IV
 		ach(18883),	-- A Test of Scale III
@@ -721,175 +721,178 @@ profession(LEATHERWORKING, {
 		})),
 	})),
 	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
-		ach(18777, {	-- Mallet of Thunderous Skins
-			["provider"] = { "i", 164978 },	-- Mallet of Thunderous Skins
-			["timeline"] = { ADDED_10_1_7 },
-		}),
-		q(54481, {	-- Leathered Patterns [A]
-			["provider"] = { "n", 136063 },	-- Cassandra Brennor
-			["coord"] = { 75.5, 12.6, BORALUS },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
-		}),
-		q(54482, {	-- Leathered Patterns [H]
-			["provider"] = { "n", 122698 },	-- Xanjo
-			["coord"] = { 44.1, 34.6, DAZARALOR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
-		}),
-		-- Tools of Trade Questline
-		q(55227, {	-- The Aeonian Artisan
-			["description"] = "Requires 150 Kul Tiran Leatherworking.",
-			["provider"] = { "n", 136063 },	-- Cassandra Brennor
-			["coord"] = { 75.5, 12.6, BORALUS },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(53995, {	-- The Tauren Tanner
-			["description"] = "Requires 150 Zandalari Leatherworking.",
-			["provider"] = { "n", 122698 },	-- Xanjo
-			["coord"] = { 44.1, 34.6, DAZARALOR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(55228, {	-- The Audition (A)
-			["sourceQuests"] = { 55227 },	-- The Aeonian Artisan
-			["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
-			["coord"] = { 69.6, 29.8, BORALUS },
-			["races"] = ALLIANCE_ONLY,
-			["cost"] = {{ "i", 154167, 3 }},	-- 3x Drums of the Maelstrom
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(55216, {	-- The Audition (H)
-			["sourceQuests"] = { 53995 },	-- The Tauren Tanner
-			["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
-			["coord"] = { 53.4, 92.5, DAZARALOR },
-			["races"] = HORDE_ONLY,
-			["cost"] = {{ "i", 154167, 3 }},	-- 3x Drums of the Maelstrom
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(55229, {	-- Repaying the Debt
-			["sourceQuests"] = { 55228 },	-- The Audition (A)
-			["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
-			["coord"] = { 69.6, 29.8, BORALUS },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(55217, {	-- Repaying the Life Debt
-			["sourceQuests"] = { 55216 },	-- The Audition (H)
-			["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
-			["coord"] = { 53.4, 92.5, DAZARALOR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(55230, {	-- Telonis' Prized Leather
-			["sourceQuests"] = { 55229 },	-- Repaying the Debt
-			["provider"] = { "n", 151287 },	-- Telonis
-			["coord"] = { 42.6, 60.6, STORMWIND_CITY },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(55218, {	-- Sheza's Prized Leather
-			["sourceQuests"] = { 55217 },	-- Repaying the Life Debt
-			["provider"] = { "n", 3037 },	-- Sheza Wildmane
-			["coord"] = { 69.7, 26.7, THUNDER_BLUFF },
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(55231, {	-- The Other Ghostdancer
-			["sourceQuests"] = { 55228 },	-- The Audition (A)
-			["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
-			["coord"] = { 69.6, 29.8, BORALUS },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(55219, {	-- Dropping by the Base
-			["sourceQuests"] = { 55216 },	-- The Audition (H)
-			["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
-			["coord"] = { 53.4, 92.5, DAZARALOR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(55232, {	-- Mevris' Menace
-			["sourceQuests"] = { 55231 },	-- The Other Ghostdancer
-			["provider"] = { "n", 151285 },	-- Mevris Ghostdancer
-			["coord"] = { 53.6, 54.4, VALSHARAH },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(55220, {	-- Bass Fishing
-			["sourceQuests"] = { 55219 },	-- Dropping by the Base
-			["provider"] = { "n", 108017 },	-- Torv Dubstomp
-			["coord"] = { 54.9, 77.9, 750 },
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(55233, {	-- Picking Bones (A)
-			["sourceQuests"] = { 55228 },	-- The Audition (A)
-			["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
-			["coord"] = { 69.6, 29.8, BORALUS },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(55221, {	-- Picking Bones (H)
-			["sourceQuests"] = { 55216 },	-- The Audition (H)
-			["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
-			["coord"] = { 53.4, 92.5, DAZARALOR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		q(55234, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Make Some Noise (A)
-			["sourceQuests"] = {
-				55230,	-- Telonis' Prized Leather
-				55232,	-- Mevris' Menace
-				55233,	-- Picking Bones (A)
-			},
-			["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
-			["coord"] = { 69.6, 29.8, BORALUS },
-			["races"] = ALLIANCE_ONLY,
-			["g"] = {
-				i(167560),	-- Cleaned Brilliant Scales (QI!)
-				i(167558),	-- Etched Bones (QI!)
-				r(293135, {["u"] = TRAINING}),	--	Drum of Primal Might (RECIPE!)
-				i(167561),	-- Drum of Primal Might (QI!)
-				i(167559),	-- Supple Hides (QI!)
-			},
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+			ach(18777, {	-- Mallet of Thunderous Skins
+				["provider"] = { "i", 164978 },	-- Mallet of Thunderous Skins
+			}),
 		})),
-		q(55222, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Make Some Noise (H)
-			["sourceQuests"] = {
-				55218,	-- Sheza's Prized Leather
-				55220,	-- Bass Fishing
-				55221,	-- Picking Bones (H)
-			},
-			["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
-			["coord"] = { 53.4, 92.5, DAZARALOR },
-			["races"] = HORDE_ONLY,
-			["g"] = {
-				i(167560),	-- Cleaned Brilliant Scales (QI!)
-				i(167558),	-- Etched Bones (QI!)
-				r(293135, {["u"] = TRAINING}),	--	Drum of Primal Might (RECIPE!)
-				i(167561),	-- Drum of Primal Might (QI!)
-				i(167559),	-- Supple Hides (QI!)
-			},
-		})),
-		q(55235, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Instruments of Destruction (A)
-			["sourceQuests"] = { 55234 },	-- Make Some Noise (A)
-			["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
-			["coord"] = { 69.6, 29.8, BORALUS },
-			["races"] = ALLIANCE_ONLY,
-			["g"] = {
-				r(293076),	-- Mallet of Thunderous Skins (RECIPE!)
-			},
-		})),
-		q(55223, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Instruments of Destruction (H)
-			["sourceQuests"] = { 55222 },	-- Make Some Noise (H)
-			["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
-			["coord"] = { 53.4, 92.5, DAZARALOR },
-			["races"] = HORDE_ONLY,
-			["g"] = {
-				r(293076),	-- Mallet of Thunderous Skins (RECIPE!)
-			},
-		})),
+		n(QUESTS, {
+			q(54481, {	-- Leathered Patterns [A]
+				["provider"] = { "n", 136063 },	-- Cassandra Brennor
+				["coord"] = { 75.5, 12.6, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
+			}),
+			q(54482, {	-- Leathered Patterns [H]
+				["provider"] = { "n", 122698 },	-- Xanjo
+				["coord"] = { 44.1, 34.6, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
+			}),
+				------ Tools of Trade Questline ------
+			q(55227, {	-- The Aeonian Artisan
+				["description"] = "Requires 150 Kul Tiran Leatherworking.",
+				["provider"] = { "n", 136063 },	-- Cassandra Brennor
+				["coord"] = { 75.5, 12.6, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(53995, {	-- The Tauren Tanner
+				["description"] = "Requires 150 Zandalari Leatherworking.",
+				["provider"] = { "n", 122698 },	-- Xanjo
+				["coord"] = { 44.1, 34.6, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(55228, {	-- The Audition (A)
+				["sourceQuests"] = { 55227 },	-- The Aeonian Artisan
+				["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
+				["coord"] = { 69.6, 29.8, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["cost"] = {{ "i", 154167, 3 }},	-- 3x Drums of the Maelstrom
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(55216, {	-- The Audition (H)
+				["sourceQuests"] = { 53995 },	-- The Tauren Tanner
+				["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
+				["coord"] = { 53.4, 92.5, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["cost"] = {{ "i", 154167, 3 }},	-- 3x Drums of the Maelstrom
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(55229, {	-- Repaying the Debt
+				["sourceQuests"] = { 55228 },	-- The Audition (A)
+				["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
+				["coord"] = { 69.6, 29.8, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(55217, {	-- Repaying the Life Debt
+				["sourceQuests"] = { 55216 },	-- The Audition (H)
+				["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
+				["coord"] = { 53.4, 92.5, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(55230, {	-- Telonis' Prized Leather
+				["sourceQuests"] = { 55229 },	-- Repaying the Debt
+				["provider"] = { "n", 151287 },	-- Telonis
+				["coord"] = { 42.6, 60.6, STORMWIND_CITY },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(55218, {	-- Sheza's Prized Leather
+				["sourceQuests"] = { 55217 },	-- Repaying the Life Debt
+				["provider"] = { "n", 3037 },	-- Sheza Wildmane
+				["coord"] = { 69.7, 26.7, THUNDER_BLUFF },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(55231, {	-- The Other Ghostdancer
+				["sourceQuests"] = { 55228 },	-- The Audition (A)
+				["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
+				["coord"] = { 69.6, 29.8, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(55219, {	-- Dropping by the Base
+				["sourceQuests"] = { 55216 },	-- The Audition (H)
+				["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
+				["coord"] = { 53.4, 92.5, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(55232, {	-- Mevris' Menace
+				["sourceQuests"] = { 55231 },	-- The Other Ghostdancer
+				["provider"] = { "n", 151285 },	-- Mevris Ghostdancer
+				["coord"] = { 53.6, 54.4, VALSHARAH },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(55220, {	-- Bass Fishing
+				["sourceQuests"] = { 55219 },	-- Dropping by the Base
+				["provider"] = { "n", 108017 },	-- Torv Dubstomp
+				["coord"] = { 54.9, 77.9, 750 },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(55233, {	-- Picking Bones (A)
+				["sourceQuests"] = { 55228 },	-- The Audition (A)
+				["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
+				["coord"] = { 69.6, 29.8, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(55221, {	-- Picking Bones (H)
+				["sourceQuests"] = { 55216 },	-- The Audition (H)
+				["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
+				["coord"] = { 53.4, 92.5, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_5 },
+			}),
+			q(55234, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Make Some Noise (A)
+				["sourceQuests"] = {
+					55230,	-- Telonis' Prized Leather
+					55232,	-- Mevris' Menace
+					55233,	-- Picking Bones (A)
+				},
+				["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
+				["coord"] = { 69.6, 29.8, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(167560),	-- Cleaned Brilliant Scales (QI!)
+					i(167558),	-- Etched Bones (QI!)
+					r(293135, {["u"] = TRAINING}),	--	Drum of Primal Might (RECIPE!)
+					i(167561),	-- Drum of Primal Might (QI!)
+					i(167559),	-- Supple Hides (QI!)
+				},
+			})),
+			q(55222, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Make Some Noise (H)
+				["sourceQuests"] = {
+					55218,	-- Sheza's Prized Leather
+					55220,	-- Bass Fishing
+					55221,	-- Picking Bones (H)
+				},
+				["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
+				["coord"] = { 53.4, 92.5, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(167560),	-- Cleaned Brilliant Scales (QI!)
+					i(167558),	-- Etched Bones (QI!)
+					r(293135, {["u"] = TRAINING}),	--	Drum of Primal Might (RECIPE!)
+					i(167561),	-- Drum of Primal Might (QI!)
+					i(167559),	-- Supple Hides (QI!)
+				},
+			})),
+			q(55235, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Instruments of Destruction (A)
+				["sourceQuests"] = { 55234 },	-- Make Some Noise (A)
+				["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
+				["coord"] = { 69.6, 29.8, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					r(293076),	-- Mallet of Thunderous Skins (RECIPE!)
+				},
+			})),
+			q(55223, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Instruments of Destruction (H)
+				["sourceQuests"] = { 55222 },	-- Make Some Noise (H)
+				["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
+				["coord"] = { 53.4, 92.5, DAZARALOR },
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					r(293076),	-- Mallet of Thunderous Skins (RECIPE!)
+				},
+			})),
+		}),
 	})),
 	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(QUESTS, {
@@ -901,7 +904,7 @@ profession(LEATHERWORKING, {
 				},
 				["provider"] = { "n", 192048 },	-- Deidre Flemmin
 				["coord"] = { 76.6, 34.7, THE_WAKING_SHORES },
-				["lockCriteria"] = { 1, "spellID", 366249},	-- Dragon Isles Leatherworking
+				["lockCriteria"] = { 1, "spellID", 366249 },	-- Dragon Isles Leatherworking
 			}),
 			q(70033, {	-- Artisan's Supply: Pioneer's Leather Boots
 				["providers"] = {
@@ -916,7 +919,7 @@ profession(LEATHERWORKING, {
 					{ 29.0, 61.0, VALDRAKKEN },			-- Samar
 					{ 39.4, 55.4, OHNAHRAN_PLAINS },	-- Ekhi
 				},
-				["cost"] = { { "i", 193386, 1 } },	-- Pioneer's Leather Boots
+				["cost"] = {{ "i", 193386, 1 }},	-- Pioneer's Leather Boots
 				["_drop"] = { "g" },
 			}),
 			q(70256, {	-- Hidden Profession Master Leatherworking
@@ -928,7 +931,7 @@ profession(LEATHERWORKING, {
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
 				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
-				["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
+				["cost"] = {{ "i", 191784, 1 }},	-- Dragon Shard of Knowledge
 				["isRepeatable"] = true,
 				["g"] = {
 					i(190456),	-- Artisan's Mettle
@@ -1005,7 +1008,7 @@ profession(LEATHERWORKING, {
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["g"] = sharedData({ ["cost"] = { { "c", LEATHERWORKING_KNOWLEDGE, 1 } }, }, {
+			["g"] = sharedData({ ["cost"] = {{ "c", LEATHERWORKING_KNOWLEDGE, 1 }} }, {
 				r(375125),	-- Bow of the Dragon Hunters
 				r(375159),	-- Fang Adornments
 				r(375123),	-- Flame-Touched Chain
@@ -1154,7 +1157,7 @@ profession(LEATHERWORKING, {
 			}),
 		})),
 	})),
-});
+})));
 
 -- #if ANYCLASSIC
 local applytraining = function(g)
