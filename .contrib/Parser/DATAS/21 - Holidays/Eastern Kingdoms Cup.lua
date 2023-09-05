@@ -11,6 +11,13 @@ EASTERN_KINGDOMS_CUP_HEADER = createHeader({
 		de = "Der Pokal der Östlichen Königreiche"
 	},
 });
+-- These actually don't require any DF content
+local dragonridingrace = function(id, data)
+	local t = dragonridingrace(id, data);
+	t.sourceQuests = nil
+	t.sourceQuestNumRequired = nil;
+	return t;
+end
 local RIDERS_OF_AZEROTH_BADGE = 2588;
 root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 	n(ACHIEVEMENTS, {
