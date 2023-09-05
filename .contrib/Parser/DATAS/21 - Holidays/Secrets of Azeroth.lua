@@ -215,6 +215,23 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 				i(208107),	-- Kathos' Field Glasses
 			},
 		}),
+
+		-- Day 5 --
+		q(77284, {	-- A Chilling Ascent
+			["qg"] = 207696,	-- Bobby Carlisle
+			["coord"] = { 47.9, 46.8, VALDRAKKEN },
+			["groups"] = {
+				i(208137),	-- The Clerk's Notes
+			},
+		}),
+		q(77286, {	-- A Knowledgeable Descent
+			["provider"] = { "o", 405523 },	-- Unveiled Tablet
+			["coord"] = { 78.9, 32.4, THE_AZURE_SPAN },
+			["sourceQuest"] = 77284,	-- A Chilling Ascent
+			["groups"] = {
+				i(208143),	-- Unveiled Tablet Rubbing
+			},
+		}),
 	}),
 }))));
 
@@ -234,6 +251,7 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(77403),	-- using Ancient Lever  at 57.0 25.5 during 'Securing an Artifact' (questID 77281)
 	q(78201),	-- completed 'Artifact Secured' (questID 77282)
 	q(77522),	-- completed 'The Torch of Pyrreth' (questID 77263)
+	q(77523),	-- completed 'A Knowledgeable Descent' (questID 77286)
 
 	-- TODO: Someone add these under Community Rumors achievement in a suitable structure please
 	q(77289),	-- Community Satchel 1 (Eastern Plague Lands @ 55.1, 59.4)

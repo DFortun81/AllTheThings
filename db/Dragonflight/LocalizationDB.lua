@@ -5487,6 +5487,7 @@ _.ObjectNames = {
 	[405286] = "Torn Page",
 	[405388] = "Familiar Journal",
 	[405489] = "Preservationist's Locker",
+	[405513] = "Torch of Pyrreth",
 	[9000000] = "Wind Sculpted Stone",
 	[9999890] = "Corrupted Loot",
 	[9999891] = "Main Objective Only",
@@ -9704,6 +9705,7 @@ _.ObjectModels = {
 	[405388] = 198038,
 	[405489] = 4216697,
 	[405513] = 194965,
+	[405523] = 4209023,
 }
 
 -- Supported Locales
