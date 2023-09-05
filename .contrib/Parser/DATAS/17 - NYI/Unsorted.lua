@@ -728,6 +728,31 @@ root(ROOTS.Unsorted, {
 			i(210054),	-- Forsaken Champion's Vest
 			i(210062),	-- Ironbound Satchel of Helpful Goods
 			i(210063),	-- Invader's Satchel of Helpful Goods
+			--
+			i(207921),	-- Dazhak's Desiccated Wingbones
+			i(206600),	-- A Clue
+			i(206696),	-- Tricked-Out Thinking Cap
+			i(206760),	-- A Clue
+			i(206762),	-- A Clue
+			i(206944),	-- A Clue: The Thinking Cap
+			i(206948),	-- A Clue: The Shifting Sands
+			i(206950),	-- A Clue
+			i(206996),	-- A Clue
+			i(207730),	-- Idol of Ohn'ahra
+			i(207802),	-- Bobby Carlisle's Thinking Cap Notes
+			i(208054),	-- A Mystery Box
+			i(208055),	-- A Clue: The Golden Chalice
+			i(208056),	-- Golden Chalice
+			i(208092),	-- Torch of Pyrreth
+			i(208406),	-- High Scholar's Circlet
+			i(208407),	-- High Scholar's Mantle
+			i(208408),	-- High Scholar's Sash
+			i(208409),	-- High Scholar's Slippers
+			i(208410),	-- High Scholar's Gloves
+			i(208411),	-- High Scholar's Gown
+			i(208412),	-- High Scholar's Arcana
+			i(208613),	-- High Scholar's Drape
+
 		})),
 		tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
 			filter(COSMETIC, {

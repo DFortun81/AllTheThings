@@ -12954,3 +12954,10 @@
 19105@@@Outland Racing Completionist
 19106@@@Outland Racing Completionist: Silver
 19107@@@Outland Racing Completionist: Gold
+10.1.7.51059
+19137@@@<Hidden> Base 11.0 Tender [DNT]
+19138@@@<Hidden> Heroic 11.0 Tender [DNT]
+19139@@@<Hidden> Epic 11.0 Tender [DNT]
+19192@@@Lil' Frostwing
+10.1.7.51187
+17773@@@A Blue Dawn
