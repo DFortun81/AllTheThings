@@ -19,197 +19,198 @@ local dragonridingrace = function(id, data)
 end
 local RIDERS_OF_AZEROTH_BADGE = 2588;
 root(ROOTS.Holidays, applyevent(EVENTS.OUTLAND_CUP, n(OUTLAND_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
-	n(ACHIEVEMENTS, {
-		ach(19092, {	-- Outland: Bronze
-			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
-				18658,	-- Auchindoun Coaster: Bronze
-				18617,	-- Blade's Edge Brawl: Bronze
-				18603,	-- Coilfang Caper: Bronze
-				18707,	-- Eco-Dome Excursion: Bronze
-				18842,	-- Fel Pit Fracas: Bronze
-				18580,	-- Hellfire Hustle: Bronze
-				18649,	-- Razorthorn Rise Rush: Bronze
-				18692,	-- Shadowmoon Slam: Bronze
-				18679,	-- Shattrath City Sashay: Bronze
-				18794,	-- Skettis Scramble: Bronze
-				18626,	-- Telaar Tear: Bronze
-				18667,	-- Tempest Keep Sweep: Bronze
-				18739,	-- Warmaul Wingding: Bronze
-			}},
-		}),
-		ach(19097, {	-- Outland: Silver
-			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
-				18659,	-- Auchindoun Coaster: Silver
-				18618,	-- Blade's Edge Brawl: Silver
-				18604,	-- Coilfang Caper: Silver
-				18708,	-- Eco-Dome Excursion: Silver
-				18843,	-- Fel Pit Fracas: Silver
-				18581,	-- Hellfire Hustle: Silver
-				18650,	-- Razorthorn Rise Rush: Silver
-				18693,	-- Shadowmoon Slam: Silver
-				18680,	-- Shattrath City Sashay: Silver
-				18795,	-- Skettis Scramble: Silver
-				18627,	-- Telaar Tear: Silver
-				18668,	-- Tempest Keep Sweep: Silver
-				18740,	-- Warmaul Wingding: Silver
-			}},
-		}),
-		ach(19098, {	-- Outland: Gold
-			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
-				18660,	-- Auchindoun Coaster: Gold
-				18619,	-- Blade's Edge Brawl: Gold
-				18605,	-- Coilfang Caper: Gold
-				18709,	-- Eco-Dome Excursion: Gold
-				18844,	-- Fel Pit Fracas: Gold
-				18582,	-- Hellfire Hustle: Gold
-				18651,	-- Razorthorn Rise Rush: Gold
-				18694,	-- Shadowmoon Slam: Gold
-				18681,	-- Shattrath City Sashay: Gold
-				18796,	-- Skettis Scramble: Gold
-				18628,	-- Telaar Tear: Gold
-				18669,	-- Tempest Keep Sweep: Gold
-				18741,	-- Warmaul Wingding: Gold
-			}},
-		}),
-		ach(19099, {	-- Outland Advanced: Bronze
-			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
-				18661,	-- Auchindoun Coaster Advanced: Bronze
-				18620,	-- Blade's Edge Brawl Advanced: Bronze
-				18606,	-- Coilfang Caper Advanced: Bronze
-				18710,	-- Eco-Dome Excursion Advanced: Bronze
-				18845,	-- Fel Pit Fracas Advanced: Bronze
-				18583,	-- Hellfire Hustle Advanced: Bronze
-				18652,	-- Razorthorn Rise Rush Advanced: Bronze
-				18695,	-- Shadowmoon Slam Advanced: Bronze
-				18682,	-- Shattrath City Sashay Advanced: Bronze
-				18797,	-- Skettis Scramble Advanced: Bronze
-				18629,	-- Telaar Tear Advanced: Bronze
-				18670,	-- Tempest Keep Sweep Advanced: Bronze
-				18742,	-- Warmaul Wingding Advanced: Bronze
-			}},
-		}),
-		ach(19100, {	-- Outland Advanced: Silver
-			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
-				18662,	-- Auchindoun Coaster Advanced: Silver
-				18621,	-- Blade's Edge Brawl Advanced: Silver
-				18607,	-- Coilfang Caper Advanced: Silver
-				18711,	-- Eco-Dome Excursion Advanced: Silver
-				18846,	-- Fel Pit Fracas Advanced: Silver
-				18584,	-- Hellfire Hustle Advanced: Silver
-				18653,	-- Razorthorn Rise Rush Advanced: Silver
-				18696,	-- Shadowmoon Slam Advanced: Silver
-				18683,	-- Shattrath City Sashay Advanced: Silver
-				18798,	-- Skettis Scramble Advanced: Silver
-				18630,	-- Telaar Tear Advanced: Silver
-				18671,	-- Tempest Keep Sweep Advanced: Silver
-				18743,	-- Warmaul Wingding Advanced: Silver
-			}},
-		}),
-		ach(19101, {	-- Outland Advanced: Gold
-			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
-				18663,	-- Auchindoun Coaster Advanced: Gold
-				18622,	-- Blade's Edge Brawl Advanced: Gold
-				18608,	-- Coilfang Caper Advanced: Gold
-				18712,	-- Eco-Dome Excursion Advanced: Gold
-				18847,	-- Fel Pit Fracas Advanced: Gold
-				18585,	-- Hellfire Hustle Advanced: Gold
-				18654,	-- Razorthorn Rise Rush Advanced: Gold
-				18697,	-- Shadowmoon Slam Advanced: Gold
-				18684,	-- Shattrath City Sashay Advanced: Gold
-				18799,	-- Skettis Scramble Advanced: Gold
-				18631,	-- Telaar Tear Advanced: Gold
-				18672,	-- Tempest Keep Sweep Advanced: Gold
-				18744,	-- Warmaul Wingding Advanced: Gold
-			}},
-		}),
-		ach(19102, {	-- Outland Reverse: Bronze
-			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
-				18664,	-- Auchindoun Coaster Reverse: Bronze
-				18623,	-- Blade's Edge Brawl Reverse: Bronze
-				18609,	-- Coilfang Caper Reverse: Bronze
-				18713,	-- Eco-Dome Excursion Reverse: Bronze
-				18848,	-- Fel Pit Fracas Reverse: Bronze
-				18586,	-- Hellfire Hustle Reverse: Bronze
-				18655,	-- Razorthorn Rise Rush Reverse: Bronze
-				18698,	-- Shadowmoon Slam Reverse: Bronze
-				18685,	-- Shattrath City Sashay Reverse: Bronze
-				18800,	-- Skettis Scramble Reverse: Bronze
-				18632,	-- Telaar Tear Reverse: Bronze
-				18673,	-- Tempest Keep Sweep Reverse: Bronze
-				18745,	-- Warmaul Wingding Reverse: Bronze
-			}},
-		}),
-		ach(19103, {	-- Outland Reverse: Silver
-			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
-				18665,	-- Auchindoun Coaster Reverse: Silver
-				18624,	-- Blade's Edge Brawl Reverse: Silver
-				18610,	-- Coilfang Caper Reverse: Silver
-				18714,	-- Eco-Dome Excursion Reverse: Silver
-				18849,	-- Fel Pit Fracas Reverse: Silver
-				18587,	-- Hellfire Hustle Reverse: Silver
-				18656,	-- Razorthorn Rise Rush Reverse: Silver
-				18699,	-- Shadowmoon Slam Reverse: Silver
-				18686,	-- Shattrath City Sashay Reverse: Silver
-				18801,	-- Skettis Scramble Reverse: Silver
-				18633,	-- Telaar Tear Reverse: Silver
-				18674,	-- Tempest Keep Sweep Reverse: Silver
-				18746,	-- Warmaul Wingding Reverse: Silver
-			}},
-		}),
-		ach(19104, {	-- Outland Reverse: Gold
-			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
-				18666,	-- Auchindoun Coaster Reverse: Gold
-				18625,	-- Blade's Edge Brawl Reverse: Gold
-				18611,	-- Coilfang Caper Reverse: Gold
-				18715,	-- Eco-Dome Excursion Reverse: Gold
-				18850,	-- Fel Pit Fracas Reverse: Gold
-				18588,	-- Hellfire Hustle Reverse: Gold
-				18657,	-- Razorthorn Rise Rush Reverse: Gold
-				18700,	-- Shadowmoon Slam Reverse: Gold
-				18687,	-- Shattrath City Sashay Reverse: Gold
-				18802,	-- Skettis Scramble Reverse: Gold
-				18634,	-- Telaar Tear Reverse: Gold
-				18675,	-- Tempest Keep Sweep Reverse: Gold
-				18747,	-- Warmaul Wingding Reverse: Gold
-			}},
-		}),
-		ach(19105, {	-- Outland Racing Completionist
-			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
-				19105,	-- Outland: Bronze
-				19099,	-- Outland Advanced: Bronze
-				19102,	-- Outland Reverse: Bronze
-			}},
-		}),
-		ach(19106, {	-- Outland Racing Completionist: Silver
-			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
-				19097,	-- Outland: Silver
-				19100,	-- Outland Advanced: Silver
-				19103,	-- Outland Reverse: Silver
-			}},
-		}),
-		ach(19107, {	-- Outland Racing Completionist: Gold
-			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
-				19098,	-- Outland: Gold
-				19101,	-- Outland Advanced: Gold
-				19104,	-- Outland Reverse: Gold
-			}},
-			["g"] = {
-				title(790),	-- Outland Racer <Name>
-			},
-		}),
-	}),
+	-- TODO: Uncomment once we have quests
+	-- n(ACHIEVEMENTS, {
+	-- 	ach(19092, {	-- Outland: Bronze
+	-- 		-- Meta Achievement
+	-- 		["sym"] = {{"meta_achievement",
+	-- 			18658,	-- Auchindoun Coaster: Bronze
+	-- 			18617,	-- Blade's Edge Brawl: Bronze
+	-- 			18603,	-- Coilfang Caper: Bronze
+	-- 			18707,	-- Eco-Dome Excursion: Bronze
+	-- 			18842,	-- Fel Pit Fracas: Bronze
+	-- 			18580,	-- Hellfire Hustle: Bronze
+	-- 			18649,	-- Razorthorn Rise Rush: Bronze
+	-- 			18692,	-- Shadowmoon Slam: Bronze
+	-- 			18679,	-- Shattrath City Sashay: Bronze
+	-- 			18794,	-- Skettis Scramble: Bronze
+	-- 			18626,	-- Telaar Tear: Bronze
+	-- 			18667,	-- Tempest Keep Sweep: Bronze
+	-- 			18739,	-- Warmaul Wingding: Bronze
+	-- 		}},
+	-- 	}),
+	-- 	ach(19097, {	-- Outland: Silver
+	-- 		-- Meta Achievement
+	-- 		["sym"] = {{"meta_achievement",
+	-- 			18659,	-- Auchindoun Coaster: Silver
+	-- 			18618,	-- Blade's Edge Brawl: Silver
+	-- 			18604,	-- Coilfang Caper: Silver
+	-- 			18708,	-- Eco-Dome Excursion: Silver
+	-- 			18843,	-- Fel Pit Fracas: Silver
+	-- 			18581,	-- Hellfire Hustle: Silver
+	-- 			18650,	-- Razorthorn Rise Rush: Silver
+	-- 			18693,	-- Shadowmoon Slam: Silver
+	-- 			18680,	-- Shattrath City Sashay: Silver
+	-- 			18795,	-- Skettis Scramble: Silver
+	-- 			18627,	-- Telaar Tear: Silver
+	-- 			18668,	-- Tempest Keep Sweep: Silver
+	-- 			18740,	-- Warmaul Wingding: Silver
+	-- 		}},
+	-- 	}),
+	-- 	ach(19098, {	-- Outland: Gold
+	-- 		-- Meta Achievement
+	-- 		["sym"] = {{"meta_achievement",
+	-- 			18660,	-- Auchindoun Coaster: Gold
+	-- 			18619,	-- Blade's Edge Brawl: Gold
+	-- 			18605,	-- Coilfang Caper: Gold
+	-- 			18709,	-- Eco-Dome Excursion: Gold
+	-- 			18844,	-- Fel Pit Fracas: Gold
+	-- 			18582,	-- Hellfire Hustle: Gold
+	-- 			18651,	-- Razorthorn Rise Rush: Gold
+	-- 			18694,	-- Shadowmoon Slam: Gold
+	-- 			18681,	-- Shattrath City Sashay: Gold
+	-- 			18796,	-- Skettis Scramble: Gold
+	-- 			18628,	-- Telaar Tear: Gold
+	-- 			18669,	-- Tempest Keep Sweep: Gold
+	-- 			18741,	-- Warmaul Wingding: Gold
+	-- 		}},
+	-- 	}),
+	-- 	ach(19099, {	-- Outland Advanced: Bronze
+	-- 		-- Meta Achievement
+	-- 		["sym"] = {{"meta_achievement",
+	-- 			18661,	-- Auchindoun Coaster Advanced: Bronze
+	-- 			18620,	-- Blade's Edge Brawl Advanced: Bronze
+	-- 			18606,	-- Coilfang Caper Advanced: Bronze
+	-- 			18710,	-- Eco-Dome Excursion Advanced: Bronze
+	-- 			18845,	-- Fel Pit Fracas Advanced: Bronze
+	-- 			18583,	-- Hellfire Hustle Advanced: Bronze
+	-- 			18652,	-- Razorthorn Rise Rush Advanced: Bronze
+	-- 			18695,	-- Shadowmoon Slam Advanced: Bronze
+	-- 			18682,	-- Shattrath City Sashay Advanced: Bronze
+	-- 			18797,	-- Skettis Scramble Advanced: Bronze
+	-- 			18629,	-- Telaar Tear Advanced: Bronze
+	-- 			18670,	-- Tempest Keep Sweep Advanced: Bronze
+	-- 			18742,	-- Warmaul Wingding Advanced: Bronze
+	-- 		}},
+	-- 	}),
+	-- 	ach(19100, {	-- Outland Advanced: Silver
+	-- 		-- Meta Achievement
+	-- 		["sym"] = {{"meta_achievement",
+	-- 			18662,	-- Auchindoun Coaster Advanced: Silver
+	-- 			18621,	-- Blade's Edge Brawl Advanced: Silver
+	-- 			18607,	-- Coilfang Caper Advanced: Silver
+	-- 			18711,	-- Eco-Dome Excursion Advanced: Silver
+	-- 			18846,	-- Fel Pit Fracas Advanced: Silver
+	-- 			18584,	-- Hellfire Hustle Advanced: Silver
+	-- 			18653,	-- Razorthorn Rise Rush Advanced: Silver
+	-- 			18696,	-- Shadowmoon Slam Advanced: Silver
+	-- 			18683,	-- Shattrath City Sashay Advanced: Silver
+	-- 			18798,	-- Skettis Scramble Advanced: Silver
+	-- 			18630,	-- Telaar Tear Advanced: Silver
+	-- 			18671,	-- Tempest Keep Sweep Advanced: Silver
+	-- 			18743,	-- Warmaul Wingding Advanced: Silver
+	-- 		}},
+	-- 	}),
+	-- 	ach(19101, {	-- Outland Advanced: Gold
+	-- 		-- Meta Achievement
+	-- 		["sym"] = {{"meta_achievement",
+	-- 			18663,	-- Auchindoun Coaster Advanced: Gold
+	-- 			18622,	-- Blade's Edge Brawl Advanced: Gold
+	-- 			18608,	-- Coilfang Caper Advanced: Gold
+	-- 			18712,	-- Eco-Dome Excursion Advanced: Gold
+	-- 			18847,	-- Fel Pit Fracas Advanced: Gold
+	-- 			18585,	-- Hellfire Hustle Advanced: Gold
+	-- 			18654,	-- Razorthorn Rise Rush Advanced: Gold
+	-- 			18697,	-- Shadowmoon Slam Advanced: Gold
+	-- 			18684,	-- Shattrath City Sashay Advanced: Gold
+	-- 			18799,	-- Skettis Scramble Advanced: Gold
+	-- 			18631,	-- Telaar Tear Advanced: Gold
+	-- 			18672,	-- Tempest Keep Sweep Advanced: Gold
+	-- 			18744,	-- Warmaul Wingding Advanced: Gold
+	-- 		}},
+	-- 	}),
+	-- 	ach(19102, {	-- Outland Reverse: Bronze
+	-- 		-- Meta Achievement
+	-- 		["sym"] = {{"meta_achievement",
+	-- 			18664,	-- Auchindoun Coaster Reverse: Bronze
+	-- 			18623,	-- Blade's Edge Brawl Reverse: Bronze
+	-- 			18609,	-- Coilfang Caper Reverse: Bronze
+	-- 			18713,	-- Eco-Dome Excursion Reverse: Bronze
+	-- 			18848,	-- Fel Pit Fracas Reverse: Bronze
+	-- 			18586,	-- Hellfire Hustle Reverse: Bronze
+	-- 			18655,	-- Razorthorn Rise Rush Reverse: Bronze
+	-- 			18698,	-- Shadowmoon Slam Reverse: Bronze
+	-- 			18685,	-- Shattrath City Sashay Reverse: Bronze
+	-- 			18800,	-- Skettis Scramble Reverse: Bronze
+	-- 			18632,	-- Telaar Tear Reverse: Bronze
+	-- 			18673,	-- Tempest Keep Sweep Reverse: Bronze
+	-- 			18745,	-- Warmaul Wingding Reverse: Bronze
+	-- 		}},
+	-- 	}),
+	-- 	ach(19103, {	-- Outland Reverse: Silver
+	-- 		-- Meta Achievement
+	-- 		["sym"] = {{"meta_achievement",
+	-- 			18665,	-- Auchindoun Coaster Reverse: Silver
+	-- 			18624,	-- Blade's Edge Brawl Reverse: Silver
+	-- 			18610,	-- Coilfang Caper Reverse: Silver
+	-- 			18714,	-- Eco-Dome Excursion Reverse: Silver
+	-- 			18849,	-- Fel Pit Fracas Reverse: Silver
+	-- 			18587,	-- Hellfire Hustle Reverse: Silver
+	-- 			18656,	-- Razorthorn Rise Rush Reverse: Silver
+	-- 			18699,	-- Shadowmoon Slam Reverse: Silver
+	-- 			18686,	-- Shattrath City Sashay Reverse: Silver
+	-- 			18801,	-- Skettis Scramble Reverse: Silver
+	-- 			18633,	-- Telaar Tear Reverse: Silver
+	-- 			18674,	-- Tempest Keep Sweep Reverse: Silver
+	-- 			18746,	-- Warmaul Wingding Reverse: Silver
+	-- 		}},
+	-- 	}),
+	-- 	ach(19104, {	-- Outland Reverse: Gold
+	-- 		-- Meta Achievement
+	-- 		["sym"] = {{"meta_achievement",
+	-- 			18666,	-- Auchindoun Coaster Reverse: Gold
+	-- 			18625,	-- Blade's Edge Brawl Reverse: Gold
+	-- 			18611,	-- Coilfang Caper Reverse: Gold
+	-- 			18715,	-- Eco-Dome Excursion Reverse: Gold
+	-- 			18850,	-- Fel Pit Fracas Reverse: Gold
+	-- 			18588,	-- Hellfire Hustle Reverse: Gold
+	-- 			18657,	-- Razorthorn Rise Rush Reverse: Gold
+	-- 			18700,	-- Shadowmoon Slam Reverse: Gold
+	-- 			18687,	-- Shattrath City Sashay Reverse: Gold
+	-- 			18802,	-- Skettis Scramble Reverse: Gold
+	-- 			18634,	-- Telaar Tear Reverse: Gold
+	-- 			18675,	-- Tempest Keep Sweep Reverse: Gold
+	-- 			18747,	-- Warmaul Wingding Reverse: Gold
+	-- 		}},
+	-- 	}),
+	-- 	ach(19105, {	-- Outland Racing Completionist
+	-- 		-- Meta Achievement
+	-- 		["sym"] = {{"meta_achievement",
+	-- 			19105,	-- Outland: Bronze
+	-- 			19099,	-- Outland Advanced: Bronze
+	-- 			19102,	-- Outland Reverse: Bronze
+	-- 		}},
+	-- 	}),
+	-- 	ach(19106, {	-- Outland Racing Completionist: Silver
+	-- 		-- Meta Achievement
+	-- 		["sym"] = {{"meta_achievement",
+	-- 			19097,	-- Outland: Silver
+	-- 			19100,	-- Outland Advanced: Silver
+	-- 			19103,	-- Outland Reverse: Silver
+	-- 		}},
+	-- 	}),
+	-- 	ach(19107, {	-- Outland Racing Completionist: Gold
+	-- 		-- Meta Achievement
+	-- 		["sym"] = {{"meta_achievement",
+	-- 			19098,	-- Outland: Gold
+	-- 			19101,	-- Outland Advanced: Gold
+	-- 			19104,	-- Outland Reverse: Gold
+	-- 		}},
+	-- 		["g"] = {
+	-- 			title(790),	-- Outland Racer <Name>
+	-- 		},
+	-- 	}),
+	-- }),
 	-- TODO
 	-- n(QUESTS, {
 	-- 	q(76429, {	-- The Outland Cup Begins
