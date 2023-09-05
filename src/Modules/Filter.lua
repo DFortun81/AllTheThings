@@ -298,6 +298,8 @@ function(item)
 	-- no level requirement on the group, have to include it
 	return true;
 end);
+-- we actually don't "really" care to have level filter in the RawCharacterFilters... just causes more inaccurate quest reports since level req on every expac changes all the time
+RawCharacterFilters["Level"] = nil;
 
 -- ItemSource
 if C_TransmogCollection then
