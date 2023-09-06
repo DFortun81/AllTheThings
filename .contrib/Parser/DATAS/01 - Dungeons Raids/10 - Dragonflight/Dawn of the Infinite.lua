@@ -142,7 +142,7 @@ local QUANTUM_GROUP = sharedData({
 	i(208111, {	-- Quantum Axe			(One-Handed)
 	}),
 	i(208117, {	-- Quantum Bow
-		ig(4474),	-- Ravenwood Bow					(Removed)(Unique)
+	--	ig(4474),	-- Ravenwood Bow					(Removed)(Unique)	Added in 10.1.7 to original Source
 	}),
 	i(208118, {	-- Quantum Crossbow
 	}),
@@ -163,7 +163,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(115293),	-- Spectral Greataxe				(NYI)
 		ig(134577),	-- Vanguard Decapitator				(NYI)
 
-		ig(2015),	-- Black Metal War Axe				(Removed)
+	--	ig(2015),	-- Black Metal War Axe				(Removed)			Added in 10.1.7 to original Source
 		ig(2227),	-- Heavy Ogre War Axe 				(Removed)
 		ig(1220),	-- Lupine Axe						(Removed)
 		ig(2823),	-- Mo'grosh Can Opener 				(Removed)
@@ -178,7 +178,7 @@ local QUANTUM_GROUP = sharedData({
 	i(208114, {	-- Quantum Greathammer	(Two-Handed)(Mace)
 		ig(2254),	-- Icepane Warhammer				(Removed)
 		ig(911),	-- Ironwood Treebranch				(Removed)
-		ig(3571),	-- Trogg Beater						(Removed)
+	--	ig(3571),	-- Trogg Beater						(Removed)			Added in 10.1.7 to original Source
 	}),
 	i(208112, {	-- Quantum Greatsword	(Two-Handed)
 		-- CA IS NOT POSSIBLE -- Gold 13.07.2023
@@ -186,11 +186,11 @@ local QUANTUM_GROUP = sharedData({
 		ig(134606),	-- Scorching Greatsword 			(NYI)
 
 		ig(2014),	-- Black Metal Greatsword 			(Removed)(Unique)
-		ig(2204),	-- Brashclaws Skewer 				(Removed)(Unique)
+	--	ig(2204),	-- Brashclaws Skewer 				(Removed)(Unique)	Added in 10.1.7 to original Source
 		ig(3188),	-- Coral Claymore 					(Removed)
 		ig(2084),	-- Darksteel Bastard Sword 			(Removed)
 		ig(1387),	-- Ghoulfang						(Removed)
-		ig(16039),	-- Ta'Kierthan Songblade			(Removed)
+	--	ig(16039),	-- Ta'Kierthan Songblade			(Removed)			Added in 10.1.7 to original Source
 		ig(2754),	-- Tarnished Bastard Sword			(Removed)(Unique)
 	}),
 	i(208120, {	-- Quantum Knife
@@ -222,10 +222,10 @@ local QUANTUM_GROUP = sharedData({
 		ig(3227),	-- Nightbane Staff 					(Removed)(Unique)
 		ig(2226),	-- Ogremage Staff 					(Removed)(Unique)	
 		ig(1473),	-- Riverside Staff					(Removed)
-	--	ig(880),	-- Staff of Horrors					(Removed)			10.1.7
+	--	ig(880),	-- Staff of Horrors					(Removed)			Added in 10.1.7 to original Source
 	}),
 	i(208109, {	-- Quantum Sword		(One-Handed)
-		ig(8223),	-- Blade of the Basilisk 			(Removed)
+	--	ig(8223),	-- Blade of the Basilisk 			(Removed)			Added in 10.1.7 to original Source
 		ig(2065),	-- Rockjaw Blade					(Removed)(Unique)
 	}),
 	i(208122, {	-- Quantum Warglaives
