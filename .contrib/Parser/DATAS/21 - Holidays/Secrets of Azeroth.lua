@@ -242,8 +242,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			},
 		}),
 		q(77304, {	-- An Idol in Hand
-			["provider"] = { "i", 208145 },	-- Idol of Ohn'ahra Quest Item
+			["provider"] = { "i", 208145 },	-- Idol of Ohn'ahra Quest Item Missing ObjectID Source
 			["coord"] = { 39.5, 58.9, OHNAHRAN_PLAINS },
+			["sourceQuest"] = 77303,	-- Idol Searching
 			["groups"] = {
 				i(207730),	-- Idol of Ohn'ahra (TOY!)
 			},
@@ -251,6 +252,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		q(76456, {	-- Using the Idol
 			["qg"] = 206864,	-- Preservationist Kathos
 			["coord"] = { 47.4, 48.1, VALDRAKKEN },
+			["sourceQuest"] = 77304,	-- An Idol in Hand
 		}),
 	}),
 }))));
