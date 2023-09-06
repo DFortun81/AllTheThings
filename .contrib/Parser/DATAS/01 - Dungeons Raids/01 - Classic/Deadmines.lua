@@ -309,9 +309,9 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				["coord"] = { 44.0, 78.3, WESTFALL },
 				-- #else
 				["coords"] = {
-					{ 41.0, 76.6, WESTFALL },
-					{ 42.6, 76.6, WESTFALL },
-					{ 42.8, 79.0, WESTFALL },
+					{ 46.8, 47.8, 55 },
+					{ 61.7, 65.8, 55 },
+					--{ , 55 },
 				},
 				-- #endif
 				["groups"] = {
@@ -325,7 +325,11 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			}),
 			n(626, {	-- Foreman Thistlenettle
 				["description"] = "This is a rare that is not always present.\n\nLocated in the cavern before the instance.",
+				-- #if BEFORE CATA
 				["coord"] = { 42.2, 82.6, WESTFALL },
+				-- #else
+				["coord"] = { 55.8, 91.2, 55 },
+				-- #endif
 				["groups"] = {
 					i(1875),	-- Thistlenettle's Badge
 					i(2167),	-- Foreman's Gloves
@@ -339,10 +343,10 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				["coord"] = { 42.2, 79.9, WESTFALL },
 				-- #else
 				["coords"] = {
-					{ 52.8, 54.6, WESTFALL },
-					{ 56.2, 67.8, WESTFALL },
-					{ 41.4, 56.6, WESTFALL },
-					{ 29.6, 61.4, WESTFALL },
+					{ 52.8, 54.6, 55 },
+					{ 56.2, 67.8, 55 },
+					{ 41.4, 56.6, 55 },
+					{ 29.6, 61.4, 55 },
 				},
 				-- #endif
 				["groups"] = {
