@@ -2448,7 +2448,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(10553, {	-- Foreman Vest
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 05.09.2023 ATT Discord
 						}),
 					},
 				}),
@@ -2516,7 +2516,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 03.09.2023 Data Discord
 						}),
 						i(1965, {	-- White Wolf Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 05.09.2023 ATT Discord
 						}),
 					},
 				}),

@@ -1555,10 +1555,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(2284, {	-- Rat Cloth Cloak
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 05.09.2023 ATT Discord
 						}),
 						i(6195, {	-- Wax-polished Armor
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 05.09.2023 ATT Discord
 						}),
 					},
 				}),

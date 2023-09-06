@@ -1182,7 +1182,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(2235, {	-- Brackclaw
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 05.09.2023 ATT Discord
 						}),
 						i(6179, {	-- Privateer's Cape
 							["timeline"] = { "removed 4.0.3" },
