@@ -1830,14 +1830,68 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(3022, {	-- Bluegill Breeches
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1028,	-- Bluegill Muckdweller
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, WETLANDS },
+						{ 25.4, 35.4, WETLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, WETLANDS },
+						{ 17.8, 33.4, WETLANDS },
+						{ 19.8, 46.8, WETLANDS },
+					},
+					-- #endif--]]
 				}),
 				i(2046, {	-- Bluegill Kukri
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1027,	-- Bluegill Warrior
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, WETLANDS },
+						{ 25.4, 35.4, WETLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, WETLANDS },
+						{ 17.8, 33.4, WETLANDS },
+						{ 19.8, 46.8, WETLANDS },
+					},
+					-- #endif--]]
 				}),
 				i(1560, {	-- Bluegill Sandals
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1025,	-- Bluegill Puddlejumper
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, WETLANDS },
+						{ 25.4, 35.4, WETLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, WETLANDS },
+						{ 17.8, 33.4, WETLANDS },
+						{ 19.8, 46.8, WETLANDS },
+					},
+					-- #endif--]]
 				}),
 				-- #if AFTER 4.0.3
 				i(10822, {	-- Dark Whelpling (PET!)
@@ -1847,14 +1901,68 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2084, {	-- Darksteel Bastard Sword
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1054,	-- Dark Iron Demolitionist
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, WETLANDS },
+						{ 25.4, 35.4, WETLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, WETLANDS },
+						{ 17.8, 33.4, WETLANDS },
+						{ 19.8, 46.8, WETLANDS },
+					},
+					-- #endif--]]
 				}),
 				i(1955, {	-- Dragonmaw Chain Boots
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1035,	-- Dragonmaw Swamprunner
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, WETLANDS },
+						{ 25.4, 35.4, WETLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, WETLANDS },
+						{ 17.8, 33.4, WETLANDS },
+						{ 19.8, 46.8, WETLANDS },
+					},
+					-- #endif--]]
 				}),
 				i(753, {	-- Dragonmaw Shortsword
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1036,	-- Dragonmaw Centurion
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, WETLANDS },
+						{ 25.4, 35.4, WETLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, WETLANDS },
+						{ 17.8, 33.4, WETLANDS },
+						{ 19.8, 46.8, WETLANDS },
+					},
+					-- #endif--]]
 				}),
 				-- #if BEFORE 4.0.3
 				i(11150, {	-- Formula: Enchant Gloves - Mining (RECIPE!)
@@ -1870,6 +1978,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(892, {	-- Gnoll Casting Gloves
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1009,	-- Mosshide Mistweaver
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, WETLANDS },
+						{ 25.4, 35.4, WETLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, WETLANDS },
+						{ 17.8, 33.4, WETLANDS },
+						{ 19.8, 46.8, WETLANDS },
+					},
+					-- #endif--]]
 				}),
 				i(3340),	-- Incendicite Ore
 				-- #if BEFORE 4.0.3
@@ -1880,10 +2006,46 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(3076, {	-- Smoldering Boots
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1042,	-- Red Whelp
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, WETLANDS },
+						{ 25.4, 35.4, WETLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, WETLANDS },
+						{ 17.8, 33.4, WETLANDS },
+						{ 19.8, 46.8, WETLANDS },
+					},
+					-- #endif--]]
 				}),
 				i(3074, {	-- Smoldering Gloves
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1043,	-- Lost Whelp
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, WETLANDS },
+						{ 25.4, 35.4, WETLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, WETLANDS },
+						{ 17.8, 33.4, WETLANDS },
+						{ 19.8, 46.8, WETLANDS },
+					},
+					-- #endif--]]
 				}),
 				i(3073, {	-- Smoldering Pants
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
@@ -1935,6 +2097,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(6315, {	-- Steelarrow Crossbow
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 6523,	-- Dark Iron Rifleman
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, WETLANDS },
+						{ 25.4, 35.4, WETLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, WETLANDS },
+						{ 17.8, 33.4, WETLANDS },
+						{ 19.8, 46.8, WETLANDS },
+					},
+					-- #endif--]]
 				}),
 				i(8499, {	-- Crimson Whelpling (PET!)
 					-- #if AFTER CATA
@@ -1974,6 +2154,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(756, {	-- Tunnel Pick
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1053,	-- Dark Iron Tunneler
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, WETLANDS },
+						{ 25.4, 35.4, WETLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, WETLANDS },
+						{ 17.8, 33.4, WETLANDS },
+						{ 19.8, 46.8, WETLANDS },
+					},
+					-- #endif--]]
 				}),
 			}),
 		},

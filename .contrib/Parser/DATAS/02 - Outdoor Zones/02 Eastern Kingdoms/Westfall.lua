@@ -1436,9 +1436,45 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(826, {	-- Brutish Riverpaw Axe
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 124,	-- Riverpaw Brute
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, WESTFALL },
+						{ 25.4, 35.4, WESTFALL },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, WESTFALL },
+						{ 17.8, 33.4, WESTFALL },
+						{ 19.8, 46.8, WESTFALL },
+					},
+					-- #endif--]]
 				}),
 				i(68724, {	-- Broken Barn Door
 					["timeline"] = { "added 4.0.3" },
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, WESTFALL },
+						{ 25.4, 35.4, WESTFALL },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, WESTFALL },
+						{ 17.8, 33.4, WESTFALL },
+						{ 19.8, 46.8, WESTFALL },
+					},
+					-- #endif--]]
 				}),
 				i(1357, {	-- Captain Sander's Treasure Map
 					["coords"] = {
@@ -1474,14 +1510,68 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(1394, {	-- Driftwood Club
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 171,	-- Murloc Warrior
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, WESTFALL },
+						{ 25.4, 35.4, WESTFALL },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, WESTFALL },
+						{ 17.8, 33.4, WESTFALL },
+						{ 19.8, 46.8, WESTFALL },
+					},
+					-- #endif--]]
 				}),
 				i(4290, {	-- Dust Bowl
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 832,	-- Dust Devil
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, WESTFALL },
+						{ 25.4, 35.4, WESTFALL },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, WESTFALL },
+						{ 17.8, 33.4, WESTFALL },
+						{ 19.8, 46.8, WESTFALL },
+					},
+					-- #endif--]]
 				}),
 				i(5669, {	-- Dust Devil Debris
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 832,	-- Dust Devil
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, WESTFALL },
+						{ 25.4, 35.4, WESTFALL },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, WESTFALL },
+						{ 17.8, 33.4, WESTFALL },
+						{ 19.8, 46.8, WESTFALL },
+					},
+					-- #endif--]]
 				}),
 				i(1405, {	-- Foamspittle Staff
 					["cr"] = 517,	-- Murloc Oracle
@@ -1548,6 +1638,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(1189, {	-- Overseer's Ring
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 125,	-- Riverpaw Overseer
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, WESTFALL },
+						{ 25.4, 35.4, WESTFALL },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, WESTFALL },
+						{ 17.8, 33.4, WESTFALL },
+						{ 19.8, 46.8, WESTFALL },
+					},
+					-- #endif--]]
 				}),
 				i(5771, {	-- Pattern: Red Linen Bag
 					["cr"] = 590,	-- Defias Looter
@@ -1579,6 +1687,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(832, {	-- Silver Defias Belt
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 121,	-- Defias Pathstalker
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, WESTFALL },
+						{ 25.4, 35.4, WESTFALL },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, WESTFALL },
+						{ 17.8, 33.4, WESTFALL },
+						{ 19.8, 46.8, WESTFALL },
+					},
+					-- #endif--]]
 				}),
 				i(820, {	-- Slicer Blade
 					["cr"] = 115,	-- Harvest Reaper
@@ -1586,14 +1712,68 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(816, {	-- Small Hand Blade
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 36,	-- Harvest Golem
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, WESTFALL },
+						{ 25.4, 35.4, WESTFALL },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, WESTFALL },
+						{ 17.8, 33.4, WESTFALL },
+						{ 19.8, 46.8, WESTFALL },
+					},
+					-- #endif--]]
 				}),
 				i(1933, {	-- Staff of Conjuring
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 619,	-- Defias Conjurer
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, WESTFALL },
+						{ 25.4, 35.4, WESTFALL },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, WESTFALL },
+						{ 17.8, 33.4, WESTFALL },
+						{ 19.8, 46.8, WESTFALL },
+					},
+					-- #endif--]]
 				}),
 				i(2327, {	-- Sturdy Leather Bracers
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 480,	-- Rusty Harvest Golem
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, WESTFALL },
+						{ 25.4, 35.4, WESTFALL },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, WESTFALL },
+						{ 17.8, 33.4, WESTFALL },
+						{ 19.8, 46.8, WESTFALL },
+					},
+					-- #endif--]]
 				}),
 				i(827, {	-- Wicked Blackjack
 					["crs"] = {

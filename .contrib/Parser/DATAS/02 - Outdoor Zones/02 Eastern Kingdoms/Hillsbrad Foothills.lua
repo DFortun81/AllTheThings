@@ -3115,6 +3115,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(3711, {	-- Belamoore's Research Journal
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 2415,	-- Warden Belamoore
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 25.4, 35.4, HILLSBRAD_FOOTHILLS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
+						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
+					},
+					-- #endif--]]
 				}),
 				i(8491, {	-- Black Tabby Cat (PET!)
 					["timeline"] = { "added 1.11.1.5462" },
@@ -3122,11 +3140,47 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(1280, {	-- Cloaked Hood
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 2246,	-- Syndicate Assassin
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 25.4, 35.4, HILLSBRAD_FOOTHILLS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
+						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
+					},
+					-- #endif--]]
 				}),
 				-- #endif
 				i(3204, {	-- Deepwood Bracers
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 2372,	-- Mudsnout Gnoll
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 25.4, 35.4, HILLSBRAD_FOOTHILLS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
+						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
+					},
+					-- #endif--]]
 				}),
 				i(3336, {	-- Flesh Piercer
 					["timeline"] = { "removed 4.0.3" },
@@ -3134,6 +3188,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2370,	-- Daggerspine Screamer
 						2368,	-- Daggerspine Shorestalker
 					},
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 25.4, 35.4, HILLSBRAD_FOOTHILLS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
+						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
+					},
+					-- #endif--]]
 				}),
 				i(11152, {	-- Formula: Enchant Gloves - Fishing (RECIPE!)
 					["crs"] = {
@@ -3152,6 +3224,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2427,	-- Jailor Eston
 						2428,	-- Jailor Marlgen
 					},
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 25.4, 35.4, HILLSBRAD_FOOTHILLS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
+						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
+					},
+					-- #endif--]]
 				}),
 				i(3053, {	-- Humbert's Chestpiece
 					["timeline"] = { "removed 4.0.3", "added 8.0.1" },	-- Maybe was never removed. Not sure.
@@ -3170,10 +3260,46 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(4724, {	-- Humbert's Helm
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 2345,	-- Dun Garok Rifleman
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 25.4, 35.4, HILLSBRAD_FOOTHILLS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
+						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
+					},
+					-- #endif--]]
 				}),
 				i(4723, {	-- Humbert's Pants
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 2346,	-- Dun Garok Priest
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 25.4, 35.4, HILLSBRAD_FOOTHILLS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
+						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
+					},
+					-- #endif--]]
 				}),
 				-- #if BEFORE CATA
 				i(4589, {	-- Long Elegant Feather
@@ -3192,6 +3318,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 						2434,	-- Shadowy Assassin
 					},
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 25.4, 35.4, HILLSBRAD_FOOTHILLS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
+						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
+					},
+					-- #endif--]]
 				}),
 				-- #if BEFORE CATA
 				i(5772, {	-- Pattern: Red Woolen Bag
@@ -3206,6 +3350,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						232,	-- Farmer Ray
 						2266,	-- Hillsbrad Farmer
 					},
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 25.4, 35.4, HILLSBRAD_FOOTHILLS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
+						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
+					},
+					-- #endif--]]
 				}),
 				-- #if BEFORE CATA
 				i(6211, {	-- Recipe: Elixir of Ogre's Strength
@@ -3216,15 +3378,69 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(3745, {	-- Rune of Opening
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 2358,	-- Dalaran Summoner
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 25.4, 35.4, HILLSBRAD_FOOTHILLS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
+						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
+					},
+					-- #endif--]]
 				}),
 				i(1602, {	-- Sickle Axe
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 2287,	-- Crushridge Warmonger
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 25.4, 35.4, HILLSBRAD_FOOTHILLS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
+						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
+					},
+					-- #endif--]]
 				}),
 				i(5245, {	-- Summoner's Wand
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["cr"] = 2358,	-- Dalaran Summoner
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 25.4, 35.4, HILLSBRAD_FOOTHILLS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
+						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
+					},
+					-- #endif--]]
 				}),
 				-- #endif
 			}),
