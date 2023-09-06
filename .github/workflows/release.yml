@@ -19,11 +19,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-        with:
-          # checkout@v2 doesn't pull tags by default now, which results in super long auto changelog, so pull all history incl. tags
-          # alternative would be to use checkout@v1
-          fetch-depth: 0
+      - uses: actions/checkout@v4
+
+      - name: Fetch some history
+        run: git fetch origin master --depth 250 --tags
 
       # once cloned, we just run the GitHub Action for the packager project
       - name: Package and release
