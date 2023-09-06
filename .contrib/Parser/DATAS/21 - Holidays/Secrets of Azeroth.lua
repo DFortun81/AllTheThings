@@ -15,9 +15,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 	n(ACHIEVEMENTS, {
 		ach(18644, {	-- Community Rumor Mill
 			pet(4263),	-- Tobias (PET!) [Maybe Get itemID later??]	
-				ach(18643, {	-- Community Rumors
-					i(208150),	-- Blue Tweed Cap
-				}),
+		}),
+		ach(18643, {	-- Community Rumors
+			i(208150),	-- Blue Tweed Cap
 		}),
 		ach(18642, {	-- The Inquisitive
 			["cost"] = {{"i",207580,1}},	-- Shomko's Unyielding Spear
@@ -232,6 +232,26 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 				i(208143),	-- Unveiled Tablet Rubbing
 			},
 		}),
+
+		-- Day 6 --
+		q(77303, {	-- Idol Searching
+			["qg"] = 185562,	-- Tithris
+			["coord"] = { 47.2, 46.6, VALDRAKKEN },
+			["groups"] = {
+				i(208144),	-- Preservationist's Dispatch Two
+			},
+		}),
+		q(77304, {	-- An Idol in Hand
+			["provider"] = { "i", 208145 },	-- Idol of Ohn'ahra Quest Item
+			["coord"] = { 39.5, 58.9, OHNAHRAN_PLAINS },
+			["groups"] = {
+				i(207730),	-- Idol of Ohn'ahra (TOY!)
+			},
+		}),
+		q(76456, {	-- Using the Idol
+			["qg"] = 206864,	-- Preservationist Kathos
+			["coord"] = { 47.4, 48.1, VALDRAKKEN },
+		}),
 	}),
 }))));
 
@@ -252,6 +272,14 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(78201),	-- completed 'Artifact Secured' (questID 77282)
 	q(77522),	-- completed 'The Torch of Pyrreth' (questID 77263)
 	q(77523),	-- completed 'A Knowledgeable Descent' (questID 77286)
+	q(77689),	-- Received Preservationist's Dispatch Two (questID 77303)
+	q(77405),	-- Brazier 1 (Ohn'ahran Plains @ 32.3 68)
+	q(77406),	-- Brazier 2 (Ohn'ahran Plains @ 31 70.8)
+	q(77407),	-- Brazier 3 (Ohn'ahran Plains @ 35.2 65.7)
+	q(77404),	-- Brazier 4 (Ohn'ahran Plains @ 35.2 65.7)
+	q(77306),	-- completed 'Tools of the Trade' (account-wide completion) (achievementID 18642)
+	q(78200),	-- Received Brown Tweed Cap from 'Tools of the Trade' achievement (ItemID 208149)
+	q(77524),	-- Achievement progress towards 'Whodunnit?!' (QuestID 76456)
 
 	-- TODO: Someone add these under Community Rumors achievement in a suitable structure please
 	q(77289),	-- Community Satchel 1 (Eastern Plague Lands @ 55.1, 59.4)
@@ -259,4 +287,5 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(77291),	-- Community Satchel 3 (Thousand Needles @ 42.7, 30.7)
 				-- Community Satchel 4 (Shadowmoon Valley(Draenor) 539 @ 35.3 48.9)
 	q(77290),	-- Community Satchel 5 (Netherstorm @ 26.2, 68.7)
+	q(77293),	-- Community Satchel 6 (Valley of the Four Winds @ 56.7, 21.4)
 })))

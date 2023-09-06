@@ -1199,6 +1199,7 @@ i(140192);	-- Dalaran Hearthstone
 i(206268);	-- Ethereal Transmogrifier
 i(208096);	-- Familiar Journal
 i(110560);	-- Garrison Hearthstone
+i(207730);	-- Idol of Ohn'ahra
 i(206993);	-- Investi-gator's Pocketwatch
 i(208058);	-- Minute Glass
 i(206565);	-- Plagued Grain
@@ -1210,7 +1211,6 @@ i(206696);	-- Tricked-Out Thinking Cap
 i(197961);	-- Whelps on Strings
 --- NYI ---
 i(206195);	-- Path of the Naaru
-i(207730);	-- Idol of Ohn'ahra
 
 ------------------
 -- PATCH 10.1.7 --
