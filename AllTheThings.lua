@@ -8401,12 +8401,6 @@ end	-- Achievement Lib
 -- Artifact Lib
 (function()
 local C_ArtifactUI_GetAppearanceInfoByID = C_ArtifactUI.GetAppearanceInfoByID;
-local artifactItemIDs = {
-	[841] = 133755, -- Underlight Angler [Base Skin]
-	[988] = 133755, -- Underlight Angler [Fisherfriend of the Isles]
-	[989] = 133755, -- Underlight Angler [Fisherfriend of the Isles]
-	[1] = {},		-- Off-Hand ItemIDs
-};
 local fields = {
 	["key"] = function(t)
 		return "artifactID";
@@ -8437,8 +8431,11 @@ local fields = {
 	end,
 	["text"] = function(t)
 		if not t.artifactinfo then return RETRIEVING_DATA; end
+		local id = t.parent;
+		id = id and id.headerID;
 		-- Artifact listing in the Main item sets category just show 'Variant #' but elsewhere show the Item's name
-		if t.parent and t.parent.headerID and (t.parent.headerID <= -5200 and t.parent.headerID >= -5205) then
+		-- TODO: these will likely change to dynamic headers at some point, and need to check against HEADERS constants
+		if id and -5205 <= id and id <= -5200 then
 			return t.variantText;
 		end
 		return t.appearanceText;
@@ -8447,7 +8444,9 @@ local fields = {
 		return t.variantText;
 	end,
 	["variantText"] = function(t)
-		return ColorizeRGB("Variant " .. t.artifactinfo[4], t.artifactinfo[9] * 255, t.artifactinfo[10] * 255, t.artifactinfo[11] * 255);
+		local text = ColorizeRGB("Variant " .. t.artifactinfo[4], t.artifactinfo[9] * 255, t.artifactinfo[10] * 255, t.artifactinfo[11] * 255);
+		t.variantText = text;
+		return text;
 	end,
 	["appearanceText"] = function(t)
 		return "|cffe6cc80" .. (t.artifactinfo[3] or "???") .. "|r";
@@ -8477,48 +8476,37 @@ local fields = {
 		return t.parent and GetRelativeValue(t.parent, "modelRotation") or 45;
 	end,
 	["silentLink"] = function(t)
-		local itemID = t.silentItemID;
+		local itemID = t.itemID;
 		if itemID then
 			-- 1 -> Off-Hand Appearance
 			-- 2 -> Main-Hand Appearance
 			-- return select(2, GetItemInfo(sformat("item:%d::::::::%d:::11:::8:%d:", itemID, app.Level, t.artifactID)));
-			-- local link = sformat("item:%d::::::::%d:::11::%d:8:%d:", itemID, app.Level, t.isOffHand and 1 or 2, t.artifactID);
-			-- print("Artifact link",t.artifactID,itemID,link);
-			return select(2, GetItemInfo(sformat("item:%d:::::::::::11::%d:8:%d:", itemID, t.isOffHand and 1 or 2, t.artifactID)));
+			local link = sformat("item:%d::::::::%d:::11::%d:8:%d:", math.floor(itemID), app.Level, t.isOffHand and 1 or 2, t.artifactID);
+			-- app.PrintDebug("Artifact link",t.artifactID,itemID,link);
+			local link = select(2, GetItemInfo(link));
+			if not link then return end
+			t.silentLink = link;
+			return link;
+		-- else app.PrintDebug("Artifact with no ItemID?",t.artifactID)
 		end
 	end,
-	["silentItemID"] = function(t)
-		local itemID;
-		if t.isOffHand then
-			itemID = artifactItemIDs[1][t.artifactID];
-		else
-			itemID = artifactItemIDs[t.artifactID];
-		end
-		if itemID then
-			return itemID;
-		elseif t.parent and t.parent.headerID and (t.parent.headerID <= -5200 and t.parent.headerID >= -5205) then
-			itemID = GetRelativeValue(t.parent, "itemID");
-			-- Store the relative ItemID in the artifactItemID cache so it can be referenced accurately by artifacts sourced in specific locations
-			if itemID then
-				if t.isOffHand then
-					artifactItemIDs[1][t.artifactID] = itemID;
-				else
-					artifactItemIDs[t.artifactID] = itemID;
-				end
-				-- print("Artifact ItemID Cached",t.artifactID,t.isOffHand,itemID)
-			end
-			return itemID;
-		end
+	["modItemID"] = function(t)
+		-- Artifacts will use a fake modItemID by way of the ArtifactID and IsOffhand
+		local modItemID = t.itemID + (t.isOffHand and 0.0001 or 0) + (t.artifactID / 1000)
+		-- app.PrintDebug("artifact.modItemID",modItemID,t.itemID,t.artifactID,t.isOffHand)
+		t.modItemID = modItemID;
+		return modItemID;
 	end,
+	-- probably never used ever, but just in case an artifact somehow misses it's appearance...
 	["s"] = function(t)
-		-- Return the calculated 's' field if existing
-		if t._s then return t._s; end
 		local s = t.silentLink;
 		if s then
 			s = GetSourceID(s);
 			-- print("Artifact Source",s,t.silentLink)
 			if s and s > 0 then
-				t._s = s;
+				t.s = s;
+				app.SaveHarvestSource(t)
+				app.PrintDebug("SourceID Update",t.silentLink,t.modItemID,"=>",s);
 				if ATTAccountWideData.Sources[s] ~= 1 and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
 					-- print("Saved Known Source",s)
 					ATTAccountWideData.Sources[s] = 1;
