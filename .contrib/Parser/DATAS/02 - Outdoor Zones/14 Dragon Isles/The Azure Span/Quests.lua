@@ -1473,12 +1473,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["provider"] = { "n", 207819 },	-- Amythora
 				["coord"] = { 74.8, 55.1, THE_AZURE_SPAN },
 				["timeline"] = { ADDED_10_1_7 },
+				["g"] = {
+					i(208004),	-- Wingfoil
+				},
 			}),
 			q(76593, {	-- The Best Intentions
 				["sourceQuests"] = { 77098 },	-- Getting to Ground
 				["provider"] = { "n", 207819 },	-- Amythora
 				["coord"] = { 74.8, 55.1, THE_AZURE_SPAN },
 				["timeline"] = { ADDED_10_1_7 },
+				["g"] = {
+					i(208014),	-- Sundered Shackles Key
+				},
 			}),
 			q(76595, {	-- Urgent Exfiltration
 				["sourceQuests"] = {	-- This may be wrong, too early to check DBs

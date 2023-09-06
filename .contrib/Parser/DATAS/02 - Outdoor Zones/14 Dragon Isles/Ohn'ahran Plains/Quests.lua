@@ -1217,6 +1217,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 				["provider"] = { "n", 205892 },	-- Shandris Feathermoon
 				["timeline"] = { ADDED_10_1_7 },
+				["g"] = {
+					i(206598),	-- Smoldering Blossom
+				},
 			}),
 			q(75922, {	-- Inflammatory Information
 				["sourceQuests"] = { 75921 },	-- Through the Flames
@@ -1229,6 +1232,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["provider"] = { "n", 205142 },	-- Shandris Feathermoon
 				["coord"] = { 21.7, 77.0, OHNAHRAN_PLAINS },
 				["timeline"] = { ADDED_10_1_7 },
+				["g"] = {
+					i(206353),	-- Sentinel's Whistle
+				},
 			}),
 			n(BONUS_OBJECTIVES, {	-- All of these are One-Time
 				q(69968, {	-- Prozela Galeshot

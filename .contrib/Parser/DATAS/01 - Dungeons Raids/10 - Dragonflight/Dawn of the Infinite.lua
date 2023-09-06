@@ -24,6 +24,8 @@ local QUANTUM_GROUP = sharedData({
 			ig(114387),	-- Hood of Hooded Nighmates			(NYI)
 		}),
 		filter(LEATHER, {
+			ig(105806),	-- Circlet of the Panser			(Ordos)
+
 			ig(114264),	-- Bloodthorn Hood					(NYI)
 			ig(114388),	-- Hood of Falling Leaves			(NYI)
 			ig(93081),	-- Hozen-Stitched Hood 				(NYI)
