@@ -2603,6 +2603,7 @@ local onClickForDynamicCategory = function(row, button)
 	end
 end
 local onUpdateForDynamicCategory = function(data)
+	data.progress = nil; data.total = nil;
 	data.dynamicWindow:ForceRebuild();
 	--print("onUpdateForDynamicCategory", data.text, data.progress, data.total);
 	local parent, total = data.parent, data.total;
