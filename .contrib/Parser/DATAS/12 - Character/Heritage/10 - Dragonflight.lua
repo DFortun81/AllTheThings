@@ -390,7 +390,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["coord"] = { 38, 53.7, FELWOOD },
 				}),
 				q(76205, {	-- Balancing the Scales
-					["sourceQuests"] = { 762197 },	-- A Glimpse of Terror
+					["sourceQuests"] = { 76197 },	-- A Glimpse of Terror
 					["provider"] = { "n", 202702 },	-- Maiev Stormsong
 					["coord"] = { 36.7, 51.6, FELWOOD },
 				}),
