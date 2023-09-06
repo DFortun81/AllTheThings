@@ -2330,20 +2330,48 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						13159,  -- James Clark
 						-- #ENDIF
 					},
-					--[[["coords"] = {
-						{ 41.6, 78.8, ELWYNN_FOREST },
-						{ 40.0, 83.8, ELWYNN_FOREST },
-						{ 38.0, 87.0, ELWYNN_FOREST },
-					},--]]
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, ELWYNN_FOREST },
+						{ 25.4, 35.4, ELWYNN_FOREST },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague ARATHI_HIGHLANDS
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, ELWYNN_FOREST },
+						{ 17.8, 33.4, ELWYNN_FOREST },
+						{ 19.8, 46.8, ELWYNN_FOREST },
+					},
+					-- #endif
+					--]]
 				}),
 				i(778, {	-- Kobold Excavation Pick
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 476,	-- Kobold Geomancer
-					--[[["coords"] = {
-						{ 41.6, 78.8, ELWYNN_FOREST },
-						{ 40.0, 83.8, ELWYNN_FOREST },
-						{ 38.0, 87.0, ELWYNN_FOREST },
-					},--]]
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, ELWYNN_FOREST },
+						{ 25.4, 35.4, ELWYNN_FOREST },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague ARATHI_HIGHLANDS
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, ELWYNN_FOREST },
+						{ 17.8, 33.4, ELWYNN_FOREST },
+						{ 19.8, 46.8, ELWYNN_FOREST },
+					},
+					-- #endif
+					--]]
 				}),
 				i(1389, {	-- Kobold Mining Mallet
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
@@ -2366,23 +2394,38 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(1399, {	-- Magic Candle
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 476,	-- Kobold Geomancer
-					--[[["coords"] = {
-						{ 41.6, 78.8, ELWYNN_FOREST },
-						{ 40.0, 83.8, ELWYNN_FOREST },
-						{ 38.0, 87.0, ELWYNN_FOREST },
-					},--]]
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, ELWYNN_FOREST },
+						{ 25.4, 35.4, ELWYNN_FOREST },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague ARATHI_HIGHLANDS
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, ELWYNN_FOREST },
+						{ 17.8, 33.4, ELWYNN_FOREST },
+						{ 19.8, 46.8, ELWYNN_FOREST },
+					},
+					-- #endif
+					--]]
 				}),
 				i(781, {	-- Stone Gnoll Hammer
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["crs"] = {
 						478,	-- Riverpaw Outrunner
 						97,		-- Riverpaw Runt
 					},
-					--[[["coords"] = {
-						{ 41.6, 78.8, ELWYNN_FOREST },
-						{ 40.0, 83.8, ELWYNN_FOREST },
-						{ 38.0, 87.0, ELWYNN_FOREST },
-					},--]]
+					["coords"] = {
+						{ 28.0, 86.8, ELWYNN_FOREST },
+						{ 26.6, 89.6, ELWYNN_FOREST },
+						{ 27.6, 95.4, ELWYNN_FOREST },
+						{ 23.8, 91.6, ELWYNN_FOREST },
+					},
 				}),
 				i(1972, {	-- Westfall Deed
 					["timeline"] = { "removed 4.0.3" },
@@ -2395,11 +2438,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						474,	-- Defias Rogue Wizard
 						880,	-- Erlan Drudgemoor
 					},
-					--[[["coords"] = {
-						{ 41.6, 78.8, ELWYNN_FOREST },
-						{ 40.0, 83.8, ELWYNN_FOREST },
-						{ 38.0, 87.0, ELWYNN_FOREST },
-					},--]]
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, ELWYNN_FOREST },
+						{ 25.4, 35.4, ELWYNN_FOREST },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague ARATHI_HIGHLANDS
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, ELWYNN_FOREST },
+						{ 17.8, 33.4, ELWYNN_FOREST },
+						{ 19.8, 46.8, ELWYNN_FOREST },
+					},
+					-- #endif
+					--]]
 				}),
 			}),
 		},
