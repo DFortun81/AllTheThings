@@ -5502,6 +5502,7 @@ _.ObjectNames = {
 	[405513] = "Torch of Pyrreth",
 	[405523] = "Unveiled Tablet",
 	[405546] = "Idol of Ohn'ahra",
+	[405958] = "Sealed Kaldorei Scroll",
 	[9000000] = "Wind Sculpted Stone",
 	[9999890] = "Corrupted Loot",
 	[9999891] = "Main Objective Only",
@@ -9721,6 +9722,7 @@ _.ObjectModels = {
 	[405513] = 194965,
 	[405523] = 4209023,
 	[405546] = 194083,
+	[405958] = 1124091,
 }
 
 -- Supported Locales

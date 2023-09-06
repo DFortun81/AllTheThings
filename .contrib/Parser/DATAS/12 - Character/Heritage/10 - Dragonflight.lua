@@ -347,6 +347,83 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				}),
 			}),
 		}),
+		race(NIGHTELF, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
+			["g"] = {
+				q(75890, {	-- The Clarion Call
+					["provider"] = { "o", 405958 },	-- Sealed Kaldorei Scroll
+					["coord"] = { 52.4, 14.2, STORMWIND_CITY },
+				}),
+				q(75891, {	-- Ancient Curses
+					["sourceQuests"] = { 75890 },	-- The Clarion Call
+					["provider"] = { "n", 207353 },	-- Arko'narin Starshade
+					["coord"] = { 52.3, 4.7, STORMWIND_CITY },
+				}),
+				q(76194, {	--  A Grim Portent
+					["sourceQuests"] = { 75891 },	-- Ancient Curses
+					["provider"] = { "n", 202702 },	-- Maiev Stormsong
+					["coord"] = { 54, 79.4, FELWOOD },
+				}),
+				q(76195, {	-- Countering Corruption
+					["sourceQuests"] = { 76194 },	--  A Grim Portent
+					["provider"] = { "n", 202700 },	-- Lysander Starshade
+					["coord"] = { 54, 79.4, FELWOOD },
+					["g"] = {
+						i(207004),	-- Incanter's Tome
+					},
+				}),
+				q(76196, {	-- Mercy or Misery
+					["sourceQuests"] = { 76194 },	--  A Grim Portent
+					["provider"] = { "n", 202701 },	-- Arko'narin Starshade
+					["coord"] = { 54, 79.4, FELWOOD },
+				}),
+				q(76203, {	-- Stepping into the Shadows
+					["sourceQuests"] = {
+						76195, -- Countering Corruption
+						76196, -- Mercy or Misery
+					},
+					["provider"] = { "n", 202702 },	-- Maiev Stormsong
+					["coord"] = { 36.1, 57.9, FELWOOD },
+				}),
+				q(76203, {	-- A Glimpse of Terror
+					["sourceQuests"] = { 76203 },	-- Stepping into the Shadows
+					["provider"] = { "n", 202702 },	-- Maiev Stormsong
+					["coord"] = { 38, 53.7, FELWOOD },
+				}),
+				q(76205, {	-- Balancing the Scales
+					["sourceQuests"] = { 76203 },	-- A Glimpse of Terror
+					["provider"] = { "n", 202702 },	-- Maiev Stormsong
+					["coord"] = { 36.7, 51.6, FELWOOD },
+				}),
+				q(76206, {	-- Heart of the Issue
+					["sourceQuests"] = { 76203 },	-- A Glimpse of Terror
+					["provider"] = { "n", 202700 },	-- Lysander Starshade
+					["coord"] = { 36.7, 51.6, FELWOOD },
+				}),
+				q(76207, {	-- Wardens' Wrath
+					["sourceQuests"] = {
+						76205, -- Balancing the Scales
+						76206, -- Heart of the Issue
+					},
+					["provider"] = { "n", 202701 },	-- Arko'narin Starshade
+					["coord"] = { 37.9, 46.2, FELWOOD },
+				}),
+				q(76212, {	-- A Mark For A Protector
+					["sourceQuests"] = { 76207 },	-- Wardens' Wrath
+					["provider"] = { "n", 208151 },	-- Maiev Stormsong
+					["coord"] = { 35.9, 58.8, FELWOOD },
+				}),
+				q(76213, {	-- Honor of the Goddess
+					["sourceQuests"] = { 76212 },	-- A Mark For A Protector
+					["provider"] = { "n", 209140 },	-- Maiev Stormsong
+					["coord"] = { 52.7, 4.2, STORMWIND_CITY },
+					["g"] = {
+						i(208879),	-- Ensemble: Kaldorei Protector's Adornment
+						i(208785),	-- Traditionalist's Kaldorei Blades
+						title(511),	-- Ama'shan <Name>
+					},
+				}),
+			},
+		}));
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, {
@@ -363,5 +440,12 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(72469),	-- Choosing Gorgonna (Warsong clan) during 'The Blessing of the Clan' (questID 72467) (spellID 398662)
 		q(72473),	-- Choosing Gorfax Angerfang (Dragonmaw clan) during 'The Blessing of the Clan' (questID 72467) (spellID 398670)
 		q(72471),	-- Choosing Thega Graveblade (Shattered Hand clan) during 'The Blessing of the Clan' (questID 72467) (spellID 398674)
+	})),
+	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
+		q(76458),	-- Triggers after accepting quest 'The Clarion Call' (questID 75890)
+		q(76556),	-- Triggers after handing in quest 'Ancient Curses' (questID 75891)
+		q(78022),	-- Triggers after talking to Maiev Stormsong during quest 'Stepping into the Shadows' (questID 76203)
+		q(77884),	-- Triggers after using 'Ensemble: Kaldorei Protector's Adornment' (itemID 208879)
+		q(77783),	-- Triggers after using 'Traditionalist's Kaldorei Blades' (itemID 208785)
 	})),
 });
