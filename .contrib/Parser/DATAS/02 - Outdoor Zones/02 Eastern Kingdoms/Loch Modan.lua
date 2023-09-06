@@ -1606,7 +1606,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(2241, {	-- Desperado Cape
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 05.09.2023 ATT Discord
 						}),
 						i(3571, {	-- Trogg Beater
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
