@@ -3786,6 +3786,10 @@ namespace ATT
                             {
                                 db.AsParallel().ForAll(Items.AddItemSourceID);
                             }
+                            else if (pair.Value is Dictionary<long, object> longdb)
+                            {
+                                longdb.AsParallel().ForAll(Items.AddItemSourceID);
+                            }
                             else
                             {
                                 LogError($"{pair.Key} not in the correct format!");

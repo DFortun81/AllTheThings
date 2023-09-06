@@ -749,6 +749,14 @@ namespace ATT
                 }
             }
 
+            public static void AddItemSourceID(KeyValuePair<long, object> itemSource)
+            {
+                if (itemSource.Value.TryConvert(out long sourceID))
+                {
+                    SOURCES[itemSource.Key] = sourceID;
+                }
+            }
+
             /// <summary>
             /// Merge the data into the item database.
             /// NOTE: Only data containing an itemID will merge.<para/>
