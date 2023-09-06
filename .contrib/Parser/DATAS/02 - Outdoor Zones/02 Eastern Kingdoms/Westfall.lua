@@ -1217,13 +1217,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(572, {	-- Leprithus
 					-- #if AFTER CATA
-					["coord"] = { 42.6, 28.8, WESTFALL },
+					["coord"] = { 41.7, 29.3, WESTFALL },
+					["description"] = "Spawns at approximately 8 PM server time.",
 					-- #else
 					["coords"] = {
 						{ 42.4, 30.8, WESTFALL },
 						{ 65.2, 63.2, WESTFALL },
 						{ 60.0, 77.6, WESTFALL },
 					},
+					["description"] = "Spawns at BOTH the northern and west-most southern spawn points at approximately 8 PM server time. If you are quick, you could probably snag both.",
 					-- #endif
 					["groups"] = {
 						i(1387, {	-- Ghoulfang
