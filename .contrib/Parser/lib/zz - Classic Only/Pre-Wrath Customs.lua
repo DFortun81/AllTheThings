@@ -1675,8 +1675,15 @@ root("Achievements", {
 			},
 			-- #endif
 		})),
-		applyclassicphase(PHASE_ONE, achWithReps(948, { 69, 930, 54, 47, 72 }, {	-- Ambassador of the Alliance
-			-- #if BEFORE WRATH
+		applyclassicphase(PHASE_ONE, achWithReps(948, {
+			69, 54, 47, 72,
+			-- #if AFTER TBC
+			930,
+			-- #endif
+		}, {	-- Ambassador of the Alliance
+			-- #if BEFORE TBC
+			["description"] = "Earn exalted reputation with 4 home cities.",
+			-- #elseif BEFORE WRATH
 			["description"] = "Earn exalted reputation with 5 home cities.",
 			-- #endif
 			["races"] = ALLIANCE_ONLY,
@@ -1688,8 +1695,15 @@ root("Achievements", {
 				-- #endif
 			}),
 		})),
-		applyclassicphase(PHASE_ONE, achWithReps(762, { 530, 76, 911, 81, 68 }, {	-- Ambassador of the Horde
-			-- #if BEFORE WRATH
+		applyclassicphase(PHASE_ONE, achWithReps(762, {	-- Ambassador of the Horde
+			530, 76, 81, 68,
+			-- #if AFTER TBC
+			911,
+			-- #endif
+		}, {
+			-- #if BEFORE TBC
+			["description"] = "Earn exalted reputation with 4 home cities.",
+			-- #elseif BEFORE WRATH
 			["description"] = "Earn exalted reputation with 5 home cities.",
 			-- #endif
 			["races"] = HORDE_ONLY,
