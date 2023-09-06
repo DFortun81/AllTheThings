@@ -1,21 +1,11 @@
 ﻿using NLua;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Net.NetworkInformation;
-using System.Reflection;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
-using System.Runtime.InteropServices.ComTypes;
-using System.Runtime.Remoting.Messaging;
 using System.Text;
-using System.Text.RegularExpressions;
 using static ATT.Export;
-using static ATT.Framework;
 
 namespace ATT
 {
@@ -461,7 +451,7 @@ namespace ATT
         /// <summary>
         /// Allows the optional Parser Config file to overwrite some built-in values for non-compile required manipulation of the Parser
         /// </summary>
-        public static void InitConfigSettings(string filepath, bool replaceConfig=false)
+        public static void InitConfigSettings(string filepath, bool replaceConfig = false)
         {
             if (Config == null || replaceConfig)
             {
@@ -481,7 +471,7 @@ namespace ATT
         public static void ApplyConfigSettings()
         {
             CURRENT_RELEASE_PHASE_NAME = Config["DataPhase"] ?? "UNKNOWN";
-            if(CURRENT_RELEASE_PHASE_NAME == "UNKNOWN")
+            if (CURRENT_RELEASE_PHASE_NAME == "UNKNOWN")
             {
                 Console.Write("CURRENT_RELEASE_PHASE_NAME is UNKNOWN. Please make sure to assign a data phase in your config file.");
                 Console.ReadLine();
@@ -2291,7 +2281,7 @@ namespace ATT
                     // Ignore that the readable is missing... for now.
                 }
 
-                if(objectData.Any()) ObjectDB[objectID] = objectData;
+                if (objectData.Any()) ObjectDB[objectID] = objectData;
             }
         }
 
@@ -2616,6 +2606,8 @@ namespace ATT
                     data.Remove("s");
                     data.Remove("modIDs");
                     data.Remove("modID");
+                    data.Remove("bonusIDs");
+                    data.Remove("bonusID");
                 }
             }
 
@@ -3788,6 +3780,7 @@ namespace ATT
                         }
                         break;
                     case "Items.SOURCES":
+                    case "Items.HARVESTSOURCES":
                         {
                             if (pair.Value is Dictionary<decimal, object> db)
                             {
@@ -4789,8 +4782,9 @@ namespace ATT
             return builder;
         }
         #endregion
-		
-		private static string GetBaseDBRootFolder() {
+
+        private static string GetBaseDBRootFolder()
+        {
 #if DF
             return "Dragonflight/";
 #elif SHADOWLANDS
@@ -4812,8 +4806,8 @@ namespace ATT
 #else
             return "Classic/";
 #endif
-		}
-		
+        }
+
         /// <summary>
         /// Export the database.
         /// This also exports for debugging as well.
@@ -5343,7 +5337,7 @@ namespace ATT
                     .AppendLine("local appName, _, a = ...;")
                     .AppendLine("local L = _.L;").AppendLine();
                 Dictionary<string, StringBuilder> localizationByLocale = new Dictionary<string, StringBuilder>();
-                foreach(var language in new List<string>
+                foreach (var language in new List<string>
                 {
                     // 8 non-english locales, 9 supported in all. (English is written right away and acts as the default)
                     "es", "de", "fr", "it",
@@ -5940,14 +5934,21 @@ namespace ATT
                     // Include Only Referenced Flight Paths!
                     var keys = FLIGHTPATHS_WITH_REFERENCES.Keys.ToList();
                     keys.Sort();
+                    bool isRetail = ((string[])Config["PreProcessorTags"]).Contains("RETAIL");
                     foreach (var key in keys)
                     {
                         // Check to see if FlightPathDB has any information on our flight path.
                         if (!FlightPathDB.TryGetValue(key, out Dictionary<string, object> flightPathData))
                         {
-                            // If not, report that it is missing.
-                            Console.Write("Missing Flight Path data for #");
-                            Console.WriteLine(key);
+                            // If not, report that it is missing (this really isn't that important in Retail since it's entirely dynamic)
+                            if (isRetail)
+                            {
+                                LogDebug($"Missing Flight Path data for #{key}");
+                            }
+                            else
+                            {
+                                LogWarn($"Missing Flight Path data for #{key}");
+                            }
                             continue;
                         }
                         if (flightPathData.TryGetValue("text", out object value))

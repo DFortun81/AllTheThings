@@ -5,8 +5,6 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
-using KeraLua;
-using NLua;
 
 namespace ATT
 {
@@ -54,7 +52,7 @@ namespace ATT
             {
                 foreach (var preprocessor in preprocessorArray)
                 {
-                    PreProcessorTags[(string)preprocessor] = true;
+                    PreProcessorTags[preprocessor] = true;
                     Console.Write("PREPROCESSOR: ");
                     Console.WriteLine((string)preprocessor);
                 }
@@ -446,7 +444,7 @@ namespace ATT
             {
                 builder.Append("(function()\n").Append(ProcessContent(File.ReadAllText(filename, Encoding.UTF8))).Append("\nend)();");
             }
-            else if(!(filename.EndsWith("\\") || filename.EndsWith("/")))
+            else if (!(filename.EndsWith("\\") || filename.EndsWith("/")))
             {
                 Console.WriteLine();
                 Console.WriteLine("File doesn't exist:");
@@ -574,7 +572,7 @@ namespace ATT
                         }
                     }
                     else Trace.WriteLine(e);
-                    
+
 
                     File.WriteAllText("./ATT-ERROR-FILE.txt", content, Encoding.UTF8);
                     Trace.WriteLine("Press Enter once you have resolved the issue.");

@@ -2144,6 +2144,7 @@ end");
                             break;
                         }
                     case "_drop":
+                    case "_sitemID":
                         item[field] = value;
                         break;
 

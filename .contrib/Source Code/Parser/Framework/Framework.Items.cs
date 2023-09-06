@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -524,85 +523,90 @@ namespace ATT
                     case "filterForRWP":
                     case "r":
                     case "ilvl":
-                        var longval = Convert.ToInt64(value);
-                        // any 0 value should simply be removed for cleanliness
-                        if (longval == 0)
+                    case "b":
                         {
-                            LogDebug($"INFO: Removing 0-value {field} from", item);
-                            item.Remove(field);
-                        }
-                        else
-                        {
-                            item[field] = longval;
-                        }
-                        break;
-                    case "spellID":
-                    case "recipeID":
-                        // setting a recipeID on the Item should remove the spellID
-                        if (field == "recipeID")
-                        {
-                            item.Remove("spellID");
-                        }
-                        longval = Convert.ToInt64(value);
-                        // any 0 value should simply be removed for cleanliness
-                        if (longval == 0)
-                        {
-                            LogDebug($"INFO: Removing 0-value {field} from", item);
-                            item.Remove(field);
-                        }
-                        else
-                        {
-                            // setting a spellID on an Item with a recipeID should do nothing
-                            if (field == "spellID" && item.TryGetValue("recipeID", out long recipeID) && recipeID > 0)
+                            if (!value.TryConvert(out long val))
                             {
-                                LogDebug($"WARN: spellID = '{value}' is skipped for Item already assigned 'recipeID' = '{recipeID}' :", item);
+                                LogError($"Invalid field format:{field}={value}", item);
                                 break;
                             }
-
-                            item[field] = longval;
-                        }
-                        break;
-
-                    // Conditional Fields -- only merge if NOT Location Sourced data
-                    // there are situations where the same Item is BoP in some places and BoE in others...
-                    // CRIEVE NOTE: I'm not sure what the above is trying to fix, if you know, please let me know and we can solve it a different way.
-                    // With the if statement is left intact, it doesn't allow the ItemDBConditional to properly assign the b field for Heirlooms and stuff.
-                    // There are other cases as well, but that one is the most problematic.
-                    case "b":
-                        //if (!item.ContainsKey(field))
-                        //{
-                            var b = Convert.ToInt64(value);
                             // any 0 value should simply be removed for cleanliness
-                            if (b == 0)
+                            if (val == 0)
                             {
                                 LogDebug($"INFO: Removing 0-value {field} from", item);
                                 item.Remove(field);
                             }
                             else
                             {
-                                item[field] = b;
+                                item[field] = val;
                             }
-                        //}
-                        break;
-                    case "e":
-                        if (!ProcessingMergeData) break;
-                        item[field] = Convert.ToInt64(value);
-                        break;
-                    case "u":
-                        if (!ProcessingMergeData) break;
+                            break;
+                        }
+                    case "spellID":
+                    case "recipeID":
+                        {
+                            // setting a recipeID on the Item should remove the spellID
+                            if (field == "recipeID")
+                            {
+                                item.Remove("spellID");
+                            }
+                            if (!value.TryConvert(out long val))
+                            {
+                                LogError($"Invalid field format:{field}={value}", item);
+                                break;
+                            }
+                            // any 0 value should simply be removed for cleanliness
+                            if (val == 0)
+                            {
+                                LogDebug($"INFO: Removing 0-value {field} from", item);
+                                item.Remove(field);
+                            }
+                            else
+                            {
+                                // setting a spellID on an Item with a recipeID should do nothing
+                                if (field == "spellID" && item.TryGetValue("recipeID", out long recipeID) && recipeID > 0)
+                                {
+                                    LogDebug($"WARN: spellID = '{value}' is skipped for Item already assigned 'recipeID' = '{recipeID}' :", item);
+                                    break;
+                                }
 
-                        longval = Convert.ToInt64(value);
-                        // any 0 value should simply be removed for cleanliness
-                        if (longval == 0)
-                        {
-                            LogDebug($"INFO: Removing 0-value {field} from", item);
-                            item.Remove(field);
+                                item[field] = val;
+                            }
+                            break;
                         }
-                        else
+
+                    // Conditional Fields -- only merge if NOT Location Sourced data
+                    // there are situations where the same Item is BoP in some places and BoE in others...
+                    // CRIEVE NOTE: I'm not sure what the above is trying to fix, if you know, please let me know and we can solve it a different way.
+                    // With the if statement is left intact, it doesn't allow the ItemDBConditional to properly assign the b field for Heirlooms and stuff.
+                    // There are other cases as well, but that one is the most problematic.
+
+                        // long
+                    case "e":
+                    case "u":
                         {
-                            item[field] = longval;
+                            if (!ProcessingMergeData) break;
+
+                            if (!value.TryConvert(out long val))
+                            {
+                                LogError($"Invalid field format:{field}={value}", item);
+                                break;
+                            }
+
+                            // any 0 value should simply be removed for cleanliness
+                            if (val == 0)
+                            {
+                                LogDebug($"INFO: Removing 0-value {field} from", item);
+                                item.Remove(field);
+                            }
+                            else
+                            {
+                                item[field] = val;
+                            }
+                            break;
                         }
-                        break;
+
+                        // string-array
                     case "timeline":
                         if (!ProcessingMergeData) break;
 
@@ -813,7 +817,6 @@ namespace ATT
                     case "objectiveID":
                     case "f":
                     case "filterForRWP":
-                    case "b":
                     case "rank":
                     case "ilvl":
                     case "lvl":
@@ -841,6 +844,7 @@ namespace ATT
                         data[field] = value;
                         break;
                     // Conditional merges
+                    case "b":
                     case "u":
                     case "timeline":
                         if (!data.ContainsKey(field))
@@ -1010,6 +1014,11 @@ namespace ATT
             /// </summary>
             private static decimal GetSourceIDKey(IDictionary<string, object> data)
             {
+                if (data.TryGetValue("_sitemID", out decimal specificItemID))
+                {
+                    return specificItemID;
+                }
+
                 if (data.TryGetValue("itemID", out long itemID))
                 {
                     if (data.TryGetValue("bonusID", out long bonusID))
