@@ -424,6 +424,17 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				}),
 			},
 		}));
+		-- TODO: Myrhial is working on this!
+		race(UNDEAD, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
+			["g"] = {
+				-- q(, {	--
+				-- 	["sourceQuests"] = { },	--
+				-- 	["provider"] = { "n", },	--
+				-- 	["coord"] = { , , },
+				-- }),
+				q(76530),	-- Unliving Summons
+			},
+		}));
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, {
@@ -447,5 +458,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(78022),	-- Triggers after talking to Maiev Stormsong during quest 'Stepping into the Shadows' (questID 76203)
 		q(77884),	-- Triggers after using 'Ensemble: Kaldorei Protector's Adornment' (itemID 208879)
 		q(77783),	-- Triggers after using 'Traditionalist's Kaldorei Blades' (itemID 208785)
+		q(76457),	-- Triggers when accepting 'Unliving Summons' (questID 76530)
 	})),
 });
