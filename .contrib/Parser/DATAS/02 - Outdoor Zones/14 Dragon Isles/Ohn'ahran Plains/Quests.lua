@@ -1194,18 +1194,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			-- These first two quests can be accepted in any order, but accepting one will change the creatureID of Shandris.
 			q(75919, {	-- Dousing the Wards
 				["sourceQuests"] = { 75918 },	-- Fire Season
-				["provider"] = { "n",
-					205068,	-- Shandris Feathermoon
-					205134 ,	-- Shandris Feathermoon
+				["providers"] = {
+					{ "n", 205068 },	-- Shandris Feathermoon
+					{ "n", 205134 },	-- Shandris Feathermoon
 				},
 				["coord"] = { 18.6, 79.8, OHNAHRAN_PLAINS },
 				["timeline"] = { ADDED_10_1_7 },
 			}),
 			q(75920, {	-- Eyes of Fire
 				["sourceQuests"] = { 75918 },	-- Fire Season
-				["provider"] = { "n",
-					205134,	-- Shandris Feathermoon
-					205068 ,	-- Shandris Feathermoon
+				["providers"] = {
+					{ "n", 205068 },	-- Shandris Feathermoon
+					{ "n", 205134 },	-- Shandris Feathermoon
 				},
 				["coord"] = { 18.6, 79.8, OHNAHRAN_PLAINS },
 				["timeline"] = { ADDED_10_1_7 },
