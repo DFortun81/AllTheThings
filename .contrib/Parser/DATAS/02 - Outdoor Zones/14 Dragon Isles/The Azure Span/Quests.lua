@@ -1455,6 +1455,41 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["classes"] = { EVOKER },
 				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 			}),
+			------ A Single Wing ------
+			q(77098, {	-- Getting to Ground
+				["sourceQuests"] = { 76592 },	-- A Single Wing
+				["provider"] = { "n", 208236 },	-- Amythora
+				["coord"] = { 74.0, 54.8, THE_AZURE_SPAN },
+				["timeline"] = { ADDED_10_1_7 },
+			}),
+			q(77163, {	-- Seeing Reason
+				["sourceQuests"] = { 77098 },	-- Getting to Ground
+				["provider"] = { "n", 207820 },	-- Scalecommander Emberthal
+				["coord"] = { 74.8, 55.0, THE_AZURE_SPAN },
+				["timeline"] = { ADDED_10_1_7 },
+			}),
+			q(76594, {	-- Dracthyr Down
+				["sourceQuests"] = { 77098 },	-- Getting to Ground
+				["provider"] = { "n", 207819 },	-- Amythora
+				["coord"] = { 74.8, 55.1, THE_AZURE_SPAN },
+				["timeline"] = { ADDED_10_1_7 },
+			}),
+			q(76593, {	-- The Best Intentions
+				["sourceQuests"] = { 77098 },	-- Getting to Ground
+				["provider"] = { "n", 207819 },	-- Amythora
+				["coord"] = { 74.8, 55.1, THE_AZURE_SPAN },
+				["timeline"] = { ADDED_10_1_7 },
+			}),
+			q(76595, {	-- Urgent Exfiltration
+				["sourceQuests"] = {	-- This may be wrong, too early to check DBs
+					77163,	-- Seeing Reason
+					76594,	-- Dracthyr Down
+					76593,	-- The Best Intentions
+				},
+				["provider"] = { "n", 207820 },	-- Scalecommander Emberthal
+				["coord"] = { 74.8, 55.0, THE_AZURE_SPAN },
+				["timeline"] = { ADDED_10_1_7 },
+			}),
 			n(BONUS_OBJECTIVES, {
 				q(72358, {	-- Cascade
 					["provider"] = { "n", 186962 },	-- Cascade

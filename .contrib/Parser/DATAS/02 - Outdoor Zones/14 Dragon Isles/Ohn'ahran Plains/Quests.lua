@@ -1190,6 +1190,46 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["provider"] = { "n", 192498 },	-- Hephaesta
 				["coord"] = { 71.8, 78.7, OHNAHRAN_PLAINS },
 			}),
+			------ Fury Incarnate Campaign ------
+			-- These first two quests can be accepted in any order, but accepting one will change the creatureID of Shandris.
+			q(75919, {	-- Dousing the Wards
+				["sourceQuests"] = { 75918 },	-- Fire Season
+				["provider"] = { "n",
+					205068,	-- Shandris Feathermoon
+					205134 ,	-- Shandris Feathermoon
+				},
+				["coord"] = { 18.6, 79.8, OHNAHRAN_PLAINS },
+				["timeline"] = { ADDED_10_1_7 },
+			}),
+			q(75920, {	-- Eyes of Fire
+				["sourceQuests"] = { 75918 },	-- Fire Season
+				["provider"] = { "n",
+					205134,	-- Shandris Feathermoon
+					205068 ,	-- Shandris Feathermoon
+				},
+				["coord"] = { 18.6, 79.8, OHNAHRAN_PLAINS },
+				["timeline"] = { ADDED_10_1_7 },
+			}),
+			q(75921, {	-- Through the Flames
+				["sourceQuests"] = {
+					75919,	-- Dousing the Wards
+					75920,	-- Eyes of Fire
+				},
+				["provider"] = { "n", 205892 },	-- Shandris Feathermoon
+				["timeline"] = { ADDED_10_1_7 },
+			}),
+			q(75922, {	-- Inflammatory Information
+				["sourceQuests"] = { 75921 },	-- Through the Flames
+				["provider"] = { "n", 205134 },	-- Shandris Feathermoon
+				["coord"] = { 21.8, 77.4, OHNAHRAN_PLAINS },
+				["timeline"] = { ADDED_10_1_7 },
+			}),
+			q(75923, {	-- Raise the Alarm
+				["sourceQuests"] = { 75922 },	-- Inflammatory Information
+				["provider"] = { "n", 205142 },	-- Shandris Feathermoon
+				["coord"] = { 21.7, 77.0, OHNAHRAN_PLAINS },
+				["timeline"] = { ADDED_10_1_7 },
+			}),
 			n(BONUS_OBJECTIVES, {	-- All of these are One-Time
 				q(69968, {	-- Prozela Galeshot
 					["provider"] = { "n", 193669 },	-- Prozela Galeshot

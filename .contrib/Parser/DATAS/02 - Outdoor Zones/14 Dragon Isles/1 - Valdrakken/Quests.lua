@@ -297,6 +297,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(205252),	-- Momento of Rekindled Bonds
 				},
 			}),
+			------ A Single Wing ------
+			q(76592, {	-- A Single Wing
+				["provider"] = { "n", 207790 },	-- Scalecommander Emberthal
+				["coord"] = { 23.0, 37.2, VALDRAKKEN },
+				["timeline"] = { ADDED_10_1_7 },
+			}),
+			------ Fury Incarnate Campaign ------
+			q(76982, {	-- A Sentinel's Summon
+				["timeline"] = { ADDED_10_1_7 },
+			}),
+			q(75918, {	-- Fire Season
+				["sourceQuests"] = { 76982 },	-- A Sentinel's Summon
+				["provider"] = { "n", 205067 },	-- Shandris Feathermoon
+				["coord"] = { 50.3, 52.8, VALDRAKKEN },
+				["timeline"] = { ADDED_10_1_7 },
+			}),
 			------ Miscellaneous ------
 			q(67007, {	-- Archival Assistance
 				["provider"] = { "o", 381687 },	-- Discarded Note
