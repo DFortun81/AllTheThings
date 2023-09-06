@@ -1935,7 +1935,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(4261, {	-- Solliden's Trousers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 						i(2091, {	-- Magic Dust
 							["timeline"] = { "removed 4.0.3" },
