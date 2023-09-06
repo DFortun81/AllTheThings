@@ -26,16 +26,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 				title(512),	-- <Name> The Inquisitve
 			},
 		}),
-		ach(18645, {
+		ach(18645, {	-- Tools of the Trade
 			i(208149),	-- Brown Tweed Cap
 			crit(60754, {	-- 	Tricked-Out Thinking Cap
-				-- ["provider"] = { "i",  },	-- 	Tricked-Out Thinking Cap
+				["provider"] = { "i", 206696 },	-- 	Tricked-Out Thinking Cap
 			}),
 			crit(60755, {	-- 	Torch of Pyrreth
-				-- ["provider"] = { "i",  },	-- 	Torch of Pyrreth
+				["provider"] = { "i", 208092 },	-- 	Torch of Pyrreth
 			}),
 			crit(60756, {	-- 	Idol of Ohn'ara
-				-- ["provider"] = { "i",  },	-- 	Idol of Ohn'ara
+				["provider"] = { "i", 207730 },	-- 	Idol of Ohn'ara
 			}),
 		}),
 		ach(18646, {	-- Whodunnit?
