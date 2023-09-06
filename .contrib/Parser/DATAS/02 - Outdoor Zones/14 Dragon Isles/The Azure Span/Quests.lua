@@ -1490,6 +1490,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 74.8, 55.0, THE_AZURE_SPAN },
 				["timeline"] = { ADDED_10_1_7 },
 			}),
+			q(76597, {	-- On New Wings
+				["sourceQuests"] = {
+					76595,	-- Urgent Exfiltration
+				},
+				["provider"] = { "n", 207820 },	-- Scalecommander Emberthal
+				["coord"] = { 74.8, 55.0, THE_AZURE_SPAN },
+				["timeline"] = { ADDED_10_1_7 },
+		}),
 			n(BONUS_OBJECTIVES, {
 				q(72358, {	-- Cascade
 					["provider"] = { "n", 186962 },	-- Cascade
