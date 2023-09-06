@@ -5184,6 +5184,7 @@ app.ThingKeys = {
 	["azeriteEssenceID"] = true,
 	["followerID"] = true,
 	["achievementID"] = true,	-- special handling
+	["criteriaID"] = true,	-- special handling
 };
 local SpecificSources = {
 	["headerID"] = {
@@ -5234,6 +5235,7 @@ app.BuildSourceParent = function(group)
 	-- pull all listings of this 'Thing'
 	local keyValue = group[groupKey];
 	local things = specificSource and { group } or app.SearchForLink(groupKey .. ":" .. keyValue);
+	-- app.PrintDebug("BuildSourceParent",groupKey,thingCheck,specificSource,keyValue,#things)
 	if things then
 		local groupHash = group.hash;
 		local isAchievement = groupKey == "achievementID";
@@ -5330,6 +5332,15 @@ app.BuildSourceParent = function(group)
 				-- 	end
 				-- end
 			end
+		end
+		-- Raw Criteria inherently are not directly cached and will not find themselves, so instead
+		-- show their containing Achievement as the Source
+		-- re-popping this Achievement will do normal Sources for all the Criteria and be useful
+		if groupKey == "criteriaID" and #things == 0 then
+			local achID = group.achievementID;
+			parent = app.SearchForObject("achievementID", achID) or { achievementID = achID };
+			if parents then tinsert(parents, parent);
+			else parents = { parent }; end
 		end
 		-- if there are valid parent groups for sources, merge them into a 'Source(s)' group
 		if parents then
@@ -13612,23 +13623,27 @@ local function CreateMinimapButton()
 end
 app.CreateMinimapButton = CreateMinimapButton;
 function app:CreateMiniListForGroup(group)
-	-- Is this an achievement criteria or lacking some achievement information?
-	local achievementID = group.achievementID;
-	if achievementID and (group.criteriaID or not group.g) then
-		local searchResults = SearchForField("achievementID", achievementID);
-		if #searchResults > 0 then
-			local bestResult;
-			for i=1,#searchResults,1 do
-				local searchResult = searchResults[i];
-				if searchResult.achievementID == achievementID and not searchResult.criteriaID then
-					if not bestResult or searchResult.g then
-						bestResult = searchResult;
-					end
-				end
-			end
-			if bestResult then group = bestResult; end
-		end
-	end
+	-- Criteria now show their Source Achievement properly
+	-- Achievements already fill out their Criteria information automatically, don't think this is necessary now - Runaway
+	-- Is this an achievement lacking some achievement information?
+	-- local achievementID = not group.criteriaID and group.achievementID;
+	-- if achievementID and not group.g then
+	-- 	app.PrintDebug("Finding better achievement data...",achievementID)
+	-- 	local searchResults = SearchForField("achievementID", achievementID);
+	-- 	if #searchResults > 0 then
+	-- 		local bestResult;
+	-- 		for i=1,#searchResults,1 do
+	-- 			local searchResult = searchResults[i];
+	-- 			if searchResult.achievementID == achievementID and not searchResult.criteriaID then
+	-- 				if not bestResult or searchResult.g then
+	-- 					bestResult = searchResult;
+	-- 				end
+	-- 			end
+	-- 		end
+	-- 		if bestResult then group = bestResult; end
+	-- 		app.PrintDebug("Found",bestResult and bestResult.hash,group,bestResult)
+	-- 	end
+	-- end
 
 	-- Pop Out Functionality! :O
 	local suffix = BuildSourceTextForChat(group, 1)
