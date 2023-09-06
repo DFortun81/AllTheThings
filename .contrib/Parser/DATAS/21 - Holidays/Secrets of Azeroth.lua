@@ -203,8 +203,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			["coord"] = { 54.6, 20.4, THE_WAKING_SHORES },
 			["sourceQuest"] = 77281,	-- Securing an Artifact
 			["groups"] = {
-				i(208135),	-- Torch of Pyrreth
 				i(208092),	-- Torch of Pyrreth (TOY!)
+				i(208135),	-- Torch of Pyrreth (QI!)
 			},
 		}),
 		q(77263, {	-- The Torch of Pyrreth
@@ -242,11 +242,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			},
 		}),
 		q(77304, {	-- An Idol in Hand
-			["provider"] = { "i", 208145 },	-- Idol of Ohn'ahra Quest Item Missing ObjectID Source
+			["provider"] = { "o", 405546 },	-- Idol of Ohn'ahra
 			["coord"] = { 39.5, 58.9, OHNAHRAN_PLAINS },
 			["sourceQuest"] = 77303,	-- Idol Searching
 			["groups"] = {
 				i(207730),	-- Idol of Ohn'ahra (TOY!)
+				i(208145),	-- Idol of Ohn'ahra (QI!)
 			},
 		}),
 		q(76456, {	-- Using the Idol
@@ -268,20 +269,20 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(77513),	-- completed 'The Tricked-Out Thinking Cap' (questID 76504)
 	q(77521),	-- completed 'Preservationist Cleared' (questID 77277)
 	q(77688),	-- accepted 'Securing an Artifact' (questID 77281)
-	q(77401),	-- using Ancient Lever  at 56.6 20.3 during 'Securing an Artifact' (questID 77281)
-	q(77402),	-- using Ancient Lever  at 57.7 23.8 during 'Securing an Artifact' (questID 77281)
-	q(77403),	-- using Ancient Lever  at 57.0 25.5 during 'Securing an Artifact' (questID 77281)
+	q(77401),	-- Ancient Lever 1 (The Waking Shores @ 56.6 20.3) during 'Securing an Artifact' (questID 77281)
+	q(77402),	-- Ancient Lever 2 (The Waking Shores @ 57.7 23.8) during 'Securing an Artifact' (questID 77281)
+	q(77403),	-- Ancient Lever 3 (The Waking Shores @ 57.0 25.5) during 'Securing an Artifact' (questID 77281)
 	q(78201),	-- completed 'Artifact Secured' (questID 77282)
 	q(77522),	-- completed 'The Torch of Pyrreth' (questID 77263)
 	q(77523),	-- completed 'A Knowledgeable Descent' (questID 77286)
-	q(77689),	-- Received Preservationist's Dispatch Two (questID 77303)
-	q(77405),	-- Brazier 1 (Ohn'ahran Plains @ 32.3 68)
-	q(77406),	-- Brazier 2 (Ohn'ahran Plains @ 31 70.8)
-	q(77407),	-- Brazier 3 (Ohn'ahran Plains @ 35.2 65.7)
-	q(77404),	-- Brazier 4 (Ohn'ahran Plains @ 35.2 65.7)
-	q(77306),	-- completed 'Tools of the Trade' (account-wide completion) (achievementID 18642)
-	q(78200),	-- Received Brown Tweed Cap from 'Tools of the Trade' achievement (ItemID 208149)
-	q(77524),	-- Achievement progress towards 'Whodunnit?!' (QuestID 76456)
+	q(77689),	-- completed 'Idol Searching' (questID 77303)
+	q(77405),	-- Brazier 1 (Ohn'ahran Plains @ 32.3 68) during 'Idol Searching' (questID 77303)
+	q(77406),	-- Brazier 2 (Ohn'ahran Plains @ 31 70.8) during 'Idol Searching' (questID 77303)
+	q(77407),	-- Brazier 3 (Ohn'ahran Plains @ 35.2 65.7) during 'Idol Searching' (questID 77303)
+	q(77404),	-- Brazier 4 (Ohn'ahran Plains @ 35.2 65.7) during 'Idol Searching' (questID 77303)
+	q(77306),	-- completed 'An Idol in Hand' (questID 77304) / finished 'Tools of the Trade' (achievementID 18645)
+	q(78200),	-- completed 'An Idol in Hand' (questID 77304) / finished 'Tools of the Trade' (achievementID 18645)
+	q(77524),	-- completed 'Using the Idol' (questID 76456)
 
 	-- TODO: Someone add these under Community Rumors achievement in a suitable structure please
 	q(77289),	-- Community Satchel 1 (Eastern Plague Lands @ 55.1, 59.4)
