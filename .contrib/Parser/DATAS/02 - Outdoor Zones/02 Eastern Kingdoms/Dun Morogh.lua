@@ -678,8 +678,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 808,	-- Grik'nir the Cold
 						}),
 						i(2108, {	-- Frostmane Leather Vest
-							["timeline"] = { "removed 4.0.3" },
 							["cr"] = 706,	-- Frostmane Troll Whelp
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["coords"] = {
+								{ 37.4, 78.2, DUN_MOROGH },
+								{ 33.4, 77.6, DUN_MOROGH },
+								{ 28.4, 75.6, DUN_MOROGH },
+							},
 						}),
 						i(2110, {	-- Light Magesmith Robe
 							["timeline"] = { "removed 4.0.3" },
@@ -2661,27 +2666,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(2259, {	-- Frostmane Club
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 1121,	-- Frostmane Snowstrider
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 1121,	-- Frostmane Snowstrider
 					["coords"] = {
-						{ 23.4, 35.4, DUN_MOROGH },
-						{ 25.4, 35.4, DUN_MOROGH },
+						{ 29.6, 79.0, DUN_MOROGH },
+						{ 26.0, 79.8, DUN_MOROGH },
+						{ 21.6, 77.0, DUN_MOROGH },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					["cr"] = 706,	-- Frostmane Troll Whelp
 					["coords"] = {
-						{ 23.4, 35.4, DUN_MOROGH },
-						{ 17.8, 33.4, DUN_MOROGH },
-						{ 19.8, 46.8, DUN_MOROGH },
+						{ 33.4, 77.6, DUN_MOROGH },
+						{ 29.8, 78.4, DUN_MOROGH },
 					},
 					-- #endif
-					--]]
 				}),
 				i(2260, {	-- Frostmane Hand Axe
 					["timeline"] = { "removed 4.0.3" },
