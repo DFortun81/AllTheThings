@@ -2680,7 +2680,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, DUN_MOROGH },
 						{ 19.8, 46.8, DUN_MOROGH },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2260, {	-- Frostmane Hand Axe
 					["timeline"] = { "removed 4.0.3" },
@@ -2688,7 +2689,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1123,	-- Frostmane Headhunter
 						1122,	-- Frostmane Hideskinner
 					},
-					
+
 					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 570,	-- Brain Eater
@@ -2706,12 +2707,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, DUN_MOROGH },
 						{ 19.8, 46.8, DUN_MOROGH },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2258, {	-- Frostmane Shortsword
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1120,	-- Frostmane Troll
-					
+
 					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 570,	-- Brain Eater
@@ -2729,12 +2731,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, DUN_MOROGH },
 						{ 19.8, 46.8, DUN_MOROGH },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2257, {	-- Frostmane Staff
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1124,	-- Frostmane Shadowcaster
-					
+
 					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 570,	-- Brain Eater
@@ -2752,12 +2755,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, DUN_MOROGH },
 						{ 19.8, 46.8, DUN_MOROGH },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2112, {	-- Lumberjack Jerkin
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1689,	-- Scarred Crag Boar
-					
+
 					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 570,	-- Brain Eater
@@ -2775,12 +2779,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, DUN_MOROGH },
 						{ 19.8, 46.8, DUN_MOROGH },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2898, {	-- Mountaineer Chestpiece
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1196,	-- Ice Claw Bear
-					
+
 					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 570,	-- Brain Eater
@@ -2798,12 +2803,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, DUN_MOROGH },
 						{ 19.8, 46.8, DUN_MOROGH },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2065, {	-- Rockjaw Blade
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1116,	-- Rockjaw Ambusher
-					
+
 					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 570,	-- Brain Eater
@@ -2821,7 +2827,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, DUN_MOROGH },
 						{ 19.8, 46.8, DUN_MOROGH },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2066, {	-- Skull Hatchet
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
@@ -2834,7 +2841,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2114, {	-- Snowy Robe
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1133,	-- Starving Winter Wolf
-					
+
 					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 570,	-- Brain Eater
@@ -2852,12 +2859,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, DUN_MOROGH },
 						{ 19.8, 46.8, DUN_MOROGH },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2064, {	-- Trogg Club
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1118,	-- Rockjaw Backbreaker
-					
+
 					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 570,	-- Brain Eater
@@ -2875,7 +2883,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, DUN_MOROGH },
 						{ 19.8, 46.8, DUN_MOROGH },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(5767, {	-- Violet Robes
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023

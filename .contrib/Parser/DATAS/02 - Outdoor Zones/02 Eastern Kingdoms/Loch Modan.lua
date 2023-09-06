@@ -1788,7 +1788,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, LOCH_MODAN },
 						{ 19.8, 46.8, LOCH_MODAN },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2823, {	-- Mo'grosh Can Opener
 					["timeline"] = { "removed 4.0.3" },
@@ -1810,7 +1811,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, LOCH_MODAN },
 						{ 19.8, 46.8, LOCH_MODAN },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2821, {	-- Mo'grosh Masher
 					["timeline"] = { "removed 4.0.3" },
@@ -1835,7 +1837,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, LOCH_MODAN },
 						{ 19.8, 46.8, LOCH_MODAN },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2822, {	-- Mo'grosh Toothpick
 					["timeline"] = { "removed 4.0.3" },
@@ -1857,7 +1860,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, LOCH_MODAN },
 						{ 19.8, 46.8, LOCH_MODAN },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(4949, {	-- Orcish Cleaver
 					["timeline"] = { "removed 4.0.3" },
@@ -1879,7 +1883,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, LOCH_MODAN },
 						{ 19.8, 46.8, LOCH_MODAN },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2283, {	-- Rat Cloth Belt
 					["timeline"] = { "removed 4.0.3" },
@@ -1901,7 +1906,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, LOCH_MODAN },
 						{ 19.8, 46.8, LOCH_MODAN },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2700, {	-- Recipe: Succulent Pork Ribs (RECIPE!)
 					["description"] = "Can drop from any mob in the zone.",
@@ -1929,7 +1935,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, LOCH_MODAN },
 						{ 19.8, 46.8, LOCH_MODAN },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2282, {	-- Rodentia Shortsword
 					["timeline"] = { "removed 4.0.3" },
@@ -1954,7 +1961,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, LOCH_MODAN },
 						{ 19.8, 46.8, LOCH_MODAN },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2274, {	-- Sapper's Gloves
 					["timeline"] = { "removed 4.0.3" },
@@ -1976,7 +1984,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, LOCH_MODAN },
 						{ 19.8, 46.8, LOCH_MODAN },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2265, {	-- Stonesplinter Axe
 					["timeline"] = { "removed 4.0.3" },
@@ -1998,7 +2007,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, LOCH_MODAN },
 						{ 19.8, 46.8, LOCH_MODAN },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2268, {	-- Stonesplinter Blade
 					["crs"] = {
@@ -2028,7 +2038,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, LOCH_MODAN },
 						{ 19.8, 46.8, LOCH_MODAN },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2267, {	-- Stonesplinter Mace
 					["timeline"] = { "removed 4.0.3" },
@@ -2050,7 +2061,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, LOCH_MODAN },
 						{ 19.8, 46.8, LOCH_MODAN },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(5109, {	-- Stonesplinter Rags
 					["crs"] = {

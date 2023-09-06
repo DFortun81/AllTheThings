@@ -2242,7 +2242,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, TIRISFAL_GLADES },
 						{ 19.8, 46.8, TIRISFAL_GLADES },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(52079, {	-- A Scarlet Letter
 					["timeline"] = { "added 4.0.3.13287" },
@@ -2269,7 +2270,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, TIRISFAL_GLADES },
 						{ 19.8, 46.8, TIRISFAL_GLADES },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(3335, {	-- Farmer's Broom
 					["timeline"] = { "removed 4.0.3" },
@@ -2291,7 +2293,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, TIRISFAL_GLADES },
 						{ 19.8, 46.8, TIRISFAL_GLADES },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(3334, {	-- Farmer's Shovel
 					["timeline"] = { "removed 4.0.3" },
@@ -2317,7 +2320,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, TIRISFAL_GLADES },
 						{ 19.8, 46.8, TIRISFAL_GLADES },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(3321, {	-- Gray Fur Booties
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
@@ -2352,7 +2356,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, TIRISFAL_GLADES },
 						{ 19.8, 46.8, TIRISFAL_GLADES },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(3319, {	-- Short Sabre
 					["timeline"] = { "removed 4.0.3" },
@@ -2374,7 +2379,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, TIRISFAL_GLADES },
 						{ 19.8, 46.8, TIRISFAL_GLADES },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(3328, {	-- Spider Web Robe
 					["coord"] = { 86.6, 53.8, TIRISFAL_GLADES },
@@ -2401,7 +2407,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, TIRISFAL_GLADES },
 						{ 19.8, 46.8, TIRISFAL_GLADES },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(4263, {	-- Standard Issue Shield
 					["coord"] = { 79.4, 25.6, TIRISFAL_GLADES },
@@ -2428,7 +2435,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, TIRISFAL_GLADES },
 						{ 19.8, 46.8, TIRISFAL_GLADES },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(3327, {	-- Vile Fin Oracle Staff
 					["timeline"] = { "removed 4.0.3" },
@@ -2450,7 +2458,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, TIRISFAL_GLADES },
 						{ 19.8, 46.8, TIRISFAL_GLADES },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 			}),
 		},

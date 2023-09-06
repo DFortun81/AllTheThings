@@ -3132,7 +3132,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
 						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(8491, {	-- Black Tabby Cat (PET!)
 					["timeline"] = { "added 1.11.1.5462" },
@@ -3157,7 +3158,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
 						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				-- #endif
 				i(3204, {	-- Deepwood Bracers
@@ -3180,7 +3182,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
 						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(3336, {	-- Flesh Piercer
 					["timeline"] = { "removed 4.0.3" },
@@ -3205,7 +3208,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
 						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(11152, {	-- Formula: Enchant Gloves - Fishing (RECIPE!)
 					["crs"] = {
@@ -3241,7 +3245,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
 						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(3053, {	-- Humbert's Chestpiece
 					["timeline"] = { "removed 4.0.3", "added 8.0.1" },	-- Maybe was never removed. Not sure.
@@ -3277,7 +3282,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
 						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(4723, {	-- Humbert's Pants
 					["timeline"] = { "removed 4.0.3" },
@@ -3299,7 +3305,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
 						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				-- #if BEFORE CATA
 				i(4589, {	-- Long Elegant Feather
@@ -3335,7 +3342,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
 						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				-- #if BEFORE CATA
 				i(5772, {	-- Pattern: Red Woolen Bag
@@ -3367,7 +3375,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
 						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				-- #if BEFORE CATA
 				i(6211, {	-- Recipe: Elixir of Ogre's Strength
@@ -3395,7 +3404,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
 						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(1602, {	-- Sickle Axe
 					["timeline"] = { "removed 4.0.3" },
@@ -3417,7 +3427,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
 						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(5245, {	-- Summoner's Wand
 					["timeline"] = { "removed 4.0.3" },
@@ -3440,7 +3451,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
 						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				-- #endif
 			}),

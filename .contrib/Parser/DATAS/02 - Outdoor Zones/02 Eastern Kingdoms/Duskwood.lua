@@ -2030,7 +2030,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, DUSKWOOD },
 						{ 19.8, 46.8, DUSKWOOD },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2014, {	-- Black Metal Greatsword
 					["timeline"] = { "removed 4.0.3" },
@@ -2052,7 +2053,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, DUSKWOOD },
 						{ 19.8, 46.8, DUSKWOOD },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(886, {	-- Black Metal Shortsword
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
@@ -2110,7 +2112,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, DUSKWOOD },
 						{ 19.8, 46.8, DUSKWOOD },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2232, {	-- Dark Runner Boots
 					["timeline"] = { "removed 4.0.3" },
@@ -2132,7 +2135,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, DUSKWOOD },
 						{ 19.8, 46.8, DUSKWOOD },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(1077, {	-- Defias Mage Ring
 					["timeline"] = { "removed 4.0.3" },
@@ -2154,7 +2158,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, DUSKWOOD },
 						{ 19.8, 46.8, DUSKWOOD },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2021, {	-- Green Carapace Shield
 					["timeline"] = { "removed 4.0.3" },	-- Blue version seen on AH 4/23/2019 so this may be dropping again, but don't know for sure.
@@ -2176,7 +2181,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, DUSKWOOD },
 						{ 19.8, 46.8, DUSKWOOD },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2017, {	-- Glowing Leather Bracers
 					["timeline"] = { "removed 4.0.3" },
@@ -2198,7 +2204,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, DUSKWOOD },
 						{ 19.8, 46.8, DUSKWOOD },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2227, {	-- Heavy Ogre War Axe
 					["timeline"] = { "removed 4.0.3" },
@@ -2220,7 +2227,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, DUSKWOOD },
 						{ 19.8, 46.8, DUSKWOOD },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2020, {	-- Hollowfang Blade
 					["timeline"] = { "removed 4.0.3" },
@@ -2242,7 +2250,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, DUSKWOOD },
 						{ 19.8, 46.8, DUSKWOOD },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(911, {	-- Ironwood Treebranch
 					["timeline"] = { "removed 4.0.3" },
@@ -2264,7 +2273,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, DUSKWOOD },
 						{ 19.8, 46.8, DUSKWOOD },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(914, {	-- Large Ogre Chain Armor
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
@@ -2303,7 +2313,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, DUSKWOOD },
 						{ 19.8, 46.8, DUSKWOOD },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2234, {	-- Nightwalker Armor
 					["timeline"] = { "removed 4.0.3" },	-- Blue version seen on AH 5/26/2019 so this may be dropping again, but don't know for sure.
@@ -2325,7 +2336,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, DUSKWOOD },
 						{ 19.8, 46.8, DUSKWOOD },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2226, {	-- Ogremage Staff
 					["timeline"] = { "removed 4.0.3" },
@@ -2350,7 +2362,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, DUSKWOOD },
 						{ 19.8, 46.8, DUSKWOOD },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(5773, {	-- Pattern: Robes of Arcana
 					["timeline"] = { "removed 4.0.3" },
@@ -2372,7 +2385,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, DUSKWOOD },
 						{ 19.8, 46.8, DUSKWOOD },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				-- #if BEFORE CATA
 				i(6211, {	-- Recipe: Elixir of Ogre's Strength
@@ -2402,7 +2416,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, DUSKWOOD },
 						{ 19.8, 46.8, DUSKWOOD },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2018, {	-- Skeletal Longsword
 					["timeline"] = { "removed 4.0.3" },
@@ -2424,7 +2439,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, DUSKWOOD },
 						{ 19.8, 46.8, DUSKWOOD },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(880, {	-- Staff of Horrors
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
@@ -2454,7 +2470,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, DUSKWOOD },
 						{ 19.8, 46.8, DUSKWOOD },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(899, {	-- Venom Web Fang
 					["timeline"] = { "removed 4.0.3" },
@@ -2476,7 +2493,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, DUSKWOOD },
 						{ 19.8, 46.8, DUSKWOOD },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(920, {	-- Wicked Spiked Mace
 					["timeline"] = { "removed 4.0.3" },
@@ -2501,7 +2519,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, DUSKWOOD },
 						{ 19.8, 46.8, DUSKWOOD },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 			}),
 		},

@@ -1847,7 +1847,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, WETLANDS },
 						{ 19.8, 46.8, WETLANDS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2046, {	-- Bluegill Kukri
 					["timeline"] = { "removed 4.0.3" },
@@ -1869,7 +1870,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, WETLANDS },
 						{ 19.8, 46.8, WETLANDS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(1560, {	-- Bluegill Sandals
 					["timeline"] = { "removed 4.0.3" },
@@ -1891,7 +1893,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, WETLANDS },
 						{ 19.8, 46.8, WETLANDS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				-- #if AFTER 4.0.3
 				i(10822, {	-- Dark Whelpling (PET!)
@@ -1918,7 +1921,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, WETLANDS },
 						{ 19.8, 46.8, WETLANDS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(1955, {	-- Dragonmaw Chain Boots
 					["timeline"] = { "removed 4.0.3" },
@@ -1940,7 +1944,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, WETLANDS },
 						{ 19.8, 46.8, WETLANDS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(753, {	-- Dragonmaw Shortsword
 					["timeline"] = { "removed 4.0.3" },
@@ -1962,7 +1967,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, WETLANDS },
 						{ 19.8, 46.8, WETLANDS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				-- #if BEFORE 4.0.3
 				i(11150, {	-- Formula: Enchant Gloves - Mining (RECIPE!)
@@ -1995,7 +2001,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, WETLANDS },
 						{ 19.8, 46.8, WETLANDS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(3340),	-- Incendicite Ore
 				-- #if BEFORE 4.0.3
@@ -2023,7 +2030,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, WETLANDS },
 						{ 19.8, 46.8, WETLANDS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(3074, {	-- Smoldering Gloves
 					["timeline"] = { "removed 4.0.3" },
@@ -2045,7 +2053,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, WETLANDS },
 						{ 19.8, 46.8, WETLANDS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(3073, {	-- Smoldering Pants
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
@@ -2114,7 +2123,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, WETLANDS },
 						{ 19.8, 46.8, WETLANDS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(8499, {	-- Crimson Whelpling (PET!)
 					-- #if AFTER CATA
@@ -2171,7 +2181,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, WETLANDS },
 						{ 19.8, 46.8, WETLANDS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 			}),
 		},

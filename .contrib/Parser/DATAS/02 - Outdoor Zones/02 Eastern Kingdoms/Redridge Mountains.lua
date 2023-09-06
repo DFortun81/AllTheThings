@@ -1571,7 +1571,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
 						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(1455, {	-- Blackrock Champion's Axe
 					["timeline"] = { "removed 4.0.3" },
@@ -1596,7 +1597,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
 						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(1448, {	-- Blackrock Gauntlets
 					["timeline"] = { "removed 4.0.3" },
@@ -1621,7 +1623,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
 						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(1296, {	-- Blackrock Mace
 					["timeline"] = { "removed 4.0.3" },
@@ -1646,7 +1649,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
 						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(1445, {	-- Blackrock Pauldrons
 					["timeline"] = { "removed 4.0.3" },
@@ -1671,7 +1675,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
 						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(58898, {	-- Dirt-Stained Scroll
 					["timeline"] = { "added 4.0.3" },
@@ -1696,7 +1701,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
 						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(1962, {	-- Glowing Shadowhide Pendant
 					["timeline"] = { "removed 4.0.3" },
@@ -1729,7 +1735,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
 						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				-- #if BEFORE 4.0.3
 				i(723, {	-- Goretusk Liver
@@ -1796,7 +1803,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
 						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(1211, {	-- Gnoll War Harness
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
@@ -1835,7 +1843,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
 						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(1299, {	-- Lesser Belt of the Spire
 					["timeline"] = { "removed 4.0.3" },
@@ -1857,7 +1866,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
 						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(1300, {	-- Lesser Staff of the Spire
 					["timeline"] = { "removed 4.0.3" },
@@ -1879,7 +1889,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
 						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(1220, {	-- Lupine Axe
 					["timeline"] = { "removed 4.0.3" },
@@ -1901,7 +1912,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
 						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(1406, {	-- Pearl-encrusted Spear / Pearl-Encrusted Spear
 					["timeline"] = { "removed 4.0.3" },
@@ -1923,7 +1935,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
 						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2700, {	-- Recipe: Succulent Pork Ribs (RECIPE!)
 					["description"] = "Can drop from any mob in the zone.",
@@ -1948,7 +1961,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
 						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2798, {	-- Rethban Ore
 				--	["timeline"] = { "removed 4.0.3" }, -- Not removed based on Discord Report 23.06.2022
@@ -1974,7 +1988,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
 						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(1473, {	-- Riverside Staff
 					["timeline"] = { "removed 4.0.3" },
@@ -1996,7 +2011,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
 						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2566, {	-- Sacrificial Robes
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
@@ -2031,7 +2047,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
 						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(2175, {	-- Shadowhide Battle Axe
 					["timeline"] = { "removed 4.0.3" },
@@ -2053,7 +2070,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
 						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(1457, {	-- Shadowhide Mace
 					["timeline"] = { "removed 4.0.3" },
@@ -2075,7 +2093,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
 						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(1458, {	-- Shadowhide Maul
 					["timeline"] = { "removed 4.0.3" },
@@ -2097,7 +2116,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
 						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(1459, {	-- Shadowhide Scalper
 					["timeline"] = { "removed 4.0.3" },
@@ -2119,7 +2139,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
 						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(1460, {	-- Shadowhide Two-handed Sword / Shadowhide Two-Handed Sword
 					["timeline"] = { "removed 4.0.3" },
@@ -2141,7 +2162,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
 						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(1461, {	-- Slayer's Battle Axe
 					["timeline"] = { "removed 4.0.3" },
@@ -2163,7 +2185,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
 						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
 					},
-					-- #endif--]]
+					-- #endif
+					--]]
 				}),
 				i(1080, {	-- Tough Condor Meat
 					["cr"] = 428,	-- Dire Condor
