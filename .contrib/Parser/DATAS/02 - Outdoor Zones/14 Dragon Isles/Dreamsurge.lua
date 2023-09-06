@@ -6,6 +6,7 @@ DREAMSURGE = createHeader({
 	icon = "Interface\\Icons\\Ability_xavius_dreamsimulacrum",
 	text = {
 		en = "Dreamsurge",
+		ru = "Приливы снов",
 	},
 });
 local DREAMSURGE_COALESCENCE = 207026;
@@ -268,6 +269,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(DREAMSURGE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
-		q(77794),	-- after 'some' boss kills for 'Birth of Flames' event
+		q(78276),	-- Molten General kill / 1st kill day / WS 1st kill / weekly?
+		q(77794),	-- after 'some' boss kills for 'Birth of Flames' event / Allied Cinderrager (1st) kill of day
 	})),
 })));
