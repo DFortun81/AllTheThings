@@ -384,18 +384,18 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 202702 },	-- Maiev Stormsong
 					["coord"] = { 36.1, 57.9, FELWOOD },
 				}),
-				q(76203, {	-- A Glimpse of Terror
+				q(76197, {	-- A Glimpse of Terror
 					["sourceQuests"] = { 76203 },	-- Stepping into the Shadows
 					["provider"] = { "n", 202702 },	-- Maiev Stormsong
 					["coord"] = { 38, 53.7, FELWOOD },
 				}),
 				q(76205, {	-- Balancing the Scales
-					["sourceQuests"] = { 76203 },	-- A Glimpse of Terror
+					["sourceQuests"] = { 762197 },	-- A Glimpse of Terror
 					["provider"] = { "n", 202702 },	-- Maiev Stormsong
 					["coord"] = { 36.7, 51.6, FELWOOD },
 				}),
 				q(76206, {	-- Heart of the Issue
-					["sourceQuests"] = { 76203 },	-- A Glimpse of Terror
+					["sourceQuests"] = { 76197 },	-- A Glimpse of Terror
 					["provider"] = { "n", 202700 },	-- Lysander Starshade
 					["coord"] = { 36.7, 51.6, FELWOOD },
 				}),
