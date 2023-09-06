@@ -426,6 +426,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["maps"] = { 2119, 2120, 2121, 2122, 2123, 2124, 2125, 2126, 2135, },	-- Vault of the Incarnates
 				}),
 				------ The End ------
+				------ No Limits ------
+				q(77417, {	-- What Makes an Infinite
+					["sourceQuests"] = { 76423 },	-- No Limits
+					["provider"] = { "n", 207106 },	-- Nozdormu
+					["coord"] = { 65.5, 80.2, THALDRASZUS },
+					["timeline"] = { ADDED_10_1_7 },
+				}),
+				q(76407, {	-- Not Today, Fate
+					["sourceQuests"] = { 77417 },	-- What Makes an Infinite
+					["provider"] = { "n", 207106 },	-- Nozdormu
+					["coord"] = { 65.5, 80.2, THALDRASZUS },
+					["timeline"] = { ADDED_10_1_7 },
+				}),
 			}),
 			header(HEADERS.AchCriteria, 16398.01, {	-- Gelikyr Overlook
 				q(71179, {	-- Look to the Overlook

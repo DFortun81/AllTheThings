@@ -313,6 +313,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 50.3, 52.8, VALDRAKKEN },
 				["timeline"] = { ADDED_10_1_7 },
 			}),
+			------ No Limits ------
+			q(76423, {	-- No Limits
+				["provider"] = { "n", 208035 },	-- Chromie
+				["coord"] = { 60.9, 40.0, VALDRAKKEN },
+				["timeline"] = { ADDED_10_1_7 },
+			}),
 			------ Miscellaneous ------
 			q(67007, {	-- Archival Assistance
 				["provider"] = { "o", 381687 },	-- Discarded Note
