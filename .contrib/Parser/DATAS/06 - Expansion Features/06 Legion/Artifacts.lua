@@ -153,6 +153,27 @@ local HiddenAppearance = function(icon, t)
 	return header;
 end;
 
+-- Some adjustments to base functions to make things a bit easier
+local NoData = {}
+local CurrentItemID
+-- Only match groups without npcID, and adjust the ItemID when doing so
+local function AssignArtifactItemID(t)
+	if t.artifactID then
+		t.itemID = CurrentItemID
+		-- temp item ID for exact sourceID lookup during parsing
+		t._sitemID = CurrentItemID + (t.isOffHand and 0.0001 or 0) + (t.artifactID / 1000)
+		-- print("set artifact itemID",t.itemID)
+	end
+end
+
+local i = function(id, t)
+	CurrentItemID = id
+	t = i(id, t)
+	-- wrap all nested artifacts with the raw itemID of themselves modified by artifactID/offhand
+	t = bubbleDownFiltered(NoData, AssignArtifactItemID, t);
+	return t
+end
+
 root(ROOTS.ExpansionFeatures,
 	tier(LEGION_TIER, {
 		n(ARTIFACTS, {
