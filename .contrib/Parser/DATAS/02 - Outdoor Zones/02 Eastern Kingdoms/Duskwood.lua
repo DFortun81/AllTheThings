@@ -1118,6 +1118,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(60907, {	-- Sparkmetal Bracers
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
+						i(3360, {	-- Stitches' Femur
+							["timeline"] = { "added 10.1.7" },
+						}),
 						i(60906, {	-- Stitches' Stitchings
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
@@ -2013,27 +2016,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(ZONE_DROPS, {
 				i(885, {	-- Black Metal Axe
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 3,	-- Flesh Eater
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 25.4, 35.4, DUSKWOOD },
+						{ 18.6, 33.0, DUSKWOOD },
+						{ 19.8, 45.2, DUSKWOOD },
 					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 17.8, 33.4, DUSKWOOD },
-						{ 19.8, 46.8, DUSKWOOD },
-					},
-					-- #endif
-					--]]
 				}),
 				i(2014, {	-- Black Metal Greatsword
 					["timeline"] = { "removed 4.0.3" },
@@ -2256,27 +2244,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					--]]
 				}),
 				i(911, {	-- Ironwood Treebranch
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 889,	-- Splinter Fist Ogre
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 25.4, 35.4, DUSKWOOD },
+						{ 38.4, 72.2, DUSKWOOD },
+						{ 35.2, 71.4, DUSKWOOD },
+						{ 36.6, 79.6, DUSKWOOD },
 					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 17.8, 33.4, DUSKWOOD },
-						{ 19.8, 46.8, DUSKWOOD },
-					},
-					-- #endif
-					--]]
 				}),
 				i(914, {	-- Large Ogre Chain Armor
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
@@ -2296,50 +2270,34 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(897, {	-- Madwolf Bracers
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 206,	-- Nightbane Vile Fang
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 25.4, 35.4, DUSKWOOD },
+						{ 73.6 72.0, DUSKWOOD },
+						{ 62.4 80.4, DUSKWOOD },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 17.8, 33.4, DUSKWOOD },
-						{ 19.8, 46.8, DUSKWOOD },
+						{ 74.2, 71.0, DUSKWOOD },
+						{ 72.2, 74.6, DUSKWOOD },
 					},
 					-- #endif
-					--]]
 				}),
 				i(2234, {	-- Nightwalker Armor
-					["timeline"] = { "removed 4.0.3" },	-- Blue version seen on AH 5/26/2019 so this may be dropping again, but don't know for sure.
 					["cr"] = 920,	-- Nightbane Tainted One
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 25.4, 35.4, DUSKWOOD },
+						{ 74.0, 74.2, DUSKWOOD },
+						{ 62.8, 80.2, DUSKWOOD },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 17.8, 33.4, DUSKWOOD },
-						{ 19.8, 46.8, DUSKWOOD },
+						{ 73.6, 73.0, DUSKWOOD },
+						{ 73.8, 78.8, DUSKWOOD },
 					},
 					-- #endif
-					--]]
 				}),
 				i(2226, {	-- Ogremage Staff
 					["timeline"] = { "removed 4.0.3" },
@@ -2399,27 +2357,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(2233, {	-- Shadow Weaver Leggings
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 533,	-- Nightbane Shadow Weaver
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 25.4, 35.4, DUSKWOOD },
+						{ 67.2, 75.4, DUSKWOOD },
+						{ 63.6, 70.6, DUSKWOOD },
+						{ 64.8, 46.2, DUSKWOOD },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 17.8, 33.4, DUSKWOOD },
-						{ 19.8, 46.8, DUSKWOOD },
+						{ 65.6, 69.4, DUSKWOOD },
+						{ 64.0, 75.8, DUSKWOOD },
 					},
 					-- #endif
-					--]]
 				}),
 				i(2018, {	-- Skeletal Longsword
 					["timeline"] = { "removed 4.0.3" },

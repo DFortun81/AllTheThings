@@ -1211,7 +1211,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 						i(4434, {	-- Scarecrow Trousers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1229,7 +1229,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(1387, {	-- Ghoulfang
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 						i(1314, {	-- Ghoul Fingers
 							["timeline"] = { "removed 4.0.3" },
@@ -1265,7 +1265,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 						i(2204, {	-- Brashclaw's Skewer
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1295,7 +1295,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(3188, {	-- Coral Claymore
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 						i(6180, {	-- Slarkskin
 							["timeline"] = { "removed 4.0.3" },
@@ -1436,27 +1436,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(ZONE_DROPS, {
 				i(826, {	-- Brutish Riverpaw Axe
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 124,	-- Riverpaw Brute
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, WESTFALL },
-						{ 25.4, 35.4, WESTFALL },
+						{ 54.2, 62.0, WESTFALL },
+						{ 55.8, 68.4, WESTFALL },
+						{ 55.4, 69.4 WESTFALL },
+						{ 31.4, 70.4, WESTFALL },
+						{ 48.8 62.6, WESTFALL },
 					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					-- #else
 					["coords"] = {
-						{ 23.4, 35.4, WESTFALL },
-						{ 17.8, 33.4, WESTFALL },
-						{ 19.8, 46.8, WESTFALL },
+						{ 65.4, 72.4, WESTFALL },
+						{ 50.8, 42.8, WESTFALL },
+						{ 46.8, 53.8, WESTFALL },
+						{ 49.4, 63.0, WESTFALL },
+						{ 32.4, 71.8, WESTFALL },
 					},
 					-- #endif
-					--]]
 				}),
 				i(68724, {	-- Broken Barn Door
 					["timeline"] = { "added 4.0.3" },
@@ -1512,27 +1511,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(1394, {	-- Driftwood Club
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 171,	-- Murloc Warrior
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["coords"] = {
-						{ 23.4, 35.4, WESTFALL },
-						{ 25.4, 35.4, WESTFALL },
+						{ 32.2, 26.6, WESTFALL },
+						{ 34.8, 23.6, WESTFALL },
+						{ 26.0, 47.8, WESTFALL },
 					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, WESTFALL },
-						{ 17.8, 33.4, WESTFALL },
-						{ 19.8, 46.8, WESTFALL },
-					},
-					-- #endif
-					--]]
 				}),
 				i(4290, {	-- Dust Bowl
 					["timeline"] = { "removed 4.0.3" },
