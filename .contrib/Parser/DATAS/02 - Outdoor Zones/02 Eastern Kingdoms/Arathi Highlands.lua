@@ -1998,11 +1998,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(5624, {	-- Circlet of the Order
-					["cr"] = 2584,	-- Stromgarde Defender
 					-- #if BEFORE 4.0.3
 					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
 					-- #endif
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["cr"] = 2584,	-- Stromgarde Defender
+					["coords"] = {
+						{ 26.0, 58.0, ARATHI_HIGHLANDS },
+						{ 22.0, 62.2, ARATHI_HIGHLANDS },
+					},
 				}),
 				i(4481, {	-- Cresting Charm
 					["crs"] = {
@@ -2031,6 +2035,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2562,	-- Boulderfist Ogre
 					},
 					["timeline"] = { "removed 4.0.3" },
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, ARATHI_HIGHLANDS },
+						{ 25.4, 35.4, ARATHI_HIGHLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague ARATHI_HIGHLANDS
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, ARATHI_HIGHLANDS },
+						{ 17.8, 33.4, ARATHI_HIGHLANDS },
+						{ 19.8, 46.8, ARATHI_HIGHLANDS },
+					},
+					-- #endif
+					--]]
 				}),
 				i(2623, {	-- Holy Diadem
 					["crs"] = {
@@ -2043,6 +2066,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["coord"] = { 29.8, 59.4, ARATHI_HIGHLANDS },
 					["timeline"] = { "removed 4.0.3" },
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, ARATHI_HIGHLANDS },
+						{ 25.4, 35.4, ARATHI_HIGHLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague ARATHI_HIGHLANDS
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, ARATHI_HIGHLANDS },
+						{ 17.8, 33.4, ARATHI_HIGHLANDS },
+						{ 19.8, 46.8, ARATHI_HIGHLANDS },
+					},
+					-- #endif
+					--]]
 				}),
 				i(1993, {	-- Ogremind Ring
 					["crs"] = {
@@ -2065,6 +2107,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 63.6, 84.2, ARATHI_HIGHLANDS },
 					["timeline"] = { "removed 4.0.3" },
 					["collectible"] = false,
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, ARATHI_HIGHLANDS },
+						{ 25.4, 35.4, ARATHI_HIGHLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague ARATHI_HIGHLANDS
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, ARATHI_HIGHLANDS },
+						{ 17.8, 33.4, ARATHI_HIGHLANDS },
+						{ 19.8, 46.8, ARATHI_HIGHLANDS },
+					},
+					-- #endif
+					--]]
 				}),
 				i(3345, {	-- Silk Wizard Hat
 					["cr"] = 2591,	-- Syndicate Magus
