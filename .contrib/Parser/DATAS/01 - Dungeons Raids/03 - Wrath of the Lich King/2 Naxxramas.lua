@@ -1196,7 +1196,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								i(10402),	-- Blackened Defias Boots
 								i(206611),	-- Lamented Crusader's Boots
 								i(7187),	-- VanCleef's Boots
-								i(4660),	-- Walking Boots
+							--	i(4660),	-- Walking Boots					Added to original Source in 10.1.7
 							},
 						}),
 						i(206571, {	-- Dented Raider's Bracers
@@ -1219,8 +1219,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							["description"] = "Includes a wide range of Bind on Equip (BoE) Gauntlets from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 							["g"] = {
 								i(206608),	-- Lamented Crusader's Gauntlets
-								i(1944),	-- Metalworking Gloves
-								i(1945),	-- Woodworking Gloves
+							--	i(1944),	-- Metalworking Gloves				Added to original Source in 10.1.7
+							--	i(1945),	-- Woodworking Gloves				Added to original Source in 10.1.7
 							},
 						}),
 						i(206568, {	-- Dented Raider's Helmet
@@ -1234,7 +1234,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
 							["description"] = "Includes a wide range of Bind on Equip (BoE) Leggings from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 							["g"] = {
-								i(1943),	-- Goblin Mail Leggings
+							--	i(1943),	-- Goblin Mail Leggings				Added to original Source in 10.1.7
 								i(206610),	-- Lamented Crusader's Leggings
 							},
 						}),
