@@ -11359,30 +11359,10 @@ app.GenerateGroupLinkUsingSourceID = function(group)
 end
 -- Adds necessary SourceID information for Item data into the Harvest variable
 app.SaveHarvestSource = function(data)
-	local s, itemID = data.s, data.itemID;
+	local s, itemID = data.s, data.modItemID;
 	if s and itemID then
-		local item = AllTheThingsHarvestItems[itemID];
-		if not item then
-			item = {};
-			-- app.PrintDebug("SAVED SOURCE ID!",data.text,data.modItemID or itemID,"=>",s);
-			AllTheThingsHarvestItems[itemID] = item;
-		end
-		local bonusID = data.bonusID;
-		if bonusID and bonusID > 0 then
-			local bonuses = item.bonuses;
-			if not bonuses then
-				bonuses = {};
-				item.bonuses = bonuses;
-			end
-			bonuses[bonusID] = s;
-		else
-			local mods = item.mods;
-			if not mods then
-				mods = {};
-				item.mods = mods;
-			end
-			mods[data.modID or 0] = s;
-		end
+		AllTheThingsHarvestItems[itemID] = s;
+		return;
 	end
 end
 -- Returns the depth at which a given Item matches the provided modItemID
@@ -19597,31 +19577,22 @@ customWindowUpdates["list"] = function(self, force, got)
 	if not self.initialized then
 		self.VerifyGroupSourceID = function(data)
 			if data._VerifyGroupSourceID then return; end
-			local link, source = data.link, data.s;
+			local link, source = data.link or data.silentLink, data.s;
 			if not link then return; end
 			-- If it doesn't, the source ID will need to be harvested.
-			local s, success = GetSourceID(link) or (data.artifactID and data.s);
+			local s, success = GetSourceID(link);
 			-- app.PrintDebug("SourceIDs",data.modItemID,source,s,success)
 			data._VerifyGroupSourceID = true;
 			if s and s > 0 then
 				-- only save the source if it is different than what we already have, or being forced
-				if not source or source < 1 or source ~= s or data.artifactID then
-					app.print("SourceID Update",link,data.modItemID,source,"=>",s,data.artifactID);
+				if not source or source < 1 or source ~= s then
+					app.print("SourceID Update",link,data.modItemID,source,"=>",s);
 					-- print(GetItemInfo(text))
 					data.s = s;
-					if data.artifactID then
-						local artifact = AllTheThingsArtifactsItems[data.artifactID];
-						if not artifact then
-							artifact = {};
-						end
-						artifact[data.isOffHand and 1 or 2] = s;
-						AllTheThingsArtifactsItems[data.artifactID] = artifact;
-					else
-						app.SaveHarvestSource(data);
-					end
+					app.SaveHarvestSource(data);
 				end
 			elseif success then
-				print("Success without a SourceID", link);
+				-- app.print("Success without a SourceID", link);
 			end
 		end
 		self.RemoveSelf = function(o)
@@ -19721,12 +19692,11 @@ customWindowUpdates["list"] = function(self, force, got)
 				min = 0;
 			end
 			dataType = cacheKey;
-			for itemID,groups in pairs(app.GetRawFieldContainer(dataType) or app.GetRawFieldContainer(cacheKeyID) or app.EmptyTable) do
+			for _,groups in pairs(app.GetRawFieldContainer(cacheKey) or app.GetRawFieldContainer(cacheKeyID) or app.EmptyTable) do
 				for _,o in ipairs(groups) do
 					cacheID = tonumber(o.modItemID or o[dataType] or o[cacheKeyID]);
-					if imin < cacheID and cacheID < imax and not added[cacheID] then
+					if imin <= cacheID and cacheID <= imax and not added[cacheID] then
 						added[cacheID] = true;
-						-- app.PrintDebug("cachelist:",dataType,cacheID)
 						tinsert(CacheFields, cacheID);
 					end
 				end
