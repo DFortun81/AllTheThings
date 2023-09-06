@@ -600,7 +600,6 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				},
 			}),
 			o(380643, {	-- Flashfrozen Scroll
-				["description"] = "Currently non-interactible. Requires enabling 'Enable Interact Key' and keybinding 'Interact with Mouseover' to loot this.",
 				["questID"] = 70320,
 				["coord"] = { 57.5, 83.6, THE_WAKING_SHORES },
 				["g"] = {
