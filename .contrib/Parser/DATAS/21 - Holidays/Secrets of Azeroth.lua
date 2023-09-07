@@ -11,6 +11,15 @@ SECRETS_OF_AZEROTH_HEADER = createHeader({
 		ru = "Тайны Азерота",
 	},
 });
+COMMUNITY_CLUES_HEADER = createHeader({
+	readable = "Community Clues",
+	constant = "COMMUNITY_CLUES_HEADER",
+	icon = [[~_.asset("Holiday_SecretsAz")]],
+	eventID = EVENTS.SECRETS_OF_AZEROTH,
+	text = {
+		en = "Community Clues",
+	},
+});
 root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 	n(ACHIEVEMENTS, {
 		ach(18644, {	-- Community Rumor Mill
@@ -325,6 +334,23 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 					{"i",208191,3},	-- Time Lost Fragment
 				}}),
 			},
+		}),
+	}),
+	n(COMMUNITY_CLUES_HEADER, {
+		header(HEADERS.Spell, 424084, {
+			i(210022, {
+				["cost"] = {
+					{"i",208984,1},	-- First Booster Part
+					{"i",209781,1},	-- Second Booster Part
+					{"i",209055,1},	-- Third Booster Part
+				},
+			}),
+			n(210398, {	-- Smogswog the Firebreather
+				["coord"] = { 58.9, 78.1, THE_CAPE_OF_STRANGLETHORN },
+				["g"] = {
+					i(208984),	-- First Booster Part
+				},
+			}),
 		}),
 	}),
 }))));
