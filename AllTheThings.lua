@@ -6475,6 +6475,10 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 	local knownItem = SearchForSourceIDQuickly(knownSourceID);
 	if knownItem then
 		local knownSource = C_TransmogCollection_GetSourceInfo(knownSourceID);
+		if not knownSource then
+			app.PrintDebug("Failed to get source info for",knownSourceID)
+			return;
+		end
 		local acctSources = ATTAccountWideData.Sources;
 		local checkItem, checkSource, valid;
 		local knownRaces, knownClasses, knownFaction, knownFilter = knownItem.races, knownItem.c, knownItem.r, knownItem.f;
