@@ -1539,7 +1539,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 						i(5750, {	-- Warchief's Girdle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1828,27 +1828,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(ZONE_DROPS, {
 				i(3022, {	-- Bluegill Breeches
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 1028,	-- Bluegill Muckdweller
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 1028,	-- Bluegill Muckdweller
 					["coords"] = {
-						{ 23.4, 35.4, WETLANDS },
-						{ 25.4, 35.4, WETLANDS },
+						{ 23.0, 37.2, WETLANDS },
+						{ 13.0, 33.2, WETLANDS },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					["cr"] = 41425,	-- Bluegill Murloc
 					["coords"] = {
-						{ 23.4, 35.4, WETLANDS },
-						{ 17.8, 33.4, WETLANDS },
-						{ 19.8, 46.8, WETLANDS },
+						{ 21.8, 40.0, WETLANDS },
+						{ 17.4, 41.4, WETLANDS },
+						{ 17.2, 33.6, WETLANDS },
 					},
 					-- #endif
-					--]]
 				}),
 				i(2046, {	-- Bluegill Kukri
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
@@ -1890,15 +1884,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(2084, {	-- Darksteel Bastard Sword
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 1054,	-- Dark Iron Demolitionist
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 1054,	-- Dark Iron Demolitionist
 					["coords"] = {
-						{ 23.4, 35.4, WETLANDS },
-						{ 25.4, 35.4, WETLANDS },
+						{ 62.4, 28.0, WETLANDS },
+						{ 46.8, 18.0, WETLANDS },
 					},
+					-- FIX THIS LATER
 					-- #elseif AFTER 10.1.7
 					["crs"] = {
 						604,	-- Plague Spreader
@@ -1910,7 +1903,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 19.8, 46.8, WETLANDS },
 					},
 					-- #endif
-					--]]
 				}),
 				i(1955, {	-- Dragonmaw Chain Boots
 					["timeline"] = { "removed 4.0.3" },

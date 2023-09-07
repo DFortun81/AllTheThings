@@ -2315,34 +2315,157 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						10663,	-- Manaclaw
 						10664,	-- Scryer
 					},
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, WINTERSPRING },
+						{ 25.4, 35.4, WINTERSPRING },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, WINTERSPRING },
+						{ 17.8, 33.4, WINTERSPRING },
+						{ 19.8, 46.8, WINTERSPRING },
+					},
+					-- #endif
+					--]]
 				}),
 				i(15761, {	-- Pattern: Frostsaber Gloves (RECIPE!)
-					["timeline"] = { "removed 7.3.5" },
 					["cr"] = 7441,	-- Winterfall Totemic
+					["timeline"] = { "removed 7.3.5", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 41.6, 42.8, WINTERSPRING },
+						{ 33.0, 36.8, WINTERSPRING },
+					},
+					-- #elseif AFTER 10.1.7
+					["coords"] = {
+						{ 35.4 57.0, WINTERSPRING },
+						{ 24.4, 47.6, WINTERSPRING },
+					},
+					-- #endif
 				}),
 				i(15747, {	-- Pattern: Frostsaber Leggings (RECIPE!)
-					["timeline"] = { "removed 7.3.5" },
 					["cr"] = 7440,	-- Winterfall Den Watcher
+					["timeline"] = { "removed 7.3.5", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 68.0, 35.6, WINTERSPRING },
+						{ 41.6, 42.8, WINTERSPRING },
+						{ 33.6, 36.8, WINTERSPRING },
+					},
+					-- #elseif AFTER 10.1.7
+					["coords"] = {
+						{ 35.4, 57.0, WINTERSPRING },
+						{ 27.6, 48.6, WINTERSPRING },
+						{ 23.6, 50.8, WINTERSPRING },
+					},
+					-- #endif
 				}),
 				i(15779, {	-- Pattern: Frostsaber Tunic (RECIPE!)
-					["timeline"] = { "removed 7.3.5" },
 					["cr"] = 7438,	-- Winterfall Ursa
+					["timeline"] = { "removed 7.3.5", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 69.6, 38.2, WINTERSPRING },
+						{ 65.6, 37.6, WINTERSPRING },
+					},
+					-- #elseif AFTER 10.1.7
+					["coords"] = {
+						{ 68.2, 46.8, WINTERSPRING },
+						{ 66.2, 49.4, WINTERSPRING },
+					},
+					-- #endif
 				}),
 				i(14493, {	-- Pattern: Robe of Winter Night
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 7437,	-- Cobalt Mageweaver
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, WINTERSPRING },
+						{ 25.4, 35.4, WINTERSPRING },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, WINTERSPRING },
+						{ 17.8, 33.4, WINTERSPRING },
+						{ 19.8, 46.8, WINTERSPRING },
+					},
+					-- #endif
+					--]]
 				}),
 				i(13497, {	-- Recipe: Greater Arcane Protection Potion (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 7437,	-- Cobalt Mageweaver
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, WINTERSPRING },
+						{ 25.4, 35.4, WINTERSPRING },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, WINTERSPRING },
+						{ 17.8, 33.4, WINTERSPRING },
+						{ 19.8, 46.8, WINTERSPRING },
+					},
+					-- #endif
+					--]]
 				}),
 				i(13495, {	-- Recipe: Greater Frost Protection Potion (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 7428,	-- Frostmaul Giant
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 64.2, 69.0, WINTERSPRING },
+						{ 61.8, 68.6, WINTERSPRING },
+					},
+					-- #elseif AFTER 10.1.7
+					["coords"] = {
+						{ 63.2, 89.8, WINTERSPRING },
+						{ 57.8, 86.6, WINTERSPRING },
+						{ 56.2, 83.4, WINTERSPRING },
+					},
+					-- #endif
 				}),
 				i(16054, {	-- Schematic: Arcanite Dragonling
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 7437,	-- Cobalt Mageweaver
+					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 570,	-- Brain Eater
+					["coords"] = {
+						{ 23.4, 35.4, WINTERSPRING },
+						{ 25.4, 35.4, WINTERSPRING },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						604,	-- Plague Spreader
+						3,		-- Flesh Eater
+					},
+					["coords"] = {
+						{ 23.4, 35.4, WINTERSPRING },
+						{ 17.8, 33.4, WINTERSPRING },
+						{ 19.8, 46.8, WINTERSPRING },
+					},
+					-- #endif
+					--]]
 				}),
 				i(12432, {	-- Shardtooth E'ko
 					["provider"] = { "i", 12384 },	-- Cache of Mau'ari
