@@ -1753,7 +1753,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(17050, {	-- Chan's Imperial Robes
-							["timeline"] = { "removed 4.0.3", REMOVED_9_0_1 },
+							["timeline"] = { "removed 4.0.3", "added 9.0.1" },
 						}),
 					},
 				}),
@@ -1955,8 +1955,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Can drop off of any mob in the zone. Much higher chance to drop from the elites.",
 				}),
 				i(15760, {	-- Pattern: Ironfeather Breastplate (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 2644,	-- Vilebranch Hideskinner
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["coords"] = {
+						{ 68.2, 75.0, THE_HINTERLANDS },
+						{ 63.8, 73.6, THE_HINTERLANDS },
+						{ 61.2, 68.4, THE_HINTERLANDS },
+					},
 				}),
 				i(9259, {	-- Troll Tribal Necklace
 					-- #if BEFORE 4.0.3

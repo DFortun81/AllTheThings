@@ -122,7 +122,10 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 							},
 						}),
 						e(713, {	-- Garalon
-							["crs"] = { 62164 },	-- Garalon
+							["crs"] = { 
+								62164,	-- Garalon	-- Maybe Outside Version
+								63191 ,	-- Garalon	-- In Raid Version
+							},
 							["g"] = {
 								i(86834),	-- Bonebreaker Gauntlets
 								i(86832),	-- Garalon's Hollow Skull
