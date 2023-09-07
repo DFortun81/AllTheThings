@@ -638,6 +638,7 @@ i(191851);	-- Dull Draconium Weapon Head
 i(197862);	-- Primary Security Disc
 i(197863);	-- Secondary Security Disc
 i(198038);	-- Ancient Titansteel Ingot
+i(200836);	-- Arcane-Infused Crystals
 
 ------------------
 -- PATCH 10.0.5 --
