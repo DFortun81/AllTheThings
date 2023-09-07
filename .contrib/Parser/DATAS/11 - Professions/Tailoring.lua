@@ -105,44 +105,48 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 		}),
 	})),
 	tier(CATA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
-		ach(18815, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Speed Dreamin'
-			crit(1),	-- Dream of Skywall
-			crit(2),	-- Dream of Deepholm
-			crit(3),	-- Dream of Hyjal
-			crit(4),	-- Dream of Ragnaros
-			crit(5),	-- Dream of Azshara
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+			ach(18815, {	-- Speed Dreamin'
+				crit(1),	-- Dream of Skywall
+				crit(2),	-- Dream of Deepholm
+				crit(3),	-- Dream of Hyjal
+				crit(4),	-- Dream of Ragnaros
+				crit(5),	-- Dream of Azshara
+			}),
 		})),
 	})),
 	tier(WOD_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
-		q(36236, {	-- The Cryptic Tome of Tailoring
-			["provider"] = { "i", 114972 },	-- Cryptic Tome of Tailoring
-			["description"] = "This item can drop from any Draenor mob.",
-			["timeline"] = { "added 6.0.1.18522" },
-			["requireSkill"] = TAILORING,
-			["races"] = ALLIANCE_ONLY,
-			["maps"] = {
-				FROSTFIRE_RIDGE,
-				GORGROND,
-				DRAENOR_NAGRAND,
-				DRAENOR_SHADOWMOON_VALLEY,
-				SPIRES_OF_ARAK,
-				TALADOR,
-			},
-		}),
-		q(36301, {	-- Trega's Tailoring Kit
-			["provider"] = { "i", 114973 },	-- Frostwolf Tailoring Kit
-			["description"] = "This item can drop from any Draenor mob.",
-			["timeline"] = { "added 6.0.1.18522" },
-			["requireSkill"] = TAILORING,
-			["races"] = HORDE_ONLY,
-			["maps"] = {
-				FROSTFIRE_RIDGE,
-				GORGROND,
-				DRAENOR_NAGRAND,
-				DRAENOR_SHADOWMOON_VALLEY,
-				SPIRES_OF_ARAK,
-				TALADOR,
-			},
+		n(QUESTS, {
+			q(36236, {	-- The Cryptic Tome of Tailoring
+				["provider"] = { "i", 114972 },	-- Cryptic Tome of Tailoring
+				["description"] = "This item can drop from any Draenor mob.",
+				["timeline"] = { "added 6.0.1.18522" },
+				["requireSkill"] = TAILORING,
+				["races"] = ALLIANCE_ONLY,
+				["maps"] = {
+					FROSTFIRE_RIDGE,
+					GORGROND,
+					DRAENOR_NAGRAND,
+					DRAENOR_SHADOWMOON_VALLEY,
+					SPIRES_OF_ARAK,
+					TALADOR,
+				},
+			}),
+			q(36301, {	-- Trega's Tailoring Kit
+				["provider"] = { "i", 114973 },	-- Frostwolf Tailoring Kit
+				["description"] = "This item can drop from any Draenor mob.",
+				["timeline"] = { "added 6.0.1.18522" },
+				["requireSkill"] = TAILORING,
+				["races"] = HORDE_ONLY,
+				["maps"] = {
+					FROSTFIRE_RIDGE,
+					GORGROND,
+					DRAENOR_NAGRAND,
+					DRAENOR_SHADOWMOON_VALLEY,
+					SPIRES_OF_ARAK,
+					TALADOR,
+				},
+			}),
 		}),
 	})),
 	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
@@ -550,8 +554,6 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 		})),
 	})),
 })));
-
-
 
 -- #if ANYCLASSIC
 local TIME_LOST_TRADER_GROUPS = {};

@@ -630,7 +630,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 		}),
 	})),
 	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
-		ach(18855, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Cranial Cannons
+		ach(18906, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Cranial Cannons
 			i(209066, {	-- Ensemble: Chromatically Calibrated Cranial Cannons
 				i(208808),	-- Green Cranial Cannon
 				i(208809),	-- Orange Cranial Cannon
@@ -1090,7 +1090,13 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 	})),
 })));
 
-
+root(ROOTS.HiddenQuestTriggers, {
+	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+		q(78031),	-- Ensemble: Chromatically Calibrated Bio-Optic Killshades
+		q(78032),	-- Ensemble: Chromatically Calibrated Retinal Armor
+		q(78035),	-- Ensemble: Chromatically Calibrated Ectoplasmic Specs
+	})),
+});
 
 -- #if ANYCLASSIC
 local applytraining = function(g)

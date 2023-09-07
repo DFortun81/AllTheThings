@@ -76,649 +76,657 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			}),
 		}),
 	})),
-	tier(CLASSIC_TIER, {
-		ach(17498, {	-- Renowned Leatherworking Specialist
-			["timeline"] = { ADDED_10_0_7, REMOVED_10_0_7 },
+	tier(CLASSIC_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
+		n(ACHIEVEMENTS, {
+			ach(17498, {	-- Renowned Leatherworking Specialist
+				["timeline"] = { ADDED_10_0_7, REMOVED_10_0_7 },
+			}),
+			ach(18899, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- You Saw Nothing
+				crit(1, {	-- Gordok Ogre Suit shamelessly crafted
+					["provider"] = { "i", 18258 },	-- Gordok Ogre Suit
+				}),
+				crit(2, {	-- 	Gordok Ogre Suit donned
+					["provider"] = { "i", 18258 },	-- Gordok Ogre Suit
+				}),
+			})),
 		}),
-		ach(18899, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- You Saw Nothing
-			crit(1, {	-- Gordok Ogre Suit shamelessly crafted
-				["provider"] = { "i", 18258 },	-- Gordok Ogre Suit
+	})),
+	tier(TBC_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+		n(ACHIEVEMENTS, {
+			ach(18894, {	-- Free Stylin'
+				crit(1, {	-- Stylin' Purple Hat
+					["provider"] = { "i", 25680 },	-- Stylin' Purple Hat
+				}),
+				crit(2, {	-- Stylin' Adventure Hat
+					["provider"] = { "i", 25681 },	-- Stylin' Adventure Hat
+				}),
+				crit(3, {	-- Stylin' Crimson Hat
+					["provider"] = { "i", 25683 },	-- Stylin' Crimson Hat
+				}),
+				crit(4, {	-- Stylin' Jungle Hat
+					["provider"] = { "i", 25682 },	-- Stylin' Jungle Hat
+				}),
 			}),
-			crit(2, {	-- 	Gordok Ogre Suit donned
-				["provider"] = { "i", 18258 },	-- Gordok Ogre Suit
-			}),
-		})),
-	}),
-	tier(TBC_TIER, {
-		ach(18894, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Free Stylin'
-			crit(1, {	-- Stylin' Purple Hat
-				["provider"] = { "i", 25680 },	-- Stylin' Purple Hat
-			}),
-			crit(2, {	-- Stylin' Adventure Hat
-				["provider"] = { "i", 25681 },	-- Stylin' Adventure Hat
-			}),
-			crit(3, {	-- Stylin' Crimson Hat
-				["provider"] = { "i", 25683 },	-- Stylin' Crimson Hat
-			}),
-			crit(4, {	-- Stylin' Jungle Hat
-				["provider"] = { "i", 25682 },	-- Stylin' Jungle Hat
-			}),
-		})),
-	}),
+		}),
+	})),
 	tier(WOD_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
-		q(36176, {	-- A Call for Huntsman
-			["providers"] = {
-				{ "i", 114877 },	-- Dirty Note
-				{ "n", 75043 },		-- Karnoth
-			},
-			["description"] = "This item can drop from any Draenor mob.",
-			["timeline"] = { "added 6.0.1.18505" },
-			["requireSkill"] = LEATHERWORKING,
-			["maps"] = {
-				FROSTFIRE_RIDGE,
-				GORGROND,
-				DRAENOR_NAGRAND,
-				DRAENOR_SHADOWMOON_VALLEY,
-				SPIRES_OF_ARAK,
-				TALADOR,
-			},
-			["races"] = ALLIANCE_ONLY,
-		}),
-		q(36505, {	-- A Warrior's Shroud
-			["provider"] = { "i", 116173 },	-- Tattered Frostwolf Shroud
-			["description"] = "This item can drop from any Draenor mob.",
-			["timeline"] = { "added 6.0.1.18505" },
-			["requireSkill"] = LEATHERWORKING,
-			["maps"] = {
-				FROSTFIRE_RIDGE,
-				GORGROND,
-				DRAENOR_NAGRAND,
-				DRAENOR_SHADOWMOON_VALLEY,
-				SPIRES_OF_ARAK,
-				TALADOR,
-			},
-			["races"] = HORDE_ONLY,
+		n(QUESTS, {
+			q(36176, {	-- A Call for Huntsman
+				["providers"] = {
+					{ "i", 114877 },	-- Dirty Note
+					{ "n", 75043 },		-- Karnoth
+				},
+				["description"] = "This item can drop from any Draenor mob.",
+				["timeline"] = { "added 6.0.1.18505" },
+				["requireSkill"] = LEATHERWORKING,
+				["maps"] = {
+					FROSTFIRE_RIDGE,
+					GORGROND,
+					DRAENOR_NAGRAND,
+					DRAENOR_SHADOWMOON_VALLEY,
+					SPIRES_OF_ARAK,
+					TALADOR,
+				},
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(36505, {	-- A Warrior's Shroud
+				["provider"] = { "i", 116173 },	-- Tattered Frostwolf Shroud
+				["description"] = "This item can drop from any Draenor mob.",
+				["timeline"] = { "added 6.0.1.18505" },
+				["requireSkill"] = LEATHERWORKING,
+				["maps"] = {
+					FROSTFIRE_RIDGE,
+					GORGROND,
+					DRAENOR_NAGRAND,
+					DRAENOR_SHADOWMOON_VALLEY,
+					SPIRES_OF_ARAK,
+					TALADOR,
+				},
+				["races"] = HORDE_ONLY,
+			}),
 		}),
 	})),
 	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
-		q(39958,  {	-- Skin Deep
-			["provider"] = { "n", 93523 },	-- Namha Moonwater
-			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
-			["_drop"] = { "g" },
-			["cost"] = {
-				{ "i", 124113, 20 },	-- 20x Stonehide Leather
-				{ "i", 124115, 5 },		-- 5x Stormscale
-			},
-			["g"] = {
-				r(195119, {	-- Leatherworking (Legion Master)
-					["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
-					["collectible"] = false,
-				}),
-				applyclassicphase(BFA_PHASE_ONE, r(264590, {["timeline"] = {ADDED_8_0_1}})),	-- Legion Leatherworking
-				r(330211, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Legion]
-				r(330212, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Legion]
-				r(330213, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Legion]
-				r(330214, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Legion]
-				r(330215, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Legion]
-			},
+		q(QUESTS, {
+			q(39958,  {	-- Skin Deep
+				["provider"] = { "n", 93523 },	-- Namha Moonwater
+				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+				["_drop"] = { "g" },
+				["cost"] = {
+					{ "i", 124113, 20 },	-- 20x Stonehide Leather
+					{ "i", 124115, 5 },		-- 5x Stormscale
+				},
+				["g"] = {
+					r(195119, {	-- Leatherworking (Legion Master)
+						["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
+						["collectible"] = false,
+					}),
+					applyclassicphase(BFA_PHASE_ONE, r(264590, {["timeline"] = {ADDED_8_0_1}})),	-- Legion Leatherworking
+					r(330211, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Legion]
+					r(330212, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Legion]
+					r(330213, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Legion]
+					r(330214, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Legion]
+					r(330215, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Legion]
+				},
+			}),
+			q(40183,  {	-- Over Your Head
+				["sourceQuests"] = { 39958 },	-- Skin Deep
+				["provider"] = { "n", 93523 },	-- Namha Moonwater
+				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+				["g"] = {
+					r(194739),	-- Battlebound Warhelm (RECIPE!)
+					r(194699),	-- Warhide Mask (RECIPE!)
+					r(196428, {["u"]=TRAINING}),	-- Rough Warhide Mask
+					r(196375, {["u"]=TRAINING}),	-- Shaved Stonehide Pelt
+					r(196382, {["u"]=TRAINING}),	-- Stonehide Leather Lining
+					r(196385, {["u"]=TRAINING}),	-- Stonehide Leather Strip
+					r(196379, {["u"]=TRAINING}),	-- Tanned Stonehide Leather
+					i(130868),	-- Fresh Stonehide Pelt (QI!)
+					i(130891),	-- Namha's Tanning Mixture (QI!)
+					i(129975),	-- Rough Warhide Mask (QI!)
+					i(130869),	-- Shaved Stonehide Pelt (QI!)
+					i(130872),	-- Stonehide Leather Lining (QI!)
+					i(130875),	-- Stonehide Leather Strip (QI!)
+					i(130870),	-- Tanned Stonehide Leather (QI!)
+				},
+			}),
+			q(40196,  {	-- Adventuring Anxieties
+				["sourceQuests"] = { 40183 },	-- Over Your Head
+				["provider"] = { "n", 93523 },	-- Namha Moonwater
+				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+			}),
+			q(40197,  {	-- The Necessary Materials
+				["sourceQuests"] = { 40196 },	-- Adventuring Anxieties
+				["provider"] = { "n", 93523 },	-- Namha Moonwater
+				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+				["cost"] = {{"i", 124113, 100 }},	-- 100x Stonehide Leather
+			}),
+			q(41889,  {	-- Dazed of the Past
+				["sourceQuests"] = { 40197 },	-- The Necessary Materials
+				["provider"] = { "n", 93523 },	-- Namha Moonwater
+				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+				["g"] = {
+					r(196648),	-- Stonehide Leather Barding (RECIPE!)
+					r(196469, {["u"]=TRAINING}),	-- Stonehide Caparison
+					r(196467, {["u"]=TRAINING}),	-- Stonehide Champron
+					r(196468, {["u"]=TRAINING}),	-- Stonehide Crinet
+					r(196397, {["u"]=TRAINING}),	-- Stonehide Leather Barding
+					r(208615, {["u"]=TRAINING}),	-- Stonehide Leather Strip
+					r(208596, {["u"]=TRAINING}),	-- Tanned Stonehide Pelt
+					i(130887),	-- Stonehide Leather Barding (QI!)
+					i(130896),	-- Stonehide Leather Caparison (QI!)
+					i(130894),	-- Stonehide Leather Champron (QI!)
+					i(130895),	-- Stonehide Leather Crinet (QI!)
+					i(130875),	-- Stonehide Leather Strip (QI!)
+					i(136539),	-- Tanned Stonehide Leather (QI!)
+				},
+			}),
+			q(40200, {	-- Battle Bonds (A)
+				["sourceQuests"] = { 41889 },	-- Dazed of the Past
+				["provider"] = { "n", 93523 },	-- Namha Moonwater
+				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(40241, {	-- Battle Bonds (H)
+				["sourceQuests"] = { 41889 },	-- Dazed of the Past
+				["provider"] = { "n", 93523 },	-- Namha Moonwater
+				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+				["races"] = HORDE_ONLY,
+			}),
+			q(40201,  {	-- Playthings
+				["sourceQuests"] = {
+					40200,	-- Battle Bonds (A)
+					40241,	-- Battle Bonds (H)
+				},
+				["provider"] = { "n", 93523 },	-- Namha Moonwater
+				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+				["g"] = {
+					r(194776),	-- Leather Pet Bed (RECIPE!)
+					r(196375, {["u"]=TRAINING}),	-- Shaved Stonehide Pelt
+					r(196442, {["u"]=TRAINING}),	-- Stonehide Leather Bed
+					r(196382, {["u"]=TRAINING}),	-- Stonehide Leather Lining
+					r(196385, {["u"]=TRAINING}),	-- Stonehide Leather Strip
+					r(196379, {["u"]=TRAINING}),	-- Tanned Stonehide Leather
+					i(130869),	-- Shaved Stonehide Pelt (QI!)
+					i(130090),	-- Stonehide Leather Bed (QI!)
+					i(130872),	-- Stonehide Leather Lining (QI!)
+					i(130875),	-- Stonehide Leather Strip (QI!)
+					i(130870),	-- Tanned Stonehide Leather (QI!)
+				},
+			}),
+			q(40180,  {	-- Mail Men
+				["sourceQuests"] = { 40201 },	-- Playthings
+				["provider"] = { "n", 93523 },	-- Namha Moonwater
+				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+			}),
+			q(40177, { -- Leather Lady
+				["sourceQuests"] = { 40201 },	-- Playthings
+				["provider"] = { "n", 93523 },	-- Namha Moonwater
+				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+			}),
+			q(40179,  {	-- Stormheim Savagery
+				["sourceQuests"] = { 40177 },	-- Leather Lady
+				["provider"] = { "n", 93522 },	-- Diane Cannings
+				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+				["g"] = {
+					r(194696),	-- Warhide Belt [Rank 1] (RECIPE!)
+					r(194698),	-- Warhide Pants [Rank 1] (RECIPE!)
+					i(129972),	-- Vrykul Leather Binding (QI!)
+				},
+			}),
+			q(40178,  {	-- Vestment Opportunity
+				["sourceQuests"] = { 40177 },	-- Leather Lady
+				["provider"] = { "n", 93522 },	-- Diane Cannings
+				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+				["g"] = {
+					r(194702),	-- Warhide Jerkin [Rank 1] (RECIPE!)
+					i(129971),	-- Hideshaper's Vestment (QI!)
+				},
+			}),
+			q(40181,  {	-- Black Rook Bandit
+				["sourceQuests"] = { 40180 },	-- Mail Men
+				["provider"] = { "n", 98931 },	-- Thanid Glowergold
+				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+				["g"] = {
+					r(194736),	-- Battlebound Girdle [Rank 1] (RECIPE!)
+					r(194738),	-- Battlebound Leggings [Rank 1] (RECIPE!)
+					i(129973),	-- Black Rook Armor (QI!)
+				},
+			}),
+			q(40182,  {	-- Too Good To Pass Up
+				["sourceQuests"] = { 40180 },	-- Mail Men
+				["provider"] = { "n", 98931 },	-- Thanid Glowergold
+				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+				["g"] = {
+					r(194742),	-- Battlebound Hauberk [Rank 1] (RECIPE!)
+					i(129974),	-- Black Rook Hauberk (QI!)
+				},
+			}),
+			q(40176,  {	-- From Head to Toe
+				["sourceQuests"] = {
+					40179,	-- Stormheim Savagery
+					40181,  -- Black Rook Bandit
+					40182,  -- Too Good To Pass Up
+				},
+				["provider"] = { "n", 93523 },	-- Namha Moonwater
+				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+				["g"] = {
+					r(194741),	-- Battlebound Treads [Rank 1] (RECIPE!)
+					r(194701),	-- Warhide Footpads [Rank 1] (RECIPE!)
+					r(196375, {["u"]=TRAINING}),	-- Shaved Stonehide Pelt
+					r(196384, {["u"]=TRAINING}),	-- Stonehide Boot Exterior
+					r(196382, {["u"]=TRAINING}),	-- Stonehide Leather Lining
+					r(196427, {["u"]=TRAINING}),	-- Sturdy Stonehide Boots
+					r(196379, {["u"]=TRAINING}),	-- Tanned Stonehide Leather
+					i(130869),	-- Shaved Stonehide Pelt (QI!)
+					i(130873),	-- Stonehide Boot Exterior (QI!)
+					i(130872),	-- Stonehide Leather Lining (QI!)
+					i(129964),	-- Sturdy Stonehide Boots (QI!)
+					i(130870),	-- Tanned Stonehide Leather (QI!)
+				},
+			}),
+			q(40187,  {	-- Links in the Chain
+				["sourceQuests"] = { 40176 },	-- From Head to Toe
+				["provider"] = { "n", 98931 },	-- Thanid Glowergold
+				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+			}),
+			q(40184,  {	-- Tauren Tanning
+				["sourceQuests"] = { 40176 },	-- From Head to Toe
+				["provider"] = { "n", 93522 },	-- Diane Cannings
+				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+			}),
+			q(40186, {	-- Drogbar Durability
+				["sourceQuests"] = { 40184 },	-- Tauren Tanning
+				["provider"] = { "n", 98948 },	-- Hrul Sharphoof
+				["coord"] = { 36.8, 78.2, 750 },
+				["g"] = {
+					r(194695),	-- Warhide Bindings [Rank 1] (RECIPE!)
+					r(194700),	-- Warhide Gloves [Rank 1] (RECIPE!)
+				},
+			}),
+			q(40185, {	-- Shoulder the Burden
+				["sourceQuests"] = { 40184 },	-- Tauren Tanning
+				["provider"] = { "n", 98948 },	-- Hrul Sharphoof
+				["coord"] = { 36.8, 78.2, 750 },
+				["g"] = {
+					r(194697),	-- Warhide Shoulderguard [Rank 1] (RECIPE!)
+					i(129976),	-- Lohrumn's Shoulderguard (QI!)
+				},
+			}),
+			q(40190,  {	-- Hardening the Hide
+				["sourceQuests"] = {
+					40185,  -- Shoulder the Burden
+					40186,  -- Drogbar Durability
+				},
+				["provider"] = { "n", 93522 },	-- Diane Cannings
+				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+				["isBreadcrumb"] = true,
+			}),
+			q(40191, {	-- Stamped Stories
+				["sourceQuests"] = { 40190 },	-- Hardening the Hide
+				["provider"] = { "n", 98948 },	-- Hrul Sharphoof
+				["coord"] = { 36.8, 78.2, 750 },
+				["g"] = {
+					r(194710),	-- Warhide Jerkin [Rank 2] (RECIPE!)
+				},
+			}),
+			q(40192, {	-- Claw of the Land
+				["sourceQuests"] = { 40191 },	-- Stamped Stories
+				["provider"] = { "n", 98948 },	-- Hrul Sharphoof
+				["coord"] = { 36.8, 78.2, 750 },
+				["g"] = {
+					r(194704),	-- Warhide Belt [Rank 2] (RECIPE!)
+					r(194703),	-- Warhide Bindings [Rank 2] (RECIPE!)
+					i(130070),	-- Stalker Claw (QI!)
+				},
+			}),
+			q(40188, {	-- Best Served Cold
+				["sourceQuests"] = { 40187 },	-- Links in the Chain
+				["provider"] = { "n", 98964 },	-- Celea
+				["coord"] = { 47.4, 44.2, AZSUNA },
+				["g"] = {
+					r(194735),	-- Battlebound Armbands [Rank 1] (RECIPE!)
+					r(194740),	-- Battlebound Grips [Rank 1] (RECIPE!)
+				},
+			}),
+			q(40189, {	-- Naga Know-How
+				["sourceQuests"] = { 40187 },	-- Links in the Chain
+				["provider"] = { "n", 98964 },	-- Celea
+				["coord"] = { 47.4, 44.2, AZSUNA },
+				["g"] = {
+					r(194737),	-- Battlebound Spaulders [Rank 1] (RECIPE!)
+					i(129980),	-- Naga Shoulderguard (QI!)
+				},
+			}),
+			q(40193,  {	-- Getting the Kinks Out
+				["sourceQuests"] = { 40189 },	-- Naga Know-How
+				["provider"] = { "n", 98931 },	-- Thanid Glowergold
+				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+				["isBreadcrumb"] = true,
+			}),
+			q(40194, {	-- Reclaimed Cargo
+				["sourceQuests"] = { 40193 },	-- Getting the Kinks Out
+				["provider"] = { "n", 98964 },	-- Celea
+				["coord"] = { 47.4, 44.2, AZSUNA },
+				["g"] = {
+					r(194743),	-- Battlebound Armbands [Rank 2] (RECIPE!)
+					r(194744),	-- Battlebound Girdle [Rank 2] (RECIPE!)
+					i(130072),	-- Mail Armor Shipment (QI!)
+				},
+			}),
+			q(40195, {	-- A Daring Rescue
+				["sourceQuests"] = { 40194 },	-- Reclaimed Cargo
+				["provider"] = { "n", 98964 },	-- Celea
+				["coord"] = { 47.4, 44.2, AZSUNA },
+				["g"] = {
+					i(130263),	-- Celea's Hauberk (QI!)
+				},
+			}),
+			q(40327, {	-- Testing the Metal
+				["sourceQuests"] = { 40195 },	-- A Daring Rescue
+				["provider"] = { "n", 99689 },	-- Taldranis
+				["coord"] = { 51.6, 58.0, AZSUNA },
+				["g"] = {
+					r(194750),	-- Battlebound Hauberk [Rank 2] (RECIPE!)
+				},
+			}),
+			q(40198, {	-- Rats!
+				["sourceQuests"] = {
+					40192,	-- Claw of the Land
+					40327,	-- Testing the Metal
+				},
+				["provider"] = { "n", 93522 },	-- Diane Cannings
+				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+				["g"] = {
+					r(194709),	-- Warhide Footpads [Rank 2] (RECIPE!)
+					r(194705),	-- Warhide Shoulderguard [Rank 2] (RECIPE!)
+					i(130077),	-- Highmountain Leatherworking Pattern (QI!)
+					i(130078),	-- Leatherworking Pattern Scrap (QI!)
+				},
+			}),
+			q(40199,  {	-- Leather Legwork
+				["sourceQuests"] = { 40198 },	-- Rats!
+				["provider"] = { "n", 98931 },	-- Thanid Glowergold
+				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+				["g"] = {
+					r(194745),	-- Battlebound Spaulders [Rank 2] (RECIPE!)
+					r(194749),	-- Battlebound Treads [Rank 2] (RECIPE!)
+					i(132172),	-- Crowbar
+					i(130081),	-- Crowbar (QI!)
+				},
+			}),
+			q(40202,  {	-- The Final Lessons
+				["sourceQuests"] = { 40199 },	-- Leather Legwork
+				["provider"] = { "n", 93522 },	-- Diane Cannings
+				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+			}),
+			q(40204, {	-- Evolution of the Past
+				["sourceQuests"] = { 40202 },	-- The Final Lessons
+				["provider"] = { "n", 98948 },	-- Hrul Sharphoof
+				["coord"] = { 36.8, 78.2, 750 },
+				["g"] = {
+					r(194708),	-- Warhide Gloves [Rank 2] (RECIPE!)
+					i(130100),	-- Basilisk Hide (QI!)
+				},
+			}),
+			q(40205, {	-- Respect for the Past
+				["sourceQuests"] = { 40202 },	-- The Final Lessons
+				["provider"] = { "n", 98948 },	-- Hrul Sharphoof
+				["coord"] = { 36.8, 78.2, 750 },
+				["g"] = {
+					r(194706),	-- Warhide Pants [Rank 2] (RECIPE!)
+				},
+			}),
+			q(40203, {	-- Strength of the Past
+				["sourceQuests"] = { 40202 },	-- The Final Lessons
+				["provider"] = { "n", 98948 },	-- Hrul Sharphoof
+				["coord"] = { 36.8, 78.2, 750 },
+				["g"] = {
+					r(194707),	-- Warhide Mask [Rank 2] (RECIPE!)
+					i(130098),	-- Scale of Deathwing (QI!)
+				},
+			}),
+			q(40415, {	-- Well Spent Time
+				["sourceQuests"] = {
+					40204,	-- Evolution of the Past
+					40205,	-- Respect for the Past
+					40203,	-- Strength of the Past
+				},
+				["provider"] = { "n", 98948 },	-- Hrul Sharphoof
+				["coord"] = { 36.8, 78.2, 750 },
+			}),
+			q(40206,  {	-- A Debt Paid
+				["sourceQuests"] = { 40199 },	-- Leather Legwork
+				["provider"] = { "n", 98931 },	-- Thanid Glowergold
+				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+			}),
+			q(40208, {	-- Eye of Azshara: Scales of the Sea
+				["sourceQuests"] = { 40206 },	-- A Debt Paid
+				["provider"] = { "n", 98964 },	-- Celea
+				["coord"] = { 47.4, 44.2, AZSUNA },
+				["maps"] = { 713 },	-- Eye of Azshara
+				["g"] = {
+					r(194747),	-- Battlebound Warhelm [Rank 2] (RECIPE!)
+					i(130106),	-- Warlord Parjesh's Hauberk (QI!)
+				},
+			}),
+			q(40207, {	-- Scales of the Arcane
+				["sourceQuests"] = { 40206 },	-- A Debt Paid
+				["provider"] = { "n", 98964 },	-- Celea
+				["coord"] = { 47.4, 44.2, AZSUNA },
+				["g"] = {
+					r(194748),	-- Battlebound Grips [Rank 2] (RECIPE!)
+					i(130104),	-- Blue Dragon Scale (QI!)
+				},
+			}),
+			q(40209, {	-- Scales of the Earth
+				["sourceQuests"] = { 40206 },	-- A Debt Paid
+				["provider"] = { "n", 98964 },	-- Celea
+				["coord"] = { 47.4, 44.2, AZSUNA },
+				["g"] = {
+					r(194746),	-- Battlebound Leggings [Rank 2] (RECIPE!)
+					i(130110),	-- Axetail Basilisk Matriarch Scales (QI!)
+				},
+			}),
+			q(40210, {	-- Time Well Spent
+				["sourceQuests"] = {
+					40207,	-- Scales of the Arcane
+					40208,	-- Eye of Azshara: Scales of the Sea
+					40209,	-- Scales of the Earth
+				},
+				["provider"] = { "n", 98964 },	-- Celea
+				["coord"] = { 47.4, 44.2, AZSUNA },
+			}),
+			q(40211,  {	-- Demon Flesh
+				["sourceQuests"] = {
+					40415,	-- Well Spent Time
+					40210,	-- Time Well Spent
+					42079,	-- Masquerade
+				},
+				["provider"] = { "n", 93523 },	-- Namha Moonwater
+				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+			}),
+			q(40212, {	-- Wrong End of the Knife
+				["sourceQuests"] = { 40211 },	-- Demon Flesh
+				["provider"] = { "n", 98969 },	-- Stalriss Dawnrunner
+				["coord"] = { 26.6, 71.6, SURAMAR },
+			}),
+			q(40213, {	-- Hounds Abound
+				["sourceQuests"] = { 40212 },	-- Wrong End of the Knife
+				["provider"] = { "n", 98969 },	-- Stalriss Dawnrunner
+				["coord"] = { 26.6, 71.6, SURAMAR },
+				["g"] = {
+					i(130129),	-- Fel Hound Corpse (QI!)
+				},
+			}),
+			q(40214, {	-- Fel Tanning
+				["sourceQuests"] = { 40213 },	-- Hounds Abound
+				["provider"] = { "n", 98969 },	-- Stalriss Dawnrunner
+				["coord"] = { 26.6, 71.6, SURAMAR },
+				["cost"] = {{ "i", 124438, 5 }},	-- 5x Unbroken Claw
+				["g"] = {
+					r(194787),	-- Dreadleather Bindings [Rank 1] (RECIPE!)
+					r(194796),	-- Gravenscale Armbands [Rank 1] (RECIPE!)
+					r(196457, {["u"]=TRAINING}),	-- Fel Leather Cuff
+					r(196395, {["u"]=TRAINING}),	-- Fel Leather Strap
+					r(196456, {["u"]=TRAINING}),	-- Felhide Bracers
+					i(130937),	-- Fel Leather Cuff (QI!)
+					i(130880),	-- Fel Leather Strap (QI!)
+					i(130130),	-- Felhide Bracers (QI!)
+					i(130879),	-- Tanned Fel Leather (QI!)
+				},
+			}),
+			q(40215,  {	-- Mounting Made Easy
+				["sourceQuests"] = { 40214 },	-- Fel Tanning
+				["provider"] = { "n", 93523 },	-- Namha Moonwater
+				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
+				["g"] = {
+					r(194780),	-- Elderhorn Riding Harness (RECIPE!)
+				},
+			}),
+			-- The Sentinel's Eternal Refuge Questline
+			q(46684, {	-- The Legend of the Elderhide
+				["sourceQuests"] = { 46804 },	-- Fashion History and a Philosophy of Style
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+				["coord"] = { 41.2, 59.4, BROKEN_SHORE },
+				["repeatable"] = true,
+				["timeline"] = { ADDED_7_2_0 },
+			}),
+			q(46688, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Leather of the Ancients
+				["sourceQuests"] = { 46684 },	-- The Legend of the Elderhide
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+				["coord"] = { 41.2, 59.4, BROKEN_SHORE },
+				["repeatable"] = true,
+				["g"] = {
+					i(146693),	-- Ancient Dreadleather (QI!)
+				},
+			})),
+			q(46687, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Wisp and the Nightmare
+				["sourceQuests"] = { 46684 },	-- The Legend of the Elderhide
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+				["coord"] = { 41.2, 59.4, BROKEN_SHORE },
+				["maps"] = { 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, },	-- The Emerald Nightmare
+				["repeatable"] = true,
+				["g"] = {
+					i(146691),	-- Immaculate Spellsash (QI!)
+				},
+			})),
+			q(46686, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Wisp and the Sea
+				["sourceQuests"] = { 46684 },	-- The Legend of the Elderhide
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+				["coord"] = { 41.2, 59.4, BROKEN_SHORE },
+				["maps"] = { 713 },	-- Eye of Azshara
+				["repeatable"] = true,
+				["g"] = {
+					i(146689),	-- Oiled Handmaiden's Gloves (QI!)
+				},
+			})),
+			q(46685, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Wisp and the Shadow
+				["sourceQuests"] = { 46684 },	-- The Legend of the Elderhide
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+				["coord"] = { 41.2, 59.4, BROKEN_SHORE },
+				["maps"] = { 733 },	-- Darkheart Thicket
+				["repeatable"] = true,
+				["g"] = {
+					i(146687),	-- Dyed Shroud of Xavius (QI!)
+				},
+			})),
+			q(46689, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Wisp-Touched Elderhide
+				["sourceQuests"] = {
+					46688,	-- Leather of the Ancients
+					46687,	-- The Wisp and the Nightmare
+					46686,	-- The Wisp and the Sea
+					46685,	-- The Wisp and the Shadow
+				},
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+				["coord"] = { 41.1, 59.3, BROKEN_SHORE },
+				["repeatable"] = true,
+				["g"] = {
+					i(146712),	-- Wisp-Touched Elderhide
+					i(147438),	-- Bag of Wisp-Touched Elderhide (QI!)
+					i(146977),	-- Legendary Tanner's Kit (QI!)
+				},
+			})),
+			-- Vigilance Perch Questline
+			q(46690, {	-- The Legend of the Wardenscale
+				["sourceQuests"] = { 46804 },	-- Fashion History and a Philosophy of Style
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+				["coord"] = { 41.2, 59.4, BROKEN_SHORE },
+				["repeatable"] = true,
+				["timeline"] = { ADDED_7_2_0 },
+			}),
+			q(46694, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Mail of the Ancients
+				["sourceQuests"] = { 46690 },	-- The Legend of the Wardenscale
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+				["coord"] = { 41.2, 59.4, BROKEN_SHORE },
+				["repeatable"] = true,
+				["g"] = {
+					i(146701),	-- Ancient Gravenscale (QI!)
+				},
+			})),
+			q(46692, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Owl and the Dreadlord
+				["sourceQuests"] = { 46690 },	-- The Legend of the Wardenscale
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+				["coord"] = { 41.2, 59.4, BROKEN_SHORE },
+				["maps"] = { 845, 846, 847, 848, 849 },	-- Cathedral of Eternal Night
+				["repeatable"] = true,
+				["g"] = {
+					i(146697),	-- Refinished Legplates of Mephistroth (QI!)
+				},
+			})),
+			q(46693, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Owl and the Observer
+				["sourceQuests"] = { 46690 },	-- The Legend of the Wardenscale
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+				["coord"] = { 41.2, 59.4, BROKEN_SHORE },
+				["maps"] = { 815, 816, 817, 818, 819, 820, 821, 822, 809, 810, 811, 812, 813, 814 },	-- Return to Karazhan
+				["repeatable"] = true,
+				["g"] = {
+					i(146699),	-- Gleaming Bracers of the First War (QI!)
+				},
+			})),
+			q(46691, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Owl and the Traitor
+				["sourceQuests"] = { 46690 },	-- The Legend of the Wardenscale
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+				["coord"] = { 41.2, 59.4, BROKEN_SHORE },
+				["maps"] = { 710, 711, 712, },	-- Vault of the Wardens
+				["repeatable"] = true,
+				["g"] = {
+					i(146695),	-- Immaculate Felsong Mantle (QI!)
+				},
+			})),
+			q(46695, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Prime Wardenscale
+				["sourceQuests"] = {
+					46694,	-- Mail of the Ancients
+					46692,	-- The Owl and the Dreadlord
+					46693,	-- The Owl and the Observer
+					46691,	-- The Owl and the Traitor
+				},
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+				["coord"] = { 41.1, 59.3, BROKEN_SHORE },
+				["repeatable"] = true,
+				["g"] = {
+					i(146713),	-- Prime Wardenscale
+					i(147439),	-- Box of Completed Prime Wardenscale (QI!)
+					i(147209),	-- Legendary Wardenscale Supplies (QI!)
+				},
+			})),
+			-- 7.3.0
+			q(48078, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Counterbalancing
+				["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
+				["provider"] = { "n", 125349 },	-- Enstraa
+				["coord"] = { 39.6, 73.6, THE_VINDICAAR_KROKUUN_UPPER },
+				["cost"] = {
+					{ "i", 151566, 12 },	-- 12x Fiendish Leather
+					{ "i", 151567, 12 },	-- 12x Lightweave Cloth
+				},
+				["g"] = {
+					i(151740),	-- Pattern: Fiendish Shoulderguards [Rank 1] (RECIPE!)
+					i(151743),	-- Pattern: Fiendish Spaulders [Rank 1] (RECIPE!)
+					i(151880),	-- Enstraa's Tanning Oil
+					i(151879),	-- Purified Fiendish Leather
+				},
+			})),
 		}),
-		q(40183,  {	-- Over Your Head
-			["sourceQuests"] = { 39958 },	-- Skin Deep
-			["provider"] = { "n", 93523 },	-- Namha Moonwater
-			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
-			["g"] = {
-				r(194739),	-- Battlebound Warhelm (RECIPE!)
-				r(194699),	-- Warhide Mask (RECIPE!)
-				r(196428, {["u"]=TRAINING}),	-- Rough Warhide Mask
-				r(196375, {["u"]=TRAINING}),	-- Shaved Stonehide Pelt
-				r(196382, {["u"]=TRAINING}),	-- Stonehide Leather Lining
-				r(196385, {["u"]=TRAINING}),	-- Stonehide Leather Strip
-				r(196379, {["u"]=TRAINING}),	-- Tanned Stonehide Leather
-				i(130868),	-- Fresh Stonehide Pelt (QI!)
-				i(130891),	-- Namha's Tanning Mixture (QI!)
-				i(129975),	-- Rough Warhide Mask (QI!)
-				i(130869),	-- Shaved Stonehide Pelt (QI!)
-				i(130872),	-- Stonehide Leather Lining (QI!)
-				i(130875),	-- Stonehide Leather Strip (QI!)
-				i(130870),	-- Tanned Stonehide Leather (QI!)
-			},
-		}),
-		q(40196,  {	-- Adventuring Anxieties
-			["sourceQuests"] = { 40183 },	-- Over Your Head
-			["provider"] = { "n", 93523 },	-- Namha Moonwater
-			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
-		}),
-		q(40197,  {	-- The Necessary Materials
-			["sourceQuests"] = { 40196 },	-- Adventuring Anxieties
-			["provider"] = { "n", 93523 },	-- Namha Moonwater
-			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
-			["cost"] = {{"i", 124113, 100 }},	-- 100x Stonehide Leather
-		}),
-		q(41889,  {	-- Dazed of the Past
-			["sourceQuests"] = { 40197 },	-- The Necessary Materials
-			["provider"] = { "n", 93523 },	-- Namha Moonwater
-			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
-			["g"] = {
-				r(196648),	-- Stonehide Leather Barding (RECIPE!)
-				r(196469, {["u"]=TRAINING}),	-- Stonehide Caparison
-				r(196467, {["u"]=TRAINING}),	-- Stonehide Champron
-				r(196468, {["u"]=TRAINING}),	-- Stonehide Crinet
-				r(196397, {["u"]=TRAINING}),	-- Stonehide Leather Barding
-				r(208615, {["u"]=TRAINING}),	-- Stonehide Leather Strip
-				r(208596, {["u"]=TRAINING}),	-- Tanned Stonehide Pelt
-				i(130887),	-- Stonehide Leather Barding (QI!)
-				i(130896),	-- Stonehide Leather Caparison (QI!)
-				i(130894),	-- Stonehide Leather Champron (QI!)
-				i(130895),	-- Stonehide Leather Crinet (QI!)
-				i(130875),	-- Stonehide Leather Strip (QI!)
-				i(136539),	-- Tanned Stonehide Leather (QI!)
-			},
-		}),
-		q(40200, {	-- Battle Bonds (A)
-			["sourceQuests"] = { 41889 },	-- Dazed of the Past
-			["provider"] = { "n", 93523 },	-- Namha Moonwater
-			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
-			["races"] = ALLIANCE_ONLY,
-		}),
-		q(40241, {	-- Battle Bonds (H)
-			["sourceQuests"] = { 41889 },	-- Dazed of the Past
-			["provider"] = { "n", 93523 },	-- Namha Moonwater
-			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
-			["races"] = HORDE_ONLY,
-		}),
-		q(40201,  {	-- Playthings
-			["sourceQuests"] = {
-				40200,	-- Battle Bonds (A)
-				40241,	-- Battle Bonds (H)
-			},
-			["provider"] = { "n", 93523 },	-- Namha Moonwater
-			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
-			["g"] = {
-				r(194776),	-- Leather Pet Bed (RECIPE!)
-				r(196375, {["u"]=TRAINING}),	-- Shaved Stonehide Pelt
-				r(196442, {["u"]=TRAINING}),	-- Stonehide Leather Bed
-				r(196382, {["u"]=TRAINING}),	-- Stonehide Leather Lining
-				r(196385, {["u"]=TRAINING}),	-- Stonehide Leather Strip
-				r(196379, {["u"]=TRAINING}),	-- Tanned Stonehide Leather
-				i(130869),	-- Shaved Stonehide Pelt (QI!)
-				i(130090),	-- Stonehide Leather Bed (QI!)
-				i(130872),	-- Stonehide Leather Lining (QI!)
-				i(130875),	-- Stonehide Leather Strip (QI!)
-				i(130870),	-- Tanned Stonehide Leather (QI!)
-			},
-		}),
-		q(40180,  {	-- Mail Men
-			["sourceQuests"] = { 40201 },	-- Playthings
-			["provider"] = { "n", 93523 },	-- Namha Moonwater
-			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
-		}),
-		q(40177, { -- Leather Lady
-			["sourceQuests"] = { 40201 },	-- Playthings
-			["provider"] = { "n", 93523 },	-- Namha Moonwater
-			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
-		}),
-		q(40179,  {	-- Stormheim Savagery
-			["sourceQuests"] = { 40177 },	-- Leather Lady
-			["provider"] = { "n", 93522 },	-- Diane Cannings
-			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
-			["g"] = {
-				r(194696),	-- Warhide Belt [Rank 1] (RECIPE!)
-				r(194698),	-- Warhide Pants [Rank 1] (RECIPE!)
-				i(129972),	-- Vrykul Leather Binding (QI!)
-			},
-		}),
-		q(40178,  {	-- Vestment Opportunity
-			["sourceQuests"] = { 40177 },	-- Leather Lady
-			["provider"] = { "n", 93522 },	-- Diane Cannings
-			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
-			["g"] = {
-				r(194702),	-- Warhide Jerkin [Rank 1] (RECIPE!)
-				i(129971),	-- Hideshaper's Vestment (QI!)
-			},
-		}),
-		q(40181,  {	-- Black Rook Bandit
-			["sourceQuests"] = { 40180 },	-- Mail Men
-			["provider"] = { "n", 98931 },	-- Thanid Glowergold
-			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
-			["g"] = {
-				r(194736),	-- Battlebound Girdle [Rank 1] (RECIPE!)
-				r(194738),	-- Battlebound Leggings [Rank 1] (RECIPE!)
-				i(129973),	-- Black Rook Armor (QI!)
-			},
-		}),
-		q(40182,  {	-- Too Good To Pass Up
-			["sourceQuests"] = { 40180 },	-- Mail Men
-			["provider"] = { "n", 98931 },	-- Thanid Glowergold
-			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
-			["g"] = {
-				r(194742),	-- Battlebound Hauberk [Rank 1] (RECIPE!)
-				i(129974),	-- Black Rook Hauberk (QI!)
-			},
-		}),
-		q(40176,  {	-- From Head to Toe
-			["sourceQuests"] = {
-				40179,	-- Stormheim Savagery
-				40181,  -- Black Rook Bandit
-				40182,  -- Too Good To Pass Up
-			},
-			["provider"] = { "n", 93523 },	-- Namha Moonwater
-			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
-			["g"] = {
-				r(194741),	-- Battlebound Treads [Rank 1] (RECIPE!)
-				r(194701),	-- Warhide Footpads [Rank 1] (RECIPE!)
-				r(196375, {["u"]=TRAINING}),	-- Shaved Stonehide Pelt
-				r(196384, {["u"]=TRAINING}),	-- Stonehide Boot Exterior
-				r(196382, {["u"]=TRAINING}),	-- Stonehide Leather Lining
-				r(196427, {["u"]=TRAINING}),	-- Sturdy Stonehide Boots
-				r(196379, {["u"]=TRAINING}),	-- Tanned Stonehide Leather
-				i(130869),	-- Shaved Stonehide Pelt (QI!)
-				i(130873),	-- Stonehide Boot Exterior (QI!)
-				i(130872),	-- Stonehide Leather Lining (QI!)
-				i(129964),	-- Sturdy Stonehide Boots (QI!)
-				i(130870),	-- Tanned Stonehide Leather (QI!)
-			},
-		}),
-		q(40187,  {	-- Links in the Chain
-			["sourceQuests"] = { 40176 },	-- From Head to Toe
-			["provider"] = { "n", 98931 },	-- Thanid Glowergold
-			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
-		}),
-		q(40184,  {	-- Tauren Tanning
-			["sourceQuests"] = { 40176 },	-- From Head to Toe
-			["provider"] = { "n", 93522 },	-- Diane Cannings
-			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
-		}),
-		q(40186, {	-- Drogbar Durability
-			["sourceQuests"] = { 40184 },	-- Tauren Tanning
-			["provider"] = { "n", 98948 },	-- Hrul Sharphoof
-			["coord"] = { 36.8, 78.2, 750 },
-			["g"] = {
-				r(194695),	-- Warhide Bindings [Rank 1] (RECIPE!)
-				r(194700),	-- Warhide Gloves [Rank 1] (RECIPE!)
-			},
-		}),
-		q(40185, {	-- Shoulder the Burden
-			["sourceQuests"] = { 40184 },	-- Tauren Tanning
-			["provider"] = { "n", 98948 },	-- Hrul Sharphoof
-			["coord"] = { 36.8, 78.2, 750 },
-			["g"] = {
-				r(194697),	-- Warhide Shoulderguard [Rank 1] (RECIPE!)
-				i(129976),	-- Lohrumn's Shoulderguard (QI!)
-			},
-		}),
-		q(40190,  {	-- Hardening the Hide
-			["sourceQuests"] = {
-				40185,  -- Shoulder the Burden
-				40186,  -- Drogbar Durability
-			 },
-			["provider"] = { "n", 93522 },	-- Diane Cannings
-			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
-			["isBreadcrumb"] = true,
-		}),
-		q(40191, {	-- Stamped Stories
-			["sourceQuests"] = { 40190 },	-- Hardening the Hide
-			["provider"] = { "n", 98948 },	-- Hrul Sharphoof
-			["coord"] = { 36.8, 78.2, 750 },
-			["g"] = {
-				r(194710),	-- Warhide Jerkin [Rank 2] (RECIPE!)
-			},
-		}),
-		q(40192, {	-- Claw of the Land
-			["sourceQuests"] = { 40191 },	-- Stamped Stories
-			["provider"] = { "n", 98948 },	-- Hrul Sharphoof
-			["coord"] = { 36.8, 78.2, 750 },
-			["g"] = {
-				r(194704),	-- Warhide Belt [Rank 2] (RECIPE!)
-				r(194703),	-- Warhide Bindings [Rank 2] (RECIPE!)
-				i(130070),	-- Stalker Claw (QI!)
-			},
-		}),
-		q(40188, {	-- Best Served Cold
-			["sourceQuests"] = { 40187 },	-- Links in the Chain
-			["provider"] = { "n", 98964 },	-- Celea
-			["coord"] = { 47.4, 44.2, AZSUNA },
-			["g"] = {
-				r(194735),	-- Battlebound Armbands [Rank 1] (RECIPE!)
-				r(194740),	-- Battlebound Grips [Rank 1] (RECIPE!)
-			},
-		}),
-		q(40189, {	-- Naga Know-How
-			["sourceQuests"] = { 40187 },	-- Links in the Chain
-			["provider"] = { "n", 98964 },	-- Celea
-			["coord"] = { 47.4, 44.2, AZSUNA },
-			["g"] = {
-				r(194737),	-- Battlebound Spaulders [Rank 1] (RECIPE!)
-				i(129980),	-- Naga Shoulderguard (QI!)
-			},
-		}),
-		q(40193,  {	-- Getting the Kinks Out
-			["sourceQuests"] = { 40189 },	-- Naga Know-How
-			["provider"] = { "n", 98931 },	-- Thanid Glowergold
-			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
-			["isBreadcrumb"] = true,
-		}),
-		q(40194, {	-- Reclaimed Cargo
-			["sourceQuests"] = { 40193 },	-- Getting the Kinks Out
-			["provider"] = { "n", 98964 },	-- Celea
-			["coord"] = { 47.4, 44.2, AZSUNA },
-			["g"] = {
-				r(194743),	-- Battlebound Armbands [Rank 2] (RECIPE!)
-				r(194744),	-- Battlebound Girdle [Rank 2] (RECIPE!)
-				i(130072),	-- Mail Armor Shipment (QI!)
-			},
-		}),
-		q(40195, {	-- A Daring Rescue
-			["sourceQuests"] = { 40194 },	-- Reclaimed Cargo
-			["provider"] = { "n", 98964 },	-- Celea
-			["coord"] = { 47.4, 44.2, AZSUNA },
-			["g"] = {
-				i(130263),	-- Celea's Hauberk (QI!)
-			},
-		}),
-		q(40327, {	-- Testing the Metal
-			["sourceQuests"] = { 40195 },	-- A Daring Rescue
-			["provider"] = { "n", 99689 },	-- Taldranis
-			["coord"] = { 51.6, 58.0, AZSUNA },
-			["g"] = {
-				r(194750),	-- Battlebound Hauberk [Rank 2] (RECIPE!)
-			},
-		}),
-		q(40198, {	-- Rats!
-			["sourceQuests"] = {
-				40192,	-- Claw of the Land
-				40327,	-- Testing the Metal
-			},
-			["provider"] = { "n", 93522 },	-- Diane Cannings
-			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
-			["g"] = {
-				r(194709),	-- Warhide Footpads [Rank 2] (RECIPE!)
-				r(194705),	-- Warhide Shoulderguard [Rank 2] (RECIPE!)
-				i(130077),	-- Highmountain Leatherworking Pattern (QI!)
-				i(130078),	-- Leatherworking Pattern Scrap (QI!)
-			},
-		}),
-		q(40199,  {	-- Leather Legwork
-			["sourceQuests"] = { 40198 },	-- Rats!
-			["provider"] = { "n", 98931 },	-- Thanid Glowergold
-			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
-			["g"] = {
-				r(194745),	-- Battlebound Spaulders [Rank 2] (RECIPE!)
-				r(194749),	-- Battlebound Treads [Rank 2] (RECIPE!)
-				i(132172),	-- Crowbar
-				i(130081),	-- Crowbar (QI!)
-			},
-		}),
-		q(40202,  {	-- The Final Lessons
-			["sourceQuests"] = { 40199 },	-- Leather Legwork
-			["provider"] = { "n", 93522 },	-- Diane Cannings
-			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
-		}),
-		q(40204, {	-- Evolution of the Past
-			["sourceQuests"] = { 40202 },	-- The Final Lessons
-			["provider"] = { "n", 98948 },	-- Hrul Sharphoof
-			["coord"] = { 36.8, 78.2, 750 },
-			["g"] = {
-				r(194708),	-- Warhide Gloves [Rank 2] (RECIPE!)
-				i(130100),	-- Basilisk Hide (QI!)
-			},
-		}),
-		q(40205, {	-- Respect for the Past
-			["sourceQuests"] = { 40202 },	-- The Final Lessons
-			["provider"] = { "n", 98948 },	-- Hrul Sharphoof
-			["coord"] = { 36.8, 78.2, 750 },
-			["g"] = {
-				r(194706),	-- Warhide Pants [Rank 2] (RECIPE!)
-			},
-		}),
-		q(40203, {	-- Strength of the Past
-			["sourceQuests"] = { 40202 },	-- The Final Lessons
-			["provider"] = { "n", 98948 },	-- Hrul Sharphoof
-			["coord"] = { 36.8, 78.2, 750 },
-			["g"] = {
-				r(194707),	-- Warhide Mask [Rank 2] (RECIPE!)
-				i(130098),	-- Scale of Deathwing (QI!)
-			},
-		}),
-		q(40415, {	-- Well Spent Time
-			["sourceQuests"] = {
-				40204,	-- Evolution of the Past
-				40205,	-- Respect for the Past
-				40203,	-- Strength of the Past
-			},
-			["provider"] = { "n", 98948 },	-- Hrul Sharphoof
-			["coord"] = { 36.8, 78.2, 750 },
-		}),
-		q(40206,  {	-- A Debt Paid
-			["sourceQuests"] = { 40199 },	-- Leather Legwork
-			["provider"] = { "n", 98931 },	-- Thanid Glowergold
-			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
-		}),
-		q(40208, {	-- Eye of Azshara: Scales of the Sea
-			["sourceQuests"] = { 40206 },	-- A Debt Paid
-			["provider"] = { "n", 98964 },	-- Celea
-			["coord"] = { 47.4, 44.2, AZSUNA },
-			["maps"] = { 713 },	-- Eye of Azshara
-			["g"] = {
-				r(194747),	-- Battlebound Warhelm [Rank 2] (RECIPE!)
-				i(130106),	-- Warlord Parjesh's Hauberk (QI!)
-			},
-		}),
-		q(40207, {	-- Scales of the Arcane
-			["sourceQuests"] = { 40206 },	-- A Debt Paid
-			["provider"] = { "n", 98964 },	-- Celea
-			["coord"] = { 47.4, 44.2, AZSUNA },
-			["g"] = {
-				r(194748),	-- Battlebound Grips [Rank 2] (RECIPE!)
-				i(130104),	-- Blue Dragon Scale (QI!)
-			},
-		}),
-		q(40209, {	-- Scales of the Earth
-			["sourceQuests"] = { 40206 },	-- A Debt Paid
-			["provider"] = { "n", 98964 },	-- Celea
-			["coord"] = { 47.4, 44.2, AZSUNA },
-			["g"] = {
-				r(194746),	-- Battlebound Leggings [Rank 2] (RECIPE!)
-				i(130110),	-- Axetail Basilisk Matriarch Scales (QI!)
-			},
-		}),
-		q(40210, {	-- Time Well Spent
-			["sourceQuests"] = {
-				40207,	-- Scales of the Arcane
-				40208,	-- Eye of Azshara: Scales of the Sea
-				40209,	-- Scales of the Earth
-			},
-			["provider"] = { "n", 98964 },	-- Celea
-			["coord"] = { 47.4, 44.2, AZSUNA },
-		}),
-		q(40211,  {	-- Demon Flesh
-			["sourceQuests"] = {
-				40415,	-- Well Spent Time
-				40210,	-- Time Well Spent
-				42079,	-- Masquerade
-			},
-			["provider"] = { "n", 93523 },	-- Namha Moonwater
-			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
-		}),
-		q(40212, {	-- Wrong End of the Knife
-			["sourceQuests"] = { 40211 },	-- Demon Flesh
-			["provider"] = { "n", 98969 },	-- Stalriss Dawnrunner
-			["coord"] = { 26.6, 71.6, SURAMAR },
-		}),
-		q(40213, {	-- Hounds Abound
-			["sourceQuests"] = { 40212 },	-- Wrong End of the Knife
-			["provider"] = { "n", 98969 },	-- Stalriss Dawnrunner
-			["coord"] = { 26.6, 71.6, SURAMAR },
-			["g"] = {
-				i(130129),	-- Fel Hound Corpse (QI!)
-			},
-		}),
-		q(40214, {	-- Fel Tanning
-			["sourceQuests"] = { 40213 },	-- Hounds Abound
-			["provider"] = { "n", 98969 },	-- Stalriss Dawnrunner
-			["coord"] = { 26.6, 71.6, SURAMAR },
-			["cost"] = {{ "i", 124438, 5 }},	-- 5x Unbroken Claw
-			["g"] = {
-				r(194787),	-- Dreadleather Bindings [Rank 1] (RECIPE!)
-				r(194796),	-- Gravenscale Armbands [Rank 1] (RECIPE!)
-				r(196457, {["u"]=TRAINING}),	-- Fel Leather Cuff
-				r(196395, {["u"]=TRAINING}),	-- Fel Leather Strap
-				r(196456, {["u"]=TRAINING}),	-- Felhide Bracers
-				i(130937),	-- Fel Leather Cuff (QI!)
-				i(130880),	-- Fel Leather Strap (QI!)
-				i(130130),	-- Felhide Bracers (QI!)
-				i(130879),	-- Tanned Fel Leather (QI!)
-			},
-		}),
-		q(40215,  {	-- Mounting Made Easy
-			["sourceQuests"] = { 40214 },	-- Fel Tanning
-			["provider"] = { "n", 93523 },	-- Namha Moonwater
-			["coord"] = { 35.4, 29.6, LEGION_DALARAN },
-			["g"] = {
-				r(194780),	-- Elderhorn Riding Harness (RECIPE!)
-			},
-		}),
-		-- The Sentinel's Eternal Refuge Questline
-		q(46684, {	-- The Legend of the Elderhide
-			["sourceQuests"] = { 46804 },	-- Fashion History and a Philosophy of Style
-			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
-			["coord"] = { 41.2, 59.4, BROKEN_SHORE },
-			["repeatable"] = true,
-			["timeline"] = { ADDED_7_2_0 },
-		}),
-		q(46688, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Leather of the Ancients
-			["sourceQuests"] = { 46684 },	-- The Legend of the Elderhide
-			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
-			["coord"] = { 41.2, 59.4, BROKEN_SHORE },
-			["repeatable"] = true,
-			["g"] = {
-				i(146693),	-- Ancient Dreadleather (QI!)
-			},
-		})),
-		q(46687, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Wisp and the Nightmare
-			["sourceQuests"] = { 46684 },	-- The Legend of the Elderhide
-			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
-			["coord"] = { 41.2, 59.4, BROKEN_SHORE },
-			["maps"] = { 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, },	-- The Emerald Nightmare
-			["repeatable"] = true,
-			["g"] = {
-				i(146691),	-- Immaculate Spellsash (QI!)
-			},
-		})),
-		q(46686, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Wisp and the Sea
-			["sourceQuests"] = { 46684 },	-- The Legend of the Elderhide
-			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
-			["coord"] = { 41.2, 59.4, BROKEN_SHORE },
-			["maps"] = { 713 },	-- Eye of Azshara
-			["repeatable"] = true,
-			["g"] = {
-				i(146689),	-- Oiled Handmaiden's Gloves (QI!)
-			},
-		})),
-		q(46685, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Wisp and the Shadow
-			["sourceQuests"] = { 46684 },	-- The Legend of the Elderhide
-			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
-			["coord"] = { 41.2, 59.4, BROKEN_SHORE },
-			["maps"] = { 733 },	-- Darkheart Thicket
-			["repeatable"] = true,
-			["g"] = {
-				i(146687),	-- Dyed Shroud of Xavius (QI!)
-			},
-		})),
-		q(46689, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Wisp-Touched Elderhide
-			["sourceQuests"] = {
-				46688,	-- Leather of the Ancients
-				46687,	-- The Wisp and the Nightmare
-				46686,	-- The Wisp and the Sea
-				46685,	-- The Wisp and the Shadow
-			},
-			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
-			["coord"] = { 41.1, 59.3, BROKEN_SHORE },
-			["repeatable"] = true,
-			["g"] = {
-				i(146712),	-- Wisp-Touched Elderhide
-				i(147438),	-- Bag of Wisp-Touched Elderhide (QI!)
-				i(146977),	-- Legendary Tanner's Kit (QI!)
-			},
-		})),
-		-- Vigilance Perch Questline
-		q(46690, {	-- The Legend of the Wardenscale
-			["sourceQuests"] = { 46804 },	-- Fashion History and a Philosophy of Style
-			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
-			["coord"] = { 41.2, 59.4, BROKEN_SHORE },
-			["repeatable"] = true,
-			["timeline"] = { ADDED_7_2_0 },
-		}),
-		q(46694, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Mail of the Ancients
-			["sourceQuests"] = { 46690 },	-- The Legend of the Wardenscale
-			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
-			["coord"] = { 41.2, 59.4, BROKEN_SHORE },
-			["repeatable"] = true,
-			["g"] = {
-				i(146701),	-- Ancient Gravenscale (QI!)
-			},
-		})),
-		q(46692, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Owl and the Dreadlord
-			["sourceQuests"] = { 46690 },	-- The Legend of the Wardenscale
-			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
-			["coord"] = { 41.2, 59.4, BROKEN_SHORE },
-			["maps"] = { 845, 846, 847, 848, 849 },	-- Cathedral of Eternal Night
-			["repeatable"] = true,
-			["g"] = {
-				i(146697),	-- Refinished Legplates of Mephistroth (QI!)
-			},
-		})),
-		q(46693, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Owl and the Observer
-			["sourceQuests"] = { 46690 },	-- The Legend of the Wardenscale
-			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
-			["coord"] = { 41.2, 59.4, BROKEN_SHORE },
-			["maps"] = { 815, 816, 817, 818, 819, 820, 821, 822, 809, 810, 811, 812, 813, 814 },	-- Return to Karazhan
-			["repeatable"] = true,
-			["g"] = {
-				i(146699),	-- Gleaming Bracers of the First War (QI!)
-			},
-		})),
-		q(46691, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Owl and the Traitor
-			["sourceQuests"] = { 46690 },	-- The Legend of the Wardenscale
-			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
-			["coord"] = { 41.2, 59.4, BROKEN_SHORE },
-			["maps"] = { 710, 711, 712, },	-- Vault of the Wardens
-			["repeatable"] = true,
-			["g"] = {
-				i(146695),	-- Immaculate Felsong Mantle (QI!)
-			},
-		})),
-		q(46695, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Prime Wardenscale
-			["sourceQuests"] = {
-				46694,	-- Mail of the Ancients
-				46692,	-- The Owl and the Dreadlord
-				46693,	-- The Owl and the Observer
-				46691,	-- The Owl and the Traitor
-			},
-			["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
-			["coord"] = { 41.1, 59.3, BROKEN_SHORE },
-			["repeatable"] = true,
-			["g"] = {
-				i(146713),	-- Prime Wardenscale
-				i(147439),	-- Box of Completed Prime Wardenscale (QI!)
-				i(147209),	-- Legendary Wardenscale Supplies (QI!)
-			},
-		})),
-		-- 7.3.0
-		q(48078, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Counterbalancing
-			["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
-			["provider"] = { "n", 125349 },	-- Enstraa
-			["coord"] = { 39.6, 73.6, THE_VINDICAAR_KROKUUN_UPPER },
-			["cost"] = {
-				{ "i", 151566, 12 },	-- 12x Fiendish Leather
-				{ "i", 151567, 12 },	-- 12x Lightweave Cloth
-			},
-			["g"] = {
-				i(151740),	-- Pattern: Fiendish Shoulderguards [Rank 1] (RECIPE!)
-				i(151743),	-- Pattern: Fiendish Spaulders [Rank 1] (RECIPE!)
-				i(151880),	-- Enstraa's Tanning Oil
-				i(151879),	-- Purified Fiendish Leather
-			},
-		})),
 	})),
 	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
