@@ -2385,48 +2385,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(14493, {	-- Pattern: Robe of Winter Night
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 7437,	-- Cobalt Mageweaver
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
-					["coords"] = {
-						{ 23.4, 35.4, WINTERSPRING },
-						{ 25.4, 35.4, WINTERSPRING },
-					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, WINTERSPRING },
-						{ 17.8, 33.4, WINTERSPRING },
-						{ 19.8, 46.8, WINTERSPRING },
-					},
-					-- #endif
-					--]]
+					-- Wont return, its on timewalking vendor
 				}),
 				i(13497, {	-- Recipe: Greater Arcane Protection Potion (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 7437,	-- Cobalt Mageweaver
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
-					["coords"] = {
-						{ 23.4, 35.4, WINTERSPRING },
-						{ 25.4, 35.4, WINTERSPRING },
-					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, WINTERSPRING },
-						{ 17.8, 33.4, WINTERSPRING },
-						{ 19.8, 46.8, WINTERSPRING },
-					},
-					-- #endif
-					--]]
+					-- Wont return, its on timewalking vendor
 				}),
 				i(13495, {	-- Recipe: Greater Frost Protection Potion (RECIPE!)
 					["cr"] = 7428,	-- Frostmaul Giant
