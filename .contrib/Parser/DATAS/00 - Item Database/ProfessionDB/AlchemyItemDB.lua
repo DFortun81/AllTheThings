@@ -55,14 +55,14 @@ i(3830, 3450);		-- Elixir of Fortitude
 i(17709, 21923);	-- Elixir of Frost Power
 i(6663, 8240);		-- Elixir of Giant Growth
 i(9298, 11472);		-- Elixir of Giants
-i(21547, 26277);	-- Elixir of Greater Firepower
+i(21547, 26277);	-- Elixir of Greater Firepower [Back 10.1.7]
 i(3396, 2333);		-- Elixir of Lesser Agility
 i(2553, 3230);		-- Elixir of Minor Agility
 i(6211, 3188);		-- Elixir of Ogre's Strength
 i(3394, 3174);		-- Elixir of Poison Resistance / Potion of Curing (2.0.1)
 i(9301, 11476);		-- Elixir of Shadow Power
 i(13478, 17554);	-- Elixir of Superior Defense
-i(13491, 17571);	-- Elixir of the Mongoose
+i(13491, 17571);	-- Elixir of the Mongoose [Added back again 10.1.7]
 i(6055, 7257);		-- Fire Protection Potion
 i(13522, 17638);	-- Flask of Chromatic Resistance (Drop) {REMOVED 5.0.4}
 i(13520, 17636);	-- Flask of Distilled Wisdom (Drop)
@@ -115,8 +115,8 @@ i(9294, 11458);		-- Wildvine Potion
 i(13481, 17557);	-- Elixir of Brute Force (Recipe removed 4.0.3)
 i(13479, 17555);	-- Elixir of the Sages (Recipe removed 4.0.3)
 i(13493, 17573);	-- Greater Arcane Elixir (Recipe removed 3.0.2)
-i(13495, 17575);	-- Greater Frost Protection Potion (Recipe removed 4.0.3)
-i(13499, 17578);	-- Greater Shadow Protection Potion (Recipe removed 4.0.3)
+i(13495, 17575);	-- Greater Frost Protection Potion (Recipe removed 4.0.3, added 10.1.7)
+i(13499, 17578);	-- Greater Shadow Protection Potion (Recipe removed 4.0.3, added 10.1.7)
 i(13480, 17556);	-- Major Healing Potion (Recipe removed 2.0.1)
 i(13476, 17552);	-- Mighty Rage Potion (Recipe removed 4.0.3)
 i(13492, 17572);	-- Purification Potion (Recipe removed with TBC.)

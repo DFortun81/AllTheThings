@@ -72,7 +72,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(6372),	-- Swim Speed Potion
 			i(3382),	-- Weak Troll's Blood Potion
 			i(9144, {	-- Wildvine Potion
-				["timeline"] = { "added 1.11.1", "removed 4.0.1" },
+				["timeline"] = { "added 1.11.1", "removed 4.0.1", ADDED_10_1_7 },
 			}),
 		}),
 		category(639, {	-- Elixirs
@@ -93,7 +93,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(9206),	-- Elixir of Giants
 			i(9187),	-- Elixir of Greater Agility
 			i(8951),	-- Elixir of Greater Defense
-			i(21546),	-- Elixir of Greater Firepower
+			i(21546, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Elixir of Greater Firepower
 			i(9179),	-- Elixir of Greater Intellect
 			i(18294),	-- Elixir of Greater Water Breathing
 			i(3390),	-- Elixir of Lesser Agility
@@ -489,7 +489,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(207556, {["timeline"] = {ADDED_10_1_5}}),	-- Valiant Shortblade
 			i(203802, {["timeline"] = {ADDED_10_0_7}}),	-- Venomfang
 			i(203860, {["timeline"] = {ADDED_10_0_7}}),	-- Venomreaver
-			i(12792, {["timeline"] = {REMOVED_4_0_3}}),	-- Volcanic Hammer NOTE: This had a 7.3.5 removed tag, but I don't trust posters on WoWHead sometimes and this is one of those times where I'll go with my gut and say "PROVE IT" when Cataclysm comes around.
+			i(12792, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Volcanic Hammer NOTE: This had a 7.3.5 removed tag, but I don't trust posters on WoWHead sometimes and this is one of those times where I'll go with my gut and say "PROVE IT" when Cataclysm comes around.
 			i(203791, {["timeline"] = {ADDED_10_0_7}}),	-- Warblades of the Hakkari, Reborn (MH)
 			i(203792, {["timeline"] = {ADDED_10_0_7}}),	-- Warblades of the Hakkari, Reborn (OH)
 			i(206477, {["timeline"] = {ADDED_10_1_5}}),	-- Warsword of Caer Darrow
@@ -1098,9 +1098,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(18282),	-- Core Marksman Rifle
 			i(16004),	-- Dark Iron Rifle
 			i(4369),	-- Deadly Blunderbuss
-			i(16007, {	-- Flawless Arcanite Rifle
-				["timeline"] = { "removed 4.0.3" },
-			}),
+			i(16007, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Flawless Arcanite Rifle
 			i(4372),	-- Lovingly Crafted Boomstick
 			i(10508),	-- Mithril Blunderbuss
 			i(10510),	-- Mithril Heavy-Bore Rifle
@@ -1775,7 +1773,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				i(15051),	-- Black Dragonscale Shoulders
 				i(15048, {["timeline"] = {REMOVED_4_0_3}}),	-- Blue Dragonscale Breastplate
 				i(20295),	-- Blue Dragonscale Leggings
-				i(15049, {["timeline"] = {REMOVED_4_0_3}}),	-- Blue Dragonscale Shoulders
+				i(15049, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Blue Dragonscale Shoulders
 				applyclassicphase(PHASE_ONE_DIREMAUL, i(18509, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_5}})),	-- Chromatic Cloak
 				applyclassicphase(PHASE_THREE, i(19157)),	-- Chromatic Gauntlets
 				i(8367),	-- Dragonscale Breastplate
@@ -1792,8 +1790,8 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			["groups"] = {
 				i(8346),	-- Gauntlets of the Sea
 				i(8348),	-- Helm of Fire
-				i(15059, {["timeline"] = {REMOVED_4_0_3}}),	-- Living Breastplate
-				i(15060, {["timeline"] = {REMOVED_4_0_3}}),	-- Living Leggings
+				i(15059, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Living Breastplate
+				i(15060, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Living Leggings
 				i(15061),	-- Living Shoulders
 				applyclassicphase(PHASE_THREE, i(19163)),	-- Molten Belt
 				i(16983),	-- Molten Helm
@@ -1803,7 +1801,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				i(15057),	-- Stormshroud Pants
 				i(15058, {["timeline"] = {REMOVED_4_0_3, ADDED_9_1_0}}),	-- Stormshroud Shoulders
 				i(15053),	-- Volcanic Breastplate
-				i(15054, {["timeline"] = {REMOVED_4_0_3}}),	-- Volcanic Leggings
+				i(15054, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Volcanic Leggings
 				i(15055),	-- Volcanic Shoulders
 			},
 		}),
@@ -1820,11 +1818,11 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				i(15062),	-- Devilsaur Leggings
 				i(8349),	-- Feathered Breastplate
 				i(15071),	-- Frostsaber Boots
-				i(15070, {["timeline"] = {REMOVED_6_0_2}}),	-- Frostsaber Gloves
-				i(15069, {["timeline"] = {REMOVED_6_0_2}}),	-- Frostsaber Leggings
-				i(15068, {["timeline"] = {REMOVED_6_0_2}}),	-- Frostsaber Tunic
+				i(15070, {["timeline"] = {REMOVED_6_0_2, ADDED_10_1_7}}),	-- Frostsaber Gloves
+				i(15069, {["timeline"] = {REMOVED_6_0_2, ADDED_10_1_7}}),	-- Frostsaber Leggings
+				i(15068, {["timeline"] = {REMOVED_6_0_2, ADDED_10_1_7}}),	-- Frostsaber Tunic
 				applyclassicphase(PHASE_ONE_DIREMAUL, i(18510, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_5}})),	-- Hide of the Wild
-				i(15066, {["timeline"] = {REMOVED_4_0_3}}),	-- Ironfeather Breastplate
+				i(15066, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Ironfeather Breastplate
 				i(15067),	-- Ironfeather Shoulders
 				i(15064),	-- Warbear Harness
 				i(15065),	-- Warbear Woolies
@@ -1997,10 +1995,10 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				i(15062),	-- Devilsaur Leggings
 				i(8349),	-- Feathered Breastplate
 				i(15071),	-- Frostsaber Boots
-				i(15070, {["timeline"] = {REMOVED_6_0_2}}),	-- Frostsaber Gloves
-				i(15069, {["timeline"] = {REMOVED_6_0_2}}),	-- Frostsaber Leggings
-				i(15068, {["timeline"] = {REMOVED_6_0_2}}),	-- Frostsaber Tunic
-				i(15066, {["timeline"] = {REMOVED_4_0_3}}),	-- Ironfeather Breastplate
+				i(15070, {["timeline"] = {REMOVED_6_0_2, ADDED_10_1_7}}),	-- Frostsaber Gloves
+				i(15069, {["timeline"] = {REMOVED_6_0_2, ADDED_10_1_7}}),	-- Frostsaber Leggings
+				i(15068, {["timeline"] = {REMOVED_6_0_2, ADDED_10_1_7}}),	-- Frostsaber Tunic
+				i(15066, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Ironfeather Breastplate
 				i(15067),	-- Ironfeather Shoulders
 				i(15064),	-- Warbear Harness
 				i(15065),	-- Warbear Woolies
@@ -2008,8 +2006,8 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				-- Ele
 				i(8346),	-- Gauntlets of the Sea
 				i(8348),	-- Helm of Fire
-				i(15059, {["timeline"] = {REMOVED_4_0_3}}),	-- Living Breastplate
-				i(15060, {["timeline"] = {REMOVED_4_0_3}}),	-- Living Leggings
+				i(15059, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Living Breastplate
+				i(15060, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Living Leggings
 				i(15061),	-- Living Shoulders
 				applyclassicphase(PHASE_THREE, i(19163)),	-- Molten Belt
 				i(16983),	-- Molten Helm
@@ -2018,7 +2016,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				i(15057),	-- Stormshroud Pants
 				i(15058, {["timeline"] = {REMOVED_4_0_3, ADDED_9_1_0}}),	-- Stormshroud Shoulders
 				i(15053),	-- Volcanic Breastplate
-				i(15054, {["timeline"] = {REMOVED_4_0_3}}),	-- Volcanic Leggings
+				i(15054, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Volcanic Leggings
 				i(15055),	-- Volcanic Shoulders
 				-- #endif
 
@@ -2112,7 +2110,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				i(15051),	-- Black Dragonscale Shoulders
 				i(15048, {["timeline"] = {REMOVED_4_0_3}}),	-- Blue Dragonscale Breastplate
 				i(20295),	-- Blue Dragonscale Leggings
-				i(15049, {["timeline"] = {REMOVED_4_0_3}}),	-- Blue Dragonscale Shoulders
+				i(15049, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Blue Dragonscale Shoulders
 				applyclassicphase(PHASE_THREE, i(19157)),	-- Chromatic Gauntlets
 				i(8367),	-- Dragonscale Breastplate
 				applyclassicphase(PHASE_FOUR, i(20380, {	-- Dreamscale Breastplate
@@ -2354,7 +2352,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		}),
 		category(233, {	-- Bags
 			applyclassicphase(PHASE_FIVE, i(22249)),	-- Big Bag of Enchantment
-			i(5765),	-- Black Silk Pack
+			i(5765, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Black Silk Pack
 			i(14156),	-- Bottomless Bag
 			applyclassicphase(PHASE_FIVE, i(22251)),	-- Cenarion Herb Bag
 			i(21342),	-- Core Felcloth Bag

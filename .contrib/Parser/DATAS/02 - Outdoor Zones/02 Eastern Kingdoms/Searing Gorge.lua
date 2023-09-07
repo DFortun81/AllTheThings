@@ -1375,7 +1375,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				applyclassicphase(PHASE_FIVE, i(21547, {	-- Recipe: Elixir of Greater Firepower (RECIPE!)
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
 						5844,	-- Dark Iron Slaver
 						5846,	-- Dark Iron Taskmaster

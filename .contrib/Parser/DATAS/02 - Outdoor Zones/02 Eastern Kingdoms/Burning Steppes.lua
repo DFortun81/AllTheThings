@@ -1861,7 +1861,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(15732, {	-- Pattern: Volcanic Leggings (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["cr"] = 7035,	-- Firegut Brute
 				}),
 				i(13476, {	-- Recipe: Mighty Rage Potion (RECIPE!)

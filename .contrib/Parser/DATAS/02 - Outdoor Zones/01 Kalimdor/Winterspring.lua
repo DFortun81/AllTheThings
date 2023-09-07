@@ -2345,7 +2345,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #elseif AFTER 10.1.7
 					["coords"] = {
-						{ 35.4 57.0, WINTERSPRING },
+						{ 35.4, 57.0, WINTERSPRING },
 						{ 24.4, 47.6, WINTERSPRING },
 					},
 					-- #endif

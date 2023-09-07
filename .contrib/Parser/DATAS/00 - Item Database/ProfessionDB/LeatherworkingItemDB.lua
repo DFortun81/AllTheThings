@@ -217,7 +217,7 @@ i(15759, 19085, nil, DRAGONSCALE);	-- Black Dragonscale Breastplate
 i(15781, 19107, nil, DRAGONSCALE);	-- Black Dragonscale Leggings
 i(15770, 19094, nil, DRAGONSCALE);	-- Black Dragonscale Shoulders
 i(15751, 19077, nil, DRAGONSCALE);	-- Blue Dragonscale Breastplate [REMOVED: 4.0.3]
-i(15763, 19089, nil, DRAGONSCALE);	-- Blue Dragonscale Shoulders [REMOVED: 4.0.3]
+i(15763, 19089, nil, DRAGONSCALE);	-- Blue Dragonscale Shoulders [REMOVED: 4.0.3, ADDED: 10.1.7]
 i(18517, 22926, nil, DRAGONSCALE);	-- Chromatic Cloak
 i(19331, 23708, nil, DRAGONSCALE);	-- Chromatic Gauntlets
 i(20382, 24703, nil, DRAGONSCALE);	-- Dreamscale Breastplate
@@ -234,7 +234,7 @@ i(15759, 19085);	-- Black Dragonscale Breastplate
 i(15781, 19107);	-- Black Dragonscale Leggings
 i(15770, 19094);	-- Black Dragonscale Shoulders
 i(15751, 19077);	-- Blue Dragonscale Breastplate [REMOVED: 4.0.3]
-i(15763, 19089);	-- Blue Dragonscale Shoulders [REMOVED: 4.0.3]
+i(15763, 19089);	-- Blue Dragonscale Shoulders [REMOVED: 4.0.3, ADDED: 10.1.7]
 i(18517, 22926);	-- Chromatic Cloak
 i(19331, 23708);	-- Chromatic Gauntlets
 i(20382, 24703);	-- Dreamscale Breastplate
@@ -247,8 +247,8 @@ i(0, 10658, nil, ELEMENTAL);	-- Elemental Leatherworking [REMOVED: 4.0.3]
 -- #if BEFORE TBC
 i(0, 10630, nil, ELEMENTAL);	-- Gauntlets of the Sea
 i(0, 10632, nil, ELEMENTAL);	-- Helm of Fire
-i(15771, 19095, nil, ELEMENTAL);	-- Living Breastplate [REMOVED: 4.0.3]
-i(15752, 19078, nil, ELEMENTAL);	-- Living Leggings [REMOVED: 4.0.3]
+i(15771, 19095, nil, ELEMENTAL);	-- Living Breastplate [REMOVED: 4.0.3, ADDED: 10.1.7]
+i(15752, 19078, nil, ELEMENTAL);	-- Living Leggings [REMOVED: 4.0.3, ADDED: 10.1.7]
 i(15734, 19061, nil, ELEMENTAL);	-- Living Shoulders
 i(19333, 23710, nil, ELEMENTAL);	-- Molten Belt
 i(17023, 20854, nil, ELEMENTAL);	-- Molten Helm
@@ -258,13 +258,13 @@ i(21548, 26279, nil, ELEMENTAL);	-- Stormshroud Gloves
 i(15741, 19067, nil, ELEMENTAL);	-- Stormshroud Pants
 i(15764, 19090, nil, ELEMENTAL);	-- Stormshroud Shoulders
 i(15749, 19076, nil, ELEMENTAL);	-- Volcanic Breastplate
-i(15732, 19059, nil, ELEMENTAL);	-- Volcanic Leggings [REMOVED: 4.0.3]
+i(15732, 19059, nil, ELEMENTAL);	-- Volcanic Leggings [REMOVED: 4.0.3, ADDED: 10.1.7]
 i(15775, 19101, nil, ELEMENTAL);	-- Volcanic Shoulders
 -- #else
 i(0, 10630);		-- Gauntlets of the Sea
 i(0, 10632);		-- Helm of Fire
-i(15771, 19095);	-- Living Breastplate [REMOVED: 4.0.3]
-i(15752, 19078);	-- Living Leggings [REMOVED: 4.0.3]
+i(15771, 19095);	-- Living Breastplate [REMOVED: 4.0.3, ADDED: 10.1.7]
+i(15752, 19078);	-- Living Leggings [REMOVED: 4.0.3, ADDED: 10.1.7]
 i(15734, 19061);	-- Living Shoulders
 i(19333, 23710);	-- Molten Belt
 i(17023, 20854);	-- Molten Helm
@@ -274,7 +274,7 @@ i(21548, 26279);	-- Stormshroud Gloves
 i(15741, 19067);	-- Stormshroud Pants
 i(15764, 19090);	-- Stormshroud Shoulders
 i(15749, 19076);	-- Volcanic Breastplate
-i(15732, 19059);	-- Volcanic Leggings [REMOVED: 4.0.3]
+i(15732, 19059);	-- Volcanic Leggings [REMOVED: 4.0.3, ADDED: 10.1.7]
 i(15775, 19101);	-- Volcanic Shoulders
 -- #endif
 --- TRIBAL ---
@@ -291,11 +291,11 @@ i(17022, 20853, nil, TRIBAL);	-- Corehound Boots
 i(15758, 19084, nil, TRIBAL);	-- Devilsaur Gauntlets
 i(15772, 19097, nil, TRIBAL);	-- Devilsaur Leggings
 i(15740, 19066, nil, TRIBAL);	-- Frostsaber Boots
-i(15761, 19087, nil, TRIBAL);	-- Frostsaber Gloves [REMOVED: 6.0.2]
-i(15747, 19074, nil, TRIBAL);	-- Frostsaber Leggings [REMOVED: 6.0.2]
-i(15779, 19104, nil, TRIBAL);	-- Frostsaber Tunic [REMOVED: 6.0.2]
+i(15761, 19087, nil, TRIBAL);	-- Frostsaber Gloves [REMOVED: 6.0.2, ADDED: 10.1.7]
+i(15747, 19074, nil, TRIBAL);	-- Frostsaber Leggings [REMOVED: 6.0.2, ADDED: 10.1.7]
+i(15779, 19104, nil, TRIBAL);	-- Frostsaber Tunic [REMOVED: 6.0.2, ADDED: 10.1.7]
 i(18518, 22927, nil, TRIBAL);	-- Hide of the Wild
-i(15760, 19086, nil, TRIBAL);	-- Ironfeather Breastplate [REMOVED: 4.0.3]
+i(15760, 19086, nil, TRIBAL);	-- Ironfeather Breastplate [REMOVED: 4.0.3, ADDED: 10.1.7]
 i(15735, 19062, nil, TRIBAL);	-- Ironfeather Shoulders
 i(15742, 19068, nil, TRIBAL);	-- Warbear Harness
 i(15754, 19080, nil, TRIBAL);	-- Warbear Woolies [REMOVED: 1.11.1, See new version]
@@ -312,11 +312,11 @@ i(17022, 20853);	-- Corehound Boots
 i(15758, 19084);	-- Devilsaur Gauntlets
 i(15772, 19097);	-- Devilsaur Leggings
 i(15740, 19066);	-- Frostsaber Boots
-i(15761, 19087);	-- Frostsaber Gloves [REMOVED: 6.0.2]
-i(15747, 19074);	-- Frostsaber Leggings [REMOVED: 6.0.2]
-i(15779, 19104);	-- Frostsaber Tunic [REMOVED: 6.0.2]
+i(15761, 19087);	-- Frostsaber Gloves [REMOVED: 6.0.2, ADDED: 10.1.7]
+i(15747, 19074);	-- Frostsaber Leggings [REMOVED: 6.0.2, ADDED: 10.1.7]
+i(15779, 19104);	-- Frostsaber Tunic [REMOVED: 6.0.2, ADDED: 10.1.7]
 i(18518, 22927);	-- Hide of the Wild
-i(15760, 19086);	-- Ironfeather Breastplate [REMOVED: 4.0.3]
+i(15760, 19086);	-- Ironfeather Breastplate [REMOVED: 4.0.3, ADDED: 10.1.7]
 i(15735, 19062);	-- Ironfeather Shoulders
 i(15742, 19068);	-- Warbear Harness
 i(15754, 19080);	-- Warbear Woolies [REMOVED: 1.11.1, See new version]

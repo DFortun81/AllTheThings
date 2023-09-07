@@ -201,7 +201,7 @@ i(12684, 16644);	-- Thorium Bracers
 i(12694, 16653);	-- Thorium Helm
 i(12704, 16662);	-- Thorium Leggings
 i(12692, 16651);	-- Thorium Shield Spike
-i(12828, 16984);	-- Volcanic Hammer (Unknown)
+i(12828, 16984);	-- Volcanic Hammer
 i(8029, 9997);		-- Wicked Mithril Blade
 --- ARMORSMITH ---
 i(0, 9788, nil, ARMORSMITH);		-- Armorsmith [REMOVED: 4.0.3]

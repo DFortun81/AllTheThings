@@ -3873,8 +3873,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 12339,	-- Demetria <The Scarlet Oracle>
 				}),
 				-- #endif
-				i(16056, {	-- Schematic: Flawless Arcanite Rifle
-					["timeline"] = { "removed 4.0.3" },
+				i(16056, {	-- Schematic: Flawless Arcanite Rifle (RECIPE!)
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },
 					["cr"] = 8561,	-- Mossflayer Shadowhunter
 				}),
 			}),
