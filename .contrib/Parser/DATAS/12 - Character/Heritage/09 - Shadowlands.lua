@@ -4,9 +4,14 @@
 root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_9_2_5 } }, {
 	tier(SL_TIER, {
 		race(BLOODELF, {
-			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 60 Blood Elf|r with a standing of |cFFFFFFFFExalted|r with Silvermoon City.",
+			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 60 Blood Elf|r.",
 			["races"] = { BLOODELF },
-			["g"] = bubbleDown({ ["races"] = { BLOODELF }, ["minReputation"] = { 911, EXALTED } }, {
+			["g"] = bubbleDown({
+				["races"] = { BLOODELF },
+				-- #if BEFORE 10.1.0
+				["minReputation"] = { 911, EXALTED }
+				-- #endif
+			}, {
 				q(65652, {	-- Summons from the Matriarch (non-Paladin)
 					-- ["sourceQuests"] = { },
 					["provider"] = { "n", 176789 },	-- Lady Liadrin

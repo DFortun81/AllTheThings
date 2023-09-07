@@ -347,7 +347,8 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				}),
 			}),
 		}),
-		race(NIGHTELF, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
+		race(NIGHTELF, bubbleDown({ ["timeline"] = { ADDED_10_1_7 }, ["races"] = { NIGHTELF } }, {
+			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Night Elf|r.",
 			["g"] = {
 				q(75890, {	-- The Clarion Call
 					["provider"] = { "o", 405958 },	-- Sealed Kaldorei Scroll
@@ -424,15 +425,109 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				}),
 			},
 		}));
-		-- TODO: Myrhial is working on this!
-		race(UNDEAD, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
+		race(UNDEAD, bubbleDown({ ["timeline"] = { ADDED_10_1_7 }, ["races"] = { UNDEAD } }, {
+			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Undead|r who has personally done the |cFFFFD700Return to Lordaeron|r questline.",
 			["g"] = {
-				-- q(, {	--
-				-- 	["sourceQuests"] = { },	--
-				-- 	["provider"] = { "n", },	--
-				-- 	["coord"] = { , , },
-				-- }),
-				q(76530),	-- Unliving Summons
+				q(76530),	-- Unliving Summons (automatically pops up when you meet the requirements)
+				q(72854, {	-- Our Enemies Abound
+					["sourceQuests"] = { 76530 },	-- Unliving Summons
+					["provider"] = { "n", 186091 },	-- Lilian Voss
+					["coord"] = { 63.8, 68.2, TIRISFAL_GLADES },
+				}),
+				q(72855, {	-- To the Sepulcher
+					["sourceQuests"] = { 72854 },	-- Our Enemies Abound
+					["provider"] = { "n", 199761 },	-- Deathstalker Commander Belmont
+					["coord"] = { 61.2, 82.6, TIRISFAL_GLADES },
+				}),
+				q(72858, {	-- Acid Beats Paper
+					["sourceQuests"] = { 72855 },	-- To the Sepulcher
+					["provider"] = { "n", 199768 },	-- Dark Ranger Velonara
+					["coord"] = { 45.4, 42, SILVERPINE_FOREST },
+					["g"] = {
+						i(202182),	-- Acid Rifle
+					},
+				}),
+				q(72857, {	-- Boom Weed
+					["sourceQuests"] = { 72855 },	-- To the Sepulcher
+					["provider"] = { "n", 199767 },	-- Master Apothecary Faranell
+					["coord"] = { 45.5, 41.9, SILVERPINE_FOREST },
+					["g"] = {
+						i(202186),	-- Boom Weed
+					},
+				}),
+				q(72856, {	-- Nothing Like the Classic
+					["sourceQuests"] = { 72855 },	-- To the Sepulcher
+					["provider"] = { "n", 199767 },	-- Master Apothecary Faranell
+					["coord"] = { 45.5, 41.9, SILVERPINE_FOREST },
+					["g"] ={
+						i(202187),	-- Plagued Flesh
+					},
+				}),
+				q(72859, {	-- A Proper Disguise
+					["sourceQuests"] = {
+						72858,	-- Acid Beats Paper
+						72857,	-- Boom Weed
+						72856,	-- Nothing Like the Classic
+					 },
+					["provider"] = { "n", 199793 },	-- Calia Menethil
+					["coord"] = { 45.6, 41.6, SILVERPINE_FOREST },
+					["g"] = {
+						i(206929),	-- Hawlsey's Armor
+					},
+				}),
+				q(72860, {	-- Fear is Our Weapon
+					["sourceQuests"] = {
+						72858,	-- Acid Beats Paper
+						72857,	-- Boom Weed
+						72856,	-- Nothing Like the Classic
+					 },
+					["provider"] = { "n", 199792 },	-- Lilian Voss
+					["coord"] = { 45.4, 41.6, SILVERPINE_FOREST },
+				}),
+				q(72861, {	-- The Scarlet Spy
+					["sourceQuests"] = {
+						72859,	-- A Proper Disguise
+						72860,	-- Fear is Our Weapon
+					 },
+					["provider"] = { "n", 199792 },	-- Lilian Voss
+					["coord"] = { 45.4, 41.6, SILVERPINE_FOREST },
+					["g"] = {
+						i(204799),	-- Scarlet Disguise
+					},
+				}),
+				q(72862, {	-- Among Us
+					["sourceQuests"] = { 72861 },	-- The Scarlet Spy
+					["provider"] = { "n", 199806 },	-- Quartermaster Newlem
+					["coord"] = { 64, 33.5, SILVERPINE_FOREST },
+				}),
+				q(72863, {	-- The Flight of the Banshee
+					["sourceQuests"] = { 72862 },	-- Among Us
+					["provider"] = { "n", 199879 },	-- Dark Ranger Velonara
+					["coord"] = { 70.4, 18.2, SILVERPINE_FOREST },
+				}),
+				q(72864, {	-- Death to the Living
+					["sourceQuests"] = { 72863 },	-- The Flight of the Banshee
+					["provider"] = { "n", 199885 },	-- Deathstalker Commander Belmont
+					["coord"] = { 70.2, 18.1, SILVERPINE_FOREST },
+				}),
+				q(72865, {	-- This is the Hour of the Forsaken
+					["sourceQuests"] = { 72864 },	-- Death to the Living
+					["provider"] = { "n", 199893 },	-- Lilian Voss
+					["coord"] = { 66.2, 31, SILVERPINE_FOREST },
+				}),
+				q(72866, {	-- Return to Lordaeron
+					["sourceQuests"] = { 72865 },	-- This is the Hour of the Forsaken
+					["provider"] = { "n", 199893 },	-- Lilian Voss
+					["coord"] = { 65.5, 23.8, SILVERPINE_FOREST },
+				}),
+				q(72867, {	-- I Am Forsaken
+					["sourceQuests"] = { 72866 },	-- Return to Lordaeron
+					["provider"] = { "n", 199893 },	-- Lilian Voss
+					["coord"] = { 61.8, 69.4, TIRISFAL_GLADES },
+					["g"] = {
+						i(208475),	-- Forsaken Champion's Attire
+					}
+				}),
 			},
 		}));
 	}),
@@ -459,8 +554,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(77884),	-- Triggers after using 'Ensemble: Kaldorei Protector's Adornment' (itemID 208879) (spellID 421666)
 		q(77783),	-- Triggers after using 'Traditionalist's Kaldorei Blades' (itemID 208785) (spellID 421070)
 		q(76457),	-- Triggers when accepting 'Unliving Summons' (questID 76530) (spellID 414546)
-
-		--q(78021),	-- Ensemble: Forsaken Champion's Additional Attire (itemID ?) (spellID 419716)
-		--q(77654),	-- Ensemble: Forsaken Champion's Attire (itemID 208475) (spellID 422437)
+		q(78021),	-- Ensemble: Forsaken Champion's Additional Attire (itemID ?) (spellID 419716)
+		q(77654),	-- Ensemble: Forsaken Champion's Attire (itemID 208475) (spellID 422437)
 	})),
 });
