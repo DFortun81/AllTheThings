@@ -2284,8 +2284,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 6201,	-- Legashi Rogue
 				}),
 				i(13491, {	-- Recipe: Elixir of the Mongoose (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["cr"] = 6201,	-- Legashi Rogue
+					["coords"] = {
+						{ 56.6, 23.6, AZSHARA },
+						{ 53.6, 23.8, AZSHARA },
+					},
 				}),
 				i(16045, {	-- Schematic: Spellpower Goggles Xtreme Plus
 					["timeline"] = { "removed 4.0.3" },	-- Learned from trainer

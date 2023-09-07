@@ -1521,7 +1521,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(4444, {	-- Black Husk Shield
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 						i(6199, {	-- Black Widow Band
 							["timeline"] = { "removed 4.0.3" },
@@ -1536,7 +1536,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(5749, {	-- Scythe Axe
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 						i(5750, {	-- Warchief's Girdle
 							["timeline"] = { "removed 4.0.3" },

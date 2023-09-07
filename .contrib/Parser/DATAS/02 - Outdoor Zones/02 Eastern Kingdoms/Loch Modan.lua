@@ -1517,6 +1517,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 71.6, 21.0, LOCH_MODAN },
 					},
 					-- #endif
+					["groups"] = {
+						i(2821, {	-- Mo'grosh Masher
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 05.09.2023 ATT Discord
+						}),
+					},
 				}),
 				n(45404, {	-- Geoshaper Maren
 					["coord"] = { 50.0, 24.0, LOCH_MODAN },
@@ -1792,27 +1797,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					--]]
 				}),
 				i(2823, {	-- Mo'grosh Can Opener
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 1180,  -- Mo'grosh Brute
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 1180,  -- Mo'grosh Brute
 					["coords"] = {
-						{ 23.4, 35.4, LOCH_MODAN },
-						{ 25.4, 35.4, LOCH_MODAN },
+						{ 79.6, 16.0, LOCH_MODAN },
+						{ 76.6, 16.0, LOCH_MODAN },
 					},
 					-- #elseif AFTER 10.1.7
 					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
+						44760,	-- Mo'grosh Earthbender
+						44758,	-- Mo'grosh Darkmauler
 					},
 					["coords"] = {
-						{ 23.4, 35.4, LOCH_MODAN },
-						{ 17.8, 33.4, LOCH_MODAN },
-						{ 19.8, 46.8, LOCH_MODAN },
+						{ 71.4, 21.2, LOCH_MODAN },
+						{ 68.8, 22.4, LOCH_MODAN },
+						{ 68.8, 25.4, LOCH_MODAN },
 					},
 					-- #endif
-					--]]
 				}),
 				i(2821, {	-- Mo'grosh Masher
 					["timeline"] = { "removed 4.0.3" },
@@ -1820,48 +1822,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						14267,  -- Emogg the Crusher
 						1179,  -- Mo'grosh Enforcer
 					},
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, LOCH_MODAN },
-						{ 25.4, 35.4, LOCH_MODAN },
-					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, LOCH_MODAN },
-						{ 17.8, 33.4, LOCH_MODAN },
-						{ 19.8, 46.8, LOCH_MODAN },
+						{ 74.2 28.4, LOCH_MODAN },
+						{ 69.4 22.2, LOCH_MODAN },
+						{ 64.4 20.6, LOCH_MODAN },
 					},
 					-- #endif
-					--]]
 				}),
 				i(2822, {	-- Mo'grosh Toothpick
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 1178,  -- Mo'grosh Ogre
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 1178,  -- Mo'grosh Ogre
 					["coords"] = {
-						{ 23.4, 35.4, LOCH_MODAN },
-						{ 25.4, 35.4, LOCH_MODAN },
+						{ 79.6, 16.0, LOCH_MODAN },
+						{ 76.6, 16.0, LOCH_MODAN },
 					},
 					-- #elseif AFTER 10.1.7
 					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
+						44760,	-- Mo'grosh Earthbender
+						44758,	-- Mo'grosh Darkmauler
 					},
 					["coords"] = {
-						{ 23.4, 35.4, LOCH_MODAN },
-						{ 17.8, 33.4, LOCH_MODAN },
-						{ 19.8, 46.8, LOCH_MODAN },
+						{ 71.4, 21.2, LOCH_MODAN },
+						{ 68.8, 22.4, LOCH_MODAN },
+						{ 68.8, 25.4, LOCH_MODAN },
 					},
 					-- #endif
-					--]]
 				}),
 				i(4949, {	-- Orcish Cleaver
 					["timeline"] = { "removed 4.0.3" },
@@ -1887,56 +1874,45 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					--]]
 				}),
 				i(2283, {	-- Rat Cloth Belt
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1177,  -- Tunnel Rat Surveyor
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, LOCH_MODAN },
-						{ 25.4, 35.4, LOCH_MODAN },
+						{ 35.2, 27.6, LOCH_MODAN },
+						{ 35.2, 27.6, LOCH_MODAN },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
 					["coords"] = {
-						{ 23.4, 35.4, LOCH_MODAN },
-						{ 17.8, 33.4, LOCH_MODAN },
-						{ 19.8, 46.8, LOCH_MODAN },
+						{ 36.8, 16.6, LOCH_MODAN },
+						{ 32.0, 12.0, LOCH_MODAN },
+						{ 29.6, 15.0, LOCH_MODAN },
 					},
 					-- #endif
-					--]]
 				}),
 				i(2700, {	-- Recipe: Succulent Pork Ribs (RECIPE!)
 					["description"] = "Can drop from any mob in the zone.",
 				}),
 				i(2281, {	-- Rodentia Flint Axe
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["crs"] = {
 						1176,  -- Tunnel Rat Forager
 						1202,  -- Tunnel Rat Kobold
 					},
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, LOCH_MODAN },
-						{ 25.4, 35.4, LOCH_MODAN },
+						{ 38.4, 16.0, LOCH_MODAN },
+						{ 32.6, 26.4, LOCH_MODAN },
+						{ 32.2, 14.6, LOCH_MODAN },
+						{ 27.6, 44.8, LOCH_MODAN },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					["cr"] = 1176,  -- Tunnel Rat Forager
 					["coords"] = {
-						{ 23.4, 35.4, LOCH_MODAN },
-						{ 17.8, 33.4, LOCH_MODAN },
-						{ 19.8, 46.8, LOCH_MODAN },
+						{ 38.4, 16.0, LOCH_MODAN },
+						{ 32.6, 26.4, LOCH_MODAN },
+						{ 32.2, 14.6, LOCH_MODAN },
 					},
 					-- #endif
-					--]]
 				}),
 				i(2282, {	-- Rodentia Shortsword
 					["timeline"] = { "removed 4.0.3" },
@@ -1988,27 +1964,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					--]]
 				}),
 				i(2265, {	-- Stonesplinter Axe
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 1163,  -- Stonesplinter Skullthumper
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 1163,  -- Stonesplinter Skullthumper
 					["coords"] = {
-						{ 23.4, 35.4, LOCH_MODAN },
-						{ 25.4, 35.4, LOCH_MODAN },
+						{ 51.6 24.6, LOCH_MODAN },
+						{ 48.8 29.6, LOCH_MODAN },
+						{ 36.8 84.8, LOCH_MODAN },
+						{ 29.8 84.0, LOCH_MODAN },
 					},
 					-- #elseif AFTER 10.1.7
 					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
+						1161,	-- Stonesplinter Trogg
+						1162,	-- Stonesplinter Scout
 					},
 					["coords"] = {
-						{ 23.4, 35.4, LOCH_MODAN },
-						{ 17.8, 33.4, LOCH_MODAN },
-						{ 19.8, 46.8, LOCH_MODAN },
+						{ 31.6, 77.0, LOCH_MODAN },
+						{ 31.4, 80.6, LOCH_MODAN },
+						{ 29.6, 80.8, LOCH_MODAN },
 					},
 					-- #endif
-					--]]
 				}),
 				i(2268, {	-- Stonesplinter Blade
 					["crs"] = {
@@ -2042,27 +2017,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					--]]
 				}),
 				i(2267, {	-- Stonesplinter Mace
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1197,  -- Stonesplinter Shaman
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, LOCH_MODAN },
-						{ 25.4, 35.4, LOCH_MODAN },
+						{ 54.6, 26.8, LOCH_MODAN },
+						{ 37.4, 92.2, LOCH_MODAN },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
 					["coords"] = {
-						{ 23.4, 35.4, LOCH_MODAN },
-						{ 17.8, 33.4, LOCH_MODAN },
-						{ 19.8, 46.8, LOCH_MODAN },
+						{ 35.2, 65.6, LOCH_MODAN },
+						{ 35.6, 60.4, LOCH_MODAN },
 					},
 					-- #endif
-					--]]
 				}),
 				i(5109, {	-- Stonesplinter Rags
 					["crs"] = {
