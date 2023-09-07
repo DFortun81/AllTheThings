@@ -687,7 +687,6 @@ root(ROOTS.Unsorted, {
 			i(205223),	-- Ancient Centaur Axe
 			i(205224),	-- Just a Rock
 			i(205328),	-- Earthen Emissary's Edge
-			i(208099),	-- Quickened Sand
 			i(208182),	-- Bronze Timepiece
 			i(208546),	-- Explorer's Rose-Tinted Glasses
 			i(208547),	-- Explorer's Reading Spectacles
@@ -719,12 +718,9 @@ root(ROOTS.Unsorted, {
 			i(209870),	-- Surge Catcher
 			i(209997),	-- Distilled Knowledge of Timeways
 			--
-			i(208207),	-- Morchie's Timeworn Shoulderpads
 			i(208485),	-- The Scarlet Key
-			i(208600),	-- Chromie's Timespun Shoulderpads
 			i(209065),	-- Forsaken Champion's Tabard
 			i(209068),	-- Queen Loyalist's Tabard
-			i(210024),	-- Ensemble: Temporal Burdens
 			i(210054),	-- Forsaken Champion's Vest
 			i(210062),	-- Ironbound Satchel of Helpful Goods
 			i(210063),	-- Invader's Satchel of Helpful Goods

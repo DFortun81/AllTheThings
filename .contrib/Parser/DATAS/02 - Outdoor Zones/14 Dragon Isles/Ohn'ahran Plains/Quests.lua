@@ -1285,7 +1285,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { AD
 	m(OHNAHRAN_PLAINS, {
 		q(73701),	-- triggered during 'Unwelcome Outsider' (questID 66021) (spellID 399693)
 		q(71203),	-- daily lockout for 'To Tame A Thunderspine' series
-		q(70724),	-- triggered during 'The Calm Before the Storm'
+		q(70724),	-- triggered during 'The Calm Before the Storm' (spellID 419065)
 		q(70749),	-- triggered when looting the talisman off windsage garuman (spellID 387958)
 		q(70505),	-- triggered when talking to Tigari Khan after looting the talisman off windsage garuman (spellID 386172)
 		q(72064),	-- triggered when receiving toy from Yennu

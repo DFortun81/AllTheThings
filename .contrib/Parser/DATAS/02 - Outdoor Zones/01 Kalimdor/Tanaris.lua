@@ -4907,6 +4907,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "n", 207634 },	-- Eternus
 					["coord"] = { 37.9, 83.2, TANARIS },
 					["timeline"] = { ADDED_10_1_7 },
+					["g"] = {
+						i(208099),	-- Quickened Sand
+					},
 				}),
 				q(76421, {	-- The Fate We Make
 					["sourceQuests"] = { 76420 },	-- Butterfly Effects
@@ -4920,7 +4923,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 37.7, 83.2, TANARIS },
 					["timeline"] = { ADDED_10_1_7 },
 					["g"] = {
-						i(210024),	-- Ensemble: Temporal Burdens
+						i(210024, {	-- Ensemble: Temporal Burdens
+							i(208207),	-- Morchie's Timeworn Shoulderpads
+							i(208600),	-- Chromie's Timespun Shoulderpads
+						}),
 					},
 				}),
 				-- #endif

@@ -1200,5 +1200,12 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(75191),    -- Solicited Opinions question 1 answer 1
 		-- Stay awhile Listening
 		q(73960),	-- (spellID 406027)
+		-- 10.1.7
+		q(77422),	-- qID 76407 - Timeport to Tanaris (spellID 414260)
+		q(77612),	-- Dialog option 1 during qID 76421 - (spellID 419463 - Option 1 [DNT])
+		q(77613),	-- Dialog option 2 during qID 76421 - <Well, your way hasn't worked so far...> - (spellID 419464 - Option 2 [DNT])
+		q(77614),	-- Dialog option 3 during qID 76421 - (spellID 419466 - Option 3 [DNT])
+		q(78173),	-- `Ensemble: Temporal Burdens` (itemID 210024) (spellID 424097)
+		q(78191),	-- `Ensemble: Temporal Burdens` (itemID 210024) (spellID 424247)
 	}),
 }));

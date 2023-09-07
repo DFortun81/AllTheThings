@@ -453,11 +453,14 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(72471),	-- Choosing Thega Graveblade (Shattered Hand clan) during 'The Blessing of the Clan' (questID 72467) (spellID 398674)
 	})),
 	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
-		q(76458),	-- Triggers after accepting quest 'The Clarion Call' (questID 75890)
-		q(76556),	-- Triggers after handing in quest 'Ancient Curses' (questID 75891)
-		q(78022),	-- Triggers after talking to Maiev Stormsong during quest 'Stepping into the Shadows' (questID 76203)
-		q(77884),	-- Triggers after using 'Ensemble: Kaldorei Protector's Adornment' (itemID 208879)
-		q(77783),	-- Triggers after using 'Traditionalist's Kaldorei Blades' (itemID 208785)
-		q(76457),	-- Triggers when accepting 'Unliving Summons' (questID 76530)
+		q(76458),	-- Triggers after accepting quest 'The Clarion Call' (questID 75890) (spellID 414550)
+		q(76556),	-- Triggers after handing in quest 'Ancient Curses' (questID 75891) (spellID 415206)
+		q(78022),	-- Triggers after talking to Maiev Stormsong during quest 'Stepping into the Shadows' (questID 76203) (spellID 422467)
+		q(77884),	-- Triggers after using 'Ensemble: Kaldorei Protector's Adornment' (itemID 208879) (spellID 421666)
+		q(77783),	-- Triggers after using 'Traditionalist's Kaldorei Blades' (itemID 208785) (spellID 421070)
+		q(76457),	-- Triggers when accepting 'Unliving Summons' (questID 76530) (spellID 414546)
+
+		--q(78021),	-- Ensemble: Forsaken Champion's Additional Attire (itemID ?) (spellID 419716)
+		--q(77654),	-- Ensemble: Forsaken Champion's Attire (itemID 208475) (spellID 422437)
 	})),
 });
