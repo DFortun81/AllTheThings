@@ -1468,7 +1468,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 						}),
 						i(1215, {	-- Support Girdle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1536,10 +1536,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(6197, {	-- Loch Croc Hide Vest
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 						i(3563, {	-- Seafarer's Pantaloons
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1915,30 +1915,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(2282, {	-- Rodentia Shortsword
-					["timeline"] = { "removed 4.0.3" },
 					["crs"] = {
 						1173,  -- Tunnel Rat Scout
 						1172,  -- Tunnel Rat Vermin
 					},
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, LOCH_MODAN },
-						{ 25.4, 35.4, LOCH_MODAN },
+						{ 28.6 45.0, LOCH_MODAN },
+						{ 25.0 32.6, LOCH_MODAN },
+						{ 37.4 16.6, LOCH_MODAN },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
 					["coords"] = {
-						{ 23.4, 35.4, LOCH_MODAN },
-						{ 17.8, 33.4, LOCH_MODAN },
+						{ 28.2, 36.0, LOCH_MODAN },
+						{ 25.2, 26.2, LOCH_MODAN },
 						{ 19.8, 46.8, LOCH_MODAN },
 					},
 					-- #endif
-					--]]
 				}),
 				i(2274, {	-- Sapper's Gloves
 					["timeline"] = { "removed 4.0.3" },
@@ -1994,27 +1988,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(2266, {	-- Stonesplinter Dagger
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 1166,  -- Stonesplinter Seer
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 1166,  -- Stonesplinter Seer
 					["coords"] = {
-						{ 23.4, 35.4, LOCH_MODAN },
-						{ 25.4, 35.4, LOCH_MODAN },
+						{ 36.2, 86.0, LOCH_MODAN },
+						{ 30.0, 83.8, LOCH_MODAN },
+						{ 51.2, 23.6, LOCH_MODAN },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					["cr"] = 1162,  -- Stonesplinter Scout
 					["coords"] = {
-						{ 23.4, 35.4, LOCH_MODAN },
-						{ 17.8, 33.4, LOCH_MODAN },
-						{ 19.8, 46.8, LOCH_MODAN },
+						{ 40.2, 72.0, LOCH_MODAN },
+						{ 32.6, 71.8, LOCH_MODAN },
+						{ 29.4, 81.8, LOCH_MODAN },
 					},
 					-- #endif
-					--]]
 				}),
 				i(2267, {	-- Stonesplinter Mace
 					["cr"] = 1197,  -- Stonesplinter Shaman
