@@ -319,6 +319,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 60.9, 40.0, VALDRAKKEN },
 				["timeline"] = { ADDED_10_1_7 },
 			}),
+			------ Tyr Part 3 ------
+			q(75632, {	-- A Dislocated Disc
+				--["sourceQuests"] = { ? },	-- ?
+				["provider"] = { "n", 187669 },	-- Nozdormu
+				["coord"] = { 60.4, 58.9, VALDRAKKEN },
+				["timeline"] = { ADDED_10_1_7 },
+			}),
 			------ Miscellaneous ------
 			q(67007, {	-- Archival Assistance
 				["provider"] = { "o", 381687 },	-- Discarded Note

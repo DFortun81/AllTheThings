@@ -5492,6 +5492,7 @@ _.ObjectNames = {
 	[403962] = "Omarion's Second Handbook",
 	[404242] = "Oil Soaked Book",
 	[404314] = "Chipped Stone Tabled",
+	[404319] = "Time Lost Fragment",
 	[404432] = "Bload Soaked Book",
 	[404480] = "Ragged Mantid Sword",
 	[404492] = "Gilded Vase",

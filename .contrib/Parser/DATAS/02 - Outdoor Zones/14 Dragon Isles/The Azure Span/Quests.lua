@@ -1501,7 +1501,55 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["provider"] = { "n", 207820 },	-- Scalecommander Emberthal
 				["coord"] = { 74.8, 55.0, THE_AZURE_SPAN },
 				["timeline"] = { ADDED_10_1_7 },
-		}),
+			}),
+			------ Tyr Part 3 ------
+			q(76171, {	-- Walking the Path of Tyr
+				["sourceQuests"] = { 75634 },	-- Reforging the Tyr`s Guard
+				["provider"] = { "n", 206221 },	-- Travard
+				["coord"] = { 17.5, 31.5, THE_AZURE_SPAN },
+				["timeline"] = { ADDED_10_1_7 },
+				["g"] = {
+					i(208198),	-- Tyr's Guard Bulwark
+				},
+			}),
+			q(75950, {	-- An Exemplar of Order: Hadwin
+				["sourceQuests"] = { 76171 },	-- Walking the Path of Tyr
+				["provider"] = { "n", 204590 },	-- Hadwin
+				["coord"] = { 17.6, 31.4, THE_AZURE_SPAN },
+				["timeline"] = { ADDED_10_1_7 },
+			}),
+			q(75951, {	-- An Exemplar of Order: Talthis
+				["sourceQuests"] = { 76171 },	-- Walking the Path of Tyr
+				["provider"] = { "n", 204593 },	-- Talthis
+				["coord"] = { 17.5, 31.4, THE_AZURE_SPAN },
+				["timeline"] = { ADDED_10_1_7 },
+				["g"] = {
+					i(206204),	-- Recovered Tuskarr Relic
+				},
+			}),
+			q(75952, {	-- An Exemplar of Order: Nolaki
+				["sourceQuests"] = { 76171 },	-- Walking the Path of Tyr
+				["provider"] = { "n", 204592 },	-- Nolaki
+				["coord"] = { 17.5, 31.4, THE_AZURE_SPAN },
+				["timeline"] = { ADDED_10_1_7 },
+			}),
+			q(75953, {	-- An Exemplar of Order: Valunei
+				["sourceQuests"] = { 76171 },	-- Walking the Path of Tyr
+				["provider"] = { "n", 204591 },	-- Valunei
+				["coord"] = { 17.6, 31.3, THE_AZURE_SPAN },
+				["timeline"] = { ADDED_10_1_7 },
+			}),
+			q(75635, {	-- For Tyr!
+				["sourceQuests"] = { 
+					75950,	-- An Exemplar of Order: Hadwin
+					75951,	-- An Exemplar of Order: Talthis
+					75952,	-- An Exemplar of Order: Nolaki
+					75953,	-- An Exemplar of Order: Valunei
+					},
+				["provider"] = { "n", 206221 },	-- Travard
+				["coord"] = { 17.6, 31.5, THE_AZURE_SPAN },
+				["timeline"] = { ADDED_10_1_7 },
+			}),
 			n(BONUS_OBJECTIVES, {
 				q(72358, {	-- Cascade
 					["provider"] = { "n", 186962 },	-- Cascade

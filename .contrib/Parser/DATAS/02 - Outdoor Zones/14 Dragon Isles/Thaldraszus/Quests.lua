@@ -439,6 +439,46 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 65.5, 80.2, THALDRASZUS },
 					["timeline"] = { ADDED_10_1_7 },
 				}),
+				------ Tyr Part 3 ------
+				q(75633, {	-- We Have the Technology
+					["sourceQuests"] = { 75632 },	-- A Dislocated Disc
+					["provider"] = { "n", 204574 },	-- Etenrus
+					["coord"] = { 60.4, 58.9, THALDRASZUS },
+					["timeline"] = { ADDED_10_1_7 },
+				}),
+				q(75634, {	-- Reforging the Tyr`s Guard
+					["sourceQuests"] = { 75633 },	-- We Have the Technology
+					["provider"] = { "n", 204577 },	-- Travard
+					["coord"] = { 60.4, 58.9, THALDRASZUS },
+					["timeline"] = { ADDED_10_1_7 },
+				}),
+				q(76176, {	-- First Steps
+					["sourceQuests"] = { 75635 },	-- For Tyr!
+					["provider"] = { "n", 208968 },	-- Travard
+					["coord"] = { 59.9, 58.7, THALDRASZUS },
+					["timeline"] = { ADDED_10_1_7 },
+				}),
+				q(75636, {	-- Tyrangulation
+					["sourceQuests"] = { 76176 },	-- First Steps
+					["provider"] = { "n", 204667 },	-- Etenrus
+					["coord"] = { 60.3, 58.8, THALDRASZUS },
+					["timeline"] = { ADDED_10_1_7 },
+				}),
+				q(75637, {	-- The Final Beacon
+					["sourceQuests"] = { 75636 },	-- Tyrangulation
+					["provider"] = { "n", 206682 },	-- Travard
+					["coord"] = { 60.3, 58.7, THALDRASZUS },
+					["timeline"] = { ADDED_10_1_7 },
+				}),
+				q(75638, {	-- Dislocated Disc Located
+					["sourceQuests"] = { 75637 },	-- The Final Beacon
+					["provider"] = { "n", 204605 },	-- Travard
+					["coord"] = { 60.4, 58.9, THALDRASZUS },
+					["timeline"] = { ADDED_10_1_7 },
+					["g"] = {
+						i(208200),	-- Dragon Isles Drakes: Gilded Armor
+					},
+				}),
 			}),
 			header(HEADERS.AchCriteria, 16398.01, {	-- Gelikyr Overlook
 				q(71179, {	-- Look to the Overlook
@@ -1201,11 +1241,20 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		-- Stay awhile Listening
 		q(73960),	-- (spellID 406027)
 		-- 10.1.7
+		-- Nozdormu & Eternus
 		q(77422),	-- qID 76407 - Timeport to Tanaris (spellID 414260)
 		q(77612),	-- Dialog option 1 during qID 76421 - (spellID 419463 - Option 1 [DNT])
 		q(77613),	-- Dialog option 2 during qID 76421 - <Well, your way hasn't worked so far...> - (spellID 419464 - Option 2 [DNT])
 		q(77614),	-- Dialog option 3 during qID 76421 - (spellID 419466 - Option 3 [DNT])
 		q(78173),	-- `Ensemble: Temporal Burdens` (itemID 210024) (spellID 424097)
 		q(78191),	-- `Ensemble: Temporal Burdens` (itemID 210024) (spellID 424247)
+		-- Tyr pt.3
+		q(76177),	-- RP after finishing `Dislocated Disc Located`(questID 75638)
+		-- Dragon Isles Drakes: Gilded Armor
+		q(69167),	-- 
+		q(69296),	-- 
+		q(69550),	-- 
+		q(69786),	-- 
+		q(73786),	-- 
 	}),
 }));

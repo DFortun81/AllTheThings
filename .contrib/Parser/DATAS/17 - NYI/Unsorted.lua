@@ -653,7 +653,6 @@ root(ROOTS.Unsorted, {
 				i(208515),	-- Forsaken Champion's Rotcowl
 			}),
 			n(DRAKEWATCHER_MANUSCRIPTS, {
-				i(208200),	-- Dragon Isles Drakes: Gilded Armor
 				i(208550),	-- Dragon Isles Drakes: White Scales
 				i(208859),	-- Cliffside Wylderdrake: Day of the Dead Armor
 				i(208858),	-- Highland Drake: Pirates' Day Armor
