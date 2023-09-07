@@ -230,8 +230,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 71.43, 64.45, 202 },
 							["races"] = { WORGEN },
 							["classes"] = { WARLOCK },
+							["sourceQuestNumRequired"] = 1,
 							["sourceQuests"] = {
-								14274,	-- Corruption
+								14274,	-- Corruption -- appears to be removed from retail
 								14273,	-- Shady Associates
 							},
 						}),
