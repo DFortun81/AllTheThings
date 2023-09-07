@@ -32,7 +32,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		--q(63389),	-- Person in Errors doesnt really remember
 		--q(63390), -- Person in Errors doesnt really remember
 		--q(63391), -- Person in Errors doesnt really remember
-		--q(55628),	-- Killing Paol Pondwader(Second ID?) / 'A Sound Defense' Quest / after killing (Rare) Beehemoth in Stormsong Valley / triggering this, am doing WQ "Too Much To Bear" / Trig Sound and doing Azerite Mining WQ
 		--q(54324),	-- Triggered in BfA
 		--q(54317),	-- BfA Alliance Stormsong "Invasion"
 		--q(62521),	-- unknown tracking
@@ -300,7 +299,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(55241),	-- closing the second to last rift while on #55214, "Seam Stress"
 		q(55237),	-- closing the last rift while on #55214, "Seam Stress"
 		q(50657),	-- not sure if this is part of the Vulpera allied race questline?  i turned in #53907, picked up #53908, learned the "Nomi's Vintage" toy, refreshed (nothing), went and took the portal from the vineyard to shal'aran, and this popped.  it popped immediately when i clicked the portal
-		q(55628),	-- Tracking Quest killed Mala'kili/Rohn'kor
 		q(54705),	-- Using 7th Legion Scouting Map
 		q(52969),	-- Going through the Stormwind Portal to Stormshield while on the WoD timeline in Chromie time
 		--q(55464),	-- Triggered with Tandred Proudmoore conversation?

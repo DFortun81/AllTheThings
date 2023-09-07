@@ -355,6 +355,7 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(78200),	-- completed 'An Idol in Hand' (questID 77304) / finished 'Tools of the Trade' (achievementID 18645)
 	q(77524),	-- completed 'Using the Idol' (questID 76456)
 	q(77854),	-- Upon completion of Into the Sands (questID 76509)
+	q(77421),	-- accepted 'Out of the Sands' (questID 77305)
 	q(76508),	-- Upon completion of Out of the Sands (questID 77305)
 
 	-- TODO: Someone add these under Community Rumors achievement in a suitable structure please

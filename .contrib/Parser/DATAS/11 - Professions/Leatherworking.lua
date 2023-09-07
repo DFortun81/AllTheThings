@@ -1266,6 +1266,12 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 	})),
 })));
 
+root(ROOTS.HiddenQuestTriggers, {
+	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {
+		q(55628),	-- Tracking Quest - 15 minutes timer for recieving 'Spirit of the Bested' from other rare kill again (itemID 168138) (resets every 00,15,30,45 minut of hour)
+	})),
+});
+
 -- #if ANYCLASSIC
 local applytraining = function(g)
 	-- #if NOT ANYCLASSIC
