@@ -2152,27 +2152,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					--]]
 				}),
 				i(2021, {	-- Green Carapace Shield
-					["timeline"] = { "removed 4.0.3" },	-- Blue version seen on AH 4/23/2019 so this may be dropping again, but don't know for sure.
-					["cr"] = 569,	-- Green Recluse
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 569,	-- Green Recluse
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 25.4, 35.4, DUSKWOOD },
+						{ 72.8 21.6, DUSKWOOD },
+						{ 56.6 20.0, DUSKWOOD },
+						{ 17.0 70.6, DUSKWOOD },
+						{ 12.6 51.8, DUSKWOOD },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					["cr"] = 949,	-- Carrion Recluse
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 17.8, 33.4, DUSKWOOD },
-						{ 19.8, 46.8, DUSKWOOD },
+						{ 23.6, 36.6, DUSKWOOD },
+						{ 23.6, 36.6, DUSKWOOD },
+						{ 17.0, 38.8, DUSKWOOD },
 					},
 					-- #endif
-					--]]
 				}),
 				i(2017, {	-- Glowing Leather Bracers
 					["timeline"] = { "removed 4.0.3" },
@@ -2409,27 +2405,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					--]]
 				}),
 				i(899, {	-- Venom Web Fang
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 217,	-- Venom Web Spider
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 25.4, 35.4, DUSKWOOD },
+						{ 28.8, 29.6, DUSKWOOD },
+						{ 18.8, 27.8, DUSKWOOD },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 17.8, 33.4, DUSKWOOD },
-						{ 19.8, 46.8, DUSKWOOD },
+						{ 43.0, 20.4, DUSKWOOD },
+						{ 58.6, 20.6, DUSKWOOD },
+						{ 67.6, 48.0, DUSKWOOD },
+						{ 72.6, 24.6, DUSKWOOD },
+						{ 79.0, 21.8, DUSKWOOD },
 					},
 					-- #endif
-					--]]
 				}),
 				i(920, {	-- Wicked Spiked Mace
 					["timeline"] = { "removed 4.0.3" },
