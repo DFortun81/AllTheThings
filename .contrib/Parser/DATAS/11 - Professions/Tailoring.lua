@@ -279,13 +279,6 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 					r(292946),	-- Recipe: Synchronous Thread (RECIPE!)
 				},
 			})),
-			q(50123, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- A Recipe For the Ages [A]
-				["description"] = "Requires 150 Kul Tiran Blacksmithing.",
-				["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
-				["coord"] = { 73.6, 8.6, BORALUS },
-				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_8_1_5 },
-			})),
 		}),
 	})),
 	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
