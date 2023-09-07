@@ -19,9 +19,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 		}),
 
 
-		ach(17499, {	-- Renowned Tailoring Specialist
-			["timeline"] = { ADDED_10_0_7 },
-			["u"] = REMOVED_FROM_GAME,
-		}),
+
 	}),
 }));

@@ -76,9 +76,18 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			}),
 		}),
 	})),
-	tier(CLASSIC_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
-		n(ACHIEVEMENTS, {
+	tier(CLASSIC_TIER, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
 			ach(17498, {	-- Renowned Leatherworking Specialist
+				["altQuests"] = {
+					5141,	-- Dragonscale Leatherworking [A]
+					5145,	-- Dragonscale Leatherworking [H]
+					5144,	-- Elemental Leatherworking [A]
+					5146,	-- Elemental Leatherworking [H]
+					5143,	-- Tribal Leatherworking [A]
+					5148,	-- Tribal Leatherworking [H]
+				},
+				["sourceQuestNumRequired"] = 1,
 				["timeline"] = { ADDED_10_0_7, REMOVED_10_0_7 },
 			}),
 			ach(18899, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- You Saw Nothing
@@ -89,10 +98,100 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 					["provider"] = { "i", 18258 },	-- Gordok Ogre Suit
 				}),
 			})),
-		}),
-	})),
-	tier(TBC_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
-		n(ACHIEVEMENTS, {
+		})),
+		n(QUESTS, sharedDataSelf({
+			["timeline"] = { REMOVED_4_0_3 },
+			["lvl"] = 40,
+		}, {
+			q(5141, {	-- Dragonscale Leatherworking [A]
+				["qg"] = 7866,	-- Peter Galen
+				["altQuests"] = {
+					5144,	-- Elemental Leatherworking
+					5143,	-- Tribal Leatherworking
+				},
+				["coord"] = { 37.4, 65.4, AZSHARA },
+
+				["races"] = ALLIANCE_ONLY,
+				["cost"] = {
+					{ "i", 8203, 2 },	-- Tough Scorpid Breastplate
+					{ "i", 8204, 2 },	-- Tough Scorpid Gloves
+					{ "i", 8165, 10 },	-- Worn Dragonscale
+				},
+			}),
+			q(5145, {	-- Dragonscale Leatherworking [H]
+				["qg"] = 7867,	-- Thorkaf Dragoneye
+				["altQuests"] = {
+					5146,	-- Elemental Leatherworking
+					5148,	-- Tribal Leatherworking
+				},
+				["coord"] = { 62.6, 57.4, BADLANDS },
+				["races"] = HORDE_ONLY,
+				["cost"] = {
+					{ "i", 8203, 2 },	-- Tough Scorpid Breastplate
+					{ "i", 8204, 2 },	-- Tough Scorpid Gloves
+					{ "i", 8165, 10 },	-- Worn Dragonscale
+				},
+			}),
+			q(5144, {	-- Elemental Leatherworking [A]
+				["qg"] = 7868,	-- Sarah Tanner
+				["altQuests"] = {
+					5141,	-- Dragonscale Leatherworking
+					5143,	-- Tribal Leatherworking
+				},
+				["coord"] = { 63.6, 76.0, SEARING_GORGE },
+				["races"] = ALLIANCE_ONLY,
+				["cost"] = {
+					{ "i", 7081, 2 },	-- Breath of Wind
+					{ "i", 7075, 2 },	-- Core of Earth
+					{ "i", 7079, 2 },	-- Globe of Water
+					{ "i", 7077, 2 },	-- Heart of Fire
+				},
+			}),
+			q(5146, {	-- Elemental Leatherworking [H]
+				["qg"] = 7869,	-- Brumn Winterhoof
+				["altQuests"] = {
+					5145,	-- Dragonscale Leatherworking
+					5148,	-- Tribal Leatherworking
+				},
+				["coord"] = { 28.2, 45.0, ARATHI_HIGHLANDS },
+				["races"] = HORDE_ONLY,
+				["cost"] = {
+					{ "i", 7081, 2 },	-- Breath of Wind
+					{ "i", 7075, 2 },	-- Core of Earth
+					{ "i", 7079, 2 },	-- Globe of Water
+					{ "i", 7077, 2 },	-- Heart of Fire
+				},
+			}),
+			q(5143, {	-- Tribal Leatherworking [A]
+				["qg"] = 7870,	-- Caryssia Moonhunter
+				["altQuests"] = {
+					5141,	-- Dragonscale Leatherworking
+					5144,	-- Elemental Leatherworking
+				},
+				["coord"] = { 89.4, 46.5, FERALAS },
+				["races"] = ALLIANCE_ONLY,
+				["cost"] = {
+					{ "i", 8214, 1 },	-- Wild Leather Helmet
+					{ "i", 8211, 1 },	-- Wild Leather Vest
+				},
+			}),
+			q(5148, {	-- Tribal Leatherworking [H]
+				["qg"] = 7871,	-- Se'Jib
+				["altQuests"] = {
+					5145,	-- Dragonscale Leatherworking
+					5146,	-- Elemental Leatherworking
+				},
+				["coord"] = { 36.6, 34.2, STRANGLETHORN_VALE },
+				["races"] = HORDE_ONLY,
+				["cost"] = {
+					{ "i", 8214, 1 },	-- Wild Leather Helmet
+					{ "i", 8211, 1 },	-- Wild Leather Vest
+				},
+			}),
+		})),
+	}),
+	tier(TBC_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_5 } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18894, {	-- Free Stylin'
 				crit(1, {	-- Stylin' Purple Hat
 					["provider"] = { "i", 25680 },	-- Stylin' Purple Hat
@@ -107,7 +206,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 					["provider"] = { "i", 25682 },	-- Stylin' Jungle Hat
 				}),
 			}),
-		}),
+		})),
 	})),
 	tier(WOD_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 		n(QUESTS, {
@@ -221,13 +320,13 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 					i(136539),	-- Tanned Stonehide Leather (QI!)
 				},
 			}),
-			q(40200, {	-- Battle Bonds (A)
+			q(40200, {	-- Battle Bonds [A]
 				["sourceQuests"] = { 41889 },	-- Dazed of the Past
 				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(40241, {	-- Battle Bonds (H)
+			q(40241, {	-- Battle Bonds [H]
 				["sourceQuests"] = { 41889 },	-- Dazed of the Past
 				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
@@ -235,8 +334,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			}),
 			q(40201,  {	-- Playthings
 				["sourceQuests"] = {
-					40200,	-- Battle Bonds (A)
-					40241,	-- Battle Bonds (H)
+					40200,	-- Battle Bonds [A]
+					40241,	-- Battle Bonds [H]
 				},
 				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
@@ -762,7 +861,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
-			q(55228, {	-- The Audition (A)
+			q(55228, {	-- The Audition [A]
 				["sourceQuests"] = { 55227 },	-- The Aeonian Artisan
 				["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
 				["coord"] = { 69.6, 29.8, BORALUS },
@@ -770,7 +869,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["cost"] = {{ "i", 154167, 3 }},	-- 3x Drums of the Maelstrom
 				["timeline"] = { ADDED_8_1_5 },
 			}),
-			q(55216, {	-- The Audition (H)
+			q(55216, {	-- The Audition [H]
 				["sourceQuests"] = { 53995 },	-- The Tauren Tanner
 				["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
 				["coord"] = { 53.4, 92.5, DAZARALOR },
@@ -779,14 +878,14 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(55229, {	-- Repaying the Debt
-				["sourceQuests"] = { 55228 },	-- The Audition (A)
+				["sourceQuests"] = { 55228 },	-- The Audition [A]
 				["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
 				["coord"] = { 69.6, 29.8, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(55217, {	-- Repaying the Life Debt
-				["sourceQuests"] = { 55216 },	-- The Audition (H)
+				["sourceQuests"] = { 55216 },	-- The Audition [H]
 				["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
 				["coord"] = { 53.4, 92.5, DAZARALOR },
 				["races"] = HORDE_ONLY,
@@ -807,14 +906,14 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(55231, {	-- The Other Ghostdancer
-				["sourceQuests"] = { 55228 },	-- The Audition (A)
+				["sourceQuests"] = { 55228 },	-- The Audition [A]
 				["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
 				["coord"] = { 69.6, 29.8, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(55219, {	-- Dropping by the Base
-				["sourceQuests"] = { 55216 },	-- The Audition (H)
+				["sourceQuests"] = { 55216 },	-- The Audition [H]
 				["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
 				["coord"] = { 53.4, 92.5, DAZARALOR },
 				["races"] = HORDE_ONLY,
@@ -834,25 +933,25 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
-			q(55233, {	-- Picking Bones (A)
-				["sourceQuests"] = { 55228 },	-- The Audition (A)
+			q(55233, {	-- Picking Bones [A]
+				["sourceQuests"] = { 55228 },	-- The Audition [A]
 				["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
 				["coord"] = { 69.6, 29.8, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
-			q(55221, {	-- Picking Bones (H)
-				["sourceQuests"] = { 55216 },	-- The Audition (H)
+			q(55221, {	-- Picking Bones [H]
+				["sourceQuests"] = { 55216 },	-- The Audition [H]
 				["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
 				["coord"] = { 53.4, 92.5, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
-			q(55234, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Make Some Noise (A)
+			q(55234, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Make Some Noise [A]
 				["sourceQuests"] = {
 					55230,	-- Telonis' Prized Leather
 					55232,	-- Mevris' Menace
-					55233,	-- Picking Bones (A)
+					55233,	-- Picking Bones [A]
 				},
 				["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
 				["coord"] = { 69.6, 29.8, BORALUS },
@@ -865,11 +964,11 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 					i(167559),	-- Supple Hides (QI!)
 				},
 			})),
-			q(55222, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Make Some Noise (H)
+			q(55222, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Make Some Noise [H]
 				["sourceQuests"] = {
 					55218,	-- Sheza's Prized Leather
 					55220,	-- Bass Fishing
-					55221,	-- Picking Bones (H)
+					55221,	-- Picking Bones [H]
 				},
 				["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
 				["coord"] = { 53.4, 92.5, DAZARALOR },
@@ -882,8 +981,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 					i(167559),	-- Supple Hides (QI!)
 				},
 			})),
-			q(55235, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Instruments of Destruction (A)
-				["sourceQuests"] = { 55234 },	-- Make Some Noise (A)
+			q(55235, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Instruments of Destruction [A]
+				["sourceQuests"] = { 55234 },	-- Make Some Noise [A]
 				["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
 				["coord"] = { 69.6, 29.8, BORALUS },
 				["races"] = ALLIANCE_ONLY,
@@ -891,8 +990,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 					r(293076),	-- Mallet of Thunderous Skins (RECIPE!)
 				},
 			})),
-			q(55223, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Instruments of Destruction (H)
-				["sourceQuests"] = { 55222 },	-- Make Some Noise (H)
+			q(55223, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Instruments of Destruction [H]
+				["sourceQuests"] = { 55222 },	-- Make Some Noise [H]
 				["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
 				["coord"] = { 53.4, 92.5, DAZARALOR },
 				["races"] = HORDE_ONLY,

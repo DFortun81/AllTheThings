@@ -235,24 +235,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
-				q(5144, {	-- Elemental Leatherworking (A)
-					["qg"] = 7868,	-- Sarah Tanner
-					["altQuests"] = {
-						5141,	-- Dragonscale Leatherworking
-						5143,	-- Tribal Leatherworking
-					},
-					["coord"] = { 63.6, 76.0, SEARING_GORGE },
-					["timeline"] = { "removed 4.0.1" },
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = ALLIANCE_ONLY,
-					["cost"] = {
-						{ "i", 7081, 2 },	-- Breath of Wind
-						{ "i", 7075, 2 },	-- Core of Earth
-						{ "i", 7079, 2 },	-- Globe of Water
-						{ "i", 7077, 2 },	-- Heart of Fire
-					},
-					["lvl"] = 40,
-				}),
 				q(7724, {	-- Fiery Menace!
 					["qg"] = 14627,	-- Hansel Heavyhands
 					["coord"] = { 38.6, 27.8, SEARING_GORGE },

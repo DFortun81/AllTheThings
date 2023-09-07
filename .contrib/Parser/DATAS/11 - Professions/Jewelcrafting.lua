@@ -155,12 +155,11 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		ach(18893),	-- Plentiful Prospects
 		ach(18727),	-- Rave Leader
 	})),
-	applyclassicphase(CATA_PHASE_ONE, tier(CATA_TIER, {
-		n(QUESTS, applyclassicphase(CATA_PHASE_ONE, {
+	tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+		n(QUESTS, {
 			q(28778,  {	-- Broken Boar Figurine
 				["provider"] = { "i", 65895 },	-- Figurine - King of Boars
 				["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR },
-				["timeline"] = { "added 4.0.3.13277" },
 				["groups"] = {
 					i(52351),	-- Figurine - King of Boars
 				},
@@ -168,7 +167,6 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			q(28776,  {	-- Broken Earthen Figurine
 				["provider"] = { "i", 65897 },	-- Figurine - Earthen Guardian
 				["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR, DRUID, DEMONHUNTER, MONK },
-				["timeline"] = { "added 4.0.3.13277" },
 				["groups"] = {
 					i(52352),	-- Figurine - Earthen Guardian
 				},
@@ -176,7 +174,6 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			q(28777,  {	-- Broken Owl Figurine
 				["provider"] = { "i", 65894 },	-- Figurine - Dream Owl
 				["classes"] = { PALADIN, SHAMAN, DRUID, MONK, PRIEST },
-				["timeline"] = { "added 4.0.3.13277" },
 				["groups"] = {
 					i(52354),	-- Figurine - Dream Owl
 				},
@@ -184,7 +181,6 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			q(25047,  {	-- Broken Panther Figurine
 				["provider"] = { "i", 52197 },	-- Figurine - Demon Panther
 				["classes"] = { HUNTER, SHAMAN, MONK, DEMONHUNTER, DRUID, ROGUE },
-				["timeline"] = { "added 4.0.3.13277" },
 				["groups"] = {
 					i(52199),	-- Figurine - Demon Panther
 				},
@@ -192,13 +188,12 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			q(28775,  {	-- Broken Serpent Figurine
 				["provider"] = { "i", 65896 },	-- Figurine - Jeweled Serpent
 				["classes"] = { SHAMAN, DRUID, MONK, PALADIN, PRIEST, MAGE, WARLOCK },
-				["timeline"] = { "added 4.0.3.13277" },
 				["groups"] = {
 					i(52353),	-- Figurine - Jeweled Serpent
 				},
 			}),
-		})),
-	})),
+		}),
+	}))),
 	tier(BFA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18773, {	-- Jewelhammer's Focus

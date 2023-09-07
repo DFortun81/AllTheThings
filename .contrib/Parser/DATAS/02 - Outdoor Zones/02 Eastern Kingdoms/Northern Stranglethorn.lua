@@ -2249,22 +2249,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.1.0.13726" },
 					["races"] = HORDE_ONLY,
 				}),
-				q(5148, {	-- Tribal Leatherworking (H)
-					["qg"] = 7871,	-- Se'Jib
-					["altQuests"] = {
-						5145,	-- Dragonscale Leatherworking
-						5146,	-- Elemental Leatherworking
-					},
-					["coord"] = { 36.6, 34.2, STRANGLETHORN_VALE },
-					["timeline"] = { "removed 4.0.1" },
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = HORDE_ONLY,
-					["cost"] = {
-						{ "i", 8214, 1 },	-- Wild Leather Helmet
-						{ "i", 8211, 1 },	-- Wild Leather Vest
-					},
-					["lvl"] = 40,
-				}),
 				q(205, {	-- Troll Witchery
 					["qg"] = 739,	-- Brother Nimetz
 					["sourceQuest"] = 207,	-- Kurzen's Mystery
@@ -2712,7 +2696,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
 					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
-					["timeline"] = { "added 1.11.1", "removed 4.0.1" },	
+					["timeline"] = { "added 1.11.1", "removed 4.0.1" },
 				}),
 				i(1624, {	-- Skullsplitter Helm
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },

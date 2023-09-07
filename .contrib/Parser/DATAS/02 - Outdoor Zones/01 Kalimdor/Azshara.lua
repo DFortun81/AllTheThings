@@ -593,23 +593,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(5141, {	-- Dragonscale Leatherworking (A)
-					["qg"] = 7866,	-- Peter Galen
-					["altQuests"] = {
-						5144,	-- Elemental Leatherworking
-						5143,	-- Tribal Leatherworking
-					},
-					["coord"] = { 37.4, 65.4, AZSHARA },
-					["timeline"] = { "removed 4.0.1" },
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = ALLIANCE_ONLY,
-					["cost"] = {
-						{ "i", 8203, 2 },	-- Tough Scorpid Breastplate
-						{ "i", 8204, 2 },	-- Tough Scorpid Gloves
-						{ "i", 8165, 10 },	-- Worn Dragonscale
-					},
-					["lvl"] = 40,
-				}),
 				q(14340, {	-- Dressed to Impress
 					["qg"] = 36210,	-- Sorata Firespinner
 					["sourceQuest"] = 14345,	-- Wash Out

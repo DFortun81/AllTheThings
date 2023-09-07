@@ -104,6 +104,87 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 		}),
 	})),
+	tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_5 } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
+			ach(17499, {	-- Renowned Tailoring Specialist
+				["sourceQuests"] = {
+					10831,	-- Becoming a Mooncloth Tailor
+					10833,	-- Becoming a Shadoweave Tailor
+					10832,	-- Becoming a Spellfire Tailor
+				},
+				["sourceQuestNumRequired"] = 1,
+				["timeline"] = { ADDED_10_0_7, REMOVED_10_0_7 },
+			}),
+		})),
+		n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_5, REMOVED_4_0_3 } }, {
+			q(10831, {	-- Becoming a Mooncloth Tailor
+				["qg"] = 22208,	-- Nasmara Moonsong <Mooncloth Specialist>
+				["description"] = "Upon finishing this quest, you will become a Mooncloth Tailor.",
+				["coord"] = { 66.5, 69.3, SHATTRATH_CITY },
+				["maps"] = { ZANGARMARSH },
+				["altQuests"] = {
+					-- 10831,	-- Becoming a Mooncloth Tailor
+					10833,	-- Becoming a Shadoweave Tailor
+					10832,	-- Becoming a Spellfire Tailor
+				},
+				["lvl"] = 60,
+				["groups"] = {
+					objective(1, {	-- 0/1 Sample of Primal Mooncloth
+						["provider"] = { "i", 31530 },	-- Sample of Primal Mooncloth
+						["coord"] = { 80, 65, ZANGARMARSH },
+						["cost"] = {
+							{ "i", 31524, 1 },	-- Square of Imbued Netherweave
+							{ "i", 31525, 1 },	-- Vial of Primal Reagents
+						},
+					}),
+					i(31522, {	-- Primal Mooncloth Supplies
+						i(31524),	-- Square of Imbued Netherweave
+						i(31525),	-- Vial of Primal Reagents
+					}),
+				},
+			}),
+			q(10833, {	-- Becoming a Shadoweave Tailor
+				["qg"] = 22212,	-- Andrion Darkspinner <Shadoweave Specialist>
+				["description"] = "Upon finishing this quest, you will become a Shadoweave Tailor.",
+				["coord"] = { 66.6, 68.2, SHATTRATH_CITY },
+				["maps"] = { SHADOWMOON_VALLEY },
+				["requireSkill"] = TAILORING,
+				["altQuests"] = {
+					10831,	-- Becoming a Mooncloth Tailor
+					-- 10833,	-- Becoming a Shadoweave Tailor
+					10832,	-- Becoming a Spellfire Tailor
+				},
+				["lvl"] = 60,
+				["groups"] = {
+					objective(1, {	-- Deepen Altar of Shadows Attunement
+						["provider"] = { "i", 31736 },	-- Crystal of Deep Shadows
+						["coord"] = { 58.0, 71.0, SHADOWMOON_VALLEY },
+					}),
+				},
+			}),
+			q(10832, {	-- Becoming a Spellfire Tailor
+				["qg"] = 22213,	-- Gidge Spellweaver <Spellfire Specialist>
+				["description"] = "Upon finishing this quest, you will become a Spellfire Tailor.",
+				["coord"] = { 66.6, 68.4, SHATTRATH_CITY },
+				["maps"] = { NETHERSTORM },
+				["altQuests"] = {
+					10831,	-- Becoming a Mooncloth Tailor
+					10833,	-- Becoming a Shadoweave Tailor
+					-- 10832,	-- Becoming a Spellfire Tailor
+				},
+				["lvl"] = 60,
+				["groups"] = {
+					objective(1, {	-- 0/1 Nether-wraith Essence
+						["provider"] = { "i", 31741 },	-- Nether-wraith Essence
+						["cr"] = 22408,	-- Furious Nether-wraith
+						["cost"] = {
+							{ "i", 31742, 1 },	-- Nether-wraith Beacon
+						},
+					}),
+				},
+			}),
+		})),
+	}))),
 	tier(CATA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18815, {	-- Speed Dreamin'
@@ -5765,76 +5846,6 @@ profession(TAILORING, {
 				}
 			}
 		},
-	})),
-	n(QUESTS, bubbleDown({ ["timeline"] = { "removed 4.0.3" } }, {
-		applyclassicphase(TBC_PHASE_ONE, q(10831, {	-- Becoming a Mooncloth Tailor
-			["qg"] = 22208,	-- Nasmara Moonsong <Mooncloth Specialist>
-			["description"] = "Upon finishing this quest, you will become a Mooncloth Tailor.",
-			["coord"] = { 66.5, 69.3, SHATTRATH_CITY },
-			["maps"] = { ZANGARMARSH },
-			["requireSkill"] = TAILORING,
-			["altQuests"] = {
-				-- 10831,	-- Becoming a Mooncloth Tailor
-				10833,	-- Becoming a Shadoweave Tailor
-				10832,	-- Becoming a Spellfire Tailor
-			},
-			["lvl"] = lvlsquish(60, 60, 20),
-			["groups"] = {
-				objective(1, {	-- 0/1 Sample of Primal Mooncloth
-					["provider"] = { "i", 31530 },	-- Sample of Primal Mooncloth
-					["coord"] = { 80, 65, ZANGARMARSH },
-					["cost"] = {
-						{ "i", 31524, 1 },	-- Square of Imbued Netherweave
-						{ "i", 31525, 1 },	-- Vial of Primal Reagents
-					},
-				}),
-				i(31522, {	-- Primal Mooncloth Supplies
-					i(31524),	-- Square of Imbued Netherweave
-					i(31525),	-- Vial of Primal Reagents
-				}),
-			},
-		})),
-		applyclassicphase(TBC_PHASE_ONE, q(10833, {	-- Becoming a Shadoweave Tailor
-			["qg"] = 22212,	-- Andrion Darkspinner <Shadoweave Specialist>
-			["description"] = "Upon finishing this quest, you will become a Shadoweave Tailor.",
-			["coord"] = { 66.6, 68.2, SHATTRATH_CITY },
-			["maps"] = { SHADOWMOON_VALLEY },
-			["requireSkill"] = TAILORING,
-			["altQuests"] = {
-				10831,	-- Becoming a Mooncloth Tailor
-				-- 10833,	-- Becoming a Shadoweave Tailor
-				10832,	-- Becoming a Spellfire Tailor
-			},
-			["lvl"] = lvlsquish(60, 60, 20),
-			["groups"] = {
-				objective(1, {	-- Deepen Altar of Shadows Attunement
-					["provider"] = { "i", 31736 },	-- Crystal of Deep Shadows
-					["coord"] = { 58.0, 71.0, SHADOWMOON_VALLEY },
-				}),
-			},
-		})),
-		applyclassicphase(TBC_PHASE_ONE, q(10832, {	-- Becoming a Spellfire Tailor
-			["qg"] = 22213,	-- Gidge Spellweaver <Spellfire Specialist>
-			["description"] = "Upon finishing this quest, you will become a Spellfire Tailor.",
-			["coord"] = { 66.6, 68.4, SHATTRATH_CITY },
-			["maps"] = { NETHERSTORM },
-			["requireSkill"] = TAILORING,
-			["altQuests"] = {
-				10831,	-- Becoming a Mooncloth Tailor
-				10833,	-- Becoming a Shadoweave Tailor
-				-- 10832,	-- Becoming a Spellfire Tailor
-			},
-			["lvl"] = lvlsquish(60, 60, 20),
-			["groups"] = {
-				objective(1, {	-- 0/1 Nether-wraith Essence
-					["provider"] = { "i", 31741 },	-- Nether-wraith Essence
-					["cr"] = 22408,	-- Furious Nether-wraith
-					["cost"] = {
-						{ "i", 31742, 1 },	-- Nether-wraith Beacon
-					},
-				}),
-			},
-		})),
 	})),
 });
 

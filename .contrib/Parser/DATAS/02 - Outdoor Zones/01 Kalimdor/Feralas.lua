@@ -2083,22 +2083,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(5143, {	-- Tribal Leatherworking [A]
-					["qg"] = 7870,	-- Caryssia Moonhunter
-					["altQuests"] = {
-						5141,	-- Dragonscale Leatherworking
-						5144,	-- Elemental Leatherworking
-					},
-					["coord"] = { 89.4, 46.5, FERALAS },
-					["timeline"] = { "removed 4.0.1" },
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = ALLIANCE_ONLY,
-					["cost"] = {
-						{ "i", 8214, 1 },	-- Wild Leather Helmet
-						{ "i", 8211, 1 },	-- Wild Leather Vest
-					},
-					["lvl"] = 40,
-				}),
 				q(25349, {	-- Twisted Sisters
 					["qg"] = 39847,	-- Chief Spirithorn
 					["coord"] = { 74.5, 42.8, FERALAS },
