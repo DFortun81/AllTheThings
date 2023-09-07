@@ -1370,14 +1370,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER CATA
 				n(1920, {	-- Ambermill Spellscribe [CATA+] / Dalaran Spellscribe
 					["coord"] = { 63.4, 65.2, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4437, {	-- Channeler's Staff
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(4436, {	-- Jewel-encrusted Sash
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1521,6 +1521,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(1944, {	-- Rot Hide Bruiser
+					-- Added to Tirisfall in 10.1.7
 					["coord"] = { 67.6, 24.4, SILVERPINE_FOREST },
 					["timeline"] = { "removed 4.0.3" },
 					["groups"] = {

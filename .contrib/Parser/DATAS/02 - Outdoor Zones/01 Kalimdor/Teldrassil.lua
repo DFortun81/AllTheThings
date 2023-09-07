@@ -1718,7 +1718,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(18612, {	-- Bloody Chain Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1812,8 +1812,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 3569,	-- Bogling
 				}),
 				i(7094, {	-- Driftwood Branch
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["cr"] = 2030,	-- Elder Timberling
+					["coord"] = { 45.4, 24.6, TELDRASSIL },
 				}),
 			}),
 		},

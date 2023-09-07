@@ -1687,7 +1687,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(5256, {	-- Kovork's Rattle
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1776,7 +1776,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 						i(5181, {	-- Vibrant Silk Cape
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -2065,26 +2065,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
 					-- #endif
 					["coord"] = { 29.8, 59.4, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3" },
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
-					["coords"] = {
-						{ 23.4, 35.4, ARATHI_HIGHLANDS },
-						{ 25.4, 35.4, ARATHI_HIGHLANDS },
-					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague ARATHI_HIGHLANDS
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, ARATHI_HIGHLANDS },
-						{ 17.8, 33.4, ARATHI_HIGHLANDS },
-						{ 19.8, 46.8, ARATHI_HIGHLANDS },
-					},
-					-- #endif
-					--]]
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 				}),
 				i(1993, {	-- Ogremind Ring
 					["crs"] = {

@@ -2009,6 +2009,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				n(1944, {	-- Rot Hide Bruiser
+					["coord"] = { 56.1, 42.4, SILVERPINE_FOREST },
+					["timeline"] = { "added 10.1.7" },
+					["groups"] = {
+						i(4439, {	-- Bruiser Club
+							["timeline"] = { "added 10.1.7" },
+						}),
+						i(5975, {	-- Ruffian Belt
+							["timeline"] = { "added 10.1.7" },
+						}),
+					},
+				}),
 				n(50763, {	-- Shadowstalker
 					["coord"] = { 38.0, 52.0, TIRISFAL_GLADES },
 					["timeline"] = { "added 5.1.0.16309" },
@@ -2318,7 +2330,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 79.4, 26.0, TIRISFAL_GLADES },
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },
 					["cr"] = 1665,	-- Captain Melrache
-					["description"] = "This NPC is friendly to the alliance.",
+					["description"] = "The NPC dropping this is friendly to the alliance.",
 				}),
 				i(3332, {	-- Perrine's Boots
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023

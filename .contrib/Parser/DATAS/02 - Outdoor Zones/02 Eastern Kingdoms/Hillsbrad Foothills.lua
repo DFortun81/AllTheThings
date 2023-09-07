@@ -3186,30 +3186,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					--]]
 				}),
 				i(3336, {	-- Flesh Piercer
-					["timeline"] = { "removed 4.0.3" },
 					["crs"] = {
 						2370,	-- Daggerspine Screamer
 						2368,	-- Daggerspine Shorestalker
 					},
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["coords"] = {
-						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
-						{ 25.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 59.6, 89.4, HILLSBRAD_FOOTHILLS },
+						{ 57.2, 84.2, HILLSBRAD_FOOTHILLS },
 					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
-						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
-						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
-					},
-					-- #endif
-					--]]
 				}),
 				i(11152, {	-- Formula: Enchant Gloves - Fishing (RECIPE!)
 					["crs"] = {
@@ -3318,32 +3303,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(5775, {	-- Pattern: Black Silk Pack
-					["timeline"] = { "removed 4.0.3" },
-					["crs"] = {
-						-- #if AFTER CATA
-						2242,	-- Syndicate Spy (Alterac Mountains)
-						-- #endif
-						2434,	-- Shadowy Assassin
-					},
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
-					["coords"] = {
-						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
-						{ 25.4, 35.4, HILLSBRAD_FOOTHILLS },
+					["crs"] = {
+						2434,	-- Shadowy Assassin
 					},
 					-- #elseif AFTER 10.1.7
 					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
+						2242,	-- Syndicate Spy (Alterac Mountains)
 					},
 					["coords"] = {
-						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
-						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
-						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
+						{ 58.0, 23.8, HILLSBRAD_FOOTHILLS },
+						{ 53.6, 14.8, HILLSBRAD_FOOTHILLS },
+						{ 49.6, 10.0, HILLSBRAD_FOOTHILLS },
 					},
 					-- #endif
-					--]]
 				}),
 				-- #if BEFORE CATA
 				i(5772, {	-- Pattern: Red Woolen Bag

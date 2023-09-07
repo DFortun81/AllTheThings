@@ -2099,7 +2099,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(6147, {	-- Ratty Old Belt
-							["timeline"] = { "removed 4.0.1" },	-- Note: Might also be added back with 8.0.1, check this.
+							["timeline"] = { "removed 4.0.1", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 						i(1913, {	-- Studded Blackjack
 							["timeline"] = { "removed 4.0.1" },	-- Note: Might also be added back with 8.0.1, check this.
