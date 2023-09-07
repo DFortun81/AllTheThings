@@ -33,7 +33,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(121509),	-- Runesworn Crown		 			(NYI)
 
 			ig(1280),	-- Cloaked Hood 					(Removed)
-			ig(4724),	-- Humbert's Helm 					(Removed)
+		--	ig(4724),	-- Humbert's Helm 					(Removed)			Added in 10.1.7 to original Source
 			ig(134621),	-- Incendiary Helm 					(Removed)
 			ig(3392),	-- Ringed Helm 						(Removed)
 			ig(5753),	-- Ruffled Chaplet 					(Removed)(unique)
@@ -166,10 +166,10 @@ local QUANTUM_GROUP = sharedData({
 	--	ig(2015),	-- Black Metal War Axe				(Removed)			Added in 10.1.7 to original Source
 		ig(2227),	-- Heavy Ogre War Axe 				(Removed)
 		ig(1220),	-- Lupine Axe						(Removed)
-		ig(2823),	-- Mo'grosh Can Opener 				(Removed)
-		ig(5749),	-- Scythe Axe 						(Removed)(Unique)
+	--	ig(2823),	-- Mo'grosh Can Opener 				(Removed)			Added in 10.1.7 to original Source
+	--	ig(5749),	-- Scythe Axe 						(Removed)(Unique)	Added in 10.1.7 to original Source
 		ig(756),	-- Tunnel Pick 						(Removed)
-		ig(3325),	-- Vile Fin Battle Axe				(Removed)
+	--	ig(3325),	-- Vile Fin Battle Axe				(Removed)			Added in 10.1.7 to original Source
 		ig(5194),	-- Taskmaster Axe					(Removed)(Unique)(Dungeon)
 		ig(23171),	-- The Axe of Severing				(Removed)
 
@@ -177,7 +177,7 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208114, {	-- Quantum Greathammer	(Two-Handed)(Mace)
 		ig(2254),	-- Icepane Warhammer				(Removed)
-		ig(911),	-- Ironwood Treebranch				(Removed)
+	--	ig(911),	-- Ironwood Treebranch				(Removed)			Added in 10.1.7 to original Source
 	--	ig(3571),	-- Trogg Beater						(Removed)			Added in 10.1.7 to original Source
 	}),
 	i(208112, {	-- Quantum Greatsword	(Two-Handed)
@@ -214,8 +214,8 @@ local QUANTUM_GROUP = sharedData({
 		ig(134721),	-- Cold-Touched Staff 				(Removed)
 		ig(1388),	-- Crooked Staff					(Removed)
 		ig(2013),	-- Cryptbone Staff 					(Removed)
-		ig(1928),	-- Defias Mage Staff 				(Removed)(Unique)
-		ig(7094),	-- Driftwood Branch					(Removed)
+	--	ig(1928),	-- Defias Mage Staff 				(Removed)(Unique)	Added in 10.1.7 to original Source
+	--	ig(7094),	-- Driftwood Branch					(Removed)			Added in 10.1.7 to original Source
 		ig(1539),	-- Gnarled hermit's staff			(Removed)(Unique)
 		ig(2280),	-- Kam's Walking Stick				(Removed)
 		ig(1300),	-- Lesser Staff of the Spire Staff 	(Removed)(Unique)
