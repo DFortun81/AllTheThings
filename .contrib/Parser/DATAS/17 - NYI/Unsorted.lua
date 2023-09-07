@@ -728,7 +728,6 @@ root(ROOTS.Unsorted, {
 			i(206600),	-- A Clue
 			i(206760),	-- A Clue
 			i(206762),	-- A Clue
-			i(206948),	-- A Clue: The Shifting Sands
 			i(206950),	-- A Clue
 			i(206996),	-- A Clue
 			i(208406),	-- High Scholar's Circlet
@@ -920,7 +919,6 @@ root(ROOTS.Unsorted, {
 			i(208147),	-- Yellow Tweed Cap
 			i(208148),	-- Burgandy Cap
 			i(208148),	-- Burgundy Cap
-			i(208191),	-- Time-Lost Fragment
 			i(206447),	-- Task List for Adventurers
 			--
 			i(206160),	-- Madam Shadow's Grimoire

@@ -41,6 +41,51 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		ach(18646, {	-- Whodunnit?
 			-- TODO: proper criteria
 			i(208152),	-- Pattie (MOUNT!)
+			crit(60849, {	-- A Preservationist
+				["_quests"] = { 77203 },
+			}),
+			crit(60752, {	-- Ceremonial Spear
+				["_quests"] = { 76735 },
+			}),
+			crit(60850, {	-- Thinking Cap
+				["_quests"] = { 76504 },
+			}),
+			crit(60851, {	-- An Inside Job?
+				["_quests"] = { 77277 },
+			}),
+			crit(60852, {	-- Torch of Pyrreth
+				["_quests"] = { 77263 },
+			}),
+			crit(60853, {	-- A Chilling Ascent
+				["_quests"] = { 77286 },
+			}),
+			crit(60854, {	-- The Idol of Ohn'ahra
+				["_quests"] = { 76456 },
+			}),
+			 crit(60855, {	-- Shifting Sands
+			 	["_quests"] = { 77305 },
+			 }),
+			-- crit(60856, {	-- What's in a Mold?
+			-- 	["_quests"] = {  },
+			-- }),
+			-- crit(60857, {	-- Forging is Key
+			-- 	["_quests"] = {  },
+			-- }),
+			-- crit(60858, {	-- A Proper Burial
+			-- 	["_quests"] = {  },
+			-- }),
+			-- crit(60859, {	-- Kirin Tor Knowledge
+			-- 	["_quests"] = {  },
+			-- }),
+			-- crit(60860, {	-- A Curious Orb
+			-- 	["_quests"] = {  },
+			-- }),
+			-- crit(60861, {	-- Under Suspicion
+			-- 	["_quests"] = {  },
+			-- }),
+			-- crit(60862, {	-- The Race
+			-- 	["_quests"] = {  },
+			-- }),
 		}),
 	}),
 	n(QUESTS, {
@@ -255,6 +300,32 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			["coord"] = { 47.4, 48.1, VALDRAKKEN },
 			["sourceQuest"] = 77304,	-- An Idol in Hand
 		}),
+
+		-- Day 7 --
+		q(76509, {	-- Into the Sands
+			["qg"] = 206864,	-- Preservationist Kathos
+			["coord"] = { 47.4, 48.1, VALDRAKKEN },
+			["groups"] = {
+				i(206948),	-- A Clue: The Shifting Sands (QI!)
+			},
+		}),
+		q(77305, {	-- Out of the Sands
+			["provider"] = { "i", 208146 },	-- Incomplete Tablet
+			["sourceQuest"] = 76509,	-- Into the Sands
+			["groups"] = {
+				i(208146, {	-- Incomplete Tablet
+				["provider"] = { "o", 404319 },	-- Time Lost Fragment
+				["coords"] = {
+					-- These Time Lost Fragments spawn all over the Shifting Sands
+					{ 58.5, 78.4, THALDRASZUS },
+					{ 58.8, 78.2, THALDRASZUS },
+					{ 59.3, 78.8, THALDRASZUS },
+				},
+				["cost"] = {
+					{"i",208191,3},	-- Time Lost Fragment
+				}}),
+			},
+		}),
 	}),
 }))));
 
@@ -283,6 +354,8 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(77306),	-- completed 'An Idol in Hand' (questID 77304) / finished 'Tools of the Trade' (achievementID 18645)
 	q(78200),	-- completed 'An Idol in Hand' (questID 77304) / finished 'Tools of the Trade' (achievementID 18645)
 	q(77524),	-- completed 'Using the Idol' (questID 76456)
+	q(77854),	-- Upon completion of Into the Sands (questID 76509)
+	q(76508),	-- Upon completion of Out of the Sands (questID 77305)
 
 	-- TODO: Someone add these under Community Rumors achievement in a suitable structure please
 	q(77289),	-- Community Satchel 1 (Eastern Plague Lands @ 55.1, 59.4)
@@ -291,4 +364,5 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 				-- Community Satchel 4 (Shadowmoon Valley(Draenor) 539 @ 35.3 48.9)
 	q(77290),	-- Community Satchel 5 (Netherstorm @ 26.2, 68.7)
 	q(77293),	-- Community Satchel 6 (Valley of the Four Winds @ 56.7, 21.4)
+	q(77296),	-- Community Satchel 7 (Azure Span @ 25.2, 71.4 Object ID 405535)
 })))
