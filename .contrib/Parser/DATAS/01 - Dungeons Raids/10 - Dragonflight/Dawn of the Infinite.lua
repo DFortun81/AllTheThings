@@ -220,7 +220,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(2280),	-- Kam's Walking Stick				(Removed)
 		ig(1300),	-- Lesser Staff of the Spire Staff 	(Removed)(Unique)
 		ig(3227),	-- Nightbane Staff 					(Removed)(Unique)
-		ig(2226),	-- Ogremage Staff 					(Removed)(Unique)	
+		ig(2226),	-- Ogremage Staff 					(Removed)(Unique)
 		ig(1473),	-- Riverside Staff					(Removed)
 	--	ig(880),	-- Staff of Horrors					(Removed)			Added in 10.1.7 to original Source
 	}),
@@ -343,6 +343,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						i(207819),	-- Timeways Intruder's Greaves
 						i(207838),	-- Vigorous Sandstompers
 						i(207923),	-- Zealous Commander's Cuffs
+						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
+							i(207991),	-- Double Time
+						})),
 					},
 				}),
 				e(2528, {	-- Manifested Timeways
@@ -354,6 +357,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						i(207898),	-- Mobius Strap
 						i(207851),	-- Timeway Sojourner's Bracelet
 						i(207858),	-- Unwinding Eon Girdle
+						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
+							i(207996),	-- Nick of Time
+						})),
 					},
 				}),
 				e(2535, {	-- Blight of Galakrond
@@ -369,6 +375,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						i(207921),	-- Dazhak's Desiccated Wingbones
 						i(207992),	-- Fallen Drake's Bonesplitter
 						i(207912),	-- Loszkeleth's Blighted Skullhelm
+						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
+							i(207817),	-- Imbued Frostweave Slippers
+						})),
 					},
 				}),
 				e(2537, {	-- Iridikron the Stonescaled
@@ -383,6 +392,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						i(207897),	-- Mantle of Meticulous Plans
 						i(207528),	-- Prophetic Stonescales
 						i(207911),	-- Stonecracker Knuckles
+						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
+							i(208321),	-- Iridal, the Earth's Master
+						})),
 					},
 				}),
 				e(2526, {	-- Tyr, the Infinite Keeper
@@ -393,6 +405,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						i(207950),	-- Marbled Oathstone Greatboots
 						i(207876),	-- Temple Acolyte's Uniform
 						i(207873),	-- Titanic Shouldersparks
+						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
+							i(208391),	-- The Infinite Hand
+						})),
 					},
 				}),
 				e(2536, {	-- Morchie
@@ -404,6 +419,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						i(207997),	-- Morchie's Distorted Spellblade
 						i(207946),	-- Reality-Warping Waistband
 						i(207579),	-- Time-Thief's Gambit
+						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
+							i(207986),	-- Traveler's Timesplitter
+						})),
 					},
 				}),
 				e(2533, {	-- Time-Lost Battlefield [A]
@@ -417,6 +435,10 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						i(207878),	-- Grunt's Eternal Treads
 						i(207936),	-- Hood of Perpetual Conflict
 						i(207884),	-- Unceasing Footman's Breastplate
+						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
+							i(208193),	-- Gorehowl, Might of the Warchief
+							i(207994),	-- Quel'Zaram, High Blade of the Lion
+						})),
 					},
 				}),
 				e(2538, {	-- Chrono-Lord Deios and the Infinite Dragonflight
@@ -435,6 +457,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						i(207928),	-- Leggings of the New Dawn
 						i(207581),	-- Mirror of Fractured Tomorrows
 						i(207978),	-- Murozond's Timeless Scale
+						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
+							i(207987),	-- Borrowed Time
+						})),
 					}),
 				}),
 			}),
@@ -517,18 +542,12 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 					["crs"] = { 198995 },	-- Chronikar
 					["g"] = {
 						ach(18589),	-- Crunch Time
-						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
-							i(207991),	-- Double Time
-						})),
 					},
 				}),
 				e(2528, {	-- Manifested Timeways
 					["crs"] = { 298996 },	-- Manifested Timeways
 					["g"] = {
 						ach(18556),	-- Chaotic Time
-						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
-							i(207996),	-- Nick of Time
-						})),
 					},
 				}),
 				e(2535, {	-- Blight of Galakrond
@@ -540,9 +559,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 					},
 					["g"] = {
 						ach(18612),	-- A Slime in Need
-						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
-							i(207817),	-- Imbued Frostweave Slippers
-						})),
 					},
 				}),
 				e(2537, {	-- Iridikron the Stonescaled
@@ -550,48 +566,24 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 						204459,	-- Iridikron the Stonescaled
 						198933,	-- Iridikron the Stonescaled
 					},
-					["g"] = {
-						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
-							i(208321),	-- Iridal, the Earth's Master
-						})),
-					},
 				}),
 				e(2526, {	-- Tyr, the Infinite Keeper
 					["crs"] = { 198998 },	-- Tyr, the Infinite Keeper
 					["g"] = {
 						ach(18539),	-- Back En-masse
-						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
-							i(208391),	-- The Infinite Hand
-						})),
 					},
 				}),
 				e(2536, {	-- Morchie
 					["crs"] = { 198999 },	-- Morchie
-					["g"] = {
-						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
-							i(207986),	-- Traveler's Timesplitter
-						})),
-					},
 				}),
 				e(2533, {	-- Time-Lost Battlefield [A]
 					["crs"] = {
 						209207,	-- Grommash Hellscream <Warlord with the Iron Will>
 						203679,	-- Anduin Lothar <Knight Champion of the Kingdom of Stormwind>
 					},
-					["g"] = {
-						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
-							i(208193),	-- Gorehowl, Might of the Warchief
-							i(207994),	-- Quel'Zaram, High Blade of the Lion
-						})),
-					},
 				}),
 				e(2538, {	-- Chrono-Lord Deios and the Infinite Dragonflight
 					["crs"] = { 199000 },	-- Chrono-Lord Deios
-					["g"] = {
-						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
-							i(207987),	-- Borrowed Time
-						})),
-					},
 				}),
 			}),
 			-- #else
