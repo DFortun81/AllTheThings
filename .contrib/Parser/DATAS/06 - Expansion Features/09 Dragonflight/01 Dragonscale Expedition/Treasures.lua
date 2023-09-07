@@ -96,6 +96,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					199067, -- Precious Plans
 					199068, -- Time-Lost Memo
 					198852, -- Bear Termination Orders
+					200836, -- Arcane-Infused Crystals
 					-- Profession Knowledge Items
 					193891,	-- Experimental Substance
 					193897,	-- Reawakened Catalyst
@@ -137,6 +138,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					199067, -- Precious Plans
 					199068, -- Time-Lost Memo
 					198852, -- Bear Termination Orders
+					200836, -- Arcane-Infused Crystals
 					-- Profession Knowledge Items
 					193891,	-- Experimental Substance
 					193897,	-- Reawakened Catalyst
@@ -187,6 +189,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					199067, -- Precious Plans
 					199068, -- Time-Lost Memo
 					198852, -- Bear Termination Orders
+					200836, -- Arcane-Infused Crystals
 				}},
 			}),
 		}),
