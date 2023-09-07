@@ -870,7 +870,6 @@ root(ROOTS.Unsorted, {
 			i(181516),	-- Stone-Laced Infused Ruby
 			i(183041),	-- Anima-Infused Silk
 			i(193412),	-- Primal-Infused Dragon Egg
-			i(200836),	-- Arcane-Infused Crystals
 			i(202247),	-- Curious Curio Goggles
 			i(202270),	-- [DNT] Twice-Woven Rope
 			i(202312),	-- Juicy Mammoth Steak
