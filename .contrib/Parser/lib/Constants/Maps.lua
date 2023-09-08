@@ -510,3 +510,5 @@ THE_PRIMALIST_FUTURE = 2085;
 THE_WAKING_SHORES = 2022;
 VALDRAKKEN = 2112;
 ZARALEK_CAVERN = 2133;
+-- 10.2 maps don't have official names yet. Replace these when we get them
+TREE_1 = 2200;

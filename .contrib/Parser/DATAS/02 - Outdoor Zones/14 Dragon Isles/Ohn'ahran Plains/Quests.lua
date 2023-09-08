@@ -1236,6 +1236,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(206353),	-- Sentinel's Whistle
 				},
 			}),
+			-- 10.2 campaign starts here --
+			q(76317, {	-- Call of the Dream
+				-- this is granted automatically no matter where you are. Probably worth moving somewhere else than here
+				["timeline"] = { ADDED_10_2_0 },
+			}),
+			q(76318, {	-- Emerald Welcome
+				["sourceQuests"] = { 76317 },	-- Call of the Dream
+				["provider"] = { "n", 187590 },	-- Merithra
+				["coord"] = { 18.7, 51.8, OHNAHRAN_PLAINS },
+				["timeline"] = { ADDED_10_2_0 },
+				["g"] = {
+					i(210412),	-- Flourishing Whimsydrake
+				},
+			}),
 			n(BONUS_OBJECTIVES, {	-- All of these are One-Time
 				q(69968, {	-- Prozela Galeshot
 					["provider"] = { "n", 193669 },	-- Prozela Galeshot
