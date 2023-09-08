@@ -2047,14 +2047,14 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 		end
 		
-		local awp = group.awp;
-		local addedBack = awp and group.rwp and awp > group.rwp;
+		local awp, rwp = group.awp, group.rwp;
+		local addedBack = not awp or (rwp and awp > rwp);
 		if awp then
 			tinsert(info, 1, { left = GetAddedWithPatchString(awp, addedBack), wrap = true, color = app.Colors.AddedWithPatch });
 		end
 
-		if group.rwp then
-			tinsert(info, addedBack and 1 or 2, { left = GetRemovedWithPatchString(group.rwp), wrap = true, color = app.Colors.RemovedWithPatch });
+		if rwp then
+			tinsert(info, addedBack and 1 or 2, { left = GetRemovedWithPatchString(rwp), wrap = true, color = app.Colors.RemovedWithPatch });
 		end
 
 		if group.isLimited then
@@ -10553,18 +10553,19 @@ local function RowOnEnter(self)
 					end
 				end
 			end
-			if reference.rwp then
-				local rwp = GetRemovedWithPatchString(reference.rwp);
-				if not linesByText[rwp] then
+			local awp, rwp = reference.awp, reference.rwp;
+			if rwp then
+				local rwpString = GetRemovedWithPatchString(rwp);
+				if not linesByText[rwpString] then
 					local r,g,b = HexToRGB(app.Colors.RemovedWithPatch);
-					GameTooltip:AddLine(rwp, r, g, b, 1);
+					GameTooltip:AddLine(rwpString, r, g, b, 1);
 				end
 			end
-			if reference.awp then
-				local awp = GetAddedWithPatchString(reference.awp, reference.awp and reference.rwp and reference.awp > reference.rwp);
-				if not linesByText[awp] then
+			if awp then
+				local awpString = GetAddedWithPatchString(awp, awp and rwp and awp > rwp);
+				if not linesByText[awpString] then
 					local r,g,b = HexToRGB(app.Colors.AddedWithPatch);
-					GameTooltip:AddLine(awp, r, g, b, 1);
+					GameTooltip:AddLine(awpString, r, g, b, 1);
 				end
 			end
 			if reference.questID and not reference.objectiveID then

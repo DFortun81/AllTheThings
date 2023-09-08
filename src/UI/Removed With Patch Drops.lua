@@ -18,7 +18,7 @@ local function BuildSourceTextForChat(group, l)
 end
 
 -- Local functions
-local ExcludeRecipes, ExcludeRemovedMaps, ExcludeRemovedRares;
+local ExcludeRecipes, ExcludeRemovedMaps, ExcludeRemovedRares, ExcludeAddedWithPatch;
 local AllowedHeaders = {
 	[app.HeaderConstants.RARES] = true,
 	[app.HeaderConstants.ZONE_DROPS] = true,
@@ -75,18 +75,38 @@ app:GetWindow("RWPD", {
 		ExcludeRecipes = settings.ExcludeRecipes;
 		ExcludeRemovedMaps = settings.ExcludeRemovedMaps;
 		ExcludeRemovedRares = settings.ExcludeRemovedRares;
+		ExcludeAddedWithPatch = settings.ExcludeAddedWithPatch;
 		if ExcludeRecipes == nil then ExcludeRecipes = true; end
 		if ExcludeRemovedMaps == nil then ExcludeRemovedMaps = true; end
 		if ExcludeRemovedRares == nil then ExcludeRemovedRares = true; end
+		if ExcludeAddedWithPatch == nil then ExcludeAddedWithPatch = true; end
 	end,
 	OnSave = function(self, settings)
 		settings.ExcludeRecipes = ExcludeRecipes;
 		settings.ExcludeRemovedMaps = ExcludeRemovedMaps;
 		settings.ExcludeRemovedRares = ExcludeRemovedRares;
+		settings.ExcludeAddedWithPatch = ExcludeAddedWithPatch;
 	end,
 	OnRebuild = function(self)
 		if self.data then return true; end
 		local options = {
+			{	-- Exclude Added With Patch Button
+				text = "Exclude Items Added With Patch",
+				icon = "Interface/Icons/inv_scroll_05",
+				description = "Press this button to toggle excluding Items added back to the game after they are initially removed from the game.\n\nNOTE: This might be misleading: if an item has multiple sources and only one of the sources was added back, specific sources of that item that aren't currently marked with AWP will still be shown. The tooltip may show Added With Patch, but it might only apply to a different hidden source. (For example, Pattern: Black Silk Pack)",
+				visible = true,
+				priority = 6,
+				OnClick = function(row, button)
+					ExcludeAddedWithPatch = not ExcludeAddedWithPatch;
+					wipe(self.data.g);
+					self:Rebuild();
+					return true;
+				end,
+				OnUpdate = function(data)
+					data.saved = ExcludeAddedWithPatch;
+					return true;
+				end,
+			},
 			{	-- Exclude Recipes Button
 				text = "Exclude Recipes",
 				icon = "Interface/Icons/inv_scroll_05",
@@ -188,13 +208,33 @@ app:GetWindow("RWPD", {
 						tinsert(g, option);
 					end
 					local results = app:BuildSearchFilteredResponse(filteredData, function(group)
-						if group.rwp and group.itemID and (not ExcludeRecipes or (not group.f or group.f ~= 200)) then
-							local removed = not group.parent.awp and (group.parent.rwp or group.parent.u == 1);
-							if group.parent.npcID then
-								return not ExcludeRemovedRares or not removed;
-							else
-								return not ExcludeRemovedMaps or not removed;
+						if group.rwp and group.itemID then
+							-- If we want to exclude recipes, then do that.
+							if ExcludeRecipes and (group.f or 0) == 200 then
+								return false;
 							end
+							
+							-- We only want to include items from mobs that are available in the future.
+							local parent = group.parent;
+							if parent and (parent.rwp or parent.u == 1) and not parent.awp then
+								if parent.npcID and parent.npcID > 0 then
+									if ExcludeRemovedRares then
+										return false;
+									end
+								else
+									if ExcludeRemovedMaps then
+										return false;
+									end
+								end
+							end
+							
+							-- If we only want to see permanently removed things, then do that.
+							if ExcludeAddedWithPatch and group.awp then
+								return false;
+							end
+							
+							-- Return everything else.
+							return true;
 						end
 					end);
 					if #results > 0 then
