@@ -15,7 +15,6 @@ COMMUNITY_CLUES_HEADER = createHeader({
 	readable = "Community Clues",
 	constant = "COMMUNITY_CLUES_HEADER",
 	icon = [[~_.asset("Holiday_SecretsAz")]],
-	eventID = EVENTS.SECRETS_OF_AZEROTH,
 	text = {
 		en = "Community Clues",
 	},
@@ -74,9 +73,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			 crit(60855, {	-- Shifting Sands
 			 	["_quests"] = { 77305 },
 			 }),
-			-- crit(60856, {	-- What's in a Mold?
-			-- 	["_quests"] = {  },
-			-- }),
+			crit(60856, {	-- What's in a Mold?
+			 	["_quests"] = { 77822 },
+			}),
 			-- crit(60857, {	-- Forging is Key
 			-- 	["_quests"] = {  },
 			-- }),
@@ -331,11 +330,31 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 					{ 59.3, 78.8, THALDRASZUS },
 				},
 				["cost"] = {
-					{"i",208191,3},	-- Time Lost Fragment
+					{"i",208191,3},	-- Time Lost Fragment (QI)
 				}}),
 			},
 		}),
+
+		-- Day 8 --
+		q(77653, {	-- A Key Story
+			["qg"] = 207696,	-- Bobby Carlisle
+			["coord"] = { 47.8, 47.1, VALDRAKKEN },
+			["g"] = {
+				i(208486),	-- The Blacksmith and the Apprentice (QI!)
+			},
+		}),
+		q(77822, {	-- A Titanic Mold
+			["provider"] = { "i", 208827 },	-- Titan Key Mold
+			["sourceQuest"] = 77653,	-- A Key Story
+			["groups"] = {
+				i(208827, {	-- Titan Key Mold
+					["provider"] = { "o", 408226 },	-- Ancient Key Mold
+					["coord"] = { 62.9, 57.3, OHNAHRAN_PLAINS },
+				}),
+			},
+		}),
 	}),
+
 	n(COMMUNITY_CLUES_HEADER, {
 		header(HEADERS.Spell, 424082, {
 			i(210022, {
@@ -384,6 +403,7 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(77854),	-- Upon completion of Into the Sands (questID 76509)
 	q(77421),	-- accepted 'Out of the Sands' (questID 77305)
 	q(76508),	-- Upon completion of Out of the Sands (questID 77305)
+	q(77576),	-- Upon completion of A Titanic Mold (QuestID 77822)
 
 	-- TODO: Someone add these under Community Rumors achievement in a suitable structure please
 	q(77289),	-- Community Satchel 1 (Eastern Plague Lands @ 55.1, 59.4)
