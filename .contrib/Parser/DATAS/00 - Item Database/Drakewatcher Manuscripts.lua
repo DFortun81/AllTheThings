@@ -27,7 +27,6 @@ i(197018, 69218);	-- Cliffside Wylderdrake: Finned Tail
 i(197002, 69202);	-- Cliffside Wylderdrake: Flared Cheek
 i(196964, 69164);	-- Cliffside Wylderdrake: Gold and Black Armor
 i(196966, 69166);	-- Cliffside Wylderdrake: Gold and Orange Armor
-i(196967, 69167);	-- Cliffside Wylderdrake: Gold and White Armor
 i(197011, 69211);	-- Cliffside Wylderdrake: Green Scales
 i(196975, 69175);	-- Cliffside Wylderdrake: Head Fin
 i(196976, 69176);	-- Cliffside Wylderdrake: Head Mane
@@ -75,7 +74,6 @@ i(197098, 69299);	-- Highland Drake: Finned Back
 i(197106, 69307);	-- Highland Drake: Finned Head
 i(197090, 69290);	-- Highland Drake: Gold and Black Armor
 i(197094, 69295);	-- Highland Drake: Gold and Red Armor
-i(197095, 69296);	-- Highland Drake: Gold and White Armor
 i(197127, 69328);	-- Highland Drake: Grand Thorn Horns
 i(197143, 69344);	-- Highland Drake: Green Scales
 i(197131, 69332);	-- Highland Drake: Hairy Cheek
@@ -134,7 +132,6 @@ i(197404, 69605);	-- Renewed Proto-Drake: Finned Tail
 i(197408, 69609);	-- Renewed Proto-Drake: Finned Throat
 i(197346, 69547);	-- Renewed Proto-Drake: Gold and Black Armor
 i(197351, 69552);	-- Renewed Proto-Drake: Gold and Red Armor
-i(197349, 69550);	-- Renewed Proto-Drake: Gold and White Armor
 i(197381, 69582);	-- Renewed Proto-Drake: Gradient Horns
 i(197367, 69568);	-- Renewed Proto-Drake: Gray Hair
 i(197371, 69572);	-- Renewed Proto-Drake: Green Hair
@@ -211,7 +208,6 @@ i(197606, 69810);	-- Windborne Velocidrake: Swept Horns
 i(197601, 69805);	-- Windborne Velocidrake: Wavy Horns
 i(197609, 69813);	-- Windborne Velocidrake: White Horns
 i(197616, 69820);	-- Windborne Velocidrake: White Scales
-i(197582, 69786);	-- Windborne Velocidrake: White and Pink Armor
 i(197634, 69845);	-- Windborne Velocidrake: Windswept Pattern
 i(197610, 69814);	-- Windborne Velocidrake: Yellow Horns
 -- Special --
@@ -303,7 +299,6 @@ i(203346, 73837);	-- Winding Slitherdrake: Curled Nose
 i(203314, 73802);	-- Winding Slitherdrake: Curved Chin Horn
 i(203335, 73825);	-- Winding Slitherdrake: Curved Horns
 i(203320, 73808);	-- Winding Slitherdrake: Ears
-i(203319, 73807);	-- Winding Slitherdrake: Finned Cheek
 i(203361, 73853);	-- Winding Slitherdrake: Finned Tip Tail
 i(203310, 73798);	-- Winding Slitherdrake: Grand Chin Thorn
 i(203299, 73787);	-- Winding Slitherdrake: Green and Bronze Armor
@@ -317,7 +312,6 @@ i(203365, 73857);	-- Winding Slitherdrake: Hairy Throat
 i(203329, 73817);	-- Winding Slitherdrake: Heavy Horns
 i(205341, 75743);	-- Winding Slitherdrake: Heavy Scales
 i(203326, 73814);	-- Winding Slitherdrake: Helm
-i(203306, 73794);	-- Winding Slitherdrake: Horned Brow
 i(203339, 73830);	-- Winding Slitherdrake: Impaler Horns
 i(203316, 73804);	-- Winding Slitherdrake: Large Finned Crest
 i(203360, 73852);	-- Winding Slitherdrake: Large Finned Tail
@@ -326,7 +320,6 @@ i(203347, 73838);	-- Winding Slitherdrake: Large Spiked Nose
 i(203301, 73789);	-- Winding Slitherdrake: Light Blue and Copper Armor
 i(203309, 73797);	-- Winding Slitherdrake: Long Chin Horn
 i(203341, 73832);	-- Winding Slitherdrake: Long Jaw Horns
-i(203336, 73826);	-- Winding Slitherdrake: Paired Horns
 i(203307, 73795);	-- Winding Slitherdrake: Plated Brow
 i(203348, 73839);	-- Winding Slitherdrake: Pointed Nose
 i(203302, 73790);	-- Winding Slitherdrake: Purple and Silver Armor
@@ -336,7 +329,6 @@ i(203353, 73844);	-- Winding Slitherdrake: Red Scales
 i(203327, 73815);	-- Winding Slitherdrake: Tan Horns
 i(203337, 73827);	-- Winding Slitherdrake: Thorn Horns
 i(203342, 73833);	-- Winding Slitherdrake: Triple Jaw Horns
-i(203359, 73851);	-- Winding Slitherdrake: Shark Finned Tail
 i(203333, 73822);	-- Winding Slitherdrake: Short Horns
 i(203344, 73835);	-- Winding Slitherdrake: Single Jaw Horn
 i(203317, 73805);	-- Winding Slitherdrake: Small Finned Crest
@@ -348,12 +340,10 @@ i(203332, 73821);	-- Winding Slitherdrake: Spiked Horns
 i(203357, 73849);	-- Winding Slitherdrake: Spiked Tail
 i(203345, 73836);	-- Winding Slitherdrake: Split Jaw Horns
 i(203330, 73818);	-- Winding Slitherdrake: Swept Horns
-i(203298, 73786);	-- Winding Slitherdrake: White and Gold Armor
 i(203324, 73812);	-- Winding Slitherdrake: White Hair
 i(203328, 73816);	-- Winding Slitherdrake: White Horns
 i(203354, 73845);	-- Winding Slitherdrake: White Scales
 i(203304, 73792);	-- Winding Slitherdrake: Yellow and Silver Armor
-i(203355, 73846);	-- Winding Slitherdrake: Yellow Scales
 -- Special --
 i(205876, 75967);	-- Highland Drake: Embodiment of the Hellforged [Mythic]
 i(206955, 75967);	-- Highland Drake: Embodiment of the Hellforged [LFR, Normal, Heroic]
@@ -374,7 +364,20 @@ i(208106, 77259);	-- Winding Slitherdrake: Visage of the Infinite
 ------------------
 -- PATCH 10.1.7 --
 ------------------
+i(196967, 69167);	-- Cliffside Wylderdrake: Gold and White Armor
+i(197095, 69296);	-- Highland Drake: Gold and White Armor
+i(197349, 69550);	-- Renewed Proto-Drake: Gold and White Armor
+i(197582, 69786);	-- Windborne Velocidrake: White and Pink Armor
+i(203319, 73807);	-- Winding Slitherdrake: Finned Cheek
+i(203306, 73794);	-- Winding Slitherdrake: Horned Brow
+i(203336, 73826);	-- Winding Slitherdrake: Paired Horns
+i(203359, 73851);	-- Winding Slitherdrake: Shark Finned Tail
+i(203298, 73786);	-- Winding Slitherdrake: White and Gold Armor
+i(203355, 73846);	-- Winding Slitherdrake: Yellow Scales
+-- Special -- [Blizzard Combined all 5 Above into one item.. That gives 5 QuestIDs.. Hijacking One for tracking]
+i(208200, 69167);	-- Dragon Isles Drakes: Gilded Armor
+-- NYI --
 i(208859, 77876);	-- Cliffside Wylderdrake: Day of the Dead Armor
 i(208858, 77875);	-- Highland Drake: Pirates' Day Armor
-i(208742,77774);	-- Renewed Proto-Drake: Brewfest Armor
+i(208742, 77774);	-- Renewed Proto-Drake: Brewfest Armor
 i(208680, 77725);	-- Windborne Velocidrake: Hallow's End Armor

@@ -4894,42 +4894,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				-- #if AFTER 10.1.7
-				------ No Limits ------
-				q(76419, {	-- Violence Will Solve It
-					["sourceQuests"] = { 76407 },	-- Not Today, Fate
-					["provider"] = { "n", 207634 },	-- Eternus
-					["coord"] = { 37.5, 83.6, TANARIS },
-					["timeline"] = { ADDED_10_1_7 },
-				}),
-				q(76420, {	-- Butterfly Effects
-					["sourceQuests"] = { 76419 },	-- Violence Will Solve It
-					["provider"] = { "n", 207634 },	-- Eternus
-					["coord"] = { 37.9, 83.2, TANARIS },
-					["timeline"] = { ADDED_10_1_7 },
-					["g"] = {
-						i(208099),	-- Quickened Sand
-					},
-				}),
-				q(76421, {	-- The Fate We Make
-					["sourceQuests"] = { 76420 },	-- Butterfly Effects
-					["provider"] = { "n", 207634 },	-- Eternus
-					["coord"] = { 37.4, 83.6, TANARIS },
-					["timeline"] = { ADDED_10_1_7 },
-				}),
-				q(76422, {	-- Infinity and Beyond
-					["sourceQuests"] = { 76421 },	-- The Fate We Make
-					["provider"] = { "n", 206971 },	-- Nozdormu
-					["coord"] = { 37.7, 83.2, TANARIS },
-					["timeline"] = { ADDED_10_1_7 },
-					["g"] = {
-						i(210024, {	-- Ensemble: Temporal Burdens
-							i(208207),	-- Morchie's Timeworn Shoulderpads
-							i(208600),	-- Chromie's Timespun Shoulderpads
-						}),
-					},
-				}),
-				-- #endif
 			}),
 			n(RARES, {
 				n(47386, {	-- Ainamiss the Hive Queen

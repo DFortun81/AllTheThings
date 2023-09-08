@@ -188,103 +188,195 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 197478 },	-- Herald Flaps
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
-				q(67074, {	-- The Gift of Silver
-					["sourceQuests"] = { 68794 },	-- Ally of Dragons
-					["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
-					["coord"] = { 58.5, 35.7, VALDRAKKEN },
+				header(HEADERS.Quest, 67074, {	-- The Gift of Silver
+					["icon"] = 134319,
 					["g"] = {
-						i(197845),	-- Silver Scale (QI!)
+						q(67074, {	-- The Gift of Silver
+							["sourceQuests"] = { 68794 },	-- Ally of Dragons
+							["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
+							["coord"] = { 58.5, 35.7, VALDRAKKEN },
+							["g"] = {
+								i(197845),	-- Silver Scale (QI!)
+							},
+						}),
+						q(70703, {	-- The Legacy of Tyrhold
+							["sourceQuests"] = { 67074 },	-- The Gift of Silver
+							["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
+							["coord"] = { 58.5, 35.7, VALDRAKKEN },
+							["g"] = {
+								i(197845),	-- Silver Scale (QI!)
+							},
+						}),
+						q(67075, {	-- The Magic Within
+							["sourceQuests"] = { 70703 },	-- The Legacy of Tyrhold
+							["provider"] = { "n", 192480 },	-- Watcher Koranos
+							["coord"] = { 58.2, 58.8, THALDRASZUS },
+							["g"] = {
+								i(198355),	-- Tyrhold Conduit
+							}
+						}),
+						q(67076, {	-- A Spark of Discovery
+							["sourceQuests"] = { 67075 },	-- The Magic Within
+							["provider"] = { "n", 192480 },	-- Watcher Koranos
+							["coord"] = { 58.2, 58.8, THALDRASZUS },
+						}),
+						q(67077, {	-- Memories of the Past
+							["sourceQuests"] = { 67076 },	-- A Spark of Discovery
+							["provider"] = { "n", 192573 },	-- Alexstrasza the Life-Binder
+							["coord"] = { 62.1, 59.3, THALDRASZUS },
+						}),
+						q(67078, {	-- Parting Instructions
+							["sourceQuests"] = { 67077 },	-- Memories of the Past
+							["provider"] = { "n", 192496 },	-- Keeper Tyr
+							["coord"] = { 62.2, 59.2, THALDRASZUS },
+						}),
+						q(67079, {	-- Hard Lock Life
+							["sourceQuests"] = { 67078 },	-- Parting Instructions
+							["provider"] = { "n", 192480 },	-- Watcher Karanos
+							["coord"] = { 60.4, 58.9, THALDRASZUS },
+							["g"] = {
+								i(198355),	-- Tyrhold Conduit
+							}
+						}),
+						q(67081, {	-- An Infusion of Materials
+							["sourceQuests"] = { 67079 },	-- Hard Lock Life
+							["provider"] = { "n", 192496 },	-- Keeper Tyr
+							["coord"] = { 60.5, 58.6, THALDRASZUS },
+						}),
+						q(67084, {	-- The Silver Purpose
+							["sourceQuests"] = { 67081 },	-- An Infusion of Materials
+							["provider"] = { "n", 192496 },	-- Keeper Tyr
+							["coord"] = { 60.5, 58.6, THALDRASZUS },
+							["g"] = {
+								i(201781),	-- Memory of Tyr
+							},
+						}),
 					},
 				}),
-				q(70703, {	-- The Legacy of Tyrhold
-					["sourceQuests"] = { 67074 },	-- The Gift of Silver
-					["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
-					["coord"] = { 58.5, 35.7, VALDRAKKEN },
+				header(HEADERS.Quest, 72440, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Silver Mettle
+					["icon"] = 4638415,
 					["g"] = {
-						i(197845),	-- Silver Scale (QI!)
+						q(72440, {	-- Silver Mettle
+							["sourceQuests"] = { 67084 },	-- The Silver Purpose
+							["provider"] = { "n", 198941 },	-- Nozdormu
+							["coord"] = { 60.4, 58.8, THALDRASZUS },
+						}),
+						q(72441, {	-- Breaching the Tomb
+							["sourceQuests"] = { 72440 },	-- Silver Mettle
+							["provider"] = { "n", 198947 },	-- Travard
+							["coord"] = { 39.2, 41.2, 20 },	-- Keeper's Rest
+						}),
+						q(72442, {	-- The Remains of Tyr
+							["sourceQuests"] = { 72441 },	-- Breaching the Tomb
+							["provider"] = { "n", 199114 },	-- Watcher Koranos
+							["coord"] = { 38.0, 54.9, 20 },	-- Keeper's Rest
+						}),
+						q(72526, {	-- Keeper's Rest
+							["sourceQuests"] = { 72442 },	-- The Remains of Tyr
+							["provider"] = { "n", 199114 },	-- Watcher Koranos
+							["coord"] = { 38.0, 54.9, 20 },	-- Keeper's Rest
+						}),
+						q(72443, {	-- Tyr's Fall
+							["sourceQuests"] = { 72526 },	-- Keeper's Rest
+							["provider"] = { "n", 200078 },	-- Watcher Koranos
+							["coord"] = { 42.1, 85.7, 20 },	-- Keeper's Rest
+							["maps"] = 2146,	-- The Eastern Glades
+						}),
+						q(72444, {	-- A Sliver of Silver
+							["sourceQuests"] = { 72443 },	-- Tyr's Fall
+							["provider"] = { "n", 200078 },	-- Watcher Koranos
+							["coord"] = { 42.1, 85.7, 20 },	-- Keeper's Rest
+							["g"] = {
+								i(204686),	-- Titan's Containment Device (TOY!)
+							},
+						}),
 					},
-				}),
-				q(67075, {	-- The Magic Within
-					["sourceQuests"] = { 70703 },	-- The Legacy of Tyrhold
-					["provider"] = { "n", 192480 },	-- Watcher Koranos
-					["coord"] = { 58.2, 58.8, THALDRASZUS },
+				})),
+				header(HEADERS.Quest, 75632, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- A Dislocated Disc
+					["icon"] = 5172995,
 					["g"] = {
-						i(198355),	-- Tyrhold Conduit
-					}
-				}),
-				q(67076, {	-- A Spark of Discovery
-					["sourceQuests"] = { 67075 },	-- The Magic Within
-					["provider"] = { "n", 192480 },	-- Watcher Koranos
-					["coord"] = { 58.2, 58.8, THALDRASZUS },
-				}),
-				q(67077, {	-- Memories of the Past
-					["sourceQuests"] = { 67076 },	-- A Spark of Discovery
-					["provider"] = { "n", 192573 },	-- Alexstrasza the Life-Binder
-					["coord"] = { 62.1, 59.3, THALDRASZUS },
-				}),
-				q(67078, {	-- Parting Instructions
-					["sourceQuests"] = { 67077 },	-- Memories of the Past
-					["provider"] = { "n", 192496 },	-- Keeper Tyr
-					["coord"] = { 62.2, 59.2, THALDRASZUS },
-				}),
-				q(67079, {	-- Hard Lock Life
-					["sourceQuests"] = { 67078 },	-- Parting Instructions
-					["provider"] = { "n", 192480 },	-- Watcher Karanos
-					["coord"] = { 60.4, 58.9, THALDRASZUS },
-					["g"] = {
-						i(198355),	-- Tyrhold Conduit
-					}
-				}),
-				q(67081, {	-- An Infusion of Materials
-					["sourceQuests"] = { 67079 },	-- Hard Lock Life
-					["provider"] = { "n", 192496 },	-- Keeper Tyr
-					["coord"] = { 60.5, 58.6, THALDRASZUS },
-				}),
-				q(67084, {	-- The Silver Purpose
-					["sourceQuests"] = { 67081 },	-- An Infusion of Materials
-					["provider"] = { "n", 192496 },	-- Keeper Tyr
-					["coord"] = { 60.5, 58.6, THALDRASZUS },
-					["g"] = {
-						i(201781),	-- Memory of Tyr
-					},
-				}),
-				q(72440, {	-- Silver Mettle
-					["sourceQuests"] = { 67084 },	-- The Silver Purpose
-					["provider"] = { "n", 198941 },	-- Nozdormu
-					["coord"] = { 60.4, 58.8, THALDRASZUS },
-					["timeline"] = { ADDED_10_1_0 },
-				}),
-				q(72441, {	-- Breaching the Tomb
-					["sourceQuests"] = { 72440 },	-- Silver Mettle
-					["provider"] = { "n", 198947 },	-- Travard
-					["coord"] = { 39.2, 41.2, 20 },	-- Keeper's Rest
-					["timeline"] = { ADDED_10_1_0 },
-				}),
-				q(72442, {	-- The Remains of Tyr
-					["sourceQuests"] = { 72441 },	-- Breaching the Tomb
-					["provider"] = { "n", 199114 },	-- Watcher Koranos
-					["coord"] = { 38.0, 54.9, 20 },	-- Keeper's Rest
-					["timeline"] = { ADDED_10_1_0 },
-				}),
-				q(72526, {	-- Keeper's Rest
-					["sourceQuests"] = { 72442 },	-- The Remains of Tyr
-					["provider"] = { "n", 199114 },	-- Watcher Koranos
-					["coord"] = { 38.0, 54.9, 20 },	-- Keeper's Rest
-					["timeline"] = { ADDED_10_1_0 },
-				}),
-				q(72443, {	-- Tyr's Fall
-					["sourceQuests"] = { 72526 },	-- Keeper's Rest
-					["provider"] = { "n", 200078 },	-- Watcher Koranos
-					["coord"] = { 42.1, 85.7, 20 },	-- Keeper's Rest
-					["maps"] = 2146,	-- The Eastern Glades
-					["timeline"] = { ADDED_10_1_0 },
-				}),
-				q(72444, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- A Sliver of Silver
-					["sourceQuests"] = { 72443 },	-- Tyr's Fall
-					["provider"] = { "n", 200078 },	-- Watcher Koranos
-					["coord"] = { 42.1, 85.7, 20 },	-- Keeper's Rest
-					["g"] = {
-						i(204686),	-- Titan's Containment Device (TOY!)
+						q(75632, {	-- A Dislocated Disc
+							["sourceQuests"] = {
+								72444,	-- A Sliver of Silver
+								76422,	-- Infinity and Beyond
+							},
+							["provider"] = { "n", 187669 },	-- Nozdormu
+							["coord"] = { 60.4, 58.9, VALDRAKKEN },
+						}),
+						q(75633, {	-- We Have the Technology
+							["sourceQuests"] = { 75632 },	-- A Dislocated Disc
+							["provider"] = { "n", 204574 },	-- Etenrus
+							["coord"] = { 60.4, 58.9, THALDRASZUS },
+						}),
+						q(75634, {	-- Reforging the Tyr`s Guard
+							["sourceQuests"] = { 75633 },	-- We Have the Technology
+							["provider"] = { "n", 204577 },	-- Travard
+							["coord"] = { 60.4, 58.9, THALDRASZUS },
+						}),
+						q(76171, {	-- Walking the Path of Tyr
+							["sourceQuests"] = { 75634 },	-- Reforging the Tyr`s Guard
+							["provider"] = { "n", 206221 },	-- Travard
+							["coord"] = { 17.5, 31.5, THE_AZURE_SPAN },
+							["g"] = {
+								i(208198),	-- Tyr's Guard Bulwark
+							},
+						}),
+						q(75950, {	-- An Exemplar of Order: Hadwin
+							["sourceQuests"] = { 76171 },	-- Walking the Path of Tyr
+							["provider"] = { "n", 204590 },	-- Hadwin
+							["coord"] = { 17.6, 31.4, THE_AZURE_SPAN },
+						}),
+						q(75952, {	-- An Exemplar of Order: Nolaki
+							["sourceQuests"] = { 76171 },	-- Walking the Path of Tyr
+							["provider"] = { "n", 204592 },	-- Nolaki
+							["coord"] = { 17.5, 31.4, THE_AZURE_SPAN },
+						}),
+						q(75951, {	-- An Exemplar of Order: Talthis
+							["sourceQuests"] = { 76171 },	-- Walking the Path of Tyr
+							["provider"] = { "n", 204593 },	-- Talthis
+							["coord"] = { 17.5, 31.4, THE_AZURE_SPAN },
+							["g"] = {
+								i(206204),	-- Recovered Tuskarr Relic (QI!)
+							},
+						}),
+						q(75953, {	-- An Exemplar of Order: Valunei
+							["sourceQuests"] = { 76171 },	-- Walking the Path of Tyr
+							["provider"] = { "n", 204591 },	-- Valunei
+							["coord"] = { 17.6, 31.3, THE_AZURE_SPAN },
+						}),
+						q(75635, {	-- For Tyr!
+							["sourceQuests"] = {
+								75950,	-- An Exemplar of Order: Hadwin
+								75952,	-- An Exemplar of Order: Nolaki
+								75951,	-- An Exemplar of Order: Talthis
+								75953,	-- An Exemplar of Order: Valunei
+							},
+							["provider"] = { "n", 206221 },	-- Travard
+							["coord"] = { 17.6, 31.5, THE_AZURE_SPAN },
+						}),
+						q(76176, {	-- First Steps
+							["sourceQuests"] = { 75635 },	-- For Tyr!
+							["provider"] = { "n", 208968 },	-- Travard
+							["coord"] = { 59.9, 58.7, THALDRASZUS },
+						}),
+						q(75636, {	-- Tyrangulation
+							["sourceQuests"] = { 76176 },	-- First Steps
+							["provider"] = { "n", 204667 },	-- Etenrus
+							["coord"] = { 60.3, 58.8, THALDRASZUS },
+						}),
+						q(75637, {	-- The Final Beacon
+							["sourceQuests"] = { 75636 },	-- Tyrangulation
+							["provider"] = { "n", 206682 },	-- Travard
+							["coord"] = { 60.3, 58.7, THALDRASZUS },
+						}),
+						q(75638, {	-- Dislocated Disc Located
+							["sourceQuests"] = { 75637 },	-- The Final Beacon
+							["provider"] = { "n", 204605 },	-- Travard
+							["coord"] = { 60.4, 58.9, THALDRASZUS },
+							["g"] = {
+								i(208200),	-- Dragon Isles Drakes: Gilded Armor (DM!)
+							},
+						}),
 					},
 				})),
 				q(72688, {	-- Renown Supplies
@@ -891,5 +983,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDE
 		q(70757),	-- Ensemble: Azure Valdrakken Clothing
 		q(70758),	-- Ensemble: Bronze Valdrakken Clothing
 		q(70759),	-- Ensemble: Green Valdrakken Clothing
+
+		q(76177, {["timeline"] = {ADDED_10_1_7}}),	-- RP after finishing `Dislocated Disc Located`(questID 75638)
 	}),
 })));

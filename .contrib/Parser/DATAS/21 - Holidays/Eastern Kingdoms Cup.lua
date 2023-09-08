@@ -631,6 +631,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_
 				i(203349, {	-- Winding Slitherdrake: Curved Nose Horn (DM!)
 					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
 				}),
+				i(203319, {	-- Winding Slitherdrake: Finned Cheek (DM!)
+					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+				}),
+				i(203306, {	-- Winding Slitherdrake: Horned Brow (DM!)
+					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+				}),
+				i(203336, {	-- Winding Slitherdrake: Paired Horns (DM!)
+					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+				}),
+				i(203359, {	-- Winding Slitherdrake: Shark Finned Tail (DM!)
+					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+				}),
+				i(203355, {	-- Winding Slitherdrake: Yellow Scales (DM!)
+					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 50 } },
+				}),
 
 				i(206592, {	-- Drake Racer's Belt
 					["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },

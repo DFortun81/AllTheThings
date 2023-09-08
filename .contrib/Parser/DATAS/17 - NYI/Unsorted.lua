@@ -2137,10 +2137,6 @@ root(ROOTS.Unsorted, {
 			}),
 			n(DRAKEWATCHER_MANUSCRIPTS, {
 				i(208550),	-- Dragon Isles Drakes: White Scales
-				i(208859),	-- Cliffside Wylderdrake: Day of the Dead Armor
-				i(208858),	-- Highland Drake: Pirates' Day Armor
-				i(208742),	-- Renewed Proto-Drake: Brewfest Armor
-				i(208680),	-- Windborne Velocidrake: Hallow's End Armor
 			}),
 			filter(MISC, {
 				i(208986),	-- The Horseman's Horrific Hood

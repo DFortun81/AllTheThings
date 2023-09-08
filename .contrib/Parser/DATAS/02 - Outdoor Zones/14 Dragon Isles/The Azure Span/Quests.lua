@@ -1284,17 +1284,55 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 18.8, 24.4, THE_AZURE_SPAN },
 				}),
 			}),
-			header(HEADERS.Item, 200205, {	-- Tome of Polymorph: Duck
-				q(71002, {	-- Best Spell Ever
-					["description"] = "Use Blink ability to enter the cave.",
-					["provider"] = { "o", 381663 },	-- Manastorming For Beginners
-					["coord"] = { 66.4, 33.3, THE_AZURE_SPAN },
-					["classes"] = { MAGE },
-					["g"] = {
-						i(200205),	-- Tome of Polymorph: Duck (CI!)
-					},
-				}),
-			}),
+			header(HEADERS.Quest, 76592, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- A Single Wing
+				["icon"] = 4616673,
+				["g"] = {
+					q(76592, {	-- A Single Wing
+						["provider"] = { "n", 207790 },	-- Scalecommander Emberthal
+						["coord"] = { 23.0, 37.2, VALDRAKKEN },
+					}),
+					q(77098, {	-- Getting to Ground
+						["sourceQuests"] = { 76592 },	-- A Single Wing
+						["provider"] = { "n", 208236 },	-- Amythora
+						["coord"] = { 74.0, 54.8, THE_AZURE_SPAN },
+					}),
+					q(76594, {	-- Dracthyr Down
+						["sourceQuests"] = { 77098 },	-- Getting to Ground
+						["provider"] = { "n", 207819 },	-- Amythora
+						["coord"] = { 74.8, 55.1, THE_AZURE_SPAN },
+						["g"] = {
+							i(208004),	-- Wingfoil (QI!)
+						},
+					}),
+					q(77163, {	-- Seeing Reason
+						["sourceQuests"] = { 77098 },	-- Getting to Ground
+						["provider"] = { "n", 207820 },	-- Scalecommander Emberthal
+						["coord"] = { 74.8, 55.0, THE_AZURE_SPAN },
+					}),
+					q(76593, {	-- The Best Intentions
+						["sourceQuests"] = { 77098 },	-- Getting to Ground
+						["provider"] = { "n", 207819 },	-- Amythora
+						["coord"] = { 74.8, 55.1, THE_AZURE_SPAN },
+						["g"] = {
+							i(208014),	-- Sundered Shackles Key (QI!)
+						},
+					}),
+					q(76595, {	-- Urgent Exfiltration
+						["sourceQuests"] = {
+							76594,	-- Dracthyr Down
+							77163,	-- Seeing Reason
+							76593,	-- The Best Intentions
+						},
+						["provider"] = { "n", 207820 },	-- Scalecommander Emberthal
+						["coord"] = { 74.8, 55.0, THE_AZURE_SPAN },
+					}),
+					q(76597, {	-- On New Wings
+						["sourceQuests"] = { 76595 },	-- Urgent Exfiltration
+						["provider"] = { "n", 207820 },	-- Scalecommander Emberthal
+						["coord"] = { 74.8, 55.0, THE_AZURE_SPAN },
+					}),
+				},
+			})),
 			header(HEADERS.Achievement, 16323, {	-- Fragments of History
 				q(70806, {	-- Chunk of Sculpture
 					["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
@@ -1315,6 +1353,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 70231 },	-- Dialogue with Emilia Bellocq
 					["provider"] = { "i", 199840 },	-- Wrapped Gold Band
 					["coord"] = { 47.3, 24.6, THE_AZURE_SPAN },
+				}),
+			}),
+			header(HEADERS.Item, 200205, {	-- Tome of Polymorph: Duck
+				q(71002, {	-- Best Spell Ever
+					["description"] = "Use Blink ability to enter the cave.",
+					["provider"] = { "o", 381663 },	-- Manastorming For Beginners
+					["coord"] = { 66.4, 33.3, THE_AZURE_SPAN },
+					["classes"] = { MAGE },
+					["g"] = {
+						i(200205),	-- Tome of Polymorph: Duck (CI!)
+					},
 				}),
 			}),
 			------ Hemet Nesingwary ------
@@ -1454,101 +1503,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 				["classes"] = { EVOKER },
 				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
-			}),
-			------ A Single Wing ------
-			q(77098, {	-- Getting to Ground
-				["sourceQuests"] = { 76592 },	-- A Single Wing
-				["provider"] = { "n", 208236 },	-- Amythora
-				["coord"] = { 74.0, 54.8, THE_AZURE_SPAN },
-				["timeline"] = { ADDED_10_1_7 },
-			}),
-			q(77163, {	-- Seeing Reason
-				["sourceQuests"] = { 77098 },	-- Getting to Ground
-				["provider"] = { "n", 207820 },	-- Scalecommander Emberthal
-				["coord"] = { 74.8, 55.0, THE_AZURE_SPAN },
-				["timeline"] = { ADDED_10_1_7 },
-			}),
-			q(76594, {	-- Dracthyr Down
-				["sourceQuests"] = { 77098 },	-- Getting to Ground
-				["provider"] = { "n", 207819 },	-- Amythora
-				["coord"] = { 74.8, 55.1, THE_AZURE_SPAN },
-				["timeline"] = { ADDED_10_1_7 },
-				["g"] = {
-					i(208004),	-- Wingfoil
-				},
-			}),
-			q(76593, {	-- The Best Intentions
-				["sourceQuests"] = { 77098 },	-- Getting to Ground
-				["provider"] = { "n", 207819 },	-- Amythora
-				["coord"] = { 74.8, 55.1, THE_AZURE_SPAN },
-				["timeline"] = { ADDED_10_1_7 },
-				["g"] = {
-					i(208014),	-- Sundered Shackles Key
-				},
-			}),
-			q(76595, {	-- Urgent Exfiltration
-				["sourceQuests"] = {	-- This may be wrong, too early to check DBs
-					77163,	-- Seeing Reason
-					76594,	-- Dracthyr Down
-					76593,	-- The Best Intentions
-				},
-				["provider"] = { "n", 207820 },	-- Scalecommander Emberthal
-				["coord"] = { 74.8, 55.0, THE_AZURE_SPAN },
-				["timeline"] = { ADDED_10_1_7 },
-			}),
-			q(76597, {	-- On New Wings
-				["sourceQuests"] = { 76595 },	-- Urgent Exfiltration
-				["provider"] = { "n", 207820 },	-- Scalecommander Emberthal
-				["coord"] = { 74.8, 55.0, THE_AZURE_SPAN },
-				["timeline"] = { ADDED_10_1_7 },
-			}),
-			------ Tyr Part 3 ------
-			q(76171, {	-- Walking the Path of Tyr
-				["sourceQuests"] = { 75634 },	-- Reforging the Tyr`s Guard
-				["provider"] = { "n", 206221 },	-- Travard
-				["coord"] = { 17.5, 31.5, THE_AZURE_SPAN },
-				["timeline"] = { ADDED_10_1_7 },
-				["g"] = {
-					i(208198),	-- Tyr's Guard Bulwark
-				},
-			}),
-			q(75950, {	-- An Exemplar of Order: Hadwin
-				["sourceQuests"] = { 76171 },	-- Walking the Path of Tyr
-				["provider"] = { "n", 204590 },	-- Hadwin
-				["coord"] = { 17.6, 31.4, THE_AZURE_SPAN },
-				["timeline"] = { ADDED_10_1_7 },
-			}),
-			q(75951, {	-- An Exemplar of Order: Talthis
-				["sourceQuests"] = { 76171 },	-- Walking the Path of Tyr
-				["provider"] = { "n", 204593 },	-- Talthis
-				["coord"] = { 17.5, 31.4, THE_AZURE_SPAN },
-				["timeline"] = { ADDED_10_1_7 },
-				["g"] = {
-					i(206204),	-- Recovered Tuskarr Relic
-				},
-			}),
-			q(75952, {	-- An Exemplar of Order: Nolaki
-				["sourceQuests"] = { 76171 },	-- Walking the Path of Tyr
-				["provider"] = { "n", 204592 },	-- Nolaki
-				["coord"] = { 17.5, 31.4, THE_AZURE_SPAN },
-				["timeline"] = { ADDED_10_1_7 },
-			}),
-			q(75953, {	-- An Exemplar of Order: Valunei
-				["sourceQuests"] = { 76171 },	-- Walking the Path of Tyr
-				["provider"] = { "n", 204591 },	-- Valunei
-				["coord"] = { 17.6, 31.3, THE_AZURE_SPAN },
-				["timeline"] = { ADDED_10_1_7 },
-			}),
-			q(75635, {	-- For Tyr!
-				["sourceQuests"] = { 
-					75950,	-- An Exemplar of Order: Hadwin
-					75951,	-- An Exemplar of Order: Talthis
-					75952,	-- An Exemplar of Order: Nolaki
-					75953,	-- An Exemplar of Order: Valunei
-					},
-				["provider"] = { "n", 206221 },	-- Travard
-				["coord"] = { 17.6, 31.5, THE_AZURE_SPAN },
-				["timeline"] = { ADDED_10_1_7 },
 			}),
 			n(BONUS_OBJECTIVES, {
 				q(72358, {	-- Cascade

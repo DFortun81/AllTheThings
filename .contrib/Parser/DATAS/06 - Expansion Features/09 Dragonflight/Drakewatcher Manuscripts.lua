@@ -710,10 +710,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		header(HEADERS.Item, 194521, sharedData({	-- Cliffside Wylderdrake
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
-			["timeline"] = { "created 10.0.0.46247" },
+			["timeline"] = { CREATED_10_0_0 },
 		}, {
 			i(196984),	-- Cliffside Wylderdrake: Finned Jaw
-			i(196967),	-- Cliffside Wylderdrake: Gold and White Armor
 			i(196993),	-- Cliffside Wylderdrake: Sleek Horns
 			i(197014),	-- Cliffside Wylderdrake: White Scales
 		})),
@@ -775,9 +774,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		header(HEADERS.Item, 194705, sharedData({	-- Highland Drake
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
-			["timeline"] = { "created 10.0.0.46247" },
+			["timeline"] = { CREATED_10_0_0 },
 		}, {
-			i(197095),	-- Highland Drake: Gold and White Armor
 			i(197119),	-- Highland Drake: Helm
 			i(197146),	-- Highland Drake: White Scales
 		})),
@@ -836,9 +834,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		header(HEADERS.Item, 194034, sharedData({	-- Renewed Proto-Drake
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
-			["timeline"] = { "created 10.0.0.46247" },
+			["timeline"] = { CREATED_10_0_0 },
 		}, {
-			i(197349),	-- Renewed Proto-Drake: Gold and White Armor
 			i(197371),	-- Renewed Proto-Drake: Green Hair
 			i(197356),	-- Renewed Proto-Drake: Hairy Back
 			i(197354),	-- Renewed Proto-Drake: Horned Back
@@ -887,11 +884,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		header(HEADERS.Item, 194549, sharedData({	-- Windborne Velocidrake
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
-			["timeline"] = { "created 10.0.0.46247" },
+			["timeline"] = { CREATED_10_0_0 },
 		}, {
 			i(197621),	-- Windborne Velocidrake: Exposed Finned Tail
 			i(197616),	-- Windborne Velocidrake: White Scales
-			i(197582),	-- Windborne Velocidrake: White and Pink Armor
 		})),
 	}),
 	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
@@ -1013,28 +1009,22 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		header(HEADERS.Item, 204361, sharedData({	-- Winding Slitherdrake
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
-			["timeline"] = { "created 10.1.0.49407" },
+			["timeline"] = { CREATED_10_1_0 },
 		}, {
 			i(203340),	-- Winding Slitherdrake: Cluster Jaw Horns
-			i(203319),	-- Winding Slitherdrake: Finned Cheek
 			i(203311),	-- Winding Slitherdrake: Hairy Chin
 			i(203343),	-- Winding Slitherdrake: Hairy Jaw
 			i(203329),	-- Winding Slitherdrake: Heavy Horns
-			i(203306),	-- Winding Slitherdrake: Horned Brow
 			i(203360),	-- Winding Slitherdrake: Large Finned Tail
 			i(203301),	-- Winding Slitherdrake: Light Blue and Copper Armor
-			i(203336),	-- Winding Slitherdrake: Paired Horns
 			i(203302),	-- Winding Slitherdrake: Purple and Silver Armor
 			i(203337),	-- Winding Slitherdrake: Thorn Horns
-			i(203359),	-- Winding Slitherdrake: Shark Finned Tail
 			i(203333),	-- Winding Slitherdrake: Short Horns
 			i(203344),	-- Winding Slitherdrake: Single Jaw Horn
 			i(203315),	-- Winding Slitherdrake: Small Spiked Crest
 			i(203332),	-- Winding Slitherdrake: Spiked Horns
 			i(203357),	-- Winding Slitherdrake: Spiked Tail
-			i(203298),	-- Winding Slitherdrake: White and Gold Armor
 			i(203354),	-- Winding Slitherdrake: White Scales
-			i(203355),	-- Winding Slitherdrake: Yellow Scales
 		})),
 	})),
 	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {
@@ -1055,6 +1045,40 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(208106),	-- Winding Slitherdrake: Visage of the Infinite (DM!)
 			i(203322),	-- Winding Slitherdrake: Blonde Hair (DM!)
 			i(203349),	-- Winding Slitherdrake: Curved Nose Horn (DM!)
+		}),
+	})),
+	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
+		i(208200),	-- Dragon Isles Drakes: Gilded Armor (DM!)
+		header(HEADERS.Item, 194521, sharedData({	-- Cliffside Wylderdrake
+			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
+			["timeline"] = { CREATED_10_1_7 },
+		}, {
+			i(208859),	-- Cliffside Wylderdrake: Day of the Dead Armor
+		})),
+		header(HEADERS.Item, 194705, sharedData({	-- Highland Drake
+			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
+			["timeline"] = { CREATED_10_1_7 },
+		}, {
+			i(208858),	-- Highland Drake: Pirates' Day Armor
+		})),
+		header(HEADERS.Item, 194034, sharedData({	-- Renewed Proto-Drake
+			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
+			["timeline"] = { CREATED_10_1_7 },
+		}, {
+			i(208742),	-- Renewed Proto-Drake: Brewfest Armor
+		})),
+		header(HEADERS.Item, 194549, sharedData({	-- Windborne Velocidrake
+			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
+			["timeline"] = { CREATED_10_1_7 },
+		}, {
+			i(208680),	-- Windborne Velocidrake: Hallow's End Armor
+		})),
+		header(HEADERS.Item, 204361, {	-- Winding Slitherdrake
+			i(203319),	-- Winding Slitherdrake: Finned Cheek (DM!)
+			i(203306),	-- Winding Slitherdrake: Horned Brow (DM!)
+			i(203336),	-- Winding Slitherdrake: Paired Horns (DM!)
+			i(203359),	-- Winding Slitherdrake: Shark Finned Tail (DM!)
+			i(203355),	-- Winding Slitherdrake: Yellow Scales (DM!)
 		}),
 	})),
 })));
@@ -1081,5 +1105,15 @@ root(ROOTS.NeverImplemented, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_1
 		i(192523),	-- Renewed Proto-Drake: Green Scales (DM!)
 		-- Only QuestID
 		q(69556),	-- Renewed Proto-Drake: Finned Back (DM!)
+	}),
+})));
+root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	m(DRAKEWATCHER_MANUSCRIPTS, {
+		-- Dragon Isles Drakes: Gilded Armor
+		i(196967, {["timeline"] = {ADDED_10_1_7}}),	-- Cliffside Wylderdrake: Gold and White Armor (DM!)
+		i(197095, {["timeline"] = {ADDED_10_1_7}}),	-- Highland Drake: Gold and White Armor (DM!)
+		i(197349, {["timeline"] = {ADDED_10_1_7}}),	-- Renewed Proto-Drake: Gold and White Armor (DM!)
+		i(197582, {["timeline"] = {ADDED_10_1_7}}),	-- Windborne Velocidrake: White and Pink Armor (DM!)
+		i(203298, {["timeline"] = {ADDED_10_1_7}}),	-- Winding Slitherdrake: White and Gold Armor (DM!)
 	}),
 })));
