@@ -1824,9 +1824,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #if BEFORE 4.0.3
 					["coords"] = {
-						{ 74.2 28.4, LOCH_MODAN },
-						{ 69.4 22.2, LOCH_MODAN },
-						{ 64.4 20.6, LOCH_MODAN },
+						{ 74.2, 28.4, LOCH_MODAN },
+						{ 69.4, 22.2, LOCH_MODAN },
+						{ 64.4, 20.6, LOCH_MODAN },
 					},
 					-- #endif
 				}),
@@ -1922,9 +1922,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
-						{ 28.6 45.0, LOCH_MODAN },
-						{ 25.0 32.6, LOCH_MODAN },
-						{ 37.4 16.6, LOCH_MODAN },
+						{ 28.6, 45.0, LOCH_MODAN },
+						{ 25.0, 32.6, LOCH_MODAN },
+						{ 37.4, 16.6, LOCH_MODAN },
 					},
 					-- #elseif AFTER 10.1.7
 					["coords"] = {
@@ -1962,10 +1962,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE 4.0.3
 					["cr"] = 1163,  -- Stonesplinter Skullthumper
 					["coords"] = {
-						{ 51.6 24.6, LOCH_MODAN },
-						{ 48.8 29.6, LOCH_MODAN },
-						{ 36.8 84.8, LOCH_MODAN },
-						{ 29.8 84.0, LOCH_MODAN },
+						{ 51.6, 24.6, LOCH_MODAN },
+						{ 48.8, 29.6, LOCH_MODAN },
+						{ 36.8, 84.8, LOCH_MODAN },
+						{ 29.8, 84.0, LOCH_MODAN },
 					},
 					-- #elseif AFTER 10.1.7
 					["crs"] = {

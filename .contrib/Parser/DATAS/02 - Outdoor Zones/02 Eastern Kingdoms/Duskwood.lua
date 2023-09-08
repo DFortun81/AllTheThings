@@ -2156,10 +2156,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE 4.0.3
 					["cr"] = 569,	-- Green Recluse
 					["coords"] = {
-						{ 72.8 21.6, DUSKWOOD },
-						{ 56.6 20.0, DUSKWOOD },
-						{ 17.0 70.6, DUSKWOOD },
-						{ 12.6 51.8, DUSKWOOD },
+						{ 72.8, 21.6, DUSKWOOD },
+						{ 56.6, 20.0, DUSKWOOD },
+						{ 17.0, 70.6, DUSKWOOD },
+						{ 12.6, 51.8, DUSKWOOD },
 					},
 					-- #elseif AFTER 10.1.7
 					["cr"] = 949,	-- Carrion Recluse

@@ -1443,9 +1443,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coords"] = {
 						{ 54.2, 62.0, WESTFALL },
 						{ 55.8, 68.4, WESTFALL },
-						{ 55.4, 69.4 WESTFALL },
+						{ 55.4, 69.4, WESTFALL },
 						{ 31.4, 70.4, WESTFALL },
-						{ 48.8 62.6, WESTFALL },
+						{ 48.8, 62.6, WESTFALL },
 					},
 					-- #else
 					["coords"] = {
