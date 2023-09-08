@@ -9,6 +9,12 @@ DREAMSURGE = createHeader({
 		ru = "Приливы снов",
 	},
 });
+-- Most Dreambound Item only turns into a single other Item
+local function DreamboundBOA(itemID, vendorItemID)
+	local i = i(itemID);
+	i.sym = {{"select","itemID",vendorItemID}};
+	return i;
+end
 local DREAMSURGE_COALESCENCE = 207026;
 local DREAMSURGE_CHRYSALIS = 208153;
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
@@ -29,7 +35,43 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 45.6, 39.8, THE_AZURE_SPAN },
 				},
 				["g"] = {
-					i(209833),	-- Crate of Dreambound Armor
+					i(209833, {	-- Crate of Dreambound Armor
+						["sym"] = {{"select","itemID",
+							208918,	-- Dreambound Cloth Gloves
+							208917,	-- Dreambound Cloth Boots
+							208911,	-- Dreambound Cloth Belt
+							208908,	-- Dreambound Cloth Bracers
+							208903,	-- Dreambound Cloth Spaulders
+							208900,	-- Dreambound Cloth Leggings
+							208895,	-- Dreambound Cloth Chestpiece
+							208891,	-- Dreambound Cloth Helm
+							208921,	-- Dreambound Leather Gloves
+							208914,	-- Dreambound Leather Boots
+							208913,	-- Dreambound Leather Belt
+							208906,	-- Dreambound Leather Bracers
+							208905,	-- Dreambound Leather Spaulders
+							208898,	-- Dreambound Leather Leggings
+							208897,	-- Dreambound Leather Chestpiece
+							208893,	-- Dreambound Leather Helm
+							208920,	-- Dreambound Mail Gloves
+							208915,	-- Dreambound Mail Boots
+							208912,	-- Dreambound Mail Belt
+							208907,	-- Dreambound Mail Bracers
+							208904,	-- Dreambound Mail Spaulders
+							208899,	-- Dreambound Mail Leggings
+							208896,	-- Dreambound Mail Chestpiece
+							208892,	-- Dreambound Mail Helm
+							208919,	-- Dreambound Plate Gloves
+							208916,	-- Dreambound Plate Boots
+							208910,	-- Dreambound Plate Belt
+							208909,	-- Dreambound Plate Bracers
+							208902,	-- Dreambound Plate Spaulders
+							208901,	-- Dreambound Plate Leggings
+							208894,	-- Dreambound Plate Chestpiece
+							208890,	-- Dreambound Plate Helm
+							208922,	-- Dreambound Cloak
+						}},
+					}),
 				},
 			}),
 			q(77251, {	-- Shaping the Dreamsurge
@@ -105,56 +147,91 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["cost"] = {{ "i", DREAMSURGE_COALESCENCE, 100 }},
 				},FILTERFUNC_itemID,{
 					filter(CLOTH, {
-						i(208918),	-- Dreambound Cloth Gloves
-						i(208917),	-- Dreambound Cloth Boots
-						i(208911),	-- Dreambound Cloth Belt
-						i(208908),	-- Dreambound Cloth Bracers
-						i(208903),	-- Dreambound Cloth Spaulders
-						i(208900),	-- Dreambound Cloth Leggings
-						i(208895),	-- Dreambound Cloth Chestpiece
-						i(208891),	-- Dreambound Cloth Helm
+						DreamboundBOA(208918, 209409),	-- Dreambound Cloth Gloves
+						DreamboundBOA(208917, 209410),	-- Dreambound Cloth Boots
+						DreamboundBOA(208911, 209406),	-- Dreambound Cloth Belt
+						DreamboundBOA(208908, 209405),	-- Dreambound Cloth Bracers
+						DreamboundBOA(208903, 209380),	-- Dreambound Cloth Spaulders
+						DreamboundBOA(208900, 209407),	-- Dreambound Cloth Leggings
+						DreamboundBOA(208895, 209411),	-- Dreambound Cloth Chestpiece
+						DreamboundBOA(208891, 209408),	-- Dreambound Cloth Helm
 					}),
 					filter(LEATHER, {
-						i(208921),	-- Dreambound Leather Gloves
-						i(208914),	-- Dreambound Leather Boots
-						i(208913),	-- Dreambound Leather Belt
-						i(208906),	-- Dreambound Leather Bracers
-						i(208905),	-- Dreambound Leather Spaulders
-						i(208898),	-- Dreambound Leather Leggings
-						i(208897),	-- Dreambound Leather Chestpiece
-						i(208893),	-- Dreambound Leather Helm
+						DreamboundBOA(208921, 209403),	-- Dreambound Leather Gloves
+						DreamboundBOA(208914, 209404),	-- Dreambound Leather Boots
+						DreamboundBOA(208913, 209400),	-- Dreambound Leather Belt
+						DreamboundBOA(208906, 209399),	-- Dreambound Leather Bracers
+						DreamboundBOA(208905, 209381),	-- Dreambound Leather Spaulders
+						DreamboundBOA(208898, 209401),	-- Dreambound Leather Leggings
+						DreamboundBOA(208897, 209382),	-- Dreambound Leather Chestpiece
+						DreamboundBOA(208893, 209402),	-- Dreambound Leather Helm
 					}),
 					filter(MAIL, {
-						i(208920),	-- Dreambound Mail Gloves
-						i(208915),	-- Dreambound Mail Boots
-						i(208912),	-- Dreambound Mail Belt
-						i(208907),	-- Dreambound Mail Bracers
-						i(208904),	-- Dreambound Mail Spaulders
-						i(208899),	-- Dreambound Mail Leggings
-						i(208896),	-- Dreambound Mail Chestpiece
-						i(208892),	-- Dreambound Mail Helm
+						DreamboundBOA(208920, 209396),	-- Dreambound Mail Gloves
+						DreamboundBOA(208915, 209397),	-- Dreambound Mail Boots
+						DreamboundBOA(208912, 209392),	-- Dreambound Mail Belt
+						DreamboundBOA(208907, 209391),	-- Dreambound Mail Bracers
+						DreamboundBOA(208904, 209393),	-- Dreambound Mail Spaulders
+						DreamboundBOA(208899, 209394),	-- Dreambound Mail Leggings
+						DreamboundBOA(208896, 209398),	-- Dreambound Mail Chestpiece
+						DreamboundBOA(208892, 209395),	-- Dreambound Mail Helm
 					}),
 					filter(PLATE, {
-						i(208919),	-- Dreambound Plate Gloves
-						i(208916),	-- Dreambound Plate Boots
-						i(208910),	-- Dreambound Plate Belt
-						i(208909),	-- Dreambound Plate Bracers
-						i(208902),	-- Dreambound Plate Spaulders
-						i(208901),	-- Dreambound Plate Leggings
-						i(208894),	-- Dreambound Plate Chestpiece
-						i(208890),	-- Dreambound Plate Helm
+						DreamboundBOA(208919, 209387),	-- Dreambound Plate Gloves
+						DreamboundBOA(208916, 209388),	-- Dreambound Plate Boots
+						DreamboundBOA(208910, 209384),	-- Dreambound Plate Belt
+						DreamboundBOA(208909, 209383),	-- Dreambound Plate Bracers
+						DreamboundBOA(208902, 209388),	-- Dreambound Plate Spaulders
+						DreamboundBOA(208901, 209386),	-- Dreambound Plate Leggings
+						DreamboundBOA(208894, 209389),	-- Dreambound Plate Chestpiece
+						DreamboundBOA(208890, 209390),	-- Dreambound Plate Helm
 					}),
 					n(BACK, {
-						i(208922),	-- Dreambound Cloak
+						i(208922, {	-- Dreambound Cloak
+							["sym"] = {{"select","itemID",
+								209414,	-- Dreambound Drape
+								209413,	-- Dreambound Cape
+								209412,	-- Dreambound Greatcloak
+								209357,	-- Dreambound Shawl
+							}},
+						}),
 					}),
 					filter(FINGER_F, {
-						i(208923),	-- Dreambound Ring
+						i(208923, {	-- Dreambound Ring
+							["sym"] = {{"select","itemID",
+								209368,	-- Dreambound Loop
+								209367,	-- Dreambound Signet
+								209358,	-- Dreambound Band
+							}},
+						}),
 					}),
 					filter(NECK_F, {
-						i(208924),	-- Dreambound Necklace
+						DreamboundBOA(208924, 209356),	-- Dreambound Necklace
 					}),
 					n(WEAPONS, {
-						i(208926),	-- Dreambound Weapon
+						i(208926, {	-- Dreambound Weapon
+							["sym"] = {{"select","itemID",
+								209379,	-- Dreambound Barrier
+								209378,	-- Dreambound Scepter
+								209377,	-- Dreambound Wand
+								209376,	-- Dreambound Polearm
+								209375,	-- Dreambound Rifle
+								209374,	-- Dreambound Spellblade
+								209373,	-- Dreambound Shank
+								209372,	-- Dreambound Kris
+								209371,	-- Dreambound Sword
+								209370,	-- Dreambound Blade
+								209369,	-- Dreambound Greatsword
+								209366,	-- Dreambound Hacker
+								209365,	-- Dreambound Cleaver
+								209364,	-- Dreambound Censer
+								209363,	-- Dreambound Mallet
+								209362,	-- Dreambound Cudgel
+								209361,	-- Dreambound Halberd
+								209360,	-- Dreambound Staff
+								209359,	-- Dreambound Warglaive
+							}},
+						}),
 					}),
 
 					i(198824, {	-- Duskwing Ohuna (MOUNT!)
@@ -188,7 +265,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(209414),	-- Dreambound Drape
 						i(209413),	-- Dreambound Cape
 						i(209412),	-- Dreambound Greatcloak
-						i(209411),	-- Dreambound Vestment
 						i(209357),	-- Dreambound Shawl
 					}),
 					filter(FINGER_F, {
