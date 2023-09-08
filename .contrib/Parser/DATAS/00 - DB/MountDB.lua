@@ -1668,6 +1668,12 @@ i(198824, 385262);	-- Duskwing Ohuna
 i(192807, 374278);	-- Renewed Magmammoth
 i(205208, 408654);	-- Sandy Shalewing [TODO: Check if you actually get item]
 i(210022, 424082);	-- Mimiron's Jumpjets
+
+------------------
+-- PATCH 10.2.0 --
+------------------
+i(210412, 425338);
+
 -- Unsorted
 i(208598, 419345);	-- Eve's Ghastly Rider
 i(0, 419567);		-- Ginormous Grrloc
