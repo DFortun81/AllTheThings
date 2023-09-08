@@ -752,7 +752,6 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 					})),
 					-- Misc
 					q(45392, {	-- Dark Memento
-						["sourceQuest"] = 42526,	-- Tech It Up A Notch
 						["provider"] = { "n", 105099 },	-- Dark Ranger Velonara
 						["coord"] = { 49.4, 49.7, TRUESHOT_LODGE },
 						["timeline"] = { "added 7.1.0" },
