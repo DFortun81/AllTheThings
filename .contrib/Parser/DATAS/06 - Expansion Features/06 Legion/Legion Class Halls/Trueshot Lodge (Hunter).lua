@@ -241,6 +241,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							41009,	-- Hunter to Hunter
 							40385,	-- The Spear in the Shadow
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 103693 },	-- Outfitter Reynolds
 						["coord"] = { 44.6, 49.0, TRUESHOT_LODGE },
 						["g"] = {
