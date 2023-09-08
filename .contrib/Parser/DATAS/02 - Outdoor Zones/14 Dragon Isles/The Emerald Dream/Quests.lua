@@ -116,9 +116,131 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			q(76403, {	-- Mayhem Incarnate
-				["sourceQuests"] = { 76442 },	-- Forlorn Hop
+				["sourceQuests"] = { 76443 },	-- The Looming Cinder
 				["provider"] = { "n", 208506 },	-- Vyranoth
 				["coord"] = { 50.8, 62.7, TREE_1 },
+			}),
+			q(76343, {	-- Best Laid Plans
+				["sourceQuests"] = { 76403 },	-- Mayhem Incarnate
+				["provider"] = { "n", 206612 },	-- Vyranoth
+				["coord"] = { 36.8, 25.8, TREE_1 },
+			}),
+			q(76342, {	-- Light 'Em Up!
+				["sourceQuests"] = { 76403 },	-- Mayhem Incarnate
+				["provider"] = { "n", 206619 },	-- Buri <Claw of Vyranoth>
+				["coord"] = { 36.8, 26.0, TREE_1 },
+			}),
+			q(76344, {	-- Primalist Directive
+				["sourceQuests"] = {
+					76343,	-- Best Laid Plans
+					76342,	-- Light 'Em Up!
+				},
+				["provider"] = { "n", 206619 },	-- Buri <Claw of Vyranoth>
+				["coord"] = { 36.8, 26.0, TREE_1 },
+			}),
+			q(76345, {	-- Finding Terro / Alex: this quest pop only when 76344 is in quest log, but not completed
+				["sourceQuests"] = { 76344 },	-- Primalist Directive
+				["provider"] = { "n", 206612 },	-- Vyranoth
+				["coord"] = { 36.8, 25.8, TREE_1 },
+			}),
+			q(76532, {	-- Assault on the Wellspring
+				["sourceQuests"] = {
+					76344,	-- Primalist Directive
+					76345,	-- Finding Terro
+				},
+				["provider"] = { "n", 210178 },	-- Buri <Claw of Vyranoth>
+				["coord"] = { 39.5, 22.8, TREE_1 },
+			}),
+			q(76348, {	-- Big Bright Beautiful Barrier
+				["sourceQuests"] = { 76532 },	-- Assault on the Wellspring
+				["provider"] = { "n", 208738 },	-- Suzska
+				["coord"] = { 27.6, 32.1, TREE_1 },
+			}),
+			q(76347, {	-- Power, Eruption, and Lies
+				["sourceQuests"] = { 76348 },	-- Big Bright Beautiful Barrier
+				["provider"] = { "n", 208738 },	-- Suzska
+				["coord"] = { 33.5, 30.3, TREE_1 },
+			}),
+			q(77178, {	-- Tactical Withdrawal
+				["sourceQuests"] = { 76347 },	-- Power, Eruption, and Lies
+				["provider"] = { "n", 210733 },	-- Vyranoth
+				["coord"] = { 33.7, 25.2, TREE_1 },
+				["g"] = {
+					--ach(19026),	-- crit 3 / Ice and Fire
+				},
+			}),
+			q(76327, {	-- Eye of Ysera
+				["sourceQuests"] = { 77178 },	-- Tactical Withdrawal
+				["provider"] = { "n", 206408 },	-- Ysera
+				["coord"] = { 50.8, 62.9, TREE_1 },
+			}),
+			q(76328, {	-- A New Brute
+				["sourceQuests"] = { 76327 },	-- Eye of Ysera
+				["provider"] = { "n", 206416 },	-- Merithra
+				["coord"] = { 52.1, 29.1, TREE_1 },
+				["g"] = {
+					i(208124),	-- The Dreamer's Essence (QI!)
+				},
+			}),
+			q(76330, {	-- Disarm Specialist
+				["sourceQuests"] = { 76328 },	-- A New Brute
+				["provider"] = { "n", 206406 },	-- Merithra
+				["coord"] = { 52.1, 24.2, TREE_1 },
+				["g"] = {
+					i(208184),	-- Dreamy Dust (QI!)
+				},
+			}),
+			q(76329, {	-- In and Out Scout
+				["sourceQuests"] = { 76328 },	-- A New Brute
+				["provider"] = { "n", 206406 },	-- Merithra
+				["coord"] = { 52.1, 24.2, TREE_1 },
+				["g"] = {
+					i(210016),	-- Somnowl's Shroud (QI!)
+				},
+			}),
+			q(76334, {	-- Good Counsel
+				["sourceQuests"] = {
+					76330,	-- Disarm Specialist
+					76329,	-- In and Out Scout
+				},
+				["provider"] = { "n", 206406 },	-- Merithra	
+				["coord"] = { 53.0, 28.1, TREE_1 },
+			}),
+			q(76332, {	-- Putting Roots Down
+				["sourceQuests"] = { 76334 },	-- Good Counsel
+				["provider"] = { "n", 206406 },	-- Merithra
+				["coord"] = { 53.0, 28.1, TREE_1 },
+			}),
+			q(76331, {	-- Merithra's Gambit
+				["sourceQuests"] = { 76332 },	-- Putting Roots Down
+				["provider"] = { "n", 206406 },	-- Merithra
+				["coord"] = { 53.0, 28.1, TREE_1 },
+			}),
+			q(76335, {	-- Might of the Forest
+				["sourceQuests"] = { 76331 },	-- Merithra's Gambit
+				["provider"] = { "n", 206406 },	-- Merithra
+				["coord"] = { 52.9, 28.0, TREE_1 },
+			}),
+			q(76333, {	-- Triple Threat
+				["sourceQuests"] = { 76331 },	-- Merithra's Gambit
+				["provider"] = { "n", 206406 },	-- Merithra
+				["coord"] = { 52.9, 28.0, TREE_1 },
+			}),
+			q(76336, {	-- Flight and Fight
+				["sourceQuests"] = {
+					76335,	-- Might of the Forest
+					76333,	-- Triple Threat
+				},
+				["provider"] = { "n", 206416 },	-- Merithra
+				["coord"] = { 57.2, 26.1, TREE_1 },
+			}),
+			q(76337, {	-- The Ember Still Smolders
+				["sourceQuests"] = { 76336 },	-- Flight and Fight
+				["provider"] = { "n", 206406 },	-- Merithra
+				["coord"] = { 51.9, 29.4, TREE_1 },
+				["g"] = {
+					--ach(19026),	-- crit (4) / Eye of Ysera
+				},
 			}),
 			-- non-story quests below for now
 			q(77948, {	-- Burning Out
@@ -358,6 +480,10 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--- pop during main story
 		q(77572),	-- after qID 77283 / one of them wq unlock
 		q(77887),	-- after qID 77283 / one of them probably achievement crit, may be?
+		q(76558),	-- during qID 76345 / when you investigate Terro body (dialog option)
+		q(77526),	-- pop after picked up qID 77178 / currently unsure why, probably animation or changing npcs location trigger?
+		q(77491),	-- pop while was afk / 'A massive crack of lightning breaks the sky as the primalist open a portal to the elemental plane!' ?
+		q(77490),	-- pop while was afk / last chat text was that '%player_name% creates Shipment of Goods' multiple times
 		---
 		q(77808),	-- Quest "What Do I Call You?": Pick the title of "Mother"
 		q(77809),	-- Quest "What Do I Call You?": Pick the title of "Father"
