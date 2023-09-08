@@ -78,6 +78,8 @@ namespace ATT
         {
             Console.WriteLine("Harvester Started using Date:" + DateStamp);
 
+            AppDomain.CurrentDomain.UnhandledException += UnHandledExceptionCapture;
+
             ObjType[] parseTypes = (ObjType[])Enum.GetValues(typeof(ObjType));
             foreach (ObjType parseType in parseTypes)
             {
@@ -173,7 +175,13 @@ namespace ATT
 
             while (WaitForParseQueue || WaitForParsingData || ParseDatas.Count > 0) { Thread.Sleep(50); }
 
-            //Console.ReadLine();
+            Console.WriteLine("Harvester Complete!");
+        }
+
+        private static void UnHandledExceptionCapture(object sender, UnhandledExceptionEventArgs e)
+        {
+            Console.WriteLine($"Exception!");
+            Console.WriteLine(MiniJSON.Json.Serialize(e.ExceptionObject));
         }
 
         private static void DetermineAvailableIDs()
@@ -1481,12 +1489,26 @@ namespace ATT
                                 if (parsed.TryGetValue("itemID", out object itemID) && int.TryParse(itemID.ToString(), out int itemVal))
                                 {
                                     Console.WriteLine("Parsed Item : " + itemID.ToString() + "\t\tQueue: " + ParseDatas.Count.ToString());
-                                    dataItems.Add(itemVal, parsed);
+                                    try
+                                    {
+                                        dataItems.Add(itemVal, parsed);
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        Console.WriteLine($"Failed adding parsed Item {itemVal}. {ex.Message}");
+                                    }
                                 }
                                 else if (parsed.TryGetValue("questID", out object questID) && int.TryParse(questID.ToString(), out int questVal))
                                 {
                                     Console.WriteLine("Parsed Quest: " + questID.ToString() + "\t\tQueue: " + ParseDatas.Count.ToString());
-                                    dataQuests.Add(questVal, parsed);
+                                    try
+                                    {
+                                        dataQuests.Add(questVal, parsed);
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        Console.WriteLine($"Failed adding parsed Quest {questVal}. {ex.Message}");
+                                    }
                                 }
                             }
                         }
