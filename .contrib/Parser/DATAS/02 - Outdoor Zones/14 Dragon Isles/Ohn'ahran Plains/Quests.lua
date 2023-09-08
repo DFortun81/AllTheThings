@@ -1240,6 +1240,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			q(76317, {	-- Call of the Dream
 				-- this is granted automatically no matter where you are. Probably worth moving somewhere else than here
 				["timeline"] = { ADDED_10_2_0 },
+				["g"] = {
+					i(208181), -- Shandris's Scouting Report
+				},
 			}),
 			q(76318, {	-- Emerald Welcome
 				["sourceQuests"] = { 76317 },	-- Call of the Dream

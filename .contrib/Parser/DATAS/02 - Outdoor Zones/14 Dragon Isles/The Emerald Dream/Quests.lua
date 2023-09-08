@@ -43,6 +43,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 53.8, 63.9, TREE_1 },
 				["g"] = {
 					i(209937),	-- Chartreuse Champion's Gavel
+					i(209940),	-- Spirited Stag's Spire
+					i(209931),	-- Summer Soother's Cane
+					i(209936),	-- Summer Soother's Mallet
 				},
 			}),
 			q(76325, {	-- Between Fyrakk and a Hard Place
@@ -54,6 +57,68 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 76325 },	-- Between Fyrakk and a Hard Place
 				["provider"] = { "n", 206979 },	-- Merithra
 				["coord"] = { 51.0, 70.0, TREE_1 },
+			}),
+			q(77283, {	-- A Multi-Front Battle
+				["sourceQuests"] = { 76326 },	-- Home in the Dream
+				["provider"] = { "n", 206896 },	-- Merithra
+				["coord"] = { 50.7, 62.9, TREE_1 },
+				["g"] = {
+					--ach(19026),	-- crit (1) / Enter the Dream
+				},
+			}),
+			q(77436, {	-- The Burning Barrow
+				["sourceQuests"] = { 77283 },	-- A Multi-Front Battle
+				["provider"] = { "n", 206896 },	-- Merithra
+				["coord"] = { 50.7, 62.9, TREE_1 },
+			}),
+			q(76433, {	-- Ashen Soil
+				["sourceQuests"] = { 77436 },	-- The Burning Barrow
+				["provider"] = { "n", 206247 },	-- Tyrande Whisperwind
+				["coord"] = { 51.3, 42.9, TREE_1 },
+			}),
+			q(76434, {	-- Not Yet Lost
+				["sourceQuests"] = { 77436 },	-- The Burning Barrow
+				["provider"] = { "n", 206247 },	-- Tyrande Whisperwind
+				["coord"] = { 51.3, 42.9, TREE_1 },
+			}),
+			q(76435, {	-- The Smoldering Copse
+				["sourceQuests"] = {
+					76433,	-- Ashen Soil
+					76434,	-- Not Yet Lost
+				},
+				["provider"] = { "n", 206247 },	-- Tyrande Whisperwind
+				["coord"] = { 51.4, 42.7, TREE_1 },
+			}),
+			q(76437, {	-- Burning Ground
+				["sourceQuests"] = { 76435 },	-- The Smoldering Copse
+				["provider"] = { "n", 207160 },	-- Tyrande Whisperwind
+				["coord"] = { 40.7, 47.5, TREE_1 },
+			}),
+			q(76441, {	-- Grim Reprisal
+				["sourceQuests"] = { 76435 },	-- The Smoldering Copse
+				["provider"] = { "n", 207160 },	-- Tyrande Whisperwind
+				["coord"] = { 40.7, 47.5, TREE_1 },
+			}),
+			q(76442, {	-- Forlorn Hop
+				["sourceQuests"] = {
+					76437,	-- Burning Ground
+					76441,	-- Grim Reprisal
+				},
+				["provider"] = { "n", 207160 },	-- Tyrande Whisperwind
+				["coord"] = { 536, 50.9, TREE_1 },
+			}),
+			q(76443, {	-- The Looming Cinder
+				["sourceQuests"] = { 76442 },	-- Forlorn Hop
+				["provider"] = { "n", 211193 },	-- Tyrande Whisperwind
+				["coord"] = { 36.1, 50.8, TREE_1 },
+				["g"] = {
+					--ach(19026),	-- crit (2) / Druids of the Flame
+				},
+			}),
+			q(76403, {	-- Mayhem Incarnate
+				["sourceQuests"] = { 76442 },	-- Forlorn Hop
+				["provider"] = { "n", 208506 },	-- Vyranoth
+				["coord"] = { 50.8, 62.7, TREE_1 },
 			}),
 			-- non-story quests below for now
 			q(77948, {	-- Burning Out
@@ -290,6 +355,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(TREE_1, {
+		--- pop during main story
+		q(77572),	-- after qID 77283 / one of them wq unlock
+		q(77887),	-- after qID 77283 / one of them probably achievement crit, may be?
+		---
 		q(77808),	-- Quest "What Do I Call You?": Pick the title of "Mother"
 		q(77809),	-- Quest "What Do I Call You?": Pick the title of "Father"
 		q(77810),	-- Quest "What Do I Call You?": Pick the title of "Commander"
