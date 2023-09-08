@@ -337,8 +337,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		}),
 	}),
 	n(COMMUNITY_CLUES_HEADER, {
-		header(HEADERS.Spell, 424084, {
+		header(HEADERS.Spell, 424082, {
 			i(210022, {
+				["description"] = "Combine the first, second, and third boosters near an Empowered\nArcane Forge to reforge and power Mimiron's Jumpjets.\n",
 				["cost"] = {
 					{"i",208984,1},	-- First Booster Part
 					{"i",209781,1},	-- Second Booster Part
@@ -392,4 +393,5 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(77290),	-- Community Satchel 5 (Netherstorm @ 26.2, 68.7)
 	q(77293),	-- Community Satchel 6 (Valley of the Four Winds @ 56.7, 21.4)
 	q(77296),	-- Community Satchel 7 (Azure Span @ 25.2, 71.4 Object ID 405535)
+	q(77294),	-- Community Satchel 8 (Dragonblight @ 63.9, 72.6 Object ID 405535)
 })))
