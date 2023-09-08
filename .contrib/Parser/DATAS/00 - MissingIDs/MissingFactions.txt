@@ -626,3 +626,6 @@ faction(2557),	-- Hearthfire Fellowship
 faction(2565),	-- Loamm Niffen (Paragon)
 10.1.7.50442
 faction(2576),	-- Druids of the Flame
+10.2.0.51239
+faction(2574),	-- Dream Wardens
+faction(2575),	-- Dream Wardens (Paragon)

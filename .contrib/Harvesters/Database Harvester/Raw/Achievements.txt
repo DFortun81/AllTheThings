@@ -12961,3 +12961,245 @@
 19192@@@Lil' Frostwing
 10.1.7.51187
 17773@@@A Blue Dawn
+10.2.0.51239
+16884@@@Friends in the Field
+16944@@@Friend of the Family
+16994@@@Friends in the Accord
+17064@@@Friends in the Plains
+17730@@@Random Login Variable B
+17756@@@Friends in Loamm Places
+18647@@@<Hidden> 10.1.7 Prologue / 10.2 Intro Quest Launch [NOT USED YET]
+18691@@@<DNT> Complete the "The Coalition of Flames" questline.
+18943@@@Ysera Invitational: Bronze
+18944@@@Ysera Invitational: Silver
+18945@@@Ysera Invitational: Gold
+18946@@@Ysera Invitational Advanced: Bronze
+18947@@@Ysera Invitational Advanced: Silver
+18948@@@Ysera Invitational Advanced: Gold
+18949@@@Ysera Invitational Reverse: Bronze
+18950@@@Ysera Invitational Reverse: Silver
+18951@@@Ysera Invitational Reverse: Gold
+18952@@@Ysera Invitational Challenge: Bronze
+18953@@@Ysera Invitational Challenge: Silver
+18954@@@Ysera Invitational Challenge: Gold
+18955@@@Ysera Invitational Reverse Challenge: Bronze
+18956@@@Ysera Invitational Reverse Challenge: Silver
+18957@@@Ysera Invitational Reverse Challenge: Gold
+18978@@@Smoldering Sprint: Bronze
+18979@@@Smoldering Sprint: Silver
+18980@@@Smoldering Sprint: Gold
+18981@@@Smoldering Sprint Advanced: Bronze
+18982@@@Smoldering Sprint Advanced: Silver
+18983@@@Smoldering Sprint Advanced: Gold
+18984@@@Smoldering Sprint Reverse: Bronze
+18985@@@Smoldering Sprint Reverse: Silver
+18986@@@Smoldering Sprint Reverse: Gold
+18987@@@Smoldering Sprint Challenge: Bronze
+18988@@@Smoldering Sprint Challenge: Silver
+18989@@@Smoldering Sprint Challenge: Gold
+18990@@@Smoldering Sprint Reverse Challenge: Bronze
+18991@@@Smoldering Sprint Reverse Challenge: Silver
+18992@@@Smoldering Sprint Reverse Challenge: Gold
+18993@@@Viridescent Venture: Bronze
+18994@@@Viridescent Venture: Silver
+18995@@@Viridescent Venture: Gold
+18996@@@Viridescent Venture Advanced: Bronze
+18997@@@Viridescent Venture Advanced: Silver
+18998@@@Viridescent Venture Advanced: Gold
+18999@@@Viridescent Venture Reverse: Bronze
+19000@@@Viridescent Venture Reverse: Silver
+19001@@@Viridescent Venture Reverse: Gold
+19002@@@Viridescent Venture Challenge: Bronze
+19003@@@Viridescent Venture Challenge: Silver
+19004@@@Viridescent Venture Challenge: Gold
+19005@@@Viridescent Venture Reverse Challenge: Bronze
+19006@@@Viridescent Venture Reverse Challenge: Silver
+19007@@@Viridescent Venture Reverse Challenge: Gold
+19009@@@Dragonflight Keystone Explorer: Season Three
+19010@@@Dragonflight Keystone Conqueror: Season Three
+19011@@@Dragonflight Keystone Master: Season Three
+19012@@@Dragonflight Keystone Hero: Season Three
+19013@@@I Dream of Seeds
+19026@@@Defenders of the Dream
+19032@@@Shoreline Switchback: Bronze
+19033@@@Shoreline Switchback: Silver
+19034@@@Shoreline Switchback: Gold
+19035@@@Shoreline Switchback Advanced: Bronze
+19036@@@Shoreline Switchback Advanced: Silver
+19037@@@Shoreline Switchback Advanced: Gold
+19038@@@Shoreline Switchback Reverse: Bronze
+19039@@@Shoreline Switchback Reverse: Silver
+19040@@@Shoreline Switchback Reverse: Gold
+19041@@@Shoreline Switchback Challenge: Bronze
+19042@@@Shoreline Switchback Challenge: Silver
+19043@@@Shoreline Switchback Challenge: Gold
+19044@@@Shoreline Switchback Reverse Challenge: Bronze
+19045@@@Shoreline Switchback Reverse Challenge: Silver
+19046@@@Shoreline Switchback Reverse Challenge: Gold
+19047@@@Canopy Concours: Bronze
+19048@@@Canopy Concours: Silver
+19049@@@Canopy Concours: Gold
+19050@@@Canopy Concours Advanced: Bronze
+19051@@@Canopy Concours Advanced: Silver
+19052@@@Canopy Concours Advanced: Gold
+19053@@@Canopy Concours Reverse: Bronze
+19054@@@Canopy Concours Reverse: Silver
+19055@@@Canopy Concours Reverse: Gold
+19056@@@Canopy Concours Challenge: Bronze
+19057@@@Canopy Concours Challenge: Silver
+19058@@@Canopy Concours Challenge: Gold
+19059@@@Canopy Concours Reverse Challenge: Bronze
+19060@@@Canopy Concours Reverse Challenge: Silver
+19061@@@Canopy Concours Reverse Challenge: Gold
+19062@@@Emerald Amble: Bronze
+19063@@@Emerald Amble: Silver
+19064@@@Emerald Amble: Gold
+19065@@@Emerald Amble Advanced: Bronze
+19066@@@Emerald Amble Advanced: Silver
+19067@@@Emerald Amble Advanced: Gold
+19068@@@Emerald Amble Reverse: Bronze
+19069@@@Emerald Amble Reverse: Silver
+19070@@@Emerald Amble Reverse: Gold
+19071@@@Emerald Amble Challenge: Bronze
+19072@@@Emerald Amble Challenge: Silver
+19073@@@Emerald Amble Challenge: Gold
+19074@@@Emerald Amble Reverse Challenge: Bronze
+19075@@@Emerald Amble Reverse Challenge: Silver
+19076@@@Emerald Amble Reverse Challenge: Gold
+19077@@@Catch Me If You Can!
+19082@@@Keystone Hero: Throne of the Tides
+19083@@@Keystone Hero: The Everbloom
+19084@@@Keystone Hero: Black Rook Hold
+19085@@@Keystone Hero: Darkheart Thicket
+19086@@@Keystone Hero: Waycrest Manor
+19087@@@Keystone Hero: Atal'Dazar
+19088@@@Keystone Hero: Dawn of the Infinite
+19089@@@Don't Let the Doe Hit You On The Way Out
+19090@@@Elite: Dragonflight Season 3
+19091@@@Gladiator: Dragonflight Season 3
+19109@@@Emerald Dream: Bronze
+19110@@@Emerald Dream: Silver
+19111@@@Emerald Dream: Gold
+19112@@@Emerald Dream Advanced: Bronze
+19113@@@Emerald Dream Advanced: Silver
+19114@@@Emerald Dream Advanced: Gold
+19115@@@Emerald Dream Reverse: Bronze
+19116@@@Emerald Dream Reverse: Silver
+19117@@@Emerald Dream Reverse: Gold
+19118@@@Emerald Dream Racing Completionist
+19119@@@Emerald Dream Racing Completionist: Silver
+19120@@@Emerald Dream Racing Completionist: Gold
+19121@@@Emerald Dream Challenge: Bronze
+19122@@@Emerald Dream Challenge: Silver
+19123@@@Emerald Dream Challenge: Gold
+19124@@@Emerald Dream Reverse Challenge: Bronze
+19125@@@Emerald Dream Reverse Challenge: Silver
+19126@@@Emerald Dream Reverse Challenge: Gold
+19127@@@Emerald Dream Challenge Racing Completionist
+19128@@@Emerald Dream Challenge Racing Completionist: Silver
+19129@@@Emerald Dream Challenge Racing Completionist: Gold
+19130@@@Junior Racing Champion
+19131@@@Verdant Legend: Dragonflight Season 3
+19132@@@Verdant Gladiator: Dragonflight Season 3
+19133@@@Rival I: Dragonflight Season 3
+19140@@@Verdant Combatant
+19141@@@Verdant Combatant
+19155@@@Rival II: Dragonflight Season 3
+19156@@@Duelist: Dragonflight Season 3
+19157@@@Combatant I: Dragonflight Season 3
+19158@@@Combatant II: Dragonflight Season 3
+19159@@@Challenger I: Dragonflight Season 3
+19160@@@Challenger II: Dragonflight Season 3
+19161@@@Hero of the Horde: Verdant
+19162@@@Hero of the Alliance: Verdant
+19193@@@Ducks In A Row
+19194@@@The Emerald Bounty
+19196@@@Sowing the Seeds
+19198@@@The Seeds I Sow
+19199@@@Skalawag Slither: Bronze
+19200@@@Skalawag Slither: Silver
+19201@@@Skalawag Slither: Gold
+19202@@@Skalawag Slither Advanced: Bronze
+19203@@@Skalawag Slither Advanced: Silver
+19204@@@Skalawag Slither Advanced: Gold
+19205@@@Skalawag Slither Reverse: Bronze
+19206@@@Skalawag Slither Reverse: Silver
+19207@@@Skalawag Slither Reverse: Gold
+19216@@@<DNT> Dream Wardens Rank 1 (Account)
+19217@@@<DNT> Dream Wardens Rank 2 (Account)
+19218@@@<DNT> Dream Wardens Rank 3 (Account)
+19219@@@<DNT> Dream Wardens Rank 4 (Account)
+19220@@@<DNT> Dream Wardens Rank 5 (Account)
+19221@@@<DNT> Dream Wardens Rank 6 (Account)
+19222@@@<DNT> Dream Wardens Rank 7 (Account)
+19223@@@<DNT> Dream Wardens Rank 8 (Account)
+19224@@@<DNT> Dream Wardens Rank 9 (Account)
+19225@@@<DNT> Dream Wardens Rank 10 (Account)
+19226@@@<DNT> Dream Wardens Rank 11 (Account)
+19227@@@<DNT> Dream Wardens Rank 12 (Account)
+19228@@@<DNT> Dream Wardens Rank 13 (Account)
+19229@@@<DNT> Dream Wardens Rank 14 (Account)
+19230@@@Friends in the Dream
+19231@@@<DNT> Dream Wardens Rank 16 (Account)
+19232@@@<DNT> Dream Wardens Rank 17 (Account)
+19233@@@<DNT> Dream Wardens Rank 18 (Account)
+19234@@@<DNT> Dream Wardens Rank 19 (Account)
+19235@@@Warden of the Dream
+19256@@@<DNT> Dream Wardens Rank 1 (Character)
+19257@@@<DNT> Dream Wardens Rank 2 (Character)
+19258@@@<DNT> Dream Wardens Rank 3 (Character)
+19259@@@<DNT> Dream Wardens Rank 4 (Character)
+19260@@@<DNT> Dream Wardens Rank 5 (Character)
+19261@@@<DNT> Dream Wardens Rank 6 (Character)
+19262@@@<DNT> Dream Wardens Rank 7 (Character)
+19263@@@<DNT> Dream Wardens Rank 8 (Character)
+19264@@@<DNT> Dream Wardens Rank 9 (Character)
+19265@@@<DNT> Dream Wardens Rank 10 (Character)
+19266@@@<DNT> Dream Wardens Rank 11 (Character)
+19267@@@<DNT> Dream Wardens Rank 12 (Character)
+19268@@@<DNT> Dream Wardens Rank 13 (Character)
+19269@@@<DNT> Dream Wardens Rank 14 (Character)
+19270@@@<DNT> Dream Wardens Rank 15 (Character)
+19271@@@<DNT> Dream Wardens Rank 16 (Character)
+19272@@@<DNT> Dream Wardens Rank 17 (Character)
+19273@@@<DNT> Dream Wardens Rank 18 (Character)
+19274@@@<DNT> Dream Wardens Rank 19 (Character)
+19275@@@<DNT> Dream Wardens Rank 20 (Character)
+19276@@@Verdant Vogue
+19277@@@Daggercap Dart: Bronze
+19278@@@Daggercap Dart: Silver
+19279@@@Daggercap Dart: Gold
+19280@@@Daggercap Dart Advanced: Bronze
+19281@@@Daggercap Dart Advanced: Silver
+19282@@@Daggercap Dart Advanced: Gold
+19283@@@Daggercap Dart Reverse: Bronze
+19284@@@Daggercap Dart Reverse: Silver
+19285@@@Daggercap Dart Reverse: Gold
+19287@@@Vicious Saddle (38)
+19289@@@Vicious Saddle (38)
+19293@@@Friends In Feathers
+19294@@@Tour of Duty: Emerald Dream
+19295@@@Verdant Gladiator's Slitherdrake
+19296@@@Dragon Glyphs: Eye of Ysera
+19297@@@Dragon Glyphs: Smoldering Ascent
+19298@@@Dragon Glyphs: Smoldering Copse
+19299@@@Dragon Glyphs: Cinder Summit
+19300@@@Dragon Glyphs: Dreamsurge Basin
+19301@@@Dragon Glyphs: Amirdrassil
+19302@@@Dragon Glyphs: Whorlwing basin
+19303@@@Dragon Glyphs: Wakeful Vista
+19304@@@Legend: Dragonflight Season 3
+19306@@@Emerald Dream Glyph Hunter
+19307@@@Dragon Isles Pathfinder
+19308@@@Freshscales Fifteen
+19309@@@Explore the Emerald Dream
+19310@@@Fruit of the Bloom
+19312@@@Super Duper Bloom
+19313@@@Bloom Man Group
+19315@@@Okay, Bloomer
+19316@@@Adventurer of the Emerald Dream
+19317@@@Treasures of the Emerald Dream
+19318@@@Dream On
+19319@@@Haven't We Done This Before?
+19320@@@Cruelty Free
+19321@@@Swog Champion

@@ -196,9 +196,6 @@ q(10631),	-- Back In Business	 TBC:Back In Business	 WOTLK:Back In Business
 q(10779),	-- The Hunter's Path	 TBC:The Hunter's Path	 WOTLK:The Hunter's Path
 q(10789),	-- Return to Carendin Halgar	 TBC:Return to Carendin Halgar	 WOTLK:Return to Carendin Halgar
 q(10790),	-- Return to Mordak Darkfist	 TBC:Return to Gan'rul Bloodeye	 WOTLK:Return to Gan'rul Bloodeye
-q(10831),	-- Becoming a Mooncloth Tailor	 TBC:Becoming a Mooncloth Tailor	 WOTLK:Becoming a Mooncloth Tailor
-q(10832),	-- Becoming a Spellfire Tailor	 TBC:Becoming a Spellfire Tailor	 WOTLK:Becoming a Spellfire Tailor
-q(10833),	-- Becoming a Shadoweave Tailor	 TBC:Becoming a Shadoweave Tailor	 WOTLK:Becoming a Shadoweave Tailor
 q(10844),	-- Forge Camp: Anger	 TBC:Forge Camp: Anger	 WOTLK:Forge Camp: Anger
 q(10931),	-- Return to the Exodar	 TBC:Return to the Exodar	 WOTLK:Return to the Exodar
 q(10932),	-- Return to the Exodar	 TBC:Return to the Exodar	 WOTLK:Return to the Exodar
@@ -1489,26 +1486,18 @@ q(77199),	--
 10.1.5.49908
 q(77213),	--
 q(77221),	--
-q(77306),	--
 q(77307),	--
 q(77308),	--
 10.1.5.50006
 q(77358),	--
 q(77364),	--
-q(77404),	--
-q(77405),	--
-q(77406),	--
-q(77407),	--
 q(77418),	--
 q(77419),	--
-q(77421),	--
 10.1.5.50130
 q(77435),	--
 q(77506),	--
 q(77520),	--
-q(77524),	--
 q(77567),	--
-q(77576),	--
 q(77577),	--
 q(77578),	--
 q(77579),	--
@@ -1548,7 +1537,6 @@ q(77639),	--
 q(77640),	--
 q(77641),	--
 10.1.5.50199
-q(77689),	--
 q(77691),	--
 10.1.5.50355
 q(76157),	--
@@ -1557,7 +1545,6 @@ q(77850),	--
 q(77851),	--
 q(77852),	--
 q(77853),	--
-q(77854),	--
 10.1.5.50469
 q(77883),	--
 10.1.5.51130
@@ -1565,67 +1552,19 @@ q(77333),	--
 q(77336),	--
 q(77337),	--
 q(77338),	--
-q(78200),	--
 10.1.7.50442
 q(75604),	--
-q(75804),	-- PTR:River Rapids Route - Reverse Challenge
-q(75938),	-- PTR:Test
 q(76026),	--
 q(76032),	--
-q(76531),	-- PTR:Bar Tab Barrel
-q(76545),	--
-q(76577),	--
-q(76579),	--
-q(76591),	--
-q(77095),	-- PTR:Bar Tab Barrel
-q(77096),	-- PTR:Bar Tab Barrel
-q(77097),	-- PTR:Bar Tab Barrel
-q(77099),	-- PTR:Bar Tab Barrel
 q(77100),	--
-q(77102),	-- PTR:Hellfire Hustle
-q(77103),	-- PTR:Hellfire Hustle - Advanced
-q(77104),	-- PTR:Hellfire Hustle - Reverse
 q(77151),	--
-q(77152),	-- PTR:Bar Tab Barrel
-q(77153),	-- PTR:Bar Tab Barrel
 q(77154),	--
-q(77155),	-- PTR:Bar Tab Barrel
-q(77163),	--
-q(77169),	-- PTR:Coilfang Caper
-q(77170),	-- PTR:Coilfang Caper - Advanced
-q(77171),	-- PTR:Coilfang Caper - Reverse
-q(77205),	-- PTR:Blade's Edge Brawl
-q(77206),	-- PTR:Blade's Edge Brawl - Advanced
-q(77207),	-- PTR:Blade's Edge Brawl - Reverse
-q(77208),	--
-q(77238),	-- PTR:Telaar Tear
-q(77239),	-- PTR:Telaar Tear - Advanced
-q(77240),	-- PTR:Telaar Tear - Reverse
-q(77260),	-- PTR:Razorthorn Rise Rush
-q(77261),	-- PTR:Razorthorn Rise Rush - Advanced
-q(77262),	-- PTR:Razorthorn Rise Rush - Reverse
-q(77264),	-- PTR:Auchindoun Coaster
-q(77265),	-- PTR:Auchindoun Coaster - Advanced
-q(77266),	-- PTR:Auchindoun Coaster - Reverse
 q(77267),	--
 q(77268),	--
-q(77278),	-- PTR:Tempest Keep Sweep
-q(77279),	-- PTR:Tempest Keep Sweep - Advanced
-q(77280),	-- PTR:Tempest Keep Sweep - Reverse
-q(77322),	-- PTR:Shattrath City Sashay
-q(77323),	-- PTR:Shattrath City Sashay - Advanced
-q(77324),	-- PTR:Shattrath City Sashay - Reverse
 q(77325),	--
 q(77327),	--
 q(77328),	--
 q(77331),	--
-q(77345),	-- PTR:The Need For Higher Velocities
-q(77346),	-- PTR:Shadowmoon Slam
-q(77347),	-- PTR:Shadowmoon Slam - Advanced
-q(77348),	-- PTR:Shadowmoon Slam - Reverse
-q(77398),	-- PTR:Eco-Dome Excursion
-q(77399),	-- PTR:Eco-Dome Excursion - Advanced
-q(77400),	-- PTR:Eco-Dome Excursion - Reverse
 q(77433),	--
 q(77434),	--
 q(77483),	--
@@ -1634,19 +1573,7 @@ q(77485),	--
 q(77486),	--
 q(77487),	--
 q(77488),	--
-q(77589),	-- PTR:Warmaul Wingding
-q(77591),	-- PTR:Warmaul Wingding - Advanced
-q(77593),	-- PTR:Warmaul Wingding - Reverse
 q(77615),	--
-q(77645),	-- PTR:Skettis Scramble
-q(77646),	-- PTR:Skettis Scramble - Advanced
-q(77647),	-- PTR:Skettis Scramble - Reverse
-q(77654),	--
-q(77678),	--
-q(77684),	-- PTR:Fel Pit Fracas
-q(77685),	-- PTR:Fel Pit Fracas - Advanced
-q(77686),	-- PTR:Fel Pit Fracas - Reverse
-q(77698),	-- PTR:Candy Bucket
 q(77699),	--
 q(77700),	--
 q(77701),	--
@@ -1659,15 +1586,10 @@ q(77707),	--
 q(77708),	--
 q(77709),	--
 q(77710),	--
-q(77744),	-- PTR:Bar Tab Barrel
-q(77745),	-- PTR:Bar Tab Barrel
-q(77746),	-- PTR:Bar Tab Barrel
-q(77747),	-- PTR:Bar Tab Barrel
 q(77760),	--
 q(77763),	--
 q(77766),	--
 q(77775),	--
-q(77779),	--
 q(77790),	--
 q(77792),	--
 q(77796),	--
@@ -1676,8 +1598,6 @@ q(77798),	--
 q(77861),	--
 10.1.7.50505
 q(77893),	--
-10.1.7.50587
-q(78021),	--
 10.1.7.50730
 q(78030),	--
 q(78034),	--
@@ -1691,16 +1611,12 @@ q(78101),	--
 10.1.7.50793
 q(78152),	--
 10.1.7.50893
-q(77644),	--
 q(78161),	--
-q(78173),	--
-q(78191),	--
 q(78204),	--
 q(78207),	--
 q(78208),	--
 10.1.7.51059
 q(78273),	--
-q(78276),	--
 q(78300),	--
 q(78323),	--
 q(78324),	--
@@ -1708,17 +1624,10 @@ q(78324),	--
 q(76405),	--
 q(76451),	--
 q(76455),	--
-q(76456),	--
-q(76508),	--
 q(76511),	--
 q(76553),	--
-q(76560),	--
-q(77290),	--
 q(77292),	--
-q(77293),	--
-q(77294),	--
 q(77295),	--
-q(77296),	--
 q(77297),	--
 q(77298),	--
 q(77299),	--
@@ -1726,3 +1635,783 @@ q(77300),	--
 q(77301),	--
 q(77302),	--
 q(77569),	--
+10.2.0.51239
+q(75272),	-- PTR:Test
+q(75519),	-- PTR:The Long Hunt
+q(75610),	--
+q(76161),	-- PTR:Conversation Testing [DNT]
+q(76164),	-- PTR:Bovan's Last Hope
+q(76167),	--
+q(76168),	--
+q(76201),	-- PTR:Clone Ownership Verification [DNT]
+q(76210),	--
+q(76211),	--
+q(76259),	--
+q(76280),	--
+q(76281),	--
+q(76282),	--
+q(76283),	--
+q(76317),	-- PTR:Call of the Dream
+q(76318),	-- PTR:Emerald Welcome
+q(76319),	-- PTR:Feast or Flaming
+q(76320),	-- PTR:Wild Gods in Our Midst
+q(76321),	-- PTR:Burning Assault
+q(76322),	-- PTR:The Face of Our Enemies
+q(76323),	-- PTR:Amirdrassil
+q(76324),	-- PTR:Lost to the Flame
+q(76325),	-- PTR:Between Fyrakk and a Hard Place
+q(76326),	-- PTR:Home in the Dream
+q(76327),	-- PTR:Eye of Ysera
+q(76328),	-- PTR:A New Brute
+q(76329),	-- PTR:In and Out Scout
+q(76330),	-- PTR:Disarm Specialist
+q(76331),	-- PTR:Merithra's Gambit
+q(76332),	-- PTR:Putting Roots Down
+q(76333),	-- PTR:Triple Threat
+q(76334),	-- PTR:Good Counsel
+q(76335),	-- PTR:Might of the Forest
+q(76336),	-- PTR:Flight and Fight
+q(76337),	-- PTR:The Ember Still Smolders
+q(76342),	-- PTR:Light 'Em Up!
+q(76343),	-- PTR:Best Laid Plans
+q(76344),	-- PTR:Primalist Directive
+q(76345),	-- PTR:Finding Terro
+q(76346),	--
+q(76347),	-- PTR:Power, Eruption, and Lies
+q(76348),	-- PTR:Big Bright Beautiful Barrier
+q(76349),	--
+q(76367),	--
+q(76403),	-- PTR:Mayhem Incarnate
+q(76408),	--
+q(76432),	-- PTR:Slay Corrupted Denizens
+q(76433),	-- PTR:Ashen Soil
+q(76434),	-- PTR:Not Yet Lost
+q(76435),	-- PTR:The Smoldering Copse
+q(76437),	-- PTR:Burning Ground
+q(76441),	-- PTR:Grim Reprisal
+q(76442),	-- PTR:Forlorn Hope
+q(76443),	-- PTR:The Looming Cinder
+q(76460),	--
+q(76461),	--
+q(76462),	--
+q(76463),	--
+q(76464),	--
+q(76465),	--
+q(76466),	--
+q(76467),	--
+q(76468),	--
+q(76506),	-- PTR:Dryad Fire Drill
+q(76518),	--
+q(76519),	--
+q(76520),	-- PTR:A Shared Dream
+q(76522),	--
+q(76526),	--
+q(76532),	-- PTR:Assault on the Wellspring
+q(76540),	--
+q(76541),	--
+q(76542),	--
+q(76543),	--
+q(76549),	-- PTR:Dreaming in the Dream
+q(76550),	--
+q(76551),	-- PTR:Treasure Diving
+q(76558),	-- PTR:Base Control
+q(76559),	--
+q(76562),	--
+q(76565),	--
+q(76566),	-- PTR:The Dryad Garden
+q(76567),	-- PTR:Grousing Garden
+q(76568),	-- PTR:Pineshrew Panic
+q(76569),	-- PTR:Druid-Guardian Conference
+q(76570),	-- PTR:The Family Business
+q(76571),	-- PTR:Growth Experience
+q(76572),	-- PTR:A Poisonous Promotion
+q(76573),	--
+q(76574),	--
+q(76575),	--
+q(76580),	--
+q(76601),	--
+q(76736),	--
+q(76988),	--
+q(76989),	--
+q(76990),	--
+q(76991),	--
+q(76992),	--
+q(76993),	--
+q(77101),	-- PTR:Ingredient Quest Template
+q(77128),	--
+q(77129),	--
+q(77130),	--
+q(77131),	--
+q(77132),	--
+q(77133),	--
+q(77134),	--
+q(77135),	--
+q(77136),	--
+q(77137),	--
+q(77138),	--
+q(77139),	--
+q(77140),	--
+q(77141),	--
+q(77142),	--
+q(77143),	--
+q(77144),	--
+q(77145),	--
+q(77146),	--
+q(77147),	--
+q(77148),	--
+q(77149),	--
+q(77150),	--
+q(77156),	--
+q(77159),	--
+q(77161),	--
+q(77162),	--
+q(77177),	--
+q(77178),	-- PTR:Tactical Withdrawal
+q(77195),	--
+q(77196),	--
+q(77197),	--
+q(77198),	--
+q(77200),	--
+q(77201),	--
+q(77209),	--
+q(77210),	--
+q(77211),	--
+q(77212),	--
+q(77214),	--
+q(77215),	--
+q(77216),	--
+q(77217),	--
+q(77218),	--
+q(77219),	--
+q(77220),	--
+q(77222),	--
+q(77223),	--
+q(77224),	--
+q(77225),	--
+q(77226),	--
+q(77227),	--
+q(77228),	--
+q(77229),	--
+q(77233),	--
+q(77234),	--
+q(77235),	--
+q(77269),	--
+q(77270),	--
+q(77271),	--
+q(77272),	--
+q(77273),	--
+q(77274),	--
+q(77275),	--
+q(77283),	-- PTR:A Multi-Front Battle
+q(77310),	-- PTR:Memory of the Dreamer
+q(77311),	-- PTR:Healing Helper
+q(77312),	-- PTR:Nature Persists
+q(77313),	-- PTR:A Solemn Summons
+q(77314),	-- PTR:Requiem in a Dream
+q(77315),	-- PTR:Ancient Memories
+q(77316),	-- PTR:Trouble at the Tree
+q(77317),	-- PTR:Hatted Hibernation
+q(77318),	-- PTR:Merithra Says
+q(77319),	--
+q(77320),	--
+q(77321),	--
+q(77329),	--
+q(77349),	--
+q(77350),	--
+q(77351),	--
+q(77353),	--
+q(77354),	--
+q(77355),	--
+q(77356),	--
+q(77357),	--
+q(77359),	--
+q(77360),	--
+q(77361),	--
+q(77363),	--
+q(77365),	--
+q(77366),	--
+q(77367),	--
+q(77368),	--
+q(77369),	--
+q(77370),	--
+q(77371),	--
+q(77372),	--
+q(77373),	--
+q(77374),	--
+q(77375),	--
+q(77376),	--
+q(77378),	--
+q(77379),	--
+q(77380),	--
+q(77381),	--
+q(77382),	--
+q(77383),	--
+q(77384),	--
+q(77385),	--
+q(77386),	--
+q(77387),	--
+q(77388),	--
+q(77389),	--
+q(77390),	--
+q(77391),	--
+q(77392),	--
+q(77393),	--
+q(77394),	--
+q(77395),	--
+q(77396),	--
+q(77413),	--
+q(77420),	--
+q(77436),	-- PTR:The Burning Barrow
+q(77438),	--
+q(77439),	--
+q(77440),	--
+q(77441),	--
+q(77442),	--
+q(77443),	--
+q(77444),	--
+q(77445),	--
+q(77446),	--
+q(77447),	--
+q(77448),	--
+q(77449),	--
+q(77450),	--
+q(77451),	--
+q(77452),	--
+q(77453),	--
+q(77454),	--
+q(77455),	--
+q(77456),	--
+q(77457),	--
+q(77458),	--
+q(77459),	--
+q(77460),	--
+q(77461),	--
+q(77462),	--
+q(77463),	--
+q(77464),	--
+q(77465),	--
+q(77466),	--
+q(77467),	--
+q(77468),	--
+q(77469),	--
+q(77470),	--
+q(77471),	--
+q(77472),	--
+q(77473),	--
+q(77474),	--
+q(77475),	--
+q(77476),	--
+q(77477),	--
+q(77478),	--
+q(77479),	--
+q(77490),	--
+q(77491),	--
+q(77492),	--
+q(77493),	--
+q(77494),	--
+q(77495),	--
+q(77496),	--
+q(77497),	--
+q(77498),	--
+q(77499),	--
+q(77500),	--
+q(77501),	--
+q(77502),	--
+q(77503),	--
+q(77504),	--
+q(77505),	--
+q(77507),	--
+q(77508),	--
+q(77509),	--
+q(77510),	--
+q(77511),	--
+q(77512),	--
+q(77514),	--
+q(77515),	--
+q(77516),	--
+q(77517),	--
+q(77518),	--
+q(77519),	--
+q(77525),	--
+q(77526),	--
+q(77527),	--
+q(77528),	--
+q(77529),	--
+q(77530),	--
+q(77531),	--
+q(77532),	--
+q(77533),	--
+q(77534),	--
+q(77535),	--
+q(77536),	--
+q(77537),	--
+q(77538),	--
+q(77539),	--
+q(77540),	--
+q(77541),	--
+q(77542),	--
+q(77543),	--
+q(77544),	--
+q(77545),	--
+q(77546),	--
+q(77547),	--
+q(77548),	--
+q(77549),	--
+q(77550),	--
+q(77551),	--
+q(77552),	--
+q(77553),	--
+q(77554),	--
+q(77555),	--
+q(77556),	--
+q(77557),	--
+q(77558),	--
+q(77559),	--
+q(77560),	--
+q(77561),	--
+q(77562),	--
+q(77563),	--
+q(77564),	--
+q(77565),	--
+q(77566),	--
+q(77570),	-- PTR:Nouberon, the Wild Dream of a Child
+q(77572),	--
+q(77650),	--
+q(77662),	-- PTR:A Call to Aid
+q(77663),	--
+q(77664),	-- PTR:One Last Step
+q(77665),	-- PTR:Bound to You
+q(77673),	-- PTR:Under the Surface
+q(77674),	-- PTR:Wounds of the Past
+q(77675),	-- PTR:A Better Future, Together
+q(77677),	-- PTR:Some Water...
+q(77681),	-- PTR:Alerting all Adversaries!
+q(77683),	--
+q(77692),	--
+q(77693),	--
+q(77694),	--
+q(77695),	--
+q(77697),	--
+q(77711),	--
+q(77712),	--
+q(77713),	--
+q(77714),	--
+q(77715),	--
+q(77717),	--
+q(77738),	--
+q(77739),	-- PTR:Smother the Flames
+q(77740),	--
+q(77741),	--
+q(77742),	--
+q(77748),	--
+q(77749),	--
+q(77750),	--
+q(77751),	--
+q(77752),	--
+q(77753),	--
+q(77754),	-- PTR:Pyromania Problems
+q(77755),	--
+q(77756),	--
+q(77757),	-- PTR:Terror in Haven
+q(77758),	--
+q(77759),	--
+q(77761),	--
+q(77762),	--
+q(77765),	--
+q(77767),	--
+q(77768),	--
+q(77769),	--
+q(77770),	--
+q(77771),	--
+q(77772),	--
+q(77773),	--
+q(77776),	--
+q(77781),	--
+q(77788),	--
+q(77802),	-- PTR:What Do I Call You?
+q(77803),	--
+q(77812),	--
+q(77814),	--
+q(77818),	-- PTR:The Cruel
+q(77823),	--
+q(77824),	--
+q(77825),	--
+q(77826),	--
+q(77827),	--
+q(77828),	--
+q(77832),	-- PTR:Shadows upon shadows
+q(77834),	--
+q(77841),	-- PTR:Ysera Invitational
+q(77842),	-- PTR:Ysera Invitational - Advanced
+q(77843),	-- PTR:Ysera Invitational - Reverse
+q(77844),	-- PTR:Ysera Invitational - Challenge
+q(77845),	-- PTR:Ysera Invitational - Reverse Challenge
+q(77846),	--
+q(77847),	--
+q(77848),	--
+q(77849),	--
+q(77855),	--
+q(77856),	--
+q(77857),	--
+q(77858),	--
+q(77859),	--
+q(77860),	--
+q(77862),	--
+q(77863),	--
+q(77864),	--
+q(77867),	-- PTR:Moruud
+q(77872),	--
+q(77878),	--
+q(77887),	--
+q(77888),	--
+q(77889),	--
+q(77890),	--
+q(77891),	--
+q(77892),	--
+q(77896),	-- PTR:A Sleepy Search
+q(77909),	--
+q(77910),	--
+q(77911),	-- PTR:Build-a-Blanket
+q(77912),	--
+q(77913),	--
+q(77914),	--
+q(77915),	--
+q(77917),	--
+q(77918),	--
+q(77919),	--
+q(77920),	--
+q(77921),	--
+q(77922),	-- PTR:Fluffy Filler Retrieval
+q(77923),	--
+q(77924),	--
+q(77925),	--
+q(77926),	--
+q(77927),	--
+q(77929),	--
+q(77930),	--
+q(77931),	--
+q(77932),	--
+q(77933),	--
+q(77935),	--
+q(77936),	--
+q(77937),	--
+q(77938),	--
+q(77939),	--
+q(77940),	--
+q(77941),	--
+q(77942),	--
+q(77943),	--
+q(77944),	--
+q(77945),	--
+q(77946),	--
+q(77947),	--
+q(77948),	-- PTR:Burning Out
+q(77949),	--
+q(77950),	--
+q(77955),	-- PTR:Heated Hearthstone Hustle
+q(77958),	--
+q(77978),	-- PTR:A Passed Torch
+q(77982),	-- PTR:Greedy Gessie
+q(77983),	-- PTR:Smoldering Sprint
+q(77984),	-- PTR:Smoldering Sprint - Advanced
+q(77985),	-- PTR:Smoldering Sprint - Reverse
+q(77986),	-- PTR:Smoldering Sprint - Challenge
+q(77987),	-- PTR:Smoldering Sprint - Reverse Challenge
+q(77988),	--
+q(77989),	--
+q(77990),	--
+q(77991),	--
+q(77992),	--
+q(77994),	--
+q(77995),	--
+q(77996),	-- PTR:Viridescent Venture
+q(77997),	-- PTR:Viridescent Venture - Advanced
+q(77998),	-- PTR:Viridescent Venture - Reverse
+q(77999),	-- PTR:Viridescent Venture - Challenge
+q(78000),	-- PTR:Viridescent Venture - Reverse Challenge
+q(78005),	--
+q(78006),	--
+q(78007),	--
+q(78015),	-- PTR:Firebrand Fystia
+q(78016),	-- PTR:Shoreline Switchback
+q(78017),	-- PTR:Shoreline Switchback - Advanced
+q(78018),	-- PTR:Shoreline Switchback - Reverse
+q(78019),	-- PTR:Shoreline Switchback - Challenge
+q(78020),	-- PTR:Shoreline Switchback - Reverse Challenge
+q(78033),	-- PTR:Magical Bloom
+q(78039),	--
+q(78040),	--
+q(78041),	--
+q(78042),	--
+q(78043),	--
+q(78044),	--
+q(78045),	--
+q(78046),	--
+q(78047),	--
+q(78061),	--
+q(78064),	-- PTR:Q'onzu's Perception
+q(78065),	-- PTR:The Q'onzu Query
+q(78066),	-- PTR:The Answers You've Earned
+q(78067),	--
+q(78087),	--
+q(78095),	--
+q(78096),	--
+q(78097),	--
+q(78102),	-- PTR:Canopy Concours
+q(78103),	-- PTR:Canopy Concours - Advanced
+q(78104),	-- PTR:Canopy Concours - Reverse
+q(78105),	-- PTR:Canopy Concours - Challenge
+q(78106),	-- PTR:Canopy Concours - Reverse Challenge
+q(78107),	--
+q(78115),	-- PTR:Emerald Amble
+q(78116),	-- PTR:Emerald Amble - Advanced
+q(78117),	-- PTR:Emerald Amble - Reverse
+q(78118),	-- PTR:Emerald Amble - Challenge
+q(78119),	-- PTR:Emerald Amble - Reverse Challenge
+q(78120),	--
+q(78128),	-- PTR:Gotta Go Fast
+q(78129),	--
+q(78130),	--
+q(78131),	-- PTR:A Winter Veil Gift
+q(78141),	--
+q(78162),	-- PTR:Q'onzu's Distraction
+q(78163),	-- PTR:Q'onzu's Qualification
+q(78170),	--
+q(78171),	--
+q(78172),	-- PTR:Mysterious Seeds
+q(78206),	--
+q(78209),	--
+q(78210),	--
+q(78211),	--
+q(78212),	--
+q(78213),	--
+q(78214),	--
+q(78215),	-- PTR:Rooted in Danger
+q(78216),	--
+q(78217),	--
+q(78218),	--
+q(78235),	--
+q(78238),	--
+q(78246),	--
+q(78247),	--
+q(78252),	--
+q(78253),	--
+q(78258),	--
+q(78259),	--
+q(78262),	-- PTR:It Starts With a Stone
+q(78263),	--
+q(78264),	--
+q(78268),	-- PTR:[DNT] Test Quest
+q(78269),	--
+q(78271),	-- PTR:Dreaming of Crests
+q(78275),	--
+q(78278),	--
+q(78279),	--
+q(78281),	--
+q(78282),	--
+q(78283),	--
+q(78285),	--
+q(78286),	--
+q(78298),	--
+q(78299),	--
+q(78301),	-- PTR:Skalawag Slither
+q(78302),	-- PTR:Skalawag Slither - Advanced
+q(78303),	-- PTR:Skalawag Slither - Reverse
+q(78305),	--
+q(78308),	--
+q(78309),	--
+q(78310),	--
+q(78311),	--
+q(78312),	--
+q(78313),	--
+q(78314),	--
+q(78315),	--
+q(78316),	--
+q(78317),	--
+q(78318),	--
+q(78319),	--
+q(78320),	--
+q(78321),	--
+q(78322),	--
+q(78325),	-- PTR:Daggercap Dart
+q(78326),	-- PTR:Daggercap Dart - Advanced
+q(78327),	-- PTR:Daggercap Dart - Reverse
+q(78331),	--
+q(78333),	--
+q(78334),	-- PTR:Blackriver Burble
+q(78335),	-- PTR:Blackriver Burble - Advanced
+q(78336),	-- PTR:Blackriver Burble - Reverse
+q(78338),	--
+q(78339),	--
+q(78340),	--
+q(78341),	--
+q(78342),	--
+q(78343),	--
+q(78344),	--
+q(78345),	--
+q(78346),	-- PTR:Gundrak Fast Track
+q(78347),	-- PTR:Gundrak Fast Track - Advanced
+q(78349),	-- PTR:Gundrak Fast Track - Reverse
+q(78355),	-- PTR:Essence of a Broken Dream
+q(78356),	--
+q(78357),	--
+q(78358),	--
+q(78359),	--
+q(78360),	--
+q(78361),	--
+q(78362),	--
+q(78363),	--
+q(78364),	--
+q(78365),	--
+q(78366),	--
+q(78367),	--
+q(78368),	--
+q(78370),	--
+q(78371),	--
+q(78372),	--
+q(78373),	--
+q(78374),	--
+q(78377),	--
+q(78380),	--
+q(78381),	-- PTR:Dreams Unified
+q(78385),	--
+q(78386),	--
+q(78387),	--
+q(78388),	--
+q(78389),	-- PTR:Maker's Marathon
+q(78390),	-- PTR:Maker's Marathon - Advanced
+q(78391),	-- PTR:Maker's Marathon - Reverse
+q(78394),	--
+q(78397),	--
+q(78398),	--
+q(78399),	--
+q(78400),	--
+q(78401),	--
+q(78402),	--
+q(78403),	--
+q(78404),	--
+q(78405),	--
+q(78406),	--
+q(78407),	--
+q(78408),	--
+q(78409),	--
+q(78410),	--
+q(78411),	--
+q(78412),	--
+q(78413),	--
+q(78414),	--
+q(78415),	--
+q(78416),	--
+q(78417),	--
+q(78418),	--
+q(78419),	--
+q(78420),	--
+q(78421),	--
+q(78422),	--
+q(78423),	--
+q(78424),	--
+q(78425),	--
+q(78426),	--
+q(78427),	-- PTR:Great Crates!
+q(78428),	-- PTR:Crate of the Art
+q(78429),	--
+q(78430),	-- PTR:Mean Green Infusion Machine
+q(78431),	-- PTR:Green Dream Team
+q(78432),	--
+q(78433),	--
+q(78434),	-- PTR:Dragonrider Racing - Ysera Invitational
+q(78435),	-- PTR:Dragonrider Racing - Smoldering Sprint
+q(78436),	--
+q(78437),	--
+q(78438),	--
+q(78439),	--
+q(78441),	-- PTR:Crystalsong Crisis
+q(78442),	-- PTR:Crystalsong Crisis - Advanced
+q(78443),	-- PTR:Crystalsong Crisis - Reverse
+q(78444),	-- PTR:A Worthy Ally: Dream Wardens
+q(78445),	--
+q(78446),	-- PTR:Aiding the Accord: Superbloom
+q(78447),	--
+q(78448),	--
+q(78449),	--
+q(78450),	--
+q(78451),	--
+q(78453),	--
+q(78454),	-- PTR:Dragonblight Dragon Flight
+q(78455),	-- PTR:Dragonblight Dragon Flight - Advanced
+q(78456),	-- PTR:Dragonblight Dragon Flight - Reverese
+q(78474),	--
+q(78477),	--
+q(78478),	--
+q(78479),	--
+q(78480),	--
+q(78481),	--
+q(78482),	--
+q(78483),	--
+q(78484),	--
+q(78485),	--
+q(78486),	--
+q(78487),	--
+q(78488),	--
+q(78489),	--
+q(78490),	--
+q(78491),	--
+q(78492),	--
+q(78493),	--
+q(78494),	--
+q(78495),	--
+q(78496),	--
+q(78497),	--
+q(78498),	--
+q(78499),	-- PTR:Citadel Sortie
+q(78500),	-- PTR:Citadel Sortie - Advanced
+q(78501),	-- PTR:Citadel Sortie - Reverse
+q(78502),	--
+q(78503),	--
+q(78504),	-- PTR:A Gently Shaken Gift
+q(78507),	--
+q(78510),	--
+q(78511),	--
+q(78512),	--
+q(78513),	--
+q(78514),	--
+q(78515),	--
+q(78516),	--
+q(78517),	--
+q(78518),	--
+q(78519),	--
+q(78520),	--
+q(78521),	--
+q(78522),	--
+q(78523),	--
+q(78524),	--
+q(78525),	--
+q(78526),	--
+q(78527),	--
+q(78528),	--
+q(78547),	--
+q(78550),	--
+q(78551),	--
+q(78552),	--
+q(78553),	--
+q(78554),	--
+q(78558),	-- PTR:Sholazar Spree
+q(78559),	-- PTR:Sholazar Spree - Advanced
+q(78560),	-- PTR:Sholazar Spree - Reverse
+q(78566),	--
+q(78567),	--
+q(78568),	--
+q(78569),	--
+q(78576),	--
+q(78577),	--
+q(78578),	--
+q(78579),	--
+q(78580),	--
+q(78581),	--
+q(78582),	--
+q(78583),	--
+q(78584),	--
+q(78585),	--
+q(78586),	--
+q(78587),	--
+q(78588),	--

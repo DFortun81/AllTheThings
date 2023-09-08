@@ -378,6 +378,9 @@ r(338200),	-- Crushed Bones
 r(338202),	-- Elixir of Humility
 r(338203),	-- Refined Submission
 r(338204),	-- Bramblethorn Juice
+10.2.0.51239
+r(415628),	-- Dreamwalker's Healing Potion
+r(415810),	-- Potion of Withering Dreams
 
 
 
@@ -394,3 +397,6 @@ r(156589),	-- Alchemical Catalyst - Flytrap
 r(156590),	-- Alchemical Catalyst - Starflower
 r(156592),	-- Alchemical Catalyst - Orchid
 r(156593),	-- Alchemical Catalyst - Lotus
+10.2.0.51239
+r(415628),	-- Dreamwalker's Healing Potion
+r(415810),	-- Potion of Withering Dreams

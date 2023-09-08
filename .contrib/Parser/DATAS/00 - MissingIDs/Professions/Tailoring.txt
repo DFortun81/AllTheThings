@@ -600,6 +600,17 @@ r(343659),	-- Novice Crafter's Mark
 9.0.2.36086
 r(345985),	-- Shrouded Cloth Bag
 r(345986),	-- Lightless Silk Pouch
+10.2.0.51239
+r(419022),	-- Verdant Combatant's Wildercloth Cloak
+r(419023),	-- Verdant Combatant's Wildercloth Tunic
+r(419024),	-- Verdant Combatant's Wildercloth Treads
+r(419025),	-- Verdant Combatant's Wildercloth Gloves
+r(419026),	-- Verdant Combatant's Wildercloth Hood
+r(419027),	-- Verdant Combatant's Wildercloth Leggings
+r(419028),	-- Verdant Combatant's Wildercloth Shoulderpads
+r(419029),	-- Verdant Combatant's Wildercloth Sash
+r(419030),	-- Verdant Combatant's Wildercloth Bands
+r(426434),	-- Verdant Tether
 
 
 
@@ -1749,3 +1760,14 @@ r(355183),	-- Shrouded Hand Towel
 r(359661),	-- Crafter's Mark IV
 r(359670),	-- Crafter's Mark of the First Ones
 r(359703),	-- Vestige of the Eternal
+10.2.0.51239
+r(419022),	-- Verdant Combatant's Wildercloth Cloak
+r(419023),	-- Verdant Combatant's Wildercloth Tunic
+r(419024),	-- Verdant Combatant's Wildercloth Treads
+r(419025),	-- Verdant Combatant's Wildercloth Gloves
+r(419026),	-- Verdant Combatant's Wildercloth Hood
+r(419027),	-- Verdant Combatant's Wildercloth Leggings
+r(419028),	-- Verdant Combatant's Wildercloth Shoulderpads
+r(419029),	-- Verdant Combatant's Wildercloth Sash
+r(419030),	-- Verdant Combatant's Wildercloth Bands
+r(426434),	-- Verdant Tether

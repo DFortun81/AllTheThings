@@ -1,0 +1,18 @@
+10.2.0.51239
+r(414946),	-- Illusory Adornment: Dreams
+r(414985),	-- Enchanted Whelpling's Dreaming Crest
+r(414988),	-- Enchanted Wyrm's Dreaming Crest
+r(414989),	-- Enchanted Aspect's Dreaming Crest
+r(416047),	-- Dreaming Devotion
+
+
+
+
+Missing in EnchantingItemDB.lua
+
+10.2.0.51239
+r(414946),	-- Illusory Adornment: Dreams
+r(414985),	-- Enchanted Whelpling's Dreaming Crest
+r(414988),	-- Enchanted Wyrm's Dreaming Crest
+r(414989),	-- Enchanted Aspect's Dreaming Crest
+r(416047),	-- Dreaming Devotion

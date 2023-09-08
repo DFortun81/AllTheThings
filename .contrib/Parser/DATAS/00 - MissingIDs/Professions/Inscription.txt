@@ -629,6 +629,15 @@ r(382989),	-- Cataclysm Milling
 r(382990),	-- Northrend Milling
 r(382991),	-- Outland Milling
 r(382994),	-- Classic Milling
+10.2.0.51239
+r(419039),	-- Verdant Combatant's Medallion
+r(419040),	-- Verdant Combatant's Insignia of Alacrity
+r(419041),	-- Verdant Combatant's Emblem
+r(425263),	-- Contract: Dream Wardens
+r(425954),	-- Vantus Rune: Amirdrassil, the Dream's Hope
+r(425958),	-- Winding Slitherdrake: Hairy Chin
+r(425959),	-- Grotto Netherwing Drake: Spiked Jaw
+r(425961),	-- Grotto Netherwing Drake: Chin Tendrils
 
 
 
@@ -641,3 +650,12 @@ r(405005),	-- Glyph of Reckoning
 r(413897),	-- Glyph of Omen of Clarity
 3.4.2.49563
 r(414814),	-- Glyph of Shattering Throw
+10.2.0.51239
+r(419039),	-- Verdant Combatant's Medallion
+r(419040),	-- Verdant Combatant's Insignia of Alacrity
+r(419041),	-- Verdant Combatant's Emblem
+r(425263),	-- Contract: Dream Wardens
+r(425954),	-- Vantus Rune: Amirdrassil, the Dream's Hope
+r(425958),	-- Winding Slitherdrake: Hairy Chin
+r(425959),	-- Grotto Netherwing Drake: Spiked Jaw
+r(425961),	-- Grotto Netherwing Drake: Chin Tendrils

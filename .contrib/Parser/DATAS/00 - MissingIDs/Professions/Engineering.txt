@@ -465,6 +465,12 @@ r(343099),	-- Crafter's Mark I
 r(343661),	-- Novice Crafter's Mark
 9.0.2.35938
 r(345179),	-- Disposable Spectrophasic Reanimator
+10.2.0.51239
+r(416149),	-- Portable Party Platter
+r(419042),	-- Verdant Combatant's Cloth Goggles
+r(419043),	-- Verdant Combatant's Leather Goggles
+r(419044),	-- Verdant Combatant's Mail Goggles
+r(419045),	-- Verdant Combatant's Plate Goggles
 
 
 
@@ -1273,3 +1279,9 @@ r(359664),	-- Crafter's Mark IV
 r(359674),	-- Crafter's Mark of the First Ones
 r(360088),	-- Pure-Air Sail Extensions
 r(360126),	-- Erratic Genesis Matrix
+10.2.0.51239
+r(416149),	-- Portable Party Platter
+r(419042),	-- Verdant Combatant's Cloth Goggles
+r(419043),	-- Verdant Combatant's Leather Goggles
+r(419044),	-- Verdant Combatant's Mail Goggles
+r(419045),	-- Verdant Combatant's Plate Goggles

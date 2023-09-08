@@ -155,6 +155,8 @@ r(338113),	-- Thick Spider Meat
 r(338115),	-- Ember Sauce
 r(338116),	-- Skewered Meats
 r(338117),	-- Seared Cutlets
+10.2.0.51239
+r(416001),	-- Slumbering Peace Tea
 
 
 
@@ -165,3 +167,5 @@ Missing in CookingItemDB.lua
 r(89719),	-- Archaeology
 8.0.1.25976
 r(265815),	-- Zandalari Tailoring
+10.2.0.51239
+r(416001),	-- Slumbering Peace Tea

@@ -11192,3 +11192,13 @@
 6903@@@10.1.5 FX Testing - Enchant Visualt - Bronze Infinite
 10.1.7.50442
 7010@@@+$k1 Intellect
+10.2.0.51239
+6907@@@Illusory Adornment: Dreams
+6908@@@Illusory Adornment: Dreams
+6909@@@Illusory Adornment: Dreams
+7001@@@Dreaming Devotion |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7002@@@Dreaming Devotion |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7003@@@Dreaming Devotion |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7009@@@10.2.0 FX Testing - Enchant Visualt - Emerald Dream
+7032@@@Verdant Crush
+7052@@@|cnITEM_EPIC_COLOR:Incandescent Essence|r
