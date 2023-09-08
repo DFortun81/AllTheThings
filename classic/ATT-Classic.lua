@@ -625,10 +625,10 @@ local function GetProgressTextForTooltip(data)
 		return GetCompletionText(data.saved);
 	end
 end
-local function GetAddedWithPatchString(awp)
+local function GetAddedWithPatchString(awp, addedBack)
 	if awp then
 		awp = tonumber(awp);
-		return "This gets added in patch " .. math.floor(awp / 10000) .. "." .. (math.floor(awp / 100) % 10) .. "." .. (awp % 10);
+		return (addedBack and "This gets added back in patch " or "This gets added in patch ") .. math.floor(awp / 10000) .. "." .. (math.floor(awp / 100) % 10) .. "." .. (awp % 10);
 	end
 end
 local function GetRemovedWithPatchString(rwp)
@@ -2046,13 +2046,15 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			end
 		end
-
-		if group.rwp then
-			tinsert(info, 1, { left = GetRemovedWithPatchString(group.rwp), wrap = true, color = app.Colors.RemovedWithPatch });
+		
+		local awp = group.awp;
+		local addedBack = awp and group.rwp and awp > group.rwp;
+		if awp then
+			tinsert(info, 1, { left = GetAddedWithPatchString(awp, addedBack), wrap = true, color = app.Colors.AddedWithPatch });
 		end
 
-		if group.awp then
-			tinsert(info, 1, { left = GetAddedWithPatchString(group.awp), wrap = true, color = app.Colors.AddedWithPatch });
+		if group.rwp then
+			tinsert(info, addedBack and 1 or 2, { left = GetRemovedWithPatchString(group.rwp), wrap = true, color = app.Colors.RemovedWithPatch });
 		end
 
 		if group.isLimited then
@@ -10310,6 +10312,11 @@ local function RowOnEnter(self)
 				--GameTooltip:AddLine(reference.parent.text or RETRIEVING_DATA, 1, 1, 1);
 			end
 		end
+		
+		local linesByText = {};
+		for i=1,GameTooltip:NumLines() do
+			linesByText[_G["GameTooltipTextLeft"..i]:GetText()] = true;
+		end
 
 		local title = reference.title;
 		if title then
@@ -10488,28 +10495,14 @@ local function RowOnEnter(self)
 		if not reference.itemID then
 			if reference.lore and app.Settings:GetTooltipSetting("Lore") then
 				local lore = reference.lore;
-				local found = false;
-				for i=1,GameTooltip:NumLines() do
-					if _G["GameTooltipTextLeft"..i]:GetText() == lore then
-						found = true;
-						break;
-					end
-				end
-				if not found then
+				if not linesByText[lore] then
 					local r,g,b = HexToRGB(app.Colors.TooltipLore);
 					GameTooltip:AddLine(lore, r, g, b, 1);
 				end
 			end
 			local description = reference.description;
 			if description and app.Settings:GetTooltipSetting("Descriptions") then
-				local found = false;
-				for i=1,GameTooltip:NumLines() do
-					if _G["GameTooltipTextLeft"..i]:GetText() == description then
-						found = true;
-						break;
-					end
-				end
-				if not found then
+				if not linesByText[description] then
 					local r,g,b = HexToRGB(app.Colors.TooltipDescription);
 					GameTooltip:AddLine(description, r, g, b, 1);
 				end
@@ -10560,32 +10553,18 @@ local function RowOnEnter(self)
 					end
 				end
 			end
-			if reference.awp then
-				local found = false;
-				local awp = GetAddedWithPatchString(reference.awp);
-				for i=1,GameTooltip:NumLines() do
-					if _G["GameTooltipTextLeft"..i]:GetText() == awp then
-						found = true;
-						break;
-					end
-				end
-				if not found then
-					local r,g,b = HexToRGB(app.Colors.AddedWithPatch);
-					GameTooltip:AddLine(awp, r, g, b, 1);
-				end
-			end
 			if reference.rwp then
-				local found = false;
 				local rwp = GetRemovedWithPatchString(reference.rwp);
-				for i=1,GameTooltip:NumLines() do
-					if _G["GameTooltipTextLeft"..i]:GetText() == rwp then
-						found = true;
-						break;
-					end
-				end
-				if not found then
+				if not linesByText[rwp] then
 					local r,g,b = HexToRGB(app.Colors.RemovedWithPatch);
 					GameTooltip:AddLine(rwp, r, g, b, 1);
+				end
+			end
+			if reference.awp then
+				local awp = GetAddedWithPatchString(reference.awp, reference.awp and reference.rwp and reference.awp > reference.rwp);
+				if not linesByText[awp] then
+					local r,g,b = HexToRGB(app.Colors.AddedWithPatch);
+					GameTooltip:AddLine(awp, r, g, b, 1);
 				end
 			end
 			if reference.questID and not reference.objectiveID then
