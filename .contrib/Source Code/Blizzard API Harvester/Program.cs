@@ -31,6 +31,7 @@ namespace ATT
         private static HttpClient _client;
         static HttpClient Client => _client ?? (_client = InitClient());
         static ConcurrentQueue<string> DataResults { get; } = new ConcurrentQueue<string>();
+        static ConcurrentQueue<Tuple<int, string>> APIRequests { get; } = new ConcurrentQueue<Tuple<int, string>>();
         static ConcurrentQueue<Tuple<int, Task<HttpResponseMessage>>> APIResults { get; } = new ConcurrentQueue<Tuple<int, Task<HttpResponseMessage>>>();
         static ConcurrentQueue<string> ParseDatas { get; } = new ConcurrentQueue<string>();
         /// <summary>
@@ -54,6 +55,7 @@ namespace ATT
         static int MaxItemID { get; set; } = 185000;
         static int MaxQuestID { get; set; } = 60000;
         static bool WaitForAPI { get; set; }
+        static bool WaitForRequests { get; set; }
         static bool WaitForData { get; set; }
         static bool WaitForParseQueue { get; set; }
         static bool WaitForParsingData { get; set; }
@@ -74,7 +76,7 @@ namespace ATT
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Harvester Started!");
+            Console.WriteLine("Harvester Started using Date:" + DateStamp);
 
             ObjType[] parseTypes = (ObjType[])Enum.GetValues(typeof(ObjType));
             foreach (ObjType parseType in parseTypes)
@@ -117,6 +119,14 @@ namespace ATT
             };
             threadDataWriter.Start();
 
+            // start thread for sending API requests
+            Thread threadAPISender = new Thread(SendAPIRequests)
+            {
+                IsBackground = true,
+                Name = "APISender.Thread",
+            };
+            threadAPISender.Start();
+
             // start thread for handling API responses
             Thread threadAPIReceiver = new Thread(CaptureAPIResults)
             {
@@ -145,7 +155,7 @@ namespace ATT
             }
 
             // ensure that both API receiver and data writer threads were created before continuing, otherwise can get stuck
-            while (!WaitForData || !WaitForAPI) { Thread.Sleep(50); }
+            while (!WaitForData || !WaitForAPI || !WaitForRequests) { Thread.Sleep(50); }
 
             // stop waiting to capture API results
             WaitForAPI = false;
@@ -289,32 +299,32 @@ namespace ATT
                             if (string.IsNullOrEmpty(data)) Console.WriteLine("[" + id.ToString() + "]: NULL");
                             else
                             {
-                                Console.WriteLine("[" + id.ToString() + "]: FOUND");
+                                Console.WriteLine("[" + id.ToString() + "]: FOUND @" + API_ExpectedThrottle + ":" + APIResults.Count);
                                 QueueAPIData(data);
                             }
                         }
                         // queried too fast!
                         else if ((int)response.StatusCode == 429)
                         {
-                            Console.WriteLine("[" + responseData.Item1.ToString() + "]: TOO FAST!");
+                            Console.WriteLine("[" + responseData.Item1.ToString() + "]: TOO FAST! @" + API_ExpectedThrottle + ":" + APIResults.Count);
                             QueueAPIRequestForID(responseData.Item1, true);
                         }
                         // item doesn't exist -- save a raw file for it so re-parsing/testing is faster, ugh
                         else if ((int)response.StatusCode == 404)
                         {
-                            Console.WriteLine("[" + responseData.Item1.ToString() + "]: NO EXISTS!");
+                            Console.WriteLine("[" + responseData.Item1.ToString() + "]: NO EXISTS! @" + API_ExpectedThrottle + ":" + APIResults.Count);
                             //DataResults.Enqueue(new Tuple<int, string>(responseData.Item1, "{\"id\":" + responseData.Item1.ToString() + "}"));
                         }
                         // forbidden??
                         else if (response.StatusCode == HttpStatusCode.Forbidden)
                         {
-                            Console.WriteLine("[" + responseData.Item1.ToString() + "]: FORBIDDEN");
+                            Console.WriteLine("[" + responseData.Item1.ToString() + "]: FORBIDDEN @" + API_ExpectedThrottle + ":" + APIResults.Count);
                         }
                         // authorization ran out
                         else if (response.StatusCode == HttpStatusCode.Unauthorized)
                         {
                             // dont worry about auth errors i suppose...
-                            Console.WriteLine("[" + responseData.Item1.ToString() + "]: UNAUTHORIZED");
+                            Console.WriteLine("[" + responseData.Item1.ToString() + "]: UNAUTHORIZED @" + API_ExpectedThrottle + ":" + APIResults.Count);
                         }
                         else
                         {
@@ -331,11 +341,63 @@ namespace ATT
                 else
                 {
                     // wait for more API captures to show up
-                    Thread.Sleep(10);
+                    Thread.Sleep(5);
                 }
             }
 
             WaitForData = false;
+        }
+
+        /// <summary>
+        /// A dynamically-throttled-sender thread for API requests
+        /// </summary>
+        private static void SendAPIRequests()
+        {
+            WaitForRequests = true;
+            while (WaitForRequests || APIRequests.Count > 0)
+            {
+                // only send new requests if waiting for less than 25
+                if (APIResults.Count < 25 && APIRequests.TryDequeue(out Tuple<int, string> request))
+                {
+                    // throttle each API Request
+                    Thread.Sleep(API_ExpectedThrottle);
+
+                    //Console.WriteLine($"API @{API_ExpectedThrottle}: {request.Item2}");
+                    APIResults.Enqueue(new Tuple<int, Task<HttpResponseMessage>>(request.Item1, Client.GetAsync(request.Item2)));
+                    // when sending a new request, slightly reduce the throttle
+                    lock (ThrottleLock)
+                    {
+                        API_ExpectedThrottle = Math.Max(10, API_ExpectedThrottle - 2);
+                    }
+                }
+                else
+                {
+                    Thread.Sleep(5);
+                }
+            }
+
+            WaitForAPI = false;
+        }
+
+        private static void QueueAPIRequestForID(int i, bool retry = false)
+        {
+            // maximum API limits is 100/sec so throttle to that at least
+            // dont allow more than 50 simultaneous requests
+            // 10ms minimum wait, but need to allow for repeated calls to slip in and can be called from 2 threads
+
+            // if retrying, increment the expected throttle slightly
+            if (retry)
+            {
+                lock (ThrottleLock)
+                {
+                    API_ExpectedThrottle = Math.Min(1000, API_ExpectedThrottle + 10);
+                }
+            }
+
+            // if the API request queue is 'full' then continue to wait for a throttle and try again to queue
+            while (!retry && APIRequests.Count > 25) { Thread.Sleep(API_ExpectedThrottle); }
+
+            APIRequests.Enqueue(new Tuple<int, string>(i, string.Format(RawAPICallFormat, i)));
         }
 
         private static void QueueAPIData(string data)
@@ -512,17 +574,6 @@ namespace ATT
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
             return client;
-        }
-
-        private static void QueueAPIRequestForID(int i, bool retry = false)
-        {
-            // maximum API limits is 100/sec so throttle to that at least
-            // dont allow more than 50 simultaneous requests
-            // 10ms minimum wait, but need to allow for repeated calls to slip in and can be called from 2 threads
-            int delay = Math.Max(API_ExpectedThrottle, APIResults.Count);
-            while (!retry && APIResults.Count > 49) { Thread.Sleep(delay); }
-            Thread.Sleep(delay);
-            APIResults.Enqueue(new Tuple<int, Task<HttpResponseMessage>>(i, Client.GetAsync(string.Format(RawAPICallFormat, i))));
         }
 
         private static Task<HttpResponseMessage> QueueAPIRequest(string url)
