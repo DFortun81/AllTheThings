@@ -1660,7 +1660,6 @@ root(ROOTS.Unsorted, {
 			i(210005),	-- 10.2 Monster - Weapon - Staff - 10.1.5 Weapon Staff - Staff_2H_Druid_C_02_Color1
 			i(210014),	-- Mysterious Seeds
 			i(210016),	-- Somnowl's Shroud
-			i(210022),	-- Mimiron's Jumpjets
 			i(210029),	-- Overgrown Freyan Hatchet
 			i(210030),	-- Bow of the Dreamfused Skull
 			i(210031),	-- Spike of the Dreamfused Skull
@@ -1892,7 +1891,6 @@ root(ROOTS.Unsorted, {
 			i(210408),	-- Winter Warden's Cloak
 			i(210409),	-- Aura
 			i(210411),	-- Fast Growing Seed
-			i(210412),	-- Flourishing Whimsydrake
 			i(210414),	-- Forest Lord's Antlers
 			i(210415),	-- Darnassian Moonsilver Spaulders
 			i(210418),	-- Darnassian Cloak

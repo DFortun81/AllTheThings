@@ -22,7 +22,7 @@ COMMUNITY_CLUES_HEADER = createHeader({
 root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 	n(ACHIEVEMENTS, {
 		ach(18644, {	-- Community Rumor Mill
-			pet(4263),	-- Tobias (PET!) [Maybe Get itemID later??]	
+			pet(4263),	-- Tobias (PET!) [Maybe Get itemID later??]
 		}),
 		ach(18643, {	-- Community Rumors
 			i(208150),	-- Blue Tweed Cap
@@ -357,7 +357,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 
 	n(COMMUNITY_CLUES_HEADER, {
 		header(HEADERS.Spell, 424082, {
-			i(210022, {
+			i(210022, {	-- Mimiron's Jumpjets (MOUNT!)
 				["description"] = "Combine the first, second, and third boosters near an Empowered\nArcane Forge to reforge and power Mimiron's Jumpjets.\n",
 				["cost"] = {
 					{"i",208984,1},	-- First Booster Part

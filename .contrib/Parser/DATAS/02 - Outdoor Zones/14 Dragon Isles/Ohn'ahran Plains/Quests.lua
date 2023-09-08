@@ -1250,7 +1250,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 18.7, 51.8, OHNAHRAN_PLAINS },
 				["timeline"] = { ADDED_10_2_0 },
 				["g"] = {
-					i(210412),	-- Flourishing Whimsydrake
+					i(210412),	-- Flourishing Whimsydrake (MOUNT!)
 				},
 			}),
 			n(BONUS_OBJECTIVES, {	-- All of these are One-Time
