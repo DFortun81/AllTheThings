@@ -338,7 +338,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		-- Day 8 --
 		q(77653, {	-- A Key Story
 			["qg"] = 207696,	-- Bobby Carlisle
-			["coord"] = { 47.8, 47.1, VALDRAKKEN },
+			["coord"] = { 47.9, 46.8, VALDRAKKEN },
 			["g"] = {
 				i(208486),	-- The Blacksmith and the Apprentice (QI!)
 			},
