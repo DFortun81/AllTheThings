@@ -112,8 +112,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		}),
 		q(77203, {	-- Preserving Rarities
 			["qg"] = 206864,	-- Preservationist Kathos
-			["coord"] = { 47.4, 48.1, VALDRAKKEN },
+			["coords"] = { 
+				{ 47.4, 48.1, VALDRAKKEN },		-- Preservationist Kathos
+				{ 58.88, 54.09, VALDRAKKEN },	-- Chalice Placement
+			},
 			["sourceQuests"] = { 77202 },	-- The Preservationists
+			["description"] = "Talk to Kathos again to get a Mystery box & open it to receive a Golden Chalice.\nDeliver the Chalice in the Bank in Valdrakken (58.88 54.09).\nYou can rightclick the quest to place all coordinates.",
 			-- TODO: does it go away after event?
 			["groups"] = {
 				i(208054, {	-- A Mystery Box
@@ -124,9 +128,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		}),
 		q(76735, {	-- Rise in Relic Theft
 			["qg"] = 206864,	-- Preservationist Kathos
-			["coord"] = { 47.4, 48.1, VALDRAKKEN },
+			["coords"] = { 
+				{ 47.4, 48.1, VALDRAKKEN },			-- Preservationist Kathos
+				{ 12.4, 49.2, THE_AZURE_SPAN },		-- Elder Poa
+				{ 48.0, 74.8, DRAGONBLIGHT },		-- Elder Ko'nani
+				{ 33.63, 58.45, BOREAN_TUNDRA },	-- Elder Poa
+			},
 			["sourceQuests"] = { 77203 },	-- Preserving Rarities
 			["isDaily"] = true,	-- this reset after the first day? are the secrets on rotation?
+			["description"] = "Deliver the Tuskarr Spear to Eldor Poa in Azure Span (12.4 49.2).\nDeliver the newly received Shomko Spear to Elder Ko'nani in Dragonblight (48.0 74.8).\nFinally deliver the spear to the Statue in Borean Tundra (33.63 58.45).\nYou can rightclick the quest to place all coordinates.",
 			["groups"] = {
 				i(207105),	-- Tuskarr Ceremonial Spear
 				-- TODO: not really sure how to list this situation yet...
