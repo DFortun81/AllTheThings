@@ -410,7 +410,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				-- #if BEFORE 4.0.3
 				["cr"] = 1726,	-- Defias Magician
 				-- #elseif AFTER 10.1.7
-				["description"] = "Defias Pirates are located on & around the boat.",
+				["description"] = "The item drops from Defias Pirates which are located on the boat near the end of the dungeon.",
 				["cr"] = 48522,	-- Defias Pirate
 				-- #endif
 			}),
@@ -419,21 +419,39 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				-- #if BEFORE 4.0.3
 				["cr"] = 1725,	-- Defias Watchman
 				-- #elseif AFTER 10.1.7
-				["description"] = "Defias Pirates are located on & around the boat.",
+				["description"] = "The item drops from Defias Pirates which are located on the boat near the end of the dungeon.",
 				["cr"] = 48522,	-- Defias Pirate
 				-- #endif
 			}),
 			i(1943, {	-- Goblin Mail Leggings
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
+				-- #if BEFORE 4.0.3
 				["cr"] = 3947,	-- Goblin Shipbuilder
+				-- #elseif AFTER 10.1.7
+				["description"] = "The item drops from Goblins between 1st and 2nd boss.",
+				["crs"] = {
+					48279,	-- Goblin Overseer	-- Not 100% sure
+					48439,	-- Goblin Engineer
+				},
+				-- #endif
 			}),
 			i(1936, {	-- Goblin Screwdriver
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
+				-- #if BEFORE 4.0.3
 				["cr"] = 622,	-- Goblin Engineer
+				-- #elseif AFTER 10.1.7
+				["description"] = "The item drops from Goblins between 1st and 2nd boss.",
+				["cr"] = 48279,	-- Goblin Overseer
+				-- #endif
 			}),
 			i(1944, {	-- Metalworking Gloves
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
+				-- #if BEFORE 4.0.3
 				["cr"] = 1731,	-- Goblin Craftsman
+				-- #elseif AFTER 10.1.7
+				["description"] = "The item drops from Goblins between 1st and 2nd boss.",
+				["cr"] = 48280,	-- Goblin Craftsman
+				-- #endif
 			}),
 			i(1894, {	-- Miners' Union Card
 				["crs"] = {
@@ -449,6 +467,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					48522,	-- Defias Pirate
 				},
 				-- #else
+				["description"] = "The item drops from Defias Pirates which are located on the boat near the end of the dungeon.",
 				["cr"] = 657,	-- Defias Pirate
 				-- #endif
 			}),
@@ -509,8 +528,13 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				["cr"] = 641,	-- Goblin Woodcarver
 			}),
 			i(1945, {	-- Woodworking Gloves
-				["timeline"] = { "removed 4.0.3" },
+				["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
+				-- #if BEFORE 4.0.3
 				["cr"] = 641,	-- Goblin Woodcarver
+				-- #elseif AFTER 10.1.7
+				["description"] = "The item drops from Goblins or Oaf's Lackey between 1st and 2nd boss.",
+				["cr"] = 48445,	-- Oaf Lackey
+				-- #endif
 			}),
 		}),
 		-- #if AFTER CATA
