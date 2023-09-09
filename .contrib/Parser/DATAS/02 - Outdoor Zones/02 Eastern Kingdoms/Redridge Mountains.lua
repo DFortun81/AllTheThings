@@ -1552,27 +1552,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(ZONE_DROPS, {
 				i(1446, {	-- Blackrock Boots
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 440,	-- Blackrock Grunt
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 440,	-- Blackrock Grunt
 					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 25.4, 35.4, REDRIDGE_MOUNTAINS },
+						{ 41.4, 39.8, REDRIDGE_MOUNTAINS },
+						{ 62.0, 44.0, REDRIDGE_MOUNTAINS },
+						{ 74.8, 78.8, REDRIDGE_MOUNTAINS },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					["cr"] = 4463,	-- Blackrock Summoner
 					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
-						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
+						{ 38.6, 13.6, REDRIDGE_MOUNTAINS },
+						{ 34.4, 10.0, REDRIDGE_MOUNTAINS },
+						{ 28.0, 15.4, REDRIDGE_MOUNTAINS },
 					},
 					-- #endif
-					--]]
 				}),
 				i(1455, {	-- Blackrock Champion's Axe
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
@@ -1622,30 +1617,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					--]]
 				}),
 				i(1296, {	-- Blackrock Mace
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["crs"] = {
 						437,	-- Blackrock Renegade
 						4065,	-- Blackrock Sentry
 					},
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 25.4, 35.4, REDRIDGE_MOUNTAINS },
+						{ 78.6, 71.6, REDRIDGE_MOUNTAINS },
+						{ 62.6, 45.6, REDRIDGE_MOUNTAINS },
+						{ 46.0, 18.4, REDRIDGE_MOUNTAINS },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					["cr"] = 437,	-- Blackrock Renegade
 					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
-						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
+						{ 52.6, 41.4, REDRIDGE_MOUNTAINS },
+						{ 48.6, 34.2, REDRIDGE_MOUNTAINS },
+						{ 44.0, 33.2, REDRIDGE_MOUNTAINS },
 					},
 					-- #endif
-					--]]
 				}),
 				i(1445, {	-- Blackrock Pauldrons
 					["timeline"] = { "removed 4.0.3" },

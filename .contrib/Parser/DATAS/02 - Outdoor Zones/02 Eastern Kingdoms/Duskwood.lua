@@ -2083,50 +2083,38 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(2013, {	-- Cryptbone Staff
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 787,	-- Skeletal Healer
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 787,	-- Skeletal Healer
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 25.4, 35.4, DUSKWOOD },
+						{ 16.6, 31.6, DUSKWOOD },
+						{ 17.0, 38.8, DUSKWOOD },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					["cr"] = 203,	-- Skeletal Mage
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 17.8, 33.4, DUSKWOOD },
-						{ 19.8, 46.8, DUSKWOOD },
+						{ 79.2, 66.6, DUSKWOOD },
+						{ 79.6, 70.6, DUSKWOOD },
+						{ 79.6, 74.2, DUSKWOOD },
 					},
 					-- #endif
-					--]]
 				}),
 				i(2232, {	-- Dark Runner Boots
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 205,	-- Nightbane Dark Runner
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 25.4, 35.4, DUSKWOOD },
+						{ 62.4, 42.6, DUSKWOOD },
+						{ 64.0, 49.6, DUSKWOOD },
+						{ 64.2, 74.0, DUSKWOOD },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 17.8, 33.4, DUSKWOOD },
-						{ 19.8, 46.8, DUSKWOOD },
+						{ 66.4, 33.0, DUSKWOOD },
+						{ 61.8, 38.0, DUSKWOOD },
+						{ 65.6, 49.0, DUSKWOOD },
 					},
 					-- #endif
-					--]]
 				}),
 				i(1077, {	-- Defias Mage Ring
 					["timeline"] = { "removed 4.0.3" },
