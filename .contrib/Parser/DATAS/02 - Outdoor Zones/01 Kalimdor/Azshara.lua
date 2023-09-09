@@ -2036,7 +2036,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(17054, {	-- Joonho's Mercy
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -2243,8 +2243,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				i(15763, {	-- Pattern: Blue Dragonscale Shoulders (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 6146,	-- Cliff Breaker
+					["coords"] = {
+						{ 64.6, 87.2, AZSHARA },
+						{ 50.4, 80.2, AZSHARA },
+						{ 80.6, 18.6, AZSHARA },
+						{ 70.4, 17.6, AZSHARA },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 37002,	-- Cliff Crasher
+					["coords"] = {
+						{ 48.4, 79.8, AZSHARA },
+						{ 34.4, 40.6, AZSHARA },
+						{ 15.0, 52.0, AZSHARA },
+						{ 53.0, 76.8, AZSHARA },
+					},
+					-- #endif
 				}),
 				i(14473, {	-- Pattern: Ghostweave Belt
 					["timeline"] = { "removed 4.0.3" },	-- Learned from trainer
