@@ -266,6 +266,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				--["sourceQuests"] = {  },	-- no requirement as of 7.Sept
 				["provider"] = { "n", 209318 },	-- Cenarius
 				["coord"] = { 50.8, 62.1, TREE_1 },
+				["isBreadcrumb"] = true,
 			}),
 			q(78065, {	-- The Q'onzu Query
 				--["sourceQuests"] = {  },	-- no requirement as of 7.Sept
@@ -327,6 +328,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 77662 },	-- A Call to Aid
 				["provider"] = { "n", 209083 },	-- Shandris Feathermoon
 				["coord"] = { 49.6, 46.2, TREE_1 },
+				["g"] = {
+					i(209430),	-- Bear Spirit Stone (QI!)
+					i(208770),	-- Leaf Spirit Stone (QI!)
+					i(209429),	-- Moon Spirit Stone (QI!)
+					i(209428),	-- Wolf Spirit Stone (QI!)
+				},
 			}),
 			q(77664, {	-- One Last Step
 				["sourceQuests"] = { 77739 },	-- Smother the Flames
@@ -353,6 +360,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 55.3, 42.3, TREE_1 },
 				["g"] = {
 					i(208937),	-- A Muddy Journal
+					i(209054),	-- Ritual Remedy (QI!)
+					i(209051),	-- Sleeping Glory (QI!)
+					i(209050),	-- Somnium Bark (QI!)
 				},
 			}),
 			--
@@ -369,7 +379,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["provider"] = { "n", 208669 },	-- Lady Moonberry
 				["coord"] = { 49.8, 62.5, TREE_1 },
 				["g"] = {
-					i(208985),	-- Silly Hat
+					i(208985),	-- Silly Hat (QI!)
 				},
 			}),
 			q(77318, {	-- Merithra Says
@@ -387,11 +397,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 77896 },	-- A Sleepy Search
 				["provider"] = { "n", 210164 },	-- Thaalean
 				["coord"] = { 58.1, 77.3, TREE_1 },
+				["g"] = {
+					i(208930),	-- Velvety Lasher Leaves (QI!)
+				},
 			}),
 			q(77922, {	-- Fluffy Filler Retrieval
 				["sourceQuests"] = { 77896 },	-- A Sleepy Search
 				["provider"] = { "n", 210164 },	-- Thaalean
 				["coord"] = { 58.1, 77.3, TREE_1 },
+				["g"] = {
+					i(208931),	-- Silky Sage (QI!)
+				},
 			}),
 			q(77955, {	-- Heated Hearthstone Hustle (Bugged as of 7.Sept. Revisit later)
 				["sourceQuests"] = {
@@ -403,12 +419,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			--
 			q(76567, {	-- Grousing Garden
-				--["sourceQuests"] = {  },	-- no requirement as of 7.Sept
+				["sourceQuests"] = { 76566 },	-- The Dryad Garden
 				["provider"] = { "n", 207779 },	-- Ethidris Creekward
 				["coord"] = { 53.7, 74.6, TREE_1 },
 			}),
 			q(76568, {	-- Pineshrew Panic
-				--["sourceQuests"] = {  },	-- no requirement as of 7.Sept
+				--["sourceQuests"] = { 76566 },	-- The Dryad Garden
 				["provider"] = { "n", 207779 },	-- Ethidris Creekward
 				["coord"] = { 53.7, 74.6, TREE_1 },
 			}),
@@ -561,5 +577,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(77491),	-- pop while was afk / 'A massive crack of lightning breaks the sky as the primalist open a portal to the elemental plane!' ?
 		--q(77490),	-- pop while was afk / last chat text was that '%player_name% creates Shipment of Goods' multiple times
 		--q(77370),	-- pop during wq 76992 after first transform / also 'The vision of a young dreamer fill the air around the Fileds of Reverie'
+		--q(77356),	-- pop during wq 76558
 	}),
 }));

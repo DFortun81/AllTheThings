@@ -2850,6 +2850,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstSkin(74122, 197353),	-- Skinning Blisterhide
 			FirstSkin(74141, 190907),	-- Skinning Blitztusk (Grand Hunt)
 			FirstSkin(74551, 201535, ADDED_10_0_5),	-- Skinning Bloodbeak the Ravenous
+			FirstSkin(78340, 210050, ADDED_10_2_0),	-- Skinning Bloodstipe Great Ray
 			FirstSkin(74144, 191450),	-- Skinning Boolk
 			FirstSkin(74124, 193644),	-- Skinning Bouldron
 			FirstSkin(74206, 193658),	-- Skinning Corrupted Proto-Dragon
@@ -2871,6 +2872,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstSkin(75884, 200537, ADDED_10_0_7),	-- Skinning Gahz'raxes
 			FirstSkin(74152, 193853),	-- Skinning Galnmor
 			FirstSkin(74193, 193125),	-- Skinning Goremaul the Gluttonous
+			FirstSkin(78333, 209936, ADDED_10_2_0),	-- Skinning Greedy Gessie
 			FirstSkin(74550, 201537, ADDED_10_0_5),	-- Skinning Groffnar
 			FirstSkin(74135, 193251),	-- Skinning Gruffy
 			FirstSkin(74134, 193269),	-- Skinning Grumbletrunk
@@ -2889,10 +2891,14 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstSkin(74236, 200111, ADDED_10_1_0),	-- Skinning Magtembo
 			FirstSkin(74182, 195409),	-- Skinning Makhra the Ashtouched
 			FirstSkin(74171, 193212),	-- Skinning Malsegan
+			FirstSkin(78341, 210051, ADDED_10_2_0),	-- Skinning Matriarch Keevah
 			FirstSkin(74208, 193246),	-- Skinning Matriarch Remalla
 			FirstSkin(74161, 193311),	-- Skinning Melkhop (Grand Hunt)
 			FirstSkin(74163, 195430),	-- Skinning Molkeej (Grand Hunt)
+			FirstSkin(78342, 210064, ADDED_10_2_0),	-- Skinning Molten Leadspike
+			FirstSkin(78338, 210045, ADDED_10_2_0),	-- Skinning Moragh the Slothful
 			FirstSkin(74559, 201549, ADDED_10_0_5),	-- Skinning Morlash (it's a plant but it requires skinning end my suffering)
+			FirstSkin(78343, 210070, ADDED_10_2_0),	-- Skinning Mosa Umbramane
 			FirstSkin(74157, 195093),	-- Skinning Moskhoi (Grand Hunt)
 			FirstSkin(74214, 193735),	-- Skinning Moth'go Deeploom
 			FirstSkin(74131, 193201),	-- Skinning Mucka the Raker
@@ -2930,6 +2936,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstSkin(74150, 193722),	-- Skinning Tomnu
 			FirstSkin(74156, 194760),	-- Skinning Uurhilt (Grand Hunt)
 			FirstSkin(74183, 192453),	-- Skinning Vaniik the Stormtouched
+			FirstSkin(78345, 210508, ADDED_10_2_0),	-- Skinning Voracious Mikanji
 			FirstSkin(74184, 192364),	-- Skinning Windscale the Stormborn
 			FirstSkin(74195, 193161),	-- Skinning Woolfang
 			FirstSkin(74228, 186859),	-- Skinning Worldcarver A'tir

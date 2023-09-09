@@ -4,6 +4,59 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	m(TREE_1, {
 		n(VENDORS, {
+			n(208156, {	-- Moon Priestress Lasara <Renown Quatermaster> TODO: PH for easy copy-paste in future
+				["coord"] = { 50.3, 61.6, TREE_1 },
+				["g"] = {
+					i(210482, {	-- Flourishing Whimsydrake: Back Fins
+						["cost"] = { { "c", DRAGON_SUPPLIES, 225 } },
+					}),
+					i(210483, {	-- Flourishing Whimsydrake: Ridged Brow
+						["cost"] = { { "c", DRAGON_SUPPLIES, 225 } },
+					}),
+					i(210484, {	-- Flourishing Whimsydrake: Underbite Snout
+						["cost"] = { { "c", DRAGON_SUPPLIES, 225 } },
+					}),
+					i(210702, {	-- Solar Synthesis Gloves
+						["cost"] = { { "c", DRAGON_SUPPLIES, 300 } },
+					}),
+					i(210706, {	-- Drowsed Shepherd's Vest
+						["cost"] = { { "c", DRAGON_SUPPLIES, 300 } },
+					}),
+					i(210700, {	-- Auburn Scavenger Gauntlets
+						["cost"] = { { "c", DRAGON_SUPPLIES, 300 } },
+					}),
+					i(210704, {	-- Fallen Protector Handguards
+						["cost"] = { { "c", DRAGON_SUPPLIES, 300 } },
+					}),
+					i(210485, {	-- Flourishing Whimsydrake: Long Snout
+						["cost"] = { { "c", DRAGON_SUPPLIES, 450 } },
+					}),
+					i(210487, {	-- Flourishing Whimsydrake: Neck Fins
+						["cost"] = { { "c", DRAGON_SUPPLIES, 450 } },
+					}),
+					i(210486, {	-- Flourishing Whimsydrake: Horns
+						["cost"] = { { "c", DRAGON_SUPPLIES, 450 } },
+					}),
+					i(210703, {	-- Solar Synthesis Crown
+						["cost"] = { { "c", DRAGON_SUPPLIES, 600 } },
+					}),
+					i(210707, {	-- Drowsed Shepherd's Hood
+						["cost"] = { { "c", DRAGON_SUPPLIES, 600 } },
+					}),
+					i(210701, {	-- Auburn Scavenger Helm
+						["cost"] = { { "c", DRAGON_SUPPLIES, 600 } },
+					}),
+					i(210705, {	-- Fallen Protector Greathelm
+						["cost"] = { { "c", DRAGON_SUPPLIES, 600 } },
+					}),
+					i(210479, {	-- Flourishing Whimsydrake: Night Scales
+						["cost"] = { { "c", DRAGON_SUPPLIES, 1250 } },
+					}),
+					i(210481, {	-- Flourishing Whimsydrake: Sunset Scales
+						["cost"] = { { "c", DRAGON_SUPPLIES, 1250 } },
+					}),
+				},
+			}),
 			n(211069, {	-- Thislefir
 				["coord"] = { 59.8, 16.9, TREE_1 },
 				["g"] = {

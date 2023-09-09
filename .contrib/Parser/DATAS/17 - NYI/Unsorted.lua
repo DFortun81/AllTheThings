@@ -1093,7 +1093,6 @@ root(ROOTS.Unsorted, {
 			i(208747),	-- Dreamtender's Charm
 			i(208748),	-- Dreamtender's Charm
 			i(208757),	-- Ash's Recipes to Delight and Nourish your Plant Pals
-			i(208770),	-- Leaf Spirit Stone
 			i(208775),	-- Ashphodel Research Notes
 			i(208798),	-- Recorded Memories of Tyr's Guard
 			i(208821),	-- Aspects' Token of Merit
@@ -1109,13 +1108,10 @@ root(ROOTS.Unsorted, {
 			i(208886),	-- Fiery Essence
 			i(208927),	-- Sandsparkle Pearl
 			i(208928),	-- Zaqali Adornments
-			i(208930),	-- Velvety Lasher Leaves
-			i(208931),	-- Silky Sage
 			i(208932),	-- A Partial Fourth Clue
 			i(208933),	-- A Partial Fourth Clue
 			i(208934),	-- A Partial Fourth Clue
 			i(208935),	-- A Partial Fourth Clue
-			i(208937),	-- A Muddy Journal
 			i(208938),	-- Metamorphic Soot
 			i(208946),	-- Burning Rune
 			i(208947),	-- Enchanted Watering Can
@@ -1401,9 +1397,6 @@ root(ROOTS.Unsorted, {
 			i(209346),	-- Verdant Gladiator's Medallion
 			i(209347),	-- Verdant Gladiator's Sigil of Adaptation
 			i(209416),	-- Turtle Eggshell Shards
-			i(209428),	-- Wolf Spirit Stone
-			i(209429),	-- Moon Spirit Stone
-			i(209430),	-- Bear Spirit Stone
 			i(209535),	-- Verdant Gladiator's Splitter
 			i(209536),	-- Verdant Gladiator's Dagger
 			i(209537),	-- Verdant Gladiator's Warglaive
