@@ -402,6 +402,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 					i(208832),	-- Tyr's Titan Key
 					i(209038),	-- Tyr's Titan Key
 					i(209039),	-- Tyr's Titan Key
+					i(209040),	-- Tyr's Titan Key
 				}),
 			},
 		}),
