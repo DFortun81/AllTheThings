@@ -5,6 +5,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 	m(TREE_1, {
 		n(TREASURES, {
 			-- treasures don't have valid loot as of 7.September.2023. Revisit all of these and put the loot in later
+			--[[ hidden in some tree roots but unable to interact with it. Need to revisit later when it's fixed
+			o(???, {	-- Hidden Podling Stash
+				["questID"] = ???,
+				["coord"] = { 47.5, 34.9, TREE_1 },
+			}),
+			]]--
 			o(408707, {	-- Odd Burl
 				["questID"] = 78006,
 				["coord"] = { 61.4, 63.2, TREE_1 },
@@ -15,15 +21,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			--[[
 			Statue of the Sky Mistress (unknown object ID)
-			found at 64.22 19.27. To solve the riddle, find a "Mark of Avianna" and return to the state with the buff.
+			found at 64.22 19.27. To solve the riddle, find a "Mark of Avianna" and return to the statue with the buff.
 			questID 78367 spawns the Reliquary of Aviana
 			]]--
 			o(411066, {	-- Reliquary of Aviana
 				["coord"] = { 64.1, 19.2, TREE_1 },
-				["description"] = "Find a Mark of Avianna and return to the statute with the buff still active.",
+				["description"] = "Find a Mark of Avianna and return to the statue with the buff still active.",
 				["questID"] = 78360,
 				["g"] = {
 					i(210659),	-- Branch of Aviana
+				},
+			}),
+			--[[
+			Statute of the Great Wolf
+			found at 32.93 83.24 2200. To solve the riddle, find a "Mark of Goldrinn" and return to the statue with the buff.
+			questID 78368 spawns the Reliquary of Goldrinn
+			]]--
+			o(411067, {	-- Reliquary of Goldrinn
+				["coord"] = { 33.2, 83.3, TREE_1 },
+				["description"] = "Find a Mark of Goldrinn and return to the statue with the buff still active.",
+				["questID"] = 78361,
+				["g"] = {
+					i(210660),	-- Claw of Lo'Gosh
 				},
 			}),
 			-- Unwaking Echos seems to be zone-wide chests and are probably dailies with several spawn points

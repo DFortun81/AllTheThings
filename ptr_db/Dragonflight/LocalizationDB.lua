@@ -5511,6 +5511,7 @@ _.ObjectNames = {
 	[408707] = "Odd Burl",
 	[409440] = "Pineshrew Cache",
 	[411066] = "Reliquary of Aviana",
+	[411067] = "Reliquary of Goldrinn",
 	[411447] = "Unwaking Echo",
 	[411463] = "Unwaking Echo",
 	[411465] = "Unwaking Echo",
