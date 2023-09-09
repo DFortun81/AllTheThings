@@ -396,7 +396,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 				}),
 				o(408754, {	-- Reforged Titan Key
 					["coord"] = { 24.5, 60.7, THE_WAKING_SHORES },
-					["g"] = { i(208831) },	--  Tyr's Titan Key
+					["g"] = {i(208830) },	--  Reforged Titan Key (QI)
+				}),
+				i(208831, {	-- Tyr's Titan Key
+					i(208832),	-- Tyr's Titan Key
+					i(209038),	-- Tyr's Titan Key
+					i(209039),	-- Tyr's Titan Key
 				}),
 			},
 		}),
