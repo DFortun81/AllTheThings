@@ -43,6 +43,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(208358),	-- Sunset's Bulwark
 				},
 			}),
+			n(208658, {	-- Moltenbinder's Disciple
+				["questID"] = 77941,
+				["coord"] = { 45.8, 18.8, TREE_1 },
+			}),
 			n(210045, {	-- Moragh the Slothful
 				["questID"] = 78210,
 				["coords"] = {
