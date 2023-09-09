@@ -289,8 +289,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["provider"] = { "n", 211209 },	-- Elianna
 				["coord"] = { 50.2, 61.8, TREE_1 },
 			}),
+			--
 			q(78262, {	-- It Starts With a Stone
 				--["sourceQuests"] = {  },	-- no requirement as of 7.Sept
+				["provider"] = { "n", 211328 },	-- Vaskarn
+				["coord"] = { 49.8, 61.6, TREE_1 },
+			}),
+			q(78271, {	-- Dreaming of Crests
+				["sourceQuests"] = { 78262 },	-- It Starts With a Stone
 				["provider"] = { "n", 211328 },	-- Vaskarn
 				["coord"] = { 49.8, 61.6, TREE_1 },
 			}),
@@ -447,6 +453,39 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 77314 },	-- Requiem in a Dream
 				["provider"] = { "n", 208714 },	-- Ysera
 				["coord"] = { 58.6, 23.8, TREE_1 },
+			}),
+			--
+			q(78444, {	-- A Worthy Ally: Dream Wardens
+				["sourceQuests"] = { 77283 },	-- A Multi-Front Battle
+				["provider"] = { "n", 208143 },	-- Keeper Amrymn
+				["isWeekly"] = true,
+				["coord"] = { 50.2, 61.6, TREE_1 },
+			}),
+			--
+			q(78427, {	-- Great Crates!
+				["sourceQuests"] = { 77283 },	-- A Multi-Front Battle
+				["provider"] = { "n", 211240 },	-- Eran'nda
+				["coord"] = { 49.9, 62.3, TREE_1 },
+				["cost"] = {
+					{ "i", 210041, 1 },	-- Shipment of Goods
+				},
+			}),
+			q(78428, {	-- Create of the Art
+				["sourceQuests"] = { 77283 },	-- A Multi-Front Battle
+				["provider"] = { "n", 211240 },	-- Eran'nda
+				["coord"] = { 49.9, 62.3, TREE_1 },
+				["cost"] = {
+					{ "i", 210041, 5 },	-- Shipment of Goods
+				},
+			}),
+			--
+			q(78381, {	-- Dreams Unified
+				["sourceQuests"] = { 77283 },	-- A Multi-Front Battle
+				["provider"] = { "n", 208669 },	-- Lady Moonberry
+				["coord"] = { 49.8, 62.5, TREE_1 },
+				["g"] = {
+					i(208396),	-- Splintered Spark of Dreams
+				},
 			}),
 			--[[
 			q(, {	-- 

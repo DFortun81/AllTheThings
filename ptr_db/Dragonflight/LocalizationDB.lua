@@ -5509,6 +5509,7 @@ _.ObjectNames = {
 	[405958] = "Sealed Kaldorei Scroll",
 	[408226] = "Ancient Key Mold",
 	[408707] = "Odd Burl",
+	[409222] = "Reliquary of Ursol",
 	[409440] = "Pineshrew Cache",
 	[411066] = "Reliquary of Aviana",
 	[411067] = "Reliquary of Goldrinn",
