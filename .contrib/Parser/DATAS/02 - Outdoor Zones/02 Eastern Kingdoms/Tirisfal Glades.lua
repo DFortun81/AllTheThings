@@ -552,31 +552,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					n(ZONE_DROPS, {
 						i(3295, {	-- Deadman Blade
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["cr"] = 1919,	-- Samuel Fipps
 							-- #if AFTER CATA
 							["coord"] = { 70.8, 38.4, DEATHKNELL },
 							-- #else
 							["coord"] = { 36.6, 61.6, TIRISFAL_GLADES },
 							-- #endif
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-							["cr"] = 1919,	-- Samuel Fipps
 						}),
 						i(3293, {	-- Deadman Cleaver
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["cr"] = 1917,	-- Daniel Ulfman
 							-- #if AFTER CATA
 							["coord"] = { 70.8, 41.0, DEATHKNELL },
 							-- #else
 							["coord"] = { 36.6, 61.8, TIRISFAL_GLADES },
 							-- #endif
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-							["cr"] = 1917,	-- Daniel Ulfman
 						}),
 						i(3294, {	-- Deadman Club
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["cr"] = 1918,	-- Karrel Grayves
 							-- #if AFTER CATA
 							["coord"] = { 71.2, 40.6, DEATHKNELL },
 							-- #else
 							["coord"] = { 36.6, 61.6, TIRISFAL_GLADES },
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },
-							["cr"] = 1918,	-- Karrel Grayves
+
 						}),
 						i(3296, {	-- Deadman Dagger
 							-- #if AFTER CATA
@@ -592,41 +593,50 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						}),
 						i(3262, {	-- Putrid Wooden Hammer
-							-- #if BEFORE CATA
-							["coord"] = { 33.0, 63.6, TIRISFAL_GLADES },
-							-- #endif
 							["timeline"] = { "removed 4.0.3" },
 							["cr"] = 1890,	-- Rattlecage Skeleton
+							-- #if AFTER CATA
+							["coord"] = { 52.8, 42.8, DEATHKNELL },
+							-- #else
+							["coord"] = { 33.0, 63.6, TIRISFAL_GLADES },
+							-- #endif
 						}),
 						i(3260, {	-- Scarlet Initiate Robes
-							-- #if BEFORE CATA
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							-- #if AFTER CATA
+							["cr"] = 1539,	-- Scarlet Neophyte
+							["coord"] = { 79.0, 32.2 TIRISFAL_GLADES },
+							-- #else
+							["cr"] = 1507,	-- Scarlet Initiate
 							["coord"] = { 37.4, 68.0, TIRISFAL_GLADES },
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },
-							["cr"] = 1507,	-- Scarlet Initiate
 						}),
 						i(2754, {	-- Tarnished Bastard Sword
-							-- #if BEFORE CATA
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							-- #if AFTER CATA
+							["coord"] = { 72.2, 66.4, DEATHKNELL },
+							["cr"] = 49422,	-- Rotbrain Berserker
+							-- #else
+							["cr"] = 1506,	-- Scarlet Convert
 							["coord"] = { 36.8, 68.0, TIRISFAL_GLADES },
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },
-							["cr"] = 1506,	-- Scarlet Convert
 						}),
 						i(3261, {	-- Webbed Cloak
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 							-- #if AFTER CATA
 							["coord"] = { 17.4, 26.4, DEATHKNELL },
+							["cr"] = 1505,	-- Night Web Spider
 							-- #else
 							["coord"] = { 23.8, 58.4, TIRISFAL_GLADES },
-							-- #endif
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 							["cr"] = 1688,	-- Night Web Matriarch
+							-- #endif
 						}),
 						i(3263, {	-- Webbed Pants
+							["timeline"] = { "removed 4.0.3" },
+							["cr"] = 1505,	-- Night Web Spider
 							-- #if BEFORE CATA
 							["coord"] = { 27.6, 59.2, TIRISFAL_GLADES },
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },
-							["cr"] = 1505,	-- Night Web Spider
 						}),
 					}),
 				},
