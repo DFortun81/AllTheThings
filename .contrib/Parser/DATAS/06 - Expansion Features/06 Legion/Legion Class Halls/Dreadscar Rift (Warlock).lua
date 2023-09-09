@@ -278,7 +278,9 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						},
 					}),
 					q(40823, {	-- Rebuilding the Council
+					-- #if BEFORE 8.0.1
 						["sourceQuests"] = { 40821 },	-- Power Overwhelming
+						-- #endif
 						["provider"] = { "n", 101097 },	-- Calydus
 						["coord"] = { 37.7, 31.8, DREADSCAR_RIFT },
 					}),
