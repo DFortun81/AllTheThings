@@ -687,9 +687,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 2287,	-- Crushridge Warmonger
 				}),
 				i(5245, {	-- Summoner's Wand
-					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["cr"] = 2358,	-- Dalaran Summoner
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+					--	{ 23.4, 35.4, ALTERAC_MOUNTAINS },
+					--	{ 25.4, 35.4, ALTERAC_MOUNTAINS },
+					},
+					-- #elseif AFTER 10.1.7
+					["coords"] = {
+						{ 30.8, 31.6, ALTERAC_MOUNTAINS },
+						{ 33.6, 40.6, ALTERAC_MOUNTAINS },
+						{ 27.8, 40.6, ALTERAC_MOUNTAINS },
+					},
+					-- #endif
 				}),
 			}),
 		},

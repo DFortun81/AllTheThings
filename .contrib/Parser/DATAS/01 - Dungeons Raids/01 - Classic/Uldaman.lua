@@ -575,7 +575,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 						i(9382, {	-- Tromping Miner's Boots
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
