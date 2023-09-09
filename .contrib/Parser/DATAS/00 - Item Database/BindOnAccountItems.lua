@@ -12,6 +12,44 @@ end
 
 -- TODO: move more BoA items here, especially if they are 'cost' items or contain BoP items
 
+-- Dreamsurge Tokens (10.1.7)
+i(208918);	-- Dreambound Cloth Gloves
+i(208917);	-- Dreambound Cloth Boots
+i(208911);	-- Dreambound Cloth Belt
+i(208908);	-- Dreambound Cloth Bracers
+i(208903);	-- Dreambound Cloth Spaulders
+i(208900);	-- Dreambound Cloth Leggings
+i(208895);	-- Dreambound Cloth Chestpiece
+i(208891);	-- Dreambound Cloth Helm
+i(208921);	-- Dreambound Leather Gloves
+i(208914);	-- Dreambound Leather Boots
+i(208913);	-- Dreambound Leather Belt
+i(208906);	-- Dreambound Leather Bracers
+i(208905);	-- Dreambound Leather Spaulders
+i(208898);	-- Dreambound Leather Leggings
+i(208897);	-- Dreambound Leather Chestpiece
+i(208893);	-- Dreambound Leather Helm
+i(208920);	-- Dreambound Mail Gloves
+i(208915);	-- Dreambound Mail Boots
+i(208912);	-- Dreambound Mail Belt
+i(208907);	-- Dreambound Mail Bracers
+i(208904);	-- Dreambound Mail Spaulders
+i(208899);	-- Dreambound Mail Leggings
+i(208896);	-- Dreambound Mail Chestpiece
+i(208892);	-- Dreambound Mail Helm
+i(208919);	-- Dreambound Plate Gloves
+i(208916);	-- Dreambound Plate Boots
+i(208910);	-- Dreambound Plate Belt
+i(208909);	-- Dreambound Plate Bracers
+i(208902);	-- Dreambound Plate Spaulders
+i(208901);	-- Dreambound Plate Leggings
+i(208894);	-- Dreambound Plate Chestpiece
+i(208890);	-- Dreambound Plate Helm
+i(208922);	-- Dreambound Cloak
+i(208923);	-- Dreambound Ring
+i(208924);	-- Dreambound Necklace
+i(208926);	-- Dreambound Weapon
+
 -- DF Currencies
 i(199211);	-- Primeval Essence
 i(201254);	-- Medal of Honor [A] (Season 1)
