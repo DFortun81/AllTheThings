@@ -237,7 +237,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		q(77277, {	-- Preservationist Cleared
 			["qg"] = 208620,	-- "Appraiser" Sazsel Stickyfingers
 			["coord"] = { 62.8, 72.8, VALDRAKKEN },
-			["sourceQuest"] = 77276,	-- An Inside Job?
+			["sourceQuest"] = 77397,	-- An Inside Job?
 			["groups"] = {
 				i(208130),	-- Maruuk Burial Banner
 			},
@@ -339,7 +339,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		q(77653, {	-- A Key Story
 			["qg"] = 207696,	-- Bobby Carlisle
 			["coord"] = { 47.9, 46.8, VALDRAKKEN },
-			["g"] = {
+			["groups"] = {
 				i(208486),	-- The Blacksmith and the Apprentice (QI!)
 			},
 		}),
@@ -350,6 +350,44 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 				i(208827, {	-- Titan Key Mold
 					["provider"] = { "o", 408226 },	-- Ancient Key Mold
 					["coord"] = { 62.9, 57.3, OHNAHRAN_PLAINS },
+				}),
+			},
+		}),
+
+		-- Day 9 --
+		q(77829, {	-- Reforging a Legend
+			["qg"] = 207696,	-- Bobby Carlisle
+			["coord"] = { 47.9, 46.8, VALDRAKKEN },
+			["groups"] = {
+				i(208829),	-- Titan Key Materials List (QI!)
+				q(77893),	-- Upon completion of this quest and receiving the QI
+			},
+		}),
+		q(77831, {	-- A Key To Reforg(ing)
+			["qg"] = 210837,	-- Weaponsmith Koref
+			["sourceQuest"] = 77829,	-- Reforging a Legend
+			["coord"] = { 24.5, 60.7, THE_WAKING_SHORES },
+			["cost"] = {
+				{"i",208835,50},	-- Rose Gold Dust (QI)
+				{"i",208836,8},		-- Igneous Flux (QI)
+			},
+			["groups"] = {
+				o(407691, {	-- Dusty Red Pellets
+					["coords"] = {
+						{ 47.9, 46.3, THE_WAKING_SHORES },
+					},
+					["g"] = { i(208835) },	-- Rose Gold Dust (QI)
+				}),
+				o(407692, {	-- Igneous Flux
+					["coords"] = {
+						{ 21.3, 76.7, THE_WAKING_SHORES },
+						{ 23.1, 78.6, THE_WAKING_SHORES },
+					},
+					["g"] = { i(208836) },	-- Igneous Flux (QI)
+				}),
+				o(408754, {	-- Reforged Titan Key
+					["coord"] = { 24.5, 60.7, THE_WAKING_SHORES },
+					["g"] = { i(208831) },	--  Tyr's Titan Key
 				}),
 			},
 		}),
@@ -371,6 +409,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 					i(208984),	-- First Booster Part
 				},
 			}),
+			o(409914, {	-- Mimiron's Booster Part
+				["coord"] = { 50.2, 25.7, FELWOOD },
+				["g"] = {
+					i(209781),	-- Second Booster Part
+				},
+			}),
+			q(78099),	-- HQT Triggered after looting Second Booster Part
 		}),
 	}),
 }))));
@@ -404,14 +449,20 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(77421),	-- accepted 'Out of the Sands' (questID 77305)
 	q(76508),	-- Upon completion of Out of the Sands (questID 77305)
 	q(77576),	-- Upon completion of A Titanic Mold (QuestID 77822)
+	q(77577),	-- Upon completion of A Key To Reforging (QuestID 77831)
+	q(77830),	-- Upon "learning" Tyr's Titan Key (itemID 208831)
 
 	-- TODO: Someone add these under Community Rumors achievement in a suitable structure please
 	q(77289),	-- Community Satchel 1 (Eastern Plague Lands @ 55.1, 59.4)
 	q(77288),	-- Community Satchel 2 (Felwood @ 42.1, 48.1)
 	q(77291),	-- Community Satchel 3 (Thousand Needles @ 42.7, 30.7)
-				-- Community Satchel 4 (Shadowmoon Valley(Draenor) 539 @ 35.3 48.9)
+	q(77292),	-- Community Satchel 4 (Shadowmoon Valley(Draenor) 539 @ 35.3 48.9)
 	q(77290),	-- Community Satchel 5 (Netherstorm @ 26.2, 68.7)
+	q(77307),	-- Community Rumors (Achievement 18643)
 	q(77293),	-- Community Satchel 6 (Valley of the Four Winds @ 56.7, 21.4)
-	q(77296),	-- Community Satchel 7 (Azure Span @ 25.2, 71.4 Object ID 405535)
+	q(77296),	-- Community Satchel 7 (Azure Span @ 25.2, 71.4 Object ID 405535) Duplicated? that cant be right
 	q(77294),	-- Community Satchel 8 (Dragonblight @ 63.9, 72.6 Object ID 405535)
+	q(77297),	-- Community Satchel 9 (Northern Barrens @ 45.9, 50.7 Obeject ID 405536)
+	-- Community Satchel 10
+	-- Community Rumor Mill (Achievement 18644)
 })))
