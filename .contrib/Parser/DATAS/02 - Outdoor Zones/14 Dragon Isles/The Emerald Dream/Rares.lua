@@ -11,6 +11,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 		]]--
 		
 		n(RARES, sharedData({ ["isDaily"] = true },{
+			n(210050, {	-- Bloodstripe Great Ray
+				["questID"] = 77942,
+				["coord"] = { 51.1, 31.7, TREE_1 },
+				["g"] = {
+					i(201437),	-- Slumbering Dream Fragment
+				},
+			}),
 			n(209909, {	-- Crabtankerous
 				["questID"] = 77862,
 				["coord"] = { 66.1, 63.5, TREE_1 },
