@@ -6928,6 +6928,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 73.2, 57.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						i(23346, {	-- Battleworn Claymore
+							["timeline"] = { ADDED_10_1_7 },
+						}),
+						i(52557, {	-- Battleworn Hammer
+							["timeline"] = { ADDED_10_1_7 }
+						}),
 						i(2523),	-- Bullova
 						i(2521),	-- Flamberge
 						i(2531),	-- Great Axe
@@ -6936,6 +6942,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(2525),	-- War Hammer
 						i(2533),	-- War Maul
+						i(57244, {	-- Warder's Spear
+							["timeline"] = { ADDED_10_1_7 },
+						}),
+						i(12282, {	-- Worn Battleaxe
+							["timeline"] = { ADDED_10_1_7 },
+						}),
+						i(49778, {	-- Worn Greatsword
+							["timeline"] = { ADDED_10_1_7 },
+						}),
+						i(57243, {	-- Worn Spear
+							["timeline"] = { ADDED_10_1_7 }
+						}),
+						i(52532, {	-- Worn Wood Chopper
+							["timeline"] = { ADDED_10_1_7 },
+						}),
 						i(2529),	-- Zweihander
 					},
 				}),
@@ -7583,6 +7604,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(15808),	-- Fine Light Crossbow
 						i(15809),	-- Heavy Crossbow
 						i(15807),	-- Light Crossbow
+						i(20981, {	-- Neophyte's Mace
+							["timeline"] = { ADDED_10_1_7 }
+						}),
+						i(20977, {	-- Recruit's Shortsword
+							["timeline"] = { ADDED_10_1_7 }
+						}),
+						i(20982, {	-- Sharp Dagger
+							["timeline"] = { ADDED_10_1_7 }
+						}),
+						i(37, {	-- Worn Axe
+							["timeline"] = { ADDED_10_1_7 }
+						}),
 					},
 				}),
 				n(12781, {	-- Master Sergeant Biggins <Accessories Quartermaster> [WRATH+] / Master Sergeant Biggins <Officer Accessories Quartermaster>

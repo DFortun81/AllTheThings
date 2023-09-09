@@ -5065,6 +5065,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 76.0, 37.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						i(23346, {	-- Battleworn Claymore
+							["timeline"] = { ADDED_10_1_7 },
+						}),
+						i(52557, {	-- Battleworn Hammer
+							["timeline"] = { ADDED_10_1_7 }
+						}),
 						i(2523),	-- Bullova
 						i(2521),	-- Flamberge
 						i(2531),	-- Great Axe
@@ -5073,6 +5079,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(2525),	-- War Hammer
 						i(2533),	-- War Maul
+						i(57244, {	-- Warder's Spear
+							["timeline"] = { ADDED_10_1_7 },
+						}),
+						i(12282, {	-- Worn Battleaxe
+							["timeline"] = { ADDED_10_1_7 },
+						}),
+						i(49778, {	-- Worn Greatsword
+							["timeline"] = { ADDED_10_1_7 },
+						}),
+						i(57243, {	-- Worn Spear
+							["timeline"] = { ADDED_10_1_7 }
+						}),
+						i(52532, {	-- Worn Wood Chopper
+							["timeline"] = { ADDED_10_1_7 },
+						}),
 						i(2529),	-- Zweihander
 					},
 				}),
@@ -5424,6 +5445,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(925),		-- Flail
 						i(2028),	-- Hammer
 						i(924),	-- Maul
+						i(20981, {	-- Neophyte's Mace
+							["timeline"] = { ADDED_10_1_7 }
+						}),
 						i(2026),	-- Rock Hammer
 					},
 				}),
@@ -6701,8 +6725,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(923),		-- Longsword
 						i(2526),	-- Main Gauche
 						i(2208),	-- Poniad
+						i(20977, {	-- Recruit's Shortsword
+							["timeline"] = { ADDED_10_1_7 }
+						}),
 						i(2534),	-- Rondel
 						i(2027),	-- Scimitar
+						i(20982, {	-- Sharp Dagger
+							["timeline"] = { ADDED_10_1_7 }
+						}),
 						i(15903),	-- Slicing Claw
 					},
 				}),
@@ -7403,6 +7433,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(2030),	-- Gnarled Staff
 						i(2507),	-- Laminated Recurve Bow
 						i(928),		-- Long Staff
+						i(37, {	-- Worn Axe
+							["timeline"] = { ADDED_10_1_7 }
+						}),
 					},
 				}),
 				n(45549, {	-- Zido Helmbreaker <Blacksmithing Supplies>
