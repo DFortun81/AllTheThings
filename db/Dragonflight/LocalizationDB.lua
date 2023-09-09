@@ -5515,6 +5515,7 @@ _.ObjectNames = {
 	[407692] = "Igneous Flux",
 	[408226] = "Ancient Key Mold",
 	[408754] = "Reforged Titan Key",
+	[408860] = "Mimiron's Booster Part",
 	[409914] = "Mimiron's Booster Part",
 	[9000000] = "Wind Sculpted Stone",
 	[9999890] = "Corrupted Loot",
@@ -9741,6 +9742,8 @@ _.ObjectModels = {
 	[405523] = 4209023,
 	[405546] = 194083,
 	[405958] = 1124091,
+	[407691] = 84494,
+	[407692] = 77402,
 	[408226] = 65246,
 }
 

@@ -418,17 +418,26 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 				},
 			}),
 			n(210398, {	-- Smogswog the Firebreather
+				["description"] = "Requries 3 people with Torch of Pyrreth to summon.",
 				["coord"] = { 58.9, 78.1, THE_CAPE_OF_STRANGLETHORN },
 				["g"] = {
 					i(208984),	-- First Booster Part
 				},
 			}),
 			o(409914, {	-- Mimiron's Booster Part
+				["description"] = "Takes 4 people. Someone to control the Water Elemental, 3 people to Envelope",
 				["coord"] = { 50.2, 25.7, FELWOOD },
 				["g"] = {
 					i(209781),	-- Second Booster Part
 				},
 			}),
+			o(408860, {	-- Mimiron's Booster Part
+			["description"] = "Take out the cannons so you can loot.",
+			["coord"] = { 54.8, 52.1, BLASTED_LANDS },
+			["g"] = {
+				i(209055),	-- Third Booster Part
+			},
+		}),
 		}),
 	}),
 }))));
@@ -477,9 +486,10 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(77296),	-- Community Satchel 7 (Azure Span @ 25.2, 71.4 Object ID 405535) Duplicated? that cant be right
 	q(77294),	-- Community Satchel 8 (Dragonblight @ 63.9, 72.6 Object ID 405535)
 	q(77297),	-- Community Satchel 9 (Northern Barrens @ 45.9, 50.7 Obeject ID 405536)
-	-- Community Satchel 10
-	-- Community Rumor Mill (Achievement 18644)
+	q(78298),	-- Community Satchel 10 (Blasted Lands @ 64.7, 55.4)
+	q(78152),	-- Community Rumor Mill (Achievement 18644)
 
 	-- Community Clues HQTs
 	q(78099),	-- HQT Triggered after looting Second Booster Part
+	q(78100),	-- HQT Triggered after looting Third Booster Part
 })))
