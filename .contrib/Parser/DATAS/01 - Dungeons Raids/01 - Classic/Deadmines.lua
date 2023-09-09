@@ -316,7 +316,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				-- #endif
 				["groups"] = {
 					i(3902, {	-- Staff of Nobles
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					}),
 					-- #if BEFORE 4.0.3
 					i(5967),	-- Girdle of Nobility

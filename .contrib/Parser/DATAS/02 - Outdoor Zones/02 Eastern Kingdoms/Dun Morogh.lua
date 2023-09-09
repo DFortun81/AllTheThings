@@ -687,20 +687,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(2110, {	-- Light Magesmith Robe
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 							["cr"] = 946,	-- Frostmane Novice
+							-- #if AFTER CATA
+							["coord"] = { 37.0, 78.4, DUN_MOROGH },
+							-- #else
+							["coord"] = { 30.4, 81.0, DUN_MOROGH },
+							-- #endif
 						}),
 						i(2787, {	-- Trogg Dagger
 							["cr"] = 724,	-- Burly Rockjaw Trogg
 						}),
 						i(2054, {	-- Trogg Hand Axe
+							["timeline"] = { "removed 4.0.3", ADDED_10_0_7 },
+							["cr"] = 1718,	-- Rockjaw Raider
 							-- #if AFTER CATA
 							["coord"] = { 42.6, 66.0, DUN_MOROGH },
 							-- #else
 							["coord"] = { 35.6, 67.8, DUN_MOROGH },
 							-- #endif
-							["timeline"] = { "removed 4.0.3", ADDED_10_0_7 },
-							["cr"] = 1718,	-- Rockjaw Raider
 						}),
 					}),
 				},
@@ -2683,151 +2688,85 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(2260, {	-- Frostmane Hand Axe
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["coords"] = {
+						{ 26.6, 50.6, DUN_MOROGH },
+						{ 27.2, 52.8, DUN_MOROGH },
+					},
+					-- #if BEFORE 4.0.3
 					["crs"] = {
 						1123,	-- Frostmane Headhunter
 						1122,	-- Frostmane Hideskinner
 					},
-
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
-					["coords"] = {
-						{ 23.4, 35.4, DUN_MOROGH },
-						{ 25.4, 35.4, DUN_MOROGH },
-					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, DUN_MOROGH },
-						{ 17.8, 33.4, DUN_MOROGH },
-						{ 19.8, 46.8, DUN_MOROGH },
-					},
+					["cr"] = 1121,	-- Snowstrider
 					-- #endif
-					--]]
 				}),
 				i(2258, {	-- Frostmane Shortsword
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1120,	-- Frostmane Troll
-
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["coords"] = {
+						{ 26.6, 50.6, DUN_MOROGH },
+						{ 27.2, 52.8, DUN_MOROGH },
+					},
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
-					["coords"] = {
-						{ 23.4, 35.4, DUN_MOROGH },
-						{ 25.4, 35.4, DUN_MOROGH },
-					},
+					["cr"] = 1120,	-- Frostmane Troll
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, DUN_MOROGH },
-						{ 17.8, 33.4, DUN_MOROGH },
-						{ 19.8, 46.8, DUN_MOROGH },
-					},
+					["cr"] = 1121,	-- Snowstrider
 					-- #endif
-					--]]
 				}),
 				i(2257, {	-- Frostmane Staff
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 1124,	-- Frostmane Shadowcaster
-
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["coords"] = {
+						{ 26.6, 50.6, DUN_MOROGH },
+						{ 27.2, 52.8, DUN_MOROGH },
+					},
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
-					["coords"] = {
-						{ 23.4, 35.4, DUN_MOROGH },
-						{ 25.4, 35.4, DUN_MOROGH },
-					},
+					["cr"] = 1124,	-- Frostmane Shadowcaster
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, DUN_MOROGH },
-						{ 17.8, 33.4, DUN_MOROGH },
-						{ 19.8, 46.8, DUN_MOROGH },
-					},
+					["cr"] = 1121,	-- Snowstrider
 					-- #endif
-					--]]
 				}),
 				i(2112, {	-- Lumberjack Jerkin
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1689,	-- Scarred Crag Boar
-
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["coords"] = {
-						{ 23.4, 35.4, DUN_MOROGH },
-						{ 25.4, 35.4, DUN_MOROGH },
+						{ 88.6, 51.4, DUN_MOROGH },
+						{ 81.6, 49.0, DUN_MOROGH },
 					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, DUN_MOROGH },
-						{ 17.8, 33.4, DUN_MOROGH },
-						{ 19.8, 46.8, DUN_MOROGH },
-					},
-					-- #endif
-					--]]
 				}),
 				i(2898, {	-- Mountaineer Chestpiece
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["cr"] = 1196,	-- Ice Claw Bear
-
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, DUN_MOROGH },
-						{ 25.4, 35.4, DUN_MOROGH },
+						{ 30.8, 40.4, DUN_MOROGH },
+						{ 37.2, 44.8, DUN_MOROGH },
+						{ 67.0, 50.2, DUN_MOROGH },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
 					["coords"] = {
-						{ 23.4, 35.4, DUN_MOROGH },
-						{ 17.8, 33.4, DUN_MOROGH },
-						{ 19.8, 46.8, DUN_MOROGH },
+						{ 71.2, 52.8, DUN_MOROGH },
+						{ 67.6, 59.0, DUN_MOROGH },
+						{ 67.6, 59.1, DUN_MOROGH },
 					},
 					-- #endif
-					--]]
 				}),
 				i(2065, {	-- Rockjaw Blade
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 1116,	-- Rockjaw Ambusher
-
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 1116,	-- Rockjaw Ambusher
 					["coords"] = {
-						{ 23.4, 35.4, DUN_MOROGH },
-						{ 25.4, 35.4, DUN_MOROGH },
+						{ 72.6, 54.0, DUN_MOROGH },
+						{ 77.6, 59.6, DUN_MOROGH },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					["cr"] = 1718,	-- Rockjaw Raider
 					["coords"] = {
-						{ 23.4, 35.4, DUN_MOROGH },
-						{ 17.8, 33.4, DUN_MOROGH },
-						{ 19.8, 46.8, DUN_MOROGH },
+						{ 42.6, 66.0, DUN_MOROGH },
+						{ 42.0, 67.8, DUN_MOROGH },
 					},
 					-- #endif
-					--]]
 				}),
 				i(2066, {	-- Skull Hatchet
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
@@ -2838,52 +2777,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 1115,	-- Rockjaw Skullthumper
 				}),
 				i(2114, {	-- Snowy Robe
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 1133,	-- Starving Winter Wolf
-
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 1133,	-- Starving Winter Wolf
 					["coords"] = {
-						{ 23.4, 35.4, DUN_MOROGH },
-						{ 25.4, 35.4, DUN_MOROGH },
+						{ 36.0, 38.8, DUN_MOROGH },
+						{ 33.0, 45.0, DUN_MOROGH },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					["cr"] = 42290,	-- Winter Wolf
 					["coords"] = {
-						{ 23.4, 35.4, DUN_MOROGH },
-						{ 17.8, 33.4, DUN_MOROGH },
-						{ 19.8, 46.8, DUN_MOROGH },
+						{ 68.6, 30.0, NEW_TINKERTOWN },
+						{ 67.8, 45.6, NEW_TINKERTOWN },
+						{ 53.8, 57.2, NEW_TINKERTOWN },
 					},
 					-- #endif
-					--]]
 				}),
 				i(2064, {	-- Trogg Club
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 1118,	-- Rockjaw Backbreaker
-
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["coords"] = {
+						{ 80.0, 57.6, DUN_MOROGH },
+						{ 69.4, 58.8, DUN_MOROGH },
+					},
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
-					["coords"] = {
-						{ 23.4, 35.4, DUN_MOROGH },
-						{ 25.4, 35.4, DUN_MOROGH },
-					},
+					["cr"] = 1118,	-- Rockjaw Backbreaker
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, DUN_MOROGH },
-						{ 17.8, 33.4, DUN_MOROGH },
-						{ 19.8, 46.8, DUN_MOROGH },
-					},
+					["cr"] = 1115,	-- Rockjaw Skullthumper
 					-- #endif
-					--]]
 				}),
 				i(5767, {	-- Violet Robes
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
