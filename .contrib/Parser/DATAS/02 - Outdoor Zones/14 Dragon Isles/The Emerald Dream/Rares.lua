@@ -36,6 +36,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 77864,
 				["coord"] = { 58.7, 51.2, TREE_1 },
 			}),
+			n(209919, {	-- Isaqa
+				["questID"] = 77989,
+				["coord"] = { 37.4, 31.7, TREE_1 },
+			}),
 			n(210051, {	-- Matriarch Keevah
 				["questID"] = 78213,
 				["coord"] = { 41.1, 73.3, TREE_1 },
@@ -65,6 +69,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(201437),	-- Slumbering Dream Fragment
 				},
 			}),
+			n(210070, {	-- Mosa Umbramane
+				["questID"] = 77940,
+				["coord"] = { 55.0, 36.8, TREE_1 },
+				["g"] = {
+					i(201437),	-- Slumbering Dream Fragment
+				},
+			}),
 			--[[ Shows on the map with a rare icon but didn't fire a questID. Might be incomplete
 			n(209898, {	-- Reefbreaker Moruud
 				["questID"] = ,
@@ -79,6 +90,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coords"] = {
 					{ 65.4, 43.5, TREE_1 },
 					{ 67.5, 66.2, TREE_1 },
+					{ 41.5, 31.1, TREE_1 },
 				},
 				["g"] = {
 					i(201437),	-- Slumbering Dream Fragment
