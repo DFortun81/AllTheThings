@@ -418,8 +418,21 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 209140 },	-- Maiev Stormsong
 					["coord"] = { 52.7, 4.2, STORMWIND_CITY },
 					["g"] = {
-						i(208879),	-- Ensemble: Kaldorei Protector's Adornment
-						i(208785),	-- Traditionalist's Kaldorei Blades
+						i(208879, {	-- Ensemble: Kaldorei Protector's Adornment
+							i(208875),	-- Kaldorei Protector's Anklets
+							i(208824),	-- Kaldorei Protector's Band
+							i(208842),	-- Kaldorei Protector's Cinch
+							i(208876),	-- Kaldorei Protector's Coronet
+							i(208874),	-- Kaldorei Protector's Mantle
+							i(208877),	-- Kaldorei Protector's Talons
+							i(208882),	-- Kaldorei Protector's Wrap
+							i(208885),	-- Kaldorei Protector's Wristwraps
+						}),
+						i(208785, {	-- Traditionalist's Kaldorei Blades
+							i(208759),	-- Duskrune Glaive
+							i(208761),	-- Glaive of the Blood Moon
+							i(208762),	-- Moonlight Glaive
+						}),
 						title(511),	-- Ama'shan <Name>
 					},
 				}),

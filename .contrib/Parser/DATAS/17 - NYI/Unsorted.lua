@@ -1095,33 +1095,20 @@ root(ROOTS.Unsorted, {
 			i(208747),	-- Dreamtender's Charm
 			i(208748),	-- Dreamtender's Charm
 			i(208757),	-- Ash's Recipes to Delight and Nourish your Plant Pals
-			i(208759),	-- Duskrune Glaive
-			i(208761),	-- Glaive of the Blood Moon
-			i(208762),	-- Moonlight Glaive
 			i(208770),	-- Leaf Spirit Stone
 			i(208775),	-- Ashphodel Research Notes
-			i(208785),	-- Traditionalist's Kaldorei Blades
 			i(208798),	-- Recorded Memories of Tyr's Guard
 			i(208821),	-- Aspects' Token of Merit
-			i(208824),	-- Kaldorei Protector's Band
 			i(208825),	-- Junior Timekeeper's Racing Belt
 			i(208837),	-- Missing Fruit
 			i(208841),	-- True Sight
-			i(208842),	-- Kaldorei Protector's Cinch
 			i(208856),	-- Pocket Lint
 			i(208861),	-- The First Clue
 			i(208862),	-- The Second Clue
 			i(208863),	-- The Fourth Clue
 			i(208864),	-- The Third Clue
-			i(208874),	-- Kaldorei Protector's Mantle
-			i(208875),	-- Kaldorei Protector's Anklets
-			i(208876),	-- Kaldorei Protector's Coronet
-			i(208877),	-- Kaldorei Protector's Talons
-			i(208879),	-- Ensemble: Kaldorei Protector's Adornment
 			i(208881),	-- Shiversnap Blossom
-			i(208882),	-- Kaldorei Protector's Wrap
 			i(208884),	-- Root Restoration Fruit
-			i(208885),	-- Kaldorei Protector's Wristwraps
 			i(208886),	-- Fiery Essence
 			i(208927),	-- Sandsparkle Pearl
 			i(208928),	-- Zaqali Adornments
