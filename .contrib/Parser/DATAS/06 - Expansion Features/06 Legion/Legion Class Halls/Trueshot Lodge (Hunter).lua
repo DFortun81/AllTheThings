@@ -789,16 +789,14 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 						["timeline"] = { "added 7.2.0" },
 					}),
 					-- Hunter Hati Reborn Questline (BfA)
-					q(55516, {	-- Spark of Genius (A)
+					q(55516, {	-- Spark of Genius
 						["provider"] = { "n", 152002 },	-- Image of Mimiron
 						["coord"] = { 72.8, 14.0, BORALUS },
-						["races"] = ALLIANCE_ONLY,
 						["timeline"] = { "added 8.1.5" },
 					}),
-					q(54913, {	-- Spark of Genius (H)
+					q(54913, {	-- Spark of Genius
 						["provider"] = { "n", 152002 },	-- Image of Mimiron
 						["coord"] = { 47.8, 89.4, DAZARALOR },
-						["races"] = HORDE_ONLY,
 						["timeline"] = { "added 8.1.5" },
 					}),
 					q(54915, {	-- Telemetry Online
@@ -806,6 +804,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							54913,	-- Spark of Genius (H)
 							55516,	-- Spark of Genius (A)
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 149736 },	-- Image of Mimiron
 						["coord"] = { 37.5, 46.5, THE_STORM_PEAKS },
 						["timeline"] = { "added 8.1.5" },
