@@ -56,6 +56,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					})),
 				}),
 			}),
+			header(HEADERS.Map, TREE_1, {
+				n(REWARDS, {
+					i(210549,	-- Dream Racer's Purse
+					bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+						-- ph
+					})),
+				}),
+			}),
 			n(WORLD_QUESTS, sharedData({
 				["sourceQuests"] = {
 					71232,	-- Renown of the Dragon Isles
@@ -218,6 +226,25 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(75124, {	-- Dragonrider Racing - Sulfur Sprint
 					["coord"] = { 51.3, 46.6, ZARALEK_CAVERN },
 					["timeline"] = { ADDED_10_1_0 },
+				}),
+			})),
+			n(WORLD_QUESTS, sharedData({
+				["sourceQuests"] = {
+					71232,	-- Renown of the Dragon Isles
+					DF_ACCOUNT_CAMPAIGN_QUEST,
+				},
+				["sourceQuestNumRequired"] = 1,
+				["maxReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
+				["isWorldQuest"] = true,
+				["timeline"] = { ADDED_10_2_0 },
+				["sym"] = {{"select","itemID",210549}},	-- Dream Racer's Purse
+			}, {
+				------ The Emerald Dream TREE_1 ------
+				q(78434, {	-- Dragonrider Racing - Ysera Invitationa
+					["coord"] = { 59.1, 29.1, TREE_1 },
+				}),
+				q(78435, {	-- Dragonrider Racing - Smoldering Sprint
+					["coord"] = { 37.3, 44.0, TREE_1 },
 				}),
 			})),
 			i(191140),	-- Bronze Timepiece

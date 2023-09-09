@@ -480,10 +480,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--- pop during main story
 		q(77572),	-- after qID 77283 / one of them wq unlock
 		q(77887),	-- after qID 77283 / one of them probably achievement crit, may be?
-		q(76558),	-- during qID 76345 / when you investigate Terro body (dialog option)
-		q(77526),	-- pop after picked up qID 77178 / currently unsure why, probably animation or changing npcs location trigger?
-		q(77491),	-- pop while was afk / 'A massive crack of lightning breaks the sky as the primalist open a portal to the elemental plane!' ?
-		q(77490),	-- pop while was afk / last chat text was that '%player_name% creates Shipment of Goods' multiple times
 		---
 		q(77808),	-- Quest "What Do I Call You?": Pick the title of "Mother"
 		q(77809),	-- Quest "What Do I Call You?": Pick the title of "Father"
@@ -491,5 +487,11 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(77811),	-- Quest "What Do I Call You?": Pick the title of "Guardian"
 		-- there is likely one questID unique to each class. Need to test this theory
 		q(78257),	-- Quest "What Do I Call You?": Pick the title of "Highlord"
+
+		-- ???
+		q(77526),	-- pop after picked up qID 77178 / currently unsure why, probably animation or changing npcs location trigger?
+		q(77491),	-- pop while was afk / 'A massive crack of lightning breaks the sky as the primalist open a portal to the elemental plane!' ?
+		q(77490),	-- pop while was afk / last chat text was that '%player_name% creates Shipment of Goods' multiple times
+		q(77370),	-- pop during wq 76992 after first transform / also 'The vision of a young dreamer fill the air around the Fileds of Reverie'
 	}),
 }));

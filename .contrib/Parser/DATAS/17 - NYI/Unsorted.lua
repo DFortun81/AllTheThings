@@ -1105,7 +1105,6 @@ root(ROOTS.Unsorted, {
 			i(208775),	-- Ashphodel Research Notes
 			i(208785),	-- Traditionalist's Kaldorei Blades
 			i(208798),	-- Recorded Memories of Tyr's Guard
-			i(208801),	-- Handful of Rubble
 			i(208821),	-- Aspects' Token of Merit
 			i(208824),	-- Kaldorei Protector's Band
 			i(208825),	-- Junior Timekeeper's Racing Belt
@@ -1147,7 +1146,6 @@ root(ROOTS.Unsorted, {
 			i(208979),	-- 10.2 Monster - Merithra - Robe
 			i(208981),	-- 10.2 Monster - Merithra - Wrist
 			i(208982),	-- 10.2 Monster - Merithra - Waist
-			i(208983),	-- Yvelyn''s Assistance
 			i(208985),	-- Silly Hat
 			i(209018),	-- Glowdrop Sugar
 			i(209019),	-- Conjured Sugarfree Firewater Sorbet
@@ -1806,7 +1804,6 @@ root(ROOTS.Unsorted, {
 			i(210224),	-- Small Emerald Bloom
 			i(210225),	-- Medium Emerald Bloom
 			i(210226),	-- Large Emerald Bloom
-			i(210227),	-- Q'onzu's Faerie Feather
 			i(210228),	-- Pure Dream Water
 			i(210231),	-- Everburning Core
 			i(210234),	-- Essence of Dreams
