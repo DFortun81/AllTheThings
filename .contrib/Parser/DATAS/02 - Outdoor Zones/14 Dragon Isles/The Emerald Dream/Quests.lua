@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["provider"] = { "n", 207160 },	-- Tyrande Whisperwind
 				["coord"] = { 40.7, 47.5, TREE_1 },
 			}),
-			q(76442, {	-- Forlorn Hop
+			q(76442, {	-- Forlorn Hope
 				["sourceQuests"] = {
 					76437,	-- Burning Ground
 					76441,	-- Grim Reprisal
@@ -248,6 +248,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["provider"] = { "n", 210196 },	-- Solarys Thorngale
 				["coord"] = { 52.0, 63.6, TREE_1 },
 			}),
+			q(78096, {	-- A Silver Lining
+				["sourceQuests"] = { 77948 },	-- Burning Out
+				["provider"] = { "n", 210251 },	-- Kery'nael Thorngale
+				["coord"] = { 50.8, 63.6, TREE_1 },
+			}),
+			q(77978, {	-- A Passed Torch
+				["sourceQuests"] = { 77948 },	-- Burning Out (if you complete Burning Out before you grab this quest, it becomes unobtainable as of 8.September.2023)
+				["provider"] = { "o", 409077 },	-- Singed Leaflet
+				["coord"] = { 38.0, 47.2, TREE_1 },
+			}),
+			--
 			q(76566, {	-- The Dryad Garden
 				--["sourceQuests"] = {  },	-- no requirement as of 7.Sept
 				["provider"] = { "n", 209318 },	-- Cenarius
