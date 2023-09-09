@@ -2024,27 +2024,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(2014, {	-- Black Metal Greatsword
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 1270,	-- Fetid Corpse
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 1270,	-- Fetid Corpse
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 25.4, 35.4, DUSKWOOD },
+						{ 78.4, 36.0, DUSKWOOD },
+						{ 79.8, 32.8, DUSKWOOD },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					["cr"] = 202,	-- Skeletal Corpse
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 17.8, 33.4, DUSKWOOD },
-						{ 19.8, 46.8, DUSKWOOD },
+						{ 81.2, 58.0, DUSKWOOD },
+						{ 24.2, 42.0, DUSKWOOD },
+						{ 16.4, 45.8, DUSKWOOD },
 					},
 					-- #endif
-					--]]
 				}),
 				i(886, {	-- Black Metal Shortsword
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
@@ -2159,73 +2153,57 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(2017, {	-- Glowing Leather Bracers
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 785,	-- Skeletal Warder
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 785,	-- Skeletal Warder
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 25.4, 35.4, DUSKWOOD },
+						{ 16.0, 37.6, DUSKWOOD },
+						{ 17.0, 31.0, DUSKWOOD },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					["cr"] = 531,	-- Skeletal Fiend
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 17.8, 33.4, DUSKWOOD },
-						{ 19.8, 46.8, DUSKWOOD },
+						{ 24.0, 44.6, DUSKWOOD },
+						{ 18.0, 47.6, DUSKWOOD },
+						{ 16.6, 43.0, DUSKWOOD },
 					},
 					-- #endif
-					--]]
 				}),
 				i(2227, {	-- Heavy Ogre War Axe
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 892,	-- Splinter Fist Taskmaster
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 892,	-- Splinter Fist Taskmaster
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 25.4, 35.4, DUSKWOOD },
+						{ 40.6, 74.8, DUSKWOOD },
+						{ 37.2, 69.8, DUSKWOOD },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					["crs"] = 212,	-- Splinter Fist Warrior
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 17.8, 33.4, DUSKWOOD },
-						{ 19.8, 46.8, DUSKWOOD },
+						{ 40.2, 72.0, DUSKWOOD },
+						{ 35.4, 71.4, DUSKWOOD },
+						{ 35.6, 81.0, DUSKWOOD },
 					},
 					-- #endif
-					--]]
 				}),
 				i(2020, {	-- Hollowfang Blade
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 539,	-- Pygmy Venom Web Spider
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 539,	-- Pygmy Venom Web Spider
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 25.4, 35.4, DUSKWOOD },
+						{ 12.2, 69.8, DUSKWOOD },
+						{ 9.8, 49.6, DUSKWOOD },
+						{ 19.6, 26.4, DUSKWOOD },
+						{ 46.8, 16.8, DUSKWOOD },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					["cr"] = 45582,	-- Black Widow
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 17.8, 33.4, DUSKWOOD },
-						{ 19.8, 46.8, DUSKWOOD },
+						{ 34.6, 55.0, DUSKWOOD },
+						{ 27.8, 41.6, DUSKWOOD },
+						{ 35.6, 29.8, DUSKWOOD },
 					},
 					-- #endif
-					--]]
 				}),
 				i(911, {	-- Ironwood Treebranch
 					["cr"] = 889,	-- Splinter Fist Ogre
@@ -2284,30 +2262,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(2226, {	-- Ogremage Staff
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["crs"] = {
 						891,	-- Splinter Fist Fire Weaver
 						1251,	-- Splinter Fist Firemonger
 					},
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 25.4, 35.4, DUSKWOOD },
+						{ 40.6, 74.8, DUSKWOOD },
+						{ 37.2, 69.8, DUSKWOOD },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					["crs"] = 1251,	-- Splinter Fist Firemonger
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 17.8, 33.4, DUSKWOOD },
-						{ 19.8, 46.8, DUSKWOOD },
+						{ 40.2, 72.0, DUSKWOOD },
+						{ 35.4, 71.4, DUSKWOOD },
+						{ 35.6, 81.0, DUSKWOOD },
 					},
 					-- #endif
-					--]]
 				}),
 				i(5773, {	-- Pattern: Robes of Arcana
 					["timeline"] = { "removed 4.0.3" },
@@ -2339,27 +2311,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(2018, {	-- Skeletal Longsword
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 1110,	-- Skeletal Raider
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 1110,	-- Skeletal Raider
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 25.4, 35.4, DUSKWOOD },
+						{ 17.6, 33.6, DUSKWOOD },
+						{ 16.8, 37.2, DUSKWOOD },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					["cr"] = 48,	-- Skeletal Warrior
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 17.8, 33.4, DUSKWOOD },
-						{ 19.8, 46.8, DUSKWOOD },
+						{ 80.8, 69.2, DUSKWOOD },
+						{ 81.8, 70.0, DUSKWOOD },
+						{ 78.2, 70.4, DUSKWOOD },
 					},
 					-- #endif
-					--]]
 				}),
 				i(880, {	-- Staff of Horrors
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
