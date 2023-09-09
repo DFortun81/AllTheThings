@@ -476,8 +476,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			q(50074, {	-- Brutal Boost
 				["sourceQuests"] = {
 					49801,	-- Aggressive Mating Strategy
-					49814,	-- The Scent for a Brutosaur
-					50154,	-- They Say It's a Delicacy
 				},
 				["provider"] = { "n", 130905 },	-- Cala Cruzpot
 				["coord"] = { 64.1, 35.3, ZULDAZAR },
@@ -1173,7 +1171,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			}),
 			q(50150, {	-- Setting the Mood
 				["sourceQuests"] = {
-					49801,	-- Aggressive Mating Strategy
 					49814,	-- The Scent for a Brutosaur
 					50154,	-- They Say It's a Delicacy
 				},

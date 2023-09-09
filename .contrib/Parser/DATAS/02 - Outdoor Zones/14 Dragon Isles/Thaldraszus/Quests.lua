@@ -1150,7 +1150,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 60.7, 43.3, THALDRASZUS },
 			}),
 			q(72519, {	-- Temporal Two-ning
-				["sourceQuests"] = { 67154 },	-- Entropic Remnants
+				["sourceQuests"] = { 66032 },	-- Return to the Present
 				["provider"] = { "n", 186931 },	-- Nozdormu
 				["coord"] = { 60, 82.4, THALDRASZUS },
 			}),

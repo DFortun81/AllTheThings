@@ -95,7 +95,6 @@ root(ROOTS.Zones, {
 				q(39392, {	-- Bear Huntin'
 					["sourceQuests"] = {
 						40170,	-- Amateur Hour
-						39859,	-- Note-Eating Goats
 					},
 					["coord"] = { 40.0, 52.2, HIGHMOUNTAIN },
 					["provider"] = { "n", 94409 },	-- Hemet Nesingwary
@@ -434,7 +433,6 @@ root(ROOTS.Zones, {
 				q(39123, {	-- Lion Stalkin'
 					["sourceQuests"] = {
 						40170,	-- Amateur Hour
-						39859,	-- Note-Eating Goats
 					},
 					["coord"] = { 40.0, 52.2, HIGHMOUNTAIN },
 					["provider"] = { "n", 94409 },	-- Hemet Nesingwary
@@ -450,7 +448,6 @@ root(ROOTS.Zones, {
 				q(39124, {	-- Moose Shootin'
 					["sourceQuests"] = {
 						40170,	-- Amateur Hour
-						39859,	-- Note-Eating Goats
 					},
 					["coord"] = { 40.0, 52.2, HIGHMOUNTAIN },
 					["provider"] = { "n", 94409 },	-- Hemet Nesingwary

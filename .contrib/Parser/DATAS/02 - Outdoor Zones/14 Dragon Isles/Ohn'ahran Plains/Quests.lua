@@ -1325,6 +1325,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { AD
 		q(71175),	-- Teerakai Ancestor (spellID 390551)
 		q(71176),	-- The Eternal Kurgans Ancestor (spellID 390553)
 		-- q(70141),	-- Triggered when killed Skaara
+		q(73904),	-- Completed after killing Bloodgullet (NPC 193254)
 
 		q(72610, {["timeline"] = {ADDED_10_0_7}}),	-- After getting the achievement "A New Beginning"
 	}),

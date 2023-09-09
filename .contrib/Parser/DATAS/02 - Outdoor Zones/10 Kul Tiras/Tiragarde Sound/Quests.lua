@@ -428,7 +428,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				},
 			}),
 			q(48087, {	-- Equine Retrieval
-				["sourceQuests"] = { 48939 },	-- Show Me What You've Got
+				["sourceQuests"] = { 48004 },	-- Beginner Equitation
 				["coord"] = { 51.6, 27.3, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 124802 },	-- Lord Aldruis Norwington
