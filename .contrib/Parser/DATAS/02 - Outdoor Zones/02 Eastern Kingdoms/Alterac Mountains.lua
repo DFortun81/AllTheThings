@@ -662,20 +662,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(1280, {	-- Cloaked Hood
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 2246,	-- Syndicate Assassin
-					--[[ 
 					["coords"] = {
-					--	{ 23.4, 35.4, ALTERAC_MOUNTAINS },
-					--	{ 25.4, 35.4, ALTERAC_MOUNTAINS },
+						{ 48.8, 9.2, ALTERAC_MOUNTAINS },
+						{ 49.6, 10.0, ALTERAC_MOUNTAINS },
 					},
-					-- 
+					-- #elseif AFTER 10.1.7
+					["cr"] = 2242,	-- Syndicate Spy
 					["coords"] = {
-						{ 30.8, 31.6, ALTERAC_MOUNTAINS },
-						{ 33.6, 40.6, ALTERAC_MOUNTAINS },
-						{ 27.8, 40.6, ALTERAC_MOUNTAINS },
+						{ 57.2, 24.4, ALTERAC_MOUNTAINS },
+						{ 53.6, 14.8, ALTERAC_MOUNTAINS },
+						{ 49.6, 10.0, ALTERAC_MOUNTAINS },
 					},
-					-- --]]
+					-- #endif
 				}),
 				i(11206, {	-- Formula: Enchant Cloak - Lesser Agility (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },
