@@ -1933,6 +1933,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "A rare zone drop from any mob in the zone.",
 				}),
 				i(15727, {	-- Pattern: Heavy Scorpid Vest (RECIPE!)
+					-- added to burning steps in 10.1.5
 					["timeline"] = { "removed 4.0.3" },
 					-- #if AFTER TBC
 					["crs"] = {

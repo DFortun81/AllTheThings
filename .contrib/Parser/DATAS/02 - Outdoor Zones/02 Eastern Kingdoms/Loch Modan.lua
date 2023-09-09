@@ -1774,27 +1774,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(ZONE_DROPS, {
 				i(5319, {	-- Bashing Pauldrons
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 2478,  -- Haren Swifthoof <Horde Runner>
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 2478,  -- Haren Swifthoof <Horde Runner>
 					["coords"] = {
-						{ 23.4, 35.4, LOCH_MODAN },
-						{ 25.4, 35.4, LOCH_MODAN },
+						{ 55.2, 68.2, LOCH_MODAN },
+						{ 66.0, 37.8, LOCH_MODAN },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					["cr"] = 1186,  -- Black Bear
 					["coords"] = {
-						{ 23.4, 35.4, LOCH_MODAN },
-						{ 17.8, 33.4, LOCH_MODAN },
-						{ 19.8, 46.8, LOCH_MODAN },
+						{ 37.6, 33.6, LOCH_MODAN },
+						{ 43.0, 60.6, LOCH_MODAN },
+						{ 31.2, 24.4, LOCH_MODAN },
 					},
 					-- #endif
-					--]]
 				}),
 				i(2823, {	-- Mo'grosh Can Opener
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
@@ -1851,27 +1845,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(4949, {	-- Orcish Cleaver
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 7170,  -- Thragomm <Horde Runner>
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 7170,  -- Thragomm <Horde Runner>
 					["coords"] = {
-						{ 23.4, 35.4, LOCH_MODAN },
-						{ 25.4, 35.4, LOCH_MODAN },
+						{ 55.2, 68.2, LOCH_MODAN },
+						{ 66.0, 37.8, LOCH_MODAN },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					["cr"] = 1186,  -- Black Bear
 					["coords"] = {
-						{ 23.4, 35.4, LOCH_MODAN },
-						{ 17.8, 33.4, LOCH_MODAN },
-						{ 19.8, 46.8, LOCH_MODAN },
+						{ 37.6, 33.6, LOCH_MODAN },
+						{ 43.0, 60.6, LOCH_MODAN },
+						{ 31.2, 24.4, LOCH_MODAN },
 					},
 					-- #endif
-					--]]
 				}),
 				i(2283, {	-- Rat Cloth Belt
 					["cr"] = 1177,  -- Tunnel Rat Surveyor

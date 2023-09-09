@@ -1575,30 +1575,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					--]]
 				}),
 				i(1455, {	-- Blackrock Champion's Axe
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["crs"] = {
 						435,	-- Blackrock Champion
 						4464,	-- Blackrock Gladiator
 					},
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 25.4, 35.4, REDRIDGE_MOUNTAINS },
+						{ 35.6, 9.6, REDRIDGE_MOUNTAINS },
+						{ 28.6, 14.6, REDRIDGE_MOUNTAINS },
+						{ 69.6, 57.4, REDRIDGE_MOUNTAINS },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					["cr"] = 4462,	-- Blackrock Hunter
 					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
-						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
+						{ 54.4, 68.2, REDRIDGE_MOUNTAINS },
+						{ 49.4, 67.6, REDRIDGE_MOUNTAINS },
+						{ 44.2, 67.4, REDRIDGE_MOUNTAINS },
 					},
 					-- #endif
-					--]]
 				}),
 				i(1448, {	-- Blackrock Gauntlets
 					["timeline"] = { "removed 4.0.3" },
@@ -1824,27 +1819,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(1218, {	-- Heavy Gnoll War Club
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["cr"] = 445,	-- Redridge Alpha
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 25.4, 35.4, REDRIDGE_MOUNTAINS },
+						{ 28.6, 22.2, REDRIDGE_MOUNTAINS },
+						{ 18.6, 16.4, REDRIDGE_MOUNTAINS },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
 					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
-						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
+						{ 37.4, 30.8, REDRIDGE_MOUNTAINS },
+						{ 31.2, 21.6, REDRIDGE_MOUNTAINS },
+						{ 29.8, 37.4, REDRIDGE_MOUNTAINS },
+						{ 24.6, 31.0, REDRIDGE_MOUNTAINS },
 					},
 					-- #endif
-					--]]
 				}),
 				i(1299, {	-- Lesser Belt of the Spire
 					["timeline"] = { "removed 4.0.3" },
