@@ -441,7 +441,9 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 		race(UNDEAD, bubbleDown({ ["timeline"] = { ADDED_10_1_7 }, ["races"] = { UNDEAD } }, {
 			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Undead|r who has personally done the |cFFFFD700Return to Lordaeron|r questline.",
 			["g"] = {
-				q(76530),	-- Unliving Summons (automatically pops up when you meet the requirements)
+				q(76530, {	-- Unliving Summons (automatically pops up when you meet the requirements)
+					["sourceQuests"] = { 65788 },	-- A Walk with Ghosts
+				}),
 				q(72854, {	-- Our Enemies Abound
 					["sourceQuests"] = { 76530 },	-- Unliving Summons
 					["provider"] = { "n", 186091 },	-- Lilian Voss
@@ -538,8 +540,30 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 199893 },	-- Lilian Voss
 					["coord"] = { 61.8, 69.4, TIRISFAL_GLADES },
 					["g"] = {
-						i(208475),	-- Forsaken Champion's Attire
-					}
+						i(208475, {	-- Forsaken Champion's Attire
+							i(208488),	-- Forsaken Champion's Backtomb
+							i(208477),	-- Forsaken Champion's Belt
+							i(208479),	-- Forsaken Champion's Boots
+							i(208480),	-- Forsaken Champion's Bracers
+							i(208476),	-- Forsaken Champion's Chestguard
+							i(208495),	-- Forsaken Champion's Cowl
+							i(208481),	-- Forsaken Champion's Grips
+							i(208478),	-- Forsaken Champion's Leggings
+							i(208515),	-- Forsaken Champion's Rotcowl
+							i(208474),	-- Forsaken Champion's Spaulders
+							i(209065),	-- Forsaken Champion's Tabard
+							i(210054),	-- Forsaken Champion's Vest
+							i(209068),	-- Queen Loyalist's Tabard
+						}),
+					},
+				}),
+				q(75519, {	-- The Long Hunt
+					["sourceQuests"] = {
+						57376,	-- The Hidden Need
+						72867,	-- I Am Forsaken
+					 },
+					["provider"] = { "n", 204250 },	-- Lilian Voss
+					["coord"] = { 63.0, 68.4, TIRISFAL_GLADES },
 				}),
 			},
 		}));
@@ -561,13 +585,14 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(72471),	-- Choosing Thega Graveblade (Shattered Hand clan) during 'The Blessing of the Clan' (questID 72467) (spellID 398674)
 	})),
 	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
-		q(76458),	-- Triggers after accepting quest 'The Clarion Call' (questID 75890) (spellID 414550)
 		q(76556),	-- Triggers after handing in quest 'Ancient Curses' (questID 75891) (spellID 415206)
 		q(78022),	-- Triggers after talking to Maiev Stormsong during quest 'Stepping into the Shadows' (questID 76203) (spellID 422467)
 		q(77884),	-- Triggers after using 'Ensemble: Kaldorei Protector's Adornment' (itemID 208879) (spellID 421666)
 		q(77783),	-- Triggers after using 'Traditionalist's Kaldorei Blades' (itemID 208785) (spellID 421070)
-		q(76457),	-- Triggers when accepting 'Unliving Summons' (questID 76530) (spellID 414546)
 		q(78021),	-- Ensemble: Forsaken Champion's Additional Attire (itemID ?) (spellID 419716)
 		q(77654),	-- Ensemble: Forsaken Champion's Attire (itemID 208475) (spellID 422437)
+		q(77796),	-- Choosing Angellene during 'Fear is Our Weapon' (questID 72860) (spellID 421083)
+		q(77797),	-- Choosing Emalora during 'Fear is Our Weapon' (questID 72860) (spellID 421086)
+		q(77798),	-- Choosing Margix during 'Fear is Our Weapon' (questID 72860) (spellID 421087)
 	})),
 });

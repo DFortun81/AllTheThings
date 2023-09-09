@@ -2043,20 +2043,6 @@ root(ROOTS.Unsorted, {
 				i(208673),	-- Instruments of the Alluring Call
 				i(208626),	-- Ashamane's Jewel of Rebirth
 			}),
-			filter(COSMETIC, {
-				---- HERTIAGE ----
-				i(208474),	-- Forsaken Champion's Spaulders
-				i(208475),	-- Ensemble: Forsaken Champion's Attire
-				i(208476),	-- Forsaken Champion's Chestguard
-				i(208477),	-- Forsaken Champion's Belt
-				i(208478),	-- Forsaken Champion's Leggings
-				i(208479),	-- Forsaken Champion's Boots
-				i(208480),	-- Forsaken Champion's Bracers
-				i(208481),	-- Forsaken Champion's Grips
-				i(208488),	-- Forsaken Champion's Backtomb
-				i(208495),	-- Forsaken Champion's Cowl
-				i(208515),	-- Forsaken Champion's Rotcowl
-			}),
 			n(DRAKEWATCHER_MANUSCRIPTS, {
 				i(208550),	-- Dragon Isles Drakes: White Scales
 			}),
@@ -2119,9 +2105,6 @@ root(ROOTS.Unsorted, {
 			i(209997),	-- Distilled Knowledge of Timeways
 			--
 			i(208485),	-- The Scarlet Key
-			i(209065),	-- Forsaken Champion's Tabard
-			i(209068),	-- Queen Loyalist's Tabard
-			i(210054),	-- Forsaken Champion's Vest
 			i(210062),	-- Ironbound Satchel of Helpful Goods
 			i(210063),	-- Invader's Satchel of Helpful Goods
 			--

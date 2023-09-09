@@ -2332,13 +2332,15 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(73145),	-- The Forbidden Reach 39.9, 81.9
 
 		-- New Heritage questline start HQTs
-		q(75246),	-- Human Heritage
-		q(75247),	-- Orc Heritage
-		q(75248),	-- Goblin Heritage
-		q(75249),	-- Worgen Heritage
-		q(75250),	-- Tauren Heritage
-		q(75251),	-- Gnome Heritage
-		q(75252),	-- Blood Elf Heritage
-		q(75253),	-- Dwarf Heritage
+		q(75246),	-- Human Heritage (spellID 406118)
+		q(75247),	-- Orc Heritage (spellID 406119)
+		q(75248),	-- Goblin Heritage (spellID 406121)
+		q(75249),	-- Worgen Heritage (spellID 406122)
+		q(75250),	-- Tauren Heritage (spellID 406123)
+		q(75251),	-- Gnome Heritage (spellID 406126)
+		q(75252),	-- Blood Elf Heritage (spellID 406127)
+		q(75253),	-- Dwarf Heritage (spellID 406128)
+		q(76457),	-- Undead Heritage (spellID 414546)
+		q(76458),	-- Night Elf Heritage (spellID 414550)
 	}),
 });
