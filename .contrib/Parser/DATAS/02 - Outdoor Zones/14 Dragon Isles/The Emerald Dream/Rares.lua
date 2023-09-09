@@ -104,6 +104,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(208322),	-- Treads of the Nightclaw
 				},
 			}),
+			n(210047, {	--  Somnambulant Ori
+				["questID"] = 78212,
+				["coord"] = { 43.5, 47.0, TREE_1 },
+			}),	
 			n(209365, {	-- Splinterlimb
 				["questID"] = 77863,
 				["coord"] = { 61.9, 52.2, TREE_1 },

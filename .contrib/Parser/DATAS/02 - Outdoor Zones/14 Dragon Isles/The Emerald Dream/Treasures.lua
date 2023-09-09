@@ -46,7 +46,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 63.4, 72.9, TREE_1 },
 				["g"] = {
 					o(411065, {	--Reliquary of Ashamane
-						["questID"] = 78359,	-- unless this qid is not from here?
+						["questID"] = 78359,
 						["g"] = {
 							i(210631),	-- Branch of Ashamane (COSMETIC!)
 						},
@@ -59,7 +59,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 47.0, 53.1, TREE_1 },
 				["g"] = {
 					o(409222, {	--Reliquary of Ursol
-						["questID"] = 78107,	-- unless this qid is not from here?
+						["questID"] = 78107,
 						["g"] = {
 							i(210434),	-- Visage of Ursoc (COSMETIC!)
 						},
@@ -72,7 +72,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 32.9, 83.1, TREE_1 },
 				["g"] = {
 					o(411067, {	--Reliquary of Goldrinn
-						["questID"] = 78361,	-- unless this qid is not from here?
+						["questID"] = 78361,
 						["g"] = {
 							i(210660),	-- Claw of Lo'Gosh (COSMETIC!)
 						},
