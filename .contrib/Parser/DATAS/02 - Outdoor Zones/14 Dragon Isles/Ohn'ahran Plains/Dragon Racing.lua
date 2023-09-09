@@ -291,8 +291,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						},
 					}),
 					dragonridingrace(75802, {	-- Mirror of the Sky Dash - Challenge
-						["provider"] = { "n", 191422 },	-- Bronze Timekeeper
-						["coord"] = { 59.9, 35.6, OHNAHRAN_PLAINS },
+						["provider"] = { "n", 191511 },	-- Bronze Timekeeper
+						["coord"] = { 47.5, 70.6, OHNAHRAN_PLAINS },
 						["g"] = {
 							ach(17950),	-- Mirror of the Sky Dash Challenge: Bronze
 							ach(17951),	-- Mirror of the Sky Dash Challenge: Silver
