@@ -21,7 +21,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			--[[
 			Statue of the Sky Mistress (unknown object ID)
-			found at 64.22 19.27. To solve the riddle, find a "Mark of Avianna" and return to the statue with the buff.
+			found at 64.22 19.27
 			questID 78367 spawns the Reliquary of Aviana
 			]]--
 			o(411066, {	-- Reliquary of Aviana
@@ -33,8 +33,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			--[[
-			Statute of the Great Wolf
-			found at 32.93 83.24 2200. To solve the riddle, find a "Mark of Goldrinn" and return to the statue with the buff.
+			Statue of the Great Wolf
+			found at 32.93 83.24 2200
 			questID 78368 spawns the Reliquary of Goldrinn
 			]]--
 			o(411067, {	-- Reliquary of Goldrinn
@@ -43,6 +43,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 78361,
 				["g"] = {
 					i(210660),	-- Claw of Lo'Gosh
+				},
+			}),
+			--[[
+			Statue of Ursol
+			found at 47.05 53.09 2200
+			questID 78095 spawns the Reliquary of Ursol
+			]]--
+			o(409222, {	-- Reliquary of Ursol
+				["coord"] = { 47.1, 53.1, TREE_1 },
+				["description"] = "Find a Mark of Ursol and return to the statue with the buff still active.",
+				["questID"] = 78107,
+				["g"] = {
+					i(210434),	-- Visage of Ursoc
 				},
 			}),
 			-- Unwaking Echos seems to be zone-wide chests and are probably dailies with several spawn points
