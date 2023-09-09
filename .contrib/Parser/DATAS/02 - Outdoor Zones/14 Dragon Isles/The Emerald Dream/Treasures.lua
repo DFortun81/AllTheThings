@@ -18,44 +18,79 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			o(409440, {	-- Pineshrew Cache
 				["questID"] = 78120,
 				["coord"] = { 37.3, 30.7, TREE_1 },
-			}),
-			--[[
-			Statue of the Sky Mistress (unknown object ID)
-			found at 64.22 19.27
-			questID 78367 spawns the Reliquary of Aviana
-			]]--
-			o(411066, {	-- Reliquary of Aviana
-				["coord"] = { 64.1, 19.2, TREE_1 },
-				["description"] = "Find a Mark of Avianna and return to the statue with the buff still active.",
-				["questID"] = 78360,
 				["g"] = {
-					i(210659),	-- Branch of Aviana
+					i(208856),	-- Pocket Lint // in-case it will be same itemID but with proper name
 				},
 			}),
-			--[[
-			Statue of the Great Wolf
-			found at 32.93 83.24 2200
-			questID 78368 spawns the Reliquary of Goldrinn
-			]]--
-			o(411067, {	-- Reliquary of Goldrinn
-				["coord"] = { 33.2, 83.3, TREE_1 },
-				["description"] = "Find a Mark of Goldrinn and return to the statue with the buff still active.",
-				["questID"] = 78361,
+			n(210544, {
+				["questID"] = 78033,	-- trigger 'accepted' part and completed when he drop chest (pseudo-quest?), have (w) in-game
+				["description"] = "Interact with this npc 3 times to spawn chest, after each interaction - he will run away. Just follow him.",
+				["coords"] = {
+					{ 64.33, 61.32, TREE_1 },
+					{ 62.94, 60.39, TREE_1 },
+					{ 61.61, 59.56, TREE_1 },
+				},
 				["g"] = {
-					i(210660),	-- Claw of Lo'Gosh
+					o(408706, {	-- Magical Bloom
+						["coord"] = { 61.6, 59.5, TREE_1 },
+						["questID"] = 78005,
+						--["g"] = {
+						--	i(),	-- ?
+						--},
+					}),
 				},
 			}),
-			--[[
-			Statue of Ursol
-			found at 47.05 53.09 2200
-			questID 78095 spawns the Reliquary of Ursol
-			]]--
-			o(409222, {	-- Reliquary of Ursol
-				["coord"] = { 47.1, 53.1, TREE_1 },
-				["description"] = "Find a Mark of Ursol and return to the statue with the buff still active.",
-				["questID"] = 78107,
+			n(212009, {	-- Statue of the Ashen Panther
+				["questID"] = 78365,
+				["description"] = "Find a Mark of Ashamane and return to the statute with the buff still active. Druids can activate in cat form.",
+				["coord"] = { 63.4, 72.9, TREE_1 },
 				["g"] = {
-					i(210434),	-- Visage of Ursoc
+					o(411065, {	--Reliquary of Ashamane
+						["questID"] = 78359,	-- unless this qid is not from here?
+						["g"] = {
+							i(210631),	-- Branch of Ashamane (COSMETIC!)
+						},
+					}),
+				},
+			}),
+			n(210732, {	-- Statue of the Bear Lord
+				["questID"] = 78095,
+				["description"] = "Find a Mark of Ursol and return to the statute with the buff still active. Druids can activate in bear form.",
+				["coord"] = { 47.0, 53.1, TREE_1 },
+				["g"] = {
+					o(409222, {	--Reliquary of Ursol
+						["questID"] = 78107,	-- unless this qid is not from here?
+						["g"] = {
+							i(210434),	-- Visage of Ursoc (COSMETIC!)
+						},
+					}),
+				},
+			}),
+			n(212012, {	-- Statue of the Great Wolf
+				["questID"] = 78368,
+				["description"] = "Find a Mark of Goldrinn and return to the statute with the buff still active.",	-- possibly for shamans?
+				["coord"] = { 32.9, 83.1, TREE_1 },
+				["g"] = {
+					o(411067, {	--Reliquary of Goldrinn
+						["questID"] = 78361,	-- unless this qid is not from here?
+						["g"] = {
+							i(210660),	-- Claw of Lo'Gosh (COSMETIC!)
+						},
+					}),
+				},
+			}),
+			n(212011, {	-- Statue of the Sky Mistress
+				["questID"] = 78367,
+				["description"] = "Find a Mark of Avianna and return to the statute with the buff still active. Druids can activate in moonkin form.",
+				["coord"] = { 64.2, 19.3, TREE_1 },
+				["g"] = {
+					o(411066, {	-- Reliquary of Aviana
+						["coord"] = { 64.1, 19.2, TREE_1 },
+						["questID"] = 78360,
+						["g"] = {
+							i(210659),	-- Branch of Aviana (COSMETIC!)
+						},
+					}),
 				},
 			}),
 			-- Unwaking Echos seems to be zone-wide chests and are probably dailies with several spawn points
@@ -74,20 +109,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["description"] = "Use /sleep to loot the chest.",
 				["coord"] = { 55.3, 45.4, TREE_1 },
 			}),
-			
-			--[[
-			there was a treasure marker for "Magical Bloom" 
-			1st NPC ?????? @ 64.33 61.32 2200 - triggered quest 78033
-			2nd NPC 210544 @ 62.94 60.39 2200
-			3rd NPC 210550 @ 61.61 59.56 2200 - triggered quest 78033 again
-			
-			after the third interaction, the magical bloom dropped. Need to verify if coords are static, if treasure is daily and if the IDs are static or change 
-			
-			o(408706, {	-- Magical Bloom
-				["questID"] = 78005,
-				["coord"] = { 61.6, 59.6, TREE_1 },
+			o(411466, {	-- Unwaking Echo
+				["questID"] = 78552,
+				["description"] = "Use /sleep to loot the chest.",
+				["coord"] = { 46.3, 86.2, TREE_1 },
 			}),
-			]]--
 		}),
 	}),
 })));

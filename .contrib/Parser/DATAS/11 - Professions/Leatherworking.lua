@@ -1162,6 +1162,13 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 					i(198658),	-- Decay-Infused Tanning Oil
 				},
 			}),
+			o(410550, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Dreamtalon Claw
+				["coord"] = { 34.0, 29.7, TREE_1 },
+				["questID"] = 78305,
+				["g"] = {
+					i(210215),	-- Dreamtalon Claw
+				},
+			})),
 			o(398783, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Flame-Infused Scale Oil
 				["coord"] = { 41.2, 48.7, ZARALEK_CAVERN },
 				["questID"] = 75495,
@@ -1174,6 +1181,13 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["questID"] = 75496,
 				["g"] = {
 					i(204987),	-- Lava-Forged Leatherworker's "Knife"
+				},
+			})),
+			o(410534, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Molted Faerie Dragon Scales
+				["coord"] = { 37.4, 71.0, TREE_1 },
+				["questID"] = 78299,
+				["g"] = {
+					i(210211),	-- Molted Faerie Dragon Scales
 				},
 			})),
 			o(380615, {	-- Poacher's Pack
@@ -1195,6 +1209,13 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["questID"] = 75502,
 				["g"] = {
 					i(204988),	-- Sulfur-Soaked Skins
+				},
+			})),
+			o(410529, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Tuft of Dreamsaber Fur
+				["coord"] = { 41.7, 66.4, TREE_1 },
+				["questID"] = 78298,
+				["g"] = {
+					i(210208),	-- Tuft of Dreamsaber Fur
 				},
 			})),
 			o(380554, {	-- Well-Danced Drum

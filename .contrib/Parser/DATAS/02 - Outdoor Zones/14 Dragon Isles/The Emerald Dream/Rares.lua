@@ -61,6 +61,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					{ 40.5, 72.6, TREE_1 }, -- Moragh
 				},
 				["g"] = {
+					i(210093),	-- Autumn Druid Hood
 					i(201437),	-- Slumbering Dream Fragment
 				},
 			}),
@@ -73,17 +74,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			]]--
-			--[[ Has multiple spawn points. currently 24mil health and hits VERY hard, so going to be a while before a kill ID is known
 			n(209912, {	-- Raszageth's Last Breath
-				["questID"] = ,
+				["questID"] = 77859,
 				["coords"] = {
+					{ 65.4, 43.5, TREE_1 },
 					{ 67.5, 66.2, TREE_1 },
 				},
 				["g"] = {
 					i(201437),	-- Slumbering Dream Fragment
 				},
 			}),
-			]]--
 			n(210161, {	-- Ristar, the Rabid
 				["questID"] = 77890,
 				["coord"] = { 44.5, 39.3, TREE_1 },

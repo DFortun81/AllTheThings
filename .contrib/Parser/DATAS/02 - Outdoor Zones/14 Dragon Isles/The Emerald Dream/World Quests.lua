@@ -45,13 +45,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					}),
 					pvp(q(78215, {	-- Rooted in Danger
 						["coord"] = { 44.8, 41.9, TREE_1 },
-
 					})),
 					q(76520, {	-- A Shared Dream
 						["coord"] = { 63.7, 73.4, TREE_1 },
 						["g"] = {
 							i(208983),	-- Yvelyn''s Assistance (QI!)
 						},
+					}),
+					q(76506, {	-- Dryad Fire Drill
+						["coord"] = { 63.1, 72.4, TREE_1 },
+					}),
+					q(76993, {	-- Turtle Power
+						["coord"] = { 42.6, 81.6, TREE_1 },
 					}),
 				})),
 			},

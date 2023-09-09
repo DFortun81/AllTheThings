@@ -5507,10 +5507,15 @@ _.ObjectNames = {
 	[405523] = "Unveiled Tablet",
 	[405546] = "Idol of Ohn'ahra",
 	[405958] = "Sealed Kaldorei Scroll",
+	[407691] = "Dusty Red Pellets",
+	[407692] = "Igneous Flux",
 	[408226] = "Ancient Key Mold",
+	[408706] = "Magical Bloom",
 	[408707] = "Odd Burl",
+	[408754] = "Reforged Titan Key",
 	[409222] = "Reliquary of Ursol",
 	[409440] = "Pineshrew Cache",
+	[409914] = "Mimiron's Booster Part",
 	[411066] = "Reliquary of Aviana",
 	[411067] = "Reliquary of Goldrinn",
 	[411447] = "Unwaking Echo",
@@ -9737,6 +9742,7 @@ _.ObjectModels = {
 	[405523] = 4209023,
 	[405546] = 194083,
 	[405958] = 1124091,
+	[408226] = 65246,
 }
 
 -- Supported Locales
