@@ -709,58 +709,57 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}},
 			["groups"] = {
 				i(208551, {	-- Ambrosial Sporestone
-				--[[ TODO: CHeck mod/bonus ID and harvest... No leather shoulders?
 					filter(CLOTH, {
-						i(207927),	-- Crown of the Infinite Lord
-						i(204786),	-- Suffused Cowl
-						i(205061),	-- Zaralek Surveyor's Cowl
-						i(207598),	-- Anachronistic Hood
-						i(204923),	-- Moonless Hood
-						i(204584),	-- Endowed Hood
-						i(208503),	-- Infinite Zealot's Mantle
-						i(204758),	-- Suffused Shoulderpads
-						i(205089),	-- Zaralek Surveyor's Shoulderpads
-						i(207600),	-- Anachronistic Mantle
-						i(204925),	-- Moonless Shoulderpads
-						i(204586),	-- Endowed Mantle
+						i(207927,{["bonusID"] = 6894,}),	-- Crown of the Infinite Lord
+						i(204786,{["bonusID"] = 6895,}),	-- Suffused Cowl
+						i(205061,{["bonusID"] = 6896,}),	-- Zaralek Surveyor's Cowl
+						i(207598,{["bonusID"] = 6897,}),	-- Anachronistic Hood
+						i(204923,{["bonusID"] = 6898,}),	-- Moonless Hood
+						i(204584,{["bonusID"] = 8107,}),	-- Endowed Hood
+						i(208503,{["bonusID"] = 6894,}),	-- Infinite Zealot's Mantle
+						i(204758,{["bonusID"] = 6895,}),	-- Suffused Shoulderpads
+						i(205089,{["bonusID"] = 6896,}),	-- Zaralek Surveyor's Shoulderpads
+						i(207600,{["bonusID"] = 6897,}),	-- Anachronistic Mantle
+						i(204925,{["bonusID"] = 6898,}),	-- Moonless Shoulderpads
+						i(204586,{["bonusID"] = 8107,}),	-- Endowed Mantle
 					}),
-					filer(LEATHER, {
-						i(207936),	-- Hood of Perpetual Conflict
-						i(204780),	-- Suffused Helm
-						i(205067),	-- Zaralek Surveyor's Helm
-						i(207606),	-- Mask of Discontinuity
-						i(204931),	-- Sunless Cowl
-						i(204592),	-- Inherited Mask
+					filter(LEATHER, {
+						i(207936,{["bonusID"] = 6894,}),	-- Hood of Perpetual Conflict
+						i(204780,{["bonusID"] = 6895,}),	-- Suffused Helm
+						i(205067,{["bonusID"] = 6896,}),	-- Zaralek Surveyor's Helm
+						i(207606,{["bonusID"] = 6897,}),	-- Mask of Discontinuity
+						i(204931,{["bonusID"] = 6898,}),	-- Sunless Cowl
+						i(204592,{["bonusID"] = 8107,}),	-- Inherited Mask
+						-- no shoulders for leather
 					}),
 					filter(MAIL, {
-						i(208521),	-- Infinite Soldier's Cowl
-						i(204773),	-- Suffused Coif
-						i(205074),	-- Zaralek Surveyor's Coif
-						i(207614),	-- Paradoxical Cowl
-						i(204940),	-- Skyless Coif
-						i(204600),	-- Bequeathed Cowl
-						i(207945),	-- Chrono-Lord's Wingspan
-						i(204771),	-- Suffused Shoulderguards
-						i(205076),	-- Zaralek Surveyor's Shoulderguards
-						i(207616),	-- Paradoxical Spaulders
-						i(204942),	-- Skyless Epaulets
-						i(204602),	-- Bequeathed Spaulders
+						i(208521,{["bonusID"] = 6894,}),	-- Infinite Soldier's Cowl
+						i(204773,{["bonusID"] = 6895,}),	-- Suffused Coif
+						i(205074,{["bonusID"] = 6896,}),	-- Zaralek Surveyor's Coif
+						i(207614,{["bonusID"] = 6897,}),	-- Paradoxical Cowl
+						i(204940,{["bonusID"] = 6898,}),	-- Skyless Coif
+						i(204600,{["bonusID"] = 8107,}),	-- Bequeathed Cowl
+						i(207945,{["bonusID"] = 6894,}),	-- Chrono-Lord's Wingspan
+						i(204771,{["bonusID"] = 6895,}),	-- Suffused Shoulderguards
+						i(205076,{["bonusID"] = 6896,}),	-- Zaralek Surveyor's Shoulderguards
+						i(207616,{["bonusID"] = 6897,}),	-- Paradoxical Spaulders
+						i(204942,{["bonusID"] = 6898,}),	-- Skyless Epaulets
+						i(204602,{["bonusID"] = 8107,}),	-- Bequeathed Spaulders
 					}),
 					filter(PLATE, {
-						i(208529),	-- Infinite Vanguard's Greathelm
-						i(204768),	-- Suffused Helm
-						i(205079),	-- Zaralek Surveyor's Helm
-						i(207622),	-- Anomalous Greathelm
-						i(204948),	-- Starless Fullhelm
-						i(204608),	-- Bestowed Greathelm
-						i(208531),	-- Infinite Vanguard's Pauldrons
-						i(204763),	-- Suffused Mantle
-						i(205084),	-- Zaralek Surveyor's Mantle
-						i(207624),	-- Anomalous Pauldrons
-						i(204950),	-- Starless Mantle
-						i(204610),	-- Bestowed Pauldrons
+						i(208529,{["bonusID"] = 6894,}),	-- Infinite Vanguard's Greathelm
+						i(204768,{["bonusID"] = 6895,}),	-- Suffused Helm
+						i(205079,{["bonusID"] = 6896,}),	-- Zaralek Surveyor's Helm
+						i(207622,{["bonusID"] = 6897,}),	-- Anomalous Greathelm
+						i(204948,{["bonusID"] = 6898,}),	-- Starless Fullhelm
+						i(204608,{["bonusID"] = 8107,}),	-- Bestowed Greathelm
+						i(208531,{["bonusID"] = 6894,}),	-- Infinite Vanguard's Pauldrons
+						i(204763,{["bonusID"] = 6895,}),	-- Suffused Mantle
+						i(205084,{["bonusID"] = 6896,}),	-- Zaralek Surveyor's Mantle
+						i(207624,{["bonusID"] = 6897,}),	-- Anomalous Pauldrons
+						i(204950,{["bonusID"] = 6898,}),	-- Starless Mantle
+						i(204610,{["bonusID"] = 8107,}),	-- Bestowed Pauldrons
 					}),
-					--]]
 				}),
 			},
 		})),
