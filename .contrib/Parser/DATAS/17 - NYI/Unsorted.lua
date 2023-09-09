@@ -2113,14 +2113,6 @@ root(ROOTS.Unsorted, {
 			i(206762),	-- A Clue
 			i(206950),	-- A Clue
 			i(206996),	-- A Clue
-			i(208406),	-- High Scholar's Circlet
-			i(208407),	-- High Scholar's Mantle
-			i(208408),	-- High Scholar's Sash
-			i(208409),	-- High Scholar's Slippers
-			i(208410),	-- High Scholar's Gloves
-			i(208411),	-- High Scholar's Gown
-			i(208412),	-- High Scholar's Arcana
-			i(208613),	-- High Scholar's Drape
 		})),
 		tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
 			filter(COSMETIC, {

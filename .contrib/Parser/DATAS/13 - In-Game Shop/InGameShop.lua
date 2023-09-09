@@ -454,6 +454,16 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 10.1.0.49444", "removed 10.1.0.49801" },	-- Removed from store May 31
 			["description"] = "Will be available from Trading Post later in 2023.",
 		}),
+		i(208412,	-- High Scholar's Arcana
+			bubbleDownSelf({ ["timeline"] = { "added 10.1.5.51130" } }, {
+			i(208406),	-- High Scholar's Circlet
+			i(208613),	-- High Scholar's Drape
+			i(208410),	-- High Scholar's Gloves
+			i(208411),	-- High Scholar's Gown
+			i(208407),	-- High Scholar's Mantle
+			i(208408),	-- High Scholar's Sash
+			i(208409),	-- High Scholar's Slippers
+		})),
 	}),
 	-- #endif
 	-- #if AFTER 8.1.5.29737
