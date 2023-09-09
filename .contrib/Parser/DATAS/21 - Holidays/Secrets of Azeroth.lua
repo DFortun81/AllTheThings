@@ -132,7 +132,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 				{ 47.4, 48.1, VALDRAKKEN },			-- Preservationist Kathos
 				{ 12.4, 49.2, THE_AZURE_SPAN },		-- Elder Poa
 				{ 48.0, 74.8, DRAGONBLIGHT },		-- Elder Ko'nani
-				{ 33.63, 58.45, BOREAN_TUNDRA },	-- Elder Poa
+				{ 33.63, 58.45, BOREAN_TUNDRA },	-- Statue
 			},
 			["sourceQuests"] = { 77203 },	-- Preserving Rarities
 			["isDaily"] = true,	-- this reset after the first day? are the secrets on rotation?
