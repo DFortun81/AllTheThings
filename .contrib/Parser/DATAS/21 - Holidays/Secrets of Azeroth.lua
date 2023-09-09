@@ -22,7 +22,7 @@ COMMUNITY_CLUES_HEADER = createHeader({
 root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 	n(ACHIEVEMENTS, {
 		ach(18644, {	-- Community Rumor Mill
-			pet(4263),	-- Tobias (PET!) [Maybe Get itemID later??]
+			i(208151),	-- Tobias (PET!)
 		}),
 		ach(18643, {	-- Community Rumors
 			i(208150),	-- Blue Tweed Cap
@@ -96,6 +96,59 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			-- }),
 		}),
 	}),
+	n(TREASURES, sharedData({
+		["groups"] = {
+			i(208142),	-- Buried Satchel
+		},
+	},{
+		o(405526, {	-- Loose Dirt Mound
+			["questID"] = 77289,
+			["coord"] = { 55.3, 59.4, EASTERN_PLAGUELANDS },
+		}),
+		o(405525, {	-- Loose Dirt Mound
+			["questID"] = 77288,
+			["coord"] = { 42.2, 48.0, FELWOOD },
+		}),
+		o(405530, {	-- Loose Dirt Mound
+			["questID"] = 77291,
+			["coords"] = {
+				{ 43.9, 37.4, THOUSAND_NEEDLES },	-- Cave Entrance
+				{ 42.7, 30.6, THOUSAND_NEEDLES },	-- Loose Dirt Mound
+			},
+			["description"] = "In underwater cave.",
+		}),
+		o(405531, {	-- Loose Dirt Mound
+			["questID"] = 77292,
+			["coord"] = { 35.3, 49.0, DRAENOR_SHADOWMOON_VALLEY },
+		}),
+		o(405529, {	-- Loose Dirt Mound
+			["questID"] = 77290,
+			["coord"] = { 26.2, 68.6, NETHERSTORM },
+			["description"] = "You need three people to channel their 'Torch of Pyrreth' toy.",
+		}),
+		o(405532, {	-- Loose Dirt Mound
+			["questID"] = 77293,
+			["coord"] = { 56.8, 21.4, VALLEY_OF_THE_FOUR_WINDS },
+		}),
+		o(405535, {	-- Loose Dirt Mound
+			["questID"] = 77296,
+			["coord"] = { 25.2, 71.5, THE_AZURE_SPAN },
+			["description"] = "Use your 'Torch of Pyrreth' near the snowmen.",
+		}),
+		o(405533, {	-- Loose Dirt Mound
+			["questID"] = 77294,
+			["coord"] = { 63.9, 72.6, DRAGONBLIGHT },
+		}),
+		o(405536, {	-- Loose Dirt Mound
+			["questID"] = 77297,
+			["coord"] = { 46.0, 50.7, NORTHERN_BARRENS },
+		}),
+		o(405537, {	-- Loose Dirt Mound
+			["questID"] = 77298,
+			["coord"] = { 64.7, 55.4, BLASTED_LANDS },
+			["description"] = "Use your 'Torch of Pyrreth' on the ritual crystal.",
+		}),
+	})),
 	n(QUESTS, {
 		-- Day 1 --
 		q(77202, {	-- The Preservationists
@@ -407,7 +460,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			},
 		}),
 	}),
-
 	n(COMMUNITY_CLUES_HEADER, {
 		header(HEADERS.Spell, 424082, {
 			i(210022, {	-- Mimiron's Jumpjets (MOUNT!)
@@ -475,19 +527,7 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(77577),	-- Upon completion of A Key To Reforging (QuestID 77831)
 	q(77893),	-- Upon completion of this quest and receiving the QI
 	q(77830),	-- Upon "learning" Tyr's Titan Key (itemID 208831)
-
-	-- TODO: Someone add these under Community Rumors achievement in a suitable structure please
-	q(77289),	-- Community Satchel 1 (Eastern Plague Lands @ 55.1, 59.4)
-	q(77288),	-- Community Satchel 2 (Felwood @ 42.1, 48.1)
-	q(77291),	-- Community Satchel 3 (Thousand Needles @ 42.7, 30.7)
-	q(77292),	-- Community Satchel 4 (Shadowmoon Valley(Draenor) 539 @ 35.3 48.9)
-	q(77290),	-- Community Satchel 5 (Netherstorm @ 26.2, 68.7)
 	q(77307),	-- Community Rumors (Achievement 18643)
-	q(77293),	-- Community Satchel 6 (Valley of the Four Winds @ 56.7, 21.4)
-	q(77296),	-- Community Satchel 7 (Azure Span @ 25.2, 71.4 Object ID 405535) Duplicated? that cant be right
-	q(77294),	-- Community Satchel 8 (Dragonblight @ 63.9, 72.6 Object ID 405535)
-	q(77297),	-- Community Satchel 9 (Northern Barrens @ 45.9, 50.7 Obeject ID 405536)
-	q(78298),	-- Community Satchel 10 (Blasted Lands @ 64.7, 55.4)
 	q(78152),	-- Community Rumor Mill (Achievement 18644)
 
 	-- Community Clues HQTs

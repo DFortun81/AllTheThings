@@ -4047,7 +4047,7 @@ i(208013, 4260);	-- Killbot 9000
 i(205162, 3553);	-- Nelthara
 i(208011, 4261);	-- Obsidian Warwhelp
 i(208138, 4262);	-- N'Ruby
-i(0, 4263);			-- Tobias [Maybe Get itemID later??]
+i(208151, 4263);	-- Tobias
 i(190601, 2890);	-- Sunny (Shop)
 i(207962, 179);		-- Spirit of Competition (Trading Post)
 i(208045, 4253);	-- Slyvy

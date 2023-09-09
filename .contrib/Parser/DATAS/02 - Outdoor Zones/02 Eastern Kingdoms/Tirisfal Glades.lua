@@ -605,7 +605,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 							-- #if AFTER CATA
 							["cr"] = 1539,	-- Scarlet Neophyte
-							["coord"] = { 79.0, 32.2 TIRISFAL_GLADES },
+							["coord"] = { 79.0, 32.2, TIRISFAL_GLADES },
 							-- #else
 							["cr"] = 1507,	-- Scarlet Initiate
 							["coord"] = { 37.4, 68.0, TIRISFAL_GLADES },
