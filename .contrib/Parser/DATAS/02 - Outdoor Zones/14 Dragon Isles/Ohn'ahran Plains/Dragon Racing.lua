@@ -326,7 +326,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							ach(17943),	-- River Rapids Route Challenge: Gold
 						},
 					}),
-					dragonridingrace(75798, {	-- River Rapids Route - Reverse Challenge
+					dragonridingrace(75804, {	-- River Rapids Route - Reverse Challenge
 						["provider"] = { "n", 196092 },	-- Bronze Timekeeper
 						["coord"] = { 43.8, 66.8, OHNAHRAN_PLAINS },
 						["g"] = {
