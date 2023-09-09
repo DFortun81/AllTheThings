@@ -1891,16 +1891,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 62.4, 28.0, WETLANDS },
 						{ 46.8, 18.0, WETLANDS },
 					},
-					-- FIX THIS LATER
 					-- #elseif AFTER 10.1.7
 					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
+						1034,	-- Dragonmaw Raider
+						1036,	-- Dragonmaw Centurion
 					},
 					["coords"] = {
-						{ 23.4, 35.4, WETLANDS },
-						{ 17.8, 33.4, WETLANDS },
-						{ 19.8, 46.8, WETLANDS },
+						{ 47.8, 47.6, WETLANDS },
+						{ 45.4, 42.6, WETLANDS },
+						{ 52.6, 53.4, WETLANDS },
 					},
 					-- #endif
 				}),
