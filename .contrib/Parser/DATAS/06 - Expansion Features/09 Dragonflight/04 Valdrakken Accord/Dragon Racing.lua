@@ -240,11 +240,17 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["sym"] = {{"select","itemID",210549}},	-- Dream Racer's Purse
 			}, {
 				------ The Emerald Dream TREE_1 ------
-				q(78434, {	-- Dragonrider Racing - Ysera Invitationa
-					["coord"] = { 59.1, 29.1, TREE_1 },
+				q(78438, {	-- Dragonrider Racing - Canopy Concours
+					["coord"] = { 62.8, 88.1, TREE_1 },
 				}),
 				q(78435, {	-- Dragonrider Racing - Smoldering Sprint
 					["coord"] = { 37.3, 44.0, TREE_1 },
+				}),
+				q(78436, {	-- Dragonrider Racing - Viridescent Venture
+					["coord"] = { 35.2, 55.2, TREE_1 },
+				}),
+				q(78434, {	-- Dragonrider Racing - Ysera Invitationa
+					["coord"] = { 59.1, 29.1, TREE_1 },
 				}),
 			})),
 			i(191140),	-- Bronze Timepiece
