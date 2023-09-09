@@ -221,7 +221,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { WORGEN },
 							["classes"] = { WARRIOR },
 							["sourceQuests"] = {
+								-- #if BEFORE MOP
 								14266,	-- Charge
+								-- #endif
 								14265,	-- Your Instructor
 							},
 						}),
@@ -244,7 +246,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { MAGE },
 							["sourceQuests"] = {
 								14277,	-- Arcane Inquiries
+								-- #if BEFORE MOP
 								14281,	-- Frost Nova
+								-- #endif
 							},
 						}),
 						q(14289, {	-- Safety in Numbers (Priest)
@@ -264,7 +268,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { HUNTER },
 							["sourceQuests"] = {
 								14275,	-- Someone's Keeping Track of You
+								-- #if BEFORE MOP
 								14276,	-- Steady Shot
+								-- #endif
 							},
 						}),
 						q(14291, {	-- Safety in Numbers (Druid)
@@ -273,7 +279,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { WORGEN },
 							["classes"] = { DRUID },
 							["sourceQuests"] = {
+								-- #if BEFORE MOP
 								14283,	-- Moonfire
+								-- #endif
 								14280,	-- The Winds Know Your Name... Apparently
 							},
 						}),
