@@ -2021,7 +2021,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 27.4, 46.8, ARATHI_HIGHLANDS },
 						{ 26.2, 46.2, ARATHI_HIGHLANDS },
 					},
-					-- #endif
 				}),
 				i(2623, {	-- Holy Diadem
 					["crs"] = {
