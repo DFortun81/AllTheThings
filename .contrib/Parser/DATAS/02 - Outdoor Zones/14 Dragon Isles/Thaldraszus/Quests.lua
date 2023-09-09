@@ -338,7 +338,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						70373,	-- Deathwingurlugull! [A]
 						70371,	-- Deathwingurlugull! [H]
 					},
-					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 187344 },	-- Andantenormu
 					["coord"] = { 59.8, 66.1, 2092 },	-- Azmerloth
 				}),
