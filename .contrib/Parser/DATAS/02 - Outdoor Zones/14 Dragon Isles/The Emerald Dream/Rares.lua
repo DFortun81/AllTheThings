@@ -25,11 +25,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(201437),	-- Slumbering Dream Fragment
 				},
 			}),
-			--[[ Didn't pop qID on kill
-			n(209893, {	-- Firebrand Fystia 
-				["questID"] = xx,
-				["coord"] = { 30.0, 20.7, TREE_1 },
-			}),]]--
 			n(210075, {	-- Henri Snufftail
 				["questID"] = 77944,
 				["coord"] = { 47.1, 29.8, TREE_1 },
@@ -81,26 +76,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(201437),	-- Slumbering Dream Fragment
 				},
 			}),
-			--[[ Shows on the map with a rare icon but didn't fire a questID. Might be incomplete
-			n(209898, {	-- Reefbreaker Moruud
-				["questID"] = ,
-				["coord"] = { 64.1, 84.1, TREE_1 },
-				["g"] = {
-					i(201437),	-- Slumbering Dream Fragment
-				},
-			}),
-			]]--
-			n(209912, {	-- Raszageth's Last Breath
-				["questID"] = 77859,
-				["coords"] = {
-					{ 65.4, 43.5, TREE_1 },
-					{ 67.5, 66.2, TREE_1 },
-					{ 41.5, 31.1, TREE_1 },
-				},
-				["g"] = {
-					i(201437),	-- Slumbering Dream Fragment
-				},
-			}),
 			n(210161, {	-- Ristar, the Rabid
 				["questID"] = 77890,
 				["coord"] = { 44.5, 39.3, TREE_1 },
@@ -132,6 +107,47 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(208354),	-- Cerulean Turtle's Pendant
 				},
 			}),
+			-- seems like all this 'rares' with summon objective didn't count for
+			-- ach(19316) - [Adventurer of the Emerald Dream]
+			-- and didn't fire any qID on kill
+			n(209929, {	-- Envoy of Winter
+				["questID"] = 77878, -- bonus objective qID
+				["coord"] = { 34.5, 63.2, TREE_1 },
+				["g"] = {
+					i(208881),	-- Shiversnap Blossom (QI!)
+				},
+			}),
+			n(209893, {	-- Firebrand Fystia 
+				--["questID"] = xx,	-- I missed summon part of this rare (bonus objective) and only rare was up
+				["coord"] = { 30.0, 20.7, TREE_1 },
+			}),
+			n(209936, {	-- Greedy Gessie
+				["questID"] = 77982, -- bonus objective qID
+				["coord"] = { 53.8, 40.7, TREE_1 },
+			}),
+			n(209113, {	-- Nouberon
+				["questID"] = 77570, -- bonus objective qID
+				["coord"] = { 61.0, 70.3, TREE_1 },
+			}),
+			n(209912, {	-- Raszageth's Last Breath
+				["questID"] = 77859,
+				["coords"] = {
+					{ 65.4, 43.5, TREE_1 },
+					{ 67.5, 66.2, TREE_1 },
+					{ 41.5, 31.1, TREE_1 },
+				},
+				["g"] = {
+					i(201437),	-- Slumbering Dream Fragment
+				},
+			}),
+			n(209898, {	-- Reefbreaker Moruud
+				["questID"] = 77867, -- bonus objective qID
+				["coord"] = { 65.0, 84.2, TREE_1 },
+				["g"] = {
+					i(208327),	-- Maruud's Piercing Hands
+					i(201437),	-- Slumbering Dream Fragment
+				},
+			})
 		})),
 	}),
 })));

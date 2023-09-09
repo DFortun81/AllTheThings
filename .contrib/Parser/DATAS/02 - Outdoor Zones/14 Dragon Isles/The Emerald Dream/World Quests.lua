@@ -35,14 +35,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 							i(208801),	-- Handful of Rubble (QI!)
 						},
 					}),
-					q(77878, {	-- Envoy of Winter
-						-- not sure if this is actually a world quest. Showed as a silver dragon on the map
-						-- spawned mob 209929 Envoy of Winter. Didn't drop anything special but had 15mil health, so might drop something later
-						["coord"] = { 34.5, 63.2, TREE_1 },
-						["g"] = {
-							i(208881),	-- Shiversnap Blossom (QI!)
-						},
-					}),
 					pvp(q(78215, {	-- Rooted in Danger
 						["coord"] = { 44.8, 41.9, TREE_1 },
 					})),

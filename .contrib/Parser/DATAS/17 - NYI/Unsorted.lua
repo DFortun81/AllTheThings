@@ -1049,7 +1049,6 @@ root(ROOTS.Unsorted, {
 			i(208616),	-- Dreambinder, Loom of the Great Cycle
 			i(208619),	-- The Tragedy of Erinethria
 			i(208649),	-- On the Nature of the Dream
-			i(208676),	-- Sprouted Seedling
 			i(208690),	-- Roottwined Key
 			i(208692),	-- Ancient Roottwined Tome
 			i(208693),	-- Battle Magister's Orbs
@@ -1088,7 +1087,6 @@ root(ROOTS.Unsorted, {
 			i(208729),	-- Imminence of Krag'wa's Executor
 			i(208730),	-- Tools of Krag'wa's Executor
 			i(208731),	-- Blacksmith Bammer Key
-			i(208732),	-- Lasher Heart
 			i(208738),	-- Ephemeral Pear
 			i(208745),	-- Your Reward [DNT]
 			i(208746),	-- Dreamtender's Charm
@@ -1108,7 +1106,6 @@ root(ROOTS.Unsorted, {
 			i(208863),	-- The Fourth Clue
 			i(208864),	-- The Third Clue
 			i(208881),	-- Shiversnap Blossom
-			i(208884),	-- Root Restoration Fruit
 			i(208886),	-- Fiery Essence
 			i(208927),	-- Sandsparkle Pearl
 			i(208928),	-- Zaqali Adornments
@@ -1126,18 +1123,15 @@ root(ROOTS.Unsorted, {
 			i(208950),	-- Emerald Fiber
 			i(208955),	-- Pilfered Dreamshard
 			i(208956),	-- Intact Primalist Garb
-			i(208977),	-- Very Important Tree Supplies
 			i(208979),	-- 10.2 Monster - Merithra - Robe
 			i(208981),	-- 10.2 Monster - Merithra - Wrist
 			i(208982),	-- 10.2 Monster - Merithra - Waist
-			i(208985),	-- Silly Hat
 			i(209018),	-- Glowdrop Sugar
 			i(209019),	-- Conjured Sugarfree Firewater Sorbet
 			i(209021),	-- Shed Great Feathers
 			i(209035),	-- Hearthstone of the Flame
 			i(209036),	-- Cache of Amirdrassil Treasures
 			i(209037),	-- Cache of Amirdrassil Treasures
-			i(209048),	-- Singed Leaflet
 			i(209049),	-- Essence of Endless Flame
 			i(209060),	-- Verdant Armoredon
 			i(209069),	-- Verdant Gladiator's Silk Tunic

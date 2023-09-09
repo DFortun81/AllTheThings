@@ -257,6 +257,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 77948 },	-- Burning Out (if you complete Burning Out before you grab this quest, it becomes unobtainable as of 8.September.2023)
 				["provider"] = { "o", 409077 },	-- Singed Leaflet
 				["coord"] = { 38.0, 47.2, TREE_1 },
+				["g"] = {
+					i(209048),	-- Singed Leaflet (QI!)
+				},
 			}),
 			--
 			q(76566, {	-- The Dryad Garden
@@ -283,6 +286,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 78064 },	-- Q'onzu's Perception
 				["provider"] = { "n", 210524 },	-- Q'onzu
 				["coord"] = { 34.7, 69.3, TREE_1 },
+				["g"] = {
+					i(210227),	-- Q'onzu's Faerie Feather (QI!)
+				},
 			}),
 			q(78066, {	-- The Answers You've Earned
 				-- Note: the end of the quest makes it seem like there will be more to this questline later
@@ -354,14 +360,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				--["sourceQuests"] = {  },	-- no requirement as of 7.Sept
 				["provider"] = { "n", 208669 },	-- Lady Moonberry
 				["coord"] = { 49.8, 62.5, TREE_1 },
-				["cost"] = {
-					{ "i", 208977, 6 },	-- Very Important Tree Supplies
+				["g"] = {
+					i(208977),	-- Very Important Tree Supplies (QI!)
 				},
 			}),
 			q(77317, {	-- Hatted Hibernation
 				["sourceQuests"] = { 77316 },	-- Trouble at the Tree
 				["provider"] = { "n", 208669 },	-- Lady Moonberry
 				["coord"] = { 49.8, 62.5, TREE_1 },
+				["g"] = {
+					i(208985),	-- Silly Hat
+				},
 			}),
 			q(77318, {	-- Merithra Says
 				["sourceQuests"] = { 77317 },	-- Hatted Hibernation
@@ -413,6 +422,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 76569 },	-- Druid-Guardian Conference
 				["provider"] = { "n", 207779 },	-- Ethidris Creekward
 				["coord"] = { 53.7, 74.6, TREE_1 },
+				["g"] = {
+					i(208732),	-- Lasher Heart (QI!)
+				},
 			}),
 			q(76571, {	-- Growth Experience
 				["sourceQuests"] = { 76569 },	-- Druid-Guardian Conference
@@ -441,11 +453,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 77310 },	-- Memory of the Dreamer
 				["provider"] = { "n", 208713 },	-- Alexstrasza the Life-Binder
 				["coord"] = { 58.6, 23.9, TREE_1 },
+				["g"] = {
+					i(208884),	-- Root Restoration Fruit (QI!)
+				},
 			}),
 			q(77312, {	-- Nature Persists
 				["sourceQuests"] = { 77311 },	-- Healing Helper
 				["provider"] = { "n", 208713 },	-- Alexstrasza the Life-Binder
 				["coord"] = { 58.6, 23.9, TREE_1 },
+				["g"] = {
+					i(208676),	-- Sprouted Seedling (QI!)
+				},
 			}),
 			q(77313, {	-- A Solemn Summons
 				["sourceQuests"] = { 77311 },	-- Healing Helper
@@ -537,6 +555,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(77811),	-- Quest "What Do I Call You?": Pick the title of "Guardian"
 		-- there is likely one questID unique to each class. Need to test this theory
 		q(78257),	-- Quest "What Do I Call You?": Pick the title of "Highlord"
+		q(77834),	-- Quest "What Do I Call You?": Pick the title of "Archdruid"
 		-- ???
 		--q(77526),	-- pop after picked up qID 77178 / currently unsure why, probably animation or changing npcs location trigger?
 		--q(77491),	-- pop while was afk / 'A massive crack of lightning breaks the sky as the primalist open a portal to the elemental plane!' ?
