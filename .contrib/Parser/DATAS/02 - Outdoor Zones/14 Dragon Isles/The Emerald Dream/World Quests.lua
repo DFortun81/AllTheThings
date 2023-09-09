@@ -58,6 +58,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					q(76993, {	-- Turtle Power
 						["coord"] = { 42.6, 81.6, TREE_1 },
 					}),
+					q(77755, {	-- Breaking Down the Camp
+						["coord"] = { 28.9, 26.1, TREE_1 },
+					}),
+					q(77714, {	-- Nature Sealed
+						["coord"] = { 31.1, 26.7, TREE_1 },
+					}),
 				})),
 			},
 		}),

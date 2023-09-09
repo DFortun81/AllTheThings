@@ -25,6 +25,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(201437),	-- Slumbering Dream Fragment
 				},
 			}),
+			--[[ Didn't pop qID on kill
+			n(209893, {	-- Firebrand Fystia 
+				["questID"] = xx,
+				["coord"] = { 30.0, 20.7, TREE_1 },
+			}),]]--
 			n(210075, {	-- Henri Snufftail
 				["questID"] = 77944,
 				["coord"] = { 47.1, 29.8, TREE_1 },
