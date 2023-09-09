@@ -76,9 +76,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			crit(60856, {	-- What's in a Mold?
 			 	["_quests"] = { 77822 },
 			}),
-			-- crit(60857, {	-- Forging is Key
-			-- 	["_quests"] = {  },
-			-- }),
+			crit(60857, {	-- Forging is Key
+			 	["_quests"] = { 77831 },
+			}),
 			-- crit(60858, {	-- A Proper Burial
 			-- 	["_quests"] = {  },
 			-- }),
@@ -360,7 +360,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			["coord"] = { 47.9, 46.8, VALDRAKKEN },
 			["groups"] = {
 				i(208829),	-- Titan Key Materials List (QI!)
-				q(77893),	-- Upon completion of this quest and receiving the QI
 			},
 		}),
 		q(77831, {	-- A Key To Reforg(ing)
@@ -415,7 +414,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 					i(209781),	-- Second Booster Part
 				},
 			}),
-			q(78099),	-- HQT Triggered after looting Second Booster Part
 		}),
 	}),
 }))));
@@ -450,6 +448,7 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(76508),	-- Upon completion of Out of the Sands (questID 77305)
 	q(77576),	-- Upon completion of A Titanic Mold (QuestID 77822)
 	q(77577),	-- Upon completion of A Key To Reforging (QuestID 77831)
+	q(77893),	-- Upon completion of this quest and receiving the QI
 	q(77830),	-- Upon "learning" Tyr's Titan Key (itemID 208831)
 
 	-- TODO: Someone add these under Community Rumors achievement in a suitable structure please
@@ -465,4 +464,7 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(77297),	-- Community Satchel 9 (Northern Barrens @ 45.9, 50.7 Obeject ID 405536)
 	-- Community Satchel 10
 	-- Community Rumor Mill (Achievement 18644)
+
+	-- Community Clues HQTs
+	q(78099),	-- HQT Triggered after looting Second Booster Part
 })))
