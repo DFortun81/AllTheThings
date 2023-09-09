@@ -1905,27 +1905,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1955, {	-- Dragonmaw Chain Boots
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1035,	-- Dragonmaw Swamprunner
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["coords"] = {
-						{ 23.4, 35.4, WETLANDS },
-						{ 25.4, 35.4, WETLANDS },
+						{ 50.6, 49.4, WETLANDS },
+						{ 39.0, 46.6, WETLANDS },
 					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, WETLANDS },
-						{ 17.8, 33.4, WETLANDS },
-						{ 19.8, 46.8, WETLANDS },
-					},
-					-- #endif
-					--]]
 				}),
 				i(753, {	-- Dragonmaw Shortsword
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
