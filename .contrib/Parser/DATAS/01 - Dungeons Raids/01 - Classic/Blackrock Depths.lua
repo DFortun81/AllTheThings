@@ -2558,7 +2558,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						i(11765),	-- Pyremail Wristguards
 						i(11767),	-- Emberplate Armguards
 						i(11768, {	-- Incendic Bracers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 07.09.2023 ATT DISCORD
 						}),
 						applyclassicphase(PHASE_THREE, i(19268)),	-- Ace of Elementals
 					},

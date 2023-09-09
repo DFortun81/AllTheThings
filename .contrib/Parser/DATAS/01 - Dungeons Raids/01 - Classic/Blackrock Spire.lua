@@ -1230,7 +1230,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["description"] = "DO NOT KILL this mob if you are trying to get the Burning Felguard to spawn.",
 				["groups"] = {
 					i(9214, {	-- Grimoire of Inferno
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { "removed 4.0.1", "added 10.1.7" },	-- 07.09.2023 ATT DISCORD
 						["classes"] = { WARLOCK },
 						-- #if AFTER 4.0.1
 						["spellID"] = 0,

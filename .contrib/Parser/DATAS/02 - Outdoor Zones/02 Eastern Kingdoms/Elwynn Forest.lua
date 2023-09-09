@@ -1174,7 +1174,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #endif
 						i(2055, {	-- Small Wooden Hammer
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
 							["cr"] = 80,	-- Kobold Laborer
 						}),
 					}),
@@ -2102,7 +2102,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.1", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 						i(1913, {	-- Studded Blackjack
-							["timeline"] = { "removed 4.0.1" },	-- Note: Might also be added back with 8.0.1, check this.
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -2143,7 +2143,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(6202, {	-- Fingerless Gloves
-							["timeline"] = { "removed 4.0.1" },	-- Note: Might also be added back with 8.0.1, check this.
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
 						}),
 						i(6203, {	-- Thuggish Shield
 							["timeline"] = { "removed 4.0.1" },	-- Note: Might also be added back with 8.0.1, check this.

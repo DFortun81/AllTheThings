@@ -1232,7 +1232,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 						i(1314, {	-- Ghoul Fingers
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -1678,53 +1678,43 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 453,	-- Riverpaw Mystic
 				}),
 				i(832, {	-- Silver Defias Belt
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 121,	-- Defias Pathstalker
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 121,	-- Defias Pathstalker
 					["coords"] = {
-						{ 23.4, 35.4, WESTFALL },
-						{ 25.4, 35.4, WESTFALL },
+						{ 51.6, 75.2, WESTFALL },
+						{ 37.6, 75.0, WESTFALL },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					["cr"] = 42677,	-- Moonbrook Thug
 					["coords"] = {
-						{ 23.4, 35.4, WESTFALL },
-						{ 17.8, 33.4, WESTFALL },
+						{ 44.4, 68.6, WESTFALL },
+						{ 42.6, 72.0, WESTFALL },
 						{ 19.8, 46.8, WESTFALL },
 					},
 					-- #endif
-					--]]
 				}),
 				i(820, {	-- Slicer Blade
 					["cr"] = 115,	-- Harvest Reaper
 				}),
 				i(816, {	-- Small Hand Blade
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 36,	-- Harvest Golem
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 36,	-- Harvest Golem
 					["coords"] = {
-						{ 23.4, 35.4, WESTFALL },
-						{ 25.4, 35.4, WESTFALL },
+						{ 57.6, 36.4, WESTFALL },
+						{ 49.6, 33.2, WESTFALL },
+						{ 32.8, 35.0, WESTFALL },
+						{ 35.8, 46.0, WESTFALL },
+						{ 47.6, 67.6, WESTFALL },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					["cr"] = 114,	-- Harvest Watcher
 					["coords"] = {
-						{ 23.4, 35.4, WESTFALL },
-						{ 17.8, 33.4, WESTFALL },
-						{ 19.8, 46.8, WESTFALL },
+						{ 57.0, 34.2, WESTFALL },
+						{ 54.6, 32.2, WESTFALL },
 					},
 					-- #endif
-					--]]
 				}),
 				i(1933, {	-- Staff of Conjuring
 					["timeline"] = { "removed 4.0.3" },
@@ -1750,27 +1740,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					--]]
 				}),
 				i(2327, {	-- Sturdy Leather Bracers
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 480,	-- Rusty Harvest Golem
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, WESTFALL },
-						{ 25.4, 35.4, WESTFALL },
+						{ 59.6 18.6, WESTFALL },
+						{ 54.6 26.0, WESTFALL },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
 					["coords"] = {
-						{ 23.4, 35.4, WESTFALL },
-						{ 17.8, 33.4, WESTFALL },
-						{ 19.8, 46.8, WESTFALL },
+						{ 58.8, 18.4, WESTFALL },
+						{ 57.6, 21.0, WESTFALL },
 					},
 					-- #endif
-					--]]
 				}),
 				i(827, {	-- Wicked Blackjack
 					["crs"] = {
