@@ -275,6 +275,9 @@ root(ROOTS.Character, n(HERITAGE, {
 					["provider"] = { "n", 156396 },	-- Sassy Hardwrench
 					["coord"] = { 34.6, 28.5, THE_CAPE_OF_STRANGLETHORN },
 					["sourceQuest"] = 57043,	-- Old Friends, New Opportunities
+					["g"] = {
+						i(170538),	-- Mysterious Package
+					},
 				}),
 				q(57047, {	-- A Simple Experiment
 					["provider"] = { "n", 156520 },	-- Hobart Grapplehammer

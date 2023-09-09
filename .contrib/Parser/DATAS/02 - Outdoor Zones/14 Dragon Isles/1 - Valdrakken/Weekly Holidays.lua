@@ -105,9 +105,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["isWeekly"] = true,
 				["_drop"] = { "g" },	-- Drop Trash
 			}, {
+				-- #IF AFTER DF
 				pvp(q(47148, {			-- Something Different
 					["timeline"] = { ADDED_10_0_2_LAUNCH },
 				})),
+				-- #ENDIF
 				pvp(q(78128, {			-- Gotta Go Fast
 					["timeline"] = { ADDED_10_2_0 },
 				})),
