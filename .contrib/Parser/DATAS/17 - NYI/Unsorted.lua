@@ -956,7 +956,6 @@ root(ROOTS.Unsorted, {
 			i(208318),	-- Schematic: Verdant Combatant's Leather Goggles
 			i(208319),	-- Schematic: Verdant Combatant's Mail Goggles
 			i(208320),	-- Schematic: Verdant Combatant's Plate Goggles
-			i(208322),	-- Treads of the Nightclaw
 			i(208323),	-- Nature's Firebathed Robes
 			i(208324),	-- Scorching Dryad's Chestpiece
 			i(208325),	-- Ignit's Fiery Heart
@@ -986,11 +985,9 @@ root(ROOTS.Unsorted, {
 			i(208349),	-- Burning Leather Cuffs
 			i(208350),	-- Ochre Field Signet
 			i(208353),	-- Djaradin's Molten Band
-			i(208354),	-- Cerulean Turtle's Pendant
 			i(208355),	-- String of Delicacies
 			i(208356),	-- Earthbound Furbolg's Shroud
 			i(208357),	-- Henri's Warm Coat
-			i(208358),	-- Sunset's Bulwark
 			i(208359),	-- Nightclaw's Bauble
 			i(208361),	-- Splinterlimb's Branch
 			i(208363),	-- Twinfang of the Cian
@@ -1614,61 +1611,13 @@ root(ROOTS.Unsorted, {
 			i(209952),	-- Mark of Q'onzu
 			i(209953),	-- Dancing Dream Blossoms
 			i(209954),	-- Moragh's Favorite Rock
-			i(209955),	-- Root of Fire
 			i(209956),	-- Ori's Verdant Feather
 			i(209957),	-- Fang of the Frenzied Nightclaw
 			i(209958),	-- Rune of the Umbramane
 			i(209959),	-- Pinch of Dream Magic
-			i(209960),	-- Ceremonial Jacaranda Gown
-			i(209961),	-- Ceremonial Jacaranda Cape
-			i(209962),	-- Ceremonial Jacaranda Sandals
-			i(209963),	-- Ceremonial Jacaranda Gloves
-			i(209964),	-- Ceremonial Jacaranda Crown
-			i(209965),	-- Ceremonial Jacaranda Pantaloons
-			i(209966),	-- Ceremonial Jacaranda Branches
-			i(209967),	-- Ceremonial Jacaranda Belt
-			i(209968),	-- Ceremonial Jacaranda Wraps
-			i(209969),	-- Vest of the Dreamfused Skull
-			i(209970),	-- Pelt of the Dreamfused Skull
-			i(209971),	-- Clogs of the Dreamfused Skull
-			i(209972),	-- Grips of the Dreamfused Skull
-			i(209973),	-- Visage of the Dreamfused Skull
-			i(209974),	-- Leggings of the Dreamfused Skull
-			i(209975),	-- Pauldrons of the Dreamfused Skull
-			i(209976),	-- Buckle of the Dreamfused Skull
-			i(209977),	-- Bracers of the Dreamfused Skull
-			i(209978),	-- Barkbloom Tunic
-			i(209979),	-- Barkbloom Cloak
-			i(209980),	-- Barkbloom Talons
-			i(209981),	-- Barkbloom Claws
-			i(209982),	-- Barkbloom Mask
-			i(209983),	-- Barkbloom Breeches
-			i(209984),	-- Barkbloom Shoulderpads
-			i(209985),	-- Barkbloom Sash
-			i(209986),	-- Barkbloom Wristguards
-			i(209987),	-- Overgrown Freyan Plate
-			i(209988),	-- Overgrown Freyan Drape
-			i(209989),	-- Overgrown Freyan Boots
-			i(209990),	-- Overgrown Freyan Handguards
-			i(209991),	-- Overgrown Freyan Helm
-			i(209992),	-- Overgrown Freyan Legguards
-			i(209993),	-- Overgrown Freyan Shoulderguards
-			i(209994),	-- Overgrown Freyan Girdle
-			i(209995),	-- Overgrown Freyan Vambracers
 			i(210005),	-- 10.2 Monster - Weapon - Staff - 10.1.5 Weapon Staff - Staff_2H_Druid_C_02_Color1
 			i(210014),	-- Mysterious Seeds
 			i(210016),	-- Somnowl's Shroud
-			i(210029),	-- Overgrown Freyan Hatchet
-			i(210030),	-- Bow of the Dreamfused Skull
-			i(210031),	-- Spike of the Dreamfused Skull
-			i(210032),	-- Overgrown Freyan Smasher
-			i(210033),	-- Essence of the Dreamfused Skull
-			i(210034),	-- Overgrown Freyan Pike
-			i(210035),	-- Ceremonial Jacaranda Crook
-			i(210036),	-- Barkbloom Saber
-			i(210037),	-- Ceremonial Jacaranda Slab
-			i(210038),	-- Ceremonial Jacaranda Bloom
-			i(210039),	-- Barkbloom Warglaive
 			i(210040),	-- Set Keystone Map: Throne of the Tides
 			i(210041),	-- Shipment of Goods
 			i(210049),	-- The Legend of Elun'Ahir
@@ -1705,7 +1654,6 @@ root(ROOTS.Unsorted, {
 			i(210090),	-- Wind Wolf Gauntlets
 			i(210091),	-- Maple Tender Crown
 			i(210092),	-- Wind Wolf Helm
-			i(210093),	-- Autumn Druid Hood
 			i(210094),	-- Harvest Guardian Legplates
 			i(210095),	-- Maple Tender Leggings
 			i(210096),	-- Wind Wolf Legguards
@@ -1794,10 +1742,7 @@ root(ROOTS.Unsorted, {
 			i(210204),	-- Cloth - WRIST 2
 			i(210205),	-- Plate - WRIST 2
 			i(210206),	-- Leather - WRIST 2
-			i(210208),	-- Tuft of Dreamsaber Fur
-			i(210211),	-- Molted Faerie Dragon Scales
 			i(210214),	-- Accessory - NECK 1
-			i(210215),	-- Dreamtalon Claw
 			i(210217),	-- Small Dreamy Bounty
 			i(210218),	-- Plump Dreamy Bounty
 			i(210219),	-- Gigantic Dreamy Bounty
@@ -1900,7 +1845,6 @@ root(ROOTS.Unsorted, {
 			i(210430),	-- Twisted Dreaming Essence
 			i(210432),	-- Highland Drake: Winter Veil Armor
 			i(210433),	-- Visage of Aurostor
-			i(210434),	-- Visage of Ursoc
 			i(210436),	-- Nature's Cradle
 			i(210438),	-- Wisp Dust
 			i(210439),	-- Speck of Mana
@@ -1987,7 +1931,6 @@ root(ROOTS.Unsorted, {
 			i(210546),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leather - WAIST 3
 			i(210547),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail - FEET 3
 			i(210548),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Accessory - FINGER 3
-			i(210549),	-- Dream Racer's Purse
 			i(210550),	-- Set Keystone Map: Dawn of the Infinite: Galakrond's Fall
 			i(210551),	-- Set Keystone Map: Dawn of the Infinite: Murozond's Rise
 			i(210552),	-- Cowl of the Wolf Ancient
@@ -2002,7 +1945,6 @@ root(ROOTS.Unsorted, {
 			i(210571),	-- Snoozles
 			i(210572),	-- Verdant Equipment Chest
 			i(210595),	-- Dreaming Equipment Chest
-			i(210631),	-- Branch of Ashamane
 			i(210633),	-- Kal'andu
 			i(210644),	-- Plans: Flourishing Dream Helm
 			i(210645),	-- Feather of Friends
@@ -2014,8 +1956,6 @@ root(ROOTS.Unsorted, {
 			i(210652),	-- Somnolet
 			i(210656),	-- Winter Veil Socks
 			i(210657),	-- Gently Shaken Gift
-			i(210659),	-- Branch of Aviana
-			i(210660),	-- Claw of Lo'Gosh
 			i(210661),	-- Dreamcatcher's Crescent
 			i(210662),	-- Ochre Ornament of the Grove
 			i(210663),	-- Circle of Nature's Youth

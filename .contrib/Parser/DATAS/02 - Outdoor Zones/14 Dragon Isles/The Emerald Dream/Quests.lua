@@ -526,11 +526,10 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(77811),	-- Quest "What Do I Call You?": Pick the title of "Guardian"
 		-- there is likely one questID unique to each class. Need to test this theory
 		q(78257),	-- Quest "What Do I Call You?": Pick the title of "Highlord"
-
 		-- ???
-		q(77526),	-- pop after picked up qID 77178 / currently unsure why, probably animation or changing npcs location trigger?
-		q(77491),	-- pop while was afk / 'A massive crack of lightning breaks the sky as the primalist open a portal to the elemental plane!' ?
-		q(77490),	-- pop while was afk / last chat text was that '%player_name% creates Shipment of Goods' multiple times
-		q(77370),	-- pop during wq 76992 after first transform / also 'The vision of a young dreamer fill the air around the Fileds of Reverie'
+		--q(77526),	-- pop after picked up qID 77178 / currently unsure why, probably animation or changing npcs location trigger?
+		--q(77491),	-- pop while was afk / 'A massive crack of lightning breaks the sky as the primalist open a portal to the elemental plane!' ?
+		--q(77490),	-- pop while was afk / last chat text was that '%player_name% creates Shipment of Goods' multiple times
+		--q(77370),	-- pop during wq 76992 after first transform / also 'The vision of a young dreamer fill the air around the Fileds of Reverie'
 	}),
 }));
