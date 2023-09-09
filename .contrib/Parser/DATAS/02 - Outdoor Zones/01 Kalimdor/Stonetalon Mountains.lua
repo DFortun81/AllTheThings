@@ -1998,7 +1998,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3", "added 7.2.0" },
 					["groups"] = {
 						i(5751, {	-- Webwing Cloak
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
 						}),
 						i(5752, {	-- Wyvern Tailspike
 							["timeline"] = { "removed 4.0.3" },
