@@ -503,6 +503,10 @@ namespace ATT
             {
                 ObjectHarvester.GameFlavors.Insert(0, "ptr");
             }
+            if (Program.PreProcessorTags.ContainsKey("PTR2"))
+            {
+                ObjectHarvester.GameFlavors.Insert(0, "ptr-2");
+            }
             if (Program.PreProcessorTags.ContainsKey("ANYCLASSIC"))
             {
                 MAX_PHASE_ID = LAST_EXPANSION_PHASE[CURRENT_RELEASE_PHASE_NAME];

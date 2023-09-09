@@ -33,7 +33,9 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 	-- #if BEFORE MOP
 	["lore"] = "The mighty fortress carved within the fiery bowels of Blackrock Mountain was designed by the master dwarf-mason, Franclorn Forgewright. Intended to be the symbol of Dark Iron power, the fortress was held by the sinister dwarves for centuries. However, Nefarian - the cunning son of the dragon, Deathwing - had other plans for the great keep. He and his draconic minions took control of the upper Spire and made war on the dwarves' holdings in the mountain's volcanic depths. Realizing that the dwarves were led by the mighty fire elemental, Ragnaros - Nefarian vowed to crush his enemies and claim the whole of Blackrock mountain for himself.",
 	-- #endif
+	-- #if BEFORE WOD
 	["zone-text-areaID"] = 1583,	-- Blackrock Spire
+	-- #endif
 	["maps"] = {
 		BLACKROCK_SPIRE,
 		LBRS_TAZZALOR,
@@ -1248,6 +1250,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			i(12533, {	-- Roughshod Pike
+				["provider"] = { "o", 175886 },	-- Roughshod Pike
 				["description"] = "This item can be found along the back wall as you cross the 2nd bridge to the sleeping orc encampment just after Vorash.",
 			}),
 			n(9218, {	-- Spirestone Battle Lord (Rare)
@@ -1303,6 +1306,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["creatureID"] = 9236,	-- Shadow Hunter Vosh'gajin
 				["groups"] = {
 					i(12740, {	-- Fifth Mosh'aru Tablet
+						["provider"] = { "o", 175949 },	-- Fifth Mosh'aru Tablet
 						["timeline"] = { "removed 4.0.3" },
 						-- #if BEFORE 4.0.3
 						["description"] = "Located directly behind the boss.",
@@ -1333,6 +1337,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["creatureID"] = 9237,	-- War Master Voone
 				["groups"] = {
 					i(12741, {	-- Sixth Mosh'aru Tablet
+						["provider"] = { "o", 175950 },	-- Sixth Mosh'aru Tablet
 						["timeline"] = { "removed 4.0.3" },
 						-- #if BEFORE 4.0.3
 						["description"] = "Located directly behind the boss.",
@@ -1440,13 +1445,10 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			-- #if BEFORE 4.0.3
-			o(175606, {	-- Spire Spider Egg
+			i(12530, {	-- Spire Spider Egg
+				["provider"] = { "o", 175606 },	-- Spire Spider Egg
 				["description"] = "Interacting with a spider egg may spawn baby spiders, beware!",
-				["groups"] = {
-					i(12530, {	-- Spire Spider Egg
-						["timeline"] = { "removed 4.0.3" },
-					}),
-				},
+				["timeline"] = { "removed 4.0.3" },
 			}),
 			-- #endif
 			n(10376, {	-- Crystal Fang (Rare)
@@ -1480,6 +1482,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			e(392, {	-- Urok Doomhowl
 				["creatureID"] = 10584,	-- Urok Doomhowl
+				["provider"] = { "o", 175621 },	-- Urok's Tribute Pile
 				["description"] = "Summonable Boss. Loot a Roughshod Pike, found on the left wall after crossing the second bridge before heading to Highlord Omokk. Kill Highlord Omokk and loot his head. After killing Mother Smolderweb, head up and use the pike at the pile of skulls located at the corner of the square platform. This will summon waves of enemies and finally the boss.",
 				["cost"] = {
 					{ "i", 12533, 1 },	-- Roughshod Pike
