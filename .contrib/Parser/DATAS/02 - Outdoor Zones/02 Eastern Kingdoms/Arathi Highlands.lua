@@ -1650,7 +1650,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(5742, {	-- Gemstone Dagger
-							["timeline"] = { "created 1.11.1", "added 3.0.1", "removed 4.0.3" },
+							["timeline"] = { "created 1.11.1", "added 3.0.1", "removed 4.0.3", "added 10.1.7" },	-- Att disc 07.09.2023
 						}),
 						i(5743, {	-- Prismstone Ring
 							["timeline"] = { "created 1.11.1", "added 3.0.1", "removed 4.0.3", "added 10.1.7" },	-- Att disc 05.09.2023
@@ -1695,7 +1695,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(5257, {	-- Dark Hooded Cape
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
 						}),
 						i(2622, {	-- Nimar's Tribal Headdress
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
@@ -2016,26 +2016,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2564,	-- Boulderfist Enforcer
 						2562,	-- Boulderfist Ogre
 					},
-					["timeline"] = { "removed 4.0.3" },
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["coords"] = {
-						{ 23.4, 35.4, ARATHI_HIGHLANDS },
-						{ 25.4, 35.4, ARATHI_HIGHLANDS },
-					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague ARATHI_HIGHLANDS
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, ARATHI_HIGHLANDS },
-						{ 17.8, 33.4, ARATHI_HIGHLANDS },
-						{ 19.8, 46.8, ARATHI_HIGHLANDS },
+						{ 27.4, 46.8, ARATHI_HIGHLANDS },
+						{ 26.2, 46.2, ARATHI_HIGHLANDS },
 					},
 					-- #endif
-					--]]
 				}),
 				i(2623, {	-- Holy Diadem
 					["crs"] = {
