@@ -34,28 +34,28 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 				["sourceQuestNumRequired"] = 1,
 			}),
-			crit(8, {	-- A Present for Lila [H]
+			crit(8, {	-- A Present for Lila
 				["sourceQuests"] = {
 					25154,	-- A Present for Lila [A]
 					25160 ,	-- A Present for Lila [H]
 				},
 				["sourceQuestNumRequired"] = 1,
 			}),
-			crit(9, {	-- Ogrezonians in the Mood [A]
+			crit(9, {	-- Ogrezonians in the Mood
 				["sourceQuests"] = {
 					25155,	-- Ogrezonians in the Mood [A]
 					25161 ,	-- Ogrezonians in the Mood [H]
 				},
 				["sourceQuestNumRequired"] = 1,
 			}),
-			crit(10, {	-- Elemental Goo [H]
+			crit(10, {	-- Elemental Goo
 				["sourceQuests"] = {
 					25156,	-- Elemental Goo [A]
 					25162 ,	-- Elemental Goo [H]
 				},
 				["sourceQuestNumRequired"] = 1,
 			}),
-			crit(11, {	-- The Latest Fashion! [A]
+			crit(11, {	-- The Latest Fashion!
 				["sourceQuests"] = {
 					25157,	-- The Latest Fashion! [A]
 					25159 ,	-- The Latest Fashion! [H]
