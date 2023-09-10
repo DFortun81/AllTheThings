@@ -3141,6 +3141,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(8491, {	-- Black Tabby Cat (PET!)
 					["timeline"] = { "added 1.11.1.5462" },
 				}),
+				-- #if AFTER 10.1.7
+				i(4767, {	-- Coppercloth Gloves
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 09.09.2023
+					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
+					["cr"] = 2628,	-- Dalaran Worker
+					["coords"] = {
+						{ 27.8, 42.6, HILLSBRAD_FOOTHILLS },
+						{ 31.0, 43.6, HILLSBRAD_FOOTHILLS },
+						{ 33.6, 41.0, HILLSBRAD_FOOTHILLS },
+						{ 35.0, 35.6, HILLSBRAD_FOOTHILLS },
+						{ 32.6, 32.0, HILLSBRAD_FOOTHILLS },
+					},
+				}),
+				-- #endif
 				i(1280, {	-- Cloaked Hood
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 2246,	-- Syndicate Assassin

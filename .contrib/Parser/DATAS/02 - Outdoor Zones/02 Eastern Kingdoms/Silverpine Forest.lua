@@ -1705,11 +1705,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1942,	-- Rot Hide Savage
 					},
 				}),
+				-- #if BEFORE 10.1.7
+				-- This was moved to Hillsbrad Foothills!
 				i(4767, {	-- Coppercloth Gloves
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 09.09.2023
+					-- #if BEFORE 4.0.3
 					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
-					["timeline"] = { "removed 4.0.3" },
+					-- #endif
 					["cr"] = 3578,	-- Dalaran Miner
 				}),
+				-- #endif
 				i(5110, {	-- Dalaran Wizard's Robe
 					["crs"] = {
 						2120,	-- Archmage Ataeric
