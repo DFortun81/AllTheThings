@@ -297,9 +297,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["provider"] = { "n", 197574 },	-- Mairadormi
 						["coord"] = { 72.5, 47.4, VALDRAKKEN },
 						["isBreadcrumb"] = true,
-						--["lockCriteria"] = { 1, "TODO", TODO },	-- my main is not able to accept this, not even in party-sync, but alt can (have not done any rift with alt yet).
-						-- maybe 77680 locks?
-						["DisablePartySync"] = true,
+						["lockCriteria"] = { 1, "questID", 77680 },	-- my main is not able to accept this, not even in party-sync, but alt can (have not done any rift with alt yet).
+						["DisablePartySync"] = true,	-- TODO: confirm with character who has 77680 incomplete
 						["timeline"] = { ADDED_10_1_5 },
 					}),
 					-- ideally want the Object with coords with provider Item inside...
@@ -387,7 +386,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["provider"] = { "n", 204450 },	-- Soridormi
 						["coord"] = { 51.1, 57.1, THALDRASZUS },
 						["maxReputation"] = { FACTION_SORIDORMI, 5 },
+						["description"] = "Can be completed once per Account per week.\n\nNote: Having this quest active will block picking up 'To Soridormi's Aid' (77679) on any character which logs in while this quest is active.",
 						["isWeekly"] = true,
+						["sourceQuest"] = 77679,	-- To Soridormi's Aid
 						["g"] = {
 							i(208090, {	-- Contained Paracausality
 								i(DILATED_TIME_CAPSULE),
@@ -1095,9 +1096,9 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { AD
 	m(THALDRASZUS, { n(TIME_RIFTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 		-- Alternates between these two questIDs when completing tasks
 		-- Sequence experienced on live: 85 > 83 > 84 > 86
-		q(76983),
-		q(76984),
-		q(76985),
+		q(76983,{["repeatable"]=true}),
+		q(76984,{["repeatable"]=true}),
+		q(76985,{["repeatable"]=true}),
 
 		q(77680),	-- picked up 'When Time Needs Mending' (questID 77236); after questID 77679?
 

@@ -372,8 +372,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 				}),
 			},
 		}),
-		n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 }, }, {
-			-- TODO: All quests are most likely monthly, and will reset with the next Trial of Style holiday.
+		n(QUESTS, bubbleDown({
+			["timeline"] = { ADDED_10_1_5 },
+			["isMonthly"] = true,
+		}, {
 			q(76308, {	-- The Trial of Style
 				["providers"] = {
 					{ "n", 206252 },	-- Primo
