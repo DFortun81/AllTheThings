@@ -1958,8 +1958,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
-						{ 82.0 38.8, REDRIDGE_MOUNTAINS },
-						{ 75.4 46.0, REDRIDGE_MOUNTAINS },
+						{ 82.0, 38.8, REDRIDGE_MOUNTAINS },
+						{ 75.4, 46.0, REDRIDGE_MOUNTAINS },
 					},
 					-- #elseif AFTER 10.1.7
 					["coords"] = {
