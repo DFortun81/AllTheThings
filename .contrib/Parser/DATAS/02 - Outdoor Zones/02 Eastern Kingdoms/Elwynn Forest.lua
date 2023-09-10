@@ -1169,6 +1169,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					}),
 					-- #endif
+					-- #if BEFORE 10.1.7
 					n(ZONE_DROPS, {
 						-- #if BEFORE 8.1.0.28724
 						i(2057, {	-- Pitted Defias Shortsword
@@ -1187,6 +1188,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						}),
 					}),
+					-- #endif
 				},
 			}),
 			n(ACHIEVEMENTS, {
