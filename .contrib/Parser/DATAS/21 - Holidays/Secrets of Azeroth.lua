@@ -19,6 +19,9 @@ COMMUNITY_CLUES_HEADER = createHeader({
 		en = "Community Clues",
 	},
 });
+-- TODO:
+-- Fix temporary ObjectIDs with real ones if ever determined, and delete temp entries from ObjectDB.lua
+
 root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 	n(ACHIEVEMENTS, {
 		ach(18644, {	-- Community Rumor Mill
@@ -79,9 +82,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			crit(60857, {	-- Forging is Key
 			 	["_quests"] = { 77831 },
 			}),
-			-- crit(60858, {	-- A Proper Burial
-			-- 	["_quests"] = {  },
-			-- }),
+			crit(60858, {	-- A Proper Burial
+				["_quests"] = { 77578 },	-- Banner Stand
+			}),
 			-- crit(60859, {	-- Kirin Tor Knowledge
 			-- 	["_quests"] = {  },
 			-- }),
@@ -165,7 +168,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		}),
 		q(77203, {	-- Preserving Rarities
 			["qg"] = 206864,	-- Preservationist Kathos
-			["coords"] = { 
+			["coords"] = {
 				{ 47.4, 48.1, VALDRAKKEN },		-- Preservationist Kathos
 				{ 58.88, 54.09, VALDRAKKEN },	-- Chalice Placement
 			},
@@ -181,14 +184,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		}),
 		q(76735, {	-- Rise in Relic Theft
 			["qg"] = 206864,	-- Preservationist Kathos
-			["coords"] = { 
+			["coords"] = {
 				{ 47.4, 48.1, VALDRAKKEN },			-- Preservationist Kathos
 				{ 12.4, 49.2, THE_AZURE_SPAN },		-- Elder Poa
 				{ 48.0, 74.8, DRAGONBLIGHT },		-- Elder Ko'nani
 				{ 33.63, 58.45, BOREAN_TUNDRA },	-- Statue
 			},
 			["sourceQuests"] = { 77203 },	-- Preserving Rarities
-			["isDaily"] = true,	-- this reset after the first day? are the secrets on rotation?
+			["repeatable"] = true,
 			["description"] = "Deliver the Tuskarr Spear to Eldor Poa in Azure Span (12.4 49.2).\nDeliver the newly received Shomko Spear to Elder Ko'nani in Dragonblight (48.0 74.8).\nFinally deliver the spear to the Statue in Borean Tundra (33.63 58.45).\nYou can rightclick the quest to place all coordinates.",
 			["groups"] = {
 				i(207105),	-- Tuskarr Ceremonial Spear
@@ -273,8 +276,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		}),
 		q(76504, {	-- The Tricked-Out Thinking Cap
 			["provider"] = { "n", 207697 },	-- Fangli Hoot
-			["coord"] = { 26.7, 53.9, VALDRAKKEN },
+			["coords"] = {
+				{ 26.7, 53.9, VALDRAKKEN },	-- Fangli
+				{ 64.6, 53.6, VALDRAKKEN },	-- Solve Riddle
+			},
 			["sourceQuest"] = 77237,	-- Unfinished Thinking Cap
+			["cost"] = {{"i",206696,1}},	-- Tricked-Out Thinking Cap (TOY!)
+			["description"] = "Use Toy to accept quest. Follow arrows.",
 			["groups"] = {
 				i(206944),	-- A Clue: The Thinking Cap
 			},
@@ -284,23 +292,27 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		q(77276, {	-- An Inside Job?
 			["qg"] = 207696,	-- Bobby Carlisle
 			["coord"] = { 47.9, 46.8, VALDRAKKEN },
+			["sourceQuest"] = 76504,	-- The Tricked-Out Thinking Cap
 			["groups"] = {
 				i(208129),	-- Copied Artifact Storage Key
 				i(208128),	-- Fangli's Note
-				i(208130, {	-- Maruuk Burial Banner
-					["provider"] = { "o", 405489 },	-- Preservationist's Locker
+				o(405489, {	-- Preservationist's Locker
 					["coord"] = { 48.8, 47.8, VALDRAKKEN },
+					["groups"] = {
+						i(208130),	-- Maruuk Burial Banner
+					},
 				}),
 				q(77397, {
 					["name"] = "Talk with 'Appraiser' Sazsel Stickyfingers",
 					["coord"] = { 62.8, 72.8, VALDRAKKEN },
+					["cost"] = {{"i",208130,1}},	-- Maruuk Burial Banner
 				}),
 			},
 		}),
 		q(77277, {	-- Preservationist Cleared
 			["qg"] = 208620,	-- "Appraiser" Sazsel Stickyfingers
 			["coord"] = { 62.8, 72.8, VALDRAKKEN },
-			["sourceQuest"] = 77397,	-- An Inside Job?
+			["sourceQuest"] = 77397,	-- Talk with 'Appraiser' Sazsel Stickyfingers
 			["groups"] = {
 				i(208130),	-- Maruuk Burial Banner
 			},
@@ -310,25 +322,56 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		q(77281, {	-- Securing an Artifact
 			["qg"] = 185562,	-- Tithris
 			["coord"] = { 47.5, 46.2, VALDRAKKEN },
+			["sourceQuest"] = 76504,	-- The Tricked-Out Thinking Cap
 			["groups"] = {
 				i(208131),	-- Preservationist's Dispatch
+				-- ObjectID/QuestID correlation guessed
+				o(405510, {	-- Ancient Lever
+					["coord"] = { 56.6, 20.3, THE_WAKING_SHORES },
+					['questID'] = 77401,
+				}),
+				o(405511, {	-- Ancient Lever
+					["coord"] = { 57.7, 23.8, THE_WAKING_SHORES },
+					['questID'] = 77402,
+				}),
+				o(405512, {	-- Ancient Lever
+					["coord"] = { 57.0, 25.5, THE_WAKING_SHORES },
+					['questID'] = 77403,
+				}),
+				o(405513, {	-- Torch of Pyrreth
+					["coord"] = { 54.5, 20.3, THE_WAKING_SHORES },
+					["sourceQuests"] = {
+						77401,	-- Ancient Lever
+						77402,	-- Ancient Lever
+						77403,	-- Ancient Lever
+					},
+					["groups"] = {
+						i(208135),	-- Torch of Pyrreth (QI!)
+					},
+				}),
 			},
 		}),
 		q(77282, {	-- Artifact Secured
-			["provider"] = { "o", 405513 },	-- Torch of Pyrreth
+			["provider"] = { "i", 208135 },	-- Torch of Pyrreth
 			["coord"] = { 54.6, 20.4, THE_WAKING_SHORES },
 			["sourceQuest"] = 77281,	-- Securing an Artifact
 			["groups"] = {
 				i(208092),	-- Torch of Pyrreth (TOY!)
-				i(208135),	-- Torch of Pyrreth (QI!)
 			},
 		}),
 		q(77263, {	-- The Torch of Pyrreth
 			["qg"] = 206864,	-- Preservationist Kathos
 			["coord"] = { 47.4, 48.1, VALDRAKKEN },
 			["sourceQuest"] = 77282,	-- Artifact Secured
+			["description"] = "Use Torch of Pyrreth @ 58.5, 23.6 Valdrakken.",
 			["groups"] = {
-				i(208107),	-- Kathos' Field Glasses
+				o(405515, {	-- Enchanted Box
+					["coord"] = { 58.5, 23.6, VALDRAKKEN },
+					["provider"] = {"i",208092},	-- Torch of Pyrreth
+					["groups"] = {
+						i(208107),	-- Kathos' Field Glasses
+					},
+				}),
 			},
 		}),
 
@@ -336,12 +379,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		q(77284, {	-- A Chilling Ascent
 			["qg"] = 207696,	-- Bobby Carlisle
 			["coord"] = { 47.9, 46.8, VALDRAKKEN },
+			["sourceQuest"] = 77263,	-- The Torch of Pyrreth
 			["groups"] = {
 				i(208137),	-- The Clerk's Notes
 			},
 		}),
 		q(77286, {	-- A Knowledgeable Descent
-			["provider"] = { "o", 405523 },	-- Unveiled Tablet
+			["providers"] = {
+				{ "o", 405523 },	-- Unveiled Tablet
+				{ "i", 208092 },	-- Torch of Pyrreth
+			},
 			["coord"] = { 78.9, 32.4, THE_AZURE_SPAN },
 			["sourceQuest"] = 77284,	-- A Chilling Ascent
 			["groups"] = {
@@ -353,49 +400,86 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		q(77303, {	-- Idol Searching
 			["qg"] = 185562,	-- Tithris
 			["coord"] = { 47.2, 46.6, VALDRAKKEN },
+			["repeatable"] = true,
 			["groups"] = {
 				i(208144),	-- Preservationist's Dispatch Two
+				o(9000001, {	-- Ancient Incense Brazier
+					["coord"] = { 32.3, 67.9, OHNAHRAN_PLAINS },
+					["provider"] = {"i",208092},	-- Torch of Pyrreth
+					["questID"] = 77405,
+				}),
+				o(9000002, {	-- Ancient Incense Brazier
+					["coord"] = { 31.0, 70.8, OHNAHRAN_PLAINS },
+					["provider"] = {"i",208092},	-- Torch of Pyrreth
+					["questID"] = 77406,
+				}),
+				o(9000003, {	-- Ancient Incense Brazier
+					["coord"] = { 35.2, 65.7, OHNAHRAN_PLAINS },
+					["provider"] = {"i",208092},	-- Torch of Pyrreth
+					["questID"] = 77407,
+				}),
+				o(9000004, {	-- Ancient Incense Brazier
+					["coord"] = { 39.5, 58.9, OHNAHRAN_PLAINS },
+					["provider"] = {"i",208092},	-- Torch of Pyrreth
+					["questID"] = 77404,
+				}),
+				o(405546, {	-- Idol of Ohn'ahra
+					["coord"] = { 39.5, 58.9, OHNAHRAN_PLAINS },
+					["sourceQuests"] = {
+						77404,	-- Ancient Incense Brazier
+						77405,	-- Ancient Incense Brazier
+						77406,	-- Ancient Incense Brazier
+						77407,	-- Ancient Incense Brazier
+					},
+					["groups"] = {
+						i(208145),	-- Idol of Ohn'ahra (QI!)
+					},
+				}),
 			},
 		}),
 		q(77304, {	-- An Idol in Hand
-			["provider"] = { "o", 405546 },	-- Idol of Ohn'ahra
-			["coord"] = { 39.5, 58.9, OHNAHRAN_PLAINS },
+			["provider"] = { "i", 208145 },	-- Idol of Ohn'ahra
 			["sourceQuest"] = 77303,	-- Idol Searching
 			["groups"] = {
 				i(207730),	-- Idol of Ohn'ahra (TOY!)
-				i(208145),	-- Idol of Ohn'ahra (QI!)
 			},
 		}),
 		q(76456, {	-- Using the Idol
 			["qg"] = 206864,	-- Preservationist Kathos
 			["coord"] = { 47.4, 48.1, VALDRAKKEN },
 			["sourceQuest"] = 77304,	-- An Idol in Hand
+			["description"] = "Use the Idol. It points towards objectives.",
 		}),
 
 		-- Day 7 --
 		q(76509, {	-- Into the Sands
 			["qg"] = 206864,	-- Preservationist Kathos
 			["coord"] = { 47.4, 48.1, VALDRAKKEN },
+			["sourceQuest"] = 76456,	-- Using the Idol
+			["repeatable"] = true,
 			["groups"] = {
 				i(206948),	-- A Clue: The Shifting Sands (QI!)
+				-- These Time Lost Fragments spawn all over the Shifting Sands
+				o(404319, {	-- Time-Lost Fragment
+					["description"] = "Many locations, each location respawns after ~60 seconds.",
+					["coords"] = {
+						{ 57.3, 82.1, THALDRASZUS },
+						{ 58.5, 78.4, THALDRASZUS },
+						{ 58.8, 78.2, THALDRASZUS },
+						{ 59.3, 78.8, THALDRASZUS },
+					},
+					["groups"] = {
+						i(208191),	-- Time Lost Fragment
+					},
+				}),
+				i(208146, {	-- Incomplete Tablet
+					["cost"] = {{"i",208191,3}},	-- Time Lost Fragment (QI)
+				}),
 			},
 		}),
 		q(77305, {	-- Out of the Sands
 			["provider"] = { "i", 208146 },	-- Incomplete Tablet
 			["sourceQuest"] = 76509,	-- Into the Sands
-			["groups"] = {
-				i(208146, {	-- Incomplete Tablet
-				["provider"] = { "o", 404319 },	-- Time Lost Fragment
-				["coords"] = {
-					-- These Time Lost Fragments spawn all over the Shifting Sands
-					{ 58.5, 78.4, THALDRASZUS },
-					{ 58.8, 78.2, THALDRASZUS },
-					{ 59.3, 78.8, THALDRASZUS },
-				},
-				["cost"] = {
-					{"i",208191,3},	-- Time Lost Fragment (QI)
-				}}),
-			},
 		}),
 
 		-- Day 8 --
@@ -459,6 +543,53 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 				}),
 			},
 		}),
+
+		-- Day 10 --
+		q(77865, {	-- A Proper Burial
+			["qg"] = 206864,	-- Preservationist Kathos
+			["coord"] = { 47.4, 48.1, VALDRAKKEN },
+			["sourceQuest"] = 77277,	-- Preservationist Cleared [guess]
+			["groups"] = {
+				i(208852),	-- Maruuk Burial Banner
+				i(209061,	{	-- Ishtaar Rethon's Burial Banner
+					["provider"] = { "n", 195543 },	-- Sansok Khan
+					["coord"] = { 63.4, 41.3, OHNAHRAN_PLAINS },
+					["cost"] = {{"i",208852,1}},	-- Maruuk Burial Banner
+				}),
+				i(208857, {	-- The Path of Ishtaar Drawing
+					["provider"] = { "n", 191391 },	-- Jhara
+					["coord"] = { 81.3, 59.3, OHNAHRAN_PLAINS },
+					["cost"] = {{"i",209061,1}},	-- Ishtaar Rethon's Burial Banner
+				}),
+				o(9000005, {	-- Aged Marker [#1]
+					["questID"] = 78025,
+					["coord"] = { 83.8, 48.4, OHNAHRAN_PLAINS },
+				}),
+				o(9000006, {	-- Aged Marker [#2]
+					["sourceQuest"] = 78025,
+					["questID"] = 78026,
+					["coord"] = { 78.6, 83.3, OHNAHRAN_PLAINS },
+				}),
+				o(9000007, {	-- Aged Marker [#3]
+					["sourceQuest"] = 78026,
+					["questID"] = 78027,
+					["coord"] = { 60.7, 63.4, OHNAHRAN_PLAINS },
+				}),
+				o(9000008, {	-- Aged Marker [#4]
+					["sourceQuest"] = 78027,
+					["questID"] = 78028,
+					["coord"] = { 31.6, 71.6, OHNAHRAN_PLAINS },
+				}),
+				o(9000009, {	-- Banner Stand
+					["description"] = "In cave.",
+					["sourceQuest"] = 78028,
+					["questID"] = 77578,
+					["coord"] = { 42.6, 50.9, OHNAHRAN_PLAINS },
+					["cost"] = {{"i",209061,1}},	-- Ishtaar Rethon's Burial Banner
+				}),
+			},
+		}),
+
 	}),
 	n(COMMUNITY_CLUES_HEADER, {
 		header(HEADERS.Spell, 424082, {
@@ -500,26 +631,19 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(76987),	-- completed 'The Inquisitive' (account-wide completion) (achievementID 18642)
 	q(76995),	-- looted Crazed Looter first time (itemID 208182)
 	q(77687),	-- completed 'A Secretive Contact' (questID 77165)
-	q(77230),	-- paying Shakey's tab during 'A Secretive Contact' (questID 77165)
 	q(78202),	-- completed 'Unfinished Thinking Cap' (questID 77237)
 	q(76505),	-- completed 'The Tricked-Out Thinking Cap' (questID 76504)
 	q(77513),	-- completed 'The Tricked-Out Thinking Cap' (questID 76504)
 	q(77521),	-- completed 'Preservationist Cleared' (questID 77277)
 	q(77688),	-- accepted 'Securing an Artifact' (questID 77281)
-	q(77401),	-- Ancient Lever 1 (The Waking Shores @ 56.6 20.3) during 'Securing an Artifact' (questID 77281)
-	q(77402),	-- Ancient Lever 2 (The Waking Shores @ 57.7 23.8) during 'Securing an Artifact' (questID 77281)
-	q(77403),	-- Ancient Lever 3 (The Waking Shores @ 57.0 25.5) during 'Securing an Artifact' (questID 77281)
 	q(78201),	-- completed 'Artifact Secured' (questID 77282)
 	q(77522),	-- completed 'The Torch of Pyrreth' (questID 77263)
 	q(77523),	-- completed 'A Knowledgeable Descent' (questID 77286)
 	q(77689),	-- completed 'Idol Searching' (questID 77303)
-	q(77405),	-- Brazier 1 (Ohn'ahran Plains @ 32.3 68) during 'Idol Searching' (questID 77303)
-	q(77406),	-- Brazier 2 (Ohn'ahran Plains @ 31 70.8) during 'Idol Searching' (questID 77303)
-	q(77407),	-- Brazier 3 (Ohn'ahran Plains @ 35.2 65.7) during 'Idol Searching' (questID 77303)
-	q(77404),	-- Brazier 4 (Ohn'ahran Plains @ 35.2 65.7) during 'Idol Searching' (questID 77303)
 	q(77306),	-- completed 'An Idol in Hand' (questID 77304) / finished 'Tools of the Trade' (achievementID 18645)
 	q(78200),	-- completed 'An Idol in Hand' (questID 77304) / finished 'Tools of the Trade' (achievementID 18645)
 	q(77524),	-- completed 'Using the Idol' (questID 76456)
+	q(78008),	-- completed 'A Proper Burial' (questID 77865)
 	q(77854),	-- Upon completion of Into the Sands (questID 76509)
 	q(77421),	-- accepted 'Out of the Sands' (questID 77305)
 	q(76508),	-- Upon completion of Out of the Sands (questID 77305)
