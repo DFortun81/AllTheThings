@@ -609,6 +609,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 				},
 			}),
 			o(409914, {	-- Mimiron's Booster Part
+				["questID"] = 78099,
 				["description"] = "Takes 4 people. Someone to control the Water Elemental, 3 people to Envelope",
 				["coord"] = { 50.2, 25.7, FELWOOD },
 				["g"] = {
@@ -616,12 +617,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 				},
 			}),
 			o(408860, {	-- Mimiron's Booster Part
-			["description"] = "Take out the cannons so you can loot.",
-			["coord"] = { 54.8, 52.1, BLASTED_LANDS },
-			["g"] = {
-				i(209055),	-- Third Booster Part
-			},
-		}),
+				["questID"] = 78100,
+				["description"] = "Take out the cannons so you can loot.",
+				["coord"] = { 54.8, 52.1, BLASTED_LANDS },
+				["g"] = {
+					i(209055),	-- Third Booster Part
+				},
+			}),
 		}),
 	}),
 }))));
@@ -654,7 +656,4 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(77307),	-- Community Rumors (Achievement 18643)
 	q(78152),	-- Community Rumor Mill (Achievement 18644)
 
-	-- Community Clues HQTs
-	q(78099),	-- HQT Triggered after looting Second Booster Part
-	q(78100),	-- HQT Triggered after looting Third Booster Part
 })))
