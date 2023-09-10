@@ -1621,11 +1621,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(1190, {	-- Overseer's Cloak
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 125,	-- Riverpaw Overseer
 					["coords"] = {
 						{ 63.8, 74.6, WESTFALL },
 						{ 58.0, 72.2, WESTFALL },
 					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 98,	-- Riverpaw Taskmaster
+					["coords"] = {
+						{ 63.8, 74.6, WESTFALL },
+						{ 58.0, 72.2, WESTFALL },
+					},
+					-- #endif
 				}),
 				i(1189, {	-- Overseer's Ring
 					["timeline"] = { "removed 4.0.3" },
