@@ -1374,7 +1374,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if BEFORE 4.0.3
 						-- This item can now be found in Battered Junkboxes.
 						i(4446, {	-- Blackvenom Blade
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3" },	
+						}),
+						-- #elseif AFTER 10.1.7
+						i(4446, {	-- Blackvenom Blade
+							["timeline"] = { "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 						-- #endif
 						i(4447, {	-- Cloak of Night

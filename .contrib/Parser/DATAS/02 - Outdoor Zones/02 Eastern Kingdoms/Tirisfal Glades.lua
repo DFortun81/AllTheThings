@@ -2296,27 +2296,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					--]]
 				}),
 				i(3335, {	-- Farmer's Broom
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1935,	-- Tirisfal Farmhand
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["coords"] = {
-						{ 23.4, 35.4, TIRISFAL_GLADES },
-						{ 25.4, 35.4, TIRISFAL_GLADES },
+						{ 40.6, 51.8, TIRISFAL_GLADES },
+						{ 36.8, 51.6, TIRISFAL_GLADES },
 					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, TIRISFAL_GLADES },
-						{ 17.8, 33.4, TIRISFAL_GLADES },
-						{ 19.8, 46.8, TIRISFAL_GLADES },
-					},
-					-- #endif
-					--]]
 				}),
 				i(3334, {	-- Farmer's Shovel
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
@@ -2348,27 +2333,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 51.6, 67.6, TIRISFAL_GLADES },
 				}),
 				i(3319, {	-- Short Sabre
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1529,	-- Bleeding Horror
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["coords"] = {
-						{ 23.4, 35.4, TIRISFAL_GLADES },
-						{ 25.4, 35.4, TIRISFAL_GLADES },
+						{ 78.6, 60.6, TIRISFAL_GLADES },
+						{ 75.0, 61.6, TIRISFAL_GLADES },
 					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, TIRISFAL_GLADES },
-						{ 17.8, 33.4, TIRISFAL_GLADES },
-						{ 19.8, 46.8, TIRISFAL_GLADES },
-					},
-					-- #endif
-					--]]
 				}),
 				i(3328, {	-- Spider Web Robe
 					["coord"] = { 86.6, 53.8, TIRISFAL_GLADES },
@@ -2376,27 +2346,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 1555,	-- Vicious Night Web Spider
 				}),
 				i(3329, {	-- Spiked Wooden Plank
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1753,	-- Maggot Eye
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["coords"] = {
-						{ 23.4, 35.4, TIRISFAL_GLADES },
-						{ 25.4, 35.4, TIRISFAL_GLADES },
+						{ 58.6, 31.0, TIRISFAL_GLADES },
+						{ 58.6, 31.2, TIRISFAL_GLADES },
 					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, TIRISFAL_GLADES },
-						{ 17.8, 33.4, TIRISFAL_GLADES },
-						{ 19.8, 46.8, TIRISFAL_GLADES },
-					},
-					-- #endif
-					--]]
 				}),
 				i(4263, {	-- Standard Issue Shield
 					["coord"] = { 79.4, 25.6, TIRISFAL_GLADES },

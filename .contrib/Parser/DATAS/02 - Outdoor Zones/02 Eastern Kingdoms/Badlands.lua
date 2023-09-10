@@ -1881,8 +1881,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(2621, {	-- Cowl of Necromancy
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 2740,	-- Shadowforge Darkweaver
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 53.6, 31.8, BADLANDS },
+						{ 52.4, 33.6, BADLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["coords"] = {
+						{ 47.0, 26.0, BADLANDS },
+						{ 47.2, 32.4, BADLANDS },
+					},
+					-- #endif
 				}),
 				i(10822, {	-- Dark Whelpling (PET!)
 					-- #if AFTER CATA

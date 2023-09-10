@@ -1964,27 +1964,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(3076, {	-- Smoldering Boots
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 1042,	-- Red Whelp
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 1042,	-- Red Whelp
 					["coords"] = {
-						{ 23.4, 35.4, WETLANDS },
-						{ 25.4, 35.4, WETLANDS },
+						{ 66.8, 53.2, WETLANDS },
+						{ 59.6, ,43.0, WETLANDS },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					["cr"] = 42042,	-- Ebon Whelp
 					["coords"] = {
-						{ 23.4, 35.4, WETLANDS },
-						{ 17.8, 33.4, WETLANDS },
-						{ 19.8, 46.8, WETLANDS },
+						{ 63.8, 48.6, WETLANDS },
+						{ 65.0, 42.6, WETLANDS },
+						{ 61.8, 47.4, WETLANDS },
 					},
 					-- #endif
-					--]]
 				}),
 				i(3074, {	-- Smoldering Gloves
 					["timeline"] = { "removed 4.0.3" },

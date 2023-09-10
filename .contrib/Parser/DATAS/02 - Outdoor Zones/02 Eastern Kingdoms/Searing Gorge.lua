@@ -1375,11 +1375,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				applyclassicphase(PHASE_FIVE, i(21547, {	-- Recipe: Elixir of Greater Firepower (RECIPE!)
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
 						5844,	-- Dark Iron Slaver
 						5846,	-- Dark Iron Taskmaster
 						8637,	-- Dark Iron Watchman
+					},
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["coords"] = {
+						{ 41.6, 42.2, SEARING_GORGE },
+						{ 37.0, 42.8, SEARING_GORGE },
+						{ 43.6, 27.6, SEARING_GORGE },
+						{ 39.0, 50.8, SEARING_GORGE },
+						{ 63.6, 59.0, SEARING_GORGE },
+						{ 65.4, 65.6, SEARING_GORGE },
 					},
 				})),
 				o(266289, {	-- Time Lost Chest
