@@ -1740,17 +1740,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					--]]
 				}),
 				i(2327, {	-- Sturdy Leather Bracers
-					["cr"] = 480,	-- Rusty Harvest Golem
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
+					["cr"] = 480,	-- Rusty Harvest Golem
 					["coords"] = {
 						{ 59.6, 18.6, WESTFALL },
 						{ 54.6, 26.0, WESTFALL },
 					},
 					-- #elseif AFTER 10.1.7
+					["cr"] = 452,	-- Riverpaw Bandit
 					["coords"] = {
-						{ 58.8, 18.4, WESTFALL },
-						{ 57.6, 21.0, WESTFALL },
+						{ 56.6, 70.0, WESTFALL },
+						{ 59.6, 75.0, WESTFALL },
 					},
 					-- #endif
 				}),
