@@ -3309,32 +3309,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(1485, {	-- Pitchfork
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 09.09.2023
+					-- #if BEFORE 4.0.3
 					["crs"] = {
 						2403,	-- Farmer Getz
 						2451,	-- Farmer Kalaba
 						232,	-- Farmer Ray
 						2266,	-- Hillsbrad Farmer
 					},
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
-						{ 25.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 31.8, 35.2, HILLSBRAD_FOOTHILLS },
+						{ 36.6, 40.0, HILLSBRAD_FOOTHILLS },
+						{ 34.2, 48.2, HILLSBRAD_FOOTHILLS },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					["cr"] = 47859,	-- Risen Hillsbrad Farmer
 					["coords"] = {
-						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
-						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
-						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
+						{ 37.4, 64.2, HILLSBRAD_FOOTHILLS },
+						{ 39.6, 64.0, HILLSBRAD_FOOTHILLS },
 					},
 					-- #endif
-					--]]
 				}),
 				-- #if BEFORE CATA
 				i(6211, {	-- Recipe: Elixir of Ogre's Strength
