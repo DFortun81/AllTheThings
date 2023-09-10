@@ -1651,27 +1651,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3" },
 				}),
 				i(1287, {	-- Giant Tarantula Fang
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 442,	-- Tarantula
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 25.4, 35.4, REDRIDGE_MOUNTAINS },
+						{ 28.4 78.8, REDRIDGE_MOUNTAINS },
+						{ 15.2 76.2, REDRIDGE_MOUNTAINS },
 					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
-						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
-					},
-					-- #endif
-					--]]
 				}),
 				i(1962, {	-- Glowing Shadowhide Pendant
 					["timeline"] = { "removed 4.0.3" },
@@ -1753,27 +1738,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1440, {	-- Gnoll Skull Basher
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 446,	-- Redridge Basher
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 25.4, 35.4, REDRIDGE_MOUNTAINS },
+						{ 38.2, 31.6, REDRIDGE_MOUNTAINS },
+						{ 27.2, 36.8, REDRIDGE_MOUNTAINS },
+						{ 21.6, 35.0, REDRIDGE_MOUNTAINS },
+						{ 31.0, 21.6, REDRIDGE_MOUNTAINS },
+						{ 24.4, 24.4, REDRIDGE_MOUNTAINS },
+						{ 19.0, 16.6, REDRIDGE_MOUNTAINS },
 					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
-						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
-					},
-					-- #endif
-					--]]
 				}),
 				i(1211, {	-- Gnoll War Harness
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
@@ -1810,73 +1784,44 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1299, {	-- Lesser Belt of the Spire
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 436,	-- Blackrock Shadowcaster
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 25.4, 35.4, REDRIDGE_MOUNTAINS },
+						{ 69.8, 57.4, REDRIDGE_MOUNTAINS },
+						{ 67.4, 56.0, REDRIDGE_MOUNTAINS },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
 					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
-						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
+						{ 62.0, 51.0, REDRIDGE_MOUNTAINS },
+						{ 60.0, 48.4, REDRIDGE_MOUNTAINS },
+						{ 59.6, 41.2, REDRIDGE_MOUNTAINS },
 					},
 					-- #endif
-					--]]
 				}),
 				i(1300, {	-- Lesser Staff of the Spire
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 436,	-- Blackrock Shadowcaster
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 25.4, 35.4, REDRIDGE_MOUNTAINS },
+						{ 69.8, 57.4, REDRIDGE_MOUNTAINS },
+						{ 67.4, 56.0, REDRIDGE_MOUNTAINS },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
 					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
-						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
+						{ 62.0, 51.0, REDRIDGE_MOUNTAINS },
+						{ 60.0, 48.4, REDRIDGE_MOUNTAINS },
+						{ 59.6, 41.2, REDRIDGE_MOUNTAINS },
 					},
 					-- #endif
-					--]]
 				}),
 				i(1220, {	-- Lupine Axe
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["cr"] = 580,	-- Redridge Drudger
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 25.4, 35.4, REDRIDGE_MOUNTAINS },
+						{ 23.0, 19.0, REDRIDGE_MOUNTAINS },
+						{ 20.0, 23.8, REDRIDGE_MOUNTAINS },
 					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
-						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
-					},
-					-- #endif
-					--]]
 				}),
 				i(1406, {	-- Pearl-encrusted Spear / Pearl-Encrusted Spear
 					["cr"] = 544,	-- Murloc Nightcrawler
@@ -1898,27 +1843,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Can drop from any mob in the zone.",
 				}),
 				i(1219, {	-- Redridge Machete
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 424,	-- Redridge Poacher
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 25.4, 35.4, REDRIDGE_MOUNTAINS },
+						{ 44.0, 72.8, REDRIDGE_MOUNTAINS },
+						{ 32.2, 82.6, REDRIDGE_MOUNTAINS },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
 					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
-						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
+						{ 40.6, 66.0, REDRIDGE_MOUNTAINS },
+						{ 39.0, 65.0, REDRIDGE_MOUNTAINS },
 					},
 					-- #endif
-					--]]
 				}),
 				i(2798, {	-- Rethban Ore
 				--	["timeline"] = { "removed 4.0.3" }, -- Not removed based on Discord Report 23.06.2022
@@ -1948,27 +1885,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					--]]
 				}),
 				i(1473, {	-- Riverside Staff
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 545,	-- Murloc Tidecaller
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 25.4, 35.4, REDRIDGE_MOUNTAINS },
+						{ 56.4, 49.0, REDRIDGE_MOUNTAINS },
+						{ 81.0, 63.6, REDRIDGE_MOUNTAINS },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
 					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
-						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
+						{ 51.4, 50.0, REDRIDGE_MOUNTAINS },
+						{ 49.6, 51.6, REDRIDGE_MOUNTAINS },
 					},
 					-- #endif
-					--]]
 				}),
 				i(2566, {	-- Sacrificial Robes
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
@@ -1981,30 +1910,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1469, {	-- Scimitar of Atun
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["crs"] = {
 						14270,	-- Squiddic
 						578,	-- Murloc Scout
 					},
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 25.4, 35.4, REDRIDGE_MOUNTAINS },
+						{ 57.8, 51.8, REDRIDGE_MOUNTAINS },
+						{ 41.8, 48.2, REDRIDGE_MOUNTAINS },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					["cr"] = 578,	-- Murloc Scout
 					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
-						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
+						{ 37.8, 41.4, REDRIDGE_MOUNTAINS },
+						{ 36.4, 43.8, REDRIDGE_MOUNTAINS },
 					},
 					-- #endif
-					--]]
 				}),
 				i(2175, {	-- Shadowhide Battle Axe
 					["cr"] = 568,	-- Shadowhide Warrior
@@ -2032,50 +1954,35 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(1458, {	-- Shadowhide Maul
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 432,	-- Shadowhide Brute
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 25.4, 35.4, REDRIDGE_MOUNTAINS },
+						{ 82.0 38.8, REDRIDGE_MOUNTAINS },
+						{ 75.4 46.0, REDRIDGE_MOUNTAINS },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
 					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
-						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
+						{ 70.0, 35.2, REDRIDGE_MOUNTAINS },
+						{ 70.8, 38.6, REDRIDGE_MOUNTAINS },
+						{ 68.2, 44.0, REDRIDGE_MOUNTAINS },
 					},
 					-- #endif
-					--]]
 				}),
 				i(1459, {	-- Shadowhide Scalper
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 579,	-- Shadowhide Assassin
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 25.4, 35.4, REDRIDGE_MOUNTAINS },
+						{ 80.6, 48.8, REDRIDGE_MOUNTAINS },
+						{ 79.2, 40.6, REDRIDGE_MOUNTAINS },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
 					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
-						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
+						{ 71.2, 40.4, REDRIDGE_MOUNTAINS },
+						{ 66.8, 42.2, REDRIDGE_MOUNTAINS },
+						{ 70.6, 49.6, REDRIDGE_MOUNTAINS },
 					},
 					-- #endif
-					--]]
 				}),
 				i(1460, {	-- Shadowhide Two-handed Sword / Shadowhide Two-Handed Sword
 					["cr"] = 434,	-- Rabid Shadowhide Gnoll

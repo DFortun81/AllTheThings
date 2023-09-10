@@ -2025,14 +2025,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(2014, {	-- Black Metal Greatsword
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
 					["cr"] = 1270,	-- Fetid Corpse
+					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 78.4, 36.0, DUSKWOOD },
 						{ 79.8, 32.8, DUSKWOOD },
 					},
 					-- #elseif AFTER 10.1.7
-					["cr"] = 202,	-- Skeletal Corpse
 					["coords"] = {
 						{ 81.2, 58.0, DUSKWOOD },
 						{ 24.2, 42.0, DUSKWOOD },

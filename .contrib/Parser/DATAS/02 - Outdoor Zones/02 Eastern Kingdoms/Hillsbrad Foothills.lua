@@ -2870,6 +2870,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(4795, {	-- Bear Bracers
 							["isLimited"] = true,
 						}),
+						i(3429, {	-- Guardsman Belt
+							["timeline"] = { "added 10.1.7" },	-- ATT Discord 05.09.2023
+						}),
 						i(4832, {	-- Mystic Sarong
 							["isLimited"] = true,
 						}),
@@ -3163,27 +3166,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(3204, {	-- Deepwood Bracers
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 2372,	-- Mudsnout Gnoll
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["coords"] = {
-						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
-						{ 25.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 58.8, 74.6, HILLSBRAD_FOOTHILLS },
+						{ 57.8, 75.8, HILLSBRAD_FOOTHILLS },
 					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
-						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
-						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
-					},
-					-- #endif
-					--]]
 				}),
 				i(3336, {	-- Flesh Piercer
 					["crs"] = {
@@ -3209,29 +3197,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(3429, {	-- Guardsman Belt
 					["timeline"] = { "removed 4.0.3" },
+					-- added to vendor in 10.1.7
 					["crs"] = {
 						2427,	-- Jailor Eston
 						2428,	-- Jailor Marlgen
 					},
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
-					["coords"] = {
-						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
-						{ 25.4, 35.4, HILLSBRAD_FOOTHILLS },
-					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
-						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
-						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
-					},
-					-- #endif
-					--]]
 				}),
 				i(3053, {	-- Humbert's Chestpiece
 					["timeline"] = { "removed 4.0.3", "added 8.0.1" },	-- Maybe was never removed. Not sure.

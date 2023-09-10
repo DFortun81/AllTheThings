@@ -1861,8 +1861,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(15732, {	-- Pattern: Volcanic Leggings (RECIPE!)
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["cr"] = 7035,	-- Firegut Brute
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["coords"] = {
+						{ 83.6, 40.0, BURNING_STEPPES },
+						{ 80.4, 45.8, BURNING_STEPPES },
+					},
 				}),
 				i(13476, {	-- Recipe: Mighty Rage Potion (RECIPE!)
 					["timeline"] = { "removed 4.0.3" },

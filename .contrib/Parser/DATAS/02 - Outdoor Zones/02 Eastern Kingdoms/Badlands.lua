@@ -1903,8 +1903,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(1521, {	-- Lumbering Ogre Axe
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 2719,	-- Dustbelcher Lord
+					["coords"] = {
+						{ 10.0, 92.6, BADLANDS },
+						{ 7.6, 89.4, BADLANDS },
+					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						46928,	-- Dustbelcher Butcher
+						46929,	-- Dustbelcher Merchant
+						4844,	-- Shadowforge Surveyor
+					},
+					-- #endif
 				}),
 				-- #if BEFORE 4.0.3
 				i(1993, {	-- Ogremind Ring
