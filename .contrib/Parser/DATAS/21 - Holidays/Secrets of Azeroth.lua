@@ -126,6 +126,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			-- 	["_quests"] = {  },
 			-- }),
 		}),
+		ach(19080, {	-- Arcane Influence - Only available for two days (10/11 September 2023)
+			["questID"] = 78101,
+			["coord"] = { 36.6, 61.8, VALDRAKKEN },
+		}),
 	}),
 	n(TREASURES, sharedData({
 		["groups"] = {
