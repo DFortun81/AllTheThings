@@ -1654,8 +1654,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 442,	-- Tarantula
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["coords"] = {
-						{ 28.4 78.8, REDRIDGE_MOUNTAINS },
-						{ 15.2 76.2, REDRIDGE_MOUNTAINS },
+						{ 28.4, 78.8, REDRIDGE_MOUNTAINS },
+						{ 15.2, 76.2, REDRIDGE_MOUNTAINS },
 					},
 				}),
 				i(1962, {	-- Glowing Shadowhide Pendant
@@ -1972,6 +1972,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(1459, {	-- Shadowhide Scalper
 					["cr"] = 579,	-- Shadowhide Assassin
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 80.6, 48.8, REDRIDGE_MOUNTAINS },
 						{ 79.2, 40.6, REDRIDGE_MOUNTAINS },
