@@ -629,16 +629,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 					["questID"] = 78028,
 					["coord"] = { 31.6, 71.6, OHNAHRAN_PLAINS },
 				}),
-				o(9000009, {	-- Banner Stand
-					["description"] = "In cave.",
+				o(9000009, {	-- Aged Marker [#5]
 					["sourceQuest"] = 78028,
+					["questID"] = 78029,
+					["coord"] = { 43.3, 48.0, OHNAHRAN_PLAINS },
+				}),
+				o(9000010, {	-- Banner Stand
+					["description"] = "In cave.",
+					["sourceQuest"] = 78028,	-- You can probably get this without any Aged Marker
 					["questID"] = 77578,
 					["coord"] = { 42.6, 50.9, OHNAHRAN_PLAINS },
 					["cost"] = {{"i",209061,1}},	-- Ishtaar Rethon's Burial Banner
 				}),
 			},
 		}),
-
 	}),
 	n(COMMUNITY_CLUES_HEADER, {
 		header(HEADERS.Spell, 424082, {
@@ -703,6 +707,7 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(77577),	-- Upon completion of A Key To Reforging (QuestID 77831)
 	q(77893),	-- Upon completion of this quest and receiving the QI
 	q(77830),	-- Upon "learning" Tyr's Titan Key (itemID 208831)
+	q(78037),	-- Channeling 'Torch of Pyrreth' to Aged Marker [#5] (questID 78029)
 	q(77307),	-- Community Rumors (Achievement 18643)
 	q(78152),	-- Community Rumor Mill (Achievement 18644)
 
