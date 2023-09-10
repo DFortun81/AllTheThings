@@ -322,6 +322,11 @@ applyevent = function(eventID, data)
 		print("INVALID EVENT ID PASSED TO APPLYHOLIDAY");
 		print(CurrentSubFileName or CurrentFileName);
 	end
+	-- Force Root Event object type for event headers to ensure they parse as Events
+	if data.npcID and data.npcID < 0 then
+		data._eventHeaderID = data.npcID;
+		data.type = "eventHeader";
+	end
 	return bubbleDown({ ["e"] = eventID }, data);
 end
 -- #if ANYCLASSIC
