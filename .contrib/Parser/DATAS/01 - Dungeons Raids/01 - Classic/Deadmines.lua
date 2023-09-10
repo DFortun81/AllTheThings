@@ -351,7 +351,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				-- #endif
 				["groups"] = {
 					i(3019, {	-- Noble's Robe
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 09.09.2023 ATT Discord
 					}),
 					i(4660, {	-- Walking Boots
 						["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
