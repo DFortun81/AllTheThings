@@ -2297,7 +2297,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(12435, {	-- Ice Thistle E'ko
 					["provider"] = { "i", 12384 },	-- Cache of Mau'ari
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.5" },	-- Likely was never removed
 					["crs"] = {
 						7459,	-- Ice Thistle Matriarch
 						7460,	-- Ice Thistle Patriarch
