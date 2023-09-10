@@ -113,9 +113,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			crit(60858, {	-- A Proper Burial
 				["_quests"] = { 77578 },	-- Banner Stand
 			}),
-			-- crit(60859, {	-- Kirin Tor Knowledge
-			-- 	["_quests"] = {  },
-			-- }),
+			crit(60859, {	-- Kirin Tor Knowledge
+				["_quests"] = { 77908 },
+			}),
 			-- crit(60860, {	-- A Curious Orb
 			-- 	["_quests"] = {  },
 			-- }),
@@ -185,6 +185,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			["coord"] = { 64.7, 55.4, BLASTED_LANDS },
 			["provider"] = {"i",208092},	-- Torch of Pyrreth
 			["description"] = "Use your 'Torch of Pyrreth' on the ritual crystal.",
+		}),
+		o(405538, {	-- Loose Dirt Mound
+			["questID"] = 77299,
+			["coord"] = { 57.8, 26.3, NAGRAND },
+			["description"] = "Look to the island floating in the air.",
 		}),
 	})),
 	n(QUESTS, {
@@ -651,13 +656,29 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		}),
 
 		-- Day 11 --
-
+		q(77897, {	-- A Key Story
+			["qg"] = 207696,	-- Bobby Carlisle
+			["coord"] = { 47.9, 46.8, VALDRAKKEN },
+			["groups"] = {
+				i(208888),	-- Kirin Tor Contact's Note (QI!)
+			},
+		}),
+		q(77908, {	-- A Legacy of Secrets
+			["provider"] = { "i", 208889 },
+			["description"] = "Quest takes place in Old Karazhan Raid",
+			["sourceQuest"] = 77897,	-- A Key Story
+			["groups"]	= {
+				o(408980, {
+					["description"] = "There are three clues inside the Guardian's Library. Pull out your thinking cap to find all three and the final object.",
+					["g"] = i(208889),
+				}),
+			},
+		}),
 		-- Day 12 --
 
 		-- Day 13 --
 
 		-- Day 14 --
-
 	}),
 	n(COMMUNITY_CLUES_HEADER, {
 		header(HEADERS.Spell, 424082, {
@@ -755,5 +776,10 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(78037),	-- Channeling 'Torch of Pyrreth' to Aged Marker [#5] (questID 78029)
 	q(77307),	-- Community Rumors (Achievement 18643)
 	q(78152),	-- Community Rumor Mill (Achievement 18644)
-
+	q(77895),	-- Completed at same time as receiving (itemdID 208888)
+	q(78050),	-- Upon reading "Ancient Tome" inside the Karazan Library -- Updates Item 208888
+	q(77579),	-- Upon completion of (Quest 77908)
+	q(78050),	-- Ancient Tomb (Karazhan 31.8, 49.9) Guardians Library
+	q(78051),	-- Ancient Tomb (Karazhan 36.2, 37.4) Guardians Library
+	q(78052),	-- Ancient Tomb (Karazhan 47.2, 64.4) Guardians Library
 })))
