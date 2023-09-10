@@ -19124,7 +19124,7 @@ customWindowUpdates["Random"] = function(self)
 					end}),
 					{
 						['text'] = L["ACHIEVEMENT"],
-						['icon'] = "Interface\\Icons\\Achievement_FeatsOfStrength_Gladiator_10",
+						['icon'] = app.asset("Category_Achievements"),
 						['description'] = L["ACHIEVEMENT_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
@@ -19137,7 +19137,7 @@ customWindowUpdates["Random"] = function(self)
 					},
 					{
 						['text'] = L["ITEM"],
-						['icon'] = "Interface\\Icons\\INV_Box_02",
+						['icon'] = app.asset("Interface_Zone_drop"),
 						['description'] = L["ITEM_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
@@ -19189,7 +19189,7 @@ customWindowUpdates["Random"] = function(self)
 					},
 					{
 						['text'] = L["MOUNT"],
-						['icon'] = "Interface\\Icons\\Ability_Mount_AlliancePVPMount",
+						['icon'] = app.asset("Category_Mounts"),
 						['description'] = L["MOUNT_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
@@ -19202,7 +19202,7 @@ customWindowUpdates["Random"] = function(self)
 					},
 					{
 						['text'] = L["PET"],
-						['icon'] = "Interface\\Icons\\INV_Box_02",
+						['icon'] = app.asset("Category_PetBattles"),
 						['description'] = L["PET_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
@@ -19215,8 +19215,7 @@ customWindowUpdates["Random"] = function(self)
 					},
 					{
 						['text'] = L["QUEST"],
-						['icon'] = "Interface\\GossipFrame\\AvailableQuestIcon",
-						['preview'] = "Interface\\Icons\\Achievement_Quests_Completed_08",
+						['icon'] = app.asset("Interface_Quest"),
 						['description'] = L["QUEST_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
@@ -19229,7 +19228,7 @@ customWindowUpdates["Random"] = function(self)
 					},
 					{
 						['text'] = L["TOY"],
-						['icon'] = "Interface\\Icons\\INV_Misc_Toy_10",
+						['icon'] = app.asset("Category_ToyBox"),
 						['description'] = L["TOY_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
@@ -19242,7 +19241,7 @@ customWindowUpdates["Random"] = function(self)
 					},
 					{
 						['text'] = L["ZONE"],
-						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
+						['icon'] = app.asset("Category_Zones"),
 						['description'] = L["ZONE_DESC"],
 						['visible'] = true,
 						['OnClick'] = function(row, button)
