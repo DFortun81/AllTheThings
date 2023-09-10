@@ -520,25 +520,51 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			["coord"] = { 47.9, 46.8, VALDRAKKEN },
 			["groups"] = {
 				i(208486),	-- The Blacksmith and the Apprentice (QI!)
+				o(408226, {	-- Ancient Key Mold
+					["coord"] = { 62.9, 57.3, OHNAHRAN_PLAINS },
+					["groups"] = {
+						i(208827),	-- Titan Key Mold
+					},
+				}),
 			},
 		}),
 		q(77822, {	-- A Titanic Mold
 			["provider"] = { "i", 208827 },	-- Titan Key Mold
 			["sourceQuest"] = 77653,	-- A Key Story
-			["groups"] = {
-				i(208827, {	-- Titan Key Mold
-					["provider"] = { "o", 408226 },	-- Ancient Key Mold
-					["coord"] = { 62.9, 57.3, OHNAHRAN_PLAINS },
-				}),
-			},
 		}),
 
 		-- Day 9 --
 		q(77829, {	-- Reforging a Legend
 			["qg"] = 207696,	-- Bobby Carlisle
 			["coord"] = { 47.9, 46.8, VALDRAKKEN },
+			["sourceQuest"] = 77822,	-- A Titanic Mold
 			["groups"] = {
 				i(208829),	-- Titan Key Materials List (QI!)
+				o(407691, {	-- Dusty Red Pellets
+					["description"] = "Very tiny rocks. Many locations. Use Idol of Ohn'ahra to find them.",
+					["coords"] = {
+						{ 47.6, 46.2, THE_WAKING_SHORES },
+						{ 47.9, 46.3, THE_WAKING_SHORES },
+						{ 48.1, 45.4, THE_WAKING_SHORES },
+						{ 48.3, 46.1, THE_WAKING_SHORES },
+					},
+					["provider"] = { "i", 207730 },	-- Idol of Ohn'ahra
+					["g"] = {
+						i(208835),	-- Rose Gold Dust (QI)
+					},
+				}),
+				o(407692, {	-- Igneous Flux
+					["coords"] = {
+						{ 21.3, 76.7, THE_WAKING_SHORES },
+						{ 22.7, 77.9, THE_WAKING_SHORES },
+						{ 23.1, 78.6, THE_WAKING_SHORES },
+						{ 23.1, 78.9, THE_WAKING_SHORES },
+						{ 23.8, 78.8, THE_WAKING_SHORES },
+					},
+					["g"] = {
+						i(208836),	-- Igneous Flux (QI)
+					},
+				}),
 			},
 		}),
 		q(77831, {	-- A Key To Reforg(ing)
@@ -547,25 +573,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			["coord"] = { 24.5, 60.7, THE_WAKING_SHORES },
 			["cost"] = {
 				{"i",208835,50},	-- Rose Gold Dust (QI)
-				{"i",208836,8},		-- Igneous Flux (QI)
+				{"i",208836, 8},	-- Igneous Flux (QI)
+				{"i",208092, 1},	-- Torch of Pyrreth
 			},
 			["groups"] = {
-				o(407691, {	-- Dusty Red Pellets
-					["coords"] = {
-						{ 47.9, 46.3, THE_WAKING_SHORES },
-					},
-					["g"] = { i(208835) },	-- Rose Gold Dust (QI)
-				}),
-				o(407692, {	-- Igneous Flux
-					["coords"] = {
-						{ 21.3, 76.7, THE_WAKING_SHORES },
-						{ 23.1, 78.6, THE_WAKING_SHORES },
-					},
-					["g"] = { i(208836) },	-- Igneous Flux (QI)
-				}),
 				o(408754, {	-- Reforged Titan Key
 					["coord"] = { 24.5, 60.7, THE_WAKING_SHORES },
-					["g"] = {i(208830) },	--  Reforged Titan Key (QI)
+					["g"] = {
+						i(208830),	--  Reforged Titan Key (QI)
+					},
 				}),
 				i(208831, {	-- Tyr's Titan Key
 					i(208832),	-- Tyr's Titan Key
