@@ -522,6 +522,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		q(77653, {	-- A Key Story
 			["qg"] = 207696,	-- Bobby Carlisle
 			["coord"] = { 47.9, 46.8, VALDRAKKEN },
+			["repeatable"] = true,
 			["groups"] = {
 				i(208486),	-- The Blacksmith and the Apprentice (QI!)
 				o(408226, {	-- Ancient Key Mold
@@ -542,6 +543,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			["qg"] = 207696,	-- Bobby Carlisle
 			["coord"] = { 47.9, 46.8, VALDRAKKEN },
 			["sourceQuest"] = 77822,	-- A Titanic Mold
+			["repeatable"] = true,
 			["groups"] = {
 				i(208829),	-- Titan Key Materials List (QI!)
 				o(407691, {	-- Dusty Red Pellets
@@ -647,25 +649,55 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 				}),
 			},
 		}),
+
+		-- Day 11 --
+
+		-- Day 12 --
+
+		-- Day 13 --
+
+		-- Day 14 --
+
 	}),
 	n(COMMUNITY_CLUES_HEADER, {
 		header(HEADERS.Spell, 424082, {
-			i(210022, {	-- Mimiron's Jumpjets (MOUNT!)
-				["description"] = "Combine the first, second, and third boosters near an Empowered\nArcane Forge to reforge and power Mimiron's Jumpjets.\n",
-				["cost"] = {
-					{"i",208984,1},	-- First Booster Part
-					{"i",209781,1},	-- Second Booster Part
-					{"i",209055,1},	-- Third Booster Part
-				},
+			o(408060, {	-- The First Clue
+				["coord"] = { 32.1, 66.9, VALDRAKKEN },
+			}),
+			o(408076, {	-- The Second Clue
+				["coord"] = { 81.6, 47.6, VALDRAKKEN },
+				["provider"] = { "i", 208092 },	-- Torch of Pyrreth
+			}),
+			o(408079, {	-- The Third Clue
+				["coord"] = { 57.6, 21.3, NORTHERN_STRANGLETHORN },
+				["provider"] = { "i", 208092 },	-- Torch of Pyrreth
+			}),
+			o(408080, {	-- A Partial Fourth Clue
+				["maps"] = { ZULGURUB },
+				["provider"] = { "i", 208092 },	-- Torch of Pyrreth
+			}),
+			o(408081, {	-- A Partial Fourth Clue
+				["maps"] = { ZULGURUB },
+				["provider"] = { "i", 208092 },	-- Torch of Pyrreth
+			}),
+			o(408082, {	-- A Partial Fourth Clue
+				["maps"] = { ZULGURUB },
+				["provider"] = { "i", 208092 },	-- Torch of Pyrreth
+			}),
+			o(408083, {	-- A Partial Fourth Clue
+				["maps"] = { ZULGURUB },
+				["provider"] = { "i", 208092 },	-- Torch of Pyrreth
 			}),
 			n(210398, {	-- Enigma Ward
 				["description"] = "Requries 3 people with Torch of Pyrreth to summon.",
 				["questID"] = 78098,
 				["coord"] = { 58.9, 78.1, THE_CAPE_OF_STRANGLETHORN },
+				["provider"] = { "i", 208092 },	-- Torch of Pyrreth
 				["g"] = {
 					i(208984),	-- First Booster Part
 				},
 			}),
+			-- leading clues https://www.wowhead.com/item=209781/second-booster-part#comments:id=5680742:reply=1637897
 			o(409914, {	-- Mimiron's Booster Part
 				["questID"] = 78099,
 				["description"] = "Takes 4 people. Someone to control the Water Elemental, 3 people to Envelope",
@@ -674,12 +706,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 					i(209781),	-- Second Booster Part
 				},
 			}),
+			-- leading clues ... ?
 			o(408860, {	-- Mimiron's Booster Part
 				["questID"] = 78100,
 				["description"] = "Take out the cannons so you can loot.",
 				["coord"] = { 54.8, 52.1, BLASTED_LANDS },
 				["g"] = {
 					i(209055),	-- Third Booster Part
+				},
+			}),
+			i(210022, {	-- Mimiron's Jumpjets (MOUNT!)
+				["description"] = "Combine the first, second, and third boosters near an Empowered\nArcane Forge to reforge and power Mimiron's Jumpjets.\n",
+				["cost"] = {
+					{"i",208984,1},	-- First Booster Part
+					{"i",209781,1},	-- Second Booster Part
+					{"i",209055,1},	-- Third Booster Part
 				},
 			}),
 		}),
