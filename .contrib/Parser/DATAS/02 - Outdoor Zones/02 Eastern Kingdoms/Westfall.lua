@@ -1218,7 +1218,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(572, {	-- Leprithus
 					-- #if AFTER CATA
 					["coord"] = { 41.7, 29.3, WESTFALL },
-					["description"] = "Spawns at approximately 8 PM server time.",
 					-- #else
 					["coords"] = {
 						{ 42.4, 30.8, WESTFALL },
