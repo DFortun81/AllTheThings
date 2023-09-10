@@ -435,7 +435,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 79.2, 42.3, ZULDAZAR },
 			}),
 			q(55244, {	-- Away From the Herd
-				["sourceQuests"] = { 55243 },	-- A Daughter of Torcali #2
+				["sourceQuests"] = { 55507 },	-- Torcali's Blessing [1 back from previous]
 				["provider"] = { "n", 152258 },	-- Child of Torcali
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
@@ -585,7 +585,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["cost"] = { { "i", 159139, 1 } },	-- 1x Lightweight Skyterror Barding
 			}),
 			q(55245, {	-- Eat Like a Direhorn
-				["sourceQuests"] = { 55243 },	-- A Daughter of Torcali #2
+				["sourceQuests"] = { 55507 },	-- Torcali's Blessing [1 back from previous]
 				["provider"] = { "n", 152258 },	-- Child of Torcali
 				["isDaily"] = true,
 				["coord"] = { 68.2, 41.8, ZULDAZAR },

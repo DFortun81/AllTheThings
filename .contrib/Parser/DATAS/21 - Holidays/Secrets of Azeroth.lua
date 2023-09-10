@@ -25,10 +25,38 @@ COMMUNITY_CLUES_HEADER = createHeader({
 root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 	n(ACHIEVEMENTS, {
 		ach(18644, {	-- Community Rumor Mill
-			i(208151),	-- Tobias (PET!)
+			["sym"] = {{"select","questID",
+				77289,	-- Loose Dirt Mound
+				77288,	-- Loose Dirt Mound
+				77291,	-- Loose Dirt Mound
+				77292,	-- Loose Dirt Mound
+				77290,	-- Loose Dirt Mound
+				77293,	-- Loose Dirt Mound
+				77296,	-- Loose Dirt Mound
+				77294,	-- Loose Dirt Mound
+				77297,	-- Loose Dirt Mound
+				77298,	-- Loose Dirt Mound
+			}},
+			["groups"] = {
+				i(208151),	-- Tobias (PET!)
+			},
 		}),
 		ach(18643, {	-- Community Rumors
-			i(208150),	-- Blue Tweed Cap
+			["sym"] = {{"select","questID",
+				77289,	-- Loose Dirt Mound
+				77288,	-- Loose Dirt Mound
+				77291,	-- Loose Dirt Mound
+				77292,	-- Loose Dirt Mound
+				77290,	-- Loose Dirt Mound
+				77293,	-- Loose Dirt Mound
+				77296,	-- Loose Dirt Mound
+				77294,	-- Loose Dirt Mound
+				77297,	-- Loose Dirt Mound
+				77298,	-- Loose Dirt Mound
+			}},
+			["groups"] = {
+				i(208150),	-- Blue Tweed Cap
+			},
 		}),
 		ach(18642, {	-- The Inquisitive
 			["cost"] = {{"i",207580,1}},	-- Shomko's Unyielding Spear
@@ -127,7 +155,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		o(405529, {	-- Loose Dirt Mound
 			["questID"] = 77290,
 			["coord"] = { 26.2, 68.6, NETHERSTORM },
-			["description"] = "You need three people to channel their 'Torch of Pyrreth' toy.",
+			["provider"] = {"i",208092},	-- Torch of Pyrreth
+			["description"] = "You need three people to each channel their 'Torch of Pyrreth' on each small crystal.",
 		}),
 		o(405532, {	-- Loose Dirt Mound
 			["questID"] = 77293,
@@ -136,6 +165,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		o(405535, {	-- Loose Dirt Mound
 			["questID"] = 77296,
 			["coord"] = { 25.2, 71.5, THE_AZURE_SPAN },
+			["provider"] = {"i",208092},	-- Torch of Pyrreth
 			["description"] = "Use your 'Torch of Pyrreth' near the snowmen.",
 		}),
 		o(405533, {	-- Loose Dirt Mound
@@ -149,6 +179,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		o(405537, {	-- Loose Dirt Mound
 			["questID"] = 77298,
 			["coord"] = { 64.7, 55.4, BLASTED_LANDS },
+			["provider"] = {"i",208092},	-- Torch of Pyrreth
 			["description"] = "Use your 'Torch of Pyrreth' on the ritual crystal.",
 		}),
 	})),
@@ -213,6 +244,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		q(77165, {	-- A Secretive Contact
 			["qg"] = 207696,	-- Bobby Carlisle
 			["coord"] = { 47.9, 46.8, VALDRAKKEN },
+			["repeatable"] = true,
 			["groups"] = {
 				i(207802),	-- Bobby Carlisle's Thinking Cap Notes
 				i(208416, {	-- Thunderspine Nest Shopping List
@@ -293,6 +325,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			["qg"] = 207696,	-- Bobby Carlisle
 			["coord"] = { 47.9, 46.8, VALDRAKKEN },
 			["sourceQuest"] = 76504,	-- The Tricked-Out Thinking Cap
+			["repeatable"] = true,
 			["groups"] = {
 				i(208129),	-- Copied Artifact Storage Key
 				i(208128),	-- Fangli's Note
@@ -323,6 +356,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			["qg"] = 185562,	-- Tithris
 			["coord"] = { 47.5, 46.2, VALDRAKKEN },
 			["sourceQuest"] = 76504,	-- The Tricked-Out Thinking Cap
+			["repeatable"] = true,
 			["groups"] = {
 				i(208131),	-- Preservationist's Dispatch
 				-- ObjectID/QuestID correlation guessed
@@ -354,7 +388,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		q(77282, {	-- Artifact Secured
 			["provider"] = { "i", 208135 },	-- Torch of Pyrreth
 			["coord"] = { 54.6, 20.4, THE_WAKING_SHORES },
-			["sourceQuest"] = 77281,	-- Securing an Artifact
 			["groups"] = {
 				i(208092),	-- Torch of Pyrreth (TOY!)
 			},
@@ -380,6 +413,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			["qg"] = 207696,	-- Bobby Carlisle
 			["coord"] = { 47.9, 46.8, VALDRAKKEN },
 			["sourceQuest"] = 77263,	-- The Torch of Pyrreth
+			["repeatable"] = true,
 			["groups"] = {
 				i(208137),	-- The Clerk's Notes
 			},
@@ -390,7 +424,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 				{ "i", 208092 },	-- Torch of Pyrreth
 			},
 			["coord"] = { 78.9, 32.4, THE_AZURE_SPAN },
-			["sourceQuest"] = 77284,	-- A Chilling Ascent
 			["groups"] = {
 				i(208143),	-- Unveiled Tablet Rubbing
 			},
@@ -439,7 +472,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		}),
 		q(77304, {	-- An Idol in Hand
 			["provider"] = { "i", 208145 },	-- Idol of Ohn'ahra
-			["sourceQuest"] = 77303,	-- Idol Searching
 			["groups"] = {
 				i(207730),	-- Idol of Ohn'ahra (TOY!)
 			},
@@ -549,6 +581,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			["qg"] = 206864,	-- Preservationist Kathos
 			["coord"] = { 47.4, 48.1, VALDRAKKEN },
 			["sourceQuest"] = 77277,	-- Preservationist Cleared [guess]
+			["repeatable"] = true,
 			["groups"] = {
 				i(208852),	-- Maruuk Burial Banner
 				i(209061,	{	-- Ishtaar Rethon's Burial Banner
