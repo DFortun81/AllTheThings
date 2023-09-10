@@ -226,6 +226,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(188169),	-- Bronze Timepiece
 					},
 				}),
+				q(77345, {	-- The Need For Higher Velocities
+					["sourceQuests"] = { 65133 },	-- How to Use Momentum with Your Dragon
+					["provider"] = { "n", 193287 },	-- Lord Andestrasz
+					["timeline"] = { ADDED_10_1_7 },
+					["coord"] = { 57.7, 66.9, THE_WAKING_SHORES },
+					["g"] = {
+						i(208182),	-- Bronze Timepiece
+					},
+				}),
 				q(68796, {	-- The Skytop Observatory
 					["sourceQuests"] = { 65133 },	-- How to Use Momentum with Your Dragon
 					["provider"] = { "n", 193287 },	-- Lord Andestrasz
@@ -1490,6 +1499,10 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { AD
 			["name"] = "To Skytop Observatory",
 			["provider"] = { "n", 193287 },	-- Lord Andestrasz
 			["coord"] = { 57.7, 66.9, THE_WAKING_SHORES },
+		}),
+		o(404260, {	-- Riddle Solved!
+			["questID"] = 76451,
+			["coord"] = { 67.1, 56.8, THE_WAKING_SHORES},
 		}),
 	}),
 })));
