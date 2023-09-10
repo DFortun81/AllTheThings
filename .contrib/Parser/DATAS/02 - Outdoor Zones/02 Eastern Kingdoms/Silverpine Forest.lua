@@ -1520,6 +1520,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if BEFORE 4.0.3
 				n(1944, {	-- Rot Hide Bruiser
 					-- Added to Tirisfall in 10.1.7
 					["coord"] = { 67.6, 24.4, SILVERPINE_FOREST },
@@ -1533,9 +1534,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #endif
 				n(1948, {	-- Snarlmane
 					["coord"] = { 66.2, 25.0, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["groups"] = {
 						i(4445, {	-- Flesh Carver
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
