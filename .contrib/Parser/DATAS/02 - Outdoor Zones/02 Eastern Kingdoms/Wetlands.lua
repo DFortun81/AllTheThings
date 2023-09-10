@@ -1969,7 +1969,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 1042,	-- Red Whelp
 					["coords"] = {
 						{ 66.8, 53.2, WETLANDS },
-						{ 59.6, ,43.0, WETLANDS },
+						{ 59.6, 43.0, WETLANDS },
 					},
 					-- #elseif AFTER 10.1.7
 					["cr"] = 42042,	-- Ebon Whelp

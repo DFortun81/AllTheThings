@@ -1224,7 +1224,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FOUR, {
 				}),
 			}),
 			prof(MINING, {
-				i(19774),	-- Souldarite
+				i(19774, {	-- Souldarite
+					["provider"] = { "o", 180215 },	-- Hakkari Thorium Vein
+				}),
 			}),
 			prof(SKINNING, {
 				i(19768, {	-- Primal Tiger Leather
