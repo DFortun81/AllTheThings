@@ -2343,7 +2343,7 @@ local C_TooltipInfo_GetHyperlink = C_TooltipInfo and C_TooltipInfo.GetHyperlink;
 local IsRetrievingData = app.Modules.RetrievingData.IsRetrievingData;
 if C_TooltipInfo_GetHyperlink then
 	setmetatable(NPCNameFromID, { __index = function(t, id)
-		if id > 0 then
+		if id and id > 0 then
 			local tooltipData = C_TooltipInfo_GetHyperlink(sformat("unit:Creature-0-0-0-0-%d-0000000000",id));
 			if tooltipData then
 				local title = tooltipData.lines[1].leftText;
