@@ -62,8 +62,8 @@ local QUANTUM_GROUP = sharedData({
 		filter(LEATHER, {
 		}),
 		filter(MAIL, {
-			ig(1445),	-- Blackrock Pauldrons				(Removed)
-			ig(3231),	-- Cutthroat Pauldrons				(Removed)
+		--	ig(1445),	-- Blackrock Pauldrons				(Removed)			Added in 10.1.7 to original Source
+		--	ig(3231),	-- Cutthroat Pauldrons				(Removed)			Added in 10.1.7 to original Source
 
 			ig(18320),	-- Demonheart Spaulders				(NYI)
 		}),
@@ -73,8 +73,8 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208064, {	-- Quantum Chestpiece
 		filter(CLOTH, {
-			ig(2114),	-- Snowy Robe						(Removed)
-			ig(3260),	-- Scarlet Initiate Robes			(Removed)
+		--	ig(2114),	-- Snowy Robe						(Removed)			Added in 10.1.7 to original Source
+		--	ig(3260),	-- Scarlet Initiate Robes			(Removed)			Added in 10.1.7 to original Source
 		}),
 		filter(LEATHER, {
 			ig(114251),	-- Bloodthorn Chestguard 			(NYI)
@@ -83,17 +83,17 @@ local QUANTUM_GROUP = sharedData({
 			ig(93049),	-- Mogubreaker Jerkin	 			(NYI)
 			ig(3984),	-- Strapped Armor					(NYI)
 
-			ig(2069),	-- Black Bear Hide Vest 			(Removed)
+		--	ig(2069),	-- Black Bear Hide Vest 			(Removed)			Added in 10.1.7 to original Source
 			ig(134729),	-- Frosthide Tunic 					(Removed)
-			ig(2108),	-- Frostmane Leather Vest			(Removed)(unique)
-			ig(1211),	-- Gnoll War Harness				(Removed)
+		--	ig(2108),	-- Frostmane Leather Vest			(Removed)(unique)	Added in 10.1.7 to original Source
+		--	ig(1211),	-- Gnoll War Harness				(Removed)			Added in 10.1.7 to original Source
 			ig(10781),	-- Hakkari Breastplate 				(Removed)
-			ig(17922),	-- Lionfur Armor 					(Removed)
-			ig(6197),	-- Loch Croc Hide Vest				(Removed)(unique)
-			ig(2112),	-- Lumberjack Jerkin				(Removed)(unique)
+		--	ig(17922),	-- Lionfur Armor 					(Removed)			Added in 10.1.7 to original Source
+		--	ig(6197),	-- Loch Croc Hide Vest				(Removed)(unique)	Added in 10.1.7 to original Source
+		--	ig(2112),	-- Lumberjack Jerkin				(Removed)(unique)	Added in 10.1.7 to original Source
 			ig(134759),	-- Masked Tunic						(Removed)
 			ig(134791),	-- Ruinous Tunic					(Removed)
-			ig(4861),	-- Sleek Feathered Tunic			(Removed)
+		--	ig(4861),	-- Sleek Feathered Tunic			(Removed)			Added in 10.1.7 to original Source
 
 			ig(89481),	-- Hozen-Crafted Jerkin				(Unsorted)
 		}),
@@ -127,10 +127,10 @@ local QUANTUM_GROUP = sharedData({
 			ig(121513),	-- Runesworn Breeches 			(NYI)
 			ig(3982),	-- Strapped Pants 				(NYI)
 
-			ig(3022),	-- Bluegill Breeches 			(Removed)(unique)
-			ig(18611),	-- Gnarlpine Leggings 			(Removed)
+		--	ig(3022),	-- Bluegill Breeches 			(Removed)(unique)	Added in 10.1.7 to original Source
+		--	ig(18611),	-- Gnarlpine Leggings 			(Removed)			Added in 10.1.7 to original Source
 			ig(134760),	-- Masked Leggings 				(Removed)
-			ig(2233),	-- Shadow Weaver Leggings 		(Removed)
+		--	ig(2233),	-- Shadow Weaver Leggings 		(Removed)			Added in 10.1.7 to original Source
 
 			ig(89478),	-- Hozen-Crafted Britches 		(Unsorted)
 		}),
@@ -149,7 +149,7 @@ local QUANTUM_GROUP = sharedData({
 	i(208119, {	-- Quantum Firearm
 	}),
 	i(208125, {	-- Quantum Focus
-		ig(5183),	-- Pulsating Hydra Heart			(Removed)
+	--	ig(5183),	-- Pulsating Hydra Heart			(Removed)			Added in 10.1.7 to original Source
 	}),
 	i(208113, {	-- Quantum Greataxe		(Two-Handed)
 		ig(39769),	-- Arcanite Ripper					(BMAH)
@@ -164,11 +164,11 @@ local QUANTUM_GROUP = sharedData({
 		ig(134577),	-- Vanguard Decapitator				(NYI)
 
 	--	ig(2015),	-- Black Metal War Axe				(Removed)			Added in 10.1.7 to original Source
-		ig(2227),	-- Heavy Ogre War Axe 				(Removed)
-		ig(1220),	-- Lupine Axe						(Removed)
+	--	ig(2227),	-- Heavy Ogre War Axe 				(Removed)			Added in 10.1.7 to original Source
+	--	ig(1220),	-- Lupine Axe						(Removed)			Added in 10.1.7 to original Source
 	--	ig(2823),	-- Mo'grosh Can Opener 				(Removed)			Added in 10.1.7 to original Source
 	--	ig(5749),	-- Scythe Axe 						(Removed)(Unique)	Added in 10.1.7 to original Source
-		ig(756),	-- Tunnel Pick 						(Removed)
+	--	ig(756),	-- Tunnel Pick 						(Removed)			Added in 10.1.7 to original Source
 	--	ig(3325),	-- Vile Fin Battle Axe				(Removed)			Added in 10.1.7 to original Source
 		ig(5194),	-- Taskmaster Axe					(Removed)(Unique)(Dungeon)
 		ig(23171),	-- The Axe of Severing				(Removed)
@@ -185,13 +185,13 @@ local QUANTUM_GROUP = sharedData({
 		ig(134746),	-- Covert Greatsword 				(NYI)
 		ig(134606),	-- Scorching Greatsword 			(NYI)
 
-		ig(2014),	-- Black Metal Greatsword 			(Removed)(Unique)
+	--	ig(2014),	-- Black Metal Greatsword 			(Removed)(Unique)	Added in 10.1.7 to original Source
 	--	ig(2204),	-- Brashclaws Skewer 				(Removed)(Unique)	Added in 10.1.7 to original Source
 	--	ig(3188),	-- Coral Claymore 					(Removed)			Added in 10.1.7 to original Source
 	--	ig(2084),	-- Darksteel Bastard Sword 			(Removed)			Added in 10.1.7 to original Source
 	--	ig(1387),	-- Ghoulfang						(Removed)			Added in 10.1.7 to original Source
 	--	ig(16039),	-- Ta'Kierthan Songblade			(Removed)			Added in 10.1.7 to original Source
-		ig(2754),	-- Tarnished Bastard Sword			(Removed)(Unique)
+	--	ig(2754),	-- Tarnished Bastard Sword			(Removed)(Unique)	Added in 10.1.7 to original Source
 	}),
 	i(208120, {	-- Quantum Knife
 	}),
@@ -213,15 +213,15 @@ local QUANTUM_GROUP = sharedData({
 		ig(6679),	-- Armor Piercer					(Removed)
 		ig(134721),	-- Cold-Touched Staff 				(Removed)
 		ig(1388),	-- Crooked Staff					(Removed)
-		ig(2013),	-- Cryptbone Staff 					(Removed)
+	--	ig(2013),	-- Cryptbone Staff 					(Removed)			Added in 10.1.7 to original Source
 	--	ig(1928),	-- Defias Mage Staff 				(Removed)(Unique)	Added in 10.1.7 to original Source
 	--	ig(7094),	-- Driftwood Branch					(Removed)			Added in 10.1.7 to original Source
 		ig(1539),	-- Gnarled hermit's staff			(Removed)(Unique)
 		ig(2280),	-- Kam's Walking Stick				(Removed)
-		ig(1300),	-- Lesser Staff of the Spire Staff 	(Removed)(Unique)
+	--	ig(1300),	-- Lesser Staff of the Spire Staff 	(Removed)(Unique)	Added in 10.1.7 to original Source
 	--	ig(3227),	-- Nightbane Staff 					(Removed)(Unique)	Added in 10.1.7 to original Source
-		ig(2226),	-- Ogremage Staff 					(Removed)(Unique)
-		ig(1473),	-- Riverside Staff					(Removed)
+	--	ig(2226),	-- Ogremage Staff 					(Removed)(Unique)	Added in 10.1.7 to original Source
+	--	ig(1473),	-- Riverside Staff					(Removed)			Added in 10.1.7 to original Source
 	--	ig(880),	-- Staff of Horrors					(Removed)			Added in 10.1.7 to original Source
 	}),
 	i(208109, {	-- Quantum Sword		(One-Handed)
