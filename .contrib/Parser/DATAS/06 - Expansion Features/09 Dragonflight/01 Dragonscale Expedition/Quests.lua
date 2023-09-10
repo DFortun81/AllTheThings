@@ -195,6 +195,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["minReputation"] = { 2507, 9 },	-- Dragonscale Expedition Renown 9
 				["provider"] = { "n", 189226 },	-- Cataloger Jakes
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				-- technically not accurate, but no other way to lock this properly for first character
+				["lockCriteria"] = { 1, "questID", 72037 },	-- Dragon Isles Supplies [Renown 11]
+				-- TODO: test Party Sync, add DisablePartySync if needed
 				["g"] = {
 					i(198863),	-- Small Dragon Expedition Supply Pack
 				},
@@ -204,6 +207,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["minReputation"] = { 2507, 10 },	-- Dragonscale Expedition Renown 10
 				["provider"] = { "n", 189226 },	-- Cataloger Jakes
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+				-- technically not accurate, but no other way to lock this properly for first character
+				["lockCriteria"] = { 1, "questID", 72037 },	-- Dragon Isles Supplies [Renown 11]
+				-- TODO: test Party Sync, add DisablePartySync if needed
 				["g"] = {
 					i(198863),	-- Small Dragon Expedition Supply Pack
 				},

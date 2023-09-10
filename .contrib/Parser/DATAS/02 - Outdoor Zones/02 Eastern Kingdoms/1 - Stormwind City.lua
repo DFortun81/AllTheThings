@@ -2921,9 +2921,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 25,
 				}),
 				q(62250, {	-- A New Adventure Awaits
-					["description"] = "This quest is automatically offered upon reaching the specified level.",
+					["description"] = "This quest is automatically offered upon reaching the specified level while in Chromie Time.",
 					["timeline"] = { "created 9.0.2", ADDED_10_0_2 },
 					["races"] = ALLIANCE_ONLY,
+					["lockCriteria"] = { 1, "lvl", 61 },	-- either level or some HQT probably locks this... good luck
 				}),
 				q(47202, {	-- A Personal Message
 					["qg"] = 119357,	-- Anduin Wrynn

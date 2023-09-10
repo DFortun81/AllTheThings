@@ -178,6 +178,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 193015 },	-- Unatos
 					["coord"] = { 58.1, 35.2, VALDRAKKEN },
 					["DisablePartySync"] = true,
+					 -- technically not accurate, but no other way to lock this properly for first character
+					["lockCriteria"] = { 1, "questID", 72688 },	-- Renown Supplies [Renown 12]
 					["g"] = {
 						i(198868),	-- Small Valdrakken Accord Supply Pack
 					},
@@ -804,6 +806,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(72697, {	-- Renown Supplies
 					["provider"] = { "n", 193015 },	-- Unatos
 					["coord"] = { 58.1, 35.2, VALDRAKKEN },
+					 -- technically not accurate, but no other way to lock this properly for first character
+					["lockCriteria"] = { 1, "questID", 72698 },	-- Renown Supplies [Renown 25]
 					["DisablePartySync"] = true,
 					["g"] = {
 						i(198869),	-- Large Valdrakken Accord Supply Pack
@@ -975,6 +979,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDE
 		q(72758),	-- triggered with 'Like Mother, Like Daughter' (questID 66402) (spellID 397081)
 		q(72439, {	-- triggered when you accept 'Silver Mettle' (questID 72440) (spellID 412509)
 			["timeline"] = { ADDED_10_1_0 },
+			["repeatable"] = true,
 		}),
 
 		-- Ensembles

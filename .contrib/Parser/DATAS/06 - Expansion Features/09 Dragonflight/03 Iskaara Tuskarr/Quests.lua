@@ -98,6 +98,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(72875, {	-- Dragon Isles Supplies
 					["provider"] = { "n", 193006 },	-- Murik
 					["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+					-- technically not accurate, but no other way to lock this properly for first character
+					["lockCriteria"] = { 1, "questID", 72387 },	-- Dragon Isles Supplies [Renown 6]
 					["DisablePartySync"] = true,
 					["g"] = {
 						i(198866),	-- Small Iskaaran Supply Pack
@@ -145,6 +147,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(72389, {	-- Dragon Isles Supplies
 					["provider"] = { "n", 193006 },	-- Murik
 					["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+					-- technically not accurate, but no other way to lock this properly for first character
+					["lockCriteria"] = { 1, "questID", 72390 },	-- Dragon Isles Supplies [Renown 9]
 					["DisablePartySync"] = true,
 					["g"] = {
 						i(198866),	-- Small Iskaaran Supply Pack
@@ -270,6 +274,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(72392, {	-- Dragon Isles Supplies
 					["provider"] = { "n", 193006 },	-- Murik
 					["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+					-- technically not accurate, but no other way to lock this properly for first character
+					["lockCriteria"] = { 1, "questID", 72393 },	-- Dragon Isles Supplies [Renown 12]
 					["DisablePartySync"] = true,
 					["g"] = {
 						i(198866),	-- Small Iskaaran Supply Pack
@@ -399,6 +405,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(72632, {	-- Dragon Isles Supplies
 					["provider"] = { "n", 193006 },	-- Murik
 					["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+					["lockCriteria"] = { 1, "questID", 70967 },	-- Fishy Entertainment [Renown 17]
 					["g"] = {
 						i(198867),	-- Large Iskaaran Supply Pack
 					},
@@ -407,6 +414,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(72633, {	-- Dragon Isles Supplies
 					["provider"] = { "n", 193006 },	-- Murik
 					["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+					-- technically not accurate, but no other way to lock this properly for first character
+					["lockCriteria"] = { 1,
+						"questID", 70956,	-- Of Azure Scales [Renown 19]
+						"questID", 72634,	-- Dragon Isles Supplies [Renown 19]
+					},
 					["DisablePartySync"] = true,
 					["g"] = {
 						i(198867),	-- Large Iskaaran Supply Pack
@@ -416,6 +428,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(70956, {	-- Of Azure Scales
 					["provider"] = { "n", 196544 },	-- Norukk
 					["coord"] = { 12.9, 48.6, THE_AZURE_SPAN },
+					-- TODO: this has some source quest? otherwise 72634 is offerred instead
+					["altQuests"] = { 72634 },	-- Dragon Isles Supplies [Renown 19]
 					["g"] = {
 						i(197390),	-- Renewed Proto-Drake: Blue Scales (DM!)
 						i(197612),	-- Windborne Velocidrake: Blue Scales (DM!)
@@ -428,6 +442,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(72634, {	-- Dragon Isles Supplies
 					["provider"] = { "n", 193006 },	-- Murik
 					["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+					["altQuests"] = { 70956 },	-- Of Azure Scales [Renown 19]
 					["g"] = {
 						i(198867),	-- Large Iskaaran Supply Pack
 					},
@@ -436,6 +451,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(72635, {	-- Dragon Isles Supplies
 					["provider"] = { "n", 193006 },	-- Murik
 					["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+					-- technically not accurate, but no other way to lock this properly for first character
+					["lockCriteria"] = { 1, "questID", 70968 },	-- Of the Cloth, of the Community [Renown 21]
 					["DisablePartySync"] = true,
 					["g"] = {
 						i(198867),	-- Large Iskaaran Supply Pack
@@ -452,6 +469,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(72636, {	-- Dragon Isles Supplies
 					["provider"] = { "n", 193006 },	-- Murik
 					["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
+					-- technically not accurate, but no other way to lock this properly for first character
+					["lockCriteria"] = { 1, "questID", 70964 },	-- Shrug it On! [Renown 22]
 					["DisablePartySync"] = true,
 					["g"] = {
 						i(198867),	-- Large Iskaaran Supply Pack
