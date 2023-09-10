@@ -2872,6 +2872,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(3429, {	-- Guardsman Belt
 							["timeline"] = { "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["isLimited"] = true,
 						}),
 						i(4832, {	-- Mystic Sarong
 							["isLimited"] = true,
