@@ -120,7 +120,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75335,	-- Old QuestID: 75558
 				["g"] = {
 					bo(75336, true),
-					i(205796),	-- Molten Lava Pack (TOY!)
+					i(205796, {	-- Molten Lava Pack (TOY!)
+						["description"] = "This toy is bugged for some accounts and simply does not drop. Nobody knows why.",
+					}),
 					i(203328),	-- Winding Slitherdrake: White Horns (DM!)
 					i(205297),	-- Flamewielder's Trousers
 					i(205329),	-- Loop of Burning Invocation

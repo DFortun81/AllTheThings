@@ -2315,25 +2315,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						10663,	-- Manaclaw
 						10664,	-- Scryer
 					},
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
-					["coords"] = {
-						{ 23.4, 35.4, WINTERSPRING },
-						{ 25.4, 35.4, WINTERSPRING },
-					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, WINTERSPRING },
-						{ 17.8, 33.4, WINTERSPRING },
-						{ 19.8, 46.8, WINTERSPRING },
-					},
-					-- #endif
-					--]]
+				}),
+				i(4191, {	-- Owlbeast Leggings
+					["description"] = "If you loot this item, please let us know which mobs dropped it.",
+					["timeline"] = { "added 10.1.7" },	-- ATT Discord 10.09.2023
 				}),
 				i(15761, {	-- Pattern: Frostsaber Gloves (RECIPE!)
 					["cr"] = 7441,	-- Winterfall Totemic
