@@ -634,8 +634,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 					{"i",209055,1},	-- Third Booster Part
 				},
 			}),
-			n(210398, {	-- Smogswog the Firebreather
+			n(210398, {	-- Enigma Ward
 				["description"] = "Requries 3 people with Torch of Pyrreth to summon.",
+				["questID"] = 78098,
 				["coord"] = { 58.9, 78.1, THE_CAPE_OF_STRANGLETHORN },
 				["g"] = {
 					i(208984),	-- First Booster Part
