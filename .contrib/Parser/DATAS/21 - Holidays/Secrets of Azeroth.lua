@@ -123,9 +123,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			-- crit(60860, {	-- A Curious Orb
 			-- 	["_quests"] = {  },
 			-- }),
-			-- crit(60861, {	-- Under Suspicion
-			-- 	["_quests"] = {  },
-			-- }),
+			crit(60861, {	-- Under Suspicion
+				["_quests"] = { 77934 },
+			}),
 			-- crit(60862, {	-- The Race
 			-- 	["_quests"] = {  },
 			-- }),
@@ -695,10 +695,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			["provider"] = { "i", 208889 },
 			["description"] = "Quest takes place in Old Karazhan Raid",
 			["sourceQuest"] = 77897,	-- A Key Story
-
 		}),
 		-- Day 12 --
-
+		q(77928, {	-- They Are Always Listening
+			["qg"] = 207696,	-- Bobby Carlisle
+			["coord"] = { 47.9, 46.8, VALDRAKKEN },
+			["groups"] = {
+				i(208929),	-- Great Places to Visit in Valdrakken (QI!)
+				i(208936),	-- Compiled Report
+			},
+		}),
+		q(77934, {	-- A Complete Inventory
+			["provider"] = { "i", 208936 },
+			["description"] = "Use your torch to help locate the report.",
+			["sourceQuest"] = 77928,	-- They Are Always Listening
+			["coord"] = { 44.1, 60.2, VALDRAKKEN },
+		}),
 		-- Day 13 --
 
 		-- Day 14 --
@@ -800,8 +812,11 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(77307),	-- Community Rumors (Achievement 18643)
 	q(78152),	-- Community Rumor Mill (Achievement 18644)
 	q(77895),	-- Completed at same time as receiving (itemdID 208888)
-	q(77579),	-- Upon completion of (Quest 77908)
+	q(77579),	-- Upon completion of (QuestID 77908)
 	q(78050),	-- Ancient Tomb (Karazhan 31.8, 49.9) Guardians Library -- Updates Item 208888
 	q(78051),	-- Ancient Tomb (Karazhan 36.2, 37.4) Guardians Library
 	q(78052),	-- Ancient Tomb (Karazhan 47.2, 64.4) Guardians Library
+	q(77916),	-- Upon completion of (QuestID 77928 and getting the QI!)
+	q(78053),	-- Upon picking up (itemID 208936 triggering QuestID 77934)
+	q(77580),	-- Upon completion of (QuestID 77934)
 })))
