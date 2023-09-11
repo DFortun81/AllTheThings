@@ -588,7 +588,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		}),
 		q(77831, {	-- A Key To Reforg(ing)
 			["qg"] = 210837,	-- Weaponsmith Koref
-			["sourceQuest"] = 77829,	-- Reforging a Legend
+			--["sourceQuest"] = 77829,	-- Reforging a Legend
 			["coord"] = { 24.5, 60.7, THE_WAKING_SHORES },
 			["cost"] = {
 				{"i",208835,50},	-- Rose Gold Dust (QI)
@@ -678,7 +678,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			["groups"]	= {
 				o(408980, {
 					["description"] = "There are three clues inside the Guardian's Library. Pull out your thinking cap to find all three and the final object.",
-					["g"] = i(208889),
+					["g"] = {
+						i(208889),	--Tyr's Legacy
+					},
 				}),
 			},
 		}),
