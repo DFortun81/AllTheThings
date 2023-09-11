@@ -36,6 +36,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 				77294,	-- Loose Dirt Mound
 				77297,	-- Loose Dirt Mound
 				77298,	-- Loose Dirt Mound
+				77299,	-- Loose Dirt Mound
+				78208,	-- Loose Dirt Mound
 			}},
 			["groups"] = {
 				i(208151),	-- Tobias (PET!)
@@ -53,6 +55,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 				77294,	-- Loose Dirt Mound
 				77297,	-- Loose Dirt Mound
 				77298,	-- Loose Dirt Mound
+				77299,	-- Loose Dirt Mound
+				78208,	-- Loose Dirt Mound
 			}},
 			["groups"] = {
 				i(208150),	-- Blue Tweed Cap
@@ -190,6 +194,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			["questID"] = 77299,
 			["coord"] = { 57.8, 26.3, NAGRAND },
 			["description"] = "Look to the island floating in the air.",
+		}),
+		o(410181, {	-- Loose Dirt Mound
+			["questID"] = 78208,
+			["coord"] = { 53.3, 87.4, HIGHMOUNTAIN },
 		}),
 	})),
 	n(QUESTS, {
@@ -777,9 +785,8 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(77307),	-- Community Rumors (Achievement 18643)
 	q(78152),	-- Community Rumor Mill (Achievement 18644)
 	q(77895),	-- Completed at same time as receiving (itemdID 208888)
-	q(78050),	-- Upon reading "Ancient Tome" inside the Karazan Library -- Updates Item 208888
 	q(77579),	-- Upon completion of (Quest 77908)
-	q(78050),	-- Ancient Tomb (Karazhan 31.8, 49.9) Guardians Library
+	q(78050),	-- Ancient Tomb (Karazhan 31.8, 49.9) Guardians Library -- Updates Item 208888
 	q(78051),	-- Ancient Tomb (Karazhan 36.2, 37.4) Guardians Library
 	q(78052),	-- Ancient Tomb (Karazhan 47.2, 64.4) Guardians Library
 })))

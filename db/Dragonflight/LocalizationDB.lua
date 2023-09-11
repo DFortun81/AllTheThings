@@ -5542,6 +5542,7 @@ _.ObjectNames = {
 	[408860] = "Mimiron's Booster Part",
 	[408980] = "Tyr's Legacy",
 	[409914] = "Mimiron's Booster Part",
+	[410181] = "Loose Dirt Mound",
 	[9000000] = "Wind Sculpted Stone",
 	[9000001] = "Ancient Incense Brazier",
 	[9000002] = "Ancient Incense Brazier",
@@ -9807,6 +9808,7 @@ _.ObjectModels = {
 	[408754] = 84854,
 	[408860] = 84489,
 	[409914] = 84489,
+	[410181] = 189528,
 }
 
 -- Supported Locales
@@ -12933,6 +12935,7 @@ localize(_.ObjectNames, {
 	[405535] = "Lockerer Erdhaufen",
 	[405537] = "Lockerer Erdhaufen",
 	[405538] = "Lockerer Erdhaufen",
+	[410181] = "Lockerer Erdhaufen",
 	[9999908] = "|cFFFFFFFFSchritt 1:|r Gather Consumables.",
 	[9999909] = "|cFFFFFFFFSchritt 2:|r Caverns of Consumption",
 	[9999910] = "|cFFFFFFFFSchritt 3:|r Fire Barrier",
@@ -31363,6 +31366,7 @@ localize(_.ObjectNames, {
 	[405531] = "Куча рыхлой земли",
 	[405532] = "Куча рыхлой земли",
 	[405535] = "Куча рыхлой земли",
+	[410181] = "Куча рыхлой земли",
 	[9999890] = "Оскверненная добыча",
 	[9999891] = "Только Основная Задача",
 	[9999892] = "Основная Задача + 2 Дополнительных Зоны",
