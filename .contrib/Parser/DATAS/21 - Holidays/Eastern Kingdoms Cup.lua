@@ -4,7 +4,7 @@
 EASTERN_KINGDOMS_CUP_HEADER = createHeader({
 	readable = "Eastern Kingdoms Cup",
 	constant = "EASTERN_KINGDOMS_CUP_HEADER",
-	icon = "Interface\\Icons\\misc_arrowrightcalendar_easternkingdomscupstart",
+	icon = [[~_.asset("Holiday_KalCup")]],
 	eventID = EVENTS.EASTERN_KINGDOMS_CUP,
 	text = {
 		en = "Eastern Kingdoms Cup",
