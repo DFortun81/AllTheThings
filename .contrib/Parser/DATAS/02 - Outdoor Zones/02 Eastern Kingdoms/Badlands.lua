@@ -1925,7 +1925,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["crs"] = {
 						46928,	-- Dustbelcher Butcher
 						46929,	-- Dustbelcher Merchant
-						4844,	-- Shadowforge Surveyor
 					},
 					-- #endif
 				}),

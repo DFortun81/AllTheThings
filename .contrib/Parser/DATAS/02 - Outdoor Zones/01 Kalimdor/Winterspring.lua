@@ -2022,6 +2022,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(50788, {	-- Quetzl
 					["coord"] = { 67.0, 83.6, WINTERSPRING },
 					["timeline"] = { "added 5.1.0.16309" },
+					["groups"] = {
+						i(4191, {	-- Owlbeast Leggings
+							["timeline"] = { "added 10.1.7" },	-- ATT Discord 10.09.2023
+						}),
+					},
 				}),
 				n(10200, {	-- Rak'shiri
 					-- #if AFTER CATA
@@ -2315,10 +2320,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						10663,	-- Manaclaw
 						10664,	-- Scryer
 					},
-				}),
-				i(4191, {	-- Owlbeast Leggings
-					["description"] = "If you loot this item, please let us know which mobs dropped it.",
-					["timeline"] = { "added 10.1.7" },	-- ATT Discord 10.09.2023
 				}),
 				i(15761, {	-- Pattern: Frostsaber Gloves (RECIPE!)
 					["cr"] = 7441,	-- Winterfall Totemic

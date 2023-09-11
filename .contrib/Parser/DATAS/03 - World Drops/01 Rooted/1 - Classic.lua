@@ -2054,10 +2054,6 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(15524),	-- Sentry's Surcoat
 		i(12982),	-- Silver-Linked Footguards [CATA+] / Silver-linked Footguards
 		i(13132),	-- Skeletal Shoulders
-		i(120952, {	-- Slarkhide
-			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
-			["timeline"] = { "added 6.1.0.19445", "removed 7.0.1" },
-		}),
 		i(14750),	-- Slayer's Cuffs
 		i(14754),	-- Slayer's Gloves
 		i(14757),	-- Slayer's Pants

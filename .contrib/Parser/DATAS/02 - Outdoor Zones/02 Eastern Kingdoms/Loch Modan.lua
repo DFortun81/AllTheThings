@@ -1811,12 +1811,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(2821, {	-- Mo'grosh Masher
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 05.09.2023 ATT Discord
 					["crs"] = {
 						14267,  -- Emogg the Crusher
 						1179,  -- Mo'grosh Enforcer
 					},
 					-- #if BEFORE 4.0.3
+					["coords"] = {
+						{ 74.2, 28.4, LOCH_MODAN },
+						{ 69.4, 22.2, LOCH_MODAN },
+						{ 64.4, 20.6, LOCH_MODAN },
+					},
+					["cr"] = 44758,	-- Mo'grosh Darkmauler
 					["coords"] = {
 						{ 74.2, 28.4, LOCH_MODAN },
 						{ 69.4, 22.2, LOCH_MODAN },

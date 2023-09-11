@@ -623,13 +623,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(3261, {	-- Webbed Cloak
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-							-- #if AFTER CATA
-							["coord"] = { 17.4, 26.4, DEATHKNELL },
-							["cr"] = 1505,	-- Night Web Spider
-							-- #else
-							["coord"] = { 23.8, 58.4, TIRISFAL_GLADES },
-							["cr"] = 1688,	-- Night Web Matriarch
-							-- #endif
+							["coords"] = { 
+								{ 23.8, 58.4, TIRISFAL_GLADES },
+								{ 86.2, 53.4, TIRISFAL_GLADES },
+							},
+							["crs"] = {
+								1688,	-- Night Web Matriarch
+								1555,	-- Vicious Night Web Spiders 
+							},
 						}),
 						i(3263, {	-- Webbed Pants
 							["timeline"] = { "removed 4.0.3" },

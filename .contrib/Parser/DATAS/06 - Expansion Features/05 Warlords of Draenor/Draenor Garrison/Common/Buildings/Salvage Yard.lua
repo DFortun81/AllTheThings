@@ -82,6 +82,10 @@ root(ROOTS.ExpansionFeatures,
 							i(36589),	-- Segmenting Broadaxe
 							i(36491),	-- Serrated Maul
 							i(36659),	-- Shivery Wand
+							i(120952, {	-- Slarkhide
+							--	["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
+								["timeline"] = { "added 6.1.0.19445", "removed 7.0.1" },
+							}),
 							i(55316),	-- Sorrowmurk Cloak
 							i(55379),	-- Sorrowmurk Crystal
 							i(55370),	-- Sorrowmurk Scepter

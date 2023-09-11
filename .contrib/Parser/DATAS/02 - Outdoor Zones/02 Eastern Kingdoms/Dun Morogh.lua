@@ -2464,7 +2464,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(1260, {	-- Great Father Arctikus
 					-- #if AFTER CATA
-					["coord"] = { 29.8, 67.8, NEW_TINKERTOWN },
+					["coords"] = { 
+						{ 29.8, 67.8, NEW_TINKERTOWN },
+						{ 49.07, 37.12, DUN_MOROGH },
+					},
 					-- #else
 					["coords"] = {
 						{ 23.8, 53.4, DUN_MOROGH },
