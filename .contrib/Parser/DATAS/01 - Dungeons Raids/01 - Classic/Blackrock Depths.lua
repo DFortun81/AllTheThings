@@ -2765,8 +2765,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["groups"] = {
 						i(11744),	-- Bloodfist
 						i(11743, {	-- Rockfist
-							["description"] = "We're actually not sure which patch this was removed.",
-							["timeline"] = { "removed 2.0.1" },
+						--	["description"] = "We're actually not sure which patch this was removed.",
+							["timeline"] = { "removed 2.0.1", "added 10.1.7" },
 						}),
 						-- #if BEFORE 7.3.2
 						i(11746),	-- Golem Skull Helm
