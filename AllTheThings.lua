@@ -17582,54 +17582,49 @@ end;
 customWindowUpdates["Bounty"] = function(self, force, got)
 	if not self.initialized then
 		self.initialized = true;
-		self:SetData({
-			['text'] = L["BOUNTY"],
+		local autoOpen = app.CreateToggle("openAuto", {
+			["text"] = L["OPEN_AUTOMATICALLY"],
+			["icon"] = "Interface\\Icons\\INV_Misc_Note_01",
+			["description"] = L["OPEN_AUTOMATICALLY_DESC"],
+			["visible"] = true,
+			["OnUpdate"] = app.AlwaysShowUpdate,
+			["OnClickHandler"] = function(toggle)
+				app.Settings:SetTooltipSetting("Auto:BountyList", toggle);
+				self:BaseUpdate(true, got);
+			end,
+		});
+		local header = app.CreateNPC(-243, {	-- Bounty
 			['icon'] = "Interface\\Icons\\INV_BountyHunting.blp",
 			["description"] = L["BOUNTY_DESC"],
 			['visible'] = true,
-			['indent'] = 0,
-			['g'] = {
-				{
-					['text'] = L["OPEN_AUTOMATICALLY"],
-					['icon'] = "Interface\\Icons\\INV_Misc_Note_01",
-					['description'] = L["OPEN_AUTOMATICALLY_DESC"],
-					['visible'] = true,
-					['OnUpdate'] = app.AlwaysShowUpdate,
-					['OnClick'] = function(row, button)
-						if app.Settings:GetTooltipSetting("Auto:BountyList") then
-							app.Settings:SetTooltipSetting("Auto:BountyList", false);
-							row.ref.saved = false;
-							self:BaseUpdate(true, got);
-						else
-							app.Settings:SetTooltipSetting("Auto:BountyList", true);
-							row.ref.saved = true;
-							self:BaseUpdate(true, got);
-						end
-						return true;
-					end,
-				},
-				app.CreateNPC(app.HeaderConstants.WORLD_QUESTS, {
-					['description'] = L["TWO_CLOAKS"],
-					['g'] = {
-						app.CreateItemSource(102106, 165685),	-- House of Nobles Cape
-						app.CreateItemSource(102105, 165684),	-- Gurubashi Empire Greatcloak
-					},
-				}),
-				app.CreateNPC(app.HeaderConstants.RARES, {
-					app.CreateNPC(87622, {	-- Ogom the Mangler
-						['description'] = L["OGOM_THE_MANGLER_DESC"],
-						['g'] = {
-							app.CreateItemSource(67041, 119366),
-						},
-					}),
-				}),
+			["g"] = {
+				autoOpen,
 			},
 		});
+		-- add bounty content
+		NestObjects(header, {
+			app.CreateNPC(app.HeaderConstants.WORLD_QUESTS, {
+				['description'] = L["TWO_CLOAKS"],
+				['g'] = {
+					app.CreateItemSource(102106, 165685),	-- House of Nobles Cape
+					app.CreateItemSource(102105, 165684),	-- Gurubashi Empire Greatcloak
+				},
+			}),
+			app.CreateNPC(app.HeaderConstants.RARES, {
+				app.CreateNPC(87622, {	-- Ogom the Mangler
+					['description'] = L["OGOM_THE_MANGLER_DESC"],
+					['g'] = {
+						app.CreateItemSource(67041, 119366),
+					},
+				}),
+			}),
+		});
+		self:SetData(header);
 		BuildGroups(self.data);
 		self.rawData = {};
 		local function RefreshBounties()
 			if #self.data.g > 1 and app.Settings:GetTooltipSetting("Auto:BountyList") then
-				self.data.g[1].saved = true;
+				autoOpen.saved = true;
 				self:SetVisible(true);
 			end
 		end
@@ -17643,11 +17638,7 @@ customWindowUpdates["Bounty"] = function(self, force, got)
 	end
 	if self:IsVisible() then
 		-- Update the window and all of its row data
-		self.data.progress = 0;
-		self.data.total = 0;
 		self.data.back = 1;
-		self.data.indent = 0;
-		self.data.visible = true;
 		self:BaseUpdate(true, got);
 	end
 end;
@@ -22190,7 +22181,6 @@ end
 	-- Turns a bit of text into a colored link which ATT will attempt to understand
 	function app:Linkify(text, color, operation)
 		text = "|Haddon:ATT:"..operation.."|h|c"..color.."["..text.."]|r|h";
-		-- print("Linkify",text)
 		return text;
 	end
 	-- Turns a bit of text into a chat-sendable link which other ATT users will attempt to understand
