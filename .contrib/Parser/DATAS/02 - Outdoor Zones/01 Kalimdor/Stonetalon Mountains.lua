@@ -1985,6 +1985,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 				n(4015, {	-- Pridewing Patriarch
+					["description"] = "Can spawn after killing any Pridewing Wyverns.",
 					-- #if AFTER CATA
 					["coord"] = { 55.6, 44.8, STONETALON_MOUNTAINS },
 					-- #else
@@ -2001,7 +2002,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
 						}),
 						i(5752, {	-- Wyvern Tailspike
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 11.09.2023
 						}),
 					},
 				}),
