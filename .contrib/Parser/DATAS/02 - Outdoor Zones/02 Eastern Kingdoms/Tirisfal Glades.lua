@@ -2326,7 +2326,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 79.4, 26.0, TIRISFAL_GLADES },
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },
 					["cr"] = 1665,	-- Captain Melrache
-					["description"] = "The NPC dropping this is friendly to the alliance.",
+				--	["description"] = "The NPC dropping this is friendly to the alliance.",
+				--	Maybe only friendly in classic.
 				}),
 				i(3332, {	-- Perrine's Boots
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
