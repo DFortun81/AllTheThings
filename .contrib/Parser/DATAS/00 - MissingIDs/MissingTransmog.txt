@@ -56276,61 +56276,12 @@ s(89243)/i(151026),	--
 s(89384)/i(151335),	--
 s(89484)/i(151606),	--
 s(89628)/i(151716),	--
-s(90628)/i(152802),	-- Monel-Hardened Breastplate \\ Mariner's Breastplate
-s(90629)/i(152803),	-- Monel-Hardened Boots \\ Mariner's Boots
-s(90630)/i(152804),	-- Monel-Hardened Gauntlets \\ Mariner's Gauntlets
-s(90631)/i(152805),	-- Monel-Hardened Helm \\ Mariner's Helm
-s(90632)/i(152806),	-- Monel-Hardened Greaves \\ Mariner's Greaves
-s(90633)/i(152807),	-- Monel-Hardened Pauldrons \\ Mariner's Pauldrons
-s(90634)/i(152808),	-- Monel-Hardened Waistguard \\ Mariner's Waistguard
-s(90635)/i(152809),	-- Monel-Hardened Armguards \\ Mariner's Armguards
-s(90636)/i(152810),	-- Stormsteel Legguards
-s(90637)/i(152811),	-- Stormsteel Girdle
-s(90638)/i(152818),	-- Monel-Hardened Shield \\ Monel-Hardened Aegis \\ Mariner's Aegis
-s(90639)/i(152818),	-- Monel-Hardened Shield \\ Monel-Hardened Aegis \\ Mariner's Aegis
-s(90640)/i(152818),	-- Monel-Hardened Shield \\ Monel-Hardened Aegis \\ Mariner's Aegis
-s(90641)/i(152819),	-- Stormsteel Shield \\ Neptulon's Barrier
-s(90642)/i(152819),	-- Stormsteel Shield \\ Neptulon's Barrier
-s(90643)/i(152819),	-- Stormsteel Shield \\ Neptulon's Barrier
-s(90644)/i(152822),	-- Monel-Hardened Hatchet \\ Mariner's Hatchet
-s(90645)/i(152822),	-- Monel-Hardened Hatchet \\ Mariner's Hatchet
-s(90646)/i(152822),	-- Monel-Hardened Hatchet \\ Mariner's Hatchet
-s(90647)/i(152823),	-- Monel-Hardened Battleaxe \\ Mariner's Battleaxe
-s(90648)/i(152823),	-- Monel-Hardened Battleaxe \\ Mariner's Battleaxe
-s(90649)/i(152823),	-- Monel-Hardened Battleaxe \\ Mariner's Battleaxe
-s(90653)/i(152827),	-- Monel-Hardened Cutlass \\ Mariner's Cutlass
-s(90654)/i(152827),	-- Monel-Hardened Cutlass \\ Mariner's Cutlass
-s(90655)/i(152827),	-- Monel-Hardened Cutlass \\ Mariner's Cutlass
-s(90656)/i(152828),	-- Monel-Hardened Claymore \\ Mariner's Claymore
-s(90657)/i(152828),	-- Monel-Hardened Claymore \\ Mariner's Claymore
-s(90658)/i(152828),	-- Monel-Hardened Claymore \\ Mariner's Claymore
 s(90659)/i(152830),	-- Magnetic Discombobulator
 s(90660)/i(152830),	-- Magnetic Discombobulator
 s(90661)/i(152830),	-- Magnetic Discombobulator
-s(90662)/i(152831),	-- Monel-Hardened Deckpounder \\ Mariner's Deckpounder
-s(90663)/i(152831),	-- Monel-Hardened Deckpounder \\ Mariner's Deckpounder
-s(90664)/i(152831),	-- Monel-Hardened Deckpounder \\ Mariner's Deckpounder
-s(90665)/i(152832),	-- Monel-Hardened Shanker \\ Mariner's Shanker
-s(90666)/i(152832),	-- Monel-Hardened Shanker \\ Mariner's Shanker
-s(90667)/i(152832),	-- Monel-Hardened Shanker \\ Mariner's Shanker
-s(90668)/i(152833),	-- Monel-Hardened Polearm \\ Mariner's Polearm
-s(90669)/i(152833),	-- Monel-Hardened Polearm \\ Mariner's Polearm
-s(90670)/i(152833),	-- Monel-Hardened Polearm \\ Mariner's Polearm
-s(90671)/i(152834),	-- Stormsteel Spear
-s(90672)/i(152834),	-- Stormsteel Spear
-s(90673)/i(152834),	-- Stormsteel Spear
-s(90674)/i(152835),	-- Stormsteel Dagger
-s(90675)/i(152835),	-- Stormsteel Dagger
-s(90676)/i(152835),	-- Stormsteel Dagger
-s(90677)/i(152836),	-- Stormsteel Greatsword
-s(90678)/i(152836),	-- Stormsteel Greatsword
-s(90679)/i(152836),	-- Stormsteel Greatsword
 s(90680)/i(152837),	-- Precision Attitude Adjuster
 s(90681)/i(152837),	-- Precision Attitude Adjuster
 s(90682)/i(152837),	-- Precision Attitude Adjuster
-s(90683)/i(152838),	-- Stormsteel Axe
-s(90684)/i(152838),	-- Stormsteel Axe
-s(90685)/i(152838),	-- Stormsteel Axe
 s(90695)/i(152892),	--
 s(90984)/i(153433),	--
 s(90998)/i(153542),	--
@@ -57104,35 +57055,6 @@ s(95883)/i(159401),	-- Nettlebite Mantle \\ 8.0 - PH Dungeon - Mail SHOULDER
 s(95884)/i(159401),	-- Nettlebite Mantle \\ 8.0 - PH Dungeon - Mail SHOULDER
 s(95888)/i(159838),	--
 s(95891)/i(159650),	-- Dismembered Submersible Claw \\ Detached Submersible Claw \\ 8.0 - PH Dungeon - Str 2h Mace
-s(95894)/i(159851),	-- Honorable Combatant's Shield \\ Honorable Combatant's Aegis
-s(95895)/i(159851),	-- Honorable Combatant's Shield \\ Honorable Combatant's Aegis
-s(95896)/i(159851),	-- Honorable Combatant's Shield \\ Honorable Combatant's Aegis
-s(95897)/i(159852),	-- Honorable Combatant's Hatchet
-s(95898)/i(159852),	-- Honorable Combatant's Hatchet
-s(95899)/i(159852),	-- Honorable Combatant's Hatchet
-s(95900)/i(159853),	-- Honorable Combatant's Cutlass
-s(95901)/i(159853),	-- Honorable Combatant's Cutlass
-s(95902)/i(159853),	-- Honorable Combatant's Cutlass
-s(95903)/i(159854),	-- Honorable Combatant's Battleaxe
-s(95904)/i(159854),	-- Honorable Combatant's Battleaxe
-s(95905)/i(159854),	-- Honorable Combatant's Battleaxe
-s(95906)/i(159855),	-- Honorable Combatant's Deckpounder
-s(95907)/i(159855),	-- Honorable Combatant's Deckpounder
-s(95908)/i(159855),	-- Honorable Combatant's Deckpounder
-s(95909)/i(159856),	-- Honorable Combatant's Claymore
-s(95910)/i(159856),	-- Honorable Combatant's Claymore
-s(95911)/i(159856),	-- Honorable Combatant's Claymore
-s(95912)/i(159857),	-- Honorable Combatant's Shanker
-s(95913)/i(159857),	-- Honorable Combatant's Shanker
-s(95914)/i(159857),	-- Honorable Combatant's Shanker
-s(95915)/i(159858),	-- Honorable Combatant's Polearm
-s(95916)/i(159858),	-- Honorable Combatant's Polearm
-s(95917)/i(159858),	-- Honorable Combatant's Polearm
-s(95920)/i(159860),	-- Honorable Combatant's Plate Boots
-s(95922)/i(159861),	-- Honorable Combatant's Plate Gauntlets
-s(95926)/i(159863),	-- Honorable Combatant's Plate Greaves
-s(95930)/i(159865),	-- Honorable Combatant's Plate Waistguard
-s(95932)/i(159866),	-- Honorable Combatant's Plate Armguards
 s(95934)/i(159882),	-- Bug Zapper \\ Stun Gun
 s(95936)/i(159884),	-- Honorable Combatant's Leather Treads
 s(95937)/i(159885),	-- Honorable Combatant's Leather Gauntlets
@@ -57950,40 +57872,9 @@ s(97945)/i(161874),	-- Dread Combatant's Plate Armguards \\ PH Combatant's Plate
 s(97946)/i(161875),	-- Dread Combatant's Chain Armbands \\ PH Combatant's Mail Armbands
 s(97947)/i(161876),	-- Dread Combatant's Leather Bindings \\ PH Combatant's Leather Bindings
 s(97948)/i(161877),	-- Dread Combatant's Silk Cord \\ PH Combatant's Silk Cord
-s(97972)/i(161891),	-- Stormsteel Shield \\ Neptulon's Barrier
-s(97973)/i(161891),	-- Stormsteel Shield \\ Neptulon's Barrier
-s(97974)/i(161891),	-- Stormsteel Shield \\ Neptulon's Barrier
-s(97975)/i(161892),	-- Honorable Combatant's Aegis
-s(97976)/i(161892),	-- Honorable Combatant's Aegis
-s(97977)/i(161892),	-- Honorable Combatant's Aegis
-s(97978)/i(161893),	-- Honorable Combatant's Plate Boots
-s(97980)/i(161894),	-- Honorable Combatant's Plate Gauntlets
-s(97982)/i(161895),	-- Honorable Combatant's Plate Greaves
-s(97984)/i(161896),	-- Honorable Combatant's Plate Waistguard
-s(97986)/i(161897),	-- Honorable Combatant's Plate Armguards
 s(97988)/i(161904),	-- Dread Combatant's Drape \\ PH Combatant's Drape
 s(97989)/i(161905),	-- Dread Combatant's Cape \\ PH Combatant's Cape
-s(98004)/i(161917),	-- Monel-Hardened Polearm
-s(98005)/i(161917),	-- Monel-Hardened Polearm
-s(98006)/i(161917),	-- Monel-Hardened Polearm
-s(98007)/i(161918),	-- Stormsteel Spear
-s(98008)/i(161918),	-- Stormsteel Spear
-s(98009)/i(161918),	-- Stormsteel Spear
-s(98010)/i(161919),	-- Stormsteel Dagger
-s(98011)/i(161919),	-- Stormsteel Dagger
-s(98012)/i(161919),	-- Stormsteel Dagger
-s(98013)/i(161920),	-- Honorable Combatant's Cutlass
-s(98014)/i(161920),	-- Honorable Combatant's Cutlass
-s(98015)/i(161920),	-- Honorable Combatant's Cutlass
-s(98016)/i(161921),	-- Honorable Combatant's Deckpounder
-s(98017)/i(161921),	-- Honorable Combatant's Deckpounder
-s(98018)/i(161921),	-- Honorable Combatant's Deckpounder
-s(98019)/i(161922),	-- Honorable Combatant's Shanker
-s(98020)/i(161922),	-- Honorable Combatant's Shanker
-s(98021)/i(161922),	-- Honorable Combatant's Shanker
-s(98022)/i(161923),	-- Honorable Combatant's Polearm
-s(98023)/i(161923),	-- Honorable Combatant's Polearm
-s(98024)/i(161923),	-- Honorable Combatant's Polearm
+s(98028)/i(161933),	-- Manual of Reverse Wounding
 s(98030)/i(161935),	-- Inked Vessel of Robust Regeneration \\ Tome of Robust Regeneration
 s(98041)/i(161946),	-- Hardened Tempest Boots
 s(98042)/i(161947),	-- Hardened Tempest Leggings
@@ -58749,16 +58640,6 @@ s(99934)/i(161966),	-- Honorable Combatant's Mail Waistguard
 s(99935)/i(161966),	-- Honorable Combatant's Mail Waistguard
 s(99936)/i(161967),	-- Honorable Combatant's Mail Armguards
 s(99937)/i(161967),	-- Honorable Combatant's Mail Armguards
-s(99938)/i(161893),	-- Honorable Combatant's Plate Boots
-s(99939)/i(161893),	-- Honorable Combatant's Plate Boots
-s(99940)/i(161894),	-- Honorable Combatant's Plate Gauntlets
-s(99941)/i(161894),	-- Honorable Combatant's Plate Gauntlets
-s(99942)/i(161895),	-- Honorable Combatant's Plate Greaves
-s(99943)/i(161895),	-- Honorable Combatant's Plate Greaves
-s(99944)/i(161896),	-- Honorable Combatant's Plate Waistguard
-s(99945)/i(161896),	-- Honorable Combatant's Plate Waistguard
-s(99946)/i(161897),	-- Honorable Combatant's Plate Armguards
-s(99947)/i(161897),	-- Honorable Combatant's Plate Armguards
 8.0.1.26734
 s(99952)/i(163831),	--
 s(99953)/i(163832),	--
@@ -58778,16 +58659,6 @@ s(100017)/i(159916),	-- Honorable Combatant's Satin Bracers
 s(100018)/i(159916),	-- Honorable Combatant's Satin Bracers
 s(100019)/i(159917),	-- Honorable Combatant's Satin Cloak
 s(100020)/i(159917),	-- Honorable Combatant's Satin Cloak
-s(100021)/i(159860),	-- Honorable Combatant's Plate Boots
-s(100022)/i(159860),	-- Honorable Combatant's Plate Boots
-s(100023)/i(159861),	-- Honorable Combatant's Plate Gauntlets
-s(100024)/i(159861),	-- Honorable Combatant's Plate Gauntlets
-s(100025)/i(159863),	-- Honorable Combatant's Plate Greaves
-s(100026)/i(159863),	-- Honorable Combatant's Plate Greaves
-s(100027)/i(159865),	-- Honorable Combatant's Plate Waistguard
-s(100028)/i(159865),	-- Honorable Combatant's Plate Waistguard
-s(100029)/i(159866),	-- Honorable Combatant's Plate Armguards
-s(100030)/i(159866),	-- Honorable Combatant's Plate Armguards
 s(100031)/i(159889),	-- Honorable Combatant's Mail Treads
 s(100032)/i(159889),	-- Honorable Combatant's Mail Treads
 s(100033)/i(159890),	-- Honorable Combatant's Mail Gauntlets
