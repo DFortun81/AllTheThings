@@ -27,13 +27,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						crit(1, {	-- Crime Scene Investigation
+						crit(38343, {	-- Crime Scene Investigation
 							["sourceQuest"] = 26270,	-- You Have Our Thanks
 						}),
-						crit(2, {	-- Investigating the Shadows
+						crit(39659, {	-- Investigating the Shadows
 							["sourceQuest"] = 26297,	-- The Dawning of a New Day
 						}),
-						crit(3, {	-- The Defias Brotherhood Reborn
+						crit(38342, {	-- The Defias Brotherhood Reborn
 							["sourceQuest"] = 26370,	-- Return to Sentinel Hill
 						}),
 					},

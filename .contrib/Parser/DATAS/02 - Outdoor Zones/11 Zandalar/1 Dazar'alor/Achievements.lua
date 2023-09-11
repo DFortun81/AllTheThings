@@ -15,28 +15,28 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 40.8, 11.4, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(1, {	-- Boon of Gonk
+					crit(40619, {	-- Boon of Gonk
 						["sourceQuests"] = {
 							47439,	-- Gonk, Lord of the Pack
 							47440,	-- Pa'ku, Master of Winds
 						},
 					}),
-					crit(2, {	-- Boon of Pa'ku
+					crit(40620, {	-- Boon of Pa'ku
 						["sourceQuests"] = {
 							47439,	-- Gonk, Lord of the Pack
 							47440,	-- Pa'ku, Master of Winds
 						},
 					}),
-					crit(3, {	-- Boon of Akunda
+					crit(40621, {	-- Boon of Akunda
 						["sourceQuests"] = { 50913 },	-- Akunda's Blessing
 					}),
-					crit(4, {	-- Boon of Bwonsanmdi
+					crit(40622, {	-- Boon of Bwonsanmdi
 						["sourceQuests"] = { 47249 },	-- Soulbound
 					}),
-					crit(5, {	-- Boon of Kimbul
+					crit(40623, {	-- Boon of Kimbul
 						["sourceQuests"] = { 47578 },	-- Mark of the Loa
 					}),
-					crit(6, {	-- Boon of Krag'wa
+					crit(40624, {	-- Boon of Krag'wa
 						["sourceQuests"] = { 47696 },	-- Krag'wa the Terrible
 					}),
 				},

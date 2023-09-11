@@ -9,15 +9,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(ACHIEVEMENTS, {
 				ach(17343),	-- Drop It Like It's Hot
 				ach(17342, {	-- The Future We Make
-					crit(1, {
+					crit(57965, {
 						-- ["_npcs"] = { 199502 },	-- Glakis, Winter's Wrath
 						["crs"] = { 199502 },	-- Glakis, Winter's Wrath
 					}),
-					crit(2, {
+					crit(57966, {
 						-- ["_npcs"] = { 199667 },	-- Nimbulatus, Storm's Wrath
 						["crs"] = { 199667 },	-- Nimbulatus, Storm's Wrath
 					}),
-					crit(3, {
+					crit(57967, {
 						-- ["_npcs"] = { 200439 },	-- Seismodor, Earth's Wrath
 						["crs"] = { 200439 },	-- Seismodor, Earth's Wrath
 					}),

@@ -22,13 +22,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						crit(1, {	-- The Gnoll Offensive
+						crit(38367, {	-- The Gnoll Offensive
 							["sourceQuest"] = 26545,	-- Yowler Must Die!
 						}),
-						crit(2, {	-- Keeshan's Raiders
+						crit(38368, {	-- Keeshan's Raiders
 							["sourceQuest"] = 26607,	-- They Drew First Blood
 						}),
-						crit(3, {	-- First Blood
+						crit(38369, {	-- First Blood
 							["sourceQuest"] = 26726,	-- Triumphant Return
 						}),
 					},

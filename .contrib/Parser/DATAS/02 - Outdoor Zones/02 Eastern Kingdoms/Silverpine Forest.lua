@@ -18,22 +18,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						crit(1, {	-- Forsaken High Command
+						crit(38361, {	-- Forsaken High Command
 							["sourceQuest"] = 27056,	-- Belmont's Report
 						}),
-						crit(2, {	-- Forsaken Rear Guard
+						crit(38362, {	-- Forsaken Rear Guard
 							["sourceQuest"] = 27096,	-- Orcs are in Order
 						}),
-						crit(3, {	-- The Sepulcher
+						crit(38363, {	-- The Sepulcher
 							["sourceQuest"] = 27290,	-- To Forsaken Forward Command
 						}),
-						crit(4, {	-- The Ruins of Gilneas
+						crit(38364, {	-- The Ruins of Gilneas
 							["sourceQuest"] = 27438,	-- The Great Escape
 						}),
-						crit(5, {	-- Ambermill
+						crit(38365, {	-- Ambermill
 							["sourceQuest"] = 27518,	-- Transdimensional Warfare: Chapter III
 						}),
-						crit(6, {	-- On the Battlefront
+						crit(38366, {	-- On the Battlefront
 							["sourceQuest"] = 27601,	-- Cities in Dust
 						}),
 					},

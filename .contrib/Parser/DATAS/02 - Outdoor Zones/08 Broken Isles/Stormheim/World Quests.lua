@@ -133,7 +133,7 @@ root(ROOTS.Zones, {
 				q(46016),	-- Magdrezoth (Invasion wq)
 				q(40278),	-- My Beasts's Bidding
 				q(44943, {	-- Now That's Just Clawful!
-					crit(1, {	-- Now That's Just Clawful!
+					crit(34847, {	-- Now That's Just Clawful!
 						["achievementID"] = 11427,	-- No Shellfish Endeavor
 					}),
 				}),
