@@ -2692,42 +2692,60 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(2260, {	-- Frostmane Hand Axe
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					["coords"] = {
-						{ 26.6, 50.6, DUN_MOROGH },
-						{ 27.2, 52.8, DUN_MOROGH },
-					},
 					-- #if BEFORE 4.0.3
 					["crs"] = {
 						1123,	-- Frostmane Headhunter
 						1122,	-- Frostmane Hideskinner
 					},
+					["coords"] = {
+						{ 26.6, 50.6, DUN_MOROGH },
+						{ 27.2, 52.8, DUN_MOROGH },
+					},
 					-- #elseif AFTER 10.1.7
 					["cr"] = 1121,	-- Snowstrider
+					["coords"] = {
+						{ 49.0, 35.4, DUN_MOROGH },
+						{ 48.6, 42.6, DUN_MOROGH },
+						{ 50.6, 39.2, DUN_MOROGH },
+						{ 47.2, 39.4, DUN_MOROGH },
+					},
 					-- #endif
 				}),
 				i(2258, {	-- Frostmane Shortsword
 					["cr"] = 1120,	-- Frostmane Troll
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 1120,	-- Frostmane Troll
 					["coords"] = {
 						{ 26.6, 50.6, DUN_MOROGH },
 						{ 27.2, 52.8, DUN_MOROGH },
 					},
-					-- #if BEFORE 4.0.3
-					["cr"] = 1120,	-- Frostmane Troll
 					-- #elseif AFTER 10.1.7
 					["cr"] = 1121,	-- Snowstrider
+					["coords"] = {
+						{ 49.0, 35.4, DUN_MOROGH },
+						{ 48.6, 42.6, DUN_MOROGH },
+						{ 50.6, 39.2, DUN_MOROGH },
+						{ 47.2, 39.4, DUN_MOROGH },
+					},
 					-- #endif
 				}),
 				i(2257, {	-- Frostmane Staff
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if BEFORE 4.0.3
+					["cr"] = 1124,	-- Frostmane Shadowcaster
 					["coords"] = {
 						{ 26.6, 50.6, DUN_MOROGH },
 						{ 27.2, 52.8, DUN_MOROGH },
 					},
-					-- #if BEFORE 4.0.3
-					["cr"] = 1124,	-- Frostmane Shadowcaster
 					-- #elseif AFTER 10.1.7
 					["cr"] = 1121,	-- Snowstrider
+					["coords"] = {
+						{ 49.0, 35.4, DUN_MOROGH },
+						{ 48.6, 42.6, DUN_MOROGH },
+						{ 50.6, 39.2, DUN_MOROGH },
+						{ 47.2, 39.4, DUN_MOROGH },
+					},
 					-- #endif
 				}),
 				i(2112, {	-- Lumberjack Jerkin
