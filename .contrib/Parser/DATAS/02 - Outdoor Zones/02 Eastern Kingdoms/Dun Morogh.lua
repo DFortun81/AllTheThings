@@ -2702,7 +2702,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 27.2, 52.8, DUN_MOROGH },
 					},
 					-- #elseif AFTER 10.1.7
-					["cr"] = 1121,	-- Snowstrider
+					["cr"] = 41122,	-- Frostmane Snowstrider
 					["coords"] = {
 						{ 49.0, 35.4, DUN_MOROGH },
 						{ 48.6, 42.6, DUN_MOROGH },
@@ -2721,7 +2721,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 27.2, 52.8, DUN_MOROGH },
 					},
 					-- #elseif AFTER 10.1.7
-					["cr"] = 1121,	-- Snowstrider
+					["cr"] = 41122,	-- Frostmane Snowstrider
 					["coords"] = {
 						{ 49.0, 35.4, DUN_MOROGH },
 						{ 48.6, 42.6, DUN_MOROGH },
@@ -2739,7 +2739,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 27.2, 52.8, DUN_MOROGH },
 					},
 					-- #elseif AFTER 10.1.7
-					["cr"] = 1121,	-- Snowstrider
+					["cr"] = 41122,	-- Frostmane Snowstrider
 					["coords"] = {
 						{ 49.0, 35.4, DUN_MOROGH },
 						{ 48.6, 42.6, DUN_MOROGH },
