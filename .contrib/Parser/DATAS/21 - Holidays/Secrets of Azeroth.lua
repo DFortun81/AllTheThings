@@ -203,6 +203,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			["questID"] = 78207,
 			["coord"] = { 66.8, 73.2, WESTERN_PLAGUELANDS },
 		}),
+		--[[ TODO Check Object ID
+		o(405541, {	-- Loose Dirt Mound
+			["questID"] = 77300,
+			["coords"] = {
+				{ 36.8 35.6, GRIZZLY_HILLS }, -- Start pf Log Ride
+				{ 20.2, 81.3 GRIZZLY_HILLS }, -- Loose Dirt Mound
+			},
+			["description"] = "Take the log ride, must have WHEE! buff for Loose Dirt Mound to be visible.",
+		}),
+		]]--
 	})),
 	n(QUESTS, {
 		-- Day 1 --
