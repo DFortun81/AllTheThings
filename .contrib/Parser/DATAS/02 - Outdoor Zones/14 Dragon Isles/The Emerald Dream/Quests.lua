@@ -562,8 +562,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(TREE_1, {
 		--- pop during main story
-		q(77572),	-- after qID 77283 / one of them wq unlock
-		q(77887),	-- after qID 77283 / one of them probably achievement crit, may be?
+		q(77572),	-- after qID 77283 / 'Make player eligible for superbloom' (spellID 425375)
+		q(77887),	-- after qID 77283 / 'World Quest Unlock' (spellID 421687) & (also have q(77572), in list, but it is not pop currently)
 		---
 		q(77808),	-- Quest "What Do I Call You?": Pick the title of "Mother"
 		q(77809),	-- Quest "What Do I Call You?": Pick the title of "Father"
@@ -573,10 +573,12 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(78257),	-- Quest "What Do I Call You?": Pick the title of "Highlord"
 		q(77834),	-- Quest "What Do I Call You?": Pick the title of "Archdruid"
 		-- ???
-		--q(77526),	-- pop after picked up qID 77178 / currently unsure why, probably animation or changing npcs location trigger?
-		--q(77491),	-- pop while was afk / 'A massive crack of lightning breaks the sky as the primalist open a portal to the elemental plane!' ?
-		--q(77490),	-- pop while was afk / last chat text was that '%player_name% creates Shipment of Goods' multiple times
-		--q(77370),	-- pop during wq 76992 after first transform / also 'The vision of a young dreamer fill the air around the Fileds of Reverie'
-		--q(77356),	-- pop during wq 76558
+		--q(77526),	-- pop after picked up qID 77178 / 'Chest' (spellID 423213)
+		--q(77491),	-- pop while was afk / 'Chest' (spellID 420623)
+		--q(77490),	-- last chat text was that '%player_name% creates Shipment of Goods' multiple times / 'Chest' (spellID 420626)
+		--q(77370),	-- also 'The vision of a young dreamer fill the air around the Fileds of Reverie' / 'Chest' (sleppID 418389)
+		--q(77356),	-- pop during wq 76558 / 'Chest' (spellID 418326)
+
+		--q(77413),	-- Shandris's Scouting Report (itemID 208181) (spellID 418275), but need to confirm
 	}),
 }));

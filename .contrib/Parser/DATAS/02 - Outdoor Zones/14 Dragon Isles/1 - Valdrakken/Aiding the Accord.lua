@@ -95,5 +95,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(75863),	-- Aiding the Accord - Cave - Quest Complete (spellID 410067)
 		q(77253),	-- Aiding the Accord - Time Rifts - Quest Complete (spellID 417862)
 		q(77979),	-- Aiding the Accord - Dreamsurge - Quest Complete (spellID 421947)
+		q(78450),	-- Aiding the Accord - Emerald Bounty - Quest Complete (spellID 426078)
+		q(78449),	-- Aiding the Accord - Superbloom - Quest Complete (spellID 426077)
 	}),
 }));
