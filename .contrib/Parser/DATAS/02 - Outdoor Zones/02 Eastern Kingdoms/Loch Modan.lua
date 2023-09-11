@@ -1784,9 +1784,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #elseif AFTER 10.1.7
 					["cr"] = 1186,  -- Black Bear
 					["coords"] = {
-						{ 37.6, 33.6, LOCH_MODAN },
-						{ 43.0, 60.6, LOCH_MODAN },
-						{ 31.2, 24.4, LOCH_MODAN },
+						{ 40.6, 10.4, LOCH_MODAN },
+						{ 24.8, 13.2, LOCH_MODAN },
+						{ 30.0, 27.4, LOCH_MODAN },
+						{ 40.0, 25.0, LOCH_MODAN },
+						{ 29.2, 46.0, LOCH_MODAN },
+						{ 37.8, 40.0, LOCH_MODAN },
+						{ 41.6, 48.0, LOCH_MODAN },
+						{ 41.6, 58.4, LOCH_MODAN },
+						{ 47.2, 65.6, LOCH_MODAN },
 					},
 					-- #endif
 				}),
@@ -1807,6 +1813,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 71.4, 21.2, LOCH_MODAN },
 						{ 68.8, 22.4, LOCH_MODAN },
 						{ 68.8, 25.4, LOCH_MODAN },
+						{ 74.8, 25.0, LOCH_MODAN },
+						{ 76.6, 16.0, LOCH_MODAN },
 					},
 					-- #endif
 				}),
@@ -1824,9 +1832,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["cr"] = 44758,	-- Mo'grosh Darkmauler
 					["coords"] = {
-						{ 74.2, 28.4, LOCH_MODAN },
-						{ 69.4, 22.2, LOCH_MODAN },
-						{ 64.4, 20.6, LOCH_MODAN },
+						{ 71.4, 21.2, LOCH_MODAN },
+						{ 68.8, 22.4, LOCH_MODAN },
+						{ 68.8, 25.4, LOCH_MODAN },
+						{ 74.8, 25.0, LOCH_MODAN },
+						{ 76.6, 16.0, LOCH_MODAN },
 					},
 					-- #endif
 				}),
@@ -1847,6 +1857,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 71.4, 21.2, LOCH_MODAN },
 						{ 68.8, 22.4, LOCH_MODAN },
 						{ 68.8, 25.4, LOCH_MODAN },
+						{ 74.8, 25.0, LOCH_MODAN },
+						{ 76.6, 16.0, LOCH_MODAN },
 					},
 					-- #endif
 				}),
@@ -1861,9 +1873,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #elseif AFTER 10.1.7
 					["cr"] = 1186,  -- Black Bear
 					["coords"] = {
-						{ 37.6, 33.6, LOCH_MODAN },
-						{ 43.0, 60.6, LOCH_MODAN },
-						{ 31.2, 24.4, LOCH_MODAN },
+						{ 40.6, 10.4, LOCH_MODAN },
+						{ 24.8, 13.2, LOCH_MODAN },
+						{ 30.0, 27.4, LOCH_MODAN },
+						{ 40.0, 25.0, LOCH_MODAN },
+						{ 29.2, 46.0, LOCH_MODAN },
+						{ 37.8, 40.0, LOCH_MODAN },
+						{ 41.6, 48.0, LOCH_MODAN },
+						{ 41.6, 58.4, LOCH_MODAN },
+						{ 47.2, 65.6, LOCH_MODAN },
 					},
 					-- #endif
 				}),
@@ -1928,29 +1946,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if BEFORE 4.0.3
+				-- Moved to Searing Gorge in 10.1.7
 				i(2274, {	-- Sapper's Gloves
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1222,  -- Dark Iron Sapper
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
-					["coords"] = {
-						{ 23.4, 35.4, LOCH_MODAN },
-						{ 25.4, 35.4, LOCH_MODAN },
-					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, LOCH_MODAN },
-						{ 17.8, 33.4, LOCH_MODAN },
-						{ 19.8, 46.8, LOCH_MODAN },
-					},
-					-- #endif
-					--]]
 				}),
+				-- #endif
 				i(2265, {	-- Stonesplinter Axe
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3

@@ -1390,6 +1390,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 65.4, 65.6, SEARING_GORGE },
 					},
 				})),
+				i(2274, {	-- Sapper's Gloves
+					["timeline"] = { "added 10.1.7" },
+					["cr"] = 5840,  -- Dark Iron Steamsmith
+					["coords"] = {
+						{ 42.8, 51.6, SEARING_GORGE },
+						{ 38.0, 49.8, SEARING_GORGE },
+					},
+				}),
 				o(266289, {	-- Time Lost Chest
 					["description"] = "Kill Searing Flamewraiths until you get Lava Oil. Do not use it yet. Go to the metal bridge before the Quarry Gate. The Time Lost Chest is in the lava below in the alcove. Use the Fire Oil, jump down, open the chest, and hearth.",
 					["coord"] = { 37.0, 48.9, SEARING_GORGE },

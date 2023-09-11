@@ -2356,9 +2356,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(4263, {	-- Standard Issue Shield
-					["coord"] = { 79.4, 25.6, TIRISFAL_GLADES },
+					["coords"] = { 
+						{ 79.6, 26.8, TIRISFAL_GLADES },
+						{ 78.8, 33.0, TIRISFAL_GLADES },
+						{ 78.4, 36.8, TIRISFAL_GLADES },
+					},
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
+					-- #if BEFORE 4.0.3
 					["cr"] = 1660,	-- Scarlet Bodyguard
+					-- #elseif AFTER CATA
+					["crs"] = {
+						1660,	-- Scarlet Bodyguard
+						1540,	-- Scarlet Vanguard
+					},
+					-- #endif
 				}),
 				i(3325, {	-- Vile Fin Battle Axe
 					["cr"] = 1545,	-- Vile Fin Muckdweller

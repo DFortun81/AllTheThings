@@ -3427,7 +3427,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #if BEFORE 4.0.3
 							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 11.09.2023
 						}),
 					},
 				}),

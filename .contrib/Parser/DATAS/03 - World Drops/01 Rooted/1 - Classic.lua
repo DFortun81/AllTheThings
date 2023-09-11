@@ -3308,6 +3308,16 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			["description"] = "This item is now completely worthless.",
 			-- #endif
 		}),
+		i(4632, {	-- Ornate Bronze Lockbox
+			-- #if AFTER 10.1.7
+			["description"] = "Confirmed to be lootable from Deadmines, but is likely a classic world drop.",
+			["groups"] = {
+				i(7678,	{	-- Recipe: Thistle Tea
+					["timeline"] = { "added 10.1.7" },
+				}),	
+			},
+			-- #endif
+		}),
 		-- #if AFTER 9.1.0
 		i(3300, {	-- Rabbit's Foot
 			["description"] = "Drops from wolves or dogs in Classic zones.",
