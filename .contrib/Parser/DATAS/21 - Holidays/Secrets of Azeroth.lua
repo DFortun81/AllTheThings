@@ -199,6 +199,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			["questID"] = 78208,
 			["coord"] = { 53.3, 87.4, HIGHMOUNTAIN },
 		}),
+		o(410179, {	-- Loose Dirt Mound
+			["questID"] = 78207,
+			["coord"] = { 66.8, 73.2, WESTERN_PLAGUELANDS },
+		}),
 	})),
 	n(QUESTS, {
 		-- Day 1 --
@@ -669,13 +673,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			["coord"] = { 47.9, 46.8, VALDRAKKEN },
 			["groups"] = {
 				i(208888),	-- Kirin Tor Contact's Note (QI!)
-			},
-		}),
-		q(77908, {	-- A Legacy of Secrets
-			["provider"] = { "i", 208889 },
-			["description"] = "Quest takes place in Old Karazhan Raid",
-			["sourceQuest"] = 77897,	-- A Key Story
-			["groups"]	= {
 				o(408980, {
 					["description"] = "There are three clues inside the Guardian's Library. Pull out your thinking cap to find all three and the final object.",
 					["g"] = {
@@ -683,6 +680,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 					},
 				}),
 			},
+		}),
+		q(77908, {	-- A Legacy of Secrets
+			["provider"] = { "i", 208889 },
+			["description"] = "Quest takes place in Old Karazhan Raid",
+			["sourceQuest"] = 77897,	-- A Key Story
+
 		}),
 		-- Day 12 --
 
