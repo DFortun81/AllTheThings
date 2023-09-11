@@ -66,7 +66,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 		},{
 			ach(15496),		-- Shadowlands Keystone Explorer: Season Three
 			ach(15498, {	-- Shadowlands Keystone Conqueror: Season Three
-				title(717),	-- <Name> the Cryptic (TITLE!)
+				title(457),	-- <Name> the Cryptic (TITLE!)
 			}),
 			ach(15499, {	-- Shadowlands Keystone Master: Season Three
 				i(187682),	-- Wastewarped Deathwalker (MOUNT!)
