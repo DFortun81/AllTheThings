@@ -2712,7 +2712,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(2258, {	-- Frostmane Shortsword
-					["cr"] = 1120,	-- Frostmane Troll
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 1120,	-- Frostmane Troll
@@ -2739,7 +2738,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 27.2, 52.8, DUN_MOROGH },
 					},
 					-- #elseif AFTER 10.1.7
-					["cr"] = 41122,	-- Frostmane Snowstrider
+					["cr"] = 41121,	-- Frostmane Seer
 					["coords"] = {
 						{ 49.0, 35.4, DUN_MOROGH },
 						{ 48.6, 42.6, DUN_MOROGH },
