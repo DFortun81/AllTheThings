@@ -2720,12 +2720,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 27.2, 52.8, DUN_MOROGH },
 					},
 					-- #elseif AFTER 10.1.7
-					["cr"] = 41122,	-- Frostmane Snowstrider
+					["cr"] = 37507,	-- Frostmane Blade
 					["coords"] = {
-						{ 49.0, 35.4, DUN_MOROGH },
-						{ 48.6, 42.6, DUN_MOROGH },
-						{ 50.6, 39.2, DUN_MOROGH },
-						{ 47.2, 39.4, DUN_MOROGH },
+						{ 36.8, 77.4, DUN_MOROGH },
+						{ 35.9, 79.8, DUN_MOROGH },
 					},
 					-- #endif
 				}),
