@@ -3157,27 +3157,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(1280, {	-- Cloaked Hood
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 2246,	-- Syndicate Assassin
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 2246,	-- Syndicate Assassin
 					["coords"] = {
 						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
 						{ 25.4, 35.4, HILLSBRAD_FOOTHILLS },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					["cr"] = 2242,	-- Syndicate Spy (Alterac Mountains)
 					["coords"] = {
-						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
-						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
-						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
+						{ 58.0, 23.8, HILLSBRAD_FOOTHILLS },
+						{ 53.6, 14.8, HILLSBRAD_FOOTHILLS },
+						{ 49.6, 10.0, HILLSBRAD_FOOTHILLS },
+						{ 54.6, 26.6, HILLSBRAD_FOOTHILLS },
+						{ 55.2, 23.6, HILLSBRAD_FOOTHILLS },
+						{ 55.6, 17.4, HILLSBRAD_FOOTHILLS },
+						{ 53.6, 14.8, HILLSBRAD_FOOTHILLS },
+						{ 52.6, 12.0, HILLSBRAD_FOOTHILLS },
 					},
 					-- #endif
-					--]]
 				}),
 				-- #endif
 				i(3204, {	-- Deepwood Bracers
@@ -3233,27 +3232,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(4724, {	-- Humbert's Helm
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 2345,	-- Dun Garok Rifleman
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 2345,	-- Dun Garok Rifleman
 					["coords"] = {
-						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
-						{ 25.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 71.2, 74.2, HILLSBRAD_FOOTHILLS },
+						{ 72.0, 81.0, HILLSBRAD_FOOTHILLS },
 					},
 					-- #elseif AFTER 10.1.7
 					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
+						14275,	-- Tamra Stormpike
+						49269,	-- Dun Garok Spirit
 					},
 					["coords"] = {
-						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
-						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
-						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
+						{ 63.2, 82.0, HILLSBRAD_FOOTHILLS },
+						{ 64.2, 87.0, HILLSBRAD_FOOTHILLS },
+						{ 60.6, 84.2, HILLSBRAD_FOOTHILLS },
+						{ 62.8, 85.0, HILLSBRAD_FOOTHILLS },
 					},
 					-- #endif
-					--]]
 				}),
 				i(4723, {	-- Humbert's Pants
 					["timeline"] = { "removed 4.0.3" },
@@ -3290,18 +3287,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(5775, {	-- Pattern: Black Silk Pack
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["crs"] = {
-						2434,	-- Shadowy Assassin
-					},
+					["cr"] = 2434,	-- Shadowy Assassin
 					-- #elseif AFTER 10.1.7
 					["description"] = "This pattern is very rare. Expect 1000+ of kills before looting it.",
-					["crs"] = {
-						2242,	-- Syndicate Spy (Alterac Mountains)
-					},
+					["cr"] = 2242,	-- Syndicate Spy (Alterac Mountains)
 					["coords"] = {
 						{ 58.0, 23.8, HILLSBRAD_FOOTHILLS },
 						{ 53.6, 14.8, HILLSBRAD_FOOTHILLS },
 						{ 49.6, 10.0, HILLSBRAD_FOOTHILLS },
+						{ 54.6, 26.6, HILLSBRAD_FOOTHILLS },
+						{ 55.2, 23.6, HILLSBRAD_FOOTHILLS },
+						{ 55.6, 17.4, HILLSBRAD_FOOTHILLS },
+						{ 53.6, 14.8, HILLSBRAD_FOOTHILLS },
+						{ 52.6, 12.0, HILLSBRAD_FOOTHILLS },
 					},
 					-- #endif
 				}),
