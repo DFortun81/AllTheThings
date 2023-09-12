@@ -4,7 +4,7 @@
 OUTLAND_CUP_HEADER = createHeader({
 	readable = "Outland Cup",
 	constant = "OUTLAND_CUP_HEADER",
-	icon = [[~_.asset("Holiday_KalCup")]],
+	icon = [[~_.asset("Holiday_DraeCup")]],
 	eventID = EVENTS.OUTLAND_CUP,
 	text = {
 		en = "Outland Cup",
