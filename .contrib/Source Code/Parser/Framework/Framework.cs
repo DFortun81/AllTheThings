@@ -132,6 +132,11 @@ namespace ATT
         public static long CURRENT_RELEASE_VERSION { get; private set; }
 
         /// <summary>
+        /// The last patch version of the current build type excluding the explicit build number. [Format: ABBCC]
+        /// </summary>
+        public static long CURRENT_SHORT_RELEASE_VERSION { get; private set; }
+
+        /// <summary>
         /// The first patch they added Transmog as something you could collect.
         /// </summary>
         private static readonly long ADDED_TRANSMOG_VERSION = FIRST_EXPANSION_PATCH["LEGION"].ConvertVersion();
@@ -484,6 +489,7 @@ namespace ATT
             }
             CURRENT_RELEASE_PHASE = FIRST_EXPANSION_PHASE[CURRENT_RELEASE_PHASE_NAME];
             CURRENT_RELEASE_VERSION = LAST_EXPANSION_PATCH[CURRENT_RELEASE_PHASE_NAME].ConvertVersion();
+            CURRENT_SHORT_RELEASE_VERSION = CURRENT_RELEASE_VERSION.ConvertToGameVersion();
             if (CURRENT_RELEASE_VERSION < FIRST_EXPANSION_PATCH["LEGION"].ConvertVersion())
             {
                 if (CURRENT_RELEASE_VERSION >= FIRST_EXPANSION_PATCH["WRATH"].ConvertVersion())
@@ -1950,14 +1956,14 @@ namespace ATT
                 foreach (var entry in timeline)
                 {
                     var commandSplit = Convert.ToString(entry).Split(' ');
-                    var version = commandSplit[1].Split('.').ConvertVersion();
+                    var version = commandSplit[1].Split('.').ConvertVersion().ConvertToGameVersion();
                     if (version > lastVersion) lastVersion = version;
                     switch (commandSplit[0])
                     {
                         // Note: Adding command options here requires adjusting the filter Regex for 'timeline' entries during MergeStringArrayData
                         case "created":
                             {
-                                if (CURRENT_RELEASE_VERSION < version) return false;    // Invalid
+                                if (CURRENT_SHORT_RELEASE_VERSION < version) return false;    // Invalid
                                 else removed = 1;
                                 break;
                             }
@@ -1966,18 +1972,32 @@ namespace ATT
                                 // If this is the first patch the thing was added.
                                 if (index == 0)
                                 {
-                                    if (CURRENT_RELEASE_VERSION < version)
+                                    if (CURRENT_SHORT_RELEASE_VERSION < version)
                                     {
                                         return false;    // Invalid
+                                    }
+                                    else if (CURRENT_SHORT_RELEASE_VERSION == version)
+                                    {
+                                        removed = 0;
+
+                                        // Mark the first patch this comes back on.
+                                        if (addedPatch == 0) addedPatch = version;
                                     }
                                     else removed = 0;
                                 }
                                 else
                                 {
-                                    if (CURRENT_RELEASE_VERSION >= version)
+                                    if (CURRENT_SHORT_RELEASE_VERSION > version)
                                     {
                                         removed = 0;
                                         addedPatch = 0;
+                                    }
+                                    else if (CURRENT_SHORT_RELEASE_VERSION == version)
+                                    {
+                                        removed = 0;
+
+                                        // Mark the first patch this comes back on.
+                                        if (addedPatch == 0) addedPatch = version;
                                     }
                                     else if (removed == 4 || removed == 2 || removed == 1 || removedPatch > 0)
                                     {
@@ -1989,7 +2009,7 @@ namespace ATT
                             }
                         case "deleted":
                             {
-                                if (CURRENT_RELEASE_VERSION >= version) removed = 4;
+                                if (CURRENT_SHORT_RELEASE_VERSION >= version) removed = 4;
                                 else
                                 {
                                     // Mark the first patch this was removed on. (the upcoming patch)
@@ -1999,7 +2019,7 @@ namespace ATT
                             }
                         case "removed":
                             {
-                                if (CURRENT_RELEASE_VERSION >= version) removed = 2;
+                                if (CURRENT_SHORT_RELEASE_VERSION >= version) removed = 2;
                                 else
                                 {
                                     // Mark the first patch this was removed on. (the upcoming patch)
@@ -2009,7 +2029,7 @@ namespace ATT
                             }
                         case "blackmarket":
                             {
-                                if (CURRENT_RELEASE_VERSION >= version) removed = 3;
+                                if (CURRENT_SHORT_RELEASE_VERSION >= version) removed = 3;
                                 else if (removed == 4 || removed == 2)
                                 {
                                     // Mark the first patch this comes back on.
@@ -2019,7 +2039,7 @@ namespace ATT
                             }
                         case "timewalking":
                             {
-                                if (CURRENT_RELEASE_VERSION >= version) removed = 5;
+                                if (CURRENT_SHORT_RELEASE_VERSION >= version) removed = 5;
                                 else if (removed == 4 || removed == 2)
                                 {
                                     // Mark the first patch this comes back on.
@@ -2059,13 +2079,13 @@ namespace ATT
                 // Future Returning Item
                 if (addedPatch != 0)
                 {
-                    data["awp"] = addedPatch.ConvertToGameVersion(); // "Added With Patch"
+                    data["awp"] = addedPatch; // "Added With Patch"
                 }
 
                 // Future Unobtainable
                 if (removedPatch != 0)
                 {
-                    data["rwp"] = removedPatch.ConvertToGameVersion(); // "Removed With Patch"
+                    data["rwp"] = removedPatch; // "Removed With Patch"
                 }
             }
 

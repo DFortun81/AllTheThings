@@ -33,6 +33,8 @@ root(ROOTS.Professions, prof(SKINNING, {
 			}),
 		}),
 		ach(18831, {	-- Elusive Beasts of the Dragon Isles (15)
+			-- NOTE: The "_npcs" listed below don't exist by themselves in the addon.
+			-- We will continue to get parser warnings until they are either added or this is changed to use CRS instead!
 			crit(1, {	-- Elusive Salamanther
 				["_npcs"] = { 193854 },	-- Elusive Salamanther
 			}),
