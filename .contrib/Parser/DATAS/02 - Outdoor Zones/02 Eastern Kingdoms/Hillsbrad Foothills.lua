@@ -3294,6 +3294,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2434,	-- Shadowy Assassin
 					},
 					-- #elseif AFTER 10.1.7
+					["description"] = "This pattern is very rare. Expect 1000+ of kills before looting it."
 					["crs"] = {
 						2242,	-- Syndicate Spy (Alterac Mountains)
 					},
