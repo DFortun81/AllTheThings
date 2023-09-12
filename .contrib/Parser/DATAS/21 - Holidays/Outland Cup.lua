@@ -18,7 +18,7 @@ local dragonridingrace = function(id, data)
 	return t;
 end
 local RIDERS_OF_AZEROTH_BADGE = 2588;
-root(ROOTS.Holidays, applyevent(EVENTS.OUTLAND_CUP, n(OUTLAND_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
+root(ROOTS.Holidays, applyevent(EVENTS.OUTLAND_CUP, n(OUTLAND_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
 	n(ACHIEVEMENTS, {
 		ach(19092, {	-- Outland: Bronze
 			-- Meta Achievement
