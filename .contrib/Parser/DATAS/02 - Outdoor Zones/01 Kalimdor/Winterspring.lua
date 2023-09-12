@@ -2023,6 +2023,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 67.0, 83.6, WINTERSPRING },
 					["timeline"] = { "added 5.1.0.16309" },
 					["groups"] = {
+						i(4191, {	-- Owlbeast Leggings
+							["timeline"] = { "added 10.1.7" },	-- ATT Discord 10.09.2023
+						}),
 					},
 				}),
 				n(10200, {	-- Rak'shiri
@@ -2321,6 +2324,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(4191, {	-- Owlbeast Leggings
 					["timeline"] = { "added 10.1.7" },	-- ATT Discord 10.09.2023
 					["crs"] = {
+						50788, 	-- Quetzl (Rare)
 						7452,	-- Crazed Owlbeast
 						7453,	-- Moontouched Owlbeast
 					},
