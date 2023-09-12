@@ -458,6 +458,13 @@ local fieldConverters = {
 	end,
 };
 
+-- 'altQuests' in Retail pretending to be the same quest as a different quest actually causes problems for searches
+-- and it makes more sense to not pretend they're the same than to hamper existing logic with more conditionals to
+-- make sure we actually get the data that we search for
+if tonumber(app.GameBuildVersion) > 100000 then
+	fieldConverters.altQuests = nil;
+end
+
 local _converter;
 local function _CacheFields(group)
 	local n = 0;
