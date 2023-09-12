@@ -494,7 +494,7 @@ ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
 	local AllSourceQuestsRequiredForAchievement = t.AllSourceQuestsRequiredForAchievement;
 	t.AllSourceQuestsRequiredForAchievement = nil;
 	if not t.OnUpdate then
-		if t.providers then
+		if t.provider or t.providers then
 			-- A lot of achievements are proc'd by having an item, quests with providers on them pretty much guarantee it works.
 			t.OnUpdate = AllProvidersRequiredForAchievement and [[_.CommonAchievementHandlers.ALL_ITEM_PROVIDERS]] or [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]];
 		elseif t.sourceQuest or t.sourceQuests then
