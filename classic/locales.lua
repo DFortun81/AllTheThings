@@ -649,6 +649,10 @@ L["SPELL_NAME_TO_SPELL_ID"] = {
 	["草药学"] = 2366,
 	["草藥學"] = 2366,
 	
+	-- French (Classic Era)
+	["Ingénierie"] = 4036,    -- Engineering
+	["Secourisme"] = 3273,    -- First Aid
+	
 	["Ganzúa"] = 1809,		-- Lock Pick	-- Required for ES (EU)
 	["Desollar"] = 8613,	-- Skinning		-- Required for ES (EU)
 	["Cнятие шкур"] = 8613,	-- Skinning		-- Required for RU
