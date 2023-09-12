@@ -1676,3 +1676,4 @@ i(0, 419567);		-- Ginormous Grrloc
 -- PATCH 10.2.0 --
 ------------------
 i(210412, 425338);	-- Flourishing Whimsydrake
+i(209060, 422486);	-- Verdant Armoredon

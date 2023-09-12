@@ -113,5 +113,45 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				spell(410080),	-- Path of Wind's Domain
 			}),
 		})),
+		--[[
+		header(HEADERS.Achievement, SEASON_XXXXX, bubbleDownSelf({
+			["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
+		},{
+			ach(19009),		-- Dragonflight Keystone Explorer: Season Three
+			ach(19010, {	-- Dragonflight Keystone Conqueror: Season Three
+				title(xxxxx),	-- <Name> the XXXXX
+			}),
+			ach(19011, {	-- Dragonflight Keystone Master: Season Three
+				i(209060),	-- Verdant Armoredon (MOUNT!)
+			}),
+			ach(19012),		-- Dragonflight Keystone Hero: Season Three
+			ach(17846, {	-- Smoldering Hero: Dragonflight Season 2
+				title(xxxxx),	-- <Name> the XXXXX Hero
+			}),
+			ach(19087, {	-- Keystone Hero: Atal'Dazar
+				spell(424187),	-- Path of the Golden Tomb
+			}),
+			ach(19084, {	-- Keystone Hero: Black Rook Hold
+				spell(424153),	-- Path of Ancient Horrors
+			}),
+			ach(19085, {	-- Keystone Hero: Darkheart Thicket
+				spell(424163),	-- Path of the Nightmare Lord
+			}),
+			ach(19088, {	-- Keystone Hero: Dawn of the Infinite
+				spell(424197),	-- Path of Twisted Time
+				crit(62375),	-- Dawn of the Infinite: Galakrond's Fall
+				crit(62376),	-- Dawn of the Infinite: Murozond's Rise
+			}),
+			ach(19083, {	-- Keystone Hero: The Everbloom
+				spell(159901),	-- Path of the Verdant
+			}),
+			ach(19082, {	-- Keystone Hero: Throne of the Tides
+				spell(424142),	-- Path of the Tidehunter
+			}),
+			ach(19086, {	-- Keystone Hero: Waycrest Manor
+				spell(424167),	-- Path of Heart's Bane
+			}),
+		})),
+		--]]
 	}),
 })));

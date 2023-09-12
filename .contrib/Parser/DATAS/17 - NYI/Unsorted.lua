@@ -1129,7 +1129,6 @@ root(ROOTS.Unsorted, {
 			i(209036),	-- Cache of Amirdrassil Treasures
 			i(209037),	-- Cache of Amirdrassil Treasures
 			i(209049),	-- Essence of Endless Flame
-			i(209060),	-- Verdant Armoredon
 			i(209069),	-- Verdant Gladiator's Silk Tunic
 			i(209070),	-- Verdant Gladiator's Silk Blouse
 			i(209071),	-- Verdant Gladiator's Silk Slippers

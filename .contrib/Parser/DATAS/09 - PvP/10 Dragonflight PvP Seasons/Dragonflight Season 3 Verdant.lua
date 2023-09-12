@@ -1,61 +1,62 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
-root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
-	header(HEADERS.Achievement, SEASON_OBSIDIAN, {
+--[[
+root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
+	header(HEADERS.Achievement, SEASON_VERDANT, {
 		["icon"] = "Interface\\Icons\\inv_serpentmountgladiator",
 		["g"] = {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
-				ach(17727, {	-- Obsidian Combatant [A]
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 } }, {
+				ach(19140, {	-- Verdant Combatant [A]
 					["races"] = ALLIANCE_ONLY,
 					["collectible"] = false,
 				}),
-				ach(17728, {	-- Obsidian Combatant [H]
+				ach(19141, {	-- Verdant Combatant [H]
 					["races"] = HORDE_ONLY,
 					["collectible"] = false,
 				}),
-				ach(17799),		-- Combatant I: Dragonflight Season 2
-				ach(17800),		-- Combatant II: Dragonflight Season 2
-				ach(17797),		-- Challenger I: Dragonflight Season 2
-				ach(17798),		-- Challenger II: Dragonflight Season 2
-				ach(17795),		-- Rival I: Dragonflight Season 2
-				ach(17796),		-- Rival II: Dragonflight Season 2
-				ach(17794, {	-- Duelist: Dragonflight Season 2
-					ill(6836),	-- Shadow Flame (ILLUSION!)
-					i(205361),	-- Obsidian Gladiator's Prestigious Cloak
+				ach(19157),		-- Combatant I: Dragonflight Season 3
+				ach(19158),		-- Combatant II: Dragonflight Season 3
+				ach(19159),		-- Challenger I: Dragonflight Season 3
+				ach(19160),		-- Challenger II: Dragonflight Season 3
+				ach(19133),		-- Rival I: Dragonflight Season 3
+				ach(19155),		-- Rival II: Dragonflight Season 3
+				ach(19156, {	-- Duelist: Dragonflight Season 3
+					-- ill(6836),	-- Shadow Flame (ILLUSION!)
+					-- i(205361),	-- Obsidian Gladiator's Prestigious Cloak
 				}),
-				ach(17831, {	-- Elite: Dragonflight Season 2
-					i(205362),	-- Obsidian Gladiator's Tabard
+				ach(19090, {	-- Elite: Dragonflight Season 3
+					-- i(205362),	-- Obsidian Gladiator's Tabard
 				}),
-				ach(17740, {	-- Gladiator: Dragonflight Season 2
-					i(205233),	-- Obsidian Gladiator's Slitherdrake (MOUNT!)
-					i(205865),	-- Winding Slitherdrake: Embodiment of the Obsidian Gladiator (DM!)
+				ach(19091, {	-- Gladiator: Dragonflight Season 3
+					-- i(205233),	-- Obsidian Gladiator's Slitherdrake (MOUNT!)
+					-- i(205865),	-- Winding Slitherdrake: Embodiment of the Obsidian Gladiator (DM!)
 				}),
-				ach(17778),		-- Obsidian Gladiator's Drake
-				ach(17764, {	-- Obsidian Gladiator: Dragonflight Season 2
-					title(499),	-- Obsidian Gladiator <Name>
+				ach(17778),		-- Verdant Gladiator's Drake
+				ach(19132, {	-- Verdant Gladiator: Dragonflight Season 3
+					title(xxxxx),	-- Verdant Gladiator <Name>
 				}),
 				-- RBG
-				ach(17768, {	-- Hero of the Alliance: Obsidian
+				ach(19162, {	-- Hero of the Alliance: Verdant
 					["races"] = ALLIANCE_ONLY,
 				}),
-				ach(17772, {	-- Hero of the Horde: Obsidian
+				ach(19161, {	-- Hero of the Horde: Verdant
 					["races"] = HORDE_ONLY,
 				}),
 				-- Solo
-				ach(17801, {	-- Legend: Dragonflight Season 2
-					i(206267),	-- Obsidian Legend's Pennant (TOY!)
+				--ach(17801, {	-- Legend: Dragonflight Season 2
+				--	i(206267),	-- Verdant Legend's Pennant (TOY!)
+				--}),
+				ach(19131, {	-- Verdant Legend: Dragonflight Season 3
+					-- title(XXXXX),	-- Verdant Legend <Name>
 				}),
-				ach(17767, {	-- Obsidian Legend: Dragonflight Season 2
-					title(500),	-- Obsidian Legend <Name>
-				}),
-				--ach(00000, {	-- Obsidian Soloist: Dragonflight Season 2
-				--	title(),	-- Obsidian Soloist <Name>
+				--ach(00000, {	-- Verdant Soloist: Dragonflight Season 2
+				--	title(),	-- Verdant Soloist <Name>
 				--}),
 				-- Fashion
-				ach(18249),		-- Obsidian Tie Event
+				-- ach(18249),		-- Verdant Tie Event
 			})),
-			filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
+			filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 } }, {
 				i(205246, {	-- Vicious War Snail [A] (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -63,7 +64,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["races"] = HORDE_ONLY,
 				}),
 			})),
-			filter(TITLES, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }, ["collectible"] = false }, {
+			filter(TITLES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 }, ["collectible"] = false }, {
 				title(78),	-- Combatant <Name>
 				title(32),	-- Challenger <Name>
 				title(31),	-- Rival <Name>
@@ -85,7 +86,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				-- Solo
 				title(491),	-- Legend <Name>
 			})),
-			n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
+			n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 } }, {
 				n(199601, {	-- Seltherex
 					["coord"] = { 44.7, 37.0, VALDRAKKEN },
 					["g"] = {
@@ -401,7 +402,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					},
 				}),
 			})),
-			n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
+			n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 } }, {
 				n(199599, {	-- Calderax
 					["coord"] = { 44.3, 36.6, VALDRAKKEN },
 					["g"] = {
@@ -1280,7 +1281,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					},
 				}),
 			})),
-			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }, ["bonusID"] = 7532 }, {
+			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 }, ["bonusID"] = 7532 }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(205673),	-- Obsidian Gladiator's Cloak
@@ -1666,3 +1667,4 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 		},
 	}),
 }))));
+--]]
