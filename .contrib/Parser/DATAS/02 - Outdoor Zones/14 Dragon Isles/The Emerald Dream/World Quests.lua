@@ -56,6 +56,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					q(77714, {	-- Nature Sealed
 						["coord"] = { 31.1, 26.7, TREE_1 },
 					}),
+					q(76562, {	-- Moat Maintenance
+						["coord"] = { 51.1, 18.5, TREE_1 },
+					}),
+					q(76559, {	-- Our Owllies
+						["coord"] = { 54.5, 21.7, TREE_1 },
+					}),
+					q(76526, {	-- In the Trees
+						["coord"] = { 64.4, 51.4, TREE_1 },
+					}),
+					q(76522, {	-- Reverie Of Battle
+						["coord"] = { 64.1, 65.8, TREE_1 },
+					}),
 				})),
 			},
 		}),

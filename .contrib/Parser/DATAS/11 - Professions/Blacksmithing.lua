@@ -963,6 +963,14 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 					i(201006),	-- Draconic Flux
 				},
 			}),
+			o(411180,	-- Deathstalker Chasis
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+				["coord"] = { 36.34, 46.79, TREE_1 },
+				["questID"] = 78418,
+				["g"] = {
+					i(210465),	-- Deathstalker Chasis
+				},
+			})),
 			o(380709, {	-- Falconer Gauntlet Drawings
 				["coord"] = { 50.9, 66.5, OHNAHRAN_PLAINS },
 				["questID"] = 70353,
@@ -970,6 +978,14 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 					i(201009),	-- Falconer Gauntlet Drawings
 				},
 			}),
+			o(411181,	-- Flamesworn Render
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+				["coord"] = { 37.27, 22.94, TREE_1 },
+				["questID"] = 78419,
+				["g"] = {
+					i(210466),	-- Flamesworn Render
+				},
+			})),
 			o(380516, {	-- Glimmer of Wisdom
 				["description"] = "Craft a Primal Molten Alloy or a Frostfire Alloy next to the Dim Forge. A sparkle will appear in the deposit box, which you can click to grab the treasure.",
 				["sourceQuests"] = { 70232 },	-- This triggers when crafting the Alloy, which makes the treasure appear.

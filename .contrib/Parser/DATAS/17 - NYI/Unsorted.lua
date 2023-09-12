@@ -1842,8 +1842,6 @@ root(ROOTS.Unsorted, {
 			i(210462),	-- Plush Pillow
 			i(210463),	-- Snuggle Buddy
 			i(210464),	-- Amirdrassil Defender's Shield
-			i(210465),	-- Deathstalker Chasis
-			i(210466),	-- Flamesworn Render
 			i(210468),	-- Emerald Blossom Dreamstone
 			i(210470),	-- Echoed Ephemera
 			i(210471),	-- Flourishing Whimsydrake: Body Armor
