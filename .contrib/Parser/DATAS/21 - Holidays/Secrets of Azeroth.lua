@@ -889,4 +889,5 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(78109),	-- Using torch at (46.6 77.6 Thaldraszus - in a cave) Western Cave
 	q(78111), 	-- Using torch at (48.6 76.3 Thaldraszus - in a cave) Northern Cave
 	q(77951),	-- Upon completion of (QuestID 77953)
+	q(77520),	-- Upon completion of (QuestID 77954)
 })));
