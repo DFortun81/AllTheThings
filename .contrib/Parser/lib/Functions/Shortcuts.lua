@@ -497,7 +497,7 @@ ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
 		if t.providers then
 			-- A lot of achievements are proc'd by having an item, quests with providers on them pretty much guarantee it works.
 			t.OnUpdate = AllProvidersRequiredForAchievement and [[_.CommonAchievementHandlers.ALL_ITEM_PROVIDERS]] or [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]];
-		elseif t.sourceQuests then
+		elseif t.sourceQuest or t.sourceQuests then
 			-- For Classic, we can detect if you've completed an achievement if there's a quest that involves killing the mob in question.
 			t.OnUpdate = AllSourceQuestsRequiredForAchievement and [[_.CommonAchievementHandlers.ALL_SOURCE_QUESTS]] or [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]];
 		end
