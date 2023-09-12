@@ -2023,9 +2023,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 67.0, 83.6, WINTERSPRING },
 					["timeline"] = { "added 5.1.0.16309" },
 					["groups"] = {
-						i(4191, {	-- Owlbeast Leggings
-							["timeline"] = { "added 10.1.7" },	-- ATT Discord 10.09.2023
-						}),
 					},
 				}),
 				n(10200, {	-- Rak'shiri
@@ -2319,6 +2316,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						10196,	-- General Colbatann
 						10663,	-- Manaclaw
 						10664,	-- Scryer
+					},
+				}),
+				i(4191, {	-- Owlbeast Leggings
+					["timeline"] = { "added 10.1.7" },	-- ATT Discord 10.09.2023
+					["crs"] = {
+						7452,	-- Crazed Owlbeast
+						7453,	-- Moontouched Owlbeast
+					},
+					["coords"] = {
+						{ 65.0, 74.0, WINTERSPRING },
+						{ 65.8, 75.6, WINTERSPRING },
+						{ 64.6, 80.8, WINTERSPRING },
+						{ 62.8, 75.0, WINTERSPRING },
+						{ 65.2, 76.6, WINTERSPRING },
+						{ 57.6, 75.2, WINTERSPRING },
 					},
 				}),
 				i(15761, {	-- Pattern: Frostsaber Gloves (RECIPE!)
