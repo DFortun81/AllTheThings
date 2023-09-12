@@ -2023,7 +2023,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				n(1944, {	-- Rot Hide Bruiser
-					["coord"] = { 56.1, 42.4, SILVERPINE_FOREST },
+					["coord"] = { 56.1, 42.4, TIRISFAL_GLADES },
 					["timeline"] = { "added 10.1.7" },
 					["groups"] = {
 						i(4439, {	-- Bruiser Club
