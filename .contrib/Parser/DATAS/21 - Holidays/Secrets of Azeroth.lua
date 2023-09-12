@@ -837,6 +837,11 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(78051),	-- Ancient Tomb (Karazhan 36.2, 37.4) Guardians Library
 	q(78052),	-- Ancient Tomb (Karazhan 47.2, 64.4) Guardians Library
 	q(77916),	-- Upon completion of (QuestID 77928 and getting the QI!)
-	q(78053),	-- Upon picking up (itemID 208936 triggering QuestID 77934)
+	q(78053),	-- Clicking on 'Auction House Bill of Sale' during day 12
+	q(78054),	-- Clicking on 'Void Storage Receipt' during day 12
+	q(78055),	-- Clicking on 'Garden Supply Receipt' during day 12
+	q(78056),	-- Clicking on 'Researcher's Note' during day 12
+	q(78057),	-- Clicking on 'Hastily Scrawled Note' during day 12
+	q(78058),	-- Clicking on 'Note to Kritha' during day 12 (automatically accepted 'A Complete Inventory' (questID 77934)
 	q(77580),	-- Upon completion of (QuestID 77934)
-})))
+})));
