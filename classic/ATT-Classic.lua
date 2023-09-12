@@ -5407,6 +5407,9 @@ local fields = {
 	["icon"] = function(t)
 		return app.asset("Category_Deaths");
 	end,
+	["hash"] = function(t)
+		return "deathtracker";
+	end,
 	["progress"] = function(t)
 		return math.min(t.total, app.Settings.AccountWide.Deaths and ATTAccountWideData.Deaths or app.CurrentCharacter.Deaths);
 	end,
