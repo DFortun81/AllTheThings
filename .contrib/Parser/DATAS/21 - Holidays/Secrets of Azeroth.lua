@@ -38,6 +38,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 				77298,	-- Loose Dirt Mound
 				77299,	-- Loose Dirt Mound
 				78208,	-- Loose Dirt Mound
+				78207,	-- Loose Dirt Mound
+				78300,	-- Loose Dirt Mound
+				78302,	-- Loose Dirt Mound
 			}},
 			["groups"] = {
 				i(208151),	-- Tobias (PET!)
@@ -57,6 +60,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 				77298,	-- Loose Dirt Mound
 				77299,	-- Loose Dirt Mound
 				78208,	-- Loose Dirt Mound
+				78207,	-- Loose Dirt Mound
+				78300,	-- Loose Dirt Mound
+				78302,	-- Loose Dirt Mound
 			}},
 			["groups"] = {
 				i(208150),	-- Blue Tweed Cap
@@ -105,7 +111,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			crit(60854, {	-- The Idol of Ohn'ahra
 				["_quests"] = { 76456 },
 			}),
-			 crit(60855, {	-- Shifting Sands
+			crit(60855, {	-- Shifting Sands
 			 	["_quests"] = { 77305 },
 			 }),
 			crit(60856, {	-- What's in a Mold?
@@ -204,13 +210,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			["coord"] = { 66.8, 73.2, WESTERN_PLAGUELANDS },
 		}),
 		--[[ TODO Check Object ID
-		o(405541, {	-- Loose Dirt Mound
+		o(, {	-- Loose Dirt Mound
 			["questID"] = 77300,
 			["coords"] = {
-				{ 36.8 35.6, GRIZZLY_HILLS }, -- Start pf Log Ride
+				{ 36.8, 35.6, GRIZZLY_HILLS }, -- Start of Log Ride
 				{ 20.2, 81.3 GRIZZLY_HILLS }, -- Loose Dirt Mound
 			},
 			["description"] = "Take the log ride, must have WHEE! buff for Loose Dirt Mound to be visible.",
+		}),
+		o(, {	-- Loose Dirt Mound
+			["questID"] = 77302,
+			["coord"] = { 73.1, 39.5, DRAGONBLIGHT },
 		}),
 		]]--
 	})),
@@ -678,7 +688,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		}),
 
 		-- Day 11 --
-		q(77897, {	-- A Key Story
+		q(77897, {	-- A Special Book
 			["qg"] = 207696,	-- Bobby Carlisle
 			["coord"] = { 47.9, 46.8, VALDRAKKEN },
 			["groups"] = {
@@ -694,8 +704,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		q(77908, {	-- A Legacy of Secrets
 			["provider"] = { "i", 208889 },
 			["description"] = "Quest takes place in Old Karazhan Raid",
-			["sourceQuest"] = 77897,	-- A Key Story
+			["sourceQuest"] = 77897,	-- A Special Book
 		}),
+
 		-- Day 12 --
 		q(77928, {	-- They Are Always Listening
 			["qg"] = 207696,	-- Bobby Carlisle
