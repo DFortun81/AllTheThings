@@ -206,7 +206,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.OUTLAND_CUP, n(OUTLAND_CUP_HEADER, bubble
 				19104,	-- Outland Reverse: Gold
 			}},
 			["g"] = {
-				title(790),	-- Outland Racer <Name>
+				title(521),	-- Outland Racer <Name>
 			},
 		}),
 	}),
