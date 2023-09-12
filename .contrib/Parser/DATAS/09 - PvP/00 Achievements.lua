@@ -71,7 +71,7 @@ end]];
 local THE_JUSTICAR_AND_THE_CONQUEROR_OnClick = [[function(row, button)
 	if button == "RightButton" then
 		local t = row.ref;
-		local clone = _.CreateMiniListForGroup(_.CreateAchievement(t[t.key], {
+		local clone = _:CreateMiniListForGroup(_.CreateAchievement(t[t.key], {
 			t.wsg,
 			t.ab,
 			t.av
