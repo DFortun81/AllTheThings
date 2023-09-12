@@ -315,6 +315,9 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 				-- #endif
 				["groups"] = {
+					i(1933, {	-- Staff of Conjuring
+						["timeline"] = { "added 10.1.7" },	-- ATT Discord 05.09.2023
+					}),
 					i(3902, {	-- Staff of Nobles
 						["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					}),

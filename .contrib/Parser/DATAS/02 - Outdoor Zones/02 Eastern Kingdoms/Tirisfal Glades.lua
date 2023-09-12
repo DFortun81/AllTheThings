@@ -1996,7 +1996,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 35.8, 43.0, TIRISFAL_GLADES },
 					["groups"] = {
 						i(4302, {	-- Small Green Dagger
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),

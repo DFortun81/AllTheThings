@@ -1636,27 +1636,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1189, {	-- Overseer's Ring
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 125,	-- Riverpaw Overseer
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 125,	-- Riverpaw Overseer
 					["coords"] = {
-						{ 23.4, 35.4, WESTFALL },
-						{ 25.4, 35.4, WESTFALL },
+						{ 63.8, 78.6, WESTFALL },
+						{ 60.2, 76.6, WESTFALL },
+						{ 60.2, 70.8, WESTFALL },
+						{ 63.6, 72.8, WESTFALL },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, WESTFALL },
-						{ 17.8, 33.4, WESTFALL },
-						{ 19.8, 46.8, WESTFALL },
-					},
+					["cr"] = 98,	-- Riverpaw Taskmaster
 					-- #endif
-					--]]
 				}),
 				i(5771, {	-- Pattern: Red Linen Bag
 					["cr"] = 590,	-- Defias Looter
@@ -1724,29 +1715,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if BEFORE 4.0.3
 				i(1933, {	-- Staff of Conjuring
-					["timeline"] = { "removed 4.0.3" },
+					-- Moved to Brainwashed Noble in 10.1.7
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["cr"] = 619,	-- Defias Conjurer
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, WESTFALL },
-						{ 25.4, 35.4, WESTFALL },
+						{ 44.6, 69.4, WESTFALL },
+						{ 42.6, 71.6, WESTFALL },
 					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, WESTFALL },
-						{ 17.8, 33.4, WESTFALL },
-						{ 19.8, 46.8, WESTFALL },
-					},
-					-- #endif
-					--]]
 				}),
+					-- #endif
 				i(2327, {	-- Sturdy Leather Bracers
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
