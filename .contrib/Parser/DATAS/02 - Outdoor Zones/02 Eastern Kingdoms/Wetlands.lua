@@ -1977,6 +1977,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 63.8, 48.6, WETLANDS },
 						{ 65.0, 42.6, WETLANDS },
 						{ 61.8, 47.4, WETLANDS },
+						{ 61.2, 40.0, WETLANDS },
+						{ 70.6, 48.4, WETLANDS },
+						{ 67.6, 52.8, WETLANDS },
+						{ 63.8, 48.6, WETLANDS },
+						{ 61.0, 47.2, WETLANDS },
+						{ 61.8, 41.2, WETLANDS },
 					},
 					-- #endif
 				}),
@@ -2013,15 +2019,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 68.8, 45.6, WETLANDS },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						42043,	-- Ebon Slavehunter
-						42041,	-- Dragonmaw Whelpstealer
-					},
+					["cr"] = 42042,	-- Ebon Whelp
 					["coords"] = {
-						{ 68.0, 47.2, WETLANDS },
-						{ 63.4, 49.8, WETLANDS },
-						{ 67.0, 46.2, WETLANDS },
-						{ 61.0, 44.8, WETLANDS },
+						{ 63.8, 48.6, WETLANDS },
+						{ 65.0, 42.6, WETLANDS },
+						{ 61.8, 47.4, WETLANDS },
+						{ 61.2, 40.0, WETLANDS },
+						{ 70.6, 48.4, WETLANDS },
+						{ 67.6, 52.8, WETLANDS },
+						{ 63.8, 48.6, WETLANDS },
+						{ 61.0, 47.2, WETLANDS },
+						{ 61.8, 41.2, WETLANDS },
 					},
 					-- #endif
 				}),
@@ -2029,24 +2037,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 					-- #if BEFORE 4.0.3
 					["cr"] = 1044,	-- Flamesnorting Whelp
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						42043,	-- Ebon Slavehunter
-						42041,	-- Dragonmaw Whelpstealer
-					},
-					-- #endif
-					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 71.8, 47.6, WETLANDS },
 						{ 66.4, 40.4, WETLANDS },
 						{ 63.8, 33.6, WETLANDS },
 					},
 					-- #elseif AFTER 10.1.7
+					["cr"] = 42042,	-- Ebon Whelp
 					["coords"] = {
-						{ 68.0, 47.2, WETLANDS },
-						{ 63.4, 49.8, WETLANDS },
-						{ 67.0, 46.2, WETLANDS },
-						{ 61.0, 44.8, WETLANDS },
+						{ 63.8, 48.6, WETLANDS },
+						{ 65.0, 42.6, WETLANDS },
+						{ 61.8, 47.4, WETLANDS },
+						{ 61.2, 40.0, WETLANDS },
+						{ 70.6, 48.4, WETLANDS },
+						{ 67.6, 52.8, WETLANDS },
+						{ 63.8, 48.6, WETLANDS },
+						{ 61.0, 47.2, WETLANDS },
+						{ 61.8, 41.2, WETLANDS },
 					},
 					-- #endif
 				}),

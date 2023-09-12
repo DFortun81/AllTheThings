@@ -1586,11 +1586,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 69.6, 57.4, REDRIDGE_MOUNTAINS },
 					},
 					-- #elseif AFTER 10.1.7
-					["cr"] = 4462,	-- Blackrock Hunter
+					["cr"] = 437,	-- Blackrock Renegade
 					["coords"] = {
-						{ 54.4, 68.2, REDRIDGE_MOUNTAINS },
-						{ 49.4, 67.6, REDRIDGE_MOUNTAINS },
-						{ 44.2, 67.4, REDRIDGE_MOUNTAINS },
+						{ 54.4 37.2, REDRIDGE_MOUNTAINS },
+						{ 50.2 42.8, REDRIDGE_MOUNTAINS },
+						{ 48.6 34.2, REDRIDGE_MOUNTAINS },
+						{ 46.6 38.6, REDRIDGE_MOUNTAINS },
+						{ 44.2 31.0, REDRIDGE_MOUNTAINS },
+						{ 42.2 34.8, REDRIDGE_MOUNTAINS },
 					},
 					-- #endif
 				}),
