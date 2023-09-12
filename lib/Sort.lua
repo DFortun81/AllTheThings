@@ -22,6 +22,9 @@ local calculateAccessibility = function(source)
 	if source.nmc then
 		score = score + 10;
 	end
+	if source.rwp then
+		score = score + 5;
+	end
 	if source.e then
 		score = score + 1;
 	end

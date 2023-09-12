@@ -1586,7 +1586,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		-- Determine if this tooltip needs more work the next time it refreshes.
 		if not paramA then paramA = ""; end
-		local working, info, crafted, recipes = false, {}, {}, {};
+		local working, info, crafted, recipes, mostAccessibleSource = false, {}, {}, {};
 		cache = { now, 100000000 };
 		searchCache[search] = cache;
 
@@ -1766,14 +1766,17 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			if itemID then
 				-- Show the unobtainable source text
 				local u, e = 99999999;
+				app.Sort(group, app.SortDefaults.Accessibility);
 				for i,j in ipairs(group) do
 					if j.itemID == itemID then
+						mostAccessibleSource = j;
 						if j.u and u > j.u and (not j.crs or paramA == "itemID") then
 							u = j.u;
 						end
 						if j.e then
 							e = j.e;
 						end
+						break;
 					end
 				end
 				if u < 99999999 then
@@ -1967,6 +1970,12 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				group = CreateObject({ [paramA] = paramB });
 				group.g = merged;
 			end
+		end
+		
+		if mostAccessibleSource then
+			group.rwp = mostAccessibleSource.rwp;
+			group.e = mostAccessibleSource.e;
+			group.u = mostAccessibleSource.u;
 		end
 
 		-- Resolve Cost
