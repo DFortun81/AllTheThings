@@ -688,7 +688,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 				o(9000009, {	-- Aged Marker [#5]
 					["sourceQuest"] = 78028,
 					["questID"] = 78029,
-					["altQuests"] = { 78027 },
 					["coord"] = { 43.3, 48.0, OHNAHRAN_PLAINS },
 				}),
 				o(9000010, {	-- Banner Stand
