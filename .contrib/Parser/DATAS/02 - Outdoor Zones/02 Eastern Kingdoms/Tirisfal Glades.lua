@@ -593,7 +593,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						}),
 						i(3262, {	-- Putrid Wooden Hammer
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 							["cr"] = 1890,	-- Rattlecage Skeleton
 							-- #if AFTER CATA
 							["coord"] = { 52.8, 42.8, DEATHKNELL },
@@ -630,10 +630,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(3263, {	-- Webbed Pants
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 							["cr"] = 1505,	-- Night Web Spider
 							-- #if BEFORE CATA
 							["coord"] = { 27.6, 59.2, TIRISFAL_GLADES },
+							-- #else
+							["coord"] = { 26.8, 31.8, DEATHKNELL },
 							-- #endif
 						}),
 					}),
@@ -1942,6 +1944,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 38.0, 49.8, TIRISFAL_GLADES },
 					},
 					["groups"] = {
+						i(3334, {	-- Farmer's Shovel
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+						},
 						i(4261, {	-- Solliden's Trousers
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
@@ -2305,7 +2310,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["crs"] = {
 						1936,	-- Farmer Solliden
-						1656,	-- Thurman Agamand
 						1934,	-- Tirisfal Farmer
 					},
 					["coords"] = {
@@ -2313,11 +2317,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 34.6, 51.6, TIRISFAL_GLADES },
 						{ 44.6, 33.2, TIRISFAL_GLADES },
 						{ 36.2, 50.4, TIRISFAL_GLADES },
+						{ 40.6, 51.8, TIRISFAL_GLADES },
+						{ 34.4, 49.0, TIRISFAL_GLADES },
 					},
 				}),
 				i(3321, {	-- Gray Fur Booties
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["cr"] = 1549,	-- Ravenous Darkhound
+					["coords"] = {
+						{ 86.0, 38.2, TIRISFAL_GLADES },
+						{ 80.4, 42.2, TIRISFAL_GLADES },
+						{ 79.8, 49.0, TIRISFAL_GLADES },
+						{ 82.8, 51.0, TIRISFAL_GLADES },
+						{ 88.2, 49.6, TIRISFAL_GLADES },
+						{ 89.6, 43.6, TIRISFAL_GLADES },
+						{ 86.0, 46.2, TIRISFAL_GLADES },
+					},
 				}),
 				i(3331, {	-- Melrache's Cape
 					-- #if BEFORE CATA
