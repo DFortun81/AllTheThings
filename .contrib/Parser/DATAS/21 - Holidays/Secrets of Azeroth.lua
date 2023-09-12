@@ -744,19 +744,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			["groups"] = {
 				i(208942),	-- Preservationist's Dispatch Three (QI!)
 				o(409320, {	-- Buried Object
-					["coord"] = { 49.5 79.7, THALDRASZUS },
+					["coord"] = { 49.5, 79.7, THALDRASZUS },
 					["g"] = {
 						i(209795),	--  Piece of the Orb of Rathmus (QI)
 					},
 				}),
 				o(409329, {	-- Buried Object
-					["coord"] = { 45.9 79.7, THALDRASZUS },
+					["coord"] = { 45.9, 79.7, THALDRASZUS },
 					["g"] = {
 						i(209797),	--  Piece of the Orb of Rathmus (QI)
 					},
 				}),
 				o(409333, {	-- Buried Object
-					["coord"] = { 50.1 78.0, THALDRASZUS },
+					["coord"] = { 50.1, 78.0, THALDRASZUS },
 					["g"] = {
 						i(209799),	--  Piece of the Orb of Rathmus (QI)
 					},
