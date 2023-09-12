@@ -39,8 +39,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 				77299,	-- Loose Dirt Mound
 				78208,	-- Loose Dirt Mound
 				78207,	-- Loose Dirt Mound
-				78300,	-- Loose Dirt Mound
-				78302,	-- Loose Dirt Mound
+				77300,	-- Loose Dirt Mound
+				77302,	-- Loose Dirt Mound
 			}},
 			["groups"] = {
 				i(208151),	-- Tobias (PET!)
@@ -61,8 +61,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 				77299,	-- Loose Dirt Mound
 				78208,	-- Loose Dirt Mound
 				78207,	-- Loose Dirt Mound
-				78300,	-- Loose Dirt Mound
-				78302,	-- Loose Dirt Mound
+				77300,	-- Loose Dirt Mound
+				77302,	-- Loose Dirt Mound
 			}},
 			["groups"] = {
 				i(208150),	-- Blue Tweed Cap
@@ -209,20 +209,29 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			["questID"] = 78207,
 			["coord"] = { 66.8, 73.2, WESTERN_PLAGUELANDS },
 		}),
-		--[[ TODO Check Object ID
-		o(, {	-- Loose Dirt Mound
+		o(405539, {	-- Loose Dirt Mound
 			["questID"] = 77300,
+			["races"] = ALLIANCE_ONLY,
 			["coords"] = {
 				{ 36.8, 35.6, GRIZZLY_HILLS }, -- Start of Log Ride
-				{ 20.2, 81.3 GRIZZLY_HILLS }, -- Loose Dirt Mound
+				{ 20.2, 81.3, GRIZZLY_HILLS }, -- Loose Dirt Mound
 			},
 			["description"] = "Take the log ride, must have WHEE! buff for Loose Dirt Mound to be visible.",
 		}),
-		o(, {	-- Loose Dirt Mound
+		--[[
+		o(xx, {	-- Loose Dirt Mound
+			["questID"] = 77300,
+			["races"] = HORDE_ONLY,
+			["coords"] = {
+				{ 35.1, 34.7, GRIZZLY_HILLS }, -- Start of Log Ride
+				{ 10.9, 74.9, GRIZZLY_HILLS }, -- Loose Dirt Mound
+			},
+			["description"] = "Take the log ride, must have WHEE! buff for Loose Dirt Mound to be visible.",
+		}),]]--
+		o(405541, {	-- Loose Dirt Mound
 			["questID"] = 77302,
 			["coord"] = { 73.1, 39.5, DRAGONBLIGHT },
 		}),
-		]]--
 	})),
 	n(QUESTS, {
 		-- Day 1 --
