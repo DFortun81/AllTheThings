@@ -2033,9 +2033,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #elseif AFTER 10.1.7
 					["coords"] = {
-						{ 81.2, 58.0, DUSKWOOD },
-						{ 24.2, 42.0, DUSKWOOD },
-						{ 16.4, 45.8, DUSKWOOD },
+						{ 81.6, 32.2, DUSKWOOD },
+						{ 81.6, 33.6, DUSKWOOD },
+						{ 76.8, 31.0, DUSKWOOD },
+						{ 74.8, 32.8, DUSKWOOD },
+						{ 75.2, 37.6, DUSKWOOD },
+						{ 76.6, 36.6, DUSKWOOD },
 					},
 					-- #endif
 				}),

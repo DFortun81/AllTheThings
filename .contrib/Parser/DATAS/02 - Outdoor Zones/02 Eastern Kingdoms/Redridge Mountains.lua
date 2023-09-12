@@ -1586,7 +1586,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 69.6, 57.4, REDRIDGE_MOUNTAINS },
 					},
 					-- #elseif AFTER 10.1.7
-					["cr"] = 437,	-- Blackrock Renegade
+					["description"] = "This item drops from both Blackrock Renegades & Blackrock Hunters. Renegades might have a higher droprate.",
+					["crs"] = {
+						437,	-- Blackrock Renegade
+						4462,	-- Blackrock Hunter
+					},
 					["coords"] = {
 						{ 54.4, 37.2, REDRIDGE_MOUNTAINS },
 						{ 50.2, 42.8, REDRIDGE_MOUNTAINS },
@@ -1594,6 +1598,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 46.6, 38.6, REDRIDGE_MOUNTAINS },
 						{ 44.2, 31.0, REDRIDGE_MOUNTAINS },
 						{ 42.2, 34.8, REDRIDGE_MOUNTAINS },
+						-- Hunter
+						{ 54.4, 68.2, REDRIDGE_MOUNTAINS },
+						{ 50.6, 68.0, REDRIDGE_MOUNTAINS },
+						{ 50.6, 61.6, REDRIDGE_MOUNTAINS },
+						{ 40.2, 68.4, REDRIDGE_MOUNTAINS },
 					},
 					-- #endif
 				}),
