@@ -1439,7 +1439,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 124,	-- Riverpaw Brute
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
 						{ 54.2, 62.0, WESTFALL },
 						{ 55.8, 68.4, WESTFALL },
