@@ -1985,7 +1985,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 				n(4015, {	-- Pridewing Patriarch
-					["description"] = "Can spawn after killing any Pridewing Wyverns.",
+					["description"] = "Can spawn after killing any Pridewing Beasts.",
 					-- #if AFTER CATA
 					["coord"] = { 55.6, 44.8, STONETALON_MOUNTAINS },
 					-- #else
