@@ -565,6 +565,30 @@ local function SearchForField(field, id)
 	return SearchForFieldContainer(field)[id], field, id;
 end
 
+-- Returns: A table containing all groups which contain the provided id for a given field from all established data caches.
+local function SearchForFieldInAllCaches(field, id)
+	local ArrayAppend = app.ArrayAppend;
+	local groups = {};
+	for _,cache in pairs(AllCaches) do
+		ArrayAppend(groups, cache[field][id]);
+	end
+	return groups;
+end
+
+-- Returns: A table containing all groups which contain the provided each of the provided ids for a given field from all established data caches.
+local function SearchForManyInAllCaches(field, ids)
+	local ArrayAppend = app.ArrayAppend;
+	local groups = {};
+	local fieldCache;
+	for _,cache in pairs(AllCaches) do
+		fieldCache = cache[field];
+		for _,id in ipairs(ids) do
+			ArrayAppend(groups, fieldCache[id]);
+		end
+	end
+	return groups;
+end
+
 -- Search a group for all items relative to the given group. (excluding the group passed in)
 local function SearchForRelativeItems(group, listing)
 	if group and group.g then
@@ -584,7 +608,7 @@ local function SearchForSourceIDQuickly(sourceID)
 	if sourceID then return SearchForField("s", sourceID)[1]; end
 end
 
--- Search a group for a objects whose hash matches a hash found in hashes and append it to table t.
+-- Search a group for objects whose hash matches a hash found in hashes and append it to table t.
 local function SearchForSpecificGroups(t, group, hashes)
 	if group then
 		if hashes[group.hash] then
@@ -644,14 +668,14 @@ local function VerifyCache()
 end
 
 -- External API Functions
-app.AllCaches = AllCaches;	-- Needed for now, due to the UpdateRawID function not being able to be moved into this file yet. TODO: Move it and then remove this.
-app.CacheField = CacheField;	-- This doesn't seem to have any external uses, apparently was used by Flight Paths at some point.
 app.CacheFields = CacheFields;
 app.CreateDataCache = CreateDataCache;
 app.GetRawFieldContainer = GetRawFieldContainer;
 app.SearchForFieldRecursively = SearchForFieldRecursively;
 app.SearchForFieldContainer = SearchForFieldContainer;
 app.SearchForField = SearchForField;
+app.SearchForFieldInAllCaches = SearchForFieldInAllCaches;
+app.SearchForManyInAllCaches = SearchForManyInAllCaches;
 app.SearchForRelativeItems = SearchForRelativeItems;
 app.SearchForSourceIDQuickly = SearchForSourceIDQuickly;
 app.SearchForSpecificGroups = SearchForSpecificGroups;

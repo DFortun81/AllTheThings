@@ -4584,7 +4584,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 								break;
 							end
 						end
-						if field then	-- CRIEVE NOTE: This was sometimes coming back as nil. Probably shouldn't do that.
+						if field then
 							local locationGroup, locationName;
 							-- convert maps
 							if field == "maps" then
@@ -5802,7 +5802,7 @@ local function UpdateSearchResults(searchResults)
 		-- Update all the results within visible windows
 		local hashes = {};
 		local found = {};
-		local Update, UpdateCost = app.DirectGroupUpdate, app.UpdateCostGroup;
+		local Update, UpdateCost, SearchForSpecificGroups = app.DirectGroupUpdate, app.UpdateCostGroup, app.SearchForSpecificGroups;
 		-- Directly update the Source groups of the search results, and collect their hashes for updates in other windows
 		for _,result in ipairs(searchResults) do
 			hashes[result.hash] = true;
@@ -5818,7 +5818,7 @@ local function UpdateSearchResults(searchResults)
 			if window.Suffix ~= "Prime" and window:IsVisible() then
 				-- app.PrintDebug(window.Suffix)
 				for _,result in ipairs(searchResults) do
-					app.SearchForSpecificGroups(found, window.data, hashes);
+					SearchForSpecificGroups(found, window.data, hashes);
 				end
 			end
 		end
@@ -5833,32 +5833,18 @@ local function UpdateSearchResults(searchResults)
 	-- app.PrintDebug("UpdateSearchResults Done")
 end
 
-local DataCaches = app.AllCaches;
 -- Pulls all cached fields for the field/id and passes the results into UpdateSearchResults
 local function UpdateRawID(field, id)
 	-- app.PrintDebug("UpdateRawID",field,id)
 	if field and id then
-		local groups = {};
-		for name,cache in pairs(DataCaches) do
-			ArrayAppend(groups, cache[field][id]);
-			-- app.PrintDebug("Update in DataCache",name,id)
-		end
-		UpdateSearchResults(groups);
+		UpdateSearchResults(app.SearchForFieldInAllCaches(field, id));
 	end
 end
-app.UpdateRawID = UpdateRawID;
 -- Pulls all cached fields for the field/ids and passes the results into UpdateSearchResults
 local function UpdateRawIDs(field, ids)
 	-- app.PrintDebug("UpdateRawIDs",field,ids and #ids)
 	if field and ids and #ids > 0 then
-		local groups = {};
-		for name,cache in pairs(DataCaches) do
-			for _,id in ipairs(ids) do
-				ArrayAppend(groups, cache[field][id]);
-				-- app.PrintDebug("Update in DataCache",name,id)
-			end
-		end
-		UpdateSearchResults(groups);
+		UpdateSearchResults(app.SearchForManyInAllCaches(field, ids));
 	end
 end
 app.UpdateRawIDs = UpdateRawIDs;
@@ -18011,13 +17997,14 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				-- end
 
 				if #rootGroups == 0 then
-					-- app.PrintDebug("No root Map groups!",self.mapID)
 					-- if only one group in the map root, then shift it up as the map root instead
 					local headerGroups = header.g;
 					if #headerGroups == 1 then
 						header.g = nil;
 						MergeProperties(header, headerGroups[1], true);
 						NestObjects(header, headerGroups[1].g);
+					else
+						app.PrintDebug("No root Map groups!",self.mapID)
 					end
 				end
 
@@ -20324,7 +20311,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				-- Shadowlands Continents
 				{
 					1550,	-- Shadowlands
-					{}
+					-- {}
 				},
 				-- BFA Continents
 				{
