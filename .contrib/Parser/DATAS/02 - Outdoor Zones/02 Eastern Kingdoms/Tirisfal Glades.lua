@@ -601,16 +601,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 33.0, 63.6, TIRISFAL_GLADES },
 							-- #endif
 						}),
+						-- #if BEFORE 10.1.7
 						i(3260, {	-- Scarlet Initiate Robes
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-							-- #if AFTER CATA
-							["cr"] = 1539,	-- Scarlet Neophyte
-							["coord"] = { 79.0, 32.2, TIRISFAL_GLADES },
-							-- #else
 							["cr"] = 1507,	-- Scarlet Initiate
 							["coord"] = { 37.4, 68.0, TIRISFAL_GLADES },
-							-- #endif
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
+						-- #endif
 						i(2754, {	-- Tarnished Bastard Sword
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 							-- #if AFTER CATA
@@ -2323,17 +2320,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 1549,	-- Ravenous Darkhound
 				}),
 				i(3331, {	-- Melrache's Cape
+					-- #if BEFORE CATA
+					["description"] = "The NPC dropping this is friendly to the alliance.",
+					-- #endif
 					["coord"] = { 79.4, 26.0, TIRISFAL_GLADES },
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },
 					["cr"] = 1665,	-- Captain Melrache
-				--	["description"] = "The NPC dropping this is friendly to the alliance.",
-				--	Maybe only friendly in classic.
 				}),
 				i(3332, {	-- Perrine's Boots
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["cr"] = 1662,	-- Captain Perrine
 					["coord"] = { 51.6, 67.6, TIRISFAL_GLADES },
 				}),
+				-- #if BEFORE 10.1.7
+				i(3260, {	-- Scarlet Initiate Robes
+					["cr"] = 1539,	-- Scarlet Neophyte
+					["coord"] = { 79.0, 32.2, TIRISFAL_GLADES },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+				}),
+				-- #endif
 				i(3319, {	-- Short Sabre
 					["cr"] = 1529,	-- Bleeding Horror
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
