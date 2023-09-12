@@ -6225,6 +6225,16 @@ root(ROOTS.Zones, {
 							emov(60, i(40735)),	-- Zartson's Jungle Vambraces
 						},
 					}),
+					n(32638, {	-- Hakmud of Argus <Traveling Trader>
+						["providers"] = {
+							{ "i", 44235 },	-- Traveler's Tundra Mammoth (A) (MOUNT!)
+							{ "i", 44234 },	-- Traveler's Tundra Mammoth (H) (MOUNT!)
+						},
+						["description"] = "This vendor can be found on someone's Traveler's Tundra Mammoth.",
+						["groups"] = {
+							i(44737),	-- Draenic Silk Robes
+						},
+					}),
 					n(32172, {	-- Harold Winston <Jewelry Vendor>
 						["coord"] = { 40.2, 34.3, NORTHREND_DALARAN },
 						["groups"] = {
@@ -6618,11 +6628,6 @@ root(ROOTS.Zones, {
 							i(44235, {	-- Traveler's Tundra Mammoth (A) (MOUNT!)
 								["races"] = ALLIANCE_ONLY,
 								["cost"] = 200000000,	-- 20,000g
-								["groups"] = {
-									i(44737, {	-- Draenic Silk Robes
-										["cr"] = 32638,	-- Hakmud of Argus <Traveling Trader>
-									}),
-								},
 							}),
 							i(44234, {	-- Traveler's Tundra Mammoth (H) (MOUNT!)
 								["races"] = HORDE_ONLY,
