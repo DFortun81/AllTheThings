@@ -736,9 +736,45 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			["sourceQuest"] = 77928,	-- They Are Always Listening
 			["coord"] = { 44.1, 60.2, VALDRAKKEN },
 		}),
-		-- Day 13 --
 
+		-- Day 13 --
+		q(77953, {	-- A Sphere in Danger
+			["qg"] = 185562,	-- Tithris
+			["coord"] = { 47.5, 46.2, VALDRAKKEN },
+			["groups"] = {
+				i(208942),	-- Preservationist's Dispatch Three (QI!)
+				o(409320, {	-- Buried Object
+					["coord"] = { 49.5 79.7, THALDRASZUS },
+					["g"] = {
+						i(209795),	--  Piece of the Orb of Rathmus (QI)
+					},
+				}),
+				o(409329, {	-- Buried Object
+					["coord"] = { 45.9 79.7, THALDRASZUS },
+					["g"] = {
+						i(209797),	--  Piece of the Orb of Rathmus (QI)
+					},
+				}),
+				o(409333, {	-- Buried Object
+					["coord"] = { 50.1 78.0, THALDRASZUS },
+					["g"] = {
+						i(209799),	--  Piece of the Orb of Rathmus (QI)
+					},
+				}),
+				i(208944, {	-- A Curious Orb (QI!)
+					i(209795),	--  Piece of the Orb of Rathmus (QI)
+					i(209797),	--  Piece of the Orb of Rathmus (QI)
+					i(209799),	--  Piece of the Orb of Rathmus (QI)
+				}),
+			},
+		}),
+		q(77954, {	-- A Curious Orb
+			["provider"] = { "i", 208944 },
+			["sourceQuest"] = 77953,	-- A Sphere in Danger
+			["coord"] = { 47.4, 46.7, VALDRAKKEN },
+		}),
 		-- Day 14 --
+
 	}),
 	n(COMMUNITY_CLUES_HEADER, {
 		header(HEADERS.Spell, 424082, {
@@ -849,4 +885,8 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(78057),	-- Clicking on 'Hastily Scrawled Note' during day 12
 	q(78058),	-- Clicking on 'Note to Kritha' during day 12 (automatically accepted 'A Complete Inventory' (questID 77934)
 	q(77580),	-- Upon completion of (QuestID 77934)
+	q(78108),	-- Using torch at (50.10, 80.9 Thaldraszus - in a cave)Eastern Cave
+	q(78109),	-- Using torch at (46.6 77.6 Thaldraszus - in a cave) Western Cave
+	q(78111), 	-- Using torch at (48.6 76.3 Thaldraszus - in a cave) Northern Cave
+	q(77951),	-- Upon completion of (QuestID 77953)
 })));
