@@ -55,7 +55,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210691, {	-- Spruce (PET!)
 						["cost"] = { { "c", DRAGON_SUPPLIES, 375 } },
 					}),
-					i(210790, {	-- Ensemble: Elegant Green Dragon Outerwear
+					i(210790, {	-- Ensemble: Elegant Green Dragon Outerwear (qID 78599)
 						["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
 					}),
 					i(210677, {	-- Survivalist's Shovel

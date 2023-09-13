@@ -813,7 +813,6 @@ root(ROOTS.Unsorted, {
 			i(207759),	-- Grotto Netherwing Drake: Cluster Spiked Back
 			i(207760),	-- Grotto Netherwing Drake: Armor
 			i(207761),	-- Grotto Netherwing Drake: Chin Tendrils
-			i(207762),	-- Grotto Netherwing Drake: Chin Spike
 			i(207763),	-- Grotto Netherwing Drake: Single Horned Crest
 			i(207764),	-- Grotto Netherwing Drake: Head Spike
 			i(207765),	-- Grotto Netherwing Drake: Cluster Spiked Crest
@@ -852,11 +851,8 @@ root(ROOTS.Unsorted, {
 			i(207798),	-- Weapon - Shield 2
 			i(207799),	-- 2H Sword STR
 			i(207800),	-- 2H Mace STR
-			i(208047),	-- Gigantic Dreamseed
 			i(208049),	-- Valarjar Trophy
 			i(208060),	-- Juicy Beetle Bits
-			i(208066),	-- Small Dreamseed
-			i(208067),	-- Plump Dreamseed
 			i(208124),	-- The Dreamer's Essence
 			i(208146),	-- Incomplete Tablet
 			i(208181),	-- Shandris's Scouting Report
@@ -1760,7 +1756,6 @@ root(ROOTS.Unsorted, {
 			i(210372),	-- Cold Conservator's Bands
 			i(210373),	-- Winter Warden's Bracers
 			i(210374),	-- Frigid Forager's Cuffs
-			i(210375),	-- Crystalline Tender's Wristbands
 			i(210376),	-- Beautiful Blizzard Binding
 			i(210377),	-- Snipping Sleet Circle
 			i(210378),	-- Rime Ridden Ring
