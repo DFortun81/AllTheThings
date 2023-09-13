@@ -577,15 +577,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 81.0, 58.9, OHNAHRAN_PLAINS },
 				}),
 				q(65837, {	-- Trouble In The Pines
-				["sourceQuests"] = {
-					65779,	-- Into the Plains
-					DF_ACCOUNT_CAMPAIGN_QUEST,
-				},
-				["sourceQuestNumRequired"] = 1,
-				["provider"] = { "n", 195524 },	-- Beastmaster Tirren
-				["coord"] = { 62.0, 41.8, OHNAHRAN_PLAINS },
-				["isBreadcrumb"] = true,
-			}),
+					["sourceQuests"] = {
+						65779,	-- Into the Plains
+						DF_ACCOUNT_CAMPAIGN_QUEST,
+					},
+					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 195524 },	-- Beastmaster Tirren
+					["coord"] = { 62.0, 41.8, OHNAHRAN_PLAINS },
+					["isBreadcrumb"] = true,
+				}),
 				q(66689, {	-- More Than a Rock
 					["sourceQuests"] = { 66681 },	-- Tempests Abound
 					["provider"] = { "i", 194031 },	-- Stormtouched Shards
@@ -1136,6 +1136,56 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 			})),
+			header(HEADERS.Spell, 375232, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Emerald Dream [PH]
+				q(76982, {	-- A Sentinel's Summon
+					["maps"] = { VALDRAKKEN },
+				}),
+				q(75918, {	-- Fire Season
+					["sourceQuests"] = { 76982 },	-- A Sentinel's Summon
+					["provider"] = { "n", 205067 },	-- Shandris Feathermoon
+					["coord"] = { 50.3, 52.8, VALDRAKKEN },
+				}),
+				-- These first two quests can be accepted in any order, but accepting one will change the creatureID of Shandris.
+				q(75919, {	-- Dousing the Wards
+					["sourceQuests"] = { 75918 },	-- Fire Season
+					["providers"] = {
+						{ "n", 205068 },	-- Shandris Feathermoon
+						{ "n", 205134 },	-- Shandris Feathermoon
+					},
+					["coord"] = { 18.6, 79.8, OHNAHRAN_PLAINS },
+				}),
+				q(75920, {	-- Eyes of Fire
+					["sourceQuests"] = { 75918 },	-- Fire Season
+					["providers"] = {
+						{ "n", 205068 },	-- Shandris Feathermoon
+						{ "n", 205134 },	-- Shandris Feathermoon
+					},
+					["coord"] = { 18.6, 79.8, OHNAHRAN_PLAINS },
+				}),
+				q(75921, {	-- Through the Flames
+					["sourceQuests"] = {
+						75919,	-- Dousing the Wards
+						75920,	-- Eyes of Fire
+					},
+					["provider"] = { "n", 205892 },	-- Shandris Feathermoon
+					["g"] = {
+						i(206598),	-- Smoldering Blossom
+					},
+				}),
+				q(75922, {	-- Inflammatory Information
+					["sourceQuests"] = { 75921 },	-- Through the Flames
+					["provider"] = { "n", 205134 },	-- Shandris Feathermoon
+					["coord"] = { 21.8, 77.4, OHNAHRAN_PLAINS },
+				}),
+				q(75923, {	-- Raise the Alarm
+					["sourceQuests"] = { 75922 },	-- Inflammatory Information
+					["provider"] = { "n", 205142 },	-- Shandris Feathermoon
+					["coord"] = { 21.7, 77.0, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(206353),	-- Sentinel's Whistle
+					},
+				}),
+			})),
 			------ Miscellaneous ------
 			q(70155, {	-- Look, Listen, and Breathe
 				["provider"] = { "n", 194282 },	-- Threshrak
@@ -1189,69 +1239,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["description"] = "This quest requires that you have at least one open primary profession slot. Both versions complete at the same time.",
 				["provider"] = { "n", 192498 },	-- Hephaesta
 				["coord"] = { 71.8, 78.7, OHNAHRAN_PLAINS },
-			}),
-			------ Fury Incarnate Campaign ------
-			-- These first two quests can be accepted in any order, but accepting one will change the creatureID of Shandris.
-			q(75919, {	-- Dousing the Wards
-				["sourceQuests"] = { 75918 },	-- Fire Season
-				["providers"] = {
-					{ "n", 205068 },	-- Shandris Feathermoon
-					{ "n", 205134 },	-- Shandris Feathermoon
-				},
-				["coord"] = { 18.6, 79.8, OHNAHRAN_PLAINS },
-				["timeline"] = { ADDED_10_1_7 },
-			}),
-			q(75920, {	-- Eyes of Fire
-				["sourceQuests"] = { 75918 },	-- Fire Season
-				["providers"] = {
-					{ "n", 205068 },	-- Shandris Feathermoon
-					{ "n", 205134 },	-- Shandris Feathermoon
-				},
-				["coord"] = { 18.6, 79.8, OHNAHRAN_PLAINS },
-				["timeline"] = { ADDED_10_1_7 },
-			}),
-			q(75921, {	-- Through the Flames
-				["sourceQuests"] = {
-					75919,	-- Dousing the Wards
-					75920,	-- Eyes of Fire
-				},
-				["provider"] = { "n", 205892 },	-- Shandris Feathermoon
-				["timeline"] = { ADDED_10_1_7 },
-				["g"] = {
-					i(206598),	-- Smoldering Blossom
-				},
-			}),
-			q(75922, {	-- Inflammatory Information
-				["sourceQuests"] = { 75921 },	-- Through the Flames
-				["provider"] = { "n", 205134 },	-- Shandris Feathermoon
-				["coord"] = { 21.8, 77.4, OHNAHRAN_PLAINS },
-				["timeline"] = { ADDED_10_1_7 },
-			}),
-			q(75923, {	-- Raise the Alarm
-				["sourceQuests"] = { 75922 },	-- Inflammatory Information
-				["provider"] = { "n", 205142 },	-- Shandris Feathermoon
-				["coord"] = { 21.7, 77.0, OHNAHRAN_PLAINS },
-				["timeline"] = { ADDED_10_1_7 },
-				["g"] = {
-					i(206353),	-- Sentinel's Whistle
-				},
-			}),
-			-- 10.2 campaign starts here --
-			q(76317, {	-- Call of the Dream
-				-- this is granted automatically no matter where you are. Probably worth moving somewhere else than here
-				["timeline"] = { ADDED_10_2_0 },
-				["g"] = {
-					i(208181), -- Shandris's Scouting Report (QI!)
-				},
-			}),
-			q(76318, {	-- Emerald Welcome
-				["sourceQuests"] = { 76317 },	-- Call of the Dream
-				["provider"] = { "n", 187590 },	-- Merithra
-				["coord"] = { 18.7, 51.8, OHNAHRAN_PLAINS },
-				["timeline"] = { ADDED_10_2_0 },
-				["g"] = {
-					i(210412),	-- Flourishing Whimsydrake (MOUNT!)
-				},
 			}),
 			n(BONUS_OBJECTIVES, {	-- All of these are One-Time
 				q(69968, {	-- Prozela Galeshot

@@ -3,7 +3,7 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(DRAGON_ISLES, {
 	m(TREE_1, {
-		["icon"] = 0,
+		["icon"] = 5390644,
 		["lore"] = "",
 		["timeline"] = { ADDED_10_2_0 },
 	}),

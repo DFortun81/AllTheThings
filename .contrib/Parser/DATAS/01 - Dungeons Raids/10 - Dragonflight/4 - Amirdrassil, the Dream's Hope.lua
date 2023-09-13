@@ -155,6 +155,55 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 			n(COMMON_BOSS_DROPS, {
 			}),
 			d(AllDifficulties, {
+				e(2564, {	-- Gnarlroot
+					["crs"] = { 209333 },	-- Gnarlroot
+					["g"] = {
+					},
+				}),
+				e(2554, {	-- Igira the Cruel
+					["crs"] = { 206689 },	-- Igira the Cruel <Zaqali Elder>
+					["g"] = {
+					},
+				}),
+				e(2557, {	-- Volcoross
+					["crs"] = { 208478 },	-- Volcoross
+					["g"] = {
+					},
+				}),
+				e(2555, {	-- Council of Dreams
+					["crs"] = {
+						208365,	-- Aerwynn <Council of Dreams>
+						208956,	-- Pip <Council of Dreams>
+						208363,	-- Urctos <Council of Dreams>
+					},
+					["g"] = {
+					},
+				}),
+				e(2553, {	-- Larodar, Keeper of the Flame
+					["crs"] = { 208445 },	-- Larodar, Keeper of the Flame
+					["g"] = {
+					},
+				}),
+				e(2563, {	-- Smolderon
+					["crs"] = { 200927 },	-- Smolderon <The Firelord>
+					["g"] = {
+					},
+				}),
+				e(2556, {	-- Nymue, Weaver of the Cycle
+					["crs"] = { 206172 },	-- Nymue <Weaver of the Cycle>
+					["g"] = {
+					},
+				}),
+				e(2565, {	-- Tindral Sageswift, Seer of the Flame
+					["crs"] = { 210601 },	-- Tindral Sageswift <Seer of Flame>
+					["g"] = {
+					},
+				}),
+				e(2519, {	-- Fyrakk the Blazing
+					["crs"] = { 204931 },	-- Fyrakk <The Blazing>
+					["g"] = {
+					},
+				}),
 			}),
 			d(LNHDifficulty, {
 			}),
