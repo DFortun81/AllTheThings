@@ -96,10 +96,8 @@ root(ROOTS.ExpansionFeatures, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED
 					},
 					["groups"] = {
 						r(101508),	-- The Codex of Xerrath (CI!)
-						-- #if BEFORE SHADOWLANDS
-						mount(148972),	-- Dreadsteed (MOUNT!) [TODO: Check with warlocks if these are collectible]
+						mount(148972),	-- Dreadsteed (MOUNT!)
 						mount(148970),	-- Felsteed (MOUNT!)
-						-- #endif
 					},
 				}),
 				q(32340, {	-- Plunder the Black Temple

@@ -841,24 +841,28 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["provider"] = { "n", 104241 },	-- Malfurion Stormrage
 						["coord"] = { 46.0, 51.1, 747 },
 					}),
-					spell(231437, {	-- Archdruid's Lunarwing Form
-						q(46317, {	-- Talon's Call
-								["provider"] = { "n", 118105 },	-- Grovewarden Proudhorn
-							["coord"] = { 43.6, 63.6, BROKEN_SHORE },
-						["sourceQuests"] = { 46251 },	-- Shard Times
-						}),
-						q(46318, {	-- Defense of Aviana
-							["provider"] = { "n", 106299 },	-- Thisalee Crow
-							["sourceQuests"] = { 46317 },	-- Talon's Call
-							}),
-						q(46319, {	-- You Can't Take the Sky from Me
-							["provider"] = { "n", 106299 },	-- Thisalee Crow
-							["sourceQuests"] = { 46318 },	-- Defense of Aviana
-							["g"] = {
-								mount(231437),	-- Archdruid's Lunarwing Form
-							},
-						}),
+
+					-- 7.2.0
+					q(46317, {	-- Talon's Call
+						["sourceQuests"] = {
+							47137,	-- Champions of Legionfall
+							45425,	-- Grovebound
+						},
+						["provider"] = { "n", 118105 },	-- Grovewarden Proudhorn
+						["coord"] = { 43.6, 63.6, BROKEN_SHORE },
 					}),
+					q(46318, {	-- Defense of Aviana
+						["sourceQuests"] = { 46317 },	-- Talon's Call
+						["provider"] = { "n", 106299 },	-- Thisalee Crow
+					}),
+					q(46319, {	-- You Can't Take the Sky from Me
+						["sourceQuests"] = { 46318 },	-- Defense of Aviana
+						["provider"] = { "n", 106299 },	-- Thisalee Crow
+						["g"] = {
+							mount(241857),	-- Archdruid's Lunarwing Form (MOUNT!)
+						},
+					}),
+					--
 
 					q(44237),	-- Ancients of War
 					q(41412, {	-- The Retreat

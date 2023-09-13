@@ -424,6 +424,11 @@ i(137215);	-- Cut Azsunite.  You get it for a split second after completing the 
 i(168326);	-- Eye of Theras
 i(171315);	-- Reuse me (MTMM)
 
+-- Mount
+i(37011);	-- Magic Broom
+i(33183);	-- Old Magic Broom
+i(33189);	-- Rickety Magic Broom
+i(33184);	-- Swift Magic Broom
 
 
 -- "Toy"
