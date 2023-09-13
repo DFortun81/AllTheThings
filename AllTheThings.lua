@@ -12466,7 +12466,7 @@ local IsSpellKnownHelper = function(spellID, rank, ignoreHigherRanks)
 	if spellID == 390631 and C_QuestLog.IsQuestFlaggedCompleted(66444) then	-- Ottuk Taming returning false for the above functions
 		return true;
 	end
-	if spellID == 241857 and C_QuestLog.IsQuestFlaggedCompleted(46319) then	-- Lunarwing returning false for the above functions
+	if spellID == 241857 or spellID == 231437 and C_QuestLog.IsQuestFlaggedCompleted(46319) then	-- Lunarwing returning false for the above functions
 		return true;
 	end
 	if spellID == 148972 or spellID == 148970 and C_QuestLog.IsQuestFlaggedCompleted(32325) then	-- Green Dread/Fel-Steed returning false for the above functions

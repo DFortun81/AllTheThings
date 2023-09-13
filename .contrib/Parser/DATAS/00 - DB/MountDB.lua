@@ -939,6 +939,7 @@ i(142552, 231428);	-- Smoldering Ember Wyrm
 -- PATCH 7.2.0 --
 -----------------
 i(143643, 232519);	-- Abyss Worm
+i(0, 231437);		-- Archdruid's Lunarwing Form
 i(0, 241857);		-- Archdruid's Lunarwing Form
 i(0, 229376);		-- Archmage's Prismatic Disc
 i(0, 229385);		-- Ban-lu, Grandmaster's Companion

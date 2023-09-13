@@ -859,6 +859,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["sourceQuests"] = { 46318 },	-- Defense of Aviana
 						["provider"] = { "n", 106299 },	-- Thisalee Crow
 						["g"] = {
+							mount(231437),	-- Archdruid's Lunarwing Form (MOUNT!)
 							mount(241857),	-- Archdruid's Lunarwing Form (MOUNT!)
 						},
 					}),
