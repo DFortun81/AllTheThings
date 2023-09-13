@@ -5,12 +5,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 	m(TREE_1, {
 		n(TREASURES, {
 			-- treasures don't have valid loot as of 7.September.2023. Revisit all of these and put the loot in later
-			--[[ hidden in some tree roots but unable to interact with it. Need to revisit later when it's fixed
-			o(???, {	-- Hidden Podling Stash
-				["questID"] = ???,
+			o(407862, {	-- Hidden Moonkin Stash
+				["questID"] = 77858,
 				["coord"] = { 47.5, 34.9, TREE_1 },
+				["g"] = {
+					i(210725),	-- Owl Post (Toy)
+				},
 			}),
-			]]--
 			o(408707, {	-- Odd Burl
 				["questID"] = 78006,
 				["coord"] = { 61.4, 63.2, TREE_1 },
