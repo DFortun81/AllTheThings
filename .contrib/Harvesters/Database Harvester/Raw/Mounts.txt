@@ -1713,3 +1713,12 @@
 424611@@@[PH] YellowBlack-Furred Bakar
 425338@@@Flourishing Whimsydrake
 425416@@@Verdant Gladiator's Slitherdrake
+10.2.0.51297
+424474@@@Shadow Dusk Dreamsaber
+424476@@@Winter Night Dreamsaber
+424479@@@Evening Sun Dreamsaber
+424482@@@Morning Flourish Dreamsaber
+424484@@@Anu'relos, Flame's Guidance
+426955@@@Springtide Dreamtalon
+427041@@@Ochre Dreamtalon
+427043@@@Snowfluff Dreamtalon

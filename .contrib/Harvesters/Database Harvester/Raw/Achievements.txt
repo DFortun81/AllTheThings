@@ -13206,3 +13206,24 @@
 19319@@@Haven't We Done This Before?
 19320@@@Cruelty Free
 19321@@@Swog Champion
+10.2.0.51297
+19315@@@Dream Chaser
+19322@@@Meaner Pastures
+19326@@@10.2 Upgrade System - Whelpling Trade-Up Unlocked
+19331@@@Amirdrassil, the Dream's Hope
+19333@@@Heroic: Amirdrassil, the Dream's Hope
+19334@@@Mythic: Amirdrassil, the Dream's Hope
+19335@@@Mythic: Gnarlroot
+19336@@@Mythic: Igira the Cruel
+19337@@@Mythic: Volcoross
+19338@@@Mythic: Council of Dreams
+19339@@@Mythic: Larodar, Keeper of the Flame
+19340@@@Mythic: Nymue, Weaver of the Cycle
+19341@@@Mythic: Smolderon
+19342@@@Mythic: Tindral Sageswift, Seer of the Flame
+19343@@@Mythic: Fyrakk the Blazing
+19344@@@Incarnate's Wake
+19345@@@Molten Incursion
+19346@@@The Viridian Weave
+19347@@@Fate of Amirdrassil
+19348@@@Gnarlroot kills (Raid Finder Amirdrassil, the Dream's Hope)
