@@ -1,7 +1,8 @@
 DREAM_WARDENS = createHeader({
-	readable = "Valdrakken Accord",
+	readable = "Dream Wardens",
 	icon = "Interface\\Icons\\ui_majorfaction_denizens",
 	text = {
-		en = [[~GetSpellInfo(370340)]],
+		en = "Dream Wardens",
+		-- en = [[~GetSpellInfo(370340)]],
 	},
 });

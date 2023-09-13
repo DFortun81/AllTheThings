@@ -142,11 +142,6 @@ root(ROOTS.NeverImplemented, {
 				i(205027),	-- Explorer's Banner (TOY!)
 				i(205463),	-- Skornak's Lava Ball (TOY!)
 			})),
-
-			-- 10.1.5
-			tier(DF_TIER, 1.5, sharedDataSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
-				i(206195),	-- Path of the Naaru (TOY!)
-			})),
 		}),
 	}),
 });
