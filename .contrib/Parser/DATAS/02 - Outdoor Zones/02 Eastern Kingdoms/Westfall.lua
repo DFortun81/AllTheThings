@@ -1695,7 +1695,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
-				-- #if BEFORE 4.0.3
+				-- #if BEFORE 10.1.7
 				i(1933, {	-- Staff of Conjuring
 					-- Moved to Brainwashed Noble in 10.1.7
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
@@ -1705,7 +1705,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 42.6, 71.6, WESTFALL },
 					},
 				}),
-					-- #endif
+				-- #endif
 				i(2327, {	-- Sturdy Leather Bracers
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
