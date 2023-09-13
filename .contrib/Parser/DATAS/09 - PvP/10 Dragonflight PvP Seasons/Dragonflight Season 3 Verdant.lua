@@ -1,10 +1,9 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
---[[
 root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	header(HEADERS.Achievement, SEASON_VERDANT, {
-		["icon"] = "Interface\\Icons\\inv_serpentmountgladiator",
+		["icon"] = "Interface\\Icons\\inv_serpentmountgladiator_green",
 		["g"] = {
 			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 } }, {
 				ach(19140, {	-- Verdant Combatant [A]
@@ -22,19 +21,19 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				ach(19133),		-- Rival I: Dragonflight Season 3
 				ach(19155),		-- Rival II: Dragonflight Season 3
 				ach(19156, {	-- Duelist: Dragonflight Season 3
-					-- ill(6836),	-- Shadow Flame (ILLUSION!)
-					-- i(205361),	-- Obsidian Gladiator's Prestigious Cloak
+					ill(7032),	-- Verdant Crush (ILLUSION!)
+					i(209609),	-- Verdant Gladiator's Prestigious Cloak
 				}),
 				ach(19090, {	-- Elite: Dragonflight Season 3
-					-- i(205362),	-- Obsidian Gladiator's Tabard
+					i(209610),	-- Verdant Gladiator's Tabard
 				}),
 				ach(19091, {	-- Gladiator: Dragonflight Season 3
-					-- i(205233),	-- Obsidian Gladiator's Slitherdrake (MOUNT!)
-					-- i(205865),	-- Winding Slitherdrake: Embodiment of the Obsidian Gladiator (DM!)
+					i(210345),	-- Verdant Gladiator's Slitherdrake (MOUNT!)
+					i(210064),	-- Winding Slitherdrake: Embodiment of the Verdant Gladiator (DM!)
 				}),
-				ach(17778),		-- Verdant Gladiator's Drake
+				ach(19295),		-- Verdant Gladiator's Drake
 				ach(19132, {	-- Verdant Gladiator: Dragonflight Season 3
-					title(xxxxx),	-- Verdant Gladiator <Name>
+					title(526),	-- Verdant Gladiator <Name>
 				}),
 				-- RBG
 				ach(19162, {	-- Hero of the Alliance: Verdant
@@ -44,18 +43,19 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["races"] = HORDE_ONLY,
 				}),
 				-- Solo
-				--ach(17801, {	-- Legend: Dragonflight Season 2
-				--	i(206267),	-- Verdant Legend's Pennant (TOY!)
-				--}),
+				ach(19304, {	-- Legend: Dragonflight Season 3
+					i(210497),	-- Verdant Legend's Pennant (TOY!)
+				}),
 				ach(19131, {	-- Verdant Legend: Dragonflight Season 3
-					-- title(XXXXX),	-- Verdant Legend <Name>
+					title(525),	-- Verdant Legend <Name>
 				}),
 				--ach(00000, {	-- Verdant Soloist: Dragonflight Season 2
 				--	title(),	-- Verdant Soloist <Name>
 				--}),
 				-- Fashion
-				-- ach(18249),		-- Verdant Tie Event
+				ach(19276),	-- Verdant Vogue
 			})),
+			--[[
 			filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 } }, {
 				i(205246, {	-- Vicious War Snail [A] (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
@@ -1664,7 +1664,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				i(204168),	-- Technique: Obsidian Combatant's Insignia of Alacrity (RECIPE!)
 				i(204167),	-- Technique: Obsidian Combatant's Medallion (RECIPE!)
 			}),
+			--]]
 		},
 	}),
 }))));
---]]
