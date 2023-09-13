@@ -68,6 +68,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					q(76522, {	-- Reverie Of Battle
 						["coord"] = { 64.1, 65.8, TREE_1 },
 					}),
+					q(78370, {	-- Claws for Concern
+						["coord"] = { 37.7, 67.5, TREE_1 },
+					}),
+					q(77765, {	-- Documenting a Dream
+						["coord"] = { 38.2, 64.2, TREE_1 },
+					}),
 				})),
 			},
 		}),
