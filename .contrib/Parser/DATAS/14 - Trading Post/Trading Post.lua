@@ -1,6 +1,61 @@
 -------------------------------------
 --     T R A D I N G   P O S T     --
 -------------------------------------
+--[[OctoberSets	i(208665, {	-- Webbed Saronite Exoskeleton
+					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+					["classes"] = DEATHKNIGHT,
+					["groups"] = {
+						i(208627),	-- Webbed Saronite Headguard
+						i(208628),	-- Webbed Saronite Spaulders
+						i(208629),	-- Webbed Saronite Girdle
+					},
+				}),
+				i(208666, {	-- Webbed Saronite Weaponry
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+					["classes"] = DEATHKNIGHT,
+					["groups"] = {
+						i(208630),	-- Webbed Saronite Greataxe
+						i(208631),	-- Webbed Saronite Eviscerator
+						i(208632),	-- Webbed Saronite Devourer
+					},
+				}),
+				i(208667, {	-- Nathreza Blasphemer's Flames
+					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+					["classes"] = DEMONHUNTER,
+					["groups"] = {
+						i(208633),	-- Nathreza Blasphemer's Horns
+						i(208634),	-- Nathreza Blasphemer's Mantle
+						i(208635),	-- Nathreza Blasphemer's Shard
+					},
+				}),
+				i(208668, {	-- Nathreza Blasphemer's Glaives
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+					["classes"] = DEMONHUNTER,
+					["groups"] = {
+						i(208636),	-- Nathreza Blasphemer's Wingglaive
+						i(208637),	-- Nathreza Blasphemer's Warglaive
+					},
+				}),
+				i(208663, {	-- Ashamane's Vestment of Rebirth
+					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+					["classes"] = DRUID,
+					["groups"] = {
+						i(208620),	-- Ashamane's Helm of Rebirth
+						i(208621),	-- Ashamane's Spaulders of Rebirth
+						i(208622),	-- Ashamane's Fangs of Rebirth
+					},
+				}),
+				i(208664, {	-- Ashamane's Blessings of Rebirth
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+					["classes"] = DRUID,
+					["groups"] = {
+						i(208623),	-- Ashamane's Blade of Rebirth
+						i(208624),	-- Ashamane's Claws of Rebirth
+						i(208625),	-- Ashamane's Crescent of Rebirth
+						i(208626),	-- Ashamane Jewel of Rebirth
+					},
+				}),
+				--]]
 local TRADERS_TENDER = 2032;
 root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	n(ACHIEVEMENTS, {

@@ -1994,24 +1994,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(COSMETIC, {
 				---- TRADING POST ----
-				i(208620),	-- Ashamane's Helm of Rebirth
-				i(208621),	-- Ashamane's Spaulders of Rebirth
-				i(208622),	-- Ashamane's Fangs of Rebirth
-				i(208623),	-- Ashamane's Blade of Rebirth
-				i(208624),	-- Ashamane's Claws of Rebirth
-				i(208625),	-- Ashamane's Crescent of Rebirth
-				i(208626),	-- Ashamane Jewel of Rebirth
-				i(208627),	-- Webbed Saronite Headguard
-				i(208628),	-- Webbed Saronite Spaulders
-				i(208629),	-- Webbed Saronite Girdle
-				i(208630),	-- Webbed Saronite Greataxe
-				i(208631),	-- Webbed Saronite Eviscerator
-				i(208632),	-- Webbed Saronite Devourer
-				i(208633),	-- Nathreza Blasphemer's Horns
-				i(208634),	-- Nathreza Blasphemer's Mantle
-				i(208635),	-- Nathreza Blasphemer's Shard
-				i(208636),	-- Nathreza Blasphemer's Wingglaive
-				i(208637),	-- Nathreza Blasphemer's Warglaive
 				i(208638),	-- Savage Champion's Vision
 				i(208639),	-- Savage Champion's Tusks
 				i(208640),	-- Savage Champion's Belt
@@ -2030,12 +2012,6 @@ root(ROOTS.Unsorted, {
 				i(208659),	-- Flayer of the Alluring Call
 				i(208660),	-- Effigy of the Alluring Call
 				i(208661),	-- Caduceus of the Alluring Call
-				i(208663),	-- Ashamane's Vestment of Rebirth
-				i(208664),	-- Ashamane's Blessings of Rebirth
-				i(208665),	-- Webbed Saronite Exoskeleton
-				i(208666),	-- Webbed Saronite Weaponry
-				i(208667),	-- Nathreza Blasphemer's Flames
-				i(208668),	-- Nathreza Blasphemer's Glaives
 				i(208669),	-- Possessed Watcher Guise
 				i(208671),	-- Possessed Watcher Arsenal
 				i(208672),	-- Jewels of the Alluring Call
