@@ -236,6 +236,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			["questID"] = 77301,
 			["coord"] = { 38.6, 54.9, TIMELESS_ISLE },
 		}),
+		o(405534, {	-- Loose Dirt Mound
+			["questID"] = 77295,
+			["coord"] = { 74.5, 86.1, TIRAGARDE_SOUND },
+		}),
 	})),
 	n(QUESTS, {
 		-- Day 1 --
