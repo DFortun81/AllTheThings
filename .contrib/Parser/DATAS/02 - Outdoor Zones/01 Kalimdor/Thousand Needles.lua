@@ -2575,8 +2575,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(ZONE_DROPS, {
 				i(1493, {	-- Heavy Marauder Scimitar
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 15.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 4099,	-- Galak Marauder
+					["coords"] = {
+						{ 44.6, 33.6, THOUSAND_NEEDLES },
+						{ 20.6, 22.2, THOUSAND_NEEDLES },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 40062,	-- Galak Mauler
+					["coords"] = {
+						{ 88.6, 46.8, THOUSAND_NEEDLES },
+						{ 90.2, 54.4, THOUSAND_NEEDLES },
+						{ 87.6, 52.0, THOUSAND_NEEDLES },
+						{ 86.4, 49.0, THOUSAND_NEEDLES },
+					},
+					-- #endif
 				}),
 				-- #if AFTER TBC
 				i(5773, {	-- Pattern: Robes of Arcana

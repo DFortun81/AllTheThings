@@ -687,34 +687,56 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 2255,	-- Crushridge Mage
 				}),
 				-- #endif
+				-- #if AFTER 10.1.7
 				i(5775, {	-- Pattern: Black Silk Pack
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 2242,	-- Syndicate Spy
+					["timeline"] = { "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["description"] = "This pattern is very rare. Expect 1000+ of kills before looting it.",
+					["cr"] = 2242,	-- Syndicate Spy (Alterac Mountains)
+					["coords"] = {
+						{ 58.0, 23.8, HILLSBRAD_FOOTHILLS },
+						{ 53.6, 14.8, HILLSBRAD_FOOTHILLS },
+						{ 49.6, 10.0, HILLSBRAD_FOOTHILLS },
+						{ 54.6, 26.6, HILLSBRAD_FOOTHILLS },
+						{ 55.2, 23.6, HILLSBRAD_FOOTHILLS },
+						{ 55.6, 17.4, HILLSBRAD_FOOTHILLS },
+						{ 53.6, 14.8, HILLSBRAD_FOOTHILLS },
+						{ 52.6, 12.0, HILLSBRAD_FOOTHILLS },
+					},
 				}),
+				-- #endif
 				i(3745, {	-- Rune of Opening
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 2358,	-- Dalaran Summoner
 				}),
 				i(1602, {	-- Sickle Axe
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 2287,	-- Crushridge Warmonger
+					["coords"] = {
+						{ 42.2, 28.8, ALTERAC_MOUNTAINS },
+						{ 42.8, 31.0, ALTERAC_MOUNTAINS },
+						{ 44.2, 33.8, ALTERAC_MOUNTAINS },
+						{ 44.4, 30.4, ALTERAC_MOUNTAINS },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 2254,	-- Crushridge Mauler
+					["coords"] = {
+						{ 47.2, 28.6, ALTERAC_MOUNTAINS },
+						{ 46.4, 26.4, ALTERAC_MOUNTAINS },
+						{ 44.6, 22.6, ALTERAC_MOUNTAINS },
+						{ 48.6, 26.4, ALTERAC_MOUNTAINS },
+					},
+					-- #endif
 				}),
 				i(5245, {	-- Summoner's Wand
 					["races"] = HORDE_ONLY,
 					["cr"] = 2358,	-- Dalaran Summoner
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
-					-- #if BEFORE 4.0.3
-					["coords"] = {
-					--	{ 23.4, 35.4, ALTERAC_MOUNTAINS },
-					--	{ 25.4, 35.4, ALTERAC_MOUNTAINS },
-					},
-					-- #elseif AFTER 10.1.7
 					["coords"] = {
 						{ 30.8, 31.6, ALTERAC_MOUNTAINS },
 						{ 33.6, 40.6, ALTERAC_MOUNTAINS },
 						{ 27.8, 40.6, ALTERAC_MOUNTAINS },
 					},
-					-- #endif
 				}),
 			}),
 		},

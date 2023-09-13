@@ -3284,25 +3284,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
+				-- #if BEFORE CATA
+				-- Recipe got moved to Alterac Mountain only
 				i(5775, {	-- Pattern: Black Silk Pack
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
+					["timeline"] = { "removed 4.0.3" },	
 					["cr"] = 2434,	-- Shadowy Assassin
-					-- #elseif AFTER 10.1.7
-					["description"] = "This pattern is very rare. Expect 1000+ of kills before looting it.",
-					["cr"] = 2242,	-- Syndicate Spy (Alterac Mountains)
-					["coords"] = {
-						{ 58.0, 23.8, HILLSBRAD_FOOTHILLS },
-						{ 53.6, 14.8, HILLSBRAD_FOOTHILLS },
-						{ 49.6, 10.0, HILLSBRAD_FOOTHILLS },
-						{ 54.6, 26.6, HILLSBRAD_FOOTHILLS },
-						{ 55.2, 23.6, HILLSBRAD_FOOTHILLS },
-						{ 55.6, 17.4, HILLSBRAD_FOOTHILLS },
-						{ 53.6, 14.8, HILLSBRAD_FOOTHILLS },
-						{ 52.6, 12.0, HILLSBRAD_FOOTHILLS },
-					},
-					-- #endif
 				}),
+				-- #endif
 				-- #if BEFORE CATA
 				i(5772, {	-- Pattern: Red Woolen Bag
 					["cr"] = 2264,	-- Hillsbrad Tailor
