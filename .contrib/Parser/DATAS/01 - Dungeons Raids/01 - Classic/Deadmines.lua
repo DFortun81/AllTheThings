@@ -413,8 +413,11 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				-- #if BEFORE 4.0.3
 				["cr"] = 1726,	-- Defias Magician
 				-- #elseif AFTER 10.1.7
-				["description"] = "The item drops from Defias Pirates which are located on the boat near the end of the dungeon.",
-				["cr"] = 48522,	-- Defias Pirate
+				["description"] = "The item drops from Blood Wizards or Defias Pirates which are located on the boat near the end of the dungeon.",
+				["crs"] = {
+					48417,	-- Blood Wizard
+					48522,	-- Defias Pirate
+				},
 				-- #endif
 			}),
 			i(1925, {	-- Defias Rapier
