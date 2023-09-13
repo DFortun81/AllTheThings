@@ -526,6 +526,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			--
+			q(78041, {	-- Sky Mother's Ire -- quest was offered but disappeared immediately after accepting it for some reason
+				--["sourceQuests"] = {  },	-- no requirement as of 7.Sept
+				["provider"] = { "n", 209318 },	-- Cenarius
+				["coord"] = { 50.8, 62.1, TREE_1 },
+			}),
+			--
 			q(78381, {	-- Dreams Unified
 				["sourceQuests"] = { 77283 },	-- A Multi-Front Battle
 				["provider"] = { "n", 208669 },	-- Lady Moonberry
@@ -574,6 +580,8 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		-- there is likely one questID unique to each class. Need to test this theory
 		q(78257),	-- Quest "What Do I Call You?": Pick the title of "Highlord"
 		q(77834),	-- Quest "What Do I Call You?": Pick the title of "Archdruid"
+		--
+		q(78483),	-- Consumed a dreamfruit at 51.28, 59.97. Gives a buff selection like torghast powers. Selected "Feral Overflow" - might be a unique ID for each buff
 		-- ???
 		--q(77526),	-- pop after picked up qID 77178 / 'Chest' (spellID 423213)
 		--q(77491),	-- pop while was afk / 'Chest' (spellID 420623)
