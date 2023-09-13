@@ -744,7 +744,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		q(77934, {	-- A Complete Inventory
 			["provider"] = { "i", 208936 },
 			["description"] = "Use your torch to help locate the report.",
-			["sourceQuest"] = 77928,	-- They Are Always Listening
+			-- ["sourceQuest"] = 77928,	-- They Are Always Listening
 			["coord"] = { 44.1, 60.2, VALDRAKKEN },
 		}),
 
@@ -781,7 +781,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		}),
 		q(77954, {	-- A Curious Orb
 			["provider"] = { "i", 208944 },
-			["sourceQuest"] = 77953,	-- A Sphere in Danger
+			-- ["sourceQuest"] = 77953,	-- A Sphere in Danger
 			["coord"] = { 47.4, 46.7, VALDRAKKEN },
 		}),
 		-- Day 14 --
