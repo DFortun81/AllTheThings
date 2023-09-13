@@ -7,13 +7,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			n(208156, {	-- Moon Priestress Lasara <Renown Quatermaster> TODO: PH for easy copy-paste in future
 				["coord"] = { 50.3, 61.6, TREE_1 },
 				["g"] = {
-					i(210482, {	-- Flourishing Whimsydrake: Back Fins
+					i(210482, {	-- Flourishing Whimsydrake: Back Fins (DM!)
 						["cost"] = { { "c", DRAGON_SUPPLIES, 225 } },
 					}),
-					i(210483, {	-- Flourishing Whimsydrake: Ridged Brow
+					i(210483, {	-- Flourishing Whimsydrake: Ridged Brow (DM!)
 						["cost"] = { { "c", DRAGON_SUPPLIES, 225 } },
 					}),
-					i(210484, {	-- Flourishing Whimsydrake: Underbite Snout
+					i(210484, {	-- Flourishing Whimsydrake: Underbite Snout (DM!)
 						["cost"] = { { "c", DRAGON_SUPPLIES, 225 } },
 					}),
 					i(210702, {	-- Solar Synthesis Gloves
@@ -28,13 +28,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210704, {	-- Fallen Protector Handguards
 						["cost"] = { { "c", DRAGON_SUPPLIES, 300 } },
 					}),
-					i(210485, {	-- Flourishing Whimsydrake: Long Snout
+					i(210485, {	-- Flourishing Whimsydrake: Long Snout (DM!)
 						["cost"] = { { "c", DRAGON_SUPPLIES, 450 } },
 					}),
-					i(210487, {	-- Flourishing Whimsydrake: Neck Fins
+					i(210487, {	-- Flourishing Whimsydrake: Neck Fins (DM!)
 						["cost"] = { { "c", DRAGON_SUPPLIES, 450 } },
 					}),
-					i(210486, {	-- Flourishing Whimsydrake: Horns
+					i(210486, {	-- Flourishing Whimsydrake: Horns (DM!)
 						["cost"] = { { "c", DRAGON_SUPPLIES, 450 } },
 					}),
 					i(210703, {	-- Solar Synthesis Crown
@@ -49,13 +49,69 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210705, {	-- Fallen Protector Greathelm
 						["cost"] = { { "c", DRAGON_SUPPLIES, 600 } },
 					}),
-					i(210479, {	-- Flourishing Whimsydrake: Night Scales
+					i(210692, {	-- Juniper (PET!)
+						["cost"] = { { "c", DRAGON_SUPPLIES, 375 } },
+					}),
+					i(210691, {	-- Spruce (PET!)
+						["cost"] = { { "c", DRAGON_SUPPLIES, 375 } },
+					}),
+					i(210790, {	-- Ensemble: Elegant Green Dragon Outerwear
+						["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
+					}),
+					i(210677, {	-- Survivalist's Shovel
+						["cost"] = { { "c", DRAGON_SUPPLIES, 300 } },
+					}),
+					i(210685, {	-- Ranger's Longbow
+						["cost"] = { { "c", DRAGON_SUPPLIES, 300 } },
+					}),
+					i(210680, {	-- Caretaker's Trowel
+						["cost"] = { { "c", DRAGON_SUPPLIES, 300 } },
+					}),
+					i(210679, {	-- Cultivator's Watering Can
+						["cost"] = { { "c", DRAGON_SUPPLIES, 300 } },
+					}),
+					i(210676, {	-- Elderwood Cane
+						["cost"] = { { "c", DRAGON_SUPPLIES, 300 } },
+					}),
+					i(209951, {	-- Reins of the Lunar Dreamstag (MOUNT!)
+						["cost"] = { { "c", DRAGON_SUPPLIES, 1200 } },
+					}),
+					i(209949, {	-- Reins of the Suntouched Dreamstag (MOUNT!)
+						["cost"] = { { "c", DRAGON_SUPPLIES, 1200 } },
+					}),
+					i(210479, {	-- Flourishing Whimsydrake: Night Scales (DM!)
 						["cost"] = { { "c", DRAGON_SUPPLIES, 1250 } },
 					}),
-					i(210481, {	-- Flourishing Whimsydrake: Sunset Scales
+					i(210481, {	-- Flourishing Whimsydrake: Sunset Scales (DM!)
 						["cost"] = { { "c", DRAGON_SUPPLIES, 1250 } },
 					}),
 				},
+			}),
+			n(211209, {	-- Elianna <Dream Infuser>
+				["coord"] = { 50.2, 61.8, TREE_1 },
+				["g"] = {
+					i(210785, {	-- Snorr (PET!)
+						["cost"] = { { "i", 210776, 1 } },	-- 1x Lesser Dream Infusion
+					}),
+					i(210553, {	-- Dreamborne Scarab (PET!)
+						["cost"] = { { "c", 2777, 1 } },
+					}),
+					i(210555, {	-- Dreamhoof (PET!)
+						["cost"] = { { "c", 2777, 1 } },
+					}),
+					i(210567, {	-- Memorie (PET!)
+						["cost"] = { { "c", 2777, 1 } },
+					}),
+					i(210652, {	-- Somnolet (PET!)
+						["cost"] = { { "c", 2777, 1 } },
+					}),
+					i(210505, {	-- Reverie (PET!)
+						["cost"] = { { "c", 2777, 1 } },
+					}),
+					i(210777, {	-- Drowsey (PET!)
+						["cost"] = { { "c", 2777, 1 } },
+					}),
+				}
 			}),
 			n(211069, {	-- Thislefir
 				["coord"] = { 59.8, 16.9, TREE_1 },
@@ -201,6 +257,51 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210039, {	-- Barkbloom Warglaive
 						["cost"] = { { "c", 2651, 200 } },
 					}),
+					i(210689, {	-- Snoots (PET!)
+						["cost"] = { { "c", 2651, 800 } },
+					}),
+					i(210690, {	-- Elmer (PET!)
+						["cost"] = { { "c", 2651, 800 } },
+					}),
+					i(210571, {	-- Snoozles (PET!)
+						["cost"] = { { "c", 2651, 800 } },
+					}),
+					i(210570, {	-- Napps (PET!)
+						["cost"] = { { "c", 2651, 800 } },
+					}),
+					i(210651, {	-- Dustite (PET!)
+						["cost"] = { { "c", 2651, 800 } },
+					}),
+					i(210648, {	-- Seedle (PET!)
+						["cost"] = { { "c", 2651, 800 } },
+					}),
+					i(209950, {	-- Reins of the Rekindled Dreamstag (MOUNT!)
+						["cost"] = { { "c", 2651, 2500 } },
+					}),
+					i(209947, {	-- Reins of the Blossoming Dreamstag (MOUNT!)
+						["cost"] = { { "c", 2651, 2500 } },
+					}),
+					i(210775, {	-- Reins of the Snowfluff Dreamtalon (MOUNT!)
+						["cost"] = { { "c", 2651, 2500 } },
+					}),
+					i(210769, {	-- Reins of the Springtide Dreamtalon (MOUNT!)
+						["cost"] = { { "c", 2651, 2500 } },
+					}),
+					i(210057, {	-- Reins of the Morning Flourish Dreamsaber (MOUNT!)
+						["cost"] = { { "c", 2651, 2500 } },
+					}),
+					i(210058, {	-- Reins of the Evening Sun Dreamsaber (MOUNT!)
+						["cost"] = { { "c", 2651, 2500 } },
+					}),
+				},
+			}),
+			n(212903, {	-- Thaelishar Groveheart <Fauna Specialist>
+				["coord"] = { 60.3, 16.9, TREE_1 },
+				["g"] = {
+					i(210764),	-- Silent Mark of the Dreamtalon
+					i(210767),	-- Silent Mark of the Dreamstag
+					i(210755),	-- Silent Mark of the Dreamsaber
+					i(210766),	-- Silent Mark of the Umbraclaw
 				},
 			}),
 		}),

@@ -37,6 +37,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					}),
 					pvp(q(78215, {	-- Rooted in Danger
 						["coord"] = { 44.8, 41.9, TREE_1 },
+						["g"] = {
+							i(209837),	-- Faint Whispers of Dreaming
+							--TODO: move if it will be generic reward and not pvp only
+						},
 					})),
 					q(76520, {	-- A Shared Dream
 						["coord"] = { 63.7, 73.4, TREE_1 },

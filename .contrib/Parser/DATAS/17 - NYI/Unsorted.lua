@@ -1093,7 +1093,6 @@ root(ROOTS.Unsorted, {
 			i(208747),	-- Dreamtender's Charm
 			i(208748),	-- Dreamtender's Charm
 			i(208757),	-- Ash's Recipes to Delight and Nourish your Plant Pals
-			i(208775),	-- Ashphodel Research Notes
 			i(208798),	-- Recorded Memories of Tyr's Guard
 			i(208821),	-- Aspects' Token of Merit
 			i(208825),	-- Junior Timekeeper's Racing Belt
@@ -1498,7 +1497,6 @@ root(ROOTS.Unsorted, {
 			i(209776),	-- Verdant Aspirant's Cape
 			i(209777),	-- Verdant Aspirant's Greatcloak
 			i(209806),	-- Cataloger's Film
-			i(209837),	-- Faint Whispers of Dreaming
 			i(209839),	-- Tangible Whispers of Dreaming
 			i(209853),	-- Unstable Water Walking Potion
 			i(209856),	-- Dilated Time Pod
@@ -1513,7 +1511,6 @@ root(ROOTS.Unsorted, {
 			i(209867),	-- Thornspeaker Ritual Knife
 			i(209868),	-- Thornspeaker Ritual Knife
 			i(209871),	-- Winter Veil Gift
-			i(209875),	-- Gorestained Armor Scrap
 			i(209880),	-- Curve of Starry Dusks
 			i(209881),	-- Fystia's Fiery Kris
 			i(209882),	-- Maruud's Undertow
@@ -1576,11 +1573,7 @@ root(ROOTS.Unsorted, {
 			i(209941),	-- Spirited Stag's Curve
 			i(209942),	-- Fearless Faerie's Kris
 			i(209943),	-- Spirited Stag's Claymore
-			i(209947),	-- Blossoming Dreamstag
 			i(209948),	-- Spring's Keeper
-			i(209949),	-- Suntouched Dreamstag
-			i(209950),	-- Rekindled Dreamstag
-			i(209951),	-- Lunar Dreamstag
 			i(209952),	-- Mark of Q'onzu
 			i(209953),	-- Dancing Dream Blossoms
 			i(209954),	-- Moragh's Favorite Rock
@@ -1596,8 +1589,6 @@ root(ROOTS.Unsorted, {
 			i(210049),	-- The Legend of Elun'Ahir
 			i(210050),	-- Mysterious Seeds
 			i(210052),	-- Ageless Blossoms
-			i(210057),	-- [PH] Green Dreamsaber
-			i(210058),	-- [PH] Yellow Dreamsaber
 			i(210059),	-- [PH] Blue Dreamsaber
 			i(210060),	-- [PH] Purple Dreamsaber
 			i(210061),	-- [PH] Mythic Raid Fire Owl
@@ -1668,7 +1659,6 @@ root(ROOTS.Unsorted, {
 			i(210132),	-- Wildleaf Greatsword
 			i(210133),	-- Harvest Guardian Cloak
 			i(210134),	-- Wind Wolf Shroud
-			i(210136),	-- Uprooted Ashphodel
 			i(210140),	-- [PH] Black-Furred Bakar
 			i(210141),	-- [PH] Brown-Furred Spiky Bakar
 			i(210142),	-- [PH] Red-Furred Bakar
@@ -1699,7 +1689,6 @@ root(ROOTS.Unsorted, {
 			i(210173),	-- Formula: Enchanted Whelpling's Dreaming Crest
 			i(210174),	-- Formula: Illusory Adornment: Dreams
 			i(210175),	-- Formula: Enchant Weapon - Dreaming Devotion
-			i(210176),	-- Q'onzu's Vision Charm
 			i(210180),	-- Emerald Flightstone
 			i(210184),	-- Half-Filled Dreamless Sleep Potion
 			i(210185),	-- Splash Potion of Narcolepsy
@@ -1831,7 +1820,6 @@ root(ROOTS.Unsorted, {
 			i(210450),	-- Flaming Orb
 			i(210451),	-- Imp Tail
 			i(210452),	-- Small Demon Horn
-			i(210453),	-- Bundle of Flame Pollen
 			i(210456),	-- Dreaming Antler Fragment
 			i(210457),	-- Fish Bones
 			i(210458),	-- Winnie's Notes on Flora and Fauna
@@ -1872,7 +1860,6 @@ root(ROOTS.Unsorted, {
 			i(210502),	-- Verdant Gladiator's Axe
 			i(210503),	-- Verdant Gladiator's Dagger
 			i(210504),	-- Verdant Gladiator's Sickle
-			i(210505),	-- Reverie
 			i(210506),	-- Verdant Gladiator's Warglaive
 			i(210507),	-- Verdant Gladiator's Scythe
 			i(210508),	-- Verdant Gladiator's Staff
@@ -1905,15 +1892,10 @@ root(ROOTS.Unsorted, {
 			i(210550),	-- Set Keystone Map: Dawn of the Infinite: Galakrond's Fall
 			i(210551),	-- Set Keystone Map: Dawn of the Infinite: Murozond's Rise
 			i(210552),	-- Cowl of the Wolf Ancient
-			i(210553),	-- Dreamborne Scarab
 			i(210554),	-- Blazing Feather
-			i(210555),	-- Dreamhoof
 			i(210556),	-- Ivy
 			i(210565),	-- Soft Somnowl Feather
 			i(210566),	-- Somnowl Feather Strand
-			i(210567),	-- Memorie
-			i(210570),	-- Napps
-			i(210571),	-- Snoozles
 			i(210572),	-- Verdant Equipment Chest
 			i(210595),	-- Dreaming Equipment Chest
 			i(210633),	-- Kal'andu
@@ -1921,10 +1903,7 @@ root(ROOTS.Unsorted, {
 			i(210645),	-- Feather of Friends
 			i(210646),	-- Flourishing Dream Helm
 			i(210647),	-- Mark of the Umbramane
-			i(210648),	-- Seedle
 			i(210650),	-- Mark of the Keen-Eyed Dreamsaber
-			i(210651),	-- Dustite
-			i(210652),	-- Somnolet
 			i(210656),	-- Winter Veil Socks
 			i(210657),	-- Gently Shaken Gift
 			i(210661),	-- Dreamcatcher's Crescent
@@ -1939,21 +1918,12 @@ root(ROOTS.Unsorted, {
 			i(210673),	-- Verdant Tether
 			i(210674),	-- Mark of the Sable Dreamtalon
 			i(210675),	-- Gardener's Lightstaff
-			i(210676),	-- Elderwood Cane
-			i(210677),	-- Survivalist's Shovel
 			i(210678),	-- Verdant Gleaner's Scythe
-			i(210679),	-- Cultivator's Watering Can
-			i(210680),	-- Caretaker's Trowel
 			i(210682),	-- Camper's Knife
 			i(210683),	-- Mark of the Dreamtalon Matriarch
 			i(210684),	-- Mark of the Thriving Dreamtalon
-			i(210685),	-- Ranger's Longbow
 			i(210686),	-- Grovekeeper's Barrier
 			i(210687),	-- Ironfur Sample
-			i(210689),	-- Snoots
-			i(210690),	-- Elmer
-			i(210691),	-- Spruce
-			i(210692),	-- Juniper
 			i(210700),	-- Auburn Scavenger Gauntlets
 			i(210701),	-- Auburn Scavenger Helm
 			i(210702),	-- Solar Synthesis Gloves

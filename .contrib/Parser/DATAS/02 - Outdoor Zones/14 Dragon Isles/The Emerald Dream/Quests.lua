@@ -531,6 +531,61 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["provider"] = { "n", 209318 },	-- Cenarius
 				["coord"] = { 50.8, 62.1, TREE_1 },
 			}),
+			--[[They didn't push qid on pickin them up, only when turn in]]--
+			q(78042, {	-- Aviana's Assessment -- (quest above can be turn in at coord for this npc, every quest in this chain is mess)
+				["sourceQuests"] = { 78041 },	-- Sky Mother's Ire
+				["provider"] = { "n", 210587 },	-- Aviana
+				["coord"] = { 65.8, 37.6, TREE_1 },
+				["g"] = {
+					i(209875),	-- Gorestained Armor Scrap (QI!)
+					i(208775),	-- Ashphodel Research Notes (QI) / TODO: PH for now
+				},
+			}),
+			q(78043, {	-- Q'Onzu's Quandary
+				["sourceQuests"] = { 78041 },	-- Sky Mother's Ire
+				["provider"] = { "n", 210585 },	-- Q'onzu <Loa of Change>
+				["coord"] = { 65.9, 37.8, TREE_1 },
+			}),
+			q(77788, {	-- Ashphodel Research Notes / can be looted from same npcs as required for qID 78042
+				["sourceQuests"] = { 78041 },	-- Sky Mother's Ire / or Aviana's Assessment
+				["provider"] = { "i", 208775 },	-- Ashphodel Research Notes
+				--["coord"] = { 65.9, 37.8, TREE_1 },
+				["g"] = {
+					i(210453),	-- Bundle of Flame Pollen (QI!) / @ 60.8, 44.9 while poi broken
+				},
+			}),
+			q(78044, {	-- Apalling Pollen
+				["sourceQuests"] = {
+					78042,	-- Aviana's Assessment
+					78043,	-- Q'Onzu's Quandary
+					77788,	-- Ashphodel Research Notes
+				},
+				["provider"] = { "n", 210585 },	-- Q'onzu <Loa of Change>
+				["coord"] = { 65.9, 37.8, TREE_1 },
+				["g"] = {
+					i(210176),	-- Q'onzu's Vision Charm (QI!)
+				},
+			}),
+			q(78045, {	-- Uproot the Cause
+				["sourceQuests"] = {
+					78042,	-- Aviana's Assessment
+					78043,	-- Q'Onzu's Quandary
+					77788,	-- Ashphodel Research Notes
+				},
+				["provider"] = { "n", 210587 },	-- Aviana
+				["coord"] = { 65.8, 37.6, TREE_1 },
+				["g"] = {
+					i(210136),	-- Uprooted Ashphodel (QI!)
+				},
+			}),
+			q(78046, {	-- Overseer Oversight
+				["sourceQuests"] = {
+					78044,	-- Apalling Pollen
+					78045,	-- Uproot the Cause
+				},
+				["provider"] = { "n", 210587 },	-- Aviana
+				["coord"] = { 65.8, 37.6, TREE_1 },
+			}),
 			--
 			q(78381, {	-- Dreams Unified
 				["sourceQuests"] = { 77283 },	-- A Multi-Front Battle

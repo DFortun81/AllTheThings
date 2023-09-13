@@ -2881,6 +2881,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstSkin(74134, 193269),	-- Skinning Grumbletrunk
 			FirstSkin(74180, 187781),	-- Skinning Hamett
 			FirstSkin(74203, 193229),	-- Skinning Henlare
+			FirstSkin(78344, 210075, ADDED_10_2_0),	-- Skinning Henri Snufftail
 			FirstSkin(74179, 188095),	-- Skinning Hunter of the Deep
 			FirstSkin(74125, 193648),	-- Skinning Infernum
 			FirstSkin(74127, 193647),	-- Skinning Karantun
