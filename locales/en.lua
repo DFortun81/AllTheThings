@@ -714,8 +714,8 @@ local L = {
 	["SECRETS_HEADER"] = "Secrets";
 	["LIMITED_QUANTITY"] = "This has a limited quantity and may not always be present on the vendor.";
 	["SOURCE_ID_MISSING"] = "Please report this Item and where it was acquired to the ATT Discord in #retail-errors!";
-	["ADDED_WITH_PATCH_FORMAT"] = "This gets added in or during patch %s";
-	["REMOVED_WITH_PATCH_FORMAT"] = "This gets removed in patch %s";
+	["ADDED_WITH_PATCH_FORMAT"] = "This gets added with or during patch %s";
+	["REMOVED_WITH_PATCH_FORMAT"] = "This gets removed with patch %s";
 
 	-- Filter Text
 	["ACHIEVEMENT_ID"] = "Achievement ID";
