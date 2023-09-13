@@ -302,6 +302,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								72444,	-- A Sliver of Silver
 								76422,	-- Infinity and Beyond
 							},
+							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 187669 },	-- Nozdormu
 							["coord"] = { 60.4, 58.9, VALDRAKKEN },
 						}),
