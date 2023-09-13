@@ -1236,6 +1236,8 @@ ResolveSymbolicLink = function(o)
 				if response then tinsert(searchResults, {text=TRANSMOG_SOURCE_4,icon = app.asset("Category_WorldDrops"),g=response});  end
 				response = app:BuildSearchResponse(app.Categories.Craftables, "requireSkill", requireSkill);
 				if response then tinsert(searchResults, {text=LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,icon = app.asset("Category_Crafting"),g=response});  end
+				response = app:BuildSearchResponse(app.Categories.Holidays, "requireSkill", requireSkill);
+				if response then tinsert(searchResults, app.CreateNPC(app.HeaderConstants.HOLIDAYS, response));  end
 				response = app:BuildSearchResponse(app.Categories.WorldEvents, "requireSkill", requireSkill);
 				if response then tinsert(searchResults, {text=BATTLE_PET_SOURCE_7,icon = app.asset("Category_Event"),g=response});  end
 			elseif cmd == "fill" then
