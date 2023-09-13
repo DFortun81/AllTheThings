@@ -636,3 +636,5 @@
 10832@@@Becoming a Spellfire Tailor
 10833@@@Becoming a Shadoweave Tailor
 78165@@@--
+78505@@@--
+78509@@@--

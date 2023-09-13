@@ -36174,18 +36174,11 @@ s(188117)/i(206755),	-- Ghrino Britches
 s(188118)/i(206756),	-- Ghrino Pauldrons
 s(188119)/i(206757),	-- Ghrino Bracers
 7.3.0.24473
-s(14)/i(17),	--
 s(76)/i(746),	-- Lord Brandon's Tabard (Test)
-s(85)/i(778),	-- ld Excavation Pick \\ Kobold Excavation Pick
-s(87)/i(788),	-- Test Fire Sword
 s(147)/i(906),	-- Tan Leather Shoulderpads (Test)
 s(148)/i(907),	-- Black Mail Shoulderpads of might (Test)
 s(149)/i(908),	-- Plate Shoulderpad (Test)
 s(150)/i(909),	-- Silver Mail Shoulderpads (Test)
-s(152)/i(913),	-- Ogre Sword \\ Huge Ogre Sword
-s(169)/i(945),	-- Shadow Sword
-s(170)/i(948),	-- Nature Sword
-s(176)/i(1018),	-- Chows Blade of DOOM! (Test)
 s(185)/i(1162),	-- Pirates Patch (Test)
 s(186)/i(1163),	-- Dwarven Explorer's Monocle (Test)
 s(447)/i(1819),	-- ing Pick \\ Gouging Pick
@@ -57874,7 +57867,6 @@ s(97947)/i(161876),	-- Dread Combatant's Leather Bindings \\ PH Combatant's Leat
 s(97948)/i(161877),	-- Dread Combatant's Silk Cord \\ PH Combatant's Silk Cord
 s(97988)/i(161904),	-- Dread Combatant's Drape \\ PH Combatant's Drape
 s(97989)/i(161905),	-- Dread Combatant's Cape \\ PH Combatant's Cape
-s(98028)/i(161933),	-- Manual of Reverse Wounding
 s(98030)/i(161935),	-- Inked Vessel of Robust Regeneration \\ Tome of Robust Regeneration
 s(98041)/i(161946),	-- Hardened Tempest Boots
 s(98042)/i(161947),	-- Hardened Tempest Leggings
@@ -64700,7 +64692,7 @@ s(169066)/i(190857),	--
 s(169068)/i(190859),	--
 s(169069)/i(190860),	--
 s(169082)/i(190873),	--
-s(169083)/i(190874),	--
+s(169083)/i(190874),	-- Glittering Fel Gavel
 s(169084)/i(190875),	--
 s(169094)/i(190887),	--
 s(169096)/i(190889),	--
@@ -64915,7 +64907,6 @@ s(187927)/i(206266),	--
 s(188039)/i(206515),	--
 s(188040)/i(206516),	--
 s(188053)/i(206672),	--
-s(188642)/i(206931),	-- Truesilver Champion
 10.1.5.49595
 s(188643)/i(206986),	--
 10.1.5.49719
@@ -64981,48 +64972,6 @@ s(188667)/i(207089),	--
 s(188668)/i(207090),	--
 s(189830)/i(208546),	-- Explorer's Rose-Tinted Glasses
 s(189831)/i(208547),	-- Explorer's Reading Spectacles
-s(189876)/i(208529),	-- Infinite Vanguard's Greathelm
-s(189877)/i(204768),	-- Suffused Helm
-s(189878)/i(205079),	-- Zaralek Surveyor's Helm
-s(189879)/i(207622),	-- Anomalous Greathelm
-s(189880)/i(204948),	-- Starless Fullhelm
-s(189881)/i(204608),	-- Bestowed Greathelm \\ Firestorm Greathelm
-s(189882)/i(207936),	-- Hood of Perpetual Conflict \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 07 - Horde&Alliance - Leather Head \\ Mega Dungeon Infinite Leather Mask
-s(189883)/i(204780),	-- Suffused Helm
-s(189884)/i(205067),	-- Zaralek Surveyor's Helm
-s(189885)/i(207606),	-- Mask of Discontinuity
-s(189886)/i(204931),	-- Sunless Cowl
-s(189887)/i(204592),	-- Inherited Mask \\ Dust Devil Mask
-s(189888)/i(208521),	-- Infinite Soldier's Cowl
-s(189889)/i(204773),	-- Suffused Coif
-s(189890)/i(205074),	-- Zaralek Surveyor's Coif
-s(189891)/i(207614),	-- Paradoxical Cowl
-s(189892)/i(204940),	-- Skyless Coif
-s(189893)/i(204600),	-- Bequeathed Cowl \\ Cyclonic Cowl
-s(189894)/i(207927),	-- Crown of the Infinite Lord \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 05 - Infinite Tyr - Cloth Head \\ Mega Dungeon Infinite Cloth Hood
-s(189895)/i(204786),	-- Suffused Cowl
-s(189896)/i(205061),	-- Zaralek Surveyor's Cowl
-s(189897)/i(207598),	-- Anachronistic Hood
-s(189898)/i(204923),	-- Moonless Hood
-s(189899)/i(204584),	-- Endowed Hood \\ Cloudburst Hood
-s(189900)/i(208503),	-- Infinite Zealot's Mantle
-s(189901)/i(204758),	-- Suffused Shoulderpads
-s(189902)/i(205089),	-- Zaralek Surveyor's Shoulderpads
-s(189903)/i(207600),	-- Anachronistic Mantle
-s(189904)/i(204925),	-- Moonless Shoulderpads
-s(189905)/i(204586),	-- Endowed Mantle \\ Cloudburst Mantle
-s(189906)/i(207945),	-- Chrono-Lord's Wingspan \\ [PH] 10.1.5 Megadungeon - Dawn of the Infinite - Boss 08 - Deios - Mail Shoulder \\ Mega Dungeon Infinite Mail Spaulders
-s(189907)/i(204771),	-- Suffused Shoulderguards
-s(189908)/i(205076),	-- Zaralek Surveyor's Shoulderguards
-s(189909)/i(207616),	-- Paradoxical Spaulders
-s(189910)/i(204942),	-- Skyless Epaulets
-s(189911)/i(204602),	-- Bequeathed Spaulders \\ Cyclonic Spaulders
-s(189912)/i(208531),	-- Infinite Vanguard's Pauldrons
-s(189913)/i(204763),	-- Suffused Mantle
-s(189914)/i(205084),	-- Zaralek Surveyor's Mantle
-s(189915)/i(207624),	-- Anomalous Pauldrons
-s(189916)/i(204950),	-- Starless Mantle
-s(189917)/i(204610),	-- Bestowed Pauldrons \\ Firestorm Pauldrons
 10.1.7.50587
 s(190168)/i(208986),	-- The Horseman's Horrific Hood
 s(190169)/i(208987),	-- The Horseman's Sinister Slicer
@@ -65039,8 +64988,22 @@ s(190743)/i(209408),	-- Dreambound Crown
 10.1.7.51187
 s(189583)/i(208093),	--
 s(189587)/i(208136),	--
-s(193035)/i(208686),	--
-s(193036)/i(208688),	--
+s(193035)/i(208686),	-- Velenite Claymore
+s(193036)/i(208688),	-- Telaasti Mining Pick
+10.1.7.51237
+s(189074)/i(208025),	--
+s(189582)/i(208083),	--
+s(189608)/i(208197),	--
+s(189610)/i(208199),	-- Tabard of the Tyr's Guard
+10.1.7.51313
+s(189613)/i(208225),	--
+s(189977)/i(208662),	-- Lightforged Seeker
+s(189978)/i(208677),	-- Eredath Crystal Hammer
+s(189982)/i(208683),	-- Arinor Ritual Baton
+s(189983)/i(208684),	-- Anchorite's Sorrow
+s(189984)/i(208685),	-- Recovered Kaarinos Blade
+s(190112)/i(208755),	-- Ancient Soulpriest's Staff
+s(190151)/i(208844),	--
 10.2.0.51239
 s(188043)/i(206587),	--
 s(188656)/i(207025),	-- <Placeholder> Fyrakk Axe - Shadowflame
@@ -65224,7 +65187,6 @@ s(188899)/i(207797),	-- Defender of the Ancient
 s(188900)/i(207798),	-- Weapon - Shield 2
 s(188901)/i(207799),	-- 2H Sword STR
 s(188902)/i(207800),	-- 2H Mace STR
-s(189074)/i(208025),	--
 s(189085)/i(207286),	-- 10.2 Raid - Emerald Dream - Class Sets - Mage - Armor - Cloth -  Wrist
 s(189086)/i(207286),	-- 10.2 Raid - Emerald Dream - Class Sets - Mage - Armor - Cloth -  Wrist
 s(189087)/i(207286),	-- 10.2 Raid - Emerald Dream - Class Sets - Mage - Armor - Cloth -  Wrist
@@ -65720,10 +65682,6 @@ s(189576)/i(207248),	-- 10.2 Raid - Emerald Dream - Class Sets - Monk - Armor - 
 s(189577)/i(207248),	-- 10.2 Raid - Emerald Dream - Class Sets - Monk - Armor - Leather - Chest
 s(189578)/i(207248),	-- 10.2 Raid - Emerald Dream - Class Sets - Monk - Armor - Leather - Chest
 s(189579)/i(207248),	-- 10.2 Raid - Emerald Dream - Class Sets - Monk - Armor - Leather - Chest
-s(189582)/i(208083),	--
-s(189608)/i(208197),	--
-s(189609)/i(208198),	-- Tyr's Guard Bulwark
-s(189610)/i(208199),	-- Tabard of the Tyr's Guard
 s(189617)/i(208239),	-- Verdant Combatant's Resilient Boots
 s(189618)/i(208240),	-- Verdant Combatant's Resilient Chestpiece
 s(189619)/i(208241),	-- Verdant Combatant's Resilient Mask
@@ -65953,17 +65911,6 @@ s(190106)/i(208720),	-- Hornstrider Warrior's Crest
 s(190107)/i(208721),	-- Hornstrider Warrior's Serrator
 s(190108)/i(208722),	-- Hornstrider Warrior's Pride
 s(190109)/i(208723),	-- Hornstrider Warrior's Harpooner
-s(190113)/i(208759),	-- Duskrune Glaive
-s(190114)/i(208761),	-- Glaive of the Blood Moon
-s(190115)/i(208762),	-- Moonlight Glaive
-s(190148)/i(208824),	-- Kaldorei Protector's Band
-s(190150)/i(208842),	-- Kaldorei Protector's Cinch
-s(190152)/i(208874),	-- Kaldorei Protector's Mantle
-s(190153)/i(208875),	-- Kaldorei Protector's Anklets
-s(190154)/i(208876),	-- Kaldorei Protector's Coronet
-s(190155)/i(208877),	-- Kaldorei Protector's Talons
-s(190156)/i(208882),	-- Kaldorei Protector's Wrap
-s(190157)/i(208885),	-- Kaldorei Protector's Wristwraps
 s(190165)/i(208979),	-- 10.2 Monster - Merithra - Robe
 s(190166)/i(208981),	-- 10.2 Monster - Merithra - Wrist
 s(190167)/i(208982),	-- 10.2 Monster - Merithra - Waist
@@ -68575,3 +68522,7 @@ s(193782)/i(207221),	-- 10.2 Raid - Emerald Dream - Class Sets - Hunter - Armor 
 s(193783)/i(207221),	-- 10.2 Raid - Emerald Dream - Class Sets - Hunter - Armor - Mail - Chest
 s(193784)/i(207221),	-- 10.2 Raid - Emerald Dream - Class Sets - Hunter - Armor - Mail - Chest
 s(193785)/i(207221),	-- 10.2 Raid - Emerald Dream - Class Sets - Hunter - Armor - Mail - Chest
+10.2.0.51297
+s(193793)/i(210787),	-- Elegant Green Dragon Tabard
+s(193794)/i(210788),	-- Elegant Green Dragon Shawl
+s(193795)/i(210789),	-- Elegant Green Dragon Epaulettes

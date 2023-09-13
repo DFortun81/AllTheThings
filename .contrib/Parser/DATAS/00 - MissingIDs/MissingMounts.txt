@@ -4,11 +4,11 @@ mount(423871),	-- Blossoming Dreamstag
 mount(423873),	-- Suntouched Dreamstag
 mount(423877),	-- Rekindled Dreamstag
 mount(423891),	-- Lunar Dreamstag
-mount(424474),	-- [PH] Purple Dreamsaber
-mount(424476),	-- [PH] Blue Dreamsaber
-mount(424479),	-- [PH] Yellow Dreamsaber
-mount(424482),	-- [PH] Green Dreamsaber
-mount(424484),	-- [PH] Mythic Fire Owl
+mount(424474),	-- Shadow Dusk Dreamsaber \\ [PH] Purple Dreamsaber
+mount(424476),	-- Winter Night Dreamsaber \\ [PH] Blue Dreamsaber
+mount(424479),	-- Evening Sun Dreamsaber \\ [PH] Yellow Dreamsaber
+mount(424482),	-- Morning Flourish Dreamsaber \\ [PH] Green Dreamsaber
+mount(424484),	-- Anu'relos, Flame's Guidance \\ [PH] Mythic Fire Owl
 mount(424534),	-- Vicious Moonbeast
 mount(424535),	-- Vicious Moonbeast
 mount(424601),	-- [PH] Brown-Furred Spiky Bakar
@@ -18,6 +18,10 @@ mount(424610),	-- [PH] Yellow-Furred Spiky Bakar
 mount(424611),	-- [PH] YellowBlack-Furred Bakar
 mount(425338),	-- Flourishing Whimsydrake
 mount(425416),	-- Verdant Gladiator's Slitherdrake
+10.2.0.51297
+mount(426955),	-- Springtide Dreamtalon
+mount(427041),	-- Ochre Dreamtalon
+mount(427043),	-- Snowfluff Dreamtalon
 
 
 
@@ -25,16 +29,15 @@ mount(425416),	-- Verdant Gladiator's Slitherdrake
 Missing in MountDB.lua
 
 10.2.0.51239
-mount(422486),	-- Verdant Armoredon
 mount(423871),	-- Blossoming Dreamstag
 mount(423873),	-- Suntouched Dreamstag
 mount(423877),	-- Rekindled Dreamstag
 mount(423891),	-- Lunar Dreamstag
-mount(424474),	-- [PH] Purple Dreamsaber
-mount(424476),	-- [PH] Blue Dreamsaber
-mount(424479),	-- [PH] Yellow Dreamsaber
-mount(424482),	-- [PH] Green Dreamsaber
-mount(424484),	-- [PH] Mythic Fire Owl
+mount(424474),	-- Shadow Dusk Dreamsaber \\ [PH] Purple Dreamsaber
+mount(424476),	-- Winter Night Dreamsaber \\ [PH] Blue Dreamsaber
+mount(424479),	-- Evening Sun Dreamsaber \\ [PH] Yellow Dreamsaber
+mount(424482),	-- Morning Flourish Dreamsaber \\ [PH] Green Dreamsaber
+mount(424484),	-- Anu'relos, Flame's Guidance \\ [PH] Mythic Fire Owl
 mount(424534),	-- Vicious Moonbeast
 mount(424535),	-- Vicious Moonbeast
 mount(424601),	-- [PH] Brown-Furred Spiky Bakar
@@ -43,3 +46,7 @@ mount(424608),	-- [PH] White-Furred Bakar
 mount(424610),	-- [PH] Yellow-Furred Spiky Bakar
 mount(424611),	-- [PH] YellowBlack-Furred Bakar
 mount(425416),	-- Verdant Gladiator's Slitherdrake
+10.2.0.51297
+mount(426955),	-- Springtide Dreamtalon
+mount(427041),	-- Ochre Dreamtalon
+mount(427043),	-- Snowfluff Dreamtalon

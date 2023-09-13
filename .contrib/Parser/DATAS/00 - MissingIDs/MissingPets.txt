@@ -26,6 +26,9 @@ pet(4305),	-- Snoots
 pet(4306),	-- Elmer
 pet(4307),	-- Spruce
 pet(4308),	-- Juniper
+10.2.0.51297
+pet(4309),	-- Drowsey
+pet(4310),	-- Snorr
 
 
 
@@ -60,3 +63,6 @@ pet(4305),	-- Snoots
 pet(4306),	-- Elmer
 pet(4307),	-- Spruce
 pet(4308),	-- Juniper
+10.2.0.51297
+pet(4309),	-- Drowsey
+pet(4310),	-- Snorr

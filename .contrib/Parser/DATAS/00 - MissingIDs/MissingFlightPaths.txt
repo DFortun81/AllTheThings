@@ -1,6 +1,7 @@
-10.2.0.51239
+10.1.7.51237
 fp(2887),	-- Quest Path 9429: 10.1.7 Heritage - Night Elf - Player Up to the Start of Shadow Hold, Lower Floor (MPK)
 fp(2892),	-- Quest Path 9443: 10.1.7 Heritage - Night Elf - Player Up to the Start of Shadow Hold, Hel'nurath's Room (MPK)
+10.2.0.51239
 fp(2902),	-- Central Encampment, The Emerald Dream
 fp(2903),	-- Verdant Landing, The Emerald Dream
 fp(2904),	-- Eye of Ysera, The Emerald Dream

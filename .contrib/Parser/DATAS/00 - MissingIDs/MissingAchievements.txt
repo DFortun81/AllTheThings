@@ -238,11 +238,6 @@ ach(18799),	-- Skettis Scramble Advanced: Gold
 ach(18800),	-- Skettis Scramble Reverse: Bronze
 ach(18801),	-- Skettis Scramble Reverse: Silver
 ach(18802),	-- Skettis Scramble Reverse: Gold
-ach(18831),	-- Elusive Beasts of the Dragon Isles
-ach(18832),	-- Elusive Legend of the Dragon Isles
-ach(18833),	-- Elusive Legends of the Dragon Isles
-ach(18834),	-- Broken Isles Skinning Techniques
-ach(18835),	-- Fourth War Skinning Techniques
 ach(18842),	-- Fel Pit Fracas: Bronze
 ach(18843),	-- Fel Pit Fracas: Silver
 ach(18844),	-- Fel Pit Fracas: Gold
@@ -286,10 +281,13 @@ ach(19137),	-- <Hidden> Base 11.0 Tender [DNT]
 ach(19138),	-- <Hidden> Heroic 11.0 Tender [DNT]
 ach(19139),	-- <Hidden> Epic 11.0 Tender [DNT]
 ach(19192),	-- Lil' Frostwing
+10.1.7.51237
+ach(18691),	-- <DNT> Complete the "The Coalition of Flames" questline.
+10.1.7.51313
+ach(18854),	-- Seeing Red
 10.2.0.51239
 ach(17730),	-- Random Login Variable B
 ach(18647),	-- <Hidden> 10.1.7 Prologue / 10.2 Intro Quest Launch [NOT USED YET]
-ach(18691),	-- <DNT> Complete the "The Coalition of Flames" questline.
 ach(18943),	-- Ysera Invitational: Bronze
 ach(18944),	-- Ysera Invitational: Silver
 ach(18945),	-- Ysera Invitational: Gold
@@ -516,10 +514,30 @@ ach(19309),	-- Explore the Emerald Dream
 ach(19310),	-- Fruit of the Bloom
 ach(19312),	-- Super Duper Bloom
 ach(19313),	-- Bloom Man Group
-ach(19315),	-- Okay, Bloomer
+ach(19315),	-- Dream Chaser \\ Okay, Bloomer
 ach(19316),	-- Adventurer of the Emerald Dream
 ach(19317),	-- Treasures of the Emerald Dream
 ach(19318),	-- Dream On
 ach(19319),	-- Haven't We Done This Before?
 ach(19320),	-- Cruelty Free
 ach(19321),	-- Swog Champion
+10.2.0.51297
+ach(19322),	-- Meaner Pastures
+ach(19326),	-- 10.2 Upgrade System - Whelpling Trade-Up Unlocked
+ach(19331),	-- Amirdrassil, the Dream's Hope
+ach(19333),	-- Heroic: Amirdrassil, the Dream's Hope
+ach(19334),	-- Mythic: Amirdrassil, the Dream's Hope
+ach(19335),	-- Mythic: Gnarlroot
+ach(19336),	-- Mythic: Igira the Cruel
+ach(19337),	-- Mythic: Volcoross
+ach(19338),	-- Mythic: Council of Dreams
+ach(19339),	-- Mythic: Larodar, Keeper of the Flame
+ach(19340),	-- Mythic: Nymue, Weaver of the Cycle
+ach(19341),	-- Mythic: Smolderon
+ach(19342),	-- Mythic: Tindral Sageswift, Seer of the Flame
+ach(19343),	-- Mythic: Fyrakk the Blazing
+ach(19344),	-- Incarnate's Wake
+ach(19345),	-- Molten Incursion
+ach(19346),	-- The Viridian Weave
+ach(19347),	-- Fate of Amirdrassil
+ach(19348),	-- Gnarlroot kills (Raid Finder Amirdrassil, the Dream's Hope)

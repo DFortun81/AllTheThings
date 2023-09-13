@@ -1929,6 +1929,56 @@ root(ROOTS.Unsorted, {
 			i(210707),	-- Drowsed Shepherd's Hood
 			i(210725),	-- Owl Post
 			i(210726),	-- Ruby Flightstone
+			-----------------
+			i(207175),	-- Coiled Serpent Idol
+			i(209947),	-- Reins of the Blossoming Dreamstag
+			i(209949),	-- Reins of the Suntouched Dreamstag
+			i(209950),	-- Reins of the Rekindled Dreamstag
+			i(209951),	-- Reins of the Lunar Dreamstag
+			i(210057),	-- Reins of the Morning Flourish Dreamsaber
+			i(210058),	-- Reins of the Evening Sun Dreamsaber
+			i(210059),	-- Reins of the Winter Night Dreamsaber
+			i(210060),	-- Reins of the Shadow Dusk Dreamsaber
+			i(210214),	-- Ouroboreal Necklet
+			i(210727),	-- Pollenfused Bristlebruin Fur Sample
+			i(210728),	-- Moon-Blessed Claw
+			i(210729),	-- Mark of the Verdant Bristlebruin
+			i(210730),	-- Mark of the Dream Wardens
+			i(210731),	-- Mark of the Lush Dreamstag
+			i(210735),	-- Mark of the Auric Dreamstag
+			i(210736),	-- Mark of the Smoldering Dreamstag
+			i(210737),	-- Ashphodel Research Notes
+			i(210738),	-- Mark of the Loamy Umbraclaw
+			i(210739),	-- Mark of the Snowy Umbraclaw
+			i(210751),	-- Mark of the Hibernating Runebear
+			i(210753),	-- Scale of the Prismatic Whiskerfish
+			i(210754),	-- Feather of the Blazing Somnowl
+			i(210755),	-- Silent Mark of the Dreamsaber
+			i(210756),	-- Satchel of Drake's Dreaming Crests
+			i(210757),	-- Scales of Remorse
+			i(210762),	-- Clutch of Wyrm's Dreaming Crests
+			i(210764),	-- Silent Mark of the Dreamtalon
+			i(210766),	-- Silent Mark of the Umbraclaw
+			i(210767),	-- Silent Mark of the Dreamstag
+			i(210768),	-- Bouquet of Aspect's Dreaming Crests
+			i(210769),	-- Reins of the Springtide Dreamtalon
+			i(210770),	-- Satchel of Drake's Dreaming Crests
+			i(210774),	-- Reins of the Ochre Dreamtalon
+			i(210775),	-- Reins of the Snowfluff Dreamtalon
+			i(210776),	-- Lesser Dream Infusion
+			i(210777),	-- Drowsey
+			i(210782),	-- Slumbering Moonfish
+			i(210783),	-- Awakening Sunfish
+			i(210784),	-- Xena, the Whimsical Whiskerfish
+			i(210785),	-- Snorr
+			i(210786),	-- Dreaming Whiskerfish
+			i(210787),	-- Elegant Green Dragon Tabard
+			i(210788),	-- Elegant Green Dragon Shawl
+			i(210789),	-- Elegant Green Dragon Epaulettes
+			i(210790),	-- Ensemble: Elegant Green Dragon Outerwear
+			i(210791),	-- Fragment of Emberscar
+			i(210792),	-- Fragment of Emberscar
+			i(210793),	-- Fragment of Emberscar
 		})),
 		tier(DF_TIER, 1.7, bubbleDown({ ["timeline"] = { CREATED_10_1_7 } }, {
 			filter(TOYS, {
