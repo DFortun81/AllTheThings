@@ -12961,6 +12961,10 @@
 19192@@@Lil' Frostwing
 10.1.7.51187
 17773@@@A Blue Dawn
+10.1.7.51237
+18691@@@<DNT> Complete the "The Coalition of Flames" questline.
+10.1.7.51313
+18854@@@Seeing Red
 10.2.0.51239
 16884@@@Friends in the Field
 16944@@@Friend of the Family
@@ -12969,7 +12973,6 @@
 17730@@@Random Login Variable B
 17756@@@Friends in Loamm Places
 18647@@@<Hidden> 10.1.7 Prologue / 10.2 Intro Quest Launch [NOT USED YET]
-18691@@@<DNT> Complete the "The Coalition of Flames" questline.
 18943@@@Ysera Invitational: Bronze
 18944@@@Ysera Invitational: Silver
 18945@@@Ysera Invitational: Gold

@@ -20331,10 +20331,7 @@
 210721@@@Perpetual Present
 10.1.7.50893
 211144@@@Forsaken Soldier
-10.2.0.51239
-119274@@@Emerald Balancer
-187272@@@Forgemaster Bazentus
-187590@@@Merithra
+10.1.7.51237
 199761@@@Deathstalker Commander Belmont
 199762@@@Lilian Voss
 199767@@@Master Apothecary Faranell
@@ -20370,6 +20367,104 @@
 205882@@@Eternus
 205933@@@Lord Hel'nurath
 206041@@@Captain Drine
+206724@@@Eternus
+206967@@@Vexemia
+206968@@@Black Dragon
+206970@@@Phasing Helper [DNT]
+206971@@@Nozdormu
+206972@@@Eternus
+207634@@@Eternus
+207700@@@Forsaken Soldier
+207701@@@Forsaken Dreadmage
+207702@@@Dark Ranger
+207704@@@Scarlet Tracker
+207706@@@Scarlet Footsoldier
+207707@@@Scarlet Confessor
+207708@@@Scarlet Champion
+207709@@@Scarlet Cannon
+207759@@@Forsaken Catapult
+207790@@@Scalecommander Emberthal
+207820@@@Scalecommander Emberthal
+208031@@@Forsaken Deathguard
+208035@@@Chromie
+208039@@@Dark Ranger
+208040@@@Banshee
+208045@@@Novice Darnassian Mage
+208046@@@Bronze Hatchling
+208144@@@Vexemia
+208145@@@Lysander Starshade
+208151@@@Maiev Shadowsong
+208168@@@Eternus
+208214@@@Deathstalker Commander Belmont
+208247@@@Dark Ranger Velonara
+208344@@@Scarlet Archmage
+208359@@@Sundered Skirmisher
+208434@@@Scalecommander Emberthal
+208694@@@Forsaken Soldier
+208928@@@Novice Darnassian Mage
+209007@@@Scarlet Archmage
+209008@@@Dark Ranger
+209114@@@Forsaken Soldier
+209115@@@Banshee
+209116@@@Banshee
+209141@@@Lysander Starshade
+209366@@@Travard
+209483@@@Talthis
+209485@@@Nolaki
+209486@@@Hadwin
+209487@@@Valunei
+209514@@@Hadwin
+209515@@@Valunei
+209518@@@Nolaki
+209519@@@Talthis
+209588@@@Forsaken Soldier
+209593@@@Dark Ranger
+209744@@@Tyr's Guard [All]
+209847@@@Angellene
+209848@@@Emalora
+209849@@@Margix
+210553@@@Sundered Skirmisher
+210554@@@Winglord Dezran
+210555@@@Amythora
+210556@@@Scalecommander Emberthal
+210557@@@Marithos
+210558@@@Pandi
+210560@@@Invisible Bunny (IGC)
+210616@@@Pandi
+210617@@@Ruby Queensguard
+210618@@@Captain Drine
+210619@@@Alexstrasza the Life-Binder
+210621@@@Vyranoth
+210627@@@Invisible Bunny (IGC)
+210681@@@Angellene
+210682@@@Emalora
+210683@@@Margix
+210853@@@Fyrakk
+210855@@@Vyranoth
+10.1.7.51313
+208815@@@Prophet Velen
+208816@@@Grand Artificer Romuul
+208830@@@Chieftain Hatuun
+208831@@@Arzal'kal
+208837@@@Prophet Velen
+208858@@@Arzal'kal
+208859@@@Arzal'kal
+208892@@@Chieftain Hatuun
+208893@@@Prophet Velen
+208894@@@Arzaal
+209804@@@Kil'jaeden
+209853@@@Saatilu
+209855@@@Heraat
+209860@@@Eranthi
+209861@@@Yazdan
+209862@@@Zyaana
+209863@@@Tronaar
+209945@@@Loyal Man'ari
+209946@@@Loyal Man'ari
+10.2.0.51239
+119274@@@Emerald Balancer
+187272@@@Forgemaster Bazentus
+187590@@@Merithra
 206397@@@Merithra of the Dream
 206398@@@Alexstrasza the Life-Binder
 206399@@@Tyrande Whisperwind
@@ -20423,7 +20518,6 @@
 206690@@@Zaqali Ashwarden
 206691@@@Zaqali Devastator
 206693@@@Flame Portal
-206724@@@Eternus
 206738@@@Ysera
 206778@@@Blessing
 206810@@@Tyrande Whisperwind
@@ -20435,11 +20529,6 @@
 206949@@@Big Kinook
 206960@@@Sonova Snowden
 206964@@@Siaszerathel
-206967@@@Vexemia
-206968@@@Black Dragon
-206970@@@Phasing Helper [DNT]
-206971@@@Nozdormu
-206972@@@Eternus
 206979@@@Merithra
 206996@@@Scout Tomul
 207022@@@Vyranoth
@@ -20469,37 +20558,10 @@
 207560@@@Lava Sporebat
 207605@@@Arko'narin Starshade
 207606@@@Lysander Starshade
-207634@@@Eternus
-207700@@@Forsaken Soldier
-207701@@@Forsaken Dreadmage
-207702@@@Dark Ranger
-207704@@@Scarlet Tracker
-207706@@@Scarlet Footsoldier
-207707@@@Scarlet Confessor
-207708@@@Scarlet Champion
-207709@@@Scarlet Cannon
-207759@@@Forsaken Catapult
-207790@@@Scalecommander Emberthal
-207820@@@Scalecommander Emberthal
-208031@@@Forsaken Deathguard
-208035@@@Chromie
-208039@@@Dark Ranger
-208040@@@Banshee
-208045@@@Novice Darnassian Mage
-208046@@@Bronze Hatchling
-208144@@@Vexemia
-208145@@@Lysander Starshade
-208151@@@Maiev Shadowsong
-208168@@@Eternus
 208187@@@Moltenjaw Sporebat
-208214@@@Deathstalker Commander Belmont
-208247@@@Dark Ranger Velonara
-208344@@@Scarlet Archmage
-208359@@@Sundered Skirmisher
 208373@@@Flame Tear
 208374@@@Flame Tear
 208425@@@Eadweard Dalyngrigge
-208434@@@Scalecommander Emberthal
 208473@@@Generic Client-Side Bunny
 208532@@@Azerothian Athenaeum
 208537@@@Tyrande Whisperwind
@@ -20507,7 +20569,6 @@
 208633@@@Dreamseed Bloom
 208648@@@Vyranoth
 208654@@@[DNT] Target Bunny
-208694@@@Forsaken Soldier
 208753@@@Khanam Matra Sarest
 208760@@@Altruis the Sufferer
 208851@@@Shandris Feathermoon
@@ -20517,18 +20578,11 @@
 208906@@@Moon Priestess Lasara
 208907@@@Rensar Greathoof
 208909@@@Kiya Featherpaw
-208928@@@Novice Darnassian Mage
-209007@@@Scarlet Archmage
-209008@@@Dark Ranger
 209024@@@Tyrande Whisperwind
 209042@@@Kalecgos
 209051@@@Merithra of the Dream
 209068@@@Ash
 209069@@@Nyx
-209114@@@Forsaken Soldier
-209115@@@Banshee
-209116@@@Banshee
-209141@@@Lysander Starshade
 209149@@@Galok Wingslicer
 209156@@@Rydra Scalegorger
 209262@@@Scout Tomul
@@ -20537,30 +20591,15 @@
 209269@@@Norukk
 209277@@@Rowie
 209278@@@Thisalee Crow
-209366@@@Travard
 209472@@@Zen'tabra
 209473@@@Naralex
 209474@@@Zen'kiki
-209483@@@Talthis
-209485@@@Nolaki
-209486@@@Hadwin
-209487@@@Valunei
-209514@@@Hadwin
-209515@@@Valunei
-209518@@@Nolaki
-209519@@@Talthis
 209550@@@Druidic Totem
 209552@@@Bella Wilder
 209571@@@Professor Ash
-209588@@@Forsaken Soldier
-209593@@@Dark Ranger
 209641@@@Druidic Totem
-209744@@@Tyr's Guard [All]
 209746@@@Radza Thunderclaw
 209826@@@Bor Wildmane
-209847@@@Angellene
-209848@@@Emalora
-209849@@@Margix
 209888@@@Fyrakk
 209896@@@Fyrakk
 209897@@@Ashendir Hartwood
@@ -20583,34 +20622,16 @@
 210427@@@Flame Portal
 210496@@@Otharia
 210547@@@Gangshe
-210553@@@Sundered Skirmisher
-210554@@@Winglord Dezran
-210555@@@Amythora
-210556@@@Scalecommander Emberthal
-210557@@@Marithos
-210558@@@Pandi
-210560@@@Invisible Bunny (IGC)
 210567@@@Firehide Proto-Dragon
 210568@@@Emerald Guardian
-210616@@@Pandi
-210617@@@Ruby Queensguard
-210618@@@Captain Drine
-210619@@@Alexstrasza the Life-Binder
-210621@@@Vyranoth
-210627@@@Invisible Bunny (IGC)
 210665@@@Primalist Flamewarden
 210666@@@Primalist Flamewarden
 210667@@@Primalist Flamewarden
 210668@@@Primalist Flamewarden
 210669@@@Primalist Flamewarden
-210681@@@Angellene
-210682@@@Emalora
-210683@@@Margix
 210755@@@Spicy Scamper
 210757@@@Playful Somnowlet
 210761@@@Fount Flutterer
-210853@@@Fyrakk
-210855@@@Vyranoth
 210863@@@Canopy Danaid
 210889@@@Gossamer Danaid
 210910@@@Doomfiend

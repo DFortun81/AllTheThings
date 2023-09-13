@@ -2062,6 +2062,95 @@ root(ROOTS.Unsorted, {
 			i(206762),	-- A Clue
 			i(206950),	-- A Clue
 			i(206996),	-- A Clue
+			--
+
+			i(202182),	-- Acid Rifle
+			i(202186),	-- Boom Weed
+			i(202187),	-- Plagued Flesh
+			i(204720),	-- Join the New Scarlet Crusade!
+			i(204799),	-- Scarlet Disguise
+			i(206204),	-- Recovered Tuskarr Relic
+			i(206353),	-- Sentinel's Whistle
+			i(206476),	-- Tyr's Guard Equipment
+			i(206598),	-- Smoldering Blossom
+			i(206929),	-- Hawlsey's Armor
+			i(206942),	-- Sealed Kaldorei Scroll
+			i(207004),	-- Incanter's Tome
+			i(208198),	-- Tyr's Guard Bulwark
+			i(208545),	-- Kindled Bonfire
+			i(208759),	-- Duskrune Glaive
+			i(208761),	-- Glaive of the Blood Moon
+			i(208762),	-- Moonlight Glaive
+			i(208785),	-- Traditionalist's Kaldorei Blades
+			i(208824),	-- Kaldorei Protector's Band
+			i(208842),	-- Kaldorei Protector's Cinch
+			i(208874),	-- Kaldorei Protector's Mantle
+			i(208875),	-- Kaldorei Protector's Anklets
+			i(208876),	-- Kaldorei Protector's Coronet
+			i(208877),	-- Kaldorei Protector's Talons
+			i(208879),	-- Ensemble: Kaldorei Protector's Adornment
+			i(208882),	-- Kaldorei Protector's Wrap
+			i(208885),	-- Kaldorei Protector's Wristwraps
+			i(208146),	-- Incomplete Tablet
+			i(208861),	-- The First Clue
+			i(208862),	-- The Second Clue
+			i(208863),	-- The Fourth Clue
+			i(208864),	-- The Third Clue
+			i(208932),	-- A Partial Fourth Clue
+			i(208933),	-- A Partial Fourth Clue
+			i(208934),	-- A Partial Fourth Clue
+			i(208935),	-- A Partial Fourth Clue
+			i(210022),	-- Mimiron's Jumpjets
+			i(190874),	-- Glittering Fel Gavel
+			i(208151),	-- Tobias' Leash
+			i(208203),	-- Brilliant Star
+			i(208206),	-- Teleportation Crystal
+			i(208658),	-- Mirror of Humility
+			i(208662),	-- Lightforged Seeker
+			i(208677),	-- Eredath Crystal Hammer
+			i(208683),	-- Arinor Ritual Baton
+			i(208684),	-- Anchorite's Sorrow
+			i(208685),	-- Recovered Kaarinos Blade
+			i(208686),	-- Velenite Claymore
+			i(208688),	-- Telaasti Mining Pick
+			i(208691),	-- Argunite Cluster
+			i(208755),	-- Ancient Soulpriest's Staff
+			i(208831),	-- Tyr's Titan Key
+			i(208832),	-- Tyr's Titan Key
+			i(208865),	-- The First Clue
+			i(208869),	-- The First Clue
+			i(208870),	-- The Second Clue
+			i(208871),	-- The Third Clue
+			i(208872),	-- The Fourth Clue
+			i(208873),	-- The FINAL Clue
+			i(208984),	-- First Booster Part
+			i(208993),	-- Clue Scrap
+			i(208994),	-- Clue Scrap
+			i(208995),	-- Clue Scrap
+			i(208996),	-- Clue Scrap
+			i(208997),	-- Clue Scrap
+			i(208998),	-- Clue Scrap
+			i(208999),	-- Clue Scrap
+			i(209000),	-- Clue Scrap
+			i(209001),	-- Clue Scrap
+			i(209002),	-- Clue Scrap
+			i(209003),	-- Clue Scrap
+			i(209004),	-- Clue Scrap
+			i(209005),	-- Clue Scrap
+			i(209006),	-- Clue Scrap
+			i(209007),	-- Clue Scrap
+			i(209008),	-- Clue Scrap
+			i(209009),	-- Clue Scrap
+			i(209010),	-- Clue Scrap
+			i(209011),	-- Clue Scrap
+			i(209012),	-- Clue Scrap
+			i(209013),	-- Clue Scrap
+			i(209014),	-- Clue Scrap
+			i(209015),	-- Clue Scrap
+			i(209016),	-- Clue Scrap
+			i(209038),	-- Tyr's Titan Key
+			i(209039),	-- Tyr's Titan Key
+			i(209040),	-- Tyr's Titan Key
 		})),
 		tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
 			filter(COSMETIC, {

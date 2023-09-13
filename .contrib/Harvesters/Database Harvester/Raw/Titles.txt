@@ -663,8 +663,11 @@
 521@@@Outland Racer %s
 10.1.7.51059
 523@@@Isles Ace %s
-10.2.0.51239
+10.1.7.51237
 511@@@Ama'shan %s
+10.1.7.51313
+512@@@%s the Inquisitive
+10.2.0.51239
 517@@@%s the <PH Season 3 Title>
 522@@@Dream Racer %s
 524@@@Emerald Ace %s
