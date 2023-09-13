@@ -1458,25 +1458,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(68724, {	-- Broken Barn Door
 					["timeline"] = { "added 4.0.3" },
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
-					["coords"] = {
-						{ 23.4, 35.4, WESTFALL },
-						{ 25.4, 35.4, WESTFALL },
-					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, WESTFALL },
-						{ 17.8, 33.4, WESTFALL },
-						{ 19.8, 46.8, WESTFALL },
-					},
-					-- #endif
-					--]]
 				}),
 				i(1357, {	-- Captain Sander's Treasure Map
 					["coords"] = {

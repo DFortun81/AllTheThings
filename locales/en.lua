@@ -714,7 +714,7 @@ local L = {
 	["SECRETS_HEADER"] = "Secrets";
 	["LIMITED_QUANTITY"] = "This has a limited quantity and may not always be present on the vendor.";
 	["SOURCE_ID_MISSING"] = "Please report this Item and where it was acquired to the ATT Discord in #retail-errors!";
-	["ADDED_WITH_PATCH_FORMAT"] = "This gets added or expanded with new source(s) in patch %s";
+	["ADDED_WITH_PATCH_FORMAT"] = "This gets added in or during patch %s";
 	["REMOVED_WITH_PATCH_FORMAT"] = "This gets removed in patch %s";
 
 	-- Filter Text
@@ -804,6 +804,7 @@ local L = {
 		["Dragonflight"] = "DF",
 		["Aberrus, the Shadowed Crucible"] = "Aberrus",
 		["Kazzara, the Hellforged"] = "Kazzara",
+		["WoW's Anniversary %> "] = "",
 		["Player vs Player"] = "PvP",
 		["Raid Finder"] = "LFR",
 		["Looking For Raid"] = "LFR",
