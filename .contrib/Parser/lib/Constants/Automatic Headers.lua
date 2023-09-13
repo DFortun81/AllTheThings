@@ -6,6 +6,7 @@ HEADERS = {
 	Item = "i",
 	Map = "m",
 	NPC = "n",
+	Object = "o",
 	Quest = "q",
 	Spell = "s",
 	AchCategory = "ac",

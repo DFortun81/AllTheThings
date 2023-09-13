@@ -11975,6 +11975,9 @@ local AlternateDataTypes = {
 	["n"] = function(id)
 		return app.NPCNameFromID[tonumber(id)], app.NPCDisplayIDFromID[tonumber(id)];
 	end,
+	["o"] = function(id)
+		return app.ObjectNames[tonumber(id)] or ("Object ID #"..id);
+	end,
 	["_G"] = function(id)
 		return _G[id];
 	end,

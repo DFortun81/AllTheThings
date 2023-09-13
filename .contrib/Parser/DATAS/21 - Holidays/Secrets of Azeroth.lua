@@ -671,28 +671,23 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 					["coord"] = { 83.8, 48.4, OHNAHRAN_PLAINS },
 				}),
 				o(9000006, {	-- Aged Marker [#2]
-					["sourceQuest"] = 78025,
 					["questID"] = 78026,
 					["coord"] = { 78.6, 83.3, OHNAHRAN_PLAINS },
 				}),
 				o(9000007, {	-- Aged Marker [#3]
-					["sourceQuest"] = 78026,
 					["questID"] = 78027,
 					["coord"] = { 60.7, 63.4, OHNAHRAN_PLAINS },
 				}),
 				o(9000008, {	-- Aged Marker [#4]
-					["sourceQuest"] = 78027,
 					["questID"] = 78028,
 					["coord"] = { 31.6, 71.6, OHNAHRAN_PLAINS },
 				}),
 				o(9000009, {	-- Aged Marker [#5]
-					["sourceQuest"] = 78028,
-					["questID"] = 78029,
+					["questID"] = 78029,	-- this marker triggered 78037 for me instead -Run
 					["coord"] = { 43.3, 48.0, OHNAHRAN_PLAINS },
 				}),
 				o(9000010, {	-- Banner Stand
 					["description"] = "In cave.",
-					["sourceQuest"] = 78028,	-- You can probably get this without any Aged Marker
 					["questID"] = 77578,
 					["coord"] = { 42.6, 50.9, OHNAHRAN_PLAINS },
 					["cost"] = {{"i",209061,1}},	-- Ishtaar Rethon's Burial Banner
@@ -706,8 +701,26 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			["coord"] = { 47.9, 46.8, VALDRAKKEN },
 			["groups"] = {
 				i(208888),	-- Kirin Tor Contact's Note (QI!)
-				o(408980, {
+				-- 1 object with name on WH... 408976
+				-- using Type-named HQTs to show the objects available to click
+				q(78050, {	-- Ancient Tome [#1]
+					["type"] = HEADERS.Object..":408976",
+					["provider"] = { "o", 408976 },	-- Ancient Tome
+					["coord"] = { 32.1, 49.3, KARAZHAN },
+				}),
+				q(78051, {	-- Ancient Tome [#2]
+					["type"] = HEADERS.Object..":408976",
+					["provider"] = { "o", 408976 },	-- Ancient Tome
+					["coord"] = { 36.6, 37.1, KARAZHAN },
+				}),
+				q(78052, {	-- Ancient Tome [#3]
+					["type"] = HEADERS.Object..":408976",
+					["provider"] = { "o", 408976 },	-- Ancient Tome
+					["coord"] = { 47.2, 64.4, KARAZHAN },
+				}),
+				o(408980, {	--Tyr's Legacy
 					["description"] = "There are three clues inside the Guardian's Library. Pull out your thinking cap to find all three and the final object.",
+					["coord"] = { 33.1, 50.9, KARAZHAN },
 					["g"] = {
 						i(208889),	--Tyr's Legacy
 					},
@@ -717,7 +730,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		q(77908, {	-- A Legacy of Secrets
 			["provider"] = { "i", 208889 },
 			["description"] = "Quest takes place in Old Karazhan Raid",
-			["sourceQuest"] = 77897,	-- A Special Book
 		}),
 
 		-- Day 12 --
@@ -873,9 +885,6 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(78152),	-- Community Rumor Mill (Achievement 18644)
 	q(77895),	-- Completed at same time as receiving (itemdID 208888)
 	q(77579),	-- Upon completion of (QuestID 77908)
-	q(78050),	-- Ancient Tomb (Karazhan 31.8, 49.9) Guardians Library -- Updates Item 208888
-	q(78051),	-- Ancient Tomb (Karazhan 36.2, 37.4) Guardians Library
-	q(78052),	-- Ancient Tomb (Karazhan 47.2, 64.4) Guardians Library
 	q(77916),	-- Upon completion of (QuestID 77928 and getting the QI!)
 	q(78053),	-- Clicking on 'Auction House Bill of Sale' during day 12
 	q(78054),	-- Clicking on 'Void Storage Receipt' during day 12
