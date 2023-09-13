@@ -1836,11 +1836,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 13.0, 33.2, WETLANDS },
 					},
 					-- #elseif AFTER 10.1.7
-					["cr"] = 41425,	-- Bluegill Murloc
+					["crs"] = {
+						41425,	-- Bluegill Murloc
+						42111,	-- Bluegill Forager
+					},
 					["coords"] = {
 						{ 21.8, 40.0, WETLANDS },
 						{ 17.4, 41.4, WETLANDS },
 						{ 17.2, 33.6, WETLANDS },
+						{ 13.6, 42.6, WETLANDS },
+						{ 16.6, 26.2, WETLANDS },
+						{ 20.4, 37.6, WETLANDS },
+						{ 14.2, 36.8, WETLANDS },
+						{ 18.6, 34.0, WETLANDS },
+						{ 12.2, 40.2, WETLANDS },
+						{ 13.4, 34.0, WETLANDS },
+						{ 15.8, 28.2, WETLANDS },
 					},
 					-- #endif
 				}),
@@ -1858,6 +1869,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 21.8, 40.0, WETLANDS },
 						{ 17.4, 41.4, WETLANDS },
 						{ 17.2, 33.6, WETLANDS },
+						{ 13.6, 42.6, WETLANDS },
+						{ 16.6, 26.2, WETLANDS },
+						{ 20.4, 37.6, WETLANDS },
+						{ 14.2, 36.8, WETLANDS },
+						{ 18.6, 34.0, WETLANDS },
+						{ 12.2, 40.2, WETLANDS },
+						{ 13.4, 34.0, WETLANDS },
+						{ 15.8, 28.2, WETLANDS },
 					},
 					-- #endif
 				}),
@@ -1875,6 +1894,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 21.8, 40.0, WETLANDS },
 						{ 17.4, 41.4, WETLANDS },
 						{ 17.2, 33.6, WETLANDS },
+						{ 13.6, 42.6, WETLANDS },
+						{ 16.6, 26.2, WETLANDS },
+						{ 20.4, 37.6, WETLANDS },
+						{ 14.2, 36.8, WETLANDS },
+						{ 18.6, 34.0, WETLANDS },
+						{ 12.2, 40.2, WETLANDS },
+						{ 13.4, 34.0, WETLANDS },
+						{ 15.8, 28.2, WETLANDS },
 					},
 					-- #endif
 				}),
