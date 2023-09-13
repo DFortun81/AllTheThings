@@ -1509,8 +1509,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 				}),
 				n(2283, {	-- Ravenclaw Regent
+					-- #if AFTER 10.1.7
+					["coord"] = { 57.4, 31.2, SILVERPINE_FOREST },
+					-- #else
 					["coord"] = { 57.6, 69.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 4.0.3" },
+					-- #endif
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["groups"] = {
 						i(6628, {	-- Raven's Claws
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
