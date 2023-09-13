@@ -510,14 +510,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			q(78427, {	-- Great Crates!
 				["sourceQuests"] = { 77283 },	-- A Multi-Front Battle
 				["provider"] = { "n", 211240 },	-- Eran'nda
+				["isWeekly"] = true,
 				["coord"] = { 49.9, 62.3, TREE_1 },
 				["cost"] = {
 					{ "i", 210041, 1 },	-- Shipment of Goods
 				},
 			}),
-			q(78428, {	-- Create of the Art
+			q(78428, {	-- Crate of the Art
 				["sourceQuests"] = { 77283 },	-- A Multi-Front Battle
 				["provider"] = { "n", 211240 },	-- Eran'nda
+				["isWeekly"] = true,
 				["coord"] = { 49.9, 62.3, TREE_1 },
 				["cost"] = {
 					{ "i", 210041, 5 },	-- Shipment of Goods
