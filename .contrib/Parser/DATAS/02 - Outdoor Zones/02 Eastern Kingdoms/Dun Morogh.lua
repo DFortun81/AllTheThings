@@ -2543,7 +2543,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(1271, {	-- Old Icebeard
+					-- #if AFTER 10.1.7
+					["coord"] = { 31.4, 27.2, 29 },	-- Grizzled Den
+					["description"] = "Located in the Grizzled Den.",
+					-- #else
 					["coord"] = { 38.4, 54.0, DUN_MOROGH },
+					-- #endif
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 07.09.2023 ATT Discord
 					["groups"] = {
 						i(2899, {	-- Wengido Collar
