@@ -1832,7 +1832,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #if BEFORE 4.0.3
 							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 11.09.2023
 						}),
 					},
 				}),
@@ -1852,7 +1852,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(1539, {	-- Gnarled Hermit's Staff
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -1882,8 +1882,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(2035, {	-- Sword of the Night Sky
 							-- #if BEFORE 4.0.3
 							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
+							-- #else
+							["description"] = "The mob dropping this item is friendly to the alliance.",
 							-- #endif
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -1997,8 +1999,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(5092, {	-- Charred Razormane Wand
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 3458,	-- Razormane Seer
+					["coords"] = {
+						{ 42.6, 79.0, THE_BARRENS },
+						{ 43.0, 83.2, THE_BARRENS },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 37661,	-- Razormane Seer
+					["coords"] = {
+						{ 41.8, 82.8, SOUTHERN_BARRENS },
+						{ 43.2, 84.4, SOUTHERN_BARRENS },
+						{ 23.4, 35.4, SOUTHERN_BARRENS },
+					},
+					-- #endif
 				}),
 				i(5051, {	-- Dig Rat
 					["coord"] = { 49.4, 88.2, SOUTHERN_BARRENS },
@@ -2010,11 +2025,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 3444,	-- Dig Rat
 				}),
 				i(5093, {	-- Razormane Backstabber
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
+					-- #if BEFORE 4.0.3
 					["crs"] = {
 						3457,	-- Razormane Stalker
 						3456,	-- Razormane Pathfinder
 					},
+					["coords"] = {
+						{ 41.8, 79.6, THE_BARRENS },
+						{ 43.8, 83.2, THE_BARRENS },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 37560,	-- Razormane Pathfinder
+					["coords"] = {
+						{ 43.4, 82.0, SOUTHERN_BARRENS },
+						{ 41.6, 81.4, SOUTHERN_BARRENS },
+						{ 43.6, 86.2, SOUTHERN_BARRENS },
+					},
+					-- #endif
 				}),
 				i(5094, {	-- Razormane War Shield
 					["timeline"] = { "removed 4.0.3" },
