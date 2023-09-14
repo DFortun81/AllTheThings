@@ -90,6 +90,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		ach(18646, {	-- Whodunnit?
 			-- TODO: proper criteria
 			i(208152),	-- Pattie (MOUNT!)
+			title(519),	-- Honorary Preservationists (TITLE!)
 			crit(60849, {	-- A Preservationist
 				["_quests"] = { 77203 },
 			}),
@@ -126,15 +127,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			crit(60859, {	-- Kirin Tor Knowledge
 				["_quests"] = { 77908 },
 			}),
-			-- crit(60860, {	-- A Curious Orb
-			-- 	["_quests"] = {  },
-			-- }),
+			crit(60860, {	-- A Curious Orb
+				["_quests"] = { 77954 },
+			}),
 			crit(60861, {	-- Under Suspicion
 				["_quests"] = { 77934 },
 			}),
-			-- crit(60862, {	-- The Race
-			-- 	["_quests"] = {  },
-			-- }),
+			crit(60862, {	-- The Race
+			 	["_quests"] = { 77977 },
+			}),
 		}),
 		ach(19080, {	-- Arcane Influence - Only available for two days (10/11 September 2023)
 			["questID"] = 78101,
