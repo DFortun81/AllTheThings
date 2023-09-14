@@ -3924,6 +3924,7 @@ root(ROOTS.NeverImplemented, {
 						cl(WARRIOR, {
 							i(202440),	-- Insignia of the Onyx Crucible
 							i(202445),	-- Ironstriders of the Onyx Crucible
+							i(202438),	-- Manteau of the Onyx Crucible
 							i(202439),	-- Warbands of the Onyx Crucible
 						}),
 					})),
@@ -4004,7 +4005,7 @@ root(ROOTS.NeverImplemented, {
 						cl(WARRIOR, {
 							i(202440),	-- Insignia of the Onyx Crucible
 							i(202445),	-- Ironstriders of the Onyx Crucible
-
+							i(202438),	-- Manteau of the Onyx Crucible
 							i(202439),	-- Warbands of the Onyx Crucible
 						}),
 					})),
