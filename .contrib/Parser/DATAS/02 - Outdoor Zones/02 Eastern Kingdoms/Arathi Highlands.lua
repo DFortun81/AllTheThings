@@ -1982,9 +1982,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(5624, {	-- Circlet of the Order
 					-- #if BEFORE 4.0.3
 					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
+					-- #elseif AFTER 10.1.7
+					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
 					-- #endif
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					["cr"] = 2584,	-- Stromgarde Defender
+					["cr"] = 2584,	-- Stromgarde Defender	-- CRIEVE NOTE: Check if the undead one can drop this too.
 					["coords"] = {
 						{ 26.0, 58.0, ARATHI_HIGHLANDS },
 						{ 22.0, 62.2, ARATHI_HIGHLANDS },
@@ -2030,6 +2032,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #if BEFORE 4.0.3
 					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
+					-- #elseif AFTER 10.1.7
+					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
 					-- #endif
 					["coord"] = { 29.8, 59.4, ARATHI_HIGHLANDS },
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
