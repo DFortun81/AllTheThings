@@ -682,8 +682,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 							["cr"] = 706,	-- Frostmane Troll Whelp
 							["coords"] = {
+								-- #if AFTER LEGION
+								{ 21.2, 66.2, COLDRIDGE_VALLEY },
+								{ 30.6, 84.8, COLDRIDGE_VALLEY },
+								{ 49.2, 80.2, COLDRIDGE_VALLEY },
+								-- #else
+								{ 37.4, 78.2, DUN_MOROGH },
 								{ 33.4, 77.6, DUN_MOROGH },
-								{ 29.8, 78.4, DUN_MOROGH },
+								{ 28.4, 75.6, DUN_MOROGH },
+								-- #endif
 							},
 						}),
 						-- #endif
@@ -691,19 +698,39 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 706,	-- Frostmane Troll Whelp
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 							["coords"] = {
+								-- #if AFTER LEGION
+								{ 21.2, 66.2, COLDRIDGE_VALLEY },
+								{ 30.6, 84.8, COLDRIDGE_VALLEY },
+								{ 49.2, 80.2, COLDRIDGE_VALLEY },
+								-- #else
 								{ 37.4, 78.2, DUN_MOROGH },
 								{ 33.4, 77.6, DUN_MOROGH },
 								{ 28.4, 75.6, DUN_MOROGH },
+								-- #endif
 							},
 						}),
+						-- #if AFTER 10.1.7
+						i(2258, {	-- Frostmane Shortsword
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["cr"] = 37507,	-- Frostmane Blade
+							["coords"] = {
+								{ 36.8, 77.4, DUN_MOROGH },
+								{ 35.9, 79.8, DUN_MOROGH },
+							},
+						}),
+						-- #endif
 						i(2110, {	-- Light Magesmith Robe
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 							["cr"] = 946,	-- Frostmane Novice
-							-- #if AFTER CATA
-							["coord"] = { 37.0, 78.4, DUN_MOROGH },
-							-- #else
-							["coord"] = { 30.4, 81.0, DUN_MOROGH },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER LEGION
+								{ 70.2, 30.2, 428 },
+								-- #elseif AFTER CATA
+								{ 37.0, 78.4, DUN_MOROGH },
+								-- #else
+								{ 30.4, 81.0, DUN_MOROGH },
+								-- #endif
+							},
 						}),
 						i(2787, {	-- Trogg Dagger
 							["cr"] = 724,	-- Burly Rockjaw Trogg
@@ -2716,22 +2743,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if BEFORE 10.1.7
 				i(2258, {	-- Frostmane Shortsword
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
 					["cr"] = 1120,	-- Frostmane Troll
 					["coords"] = {
 						{ 26.6, 50.6, DUN_MOROGH },
 						{ 27.2, 52.8, DUN_MOROGH },
 					},
-					-- #elseif AFTER 10.1.7
-					["cr"] = 37507,	-- Frostmane Blade
-					["coords"] = {
-						{ 36.8, 77.4, DUN_MOROGH },
-						{ 35.9, 79.8, DUN_MOROGH },
-					},
-					-- #endif
 				}),
+				-- #endif
 				i(2257, {	-- Frostmane Staff
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
