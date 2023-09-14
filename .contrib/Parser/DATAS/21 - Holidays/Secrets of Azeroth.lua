@@ -41,6 +41,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 				78207,	-- Loose Dirt Mound
 				77300,	-- Loose Dirt Mound
 				77302,	-- Loose Dirt Mound
+				77301,	-- Loose Dirt Mound
+				77295,	-- Loose Dirt Mound
 			}},
 			["groups"] = {
 				i(208151),	-- Tobias (PET!)
@@ -63,6 +65,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 				78207,	-- Loose Dirt Mound
 				77300,	-- Loose Dirt Mound
 				77302,	-- Loose Dirt Mound
+				77301,	-- Loose Dirt Mound
+				77295,	-- Loose Dirt Mound
 			}},
 			["groups"] = {
 				i(208150),	-- Blue Tweed Cap
@@ -255,6 +259,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			-- I'm not sure what shenanigans Blizzard is doing where you can be missing quest pre-requisites while also in a Party Sync
 			-- and the other player is able to pickup the quest
 			-- If someone figures this out, please adjust the quest
+			["repeatable"] = true, -- everyone lost this quest
 		}),
 		q(77203, {	-- Preserving Rarities
 			["qg"] = 206864,	-- Preservationist Kathos
@@ -793,7 +798,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		}),
 
 		-- Day 14 --
-
 		q(77957, {	-- A Treacherous Race
 			["qg"] = 206864,	-- Preservationist Kathos
 			["coord"] = { 47.4, 48.1, VALDRAKKEN },

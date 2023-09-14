@@ -5560,6 +5560,7 @@ _.ObjectNames = {
 	[409914] = "Mimiron's Booster Part",
 	[410179] = "Loose Dirt Mound",
 	[410181] = "Loose Dirt Mound",
+	[411936] = "Orb Location",
 	[9000000] = "Wind Sculpted Stone",
 	[9000001] = "Ancient Incense Brazier",
 	[9000002] = "Ancient Incense Brazier",
