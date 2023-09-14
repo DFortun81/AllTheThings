@@ -652,6 +652,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(77490),	-- last chat text was that '%player_name% creates Shipment of Goods' multiple times / 'Chest' (spellID 420626)
 		--q(77370),	-- also 'The vision of a young dreamer fill the air around the Fileds of Reverie' / 'Chest' (sleppID 418389)
 		--q(77356),	-- pop during wq 76558 / 'Chest' (spellID 418326)
+		--q(77368),	-- was afk / 'Chest' (spellID 418387)
 
 		--q(77413),	-- Shandris's Scouting Report (itemID 208181) (spellID 418275), but need to confirm
 	}),

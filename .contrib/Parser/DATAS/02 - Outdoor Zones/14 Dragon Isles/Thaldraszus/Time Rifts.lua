@@ -340,7 +340,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["coord"] = { 57.7, 64.2, 2199 }, 	-- Tyrhold Reservoir (Scenario Map)
 					}),
 					q(76533, {	-- Dangerous Documentation
-						["provider"] = { "n", 207252 },	-- Watcher's Log
+						["provider"] = { "n", 207525 },	-- Watcher's Log
 						["coord"] = { 58.2, 39.0, ULDEROTH },
 						["g"] = {
 							i(206962),	-- Watcher's Log
