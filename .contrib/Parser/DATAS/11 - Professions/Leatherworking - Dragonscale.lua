@@ -95,7 +95,7 @@ profession(LEATHERWORKING, {
 					},
 					{
 						["name"] = "Blue Dragonscale Shoulders",
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { "removed 4.0.3", "added 10.1.7" },
 						["recipeID"] = 19089,
 						["requireSkill"] = 10656,
 					},

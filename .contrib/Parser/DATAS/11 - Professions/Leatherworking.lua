@@ -1699,7 +1699,7 @@ profession(LEATHERWORKING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Blue Dragonscale Shoulders",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },
 					["recipeID"] = 19089,
 				},
 				-- #endif
