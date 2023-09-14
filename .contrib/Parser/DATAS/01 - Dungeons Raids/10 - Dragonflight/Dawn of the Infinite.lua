@@ -102,7 +102,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(93086),	-- Swashbuckling Vest		(NYI)
 
 			ig(134732),	-- Frigidlink Armor			(Removed)
-			ig(120952),	-- Slarkhide				(Removed)
+		--	ig(120952),	-- Slarkhide				(Removed)			Added in 10.1.7 to original Source
 		}),
 		filter(PLATE, {
 		}),
