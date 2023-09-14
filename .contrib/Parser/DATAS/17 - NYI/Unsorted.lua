@@ -2344,7 +2344,6 @@ root(ROOTS.Unsorted, {
 			i(207045),	-- <DNT> Lo'Gosh Mainhand Weapon
 			i(207096),	-- Paracausal Chest
 			i(207102),	-- TESTING ITEM DELETE ME
-			i(205199),	-- Slime Sheathed Shell
 			i(207594),	-- Looter's Purse
 			i(208029),	-- Scareloc Parts
 			i(207984),	-- Chroniton Wand
