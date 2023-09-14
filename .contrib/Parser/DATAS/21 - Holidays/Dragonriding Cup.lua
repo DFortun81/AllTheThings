@@ -29,7 +29,7 @@ EASTERN_KINGDOMS_CUP_HEADER = createHeader({
 	readable = "Eastern Kingdoms Cup",
 	constant = "EASTERN_KINGDOMS_CUP_HEADER",
 	icon = [[~_.asset("Holiday_EastCup")]],
-	eventID = EVENTS.EASTERN_KINGDOMS_CUP,
+	eventID = 1400,
 	--[[
 	eventSchedule = {
 		0, -- Likely Recurring, not yet tho
@@ -38,7 +38,7 @@ EASTERN_KINGDOMS_CUP_HEADER = createHeader({
 	},--]]
 	text = {
 		en = "Eastern Kingdoms Cup",
-		de = "Der Pokal der Östlichen Königreiche"
+		de = "Der Pokal der Östlichen Königreiche",
 	},
 });
 KALIMDOR_CUP_HEADER = createHeader({
