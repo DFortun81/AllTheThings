@@ -2736,12 +2736,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 27.2, 52.8, DUN_MOROGH },
 					},
 					-- #elseif AFTER 10.1.7
-					["cr"] = 41121,	-- Frostmane Seer
+					["crs"] = {
+						41121,	-- Frostmane Seer
+						1117,	-- Rockjaw Bonesnapper
+					},
 					["coords"] = {
 						{ 49.0, 35.4, DUN_MOROGH },
 						{ 48.6, 42.6, DUN_MOROGH },
 						{ 50.6, 39.2, DUN_MOROGH },
 						{ 47.2, 39.4, DUN_MOROGH },
+						{ 77.7, 55.0, DUN_MOROGH },
+						{ 79.2, 48.4, DUN_MOROGH },
 					},
 					-- #endif
 				}),
