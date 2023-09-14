@@ -751,7 +751,7 @@ profession(TAILORING, {
 				{
 					["name"] = "Black Silk Pack",
 					["recipeID"] = 6695,
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },
 				},
 				{
 					["name"] = "Bottomless Bag",
