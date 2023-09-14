@@ -1986,14 +1986,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1459, {	-- Shadowhide Scalper
-					["cr"] = 579,	-- Shadowhide Assassin
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
+					["cr"] = 579,	-- Shadowhide Assassin
 					["coords"] = {
 						{ 80.6, 48.8, REDRIDGE_MOUNTAINS },
 						{ 79.2, 40.6, REDRIDGE_MOUNTAINS },
 					},
 					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						579,	-- Shadowhide Assassin
+						429,	-- Shadowhide Darkweaver
+					},
 					["coords"] = {
 						{ 71.2, 40.4, REDRIDGE_MOUNTAINS },
 						{ 66.8, 42.2, REDRIDGE_MOUNTAINS },

@@ -707,7 +707,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Greater Frost Protection Potion",
-					["timeline"] = { "added 1.11.1.5462", "removed 4.0.3" },
+					["timeline"] = { "added 1.11.1.5462", "removed 4.0.3", "added 10.1.7" },
 					["recipeID"] = 17575
 				},
 				{
@@ -975,7 +975,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				applyclassicphase(PHASE_FIVE, {
 					["name"] = "Elixir of Greater Firepower",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { "removed 4.0.1", ADDED_10_1_7 },
 					["recipeID"] = 26277
 				}),
 				{
@@ -1031,7 +1031,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Elixir of the Mongoose",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },
 					["recipeID"] = 17571
 				},
 				{

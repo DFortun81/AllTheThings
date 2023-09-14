@@ -142,7 +142,7 @@ EXPERT_ARTISAN_ALCHEMY = {
 		-- #endif
 		applyclassicphase(PHASE_FIVE, {
 			r(26277, {	-- Elixir of Greater Firepower
-				["timeline"] = { REMOVED_4_0_1 },
+				["timeline"] = { REMOVED_4_0_1, ADDED_10_1_7 },
 			}),
 		}),
 	}),
@@ -180,7 +180,7 @@ EXPERT_ARTISAN_ALCHEMY = {
 		}),
 		r(17574),	-- Greater Fire Protection Potion
 		r(17575, {	-- Greater Frost Protection Potion
-			["timeline"] = { "added 1.11.1.5462", "removed 4.0.3" },
+			["timeline"] = { "added 1.11.1.5462", "removed 4.0.3", "added 10.1.7" },
 		}),
 		r(7181),	-- Greater Healing Potion
 		r(11448),	-- Greater Mana Potion

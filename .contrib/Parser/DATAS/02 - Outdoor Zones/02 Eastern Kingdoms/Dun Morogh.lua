@@ -2463,7 +2463,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(1137, {	-- Edan the Howler
-					-- #if AFTER CATA
+					-- #if AFTER 10.1.7
+					["coord"] = { 32.3, 52.26, 29 },	-- Grizzled Den
+					-- #elseif AFTER CATA
 					["coord"] = { 46.4, 47.6, DUN_MOROGH },
 					-- #else
 					["coords"] = {
@@ -2472,6 +2474,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 42.2, 46.4, DUN_MOROGH },
 					},
 					-- #endif
+					["description"] = "Located in the Grizzled Den.",
 					["groups"] = {
 						i(3225, {	-- Bloodstained Knife
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 07.09.2023 ATT Discord
