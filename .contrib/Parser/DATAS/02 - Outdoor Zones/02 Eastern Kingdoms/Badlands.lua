@@ -11,9 +11,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\achievement_zone_badlands_01",
 		-- #endif
-		-- #if NOT ANYCLASSIC
-		["maps"] = { 16 },	-- Uldaman
-		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(4900, {	-- Badlands Quests

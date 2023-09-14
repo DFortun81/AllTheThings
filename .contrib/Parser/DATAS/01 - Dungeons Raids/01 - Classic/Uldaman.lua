@@ -21,7 +21,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		},
 		-- #endif
 		["mapID"] = ULDAMAN,
-		["maps"] = { 231 },
+		["maps"] = { 16, 231 },
 		["lvl"] = lvlsquish(35, 35, 15),
 		["groups"] = {
 			n(PROFESSIONS, {
