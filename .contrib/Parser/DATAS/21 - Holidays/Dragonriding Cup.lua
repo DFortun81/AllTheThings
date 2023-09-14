@@ -10,11 +10,31 @@ DRAGONRIDING_CUP_ROOT = createHeader({
 		en = "Dragonriding Cup",
 	},
 });
+BROKEN_ISLES_CUP_HEADER = createHeader({
+	readable = "Broken Isles Cup",
+	constant = "BROKEN_ISLES_HEADER",
+--	icon = [[~_.asset("Holiday_DraeCup")]],
+	eventID = EVENTS.BROKEN_ISLES_CUP,
+	eventSchedule = {
+	--	1, -- Recurring, note that this changes every year.
+	--	Next Year
+	--	10, 10, 10, 0,	-- 10/10 at 10:00 AM
+	--	10, 23, 10, 0	-- 10/24 at 10:00 AM
+	},
+	text = {
+		en = "Broken Isles Cup",
+	},
+});
 EASTERN_KINGDOMS_CUP_HEADER = createHeader({
 	readable = "Eastern Kingdoms Cup",
 	constant = "EASTERN_KINGDOMS_CUP_HEADER",
 	icon = [[~_.asset("Holiday_EastCup")]],
 	eventID = EVENTS.EASTERN_KINGDOMS_CUP,
+	eventSchedule = {
+	--	1, -- Recurring, note that this changes every year.
+		10, 4, 10, 0,	-- 10/04 at 10:00 AM	-- US DATES
+		10, 17, 10, 0	-- 10/17 at 10:00 AM	-- US DATES
+	},
 	text = {
 		en = "Eastern Kingdoms Cup",
 		de = "Der Pokal der Östlichen Königreiche"
@@ -25,10 +45,28 @@ KALIMDOR_CUP_HEADER = createHeader({
 	constant = "KALIMDOR_CUP_HEADER",
 	icon = [[~_.asset("Holiday_KalCup")]],
 	eventID = EVENTS.KALIMDOR_CUP,
+	--	1, -- Recurring, note that this changes every year.
+		8, 15, 10, 0,	-- 08/15 at 10:00 AM	-- US DATES
+		9, 4, 10, 0		-- 09/04 at 10:00 AM	-- US DATES
+	},
 	text = {
 		en = "Kalimdor Cup",
 		de = "Kalimdorpokal",
 		ru = "Кубок Калимдора",
+	},
+});
+NORTHREND_CUP_HEADER = createHeader({
+	readable = "Northrend Cup",
+	constant = "NORTHREND_CUP_HEADER",
+--	icon = [[~_.asset("Holiday_DraeCup")]],
+	eventID = EVENTS.NORTHREND_CUP,
+	eventSchedule = {
+	--	1, -- Recurring, note that this changes every year.
+		4, 11, 10, 0,	-- 4/11 at 10:00 AM
+		4, 24, 10, 0	-- 4/24 at 10:00 AM
+	},
+	text = {
+		en = "Northrend Cup",
 	},
 });
 OUTLAND_CUP_HEADER = createHeader({
@@ -36,8 +74,27 @@ OUTLAND_CUP_HEADER = createHeader({
 	constant = "OUTLAND_CUP_HEADER",
 	icon = [[~_.asset("Holiday_DraeCup")]],
 	eventID = EVENTS.OUTLAND_CUP,
+	eventSchedule = {
+	--	1, -- Recurring, note that this changes every year.
+		1, 11, 10, 0,	-- 1/11 at 10:00 AM
+		1, 24, 10, 0	-- 1/24 at 10:00 AM
+	},
 	text = {
 		en = "Outland Cup",
+	},
+});
+PANDARIA_CUP_HEADER = createHeader({
+	readable = "Pandaria Cup",
+	constant = "PANDARIA_CUP_HEADER",
+--	icon = [[~_.asset("Holiday_DraeCup")]],
+	eventID = EVENTS.PANDARIA_CUP,
+	eventSchedule = {
+	--	1, -- Recurring, note that this changes every year.
+		7, 11, 10, 0,	-- 7/11 at 10:00 AM
+		7, 24, 10, 0	-- 7/24 at 10:00 AM
+	},
+	text = {
+		en = "Pandaria Cup",
 	},
 });
 -- These actually don't require any DF content

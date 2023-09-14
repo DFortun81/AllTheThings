@@ -805,6 +805,7 @@ local L = {
 		["Aberrus, the Shadowed Crucible"] = "Aberrus",
 		["Kazzara, the Hellforged"] = "Kazzara",
 		["WoW's Anniversary %> "] = "",
+		["Dragonriding Cup %> "] = "",
 		["Player vs Player"] = "PvP",
 		["Raid Finder"] = "LFR",
 		["Looking For Raid"] = "LFR",
