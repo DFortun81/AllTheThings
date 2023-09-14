@@ -2330,29 +2330,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 20.8, 46.8, DUSKWOOD },
 					},
 				}),
+				-- #if BEFORE 10.1.7
+				-- Now a quest reward.
 				i(3360, {	-- Stitches' Femur
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 412,	-- Stitches <Gift from the Embalmer>
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
-					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 25.4, 35.4, DUSKWOOD },
-					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 17.8, 33.4, DUSKWOOD },
-						{ 19.8, 46.8, DUSKWOOD },
-					},
-					-- #endif
-					--]]
 				}),
+				-- #endif
 				i(899, {	-- Venom Web Fang
 					["cr"] = 217,	-- Venom Web Spider
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
