@@ -2873,9 +2873,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["cr"] = 701,	-- Bloodscalp Mystic
 				}),
+				-- #if BEFORE 4.0.3
 				i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
 					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
 				}),
+				-- #endif
 				i(1624, {	-- Skullsplitter Helm
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["crs"] = {

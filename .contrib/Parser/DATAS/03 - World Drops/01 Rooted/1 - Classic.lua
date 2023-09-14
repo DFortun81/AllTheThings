@@ -3463,10 +3463,15 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 			i(13488),	-- Recipe: Transmute Life to Earth (RECIPE!)
 			i(13486),	-- Recipe: Transmute Undeath to Water (RECIPE!)
 			i(13487),	-- Recipe: Transmute Water to Undeath (RECIPE!)
+			-- #if AFTER 4.0.3
 			i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
+				-- #if AFTER 10.1.7
 				["description"] = "Can drop from any troll in Arathi Highlands, Dun Morogh, Stranglethorn, Silithus, The Hinterlands & Zul Gurub. Inside Zul Gurub is a great spot.",
-				["timeline"] = { "added 10.1.7" },	-- ATT Discord 05.09.2023
+				["maps"] = { ARATHI_HIGHLANDS, DUN_MOROGH, NORTHERN_STRANGLETHORN, SILITHUS, THE_CAPE_OF_STRANGLETHORN, THE_HINTERLANDS, ZULGURUB },
+				-- #endif
+				["timeline"] = { "removed 4.0.1", "added 10.1.7" },	-- ATT Discord 05.09.2023
 			}),
+			-- #endif
 		}),
 		prof(BLACKSMITHING, {
 			i(7992),	-- Plans: Blue Glittering Axe (RECIPE!)
