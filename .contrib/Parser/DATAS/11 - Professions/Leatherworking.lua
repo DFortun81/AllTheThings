@@ -1926,7 +1926,7 @@ profession(LEATHERWORKING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Living Breastplate",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },
 					["recipeID"] = 19095,
 				},
 				-- #endif
@@ -2562,7 +2562,7 @@ profession(LEATHERWORKING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Living Leggings",
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },
 					["recipeID"] = 19078,
 				},
 				-- #endif

@@ -2014,27 +2014,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(3074, {	-- Smoldering Gloves
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 1043,	-- Lost Whelp
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 1043,	-- Lost Whelp
 					["coords"] = {
-						{ 23.4, 35.4, WETLANDS },
-						{ 25.4, 35.4, WETLANDS },
+						{ 60.6, 33.2, WETLANDS },
+						{ 66.2, 49.0, WETLANDS },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					["cr"] = 42042,	-- Ebon Whelp
 					["coords"] = {
-						{ 23.4, 35.4, WETLANDS },
-						{ 17.8, 33.4, WETLANDS },
-						{ 19.8, 46.8, WETLANDS },
+						{ 63.8, 48.6, WETLANDS },
+						{ 65.0, 42.6, WETLANDS },
+						{ 61.8, 47.4, WETLANDS },
+						{ 61.2, 40.0, WETLANDS },
+						{ 70.6, 48.4, WETLANDS },
+						{ 67.6, 52.8, WETLANDS },
+						{ 63.8, 48.6, WETLANDS },
+						{ 61.0, 47.2, WETLANDS },
+						{ 61.8, 41.2, WETLANDS },
 					},
-					-- #endif
-					--]]
 				}),
 				i(3073, {	-- Smoldering Pants
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord

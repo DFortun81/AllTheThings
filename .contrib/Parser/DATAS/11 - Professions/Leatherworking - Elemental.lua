@@ -111,7 +111,7 @@ profession(LEATHERWORKING, {
 				["groups"] = {
 					{
 						["name"] = "Living Breastplate",
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { "removed 4.0.3", "added 10.1.7" },
 						["recipeID"] = 19095,
 						["requireSkill"] = 10658,
 					},
@@ -162,7 +162,7 @@ profession(LEATHERWORKING, {
 				["groups"] = {
 					{
 						["name"] = "Living Leggings",
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { "removed 4.0.3", "added 10.1.7" },
 						["recipeID"] = 19078,
 						["requireSkill"] = 10658,
 					},
