@@ -323,6 +323,8 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					}),
 					-- #if BEFORE 4.0.3
 					i(5967),	-- Girdle of Nobility
+					-- #elseif AFTER 10.1.7
+					i(5967),	-- Girdle of Nobility
 					-- #endif
 				},
 			}),
