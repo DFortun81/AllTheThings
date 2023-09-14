@@ -3680,10 +3680,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(4768, {	-- Adept's Gloves
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 03.09.2023 Data Discord
 						}),
 						i(4771, {	-- Harvest Cloak
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -3787,7 +3787,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(1355, {	-- Buckskin Cape
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
