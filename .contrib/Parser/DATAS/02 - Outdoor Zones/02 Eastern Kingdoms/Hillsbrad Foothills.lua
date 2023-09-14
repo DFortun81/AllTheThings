@@ -3123,20 +3123,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(8491, {	-- Black Tabby Cat (PET!)
 					["timeline"] = { "added 1.11.1.5462" },
 				}),
-				-- #if AFTER 10.1.7
-				i(4767, {	-- Coppercloth Gloves
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 09.09.2023
-					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
-					["cr"] = 2628,	-- Dalaran Worker
-					["coords"] = {
-						{ 27.8, 42.6, HILLSBRAD_FOOTHILLS },
-						{ 31.0, 43.6, HILLSBRAD_FOOTHILLS },
-						{ 33.6, 41.0, HILLSBRAD_FOOTHILLS },
-						{ 35.0, 35.6, HILLSBRAD_FOOTHILLS },
-						{ 32.6, 32.0, HILLSBRAD_FOOTHILLS },
-					},
-				}),
-				-- #endif
 				i(1280, {	-- Cloaked Hood
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
@@ -3158,6 +3144,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 52.6, 12.0, HILLSBRAD_FOOTHILLS },
 					},
 					-- #endif
+				}),
+				-- #endif
+				-- #if AFTER 10.1.7
+				i(4767, {	-- Coppercloth Gloves
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 09.09.2023
+					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
+					["cr"] = 2628,	-- Dalaran Worker
+					["coords"] = {
+						{ 27.8, 42.6, HILLSBRAD_FOOTHILLS },
+						{ 31.0, 43.6, HILLSBRAD_FOOTHILLS },
+						{ 33.6, 41.0, HILLSBRAD_FOOTHILLS },
+						{ 35.0, 35.6, HILLSBRAD_FOOTHILLS },
+						{ 32.6, 32.0, HILLSBRAD_FOOTHILLS },
+					},
 				}),
 				-- #endif
 				i(3204, {	-- Deepwood Bracers
@@ -3320,72 +3320,36 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(3745, {	-- Rune of Opening
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 2358,	-- Dalaran Summoner
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
-					["coords"] = {
-						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
-						{ 25.4, 35.4, HILLSBRAD_FOOTHILLS },
-					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
-						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
-						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
-					},
-					-- #endif
-					--]]
 				}),
 				i(1602, {	-- Sickle Axe
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 2287,	-- Crushridge Warmonger
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 2287,	-- Crushridge Warmonger
 					["coords"] = {
-						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
-						{ 25.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 42.2, 28.8, ALTERAC_MOUNTAINS },
+						{ 42.8, 31.0, ALTERAC_MOUNTAINS },
+						{ 44.2, 33.8, ALTERAC_MOUNTAINS },
+						{ 44.4, 30.4, ALTERAC_MOUNTAINS },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					["cr"] = 2254,	-- Crushridge Mauler
 					["coords"] = {
-						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
-						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
-						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
+						{ 47.2, 28.6, ALTERAC_MOUNTAINS },
+						{ 46.4, 26.4, ALTERAC_MOUNTAINS },
+						{ 44.6, 22.6, ALTERAC_MOUNTAINS },
+						{ 48.6, 26.4, ALTERAC_MOUNTAINS },
 					},
 					-- #endif
-					--]]
 				}),
 				i(5245, {	-- Summoner's Wand
-					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["cr"] = 2358,	-- Dalaran Summoner
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
 					["coords"] = {
-						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
-						{ 25.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 30.8, 31.6, ALTERAC_MOUNTAINS },
+						{ 33.6, 40.6, ALTERAC_MOUNTAINS },
+						{ 27.8, 40.6, ALTERAC_MOUNTAINS },
 					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
-						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
-						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
-					},
-					-- #endif
-					--]]
 				}),
 				-- #endif
 			}),
