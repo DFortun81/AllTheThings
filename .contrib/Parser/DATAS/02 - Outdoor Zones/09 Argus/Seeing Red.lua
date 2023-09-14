@@ -55,8 +55,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
 		}),
 		n(VENDORS, {
 			n(125246, {	-- Gaal <Blacksmith>
-				["description"] = "Items become available after completion of the achievement |cdc143cffSeeing Red|r",
-				["sourceQuests"] = { 77412 },	-- Proof and Promise
+				["sourceQuests"] = { 77795 },	-- Scavenged Artifacts
 				["coord"] = { 56.7, 68.6, KROKUUN },
 				["g"] = {
 					i(208684, {	-- Anchorite's Sorrow

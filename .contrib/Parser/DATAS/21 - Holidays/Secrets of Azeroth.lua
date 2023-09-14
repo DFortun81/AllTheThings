@@ -896,7 +896,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 
 						-- 4 object with name on WH... 409166, 409191, 409192, 409193
 						-- using Type-named HQTs to show the objects available to click
-					S	q(77968, {	-- Titan Power Relay [#1]
+						q(77968, {	-- Titan Power Relay [#1]
 							["type"] = HEADERS.Object..":409166",
 							["provider"] = { "i", 208960 },	-- Titan Focusing Crystal
 							["coord"] = { 59.3, 56.8, THALDRASZUS },
