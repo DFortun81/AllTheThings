@@ -3803,7 +3803,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				-- #if BEFORE 4.0.3
 				i(18512, {	-- Larval Acid
-					["timeline"] = { "deleted 4.3.0" },
 					["crs"] = {
 						8605,	-- Carrion Devourer
 						8603,	-- Carrion Grub
