@@ -2395,14 +2395,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- Wont return, its on timewalking vendor
 				}),
 				i(13495, {	-- Recipe: Greater Frost Protection Potion (RECIPE!)
-					["cr"] = 7428,	-- Frostmaul Giant
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
+					["cr"] = 7428,	-- Frostmaul Giant
 					["coords"] = {
 						{ 64.2, 69.0, WINTERSPRING },
 						{ 61.8, 68.6, WINTERSPRING },
 					},
 					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						7428,	-- Frostmaul Giant
+						7429,	-- Frostmaul Preserver
+						50258,	-- Frostmaul Tumbler
+					},
 					["coords"] = {
 						{ 63.2, 89.8, WINTERSPRING },
 						{ 57.8, 86.6, WINTERSPRING },
