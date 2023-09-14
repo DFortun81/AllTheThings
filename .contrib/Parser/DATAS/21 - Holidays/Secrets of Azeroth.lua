@@ -792,7 +792,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 
 		-- Day 14 --
 
-		q(77975, {	-- A Treacherous Race
+		q(77957, {	-- A Treacherous Race
 			["qg"] = 206864,	-- Preservationist Kathos
 			["coord"] = { 47.4, 48.1, VALDRAKKEN },
 			["groups"] = {
