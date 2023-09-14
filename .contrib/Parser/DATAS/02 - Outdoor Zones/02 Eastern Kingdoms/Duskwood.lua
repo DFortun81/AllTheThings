@@ -176,8 +176,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(337, {	-- An Old History Book
-					["provider"] = { "i", 2794 },
-					["description"] = "The item that starts this quest can drop from most of the mobs in the zone, but seem to drop more often from the Worgen.",
+					["provider"] = { "i", 2794 },	-- An Old History Book
 					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
@@ -2015,6 +2014,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(ZONE_DROPS, {
+				i(2794),	-- An Old History Book
 				i(885, {	-- Black Metal Axe
 					["cr"] = 3,	-- Flesh Eater
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
