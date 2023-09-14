@@ -5444,14 +5444,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(8483, {	-- Wastewander Water Pouch
-					["timeline"] = { "deleted 4.0.3", "added 10.1.7" },
 					["crs"] = {
+						-- #if AFTER 4.0.3
+						44613,	-- Wastewander Darkcaster
+						44612,	-- Wastewander Tracker
+						44611,	-- Wastewander Survivalist
+						-- #else
 						5623,	-- Wastewander Assassin
 						5618,	-- Wastewander Bandit
 						5615,	-- Wastewander Rogue
 						7805,	-- Wastewander Scofflaw
 						5617,	-- Wastewander Shadow Mage
 						5616,	-- Wastewander Thief
+						-- #endif
 					},
 				}),
 			}),
