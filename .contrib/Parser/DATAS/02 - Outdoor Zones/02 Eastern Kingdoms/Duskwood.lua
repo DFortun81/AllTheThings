@@ -1747,10 +1747,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(771, {  -- Commander Felstrom
 					-- #if BEFORE 4.0.3
 					["description"] = "Spawns in the Dawning Wood Catacombs.",
-					-- #elseif AFTER 10.1.7
-					["description"] = "Spawns in the Dawning Wood Catacombs.",
-					-- #endif
 					["coord"] = { 18.0, 38.0, DUSKWOOD },
+					-- #elseif AFTER 10.1.7
+					["description"] = "Wanders the Raven Hill Cemetary.",
+					["coord"] = { 21.1, 43.0, DUSKWOOD },
+					-- #endif
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["groups"] = {
 						i(4465, {	-- Bonefist Gauntlets [Classic] / Felstrom's Gauntlets [Wrath+]
