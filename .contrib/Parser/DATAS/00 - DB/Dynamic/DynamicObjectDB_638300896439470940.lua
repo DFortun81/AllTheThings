@@ -44,5 +44,20 @@
 			cn = "[Loose Dirt Mound]",
 		},
 	},
+	[405534] = {
+		readable = "Loose Dirt Mound",
+		model = 189528,
+		text = {
+			en = "Loose Dirt Mound",
+			es = "[Loose Dirt Mound]",
+			de = "Lockerer Erdhaufen",
+			fr = "[Loose Dirt Mound]",
+			it = "[Loose Dirt Mound]",
+			pt = "[Loose Dirt Mound]",
+			ru = "[Loose Dirt Mound]",
+			ko = "[Loose Dirt Mound]",
+			cn = "[Loose Dirt Mound]",
+		},
+	},
 })
 do ObjectDB[objectID] = objectData; end

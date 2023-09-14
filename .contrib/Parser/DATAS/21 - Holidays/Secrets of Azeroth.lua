@@ -834,10 +834,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 						}),
 					},
 				}),
-				q(77969, {
+				q(77973, {
 					["description"] = "Use your idol at each Ring/Room location to find Broken Urn's",
 					["groups"] = {
 						o(409212, {	-- Broken Urn #1
+							["provider"] = { "i", 207730 },	-- Idol of Ohn'ahra
 							["coord"] = { 60.0, 55.4, THALDRASZUS },
 							["description"] = "Room on Ring #1",
 							["groups"] = {
@@ -845,13 +846,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 							},
 						}),
 						o(409211, {	-- Broken Urn #2
+							["provider"] = { "i", 207730 },	-- Idol of Ohn'ahra
 							["coord"] = { 60.1, 62.0, THALDRASZUS },
 							["description"] = "Room on Ring #1",
 							["groups"] = {
 								i(208970),	-- Titan Energy Core
 							},
 						}),
-						o(409211, {	-- Broken Urn #3
+						o(409200, {	-- Broken Urn #3
+							["provider"] = { "i", 207730 },	-- Idol of Ohn'ahra
 							["coord"] = { 59.7, 55.5, THALDRASZUS },
 							["description"] = "Room on Ring #3",
 							["groups"] = {
@@ -859,6 +862,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 							},
 						}),
 						o(409214, {	-- Broken Urn #4
+							["provider"] = { "i", 207730 },	-- Idol of Ohn'ahra
 							["coord"] = { 59.7, 61.8, THALDRASZUS },
 							["description"] = "Room on Ring #3",
 							["groups"] = {
@@ -866,6 +870,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 							},
 						}),
 						o(409209, {	-- Broken Urn #5
+							["provider"] = { "i", 207730 },	-- Idol of Ohn'ahra
 							["coord"] = { 61.6, 61.7, THALDRASZUS },
 							["description"] = "Room on Ring #5",
 							["groups"] = {
@@ -873,6 +878,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 							},
 						}),
 						o(409208, {	-- Broken Urn #6
+							["provider"] = { "i", 207730 },	-- Idol of Ohn'ahra
 							["coord"] = { 61.5, 55.9, THALDRASZUS },
 							["description"] = "Room on Ring #5",
 							["groups"] = {
@@ -880,40 +886,37 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 							},
 						}),
 						i(208969, {	-- Titan Energy Cube
-							["cost"] = {
-								{"i",208971,1},	-- Titan Cube Housing
-								{"i",208970,1}, -- Titan Energy Core
-							},
+							i(208971),	-- Titan Cube Housing
+							i(208970),	-- Titan Energy Core
 						}),
 						i(208965, {	-- Titan Block Key
-							["cost"] = {
-								{"i",208967,1},	-- Titan Block Key Fragment
-								{"i",208966,1}, -- Titan Block Key Fragment
-							},
+							i(208967),	-- Titan Block Key Fragment
+							i(208966),	-- Titan Block Key Fragment
+						}),
+
+						-- 4 object with name on WH... 409166, 409191, 409192, 409193
+						-- using Type-named HQTs to show the objects available to click
+					S	q(77968, {	-- Titan Power Relay [#1]
+							["type"] = HEADERS.Object..":409166",
+							["provider"] = { "i", 208960 },	-- Titan Focusing Crystal
+							["coord"] = { 59.3, 56.8, THALDRASZUS },
+						}),
+						q(77970, {	-- Titan Power Relay [#2]
+							["type"] = HEADERS.Object..":409166",
+							["provider"] = { "i", 208969 },	-- Titan Energy Cube
+							["coord"] = { 59.5, 60.6, THALDRASZUS },
+						}),
+						q(77971, {	-- Titan Power Relay [#3]
+							["type"] = HEADERS.Object..":409166",
+							["provider"] = 	{ "i", 208973 },	-- Large Titan Capacitor
+							["coord"] = { 61.0, 62.4, THALDRASZUS },
+						}),
+						q(77969, {	-- Titan Power Relay [#4]
+							["type"] = HEADERS.Object..":409166",
+							["provider"] = { "i", 208965 },	-- Titan Block Key
+							["coord"] = { 61.0, 55.0, THALDRASZUS },
 						}),
 					},
-				}),
-				-- 4 object with name on WH... 409166, 409191, 409192, 409193
-				-- using Type-named HQTs to show the objects available to click
-				q(77968, {	-- Titan Power Relay [#1]
-					["type"] = HEADERS.Object..":409166",
-					["cost"] = { "i", 208960 },	-- Titan Focusing Crystal
-					["coord"] = { 59.3, 56.8, THALDRASZUS },
-				}),
-				q(77970, {	-- Titan Power Relay [#2]
-					["type"] = HEADERS.Object..":409166",
-					["cost"] = { "i", 208969 },	-- Titan Energy Cube
-					["coord"] = { 59.5, 60.6, THALDRASZUS },
-				}),
-				q(77971, {	-- Titan Power Relay [#3]
-					["type"] = HEADERS.Object..":409166",
-					["cost"] = { "i", 208973 },	-- Large Titan Capacitor
-					["coord"] = { 61.0, 62.4, THALDRASZUS },
-				}),
-				q(779769, {	-- Titan Power Relay [#4]
-					["type"] = HEADERS.Object..":409166",
-					["cost"] = { "i", 208965 },	-- Titan Block Key
-					["coord"] = { 61.0, 55.0, THALDRASZUS },
 				}),
 			},
 		}),
@@ -1047,6 +1050,5 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(77951),	-- Upon completion of (QuestID 77953)
 	q(77520),	-- Upon completion of (QuestID 77954)
 	q(77959),	-- Upon completion of (QuestID 77957)
-	q(77973),	-- Upon activation of all 4 Titan Power Relays (QuestID 77968->77971)
 	q(77308),	-- Upon completion of (QuestID 77977)
 })));
