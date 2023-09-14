@@ -2712,11 +2712,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 676,	-- Venture Co. Surveyor
 				}),
 				i(1652, {	-- Sturdy Lunchbox
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					-- #if AFTER 10.1.7
+					["cr"] = 921,	-- Venture Co. Lumberjack
+					-- #else
 					["crs"] = {
 						675,	-- Venture Co. Foreman
 						14492,	-- Verifonix <The Surveyor>
 					},
+					-- #endif
 				}),
 				i(1996, {	-- Voodoo Band
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },

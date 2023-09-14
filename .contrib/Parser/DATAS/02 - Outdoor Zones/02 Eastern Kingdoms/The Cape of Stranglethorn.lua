@@ -1914,10 +1914,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 43.8, 49.1, THE_CAPE_OF_STRANGLETHORN },
 					["groups"] = {
 						i(5028, {	-- Lord Sakrasis' Scepter
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 						i(5029, {	-- Talisman of the Naga Lord
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
