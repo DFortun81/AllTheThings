@@ -18,8 +18,8 @@ BROKEN_ISLES_CUP_HEADER = createHeader({
 	eventSchedule = {
 	--	1, -- Recurring, note that this changes every year.
 	--	Next Year
-	--	10, 10, 10, 0,	-- 10/10 at 10:00 AM
-	--	10, 23, 10, 0	-- 10/24 at 10:00 AM
+		2024, 10, 10, 10, 0,	-- 10/10 at 10:00 AM	-- US DATES
+		2024, 23, 10, 10, 0		-- 10/24 at 10:00 AM	-- US DATES
 	},
 	text = {
 		en = "Broken Isles Cup",
@@ -62,8 +62,8 @@ NORTHREND_CUP_HEADER = createHeader({
 	eventID = EVENTS.NORTHREND_CUP,
 	eventSchedule = {
 	--	1, -- Recurring, note that this changes every year.
-		4, 11, 10, 0,	-- 4/11 at 10:00 AM
-		4, 24, 10, 0	-- 4/24 at 10:00 AM
+		2024, 4, 11, 10, 0,	-- 4/11 at 10:00 AM		-- US DATES
+		2024, 4, 24, 10, 0	-- 4/24 at 10:00 AM		-- US DATES
 	},
 	text = {
 		en = "Northrend Cup",
@@ -76,8 +76,8 @@ OUTLAND_CUP_HEADER = createHeader({
 	eventID = EVENTS.OUTLAND_CUP,
 	eventSchedule = {
 	--	1, -- Recurring, note that this changes every year.
-		1, 11, 10, 0,	-- 1/11 at 10:00 AM
-		1, 24, 10, 0	-- 1/24 at 10:00 AM
+		2024, 1, 11, 10, 0,	-- 1/11 at 10:00 AM		-- US DATES
+		2024, 1, 24, 10, 0	-- 1/24 at 10:00 AM		-- US DATES
 	},
 	text = {
 		en = "Outland Cup",
@@ -90,8 +90,8 @@ PANDARIA_CUP_HEADER = createHeader({
 	eventID = EVENTS.PANDARIA_CUP,
 	eventSchedule = {
 	--	1, -- Recurring, note that this changes every year.
-		7, 11, 10, 0,	-- 7/11 at 10:00 AM
-		7, 24, 10, 0	-- 7/24 at 10:00 AM
+		2024, 7, 11, 10, 0,	-- 7/11 at 10:00 AM
+		2024, 7, 24, 10, 0	-- 7/24 at 10:00 AM
 	},
 	text = {
 		en = "Pandaria Cup",
