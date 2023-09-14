@@ -2346,7 +2346,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 1662,	-- Captain Perrine
 					["coord"] = { 51.6, 67.6, TIRISFAL_GLADES },
 				}),
-				-- #if BEFORE 10.1.7
+				-- #if AFTER 10.1.7
 				i(3260, {	-- Scarlet Initiate Robes
 					["cr"] = 1539,	-- Scarlet Neophyte
 					["coord"] = { 79.0, 32.2, TIRISFAL_GLADES },
