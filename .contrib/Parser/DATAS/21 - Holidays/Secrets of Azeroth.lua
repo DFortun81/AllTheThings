@@ -208,7 +208,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		}),
 		o(410179, {	-- Loose Dirt Mound
 			["questID"] = 78207,
-			["coord"] = { 66.8, 73.2, WESTERN_PLAGUELANDS },
+			["coord"] = { 68.8, 73.2, WESTERN_PLAGUELANDS },
 		}),
 		o(405539, {	-- Loose Dirt Mound
 			["questID"] = 77300,
@@ -704,6 +704,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		q(77897, {	-- A Special Book
 			["qg"] = 207696,	-- Bobby Carlisle
 			["coord"] = { 47.9, 46.8, VALDRAKKEN },
+			["repeatable"] = true,
 			["groups"] = {
 				i(208888),	-- Kirin Tor Contact's Note (QI!)
 				-- 1 object with name on WH... 408976
@@ -741,6 +742,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		q(77928, {	-- They Are Always Listening
 			["qg"] = 207696,	-- Bobby Carlisle
 			["coord"] = { 47.9, 46.8, VALDRAKKEN },
+			["repeatable"] = true,
 			["groups"] = {
 				i(208929),	-- Great Places to Visit in Valdrakken (QI!)
 				i(208936),	-- Compiled Report
@@ -839,7 +841,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 					["groups"] = {
 						o(409212, {	-- Broken Urn #1
 							["provider"] = { "i", 207730 },	-- Idol of Ohn'ahra
-							["coord"] = { 60.0, 55.4, THALDRASZUS },
+							["coord"] = { 59.8, 62.3, THALDRASZUS },
 							["description"] = "Room on Ring #1",
 							["groups"] = {
 								i(208971),	-- Titan Cube Housing
@@ -847,7 +849,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 						}),
 						o(409211, {	-- Broken Urn #2
 							["provider"] = { "i", 207730 },	-- Idol of Ohn'ahra
-							["coord"] = { 60.1, 62.0, THALDRASZUS },
+							["coord"] = { 59.9, 54.7, THALDRASZUS },
 							["description"] = "Room on Ring #1",
 							["groups"] = {
 								i(208970),	-- Titan Energy Core
@@ -855,7 +857,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 						}),
 						o(409200, {	-- Broken Urn #3
 							["provider"] = { "i", 207730 },	-- Idol of Ohn'ahra
-							["coord"] = { 59.7, 55.5, THALDRASZUS },
+							["coord"] = { 59.7, 54.9, THALDRASZUS },
 							["description"] = "Room on Ring #3",
 							["groups"] = {
 								i(208960),	-- Titan Focusing Crystal
@@ -863,7 +865,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 						}),
 						o(409214, {	-- Broken Urn #4
 							["provider"] = { "i", 207730 },	-- Idol of Ohn'ahra
-							["coord"] = { 59.7, 61.8, THALDRASZUS },
+							["coord"] = { 59.7, 62.6, THALDRASZUS },
 							["description"] = "Room on Ring #3",
 							["groups"] = {
 								i(208973),	-- Large Titan Capacitor
@@ -871,7 +873,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 						}),
 						o(409209, {	-- Broken Urn #5
 							["provider"] = { "i", 207730 },	-- Idol of Ohn'ahra
-							["coord"] = { 61.6, 61.7, THALDRASZUS },
+							["coord"] = { 62.0, 61.9, THALDRASZUS },
 							["description"] = "Room on Ring #5",
 							["groups"] = {
 								i(208967),	-- Titan Block Key Fragment
@@ -879,7 +881,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 						}),
 						o(409208, {	-- Broken Urn #6
 							["provider"] = { "i", 207730 },	-- Idol of Ohn'ahra
-							["coord"] = { 61.5, 55.9, THALDRASZUS },
+							["coord"] = { 61.6, 55.1, THALDRASZUS },
 							["description"] = "Room on Ring #5",
 							["groups"] = {
 								i(208966),	-- Titan Block Key Fragment
@@ -921,7 +923,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			},
 		}),
 		q(77977, {	-- An Ominous Artifact
-			-- ["qg"] = Floating orb above console
+			["provider"] = { "o", 411936 },	-- Orb Location
 			["coord"] = { 60.2, 58.7, THALDRASZUS },
 			["groups"] = {
 				n(210674, {	-- Tithris
@@ -1050,5 +1052,6 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(77951),	-- Upon completion of (QuestID 77953)
 	q(77520),	-- Upon completion of (QuestID 77954)
 	q(77959),	-- Upon completion of (QuestID 77957)
+	q(77975),	-- Receiving 'Tyr's Favor' buff (spellID 423792) during day 14
 	q(77308),	-- Upon completion of (QuestID 77977)
 })));
