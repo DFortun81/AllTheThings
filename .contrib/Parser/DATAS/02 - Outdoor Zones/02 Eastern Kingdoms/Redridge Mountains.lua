@@ -1305,6 +1305,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(52146, {	-- Chitter
 					["coord"] = { 63.8, 65.2, REDRIDGE_MOUNTAINS },
 					["timeline"] = { "added 4.0.3.13682" },
+					-- #if AFTER 10.1.7
+					["groups"] = {
+						i(3229, {	-- Tarantula Silk Sash
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+						}),
+					},
+					-- #endif
 				}),
 				n(147222, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Gnollfeaster
 					["coord"] = { 24.4, 70.9, REDRIDGE_MOUNTAINS },
