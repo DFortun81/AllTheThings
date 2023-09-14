@@ -2544,7 +2544,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(1271, {	-- Old Icebeard
 					["coord"] = { 38.4, 54.0, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 07.09.2023 ATT Discord
 					["groups"] = {
 						i(2899, {	-- Wengido Collar
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 07.09.2023 ATT Discord
