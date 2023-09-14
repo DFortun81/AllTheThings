@@ -32,7 +32,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(147516),	-- Legion Stalker's Hood 			(NYI)
 			ig(121509),	-- Runesworn Crown		 			(NYI)
 
-			ig(1280),	-- Cloaked Hood 					(Removed)
+		--	ig(1280),	-- Cloaked Hood 					(Removed)			Added in 10.1.7 to original Source
 		--	ig(4724),	-- Humbert's Helm 					(Removed)			Added in 10.1.7 to original Source
 			ig(134621),	-- Incendiary Helm 					(Removed)
 			ig(3392),	-- Ringed Helm 						(Removed)
