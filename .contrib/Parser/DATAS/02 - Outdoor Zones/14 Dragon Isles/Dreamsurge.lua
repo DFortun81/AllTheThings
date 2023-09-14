@@ -181,7 +181,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						DreamboundBOA(208916, 209388),	-- Dreambound Plate Boots
 						DreamboundBOA(208910, 209384),	-- Dreambound Plate Belt
 						DreamboundBOA(208909, 209383),	-- Dreambound Plate Bracers
-						DreamboundBOA(208902, 209388),	-- Dreambound Plate Spaulders
+						DreamboundBOA(208902, 209385),	-- Dreambound Plate Spaulders
 						DreamboundBOA(208901, 209386),	-- Dreambound Plate Leggings
 						DreamboundBOA(208894, 209389),	-- Dreambound Plate Chestpiece
 						DreamboundBOA(208890, 209390),	-- Dreambound Plate Helm
