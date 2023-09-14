@@ -788,8 +788,151 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			-- ["sourceQuest"] = 77953,	-- A Sphere in Danger
 			["coord"] = { 47.4, 46.7, VALDRAKKEN },
 		}),
+
 		-- Day 14 --
 
+		q(77975, {	-- A Treacherous Race
+			["qg"] = 206864,	-- Preservationist Kathos
+			["coord"] = { 47.4, 48.1, VALDRAKKEN },
+			["groups"] = {
+				i(208958),	-- Ancient Tyrhold Artifact Notes (QI!)
+				q(77974, {
+					["description"] = "Unlock the first lock by using your torch at all 8 Tyrhold staute.",
+					["groups"] = {
+						q(77964, {	-- Orb #1
+							["provider"] = {"i",208092},	-- Torch of Pyrreth
+							["coord"] = { 59.9, 61.0, THALDRASZUS },
+						}),
+						q(77960, {	-- Orb #2
+							["provider"] = {"i",208092},	-- Torch of Pyrreth
+							["coord"] = { 57.1, 64.4, THALDRASZUS },
+						}),
+						q(77961, {	-- Orb #3
+							["provider"] = {"i",208092},	-- Torch of Pyrreth
+							["coord"] = { 57.1, 62.9, THALDRASZUS },
+						}),
+						q(77962, {	-- Orb #4
+							["provider"] = {"i",208092},	-- Torch of Pyrreth
+							["coord"] = { 57.9, 61.8, THALDRASZUS },
+						}),
+						q(77963, {	-- Orb #5
+							["provider"] = {"i",208092},	-- Torch of Pyrreth
+							["coord"] = { 57.9, 60.5, THALDRASZUS },
+						}),
+						q(77965, {	-- Orb #6
+							["provider"] = {"i",208092},	-- Torch of Pyrreth
+							["coord"] = { 58.0, 56.9, THALDRASZUS },
+						}),
+						q(77966, {	-- Orb #7
+							["provider"] = {"i",208092},	-- Torch of Pyrreth
+							["coord"] = { 57.9, 56.0, THALDRASZUS },
+						}),
+						q(77967, {	-- Orb #8
+							["provider"] = {"i",208092},	-- Torch of Pyrreth
+							["coord"] = { 59.8, 56.4, THALDRASZUS },
+						}),
+					},
+				}),
+				q(77969, {
+					["description"] = "Use your idol at each Ring/Room location to find Broken Urn's",
+					["groups"] = {
+						o(409212, {	-- Broken Urn #1
+							["coord"] = { 60.0, 55.4, THALDRASZUS },
+							["description"] = "Room on Ring #1",
+							["groups"] = {
+								i(208971),	-- Titan Cube Housing
+							},
+						}),
+						o(409211, {	-- Broken Urn #2
+							["coord"] = { 60.1, 62.0, THALDRASZUS },
+							["description"] = "Room on Ring #1",
+							["groups"] = {
+								i(208970),	-- Titan Energy Core
+							},
+						}),
+						o(409211, {	-- Broken Urn #3
+							["coord"] = { 59.7, 55.5, THALDRASZUS },
+							["description"] = "Room on Ring #3",
+							["groups"] = {
+								i(208960),	-- Titan Focusing Crystal
+							},
+						}),
+						o(409214, {	-- Broken Urn #4
+							["coord"] = { 59.7, 61.8, THALDRASZUS },
+							["description"] = "Room on Ring #3",
+							["groups"] = {
+								i(208973),	-- Large Titan Capacitor
+							},
+						}),
+						o(409209, {	-- Broken Urn #5
+							["coord"] = { 61.6, 61.7, THALDRASZUS },
+							["description"] = "Room on Ring #5",
+							["groups"] = {
+								i(208967),	-- Titan Block Key Fragment
+							},
+						}),
+						o(409208, {	-- Broken Urn #6
+							["coord"] = { 61.5, 55.9, THALDRASZUS },
+							["description"] = "Room on Ring #5",
+							["groups"] = {
+								i(208966),	-- Titan Block Key Fragment
+							},
+						}),
+						i(208969, {	-- Titan Energy Cube
+							["cost"] = {
+								{"i",208971,1},	-- Titan Cube Housing
+								{"i",208970,1}, -- Titan Energy Core
+							},
+						}),
+						i(208965, {	-- Titan Block Key
+							["cost"] = {
+								{"i",208967,1},	-- Titan Block Key Fragment
+								{"i",208966,1}, -- Titan Block Key Fragment
+							},
+						}),
+					},
+				}),
+				-- 4 object with name on WH... 409166, 409191, 409192, 409193
+				-- using Type-named HQTs to show the objects available to click
+				q(77968, {	-- Titan Power Relay [#1]
+					["type"] = HEADERS.Object..":409166",
+					["cost"] = { "i", 208960 },	-- Titan Focusing Crystal
+					["coord"] = { 59.3, 56.8, THALDRASZUS },
+				}),
+				q(77970, {	-- Titan Power Relay [#2]
+					["type"] = HEADERS.Object..":409166",
+					["cost"] = { "i", 208969 },	-- Titan Energy Cube
+					["coord"] = { 59.5, 60.6, THALDRASZUS },
+				}),
+				q(77971, {	-- Titan Power Relay [#3]
+					["type"] = HEADERS.Object..":409166",
+					["cost"] = { "i", 208973 },	-- Large Titan Capacitor
+					["coord"] = { 61.0, 62.4, THALDRASZUS },
+				}),
+				q(779769, {	-- Titan Power Relay [#4]
+					["type"] = HEADERS.Object..":409166",
+					["cost"] = { "i", 208965 },	-- Titan Block Key
+					["coord"] = { 61.0, 55.0, THALDRASZUS },
+				}),
+			},
+		}),
+		q(77977, {	-- An Ominous Artifact
+			-- ["qg"] = Floating orb above console
+			["coord"] = { 60.2, 58.7, THALDRASZUS },
+			["groups"] = {
+				n(210674, {	-- Tithris
+					["g"] = {
+						i(209555),	--  Orb of Rathmus (QI)
+					},
+				}),
+				o(409120, {	-- Cache of Cosmic Mysteries
+					["coord"] = { 60.2, 58.7, THALDRASZUS },
+					["g"] = {
+						i(208980),	--  Cache of Cosmic Curiosities (QI)
+					},
+				}),
+			},
+		}),
 	}),
 	n(COMMUNITY_CLUES_HEADER, {
 		header(HEADERS.Spell, 424082, {
@@ -902,4 +1045,7 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(78111), 	-- Using torch at (48.6 76.3 Thaldraszus - in a cave) Northern Cave
 	q(77951),	-- Upon completion of (QuestID 77953)
 	q(77520),	-- Upon completion of (QuestID 77954)
+	q(77959),	-- Upon completion of (QuestID 77957)
+	q(77973),	-- Upon activation of all 4 Titan Power Relays (QuestID 77968->77971)
+	q(77308),	-- Upon completion of (QuestID 77977)
 })));
