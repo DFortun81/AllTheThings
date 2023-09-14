@@ -570,7 +570,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		}),
 		q(77305, {	-- Out of the Sands
 			["provider"] = { "i", 208146 },	-- Incomplete Tablet
-			["sourceQuest"] = 76509,	-- Into the Sands
+			--["sourceQuest"] = 76509,	-- Into the Sands
 		}),
 
 		-- Day 8 --
