@@ -1695,25 +1695,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						431,	-- Shadowhide Slayer
 						568,	-- Shadowhide Warrior
 					},
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
-					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 25.4, 35.4, REDRIDGE_MOUNTAINS },
-					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
-						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
-					},
-					-- #endif
-					--]]
 				}),
 				-- #if BEFORE 4.0.3
 				i(723, {	-- Goretusk Liver
@@ -1881,31 +1862,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(2798, {	-- Rethban Ore
-				--	["timeline"] = { "removed 4.0.3" }, -- Not removed based on Discord Report 23.06.2022
 					["cr"] = 580,	-- Redridge Drudger
 				}),
 				i(1462, {	-- Ring of the Shadow
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 429,	-- Shadowhide Darkweaver
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 25.4, 35.4, REDRIDGE_MOUNTAINS },
+						{ 70.4, 40.6, REDRIDGE_MOUNTAINS },
+						{ 70.6, 45.2, REDRIDGE_MOUNTAINS },
+						{ 76.2, 53.0, REDRIDGE_MOUNTAINS },
 					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, REDRIDGE_MOUNTAINS },
-						{ 17.8, 33.4, REDRIDGE_MOUNTAINS },
-						{ 19.8, 46.8, REDRIDGE_MOUNTAINS },
-					},
-					-- #endif
-					--]]
 				}),
 				i(1473, {	-- Riverside Staff
 					["cr"] = 545,	-- Murloc Tidecaller
@@ -1927,9 +1893,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE 4.0.3
 					["cr"] = 397,	-- Morganth
 					["coord"] = { 80.0, 49.6, REDRIDGE_MOUNTAINS },
-					-- #else
-					["cr"] = 397,	-- Grand Magus Doane (Name changed)
-					["coord"] = { 71.4, 44.8, REDRIDGE_MOUNTAINS },
+					-- #elseif AFTER 10.1.7
+					["cr"] = 429,	-- Shadowhide Darkweaver
+					["coords"] = {
+						{ 70.4, 40.6, REDRIDGE_MOUNTAINS },
+						{ 70.6, 45.2, REDRIDGE_MOUNTAINS },
+						{ 76.2, 53.0, REDRIDGE_MOUNTAINS },
+					},
 					-- #endif
 				}),
 				i(1469, {	-- Scimitar of Atun
@@ -2009,6 +1979,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 71.2, 40.4, REDRIDGE_MOUNTAINS },
 						{ 66.8, 42.2, REDRIDGE_MOUNTAINS },
 						{ 70.6, 49.6, REDRIDGE_MOUNTAINS },
+						{ 70.4, 40.6, REDRIDGE_MOUNTAINS },
+						{ 70.6, 45.2, REDRIDGE_MOUNTAINS },
+						{ 76.2, 53.0, REDRIDGE_MOUNTAINS },
 					},
 					-- #endif
 				}),
