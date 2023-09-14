@@ -1303,7 +1303,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 38977,	-- Apothecary Jerrod
 					["sourceQuests"] = {
 						24999,	-- Planting the Seed of Fear
-						24998,	-- Maggot Eye
 						24995,	-- Off the Scales
 					},
 					["timeline"] = { "added 4.0.3.13277" },
