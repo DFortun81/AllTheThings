@@ -36,9 +36,9 @@ local QUANTUM_GROUP = sharedData({
 		--	ig(4724),	-- Humbert's Helm 					(Removed)			Added in 10.1.7 to original Source
 			ig(134621),	-- Incendiary Helm 					(Removed)
 			ig(3392),	-- Ringed Helm 						(Removed)
-			ig(5753),	-- Ruffled Chaplet 					(Removed)(unique)
+		--	ig(5753),	-- Ruffled Chaplet 					(Removed)(unique)			Added in 10.1.7 to original Source
 			ig(134794),	-- Ruinous Helm 					(Removed)
-			ig(6204),	-- Tribal Worg Helm					(Removed)(unique)
+		--	ig(6204),	-- Tribal Worg Helm					(Removed)(unique)			Added in 10.1.7 to original Source
 
 			ig(89480),	-- Hozen-Crafted Hood				(Unsorted)
 		}),
