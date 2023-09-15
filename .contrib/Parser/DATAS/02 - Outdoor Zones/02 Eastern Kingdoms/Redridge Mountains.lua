@@ -1810,18 +1810,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(1300, {	-- Lesser Staff of the Spire
-					["cr"] = 436,	-- Blackrock Shadowcaster
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
+					["cr"] = 436,	-- Blackrock Shadowcaster
 					["coords"] = {
 						{ 69.8, 57.4, REDRIDGE_MOUNTAINS },
 						{ 67.4, 56.0, REDRIDGE_MOUNTAINS },
 					},
 					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						436,	-- Blackrock Shadowcaster
+						43535,	-- Blackrock Warden
+					}.
 					["coords"] = {
 						{ 62.0, 51.0, REDRIDGE_MOUNTAINS },
 						{ 60.0, 48.4, REDRIDGE_MOUNTAINS },
 						{ 59.6, 41.2, REDRIDGE_MOUNTAINS },
+						
+						{ 70.8, 60.2, REDRIDGE_MOUNTAINS },
+						{ 64.4, 68.2, REDRIDGE_MOUNTAINS },
+						{ 69.0, 75.6, REDRIDGE_MOUNTAINS },
 					},
 					-- #endif
 				}),
