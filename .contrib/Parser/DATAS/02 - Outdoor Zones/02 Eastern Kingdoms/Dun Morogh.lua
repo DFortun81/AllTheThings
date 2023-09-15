@@ -6,6 +6,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["lore"] = "Dun Morogh is home to both the gnomes of Gnomeregan and the Ironforge dwarves and is the location of the major city of Ironforge. The Khaz Modan mountains surround Dun Morogh on all sides, making it accessible only by certain passes that are currently watched over by dwarven troops.\n\nThe center of dwarven culture and ingenuity, Dun Morogh holds the capital of Ironforge. The region is snow-swept and forested, with gray, craggy mountains and slinking wolves. Troggs recently overran Gnomeregan, the gnomes' former capital, and drove its citizens to Ironforge. Frostmane trolls menace dwarven patrols. Several villages and towns dot the landscape, and though the trade routes can be perilous, dwarven mountaineers and warriors keep their settlements safe.",
 		["maps"] = {
 			29,		-- The Grizzled Den
+			31,		-- Gol'Balar Quarry
 			470,	-- Frostmane Hold
 		},
 		-- #if AFTER WRATH
@@ -21,7 +22,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				["maps"] = {
 					28,		-- Coldridge Pass
-					31,		-- Coldridge Valley
 					428,	-- Frostmane Hovel (Coldridge Valley)
 				},
 				["groups"] = {
