@@ -1847,6 +1847,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(45811, {	-- Marina DeSirrus
 					["coord"] = { 7.80, 34.2, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
+					-- #if AFTER 10.1.7
+					["groups"] = {
+						i(920, {	-- Wicked Spiked Mace
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },
+						}),
+					},
+					-- #endif
 				}),
 				n(45771, {	-- Marus
 					["coords"] = {
@@ -2356,32 +2363,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if BEFORE 10.1.7
 				i(920, {	-- Wicked Spiked Mace
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },
 					["crs"] = {
 						909,	-- Defias Night Blade
 						215,	-- Defias Night Runner
 					},
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 25.4, 35.4, DUSKWOOD },
+						{ 23.6, 71.6, DUSKWOOD },
+						{ 49.8, 77.8, DUSKWOOD },
 					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 17.8, 33.4, DUSKWOOD },
-						{ 19.8, 46.8, DUSKWOOD },
-					},
-					-- #endif
-					--]]
 				}),
+				-- #endif
 			}),
 		},
 	}),
