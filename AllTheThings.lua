@@ -18338,6 +18338,27 @@ customWindowUpdates["ItemFilter"] = function(self, force)
 		self:BaseUpdate(force);
 	end
 end;
+customWindowUpdates["NWP"] = function(self)
+	if self:IsVisible() then
+		if not app:GetDataCache() then	-- This module requires a valid data cache to function correctly.
+			return;
+		end
+		if not self.initialized then
+			self.initialized = true;
+			self:SetData({
+				["text"] = L["NEW_WITH_PATCH"],
+				["icon"] = app.asset("WindowIcon_RWP"),
+				["description"] = L["NEW_WITH_PATCH_TOOLTIP"],
+				["visible"] = true,
+				["back"] = 1,
+				["g"] = app:BuildSearchResponse("awp", app.GameBuildVersion),
+			});
+			self:BuildData();
+			self.ExpandInfo = { Expand = true, Manual = true };
+		end
+		self:BaseUpdate(true);
+	end
+end;
 customWindowUpdates["SourceFinder"] = function(self)
 	if self:IsVisible() then
 		if not self.initialized then
@@ -22058,6 +22079,9 @@ SlashCmdList["AllTheThings"] = function(cmd)
 			return true;
 		elseif cmd == "list" then
 			app:GetWindow("list"):Toggle();
+			return true;
+		elseif cmd == "nwp" then
+			app:GetWindow("NWP"):Toggle();
 			return true;
 		elseif cmd == "rwp" then
 			app:GetWindow("RWP"):Toggle();

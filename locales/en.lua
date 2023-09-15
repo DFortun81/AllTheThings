@@ -241,6 +241,8 @@ local L = {
 	["FORCE_REFRESH_REQUIRED"] = "This may require a Force Refresh ("..SHIFT_KEY_TEXT.." click) to properly be collected.";
 	["FUTURE_UNOBTAINABLE"] = "Future Unobtainable!";
 	["FUTURE_UNOBTAINABLE_TOOLTIP"] = "This is content that has been confirmed or is highly-probable to be made unobtainable in a known future patch.";
+	["NEW_WITH_PATCH"] = "Newly Added Things";
+	["NEW_WITH_PATCH_TOOLTIP"] = "This shows you all of the content that has been added with the latest patch of the game.";
 	["TRADING_POST"] = "Trading Post";
 
 	["TIER_DATA"] = {
