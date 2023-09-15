@@ -585,13 +585,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 36.6, 61.6, TIRISFAL_GLADES },
 							-- #endif
+							-- #if AFTER 10.1.7
+							["description"] = "This item is currently unbound and cannot be learned until you vendor it.",
+							-- #endif
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 							["cr"] = 1916,	-- Stephen Bhartec
-							-- #if NOT ANYCLASSIC
-							-- CRIEVE NOTE: Just because Blizzard forgot to make this one BOE doesn't mean if you have it you shouldn't keep it. It's still a very very rare collectible.
-							["description"] = "This item is currently unbound and cannot be learned for transmog despite having an appearance that says its not collected from this source.",
-							["collectible"] = false,
-							-- #endif
 						}),
 						i(3262, {	-- Putrid Wooden Hammer
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023

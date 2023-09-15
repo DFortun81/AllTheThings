@@ -17606,6 +17606,32 @@ customWindowUpdates["Bounty"] = function(self, force, got)
 					},
 				}),
 			}),
+			app.CreateNPC(app.HeaderConstants.ZONE_DROPS, {
+				app.CreateItem(1388, {	-- Crooked Staff
+					["description"] = "This item was likely not readded with 10.1.7 or its source is currently unknown.",
+				}),
+				app.CreateItem(3330, {	-- Dargol's Hauberk
+					["description"] = "This item was likely not readded with 10.1.7 or its source is currently unknown.",
+				}),
+				app.CreateItem(2109, {	-- Frostmane Chain Vest
+					["description"] = "This item was likely not readded with 10.1.7 or its source is currently unknown.",
+				}),
+				app.CreateItem(778, {	-- Kobold Excavation Pick
+					["description"] = "This item was likely not readded with 10.1.7 or its source is currently unknown.",
+				}),
+				app.CreateItem(1462, {	-- Ring of the Shadow
+					["description"] = "This item was likely not readded with 10.1.7 or its source is currently unknown.",
+				}),
+				app.CreateItem(6180, {	-- Slarkskin
+					["description"] = "This item was likely not readded with 10.1.7 or its source is currently unknown.",
+				}),
+				app.CreateItem(4951, {	-- Squeeler's Belt
+					["description"] = "This item was likely not readded with 10.1.7 or its source is currently unknown.",
+				}),
+				app.CreateItem(1404, {	-- Tidal Charm
+					["description"] = "This item was likely not readded with 10.1.7 or its source is currently unknown.",
+				}),
+			}),
 		});
 		self:SetData(header);
 		BuildGroups(self.data);
