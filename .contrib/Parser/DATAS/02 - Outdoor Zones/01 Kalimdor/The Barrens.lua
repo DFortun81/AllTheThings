@@ -4179,8 +4179,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 				i(5094, {	-- Razormane War Shield
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
+					-- #if BEFORE 4.0.3
 					["cr"] = 3459,	-- Razormane Warfrenzy
+					["coords"] = {
+						{ 41.6, 79.0, THE_BARRENS },
+						{ 42.2, 81.6, THE_BARRENS },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 37660,	-- Razormane Warfrenzy
+					["coords"] = {
+						{ 38.0, 81.8, SOUTHERN_BARRENS },
+						{ 43.6, 82.6, SOUTHERN_BARRENS },
+						{ 44.6, 87.8, SOUTHERN_BARRENS },
+					},
+					-- #endif
 				}),
 				-- #if AFTER 4.2.0.10000
 				i(44977, {	-- Recipe: Dig Rat Stew (RECIPE!)
