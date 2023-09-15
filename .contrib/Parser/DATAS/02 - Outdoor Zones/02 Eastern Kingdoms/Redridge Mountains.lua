@@ -1772,18 +1772,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				i(1218, {	-- Heavy Gnoll War Club
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					["cr"] = 445,	-- Redridge Alpha
 					-- #if BEFORE 4.0.3
+					["cr"] = 445,	-- Redridge Alpha
 					["coords"] = {
 						{ 28.6, 22.2, REDRIDGE_MOUNTAINS },
 						{ 18.6, 16.4, REDRIDGE_MOUNTAINS },
 					},
 					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						445,	-- Redridge Alpha
+						580,	-- Redridge Drudger
+					},
 					["coords"] = {
 						{ 37.4, 30.8, REDRIDGE_MOUNTAINS },
 						{ 31.2, 21.6, REDRIDGE_MOUNTAINS },
 						{ 29.8, 37.4, REDRIDGE_MOUNTAINS },
 						{ 24.6, 31.0, REDRIDGE_MOUNTAINS },
+						{ 23.0, 19.0, REDRIDGE_MOUNTAINS },
+						{ 20.0, 23.8, REDRIDGE_MOUNTAINS },
 					},
 					-- #endif
 				}),
