@@ -589,6 +589,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 1916,	-- Stephen Bhartec
 							-- #if NOT ANYCLASSIC
 							-- CRIEVE NOTE: Just because Blizzard forgot to make this one BOE doesn't mean if you have it you shouldn't keep it. It's still a very very rare collectible.
+							["description"] = "This item is currently unbound and cannot be learned for transmog despite having an appearance that says its not collected from this source.",
 							["collectible"] = false,
 							-- #endif
 						}),
