@@ -2464,7 +2464,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(20451, {	-- Twilight Cultist Ring of Lordship
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },
 						}),
 					},
 				}),
