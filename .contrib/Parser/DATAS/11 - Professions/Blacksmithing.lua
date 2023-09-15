@@ -9,37 +9,37 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		ach(18864),	-- Anvil Mastery II
 		ach(18862),	-- Anvil Mastery I
 		ach(18851, {	-- Skeletons in the Lockbox
-			crit(1, {	-- Silver Skeleton Key
+			crit(61545, {	-- Silver Skeleton Key
 				["provider"] = { "i", 15869 },	-- Silver Skeleton Key
 			}),
-			crit(2, {	-- Golden Skeleton Key
+			crit(61546, {	-- Golden Skeleton Key
 				["provider"] = { "i", 15870 },	-- Golden Skeleton Key
 			}),
-			crit(3, {	-- Truesilver Skeleton Key
+			crit(61547, {	-- Truesilver Skeleton Key
 				["provider"] = { "i", 15871 },	-- Truesilver Skeleton Key
 			}),
-			crit(4, {	-- Arcanite Skeleton Key
+			crit(61548, {	-- Arcanite Skeleton Key
 				["provider"] = { "i", 15872 },	-- Arcanite Skeleton Key
 			}),
-			crit(5, {	-- Cobalt Skeleton Key
+			crit(61549, {	-- Cobalt Skeleton Key
 				["provider"] = { "i", 43854 },	-- Cobalt Skeleton Key
 			}),
-			crit(6, {	-- Titanium Skeleton Key
+			crit(61550, {	-- Titanium Skeleton Key
 				["provider"] = { "i", 43853 },	-- Titanium Skeleton Key
 			}),
-			crit(7, {	-- Obsidium Skeleton Key
+			crit(61551, {	-- Obsidium Skeleton Key
 				["provider"] = { "i", 55053 },	-- Obsidium Skeleton Key
 			}),
-			crit(8, {	-- Ghostly Skeleton Key
+			crit(61552, {	-- Ghostly Skeleton Key
 				["provider"] = { "i", 82960 },	-- Ghostly Skeleton Key
 			}),
-			crit(9, {	-- Monelite Skeleton Key
+			crit(61553, {	-- Monelite Skeleton Key
 				["provider"] = { "i", 159826 },	-- Monelite Skeleton Key
 			}),
-			crit(10, {	-- Laestrite Skeleton Key
+			crit(61554, {	-- Laestrite Skeleton Key
 				["provider"] = { "i", 171441 },	-- Laestrite Skeleton Key
 			}),
-			crit(11, {	-- Serevite Skeleton Key
+			crit(61555, {	-- Serevite Skeleton Key
 				["provider"] = { "i", 191256 },	-- Serevite Skeleton Key
 			}),
 		}),
@@ -146,22 +146,22 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 	tier(MOP_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18852, { -- Weaponsmithing, Reborn
-				crit(1, {	-- Wicked Edge of the Planes, Reborn
+				crit(61556, {	-- Wicked Edge of the Planes, Reborn
 					["provider"] = { "i", 94579 },	-- Wicked Edge of the Planes, Reborn
 				}),
-				crit(2, {	-- Bloodmoon, Reborn
+				crit(61557, {	-- Bloodmoon, Reborn
 					["provider"] = { "i", 94580 },	-- Bloodmoon, Reborn
 				}),
-				crit(3, {	-- Dragonstrike, Reborn
+				crit(61558, {	-- Dragonstrike, Reborn
 					["provider"] = { "i", 94585 },	-- Dragonstrike, Reborn
 				}),
-				crit(4, {	-- Stormherald, Reborn
+				crit(61559, {	-- Stormherald, Reborn
 					["provider"] = { "i", 94586 },	-- Stormherald, Reborn
 				}),
-				crit(5, {	-- Blazefury, Reborn
+				crit(61560, {	-- Blazefury, Reborn
 					["provider"] = { "i", 94591 },	-- Blazefury, Reborn
 				}),
-				crit(6, {	-- Lionheart Executioner, Reborn
+				crit(61561, {	-- Lionheart Executioner, Reborn
 					["provider"] = { "i", 94592 },	-- Lionheart Executioner, Reborn
 				}),
 			}),

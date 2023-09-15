@@ -9,22 +9,22 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		ach(18890),	-- Generations of Gemstones III
 		ach(18891),	-- Generations of Gemstones IV
 		ach(18897, {	-- Can't Crush These
-			crit(1, {	-- Shipment: Blood Jade Amulet
+			crit(61640, {	-- Shipment: Blood Jade Amulet
 				["sourceQuests"] = { 12958 },	-- Shipment: Blood Jade Amulet
 			}),
-			crit(2, {	-- Shipment: Glowing Ivory Figurine
+			crit(61641, {	-- Shipment: Glowing Ivory Figurine
 				["sourceQuests"] = { 12959 },	-- Shipment: Glowing Ivory Figurine
 			}),
-			crit(3, {	-- Shipment: Wicked Sun Brooch
+			crit(61642, {	-- Shipment: Wicked Sun Brooch
 				["sourceQuests"] = { 12960 },	-- Shipment: Wicked Sun Brooch
 			}),
-			crit(4, {	-- Shipment: Intricate Bone Figurine
+			crit(61643, {	-- Shipment: Intricate Bone Figurine
 				["sourceQuests"] = { 12961 },	-- Shipment: Intricate Bone Figurine
 			}),
-			crit(5, {	-- Shipment: Bright Armor Relic
+			crit(61644, {	-- Shipment: Bright Armor Relic
 				["sourceQuests"] = { 12962 },	-- Shipment: Bright Armor Relic
 			}),
-			crit(6, {	-- Shipment: Shifting Sun Curio
+			crit(61645, {	-- Shipment: Shifting Sun Curio
 				["sourceQuests"] = { 12963 },	-- Shipment: Shifting Sun Curio
 			}),
 			crit(7, {	-- Nibbler! No!
@@ -64,91 +64,91 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 		}),
 		ach(18909, {	-- Fantastic Figurines
-			crit(1, {	-- Figurine - Jade Owl
+			crit(61827, {	-- Figurine - Jade Owl
 				["provider"] = { "i", 21748 },	-- Figurine - Jade Owl
 			}),
-			crit(2, {	-- Figurine - Golden Hare
+			crit(61828, {	-- Figurine - Golden Hare
 				["provider"] = { "i", 21756 },	-- Figurine - Golden Hare
 			}),
-			crit(3, {	-- Figurine - Black Pearl Panther
+			crit(61829, {	-- Figurine - Black Pearl Panther
 				["provider"] = { "i", 21758 },	-- Figurine - Black Pearl Panther
 			}),
-			crit(4, {	-- Figurine - Truesilver Crab
+			crit(61830, {	-- Figurine - Truesilver Crab
 				["provider"] = { "i", 21760 },	-- Figurine - Truesilver Crab
 			}),
-			crit(5, {	-- Figurine - Truesilver Boar
+			crit(61831, {	-- Figurine - Truesilver Boar
 				["provider"] = { "i", 21763 },	-- Figurine - Truesilver Boar
 			}),
-			crit(6, {	-- Figurine - Ruby Serpent
+			crit(61832, {	-- Figurine - Ruby Serpent
 				["provider"] = { "i", 21769 },	-- Figurine - Ruby Serpent
 			}),
-			crit(7, {	-- Figurine - Emerald Owl
+			crit(61833, {	-- Figurine - Emerald Owl
 				["provider"] = { "i", 21777 },	-- Figurine - Emerald Owl
 			}),
-			crit(8, {	-- Figurine - Black Diamond Crab
+			crit(61834, {	-- Figurine - Black Diamond Crab
 				["provider"] = { "i", 21784 },	-- Figurine - Black Diamond Crab
 			}),
-			crit(9, {	-- Figurine - Felsteel Boar
+			crit(61836, {	-- Figurine - Felsteel Boar
 				["provider"] = { "i", 24124 },	-- Figurine - Felsteel Boar
 			}),
-			crit(10, {	-- Figurine - Dawnstone Crab
+			crit(61837, {	-- Figurine - Dawnstone Crab
 				["provider"] = { "i", 24125 },	-- Figurine - Dawnstone Crab
 			}),
-			crit(11, {	-- Figurine - Dark Iron Scorpid
+			crit(61835, {	-- Figurine - Dark Iron Scorpid
 				["provider"] = { "i", 21789 },	-- Figurine - Dark Iron Scorpid
 			}),
-			crit(12, {	-- Figurine - Living Ruby Serpent
+			crit(61838, {	-- Figurine - Living Ruby Serpent
 				["provider"] = { "i", 24126 },	-- Figurine - Living Ruby Serpent
 			}),
-			crit(13, {	-- Figurine - Talasite Owl
+			crit(61839, {	-- Figurine - Talasite Owl
 				["provider"] = { "i", 24127 },	-- Figurine - Talasite Owl
 			}),
-			crit(14, {	-- Figurine - Nightseye Panther
+			crit(61840, {	-- Figurine - Nightseye Panther
 				["provider"] = { "i", 24128 }	-- Figurine - Nightseye Panther
 			}),
-			crit(15, {	-- Figurine - Empyrean Tortoise
+			crit(61841, {	-- Figurine - Empyrean Tortoise
 				["provider"] = { "i", 35693 },	-- Figurine - Empyrean Tortoise
 			}),
-			crit(16, {	-- Figurine - Khorium Boar
+			crit(61842, {	-- Figurine - Khorium Boar
 				["provider"] = { "i", 35694 },	-- Figurine - Khorium Boar
 			}),
-			crit(17, {	-- Figurine - Crimson Serpent
+			crit(61843, {	-- Figurine - Crimson Serpent
 				["provider"] = { "i", 35700 },	-- Figurine - Crimson Serpent
 			}),
-			crit(18, {	-- Figurine - Shadowsong Panther
+			crit(61844, {	-- Figurine - Shadowsong Panther
 				["provider"] = { "i", 35702 },	-- Figurine - Shadowsong Panther
 			}),
-			crit(19, {	-- Figurine - Seaspray Albatross
+			crit(61845, {	-- Figurine - Seaspray Albatross
 				["provider"] = { "i", 35703 },	-- Figurine - Seaspray Albatross
 			}),
-			crit(20, {	-- Figurine - Ruby Hare
+			crit(61846, {	-- Figurine - Ruby Hare
 				["provider"] = { "i", 42341 },	-- Figurine - Ruby Hare
 			}),
-			crit(21, {	-- Figurine - Twilight Serpent
+			crit(61847, {	-- Figurine - Twilight Serpent
 				["provider"] = { "i", 42395 },	-- Figurine - Twilight Serpent
 			}),
-			crit(22, {	-- Figurine - Sapphire Owl
+			crit(61848, {	-- Figurine - Sapphire Owl
 				["provider"] = { "i", 42413 },	-- Figurine - Sapphire Owl
 			}),
-			crit(23, {	-- Figurine - Emerald Boar
+			crit(61849, {	-- Figurine - Emerald Boar
 				["provider"] = { "i", 42418 },	-- Figurine - Emerald Boar
 			}),
-			crit(24, {	-- Figurine - Monarch Crab
+			crit(61850, {	-- Figurine - Monarch Crab
 				["provider"] = { "i", 44063 },	-- Figurine - Monarch Crab
 			}),
-			crit(25, {	-- Figurine - King of Boars
+			crit(61851, {	-- Figurine - King of Boars
 				["sourceQuests"] = { 28778 },	-- Broken Boar Figurine
 			}),
-			crit(26, {	-- Figurine - Demon Panther
+			crit(61852, {	-- Figurine - Demon Panther
 				["sourceQuests"] = { 25047 },	-- Broken Panther Figurine
 			}),
-			crit(27, {	-- Figurine - Earthen Guardian
+			crit(61853, {	-- Figurine - Earthen Guardian
 				["sourceQuests"] = { 28776 },	-- Broken Earthen Figurine
 			}),
-			crit(28, {	-- Figurine - Jeweled Serpent
+			crit(61854, {	-- Figurine - Jeweled Serpent
 				["sourceQuests"] = { 28775 },	-- Broken Serpent Figurine
 			}),
-			crit(29, {	-- Figurine - Dream Owl
+			crit(61855, {	-- Figurine - Dream Owl
 				["sourceQuests"] = { 28777 },	-- Broken Owl Figurine
 			}),
 		}),
@@ -207,19 +207,19 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18941, {	-- Dazzling Dragons
-				crit(1, {	-- Jeweled Ruby Whelpling
+				crit(61906, {	-- Jeweled Ruby Whelpling
 					["provider"] = { "i", 193887 },	-- Jeweled Ruby Whelpling
 				}),
-				crit(2, {	-- Jeweled Emerald Whelpling
+				crit(61909, {	-- Jeweled Emerald Whelpling
 					["provider"] = { "i", 193888 },	-- Jeweled Emerald Whelpling
 				}),
-				crit(3, {	-- Jeweled Sapphire Whelpling
+				crit(61911, {	-- Jeweled Sapphire Whelpling
 					["provider"] = { "i", 193886 },	-- Jeweled Sapphire Whelpling
 				}),
-				crit(4, {	-- Jeweled Onyx Whelpling
+				crit(61912, {	-- Jeweled Onyx Whelpling
 					["provider"] = { "i", 193889 },	-- Jeweled Onyx Whelpling
 				}),
-				crit(5, {	-- Jeweled Amber Whelpling
+				crit(61913, {	-- Jeweled Amber Whelpling
 					["provider"] = { "i", 193885 },	-- Jeweled Amber Whelpling
 				}),
 			}),

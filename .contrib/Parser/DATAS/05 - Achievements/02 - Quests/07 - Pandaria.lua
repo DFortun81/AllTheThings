@@ -27,7 +27,15 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(22438),			-- Domination Point
 			crit(22439),			-- The Voice of the Gods
 			crit(22440),			-- The Horde Is Family
-			crit(4),	-- Blood For Blood
+			crit(22441, {    -- Blood For Blood
+                ["sourceQuests"] = { 32191 },    -- Ancient Guardians
+			}),
+			crit(22442, {    -- Blood For Blood
+				["sourceQuests"] = { 32192 },    -- Bloodlines
+			}),
+			crit(22443, {    -- Blood For Blood
+				["sourceQuests"] = { 32244 },    -- The Korune
+			}),
 			crit(22448),			-- The Korune
 			crit(22449),			-- Pride
 			crit(22450),			-- Rise of the Blood Elves
@@ -75,28 +83,18 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(20493),		-- Cheng Bo!
 		}),
 		ach(7295, {		-- Listen to the Drunk Fish (Halfhill)
-			crit(1),		-- Juicycrunch Carrot
-			crit(2),		-- Green Cabbage
-			crit(3),		-- Scallions
-			crit(4),		-- Mogu Pumpkin
-			crit(5),		-- Red Blossom Leek
-			crit(6),		-- Pink Turnip
-			crit(7),		-- White Turnip
-			-- crit(20536,21120),		-- Juicycrunch Carrot
-			-- crit(21034,21121),		-- Green Cabbage
-			-- crit(21037,21122),		-- Scallions
-			-- crit(21035,21123),		-- Mogu Pumpkin
-			-- crit(21036,21124),		-- Red Blossom Leek
-			-- crit(21038,21126),		-- Pink Turnip
-			-- crit(21039,21127),		-- White Turnip
+			crit(20536),		-- Juicycrunch Carrot
+			crit(21034),		-- Green Cabbage
+			crit(21037),		-- Scallions
+			crit(21035),		-- Mogu Pumpkin
+			crit(21036),		-- Red Blossom Leek
+			crit(21038),		-- Pink Turnip
+			crit(21039),		-- White Turnip
 		}),
 		ach(7299, {		-- Loner and a Rebel (Townlong Steppes)
-			crit(1),	-- Omnia Mystics
-			crit(2),			-- Wu Kao Assassins
-			crit(3),			-- Blackguard Defenders
-			-- crit(20476,20475,20473),	-- Omnia Mystics
-			-- crit(21199,21200),			-- Wu Kao Assassins
-			-- crit(21201,21202),			-- Blackguard Defenders
+			crit(20476),	-- Omnia Mystics
+			crit(21199),	-- Wu Kao Assassins
+			crit(21201),	-- Blackguard Defenders
 		}),
 		ach(6541, {		-- Loremaster of Pandaria
 			ach(6301, {		-- Rally the Valley
@@ -116,7 +114,13 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			}),
 			ach(6540, {		-- Dread Haste Makes Dread Waste
 				crit(20437),		-- The First Paragons
-				crit(2),		-- The Might of the Klaxxi
+				crit(4),		-- The Might of the Klaxxi
+				-- crit(20438,	{	-- The Might of the Klaxxi
+				-- 	["sourceQuests"] = { 31026 },    -- The Root of the Problem
+				-- }),
+				-- crit(20439,	{	-- The Might of the Klaxxi
+				-- 	["sourceQuests"] = { 31398 },    -- Falling to Pieces
+				-- }),
 				crit(20436),		-- Taste of Amber
 				crit(20435),		-- Like a Deck Boss
 			}),

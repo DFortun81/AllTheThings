@@ -3354,34 +3354,34 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 		ach(18876),	-- Ink and Quill I
 		ach(18892),	-- Massive Mills
 		ach(18738, {	-- Population In-Crease
-			crit(1, {	-- Origami Crane released in Krasarang Wilds
+			crit(60909, {	-- Origami Crane released in Krasarang Wilds
 				["provider"] = { "i", 87647 },	-- Origami Crane
 			}),
-			crit(2, {	-- Origami Crane released in Tiragarde Sound
+			crit(60910, {	-- Origami Crane released in Tiragarde Sound
 				["provider"] = { "i", 87647 },	-- Origami Crane
 			}),
-			crit(3, {	-- Origami Frog released in Nazmir
+			crit(60911, {	-- Origami Frog released in Nazmir
 				["provider"] = { "i", 87648 },	-- Origami Frog
 			}),
-			crit(4, {	-- Origami Frog released in Isle of Thunder
+			crit(60912, {	-- Origami Frog released in Isle of Thunder
 				["provider"] = { "i", 87648 },	-- Origami Frog
 			}),
-			crit(5, {	-- Origami Rock released in Deepholm
+			crit(60915, {	-- Origami Rock released in Deepholm
 				["provider"] = { "i", 62238 },	-- Origami Rock
 			}),
-			crit(6, {	-- Origami Rock released in Zaralek Cavern
+			crit(60916, {	-- Origami Rock released in Zaralek Cavern
 				["provider"] = { "i", 62238 },	-- Origami Rock
 			}),
-			crit(7, {	-- Swarm of Origami Beetles released in Uldum
+			crit(60913, {	-- Swarm of Origami Beetles released in Uldum
 				["provider"] = { "i", 63246 },	-- Origami Beetle
 			}),
-			crit(8, {	-- Swarm of Origami Beetles released in Eastern Plaguelands
+			crit(60914, {	-- Swarm of Origami Beetles released in Eastern Plaguelands
 				["provider"] = { "i", 63246 },	-- Origami Beetle
 			}),
-			crit(9, {	-- 	Swarm of Origami Slimes released in Felwood
+			crit(60917, {	-- 	Swarm of Origami Slimes released in Felwood
 				["provider"] = { "i", 62239 },	-- Origami Slime
 			}),
-			crit(10, {	-- Swarm of Origami Slimes released in Maldraxxus
+			crit(60918, {	-- Swarm of Origami Slimes released in Maldraxxus
 				["provider"] = { "i", 62239 },	-- Origami Slime
 			}),
 		}),
@@ -3389,16 +3389,16 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 	tier(WOTLK_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3 } }, {
 		ach(18725, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Best Stellar
 			i(208421),	-- Compendium of the New Moon (TOY!)
-			crit(1, {	-- Rituals of the New Moon - Black Wolf
+			crit(60884, {	-- Rituals of the New Moon - Black Wolf
 				["provider"] = { "i", 45853 },	-- Rituals of the New Moon
 			}),
-			crit(2, {	-- Rituals of the New Moon - White Wolf
+			crit(60885, {	-- Rituals of the New Moon - White Wolf
 				["provider"] = { "i", 45851 },	-- Rituals of the New Moon
 			}),
-			crit(3, {	-- Rituals of the New Moon - Red Wolf
+			crit(60886, {	-- Rituals of the New Moon - Red Wolf
 				["provider"] = { "i", 45850 },	-- Rituals of the New Moon
 			}),
-			crit(4, {	-- Rituals of the New Moon - Gray Wolf
+			crit(60887, {	-- Rituals of the New Moon - Gray Wolf
 				["provider"] = { "i", 45852 },	-- Rituals of the New Moon
 			}),
 		})),

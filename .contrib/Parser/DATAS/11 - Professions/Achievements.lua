@@ -3,157 +3,157 @@
 -----------------------------------------------------
 root(ROOTS.Professions, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 	ach(16630, sharedDataSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Draconic Master of All
-		crit(1),	-- Dragon Isles Alchemy
-		crit(2),	-- Dragon Isles Blacksmithing
-		crit(3),	-- Dragon Isles Enchanting
-		crit(4),	-- Dragon Isles Engineering
-		crit(5),	-- Dragon Isles Herbalism
-		crit(6),	-- Dragon Isles Inscription
-		crit(7),	-- Dragon Isles Jewelcrafting
-		crit(8),	-- Dragon Isles Leatherworking
-		crit(9),	-- Dragon Isles Mining
-		crit(10),	-- Dragon Isles Skinning
-		crit(11),	-- Dragon Isles Tailoring
+		crit(53500),	-- Dragon Isles Alchemy
+		crit(53501),	-- Dragon Isles Blacksmithing
+		crit(53503),	-- Dragon Isles Enchanting
+		crit(53504),	-- Dragon Isles Engineering
+		crit(53506),	-- Dragon Isles Herbalism
+		crit(53507),	-- Dragon Isles Inscription
+		crit(53508),	-- Dragon Isles Jewelcrafting
+		crit(53509),	-- Dragon Isles Leatherworking
+		crit(53510),	-- Dragon Isles Mining
+		crit(53511),	-- Dragon Isles Skinning
+		crit(53512),	-- Dragon Isles Tailoring
 	})),
 	ach(14330, sharedDataSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {	-- Shadowlands Master of All
-		crit(1),	-- Shadowlands Alchemy
-		crit(2),	-- Shadowlands Blacksmithing
-		crit(3),	-- Shadowlands Enchanting
-		crit(4),	-- Shadowlands Engineering
-		crit(5),	-- Shadowlands Herbalism
-		crit(6),	-- Shadowlands Inscription
-		crit(7),	-- Shadowlands Jewelcrafting
-		crit(8),	-- Shadowlands Leatherworking
-		crit(9),	-- Shadowlands Mining
-		crit(10),	-- Shadowlands Skinning
-		crit(11),	-- Shadowlands Tailoring
+		crit(48508),	-- Shadowlands Alchemy
+		crit(48509),	-- Shadowlands Blacksmithing
+		crit(48510),	-- Shadowlands Enchanting
+		crit(48511),	-- Shadowlands Engineering
+		crit(48512),	-- Shadowlands Herbalism
+		crit(48513),	-- Shadowlands Inscription
+		crit(48514),	-- Shadowlands Jewelcrafting
+		crit(48515),	-- Shadowlands Leatherworking
+		crit(48516),	-- Shadowlands Mining
+		crit(48517),	-- Shadowlands Skinning
+		crit(48518),	-- Shadowlands Tailoring
 	})),
 	ach(12736, sharedDataSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {	-- Kul Tiran Master of All (A)
 		["races"] = ALLIANCE_ONLY,
 		["g"] = {
-			crit(1),	-- Kul Tiran Alchemy
-			crit(2),	-- Kul Tiran Blacksmithing
-			crit(3),	-- Kul Tiran Enchanting
-			crit(4),	-- Kul Tiran Engineering
-			crit(5),	-- Kul Tiran Herbalism
-			crit(6),	-- Kul Tiran Inscription
-			crit(7),	-- Kul Tiran Jewelcrafting
-			crit(8),	-- Kul Tiran Leatherworking
-			crit(9),	-- Kul Tiran Mining
-			crit(10),	-- Kul Tiran Skinning
-			crit(11),	-- Kul Tiran Tailoring
+			crit(40753),	-- Kul Tiran Alchemy
+			crit(40754),	-- Kul Tiran Blacksmithing
+			crit(40755),	-- Kul Tiran Enchanting
+			crit(40756),	-- Kul Tiran Engineering
+			crit(40757),	-- Kul Tiran Herbalism
+			crit(40758),	-- Kul Tiran Inscription
+			crit(40759),	-- Kul Tiran Jewelcrafting
+			crit(40760),	-- Kul Tiran Leatherworking
+			crit(40761),	-- Kul Tiran Mining
+			crit(40762),	-- Kul Tiran Skinning
+			crit(40763),	-- Kul Tiran Tailoring
 		},
 	})),
 	ach(12737, sharedDataSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {	-- Zandalari Master of All (H)
 		["races"] = HORDE_ONLY,
 		["g"] = {
-			crit(1),	-- Zandalari Alchemy
-			crit(2),	-- Zandalari Blacksmithing
-			crit(3),	-- Zandalari Enchanting
-			crit(4),	-- Zandalari Engineering
-			crit(5),	-- Zandalari Herbalism
-			crit(6),	-- Zandalari Inscription
-			crit(7),	-- Zandalari Jewelcrafting
-			crit(8),	-- Zandalari Leatherworking
-			crit(9),	-- Zandalari Mining
-			crit(10),	-- Zandalari Skinning
-			crit(11),	-- Zandalari Tailoring
+			crit(40753),	-- Zandalari Alchemy
+			crit(40754),	-- Zandalari Blacksmithing
+			crit(40755),	-- Zandalari Enchanting
+			crit(40756),	-- Zandalari Engineering
+			crit(40757),	-- Zandalari Herbalism
+			crit(40758),	-- Zandalari Inscription
+			crit(40759),	-- Zandalari Jewelcrafting
+			crit(40760),	-- Zandalari Leatherworking
+			crit(40761),	-- Zandalari Mining
+			crit(40762),	-- Zandalari Skinning
+			crit(40763),	-- Zandalari Tailoring
 		},
 	})),
 	ach(10583, sharedDataSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {	-- Legion Master of All
-		crit(1),	-- Legion Alchemy
-		crit(2),	-- Legion Blacksmithing
-		crit(3),	-- Legion Enchanting
-		crit(4),	-- Legion Engineering
-		crit(5),	-- Legion Herbalism
-		crit(6),	-- Legion Inscription
-		crit(7),	-- Legion Jewelcrafting
-		crit(8),	-- Legion Leatherworking
-		crit(9),	-- Legion Mining
-		crit(10),	-- Legion Skinning
-		crit(11),	-- Legion Tailoring
+		crit(40115),	-- Legion Alchemy
+		crit(40116),	-- Legion Blacksmithing
+		crit(40117),	-- Legion Enchanting
+		crit(40118),	-- Legion Engineering
+		crit(40119),	-- Legion Herbalism
+		crit(40120),	-- Legion Inscription
+		crit(40121),	-- Legion Jewelcrafting
+		crit(40122),	-- Legion Leatherworking
+		crit(40123),	-- Legion Mining
+		crit(40124),	-- Legion Skinning
+		crit(40125),	-- Legion Tailoring
 	})),
 	ach(9087, sharedDataSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {	-- Draenor Master of All
-		crit(1),	-- Draenor Alchemy
-		crit(2),	-- Draenor Blacksmithing
-		crit(3),	-- Draenor Enchanting
-		crit(4),	-- Draenor Engineering
-		crit(5),	-- Draenor Herbalism
-		crit(6),	-- Draenor Inscription
-		crit(7),	-- Draenor Jewelcrafting
-		crit(8),	-- Draenor Leatherworking
-		crit(9),	-- Draenor Mining
-		crit(10),	-- Draenor Skinning
-		crit(11),	-- Draenor Tailoring
+		crit(40104),	-- Draenor Alchemy
+		crit(40105),	-- Draenor Blacksmithing
+		crit(40106),	-- Draenor Enchanting
+		crit(40107),	-- Draenor Engineering
+		crit(40108),	-- Draenor Herbalism
+		crit(40109),	-- Draenor Inscription
+		crit(40110),	-- Draenor Jewelcrafting
+		crit(40111),	-- Draenor Leatherworking
+		crit(40112),	-- Draenor Mining
+		crit(40113),	-- Draenor Skinning
+		crit(40114),	-- Draenor Tailoring
 	})),
 	ach(7379, sharedDataSelf({ ["timeline"] = { ADDED_5_0_4 } }, {			-- Pandaren Master of All
-		crit(1),	-- Pandaria Alchemy
-		crit(2),	-- Pandaria Blacksmithing
-		crit(3),	-- Pandaria Enchanting
-		crit(4),	-- Pandaria Engineering
-		crit(5),	-- Pandaria Herbalism
-		crit(6),	-- Pandaria Inscription
-		crit(7),	-- Pandaria Jewelcrafting
-		crit(8),	-- Pandaria Leatherworking
-		crit(9),	-- Pandaria Mining
-		crit(10),	-- Pandaria Skinning
-		crit(11),	-- Pandaria Tailoring
+		crit(40093),	-- Pandaria Alchemy
+		crit(40094),	-- Pandaria Blacksmithing
+		crit(40095),	-- Pandaria Enchanting
+		crit(40096),	-- Pandaria Engineering
+		crit(40097),	-- Pandaria Herbalism
+		crit(40098),	-- Pandaria Inscription
+		crit(40099),	-- Pandaria Jewelcrafting
+		crit(40100),	-- Pandaria Leatherworking
+		crit(40101),	-- Pandaria Mining
+		crit(40102),	-- Pandaria Skinning
+		crit(40103),	-- Pandaria Tailoring
 	})),
 	ach(7378, sharedDataSelf({ ["timeline"] = { ADDED_5_0_4 } }, {			-- Jack of All Trades
 		-- identical criteria as full achievement
 		["sym"] = {{"select","achievementID",7379},{"pop"}},	-- Pandaren Master of All
 	})),
 	ach(18719, sharedDataSelf({ ["timeline"] = { ADDED_10_1_7 } }, {		-- Cataclysmic Master of All
-		crit(1),	-- Cataclysm Alchemy
-		crit(2),	-- Cataclysm Blacksmithing
-		crit(3),	-- Cataclysm Enchanting
-		crit(4),	-- Cataclysm Engineering
-		crit(5),	-- Cataclysm Herbalism
-		crit(6),	-- Cataclysm Inscription
-		crit(7),	-- Cataclysm Jewelcrafting
-		crit(8),	-- Cataclysm Leatherworking
-		crit(9),	-- Cataclysm Mining
-		crit(10),	-- Cataclysm Skinning
-		crit(11),	-- Cataclysm Tailoring
+		crit(40082),	-- Cataclysm Alchemy
+		crit(40083),	-- Cataclysm Blacksmithing
+		crit(40084),	-- Cataclysm Enchanting
+		crit(40085),	-- Cataclysm Engineering
+		crit(40086),	-- Cataclysm Herbalism
+		crit(40087),	-- Cataclysm Inscription
+		crit(40088),	-- Cataclysm Jewelcrafting
+		crit(40089),	-- Cataclysm Leatherworking
+		crit(40090),	-- Cataclysm Mining
+		crit(40091),	-- Cataclysm Skinning
+		crit(40092),	-- Cataclysm Tailoring
 	})),
 	ach(18722, sharedDataSelf({ ["timeline"] = { ADDED_10_1_7 } }, {		-- Northrend Master of All
-		crit(1),	-- Northrend Alchemy
-		crit(2),	-- Northrend Blacksmithing
-		crit(3),	-- Northrend Enchanting
-		crit(4),	-- Northrend Engineering
-		crit(5),	-- Northrend Herbalism
-		crit(6),	-- Northrend Inscription
-		crit(7),	-- Northrend Jewelcrafting
-		crit(8),	-- Northrend Leatherworking
-		crit(9),	-- Northrend Mining
-		crit(10),	-- Northrend Skinning
-		crit(11),	-- Northrend Tailoring
+		crit(40071),	-- Northrend Alchemy
+		crit(40072),	-- Northrend Blacksmithing
+		crit(40073),	-- Northrend Enchanting
+		crit(40074),	-- Northrend Engineering
+		crit(40075),	-- Northrend Herbalism
+		crit(40076),	-- Northrend Inscription
+		crit(40077),	-- Northrend Jewelcrafting
+		crit(40078),	-- Northrend Leatherworking
+		crit(40079),	-- Northrend Mining
+		crit(40080),	-- Northrend Skinning
+		crit(40081),	-- Northrend Tailoring
 	})),
 	ach(18721, sharedDataSelf({ ["timeline"] = { ADDED_10_1_7 } }, {		-- Outland Master of All
-		crit(1),	-- Outland Alchemy
-		crit(2),	-- Outland Blacksmithing
-		crit(3),	-- Outland Enchanting
-		crit(4),	-- Outland Engineering
-		crit(5),	-- Outland Herbalism
-		crit(6),	-- Outland Inscription
-		crit(7),	-- Outland Jewelcrafting
-		crit(8),	-- Outland Leatherworking
-		crit(9),	-- Outland Mining
-		crit(10),	-- Outland Skinning
-		crit(11),	-- Outland Tailoring
+		crit(40060),	-- Outland Alchemy
+		crit(40061),	-- Outland Blacksmithing
+		crit(40062),	-- Outland Enchanting
+		crit(40063),	-- Outland Engineering
+		crit(40064),	-- Outland Herbalism
+		crit(40065),	-- Outland Inscription
+		crit(40066),	-- Outland Jewelcrafting
+		crit(40067),	-- Outland Leatherworking
+		crit(40068),	-- Outland Mining
+		crit(40069),	-- Outland Skinning
+		crit(40070),	-- Outland Tailoring
 	})),
 	ach(18720, sharedDataSelf({ ["timeline"] = { ADDED_10_1_7 } }, {		-- Classic Master of All
-		crit(1),	-- Classic Alchemy
-		crit(2),	-- Classic Blacksmithing
-		crit(3),	-- Classic Enchanting
-		crit(4),	-- Classic Engineering
-		crit(5),	-- Classic Herbalism
-		crit(6),	-- Classic Inscription
-		crit(7),	-- Classic Jewelcrafting
-		crit(8),	-- Classic Leatherworking
-		crit(9),	-- Classic Mining
-		crit(10),	-- Classic Skinning
-		crit(11),	-- Classic Tailoring
+		crit(40050),	-- Classic Alchemy
+		crit(40051),	-- Classic Blacksmithing
+		crit(40052),	-- Classic Enchanting
+		crit(40053),	-- Classic Engineering
+		crit(40054),	-- Classic Herbalism
+		crit(40055),	-- Classic Inscription
+		crit(40056),	-- Classic Jewelcrafting
+		crit(40057),	-- Classic Leatherworking
+		crit(40058),	-- Classic Mining
+		crit(40059),	-- Classic Skinning
+		crit(40060),	-- Classic Tailoring
 	})),
 	ach(16626, {	-- Working with Wyrms
 		["timeline"] = { ADDED_10_0_2_LAUNCH },

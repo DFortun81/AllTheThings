@@ -13,13 +13,13 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 		ach(18869),	-- Enchantment II
 		ach(18868),	-- Enchantment I
 		ach(18785, {	-- Shattered Expectations
-			crit(1, {	-- Crystalline Shatter
+			crit(61106, {	-- Crystalline Shatter
 				["providers"] = {
 					{ "i", 200113 },	-- Resonant Crystal
 					{ "i", 194124 },	-- Vibrant Shard
 				},
 			}),
-			crit(2, {	-- Elemental Shatter
+			crit(61107, {	-- Elemental Shatter
 				["providers"] = {
 					{ "i", 190327 },	-- Awakened Air
 					{ "i", 190316 },	-- Awakened Earth
@@ -28,51 +28,51 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 					{ "i", 190324 },	-- Awakened Order
 				},
 			}),
-			crit(3, {	-- Eternal Crystal
+			crit(61108, {	-- Eternal Crystal
 				["provider"] = { "i", 172232 },	-- Eternal Crystal
 			}),
-			crit(4, {	-- Sacred Shard
+			crit(61109, {	-- Sacred Shard
 				["provider"] = { "i", 172231 },	-- Sacred Shard
 			}),
-			crit(5, {	-- Veiled Shatter
+			crit(61110, {	-- Veiled Shatter
 				["provider"] = { "i", 152877 },	-- Veiled Crystal
 			}),
-			crit(6, {	-- Umbra Shatter
+			crit(61111, {	-- Umbra Shatter
 				["provider"] = { "i", 152876 },	-- Umbra Shard
 			}),
-			crit(7, {	-- Chaos Shatter
+			crit(61112, {	-- Chaos Shatter
 				["provider"] = { "i", 124442 },	-- Chaos Crystal
 			}),
-			crit(8, {	-- Ley Shatter
+			crit(61113, {	-- Ley Shatter
 				["provider"] = { "i", 124441 },	-- Leylight Shard
 			}),
-			crit(9, {	-- Sha Shatter
+			crit(61114, {	-- Sha Shatter
 				["provider"] = { "i", 74248 },	-- Sha Crystal
 			}),
-			crit(10, {	-- Maelstrom Shatter
+			crit(61115, {	-- Maelstrom Shatter
 				["provider"] = { "i", 52722 },	-- Maelstrom Crystal
 			}),
-			crit(11, {	-- Abyssal Shatter
+			crit(61116, {	-- Abyssal Shatter
 				["provider"] = { "i", 34057 },	-- Abyss Crystal
 			}),
-			crit(12, {	-- Void Shatter
+			crit(61117, {	-- Void Shatter
 				["provider"] = { "i", 22450 },	-- Void Crystal
 			}),
 		}),
 		ach(18789, {	-- Simply Enchanting
-			crit(1, {	-- Enchanted Thorium Bar
+			crit(61136, {	-- Enchanted Thorium Bar
 				["cost"] = {{ "i", 12655, 20 }},	-- 20x Enchanted Thorium Bar
 			}),
-			crit(2, {	-- Enchanted Leather
+			crit(61137, {	-- Enchanted Leather
 				["cost"] = {{ "i", 12810, 20 }},	-- 20x Enchanted Leather
 			}),
-			crit(3, {	-- Enchanted Elethium Bar
+			crit(61138, {	-- Enchanted Elethium Bar
 				["cost"] = {{ "i", 172437, 20 }},	-- 20x Enchanted Elethium Bar
 			}),
-			crit(4, {	-- Enchanted Heavy Callous Hide
+			crit(61139, {	-- Enchanted Heavy Callous Hide
 				["cost"] = {{ "i", 172438, 20 }},	-- 20x Enchanted Heavy Callous Hide
 			}),
-			crit(5, {	-- Enchanted Lightless Silk
+			crit(61140, {	-- Enchanted Lightless Silk
 				["cost"] = {{ "i", 172439, 20 }},	-- 20x Enchanted Lightless Silk
 			}),
 		}),
@@ -413,31 +413,31 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18764),	-- Break Upon Your Body
 			ach(18763, {
-				crit(1, {	-- Scepter of Spectacle: Fire
+				crit(61079, {	-- Scepter of Spectacle: Fire
 					["providers"] = {
 						{ "i", 163736 },	-- Spectral Visage
 						{ "i", 200472 },	-- Scepter of Spectacle: Fire
 					},
 				}),
-				crit(2, {	-- Scepter of Spectacle: Frost
+				crit(61080, {	-- Scepter of Spectacle: Frost
 					["providers"] = {
 						{ "i", 163736 },	-- Spectral Visage
 						{ "i", 200535 },	-- Scepter of Spectacle: Frost
 					},
 				}),
-				crit(3, {	-- Scepter of Spectacle: Air
+				crit(61081, {	-- Scepter of Spectacle: Air
 					["providers"] = {
 						{ "i", 163736 },	-- Spectral Visage
 						{ "i", 201161 },	-- Scepter of Spectacle: Air
 					},
 				}),
-				crit(4, {	-- Scepter of Spectacle: Earth
+				crit(61082, {	-- Scepter of Spectacle: Earth
 					["providers"] = {
 						{ "i", 163736 },	-- Spectral Visage
 						{ "i", 201160 },	-- Scepter of Spectacle: Earth
 					},
 				}),
-				crit(5, {	-- Scepter of Spectacle: Order
+				crit(61083, {	-- Scepter of Spectacle: Order
 					["providers"] = {
 						{ "i", 163736 },	-- Spectral Visage
 						{ "i", 201158 },	-- Scepter of Spectacle: Order

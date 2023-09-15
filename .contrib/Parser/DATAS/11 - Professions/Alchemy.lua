@@ -297,16 +297,16 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18805, {	-- Draconic Phial Cabinet
-				crit(1),	-- Phial of Tepid Versatility
-				crit(2),	-- Phial of Charged Isolation
-				crit(3),	-- Phial of the Eye in the Storm
-				crit(4),	-- Phial of Static Empowerment
-				crit(5),	-- Phial of Still Air
-				crit(6),	-- Phial of Glacial Fury
-				crit(7),	-- Phial of Icy Preservation
-				crit(8),	-- Phial of Elemental Chaos
-				crit(9),	-- Iced Phial of Corrupting Rage
-				crit(10),	-- Charged Phial of Alacrity
+				crit(61271),	-- Phial of Tepid Versatility
+				crit(61272),	-- Phial of Charged Isolation
+				crit(61273),	-- Phial of the Eye in the Storm
+				crit(61274),	-- Phial of Static Empowerment
+				crit(61275),	-- Phial of Still Air
+				crit(61276),	-- Phial of Glacial Fury
+				crit(61277),	-- Phial of Icy Preservation
+				crit(61278),	-- Phial of Elemental Chaos
+				crit(61279),	-- Iced Phial of Corrupting Rage
+				crit(61280),	-- Charged Phial of Alacrity
 			}),
 		})),
 		n(QUESTS, {

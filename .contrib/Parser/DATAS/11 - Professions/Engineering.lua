@@ -18,82 +18,82 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				i(208794),	-- White Holo-Gogs
 				i(208797),	-- Yellow Holo-Gogs
 			}),
-			crit(1, {	-- Gnomish Power Goggles
+			crit(61677, {	-- Gnomish Power Goggles
 				["provider"] = { "i", 23828 },	-- Gnomish Power Goggles
 			}),
-			crit(2, {	-- Deathblow X11 Goggles
+			crit(61678, {	-- Deathblow X11 Goggles
 				["provider"] = { "i", 32478 },	-- Deathblow X11 Goggles
 			}),
-			crit(3, {	-- Quad Deathblow X44 Goggles
+			crit(61679, {	-- Quad Deathblow X44 Goggles
 				["provider"] = { "i", 34353 },	-- Quad Deathblow X44 Goggles
 			}),
-			crit(4, {	-- Visage Liquification Goggles
+			crit(61680, {	-- Visage Liquification Goggles
 				["provider"] = { "i", 42553 },	-- Visage Liquification Goggles
 			}),
-			crit(5, {	-- Ultra-Spectropic Detection Goggles
+			crit(61681, {	-- Ultra-Spectropic Detection Goggles
 				["provider"] = { "i", 23762 },	-- Ultra-Spectropic Detection Goggles
 			}),
-			crit(6, {	-- Cogspinner Goggles
+			crit(61682, {	-- Cogspinner Goggles
 				["provider"] = { "i", 23758 },	-- Cogspinner Goggles
 			}),
-			crit(7, {	-- Justicebringer 2000 Specs
+			crit(61683, {	-- Justicebringer 2000 Specs
 				["provider"] = { "i", 32472 },	-- Justicebringer 2000 Specs
 			}),
-			crit(8, {	-- Justicebringer 3000 Specs
+			crit(61684, {	-- Justicebringer 3000 Specs
 				["provider"] = { "i", 35185 },	-- Justicebringer 3000 Specs
 			}),
-			crit(9, {	-- Living Replicator Specs
+			crit(61685, {	-- Living Replicator Specs
 				["provider"] = { "i", 32475 },	-- Living Replicator Specs
 			}),
-			crit(10, {	-- Primal-Attuned Goggles
+			crit(61686, {	-- Primal-Attuned Goggles
 				["provider"] = { "i", 35184 },	-- Primal-Attuned Goggles
 			}),
-			crit(11, {	-- Greensight Gogs
+			crit(61687, {	-- Greensight Gogs
 				["provider"] = { "i", 42554 },	-- Greensight Gogs
 			}),
-			crit(12, {	-- Surestrike Goggles v2.0
+			crit(61688, {	-- Surestrike Goggles v2.0
 				["provider"] = { "i", 32474 },	-- Surestrike Goggles v2.0
 			}),
-			crit(13, {	-- Surestrike Goggles v3.0
+			crit(61689, {	-- Surestrike Goggles v3.0
 				["provider"] = { "i", 34356 },	-- Surestrike Goggles v3.0
 			}),
-			crit(14, {	-- Hyper-Vision Goggles
+			crit(61690, {	-- Hyper-Vision Goggles
 				["provider"] = { "i", 23763 },	-- Hyper-Vision Goggles
 			}),
-			crit(15, {	-- Destruction Holo-Gogs
+			crit(61691, {	-- Destruction Holo-Gogs
 				["provider"] = { "i", 32494 },	-- Destruction Holo-Gogs
 			}),
-			crit(16, {	-- Annihilator Holo-Gogs
+			crit(61692, {	-- Annihilator Holo-Gogs
 				["provider"] = { "i", 34847 },	-- Annihilator Holo-Gogs
 			}),
-			crit(17, {	-- Gnomish Battle Goggles
+			crit(61693, {	-- Gnomish Battle Goggles
 				["provider"] = { "i", 23829 },	-- Gnomish Battle Goggles
 			}),
-			crit(18, {	-- Tankatronic Goggles
+			crit(61694, {	-- Tankatronic Goggles
 				["provider"] = { "i", 32473 },	-- Tankatronic Goggles
 			}),
-			crit(19, {	-- Magnified Moon Specs
+			crit(61695, {	-- Magnified Moon Specs
 				["provider"] = { "i", 32480 },	-- Magnified Moon Specs
 			}),
-			crit(20, {	-- Hyper-Magnified Moon Specs
+			crit(61696, {	-- Hyper-Magnified Moon Specs
 				["provider"] = { "i", 35182 },	-- Hyper-Magnified Moon Specs
 			}),
-			crit(21, {	-- Hard Khorium Goggles
+			crit(61697, {	-- Hard Khorium Goggles
 				["provider"] = { "i", 34357 },	-- Hard Khorium Goggles
 			}),
-			crit(22, {	-- Armored Titanium Goggles
+			crit(61698, {	-- Armored Titanium Goggles
 				["provider"] = { "i", 42549 },	-- Armored Titanium Goggles
 			}),
-			crit(23, {	-- Charged Titanium Specs
+			crit(61699, {	-- Charged Titanium Specs
 				["provider"] = { "i", 42552 },	-- Charged Titanium Specs
 			}),
-			crit(24, {	-- Wonderheal XT40 Shades
+			crit(61700, {	-- Wonderheal XT40 Shades
 				["provider"] = { "i", 32479 },	-- Wonderheal XT40 Shades
 			}),
-			crit(25, {	-- Wonderheal XT68 Shades
+			crit(61701, {	-- Wonderheal XT68 Shades
 				["provider"] = { "i", 35183 },	-- Wonderheal XT68 Shades
 			}),
-			crit(26, {	-- Unbreakable Healing Amplifiers
+			crit(61706, {	-- Unbreakable Healing Amplifiers
 				["provider"] = { "i", 44949 },	-- Unbreakable Healing Amplifiers
 			}),
 			crit(27, {	-- Mechanized Snow Goggles
@@ -105,25 +105,25 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 					{ "i", 44742 },	-- Mechanized Snow Goggles
 				},
 			}),
-			crit(28, {	-- Furious Gizmatic Goggles
+			crit(61707, {	-- Furious Gizmatic Goggles
 				["provider"] = { "i", 32461 },	-- Furious Gizmatic Goggles
 			}),
-			crit(29, {	-- Mayhem Projection Goggles
+			crit(61708, {	-- Mayhem Projection Goggles
 				["provider"] = { "i", 34354 },	-- Mayhem Projection Goggles
 			}),
-			crit(30, {	-- Weakness Spectralizers
+			crit(61709, {	-- Weakness Spectralizers
 				["provider"] = { "i", 42550 },	-- Weakness Spectralizers
 			}),
-			crit(30, {	-- Gadgetstorm Goggles
+			crit(61710, {	-- Gadgetstorm Goggles
 				["provider"] = { "i", 32476 },	-- Gadgetstorm Goggles
 			}),
-			crit(30, {	-- Lightning Etched Specs
+			crit(61711, {	-- Lightning Etched Specs
 				["provider"] = { "i", 34355 },	-- Lightning Etched Specs
 			}),
-			crit(30, {	-- Truesight Ice Blinders
+			crit(61712, {	-- Truesight Ice Blinders
 				["provider"] = { "i", 42551 },	-- Truesight Ice Blinders
 			}),
-			crit(30, {	-- Electroflux Sight Enhancers
+			crit(61713, {	-- Electroflux Sight Enhancers
 				["provider"] = { "i", 42555 },	-- Electroflux Sight Enhancers
 			}),
 		}),
@@ -132,40 +132,40 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 		ach(18873),	-- Dangerous Devices II
 		ach(18872),	-- Dangerous Devices I
 		ach(18855, {	-- Portal to Everywhere
-			crit(1, {	-- Ultrasafe Transporter: Gadgetzan
+			crit(61584, {	-- Ultrasafe Transporter: Gadgetzan
 				["provider"] = { "i", 18986 },	-- Ultrasafe Transporter: Gadgetzan
 			}),
-			crit(2, {	-- Dimensional Ripper - Everlook
+			crit(61594, {	-- Dimensional Ripper - Everlook
 				["provider"] = { "i", 18984 },	-- Dimensional Ripper - Everlook
 			}),
-			crit(3, {	-- Dimensional Ripper - Area 52
+			crit(61595, {	-- Dimensional Ripper - Area 52
 				["provider"] = { "i", 30542 },	-- Dimensional Ripper - Area 52
 			}),
-			crit(4, {	-- Ultrasafe Transporter: Toshley's Station
+			crit(61585, {	-- Ultrasafe Transporter: Toshley's Station
 				["provider"] = { "i", 30544 },	-- Ultrasafe Transporter: Toshley's Station
 			}),
-			crit(5, {	-- Wormhole Generator: Northrend
+			crit(61586, {	-- Wormhole Generator: Northrend
 				["provider"] = { "i", 48933 },	-- Wormhole Generator: Northrend
 			}),
-			crit(6, {	-- Wormhole Generator: Pandaria
+			crit(61587, {	-- Wormhole Generator: Pandaria
 				["provider"] = { "i", 87215 },	-- Wormhole Generator: Pandaria
 			}),
-			crit(7, {	-- Wormhole Centrifuge
+			crit(61588, {	-- Wormhole Centrifuge
 				["provider"] = { "i", 112059 },	-- Wormhole Centrifuge
 			}),
-			crit(8, {	-- Wormhole Generator: Argus
+			crit(61589, {	-- Wormhole Generator: Argus
 				["provider"] = { "i", 151652 },	-- Wormhole Generator: Argus
 			}),
-			crit(9, {	-- Wormhole Generator: Kul Tiras
+			crit(61590, {	-- Wormhole Generator: Kul Tiras
 				["provider"] = { "i", 168807 },	-- Wormhole Generator: Kul Tiras
 			}),
-			crit(10, {	-- Wormhole Generator: Zandalar
+			crit(61591, {	-- Wormhole Generator: Zandalar
 				["provider"] = { "i", 168808 },	-- Wormhole Generator: Zandalar
 			}),
-			crit(11, {	-- Wormhole Generator: Shadowlands
+			crit(61592, {	-- Wormhole Generator: Shadowlands
 				["provider"] = { "i", 172924 },	-- Wormhole Generator: Shadowlands
 			}),
-			crit(12, {	-- Wyrmhole Generator: Dragon Isles
+			crit(61593, {	-- Wyrmhole Generator: Dragon Isles
 				["provider"] = { "i", 198156 },	-- Wyrmhole Generator: Dragon Isles
 			}),
 		}),
@@ -568,25 +568,25 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				i(208815),	-- Red Bio-Optic Killshades
 				i(208812),	-- Yellow Bio-Optic Killshades
 			}),
-			crit(1, {	-- Reinforced Bio-Optic Killshades
+			crit(61820, {	-- Reinforced Bio-Optic Killshades
 				["provider"] = { "i", 59359 },	-- Reinforced Bio-Optic Killshades
 			}),
-			crit(2, {	-- Specialized Bio-Optic Killshades
+			crit(61821, {	-- Specialized Bio-Optic Killshades
 				["provider"] = { "i", 59448 },	-- Specialized Bio-Optic Killshades
 			}),
-			crit(3, {	-- Deadly Bio-Optic Killshades
+			crit(61822, {	-- Deadly Bio-Optic Killshades
 				["provider"] = { "i", 59456 },	-- Deadly Bio-Optic Killshades
 			}),
-			crit(4, {	-- Energized Bio-Optic Killshades
+			crit(61823, {	-- Energized Bio-Optic Killshades
 				["provider"] = { "i", 59458 },	-- Energized Bio-Optic Killshades
 			}),
-			crit(5, {	-- Agile Bio-Optic Killshades
+			crit(61824, {	-- Agile Bio-Optic Killshades
 				["provider"] = { "i", 59455 },	-- Agile Bio-Optic Killshades
 			}),
-			crit(6, {	-- Camouflage Bio-Optic Killshades
+			crit(61825, {	-- Camouflage Bio-Optic Killshades
 				["provider"] = { "i", 59453 },	-- Camouflage Bio-Optic Killshades
 			}),
-			crit(7, {	-- Lightweight Bio-Optic Killshades
+			crit(61826, {	-- Lightweight Bio-Optic Killshades
 				["provider"] = { "i", 59449 },	-- Lightweight Bio-Optic Killshades
 			}),
 		})),
@@ -601,25 +601,25 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				i(208806),	-- White Retinal Armor
 				i(208807),	-- Yellow Retinal Armor
 			}),
-			crit(1, {	-- Lightweight Retinal Armor
+			crit(61781, {	-- Lightweight Retinal Armor
 				["provider"] = { "i", 77533 },	-- Lightweight Retinal Armor
 			}),
-			crit(2, {	-- Agile Retinal Armor
+			crit(61782, {	-- Agile Retinal Armor
 				["provider"] = { "i", 77534 },	-- Agile Retinal Armor
 			}),
-			crit(3, {	-- Camouflage Retinal Armor
+			crit(61783, {	-- Camouflage Retinal Armor
 				["provider"] = { "i", 77535 },	-- Camouflage Retinal Armor
 			}),
-			crit(4, {	-- Deadly Retinal Armor
+			crit(61784, {	-- Deadly Retinal Armor
 				["provider"] = { "i", 77536 },	-- Deadly Retinal Armor
 			}),
-			crit(5, {	-- Energized Retinal Armor
+			crit(61785, {	-- Energized Retinal Armor
 				["provider"] = { "i", 77537 },	-- Energized Retinal Armor
 			}),
-			crit(6, {	-- Specialized Retinal Armor
+			crit(61786, {	-- Specialized Retinal Armor
 				["provider"] = { "i", 77538 },	-- Specialized Retinal Armor
 			}),
-			crit(7, {	-- Reinforced Retinal Armor
+			crit(61787, {	-- Reinforced Retinal Armor
 				["provider"] = { "i", 77539 },	-- Reinforced Retinal Armor
 			}),
 		})),
@@ -661,16 +661,16 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			crit(8, {	-- Ironsight Cranial Cannon
 				["provider"] = { "i", 132507 },	-- Ironsight Cranial Cannon
 			}),
-			crit(9, {	-- Tailored Skullblasters
+			crit(61812, {	-- Tailored Skullblasters
 				["provider"] = { "i", 144331 },	-- Tailored Skullblasters
 			}),
-			crit(10, {	-- Rugged Skullblasters
+			crit(61813, {	-- Rugged Skullblasters
 				["provider"] = { "i", 144332 },	-- Rugged Skullblasters
 			}),
-			crit(11, {	-- Chain Skullblasters
+			crit(61814, {	-- Chain Skullblasters
 				["provider"] = { "i", 144333 },	-- Chain Skullblasters
 			}),
-			crit(12, {	-- Heavy Skullblasters
+			crit(61815, {	-- Heavy Skullblasters
 				["provider"] = { "i", 144334 },	-- Heavy Skullblasters
 			}),
 		})),
@@ -802,16 +802,16 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				i(208819),	-- Red Ectoplasmic Specs
 				i(208820),	-- Yellow Ectoplasmic Specs
 			}),
-			crit(1, {	-- Flexible Ectoplasmic Specs
+			crit(61816, {	-- Flexible Ectoplasmic Specs
 				["provider"] = { "i", 172905 },	-- Flexible Ectoplasmic Specs
 			}),
-			crit(2, {	-- Grounded Ectoplasmic Specs
+			crit(61817, {	-- Grounded Ectoplasmic Specs
 				["provider"] = { "i", 172906 },	-- Grounded Ectoplasmic Specs
 			}),
-			crit(3, {	-- Articulated Ectoplasmic Specs
+			crit(61818, {	-- Articulated Ectoplasmic Specs
 				["provider"] = { "i", 172907 },	-- Articulated Ectoplasmic Specs
 			}),
-			crit(4, {	-- Reinforced Ectoplasmic Specs
+			crit(61819, {	-- Reinforced Ectoplasmic Specs
 				["provider"] = { "i", 172908 },	-- Reinforced Ectoplasmic Specs
 			}),
 		})),
@@ -820,10 +820,10 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18856),	-- Just an Ordinary Gas Cloud
 			ach(18857, {	-- That's No Ordinary Gas Cloud!
-				crit(1),	-- 2 Air Souls Captured
-				crit(2),	-- 2 Earth Souls Captured
-				crit(3),	-- 2 Fire Souls Captured
-				crit(4),	-- 2 Frost Souls Captured
+				crit(61599),	-- 2 Air Souls Captured
+				crit(61600),	-- 2 Earth Souls Captured
+				crit(61601),	-- 2 Fire Souls Captured
+				crit(61602),	-- 2 Frost Souls Captured
 			}),
 		})),
 		n(QUESTS, {

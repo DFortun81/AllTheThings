@@ -117,7 +117,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			4875,	-- Loremaster of Cataclysm
 			6541,	-- Loremaster of Pandaria
 			9833,	-- Loremaster of Draenor (A)
-			9823,	-- Loremaster of Draenor (H)
+			9923,	-- Loremaster of Draenor (H)
 			11157,	-- Loremaster of Legion
 			12593,	-- Loremaster of Kul Tiras (A)
 			13294,	-- Loremaster of Zandalar (H)
