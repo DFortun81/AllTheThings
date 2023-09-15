@@ -2253,12 +2253,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 70.4, 17.6, AZSHARA },
 					},
 					-- #elseif AFTER 10.1.7
-					["cr"] = 37002,	-- Cliff Crasher
+					["crs"] = {
+						37002,	-- Cliff Crasher
+						8761,	-- Mosshoof Courser
+					},
 					["coords"] = {
 						{ 48.4, 79.8, AZSHARA },
 						{ 34.4, 40.6, AZSHARA },
 						{ 15.0, 52.0, AZSHARA },
 						{ 53.0, 76.8, AZSHARA },
+						
+						{ 14.2, 50.4, AZSHARA },
+						{ 29.2, 42.6, AZSHARA },
+						{ 45.4, 25.2, AZSHARA },
+						{ 50.6, 18.8, AZSHARA },
+						{ 68.2, 23.4, AZSHARA },
 					},
 					-- #endif
 				}),
