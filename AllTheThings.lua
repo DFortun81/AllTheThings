@@ -17598,13 +17598,6 @@ customWindowUpdates["Bounty"] = function(self, force, got)
 		});
 		-- add bounty content
 		NestObjects(header, {
-			app.CreateNPC(app.HeaderConstants.WORLD_QUESTS, {
-				['description'] = L["TWO_CLOAKS"],
-				['g'] = {
-					app.CreateItemSource(102106, 165685),	-- House of Nobles Cape
-					app.CreateItemSource(102105, 165684),	-- Gurubashi Empire Greatcloak
-				},
-			}),
 			app.CreateNPC(app.HeaderConstants.RARES, {
 				app.CreateNPC(87622, {	-- Ogom the Mangler
 					['description'] = L["OGOM_THE_MANGLER_DESC"],
