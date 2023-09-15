@@ -733,7 +733,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(2787, {	-- Trogg Dagger
+							-- #if AFTER 4.0.3
+							["crs"] = {
+								37073,	-- Rockjaw Goon
+								37105,	-- Rockjaw Scavenger
+							}.
+							["coords"] = {
+								{ 55.0, 44.6, COLDRIDGE_VALLEY },
+								{ 61.6, 59.2, COLDRIDGE_VALLEY },
+								{ 73.0, 56.6, COLDRIDGE_VALLEY },
+								{ 47.0, 43.4, COLDRIDGE_VALLEY },
+							},
+							-- #else
 							["cr"] = 724,	-- Burly Rockjaw Trogg
+							["coords"] = {
+								{ 21.8, 72.6, DUN_MOROGH },
+								{ 27.6, 72.8, DUN_MOROGH },
+								{ 31.0, 76.0, DUN_MOROGH },
+							},
+							-- #endif
 						}),
 						i(2054, {	-- Trogg Hand Axe
 							["timeline"] = { "removed 4.0.3", ADDED_10_0_7 },
