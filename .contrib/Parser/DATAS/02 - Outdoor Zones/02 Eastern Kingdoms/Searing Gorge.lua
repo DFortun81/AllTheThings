@@ -1324,6 +1324,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 35.0, 52.0, SEARING_GORGE },
 				}),
 			}),
+			-- #if AFTER 7.1.5.23360
+			n(TREASURES, {
+				o(266289, {	-- Time Lost Chest
+					["description"] = "Kill Searing Flamewraiths until you get Lava Oil. Do not use it yet. Go to the metal bridge before the Quarry Gate. The Time Lost Chest is in the lava below in the alcove. Use the Fire Oil, jump down, open the chest, and hearth.",
+					["coord"] = { 37.0, 48.9, SEARING_GORGE },
+					["timeline"] = { "added 7.1.5.23360" },
+					["cost"] = { { "i", 142359, 1 } },	-- Lava Oil
+					["groups"] = {
+						i(142358, {	-- Plans: Blazing Rapier (RECIPE!)
+							["timeline"] = { "added 7.1.5.23360" },
+						}),
+					},
+				}),
+			}),
+			-- #endif
 			n(ZONE_DROPS, {
 				i(11818, {	-- Grimesilt Outhouse Key
 					["timeline"] = { "removed 4.0.3" },
@@ -1396,17 +1411,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coords"] = {
 						{ 42.8, 51.6, SEARING_GORGE },
 						{ 38.0, 49.8, SEARING_GORGE },
-					},
-				}),
-				o(266289, {	-- Time Lost Chest
-					["description"] = "Kill Searing Flamewraiths until you get Lava Oil. Do not use it yet. Go to the metal bridge before the Quarry Gate. The Time Lost Chest is in the lava below in the alcove. Use the Fire Oil, jump down, open the chest, and hearth.",
-					["coord"] = { 37.0, 48.9, SEARING_GORGE },
-					["timeline"] = { "added 7.1.5.23360" },
-					["cost"] = { { "i", 142359, 1 } },	-- Lava Oil
-					["groups"] = {
-						i(142358, {	-- Plans: Blazing Rapier (RECIPE!)
-							["timeline"] = { "added 7.1.5.23360" },
-						}),
 					},
 				}),
 			}),

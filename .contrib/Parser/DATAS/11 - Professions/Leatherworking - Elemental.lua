@@ -173,7 +173,7 @@ profession(LEATHERWORKING, {
 					},
 					{
 						["name"] = "Volcanic Leggings",
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { "removed 4.0.3", "added 10.1.7" },
 						["recipeID"] = 19059,
 						["requireSkill"] = 10658,
 					},
@@ -185,7 +185,7 @@ profession(LEATHERWORKING, {
 				["groups"] = {
 					applyclassicphase(PHASE_ONE_DIREMAUL, {
 						["name"] = "Shifting Cloak",
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },
 						["recipeID"] = 22928,
 						["requireSkill"] = 10658,
 					}),
