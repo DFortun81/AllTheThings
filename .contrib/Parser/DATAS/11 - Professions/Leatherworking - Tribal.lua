@@ -110,7 +110,7 @@ profession(LEATHERWORKING, {
 					},
 					{
 						["name"] = "Ironfeather Breastplate",
-						["timeline"] = { "removed 4.0.3" },
+						["timeline"] = { "removed 4.0.3", "added 10.1.7" },
 						["recipeID"] = 19086,
 						["requireSkill"] = 10660,
 					},

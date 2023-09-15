@@ -1808,6 +1808,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			n(ZONE_DROPS, {
+				i(7095, {	-- Bog Boots
+					["timeline"] = { "removed 4.0.3" },
+					["crs"] = {
+						2029,	-- Timberling Mire Beast
+						2005,	-- Vicious Grell
+					},
+					["coords"] = {
+						{ 43.6, 29.8, TELDRASSIL },
+						{ 43.4, 35.4, TELDRASSIL },
+						{ 52.6, 52.4, TELDRASSIL },
+					},
+				}),
 				i(5206, {	-- Bogling Root
 					["cr"] = 3569,	-- Bogling
 				}),

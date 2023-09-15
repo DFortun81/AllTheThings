@@ -121,7 +121,7 @@ EXPERT_ARTISAN_ALCHEMY = {
 		r(11476),	-- Elixir of Shadow Power
 		r(17554),	-- Elixir of Superior Defense
 		r(17571, {	-- Elixir of the Mongoose
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
 		}),
 		r(17555),	-- Elixir of the Sages
 		r(11466),	-- Gift of Arthas
@@ -186,7 +186,7 @@ EXPERT_ARTISAN_ALCHEMY = {
 		r(11448),	-- Greater Mana Potion
 		r(17576),	-- Greater Nature Protection Potion
 		r(17578, {	-- Greater Shadow Protection Potion
-			["timeline"] = { REMOVED_4_0_3 },
+			["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
 		}),
 		r(17570),	-- Greater Stoneshield Potion
 		r(11464),	-- Invisibility Potion
