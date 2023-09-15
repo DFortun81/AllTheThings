@@ -1,6 +1,12 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+-- These are for the outdoor section of Uldaman before the instance. (rather than listing them in Badlands...)
+local OUTDOOR_ULDAMAN_CRS = {
+	4846,	-- Shadowforge Digger
+	4845,	-- Shadowforge Ruffian
+	4844,	-- Shadowforge Surveyor
+};
 root(ROOTS.Instances, tier(CLASSIC_TIER, {
 	inst(239, {	-- Uldaman
 		-- #if BEFORE MOP
@@ -539,11 +545,15 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				i(7666),	-- Shattered Necklace
 				i(9420),	-- Adventurer's Pith Helmet
 				i(9392),	-- Annealed Blade
-				i(9393),	-- Beacon of Hope
+				i(9393, {	-- Beacon of Hope
+					["crs"] = OUTDOOR_ULDAMAN_CRS,
+				}),
 				i(9465),	-- Digmaster 5000
 				i(9381),	-- Earthen Rod
 				i(9397),	-- Energy Cloak
-				i(9386),	-- Excavator's Brand
+				i(9386, {	-- Excavator's Brand
+					["crs"] = OUTDOOR_ULDAMAN_CRS,
+				}),
 				i(9424),	-- Ginn-Su Sword
 				i(9396),	-- Legguards of the Vault
 				i(9429),	-- Miner's Hat of the Deep
@@ -554,12 +564,20 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				i(9422),	-- Shadowforge Bushmaster
 				i(9432),	-- Skullplate Bracers
 				i(9430),	-- Spaulders of a Lost Age
-				i(9406),	-- Spirewind Fetter
+				i(9406, {	-- Spirewind Fetter
+					["crs"] = OUTDOOR_ULDAMAN_CRS,
+				}),
 				i(9427),	-- Stonevault Bonebreaker
-				i(9384),	-- Stonevault Shiv
+				i(9384, {	-- Stonevault Shiv
+					["crs"] = OUTDOOR_ULDAMAN_CRS,
+				}),
 				i(9423),	-- The Jackhammer
-				i(9391),	-- The Shoveler
-				i(9428),	-- Unearthed Bands
+				i(9391, {	-- The Shoveler
+					["crs"] = OUTDOOR_ULDAMAN_CRS,
+				}),
+				i(9428, {	-- Unearthed Bands
+					["crs"] = OUTDOOR_ULDAMAN_CRS,
+				}),
 			}),
 			n(RARES, {
 				n(7057, {	-- Digmaster Shovelphlange

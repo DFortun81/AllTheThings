@@ -1870,13 +1870,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(9393, {	-- Beacon of Hope
-					["crs"] = {
-						4846,	-- Shadowforge Digger
-						4845,	-- Shadowforge Ruffian
-						4844,	-- Shadowforge Surveyor
-					},
-				}),
 				i(2621, {	-- Cowl of Necromancy
 					["cr"] = 2740,	-- Shadowforge Darkweaver
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
@@ -1902,13 +1895,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["cr"] = 2725,	-- Scalding Whelp
 					-- #endif
-				}),
-				i(9386, {	-- Excavator's Brand
-					["crs"] = {
-						4846,	-- Shadowforge Digger
-						4845,	-- Shadowforge Ruffian
-						4844,	-- Shadowforge Surveyor
-					},
 				}),
 				i(1521, {	-- Lumbering Ogre Axe
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
@@ -1939,37 +1925,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2743,	-- Shadowforge Warrior
 					},
 				}),
-				i(9406, {	-- Spirewind Fetter
-					["crs"] = {
-						4846,	-- Shadowforge Digger
-						4845,	-- Shadowforge Ruffian
-						4844,	-- Shadowforge Surveyor
-					},
-				}),
-				i(9384, {	-- Stonevault Shiv
-					["crs"] = {
-						4846,	-- Shadowforge Digger
-						4845,	-- Shadowforge Ruffian
-						4844,	-- Shadowforge Surveyor
-					},
-				}),
-				i(9391, {	-- The Shoveler
-					["crs"] = {
-						4846,	-- Shadowforge Digger
-						4845,	-- Shadowforge Ruffian
-						4844,	-- Shadowforge Surveyor
-					},
-				}),
 				i(2624, {	-- Thinking Cap
 					["timeline"] = { "removed 4.0.3", "added 8.0.0" },
 					["cr"] = 2718,	-- Dustbelcher Shaman
-				}),
-				i(9428, {	-- Unearthed Bands
-					["crs"] = {
-						4846,	-- Shadowforge Digger
-						4845,	-- Shadowforge Ruffian
-						4844,	-- Shadowforge Surveyor
-					},
 				}),
 			}),
 		},
