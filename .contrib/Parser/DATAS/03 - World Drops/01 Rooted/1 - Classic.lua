@@ -74,7 +74,9 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14331),	-- Eternal Cloak
 		i(15309),	-- Feral Cloak
 		i(12979),	-- Firebane Cloak
-		i(2652),	-- Flimsy Chain Cloak
+		i(2652, {	-- Flimsy Chain Cloak
+			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
+		}),
 		i(4710),	-- Forest Cloak
 		i(15632),	-- Formidable Cape
 		i(9812),	-- Fortified Cloak
@@ -140,11 +142,15 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14665),	-- Keeper's Cloak
 		i(14781),	-- Khan's Cloak
 		i(7460),	-- Knight's Cloak
-		i(1741),	-- Laced Cloak
+		i(1741, {	-- Laced Cloak
+			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
+		}),
 		i(4706),	-- Lambent Scale Cloak
 		i(3995),	-- Laminated Scale Cloak
 		i(1749),	-- Linked Chain Cloak
-		i(2644),	-- Loose Chain Cloak
+		i(2644, {	-- Loose Chain Cloak
+			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
+		}),
 		i(10079),	-- Lord's Cape
 		i(14251),	-- Lunar Cloak
 		i(15015),	-- Lupine Cloak
@@ -170,7 +176,9 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(15501),	-- Outrunner's Cloak
 		i(4003),	-- Overlinked Chain Cloak
 		i(14161),	-- Pagan Cape
-		i(1790),	-- Patched Cloak
+		i(1790, {	-- Patched Cloak
+			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
+		}),
 		i(1429),	-- Patchwork Cloak
 		i(15340),	-- Pathfinder Cloak
 		i(15427),	-- Peerless Cloak
@@ -252,7 +260,9 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(15483),	-- War Torn Cape
 		i(14602),	-- Warden's Cloak
 		i(9959),	-- Warmonger's Cloak
-		i(1505),	-- Warped Cloak
+		i(1505, {	-- Warped Cloak
+			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
+		}),
 		i(4658),	-- Warrior's Cloak
 		i(14813),	-- Warstrike Cape
 		i(14179),	-- Watcher's Cape
@@ -261,8 +271,12 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(14430),	-- Windchaser Cloak
 		i(13121),	-- Wing of the Whelpling
 		i(15371),	-- Wolf Rider's Cloak
-		i(1733),	-- Worn Cloak
-		i(1421),	-- Worn Hide Cloak
+		i(1733, {	-- Worn Cloak
+			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
+		}),
+		i(1421, {	-- Worn Hide Cloak
+			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
+		}),
 		i(15333),	-- Wrangler's Cloak
 	}),
 	filter(CLOTH, {
