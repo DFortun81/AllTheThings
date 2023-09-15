@@ -2034,8 +2034,6 @@ root(ROOTS.Unsorted, {
 				i(209024),	-- Loot-Filled Pumpkin
 				i(209025),	-- Loot-Filled Pumpkin
 				i(209026),	-- Loot-Stuffed Pumpkin
-				i(209033),	-- Worn Felsteel Prayer Rod
-				i(209034),	-- Half-Completed Invasion Plans
 				i(209044),	-- Orange Brewfest Bulwark
 				i(209053),	-- Green Brewfest Bulwark
 				i(209055),	-- Third Booster Part

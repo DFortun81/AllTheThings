@@ -790,3 +790,10 @@ i(205978);	-- Glob of Azmerloth Slime
 
 -- Poor Trash --
 i(201166);	-- Gilded Hilt
+
+------------------
+-- PATCH 10.1.7 --
+------------------
+-- Poor Trash --
+i(209033);	-- Worn Felsteel Prayer Rod (Dropped in Argus during Seeing Red Quests)
+i(209034);	-- Half-Completed Invasion Plans (Dropped in Argus during Seeing Red Quests)
