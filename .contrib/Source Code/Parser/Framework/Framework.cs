@@ -1139,7 +1139,7 @@ namespace ATT
             // maps & coords
             if (data.TryGetValue("maps", out List<object> maps))
             {
-                if (coordsList != null)
+                if (coordsList != null && !data.ContainsKey("instanceID"))
                 {
                     List<object> redundant = new List<object>();
                     // check if any coord has a mapID which matches a maps mapID
