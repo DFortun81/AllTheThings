@@ -1821,7 +1821,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["crs"] = {
 						436,	-- Blackrock Shadowcaster
 						43535,	-- Blackrock Warden
-					}.
+					},
 					["coords"] = {
 						{ 62.0, 51.0, REDRIDGE_MOUNTAINS },
 						{ 60.0, 48.4, REDRIDGE_MOUNTAINS },
