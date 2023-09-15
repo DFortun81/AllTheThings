@@ -8,71 +8,71 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		ach(7294),		-- A Taste of Things to Come (Halfhill)
 		ach(7296),		-- Ain't Lost No More (Halfhill)
 		ach(7312, {		-- Amber is the Color of My Energy (Dread Wastes)
-			crit(1),		-- Kil'ruk the Wind-Reaver
-			crit(2),		-- Malik the Unscathed
-			crit(3),		-- Iyyokuk the Lucid
-			crit(4),		-- Kaz'tik the Manipulator
-			crit(5),		-- Korven the Prime
-			crit(6),		-- Ka'roz the Locust
-			crit(7),		-- Rik'kal the Dissector
-			crit(8),		-- Skeer the Bloodseeker
-			crit(9),		-- Hisek the Swarmkeeper
-			crit(10),		-- Xaril the Poisoned Mind
+			crit(20802),		-- Kil'ruk the Wind-Reaver
+			crit(20504),		-- Malik the Unscathed
+			crit(20803),		-- Iyyokuk the Lucid
+			crit(20439),		-- Kaz'tik the Manipulator
+			crit(20438),		-- Korven the Prime
+			crit(20435),		-- Ka'roz the Locust
+			crit(20809),		-- Rik'kal the Dissector
+			crit(20806),		-- Skeer the Bloodseeker
+			crit(20808),		-- Hisek the Swarmkeeper
+			crit(20807),		-- Xaril the Poisoned Mind
 		}),
 		ach(7287),		-- Champion of Chi-Ji (Cradle of Chi-Ji)
 		ach(7323),		-- Collateral Damage
 		ach(7310),		-- Defender of Gods (Townlong Steppes)
 		ach(7320),		-- Dog Pile
 		h(ach(7929, {	-- Dominance Offensive Campaign [Not entered to Pandaria Outdoor Zones files, these criteria are spread over not only the Pandaria zones but also Classic]
-			crit(1),		-- Domination Point
-			crit(2),		-- The Voice of the Gods
-			crit(3),		-- The Horde Is Family
-			crit(4),		-- Blood For Blood
-			crit(5),		-- The Korune
-			crit(6),		-- Pride
-			crit(7),		-- Rise of the Blood Elves
-			crit(8),		-- Secrets of the Past
-			crit(9),		-- The Divine Bell
-			crit(10),		-- The Darnassus Operation
-			crit(11),		-- The Purge of Dalaran
-			crit(12),		-- Breath of Darkest Shadow
+			crit(22438),			-- Domination Point
+			crit(22439),			-- The Voice of the Gods
+			crit(22440),			-- The Horde Is Family
+			crit(4),	-- Blood For Blood
+			crit(22448),			-- The Korune
+			crit(22449),			-- Pride
+			crit(22450),			-- Rise of the Blood Elves
+			crit(22451),			-- Secrets of the Past
+			crit(22452),			-- The Divine Bell
+			crit(22453),			-- The Darnassus Operation
+			crit(22539),			-- The Purge of Dalaran
+			crit(22454),			-- Breath of Darkest Shadow
 		})),
 		ach(7286, {		-- Finish Them! (Temple of the White Tiger)
-			crit(1),		-- Brewmaster Chani
-			crit(2),		-- Lun-Chi
-			crit(3),		-- Clever Ashyo
-			crit(4),		-- Ken-Ken
-			crit(5),		-- Kang Bramblestaff
-			crit(6),		-- The Wrestler
-			crit(7),		-- Master Boom Boom
-			crit(8),		-- Master Windfur
-			crit(9),		-- Hackiss
-			crit(10),		-- Healiss
-			crit(11),		-- Tankiss
+			crit(20440),		-- Brewmaster Chani
+			crit(20442),		-- Lun-Chi
+			crit(20443),		-- Clever Ashyo
+			crit(20451),		-- Ken-Ken
+			crit(20444),		-- Kang Bramblestaff
+			crit(20445),		-- The Wrestler
+			crit(20446),		-- Master Boom Boom
+			crit(20447),		-- Master Windfur
+			crit(20448),		-- Hackiss
+			crit(20449),		-- Healiss
+			crit(20450),		-- Tankiss
 		}),
 		ach(7309),		-- Fire in the Yaung-hole! (Townlong Steppes)
 		ach(7298, {		-- Getting Around with the Shado-Pan
-			crit(1),		-- Fei Li
-			crit(2),		-- Taoshi
-			crit(3),		-- Protector Yi
-			crit(4),		-- Snow Blossom
-			crit(5),		-- Hawkmaster Nurong
-			crit(6),		-- Chao the Voice
-			crit(7),		-- Yalia Sagewhisper
-			crit(8),		-- Tenwu of the Red Smoke
-			crit(9),		-- Lao-Chin the Iron Belly
+			crit(20453),		-- Fei Li
+			crit(20456),		-- Taoshi
+			crit(20461),		-- Protector Yi
+			crit(20454),		-- Snow Blossom
+			crit(20457),		-- Hawkmaster Nurong
+			crit(20460),		-- Chao the Voice
+			crit(20455),		-- Yalia Sagewhisper
+			crit(20458),		-- Tenwu of the Red Smoke
+			crit(20459),		-- Lao-Chin the Iron Belly
 		}),
 		ach(7292),		-- Green Acres (Halfhill)
 		ach(7290),		-- How To Strain Your Dragon (Jade Forest)
 		ach(7291),		-- In a Trail of Smoke (Jade Forest)
 		ach(7308, {		-- Know Your Role
-			crit(1),		-- Assault Fire Camp Gai-Cho
-			crit(2),		-- Assault Deadtalker's Plateau
-			crit(3),		-- The Deadtalker Cipher
-			crit(4),		-- Spirit Dust
-			crit(5),		-- The Enemy of My Enemy... Is Still My Enemy!
-			crit(6),		-- Uruk!
-			crit(7),		-- Cheng Bo!
+			crit(20487),		-- Assault Fire Camp Gai-Cho
+			crit(20488),		-- Assault Deadtalker's Plateau
+			crit(20489),		-- The Deadtalker Cipher
+			crit(20490),		-- Spirit Dust
+			crit(21208),		-- The Enemy of My Enemy... Is Still My Enemy!
+			crit(20492),		-- Uruk!
+			crit(20493),		-- Cheng Bo!
 		}),
 		ach(7295, {		-- Listen to the Drunk Fish (Halfhill)
 			crit(1),		-- Juicycrunch Carrot
@@ -82,168 +82,178 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(5),		-- Red Blossom Leek
 			crit(6),		-- Pink Turnip
 			crit(7),		-- White Turnip
+			-- crit(20536,21120),		-- Juicycrunch Carrot
+			-- crit(21034,21121),		-- Green Cabbage
+			-- crit(21037,21122),		-- Scallions
+			-- crit(21035,21123),		-- Mogu Pumpkin
+			-- crit(21036,21124),		-- Red Blossom Leek
+			-- crit(21038,21126),		-- Pink Turnip
+			-- crit(21039,21127),		-- White Turnip
 		}),
 		ach(7299, {		-- Loner and a Rebel (Townlong Steppes)
-			crit(1),		-- Omnia Mystics
-			crit(2),		-- Wu Kao Assassins
-			crit(3),		-- Blackguard Defenders
+			crit(1),	-- Omnia Mystics
+			crit(2),			-- Wu Kao Assassins
+			crit(3),			-- Blackguard Defenders
+			-- crit(20476,20475,20473),	-- Omnia Mystics
+			-- crit(21199,21200),			-- Wu Kao Assassins
+			-- crit(21201,21202),			-- Blackguard Defenders
 		}),
 		ach(6541, {		-- Loremaster of Pandaria
 			ach(6301, {		-- Rally the Valley
-				crit(1),		-- Thunderfoot Fields
-				crit(2),		-- Mudmug's Place
-				crit(3),		-- Chen's Masterpiece
-				crit(4),		-- The Stormstout Brewery
-				crit(5),		-- The Hidden Master
-				crit(6),		-- Nesingwary's Safari
+				crit(18820),		-- Thunderfoot Fields
+				crit(18821),		-- Mudmug's Place
+				crit(18822),		-- Chen's Masterpiece
+				crit(18823),		-- The Stormstout Brewery
+				crit(18827),		-- The Hidden Master
+				crit(18826),		-- Nesingwary's Safari
 			}),
 			ach(6539, {		-- One Steppe Forward, Two Steppes Back
-				crit(1),		-- Fire Camp Osul
-				crit(2),		-- Mistlurkers in the Sumprushes
-				crit(3),		-- On Hatred's Path
-				crit(4),		-- The Sha of Hatred
-				crit(5),		-- Tai Ho's Investigation
+				crit(19372),		-- Fire Camp Osul
+				crit(19375),		-- Mistlurkers in the Sumprushes
+				crit(19373),		-- On Hatred's Path
+				crit(19374),		-- The Sha of Hatred
+				crit(19376),		-- Tai Ho's Investigation
 			}),
 			ach(6540, {		-- Dread Haste Makes Dread Waste
-				crit(1),		-- The First Paragons
+				crit(20437),		-- The First Paragons
 				crit(2),		-- The Might of the Klaxxi
-				crit(3),		-- Taste of Amber
-				crit(4),		-- Like a Deck Boss
+				crit(20436),		-- Taste of Amber
+				crit(20435),		-- Like a Deck Boss
 			}),
 			a(ach(6300, {	-- Upjade Complete (Alliance)
-				crit(1),		-- Paw'don Village
-				crit(2),		-- The Waterspeaking Ceremony
-				crit(3),		-- The White Pawn
+				crit(19352),		-- Paw'don Village
+				crit(19353),		-- The Waterspeaking Ceremony
+				crit(19354),		-- The White Pawn
 				crit(4),		-- Pearlfin Village
 				crit(5),		-- Dawn's Blossom
-				crit(6),		-- Greenstone Quarry
+				crit(19348),		-- Greenstone Quarry
 				crit(7),		-- Tian Monastery
-				crit(8),		-- Terrace of Ten Thunders
-				crit(9),		-- The Temple of the Jade Serpent
-				crit(10),			-- Nectarbreeze Orchard
-				crit(11),		-- The Battle for the Forest
-				crit(12),		-- Overcoming Doubt
+				crit(19206),		-- Terrace of Ten Thunders
+				crit(19349),		-- The Temple of the Jade Serpent
+				crit(19331),			-- Nectarbreeze Orchard
+				crit(22195),		-- The Battle for the Forest
+				crit(22194),		-- Overcoming Doubt
 			})),
 			h(ach(6534, {	-- Upjade Complete (Horde)
-				crit(1),		-- The Remains of Hellscream's Fist
-				crit(2),		-- First Contact
-				crit(3),		-- Strange Bedfellows
-				crit(4),		-- Grookin Hill
+				crit(19332),		-- The Remains of Hellscream's Fist
+				crit(19333),		-- First Contact
+				crit(19338),		-- Strange Bedfellows
+				crit(19339),		-- Grookin Hill
 				crit(5),		-- Dawn's Blossom
-				crit(6),		-- Greenstone Quarry
-				crit(7),		-- The Temple of the Jade Serpent
+				crit(19348),		-- Greenstone Quarry
+				crit(19349),		-- The Temple of the Jade Serpent
 				crit(8),		-- Tian Monastery
-				crit(9),		-- Terrace of Ten Thunders
-				crit(10),		-- Nectarbreeze Orchard
-				crit(11),		-- The Battle for the Forest
-				crit(12),		-- Overcoming Doubt
+				crit(19206),		-- Terrace of Ten Thunders
+				crit(19331),		-- Nectarbreeze Orchard
+				crit(19350),		-- The Battle for the Forest
+				crit(19351),		-- Overcoming Doubt
 			})),
 			a(ach(6535, {	-- Mighty Roamin' Krasaranger (Alliance)
-				crit(1),		-- Zhu's Watch
-				crit(2),		-- The Incursion
+				crit(18824),		-- Zhu's Watch
+				crit(19357),		-- The Incursion
 				crit(3),		-- Nayeli Lagoon
-				crit(4),		-- Temple of the Red Crane
-				crit(5),		-- The Waters of Youth
+				crit(18829),		-- Temple of the Red Crane
+				crit(19358),		-- The Waters of Youth
 			})),
 			h(ach(6536, {	-- Mighty Roamin' Krasaranger (Horde)
-				crit(1),		-- Zhu's Watch
-				crit(2),		-- Thunder Cleft
+				crit(18824),		-- Zhu's Watch
+				crit(18825),		-- Thunder Cleft
 				crit(3),		-- Nayeli Lagoon
-				crit(4),		-- Temple of the Red Crane
-				crit(5),		-- Dawnchaser Retreat
+				crit(18829),		-- Temple of the Red Crane
+				crit(18830),		-- Dawnchaser Retreat
 			})),
 			a(ach(6537, {	-- Slum It in the Summit (Alliance)
-				crit(1),		-- Westwind Rest
-				crit(2),		-- The Yaungol Invasion
-				crit(3),		-- Inkgill Mere
-				crit(4),		-- The Yak Wash
-				crit(5),		-- The Burlap Trail
-				crit(6),		-- Kota Peak
-				crit(7),		-- The Thunder King
-				crit(8),		-- Temple of the White Tiger
-				crit(9),		-- Zouchin Village
-				crit(10),		-- The Shado-Pan
+				crit(19359),		-- Westwind Rest
+				crit(19360),		-- The Yaungol Invasion
+				crit(22136),		-- Inkgill Mere
+				crit(19366),		-- The Yak Wash
+				crit(19364),		-- The Burlap Trail
+				crit(19365),		-- Kota Peak
+				crit(19367),		-- The Thunder King
+				crit(21869),		-- Temple of the White Tiger
+				crit(19369),		-- Zouchin Village
+				crit(19363),		-- The Shado-Pan
 			})),
 			h(ach(6538, {	-- Slum It in the Summit (Horde)
-				crit(1),		-- Eastwind Rest
-				crit(2),		-- The Yaungol Invasion
-				crit(3),		-- Inkgill Mere
-				crit(4),		-- The Yak Wash
-				crit(5),		-- The Burlap Trail
-				crit(6),		-- Kota Peak
-				crit(7),		-- The Thunder King
-				crit(8),		-- Temple of the White Tiger
-				crit(9),		-- Zouchin Village
-				crit(10),		-- The Shado-Pan
+				crit(19370),		-- Eastwind Rest
+				crit(19371),		-- The Yaungol Invasion
+				crit(19361),		-- Inkgill Mere
+				crit(19366),		-- The Yak Wash
+				crit(19364),		-- The Burlap Trail
+				crit(19365),		-- Kota Peak
+				crit(19367),		-- The Thunder King
+				crit(21868),		-- Temple of the White Tiger
+				crit(19369),		-- Zouchin Village
+				crit(19363),		-- The Shado-Pan
 			})),
 		}),
 		ach(7317, {		-- One Many Army (Vale of Eternal Blossoms)
-			crit(1),		-- Cracklefang
-			crit(2),		-- Vicejaw
-			crit(3),		-- General Temuja
-			crit(4),		-- Shadowmaster Sydow
-			crit(5),		-- Aetha
-			crit(6),		-- Quid
-			crit(7),		-- Spirit of Lao-Fe
-			crit(8),		-- Baolai the Immolator
-			crit(9),		-- Gaohun the Soul-Severer
-			crit(10),		-- Bloodtip
-			crit(11),		-- Wulon
-			crit(12),		-- Gochao the Ironfist
-			crit(13),		-- Huo-Shuang
-			crit(14),		-- Bai-Jin the Butcher
-			crit(15),		-- Kri'chon
-			crit(16),		-- Vyraxxis
+			crit(20517),		-- Cracklefang
+			crit(20518),		-- Vicejaw
+			crit(20519),		-- General Temuja
+			crit(20520),		-- Shadowmaster Sydow
+			crit(20521),		-- Aetha
+			crit(20522),		-- Quid
+			crit(20523),		-- Spirit of Lao-Fe
+			crit(20524),		-- Baolai the Immolator
+			crit(20528),		-- Gaohun the Soul-Severer
+			crit(20526),		-- Bloodtip
+			crit(23913),		-- Wulon
+			crit(20528),		-- Gochao the Ironfist
+			crit(20529),		-- Huo-Shuang
+			crit(20530),		-- Bai-Jin the Butcher
+			crit(20531),		-- Kri'chon
+			crit(20532),		-- Vyraxxis
 		}),
 		ach(7324, {		-- One Step at a Time
-			crit(1),		-- Complete The Crumbling Hall without taking any damage.
-			crit(2),		-- Complete The Thunder Below without taking any damage.
+			crit(20975),		-- Complete The Crumbling Hall without taking any damage.
+			crit(20979),		-- Complete The Thunder Below without taking any damage.
 		}),
 		a(ach(7928, {	-- Operation: Shieldwall Campaign [Not entered to Pandaria Outdoor Zones files, these criteria are spread over not only the Pandaria zones but also Classic]
-			crit(1),		-- Lion's Landing
-			crit(2),		-- The Man With a Thousand Faces
-			crit(3),		-- The Voice of the Gods
-			crit(4),		-- Jaina's Hope
+			crit(22424),		-- Lion's Landing
+			crit(22425),		-- The Man With a Thousand Faces
+			crit(22426),		-- The Voice of the Gods
+			crit(22427),		-- Jaina's Hope
 			crit(5),		-- The Korune
-			crit(6),		-- Heart of the Alliance
-			crit(7),		-- Secrets of the Past
-			crit(8),		-- The Divine Bell
-			crit(9),		-- The Purge of Dalaran
-			crit(10),		-- An Ancient Ally
+			crit(22431),		-- Heart of the Alliance
+			crit(22432),		-- Secrets of the Past
+			crit(22434),		-- The Divine Bell
+			crit(22538),		-- The Purge of Dalaran
+			crit(22433),		-- An Ancient Ally
 			crit(11),		-- In Search of Harmony
-			crit(12),		-- Breath of Darkest Shadow
+			crit(22437),		-- Breath of Darkest Shadow
 		})),
 		ach(7316, {		-- Over Their Heads (Dread Wastes)
-			crit(1),		-- Garalon
-			crit(2),		-- Wind Lord Mel'jarak
-			crit(3),		-- Blade Lord Ta'yak
-			crit(4),		-- Amber-Shaper Un'sok
-			crit(5),		-- Imperial Vizier Zor'lok
-			crit(6),		-- Amber Earthshaker
-			crit(7),		-- Amber Rocktunneler
-			crit(8),		-- Amber Venomlancer
-			crit(9),		-- Dread Ambercrusher
-			crit(10),		-- Dread Fearbringer
-			crit(11),		-- Essence of Dread
-			crit(12),		-- Essence of Fear
-			crit(13),		-- Essence of Horror
-			crit(14),		-- Essence of Panic
-			crit(15),		-- Essence of Terror
+			crit(20511),		-- Garalon
+			crit(20509),		-- Wind Lord Mel'jarak
+			crit(20508),		-- Blade Lord Ta'yak
+			crit(20510),		-- Amber-Shaper Un'sok
+			crit(20507),		-- Imperial Vizier Zor'lok
+			crit(21001),		-- Amber Earthshaker
+			crit(20506),		-- Amber Rocktunneler
+			crit(20505),		-- Amber Venomlancer
+			crit(21002),		-- Dread Ambercrusher
+			crit(21003),		-- Dread Fearbringer
+			crit(21004),		-- Essence of Dread
+			crit(21005),		-- Essence of Fear
+			crit(21006),		-- Essence of Horror
+			crit(21007),		-- Essence of Panic
+			crit(21008),		-- Essence of Terror
 		}),
 		ach(7297, {		-- Proven Strength (Shado-Pan Garrison)
-			crit(1),		-- Fei Li
-			crit(2),		-- Snow Blossom
-			crit(3),		-- Yalia Sagewhisper
-			crit(4),		-- Protector Yi
-			crit(5),		-- Chao the Voice
-			crit(6),		-- Lao-Chin the Iron Belly
-			crit(7),		-- Taoshi
-			crit(8),		-- Tenwu of the Red Smoke
-			crit(9),		-- Hawkmaster Nurong
+			crit(22174),		-- Fei Li
+			crit(22168),		-- Snow Blossom
+			crit(22169),		-- Yalia Sagewhisper
+			crit(22174),		-- Protector Yi
+			crit(22170),		-- Chao the Voice
+			crit(22171),		-- Lao-Chin the Iron Belly
+			crit(22174),		-- Taoshi
+			crit(22173),		-- Tenwu of the Red Smoke
+			crit(22172),		-- Hawkmaster Nurong
 		}),
 		ach(7319, {		-- Ready for Raiding III
-			crit(1),		-- Survival Ring: Flames
-			crit(2),		-- Survival Ring: Blades
+			crit(20533),		-- Survival Ring: Flames
+			crit(20534),		-- Survival Ring: Blades
 		}),
 		ach(7322),		-- Roll Club
 		ach(7502),		-- Savior of Stoneplow
@@ -251,16 +261,16 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		ach(7307),		-- Silent Assassin (Townlong Steppes)
 		ach(7321),		-- Spreading the Warmth
 		ach(7313, {		-- Stay Klaxxi (Dread Wastes)
-			crit(1),		-- Angel of Death
-			crit(2),		-- Master of Puppets
-			crit(3),		-- Painkiller
-			crit(4),		-- Seek and Destroy
-			crit(5),		-- Raining Blood
-			crit(6),		-- Iron Mantid
-			crit(7),		-- Silent Lucidity
-			crit(8),		-- Speed King
-			crit(9),		-- Children of the Grave
-			crit(10),		-- Battle Hymn
+			crit(20951),		-- Angel of Death
+			crit(20952),		-- Master of Puppets
+			crit(20953),		-- Painkiller
+			crit(20954),		-- Seek and Destroy
+			crit(20955),		-- Raining Blood
+			crit(20956),		-- Iron Mantid
+			crit(20957),		-- Silent Lucidity
+			crit(20958),		-- Speed King
+			crit(20959),		-- Children of the Grave
+			crit(20960),		-- Battle Hymn
 		}),
 		
 		ach(7314),		-- Test Drive (Dread Wastes)

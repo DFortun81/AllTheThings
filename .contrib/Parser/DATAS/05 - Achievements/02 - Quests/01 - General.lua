@@ -76,9 +76,9 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		},
 	})),
 	ach(4958, {		-- The First Rule of Ring of Blood is You Don't Talk About Ring of Blood
-		crit(1),		-- Ring of Blood in Nagrand
-		crit(2),		-- Amphitheater of Anguish in Zul'Drak
-		crit(3),		-- Crucible of Carnage in Twilight Highlands
+		crit(5798),		-- Ring of Blood in Nagrand
+		crit(5799),		-- Amphitheater of Anguish in Zul'Drak
+		crit(13918),	-- Crucible of Carnage in Twilight Highlands
 	}),
 	applyclassicphase(WRATH_PHASE_ONE, ach(1681, {	-- The Loremaster (A)
 		["sym"] = {{"meta_achievement",
@@ -109,19 +109,24 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		},
 	})),
 	ach(7520, {		-- The Loremaster
+		["sym"] = {{"meta_achievement",
+			1676,	-- Loremaster of Eastern Kingdoms
+			1678,	-- Loremaster of Kalimdor
+			1262,	-- Loremaster of Outland
+			41,		-- Loremaster of Northrend
+			4875,	-- Loremaster of Cataclysm
+			6541,	-- Loremaster of Pandaria
+			9833,	-- Loremaster of Draenor (A)
+			9823,	-- Loremaster of Draenor (H)
+			11157,	-- Loremaster of Legion
+			12593,	-- Loremaster of Kul Tiras (A)
+			13294,	-- Loremaster of Zandalar (H)
+			14280,	-- Loremaster of Shadowlands
+		}},
 		["timeline"] = { "added 5.0.4.16016" },
 		["groups"] = {
 			title(93),		-- Loremaster
 			i(43300),		-- Loremaster's Colors
-			crit(1),		-- Loremaster of Eastern Kingdoms
-			crit(2),		-- Loremaster of Kalimdor
-			crit(3),		-- Loremaster of Outland
-			crit(4),		-- Loremaster of Northrend
-			crit(5),		-- Loremaster of Cataclysm
-			crit(6),		-- Loremaster of Pandaria
-			crit(7),		-- Loremaster of Draenor
-			crit(8),		-- Loremaster of Legion
-			crit(9),		-- Loremaster of Kul Tiras / Zandalar
 		},
 	}),
 }));
