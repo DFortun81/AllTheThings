@@ -737,7 +737,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["crs"] = {
 								37073,	-- Rockjaw Goon
 								37105,	-- Rockjaw Scavenger
-							}.
+							},
 							["coords"] = {
 								{ 55.0, 44.6, COLDRIDGE_VALLEY },
 								{ 61.6, 59.2, COLDRIDGE_VALLEY },
