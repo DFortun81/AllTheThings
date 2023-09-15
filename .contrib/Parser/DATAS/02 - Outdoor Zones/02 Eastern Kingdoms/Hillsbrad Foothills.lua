@@ -3234,27 +3234,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(4723, {	-- Humbert's Pants
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 2346,	-- Dun Garok Priest
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 2346,	-- Dun Garok Priest
 					["coords"] = {
-						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
-						{ 25.4, 35.4, HILLSBRAD_FOOTHILLS },
+						{ 70.6, 75.6, HILLSBRAD_FOOTHILLS },
+						{ 71.4, 81.4, HILLSBRAD_FOOTHILLS },
 					},
 					-- #elseif AFTER 10.1.7
 					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
+						14275,	-- Tamra Stormpike
+						49269,	-- Dun Garok Spirit
 					},
 					["coords"] = {
-						{ 23.4, 35.4, HILLSBRAD_FOOTHILLS },
-						{ 17.8, 33.4, HILLSBRAD_FOOTHILLS },
-						{ 19.8, 46.8, HILLSBRAD_FOOTHILLS },
+						{ 63.2, 82.0, HILLSBRAD_FOOTHILLS },
+						{ 64.2, 87.0, HILLSBRAD_FOOTHILLS },
+						{ 60.6, 84.2, HILLSBRAD_FOOTHILLS },
+						{ 62.8, 85.0, HILLSBRAD_FOOTHILLS },
 					},
 					-- #endif
-					--]]
 				}),
 				-- #if BEFORE CATA
 				i(4589, {	-- Long Elegant Feather
