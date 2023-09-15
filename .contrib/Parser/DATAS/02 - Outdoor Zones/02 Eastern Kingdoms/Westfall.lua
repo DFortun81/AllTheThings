@@ -1503,50 +1503,51 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(4290, {	-- Dust Bowl
-					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 832,	-- Dust Devil
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 12.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 832,	-- Dust Devil
 					["coords"] = {
-						{ 23.4, 35.4, WESTFALL },
-						{ 25.4, 35.4, WESTFALL },
+						{ 40.8, 22.0, WESTFALL },
+						{ 35.8, 34.4, WESTFALL },
+						{ 33.8, 49.4, WESTFALL },
+						{ 34.6, 68.6, WESTFALL },
+						{ 38.8, 61.4, WESTFALL },
+						{ 42.6, 59.2, WESTFALL },
+						{ 46.8, 48.6, WESTFALL },
+						{ 43.0, 42.2, WESTFALL },
+						{ 54.6, 41.0, WESTFALL },
+						{ 61.6, 36.0, WESTFALL },
+						{ 63.6, 51.4, WESTFALL },
+						{ 68.8, 74.0, WESTFALL },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
+					["cr"] = 42669,	-- Chasm Slime
 					["coords"] = {
-						{ 23.4, 35.4, WESTFALL },
-						{ 17.8, 33.4, WESTFALL },
-						{ 19.8, 46.8, WESTFALL },
+						{ 36.0, 42.2, WESTFALL },
+						{ 40.4, 39.8, WESTFALL },
+						{ 39.0, 46.2, WESTFALL },
 					},
 					-- #endif
-					--]]
 				}),
 				i(5669, {	-- Dust Devil Debris
 					["timeline"] = { "removed 4.0.3" },
-					["cr"] = 832,	-- Dust Devil
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
+					["cr"] = 832,	-- Dust Devil
 					["coords"] = {
-						{ 23.4, 35.4, WESTFALL },
-						{ 25.4, 35.4, WESTFALL },
-					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, WESTFALL },
-						{ 17.8, 33.4, WESTFALL },
-						{ 19.8, 46.8, WESTFALL },
+						{ 40.8, 22.0, WESTFALL },
+						{ 35.8, 34.4, WESTFALL },
+						{ 33.8, 49.4, WESTFALL },
+						{ 34.6, 68.6, WESTFALL },
+						{ 38.8, 61.4, WESTFALL },
+						{ 42.6, 59.2, WESTFALL },
+						{ 46.8, 48.6, WESTFALL },
+						{ 43.0, 42.2, WESTFALL },
+						{ 54.6, 41.0, WESTFALL },
+						{ 61.6, 36.0, WESTFALL },
+						{ 63.6, 51.4, WESTFALL },
+						{ 68.8, 74.0, WESTFALL },
 					},
 					-- #endif
-					--]]
 				}),
 				i(1405, {	-- Foamspittle Staff
 					["cr"] = 517,	-- Murloc Oracle
@@ -1591,7 +1592,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 831,	-- Sea Crawler
 				}),
 				i(2091, {	-- Magic Dust
+					["timeline"] = { "removed 4.0.3" },
+					-- #if BEFORE 4.0.3
 					["cr"] = 832,	-- Dust Devil
+					["coords"] = {
+						{ 40.8, 22.0, WESTFALL },
+						{ 35.8, 34.4, WESTFALL },
+						{ 33.8, 49.4, WESTFALL },
+						{ 34.6, 68.6, WESTFALL },
+						{ 38.8, 61.4, WESTFALL },
+						{ 42.6, 59.2, WESTFALL },
+						{ 46.8, 48.6, WESTFALL },
+						{ 43.0, 42.2, WESTFALL },
+						{ 54.6, 41.0, WESTFALL },
+						{ 61.6, 36.0, WESTFALL },
+						{ 63.6, 51.4, WESTFALL },
+						{ 68.8, 74.0, WESTFALL },
+					},
+					-- #endif
 				}),
 				i(732, {	-- Okra
 					["crs"] = {
