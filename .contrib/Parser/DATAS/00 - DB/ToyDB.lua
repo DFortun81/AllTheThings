@@ -1223,3 +1223,18 @@ i(208658);	-- Mirror of Humility
 i(208229);	-- Honor of the Forsaken
 i(208880);	-- Brewhahat
 i(209052);	-- Brew Barrel
+
+------------------
+-- PATCH 10.2.0 --
+------------------
+i(210725);	-- Owl Post
+i(210497);	-- Verdant Legend's Pennant
+--- UNSORTED ---
+i(210411);	-- Fast Growing Seed
+i(209859);	-- Festive Trans-Dimensional Bird Whistle
+i(209035);	-- Hearthstone of the Flame
+i(208825);	-- Junior Timekeeper's Racing Belt
+i(207092);	-- Portable Party Platter
+i(208798);	-- Recorded Memories of Tyr's Guard
+i(210656);	-- Winter Veil Socks
+i(208087);	--

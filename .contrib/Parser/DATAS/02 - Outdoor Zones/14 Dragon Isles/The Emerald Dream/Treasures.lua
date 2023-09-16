@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 77858,
 				["coord"] = { 47.5, 34.9, TREE_1 },
 				["g"] = {
-					i(210725),	-- Owl Post (Toy)
+					i(210725),	-- Owl Post (TOY!)
 				},
 			}),
 			o(408707, {	-- Odd Burl

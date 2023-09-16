@@ -589,6 +589,15 @@ root(ROOTS.Unsorted, {
 				i(210060),	-- Shadow Dusk Dreamsaber (MOUNT!)
 				i(210059),	-- Winter Night Dreamsaber (MOUNT!)
 			}),
+			filter(TOYS, {
+				i(210411),	-- Fast Growing Seed (TOY!) [Emerald Dream?]
+				i(209859),	-- Festive Trans-Dimensional Bird Whistle (TOY!) [Winter Veil?]
+				i(209035),	-- Hearthstone of the Flame (TOY!) [Raid Boss?]
+				i(208825),	-- Junior Timekeeper's Racing Belt (TOY!) [Winter Veil?]
+				i(207092),	-- Portable Party Platter (TOY!) [Engi?]
+				i(208798),	-- Recorded Memories of Tyr's Guard (TOY!) [Questline Tyr?]
+				i(210656),	-- Winter Veil Socks (TOY!) [Winter Veil?]
+			}),
 			i(192717),	-- Animated Splinter
 			i(202182),	-- Acid Rifle
 			i(202186),	-- Boom Weed
@@ -625,7 +634,7 @@ root(ROOTS.Unsorted, {
 			i(207085),	-- Enchant Weapon - Dreaming Devotion
 			i(207086),	-- Enchant Weapon - Dreaming Devotion
 			i(207087),	-- Enchant Weapon - Dreaming Devotion
-			i(207092),	-- Portable Party Platter
+
 			i(207115),	-- Cloth - HAND 1
 			i(207116),	-- Cloth - HEAD 1
 			i(207117),	-- Cloth - SHOULDER 1
@@ -1079,9 +1088,7 @@ root(ROOTS.Unsorted, {
 			i(208747),	-- Dreamtender's Charm
 			i(208748),	-- Dreamtender's Charm
 			i(208757),	-- Ash's Recipes to Delight and Nourish your Plant Pals
-			i(208798),	-- Recorded Memories of Tyr's Guard
 			i(208821),	-- Aspects' Token of Merit
-			i(208825),	-- Junior Timekeeper's Racing Belt
 			i(208837),	-- Missing Fruit
 			i(208841),	-- True Sight
 			i(208856),	-- Pocket Lint
@@ -1110,7 +1117,6 @@ root(ROOTS.Unsorted, {
 			i(209018),	-- Glowdrop Sugar
 			i(209019),	-- Conjured Sugarfree Firewater Sorbet
 			i(209021),	-- Shed Great Feathers
-			i(209035),	-- Hearthstone of the Flame
 			i(209036),	-- Cache of Amirdrassil Treasures
 			i(209037),	-- Cache of Amirdrassil Treasures
 			i(209049),	-- Essence of Endless Flame
@@ -1486,7 +1492,6 @@ root(ROOTS.Unsorted, {
 			i(209839),	-- Tangible Whispers of Dreaming
 			i(209853),	-- Unstable Water Walking Potion
 			i(209856),	-- Dilated Time Pod
-			i(209859),	-- Festive Trans-Dimensional Bird Whistle
 			i(209860),	-- Thorn-Laden Heart
 			i(209861),	-- Thorn-Laden Heart
 			i(209862),	-- Thorn-Laden Heart
@@ -1773,7 +1778,6 @@ root(ROOTS.Unsorted, {
 			i(210406),	-- Frigid Forager's Claymore
 			i(210407),	-- Frigid Forager's Cape
 			i(210408),	-- Winter Warden's Cloak
-			i(210411),	-- Fast Growing Seed
 			i(210414),	-- Forest Lord's Antlers
 			i(210415),	-- Darnassian Moonsilver Spaulders
 			i(210418),	-- Darnassian Cloak
@@ -1784,7 +1788,6 @@ root(ROOTS.Unsorted, {
 			i(210423),	-- Dream Wardens Insignia
 			i(210424),	-- Darnassian Tabard
 			i(210430),	-- Twisted Dreaming Essence
-
 			i(210433),	-- Visage of Aurostor
 			i(210436),	-- Nature's Cradle
 			i(210438),	-- Wisp Dust
@@ -1821,7 +1824,6 @@ root(ROOTS.Unsorted, {
 			i(210494),	-- Incandescent Essence
 			i(210495),	-- Slumbering Peacebloom Tea
 			i(210496),	-- Recipe: Slumbering Peacebloom Tea
-			i(210497),	-- Verdant Legend's Pennant
 			i(210498),	-- Fused Essence
 			i(210501),	-- Dream Wardens Tabard
 			i(210502),	-- Verdant Gladiator's Axe
@@ -1866,7 +1868,6 @@ root(ROOTS.Unsorted, {
 			i(210646),	-- Flourishing Dream Helm
 			i(210647),	-- Mark of the Umbramane
 			i(210650),	-- Mark of the Keen-Eyed Dreamsaber
-			i(210656),	-- Winter Veil Socks
 			i(210657),	-- Gently Shaken Gift
 			i(210661),	-- Dreamcatcher's Crescent
 			i(210662),	-- Ochre Ornament of the Grove
@@ -1894,7 +1895,6 @@ root(ROOTS.Unsorted, {
 			i(210705),	-- Fallen Protector Greathelm
 			i(210706),	-- Drowsed Shepherd's Vest
 			i(210707),	-- Drowsed Shepherd's Hood
-			i(210725),	-- Owl Post
 			i(210726),	-- Ruby Flightstone
 			-----------------
 			i(207175),	-- Coiled Serpent Idol
@@ -2020,7 +2020,6 @@ root(ROOTS.Unsorted, {
 			i(208925),	-- Dreambound Trinket
 			--
 			i(4191),	-- Owlbeast Leggings
-			i(209035),	-- Flame Hearthstone
 			i(209781),	-- Second Booster Part
 			--
 			i(206596),	-- Tome of Thomas Thomson
