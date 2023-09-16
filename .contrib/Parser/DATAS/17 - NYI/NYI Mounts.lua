@@ -802,9 +802,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(190539, {	-- Coral-Stalker Waveray (MOUNT!)
 				["modelID"] = 105400,
 			}),
-			i(190168, {	-- Crusty Crawler (MOUNT!)
-				["modelID"] = 104791,
-			}),
 			i(203226, {	-- Stormfused Salamanther (MOUNT!)
 				-- ["modelID"] =
 			}),

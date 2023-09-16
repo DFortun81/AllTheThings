@@ -656,8 +656,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 		})),
-		pvp(i(201792)),	-- Highland Drake: Embodiment of the Crimson Gladiator (DM!)
-		i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
 		header(HEADERS.Item, 194521, {	-- Cliffside Wylderdrake
 			i(196961),	-- Cliffside Wylderdrake: Armor (DM!)
 			i(196991),	-- Cliffside Wylderdrake: Black Horns (DM!)
@@ -729,6 +727,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(197100),	-- Highland Drake: Crested Brow (DM!)
 			i(197128),	-- Highland Drake: Curled Back Horns (DM!)
 			i(197116),	-- Highland Drake: Ears (DM!)
+			pvp(i(201792)),	-- Highland Drake: Embodiment of the Crimson Gladiator (DM!)
 			i(197098),	-- Highland Drake: Finned Back (DM!)
 			i(197106),	-- Highland Drake: Finned Head (DM!)
 			i(197090),	-- Highland Drake: Gold and Black Armor (DM!)
@@ -792,6 +791,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(197380),	-- Renewed Proto-Drake: Curved Horns (DM!)
 			i(197366),	-- Renewed Proto-Drake: Dual Horned Crest (DM!)
 			i(197376),	-- Renewed Proto-Drake: Ears (DM!)
+			i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
 			i(197365),	-- Renewed Proto-Drake: Finned Crest (DM!)
 			i(197388),	-- Renewed Proto-Drake: Finned Jaw (DM!)
 			i(197404),	-- Renewed Proto-Drake: Finned Tail (DM!)
@@ -929,9 +929,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 	})),
 	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
-		i(205876),	-- Highland Drake: Embodiment of the Hellforged (DM!) [Mythic]
-		i(206955),	-- Highland Drake: Embodiment of the Hellforged (DM!) [LFR, Normal, Heroic]
-		pvp(i(205865)),	-- Winding Slitherdrake: Embodiment of the Obsidian Gladiator (DM!)
 		header(HEADERS.Item, 194521, {	-- Cliffside Wylderdrake
 			i(196965),	-- Cliffside Wylderdrake: Bronze and Teal Armor (DM!)
 			i(196990),	-- Cliffside Wylderdrake: Helm (DM!)
@@ -941,6 +938,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		header(HEADERS.Item, 194705, {	-- Highland Drake
 			i(197156),	-- Highland Drake: Bronze and Green Armor (DM!)
+			i(205876),	-- Highland Drake: Embodiment of the Hellforged (DM!) [Mythic]
+			i(206955),	-- Highland Drake: Embodiment of the Hellforged (DM!) [LFR, Normal, Heroic]
 			i(197120),	-- Highland Drake: Ornate Helm (DM!)
 			i(197109),	-- Highland Drake: Spiked Head (DM!)
 			i(197134),	-- Highland Drake: Spiked Legs (DM!)
@@ -974,6 +973,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(203314),	-- Winding Slitherdrake: Curved Chin Horn (DM!)
 			i(203335),	-- Winding Slitherdrake: Curved Horns (DM!)
 			i(203320),	-- Winding Slitherdrake: Ears (DM!)
+			pvp(i(205865)),	-- Winding Slitherdrake: Embodiment of the Obsidian Gladiator (DM!)
 			i(203361),	-- Winding Slitherdrake: Finned Tip Tail (DM!)
 			i(203310),	-- Winding Slitherdrake: Grand Chin Thorn (DM!)
 			i(203299),	-- Winding Slitherdrake: Green and Bronze Armor (DM!)
@@ -1079,6 +1079,60 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(203336),	-- Winding Slitherdrake: Paired Horns (DM!)
 			i(203359),	-- Winding Slitherdrake: Shark Finned Tail (DM!)
 			i(203355),	-- Winding Slitherdrake: Yellow Scales (DM!)
+		}),
+	})),
+	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
+		header(HEADERS.Item, 194521, {	-- Cliffside Wylderdrake
+		}),
+		header(HEADERS.Item, 210412, {	-- Flourishing Whimsydrake
+			i(210482),	-- Flourishing Whimsydrake: Back Fins
+			i(210471),	-- Flourishing Whimsydrake: Body Armor
+			i(210478),	-- Flourishing Whimsydrake: Gold and Pink Armor
+			i(210476),	-- Flourishing Whimsydrake: Helmet
+			i(210486),	-- Flourishing Whimsydrake: Horns
+			i(210485),	-- Flourishing Whimsydrake: Long Snout
+			i(210487),	-- Flourishing Whimsydrake: Neck Fins
+			i(210479),	-- Flourishing Whimsydrake: Night Scales
+			i(210483),	-- Flourishing Whimsydrake: Ridged Brow
+			i(210480),	-- Flourishing Whimsydrake: Sunrise Scales
+			i(210481),	-- Flourishing Whimsydrake: Sunset Scales
+			i(210484),	-- Flourishing Whimsydrake: Underbite Snout
+		}),
+		header(HEADERS.Item, 206156, { -- Grotto Netherwing Drake (MOUNT!)
+			i(207760),	-- Grotto Netherwing Drake: Armor
+			i(207779),	-- Grotto Netherwing Drake: Barbed Tail
+			i(207776),	-- Grotto Netherwing Drake: Black Scales
+			i(207761),	-- Grotto Netherwing Drake: Chin Tendrils
+			i(207759),	-- Grotto Netherwing Drake: Cluster Spiked Back
+			i(207765),	-- Grotto Netherwing Drake: Cluster Spiked Crest
+			i(207778),	-- Grotto Netherwing Drake: Double Finned Tail
+			i(207774),	-- Grotto Netherwing Drake: Finned Jaw
+			i(207764),	-- Grotto Netherwing Drake: Head Spike
+			i(207770),	-- Grotto Netherwing Drake: Helm
+			i(207772),	-- Grotto Netherwing Drake: Long Horns
+			i(207769),	-- Grotto Netherwing Drake: Outcast Pattern
+			i(207757),	-- Grotto Netherwing Drake: Purple and Silver Armor
+			i(207771),	-- Grotto Netherwing Drake: Short Horns
+			i(207763),	-- Grotto Netherwing Drake: Single Horned Crest
+			i(207758),	-- Grotto Netherwing Drake: Spiked Back
+			i(207773),	-- Grotto Netherwing Drake: Spiked Jaw
+			i(207775),	-- Grotto Netherwing Drake: Teal Scales
+			i(207767),	-- Grotto Netherwing Drake: Tempestuous Pattern
+			i(207766),	-- Grotto Netherwing Drake: Triple Spiked Crest
+			i(207768),	-- Grotto Netherwing Drake: Volatile Pattern
+			i(207777),	-- Grotto Netherwing Drake: Yellow Scales
+		}),
+		header(HEADERS.Item, 194705, {	-- Highland Drake
+			i(210432),	-- Highland Drake: Winter Veil Armor
+		}),
+		header(HEADERS.Item, 194034, {	-- Renewed Proto-Drake
+			i(210537),	-- Renewed Proto-Drake: Embodiment of Shadowflame
+			i(210536),	-- Renewed Proto-Drake: Embodiment of the Blazing
+		}),
+		header(HEADERS.Item, 194549, {	-- Windborne Velocidrake
+		}),
+		header(HEADERS.Item, 204361, {	-- Winding Slitherdrake
+			pvp(i(210064)),	-- Winding Slitherdrake: Embodiment of the Verdant Gladiator
 		}),
 	})),
 })));

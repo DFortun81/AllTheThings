@@ -4076,8 +4076,38 @@ i(206174, 3582);	-- Blub
 ------------------
 i(208543, 4265);	-- Lil' Frostwing
 
-
-
+------------------
+-- PATCH 10.2.0 --
+------------------
+--- ITEM ---
+i(210553, 4289);	-- Dreamborne Scarab
+i(210555, 4290);	-- Dreamhoof
+i(210777, 4309);	-- Drowsey
+i(210651, 4299);	-- Dustite
+i(210690, 4306);	-- Elmer
+i(210692, 4308);	-- Juniper
+i(210567, 4292);	-- Memorie
+i(210570, 4295);	-- Napps
+i(210505, 4287);	-- Reverie
+i(210648, 4298);	-- Seedle
+i(210689, 4305);	-- Snoots
+i(210571, 4296);	-- Snoozles
+i(210785, 4310);	-- Snorr
+i(210652, 4300);	-- Somnolet
+i(210691, 4307);	-- Spruce
+--- NPC ---
+n(211110, 4275);	-- Flooftalon
+n(211177, 4276);	-- Fol'ya Pup
+n(211288, 4278);	-- Leyhart
+n(211302, 4280);	-- Pewling
+n(211182, 4277);	-- Sapnibbler
+n(211295, 4279);	-- Slumbertooth
+--- UNSORTED ---
+i(210409, 4286);	-- Aura
+i(210522, 4288);	-- Blueloo
+i(210556, 4291);	-- Ivy
+i(210633, 4297);	-- Kal'andu
+i(210347, 4285);	-- Sergeant Quackers
 
 -----------------
 -- CLASSIC WOW --

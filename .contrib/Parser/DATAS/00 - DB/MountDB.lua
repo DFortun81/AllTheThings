@@ -1676,5 +1676,20 @@ i(0, 419567);		-- Ginormous Grrloc
 ------------------
 -- PATCH 10.2.0 --
 ------------------
+i(209947, 423871);	-- Blossoming Dreamstag
+i(210058, 424479);	-- Evening Sun Dreamsaber
 i(210412, 425338);	-- Flourishing Whimsydrake
+i(209951, 423891);	-- Lunar Dreamstag
+i(210057, 424482);	-- Morning Flourish Dreamsaber
+i(209950, 423877);	-- Rekindled Dreamstag
+i(210775, 427043);	-- Snowfluff Dreamtalon
+i(210769, 426955);	-- Springtide Dreamtalon
+i(209949, 423873);	-- Suntouched Dreamstag
 i(209060, 422486);	-- Verdant Armoredon
+i(210345, 425416);	-- Verdant Gladiator's Slitherdrake
+i(210070, 424534);	-- Vicious Moonbeast
+i(210069, 424535);	-- Vicious Moonbeast
+--- Unsorted ---
+i(210774, 427041);	-- Ochre Dreamtalon
+i(210060, 424474);	-- Shadow Dusk Dreamsaber
+i(210059, 424476);	-- Winter Night Dreamsaber

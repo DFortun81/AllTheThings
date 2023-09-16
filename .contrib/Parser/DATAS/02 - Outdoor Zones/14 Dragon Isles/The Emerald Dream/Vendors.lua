@@ -73,10 +73,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210676, {	-- Elderwood Cane
 						["cost"] = { { "c", DRAGON_SUPPLIES, 300 } },
 					}),
-					i(209951, {	-- Reins of the Lunar Dreamstag (MOUNT!)
+					i(209951, {	-- Lunar Dreamstag (MOUNT!)
 						["cost"] = { { "c", DRAGON_SUPPLIES, 1200 } },
 					}),
-					i(209949, {	-- Reins of the Suntouched Dreamstag (MOUNT!)
+					i(209949, {	-- Suntouched Dreamstag (MOUNT!)
 						["cost"] = { { "c", DRAGON_SUPPLIES, 1200 } },
 					}),
 					i(210479, {	-- Flourishing Whimsydrake: Night Scales (DM!)
@@ -275,22 +275,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210648, {	-- Seedle (PET!)
 						["cost"] = { { "c", 2651, 800 } },
 					}),
-					i(209950, {	-- Reins of the Rekindled Dreamstag (MOUNT!)
+					i(209950, {	-- Rekindled Dreamstag (MOUNT!)
 						["cost"] = { { "c", 2651, 2500 } },
 					}),
-					i(209947, {	-- Reins of the Blossoming Dreamstag (MOUNT!)
+					i(209947, {	-- Blossoming Dreamstag (MOUNT!)
 						["cost"] = { { "c", 2651, 2500 } },
 					}),
-					i(210775, {	-- Reins of the Snowfluff Dreamtalon (MOUNT!)
+					i(210775, {	-- Snowfluff Dreamtalon (MOUNT!)
 						["cost"] = { { "c", 2651, 2500 } },
 					}),
-					i(210769, {	-- Reins of the Springtide Dreamtalon (MOUNT!)
+					i(210769, {	-- Springtide Dreamtalon (MOUNT!)
 						["cost"] = { { "c", 2651, 2500 } },
 					}),
-					i(210057, {	-- Reins of the Morning Flourish Dreamsaber (MOUNT!)
+					i(210057, {	-- Morning Flourish Dreamsaber (MOUNT!)
 						["cost"] = { { "c", 2651, 2500 } },
 					}),
-					i(210058, {	-- Reins of the Evening Sun Dreamsaber (MOUNT!)
+					i(210058, {	-- Evening Sun Dreamsaber (MOUNT!)
 						["cost"] = { { "c", 2651, 2500 } },
 					}),
 				},

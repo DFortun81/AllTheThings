@@ -577,6 +577,18 @@ root(ROOTS.Unsorted, {
 	}),
 	tier(DF_TIER, {
 		tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+			filter(BATTLE_PETS, {
+				i(210409),	-- Aura (PET!)
+				i(210522),	-- Blueloo (PET!)
+				i(210556),	-- Ivy (PET!)
+				i(210633),	-- Kal'andu (PET!)
+				i(210347),	-- Sergeant Quackers (PET!)
+			}),
+			filter(MOUNTS, {
+				i(210774),	-- Ochre Dreamtalon (MOUNT!)
+				i(210060),	-- Shadow Dusk Dreamsaber (MOUNT!)
+				i(210059),	-- Winter Night Dreamsaber (MOUNT!)
+			}),
 			i(192717),	-- Animated Splinter
 			i(202182),	-- Acid Rifle
 			i(202186),	-- Boom Weed
@@ -808,28 +820,6 @@ root(ROOTS.Unsorted, {
 			i(207480),	-- Venerated Smoldering Dreamseed
 			i(207481),	-- Zenith Smoldering Dreamseed
 			i(207632),	-- Dream-Attuned Crystal
-			i(207757),	-- Grotto Netherwing Drake: Purple and Silver Armor
-			i(207758),	-- Grotto Netherwing Drake: Spiked Back
-			i(207759),	-- Grotto Netherwing Drake: Cluster Spiked Back
-			i(207760),	-- Grotto Netherwing Drake: Armor
-			i(207761),	-- Grotto Netherwing Drake: Chin Tendrils
-			i(207763),	-- Grotto Netherwing Drake: Single Horned Crest
-			i(207764),	-- Grotto Netherwing Drake: Head Spike
-			i(207765),	-- Grotto Netherwing Drake: Cluster Spiked Crest
-			i(207766),	-- Grotto Netherwing Drake: Triple Spiked Crest
-			i(207767),	-- Grotto Netherwing Drake: Tempestuous Pattern
-			i(207768),	-- Grotto Netherwing Drake: Volatile Pattern
-			i(207769),	-- Grotto Netherwing Drake: Outcast Pattern
-			i(207770),	-- Grotto Netherwing Drake: Helm
-			i(207771),	-- Grotto Netherwing Drake: Short Horns
-			i(207772),	-- Grotto Netherwing Drake: Long Horns
-			i(207773),	-- Grotto Netherwing Drake: Spiked Jaw
-			i(207774),	-- Grotto Netherwing Drake: Finned Jaw
-			i(207775),	-- Grotto Netherwing Drake: Teal Scales
-			i(207776),	-- Grotto Netherwing Drake: Black Scales
-			i(207777),	-- Grotto Netherwing Drake: Yellow Scales
-			i(207778),	-- Grotto Netherwing Drake: Double Finned Tail
-			i(207779),	-- Grotto Netherwing Drake: Barbed Tail
 			i(207780),	-- Bow
 			i(207781),	-- 1H Dagger AGI 1
 			i(207782),	-- 1H Dagger INT
@@ -1588,13 +1578,10 @@ root(ROOTS.Unsorted, {
 			i(210059),	-- [PH] Blue Dreamsaber
 			i(210060),	-- [PH] Purple Dreamsaber
 			i(210061),	-- [PH] Mythic Raid Fire Owl
-			i(210064),	-- Winding Slitherdrake: Embodiment of the Verdant Gladiator
 			i(210065),	-- Sky-Captain's Formal Hat
 			i(210066),	-- Sky-Captain's Formal Boots
 			i(210067),	-- Sky-Captain's Formal Coat
 			i(210068),	-- Sky-Captain's Formal Pants
-			i(210069),	-- Vicious Moonbeast
-			i(210070),	-- Vicious Moonbeast
 			i(210071),	-- Sky-Captain's Formal Cape
 			i(210072),	-- Sky-Captain's Masquerade Hat
 			i(210073),	-- Sky-Captain's Masquerade Boots
@@ -1726,9 +1713,7 @@ root(ROOTS.Unsorted, {
 			i(210324),	-- Medal of Honor
 			i(210325),	-- Medal of Honor
 			i(210326),	-- Medal of Conquest
-			i(210345),	-- Verdant Gladiator's Slitherdrake
 			i(210346),	-- Self-Baking Herb Based Cookies
-			i(210347),	-- Sergeant Quackers
 			i(210348),	-- Winter Warden's Sabatons
 			i(210349),	-- Cold Conservator's Gown
 			i(210350),	-- Winter Warden's Chestplate
@@ -1788,7 +1773,6 @@ root(ROOTS.Unsorted, {
 			i(210406),	-- Frigid Forager's Claymore
 			i(210407),	-- Frigid Forager's Cape
 			i(210408),	-- Winter Warden's Cloak
-			i(210409),	-- Aura
 			i(210411),	-- Fast Growing Seed
 			i(210414),	-- Forest Lord's Antlers
 			i(210415),	-- Darnassian Moonsilver Spaulders
@@ -1800,7 +1784,7 @@ root(ROOTS.Unsorted, {
 			i(210423),	-- Dream Wardens Insignia
 			i(210424),	-- Darnassian Tabard
 			i(210430),	-- Twisted Dreaming Essence
-			i(210432),	-- Highland Drake: Winter Veil Armor
+
 			i(210433),	-- Visage of Aurostor
 			i(210436),	-- Nature's Cradle
 			i(210438),	-- Wisp Dust
@@ -1826,22 +1810,10 @@ root(ROOTS.Unsorted, {
 			i(210464),	-- Amirdrassil Defender's Shield
 			i(210468),	-- Emerald Blossom Dreamstone
 			i(210470),	-- Echoed Ephemera
-			i(210471),	-- Flourishing Whimsydrake: Body Armor
 			i(210472),	-- Igira's Cruel Nightmare
 			i(210473),	-- Larodar's Fiery Reverie
 			i(210474),	-- Tindral's Fowl Fantasia
 			i(210475),	-- Smolderon's Delusions of Grandeur
-			i(210476),	-- Flourishing Whimsydrake: Helmet
-			i(210478),	-- Flourishing Whimsydrake: Gold and Pink Armor
-			i(210479),	-- Flourishing Whimsydrake: Night Scales
-			i(210480),	-- Flourishing Whimsydrake: Sunrise Scales
-			i(210481),	-- Flourishing Whimsydrake: Sunset Scales
-			i(210482),	-- Flourishing Whimsydrake: Back Fins
-			i(210483),	-- Flourishing Whimsydrake: Ridged Brow
-			i(210484),	-- Flourishing Whimsydrake: Underbite Snout
-			i(210485),	-- Flourishing Whimsydrake: Long Snout
-			i(210486),	-- Flourishing Whimsydrake: Horns
-			i(210487),	-- Flourishing Whimsydrake: Neck Fins
 			i(210490),	-- Technique: Vantus Rune: Amirdrassil, the Dream's Hope
 			i(210491),	-- Technique: Winding Slitherdrake: Hairy Chin
 			i(210492),	-- Technique: Grotto Netherwing Drake: Chin Tendrils
@@ -1871,10 +1843,7 @@ root(ROOTS.Unsorted, {
 			i(210519),	-- Verdant Gladiator's Pulverizer
 			i(210520),	-- Verdant Gladiator's Sword
 			i(210521),	-- Verdant Gladiator's Shotel
-			i(210522),	-- Blueloo
 			i(210535),	-- Mark of the Slumbering Somnowl
-			i(210536),	-- Renewed Proto-Drake: Embodiment of the Blazing
-			i(210537),	-- Renewed Proto-Drake: Embodiment of Shadowflame
 			i(210540),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leather - HEAD 2
 			i(210541),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - HEAD 2
 			i(210542),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - FEET 3
@@ -1888,12 +1857,10 @@ root(ROOTS.Unsorted, {
 			i(210551),	-- Set Keystone Map: Dawn of the Infinite: Murozond's Rise
 			i(210552),	-- Cowl of the Wolf Ancient
 			i(210554),	-- Blazing Feather
-			i(210556),	-- Ivy
 			i(210565),	-- Soft Somnowl Feather
 			i(210566),	-- Somnowl Feather Strand
 			i(210572),	-- Verdant Equipment Chest
 			i(210595),	-- Dreaming Equipment Chest
-			i(210633),	-- Kal'andu
 			i(210644),	-- Plans: Flourishing Dream Helm
 			i(210645),	-- Feather of Friends
 			i(210646),	-- Flourishing Dream Helm
@@ -1931,14 +1898,6 @@ root(ROOTS.Unsorted, {
 			i(210726),	-- Ruby Flightstone
 			-----------------
 			i(207175),	-- Coiled Serpent Idol
-			i(209947),	-- Reins of the Blossoming Dreamstag
-			i(209949),	-- Reins of the Suntouched Dreamstag
-			i(209950),	-- Reins of the Rekindled Dreamstag
-			i(209951),	-- Reins of the Lunar Dreamstag
-			i(210057),	-- Reins of the Morning Flourish Dreamsaber
-			i(210058),	-- Reins of the Evening Sun Dreamsaber
-			i(210059),	-- Reins of the Winter Night Dreamsaber
-			i(210060),	-- Reins of the Shadow Dusk Dreamsaber
 			i(210214),	-- Ouroboreal Necklet
 			i(210727),	-- Pollenfused Bristlebruin Fur Sample
 			i(210728),	-- Moon-Blessed Claw
@@ -1961,16 +1920,11 @@ root(ROOTS.Unsorted, {
 			i(210766),	-- Silent Mark of the Umbraclaw
 			i(210767),	-- Silent Mark of the Dreamstag
 			i(210768),	-- Bouquet of Aspect's Dreaming Crests
-			i(210769),	-- Reins of the Springtide Dreamtalon
 			i(210770),	-- Satchel of Drake's Dreaming Crests
-			i(210774),	-- Reins of the Ochre Dreamtalon
-			i(210775),	-- Reins of the Snowfluff Dreamtalon
 			i(210776),	-- Lesser Dream Infusion
-			i(210777),	-- Drowsey
 			i(210782),	-- Slumbering Moonfish
 			i(210783),	-- Awakening Sunfish
 			i(210784),	-- Xena, the Whimsical Whiskerfish
-			i(210785),	-- Snorr
 			i(210786),	-- Dreaming Whiskerfish
 			i(210787),	-- Elegant Green Dragon Tabard
 			i(210788),	-- Elegant Green Dragon Shawl
@@ -2129,7 +2083,6 @@ root(ROOTS.Unsorted, {
 			i(208151),	-- Tobias' Leash
 			i(208203),	-- Brilliant Star
 			i(208206),	-- Teleportation Crystal
-			i(208658),	-- Mirror of Humility
 			i(208662),	-- Lightforged Seeker
 			i(208677),	-- Eredath Crystal Hammer
 			i(208683),	-- Arinor Ritual Baton

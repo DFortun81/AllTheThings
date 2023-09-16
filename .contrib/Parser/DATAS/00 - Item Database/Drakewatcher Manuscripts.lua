@@ -70,6 +70,7 @@ i(197125, 69326);	-- Highland Drake: Coiled Horns
 i(197100, 69301);	-- Highland Drake: Crested Brow
 i(197128, 69329);	-- Highland Drake: Curled Back Horns
 i(197116, 69317);	-- Highland Drake: Ears
+i(201792, 72371);	-- Highland Drake: Embodiment of the Crimson Gladiator
 i(197098, 69299);	-- Highland Drake: Finned Back
 i(197106, 69307);	-- Highland Drake: Finned Head
 i(197090, 69290);	-- Highland Drake: Gold and Black Armor
@@ -126,6 +127,7 @@ i(197375, 69576);	-- Renewed Proto-Drake: Curled Horns
 i(197380, 69581);	-- Renewed Proto-Drake: Curved Horns
 i(197366, 69567);	-- Renewed Proto-Drake: Dual Horned Crest
 i(197376, 69577);	-- Renewed Proto-Drake: Ears
+i(201790, 72367);	-- Renewed Proto-Drake: Embodiment of the Storm-Eater
 i(197365, 69566);	-- Renewed Proto-Drake: Finned Crest
 i(197388, 69589);	-- Renewed Proto-Drake: Finned Jaw
 i(197404, 69605);	-- Renewed Proto-Drake: Finned Tail
@@ -210,9 +212,6 @@ i(197609, 69813);	-- Windborne Velocidrake: White Horns
 i(197616, 69820);	-- Windborne Velocidrake: White Scales
 i(197634, 69845);	-- Windborne Velocidrake: Windswept Pattern
 i(197610, 69814);	-- Windborne Velocidrake: Yellow Horns
--- Special --
-i(201792, 72371);	-- Highland Drake: Embodiment of the Crimson Gladiator
-i(201790, 72367);	-- Renewed Proto-Drake: Embodiment of the Storm-Eater
 -- NYI --
 i(194837, 0);		-- Highland Drake Manuscript: Black Hair
 i(194838, 0);		-- Highland Drake Manuscript: Spined Head
@@ -271,6 +270,8 @@ i(196978, 69178);	-- Cliffside Wylderdrake: Small Head Spikes
 i(197021, 69221);	-- Cliffside Wylderdrake: Spiked Club Tail
 i(196997, 69197);	-- Cliffside Wylderdrake: Split Horns
 i(197156, 69357);	-- Highland Drake: Bronze and Green Armor
+i(205876, 75967);	-- Highland Drake: Embodiment of the Hellforged [Mythic]
+i(206955, 75967);	-- Highland Drake: Embodiment of the Hellforged [LFR, Normal, Heroic]
 i(197120, 69321);	-- Highland Drake: Ornate Helm
 i(197109, 69310);	-- Highland Drake: Spiked Head
 i(197134, 69335);	-- Highland Drake: Spiked Legs
@@ -299,6 +300,7 @@ i(203346, 73837);	-- Winding Slitherdrake: Curled Nose
 i(203314, 73802);	-- Winding Slitherdrake: Curved Chin Horn
 i(203335, 73825);	-- Winding Slitherdrake: Curved Horns
 i(203320, 73808);	-- Winding Slitherdrake: Ears
+i(205865, 75941);	-- Winding Slitherdrake: Embodiment of the Obsidian Gladiator
 i(203361, 73853);	-- Winding Slitherdrake: Finned Tip Tail
 i(203310, 73798);	-- Winding Slitherdrake: Grand Chin Thorn
 i(203299, 73787);	-- Winding Slitherdrake: Green and Bronze Armor
@@ -344,10 +346,6 @@ i(203324, 73812);	-- Winding Slitherdrake: White Hair
 i(203328, 73816);	-- Winding Slitherdrake: White Horns
 i(203354, 73845);	-- Winding Slitherdrake: White Scales
 i(203304, 73792);	-- Winding Slitherdrake: Yellow and Silver Armor
--- Special --
-i(205876, 75967);	-- Highland Drake: Embodiment of the Hellforged [Mythic]
-i(206955, 75967);	-- Highland Drake: Embodiment of the Hellforged [LFR, Normal, Heroic]
-i(205865, 75941);	-- Winding Slitherdrake: Embodiment of the Obsidian Gladiator
 
 ------------------
 -- PATCH 10.1.5 --
@@ -381,3 +379,45 @@ i(208859, 77876);	-- Cliffside Wylderdrake: Day of the Dead Armor
 i(208858, 77875);	-- Highland Drake: Pirates' Day Armor
 i(208742, 77774);	-- Renewed Proto-Drake: Brewfest Armor
 i(208680, 77725);	-- Windborne Velocidrake: Hallow's End Armor
+
+------------------
+-- PATCH 10.2.0 --
+------------------
+i(210432, 78371);	-- Highland Drake: Winter Veil Armor
+i(210482, 78400);	-- Flourishing Whimsydrake: Back Fins
+i(210471, 78401);	-- Flourishing Whimsydrake: Body Armor
+i(210478, 78399);	-- Flourishing Whimsydrake: Gold and Pink Armor
+i(210476, 78402);	-- Flourishing Whimsydrake: Helmet
+i(210486, 78406);	-- Flourishing Whimsydrake: Horns
+i(210485, 78405);	-- Flourishing Whimsydrake: Long Snout
+i(210487, 78407);	-- Flourishing Whimsydrake: Neck Fins
+i(210479, 78408);	-- Flourishing Whimsydrake: Night Scales
+i(210483, 78403);	-- Flourishing Whimsydrake: Ridged Brow
+i(210480, 78409);	-- Flourishing Whimsydrake: Sunrise Scales
+i(210481, 78410);	-- Flourishing Whimsydrake: Sunset Scales
+i(210484, 78404);	-- Flourishing Whimsydrake: Underbite Snout
+i(207760, 77131);	-- Grotto Netherwing Drake: Armor
+i(207779, 77150);	-- Grotto Netherwing Drake: Barbed Tail
+i(207776, 77147);	-- Grotto Netherwing Drake: Black Scales
+i(207761, 77132);	-- Grotto Netherwing Drake: Chin Tendrils
+i(207759, 77130);	-- Grotto Netherwing Drake: Cluster Spiked Back
+i(207765, 77136);	-- Grotto Netherwing Drake: Cluster Spiked Crest
+i(207778, 77149);	-- Grotto Netherwing Drake: Double Finned Tail
+i(207774, 77145);	-- Grotto Netherwing Drake: Finned Jaw
+i(207764, 77135);	-- Grotto Netherwing Drake: Head Spike
+i(207770, 77141);	-- Grotto Netherwing Drake: Helm
+i(207772, 77143);	-- Grotto Netherwing Drake: Long Horns
+i(207769, 77140);	-- Grotto Netherwing Drake: Outcast Pattern
+i(207757, 77128);	-- Grotto Netherwing Drake: Purple and Silver Armor
+i(207771, 77142);	-- Grotto Netherwing Drake: Short Horns
+i(207763, 77134);	-- Grotto Netherwing Drake: Single Horned Crest
+i(207758, 77129);	-- Grotto Netherwing Drake: Spiked Back
+i(207773, 77144);	-- Grotto Netherwing Drake: Spiked Jaw
+i(207775, 77146);	-- Grotto Netherwing Drake: Teal Scales
+i(207767, 77138);	-- Grotto Netherwing Drake: Tempestuous Pattern
+i(207766, 77137);	-- Grotto Netherwing Drake: Triple Spiked Crest
+i(207768, 77139);	-- Grotto Netherwing Drake: Volatile Pattern
+i(207777, 77148);	-- Grotto Netherwing Drake: Yellow Scales
+i(210537, 78453);	-- Renewed Proto-Drake: Embodiment of Shadowflame
+i(210536, 78451);	-- Renewed Proto-Drake: Embodiment of the Blazing
+i(210064, 72371);	-- Winding Slitherdrake: Embodiment of the Verdant Gladiator
