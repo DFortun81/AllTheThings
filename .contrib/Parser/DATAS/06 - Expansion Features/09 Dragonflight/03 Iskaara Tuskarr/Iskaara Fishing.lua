@@ -16,27 +16,27 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			n(ACHIEVEMENTS, {
 				ach(16531),	-- A Whole Heap of Lunkers
 				ach(16322, {	-- Best in Slot
-					crit(1, {	-- Harpoon handle
+					crit(55019, {	-- Harpoon handle
 						["_quests"] = { 70795 },	-- Reinforced Irontree Harpoon Handle
 					}),
-					crit(2, {	-- Harpoon head
+					crit(55076, {	-- Harpoon head
 						["_quests"] = { 70797 },	-- Jagged Serevite Harpoon Head
 					}),
-					crit(3, {	-- Harpoon rope
+					crit(55024, {	-- Harpoon rope
 						["_quests"] = { 70799 },	-- Braided Seavine Harpoon Rope
 					}),
-					crit(4, {	-- Fishing net weights
+					crit(55021, {	-- Fishing net weights
 						["_quests"] = { 70801 },	-- Dense Draconium Net Weights
 					}),
-					crit(5, {	-- fishing net nots
+					crit(55022, {	-- fishing net nots
 						["_quests"] = { 70803 },	-- Double Imbu Knot
 					}),
 				}),
 				ach(16321, {	-- Cutting Tusk Equipment
-					crit(1, {	-- Iskaaran Harpoon
+					crit(55023, {	-- Iskaaran Harpoon
 						["_quests"] = { 70792 },	-- Iskaaran Harpoon
 					}),
-					crit(2, {	-- Iskaaran Fishing Net
+					crit(55020, {	-- Iskaaran Fishing Net
 						["_quests"] = { 70793 },	-- Iskaaran Fishing Net
 					}),
 				}),

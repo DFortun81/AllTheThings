@@ -53,30 +53,30 @@ root(ROOTS.PVP, pvp(n(-10058, {	-- World
 	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(16599, {	-- A Champion's Pursuit
-				crit(1, {	-- Krolkoth the Mountain
+				crit(55944, {	-- Krolkoth the Mountain
 					["_quests"] = { 72008 },	-- Overcoming a Mountain: Krolkoth
 				}),
-				crit(2, {	-- Tarolekk the Stomper
+				crit(55957, {	-- Tarolekk the Stomper
 					["_quests"] = { 72058 },	-- What Hoof We Here: Tarolekk
 				}),
-				crit(3, {	-- Nezascar the Sightless
+				crit(55956, {	-- Nezascar the Sightless
 					["_quests"] = { 72019 },	-- Seeing through the Enemy: Nezascar
 				}),
-				crit(4, {	-- Rhuzast the Tempest
+				crit(55957, {	-- Rhuzast the Tempest
 					["_quests"] = { 71225 },	-- Blown Through Wind: Rhuzast
 				}),
 			}),
 			ach(16590, {	-- A Champion's Tour: Dragon Isles
-				crit(1, {	-- How to Train a Proto-Drake
+				crit(56021, {	-- How to Train a Proto-Drake
 					["_quests"] = { 67005 },
 				}),
-				crit(2, {	-- Quacks and Attacks
+				crit(55945, {	-- Quacks and Attacks
 					["_quests"] = { 70209 },
 				}),
-				crit(3, {	-- Wild Arcana
+				crit(55946, {	-- Wild Arcana
 					["_quests"] = { 70439 },
 				}),
-				crit(4, {	-- Extermination
+				crit(55947, {	-- Extermination
 					["_quests"] = { 69949 },
 				}),
 			}),
@@ -101,16 +101,16 @@ root(ROOTS.PVP, pvp(n(-10058, {	-- World
 				["cost"] = {{"c",2123,750}},	-- 750 Bloody Token
 			}),
 			ach(16603, {	-- Bounty Hunter
-				crit(1, {	-- The Waking Shores
+				crit(55967, {	-- The Waking Shores
 					["maps"] = { THE_WAKING_SHORES },
 				}),
-				crit(2, {	-- Ohn'ahran Plains
+				crit(55968, {	-- Ohn'ahran Plains
 					["maps"] = { OHNAHRAN_PLAINS },
 				}),
-				crit(3, {	-- The Azure Span
+				crit(55970, {	-- The Azure Span
 					["maps"] = { THE_AZURE_SPAN },
 				}),
-				crit(4, {	-- Thaldraszus
+				crit(55969, {	-- Thaldraszus
 					["maps"] = { THALDRASZUS },
 				}),
 			}),
@@ -136,16 +136,16 @@ root(ROOTS.PVP, pvp(n(-10058, {	-- World
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 			}),
 			ach(16589, {	-- Malicia's Challenge
-				crit(1, {	-- How to Train a Proto-Drake
+				crit(56021, {	-- How to Train a Proto-Drake
 					["_quests"] = { 67005 },
 				}),
-				crit(2, {	-- Quacks and Attacks
+				crit(55945, {	-- Quacks and Attacks
 					["_quests"] = { 70209 },
 				}),
-				crit(3, {	-- Wild Arcana
+				crit(55946, {	-- Wild Arcana
 					["_quests"] = { 70439 },
 				}),
-				crit(4, {	-- Extermination
+				crit(55947, {	-- Extermination
 					["_quests"] = { 69949 },
 				}),
 			}),
@@ -153,16 +153,16 @@ root(ROOTS.PVP, pvp(n(-10058, {	-- World
 				["cost"] = {{"c",2123,1500}},	-- 1500 Bloody Token
 			}),
 			ach(16611, {	-- Resource Scavanger
-				crit(1, {	-- The Waking Shores
+				crit(55990, {	-- The Waking Shores
 					["maps"] = { THE_WAKING_SHORES },
 				}),
-				crit(2, {	-- Ohn'ahran Plains
+				crit(55991, {	-- Ohn'ahran Plains
 					["maps"] = { OHNAHRAN_PLAINS },
 				}),
-				crit(3, {	-- The Azure Span
+				crit(55992, {	-- The Azure Span
 					["maps"] = { THE_AZURE_SPAN },
 				}),
-				crit(4, {	-- Thaldraszus
+				crit(55993, {	-- Thaldraszus
 					["maps"] = { THALDRASZUS },
 				}),
 			}),

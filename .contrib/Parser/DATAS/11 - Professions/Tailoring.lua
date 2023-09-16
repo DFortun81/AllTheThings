@@ -188,11 +188,11 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 	tier(CATA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18815, {	-- Speed Dreamin'
-				crit(1),	-- Dream of Skywall
-				crit(2),	-- Dream of Deepholm
-				crit(3),	-- Dream of Hyjal
-				crit(4),	-- Dream of Ragnaros
-				crit(5),	-- Dream of Azshara
+				crit(61333),	-- Dream of Skywall
+				crit(61334),	-- Dream of Deepholm
+				crit(61335),	-- Dream of Hyjal
+				crit(61336),	-- Dream of Ragnaros
+				crit(61337),	-- Dream of Azshara
 			}),
 		})),
 	})),

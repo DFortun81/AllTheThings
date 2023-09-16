@@ -5,33 +5,33 @@
 root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 	achcat(ACHIEVEMENT_CATEGORY_DRAENOR_EXP, {
 		ach(9502, {		-- Draenor Cuisine
-			crit(1),		-- Blackrock Barbecue
-			crit(2),		-- Blackrock Ham
-			crit(3),		-- Braised Riverbeast
-			crit(4),		-- Calamari Crepes
-			crit(5),		-- Clefthoof Sausages
-			crit(6),		-- Fat Sleeper Cakes
-			crit(7),		-- Fiery Calamari
-			crit(8),		-- Frosty Stew
-			crit(9),		-- Gorgrond Chowder
-			crit(10),		-- Grilled Gulper
-			crit(11),		-- Grilled Saberfish
-			crit(12),		-- Hearty Elekk Steak
-			crit(13),		-- Pan-Seared Talbuk
-			crit(14),		-- Rylak Crepes
-			crit(15),		-- Saberfish Broth
-			crit(16),		-- Skulker Chowder
-			crit(17),		-- Sleeper Surprise
-			crit(18),		-- Steamed Scorpion
-			crit(19),		-- Sturgeon Stew
-			crit(20),		-- Talador Surf and Turf
+			crit(25933),		-- Blackrock Barbecue
+			crit(25934),		-- Blackrock Ham
+			crit(25935),		-- Braised Riverbeast
+			crit(25936),		-- Calamari Crepes
+			crit(25937),		-- Clefthoof Sausages
+			crit(25938),		-- Fat Sleeper Cakes
+			crit(25939),		-- Fiery Calamari
+			crit(25940),		-- Frosty Stew
+			crit(25941),		-- Gorgrond Chowder
+			crit(25942),		-- Grilled Gulper
+			crit(25943),		-- Grilled Saberfish
+			crit(25944),		-- Hearty Elekk Steak
+			crit(25945),		-- Pan-Seared Talbuk
+			crit(25946),		-- Rylak Crepes
+			crit(25947),		-- Saberfish Broth
+			crit(25948),		-- Skulker Chowder
+			crit(25949),		-- Sleeper Surprise
+			crit(25950),		-- Steamed Scorpion
+			crit(25951),		-- Sturgeon Stew
+			crit(25952),		-- Talador Surf and Turf
 		}),
 		ach(10018, {	-- Draenor Pathfinder
 			i(128706),		-- Soaring Skyterror (MOUNT!)
-			crit(1),		-- Draenor Explorer
+			crit(28066),		-- Draenor Explorer
 			crit(2),		-- Loremaster of Draenor
 			crit(3),		-- Securing Draenor
-			crit(4),		-- Master Treasure Hunter
+			crit(28977),		-- Master Treasure Hunter
 			crit(5),		-- Tanaan Diplomat
 		}),
 		ach(9728, {		-- Grand Treasure Hunter

@@ -275,10 +275,10 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["races"] = HORDE_ONLY,
 	}),
 	pvp(ach(14519, bubbleDownSelf({["timeline"] = ADDED_9_0_2_LAUNCH },{	-- Covenant Combat
-		crit(1),	-- Venthyr
-		crit(2),	-- Night Fae
-		crit(3),	-- Necrolord
-		crit(4),	-- Kyrian
+		crit(49222),	-- Venthyr
+		crit(49223),	-- Night Fae
+		crit(49224),	-- Necrolord
+		crit(49225),	-- Kyrian
 	}))),
 	ach(227, {	-- Damage Control
 		["timeline"] = { "added 3.0.1" },
@@ -553,10 +553,10 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		-- #if NOT ANYCLASSIC
 		["groups"] = {
 			-- TODO: Maybe make this appear in the mini list?
-			crit(1),		-- Thunder Bluff
-			crit(2),		-- Silvermoon City
-			crit(3),		-- Orgrimmar
-			crit(4),		-- Undercity
+			crit(6633),		-- Thunder Bluff
+			crit(6634),		-- Silvermoon City
+			crit(6635),		-- Orgrimmar
+			crit(6636),		-- Undercity
 		},
 		-- #endif
 	}),
@@ -566,10 +566,10 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		-- #if NOT ANYCLASSIC
 		["groups"] = {
 			-- TODO: Maybe make this appear in the mini list?
-			crit(1),		-- Ironforge
-			crit(2),		-- Darnassus
-			crit(3),		-- The Exodar
-			crit(4),		-- Stormwind City
+			crit(6637),		-- Ironforge
+			crit(6638),		-- Darnassus
+			crit(6639),		-- The Exodar
+			crit(6640),		-- Stormwind City
 		},
 		-- #endif
 	}),

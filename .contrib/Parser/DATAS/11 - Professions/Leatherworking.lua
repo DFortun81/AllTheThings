@@ -9,58 +9,58 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 		ach(18882),	-- A Test of Scale II
 		ach(18881),	-- A Test of Scale I
 		ach(18793, {	-- Always Be Camping
-			crit(1, {	-- Place a Gnoll Tent
+			crit(61200, {	-- Place a Gnoll Tent
 				["provider"] = { "i", 193476 },	-- Place a Gnoll Tent
 			}),
-			crit(2, {	-- Cured Rugged Hide
+			crit(61203, {	-- Cured Rugged Hide
 				["provider"] = { "i", 15407 },	-- Cured Rugged Hide
 			}),
-			crit(3, {	-- Stitch a Magnificent Hide Pack
+			crit(61204, {	-- Stitch a Magnificent Hide Pack
 				["provider"] = { "i", 95536 },	-- Stitch a Magnificent Hide Pack
 			}),
-			crit(4, {	-- 	Eat Dirge's Kickin' Chimaerok Chops
+			crit(61207, {	-- 	Eat Dirge's Kickin' Chimaerok Chops
 				["provider"] = { "i", 21023 },	-- 	Eat Dirge's Kickin' Chimaerok Chops
 			}),
-			crit(5),	-- Fish in any school of fish
-			crit(6, {	-- Take a S.E.L.F.I.E.
+			crit(61205),	-- Fish in any school of fish
+			crit(61206, {	-- Take a S.E.L.F.I.E.
 				["provider"] = { "i", 122674 },	-- S.E.L.F.I.E. Camera MkII
 			}),
 		}),
 		ach(18900, {	-- Budget Bard
-			crit(1, {	-- Drums of Panic
+			crit(61660, {	-- Drums of Panic
 				["provider"] = { "i", 29532 },	-- Drums of Panic
 			}),
-			crit(2, {	-- Drums of Restoration
+			crit(61661, {	-- Drums of Restoration
 				["provider"] = { "i", 29531 },	-- Drums of Restoration
 			}),
-			crit(3, {	-- Drums of War
+			crit(61662, {	-- Drums of War
 				["provider"] = { "i", 29528 },	-- Drums of War
 			}),
-			crit(4, {	-- Drums of Battle
+			crit(61663, {	-- Drums of Battle
 				["provider"] = { "i", 29529 },	-- Drums of Battle
 			}),
-			crit(5, {	-- Drums of Speed
+			crit(61664, {	-- Drums of Speed
 				["provider"] = { "i", 29530 },	-- Drums of Speed
 			}),
-			crit(6, {	-- Drums of Forgotten Kings
+			crit(61665, {	-- Drums of Forgotten Kings
 				["provider"] = { "i", 49633 },	-- Drums of Forgotten Kings
 			}),
-			crit(7, {	-- Drums of the Wild
+			crit(61666, {	-- Drums of the Wild
 				["provider"] = { "i", 49634 },	-- Drums of the Wild
 			}),
-			crit(8, {	-- Drums of Rage
+			crit(61667, {	-- Drums of Rage
 				["provider"] = { "i", 102351 },	-- Drums of Rage
 			}),
-			crit(9, {	-- Drums of Fury
+			crit(61668, {	-- Drums of Fury
 				["provider"] = { "i", 120257 },	-- Drums of Fury
 			}),
 			crit(10, {	-- Drums of the Mountain
 				["provider"] = { "i", 142406 },	-- Drums of the Mountain
 			}),
-			crit(11, {	-- Drums of the Maelstrom
+			crit(61672, {	-- Drums of the Maelstrom
 				["provider"] = { "i", 154167 },	-- Drums of the Maelstrom
 			}),
-			crit(12, {	-- Drums of Deathly Ferocity
+			crit(61673, {	-- Drums of Deathly Ferocity
 				["provider"] = { "i", 172233 },	-- Drums of Deathly Ferocity
 			}),
 			crit(13, {	-- Feral Hide Drums
@@ -68,10 +68,10 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			}),
 		}),
 		ach(18898, {	-- That's Just Cruel
-			crit(1, {	-- Nefarian Defeated
+			crit(61656, {	-- Nefarian Defeated
 				["provider"] = { "i", 15138 },	-- Onyxia Scale Cloak
 			}),
-			crit(2, {	-- 	Nefarian Defeated (Again)
+			crit(61657, {	-- 	Nefarian Defeated (Again)
 				["provider"] = { "i", 15138 },	-- Onyxia Scale Cloak
 			}),
 		}),
@@ -91,10 +91,10 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["timeline"] = { ADDED_10_0_7, REMOVED_10_0_7 },
 			}),
 			ach(18899, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- You Saw Nothing
-				crit(1, {	-- Gordok Ogre Suit shamelessly crafted
+				crit(61658, {	-- Gordok Ogre Suit shamelessly crafted
 					["provider"] = { "i", 18258 },	-- Gordok Ogre Suit
 				}),
-				crit(2, {	-- 	Gordok Ogre Suit donned
+				crit(61659, {	-- 	Gordok Ogre Suit donned
 					["provider"] = { "i", 18258 },	-- Gordok Ogre Suit
 				}),
 			})),
@@ -193,16 +193,16 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 	tier(TBC_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_5 } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18894, {	-- Free Stylin'
-				crit(1, {	-- Stylin' Purple Hat
+				crit(61631, {	-- Stylin' Purple Hat
 					["provider"] = { "i", 25680 },	-- Stylin' Purple Hat
 				}),
-				crit(2, {	-- Stylin' Adventure Hat
+				crit(61632, {	-- Stylin' Adventure Hat
 					["provider"] = { "i", 25681 },	-- Stylin' Adventure Hat
 				}),
-				crit(3, {	-- Stylin' Crimson Hat
+				crit(61633, {	-- Stylin' Crimson Hat
 					["provider"] = { "i", 25683 },	-- Stylin' Crimson Hat
 				}),
-				crit(4, {	-- Stylin' Jungle Hat
+				crit(61634, {	-- Stylin' Jungle Hat
 					["provider"] = { "i", 25682 },	-- Stylin' Jungle Hat
 				}),
 			}),
