@@ -14,27 +14,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			n(210050, {	-- Bloodstripe Great Ray
 				["questID"] = 77942,
 				["coord"] = { 51.1, 31.7, TREE_1 },
-				["g"] = {
-					i(201437),	-- Slumbering Dream Fragment
-				},
 			}),
 			n(209909, {	-- Crabtankerous
 				["questID"] = 77862,
 				["coord"] = { 66.1, 63.5, TREE_1 },
-				["g"] = {
-					i(201437),	-- Slumbering Dream Fragment
-				},
 			}),
 			n(210075, {	-- Henri Snufftail
 				["questID"] = 77944,
 				["coord"] = { 47.1, 29.8, TREE_1 },
-				["g"] = {
-					i(201437),	-- Slumbering Dream Fragment
-				},
 			}),
 			n(209620, {	-- Ignit the Firebranded
 				["questID"] = 77864,
 				["coord"] = { 58.7, 51.2, TREE_1 },
+				["g"] = {
+					i(208338),	-- Furious Flame's Shoulders
+				},
 			}),
 			n(209919, {	-- Isaqa
 				["questID"] = 77989,
@@ -43,9 +37,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			n(210051, {	-- Matriarch Keevah
 				["questID"] = 78213,
 				["coord"] = { 41.1, 73.3, TREE_1 },
-				["g"] = {
-					i(201437),	-- Slumbering Dream Fragment
-				},
 			}),
 			n(210064, {	-- Molten Leadspike
 				["questID"] = 77943,
@@ -66,21 +57,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 				["g"] = {
 					i(210093),	-- Autumn Druid Hood
-					i(201437),	-- Slumbering Dream Fragment
 				},
 			}),
 			n(210070, {	-- Mosa Umbramane
 				["questID"] = 77940,
 				["coord"] = { 55.0, 36.8, TREE_1 },
-				["g"] = {
-					i(201437),	-- Slumbering Dream Fragment
-				},
 			}),
 			n(210161, {	-- Ristar, the Rabid
 				["questID"] = 77890,
 				["coord"] = { 44.5, 39.3, TREE_1 },
 				["g"] = {
-					i(201437),	-- Slumbering Dream Fragment
 					i(208322),	-- Treads of the Nightclaw
 				},
 			}),
@@ -103,7 +89,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 78214,
 				["coord"] = { 38.4, 62.1, TREE_1 },
 				["g"] = {
-					i(201437),	-- Slumbering Dream Fragment
 					i(208354),	-- Cerulean Turtle's Pendant
 				},
 			}),
@@ -136,16 +121,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					{ 67.5, 66.2, TREE_1 },
 					{ 41.5, 31.1, TREE_1 },
 				},
-				["g"] = {
-					i(201437),	-- Slumbering Dream Fragment
-				},
 			}),
 			n(209898, {	-- Reefbreaker Moruud
 				["questID"] = 77867, -- bonus objective qID
 				["coord"] = { 65.0, 84.2, TREE_1 },
 				["g"] = {
 					i(208327),	-- Maruud's Piercing Hands
-					i(201437),	-- Slumbering Dream Fragment
 				},
 			})
 		})),

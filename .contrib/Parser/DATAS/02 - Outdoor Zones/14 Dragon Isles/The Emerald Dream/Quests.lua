@@ -604,6 +604,41 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(208396),	-- Splintered Spark of Dreams
 				},
 			}),
+			--- Emerald Blossom quest chain
+			q(78172, {	-- Mysterious Seeds
+				--["sourceQuests"] = { xx },	-- xx
+				["provider"] = { "i", 210050 },	-- Mysterious Seeds
+			}),
+			q(77209, {	-- Seed Legacy
+				["sourceQuests"] = { 78172 },	-- Mysterious Seeds
+				["provider"] = { "n", 211265 },	-- Sylvia Whiperbloom
+				["coord"] = { 59.7, 16.9, TREE_1 },
+				["g"] = {
+					i(210014),	-- Mysterious Seeds (QI!)
+				},
+			}),
+			q(78170, {	-- Nurturing Ageless Seeds
+				["sourceQuests"] = { 77209 },	-- Seed Legacy
+				["provider"] = { "n", 211265 },	-- Sylvia Whiperbloom
+				["coord"] = { 59.7, 16.9, TREE_1 },
+				["cost"] = {
+					{ "c", 2650, 150 },	-- 150x Emerald Dewdrop
+				},
+			}),
+			q(78171, {	-- Blossoms of the Past
+				["sourceQuests"] = { 78170 },	-- Nurturing Ageless Seeds
+				["provider"] = { "n", 211265 },	-- Sylvia Whiperbloom
+				["coord"] = { 59.7, 16.9, TREE_1 },
+				["g"] = {
+					i(210052),	-- Ageless Blossoms (QI!)
+					i(208067),	-- Plump Dreamseed
+				},
+			}),
+			q(78206, {	-- Emerald Bounty
+				["sourceQuests"] = { 78171 },	-- Blossoms of the Past
+				["provider"] = { "n", 211265 },	-- Sylvia Whiperbloom
+				["coord"] = { 59.7, 16.9, TREE_1 },
+			}),
 			--[[
 			q(, {	--
 				["sourceQuests"] = {  },	--
@@ -653,6 +688,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(77370),	-- also 'The vision of a young dreamer fill the air around the Fileds of Reverie' / 'Chest' (sleppID 418389)
 		--q(77356),	-- pop during wq 76558 / 'Chest' (spellID 418326)
 		--q(77368),	-- was afk / 'Chest' (spellID 418387)
+		--q(77497),	-- afk / 'Chest' (spellID 420761)
 
 		--q(77413),	-- Shandris's Scouting Report (itemID 208181) (spellID 418275), but need to confirm
 	}),

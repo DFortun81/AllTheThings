@@ -966,7 +966,6 @@ root(ROOTS.Unsorted, {
 			i(208335),	-- Vibrant Fall Leggings
 			i(208336),	-- Legguards of the Dreamsaber
 			i(208337),	-- Leaf Steward's Leggings
-			i(208338),	-- Furious Flame's Shoulders
 			i(208339),	-- Saber's Stone Pauldrons
 			i(208340),	-- Stag's Flourishing Mantle
 			i(208341),	-- Fire-Runed Spaulders
@@ -1573,13 +1572,10 @@ root(ROOTS.Unsorted, {
 			i(209958),	-- Rune of the Umbramane
 			i(209959),	-- Pinch of Dream Magic
 			i(210005),	-- 10.2 Monster - Weapon - Staff - 10.1.5 Weapon Staff - Staff_2H_Druid_C_02_Color1
-			i(210014),	-- Mysterious Seeds
 			i(210016),	-- Somnowl's Shroud
 			i(210040),	-- Set Keystone Map: Throne of the Tides
 			i(210041),	-- Shipment of Goods
 			i(210049),	-- The Legend of Elun'Ahir
-			i(210050),	-- Mysterious Seeds
-			i(210052),	-- Ageless Blossoms
 			i(210059),	-- [PH] Blue Dreamsaber
 			i(210060),	-- [PH] Purple Dreamsaber
 			i(210061),	-- [PH] Mythic Raid Fire Owl

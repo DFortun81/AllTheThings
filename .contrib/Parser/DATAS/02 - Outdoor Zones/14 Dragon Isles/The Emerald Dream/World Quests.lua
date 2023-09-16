@@ -78,6 +78,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					q(77765, {	-- Documenting a Dream
 						["coord"] = { 38.2, 64.2, TREE_1 },
 					}),
+					q(76989, {	-- Trashing the Camp
+						["coord"] = { 38.8, 48.9, TREE_1 },
+					}),
+					q(76988, {	-- Sylvan Slalom
+						["coord"] = { 34.1, 57.6, TREE_1 },
+					}),
+					q(77159, {	-- No Mushroom for Error
+						["coord"] = { 52.6, 29.9, TREE_1 },
+					}),
+					q(77761, {	-- Documenting a Dream
+						["coord"] = { 58.1, 49.6, TREE_1 },
+					}),
 				})),
 			},
 		}),
