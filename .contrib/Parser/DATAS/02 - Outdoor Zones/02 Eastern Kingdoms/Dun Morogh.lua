@@ -732,6 +732,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #endif
 							},
 						}),
+						-- #if AFTER 10.1.7
+						i(2065, {	-- Rockjaw Blade
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["cr"] = 1718,	-- Rockjaw Raider
+							["coords"] = {
+								{ 42.6, 66.0, DUN_MOROGH },
+								{ 42.0, 67.8, DUN_MOROGH },
+							},
+						}),
+						-- #endif
 						i(2787, {	-- Trogg Dagger
 							-- #if AFTER 4.0.3
 							["crs"] = {
@@ -2827,22 +2837,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if BEFORE 10.1.7
 				i(2065, {	-- Rockjaw Blade
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
 					["cr"] = 1116,	-- Rockjaw Ambusher
 					["coords"] = {
 						{ 72.6, 54.0, DUN_MOROGH },
 						{ 77.6, 59.6, DUN_MOROGH },
 					},
-					-- #elseif AFTER 10.1.7
-					["cr"] = 1718,	-- Rockjaw Raider
-					["coords"] = {
-						{ 42.6, 66.0, DUN_MOROGH },
-						{ 42.0, 67.8, DUN_MOROGH },
-					},
-					-- #endif
 				}),
+				-- #endif
 				i(2066, {	-- Skull Hatchet
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["coords"] = {
