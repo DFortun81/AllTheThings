@@ -2227,20 +2227,11 @@ root(ROOTS.Unsorted, {
 			i(206166),	-- Strong Resonating Vestigial
 			i(207011),	-- Warblades of the Hakkari, Reborn
 			i(207029),	-- Scarlet Zealot's Heater Shield
-			i(207031),	-- Bomb Lobber
-			i(207032),	-- Shrapnel Spreader
-			i(207033),	-- Flamethrower
-			i(207034),	-- Railgun
-			i(207035),	-- Thunderbolt
-			i(207036),	-- Crankshot
-			i(207037),	-- Empty Gun Rack
-			i(207038),	-- Empty Gun Rack
 			i(207044),	-- <DNT> Lo'Gosh Offhand Weapon
 			i(207045),	-- <DNT> Lo'Gosh Mainhand Weapon
 			i(207096),	-- Paracausal Chest
 			i(207102),	-- TESTING ITEM DELETE ME
 			i(207594),	-- Looter's Purse
-			i(208029),	-- Scareloc Parts
 			i(207984),	-- Chroniton Wand
 			i(208001),	-- Timewalker's Cudgel
 			i(208091),	-- Cache of Timewarped Treasures
