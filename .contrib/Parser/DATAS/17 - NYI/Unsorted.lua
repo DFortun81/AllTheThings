@@ -594,9 +594,11 @@ root(ROOTS.Unsorted, {
 				i(209859),	-- Festive Trans-Dimensional Bird Whistle (TOY!) [Winter Veil?]
 				i(209035),	-- Hearthstone of the Flame (TOY!) [Raid Boss?]
 				i(208825),	-- Junior Timekeeper's Racing Belt (TOY!) [Winter Veil?]
-				i(207092),	-- Portable Party Platter (TOY!) [Engi?]
 				i(208798),	-- Recorded Memories of Tyr's Guard (TOY!) [Questline Tyr?]
 				i(210656),	-- Winter Veil Socks (TOY!) [Winter Veil?]
+			}),
+			n(PROFESSIONS, {
+				i(207461),	-- Schematic: Portable Party Platter (RECIPE!)
 			}),
 			i(192717),	-- Animated Splinter
 			i(202182),	-- Acid Rifle
@@ -615,26 +617,8 @@ root(ROOTS.Unsorted, {
 			i(206598),	-- Smoldering Blossom
 			i(206929),	-- Hawlsey's Armor
 			i(206942),	-- Sealed Kaldorei Scroll
-			i(206959),	-- Spark of Dreams
-			i(206960),	-- Enchanted Wyrm's Dreaming Crest
-			i(206961),	-- Enchanted Aspect's Dreaming Crest
-			i(206967),	-- Illusory Adornment: Dreams
-			i(206968),	-- Illusory Adornment: Dreams
-			i(206969),	-- Illusory Adornment: Dreams
-			i(206977),	-- Enchanted Whelpling's Dreaming Crest
 			i(207004),	-- Incanter's Tome
-			i(207021),	-- Dreamwalker's Healing Potion
-			i(207022),	-- Dreamwalker's Healing Potion
-			i(207023),	-- Dreamwalker's Healing Potion
 			i(207025),	-- <Placeholder> Fyrakk Axe - Shadowflame
-			i(207039),	-- Potion of Withering Dreams
-			i(207040),	-- Potion of Withering Dreams
-			i(207041),	-- Potion of Withering Dreams
-			i(207054),	-- Slumbering Peacebloom Tea
-			i(207085),	-- Enchant Weapon - Dreaming Devotion
-			i(207086),	-- Enchant Weapon - Dreaming Devotion
-			i(207087),	-- Enchant Weapon - Dreaming Devotion
-
 			i(207115),	-- Cloth - HAND 1
 			i(207116),	-- Cloth - HEAD 1
 			i(207117),	-- Cloth - SHOULDER 1
@@ -807,7 +791,6 @@ root(ROOTS.Unsorted, {
 			i(207291),	-- 10.2 Raid - Emerald Dream - Class Sets - Mage - Armor - Cloth -  Hand
 			i(207292),	-- 10.2 Raid - Emerald Dream - Class Sets - Mage - Armor - Cloth - Feet
 			i(207293),	-- 10.2 Raid - Emerald Dream - Class Sets - Mage - Armor - Cloth - Chest
-			i(207461),	-- Schematic: Portable Party Platter
 			i(207462),	-- Dreadful Verdurous Dreamseed
 			i(207463),	-- Mystic Verdurous Dreamseed
 			i(207464),	-- Venerated Verdurous Dreamseed
@@ -861,7 +844,6 @@ root(ROOTS.Unsorted, {
 			i(208189),	-- Verdant Conduit
 			i(208198),	-- Tyr's Guard Bulwark
 			i(208199),	-- Tabard of the Tyr's Guard
-			i(208212),	-- Dreaming Essence
 			i(208217),	-- Illusory Scroll of Youth
 			i(208221),	-- Soil of the Dreamgrove
 			i(208230),	-- Anaya's Pendant
@@ -894,14 +876,6 @@ root(ROOTS.Unsorted, {
 			i(208261),	-- Verdant Combatant's Wildercloth Tunic
 			i(208262),	-- Verdant Combatant's Wildercloth Sash
 			i(208263),	-- Verdant Combatant's Wildercloth Cloak
-			i(208264),	-- Verdant Combatant's Draconium Breastplate
-			i(208265),	-- Verdant Combatant's Draconium Sabatons
-			i(208266),	-- Verdant Combatant's Draconium Gauntlets
-			i(208267),	-- Verdant Combatant's Draconium Helm
-			i(208268),	-- Verdant Combatant's Draconium Greaves
-			i(208269),	-- Verdant Combatant's Draconium Pauldrons
-			i(208270),	-- Verdant Combatant's Draconium Waistguard
-			i(208271),	-- Verdant Combatant's Draconium Armguards
 			i(208272),	-- Pattern: Verdant Combatant's Wildercloth Bands
 			i(208273),	-- Pattern: Verdant Combatant's Wildercloth Cloak
 			i(208274),	-- Pattern: Verdant Combatant's Wildercloth Gloves
@@ -911,14 +885,6 @@ root(ROOTS.Unsorted, {
 			i(208278),	-- Pattern: Verdant Combatant's Wildercloth Shoulderpads
 			i(208279),	-- Pattern: Verdant Combatant's Wildercloth Treads
 			i(208280),	-- Pattern: Verdant Combatant's Wildercloth Tunic
-			i(208281),	-- Plans: Verdant Combatant's Draconium Helm
-			i(208282),	-- Plans: Verdant Combatant's Draconium Breastplate
-			i(208283),	-- Plans: Verdant Combatant's Draconium Greaves
-			i(208284),	-- Plans: Verdant Combatant's Draconium Pauldrons
-			i(208285),	-- Plans: Verdant Combatant's Draconium Gauntlets
-			i(208286),	-- Plans: Verdant Combatant's Draconium Sabatons
-			i(208287),	-- Plans: Verdant Combatant's Draconium Armguards
-			i(208288),	-- Plans: Verdant Combatant's Draconium Waistguard
 			i(208289),	-- Design: Verdant Combatant's Jeweled Amulet
 			i(208290),	-- Design: Verdant Combatant's Jeweled Signet
 			i(208291),	-- Pattern: Verdant Combatant's Resilient Mask
@@ -943,14 +909,6 @@ root(ROOTS.Unsorted, {
 			i(208310),	-- Technique: Verdant Combatant's Medallion
 			i(208311),	-- Technique: Verdant Combatant's Insignia of Alacrity
 			i(208312),	-- Technique: Verdant Combatant's Emblem
-			i(208313),	-- Verdant Combatant's Cloth Goggles
-			i(208314),	-- Verdant Combatant's Leather Goggles
-			i(208315),	-- Verdant Combatant's Mail Goggles
-			i(208316),	-- Verdant Combatant's Plate Goggles
-			i(208317),	-- Schematic: Verdant Combatant's Cloth Goggles
-			i(208318),	-- Schematic: Verdant Combatant's Leather Goggles
-			i(208319),	-- Schematic: Verdant Combatant's Mail Goggles
-			i(208320),	-- Schematic: Verdant Combatant's Plate Goggles
 			i(208323),	-- Nature's Firebathed Robes
 			i(208324),	-- Scorching Dryad's Chestpiece
 			i(208325),	-- Ignit's Fiery Heart
@@ -1668,11 +1626,6 @@ root(ROOTS.Unsorted, {
 			i(210166),	-- Verdant Aspirant's Blade
 			i(210169),	-- Pattern: Verdant Conduit
 			i(210170),	-- Design: Dreamtender's Charm
-			i(210171),	-- Formula: Enchanted Aspect's Dreaming Crest
-			i(210172),	-- Formula: Enchanted Wyrm's Dreaming Crest
-			i(210173),	-- Formula: Enchanted Whelpling's Dreaming Crest
-			i(210174),	-- Formula: Illusory Adornment: Dreams
-			i(210175),	-- Formula: Enchant Weapon - Dreaming Devotion
 			i(210180),	-- Emerald Flightstone
 			i(210184),	-- Half-Filled Dreamless Sleep Potion
 			i(210185),	-- Splash Potion of Narcolepsy
@@ -1701,8 +1654,6 @@ root(ROOTS.Unsorted, {
 			i(210235),	-- Spirited Stag's Cape
 			i(210236),	-- Chartreuse Champion's Cloak
 			i(210237),	-- Nipping Night's Necklace
-			i(210241),	-- Recipe: Dreamwalker's Healing Potion
-			i(210242),	-- Recipe: Slumbering Peace Tea
 			i(210243),	-- Technique: Contract: Dream Wardens
 			i(210244),	-- Contract: Dream Wardens
 			i(210245),	-- Contract: Dream Wardens
@@ -1859,9 +1810,7 @@ root(ROOTS.Unsorted, {
 			i(210566),	-- Somnowl Feather Strand
 			i(210572),	-- Verdant Equipment Chest
 			i(210595),	-- Dreaming Equipment Chest
-			i(210644),	-- Plans: Flourishing Dream Helm
 			i(210645),	-- Feather of Friends
-			i(210646),	-- Flourishing Dream Helm
 			i(210647),	-- Mark of the Umbramane
 			i(210650),	-- Mark of the Keen-Eyed Dreamsaber
 			i(210657),	-- Gently Shaken Gift

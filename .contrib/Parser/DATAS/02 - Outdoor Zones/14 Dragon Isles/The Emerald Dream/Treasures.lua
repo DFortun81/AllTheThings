@@ -4,6 +4,13 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	m(TREE_1, {
 		n(TREASURES, {
+			-- Rewards..
+			i(210171),	-- Formula: Enchanted Aspect's Dreaming Crest (RECIPE!)
+			i(210173),	-- Formula: Enchanted Whelpling's Dreaming Crest (RECIPE!)
+			i(210172),	-- Formula: Enchanted Wyrm's Dreaming Crest (RECIPE!)
+			--
+
+
 			-- treasures don't have valid loot as of 7.September.2023. Revisit all of these and put the loot in later
 			o(407862, {	-- Hidden Moonkin Stash
 				["questID"] = 77858,

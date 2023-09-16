@@ -33,11 +33,11 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 	-- Weekly Quest
 	i(190453),	-- Spark of Ingenuity
 	i(204440, {["timeline"] = {ADDED_10_1_0}}),	-- Spark of Shadowflame
+	i(206959, {["timeline"] = {ADDED_10_2_0}}),	-- Spark of Dreams
 	-- Crafting
 	i(191529),	-- Illustrious Insight
 	i(191526),	-- Lesser Illustrious Insight
 	i(204462, {["timeline"] = {ADDED_10_1_0}}),	-- Dracothyst Shards
-	i(204464, {["timeline"] = {ADDED_10_1_0}}),	-- Shadowflame Essence
 	prof(ALCHEMY, {
 		spell(370747, {	-- Advanced Phial Experimentation
 			["sym"] = {{"select","spellID",370746},{"extract","recipeID"}},	-- Basic Phial Experimentation -> Recipes
@@ -73,6 +73,10 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 					}),
 					r(370525, {	-- Potion of Chilled Clarity (RECIPE!)
 						["description"] = "Requires Decayology.",
+					}),
+					r(415810, {	-- Potion of Withering Dreams (RECIPE!)
+						["description"] = "Requires Decayology.",
+						["timeline"] = { ADDED_10_2_0 },
 					}),
 					r(370528, {	-- Potion of Withering Vitality (RECIPE!)
 						["description"] = "Requires Decayology.",
@@ -163,6 +167,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 				i(204669),	-- Fleeting Charged Phial of Alacrity+++
 				i(204672),	-- Fleeting Phial of Elemental Chaos+++
 			})),
+			i(207021, {["timeline"] = {ADDED_10_2_0}}),	-- Dreamwalker's Healing Potion+
+			i(207022, {["timeline"] = {ADDED_10_2_0}}),	-- Dreamwalker's Healing Potion++
+			i(207023, {["timeline"] = {ADDED_10_2_0}}),	-- Dreamwalker's Healing Potion+++
 			i(191387),	-- Elemental Potion of Power+
 			i(191388),	-- Elemental Potion of Power++
 			i(191389),	-- Elemental Potion of Power+++
@@ -232,6 +239,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(191393),	-- Potion of the Hushed Zephyr+
 			i(191394),	-- Potion of the Hushed Zephyr++
 			i(191395),	-- Potion of the Hushed Zephyr+++
+			i(207039, {["timeline"] = {ADDED_10_2_0}}),	-- Potion of Withering Dreams+
+			i(207040, {["timeline"] = {ADDED_10_2_0}}),	-- Potion of Withering Dreams++
+			i(207041, {["timeline"] = {ADDED_10_2_0}}),	-- Potion of Withering Dreams+++
 			i(191369),	-- Potion of Withering Vitality+
 			i(191370),	-- Potion of Withering Vitality++
 			i(191371),	-- Potion of Withering Vitality+++
@@ -276,9 +286,11 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71296, 370668);	-- Potion Cauldron of Power
 			-- Frost Potions
 			FirstCraft(71284, 370536);	-- Delicate Suspension of Spores
+			--FirstCraft(X, 415628, ADDED_10_2_0);	-- Dreamwalker's Healing Potion
 			FirstCraft(71281, 370525);	-- Potion of Chilled Clarity
 			FirstCraft(71276, 370478);	-- Potion of Frozen Fatality
 			FirstCraft(71280, 370524);	-- Potion of Frozen Focus
+			--FirstCraft(X, 415810, ADDED_10_2_0);	-- Potion of Withering Dreams
 			FirstCraft(71282, 370528);	-- Potion of Withering Vitality
 			FirstCraft(71285, 370539);	-- Refreshing Healing Potion
 			-- Elemental Phials and Potions
@@ -399,6 +411,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(189537),	-- Explorer's Plate Boots
 			i(189539),	-- Explorer's Plate Bracers
 			i(189538),	-- Explorer's Plate Chestguard
+			i(210646, {["timeline"] = {ADDED_10_2_0}}),	-- Flourishing Dream Helm
 			i(190523),	-- Frostfire Legguards of Preparation
 			i(190522),	-- Infurious Helm of Vengeance
 			i(191985),	-- Infurious Warboots of Impunity
@@ -418,6 +431,14 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(190500),	-- Primal Molten Pauldrons
 			i(190496),	-- Primal Molten Sabatons
 			i(190502),	-- Primal Molten Vambraces
+			i(208271, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Draconium Armguards
+			i(208264, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Draconium Breastplate
+			i(208266, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Draconium Gauntlets
+			i(208268, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Draconium Greaves
+			i(208267, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Draconium Helm
+			i(208269, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Draconium Pauldrons
+			i(208265, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Draconium Sabatons
+			i(208270, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Draconium Waistguard
 			i(191623),	-- Unstable Frostfire Belt
 		}),
 		filter(BATTLE_PETS, {
@@ -453,6 +474,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71314, 367610);	-- Explorer's Plate Boots
 			FirstCraft(71315, 367609);	-- Explorer's Plate Bracers
 			FirstCraft(71313, 395886);	-- Explorer's Plate Chestguard
+			--FirstCraft(X, 426332, ADDED_10_2_0);	-- Flourishing Dream Helm
 			FirstCraft(71305, 367619);	-- Frostfire Legguards of Preparation
 			FirstCraft(71308, 367617);	-- Infurious Helm of Vengeance
 			FirstCraft(71307, 367616);	-- Infurious Warboots of Impunity
@@ -473,6 +495,14 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71317, 367607);	-- Primal Molten Sabatons
 			FirstCraft(71323, 367601);	-- Primal Molten Vambraces
 			FirstCraft(71306, 367618);	-- Unstable Frostfire Belt
+			--FirstCraft(X, 419031, ADDED_10_2_0);	-- Verdant Combatant's Draconium Armguards
+			--FirstCraft(X, 419032, ADDED_10_2_0);	-- Verdant Combatant's Draconium Breastplate
+			--FirstCraft(X, 419033, ADDED_10_2_0);	-- Verdant Combatant's Draconium Gauntlets
+			--FirstCraft(X, 419034, ADDED_10_2_0);	-- Verdant Combatant's Draconium Greaves
+			--FirstCraft(X, 419035, ADDED_10_2_0);	-- Verdant Combatant's Draconium Helm
+			--FirstCraft(X, 419036, ADDED_10_2_0);	-- Verdant Combatant's Draconium Pauldrons
+			--FirstCraft(X, 419037, ADDED_10_2_0);	-- Verdant Combatant's Draconium Sabatons
+			--FirstCraft(X, 419038, ADDED_10_2_0);	-- Verdant Combatant's Draconium Waistguard
 			-- Shields
 			FirstCraft(72183, 393404);	-- Draconium Defender
 			FirstCraft(71304, 367622);	-- Primal Molten Defender
@@ -681,6 +711,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 		i(197775),	-- Scrambled Basilisk Eggs
 		i(197780),	-- Seamoth Surprise
 		i(197784),	-- Sizzling Seafood Medley
+		i(207054, {["timeline"] = {ADDED_10_2_0}}),	-- Slumbering Peacebloom Tea
 		i(197766),	-- Snow in a Cone
 		i(197762),	-- Sweet and Sour Clam Chowder
 		i(197769),	-- Tasty Hatchling's Treat
@@ -843,6 +874,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			-- Weapon Enchantments
 			FirstCraft(71426, 389547);	-- Burning Devotion
 			FirstCraft(71425, 389537);	-- Burning Writ
+			--FirstCraft(X, 416047, ADDED_10_2_0);	-- Dreaming Devotion
 			FirstCraft(71424, 389549);	-- Earthen Devotion
 			FirstCraft(71423, 389540);	-- Earthen Writ
 			FirstCraft(71428, 389551);	-- Frozen Devotion
@@ -873,6 +905,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71871, 391816);	-- Illusion: Primal Frost
 			FirstCraft(71870, 390839);	-- Illusion: Primal Mastery
 			FirstCraft(71931, 391810);	-- Illusory Adornment: Air
+			--FirstCraft(X, 414946, ADDED_10_2_0);	-- Illusory Adornment: Dreams
 			FirstCraft(71932, 391811);	-- Illusory Adornment: Earth
 			FirstCraft(71432, 390951);	-- Illusory Adornment: Fire
 			FirstCraft(71930, 391809);	-- Illusory Adornment: Frost
@@ -890,8 +923,11 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			-- Artisan Curios
 			FirstCraft(74310, 400809, ADDED_10_0_7);	-- Glowing Crystal Bookmark
 			-- Infusions of Power
+			--FirstCraft(X, 414989, ADDED_10_2_0);	-- Enchanted Aspect's Dreaming Crest
 			FirstCraft(75316, 406418, ADDED_10_1_0);	-- Enchanted Aspect's Shadowflame Crest
+			--FirstCraft(X, 414985, ADDED_10_2_0);	-- Enchanted Whelpling's Dreaming Crest
 			FirstCraft(75256, 406108, ADDED_10_1_0);	-- Enchanted Whelpling's Shadowflame Crest
+			--FirstCraft(X, 414988, ADDED_10_2_0);	-- Enchanted Wyrm's Dreaming Crest
 			FirstCraft(75315, 406413, ADDED_10_1_0);	-- Enchanted Wyrm's Shadowflame Crest
 			FirstCraft(75235, 405937, ADDED_10_1_0);	-- Titan Training Matrix V
 		})),
@@ -907,6 +943,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(201318),	-- Illusory Adornment: Air+
 			i(201317),	-- Illusory Adornment: Air++
 			i(201316),	-- Illusory Adornment: Air+++
+			i(206967, {["timeline"] = {ADDED_10_2_0}}),	-- Illusory Adornment: Dreams+
+			i(206968, {["timeline"] = {ADDED_10_2_0}}),	-- Illusory Adornment: Dreams++
+			i(206969, {["timeline"] = {ADDED_10_2_0}}),	-- Illusory Adornment: Dreams+++
 			i(201315),	-- Illusory Adornment: Earth+
 			i(201314),	-- Illusory Adornment: Earth++
 			i(201313),	-- Illusory Adornment: Earth+++
@@ -944,8 +983,11 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(201601, {["requireSkill"] = ENCHANTING}),	-- Runed Serevite Rod
 		}),
 		filter(REAGENTS, {
+			i(206961, {["timeline"] = {ADDED_10_2_0}}),	-- Enchanted Aspect's Dreaming Crest
 			i(204697, {["timeline"] = {ADDED_10_1_0}}),	-- Enchanted Aspect's Shadowflame Crest
+			i(206977, {["timeline"] = {ADDED_10_2_0}}),	-- Enchanted Whelpling's Dreaming Crest
 			i(204681, {["timeline"] = {ADDED_10_1_0}}),	-- Enchanted Whelpling's Shadowflame Crest
+			i(206960, {["timeline"] = {ADDED_10_2_0}}),	-- Enchanted Wyrm's Dreaming Crest
 			i(204682, {["timeline"] = {ADDED_10_1_0}}),	-- Enchanted Wyrm's Shadowflame Crest
 			i(200618),	-- Primal Invocation Extract+
 			i(200633),	-- Primal Invocation Extract++
@@ -985,6 +1027,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(199967),	-- Enchant Weapon - Burning Writ+
 			i(200009),	-- Enchant Weapon - Burning Writ++
 			i(200051),	-- Enchant Weapon - Burning Writ+++
+			i(207085, {["timeline"] = {ADDED_10_2_0}}),	-- Enchant Weapon - Dreaming Devotion+
+			i(207086, {["timeline"] = {ADDED_10_2_0}}),	-- Enchant Weapon - Dreaming Devotion++
+			i(207087, {["timeline"] = {ADDED_10_2_0}}),	-- Enchant Weapon - Dreaming Devotion+++
 			i(199968),	-- Enchant Weapon - Earthen Devotion+
 			i(200010),	-- Enchant Weapon - Earthen Devotion++
 			i(200052),	-- Enchant Weapon - Earthen Devotion+++
@@ -1082,6 +1127,10 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(198324),	-- Peripheral Vision Projectors
 			i(198328),	-- Quality-Assured Optics
 			i(198331),	-- Sentry's Stabilized Specs
+			i(208313, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Cloth Goggles
+			i(208314, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Leather Goggles
+			i(208315, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Mail Goggles
+			i(208316, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Plate Goggles
 			-- Tinker
 			i(198289),	-- Tinker: Alarm-O-Turret+
 			i(198290),	-- Tinker: Alarm-O-Turret++
@@ -1153,6 +1202,10 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71442, 382389);	-- Peripheral Vision Projectors
 			FirstCraft(71446, 382383);	-- Quality-Assured Optics
 			FirstCraft(71449, 382386);	-- Sentry's Stabilized Specs
+			--FirstCraft(X, 419042, ADDED_10_2_0);	-- Verdant Combatant's Cloth Goggles
+			--FirstCraft(X, 419043, ADDED_10_2_0);	-- Verdant Combatant's Leather Goggles
+			--FirstCraft(X, 419044, ADDED_10_2_0);	-- Verdant Combatant's Mail Goggles
+			--FirstCraft(X, 419045, ADDED_10_2_0);	-- Verdant Combatant's Plate Goggles
 			-- Armor
 			FirstCraft(71450, 382319);	-- Complicated Cuffs
 			FirstCraft(71451, 382320);	-- Difficult Wrist Protectors
@@ -1204,6 +1257,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(75596, 408230, ADDED_10_1_0);	-- Mallard Mortar
 			FirstCraft(71891, 382407);	-- Neural Silencer Mk3
 			FirstCraft(71889, 382338);	-- Portable Alchemist's Lab Bench
+			--FirstCraft(X, 416149, ADDED_10_2_0);	-- Portable Party Platter
 			FirstCraft(71890, 382337);	-- Portable Tinker's Workbench
 			FirstCraft(71471, 382328);	-- S.A.V.I.O.R
 			FirstCraft(72711, 396777);	-- Tinker Removal Kit
@@ -1389,6 +1443,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(198227),	-- Giggle Goggles (TOY!)
 			i(201930, {["timeline"] = {ADDED_10_0_7}}),	-- H.E.L.P. (TOY!)
 			i(204818, {["timeline"] = {ADDED_10_1_0}}),	-- Mallard Mortar (TOY!)
+			i(207092, {["timeline"] = {ADDED_10_2_0}}),	-- Portable Party Platter (TOY!)
 			i(198156),	-- Wyrmhole Generator: Dragon Isles (TOY!)
 		}),
 		n(WEAPONS, {
@@ -1463,7 +1518,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(191467),	-- Bubble Poppy+
 			i(191468),	-- Bubble Poppy++
 			i(191469),	-- Bubble Poppy+++
-			i(203416, {["timeline"] = {ADDED_10_0_7 }}),	-- Dormant Lifebloom Seeds
+			i(203416, {["timeline"] = {ADDED_10_0_7}}),	-- Dormant Lifebloom Seeds
 			i(200678),	-- Dreambloom
 			i(200677),	-- Dreambloom Petal
 			i(191460),	-- Hochenblume+
@@ -1505,10 +1560,15 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			r(391415),	-- Lush Hochenblume
 			r(391502),	-- Lush Saxifrage
 			r(391512),	-- Lush Writhebark
+			r(421176, {["timeline"] = {ADDED_10_2_0}}),	-- Overgrown Bubble Poppy
+			r(421224, {["timeline"] = {ADDED_10_2_0}}),	-- Overgrown Hochenblume
+			r(421226, {["timeline"] = {ADDED_10_2_0}}),	-- Overgrown Saxifrage
+			r(421227, {["timeline"] = {ADDED_10_2_0}}),	-- Overgrown Writhebark
 			r(391564),	-- Overload Decayed Herb
 			r(391562),	-- Overload Frigid Herb
 			r(391558),	-- Overload Infurious Herb
 			r(405134, {["timeline"] = {ADDED_10_1_0}}),	-- Overload Lambent Herb
+			r(422293, {["timeline"] = {ADDED_10_2_0}}),	-- Overload Overgrown Herb
 			r(391557),	-- Overload Titan-Touched Herb
 			r(391560),	-- Overload Windswept Herb
 			r(391441),	-- Saxifrage
@@ -1532,6 +1592,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71994, 391505);	-- Infurious Bubble Poppy
 			FirstCraft(75142, 405124, ADDED_10_1_0);	-- Lambent Bubble Poppy
 			FirstCraft(71973, 391511);	-- Lush Bubble Poppy
+			--FirstCraft(X, 421176, ADDED_10_2_0);	-- Overgrown Bubble Poppy
 			FirstCraft(71986, 391513);	-- Titan-Touched Bubble Poppy
 			FirstCraft(71978, 391515);	-- Windswept Bubble Poppy
 			-- Hochenblume
@@ -1540,6 +1601,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71992, 391498);	-- Infurious Hochenblume
 			FirstCraft(75141, 405123, ADDED_10_1_0);	-- Lambent Hochenblume
 			FirstCraft(71969, 391415);	-- Lush Hochenblume
+			--FirstCraft(X, 421224, ADDED_10_2_0);	-- Overgrown Hochenblume
 			FirstCraft(71984, 391496);	-- Titan-Touched Hochenblume
 			FirstCraft(71976, 391431);	-- Windswept Hochenblume
 			-- Saxifrage
@@ -1549,6 +1611,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(72341, 391499);	-- Infurious Saxifrage
 			FirstCraft(75143, 405126, ADDED_10_1_0);	-- Lambent Saxifrage
 			FirstCraft(71975, 391502);	-- Lush Saxifrage
+			--FirstCraft(X, 421226, ADDED_10_2_0);	-- Overgrown Saxifrage
 			FirstCraft(71987, 391503);	-- Titan-Touched Saxifrage
 			FirstCraft(71979, 391504);	-- Windswept Saxifrage
 			-- Writhebark
@@ -1558,6 +1621,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71993, 391506);	-- Infurious Writhebark
 			FirstCraft(75144, 405127, ADDED_10_1_0);	-- Lambent Writhebark
 			FirstCraft(71971, 391512);	-- Lush Writhebark
+			--FirstCraft(X, 421227, ADDED_10_2_0);	-- Overgrown Writhebark
 			FirstCraft(71985, 391514);	-- Titan-Touched Writhebark
 			FirstCraft(71977, 391516);	-- Windswept Writhebark
 			-- Overload
@@ -1565,6 +1629,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(72343, 391562);	-- Overload Frigid Herb
 			FirstCraft(72348, 391558);	-- Overload Infurious Herb
 			FirstCraft(75138, 405134, ADDED_10_1_0);	-- Overload Lambent Herb
+			--FirstCraft(X, 422293, ADDED_10_2_0);	-- Overload Overgrown Herb
 			FirstCraft(72344, 391557);	-- Overload Titan-Touched Herb
 			FirstCraft(72342, 391560);	-- Overload Windswept Herb
 		})),

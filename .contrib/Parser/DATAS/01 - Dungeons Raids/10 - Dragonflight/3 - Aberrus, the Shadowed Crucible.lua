@@ -236,6 +236,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 				},
 				["g"] = {
 					i(204857),	-- Ancient Elementium Fragment
+					i(204464),	-- Shadowflame Essence
 					i(194642),	-- Design: Choker of Shielding (RECIPE!)
 					i(194259),	-- Pattern: Allied Cinch of Time Dilation (RECIPE!)
 					i(194266),	-- Pattern: Bronzed Grip Wrappings (RECIPE!)

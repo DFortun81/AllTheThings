@@ -820,3 +820,9 @@ i(0, 411178);	-- Lemon Silverleaf Tea
 i(0, 412537);	-- Picante Pomfruit Cake
 i(0, 412536);	-- Roquefort-Stuffed Peppers
 i(0, 412535);	-- Venrik's Goat Milk
+
+------------------
+-- PATCH 10.2.0 --
+------------------
+--- ITEM ---
+i(210242, 416001);	-- Slumbering Peace Tea

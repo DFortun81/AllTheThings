@@ -220,3 +220,13 @@ i(0, 407170);		-- Inspired Order Recalibrator
 i(207576, 416691);	-- Refurbished Purifier
 i(206559, 413759);	-- Replaced Servo Arm
 i(207574, 416689);	-- Skullstone Bludgeon
+
+------------------
+-- PATCH 10.2.0 --
+------------------
+--- ITEM ---
+i(207461, 416149);	-- Portable Party Platter
+i(208317, 419042);	-- Verdant Combatant's Cloth Goggles
+i(208318, 419043);	-- Verdant Combatant's Leather Goggles
+i(208319, 419044);	-- Verdant Combatant's Mail Goggles
+i(208320, 419045);	-- Verdant Combatant's Plate Goggles

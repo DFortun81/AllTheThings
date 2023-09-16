@@ -1243,3 +1243,13 @@ i(205337, 405937);	-- Titan Training Matrix V
 i(207569, 416684);	-- Magebane Nexus
 i(207570, 416685);	-- Smoked Fireshooter
 i(207571, 416686);	-- Stormwatcher
+
+------------------
+-- PATCH 10.2.0 --
+------------------
+--- ITEM ---
+i(210175, 416047);	-- Dreaming Devotion
+i(210171, 414989);	-- Enchanted Aspect's Dreaming Crest
+i(210173, 414985);	-- Enchanted Whelpling's Dreaming Crest
+i(210172, 414988);	-- Enchanted Wyrm's Dreaming Crest
+i(210174, 414946);	-- Illusory Adornment: Dreams

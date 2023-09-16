@@ -215,3 +215,13 @@ i(0, 405123);	-- Lambent Hochenblume
 i(0, 405126);	-- Lambent Saxifrage
 i(0, 405127);	-- Lambent Writhebark
 i(0, 405134);	-- Overload Lambent Herb
+
+------------------
+-- PATCH 10.2.0 --
+------------------
+--- DISCOVERY ---
+i(0, 421176);	-- Overgrown Bubble Poppy
+i(0, 421224);	-- Overgrown Hochenblume
+i(0, 421226);	-- Overgrown Saxifrage
+i(0, 421227);	-- Overgrown Writhebark
+i(0, 422293);	-- Overload Overgrown Herb

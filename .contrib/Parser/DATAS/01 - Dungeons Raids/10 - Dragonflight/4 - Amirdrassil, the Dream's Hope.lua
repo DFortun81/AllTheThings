@@ -153,6 +153,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				ach(18179),	-- Mythic: Scalecommander Sarkareth Guild Run
 			}),
 			n(COMMON_BOSS_DROPS, {
+				i(208212),	-- Dreaming Essence
 			}),
 			d(AllDifficulties, {
 				e(2564, {	-- Gnarlroot
@@ -182,6 +183,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				e(2553, {	-- Larodar, Keeper of the Flame
 					["crs"] = { 208445 },	-- Larodar, Keeper of the Flame
 					["g"] = {
+						i(210175),	-- Formula: Enchant Weapon - Dreaming Devotion (RECIPE!)
 					},
 				}),
 				e(2563, {	-- Smolderon
@@ -197,6 +199,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				e(2565, {	-- Tindral Sageswift, Seer of the Flame
 					["crs"] = { 210601 },	-- Tindral Sageswift <Seer of Flame>
 					["g"] = {
+						i(210644),	-- Plans: Flourishing Dream Helm (RECIPE!)
 					},
 				}),
 				e(2519, {	-- Fyrakk the Blazing

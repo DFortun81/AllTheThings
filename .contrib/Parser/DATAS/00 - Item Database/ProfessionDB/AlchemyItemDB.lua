@@ -1123,5 +1123,12 @@ i(204696, 406106);	-- Draconic Phial Cauldron
 i(204984, 405832);	-- Stinky Bright Potion
 i(204631, 405847);	-- Transmute: Dracothyst
 -- DISCOVERY --
--- Potion --
 i(0, 405832);	-- Stinky Bright Potion
+
+------------------
+-- PATCH 10.2.0 --
+------------------
+--- ITEM ---
+i(210241, 415628);	-- Dreamwalker's Healing Potion
+--- DISCOVERY ---
+i(0, 415810);		-- Potion of Withering Dreams

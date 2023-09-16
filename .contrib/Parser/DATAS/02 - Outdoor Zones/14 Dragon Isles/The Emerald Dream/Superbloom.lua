@@ -28,6 +28,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				i(207762),	-- Grotto Netherwing Drake: Chin Spike (DM!)
 				--- Leather gear
 				i(210375),	-- Crystalline Tender's Wristbands
+				-- RECIPE
+				i(210174),	-- Formula: Illusory Adornment: Dreams (RECIPE!)
+				i(210241),	-- Recipe: Dreamwalker's Healing Potion (RECIPE!)
+				i(210242),	-- Recipe: Slumbering Peace Tea (RECIPE!)
 			}),
 		}),
 	}),

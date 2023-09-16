@@ -2137,3 +2137,17 @@ i(207568, 416683);	-- Valiant Shortblade
 i(206522, 413511);	-- Warsword of Caer Darrow
 i(206534, 413521);	-- Weaver's Fang
 i(206535, 413522);	-- Widow's Weep
+
+------------------
+-- PATCH 10.2.0 --
+------------------
+--- ITEM ---
+i(210644, 426332);	-- Flourishing Dream Helm
+i(208287, 419031);	-- Verdant Combatant's Draconium Armguards
+i(208282, 419032);	-- Verdant Combatant's Draconium Breastplate
+i(208285, 419033);	-- Verdant Combatant's Draconium Gauntlets
+i(208283, 419034);	-- Verdant Combatant's Draconium Greaves
+i(208281, 419035);	-- Verdant Combatant's Draconium Helm
+i(208284, 419036);	-- Verdant Combatant's Draconium Pauldrons
+i(208286, 419037);	-- Verdant Combatant's Draconium Sabatons
+i(208288, 419038);	-- Verdant Combatant's Draconium Waistguard
