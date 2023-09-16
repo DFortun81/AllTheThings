@@ -355,10 +355,10 @@ namespace ATT
         {
             // Export all of the Categories
             var builder = new StringBuilder();
-            builder.AppendLine("_.Categories={};");
+            builder.AppendLine("_.Categories={");
             foreach (var pair in categories)
             {
-                builder.Append("_.Categories.").Append(pair.Key).AppendLine("={");
+                builder.Append(pair.Key).AppendLine("={");
                 foreach (var group in pair.Value)
                 {
                     ExportCompressedLua(builder, group);
@@ -366,6 +366,7 @@ namespace ATT
                 }
                 builder.Remove(builder.Length - 1, 1).AppendLine("};");
             }
+            builder.AppendLine("};");
 
             // Simplify the structure of the string and then export to the builder.
             SimplifyStructureForLua(builder);

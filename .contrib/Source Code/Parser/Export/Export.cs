@@ -124,6 +124,16 @@ namespace ATT
         /// <param name="builder">The builder.</param>
         private static void ExportLocalVariablesForLua(StringBuilder builder)
         {
+            if (builder.ToString().Contains("_.Settings"))
+            {
+                builder.Replace("_.Settings", "settings");
+                FUNCTION_SHORTCUTS["settings"] = "_.Settings";
+            }
+            if (builder.ToString().Contains("_.CommonAchievementHandlers"))
+            {
+                builder.Replace("_.CommonAchievementHandlers", "handlers");
+                FUNCTION_SHORTCUTS["handlers"] = "_.CommonAchievementHandlers";
+            }
             var keys = FUNCTION_SHORTCUTS.Keys.ToList();
             keys.Sort(StringComparer.InvariantCulture);
 
