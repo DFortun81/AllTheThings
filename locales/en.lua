@@ -632,7 +632,7 @@ local L = {
 	["ICON_LEGEND_LABEL"] = "Icon Legend";
 	["ICON_LEGEND_TEXT"] = app.ccColors.White .. "|TInterface\\AddOns\\AllTheThings\\assets\\status-unobtainable.blp:0|t " .. "Unobtainable" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-prerequisites.blp:0|t " .. "Obtainable only with prerequisites" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-seasonal-unavailable.blp:0|t " .. "Seasonal content" .. "\n|TInterface\\FriendsFrame\\StatusIcon-Offline:0|t " .. "Unavailable on current character";
 	["CHAT_COMMANDS_LABEL"] = "Chat Commands";
-	["CHAT_COMMANDS_TEXT"] = "/att |cffFFFFFFor|R /things |cffFFFFFFor|R /allthethings\n|cffFFFFFFOpens the Main List.\n\n|R/att mini |cffFFFFFFor|R /attmini\n|cffFFFFFFOpens the Mini List.\n\n|R/att bounty\n|cffFFFFFFOpens a list of bugged or unconfirmed items.\n\n|R/att ra |cffFFFFFFor|R /attra\n|cffFFFFFFOpens the Raid Assistant.\n\n|R/att wq |cffFFFFFFor|R /attwq\n|cffFFFFFFOpens the World Quests List.\n\n|R/att item:1234 |cffFFFFFFor|R /att [Item Link]\n|cffFFFFFFOpens a window with shared appearances. Also works with other things, such as|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/att rwp\n|cffFFFFFFShows all future Removed With Patch things.\n\n|R/att random |cffFFFFFFor|R /attrandom |cffFFFFFFor|R /attran\n|cffFFFFFFOpens the Random List.\n\n|R/att unsorted\n|cffFFFFFFOpens a list of unsourced items. Best opened in Debug Mode.\n\n|R/rl\n|cffFFFFFFReload your WoW interface.|R";
+	["CHAT_COMMANDS_TEXT"] = "/att |cffFFFFFFor|R /things |cffFFFFFFor|R /allthethings\n|cffFFFFFFOpens the Main List.\n\n|R/att mini |cffFFFFFFor|R /attmini\n|cffFFFFFFOpens the Mini List.\n\n|R/att bounty\n|cffFFFFFFOpens a list of bugged or unconfirmed items.\n\n|R/att ra |cffFFFFFFor|R /attra\n|cffFFFFFFOpens the Raid Assistant.\n\n|R/att wq |cffFFFFFFor|R /attwq\n|cffFFFFFFOpens the World Quests List.\n\n|R/att item:1234 |cffFFFFFFor|R /att [Item Link]\n|cffFFFFFFOpens a window with shared appearances. Also works with other things, such as|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/att rwp\n|cffFFFFFFShows all future Removed With Patch things.\n\n|R/att npw\n|cffFFFFFFShows all current New With Patch things.\n\n|R/att random |cffFFFFFFor|R /attrandom |cffFFFFFFor|R /attran\n|cffFFFFFFOpens the Random List.\n\n|R/att unsorted\n|cffFFFFFFOpens a list of unsourced items. Best opened in Debug Mode.\n\n|R/rl\n|cffFFFFFFReload your WoW interface.|R";
 
 	-- Profiles tab
 	["PROFILES_PAGE"] = "Profiles";
@@ -816,7 +816,7 @@ local L = {
 		["10 Player"] = "10M",
 		["10 Player (Heroic)"] = "10M (H)",
 		["25 Player"] = "25M",
-		["25 Player (Heroic)"] = "25M (H)",		
+		["25 Player (Heroic)"] = "25M (H)",
 		[BATTLEGROUNDS] = "BGs",
 		[BLACK_MARKET_AUCTION_HOUSE] = "BMAH",
 		["Emissary Quests"] = "Emissary",
@@ -832,7 +832,7 @@ local L = {
 		["Monthly World Events"] = CALENDAR_REPEAT_MONTHLY,
 		[TRACKER_HEADER_WORLD_QUESTS] = "WQ",
 		["Weekly World Events"] = CALENDAR_REPEAT_WEEKLY,
-		
+
 		["Covenant:"] = "Cov:",
 		[CLASS.." %> "] = "",
 		["Quartermaster Miranda Breechlock"] = "Quartermaster Miranda",
@@ -855,7 +855,7 @@ local L = {
 
 		[1168] = 461821,	-- Guild
 	};
-	
+
 	-- These need to be localized manually.
 	-- Can also use the direct IconID, i.e. wowhead.com/icon=###
 	-- https://www.wowhead.com/icons
@@ -1261,14 +1261,14 @@ local L = {
 		[-10081] = "Corrupted Area",
 		[-10082] = "Lost Area",
 	};
-	
+
 	-- Deprecated! (move these eventually)
 	["HEADER_DESCRIPTIONS"] = {};
 	["HEADER_EVENTS"] = {};
 	["HEADER_LORE"] = {};
 	["EVENT_REMAPPING"] = {};
 	["EVENT_TOOLTIPS"] = {};
-	
+
 	-- These are alternative map names that we don't want to display, but used for mapID calculations.
 	-- If there is a name provided in the table above, it will prefer that name association.
 	["MAP_ID_TO_ZONE_TEXT"] = {};
@@ -1279,7 +1279,7 @@ local L = {
 		["The Battle for Mount Hyjal"] = 329,
 		["The Eye"] = 334,
 	};
-	
+
 	-- Module Localizations
 	["PVP_RANK_DESCRIPTION"] = "There are a total of 14 ranks for both factions. Each rank requires a minimum amount of Rating Points to be calculated every week, then calculated in comparison to other players on your server.\n\nEach rank grants access to different rewards, from PvP consumables to Epic Mounts that do not require Epic Riding Skill and Epic pieces of gear at the highest ranks. Each rank is also applied to your character as a Title.";
 
@@ -1336,7 +1336,7 @@ L["SPELL_NAME_TO_SPELL_ID"] = {
 	["Верховая езда"] = 33388,
 	["탈것 타기"] = 33388,
 	["骑术"] = 33388,
-	
+
 	-- Herb Gathering
 	-- The skill name is "Herbalism", not "Herb Gathering"
 	["Herbalism"] = 2366,
@@ -1348,7 +1348,7 @@ L["SPELL_NAME_TO_SPELL_ID"] = {
 	["약초채집"] = 2366,
 	["草药学"] = 2366,
 	["草藥學"] = 2366,
-	
+
 	["Ganzúa"] = 1809,		-- Lock Pick	-- Required for ES (EU)
 	["Desollar"] = 8613,	-- Skinning		-- Required for ES (EU)
 	["Cнятие шкур"] = 8613,	-- Skinning		-- Required for RU

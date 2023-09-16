@@ -13,7 +13,7 @@ DRAGONRIDING_CUP_ROOT = createHeader({
 BROKEN_ISLES_CUP_HEADER = createHeader({
 	readable = "Broken Isles Cup",
 	constant = "BROKEN_ISLES_HEADER",
---	icon = [[~_.asset("Holiday_DraeCup")]],
+ 	icon = [[~_.asset("Holiday_BrokenCup")]],
 	eventID = EVENTS.BROKEN_ISLES_CUP,
 	--[[
 	eventSchedule = {
@@ -61,7 +61,7 @@ KALIMDOR_CUP_HEADER = createHeader({
 NORTHREND_CUP_HEADER = createHeader({
 	readable = "Northrend Cup",
 	constant = "NORTHREND_CUP_HEADER",
---	icon = [[~_.asset("Holiday_DraeCup")]],
+	icon = [[~_.asset("Holiday_NorthCup")]],
 	eventID = EVENTS.NORTHREND_CUP,
 	--[[
 	eventSchedule = {
@@ -91,17 +91,17 @@ OUTLAND_CUP_HEADER = createHeader({
 PANDARIA_CUP_HEADER = createHeader({
 	readable = "Pandaria Cup",
 	constant = "PANDARIA_CUP_HEADER",
---	icon = [[~_.asset("Holiday_DraeCup")]],
+	icon = [[~_.asset("Holiday_PandaCup")]],
 	eventID = EVENTS.PANDARIA_CUP,
 	--[[
 	eventSchedule = {
 		0, -- Likely Recurring, not yet tho
 		2024, 7, 11, 10, 0,	-- 7/11 at 10:00 AM
 		2024, 7, 24, 10, 0,	-- 7/24 at 10:00 AM
-	},
+	},--]]
 	text = {
 		en = "Pandaria Cup",
-	},--]]
+	},
 });
 -- These actually don't require any DF content
 local dragonridingrace = function(id, data)
