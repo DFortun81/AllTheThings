@@ -1305,7 +1305,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 				["cost"] = { { "i", 18249, 1 } },	-- Crescent Key
 				-- #endif
 				["groups"] = {
-					n(ZONE_DROPS, bubbleDownSelf({ ["timeline"] = { "removed 4.0.3", ADDED_10_1_5 } }, {
+					n(ZONE_DROPS, bubbleDown({ ["timeline"] = { "removed 4.0.3", ADDED_10_1_5 } }, {
 						i(18250, {	-- Gordok Shackle Key
 							["description"] = "NOTE: Do NOT Free Knot if you are doing a Tribute Run. He runs away.",
 							["crs"] = {
@@ -1322,7 +1322,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 							},
 						}),
 					})),
-					n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+					n(QUESTS, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {
 						q(77194, {	-- Free Knot!
 							["qg"] = 14338,	-- Knot Thimblejack
 							["cost"] = {
