@@ -292,3 +292,11 @@ i(0, 389465);		-- Serevite Seam
 i(0, 405121);		-- Metamorphic Draconium Deposit
 i(0, 405120);		-- Metamorphic Serevite Deposit
 i(0, 405131);		-- Overload Metamorphic Deposit
+
+------------------
+-- PATCH 10.2.0 --
+------------------
+--- DISCOVERY ---
+i(0, 421247);	-- Living Draconium Deposit
+i(0, 421244);	-- Living Serevite Deposit
+i(0, 422809);	-- Overload Living Deposit

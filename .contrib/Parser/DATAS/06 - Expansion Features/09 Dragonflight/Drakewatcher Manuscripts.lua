@@ -1012,7 +1012,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["timeline"] = { CREATED_10_1_0 },
 		}, {
 			i(203340),	-- Winding Slitherdrake: Cluster Jaw Horns
-			i(203311),	-- Winding Slitherdrake: Hairy Chin
 			i(203343),	-- Winding Slitherdrake: Hairy Jaw
 			i(203329),	-- Winding Slitherdrake: Heavy Horns
 			i(203360),	-- Winding Slitherdrake: Large Finned Tail
@@ -1102,7 +1101,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(207760),	-- Grotto Netherwing Drake: Armor
 			i(207779),	-- Grotto Netherwing Drake: Barbed Tail
 			i(207776),	-- Grotto Netherwing Drake: Black Scales
-			i(207761),	-- Grotto Netherwing Drake: Chin Tendrils
+			i(207761),	-- Grotto Netherwing Drake: Chin Tendrils (DM!)
 			i(207759),	-- Grotto Netherwing Drake: Cluster Spiked Back
 			i(207765),	-- Grotto Netherwing Drake: Cluster Spiked Crest
 			i(207778),	-- Grotto Netherwing Drake: Double Finned Tail
@@ -1115,7 +1114,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(207771),	-- Grotto Netherwing Drake: Short Horns
 			i(207763),	-- Grotto Netherwing Drake: Single Horned Crest
 			i(207758),	-- Grotto Netherwing Drake: Spiked Back
-			i(207773),	-- Grotto Netherwing Drake: Spiked Jaw
+			i(207773),	-- Grotto Netherwing Drake: Spiked Jaw (DM!)
 			i(207775),	-- Grotto Netherwing Drake: Teal Scales
 			i(207767),	-- Grotto Netherwing Drake: Tempestuous Pattern
 			i(207766),	-- Grotto Netherwing Drake: Triple Spiked Crest
@@ -1132,7 +1131,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		header(HEADERS.Item, 194549, {	-- Windborne Velocidrake
 		}),
 		header(HEADERS.Item, 204361, {	-- Winding Slitherdrake
-			pvp(i(210064)),	-- Winding Slitherdrake: Embodiment of the Verdant Gladiator
+			pvp(i(210064)),	-- Winding Slitherdrake: Embodiment of the Verdant Gladiator (DM!)
+			i(203311),	-- Winding Slitherdrake: Hairy Chin (DM!)
 		}),
 	})),
 })));

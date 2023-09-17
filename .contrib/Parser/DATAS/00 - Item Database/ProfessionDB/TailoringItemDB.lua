@@ -156,3 +156,18 @@ i(206398, 28209);	-- Glacial Wrists
 i(206554, 413754);	-- Necrotic Gown
 i(206583, 413903);	-- Peculiar Glacial Mantle
 i(206563, 413788);	-- Shroud of Forbidden Magic
+
+------------------
+-- PATCH 10.2.0 --
+------------------
+--- ITEM ---
+i(208272, 419030);	-- Verdant Combatant's Wildercloth Bands
+i(208273, 419022);	-- Verdant Combatant's Wildercloth Cloak
+i(208274, 419025);	-- Verdant Combatant's Wildercloth Gloves
+i(208275, 419026);	-- Verdant Combatant's Wildercloth Hood
+i(208276, 419027);	-- Verdant Combatant's Wildercloth Leggings
+i(208277, 419029);	-- Verdant Combatant's Wildercloth Sash
+i(208278, 419028);	-- Verdant Combatant's Wildercloth Shoulderpads
+i(208279, 419024);	-- Verdant Combatant's Wildercloth Treads
+i(208280, 419023);	-- Verdant Combatant's Wildercloth Tunic
+i(210670, 426434);	-- Verdant Tether

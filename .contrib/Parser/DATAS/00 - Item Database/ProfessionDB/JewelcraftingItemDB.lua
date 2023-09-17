@@ -188,3 +188,11 @@ i(206551, 413751);	-- Frostwyrm's Icy Gaze
 i(206543, 413743);	-- Gem of the Nerubians
 --- NYI ---
 i(0, 412557);		-- TEST CRUSHING (DNT)
+
+------------------
+-- PATCH 10.2.0 --
+------------------
+--- ITEM ---
+i(210170, 420740);	-- Dreamtender's Charm
+i(208289, 419004);	-- Verdant Combatant's Jeweled Amulet
+i(208290, 419005);	-- Verdant Combatant's Jeweled Signet

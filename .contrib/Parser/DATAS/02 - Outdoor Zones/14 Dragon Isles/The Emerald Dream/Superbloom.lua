@@ -32,6 +32,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				i(210174),	-- Formula: Illusory Adornment: Dreams (RECIPE!)
 				i(210241),	-- Recipe: Dreamwalker's Healing Potion (RECIPE!)
 				i(210242),	-- Recipe: Slumbering Peace Tea (RECIPE!)
+				i(210243),	-- Technique: Contract: Dream Wardens (RECIPE!)
+				i(210490),	-- Technique: Vantus Rune: Amirdrassil, the Dream's Hope (RECIPE!)
 			}),
 		}),
 	}),

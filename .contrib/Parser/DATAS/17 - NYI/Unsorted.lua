@@ -599,6 +599,9 @@ root(ROOTS.Unsorted, {
 			}),
 			n(PROFESSIONS, {
 				i(207461),	-- Schematic: Portable Party Platter (RECIPE!)
+				i(210492),	-- Technique: Grotto Netherwing Drake: Chin Tendrils (RECIPE!)
+				i(210493),	-- Technique: Grotto Netherwing Drake: Spiked Jaw (RECIPE!)
+				i(210491),	-- Technique: Winding Slitherdrake: Hairy Chin (RECIPE!)
 			}),
 			i(192717),	-- Animated Splinter
 			i(202182),	-- Acid Rifle
@@ -839,9 +842,6 @@ root(ROOTS.Unsorted, {
 			i(208146),	-- Incomplete Tablet
 			i(208181),	-- Shandris's Scouting Report
 			i(208184),	-- Dreamy Dust
-			i(208187),	-- Verdant Conduit
-			i(208188),	-- Verdant Conduit
-			i(208189),	-- Verdant Conduit
 			i(208198),	-- Tyr's Guard Bulwark
 			i(208199),	-- Tabard of the Tyr's Guard
 			i(208217),	-- Illusory Scroll of Youth
@@ -849,66 +849,6 @@ root(ROOTS.Unsorted, {
 			i(208230),	-- Anaya's Pendant
 			i(208231),	-- Talisman of Hope
 			i(208232),	-- Singed Darnassian Tabard
-			i(208237),	-- Verdant Combatant's Jeweled Signet
-			i(208238),	-- Verdant Combatant's Jeweled Amulet
-			i(208239),	-- Verdant Combatant's Resilient Boots
-			i(208240),	-- Verdant Combatant's Resilient Chestpiece
-			i(208241),	-- Verdant Combatant's Resilient Mask
-			i(208242),	-- Verdant Combatant's Resilient Shoulderpads
-			i(208243),	-- Verdant Combatant's Resilient Belt
-			i(208244),	-- Verdant Combatant's Resilient Trousers
-			i(208245),	-- Verdant Combatant's Resilient Gloves
-			i(208246),	-- Verdant Combatant's Resilient Wristwraps
-			i(208247),	-- Verdant Combatant's Adamant Treads
-			i(208248),	-- Verdant Combatant's Adamant Chainmail
-			i(208249),	-- Verdant Combatant's Adamant Cowl
-			i(208250),	-- Verdant Combatant's Adamant Epaulettes
-			i(208251),	-- Verdant Combatant's Adamant Girdle
-			i(208252),	-- Verdant Combatant's Adamant Leggings
-			i(208253),	-- Verdant Combatant's Adamant Gauntlets
-			i(208254),	-- Verdant Combatant's Adamant Cuffs
-			i(208255),	-- Verdant Combatant's Wildercloth Leggings
-			i(208256),	-- Verdant Combatant's Wildercloth Shoulderpads
-			i(208257),	-- Verdant Combatant's Wildercloth Treads
-			i(208258),	-- Verdant Combatant's Wildercloth Bands
-			i(208259),	-- Verdant Combatant's Wildercloth Hood
-			i(208260),	-- Verdant Combatant's Wildercloth Gloves
-			i(208261),	-- Verdant Combatant's Wildercloth Tunic
-			i(208262),	-- Verdant Combatant's Wildercloth Sash
-			i(208263),	-- Verdant Combatant's Wildercloth Cloak
-			i(208272),	-- Pattern: Verdant Combatant's Wildercloth Bands
-			i(208273),	-- Pattern: Verdant Combatant's Wildercloth Cloak
-			i(208274),	-- Pattern: Verdant Combatant's Wildercloth Gloves
-			i(208275),	-- Pattern: Verdant Combatant's Wildercloth Hood
-			i(208276),	-- Pattern: Verdant Combatant's Wildercloth Leggings
-			i(208277),	-- Pattern: Verdant Combatant's Wildercloth Sash
-			i(208278),	-- Pattern: Verdant Combatant's Wildercloth Shoulderpads
-			i(208279),	-- Pattern: Verdant Combatant's Wildercloth Treads
-			i(208280),	-- Pattern: Verdant Combatant's Wildercloth Tunic
-			i(208289),	-- Design: Verdant Combatant's Jeweled Amulet
-			i(208290),	-- Design: Verdant Combatant's Jeweled Signet
-			i(208291),	-- Pattern: Verdant Combatant's Resilient Mask
-			i(208292),	-- Pattern: Verdant Combatant's Resilient Chestpiece
-			i(208293),	-- Pattern: Verdant Combatant's Resilient Trousers
-			i(208294),	-- Pattern: Verdant Combatant's Resilient Shoulderpads
-			i(208295),	-- Pattern: Verdant Combatant's Resilient Boots
-			i(208296),	-- Pattern: Verdant Combatant's Resilient Gloves
-			i(208297),	-- Pattern: Verdant Combatant's Resilient Wristwraps
-			i(208298),	-- Pattern: Verdant Combatant's Resilient Belt
-			i(208299),	-- Pattern: Verdant Combatant's Adamant Cowl
-			i(208300),	-- Pattern: Verdant Combatant's Adamant Chainmail
-			i(208301),	-- Pattern: Verdant Combatant's Adamant Leggings
-			i(208302),	-- Pattern: Verdant Combatant's Adamant Epaulettes
-			i(208303),	-- Pattern: Verdant Combatant's Adamant Treads
-			i(208304),	-- Pattern: Verdant Combatant's Adamant Gauntlets
-			i(208305),	-- Pattern: Verdant Combatant's Adamant Cuffs
-			i(208306),	-- Pattern: Verdant Combatant's Adamant Girdle
-			i(208307),	-- Verdant Combatant's Medallion
-			i(208308),	-- Verdant Combatant's Insignia of Alacrity
-			i(208309),	-- Verdant Combatant's Emblem
-			i(208310),	-- Technique: Verdant Combatant's Medallion
-			i(208311),	-- Technique: Verdant Combatant's Insignia of Alacrity
-			i(208312),	-- Technique: Verdant Combatant's Emblem
 			i(208323),	-- Nature's Firebathed Robes
 			i(208324),	-- Scorching Dryad's Chestpiece
 			i(208325),	-- Ignit's Fiery Heart
@@ -1041,9 +981,6 @@ root(ROOTS.Unsorted, {
 			i(208731),	-- Blacksmith Bammer Key
 			i(208738),	-- Ephemeral Pear
 			i(208745),	-- Your Reward [DNT]
-			i(208746),	-- Dreamtender's Charm
-			i(208747),	-- Dreamtender's Charm
-			i(208748),	-- Dreamtender's Charm
 			i(208757),	-- Ash's Recipes to Delight and Nourish your Plant Pals
 			i(208821),	-- Aspects' Token of Merit
 			i(208837),	-- Missing Fruit
@@ -1624,8 +1561,6 @@ root(ROOTS.Unsorted, {
 			i(210163),	-- Verdant Aspirant's Knife
 			i(210164),	-- Verdant Aspirant's Sword
 			i(210166),	-- Verdant Aspirant's Blade
-			i(210169),	-- Pattern: Verdant Conduit
-			i(210170),	-- Design: Dreamtender's Charm
 			i(210180),	-- Emerald Flightstone
 			i(210184),	-- Half-Filled Dreamless Sleep Potion
 			i(210185),	-- Splash Potion of Narcolepsy
@@ -1654,13 +1589,6 @@ root(ROOTS.Unsorted, {
 			i(210235),	-- Spirited Stag's Cape
 			i(210236),	-- Chartreuse Champion's Cloak
 			i(210237),	-- Nipping Night's Necklace
-			i(210243),	-- Technique: Contract: Dream Wardens
-			i(210244),	-- Contract: Dream Wardens
-			i(210245),	-- Contract: Dream Wardens
-			i(210246),	-- Contract: Dream Wardens
-			i(210247),	-- Vantus Rune: Amirdrassil, the Dream's Hope
-			i(210248),	-- Vantus Rune: Amirdrassil, the Dream's Hope
-			i(210249),	-- Vantus Rune: Amirdrassil, the Dream's Hope
 			i(210317),	-- Verdant Aspirant's Wand
 			i(210324),	-- Medal of Honor
 			i(210325),	-- Medal of Honor
@@ -1764,10 +1692,6 @@ root(ROOTS.Unsorted, {
 			i(210473),	-- Larodar's Fiery Reverie
 			i(210474),	-- Tindral's Fowl Fantasia
 			i(210475),	-- Smolderon's Delusions of Grandeur
-			i(210490),	-- Technique: Vantus Rune: Amirdrassil, the Dream's Hope
-			i(210491),	-- Technique: Winding Slitherdrake: Hairy Chin
-			i(210492),	-- Technique: Grotto Netherwing Drake: Chin Tendrils
-			i(210493),	-- Technique: Grotto Netherwing Drake: Spiked Jaw
 			i(210494),	-- Incandescent Essence
 			i(210495),	-- Slumbering Peacebloom Tea
 			i(210496),	-- Recipe: Slumbering Peacebloom Tea
@@ -1820,10 +1744,6 @@ root(ROOTS.Unsorted, {
 			i(210664),	-- Frost Sapling's Adornment
 			i(210666),	-- Crest of the Seething Flamekeeper
 			i(210669),	-- Mark of the Evergreen Dreamsaber
-			i(210670),	-- Pattern: Verdant Tether
-			i(210671),	-- Verdant Tether
-			i(210672),	-- Verdant Tether
-			i(210673),	-- Verdant Tether
 			i(210674),	-- Mark of the Sable Dreamtalon
 			i(210675),	-- Gardener's Lightstaff
 			i(210678),	-- Verdant Gleaner's Scythe

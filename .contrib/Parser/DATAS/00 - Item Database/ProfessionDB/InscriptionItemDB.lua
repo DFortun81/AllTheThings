@@ -1537,3 +1537,16 @@ i(207091, 416137);	-- Glyph of the Shath'Yar
 i(206528, 413515);	-- Shifting Sliver
 i(206532, 413519);	-- Soulscryer
 i(207575, 416690);	-- Wanderer's Guide
+
+------------------
+-- PATCH 10.2.0 --
+------------------
+--- ITEM ---
+i(210243, 425263);	-- Contract: Dream Wardens
+i(210492, 425961);	-- Grotto Netherwing Drake: Chin Tendrils
+i(210493, 425959);	-- Grotto Netherwing Drake: Spiked Jaw
+i(210490, 425954);	-- Vantus Rune: Amirdrassil, the Dream's Hope
+i(208312, 419041);	-- Verdant Combatant's Emblem
+i(208311, 419040);	-- Verdant Combatant's Insignia of Alacrity
+i(208310, 419039);	-- Verdant Combatant's Medallion
+i(210491, 425958);	-- Winding Slitherdrake: Hairy Chin

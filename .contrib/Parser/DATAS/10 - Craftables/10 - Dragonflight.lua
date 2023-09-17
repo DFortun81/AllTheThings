@@ -1667,6 +1667,8 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(196963),	-- Cliffside Wylderdrake: Silver and Blue Armor (DM!)
 			i(196968),	-- Cliffside Wylderdrake: Steel and Yellow Armor (DM!)
 			i(196980),	-- Cliffside Wylderdrake: Triple Head Horns (DM!)
+			i(207761, {["timeline"] = {ADDED_10_2_0}}),	-- Grotto Netherwing Drake: Chin Tendrils (DM!)
+			i(207773, {["timeline"] = {ADDED_10_2_0}}),	-- Grotto Netherwing Drake: Spiked Jaw (DM!)
 			i(197117),	-- Highland Drake: Black Hair (DM!)
 			i(197091),	-- Highland Drake: Silver and Blue Armor (DM!)
 			i(197108),	-- Highland Drake: Spined Head (DM!)
@@ -1684,6 +1686,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(197634),	-- Windborne Velocidrake: Windswept Pattern (DM!)
 			i(203300, {["timeline"] = {ADDED_10_1_0}}),	-- Winding Slitherdrake: Blue and Silver Armor (DM!)
 			i(203314, {["timeline"] = {ADDED_10_1_0}}),	-- Winding Slitherdrake: Curved Chin Horn (DM!)
+			i(203311, {["timeline"] = {ADDED_10_2_0}}),	-- Winding Slitherdrake: Hairy Chin (DM!)
 			i(203364, {["timeline"] = {ADDED_10_1_0}}),	-- Winding Slitherdrake: Small Finned Throat (DM!)
 			i(203324, {["timeline"] = {ADDED_10_1_0}}),	-- Winding Slitherdrake: White Hair (DM!)
 			i(203304, {["timeline"] = {ADDED_10_1_0}}),	-- Winding Slitherdrake: Yellow and Silver Armor (DM!)
@@ -1727,6 +1730,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71562, 383538);	-- Jetscale Sigil+
 			FirstCraft(71563, 383534);	-- Sagescale Sigil
 			FirstCraft(75584, 408272, ADDED_10_1_0);	-- Aberrus, the Shadowed Crucible
+			--FirstCraft(X, 425954, ADDED_10_2_0);	-- Vantus Rune: Amirdrassil, the Dream's Hope
 			FirstCraft(71594, 383546);	-- Vantus Rune: Vault of the Incarnates
 			-- Trinkets
 			FirstCraft(74102, 400026, ADDED_10_0_5);	-- Crimson Combatant's Medallion
@@ -1739,6 +1743,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(74832, 403168, ADDED_10_1_0);	-- Obsidian Combatant's Medallion
 			FirstCraft(74833, 403167, ADDED_10_1_0);	-- Obsidian Combatant's Insignia of Alacrity
 			FirstCraft(74834, 403166, ADDED_10_1_0);	-- Obsidian Combatant's Emblem
+			--FirstCraft(X, 419041, ADDED_10_2_0);	-- Verdant Combatant's Emblem
+			--FirstCraft(X, 419040, ADDED_10_2_0);	-- Verdant Combatant's Insignia of Alacrity
+			--FirstCraft(X, 419039, ADDED_10_2_0);	-- Verdant Combatant's Medallion
 			-- Weapons
 			FirstCraft(71596, 383539);	-- Core Explorer's Compendium
 			FirstCraft(71595, 383540);	-- Crackling Codex of the Isles
@@ -1772,6 +1779,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			-- Contracts
 			FirstCraft(71579, 383592);	-- Contract: Artisan's Consortium
 			FirstCraft(71580, 383593);	-- Contract: Dragonscale Expedition
+			--FirstCraft(X, 425263, ADDED_10_2_0);	-- Contract: Dream Wardens
 			FirstCraft(71581, 383588);	-- Contract: Iskaara Tuskarr
 			FirstCraft(75586, 408278, ADDED_10_1_0);	-- Contract: Loamm Niffen
 			FirstCraft(71578, 383591);	-- Contract: Maruuk Centaur
@@ -1815,9 +1823,13 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			-- Dragonriding -- Winding Slitherdrake
 			FirstCraft(75577, 408218, ADDED_10_1_0);	-- Winding Slitherdrake: Blue and Silver Armor
 			FirstCraft(75579, 408222, ADDED_10_1_0);	-- Winding Slitherdrake: Curved Chin Horn
+			--FirstCraft(X, 425958, ADDED_10_2_0);	-- Winding Slitherdrake: Hairy Chin
 			FirstCraft(75581, 408223, ADDED_10_1_0);	-- Winding Slitherdrake: Small Finned Throat
 			FirstCraft(75580, 408221, ADDED_10_1_0);	-- Winding Slitherdrake: White Hair
 			FirstCraft(75578, 408220, ADDED_10_1_0);	-- Winding Slitherdrake: Yellow and Silver Armor
+			-- Dragonriding -- Grotto Netherwing Drake
+			--FirstCraft(X, 425961, ADDED_10_2_0);	-- Grotto Netherwing Drake: Chin Tendrils
+			--FirstCraft(X, 425959, ADDED_10_2_0);	-- Grotto Netherwing Drake: Spiked Jaw
 			-- Artisan Curios
 			FirstCraft(74481, 400811, ADDED_10_0_7);	-- Arcane Dispelling Rune
 			-- Glyphs
@@ -1910,6 +1922,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(198506),	-- Contract: Dragonscale Expedition+
 			i(198507),	-- Contract: Dragonscale Expedition++
 			i(198508),	-- Contract: Dragonscale Expedition+++
+			i(210244, {["timeline"] = {ADDED_10_2_0}}),	-- Contract: Dream Wardens+
+			i(210245, {["timeline"] = {ADDED_10_2_0}}),	-- Contract: Dream Wardens++
+			i(210246, {["timeline"] = {ADDED_10_2_0}}),	-- Contract: Dream Wardens+++
 			i(198494),	-- Contract: Iskaara Tuskarr+
 			i(198495),	-- Contract: Iskaara Tuskarr++
 			i(198496),	-- Contract: Iskaara Tuskarr+++
@@ -2001,6 +2016,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(204858, {["timeline"] = {ADDED_10_1_0}}),	-- Vantus Rune: Aberrus, the Shadowed Crucible+
 			i(204859, {["timeline"] = {ADDED_10_1_0}}),	-- Vantus Rune: Aberrus, the Shadowed Crucible++
 			i(204860, {["timeline"] = {ADDED_10_1_0}}),	-- Vantus Rune: Aberrus, the Shadowed Crucible+++
+			i(210247, {["timeline"] = {ADDED_10_2_0}}),	-- Vantus Rune: Amirdrassil, the Dream's Hope+
+			i(210248, {["timeline"] = {ADDED_10_2_0}}),	-- Vantus Rune: Amirdrassil, the Dream's Hope++
+			i(210249, {["timeline"] = {ADDED_10_2_0}}),	-- Vantus Rune: Amirdrassil, the Dream's Hope+++
 			i(198491),	-- Vantus Rune: Vault of the Incarnates+
 			i(198492),	-- Vantus Rune: Vault of the Incarnates++
 			i(198493),	-- Vantus Rune: Vault of the Incarnates+++
@@ -2040,6 +2058,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(204166, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Emblem
 			i(204165, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Insignia of Alacrity
 			i(204164, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Medallion
+			i(208309, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Emblem
+			i(208308, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Insignia of Alacrity
+			i(208307, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Medallion
 			i(198478),	-- Darkmoon Deck Box: Dance
 			i(194872),	-- Darkmoon Deck Box: Inferno
 			i(198477),	-- Darkmoon Deck Box: Rime
@@ -2147,6 +2168,8 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(193000),	-- Ring-Bound Hourglass
 			i(192999),	-- Signet of Titanic Insight
 			i(201759),	-- Torc of Passed Time
+			i(208238, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Jeweled Amulet
+			i(208237, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Jeweled Signet
 		}),
 		filter(BATTLE_PETS, {
 			i(193885),	-- Jeweled Amber Whelpling (PET!)
@@ -2171,6 +2194,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71675, 374478);	-- Frameless Lens
 			FirstCraft(71676, 374480);	-- Glossy Stone
 			FirstCraft(71672, 374475);	-- Shimmering Clasp
+			--FirstCraft(X, 420740, ADDED_10_2_0),	-- Dreamtender's Charm
 			-- Rudimentary Gems
 			FirstCraft(71625, 374437);	-- Crafty Queen's Ruby
 			FirstCraft(71623, 374439);	-- Energized Vibrant Emerald
@@ -2226,6 +2250,8 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(74806, 403132, ADDED_10_1_0);	-- Obsidian Combatant's Jeweled Signet
 			FirstCraft(71607, 376233);	-- Band of New Beginnings
 			FirstCraft(71602, 374494);	-- Pendant of Impending Perils
+			--FirstCraft(X, 419004, ADDED_10_2_0);	-- Verdant Combatant's Jeweled Amulet
+			--FirstCraft(X, 419005, ADDED_10_2_0);	-- Verdant Combatant's Jeweled Signet
 			-- Statues & Carvings
 			FirstCraft(71614, 374509);	-- Djaradin's "Pinata"
 			FirstCraft(75607, 408398, ADDED_10_1_0);	-- Figurine of the Gathering Storm
@@ -2368,6 +2394,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(192889),	-- Dreamer's Vision+
 			i(202049),	-- Dreamer's Vision++
 			i(202055),	-- Dreamer's Vision+++
+			i(208746, {["timeline"] = {ADDED_10_2_0}}),	-- Dreamtender's Charm+
+			i(208747, {["timeline"] = {ADDED_10_2_0}}),	-- Dreamtender's Charm++
+			i(208748, {["timeline"] = {ADDED_10_2_0}}),	-- Dreamtender's Charm+++
 			i(192891),	-- Earthwarden's Prize+
 			i(202051),	-- Earthwarden's Prize++
 			i(202057),	-- Earthwarden's Prize+++
@@ -2493,6 +2522,14 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 				i(204706, {["timeline"] = {ADDED_10_1_0}}),	-- Spore Colony Shoulderguards
 				i(193457),	-- String of Spiritual Knick-Knacks
 				i(193452),	-- Toxic Thorn Footwraps
+				i(208243, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Resilient Belt
+				i(208239, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Resilient Boots
+				i(208240, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Resilient Chestpiece
+				i(208245, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Resilient Gloves
+				i(208241, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Resilient Mask
+				i(208242, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Resilient Shoulderpads
+				i(208244, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Resilient Trousers
+				i(208246, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Resilient Wristwraps
 			}),
 			filter(MAIL, {
 				i(193466),	-- Acidic Hailstone Treads
@@ -2535,6 +2572,14 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 				i(201949),	-- Trailblazer's Toughened Legguards
 				i(201947),	-- Trailblazer's Toughened Spikes
 				i(193460),	-- Venom-Steeped Stompers
+				i(208248, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Adamant Chainmail
+				i(208249, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Adamant Cowl
+				i(208254, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Adamant Cuffs
+				i(208250, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Adamant Epaulettes
+				i(208253, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Adamant Gauntlets
+				i(208251, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Adamant Girdle
+				i(208252, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Adamant Leggings
+				i(208247, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Adamant Treads
 				i(193463),	-- Wind Spirit's Lasso
 			}),
 		}),
@@ -2644,6 +2689,22 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(74812, 403136, ADDED_10_1_0);	-- Obsidian Combatant's Resilient Shoulderpads
 			FirstCraft(74811, 403135, ADDED_10_1_0);	-- Obsidian Combatant's Resilient Trousers
 			FirstCraft(74814, 403139, ADDED_10_1_0);	-- Obsidian Combatant's Resilient Wristwraps
+			--FirstCraft(X, 419015, ADDED_10_2_0);	-- Verdant Combatant's Adamant Chainmail
+			--FirstCraft(X, 419014, ADDED_10_2_0);	-- Verdant Combatant's Adamant Cowl
+			--FirstCraft(X, 419020, ADDED_10_2_0);	-- Verdant Combatant's Adamant Cuffs
+			--FirstCraft(X, 419017, ADDED_10_2_0);	-- Verdant Combatant's Adamant Epaulettes
+			--FirstCraft(X, 419018, ADDED_10_2_0);	-- Verdant Combatant's Adamant Gauntlets
+			--FirstCraft(X, 419021, ADDED_10_2_0);	-- Verdant Combatant's Adamant Girdle
+			--FirstCraft(X, 419016, ADDED_10_2_0);	-- Verdant Combatant's Adamant Leggings
+			--FirstCraft(X, 419019, ADDED_10_2_0);	-- Verdant Combatant's Adamant Treads
+			--FirstCraft(X, 419013, ADDED_10_2_0);	-- Verdant Combatant's Resilient Belt
+			--FirstCraft(X, 419011, ADDED_10_2_0);	-- Verdant Combatant's Resilient Boots
+			--FirstCraft(X, 419007, ADDED_10_2_0);	-- Verdant Combatant's Resilient Chestpiece
+			--FirstCraft(X, 419010, ADDED_10_2_0);	-- Verdant Combatant's Resilient Gloves
+			--FirstCraft(X, 419006, ADDED_10_2_0);	-- Verdant Combatant's Resilient Mask
+			--FirstCraft(X, 419009, ADDED_10_2_0);	-- Verdant Combatant's Resilient Shoulderpads
+			--FirstCraft(X, 419008, ADDED_10_2_0);	-- Verdant Combatant's Resilient Trousers
+			--FirstCraft(X, 419012, ADDED_10_2_0);	-- Verdant Combatant's Resilient Wristwraps
 			-- Decayed Patter
 			FirstCraft(71715, 375151);	-- Acidic Hailstone Treads
 			FirstCraft(71686, 375142);	-- Slimy Expulsion Boots
@@ -2663,6 +2724,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71758, 375159);	-- Fang Adornments
 			FirstCraft(75287, 406275, ADDED_10_1_0);	-- Shadowflame-Tempered Armor Patch
 			FirstCraft(71757, 375160);	-- Toxified Armor Patch
+			--FirstCraft(X, 418579, ADDED_10_2_0);	-- Verdant Conduit
 			-- Armor Kits
 			FirstCraft(71741, 375162);	-- Fierce Armor Kit
 			FirstCraft(71742, 375161);	-- Frosted Armor Kit
@@ -2701,6 +2763,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(193469),	-- Toxified Armor Patch+
 			i(193552),	-- Toxified Armor Patch++
 			i(193555),	-- Toxified Armor Patch+++
+			i(208187, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Conduit+
+			i(208188, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Conduit++
+			i(208189, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Conduit+++
 		}),
 		filter(PROFESSION_EQUIPMENT, {
 			i(193487, {["requireSkill"] = ALCHEMY}),	-- Alchemist's Hat
@@ -2813,12 +2878,15 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			r(389463),	-- Hardened Serevite Deposit
 			r(389420),	-- Infurious Draconium Deposit
 			r(389464),	-- Infurious Serevite Deposit
+			r(421247, {["timeline"] = {ADDED_10_2_0}}),	-- Living Draconium Deposit
+			r(421244, {["timeline"] = {ADDED_10_2_0}}),	-- Living Serevite Deposit
 			r(405121, {["timeline"] = {ADDED_10_1_0}}),	-- Metamorphic Draconium Deposit
 			r(405120, {["timeline"] = {ADDED_10_1_0}}),	-- Metamorphic Serevite Deposit
 			r(384690),	-- Molten Draconium Deposit
 			r(389459),	-- Molten Serevite Deposit
 			r(389701),	-- Overload Hardened Node
 			r(389704),	-- Overload Infurious Node
+			r(422809, {["timeline"] = {ADDED_10_2_0}}),	-- Overload Living Deposit
 			r(405131, {["timeline"] = {ADDED_10_1_0}}),	-- Overload Metamorphic Deposit
 			r(389700),	-- Overload Molten Node
 			r(389702),	-- Overload Primal Node
@@ -2839,6 +2907,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(72347, 389458, ADDED_10_0_7);	-- Draconium Seam
 			FirstCraft(71956, 389413);	-- Hardened Draconium
 			FirstCraft(71962, 389420);	-- Infurious Draconium
+			--FirstCraft(X, 421247, ADDED_10_2_0);	-- Living Draconium Deposit
 			FirstCraft(75140, 405121, ADDED_10_1_0);	-- Metamorphic Draconium
 			FirstCraft(71954, 384690);	-- Molten Draconium
 			FirstCraft(71960, 389409);	-- Primal Draconium
@@ -2848,6 +2917,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(72346, 389465, ADDED_10_0_7);	-- Serevite Seam
 			FirstCraft(71955, 389463);	-- Hardened Serevite
 			FirstCraft(71961, 389464);	-- Infurious Serevite
+			--FirstCraft(X, 421244, ADDED_10_2_0);	-- Living Serevite Deposit
 			FirstCraft(75139, 405120, ADDED_10_1_0);	-- Metamorphic Serevite
 			FirstCraft(71953, 389459);	-- Molten Serevite
 			FirstCraft(71959, 389462);	-- Primal Serevite
@@ -2856,6 +2926,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			-- Overload
 			FirstCraft(71964, 389701);	-- Overload Hardened Node
 			FirstCraft(71967, 389704);	-- Overload Infurious Node
+			--FirstCraft(X, 422809, ADDED_10_2_0);	-- Overload Living Deposit
 			FirstCraft(75137, 405131, ADDED_10_1_0);	-- Overload Metamorphic Node
 			FirstCraft(71963, 389700);	-- Overload Molten Node
 			FirstCraft(71966, 389702);	-- Overload Primal Node
@@ -3057,6 +3128,16 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(201939),	-- Surveyor's Seasoned Pants
 			i(201937),	-- Surveyor's Seasoned Shoulders
 			i(193500),	-- Surveyor's Tailored Cloak
+			i(205025, {["timeline"] = {ADDED_10_1_0}}),	-- Undulating Sporecloak
+			i(208258, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Wildercloth Bands
+			i(208263, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Wildercloth Cloak
+			i(208260, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Wildercloth Gloves
+			i(208259, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Wildercloth Hood
+			i(208255, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Wildercloth Leggings
+			i(208262, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Wildercloth Sash
+			i(208256, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Wildercloth Shoulderpads
+			i(208257, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Wildercloth Treads
+			i(208261, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Wildercloth Tunic
 			i(193516),	-- Vibrant Wildercloth Girdle
 			i(193504),	-- Vibrant Wildercloth Handwraps
 			i(193523),	-- Vibrant Wildercloth Headcover
@@ -3106,7 +3187,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(194015),	-- Temporal Spellthread++
 			i(194016),	-- Temporal Spellthread+++
 			i(203415, {["timeline"] = {ADDED_10_0_7}}),	-- Traditional Morqut Kite
-			i(205025, {["timeline"] = {ADDED_10_1_0}}),	-- Undulating Sporecloak
+			i(210671, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Tether+
+			i(210672, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Tether++
+			i(210673, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Tether+++
 			i(193953),	-- Vibrant Polishing Cloth+
 			i(193954),	-- Vibrant Polishing Cloth++
 			i(193955),	-- Vibrant Polishing Cloth+++
@@ -3215,6 +3298,15 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(72509, 395815);	-- Surveyor's Seasoned Shoulders
 			FirstCraft(71792, 376506);	-- Surveyor's Tailored Cloak
 			FirstCraft(75590, 408318, ADDED_10_1_0);	-- Undulating Sporecloak
+			--FirstCraft(X, 419030, ADDED_10_2_0);	-- Verdant Combatant's Wildercloth Bands
+			--FirstCraft(X, 419022, ADDED_10_2_0);	-- Verdant Combatant's Wildercloth Cloak
+			--FirstCraft(X, 419025, ADDED_10_2_0);	-- Verdant Combatant's Wildercloth Gloves
+			--FirstCraft(X, 419026, ADDED_10_2_0);	-- Verdant Combatant's Wildercloth Hood
+			--FirstCraft(X, 419027, ADDED_10_2_0);	-- Verdant Combatant's Wildercloth Leggings
+			--FirstCraft(X, 419029, ADDED_10_2_0);	-- Verdant Combatant's Wildercloth Sash
+			--FirstCraft(X, 419028, ADDED_10_2_0);	-- Verdant Combatant's Wildercloth Shoulderpads
+			--FirstCraft(X, 419024, ADDED_10_2_0);	-- Verdant Combatant's Wildercloth Treads
+			--FirstCraft(X, 419023, ADDED_10_2_0);	-- Verdant Combatant's Wildercloth Tunic
 			FirstCraft(71803, 376517);	-- Vibrant Wildercloth Girdle
 			FirstCraft(71799, 376513);	-- Vibrant Wildercloth Handwraps
 			FirstCraft(71800, 376514);	-- Vibrant Wildercloth Headcover

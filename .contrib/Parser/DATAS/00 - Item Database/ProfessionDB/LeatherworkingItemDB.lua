@@ -2235,3 +2235,25 @@ i(206405, 28219);	-- Polar Tunic
 i(207577, 416692);	-- Sanctified Leather Hat
 i(206773, 414566);	-- Scourged Scales
 i(206530, 413517);	-- Skyfury Headdress
+
+------------------
+-- PATCH 10.2.0 --
+------------------
+--- ITEM ---
+i(208300, 419015);	-- Verdant Combatant's Adamant Chainmail
+i(208299, 419014);	-- Verdant Combatant's Adamant Cowl
+i(208305, 419020);	-- Verdant Combatant's Adamant Cuffs
+i(208302, 419017);	-- Verdant Combatant's Adamant Epaulettes
+i(208304, 419018);	-- Verdant Combatant's Adamant Gauntlets
+i(208306, 419021);	-- Verdant Combatant's Adamant Girdle
+i(208301, 419016);	-- Verdant Combatant's Adamant Leggings
+i(208303, 419019);	-- Verdant Combatant's Adamant Treads
+i(208298, 419013);	-- Verdant Combatant's Resilient Belt
+i(208295, 419011);	-- Verdant Combatant's Resilient Boots
+i(208292, 419007);	-- Verdant Combatant's Resilient Chestpiece
+i(208296, 419010);	-- Verdant Combatant's Resilient Gloves
+i(208291, 419006);	-- Verdant Combatant's Resilient Mask
+i(208294, 419009);	-- Verdant Combatant's Resilient Shoulderpads
+i(208293, 419008);	-- Verdant Combatant's Resilient Trousers
+i(208297, 419012);	-- Verdant Combatant's Resilient Wristwraps
+i(210169, 418579);	-- Verdant Conduit

@@ -159,6 +159,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				e(2564, {	-- Gnarlroot
 					["crs"] = { 209333 },	-- Gnarlroot
 					["g"] = {
+						i(210170),	-- Design: Dreamtender's Charm (RECIPE!)
 					},
 				}),
 				e(2554, {	-- Igira the Cruel
@@ -178,6 +179,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						208363,	-- Urctos <Council of Dreams>
 					},
 					["g"] = {
+						i(210169),	-- Pattern: Verdant Conduit (RECIPE!)
 					},
 				}),
 				e(2553, {	-- Larodar, Keeper of the Flame
@@ -194,6 +196,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				e(2556, {	-- Nymue, Weaver of the Cycle
 					["crs"] = { 206172 },	-- Nymue <Weaver of the Cycle>
 					["g"] = {
+						i(210670),	-- Pattern: Verdant Tether (RECIPE!)
 					},
 				}),
 				e(2565, {	-- Tindral Sageswift, Seer of the Flame
