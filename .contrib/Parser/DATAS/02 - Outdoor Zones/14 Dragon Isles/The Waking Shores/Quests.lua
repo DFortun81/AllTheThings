@@ -1181,6 +1181,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 			}),
 			q(70742, {	-- Runs in the Family
+				["sourceQuests"] = { 70446 },	-- A Personal History
 				["provider"] = { "n", 192795 },	-- Scalecommander Emberthal
 				["coord"] = { 44.7, 64.1, THE_WAKING_SHORES },
 				["classes"] = { EVOKER },
