@@ -1881,7 +1881,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Runic Breastplate",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { "removed 4.0.1", ADDED_10_1_7 },
 					["recipeID"] = 16731,
 				},
 				{

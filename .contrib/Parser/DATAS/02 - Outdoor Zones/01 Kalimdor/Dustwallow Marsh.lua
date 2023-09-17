@@ -3508,13 +3508,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(12718, {	-- Plans: Runic Breastplate (RECIPE!)
 					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },
+					-- #if BEFORE 4.0.3
 					["crs"] = {
 						4368,	-- Strashaz Myrmidon
 						16072,	-- Tidelord Rrurgaz
-						-- #if AFTER 10.1.7
-						44390,	-- Spiny Rock Crab
-						-- #endif
 					},
+					-- #elseif AFTER 10.1.7
+					["crs"] = {
+						44390,	-- Spiny Rock Crab
+					},
+					-- #endif
 				}),
 				-- #if BEFORE 4.3.0
 				i(12714, {	-- Plans: Runic Plate Helm (RECIPE!)
