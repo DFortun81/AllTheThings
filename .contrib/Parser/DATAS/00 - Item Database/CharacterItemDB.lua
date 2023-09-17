@@ -216,3 +216,21 @@ iq(139314, 76370, WARLOCK);			-- Grimoire of the Abyssal
 -- 77184 Probably Normal Felhunter
 --- NYI ---
 iq(139313, nil, WARLOCK);			-- Grimoire of the Terrorguard
+
+------------------
+-- PATCH 10.2.0 --
+------------------
+iq(210735, 78523, DRUID);	-- Mark of the Auric Dreamstag
+iq(210683, 78513, DRUID);	-- Mark of the Dreamtalon Matriarch
+iq(210669, 78507, DRUID);	-- Mark of the Evergreen Dreamsaber
+iq(210751, 78528, DRUID);	-- Mark of the Hibernating Runebear
+iq(210650, 78503, DRUID);	-- Mark of the Keen-Eyed Dreamsaber
+iq(210738, 78519, DRUID);	-- Mark of the Loamy Umbraclaw
+iq(210731, 78522, DRUID);	-- Mark of the Lush Dreamstag
+iq(210674, 78511, DRUID);	-- Mark of the Sable Dreamtalon
+iq(210535, 78448, DRUID);	-- Mark of the Slumbering Somnowl
+iq(210736, 78524, DRUID);	-- Mark of the Smoldering Dreamstag
+iq(210739, 78520, DRUID);	-- Mark of the Snowy Umbraclaw
+iq(210684, 78515, DRUID);	-- Mark of the Thriving Dreamtalon
+iq(210647, 78481, DRUID);	-- Mark of the Umbramane
+iq(210729, 78517, DRUID);	-- Mark of the Verdant Bristlebruin

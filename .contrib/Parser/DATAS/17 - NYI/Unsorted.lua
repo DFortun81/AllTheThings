@@ -589,6 +589,26 @@ root(ROOTS.Unsorted, {
 				i(210060),	-- Shadow Dusk Dreamsaber (MOUNT!)
 				i(210059),	-- Winter Night Dreamsaber (MOUNT!)
 			}),
+			filter(MISC, {
+				i(210735),	-- Mark of the Auric Dreamstag (CI!)
+				i(210683),	-- Mark of the Dreamtalon Matriarch (CI!)
+				i(210669),	-- Mark of the Evergreen Dreamsaber (CI!)
+				i(210751),	-- Mark of the Hibernating Runebear (CI!)
+				i(210650),	-- Mark of the Keen-Eyed Dreamsaber (CI!)
+				i(210738),	-- Mark of the Loamy Umbraclaw (CI!)
+				i(210731),	-- Mark of the Lush Dreamstag (CI!)
+				i(210674),	-- Mark of the Sable Dreamtalon (CI!)
+				i(210535),	-- Mark of the Slumbering Somnowl (CI!)
+				i(210736),	-- Mark of the Smoldering Dreamstag (CI!)
+				i(210739),	-- Mark of the Snowy Umbraclaw (CI!)
+				i(210684),	-- Mark of the Thriving Dreamtalon (CI!)
+				i(210647),	-- Mark of the Umbramane (CI!)
+				i(210729),	-- Mark of the Verdant Bristlebruin (CI!)
+				i(210755),	-- Silent Mark of the Dreamsaber
+				i(210767),	-- Silent Mark of the Dreamstag
+				i(210764),	-- Silent Mark of the Dreamtalon
+				i(210766),	-- Silent Mark of the Umbraclaw
+			}),
 			filter(TOYS, {
 				i(210411),	-- Fast Growing Seed (TOY!) [Emerald Dream?]
 				i(209859),	-- Festive Trans-Dimensional Bird Whistle (TOY!) [Winter Veil?]
@@ -603,6 +623,7 @@ root(ROOTS.Unsorted, {
 				i(210493),	-- Technique: Grotto Netherwing Drake: Spiked Jaw (RECIPE!)
 				i(210491),	-- Technique: Winding Slitherdrake: Hairy Chin (RECIPE!)
 			}),
+			i(210730),	-- Mark of the Dream Wardens
 			i(192717),	-- Animated Splinter
 			i(202182),	-- Acid Rifle
 			i(202186),	-- Boom Weed
@@ -1716,7 +1737,6 @@ root(ROOTS.Unsorted, {
 			i(210519),	-- Verdant Gladiator's Pulverizer
 			i(210520),	-- Verdant Gladiator's Sword
 			i(210521),	-- Verdant Gladiator's Shotel
-			i(210535),	-- Mark of the Slumbering Somnowl
 			i(210540),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leather - HEAD 2
 			i(210541),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - HEAD 2
 			i(210542),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - FEET 3
@@ -1735,21 +1755,15 @@ root(ROOTS.Unsorted, {
 			i(210572),	-- Verdant Equipment Chest
 			i(210595),	-- Dreaming Equipment Chest
 			i(210645),	-- Feather of Friends
-			i(210647),	-- Mark of the Umbramane
-			i(210650),	-- Mark of the Keen-Eyed Dreamsaber
 			i(210657),	-- Gently Shaken Gift
 			i(210661),	-- Dreamcatcher's Crescent
 			i(210662),	-- Ochre Ornament of the Grove
 			i(210663),	-- Circle of Nature's Youth
 			i(210664),	-- Frost Sapling's Adornment
 			i(210666),	-- Crest of the Seething Flamekeeper
-			i(210669),	-- Mark of the Evergreen Dreamsaber
-			i(210674),	-- Mark of the Sable Dreamtalon
 			i(210675),	-- Gardener's Lightstaff
 			i(210678),	-- Verdant Gleaner's Scythe
 			i(210682),	-- Camper's Knife
-			i(210683),	-- Mark of the Dreamtalon Matriarch
-			i(210684),	-- Mark of the Thriving Dreamtalon
 			i(210686),	-- Grovekeeper's Barrier
 			i(210687),	-- Ironfur Sample
 			i(210700),	-- Auburn Scavenger Gauntlets
@@ -1766,24 +1780,12 @@ root(ROOTS.Unsorted, {
 			i(210214),	-- Ouroboreal Necklet
 			i(210727),	-- Pollenfused Bristlebruin Fur Sample
 			i(210728),	-- Moon-Blessed Claw
-			i(210729),	-- Mark of the Verdant Bristlebruin
-			i(210730),	-- Mark of the Dream Wardens
-			i(210731),	-- Mark of the Lush Dreamstag
-			i(210735),	-- Mark of the Auric Dreamstag
-			i(210736),	-- Mark of the Smoldering Dreamstag
 			i(210737),	-- Ashphodel Research Notes
-			i(210738),	-- Mark of the Loamy Umbraclaw
-			i(210739),	-- Mark of the Snowy Umbraclaw
-			i(210751),	-- Mark of the Hibernating Runebear
 			i(210753),	-- Scale of the Prismatic Whiskerfish
 			i(210754),	-- Feather of the Blazing Somnowl
-			i(210755),	-- Silent Mark of the Dreamsaber
 			i(210756),	-- Satchel of Drake's Dreaming Crests
 			i(210757),	-- Scales of Remorse
 			i(210762),	-- Clutch of Wyrm's Dreaming Crests
-			i(210764),	-- Silent Mark of the Dreamtalon
-			i(210766),	-- Silent Mark of the Umbraclaw
-			i(210767),	-- Silent Mark of the Dreamstag
 			i(210768),	-- Bouquet of Aspect's Dreaming Crests
 			i(210770),	-- Satchel of Drake's Dreaming Crests
 			i(210776),	-- Lesser Dream Infusion
