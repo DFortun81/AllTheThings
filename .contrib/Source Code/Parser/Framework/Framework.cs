@@ -648,14 +648,14 @@ namespace ATT
         /// <param name="modID">The modID.</param>
         /// <param name="minLevel">The minimum required level.</param>
         /// <returns>Whether or not the data is valid.</returns>
-        private static bool Process(IDictionary<string, object> data, long modID, long minLevel)
+        private static bool Process(IDictionary<string, object> data, long modID, long minLevel, long phase, long awp)
         {
             // Check to make sure the data is valid.
             if (data == null) return false;
 
             if (MergeItemData)
             {
-                if (!DataValidation(data, ref modID, ref minLevel))
+                if (!DataValidation(data, ref modID, ref minLevel, ref awp))
                     return false;
             }
             else
@@ -665,8 +665,23 @@ namespace ATT
             }
 
             // If this container has an aqd or hqd, then process those objects as well.
-            if (data.TryGetValue("aqd", out IDictionary<string, object> qd)) Process(qd, modID, minLevel);
-            if (data.TryGetValue("hqd", out qd)) Process(qd, modID, minLevel);
+            if (data.TryGetValue("aqd", out IDictionary<string, object> qd)) Process(qd, modID, minLevel, phase, awp);
+            if (data.TryGetValue("hqd", out qd)) Process(qd, modID, minLevel, phase, awp);
+
+            // If this container has an AWP, determine if it's greater than the one supplied, then keep it, otherwise get rid of it.
+            if (data.TryGetValue("awp", out long myAWP))
+            {
+                if (myAWP == awp)
+                {
+                    // If it's equal to the current awp, strip it out. (no need to repeat data)
+                    data.Remove("awp");
+                }
+                else
+                {
+                    // Otherwise we want to set the current awp to this value when we process the relative groups.
+                    awp = myAWP;
+                }
+            }
 
             // If this container has groups, then process those groups as well.
             if (data.TryGetValue("g", out List<object> groups))
@@ -677,7 +692,7 @@ namespace ATT
                 var previousDifficultyRoot = DifficultyRoot;
                 var previousDifficulty = NestedDifficultyID;
 
-                Process(groups, modID, minLevel);
+                Process(groups, modID, minLevel, phase, awp);
 
                 // Parent field consolidation now that groups have been processed
                 if (!MergeItemData)
@@ -715,7 +730,7 @@ namespace ATT
         /// * Validation of raw data<para/>
         /// </summary>
         /// <param name="data"></param>
-        private static bool DataValidation(IDictionary<string, object> data, ref long modID, ref long minLevel)
+        private static bool DataValidation(IDictionary<string, object> data, ref long modID, ref long minLevel, ref long awp)
         {
             // Retail has no reason to include Objective groups since the in-game Quest system does not warrant ATT including all this extra information
             // Crieve wants objectives and doesn't agree with this, but will allow it outside of Classic Builds.
@@ -1947,74 +1962,64 @@ namespace ATT
             // Check to see what patch this data was made relevant for.
             if (data.TryGetValue("timeline", out object timelineRef) && timelineRef is List<object> timeline)
             {
-                // 2.0.1 or older items.
                 int removed = 0;
                 var index = 0;
-                long lastVersion = 0;
-                long addedPatch = 0;
-                long removedPatch = 0;
+                var lastIndex = timeline.Count - 1;
+                long addedPatch = 10000;
+                long removedPatch = 10000;
                 foreach (var entry in timeline)
                 {
                     var commandSplit = Convert.ToString(entry).Split(' ');
                     var version = commandSplit[1].Split('.').ConvertVersion().ConvertToGameVersion();
-                    if (version > lastVersion) lastVersion = version;
                     switch (commandSplit[0])
                     {
                         // Note: Adding command options here requires adjusting the filter Regex for 'timeline' entries during MergeStringArrayData
                         case "created":
                             {
-                                if (CURRENT_SHORT_RELEASE_VERSION < version) return false;    // Invalid
-                                else removed = 1;
+                                if (CURRENT_SHORT_RELEASE_VERSION < version)
+                                {
+                                    // Not implemented yet and doesn't exist in the database.
+                                    return false;    // Invalid
+                                }
+
+                                // Mark this as Never Implemented
+                                removed = 1;
                                 break;
                             }
                         case "added":
                             {
-                                // If this is the first patch the thing was added.
-                                if (index == 0)
+                                // If it hasn't happened yet, then do a thing.
+                                if (CURRENT_SHORT_RELEASE_VERSION < version)
                                 {
-                                    if (CURRENT_SHORT_RELEASE_VERSION < version)
+                                    // If this is the first patch the thing was added...
+                                    if (index == 0)
                                     {
+                                        // Not implemented yet and likely doesn't exist in the database.
+                                        // NOTE: If an item exists in the database but wasn't made available, use "created" instead!
                                         return false;    // Invalid
                                     }
-                                    else if (CURRENT_SHORT_RELEASE_VERSION == version)
-                                    {
-                                        removed = 0;
-
-                                        // Mark the first patch this comes back on.
-                                        if (addedPatch == 0) addedPatch = version;
-                                    }
-                                    else removed = 0;
                                 }
                                 else
                                 {
-                                    if (CURRENT_SHORT_RELEASE_VERSION > version)
-                                    {
-                                        removed = 0;
-                                        addedPatch = 0;
-                                    }
-                                    else if (CURRENT_SHORT_RELEASE_VERSION == version)
-                                    {
-                                        removed = 0;
-
-                                        // Mark the first patch this comes back on.
-                                        if (addedPatch == 0) addedPatch = version;
-                                    }
-                                    else if (removed == 4 || removed == 2 || removed == 1 || removedPatch > 0)
-                                    {
-                                        // Mark the first patch this comes back on.
-                                        if (addedPatch == 0) addedPatch = version;
-                                    }
+                                    // Cancel the Removed tag.
+                                    removed = 0;
                                 }
+
+                                // Mark the most relevant patch this comes back on.
+                                if (addedPatch <= CURRENT_SHORT_RELEASE_VERSION || removed > 0) addedPatch = version;
                                 break;
                             }
                         case "deleted":
                             {
-                                if (CURRENT_SHORT_RELEASE_VERSION >= version) removed = 4;
-                                else
+                                if (index == lastIndex && CURRENT_SHORT_RELEASE_VERSION >= version)
                                 {
-                                    // Mark the first patch this was removed on. (the upcoming patch)
-                                    if (removedPatch == 0) removedPatch = version;
+                                    // We don't want things that got deleted to be in the addon.
+                                    // NOTE: If it's not the last entry, that means it might have been readded later?
+                                    return false;    // Invalid
                                 }
+
+                                // Mark the first patch this was removed on. (the upcoming patch)
+                                if (removedPatch <= 10000) removedPatch = version;
                                 break;
                             }
                         case "removed":
@@ -2023,28 +2028,28 @@ namespace ATT
                                 else
                                 {
                                     // Mark the first patch this was removed on. (the upcoming patch)
-                                    if (removedPatch == 0) removedPatch = version;
+                                    if (removedPatch <= 10000) removedPatch = version;
                                 }
                                 break;
                             }
                         case "blackmarket":
                             {
+                                // Mark the most relevant patch this comes back on.
+                                if (addedPatch <= CURRENT_SHORT_RELEASE_VERSION || removed > 0) addedPatch = version;
+
+                                // NOTE: This should be deprecated, if it's in the blackmarket, that in itself is a separate source.
+                                // It doesn't mean the original source ever came back!
                                 if (CURRENT_SHORT_RELEASE_VERSION >= version) removed = 3;
-                                else if (removed == 4 || removed == 2)
-                                {
-                                    // Mark the first patch this comes back on.
-                                    if (addedPatch == 0) addedPatch = version;
-                                }
                                 break;
                             }
                         case "timewalking":
                             {
+                                // Mark the most relevant patch this comes back on.
+                                if (addedPatch <= CURRENT_SHORT_RELEASE_VERSION || removed > 0) addedPatch = version;
+
+                                // NOTE: This should be deprecated, if it's in the timewalking, that in itself is a separate source.
+                                // It doesn't mean the original source ever came back!
                                 if (CURRENT_SHORT_RELEASE_VERSION >= version) removed = 5;
-                                else if (removed == 4 || removed == 2)
-                                {
-                                    // Mark the first patch this comes back on.
-                                    if (addedPatch == 0) addedPatch = version;
-                                }
                                 break;
                             }
                     }
@@ -2066,27 +2071,18 @@ namespace ATT
                     case 5:
                         data["e"] = 1271;
                         break;
-                    // Deleted
-                    case 4:
-                        data["u"] = 2;
-                        break;
-                    // Removed From Game
-                    case 2:
+                    
+                    case 4: // Deleted
+                    case 2: // Removed From Game
                         data["u"] = 2;
                         break;
                 }
 
-                // Future Returning Item
-                if (addedPatch != 0)
-                {
-                    data["awp"] = addedPatch; // "Added With Patch"
-                }
+                // Mark when this thing was put into (or back into) the game.
+                data["awp"] = addedPatch; // "Added With Patch"
 
                 // Future Unobtainable
-                if (removedPatch != 0)
-                {
-                    data["rwp"] = removedPatch; // "Removed With Patch"
-                }
+                if (removedPatch > 10000) data["rwp"] = removedPatch; // "Removed With Patch"
             }
 
             return true;
@@ -2600,7 +2596,9 @@ namespace ATT
         /// <param name="list">The data container list.</param>
         /// <param name="modID">The modID.</param>
         /// <param name="minLevel">The minimum required level.</param>
-        private static void Process(List<object> list, long modID, long minLevel)
+        /// <param name="phase">The current phase of the game this was added.</param>
+        /// <param name="awp">The patch this object was added to the game.</param>
+        private static void Process(List<object> list, long modID, long minLevel, long phase, long awp)
         {
             // Check to make sure the data is valid.
             if (list == null) return;
@@ -2608,7 +2606,7 @@ namespace ATT
             // Iterate through the list and process all of the relative data dictionaries.
             for (int i = list.Count - 1; i >= 0; --i)
             {
-                if (!Process(list[i] as IDictionary<string, object>, modID, minLevel)) list.RemoveAt(i);
+                if (!Process(list[i] as IDictionary<string, object>, modID, minLevel, phase, awp)) list.RemoveAt(i);
             }
         }
 
@@ -2946,7 +2944,7 @@ namespace ATT
             }
 
             ProcessingAchievementCategory = container.Key.Contains("Achievement");
-            Process(container.Value, 0, 1);
+            Process(container.Value, 0, 1, 0, 10000);  // Initial WoW Build we'll use as 1.0.0. (10000)
         }
 
         /// <summary>

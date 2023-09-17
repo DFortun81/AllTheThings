@@ -1088,10 +1088,18 @@ local function GetProgressTextForTooltip(data, iconOnly)
 
 	return app.TableConcat(text, nil, "", " ");
 end
-local function GetAddedWithPatchString(awp)
+local function GetAddedWithPatchString(awp, addedBack)
 	if awp then
 		awp = tonumber(awp);
-		return sformat(L["ADDED_WITH_PATCH_FORMAT"], math.floor(awp / 10000) .. "." .. (math.floor(awp / 100) % 10) .. "." .. (awp % 10));
+		local formatString = "ADDED";
+		if app.GameBuildVersion == awp then
+			formatString = "WAS_" .. formatString;
+		elseif app.GameBuildVersion > awp then
+			return nil;	-- Don't want to show this at the moment, let's add a configuration first!
+		end
+		if addedBack then formatString = formatString .. "_BACK"; end
+		return sformat(L[formatString .. "_WITH_PATCH_FORMAT"], 
+		math.floor(awp / 10000) .. "." .. (math.floor(awp / 100) % 10) .. "." .. (awp % 10));
 	end
 end
 local function GetRemovedWithPatchString(rwp)
@@ -4479,12 +4487,22 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 				end
 			end
 		end
-		if group.rwp then
-			tinsert(info, 1, { left = GetRemovedWithPatchString(group.rwp), wrap = true, color = app.Colors.RemovedWithPatch });
+		
+		local awp, rwp = GetRelativeValue(group, "awp"), group.rwp;
+		local awpGreaterThanRWP = true;
+		if awp and ((rwp or (group.u and group.u < 3)) or awp >= app.GameBuildVersion) then
+			awpGreaterThanRWP = rwp and awp >= rwp;
+			local awpString = GetAddedWithPatchString(awp, awpGreaterThanRWP);
+			if awpString then
+				tinsert(info, 1, { left = awpString, wrap = true, color = app.Colors.AddedWithPatch });
+			else
+				awpGreaterThanRWP = true;
+			end
 		end
-		if group.awp then
-			tinsert(info, 1, { left = GetAddedWithPatchString(group.awp), wrap = true, color = app.Colors.AddedWithPatch });
+		if rwp then
+			tinsert(info, awpGreaterThanRWP and 1 or 2, { left = GetRemovedWithPatchString(rwp), wrap = true, color = app.Colors.RemovedWithPatch });
 		end
+		
 		if group.u and (not group.crs or group.itemID or group.s) then
 			-- specifically-tagged NYI groups which are under 'Unsorted' should show a slightly different message
 			if group.u == 1 and app.RecursiveFirstParentWithFieldValue(group, "_missing", true) then
@@ -15216,15 +15234,18 @@ RowOnEnter = function (self)
 					end
 				end
 			end
-			if reference.rwp then
-				local rwp = GetRemovedWithPatchString(reference.rwp);
+			
+			local awp, rwp = GetRelativeValue(group, "awp"), reference.rwp;
+			if rwp then
 				local _,r,g,b = HexToARGB(app.Colors.RemovedWithPatch);
-				GameTooltip:AddLine(rwp, r / 255, g / 255, b / 255, 1);
+				GameTooltip:AddLine(GetRemovedWithPatchString(rwp), r / 255, g / 255, b / 255, 1);
 			end
-			if reference.awp then
-				local rwp = GetAddedWithPatchString(reference.awp);
-				local _,r,g,b = HexToARGB(app.Colors.AddedWithPatch);
-				GameTooltip:AddLine(rwp, r / 255, g / 255, b / 255, 1);
+			if awp and ((rwp or (reference.u and reference.u < 3)) or awp >= app.GameBuildVersion) then
+				local awpString = GetAddedWithPatchString(awp, rwp and awp > rwp);
+				if awpString then
+					local _,r,g,b = HexToARGB(app.Colors.AddedWithPatch);
+					GameTooltip:AddLine(awpString, r / 255, g / 255, b / 255, 1);
+				end
 			end
 			-- an item used for a faction which is repeatable
 			if reference.itemID and reference.factionID and reference.repeatable then

@@ -229,7 +229,8 @@ app:GetWindow("RWPD", {
 							end
 							
 							-- If we only want to see permanently removed things, then do that.
-							if ExcludeAddedWithPatch and group.awp then
+							local awp = GetRelativeValue(group, "awp");
+							if ExcludeAddedWithPatch and awp and awp >= group.rwp then
 								return false;
 							end
 							

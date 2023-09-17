@@ -36,8 +36,8 @@ BINDING_NAME_ALLTHETHINGS_REROLL_RANDOM = L["REROLL_RANDOM"]
 -- While this may seem silly, caching references to commonly used APIs is actually a performance gain...
 local C_DateAndTime_GetServerTimeLocal
 	= C_DateAndTime.GetServerTimeLocal;
-local ipairs, pairs, rawset, rawget, pcall, tinsert, tremove
-	= ipairs, pairs, rawset, rawget, pcall, tinsert, tremove;
+local ipairs, pairs, rawset, rawget, pcall, tinsert, tremove, sformat
+	= ipairs, pairs, rawset, rawget, pcall, tinsert, tremove, string.format;
 local C_Map_GetMapInfo, C_Map_GetAreaInfo = C_Map.GetMapInfo, C_Map.GetAreaInfo;
 local C_Map_GetPlayerMapPosition = C_Map.GetPlayerMapPosition;
 local GetAchievementInfo = _G["GetAchievementInfo"];
@@ -521,7 +521,7 @@ local function HexToRGB(hex)
 	return tonumber("0x"..hex:sub(3,4)) / 255, tonumber("0x"..hex:sub(5,6)) / 255, tonumber("0x"..hex:sub(7,8)) / 255;
 end
 local function RGBToHex(r, g, b)
-	return string.format("ff%02x%02x%02x",
+	return sformat("ff%02x%02x%02x",
 		r <= 255 and r >= 0 and r or 0,
 		g <= 255 and g >= 0 and g or 0,
 		b <= 255 and b >= 0 and b or 0);
@@ -628,7 +628,15 @@ end
 local function GetAddedWithPatchString(awp, addedBack)
 	if awp then
 		awp = tonumber(awp);
-		return (addedBack and "This gets added back in patch " or "This gets added in patch ") .. math.floor(awp / 10000) .. "." .. (math.floor(awp / 100) % 10) .. "." .. (awp % 10);
+		local formatString = "ADDED";
+		if app.GameBuildVersion == awp then
+			formatString = "WAS_" .. formatString;
+		elseif app.GameBuildVersion > awp then
+			return nil;	-- Don't want to show this at the moment, let's add a configuration first!
+		end
+		if addedBack then formatString = formatString .. "_BACK"; end
+		return sformat(L[formatString .. "_WITH_PATCH_FORMAT"], 
+		math.floor(awp / 10000) .. "." .. (math.floor(awp / 100) % 10) .. "." .. (awp % 10));
 	end
 end
 local function GetRemovedWithPatchString(rwp)
@@ -2058,14 +2066,19 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 		end
 		
-		local awp, rwp = group.awp, group.rwp;
-		local addedBack = not awp or (rwp and awp > rwp);
-		if awp then
-			tinsert(info, 1, { left = GetAddedWithPatchString(awp, addedBack), wrap = true, color = app.Colors.AddedWithPatch });
+		local awp, rwp = GetRelativeValue(group, "awp"), group.rwp;
+		local awpGreaterThanRWP = true;
+		if awp and ((rwp or (group.u and group.u < 3)) or awp >= app.GameBuildVersion) then
+			awpGreaterThanRWP = rwp and awp >= rwp;
+			local awpString = GetAddedWithPatchString(awp, awpGreaterThanRWP);
+			if awpString then
+				tinsert(info, 1, { left = awpString, wrap = true, color = app.Colors.AddedWithPatch });
+			else
+				awpGreaterThanRWP = true;
+			end
 		end
-
 		if rwp then
-			tinsert(info, addedBack and 1 or 2, { left = GetRemovedWithPatchString(rwp), wrap = true, color = app.Colors.RemovedWithPatch });
+			tinsert(info, awpGreaterThanRWP and 1 or 2, { left = GetRemovedWithPatchString(rwp), wrap = true, color = app.Colors.RemovedWithPatch });
 		end
 
 		if group.isLimited then
@@ -4997,8 +5010,8 @@ local speciesFields = {
 		end
 	end,
 	["tsm"] = function(t)
-		if t.itemID then return string.format("i:%d", t.itemID); end
-		return string.format("p:%d:1:3", t.speciesID);
+		if t.itemID then return sformat("i:%d", t.itemID); end
+		return sformat("p:%d:1:3", t.speciesID);
 	end,
 };
 local mountFields = {
@@ -5027,8 +5040,8 @@ local mountFields = {
 		return GetSpellInfo(t.spellID) or RETRIEVING_DATA;
 	end,
 	["tsmForItem"] = function(t)
-		if t.itemID then return string.format("i:%d", t.itemID); end
-		if t.parent and t.parent.itemID then return string.format("i:%d", t.parent.itemID); end
+		if t.itemID then return sformat("i:%d", t.itemID); end
+		if t.parent and t.parent.itemID then return sformat("i:%d", t.parent.itemID); end
 	end,
 	["linkForItem"] = function(t)
 		return select(2, GetItemInfo(t.itemID)) or GetSpellLink(t.spellID);
@@ -5553,7 +5566,7 @@ app.DifficultyIcons = {
 };
 app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 	["text"] = function(t)
-		return t.sourceParent and string.format("%s [%s]", t.name, t.sourceParent.text or UNKNOWN) or t.name;
+		return t.sourceParent and sformat("%s [%s]", t.name, t.sourceParent.text or UNKNOWN) or t.name;
 	end,
 	["name"] = function(t)
 		return GetDifficultyInfo(t.difficultyID) or "Unknown Difficulty";
@@ -6087,7 +6100,7 @@ app.CreateGarrisonBuilding = app.CreateClass("GarrisonBuilding", "garrisonBuildi
 		return GetItemInfo(t.itemID) or t.info.name;
 	end,
 	tsm = function(t)
-		return string.format("i:%d", t.itemID);
+		return sformat("i:%d", t.itemID);
 	end,
 	f = function(t)
 		return app.FilterConstants.RECIPES;
@@ -6178,7 +6191,7 @@ local TotalRetriesPerItemID = setmetatable({}, { __index = function(t, id)
 end });
 local BestItemLinkPerItemID = setmetatable({}, { __index = function(t, id)
 	local suffixID = BestSuffixPerItemID[id];
-	local link = select(2, GetItemInfo(suffixID > 0 and string.format("item:%d:0:0:0:0:0:%d", id, suffixID) or id));
+	local link = select(2, GetItemInfo(suffixID > 0 and sformat("item:%d:0:0:0:0:0:%d", id, suffixID) or id));
 	if link then
 		rawset(t, id, link);
 		return link;
@@ -6332,7 +6345,7 @@ local itemFields = {
 		end
 	end,
 	["tsm"] = function(t)
-		return string.format("i:%d", t.itemID);
+		return sformat("i:%d", t.itemID);
 	end,
 	["GetItemCount"] = function(t)
 		return baseGetItemCount;
@@ -8446,7 +8459,7 @@ local createRecipe = app.CreateClass("Recipe", "spellID", recipeFields,
 		return GetItemInfo(t.itemID) or nameFromSpellID(t);
 	end,
 	tsm = function(t)
-		return string.format("i:%d", t.itemID);
+		return sformat("i:%d", t.itemID);
 	end,
 	b = function(t)
 		return app.Settings.AccountWide.Recipes and 2;
@@ -10567,7 +10580,7 @@ local function RowOnEnter(self)
 					end
 				end
 			end
-			local awp, rwp = reference.awp, reference.rwp;
+			local awp, rwp = GetRelativeValue(reference, "awp"), reference.rwp;
 			if rwp then
 				local rwpString = GetRemovedWithPatchString(rwp);
 				if not linesByText[rwpString] then
@@ -10575,9 +10588,9 @@ local function RowOnEnter(self)
 					GameTooltip:AddLine(rwpString, r, g, b, 1);
 				end
 			end
-			if awp then
+			if awp and ((rwp or (reference.u and reference.u < 3)) or awp >= app.GameBuildVersion) then
 				local awpString = GetAddedWithPatchString(awp, awp and rwp and awp > rwp);
-				if not linesByText[awpString] then
+				if awpString and not linesByText[awpString] then
 					local r,g,b = HexToRGB(app.Colors.AddedWithPatch);
 					GameTooltip:AddLine(awpString, r, g, b, 1);
 				end
