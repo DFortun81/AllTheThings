@@ -17,27 +17,72 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						--	some of these might have additional requirements (in case anybody reports not getting the criteria from what we have SQed here)
-						crit(1, {	-- Honor's Stand
+						crit(38847, {	-- Honor's Stand
 							["sourceQuest"] = 25186,	-- Futile Resistance
 						}),
-						crit(2, {	-- Northwatch Hold
+						crit(38848, {	-- Northwatch Hold
+							["sourceQuest"] = 24939,	-- Run Out the Guns
+						}),
+						crit(38849, {	-- Northwatch Hold
+							["sourceQuest"] = 24948,	-- Lifting the Siege
+						}),
+						crit(38850, {	-- Northwatch Hold
 							["sourceQuest"] = 24956,	-- Silencing Rageroar
 						}),
-						crit(3, {	-- Teegan's Expedition
+						crit(38851, {	-- Teegan's Expedition
+							["sourceQuest"] = 25008,	-- Filthy Animals
+						}),
+						crit(38852, {	-- Teegan's Expedition
+							["sourceQuest"] = 25027,	-- You Flicked a Fine Vine to Leaf Me
+						}),
+						crit(38853, {	-- Teegan's Expedition
+							["sourceQuest"] = 25002,	-- Scavenged
+						}),
+						crit(38854, {	-- Teegan's Expedition
 							["sourceQuest"] = 25000,	-- Teegan's People
 						}),
-						crit(4, {	-- Life from the Dream
-							["sourceQuest"] = 24566,	-- Sowing a Solution
+						crit(38855, {	-- Life from the Dream
+							["sourceQuest"] = 24601,	-- The Nightmare Scar
 						}),
-						crit(5, {	-- Forward Command
+						crit(38856, {	-- Life from the Dream
+							["sourceQuest"] = 24566,	-- Sowing a Solution
+						}),						
+						crit(38857, {	-- Forward Command
+							["sourceQuest"] = 25044,	-- Diplomacy By Another Means
+						}),
+						crit(38858, {	-- Forward Command
+							["sourceQuest"] = 25057,	-- Clap 'Em In Irons
+						}),
+						crit(38859, {	-- Forward Command
+							["sourceQuest"] = 25059,	-- The Taurajo Briefs
+						}),
+						crit(38860, {	-- Forward Command
 							["sourceQuest"] = 25042,	-- Marching On Our Stomachs
 						}),
-						crit(6, {	-- Firestone Point
+						crit(38861, {	-- Firestone Point
+							["sourceQuest"] = 25085,	-- Mangletooth
+						}),
+						crit(38862, {	-- Firestone Point
+							["sourceQuest"] = 24824,	-- The Disturbed Earth
+						}),
+						crit(38863, {	-- Firestone Point
 							["sourceQuest"] = 24653,	-- Echoes of Agamaggan
 						}),
-						crit(7, {	-- Fort Triumph
-							["sourceQuest"] = 25185,	-- The Deed Is Done
+						crit(38866, {	-- Fort Triumph
+							["sourceQuest"] = 25081,	-- Claim the Battlescar
 						}),
+						crit(38867, {	-- Fort Triumph
+							["sourceQuest"] = 25080,	-- Batteries Not Yet Included
+						}),	
+						crit(38868, {	-- Fort Triumph
+							["sourceQuest"] = 25082,	-- Working the Bugs Out
+						}),
+						crit(38869, {	-- Fort Triumph
+							["sourceQuest"] = 25175,	-- The Bad News
+						}),	
+						crit(38870, {	-- Fort Triumph
+							["sourceQuest"] = 25185,	-- The Deed Is Done
+						}),						
 					},
 				}),
 				ach(4981, {	-- Southern Barrens Quests (H)

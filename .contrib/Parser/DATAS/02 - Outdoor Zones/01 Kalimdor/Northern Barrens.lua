@@ -42,41 +42,58 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						crit(1, {	-- Far Watch
+						crit(38779, {	-- Far Watch
 							["sourceQuests"] = {
 								5041,	-- Supplies for the Crossroads
 								872,	-- The Far Watch Offensive
 							},
 						}),
-						crit(2, {	-- Grol'dom Farm
+						crit(38781, {	-- Grol'dom Farm
 							["sourceQuests"] = {
 								13971,	-- The Kodo's Return
 							},
 						}),
-						crit(3, {	-- Defeating the Kolkar
+						crit(38782, {	-- Defeating the Kolkar
 							["sourceQuests"] = {
 								4021,	-- Counterattack!
 							},
 						}),
-						crit(4, {	-- Mysteries of the Oases
+						crit(38783, {	-- Mysteries of the Oases
 							["sourceQuests"] = {
 								880,	-- Altered Beings
+							},
+						}),
+						crit(38784, {	-- Mysteries of the Oases
+							["sourceQuests"] = {
 								877,	-- The Stagnant Oasis
 							},
 						}),
-						crit(5, {	-- Ratchet
+						crit(38785, {	-- Ratchet
 							["sourceQuests"] = {
-								14050,	-- Gazlowe's Fortune
-								14063,	-- Mutiny, Mon!
+								14042,	--Ammo Kerblammo
+							},
+						}),
+						crit(38786, {	-- Ratchet
+							["sourceQuests"] = {
 								14067,	-- The Stolen Silver
 							},
 						}),
-						crit(6, {	-- Nozzlepot's Outpost
+						crit(38787, {	-- Ratchet
+							["sourceQuests"] = {
+								14063,	-- Mutiny, Mon!
+							},
+						}),
+						crit(38788, {	-- Ratchet
+							["sourceQuests"] = {
+								14050,	-- Gazlowe's Fortune
+							},
+						}),
+						crit(38789, {	-- Nozzlepot's Outpost
 							["sourceQuests"] = {
 								29094,	-- The Short Way Home
 							},
 						}),
-						crit(7, {	-- Inspiration and Hope
+						crit(38790, {	-- Inspiration and Hope
 							["sourceQuests"] = {
 								29111,	-- Mor'shan Caravan Delivery
 							},
