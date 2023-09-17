@@ -818,9 +818,11 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			},
 		}),
 	}),
-	n(14861, bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4 } }, {	-- Blood Steward of Kirtonos
-		i(13523),	-- Blood of Innocents
-	})),
+	n(14861, {	-- Blood Steward of Kirtonos
+		i(13523, {	-- Blood of Innocents
+			["timeline"] = { REMOVED_5_0_4 },
+		}),
+	}),
 	n(10506, {	-- Kirtonos the Herald
 		["providers"] = {
 			{ "o", 175564 },	-- Brazier of the Herald
