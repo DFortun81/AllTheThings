@@ -1722,6 +1722,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(5110, {	-- Dalaran Wizard's Robe
+					-- #if BEFORE 4.0.3
+					["description"] = "This item can be sold on the Neutral Auction House to Alliance Alchemists for a... nominal fee.\n\nOnly naturally accessible to Horde players.",
 					["crs"] = {
 						2120,	-- Archmage Ataeric
 						1867,	-- Dalaran Apprentice
@@ -1735,6 +1737,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1888,	-- Dalaran Watcher
 						1889,	-- Dalaran Wizard
 					},
+					-- #else
+					["description"] = "WARNING: This item will be made unavailable, but still learnable, by Alliance players. If you are Alliance, you may want to buy this now.",
+					["crs"] = {
+						45753,	-- Ambermill Portal Guardian
+						1913,	-- Ambermill Warder
+						3577,	-- Ambermill Brewmaster
+						1914,	-- Ambermill Magister
+					},
+					-- #endif
 				}),
 				i(3164, {	-- Discolored Worg Heart
 					["crs"] = {
