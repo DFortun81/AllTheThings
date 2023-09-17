@@ -11,7 +11,7 @@ local contains, classIndex, raceIndex, factionID =
 	app.contains, app.ClassIndex, app.RaceIndex, app.FactionID;
 
 -- Module locals
-local AllCaches, runners = {}, {};
+local AllCaches, AllGamePatches, runners = {}, {}, {};
 local containerMeta = {
 	__index = function(t, id)
 		if id then
@@ -456,6 +456,11 @@ local fieldConverters = {
 			if name then app.L.ALT_ZONE_TEXT_TO_MAP_ID[name] = mapID; end
 		end
 	end,
+	
+	-- Patch Helpers
+	["awp"] = function(group, value)
+		if value then AllGamePatches[value] = true; end
+	end,
 };
 
 -- 'altQuests' in Retail pretending to be the same quest as a different quest actually causes problems for searches
@@ -675,6 +680,7 @@ local function VerifyCache()
 end
 
 -- External API Functions
+app.AllGamePatches = AllGamePatches;
 app.CacheFields = CacheFields;
 app.CreateDataCache = CreateDataCache;
 app.GetRawFieldContainer = GetRawFieldContainer;
