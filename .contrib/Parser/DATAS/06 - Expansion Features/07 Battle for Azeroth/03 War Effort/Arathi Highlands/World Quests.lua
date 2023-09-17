@@ -122,7 +122,7 @@ root(ROOTS.ExpansionFeatures,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(54552, {	-- Geomancer Flintdagger(H)
+					q(54552, {	-- Geomancer Flintdagger (H)
 						["lvl"] = { 50 },
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,

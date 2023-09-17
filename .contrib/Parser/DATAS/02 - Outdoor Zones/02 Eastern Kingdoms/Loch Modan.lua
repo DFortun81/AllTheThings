@@ -1577,10 +1577,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(6197, {	-- Loch Croc Hide Vest
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 						i(3563, {	-- Seafarer's Pantaloons
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),

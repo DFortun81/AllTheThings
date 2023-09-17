@@ -2444,7 +2444,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(8224, {	-- Silithid Ripper
-							["timeline"] = { "removed 4.0.3" },
+							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
