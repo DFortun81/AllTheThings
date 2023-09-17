@@ -792,15 +792,15 @@ i(205978);	-- Glob of Azmerloth Slime
 i(201166);	-- Gilded Hilt
 
 -- Time Rift Items --
-i(207031),	-- Bomb Lobber
-i(207032),	-- Shrapnel Spreader
-i(207033),	-- Flamethrower
-i(207034),	-- Railgun
-i(207035),	-- Thunderbolt
-i(207036),	-- Crankshot
-i(207037),	-- Empty Gun Rack
-i(207038),	-- Empty Gun Rack
-i(208029),	-- Scareloc Parts
+i(207031);	-- Bomb Lobber
+i(207032);	-- Shrapnel Spreader
+i(207033);	-- Flamethrower
+i(207034);	-- Railgun
+i(207035);	-- Thunderbolt
+i(207036);	-- Crankshot
+i(207037);	-- Empty Gun Rack
+i(207038);	-- Empty Gun Rack
+i(208029);	-- Scareloc Parts
 
 ------------------
 -- PATCH 10.1.7 --

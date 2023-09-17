@@ -160,7 +160,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			prof(FISHING, {
 				i(6651, {	-- Broken Wine Bottle
 					["description"] = "Drops from fishing in the Sludge Fen.",
-					["coords"] = { 57, 7, NORTHERN_BARRENS }
+					["coord"] = { 57, 7, NORTHERN_BARRENS },
 				}),
 			}),
 			n(QUESTS, {
