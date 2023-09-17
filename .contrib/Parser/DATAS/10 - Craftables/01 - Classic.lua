@@ -329,7 +329,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(3472),	-- Runed Copper Gauntlets
 			i(3473),	-- Runed Copper Pants
 			i(12611),	-- Runic Plate Boots
-			i(12613, {["timeline"] = {REMOVED_4_0_3}}),	-- Runic Breastplate
+			i(12613, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Runic Breastplate
 			i(12612),	-- Runic Plate Helm
 			i(12614),	-- Runic Plate Leggings
 			i(12610),	-- Runic Plate Shoulders

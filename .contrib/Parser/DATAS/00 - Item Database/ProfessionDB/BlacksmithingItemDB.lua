@@ -184,7 +184,7 @@ i(12707, 16665);	-- Runic Plate Boots
 i(12714, 16726);	-- Runic Plate Helm
 i(12719, 16732);	-- Runic Plate Leggings
 i(12706, 16664);	-- Runic Plate Shoulders
-i(12718, 16731);	-- Runic Breastplate [REMOVED: 4.0.3]
+i(12718, 16731);	-- Runic Breastplate [REMOVED: 4.0.3, ADDED: 10.1.7]
 i(12261, 15973);	-- Searing Golden Blade
 i(3869, 3500);		-- Shadow Crescent Axe
 i(5578, 2673);		-- Silvered Bronze Breastplate

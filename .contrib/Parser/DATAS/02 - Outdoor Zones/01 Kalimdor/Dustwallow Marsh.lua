@@ -3507,10 +3507,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 4834,	-- Theramore Infiltrator
 				}),
 				i(12718, {	-- Plans: Runic Breastplate (RECIPE!)
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },
 					["crs"] = {
 						4368,	-- Strashaz Myrmidon
 						16072,	-- Tidelord Rrurgaz
+						-- #if AFTER 10.1.7
+						44390,	-- Spiny Rock Crab
+						-- #endif
 					},
 				}),
 				-- #if BEFORE 4.3.0
