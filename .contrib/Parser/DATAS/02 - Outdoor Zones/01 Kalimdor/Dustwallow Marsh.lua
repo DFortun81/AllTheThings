@@ -3075,6 +3075,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
+			prof(FISHING, {
+				o(207724),	-- Shipwreck Debris
+				-- Somebody made an Error Report the Debris only in Tol Bard, so I put it here too, idk.
+			}),
 			n(RARES, {
 				n(50784, {	-- Anith
 					["coord"] = { 32.6, 30.8, DUSTWALLOW_MARSH },
