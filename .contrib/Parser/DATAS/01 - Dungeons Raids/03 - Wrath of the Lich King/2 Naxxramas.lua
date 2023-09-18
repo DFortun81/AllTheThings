@@ -62,6 +62,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 					["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos
 					["coord"] = { 75.5, 52.8, EASTERN_PLAGUELANDS },
+					["maxReputation"] = { FACTION_ARGENT_DAWN, REVERED },
 					["minReputation"] = { FACTION_ARGENT_DAWN, HONORED },
 					["cost"] = {
 						{ "i", 12363, 5 },	-- 5x Arcane Crystal
@@ -80,6 +81,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 					["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos
 					["coord"] = { 75.5, 52.8, EASTERN_PLAGUELANDS },
+					["maxReputation"] = { FACTION_ARGENT_DAWN, EXALTED },
 					["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },
 					["cost"] = {
 						{ "i", 12363, 2 },	-- 2x Arcane Crystal

@@ -700,7 +700,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 	}),
 	n(TREASURES, {
 		o(403567, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {		-- Cracked Argent Dawn Commission
-			["description"] = "In Rattlegore's room, on the first bone pile to the left of the entrance, you will find a very small item that can be looted.",
+			["description"] = "Can be found at the top of the southwest bone pile in Rattlegore's room. From the Great Ossuary, you can drop down from the southwest hole leading to Rattlegore's room and look down, it's a small object on the pile.",
 			["groups"] = {
 				i(206372),	-- Cracked Argent Dawn Commission
 			},
