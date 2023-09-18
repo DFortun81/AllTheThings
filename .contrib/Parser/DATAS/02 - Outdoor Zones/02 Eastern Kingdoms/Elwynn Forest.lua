@@ -58,6 +58,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								i(118532, {	-- Runner's Belt
 									["timeline"] = { "added 6.0.1.18711" },
 								}),
+								i(57254, {	-- Runner's Boots
+									["timeline"] = { "added 4.0.3" },
+								}),
 								i(57255, {	-- Worg Handler's Gloves
 									["timeline"] = { "added 4.0.3.13277" },
 								}),
@@ -73,6 +76,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["groups"] = {
 								i(131899, {	-- Chaser's Belt
 									["timeline"] = { "added 7.0.3.22248" },
+								}),
+								i(57254, {	-- Runner's Boots
+									["timeline"] = { "added 4.0.3" },
 								}),
 							},
 						}),
@@ -113,6 +119,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								i(118532, {	-- Runner's Belt
 									["timeline"] = { "added 6.0.1.18711" },
 								}),
+								i(57254, {	-- Runner's Boots
+									["timeline"] = { "added 4.0.3" },
+								}),
 							},
 						}),
 						q(28757, {	-- Beating Them Back!
@@ -151,6 +160,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["groups"] = {
 								i(118532, {	-- Runner's Belt
 									["timeline"] = { "added 6.0.1.18711" },
+								}),
+								i(57254, {	-- Runner's Boots
+									["timeline"] = { "added 4.0.3" },
 								}),
 							},
 						}),

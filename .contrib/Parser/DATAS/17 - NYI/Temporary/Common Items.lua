@@ -328,9 +328,6 @@ root(ROOTS.NeverImplemented, {
 					n(WAIST, {
 						i(49534),	-- Goblin Primitive's Belt
 					}),
-					n(FEET, {
-						i(57254),	-- Runner's Boots
-					}),
 				}),
 				filter(MAIL, {
 					n(WRIST, {
