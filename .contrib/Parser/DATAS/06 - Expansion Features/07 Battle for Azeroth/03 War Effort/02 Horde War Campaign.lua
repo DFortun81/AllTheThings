@@ -4,7 +4,7 @@
 
 root(ROOTS.ExpansionFeatures,
 	tier(BFA_TIER, {
-		n(WARFRONT, {
+		n(WAR_EFFORT, {
 			n(-253, {	-- Horde War Campaign
 				["races"] = HORDE_ONLY,
 				["g"] = {

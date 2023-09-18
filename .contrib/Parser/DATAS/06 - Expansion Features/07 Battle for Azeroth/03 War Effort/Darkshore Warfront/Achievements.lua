@@ -4,7 +4,7 @@
 
 root(ROOTS.ExpansionFeatures,
 	tier(BFA_TIER, {
-		n(WARFRONT, {
+		n(WAR_EFFORT, {
 			n(WARFRONT_BATTLE_FOR_DARKSHORE, {
 				n(ACHIEVEMENTS, {	-- Achievements
 					ach(13310, {	-- By Nature's Call (A)

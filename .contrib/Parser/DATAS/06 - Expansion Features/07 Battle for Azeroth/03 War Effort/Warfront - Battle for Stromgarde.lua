@@ -138,7 +138,7 @@ local HORDE_WARFRONT_EQUIPMENT = {
 };
 root(ROOTS.ExpansionFeatures,
 	tier(BFA_TIER, {
-		n(WARFRONT, {
+		n(WAR_EFFORT, {
 			n(WARFRONT_BATTLE_FOR_STROMGARDE, {
 				["lore"] = "Located in the Arathi Highlands, Stromgarde is one of the key locations in the struggle for controlling of the Eastern Kingdoms. For the Alliance, Stromgarde sits in a critical defensive position. Following the battle for Lordaeron, the Horde threat still looms over the continent and holding Stromgarde will be key if you hope to keep the Horde's aggression at bay.\n\nFor the Horde, securing Stromgarde would set the stage for an assault on the heart of the Eastern Kingdoms and serve as a launching point for a campaign against the worgen of the kingdom of Gilneas. This location is also key in the defense of the blood elven capital, Silvermoon City, in the north.",
 				["zone-quest"] = 52781,	-- This redirects the mini list to use this header instead when this quest is NOT active and the original mapID is the map that is is currently active
@@ -1741,7 +1741,7 @@ root(ROOTS.ExpansionFeatures,
 
 root(ROOTS.HiddenQuestTriggers, {
 	tier(BFA_TIER, {
-		n(WARFRONT, {
+		n(WAR_EFFORT, {
 			n(WARFRONT_BATTLE_FOR_STROMGARDE, {
 				q(51342, {["repeatable"]=true}),	-- completion of Normal warfront
 			}),
@@ -1750,7 +1750,7 @@ root(ROOTS.HiddenQuestTriggers, {
 });
 root(ROOTS.NeverImplemented, {
 	tier(BFA_TIER, {
-		n(WARFRONT, {
+		n(WAR_EFFORT, {
 			n(ARMOR, {
 				filter(CLOTH, {
 					i(163269),	-- 7th Legionnaire's Mantle
