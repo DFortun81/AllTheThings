@@ -2045,17 +2045,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 68.8, 45.6, WETLANDS },
 					},
 					-- #elseif AFTER 10.1.7
-					["cr"] = 42042,	-- Ebon Whelp
+					["crs"] = {
+						42041,	-- Dragonmaw Whelpstealer
+						42043,	-- Ebon Slavehunter
+					},
 					["coords"] = {
-						{ 63.8, 48.6, WETLANDS },
-						{ 65.0, 42.6, WETLANDS },
-						{ 61.8, 47.4, WETLANDS },
-						{ 61.2, 40.0, WETLANDS },
-						{ 70.6, 48.4, WETLANDS },
-						{ 67.6, 52.8, WETLANDS },
-						{ 63.8, 48.6, WETLANDS },
-						{ 61.0, 47.2, WETLANDS },
-						{ 61.8, 41.2, WETLANDS },
+						{ 66.0, 45.8, WETLANDS },
+						{ 67.4, 47.2, WETLANDS },
+						{ 66.2, 49.2, WETLANDS },
 					},
 					-- #endif
 				}),
@@ -2069,17 +2066,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 63.8, 33.6, WETLANDS },
 					},
 					-- #elseif AFTER 10.1.7
-					["cr"] = 42042,	-- Ebon Whelp
+					["crs"] = {
+						42041,	-- Dragonmaw Whelpstealer
+						42043,	-- Ebon Slavehunter
+					},
 					["coords"] = {
-						{ 63.8, 48.6, WETLANDS },
-						{ 65.0, 42.6, WETLANDS },
-						{ 61.8, 47.4, WETLANDS },
-						{ 61.2, 40.0, WETLANDS },
-						{ 70.6, 48.4, WETLANDS },
-						{ 67.6, 52.8, WETLANDS },
-						{ 63.8, 48.6, WETLANDS },
-						{ 61.0, 47.2, WETLANDS },
-						{ 61.8, 41.2, WETLANDS },
+						{ 66.0, 45.8, WETLANDS },
+						{ 67.4, 47.2, WETLANDS },
+						{ 66.2, 49.2, WETLANDS },
 					},
 					-- #endif
 				}),
