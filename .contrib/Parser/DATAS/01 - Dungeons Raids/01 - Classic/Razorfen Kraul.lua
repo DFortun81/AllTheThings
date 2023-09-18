@@ -320,9 +320,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				["creatureID"] = 75001,	-- Hunter Bonetusk
 				["timeline"] = { "added 6.0.2" },
 				["groups"] = {
-					i(6681),	-- Thornspike
 					i(151442, {	-- Bonetusk Cloak
 						["timeline"] = { "added 7.3.0.24484" },
+					}),
+					i(6681),	-- Thornspike
+					i(6689, {	-- Wind Spirit Staff
+						["timeline"] = { "added 10.1.7" },
 					}),
 				},
 			}),
@@ -364,6 +367,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(6685),	-- Death Speaker Mantle
 					i(151445, {	-- Porcine-Warlord's Legplates
 						["timeline"] = { "added 7.3.0.24484" },
+					}),
+					i(6688, {	-- Whisperwind Headdress
+						["timeline"] = { "added 10.1.7" },
 					}),
 				},
 			}),
