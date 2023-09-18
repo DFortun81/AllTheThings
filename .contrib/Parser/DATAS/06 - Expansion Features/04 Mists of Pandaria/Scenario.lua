@@ -481,7 +481,7 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						i(98546, {	-- Bulging Heroic Cache of Treasures
-							["description"] = "Rewarded for completing |cFFFFD700Heroic Deeds|r quest.\nSee Rewards Tab description for a detailed farming guide.",
+							["description"] = "Rewarded for completing |cFFFFD700Heroic Deeds|r quest.\nMouseover the Rewards Tab located ATT > Expansion Features > MoP > Scenarios > Rewards for a detailed farming guide.",
 							["g"] = {
 								i(98209),	-- Ale-Boiled Bindings
 								i(98203),	-- Ale-Boiled Boots

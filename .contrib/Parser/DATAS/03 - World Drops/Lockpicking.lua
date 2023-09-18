@@ -184,6 +184,13 @@ root(ROOTS.WorldDrops, {
 					4414,   -- Schematic: Portable Bronze Mortar
 					13063,  -- Starfaller
 				}},
+				-- #if AFTER 10.1.7
+				["groups"] = {
+					i(7678,	{	-- Recipe: Thistle Tea
+						["timeline"] = { "added 10.1.7" },
+					}),	
+				},
+				-- #endif
 			}),
 			i(31952, {	-- Khorium Lockbox
 				["timeline"] = { "added 2.1.0.6678" },
@@ -237,6 +244,15 @@ root(ROOTS.WorldDrops, {
 				}},
 			}),
 			i(5758),	-- Mithril Lockbox
+			i(4632, {	-- Ornate Bronze Lockbox
+				-- #if AFTER 10.1.7
+				["groups"] = {
+					i(7678,	{	-- Recipe: Thistle Tea
+						["timeline"] = { "added 10.1.7" },
+					}),	
+				},
+				-- #endif
+			}),
 			i(180532, {	-- Oxxein Lockbox
 				["timeline"] = { ADDED_9_0_2_LAUNCH },
 			}),

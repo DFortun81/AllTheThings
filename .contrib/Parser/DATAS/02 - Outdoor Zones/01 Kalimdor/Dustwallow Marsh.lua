@@ -3518,6 +3518,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						16072,	-- Tidelord Rrurgaz
 					},
 					-- #elseif AFTER 10.1.7
+					["coords"] = {
+						{ 70.2, 50.0, DUSTWALLOW_MARSH },
+						{ 69.0, 47.0, DUSTWALLOW_MARSH },
+						{ 67.6, 44.4, DUSTWALLOW_MARSH },
+						{ 66.4, 43.4, DUSTWALLOW_MARSH },
+						{ 65.4, 44.4, DUSTWALLOW_MARSH },
+					},
 					["crs"] = {
 						44390,	-- Spiny Rock Crab
 					},
