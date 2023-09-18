@@ -905,7 +905,6 @@ root(ROOTS.Unsorted, {
 			i(208369),	-- Druid's Vengeful Gaze
 			i(208370),	-- The Apostle's Steps
 			i(208371),	-- Fire Assassin's Boots
-			i(208372),	-- Trickster's Tip Toers
 			i(208373),	-- Band of Bated Breath
 			i(208374),	-- Talthornei's Wrath
 			i(208375),	-- Owlbear's Decisive Strike
