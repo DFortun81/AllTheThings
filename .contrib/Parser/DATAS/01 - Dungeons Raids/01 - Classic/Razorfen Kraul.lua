@@ -276,7 +276,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				i(1978),	-- Wolfclaw Gloves
 			}),
 			n(74900, {	-- Kraulshaper Tukaar
+				-- #if BEFORE 10.1.7
 				["description"] = "This is a rare spawn that is not always present.",
+				-- #else
+				["description"] = "This NPC is always present since 10.1.7.\nTo obtain their drops you have to be in an appropriate loot spec or they will not drop. However their drops are also located on other bosses in the dungeon.",
+				-- #endif
 				["timeline"] = { "added 6.0.2" },
 				["groups"] = {
 					i(6689),	-- Wind Spirit Staff
