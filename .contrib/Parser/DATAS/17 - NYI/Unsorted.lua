@@ -604,6 +604,15 @@ root(ROOTS.Unsorted, {
 				i(210684),	-- Mark of the Thriving Dreamtalon (CI!)
 				i(210647),	-- Mark of the Umbramane (CI!)
 				i(210729),	-- Mark of the Verdant Bristlebruin (CI!)
+
+				i(210645),	-- Feather of Friends (CI!)
+				i(210754),	-- Feather of the Blazing Somnowl (CI!)
+				i(210728),	-- Moon-Blessed Claw (CI!)
+				i(210727),	-- Pollenfused Bristlebruin Fur Sample (CI!)
+				i(210753),	-- Scale of the Prismatic Whiskerfish (CI!)
+
+
+
 				i(210755),	-- Silent Mark of the Dreamsaber
 				i(210767),	-- Silent Mark of the Dreamstag
 				i(210764),	-- Silent Mark of the Dreamtalon
@@ -625,23 +634,14 @@ root(ROOTS.Unsorted, {
 			}),
 			i(210730),	-- Mark of the Dream Wardens
 			i(192717),	-- Animated Splinter
-			i(202182),	-- Acid Rifle
-			i(202186),	-- Boom Weed
-			i(202187),	-- Plagued Flesh
 			i(204179),	-- Cracked Medal of Honor
 			i(204180),	-- Cracked Medal of Honor
 			i(204720),	-- Join the New Scarlet Crusade!
-			i(204799),	-- Scarlet Disguise
 			i(205463),	-- Molten Lava Ball
-			i(206204),	-- Recovered Tuskarr Relic
-			i(206353),	-- Sentinel's Whistle
 			i(206378),	-- [DNT] Test Loot
 			i(206379),	-- [DNT] Test Loot
 			i(206476),	-- Tyr's Guard Equipment
-			i(206598),	-- Smoldering Blossom
-			i(206929),	-- Hawlsey's Armor
 			i(206942),	-- Sealed Kaldorei Scroll
-			i(207004),	-- Incanter's Tome
 			i(207025),	-- <Placeholder> Fyrakk Axe - Shadowflame
 			i(207115),	-- Cloth - HAND 1
 			i(207116),	-- Cloth - HEAD 1
@@ -859,10 +859,6 @@ root(ROOTS.Unsorted, {
 			i(207800),	-- 2H Mace STR
 			i(208049),	-- Valarjar Trophy
 			i(208060),	-- Juicy Beetle Bits
-			i(208124),	-- The Dreamer's Essence
-			i(208146),	-- Incomplete Tablet
-			i(208181),	-- Shandris's Scouting Report
-			i(208184),	-- Dreamy Dust
 			i(208198),	-- Tyr's Guard Bulwark
 			i(208199),	-- Tabard of the Tyr's Guard
 			i(208217),	-- Illusory Scroll of Youth
@@ -870,11 +866,11 @@ root(ROOTS.Unsorted, {
 			i(208230),	-- Anaya's Pendant
 			i(208231),	-- Talisman of Hope
 			i(208232),	-- Singed Darnassian Tabard
+			-- Rares?
 			i(208323),	-- Nature's Firebathed Robes
 			i(208324),	-- Scorching Dryad's Chestpiece
 			i(208325),	-- Ignit's Fiery Heart
 			i(208326),	-- Vest of the Flametide
-			i(208327),	-- Maruud's Piercing Hands
 			i(208328),	-- Fystia's Deft Hands
 			i(208329),	-- Warm Grasp of the Dream
 			i(208330),	-- Piercing Touch of the Vine
@@ -922,6 +918,7 @@ root(ROOTS.Unsorted, {
 			i(208385),	-- Flame Endowed Blade
 			i(208388),	-- Leafster's Magic Wand
 			i(208389),	-- Spear of the Wilds
+			--
 			i(208393),	-- Nascent Aspect's Dreaming Crest
 			i(208394),	-- Nascent Wyrm's Dreaming Crest
 			i(208395),	-- Nascent Whelpling's Dreaming Crest
@@ -1003,7 +1000,6 @@ root(ROOTS.Unsorted, {
 			i(208738),	-- Ephemeral Pear
 			i(208745),	-- Your Reward [DNT]
 			i(208757),	-- Ash's Recipes to Delight and Nourish your Plant Pals
-			i(208821),	-- Aspects' Token of Merit
 			i(208837),	-- Missing Fruit
 			i(208841),	-- True Sight
 			i(208856),	-- Pocket Lint
@@ -1011,7 +1007,6 @@ root(ROOTS.Unsorted, {
 			i(208862),	-- The Second Clue
 			i(208863),	-- The Fourth Clue
 			i(208864),	-- The Third Clue
-			i(208881),	-- Shiversnap Blossom
 			i(208886),	-- Fiery Essence
 			i(208927),	-- Sandsparkle Pearl
 			i(208928),	-- Zaqali Adornments
@@ -1035,253 +1030,50 @@ root(ROOTS.Unsorted, {
 			i(209036),	-- Cache of Amirdrassil Treasures
 			i(209037),	-- Cache of Amirdrassil Treasures
 			i(209049),	-- Essence of Endless Flame
-			i(209069),	-- Verdant Gladiator's Silk Tunic
-			i(209070),	-- Verdant Gladiator's Silk Blouse
-			i(209071),	-- Verdant Gladiator's Silk Slippers
-			i(209072),	-- Verdant Gladiator's Silk Treads
-			i(209073),	-- Verdant Gladiator's Silk Gloves
-			i(209074),	-- Verdant Gladiator's Silk Handwraps
-			i(209075),	-- Verdant Gladiator's Silk Hat
-			i(209076),	-- Verdant Gladiator's Silk Cap
-			i(209077),	-- Verdant Gladiator's Silk Leggings
-			i(209078),	-- Verdant Gladiator's Silk Trousers
-			i(209079),	-- Verdant Gladiator's Silk Mantle
-			i(209080),	-- Verdant Gladiator's Silk Amice
-			i(209081),	-- Verdant Gladiator's Silk Cord
-			i(209082),	-- Verdant Gladiator's Silk Belt
-			i(209083),	-- Verdant Gladiator's Silk Wristwraps
-			i(209084),	-- Verdant Gladiator's Silk Armbands
-			i(209085),	-- Verdant Gladiator's Cloak
-			i(209086),	-- Verdant Gladiator's Drape
-			i(209087),	-- Verdant Gladiator's Shawl
-			i(209088),	-- Verdant Gladiator's Silk Tunic
-			i(209089),	-- Verdant Gladiator's Silk Blouse
-			i(209090),	-- Verdant Gladiator's Silk Slippers
-			i(209091),	-- Verdant Gladiator's Silk Treads
-			i(209092),	-- Verdant Gladiator's Silk Gloves
-			i(209093),	-- Verdant Gladiator's Silk Handwraps
-			i(209094),	-- Verdant Gladiator's Silk Hood
-			i(209095),	-- Verdant Gladiator's Silk Guise
-			i(209096),	-- Verdant Gladiator's Silk Leggings
-			i(209097),	-- Verdant Gladiator's Silk Trousers
-			i(209098),	-- Verdant Gladiator's Silk Mantle
-			i(209099),	-- Verdant Gladiator's Silk Amice
-			i(209100),	-- Verdant Gladiator's Silk Cord
-			i(209101),	-- Verdant Gladiator's Silk Belt
-			i(209102),	-- Verdant Gladiator's Silk Wristwraps
-			i(209103),	-- Verdant Gladiator's Silk Armbands
-			i(209104),	-- Verdant Gladiator's Cloak
-			i(209105),	-- Verdant Gladiator's Drape
-			i(209106),	-- Verdant Gladiator's Shawl
-			i(209107),	-- Verdant Gladiator's Silk Robe
-			i(209108),	-- Verdant Gladiator's Silk Vestments
-			i(209109),	-- Verdant Gladiator's Silk Slippers
-			i(209110),	-- Verdant Gladiator's Silk Treads
-			i(209111),	-- Verdant Gladiator's Silk Gloves
-			i(209112),	-- Verdant Gladiator's Silk Handwraps
-			i(209113),	-- Verdant Gladiator's Silk Hood
-			i(209114),	-- Verdant Gladiator's Silk Guise
-			i(209115),	-- Verdant Gladiator's Silk Leggings
-			i(209116),	-- Verdant Gladiator's Silk Trousers
-			i(209117),	-- Verdant Gladiator's Silk Mantle
-			i(209118),	-- Verdant Gladiator's Silk Amice
-			i(209119),	-- Verdant Gladiator's Silk Cord
-			i(209120),	-- Verdant Gladiator's Silk Belt
-			i(209121),	-- Verdant Gladiator's Silk Wristwraps
-			i(209122),	-- Verdant Gladiator's Silk Armbands
-			i(209123),	-- Verdant Gladiator's Cloak
-			i(209124),	-- Verdant Gladiator's Drape
-			i(209125),	-- Verdant Gladiator's Shawl
-			i(209126),	-- Verdant Gladiator's Leather Vest
-			i(209127),	-- Verdant Gladiator's Leather Jerkin
-			i(209128),	-- Verdant Gladiator's Leather Boots
-			i(209129),	-- Verdant Gladiator's Leather Treads
-			i(209130),	-- Verdant Gladiator's Leather Gloves
-			i(209131),	-- Verdant Gladiator's Leather Grips
-			i(209132),	-- Verdant Gladiator's Leather Helm
-			i(209133),	-- Verdant Gladiator's Leather Mask
-			i(209134),	-- Verdant Gladiator's Leather Breeches
-			i(209135),	-- Verdant Gladiator's Leather Legwraps
-			i(209136),	-- Verdant Gladiator's Leather Spaulders
-			i(209137),	-- Verdant Gladiator's Leather Shoulderpads
-			i(209138),	-- Verdant Gladiator's Leather Belt
-			i(209139),	-- Verdant Gladiator's Leather Strap
-			i(209140),	-- Verdant Gladiator's Leather Wristwraps
-			i(209141),	-- Verdant Gladiator's Leather Wristguards
-			i(209142),	-- Verdant Gladiator's Cloak
-			i(209143),	-- Verdant Gladiator's Drape
-			i(209144),	-- Verdant Gladiator's Shawl
-			i(209145),	-- Verdant Gladiator's Leather Vest
-			i(209146),	-- Verdant Gladiator's Leather Jerkin
-			i(209147),	-- Verdant Gladiator's Leather Boots
-			i(209148),	-- Verdant Gladiator's Leather Treads
-			i(209149),	-- Verdant Gladiator's Leather Gloves
-			i(209150),	-- Verdant Gladiator's Leather Grips
-			i(209151),	-- Verdant Gladiator's Leather Helm
-			i(209152),	-- Verdant Gladiator's Leather Mask
-			i(209153),	-- Verdant Gladiator's Leather Breeches
-			i(209154),	-- Verdant Gladiator's Leather Legwraps
-			i(209155),	-- Verdant Gladiator's Leather Spaulders
-			i(209156),	-- Verdant Gladiator's Leather Shoulderpads
-			i(209157),	-- Verdant Gladiator's Leather Belt
-			i(209158),	-- Verdant Gladiator's Leather Strap
-			i(209159),	-- Verdant Gladiator's Leather Wristwraps
-			i(209160),	-- Verdant Gladiator's Leather Wristguards
-			i(209161),	-- Verdant Gladiator's Cloak
-			i(209162),	-- Verdant Gladiator's Drape
-			i(209163),	-- Verdant Gladiator's Shawl
-			i(209164),	-- Verdant Gladiator's Leather Vest
-			i(209165),	-- Verdant Gladiator's Leather Jerkin
-			i(209166),	-- Verdant Gladiator's Leather Boots
-			i(209167),	-- Verdant Gladiator's Leather Treads
-			i(209168),	-- Verdant Gladiator's Leather Gloves
-			i(209169),	-- Verdant Gladiator's Leather Grips
-			i(209170),	-- Verdant Gladiator's Leather Helm
-			i(209171),	-- Verdant Gladiator's Leather Mask
-			i(209172),	-- Verdant Gladiator's Leather Breeches
-			i(209173),	-- Verdant Gladiator's Leather Legwraps
-			i(209174),	-- Verdant Gladiator's Leather Spaulders
-			i(209175),	-- Verdant Gladiator's Leather Shoulderpads
-			i(209176),	-- Verdant Gladiator's Leather Belt
-			i(209177),	-- Verdant Gladiator's Leather Strap
-			i(209178),	-- Verdant Gladiator's Leather Wristwraps
-			i(209179),	-- Verdant Gladiator's Leather Wristguards
-			i(209180),	-- Verdant Gladiator's Cloak
-			i(209181),	-- Verdant Gladiator's Drape
-			i(209182),	-- Verdant Gladiator's Shawl
-			i(209183),	-- Verdant Gladiator's Leather Vest
-			i(209184),	-- Verdant Gladiator's Leather Jerkin
-			i(209185),	-- Verdant Gladiator's Leather Boots
-			i(209186),	-- Verdant Gladiator's Leather Treads
-			i(209187),	-- Verdant Gladiator's Leather Gloves
-			i(209188),	-- Verdant Gladiator's Leather Grips
-			i(209189),	-- Verdant Gladiator's Leather Helm
-			i(209190),	-- Verdant Gladiator's Leather Mask
-			i(209191),	-- Verdant Gladiator's Leather Breeches
-			i(209192),	-- Verdant Gladiator's Leather Legwraps
-			i(209193),	-- Verdant Gladiator's Leather Spaulders
-			i(209194),	-- Verdant Gladiator's Leather Shoulderpads
-			i(209195),	-- Verdant Gladiator's Leather Belt
-			i(209196),	-- Verdant Gladiator's Leather Strap
-			i(209197),	-- Verdant Gladiator's Leather Wristwraps
-			i(209198),	-- Verdant Gladiator's Leather Wristguards
-			i(209199),	-- Verdant Gladiator's Cloak
-			i(209200),	-- Verdant Gladiator's Drape
-			i(209201),	-- Verdant Gladiator's Shawl
-			i(209202),	-- Verdant Gladiator's Chain Vest
-			i(209203),	-- Verdant Gladiator's Chain Tunic
-			i(209204),	-- Verdant Gladiator's Chain Sabatons
-			i(209205),	-- Verdant Gladiator's Chain Boots
-			i(209206),	-- Verdant Gladiator's Chain Gauntlets
-			i(209207),	-- Verdant Gladiator's Chain Handguards
-			i(209208),	-- Verdant Gladiator's Chain Helm
-			i(209209),	-- Verdant Gladiator's Chain Faceguard
-			i(209210),	-- Verdant Gladiator's Chain Leggings
-			i(209211),	-- Verdant Gladiator's Chain Breeches
-			i(209212),	-- Verdant Gladiator's Chain Monnion
-			i(209213),	-- Verdant Gladiator's Chain Shoulderguard
-			i(209214),	-- Verdant Gladiator's Chain Belt
-			i(209215),	-- Verdant Gladiator's Chain Girdle
-			i(209216),	-- Verdant Gladiator's Chain Wristguards
-			i(209217),	-- Verdant Gladiator's Chain Bracers
-			i(209218),	-- Verdant Gladiator's Cloak
-			i(209219),	-- Verdant Gladiator's Drape
-			i(209220),	-- Verdant Gladiator's Shawl
-			i(209221),	-- Verdant Gladiator's Chain Vest
-			i(209222),	-- Verdant Gladiator's Chain Tunic
-			i(209223),	-- Verdant Gladiator's Chain Sabatons
-			i(209224),	-- Verdant Gladiator's Chain Boots
-			i(209225),	-- Verdant Gladiator's Chain Gauntlets
-			i(209226),	-- Verdant Gladiator's Chain Handguards
-			i(209227),	-- Verdant Gladiator's Chain Helm
-			i(209228),	-- Verdant Gladiator's Chain Faceguard
-			i(209229),	-- Verdant Gladiator's Chain Leggings
-			i(209230),	-- Verdant Gladiator's Chain Breeches
-			i(209231),	-- Verdant Gladiator's Chain Monnion
-			i(209232),	-- Verdant Gladiator's Chain Shoulderguard
-			i(209233),	-- Verdant Gladiator's Chain Belt
-			i(209234),	-- Verdant Gladiator's Chain Girdle
-			i(209235),	-- Verdant Gladiator's Chain Wristguards
-			i(209236),	-- Verdant Gladiator's Chain Bracers
-			i(209237),	-- Verdant Gladiator's Cloak
-			i(209238),	-- Verdant Gladiator's Drape
-			i(209239),	-- Verdant Gladiator's Shawl
-			i(209240),	-- Verdant Gladiator's Chain Vest
-			i(209241),	-- Verdant Gladiator's Chain Tunic
-			i(209242),	-- Verdant Gladiator's Chain Sabatons
-			i(209243),	-- Verdant Gladiator's Chain Boots
-			i(209244),	-- Verdant Gladiator's Chain Gauntlets
-			i(209245),	-- Verdant Gladiator's Chain Handguards
-			i(209246),	-- Verdant Gladiator's Chain Helm
-			i(209247),	-- Verdant Gladiator's Chain Faceguard
-			i(209248),	-- Verdant Gladiator's Chain Leggings
-			i(209249),	-- Verdant Gladiator's Chain Breeches
-			i(209250),	-- Verdant Gladiator's Chain Monnion
-			i(209251),	-- Verdant Gladiator's Chain Shoulderguard
-			i(209252),	-- Verdant Gladiator's Chain Belt
-			i(209253),	-- Verdant Gladiator's Chain Girdle
-			i(209254),	-- Verdant Gladiator's Chain Wristguards
-			i(209255),	-- Verdant Gladiator's Chain Bracers
-			i(209256),	-- Verdant Gladiator's Cloak
-			i(209257),	-- Verdant Gladiator's Drape
-			i(209258),	-- Verdant Gladiator's Shawl
-			i(209259),	-- Verdant Gladiator's Plate Chestguard
-			i(209260),	-- Verdant Gladiator's Plate Chestplate
-			i(209261),	-- Verdant Gladiator's Plate Warboots
-			i(209262),	-- Verdant Gladiator's Plate Stompers
-			i(209263),	-- Verdant Gladiator's Plate Gauntlets
-			i(209264),	-- Verdant Gladiator's Plate Handguards
-			i(209265),	-- Verdant Gladiator's Plate Helm
-			i(209266),	-- Verdant Gladiator's Plate Helmet
-			i(209267),	-- Verdant Gladiator's Plate Legguards
-			i(209268),	-- Verdant Gladiator's Plate Wargreaves
-			i(209269),	-- Verdant Gladiator's Plate Shoulders
-			i(209270),	-- Verdant Gladiator's Plate Pauldrons
-			i(209271),	-- Verdant Gladiator's Plate Girdle
-			i(209272),	-- Verdant Gladiator's Plate Greatbelt
-			i(209273),	-- Verdant Gladiator's Plate Wristguards
-			i(209274),	-- Verdant Gladiator's Plate Vambraces
-			i(209275),	-- Verdant Gladiator's Cloak
-			i(209276),	-- Verdant Gladiator's Drape
-			i(209277),	-- Verdant Gladiator's Shawl
-			i(209278),	-- Verdant Gladiator's Plate Chestguard
-			i(209279),	-- Verdant Gladiator's Plate Chestplate
-			i(209280),	-- Verdant Gladiator's Plate Warboots
-			i(209281),	-- Verdant Gladiator's Plate Stompers
-			i(209282),	-- Verdant Gladiator's Plate Gauntlets
-			i(209283),	-- Verdant Gladiator's Plate Handguards
-			i(209284),	-- Verdant Gladiator's Plate Helm
-			i(209285),	-- Verdant Gladiator's Plate Helmet
-			i(209286),	-- Verdant Gladiator's Plate Legguards
-			i(209287),	-- Verdant Gladiator's Plate Tasses
-			i(209288),	-- Verdant Gladiator's Plate Shoulders
-			i(209289),	-- Verdant Gladiator's Plate Pauldrons
-			i(209290),	-- Verdant Gladiator's Plate Girdle
-			i(209291),	-- Verdant Gladiator's Plate Greatbelt
-			i(209292),	-- Verdant Gladiator's Plate Wristguards
-			i(209293),	-- Verdant Gladiator's Plate Vambraces
-			i(209294),	-- Verdant Gladiator's Cloak
-			i(209295),	-- Verdant Gladiator's Drape
-			i(209296),	-- Verdant Gladiator's Shawl
-			i(209297),	-- Verdant Gladiator's Plate Chestguard
-			i(209298),	-- Verdant Gladiator's Plate Chestplate
-			i(209299),	-- Verdant Gladiator's Plate Warboots
-			i(209300),	-- Verdant Gladiator's Plate Stompers
-			i(209301),	-- Verdant Gladiator's Plate Gauntlets
-			i(209302),	-- Verdant Gladiator's Plate Handguards
-			i(209303),	-- Verdant Gladiator's Plate Helm
-			i(209304),	-- Verdant Gladiator's Plate Helmet
-			i(209305),	-- Verdant Gladiator's Plate Legguards
-			i(209306),	-- Verdant Gladiator's Plate Wargreaves
-			i(209307),	-- Verdant Gladiator's Plate Shoulders
-			i(209308),	-- Verdant Gladiator's Plate Pauldrons
-			i(209309),	-- Verdant Gladiator's Plate Girdle
-			i(209310),	-- Verdant Gladiator's Plate Greatbelt
-			i(209311),	-- Verdant Gladiator's Plate Wristguards
-			i(209312),	-- Verdant Gladiator's Plate Vambraces
-			i(209313),	-- Verdant Gladiator's Cloak
-			i(209314),	-- Verdant Gladiator's Drape
-			i(209315),	-- Verdant Gladiator's Shawl
+			n(PVP, {
+				i(209069),	-- Verdant Gladiator's Silk Tunic
+				i(209070),	-- Verdant Gladiator's Silk Blouse
+				i(209071),	-- Verdant Gladiator's Silk Slippers
+				i(209072),	-- Verdant Gladiator's Silk Treads
+				i(209073),	-- Verdant Gladiator's Silk Gloves
+				i(209074),	-- Verdant Gladiator's Silk Handwraps
+				i(209122),	-- Verdant Gladiator's Silk Armbands
+				i(209123),	-- Verdant Gladiator's Cloak
+				i(209124),	-- Verdant Gladiator's Drape
+				i(209125),	-- Verdant Gladiator's Shawl
+				i(209126),	-- Verdant Gladiator's Leather Vest
+				i(209127),	-- Verdant Gladiator's Leather Jerkin
+				i(209128),	-- Verdant Gladiator's Leather Boots
+				i(209129),	-- Verdant Gladiator's Leather Treads
+				i(209130),	-- Verdant Gladiator's Leather Gloves
+				i(209131),	-- Verdant Gladiator's Leather Grips
+				i(209132),	-- Verdant Gladiator's Leather Helm
+				i(209133),	-- Verdant Gladiator's Leather Mask
+				i(209134),	-- Verdant Gladiator's Leather Breeches
+				i(209135),	-- Verdant Gladiator's Leather Legwraps
+				i(209136),	-- Verdant Gladiator's Leather Spaulders
+				i(209137),	-- Verdant Gladiator's Leather Shoulderpads
+				i(209138),	-- Verdant Gladiator's Leather Belt
+				i(209139),	-- Verdant Gladiator's Leather Strap
+				i(209140),	-- Verdant Gladiator's Leather Wristwraps
+				i(209141),	-- Verdant Gladiator's Leather Wristguards
+				i(209142),	-- Verdant Gladiator's Cloak
+				i(209143),	-- Verdant Gladiator's Drape
+				i(209144),	-- Verdant Gladiator's Shawl
+				i(209145),	-- Verdant Gladiator's Leather Vest
+				i(209146),	-- Verdant Gladiator's Leather Jerkin
+				i(209147),	-- Verdant Gladiator's Leather Boots
+				i(209148),	-- Verdant Gladiator's Leather Treads
+				i(209149),	-- Verdant Gladiator's Leather Gloves
+				i(209150),	-- Verdant Gladiator's Leather Grips
+				i(209151),	-- Verdant Gladiator's Leather Helm
+				i(209152),	-- Verdant Gladiator's Leather Mask
+				i(209153),	-- Verdant Gladiator's Leather Breeches
+				i(209154),	-- Verdant Gladiator's Leather Legwraps
+				i(209155),	-- Verdant Gladiator's Leather Spaulders
+				i(209156),	-- Verdant Gladiator's Leather Shoulderpads
+				i(209157),	-- Verdant Gladiator's Leather Belt
+			}),
 			i(209316),	-- Goat's Milk in a Skull Mug
 			i(209317),	-- Karazhan Twist
 			i(209318),	-- Dalaran Dazzler
@@ -1290,119 +1082,7 @@ root(ROOTS.Unsorted, {
 			i(209323),	-- Emerald Dreamtime
 			i(209324),	-- Azure Leywine
 			i(209326),	-- Maruukai Pale Ale
-			i(209337),	-- Verdant Gladiator's Ring
-			i(209338),	-- Verdant Gladiator's Band
-			i(209339),	-- Verdant Gladiator's Signet
-			i(209340),	-- Verdant Gladiator's Necklace
-			i(209341),	-- Verdant Gladiator's Pendant
-			i(209342),	-- Verdant Gladiator's Amulet
-			i(209343),	-- Verdant Gladiator's Badge of Ferocity
-			i(209344),	-- Verdant Gladiator's Insignia of Alacrity
-			i(209345),	-- Verdant Gladiator's Emblem
-			i(209346),	-- Verdant Gladiator's Medallion
-			i(209347),	-- Verdant Gladiator's Sigil of Adaptation
 			i(209416),	-- Turtle Eggshell Shards
-			i(209535),	-- Verdant Gladiator's Splitter
-			i(209536),	-- Verdant Gladiator's Dagger
-			i(209537),	-- Verdant Gladiator's Warglaive
-			i(209538),	-- Verdant Gladiator's Scythe
-			i(209539),	-- Verdant Gladiator's Staff
-			i(209540),	-- Verdant Gladiator's Rifle
-			i(209541),	-- Verdant Gladiator's Scepter
-			i(209542),	-- Verdant Gladiator's Censer
-			i(209543),	-- Verdant Gladiator's Shield
-			i(209544),	-- Verdant Gladiator's Axe
-			i(209545),	-- Verdant Gladiator's Sickle
-			i(209546),	-- Verdant Gladiator's Claws
-			i(209547),	-- Verdant Gladiator's Bow
-			i(209548),	-- Verdant Gladiator's Greatstaff
-			i(209549),	-- Verdant Gladiator's Bulwark
-			i(209550),	-- Verdant Gladiator's Greatsword
-			i(209551),	-- Verdant Gladiator's Pulverizer
-			i(209552),	-- Verdant Gladiator's Sword
-			i(209553),	-- Verdant Gladiator's Shotel
-			i(209554),	-- Verdant Gladiator's Axestaff
-			i(209609),	-- Verdant Gladiator's Prestigious Cloak
-			i(209610),	-- Verdant Gladiator's Tabard
-			i(209698),	-- Verdant Aspirant's Plate Helm
-			i(209699),	-- Verdant Aspirant's Silk Robe
-			i(209700),	-- Verdant Aspirant's Plate Chestplate
-			i(209701),	-- Verdant Aspirant's Chain Vest
-			i(209702),	-- Verdant Aspirant's Leather Vest
-			i(209703),	-- Verdant Aspirant's Plate Warboots
-			i(209704),	-- Verdant Aspirant's Silk Treads
-			i(209705),	-- Verdant Aspirant's Chain Sabatons
-			i(209706),	-- Verdant Aspirant's Leather Boots
-			i(209707),	-- Verdant Aspirant's Leather Gloves
-			i(209708),	-- Verdant Aspirant's Plate Gauntlets
-			i(209709),	-- Verdant Aspirant's Silk Gloves
-			i(209710),	-- Verdant Aspirant's Chain Gauntlets
-			i(209711),	-- Verdant Aspirant's Silk Hood
-			i(209712),	-- Verdant Aspirant's Chain Helm
-			i(209713),	-- Verdant Aspirant's Leather Helm
-			i(209714),	-- Verdant Aspirant's Plate Legguards
-			i(209715),	-- Verdant Aspirant's Silk Leggings
-			i(209716),	-- Verdant Aspirant's Chain Leggings
-			i(209717),	-- Verdant Aspirant's Leather Breeches
-			i(209718),	-- Verdant Aspirant's Leather Spaulders
-			i(209719),	-- Verdant Aspirant's Plate Shoulders
-			i(209720),	-- Verdant Aspirant's Silk Mantle
-			i(209721),	-- Verdant Aspirant's Chain Spaulders
-			i(209722),	-- Verdant Aspirant's Plate Girdle
-			i(209723),	-- Verdant Aspirant's Silk Cord
-			i(209724),	-- Verdant Aspirant's Chain Belt
-			i(209725),	-- Verdant Aspirant's Leather Belt
-			i(209726),	-- Verdant Aspirant's Silk Wristwraps
-			i(209727),	-- Verdant Aspirant's Plate Cuffs
-			i(209728),	-- Verdant Aspirant's Chain Wristwraps
-			i(209729),	-- Verdant Aspirant's Leather Wristwraps
-			i(209730),	-- Verdant Aspirant's Plate Headguard
-			i(209731),	-- Verdant Aspirant's Silk Vestments
-			i(209732),	-- Verdant Aspirant's Plate Armor
-			i(209733),	-- Verdant Aspirant's Chain Tunic
-			i(209734),	-- Verdant Aspirant's Leather Tunic
-			i(209735),	-- Verdant Aspirant's Plate Stompers
-			i(209736),	-- Verdant Aspirant's Silk Footwraps
-			i(209737),	-- Verdant Aspirant's Chain Stompers
-			i(209738),	-- Verdant Aspirant's Leather Footpads
-			i(209739),	-- Verdant Aspirant's Leather Grips
-			i(209740),	-- Verdant Aspirant's Plate Handguards
-			i(209741),	-- Verdant Aspirant's Silk Handwraps
-			i(209742),	-- Verdant Aspirant's Chain Handguards
-			i(209743),	-- Verdant Aspirant's Silk Cover
-			i(209744),	-- Verdant Aspirant's Chain Headguard
-			i(209745),	-- Verdant Aspirant's Leather Mask
-			i(209746),	-- Verdant Aspirant's Plate Wargreaves
-			i(209747),	-- Verdant Aspirant's Silk Legwraps
-			i(209749),	-- Verdant Aspirant's Chain Wargreaves
-			i(209750),	-- Verdant Aspirant's Leather Leggings
-			i(209751),	-- Verdant Aspirant's Leather Mantle
-			i(209752),	-- Verdant Aspirant's Plate Pauldrons
-			i(209753),	-- Verdant Aspirant's Silk Shawl
-			i(209754),	-- Verdant Aspirant's Chain Shoulderguards
-			i(209755),	-- Verdant Aspirant's Plate Greatbelt
-			i(209756),	-- Verdant Aspirant's Silk Belt
-			i(209757),	-- Verdant Aspirant's Chain Clasp
-			i(209758),	-- Verdant Aspirant's Leather Cord
-			i(209759),	-- Verdant Aspirant's Silk Bindings
-			i(209760),	-- Verdant Aspirant's Plate Armguards
-			i(209761),	-- Verdant Aspirant's Chain Bracer
-			i(209762),	-- Verdant Aspirant's Leather Armguards
-			i(209763),	-- Verdant Aspirant's Badge of Ferocity
-			i(209764),	-- Verdant Aspirant's Medallion
-			i(209765),	-- Verdant Aspirant's Insignia of Alacrity
-			i(209766),	-- Verdant Aspirant's Emblem
-			i(209767),	-- Verdant Aspirant's Sigil of Adaptation
-			i(209768),	-- Verdant Aspirant's Ring
-			i(209769),	-- Verdant Aspirant's Band
-			i(209770),	-- Verdant Aspirant's Signet
-			i(209771),	-- Verdant Aspirant's Necklace
-			i(209772),	-- Verdant Aspirant's Choker
-			i(209773),	-- Verdant Aspirant's Pendant
-			i(209774),	-- Verdant Aspirant's Cloak
-			i(209775),	-- Verdant Aspirant's Drape
-			i(209776),	-- Verdant Aspirant's Cape
-			i(209777),	-- Verdant Aspirant's Greatcloak
 			i(209806),	-- Cataloger's Film
 			i(209839),	-- Tangible Whispers of Dreaming
 			i(209853),	-- Unstable Water Walking Potion
@@ -1488,12 +1168,9 @@ root(ROOTS.Unsorted, {
 			i(209958),	-- Rune of the Umbramane
 			i(209959),	-- Pinch of Dream Magic
 			i(210005),	-- 10.2 Monster - Weapon - Staff - 10.1.5 Weapon Staff - Staff_2H_Druid_C_02_Color1
-			i(210016),	-- Somnowl's Shroud
 			i(210040),	-- Set Keystone Map: Throne of the Tides
 			i(210041),	-- Shipment of Goods
 			i(210049),	-- The Legend of Elun'Ahir
-			i(210059),	-- [PH] Blue Dreamsaber
-			i(210060),	-- [PH] Purple Dreamsaber
 			i(210061),	-- [PH] Mythic Raid Fire Owl
 			i(210065),	-- Sky-Captain's Formal Hat
 			i(210066),	-- Sky-Captain's Formal Boots
@@ -1565,23 +1242,6 @@ root(ROOTS.Unsorted, {
 			i(210143),	-- [PH] White-Furred Bakar
 			i(210144),	-- [PH] Yellow-Furred Spiky Bakar
 			i(210145),	-- [PH] YellowBlack-Furred Bakar
-			i(210148),	-- Overflowing Satchel of Pilfered Recipes
-			i(210149),	-- Verdant Aspirant's Battleaxe
-			i(210150),	-- Verdant Aspirant's Dagger
-			i(210151),	-- Verdant Aspirant's Mace
-			i(210152),	-- Verdant Aspirant's Polearm
-			i(210153),	-- Verdant Aspirant's Staff
-			i(210154),	-- Verdant Aspirant's Greatsword
-			i(210155),	-- Verdant Aspirant's Torch
-			i(210156),	-- Verdant Aspirant's Warglaive
-			i(210157),	-- Verdant Aspirant's Scepter
-			i(210158),	-- Verdant Aspirant's Shield
-			i(210160),	-- Verdant Aspirant's Recurve
-			i(210161),	-- Verdant Aspirant's Halberd
-			i(210162),	-- Verdant Aspirant's Hammer
-			i(210163),	-- Verdant Aspirant's Knife
-			i(210164),	-- Verdant Aspirant's Sword
-			i(210166),	-- Verdant Aspirant's Blade
 			i(210180),	-- Emerald Flightstone
 			i(210184),	-- Half-Filled Dreamless Sleep Potion
 			i(210185),	-- Splash Potion of Narcolepsy
@@ -1610,7 +1270,6 @@ root(ROOTS.Unsorted, {
 			i(210235),	-- Spirited Stag's Cape
 			i(210236),	-- Chartreuse Champion's Cloak
 			i(210237),	-- Nipping Night's Necklace
-			i(210317),	-- Verdant Aspirant's Wand
 			i(210324),	-- Medal of Honor
 			i(210325),	-- Medal of Honor
 			i(210326),	-- Medal of Conquest
@@ -1718,25 +1377,6 @@ root(ROOTS.Unsorted, {
 			i(210496),	-- Recipe: Slumbering Peacebloom Tea
 			i(210498),	-- Fused Essence
 			i(210501),	-- Dream Wardens Tabard
-			i(210502),	-- Verdant Gladiator's Axe
-			i(210503),	-- Verdant Gladiator's Dagger
-			i(210504),	-- Verdant Gladiator's Sickle
-			i(210506),	-- Verdant Gladiator's Warglaive
-			i(210507),	-- Verdant Gladiator's Scythe
-			i(210508),	-- Verdant Gladiator's Staff
-			i(210509),	-- Verdant Gladiator's Greatstaff
-			i(210510),	-- Verdant Gladiator's Axestaff
-			i(210511),	-- Verdant Gladiator's Rifle
-			i(210512),	-- Verdant Gladiator's Scepter
-			i(210513),	-- Verdant Gladiator's Censer
-			i(210514),	-- Verdant Gladiator's Shield
-			i(210515),	-- Verdant Gladiator's Bulwark
-			i(210516),	-- Verdant Gladiator's Claws
-			i(210517),	-- Verdant Gladiator's Bow
-			i(210518),	-- Verdant Gladiator's Greatsword
-			i(210519),	-- Verdant Gladiator's Pulverizer
-			i(210520),	-- Verdant Gladiator's Sword
-			i(210521),	-- Verdant Gladiator's Shotel
 			i(210540),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leather - HEAD 2
 			i(210541),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - HEAD 2
 			i(210542),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - FEET 3
@@ -1754,7 +1394,6 @@ root(ROOTS.Unsorted, {
 			i(210566),	-- Somnowl Feather Strand
 			i(210572),	-- Verdant Equipment Chest
 			i(210595),	-- Dreaming Equipment Chest
-			i(210645),	-- Feather of Friends
 			i(210657),	-- Gently Shaken Gift
 			i(210661),	-- Dreamcatcher's Crescent
 			i(210662),	-- Ochre Ornament of the Grove
@@ -1766,23 +1405,11 @@ root(ROOTS.Unsorted, {
 			i(210682),	-- Camper's Knife
 			i(210686),	-- Grovekeeper's Barrier
 			i(210687),	-- Ironfur Sample
-			i(210700),	-- Auburn Scavenger Gauntlets
-			i(210701),	-- Auburn Scavenger Helm
-			i(210702),	-- Solar Synthesis Gloves
-			i(210703),	-- Solar Synthesis Crown
-			i(210704),	-- Fallen Protector Handguards
-			i(210705),	-- Fallen Protector Greathelm
-			i(210706),	-- Drowsed Shepherd's Vest
-			i(210707),	-- Drowsed Shepherd's Hood
 			i(210726),	-- Ruby Flightstone
 			-----------------
 			i(207175),	-- Coiled Serpent Idol
 			i(210214),	-- Ouroboreal Necklet
-			i(210727),	-- Pollenfused Bristlebruin Fur Sample
-			i(210728),	-- Moon-Blessed Claw
 			i(210737),	-- Ashphodel Research Notes
-			i(210753),	-- Scale of the Prismatic Whiskerfish
-			i(210754),	-- Feather of the Blazing Somnowl
 			i(210756),	-- Satchel of Drake's Dreaming Crests
 			i(210757),	-- Scales of Remorse
 			i(210762),	-- Clutch of Wyrm's Dreaming Crests
@@ -1793,10 +1420,6 @@ root(ROOTS.Unsorted, {
 			i(210783),	-- Awakening Sunfish
 			i(210784),	-- Xena, the Whimsical Whiskerfish
 			i(210786),	-- Dreaming Whiskerfish
-			i(210787),	-- Elegant Green Dragon Tabard
-			i(210788),	-- Elegant Green Dragon Shawl
-			i(210789),	-- Elegant Green Dragon Epaulettes
-			i(210790),	-- Ensemble: Elegant Green Dragon Outerwear
 			i(210791),	-- Fragment of Emberscar
 			i(210792),	-- Fragment of Emberscar
 			i(210793),	-- Fragment of Emberscar
@@ -1857,7 +1480,6 @@ root(ROOTS.Unsorted, {
 				i(209026),	-- Loot-Stuffed Pumpkin
 				i(209044),	-- Orange Brewfest Bulwark
 				i(209053),	-- Green Brewfest Bulwark
-				i(209055),	-- Third Booster Part
 			}),
 			i(44329),	-- Elixir of Mighty Intellect
 			i(115460),	-- Northrend Alchemy Research
@@ -1866,8 +1488,6 @@ root(ROOTS.Unsorted, {
 			i(205222),	-- Ancient Wooden Spoke
 			i(205223),	-- Ancient Centaur Axe
 			i(205224),	-- Just a Rock
-			i(205328),	-- Earthen Emissary's Edge
-			i(208182),	-- Bronze Timepiece
 			i(208546),	-- Explorer's Rose-Tinted Glasses
 			i(208547),	-- Explorer's Reading Spectacles
 			i(208549),	-- Canned Meat Product
@@ -1887,7 +1507,6 @@ root(ROOTS.Unsorted, {
 			i(208925),	-- Dreambound Trinket
 			--
 			i(4191),	-- Owlbeast Leggings
-			i(209781),	-- Second Booster Part
 			--
 			i(206596),	-- Tome of Thomas Thomson
 			i(208769),	-- Tome of Thomas Thomson
@@ -1907,35 +1526,11 @@ root(ROOTS.Unsorted, {
 			i(206950),	-- A Clue
 			i(206996),	-- A Clue
 			--
-
-			i(202182),	-- Acid Rifle
-			i(202186),	-- Boom Weed
-			i(202187),	-- Plagued Flesh
 			i(204720),	-- Join the New Scarlet Crusade!
-			i(204799),	-- Scarlet Disguise
-			i(206204),	-- Recovered Tuskarr Relic
-			i(206353),	-- Sentinel's Whistle
 			i(206476),	-- Tyr's Guard Equipment
-			i(206598),	-- Smoldering Blossom
-			i(206929),	-- Hawlsey's Armor
 			i(206942),	-- Sealed Kaldorei Scroll
-			i(207004),	-- Incanter's Tome
 			i(208198),	-- Tyr's Guard Bulwark
 			i(208545),	-- Kindled Bonfire
-			i(208759),	-- Duskrune Glaive
-			i(208761),	-- Glaive of the Blood Moon
-			i(208762),	-- Moonlight Glaive
-			i(208785),	-- Traditionalist's Kaldorei Blades
-			i(208824),	-- Kaldorei Protector's Band
-			i(208842),	-- Kaldorei Protector's Cinch
-			i(208874),	-- Kaldorei Protector's Mantle
-			i(208875),	-- Kaldorei Protector's Anklets
-			i(208876),	-- Kaldorei Protector's Coronet
-			i(208877),	-- Kaldorei Protector's Talons
-			i(208879),	-- Ensemble: Kaldorei Protector's Adornment
-			i(208882),	-- Kaldorei Protector's Wrap
-			i(208885),	-- Kaldorei Protector's Wristwraps
-			i(208146),	-- Incomplete Tablet
 			i(208861),	-- The First Clue
 			i(208862),	-- The Second Clue
 			i(208863),	-- The Fourth Clue
@@ -1944,29 +1539,15 @@ root(ROOTS.Unsorted, {
 			i(208933),	-- A Partial Fourth Clue
 			i(208934),	-- A Partial Fourth Clue
 			i(208935),	-- A Partial Fourth Clue
-			i(210022),	-- Mimiron's Jumpjets
 			i(190874),	-- Glittering Fel Gavel
 			i(208151),	-- Tobias' Leash
-			i(208203),	-- Brilliant Star
-			i(208206),	-- Teleportation Crystal
-			i(208662),	-- Lightforged Seeker
-			i(208677),	-- Eredath Crystal Hammer
-			i(208683),	-- Arinor Ritual Baton
-			i(208684),	-- Anchorite's Sorrow
-			i(208685),	-- Recovered Kaarinos Blade
-			i(208686),	-- Velenite Claymore
-			i(208688),	-- Telaasti Mining Pick
 			i(208691),	-- Argunite Cluster
-			i(208755),	-- Ancient Soulpriest's Staff
-			i(208831),	-- Tyr's Titan Key
-			i(208832),	-- Tyr's Titan Key
 			i(208865),	-- The First Clue
 			i(208869),	-- The First Clue
 			i(208870),	-- The Second Clue
 			i(208871),	-- The Third Clue
 			i(208872),	-- The Fourth Clue
 			i(208873),	-- The FINAL Clue
-			i(208984),	-- First Booster Part
 			i(208993),	-- Clue Scrap
 			i(208994),	-- Clue Scrap
 			i(208995),	-- Clue Scrap
@@ -1991,9 +1572,6 @@ root(ROOTS.Unsorted, {
 			i(209014),	-- Clue Scrap
 			i(209015),	-- Clue Scrap
 			i(209016),	-- Clue Scrap
-			i(209038),	-- Tyr's Titan Key
-			i(209039),	-- Tyr's Titan Key
-			i(209040),	-- Tyr's Titan Key
 		})),
 		tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
 			filter(COSMETIC, {
@@ -2182,8 +1760,6 @@ root(ROOTS.Unsorted, {
 			i(190896),	-- Solemn Watchman's Spaulders
 			i(190901),	-- Solemn Watchman's Helm
 			i(200925),	-- Ensemble: Solemn Watchman's Garb
-			--
-			i(210265),	-- High Scholar's Grand Staff
 		})),
 		tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 			header(HEADERS.LFGDungeon, 2403, {	-- Aberrus, the Shadowed Crucible

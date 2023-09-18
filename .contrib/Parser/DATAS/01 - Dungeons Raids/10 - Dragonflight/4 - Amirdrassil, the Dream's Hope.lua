@@ -165,6 +165,27 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				e(2554, {	-- Igira the Cruel
 					["crs"] = { 206689 },	-- Igira the Cruel <Zaqali Elder>
 					["g"] = {
+						i(210148, {	-- Overflowing Satchel of Pilfered Recipes
+							i(194642),	-- Design: Choker of Shielding (RECIPE!)
+							i(204975),	-- Formula: Enchant Weapon - Shadowflame Wreathe (RECIPE!)
+							i(194259),	-- Pattern: Allied Cinch of Time Dilation (RECIPE!)
+							i(194266),	-- Pattern: Bronzed Grip Wrappings (RECIPE!)
+							i(194260),	-- Pattern: Blue Dragon Soles (RECIPE!)
+							i(193873),	-- Pattern: Old Spirit's Wristwraps (RECIPE!)
+							i(193881),	-- Pattern: Scale Rein Grips (RECIPE!)
+							i(204968),	-- Pattern: Shadowflame-Tempered Armor Patch (RECIPE!)
+							i(193872),	-- Pattern: String of Spiritual Knick-Knacks (RECIPE!)
+							i(205140),	-- Pattern: Undulating Sporecloak (RECIPE!)
+							i(193880),	-- Pattern: Wind Spirit's Lasso (RECIPE!)
+							i(194489),	-- Plans: Allied Chestplate of Generosity (RECIPE!)
+							i(194490),	-- Plans: Allied Wristguard of Companionship (RECIPE!)
+							i(205145),	-- Plans: Shadowed Impact Buckler (RECIPE!)
+							i(205144),	-- Plans: Shadowed Razing Annihilator (RECIPE!)
+							i(204696),	-- Recipe: Draconic Phial Cauldron (RECIPE!)
+							i(191597),	-- Recipe: Potion Absorption Inhibitor (RECIPE!)
+							i(205036),	-- Schematic: Tinker: Shadowflame Rockets (RECIPE!)
+							i(199227),	-- Schematic: Sophisticated Problem Solver (RECIPE!)
+						}),
 					},
 				}),
 				e(2557, {	-- Volcoross

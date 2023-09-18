@@ -220,6 +220,8 @@ iq(139313, nil, WARLOCK);			-- Grimoire of the Terrorguard
 ------------------
 -- PATCH 10.2.0 --
 ------------------
+iq(210645, 78479, DRUID);	-- Feather of Friends
+iq(210754, 78527, DRUID);	-- Feather of the Blazing Somnowl
 iq(210735, 78523, DRUID);	-- Mark of the Auric Dreamstag
 iq(210683, 78513, DRUID);	-- Mark of the Dreamtalon Matriarch
 iq(210669, 78507, DRUID);	-- Mark of the Evergreen Dreamsaber
@@ -234,3 +236,6 @@ iq(210739, 78520, DRUID);	-- Mark of the Snowy Umbraclaw
 iq(210684, 78515, DRUID);	-- Mark of the Thriving Dreamtalon
 iq(210647, 78481, DRUID);	-- Mark of the Umbramane
 iq(210729, 78517, DRUID);	-- Mark of the Verdant Bristlebruin
+iq(210728, 78521, DRUID);	-- Moon-Blessed Claw
+iq(210727, 78518, DRUID);	-- Pollenfused Bristlebruin Fur Sample
+iq(210753, 78516, DRUID);	-- Scale of the Prismatic Whiskerfish

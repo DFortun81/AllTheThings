@@ -237,18 +237,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 				["g"] = {
 					i(204857),	-- Ancient Elementium Fragment
 					i(204464),	-- Shadowflame Essence
-					i(194642),	-- Design: Choker of Shielding (RECIPE!)
-					i(194259),	-- Pattern: Allied Cinch of Time Dilation (RECIPE!)
-					i(194266),	-- Pattern: Bronzed Grip Wrappings (RECIPE!)
-					i(194260),	-- Pattern: Blue Dragon Soles (RECIPE!)
-					i(193873),	-- Pattern: Old Spirit's Wristwraps (RECIPE!)
-					i(193881),	-- Pattern: Scale Rein Grips (RECIPE!)
-					i(193872),	-- Pattern: String of Spiritual Knick-Knacks (RECIPE!)
-					i(193880),	-- Pattern: Wind Spirit's Lasso (RECIPE!)
-					i(194489),	-- Plans: Allied Chestplate of Generosity (RECIPE!)
-					i(194490),	-- Plans: Allied Wristguard of Companionship (RECIPE!)
-					i(191597),	-- Recipe: Potion Absorption Inhibitor (RECIPE!)
-					i(199227),	-- Schematic: Sophisticated Problem Solver (RECIPE!)
 				},
 			}),
 			d(AllDifficulties, {
@@ -284,6 +272,20 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 						199659,	-- Warlord Kagni
 					},
 					["g"] = {
+						i(205256, {	-- Satchel of Pilfered Recipes
+							i(194642),	-- Design: Choker of Shielding (RECIPE!)
+							i(194259),	-- Pattern: Allied Cinch of Time Dilation (RECIPE!)
+							i(194266),	-- Pattern: Bronzed Grip Wrappings (RECIPE!)
+							i(194260),	-- Pattern: Blue Dragon Soles (RECIPE!)
+							i(193873),	-- Pattern: Old Spirit's Wristwraps (RECIPE!)
+							i(193881),	-- Pattern: Scale Rein Grips (RECIPE!)
+							i(193872),	-- Pattern: String of Spiritual Knick-Knacks (RECIPE!)
+							i(193880),	-- Pattern: Wind Spirit's Lasso (RECIPE!)
+							i(194489),	-- Plans: Allied Chestplate of Generosity (RECIPE!)
+							i(194490),	-- Plans: Allied Wristguard of Companionship (RECIPE!)
+							i(191597),	-- Recipe: Potion Absorption Inhibitor (RECIPE!)
+							i(199227),	-- Schematic: Sophisticated Problem Solver (RECIPE!)
+						}),
 					},
 				}),
 				e(2525, {	-- Rashok, the Elder
@@ -474,9 +476,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 							199659,	-- Warlord Kagni
 						},
 						["g"] = {
-							i(205256, {	-- Satchel of Pilfered Recipes
-								["description"] = "I wonder what this contains...",
-							}),
 							iupgrade(202604,3),	-- Boulder-Tossing Bands
 							iupgrade(202607,3),	-- Brutal Dragonslayer's Trophy
 							iupgrade(202574,3),	-- Flamebound Huntsman's Footpads
@@ -826,9 +825,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 						199659,	-- Warlord Kagni
 					},
 					["g"] = {
-						i(205256, {	-- Satchel of Pilfered Recipes
-							["description"] = "I wonder what this contains...",
-						}),
 						iupgrade(202604,5),	-- Boulder-Tossing Bands
 						iupgrade(202607,5),	-- Brutal Dragonslayer's Trophy
 						iupgrade(202574,5),	-- Flamebound Huntsman's Footpads
@@ -1141,9 +1137,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 						199659,	-- Warlord Kagni
 					},
 					["g"] = {
-						i(205256, {	-- Satchel of Pilfered Recipes
-							["description"] = "I wonder what this contains...",
-						}),
 						iupgrade(202604,6),	-- Boulder-Tossing Bands
 						iupgrade(202607,6),	-- Brutal Dragonslayer's Trophy
 						iupgrade(202574,6),	-- Flamebound Huntsman's Footpads
@@ -1433,9 +1426,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					},
 					["g"] = {
 						ach(18154),	-- Mythic: Assault of the Zaqali
-						i(205256, {	-- Satchel of Pilfered Recipes
-							["description"] = "I wonder what this contains...",
-						}),
 						i(202604),	-- Boulder-Tossing Bands
 						i(202607),	-- Brutal Dragonslayer's Trophy
 						i(202574),	-- Flamebound Huntsman's Footpads

@@ -3,6 +3,7 @@
 ---------------------------------------------------
 local ASPECTS_TOKEN_OF_MERIT_S1 = 201836;
 local ASPECTS_TOKEN_OF_MERIT_S2 = 205225;
+local ASPECTS_TOKEN_OF_MERIT_S3 = 208821;
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(VALDRAKKEN, {
 		n(VENDORS, {

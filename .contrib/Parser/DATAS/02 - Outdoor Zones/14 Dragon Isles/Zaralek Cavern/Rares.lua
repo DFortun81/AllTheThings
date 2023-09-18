@@ -242,7 +242,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["g"] = {
 					bo(75360, true),
 					i(203338),	-- Winding Slitherdrake: Antler Horns (DM!)
-					i(205328),	-- Earthen Emissasry's Edge
+					i(205328),	-- Earthen Emissary's Edge
 					i(205314),	-- Greathelm of the Emissary
 					i(205312),	-- Subterrax's Stout Waistguard
 				},

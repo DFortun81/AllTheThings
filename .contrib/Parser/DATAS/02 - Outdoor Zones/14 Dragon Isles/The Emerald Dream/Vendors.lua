@@ -57,6 +57,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					}),
 					i(210790, {	-- Ensemble: Elegant Green Dragon Outerwear (qID 78599)
 						["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
+						["g"] = {
+							i(210789),	-- Elegant Green Dragon Epaulettes
+							i(210788),	-- Elegant Green Dragon Shawl
+							i(210787),	-- Elegant Green Dragon Tabard
+						},
 					}),
 					i(210677, {	-- Survivalist's Shovel
 						["cost"] = { { "c", DRAGON_SUPPLIES, 300 } },
