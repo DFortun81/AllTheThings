@@ -579,7 +579,6 @@ root(ROOTS.Unsorted, {
 		tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			filter(BATTLE_PETS, {
 				i(210409),	-- Aura (PET!)
-				i(210522),	-- Blueloo (PET!)
 				i(210556),	-- Ivy (PET!)
 				i(210633),	-- Kal'andu (PET!)
 				i(210347),	-- Sergeant Quackers (PET!)
@@ -1001,7 +1000,6 @@ root(ROOTS.Unsorted, {
 			i(208745),	-- Your Reward [DNT]
 			i(208757),	-- Ash's Recipes to Delight and Nourish your Plant Pals
 			i(208837),	-- Missing Fruit
-			i(208841),	-- True Sight
 			i(208856),	-- Pocket Lint
 			i(208861),	-- The First Clue
 			i(208862),	-- The Second Clue
@@ -1213,27 +1211,19 @@ root(ROOTS.Unsorted, {
 			i(210109),	-- Autumn Druid Bracers
 			i(210110),	-- Autumn Defender's Shield
 			i(210111),	-- Breezekeeper's Pinecone Scepter
-			i(210112),	-- Wildleaf Staff
-			i(210113),	-- Wildleaf Glaive
 			i(210114),	-- Autumn Defender's Saber
 			i(210115),	-- Autumn Defender's Spear
-			i(210116),	-- Wildleaf Dagger
 			i(210117),	-- Harvest Guardian Greathelm
 			i(210118),	-- Maple Tender Slippers
 			i(210119),	-- Wind Wolf Boots
 			i(210120),	-- Autumn Druid Treads
 			i(210121),	-- Ring of Season's Sunset
 			i(210122),	-- Breezekeeper's Staff
-			i(210123),	-- Wildleaf Hammer
-			i(210124),	-- Wildleaf Handaxe
 			i(210125),	-- Breezekeeper's Handaxe
 			i(210126),	-- Breezekeeper's Mallet
 			i(210127),	-- Autumn Defender's Gavel
 			i(210128),	-- Autumn Defender's Claymore
 			i(210129),	-- Wand of Brisk Dusks
-			i(210130),	-- Wildleaf Javelin
-			i(210131),	-- Wildleaf Longbow
-			i(210132),	-- Wildleaf Greatsword
 			i(210133),	-- Harvest Guardian Cloak
 			i(210134),	-- Wind Wolf Shroud
 			i(210140),	-- [PH] Black-Furred Bakar
@@ -1278,26 +1268,20 @@ root(ROOTS.Unsorted, {
 			i(210349),	-- Cold Conservator's Gown
 			i(210350),	-- Winter Warden's Chestplate
 			i(210351),	-- Frigid Forager's Chestguard
-			i(210352),	-- Crystalline Tender's Vest
-			i(210353),	-- Crystalline Tender's Gloves
 			i(210354),	-- Winter Warden's Gauntlets
 			i(210355),	-- Cold Conservator's Mitts
 			i(210356),	-- Frigid Forager's Handguards
 			i(210357),	-- Cold Conservator's Hood
 			i(210358),	-- Frigid Forager's Helm
-			i(210359),	-- Crystalline Tender's Guise
 			i(210360),	-- Winter Warden's Legplates
 			i(210361),	-- Cold Conservator's Leggings
 			i(210362),	-- Frigid Forager's Legguards
-			i(210363),	-- Crystalline Tender's Trousers
-			i(210364),	-- Crystalline Tender's Shoulderpads
 			i(210365),	-- Winter Warden's Shoulderplates
 			i(210366),	-- Cold Conservator's Shoulders
 			i(210367),	-- Frigid Forager's Eqaulets
 			i(210368),	-- Winter Warden's Girdle
 			i(210369),	-- Cold Conservator's Sash
 			i(210370),	-- Frigid Forager's Waistguard
-			i(210371),	-- Crystalline Tender's Belt
 			i(210372),	-- Cold Conservator's Bands
 			i(210373),	-- Winter Warden's Bracers
 			i(210374),	-- Frigid Forager's Cuffs
@@ -1306,7 +1290,6 @@ root(ROOTS.Unsorted, {
 			i(210378),	-- Rime Ridden Ring
 			i(210379),	-- Cold Crisp Collar
 			i(210380),	-- Glittering Gelid Goldchain
-			i(210381),	-- Crystalline Tender's Shroud
 			i(210382),	-- Cold Conservator's Wrap
 			i(210383),	-- Winter Warden's Bulwark
 			i(210384),	-- Cold Conservator's Implement
@@ -1317,7 +1300,6 @@ root(ROOTS.Unsorted, {
 			i(210390),	-- Winter Warden's Warhelm
 			i(210391),	-- Cold Conservator's Slippers
 			i(210392),	-- Frigid Forager's Treads
-			i(210393),	-- Crystalline Tender's Boots
 			i(210394),	-- Cold Conservator's Cane
 			i(210395),	-- Crystalline Tender's Mace
 			i(210396),	-- Frigid Forager's Longbow
@@ -1333,7 +1315,6 @@ root(ROOTS.Unsorted, {
 			i(210406),	-- Frigid Forager's Claymore
 			i(210407),	-- Frigid Forager's Cape
 			i(210408),	-- Winter Warden's Cloak
-			i(210414),	-- Forest Lord's Antlers
 			i(210415),	-- Darnassian Moonsilver Spaulders
 			i(210418),	-- Darnassian Cloak
 			i(210419),	-- Dream Wardens Insignia

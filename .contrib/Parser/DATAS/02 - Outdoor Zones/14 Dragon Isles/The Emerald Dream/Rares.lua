@@ -6,10 +6,6 @@ local function bo(questID, isDaily)
 end
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	m(TREE_1, {
-		--[[Notes
-		i(201437) may be a common drop from all rares
-		]]--
-		
 		n(RARES, sharedData({ ["isDaily"] = true },{
 			n(210050, {	-- Bloodstripe Great Ray
 				["questID"] = 77942,
@@ -80,6 +76,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["g"] = {
 					i(209955),	-- Root of Fire
 				},
+			}),
+			n(209902, {	-- Talthonel Ashwhisper
+				["questID"] = 77994,
+				["coord"] = { 59.2, 43.7, TREE_1 },
 			}),
 			n(209911, {	-- The Apostle
 				["questID"] = 77990,

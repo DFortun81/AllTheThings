@@ -90,6 +90,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					q(77761, {	-- Documenting a Dream
 						["coord"] = { 58.1, 49.6, TREE_1 },
 					}),
+					q(76550, {	-- True Sight
+						["coord"] = { 58.1, 49.6, TREE_1 },
+						["g"] = {
+							i(208841),	-- True Sight (QI!)
+						},
+					}),
+					q(77756, {	-- Flight of the Dragons
+						["coord"] = { 36.1, 30.1, TREE_1 },
+					}),
+					q(77715, {	-- Bubble Rescue
+						["coord"] = { 41.7, 39.7, TREE_1 },
+					}),
 				})),
 			},
 		}),

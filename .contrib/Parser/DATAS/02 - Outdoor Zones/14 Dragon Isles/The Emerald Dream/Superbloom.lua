@@ -20,14 +20,23 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 			})),
 			n(REWARDS, {
+				filter(LEATHER, {
+					i(210352),	-- Crystalline Tender's Vest
+					i(210353),	-- Crystalline Tender's Gloves
+					i(210359),	-- Crystalline Tender's Guise
+					i(210363),	-- Crystalline Tender's Trousers
+					i(210364),	-- Crystalline Tender's Shoulderpads
+					i(210371),	-- Crystalline Tender's Belt
+					i(210375),	-- Crystalline Tender's Wristbands
+					i(210381),	-- Crystalline Tender's Shroud (cloak) / will leave it here until non-leather confirm drop
+					i(210393),	-- Crystalline Tender's Boots
+				}),
 				--- Seeds
 				i(208066),	-- Small Dreamseed
 				i(208067),	-- Plump Dreamseed
 				i(208047),	-- Gigantic Dreamseed
 				--- DM
 				i(207762),	-- Grotto Netherwing Drake: Chin Spike (DM!)
-				--- Leather gear
-				i(210375),	-- Crystalline Tender's Wristbands
 				-- RECIPE
 				i(210174),	-- Formula: Illusory Adornment: Dreams (RECIPE!)
 				i(210241),	-- Recipe: Dreamwalker's Healing Potion (RECIPE!)
