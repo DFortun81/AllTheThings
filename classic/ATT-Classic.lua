@@ -54,6 +54,7 @@ local InCombatLockdown = _G["InCombatLockdown"];
 local GetSpellInfo, IsPlayerSpell, IsSpellKnown, IsSpellKnownOrOverridesKnown, IsTitleKnown =
 	  GetSpellInfo, IsPlayerSpell, IsSpellKnown, IsSpellKnownOrOverridesKnown, IsTitleKnown;
 local C_QuestLog_GetAllCompletedQuestIDs = C_QuestLog.GetAllCompletedQuestIDs;
+local C_QuestLog_IsQuestFlaggedCompleted = C_QuestLog.IsQuestFlaggedCompleted;
 local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
 local ALLIANCE_FACTION_ID = Enum.FlightPathFaction.Alliance;
 local HORDE_FACTION_ID = Enum.FlightPathFaction.Horde;
@@ -6648,6 +6649,14 @@ for mapID,area in pairs(mapIDToAreaID) do
 end
 app.GetCurrentMapID = function()
 	local originalMapID = C_Map_GetBestMapForUnit("player");
+	local substitutions = L.QUEST_ID_TO_MAP_ID[originalMapID];
+	if substitutions then
+		for questID,mapID in pairs(substitutions) do
+			if not C_QuestLog_IsQuestFlaggedCompleted(questID) then
+				return mapID;
+			end
+		end
+	end
 	local zoneTextSubstitution = L.MAP_ID_TO_ZONE_TEXT[originalMapID];
 	if zoneTextSubstitution then
 		local zone = GetRealZoneText();

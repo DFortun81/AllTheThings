@@ -37,6 +37,7 @@ local C_TransmogCollection_GetAppearanceSourceInfo = C_TransmogCollection.GetApp
 local C_TransmogCollection_GetAllAppearanceSources = C_TransmogCollection.GetAllAppearanceSources;
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
 local C_TransmogCollection_GetSourceInfo = C_TransmogCollection.GetSourceInfo;
+local C_QuestLog_IsQuestFlaggedCompleted = C_QuestLog.IsQuestFlaggedCompleted;
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
 local EJ_GetEncounterInfo = _G["EJ_GetEncounterInfo"];
 local GetAchievementCriteriaInfo = _G["GetAchievementCriteriaInfo"];
@@ -2198,7 +2199,7 @@ local IsQuestFlaggedCompletedForce = function(questID)
 		if CompletedQuests[questID] then
 			return true;
 		end
-		if C_QuestLog.IsQuestFlaggedCompleted(questID) then
+		if C_QuestLog_IsQuestFlaggedCompleted(questID) then
 			CompletedQuests[questID] = true;
 			return true;
 		end
@@ -3256,13 +3257,13 @@ local SubroutineCache = {
 		modID(finalized, searchResults, 1);	-- Normal
 	end,
 	["bfa_azerite_armor_chest_warfront"] = function(finalized, searchResults, o)
+		print("bfa_azerite_armor_chest_warfront");
 		local select, pop, where, is, invtype, modID = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.is, ResolveFunctions.invtype, ResolveFunctions.modID;
-		select(finalized, searchResults, o, "select", "headerID", app.HeaderConstants.WARFRONT);
+		select(finalized, searchResults, o, "select", "headerID", app.HeaderConstants.WARFRONT_BATTLE_FOR_STROMGARDE);
 		pop(finalized, searchResults);	-- Discard the War Effort Header and acquire the children.
-		where(finalized, searchResults, o, "where", "mapID", 14);	-- Arathi Highlands
-		pop(finalized, searchResults);	-- Discard the Map Header and acquire the children.
 		where(finalized, searchResults, o, "where", "headerID", app.HeaderConstants.COMMON_BOSS_DROPS);	-- Select the Common Boss Drop Header.
 		pop(finalized, searchResults);	-- Discard the Common Boss Drop Header and acquire the children.
+		pop(finalized, searchResults);	-- Discard the Faction Headers and acquire the children.
 		is(finalized, searchResults, o, "is", "itemID");	-- Only Items!
 		invtype(finalized, searchResults, o, "invtype", "INVTYPE_HEAD", "INVTYPE_SHOULDER", "INVTYPE_CHEST", "INVTYPE_ROBE");	-- Only Head, Shoulders, and Chest items. (azerite)
 		modID(finalized, searchResults, 5);	-- iLvl 340
@@ -11416,6 +11417,14 @@ local C_Map_GetMapLevels, C_Map_GetBestMapForUnit, C_Map_GetPlayerMapPosition
 	= C_Map.GetMapLevels, C_Map.GetBestMapForUnit, C_Map.GetPlayerMapPosition;
 app.GetCurrentMapID = function()
 	local originalMapID = C_Map_GetBestMapForUnit("player");
+	local substitutions = L.QUEST_ID_TO_MAP_ID[originalMapID];
+	if substitutions then
+		for questID,mapID in pairs(substitutions) do
+			if not C_QuestLog_IsQuestFlaggedCompleted(questID) then
+				return mapID;
+			end
+		end
+	end
 	local zoneTextSubstitution = L.MAP_ID_TO_ZONE_TEXT[originalMapID];
 	if zoneTextSubstitution then
 		local zone = GetRealZoneText();
@@ -12481,13 +12490,13 @@ local IsSpellKnownHelper = function(spellID, rank, ignoreHigherRanks)
         or IsSpellKnownOrOverridesKnown(spellID) or IsSpellKnownOrOverridesKnown(spellID, true) then
         return true;
     end
-	if spellID == 390631 and C_QuestLog.IsQuestFlaggedCompleted(66444) then	-- Ottuk Taming returning false for the above functions
+	if spellID == 390631 and C_QuestLog_IsQuestFlaggedCompleted(66444) then	-- Ottuk Taming returning false for the above functions
 		return true;
 	end
-	if spellID == 241857 or spellID == 231437 and C_QuestLog.IsQuestFlaggedCompleted(46319) then	-- Lunarwing returning false for the above functions
+	if spellID == 241857 or spellID == 231437 and C_QuestLog_IsQuestFlaggedCompleted(46319) then	-- Lunarwing returning false for the above functions
 		return true;
 	end
-	if spellID == 148972 or spellID == 148970 and C_QuestLog.IsQuestFlaggedCompleted(32325) then	-- Green Dread/Fel-Steed returning false for the above functions
+	if spellID == 148972 or spellID == 148970 and C_QuestLog_IsQuestFlaggedCompleted(32325) then	-- Green Dread/Fel-Steed returning false for the above functions
 		return true;
 	end
 end

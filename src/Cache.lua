@@ -407,6 +407,45 @@ local fieldConverters = {
 	end,
 
 	-- Localization Helpers
+	["zone-quest"] = function(group, value)
+		-- If this group uses a normal map, we want to rip out the cache for it.
+		-- Doing it after the cache is finished allows us to still prevent the coordinates
+		-- on relative objects and npcs from getting cached to the parent mapID.
+		local originalMapID = group.mapID;
+		if originalMapID then
+			-- Generate a unique NEGATIVE mapID and cache the object to it.
+			local mapID = nextCustomMapID;
+			nextCustomMapID = nextCustomMapID - 1;
+			tinsert(runners, function()
+				if group.maps then
+					tinsert(group.maps, mapID)
+				else
+					group.maps = {mapID};
+				end
+			end);
+			CacheField(group, "questID", value);
+			CacheField(group, "mapID", mapID);
+			
+			local mapIDCache = currentCache.mapID;
+			tinsert(runners, function()
+				mapIDCache = mapIDCache[originalMapID];
+				for i,o in ipairs(mapIDCache) do
+					if o == group then
+						table.remove(mapIDCache, i);
+						
+						local questIDs = app.L.QUEST_ID_TO_MAP_ID[originalMapID];
+						if not questIDs then
+							questIDs = {};
+							app.L.QUEST_ID_TO_MAP_ID[originalMapID] = questIDs;
+						end
+						questIDs[value] = mapID;
+						app.L.MAP_ID_TO_ZONE_TEXT[mapID] = group.text;
+						break;
+					end
+				end
+			end);
+		end
+	end,
 	["zone-text-areaID"] = function(group, value)
 		local mapID = group.mapID;
 		if not mapID then
