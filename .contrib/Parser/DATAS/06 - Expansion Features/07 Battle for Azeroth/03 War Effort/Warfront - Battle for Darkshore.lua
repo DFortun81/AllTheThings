@@ -5,29 +5,11 @@
 root(ROOTS.ExpansionFeatures,
 	tier(BFA_TIER, {
 		n(WAR_EFFORT, {
-			n(WARFRONT_BATTLE_FOR_DARKSHORE, {
-				["lore"] = "The Battle for Darkshore is the second warfront in Battle for Azeroth where the Forsaken and the Night Elves struggle for control of a staging area near the former Night Elven capital region of Teldrassil.",
-				["timeline"] = { ADDED_8_1_0 },
+			m(DARKSHORE, {	-- Outdoor Warfront-Phased Content
 				["zone-quest"] = 54411,	-- This redirects the mini list to use this header instead when this quest is NOT active and the original mapID is the map that is currently active
-				["mapID"] = DARKSHORE,
-				["maps"] = {
-					1333,	-- Horde Intro Quest Map
-					1203,	-- ???
-					-- 1309,	-- 8.2+ Darkshore ?
-					1338,	-- Actual Scenario [Alliance]
-					1332,	-- Actual Scenario [Horde]
-				},
+				["timeline"] = { ADDED_8_1_0 },
 				["crs"] = {
-					140552,	-- War Table (Alliance)
-					131752,	-- War Table (Horde)
 					141489,	-- Zidormi
-				},
-				["lvl"] = {
-					-- #if AFTER SHADOWLANDS
-					50
-					-- #else
-					120
-					-- #endif
 				},
 				["groups"] = {
 					n(WORLD_BOSSES, {
@@ -79,86 +61,6 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 						},
-					}),
-					n(ACHIEVEMENTS, {	-- Achievements
-						ach(13310, {	-- By Nature's Call (A)
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								crit(1),	-- Dryad
-								crit(2),	-- Faerie Dragon
-								crit(3),	-- Keeper of the Grove
-							},
-						}),
-						ach(13309, {	-- Deforester
-							["races"] = HORDE_ONLY,
-							["g"] = {
-								crit(1),	-- Banshee
-								crit(2),	-- AzerMEK Prototype
-								crit(3),	-- Abomination
-							},
-						}),
-						ach(14150, {	-- Heroic: War for the Shore (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						ach(14149, {	-- Heroic: War for the Shore (H)
-							["races"] = HORDE_ONLY,
-						}),
-						ach(13305, {	-- Night Moves (A)
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								ach(13302, {	-- Under Cover of Darkness
-									["races"] = ALLIANCE_ONLY,
-								}),
-								crit(1),	-- Bashal'Aran
-								crit(2),	-- Gloomtide Strand
-								crit(3),	-- Cinderfall Grove
-								crit(4),	-- Lornesta Mine
-								crit(5),	-- Forlorn Crossing
-								crit(6),	-- Ashwood Depot
-								crit(7),	-- Lor'danel Landing
-							},
-						}),
-						ach(13306, {	-- Night Moves (H)
-							["races"] = HORDE_ONLY,
-							["g"] = {
-								ach(13301, {	-- Under Cover of Darkness
-									["races"] = HORDE_ONLY,
-								}),
-								crit(1),	-- Bashal'Aran
-								crit(2),	-- Gloomtide Strand
-								crit(3),	-- Cinderfall Grove
-								crit(4),	-- Lornesta Mine
-								crit(5),	-- Forlorn Crossing
-								crit(6),	-- Ashwood Depot
-								crit(7),	-- Lor'danel Landing
-							},
-						}),
-						ach(13308, {	-- Recruitment Officer (A)
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								crit(1),	-- Kaldorei Archer
-								crit(2),	-- Druid of the Branch
-								crit(3),	-- Kaldorei Hunter
-								crit(4),	-- Kaldorei Sentinel
-								crit(5),	-- Glaive Thrower
-							},
-						}),
-						ach(13307, {	-- Recruitment Officer (H)
-							["races"] = HORDE_ONLY,
-							["g"] = {
-								crit(1),	-- Forsaken Alchemist
-								crit(2),	-- Forsaken Lancer
-								crit(3),	-- Forsaken Deathguard
-								crit(4),	-- Forsaken Deadshot
-								crit(5),	-- Catapult
-							},
-						}),
-						ach(13297, {	-- War for the Shore (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						ach(13296, {	-- War for the Shore (H)
-							["races"] = HORDE_ONLY,
-						}),
 					}),
 					n(COMMON_BOSS_DROPS, bubbleDown({
 						["modID"] = 3,
@@ -344,6 +246,521 @@ root(ROOTS.ExpansionFeatures,
 							}),
 						},
 					})),
+					n(RARES, {
+						n(149652, {	-- Agathe Wyrmwood [A Only]
+							-- ["questID"] = 54889,	-- Agathe Wyrmwood [Alliance]
+							["races"] = ALLIANCE_ONLY,
+							["questID"] = 54883,
+							["isWeekly"] = true,
+							["coord"] = { 49.5, 25.1, DARKSHORE },
+							["description"] = "Only shows up when Alliance Controlled.",
+							["g"] = {
+								i(166438),	-- Caged Bear (MOUNT!)
+							},
+						}),
+						n(148787, {	-- Alash'anir
+							["allianceQuestID"] = 54695,	-- Alash'anir [Alliance]
+							["hordeQuestID"] = 54696,		-- Alash'anir [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 56.48, 30.73, DARKSHORE },
+							["g"] = {
+								i(166432),	-- Ashenvale Chimaera (MOUNT!)
+							},
+						}),
+						n(147966, {	-- Aman
+							["allianceQuestID"] = 54405,	-- Aman [Alliance]
+							["hordeQuestID"] = 54406,		-- Aman [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 37.85, 84.74, DARKSHORE },
+						}),
+						n(147744, {	-- Amberclaw
+							["allianceQuestID"] = 54285,	-- Amberclaw [Alliance]
+							["hordeQuestID"] = 54286,		-- Amberclaw [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 57.38, 15.67, DARKSHORE },
+							["cr"] = 147746,	-- Glrglrr
+						}),
+						n(148037, {	-- Athil Dewfire [H Only]
+							["questID"] = 54431,	-- Athil Dewfire [Horde]
+							["races"] = HORDE_ONLY,
+							["isWeekly"] = true,
+							["coord"] = { 40.69, 73.23, DARKSHORE },
+							["description"] = "Only shows up when Horde Controlled.",
+							["g"] = {
+								i(166449),	-- Darkshore Sentinel (PET!)
+								i(166803),	-- Umber Nightsaber (MOUNT!)
+							},
+						}),
+						n(147708, {	-- Athrikus Narassin
+							["allianceQuestID"] = 54278,	-- Athrikus Narassin [Alliance]
+							["hordeQuestID"] = 54279,		-- Athrikus Narassin [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 58.5, 24.2, DARKSHORE },
+							["g"] = {
+								i(166784),	-- Narassin's Soul Gem (TOY!)
+							},
+						}),
+						n(149660, {	-- Blackpaw [H Only]
+							["questID"] = 54890,	-- Blackpaw [Horde]
+							["races"] = HORDE_ONLY,
+							["isWeekly"] = true,
+							["coord"] = { 49.68, 24.94, DARKSHORE },
+							["description"] = "Only shows up when Horde Controlled.",
+							["g"] = {
+								i(166428),	-- Blackpaw (MOUNT!)
+							},
+						}),
+						n(149141, {	-- Burninator Mark V [A Only]
+							["races"] = ALLIANCE_ONLY,
+							["cr"] = 148497,	-- When he spawns as a WQ
+							["questID"] = 54768,
+							["isWeekly"] = true,
+							["coord"] = { 41.5, 76.4, DARKSHORE },
+							["description"] = "Only shows up when Alliance Controlled.",
+							["g"] = {
+								i(166449),	-- Darkshore Sentinel (PET!)
+								i(166788),	-- Twiddle Twirler: Shredder Blade (TOY!)
+							},
+						}),
+						n(147845, {	-- Commander Drald [A Only]
+							-- ["questID"] = 54251,	-- Commander Drald [Alliance]
+							["races"] = ALLIANCE_ONLY,
+							["questID"] = 54309,
+							["isWeekly"] = true,
+							["coord"] = { 46.51, 86.14, DARKSHORE },
+							["description"] = "Only shows up when Alliance Controlled.",
+							["g"] = {
+								i(166790),	-- Highborne Memento (TOY!)
+							},
+						}),
+						n(148025, {	-- Commander Ralesh
+							["allianceQuestID"] = 54426,	-- Commander Ralesh [Alliance]
+							["hordeQuestID"] = 54427,		-- Commander Ralesh [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 37.96, 76.23, DARKSHORE },
+							["g"] = {
+								i(166787),	-- Twiddle Twirler: Sentinel's Glaive (TOY!)
+							},
+						}),
+						n(147260, {	-- Conflagros
+							["allianceQuestID"] = 54232,	-- Conflagros [Alliance]
+							["hordeQuestID"] = 54233,		-- Conflagros [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 39.07, 61.98, DARKSHORE },
+							["g"] = {
+								i(166451),	-- Detective Ray (PET!)
+							},
+						}),
+						n(149655, {	-- Croz Bloodrage [A Only]
+							-- ["questID"] = 54891,	-- Croz Bloodrage [Alliance]
+							["races"] = ALLIANCE_ONLY,
+							["questID"] = 54886,
+							["isWeekly"] = true,
+							["coord"] = { 50.79, 32.22, DARKSHORE },
+							["description"] = "Only shows up when Alliance Controlled.",
+							["g"] = {
+								i(166437),	-- Captured Kaldorei Nightsaber (MOUNT!)
+								--i(166435),	-- Kaldorei Nightsaber (MOUNT!) -- Possible it's a drop here; will need data
+							},
+						}),
+						n(147241, {	-- Cyclarus
+							["allianceQuestID"] = 54229,	-- Cyclarus [Alliance]
+							["hordeQuestID"] = 54230,		-- Cyclarus [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 43.79, 53.75, DARKSHORE },
+							["g"] = {
+								i(166448),	-- Gust of Cyclarus (PET!)
+							},
+						}),
+						n(148790, {	-- Frightened Kodo
+							["description"] = "This npc roams around. Once you spot it, you will then need to click it to obtain the mount.",
+							["coords"] = {
+								{ 37.01, 65.01, DARKSHORE },
+								{ 38.01, 66.01, DARKSHORE },
+								{ 41.01, 54.01, DARKSHORE },
+								{ 41.23, 64.99, DARKSHORE },
+								{ 41.31, 65.48, DARKSHORE },
+								{ 43.81, 67.51, DARKSHORE },
+								{ 44.01, 54.01, DARKSHORE },
+								{ 44.04, 67.56, DARKSHORE },
+								{ 45.01, 51.31, DARKSHORE },
+								{ 45.01, 67.01, DARKSHORE },
+							},
+							["g"] = {
+								i(166433),	-- Frightened Kodo (MOUNT!)
+							},
+						}),
+						n(149654, {	-- Glimmerspine
+							["allianceQuestID"] = 54884,	-- Glimmerspine [Alliance]
+							["hordeQuestID"] = 54885,		-- Glimmerspine [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 43.51, 19.63, DARKSHORE },
+						}),
+						n(147261, {	-- Granokk
+							["allianceQuestID"] = 54234,	-- Granokk [Alliance]
+							["hordeQuestID"] = 54235,		-- Granokk [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 48.35, 55.56, DARKSHORE },
+						}),
+						n(148031, {	-- Gren Tornfur
+							["allianceQuestID"] = 54428,	-- Gren Tornfur [Alliance]
+							["hordeQuestID"] = 54429,		-- Gren Tornfur [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 40.92, 56.43, DARKSHORE },
+							["g"] = {
+								i(166785),	-- Detoxified Blight Grenade (TOY!)
+							},
+						}),
+						n(149662, {	-- Grimhorn [H Only]
+							["questID"] = 54891,	-- Grimhorn [Horde]
+							["races"] = HORDE_ONLY,
+							["isWeekly"] = true,
+							["coord"] = { 50.72, 32.32, DARKSHORE },
+							["description"] = "Only shows up when Horde Controlled.",
+							["g"] = {
+								i(166525, {	-- Nightwreathed Egg
+									i(166528),	-- Nightwreathed Watcher (PET!)
+								}),
+							},
+						}),
+						n(147240, {	-- Hydrath
+							["allianceQuestID"] = 54227,	-- Hydrath [Alliance]
+							["hordeQuestID"] = 54228,		-- Hydrath [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 52.51, 32.11, DARKSHORE },
+							["g"] = {
+								i(166452),	-- Hydrath Droplet (PET!)
+							},
+						}),
+						n(149657, {	-- Madfeather
+							["allianceQuestID"] = 54887,	-- Madfeather [Alliance]
+							["hordeQuestID"] = 54888,		-- Madfeather [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 44.03, 48.21, DARKSHORE },
+						}),
+						n(147701, {	-- Moxo The Beheader [A Only]
+							-- ["questID"] = 54430,	-- Moxo The Beheader [Alliance]
+							["races"] = ALLIANCE_ONLY,
+							["questID"] = 54277,
+							["isWeekly"] = true,
+							["coords"] = {
+								{ 63.45, 20.01, DARKSHORE },
+								{ 66.68, 19.09, DARKSHORE },
+								{ 65.54, 19.98, DARKSHORE },
+								{ 64.39, 20.09, DARKSHORE },
+							},
+							["description"] = "Only shows up when Alliance Controlled.",
+							["g"] = {
+								i(166434),	-- Captured Umber Nightsaber (MOUNT!)
+							},
+						}),
+						n(147970, {	-- Mrggrmarr
+							["allianceQuestID"] = 54408,	-- Mrggrmarr [Alliance]
+							["hordeQuestID"] = 54409,		-- Mrggrmarr [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 35.85, 81.75, DARKSHORE },
+						}),
+						n(147758, {	-- Onu [H Only]
+							["questID"] = 54291,	-- Onu [Horde]
+							["races"] = HORDE_ONLY,
+							["isWeekly"] = true,
+							["coord"] = { 45.17, 74.99, DARKSHORE },
+							["description"] = "Only shows up when Horde Controlled.",
+							["g"] = {
+								i(166453),	-- Everburning Treant (PET!)
+							},
+						}),
+						n(149659, {	-- Orwell Stevenson [A Only]
+							-- ["questID"] = 54890,	-- Orwell Stevenson [Alliance]
+							["races"] = ALLIANCE_ONLY,
+							["questID"] = 54889,
+							["isWeekly"] = true,
+							["coord"] = { 39.79, 32.94, DARKSHORE },
+							["description"] = "Only shows up when Alliance Controlled.",
+							["g"] = {
+								i(166525, {	-- Nightwreathed Egg
+									i(166528),	-- Nightwreathed Watcher (PET!)
+								}),
+							},
+						}),
+						n(148103, {	-- Sapper Odette [H Only]
+							["questID"] = 54452,	-- Sapper Odette [Horde]
+							["races"] = HORDE_ONLY,
+							["isWeekly"] = true,
+							["coord"] = { 32.98, 83.94, DARKSHORE },
+							["description"] = "Only shows up when Horde Controlled.",
+							["g"] = {
+								i(166788),	-- Twiddle Twirler: Shredder Blade (TOY!)
+							},
+						}),
+						n(149665, {	-- Scalefiend
+							["allianceQuestID"] = 54893,	-- Scalefiend [Alliance]
+							["hordeQuestID"] = 54894,		-- Scalefiend [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 47.64, 44.55, DARKSHORE },
+						}),
+						n(149663, {	-- Shadowclaw [H Only]
+							["questID"] = 54892,	-- Shadowclaw [Horde]
+							["races"] = HORDE_ONLY,
+							["isWeekly"] = true,
+							["coord"] = { 39.79, 32.94, DARKSHORE },
+							["description"] = "Only shows up when Horde Controlled.",
+							["g"] = {
+								--i(166437),	-- Captured Kaldorei Nightsaber (MOUNT!) -- Possible it's a drop here; will need data
+								i(166435),	-- Kaldorei Nightsaber (MOUNT!)
+							},
+						}),
+						n(147751, {	-- Shattershard
+							["allianceQuestID"] = 54289,	-- Shattershard [Alliance] 54884
+							["hordeQuestID"] = 54290,		-- Shattershard [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 43.48, 29.38, DARKSHORE },
+						}),
+						n(147897, {	-- Soggoth The Slitherer
+							["allianceQuestID"] = 54320,	-- Soggoth The Slitherer [Alliance]
+							["hordeQuestID"] = 54321,		-- Soggoth The Slitherer [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 40.57, 85.09, DARKSHORE },
+							["g"] = {
+								i(166454),	-- Void Jelly (PET!)
+							},
+						}),
+						n(147332, {	-- Stonebinder Ssravess
+							["allianceQuestID"] = 54247,	-- Stonebinder Ssravess [Alliance]
+							["hordeQuestID"] = 54248,		-- Stonebinder Ssravess [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 45.51, 58.96, DARKSHORE },
+						}),
+						n(147435, {	-- Thelar Moonstrike [H Only]
+							["questID"] = 54252,	-- Thelar Moonstrike [Horde]
+							["races"] = HORDE_ONLY,
+							["isWeekly"] = true,
+							["coord"] = { 62.12, 16.49, DARKSHORE },
+							["description"] = "Only shows up when Horde Controlled.",
+							["g"] = {
+								i(166790),	-- Highborne Memento (TOY!)
+							},
+						}),
+						n(147942, {	-- Twilight Prophet Graeme
+							["allianceQuestID"] = 54397,	-- Twilight Prophet Graeme [Alliance]
+							["hordeQuestID"] = 54398,		-- Twilight Prophet Graeme [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 40.62, 82.72, DARKSHORE },
+							["g"] = {
+								i(166455),	-- Zur'aj the Depleted (PET!)
+							},
+						}),
+						n(147664, {	-- Zim'kaga [A Only]
+							["races"] = ALLIANCE_ONLY,
+							["questID"] = 54274,
+							["isWeekly"] = true,
+							["coord"] = { 62.38, 9.84, DARKSHORE },
+							["g"] = {
+								i(166453),	-- Everburning Treant (PET!)
+							},
+						}),
+					}),
+					n(TREASURES, sharedData({["isDaily"] = true},{
+						o(319222, {	-- Treasure Chest
+							["questID"] = 54880,
+							["coord"] = { 44.3, 53.4, DARKSHORE },
+						}),
+					})),
+					n(WORLD_QUESTS, sharedData({	-- Alliance
+						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+					},{
+						q(54669),	-- A Dangerous Combination(A)
+						q(54840),	-- Agathe Wyrmwood
+						q(54825),	-- Alash'anir (A)
+						q(54823),	-- Aman (A)
+						q(54678),	-- Anything We Can Salvage (A)
+						q(54821),	-- Athrikus Narassin (A)
+						q(54677),	-- Back to the Depths (A)
+						q(54856),	-- Bilgewater Bandits (A)
+						q(54784),	-- Blackwood Liberation (A)
+						q(54837),	-- Burninator Mark V
+						q(54836),	-- Commander Drald (A)
+						q(54834),	-- Commander Ral'esh (A)
+						q(54818),	-- Conflagros (A)
+						q(54838),	-- Croz Bloodrage (A)
+						q(54817),	-- Cyclarus (A)
+						q(54679),	-- Fueling the Flames (A)
+						q(54858),	-- Glaive Consequences (A)
+						q(54831),	-- Glimmerspine (A)
+						q(54832),	-- Glrglrr (A)
+						q(54819),	-- Granokk (A)
+						q(54827),	-- Gren Tornfur (A)
+						q(54675),	-- Hunting Season (A)
+						q(54816),	-- Hydrath (A)
+						q(54667),	-- Legacy in Ruins (A)
+						q(54826),	-- Madfeather (A)
+						q(54835),	-- Moxo the Beheader (A)
+						q(54830),	-- Mrggr'marr (A)
+						q(54841),	-- Orwell Stevenson (A)
+						q(54668),	-- Out of Their Mine (A)
+						q(54674),	-- Prisoners of the Darkscale (A)
+						q(54672),	-- Rituals of Twilight (A)
+						q(54833),	-- Scalefiend (A)
+						q(54676),	-- Shards of Narassin (A)
+						q(54698),	-- Shattering Spears (A)
+						q(54824),	-- Shattershard (A)
+						q(54822),	-- Soggoth the Slitherer (A)
+						q(54829),	-- Stonebinder Ssra'vess (A)
+						q(54673),	-- Tip of the Trident (A)
+						q(54857),	-- Turning the Tides (A)
+						q(54828),	-- Twilight Prophet Graeme (A)
+						q(54820),	-- Zim'kaga (A)
+					})),
+					n(WORLD_QUESTS, sharedData({	-- Horde
+						["races"] = HORDE_ONLY,
+						["isWorldQuest"] = true,
+					},{
+						q(54497),	-- A Dangerous Combination (H)
+						q(54797),	-- Alash'anir (H)
+						q(54795),	-- Aman (H)
+						q(54531),	-- Anything We Can Salvage (H)
+						q(54809),	-- Athil Dewfire (H)
+						q(54793),	-- Athrikus Narassin (H)
+						q(54528),	-- Back to the Depths (H)
+						q(54811),	-- Blackpaw (H)
+						q(54612),	-- Blood and Ashes (H)
+						q(54806),	-- Commander Ral'esh (H)
+						q(54790),	-- Conflagros (H)
+						q(54789),	-- Cyclarus (H)
+						q(54724),	-- Ending the Blackwood (H)
+						q(54536),	-- Fueling the Flames (H)
+						q(54803),	-- Glimmerspine (H)
+						q(54804),	-- Glrglrr (H)
+						q(54791),	-- Granokk (H)
+						q(54799),	-- Gren Tornfur (H)
+						q(54810),	-- Grimhorn (H)
+						q(54788),	-- Hydrath (H)
+						q(54648),	-- Kaldorei Resurgence (H)
+						q(54467),	-- Legacy in Ruins (H)
+						q(54798),	-- Madfeather (H)
+						q(54802),	-- Mrggr'marr (H)
+						q(54792),	-- Onu (H)
+						q(54514),	-- Prisoners of the Darkscale (H)
+						q(54499),	-- Rituals of Twilight (H)
+						q(54807),	-- Sapper Odette (H)
+						q(54805),	-- Scalefiend (H)
+						q(54496),	-- Scurvy Dogs! (H)
+						q(54812),	-- Shadowclaw (H)
+						q(54796),	-- Shattershard (H)
+						q(54520),	-- Singed Saplings (H)
+						q(54794),	-- Soggoth the Slitherer (H)
+						q(54521),	-- Stolen Sorcery (H)
+						q(54801),	-- Stonebinder Ssra'vess (H)
+						q(54808),	-- Thelar Moonstrike (H)
+						q(54509),	-- Tip of the Trident (H)
+						q(54722),	-- Turning the Tides (H)
+						q(54800),	-- Twilight Prophet Graeme (H)
+						q(54719),	-- Worgen in the Ore Mine (H)
+					})),
+				},
+			}),
+			n(WARFRONT_BATTLE_FOR_DARKSHORE, {	-- Completely separate, distinct Warfont scenario
+				["lore"] = "The Battle for Darkshore is the second warfront in Battle for Azeroth where the Forsaken and the Night Elves struggle for control of a staging area near the former Night Elven capital region of Teldrassil.",
+				["maps"] = {
+					1333,	-- Horde Intro Quest Map
+					1203,	-- ???
+					-- 1309,	-- 8.2+ Darkshore ?
+					1338,	-- Actual Scenario [Alliance]
+					1332,	-- Actual Scenario [Horde]
+				},
+				["crs"] = {
+					140552,	-- War Table (Alliance)
+					131752,	-- War Table (Horde)
+				},
+				["lvl"] = {
+					-- #if AFTER SHADOWLANDS
+					50,
+					-- #else
+					120,
+					-- #endif
+				},
+				["groups"] = {
+					n(ACHIEVEMENTS, {	-- Achievements
+						ach(13310, {	-- By Nature's Call (A)
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								crit(1),	-- Dryad
+								crit(2),	-- Faerie Dragon
+								crit(3),	-- Keeper of the Grove
+							},
+						}),
+						ach(13309, {	-- Deforester
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								crit(1),	-- Banshee
+								crit(2),	-- AzerMEK Prototype
+								crit(3),	-- Abomination
+							},
+						}),
+						ach(14150, {	-- Heroic: War for the Shore (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						ach(14149, {	-- Heroic: War for the Shore (H)
+							["races"] = HORDE_ONLY,
+						}),
+						ach(13305, {	-- Night Moves (A)
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								ach(13302, {	-- Under Cover of Darkness
+									["races"] = ALLIANCE_ONLY,
+								}),
+								crit(1),	-- Bashal'Aran
+								crit(2),	-- Gloomtide Strand
+								crit(3),	-- Cinderfall Grove
+								crit(4),	-- Lornesta Mine
+								crit(5),	-- Forlorn Crossing
+								crit(6),	-- Ashwood Depot
+								crit(7),	-- Lor'danel Landing
+							},
+						}),
+						ach(13306, {	-- Night Moves (H)
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								ach(13301, {	-- Under Cover of Darkness
+									["races"] = HORDE_ONLY,
+								}),
+								crit(1),	-- Bashal'Aran
+								crit(2),	-- Gloomtide Strand
+								crit(3),	-- Cinderfall Grove
+								crit(4),	-- Lornesta Mine
+								crit(5),	-- Forlorn Crossing
+								crit(6),	-- Ashwood Depot
+								crit(7),	-- Lor'danel Landing
+							},
+						}),
+						ach(13308, {	-- Recruitment Officer (A)
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								crit(1),	-- Kaldorei Archer
+								crit(2),	-- Druid of the Branch
+								crit(3),	-- Kaldorei Hunter
+								crit(4),	-- Kaldorei Sentinel
+								crit(5),	-- Glaive Thrower
+							},
+						}),
+						ach(13307, {	-- Recruitment Officer (H)
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								crit(1),	-- Forsaken Alchemist
+								crit(2),	-- Forsaken Lancer
+								crit(3),	-- Forsaken Deathguard
+								crit(4),	-- Forsaken Deadshot
+								crit(5),	-- Catapult
+							},
+						}),
+						ach(13297, {	-- War for the Shore (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						ach(13296, {	-- War for the Shore (H)
+							["races"] = HORDE_ONLY,
+						}),
+					}),
 					n(QUESTS, {	-- Questlines (A)
 						q(54050, {	-- Aftermath
 							["provider"] = { "n", 146601 },	-- Sira Moonwarden
@@ -434,7 +851,7 @@ root(ROOTS.ExpansionFeatures,
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 54059,	-- The Night Warrior
 						}),
-						
+
 						-- Alliance Quests
 						q(53977, {	-- The War Chest (A)
 							["provider"] = { "n", 145770 },	-- Thisalee Crow
@@ -930,326 +1347,11 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 					})),
-					n(RARES, {
-						n(149652, {	-- Agathe Wyrmwood [A Only]
-							-- ["questID"] = 54889,	-- Agathe Wyrmwood [Alliance]
-							["races"] = ALLIANCE_ONLY,
-							["questID"] = 54883,
-							["isWeekly"] = true,
-							["coord"] = { 49.5, 25.1, DARKSHORE },
-							["description"] = "Only shows up when Alliance Controlled.",
-							["g"] = {
-								i(166438),	-- Caged Bear (MOUNT!)
-							},
-						}),
-						n(148787, {	-- Alash'anir
-							["allianceQuestID"] = 54695,	-- Alash'anir [Alliance]
-							["hordeQuestID"] = 54696,		-- Alash'anir [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 56.48, 30.73, DARKSHORE },
-							["g"] = {
-								i(166432),	-- Ashenvale Chimaera (MOUNT!)
-							},
-						}),
-						n(147966, {	-- Aman
-							["allianceQuestID"] = 54405,	-- Aman [Alliance]
-							["hordeQuestID"] = 54406,		-- Aman [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 37.85, 84.74, DARKSHORE },
-						}),
-						n(147744, {	-- Amberclaw
-							["allianceQuestID"] = 54285,	-- Amberclaw [Alliance]
-							["hordeQuestID"] = 54286,		-- Amberclaw [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 57.38, 15.67, DARKSHORE },
-							["cr"] = 147746,	-- Glrglrr
-						}),
-						n(148037, {	-- Athil Dewfire [H Only]
-							["questID"] = 54431,	-- Athil Dewfire [Horde]
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-							["coord"] = { 40.69, 73.23, DARKSHORE },
-							["description"] = "Only shows up when Horde Controlled.",
-							["g"] = {
-								i(166449),	-- Darkshore Sentinel (PET!)
-								i(166803),	-- Umber Nightsaber (MOUNT!)
-							},
-						}),
-						n(147708, {	-- Athrikus Narassin
-							["allianceQuestID"] = 54278,	-- Athrikus Narassin [Alliance]
-							["hordeQuestID"] = 54279,		-- Athrikus Narassin [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 58.5, 24.2, DARKSHORE },
-							["g"] = {
-								i(166784),	-- Narassin's Soul Gem (TOY!)
-							},
-						}),
-						n(149660, {	-- Blackpaw [H Only]
-							["questID"] = 54890,	-- Blackpaw [Horde]
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-							["coord"] = { 49.68, 24.94, DARKSHORE },
-							["description"] = "Only shows up when Horde Controlled.",
-							["g"] = {
-								i(166428),	-- Blackpaw (MOUNT!)
-							},
-						}),
-						n(149141, {	-- Burninator Mark V [A Only]
-							["races"] = ALLIANCE_ONLY,
-							["cr"] = 148497,	-- When he spawns as a WQ
-							["questID"] = 54768,
-							["isWeekly"] = true,
-							["coord"] = { 41.5, 76.4, DARKSHORE },
-							["description"] = "Only shows up when Alliance Controlled.",
-							["g"] = {
-								i(166449),	-- Darkshore Sentinel (PET!)
-								i(166788),	-- Twiddle Twirler: Shredder Blade (TOY!)
-							},
-						}),
-						n(147845, {	-- Commander Drald [A Only]
-							-- ["questID"] = 54251,	-- Commander Drald [Alliance]
-							["races"] = ALLIANCE_ONLY,
-							["questID"] = 54309,
-							["isWeekly"] = true,
-							["coord"] = { 46.51, 86.14, DARKSHORE },
-							["description"] = "Only shows up when Alliance Controlled.",
-							["g"] = {
-								i(166790),	-- Highborne Memento (TOY!)
-							},
-						}),
-						n(148025, {	-- Commander Ralesh
-							["allianceQuestID"] = 54426,	-- Commander Ralesh [Alliance]
-							["hordeQuestID"] = 54427,		-- Commander Ralesh [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 37.96, 76.23, DARKSHORE },
-							["g"] = {
-								i(166787),	-- Twiddle Twirler: Sentinel's Glaive (TOY!)
-							},
-						}),
-						n(147260, {	-- Conflagros
-							["allianceQuestID"] = 54232,	-- Conflagros [Alliance]
-							["hordeQuestID"] = 54233,		-- Conflagros [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 39.07, 61.98, DARKSHORE },
-							["g"] = {
-								i(166451),	-- Detective Ray (PET!)
-							},
-						}),
-						n(149655, {	-- Croz Bloodrage [A Only]
-							-- ["questID"] = 54891,	-- Croz Bloodrage [Alliance]
-							["races"] = ALLIANCE_ONLY,
-							["questID"] = 54886,
-							["isWeekly"] = true,
-							["coord"] = { 50.79, 32.22, DARKSHORE },
-							["description"] = "Only shows up when Alliance Controlled.",
-							["g"] = {
-								i(166437),	-- Captured Kaldorei Nightsaber (MOUNT!)
-								--i(166435),	-- Kaldorei Nightsaber (MOUNT!) -- Possible it's a drop here; will need data
-							},
-						}),
-						n(147241, {	-- Cyclarus
-							["allianceQuestID"] = 54229,	-- Cyclarus [Alliance]
-							["hordeQuestID"] = 54230,		-- Cyclarus [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 43.79, 53.75, DARKSHORE },
-							["g"] = {
-								i(166448),	-- Gust of Cyclarus (PET!)
-							},
-						}),
-						n(148790, {	-- Frightened Kodo
-							["description"] = "This npc roams around. Once you spot it, you will then need to click it to obtain the mount.",
-							["coords"] = {
-								{ 37.01, 65.01, DARKSHORE },
-								{ 38.01, 66.01, DARKSHORE },
-								{ 41.01, 54.01, DARKSHORE },
-								{ 41.23, 64.99, DARKSHORE },
-								{ 41.31, 65.48, DARKSHORE },
-								{ 43.81, 67.51, DARKSHORE },
-								{ 44.01, 54.01, DARKSHORE },
-								{ 44.04, 67.56, DARKSHORE },
-								{ 45.01, 51.31, DARKSHORE },
-								{ 45.01, 67.01, DARKSHORE },
-							},
-							["g"] = {
-								i(166433),	-- Frightened Kodo (MOUNT!)
-							},
-						}),
-						n(149654, {	-- Glimmerspine
-							["allianceQuestID"] = 54884,	-- Glimmerspine [Alliance]
-							["hordeQuestID"] = 54885,		-- Glimmerspine [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 43.51, 19.63, DARKSHORE },
-						}),
-						n(147261, {	-- Granokk
-							["allianceQuestID"] = 54234,	-- Granokk [Alliance]
-							["hordeQuestID"] = 54235,		-- Granokk [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 48.35, 55.56, DARKSHORE },
-						}),
-						n(148031, {	-- Gren Tornfur
-							["allianceQuestID"] = 54428,	-- Gren Tornfur [Alliance]
-							["hordeQuestID"] = 54429,		-- Gren Tornfur [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 40.92, 56.43, DARKSHORE },
-							["g"] = {
-								i(166785),	-- Detoxified Blight Grenade (TOY!)
-							},
-						}),
-						n(149662, {	-- Grimhorn [H Only]
-							["questID"] = 54891,	-- Grimhorn [Horde]
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-							["coord"] = { 50.72, 32.32, DARKSHORE },
-							["description"] = "Only shows up when Horde Controlled.",
-							["g"] = {
-								i(166525, {	-- Nightwreathed Egg
-									i(166528),	-- Nightwreathed Watcher (PET!)
-								}),
-							},
-						}),
-						n(147240, {	-- Hydrath
-							["allianceQuestID"] = 54227,	-- Hydrath [Alliance]
-							["hordeQuestID"] = 54228,		-- Hydrath [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 52.51, 32.11, DARKSHORE },
-							["g"] = {
-								i(166452),	-- Hydrath Droplet (PET!)
-							},
-						}),
-						n(149657, {	-- Madfeather
-							["allianceQuestID"] = 54887,	-- Madfeather [Alliance]
-							["hordeQuestID"] = 54888,		-- Madfeather [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 44.03, 48.21, DARKSHORE },
-						}),
-						n(147701, {	-- Moxo The Beheader [A Only]
-							-- ["questID"] = 54430,	-- Moxo The Beheader [Alliance]
-							["races"] = ALLIANCE_ONLY,
-							["questID"] = 54277,
-							["isWeekly"] = true,
-							["coords"] = {
-								{ 63.45, 20.01, DARKSHORE },
-								{ 66.68, 19.09, DARKSHORE },
-								{ 65.54, 19.98, DARKSHORE },
-								{ 64.39, 20.09, DARKSHORE },
-							},
-							["description"] = "Only shows up when Alliance Controlled.",
-							["g"] = {
-								i(166434),	-- Captured Umber Nightsaber (MOUNT!)
-							},
-						}),
-						n(147970, {	-- Mrggrmarr
-							["allianceQuestID"] = 54408,	-- Mrggrmarr [Alliance]
-							["hordeQuestID"] = 54409,		-- Mrggrmarr [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 35.85, 81.75, DARKSHORE },
-						}),
-						n(147758, {	-- Onu [H Only]
-							["questID"] = 54291,	-- Onu [Horde]
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-							["coord"] = { 45.17, 74.99, DARKSHORE },
-							["description"] = "Only shows up when Horde Controlled.",
-							["g"] = {
-								i(166453),	-- Everburning Treant (PET!)
-							},
-						}),
-						n(149659, {	-- Orwell Stevenson [A Only]
-							-- ["questID"] = 54890,	-- Orwell Stevenson [Alliance]
-							["races"] = ALLIANCE_ONLY,
-							["questID"] = 54889,
-							["isWeekly"] = true,
-							["coord"] = { 39.79, 32.94, DARKSHORE },
-							["description"] = "Only shows up when Alliance Controlled.",
-							["g"] = {
-								i(166525, {	-- Nightwreathed Egg
-									i(166528),	-- Nightwreathed Watcher (PET!)
-								}),
-							},
-						}),
-						n(148103, {	-- Sapper Odette [H Only]
-							["questID"] = 54452,	-- Sapper Odette [Horde]
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-							["coord"] = { 32.98, 83.94, DARKSHORE },
-							["description"] = "Only shows up when Horde Controlled.",
-							["g"] = {
-								i(166788),	-- Twiddle Twirler: Shredder Blade (TOY!)
-							},
-						}),
-						n(149665, {	-- Scalefiend
-							["allianceQuestID"] = 54893,	-- Scalefiend [Alliance]
-							["hordeQuestID"] = 54894,		-- Scalefiend [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 47.64, 44.55, DARKSHORE },
-						}),
-						n(149663, {	-- Shadowclaw [H Only]
-							["questID"] = 54892,	-- Shadowclaw [Horde]
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-							["coord"] = { 39.79, 32.94, DARKSHORE },
-							["description"] = "Only shows up when Horde Controlled.",
-							["g"] = {
-								--i(166437),	-- Captured Kaldorei Nightsaber (MOUNT!) -- Possible it's a drop here; will need data
-								i(166435),	-- Kaldorei Nightsaber (MOUNT!)
-							},
-						}),
-						n(147751, {	-- Shattershard
-							["allianceQuestID"] = 54289,	-- Shattershard [Alliance] 54884
-							["hordeQuestID"] = 54290,		-- Shattershard [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 43.48, 29.38, DARKSHORE },
-						}),
-						n(147897, {	-- Soggoth The Slitherer
-							["allianceQuestID"] = 54320,	-- Soggoth The Slitherer [Alliance]
-							["hordeQuestID"] = 54321,		-- Soggoth The Slitherer [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 40.57, 85.09, DARKSHORE },
-							["g"] = {
-								i(166454),	-- Void Jelly (PET!)
-							},
-						}),
-						n(147332, {	-- Stonebinder Ssravess
-							["allianceQuestID"] = 54247,	-- Stonebinder Ssravess [Alliance]
-							["hordeQuestID"] = 54248,		-- Stonebinder Ssravess [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 45.51, 58.96, DARKSHORE },
-						}),
-						n(147435, {	-- Thelar Moonstrike [H Only]
-							["questID"] = 54252,	-- Thelar Moonstrike [Horde]
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-							["coord"] = { 62.12, 16.49, DARKSHORE },
-							["description"] = "Only shows up when Horde Controlled.",
-							["g"] = {
-								i(166790),	-- Highborne Memento (TOY!)
-							},
-						}),
-						n(147942, {	-- Twilight Prophet Graeme
-							["allianceQuestID"] = 54397,	-- Twilight Prophet Graeme [Alliance]
-							["hordeQuestID"] = 54398,		-- Twilight Prophet Graeme [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 40.62, 82.72, DARKSHORE },
-							["g"] = {
-								i(166455),	-- Zur'aj the Depleted (PET!)
-							},
-						}),
-						n(147664, {	-- Zim'kaga [A Only]
-							["races"] = ALLIANCE_ONLY,
-							["questID"] = 54274,
-							["isWeekly"] = true,
-							["coord"] = { 62.38, 9.84, DARKSHORE },
-							["g"] = {
-								i(166453),	-- Everburning Treant (PET!)
-							},
-						}),
-					}),
 					-- Sources:
 					-- Rares/Treasures (5)
 					-- Normal Warfront Victory [6]
 					-- Normal Quest (6)
 					-- Heroic Quest (23)
-
 					-- TODO Nathanos WB sym (23)
 					n(REWARDS, bubbleDown({
 						["modID"] = 6,
@@ -1371,104 +1473,6 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 						},
-					})),
-					n(TREASURES, sharedData({["isDaily"] = true},{
-						o(319222, {	-- Treasure Chest
-							["questID"] = 54880,
-							["coord"] = { 44.3, 53.4, DARKSHORE },
-						}),
-					})),
-					n(WORLD_QUESTS, sharedData({	-- Alliance
-						["races"] = ALLIANCE_ONLY,
-						["isWorldQuest"] = true,
-					},{
-						q(54669),	-- A Dangerous Combination(A)
-						q(54840),	-- Agathe Wyrmwood
-						q(54825),	-- Alash'anir (A)
-						q(54823),	-- Aman (A)
-						q(54678),	-- Anything We Can Salvage (A)
-						q(54821),	-- Athrikus Narassin (A)
-						q(54677),	-- Back to the Depths (A)
-						q(54856),	-- Bilgewater Bandits (A)
-						q(54784),	-- Blackwood Liberation (A)
-						q(54837),	-- Burninator Mark V
-						q(54836),	-- Commander Drald (A)
-						q(54834),	-- Commander Ral'esh (A)
-						q(54818),	-- Conflagros (A)
-						q(54838),	-- Croz Bloodrage (A)
-						q(54817),	-- Cyclarus (A)
-						q(54679),	-- Fueling the Flames (A)
-						q(54858),	-- Glaive Consequences (A)
-						q(54831),	-- Glimmerspine (A)
-						q(54832),	-- Glrglrr (A)
-						q(54819),	-- Granokk (A)
-						q(54827),	-- Gren Tornfur (A)
-						q(54675),	-- Hunting Season (A)
-						q(54816),	-- Hydrath (A)
-						q(54667),	-- Legacy in Ruins (A)
-						q(54826),	-- Madfeather (A)
-						q(54835),	-- Moxo the Beheader (A)
-						q(54830),	-- Mrggr'marr (A)
-						q(54841),	-- Orwell Stevenson (A)
-						q(54668),	-- Out of Their Mine (A)
-						q(54674),	-- Prisoners of the Darkscale (A)
-						q(54672),	-- Rituals of Twilight (A)
-						q(54833),	-- Scalefiend (A)
-						q(54676),	-- Shards of Narassin (A)
-						q(54698),	-- Shattering Spears (A)
-						q(54824),	-- Shattershard (A)
-						q(54822),	-- Soggoth the Slitherer (A)
-						q(54829),	-- Stonebinder Ssra'vess (A)
-						q(54673),	-- Tip of the Trident (A)
-						q(54857),	-- Turning the Tides (A)
-						q(54828),	-- Twilight Prophet Graeme (A)
-						q(54820),	-- Zim'kaga (A)
-					})),
-					n(WORLD_QUESTS, sharedData({	-- Horde
-						["races"] = HORDE_ONLY,
-						["isWorldQuest"] = true,
-					},{
-						q(54497),	-- A Dangerous Combination (H)
-						q(54797),	-- Alash'anir (H)
-						q(54795),	-- Aman (H)
-						q(54531),	-- Anything We Can Salvage (H)
-						q(54809),	-- Athil Dewfire (H)
-						q(54793),	-- Athrikus Narassin (H)
-						q(54528),	-- Back to the Depths (H)
-						q(54811),	-- Blackpaw (H)
-						q(54612),	-- Blood and Ashes (H)
-						q(54806),	-- Commander Ral'esh (H)
-						q(54790),	-- Conflagros (H)
-						q(54789),	-- Cyclarus (H)
-						q(54724),	-- Ending the Blackwood (H)
-						q(54536),	-- Fueling the Flames (H)
-						q(54803),	-- Glimmerspine (H)
-						q(54804),	-- Glrglrr (H)
-						q(54791),	-- Granokk (H)
-						q(54799),	-- Gren Tornfur (H)
-						q(54810),	-- Grimhorn (H)
-						q(54788),	-- Hydrath (H)
-						q(54648),	-- Kaldorei Resurgence (H)
-						q(54467),	-- Legacy in Ruins (H)
-						q(54798),	-- Madfeather (H)
-						q(54802),	-- Mrggr'marr (H)
-						q(54792),	-- Onu (H)
-						q(54514),	-- Prisoners of the Darkscale (H)
-						q(54499),	-- Rituals of Twilight (H)
-						q(54807),	-- Sapper Odette (H)
-						q(54805),	-- Scalefiend (H)
-						q(54496),	-- Scurvy Dogs! (H)
-						q(54812),	-- Shadowclaw (H)
-						q(54796),	-- Shattershard (H)
-						q(54520),	-- Singed Saplings (H)
-						q(54794),	-- Soggoth the Slitherer (H)
-						q(54521),	-- Stolen Sorcery (H)
-						q(54801),	-- Stonebinder Ssra'vess (H)
-						q(54808),	-- Thelar Moonstrike (H)
-						q(54509),	-- Tip of the Trident (H)
-						q(54722),	-- Turning the Tides (H)
-						q(54800),	-- Twilight Prophet Graeme (H)
-						q(54719),	-- Worgen in the Ore Mine (H)
 					})),
 				},
 			}),

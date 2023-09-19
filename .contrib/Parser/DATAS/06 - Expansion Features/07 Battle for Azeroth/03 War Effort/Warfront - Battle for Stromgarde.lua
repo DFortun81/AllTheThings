@@ -139,24 +139,12 @@ local HORDE_WARFRONT_EQUIPMENT = {
 root(ROOTS.ExpansionFeatures,
 	tier(BFA_TIER, {
 		n(WAR_EFFORT, {
-			n(WARFRONT_BATTLE_FOR_STROMGARDE, {
-				["lore"] = "Located in the Arathi Highlands, Stromgarde is one of the key locations in the struggle for controlling of the Eastern Kingdoms. For the Alliance, Stromgarde sits in a critical defensive position. Following the battle for Lordaeron, the Horde threat still looms over the continent and holding Stromgarde will be key if you hope to keep the Horde's aggression at bay.\n\nFor the Horde, securing Stromgarde would set the stage for an assault on the heart of the Eastern Kingdoms and serve as a launching point for a campaign against the worgen of the kingdom of Gilneas. This location is also key in the defense of the blood elven capital, Silvermoon City, in the north.",
-				["zone-quest"] = 52781,	-- This redirects the mini list to use this header instead when this quest is NOT active and the original mapID is the map that is currently active
+			m(ARATHI_HIGHLANDS, {	-- Outdoor Warfront-Phased Content
+				["zone-quest"] = 52781,	-- This redirects the mini list to use this header instead when this quest is NOT active and the original mapID is the map that is is currently active
 				["timeline"] = { ADDED_8_0_1_LAUNCH },
-				["mapID"] = ARATHI_HIGHLANDS,
-				["maps"] = {
-					906, -- ???
-					943, -- Actual Scenario [Horde]
-					1044, -- Actual Scenario [Alliance]
-					-- 1158, -- ???
-					-- 1244, -- ???
-				},
 				["crs"] = {
-					140552,	-- War Table (Alliance)
-					131752,	-- War Table (Horde)
 					141649,	-- Zidormi
 				},
-				["lvl"] = { 50 },
 				["groups"] = {
 					n(WORLD_BOSSES, {
 						["isRaid"] = true,
@@ -210,6 +198,553 @@ root(ROOTS.ExpansionFeatures,
 							}),
 						},
 					}),
+					n(COMMON_BOSS_DROPS, {
+						["description"] = "These items can drop off any rare.",
+						["modID"] = 5,	-- This will inherently apply to all items within.
+						["crs"] = {
+							142709,	-- Beastrider Kama
+							142508,	-- Branchlord Aldrus
+							141615,	-- Burning Goliath
+							141618,	-- Cresting Goliath
+							142688,	-- Darbel Montrose
+							142741,	-- Doomrider Helgrim
+							141668,	-- Echo of Myzrael
+							142686,	-- Foulbelly
+							142433,	-- Fozruk
+							142662,	-- Geomancer Flintdagger
+							142725,	-- Horrific Apparition
+							142739,	-- Knight-Captaian Aldrin
+							142112,	-- Kor'gresh Coldrage
+							142684,	-- Kovork
+							142716,	-- Man-Hunter Rog
+							141942,	-- Molok the Crusher
+							142692,	-- Nimar the Slayer
+							142423,	-- Overseer Krix
+							142435,	-- Plaguefeather
+							142436,	-- Ragebeak
+							141620,	-- Rumbling Goliatah
+							142683,	-- Ruul Onestone
+							142690,	-- Singer
+							142437,	-- Skullripper
+							141616,	-- Thundering Goliath
+							142438,	-- Venomarus
+							142440,	-- Yogursa
+							142682,	-- Zalas Witherbark <Warband Leader>
+						},
+						["g"] = {
+							n(FACTION_HEADER_ALLIANCE, ALLIANCE_WARFRONT_EQUIPMENT),
+							n(FACTION_HEADER_HORDE, HORDE_WARFRONT_EQUIPMENT),
+						},
+					}),
+					n(RARES, {
+						n(142709, {	-- Beastrider Kama
+							["allianceQuestID"] = 53083,	-- Beastrider Kama [Alliance]
+							["hordeQuestID"] = 53504,	-- Beastrider Kama [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 65.3, 70.6, ARATHI_HIGHLANDS },
+							["g"] = {
+								i(163644),	-- Swift Albino Raptor (MOUNT!)
+							},
+						}),
+						n(142508, {	-- Branchlord Aldrus
+							["allianceQuestID"] = 53013,	-- Branchlord Aldrus [Alliance]
+							["hordeQuestID"] = 53505,	-- Branchlord Aldrus [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 22.9, 22.2, ARATHI_HIGHLANDS },
+							["g"] = {
+								i(163650),	-- Aldrusian Sproutling (PET!)
+							},
+						}),
+						n(141615, {	-- Burning Goliath
+							["allianceQuestID"] = 53017,	-- Burning Goliath [Alliance]
+							["hordeQuestID"] = 53506,	-- Burning Goliath [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 30.6, 44.7, ARATHI_HIGHLANDS },
+							["g"] = {
+								i(163691),	-- Burning Essence
+							},
+						}),
+						n(141618, {	-- Cresting Goliath
+							["allianceQuestID"] = 53018,	-- Cresting Goliath [Alliance]
+							["hordeQuestID"] = 53531,	-- Cresting Goliath [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 61.8, 31.2, ARATHI_HIGHLANDS },
+							["g"] = {
+								i(163700),	-- Cresting Essence
+							},
+						}),
+						n(142688, {	-- Darbel Montrose
+							["allianceQuestID"] = 53084,	-- Darbel Montrose [Alliance]
+							["hordeQuestID"] = 53507,	-- Darbel Montrose [Horde]
+							["description"] = "Spawns at the northern point when Alliance-controlled and the southern point when Horde-controlled.",
+							["isWeekly"] = true,
+							["coords"] = {
+								{ 50.4, 61.2, ARATHI_HIGHLANDS },	-- Horde-controlled
+								{ 50.7, 36.5, ARATHI_HIGHLANDS },	-- Alliance-controlled
+							},
+							["g"] = {
+								i(163652),	-- Voidwiggler (PET!)
+							},
+						}),
+						n(142741, {	-- Doomrider Helgrim (Alliance-only)
+							["questID"] = 53085,	-- Doomrider Helgrim
+							["races"] = ALLIANCE_ONLY,
+							["isWeekly"] = true,
+							["coord"] = { 53.8, 58.2, ARATHI_HIGHLANDS },
+							["description"] = "Only shows up when Alliance-controlled.",
+							["g"] = {
+								i(163579),	-- Highland Mustang (MOUNT!)
+							},
+						}),
+						n(141668, {	-- Echo of Myzrael
+							["allianceQuestID"] = 53059,	-- Echo of Myzrael [Alliance]
+							["hordeQuestID"] = 53508,	-- Echo of Myzrael [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 57.0, 34.6, ARATHI_HIGHLANDS },
+							["g"] = {
+								i(163677),	-- Teeny Titan Orb (PET!)
+							},
+						}),
+						n(142686, {	-- Foulbelly
+							["allianceQuestID"] = 53086,	-- Foulbelly [Alliance]
+							["hordeQuestID"] = 53509,	-- Foulbelly [Horde]
+							["description"] = "Spawns at the back of the cave.",
+							["isWeekly"] = true,
+							["coord"] = { 28.6, 45.6, ARATHI_HIGHLANDS },	-- Cave Entrance
+							["g"] = {
+								i(163735),	-- Foulbelly (TOY!)
+							},
+						}),
+						n(142433, {	-- Fozruk
+							["allianceQuestID"] = 53019,	-- Fozruk [Alliance]
+							["hordeQuestID"] = 53510,	-- Fozruk [Horde]
+							["isWeekly"] = true,
+							["coords"] = {
+								{ 59.4, 27.5, ARATHI_HIGHLANDS },	-- Top
+								{ 54.0, 55.4, ARATHI_HIGHLANDS },	-- Bottom
+							},
+							["g"] = {
+								i(163711),	-- Fozling (PET!)
+							},
+						}),
+						n(142662, {	-- Geomancer Flintdagger
+							["allianceQuestID"] = 53060,	-- Geomancer Flintdagger [Alliance]
+							["hordeQuestID"] = 53511,	-- Geomancer Flintdagger [Horde]
+							["description"] = "Spawns at the back of the cave.",
+							["isWeekly"] = true,
+							["coord"] = { 78.1, 36.7, ARATHI_HIGHLANDS },
+							["g"] = {
+								i(163713),	-- Brazier Cap (TOY!)
+							},
+						}),
+						n(142725, {	-- Horrific Apparition
+							["allianceQuestID"] = 53087,	-- Horrific Apparition [Alliance]
+							["hordeQuestID"] = 53512,	-- Horrific Apparition [Horde]
+							["description"] = "Spawns at the northern point when Alliance-controlled and the southern point when Horde-controlled.",
+							["isWeekly"] = true,
+							["coords"] = {
+								{ 19.5, 60.9, ARATHI_HIGHLANDS },	-- Horde-controlled
+								{ 26.7, 32.6, ARATHI_HIGHLANDS },	-- Alliance-controlled
+							},
+							["g"] = {
+								i(163736),	-- Spectral Visage (TOY!)
+							},
+						}),
+						n(142739, {	-- Knight-Captaian Aldrin
+							["questID"] = 53088,	-- Knight-Captaian Aldrin
+							["isWeekly"] = true,
+							["coord"] = { 49.0, 40.0, ARATHI_HIGHLANDS },
+							["races"] = HORDE_ONLY,
+							["description"] = "Only shows up when Horde-controlled.",
+							["g"] = {
+								i(163578),	-- Broken Highland Mustang (MOUNT!)
+							},
+						}),
+						n(142112, {	-- Kor'gresh Coldrage
+							["allianceQuestID"] = 53058,	-- Kor'gresh Coldrage [Alliance]
+							["hordeQuestID"] = 53513,	-- Kor'gresh Coldrage [Horde]
+							["description"] = "Spawns at the back of the cave.",
+							["isWeekly"] = true,
+							["coord"] = { 48.2, 79.8, ARATHI_HIGHLANDS },
+							["g"] = {
+								i(163744),	-- Coldrage's Cooler (TOY!)
+							},
+						}),
+						n(142684, {	-- Kovork
+							["allianceQuestID"] = 53089,	-- Kovork [Alliance]
+							["hordeQuestID"] = 53514,	-- Kovork [Horde]
+							["description"] = "Spawns at the front of the cave.",
+							["isWeekly"] = true,
+							["coord"] = { 28.6, 45.6, ARATHI_HIGHLANDS },	-- Cave Entrance
+							["g"] = {
+								i(163750),	-- Kovork Kostume (TOY!)
+							},
+						}),
+						n(142716, {	-- Man-Hunter Rog
+							["allianceQuestID"] = 53090,	-- Man-Hunter Rog [Alliance]
+							["hordeQuestID"] = 53515,	-- Man-Hunter Rog [Horde]
+							["isWeekly"] = true,
+							["crs"] = { 142717 },	-- SQUAAWK!
+							["coord"] = { 51.8, 75.1, ARATHI_HIGHLANDS },
+							["g"] = {
+								i(163712),	-- Squawkling (PET!)
+							},
+						}),
+						n(141942, {	-- Molok the Crusher
+							["allianceQuestID"] = 53057,	-- Molok the Crusher [Alliance]
+							["hordeQuestID"] = 53516,	-- Molok the Crusher [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 47.6, 77.9, ARATHI_HIGHLANDS },
+							["g"] = {
+								i(163775),	-- Molok Morion (TOY!)
+							},
+						}),
+						n(142692, {	-- Nimar the Slayer
+							["allianceQuestID"] = 53091,	-- Nimar the Slayer [Alliance]
+							["hordeQuestID"] = 53517,	-- Nimar the Slayer [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 67.5, 61.0, ARATHI_HIGHLANDS },
+							["g"] = {
+								i(163706),	-- Witherbark Direwing (MOUNT!)
+							},
+						}),
+						n(142423, {	-- Overseer Krix
+							["allianceQuestID"] = 53014,	-- Overseer Krix [Alliance]
+							["hordeQuestID"] = 53518,	-- Overseer Krix [Horde]
+							["description"] = "Spawns at the back of the northern cave for Alliance and the southern cave for Horde.",
+							["isWeekly"] = true,
+							["coords"] = {
+								{ 33.7, 36.7, ARATHI_HIGHLANDS },	-- Horde-controlled
+								{ 27.4, 55.8, ARATHI_HIGHLANDS },	-- Alliance-controlled
+							},
+							["g"] = {
+								i(163646),	-- Lil' Donkey (MOUNT!)
+							},
+						}),
+						n(142435, {	-- Plaguefeather
+							["allianceQuestID"] = 53020,	-- Plaguefeather [Alliance]
+							["hordeQuestID"] = 53519,	-- Plaguefeather [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 36.4, 62.8, ARATHI_HIGHLANDS },
+							["g"] = {
+								i(163690),	-- Foulfeather (PET!)
+							},
+						}),
+						n(142436, {	-- Ragebeak
+							["allianceQuestID"] = 53016,	-- Ragebeak [Alliance]
+							["hordeQuestID"] = 53522,	-- Ragebeak [Horde]
+							["description"] = "Spawns at the northern point when Alliance-controlled and the southern point when Horde-controlled.",
+							["isWeekly"] = true,
+							["coords"] = {
+								{ 11.9, 52.1, ARATHI_HIGHLANDS },	-- Horde-controlled
+								{ 18.5, 27.8, ARATHI_HIGHLANDS },	-- Alliance-controlled
+							},
+							["g"] = {
+								i(163689),	-- Ragepeep (PET!)
+							},
+						}),
+						n(141620, {	-- Rumbling Goliath
+							["allianceQuestID"] = 53021,	-- Rumbling Goliath [Alliance]
+							["hordeQuestID"] = 53523,	-- Rumbling Goliath [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 29.7, 60.0, ARATHI_HIGHLANDS },
+							["g"] = {
+								i(163701),	-- Rumbling Essence
+							},
+						}),
+						n(142683, {	-- Ruul Onestone
+							["allianceQuestID"] = 53092,	-- Ruul Onestone [Alliance]
+							["hordeQuestID"] = 53524,	-- Ruul Onestone [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 42.8, 56.4, ARATHI_HIGHLANDS },
+							["g"] = {
+								i(163741),	-- Magic Fun Rock (TOY!)
+							},
+						}),
+						n(142690, {	-- Singer
+							["allianceQuestID"] = 53093,	-- Singer [Alliance]
+							["hordeQuestID"] = 53525,	-- Singer [Horde]
+							["description"] = "Spawns at the northern point when Alliance-controlled and the southern point when Horde-controlled.",
+							["isWeekly"] = true,
+							["coords"] = {
+								{ 50.4, 57.6, ARATHI_HIGHLANDS },	-- Horde-controlled
+								{ 51.1, 39.9, ARATHI_HIGHLANDS },	-- Alliance-controlled
+							},
+							["g"] = {
+								i(163738),	-- Syndicate Mask (TOY!)
+							},
+						}),
+						n(142437, {	-- Skullripper
+							["allianceQuestID"] = 53022,	-- Skullripper [Alliance]
+							["hordeQuestID"] = 53526,	-- Skullripper [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 56.8, 45.1, ARATHI_HIGHLANDS },
+							["g"] = {
+								i(163645),	-- Skullripper (MOUNT!)
+							},
+						}),
+						n(141616, {	-- Thundering Goliath
+							["allianceQuestID"] = 53023,	-- Thundering Goliath [Alliance]
+							["hordeQuestID"] = 53527,	-- Thundering Goliath [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 46.3, 52.0, ARATHI_HIGHLANDS },
+							["g"] = {
+								i(163698),	-- Thundering Essence
+							},
+						}),
+						n(142438, {	-- Venomarus
+							["allianceQuestID"] = 53024,	-- Venomarus [Alliance]
+							["hordeQuestID"] = 53528,	-- Venomarus [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 56.7, 54.1, ARATHI_HIGHLANDS },
+							["g"] = {
+								i(163648),	-- Fuzzy Creepling (PET!)
+							},
+						}),
+						n(142440, {	-- Yogursa
+							["allianceQuestID"] = 53015,	-- Yogursa [Alliance]
+							["hordeQuestID"] = 53529,	-- Yogursa [Horde]
+							["isWeekly"] = true,
+							["coord"] = { 14.0, 36.9, ARATHI_HIGHLANDS },
+							["g"] = {
+								i(163684),	-- Scabby (PET!)
+							},
+						}),
+						n(142682, {	-- Zalas Witherbark <Warband Leader>
+							["allianceQuestID"] = 53094,	-- Zalas Witherbark <Warband Leader> [Alliance]
+							["hordeQuestID"] = 53530,	-- Zalas Witherbark <Warband Leader> [Horde]
+							["description"] = "Spawns in the middle of the cave.",
+							["isWeekly"] = true,
+							["coord"] = { 63.2, 77.6, ARATHI_HIGHLANDS },
+							["g"] = {
+								i(163745),	-- Witherbark Gong (TOY!)
+							},
+						}),
+					}),
+					n(WORLD_QUESTS, bubbleDown({ isWorldQuest = true }, {
+						q(54573, {	-- Beastrider Kama (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54544, {	-- Beastrider Kama (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54623, {	-- Boulderfist Beatdown (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54616, {	-- Boulderfist Beatdown (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54578, {	-- Branchlord Aldrus (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54568, {	-- Branchlord Aldrus (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54608, {	-- Burning Goliath (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54583, {	-- Burning Goliath (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54607, {	-- Cresting Goliath (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54584, {	-- Cresting Goliath (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54572, {	-- Darbel Montrose (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54547, {	-- Darbel Montrose (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54620, {	-- Death to The Defilers (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54540, {	-- Doomrider Helgrim (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54606, {	-- Echo of Myzrael (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54585, {	-- Echo of Myzrael (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54622, {	-- Executing Exorcisms (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54614, {	-- Executing Exorcisms (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54571, {	-- Foulbelly (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54548, {	-- Foulbelly (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54605, {	-- Fozruk (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54586, {	-- Fozruk (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54570, {	-- Geomancer Flintdagger (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54552, {	-- Geomancer Flintdagger (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54569, {	-- Horrific Apparition(A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54542, {	-- Horrific Apparition (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54541, {	-- Knight-Captain Aldrin (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54567, {	-- Kor'gresh Coldrage(A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54553, {	-- Kor'gresh Coldrage (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54566, {	-- Kovork (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54549, {	-- Kovork (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54565, {	-- Man-Hunter Rog (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54543, {	-- Man-Hunter Rog (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54604, {	-- Molok the Crusher (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54587, {	-- Molok the Crusher (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54564, {	-- Nimar the Slayer (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54545, {	-- Nimar the Slayer (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54603, {	-- Overseer krix (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54588, {	-- Overseer Krix (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54602, {	-- Plaguefeather (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54589, {	-- Plaguefeather (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54601, {	-- Ragebeak (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54590, {	-- Ragebeak (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54600, {	-- Rumbling Goliath (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54591, {	-- Rumbling Goliath (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54563, {	-- Ruul Onestone (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54550, {	-- Ruul Onestone (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54562, {	-- Singer (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54546, {	-- Singer (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54624, {	-- Sins of the Syndicate (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54617, {	-- Sins of the Syndicate (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54599, {	-- Skullripper (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54592, {	-- Skullripper (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54615, {	-- The League Will Lose (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54598, {	-- Thundering Goliath (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54593, {	-- Thundering Goliath (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54621, {	-- Twice-Exiled (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54613, {	-- Twice-Exiled (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54597, {	-- Venomarus (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54594, {	-- Venomarus (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54625, {	-- Wiping Out the Witherbark (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54619, {	-- Wiping Out the Witherbark (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54596, {	-- Yogursa (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54595, {	-- Yogursa (H)
+							["races"] = HORDE_ONLY,
+						}),
+						q(54561, {	-- Zalas Witherbark (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(54551, {	-- Zalas Witherbark (H)
+							["races"] = HORDE_ONLY,
+						}),
+					})),
+				},
+			}),
+			n(WARFRONT_BATTLE_FOR_STROMGARDE, {	-- Completely separate, distinct Warfont scenario
+				["lore"] = "Located in the Arathi Highlands, Stromgarde is one of the key locations in the struggle for controlling of the Eastern Kingdoms. For the Alliance, Stromgarde sits in a critical defensive position. Following the battle for Lordaeron, the Horde threat still looms over the continent and holding Stromgarde will be key if you hope to keep the Horde's aggression at bay.\n\nFor the Horde, securing Stromgarde would set the stage for an assault on the heart of the Eastern Kingdoms and serve as a launching point for a campaign against the worgen of the kingdom of Gilneas. This location is also key in the defense of the blood elven capital, Silvermoon City, in the north.",
+				["timeline"] = { ADDED_8_0_1_LAUNCH },
+				["maps"] = {
+					906, -- ???
+					943, -- Actual Scenario [Horde]
+					1044, -- Actual Scenario [Alliance]
+					-- 1158, -- ???
+					-- 1244, -- ???
+				},
+				["crs"] = {
+					140552,	-- War Table (Alliance)
+					131752,	-- War Table (Horde)
+				},
+				["lvl"] = {
+					-- #if AFTER SHADOWLANDS
+					50,
+					-- #else
+					120,
+					-- #endif
+				},
+				["groups"] = {
 					n(ACHIEVEMENTS, {	-- Achievements
 						ach(12874, {	-- An Eventful Battle
 							crit(1),	-- Fozruk
@@ -325,44 +860,6 @@ root(ROOTS.ExpansionFeatures,
 						ach(12873, {	-- War is Hell (H)
 							["races"] = HORDE_ONLY,
 						}),
-					}),
-					n(COMMON_BOSS_DROPS, {
-						["description"] = "These items can drop off any rare.",
-						["modID"] = 5,	-- This will inherently apply to all items within.
-						["crs"] = {
-							142709,	-- Beastrider Kama
-							142508,	-- Branchlord Aldrus
-							141615,	-- Burning Goliath
-							141618,	-- Cresting Goliath
-							142688,	-- Darbel Montrose
-							142741,	-- Doomrider Helgrim
-							141668,	-- Echo of Myzrael
-							142686,	-- Foulbelly
-							142433,	-- Fozruk
-							142662,	-- Geomancer Flintdagger
-							142725,	-- Horrific Apparition
-							142739,	-- Knight-Captaian Aldrin
-							142112,	-- Kor'gresh Coldrage
-							142684,	-- Kovork
-							142716,	-- Man-Hunter Rog
-							141942,	-- Molok the Crusher
-							142692,	-- Nimar the Slayer
-							142423,	-- Overseer Krix
-							142435,	-- Plaguefeather
-							142436,	-- Ragebeak
-							141620,	-- Rumbling Goliatah
-							142683,	-- Ruul Onestone
-							142690,	-- Singer
-							142437,	-- Skullripper
-							141616,	-- Thundering Goliath
-							142438,	-- Venomarus
-							142440,	-- Yogursa
-							142682,	-- Zalas Witherbark <Warband Leader>
-						},
-						["g"] = {
-							n(FACTION_HEADER_ALLIANCE, ALLIANCE_WARFRONT_EQUIPMENT),
-							n(FACTION_HEADER_HORDE, HORDE_WARFRONT_EQUIPMENT),
-						},
 					}),
 					n(QUESTS, {
 						q(53195, {	-- Arathi Donations: Akunda's Bite
@@ -569,7 +1066,7 @@ root(ROOTS.ExpansionFeatures,
 							["races"] = ALLIANCE_ONLY,
 							["isWeekly"] = true,
 						}),
-						
+
 						q(56136, {	-- Heroic Warfront: The Battle For Stromgarde [Tier 3]
 							["provider"] = { "n", 142721 },	-- Ralston Karn <Recruitment Officer>
 							["coord"] = { 66.01, 26.01, BORALUS },
@@ -672,8 +1169,8 @@ root(ROOTS.ExpansionFeatures,
 							["coord"] = { 66.0, 26.0, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 						}),
-						
-						
+
+
 						-- Horde Contribution Quests
 						q(52792, {	-- Arathi Donations: Akunda's Bite
 							["provider"] = { "n", 142159 },	-- Zen'kin
@@ -1007,7 +1504,7 @@ root(ROOTS.ExpansionFeatures,
 							["description"] = "This cache is awarded for completing any incursion on a Horde character.",
 							["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_HORDE, 5),	-- iLvl 340
 						}),
-						
+
 						q(53198, {	-- Back to Boralus
 							["provider"] = { "n", 143018 },	-- Captain Roderick Brewston
 							["altQuests"] = { 53206 },	-- Battle for Stromgarde unlock flag (A)
@@ -1064,7 +1561,7 @@ root(ROOTS.ExpansionFeatures,
 								}),
 							},
 						}),
-						
+
 						-- Warfront Quests
 						q(53673, {	-- Armor Up!
 							["races"] = ALLIANCE_ONLY,
@@ -1119,291 +1616,6 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						q(53667, {	-- Welcome to the Workshop
 							["races"] = HORDE_ONLY,
-						}),
-					}),
-					n(RARES, {
-						n(142709, {	-- Beastrider Kama
-							["allianceQuestID"] = 53083,	-- Beastrider Kama [Alliance]
-							["hordeQuestID"] = 53504,	-- Beastrider Kama [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 65.3, 70.6, ARATHI_HIGHLANDS },
-							["g"] = {
-								i(163644),	-- Swift Albino Raptor (MOUNT!)
-							},
-						}),
-						n(142508, {	-- Branchlord Aldrus
-							["allianceQuestID"] = 53013,	-- Branchlord Aldrus [Alliance]
-							["hordeQuestID"] = 53505,	-- Branchlord Aldrus [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 22.9, 22.2, ARATHI_HIGHLANDS },
-							["g"] = {
-								i(163650),	-- Aldrusian Sproutling (PET!)
-							},
-						}),
-						n(141615, {	-- Burning Goliath
-							["allianceQuestID"] = 53017,	-- Burning Goliath [Alliance]
-							["hordeQuestID"] = 53506,	-- Burning Goliath [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 30.6, 44.7, ARATHI_HIGHLANDS },
-							["g"] = {
-								i(163691),	-- Burning Essence
-							},
-						}),
-						n(141618, {	-- Cresting Goliath
-							["allianceQuestID"] = 53018,	-- Cresting Goliath [Alliance]
-							["hordeQuestID"] = 53531,	-- Cresting Goliath [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 61.8, 31.2, ARATHI_HIGHLANDS },
-							["g"] = {
-								i(163700),	-- Cresting Essence
-							},
-						}),
-						n(142688, {	-- Darbel Montrose
-							["allianceQuestID"] = 53084,	-- Darbel Montrose [Alliance]
-							["hordeQuestID"] = 53507,	-- Darbel Montrose [Horde]
-							["description"] = "Spawns at the northern point when Alliance-controlled and the southern point when Horde-controlled.",
-							["isWeekly"] = true,
-							["coords"] = {
-								{ 50.4, 61.2, ARATHI_HIGHLANDS },	-- Horde-controlled
-								{ 50.7, 36.5, ARATHI_HIGHLANDS },	-- Alliance-controlled
-							},
-							["g"] = {
-								i(163652),	-- Voidwiggler (PET!)
-							},
-						}),
-						n(142741, {	-- Doomrider Helgrim (Alliance-only)
-							["questID"] = 53085,	-- Doomrider Helgrim
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-							["coord"] = { 53.8, 58.2, ARATHI_HIGHLANDS },
-							["description"] = "Only shows up when Alliance-controlled.",
-							["g"] = {
-								i(163579),	-- Highland Mustang (MOUNT!)
-							},
-						}),
-						n(141668, {	-- Echo of Myzrael
-							["allianceQuestID"] = 53059,	-- Echo of Myzrael [Alliance]
-							["hordeQuestID"] = 53508,	-- Echo of Myzrael [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 57.0, 34.6, ARATHI_HIGHLANDS },
-							["g"] = {
-								i(163677),	-- Teeny Titan Orb (PET!)
-							},
-						}),
-						n(142686, {	-- Foulbelly
-							["allianceQuestID"] = 53086,	-- Foulbelly [Alliance]
-							["hordeQuestID"] = 53509,	-- Foulbelly [Horde]
-							["description"] = "Spawns at the back of the cave.",
-							["isWeekly"] = true,
-							["coord"] = { 28.6, 45.6, ARATHI_HIGHLANDS },	-- Cave Entrance
-							["g"] = {
-								i(163735),	-- Foulbelly (TOY!)
-							},
-						}),
-						n(142433, {	-- Fozruk
-							["allianceQuestID"] = 53019,	-- Fozruk [Alliance]
-							["hordeQuestID"] = 53510,	-- Fozruk [Horde]
-							["isWeekly"] = true,
-							["coords"] = {
-								{ 59.4, 27.5, ARATHI_HIGHLANDS },	-- Top
-								{ 54.0, 55.4, ARATHI_HIGHLANDS },	-- Bottom
-							},
-							["g"] = {
-								i(163711),	-- Fozling (PET!)
-							},
-						}),
-						n(142662, {	-- Geomancer Flintdagger
-							["allianceQuestID"] = 53060,	-- Geomancer Flintdagger [Alliance]
-							["hordeQuestID"] = 53511,	-- Geomancer Flintdagger [Horde]
-							["description"] = "Spawns at the back of the cave.",
-							["isWeekly"] = true,
-							["coord"] = { 78.1, 36.7, ARATHI_HIGHLANDS },
-							["g"] = {
-								i(163713),	-- Brazier Cap (TOY!)
-							},
-						}),
-						n(142725, {	-- Horrific Apparition
-							["allianceQuestID"] = 53087,	-- Horrific Apparition [Alliance]
-							["hordeQuestID"] = 53512,	-- Horrific Apparition [Horde]
-							["description"] = "Spawns at the northern point when Alliance-controlled and the southern point when Horde-controlled.",
-							["isWeekly"] = true,
-							["coords"] = {
-								{ 19.5, 60.9, ARATHI_HIGHLANDS },	-- Horde-controlled
-								{ 26.7, 32.6, ARATHI_HIGHLANDS },	-- Alliance-controlled
-							},
-							["g"] = {
-								i(163736),	-- Spectral Visage (TOY!)
-							},
-						}),
-						n(142739, {	-- Knight-Captaian Aldrin
-							["questID"] = 53088,	-- Knight-Captaian Aldrin
-							["isWeekly"] = true,
-							["coord"] = { 49.0, 40.0, ARATHI_HIGHLANDS },
-							["races"] = HORDE_ONLY,
-							["description"] = "Only shows up when Horde-controlled.",
-							["g"] = {
-								i(163578),	-- Broken Highland Mustang (MOUNT!)
-							},
-						}),
-						n(142112, {	-- Kor'gresh Coldrage
-							["allianceQuestID"] = 53058,	-- Kor'gresh Coldrage [Alliance]
-							["hordeQuestID"] = 53513,	-- Kor'gresh Coldrage [Horde]
-							["description"] = "Spawns at the back of the cave.",
-							["isWeekly"] = true,
-							["coord"] = { 48.2, 79.8, ARATHI_HIGHLANDS },
-							["g"] = {
-								i(163744),	-- Coldrage's Cooler (TOY!)
-							},
-						}),
-						n(142684, {	-- Kovork
-							["allianceQuestID"] = 53089,	-- Kovork [Alliance]
-							["hordeQuestID"] = 53514,	-- Kovork [Horde]
-							["description"] = "Spawns at the front of the cave.",
-							["isWeekly"] = true,
-							["coord"] = { 28.6, 45.6, ARATHI_HIGHLANDS },	-- Cave Entrance
-							["g"] = {
-								i(163750),	-- Kovork Kostume (TOY!)
-							},
-						}),
-						n(142716, {	-- Man-Hunter Rog
-							["allianceQuestID"] = 53090,	-- Man-Hunter Rog [Alliance]
-							["hordeQuestID"] = 53515,	-- Man-Hunter Rog [Horde]
-							["isWeekly"] = true,
-							["crs"] = { 142717 },	-- SQUAAWK!
-							["coord"] = { 51.8, 75.1, ARATHI_HIGHLANDS },
-							["g"] = {
-								i(163712),	-- Squawkling (PET!)
-							},
-						}),
-						n(141942, {	-- Molok the Crusher
-							["allianceQuestID"] = 53057,	-- Molok the Crusher [Alliance]
-							["hordeQuestID"] = 53516,	-- Molok the Crusher [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 47.6, 77.9, ARATHI_HIGHLANDS },
-							["g"] = {
-								i(163775),	-- Molok Morion (TOY!)
-							},
-						}),
-						n(142692, {	-- Nimar the Slayer
-							["allianceQuestID"] = 53091,	-- Nimar the Slayer [Alliance]
-							["hordeQuestID"] = 53517,	-- Nimar the Slayer [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 67.5, 61.0, ARATHI_HIGHLANDS },
-							["g"] = {
-								i(163706),	-- Witherbark Direwing (MOUNT!)
-							},
-						}),
-						n(142423, {	-- Overseer Krix
-							["allianceQuestID"] = 53014,	-- Overseer Krix [Alliance]
-							["hordeQuestID"] = 53518,	-- Overseer Krix [Horde]
-							["description"] = "Spawns at the back of the northern cave for Alliance and the southern cave for Horde.",
-							["isWeekly"] = true,
-							["coords"] = {
-								{ 33.7, 36.7, ARATHI_HIGHLANDS },	-- Horde-controlled
-								{ 27.4, 55.8, ARATHI_HIGHLANDS },	-- Alliance-controlled
-							},
-							["g"] = {
-								i(163646),	-- Lil' Donkey (MOUNT!)
-							},
-						}),
-						n(142435, {	-- Plaguefeather
-							["allianceQuestID"] = 53020,	-- Plaguefeather [Alliance]
-							["hordeQuestID"] = 53519,	-- Plaguefeather [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 36.4, 62.8, ARATHI_HIGHLANDS },
-							["g"] = {
-								i(163690),	-- Foulfeather (PET!)
-							},
-						}),
-						n(142436, {	-- Ragebeak
-							["allianceQuestID"] = 53016,	-- Ragebeak [Alliance]
-							["hordeQuestID"] = 53522,	-- Ragebeak [Horde]
-							["description"] = "Spawns at the northern point when Alliance-controlled and the southern point when Horde-controlled.",
-							["isWeekly"] = true,
-							["coords"] = {
-								{ 11.9, 52.1, ARATHI_HIGHLANDS },	-- Horde-controlled
-								{ 18.5, 27.8, ARATHI_HIGHLANDS },	-- Alliance-controlled
-							},
-							["g"] = {
-								i(163689),	-- Ragepeep (PET!)
-							},
-						}),
-						n(141620, {	-- Rumbling Goliath
-							["allianceQuestID"] = 53021,	-- Rumbling Goliath [Alliance]
-							["hordeQuestID"] = 53523,	-- Rumbling Goliath [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 29.7, 60.0, ARATHI_HIGHLANDS },
-							["g"] = {
-								i(163701),	-- Rumbling Essence
-							},
-						}),
-						n(142683, {	-- Ruul Onestone
-							["allianceQuestID"] = 53092,	-- Ruul Onestone [Alliance]
-							["hordeQuestID"] = 53524,	-- Ruul Onestone [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 42.8, 56.4, ARATHI_HIGHLANDS },
-							["g"] = {
-								i(163741),	-- Magic Fun Rock (TOY!)
-							},
-						}),
-						n(142690, {	-- Singer
-							["allianceQuestID"] = 53093,	-- Singer [Alliance]
-							["hordeQuestID"] = 53525,	-- Singer [Horde]
-							["description"] = "Spawns at the northern point when Alliance-controlled and the southern point when Horde-controlled.",
-							["isWeekly"] = true,
-							["coords"] = {
-								{ 50.4, 57.6, ARATHI_HIGHLANDS },	-- Horde-controlled
-								{ 51.1, 39.9, ARATHI_HIGHLANDS },	-- Alliance-controlled
-							},
-							["g"] = {
-								i(163738),	-- Syndicate Mask (TOY!)
-							},
-						}),
-						n(142437, {	-- Skullripper
-							["allianceQuestID"] = 53022,	-- Skullripper [Alliance]
-							["hordeQuestID"] = 53526,	-- Skullripper [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 56.8, 45.1, ARATHI_HIGHLANDS },
-							["g"] = {
-								i(163645),	-- Skullripper (MOUNT!)
-							},
-						}),
-						n(141616, {	-- Thundering Goliath
-							["allianceQuestID"] = 53023,	-- Thundering Goliath [Alliance]
-							["hordeQuestID"] = 53527,	-- Thundering Goliath [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 46.3, 52.0, ARATHI_HIGHLANDS },
-							["g"] = {
-								i(163698),	-- Thundering Essence
-							},
-						}),
-						n(142438, {	-- Venomarus
-							["allianceQuestID"] = 53024,	-- Venomarus [Alliance]
-							["hordeQuestID"] = 53528,	-- Venomarus [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 56.7, 54.1, ARATHI_HIGHLANDS },
-							["g"] = {
-								i(163648),	-- Fuzzy Creepling (PET!)
-							},
-						}),
-						n(142440, {	-- Yogursa
-							["allianceQuestID"] = 53015,	-- Yogursa [Alliance]
-							["hordeQuestID"] = 53529,	-- Yogursa [Horde]
-							["isWeekly"] = true,
-							["coord"] = { 14.0, 36.9, ARATHI_HIGHLANDS },
-							["g"] = {
-								i(163684),	-- Scabby (PET!)
-							},
-						}),
-						n(142682, {	-- Zalas Witherbark <Warband Leader>
-							["allianceQuestID"] = 53094,	-- Zalas Witherbark <Warband Leader> [Alliance]
-							["hordeQuestID"] = 53530,	-- Zalas Witherbark <Warband Leader> [Horde]
-							["description"] = "Spawns in the middle of the cave.",
-							["isWeekly"] = true,
-							["coord"] = { 63.2, 77.6, ARATHI_HIGHLANDS },
-							["g"] = {
-								i(163745),	-- Witherbark Gong (TOY!)
-							},
 						}),
 					}),
 					n(REWARDS, {
@@ -1534,206 +1746,6 @@ root(ROOTS.ExpansionFeatures,
 							i(163460),	-- Honorbound Centurion's Greaves
 						},
 					}),
-					n(WORLD_QUESTS, bubbleDown({ isWorldQuest = true }, {
-						q(54573, {	-- Beastrider Kama (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54544, {	-- Beastrider Kama (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54623, {	-- Boulderfist Beatdown (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54616, {	-- Boulderfist Beatdown (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54578, {	-- Branchlord Aldrus (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54568, {	-- Branchlord Aldrus (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54608, {	-- Burning Goliath (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54583, {	-- Burning Goliath (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54607, {	-- Cresting Goliath (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54584, {	-- Cresting Goliath (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54572, {	-- Darbel Montrose (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54547, {	-- Darbel Montrose (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54620, {	-- Death to The Defilers (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54540, {	-- Doomrider Helgrim (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54606, {	-- Echo of Myzrael (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54585, {	-- Echo of Myzrael (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54622, {	-- Executing Exorcisms (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54614, {	-- Executing Exorcisms (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54571, {	-- Foulbelly (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54548, {	-- Foulbelly (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54605, {	-- Fozruk (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54586, {	-- Fozruk (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54570, {	-- Geomancer Flintdagger (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54552, {	-- Geomancer Flintdagger (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54569, {	-- Horrific Apparition(A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54542, {	-- Horrific Apparition (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54541, {	-- Knight-Captain Aldrin (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54567, {	-- Kor'gresh Coldrage(A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54553, {	-- Kor'gresh Coldrage (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54566, {	-- Kovork (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54549, {	-- Kovork (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54565, {	-- Man-Hunter Rog (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54543, {	-- Man-Hunter Rog (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54604, {	-- Molok the Crusher (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54587, {	-- Molok the Crusher (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54564, {	-- Nimar the Slayer (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54545, {	-- Nimar the Slayer (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54603, {	-- Overseer krix (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54588, {	-- Overseer Krix (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54602, {	-- Plaguefeather (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54589, {	-- Plaguefeather (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54601, {	-- Ragebeak (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54590, {	-- Ragebeak (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54600, {	-- Rumbling Goliath (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54591, {	-- Rumbling Goliath (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54563, {	-- Ruul Onestone (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54550, {	-- Ruul Onestone (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54562, {	-- Singer (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54546, {	-- Singer (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54624, {	-- Sins of the Syndicate (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54617, {	-- Sins of the Syndicate (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54599, {	-- Skullripper (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54592, {	-- Skullripper (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54615, {	-- The League Will Lose (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54598, {	-- Thundering Goliath (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54593, {	-- Thundering Goliath (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54621, {	-- Twice-Exiled (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54613, {	-- Twice-Exiled (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54597, {	-- Venomarus (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54594, {	-- Venomarus (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54625, {	-- Wiping Out the Witherbark (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54619, {	-- Wiping Out the Witherbark (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54596, {	-- Yogursa (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54595, {	-- Yogursa (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(54561, {	-- Zalas Witherbark (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54551, {	-- Zalas Witherbark (H)
-							["races"] = HORDE_ONLY,
-						}),
-					})),
 				},
 			}),
 		}),
