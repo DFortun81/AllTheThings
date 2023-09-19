@@ -9603,7 +9603,7 @@ local function AddTomTomWaypoint(group)
 end
 
 -- Minimap Button
-local function MinimapButtonOnClick(self, button)
+function AllTheThings_MinimapButtonOnClick(self, button)
 	if button == "RightButton" then
 		-- Right Button opens the Options menu.
 		app.Settings:Open();
@@ -9618,8 +9618,8 @@ local function MinimapButtonOnClick(self, button)
 		end
 	end
 end
-local function MinimapButtonOnEnter(self)
-	GameTooltip:SetOwner(self, "ANCHOR_LEFT");
+function AllTheThings_MinimapButtonOnEnter(self, button)
+	GameTooltip:SetOwner(type(self) ~= "string" and self or button, "ANCHOR_LEFT");
 	GameTooltip:ClearLines();
 
 	local reference = app:GetDataCache();
@@ -9653,7 +9653,7 @@ local function MinimapButtonOnEnter(self)
 	GameTooltip:AddLine(L["MINIMAP_MOUSEOVER_TEXT"], 1, 1, 1);
 	GameTooltip:Show();
 end
-local function MinimapButtonOnLeave()
+function AllTheThings_MinimapButtonOnLeave()
 	GameTooltip:Hide();
 	GameTooltipIcon.icon.Background:Hide();
 	GameTooltipIcon.icon.Border:Hide();
@@ -9768,9 +9768,9 @@ local function CreateMinimapButton()
 	button:SetScript("OnDragStop", function(self)
 		self:SetScript("OnUpdate", nil);
 	end);
-	button:SetScript("OnEnter", MinimapButtonOnEnter);
-	button:SetScript("OnLeave", MinimapButtonOnLeave);
-	button:SetScript("OnClick", MinimapButtonOnClick);
+	button:SetScript("OnEnter", AllTheThings_MinimapButtonOnEnter);
+	button:SetScript("OnLeave", AllTheThings_MinimapButtonOnLeave);
+	button:SetScript("OnClick", AllTheThings_MinimapButtonOnClick);
 	button:update();
 	button:Show();
 	return button;
@@ -13860,9 +13860,9 @@ app.events.ADDON_LOADED = function(addonName)
 	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
 		type = "launcher",
 		icon = app.asset("logo_32x32"),
-		OnClick = MinimapButtonOnClick,
-		OnEnter = MinimapButtonOnEnter,
-		OnLeave = MinimapButtonOnLeave,
+		OnClick = AllTheThings_MinimapButtonOnClick,
+		OnEnter = AllTheThings_MinimapButtonOnEnter,
+		OnLeave = AllTheThings_MinimapButtonOnLeave,
 	});
 
 	-- Cache the Localized Category Data
