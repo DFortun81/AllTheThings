@@ -4935,7 +4935,7 @@ local NPCExpandHeaders = {
 local function DetermineNPCDrops(group)
 	-- assuming for any 'crs' references on an encounter group that all crs are linked to the same resulting content
 	local npcID = group.npcID or group.creatureID or (group.encounterID and group.crs and group.crs[1]);
-	if npcID then
+	if npcID and app.Settings:GetTooltipSetting("NPCData:Nested") then
 		-- app.PrintDebug("NPC Group",group.hash,npcID)
 		-- search for groups of this NPC
 		local npcGroups = SearchForField("npcID", npcID);
