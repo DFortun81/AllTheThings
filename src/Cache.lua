@@ -411,15 +411,20 @@ local fieldConverters = {
 		-- If this group uses a normal map, we want to rip out the cache for it.
 		-- Doing it after the cache is finished allows us to still prevent the coordinates
 		-- on relative objects and npcs from getting cached to the parent mapID.
-		local originalMapID = group.mapID;
+		local originalMaps = group.maps;
+		local originalMapID = group.mapID or (originalMaps and originalMaps[1]);
 		if originalMapID then
 			-- Generate a unique NEGATIVE mapID and cache the object to it.
 			local mapID = nextCustomMapID;
 			nextCustomMapID = nextCustomMapID - 1;
 			tinsert(runners, function()
 				group.questID = value;
-				if group.maps then
-					tinsert(group.maps, mapID)
+				if originalMaps then
+					if group.mapID then
+						tinsert(originalMaps, mapID);
+					else
+						group.mapID = nil;
+					end
 				else
 					group.maps = {mapID};
 				end

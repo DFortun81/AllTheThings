@@ -5,6 +5,9 @@
 root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 	m(NZOTH_ASSAULT_ULDUM, {	-- Uldum (under assault)
 		["icon"] = "Interface\\Icons\\INV_FACTION_83_ULDUMACCORD",
+		["crs"] = {
+			162419,	-- Zidormi
+		},
 		["lvl"] = { 50 },
 		["g"] = {
 			n(WORLD_BOSSES, {
