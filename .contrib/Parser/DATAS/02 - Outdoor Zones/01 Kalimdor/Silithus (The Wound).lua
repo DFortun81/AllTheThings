@@ -1273,11 +1273,11 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	m(KALIMDOR, {
+	m(KALIMDOR, bubbleDown({ ["timeline"] = { "created 7.3.5" } }, {
 		n(SILITHUS_THE_WOUND, {
 			m(CHAMBER_OF_HEART, {
 				q(59133),	-- Upgrading Ashjra'kamas from 122 -> 125 corruption
 			}),
 		}),
-	}),
+	})),
 });
