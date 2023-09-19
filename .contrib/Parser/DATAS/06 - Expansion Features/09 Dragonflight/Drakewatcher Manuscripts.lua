@@ -1055,7 +1055,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(208859),	-- Cliffside Wylderdrake: Day of the Dead Armor
 		})),
 		header(HEADERS.Item, 194705, sharedData({	-- Highland Drake
-			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
 			["timeline"] = { CREATED_10_1_7 },
 		}, {
 			i(208858),	-- Highland Drake: Pirates' Day Armor

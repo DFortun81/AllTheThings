@@ -160,25 +160,24 @@ _.CategoryIcons = {
 _.HeaderConstants = {
 	ACHIEVEMENTS = -1000004,
 	BLACK_MARKET_AUCTION_HOUSE = -1000081,
-	CHILDRENS_WEEK_HEADER = -1000174,
+	CHILDRENS_WEEK_HEADER = -1000175,
 	COMMON_BOSS_DROPS = -1000009,
 	COMMON_VENDOR_ITEMS = -1000012,
 	CRAFTED_ITEMS = -1000013,
-	DARKMOON_FAIRE_HEADER = -1000175,
+	DARKMOON_FAIRE_HEADER = -1000176,
 	DISCOVERY = -1000015,
-	DRAGONRIDING_CUP_HEADER = -1000182,
 	EXPLORATION = -1000018,
 	FACTIONS = -1000019,
-	FEAST_OF_WINTER_VEIL_HEADER = -1000189,
+	FEAST_OF_WINTER_VEIL_HEADER = -1000190,
 	FLIGHT_PATHS = -1000020,
-	HALLOWS_END_HEADER = -1000191,
-	HARVEST_FESTIVAL_HEADER = -1000192,
+	HALLOWS_END_HEADER = -1000192,
+	HARVEST_FESTIVAL_HEADER = -1000193,
 	HOLIDAYS = -1000023,
 	HONOR_TITLES = -1000138,
-	LOVE_IS_IN_THE_AIR_HEADER = -1000194,
-	LUNAR_FESTIVAL_HEADER = -1000195,
-	MIDSUMMER_FIRE_FESTIVAL_HEADER = -1000197,
-	NOBLEGARDEN_HEADER = -1000198,
+	LOVE_IS_IN_THE_AIR_HEADER = -1000195,
+	LUNAR_FESTIVAL_HEADER = -1000196,
+	MIDSUMMER_FIRE_FESTIVAL_HEADER = -1000198,
+	NOBLEGARDEN_HEADER = -1000199,
 	PROFESSIONS = -1000028,
 	PVP = -1000140,
 	QUESTS = -1000029,
@@ -270,29 +269,29 @@ localize(L.HEADER_NAMES, {
 	[-1000164] = "Main Gate",
 	[-1000165] = "Service Entrance",
 	[-1000166] = "Atal'ai Defenders",
-	[-1000172] = C_Map.GetAreaInfo(1769),
-	[-1000174] = "Children's Week",
-	[-1000175] = "Darkmoon Faire",
-	[-1000182] = "Dragonriding Cup",
-	[-1000189] = GetSpellInfo(21953),
-	[-1000191] = "Hallow's End",
-	[-1000192] = "Harvest Festival",
-	[-1000194] = "Love is in the Air",
-	[-1000195] = "Lunar Festival",
-	[-1000197] = "Midsummer Fire Festival",
-	[-1000198] = "Noblegarden",
-	[-1000203] = "Stranglethorn Fishing Extravaganza",
-	[-1000210] = "The Ahn'Qiraj War Effort",
-	[-1000212] = "The Scepter of the Shifting Sands",
-	[-1000213] = "The Scourge Invasion",
-	[-1000214] = "The Silithyst Must Flow",
-	[-1000219] = "BlizzCon",
-	[-1000220] = "Collector's Edition",
-	[-1000237] = "iCoke",
-	[-1000238] =  AUCTION_CATEGORY_MISCELLANEOUS,
-	[-1000243] = "Ensembles",
-	[-1000244] = "Arsenals",
-	[-1000245] = "Sourceless",
+	[-1000172] = C_Map.GetAreaInfo(9310),
+	[-1000173] = C_Map.GetAreaInfo(1769),
+	[-1000175] = "Children's Week",
+	[-1000176] = "Darkmoon Faire",
+	[-1000190] = GetSpellInfo(21953),
+	[-1000192] = "Hallow's End",
+	[-1000193] = "Harvest Festival",
+	[-1000195] = "Love is in the Air",
+	[-1000196] = "Lunar Festival",
+	[-1000198] = "Midsummer Fire Festival",
+	[-1000199] = "Noblegarden",
+	[-1000204] = "Stranglethorn Fishing Extravaganza",
+	[-1000211] = "The Ahn'Qiraj War Effort",
+	[-1000213] = "The Scepter of the Shifting Sands",
+	[-1000214] = "The Scourge Invasion",
+	[-1000215] = "The Silithyst Must Flow",
+	[-1000220] = "BlizzCon",
+	[-1000221] = "Collector's Edition",
+	[-1000238] = "iCoke",
+	[-1000239] =  AUCTION_CATEGORY_MISCELLANEOUS,
+	[-1000244] = "Ensembles",
+	[-1000245] = "Arsenals",
+	[-1000246] = "Sourceless",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000014] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -308,19 +307,19 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000156] = "This part of the instance can be accessed from the western-most portal. (left side)",
 	[-1000164] = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Live\" or \"Scarlet\" side, which the Scarlet Crusade has taken over.",
 	[-1000165] = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Dead\" or \"Scourge\" side, which the Scourge has taken over.",
-	[-1000210] = "When Phase 5 is eventually released, the Ruins of Ahn'Qiraj and Temple of Ahn'Qiraj will not be immediately available. Instead, server communities will have to undertake a massive war effort to open the raids by gathering supplies to prepare for the war and completing an epic questline that ultimately culminates in the banging of a gong to open the gates and release the horrors within upon the world.\n\nOnce both factions have finished their contribution, there is a 5-day grace period where. Afterwards, there is a server-wide 10 hour event which spans several zones in Kalimdor the moment someone bangs the gong.\n\nHow quickly Ahn'Qiraj opens depends on the server and its faction balance.\n\nWe recommend delaying the War Effort as long as possible to allow for the most number of people to obtain the Scarab Lord mount as everyone that finishes The Scepter of the Shifting Sands quest line will be granted the same rewards!",
-	[-1000212] = "In addition to all players on a realm working towards completing the War Effort, one player had to create the Scepter of the Shifting Sands - a very difficult task that could only be solved by a server's top guild back when the questline was added. After the war effort was finished and the army of the Alliance and the Horde arrived in Silithus, the Scepter of the Shifting Sands could be used on the Scarab Gong. Doing so resulted in the opening of Ahn'Qiraj. The first player to bang the Scarab Gong on each server would be rewarded with the Scarab Lord title (in Burning Crusade, the title will not be available in Classic!) and the Black Qiraji Resonating Crystal mount. Anyone else who followed them within 10 hours was rewarded with the title as well.\n\nAlthough it is still possible to complete the questline for the Scepter of the Shifting Sands after the gates have been opened on your server, doing so will not reward neither the Black Qiraji Resonating Crystal nor the Scarab Lord title.",
-	[-1000213] = "The Scourge Invasion was a world event in Patch 1.11 and again during the Wrath of the Lich King Pre-Patch during 3.0.1 that heralded the opening of Naxxramas, the citadel of the dreaded Kel'Thuzad.\n\nSeveral regions of Azeroth came under attack by Scourge forces. Members of the Argent Dawn organized a worldwide counter to the Scourge invasion, keeping an eye out for any necropolis sightings and passing on their information to all adventurers willing to aid them in their struggle.\n\nWith each victory against the Scourge, the defense grows stronger. As more and more invasion attempts are beaten back by the defenders, the Argent Dawn will be able to bestow increasingly more powerful blessings upon those fighting the invaders. If the mortal races focus on clearing the Scourge camps all over the world that have sprung up beneath each necropolis, perhaps the invasion can effectively be halted or even repelled. Those who wish to take up arms against the undead invaders should speak with a representative of the Argent Dawn to learn what regions need help and how the defense is holding up.",
-	[-1000214] = "The Silithyst Must Flow is the name of the world PvP event in Silithus, where players of both factions must try and secure as much Silithyst as possible. Silithyst is a red crystalline dust that reaches the surface through geysers exclusive to the Silithus desert. Both the Alliance and the Horde have taken an interest in this new substance, and researchers on both sides have discovered unique and valuable properties in the dust. The Horde and Alliance camps in the region have both been outfitted with turn-in stations where players can unload the Silithyst they collect.",
-	[-1000237] = "These were only available through the 2006 iCoke Promotion (China Only)",
-	[-1000238] = "This section is for miscellaneous promotions that took place in the real world or something to do with account management.",
-	[-1000245] = "This Category contains Things that probably exist in the game but no known source.",
+	[-1000211] = "When Phase 5 is eventually released, the Ruins of Ahn'Qiraj and Temple of Ahn'Qiraj will not be immediately available. Instead, server communities will have to undertake a massive war effort to open the raids by gathering supplies to prepare for the war and completing an epic questline that ultimately culminates in the banging of a gong to open the gates and release the horrors within upon the world.\n\nOnce both factions have finished their contribution, there is a 5-day grace period where. Afterwards, there is a server-wide 10 hour event which spans several zones in Kalimdor the moment someone bangs the gong.\n\nHow quickly Ahn'Qiraj opens depends on the server and its faction balance.\n\nWe recommend delaying the War Effort as long as possible to allow for the most number of people to obtain the Scarab Lord mount as everyone that finishes The Scepter of the Shifting Sands quest line will be granted the same rewards!",
+	[-1000213] = "In addition to all players on a realm working towards completing the War Effort, one player had to create the Scepter of the Shifting Sands - a very difficult task that could only be solved by a server's top guild back when the questline was added. After the war effort was finished and the army of the Alliance and the Horde arrived in Silithus, the Scepter of the Shifting Sands could be used on the Scarab Gong. Doing so resulted in the opening of Ahn'Qiraj. The first player to bang the Scarab Gong on each server would be rewarded with the Scarab Lord title (in Burning Crusade, the title will not be available in Classic!) and the Black Qiraji Resonating Crystal mount. Anyone else who followed them within 10 hours was rewarded with the title as well.\n\nAlthough it is still possible to complete the questline for the Scepter of the Shifting Sands after the gates have been opened on your server, doing so will not reward neither the Black Qiraji Resonating Crystal nor the Scarab Lord title.",
+	[-1000214] = "The Scourge Invasion was a world event in Patch 1.11 and again during the Wrath of the Lich King Pre-Patch during 3.0.1 that heralded the opening of Naxxramas, the citadel of the dreaded Kel'Thuzad.\n\nSeveral regions of Azeroth came under attack by Scourge forces. Members of the Argent Dawn organized a worldwide counter to the Scourge invasion, keeping an eye out for any necropolis sightings and passing on their information to all adventurers willing to aid them in their struggle.\n\nWith each victory against the Scourge, the defense grows stronger. As more and more invasion attempts are beaten back by the defenders, the Argent Dawn will be able to bestow increasingly more powerful blessings upon those fighting the invaders. If the mortal races focus on clearing the Scourge camps all over the world that have sprung up beneath each necropolis, perhaps the invasion can effectively be halted or even repelled. Those who wish to take up arms against the undead invaders should speak with a representative of the Argent Dawn to learn what regions need help and how the defense is holding up.",
+	[-1000215] = "The Silithyst Must Flow is the name of the world PvP event in Silithus, where players of both factions must try and secure as much Silithyst as possible. Silithyst is a red crystalline dust that reaches the surface through geysers exclusive to the Silithus desert. Both the Alliance and the Horde have taken an interest in this new substance, and researchers on both sides have discovered unique and valuable properties in the dust. The Horde and Alliance camps in the region have both been outfitted with turn-in stations where players can unload the Silithyst they collect.",
+	[-1000238] = "These were only available through the 2006 iCoke Promotion (China Only)",
+	[-1000239] = "This section is for miscellaneous promotions that took place in the real world or something to do with account management.",
+	[-1000246] = "This Category contains Things that probably exist in the game but no known source.",
 });
 localize(L.HEADER_LORE, {
 	[-1000046] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
 	[-1000146] = "The Dungeon Set 2 class sets, commonly referred to as Tier 0.5, are obtained by completing a long quest chain to upgrade the first set available as drops in end game dungeons into stronger versions of themselves. In current WoW, these sets are covetted by Collectors as the quest chain was completely removed from the game with Cataclysm. In WoW Classic, you should finish this quest chain on all of your characters before then!",
 	[-1000147] = "These can be farmed infinitely by resetting the boss.",
-	[-1000172] = "The Timbermaw Furbolgs inhabit two areas: Azshara and Felwood. They are presumed to be the only furbolg tribe to escape demonic corruption, though this may not be true due to the existence of Krolg, an uncorrupted furbolg of unknown tribe, and the Stillpine tribe on Azuremyst Isle in Burning Crusade. However, many other races kill furbolg blindly now, without bothering to see if they are friend or foe. For this reason, the Timbermaw furbolg trust very few.\n\nAdventurers who seek out Timbermaw Hold in northern Felwood and prove themselves as friends of the Timbermaw will learn that the furbolgs value their friends above all else. Though they possess no fine jewels or any worldly riches, the Timbermaw's shamanistic tradition is still strong. They know much about the art of crafting armors from animal hides, and they are more than happy to share their healing/resurrection knowledge with friends of their tribe. Besides, any reputation above Unfriendly will also grant you untroubled access to Moonglade and Winterspring through their tunnels.",
+	[-1000173] = "The Timbermaw Furbolgs inhabit two areas: Azshara and Felwood. They are presumed to be the only furbolg tribe to escape demonic corruption, though this may not be true due to the existence of Krolg, an uncorrupted furbolg of unknown tribe, and the Stillpine tribe on Azuremyst Isle in Burning Crusade. However, many other races kill furbolg blindly now, without bothering to see if they are friend or foe. For this reason, the Timbermaw furbolg trust very few.\n\nAdventurers who seek out Timbermaw Hold in northern Felwood and prove themselves as friends of the Timbermaw will learn that the furbolgs value their friends above all else. Though they possess no fine jewels or any worldly riches, the Timbermaw's shamanistic tradition is still strong. They know much about the art of crafting armors from animal hides, and they are more than happy to share their healing/resurrection knowledge with friends of their tribe. Besides, any reputation above Unfriendly will also grant you untroubled access to Moonglade and Winterspring through their tunnels.",
 });
 localize(L.HEADER_ICONS, {
 	[-1000004] = _.asset("Category_Achievements"),
@@ -400,41 +399,41 @@ localize(L.HEADER_ICONS, {
 	[-1000164] = "Interface/Icons/INV_Misc_Token_ScarletCrusade",
 	[-1000165] = "Interface/Icons/INV_MISC_KEY_13",
 	[-1000166] = "Interface/Icons/Inv_misc_head_troll_01",
-	[-1000174] = _.asset("Holiday_Children"),
-	[-1000175] = _.asset("Event_dmf"),
-	[-1000182] = _.asset("Holiday_EastCup"),
-	[-1000189] = _.asset("Holiday_winter_veil"),
-	[-1000191] = _.asset("Holiday_hallows_end"),
-	[-1000192] = _.asset("Holiday_Harvestfest"),
-	[-1000194] = _.asset("Holiday_love"),
-	[-1000195] = _.asset("Holiday_Lunar"),
-	[-1000197] = _.asset("Holiday_Midsummer"),
-	[-1000198] = _.asset("Holiday_noblegarden"),
-	[-1000203] = "Interface/Icons/inv_misc_fish_06",
-	[-1000210] = "Interface/Icons/inv_box_01",
-	[-1000212] = "Interface/Icons/Inv_hammer_25",
-	[-1000213] = "Interface/Icons/inv_stone_02",
-	[-1000214] = "Interface/Icons/spell_holiday_tow_spicecloud",
-	[-1000219] = _.asset("Promotion_Blizzcon"),
-	[-1000220] = _.asset("Promotion_Collector"),
-	[-1000237] = "Interface/Icons/Inv_drink_10",
-	[-1000238] = "Interface/Icons/Spell_Misc_Drink",
-	[-1000243] = "Interface/Icons/inv_chest_leather_08",
-	[-1000244] = "Interface/Icons/inv_mace_1h_bastionquest_b_02",
-	[-1000245] = "Interface/Icons/inv_misc_questionmark",
+	[-1000172] = "Interface/Icons/Achievement_zone_silithus_01",
+	[-1000175] = _.asset("Holiday_Children"),
+	[-1000176] = _.asset("Event_dmf"),
+	[-1000190] = _.asset("Holiday_winter_veil"),
+	[-1000192] = _.asset("Holiday_hallows_end"),
+	[-1000193] = _.asset("Holiday_Harvestfest"),
+	[-1000195] = _.asset("Holiday_love"),
+	[-1000196] = _.asset("Holiday_Lunar"),
+	[-1000198] = _.asset("Holiday_Midsummer"),
+	[-1000199] = _.asset("Holiday_noblegarden"),
+	[-1000204] = "Interface/Icons/inv_misc_fish_06",
+	[-1000211] = "Interface/Icons/inv_box_01",
+	[-1000213] = "Interface/Icons/Inv_hammer_25",
+	[-1000214] = "Interface/Icons/inv_stone_02",
+	[-1000215] = "Interface/Icons/spell_holiday_tow_spicecloud",
+	[-1000220] = _.asset("Promotion_Blizzcon"),
+	[-1000221] = _.asset("Promotion_Collector"),
+	[-1000238] = "Interface/Icons/Inv_drink_10",
+	[-1000239] = "Interface/Icons/Spell_Misc_Drink",
+	[-1000244] = "Interface/Icons/inv_chest_leather_08",
+	[-1000245] = "Interface/Icons/inv_mace_1h_bastionquest_b_02",
+	[-1000246] = "Interface/Icons/inv_misc_questionmark",
 });
 localize(L.HEADER_EVENTS, {
-	[-1000174] = 201,
-	[-1000175] = 479,
-	[-1000189] = 141,
-	[-1000191] = 324,
-	[-1000192] = 321,
-	[-1000194] = 423,
-	[-1000195] = 327,
-	[-1000197] = 341,
-	[-1000198] = 181,
-	[-1000203] = 301,
-	[-1000219] = 1181,
+	[-1000175] = 201,
+	[-1000176] = 479,
+	[-1000190] = 141,
+	[-1000192] = 324,
+	[-1000193] = 321,
+	[-1000195] = 423,
+	[-1000196] = 327,
+	[-1000198] = 341,
+	[-1000199] = 181,
+	[-1000204] = 301,
+	[-1000220] = 1181,
 });
 localize(L.EVENT_REMAPPING, {
 	[374] = 479,
@@ -442,11 +441,6 @@ localize(L.EVENT_REMAPPING, {
 });
 
 -- Programmatic Event Scheduling
-_.Modules.Events.SetEventInformation(321, {
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=6,["weekday"]=3,["year"]=2022},{["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=3,["year"]=2022}),
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=6,["weekday"]=4,["year"]=2023},{["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=4,["year"]=2023}),
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=6,["weekday"]=6,["year"]=2024},{["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=6,["year"]=2024})
-});
 _.Modules.Events.SetEventInformation(324, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=18,["weekday"]=3,["year"]=2022},{["hour"]=11,["minute"]=0,["month"]=11,["monthDay"]=1,["weekday"]=3,["year"]=2022}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=18,["weekday"]=4,["year"]=2023},{["hour"]=11,["minute"]=0,["month"]=11,["monthDay"]=1,["weekday"]=4,["year"]=2023}),
@@ -494,6 +488,11 @@ _.Modules.Events.SetEventInformation(423, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=6,["weekday"]=1,["year"]=2022},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=20,["weekday"]=1,["year"]=2022}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=6,["weekday"]=2,["year"]=2023},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=20,["weekday"]=2,["year"]=2023}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=6,["weekday"]=3,["year"]=2024},{["hour"]=10,["minute"]=0,["month"]=2,["monthDay"]=20,["weekday"]=3,["year"]=2024})
+});
+_.Modules.Events.SetEventInformation(321, {
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=6,["weekday"]=3,["year"]=2022},{["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=3,["year"]=2022}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=6,["weekday"]=4,["year"]=2023},{["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=4,["year"]=2023}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=6,["weekday"]=6,["year"]=2024},{["hour"]=10,["minute"]=0,["month"]=9,["monthDay"]=13,["weekday"]=6,["year"]=2024})
 });
 
 -- Filter Database Module
@@ -1138,6 +1137,7 @@ _.ObjectNames = {
 	[181597] = "Silithyst Mound",
 	[181598] = "Silithyst Geyser",
 	[181672] = "Wickerman Effigy",
+	[207724] = "Shipwreck Debris",
 }
 _.ObjectIcons = {
 	[31] = "Interface/Icons/INV_Mount_AllianceLionG",
@@ -1857,6 +1857,7 @@ _.ObjectModels = {
 	[181597] = 200156,
 	[181598] = 200154,
 	[181672] = 199787,
+	[207724] = 219411,
 }
 
 -- Supported Locales
@@ -1874,10 +1875,10 @@ localize(L.HEADER_NAMES, {
 	[-1000161] = "Bibliothek",
 	[-1000162] = "Waffenkammer",
 	[-1000163] = "Kathedrale",
-	[-1000175] = "Dunkelmond-Jahrmarkt",
-	[-1000197] = "Sonnenwendfest",
-	[-1000203] = "Anglerwettbewerb im Schlingendorntal",
-	[-1000212] = "Das Szepter der Sandstürme",
+	[-1000176] = "Dunkelmond-Jahrmarkt",
+	[-1000198] = "Sonnenwendfest",
+	[-1000204] = "Anglerwettbewerb im Schlingendorntal",
+	[-1000213] = "Das Szepter der Sandstürme",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000023] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -2297,6 +2298,7 @@ localize(_.ObjectNames, {
 	[181597] = "Silithysthaufen",
 	[181598] = "Silithystgeysir",
 	[181672] = "Weidenmann",
+	[207724] = "Schiffswracktrümmer",
 });
 end
 if simplifiedLocale == "es" then
@@ -2305,10 +2307,10 @@ localize(L.HEADER_NAMES, {
 	[-1000032] = "Instructora de equitación",
 	[-1000038] = "Maestro armero",
 	[-1000149] = "Los Cuatro Jinetes",
-	[-1000175] = "Feria de la Luna Negra",
-	[-1000197] = "Festival del Fuego del Solsticio de Verano",
-	[-1000203] = "Gran espectáculo de pesca de Tuercespina",
-	[-1000212] = "El cetro del Mar de Dunas",
+	[-1000176] = "Feria de la Luna Negra",
+	[-1000198] = "Festival del Fuego del Solsticio de Verano",
+	[-1000204] = "Gran espectáculo de pesca de Tuercespina",
+	[-1000213] = "El cetro del Mar de Dunas",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000038] = "Un maestro de armas es un PNJ que ofrece a los personajes la oportunidad de aprender habilidades específicas con armas, cuya disponibilidad varía de un maestro de armas a otro. Todas las habilidades con armas se pueden entrenar en el nivel 1, excepto las armas de asta que requieren el nivel 20.\n\nEl entrenamiento con un maestro de armas quedó obsoleto en el parche 4.0.1, ya que cada clase ahora aprende todas las competencias de armas apropiadas para la clase en el momento de la creación. Los maestros de armas se eliminaron del juego poco después.",
@@ -2724,6 +2726,7 @@ localize(_.ObjectNames, {
 	[181597] = "Túmulo de silitista",
 	[181598] = "Géiser de silitista",
 	[181672] = "Efigie del Hombre de Mimbre",
+	[207724] = "Restos de naufragio",
 });
 end
 if simplifiedLocale == "fr" then
@@ -2745,12 +2748,12 @@ localize(L.HEADER_NAMES, {
 	[-1000162] = "Armurerie",
 	[-1000163] = "Cathédrale",
 	[-1000166] = "Défenseurs Atal'ai",
-	[-1000175] = "Foire de Sombrelune",
-	[-1000197] = "Fête du Feu du solstice d’été",
-	[-1000203] = "Concours de pêche de Strangleronce",
-	[-1000210] = "Effort de guerre d’Ahn'Qiraj",
-	[-1000212] = "Le Sceptre des Sables changeants",
-	[-1000220] = "Edition Collector",
+	[-1000176] = "Foire de Sombrelune",
+	[-1000198] = "Fête du Feu du solstice d’été",
+	[-1000204] = "Concours de pêche de Strangleronce",
+	[-1000211] = "Effort de guerre d’Ahn'Qiraj",
+	[-1000213] = "Le Sceptre des Sables changeants",
+	[-1000221] = "Edition Collector",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000031] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -3169,15 +3172,16 @@ localize(_.ObjectNames, {
 	[181597] = "Monticule de silithyste",
 	[181598] = "Geyser de silithyste",
 	[181672] = "Effigie de l'homme d'osier",
+	[207724] = "Débris d’épave",
 });
 end
 if simplifiedLocale == "it" then
 localize(L.HEADER_NAMES, {
 	[-1000149] = "I Cavalieri dell'Apocalisse",
-	[-1000175] = "Fiera di Lunacupa",
-	[-1000197] = "Fuochi di Mezza Estate",
-	[-1000203] = "Gara di Pesca a Rovotorto",
-	[-1000212] = "Scettro delle Sabbie Mutevoli",
+	[-1000176] = "Fiera di Lunacupa",
+	[-1000198] = "Fuochi di Mezza Estate",
+	[-1000204] = "Gara di Pesca a Rovotorto",
+	[-1000213] = "Scettro delle Sabbie Mutevoli",
 });
 localize(_.ObjectNames, {
 	[31] = "Vecchia Statua di Leone",
@@ -3433,6 +3437,7 @@ localize(_.ObjectNames, {
 	[181597] = "Mucchio di Silitisti",
 	[181598] = "Geyser Silitista",
 	[181672] = "Effige dell'Uomo di Paglia",
+	[207724] = "Pezzi del Relitto",
 });
 end
 if simplifiedLocale == "ko" then
@@ -3511,10 +3516,10 @@ localize(L.HEADER_NAMES, {
 	[-1000032] = "전문 기수",
 	[-1000038] = "무기 전문가",
 	[-1000149] = "4인 기사단",
-	[-1000175] = "다크문 유랑단",
-	[-1000197] = "한여름 불꽃축제",
-	[-1000203] = "가시덤불 골짜기 낚시왕 선발대회",
-	[-1000212] = "흐르는 모래의 홀",
+	[-1000176] = "다크문 유랑단",
+	[-1000198] = "한여름 불꽃축제",
+	[-1000204] = "가시덤불 골짜기 낚시왕 선발대회",
+	[-1000213] = "흐르는 모래의 홀",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000038] = "웨폰 마스터는 캐릭터에게 특정 무기 기술을 배울 수 있는 기회를 제공하는 NPC로, 사용 가능 여부는 웨폰 마스터마다 다릅니다. 모든 무기 기술은 레벨 20이 필요한 폴암을 제외하고 레벨 1에서 훈련할 수 있습니다.\n\n4.0.1 패치에서는 각 병과가 생성 시 모든 병과에 적합한 무기 숙련도를 배우게 되므로 무기 전문가와의 훈련은 더 이상 필요하지 않게 되었습니다. 무기 마스터는 곧 게임에서 제거되었습니다.",
@@ -3927,6 +3932,7 @@ localize(_.ObjectNames, {
 	[181098] = "화산재",
 	[181598] = "실리시스트 모래기둥",
 	[181672] = "밀짚인형",
+	[207724] = "난파선 파편",
 });
 end
 if simplifiedLocale == "pt" then
@@ -3935,10 +3941,10 @@ localize(L.HEADER_NAMES, {
 	[-1000032] = "Treinamento de Montaria",
 	[-1000038] = "Mestre de Armas",
 	[-1000149] = "Os Quatro Cavaleiros",
-	[-1000175] = "Feira de Negraluna",
-	[-1000197] = "Festival do Fogo do Solstício",
-	[-1000203] = "Festerê de Pesca da Selva do Espinhaço",
-	[-1000212] = "Cetro das Areias Cambiantes",
+	[-1000176] = "Feira de Negraluna",
+	[-1000198] = "Festival do Fogo do Solstício",
+	[-1000204] = "Festerê de Pesca da Selva do Espinhaço",
+	[-1000213] = "Cetro das Areias Cambiantes",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000038] = "Um mestre de armas é um NPC que oferece aos personagens a oportunidade de aprender habilidades específicas com armas, cuja disponibilidade varia de um mestre de armas para outro. Todas as habilidades com armas podem ser treinadas no nível 1, exceto as armas de haste, que exigem nível 20.\n\nO treinamento com um mestre de armas tornou-se obsoleto no Patch 4.0.1, já que todas as proficiências de armas apropriadas à classe agora são aprendidas por cada classe após a criação. Os mestres de armas foram removidos do jogo logo depois.",
@@ -4348,6 +4354,7 @@ localize(_.ObjectNames, {
 	[181597] = "Monte de Terra Silitista",
 	[181598] = "Gêiser Silitista",
 	[181672] = "Efígie do Homem de Palha",
+	[207724] = "Destroços do Naufrágio",
 });
 end
 if simplifiedLocale == "ru" then
@@ -4375,14 +4382,14 @@ localize(L.HEADER_NAMES, {
 	[-1000162] = "Оружейная",
 	[-1000163] = "Собор",
 	[-1000166] = "Защитники Атал'ай",
-	[-1000175] = "Ярмарка Новолуния",
-	[-1000197] = "Огненный Солнцеворот",
-	[-1000203] = "Рыбомания Тернистой долины",
-	[-1000210] = "Война в Ан'Кираже",
-	[-1000212] = "Скипетр Зыбучих песков",
-	[-1000213] = "Вторжение Плети",
-	[-1000220] = "Коллекционное издание",
-	[-1000245] = "Без Источника",
+	[-1000176] = "Ярмарка Новолуния",
+	[-1000198] = "Огненный Солнцеворот",
+	[-1000204] = "Рыбомания Тернистой долины",
+	[-1000211] = "Война в Ан'Кираже",
+	[-1000213] = "Скипетр Зыбучих песков",
+	[-1000214] = "Вторжение Плети",
+	[-1000221] = "Коллекционное издание",
+	[-1000246] = "Без Источника",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000023] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",
@@ -4804,6 +4811,7 @@ localize(_.ObjectNames, {
 	[181597] = "Курган силитиста",
 	[181598] = "Гейзер силитиста",
 	[181672] = "Фигурка Плетеного человека",
+	[207724] = "Обломки кораблекрушения",
 });
 end
 if simplifiedLocale == "zh" then
@@ -4825,17 +4833,17 @@ localize(L.HEADER_NAMES, {
 	[-1000162] = "武器库",
 	[-1000163] = "修道院",
 	[-1000166] = "阿塔莱防御者",
-	[-1000175] = "暗月马戏团",
-	[-1000197] = "仲夏火焰节",
-	[-1000203] = "荆棘谷钓鱼大赛",
-	[-1000210] = "安其拉之战捐献",
-	[-1000212] = "流沙节杖",
-	[-1000213] = "天灾入侵",
-	[-1000214] = "希利苏斯流沙",
-	[-1000219] = "暴雪嘉年华",
-	[-1000220] = "典藏版",
-	[-1000237] = "可口可乐活动",
-	[-1000245] = "无来源",
+	[-1000176] = "暗月马戏团",
+	[-1000198] = "仲夏火焰节",
+	[-1000204] = "荆棘谷钓鱼大赛",
+	[-1000211] = "安其拉之战捐献",
+	[-1000213] = "流沙节杖",
+	[-1000214] = "天灾入侵",
+	[-1000215] = "希利苏斯流沙",
+	[-1000220] = "暴雪嘉年华",
+	[-1000221] = "典藏版",
+	[-1000238] = "可口可乐活动",
+	[-1000246] = "无来源",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000023] = "你可能需要在特定的节日活动中才能完成本节中的事物。",
@@ -5245,5 +5253,6 @@ localize(_.ObjectNames, {
 	[181597] = "水晶尘土堆",
 	[181598] = "水晶尘喷孔",
 	[181672] = "稻草人",
+	[207724] = "船只残骸",
 });
 end
