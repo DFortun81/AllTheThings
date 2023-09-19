@@ -1806,7 +1806,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #elseif AFTER 10.1.7
 					["crs"] = {
-						44760,	-- Mo'grosh Earthbender
+					--	44760,	-- Mo'grosh Earthbender	-- Is not confirmed
 						44758,	-- Mo'grosh Darkmauler
 					},
 					["coords"] = {
@@ -1851,7 +1851,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #elseif AFTER 10.1.7
 					["crs"] = {
 						44760,	-- Mo'grosh Earthbender
-						44758,	-- Mo'grosh Darkmauler
+					--	44758,	-- Mo'grosh Darkmauler	-- Is not confirmed
 					},
 					["coords"] = {
 						{ 71.4, 21.2, LOCH_MODAN },
