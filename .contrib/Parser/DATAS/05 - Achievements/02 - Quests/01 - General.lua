@@ -80,6 +80,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		crit(5799),		-- Amphitheater of Anguish in Zul'Drak
 		crit(13918),	-- Crucible of Carnage in Twilight Highlands
 	}),
+	-- #if BEFORE 5.0.4.16016
 	applyclassicphase(WRATH_PHASE_ONE, ach(1681, {	-- The Loremaster (A)
 		["sym"] = {{"meta_achievement",
 			1678,	-- Loremaster of Kalimdor (A)
@@ -108,6 +109,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			i(43300),	-- Loremaster's Colors
 		},
 	})),
+	-- #endif
 	ach(7520, {		-- The Loremaster
 		["sym"] = {{"meta_achievement",
 			1676,	-- Loremaster of Eastern Kingdoms
