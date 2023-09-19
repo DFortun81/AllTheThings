@@ -2546,60 +2546,156 @@ root(ROOTS.Zones, {
 					}),
 					n(64607, {	-- Commander Lo Ping <Justice Quartermaster>
 						["coord"] = { 37.8, 64.6, TOWNLONG_STEPPES },
-						["g"] = {
-							i(89527),	-- Amulet of Swirling Mists
-							i(89532),	-- Bladesong Cloak
-							i(89642),	-- Bracers of Eternal Resolve
-							i(89648),	-- Bracers of Inner Light
-							i(89660),	-- Brambleguard Leggings
-							i(89655),	-- Brushcutter's Gloves
-							i(89671),	-- Chestplate of the Stone Lion
-							i(89533),	-- Cloak of Ancient Curses
-							i(89537),	-- Cloak of the Silent Mountain
-							i(89645),	-- Cruel Mercy Bracers
-							i(89650),	-- Emperor's Riding Gloves
-							i(89647),	-- Entombed Traitor's Wristguards
-							i(89523),	-- Etched Golden Loop
-							i(89656),	-- Gauntlets of Restraint
-							i(89654),	-- Gloves of Forgotten Wisdom
-							i(89531),	-- Gorget of Usurped Kings
-							i(89670),	-- Inner Serenity Chestplate
-							i(89651),	-- Krompf's Fine-Tuning Gloves
-							i(89665),	-- Leggings of Ponderous Advance
-							i(89663),	-- Leggings of Twisted Vines
-							i(89659),	-- Leggings of Unfinished Conquest
-							i(89522),	-- Mark of the Dancing Crane
-							i(89232),	-- Mogu Rune of Paralysis
-							i(89668),	-- Mountain Stream Ringmail
-							i(89528),	-- Necklace of Jade Pearls
-							i(89529),	-- Pendant of Endless Inquisiton
-							i(89534),	-- Pressed Flower Cloak
-							i(89667),	-- Refurbished Zandalari Vestment
-							i(89535),	-- Ribcracker's Cloak
-							i(89673),	-- Robe of Eternal Dynasty
-							i(89672),	-- Robe of Quiet Meditation
-							i(89646),	-- Runoff Wristguards
-							i(89649),	-- Serrated Forearm Guards
-							i(88995),	-- Shado-Pan Dragon Gun
-							i(89526),	-- Signet of the Slumbering Emperor
-							i(89662),	-- Snowpack Waders
-							i(89524),	-- Sorcerer-King's Seal
-							i(89658),	-- Subversive Leggings
-							i(89644),	-- Sudden Insight Bracers
-							i(89653),	-- Surehand Grips
-							i(89525),	-- Thunderstone Ring
-							i(89661),	-- Tough Mushanhide Leggings
-							i(89643),	-- Tranquility Bindings
-							i(89530),	-- Triumphant Conqueror's Chain
-							i(89669),	-- Undergrowth Stalker Chestpiece
-							i(89664),	-- Valiant's Shinguards
-							i(89666),	-- Vestment of the Ascendant Tribe
-							i(89657),	-- Wall Breaker Gauntlets
-							i(89652),	-- Wandering Friar's Gloves
-						},
+						-- all items are available via faction vendors in/near main city
+						["sym"] = {{"select","itemID",
+							89527,	-- Amulet of Swirling Mists
+							89532,	-- Bladesong Cloak
+							89642,	-- Bracers of Eternal Resolve
+							89648,	-- Bracers of Inner Light
+							89660,	-- Brambleguard Leggings
+							89655,	-- Brushcutter's Gloves
+							89671,	-- Chestplate of the Stone Lion
+							89533,	-- Cloak of Ancient Curses
+							89537,	-- Cloak of the Silent Mountain
+							89645,	-- Cruel Mercy Bracers
+							89650,	-- Emperor's Riding Gloves
+							89647,	-- Entombed Traitor's Wristguards
+							89523,	-- Etched Golden Loop
+							89656,	-- Gauntlets of Restraint
+							89654,	-- Gloves of Forgotten Wisdom
+							89531,	-- Gorget of Usurped Kings
+							89670,	-- Inner Serenity Chestplate
+							89651,	-- Krompf's Fine-Tuning Gloves
+							89665,	-- Leggings of Ponderous Advance
+							89663,	-- Leggings of Twisted Vines
+							89659,	-- Leggings of Unfinished Conquest
+							89522,	-- Mark of the Dancing Crane
+							89232,	-- Mogu Rune of Paralysis
+							89668,	-- Mountain Stream Ringmail
+							89528,	-- Necklace of Jade Pearls
+							89529,	-- Pendant of Endless Inquisiton
+							89534,	-- Pressed Flower Cloak
+							89667,	-- Refurbished Zandalari Vestment
+							89535,	-- Ribcracker's Cloak
+							89673,	-- Robe of Eternal Dynasty
+							89672,	-- Robe of Quiet Meditation
+							89646,	-- Runoff Wristguards
+							89649,	-- Serrated Forearm Guards
+							88995,	-- Shado-Pan Dragon Gun
+							89526,	-- Signet of the Slumbering Emperor
+							89662,	-- Snowpack Waders
+							89524,	-- Sorcerer-King's Seal
+							89658,	-- Subversive Leggings
+							89644,	-- Sudden Insight Bracers
+							89653,	-- Surehand Grips
+							89525,	-- Thunderstone Ring
+							89661,	-- Tough Mushanhide Leggings
+							89643,	-- Tranquility Bindings
+							89530,	-- Triumphant Conqueror's Chain
+							89669,	-- Undergrowth Stalker Chestpiece
+							89664,	-- Valiant's Shinguards
+							89666,	-- Vestment of the Ascendant Tribe
+							89657,	-- Wall Breaker Gauntlets
+							89652,	-- Wandering Friar's Gloves
+						}},
 					}),
 					n(64606, {	-- Commander Oxheart <Valor Quartermaster>
 						["coord"] = { 37.8, 64.6, TOWNLONG_STEPPES },
+						-- some items are available via faction vendors in/near main city
+						["sym"] = {{"select","itemID",
+							88741,	-- Gloves of Red Feathers
+							88742,	-- Sunspeaker's Flared Gloves
+							88743,	-- Ogo's Elder Gloves
+							88744,	-- Fingers of the Loneliest Monk
+							88745,	-- Sentinal Commander's Gauntlets
+							88746,	-- Gloves of the Overwhelming Swrm
+							88747,	-- Streetfighter's Iron Knuckles
+							88748,	-- Ravenmane's Gloves
+							88749,	-- Gauntlets of Jade Sutras
+							88862,	-- Tankiss Warstompers
+							88864,	-- Yu'lon Guardian Boots
+							88865,	-- Bramblestaff Boots
+							88866,	-- Steps of the War Serpent
+							88867,	-- Sandals of the Elder Sage
+							88868,	-- Tukka-Tuk's Hairy Boots
+							88876,	-- Boots of the High Adept
+							88877,	-- Storm-Sing Sandals
+							88878,	-- Void Flame Slippers
+							88879,	-- Braided Black and White Bracer
+							88880,	-- Battle Shadow Bracers
+							88881,	-- Fallen Sentinel Bracers
+							88882,	-- Tiger-Striped Wristguards
+							88883,	-- Brewmaster Chani's Bracers
+							88884,	-- Quillpaw Family Bracers
+							88885,	-- Clever Ashyo's Armbands
+							88892,	-- Bracers of Inlaid Jade
+							88893,	-- Minh's Beaten Bracers
+							89055,	-- Klaxxi Lash of the Rescinder
+							89056,	-- Klaxxi Lash of the Consumer
+							89057,	-- Klaxxi Lash of the Doubter
+							89058,	-- Klaxxi Lash of the Winnower
+							89059,	-- Klaxxi Lash of the Precursor
+							89060,	-- Klaxxi Lash of the Borrower
+							89061,	-- Klaxxi Lash of the Harbinger
+							89062,	-- Klaxxi Lash of the Orator
+							89063,	-- Klaxxi Lash of the Seeker
+							89064,	-- Bloodseeker's Solitaire
+							89065,	-- Choker of the Klaxxi'va
+							89066,	-- Paragon's Pale Pendant
+							89067,	-- Links of the Lucid
+							89068,	-- Wire of the Wakener
+							89069,	-- Ring of the Golden Stair
+							89070,	-- Anji's Keepsake
+							89071,	-- Alani's Inflexible Ring
+							89072,	-- Simple Harmonious Ring
+							89073,	-- Leven's Circle of Hope
+							89074,	-- Cloak of the Dark Disciple
+							89075,	-- Yi's Cloak of Courage
+							89076,	-- Blackguard Cape
+							89077,	-- Cloak of Snow Blossoms
+							89078,	-- Sagewhisper's Wrap
+							89079,	-- Lao-Chin's Liquid Courage
+							89080,	-- Scroll of Revered Ancestors
+							89081,	-- Blossom of Pure Snow
+							89082,	-- Hawkmaster's Talon
+							89083,	-- Iron Belly Wok
+							89087,	-- Poisoncrafter's Kilt
+							89088,	-- Leggings of the Poisoned Soul
+							89089,	-- Wind-Reaver Greaves
+							89090,	-- Dreadsworn Slayer Legs
+							89091,	-- Swarmkeeper's Leggings
+							89092,	-- Locust Swarm Legguards
+							89093,	-- Kovok's Riven Legguards
+							89094,	-- Ambersmith Legplates
+							89095,	-- Legguards of the Unscathed
+							89096,	-- Six Pool's Open Helm
+							89216,	-- Yi's Least Favorite Helmet
+							89280,	-- Voice Amplifying Greathelm
+							89291,	-- Hawkmaster's Headguard
+							89296,	-- Nightwatcher's Helm
+							89300,	-- Red Smoke Bandana
+							89308,	-- Snowdrift Helm
+							89337,	-- Firecracker Corona
+							89338,	-- Yalia's Cowl
+							89339,	-- Tenderheart Shoulders
+							89340,	-- Mantle of the Golden Sun
+							89341,	-- Imperion Spaulders
+							89342,	-- Whitepetal Shouldergarb
+							89343,	-- Mindbender Shoulders
+							89344,	-- Windwalker Spaulders
+							89345,	-- Stonetoe Spaulders
+							89346,	-- Shoulders of Autumnlight
+							89347,	-- Paleblade Shoulderguards
+							89420,	-- Dawnblade's Chestguard
+							89421,	-- Cuirass of the Twin Monoliths
+							89423,	-- Battleguard of Guo-Lai
+							89429,	-- Robes of the Setting Sun
+							89430,	-- Breastplate of the Golden Pagoda
+							89431,	-- Softfoot Silentwrap
+							89432,	-- Mistfall Robes
+							89433,	-- Vestments of Thundering Skies
+							89434,	-- Robe of the Five Sisters
+						}},
 						["g"] = {
 							i(86702, {	-- Guardian Serpent Cowl
 								["cost"] = { { "i", 89274, 1 }, },	-- Helm of the Shadowy Conqueror (LFR)
@@ -3636,98 +3732,6 @@ root(ROOTS.Zones, {
 							i(86916, {	-- Greaves of the Lost Catacomb
 								["cost"] = { { "i", 89252, 1 }, },	-- Leggings of the Shadowy Vanquisher (Heroic)
 							}),
-							i(88741),	-- Gloves of Red Feathers
-							i(88742),	-- Sunspeaker's Flared Gloves
-							i(88743),	-- Ogo's Elder Gloves
-							i(88744),	-- Fingers of the Loneliest Monk
-							i(88745),	-- Sentinal Commander's Gauntlets
-							i(88746),	-- Gloves of the Overwhelming Swrm
-							i(88747),	-- Streetfighter's Iron Knuckles
-							i(88748),	-- Ravenmane's Gloves
-							i(88749),	-- Gauntlets of Jade Sutras
-							i(88862),	-- Tankiss Warstompers
-							i(88864),	-- Yu'lon Guardian Boots
-							i(88865),	-- Bramblestaff Boots
-							i(88866),	-- Steps of the War Serpent
-							i(88867),	-- Sandals of the Elder Sage
-							i(88868),	-- Tukka-Tuk's Hairy Boots
-							i(88876),	-- Boots of the High Adept
-							i(88877),	-- Storm-Sing Sandals
-							i(88878),	-- Void Flame Slippers
-							i(88879),	-- Braided Black and White Bracer
-							i(88880),	-- Battle Shadow Bracers
-							i(88881),	-- Fallen Sentinel Bracers
-							i(88882),	-- Tiger-Striped Wristguards
-							i(88883),	-- Brewmaster Chani's Bracers
-							i(88884),	-- Quillpaw Family Bracers
-							i(88885),	-- Clever Ashyo's Armbands
-							i(88892),	-- Bracers of Inlaid Jade
-							i(88893),	-- Minh's Beaten Bracers
-							i(89055),	-- Klaxxi Lash of the Rescinder
-							i(89056),	-- Klaxxi Lash of the Consumer
-							i(89057),	-- Klaxxi Lash of the Doubter
-							i(89058),	-- Klaxxi Lash of the Winnower
-							i(89059),	-- Klaxxi Lash of the Precursor
-							i(89060),	-- Klaxxi Lash of the Borrower
-							i(89061),	-- Klaxxi Lash of the Harbinger
-							i(89062),	-- Klaxxi Lash of the Orator
-							i(89063),	-- Klaxxi Lash of the Seeker
-							i(89064),	-- Bloodseeker's Solitaire
-							i(89065),	-- Choker of the Klaxxi'va
-							i(89066),	-- Paragon's Pale Pendant
-							i(89067),	-- Links of the Lucid
-							i(89068),	-- Wire of the Wakener
-							i(89069),	-- Ring of the Golden Stair
-							i(89070),	-- Anji's Keepsake
-							i(89071),	-- Alani's Inflexible Ring
-							i(89072),	-- Simple Harmonious Ring
-							i(89073),	-- Leven's Circle of Hope
-							i(89074),	-- Cloak of the Dark Disciple
-							i(89075),	-- Yi's Cloak of Courage
-							i(89076),	-- Blackguard Cape
-							i(89077),	-- Cloak of Snow Blossoms
-							i(89078),	-- Sagewhisper's Wrap
-							i(89079),	-- Lao-Chin's Liquid Courage
-							i(89080),	-- Scroll of Revered Ancestors
-							i(89081),	-- Blossom of Pure Snow
-							i(89082),	-- Hawkmaster's Talon
-							i(89083),	-- Iron Belly Wok
-							i(89087),	-- Poisoncrafter's Kilt
-							i(89088),	-- Leggings of the Poisoned Soul
-							i(89089),	-- Wind-Reaver Greaves
-							i(89090),	-- Dreadsworn Slayer Legs
-							i(89091),	-- Swarmkeeper's Leggings
-							i(89092),	-- Locust Swarm Legguards
-							i(89093),	-- Kovok's Riven Legguards
-							i(89094),	-- Ambersmith Legplates
-							i(89095),	-- Legguards of the Unscathed
-							i(89096),	-- Six Pool's Open Helm
-							i(89216),	-- Yi's Least Favorite Helmet
-							i(89280),	-- Voice Amplifying Greathelm
-							i(89291),	-- Hawkmaster's Headguard
-							i(89296),	-- Nightwatcher's Helm
-							i(89300),	-- Red Smoke Bandana
-							i(89308),	-- Snowdrift Helm
-							i(89337),	-- Firecracker Corona
-							i(89338),	-- Yalia's Cowl
-							i(89339),	-- Tenderheart Shoulders
-							i(89340),	-- Mantle of the Golden Sun
-							i(89341),	-- Imperion Spaulders
-							i(89342),	-- Whitepetal Shouldergarb
-							i(89343),	-- Mindbender Shoulders
-							i(89344),	-- Windwalker Spaulders
-							i(89345),	-- Stonetoe Spaulders
-							i(89346),	-- Shoulders of Autumnlight
-							i(89347),	-- Paleblade Shoulderguards
-							i(89420),	-- Dawnblade's Chestguard
-							i(89421),	-- Cuirass of the Twin Monoliths
-							i(89423),	-- Battleguard of Guo-Lai
-							i(89429),	-- Robes of the Setting Sun
-							i(89430),	-- Breastplate of the Golden Pagoda
-							i(89431),	-- Softfoot Silentwrap
-							i(89432),	-- Mistfall Robes
-							i(89433),	-- Vestments of Thundering Skies
-							i(89434),	-- Robe of the Five Sisters
 						},
 					}),
 					n(64595, {	-- Rushi the Fox <Shado-Pan Quartermaster>
