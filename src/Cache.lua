@@ -11,7 +11,7 @@ local contains, classIndex, raceIndex, factionID =
 	app.contains, app.ClassIndex, app.RaceIndex, app.FactionID;
 
 -- Module locals
-local AllCaches, AllGamePatches, runners = {}, {}, {};
+local AllCaches, AllGamePatches, runners, QuestTriggers = {}, {}, {}, {}
 local containerMeta = {
 	__index = function(t, id)
 		if id then
@@ -429,16 +429,17 @@ local fieldConverters = {
 					group.maps = {mapID};
 				end
 			end);
+			-- Is there a situation where we would actually want the associated quest to show the data for the group since NOT being flagged is the trigger for it being available...?
 			CacheField(group, "questID", value);
 			CacheField(group, "mapID", mapID);
-			
+
 			local mapIDCache = currentCache.mapID;
 			tinsert(runners, function()
 				mapIDCache = mapIDCache[originalMapID];
 				for i,o in ipairs(mapIDCache) do
 					if o == group then
 						table.remove(mapIDCache, i);
-						
+
 						local questIDs = app.L.QUEST_ID_TO_MAP_ID[originalMapID];
 						if not questIDs then
 							questIDs = {};
@@ -450,6 +451,8 @@ local fieldConverters = {
 					end
 				end
 			end);
+			-- This questID needs to be used to automatically trigger minilist rebuilds when state-changed
+			tinsert(QuestTriggers, value)
 		end
 	end,
 	["zone-text-areaID"] = function(group, value)
@@ -501,7 +504,7 @@ local fieldConverters = {
 			if name then app.L.ALT_ZONE_TEXT_TO_MAP_ID[name] = mapID; end
 		end
 	end,
-	
+
 	-- Patch Helpers
 	["awp"] = function(group, value)
 		if value then AllGamePatches[value] = true; end
@@ -739,4 +742,6 @@ app.SearchForSourceIDQuickly = SearchForSourceIDQuickly;
 app.SearchForSpecificGroups = SearchForSpecificGroups;
 app.VerifyCache = VerifyCache;
 app.VerifyRecursion = VerifyRecursion;
+-- this table is deleted once used
+app.__CacheQuestTriggers = QuestTriggers;
 end

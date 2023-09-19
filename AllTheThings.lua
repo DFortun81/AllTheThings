@@ -21908,6 +21908,11 @@ local DGU_Quests = {
 	[65078] = DGU_CustomCollect,	-- Shadowlands - Covenant - Night Fae
 	[65079] = DGU_CustomCollect,	-- Shadowlands - Covenant - Necrolord
 };
+-- Add any automatically-assigned LocationTriggers
+for _,questID in ipairs(app.__CacheQuestTriggers or app.EmptyTable) do
+	DGU_Quests[questID] = DGU_Locationtrigger
+end
+app.__CacheQuestTriggers = nil
 local function AssignDirectGroupOnUpdates()
 	local questRef;
 	local Search = app.SearchForObject;
