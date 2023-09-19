@@ -60,20 +60,6 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					i(168140),	-- Ancient Blood Pigment
 				}),
 			}),
-			e(2378, {	-- Grand Empress Shek'zara
-				["isWeekly"] = true,
-				["questID"] = 58705,	-- Grand Empress Shek'zara
-				["isRaid"] = true,
-				["creatureID"] = 154638,
-				["coord"] = { 5.9, 56.4, 1530 },
-				["g"] = {
-					i(174243),	-- Guise of the Voracious Prowler
-					i(174234),	-- Maniacal Speaker's Cover
-					i(174264),	-- Chitinous Conqueror's Legplates
-					i(174255),	-- Greaves of Shattered Thoughts
-					i(174268),	-- Loop of Abhorrent Celerity
-				},
-			}),
 			e(2197, {	-- Hailstone Construct
 				["isWeekly"] = true,
 				["questID"] = 52157,	-- A Chilling Encounter (WQ)
@@ -179,20 +165,6 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					i(168603),	-- Cloak of Restless Spirits
 					i(169317),	-- Enthraller's Bindstone
 				}),
-			}),
-			e(2381, {	-- Vuk'laz the Earthbreaker
-				["isWeekly"] = true,
-				["questID"] = 55466,	-- Vuk'laz the Earthbreaker
-				["isRaid"] = true,
-				["creatureID"] = 160970,
-				["coord"] = { 45.7, 16.1, 1527 },
-				["g"] = {
-					i(174258),	-- Greathelm of Indiscriminate Brutality
-					i(174250),	-- Psyche Tormentor's Visage
-					i(174237),	-- Breeches of Faithful Execution
-					i(174247),	-- Grotesque Mutilator's Leggings
-					i(174469),	-- Band of Insidious Ruminations
-				},
 			}),
 			e(2198, {	-- Warbringer Yenajz
 				["isWeekly"] = true,
