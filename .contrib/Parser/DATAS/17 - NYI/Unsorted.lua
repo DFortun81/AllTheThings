@@ -1402,7 +1402,7 @@ root(ROOTS.Unsorted, {
 			i(210792),	-- Fragment of Emberscar
 			i(210793),	-- Fragment of Emberscar
 		})),
-		tier(DF_TIER, 1.7, bubbleDown({ ["timeline"] = { CREATED_10_1_7 } }, {
+		tier(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
 			filter(TOYS, {
 				---- HERTIAGE ----
 				i(208229),	-- Honor of the Forsaken (TOY!)
@@ -1551,7 +1551,7 @@ root(ROOTS.Unsorted, {
 			i(209015),	-- Clue Scrap
 			i(209016),	-- Clue Scrap
 		})),
-		tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
+		tier(DF_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
 			filter(COSMETIC, {
 				---- TRADING POST ----
 				i(206277),	-- Vagabond's Sunny Cape
@@ -1717,9 +1717,6 @@ root(ROOTS.Unsorted, {
 			i(208095),	-- Cache of Timewarped Treasures
 			i(208097),	-- Flamethrower
 			i(208108),	-- Madam Shadow's Old Grimoire
-			i(208147),	-- Yellow Tweed Cap
-			i(208148),	-- Burgandy Cap
-			i(208148),	-- Burgundy Cap
 			i(206447),	-- Task List for Adventurers
 			--
 			i(206160),	-- Madam Shadow's Grimoire
@@ -1739,7 +1736,7 @@ root(ROOTS.Unsorted, {
 			i(190901),	-- Solemn Watchman's Helm
 			i(200925),	-- Ensemble: Solemn Watchman's Garb
 		})),
-		tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
+		tier(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
 			header(HEADERS.LFGDungeon, 2403, {	-- Aberrus, the Shadowed Crucible
 				i(202581),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Leather - WRIST 1
 				i(202608),	-- Power-Draining Spire
@@ -1855,9 +1852,6 @@ root(ROOTS.Unsorted, {
 				q(71053),	-- Hermit Kill Quest
 				q(72027),	-- [DNT] Training Kill Quest JKP
 				q(72480),	-- [DNT] Training Collect Quest
-				q(72513),	-- Our Destiny
-				q(72514),	-- The High Creche
-				q(72515),	-- The Contingency
 				q(72885),	-- Loamm Placeholder Quest
 				q(72887),	--
 				q(72932),	-- Our Father's Legacy - DEPRECATED
@@ -2000,7 +1994,7 @@ root(ROOTS.Unsorted, {
 				q(75391),	-- Epilogue Scene (DNT) (spellID 406790)
 			}),
 		})),
-		tier(DF_TIER, 0.7, bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
+		tier(DF_TIER, 0.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
 			n(ARMOR, {
 				i(204258),	-- Goblin Trainee's Wristwraps
 				i(204259),	-- Goblin Trainee's Cord
@@ -2080,7 +2074,7 @@ root(ROOTS.Unsorted, {
 				q(75449),	--
 			})
 		})),
-		tier(DF_TIER, 0.5, bubbleDown({ ["timeline"] = { CREATED_10_0_5 } }, {
+		tier(DF_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
 			filter(COSMETIC, {
 				n(ARMOR, {
 					-- Cloth
@@ -2218,7 +2212,7 @@ root(ROOTS.Unsorted, {
 				q(74898),	--
 			}),
 		})),
-		tier(DF_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_10_0_2 } }, {
+		tier(DF_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
 			n(SETS, {
 				i(203366),	-- Blue Winglord's Staff
 				i(203367),	-- Blue Winglord's Hauberk
@@ -2368,7 +2362,7 @@ root(ROOTS.Unsorted, {
 				q(74416),	--
 			}),
 		})),
-		tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+		tier(DF_TIER, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			n(ARMOR, {
 				n(SETS, {
 					-- Evoker Set --

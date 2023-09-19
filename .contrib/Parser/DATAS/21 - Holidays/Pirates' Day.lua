@@ -82,7 +82,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PIRATES_DAY, n(PIRATES_DAY_HEADER, {
 						["timeline"] = { "added 6.0.2.18816" },
 						["filterID"] = CONSUMABLES,	-- Changed from "Toy"
 					}),
-					i(208858, {	-- Highland Drake: Pirates' Day Armor
+					i(208858, {	-- Highland Drake: Pirates' Day Armor (DM!)
 						["timeline"] = { ADDED_10_1_7 },
 						["cost"] = 500000000,	-- 50k
 					}),

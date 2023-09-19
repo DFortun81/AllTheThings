@@ -1054,11 +1054,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}, {
 			i(208859),	-- Cliffside Wylderdrake: Day of the Dead Armor
 		})),
-		header(HEADERS.Item, 194705, sharedData({	-- Highland Drake
-			["timeline"] = { CREATED_10_1_7 },
-		}, {
-			i(208858),	-- Highland Drake: Pirates' Day Armor
-		})),
+		header(HEADERS.Item, 194705, {	-- Highland Drake
+			i(208858, {	-- Highland Drake: Pirates' Day Armor (DM!)
+				["e"] = EVENTS.PIRATES_DAY,
+			}),
+		}),
 		header(HEADERS.Item, 194034, sharedData({	-- Renewed Proto-Drake
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
 			["timeline"] = { CREATED_10_1_7 },
@@ -1096,7 +1096,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(210481),	-- Flourishing Whimsydrake: Sunset Scales
 			i(210484),	-- Flourishing Whimsydrake: Underbite Snout
 		}),
-		header(HEADERS.Item, 206156, { -- Grotto Netherwing Drake (MOUNT!)
+		header(HEADERS.Item, 206156, { -- Grotto Netherwing Drake
 			i(207760),	-- Grotto Netherwing Drake: Armor
 			i(207779),	-- Grotto Netherwing Drake: Barbed Tail
 			i(207776),	-- Grotto Netherwing Drake: Black Scales
