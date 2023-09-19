@@ -417,6 +417,7 @@ local fieldConverters = {
 			local mapID = nextCustomMapID;
 			nextCustomMapID = nextCustomMapID - 1;
 			tinsert(runners, function()
+				group.questID = value;
 				if group.maps then
 					tinsert(group.maps, mapID)
 				else
