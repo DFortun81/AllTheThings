@@ -643,7 +643,7 @@ end
 local function GetRemovedWithPatchString(rwp)
 	if rwp then
 		rwp = tonumber(rwp);
-		return "This gets removed in patch " .. math.floor(rwp / 10000) .. "." .. (math.floor(rwp / 100) % 10) .. "." .. (rwp % 10);
+		return sformat(L.REMOVED_WITH_PATCH_FORMAT, math.floor(rwp / 10000) .. "." .. (math.floor(rwp / 100) % 10) .. "." .. (rwp % 10));
 	end
 end
 app.GetProgressText = GetProgressTextDefault;
