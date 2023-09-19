@@ -511,11 +511,14 @@ local fieldConverters = {
 	end,
 };
 
--- 'altQuests' in Retail pretending to be the same quest as a different quest actually causes problems for searches
--- and it makes more sense to not pretend they're the same than to hamper existing logic with more conditionals to
--- make sure we actually get the data that we search for
+---- Retail Differences ----
 if tonumber(app.GameBuildVersion) > 100000 then
+	-- 'altQuests' in Retail pretending to be the same quest as a different quest actually causes problems for searches
+	-- and it makes more sense to not pretend they're the same than to hamper existing logic with more conditionals to
+	-- make sure we actually get the data that we search for
 	fieldConverters.altQuests = nil;
+	-- 'awp' isn't needed for caching into 'AllGamePatches' currently... I don't really see a future where we 'pre-add' future Retail content in public releases
+	fieldConverters.awp = nil;
 end
 
 local _converter;
