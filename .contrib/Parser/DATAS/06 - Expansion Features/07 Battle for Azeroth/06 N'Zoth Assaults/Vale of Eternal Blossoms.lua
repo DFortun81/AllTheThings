@@ -9,11 +9,9 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 		["maps"] = {
 			1579,	-- Vale of Eternal Blossoms - Pools Of Power - underground area
 		},
-		--[[
 		["crs"] = {
-			,	-- 
+			163463,	-- Zidormi
 		},
-		]]--
 		["g"] = {
 			n(WORLD_BOSSES, {
 				["isRaid"] = true,
