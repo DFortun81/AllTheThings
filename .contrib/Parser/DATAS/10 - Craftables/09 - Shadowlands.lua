@@ -265,13 +265,11 @@ root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0
 		}),
 		filter(REAGENTS, sharedData({["crs"] = {
 			-- Various Ink Traders
-			66685,	-- Danky
 			164736,	-- Distributor Au'bic
 			30729,	-- Ickabod Pimlen
 			30731,	-- Illianna Moonscribe
 			33027,	-- Jessica Sellers
 			93532,	-- Jessica Sellers
-			66678,	-- Krystel
 			30727,	-- Lelorian
 			30724,	-- Mertle Murkpen
 			46718,	-- Moraka
