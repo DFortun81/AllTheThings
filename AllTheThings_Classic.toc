@@ -10,6 +10,9 @@
 ## X-Curse-Project-ID: 267285
 ## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSavedVariables, AllTheThingsAD, ATTClassicSettings, ATTClassicAD, ATTClassicAuctionData, ATTClassicDebugData
 ## SavedVariablesPerCharacter: ATTClassicSettingsPerCharacter
+## AddonCompartmentFunc: AllTheThings_MinimapButtonOnClick
+## AddonCompartmentFuncOnEnter: AllTheThings_MinimapButtonOnEnter
+## AddonCompartmentFuncOnLeave: AllTheThings_MinimapButtonOnLeave
 lib\LibStub\LibStub.lua
 lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
 lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
