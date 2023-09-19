@@ -753,15 +753,6 @@ local function GetDisplayID(data, all)
 			end
 		end
 		if displayInfo[1] then data.displayInfo = displayInfo; return displayInfo; end
-
-		-- otherwise use the attached crs if so
-		if data.crs then
-			for k,v in pairs(data.crs) do
-				_ = v and app.NPCDisplayIDFromID[v];
-				if _ then tinsert(displayInfo, _); end
-			end
-		end
-		if displayInfo[1] then data.displayInfo = displayInfo; return displayInfo; end
 	else
 		-- specific displayID
 		local _ = data.displayID or data.fetchedDisplayID;
@@ -785,14 +776,6 @@ local function GetDisplayID(data, all)
 		-- for quest givers
 		if data.qgs then
 			for k,v in pairs(data.qgs) do
-				_ = v and app.NPCDisplayIDFromID[v];
-				if _ then data.fetchedDisplayID = _; return _; end
-			end
-		end
-
-		-- otherwise use the attached crs if so
-		if data.crs then
-			for k,v in pairs(data.crs) do
 				_ = v and app.NPCDisplayIDFromID[v];
 				if _ then data.fetchedDisplayID = _; return _; end
 			end
