@@ -721,1029 +721,1029 @@ root(ROOTS.ExpansionFeatures,
 							["races"] = HORDE_ONLY,
 						}),
 					})),
-				},
-			}),
-			n(WARFRONT_BATTLE_FOR_STROMGARDE, {	-- Completely separate, distinct Warfont scenario
-				["lore"] = "Located in the Arathi Highlands, Stromgarde is one of the key locations in the struggle for controlling of the Eastern Kingdoms. For the Alliance, Stromgarde sits in a critical defensive position. Following the battle for Lordaeron, the Horde threat still looms over the continent and holding Stromgarde will be key if you hope to keep the Horde's aggression at bay.\n\nFor the Horde, securing Stromgarde would set the stage for an assault on the heart of the Eastern Kingdoms and serve as a launching point for a campaign against the worgen of the kingdom of Gilneas. This location is also key in the defense of the blood elven capital, Silvermoon City, in the north.",
-				["timeline"] = { ADDED_8_0_1_LAUNCH },
-				["maps"] = {
-					906, -- ???
-					943, -- Actual Scenario [Horde]
-					1044, -- Actual Scenario [Alliance]
-					-- 1158, -- ???
-					-- 1244, -- ???
-				},
-				["crs"] = {
-					140552,	-- War Table (Alliance)
-					131752,	-- War Table (Horde)
-				},
-				["lvl"] = {
-					-- #if AFTER SHADOWLANDS
-					50,
-					-- #else
-					120,
-					-- #endif
-				},
-				["groups"] = {
-					n(ACHIEVEMENTS, {	-- Achievements
-						ach(12874, {	-- An Eventful Battle
-							crit(1),	-- Fozruk
-							crit(2),	-- Hostage Rescue
-							crit(3),	-- Lost Caravan
-							crit(4),	-- The Branchlord
-							crit(5),	-- Rumbling Goliath
-							crit(6),	-- Yogursa
-							crit(7),	-- Thundering Goliath
-							crit(8),	-- Plaguefeather
-							crit(9),	-- Ragebeak
-							crit(10),	-- Skullripper
-							crit(12),	-- Cresting Goliath
-							crit(11),	-- Venomarus
-						}),
-						ach(13739, {	-- Heroic: Tour of War (A)
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								crit(1),	-- Eitrigg
-								crit(2),	-- Lady Liadrin
-								crit(3),	-- Rokhan
-							},
-						}),
-						ach(13738, {	-- Heroic: Tour of War (H)
-							["races"] = HORDE_ONLY,
-							["g"] = {
-								crit(1),	-- Danath Trollbane
-								crit(2),	-- Turalyon
-								crit(3),	-- Muradin
-							},
-						}),
-						ach(13737, {	-- Heroic: War is Hell (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						ach(13735, {	-- Heroic: War is Hell (H)
-							["races"] = HORDE_ONLY,
-						}),
-						ach(12884, {	-- Leader of Troops (A)
-							["description"] = "You must personally create each troop.  Siege Engines are limited to 3 active at a time.",
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								crit(1),	-- Footmen
-								crit(2),	-- Riflemen
-								crit(3),	-- Priests
-								crit(4),	-- Knights
-								crit(5),	-- Siege Engine
-							},
-						}),
-						ach(12878, {	-- Leader of Troops (H)
-							["description"] = "You must personally create each troop.  Demolishers are limited to 3 active at a time.",
-							["races"] = HORDE_ONLY,
-							["g"] = {
-								crit(1),	-- Grunts
-								crit(2),	-- Axe Throwers
-								crit(3),	-- Shaman
-								crit(4),	-- Raiders
-								crit(5),	-- Demolishers
-							},
-						}),
-						ach(12889, {	-- Strike Fast (A)
-							["description"] = "You must personally capture each flag.",
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								ach(12888, {	-- Strike Hard
+					n(WARFRONT_BATTLE_FOR_STROMGARDE, {	-- Completely separate, distinct Warfont scenario
+						["lore"] = "Located in the Arathi Highlands, Stromgarde is one of the key locations in the struggle for controlling of the Eastern Kingdoms. For the Alliance, Stromgarde sits in a critical defensive position. Following the battle for Lordaeron, the Horde threat still looms over the continent and holding Stromgarde will be key if you hope to keep the Horde's aggression at bay.\n\nFor the Horde, securing Stromgarde would set the stage for an assault on the heart of the Eastern Kingdoms and serve as a launching point for a campaign against the worgen of the kingdom of Gilneas. This location is also key in the defense of the blood elven capital, Silvermoon City, in the north.",
+						["timeline"] = { ADDED_8_0_1_LAUNCH },
+						["maps"] = {
+							906, -- ???
+							943, -- Actual Scenario [Horde]
+							1044, -- Actual Scenario [Alliance]
+							-- 1158, -- ???
+							-- 1244, -- ???
+						},
+						["crs"] = {
+							140552,	-- War Table (Alliance)
+							131752,	-- War Table (Horde)
+						},
+						["lvl"] = {
+							-- #if AFTER SHADOWLANDS
+							50,
+							-- #else
+							120,
+							-- #endif
+						},
+						["groups"] = {
+							n(ACHIEVEMENTS, {	-- Achievements
+								ach(12874, {	-- An Eventful Battle
+									crit(1),	-- Fozruk
+									crit(2),	-- Hostage Rescue
+									crit(3),	-- Lost Caravan
+									crit(4),	-- The Branchlord
+									crit(5),	-- Rumbling Goliath
+									crit(6),	-- Yogursa
+									crit(7),	-- Thundering Goliath
+									crit(8),	-- Plaguefeather
+									crit(9),	-- Ragebeak
+									crit(10),	-- Skullripper
+									crit(12),	-- Cresting Goliath
+									crit(11),	-- Venomarus
+								}),
+								ach(13739, {	-- Heroic: Tour of War (A)
+									["races"] = ALLIANCE_ONLY,
+									["g"] = {
+										crit(1),	-- Eitrigg
+										crit(2),	-- Lady Liadrin
+										crit(3),	-- Rokhan
+									},
+								}),
+								ach(13738, {	-- Heroic: Tour of War (H)
+									["races"] = HORDE_ONLY,
+									["g"] = {
+										crit(1),	-- Danath Trollbane
+										crit(2),	-- Turalyon
+										crit(3),	-- Muradin
+									},
+								}),
+								ach(13737, {	-- Heroic: War is Hell (A)
 									["races"] = ALLIANCE_ONLY,
 								}),
-								crit(1),	-- Galson's Lode
-								crit(2),	-- Highlands Mill
-								crit(3),	-- Valorcall Pass
-								crit(4),	-- High Perch
-								crit(5),	-- Newstead
-								crit(6),	-- Circle of Elements
-								crit(7),	-- Northfold Crossing
-							},
-						}),
-						ach(12876, {	-- Strike Fast (H)
-							["description"] = "You must personally capture each flag.",
-							["races"] = HORDE_ONLY,
-							["g"] = {
-								ach(12877, {	-- Strike Hard
+								ach(13735, {	-- Heroic: War is Hell (H)
 									["races"] = HORDE_ONLY,
 								}),
-								crit(1),	-- Circle of Elements
-								crit(2),	-- Hatchet Ridge
-								crit(3),	-- High Perch
-								crit(4),	-- Northfold Crossing
-								crit(5),	-- Newstead
-								crit(6),	-- Valorcall Pass
-								crit(7),	-- Drywhisker Mine
-							},
-						}),
-						ach(12886, {	-- Tour of War (A)
-							["description"] = "Only one commander is up per warfront cycle.",
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								crit(1),	-- Eitrigg
-								crit(2),	-- Lady Liadrin
-								crit(3),	-- Rokhan
-							},
-						}),
-						ach(12879, {	-- Tour of War (H)
-							["description"] = "Only one commander is up per warfront cycle.",
-							["races"] = HORDE_ONLY,
-							["g"] = {
-								crit(1),	-- Danath Trollbane
-								crit(2),	-- Turalyon
-								crit(3),	-- Muradin
-							},
-						}),
-						ach(12881, {	-- War is Hell (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						ach(12873, {	-- War is Hell (H)
-							["races"] = HORDE_ONLY,
-						}),
-					}),
-					n(QUESTS, {
-						q(53195, {	-- Arathi Donations: Akunda's Bite
-							["provider"] = { "n", 142993 },	-- Chelsea Strand
-							["coord"] = { 66.7, 23.5, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53228, {	-- Arathi Donations: Battle Flag: Phalanx Defense
-							["provider"] = { "n", 142998 },	-- Faella
-							["coord"] = { 67.1, 27.9, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53366, {	-- Arathi Donations: Battle Flag: Rallying Swiftness
-							["provider"] = { "n", 142998 },	-- Faella
-							["coord"] = { 67.1, 27.9, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53227, {	-- Arathi Donations: Battle Flag: Spirit of Freedom
-							["provider"] = { "n", 142998 },	-- Faella
-							["coord"] = { 67.1, 27.9, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53159, {	-- Arathi Donations: Coarse Leather
-							["provider"] = { "n", 142995 },	-- Charlane
-							["coord"] = { 67.2, 29.2, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53217, {	-- Arathi Donations: Coarse Leather Barding
-							["provider"] = { "n", 142995 },	-- Charlane
-							["coord"] = { 67.2, 29.2, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53211, {	-- Arathi Donations: Coastal Healing Potion
-							["provider"] = { "n", 142993 },	-- Chelsea Strand
-							["coord"] = { 66.7, 23.5, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53213, {	-- Arathi Donations: Coastal Mana Potion
-							["provider"] = { "n", 142993 },	-- Chelsea Strand
-							["coord"] = { 66.7, 23.5, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53240, {	-- Arathi Donations: Deadly Solstone
-							["provider"] = { "n", 143004 },	-- Larold Kyne
-							["coord"] = { 67.6, 24.1, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53363, {	-- Arathi Donations: Drums of the Maelstrom
-							["provider"] = { "n", 142995 },	-- Charlane
-							["coord"] = { 67.2, 29.2, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53229, {	-- Arathi Donations: Enchant Ring - Seal of Critical Strike
-							["provider"] = { "n", 143007 },	-- Mae Wagglewand
-							["coord"] = { 66.3, 25.1, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53230, {	-- Arathi Donations: Enchant Ring - Seal of Versatility
-							["provider"] = { "n", 143007 },	-- Mae Wagglewand
-							["coord"] = { 66.3, 25.1, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53234, {	-- Arathi Donations: F.R.I.E.D.
-							["provider"] = { "n", 143008 },	-- Norber Togglesprocket
-							["coord"] = { 66.3, 25.5, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53233, {	-- Arathi Donations: Frost-Laced Ammunition
-							["provider"] = { "n", 143008 },	-- Norber Togglesprocket
-							["coord"] = { 66.3, 25.5, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53231, {	-- Arathi Donations: Gloom Dust
-							["provider"] = { "n", 143007 },	-- Mae Wagglewand
-							["coord"] = { 66.3, 25.1, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53265, {	-- Arathi Donations: Gold
-							["provider"] = { "n", 142685 },	-- Paymaster Vauldren
-							["coord"] = { 66.2, 27.6, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53225, {	-- Arathi Donations: Great Sea Catfish
-							["provider"] = { "n", 142997 },	-- Senedras
-							["coord"] = { 67.0, 27.2, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53223, {	-- Arathi Donations: Grilled Catfish
-							["provider"] = { "n", 142997 },	-- Senedras
-							["coord"] = { 67.0, 27.2, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53232, {	-- Arathi Donations: Incendiary Ammunition
-							["provider"] = { "n", 143008 },	-- Norber Togglesprocket
-							["coord"] = { 66.3, 25.5, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53361, {	-- Arathi Donations: Meaty Haunch
-							["provider"] = { "n", 142997 },	-- Senedras
-							["coord"] = { 67.0, 27.2, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53218, {	-- Arathi Donations: Monel-Hardened Hoofplates
-							["provider"] = { "n", 142994 },	-- Brandal Darkbeard
-							["coord"] = { 66.0, 28.5, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53219, {	-- Arathi Donations: Monel-Hardened Stirrups
-							["provider"] = { "n", 142994 },	-- Brandal Darkbeard
-							["coord"] = { 66.0, 28.5, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53205, {	-- Arathi Donations: Monelite Ore
-							["provider"] = { "n", 142994 },	-- Brandal Darkbeard
-							["coord"] = { 66.0, 28.5, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53368, {	-- Arathi Donations: Organic Discombobulation Grenade
-							["provider"] = { "n", 143008 },	-- Norber Togglesprocket
-							["coord"] = { 66.3, 25.5, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53224, {	-- Arathi Donations: Seasoned Loins
-							["provider"] = { "n", 142997 },	-- Senedras
-							["coord"] = { 67.0, 27.2, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53216, {	-- Arathi Donations: Shimmerscale
-							["provider"] = { "n", 142995 },	-- Charlane
-							["coord"] = { 67.2, 29.2, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53360, {	-- Arathi Donations: Steelskin Potion
-							["provider"] = { "n", 142993 },	-- Chelsea Strand
-							["coord"] = { 66.7, 23.5, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53239, {	-- Arathi Donations: Straddling Viridium
-							["provider"] = { "n", 143004 },	-- Larold Kyne
-							["coord"] = { 67.6, 24.1, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53226, {	-- Arathi Donations: Tidespray Linen
-							["provider"] = { "n", 142998 },	-- Faella
-							["coord"] = { 67.1, 27.9, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53238, {	-- Arathi Donations: Versatile Kyanite
-							["provider"] = { "n", 143004 },	-- Larold Kyne
-							["coord"] = { 67.6, 24.1, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53334, {	-- Arathi Donations: War Resources
-							["provider"] = { "n", 142700 },	-- Quartermaster Peregrin
-							["coord"] = { 66.1, 27.2, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53237, {	-- Arathi Donations: War-Scroll of Battle Shout
-							["provider"] = { "n", 143005 },	-- Liao
-							["coord"] = { 67.5, 23.8, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53236, {	-- Arathi Donations: War-Scroll of Fortitude
-							["provider"] = { "n", 143005 },	-- Liao
-							["coord"] = { 67.5, 23.8, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53235, {	-- Arathi Donations: War-Scroll of Intellect
-							["provider"] = { "n", 143005 },	-- Liao
-							["coord"] = { 67.5, 23.8, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-
-						q(56136, {	-- Heroic Warfront: The Battle For Stromgarde [Tier 3]
-							["provider"] = { "n", 142721 },	-- Ralston Karn <Recruitment Officer>
-							["coord"] = { 66.01, 26.01, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-							["g"] = {
-								i(169197, {	-- Warfronts Equipment Cache
-									["modID"] = 23,	-- iLvl 430
-									["groups"] = {
-										-- ALLIANCE SET --
-										i(163891),	-- 7th Legionnaire's Aegis
-										i(163884),	-- 7th Legionnaire's Battle Hammer
-										i(163892),	-- 7th Legionnaire's Censer
-										i(163890),	-- 7th Legionnaire's Claymore
-										i(163882),	-- 7th Legionnaire's Dagger
-										i(163885),	-- 7th Legionnaire's Halberd
-										i(163889),	-- 7th Legionnaire's Hand Cannon
-										i(163881),	-- 7th Legionnaire's Longbow
-										i(163887),	-- 7th Legionnaire's Longsword
-										i(163895),	-- 7th Legionnaire's Shield
-										i(166336),	-- 7th Legionnaire's Skullcleaver
-										i(163894),	-- 7th Legionnaire's Spellhammer
-										i(163886),	-- 7th Legionnaire's Stave
-										i(163888),	-- 7th Legionnaire's Wand
-										i(163893),	-- 7th Legionnaire's Warglaive
-										i(163883),	-- 7th Legionnaire's Warhammer
-										i(163246, {	-- 7th Legionnaire's Silk Cloak
-											["classes"] = { PRIEST, MAGE, WARLOCK },
-										}),
-										i(163347, {	-- 7th Legionnaire's Long Cloak
-											["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
-										}),
-										i(163351, {	-- 7th Legionnaire's Chain Drape
-											["classes"] = { HUNTER, SHAMAN },
-										}),
-										i(163355, {	-- 7th Legionnaire's Bloody Drape
-											["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
-										}),
-										i(163339),	-- 7th Legionnaire's Hood
-										i(163337),	-- 7th Legionnaire's Amice
-										i(163248),	-- 7th Legionnaire's Robes
-										i(163275),	-- 7th Legionnaire's Cuffs
-										i(163341),	-- 7th Legionnaire's Handwraps
-										i(163342),	-- 7th Legionnaire's Cord
-										i(163264),	-- 7th Legionnaire's Legwraps
-										i(163253),	-- 7th Legionnaire's Slippers
-										i(163380),	-- 7th Legionnaire's Visage
-										i(163377),	-- 7th Legionnaire's Leather Mantle
-										i(163251),	-- 7th Legionnaire's Vest
-										i(163278),	-- 7th Legionnaire's Bracers
-										i(163256),	-- 7th Legionnaire's Gloves
-										i(163384),	-- 7th Legionnaire's Buckle
-										i(163266),	-- 7th Legionnaire's Britches
-										i(163383),	-- 7th Legionnaire's Boots
-										i(163394),	-- 7th Legionnaire's Helm
-										i(163389),	-- 7th Legionnaire's Monnion
-										i(163398),	-- 7th Legionnaire's Chainmail
-										i(163277),	-- 7th Legionnaire's Bindings
-										i(163397),	-- 7th Legionnaire's Handguards
-										i(163401),	-- 7th Legionnaire's Cincture
-										i(163265),	-- 7th Legionnaire's Leggings
-										i(163400),	-- 7th Legionnaire's Sabatons
-										i(163410),	-- 7th Legionnaire's Headpiece
-										i(163405),	-- 7th Legionnaire's Shoulderplates
-										i(163418),	-- 7th Legionnaire's Chestguard
-										i(163403),	-- 7th Legionnaire's Armguards
-										i(163414),	-- 7th Legionnaire's Gauntlets
-										i(163422),	-- 7th Legionnaire's Greatbelt
-										i(163409),	-- 7th Legionnaire's Legguards
-										i(163421),	-- 7th Legionnaire's Greaves
+								ach(12884, {	-- Leader of Troops (A)
+									["description"] = "You must personally create each troop.  Siege Engines are limited to 3 active at a time.",
+									["races"] = ALLIANCE_ONLY,
+									["g"] = {
+										crit(1),	-- Footmen
+										crit(2),	-- Riflemen
+										crit(3),	-- Priests
+										crit(4),	-- Knights
+										crit(5),	-- Siege Engine
 									},
 								}),
-							},
-						}),
-						q(53175, {	-- The Warfront Looms
-							["races"] = ALLIANCE_ONLY,
-							["isBreadcrumb"] = true,
-							["DisablePartySync"] = true,
-						}),
-						q(53194, {	-- To The Front
-							["provider"] = { "n", 142721 },		-- Ralston Karn
-							["coord"] = { 65.89, 26.03, BORALUS },
-							["altQuests"] = { 53206 },	-- Battle for Stromgarde unlock flag (A)
-							["sourceQuest"] = 53175,	-- The Warfront Looms
-						}),
-						q(53414, {	-- Warfront: The Battle For Stromgarde [Tier 3]
-							["provider"] = { "n", 142721 },	-- Ralston Karn <Recruitment Officer>
-							["coord"] = { 66.01, 26.01, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-							["g"] = {
-								i(164578, {	-- Warfronts Equipment Cache
-									["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_ALLIANCE, 6),	-- iLvl 370
-								}),
-							},
-						}),
-						q(53185, {	-- Warfront Contribution
-							["provider"] = { "n", 142721 },	-- Ralston Karn
-							["sourceQuest"] = 53194,	-- To The Front
-							["coord"] = { 66.0, 26.0, BORALUS },
-							["races"] = ALLIANCE_ONLY,
-						}),
-
-
-						-- Horde Contribution Quests
-						q(52792, {	-- Arathi Donations: Akunda's Bite
-							["provider"] = { "n", 142159 },	-- Zen'kin
-							["coord"] = { 51.2, 95.5, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53248, {	-- Arathi Donations: Battle Flag: Phalanx Defense
-							["provider"] = { "n", 142975 },	-- Seamstress Vessa
-							["coord"] = { 52.5, 93.3, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53365, {	-- Arathi Donations: Battle Flag: Rallying Swiftness
-							["provider"] = { "n", 142975 },	-- Seamstress Vessa
-							["coord"] = { 52.5, 93.3, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53247, {	-- Arathi Donations: Battle Flag: Spirit of Freedom
-							["provider"] = { "n", 142975 },	-- Seamstress Vessa
-							["coord"] = { 52.5, 93.3, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(52928, {	-- Arathi Donations: Coarse Leather
-							["provider"] = { "n", 142970 },	-- Kuma Longhoof
-							["coord"] = { 53.4, 92.6, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53243, {	-- Arathi Donations: Coarse Leather Barding
-							["provider"] = { "n", 142970 },	-- Kuma Longhoof
-							["coord"] = { 53.4, 92.6, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53242, {	-- Arathi Donations: Coastal Healing Potion
-							["provider"] = { "n", 142159 },	-- Zen'kin
-							["coord"] = { 51.2, 95.5, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53241, {	-- Arathi Donations: Coastal Mana Potion
-							["provider"] = { "n", 142159 },	-- Zen'kin
-							["coord"] = { 51.2, 95.5, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53256, {	-- Arathi Donations: Deadly Solstone
-							["provider"] = { "n", 142977 },	-- Meredith Swane
-							["coord"] = { 51.9, 93.1, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53364, {	-- Arathi Donations: Drums of the Maelstrom
-							["provider"] = { "n", 142970 },	-- Kuma Longhoof
-							["coord"] = { 53.4, 92.6, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53254, {	-- Arathi Donations: Enchant Ring - Seal of Critical Strike
-							["provider"] = { "n", 142992 },	-- Uma'wi
-							["coord"] = { 52.7, 93.3, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53253, {	-- Arathi Donations: Enchant Ring - Seal of Versatility
-							["provider"] = { "n", 142992 },	-- Uma'wi
-							["coord"] = { 52.7, 93.3, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53259, {	-- Arathi Donations: F.R.I.E.D.
-							["provider"] = { "n", 142983 },	-- Swizzle Fizzcrank
-							["coord"] = { 53.0, 94.8, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53261, {	-- Arathi Donations: Frost-Laced Ammunition
-							["provider"] = { "n", 142983 },	-- Swizzle Fizzcrank
-							["coord"] = { 53.0, 94.8, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53255, {	-- Arathi Donations: Gloom Dust
-							["provider"] = { "n", 142992 },	-- Uma'wi
-							["coord"] = { 52.7, 93.3, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(52930, {	-- Arathi Donations: Gold
-							["provider"] = { "n", 142157 },	-- Paymaster Grintooth
-							["coord"] = { 51.7, 95.4, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53264, {	-- Arathi Donations: Great Sea Catfish
-							["provider"] = { "n", 142973 },	-- Mai-Lu
-							["coord"] = { 53.8, 94.4, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53263, {	-- Arathi Donations: Grilled Catfish
-							["provider"] = { "n", 142973 },	-- Mai-Lu
-							["coord"] = { 53.8, 94.4, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53260, {	-- Arathi Donations: Incendiary Ammunition
-							["provider"] = { "n", 142983 },	-- Swizzle Fizzcrank
-							["coord"] = { 53.0, 94.8, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53362, {	-- Arathi Donations: Meaty Haunch
-							["provider"] = { "n", 142973 },	-- Mai-Lu
-							["coord"] = { 53.8, 94.4, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53245, {	-- Arathi Donations: Monel-Hardened Hoofplates
-							["provider"] = { "n", 142969 },	-- Logarr
-							["coord"] = { 52.6, 94.8, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53246, {	-- Arathi Donations: Monel-Hardened Stirrups
-							["provider"] = { "n", 142969 },	-- Logarr
-							["coord"] = { 52.6, 94.8, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(52929, {	-- Arathi Donations: Monelite Ore
-							["provider"] = { "n", 142969 },	-- Logarr
-							["coord"] = { 52.6, 94.8, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53367, {	-- Arathi Donations: Organic Discombobulation Grenade
-							["provider"] = { "n", 142983 },	-- Swizzle Fizzcrank
-							["coord"] = { 53.0, 94.8, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53262, {	-- Arathi Donations: Seasoned Loins
-							["provider"] = { "n", 142973 },	-- Mai-Lu
-							["coord"] = { 53.8, 94.4, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53244, {	-- Arathi Donations: Shimmerscale
-							["provider"] = { "n", 142970 },	-- Kuma Longhoof
-							["coord"] = { 53.4, 92.6, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53359, {	-- Arathi Donations: Steelskin Potion
-							["provider"] = { "n", 142159 },	-- Zen'kin
-							["coord"] = { 51.2, 95.5, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53258, {	-- Arathi Donations: Straddling Viridium
-							["provider"] = { "n", 142977 },	-- Meredith Swane
-							["coord"] = { 51.9, 93.1, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53249, {	-- Arathi Donations: Tidespray Linen
-							["provider"] = { "n", 142975 },	-- Seamstress Vessa
-							["coord"] = { 52.5, 93.3, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53257, {	-- Arathi Donations: Versatile Kyanite
-							["provider"] = { "n", 142977 },	-- Meredith Swane
-							["coord"] = { 51.9, 93.1, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53335, {	-- Arathi Donations: War Resources
-							["provider"] = { "n", 142158 },	-- Quartermaster Rauka
-							["coord"] = { 51.7, 95.1, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53251, {	-- Arathi Donations: War-Scroll of Battle Shout
-							["provider"] = { "n", 142981 },	-- Merill Redgrave
-							["coord"] = { 53.6, 92.1, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53250, {	-- Arathi Donations: War-Scroll of Fortitude
-							["provider"] = { "n", 142981 },	-- Merill Redgrave
-							["coord"] = { 53.6, 92.1, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(53252, {	-- Arathi Donations: War-Scroll of Intellect
-							["provider"] = { "n", 142981 },	-- Merill Redgrave
-							["coord"] = { 53.6, 92.1, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(56137, {	-- Heroic Warfront: The Battle For Stromgarde [Tier 3]
-							["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
-							["sourceQuests"] = { 53212 },	-- Back to Zuldazar
-							["coord"] = { 52.9, 94.3, DAZARALOR },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-							["g"] = {
-								i(169196, {	-- Warfronts Equipment Cache
-									["modID"] = 23,	-- iLvl 430
-									["groups"] = {
-										-- HORDE SET --
-										i(163878),	-- Honorbound Barrier
-										i(163870),	-- Honorbound Bonebreaker
-										i(163868),	-- Honorbound Dagger
-										i(163874),	-- Honorbound Decapitator
-										i(163876),	-- Honorbound Focus
-										i(163880),	-- Honorbound Gladius
-										i(163867),	-- Honorbound Longbow
-										i(163871),	-- Honorbound Pigsticker
-										i(163879),	-- Honorbound Portable Cannon
-										i(163875),	-- Honorbound Protectorate
-										i(163866),	-- Honorbound Skullcleaver
-										i(163869),	-- Honorbound Skullcrusher
-										i(163873),	-- Honorbound Wand
-										i(163872),	-- Honorbound War Staff
-										i(163877),	-- Honorbound Warglaive
-										i(163357, {	-- Honorbound Artificer's Cloak
-											["classes"] = {
-												PRIEST,
-												MAGE,
-												WARLOCK,
-											},
-										}),
-										i(163360, {	-- Honorbound Outrider's Drape
-											["classes"] = {
-												DRUID,
-												ROGUE,
-												MONK,
-												DEMONHUNTER,
-											},
-										}),
-										i(163366, {	-- Honorbound Vanguard's Cloak
-											["classes"] = {
-												HUNTER,
-												SHAMAN,
-											},
-										}),
-										i(163368, {	-- Honorbound Centurion's Long Cloak
-											["classes"] = {
-												PALADIN,
-												WARRIOR,
-												DEATHKNIGHT,
-											},
-										}),
-										i(163426),	-- Honorbound Artificer's Guise
-										i(163424),	-- Honorbound Artificer's Amice
-										i(163280),	-- Honorbound Artificer's Robes
-										i(163306),	-- Honorbound Artificer's Cuffs
-										i(163428),	-- Honorbound Artificer's Mitts
-										i(163430),	-- Honorbound Artificer's Cord
-										i(163296),	-- Honorbound Artificer's Legwraps
-										i(163285),	-- Honorbound Artificer's Sandals
-										i(163435),	-- Honorbound Outrider's Headpiece
-										i(163432),	-- Honorbound Outrider's Shoulderguards
-										i(163283),	-- Honorbound Outrider's Tunic
-										i(163309),	-- Honorbound Outrider's Bracers
-										i(163437),	-- Honorbound Outrider's Gloves
-										i(163439),	-- Honorbound Outrider's Buckle
-										i(163298),	-- Honorbound Outrider's Pants
-										i(163438),	-- Honorbound Outrider's Boots
-										i(163446),	-- Honorbound Vanguard's Skullguard
-										i(163441),	-- Honorbound Vanguard's Shoulderguards
-										i(163282),	-- Honorbound Vanguard's Chainmail
-										i(163308),	-- Honorbound Vanguard's Bindings
-										i(163448),	-- Honorbound Vanguard's Handguards
-										i(163451),	-- Honorbound Vanguard's Clasp
-										i(163445),	-- Honorbound Vanguard's Leggings
-										i(163449),	-- Honorbound Vanguard's Sabatons
-										i(163456),	-- Honorbound Centurion's Greathelm
-										i(163453),	-- Honorbound Centurion's Shoulderplates
-										i(163459),	-- Honorbound Centurion's Breastplate
-										i(163307),	-- Honorbound Centurion's Vambraces
-										i(163458),	-- Honorbound Centurion's Gauntlets
-										i(163461),	-- Honorbound Centurion's Greatbelt
-										i(163455),	-- Honorbound Centurion's Legplates
-										i(163460),	-- Honorbound Centurion's Greaves
+								ach(12878, {	-- Leader of Troops (H)
+									["description"] = "You must personally create each troop.  Demolishers are limited to 3 active at a time.",
+									["races"] = HORDE_ONLY,
+									["g"] = {
+										crit(1),	-- Grunts
+										crit(2),	-- Axe Throwers
+										crit(3),	-- Shaman
+										crit(4),	-- Raiders
+										crit(5),	-- Demolishers
 									},
 								}),
-							},
-						}),
-						q(53207, {	-- The Warfront Looms
-							["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
-							["coord"] = { 52.97, 94.35, DAZARALOR },
-							["sourceQuests"] = { 52451 },	-- Uniting Zandalar
-							["isBreadcrumb"] = true,
-							["DisablePartySync"] = true,
-							["description"] = "Automatically granted upon completing Uniting Zandalar to unlock World Quests.  If it doesn't pop up, relog.  I had to relog twice to receive this quest.",
-							["races"] = HORDE_ONLY,
-						}),
-						q(53208, {	-- To The Front
-							["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
-							["altQuests"] = { 53220 },	-- Battle for Stromgarde unlock flag
-							["sourceQuest"] = 53207,	-- The Warfront Looms
-							["coord"] = { 52.9, 94.4, DAZARALOR },
-							["races"] = HORDE_ONLY,
-						}),
-						q(53416, {	-- Warfront: The Battle For Stromgarde [Tier 3]
-							["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
-							["sourceQuest"] = 53212,	-- Back to Zuldazar
-							["coord"] = { 52.97, 94.35, DAZARALOR },
-							["isWeekly"] = true,
-							["races"] = HORDE_ONLY,
-							["g"] = {
-								i(164577, {	-- Warfronts Equipment Cache
-									["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_HORDE, 6),	-- iLvl 370
+								ach(12889, {	-- Strike Fast (A)
+									["description"] = "You must personally capture each flag.",
+									["races"] = ALLIANCE_ONLY,
+									["g"] = {
+										ach(12888, {	-- Strike Hard
+											["races"] = ALLIANCE_ONLY,
+										}),
+										crit(1),	-- Galson's Lode
+										crit(2),	-- Highlands Mill
+										crit(3),	-- Valorcall Pass
+										crit(4),	-- High Perch
+										crit(5),	-- Newstead
+										crit(6),	-- Circle of Elements
+										crit(7),	-- Northfold Crossing
+									},
 								}),
-							},
-						}),
-						q(53209, {	-- Warfront Contribution
-							["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
-							["coord"] = { 53.0, 94.3, DAZARALOR },
-							["races"] = HORDE_ONLY,
-						}),
-						-- INCURSIONS INFO STARTS HERE
-						i(165871, {	-- Honorbound Equipment Cache (awarded for all incursions)
-							["description"] = "This cache is awarded for completing any incursion on a Horde character.",
-							["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_HORDE, 5),	-- iLvl 340
-						}),
+								ach(12876, {	-- Strike Fast (H)
+									["description"] = "You must personally capture each flag.",
+									["races"] = HORDE_ONLY,
+									["g"] = {
+										ach(12877, {	-- Strike Hard
+											["races"] = HORDE_ONLY,
+										}),
+										crit(1),	-- Circle of Elements
+										crit(2),	-- Hatchet Ridge
+										crit(3),	-- High Perch
+										crit(4),	-- Northfold Crossing
+										crit(5),	-- Newstead
+										crit(6),	-- Valorcall Pass
+										crit(7),	-- Drywhisker Mine
+									},
+								}),
+								ach(12886, {	-- Tour of War (A)
+									["description"] = "Only one commander is up per warfront cycle.",
+									["races"] = ALLIANCE_ONLY,
+									["g"] = {
+										crit(1),	-- Eitrigg
+										crit(2),	-- Lady Liadrin
+										crit(3),	-- Rokhan
+									},
+								}),
+								ach(12879, {	-- Tour of War (H)
+									["description"] = "Only one commander is up per warfront cycle.",
+									["races"] = HORDE_ONLY,
+									["g"] = {
+										crit(1),	-- Danath Trollbane
+										crit(2),	-- Turalyon
+										crit(3),	-- Muradin
+									},
+								}),
+								ach(12881, {	-- War is Hell (A)
+									["races"] = ALLIANCE_ONLY,
+								}),
+								ach(12873, {	-- War is Hell (H)
+									["races"] = HORDE_ONLY,
+								}),
+							}),
+							n(QUESTS, {
+								q(53195, {	-- Arathi Donations: Akunda's Bite
+									["provider"] = { "n", 142993 },	-- Chelsea Strand
+									["coord"] = { 66.7, 23.5, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53228, {	-- Arathi Donations: Battle Flag: Phalanx Defense
+									["provider"] = { "n", 142998 },	-- Faella
+									["coord"] = { 67.1, 27.9, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53366, {	-- Arathi Donations: Battle Flag: Rallying Swiftness
+									["provider"] = { "n", 142998 },	-- Faella
+									["coord"] = { 67.1, 27.9, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53227, {	-- Arathi Donations: Battle Flag: Spirit of Freedom
+									["provider"] = { "n", 142998 },	-- Faella
+									["coord"] = { 67.1, 27.9, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53159, {	-- Arathi Donations: Coarse Leather
+									["provider"] = { "n", 142995 },	-- Charlane
+									["coord"] = { 67.2, 29.2, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53217, {	-- Arathi Donations: Coarse Leather Barding
+									["provider"] = { "n", 142995 },	-- Charlane
+									["coord"] = { 67.2, 29.2, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53211, {	-- Arathi Donations: Coastal Healing Potion
+									["provider"] = { "n", 142993 },	-- Chelsea Strand
+									["coord"] = { 66.7, 23.5, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53213, {	-- Arathi Donations: Coastal Mana Potion
+									["provider"] = { "n", 142993 },	-- Chelsea Strand
+									["coord"] = { 66.7, 23.5, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53240, {	-- Arathi Donations: Deadly Solstone
+									["provider"] = { "n", 143004 },	-- Larold Kyne
+									["coord"] = { 67.6, 24.1, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53363, {	-- Arathi Donations: Drums of the Maelstrom
+									["provider"] = { "n", 142995 },	-- Charlane
+									["coord"] = { 67.2, 29.2, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53229, {	-- Arathi Donations: Enchant Ring - Seal of Critical Strike
+									["provider"] = { "n", 143007 },	-- Mae Wagglewand
+									["coord"] = { 66.3, 25.1, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53230, {	-- Arathi Donations: Enchant Ring - Seal of Versatility
+									["provider"] = { "n", 143007 },	-- Mae Wagglewand
+									["coord"] = { 66.3, 25.1, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53234, {	-- Arathi Donations: F.R.I.E.D.
+									["provider"] = { "n", 143008 },	-- Norber Togglesprocket
+									["coord"] = { 66.3, 25.5, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53233, {	-- Arathi Donations: Frost-Laced Ammunition
+									["provider"] = { "n", 143008 },	-- Norber Togglesprocket
+									["coord"] = { 66.3, 25.5, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53231, {	-- Arathi Donations: Gloom Dust
+									["provider"] = { "n", 143007 },	-- Mae Wagglewand
+									["coord"] = { 66.3, 25.1, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53265, {	-- Arathi Donations: Gold
+									["provider"] = { "n", 142685 },	-- Paymaster Vauldren
+									["coord"] = { 66.2, 27.6, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53225, {	-- Arathi Donations: Great Sea Catfish
+									["provider"] = { "n", 142997 },	-- Senedras
+									["coord"] = { 67.0, 27.2, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53223, {	-- Arathi Donations: Grilled Catfish
+									["provider"] = { "n", 142997 },	-- Senedras
+									["coord"] = { 67.0, 27.2, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53232, {	-- Arathi Donations: Incendiary Ammunition
+									["provider"] = { "n", 143008 },	-- Norber Togglesprocket
+									["coord"] = { 66.3, 25.5, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53361, {	-- Arathi Donations: Meaty Haunch
+									["provider"] = { "n", 142997 },	-- Senedras
+									["coord"] = { 67.0, 27.2, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53218, {	-- Arathi Donations: Monel-Hardened Hoofplates
+									["provider"] = { "n", 142994 },	-- Brandal Darkbeard
+									["coord"] = { 66.0, 28.5, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53219, {	-- Arathi Donations: Monel-Hardened Stirrups
+									["provider"] = { "n", 142994 },	-- Brandal Darkbeard
+									["coord"] = { 66.0, 28.5, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53205, {	-- Arathi Donations: Monelite Ore
+									["provider"] = { "n", 142994 },	-- Brandal Darkbeard
+									["coord"] = { 66.0, 28.5, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53368, {	-- Arathi Donations: Organic Discombobulation Grenade
+									["provider"] = { "n", 143008 },	-- Norber Togglesprocket
+									["coord"] = { 66.3, 25.5, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53224, {	-- Arathi Donations: Seasoned Loins
+									["provider"] = { "n", 142997 },	-- Senedras
+									["coord"] = { 67.0, 27.2, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53216, {	-- Arathi Donations: Shimmerscale
+									["provider"] = { "n", 142995 },	-- Charlane
+									["coord"] = { 67.2, 29.2, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53360, {	-- Arathi Donations: Steelskin Potion
+									["provider"] = { "n", 142993 },	-- Chelsea Strand
+									["coord"] = { 66.7, 23.5, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53239, {	-- Arathi Donations: Straddling Viridium
+									["provider"] = { "n", 143004 },	-- Larold Kyne
+									["coord"] = { 67.6, 24.1, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53226, {	-- Arathi Donations: Tidespray Linen
+									["provider"] = { "n", 142998 },	-- Faella
+									["coord"] = { 67.1, 27.9, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53238, {	-- Arathi Donations: Versatile Kyanite
+									["provider"] = { "n", 143004 },	-- Larold Kyne
+									["coord"] = { 67.6, 24.1, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53334, {	-- Arathi Donations: War Resources
+									["provider"] = { "n", 142700 },	-- Quartermaster Peregrin
+									["coord"] = { 66.1, 27.2, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53237, {	-- Arathi Donations: War-Scroll of Battle Shout
+									["provider"] = { "n", 143005 },	-- Liao
+									["coord"] = { 67.5, 23.8, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53236, {	-- Arathi Donations: War-Scroll of Fortitude
+									["provider"] = { "n", 143005 },	-- Liao
+									["coord"] = { 67.5, 23.8, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53235, {	-- Arathi Donations: War-Scroll of Intellect
+									["provider"] = { "n", 143005 },	-- Liao
+									["coord"] = { 67.5, 23.8, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
 
-						q(53198, {	-- Back to Boralus
-							["provider"] = { "n", 143018 },	-- Captain Roderick Brewston
-							["altQuests"] = { 53206 },	-- Battle for Stromgarde unlock flag (A)
-							["sourceQuest"] = 53197,	-- Touring the Front
-							["coord"] = { 19.26, 61.77, ARATHI_HIGHLANDS },
-							["races"] = ALLIANCE_ONLY,
-							["isBreadcrumb"] = true,
-						}),
-						q(53212, {	-- Back to Zuldazar
-							["provider"] = { "n", 143019 },	-- Wistel Sliversnitch
-							["altQuests"] = { 53220 },	-- Battle for Stromgarde unlock flag (H)
-							["sourceQuest"] = 53210,	-- Touring the Front
-							["coord"] = { 26.11, 35.59, ARATHI_HIGHLANDS },
-							["races"] = HORDE_ONLY,
-							["isBreadcrumb"] = true,
-						}),
-						q(53153, {	-- Death to the Defilers
-							["providers"] = {
-								{ "n", 143172 },	-- Yvera Dawnwing [Arathi Highlands Location]
-								{ "n", 143380 },	-- Yvera Dawnwing [Boralus Location]
-							},
-							["sourceQuest"] = 53198,	-- Back to Boralus
-							["coord"] = { 21.71, 64.88, ARATHI_HIGHLANDS },
-							["races"] = ALLIANCE_ONLY,
-							["repeatable"] = true,
-							["u"] = REMOVED_FROM_GAME,
-							["g"] = {
-								i(164578, {	-- Warfronts Equipment Cache
-									["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_ALLIANCE, 5),	-- iLvl 340
+								q(56136, {	-- Heroic Warfront: The Battle For Stromgarde [Tier 3]
+									["provider"] = { "n", 142721 },	-- Ralston Karn <Recruitment Officer>
+									["coord"] = { 66.01, 26.01, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+									["g"] = {
+										i(169197, {	-- Warfronts Equipment Cache
+											["modID"] = 23,	-- iLvl 430
+											["groups"] = {
+												-- ALLIANCE SET --
+												i(163891),	-- 7th Legionnaire's Aegis
+												i(163884),	-- 7th Legionnaire's Battle Hammer
+												i(163892),	-- 7th Legionnaire's Censer
+												i(163890),	-- 7th Legionnaire's Claymore
+												i(163882),	-- 7th Legionnaire's Dagger
+												i(163885),	-- 7th Legionnaire's Halberd
+												i(163889),	-- 7th Legionnaire's Hand Cannon
+												i(163881),	-- 7th Legionnaire's Longbow
+												i(163887),	-- 7th Legionnaire's Longsword
+												i(163895),	-- 7th Legionnaire's Shield
+												i(166336),	-- 7th Legionnaire's Skullcleaver
+												i(163894),	-- 7th Legionnaire's Spellhammer
+												i(163886),	-- 7th Legionnaire's Stave
+												i(163888),	-- 7th Legionnaire's Wand
+												i(163893),	-- 7th Legionnaire's Warglaive
+												i(163883),	-- 7th Legionnaire's Warhammer
+												i(163246, {	-- 7th Legionnaire's Silk Cloak
+													["classes"] = { PRIEST, MAGE, WARLOCK },
+												}),
+												i(163347, {	-- 7th Legionnaire's Long Cloak
+													["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
+												}),
+												i(163351, {	-- 7th Legionnaire's Chain Drape
+													["classes"] = { HUNTER, SHAMAN },
+												}),
+												i(163355, {	-- 7th Legionnaire's Bloody Drape
+													["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
+												}),
+												i(163339),	-- 7th Legionnaire's Hood
+												i(163337),	-- 7th Legionnaire's Amice
+												i(163248),	-- 7th Legionnaire's Robes
+												i(163275),	-- 7th Legionnaire's Cuffs
+												i(163341),	-- 7th Legionnaire's Handwraps
+												i(163342),	-- 7th Legionnaire's Cord
+												i(163264),	-- 7th Legionnaire's Legwraps
+												i(163253),	-- 7th Legionnaire's Slippers
+												i(163380),	-- 7th Legionnaire's Visage
+												i(163377),	-- 7th Legionnaire's Leather Mantle
+												i(163251),	-- 7th Legionnaire's Vest
+												i(163278),	-- 7th Legionnaire's Bracers
+												i(163256),	-- 7th Legionnaire's Gloves
+												i(163384),	-- 7th Legionnaire's Buckle
+												i(163266),	-- 7th Legionnaire's Britches
+												i(163383),	-- 7th Legionnaire's Boots
+												i(163394),	-- 7th Legionnaire's Helm
+												i(163389),	-- 7th Legionnaire's Monnion
+												i(163398),	-- 7th Legionnaire's Chainmail
+												i(163277),	-- 7th Legionnaire's Bindings
+												i(163397),	-- 7th Legionnaire's Handguards
+												i(163401),	-- 7th Legionnaire's Cincture
+												i(163265),	-- 7th Legionnaire's Leggings
+												i(163400),	-- 7th Legionnaire's Sabatons
+												i(163410),	-- 7th Legionnaire's Headpiece
+												i(163405),	-- 7th Legionnaire's Shoulderplates
+												i(163418),	-- 7th Legionnaire's Chestguard
+												i(163403),	-- 7th Legionnaire's Armguards
+												i(163414),	-- 7th Legionnaire's Gauntlets
+												i(163422),	-- 7th Legionnaire's Greatbelt
+												i(163409),	-- 7th Legionnaire's Legguards
+												i(163421),	-- 7th Legionnaire's Greaves
+											},
+										}),
+									},
 								}),
-							},
-						}),
-						q(53197, {	-- Touring the Front (A)
-							["provider"] = { "n", 143018 },		-- Captain Roderick Brewston
-							["altQuests"] = { 53206 },	-- Battle for Stromgarde unlock flag (A)
-							["sourceQuest"] = 53194,	-- To The Front
-							["coord"] = { 19.26, 61.77, ARATHI_HIGHLANDS },
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(53210, {	-- Touring the Front (H)
-							["provider"] = { "n", 143019 },	-- Wistel Sliversnitch
-							["altQuests"] = { 53220 },	-- Battle for Stromgarde unlock flag (H)
-							["sourceQuest"] = 53208,	-- To The Front
-							["coord"] = { 26.1, 35.5, ARATHI_HIGHLANDS },
-							["races"] = HORDE_ONLY,
-						}),
-						q(53154, {	-- The League Will Lose [Horde]
-							["u"] = REMOVED_FROM_GAME,
-							["races"] = HORDE_ONLY,
-							["repeatable"] = true,
-							["g"] = {
-								i(164577, {	-- Warfronts Equipment Cache
+								q(53175, {	-- The Warfront Looms
+									["races"] = ALLIANCE_ONLY,
+									["isBreadcrumb"] = true,
+									["DisablePartySync"] = true,
+								}),
+								q(53194, {	-- To The Front
+									["provider"] = { "n", 142721 },		-- Ralston Karn
+									["coord"] = { 65.89, 26.03, BORALUS },
+									["altQuests"] = { 53206 },	-- Battle for Stromgarde unlock flag (A)
+									["sourceQuest"] = 53175,	-- The Warfront Looms
+								}),
+								q(53414, {	-- Warfront: The Battle For Stromgarde [Tier 3]
+									["provider"] = { "n", 142721 },	-- Ralston Karn <Recruitment Officer>
+									["coord"] = { 66.01, 26.01, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+									["g"] = {
+										i(164578, {	-- Warfronts Equipment Cache
+											["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_ALLIANCE, 6),	-- iLvl 370
+										}),
+									},
+								}),
+								q(53185, {	-- Warfront Contribution
+									["provider"] = { "n", 142721 },	-- Ralston Karn
+									["sourceQuest"] = 53194,	-- To The Front
+									["coord"] = { 66.0, 26.0, BORALUS },
+									["races"] = ALLIANCE_ONLY,
+								}),
+
+
+								-- Horde Contribution Quests
+								q(52792, {	-- Arathi Donations: Akunda's Bite
+									["provider"] = { "n", 142159 },	-- Zen'kin
+									["coord"] = { 51.2, 95.5, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53248, {	-- Arathi Donations: Battle Flag: Phalanx Defense
+									["provider"] = { "n", 142975 },	-- Seamstress Vessa
+									["coord"] = { 52.5, 93.3, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53365, {	-- Arathi Donations: Battle Flag: Rallying Swiftness
+									["provider"] = { "n", 142975 },	-- Seamstress Vessa
+									["coord"] = { 52.5, 93.3, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53247, {	-- Arathi Donations: Battle Flag: Spirit of Freedom
+									["provider"] = { "n", 142975 },	-- Seamstress Vessa
+									["coord"] = { 52.5, 93.3, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(52928, {	-- Arathi Donations: Coarse Leather
+									["provider"] = { "n", 142970 },	-- Kuma Longhoof
+									["coord"] = { 53.4, 92.6, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53243, {	-- Arathi Donations: Coarse Leather Barding
+									["provider"] = { "n", 142970 },	-- Kuma Longhoof
+									["coord"] = { 53.4, 92.6, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53242, {	-- Arathi Donations: Coastal Healing Potion
+									["provider"] = { "n", 142159 },	-- Zen'kin
+									["coord"] = { 51.2, 95.5, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53241, {	-- Arathi Donations: Coastal Mana Potion
+									["provider"] = { "n", 142159 },	-- Zen'kin
+									["coord"] = { 51.2, 95.5, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53256, {	-- Arathi Donations: Deadly Solstone
+									["provider"] = { "n", 142977 },	-- Meredith Swane
+									["coord"] = { 51.9, 93.1, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53364, {	-- Arathi Donations: Drums of the Maelstrom
+									["provider"] = { "n", 142970 },	-- Kuma Longhoof
+									["coord"] = { 53.4, 92.6, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53254, {	-- Arathi Donations: Enchant Ring - Seal of Critical Strike
+									["provider"] = { "n", 142992 },	-- Uma'wi
+									["coord"] = { 52.7, 93.3, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53253, {	-- Arathi Donations: Enchant Ring - Seal of Versatility
+									["provider"] = { "n", 142992 },	-- Uma'wi
+									["coord"] = { 52.7, 93.3, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53259, {	-- Arathi Donations: F.R.I.E.D.
+									["provider"] = { "n", 142983 },	-- Swizzle Fizzcrank
+									["coord"] = { 53.0, 94.8, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53261, {	-- Arathi Donations: Frost-Laced Ammunition
+									["provider"] = { "n", 142983 },	-- Swizzle Fizzcrank
+									["coord"] = { 53.0, 94.8, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53255, {	-- Arathi Donations: Gloom Dust
+									["provider"] = { "n", 142992 },	-- Uma'wi
+									["coord"] = { 52.7, 93.3, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(52930, {	-- Arathi Donations: Gold
+									["provider"] = { "n", 142157 },	-- Paymaster Grintooth
+									["coord"] = { 51.7, 95.4, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53264, {	-- Arathi Donations: Great Sea Catfish
+									["provider"] = { "n", 142973 },	-- Mai-Lu
+									["coord"] = { 53.8, 94.4, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53263, {	-- Arathi Donations: Grilled Catfish
+									["provider"] = { "n", 142973 },	-- Mai-Lu
+									["coord"] = { 53.8, 94.4, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53260, {	-- Arathi Donations: Incendiary Ammunition
+									["provider"] = { "n", 142983 },	-- Swizzle Fizzcrank
+									["coord"] = { 53.0, 94.8, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53362, {	-- Arathi Donations: Meaty Haunch
+									["provider"] = { "n", 142973 },	-- Mai-Lu
+									["coord"] = { 53.8, 94.4, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53245, {	-- Arathi Donations: Monel-Hardened Hoofplates
+									["provider"] = { "n", 142969 },	-- Logarr
+									["coord"] = { 52.6, 94.8, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53246, {	-- Arathi Donations: Monel-Hardened Stirrups
+									["provider"] = { "n", 142969 },	-- Logarr
+									["coord"] = { 52.6, 94.8, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(52929, {	-- Arathi Donations: Monelite Ore
+									["provider"] = { "n", 142969 },	-- Logarr
+									["coord"] = { 52.6, 94.8, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53367, {	-- Arathi Donations: Organic Discombobulation Grenade
+									["provider"] = { "n", 142983 },	-- Swizzle Fizzcrank
+									["coord"] = { 53.0, 94.8, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53262, {	-- Arathi Donations: Seasoned Loins
+									["provider"] = { "n", 142973 },	-- Mai-Lu
+									["coord"] = { 53.8, 94.4, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53244, {	-- Arathi Donations: Shimmerscale
+									["provider"] = { "n", 142970 },	-- Kuma Longhoof
+									["coord"] = { 53.4, 92.6, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53359, {	-- Arathi Donations: Steelskin Potion
+									["provider"] = { "n", 142159 },	-- Zen'kin
+									["coord"] = { 51.2, 95.5, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53258, {	-- Arathi Donations: Straddling Viridium
+									["provider"] = { "n", 142977 },	-- Meredith Swane
+									["coord"] = { 51.9, 93.1, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53249, {	-- Arathi Donations: Tidespray Linen
+									["provider"] = { "n", 142975 },	-- Seamstress Vessa
+									["coord"] = { 52.5, 93.3, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53257, {	-- Arathi Donations: Versatile Kyanite
+									["provider"] = { "n", 142977 },	-- Meredith Swane
+									["coord"] = { 51.9, 93.1, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53335, {	-- Arathi Donations: War Resources
+									["provider"] = { "n", 142158 },	-- Quartermaster Rauka
+									["coord"] = { 51.7, 95.1, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53251, {	-- Arathi Donations: War-Scroll of Battle Shout
+									["provider"] = { "n", 142981 },	-- Merill Redgrave
+									["coord"] = { 53.6, 92.1, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53250, {	-- Arathi Donations: War-Scroll of Fortitude
+									["provider"] = { "n", 142981 },	-- Merill Redgrave
+									["coord"] = { 53.6, 92.1, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(53252, {	-- Arathi Donations: War-Scroll of Intellect
+									["provider"] = { "n", 142981 },	-- Merill Redgrave
+									["coord"] = { 53.6, 92.1, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(56137, {	-- Heroic Warfront: The Battle For Stromgarde [Tier 3]
+									["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
+									["sourceQuests"] = { 53212 },	-- Back to Zuldazar
+									["coord"] = { 52.9, 94.3, DAZARALOR },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+									["g"] = {
+										i(169196, {	-- Warfronts Equipment Cache
+											["modID"] = 23,	-- iLvl 430
+											["groups"] = {
+												-- HORDE SET --
+												i(163878),	-- Honorbound Barrier
+												i(163870),	-- Honorbound Bonebreaker
+												i(163868),	-- Honorbound Dagger
+												i(163874),	-- Honorbound Decapitator
+												i(163876),	-- Honorbound Focus
+												i(163880),	-- Honorbound Gladius
+												i(163867),	-- Honorbound Longbow
+												i(163871),	-- Honorbound Pigsticker
+												i(163879),	-- Honorbound Portable Cannon
+												i(163875),	-- Honorbound Protectorate
+												i(163866),	-- Honorbound Skullcleaver
+												i(163869),	-- Honorbound Skullcrusher
+												i(163873),	-- Honorbound Wand
+												i(163872),	-- Honorbound War Staff
+												i(163877),	-- Honorbound Warglaive
+												i(163357, {	-- Honorbound Artificer's Cloak
+													["classes"] = {
+														PRIEST,
+														MAGE,
+														WARLOCK,
+													},
+												}),
+												i(163360, {	-- Honorbound Outrider's Drape
+													["classes"] = {
+														DRUID,
+														ROGUE,
+														MONK,
+														DEMONHUNTER,
+													},
+												}),
+												i(163366, {	-- Honorbound Vanguard's Cloak
+													["classes"] = {
+														HUNTER,
+														SHAMAN,
+													},
+												}),
+												i(163368, {	-- Honorbound Centurion's Long Cloak
+													["classes"] = {
+														PALADIN,
+														WARRIOR,
+														DEATHKNIGHT,
+													},
+												}),
+												i(163426),	-- Honorbound Artificer's Guise
+												i(163424),	-- Honorbound Artificer's Amice
+												i(163280),	-- Honorbound Artificer's Robes
+												i(163306),	-- Honorbound Artificer's Cuffs
+												i(163428),	-- Honorbound Artificer's Mitts
+												i(163430),	-- Honorbound Artificer's Cord
+												i(163296),	-- Honorbound Artificer's Legwraps
+												i(163285),	-- Honorbound Artificer's Sandals
+												i(163435),	-- Honorbound Outrider's Headpiece
+												i(163432),	-- Honorbound Outrider's Shoulderguards
+												i(163283),	-- Honorbound Outrider's Tunic
+												i(163309),	-- Honorbound Outrider's Bracers
+												i(163437),	-- Honorbound Outrider's Gloves
+												i(163439),	-- Honorbound Outrider's Buckle
+												i(163298),	-- Honorbound Outrider's Pants
+												i(163438),	-- Honorbound Outrider's Boots
+												i(163446),	-- Honorbound Vanguard's Skullguard
+												i(163441),	-- Honorbound Vanguard's Shoulderguards
+												i(163282),	-- Honorbound Vanguard's Chainmail
+												i(163308),	-- Honorbound Vanguard's Bindings
+												i(163448),	-- Honorbound Vanguard's Handguards
+												i(163451),	-- Honorbound Vanguard's Clasp
+												i(163445),	-- Honorbound Vanguard's Leggings
+												i(163449),	-- Honorbound Vanguard's Sabatons
+												i(163456),	-- Honorbound Centurion's Greathelm
+												i(163453),	-- Honorbound Centurion's Shoulderplates
+												i(163459),	-- Honorbound Centurion's Breastplate
+												i(163307),	-- Honorbound Centurion's Vambraces
+												i(163458),	-- Honorbound Centurion's Gauntlets
+												i(163461),	-- Honorbound Centurion's Greatbelt
+												i(163455),	-- Honorbound Centurion's Legplates
+												i(163460),	-- Honorbound Centurion's Greaves
+											},
+										}),
+									},
+								}),
+								q(53207, {	-- The Warfront Looms
+									["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
+									["coord"] = { 52.97, 94.35, DAZARALOR },
+									["sourceQuests"] = { 52451 },	-- Uniting Zandalar
+									["isBreadcrumb"] = true,
+									["DisablePartySync"] = true,
+									["description"] = "Automatically granted upon completing Uniting Zandalar to unlock World Quests.  If it doesn't pop up, relog.  I had to relog twice to receive this quest.",
+									["races"] = HORDE_ONLY,
+								}),
+								q(53208, {	-- To The Front
+									["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
+									["altQuests"] = { 53220 },	-- Battle for Stromgarde unlock flag
+									["sourceQuest"] = 53207,	-- The Warfront Looms
+									["coord"] = { 52.9, 94.4, DAZARALOR },
+									["races"] = HORDE_ONLY,
+								}),
+								q(53416, {	-- Warfront: The Battle For Stromgarde [Tier 3]
+									["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
+									["sourceQuest"] = 53212,	-- Back to Zuldazar
+									["coord"] = { 52.97, 94.35, DAZARALOR },
+									["isWeekly"] = true,
+									["races"] = HORDE_ONLY,
+									["g"] = {
+										i(164577, {	-- Warfronts Equipment Cache
+											["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_HORDE, 6),	-- iLvl 370
+										}),
+									},
+								}),
+								q(53209, {	-- Warfront Contribution
+									["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
+									["coord"] = { 53.0, 94.3, DAZARALOR },
+									["races"] = HORDE_ONLY,
+								}),
+								-- INCURSIONS INFO STARTS HERE
+								i(165871, {	-- Honorbound Equipment Cache (awarded for all incursions)
+									["description"] = "This cache is awarded for completing any incursion on a Horde character.",
 									["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_HORDE, 5),	-- iLvl 340
 								}),
-							},
-						}),
 
-						-- Warfront Quests
-						q(53673, {	-- Armor Up!
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(53666, {	-- Armor Up!
-							["races"] = HORDE_ONLY,
-						}),
-						q(53677, {	-- Beasts of Newstead
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(53670, {	-- Beasts of Newstead
-							["races"] = HORDE_ONLY,
-						}),
-						q(47283, {	-- Chop, Chop
-							["races"] = HORDE_ONLY,
-						}),
-						q(52118, {	-- Cutting Out the Competition
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(53678, {	-- Establishing a Connection
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(53668, {	-- Flightgineer's Network
-							["races"] = HORDE_ONLY,
-						}),
-						q(52439, {	-- Iron Stores
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(51082, {	-- Iron Stores
-							["races"] = HORDE_ONLY,
-						}),
-						q(53672, {	-- Ready for Battle
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(53665, {	-- Ready for Battle
-							["races"] = HORDE_ONLY,
-						}),
-						q(53674, {	-- The Altar's Power
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(53669, {	-- The Altar's Power
-							["races"] = HORDE_ONLY,
-						}),
-						q(53671, {	-- The Circle's Power
-							["races"] = HORDE_ONLY,
-						}),
-						q(53676, {	-- The Circle's Power
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(53675, {	-- Welcome to the Workshop
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(53667, {	-- Welcome to the Workshop
-							["races"] = HORDE_ONLY,
-						}),
-					}),
-					n(REWARDS, {
-						-- 1 SourceIDs: Weapons
-						-- 3 SourceIDs: Cloaks, Armor (3) (5) (6/23)
-						-- 2 VisualIDs: Armor (3/5) (6/23)
-						-- 3 VisualIDs: Cloaks (3) (5) (6/23)
-						-- Sources:
-						-- Normal Warfront Victory (3)
-						-- Honorbound Emissary Equipment Box (5)
-						-- Incursion Equipment Box (5)
-						-- Rares/Treasures (5)
-						-- Normal Quest (6)
-						-- Heroic Quest (23)
-						["description"] = "These are obtained by winning the warfront and can be awarded multiple times a week.",
-						["modID"] = 3,
-						["groups"] = {
-							i(165872, {	-- 7th Legion Equipment Cache (awarded for all incursions)
-								["description"] = "This cache is awarded for completing any incursion on an Alliance character.",
-								["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_ALLIANCE, 5),	-- iLvl 340
+								q(53198, {	-- Back to Boralus
+									["provider"] = { "n", 143018 },	-- Captain Roderick Brewston
+									["altQuests"] = { 53206 },	-- Battle for Stromgarde unlock flag (A)
+									["sourceQuest"] = 53197,	-- Touring the Front
+									["coord"] = { 19.26, 61.77, ARATHI_HIGHLANDS },
+									["races"] = ALLIANCE_ONLY,
+									["isBreadcrumb"] = true,
+								}),
+								q(53212, {	-- Back to Zuldazar
+									["provider"] = { "n", 143019 },	-- Wistel Sliversnitch
+									["altQuests"] = { 53220 },	-- Battle for Stromgarde unlock flag (H)
+									["sourceQuest"] = 53210,	-- Touring the Front
+									["coord"] = { 26.11, 35.59, ARATHI_HIGHLANDS },
+									["races"] = HORDE_ONLY,
+									["isBreadcrumb"] = true,
+								}),
+								q(53153, {	-- Death to the Defilers
+									["providers"] = {
+										{ "n", 143172 },	-- Yvera Dawnwing [Arathi Highlands Location]
+										{ "n", 143380 },	-- Yvera Dawnwing [Boralus Location]
+									},
+									["sourceQuest"] = 53198,	-- Back to Boralus
+									["coord"] = { 21.71, 64.88, ARATHI_HIGHLANDS },
+									["races"] = ALLIANCE_ONLY,
+									["repeatable"] = true,
+									["u"] = REMOVED_FROM_GAME,
+									["g"] = {
+										i(164578, {	-- Warfronts Equipment Cache
+											["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_ALLIANCE, 5),	-- iLvl 340
+										}),
+									},
+								}),
+								q(53197, {	-- Touring the Front (A)
+									["provider"] = { "n", 143018 },		-- Captain Roderick Brewston
+									["altQuests"] = { 53206 },	-- Battle for Stromgarde unlock flag (A)
+									["sourceQuest"] = 53194,	-- To The Front
+									["coord"] = { 19.26, 61.77, ARATHI_HIGHLANDS },
+									["races"] = ALLIANCE_ONLY,
+								}),
+								q(53210, {	-- Touring the Front (H)
+									["provider"] = { "n", 143019 },	-- Wistel Sliversnitch
+									["altQuests"] = { 53220 },	-- Battle for Stromgarde unlock flag (H)
+									["sourceQuest"] = 53208,	-- To The Front
+									["coord"] = { 26.1, 35.5, ARATHI_HIGHLANDS },
+									["races"] = HORDE_ONLY,
+								}),
+								q(53154, {	-- The League Will Lose [Horde]
+									["u"] = REMOVED_FROM_GAME,
+									["races"] = HORDE_ONLY,
+									["repeatable"] = true,
+									["g"] = {
+										i(164577, {	-- Warfronts Equipment Cache
+											["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_HORDE, 5),	-- iLvl 340
+										}),
+									},
+								}),
+
+								-- Warfront Quests
+								q(53673, {	-- Armor Up!
+									["races"] = ALLIANCE_ONLY,
+								}),
+								q(53666, {	-- Armor Up!
+									["races"] = HORDE_ONLY,
+								}),
+								q(53677, {	-- Beasts of Newstead
+									["races"] = ALLIANCE_ONLY,
+								}),
+								q(53670, {	-- Beasts of Newstead
+									["races"] = HORDE_ONLY,
+								}),
+								q(47283, {	-- Chop, Chop
+									["races"] = HORDE_ONLY,
+								}),
+								q(52118, {	-- Cutting Out the Competition
+									["races"] = ALLIANCE_ONLY,
+								}),
+								q(53678, {	-- Establishing a Connection
+									["races"] = ALLIANCE_ONLY,
+								}),
+								q(53668, {	-- Flightgineer's Network
+									["races"] = HORDE_ONLY,
+								}),
+								q(52439, {	-- Iron Stores
+									["races"] = ALLIANCE_ONLY,
+								}),
+								q(51082, {	-- Iron Stores
+									["races"] = HORDE_ONLY,
+								}),
+								q(53672, {	-- Ready for Battle
+									["races"] = ALLIANCE_ONLY,
+								}),
+								q(53665, {	-- Ready for Battle
+									["races"] = HORDE_ONLY,
+								}),
+								q(53674, {	-- The Altar's Power
+									["races"] = ALLIANCE_ONLY,
+								}),
+								q(53669, {	-- The Altar's Power
+									["races"] = HORDE_ONLY,
+								}),
+								q(53671, {	-- The Circle's Power
+									["races"] = HORDE_ONLY,
+								}),
+								q(53676, {	-- The Circle's Power
+									["races"] = ALLIANCE_ONLY,
+								}),
+								q(53675, {	-- Welcome to the Workshop
+									["races"] = ALLIANCE_ONLY,
+								}),
+								q(53667, {	-- Welcome to the Workshop
+									["races"] = HORDE_ONLY,
+								}),
 							}),
-							-- ALLIANCE SET --
-							i(163891),	-- 7th Legionnaire's Aegis
-							i(163884),	-- 7th Legionnaire's Battle Hammer
-							i(163892),	-- 7th Legionnaire's Censer
-							i(163890),	-- 7th Legionnaire's Claymore
-							i(163882),	-- 7th Legionnaire's Dagger
-							i(163885),	-- 7th Legionnaire's Halberd
-							i(163889),	-- 7th Legionnaire's Hand Cannon
-							i(163881),	-- 7th Legionnaire's Longbow
-							i(163887),	-- 7th Legionnaire's Longsword
-							i(163895),	-- 7th Legionnaire's Shield
-							i(166336),	-- 7th Legionnaire's Skullcleaver
-							i(163894),	-- 7th Legionnaire's Spellhammer
-							i(163886),	-- 7th Legionnaire's Stave
-							i(163888),	-- 7th Legionnaire's Wand
-							i(163893),	-- 7th Legionnaire's Warglaive
-							i(163883),	-- 7th Legionnaire's Warhammer
-							i(163355),	-- 7th Legionnaire's Bloody Drape
-							i(163351),	-- 7th Legionnaire's Chain Drape
-							i(163347),	-- 7th Legionnaire's Long Cloak
-							i(163246),	-- 7th Legionnaire's Silk Cloak
-							i(163339),	-- 7th Legionnaire's Hood
-							i(163337),	-- 7th Legionnaire's Amice
-							i(163248),	-- 7th Legionnaire's Robes
-							i(163275),	-- 7th Legionnaire's Cuffs
-							i(163341),	-- 7th Legionnaire's Handwraps
-							i(163342),	-- 7th Legionnaire's Cord
-							i(163264),	-- 7th Legionnaire's Legwraps
-							i(163253),	-- 7th Legionnaire's Slippers
-							i(163380),	-- 7th Legionnaire's Visage
-							i(163377),	-- 7th Legionnaire's Leather Mantle
-							i(163251),	-- 7th Legionnaire's Vest
-							i(163278),	-- 7th Legionnaire's Bracers
-							i(163256),	-- 7th Legionnaire's Gloves
-							i(163384),	-- 7th Legionnaire's Buckle
-							i(163266),	-- 7th Legionnaire's Britches
-							i(163383),	-- 7th Legionnaire's Boots
-							i(163394),	-- 7th Legionnaire's Helm
-							i(163389),	-- 7th Legionnaire's Monnion
-							i(163398),	-- 7th Legionnaire's Chainmail
-							i(163277),	-- 7th Legionnaire's Bindings
-							i(163397),	-- 7th Legionnaire's Handguards
-							i(163401),	-- 7th Legionnaire's Cincture
-							i(163265),	-- 7th Legionnaire's Leggings
-							i(163400),	-- 7th Legionnaire's Sabatons
-							i(163410),	-- 7th Legionnaire's Headpiece
-							i(163405),	-- 7th Legionnaire's Shoulderplates
-							i(163418),	-- 7th Legionnaire's Chestguard
-							i(163403),	-- 7th Legionnaire's Armguards
-							i(163414),	-- 7th Legionnaire's Gauntlets
-							i(163422),	-- 7th Legionnaire's Greatbelt
-							i(163409),	-- 7th Legionnaire's Legguards
-							i(163421),	-- 7th Legionnaire's Greaves
-							-- HORDE SET --
-							i(163878),	-- Honorbound Barrier
-							i(163870),	-- Honorbound Bonebreaker
-							i(163868),	-- Honorbound Dagger
-							i(163874),	-- Honorbound Decapitator
-							i(163876),	-- Honorbound Focus
-							i(163880),	-- Honorbound Gladius
-							i(163867),	-- Honorbound Longbow
-							i(163871),	-- Honorbound Pigsticker
-							i(163879),	-- Honorbound Portable Cannon
-							i(163875),	-- Honorbound Protectorate
-							i(163866),	-- Honorbound Skullcleaver
-							i(163869),	-- Honorbound Skullcrusher
-							i(163873),	-- Honorbound Wand
-							i(163872),	-- Honorbound War Staff
-							i(163877),	-- Honorbound Warglaive
-							i(166337),	-- Honorbound Warhammer
-							i(170275),	-- Honorbound Warmaul
-							i(163357),	-- Honorbound Artificer's Cloak
-							i(163368),	-- Honorbound Centurion's Long Cloak
-							i(163360),	-- Honorbound Outrider's Drape
-							i(163366),	-- Honorbound Vanguard's Cloak
-							i(163426),	-- Honorbound Artificer's Guise
-							i(163424),	-- Honorbound Artificer's Amice
-							i(163280),	-- Honorbound Artificer's Robes
-							i(163306),	-- Honorbound Artificer's Cuffs
-							i(163428),	-- Honorbound Artificer's Mitts
-							i(163430),	-- Honorbound Artificer's Cord
-							i(163296),	-- Honorbound Artificer's Legwraps
-							i(163285),	-- Honorbound Artificer's Sandals
-							i(163435),	-- Honorbound Outrider's Headpiece
-							i(163432),	-- Honorbound Outrider's Shoulderguards
-							i(163283),	-- Honorbound Outrider's Tunic
-							i(163309),	-- Honorbound Outrider's Bracers
-							i(163437),	-- Honorbound Outrider's Gloves
-							i(163439),	-- Honorbound Outrider's Buckle
-							i(163298),	-- Honorbound Outrider's Pants
-							i(163438),	-- Honorbound Outrider's Boots
-							i(163446),	-- Honorbound Vanguard's Skullguard
-							i(163441),	-- Honorbound Vanguard's Shoulderguards
-							i(163282),	-- Honorbound Vanguard's Chainmail
-							i(163308),	-- Honorbound Vanguard's Bindings
-							i(163448),	-- Honorbound Vanguard's Handguards
-							i(163451),	-- Honorbound Vanguard's Clasp
-							i(163445),	-- Honorbound Vanguard's Leggings
-							i(163449),	-- Honorbound Vanguard's Sabatons
-							i(163456),	-- Honorbound Centurion's Greathelm
-							i(163453),	-- Honorbound Centurion's Shoulderplates
-							i(163459),	-- Honorbound Centurion's Breastplate
-							i(163307),	-- Honorbound Centurion's Vambraces
-							i(163458),	-- Honorbound Centurion's Gauntlets
-							i(163461),	-- Honorbound Centurion's Greatbelt
-							i(163455),	-- Honorbound Centurion's Legplates
-							i(163460),	-- Honorbound Centurion's Greaves
+							n(REWARDS, {
+								-- 1 SourceIDs: Weapons
+								-- 3 SourceIDs: Cloaks, Armor (3) (5) (6/23)
+								-- 2 VisualIDs: Armor (3/5) (6/23)
+								-- 3 VisualIDs: Cloaks (3) (5) (6/23)
+								-- Sources:
+								-- Normal Warfront Victory (3)
+								-- Honorbound Emissary Equipment Box (5)
+								-- Incursion Equipment Box (5)
+								-- Rares/Treasures (5)
+								-- Normal Quest (6)
+								-- Heroic Quest (23)
+								["description"] = "These are obtained by winning the warfront and can be awarded multiple times a week.",
+								["modID"] = 3,
+								["groups"] = {
+									i(165872, {	-- 7th Legion Equipment Cache (awarded for all incursions)
+										["description"] = "This cache is awarded for completing any incursion on an Alliance character.",
+										["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_ALLIANCE, 5),	-- iLvl 340
+									}),
+									-- ALLIANCE SET --
+									i(163891),	-- 7th Legionnaire's Aegis
+									i(163884),	-- 7th Legionnaire's Battle Hammer
+									i(163892),	-- 7th Legionnaire's Censer
+									i(163890),	-- 7th Legionnaire's Claymore
+									i(163882),	-- 7th Legionnaire's Dagger
+									i(163885),	-- 7th Legionnaire's Halberd
+									i(163889),	-- 7th Legionnaire's Hand Cannon
+									i(163881),	-- 7th Legionnaire's Longbow
+									i(163887),	-- 7th Legionnaire's Longsword
+									i(163895),	-- 7th Legionnaire's Shield
+									i(166336),	-- 7th Legionnaire's Skullcleaver
+									i(163894),	-- 7th Legionnaire's Spellhammer
+									i(163886),	-- 7th Legionnaire's Stave
+									i(163888),	-- 7th Legionnaire's Wand
+									i(163893),	-- 7th Legionnaire's Warglaive
+									i(163883),	-- 7th Legionnaire's Warhammer
+									i(163355),	-- 7th Legionnaire's Bloody Drape
+									i(163351),	-- 7th Legionnaire's Chain Drape
+									i(163347),	-- 7th Legionnaire's Long Cloak
+									i(163246),	-- 7th Legionnaire's Silk Cloak
+									i(163339),	-- 7th Legionnaire's Hood
+									i(163337),	-- 7th Legionnaire's Amice
+									i(163248),	-- 7th Legionnaire's Robes
+									i(163275),	-- 7th Legionnaire's Cuffs
+									i(163341),	-- 7th Legionnaire's Handwraps
+									i(163342),	-- 7th Legionnaire's Cord
+									i(163264),	-- 7th Legionnaire's Legwraps
+									i(163253),	-- 7th Legionnaire's Slippers
+									i(163380),	-- 7th Legionnaire's Visage
+									i(163377),	-- 7th Legionnaire's Leather Mantle
+									i(163251),	-- 7th Legionnaire's Vest
+									i(163278),	-- 7th Legionnaire's Bracers
+									i(163256),	-- 7th Legionnaire's Gloves
+									i(163384),	-- 7th Legionnaire's Buckle
+									i(163266),	-- 7th Legionnaire's Britches
+									i(163383),	-- 7th Legionnaire's Boots
+									i(163394),	-- 7th Legionnaire's Helm
+									i(163389),	-- 7th Legionnaire's Monnion
+									i(163398),	-- 7th Legionnaire's Chainmail
+									i(163277),	-- 7th Legionnaire's Bindings
+									i(163397),	-- 7th Legionnaire's Handguards
+									i(163401),	-- 7th Legionnaire's Cincture
+									i(163265),	-- 7th Legionnaire's Leggings
+									i(163400),	-- 7th Legionnaire's Sabatons
+									i(163410),	-- 7th Legionnaire's Headpiece
+									i(163405),	-- 7th Legionnaire's Shoulderplates
+									i(163418),	-- 7th Legionnaire's Chestguard
+									i(163403),	-- 7th Legionnaire's Armguards
+									i(163414),	-- 7th Legionnaire's Gauntlets
+									i(163422),	-- 7th Legionnaire's Greatbelt
+									i(163409),	-- 7th Legionnaire's Legguards
+									i(163421),	-- 7th Legionnaire's Greaves
+									-- HORDE SET --
+									i(163878),	-- Honorbound Barrier
+									i(163870),	-- Honorbound Bonebreaker
+									i(163868),	-- Honorbound Dagger
+									i(163874),	-- Honorbound Decapitator
+									i(163876),	-- Honorbound Focus
+									i(163880),	-- Honorbound Gladius
+									i(163867),	-- Honorbound Longbow
+									i(163871),	-- Honorbound Pigsticker
+									i(163879),	-- Honorbound Portable Cannon
+									i(163875),	-- Honorbound Protectorate
+									i(163866),	-- Honorbound Skullcleaver
+									i(163869),	-- Honorbound Skullcrusher
+									i(163873),	-- Honorbound Wand
+									i(163872),	-- Honorbound War Staff
+									i(163877),	-- Honorbound Warglaive
+									i(166337),	-- Honorbound Warhammer
+									i(170275),	-- Honorbound Warmaul
+									i(163357),	-- Honorbound Artificer's Cloak
+									i(163368),	-- Honorbound Centurion's Long Cloak
+									i(163360),	-- Honorbound Outrider's Drape
+									i(163366),	-- Honorbound Vanguard's Cloak
+									i(163426),	-- Honorbound Artificer's Guise
+									i(163424),	-- Honorbound Artificer's Amice
+									i(163280),	-- Honorbound Artificer's Robes
+									i(163306),	-- Honorbound Artificer's Cuffs
+									i(163428),	-- Honorbound Artificer's Mitts
+									i(163430),	-- Honorbound Artificer's Cord
+									i(163296),	-- Honorbound Artificer's Legwraps
+									i(163285),	-- Honorbound Artificer's Sandals
+									i(163435),	-- Honorbound Outrider's Headpiece
+									i(163432),	-- Honorbound Outrider's Shoulderguards
+									i(163283),	-- Honorbound Outrider's Tunic
+									i(163309),	-- Honorbound Outrider's Bracers
+									i(163437),	-- Honorbound Outrider's Gloves
+									i(163439),	-- Honorbound Outrider's Buckle
+									i(163298),	-- Honorbound Outrider's Pants
+									i(163438),	-- Honorbound Outrider's Boots
+									i(163446),	-- Honorbound Vanguard's Skullguard
+									i(163441),	-- Honorbound Vanguard's Shoulderguards
+									i(163282),	-- Honorbound Vanguard's Chainmail
+									i(163308),	-- Honorbound Vanguard's Bindings
+									i(163448),	-- Honorbound Vanguard's Handguards
+									i(163451),	-- Honorbound Vanguard's Clasp
+									i(163445),	-- Honorbound Vanguard's Leggings
+									i(163449),	-- Honorbound Vanguard's Sabatons
+									i(163456),	-- Honorbound Centurion's Greathelm
+									i(163453),	-- Honorbound Centurion's Shoulderplates
+									i(163459),	-- Honorbound Centurion's Breastplate
+									i(163307),	-- Honorbound Centurion's Vambraces
+									i(163458),	-- Honorbound Centurion's Gauntlets
+									i(163461),	-- Honorbound Centurion's Greatbelt
+									i(163455),	-- Honorbound Centurion's Legplates
+									i(163460),	-- Honorbound Centurion's Greaves
+								},
+							}),
 						},
 					}),
 				},

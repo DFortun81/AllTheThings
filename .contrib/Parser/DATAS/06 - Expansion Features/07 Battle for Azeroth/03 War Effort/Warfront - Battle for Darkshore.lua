@@ -658,822 +658,822 @@ root(ROOTS.ExpansionFeatures,
 						q(54800),	-- Twilight Prophet Graeme (H)
 						q(54719),	-- Worgen in the Ore Mine (H)
 					})),
-				},
-			}),
-			n(WARFRONT_BATTLE_FOR_DARKSHORE, {	-- Completely separate, distinct Warfont scenario
-				["lore"] = "The Battle for Darkshore is the second warfront in Battle for Azeroth where the Forsaken and the Night Elves struggle for control of a staging area near the former Night Elven capital region of Teldrassil.",
-				["maps"] = {
-					1333,	-- Horde Intro Quest Map
-					1203,	-- ???
-					-- 1309,	-- 8.2+ Darkshore ?
-					1338,	-- Actual Scenario [Alliance]
-					1332,	-- Actual Scenario [Horde]
-				},
-				["crs"] = {
-					140552,	-- War Table (Alliance)
-					131752,	-- War Table (Horde)
-				},
-				["lvl"] = {
-					-- #if AFTER SHADOWLANDS
-					50,
-					-- #else
-					120,
-					-- #endif
-				},
-				["groups"] = {
-					n(ACHIEVEMENTS, {	-- Achievements
-						ach(13310, {	-- By Nature's Call (A)
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								crit(1),	-- Dryad
-								crit(2),	-- Faerie Dragon
-								crit(3),	-- Keeper of the Grove
-							},
-						}),
-						ach(13309, {	-- Deforester
-							["races"] = HORDE_ONLY,
-							["g"] = {
-								crit(1),	-- Banshee
-								crit(2),	-- AzerMEK Prototype
-								crit(3),	-- Abomination
-							},
-						}),
-						ach(14150, {	-- Heroic: War for the Shore (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						ach(14149, {	-- Heroic: War for the Shore (H)
-							["races"] = HORDE_ONLY,
-						}),
-						ach(13305, {	-- Night Moves (A)
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								ach(13302, {	-- Under Cover of Darkness
+					n(WARFRONT_BATTLE_FOR_DARKSHORE, {	-- Completely separate, distinct Warfont scenario
+						["lore"] = "The Battle for Darkshore is the second warfront in Battle for Azeroth where the Forsaken and the Night Elves struggle for control of a staging area near the former Night Elven capital region of Teldrassil.",
+						["maps"] = {
+							1333,	-- Horde Intro Quest Map
+							1203,	-- ???
+							-- 1309,	-- 8.2+ Darkshore ?
+							1338,	-- Actual Scenario [Alliance]
+							1332,	-- Actual Scenario [Horde]
+						},
+						["crs"] = {
+							140552,	-- War Table (Alliance)
+							131752,	-- War Table (Horde)
+						},
+						["lvl"] = {
+							-- #if AFTER SHADOWLANDS
+							50,
+							-- #else
+							120,
+							-- #endif
+						},
+						["groups"] = {
+							n(ACHIEVEMENTS, {	-- Achievements
+								ach(13310, {	-- By Nature's Call (A)
+									["races"] = ALLIANCE_ONLY,
+									["g"] = {
+										crit(1),	-- Dryad
+										crit(2),	-- Faerie Dragon
+										crit(3),	-- Keeper of the Grove
+									},
+								}),
+								ach(13309, {	-- Deforester
+									["races"] = HORDE_ONLY,
+									["g"] = {
+										crit(1),	-- Banshee
+										crit(2),	-- AzerMEK Prototype
+										crit(3),	-- Abomination
+									},
+								}),
+								ach(14150, {	-- Heroic: War for the Shore (A)
 									["races"] = ALLIANCE_ONLY,
 								}),
-								crit(1),	-- Bashal'Aran
-								crit(2),	-- Gloomtide Strand
-								crit(3),	-- Cinderfall Grove
-								crit(4),	-- Lornesta Mine
-								crit(5),	-- Forlorn Crossing
-								crit(6),	-- Ashwood Depot
-								crit(7),	-- Lor'danel Landing
-							},
-						}),
-						ach(13306, {	-- Night Moves (H)
-							["races"] = HORDE_ONLY,
-							["g"] = {
-								ach(13301, {	-- Under Cover of Darkness
+								ach(14149, {	-- Heroic: War for the Shore (H)
 									["races"] = HORDE_ONLY,
 								}),
-								crit(1),	-- Bashal'Aran
-								crit(2),	-- Gloomtide Strand
-								crit(3),	-- Cinderfall Grove
-								crit(4),	-- Lornesta Mine
-								crit(5),	-- Forlorn Crossing
-								crit(6),	-- Ashwood Depot
-								crit(7),	-- Lor'danel Landing
-							},
-						}),
-						ach(13308, {	-- Recruitment Officer (A)
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								crit(1),	-- Kaldorei Archer
-								crit(2),	-- Druid of the Branch
-								crit(3),	-- Kaldorei Hunter
-								crit(4),	-- Kaldorei Sentinel
-								crit(5),	-- Glaive Thrower
-							},
-						}),
-						ach(13307, {	-- Recruitment Officer (H)
-							["races"] = HORDE_ONLY,
-							["g"] = {
-								crit(1),	-- Forsaken Alchemist
-								crit(2),	-- Forsaken Lancer
-								crit(3),	-- Forsaken Deathguard
-								crit(4),	-- Forsaken Deadshot
-								crit(5),	-- Catapult
-							},
-						}),
-						ach(13297, {	-- War for the Shore (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						ach(13296, {	-- War for the Shore (H)
-							["races"] = HORDE_ONLY,
-						}),
-					}),
-					n(QUESTS, {	-- Questlines (A)
-						q(54050, {	-- Aftermath
-							["provider"] = { "n", 146601 },	-- Sira Moonwarden
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 54049,	-- The Dead of Night
-							["g"] = {
-								i(166678),	-- Brynja's Beacon (TOY!)
-							},
-						}),
-						q(54006, {	-- A New Hope
-							["provider"] = { "n", 149418 },	-- Maiev Shadowsong
-							["g"] = {
-								i(166525),	-- Nightwreathed Egg
-							},
-						}),
-						q(54044, {	-- Black Moon Rising
-							["provider"] = { "n", 146323 },	-- Nathanos Blightcaller
-							["sourceQuest"] = 54042,	-- Trouble in Darkshore
-							["races"] = HORDE_ONLY,
-						}),
-						q(54878, {	-- Buzzkill (A)
-							["provider"] = { "n", 149631 },	-- Wizbang Cranktoggle
-							["coord"] = { 46.3, 35.1, DARKSHORE },
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54845, {	-- Bullkill (H)
-							["coord"] = { 46.4, 35.0, DARKSHORE },
-							["races"] = HORDE_ONLY,
-							["provider"] = { "n", 149412 },	-- Zarvik Blastwix
-						}),
-						q(54043, {	-- Dark Ranger Round-Up
-							["provider"] = { "n", 146323 },	-- Nathanos Blightcaller
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 54042,	-- Trouble in Darkshore
-							["g"] = {
-								i(166544),	-- Dark Ranger's Spare Cowl (TOY!)
-							},
-						}),
-						q(54045, {	-- Quit Vining!
-							["provider"] = { "n", 146325 },	-- Shredmaster Blix
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 54042,	-- Trouble in Darkshore
-						}),
-						q(54875, {	-- Remaining Threats (Alliance)
-							["provider"] = { "n", 149623 },	-- Commander Lorna Crowley
-							["coord"] = { 46.8, 35.4, DARKSHORE },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(54843, {	-- Remaining Threats (Horde)
-							["provider"] = { "n", 149410 },	-- Deathstalker Commander Belmont
-							["coord"] = { 46.9, 35.5, DARKSHORE },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-						}),
-						q(54876, {	-- Tapping the Breach (A)
-							["provider"] = { "n", 149624 },	-- Thisalee Crow
-							["coord"] = { 46.4, 36.6, DARKSHORE },
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(54844, {	-- Tapping the Breach (H)
-							["coord"] = { 47.8, 36.2, DARKSHORE },
-							["races"] = HORDE_ONLY,
-							["provider"] = { "n", 149411 },	-- Dark Ranger Velonara
-						}),
-						q(54049, {	-- The Dead of Night
-							["provider"] = { "n", 146323 },	-- Nathanos Blightcaller
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 54047,	-- Where Hope Dies
-						}),
-						q(54059, {	-- The Night Warrior
-							["provider"] = { "n", 146323 },	-- Nathanos Blightcaller
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 54046,	-- We're Not Out of the Woods Yet
-						}),
-						q(54416, {	-- Warfront Preparations
-							["provider"] = { "n", 146323 },	-- Nathanos Blightcaller
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 54050,	-- Aftermath
-						}),
-						q(54046, {	-- We're Not Out of the Woods Yet
-							["provider"] = { "n", 146536 },	-- Lost Wisp
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 54044,	-- Black Moon Rising
-						}),
-						q(54047, {	-- Where Hope Dies
-							["provider"] = { "n", 146323 },	-- Nathanos Blightcaller
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 54059,	-- The Night Warrior
-						}),
+								ach(13305, {	-- Night Moves (A)
+									["races"] = ALLIANCE_ONLY,
+									["g"] = {
+										ach(13302, {	-- Under Cover of Darkness
+											["races"] = ALLIANCE_ONLY,
+										}),
+										crit(1),	-- Bashal'Aran
+										crit(2),	-- Gloomtide Strand
+										crit(3),	-- Cinderfall Grove
+										crit(4),	-- Lornesta Mine
+										crit(5),	-- Forlorn Crossing
+										crit(6),	-- Ashwood Depot
+										crit(7),	-- Lor'danel Landing
+									},
+								}),
+								ach(13306, {	-- Night Moves (H)
+									["races"] = HORDE_ONLY,
+									["g"] = {
+										ach(13301, {	-- Under Cover of Darkness
+											["races"] = HORDE_ONLY,
+										}),
+										crit(1),	-- Bashal'Aran
+										crit(2),	-- Gloomtide Strand
+										crit(3),	-- Cinderfall Grove
+										crit(4),	-- Lornesta Mine
+										crit(5),	-- Forlorn Crossing
+										crit(6),	-- Ashwood Depot
+										crit(7),	-- Lor'danel Landing
+									},
+								}),
+								ach(13308, {	-- Recruitment Officer (A)
+									["races"] = ALLIANCE_ONLY,
+									["g"] = {
+										crit(1),	-- Kaldorei Archer
+										crit(2),	-- Druid of the Branch
+										crit(3),	-- Kaldorei Hunter
+										crit(4),	-- Kaldorei Sentinel
+										crit(5),	-- Glaive Thrower
+									},
+								}),
+								ach(13307, {	-- Recruitment Officer (H)
+									["races"] = HORDE_ONLY,
+									["g"] = {
+										crit(1),	-- Forsaken Alchemist
+										crit(2),	-- Forsaken Lancer
+										crit(3),	-- Forsaken Deathguard
+										crit(4),	-- Forsaken Deadshot
+										crit(5),	-- Catapult
+									},
+								}),
+								ach(13297, {	-- War for the Shore (A)
+									["races"] = ALLIANCE_ONLY,
+								}),
+								ach(13296, {	-- War for the Shore (H)
+									["races"] = HORDE_ONLY,
+								}),
+							}),
+							n(QUESTS, {	-- Questlines (A)
+								q(54050, {	-- Aftermath
+									["provider"] = { "n", 146601 },	-- Sira Moonwarden
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 54049,	-- The Dead of Night
+									["g"] = {
+										i(166678),	-- Brynja's Beacon (TOY!)
+									},
+								}),
+								q(54006, {	-- A New Hope
+									["provider"] = { "n", 149418 },	-- Maiev Shadowsong
+									["g"] = {
+										i(166525),	-- Nightwreathed Egg
+									},
+								}),
+								q(54044, {	-- Black Moon Rising
+									["provider"] = { "n", 146323 },	-- Nathanos Blightcaller
+									["sourceQuest"] = 54042,	-- Trouble in Darkshore
+									["races"] = HORDE_ONLY,
+								}),
+								q(54878, {	-- Buzzkill (A)
+									["provider"] = { "n", 149631 },	-- Wizbang Cranktoggle
+									["coord"] = { 46.3, 35.1, DARKSHORE },
+									["races"] = ALLIANCE_ONLY,
+								}),
+								q(54845, {	-- Bullkill (H)
+									["coord"] = { 46.4, 35.0, DARKSHORE },
+									["races"] = HORDE_ONLY,
+									["provider"] = { "n", 149412 },	-- Zarvik Blastwix
+								}),
+								q(54043, {	-- Dark Ranger Round-Up
+									["provider"] = { "n", 146323 },	-- Nathanos Blightcaller
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 54042,	-- Trouble in Darkshore
+									["g"] = {
+										i(166544),	-- Dark Ranger's Spare Cowl (TOY!)
+									},
+								}),
+								q(54045, {	-- Quit Vining!
+									["provider"] = { "n", 146325 },	-- Shredmaster Blix
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 54042,	-- Trouble in Darkshore
+								}),
+								q(54875, {	-- Remaining Threats (Alliance)
+									["provider"] = { "n", 149623 },	-- Commander Lorna Crowley
+									["coord"] = { 46.8, 35.4, DARKSHORE },
+									["races"] = ALLIANCE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(54843, {	-- Remaining Threats (Horde)
+									["provider"] = { "n", 149410 },	-- Deathstalker Commander Belmont
+									["coord"] = { 46.9, 35.5, DARKSHORE },
+									["races"] = HORDE_ONLY,
+									["isWeekly"] = true,
+								}),
+								q(54876, {	-- Tapping the Breach (A)
+									["provider"] = { "n", 149624 },	-- Thisalee Crow
+									["coord"] = { 46.4, 36.6, DARKSHORE },
+									["races"] = ALLIANCE_ONLY,
+								}),
+								q(54844, {	-- Tapping the Breach (H)
+									["coord"] = { 47.8, 36.2, DARKSHORE },
+									["races"] = HORDE_ONLY,
+									["provider"] = { "n", 149411 },	-- Dark Ranger Velonara
+								}),
+								q(54049, {	-- The Dead of Night
+									["provider"] = { "n", 146323 },	-- Nathanos Blightcaller
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 54047,	-- Where Hope Dies
+								}),
+								q(54059, {	-- The Night Warrior
+									["provider"] = { "n", 146323 },	-- Nathanos Blightcaller
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 54046,	-- We're Not Out of the Woods Yet
+								}),
+								q(54416, {	-- Warfront Preparations
+									["provider"] = { "n", 146323 },	-- Nathanos Blightcaller
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 54050,	-- Aftermath
+								}),
+								q(54046, {	-- We're Not Out of the Woods Yet
+									["provider"] = { "n", 146536 },	-- Lost Wisp
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 54044,	-- Black Moon Rising
+								}),
+								q(54047, {	-- Where Hope Dies
+									["provider"] = { "n", 146323 },	-- Nathanos Blightcaller
+									["races"] = HORDE_ONLY,
+									["sourceQuest"] = 54059,	-- The Night Warrior
+								}),
 
-						-- Alliance Quests
-						q(53977, {	-- The War Chest (A)
-							["provider"] = { "n", 145770 },	-- Thisalee Crow
-							["coord"] = { 51.0, 56.8, 1203 },
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 120,
-						}),
-						q(53976, {	-- Iron in Hand
-							["provider"] = { "n", 145770 },	-- Thisalee Crow
-							["coord"] = { 51.0, 56.8, 1203 },
-							["sourceQuest"] = 53977,	-- The War Chest (A)
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 120,
-						}),
-						q(54436, {	-- Wisp'd Into Shape
-							["provider"] = { "n", 145770 },	-- Thisalee Crow
-							["coord"] = { 51.0, 56.8, 1203 },
-							["sourceQuest"] = 53977,	-- The War Chest (A)
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 120,
-						}),
-						q(53957, {	-- Darkshore Recruits (A)
-							["provider"] = { "n", 145770 },	-- Thisalee Crow
-							["coord"] = { 51.0, 56.8, 1203 },
-							["sourceQuests"] = {
-								53976,	-- Iron in Hand
-								54436,	-- Wisp'd Into Shape
-							},
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 120,
-						}),
-						q(53959, {	-- Armor for Armies
-							["provider"] = { "n", 145783 },	-- Lorna Crowley
-							["coord"] = { 51.0, 57.6, 1203 },
-							["sourceQuest"] = 53957,	-- Darkshore Recruits (A)
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 120,
-						}),
-						q(53960, {	-- The Altar of Elders
-							["provider"] = { "n", 145783 },	-- Lorna Crowley
-							["coord"] = { 51.0, 57.6, 1203 },
-							["sourceQuest"] = 53959,	-- Armor for Armies
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 120,
-						}),
-						q(53974, {	-- Druids of Gloomtide
-							["provider"] = { "n", 145779 },	-- Celestine of the Harvest
-							["coord"] = { 51.8, 55.4, 1203 },
-							["sourceQuest"] = 53959,	-- Armor for Armies
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 120,
-						}),
-						q(53961, {	-- Glaiveworks For Me
-							["provider"] = { "n", 145784 },	-- Princess Tess Greymane
-							["coord"] = { 51.0, 57.4, 1203 },
-							["sourceQuests"] = {
-								53960,	-- The Altar of Elders
-								53974,	-- Druids of Gloomtide
-							},
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 120,
-						}),
-						q(53975, {	-- Flying at Night
-							["provider"] = { "n", 144786 },	-- Archmage Mordent Evenshade
-							["coord"] = { 49.4, 34.6, 1203 },
-							["sourceQuest"] = 53957,	-- Darkshore Recruits (A)
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 120,
-							["g"] = {
-								spell(281872),	-- Flight Master's Whistle Upgrade: Warfronts
-							},
-						}),
-						-- Horde Quests
-						q(54652, {	-- The War Chest (H)
-							["provider"] = { "n", 148479 },	-- Dark Ranger Velonara
-							["coord"] = { 51.4, 56.2, 1203 },
-							["races"] = HORDE_ONLY,
-							["lvl"] = 120,
-						}),
-						q(54654, {	-- An Explosive Situation
-							["provider"] = { "n", 148479 },	-- Dark Ranger Velonara
-							["coord"] = { 51.4, 56.2, 1203 },
-							["sourceQuest"] = 54652,	-- The War Chest (H)
-							["races"] = HORDE_ONLY,
-							["lvl"] = 120,
-						}),
-						q(54655, {	-- Lumbering Along
-							["provider"] = { "n", 148479 },	-- Dark Ranger Velonara
-							["coord"] = { 51.4, 56.2, 1203 },
-							["sourceQuest"] = 54652,	-- The War Chest (H)
-							["races"] = HORDE_ONLY,
-							["lvl"] = 120,
-						}),
-						q(54656, {	-- Darkshore Recruits (H)
-							["provider"] = { "n", 148479 },	-- Dark Ranger Velonara
-							["coord"] = { 51.4, 56.2, 1203 },
-							["sourceQuests"] = {
-								54654,	-- An Explosive Situation
-								54655,	-- Lumbering Along
-							},
-							["races"] = HORDE_ONLY,
-							["lvl"] = 120,
-						}),
-						q(54657, {	-- Arms and Armor
-							["provider"] = { "n", 148479 },	-- Dark Ranger Velonara
-							["coord"] = { 51.4, 56.2, 1203 },
-							["sourceQuest"] = 54656,	-- Darkshore Recruits (H)
-							["races"] = HORDE_ONLY,
-							["lvl"] = 120,
-						}),
-						q(54658, {	-- The Altar of Storms
-							["provider"] = { "n", 148479 },	-- Dark Ranger Velonara
-							["coord"] = { 51.4, 56.2, 1203 },
-							["sourceQuest"] = 54656,	-- Darkshore Recruits (H)
-							["races"] = HORDE_ONLY,
-							["lvl"] = 120,
-						}),
-						q(54659, {	-- An Alchemist for Everything
-							["provider"] = { "n", 148478 },	-- Apothecary Zinge
-							["coord"] = { 52.0, 59.0, 1203 },
-							["sourceQuest"] = 54656,	-- Darkshore Recruits (H)
-							["races"] = HORDE_ONLY,
-							["lvl"] = 120,
-						}),
-						q(54660, {	-- Throwing Blight
-							["provider"] = { "n", 146590 },	-- Master Apothecary Faranell
-							["coord"] = { 51.6, 58.0, 1203 },
-							["sourceQuests"] = {
-								54658,	-- The Altar of Storms
-								54659,	-- An Alchemist for Everything
-							},
-							["races"] = HORDE_ONLY,
-							["lvl"] = 120,
-						}),
-						q(54661, {	-- Echolocation
-							["provider"] = { "n", 145554 },	-- Base Cap'n Crankshot
-							["coord"] = { 49.6, 35.0, 1203 },
-							["sourceQuest"] = 54660,	-- Throwing Blight
-							["races"] = HORDE_ONLY,
-							["lvl"] = 120,
-							["g"] = {
-								spell(281872),	-- Flight Master's Whistle Upgrade: Warfronts
-							},
-						}),
+								-- Alliance Quests
+								q(53977, {	-- The War Chest (A)
+									["provider"] = { "n", 145770 },	-- Thisalee Crow
+									["coord"] = { 51.0, 56.8, 1203 },
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
+								}),
+								q(53976, {	-- Iron in Hand
+									["provider"] = { "n", 145770 },	-- Thisalee Crow
+									["coord"] = { 51.0, 56.8, 1203 },
+									["sourceQuest"] = 53977,	-- The War Chest (A)
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
+								}),
+								q(54436, {	-- Wisp'd Into Shape
+									["provider"] = { "n", 145770 },	-- Thisalee Crow
+									["coord"] = { 51.0, 56.8, 1203 },
+									["sourceQuest"] = 53977,	-- The War Chest (A)
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
+								}),
+								q(53957, {	-- Darkshore Recruits (A)
+									["provider"] = { "n", 145770 },	-- Thisalee Crow
+									["coord"] = { 51.0, 56.8, 1203 },
+									["sourceQuests"] = {
+										53976,	-- Iron in Hand
+										54436,	-- Wisp'd Into Shape
+									},
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
+								}),
+								q(53959, {	-- Armor for Armies
+									["provider"] = { "n", 145783 },	-- Lorna Crowley
+									["coord"] = { 51.0, 57.6, 1203 },
+									["sourceQuest"] = 53957,	-- Darkshore Recruits (A)
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
+								}),
+								q(53960, {	-- The Altar of Elders
+									["provider"] = { "n", 145783 },	-- Lorna Crowley
+									["coord"] = { 51.0, 57.6, 1203 },
+									["sourceQuest"] = 53959,	-- Armor for Armies
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
+								}),
+								q(53974, {	-- Druids of Gloomtide
+									["provider"] = { "n", 145779 },	-- Celestine of the Harvest
+									["coord"] = { 51.8, 55.4, 1203 },
+									["sourceQuest"] = 53959,	-- Armor for Armies
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
+								}),
+								q(53961, {	-- Glaiveworks For Me
+									["provider"] = { "n", 145784 },	-- Princess Tess Greymane
+									["coord"] = { 51.0, 57.4, 1203 },
+									["sourceQuests"] = {
+										53960,	-- The Altar of Elders
+										53974,	-- Druids of Gloomtide
+									},
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
+								}),
+								q(53975, {	-- Flying at Night
+									["provider"] = { "n", 144786 },	-- Archmage Mordent Evenshade
+									["coord"] = { 49.4, 34.6, 1203 },
+									["sourceQuest"] = 53957,	-- Darkshore Recruits (A)
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 120,
+									["g"] = {
+										spell(281872),	-- Flight Master's Whistle Upgrade: Warfronts
+									},
+								}),
+								-- Horde Quests
+								q(54652, {	-- The War Chest (H)
+									["provider"] = { "n", 148479 },	-- Dark Ranger Velonara
+									["coord"] = { 51.4, 56.2, 1203 },
+									["races"] = HORDE_ONLY,
+									["lvl"] = 120,
+								}),
+								q(54654, {	-- An Explosive Situation
+									["provider"] = { "n", 148479 },	-- Dark Ranger Velonara
+									["coord"] = { 51.4, 56.2, 1203 },
+									["sourceQuest"] = 54652,	-- The War Chest (H)
+									["races"] = HORDE_ONLY,
+									["lvl"] = 120,
+								}),
+								q(54655, {	-- Lumbering Along
+									["provider"] = { "n", 148479 },	-- Dark Ranger Velonara
+									["coord"] = { 51.4, 56.2, 1203 },
+									["sourceQuest"] = 54652,	-- The War Chest (H)
+									["races"] = HORDE_ONLY,
+									["lvl"] = 120,
+								}),
+								q(54656, {	-- Darkshore Recruits (H)
+									["provider"] = { "n", 148479 },	-- Dark Ranger Velonara
+									["coord"] = { 51.4, 56.2, 1203 },
+									["sourceQuests"] = {
+										54654,	-- An Explosive Situation
+										54655,	-- Lumbering Along
+									},
+									["races"] = HORDE_ONLY,
+									["lvl"] = 120,
+								}),
+								q(54657, {	-- Arms and Armor
+									["provider"] = { "n", 148479 },	-- Dark Ranger Velonara
+									["coord"] = { 51.4, 56.2, 1203 },
+									["sourceQuest"] = 54656,	-- Darkshore Recruits (H)
+									["races"] = HORDE_ONLY,
+									["lvl"] = 120,
+								}),
+								q(54658, {	-- The Altar of Storms
+									["provider"] = { "n", 148479 },	-- Dark Ranger Velonara
+									["coord"] = { 51.4, 56.2, 1203 },
+									["sourceQuest"] = 54656,	-- Darkshore Recruits (H)
+									["races"] = HORDE_ONLY,
+									["lvl"] = 120,
+								}),
+								q(54659, {	-- An Alchemist for Everything
+									["provider"] = { "n", 148478 },	-- Apothecary Zinge
+									["coord"] = { 52.0, 59.0, 1203 },
+									["sourceQuest"] = 54656,	-- Darkshore Recruits (H)
+									["races"] = HORDE_ONLY,
+									["lvl"] = 120,
+								}),
+								q(54660, {	-- Throwing Blight
+									["provider"] = { "n", 146590 },	-- Master Apothecary Faranell
+									["coord"] = { 51.6, 58.0, 1203 },
+									["sourceQuests"] = {
+										54658,	-- The Altar of Storms
+										54659,	-- An Alchemist for Everything
+									},
+									["races"] = HORDE_ONLY,
+									["lvl"] = 120,
+								}),
+								q(54661, {	-- Echolocation
+									["provider"] = { "n", 145554 },	-- Base Cap'n Crankshot
+									["coord"] = { 49.6, 35.0, 1203 },
+									["sourceQuest"] = 54660,	-- Throwing Blight
+									["races"] = HORDE_ONLY,
+									["lvl"] = 120,
+									["g"] = {
+										spell(281872),	-- Flight Master's Whistle Upgrade: Warfronts
+									},
+								}),
+							}),
+							-- Weeklies (A)
+							n(QUESTS, sharedData({
+								["isWeekly"] = true,
+								["races"] = ALLIANCE_ONLY,
+							},{
+								q(54387, {	-- Darkshore Donations: Blood-Stained Bone
+									["coord"] = { 67.2, 29.2, BORALUS },
+									["provider"] = { "n", 142995 },	-- Charlane
+								}),
+								q(54379, {	-- Darkshore Donations: Contract: 7th Legion
+									["coord"] = { 67.5, 23.8, BORALUS },
+									["provider"] = { "n", 143005 },	-- Liao
+								}),
+								q(54377, {	-- Darkshore Donations: Crimson Ink
+									["coord"] = { 67.5, 23.8, BORALUS },
+									["provider"] = { "n", 143005 },	-- Liao
+								}),
+								q(54386, {	-- Darkshore Donations: Deep Sea Bandage
+									["coord"] = { 67.1, 27.9, BORALUS },
+									["provider"] = { "n", 142998 },	-- Faella
+								}),
+								q(54382, {	-- Darkshore Donations: Deep Sea Satin
+									["coord"] = { 67.1, 27.9, BORALUS },
+									["provider"] = { "n", 142998 },	-- Faella
+								}),
+								q(54369, {	-- Darkshore Donations: Electroshock Mount Motivator
+									["coord"] = { 66.3, 25.5, BORALUS },
+									["provider"] = { "n", 143008 },	-- Norber Togglesprocket
+								}),
+								q(54373, {	-- Darkshore Donations: Enchant Ring - Seal of Haste
+									["coord"] = { 66.3, 25.1, BORALUS },
+									["provider"] = { "n", 143007 },	-- Mae Wagglewand
+								}),
+								q(54375, {	-- Darkshore Donations: Enchant Ring - Seal of Mastery
+									["coord"] = { 66.3, 25.1, BORALUS },
+									["provider"] = { "n", 143007 },	-- Mae Wagglewand
+								}),
+								q(54380, {	-- Darkshore Donations: Gold
+									["coord"] = { 66.2, 27.6, BORALUS },
+									["provider"] = { "n", 142685 },	-- Paymaster Vauldren
+								}),
+								q(54390, {	-- Darkshore Donations: Masterful Kubiline
+									["coord"] = { 67.6, 24.1, BORALUS },
+									["provider"] = { "n", 143004 },	-- Larold Kyne
+								}),
+								q(54389, {	-- Darkshore Donations: Mistscale
+									["coord"] = { 67.2, 29.2, BORALUS },
+									["provider"] = { "n", 142995 },	-- Charlane
+								}),
+								q(54367, {	-- Darkshore Donations: Platinum Ore
+									["coord"] = { 66.0, 28.5, BORALUS },
+									["provider"] = { "n", 142994 },	-- Brandal Darkbeard
+								}),
+								q(54378, {	-- Darkshore Donations: Potion of Bursting Blood
+									["coord"] = { 66.7, 23.5, BORALUS },
+									["provider"] = { "n", 142993 },	-- Chelsea Strand
+								}),
+								q(54376, {	-- Darkshore Donations: Potion of Replenishment
+									["coord"] = { 66.7, 23.5, BORALUS },
+									["provider"] = { "n", 142993 },	-- Chelsea Strand
+								}),
+								q(54374, {	-- Darkshore Donations: Potion of Rising Death
+									["coord"] = { 66.7, 23.5, BORALUS },
+									["provider"] = { "n", 142993 },	-- Chelsea Strand
+								}),
+								q(54391, {	-- Darkshore Donations: Quick Golden Beryl
+									["coord"] = { 67.6, 24.1, BORALUS },
+									["provider"] = { "n", 143004 },	-- Larold Kyne
+								}),
+								q(54392, {	-- Darkshore Donations: Sand Shifter
+									["coord"] = { 67.0, 27.2, BORALUS },
+									["provider"] = { "n", 142997 },	-- Senedras
+								}),
+								q(54393, {	-- Darkshore Donations: Scarlet Diamond
+									["coord"] = { 67.6, 24.1, BORALUS },
+									["provider"] = { "n", 143004 },	-- Larold Kyne
+								}),
+								q(54395, {	-- Darkshore Donations: Seasoned Steak and Potatoes
+									["coord"] = { 67.0, 27.2, BORALUS },
+									["provider"] = { "n", 142997 },	-- Senedras
+								}),
+								q(54388, {	-- Darkshore Donations: Shimmerscale Diving Helmet
+									["coord"] = { 67.2, 29.2, BORALUS },
+									["provider"] = { "n", 142995 },	-- Charlane
+								}),
+								q(54383, {	-- Darkshore Donations: Shimmerscale Diving Suit
+									["coord"] = { 67.2, 29.2, BORALUS },
+									["provider"] = { "n", 142995 },	-- Charlane
+								}),
+								q(54364, {	-- Darkshore Donations: Star Moss
+									["coord"] = { 66.7, 23.5, BORALUS },
+									["provider"] = { "n", 142993 },	-- Chelsea Strand
+								}),
+								q(54365, {	-- Darkshore Donations: Storm Silver Ore
+									["coord"] = { 66.0, 28.5, BORALUS },
+									["provider"] = { "n", 142994 },	-- Brandal Darkbeard
+								}),
+								q(54394, {	-- Darkshore Donations: Stringy Loins
+									["coord"] = { 67.0, 27.2, BORALUS },
+									["provider"] = { "n", 142997 },	-- Senedras
+								}),
+								q(54371, {	-- Darkshore Donations: Thermo-Accelerated Plague Spreader
+									["coord"] = { 66.3, 25.5, BORALUS },
+									["provider"] = { "n", 143008 },	-- Norber Togglesprocket
+								}),
+								q(54385, {	-- Darkshore Donations: Tidespray Linen Bandage
+									["coord"] = { 67.1, 27.9, BORALUS },
+									["provider"] = { "n", 142998 },	-- Faella
+								}),
+								q(54384, {	-- Darkshore Donations: Tidespray Linen Net
+									["coord"] = { 67.1, 27.9, BORALUS },
+									["provider"] = { "n", 142998 },	-- Faella
+								}),
+								q(54381, {	-- Darkshore Donations: Ultramarine Ink
+									["coord"] = { 67.5, 23.8, BORALUS },
+									["provider"] = { "n", 143005 },	-- Liao
+								}),
+								q(54372, {	-- Darkshore Donations: Umbra Shard
+									["coord"] = { 66.3, 25.1, BORALUS },
+									["provider"] = { "n", 143007 },	-- Mae Wagglewand
+								}),
+								q(54368, {	-- Darkshore Donations: Unstable Temporal Time Shifter
+									["coord"] = { 66.3, 25.5, BORALUS },
+									["provider"] = { "n", 143008 },	-- Norber Togglesprocket
+								}),
+								q(54363, {	-- Darkshore Donations: War Resources
+									["coord"] = { 66.1, 27.2, BORALUS },
+									["provider"] = { "n", 142700 },	-- Quartermaster Peregrin
+								}),
+								q(54396, {	-- Darkshore Donations: Wild Berry Bread
+									["coord"] = { 67.0, 27.2, BORALUS },
+									["provider"] = { "n", 142997 },	-- Senedras
+								}),
+								q(54366, {	-- Darkshore Donations: Winter's Kiss
+									["coord"] = { 66.7, 23.5, BORALUS },
+									["provider"] = { "n", 142993 },	-- Chelsea Strand
+								}),
+								q(54370, {	-- Darkshore Donations: XA-1000 Surface Skimmer
+									["coord"] = { 66.3, 25.5, BORALUS },
+									["provider"] = { "n", 143008 },	-- Norber Togglesprocket
+								}),
+								q(57960, {	-- Heroic Warfront: The Battle for Darkshore
+									["provider"] = { "n", 142721 },	-- Ralston Karn <Recruitment Officer>
+									["coord"] = { 66.0, 26.0, BORALUS },
+									["_drop"] = { "g" },	-- bad API data
+									["g"] = {
+										i(166370, {	-- Sentinel Equipment Cache (A) [Heroic]
+											["modID"] = 23,
+											["sym"] = {
+												{"select","headerID",WAR_EFFORT},{"pop"},
+												{"where","mapID",DARKSHORE},{"pop"},
+												{"where","headerID",COMMON_BOSS_DROPS},{"pop"},
+												{"extract","itemID"},
+												{"where","r",2},	-- Alliance
+												{"myModID"},
+											},
+										}),
+									},
+								}),
+								q(53992, {	-- Warfront: The Battle for Darkshore [Tier 3]
+									["provider"] = { "n", 142721 },	-- Ralston Karn <Recruitment Officer>
+									["coord"] = { 66.0, 26.0, BORALUS },
+									["_drop"] = { "g" },	-- bad API data
+									["g"] = {
+										i(166370, {	-- Sentinel Equipment Cache (A) [Normal]
+											["modID"] = 6,
+											["sym"] = {
+												{"select","headerID",WAR_EFFORT},{"pop"},
+												{"where","mapID",DARKSHORE},{"pop"},
+												{"where","headerID",COMMON_BOSS_DROPS},{"pop"},
+												{"extract","itemID"},
+												{"where","r",2},	-- Alliance
+												{"myModID"},
+											},
+										}),
+									},
+								}),
+							})),
+							-- Weeklies (H)
+							n(QUESTS, sharedData({
+								["isWeekly"] = true,
+								["races"] = HORDE_ONLY,
+							},{
+								q(54353, {	-- Darkshore Donations: Blood-Stained Bone
+									["coord"] = { 53.4, 92.6, DAZARALOR },
+									["provider"] = { "n", 142970 },	-- Kuma Longhoof
+								}),
+								q(54345, {	-- Darkshore Donations: Contract: The Honorbound
+									["coord"] = { 53.6, 92.1, DAZARALOR },
+									["provider"] = { "n", 142981 },	-- Merill Redgrave
+								}),
+								q(54344, {	-- Darkshore Donations: Crimson Ink
+									["coord"] = { 53.6, 92.1, DAZARALOR },
+									["provider"] = { "n", 142981 },	-- Merill Redgrave
+								}),
+								q(54351, {	-- Darkshore Donations: Deep Sea Bandage
+									["coord"] = { 52.5, 93.3, DAZARALOR },
+									["provider"] = { "n", 142975 },	-- Seamstress Vessa
+								}),
+								q(54348, {	-- Darkshore Donations: Deep Sea Satin
+									["coord"] = { 52.5, 93.3, DAZARALOR },
+									["provider"] = { "n", 142975 },	-- Seamstress Vessa
+								}),
+								q(54334, {	-- Darkshore Donations: Electroshock Mount Motivator
+									["coord"] = { 53.0, 94.8, DAZARALOR },
+									["provider"] = { "n", 142983 },	-- Swizzle Fizzcrank
+								}),
+								q(54340, {	-- Darkshore Donations: Enchant Ring - Seal of Haste
+									["coord"] = { 52.7, 93.3, DAZARALOR },
+									["provider"] = { "n", 142992 },	-- Uma'wi
+								}),
+								q(54341, {	-- Darkshore Donations: Enchant Ring - Seal of Mastery
+									["coord"] = { 52.7, 93.3, DAZARALOR },
+									["provider"] = { "n", 142992 },	-- Uma'wi
+								}),
+								q(54346, {	-- Darkshore Donations: Gold
+									["coord"] = { 51.7, 95.4, DAZARALOR },
+									["provider"] = { "n", 142157 },	-- Paymaster Grintooth
+								}),
+								q(54357, {	-- Darkshore Donations: Masterful Kubiline
+									["coord"] = { 51.9, 93.1, DAZARALOR },
+									["provider"] = { "n", 142977 },	-- Meredith Swane
+								}),
+								q(54355, {	-- Darkshore Donations: Mistscale
+									["coord"] = { 53.4, 92.6, DAZARALOR },
+									["provider"] = { "n", 142970 },	-- Kuma Longhoof
+								}),
+								q(54330, {	-- Darkshore Donations: Platinum Ore
+									["coord"] = { 52.6, 94.8, DAZARALOR },
+									["provider"] = { "n", 142969 },	-- Logarr
+								}),
+								q(54342, {	-- Darkshore Donations: Potion of Bursting Blood
+									["coord"] = { 51.2, 95.5, DAZARALOR },
+									["provider"] = { "n", 142159 },	-- Zen'kin
+								}),
+								q(54343, {	-- Darkshore Donations: Potion of Replenishment
+									["coord"] = { 51.2, 95.5, DAZARALOR },
+									["provider"] = { "n", 142159 },	-- Zen'kin
+								}),
+								q(54339, {	-- Darkshore Donations: Potion of Rising Death
+									["coord"] = { 51.2, 95.5, DAZARALOR },
+									["provider"] = { "n", 142159 },	-- Zen'kin
+								}),
+								q(54356, {	-- Darkshore Donations: Quick Golden Beryl
+									["coord"] = { 51.9, 93.1, DAZARALOR },
+									["provider"] = { "n", 142977 },	-- Meredith Swane
+								}),
+								q(54359, {	-- Darkshore Donations: Sand Shifter
+									["coord"] = { 53.8, 94.4, DAZARALOR },
+									["provider"] = { "n", 142973 },	-- Mai-Lu
+								}),
+								q(54358, {	-- Darkshore Donations: Scarlet Diamond
+									["coord"] = { 51.9, 93.1, DAZARALOR },
+									["provider"] = { "n", 142977 },	-- Meredith Swane
+								}),
+								q(54362, {	-- Darkshore Donations: Seasoned Steak and Potatoes
+									["coord"] = { 53.8, 94.4, DAZARALOR },
+									["provider"] = { "n", 142973 },	-- Mai-Lu
+								}),
+								q(54354, {	-- Darkshore Donations: Shimmerscale Diving Helmet
+									["coord"] = { 53.4, 92.6, DAZARALOR },
+									["provider"] = { "n", 142970 },	-- Kuma Longhoof
+								}),
+								q(54352, {	-- Darkshore Donations: Shimmerscale Diving Suit
+									["coord"] = { 53.4, 92.6, DAZARALOR },
+									["provider"] = { "n", 142970 },	-- Kuma Longhoof
+								}),
+								q(54332, {	-- Darkshore Donations: Star Moss
+									["coord"] = { 51.2, 95.5, DAZARALOR },
+									["provider"] = { "n", 142159 },	-- Zen'kin
+								}),
+								q(54333, {	-- Darkshore Donations: Storm Silver Ore
+									["coord"] = { 52.6, 94.8, DAZARALOR },
+									["provider"] = { "n", 142969 },	-- Logarr
+								}),
+								q(54360, {	-- Darkshore Donations: Stringy Loins
+									["coord"] = { 53.8, 94.4, DAZARALOR },
+									["provider"] = { "n", 142973 },	-- Mai-Lu
+								}),
+								q(54338, {	-- Darkshore Donations: Thermo-Accelerated Plague Spreader
+									["coord"] = { 53.0, 94.8, DAZARALOR },
+									["provider"] = { "n", 142983 },	-- Swizzle Fizzcrank
+								}),
+								q(54350, {	-- Darkshore Donations: Tidespray Linen Net
+									["coord"] = { 52.5, 93.3, DAZARALOR },
+									["provider"] = { "n", 142975 },	-- Seamstress Vessa
+								}),
+								q(54347, {	-- Darkshore Donations: Ultramarine Ink
+									["coord"] = { 53.6, 92.1, DAZARALOR },
+									["provider"] = { "n", 142981 },	-- Merill Redgrave
+								}),
+								q(54337, {	-- Darkshore Donations: Umbra Shard
+									["coord"] = { 52.7, 93.3, DAZARALOR },
+									["provider"] = { "n", 142992 },	-- Uma'wi
+								}),
+								q(54335, {	-- Darkshore Donations: Unstable Temporal Time Shifter
+									["coord"] = { 53.0, 94.8, DAZARALOR },
+									["provider"] = { "n", 142983 },	-- Swizzle Fizzcrank
+								}),
+								q(54329, {	-- Darkshore Donations: War Resources
+									["coord"] = { 51.7, 95.1, DAZARALOR },
+									["provider"] = { "n", 142158 },	-- Quartermaster Rauka
+								}),
+								q(54361, {	-- Darkshore Donations: Wild Berry Bread
+									["coord"] = { 53.8, 94.4, DAZARALOR },
+									["provider"] = { "n", 142973 },	-- Mai-Lu
+								}),
+								q(54331, {	-- Darkshore Donations: Winter's Kiss
+									["coord"] = { 51.2, 95.5, DAZARALOR },
+									["provider"] = { "n", 142159 },	-- Zen'kin
+								}),
+								q(54336, {	-- Darkshore Donations: XA-1000 Surface Skimmer
+									["coord"] = { 53.0, 94.8, DAZARALOR },
+									["provider"] = { "n", 142983 },	-- Swizzle Fizzcrank
+								}),
+								q(57959, {	-- Heroic Warfront: The Battle for Darkshore
+									["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
+									["coord"] = { 52.9, 94.3, DAZARALOR },
+									["g"] = {
+										i(166369, {	-- Deathguard Equipment Cache (H) [Heroic]
+											["modID"] = 23,
+											["sym"] = {
+												{"select","headerID",WAR_EFFORT},{"pop"},
+												{"where","mapID",DARKSHORE},{"pop"},
+												{"where","headerID",COMMON_BOSS_DROPS},{"pop"},
+												{"extract","itemID"},
+												{"where","r",1},	-- Horde
+												{"myModID"},
+											},
+										}),
+									},
+								}),
+								q(53955, {	-- Warfront: The Battle for Darkshore [Tier 3]
+									["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
+									["coord"] = { 52.97, 94.35, DAZARALOR },
+									["g"] = {
+										i(166369, {	-- Deathguard Equipment Cache (H) [Normal]
+											["modID"] = 6,
+											["sym"] = {
+												{"select","headerID",WAR_EFFORT},{"pop"},
+												{"where","mapID",DARKSHORE},{"pop"},
+												{"where","headerID",COMMON_BOSS_DROPS},{"pop"},
+												{"extract","itemID"},
+												{"where","r",1},	-- Horde
+												{"myModID"},
+											},
+										}),
+									},
+								}),
+							})),
+							-- Sources:
+							-- Rares/Treasures (5)
+							-- Normal Warfront Victory [6]
+							-- Normal Quest (6)
+							-- Heroic Quest (23)
+							-- TODO Nathanos WB sym (23)
+							n(REWARDS, bubbleDown({
+								["modID"] = 6,
+							},{
+								["sym"] = {	-- when showing the Rewards in popout/minilist/tooltip, include the Weapons
+									{"select","headerID",WARFRONT_BATTLE_FOR_DARKSHORE},{"pop"},
+									{"where","headerID",COMMON_BOSS_DROPS},{"pop"},
+									{"where","headerID",WEAPONS},
+								},
+								["g"] = {
+									n(BACK, {
+										["description"] = "Appearances from:\nNormal Warfront Completion\nNormal Warfront Quest\nHeroic Warfront Quest",
+										["g"] = {
+											-- Alliance
+											i(166758),	-- Moonpriest's Cloak
+											i(166759),	-- Darkwood Sentinel's Drape
+											i(166760),	-- Kaldorei Archer's Greatcloak
+											i(166761),	-- Wardenguard's Drape
+											-- Horde
+											i(166762),	-- Plaguebringer's Drape
+											i(166763),	-- Deathstalker's Cloak
+											i(166764),	-- Blightguard's Cloak
+											i(166765),	-- Deathguard's Greatcloak
+										},
+									}),
+									n(ARMOR, {
+										["description"] = "Appearances from:\nNormal Warfront Completion\nNormal Warfront Quest\nHeroic Warfront Quest",
+										["g"] = {
+											-- Alliance
+											i(166572),	-- Moonpriest's Visor
+											i(165435),	-- Moonpriest's Coronet
+											i(166558),	-- Moonpriest's Epaulets
+											i(165437),	-- Moonpriest's Mantle
+											i(166577),	-- Moonpriest's Garments
+											i(165460),	-- Moonpriest's Vestments
+											i(165439),	-- Moonpriest's Cuffs
+											i(165434),	-- Moonpriest's Handwraps
+											i(165438),	-- Moonpriest's Sash
+											i(165436),	-- Moonpriest's Legwraps
+											i(165433),	-- Moonpriest's Sandals
+											i(166571),	-- Darkwood Sentinel's Guise
+											i(165443),	-- Darkwood Sentinel's Cowl
+											i(166557),	-- Darkwood Sentinel's Shoulderpads
+											i(165445),	-- Darkwood Sentinel's Monnions
+											i(165440),	-- Darkwood Sentinel's Tunic
+											i(166580),	-- Darkwood Sentinel's Jerkin
+											i(165447),	-- Darkwood Sentinel's Armguards
+											i(165442),	-- Darkwood Sentinel's Grips
+											i(165446),	-- Darkwood Sentinel's Cinch
+											i(165444),	-- Darkwood Sentinel's Breeches
+											i(165441),	-- Darkwood Sentinel's Footpads
+											i(166566),	-- Kaldorei Archer's Coif
+											i(165451),	-- Kaldorei Archer's Hood
+											i(165453),	-- Kaldorei Archer's Shoulderguards
+											i(166556),	-- Kaldorei Archer's Spaulders
+											i(166579),	-- Kaldorei Archer's Hauberk
+											i(165448),	-- Kaldorei Archer's Chainmail
+											i(165455),	-- Kaldorei Archer's Vambraces
+											i(165450),	-- Kaldorei Archer's Gauntlets
+											i(165454),	-- Kaldorei Archer's Belt
+											i(165452),	-- Kaldorei Archer's Legguards
+											i(165449),	-- Kaldorei Archer's Greaves
+											i(166565),	-- Wardenguard's Faceguard
+											i(165459),	-- Wardenguard's Greathelm
+											i(165462),	-- Wardenguard's Pauldrons
+											i(166555),	-- Wardenguard's Shoulderplates
+											i(165456),	-- Wardenguard's Chestplate
+											i(166578),	-- Wardenguard's Breastplate
+											i(165464),	-- Wardenguard's Wristguards
+											i(165458),	-- Wardenguard's Battlegloves
+											i(165463),	-- Wardenguard's Chain
+											i(165461),	-- Wardenguard's Legplates
+											i(165457),	-- Wardenguard's Warboots
+											-- Horde
+											i(165467),	-- Plaguebringer's Cowl
+											i(166564),	-- Plaguebringer's Skullcap
+											i(166554),	-- Plaguebringer's Mantle
+											i(165469),	-- Plaguebringer's Shoulderguards
+											i(166573),	-- Plaguebringer's Vestments
+											i(165492),	-- Plaguebringer's Robe
+											i(165471),	-- Plaguebringer's Armwraps
+											i(165466),	-- Plaguebringer's Gloves
+											i(165470),	-- Plaguebringer's Cord
+											i(165468),	-- Plaguebringer's Legwraps
+											i(165465),	-- Plaguebringer's Boots
+											i(165475),	-- Deathstalker's Collar
+											i(166563),	-- Deathstalker's Mask
+											i(166553),	-- Deathstalker's Shoulderpads
+											i(165477),	-- Deathstalker's Shoulderguards
+											i(166576),	-- Deathstalker's Jerkin
+											i(165472),	-- Deathstalker's Chestpiece
+											i(165479),	-- Deathstalker's Bindings
+											i(165474),	-- Deathstalker's Grips
+											i(165478),	-- Deathstalker's Belt
+											i(165476),	-- Deathstalker's Leggings
+											i(165473),	-- Deathstalker's Treads
+											i(166562),	-- Blightguard's Casque
+											i(165483),	-- Blightguard's Helmet
+											i(166552),	-- Blightguard's Spaulders
+											i(165485),	-- Blightguard's Shoulderguards
+											i(166575),	-- Blightguard's Chainmail
+											i(165480),	-- Blightguard's Harness
+											i(165487),	-- Blightguard's Bracers
+											i(165486),	-- Blightguard's Girdle
+											i(165482),	-- Blightguard's Grasps
+											i(165484),	-- Blightguard's Legguards
+											i(165481),	-- Blightguard's Footguards
+											i(166561),	-- Deathguard's Casque
+											i(165491),	-- Deathguard's Helm
+											i(165494),	-- Deathguard's Pauldrons
+											i(166551),	-- Deathguard's Shoulderplates
+											i(166574),	-- Deathguard's Breastplate
+											i(165488),	-- Deathguard's Chestplate
+											i(165496),	-- Deathguard's Vambraces
+											i(165490),	-- Deathguard's Gauntlets
+											i(165495),	-- Deathguard's Waistplate
+											i(165493),	-- Deathguard's Greaves
+											i(165489),	-- Deathguard's Sabatons
+										},
+									}),
+								},
+							})),
+						},
 					}),
-					-- Weeklies (A)
-					n(QUESTS, sharedData({
-						["isWeekly"] = true,
-						["races"] = ALLIANCE_ONLY,
-					},{
-						q(54387, {	-- Darkshore Donations: Blood-Stained Bone
-							["coord"] = { 67.2, 29.2, BORALUS },
-							["provider"] = { "n", 142995 },	-- Charlane
-						}),
-						q(54379, {	-- Darkshore Donations: Contract: 7th Legion
-							["coord"] = { 67.5, 23.8, BORALUS },
-							["provider"] = { "n", 143005 },	-- Liao
-						}),
-						q(54377, {	-- Darkshore Donations: Crimson Ink
-							["coord"] = { 67.5, 23.8, BORALUS },
-							["provider"] = { "n", 143005 },	-- Liao
-						}),
-						q(54386, {	-- Darkshore Donations: Deep Sea Bandage
-							["coord"] = { 67.1, 27.9, BORALUS },
-							["provider"] = { "n", 142998 },	-- Faella
-						}),
-						q(54382, {	-- Darkshore Donations: Deep Sea Satin
-							["coord"] = { 67.1, 27.9, BORALUS },
-							["provider"] = { "n", 142998 },	-- Faella
-						}),
-						q(54369, {	-- Darkshore Donations: Electroshock Mount Motivator
-							["coord"] = { 66.3, 25.5, BORALUS },
-							["provider"] = { "n", 143008 },	-- Norber Togglesprocket
-						}),
-						q(54373, {	-- Darkshore Donations: Enchant Ring - Seal of Haste
-							["coord"] = { 66.3, 25.1, BORALUS },
-							["provider"] = { "n", 143007 },	-- Mae Wagglewand
-						}),
-						q(54375, {	-- Darkshore Donations: Enchant Ring - Seal of Mastery
-							["coord"] = { 66.3, 25.1, BORALUS },
-							["provider"] = { "n", 143007 },	-- Mae Wagglewand
-						}),
-						q(54380, {	-- Darkshore Donations: Gold
-							["coord"] = { 66.2, 27.6, BORALUS },
-							["provider"] = { "n", 142685 },	-- Paymaster Vauldren
-						}),
-						q(54390, {	-- Darkshore Donations: Masterful Kubiline
-							["coord"] = { 67.6, 24.1, BORALUS },
-							["provider"] = { "n", 143004 },	-- Larold Kyne
-						}),
-						q(54389, {	-- Darkshore Donations: Mistscale
-							["coord"] = { 67.2, 29.2, BORALUS },
-							["provider"] = { "n", 142995 },	-- Charlane
-						}),
-						q(54367, {	-- Darkshore Donations: Platinum Ore
-							["coord"] = { 66.0, 28.5, BORALUS },
-							["provider"] = { "n", 142994 },	-- Brandal Darkbeard
-						}),
-						q(54378, {	-- Darkshore Donations: Potion of Bursting Blood
-							["coord"] = { 66.7, 23.5, BORALUS },
-							["provider"] = { "n", 142993 },	-- Chelsea Strand
-						}),
-						q(54376, {	-- Darkshore Donations: Potion of Replenishment
-							["coord"] = { 66.7, 23.5, BORALUS },
-							["provider"] = { "n", 142993 },	-- Chelsea Strand
-						}),
-						q(54374, {	-- Darkshore Donations: Potion of Rising Death
-							["coord"] = { 66.7, 23.5, BORALUS },
-							["provider"] = { "n", 142993 },	-- Chelsea Strand
-						}),
-						q(54391, {	-- Darkshore Donations: Quick Golden Beryl
-							["coord"] = { 67.6, 24.1, BORALUS },
-							["provider"] = { "n", 143004 },	-- Larold Kyne
-						}),
-						q(54392, {	-- Darkshore Donations: Sand Shifter
-							["coord"] = { 67.0, 27.2, BORALUS },
-							["provider"] = { "n", 142997 },	-- Senedras
-						}),
-						q(54393, {	-- Darkshore Donations: Scarlet Diamond
-							["coord"] = { 67.6, 24.1, BORALUS },
-							["provider"] = { "n", 143004 },	-- Larold Kyne
-						}),
-						q(54395, {	-- Darkshore Donations: Seasoned Steak and Potatoes
-							["coord"] = { 67.0, 27.2, BORALUS },
-							["provider"] = { "n", 142997 },	-- Senedras
-						}),
-						q(54388, {	-- Darkshore Donations: Shimmerscale Diving Helmet
-							["coord"] = { 67.2, 29.2, BORALUS },
-							["provider"] = { "n", 142995 },	-- Charlane
-						}),
-						q(54383, {	-- Darkshore Donations: Shimmerscale Diving Suit
-							["coord"] = { 67.2, 29.2, BORALUS },
-							["provider"] = { "n", 142995 },	-- Charlane
-						}),
-						q(54364, {	-- Darkshore Donations: Star Moss
-							["coord"] = { 66.7, 23.5, BORALUS },
-							["provider"] = { "n", 142993 },	-- Chelsea Strand
-						}),
-						q(54365, {	-- Darkshore Donations: Storm Silver Ore
-							["coord"] = { 66.0, 28.5, BORALUS },
-							["provider"] = { "n", 142994 },	-- Brandal Darkbeard
-						}),
-						q(54394, {	-- Darkshore Donations: Stringy Loins
-							["coord"] = { 67.0, 27.2, BORALUS },
-							["provider"] = { "n", 142997 },	-- Senedras
-						}),
-						q(54371, {	-- Darkshore Donations: Thermo-Accelerated Plague Spreader
-							["coord"] = { 66.3, 25.5, BORALUS },
-							["provider"] = { "n", 143008 },	-- Norber Togglesprocket
-						}),
-						q(54385, {	-- Darkshore Donations: Tidespray Linen Bandage
-							["coord"] = { 67.1, 27.9, BORALUS },
-							["provider"] = { "n", 142998 },	-- Faella
-						}),
-						q(54384, {	-- Darkshore Donations: Tidespray Linen Net
-							["coord"] = { 67.1, 27.9, BORALUS },
-							["provider"] = { "n", 142998 },	-- Faella
-						}),
-						q(54381, {	-- Darkshore Donations: Ultramarine Ink
-							["coord"] = { 67.5, 23.8, BORALUS },
-							["provider"] = { "n", 143005 },	-- Liao
-						}),
-						q(54372, {	-- Darkshore Donations: Umbra Shard
-							["coord"] = { 66.3, 25.1, BORALUS },
-							["provider"] = { "n", 143007 },	-- Mae Wagglewand
-						}),
-						q(54368, {	-- Darkshore Donations: Unstable Temporal Time Shifter
-							["coord"] = { 66.3, 25.5, BORALUS },
-							["provider"] = { "n", 143008 },	-- Norber Togglesprocket
-						}),
-						q(54363, {	-- Darkshore Donations: War Resources
-							["coord"] = { 66.1, 27.2, BORALUS },
-							["provider"] = { "n", 142700 },	-- Quartermaster Peregrin
-						}),
-						q(54396, {	-- Darkshore Donations: Wild Berry Bread
-							["coord"] = { 67.0, 27.2, BORALUS },
-							["provider"] = { "n", 142997 },	-- Senedras
-						}),
-						q(54366, {	-- Darkshore Donations: Winter's Kiss
-							["coord"] = { 66.7, 23.5, BORALUS },
-							["provider"] = { "n", 142993 },	-- Chelsea Strand
-						}),
-						q(54370, {	-- Darkshore Donations: XA-1000 Surface Skimmer
-							["coord"] = { 66.3, 25.5, BORALUS },
-							["provider"] = { "n", 143008 },	-- Norber Togglesprocket
-						}),
-						q(57960, {	-- Heroic Warfront: The Battle for Darkshore
-							["provider"] = { "n", 142721 },	-- Ralston Karn <Recruitment Officer>
-							["coord"] = { 66.0, 26.0, BORALUS },
-							["_drop"] = { "g" },	-- bad API data
-							["g"] = {
-								i(166370, {	-- Sentinel Equipment Cache (A) [Heroic]
-									["modID"] = 23,
-									["sym"] = {
-										{"select","headerID",WAR_EFFORT},{"pop"},
-										{"where","mapID",DARKSHORE},{"pop"},
-										{"where","headerID",COMMON_BOSS_DROPS},{"pop"},
-										{"extract","itemID"},
-										{"where","r",2},	-- Alliance
-										{"myModID"},
-									},
-								}),
-							},
-						}),
-						q(53992, {	-- Warfront: The Battle for Darkshore [Tier 3]
-							["provider"] = { "n", 142721 },	-- Ralston Karn <Recruitment Officer>
-							["coord"] = { 66.0, 26.0, BORALUS },
-							["_drop"] = { "g" },	-- bad API data
-							["g"] = {
-								i(166370, {	-- Sentinel Equipment Cache (A) [Normal]
-									["modID"] = 6,
-									["sym"] = {
-										{"select","headerID",WAR_EFFORT},{"pop"},
-										{"where","mapID",DARKSHORE},{"pop"},
-										{"where","headerID",COMMON_BOSS_DROPS},{"pop"},
-										{"extract","itemID"},
-										{"where","r",2},	-- Alliance
-										{"myModID"},
-									},
-								}),
-							},
-						}),
-					})),
-					-- Weeklies (H)
-					n(QUESTS, sharedData({
-						["isWeekly"] = true,
-						["races"] = HORDE_ONLY,
-					},{
-						q(54353, {	-- Darkshore Donations: Blood-Stained Bone
-							["coord"] = { 53.4, 92.6, DAZARALOR },
-							["provider"] = { "n", 142970 },	-- Kuma Longhoof
-						}),
-						q(54345, {	-- Darkshore Donations: Contract: The Honorbound
-							["coord"] = { 53.6, 92.1, DAZARALOR },
-							["provider"] = { "n", 142981 },	-- Merill Redgrave
-						}),
-						q(54344, {	-- Darkshore Donations: Crimson Ink
-							["coord"] = { 53.6, 92.1, DAZARALOR },
-							["provider"] = { "n", 142981 },	-- Merill Redgrave
-						}),
-						q(54351, {	-- Darkshore Donations: Deep Sea Bandage
-							["coord"] = { 52.5, 93.3, DAZARALOR },
-							["provider"] = { "n", 142975 },	-- Seamstress Vessa
-						}),
-						q(54348, {	-- Darkshore Donations: Deep Sea Satin
-							["coord"] = { 52.5, 93.3, DAZARALOR },
-							["provider"] = { "n", 142975 },	-- Seamstress Vessa
-						}),
-						q(54334, {	-- Darkshore Donations: Electroshock Mount Motivator
-							["coord"] = { 53.0, 94.8, DAZARALOR },
-							["provider"] = { "n", 142983 },	-- Swizzle Fizzcrank
-						}),
-						q(54340, {	-- Darkshore Donations: Enchant Ring - Seal of Haste
-							["coord"] = { 52.7, 93.3, DAZARALOR },
-							["provider"] = { "n", 142992 },	-- Uma'wi
-						}),
-						q(54341, {	-- Darkshore Donations: Enchant Ring - Seal of Mastery
-							["coord"] = { 52.7, 93.3, DAZARALOR },
-							["provider"] = { "n", 142992 },	-- Uma'wi
-						}),
-						q(54346, {	-- Darkshore Donations: Gold
-							["coord"] = { 51.7, 95.4, DAZARALOR },
-							["provider"] = { "n", 142157 },	-- Paymaster Grintooth
-						}),
-						q(54357, {	-- Darkshore Donations: Masterful Kubiline
-							["coord"] = { 51.9, 93.1, DAZARALOR },
-							["provider"] = { "n", 142977 },	-- Meredith Swane
-						}),
-						q(54355, {	-- Darkshore Donations: Mistscale
-							["coord"] = { 53.4, 92.6, DAZARALOR },
-							["provider"] = { "n", 142970 },	-- Kuma Longhoof
-						}),
-						q(54330, {	-- Darkshore Donations: Platinum Ore
-							["coord"] = { 52.6, 94.8, DAZARALOR },
-							["provider"] = { "n", 142969 },	-- Logarr
-						}),
-						q(54342, {	-- Darkshore Donations: Potion of Bursting Blood
-							["coord"] = { 51.2, 95.5, DAZARALOR },
-							["provider"] = { "n", 142159 },	-- Zen'kin
-						}),
-						q(54343, {	-- Darkshore Donations: Potion of Replenishment
-							["coord"] = { 51.2, 95.5, DAZARALOR },
-							["provider"] = { "n", 142159 },	-- Zen'kin
-						}),
-						q(54339, {	-- Darkshore Donations: Potion of Rising Death
-							["coord"] = { 51.2, 95.5, DAZARALOR },
-							["provider"] = { "n", 142159 },	-- Zen'kin
-						}),
-						q(54356, {	-- Darkshore Donations: Quick Golden Beryl
-							["coord"] = { 51.9, 93.1, DAZARALOR },
-							["provider"] = { "n", 142977 },	-- Meredith Swane
-						}),
-						q(54359, {	-- Darkshore Donations: Sand Shifter
-							["coord"] = { 53.8, 94.4, DAZARALOR },
-							["provider"] = { "n", 142973 },	-- Mai-Lu
-						}),
-						q(54358, {	-- Darkshore Donations: Scarlet Diamond
-							["coord"] = { 51.9, 93.1, DAZARALOR },
-							["provider"] = { "n", 142977 },	-- Meredith Swane
-						}),
-						q(54362, {	-- Darkshore Donations: Seasoned Steak and Potatoes
-							["coord"] = { 53.8, 94.4, DAZARALOR },
-							["provider"] = { "n", 142973 },	-- Mai-Lu
-						}),
-						q(54354, {	-- Darkshore Donations: Shimmerscale Diving Helmet
-							["coord"] = { 53.4, 92.6, DAZARALOR },
-							["provider"] = { "n", 142970 },	-- Kuma Longhoof
-						}),
-						q(54352, {	-- Darkshore Donations: Shimmerscale Diving Suit
-							["coord"] = { 53.4, 92.6, DAZARALOR },
-							["provider"] = { "n", 142970 },	-- Kuma Longhoof
-						}),
-						q(54332, {	-- Darkshore Donations: Star Moss
-							["coord"] = { 51.2, 95.5, DAZARALOR },
-							["provider"] = { "n", 142159 },	-- Zen'kin
-						}),
-						q(54333, {	-- Darkshore Donations: Storm Silver Ore
-							["coord"] = { 52.6, 94.8, DAZARALOR },
-							["provider"] = { "n", 142969 },	-- Logarr
-						}),
-						q(54360, {	-- Darkshore Donations: Stringy Loins
-							["coord"] = { 53.8, 94.4, DAZARALOR },
-							["provider"] = { "n", 142973 },	-- Mai-Lu
-						}),
-						q(54338, {	-- Darkshore Donations: Thermo-Accelerated Plague Spreader
-							["coord"] = { 53.0, 94.8, DAZARALOR },
-							["provider"] = { "n", 142983 },	-- Swizzle Fizzcrank
-						}),
-						q(54350, {	-- Darkshore Donations: Tidespray Linen Net
-							["coord"] = { 52.5, 93.3, DAZARALOR },
-							["provider"] = { "n", 142975 },	-- Seamstress Vessa
-						}),
-						q(54347, {	-- Darkshore Donations: Ultramarine Ink
-							["coord"] = { 53.6, 92.1, DAZARALOR },
-							["provider"] = { "n", 142981 },	-- Merill Redgrave
-						}),
-						q(54337, {	-- Darkshore Donations: Umbra Shard
-							["coord"] = { 52.7, 93.3, DAZARALOR },
-							["provider"] = { "n", 142992 },	-- Uma'wi
-						}),
-						q(54335, {	-- Darkshore Donations: Unstable Temporal Time Shifter
-							["coord"] = { 53.0, 94.8, DAZARALOR },
-							["provider"] = { "n", 142983 },	-- Swizzle Fizzcrank
-						}),
-						q(54329, {	-- Darkshore Donations: War Resources
-							["coord"] = { 51.7, 95.1, DAZARALOR },
-							["provider"] = { "n", 142158 },	-- Quartermaster Rauka
-						}),
-						q(54361, {	-- Darkshore Donations: Wild Berry Bread
-							["coord"] = { 53.8, 94.4, DAZARALOR },
-							["provider"] = { "n", 142973 },	-- Mai-Lu
-						}),
-						q(54331, {	-- Darkshore Donations: Winter's Kiss
-							["coord"] = { 51.2, 95.5, DAZARALOR },
-							["provider"] = { "n", 142159 },	-- Zen'kin
-						}),
-						q(54336, {	-- Darkshore Donations: XA-1000 Surface Skimmer
-							["coord"] = { 53.0, 94.8, DAZARALOR },
-							["provider"] = { "n", 142983 },	-- Swizzle Fizzcrank
-						}),
-						q(57959, {	-- Heroic Warfront: The Battle for Darkshore
-							["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
-							["coord"] = { 52.9, 94.3, DAZARALOR },
-							["g"] = {
-								i(166369, {	-- Deathguard Equipment Cache (H) [Heroic]
-									["modID"] = 23,
-									["sym"] = {
-										{"select","headerID",WAR_EFFORT},{"pop"},
-										{"where","mapID",DARKSHORE},{"pop"},
-										{"where","headerID",COMMON_BOSS_DROPS},{"pop"},
-										{"extract","itemID"},
-										{"where","r",1},	-- Horde
-										{"myModID"},
-									},
-								}),
-							},
-						}),
-						q(53955, {	-- Warfront: The Battle for Darkshore [Tier 3]
-							["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
-							["coord"] = { 52.97, 94.35, DAZARALOR },
-							["g"] = {
-								i(166369, {	-- Deathguard Equipment Cache (H) [Normal]
-									["modID"] = 6,
-									["sym"] = {
-										{"select","headerID",WAR_EFFORT},{"pop"},
-										{"where","mapID",DARKSHORE},{"pop"},
-										{"where","headerID",COMMON_BOSS_DROPS},{"pop"},
-										{"extract","itemID"},
-										{"where","r",1},	-- Horde
-										{"myModID"},
-									},
-								}),
-							},
-						}),
-					})),
-					-- Sources:
-					-- Rares/Treasures (5)
-					-- Normal Warfront Victory [6]
-					-- Normal Quest (6)
-					-- Heroic Quest (23)
-					-- TODO Nathanos WB sym (23)
-					n(REWARDS, bubbleDown({
-						["modID"] = 6,
-					},{
-						["sym"] = {	-- when showing the Rewards in popout/minilist/tooltip, include the Weapons
-							{"select","headerID",WARFRONT_BATTLE_FOR_DARKSHORE},{"pop"},
-							{"where","headerID",COMMON_BOSS_DROPS},{"pop"},
-							{"where","headerID",WEAPONS},
-						},
-						["g"] = {
-							n(BACK, {
-								["description"] = "Appearances from:\nNormal Warfront Completion\nNormal Warfront Quest\nHeroic Warfront Quest",
-								["g"] = {
-									-- Alliance
-									i(166758),	-- Moonpriest's Cloak
-									i(166759),	-- Darkwood Sentinel's Drape
-									i(166760),	-- Kaldorei Archer's Greatcloak
-									i(166761),	-- Wardenguard's Drape
-									-- Horde
-									i(166762),	-- Plaguebringer's Drape
-									i(166763),	-- Deathstalker's Cloak
-									i(166764),	-- Blightguard's Cloak
-									i(166765),	-- Deathguard's Greatcloak
-								},
-							}),
-							n(ARMOR, {
-								["description"] = "Appearances from:\nNormal Warfront Completion\nNormal Warfront Quest\nHeroic Warfront Quest",
-								["g"] = {
-									-- Alliance
-									i(166572),	-- Moonpriest's Visor
-									i(165435),	-- Moonpriest's Coronet
-									i(166558),	-- Moonpriest's Epaulets
-									i(165437),	-- Moonpriest's Mantle
-									i(166577),	-- Moonpriest's Garments
-									i(165460),	-- Moonpriest's Vestments
-									i(165439),	-- Moonpriest's Cuffs
-									i(165434),	-- Moonpriest's Handwraps
-									i(165438),	-- Moonpriest's Sash
-									i(165436),	-- Moonpriest's Legwraps
-									i(165433),	-- Moonpriest's Sandals
-									i(166571),	-- Darkwood Sentinel's Guise
-									i(165443),	-- Darkwood Sentinel's Cowl
-									i(166557),	-- Darkwood Sentinel's Shoulderpads
-									i(165445),	-- Darkwood Sentinel's Monnions
-									i(165440),	-- Darkwood Sentinel's Tunic
-									i(166580),	-- Darkwood Sentinel's Jerkin
-									i(165447),	-- Darkwood Sentinel's Armguards
-									i(165442),	-- Darkwood Sentinel's Grips
-									i(165446),	-- Darkwood Sentinel's Cinch
-									i(165444),	-- Darkwood Sentinel's Breeches
-									i(165441),	-- Darkwood Sentinel's Footpads
-									i(166566),	-- Kaldorei Archer's Coif
-									i(165451),	-- Kaldorei Archer's Hood
-									i(165453),	-- Kaldorei Archer's Shoulderguards
-									i(166556),	-- Kaldorei Archer's Spaulders
-									i(166579),	-- Kaldorei Archer's Hauberk
-									i(165448),	-- Kaldorei Archer's Chainmail
-									i(165455),	-- Kaldorei Archer's Vambraces
-									i(165450),	-- Kaldorei Archer's Gauntlets
-									i(165454),	-- Kaldorei Archer's Belt
-									i(165452),	-- Kaldorei Archer's Legguards
-									i(165449),	-- Kaldorei Archer's Greaves
-									i(166565),	-- Wardenguard's Faceguard
-									i(165459),	-- Wardenguard's Greathelm
-									i(165462),	-- Wardenguard's Pauldrons
-									i(166555),	-- Wardenguard's Shoulderplates
-									i(165456),	-- Wardenguard's Chestplate
-									i(166578),	-- Wardenguard's Breastplate
-									i(165464),	-- Wardenguard's Wristguards
-									i(165458),	-- Wardenguard's Battlegloves
-									i(165463),	-- Wardenguard's Chain
-									i(165461),	-- Wardenguard's Legplates
-									i(165457),	-- Wardenguard's Warboots
-									-- Horde
-									i(165467),	-- Plaguebringer's Cowl
-									i(166564),	-- Plaguebringer's Skullcap
-									i(166554),	-- Plaguebringer's Mantle
-									i(165469),	-- Plaguebringer's Shoulderguards
-									i(166573),	-- Plaguebringer's Vestments
-									i(165492),	-- Plaguebringer's Robe
-									i(165471),	-- Plaguebringer's Armwraps
-									i(165466),	-- Plaguebringer's Gloves
-									i(165470),	-- Plaguebringer's Cord
-									i(165468),	-- Plaguebringer's Legwraps
-									i(165465),	-- Plaguebringer's Boots
-									i(165475),	-- Deathstalker's Collar
-									i(166563),	-- Deathstalker's Mask
-									i(166553),	-- Deathstalker's Shoulderpads
-									i(165477),	-- Deathstalker's Shoulderguards
-									i(166576),	-- Deathstalker's Jerkin
-									i(165472),	-- Deathstalker's Chestpiece
-									i(165479),	-- Deathstalker's Bindings
-									i(165474),	-- Deathstalker's Grips
-									i(165478),	-- Deathstalker's Belt
-									i(165476),	-- Deathstalker's Leggings
-									i(165473),	-- Deathstalker's Treads
-									i(166562),	-- Blightguard's Casque
-									i(165483),	-- Blightguard's Helmet
-									i(166552),	-- Blightguard's Spaulders
-									i(165485),	-- Blightguard's Shoulderguards
-									i(166575),	-- Blightguard's Chainmail
-									i(165480),	-- Blightguard's Harness
-									i(165487),	-- Blightguard's Bracers
-									i(165486),	-- Blightguard's Girdle
-									i(165482),	-- Blightguard's Grasps
-									i(165484),	-- Blightguard's Legguards
-									i(165481),	-- Blightguard's Footguards
-									i(166561),	-- Deathguard's Casque
-									i(165491),	-- Deathguard's Helm
-									i(165494),	-- Deathguard's Pauldrons
-									i(166551),	-- Deathguard's Shoulderplates
-									i(166574),	-- Deathguard's Breastplate
-									i(165488),	-- Deathguard's Chestplate
-									i(165496),	-- Deathguard's Vambraces
-									i(165490),	-- Deathguard's Gauntlets
-									i(165495),	-- Deathguard's Waistplate
-									i(165493),	-- Deathguard's Greaves
-									i(165489),	-- Deathguard's Sabatons
-								},
-							}),
-						},
-					})),
 				},
 			}),
 		}),
