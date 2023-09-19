@@ -8,12 +8,13 @@ CLASSIC_HERBALISM = {
 		-- #endif
 		["rank"] = 1,
 	}),
+	--[[
+	-- CRIEVE NOTE: This spell doesn't exist in any version of the game.
 	r(8387, {	-- Find Herbs [Rank 2]
-		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
-		-- #endif
 		["rank"] = 2,
 	}),
+	]]--
 	r(2366, {	-- Herb Gathering (Apprentice)
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,

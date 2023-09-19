@@ -4643,13 +4643,6 @@ root(ROOTS.NeverImplemented, {
 					["description"] = "Category: |cFFf09f26World PvP|r",
 					["lvl"] = 50,
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(167100, { -- Alliance Champion's Cache
-							["b"] = 1,
-							["ilvl"] = 59,
-							["q"] = 3,
-						}),
-					},
 				}),
 				-- tools
 				-- 8.1.0.27826

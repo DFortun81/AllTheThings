@@ -35,29 +35,6 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					i(168140),	-- Ancient Blood Pigment
 				}),
 			}),
-			e(2213, {	-- Doom's Howl [Warfront]
-				["isWeekly"] = true,
-				["questID"] = 52847,	-- Doom's Howl (WQ)
-				["isRaid"] = true,
-				["races"] = ALLIANCE_ONLY,
-				["coord"] = { 37.8, 40.2, ARATHI_HIGHLANDS },
-				["creatureID"] = 138122,	-- Doom's Howl
-				["g"] = bubbleDown({["modID"] = 3}, {
-					i(163195),	-- Schematic: Makeshift Azerite Detector (confirmed drop by Crieve on stream 11.23.18)
-					i(163828),	-- Toy Siege Tower (TOY!)
-					i(161464),	-- Alliance Bowman's Coif
-					i(161466),	-- Battlemage's Collar
-					i(161468),	-- Gilded-Wing Shoulderguards
-					i(161471),	-- Lion's Roar Pauldrons
-					i(161465),	-- Warcaster's Arcane Mantle
-					i(161470),	-- Polished Shieldbearer's Breastplate
-					i(161469),	-- Sharpshooter's Chainmail Hauberk
-					i(161467),	-- Vest of the Veiled Gryphon
-					i(161472),	-- Lion's Grace
-					i(161473),	-- Lion's Guile
-					i(161474),	-- Lion's Strength
-				}),
-			}),
 			e(2210, {	-- Dunegorger Kraulok
 				["isWeekly"] = true,
 				["isWorldQuest"] = true,
@@ -215,29 +192,6 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					i(161412),	-- Spiritbound Voodoo Burl
 					i(161411),	-- T'zane's Barkspines
 					i(168140),	-- Ancient Blood Pigment
-				}),
-			}),
-			e(2212, {	-- The Lion's Roar [Warfront]
-				["isWeekly"] = true,
-				["questID"] = 52848,	-- The Lion's Roar (WQ)
-				["isRaid"] = true,
-				["races"] = HORDE_ONLY,
-				["coord"] = { 35.5, 38.9, ARATHI_HIGHLANDS },
-				["creatureID"] = 137374,	-- The Lion's Roar
-				["g"] = bubbleDown({["modID"] = 3}, {
-					i(163195),	-- Schematic: Makeshift Azerite Detector (confirmed Discord 2022-08-01)
-					i(163829),	-- Toy War Machine (TOY!)
-					i(161455),	-- Battlemage's Collar
-					i(161453),	-- Warscout's Horned Helm
-					i(161457),	-- Dire-Tooth Spaulders
-					i(161460),	-- Spiked Dreadshield Pauldrons
-					i(161454),	-- Warcaster's Doom Mantle
-					i(161456),	-- Doom's Howl Vest
-					i(161459),	-- Molded War Machine Grill
-					i(161458),	-- Scalemail Battle Harness
-					i(161463),	-- Doom's Fury
-					i(161461),	-- Doom's Hatred
-					i(161462),	-- Doom's Wake
 				}),
 			}),
 			e(2362, {	-- Ulmath, the Soulbinder

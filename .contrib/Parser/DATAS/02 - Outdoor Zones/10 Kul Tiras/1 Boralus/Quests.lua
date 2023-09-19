@@ -25,20 +25,20 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				}),
 				q(54978, {	-- Against Overwhelming Odds
 					["provider"] = { "n", 135614 },	-- Master Mathias Shaw
-					["isWeekly"] = true,
 					["coord"] = { 70.4, 27.0, BORALUS },
 					["races"] = ALLIANCE_ONLY,
+					["isWeekly"] = true,
 					["g"] = {
 						i(167100, {	-- Alliance Champion's Cache
 							["modID"] = 53,	-- ilvl 415
 							["sym"] = {
-								{ "select", "headerID", WARFRONT },
-								{ "pop" },	-- Discard the War Effort Header and acquire the children.
-								{ "where", "mapID", ARATHI_HIGHLANDS },
-								{ "pop" },	-- Discard the Map Header and acquire the children.
-								{ "where", "headerID", COMMON_BOSS_DROPS },	-- Select the Common Boss Drop Header.
-								{ "pop" },	-- Discard the Common Boss Drop Header and acquire the children.
-								{ "modID", 53 },	-- iLvl 415
+								{"select", "headerID", WARFRONT_BATTLE_FOR_STROMGARDE },
+								{"pop"},	-- Discard the War Front Header and acquire the children.
+								{"where", "headerID", COMMON_BOSS_DROPS},	-- Select the Common Boss Drop Header.
+								{"pop"},	-- Discard the Common Boss Drop Header and acquire the children.
+								{"where", "headerID", FACTION_HEADER_ALLIANCE},	-- Select the Faction Header.
+								{"pop"},	-- Discard the Faction Header and acquire the children.
+								{"modID", 53 },	-- iLvl 415
 							},
 						}),
 					},

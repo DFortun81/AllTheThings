@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 
 root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
-	n(WARFRONT, {
+	n(WAR_EFFORT, {
 		m(DARKSHORE, {
 			-- Daily Treasures
 			n(TREASURES, sharedData({["isDaily"] = true},{
@@ -17,7 +17,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 }));
 
 root(ROOTS.HiddenQuestTriggers, tier(BFA_TIER, {
-	n(WARFRONT, {
+	n(WAR_EFFORT, {
 		m(DARKSHORE, {
 			q(54908),	-- Opening Darkshore Cache 60.8,22.2 (TODO: move to actual object above)
 		}),

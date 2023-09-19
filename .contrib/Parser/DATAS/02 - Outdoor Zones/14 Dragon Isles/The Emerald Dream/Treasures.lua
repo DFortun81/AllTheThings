@@ -30,6 +30,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(208856),	-- Pocket Lint // in-case it will be same itemID but with proper name
 				},
 			}),
+			o(411778, {	-- Pollenfused Bristlebruin Fur Sample
+				--["classes"] = DRUID, (need to confirm)
+				["coord"] = { 63.7, 39.2, TREE_1 },
+				["g"] = {
+					i(210727),	-- Pollenfused Bristlebruin Fur Sample
+				},
+			}),
 			n(210544, {
 				["questID"] = 78033,	-- trigger 'accepted' part and completed when he drop chest (pseudo-quest?), have (w) in-game
 				["description"] = "Interact with this npc 3 times to spawn chest, after each interaction - he will run away. Just follow him.",

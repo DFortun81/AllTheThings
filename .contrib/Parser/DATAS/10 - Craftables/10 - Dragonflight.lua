@@ -3022,6 +3022,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstSkin(74125, 193648),	-- Skinning Infernum
 			FirstSkin(74127, 193647),	-- Skinning Karantun
 			FirstSkin(74238, 203625, ADDED_10_1_0),	-- Skinning Karokta
+			FirstSkin(78339, 210046, ADDED_10_2_0),	-- Skinning Keen-eyed Ciana
 			FirstSkin(74147, 194608),	-- Skinning Kholdeg (Grand Hunt)
 			FirstSkin(74145, 194438),	-- Skinning Khomuur (Grand Hunt)
 			FirstSkin(74155, 194761),	-- Skinning Khuumog (Grand Hunt)

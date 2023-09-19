@@ -2362,7 +2362,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #elseif AFTER 10.1.7
 					["crs"] = {
-						604,	-- Plague ARATHI_HIGHLANDS
+						604,	-- Plague Spreader
 						3,		-- Flesh Eater
 					},
 					["coords"] = {
@@ -2385,7 +2385,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #elseif AFTER 10.1.7
 					["crs"] = {
-						604,	-- Plague ARATHI_HIGHLANDS
+						604,	-- Plague Spreader
 						3,		-- Flesh Eater
 					},
 					["coords"] = {
@@ -2426,7 +2426,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #elseif AFTER 10.1.7
 					["crs"] = {
-						604,	-- Plague ARATHI_HIGHLANDS
+						604,	-- Plague Spreader
 						3,		-- Flesh Eater
 					},
 					["coords"] = {
@@ -2470,7 +2470,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #elseif AFTER 10.1.7
 					["crs"] = {
-						604,	-- Plague ARATHI_HIGHLANDS
+						604,	-- Plague Spreader
 						3,		-- Flesh Eater
 					},
 					["coords"] = {

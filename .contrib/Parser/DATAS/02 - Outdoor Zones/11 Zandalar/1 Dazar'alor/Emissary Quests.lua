@@ -11,25 +11,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 58.0, 62.6, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["isWorldQuest"] = true,
-				["g"] = {
-					i(165871, {	-- Honorbound Equipment Cache (awarded for all incursions)
-						["description"] = "This cache is awarded for completing any incursion on a Horde character.",
-						["sym"] = {
-							{"select", "headerID", WARFRONT },
-							{"pop"},	-- Discard the War Effort Header and acquire the children.
-							{"where", "mapID", ARATHI_HIGHLANDS },
-							{"pop"},	-- Discard the Map Header and acquire the children.
-							{"where", "headerID", COMMON_BOSS_DROPS},	-- Select the Common Boss Drop Header.
-							{"pop"},	-- Discard the Common Boss Drop Header and acquire the children.
-							{"modID", 5},	-- iLvl 340
-						},
-					}),
-					i(163857, {	-- Azerite Armor Cache
-						["sym"] = {
-							{"sub", "bfa_azerite_armor_chest" },
-						},
-					}),
-				},
+				["sym"] = { { "select", "itemID", 165871, 163857 } },		-- Honorbound Equipment Cache & Azerite Armor Cache
 			}),
 			q(54455, {	-- Supplies from the Honorbound
 				["provider"] = { "n", 135447 },	-- Ransa Greyfeather

@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, {
 	tier(BFA_TIER, {
-		n(WARFRONT, {
+		n(WAR_EFFORT, {
 			m(DARKSHORE, {
 				n(WORLD_QUESTS, sharedData({	-- Alliance
 					["races"] = ALLIANCE_ONLY,

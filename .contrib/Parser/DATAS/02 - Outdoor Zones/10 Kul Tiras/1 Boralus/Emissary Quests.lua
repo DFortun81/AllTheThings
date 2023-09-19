@@ -10,24 +10,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 69.32, 24.94, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
-				["g"] = {
-					i(165872, {	-- 7th Legion Equipment Cache (awarded for all incursions)
-						["sym"] = {
-							{"select", "headerID", WARFRONT },
-							{"pop"},	-- Discard the War Effort Header and acquire the children.
-							{"where", "mapID", ARATHI_HIGHLANDS },
-							{"pop"},	-- Discard the Map Header and acquire the children.
-							{"where", "headerID", COMMON_BOSS_DROPS},	-- Select the Common Boss Drop Header.
-							{"pop"},	-- Discard the Common Boss Drop Header and acquire the children.
-							{"modID", 5},	-- iLvl 340
-						},
-					}),
-					i(163857, {	-- Azerite Armor Cache
-						["sym"] = {
-							{"sub", "bfa_azerite_armor_chest" },
-						},
-					}),
-				},
+				["sym"] = { { "select", "itemID", 165872, 163857 } },		-- 7th Legion Equipment Cache & Azerite Armor Cache
 			}),
 			q(50599, {	-- Proudmoore Admiralty
 				["provider"] = { "n", 135808 },	-- Provisioner Fray
