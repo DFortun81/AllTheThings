@@ -346,7 +346,7 @@ local fieldConverters = {
 		-- Retail used this commented out section instead, see which one is better
 		-- don't cache mapID from coord for anything which is itself an actual instance or a map
 		-- if currentInstance ~= group and not rawget(group, "mapID") and not rawget(group, "difficultyID") then
-		if not (group.instanceID or group.mapID or group.objectiveID) then
+		if not (group.instanceID or group.mapID or group.objectiveID or group.difficultyID) then
 			return cacheMapID(group, coord[3]);
 		end
 	end,
@@ -354,7 +354,7 @@ local fieldConverters = {
 		-- Retail used this commented out section instead, see which one is better
 		-- don't cache mapID from coord for anything which is itself an actual instance or a map
 		-- if currentInstance ~= group and not rawget(group, "mapID") and not rawget(group, "difficultyID") then
-		if not (group.instanceID or group.mapID or group.objectiveID) then
+		if not (group.instanceID or group.mapID or group.objectiveID or group.difficultyID) then
 			for i,coord in ipairs(coords) do
 				cacheMapID(group, coord[3]);
 			end
