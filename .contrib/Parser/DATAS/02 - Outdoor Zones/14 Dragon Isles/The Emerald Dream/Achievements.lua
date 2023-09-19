@@ -206,75 +206,75 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			ach(19013, {	-- I Dream of Seeds
 				crit(62396, {	-- Ageless Blossom
-					--["coord"] = { x, y, TREE_1 },
+					["coord"] = { 59.7, 16.9, TREE_1 },
+					--["questID"] = xx, seems like it is triggered with qID 77209 or somewhere from that chain
+				}),
+				crit(62041, {	-- Belligerent Begonias (n: 208617)
+					["coord"] = { 49.9, 35.4, TREE_1 },
 					--["questID"] = xx,
 				}),
-				crit(62041, {	-- Belligerent Begonias
-					--["coord"] = { x, y, TREE_1 },
+				crit(62029, {	-- Chiming Foxglove (n: 208511)
+					["coord"] = { 54.6, 67.6, TREE_1 },
 					--["questID"] = xx,
 				}),
-				crit(62029, {	-- Chiming Foxglove
-					--["coord"] = { x, y, TREE_1 },
+				crit(62185, {	-- Comfy Chamomile (n: 210723)
+					["coord"] = { 38.4, 59.2, TREE_1 },
 					--["questID"] = xx,
 				}),
-				crit(62185, {	-- Comfy Chamomile
-					--["coord"] = { x, y, TREE_1 },
+				crit(62030, {	-- Dragon's Daffodil (n: 208556)
+					["coord"] = { 64.0, 64.8, TREE_1 },
 					--["questID"] = xx,
 				}),
-				crit(62030, {	-- Dragon's Daffodil
-					--["coord"] = { x, y, TREE_1 },
+				crit(62037, {	-- Dreamer's Daisy (n: 208615)
+					["coord"] = { 46.4, 40.5, TREE_1 },
 					--["questID"] = xx,
 				}),
-				crit(62037, {	-- Dreamer's Daisy
-					--["coord"] = { x, y, TREE_1 },
+				crit(62189, {	-- 	Flourishing Scurfpea (n: 210725)
+					["coord"] = { 48.7, 80.5, TREE_1 },
 					--["questID"] = xx,
 				}),
-				crit(62189, {	-- 	Flourishing Scurfpea
-					--["coord"] = { x, y, TREE_1 },
+				crit(62032, {	-- Fuzzy Licorice (n: 208605)
+					["coord"] = { 63.5, 47.1, TREE_1 },
 					--["questID"] = xx,
 				}),
-				crit(62032, {	-- Fuzzy Licorice
-					--["coord"] = { x, y, TREE_1 },
+				crit(62036, {	-- Glade Goldenrod (n: 209880)
+					["coord"] = { 40.7, 43.5, TREE_1 },
 					--["questID"] = xx,
 				}),
-				crit(62036, {	-- Glade Goldenrod
-					--["coord"] = { x, y, TREE_1 },
+				crit(62027, {	-- Lavatouched Lilies (n: 209583)
+					["coord"] = { 40.7, 24.8, TREE_1 },
 					--["questID"] = xx,
 				}),
-				crit(62027, {	-- Lavatouched Lilies
-					--["coord"] = { x, y, TREE_1 },
+				crit(62039, {	-- Lofty Lupin (n: 208606)
+					["coord"] = { 56.7, 44.9, TREE_1 },
 					--["questID"] = xx,
 				}),
-				crit(62039, {	-- Lofty Lupin
-					--["coord"] = { x, y, TREE_1 },
+				crit(62040, {	-- Lullaby Lavender (n: 209599)
+					["coord"] = { 56.5, 37.7, TREE_1 },
 					--["questID"] = xx,
 				}),
-				crit(62040, {	-- Lullaby Lavender
-					--["coord"] = { x, y, TREE_1 },
+				crit(62186, {	-- Moon Tulip (n: ?)
+					["coord"] = { 42.6, 74.0, TREE_1 },
 					--["questID"] = xx,
 				}),
-				crit(62186, {	-- Moon Tulip
-					--["coord"] = { x, y, TREE_1 },
+				crit(62038, {	-- Ringing Rose (n: 208607)
+					["coord"] = { 49.2, 48.1, TREE_1 },
 					--["questID"] = xx,
 				}),
-				crit(62038, {	-- Ringing Rose
-					--["coord"] = { x, y, TREE_1 },
+				crit(62031, {	-- Singing Weedling (n: 208563)
+					["coord"] = { 63.0, 52.8, TREE_1 },
 					--["questID"] = xx,
 				}),
-				crit(62031, {	-- Singing Weedling
-					--["coord"] = { x, y, TREE_1 },
-					--["questID"] = xx,
-				}),
-				crit(62035, {	-- Viridescent Sprout
-					--["coord"] = { x, y, TREE_1 },
+				crit(62035, {	-- Viridescent Sprout (n: 208616)
+					["coord"] = { 40.0, 52.7, TREE_1 },
 					--["questID"] = xx,
 				}),
 				crit(62397, {	-- Whisperbloom Sapling
 					--["coord"] = { x, y, TREE_1 },
 					--["questID"] = xx,
 				}),
-				crit(62028, {	-- Ysera's Clover
-					--["coord"] = { x, y, TREE_1 },
+				crit(62028, {	-- Ysera's Clover (n: 208443)
+					["coord"] = { 59.2, 58.8, TREE_1 },
 					--["questID"] = xx,
 				}),
 			}),

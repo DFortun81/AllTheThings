@@ -892,7 +892,6 @@ root(ROOTS.Unsorted, {
 			i(208348),	-- Binds of the Shatterer
 			i(208349),	-- Burning Leather Cuffs
 			i(208350),	-- Ochre Field Signet
-			i(208353),	-- Djaradin's Molten Band
 			i(208355),	-- String of Delicacies
 			i(208356),	-- Earthbound Furbolg's Shroud
 			i(208357),	-- Henri's Warm Coat
@@ -1161,7 +1160,6 @@ root(ROOTS.Unsorted, {
 			i(209953),	-- Dancing Dream Blossoms
 			i(209954),	-- Moragh's Favorite Rock
 			i(209956),	-- Ori's Verdant Feather
-			i(209957),	-- Fang of the Frenzied Nightclaw
 			i(209958),	-- Rune of the Umbramane
 			i(209959),	-- Pinch of Dream Magic
 			i(210005),	-- 10.2 Monster - Weapon - Staff - 10.1.5 Weapon Staff - Staff_2H_Druid_C_02_Color1

@@ -79,6 +79,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			n(208658, {	-- Moltenbinder's Disciple
 				["questID"] = 77941,
 				["coord"] = { 45.8, 18.8, TREE_1 },
+				["g"] = {
+					i(208353),	-- Djaradin's Molten Band
+				},
 			}),
 			n(210045, {	-- Moragh the Slothful
 				["questID"] = 78210,
@@ -111,6 +114,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 77890,
 				["coord"] = { 44.5, 39.3, TREE_1 },
 				["g"] = {
+					i(209957),	-- Fang of the Frenzied Nightclaw
 					i(208322),	-- Treads of the Nightclaw
 				},
 			}),
@@ -130,6 +134,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 78263,
 				["coords"] = {
 					{ 60.0, 63.3, TREE_1 },
+					{ 59.0, 71.9, TREE_1 },
+				},
+				["g"] = {
+					i(210105),	-- Autumn Druid Belt
 				},
 			}),
 			n(209902, {	-- Talthonel Ashwhisper
