@@ -15267,12 +15267,13 @@ RowOnEnter = function (self)
 			if reference.pvp then
 				GameTooltip:AddLine(L["REQUIRES_PVP"], 1, 1, 1, 1, true);
 			end
-			-- Has a symlink for additonal information
-			if reference.sym then
-				GameTooltip:AddLine(L["SYM_ROW_INFORMATION"], 1, 1, 1, 1, true);
-			end
 			-- Tooltip for something which was not attached via search, so mark it as complete here
 			GameTooltip.AttachComplete = true;
+		end
+
+		-- Has a symlink for additonal information
+		if reference.sym then
+			GameTooltip:AddLine(L["SYM_ROW_INFORMATION"], 1, 1, 1, 1, true);
 		end
 
 		-- Ignored for Source/Progress
