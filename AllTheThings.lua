@@ -4488,7 +4488,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 				end
 			end
 		end
-		
+
 		local awp, rwp = GetRelativeValue(group, "awp"), group.rwp;
 		local awpGreaterThanRWP = true;
 		if awp and ((rwp or (group.u and group.u < 3)) or awp >= app.GameBuildVersion) then
@@ -4503,7 +4503,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 		if rwp then
 			tinsert(info, awpGreaterThanRWP and 1 or 2, { left = GetRemovedWithPatchString(rwp), wrap = true, color = app.Colors.RemovedWithPatch });
 		end
-		
+
 		if group.u and (not group.crs or group.itemID or group.s) then
 			-- specifically-tagged NYI groups which are under 'Unsorted' should show a slightly different message
 			if group.u == 1 and app.RecursiveFirstParentWithFieldValue(group, "_missing", true) then
@@ -15243,7 +15243,7 @@ RowOnEnter = function (self)
 					end
 				end
 			end
-			
+
 			local awp, rwp = GetRelativeValue(group, "awp"), reference.rwp;
 			if rwp then
 				local _,r,g,b = HexToARGB(app.Colors.RemovedWithPatch);
@@ -18243,9 +18243,13 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				RefreshLocation(true);
 			end
 		end
-		local function LocationTrigger()
+		local function LocationTrigger(forceNewMap)
 			if app.InWorld and app.IsReady and (app.Settings:GetTooltipSetting("Auto:MiniList") or app:GetWindow("CurrentInstance"):IsVisible()) then
 				-- app.PrintDebug("LocationTrigger-Callback")
+				if forceNewMap then
+					-- this allows minilist to rebuild itself
+					wipe(self.CurrentMaps)
+				end
 				AfterCombatOrDelayedCallback(RefreshLocation, 0.25);
 			end
 		end
@@ -21886,6 +21890,10 @@ end
 local function DGU_CustomCollect(t)
 	-- app.PrintDebug("DGU_CustomCollect",t.hash)
 	Callback(app.RefreshCustomCollectibility);
+end
+local function DGU_Locationtrigger(t)
+	-- app.PrintDebug("DGU_Locationtrigger",t.hash)
+	Callback(app.LocationTrigger, true);
 end
 -- A set of quests which indicate a needed refresh to the Custom Collect status of the character
 local DGU_Quests = {

@@ -3353,6 +3353,8 @@ function(self)
 end,
 function(self)
 	settings:SetTooltipSetting("NPCData:Nested", self:GetChecked())
+	-- requires re-building of minilist
+	app.LocationTrigger(true)
 end)
 checkboxNestedNPCData:SetATTTooltip(L["NPC_DATA_NESTED_CHECKBOX_TOOLTIP"])
 checkboxNestedNPCData:AlignBelow(checkboxUseMoreColors)
@@ -3360,7 +3362,6 @@ checkboxNestedNPCData:AlignBelow(checkboxUseMoreColors)
 local checkboxNestedQuestChains = child:CreateCheckBox(L["QUEST_CHAIN_NESTED_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("QuestChain:Nested"))
-	app:UpdateWindows()
 end,
 function(self)
 	settings:SetTooltipSetting("QuestChain:Nested", self:GetChecked())
@@ -3860,7 +3861,7 @@ local dropdownSoundpack = CreateFrame("Frame", "dropdownSoundpack", child, "UIDr
 dropdownSoundpack:SetPoint("TOPLEFT", textSoundpack, "BOTTOMLEFT", -15, 0)
 UIDropDownMenu_SetWidth(dropdownSoundpack, 270) -- Use in place of dropDown:SetWidth
 
--- Set the dropdown's current text to the active soundpack 
+-- Set the dropdown's current text to the active soundpack
 AllTheThings.Audio:RegisterForSoundPackEvents(function(event, soundPack)
 	UIDropDownMenu_SetText(dropdownSoundpack, AllTheThings.Audio:GetActiveSoundPack().name)
 end)
