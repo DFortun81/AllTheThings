@@ -45,7 +45,7 @@ namespace ATT
         {
             if (STRUCTURE_COUNTS.Any())
             {
-                const string CategorySplitter = "_.Categories.";
+                string CategorySplitter = Environment.NewLine;
 
                 // Prepare the shortcuts for commonly repeated structures.
                 var order = STRUCTURE_COUNTS.ToList();
@@ -71,7 +71,7 @@ namespace ATT
                     return string.Compare(a.Key, b.Key);
                 });
 
-                // Split the StringBuilder into smaller string builders based on something which is not related to replaceable content
+                // Split the StringBuilder into smaller string builders based on something which is not related to replaceable content, i.e. a newline
                 List<StringBuilder> splitBuilders = builder.ToString()
                     .Split(new string[] { CategorySplitter }, StringSplitOptions.RemoveEmptyEntries)
                     .Select(s => new StringBuilder(s))
