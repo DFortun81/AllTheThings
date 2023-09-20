@@ -1039,6 +1039,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 			}),
+			q(76545, {	-- Brewfest in Valdrakken (N)
+				["qg"] = 199261,	-- Holiday Enthusiast
+				["coord"] = { 54.4, 60.2, VALDRAKKEN },
+				["timeline"] = { ADDED_10_1_7 },
+				["isYearly"] = true,
+			}),
 			q(11400, {	-- Brewfest Riding Rams (A)
 				["provider"] = { "i", 34028 },	-- "Honorary Brewer" Hand Stamp (A)
 				-- #if AFTER WRATH
