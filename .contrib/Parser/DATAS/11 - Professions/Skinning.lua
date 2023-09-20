@@ -33,115 +33,113 @@ root(ROOTS.Professions, prof(SKINNING, {
 			}),
 		}),
 		ach(18831, {	-- Elusive Beasts of the Dragon Isles (15)
-			-- NOTE: The "_npcs" listed below don't exist by themselves in the addon.
-			-- We will continue to get parser warnings until they are either added or this is changed to use CRS instead!
 			crit(61435, {	-- Elusive Salamanther
-				["_npcs"] = { 193854 },	-- Elusive Salamanther
+				["crs"] = { 193854 },	-- Elusive Salamanther
 			}),
 			crit(61437, {	-- Elusive Vorquin
-				["_npcs"] = { 193855 },	-- Elusive Vorquin
+				["crs"] = { 193855 },	-- Elusive Vorquin
 			}),
 			crit(61438, {	-- Elusive Proto Dragon
-				["_npcs"] = { 193857 },	-- Elusive Proto Dragon
+				["crs"] = { 193857 },	-- Elusive Proto Dragon
 			}),
 			crit(61439, {	-- Elusive Thunder Lizard
-				["_npcs"] = { 193859 },	-- Elusive Thunder Lizard
+				["crs"] = { 193859 },	-- Elusive Thunder Lizard
 			}),
 			crit(61440, {	-- Elusive Lava Phoenix
-				["_npcs"] = { 193860 },	-- Elusive Lava Phoenix
+				["crs"] = { 193860 },	-- Elusive Lava Phoenix
 			}),
 			crit(61441, {	-- Elusive Magmammoth
-				["_npcs"] = { 193861 },	-- Elusive Magmammoth
+				["crs"] = { 193861 },	-- Elusive Magmammoth
 			}),
 			crit(61442, {	-- Elusive Fiery Dreadsquall
-				["_npcs"] = { 193862 },	-- Elusive Fiery Dreadsquall
+				["crs"] = { 193862 },	-- Elusive Fiery Dreadsquall
 			}),
 			crit(61443, {	-- Elusive Snapdragon
-				["_npcs"] = { 193873 },	-- Elusive Snapdragon
+				["crs"] = { 193873 },	-- Elusive Snapdragon
 			}),
 			crit(61443, {	-- Elusive Rockfang
-				["_npcs"] = { 193881 },	-- Elusive Rockfang
+				["crs"] = { 193881 },	-- Elusive Rockfang
 			}),
 			crit(61445, {	-- Elusive Feral Bakar
-				["_npcs"] = { 193882 },	-- Elusive Feral Bakar
+				["crs"] = { 193882 },	-- Elusive Feral Bakar
 			}),
 			crit(61447, {	-- Elusive Hornstrider
-				["_npcs"] = { 193884 },	-- Elusive Hornstrider
+				["crs"] = { 193884 },	-- Elusive Hornstrider
 			}),
 			crit(61448, {	-- Elusive Crystalspine
-				["_npcs"] = { 193891 },	-- Elusive Crystalspine
+				["crs"] = { 193891 },	-- Elusive Crystalspine
 			}),
 			crit(61449, {	-- Elusive Bull
-				["_npcs"] = { 193892 },	-- Elusive Bull
+				["crs"] = { 193892 },	-- Elusive Bull
 			}),
 			crit(61450, {	-- Elusive Stonegazer
-				["_npcs"] = { 193893 },	-- Elusive Stonegazer
+				["crs"] = { 193893 },	-- Elusive Stonegazer
 			}),
 			crit(61451, {	-- Elusive Ottuk
-				["_npcs"] = { 193894 },	-- Elusive Ottuk
+				["crs"] = { 193894 },	-- Elusive Ottuk
 			}),
 			crit(61452, {	-- Elusive Slyvern
-				["_npcs"] = { 193986 },	-- Elusive Slyvern
+				["crs"] = { 193986 },	-- Elusive Slyvern
 			}),
 			crit(61453, {	-- Elusive Magmammoth Bull
-				["_npcs"] = { 194060 },	-- Elusive Magmammoth Bull
+				["crs"] = { 194060 },	-- Elusive Magmammoth Bull
 			}),
 			crit(61454, {	-- Elusive Prime Salamanther
-				["_npcs"] = { 194062 },	-- Elusive Prime Salamanther
+				["crs"] = { 194062 },	-- Elusive Prime Salamanther
 			}),
 			crit(61455, {	-- Elusive Prime Proto Dragon
-				["_npcs"] = { 194063 },	-- Elusive Prime Proto Dragon
+				["crs"] = { 194063 },	-- Elusive Prime Proto Dragon
 			}),
 			crit(61456, {	-- Elusive Storm Lizard
-				["_npcs"] = { 194082 },	-- Elusive Storm Lizard
+				["crs"] = { 194082 },	-- Elusive Storm Lizard
 			}),
 			crit(61457, {	-- Elusive Elder Rockfang
-				["_npcs"] = { 194085 },	-- Elusive Elder Rockfang
+				["crs"] = { 194085 },	-- Elusive Elder Rockfang
 			}),
 			crit(61458, {	-- Elusive Elder Slyvern
-				["_npcs"] = { 194102 },	-- Elusive Elder Slyvern
+				["crs"] = { 194102 },	-- Elusive Elder Slyvern
 			}),
 			crit(61459, {	-- Elusive Rimeclaw Bear
-				["_npcs"] = { 194103 },	-- Elusive Rimeclaw Bear
+				["crs"] = { 194103 },	-- Elusive Rimeclaw Bear
 			}),
 			crit(61460, {	-- Elusive Elder Armoredon
-				["_npcs"] = { 194105 },	-- Elusive Elder Armoredon
+				["crs"] = { 194105 },	-- Elusive Elder Armoredon
 			}),
 			crit(61461, {	-- Elusive Argali
-				["_npcs"] = { 202506 },	-- Elusive Argali
+				["crs"] = { 202506 },	-- Elusive Argali
 			}),
 			crit(61462, {	-- Elusive Elder Argali
-				["_npcs"] = { 202510 },	-- Elusive Elder Argali
+				["crs"] = { 202510 },	-- Elusive Elder Argali
 			}),
 			crit(61463, {	-- Elusive Deepflayer
-				["_npcs"] = { 204819 },	-- Elusive Deepflayer
+				["crs"] = { 204819 },	-- Elusive Deepflayer
 			}),
 			crit(61464, {	-- Elusive Stoneclaw
-				["_npcs"] = { 204820 },	-- Elusive Stoneclaw
+				["crs"] = { 204820 },	-- Elusive Stoneclaw
 			}),
 			crit(61465, {	-- Elusive Viper (Lava)
-				["_npcs"] = { 204825 },	-- Elusive Viper (Lava)
+				["crs"] = { 204825 },	-- Elusive Viper (Lava)
 			}),
 			crit(61466, {	-- Elusive Lavafang
-				["_npcs"] = { 204828 },	-- Elusive Lavafang
+				["crs"] = { 204828 },	-- Elusive Lavafang
 			}),
 			crit(61467, {	-- Elusive Deepstrider
-				["_npcs"] = { 204833 },	-- Elusive Deepstrider
+				["crs"] = { 204833 },	-- Elusive Deepstrider
 			}),
 			crit(61468, {	-- Elusive Colossal Deepstrider
-				["_npcs"] = { 204834 },	-- Elusive Colossal Deepstrider
+				["crs"] = { 204834 },	-- Elusive Colossal Deepstrider
 			}),
 			crit(61469, {	-- Elusive Viper (Rock)
-				["_npcs"] = { 204837 },	-- Elusive Viper (Rock)
+				["crs"] = { 204837 },	-- Elusive Viper (Rock)
 			}),
 			crit(61470, {	-- Elusive Shalefang
-				["_npcs"] = { 204839 },	-- Elusive Shalefang
+				["crs"] = { 204839 },	-- Elusive Shalefang
 			}),
 			crit(61471, {	-- Elusive Sulfurstrider
-				["_npcs"] = { 204840 },	-- Elusive Sulfurstrider
+				["crs"] = { 204840 },	-- Elusive Sulfurstrider
 			}),
 			crit(61472, {	-- Elusive Colossal Sulfurstrider
-				["_npcs"] = { 204841 },	-- Elusive Colossal Sulfurstrider
+				["crs"] = { 204841 },	-- Elusive Colossal Sulfurstrider
 			}),
 		}),
 		ach(18832, {	-- Elusive Legend of the Dragon Isles (1)
@@ -149,40 +147,40 @@ root(ROOTS.Professions, prof(SKINNING, {
 		}),
 		ach(18833, {	-- Elusive Legends of the Dragon Isles
 			crit(61473, {	-- Elusive Elder Drake
-				["_npcs"] = { 194489 },	-- Elusive Elder Drake
+				["crs"] = { 194489 },	-- Elusive Elder Drake
 			}),
 			crit(61474, {	--  Elusive Elder Frigidpelt
-				["_npcs"] = { 194491 },	-- Elusive Elder Frigidpelt
+				["crs"] = { 194491 },	-- Elusive Elder Frigidpelt
 			}),
 			crit(61475, {	-- Elusive Tempest Lizard
-				["_npcs"] = { 195465 },	-- Elusive Tempest Lizard
+				["crs"] = { 195465 },	-- Elusive Tempest Lizard
 			}),
 			crit(61476, {	-- Elusive Ferocious Titanfang
-				["_npcs"] = { 195472 },	-- Elusive Ferocious Titanfang
+				["crs"] = { 195472 },	-- Elusive Ferocious Titanfang
 			}),
 			crit(61477, {	-- Elusive Deepwater Salamanther
-				["_npcs"] = { 195492 },	-- Elusive Deepwater Salamanther
+				["crs"] = { 195492 },	-- Elusive Deepwater Salamanther
 			}),
 			crit(61478, {	-- Elusive Proto Skyterror
-				["_npcs"] = { 195509 },	-- Elusive Proto Skyterror
+				["crs"] = { 195509 },	-- Elusive Proto Skyterror
 			}),
 			crit(61479, {	-- Elusive Cliffdweller Vorquin
-				["_npcs"] = { 195518 },	-- Elusive Cliffdweller Vorquin
+				["crs"] = { 195518 },	-- Elusive Cliffdweller Vorquin
 			}),
 			crit(61480, {	-- Elusive Flourishing Quillbloom
-				["_npcs"] = { 195541 },	-- Elusive Flourishing Quillbloom
+				["crs"] = { 195541 },	-- Elusive Flourishing Quillbloom
 			}),
 			crit(61481, {	-- Elusive Frenzied Amberfur
-				["_npcs"] = { 202436 },	-- Elusive Frenzied Amberfur
+				["crs"] = { 202436 },	-- Elusive Frenzied Amberfur
 			}),
 			crit(61482, {	-- Elusive Auric Argali
-				["_npcs"] = { 202441 },	-- Elusive Auric Argali
+				["crs"] = { 202441 },	-- Elusive Auric Argali
 			}),
 			crit(61483, {	-- Elusive Crystalscale Stonecleaver
-				["_npcs"] = { 204821 },	-- Elusive Crystalscale Stonecleaver
+				["crs"] = { 204821 },	-- Elusive Crystalscale Stonecleaver
 			}),
 			crit(61484, {	-- Elusive Magma Cobra
-				["_npcs"] = { 204831 },	-- Elusive Magma Cobra
+				["crs"] = { 204831 },	-- Elusive Magma Cobra
 			}),
 		}),
 		ach(18835, {	-- Fourth War Skinning Techniques
