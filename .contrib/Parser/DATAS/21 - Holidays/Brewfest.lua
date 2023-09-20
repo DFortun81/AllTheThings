@@ -162,6 +162,56 @@ end]];
 
 root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 	n(ACHIEVEMENTS, {
+		ach(18579, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- A Round on the House
+			crit(60561, {	-- Ohn'ahran Plains, Maruukai
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 59.8, 38.7, OHNAHRAN_PLAINS },
+			}),
+			crit(61569, {	-- Ohn'ahran Plains, Rusza'Thar Reach
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 85.8, 35.3, OHNAHRAN_PLAINS },
+			}),
+			crit(60562, {	-- Ohn'ahran Plains, Shady Sanctuary
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 28.6, 60.4, OHNAHRAN_PLAINS },
+			}),
+			crit(61571, {	-- Thaldraszus, Algeth'era Court
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 50.1, 42.7, THALDRASZUS },
+			}),
+			crit(60563, {	-- Thaldraszus, Eon's Fringe
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 52.2, 81.5, THALDRASZUS },
+			}),
+			crit(60564, {	-- Thaldraszus, Valdrakken
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 47.9, 46.8, THALDRASZUS },
+			}),
+			crit(60565, {	-- The Azure Span, Camp Antonidas
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 46.9, 40.2, THE_AZURE_SPAN },
+			}),
+			crit(61570, {	-- The Azure Span, Camp Nowhere
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 62.8, 57.7, THE_AZURE_SPAN },
+			}),
+			crit(60566, {	-- The Azure Span, Iskaara
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
+			}),
+			crit(61568, {	-- The Waking Shores, Dragonscale Basecamp
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 47.7, 83.3, THE_WAKING_SHORES },
+			}),
+			crit(60567, {	-- The Waking Shores, Ruby Lifeshrine
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 58.3,67.5, THE_WAKING_SHORES },
+			}),
+			crit(60568, {	-- The Waking Shores, Wingrest Embassy
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 76.3, 35.4, THE_WAKING_SHORES },
+			}),
+		})),
 		-- #if BEFORE MOP
 		ach(1684, {	-- Brewmaster (A)
 			-- Meta Achievement should symlink the contained Achievements from Source
@@ -474,6 +524,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					}),
 					i(37863, {	-- Direbrew's Remote
 						["timeline"] = { "added 2.0.1" },
+					}),
+					i(208742, {	-- Renewed Proto-Drake: Brewfest Armor (DM!)
+						["timeline"] = { ADDED_10_1_7 },
 					}),
 				}),
 			}),
@@ -820,6 +873,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					}),
 				},
 			}),
+			q(77208, {	-- Barreling Down
+				["qg"] = 207496,	-- Bragdur Battlebrew
+				["coord"] = { 29.7, 56.2, VALDRAKKEN },
+				["timeline"] = { ADDED_10_1_7 },
+				["isDaily"] = true,
+				["groups"] = BREWFEST_TOKEN,
+			}),
 			q(11293, {	-- Bark for the Barleybrews! (A)
 				["qg"] = 23627,	-- Becan Barleybrew
 				["sourceQuest"] = 11318,	-- Now This is Ram Racing... Almost. (A)
@@ -1018,6 +1078,26 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					}),
 				}),
 			}),
+			q(76577, {	-- Brewfest in Valdrakken (A)
+				["qg"] = 24710,	-- Ipfelkofer Ironkeg
+				["coord"] = { 55.1, 38.1, DUN_MOROGH },
+				["timeline"] = { ADDED_10_1_7 },
+				["races"] = ALLIANCE_ONLY,
+				["isYearly"] = true,
+			}),
+			q(76579, {	-- Brewfest in Valdrakken (H)
+				["qg"] = 155194,	-- La'gar Brewshout
+				["coord"] = { 41.6, 18.4, DUROTAR },
+				["timeline"] = { ADDED_10_1_7 },
+				["races"] = HORDE_ONLY,
+				["isYearly"] = true,
+			}),
+			q(76545, {	-- Brewfest in Valdrakken (N)
+				["qg"] = 199261,	-- Holiday Enthusiast
+				["coord"] = { 54.4, 60.2, VALDRAKKEN },
+				["timeline"] = { ADDED_10_1_7 },
+				["isYearly"] = true,
+			}),
 			q(11400, {	-- Brewfest Riding Rams (A)
 				["provider"] = { "i", 34028 },	-- "Honorary Brewer" Hand Stamp (A)
 				-- #if AFTER WRATH
@@ -1119,6 +1199,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["description"] = "We're not sure if completing this at the moment will get you progress on the achievement during Wrath as it does NOT retain its completion status after acquired.",
 				["repeatable"] = true,
 				-- #endif
+			}),
+			q(76591, {	-- Bubbling Brews
+				["qg"] = 207496,	-- Bragdur Battlebrew
+				["coord"] = { 29.7, 56.2, VALDRAKKEN },
+				["timeline"] = { ADDED_10_1_7 },
+				["isDaily"] = true,
+				["groups"] = BREWFEST_TOKEN,
 			}),
 			q(11117, {	-- Catch the Wild Wolpertinger! (A) [Non-EU Only!]
 				["qg"] = 23486,	-- Goldark Snipehunter
@@ -1428,7 +1515,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				-- #else
 				["timeline"] = { "added 2.2.2" },
 				-- #endif
-				["maps"] = { AZUREMYST_ISLE, THE_EXODAR, ELWYNN_FOREST, TELDRASSIL, SHATTRATH_CITY },
+				["maps"] = { AZUREMYST_ISLE, THE_EXODAR, ELWYNN_FOREST, DARNASSUS, TELDRASSIL, SHATTRATH_CITY },
 				["races"] = ALLIANCE_ONLY,
 				-- #if AFTER 3.2.0.10314
 				["cost"] = { { "i", 46735, 1 } },	-- Synthebrew Goggles
@@ -1709,10 +1796,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 		["f"] = COSMETIC,	-- These Steins turn into 'Miscellanous' filter, which doesn't allow SourceIDs to be attached in Retail
 		-- #ENDIF
 	},{
+		-- #if AFTER TRANSMOG
 		i(33016, bubbleDown({ ["timeline"] = { "added 2.4.3", "removed 3.0.1" } }, {	-- Blue Brewfest Stein
-			-- #if AFTER TRANSMOG
 			["description"] = "Fill up the stein with one brew, relog, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!",
-			-- #endif
 			["lore"] = "This stein was the reward from the 2008 Brewfest.",
 			["groups"] = {
 				i(33017),	-- Filled Blue Brewfest Stein [Barleybrew Clear - Alliance]
@@ -1722,6 +1808,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				i(33021),	-- Filled Blue Brewfest Stein [Jungle River Water - Horde]
 			},
 		})),
+		-- #else
+		i(33016, {	-- Blue Brewfest Stein
+			["lore"] = "This stein was the reward from the 2008 Brewfest.",
+			["timeline"] = { "added 2.4.3", "removed 3.0.1" },
+			["groups"] = {
+				i(33017),	-- Filled Blue Brewfest Stein [Barleybrew Clear - Alliance]
+				i(33018),	-- Filled Blue Brewfest Stein [Thunder 45 - Alliance]
+				i(33019),	-- Filled Blue Brewfest Stein [Gordok Grog - Alliance/Horde]
+				i(33020),	-- Filled Blue Brewfest Stein [Small Step Brew - Horde]
+				i(33021),	-- Filled Blue Brewfest Stein [Jungle River Water - Horde]
+			},
+		}),
+		-- #endif
 		i(169448, {	-- Bottomless Brewfest Stein
 			-- #if AFTER TRANSMOG
 			["description"] = "Fill up the stein with one brew, unequip and re-equip the filled stein, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!",
@@ -1735,10 +1834,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				i(169455),	-- Filled Bottomless Brewfest Stein [Jungle River Water - Horde]
 			},
 		}),
+		-- #if AFTER TRANSMOG
 		i(37892, bubbleDown({ ["timeline"] = { "added 3.0.1", "removed 4.0.1" } }, {	-- Green Brewfest Stein
-			-- #if AFTER TRANSMOG
 			["description"] = "Fill up the stein with one brew, relog, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!",
-			-- #endif
 			["lore"] = "This stein was the reward from the 2009 & 2010 Brewfest.",
 			["groups"] = {
 				i(37893),	-- Filled Green Brewfest Stein [Barleybrew Clear - Alliance]
@@ -1748,14 +1846,27 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				i(37897),	-- Filled Green Brewfest Stein [Jungle River Water - Horde]
 			},
 		})),
+		-- #else
+		i(37892, {	-- Green Brewfest Stein
+			["lore"] = "This stein was the reward from the 2009 & 2010 Brewfest.",
+			["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+			["groups"] = {
+				i(37893),	-- Filled Green Brewfest Stein [Barleybrew Clear - Alliance]
+				i(37894),	-- Filled Green Brewfest Stein [Thunder 45 - Alliance]
+				i(37895),	-- Filled Green Brewfest Stein [Gordok Grog - Alliance/Horde]
+				i(37896),	-- Filled Green Brewfest Stein [Small Step Brew - Horde]
+				i(37897),	-- Filled Green Brewfest Stein [Jungle River Water - Horde]
+			},
+		}),
+		-- #endif
+
 		i(56836, {	-- Overflowing Purple Brewfest Stein
 			["lore"] = "This stein was the reward from the 2011 Brewfest onward.",
 			["timeline"] = { "added 4.0.1" },
 		}),
+		-- #if AFTER TRANSMOG
 		i(32912, bubbleDown({ ["timeline"] = { "added 2.0.1", "removed 2.4.3" } }, {	-- Yellow Brewfest Stein
-			-- #if AFTER TRANSMOG
 			["description"] = "Fill up the stein with one brew, relog, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!",
-			-- #endif
 			["lore"] = "This stein was the reward from the 2007 Brewfest.",
 			["groups"] = {
 				i(32915),	-- Filled Yellow Brewfest Stein [Barleybrew Clear - Alliance]
@@ -1765,6 +1876,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				i(32920),	-- Filled Yellow Brewfest Stein [Jungle River Water - Horde]
 			},
 		})),
+		-- #else
+		i(32912, {	-- Yellow Brewfest Stein
+			["lore"] = "This stein was the reward from the 2007 Brewfest.",
+			["timeline"] = { "added 2.0.1", "removed 2.4.3" },
+			["groups"] = {
+				i(32915),	-- Filled Yellow Brewfest Stein [Barleybrew Clear - Alliance]
+				i(32917),	-- Filled Yellow Brewfest Stein [Thunder 45 - Alliance]
+				i(32918),	-- Filled Yellow Brewfest Stein [Gordok Grog - Alliance/Horde]
+				i(32919),	-- Filled Yellow Brewfest Stein [Small Step Brew - Horde]
+				i(32920),	-- Filled Yellow Brewfest Stein [Jungle River Water - Horde]
+			},
+		}),
+		-- #endif
 	})),
 	n(VENDORS, {
 		-- #if ANYCLASSIC
@@ -1901,6 +2025,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["timeline"] = { "added 8.0.1" },
 						["cost"] = BREWFEST_TOKEN_COST(10),
 					}),
+					i(209052, {	-- Brew Barrel (TOY!)
+						["timeline"] = { ADDED_10_1_7 },
+						["cost"] = BREWFEST_TOKEN_COST(200),
+					}),
 					i(116758, {	-- Brewfest Banner (TOY!)
 						["timeline"] = { "added 6.0.1.18594" },
 						["cost"] = BREWFEST_TOKEN_COST(100),
@@ -1932,6 +2060,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					i(169461, {	-- Garland of Grain
 						["timeline"] = { "added 8.2.0.30918" },
 						["cost"] = BREWFEST_TOKEN_COST(150),
+					}),
+					i(209044, {	-- Orange Brewfest Bulwark
+						["timeline"] = { ADDED_10_1_7 },
+						["cost"] = BREWFEST_TOKEN_COST(200),
 					}),
 					i(90427, {	-- Pandaren Brewpack (TOY!)
 						["timeline"] = { "added 5.0.4.15913" },
@@ -2072,6 +2204,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["timeline"] = { "added 8.0.1" },
 						["cost"] = BREWFEST_TOKEN_COST(10),
 					}),
+					i(209052, {	-- Brew Barrel (TOY!)
+						["timeline"] = { ADDED_10_1_7 },
+						["cost"] = BREWFEST_TOKEN_COST(200),
+					}),
 					i(116758, {	-- Brewfest Banner (TOY!)
 						["timeline"] = { "added 6.0.1.18594" },
 						["cost"] = BREWFEST_TOKEN_COST(100),
@@ -2103,6 +2239,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					i(169461, {	-- Garland of Grain
 						["timeline"] = { "added 8.2.0.30918" },
 						["cost"] = BREWFEST_TOKEN_COST(150),
+					}),
+					i(209044, {	-- Orange Brewfest Bulwark
+						["timeline"] = { ADDED_10_1_7 },
+						["cost"] = BREWFEST_TOKEN_COST(200),
 					}),
 					i(90427, {	-- Pandaren Brewpack (TOY!)
 						["timeline"] = { "added 5.0.4.15913" },
@@ -2358,6 +2498,47 @@ root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(37247, {	-- Angry Brewfest Letter - triggers when using "Angry Brewfest Letter" to cancel Brew of the Month subscription
 			["timeline"] = { "added 6.0.1" },
+		}),
+	}),
+	tier(DF_TIER, {
+		q(77775, {	-- Daily kill of Coren Direbrew
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(77152, {	-- Bar Tab Barrel @ Ohn'ahran Plains, Maruukai
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(77745, {	-- Bar Tab Barrel @ Ohn'ahran Plains, Rusza'Thar Reach
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(77099, {	-- Bar Tab Barrel @  Ohn'ahran Plains, Shady Sanctuary
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(77747, {	-- Bar Tab Barrel @ Thaldraszus, Algeth'era Court
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(77155, {	-- Bar Tab Barrel @ Thaldraszus, Eon's Fringe
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(77153, {	-- Bar Tab Barrel @ Thaldraszus, Valdrakken
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(77096, {	-- Bar Tab Barrel @ The Azure Span, Camp Antonidas
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(77746, {	-- Bar Tab Barrel @ The Azure Span, Camp Nowhere
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(77097, {	-- Bar Tab Barrel @ The Azure Span, Iskaara
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(77744, {	-- Bar Tab Barrel @ The Waking Shores, Dragonscale Basecamp
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(76531, {	-- Bar Tab Barrel @ The Waking Shores, Ruby Lifeshrine
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(77095, {	-- Bar Tab Barrel @ The Waking Shores, Wingrest Embassy
+			["timeline"] = { ADDED_10_1_7 },
 		}),
 	}),
 });

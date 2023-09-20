@@ -10,53 +10,53 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		ach(18891),	-- Generations of Gemstones IV
 		ach(18897, {	-- Can't Crush These
 			crit(61640, {	-- Shipment: Blood Jade Amulet
-				["sourceQuests"] = { 12958 },	-- Shipment: Blood Jade Amulet
+				["_quests"] = { 12958 },	-- Shipment: Blood Jade Amulet
 			}),
 			crit(61641, {	-- Shipment: Glowing Ivory Figurine
-				["sourceQuests"] = { 12959 },	-- Shipment: Glowing Ivory Figurine
+				["_quests"] = { 12959 },	-- Shipment: Glowing Ivory Figurine
 			}),
 			crit(61642, {	-- Shipment: Wicked Sun Brooch
-				["sourceQuests"] = { 12960 },	-- Shipment: Wicked Sun Brooch
+				["_quests"] = { 12960 },	-- Shipment: Wicked Sun Brooch
 			}),
 			crit(61643, {	-- Shipment: Intricate Bone Figurine
-				["sourceQuests"] = { 12961 },	-- Shipment: Intricate Bone Figurine
+				["_quests"] = { 12961 },	-- Shipment: Intricate Bone Figurine
 			}),
 			crit(61644, {	-- Shipment: Bright Armor Relic
-				["sourceQuests"] = { 12962 },	-- Shipment: Bright Armor Relic
+				["_quests"] = { 12962 },	-- Shipment: Bright Armor Relic
 			}),
 			crit(61645, {	-- Shipment: Shifting Sun Curio
-				["sourceQuests"] = { 12963 },	-- Shipment: Shifting Sun Curio
+				["_quests"] = { 12963 },	-- Shipment: Shifting Sun Curio
 			}),
 			crit(7, {	-- Nibbler! No!
-				["sourceQuests"] = {
+				["_quests"] = {
 					25105,	-- Nibbler! No! [A]
 					25158 ,	-- Nibbler! No! [H]
 				},
 				["sourceQuestNumRequired"] = 1,
 			}),
 			crit(8, {	-- A Present for Lila
-				["sourceQuests"] = {
+				["_quests"] = {
 					25154,	-- A Present for Lila [A]
 					25160 ,	-- A Present for Lila [H]
 				},
 				["sourceQuestNumRequired"] = 1,
 			}),
 			crit(9, {	-- Ogrezonians in the Mood
-				["sourceQuests"] = {
+				["_quests"] = {
 					25155,	-- Ogrezonians in the Mood [A]
 					25161 ,	-- Ogrezonians in the Mood [H]
 				},
 				["sourceQuestNumRequired"] = 1,
 			}),
 			crit(10, {	-- Elemental Goo
-				["sourceQuests"] = {
+				["_quests"] = {
 					25156,	-- Elemental Goo [A]
 					25162 ,	-- Elemental Goo [H]
 				},
 				["sourceQuestNumRequired"] = 1,
 			}),
 			crit(11, {	-- The Latest Fashion!
-				["sourceQuests"] = {
+				["_quests"] = {
 					25157,	-- The Latest Fashion! [A]
 					25159 ,	-- The Latest Fashion! [H]
 				},
@@ -137,19 +137,19 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["provider"] = { "i", 44063 },	-- Figurine - Monarch Crab
 			}),
 			crit(61851, {	-- Figurine - King of Boars
-				["sourceQuests"] = { 28778 },	-- Broken Boar Figurine
+				["_quests"] = { 28778 },	-- Broken Boar Figurine
 			}),
 			crit(61852, {	-- Figurine - Demon Panther
-				["sourceQuests"] = { 25047 },	-- Broken Panther Figurine
+				["_quests"] = { 25047 },	-- Broken Panther Figurine
 			}),
 			crit(61853, {	-- Figurine - Earthen Guardian
-				["sourceQuests"] = { 28776 },	-- Broken Earthen Figurine
+				["_quests"] = { 28776 },	-- Broken Earthen Figurine
 			}),
 			crit(61854, {	-- Figurine - Jeweled Serpent
-				["sourceQuests"] = { 28775 },	-- Broken Serpent Figurine
+				["_quests"] = { 28775 },	-- Broken Serpent Figurine
 			}),
 			crit(61855, {	-- Figurine - Dream Owl
-				["sourceQuests"] = { 28777 },	-- Broken Owl Figurine
+				["_quests"] = { 28777 },	-- Broken Owl Figurine
 			}),
 		}),
 		ach(18893),	-- Plentiful Prospects

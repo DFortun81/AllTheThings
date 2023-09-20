@@ -121,7 +121,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["g"] = {
 					bo(75336, true),
 					i(205796, {	-- Molten Lava Pack (TOY!)
-						["description"] = "This toy is bugged for some accounts and simply does not drop. Nobody knows why.",
+					--	["description"] = "This toy is bugged for some accounts and simply does not drop. Nobody knows why.",
+					--	Fixed 4 months into the patch (and 4 days after the note was added to ATT).
 					}),
 					i(203328),	-- Winding Slitherdrake: White Horns (DM!)
 					i(205297),	-- Flamewielder's Trousers

@@ -74,7 +74,9 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 		["isRaid"] = true,
 		["coords"] = {
 			{ 72.3, 44.3, VALE_OF_ETERNAL_BLOSSOMS },	-- old Vale
-			{ 72.3, 44.3, 1530 },	-- new Vale
+			-- #if AFTER BFA
+			{ 72.3, 44.3, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },	-- new Vale
+			-- #endif
 		},
 		["mapID"] = 556,
 		["lvl"] = 90,

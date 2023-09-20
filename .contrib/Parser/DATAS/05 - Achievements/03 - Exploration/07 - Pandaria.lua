@@ -173,7 +173,9 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			crit(19665, {	-- The Thunder King
 				["coords"] = {
 					{ 40.19, 75.63, VALE_OF_ETERNAL_BLOSSOMS },
-					{ 40.19, 75.63, 1530 },	-- BFA alternate zone
+					-- #if AFTER BFA
+					{ 40.19, 75.63, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },	-- BFA alternate zone
+					-- #endif
 				},
 			}),
 		}),

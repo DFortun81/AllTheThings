@@ -7,8 +7,8 @@ local AllDifficulties = {LFR_RAID,NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID};
 root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0" } }, {
 	inst(1180, {	-- Ny'alotha
 		["coords"] = {
-			{ 55.1, 43.8, 1527 },	-- Uldum
-			{ 41.6, 45.5, 1530 },	-- Vale of Eternal Blossoms
+			{ 55.1, 43.8, NZOTH_ASSAULT_ULDUM },
+			{ 41.6, 45.5, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 		},
 		["isRaid"] = true,
 		["lvl"] = { 50 },

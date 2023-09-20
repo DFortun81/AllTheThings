@@ -96,6 +96,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 						13429,	-- A Distraction for Akama
 						-- #endif
 					},
+					-- #if AFTER 3.0.1
+					["sourceQuestNumRequired"] = 1,
+					-- #endif
 					["lvl"] = lvlsquish(70, 70, 30),
 				}),
 				q(10959, {	-- The Fall of the Betrayer

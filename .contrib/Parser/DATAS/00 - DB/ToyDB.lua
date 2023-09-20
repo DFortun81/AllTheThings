@@ -1219,10 +1219,10 @@ i(209858);	-- Dreamsurge Remnant
 i(209944);	-- Friendsurge Defenders
 i(206195);	-- Path of the Naaru
 i(208658);	-- Mirror of Humility
+i(209052);	-- Brew Barrel
 --- Unsorted ---
 i(208229);	-- Honor of the Forsaken
 i(208880);	-- Brewhahat
-i(209052);	-- Brew Barrel
 
 ------------------
 -- PATCH 10.2.0 --

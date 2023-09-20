@@ -544,6 +544,13 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				["cr"] = 48445,	-- Oaf Lackey
 				-- #endif
 			}),
+			i(5787, {	-- Pattern: Murloc Scale Breastplate (RECIPE!)
+				-- #if BEFORE 4.0.3
+				["cr"] = 657,	-- Defias Pirate
+				-- #else
+				["cr"] = 48522,	-- Defias Pirate
+				-- #endif
+			}),
 		}),
 		-- #if AFTER CATA
 		d(NORMAL_DUNGEON, {

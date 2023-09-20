@@ -721,8 +721,8 @@ GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
 end
 -- Attempts to return the displayID for the data, or every displayID if 'all' is specified
 local function GetDisplayID(data, all)
-	-- don't create a displayID for groups with a sourceID/itemID already
-	if data.s or data.itemID or data.difficultyID then return; end
+	-- don't create a displayID for groups with a sourceID/itemID/difficultyID/mapID
+	if data.s or data.itemID or data.difficultyID or data.mapID then return; end
 	if all then
 		local displayInfo, _ = {};
 		-- specific displayID
@@ -753,15 +753,6 @@ local function GetDisplayID(data, all)
 			end
 		end
 		if displayInfo[1] then data.displayInfo = displayInfo; return displayInfo; end
-
-		-- otherwise use the attached crs if so
-		if data.crs then
-			for k,v in pairs(data.crs) do
-				_ = v and app.NPCDisplayIDFromID[v];
-				if _ then tinsert(displayInfo, _); end
-			end
-		end
-		if displayInfo[1] then data.displayInfo = displayInfo; return displayInfo; end
 	else
 		-- specific displayID
 		local _ = data.displayID or data.fetchedDisplayID;
@@ -785,14 +776,6 @@ local function GetDisplayID(data, all)
 		-- for quest givers
 		if data.qgs then
 			for k,v in pairs(data.qgs) do
-				_ = v and app.NPCDisplayIDFromID[v];
-				if _ then data.fetchedDisplayID = _; return _; end
-			end
-		end
-
-		-- otherwise use the attached crs if so
-		if data.crs then
-			for k,v in pairs(data.crs) do
 				_ = v and app.NPCDisplayIDFromID[v];
 				if _ then data.fetchedDisplayID = _; return _; end
 			end
@@ -3526,7 +3509,7 @@ local SubroutineCache = {
 			ResolveFunctions.invtype;
 
 		-- Select the Instance & pop out all results
-		select(finalized, searchResults, o, "select", "instanceID",instanceID);
+		select(finalized, searchResults, o, "select", "instanceID", instanceID);
 		pop(finalized, searchResults);
 
 		-- If there's a Difficulty, filter by Difficulty
@@ -3545,7 +3528,7 @@ local SubroutineCache = {
 		end
 		wipe(searchResults);
 		for _,o in ipairs(orig) do
-			if o.f == -1 then
+			if not o.f then
 				if o.g then
 					-- no filter Item with sub-groups
 					ArrayAppend(searchResults, o.g)
@@ -3594,7 +3577,7 @@ ResolveFunctions.sub = function(finalized, searchResults, o, cmd, sub, ...)
 		ResolveFunctions.finalize(finalized, searchResults);
 		return;
 	end
-	print("Could not find subroutine", sub);
+	app.print("Could not find subroutine", sub);
 end;
 local ResolveCache = {};
 ResolveSymbolicLink = function(o)
@@ -3618,7 +3601,7 @@ ResolveSymbolicLink = function(o)
 			if cmdFunc then
 				cmdFunc(finalized, searchResults, o, unpack(sym));
 			else
-				print("Unknown symlink command",cmd);
+				app.print("Unknown symlink command",cmd);
 			end
 			-- app.PrintDebug("Finalized",#finalized,"Results",#searchResults,"after '",cmd,"' for",oHash,"with:",unpack(sym))
 		end
@@ -3626,7 +3609,7 @@ ResolveSymbolicLink = function(o)
 		-- Verify the final result is finalized
 		cmdFunc = ResolveFunctions.finalize;
 		cmdFunc(finalized, searchResults);
-		-- if app.Debugging then print("Forced Finalize",oKey,oKey and o[oKey],#finalized) end
+		-- app.PrintDebug("Forced Finalize",oKey,oKey and o[oKey],#finalized)
 
 		-- If we had any finalized search results, then clone all the records, store the results, and return them
 		if #finalized > 0 then
@@ -3651,7 +3634,7 @@ ResolveSymbolicLink = function(o)
 					-- if somehow the symlink pulls in the same item as used as the source of the symlink, notify in chat and clear any symlink on it
 					sHash = s.hash;
 					if sHash and sHash == oHash then
-						print("Symlink group pulled itself into finalized results!",oHash)
+						app.print("Symlink group pulled itself into finalized results!",oHash)
 						s.sym = nil;
 					else
 						FillSymLinks(s);
@@ -3668,7 +3651,7 @@ ResolveSymbolicLink = function(o)
 					-- if somehow the symlink pulls in the same item as used as the source of the symlink, notify in chat and clear any symlink on it
 					sHash = s.hash;
 					if sHash and sHash == oHash then
-						print("Symlink group pulled itself into finalized results!",oHash)
+						app.print("Symlink group pulled itself into finalized results!",oHash)
 						s.sym = nil;
 					else
 						FillSymLinks(s);
@@ -4488,7 +4471,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 				end
 			end
 		end
-		
+
 		local awp, rwp = GetRelativeValue(group, "awp"), group.rwp;
 		local awpGreaterThanRWP = true;
 		if awp and ((rwp or (group.u and group.u < 3)) or awp >= app.GameBuildVersion) then
@@ -4503,7 +4486,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 		if rwp then
 			tinsert(info, awpGreaterThanRWP and 1 or 2, { left = GetRemovedWithPatchString(rwp), wrap = true, color = app.Colors.RemovedWithPatch });
 		end
-		
+
 		if group.u and (not group.crs or group.itemID or group.s) then
 			-- specifically-tagged NYI groups which are under 'Unsorted' should show a slightly different message
 			if group.u == 1 and app.RecursiveFirstParentWithFieldValue(group, "_missing", true) then
@@ -13485,7 +13468,7 @@ app.RefreshCustomCollectibility = function()
 end
 end	-- Custom Collectibility
 
-local function MinimapButtonOnClick(self, button)
+function AllTheThings_MinimapButtonOnClick(self, button)
 	if button == "RightButton" then
 		app.Settings:Open();
 	else
@@ -13499,8 +13482,8 @@ local function MinimapButtonOnClick(self, button)
 		end
 	end
 end
-local function MinimapButtonOnEnter(self)
-	GameTooltip:SetOwner(self, "ANCHOR_LEFT");
+function AllTheThings_MinimapButtonOnEnter(self, button)
+	GameTooltip:SetOwner(type(self) ~= "string" and self or button, "ANCHOR_LEFT");
 	GameTooltip:ClearLines();
 	local reference = app:GetDataCache();
 	if reference then
@@ -13526,7 +13509,7 @@ local function MinimapButtonOnEnter(self)
 	GameTooltip:AddLine(L["MINIMAP_MOUSEOVER_TEXT"], 1, 1, 1);
 	GameTooltip:Show();
 end
-local function MinimapButtonOnLeave()
+function AllTheThings_MinimapButtonOnLeave()
 	GameTooltip:Hide();
 	GameTooltipIcon.icon.Background:Hide();
 	GameTooltipIcon.icon.Border:Hide();
@@ -13641,9 +13624,9 @@ local function CreateMinimapButton()
 	button:SetScript("OnDragStop", function(self)
 		self:SetScript("OnUpdate", nil);
 	end);
-	button:SetScript("OnEnter", MinimapButtonOnEnter);
-	button:SetScript("OnLeave", MinimapButtonOnLeave);
-	button:SetScript("OnClick", MinimapButtonOnClick);
+	button:SetScript("OnEnter", AllTheThings_MinimapButtonOnEnter);
+	button:SetScript("OnLeave", AllTheThings_MinimapButtonOnLeave);
+	button:SetScript("OnClick", AllTheThings_MinimapButtonOnClick);
 	button:update();
 	button:Show();
 	return button;
@@ -15243,7 +15226,7 @@ RowOnEnter = function (self)
 					end
 				end
 			end
-			
+
 			local awp, rwp = GetRelativeValue(group, "awp"), reference.rwp;
 			if rwp then
 				local _,r,g,b = HexToARGB(app.Colors.RemovedWithPatch);
@@ -15284,12 +15267,13 @@ RowOnEnter = function (self)
 			if reference.pvp then
 				GameTooltip:AddLine(L["REQUIRES_PVP"], 1, 1, 1, 1, true);
 			end
-			-- Has a symlink for additonal information
-			if reference.sym then
-				GameTooltip:AddLine(L["SYM_ROW_INFORMATION"], 1, 1, 1, 1, true);
-			end
 			-- Tooltip for something which was not attached via search, so mark it as complete here
 			GameTooltip.AttachComplete = true;
+		end
+
+		-- Has a symlink for additonal information
+		if reference.sym then
+			GameTooltip:AddLine(L["SYM_ROW_INFORMATION"], 1, 1, 1, 1, true);
 		end
 
 		-- Ignored for Source/Progress
@@ -18243,9 +18227,13 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				RefreshLocation(true);
 			end
 		end
-		local function LocationTrigger()
+		local function LocationTrigger(forceNewMap)
 			if app.InWorld and app.IsReady and (app.Settings:GetTooltipSetting("Auto:MiniList") or app:GetWindow("CurrentInstance"):IsVisible()) then
 				-- app.PrintDebug("LocationTrigger-Callback")
+				if forceNewMap then
+					-- this allows minilist to rebuild itself
+					wipe(self.CurrentMaps)
+				end
 				AfterCombatOrDelayedCallback(RefreshLocation, 0.25);
 			end
 		end
@@ -21618,9 +21606,9 @@ app.Startup = function()
 	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
 		type = "launcher",
 		icon = app.asset("logo_32x32"),
-		OnClick = MinimapButtonOnClick,
-		OnEnter = MinimapButtonOnEnter,
-		OnLeave = MinimapButtonOnLeave,
+		OnClick = AllTheThings_MinimapButtonOnClick,
+		OnEnter = AllTheThings_MinimapButtonOnEnter,
+		OnLeave = AllTheThings_MinimapButtonOnLeave,
 	});
 
 	-- Character Data Storage
@@ -21887,6 +21875,10 @@ local function DGU_CustomCollect(t)
 	-- app.PrintDebug("DGU_CustomCollect",t.hash)
 	Callback(app.RefreshCustomCollectibility);
 end
+local function DGU_Locationtrigger(t)
+	-- app.PrintDebug("DGU_Locationtrigger",t.hash)
+	Callback(app.LocationTrigger, true);
+end
 -- A set of quests which indicate a needed refresh to the Custom Collect status of the character
 local DGU_Quests = {
 	[51211] = DGU_CustomCollect,	-- Heart of Azeroth Quest
@@ -21900,6 +21892,11 @@ local DGU_Quests = {
 	[65078] = DGU_CustomCollect,	-- Shadowlands - Covenant - Night Fae
 	[65079] = DGU_CustomCollect,	-- Shadowlands - Covenant - Necrolord
 };
+-- Add any automatically-assigned LocationTriggers
+for _,questID in ipairs(app.__CacheQuestTriggers or app.EmptyTable) do
+	DGU_Quests[questID] = DGU_Locationtrigger
+end
+app.__CacheQuestTriggers = nil
 local function AssignDirectGroupOnUpdates()
 	local questRef;
 	local Search = app.SearchForObject;

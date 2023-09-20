@@ -60,20 +60,6 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					i(168140),	-- Ancient Blood Pigment
 				}),
 			}),
-			e(2378, {	-- Grand Empress Shek'zara
-				["isWeekly"] = true,
-				["questID"] = 58705,	-- Grand Empress Shek'zara
-				["isRaid"] = true,
-				["creatureID"] = 154638,
-				["coord"] = { 5.9, 56.4, 1530 },
-				["g"] = {
-					i(174243),	-- Guise of the Voracious Prowler
-					i(174234),	-- Maniacal Speaker's Cover
-					i(174264),	-- Chitinous Conqueror's Legplates
-					i(174255),	-- Greaves of Shattered Thoughts
-					i(174268),	-- Loop of Abhorrent Celerity
-				},
-			}),
 			e(2197, {	-- Hailstone Construct
 				["isWeekly"] = true,
 				["questID"] = 52157,	-- A Chilling Encounter (WQ)
@@ -96,52 +82,6 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					i(161361),	-- Ice-Rimed Slippers
 					i(161380),	-- Drust-Runed Icicle
 					i(161381),	-- Permafrost-Encrusted Heart
-				}),
-			}),
-			e(2345, {	-- Ivus the Decayed [Alliance Only]
-				["isWeekly"] = true,
-				["isWorldQuest"] = true,
-				["questID"] = 54895,	-- Ivus the Decayed (WQ)
-				["isRaid"] = true,
-				["races"] = ALLIANCE_ONLY,
-				["coord"] = { 41.47, 35.97, DARKSHORE },
-				["lvl"] = { 50 },
-				["creatureID"] = 148295,	-- Ivus the Decayed
-				["g"] = bubbleDown({["modID"] = 3}, {
-					i(166695),	-- Petrified Ironbark Crown
-					i(166687),	-- Warring Ancient's Mask
-					i(166691),	-- Forest Protector's Shoulderguards
-					i(166683),	-- Garments of the Forest Lord
-					i(166694),	-- Gnarled Bough Gauntlets
-					i(166686),	-- Ivus' Tanglemoss Waistcord
-					i(166690),	-- Protector's Tangleroot Belt
-					i(166698),	-- Stoneroot Stompers
-					i(161417),	-- Ancient Knot of Wisdom
-					i(161415),	-- Forest Lord's Razorleaf
-					i(161413),	-- Knot of Ancient Fury
-				}),
-			}),
-			e(2329, {	-- Ivus the Forest Lord [Horde Only]
-				["isWeekly"] = true,
-				["isWorldQuest"] = true,
-				["questID"] = 54896,	-- Ivus the Forest Lord (WQ)
-				["isRaid"] = true,
-				["races"] = HORDE_ONLY,
-				["coord"] = { 41.4, 35.9, DARKSHORE },
-				["lvl"] = { 50 },
-				["creatureID"] = 144946,	-- Ivus the Forest Lord
-				["g"] = bubbleDown({["modID"] = 3}, {
-					i(166696),	-- Petrified Ironbark Crown
-					i(166688),	-- Warring Ancient's Crown
-					i(166692),	-- Forest Protector's Shoulderguards
-					i(166684),	-- Garments of the Forest Lord
-					i(166693),	-- Gnarled Bough Gauntlets
-					i(166685),	-- Ivus' Tanglemoss Waistcord
-					i(166689),	-- Protector's Tangleroot Belt
-					i(166697),	-- Stoneroot Stompers
-					i(166793),	-- Ancient Knot of Wisdom
-					i(166794),	-- Forest Lord's Razorleaf
-					i(166795),	-- Knot of Ancient Fury
 				}),
 			}),
 			e(2141, {	-- Ji'arak
@@ -225,20 +165,6 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					i(168603),	-- Cloak of Restless Spirits
 					i(169317),	-- Enthraller's Bindstone
 				}),
-			}),
-			e(2381, {	-- Vuk'laz the Earthbreaker
-				["isWeekly"] = true,
-				["questID"] = 55466,	-- Vuk'laz the Earthbreaker
-				["isRaid"] = true,
-				["creatureID"] = 160970,
-				["coord"] = { 45.7, 16.1, 1527 },
-				["g"] = {
-					i(174258),	-- Greathelm of Indiscriminate Brutality
-					i(174250),	-- Psyche Tormentor's Visage
-					i(174237),	-- Breeches of Faithful Execution
-					i(174247),	-- Grotesque Mutilator's Leggings
-					i(174469),	-- Band of Insidious Ruminations
-				},
 			}),
 			e(2198, {	-- Warbringer Yenajz
 				["isWeekly"] = true,
