@@ -1709,10 +1709,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 		["f"] = COSMETIC,	-- These Steins turn into 'Miscellanous' filter, which doesn't allow SourceIDs to be attached in Retail
 		-- #ENDIF
 	},{
+		-- #if AFTER TRANSMOG
 		i(33016, bubbleDown({ ["timeline"] = { "added 2.4.3", "removed 3.0.1" } }, {	-- Blue Brewfest Stein
-			-- #if AFTER TRANSMOG
 			["description"] = "Fill up the stein with one brew, relog, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!",
-			-- #endif
 			["lore"] = "This stein was the reward from the 2008 Brewfest.",
 			["groups"] = {
 				i(33017),	-- Filled Blue Brewfest Stein [Barleybrew Clear - Alliance]
@@ -1722,6 +1721,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				i(33021),	-- Filled Blue Brewfest Stein [Jungle River Water - Horde]
 			},
 		})),
+		-- #else
+		i(33016, {	-- Blue Brewfest Stein
+			["lore"] = "This stein was the reward from the 2008 Brewfest.",
+			["timeline"] = { "added 2.4.3", "removed 3.0.1" },
+			["groups"] = {
+				i(33017),	-- Filled Blue Brewfest Stein [Barleybrew Clear - Alliance]
+				i(33018),	-- Filled Blue Brewfest Stein [Thunder 45 - Alliance]
+				i(33019),	-- Filled Blue Brewfest Stein [Gordok Grog - Alliance/Horde]
+				i(33020),	-- Filled Blue Brewfest Stein [Small Step Brew - Horde]
+				i(33021),	-- Filled Blue Brewfest Stein [Jungle River Water - Horde]
+			},
+		}),
+		-- #endif
 		i(169448, {	-- Bottomless Brewfest Stein
 			-- #if AFTER TRANSMOG
 			["description"] = "Fill up the stein with one brew, unequip and re-equip the filled stein, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!",
@@ -1735,10 +1747,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				i(169455),	-- Filled Bottomless Brewfest Stein [Jungle River Water - Horde]
 			},
 		}),
+		-- #if AFTER TRANSMOG
 		i(37892, bubbleDown({ ["timeline"] = { "added 3.0.1", "removed 4.0.1" } }, {	-- Green Brewfest Stein
-			-- #if AFTER TRANSMOG
 			["description"] = "Fill up the stein with one brew, relog, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!",
-			-- #endif
 			["lore"] = "This stein was the reward from the 2009 & 2010 Brewfest.",
 			["groups"] = {
 				i(37893),	-- Filled Green Brewfest Stein [Barleybrew Clear - Alliance]
@@ -1748,14 +1759,27 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				i(37897),	-- Filled Green Brewfest Stein [Jungle River Water - Horde]
 			},
 		})),
+		-- #else
+		i(37892, {	-- Green Brewfest Stein
+			["lore"] = "This stein was the reward from the 2009 & 2010 Brewfest.",
+			["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+			["groups"] = {
+				i(37893),	-- Filled Green Brewfest Stein [Barleybrew Clear - Alliance]
+				i(37894),	-- Filled Green Brewfest Stein [Thunder 45 - Alliance]
+				i(37895),	-- Filled Green Brewfest Stein [Gordok Grog - Alliance/Horde]
+				i(37896),	-- Filled Green Brewfest Stein [Small Step Brew - Horde]
+				i(37897),	-- Filled Green Brewfest Stein [Jungle River Water - Horde]
+			},
+		}),
+		-- #endif
+		
 		i(56836, {	-- Overflowing Purple Brewfest Stein
 			["lore"] = "This stein was the reward from the 2011 Brewfest onward.",
 			["timeline"] = { "added 4.0.1" },
 		}),
+		-- #if AFTER TRANSMOG
 		i(32912, bubbleDown({ ["timeline"] = { "added 2.0.1", "removed 2.4.3" } }, {	-- Yellow Brewfest Stein
-			-- #if AFTER TRANSMOG
 			["description"] = "Fill up the stein with one brew, relog, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!",
-			-- #endif
 			["lore"] = "This stein was the reward from the 2007 Brewfest.",
 			["groups"] = {
 				i(32915),	-- Filled Yellow Brewfest Stein [Barleybrew Clear - Alliance]
@@ -1765,6 +1789,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				i(32920),	-- Filled Yellow Brewfest Stein [Jungle River Water - Horde]
 			},
 		})),
+		-- #else
+		i(32912, {	-- Yellow Brewfest Stein
+			["lore"] = "This stein was the reward from the 2007 Brewfest.",
+			["timeline"] = { "added 2.0.1", "removed 2.4.3" },
+			["groups"] = {
+				i(32915),	-- Filled Yellow Brewfest Stein [Barleybrew Clear - Alliance]
+				i(32917),	-- Filled Yellow Brewfest Stein [Thunder 45 - Alliance]
+				i(32918),	-- Filled Yellow Brewfest Stein [Gordok Grog - Alliance/Horde]
+				i(32919),	-- Filled Yellow Brewfest Stein [Small Step Brew - Horde]
+				i(32920),	-- Filled Yellow Brewfest Stein [Jungle River Water - Horde]
+			},
+		}),
+		-- #endif
 	})),
 	n(VENDORS, {
 		-- #if ANYCLASSIC
