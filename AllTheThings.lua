@@ -3509,7 +3509,7 @@ local SubroutineCache = {
 			ResolveFunctions.invtype;
 
 		-- Select the Instance & pop out all results
-		select(finalized, searchResults, o, "select", "instanceID",instanceID);
+		select(finalized, searchResults, o, "select", "instanceID", instanceID);
 		pop(finalized, searchResults);
 
 		-- If there's a Difficulty, filter by Difficulty
@@ -3528,7 +3528,7 @@ local SubroutineCache = {
 		end
 		wipe(searchResults);
 		for _,o in ipairs(orig) do
-			if o.f == -1 then
+			if not o.f then
 				if o.g then
 					-- no filter Item with sub-groups
 					ArrayAppend(searchResults, o.g)
@@ -3577,7 +3577,7 @@ ResolveFunctions.sub = function(finalized, searchResults, o, cmd, sub, ...)
 		ResolveFunctions.finalize(finalized, searchResults);
 		return;
 	end
-	print("Could not find subroutine", sub);
+	app.print("Could not find subroutine", sub);
 end;
 local ResolveCache = {};
 ResolveSymbolicLink = function(o)
@@ -3601,7 +3601,7 @@ ResolveSymbolicLink = function(o)
 			if cmdFunc then
 				cmdFunc(finalized, searchResults, o, unpack(sym));
 			else
-				print("Unknown symlink command",cmd);
+				app.print("Unknown symlink command",cmd);
 			end
 			-- app.PrintDebug("Finalized",#finalized,"Results",#searchResults,"after '",cmd,"' for",oHash,"with:",unpack(sym))
 		end
@@ -3609,7 +3609,7 @@ ResolveSymbolicLink = function(o)
 		-- Verify the final result is finalized
 		cmdFunc = ResolveFunctions.finalize;
 		cmdFunc(finalized, searchResults);
-		-- if app.Debugging then print("Forced Finalize",oKey,oKey and o[oKey],#finalized) end
+		-- app.PrintDebug("Forced Finalize",oKey,oKey and o[oKey],#finalized)
 
 		-- If we had any finalized search results, then clone all the records, store the results, and return them
 		if #finalized > 0 then
@@ -3634,7 +3634,7 @@ ResolveSymbolicLink = function(o)
 					-- if somehow the symlink pulls in the same item as used as the source of the symlink, notify in chat and clear any symlink on it
 					sHash = s.hash;
 					if sHash and sHash == oHash then
-						print("Symlink group pulled itself into finalized results!",oHash)
+						app.print("Symlink group pulled itself into finalized results!",oHash)
 						s.sym = nil;
 					else
 						FillSymLinks(s);
@@ -3651,7 +3651,7 @@ ResolveSymbolicLink = function(o)
 					-- if somehow the symlink pulls in the same item as used as the source of the symlink, notify in chat and clear any symlink on it
 					sHash = s.hash;
 					if sHash and sHash == oHash then
-						print("Symlink group pulled itself into finalized results!",oHash)
+						app.print("Symlink group pulled itself into finalized results!",oHash)
 						s.sym = nil;
 					else
 						FillSymLinks(s);
