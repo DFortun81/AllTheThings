@@ -1462,7 +1462,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				-- #else
 				["timeline"] = { "added 2.2.2" },
 				-- #endif
-				["maps"] = { AZUREMYST_ISLE, THE_EXODAR, ELWYNN_FOREST, TELDRASSIL, SHATTRATH_CITY },
+				["maps"] = { AZUREMYST_ISLE, THE_EXODAR, ELWYNN_FOREST, DARNASSUS, TELDRASSIL, SHATTRATH_CITY },
 				["races"] = ALLIANCE_ONLY,
 				-- #if AFTER 3.2.0.10314
 				["cost"] = { { "i", 46735, 1 } },	-- Synthebrew Goggles
