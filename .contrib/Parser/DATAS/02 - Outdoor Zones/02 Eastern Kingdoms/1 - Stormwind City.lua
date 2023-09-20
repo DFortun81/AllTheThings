@@ -8175,6 +8175,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2509,	-- Ornate Blunderbuss
 					}},
 					["groups"] = {
+						i(2508),	-- Old Blunderbuss
 						i(2510),	-- Solid Blunderbuss
 					},
 				}),
