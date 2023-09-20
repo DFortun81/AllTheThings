@@ -479,6 +479,28 @@ root(ROOTS.Zones, m(PANDARIA, {
 						}),
 					},
 				}),
+				n(66685, {	-- Danky
+					["coord"] = { 61.6, 21.6, VALE_OF_ETERNAL_BLOSSOMS },
+					["races"] = IGNORED_VALUE,	-- technically available both factions
+					["groups"] = sharedData({
+						["cost"] = {{"i",76061,1}},	-- Spirit of Harmony
+					},{
+						i(72094),	-- Black Trillium Ore
+						i(74247),	-- Ethereal Shard
+						i(72120),	-- Exotic Leather
+						i(72092),	-- Ghost Iron Ore
+						i(72238),	-- Golden Lotus
+						i(72093),	-- Kyparite
+						i(74250),	-- Mysterious Essence
+						-- i(89610),	-- Pandaria Herbs (non-specific content)
+						i(79101),	-- Prismatic Scale
+						i(76734),	-- Serpent's Eye
+						i(74249),	-- Spirit Dust
+						i(79255),	-- Starlight Ink
+						i(72103),	-- White Trillium Ore
+						i(72988),	-- Windwool Cloth
+					}),
+				}),
 				n(64051, {	-- Esha the Loommaiden <Tailoring Supplies>
 					["requireSkill"] = TAILORING,
 					["coord"] = { 31.5, 53.6, 391 },

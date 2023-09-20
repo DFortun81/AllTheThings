@@ -2212,6 +2212,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["provider"] = { "n", 91589 },	-- Fix "Smallie" Biggswrench
 				["coord"] = { 33.8, 36.4, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
+				["_drop"] = { "races" },	-- bad API data
 				["g"] = {
 					spell(181715),	-- Unlock Garrison Jukebox
 					i(122613, {	-- Stash of Dusty Music Rolls
@@ -2231,6 +2232,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["provider"] = { "n", 91072 },	-- Drix Bassbolter
 				["coord"] = { 40.9, 47.8, FROSTWALL },
 				["races"] = HORDE_ONLY,
+				["_drop"] = { "races" },	-- bad API data
 				["g"] = {
 					spell(181715),	-- Unlock Garrison Jukebox
 					i(122613, {	-- Stash of Dusty Music Rolls

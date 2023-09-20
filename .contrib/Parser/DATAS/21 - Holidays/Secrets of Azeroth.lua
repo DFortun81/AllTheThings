@@ -750,13 +750,50 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 			["repeatable"] = true,
 			["groups"] = {
 				i(208929),	-- Great Places to Visit in Valdrakken (QI!)
+				q(78053, {	-- Clicking on 'Auction House Bill of Sale' during day 12
+					["type"] = HEADERS.Object..":409012",
+					["provider"] = { "o", 409012 },	-- Auction House Bill of Sale
+					["coord"] = { 44.1, 60.3, VALDRAKKEN },
+				}),
+				q(78054, {	-- Clicking on 'Void Storage Receipt' during day 12
+					["type"] = HEADERS.Object..":409016",
+					["provider"] = { "o", 409016 },	-- Void Storage Receipt
+					["coord"] = { 73.9, 57.4, VALDRAKKEN },
+				}),
+				q(78055, {	-- Clicking on 'Garden Supply Receipt' during day 12
+					["type"] = HEADERS.Object..":409017",
+					["provider"] = { "o", 409017 },	-- Garden Supply Receipt
+					["coord"] = { 53.0, 28.4, VALDRAKKEN },
+				}),
+				q(78056, {	-- Clicking on 'Researcher's Note' during day 12
+					["type"] = HEADERS.Object..":409018",
+					["provider"] = { "o", 409018 },	-- Researcher's Note
+					["coord"] = { 37.6, 37.1, VALDRAKKEN },
+				}),
+				q(78057, {	-- Clicking on 'Hastily Scrawled Note' during day 12
+					["type"] = HEADERS.Object..":409019",
+					["provider"] = { "o", 409019 },	-- Hastily Scrawled Note
+					["coord"] = { 31.6, 70.2, VALDRAKKEN },
+				}),
+				q(78058, {	-- Clicking on 'Note to Kritha' during day 12 (automatically accepted 'A Complete Inventory' (questID 77934)) / not for me!
+					["type"] = HEADERS.Object..":409020",
+					["provider"] = { "o", 409020 },	-- Note to Kritha
+					["coord"] = { 46.0, 41.4, VALDRAKKEN },
+				}),
 				i(208936),	-- Compiled Report
 			},
 		}),
 		q(77934, {	-- A Complete Inventory
-			["provider"] = { "i", 208936 },
-			["description"] = "Use your torch to help locate the report.",
-			-- ["sourceQuest"] = 77928,	-- They Are Always Listening
+			["provider"] = { "i", 208936 },	-- Compiled Report
+			["description"] = "Use your Idol of Ohn'ahra to help find the pages.\n\nQuest begins automatically once all have been found.",
+			["sourceQuests"] = {
+				78053,	-- Auction House Bill of Sale
+				78054,	-- Void Storage Receipt
+				78055,	-- Garden Supply Receipt
+				78056,	-- Researcher's Note
+				78057,	-- Hastily Scrawled Note
+				78058,	-- Note to Kritha
+			},
 			["coord"] = { 44.1, 60.2, VALDRAKKEN },
 		}),
 
@@ -764,36 +801,53 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		q(77953, {	-- A Sphere in Danger
 			["qg"] = 185562,	-- Tithris
 			["coord"] = { 47.5, 46.2, VALDRAKKEN },
+			["sourceQuest"] = 77934,	-- A Complete Inventory
 			["groups"] = {
 				i(208942),	-- Preservationist's Dispatch Three (QI!)
 				o(409320, {	-- Buried Object
 					["coord"] = { 49.5, 79.7, THALDRASZUS },
 					["g"] = {
+						q(78108, {	-- Using torch at (50.1, 80.9 Thaldraszus - in a cave)Eastern Cave
+							["type"] = HEADERS.Item..":208092",	-- Torch of Pyrreth
+							["provider"] = {"i",208092},	-- Torch of Pyrreth
+							["coord"] = { 50.1, 80.9, THALDRASZUS },
+						}),
 						i(209795),	--  Piece of the Orb of Rathmus (QI)
 					},
 				}),
 				o(409329, {	-- Buried Object
 					["coord"] = { 45.9, 79.7, THALDRASZUS },
 					["g"] = {
+						q(78109, {	-- Using torch at (46.6 77.6 Thaldraszus - in a cave) Western Cave
+							["type"] = HEADERS.Item..":208092",	-- Torch of Pyrreth
+							["provider"] = {"i",208092},	-- Torch of Pyrreth
+							["coord"] = { 46.6, 77.6, THALDRASZUS },
+						}),
 						i(209797),	--  Piece of the Orb of Rathmus (QI)
 					},
 				}),
 				o(409333, {	-- Buried Object
 					["coord"] = { 50.1, 78.0, THALDRASZUS },
 					["g"] = {
+						q(78111, {	-- Using torch at (48.6 76.3 Thaldraszus - in a cave) Northern Cave
+							["type"] = HEADERS.Item..":208092",	-- Torch of Pyrreth
+							["provider"] = {"i",208092},	-- Torch of Pyrreth
+							["coord"] = { 48.6, 76.3, THALDRASZUS },
+						}),
 						i(209799),	--  Piece of the Orb of Rathmus (QI)
 					},
 				}),
 				i(208944, {	-- A Curious Orb (QI!)
-					i(209795),	--  Piece of the Orb of Rathmus (QI)
-					i(209797),	--  Piece of the Orb of Rathmus (QI)
-					i(209799),	--  Piece of the Orb of Rathmus (QI)
+					["cost"] = {
+						{"i",209795,1},	--  Piece of the Orb of Rathmus (QI)
+						{"i",209797,1},	--  Piece of the Orb of Rathmus (QI)
+						{"i",209799,1},	--  Piece of the Orb of Rathmus (QI)
+					},
 				}),
 			},
 		}),
 		q(77954, {	-- A Curious Orb
 			["provider"] = { "i", 208944 },
-			-- ["sourceQuest"] = 77953,	-- A Sphere in Danger
 			["coord"] = { 47.4, 46.7, VALDRAKKEN },
 		}),
 
@@ -801,46 +855,61 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		q(77957, {	-- A Treacherous Race
 			["qg"] = 206864,	-- Preservationist Kathos
 			["coord"] = { 47.4, 48.1, VALDRAKKEN },
+			["sourceQuest"] = 77954,	-- A Curious Orb
 			["groups"] = {
 				i(208958),	-- Ancient Tyrhold Artifact Notes (QI!)
 				q(77974, {
+					["name"] = "First Lock",	-- not sure how else to name this trigger
 					["description"] = "Unlock the first lock by using your torch at all 8 Tyrhold staute.",
 					["groups"] = {
 						q(77964, {	-- Orb #1
+							["type"] = HEADERS.Item..":208092",	-- Torch of Pyrreth
 							["provider"] = {"i",208092},	-- Torch of Pyrreth
 							["coord"] = { 59.9, 61.0, THALDRASZUS },
 						}),
 						q(77960, {	-- Orb #2
+							["type"] = HEADERS.Item..":208092",	-- Torch of Pyrreth
 							["provider"] = {"i",208092},	-- Torch of Pyrreth
 							["coord"] = { 57.1, 64.4, THALDRASZUS },
 						}),
 						q(77961, {	-- Orb #3
+							["type"] = HEADERS.Item..":208092",	-- Torch of Pyrreth
 							["provider"] = {"i",208092},	-- Torch of Pyrreth
 							["coord"] = { 57.1, 62.9, THALDRASZUS },
 						}),
 						q(77962, {	-- Orb #4
+							["type"] = HEADERS.Item..":208092",	-- Torch of Pyrreth
 							["provider"] = {"i",208092},	-- Torch of Pyrreth
 							["coord"] = { 57.9, 61.8, THALDRASZUS },
 						}),
 						q(77963, {	-- Orb #5
+							["type"] = HEADERS.Item..":208092",	-- Torch of Pyrreth
 							["provider"] = {"i",208092},	-- Torch of Pyrreth
 							["coord"] = { 57.9, 60.5, THALDRASZUS },
 						}),
 						q(77965, {	-- Orb #6
+							["type"] = HEADERS.Item..":208092",	-- Torch of Pyrreth
 							["provider"] = {"i",208092},	-- Torch of Pyrreth
 							["coord"] = { 58.0, 56.9, THALDRASZUS },
 						}),
 						q(77966, {	-- Orb #7
+							["type"] = HEADERS.Item..":208092",	-- Torch of Pyrreth
 							["provider"] = {"i",208092},	-- Torch of Pyrreth
 							["coord"] = { 57.9, 56.0, THALDRASZUS },
 						}),
 						q(77967, {	-- Orb #8
+							["type"] = HEADERS.Item..":208092",	-- Torch of Pyrreth
 							["provider"] = {"i",208092},	-- Torch of Pyrreth
 							["coord"] = { 59.8, 56.4, THALDRASZUS },
 						}),
 					},
 				}),
+				q(77975, {	-- Receiving 'Tyr's Favor' buff (spellID 423792)
+					["type"] = HEADERS.Spell..":423792",
+					["coord"] = { 61.1, 58.7, THALDRASZUS },
+				}),
 				q(77973, {
+					["name"] = "Third Lock",	-- not sure how else to name this trigger
 					["description"] = "Use your idol at each Ring/Room location to find Broken Urn's",
 					["groups"] = {
 						o(409212, {	-- Broken Urn #1
@@ -892,14 +961,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 							},
 						}),
 						i(208969, {	-- Titan Energy Cube
-							i(208971),	-- Titan Cube Housing
-							i(208970),	-- Titan Energy Core
+							["cost"] = {
+								{"i",208971,1},	-- Titan Cube Housing
+								{"i",208970,1},	-- Titan Energy Core
+							},
 						}),
 						i(208965, {	-- Titan Block Key
-							i(208967),	-- Titan Block Key Fragment
-							i(208966),	-- Titan Block Key Fragment
+							["cost"] = {
+								{"i",208967,1},	-- Titan Block Key Fragment
+								{"i",208966,1},	-- Titan Block Key Fragment
+							},
 						}),
-
 						-- 4 object with name on WH... 409166, 409191, 409192, 409193
 						-- using Type-named HQTs to show the objects available to click
 						q(77968, {	-- Titan Power Relay [#1]
@@ -929,11 +1001,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 		q(77977, {	-- An Ominous Artifact
 			["provider"] = { "o", 411936 },	-- Orb Location
 			["coord"] = { 60.2, 58.7, THALDRASZUS },
+			["sourceQuests"] = {
+				77974,	-- Lock [#1]
+				77975,	-- Lock [#2]
+				77973,	-- Lock [#3]
+			},
 			["groups"] = {
 				n(210674, {	-- Tithris
-					["g"] = {
-						i(209555),	--  Orb of Rathmus (QI)
-					},
+					i(209555),	--  Orb of Rathmus (QI)
 				}),
 				o(409120, {	-- Cache of Cosmic Mysteries
 					["coord"] = { 60.2, 58.7, THALDRASZUS },
@@ -1043,19 +1118,9 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(77895),	-- Completed at same time as receiving (itemdID 208888)
 	q(77579),	-- Upon completion of (QuestID 77908)
 	q(77916),	-- Upon completion of (QuestID 77928 and getting the QI!)
-	q(78053),	-- Clicking on 'Auction House Bill of Sale' during day 12
-	q(78054),	-- Clicking on 'Void Storage Receipt' during day 12
-	q(78055),	-- Clicking on 'Garden Supply Receipt' during day 12
-	q(78056),	-- Clicking on 'Researcher's Note' during day 12
-	q(78057),	-- Clicking on 'Hastily Scrawled Note' during day 12
-	q(78058),	-- Clicking on 'Note to Kritha' during day 12 (automatically accepted 'A Complete Inventory' (questID 77934)
 	q(77580),	-- Upon completion of (QuestID 77934)
-	q(78108),	-- Using torch at (50.10, 80.9 Thaldraszus - in a cave)Eastern Cave
-	q(78109),	-- Using torch at (46.6 77.6 Thaldraszus - in a cave) Western Cave
-	q(78111), 	-- Using torch at (48.6 76.3 Thaldraszus - in a cave) Northern Cave
 	q(77951),	-- Upon completion of (QuestID 77953)
 	q(77520),	-- Upon completion of (QuestID 77954)
 	q(77959),	-- Upon completion of (QuestID 77957)
-	q(77975),	-- Receiving 'Tyr's Favor' buff (spellID 423792) during day 14
 	q(77308),	-- Upon completion of (QuestID 77977)
 })));
