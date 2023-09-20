@@ -1408,7 +1408,6 @@ root(ROOTS.Unsorted, {
 				i(208229),	-- Honor of the Forsaken (TOY!)
 				---- BREWFEST ----
 				i(208880),	-- Brewhahat (TOY!)
-				i(209052),	-- Brew Barrel (TOY!)
 			}),
 			filter(MOUNTS, {
 				i(208598),	-- Eve's Ghastly Rider (MOUNT!)

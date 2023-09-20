@@ -162,6 +162,56 @@ end]];
 
 root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 	n(ACHIEVEMENTS, {
+		ach(18579, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- A Round on the House
+			crit(60561, {	-- Ohn'ahran Plains, Maruukai
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 59.8, 38.7, OHNAHRAN_PLAINS },
+			}),
+			crit(61569, {	-- Ohn'ahran Plains, Rusza'Thar Reach
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 85.8, 35.3, OHNAHRAN_PLAINS },
+			}),
+			crit(60562, {	-- Ohn'ahran Plains, Shady Sanctuary
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 28.6, 60.4, OHNAHRAN_PLAINS },
+			}),
+			crit(61571, {	-- Thaldraszus, Algeth'era Court
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 50.1, 42.7, THALDRASZUS },
+			}),
+			crit(60563, {	-- Thaldraszus, Eon's Fringe
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 52.2, 81.5, THALDRASZUS },
+			}),
+			crit(60564, {	-- Thaldraszus, Valdrakken
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 47.9, 46.8, THALDRASZUS },
+			}),
+			crit(60565, {	-- The Azure Span, Camp Antonidas
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 46.9, 40.2, THE_AZURE_SPAN },
+			}),
+			crit(61570, {	-- The Azure Span, Camp Nowhere
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 62.8, 57.7, THE_AZURE_SPAN },
+			}),
+			crit(60566, {	-- The Azure Span, Iskaara
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
+			}),
+			crit(61568, {	-- The Waking Shores, Dragonscale Basecamp
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 47.7, 83.3, THE_WAKING_SHORES },
+			}),
+			crit(60567, {	-- The Waking Shores, Ruby Lifeshrine
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 58.3,67.5, THE_WAKING_SHORES },
+			}),
+			crit(60568, {	-- The Waking Shores, Wingrest Embassy
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 76.3, 35.4, THE_WAKING_SHORES },
+			}),
+		})),
 		-- #if BEFORE MOP
 		ach(1684, {	-- Brewmaster (A)
 			-- Meta Achievement should symlink the contained Achievements from Source
@@ -474,6 +524,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					}),
 					i(37863, {	-- Direbrew's Remote
 						["timeline"] = { "added 2.0.1" },
+					}),
+					i(208742, {	-- Renewed Proto-Drake: Brewfest Armor (DM!)
+						["timeline"] = { ADDED_10_1_7 },
 					}),
 				}),
 			}),
@@ -1806,7 +1859,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			},
 		}),
 		-- #endif
-		
+
 		i(56836, {	-- Overflowing Purple Brewfest Stein
 			["lore"] = "This stein was the reward from the 2011 Brewfest onward.",
 			["timeline"] = { "added 4.0.1" },
@@ -1972,6 +2025,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["timeline"] = { "added 8.0.1" },
 						["cost"] = BREWFEST_TOKEN_COST(10),
 					}),
+					i(209052, {	-- Brew Barrel (TOY!)
+						["timeline"] = { ADDED_10_1_7 },
+						["cost"] = BREWFEST_TOKEN_COST(200),
+					}),
 					i(116758, {	-- Brewfest Banner (TOY!)
 						["timeline"] = { "added 6.0.1.18594" },
 						["cost"] = BREWFEST_TOKEN_COST(100),
@@ -2003,6 +2060,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					i(169461, {	-- Garland of Grain
 						["timeline"] = { "added 8.2.0.30918" },
 						["cost"] = BREWFEST_TOKEN_COST(150),
+					}),
+					i(209044, {	-- Orange Brewfest Bulwark
+						["timeline"] = { ADDED_10_1_7 },
+						["cost"] = BREWFEST_TOKEN_COST(200),
 					}),
 					i(90427, {	-- Pandaren Brewpack (TOY!)
 						["timeline"] = { "added 5.0.4.15913" },
@@ -2143,6 +2204,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["timeline"] = { "added 8.0.1" },
 						["cost"] = BREWFEST_TOKEN_COST(10),
 					}),
+					i(209052, {	-- Brew Barrel (TOY!)
+						["timeline"] = { ADDED_10_1_7 },
+						["cost"] = BREWFEST_TOKEN_COST(200),
+					}),
 					i(116758, {	-- Brewfest Banner (TOY!)
 						["timeline"] = { "added 6.0.1.18594" },
 						["cost"] = BREWFEST_TOKEN_COST(100),
@@ -2174,6 +2239,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					i(169461, {	-- Garland of Grain
 						["timeline"] = { "added 8.2.0.30918" },
 						["cost"] = BREWFEST_TOKEN_COST(150),
+					}),
+					i(209044, {	-- Orange Brewfest Bulwark
+						["timeline"] = { ADDED_10_1_7 },
+						["cost"] = BREWFEST_TOKEN_COST(200),
 					}),
 					i(90427, {	-- Pandaren Brewpack (TOY!)
 						["timeline"] = { "added 5.0.4.15913" },
@@ -2433,6 +2502,42 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 	tier(DF_TIER, {
 		q(77775, {	-- Daily kill of Coren Direbrew
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(77152, {	-- Bar Tab Barrel @ Ohn'ahran Plains, Maruukai
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(77745, {	-- Bar Tab Barrel @ Ohn'ahran Plains, Rusza'Thar Reach
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(77099, {	-- Bar Tab Barrel @  Ohn'ahran Plains, Shady Sanctuary
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(77747, {	-- Bar Tab Barrel @ Thaldraszus, Algeth'era Court
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(77155, {	-- Bar Tab Barrel @ Thaldraszus, Eon's Fringe
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(77153, {	-- Bar Tab Barrel @ Thaldraszus, Valdrakken
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(77096, {	-- Bar Tab Barrel @ The Azure Span, Camp Antonidas
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(77746, {	-- Bar Tab Barrel @ The Azure Span, Camp Nowhere
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(77097, {	-- Bar Tab Barrel @ The Azure Span, Iskaara
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(77744, {	-- Bar Tab Barrel @ The Waking Shores, Dragonscale Basecamp
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(76531, {	-- Bar Tab Barrel @ The Waking Shores, Ruby Lifeshrine
+			["timeline"] = { ADDED_10_1_7 },
+		}),
+		q(77095, {	-- Bar Tab Barrel @ The Waking Shores, Wingrest Embassy
 			["timeline"] = { ADDED_10_1_7 },
 		}),
 	}),
