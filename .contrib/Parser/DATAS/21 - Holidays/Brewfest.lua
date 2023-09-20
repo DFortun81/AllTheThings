@@ -820,6 +820,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					}),
 				},
 			}),
+			q(77208, {	-- Barreling Down
+				["qg"] = 207496,	-- Bragdur Battlebrew
+				["coord"] = { 29.7, 56.2, VALDRAKKEN },
+				["timeline"] = { ADDED_10_1_7 },
+				["isDaily"] = true,
+				["groups"] = BREWFEST_TOKEN,
+			}),
 			q(11293, {	-- Bark for the Barleybrews! (A)
 				["qg"] = 23627,	-- Becan Barleybrew
 				["sourceQuest"] = 11318,	-- Now This is Ram Racing... Almost. (A)
@@ -1018,6 +1025,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					}),
 				}),
 			}),
+			q(76577, {	-- Brewfest in Valdrakken (A)
+				["qg"] = 24710,	-- Ipfelkofer Ironkeg
+				["coord"] = { 55.1, 38.1, DUN_MOROGH },
+				["timeline"] = { ADDED_10_1_7 },
+				["races"] = ALLIANCE_ONLY,
+				["isYearly"] = true,
+			}),
+			q(76579, {	-- Brewfest in Valdrakken (H)
+				["qg"] = 155194,	-- La'gar Brewshout
+				["coord"] = { 41.6, 18.4, DUROTAR },
+				["timeline"] = { ADDED_10_1_7 },
+				["races"] = HORDE_ONLY,
+				["isYearly"] = true,
+			}),
 			q(11400, {	-- Brewfest Riding Rams (A)
 				["provider"] = { "i", 34028 },	-- "Honorary Brewer" Hand Stamp (A)
 				-- #if AFTER WRATH
@@ -1119,6 +1140,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["description"] = "We're not sure if completing this at the moment will get you progress on the achievement during Wrath as it does NOT retain its completion status after acquired.",
 				["repeatable"] = true,
 				-- #endif
+			}),
+			q(76591, {	-- Bubbling Brews
+				["qg"] = 207496,	-- Bragdur Battlebrew
+				["coord"] = { 29.7, 56.2, VALDRAKKEN },
+				["timeline"] = { ADDED_10_1_7 },
+				["isDaily"] = true,
+				["groups"] = BREWFEST_TOKEN,
 			}),
 			q(11117, {	-- Catch the Wild Wolpertinger! (A) [Non-EU Only!]
 				["qg"] = 23486,	-- Goldark Snipehunter
@@ -2395,6 +2423,11 @@ root(ROOTS.HiddenQuestTriggers, {
 	tier(WOD_TIER, {
 		q(37247, {	-- Angry Brewfest Letter - triggers when using "Angry Brewfest Letter" to cancel Brew of the Month subscription
 			["timeline"] = { "added 6.0.1" },
+		}),
+	}),
+	tier(DF_TIER, {
+		q(77775, {	-- Daily kill of Coren Direbrew
+			["timeline"] = { ADDED_10_1_7 },
 		}),
 	}),
 });

@@ -1094,6 +1094,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		q(78031),	-- Ensemble: Chromatically Calibrated Bio-Optic Killshades
 		q(78032),	-- Ensemble: Chromatically Calibrated Retinal Armor
+		q(78034),	-- Ensemble: Chromatically Calibrated Cranial Cannons
 		q(78035),	-- Ensemble: Chromatically Calibrated Ectoplasmic Specs
 	})),
 });
