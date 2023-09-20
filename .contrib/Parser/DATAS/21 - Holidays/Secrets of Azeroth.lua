@@ -976,24 +976,45 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 						-- using Type-named HQTs to show the objects available to click
 						q(77968, {	-- Titan Power Relay [#1]
 							["type"] = HEADERS.Object..":409166",
-							["provider"] = { "i", 208960 },	-- Titan Focusing Crystal
+							["providers"] = {
+								{ "i", 208960 },	-- Titan Focusing Crystal
+								{ "o", 409166 },	-- Titan Power Relay
+							},
 							["coord"] = { 59.3, 56.8, THALDRASZUS },
 						}),
 						q(77970, {	-- Titan Power Relay [#2]
 							["type"] = HEADERS.Object..":409166",
-							["provider"] = { "i", 208969 },	-- Titan Energy Cube
+							["providers"] = {
+								{ "i", 208969 },	-- Titan Energy Cube
+								{ "o", 409166 },	-- Titan Power Relay
+							},
 							["coord"] = { 59.5, 60.6, THALDRASZUS },
 						}),
 						q(77971, {	-- Titan Power Relay [#3]
 							["type"] = HEADERS.Object..":409166",
-							["provider"] = 	{ "i", 208973 },	-- Large Titan Capacitor
+							["providers"] = {
+								{ "i", 208973 },	-- Large Titan Capacitor
+								{ "o", 409166 },	-- Titan Power Relay
+							},
 							["coord"] = { 61.0, 62.4, THALDRASZUS },
 						}),
 						q(77969, {	-- Titan Power Relay [#4]
 							["type"] = HEADERS.Object..":409166",
-							["provider"] = { "i", 208965 },	-- Titan Block Key
+							["providers"] = {
+								{ "i", 208965 },	-- Titan Block Key
+								{ "o", 409166 },	-- Titan Power Relay
+							},
 							["coord"] = { 61.0, 55.0, THALDRASZUS },
 						}),
+						-- -- Header with Quest and no-merge
+						-- potential alternate format, but requires 'nomerge' since the object referenced is identical for each group
+						-- or could use the different objectID's above and add more duplicate object names into the DB...
+						-- header(HEADERS.Object, 409166, {	-- Titan Power Relay [#4]
+						-- 	["nomerge"] = true,
+						-- 	["questID"] = 77969,
+						-- 	["provider"] = { "i", 208965 },	-- Titan Block Key
+						-- 	["coord"] = { 61.0, 55.0, THALDRASZUS },
+						-- }),
 					},
 				}),
 			},
