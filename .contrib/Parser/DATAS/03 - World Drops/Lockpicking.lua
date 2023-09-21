@@ -243,7 +243,15 @@ root(ROOTS.WorldDrops, {
 					186145,	-- Stygian Thorn Loop
 				}},
 			}),
-			i(5758),	-- Mithril Lockbox
+			i(5758,	{	-- Mithril Lockbox
+				-- #if AFTER 10.1.7
+				["groups"] = {
+					i(7678,	{	-- Recipe: Thistle Tea
+						["timeline"] = { "added 10.1.7" },
+					}),	
+				},
+				-- #endif
+			}),
 			i(4632, {	-- Ornate Bronze Lockbox
 				-- #if AFTER 10.1.7
 				["groups"] = {
