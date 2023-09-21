@@ -174,7 +174,7 @@ ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’ensembl
 	L.TOY_DESC = "Cliquez sur ce bouton pour sélectionner un jouet aléatoire basé sur ce qu’il vous manque.";
 	L.ZONE_DESC = "Cliquez sur ce bouton pour sélectionner une zone aléatoire basé sur ce qu’il vous manque.";
 	L.GO_GO_RANDOM = "Random - Go Get 'Em!";
-	-- TODO: L.GO_GO_RANDOM_DESC = "This window allows you to randomly select a place or item to get. Go get 'em!";
+	--TODO: L.GO_GO_RANDOM_DESC = "This window allows you to randomly select a place or item to get. Go get 'em!";
 	L.CHANGE_SEARCH_FILTER = "Changer le filtre de la recherche";
 	L.CHANGE_SEARCH_FILTER_DESC = "Cliquer pour changher le filtre de la recherche.";
 	L.REROLL_2 = "Reroll :";
@@ -229,7 +229,6 @@ ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’ensembl
 		L.ITEM_FILTER_TEXT = "Filtres des objets";
 		L.ITEM_FILTER_DESCRIPTION = "Vous pouvez effectuer une recherche dans la base de données d’ATT en utilisant un filtre.";
 		L.ITEM_FILTER_BUTTON_TEXT = "Définir le filtre des objets";
-		L.ITEM_FILTER_BUTTON_DESCRIPTION = "Click this to change the item filter you want to search for within ATT.";
 		L.ITEM_FILTER_BUTTON_DESCRIPTION = "Cliquez sur ce bouton pour modifier le filtre des objets que vous souhaitez rechercher dans ATT.";
 		L.ITEM_FILTER_POPUP_TEXT = "Quel filtre d’objet souhaitez-vous rechercher ?";
 
@@ -278,7 +277,7 @@ ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’ensembl
 		--TODO: L.MODE_EXPLAIN_LABEL = 	"|cffFFFFFFWhat you collect is summarized as a specific Mode. Enable all " .. app.ccColors.Insane .. "colored options|cffFFFFFF to unlock ".. app.ccColors.Insane .. "Insane Mode|cffFFFFFF.";
 		--TODO: L.DEBUG_MODE = app.ccColors.Red.."Debug Mode|r (Show Everything)";
 		--TODO: L.DEBUG_MODE_TOOLTIP = "Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.";
-		--TODO: L.COMPLETIONIST_MODE = "+ Sources";
+		--TODO: L.COMPLETIONIST_MODE = "+Sources";
 		--TODO: L.COMPLETIONIST_MODE_TOOLTIP = "Enable this Mode to consider Items as Collected only when the specific Item has been unlocked for the given Appearance.\n\nThis means you will need to collect every shared Appearance of an Item.\n\nNote: By default, the game stops telling you about Items you have not collected once you have collected a shared Source, so this will ensure that uncollected Items are tracked.";
 		--TODO: L.I_ONLY_CARE_ABOUT_MY_MAIN = "Main Only";
 		--TODO: L.MAIN_ONLY_MODE_TOOLTIP = "Turn this setting on if you additionally want ATT to *pretend* that you've earned all shared appearances not locked by a different race or class.\n\nAs an example, if you have collected a Hunter-Only Tier Piece from ICC and there is a shared appearance from the raid without class/race restrictions, ATT will *pretend* that you've earned that source of the appearance as well.\n\nNOTE: Switching to a different race/class will incorrectly report that you've earned appearance sources that you haven't collected for that new chararacter when unlocked in this way.";
@@ -366,6 +365,7 @@ ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’ensembl
 		L.DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000Requiert un rechargement|r";
 		L.CLICK_TO_CREATE_FORMAT = "Cliquez pour créer %s";
 		L.KEYBINDINGS_TEXT = "Vous pouvez définir les raccourcis clavier pour ATT dans les options du jeu.";
+
 	-- Account-Wide Checkboxes
 		L.ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = TRACK_ACC_WIDE.."\n\nAchievement tracking is usually "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..", but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";	--TODO
 		L.ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP = TRACK_ACC_WIDE.."\n\nAzerite Essences cannot technically be collected and used "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..", but if you only care about collecting them on your main character then you may prefer tracking them "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..".";	--TODO
@@ -581,7 +581,6 @@ ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’ensembl
 		L.ITEM_ID_ADDED = "%s (%d) a été ajouté à votre collection.";
 		L.ITEM_ID_ADDED_RANK = "%s (%d) [Rang %d] a été ajouté à votre collection.";
 		L.ITEM_ID_ADDED_MISSING = "%s (%d) a été ajouté à cotre collection. Introuvable dans la base de données. Merci de le signaler sur le serveur Discord d’ATT !";
-		L.ITEM_ID_ADDED_MISSING = "%s (%d) a été ajouté à votre ocllection. ";
 		L.ITEM_ID_ADDED_SHARED = "%s (%d) [+%d] ont été ajoutés à votre collection.";
 		L.ITEM_ID_ADDED_SHARED_MISSING = "%s (%d) [+%d] ont été ajoutés à votre collection. Introuvable dans la base de données. Merci de le signaler sur le serveur Discord d’ATT !";
 		L.ITEM_ID_REMOVED = "%s (%d) a été supprimé de votre collection.";
@@ -601,7 +600,6 @@ ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’ensembl
 		L.REMOVED_WITH_PATCH_FORMAT = "Ceci a été retiré au patch %s";
 
 	-- Artifact Relic Completion
-		L.ARTIFACT_RELIC_CACHE = "Open your Artifact UI for all of your Artifact Weapons to cache whether this is an upgrade or not. This is useful for determining if you can trade this item to a Twink or not.";
 		L.ARTIFACT_RELIC_CACHE = "Ouvre l’interface des Armes prodigieuses pour toutes tes Armes prodigieuses afin de vérifier si c’est une amélioration ou non. Cela est utile pour déterminer si tu peux échanger cet objet à un Twink ou non.";
 		L.ARTIFACT_RELIC_COMPLETION = "Complétion des Armes prodigieuses";
 		L.NOT_TRADEABLE = "Non échangeable";
@@ -614,7 +612,6 @@ ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’ensembl
 		L.COMPLETE = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Complet|r";	-- Acquired the colors and icon from CanIMogIt.
 		L.COMPLETE_OTHER = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Complet*|r";	-- Acquired the colors and icon from CanIMogIt.
 		L.INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |cff15abffIncomplet|r";	-- Acquired the colors and icon from CanIMogIt.
-		L.KNOWN_ON_CHARACTER = "|T" .. app.asset("known") .. ":0|t |cff15abffConnu sur le personnage actuel|r";
 		L.KNOWN_ON_CHARACTER = "|T" .. app.asset("known") .. ":0|t |cff15abffConnu sur le personnage actuel|r";
 		L.UNKNOWN_ON_CHARACTER = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Inconnu sur le personnage actuel|r";
 		L.COST_TEXT = "|T" .. app.asset("Currency") .. ":0|t |cff0891ffMonnaie|r";
