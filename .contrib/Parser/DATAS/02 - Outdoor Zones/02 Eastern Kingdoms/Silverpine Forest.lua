@@ -1723,7 +1723,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				i(5110, {	-- Dalaran Wizard's Robe
 					-- #if BEFORE 4.0.3
-					["description"] = "This item can be sold on the Neutral Auction House to Alliance Alchemists for a... nominal fee.\n\nOnly naturally accessible to Horde players.",
+					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
 					["crs"] = {
 						2120,	-- Archmage Ataeric
 						1867,	-- Dalaran Apprentice
