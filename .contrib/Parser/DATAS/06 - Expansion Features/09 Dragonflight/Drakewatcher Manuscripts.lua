@@ -1059,12 +1059,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["e"] = EVENTS.PIRATES_DAY,
 			}),
 		}),
-		header(HEADERS.Item, 194034, sharedData({	-- Renewed Proto-Drake
-			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
-			["timeline"] = { CREATED_10_1_7 },
-		}, {
-			i(208742),	-- Renewed Proto-Drake: Brewfest Armor
-		})),
+		header(HEADERS.Item, 194034, {	-- Renewed Proto-Drake
+			i(208742, {	-- Renewed Proto-Drake: Brewfest Armor (DM!)
+				["e"] = EVENTS.BREWFEST,
+			}),
+		}),
 		header(HEADERS.Item, 194549, sharedData({	-- Windborne Velocidrake
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
 			["timeline"] = { CREATED_10_1_7 },
