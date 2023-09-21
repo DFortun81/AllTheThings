@@ -986,6 +986,7 @@ root(ROOTS.Zones, {
 					}),
 					q(10310, {	-- Sabotage the Warp-Gate!
 						["qg"] = 20281,	-- Drijya
+						["coord"] = { 48.1, 63.5, NETHERSTORM },
 						["sourceQuest"] = 10311,	-- Drijya Needs Your Help
 						["groups"] = {
 							i(29978),	-- Consortium Combatant's Robes
