@@ -14561,7 +14561,7 @@ local function RowOnClick(self, button)
 		else
 			if IsShiftKeyDown() then
 				-- If we're at the Auction House
-				if AuctionFrame and AuctionFrame:IsShown() then
+				if (AuctionFrame and AuctionFrame:IsShown()) or (AuctionHouseFrame and AuctionHouseFrame:IsShown()) then
 					-- Auctionator Support
 					if Atr_SearchAH then
 						if reference.g and #reference.g > 0 then
@@ -15648,7 +15648,7 @@ RowOnEnter = function (self)
 		if app.Settings:GetTooltipSetting("Show:TooltipHelp") then
 			if reference.g then
 				-- If we're at the Auction House
-				if AuctionFrame and AuctionFrame:IsShown() then
+				if (AuctionFrame and AuctionFrame:IsShown()) or (AuctionHouseFrame and AuctionHouseFrame:IsShown()) then
 					GameTooltip:AddLine(L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS_AH") or "TOP_ROW_INSTRUCTIONS_AH"], 1, 1, 1);
 				else
 					GameTooltip:AddLine(L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS") or "TOP_ROW_INSTRUCTIONS"], 1, 1, 1);
