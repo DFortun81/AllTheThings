@@ -164,52 +164,40 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 	n(ACHIEVEMENTS, {
 		ach(18579, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- A Round on the House
 			crit(60561, {	-- Ohn'ahran Plains, Maruukai
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
-				["coord"] = { 59.8, 38.7, OHNAHRAN_PLAINS },
+				["_quests"] = { 77152 },
 			}),
 			crit(61569, {	-- Ohn'ahran Plains, Rusza'Thar Reach
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
-				["coord"] = { 85.8, 35.3, OHNAHRAN_PLAINS },
+				["_quests"] = { 77745 },
 			}),
 			crit(60562, {	-- Ohn'ahran Plains, Shady Sanctuary
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
-				["coord"] = { 28.6, 60.4, OHNAHRAN_PLAINS },
+				["_quests"] = { 77099 },
 			}),
 			crit(61571, {	-- Thaldraszus, Algeth'era Court
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
-				["coord"] = { 50.1, 42.7, THALDRASZUS },
+				["_quests"] = { 77747 },
 			}),
 			crit(60563, {	-- Thaldraszus, Eon's Fringe
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
-				["coord"] = { 52.2, 81.5, THALDRASZUS },
+				["_quests"] = { 77155 },
 			}),
 			crit(60564, {	-- Thaldraszus, Valdrakken
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
-				["coord"] = { 47.9, 46.8, VALDRAKKEN },
+				["_quests"] = { 77153 },
 			}),
 			crit(60565, {	-- The Azure Span, Camp Antonidas
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
-				["coord"] = { 46.9, 40.2, THE_AZURE_SPAN },
+				["_quests"] = { 77096 },
 			}),
 			crit(61570, {	-- The Azure Span, Camp Nowhere
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
-				["coord"] = { 62.8, 57.7, THE_AZURE_SPAN },
+				["_quests"] = { 77746 },
 			}),
 			crit(60566, {	-- The Azure Span, Iskaara
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
-				["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
+				["_quests"] = { 77097 },
 			}),
 			crit(61568, {	-- The Waking Shores, Dragonscale Basecamp
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
-				["coord"] = { 47.7, 83.3, THE_WAKING_SHORES },
+				["_quests"] = { 77744 },
 			}),
 			crit(60567, {	-- The Waking Shores, Ruby Lifeshrine
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
-				["coord"] = { 58.3,67.5, THE_WAKING_SHORES },
+				["_quests"] = { 76531 },
 			}),
 			crit(60568, {	-- The Waking Shores, Wingrest Embassy
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
-				["coord"] = { 76.3, 35.4, THE_WAKING_SHORES },
+				["_quests"] = { 77095 },
 			}),
 		})),
 		-- #if BEFORE MOP
@@ -872,6 +860,66 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["timeline"] = { "added 3.0.1", "removed 4.0.1" },
 					}),
 				},
+			}),
+			q(77152, {	-- Bar Tab Barrel @ Ohn'ahran Plains, Maruukai
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 59.8, 38.7, OHNAHRAN_PLAINS },
+				["timeline"] = { ADDED_10_1_7 },
+			}),
+			q(77745, {	-- Bar Tab Barrel @ Ohn'ahran Plains, Rusza'Thar Reach
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 85.8, 35.3, OHNAHRAN_PLAINS },
+				["timeline"] = { ADDED_10_1_7 },
+			}),
+			q(77099, {	-- Bar Tab Barrel @ Ohn'ahran Plains, Shady Sanctuary
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 28.6, 60.4, OHNAHRAN_PLAINS },
+				["timeline"] = { ADDED_10_1_7 },
+			}),
+			q(77747, {	-- Bar Tab Barrel @ Thaldraszus, Algeth'era Court
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 50.1, 42.7, THALDRASZUS },
+				["timeline"] = { ADDED_10_1_7 },
+			}),
+			q(77155, {	-- Bar Tab Barrel @ Thaldraszus, Eon's Fringe
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 52.2, 81.5, THALDRASZUS },
+				["timeline"] = { ADDED_10_1_7 },
+			}),
+			q(77153, {	-- Bar Tab Barrel @ Thaldraszus, Valdrakken
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 47.9, 46.8, VALDRAKKEN },
+				["timeline"] = { ADDED_10_1_7 },
+			}),
+			q(77096, {	-- Bar Tab Barrel @ The Azure Span, Camp Antonidas
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 46.9, 40.2, THE_AZURE_SPAN },
+				["timeline"] = { ADDED_10_1_7 },
+			}),
+			q(77746, {	-- Bar Tab Barrel @ The Azure Span, Camp Nowhere
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 62.8, 57.7, THE_AZURE_SPAN },
+				["timeline"] = { ADDED_10_1_7 },
+			}),
+			q(77097, {	-- Bar Tab Barrel @ The Azure Span, Iskaara
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
+				["timeline"] = { ADDED_10_1_7 },
+			}),
+			q(77744, {	-- Bar Tab Barrel @ The Waking Shores, Dragonscale Basecamp
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 47.7, 83.3, THE_WAKING_SHORES },
+				["timeline"] = { ADDED_10_1_7 },
+			}),
+			q(76531, {	-- Bar Tab Barrel @ The Waking Shores, Ruby Lifeshrine
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 58.3,67.5, THE_WAKING_SHORES },
+				["timeline"] = { ADDED_10_1_7 },
+			}),
+			q(77095, {	-- Bar Tab Barrel @ The Waking Shores, Wingrest Embassy
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["coord"] = { 76.3, 35.4, THE_WAKING_SHORES },
+				["timeline"] = { ADDED_10_1_7 },
 			}),
 			q(77208, {	-- Barreling Down
 				["qg"] = 207496,	-- Bragdur Battlebrew
@@ -2502,42 +2550,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 	tier(DF_TIER, {
 		q(77775, {	-- Daily kill of Coren Direbrew
-			["timeline"] = { ADDED_10_1_7 },
-		}),
-		q(77152, {	-- Bar Tab Barrel @ Ohn'ahran Plains, Maruukai
-			["timeline"] = { ADDED_10_1_7 },
-		}),
-		q(77745, {	-- Bar Tab Barrel @ Ohn'ahran Plains, Rusza'Thar Reach
-			["timeline"] = { ADDED_10_1_7 },
-		}),
-		q(77099, {	-- Bar Tab Barrel @  Ohn'ahran Plains, Shady Sanctuary
-			["timeline"] = { ADDED_10_1_7 },
-		}),
-		q(77747, {	-- Bar Tab Barrel @ Thaldraszus, Algeth'era Court
-			["timeline"] = { ADDED_10_1_7 },
-		}),
-		q(77155, {	-- Bar Tab Barrel @ Thaldraszus, Eon's Fringe
-			["timeline"] = { ADDED_10_1_7 },
-		}),
-		q(77153, {	-- Bar Tab Barrel @ Thaldraszus, Valdrakken
-			["timeline"] = { ADDED_10_1_7 },
-		}),
-		q(77096, {	-- Bar Tab Barrel @ The Azure Span, Camp Antonidas
-			["timeline"] = { ADDED_10_1_7 },
-		}),
-		q(77746, {	-- Bar Tab Barrel @ The Azure Span, Camp Nowhere
-			["timeline"] = { ADDED_10_1_7 },
-		}),
-		q(77097, {	-- Bar Tab Barrel @ The Azure Span, Iskaara
-			["timeline"] = { ADDED_10_1_7 },
-		}),
-		q(77744, {	-- Bar Tab Barrel @ The Waking Shores, Dragonscale Basecamp
-			["timeline"] = { ADDED_10_1_7 },
-		}),
-		q(76531, {	-- Bar Tab Barrel @ The Waking Shores, Ruby Lifeshrine
-			["timeline"] = { ADDED_10_1_7 },
-		}),
-		q(77095, {	-- Bar Tab Barrel @ The Waking Shores, Wingrest Embassy
 			["timeline"] = { ADDED_10_1_7 },
 		}),
 	}),
