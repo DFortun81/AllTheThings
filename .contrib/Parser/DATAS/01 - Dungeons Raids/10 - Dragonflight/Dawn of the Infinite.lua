@@ -817,8 +817,42 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 
 root(ROOTS.HiddenQuestTriggers, {
 	tier(DF_TIER, {
+		-- q(77595),	-- when you learn everything from Quantum ?
+		-- q(77596),	-- when you learn everything from Quantum ?
+		-- q(77597),	-- when you learn everything from Quantum ?
+		-- q(77598),	-- when you learn everything from Quantum ?
+		-- q(77599),	-- when you learn everything from Quantum ?
+		-- q(77600),	-- when you learn everything from Quantum ?
+		-- q(77601),	-- when you learn everything from Quantum ?
+		-- q(77602),	-- when you learn everything from Quantum ?
+		-- q(77603),	-- when you learn everything from Quantum ?
+		-- q(77604),	-- when you learn everything from Quantum ?
+		-- q(77605),	-- when you learn everything from Quantum ?
+		-- q(77606),	-- when you learn everything from Quantum ?
+		-- q(77607),	-- when you learn everything from Quantum ?
+		-- q(77608),	-- when you learn everything from Quantum ?
+		-- q(77609),	-- when you learn everything from Quantum ?
+		-- q(77610),	-- when you learn everything from Quantum ?
+		-- q(77611),	-- when you learn everything from Quantum ?
+		-- q(77622),	-- when you learn everything from Quantum ?
+		-- q(77623),	-- when you learn everything from Quantum ?
 		q(77624),	-- when you learn everything from Quantum Legs (Leather / Druid)
+		-- q(77625),	-- when you learn everything from Quantum ?
+		-- q(77626),	-- when you learn everything from Quantum ?
+		-- q(77627),	-- when you learn everything from Quantum ?
 		q(77628),	-- when you learn everything from Quantum Headpiece (Leather / Druid)
+		-- q(77629),	-- when you learn everything from Quantum ?
+		-- q(77630),	-- when you learn everything from Quantum ?
+		-- q(77631),	-- when you learn everything from Quantum ?
+		-- q(77632),	-- when you learn everything from Quantum ?
+		-- q(77633),	-- when you learn everything from Quantum ?
+		-- q(77634),	-- when you learn everything from Quantum ?
+		-- q(77635),	-- when you learn everything from Quantum ?
 		q(77636),	-- when you learn everything from Quantum Chestpiece (Leather / Druid)
+		-- q(77637),	-- when you learn everything from Quantum ?
+		-- q(77638),	-- when you learn everything from Quantum ?
+		-- q(77639),	-- when you learn everything from Quantum ?
+		-- q(77640),	-- when you learn everything from Quantum ?
+		-- q(77641),	-- when you learn everything from Quantum ?
 	}),
 });
