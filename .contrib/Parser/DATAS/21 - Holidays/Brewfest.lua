@@ -185,7 +185,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			}),
 			crit(60564, {	-- Thaldraszus, Valdrakken
 				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
-				["coord"] = { 47.9, 46.8, THALDRASZUS },
+				["coord"] = { 47.9, 46.8, VALDRAKKEN },
 			}),
 			crit(60565, {	-- The Azure Span, Camp Antonidas
 				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
