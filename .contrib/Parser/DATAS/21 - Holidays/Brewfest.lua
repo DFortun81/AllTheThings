@@ -2540,9 +2540,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(77095, {	-- Bar Tab Barrel @ The Waking Shores, Wingrest Embassy
 			["timeline"] = { ADDED_10_1_7 },
 		}),
-		q(77774, {	-- Triggers when learning Renewed Proto-Drake: Brewfest Armor [itemID 208742]
-			["timeline"] = { ADDED_10_1_7 },
-		}),
 	}),
 });
 -- #endif
