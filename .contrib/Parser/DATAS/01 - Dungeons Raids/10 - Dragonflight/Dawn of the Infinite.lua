@@ -493,7 +493,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 							["_encounter"] = { 2538, MYTHIC_DUNGEON },
 						}),
 					}),
-					ach(18706, bubbleDown({ ["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 } }, {	-- Put That Thing Back Where It Came From
+					ach(18706, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Put That Thing Back Where It Came From
 						i(208490, {	-- Ensemble: Infinite Acolyte's Regalia
 							i(208519),	-- Infinite Soldier's Bracers
 							i(208516),	-- Infinite Soldier's Chainmail
