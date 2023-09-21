@@ -23,7 +23,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			q(77423, {	-- Surging Dreams
 				["provider"] = { "n", 211031 },	-- Archdruid Hamuul Runetotem
 				["coord"] = { 50.6, 57.4, VALDRAKKEN },
-				["isBreadcrumb"] = true -- TODO: wasn't up on first character who complete quest below
+				["isBreadcrumb"] = true,
 			}),
 			q(77414, {	-- Dreamsurge Investigation
 				["sourceQuests"] = { 77423 },	-- Surging Dreams
@@ -89,9 +89,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 		}),
-		-- Alex: bosses/rares are farmable, they give 1-3 Charred Elemental Remains on kill
-		-- HQT which pop with kill act wierd, idk what a deal with it and gonna leave now as it is
-		-- 'Birth of Flames' event, rares don't have spawn order
 		n(RARES, sharedData({
 			["g"] = {
 				i(209419),	-- Charred Elemental Remains
@@ -102,6 +99,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 61.9, 26.5, THALDRASZUS },
 					{ 41.2, 77.5, THE_WAKING_SHORES },
 					{ 24.3, 60.9, OHNAHRAN_PLAINS },
+					{ 32.6, 39.6, THE_AZURE_SPAN },
 				},
 			}),
 			n(209837, {	-- Flamewing Ascendant
@@ -109,6 +107,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 62.4, 26.0, THALDRASZUS },
 					{ 41.2, 77.5, THE_WAKING_SHORES },
 					{ 24.3, 60.9, OHNAHRAN_PLAINS },
+					{ 32.6, 39.6, THE_AZURE_SPAN },
 				},
 			}),
 			n(209491, {	-- Molten General
@@ -116,6 +115,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 61.8, 26.3, THALDRASZUS },
 					{ 41.2, 77.5, THE_WAKING_SHORES },
 					{ 24.3, 60.9, OHNAHRAN_PLAINS },
+					{ 32.6, 39.6, THE_AZURE_SPAN },
 				},
 			}),
 			n(209753, {	-- Planesborn Annihilator
@@ -123,6 +123,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 61.7, 26.2, THALDRASZUS },
 					{ 41.2, 77.5, THE_WAKING_SHORES },
 					{ 24.3, 60.9, OHNAHRAN_PLAINS },
+					{ 32.6, 39.6, THE_AZURE_SPAN },
 				},
 			}),
 		})),
