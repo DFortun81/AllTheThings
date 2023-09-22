@@ -25,6 +25,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					428,	-- Frostmane Hovel (Coldridge Valley)
 				},
 				["groups"] = {
+					spell(921, {	-- Pickpocketing
+						i(2109, {	-- Frostmane Chain Vest
+							["timeline"] = { "added 10.1.7" },	-- ATT Discord 20.09.2023
+							["description"] = "Can be pickpocketed from Grik'nir the Cold in Dun Morogh and Riverpaw Runts in Elwynn Forest.",
+							--	["cr"] = 808,	-- Grik'nir the Cold
+							["coords"] = {
+								{ 37.2, 78.4, DUN_MOROGH },
+								{ 37.2, 78.5, DUN_MOROGH },
+							},
+						}),
+					}),
 					n(QUESTS, {
 						q(170, {	-- A New Threat
 							["qg"] = 713,	-- Balir Frosthammer
