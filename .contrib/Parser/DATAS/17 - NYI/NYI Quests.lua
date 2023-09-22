@@ -1061,7 +1061,7 @@ root(ROOTS.NeverImplemented, {
 				q(33534, { ["name"] = "Find D'kaan", }),	-- Find D'kaan
 				q(35222, { ["name"] = "Firing the Mayor", }),	-- Firing the Mayor
 				q(35228, { ["name"] = "Firing the Mayor", }),	-- Firing the Mayor
-				q(33755, { ["name"] = "First Test Race: 2 Laps", }),	-- First Test Race: 2 Laps
+				q(33755, { ["name"] = "First Test Race: 2 Laps", ["_drop"] = { "g" }, }),	-- First Test Race: 2 Laps
 				q(34846, { ["name"] = "Fish Fight", ["_drop"] = { "g" }, }),	-- Fish Fight
 				q(33635, { ["name"] = "FLAG - Seen Gazebo Explosion", }),	-- FLAG - Seen Gazebo Explosion
 				q(33644, { ["name"] = "FLAG - Seen Wall Explosion", }),	-- FLAG - Seen Wall Explosion
@@ -1124,7 +1124,7 @@ root(ROOTS.NeverImplemented, {
 				q(35755, { ["name"] = "Intricately Carved Battle Staff", }),	-- Intricately Carved Battle Staff
 				q(33987, { ["name"] = "Intro Tracking", }),	-- Intro Tracking
 				q(33496, { ["name"] = "Iron Horde in Karabor", }),	-- Iron Horde in Karabor
-				q(35504, { ["name"] = "Iron Joker", }),	-- Iron Joker
+				q(35504, { ["name"] = "Iron Joker", ["_drop"] = { "g" }, }),	-- Iron Joker
 				q(35020, { ["name"] = "Jared's Test Quest", }),	-- Jared's Test Quest
 				q(35294, { ["name"] = "Jasper Moves", }),	-- Jasper Moves
 				q(34690, { ["name"] = "Just the Beginning", }),	-- Just the Beginning
@@ -1696,7 +1696,7 @@ root(ROOTS.NeverImplemented, {
 				q(38260, { ["name"] = "Beachhead", }),	-- Beachhead
 				q(38575, { ["name"] = "Beachhead", }),	-- Beachhead
 				q(36593, { ["name"] = "Breakers Invasion! UNUSED", }),	-- Breakers Invasion! UNUSED
-				q(39129, { ["name"] = "Ill Tempered", }),	-- Ill Tempered
+				q(39129, { ["name"] = "Ill Tempered", ["_drop"] = { "g" }, }),	-- Ill Tempered
 				q(38224, { ["name"] = "REUSE", }),	-- REUSE
 				q(36572, { ["name"] = "Tangleheart Return", }),	-- Tangleheart Return
 				q(36661, { ["name"] = "The Power of the Red", }),	-- The Power of the Red
