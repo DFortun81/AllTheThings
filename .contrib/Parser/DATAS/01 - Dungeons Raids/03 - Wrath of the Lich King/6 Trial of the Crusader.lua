@@ -1317,7 +1317,11 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 					}),
 					i(47556),	-- Crusader Orb
 					i(47242, {	-- Trophy of the Crusade
+						-- #if AFTER 4.0.3
 						["description"] = "This only drops on either of the 25-Player Modes.",
+						-- #else
+						["description"] = "This only drops on either of the 25-Player Modes or from the Tribute Chest at the end of 10 man Heroic.",
+						-- #endif
 					}),
 				},
 			}),
@@ -1822,7 +1826,13 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 							a(ig(48708)),		-- Spellstorm Blade
 							h(ig(48703)),		-- The Facebreaker
 							a(ig(48712)),		-- The Spinebreaker
+							
 						}),
+						-- #if BEFORE 4.0.3
+						i(47242, {	-- Trophy of the Crusade
+							["description"] = "This only drops on either of the 25-Player Modes or from the Tribute Chest at the end of 10 man Heroic.",
+						}),
+						-- #endif
 					},
 				})),
 			}),
