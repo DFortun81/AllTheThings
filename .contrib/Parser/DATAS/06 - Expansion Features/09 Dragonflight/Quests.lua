@@ -42,7 +42,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["races"] = ALLIANCE_ONLY,
 			["isBreadcrumb"] = true,
 			["g"] = {
-				i(205456),	-- Lost Dragonscale
+				i(205456, {	-- Lost Dragonscale
+					["timeline"] = { ADDED_10_1_0 },
+				}),
 			},
 		}),
 		q(65435, {	-- The Dragon Isles Await [H]
@@ -50,7 +52,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,
 			["g"] = {
-				i(205458),	-- Lost Dragonscale
+				i(205458, {	-- Lost Dragonscale
+					["timeline"] = { ADDED_10_1_0 },
+				}),
 			},
 		}),
 		q(66577, {	-- Aspectral Invitation [A]
