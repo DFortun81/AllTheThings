@@ -18,19 +18,19 @@ root(ROOTS.ExpansionFeatures,
 					["g"] = {
 						ach(9900, {	-- Exploration Mission Master
 							ach(9150),	-- Exploration Mission Specialist
-							crit(1),	-- Exploration: Oshu'gun Dig Site
-							crit(2),	-- Exploration: Razed Warsong Outpost Dig Site
-							crit(3),	-- Exploration: Stonecrag Excavation Dig Site
-							crit(4),	-- Exploration: Sethekk Hollow Dig Sites
-							crit(5),	-- Exploration: Apexis Excavation Dig Site
-							crit(6),	-- Exploration: Ango'rosh Dig Site
-							crit(7),	-- Exploration: Veil Shadar Dig Site
-							crit(8),	-- Exploration: Overlook Ruins Dig Site
-							crit(9),	-- Exploration: The Broken Spine Dig Site
-							crit(10),	-- Exploration: Daggermaw Flows Dig Site
-							crit(11),	-- Exploration: Colossal's Fall Dig Site
-							crit(12),	-- Exploration: Burial Fields
-							crit(13),	-- Exploration: Umbrafen Dig Site
+							crit(27777),	-- Exploration: Oshu'gun Dig Site
+							crit(27778),	-- Exploration: Razed Warsong Outpost Dig Site
+							crit(27779),	-- Exploration: Stonecrag Excavation Dig Site
+							crit(27780),	-- Exploration: Sethekk Hollow Dig Sites
+							crit(27781),	-- Exploration: Apexis Excavation Dig Site
+							crit(27782),	-- Exploration: Ango'rosh Dig Site
+							crit(27783),	-- Exploration: Veil Shadar Dig Site
+							crit(27784),	-- Exploration: Overlook Ruins Dig Site
+							crit(27785),	-- Exploration: The Broken Spine Dig Site
+							crit(27786),	-- Exploration: Daggermaw Flows Dig Site
+							crit(27787),	-- Exploration: Colossal's Fall Dig Site
+							crit(27788),	-- Exploration: Burial Fields
+							crit(27789),	-- Exploration: Umbrafen Dig Site
 						}),
 						ach(9147, {	-- Mission Specialist
 							ach(9523),	-- Patrolling Draenor [Yes this is a pre-req]
