@@ -1787,8 +1787,6 @@ root(ROOTS.Unsorted, {
 				i(205239),	-- Fluffy Ear
 				i(205243),	-- Spare Bow String
 				i(205244),	-- Rain-soaked pelt
-				i(205456),	-- Lost Dragonscale
-				i(205458),	-- Lost Dragonscale
 				i(205467),	-- Preserved Krolusk Crest
 				i(205472),	-- Wad of Sparkling Somethings
 				i(205691),	-- Hypnotic Murloc Lure

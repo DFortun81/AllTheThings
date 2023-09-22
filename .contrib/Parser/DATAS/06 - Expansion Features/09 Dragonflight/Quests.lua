@@ -41,11 +41,17 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isBreadcrumb"] = true,
+			["g"] = {
+				i(205456),	-- Lost Dragonscale
+			},
 		}),
 		q(65435, {	-- The Dragon Isles Await [H]
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,
+			["g"] = {
+				i(205458),	-- Lost Dragonscale
+			},
 		}),
 		q(66577, {	-- Aspectral Invitation [A]
 			["sourceQuests"] = {
