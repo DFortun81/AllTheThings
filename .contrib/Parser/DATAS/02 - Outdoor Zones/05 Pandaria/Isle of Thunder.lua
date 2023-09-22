@@ -1009,7 +1009,7 @@ root(ROOTS.Zones, {
 				n(VENDORS, {
 					n(70535, {	-- Teng of the Flying Daggers <Shado-Pan Assault Quartermaster>
 						["coord"] = { 51.6, 46.6, ISLE_OF_THUNDER },
-						["sym"] = {{"sub","common_vendo",70346}},	-- Ao Pye <Shado-Pan Assault Quartermaster>
+						["sym"] = {{"sub","common_vendor",70346}},	-- Ao Pye <Shado-Pan Assault Quartermaster>
 					}),
 				}),
 				n(ZONE_DROPS, {

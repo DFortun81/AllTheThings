@@ -2165,6 +2165,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					}),
 				}),
 			}),
+			n(207496,  {	-- Bragdur Battlebrew
+				["coord"] = { 29.8, 56.6, VALDRAKKEN },
+				["sym"] = {{"sub","common_vendor",23710}},	-- Belbi Quikswitch <Token Redeemer> (Ally Version)
+			}),
 			n(23605,  {	-- Bron <Sausage Vendor>
 				-- #if AFTER CATA
 				["coord"] = { 41.6, 17.8, DUROTAR },
