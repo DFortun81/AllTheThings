@@ -19,19 +19,19 @@ root(ROOTS.ExpansionFeatures,
 					ach(9208),	-- Botani Invasion
 					ach(9207),	-- Goren Invasion
 					ach(9827, {		-- Impervious Defender
-						crit(1),		-- Botani
-						crit(2),		-- Goren
-						crit(3),		-- Iron Horde
-						crit(4),		-- Ogres
-						crit(5),		-- Shadow Council
-						crit(6),		-- Shadowmoon
+						crit(27586),		-- Botani
+						crit(27587),		-- Goren
+						crit(27588),		-- Iron Horde
+						crit(27589),		-- Ogres
+						crit(27590),		-- Shadow Council
+						crit(27591),		-- Shadowmoon
 						ach(9209, {		-- Master Defender
-							crit(1),		-- Botani
-							crit(2),		-- Goren
-							crit(3),		-- Iron Horde
-							crit(4),		-- Ogres
-							crit(5),		-- Shadow Council
-							crit(6),		-- Shadowmoon
+							crit(27294),		-- Botani
+							crit(27295),		-- Goren
+							crit(27296),		-- Iron Horde
+							crit(27297),		-- Ogres
+							crit(27298),		-- Shadow Council
+							crit(27299),		-- Shadowmoon
 						}),
 					}),
 					ach(9543, {	-- Invasion? What Invasion? (50)
@@ -41,32 +41,32 @@ root(ROOTS.ExpansionFeatures,
 					ach(9244),		-- Invasions Are Better with Friends
 					ach(9205),		-- Iron Horde Invasion
 					ach(9858, {		-- Master and Commander
-						crit(1),		-- Teluur
-						crit(2),		-- Gaur
-						crit(3),		-- Commander Dro'gan
-						crit(4),		-- Mage Lord Gogg'nathog
-						crit(5),		-- Lady Fleshsear
-						crit(6),		-- Annihilon
+						crit(27704),		-- Teluur
+						crit(27705),		-- Gaur
+						crit(27706),		-- Commander Dro'gan
+						crit(27707),		-- Mage Lord Gogg'nathog
+						crit(27708),		-- Lady Fleshsear
+						crit(27709),		-- Annihilon
 					}),
 					ach(9204),		-- Ogre Invasion
 					ach(9826, {		-- Platinum Defender
-						crit(1),		-- Botani
-						crit(2),		-- Goren
-						crit(3),		-- Iron Horde
-						crit(4),		-- Ogres
-						crit(5),		-- Shadow Council
-						crit(6),		-- Shadowmoon
+						crit(27586),		-- Botani
+						crit(27587),		-- Goren
+						crit(27588),		-- Iron Horde
+						crit(27589),		-- Ogres
+						crit(27590),		-- Shadow Council
+						crit(27591),		-- Shadowmoon
 						ach(9165),		-- Golden Defender
 						ach(9164),		-- Silver Defender
 						ach(9162),		-- Bronze Defender
 					}),
 					ach(9181, {		-- Save Those Buildings!
-						crit(1),		-- Goren
-						crit(2),		-- Iron Horde
-						crit(3),		-- Botani
-						crit(4),		-- Shadow Council
-						crit(5),		-- Shadowmoon
-						crit(6),		-- Ogres
+						crit(25290),		-- Goren
+						crit(25292),		-- Iron Horde
+						crit(25295),		-- Botani
+						crit(25293),		-- Shadow Council
+						crit(25291),		-- Shadowmoon
+						crit(25294),		-- Ogres
 					}),
 					ach(9203),		-- Shadow Council Invasion
 					ach(9206),		-- Shadowmoon Clan Invasion

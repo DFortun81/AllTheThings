@@ -22,17 +22,17 @@ root(ROOTS.ExpansionFeatures,
 								ach(10177),	-- Set Sail!
 							}),
 							ach(10166, {	-- Naval Mechanics
-								crit(1),	-- Tuskarr Fishing Net
-								crit(2),	-- Felsmoke Launchers
-								crit(3),	-- Unsinkable
-								crit(4),	-- High Intensity Fog Lights
-								crit(5),	-- True Iron Rudder
-								crit(6),	-- Trained Shark Tank
-								crit(7),	-- Ghostly Spyglass
-								crit(8),	-- Ice Cutter
-								crit(9),	-- Gyroscopic Internal Stabilizer
-								crit(10),	-- Bilge Pump
-								crit(11),	-- Blast Furnace
+								crit(28536),	-- Tuskarr Fishing Net
+								crit(28529),	-- Felsmoke Launchers
+								crit(28537),	-- Unsinkable
+								crit(28538),	-- High Intensity Fog Lights
+								crit(28535),	-- True Iron Rudder
+								crit(28539),	-- Trained Shark Tank
+								crit(28530),	-- Ghostly Spyglass
+								crit(28532),	-- Ice Cutter
+								crit(28531),	-- Gyroscopic Internal Stabilizer
+								crit(28540),	-- Bilge Pump
+								crit(28527),	-- Blast Furnace
 							}),
 						}),
 						n(FOLLOWERS, bubbleDown({	-- Followers

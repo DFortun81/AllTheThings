@@ -75,14 +75,15 @@ app:GetWindow("Auctions", {
 		self:RegisterEvent("ADDON_LOADED");
 		self.UpdatePosition = function(self)
 			self:ClearAllPoints();
-			if AuctionFrame and not AuctionFrame.__ATTSETUP then
-				local origHide, origShow = AuctionFrame.Hide, AuctionFrame.Show;
-				AuctionFrame.__ATTSETUP = true;
-				AuctionFrame.Hide = function(...)
+			local auctionFrame = AuctionHouseFrame or AuctionFrame;
+			if auctionFrame and not auctionFrame.__ATTSETUP then
+				local origHide, origShow = auctionFrame.Hide, auctionFrame.Show;
+				auctionFrame.__ATTSETUP = true;
+				auctionFrame.Hide = function(...)
 					origHide(...);
 					self:UpdatePosition();
 				end
-				AuctionFrame.Show = function(...)
+				auctionFrame.Show = function(...)
 					origShow(...);
 					self:UpdatePosition();
 				end
@@ -99,13 +100,13 @@ app:GetWindow("Auctions", {
 					self:UpdatePosition();
 				end
 			end
-			if AuctionFrame and AuctionFrame:IsShown() then
-				self:SetPoint("TOP", AuctionFrame, "TOP", 0, -12);
-				self:SetPoint("BOTTOM", AuctionFrame, "BOTTOM", 0, 10);
+			if auctionFrame and auctionFrame:IsShown() then
+				self:SetPoint("TOP", auctionFrame, "TOP", 0, -12);
+				self:SetPoint("BOTTOM", auctionFrame, "BOTTOM", 0, 10);
 				if SideDressUpFrame and SideDressUpFrame:IsShown() then
 					self:SetPoint("LEFT", SideDressUpFrame, "RIGHT", 0, 0);
 				else
-					self:SetPoint("LEFT", AuctionFrame, "RIGHT", 0, 0);
+					self:SetPoint("LEFT", auctionFrame, "RIGHT", 0, 0);
 				end
 				if app.Settings:GetTooltipSetting("Auto:AuctionList") then
 					self:Show();

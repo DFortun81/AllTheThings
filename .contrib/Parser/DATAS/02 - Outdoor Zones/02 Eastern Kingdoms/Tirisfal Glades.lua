@@ -746,6 +746,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #endif
+			-- #if AFTER 10.1.7
+			spell(921, {	-- Pickpocketing
+				i(3330, {	-- Dargol's Hauberk
+					["timeline"] = { "added 10.1.7" },	-- ATT Discord 20.09.2023
+					["description"] = "Can be pickpocketed from Captain Dargol.",
+					--	["cr"] = 1658,	-- Captain Dargol
+					["coords"] = {
+						{ 52.6, 26.2, TIRISFAL_GLADES },
+						{ 52.4, 26.6, TIRISFAL_GLADES },
+					},
+				}),
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(25046, {	-- A Daughter's Embrace
 					["qg"] = 13158,	-- Lieutenant Sanders
@@ -2272,30 +2285,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13287" },
 					["cr"] = 1535,	-- Scarlet Warrior
 				}),
+				-- #if BEFORE 10.1.7
+				-- Added to Dargol in Tirisfall via Pickpocket (not trolling)
 				i(3330, {	-- Dargol's Hauberk
 					["coord"] = { 52.6, 26.2, TIRISFAL_GLADES },
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1658,	-- Captain Dargol
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
-					["coords"] = {
-						{ 23.4, 35.4, TIRISFAL_GLADES },
-						{ 25.4, 35.4, TIRISFAL_GLADES },
-					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, TIRISFAL_GLADES },
-						{ 17.8, 33.4, TIRISFAL_GLADES },
-						{ 19.8, 46.8, TIRISFAL_GLADES },
-					},
-					-- #endif
-					--]]
 				}),
+				-- #endif
 				i(3335, {	-- Farmer's Broom
 					["cr"] = 1935,	-- Tirisfal Farmhand
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023

@@ -614,27 +614,27 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 						{ 65.8, 55.0, 338 },
 						{ 68.5, 64.9, 338 },
 					},
-					["groups"] = {
-						i(67121),	-- Chestguard of the Caring Ursine
-						i(66920),	-- Cyu's Ornate Wand
-						i(66965),	-- Drape of Fiery Dreams
-						i(66966),	-- Elekk-Horn Waistguard
-						i(66989),	-- Endwyn's Flickering Gauntlets
-						i(66992),	-- Harbinger's Breastplate
-						i(67122),	-- Helm of Holy Visions
-						i(66971),	-- Highland Padded Leggings
-						i(66968),	-- Lhakaz's Swiftblade
-						i(67120),	-- Mace of Apotheosis
-						i(67057),	-- Oath-Bound Gauntlets
-						i(66919),	-- Robes of Whispering Sands
-						i(67069),	-- Shade of Death
-						i(67123),	-- Sinman's Helm of Succor
-						i(66993),	-- Sorrow's End
-						i(67115),	-- Soulheart Bindings
-						i(66976),	-- Spaulders of the Savage Beast
-						i(67071),	-- Staff of Old Woes
-						i(67117),	-- Woundsealer Spaulders
-					},
+					["sym"] = {{"select","itemID",
+						67121,	-- Chestguard of the Caring Ursine
+						66920,	-- Cyu's Ornate Wand
+						66965,	-- Drape of Fiery Dreams
+						66966,	-- Elekk-Horn Waistguard
+						66989,	-- Endwyn's Flickering Gauntlets
+						66992,	-- Harbinger's Breastplate
+						67122,	-- Helm of Holy Visions
+						66971,	-- Highland Padded Leggings
+						66968,	-- Lhakaz's Swiftblade
+						67120,	-- Mace of Apotheosis
+						67057,	-- Oath-Bound Gauntlets
+						66919,	-- Robes of Whispering Sands
+						67069,	-- Shade of Death
+						67123,	-- Sinman's Helm of Succor
+						66993,	-- Sorrow's End
+						67115,	-- Soulheart Bindings
+						66976,	-- Spaulders of the Savage Beast
+						67071,	-- Staff of Old Woes
+						67117,	-- Woundsealer Spaulders
+					}},
 				}),
 --[[
 					n(54338, {	-- Anthriss	}),

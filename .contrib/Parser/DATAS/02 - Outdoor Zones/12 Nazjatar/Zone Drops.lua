@@ -234,7 +234,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				154182,	-- Broken Snapdragon
 				152444,	-- Prowling Snapdragon
 				153310,	-- Qalina, Spear of Ice
-				154745,	-- Razortooth Snapdragon
+				154756,	-- Razortooth Snapdragon
 				155834,	-- Savage Snapdragon
 				152363,	-- Savage Snapdragon
 				153959,	-- Savage Snapdragon

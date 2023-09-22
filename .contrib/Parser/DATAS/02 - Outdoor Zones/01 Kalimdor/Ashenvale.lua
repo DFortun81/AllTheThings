@@ -3310,11 +3310,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(1351, {	-- Fingerbone Bracers
+					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 15.09.2023
 					-- #if BEFORE 4.0.3
 					["description"] = "This item is only naturally accessible to Alliance players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
-					-- #endif
-					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 3808,	-- Forsaken Dark Stalker
+					["coords"] = {
+						{ 75.8, 73.6, ASHENVALE },
+						{ 77.4, 75.4, ASHENVALE },
+					},
+					-- #elseif AFTER 10.1.7
+					["cr"] = 3928,	-- Rotting Slime
+					["coords"] = {
+						{ 75.6, 69.2, ASHENVALE },
+						{ 77.2, 73.8, ASHENVALE },
+						{ 71.8, 70.8, ASHENVALE },
+						{ 69.8, 74.8, ASHENVALE },
+						{ 73.6, 79.6, ASHENVALE },
+						{ 72.8, 74.4, ASHENVALE },
+					},
+					-- #endif
 				}),
 				i(78343, {	-- Formula: Enchant Gloves - Herbalism (RECIPE!)
 					["timeline"] = { "added 4.3.0" },

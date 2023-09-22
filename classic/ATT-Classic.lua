@@ -2527,7 +2527,7 @@ local function SearchForLink(link)
 end
 local function SearchForMissingItemsRecursively(group, listing)
 	if group.visible then
-		if (group.collectible or (group.itemID and group.total and group.total > 0)) and (not group.b or group.b == 2 or group.b == 3) then
+		if group.itemID and (group.collectible or (group.total and group.total > 0)) and (not group.b or group.b == 2 or group.b == 3) then
 			tinsert(listing, group);
 		end
 		if group.g and group.expanded then
@@ -10170,7 +10170,7 @@ local function RowOnClick(self, button)
 			end
 
 			-- If we're at the Auction House
-			if AuctionFrame and AuctionFrame:IsShown() then
+			if (AuctionFrame and AuctionFrame:IsShown()) or (AuctionHouseFrame and AuctionHouseFrame:IsShown()) then
 				local search = SearchForMissingItemNames(reference);
 				local count = #search;
 				if count < 1 then
@@ -10865,7 +10865,7 @@ local function RowOnEnter(self)
 
 		if reference.g then
 			-- If we're at the Auction House
-			if AuctionFrame and AuctionFrame:IsShown() then
+			if (AuctionFrame and AuctionFrame:IsShown()) or (AuctionHouseFrame and AuctionHouseFrame:IsShown()) then
 				GameTooltip:AddLine(L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS_AH") or "TOP_ROW_INSTRUCTIONS_AH"], 1, 1, 1);
 			else
 				GameTooltip:AddLine(L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS") or "TOP_ROW_INSTRUCTIONS"], 1, 1, 1);

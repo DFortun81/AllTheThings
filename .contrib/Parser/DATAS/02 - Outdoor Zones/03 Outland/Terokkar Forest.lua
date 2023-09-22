@@ -1496,6 +1496,7 @@ root(ROOTS.Zones, {
 						["description"] = "This bag is exclusive to the Crocolisk in the City Daily Quest.",
 						["groups"] = {
 							i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
+							i(34828),	-- Antique Silver Cufflinks
 							i(34837),	-- The 2 Ring
 							i(35350),	-- Chuck (PET!)
 							i(34826),	-- Gold Wedding Band
@@ -1512,6 +1513,7 @@ root(ROOTS.Zones, {
 						["description"] = "Shared reward bag for all the non-Croc dailies.",
 						["groups"] = {
 							i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
+							i(34828),	-- Antique Silver Cufflinks
 							i(34831),	-- Eye of the Sea
 							i(34826),	-- Gold Wedding Band
 							i(34827),	-- Noble's Monocle

@@ -84,12 +84,16 @@ root(ROOTS.ExpansionFeatures,
 					["races"] = HORDE_ONLY,
 				}),
 				ach(9094, {	-- Garrison Architect
-					title(260),		-- Architect
-					crit(1),		-- Draftsman
-					crit(2),		-- Grand Master Draftsman
-					crit(3),		-- Master Draftsman
-					crit(4),		-- Master Builder
-					crit(5),		-- Keepin' Busy
+					["sym"] = {{"meta_achievement",					
+						9125,	-- Draftsman
+						9128,	-- Grand Master Draftsman
+						9126,	-- Master Draftsman
+						9097,	-- Keepin' Busy
+						9096,	-- Master Builder
+					}},
+					["groups"] = {
+						title(260),		-- Architect
+					},
 				}),
 				ach(9210, {	-- Garrison Buddies (A)
 					["races"] = ALLIANCE_ONLY,
@@ -108,42 +112,42 @@ root(ROOTS.ExpansionFeatures,
 					ach(9125),		-- Draftsman (20)
 				}),
 				a(ach(10067, {	-- In Pursuit of Gul'dan (Garrison) [A]
-					crit(1, { -- All Hands On Deck
+					crit(28291, { -- All Hands On Deck
 						["_quests"] = { 38259 },
 					}),
-					crit(2, { -- The Invasion of Tanaan
+					crit(28292, { -- The Invasion of Tanaan
 						["_quests"] = { 38445 },
 					}),
-					crit(3, { -- Bane of the Bleeding Hollow
+					crit(28293, { -- Bane of the Bleeding Hollow
 						["_quests"] = { 38274 },
 					}),
-					crit(4, { -- Dark Ascension
+					crit(28295, { -- Dark Ascension
 						["_quests"] = { 38223 },
 					}),
-					crit(5, { -- The Fate of Teron'gor
+					crit(28296, { -- The Fate of Teron'gor
 						["_quests"] = { 38562 },	-- Secrets of the Sargerei (A)
 					}),
-					crit(6, { -- The Cipher of Damnation
+					crit(28408, { -- The Cipher of Damnation
 						["_quests"] = { 39394 },
 					}),
 				})),
 				h(ach(10074, {	-- In Pursuit of Gul'dan (Garrison) [H]
-					crit(1, { -- All Hands On Deck
+					crit(28306, { -- All Hands On Deck
 						["_quests"] = { 38574 },
 					}),
-					crit(2, { -- The Invasion of Tanaan
+					crit(28307, { -- The Invasion of Tanaan
 						["_quests"] = { 37935 },
 					}),
-					crit(3, { -- Bane of the Bleeding Hollow
+					crit(28293, { -- Bane of the Bleeding Hollow
 						["_quests"] = { 38274 },
 					}),
-					crit(4, { -- Dark Ascension
+					crit(28295, { -- Dark Ascension
 						["_quests"] = { 38223 },
 					}),
-					crit(5, { -- The Fate of Teron'gor
+					crit(28308, { -- The Fate of Teron'gor
 						["_quests"] = { 38416 },	-- Secrets of the Sargerei (H)
 					}),
-					crit(6, { -- The Cipher of Damnation
+					crit(28305, { -- The Cipher of Damnation
 						["_quests"] = { 38463 },
 					}),
 				})),
@@ -153,10 +157,10 @@ root(ROOTS.ExpansionFeatures,
 					ach(9211),	-- My Item Level Is Higher than Yours (1 - lvl 625)
 				}),
 				ach(9097, {	-- Keepin' Busy
-					crit(1),		-- Mine
-					crit(2),		-- Fishing Shack
-					crit(3),		-- Herb Garden
-					crit(4),		-- Pet Menagerie
+					crit(25212),		-- Mine
+					crit(25210),		-- Fishing Shack
+					crit(25211),		-- Herb Garden
+					crit(25213),		-- Pet Menagerie
 				}),
 				ach(9096, {	-- Master Builder
 					crit(1),		-- At least 3 small buildings activated
@@ -173,94 +177,94 @@ root(ROOTS.ExpansionFeatures,
 				ach(9825, {	-- Master Relic Hunter
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						crit(1),		-- The Blessing of Beasts
-						crit(2),		-- Breaching the Barrier
-						crit(3),		-- The Apexis Device
-						crit(4),		-- The Spirit Forge
-						crit(5),		-- Taking from the Taker
-						crit(6),		-- The Crystal Reborn
+						crit(27579),		-- The Blessing of Beasts
+						crit(27580),		-- Breaching the Barrier
+						crit(27581),		-- The Apexis Device
+						crit(27582),		-- The Spirit Forge
+						crit(27584),		-- Taking from the Taker
+						crit(27599),		-- The Crystal Reborn
 					},
 				}),
 				ach(9836, {	-- Master Relic Hunter
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						crit(1),	-- The Blessing of Beasts
-						crit(2),	-- Breaching the Barrier
-						crit(3),	-- The Apexis Device
-						crit(5),	-- Taking from the Taker
-						crit(4),	-- The Spirit Forge
-						crit(6),	-- The Crystal Reborn
+						crit(27600),	-- The Blessing of Beasts
+						crit(27601),	-- Breaching the Barrier
+						crit(27602),	-- The Apexis Device
+						crit(27603),	-- Taking from the Taker
+						crit(27604),	-- The Spirit Forge
+						crit(27605),	-- The Crystal Reborn
 					},
 				}),
 				ach(9098, {	-- Movin' On Up (Lvl 3)
 					ach(9099),		-- Time for an Upgrade (Lvl 2)
 				}),
 				a(ach(9564, {	-- Securing Draenor [A]
-					crit(1),		-- Assault on the Iron Siegeworks
-					crit(2),		-- Assault on Stonefury Cliffs
-					crit(3),		-- Assault on Magnarok
-					crit(4),		-- Assault on the Pit
-					crit(5),		-- Assault on the Everbloom Wilds
-					crit(6),		-- Assault on the Broken Precipice
-					crit(7),		-- Assault on Mok'gol Watchpost
-					crit(8),		-- Assault on Socrethar's Rise
-					crit(9),		-- Assault on Darktide Roost
-					crit(10),		-- Assault on Skettis
-					crit(11),		-- Assault on Pillars of Fate
-					crit(12),		-- Assault on Shattrath Harbor
+					crit(26244),		-- Assault on the Iron Siegeworks
+					crit(26245),		-- Assault on Stonefury Cliffs
+					crit(26247),		-- Assault on Magnarok
+					crit(26248),		-- Assault on the Pit
+					crit(26249),		-- Assault on the Everbloom Wilds
+					crit(26250),		-- Assault on the Broken Precipice
+					crit(26252),		-- Assault on Mok'gol Watchpost
+					crit(26253),		-- Assault on Socrethar's Rise
+					crit(26254),		-- Assault on Darktide Roost
+					crit(26255),		-- Assault on Skettis
+					crit(26256),		-- Assault on Pillars of Fate
+					crit(26258),		-- Assault on Shattrath Harbor
 				})),
 				h(ach(9562, {	-- Securing Draenor [H]
-					crit(1),		-- Assault on the Iron Siegeworks
-					crit(2),		-- Assault on Stonefury Cliffs
-					crit(3),		-- Assault on Magnarok
-					crit(4),		-- Assault on the Pit
-					crit(5),		-- Assault on the Everbloom Wilds
-					crit(6),		-- Assault on the Broken Precipice
-					crit(7),		-- Assault on Shattrath Harbor
-					crit(8),		-- Assault on Mok'gol Watchpost
-					crit(9),		-- Assault on Socrethar's Rise
-					crit(10),		-- Assault on Darktide Roost
-					crit(11),		-- Assault on Pillars of Fate
-					crit(12),		-- Assault on Skettis
+					crit(26225),		-- Assault on the Iron Siegeworks
+					crit(26226),		-- Assault on Stonefury Cliffs
+					crit(26228),		-- Assault on Magnarok
+					crit(26229),		-- Assault on the Pit
+					crit(26232),		-- Assault on the Everbloom Wilds
+					crit(26233),		-- Assault on the Broken Precipice
+					crit(26242),		-- Assault on Shattrath Harbor
+					crit(26237),		-- Assault on Mok'gol Watchpost
+					crit(26238),		-- Assault on Socrethar's Rise
+					crit(26239),		-- Assault on Darktide Roost
+					crit(26240),		-- Assault on Pillars of Fate
+					crit(26243),		-- Assault on Skettis
 				})),
 				ach(8933),		-- Staying Regular
 				ach(9491, {	-- The Garrison Campaign
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						crit(1, { -- The Warlord's Council
+						crit(25856, { -- The Warlord's Council
 							["_quests"] = { 35841 },	-- Putting Down the Packleader
 						}),
-						crit(2, { -- The Sargerei
+						crit(25857, { -- The Sargerei
 							["_quests"] = { 35196 },	-- Forging Ahead
 						}),
-						crit(3, { -- Darktide Roost
+						crit(25858, { -- Darktide Roost
 							["_quests"] = { 34450 },	-- Rylak Rescue
 						}),
-						crit(4, {	-- Iron Siegeworks
+						crit(25859, {	-- Iron Siegeworks
 							["_quests"] = { 34033 },	-- And The Mole You Rode In On
 						}),
-						crit(5, { -- The Ring of Blood
+						crit(25860, { -- The Ring of Blood
 							["_quests"] = { 36289 },	-- Out of the Shadows
 						}),
-						crit(6, { -- The Fall of Shattrath
+						crit(25863, { -- The Fall of Shattrath
 							["_quests"] = { 35685 },	-- Socrethar's Demise
 						}),
-						crit(7, { -- Bloodmaul Compound
+						crit(25864, { -- Bloodmaul Compound
 							["_quests"] = { 34289 },	-- Soulgrinder Survivor
 						}),
-						crit(8, { -- Broken Precipice
+						crit(27305, { -- Broken Precipice
 							["_quests"] = { 37517 },	-- News for Nixxie
 						}),
-						crit(9, { -- The Exarch's Call
+						crit(25866, { -- The Exarch's Call
 							["_quests"] = { 36169 },	-- The Trial of Champions
 						}),
-						crit(10, { -- Heart of the Breakers
+						crit(25861, { -- Heart of the Breakers
 							["_quests"] = { 34410 },	-- The Beating Heart
 						}),
-						crit(11, { -- A Strike at the Heart
+						crit(25862, { -- A Strike at the Heart
 							["_quests"] = { 36162 },	-- A Stolen Heart
 						}),
-						crit(12, { -- Primal Fury
+						crit(25867, { -- Primal Fury
 							["_quests"] = { 36341 },	-- Primal Fury
 						}),
 					},
@@ -268,40 +272,40 @@ root(ROOTS.ExpansionFeatures,
 				ach(9492, {	-- The Garrison Campaign
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						crit(1, { -- The Warlord's Council
+						crit(25870, { -- The Warlord's Council
 							["_quests"] = { 35842 },	-- Putting Down the Packleader
 						}),
-						crit(2, { -- The Sargerei
+						crit(25871, { -- The Sargerei
 							["_quests"] = { 35197 },	-- Forging Ahead
 						}),
-						crit(3, { -- Darktide Roost
+						crit(25858, { -- Darktide Roost
 							["_quests"] = { 34450 },	-- Rylak Rescue
 						}),
-						crit(4, { -- Iron Siegeworks
+						crit(25872, { -- Iron Siegeworks
 							["_quests"] = { 34078 },	-- Payment Due for Services Rendered
 						}),
-						crit(5, { -- The Ring of Blood
+						crit(25873, { -- The Ring of Blood
 							["_quests"] = { 36290 },	-- Out of the Shadows
 						}),
-						crit(6, { -- The Fall of Shattrath
+						crit(27442, { -- The Fall of Shattrath
 							["_quests"] = { 35687 },	-- Socrethar's Demise
 						}),
-						crit(7, { -- Bloodmaul Compound
+						crit(25876, { -- Bloodmaul Compound
 							["_quests"] = { 34319 },	-- Soulgrinder Survivor
 						}),
-						crit(8, { -- Broken Precipice
+						crit(27306, { -- Broken Precipice
 							["_quests"] = { 37516 },	-- News for Nixxie
 						}),
-						crit(9, { -- Ours is the Fury
+						crit(24518, { -- Ours is the Fury
 							["_quests"] = { 33427 }, -- Ours is the Fury
 						}),
-						crit(10, { -- Heart of the Breakers
+						crit(25874, { -- Heart of the Breakers
 							["_quests"] = { 34341 },	-- The Beating Heart
 						}),
-						crit(11, { -- A Strike at the Heart
+						crit(25875, { -- A Strike at the Heart
 							["_quests"] = { 36248 },	-- A Stolen Heart
 						}),
-						crit(12, { -- Primal Fury
+						crit(25878, { -- Primal Fury
 							["_quests"] = { 36342 },	-- Primal Fury
 						}),
 					},

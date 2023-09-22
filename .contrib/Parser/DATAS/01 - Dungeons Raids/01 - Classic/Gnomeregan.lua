@@ -635,6 +635,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						6230,	-- Peacekeeper Security Suit
 					},
 				}),
+				-- #if AFTER 10.1.7
+				i(9444, {	-- Techbot CPU Shell
+					["timeline"] = { "added 10.1.7" },	-- ATT Discord 20.09.2023
+				}),
+				-- #endif
 				i(9485, {	-- Vibroblade
 					["crs"] = {
 						6232,	-- Arcane Nullifier X-21
@@ -683,9 +688,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				["timeline"] = { "removed 4.0.3" },
 				["groups"] = {
 					i(9277),	-- Techbot's Memory Core
+					-- #if BEFORE 10.1.7
 					i(9444, {	-- Techbot CPU Shell
 						["timeline"] = { "removed 4.0.3" },
 					}),
+					-- #endif
 				},
 			}),
 			o(142344, {	-- Artificial Extrapolator
