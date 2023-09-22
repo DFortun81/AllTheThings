@@ -5931,7 +5931,8 @@ local function SearchForLink(link)
 end
 local function SearchForMissingItemsRecursively(group, listing)
 	if group.visible then
-		if (group.collectible or (group.itemID and group.total and group.total > 0)) and (not app.IsBoP(group)) then
+		if group.itemID and (group.collectible or (group.total and group.total > 0)) and not app.IsBoP(group) then
+			print(group.itemID, group.text);
 			tinsert(listing, group);
 		end
 		if group.g and group.expanded then
@@ -14577,6 +14578,31 @@ local function RowOnClick(self, button)
 							if name then
 								Atr_SelectPane(3);
 								--Atr_SearchAH(name, { name });
+								Atr_SetSearchText (name);
+								Atr_Search_Onclick ();
+								return true;
+							end
+							app.print(L["AH_SEARCH_BOE_ONLY"]);
+						end
+						return true;
+					elseif Auctionator and AuctionatorShoppingFrame and AuctionatorShoppingFrame:IsVisible() then
+						if reference.g and #reference.g > 0 then
+							local missingItems = SearchForMissingItemNames(reference);
+							if #missingItems > 0 then
+								local searchString = L["TITLE"];
+								if Auctionator.Shopping.ListManager:GetIndexForName(searchString) ~= nil then
+								  Auctionator.Shopping.ListManager:Delete(searchString)
+								end
+								for i,item in ipairs(missingItems) do
+									searchString = searchString .. "^" .. item;
+								end
+								Auctionator.Shopping.Lists.BatchImportFromString(searchString);
+								return true;
+							end
+							app.print(L["AH_SEARCH_NO_ITEMS_FOUND"]);
+						else
+							local name = reference.name;
+							if name then
 								Atr_SetSearchText (name);
 								Atr_Search_Onclick ();
 								return true;

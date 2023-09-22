@@ -2527,7 +2527,7 @@ local function SearchForLink(link)
 end
 local function SearchForMissingItemsRecursively(group, listing)
 	if group.visible then
-		if (group.collectible or (group.itemID and group.total and group.total > 0)) and (not group.b or group.b == 2 or group.b == 3) then
+		if group.itemID and (group.collectible or (group.total and group.total > 0)) and (not group.b or group.b == 2 or group.b == 3) then
 			tinsert(listing, group);
 		end
 		if group.g and group.expanded then
