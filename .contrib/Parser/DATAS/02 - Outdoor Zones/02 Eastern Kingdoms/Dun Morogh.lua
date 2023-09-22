@@ -673,10 +673,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					}),
 					n(ZONE_DROPS, {
+						-- #if BEFORE 10.1.7
+						-- Added to Gnolls in Elwynn Forest via Pickpocket (not trolling)
 						i(2109, {	-- Frostmane Chain Vest
 							["timeline"] = { "removed 4.0.3" },
 							["cr"] = 808,	-- Grik'nir the Cold
 						}),
+						-- #endif
 						-- #if AFTER 10.1.7
 						i(2259, {	-- Frostmane Club
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
