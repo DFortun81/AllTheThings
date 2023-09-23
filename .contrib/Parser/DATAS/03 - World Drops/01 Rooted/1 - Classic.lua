@@ -3280,7 +3280,6 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(17963),	-- Green Sack of Gems
 		i(17969),	-- Red Sack of Gems
 		i(17965, {	-- Yellow Sack of Gems
-			i(12363),	-- Arcane Crystal
 		}),
 		-- #if BEFORE 5.0.4
 		applyclassicphase(PHASE_FIVE, i(23197, {	-- Idol of the Moon [Phase 5/6]
