@@ -1707,6 +1707,20 @@ root(ROOTS.Unsorted, {
 			i(209014),	-- Clue Scrap
 			i(209015),	-- Clue Scrap
 			i(209016),	-- Clue Scrap
+			--
+			i(156251),	-- Shroud of Alteration
+			i(156252),	-- Greaves of the Stonewarder
+			i(156253),	-- Shoulders of Misfortune
+			i(156254),	-- Leggings of the Tortured Earth
+			i(156256),	-- Grips of Chaos
+			i(156460),	-- Mimiron's Repeater
+			i(156461),	-- Adamant Handguards
+			i(156465),	-- Iceshear Mantle
+			i(156466),	-- Bracers of Righteous Reformation
+			i(156467),	-- Boots of Unsettled Prey
+			i(156468),	-- Cloak of the Dormant Blaze
+			i(156469),	-- Pillar of Fortitude
+			i(156470),	-- Bloodcrush Cudgel
 		})),
 		tier(DF_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
 			filter(COSMETIC, {
