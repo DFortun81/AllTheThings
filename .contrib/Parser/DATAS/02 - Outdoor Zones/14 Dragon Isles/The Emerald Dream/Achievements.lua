@@ -269,8 +269,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["coord"] = { 40.0, 52.7, TREE_1 },
 					--["questID"] = xx,
 				}),
-				crit(62397, {	-- Whisperbloom Sapling
-					--["coord"] = { x, y, TREE_1 },
+				crit(62397, {	-- Whisperbloom Sapling (n: 211059)
+					["coord"] = { 51.2, 58.7, TREE_1 },
 					--["questID"] = xx,
 				}),
 				crit(62028, {	-- Ysera's Clover (n: 208443)

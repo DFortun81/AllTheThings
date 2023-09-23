@@ -248,10 +248,67 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["provider"] = { "n", 206406 },	-- Merithra
 					["coord"] = { 51.9, 29.4, TREE_1 },
 				}),
-				------ Chapter 5 ------
+				------ Chapter 5 ------	
+				q(78646, {	-- Fire Watch (TODO: Wration quest should be before it? | quest bugged, no npc wm on/off didn't help)
+					["sourceQuests"] = { 76337 },	-- The Ember Still Smolders
+					["provider"] = { "n", 206406 },	-- Merithra
+					["coord"] = { 52.7, 28.1, TREE_1 },
+				}),
 				------ Chapter 6 ------
 			}),
 			-- non-story quests below for now
+			q(76460, {	-- A Dragon in Hand is Worth Two in the Roost
+				["sourceQuests"] = { 76337 },	-- The Ember Still Smolders / TODO: need confirm
+				["provider"] = { "n", 207350 },	-- Wrathion
+				["coord"] = { 50.8, 62.8, TREE_1 },
+			}),
+			q(76461, {	-- Draconic Diplomacy
+				["sourceQuests"] = { 76460 },	-- A Dragon in Hand is Worth Two in the Roost
+				["provider"] = { "n", 207350 },	-- Wrathion
+				["coord"] = { 50.8, 62.8, TREE_1 },
+			}),
+			q(77195, {	-- A Dragon's Eye View
+				["sourceQuests"] = { 76461 },	-- Draconic Diplomacy
+				["provider"] = { "n", 207350 },	-- Wrathion
+				["coord"] = { 33.7, 62.0, THALDRASZUS },
+			}),
+			q(76462, {	-- Cavern Cleaning
+				["sourceQuests"] = { 77195 },	-- A Dragon's Eye View
+				["provider"] = { "n", 207351 },	-- Vyranoth
+				["coord"] = { 61.2, 73.2, THALDRASZUS },
+			}),
+			q(77197, {	-- An Eggcellent Idea
+				["sourceQuests"] = { 76462 },	-- Cavern Cleaning
+				["provider"] = { "n", 207350 },	-- Wrathion
+				["coord"] = { 61.2, 73.1, THALDRASZUS },
+			}),
+			q(76463, {	-- Delectable Delicacies
+				["sourceQuests"] = { 77197 },	-- An Eggcellent Idea
+				["provider"] = { "n", 185904 },	-- Mother Elion
+				["coord"] = { 61.5, 68.7, THE_WAKING_SHORES },
+				["g"] = {
+					i(208060),	-- Juicy Beetle Bits (QI!)
+				},
+			}),
+			q(77198, {	-- Home in Time for Tea
+				["sourceQuests"] = { 76463 },	-- Delectable Delicacies
+				["provider"] = { "n", 207352 },	-- Mordenaku
+				["coord"] = { 61.5, 68.7, THE_WAKING_SHORES },
+			}),
+			q(76464, {	-- The Thorignir
+				["sourceQuests"] = { 77198 },	-- Home in Time for Tea
+				["provider"] = { "n", 207351 },	-- Vyranoth
+				["coord"] = { 46.7, 47.8, VALDRAKKEN },
+			}),
+			q(76465, {	-- Dragon Keeping
+				["sourceQuests"] = { 76464 },	-- The Thorignir
+				["provider"] = { "n", 207351 },	-- Vyranoth
+				["coord"] = { 51.1, 83.8, STORMHEIM },
+				["g"] = {
+					i(210959),	-- [PH] Misfit Renown Item TODO: fix name
+				},
+			}),
+			--
 			q(77948, {	-- Burning Out
 				--["sourceQuests"] = {  },	-- no requirement as of 7.Sept
 				["provider"] = { "n", 210196 },	-- Solarys Thorngale
@@ -326,6 +383,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 78262 },	-- It Starts With a Stone
 				["provider"] = { "n", 211328 },	-- Vaskarn
 				["coord"] = { 49.8, 61.6, TREE_1 },
+				["g"] = {
+					i(210180),	-- Emerald Flightstone
+				},
 			}),
 			--
 			q(77662, {	-- A Call to Aid
@@ -418,13 +478,25 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(208931),	-- Silky Sage (QI!)
 				},
 			}),
-			q(77955, {	-- Heated Hearthstone Hustle (Bugged as of 7.Sept. Revisit later)
+			q(77955, {	-- Heated Hearthstone Hustle
 				["sourceQuests"] = {
 					77911,	-- Build-A-Blanket
 					77922,	-- Fluffy Filler Retrieval
 				},
 				["provider"] = { "n", 210164 },	-- Thaalean
 				["coord"] = { 58.1, 77.3, TREE_1 },
+				["g"] = {
+					i(208949),	-- Heated Hearthstone (QI!)
+				},
+			}),
+			q(77958, {	-- Sleepy Druid in Emerald Dream
+				["sourceQuests"] = { 77955 },	-- Heated Hearthstone Hustle
+				["provider"] = { "n", 210164 },	-- Thaalean
+				["coord"] = { 58.1, 77.3, TREE_1 },
+				["g"] = {
+					i(210864),	-- Improvised Leafbed (TOY!)
+					i(210952),	-- Spare Heated Hearthstone
+				},
 			}),
 			--
 			q(76567, {	-- Grousing Garden
@@ -514,6 +586,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["provider"] = { "n", 208143 },	-- Keeper Amrymn
 				["isWeekly"] = true,
 				["coord"] = { 50.2, 61.6, TREE_1 },
+				["g"] = {
+					i(210872),	-- Satchel of Dreams
+				},
 			}),
 			--
 			q(78427, {	-- Great Crates!
@@ -524,6 +599,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["cost"] = {
 					{ "i", 210041, 1 },	-- Shipment of Goods
 				},
+				["g"] = {
+					i(208067),	-- Plump Dreamseed
+				},
 			}),
 			q(78428, {	-- Crate of the Art
 				["sourceQuests"] = { 77283 },	-- A Multi-Front Battle
@@ -532,6 +610,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 49.9, 62.3, TREE_1 },
 				["cost"] = {
 					{ "i", 210041, 5 },	-- Shipment of Goods
+				},
+				["g"] = {
+					i(208047),	-- Gigantic Dreamseed
 				},
 			}),
 			--

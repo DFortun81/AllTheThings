@@ -90,6 +90,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210481, {	-- Flourishing Whimsydrake: Sunset Scales (DM!)
 						["cost"] = { { "c", DRAGON_SUPPLIES, 1250 } },
 					}),
+					i(210481, {	-- Small Dreamseed
+						["cost"] = { { "c", DRAGON_SUPPLIES, 100 } },
+					}),
+					i(210481, {	-- Plump Dreamseed
+						["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
+					}),
+					i(210481, {	-- Gigantic Dreamseed
+						["cost"] = { { "c", DRAGON_SUPPLIES, 1500 } },
+					}),
 				},
 			}),
 			n(211209, {	-- Elianna <Dream Infuser>
@@ -114,6 +123,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						["cost"] = { { "c", 2777, 1 } },
 					}),
 					i(210777, {	-- Drowsey (PET!)
+						["cost"] = { { "c", 2777, 1 } },
+					}),
+					i(210945, {	-- Stargrazer (MOUNT!)
+						["cost"] = { { "c", 2777, 1 } },
+					}),
+					i(210833, {	-- Talont (MOUNT!)
+						["cost"] = { { "c", 2777, 1 } },
+					}),
+					i(210946, {	-- Mammyth (MOUNT!)
+						["cost"] = { { "c", 2777, 1 } },
+					}),
+					i(210831, {	-- Delugen (MOUNT!)
+						["cost"] = { { "c", 2777, 1 } },
+					}),
+					i(210948, {	-- Imagiwing (MOUNT!)
+						["cost"] = { { "c", 2777, 1 } },
+					}),
+					i(210969, {	-- Salatrancer (MOUNT!)
 						["cost"] = { { "c", 2777, 1 } },
 					}),
 				}

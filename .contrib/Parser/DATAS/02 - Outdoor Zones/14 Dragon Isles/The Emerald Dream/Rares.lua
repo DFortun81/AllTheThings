@@ -135,6 +135,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coords"] = {
 					{ 60.0, 63.3, TREE_1 },
 					{ 59.0, 71.9, TREE_1 },
+					{ 57.1, 52.5, TREE_1 },
 				},
 				["g"] = {
 					i(210105),	-- Autumn Druid Belt

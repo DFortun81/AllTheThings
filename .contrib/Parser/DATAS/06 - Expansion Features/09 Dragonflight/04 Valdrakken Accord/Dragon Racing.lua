@@ -243,7 +243,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(78438, {	-- Dragonrider Racing - Canopy Concours
 					["coord"] = { 62.8, 88.1, TREE_1 },
 				}),
-				q(78438, {	-- Dragonrider Racing - Emerald Amble
+				q(78439, {	-- Dragonrider Racing - Emerald Amble
 					["coord"] = { 32.4, 47.9, TREE_1 },
 				}),
 				q(78437, {	-- Dragonrider Racing - Shoreline Switchback

@@ -857,7 +857,6 @@ root(ROOTS.Unsorted, {
 			i(207799),	-- 2H Sword STR
 			i(207800),	-- 2H Mace STR
 			i(208049),	-- Valarjar Trophy
-			i(208060),	-- Juicy Beetle Bits
 			i(208198),	-- Tyr's Guard Bulwark
 			i(208199),	-- Tabard of the Tyr's Guard
 			i(208217),	-- Illusory Scroll of Youth
@@ -1013,7 +1012,6 @@ root(ROOTS.Unsorted, {
 			i(208938),	-- Metamorphic Soot
 			i(208946),	-- Burning Rune
 			i(208947),	-- Enchanted Watering Can
-			i(208949),	-- Heated Hearthstone
 			i(208950),	-- Emerald Fiber
 			i(208955),	-- Pilfered Dreamshard
 			i(208956),	-- Intact Primalist Garb
@@ -1229,7 +1227,6 @@ root(ROOTS.Unsorted, {
 			i(210143),	-- [PH] White-Furred Bakar
 			i(210144),	-- [PH] Yellow-Furred Spiky Bakar
 			i(210145),	-- [PH] YellowBlack-Furred Bakar
-			i(210180),	-- Emerald Flightstone
 			i(210184),	-- Half-Filled Dreamless Sleep Potion
 			i(210185),	-- Splash Potion of Narcolepsy
 			i(210190),	-- Blazeroot

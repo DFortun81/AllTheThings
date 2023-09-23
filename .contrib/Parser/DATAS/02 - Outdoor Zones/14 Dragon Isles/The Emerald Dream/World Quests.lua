@@ -102,6 +102,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					q(77715, {	-- Bubble Rescue
 						["coord"] = { 41.7, 39.7, TREE_1 },
 					}),
+					q(77757, {	-- Terror in Haven
+						["coord"] = { 48.7, 38.2, TREE_1 },
+					}),
+					q(77754, {	-- Pyromania Problems
+						["coord"] = { 42.8, 26.2, TREE_1 },
+					}),
+					q(76990, {	-- Portal Panic
+						["coord"] = { 36.0, 55.2, TREE_1 },
+					}),
+					q(76991, {	-- Carpe Diem
+						["coord"] = { 39.3, 59.8, TREE_1 },
+					}),
 				})),
 			},
 		}),
