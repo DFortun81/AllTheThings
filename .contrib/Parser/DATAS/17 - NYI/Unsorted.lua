@@ -1398,6 +1398,167 @@ root(ROOTS.Unsorted, {
 			i(210791),	-- Fragment of Emberscar
 			i(210792),	-- Fragment of Emberscar
 			i(210793),	-- Fragment of Emberscar
+			-----------------
+			i(156251),	-- Shroud of Alteration
+			i(156252),	-- Greaves of the Stonewarder
+			i(156253),	-- Shoulders of Misfortune
+			i(156254),	-- Leggings of the Tortured Earth
+			i(156256),	-- Grips of Chaos
+			i(156460),	-- Mimiron's Repeater
+			i(156461),	-- Adamant Handguards
+			i(156465),	-- Iceshear Mantle
+			i(156466),	-- Bracers of Righteous Reformation
+			i(156467),	-- Boots of Unsettled Prey
+			i(156468),	-- Cloak of the Dormant Blaze
+			i(156469),	-- Pillar of Fortitude
+			i(156470),	-- Bloodcrush Cudgel
+			i(207116),	-- Lost Scholar's Timely Hat
+			i(207117),	-- Requiem Rootmantle
+			i(207118),	-- Elder's Volcanic Wrap
+			i(207119),	-- Urctos's Hibernal Dial
+			i(207120),	-- Anguished Restraints
+			i(207121),	-- Vesture of the Smoldering Serpent
+			i(207122),	-- Lost Scholar's Belted Treads
+			i(207123),	-- Lifewoven Slippers
+			i(207126),	-- Twisted Blossom Stompers
+			i(207127),	-- Strigine Epaulets
+			i(207128),	-- Primordial Serpent's Bindings
+			i(207129),	-- Robes of the Ashen Grove
+			i(207130),	-- Flamewaker's Grips
+			i(207131),	-- Bloody Dragonhide Belt
+			i(207133),	-- Silent Tormentor's Hood
+			i(207135),	-- Eternal Sentinel's Cord
+			i(207138),	-- Aerwynn's Ritual Sarong
+			i(207139),	-- Cleats of the Savage Claw
+			i(207140),	-- Drakestalker's Trophy Pauldrons
+			i(207141),	-- Snake Eater's Cowl
+			i(207142),	-- Ancient Haubark
+			i(207143),	-- Twisted Flamecuffs
+			i(207144),	-- Rootclasp of the Broken
+			i(207146),	-- Jeweled Sash of the Viper
+			i(207148),	-- Lavaforged Sollerets
+			i(207149),	-- Phlegethic Girdle
+			i(207150),	-- Agonizing Manacles
+			i(207151),	-- Emerald Guardian's Casque
+			i(207152),	-- Volcanic Spelunker's Vents
+			i(207153),	-- Seared Ironwood Greaves
+			i(207155),	-- Eldermoss Gauntlets
+			i(207159),	-- Band of Burning Thorns
+			i(207160),	-- Inflammable Drapeleaf
+			i(207162),	-- Signet of the Last Elder
+			i(207170),	-- Smoldering Seedling
+			i(207172),	-- Belor'relos, the Suncaller
+			i(207173),	-- Gift of Ursine Vengeance
+			i(207174),	-- Fyrakk's Tainted Rageheart
+			i(207462),	-- Dreadful Verdurous Dreamheart
+			i(207463),	-- Mystic Verdurous Dreamheart
+			i(207464),	-- Venerated Verdurous Dreamheart
+			i(207465),	-- Zenith Verdurous Dreamheart
+			i(207466),	-- Dreadful Tormented Dreamheart
+			i(207467),	-- Mystic Tormented Dreamheart
+			i(207468),	-- Venerated Tormented Dreamheart
+			i(207469),	-- Zenith Tormented Dreamheart
+			i(207470),	-- Dreadful Blazing Dreamheart
+			i(207471),	-- Mystic Blazing Dreamheart
+			i(207472),	-- Venerated Blazing Dreamheart
+			i(207473),	-- Zenith Blazing Dreamheart
+			i(207474),	-- Dreadful Ashen Dreamheart
+			i(207475),	-- Mystic Ashen Dreamheart
+			i(207476),	-- Venerated Ashen Dreamheart
+			i(207477),	-- Zenith Ashen Dreamheart
+			i(207478),	-- Dreadful Smoldering Dreamheart
+			i(207479),	-- Mystic Smoldering Dreamheart
+			i(207480),	-- Venerated Smoldering Dreamheart
+			i(207481),	-- Zenith Smoldering Dreamheart
+			i(207782),	-- Sickle of the White Stag
+			i(207785),	-- Magmatic Volcannon
+			i(207787),	-- Igira's Flaying Hatchet
+			i(207789),	-- Volcoross's Barbed Fang
+			i(207790),	-- Larodar's Moonblade
+			i(207791),	-- Remnant Charglaive
+			i(207792),	-- Scythe of the Fallen Keeper
+			i(207794),	-- Staff of Incandescent Torment
+			i(207796),	-- Trickster's Captivating Chime
+			i(207798),	-- Verdant Matrix Beacon
+			i(207800),	-- Gnarlroot's Bonecrusher
+			i(208445),	-- Amulet of Eonar's Chosen
+			i(208615),	-- Nymue's Unraveling Spindle
+			i(208983),	-- Yvelyn's Assistance
+			i(210061),	-- Reins of Anu'relos, Flame's Guidance
+			i(210203),	-- Wellspring Wristlet
+			i(210205),	-- Vigilant Protector's Bracers
+			i(210206),	-- Verdant Sanctuary Bands
+			i(210434),	-- Visage of Ursol
+			i(210453),	-- Sample of Cinder Pollen
+			i(210756),	-- Gleaming Satchel of Drake's Dreaming Crests
+			i(210762),	-- Shimmering Clutch of Wyrm's Dreaming Crests
+			i(210768),	-- Viridescent Bouquet of Aspect's Dreaming Crests
+			i(210831),	-- Delugen
+			i(210833),	-- Talont
+			i(210835),	-- Empty Vial
+			i(210836),	-- Empty Vial
+			i(210837),	-- Empty Vial
+			i(210838),	-- Empty Vial
+			i(210839),	-- Empty Vial
+			i(210840),	-- Empty Vial
+			i(210843),	-- Candied Blade
+			i(210844),	-- Trader's Crimson Sarong
+			i(210846),	-- Trader's Lively Sarong
+			i(210847),	-- Tears of the Eye
+			i(210848),	-- Trader's Midnight Sarong
+			i(210849),	-- Trader's Azure Sarong
+			i(210850),	-- Trader's Sepia Sarong
+			i(210851),	-- Trader's Grassy Sarong
+			i(210852),	-- Trader's Cloudy Sarong
+			i(210853),	-- Trader's Deep Sarong
+			i(210854),	-- Trader's Camo Sarong
+			i(210855),	-- Trader's Lively Sarong
+			i(210856),	-- Trader's Faded Sarong
+			i(210857),	-- Trader's Carrot Sarong
+			i(210858),	-- Trader's Rosy Sarong
+			i(210859),	-- Trader's Plum Sarong
+			i(210860),	-- Trader's Violet Sarong
+			i(210861),	-- Trader's Aquatic Sarong
+			i(210862),	-- Trader's Snowy Sarong
+			i(210863),	-- Trader's Sunny Sarong
+			i(210864),	-- Improvised Leafbed
+			i(210865),	-- Blademaster's Crimson Stones
+			i(210866),	-- Blademaster's Suntouched Stones
+			i(210867),	-- Blademaster's Lively Stones
+			i(210868),	-- Blademaster's Violet Stones
+			i(210869),	-- Blademaster's Azure Stones
+			i(210870),	-- Mitzy
+			i(210872),	-- Satchel of Dreams
+			i(210874),	-- Filled Vial
+			i(210875),	-- Filled Vial
+			i(210876),	-- Filled Vial
+			i(210877),	-- Filled Vial
+			i(210879),	-- Filled Vial
+			i(210880),	-- Filled Vial
+			i(210883),	-- Ensemble: Scarlet Zealot's Trappings
+			i(210916),	-- Ember of Fyrakk
+			i(210917),	-- Pouch of Whelpling's Dreaming Crests
+			i(210919),	-- Crimson Glimmerfur
+			i(210920),	-- Gift of Amirdrassil
+			i(210921),	-- Bounty of the Fallen Defector
+			i(210923),	-- Clutch of Wyrm's Dreaming Crests
+			i(210944),	-- Emerald Mark of Mastery
+			i(210945),	-- Stargrazer
+			i(210946),	-- Mammyth
+			i(210947),	-- Flame-Warped Curio
+			i(210948),	-- Imagiwing
+			i(210950),	-- Insight of Q'onzu
+			i(210951),	-- Treacherous Research Notes
+			i(210952),	-- Spare Heated Hearthstone
+			i(210954),	-- Sprout of Rebirth
+			i(210957),	-- Dream-Imbued Journal
+			i(210958),	-- Crown of the Dryad Guardian
+			i(210959),	-- [PH] Misfit Renown Item
+			i(210961),	-- Alara'shinu
+			i(210969),	-- Salatrancer
+			i(210977),	-- Coalesced Moonlight
+			i(210991),	-- Small Box of Vials
+			i(210992),	-- Overflowing Dream Warden Trove
 		})),
 		tier(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
 			filter(TOYS, {

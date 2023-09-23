@@ -13227,3 +13227,55 @@
 19346@@@The Viridian Weave
 19347@@@Fate of Amirdrassil
 19348@@@Gnarlroot kills (Raid Finder Amirdrassil, the Dream's Hope)
+10.2.0.51425
+19326@@@10.2 Upgrade System - Whelpling-to-Drake Trade-Up Unlocked [DNT]
+19349@@@Glory of the Dream Raider
+19350@@@Ahead of the Curve: Fyrakk the Blazing
+19351@@@Cutting Edge: Fyrakk the Blazing
+19352@@@Igira the Cruel kills (Raid Finder Amirdrassil, the Dream's Hope)
+19353@@@Volcoross kills (Raid Finder Amirdrassil, the Dream's Hope)
+19354@@@Council of Dreams kills (Raid Finder Amirdrassil, the Dream's Hope)
+19355@@@Larodar, Keeper of the Flame kills (Raid Finder Amirdrassil, the Dream's Hope)
+19356@@@Nymue, Warden of the Cycle kills (Raid Finder Amirdrassil, the Dream's Hope)
+19357@@@Smolderon kills (Raid Finder Amirdrassil, the Dream's Hope)
+19358@@@Tindral Sageswift, Seer of the Flame kills (Raid Finder Amirdrassil, the Dream's Hope)
+19359@@@Fyrakk the Blazing kills (Raid Finder Amirdrassil, the Dream's Hope)
+19360@@@Gnarlroot kills (Normal Amirdrassil, the Dream's Hope)
+19361@@@Igira the Cruel kills (Normal Amirdrassil, the Dream's Hope)
+19362@@@Volcoross kills (Normal Amirdrassil, the Dream's Hope)
+19363@@@Council of Dreams kills (Normal Amirdrassil, the Dream's Hope)
+19364@@@Larodar, Keeper of the Flame kills (Normal Amirdrassil, the Dream's Hope)
+19365@@@Nymue, Weaver of the Cycle kills (Normal Amirdrassil, the Dream's Hope)
+19366@@@Smolderon kills (Normal Amirdrassil, the Dream's Hope)
+19367@@@Tindral Sageswift, Seer of the Flame kills (Normal Amirdrassil, the Dream's Hope)
+19368@@@Fyrakk the Blazing kills (Normal Amirdrassil, the Dream's Hope)
+19369@@@Gnarlroot kills (Heroic Amirdrassil, the Dream's Hope)
+19370@@@Igira the Cruel kills (Heroic Amirdrassil, the Dream's Hope)
+19371@@@Volcoross kills (Heroic Amirdrassil, the Dream's Hope)
+19372@@@Council of Dreams kills (Heroic Amirdrassil, the Dream's Hope)
+19373@@@Larodar, Keeper of the Flame kills (Heroic Amirdrassil, the Dream's Hope)
+19374@@@Nymue, Weaver of the Cycle kills (Heroic Amirdrassil, the Dream's Hope)
+19375@@@Smolderon kills (Heroic Amirdrassil, the Dream's Hope)
+19376@@@Tindral Sageswift, Seer of the Flame kills (Heroic Amirdrassil, the Dream's Hope)
+19377@@@Fyrakk the Blazing kills (Heroic Amirdrassil, the Dream's Hope)
+19378@@@Gnarlroot kills (Mythic Amirdrassil, the Dream's Hope)
+19379@@@Igira the Cruel kills (Mythic Amirdrassil, the Dream's Hope)
+19380@@@Volcoross kills (Mythic Amirdrassil, the Dream's Hope)
+19381@@@Council of Dreams kills (Mythic Amirdrassil, the Dream's Hope)
+19382@@@Larodar, Keeper of the Flame kills (Mythic Amirdrassil, the Dream's Hope)
+19383@@@Nymue, Weaver of the Cycle kills (Mythic Amirdrassil, the Dream's Hope)
+19384@@@Smolderon kills (Mythic Amirdrassil, the Dream's Hope)
+19385@@@Tindral Sageswift, Seer of the Flame kills (Mythic Amirdrassil, the Dream's Hope)
+19386@@@Fyrakk the Blazing kills (Mythic Amirdrassil, the Dream's Hope)
+19387@@@Amirdrassil, the Dream's Hope Guild Run
+19388@@@Heroic: Amirdrassil, the Dream's Hope Guild Run
+19389@@@Mythic: Fyrakk the Blazing Guild Run
+19390@@@[PH] Fyrakk Achievement
+19392@@@Hall of Fame: Fyrakk the Blazing
+19393@@@[PH] Tindral Sageswift Achievement
+19394@@@A Dream Within a Dream
+19395@@@<Hidden> Account has completed 10.2 Upgrade System tutorial quests
+19396@@@Dragonflight Season 3 Master
+19397@@@10.2 Upgrade System - Drake-to-Wyrm Trade-Up Unlocked [DNT]
+19398@@@10.2 Upgrade System - Wyrm-to-Aspect Trade-Up Unlocked [DNT]
+19401@@@Emerald Dream Safari
