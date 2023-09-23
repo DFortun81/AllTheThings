@@ -22,22 +22,22 @@ root(ROOTS.GroupFinder, {
 				i(113752),	-- Firecracker Mantle*		— 12/27/21
 				un(REMOVED_FROM_GAME, i(113771)),	-- Firecracker Slippers
 				i(113740),	-- Firecracker Tunic*		— 12/27/21
-				i(113730),	-- Venomtail Helm
+				un(REMOVED_FROM_GAME, i(113730)),	-- Venomtail Helm
 				i(113753),	-- Venomtail Shoulderguards*— 01/14/22
 				i(113741),	-- Venomtail Chestguard*	— 01/14/22
 				i(113747),	-- Venomtail Gauntlets*		— 01/14/22
 				i(113779),	-- Venomtail Girdle			— 01/14/22
-				i(113778),	-- Venomtail Belt*
+				un(REMOVED_FROM_GAME, i(113778)),	-- Venomtail Belt
 				i(113777),	-- Venomtail Boots			— 01/14/22
-				i(113776),	-- Venomtail Treads			- might be removed
+				un(REMOVED_FROM_GAME, i(113776)),	-- Venomtail Treads
 				i(113732),	-- Venomtail Visor			— 01/14/22
-				i(113738),	-- Kyparite Chestguard*
-				i(113784),	-- Kyparite Belt
-				i(113782),	-- Kyparite Boots
+				i(113738),	-- Kyparite Chestguard
+				un(REMOVED_FROM_GAME, i(113784)),	-- Kyparite Belt
+				un(REMOVED_FROM_GAME, i(113782)),	-- Kyparite Boots
 				i(113785),	-- Kyparite Girdle*			— confirmed by Reaperman on discord on April 20, 2020 (blaze it)
 				i(113744),	-- Kyparite Gauntlets		- confirmed by Archvile June 02 2020
 				i(113729),	-- Kyparite Headguard
-				i(113728),	-- Kyparite Helm*
+				un(REMOVED_FROM_GAME, i(113728)),	-- Kyparite Helm
 				i(113783),	-- Kyparite Stompers*
 				i(113750),	-- Kyparite Shoulderguards*
 				i(113735),	-- Drifting Cloud Necklace*	— 01/14/22
