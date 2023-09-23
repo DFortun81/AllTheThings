@@ -1369,7 +1369,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(RARES, {
 				-- #if AFTER CATA
 				n(1920, {	-- Ambermill Spellscribe [CATA+] / Dalaran Spellscribe
-					["coord"] = { 63.4, 65.2, SILVERPINE_FOREST },
+					["coord"] = { 63.5, 58.3, SILVERPINE_FOREST },
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["races"] = HORDE_ONLY,
 					["groups"] = {
