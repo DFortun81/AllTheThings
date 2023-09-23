@@ -2776,6 +2776,23 @@
 18677@@@Defense Protocol Beta: Trial of the Champion
 18678@@@Defense Protocol Beta: Trial of the Champion
 18688@@@Defense Protocol Beta: Terminated
+3.4.3.51470
+19425@@@Defense Protocol Gamma: Trial of the Champion
+19426@@@Defense Protocol Gamma: Trial of the Champion
+19427@@@Defense Protocol Gamma: Utgarde Keep
+19428@@@Defense Protocol Gamma: The Nexus
+19429@@@Defense Protocol Gamma: Azjol-Nerub
+19430@@@Defense Protocol Gamma: Ahn'kahet: The Old Kingdom
+19431@@@Defense Protocol Gamma: Drak'Tharon Keep
+19432@@@Defense Protocol Gamma: The Violet Hold
+19433@@@Defense Protocol Gamma: Gundrak
+19434@@@Defense Protocol Gamma: Halls of Stone
+19435@@@Defense Protocol Gamma: Halls of Lightning
+19436@@@Defense Protocol Gamma: The Oculus
+19437@@@Defense Protocol Gamma: Utgarde Pinnacle
+19438@@@Defense Protocol Gamma: The Culling of Stratholme
+19439@@@Defense Protocol Gamma: Terminated
+19440@@@Defense Protocol Gamma: Terminated
 4.0.1.12911
 736@@@Explore Mulgore NYI
 750@@@Explore Northern Barrens

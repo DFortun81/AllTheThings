@@ -210,6 +210,8 @@
 42078@@@Mini Thor
 194870@@@Pebble
 196534@@@Hoplet
+3.4.3.51470
+213605@@@Arfus
 5.0.3.15882
 7395@@@Undercity Cockroach
 14143@@@Ar'lia
