@@ -114,6 +114,32 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					{"select","encounterID",2531,},{"pop"},	-- Original WB
 				},
 			}),
+			e(2562, {	-- Aurostor, The Hibernator
+				["crs"] = { 209574 },
+				["coord"] = { 37.1, 55.2, TREE_1 },
+				["timeline"] = { ADDED_10_2_0 },
+				--["questID"] = ,
+				["g"] = sharedData({
+					["modID"] = 3,
+				},{
+					i(208437),	-- 10.2 Raid - World Boss - Armor - Mail - HEAD 2
+					i(208443),	-- 10.2 Raid - World Boss - Accessory - NECK
+					i(208436),	-- 10.2 Raid - World Boss - Armor - Plate - CHEST 2
+					i(208438),	-- 10.2 Raid - World Boss - Armor - Leather - HAND 2
+					i(208429),	-- 10.2 Raid - World Boss - Armor - Mail - WAIST 2
+					i(208435),	-- 10.2 Raid - World Boss - Armor - Plate - WAIST 2 (War Art)
+					i(208440),	-- 10.2 Raid - World Boss - Armor - Cloth - LEGS 2
+					i(208441),	-- 10.2 Raid - World Boss - Armor - Cloth - FEET 3
+					i(208439),	-- 10.2 Raid - World Boss - Armor - Leather - FEET 3
+				}),
+			}),
+			q(76367, {	-- Hibernation Heroes
+				["coord"] = { 37.1, 55.2, TREE_1 },
+				["timeline"] = { ADDED_10_2_0 },
+				["sym"] = {
+					{"select","encounterID",2562,},{"pop"},
+				},
+			}),
 		}),
 	}),
 })));

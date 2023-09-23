@@ -58,6 +58,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["coord"] = { 53.8, 63.9, TREE_1 },
 					["g"] = {
 						i(209937),	-- Chartreuse Champion's Gavel
+						i(209925),	-- Fearless Faerie's Dirk
+						i(209942),	-- Fearless Faerie's Kris
+						i(209932),	-- Fearless Faerie's Mace
+						i(209934),	-- Spirited Stag's Chopper
 						i(209940),	-- Spirited Stag's Spire
 						i(209931),	-- Summer Soother's Cane
 						i(209936),	-- Summer Soother's Mallet
@@ -582,12 +586,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			--
 			q(78444, {	-- A Worthy Ally: Dream Wardens
-				["sourceQuests"] = { 77283 },	-- A Multi-Front Battle
+				["sourceQuests"] = { 77283 },	-- A Multi-Front Battle (TODO: 77887?)
 				["provider"] = { "n", 208143 },	-- Keeper Amrymn
 				["isWeekly"] = true,
 				["coord"] = { 50.2, 61.6, TREE_1 },
 				["g"] = {
-					i(210872),	-- Satchel of Dreams
+					i(210872, {	-- Satchel of Dreams
+						i(210379),	-- Cold Crisp Collar (TODO: collect them here for now)
+					}),
 				},
 			}),
 			--
@@ -750,6 +756,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(TREE_1, {
 		--- pop during main story
+		q(77413),	-- Shandris's Scouting Report (itemID 208181) (spellID 418275)
 		q(77572),	-- after qID 77283 / 'Make player eligible for superbloom' (spellID 425375)
 		q(77887),	-- after qID 77283 / 'World Quest Unlock' (spellID 421687) & (also have q(77572), in list, but it is not pop currently)
 		---
@@ -763,14 +770,15 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--
 		q(78483),	-- Consumed a dreamfruit at 51.28, 59.97. Gives a buff selection like torghast powers. Selected "Feral Overflow" - might be a unique ID for each buff
 		-- ???
-		--q(77526),	-- pop after picked up qID 77178 / 'Chest' (spellID 423213)
+		--q(77526),	-- pop after picked up qID 77178 / afk on 2nd character / 'Chest' (spellID 423213)
 		--q(77491),	-- pop while was afk / 'Chest' (spellID 420623)
 		--q(77490),	-- last chat text was that '%player_name% creates Shipment of Goods' multiple times / 'Chest' (spellID 420626)
 		--q(77370),	-- also 'The vision of a young dreamer fill the air around the Fileds of Reverie' / 'Chest' (sleppID 418389)
 		--q(77356),	-- pop during wq 76558 / 'Chest' (spellID 418326)
 		--q(77368),	-- was afk / 'Chest' (spellID 418387)
 		--q(77497),	-- afk / 'Chest' (spellID 420761)
-
-		--q(77413),	-- Shandris's Scouting Report (itemID 208181) (spellID 418275), but need to confirm
+		--q(77498),	-- afk / 'Chest' (spellID 420760)
+		--q(77504),	-- afk / 'Chest' (spellID 421192)
+		--(q77366),	-- afk / 'Chest' (spellID 418385)
 	}),
 }));

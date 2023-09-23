@@ -923,20 +923,11 @@ root(ROOTS.Unsorted, {
 			i(208426),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - HEAD 2
 			i(208427),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - FEET 3
 			i(208428),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail - SHOULDER 2
-			i(208429),	-- 10.2 Raid - World Boss - Armor - Mail - WAIST 2
 			i(208430),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Cloth - WAIST 3
 			i(208431),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Cloth - SHOULDER 2
 			i(208432),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leather - WAIST 3
 			i(208434),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail - FEET 3
-			i(208435),	-- 10.2 Raid - World Boss - Armor - Plate - WAIST 2 (War Art)
-			i(208436),	-- 10.2 Raid - World Boss - Armor - Plate - CHEST 2
-			i(208437),	-- 10.2 Raid - World Boss - Armor - Mail - HEAD 2
-			i(208438),	-- 10.2 Raid - World Boss - Armor - Leather - HAND 2
-			i(208439),	-- 10.2 Raid - World Boss - Armor - Leather - FEET 3
-			i(208440),	-- 10.2 Raid - World Boss - Armor - Cloth - LEGS 2
-			i(208441),	-- 10.2 Raid - World Boss - Armor - Cloth - FEET 3
 			i(208442),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Accessory - FINGER 3
-			i(208443),	-- 10.2 Raid - World Boss - Accessory - NECK
 			i(208445),	-- Accessory - NECK 2
 			i(208447),	-- Purifying Tangle
 			i(208545),	-- Kindled Bonfire
@@ -1135,23 +1126,15 @@ root(ROOTS.Unsorted, {
 			i(209922),	-- Fearless Faerie's Glaive
 			i(209923),	-- Chartreuse Champion's Blade
 			i(209924),	-- Chartreuse Champion's Warspear
-			i(209925),	-- Fearless Faerie's Dirk
 			i(209926),	-- Chartreuse Champion's Warhelm
 			i(209927),	-- Summer Soother's Slippers
 			i(209928),	-- Spirited Stag's Treads
 			i(209929),	-- Fearless Faerie's Boots
-			i(209931),	-- Summer Soother's Cane
-			i(209932),	-- Fearless Faerie's Mace
 			i(209933),	-- Spirited Stag's Longbow
-			i(209934),	-- Spirited Stag's Chopper
 			i(209935),	-- Spirited Stag's Handaxe
-			i(209936),	-- Summer Soother's Mallet
-			i(209937),	-- Chartreuse Champion's Gavel
 			i(209938),	-- Chartreuse Champion's Greatsword
 			i(209939),	-- Summer Soother's Wand
-			i(209940),	-- Spirited Stag's Spire
 			i(209941),	-- Spirited Stag's Curve
-			i(209942),	-- Fearless Faerie's Kris
 			i(209943),	-- Spirited Stag's Claymore
 			i(209948),	-- Spring's Keeper
 			i(209952),	-- Mark of Q'onzu
@@ -1282,7 +1265,6 @@ root(ROOTS.Unsorted, {
 			i(210376),	-- Beautiful Blizzard Binding
 			i(210377),	-- Snipping Sleet Circle
 			i(210378),	-- Rime Ridden Ring
-			i(210379),	-- Cold Crisp Collar
 			i(210380),	-- Glittering Gelid Goldchain
 			i(210382),	-- Cold Conservator's Wrap
 			i(210383),	-- Winter Warden's Bulwark
