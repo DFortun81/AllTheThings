@@ -157,7 +157,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- Disperse the Neutralizing Agent
-									["provider"] = { "i", 22955 },	-- Neutralizing Agent
+									["providers"] = {
+										{ "i", 22955 },	-- Neutralizing Agent
+										{ "o", 181433 },	-- Irradiated Power Crystal
+									},
 									-- #if AFTER MOP
 									["coord"] = { 45.2, 64.9, AMMEN_VALE },
 									-- #else
@@ -369,7 +372,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- 0/4 Emitter Spare Part
-									["provider"] = { "i", 22978 },	-- Emitter Spare Part
+									["providers"] = {
+										{ "i",  22978 },	-- Emitter Spare Part
+										{ "o", 181283 },	-- Emitter Spare Part
+									},
 									-- #if AFTER MOP
 									["coord"] = { 64.6, 84.4, AMMEN_VALE },
 									-- #else
@@ -392,7 +398,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/4 Emitter Spare Part
-									["provider"] = { "i", 22978 },	-- Emitter Spare Part
+									["providers"] = {
+										{ "i",  22978 },	-- Emitter Spare Part
+										{ "o", 181283 },	-- Emitter Spare Part
+									},
 									["coord"] = { 64.6, 84.4, AMMEN_VALE },
 								}),
 								i(24423),	-- Beaten Plate Leggings
@@ -693,11 +702,17 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(5, 5, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Nautical Compass
-							["provider"] = { "i", 23738 },	-- Nautical Compass
+							["providers"] = {
+								{ "i",  23738 },	-- Nautical Compass
+								{ "o", 181675 },	-- Nautical Compass
+							},
 							["coord"] = { 59.6, 67.7, AZUREMYST_ISLE },
 						}),
 						objective(2, {	-- 0/1 Nautical Map
-							["provider"] = { "i", 23739 },	-- Nautical Map
+							["providers"] = {
+								{ "i",  23739 },	-- Nautical Map
+								{ "o", 181674 },	-- Nautical Map
+							},
 							["coord"] = { 58.6, 66.4, AZUREMYST_ISLE },
 						}),
 					},
@@ -726,7 +741,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(5, 5, 1),
 					["groups"] = {
 						objective(1, {	-- 0/5 Azure Snapdragon Bulb
-							["provider"] = { "i", 23692 },	-- Azure Snapdragon Bulb
+							["providers"] = {
+								{ "i", 23692 },	-- Azure Snapdragon Bulb
+								{ "o", 181644 },	-- Azure Snapdragon
+							},
 						}),
 					},
 				}),
@@ -1054,10 +1072,16 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(6, 6, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Hollowed Out Tree
-							["provider"] = { "i", 23790 },	-- Hollowed Out Tree
+							["providers"] = {
+								{ "i",  23790 },	-- Hollowed Out Tree
+								{ "o", 181696 },	-- Hollowed Out Tree
+							},
 						}),
 						objective(2, {	-- 0/5 Pile of Leaves
-							["provider"] = { "i", 23791 },	-- Pile of Leaves
+							["providers"] = {
+								{ "i",  23791 },	-- Pile of Leaves
+								{ "o", 181697 },	-- Pile of Leaves
+							},
 						}),
 					},
 				}),
@@ -1143,7 +1167,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(6, 6, 1),
 					["groups"] = {
 						objective(1, {	-- 0/8 Ancient Relic
-							["provider"] = { "i", 23779 },	-- Ancient Relic
+							["providers"] = {
+								{ "i",  23779 },	-- Ancient Relic
+								{ "o", 181683 },	-- Ancient Relic
+							},
 						}),
 					},
 				}),
@@ -1171,7 +1198,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(4, 4, 1),
 					["groups"] = {
 						objective(1, {	-- 0/10 Red Snapper
-							["provider"] = { "i", 23614 },	-- Red Snapper
+							["providers"] = {
+								{ "i",  23614 },	-- Red Snapper
+								{ "o", 181616 },	-- School of Red Snapper
+							},
 							["cost"] = { { "i", 23654, 1 } },	-- Draenei Fishing Net
 						}),
 					},
@@ -1332,7 +1362,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(8, 8, 1),
 					["groups"] = {
 						objective(1, {	-- 0/8 Stillpine Captive Freed
-							["provider"] = { "i", 23801 },	-- Bristlelimb Key
+							["providers"] = {
+								{ "i", 23801 },	-- Bristlelimb Key
+								{ "o", 181714 },	-- Bristlelimb Cage
+							},
 							["cr"] = 17375,	-- Stillpine Captive
 						}),
 						i(23801, {	-- Bristlelimb Key
