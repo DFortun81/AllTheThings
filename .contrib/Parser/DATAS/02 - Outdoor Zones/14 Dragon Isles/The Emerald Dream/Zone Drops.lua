@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				--i(),	-- 
 			}),
 			filter(FINGER_F, {
-				--i(),	-- 
+				i(208350),	-- Ochre Field Signet
 			}),
 			filter(LEATHER, {
 				i(210120),	-- Autumn Druid Treads
@@ -27,6 +27,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				--i(),	-- 
 			}),
 			n(WEAPONS, {
+				i(210127),	-- Autumn Defender's Gavel
 				i(210112),	-- Wildleaf Staff
 				--i(210113),	-- Wildleaf Glaive
 				--i(210116),	-- Wildleaf Dagger

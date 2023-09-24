@@ -618,7 +618,6 @@ root(ROOTS.Unsorted, {
 				i(210766),	-- Silent Mark of the Umbraclaw
 			}),
 			filter(TOYS, {
-				i(210411),	-- Fast Growing Seed (TOY!) [Emerald Dream?]
 				i(209859),	-- Festive Trans-Dimensional Bird Whistle (TOY!) [Winter Veil?]
 				i(209035),	-- Hearthstone of the Flame (TOY!) [Raid Boss?]
 				i(208825),	-- Junior Timekeeper's Racing Belt (TOY!) [Winter Veil?]
@@ -631,7 +630,6 @@ root(ROOTS.Unsorted, {
 				i(210493),	-- Technique: Grotto Netherwing Drake: Spiked Jaw (RECIPE!)
 				i(210491),	-- Technique: Winding Slitherdrake: Hairy Chin (RECIPE!)
 			}),
-			i(210730),	-- Mark of the Dream Wardens
 			i(192717),	-- Animated Splinter
 			i(204179),	-- Cracked Medal of Honor
 			i(204180),	-- Cracked Medal of Honor
@@ -890,7 +888,6 @@ root(ROOTS.Unsorted, {
 			i(208347),	-- Stone Wolf's Cuffs
 			i(208348),	-- Binds of the Shatterer
 			i(208349),	-- Burning Leather Cuffs
-			i(208350),	-- Ochre Field Signet
 			i(208355),	-- String of Delicacies
 			i(208356),	-- Earthbound Furbolg's Shroud
 			i(208357),	-- Henri's Warm Coat
@@ -1085,57 +1082,38 @@ root(ROOTS.Unsorted, {
 			i(209880),	-- Curve of Starry Dusks
 			i(209881),	-- Fystia's Fiery Kris
 			i(209882),	-- Maruud's Undertow
-			i(209883),	-- Chartreuse Champion's Sabatons
 			i(209884),	-- Summer Soother's Gown
 			i(209885),	-- Chartreuse Champion's Chestplate
 			i(209886),	-- Spirited Stag's Chestguard
 			i(209887),	-- Fearless Faerie's Vest
 			i(209888),	-- Fearless Faerie's Gloves
-			i(209889),	-- Chartreuse Champion's Gauntlets
 			i(209890),	-- Summer Soother's Mitts
 			i(209891),	-- Spirited Stag's Handguards
 			i(209892),	-- Summer Soother's Hood
 			i(209893),	-- Spirited Stag's Helm
 			i(209894),	-- Fearless Faerie's Guise
-			i(209895),	-- Chartreuse Champion's Legplates
 			i(209896),	-- Summer Soother's Leggings
 			i(209897),	-- Spirited Stag's Legguards
 			i(209898),	-- Fearless Faerie's Trousers
 			i(209899),	-- Fearless Faerie's Shoulderpads
-			i(209900),	-- Chartreuse Champion's Shoulderplates
 			i(209901),	-- Summer Soother's Shoulders
 			i(209902),	-- Spirited Stag's Eqaulets
-			i(209903),	-- Chartreuse Champion's Girdle
 			i(209904),	-- Summer Soother's Sash
 			i(209905),	-- Spirited Stag's Waistguard
 			i(209906),	-- Fearless Faerie's Belt
 			i(209907),	-- Summer Soother's Bands
-			i(209908),	-- Chartreuse Champion's Bracers
 			i(209909),	-- Spirited Stag's Cuffs
 			i(209910),	-- Fearless Faerie's Wristbands
-			i(209912),	-- Luscious Leaf Loop
-			i(209913),	-- Summer Sky Signet
-			i(209914),	-- Bramble Bark Band
-			i(209915),	-- Perennial Pompon Pendant
-			i(209916),	-- Sunrise Circlet
-			i(209917),	-- Fearless Faerie's Shroud
-			i(209918),	-- Summer Soother's Wrap
-			i(209919),	-- Chartreuse Champion's Bulwark
 			i(209920),	-- Summer Soother's Implement
 			i(209921),	-- Spirited Stag's Branch
 			i(209922),	-- Fearless Faerie's Glaive
-			i(209923),	-- Chartreuse Champion's Blade
-			i(209924),	-- Chartreuse Champion's Warspear
-			i(209926),	-- Chartreuse Champion's Warhelm
 			i(209927),	-- Summer Soother's Slippers
 			i(209928),	-- Spirited Stag's Treads
 			i(209929),	-- Fearless Faerie's Boots
 			i(209933),	-- Spirited Stag's Longbow
 			i(209935),	-- Spirited Stag's Handaxe
-			i(209938),	-- Chartreuse Champion's Greatsword
 			i(209939),	-- Summer Soother's Wand
 			i(209941),	-- Spirited Stag's Curve
-			i(209943),	-- Spirited Stag's Claymore
 			i(209948),	-- Spring's Keeper
 			i(209952),	-- Mark of Q'onzu
 			i(209953),	-- Dancing Dream Blossoms
@@ -1199,7 +1177,6 @@ root(ROOTS.Unsorted, {
 			i(210122),	-- Breezekeeper's Staff
 			i(210125),	-- Breezekeeper's Handaxe
 			i(210126),	-- Breezekeeper's Mallet
-			i(210127),	-- Autumn Defender's Gavel
 			i(210128),	-- Autumn Defender's Claymore
 			i(210129),	-- Wand of Brisk Dusks
 			i(210133),	-- Harvest Guardian Cloak
@@ -1234,8 +1211,6 @@ root(ROOTS.Unsorted, {
 			i(210228),	-- Pure Dream Water
 			i(210231),	-- Everburning Core
 			i(210234),	-- Essence of Dreams
-			i(210235),	-- Spirited Stag's Cape
-			i(210236),	-- Chartreuse Champion's Cloak
 			i(210237),	-- Nipping Night's Necklace
 			i(210324),	-- Medal of Honor
 			i(210325),	-- Medal of Honor
@@ -1289,7 +1264,6 @@ root(ROOTS.Unsorted, {
 			i(210404),	-- Frigid Forager's Curve
 			i(210405),	-- Crystalline Tender's Kris
 			i(210406),	-- Frigid Forager's Claymore
-			i(210407),	-- Frigid Forager's Cape
 			i(210408),	-- Winter Warden's Cloak
 			i(210415),	-- Darnassian Moonsilver Spaulders
 			i(210418),	-- Darnassian Cloak
@@ -1368,7 +1342,6 @@ root(ROOTS.Unsorted, {
 			i(210214),	-- Ouroboreal Necklet
 			i(210737),	-- Ashphodel Research Notes
 			i(210756),	-- Satchel of Drake's Dreaming Crests
-			i(210757),	-- Scales of Remorse
 			i(210762),	-- Clutch of Wyrm's Dreaming Crests
 			i(210768),	-- Bouquet of Aspect's Dreaming Crests
 			i(210770),	-- Satchel of Drake's Dreaming Crests
@@ -1486,7 +1459,6 @@ root(ROOTS.Unsorted, {
 			i(210843),	-- Candied Blade
 			i(210844),	-- Trader's Crimson Sarong
 			i(210846),	-- Trader's Lively Sarong
-			i(210847),	-- Tears of the Eye
 			i(210848),	-- Trader's Midnight Sarong
 			i(210849),	-- Trader's Azure Sarong
 			i(210850),	-- Trader's Sepia Sarong
@@ -1533,7 +1505,6 @@ root(ROOTS.Unsorted, {
 			i(210951),	-- Treacherous Research Notes
 			i(210952),	-- Spare Heated Hearthstone
 			i(210954),	-- Sprout of Rebirth
-			i(210957),	-- Dream-Imbued Journal
 			i(210958),	-- Crown of the Dryad Guardian
 			i(210959),	-- [PH] Misfit Renown Item
 			i(210961),	-- Alara'shinu

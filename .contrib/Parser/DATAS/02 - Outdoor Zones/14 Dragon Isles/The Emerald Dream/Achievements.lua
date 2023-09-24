@@ -76,7 +76,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 			}),
 			ach(19026, {	-- Defenders of the Dream
-				--crit(x, {	-- xx
+				crit(1, {	-- Enter The Dream
+					["sourceQuests"] = { 77283 },	-- A Multi-Front Battle
+				}),
+				crit(2, {	-- Druids of the Flame
+					["sourceQuests"] = { 76443 },	-- The Looming Cinder
+				}),
+				crit(3, {	-- Ice and Fire
+					["sourceQuests"] = { 77178 },	-- Tactical Withdrawal
+				}),
+				crit(4, {	-- Eye of Ysera
+					["sourceQuests"] = { 76337 },	-- The Ember Still Smolders
+				}),
+				--crit(5, {	-- xx
+				--	["sourceQuests"] = { xx },	-- xx
+				--}),
+				--crit(6, {	-- xx
 				--	["sourceQuests"] = { xx },	-- xx
 				--}),
 			}),

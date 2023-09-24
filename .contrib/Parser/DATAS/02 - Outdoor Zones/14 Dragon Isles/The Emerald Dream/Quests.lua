@@ -57,11 +57,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["provider"] = { "n", 206809 },	-- Merithra
 					["coord"] = { 53.8, 63.9, TREE_1 },
 					["g"] = {
+						i(209923),	-- Chartreuse Champion's Blade
+						i(209919),	-- Chartreuse Champion's Bulwark
 						i(209937),	-- Chartreuse Champion's Gavel
+						i(209938),	-- Chartreuse Champion's Greatsword
+						i(209924),	-- Chartreuse Champion's Warspear
 						i(209925),	-- Fearless Faerie's Dirk
 						i(209942),	-- Fearless Faerie's Kris
 						i(209932),	-- Fearless Faerie's Mace
 						i(209934),	-- Spirited Stag's Chopper
+						i(209943),	-- Spirited Stag's Claymore
 						i(209940),	-- Spirited Stag's Spire
 						i(209931),	-- Summer Soother's Cane
 						i(209936),	-- Summer Soother's Mallet
@@ -97,6 +102,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 77436 },	-- The Burning Barrow
 					["provider"] = { "n", 206247 },	-- Tyrande Whisperwind
 					["coord"] = { 51.3, 42.9, TREE_1 },
+					["g"] = {
+						i(210236),	-- Chartreuse Champion's Cloak
+						i(209917),	-- Fearless Faerie's Shroud
+						i(210235),	-- Spirited Stag's Cape
+						i(209918),	-- Summer Soother's Wrap
+					},
 				}),
 				q(76435, {	-- The Smoldering Copse
 					["sourceQuests"] = {
@@ -110,6 +121,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 76435 },	-- The Smoldering Copse
 					["provider"] = { "n", 207160 },	-- Tyrande Whisperwind
 					["coord"] = { 40.7, 47.5, TREE_1 },
+					["g"] = {
+						i(209908),	-- Chartreuse Champion's Bracers
+						i(209903),	-- Chartreuse Champion's Girdle
+					},
 				}),
 				q(76441, {	-- Grim Reprisal
 					["sourceQuests"] = { 76435 },	-- The Smoldering Copse
@@ -123,11 +138,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					},
 					["provider"] = { "n", 207160 },	-- Tyrande Whisperwind
 					["coord"] = { 536, 50.9, TREE_1 },
+					["g"] = {
+						i(209900),	-- Chartreuse Champion's Shoulderplates
+					},
 				}),
 				q(76443, {	-- The Looming Cinder
 					["sourceQuests"] = { 76442 },	-- Forlorn Hop
 					["provider"] = { "n", 211193 },	-- Tyrande Whisperwind
 					["coord"] = { 36.1, 50.8, TREE_1 },
+					["g"] = {
+						i(210730),	-- Mark of the Dream Wardens
+					},
 				}),
 				------ Chapter 3 ------
 				q(76403, {	-- Mayhem Incarnate
@@ -144,6 +165,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 76403 },	-- Mayhem Incarnate
 					["provider"] = { "n", 206619 },	-- Buri <Claw of Vyranoth>
 					["coord"] = { 36.8, 26.0, TREE_1 },
+					["g"] = {
+						i(209889),	-- Chartreuse Champion's Gauntlets
+						i(209883),	-- Chartreuse Champion's Sabatons
+					},
 				}),
 				q(76344, {	-- Primalist Directive
 					["sourceQuests"] = {
@@ -157,6 +182,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 76344 },	-- Primalist Directive
 					["provider"] = { "n", 206612 },	-- Vyranoth
 					["coord"] = { 36.8, 25.8, TREE_1 },
+					["g"] = {
+						i(209915),	-- Perennial Pompon Pendant
+						i(209916),	-- Sunrise Circlet
+					},
 				}),
 				q(76532, {	-- Assault on the Wellspring
 					["sourceQuests"] = {
@@ -170,16 +199,26 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 76532 },	-- Assault on the Wellspring
 					["provider"] = { "n", 208738 },	-- Suzska
 					["coord"] = { 27.6, 32.1, TREE_1 },
+					["g"] = {
+						i(209895),	-- Chartreuse Champion's Legplates
+					},
 				}),
 				q(76347, {	-- Power, Eruption, and Lies
 					["sourceQuests"] = { 76348 },	-- Big Bright Beautiful Barrier
 					["provider"] = { "n", 208738 },	-- Suzska
 					["coord"] = { 33.5, 30.3, TREE_1 },
+					["g"] = {
+						i(209885),	-- Chartreuse Champion's Chestplate
+						i(209926),	-- Chartreuse Champion's Warhelm
+					},
 				}),
 				q(77178, {	-- Tactical Withdrawal
 					["sourceQuests"] = { 76347 },	-- Power, Eruption, and Lies
 					["provider"] = { "n", 210733 },	-- Vyranoth
 					["coord"] = { 33.7, 25.2, TREE_1 },
+					["g"] = {
+						i(210757),	-- Scales of Remorse
+					},
 				}),
 				------ Chapter 4 ------
 				q(76327, {	-- Eye of Ysera
@@ -193,10 +232,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["coord"] = { 52.1, 29.1, TREE_1 },
 					["g"] = {
 						i(208124),	-- The Dreamer's Essence (QI!)
+						i(209914),	-- Bramble Bark Band
+						i(209912),	-- Luscious Leaf Loop
+						i(209913),	-- Summer Sky Signet
 					},
 				}),
-				q(76330, {	-- Disarm Specialist
+				q(78646, {	-- Fire Watch
 					["sourceQuests"] = { 76328 },	-- A New Brute
+					["provider"] = { "n", 206406 },	-- Merithra
+					["coord"] = { 52.7, 28.1, TREE_1 },
+				}),
+				q(76330, {	-- Disarm Specialist
+					["sourceQuests"] = { 78646 },	-- Fire Watch
 					["provider"] = { "n", 206406 },	-- Merithra
 					["coord"] = { 52.1, 24.2, TREE_1 },
 					["g"] = {
@@ -204,11 +251,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					},
 				}),
 				q(76329, {	-- In and Out Scout
-					["sourceQuests"] = { 76328 },	-- A New Brute
+					["sourceQuests"] = { 78646 },	-- Fire Watch
 					["provider"] = { "n", 206406 },	-- Merithra
 					["coord"] = { 52.1, 24.2, TREE_1 },
 					["g"] = {
 						i(210016),	-- Somnowl's Shroud (QI!)
+						i(210236),	-- Chartreuse Champion's Cloak
+						i(209917),	-- Fearless Faerie's Shroud
+						i(210235),	-- Spirited Stag's Cape
+						i(209918),	-- Summer Soother's Wrap
 					},
 				}),
 				q(76334, {	-- Good Counsel
@@ -223,6 +274,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 76334 },	-- Good Counsel
 					["provider"] = { "n", 206406 },	-- Merithra
 					["coord"] = { 53.0, 28.1, TREE_1 },
+					["g"] = {
+						i(209908),	-- Chartreuse Champion's Bracers
+					},
 				}),
 				q(76331, {	-- Merithra's Gambit
 					["sourceQuests"] = { 76332 },	-- Putting Roots Down
@@ -238,26 +292,30 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 76331 },	-- Merithra's Gambit
 					["provider"] = { "n", 206406 },	-- Merithra
 					["coord"] = { 52.9, 28.0, TREE_1 },
+					["g"] = {
+						i(209926),	-- Chartreuse Champion's Warhelm
+					},
 				}),
 				q(76336, {	-- Flight and Fight
 					["sourceQuests"] = {
 						76335,	-- Might of the Forest
-						76333,	-- Triple Threat
+						76333,	-- Triple Threat (TODO: up without this quest, actually, dunno)
 					},
 					["provider"] = { "n", 206416 },	-- Merithra
 					["coord"] = { 57.2, 26.1, TREE_1 },
+					["g"] = {
+						i(209889),	-- Chartreuse Champion's Gauntlets
+					},
 				}),
 				q(76337, {	-- The Ember Still Smolders
 					["sourceQuests"] = { 76336 },	-- Flight and Fight
 					["provider"] = { "n", 206406 },	-- Merithra
 					["coord"] = { 51.9, 29.4, TREE_1 },
+					["g"] = {
+						i(210847),	-- Tears of the Eye
+					},
 				}),
 				------ Chapter 5 ------	
-				q(78646, {	-- Fire Watch (TODO: Wration quest should be before it? | quest bugged, no npc wm on/off didn't help)
-					["sourceQuests"] = { 76337 },	-- The Ember Still Smolders
-					["provider"] = { "n", 206406 },	-- Merithra
-					["coord"] = { 52.7, 28.1, TREE_1 },
-				}),
 				------ Chapter 6 ------
 			}),
 			-- non-story quests below for now
@@ -389,6 +447,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 49.8, 61.6, TREE_1 },
 				["g"] = {
 					i(210180),	-- Emerald Flightstone
+					i(210917),	-- Pouch of Whelpling's Dreaming Crests
 				},
 			}),
 			--
@@ -433,9 +492,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 55.3, 42.3, TREE_1 },
 				["g"] = {
 					i(208937),	-- A Muddy Journal
+					i(210957),	-- Dream-Imbued Journal
 					i(209054),	-- Ritual Remedy (QI!)
 					i(209051),	-- Sleeping Glory (QI!)
 					i(209050),	-- Somnium Bark (QI!)
+
 				},
 			}),
 			--
@@ -583,18 +644,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 77314 },	-- Requiem in a Dream
 				["provider"] = { "n", 208714 },	-- Ysera
 				["coord"] = { 58.6, 23.8, TREE_1 },
-			}),
-			--
-			q(78444, {	-- A Worthy Ally: Dream Wardens
-				["sourceQuests"] = { 77283 },	-- A Multi-Front Battle (TODO: 77887?)
-				["provider"] = { "n", 208143 },	-- Keeper Amrymn
-				["isWeekly"] = true,
-				["coord"] = { 50.2, 61.6, TREE_1 },
-				["g"] = {
-					i(210872, {	-- Satchel of Dreams
-						i(210379),	-- Cold Crisp Collar (TODO: collect them here for now)
-					}),
-				},
 			}),
 			--
 			q(78427, {	-- Great Crates!
@@ -757,8 +806,8 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(TREE_1, {
 		--- pop during main story
 		q(77413),	-- Shandris's Scouting Report (itemID 208181) (spellID 418275)
-		q(77572),	-- after qID 77283 / 'Make player eligible for superbloom' (spellID 425375)
-		q(77887),	-- after qID 77283 / 'World Quest Unlock' (spellID 421687) & (also have q(77572), in list, but it is not pop currently)
+		q(77572),	-- 'Make player eligible for superbloom' (spellID 425375) (new qid attached to this also - 76573, 76574, 76575 but marked as completed on first character now)
+		q(77887),	-- 'World Quest Unlock' (spellID 421687)
 		---
 		q(77808),	-- Quest "What Do I Call You?": Pick the title of "Mother"
 		q(77809),	-- Quest "What Do I Call You?": Pick the title of "Father"
@@ -779,6 +828,9 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(77497),	-- afk / 'Chest' (spellID 420761)
 		--q(77498),	-- afk / 'Chest' (spellID 420760)
 		--q(77504),	-- afk / 'Chest' (spellID 421192)
-		--(q77366),	-- afk / 'Chest' (spellID 418385)
+		--q(77366),	-- afk / 'Chest' (spellID 418385)
+		--q(77505), -- randomly killing npcs during first quest / 'Chest' (spellID 421191)
+		--q(77357),	-- afk / 'Chest' (spellID 418327)
+		--q(77358),	-- afk (spellID ?)
 	}),
 }));

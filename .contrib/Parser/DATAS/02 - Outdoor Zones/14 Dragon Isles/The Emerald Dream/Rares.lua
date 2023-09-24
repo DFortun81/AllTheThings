@@ -14,6 +14,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			n(209909, {	-- Crabtankerous
 				["questID"] = 77862,
 				["coord"] = { 66.1, 63.5, TREE_1 },
+				["g"] = {
+					i(208364),	-- Falling Leaf Saber
+				},
 			}),
 			n(209929, {	-- Envoy of Winter
 				["description"] = "Finish bonus objective in marked area to make him spawn.",

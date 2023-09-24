@@ -27,7 +27,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 78120,
 				["coord"] = { 37.3, 30.7, TREE_1 },
 				["g"] = {
-					i(208856),	-- Pocket Lint // in-case it will be same itemID but with proper name
+					i(210411),	-- Fast Growing Seed (TOY!)
 				},
 			}),
 			o(411778, {	-- Pollenfused Bristlebruin Fur Sample
