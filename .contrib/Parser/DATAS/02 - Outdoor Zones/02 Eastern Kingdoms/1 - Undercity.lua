@@ -1440,7 +1440,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(4585, {	-- Ezekiel
 					["coord"] = { 75.6, 51.6, UNDERCITY },
-					["races"] = ALLIANCE_ONLY,
+					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						4565,	-- Simple Dagger
 					}},
