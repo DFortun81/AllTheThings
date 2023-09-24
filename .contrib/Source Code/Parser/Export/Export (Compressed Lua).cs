@@ -369,7 +369,7 @@ namespace ATT
             builder.AppendLine("};");
 
             // Simplify the structure of the string and then export to the builder.
-            SimplifyStructureForLua(builder);
+            if (!((string[])Framework.Config["PreProcessorTags"]).Contains("NOSIMPLIFY")) SimplifyStructureForLua(builder);
             ExportLocalVariablesForLua(builder);
             ExportCategoriesHeaderForLua(builder);
             STRUCTURE_COUNTS.Clear();
