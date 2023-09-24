@@ -10,17 +10,4 @@ r(419038),	-- Verdant Combatant's Draconium Waistguard
 r(426332),	-- Flourishing Dream Helm
 
 
-
-
-Missing in BlacksmithingItemDB.lua
-
-10.2.0.51239
-r(419031),	-- Verdant Combatant's Draconium Armguards
-r(419032),	-- Verdant Combatant's Draconium Breastplate
-r(419033),	-- Verdant Combatant's Draconium Gauntlets
-r(419034),	-- Verdant Combatant's Draconium Greaves
-r(419035),	-- Verdant Combatant's Draconium Helm
-r(419036),	-- Verdant Combatant's Draconium Pauldrons
-r(419037),	-- Verdant Combatant's Draconium Sabatons
-r(419038),	-- Verdant Combatant's Draconium Waistguard
-r(426332),	-- Flourishing Dream Helm
+Nothing is Missing in BlacksmithingItemDB.lua! Good Work!

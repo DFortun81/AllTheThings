@@ -2024,7 +2024,3 @@ r(359672),	-- Crafter's Mark of the First Ones
 r(359701),	-- Vestige of the Eternal
 r(360016),	-- Aealic Harmonizing Stone \\ Ephemera Harmonizing Stone
 r(360317),	-- Devourer Essence Stone
-10.2.0.51239
-r(419004),	-- Verdant Combatant's Jeweled Amulet
-r(419005),	-- Verdant Combatant's Jeweled Signet
-r(420740),	-- Dreamtender's Charm

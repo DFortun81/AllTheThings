@@ -37,16 +37,28 @@ ach(15210),	-- Challenger: Season 2
 ach(15853),	-- <Hidden> Joyous Journeys - Hit 70 with Buff Joyous Journeys
 3.0.1.8622
 ach(970),	-- Tricks and Treats of Azeroth
+ach(1168),	-- Master of Alterac Valley
+ach(1170),	-- Master of Arathi Basin
+ach(1173),	-- Master of Warsong Gulch
 3.0.1.8874
 ach(1187),	-- The Keymaster
+ach(1274),	-- Loremaster of Outland \\ Champion of Outland
+ach(1360),	-- Loremaster of Northrend \\ Champion of Northrend
 3.1.0.9767
 ach(1657),	-- Hallowed Be Thy Name
+ach(1677),	-- Loremaster of Eastern Kingdoms
+ach(1680),	-- Loremaster of Kalimdor
+ach(1681),	-- The Loremaster
+ach(1682),	-- The Loremaster
 ach(1684),	-- Brewmaster
 ach(1692),	-- Merrymaker
 ach(1707),	-- Fool For Love
+ach(2195),	-- Master of Strand of the Ancients
+ach(2776),	-- Master of Wintergrasp
 ach(2797),	-- Noble Gardener
 3.3.5.12340
 ach(3656),	-- Pilgrim
+ach(3814),	-- Resilience Will Fix It (25 player)
 ach(3838),	-- Dungeon & Raid Emblem
 ach(3839),	-- 25 Dungeon & Raid Emblems
 ach(3840),	-- 50 Dungeon & Raid Emblems
@@ -118,7 +130,25 @@ ach(18614),	-- Defense Protocol Beta: Terminated
 ach(18677),	-- Defense Protocol Beta: Trial of the Champion
 ach(18678),	-- Defense Protocol Beta: Trial of the Champion
 ach(18688),	-- Defense Protocol Beta: Terminated
+3.4.3.51470
+ach(19425),	-- Defense Protocol Gamma: Trial of the Champion
+ach(19426),	-- Defense Protocol Gamma: Trial of the Champion
+ach(19427),	-- Defense Protocol Gamma: Utgarde Keep
+ach(19428),	-- Defense Protocol Gamma: The Nexus
+ach(19429),	-- Defense Protocol Gamma: Azjol-Nerub
+ach(19430),	-- Defense Protocol Gamma: Ahn'kahet: The Old Kingdom
+ach(19431),	-- Defense Protocol Gamma: Drak'Tharon Keep
+ach(19432),	-- Defense Protocol Gamma: The Violet Hold
+ach(19433),	-- Defense Protocol Gamma: Gundrak
+ach(19434),	-- Defense Protocol Gamma: Halls of Stone
+ach(19435),	-- Defense Protocol Gamma: Halls of Lightning
+ach(19436),	-- Defense Protocol Gamma: The Oculus
+ach(19437),	-- Defense Protocol Gamma: Utgarde Pinnacle
+ach(19438),	-- Defense Protocol Gamma: The Culling of Stratholme
+ach(19439),	-- Defense Protocol Gamma: Terminated
+ach(19440),	-- Defense Protocol Gamma: Terminated
 4.0.1.12911
+ach(4907),	-- Duskwood Quests
 ach(5020),	-- Observed - Guild Edition \\ He Feeds On Your Tears - Guild Edition
 7.3.0.24473
 ach(11065),	-- It All Makes Sense Now
@@ -129,7 +159,6 @@ ach(13284),	-- Frontline Warrior \\ On The Frontlines
 ach(18976),	-- Draconically Superior
 ach(18977),	-- Draconically Epic
 10.1.7.50442
-ach(18579),	-- A Round on the House
 ach(18580),	-- Hellfire Hustle: Bronze
 ach(18581),	-- Hellfire Hustle: Silver
 ach(18582),	-- Hellfire Hustle: Gold
@@ -283,8 +312,6 @@ ach(19139),	-- <Hidden> Epic 11.0 Tender [DNT]
 ach(19192),	-- Lil' Frostwing
 10.1.7.51237
 ach(18691),	-- <DNT> Complete the "The Coalition of Flames" questline.
-10.1.7.51313
-ach(18854),	-- Seeing Red
 10.2.0.51239
 ach(17730),	-- Random Login Variable B
 ach(18647),	-- <Hidden> 10.1.7 Prologue / 10.2 Intro Quest Launch [NOT USED YET]
@@ -523,7 +550,7 @@ ach(19320),	-- Cruelty Free
 ach(19321),	-- Swog Champion
 10.2.0.51297
 ach(19322),	-- Meaner Pastures
-ach(19326),	-- 10.2 Upgrade System - Whelpling Trade-Up Unlocked
+ach(19326),	-- 10.2 Upgrade System - Whelpling-to-Drake Trade-Up Unlocked [DNT] \\ 10.2 Upgrade System - Whelpling Trade-Up Unlocked
 ach(19331),	-- Amirdrassil, the Dream's Hope
 ach(19333),	-- Heroic: Amirdrassil, the Dream's Hope
 ach(19334),	-- Mythic: Amirdrassil, the Dream's Hope
@@ -541,3 +568,54 @@ ach(19345),	-- Molten Incursion
 ach(19346),	-- The Viridian Weave
 ach(19347),	-- Fate of Amirdrassil
 ach(19348),	-- Gnarlroot kills (Raid Finder Amirdrassil, the Dream's Hope)
+10.2.0.51425
+ach(19349),	-- Glory of the Dream Raider
+ach(19350),	-- Ahead of the Curve: Fyrakk the Blazing
+ach(19351),	-- Cutting Edge: Fyrakk the Blazing
+ach(19352),	-- Igira the Cruel kills (Raid Finder Amirdrassil, the Dream's Hope)
+ach(19353),	-- Volcoross kills (Raid Finder Amirdrassil, the Dream's Hope)
+ach(19354),	-- Council of Dreams kills (Raid Finder Amirdrassil, the Dream's Hope)
+ach(19355),	-- Larodar, Keeper of the Flame kills (Raid Finder Amirdrassil, the Dream's Hope)
+ach(19356),	-- Nymue, Warden of the Cycle kills (Raid Finder Amirdrassil, the Dream's Hope)
+ach(19357),	-- Smolderon kills (Raid Finder Amirdrassil, the Dream's Hope)
+ach(19358),	-- Tindral Sageswift, Seer of the Flame kills (Raid Finder Amirdrassil, the Dream's Hope)
+ach(19359),	-- Fyrakk the Blazing kills (Raid Finder Amirdrassil, the Dream's Hope)
+ach(19360),	-- Gnarlroot kills (Normal Amirdrassil, the Dream's Hope)
+ach(19361),	-- Igira the Cruel kills (Normal Amirdrassil, the Dream's Hope)
+ach(19362),	-- Volcoross kills (Normal Amirdrassil, the Dream's Hope)
+ach(19363),	-- Council of Dreams kills (Normal Amirdrassil, the Dream's Hope)
+ach(19364),	-- Larodar, Keeper of the Flame kills (Normal Amirdrassil, the Dream's Hope)
+ach(19365),	-- Nymue, Weaver of the Cycle kills (Normal Amirdrassil, the Dream's Hope)
+ach(19366),	-- Smolderon kills (Normal Amirdrassil, the Dream's Hope)
+ach(19367),	-- Tindral Sageswift, Seer of the Flame kills (Normal Amirdrassil, the Dream's Hope)
+ach(19368),	-- Fyrakk the Blazing kills (Normal Amirdrassil, the Dream's Hope)
+ach(19369),	-- Gnarlroot kills (Heroic Amirdrassil, the Dream's Hope)
+ach(19370),	-- Igira the Cruel kills (Heroic Amirdrassil, the Dream's Hope)
+ach(19371),	-- Volcoross kills (Heroic Amirdrassil, the Dream's Hope)
+ach(19372),	-- Council of Dreams kills (Heroic Amirdrassil, the Dream's Hope)
+ach(19373),	-- Larodar, Keeper of the Flame kills (Heroic Amirdrassil, the Dream's Hope)
+ach(19374),	-- Nymue, Weaver of the Cycle kills (Heroic Amirdrassil, the Dream's Hope)
+ach(19375),	-- Smolderon kills (Heroic Amirdrassil, the Dream's Hope)
+ach(19376),	-- Tindral Sageswift, Seer of the Flame kills (Heroic Amirdrassil, the Dream's Hope)
+ach(19377),	-- Fyrakk the Blazing kills (Heroic Amirdrassil, the Dream's Hope)
+ach(19378),	-- Gnarlroot kills (Mythic Amirdrassil, the Dream's Hope)
+ach(19379),	-- Igira the Cruel kills (Mythic Amirdrassil, the Dream's Hope)
+ach(19380),	-- Volcoross kills (Mythic Amirdrassil, the Dream's Hope)
+ach(19381),	-- Council of Dreams kills (Mythic Amirdrassil, the Dream's Hope)
+ach(19382),	-- Larodar, Keeper of the Flame kills (Mythic Amirdrassil, the Dream's Hope)
+ach(19383),	-- Nymue, Weaver of the Cycle kills (Mythic Amirdrassil, the Dream's Hope)
+ach(19384),	-- Smolderon kills (Mythic Amirdrassil, the Dream's Hope)
+ach(19385),	-- Tindral Sageswift, Seer of the Flame kills (Mythic Amirdrassil, the Dream's Hope)
+ach(19386),	-- Fyrakk the Blazing kills (Mythic Amirdrassil, the Dream's Hope)
+ach(19387),	-- Amirdrassil, the Dream's Hope Guild Run
+ach(19388),	-- Heroic: Amirdrassil, the Dream's Hope Guild Run
+ach(19389),	-- Mythic: Fyrakk the Blazing Guild Run
+ach(19390),	-- [PH] Fyrakk Achievement
+ach(19392),	-- Hall of Fame: Fyrakk the Blazing
+ach(19393),	-- [PH] Tindral Sageswift Achievement
+ach(19394),	-- A Dream Within a Dream
+ach(19395),	-- <Hidden> Account has completed 10.2 Upgrade System tutorial quests
+ach(19396),	-- Dragonflight Season 3 Master
+ach(19397),	-- 10.2 Upgrade System - Drake-to-Wyrm Trade-Up Unlocked [DNT]
+ach(19398),	-- 10.2 Upgrade System - Wyrm-to-Aspect Trade-Up Unlocked [DNT]
+ach(19401),	-- Emerald Dream Safari

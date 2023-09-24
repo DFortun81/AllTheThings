@@ -1,7 +1,5 @@
 3.4.1.47966
 title(210),	-- Battlemaster %s
-10.1.7.50793
-title(519),	-- Honorary Preservationist %s
 10.1.7.50893
 title(521),	-- Outland Racer %s
 10.2.0.51239

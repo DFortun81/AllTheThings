@@ -4,11 +4,4 @@ r(421247),	-- Living Draconium Deposit
 r(422809),	-- Overload Living Deposit
 
 
-
-
-Missing in MiningItemDB.lua
-
-10.2.0.51239
-r(421244),	-- Living Serevite Deposit
-r(421247),	-- Living Draconium Deposit
-r(422809),	-- Overload Living Deposit
+Nothing is Missing in MiningItemDB.lua! Good Work!

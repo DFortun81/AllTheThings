@@ -29,6 +29,8 @@ pet(4308),	-- Juniper
 10.2.0.51297
 pet(4309),	-- Drowsey
 pet(4310),	-- Snorr
+10.2.0.51425
+pet(4311),	-- Mitzy
 
 
 
@@ -36,33 +38,8 @@ pet(4310),	-- Snorr
 Missing in PetDB.lua
 
 10.2.0.51239
-pet(4275),	-- Flooftalon
-pet(4276),	-- Fol'ya Pup
-pet(4277),	-- Sapnibbler
-pet(4278),	-- Leyhart
-pet(4279),	-- Slumbertooth
-pet(4280),	-- Pewling
-pet(4285),	-- Sergeant Quackers
-pet(4286),	-- Aura
-pet(4287),	-- Reverie
-pet(4288),	-- Blueloo
-pet(4289),	-- Dreamborne Scarab
-pet(4290),	-- Dreamhoof
-pet(4291),	-- Ivy
-pet(4292),	-- Memorie
-pet(4295),	-- Napps
-pet(4296),	-- Snoozles
-pet(4297),	-- Kal'andu
-pet(4298),	-- Seedle
-pet(4299),	-- Dustite
-pet(4300),	-- Somnolet
 pet(4302),	-- Pale Slumbertooth
 pet(4303),	-- Snaggletoof
 pet(4304),	-- Dream Badger
-pet(4305),	-- Snoots
-pet(4306),	-- Elmer
-pet(4307),	-- Spruce
-pet(4308),	-- Juniper
-10.2.0.51297
-pet(4309),	-- Drowsey
-pet(4310),	-- Snorr
+10.2.0.51425
+pet(4311),	-- Mitzy

@@ -36173,6 +36173,8 @@ s(188116)/i(206754),	-- Ghrino Cover
 s(188117)/i(206755),	-- Ghrino Britches
 s(188118)/i(206756),	-- Ghrino Pauldrons
 s(188119)/i(206757),	-- Ghrino Bracers
+3.4.3.51384
+s(193798)/i(5108),	-- Dark Iron Leather
 7.3.0.24473
 s(76)/i(746),	-- Lord Brandon's Tabard (Test)
 s(147)/i(906),	-- Tan Leather Shoulderpads (Test)
@@ -56199,11 +56201,11 @@ s(92749)/i(156153),	--
 s(92750)/i(156154),	--
 s(92751)/i(156155),	--
 s(92752)/i(156156),	--
-s(92821)/i(156251),	--
-s(92822)/i(156252),	--
-s(92823)/i(156253),	--
-s(92824)/i(156254),	--
-s(92826)/i(156256),	--
+s(92821)/i(156251),	-- Shroud of Alteration
+s(92822)/i(156252),	-- Greaves of the Stonewarder
+s(92823)/i(156253),	-- Shoulders of Misfortune
+s(92824)/i(156254),	-- Leggings of the Tortured Earth
+s(92826)/i(156256),	-- Grips of Chaos
 s(92896)/i(156342),	--
 s(92913)/i(156362),	--
 s(92914)/i(156363),	--
@@ -56250,14 +56252,14 @@ s(93000)/i(156449),	--
 s(93001)/i(156450),	--
 s(93004)/i(156453),	--
 s(93008)/i(156457),	--
-s(93010)/i(156460),	--
-s(93011)/i(156461),	--
-s(93014)/i(156465),	--
-s(93015)/i(156466),	--
-s(93016)/i(156467),	--
-s(93017)/i(156468),	--
-s(93018)/i(156469),	--
-s(93019)/i(156470),	--
+s(93010)/i(156460),	-- Mimiron's Repeater
+s(93011)/i(156461),	-- Adamant Handguards
+s(93014)/i(156465),	-- Iceshear Mantle
+s(93015)/i(156466),	-- Bracers of Righteous Reformation
+s(93016)/i(156467),	-- Boots of Unsettled Prey
+s(93017)/i(156468),	-- Cloak of the Dormant Blaze
+s(93018)/i(156469),	-- Pillar of Fortitude
+s(93019)/i(156470),	-- Bloodcrush Cudgel
 s(93020)/i(156471),	--
 s(93047)/i(156547),	--
 s(93069)/i(156667),	--
@@ -60474,29 +60476,37 @@ s(107764)/i(173856),	-- Cloth Mantle
 s(107765)/i(173857),	-- Cloth Headdress
 s(107766)/i(173858),	-- Cloth Wraps
 s(108031)/i(174099),	--
+s(108414)/i(174234),	-- Maniacal Speaker's Cover \\ Cloth Helm - PH \\ Cloth Helm
 s(108418)/i(174235),	-- Cloth Chest - PH \\ Cloth Chest
 s(108423)/i(174236),	-- Cloth Shoulder - PH \\ Cloth Shoulder
+s(108426)/i(174237),	-- Breeches of Faithful Execution \\ Cloth Pants - PH \\ Cloth Pants
 s(108430)/i(174238),	-- Cloth Bracer - PH \\ Cloth Bracer
 s(108434)/i(174239),	-- Cloth Boots - PH \\ Cloth Boots
 s(108438)/i(174240),	-- Cloth Belt - PH \\ Cloth Belt
 s(108442)/i(174241),	-- Cloth Gloves - PH \\ Cloth Gloves
 s(108446)/i(174242),	-- Lether Chest - PH \\ Lether Chest
+s(108450)/i(174243),	-- Guise of the Voracious Prowler \\ Leather Helm - PH \\ Leather Helm
 s(108454)/i(174244),	-- Leather Shoulder - PH \\ Leather Shoulder
 s(108458)/i(174245),	-- Leather Gloves - PH \\ Leather Gloves
 s(108462)/i(174246),	-- Leather Bracer - PH \\ Leather Bracer
+s(108466)/i(174247),	-- Grotesque Mutilator's Leggings \\ Leather Pants - PH \\ Leather Pants
 s(108470)/i(174248),	-- Leather Belt - PH \\ Leather Belt
 s(108474)/i(174249),	-- Leather Boots - PH \\ Leather Boots
+s(108478)/i(174250),	-- Psyche Tormentor's Visage \\ Mail Helm - PH \\ Mail Helm
 s(108482)/i(174251),	-- Mail Chest - PH \\ Mail Chest
 s(108486)/i(174252),	-- Mail Shoulder - PH \\ Mail Shoulder
 s(108490)/i(174253),	-- Mail Gloves - PH \\ Mail Gloves
 s(108494)/i(174254),	-- Mail Bracer - PH \\ Mail Bracer
+s(108498)/i(174255),	-- Greaves of Shattered Thoughts \\ Mail Pants - PH \\ Mail Pants
 s(108502)/i(174256),	-- Mail Belt - PH \\ Mail Belt
 s(108506)/i(174257),	-- Mail Boots - PH \\ Mail Boots
+s(108510)/i(174258),	-- Greathelm of Indiscriminate Brutality \\ Plate Helm - PH \\ Plate Helm
 s(108514)/i(174259),	-- Plate Chest - PH \\ Plate Chest
 s(108518)/i(174260),	-- Plate Shoulder - PH \\ Plate Shoulder
 s(108522)/i(174261),	-- Plate Gloves - PH \\ Plate Gloves
 s(108526)/i(174262),	-- Plate Bracer - PH \\ Plate Bracer
 s(108530)/i(174263),	-- Plate Belt - PH \\ Plate Belt
+s(108534)/i(174264),	-- Chitinous Conqueror's Legplates \\ Plate Pants - PH \\ Plate Pants
 s(108538)/i(174265),	-- Plate Boots - PH \\ Plate Boots
 8.3.0.32203
 s(108651)/i(174453),	--
@@ -64988,8 +64998,6 @@ s(190743)/i(209408),	-- Dreambound Crown
 10.1.7.51187
 s(189583)/i(208093),	--
 s(189587)/i(208136),	--
-s(193035)/i(208686),	-- Velenite Claymore
-s(193036)/i(208688),	-- Telaasti Mining Pick
 10.1.7.51237
 s(189074)/i(208025),	--
 s(189582)/i(208083),	--
@@ -64997,57 +65005,51 @@ s(189608)/i(208197),	--
 s(189610)/i(208199),	-- Tabard of the Tyr's Guard
 10.1.7.51313
 s(189613)/i(208225),	--
-s(189977)/i(208662),	-- Lightforged Seeker
-s(189978)/i(208677),	-- Eredath Crystal Hammer
-s(189982)/i(208683),	-- Arinor Ritual Baton
-s(189983)/i(208684),	-- Anchorite's Sorrow
-s(189984)/i(208685),	-- Recovered Kaarinos Blade
-s(190112)/i(208755),	-- Ancient Soulpriest's Staff
 s(190151)/i(208844),	--
 10.2.0.51239
 s(188043)/i(206587),	--
 s(188656)/i(207025),	-- <Placeholder> Fyrakk Axe - Shadowflame
 s(188670)/i(207115),	-- Cloth - HAND 1
-s(188671)/i(207116),	-- Cloth - HEAD 1
-s(188672)/i(207117),	-- Cloth - SHOULDER 1
-s(188673)/i(207118),	-- Cloth - LEGS 1
-s(188674)/i(207119),	-- Cloth - WAIST 1
-s(188675)/i(207120),	-- Cloth - WRIST 1
-s(188676)/i(207121),	-- Cloth - CHEST 1
-s(188677)/i(207122),	-- Cloth - FEET 1
-s(188678)/i(207123),	-- Cloth - FEET 2
+s(188671)/i(207116),	-- Lost Scholar's Timely Hat \\ Cloth - HEAD 1
+s(188672)/i(207117),	-- Requiem Rootmantle \\ Cloth - SHOULDER 1
+s(188673)/i(207118),	-- Elder's Volcanic Wrap \\ Cloth - LEGS 1
+s(188674)/i(207119),	-- Urctos's Hibernal Dial \\ Cloth - WAIST 1
+s(188675)/i(207120),	-- Anguished Restraints \\ Cloth - WRIST 1
+s(188676)/i(207121),	-- Vesture of the Smoldering Serpent \\ Cloth - CHEST 1
+s(188677)/i(207122),	-- Lost Scholar's Belted Treads \\ Cloth - FEET 1
+s(188678)/i(207123),	-- Lifewoven Slippers \\ Cloth - FEET 2
 s(188679)/i(207124),	-- Cloth - WAIST 2
-s(188681)/i(207126),	-- Leather - FEET 1
-s(188682)/i(207127),	-- Leather - SHOULDER 1
-s(188683)/i(207128),	-- Leather - WRIST 1
-s(188684)/i(207129),	-- Leather - CHEST 1
-s(188685)/i(207130),	-- Leather - HAND 1
-s(188686)/i(207131),	-- Leather - WAIST 1
+s(188681)/i(207126),	-- Twisted Blossom Stompers \\ Leather - FEET 1
+s(188682)/i(207127),	-- Strigine Epaulets \\ Leather - SHOULDER 1
+s(188683)/i(207128),	-- Primordial Serpent's Bindings \\ Leather - WRIST 1
+s(188684)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
+s(188685)/i(207130),	-- Flamewaker's Grips \\ Leather - HAND 1
+s(188686)/i(207131),	-- Bloody Dragonhide Belt \\ Leather - WAIST 1
 s(188687)/i(207132),	-- Leather - LEGS 1
-s(188688)/i(207133),	-- Leather - HEAD 1
+s(188688)/i(207133),	-- Silent Tormentor's Hood \\ Leather - HEAD 1
 s(188689)/i(207134),	-- Leather - FEET 2
-s(188690)/i(207135),	-- Leather - WAIST 2
+s(188690)/i(207135),	-- Eternal Sentinel's Cord \\ Leather - WAIST 2
 s(188692)/i(207137),	-- Mail - HAND 1
-s(188693)/i(207138),	-- Mail - LEGS 1
-s(188694)/i(207139),	-- Mail - FEET 1
-s(188695)/i(207140),	-- Mail - SHOULDER 1
-s(188696)/i(207141),	-- Mail - HEAD 1
-s(188697)/i(207142),	-- Mail - CHEST 1
-s(188698)/i(207143),	-- Mail - WRIST 1
-s(188699)/i(207144),	-- Mail - WAIST 1
+s(188693)/i(207138),	-- Aerwynn's Ritual Sarong \\ Mail - LEGS 1
+s(188694)/i(207139),	-- Cleats of the Savage Claw \\ Mail - FEET 1
+s(188695)/i(207140),	-- Drakestalker's Trophy Pauldrons \\ Mail - SHOULDER 1
+s(188696)/i(207141),	-- Snake Eater's Cowl \\ Mail - HEAD 1
+s(188697)/i(207142),	-- Ancient Haubark \\ Mail - CHEST 1
+s(188698)/i(207143),	-- Twisted Flamecuffs \\ Mail - WRIST 1
+s(188699)/i(207144),	-- Rootclasp of the Broken \\ Mail - WAIST 1
 s(188700)/i(207145),	-- Mail - FEET 2
-s(188701)/i(207146),	-- Mail - WAIST 2
-s(188703)/i(207148),	-- Plate - FEET 1
-s(188704)/i(207149),	-- Plate - WAIST 1
-s(188705)/i(207150),	-- Plate - WRIST 1
-s(188706)/i(207151),	-- Plate - HEAD 1
-s(188707)/i(207152),	-- Plate - SHOULDER 1
-s(188708)/i(207153),	-- Plate - LEGS 1
+s(188701)/i(207146),	-- Jeweled Sash of the Viper \\ Mail - WAIST 2
+s(188703)/i(207148),	-- Lavaforged Sollerets \\ Plate - FEET 1
+s(188704)/i(207149),	-- Phlegethic Girdle \\ Plate - WAIST 1
+s(188705)/i(207150),	-- Agonizing Manacles \\ Plate - WRIST 1
+s(188706)/i(207151),	-- Emerald Guardian's Casque \\ Plate - HEAD 1
+s(188707)/i(207152),	-- Volcanic Spelunker's Vents \\ Plate - SHOULDER 1
+s(188708)/i(207153),	-- Seared Ironwood Greaves \\ Plate - LEGS 1
 s(188709)/i(207154),	-- Plate - CHEST 1
-s(188710)/i(207155),	-- Plate - HAND 1
+s(188710)/i(207155),	-- Eldermoss Gauntlets \\ Plate - HAND 1
 s(188711)/i(207156),	-- Plate - FEET 2
 s(188712)/i(207157),	-- Plate - WAIST 2
-s(188714)/i(207160),	-- Accessory - CLOAK 1
+s(188714)/i(207160),	-- Inflammable Drapeleaf \\ Accessory - CLOAK 1
 s(188715)/i(207161),	-- Accessory - CLOAK 2
 s(188716)/i(207176),	-- 10.2 Raid - Emerald Dream - Class Sets - Warrior - Armor - Generic - Cloak
 s(188717)/i(207177),	-- 10.2 Raid - Emerald Dream - Class Sets - Warrior - Armor - Plate - Wrist
@@ -65168,25 +65170,25 @@ s(188831)/i(207292),	-- 10.2 Raid - Emerald Dream - Class Sets - Mage - Armor - 
 s(188832)/i(207293),	-- 10.2 Raid - Emerald Dream - Class Sets - Mage - Armor - Cloth - Chest
 s(188882)/i(207780),	-- Bow
 s(188883)/i(207781),	-- 1H Dagger AGI 1
-s(188884)/i(207782),	-- 1H Dagger INT
+s(188884)/i(207782),	-- Sickle of the White Stag \\ 1H Dagger INT
 s(188885)/i(207783),	-- Cruel Dreamcarver
 s(188886)/i(207784),	-- Thorncaller Claw
-s(188887)/i(207785),	-- 2H Gun AGI
+s(188887)/i(207785),	-- Magmatic Volcannon \\ 2H Gun AGI
 s(188888)/i(207786),	-- [PH] Fyrakk Cantrip 1H Axe STR
-s(188889)/i(207787),	-- 1H Axe AGI
+s(188889)/i(207787),	-- Igira's Flaying Hatchet \\ 1H Axe AGI
 s(188890)/i(207788),	-- [PH] Fyrakk Cantrip 1H Mace INT
-s(188891)/i(207789),	-- 1H Sword STR
-s(188892)/i(207790),	-- Sword INT - 1
-s(188893)/i(207791),	-- Warglaives
-s(188894)/i(207792),	-- 2H Polearm AGI
+s(188891)/i(207789),	-- Volcoross's Barbed Fang \\ 1H Sword STR
+s(188892)/i(207790),	-- Larodar's Moonblade \\ Sword INT - 1
+s(188893)/i(207791),	-- Remnant Charglaive \\ Warglaives
+s(188894)/i(207792),	-- Scythe of the Fallen Keeper \\ 2H Polearm AGI
 s(188895)/i(207793),	-- [PH] Fyrakk Cantrip 2H Staff AGI
-s(188896)/i(207794),	-- 2H Staff INT 1
+s(188896)/i(207794),	-- Staff of Incandescent Torment \\ 2H Staff INT 1
 s(188897)/i(207795),	-- 2H Staff INT 2
-s(188898)/i(207796),	-- Holdable - Offhand
+s(188898)/i(207796),	-- Trickster's Captivating Chime \\ Holdable - Offhand
 s(188899)/i(207797),	-- Defender of the Ancient
-s(188900)/i(207798),	-- Weapon - Shield 2
+s(188900)/i(207798),	-- Verdant Matrix Beacon \\ Weapon - Shield 2
 s(188901)/i(207799),	-- 2H Sword STR
-s(188902)/i(207800),	-- 2H Mace STR
+s(188902)/i(207800),	-- Gnarlroot's Bonecrusher \\ 2H Mace STR
 s(189085)/i(207286),	-- 10.2 Raid - Emerald Dream - Class Sets - Mage - Armor - Cloth -  Wrist
 s(189086)/i(207286),	-- 10.2 Raid - Emerald Dream - Class Sets - Mage - Armor - Cloth -  Wrist
 s(189087)/i(207286),	-- 10.2 Raid - Emerald Dream - Class Sets - Mage - Armor - Cloth -  Wrist
@@ -66538,57 +66540,57 @@ s(191006)/i(209774),	-- Verdant Aspirant's Cloak
 s(191007)/i(209775),	-- Verdant Aspirant's Drape
 s(191008)/i(209776),	-- Verdant Aspirant's Cape
 s(191009)/i(209777),	-- Verdant Aspirant's Greatcloak
-s(191034)/i(207794),	-- 2H Staff INT 1
-s(191035)/i(207794),	-- 2H Staff INT 1
-s(191036)/i(207794),	-- 2H Staff INT 1
+s(191034)/i(207794),	-- Staff of Incandescent Torment \\ 2H Staff INT 1
+s(191035)/i(207794),	-- Staff of Incandescent Torment \\ 2H Staff INT 1
+s(191036)/i(207794),	-- Staff of Incandescent Torment \\ 2H Staff INT 1
 s(191037)/i(207783),	-- Cruel Dreamcarver
 s(191038)/i(207783),	-- Cruel Dreamcarver
 s(191039)/i(207783),	-- Cruel Dreamcarver
 s(191040)/i(207797),	-- Defender of the Ancient
 s(191041)/i(207797),	-- Defender of the Ancient
 s(191042)/i(207797),	-- Defender of the Ancient
-s(191043)/i(207787),	-- 1H Axe AGI
-s(191044)/i(207787),	-- 1H Axe AGI
-s(191045)/i(207787),	-- 1H Axe AGI
-s(191047)/i(207800),	-- 2H Mace STR
-s(191048)/i(207800),	-- 2H Mace STR
-s(191049)/i(207800),	-- 2H Mace STR
+s(191043)/i(207787),	-- Igira's Flaying Hatchet \\ 1H Axe AGI
+s(191044)/i(207787),	-- Igira's Flaying Hatchet \\ 1H Axe AGI
+s(191045)/i(207787),	-- Igira's Flaying Hatchet \\ 1H Axe AGI
+s(191047)/i(207800),	-- Gnarlroot's Bonecrusher \\ 2H Mace STR
+s(191048)/i(207800),	-- Gnarlroot's Bonecrusher \\ 2H Mace STR
+s(191049)/i(207800),	-- Gnarlroot's Bonecrusher \\ 2H Mace STR
 s(191050)/i(207781),	-- 1H Dagger AGI 1
 s(191051)/i(207781),	-- 1H Dagger AGI 1
 s(191052)/i(207781),	-- 1H Dagger AGI 1
-s(191053)/i(207789),	-- 1H Sword STR
-s(191054)/i(207789),	-- 1H Sword STR
-s(191055)/i(207789),	-- 1H Sword STR
-s(191056)/i(207785),	-- 2H Gun AGI
-s(191057)/i(207785),	-- 2H Gun AGI
-s(191058)/i(207785),	-- 2H Gun AGI
-s(191059)/i(207796),	-- Holdable - Offhand
-s(191060)/i(207796),	-- Holdable - Offhand
-s(191061)/i(207796),	-- Holdable - Offhand
+s(191053)/i(207789),	-- Volcoross's Barbed Fang \\ 1H Sword STR
+s(191054)/i(207789),	-- Volcoross's Barbed Fang \\ 1H Sword STR
+s(191055)/i(207789),	-- Volcoross's Barbed Fang \\ 1H Sword STR
+s(191056)/i(207785),	-- Magmatic Volcannon \\ 2H Gun AGI
+s(191057)/i(207785),	-- Magmatic Volcannon \\ 2H Gun AGI
+s(191058)/i(207785),	-- Magmatic Volcannon \\ 2H Gun AGI
+s(191059)/i(207796),	-- Trickster's Captivating Chime \\ Holdable - Offhand
+s(191060)/i(207796),	-- Trickster's Captivating Chime \\ Holdable - Offhand
+s(191061)/i(207796),	-- Trickster's Captivating Chime \\ Holdable - Offhand
 s(191062)/i(207784),	-- Thorncaller Claw
 s(191063)/i(207784),	-- Thorncaller Claw
 s(191064)/i(207784),	-- Thorncaller Claw
-s(191065)/i(207790),	-- Sword INT - 1
-s(191066)/i(207790),	-- Sword INT - 1
-s(191067)/i(207790),	-- Sword INT - 1
-s(191068)/i(207792),	-- 2H Polearm AGI
-s(191069)/i(207792),	-- 2H Polearm AGI
-s(191070)/i(207792),	-- 2H Polearm AGI
+s(191065)/i(207790),	-- Larodar's Moonblade \\ Sword INT - 1
+s(191066)/i(207790),	-- Larodar's Moonblade \\ Sword INT - 1
+s(191067)/i(207790),	-- Larodar's Moonblade \\ Sword INT - 1
+s(191068)/i(207792),	-- Scythe of the Fallen Keeper \\ 2H Polearm AGI
+s(191069)/i(207792),	-- Scythe of the Fallen Keeper \\ 2H Polearm AGI
+s(191070)/i(207792),	-- Scythe of the Fallen Keeper \\ 2H Polearm AGI
 s(191071)/i(208616),	-- Dreambinder, Loom of the Great Cycle
 s(191072)/i(208616),	-- Dreambinder, Loom of the Great Cycle
 s(191073)/i(208616),	-- Dreambinder, Loom of the Great Cycle
-s(191074)/i(207798),	-- Weapon - Shield 2
-s(191075)/i(207798),	-- Weapon - Shield 2
-s(191076)/i(207798),	-- Weapon - Shield 2
+s(191074)/i(207798),	-- Verdant Matrix Beacon \\ Weapon - Shield 2
+s(191075)/i(207798),	-- Verdant Matrix Beacon \\ Weapon - Shield 2
+s(191076)/i(207798),	-- Verdant Matrix Beacon \\ Weapon - Shield 2
 s(191077)/i(207799),	-- 2H Sword STR
 s(191078)/i(207799),	-- 2H Sword STR
 s(191079)/i(207799),	-- 2H Sword STR
-s(191080)/i(207791),	-- Warglaives
-s(191081)/i(207791),	-- Warglaives
-s(191082)/i(207791),	-- Warglaives
-s(191083)/i(207782),	-- 1H Dagger INT
-s(191084)/i(207782),	-- 1H Dagger INT
-s(191085)/i(207782),	-- 1H Dagger INT
+s(191080)/i(207791),	-- Remnant Charglaive \\ Warglaives
+s(191081)/i(207791),	-- Remnant Charglaive \\ Warglaives
+s(191082)/i(207791),	-- Remnant Charglaive \\ Warglaives
+s(191083)/i(207782),	-- Sickle of the White Stag \\ 1H Dagger INT
+s(191084)/i(207782),	-- Sickle of the White Stag \\ 1H Dagger INT
+s(191085)/i(207782),	-- Sickle of the White Stag \\ 1H Dagger INT
 s(191086)/i(207795),	-- 2H Staff INT 2
 s(191087)/i(207795),	-- 2H Staff INT 2
 s(191088)/i(207795),	-- 2H Staff INT 2
@@ -67002,10 +67004,10 @@ s(191955)/i(210162),	-- Verdant Aspirant's Hammer
 s(191956)/i(210163),	-- Verdant Aspirant's Knife
 s(191957)/i(210164),	-- Verdant Aspirant's Sword
 s(191959)/i(210166),	-- Verdant Aspirant's Blade
-s(191962)/i(210203),	-- Mail - WRIST 2
+s(191962)/i(210203),	-- Wellspring Wristlet \\ Mail - WRIST 2
 s(191963)/i(210204),	-- Cloth - WRIST 2
-s(191964)/i(210205),	-- Plate - WRIST 2
-s(191965)/i(210206),	-- Leather - WRIST 2
+s(191964)/i(210205),	-- Vigilant Protector's Bracers \\ Plate - WRIST 2
+s(191965)/i(210206),	-- Verdant Sanctuary Bands \\ Leather - WRIST 2
 s(191966)/i(207222),	-- 10.2 Raid - Emerald Dream - Class Sets - Evoker - Armor - Generic - Cloak
 s(191967)/i(207222),	-- 10.2 Raid - Emerald Dream - Class Sets - Evoker - Armor - Generic - Cloak
 s(191968)/i(207222),	-- 10.2 Raid - Emerald Dream - Class Sets - Evoker - Armor - Generic - Cloak
@@ -67455,31 +67457,31 @@ s(192414)/i(207266),	-- 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - 
 s(192415)/i(207266),	-- 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Chest
 s(192416)/i(207266),	-- 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Chest
 s(192417)/i(207266),	-- 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Chest
-s(192418)/i(207127),	-- Leather - SHOULDER 1
-s(192419)/i(207127),	-- Leather - SHOULDER 1
-s(192420)/i(207127),	-- Leather - SHOULDER 1
-s(192423)/i(207127),	-- Leather - SHOULDER 1
-s(192424)/i(207127),	-- Leather - SHOULDER 1
-s(192425)/i(207127),	-- Leather - SHOULDER 1
-s(192426)/i(207127),	-- Leather - SHOULDER 1
-s(192429)/i(207129),	-- Leather - CHEST 1
-s(192430)/i(207129),	-- Leather - CHEST 1
-s(192431)/i(207129),	-- Leather - CHEST 1
-s(192432)/i(207129),	-- Leather - CHEST 1
-s(192433)/i(207129),	-- Leather - CHEST 1
-s(192434)/i(207129),	-- Leather - CHEST 1
-s(192435)/i(207129),	-- Leather - CHEST 1
-s(192436)/i(207129),	-- Leather - CHEST 1
-s(192437)/i(207129),	-- Leather - CHEST 1
-s(192438)/i(207129),	-- Leather - CHEST 1
-s(192439)/i(207129),	-- Leather - CHEST 1
-s(192440)/i(207135),	-- Leather - WAIST 2
-s(192441)/i(207135),	-- Leather - WAIST 2
-s(192442)/i(207135),	-- Leather - WAIST 2
-s(192445)/i(207135),	-- Leather - WAIST 2
-s(192446)/i(207135),	-- Leather - WAIST 2
-s(192447)/i(207135),	-- Leather - WAIST 2
-s(192448)/i(207135),	-- Leather - WAIST 2
+s(192418)/i(207127),	-- Strigine Epaulets \\ Leather - SHOULDER 1
+s(192419)/i(207127),	-- Strigine Epaulets \\ Leather - SHOULDER 1
+s(192420)/i(207127),	-- Strigine Epaulets \\ Leather - SHOULDER 1
+s(192423)/i(207127),	-- Strigine Epaulets \\ Leather - SHOULDER 1
+s(192424)/i(207127),	-- Strigine Epaulets \\ Leather - SHOULDER 1
+s(192425)/i(207127),	-- Strigine Epaulets \\ Leather - SHOULDER 1
+s(192426)/i(207127),	-- Strigine Epaulets \\ Leather - SHOULDER 1
+s(192429)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
+s(192430)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
+s(192431)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
+s(192432)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
+s(192433)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
+s(192434)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
+s(192435)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
+s(192436)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
+s(192437)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
+s(192438)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
+s(192439)/i(207129),	-- Robes of the Ashen Grove \\ Leather - CHEST 1
+s(192440)/i(207135),	-- Eternal Sentinel's Cord \\ Leather - WAIST 2
+s(192441)/i(207135),	-- Eternal Sentinel's Cord \\ Leather - WAIST 2
+s(192442)/i(207135),	-- Eternal Sentinel's Cord \\ Leather - WAIST 2
+s(192445)/i(207135),	-- Eternal Sentinel's Cord \\ Leather - WAIST 2
+s(192446)/i(207135),	-- Eternal Sentinel's Cord \\ Leather - WAIST 2
+s(192447)/i(207135),	-- Eternal Sentinel's Cord \\ Leather - WAIST 2
+s(192448)/i(207135),	-- Eternal Sentinel's Cord \\ Leather - WAIST 2
 s(192451)/i(207249),	-- 10.2 Raid - Emerald Dream - Class Sets - Druid - Armor - Generic - Cloak
 s(192452)/i(207249),	-- 10.2 Raid - Emerald Dream - Class Sets - Druid - Armor - Generic - Cloak
 s(192453)/i(207249),	-- 10.2 Raid - Emerald Dream - Class Sets - Druid - Armor - Generic - Cloak
@@ -67579,27 +67581,27 @@ s(192546)/i(207257),	-- 10.2 Raid - Emerald Dream - Class Sets - Druid - Armor -
 s(192547)/i(207257),	-- 10.2 Raid - Emerald Dream - Class Sets - Druid - Armor - Leather - Chest
 s(192548)/i(207257),	-- 10.2 Raid - Emerald Dream - Class Sets - Druid - Armor - Leather - Chest
 s(192549)/i(207257),	-- 10.2 Raid - Emerald Dream - Class Sets - Druid - Armor - Leather - Chest
-s(192561)/i(207128),	-- Leather - WRIST 1
-s(192562)/i(207128),	-- Leather - WRIST 1
-s(192563)/i(207128),	-- Leather - WRIST 1
-s(192566)/i(207128),	-- Leather - WRIST 1
-s(192567)/i(207128),	-- Leather - WRIST 1
-s(192568)/i(207128),	-- Leather - WRIST 1
-s(192569)/i(207128),	-- Leather - WRIST 1
-s(192572)/i(207131),	-- Leather - WAIST 1
-s(192573)/i(207131),	-- Leather - WAIST 1
-s(192574)/i(207131),	-- Leather - WAIST 1
-s(192577)/i(207131),	-- Leather - WAIST 1
-s(192578)/i(207131),	-- Leather - WAIST 1
-s(192579)/i(207131),	-- Leather - WAIST 1
-s(192580)/i(207131),	-- Leather - WAIST 1
-s(192583)/i(207133),	-- Leather - HEAD 1
-s(192584)/i(207133),	-- Leather - HEAD 1
-s(192585)/i(207133),	-- Leather - HEAD 1
-s(192588)/i(207133),	-- Leather - HEAD 1
-s(192589)/i(207133),	-- Leather - HEAD 1
-s(192590)/i(207133),	-- Leather - HEAD 1
-s(192591)/i(207133),	-- Leather - HEAD 1
+s(192561)/i(207128),	-- Primordial Serpent's Bindings \\ Leather - WRIST 1
+s(192562)/i(207128),	-- Primordial Serpent's Bindings \\ Leather - WRIST 1
+s(192563)/i(207128),	-- Primordial Serpent's Bindings \\ Leather - WRIST 1
+s(192566)/i(207128),	-- Primordial Serpent's Bindings \\ Leather - WRIST 1
+s(192567)/i(207128),	-- Primordial Serpent's Bindings \\ Leather - WRIST 1
+s(192568)/i(207128),	-- Primordial Serpent's Bindings \\ Leather - WRIST 1
+s(192569)/i(207128),	-- Primordial Serpent's Bindings \\ Leather - WRIST 1
+s(192572)/i(207131),	-- Bloody Dragonhide Belt \\ Leather - WAIST 1
+s(192573)/i(207131),	-- Bloody Dragonhide Belt \\ Leather - WAIST 1
+s(192574)/i(207131),	-- Bloody Dragonhide Belt \\ Leather - WAIST 1
+s(192577)/i(207131),	-- Bloody Dragonhide Belt \\ Leather - WAIST 1
+s(192578)/i(207131),	-- Bloody Dragonhide Belt \\ Leather - WAIST 1
+s(192579)/i(207131),	-- Bloody Dragonhide Belt \\ Leather - WAIST 1
+s(192580)/i(207131),	-- Bloody Dragonhide Belt \\ Leather - WAIST 1
+s(192583)/i(207133),	-- Silent Tormentor's Hood \\ Leather - HEAD 1
+s(192584)/i(207133),	-- Silent Tormentor's Hood \\ Leather - HEAD 1
+s(192585)/i(207133),	-- Silent Tormentor's Hood \\ Leather - HEAD 1
+s(192588)/i(207133),	-- Silent Tormentor's Hood \\ Leather - HEAD 1
+s(192589)/i(207133),	-- Silent Tormentor's Hood \\ Leather - HEAD 1
+s(192590)/i(207133),	-- Silent Tormentor's Hood \\ Leather - HEAD 1
+s(192591)/i(207133),	-- Silent Tormentor's Hood \\ Leather - HEAD 1
 s(192594)/i(207134),	-- Leather - FEET 2
 s(192595)/i(207134),	-- Leather - FEET 2
 s(192596)/i(207134),	-- Leather - FEET 2
@@ -67614,27 +67616,27 @@ s(192610)/i(208432),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leathe
 s(192611)/i(208432),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leather - WAIST 3
 s(192612)/i(208432),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leather - WAIST 3
 s(192613)/i(208432),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leather - WAIST 3
-s(192616)/i(210206),	-- Leather - WRIST 2
-s(192617)/i(210206),	-- Leather - WRIST 2
-s(192618)/i(210206),	-- Leather - WRIST 2
-s(192621)/i(210206),	-- Leather - WRIST 2
-s(192622)/i(210206),	-- Leather - WRIST 2
-s(192623)/i(210206),	-- Leather - WRIST 2
-s(192624)/i(210206),	-- Leather - WRIST 2
-s(192627)/i(207126),	-- Leather - FEET 1
-s(192628)/i(207126),	-- Leather - FEET 1
-s(192629)/i(207126),	-- Leather - FEET 1
-s(192632)/i(207126),	-- Leather - FEET 1
-s(192633)/i(207126),	-- Leather - FEET 1
-s(192634)/i(207126),	-- Leather - FEET 1
-s(192635)/i(207126),	-- Leather - FEET 1
-s(192638)/i(207130),	-- Leather - HAND 1
-s(192639)/i(207130),	-- Leather - HAND 1
-s(192640)/i(207130),	-- Leather - HAND 1
-s(192643)/i(207130),	-- Leather - HAND 1
-s(192644)/i(207130),	-- Leather - HAND 1
-s(192645)/i(207130),	-- Leather - HAND 1
-s(192646)/i(207130),	-- Leather - HAND 1
+s(192616)/i(210206),	-- Verdant Sanctuary Bands \\ Leather - WRIST 2
+s(192617)/i(210206),	-- Verdant Sanctuary Bands \\ Leather - WRIST 2
+s(192618)/i(210206),	-- Verdant Sanctuary Bands \\ Leather - WRIST 2
+s(192621)/i(210206),	-- Verdant Sanctuary Bands \\ Leather - WRIST 2
+s(192622)/i(210206),	-- Verdant Sanctuary Bands \\ Leather - WRIST 2
+s(192623)/i(210206),	-- Verdant Sanctuary Bands \\ Leather - WRIST 2
+s(192624)/i(210206),	-- Verdant Sanctuary Bands \\ Leather - WRIST 2
+s(192627)/i(207126),	-- Twisted Blossom Stompers \\ Leather - FEET 1
+s(192628)/i(207126),	-- Twisted Blossom Stompers \\ Leather - FEET 1
+s(192629)/i(207126),	-- Twisted Blossom Stompers \\ Leather - FEET 1
+s(192632)/i(207126),	-- Twisted Blossom Stompers \\ Leather - FEET 1
+s(192633)/i(207126),	-- Twisted Blossom Stompers \\ Leather - FEET 1
+s(192634)/i(207126),	-- Twisted Blossom Stompers \\ Leather - FEET 1
+s(192635)/i(207126),	-- Twisted Blossom Stompers \\ Leather - FEET 1
+s(192638)/i(207130),	-- Flamewaker's Grips \\ Leather - HAND 1
+s(192639)/i(207130),	-- Flamewaker's Grips \\ Leather - HAND 1
+s(192640)/i(207130),	-- Flamewaker's Grips \\ Leather - HAND 1
+s(192643)/i(207130),	-- Flamewaker's Grips \\ Leather - HAND 1
+s(192644)/i(207130),	-- Flamewaker's Grips \\ Leather - HAND 1
+s(192645)/i(207130),	-- Flamewaker's Grips \\ Leather - HAND 1
+s(192646)/i(207130),	-- Flamewaker's Grips \\ Leather - HAND 1
 s(192649)/i(207132),	-- Leather - LEGS 1
 s(192650)/i(207132),	-- Leather - LEGS 1
 s(192651)/i(207132),	-- Leather - LEGS 1
@@ -67940,7 +67942,7 @@ s(193030)/i(210426),	--
 s(193031)/i(210427),	--
 s(193032)/i(210428),	--
 s(193033)/i(210433),	-- Visage of Aurostor
-s(193034)/i(210434),	-- Visage of Ursoc
+s(193034)/i(210434),	-- Visage of Ursol \\ Visage of Ursoc
 s(193037)/i(210469),	--
 s(193038)/i(210488),	--
 s(193039)/i(210501),	-- Dream Wardens Tabard
@@ -68066,20 +68068,20 @@ s(193169)/i(207185),	-- 10.2 Raid - Emerald Dream - Class Sets - Warrior - Armor
 s(193170)/i(207185),	-- 10.2 Raid - Emerald Dream - Class Sets - Warrior - Armor - Plate - Chest
 s(193171)/i(207185),	-- 10.2 Raid - Emerald Dream - Class Sets - Warrior - Armor - Plate - Chest
 s(193172)/i(207185),	-- 10.2 Raid - Emerald Dream - Class Sets - Warrior - Armor - Plate - Chest
-s(193173)/i(207149),	-- Plate - WAIST 1
-s(193174)/i(207149),	-- Plate - WAIST 1
-s(193175)/i(207149),	-- Plate - WAIST 1
-s(193178)/i(207149),	-- Plate - WAIST 1
-s(193179)/i(207149),	-- Plate - WAIST 1
-s(193180)/i(207149),	-- Plate - WAIST 1
-s(193181)/i(207149),	-- Plate - WAIST 1
-s(193184)/i(207153),	-- Plate - LEGS 1
-s(193185)/i(207153),	-- Plate - LEGS 1
-s(193186)/i(207153),	-- Plate - LEGS 1
-s(193189)/i(207153),	-- Plate - LEGS 1
-s(193190)/i(207153),	-- Plate - LEGS 1
-s(193191)/i(207153),	-- Plate - LEGS 1
-s(193192)/i(207153),	-- Plate - LEGS 1
+s(193173)/i(207149),	-- Phlegethic Girdle \\ Plate - WAIST 1
+s(193174)/i(207149),	-- Phlegethic Girdle \\ Plate - WAIST 1
+s(193175)/i(207149),	-- Phlegethic Girdle \\ Plate - WAIST 1
+s(193178)/i(207149),	-- Phlegethic Girdle \\ Plate - WAIST 1
+s(193179)/i(207149),	-- Phlegethic Girdle \\ Plate - WAIST 1
+s(193180)/i(207149),	-- Phlegethic Girdle \\ Plate - WAIST 1
+s(193181)/i(207149),	-- Phlegethic Girdle \\ Plate - WAIST 1
+s(193184)/i(207153),	-- Seared Ironwood Greaves \\ Plate - LEGS 1
+s(193185)/i(207153),	-- Seared Ironwood Greaves \\ Plate - LEGS 1
+s(193186)/i(207153),	-- Seared Ironwood Greaves \\ Plate - LEGS 1
+s(193189)/i(207153),	-- Seared Ironwood Greaves \\ Plate - LEGS 1
+s(193190)/i(207153),	-- Seared Ironwood Greaves \\ Plate - LEGS 1
+s(193191)/i(207153),	-- Seared Ironwood Greaves \\ Plate - LEGS 1
+s(193192)/i(207153),	-- Seared Ironwood Greaves \\ Plate - LEGS 1
 s(193195)/i(207156),	-- Plate - FEET 2
 s(193196)/i(207156),	-- Plate - FEET 2
 s(193197)/i(207156),	-- Plate - FEET 2
@@ -68098,34 +68100,34 @@ s(193213)/i(208426),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate 
 s(193214)/i(208426),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - HEAD 2
 s(193215)/i(208426),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - HEAD 2
 s(193216)/i(208426),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - HEAD 2
-s(193217)/i(210205),	-- Plate - WRIST 2
-s(193218)/i(210205),	-- Plate - WRIST 2
-s(193219)/i(210205),	-- Plate - WRIST 2
-s(193222)/i(210205),	-- Plate - WRIST 2
-s(193223)/i(210205),	-- Plate - WRIST 2
-s(193224)/i(210205),	-- Plate - WRIST 2
-s(193225)/i(210205),	-- Plate - WRIST 2
-s(193228)/i(207148),	-- Plate - FEET 1
-s(193229)/i(207148),	-- Plate - FEET 1
-s(193230)/i(207148),	-- Plate - FEET 1
-s(193233)/i(207148),	-- Plate - FEET 1
-s(193234)/i(207148),	-- Plate - FEET 1
-s(193235)/i(207148),	-- Plate - FEET 1
-s(193236)/i(207148),	-- Plate - FEET 1
-s(193239)/i(207150),	-- Plate - WRIST 1
-s(193240)/i(207150),	-- Plate - WRIST 1
-s(193241)/i(207150),	-- Plate - WRIST 1
-s(193244)/i(207150),	-- Plate - WRIST 1
-s(193245)/i(207150),	-- Plate - WRIST 1
-s(193246)/i(207150),	-- Plate - WRIST 1
-s(193247)/i(207150),	-- Plate - WRIST 1
-s(193250)/i(207152),	-- Plate - SHOULDER 1
-s(193251)/i(207152),	-- Plate - SHOULDER 1
-s(193252)/i(207152),	-- Plate - SHOULDER 1
-s(193255)/i(207152),	-- Plate - SHOULDER 1
-s(193256)/i(207152),	-- Plate - SHOULDER 1
-s(193257)/i(207152),	-- Plate - SHOULDER 1
-s(193258)/i(207152),	-- Plate - SHOULDER 1
+s(193217)/i(210205),	-- Vigilant Protector's Bracers \\ Plate - WRIST 2
+s(193218)/i(210205),	-- Vigilant Protector's Bracers \\ Plate - WRIST 2
+s(193219)/i(210205),	-- Vigilant Protector's Bracers \\ Plate - WRIST 2
+s(193222)/i(210205),	-- Vigilant Protector's Bracers \\ Plate - WRIST 2
+s(193223)/i(210205),	-- Vigilant Protector's Bracers \\ Plate - WRIST 2
+s(193224)/i(210205),	-- Vigilant Protector's Bracers \\ Plate - WRIST 2
+s(193225)/i(210205),	-- Vigilant Protector's Bracers \\ Plate - WRIST 2
+s(193228)/i(207148),	-- Lavaforged Sollerets \\ Plate - FEET 1
+s(193229)/i(207148),	-- Lavaforged Sollerets \\ Plate - FEET 1
+s(193230)/i(207148),	-- Lavaforged Sollerets \\ Plate - FEET 1
+s(193233)/i(207148),	-- Lavaforged Sollerets \\ Plate - FEET 1
+s(193234)/i(207148),	-- Lavaforged Sollerets \\ Plate - FEET 1
+s(193235)/i(207148),	-- Lavaforged Sollerets \\ Plate - FEET 1
+s(193236)/i(207148),	-- Lavaforged Sollerets \\ Plate - FEET 1
+s(193239)/i(207150),	-- Agonizing Manacles \\ Plate - WRIST 1
+s(193240)/i(207150),	-- Agonizing Manacles \\ Plate - WRIST 1
+s(193241)/i(207150),	-- Agonizing Manacles \\ Plate - WRIST 1
+s(193244)/i(207150),	-- Agonizing Manacles \\ Plate - WRIST 1
+s(193245)/i(207150),	-- Agonizing Manacles \\ Plate - WRIST 1
+s(193246)/i(207150),	-- Agonizing Manacles \\ Plate - WRIST 1
+s(193247)/i(207150),	-- Agonizing Manacles \\ Plate - WRIST 1
+s(193250)/i(207152),	-- Volcanic Spelunker's Vents \\ Plate - SHOULDER 1
+s(193251)/i(207152),	-- Volcanic Spelunker's Vents \\ Plate - SHOULDER 1
+s(193252)/i(207152),	-- Volcanic Spelunker's Vents \\ Plate - SHOULDER 1
+s(193255)/i(207152),	-- Volcanic Spelunker's Vents \\ Plate - SHOULDER 1
+s(193256)/i(207152),	-- Volcanic Spelunker's Vents \\ Plate - SHOULDER 1
+s(193257)/i(207152),	-- Volcanic Spelunker's Vents \\ Plate - SHOULDER 1
+s(193258)/i(207152),	-- Volcanic Spelunker's Vents \\ Plate - SHOULDER 1
 s(193261)/i(207154),	-- Plate - CHEST 1
 s(193262)/i(207154),	-- Plate - CHEST 1
 s(193263)/i(207154),	-- Plate - CHEST 1
@@ -68133,20 +68135,20 @@ s(193266)/i(207154),	-- Plate - CHEST 1
 s(193267)/i(207154),	-- Plate - CHEST 1
 s(193268)/i(207154),	-- Plate - CHEST 1
 s(193269)/i(207154),	-- Plate - CHEST 1
-s(193272)/i(207151),	-- Plate - HEAD 1
-s(193273)/i(207151),	-- Plate - HEAD 1
-s(193274)/i(207151),	-- Plate - HEAD 1
-s(193277)/i(207151),	-- Plate - HEAD 1
-s(193278)/i(207151),	-- Plate - HEAD 1
-s(193279)/i(207151),	-- Plate - HEAD 1
-s(193280)/i(207151),	-- Plate - HEAD 1
-s(193283)/i(207155),	-- Plate - HAND 1
-s(193284)/i(207155),	-- Plate - HAND 1
-s(193285)/i(207155),	-- Plate - HAND 1
-s(193288)/i(207155),	-- Plate - HAND 1
-s(193289)/i(207155),	-- Plate - HAND 1
-s(193290)/i(207155),	-- Plate - HAND 1
-s(193291)/i(207155),	-- Plate - HAND 1
+s(193272)/i(207151),	-- Emerald Guardian's Casque \\ Plate - HEAD 1
+s(193273)/i(207151),	-- Emerald Guardian's Casque \\ Plate - HEAD 1
+s(193274)/i(207151),	-- Emerald Guardian's Casque \\ Plate - HEAD 1
+s(193277)/i(207151),	-- Emerald Guardian's Casque \\ Plate - HEAD 1
+s(193278)/i(207151),	-- Emerald Guardian's Casque \\ Plate - HEAD 1
+s(193279)/i(207151),	-- Emerald Guardian's Casque \\ Plate - HEAD 1
+s(193280)/i(207151),	-- Emerald Guardian's Casque \\ Plate - HEAD 1
+s(193283)/i(207155),	-- Eldermoss Gauntlets \\ Plate - HAND 1
+s(193284)/i(207155),	-- Eldermoss Gauntlets \\ Plate - HAND 1
+s(193285)/i(207155),	-- Eldermoss Gauntlets \\ Plate - HAND 1
+s(193288)/i(207155),	-- Eldermoss Gauntlets \\ Plate - HAND 1
+s(193289)/i(207155),	-- Eldermoss Gauntlets \\ Plate - HAND 1
+s(193290)/i(207155),	-- Eldermoss Gauntlets \\ Plate - HAND 1
+s(193291)/i(207155),	-- Eldermoss Gauntlets \\ Plate - HAND 1
 s(193294)/i(207157),	-- Plate - WAIST 2
 s(193295)/i(207157),	-- Plate - WAIST 2
 s(193296)/i(207157),	-- Plate - WAIST 2
@@ -68165,13 +68167,13 @@ s(193312)/i(208427),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate 
 s(193313)/i(208427),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - FEET 3
 s(193314)/i(208427),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - FEET 3
 s(193315)/i(208427),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - FEET 3
-s(193316)/i(207140),	-- Mail - SHOULDER 1
-s(193317)/i(207140),	-- Mail - SHOULDER 1
-s(193318)/i(207140),	-- Mail - SHOULDER 1
-s(193319)/i(207140),	-- Mail - SHOULDER 1
-s(193320)/i(207140),	-- Mail - SHOULDER 1
-s(193321)/i(207140),	-- Mail - SHOULDER 1
-s(193322)/i(207140),	-- Mail - SHOULDER 1
+s(193316)/i(207140),	-- Drakestalker's Trophy Pauldrons \\ Mail - SHOULDER 1
+s(193317)/i(207140),	-- Drakestalker's Trophy Pauldrons \\ Mail - SHOULDER 1
+s(193318)/i(207140),	-- Drakestalker's Trophy Pauldrons \\ Mail - SHOULDER 1
+s(193319)/i(207140),	-- Drakestalker's Trophy Pauldrons \\ Mail - SHOULDER 1
+s(193320)/i(207140),	-- Drakestalker's Trophy Pauldrons \\ Mail - SHOULDER 1
+s(193321)/i(207140),	-- Drakestalker's Trophy Pauldrons \\ Mail - SHOULDER 1
+s(193322)/i(207140),	-- Drakestalker's Trophy Pauldrons \\ Mail - SHOULDER 1
 s(193323)/i(207145),	-- Mail - FEET 2
 s(193324)/i(207145),	-- Mail - FEET 2
 s(193325)/i(207145),	-- Mail - FEET 2
@@ -68179,13 +68181,13 @@ s(193326)/i(207145),	-- Mail - FEET 2
 s(193327)/i(207145),	-- Mail - FEET 2
 s(193328)/i(207145),	-- Mail - FEET 2
 s(193329)/i(207145),	-- Mail - FEET 2
-s(193330)/i(207146),	-- Mail - WAIST 2
-s(193331)/i(207146),	-- Mail - WAIST 2
-s(193332)/i(207146),	-- Mail - WAIST 2
-s(193333)/i(207146),	-- Mail - WAIST 2
-s(193334)/i(207146),	-- Mail - WAIST 2
-s(193335)/i(207146),	-- Mail - WAIST 2
-s(193336)/i(207146),	-- Mail - WAIST 2
+s(193330)/i(207146),	-- Jeweled Sash of the Viper \\ Mail - WAIST 2
+s(193331)/i(207146),	-- Jeweled Sash of the Viper \\ Mail - WAIST 2
+s(193332)/i(207146),	-- Jeweled Sash of the Viper \\ Mail - WAIST 2
+s(193333)/i(207146),	-- Jeweled Sash of the Viper \\ Mail - WAIST 2
+s(193334)/i(207146),	-- Jeweled Sash of the Viper \\ Mail - WAIST 2
+s(193335)/i(207146),	-- Jeweled Sash of the Viper \\ Mail - WAIST 2
+s(193336)/i(207146),	-- Jeweled Sash of the Viper \\ Mail - WAIST 2
 s(193337)/i(207213),	-- 10.2 Raid - Emerald Dream - Class Sets - Hunter - Armor - Generic - Cloak
 s(193338)/i(207213),	-- 10.2 Raid - Emerald Dream - Class Sets - Hunter - Armor - Generic - Cloak
 s(193339)/i(207213),	-- 10.2 Raid - Emerald Dream - Class Sets - Hunter - Armor - Generic - Cloak
@@ -68249,13 +68251,13 @@ s(193396)/i(207221),	-- 10.2 Raid - Emerald Dream - Class Sets - Hunter - Armor 
 s(193397)/i(207221),	-- 10.2 Raid - Emerald Dream - Class Sets - Hunter - Armor - Mail - Chest
 s(193398)/i(207221),	-- 10.2 Raid - Emerald Dream - Class Sets - Hunter - Armor - Mail - Chest
 s(193399)/i(207221),	-- 10.2 Raid - Emerald Dream - Class Sets - Hunter - Armor - Mail - Chest
-s(193400)/i(210203),	-- Mail - WRIST 2
-s(193401)/i(210203),	-- Mail - WRIST 2
-s(193402)/i(210203),	-- Mail - WRIST 2
-s(193403)/i(210203),	-- Mail - WRIST 2
-s(193404)/i(210203),	-- Mail - WRIST 2
-s(193405)/i(210203),	-- Mail - WRIST 2
-s(193406)/i(210203),	-- Mail - WRIST 2
+s(193400)/i(210203),	-- Wellspring Wristlet \\ Mail - WRIST 2
+s(193401)/i(210203),	-- Wellspring Wristlet \\ Mail - WRIST 2
+s(193402)/i(210203),	-- Wellspring Wristlet \\ Mail - WRIST 2
+s(193403)/i(210203),	-- Wellspring Wristlet \\ Mail - WRIST 2
+s(193404)/i(210203),	-- Wellspring Wristlet \\ Mail - WRIST 2
+s(193405)/i(210203),	-- Wellspring Wristlet \\ Mail - WRIST 2
+s(193406)/i(210203),	-- Wellspring Wristlet \\ Mail - WRIST 2
 s(193407)/i(207137),	-- Mail - HAND 1
 s(193408)/i(207137),	-- Mail - HAND 1
 s(193409)/i(207137),	-- Mail - HAND 1
@@ -68267,28 +68269,28 @@ s(193414)/i(207137),	-- Mail - HAND 1
 s(193415)/i(207137),	-- Mail - HAND 1
 s(193416)/i(207137),	-- Mail - HAND 1
 s(193417)/i(207137),	-- Mail - HAND 1
-s(193418)/i(207142),	-- Mail - CHEST 1
-s(193419)/i(207142),	-- Mail - CHEST 1
-s(193420)/i(207142),	-- Mail - CHEST 1
-s(193421)/i(207142),	-- Mail - CHEST 1
-s(193422)/i(207142),	-- Mail - CHEST 1
-s(193423)/i(207142),	-- Mail - CHEST 1
-s(193424)/i(207142),	-- Mail - CHEST 1
-s(193425)/i(207142),	-- Mail - CHEST 1
-s(193426)/i(207142),	-- Mail - CHEST 1
-s(193427)/i(207142),	-- Mail - CHEST 1
-s(193428)/i(207142),	-- Mail - CHEST 1
-s(193429)/i(207143),	-- Mail - WRIST 1
-s(193430)/i(207143),	-- Mail - WRIST 1
-s(193431)/i(207143),	-- Mail - WRIST 1
-s(193432)/i(207143),	-- Mail - WRIST 1
-s(193433)/i(207143),	-- Mail - WRIST 1
-s(193434)/i(207143),	-- Mail - WRIST 1
-s(193435)/i(207143),	-- Mail - WRIST 1
-s(193436)/i(207143),	-- Mail - WRIST 1
-s(193437)/i(207143),	-- Mail - WRIST 1
-s(193438)/i(207143),	-- Mail - WRIST 1
-s(193439)/i(207143),	-- Mail - WRIST 1
+s(193418)/i(207142),	-- Ancient Haubark \\ Mail - CHEST 1
+s(193419)/i(207142),	-- Ancient Haubark \\ Mail - CHEST 1
+s(193420)/i(207142),	-- Ancient Haubark \\ Mail - CHEST 1
+s(193421)/i(207142),	-- Ancient Haubark \\ Mail - CHEST 1
+s(193422)/i(207142),	-- Ancient Haubark \\ Mail - CHEST 1
+s(193423)/i(207142),	-- Ancient Haubark \\ Mail - CHEST 1
+s(193424)/i(207142),	-- Ancient Haubark \\ Mail - CHEST 1
+s(193425)/i(207142),	-- Ancient Haubark \\ Mail - CHEST 1
+s(193426)/i(207142),	-- Ancient Haubark \\ Mail - CHEST 1
+s(193427)/i(207142),	-- Ancient Haubark \\ Mail - CHEST 1
+s(193428)/i(207142),	-- Ancient Haubark \\ Mail - CHEST 1
+s(193429)/i(207143),	-- Twisted Flamecuffs \\ Mail - WRIST 1
+s(193430)/i(207143),	-- Twisted Flamecuffs \\ Mail - WRIST 1
+s(193431)/i(207143),	-- Twisted Flamecuffs \\ Mail - WRIST 1
+s(193432)/i(207143),	-- Twisted Flamecuffs \\ Mail - WRIST 1
+s(193433)/i(207143),	-- Twisted Flamecuffs \\ Mail - WRIST 1
+s(193434)/i(207143),	-- Twisted Flamecuffs \\ Mail - WRIST 1
+s(193435)/i(207143),	-- Twisted Flamecuffs \\ Mail - WRIST 1
+s(193436)/i(207143),	-- Twisted Flamecuffs \\ Mail - WRIST 1
+s(193437)/i(207143),	-- Twisted Flamecuffs \\ Mail - WRIST 1
+s(193438)/i(207143),	-- Twisted Flamecuffs \\ Mail - WRIST 1
+s(193439)/i(207143),	-- Twisted Flamecuffs \\ Mail - WRIST 1
 s(193440)/i(208428),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail - SHOULDER 2
 s(193441)/i(208428),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail - SHOULDER 2
 s(193442)/i(208428),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail - SHOULDER 2
@@ -68307,34 +68309,34 @@ s(193456)/i(208434),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail -
 s(193457)/i(208434),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail - FEET 3
 s(193458)/i(208434),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail - FEET 3
 s(193459)/i(208434),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail - FEET 3
-s(193462)/i(207138),	-- Mail - LEGS 1
-s(193463)/i(207138),	-- Mail - LEGS 1
-s(193464)/i(207138),	-- Mail - LEGS 1
-s(193465)/i(207138),	-- Mail - LEGS 1
-s(193466)/i(207138),	-- Mail - LEGS 1
-s(193467)/i(207138),	-- Mail - LEGS 1
-s(193468)/i(207138),	-- Mail - LEGS 1
-s(193469)/i(207139),	-- Mail - FEET 1
-s(193470)/i(207139),	-- Mail - FEET 1
-s(193471)/i(207139),	-- Mail - FEET 1
-s(193472)/i(207139),	-- Mail - FEET 1
-s(193473)/i(207139),	-- Mail - FEET 1
-s(193474)/i(207139),	-- Mail - FEET 1
-s(193475)/i(207139),	-- Mail - FEET 1
-s(193476)/i(207141),	-- Mail - HEAD 1
-s(193477)/i(207141),	-- Mail - HEAD 1
-s(193478)/i(207141),	-- Mail - HEAD 1
-s(193479)/i(207141),	-- Mail - HEAD 1
-s(193480)/i(207141),	-- Mail - HEAD 1
-s(193481)/i(207141),	-- Mail - HEAD 1
-s(193482)/i(207141),	-- Mail - HEAD 1
-s(193483)/i(207144),	-- Mail - WAIST 1
-s(193484)/i(207144),	-- Mail - WAIST 1
-s(193485)/i(207144),	-- Mail - WAIST 1
-s(193486)/i(207144),	-- Mail - WAIST 1
-s(193487)/i(207144),	-- Mail - WAIST 1
-s(193488)/i(207144),	-- Mail - WAIST 1
-s(193489)/i(207144),	-- Mail - WAIST 1
+s(193462)/i(207138),	-- Aerwynn's Ritual Sarong \\ Mail - LEGS 1
+s(193463)/i(207138),	-- Aerwynn's Ritual Sarong \\ Mail - LEGS 1
+s(193464)/i(207138),	-- Aerwynn's Ritual Sarong \\ Mail - LEGS 1
+s(193465)/i(207138),	-- Aerwynn's Ritual Sarong \\ Mail - LEGS 1
+s(193466)/i(207138),	-- Aerwynn's Ritual Sarong \\ Mail - LEGS 1
+s(193467)/i(207138),	-- Aerwynn's Ritual Sarong \\ Mail - LEGS 1
+s(193468)/i(207138),	-- Aerwynn's Ritual Sarong \\ Mail - LEGS 1
+s(193469)/i(207139),	-- Cleats of the Savage Claw \\ Mail - FEET 1
+s(193470)/i(207139),	-- Cleats of the Savage Claw \\ Mail - FEET 1
+s(193471)/i(207139),	-- Cleats of the Savage Claw \\ Mail - FEET 1
+s(193472)/i(207139),	-- Cleats of the Savage Claw \\ Mail - FEET 1
+s(193473)/i(207139),	-- Cleats of the Savage Claw \\ Mail - FEET 1
+s(193474)/i(207139),	-- Cleats of the Savage Claw \\ Mail - FEET 1
+s(193475)/i(207139),	-- Cleats of the Savage Claw \\ Mail - FEET 1
+s(193476)/i(207141),	-- Snake Eater's Cowl \\ Mail - HEAD 1
+s(193477)/i(207141),	-- Snake Eater's Cowl \\ Mail - HEAD 1
+s(193478)/i(207141),	-- Snake Eater's Cowl \\ Mail - HEAD 1
+s(193479)/i(207141),	-- Snake Eater's Cowl \\ Mail - HEAD 1
+s(193480)/i(207141),	-- Snake Eater's Cowl \\ Mail - HEAD 1
+s(193481)/i(207141),	-- Snake Eater's Cowl \\ Mail - HEAD 1
+s(193482)/i(207141),	-- Snake Eater's Cowl \\ Mail - HEAD 1
+s(193483)/i(207144),	-- Rootclasp of the Broken \\ Mail - WAIST 1
+s(193484)/i(207144),	-- Rootclasp of the Broken \\ Mail - WAIST 1
+s(193485)/i(207144),	-- Rootclasp of the Broken \\ Mail - WAIST 1
+s(193486)/i(207144),	-- Rootclasp of the Broken \\ Mail - WAIST 1
+s(193487)/i(207144),	-- Rootclasp of the Broken \\ Mail - WAIST 1
+s(193488)/i(207144),	-- Rootclasp of the Broken \\ Mail - WAIST 1
+s(193489)/i(207144),	-- Rootclasp of the Broken \\ Mail - WAIST 1
 s(193490)/i(207161),	-- Accessory - CLOAK 2
 s(193491)/i(207161),	-- Accessory - CLOAK 2
 s(193492)/i(207161),	-- Accessory - CLOAK 2
@@ -68342,34 +68344,34 @@ s(193493)/i(207161),	-- Accessory - CLOAK 2
 s(193494)/i(207161),	-- Accessory - CLOAK 2
 s(193495)/i(207161),	-- Accessory - CLOAK 2
 s(193496)/i(207161),	-- Accessory - CLOAK 2
-s(193497)/i(207160),	-- Accessory - CLOAK 1
-s(193498)/i(207160),	-- Accessory - CLOAK 1
-s(193499)/i(207160),	-- Accessory - CLOAK 1
-s(193500)/i(207160),	-- Accessory - CLOAK 1
-s(193501)/i(207160),	-- Accessory - CLOAK 1
-s(193502)/i(207160),	-- Accessory - CLOAK 1
-s(193503)/i(207160),	-- Accessory - CLOAK 1
-s(193504)/i(207116),	-- Cloth - HEAD 1
-s(193505)/i(207116),	-- Cloth - HEAD 1
-s(193506)/i(207116),	-- Cloth - HEAD 1
-s(193507)/i(207116),	-- Cloth - HEAD 1
-s(193508)/i(207116),	-- Cloth - HEAD 1
-s(193509)/i(207116),	-- Cloth - HEAD 1
-s(193510)/i(207116),	-- Cloth - HEAD 1
-s(193511)/i(207119),	-- Cloth - WAIST 1
-s(193512)/i(207119),	-- Cloth - WAIST 1
-s(193513)/i(207119),	-- Cloth - WAIST 1
-s(193514)/i(207119),	-- Cloth - WAIST 1
-s(193515)/i(207119),	-- Cloth - WAIST 1
-s(193516)/i(207119),	-- Cloth - WAIST 1
-s(193517)/i(207119),	-- Cloth - WAIST 1
-s(193518)/i(207122),	-- Cloth - FEET 1
-s(193519)/i(207122),	-- Cloth - FEET 1
-s(193520)/i(207122),	-- Cloth - FEET 1
-s(193521)/i(207122),	-- Cloth - FEET 1
-s(193522)/i(207122),	-- Cloth - FEET 1
-s(193523)/i(207122),	-- Cloth - FEET 1
-s(193524)/i(207122),	-- Cloth - FEET 1
+s(193497)/i(207160),	-- Inflammable Drapeleaf \\ Accessory - CLOAK 1
+s(193498)/i(207160),	-- Inflammable Drapeleaf \\ Accessory - CLOAK 1
+s(193499)/i(207160),	-- Inflammable Drapeleaf \\ Accessory - CLOAK 1
+s(193500)/i(207160),	-- Inflammable Drapeleaf \\ Accessory - CLOAK 1
+s(193501)/i(207160),	-- Inflammable Drapeleaf \\ Accessory - CLOAK 1
+s(193502)/i(207160),	-- Inflammable Drapeleaf \\ Accessory - CLOAK 1
+s(193503)/i(207160),	-- Inflammable Drapeleaf \\ Accessory - CLOAK 1
+s(193504)/i(207116),	-- Lost Scholar's Timely Hat \\ Cloth - HEAD 1
+s(193505)/i(207116),	-- Lost Scholar's Timely Hat \\ Cloth - HEAD 1
+s(193506)/i(207116),	-- Lost Scholar's Timely Hat \\ Cloth - HEAD 1
+s(193507)/i(207116),	-- Lost Scholar's Timely Hat \\ Cloth - HEAD 1
+s(193508)/i(207116),	-- Lost Scholar's Timely Hat \\ Cloth - HEAD 1
+s(193509)/i(207116),	-- Lost Scholar's Timely Hat \\ Cloth - HEAD 1
+s(193510)/i(207116),	-- Lost Scholar's Timely Hat \\ Cloth - HEAD 1
+s(193511)/i(207119),	-- Urctos's Hibernal Dial \\ Cloth - WAIST 1
+s(193512)/i(207119),	-- Urctos's Hibernal Dial \\ Cloth - WAIST 1
+s(193513)/i(207119),	-- Urctos's Hibernal Dial \\ Cloth - WAIST 1
+s(193514)/i(207119),	-- Urctos's Hibernal Dial \\ Cloth - WAIST 1
+s(193515)/i(207119),	-- Urctos's Hibernal Dial \\ Cloth - WAIST 1
+s(193516)/i(207119),	-- Urctos's Hibernal Dial \\ Cloth - WAIST 1
+s(193517)/i(207119),	-- Urctos's Hibernal Dial \\ Cloth - WAIST 1
+s(193518)/i(207122),	-- Lost Scholar's Belted Treads \\ Cloth - FEET 1
+s(193519)/i(207122),	-- Lost Scholar's Belted Treads \\ Cloth - FEET 1
+s(193520)/i(207122),	-- Lost Scholar's Belted Treads \\ Cloth - FEET 1
+s(193521)/i(207122),	-- Lost Scholar's Belted Treads \\ Cloth - FEET 1
+s(193522)/i(207122),	-- Lost Scholar's Belted Treads \\ Cloth - FEET 1
+s(193523)/i(207122),	-- Lost Scholar's Belted Treads \\ Cloth - FEET 1
+s(193524)/i(207122),	-- Lost Scholar's Belted Treads \\ Cloth - FEET 1
 s(193525)/i(208431),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Cloth - SHOULDER 2
 s(193526)/i(208431),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Cloth - SHOULDER 2
 s(193527)/i(208431),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Cloth - SHOULDER 2
@@ -68377,27 +68379,27 @@ s(193528)/i(208431),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Cloth 
 s(193529)/i(208431),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Cloth - SHOULDER 2
 s(193530)/i(208431),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Cloth - SHOULDER 2
 s(193531)/i(208431),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Cloth - SHOULDER 2
-s(193532)/i(207117),	-- Cloth - SHOULDER 1
-s(193533)/i(207117),	-- Cloth - SHOULDER 1
-s(193534)/i(207117),	-- Cloth - SHOULDER 1
-s(193535)/i(207117),	-- Cloth - SHOULDER 1
-s(193536)/i(207117),	-- Cloth - SHOULDER 1
-s(193537)/i(207117),	-- Cloth - SHOULDER 1
-s(193538)/i(207117),	-- Cloth - SHOULDER 1
-s(193539)/i(207118),	-- Cloth - LEGS 1
-s(193540)/i(207118),	-- Cloth - LEGS 1
-s(193541)/i(207118),	-- Cloth - LEGS 1
-s(193542)/i(207118),	-- Cloth - LEGS 1
-s(193543)/i(207118),	-- Cloth - LEGS 1
-s(193544)/i(207118),	-- Cloth - LEGS 1
-s(193545)/i(207118),	-- Cloth - LEGS 1
-s(193546)/i(207123),	-- Cloth - FEET 2
-s(193547)/i(207123),	-- Cloth - FEET 2
-s(193548)/i(207123),	-- Cloth - FEET 2
-s(193549)/i(207123),	-- Cloth - FEET 2
-s(193550)/i(207123),	-- Cloth - FEET 2
-s(193551)/i(207123),	-- Cloth - FEET 2
-s(193552)/i(207123),	-- Cloth - FEET 2
+s(193532)/i(207117),	-- Requiem Rootmantle \\ Cloth - SHOULDER 1
+s(193533)/i(207117),	-- Requiem Rootmantle \\ Cloth - SHOULDER 1
+s(193534)/i(207117),	-- Requiem Rootmantle \\ Cloth - SHOULDER 1
+s(193535)/i(207117),	-- Requiem Rootmantle \\ Cloth - SHOULDER 1
+s(193536)/i(207117),	-- Requiem Rootmantle \\ Cloth - SHOULDER 1
+s(193537)/i(207117),	-- Requiem Rootmantle \\ Cloth - SHOULDER 1
+s(193538)/i(207117),	-- Requiem Rootmantle \\ Cloth - SHOULDER 1
+s(193539)/i(207118),	-- Elder's Volcanic Wrap \\ Cloth - LEGS 1
+s(193540)/i(207118),	-- Elder's Volcanic Wrap \\ Cloth - LEGS 1
+s(193541)/i(207118),	-- Elder's Volcanic Wrap \\ Cloth - LEGS 1
+s(193542)/i(207118),	-- Elder's Volcanic Wrap \\ Cloth - LEGS 1
+s(193543)/i(207118),	-- Elder's Volcanic Wrap \\ Cloth - LEGS 1
+s(193544)/i(207118),	-- Elder's Volcanic Wrap \\ Cloth - LEGS 1
+s(193545)/i(207118),	-- Elder's Volcanic Wrap \\ Cloth - LEGS 1
+s(193546)/i(207123),	-- Lifewoven Slippers \\ Cloth - FEET 2
+s(193547)/i(207123),	-- Lifewoven Slippers \\ Cloth - FEET 2
+s(193548)/i(207123),	-- Lifewoven Slippers \\ Cloth - FEET 2
+s(193549)/i(207123),	-- Lifewoven Slippers \\ Cloth - FEET 2
+s(193550)/i(207123),	-- Lifewoven Slippers \\ Cloth - FEET 2
+s(193551)/i(207123),	-- Lifewoven Slippers \\ Cloth - FEET 2
+s(193552)/i(207123),	-- Lifewoven Slippers \\ Cloth - FEET 2
 s(193553)/i(207124),	-- Cloth - WAIST 2
 s(193554)/i(207124),	-- Cloth - WAIST 2
 s(193555)/i(207124),	-- Cloth - WAIST 2
@@ -68412,13 +68414,13 @@ s(193563)/i(207115),	-- Cloth - HAND 1
 s(193564)/i(207115),	-- Cloth - HAND 1
 s(193565)/i(207115),	-- Cloth - HAND 1
 s(193566)/i(207115),	-- Cloth - HAND 1
-s(193567)/i(207121),	-- Cloth - CHEST 1
-s(193568)/i(207121),	-- Cloth - CHEST 1
-s(193569)/i(207121),	-- Cloth - CHEST 1
-s(193570)/i(207121),	-- Cloth - CHEST 1
-s(193571)/i(207121),	-- Cloth - CHEST 1
-s(193572)/i(207121),	-- Cloth - CHEST 1
-s(193573)/i(207121),	-- Cloth - CHEST 1
+s(193567)/i(207121),	-- Vesture of the Smoldering Serpent \\ Cloth - CHEST 1
+s(193568)/i(207121),	-- Vesture of the Smoldering Serpent \\ Cloth - CHEST 1
+s(193569)/i(207121),	-- Vesture of the Smoldering Serpent \\ Cloth - CHEST 1
+s(193570)/i(207121),	-- Vesture of the Smoldering Serpent \\ Cloth - CHEST 1
+s(193571)/i(207121),	-- Vesture of the Smoldering Serpent \\ Cloth - CHEST 1
+s(193572)/i(207121),	-- Vesture of the Smoldering Serpent \\ Cloth - CHEST 1
+s(193573)/i(207121),	-- Vesture of the Smoldering Serpent \\ Cloth - CHEST 1
 s(193574)/i(208430),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Cloth - WAIST 3
 s(193575)/i(208430),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Cloth - WAIST 3
 s(193576)/i(208430),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Cloth - WAIST 3
@@ -68526,3 +68528,33 @@ s(193785)/i(207221),	-- 10.2 Raid - Emerald Dream - Class Sets - Hunter - Armor 
 s(193793)/i(210787),	-- Elegant Green Dragon Tabard
 s(193794)/i(210788),	-- Elegant Green Dragon Shawl
 s(193795)/i(210789),	-- Elegant Green Dragon Epaulettes
+10.2.0.51425
+s(193800)/i(210843),	-- Candied Blade
+s(193801)/i(210844),	-- Trader's Crimson Sarong
+s(193802)/i(210846),	-- Trader's Lively Sarong
+s(193803)/i(210848),	-- Trader's Midnight Sarong
+s(193804)/i(210849),	-- Trader's Azure Sarong
+s(193805)/i(210850),	-- Trader's Sepia Sarong
+s(193806)/i(210851),	-- Trader's Grassy Sarong
+s(193807)/i(210852),	-- Trader's Cloudy Sarong
+s(193808)/i(210853),	-- Trader's Deep Sarong
+s(193809)/i(210854),	-- Trader's Camo Sarong
+s(193810)/i(210855),	-- Trader's Lively Sarong
+s(193811)/i(210856),	-- Trader's Faded Sarong
+s(193812)/i(210857),	-- Trader's Carrot Sarong
+s(193813)/i(210858),	-- Trader's Rosy Sarong
+s(193814)/i(210859),	-- Trader's Plum Sarong
+s(193815)/i(210860),	-- Trader's Violet Sarong
+s(193816)/i(210861),	-- Trader's Aquatic Sarong
+s(193817)/i(210862),	-- Trader's Snowy Sarong
+s(193818)/i(210863),	-- Trader's Sunny Sarong
+s(193819)/i(210865),	-- Blademaster's Crimson Stones
+s(193820)/i(210866),	-- Blademaster's Suntouched Stones
+s(193821)/i(210867),	-- Blademaster's Lively Stones
+s(193822)/i(210868),	-- Blademaster's Violet Stones
+s(193823)/i(210869),	-- Blademaster's Azure Stones
+s(193861)/i(210961),	-- Alara'shinu
+s(193862)/i(210962),	--
+s(193863)/i(210962),	--
+s(193864)/i(210962),	--
+s(193865)/i(210962),	--

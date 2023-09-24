@@ -9,6 +9,7 @@ r(2337),	-- Lesser Healing Potion
 r(3101),	-- Alchemy
 r(3170),	-- Weak Troll's Blood Elixir \\ Weak Troll's Blood Potion
 r(3171),	-- Elixir of Wisdom
+r(3172),	-- Minor Magic Resistance Potion
 r(3173),	-- Lesser Mana Potion
 r(3176),	-- Strong Troll's Blood Elixir \\ Strong Troll's Blood Potion
 r(3177),	-- Elixir of Defense
@@ -29,6 +30,7 @@ r(11448),	-- Greater Mana Potion
 r(11449),	-- Elixir of Agility
 r(11450),	-- Elixir of Greater Defense
 r(11451),	-- Oil of Immolation
+r(11453),	-- Magic Resistance Potion
 r(11457),	-- Superior Healing Potion
 r(11460),	-- Elixir of Detect Undead
 r(11461),	-- Arcane Elixir
@@ -397,6 +399,3 @@ r(156589),	-- Alchemical Catalyst - Flytrap
 r(156590),	-- Alchemical Catalyst - Starflower
 r(156592),	-- Alchemical Catalyst - Orchid
 r(156593),	-- Alchemical Catalyst - Lotus
-10.2.0.51239
-r(415628),	-- Dreamwalker's Healing Potion
-r(415810),	-- Potion of Withering Dreams
