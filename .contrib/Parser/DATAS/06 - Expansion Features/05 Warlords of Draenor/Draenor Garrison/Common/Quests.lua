@@ -2586,6 +2586,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 78466 },	-- Gazlowe
 				["sourceQuests"] = { 34765 },	-- The Den of Skog
+				["isBreadcrumb"] = true,
 				["g"] = {
 					i(110560),	-- Garrison Hearthstone (TOY!)
 				},
