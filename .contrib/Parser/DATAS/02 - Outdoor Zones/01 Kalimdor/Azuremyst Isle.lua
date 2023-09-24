@@ -1121,7 +1121,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(7, 7, 1),
 					["groups"] = {
 						objective(1, {	-- 0/5 Stillpine Grain
-							["provider"] = { "i", 23849 },	-- Stillpine Grain
+							["providers"] = {
+								{ "i",  23849 },	-- Stillpine Grain
+								{ "o", 181757 },	-- Stillpine Grain
+							},
 							["crs"] = {
 								17475,	-- Murgurgula
 								17192,	-- Siltfin Hunter

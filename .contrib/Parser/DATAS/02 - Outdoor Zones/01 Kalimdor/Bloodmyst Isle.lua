@@ -110,7 +110,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(9, 9, 1),
 					["groups"] = {
 						objective(1, {	-- 0/10 Sand Pear
-							["provider"] = { "i", 23927 },	-- Sand Pear
+							["providers"] = {
+								{ "i",  23927 },	-- Sand Pear
+								{ "o", 181854 },	-- Sand Pear
+							},
 						}),
 						i(26018),	-- Elekk Handler's Leathers
 						i(26031),	-- Elekk Rider's Plate
@@ -506,7 +509,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(15, 15, 1),
 					["groups"] = {
 						objective(1, {	-- Atoph the Bloodcursed slain
-							["provider"] = { "n", 17715 },	-- Atoph the Bloodcursed
+							["providers"] = {
+								{ "n",  17715 },	-- Atoph the Bloodcursed
+								{ "o", 181964 },	-- Statue of Queen Azshara
+							},
 							["coord"] = { 86, 54.8, BLOODMYST_ISLE },
 						}),
 						i(24334),	-- Wheel of the Lost Hope
@@ -670,7 +676,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(13, 13, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Nazzivus Monument Glyph
-							["provider"] = { "i", 23859 },	-- Nazzivus Monument Glyph
+							["providers"] = {
+								{ "i",  23859 },	-- Nazzivus Monument Glyph
+								{ "o", 182532 },	-- Nazzivus Monument Glyphs
+							},
 							["coord"] = { 36.5, 71.2, BLOODMYST_ISLE },
 						}),
 					},
@@ -682,7 +691,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Impact Site Crystal Sample
-							["provider"] = { "i", 23878 },	-- Impact Site Crystal Sample
+							["providers"] = {
+								{ "i",  23878 },	-- Impact Site Crystal Sample
+								{ "o", 181779 },	-- Impact Site Crystal
+							},
 							["coord"] = { 58, 83, BLOODMYST_ISLE },
 							["cost"] = { { "i", 23875, 1 } },	-- Crystal Mining Pick
 						}),
@@ -716,22 +728,34 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Aquatic Stinkhorn
-							["provider"] = { "i", 24041 },	-- Aquatic Stinkhorn
+							["providers"] = {
+								{ "i",  24041 },	-- Aquatic Stinkhorn
+								{ "o", 181892 },	-- Aquatic Stinkhorn
+							},
 							["cr"] = 17673,	-- Stinkhorn Striker
 						}),
 						objective(2, {	-- 0/1 Blood Mushroom
-							["provider"] = { "i", 24040 },	-- Blood Mushroom
+							["providers"] = {
+								{ "i",  24040 },	-- Blood Mushroom
+								{ "o", 181891 },	-- Blood Mushroom
+							},
 							["coord"] = { 62.8, 59.2, BLOODMYST_ISLE },
 						}),
 						objective(3, {	-- 0/1 Ruinous Polyspore
-							["provider"] = { "i", 24042 },	-- Ruinous Polyspore
+							["providers"] = {
+								{ "i",  24042 },	-- Ruinous Polyspore
+								{ "o", 181893 },	-- Ruinous Polyspore
+							},
 							["coords"] = {
 								{ 61.8, 48.7, BLOODMYST_ISLE },
 								{ 67.8, 66.9, BLOODMYST_ISLE },
 							},
 						}),
 						objective(4, {	-- 0/1 Fel Cone Fungus
-							["provider"] = { "i", 24043 },	-- Fel Cone Fungus
+							["providers"] = {
+								{ "i",  24043 },	-- Fel Cone Fungus
+								{ "o", 181894 },	-- Fel Cone Fungus
+							},
 							["coord"] = { 43.5, 81.7, BLOODMYST_ISLE },
 						}),
 						i(26028),	-- Maatparm's Fungus Lined Bands
@@ -884,7 +908,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(15, 15, 1),
 					["groups"] = {
 						objective(1, {	-- 0/8 Dragon Bone
-							["provider"] = { "i", 24185 },	-- Dragon Bone
+							["providers"] = {
+								{ "i",  24185 },	-- Dragon Bone
+								{ "o", 181981 },	-- Dragon Bone
+							},
 						}),
 					},
 				}),
@@ -1256,7 +1283,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(15, 15, 1),
 					["groups"] = {
 						objective(1, {	-- 0/2 Ysera's Tear
-							["provider"] = { "i", 24049 },	-- Ysera's Tear
+							["providers"] = {
+								{ "i",  24049 },	-- Ysera's Tear
+								{ "o", 181897 },	-- Ysera's Tear
+							},
 							["coord"] = { 70.0, 26.3, BLOODMYST_ISLE },
 						}),
 						-- #if AFTER LEGION
