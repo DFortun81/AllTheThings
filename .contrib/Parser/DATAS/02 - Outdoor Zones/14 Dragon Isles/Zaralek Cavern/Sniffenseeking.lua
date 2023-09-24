@@ -26,22 +26,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["provider"] = { "i", 205151 },	-- Salverun
 					}),
 					ach(18255, {	-- Proof of Myrrit [_quests handled by AchievementDB]
-						crit(1),	-- Vertical Anomaly
-						crit(2),	-- Flapping and Screaming
-						crit(3),	-- Scratch and Sniff
-						crit(4),	-- Element Whispers
-						crit(5),	-- Successful Interventions
-						crit(6),	-- Those Rascally Worms
-						crit(7),	-- Your Weight in Gold
-						crit(8),	-- Sneak and Sniff
-						crit(9),	-- The Living Drill
-						crit(10),	-- Thieving Critters
-						crit(11),	-- Making Scents
-						crit(12),	-- Living Statue
-						crit(13),	-- Heart of Iron
-						crit(14),	-- Liars in Light
-						crit(15),	-- Frostfire Finesse
-						crit(16),	-- Liars of Spirit
+						crit(59744),	-- Vertical Anomaly
+						crit(59745),	-- Flapping and Screaming
+						crit(59746),	-- Scratch and Sniff
+						crit(59755),	-- Element Whispers
+						crit(59747),	-- Successful Interventions
+						crit(59749),	-- Those Rascally Worms
+						crit(59750),	-- Your Weight in Gold
+						crit(59751),	-- Sneak and Sniff
+						crit(59752),	-- The Living Drill
+						crit(59754),	-- Thieving Critters
+						crit(59753),	-- Making Scents
+						crit(59756),	-- Living Statue
+						crit(59757),	-- Heart of Iron
+						crit(59758),	-- Liars in Light
+						crit(59759),	-- Frostfire Finesse
+						crit(59760),	-- Liars of Spirit
 					}),
 					ach(17832, {	-- Sniffen Around
 						-- identical criteria as full achievement

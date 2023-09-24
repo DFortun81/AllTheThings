@@ -9,24 +9,24 @@ root(ROOTS.Zones, {
 				n(ACHIEVEMENTS, {	-- Achievements
 					ach(11427, {	-- No Shellfish Endeavor
 						i(143660),	-- Mrgrglhjorn (TOY!)
-						crit(1),	-- Now That's Just Clawful!
-						crit(2),	-- Oh, the Clawdacity!
-						crit(3),	-- Claws for Alarm!
+						crit(34847),	-- Now That's Just Clawful!
+						crit(34846),	-- Oh, the Clawdacity!
+						crit(34848),	-- Claws for Alarm!
 					}),
 					ach(10877, {	-- Pillars of Creation
-						crit(1, {	-- Aegis of Aggramar
+						crit(31588, {	-- Aegis of Aggramar
 							["sourceQuest"] = 43349,	-- The Aegis of Aggramar
 						}),
-						crit(2, {	-- Tidestone of Golganneth
+						crit(31589, {	-- Tidestone of Golganneth
 							["sourceQuest"] = 42213,	-- Eye of Azshara: The Tidestone of Golganneth
 						}),
-						crit(3, {	-- Eye of Aman'Thul
+						crit(36177, {	-- Eye of Aman'Thul
 							["sourceQuest"] = 45420,	-- The Nighthold: The Eye of Aman'Thul
 						}),
-						crit(4, {	-- Hammer of Khaz'goroth
+						crit(31590, {	-- Hammer of Khaz'goroth
 							["sourceQuest"] = 42454,	-- The Hammer of Khaz'goroth
 						}),
-						crit(5, {	-- Tears of Elune
+						crit(31591, {	-- Tears of Elune
 							["sourceQuest"] = 40890,	-- The Tears of Elune
 						}),
 					}),
@@ -39,9 +39,9 @@ root(ROOTS.Zones, {
 								42069,	-- Felwing
 							},
 						}),
-						crit(2),		-- Highmountain
-						crit(3),		-- Val'sharah
-						crit(4),		-- Stormheim
+						crit(32404),		-- Val'sharah
+						crit(32405),		-- Highmountain
+						crit(32406),		-- Stormheim
 					}),
 					ach(11189),		-- Variety is the Spice of Life
 				}),

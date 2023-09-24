@@ -38,19 +38,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["requireSkill"] = FISHING,
 					["groups"] = {
-						crit(1, {	-- Happy as a Clam Digger
+						crit(17754, {	-- Happy as a Clam Digger
 							["_quests"] = { 29321 },
 						}),
-						crit(2, {	-- Stocking Up
+						crit(17755, {	-- Stocking Up
 							["_quests"] = { 29323 },
 						}),
-						crit(3, {	-- The Sister's Pendant
+						crit(17756, {	-- The Sister's Pendant
 							["_quests"] = { 29324 },
 						}),
-						crit(4, {	-- A Slippery Snack
+						crit(17757, {	-- A Slippery Snack
 							["_quests"] = { 29325 },
 						}),
-						crit(5, {	-- An Old Favorite
+						crit(17758, {	-- An Old Favorite
 							["_quests"] = { 29359 },
 						}),
 					},
@@ -60,19 +60,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						crit(1, {	-- The Secret to Perfect Kimchi
+						crit(17728, {	-- The Secret to Perfect Kimchi
 							["_quests"] = { 29313 },
 						}),
-						crit(2, {	-- Remembering the Ancestors
+						crit(17729, {	-- Remembering the Ancestors
 							["_quests"] = { 29314 },
 						}),
-						crit(3, {	-- Back to Basics
+						crit(17730, {	-- Back to Basics
 							["_quests"] = { 29316 },
 						}),
-						crit(4, {	-- Ribs for the Sentinels
+						crit(17731, {	-- Ribs for the Sentinels
 							["_quests"] = { 29318 },
 						}),
-						crit(5, {	-- Spice Bread Aplenty
+						crit(17732, {	-- Spice Bread Aplenty
 							["_quests"] = { 29357 },
 						}),
 					},

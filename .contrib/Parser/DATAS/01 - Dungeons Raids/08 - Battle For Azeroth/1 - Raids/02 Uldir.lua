@@ -23,32 +23,32 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1"
 					i(163216),	-- Bloodgorged Crawg (MOUNT!)
 				}),
 				ach(12521, {	-- Halls of Containment
-                    crit(1, {    -- Taloc
+                    crit(40246, {    -- Taloc
                         ["_encounter"] = { 2168, LFR_RAID },
                     }),
-                    crit(2, {    -- MOTHER
+                    crit(40247, {    -- MOTHER
                         ["_encounter"] = { 2167, LFR_RAID },
                     }),
-                    crit(3, {    -- Zek'voz, Herald of N'zoth
+                    crit(40223, {    -- Zek'voz, Herald of N'zoth
                         ["_encounter"] = { 2169, LFR_RAID },
                     }),
                 }),
 				ach(12522, {	-- Crimson Descent
-                    crit(1, {    -- Fetid Devourer
-                        ["_encounter"] = { 2146, LFR_RAID },
-                    }),
-                    crit(2, {    -- Vectis
+                    crit(40248, {    -- Vectis
                         ["_encounter"] = { 2166, LFR_RAID },
                     }),
-                    crit(3, {    -- Zul, Reborn
+					crit(40222, {    -- Fetid Devourer
+						["_encounter"] = { 2146, LFR_RAID },
+					}),
+                    crit(40224, {    -- Zul, Reborn
                         ["_encounter"] = { 2195, LFR_RAID },
                     }),
                 }),
 				ach(12523, {	-- Heart of Corruption
-                    crit(1, {    -- Mythrax the Unraveler
+                    crit(40220, {    -- Mythrax the Unraveler
                         ["_encounter"] = { 2194, LFR_RAID },
                     }),
-                    crit(2, {    -- G'huun
+                    crit(40221, {    -- G'huun
                         ["_encounter"] = { 2147, LFR_RAID },
                     }),
                 }),
@@ -175,7 +175,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1"
 							138530,	-- Volatile Droplet
 						},
 						["g"] = {
-							crit(1, {	-- Taloc
+							crit(40246, {	-- Taloc
 								["achievementID"] = 12521,	-- Halls of Containment
 							}),
 							i(163119),	-- Khor, Hammer of the Guardian (transmog item)
@@ -200,7 +200,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1"
 							137023,	-- Chamber 03 (MOTHER)
 						},
 						["g"] = {
-							crit(2, {	-- MOTHER
+							crit(40247, {	-- MOTHER
 								["achievementID"] = 12521,	-- Halls of Containment
 							}),
 							i(160681),	-- Glaive of the Keepers
@@ -223,7 +223,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1"
 							134503,	-- Silithid Warrior
 						},
 						["g"] = {
-							crit(3, {	-- Zek'voz, Herald of N'zoth
+							crit(40223, {	-- Zek'voz, Herald of N'zoth
 								["achievementID"] = 12521,	-- Halls of Containment
 							}),
 							i(160688),	-- Void-Binder
@@ -248,7 +248,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1"
 							133492,	-- Corruption Corpuscle
 						},
 						["g"] = {
-							crit(2, {	-- Fetid Devourer
+							crit(40222, {	-- Fetid Devourer
 								["achievementID"] = 12522,	-- Crimson Descent
 							}),
 							i(160689),	-- Regurgitated Purifier's Flamestaff
@@ -264,7 +264,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1"
 					e(2166, {	-- Vectis
 						["crs"] = { 134442 },	-- Vectis
 						["g"] = {
-							crit(1, {	-- Vectis
+							crit(40248, {	-- Vectis
 								["achievementID"] = 12522,	-- Crimson Descent
 							}),
 							i(160678),	-- Bow of Virulent Infection
@@ -283,7 +283,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1"
 					e(2195, {	-- Zul, Reborn
 						["crs"] = { 138967 },	-- Zul
 						["g"] = {
-							crit(3, {	-- Zul, Reborn
+							crit(40224, {	-- Zul, Reborn
 								["achievementID"] = 12522,	-- Crimson Descent
 							}),
 							i(162422),	-- Pattern: Embroidered Deep Sea Bag (Rank 3)
@@ -304,7 +304,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1"
 					e(2194, {	-- Mythrax the Unraveler
 						["crs"] = { 134546 },	-- Mythrax the Unraveler
 						["g"] = {
-							crit(1, {	-- Mythrax the Unraveler
+							crit(40220, {	-- Mythrax the Unraveler
 								["achievementID"] = 12523,	-- Heart of Corruption
 							}),
 							i(160686),	-- Voror, Gleaming Blade of the Stalwart
@@ -326,7 +326,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1"
 							138529,	-- Dark Young
 						},
 						["g"] = {
-							crit(2, {	-- G'huun
+							crit(40221, {	-- G'huun
 								["achievementID"] = 12523,	-- Heart of Corruption
 							}),
 							i(160690),	-- Heptavium, Staff of Torturous Knowledge

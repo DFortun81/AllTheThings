@@ -226,16 +226,16 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			ach(12497, {	-- Drust Do It.
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					crit(1),	-- The Final Effigy
-					crit(2),	-- The Burden of Proof
-					crit(3),	-- An Airtight Alibi
-					crit(4),	-- The Order of Embers
-					crit(5),	-- A New Order
-					crit(6),	-- Break on Through
-					crit(7),	-- Storming the Manor
-					crit(8),	-- Clear Victory
-					crit(9),	-- Fighting With Fire
-					crit(10),	-- Stick It To 'Em!
+					crit(40168),	-- The Final Effigy
+					crit(40169),	-- The Burden of Proof
+					crit(40170),	-- An Airtight Alibi
+					crit(40171),	-- The Order of Embers
+					crit(40172),	-- A New Order
+					crit(40173),	-- Break on Through
+					crit(40174),	-- Storming the Manor
+					crit(40175),	-- Clear Victory
+					crit(40176),	-- Fighting With Fire
+					crit(40177),	-- Stick It To 'Em!
 				},
 			}),
 			ach(13064, {	-- Drust the Facts, Ma'am

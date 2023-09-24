@@ -50,11 +50,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 			}),
 			ach(13472),	-- Deep Pockets
 			ach(13473, {	-- Diversed Investments
-				crit(1),	-- Flame Turret
-				crit(2),	-- Drill Rig
-				crit(3),	-- Charging Station
-				crit(4),	-- Rustbolt Armory
-				crit(5),	-- Reclamation Rig
+				crit(44303),	-- Flame Turret
+				crit(44304),	-- Drill Rig
+				crit(44305),	-- Charging Station
+				crit(44307),	-- Rustbolt Armory
+				crit(44308),	-- Reclamation Rig
 			}),
 			explorationAch(13776),	-- Explore Mechagon
 			ach(13482),	-- Head Financier of Mechagon

@@ -68,8 +68,8 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						},
 						["groups"] = {
 							ach(4852, {	-- Double Dragon
-								crit(1),	-- Valiona and Theralion
-								crit(2, {	-- Twilight Fiends killed
+								crit(13576),	-- Valiona and Theralion
+								crit(16015, {	-- Twilight Fiends killed
 									["cr"] = 49864,	-- Twilight Fiend
 								}),
 							}),

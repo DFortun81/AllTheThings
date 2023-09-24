@@ -19,32 +19,32 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_2_0 }
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(13718, {	-- The Grand Reception
-                    crit(1, {    -- Abyssal Commander Sivara
+                    crit(45786, {    -- Abyssal Commander Sivara
                         ["_encounter"] = { 2352, LFR_RAID },
                     }),
-                    crit(2, {    -- Blackwater Behemoth
+                    crit(45787, {    -- Blackwater Behemoth
                         ["_encounter"] = { 2347, LFR_RAID },
                     }),
-                    crit(3, {    -- Radiance of Azshara
+                    crit(45788, {    -- Radiance of Azshara
                         ["_encounter"] = { 2353, LFR_RAID },
                     }),
                 }),
 				ach(13719, {	-- Depths of the Devoted
-                    crit(1, {    -- Lady Ashvane
+                    crit(45794, {    -- Lady Ashvane
                         ["_encounter"] = { 2354, LFR_RAID },
                     }),
-                    crit(2, {    -- Orgozoa
+                    crit(45795, {    -- Orgozoa
                         ["_encounter"] = { 2351, LFR_RAID },
                     }),
-                    crit(3, {    -- The Queen's Court
+                    crit(45796, {    -- The Queen's Court
                         ["_encounter"] = { 2359, LFR_RAID },
                     }),
                 }),
 				ach(13725, {	-- The Circle of Stars
-                    crit(1, {    -- Za'qul, Harbinger of Ny'alotha
+                    crit(45797, {    -- Za'qul, Harbinger of Ny'alotha
                         ["_encounter"] = { 2349, LFR_RAID },
                     }),
-                    crit(2, {    -- Queen Azshara
+                    crit(45798, {    -- Queen Azshara
                         ["_encounter"] = { 2361, LFR_RAID },
                     }),
                 }),

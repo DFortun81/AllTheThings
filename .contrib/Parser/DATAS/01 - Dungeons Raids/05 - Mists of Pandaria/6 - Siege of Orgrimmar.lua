@@ -99,52 +99,52 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(8458, {	-- Vale of Eternal Sorrows
-					crit(1, {	-- Immerseus
+					crit(23651, {	-- Immerseus
 						["_encounter"] = { 852, LFR_RAID },
 					}),
-					crit(2, {	-- The Fallen Protectors
+					crit(23653, {	-- The Fallen Protectors
 						["_encounter"] = { 849, LFR_RAID },
 					}),
-					crit(3, {	-- Norushen
+					crit(23654, {	-- Norushen
 						["_encounter"] = { 866, LFR_RAID },
 					}),
-					crit(4, {	-- Sha of Pride
+					crit(23652, {	-- Sha of Pride
 						["_encounter"] = { 867, LFR_RAID },
 					}),
 				}),
 				ach(8459, {	-- Gates of Retribution
-					crit(1, {	-- Galakras
+					crit(23655, {	-- Galakras
 						["_encounter"] = { 881, LFR_RAID },
 					}),
-					crit(2, {	-- Iron Juggernaut
+					crit(23656, {	-- Iron Juggernaut
 						["_encounter"] = { 864, LFR_RAID },
 					}),
-					crit(3, {	-- Kor'kron Dark Shaman
+					crit(23657, {	-- Kor'kron Dark Shaman
 						["_encounter"] = { 856, LFR_RAID },
 					}),
-					crit(4, {	-- General Nazgrim
+					crit(23658, {	-- General Nazgrim
 						["_encounter"] = { 850, LFR_RAID },
 					}),
 				}),
 				ach(8461, {	-- The Underhold
-					crit(1, {	-- Malkorok
+					crit(23659, {	-- Malkorok
 						["_encounter"] = { 846, LFR_RAID },
 					}),
-					crit(2, {	-- Spoils of Pandaria
+					crit(23660, {	-- Spoils of Pandaria
 						["_encounter"] = { 870, LFR_RAID },
 					}),
-					crit(3, {	-- Thok the Bloodthirsty
+					crit(23661, {	-- Thok the Bloodthirsty
 						["_encounter"] = { 851, LFR_RAID },
 					}),
 				}),
 				ach(8462, {	-- Downfall
-					crit(1, {	-- Siegecrafter Blackfuse
+					crit(23662, {	-- Siegecrafter Blackfuse
 						["_encounter"] = { 865, LFR_RAID },
 					}),
-					crit(2, {	-- Paragons of the Klaxxi
+					crit(23906, {	-- Paragons of the Klaxxi
 						["_encounter"] = { 853, LFR_RAID },
 					}),
-					crit(3, {	-- Garrosh Hellscream
+					crit(23664, {	-- Garrosh Hellscream
 						["_encounter"] = { 869, LFR_RAID },
 					}),
 				}),
@@ -1941,7 +1941,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 				}),
 				header(HEADERS.Achievement, 8458, {	-- Vale of Eternal Sorrows
 					cr(71543, e(852, {	-- Immerseus
-						crit(1, {	-- Immerseus
+						crit(23651, {	-- Immerseus
 							["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 						}),
 						i(110784),	-- Trident of Corrupted Waters
@@ -1974,7 +1974,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 							71480,	-- Sun Tenderheart [The Fallen Protectors]
 						},
 						["g"] = {
-							crit(2, {	-- Fallen Protectors
+							crit(23653, {	-- Fallen Protectors
 								["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 							}),
 							i(112477),	-- Softfoot's Last Resort
@@ -2006,7 +2006,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 							72276,	-- Amalgam of Corruption
 						},
 						["g"] = {
-							crit(3, {	-- Norushen
+							crit(23654, {	-- Norushen
 								["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 							}),
 							i(112547),	-- Norushen's Shortblade
@@ -2034,7 +2034,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 						},
 					}),
 					cr(71734, e(867, {	-- Sha of Pride
-						crit(4, {	-- Sha of Pride
+						crit(23652, {	-- Sha of Pride
 							["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 						}),
 						i(99678),	-- Chest of the Cursed Conqueror
@@ -2339,7 +2339,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					i(113229),	-- Zoid's Molten Gauntlets
 				}),
 				cr(71543, e(852, {	-- Immerseus
-					crit(1, {	-- Immerseus
+					crit(23651, {	-- Immerseus
 						["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 					}),
 					ach(8536),	-- No More Tears
@@ -2373,7 +2373,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 						71480,	-- Sun Tenderheart [The Fallen Protectors]
 					},
 					["g"] = {
-						crit(2, {	-- Fallen Protectors
+						crit(23653, {	-- Fallen Protectors
 							["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 						}),
 						ach(8528),	-- Go Long
@@ -2405,7 +2405,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 						71965,	-- Norushen
 					},
 					["g"] = {
-						crit(3, {	-- Norushen
+						crit(23654, {	-- Norushen
 							["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 						}),
 						ach(8532),	-- None Shall Pass
@@ -2434,7 +2434,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					},
 				})),
 				cr(71734, e(867, {	-- Sha of Pride
-					crit(4, {	-- Sha of Pride
+					crit(23652, {	-- Sha of Pride
 						["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 					}),
 					ach(8521),	-- Swallow Your Pride
@@ -2632,10 +2632,10 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 				})),
 				cr(71504, e(865, {	-- Siegecrafter Blackfuse
 					ach(8543, {	-- Lasers and Magnets and Drills! Oh My!
-						crit(1),	-- Deactivated Laser Turret
-						crit(2),	-- Deactivated Electromagnet
-						crit(3),	-- Deactivated Missile Turret
-						crit(4),	-- Disassembled Crawler Mines
+						crit(23772),	-- Deactivated Laser Turret
+						crit(23773),	-- Deactivated Electromagnet
+						crit(23774),	-- Deactivated Missile Turret
+						crit(23775),	-- Disassembled Crawler Mines
 					}),
 					i(104158),	-- Blackfuse Bombling (PET!)
 					i(99755),	-- Shoulders of the Cursed Conqueror

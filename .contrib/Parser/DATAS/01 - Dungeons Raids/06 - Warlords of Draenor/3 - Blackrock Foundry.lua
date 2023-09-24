@@ -12,40 +12,40 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(8989, {	-- Slagworks
-					crit(1, {	-- Oregorger
+					crit(25019, {	-- Oregorger
 						["_encounter"] = { 1202, LFR_RAID },
 					}),
-					crit(2, {	-- Gruul
+					crit(25020, {	-- Gruul
 						["_encounter"] = { 1161, LFR_RAID },
 					}),
-					crit(3, {	-- The Blast Furnace
+					crit(25021, {	-- The Blast Furnace
 						["_encounter"] = { 1154, LFR_RAID },
 					}),
 				}),
 				ach(8990, {	-- Black Forge
-					crit(1, {	-- Hans'gar and Franzok
+					crit(25022, {	-- Hans'gar and Franzok
 						["_encounter"] = { 1155, LFR_RAID },
 					}),
-					crit(2, {	-- Flamebender Ka'graz
+					crit(25023, {	-- Flamebender Ka'graz
 						["_encounter"] = { 1123, LFR_RAID },
 					}),
-					crit(3, {	-- Kromog
+					crit(25024, {	-- Kromog
 						["_encounter"] = { 1162, LFR_RAID },
 					}),
 				}),
 				ach(8991, {	-- Iron Assembly
-					crit(1, {	-- Beastlord Darmac
+					crit(25025, {	-- Beastlord Darmac
 						["_encounter"] = { 1122, LFR_RAID },
 					}),
-					crit(2, {	-- Operator Thogar
+					crit(25026, {	-- Operator Thogar
 						["_encounter"] = { 1147, LFR_RAID },
 					}),
-					crit(3, {	-- The Iron Maidens
+					crit(25027, {	-- The Iron Maidens
 						["_encounter"] = { 1203, LFR_RAID },
 					}),
 				}),
 				ach(8992, {	-- Blackhand's Crucible
-					crit(1, {	-- Blackhand
+					crit(24982, {	-- Blackhand
 						["_encounter"] = { 959, LFR_RAID },
 					}),
 				}),

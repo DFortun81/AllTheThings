@@ -29,49 +29,49 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(14193, {	-- Vision of Destiny
-                    crit(1, {    -- Wrathion, the Black Emperor
+                    crit(46693, {    -- Wrathion, the Black Emperor
                         ["_encounter"] = { 2368, LFR_RAID },
                     }),
-                    crit(2, {    -- Maut
+                    crit(46694, {    -- Maut
                         ["_encounter"] = { 2365, LFR_RAID },
                     }),
-                    crit(3, {    -- The Prophet Skitra
+                    crit(46695, {    -- The Prophet Skitra
                         ["_encounter"] = { 2369, LFR_RAID },
                     }),
                 }),
 
 				ach(14194, {	-- Halls of Devotion
-                    crit(1, {    -- Dark Inquisitor Xanesh
+                    crit(46696, {    -- Dark Inquisitor Xanesh
                         ["_encounter"] = { 2377, LFR_RAID },
                     }),
-                    crit(2, {    -- Vexiona
+                    crit(46697, {    -- Vexiona
                         ["_encounter"] = { 2370, LFR_RAID },
                     }),
-                    crit(3, {    -- The Hivemind
+                    crit(46698, {    -- The Hivemind
                         ["_encounter"] = { 2372, LFR_RAID },
                     }),
-                    crit(4, {    -- Ra-den the Despoiled
+                    crit(46699, {    -- Ra-den the Despoiled
                         ["_encounter"] = { 2364, LFR_RAID },
                     }),
                 }),
 
 				ach(14195, {	-- Gift of Flesh
-                    crit(1, {    -- Shad'har the Insatiable
+                    crit(46700, {    -- Shad'har the Insatiable
                         ["_encounter"] = { 2367, LFR_RAID },
                     }),
-                    crit(2, {    -- Drest'agath
+                    crit(46701, {    -- Drest'agath
                         ["_encounter"] = { 2373, LFR_RAID },
                     }),
-                    crit(3, {    -- Il'gynoth, Corruption Reborn
+                    crit(46702, {    -- Il'gynoth, Corruption Reborn
                         ["_encounter"] = { 2374, LFR_RAID },
                     }),
                 }),
 
 				ach(14196, {	-- The Waking Dream
-                    crit(1, {    -- Carapace of N'Zoth
+                    crit(46703, {    -- Carapace of N'Zoth
                         ["_encounter"] = { 2366, LFR_RAID },
                     }),
-                    crit(2, {    -- N'Zoth, the Corruptor
+                    crit(46704, {    -- N'Zoth, the Corruptor
                         ["_encounter"] = { 2375, LFR_RAID },
                     }),
                 }),
@@ -143,7 +143,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 					e(2368, {	-- Wrathion, the Black Emperor
 						["crs"] = { 156818 },
 						["g"] = {
-							crit(1, {	-- Wrathion, the Black Emperor
+							crit(46693, {	-- Wrathion, the Black Emperor
 								["achievementID"] = 14193,	-- Vision of Destiny
 							}),
 							i(172185),	-- Destroyer's Shadowblade
@@ -159,7 +159,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 					e(2365, {	-- Maut
 						["crs"] = { 156523 },
 						["g"] = {
-							crit(2, {	-- Maut
+							crit(46694, {	-- Maut
 								["achievementID"] = 14193,	-- Vision of Destiny
 							}),
 							i(172191),	-- An'zig Vra
@@ -178,7 +178,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 					e(2369, {	-- The Prophet Skitra
 						["crs"] = { 157238, 157620 },
 						["g"] = {
-							crit(3, {	-- The Prophet Skitra
+							crit(46695, {	-- The Prophet Skitra
 								["achievementID"] = 14193,	-- Vision of Destiny
 							}),
 							i(174279),	-- Encrypted Ny'alothan Text
@@ -199,7 +199,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 					e(2377, {	-- Dark Inquisitor Xanesh
 						["crs"] = { 160229, 156575 },
 						["g"] = {
-							crit(1, {	-- Dark Inquisitor Xanesh
+							crit(46696, {	-- Dark Inquisitor Xanesh
 								["achievementID"] = 14194,	-- Halls of Devotion
 							}),
 							i(172196),	-- Vorzz Yoq'al
@@ -215,7 +215,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 					e(2370, {	-- Vexiona
 						["crs"] = { 157354 },
 						["g"] = {
-							crit(2, {	-- Vexiona
+							crit(46697, {	-- Vexiona
 								["achievementID"] = 14194,	-- Halls of Devotion
 							}),
 							i(174279),	-- Encrypted Ny'alothan Text
@@ -233,7 +233,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 							157254,	-- Tek'ris
 						},
 						["g"] = {
-							crit(3, {	-- The Hivemind
+							crit(46698, {	-- The Hivemind
 								["achievementID"] = 14194,	-- Halls of Devotion
 							}),
 							i(174448),	-- Aqir Hivespawn (PET!)
@@ -251,7 +251,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 					e(2364, {	-- Ra-den the Despoiled
 						["crs"] = { 156866 },
 						["g"] = {
-							crit(4, {	-- Ra-den the Despoiled
+							crit(46699, {	-- Ra-den the Despoiled
 								["achievementID"] = 14194,	-- Halls of Devotion
 							}),
 							i(174447),	-- Void-Scarred Anubisath (PET!)
@@ -273,7 +273,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 					e(2367, {	-- Shad'har the Insatiable
 						["crs"] = { 157231 },
 						["g"] = {
-							crit(1, {	-- Shad'har the Insatiable
+							crit(46700, {	-- Shad'har the Insatiable
 								["achievementID"] = 14195,	-- Gift of Flesh
 							}),
 							i(172186),	-- Warmace of Waking Nightmares
@@ -289,7 +289,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 					e(2373, {	-- Drest'agath
 						["crs"] = { 157602 },
 						["g"] = {
-							crit(2, {	-- Drest'agath
+							crit(46701, {	-- Drest'agath
 								["achievementID"] = 14195,	-- Gift of Flesh
 							}),
 							i(172195),	-- Halsheth, Slumberer's Spear
@@ -306,7 +306,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 					e(2374, {	-- Il'gynoth, Corruption Reborn
 						["crs"] = { 158328 },
 						["g"] = {
-							crit(3, {	-- Il'gynoth, Corruption Reborn
+							crit(46702, {	-- Il'gynoth, Corruption Reborn
 								["achievementID"] = 14195,	-- Gift of Flesh
 							}),
 							i(174279),	-- Encrypted Ny'alothan Text
@@ -328,7 +328,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 					e(2366, {	-- Carapace of N'Zoth
 						["crs"] = { 162429, 157439 },	-- Fury of N'Zoth
 						["g"] = {
-							crit(1, {	-- Carapace of N'Zoth
+							crit(46703, {	-- Carapace of N'Zoth
 								["achievementID"] = 14196,	-- The Waking Dream
 							}),
 							i(174109),	-- Lurker's Piercing Gaze
@@ -347,7 +347,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 					e(2375, {	-- N'Zoth, the Corruptor
 						["crs"] = { 158041 },
 						["g"] = {
-							crit(2, {	-- N'Zoth, the Corruptor
+							crit(46704, {	-- N'Zoth, the Corruptor
 								["achievementID"] = 14196,	-- The Waking Dream
 							}),
 							i(174452),	-- Eye of Corruption (PET!)

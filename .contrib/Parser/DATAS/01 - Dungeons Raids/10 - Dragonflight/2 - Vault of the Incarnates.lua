@@ -48,84 +48,84 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(17110, {	-- The Primal Bulwark
-					crit(1, { -- Eranog
+					crit(55109, { -- Eranog
 						["_encounter"] = { 2480, LFR_RAID },
 					}),
-					crit(2, { -- The Primal Council
+					crit(55110, { -- The Primal Council
 						["_encounter"] = { 2486, LFR_RAID },
 					}),
-					crit(3, { -- Dathea, Ascended
+					crit(55111, { -- Dathea, Ascended
 						["_encounter"] = { 2502, LFR_RAID },
 					}),
 				}),
 				ach(17111, {	-- Caverns of Infusion
-					crit(1, { -- Terros
+					crit(55113, { -- Terros
 						["_encounter"] = { 2500, LFR_RAID },
 					}),
-					crit(2, { -- Sennarth, the Cold Breath
+					crit(55114, { -- Sennarth, the Cold Breath
 						["_encounter"] = { 2482, LFR_RAID },
 					}),
-					crit(3, { -- Kurog Grimtotem
+					crit(55115, { -- Kurog Grimtotem
 						["_encounter"] = { 2491, LFR_RAID },
 					}),
 				}),
 				ach(17112, {	-- Fury of the Storm
-					crit(1, { -- Broodkeeper Diurna
+					crit(55116, { -- Broodkeeper Diurna
 						["_encounter"] = { 2493, LFR_RAID },
 					}),
-					crit(2, { --Raszageth the Storm-Eater
+					crit(55117, { --Raszageth the Storm-Eater
 						["_encounter"] = { 2499, LFR_RAID },
 					}),
 				}),
 				ach(16343, {	-- Vault of the Incarnates
-					crit(1, { -- Eranog
+					crit(55109, { -- Eranog
 						["_encounter"] = { 2480, LFR_RAID },
 					}),
-					crit(2, { -- The Primal Council
+					crit(55110, { -- The Primal Council
 						["_encounter"] = { 2486, LFR_RAID },
 					}),
-					crit(3, { -- Dathea, Ascended
+					crit(55111, { -- Dathea, Ascended
 						["_encounter"] = { 2502, LFR_RAID },
 					}),
-					crit(4, { -- Terros
+					crit(55113, { -- Terros
 						["_encounter"] = { 2500, LFR_RAID },
 					}),
-					crit(5, { -- Sennarth, the Cold Breath
+					crit(55114, { -- Sennarth, the Cold Breath
 						["_encounter"] = { 2482, LFR_RAID },
 					}),
-					crit(6, { -- Kurog Grimtotem
+					crit(55115, { -- Kurog Grimtotem
 						["_encounter"] = { 2491, LFR_RAID },
 					}),
-					crit(7, { -- Broodkeeper Diurna
+					crit(55116, { -- Broodkeeper Diurna
 						["_encounter"] = { 2493, LFR_RAID },
 					}),
-					crit(8, { --Raszageth the Storm-Eater
+					crit(55117, { --Raszageth the Storm-Eater
 						["_encounter"] = { 2499, LFR_RAID },
 					}),
 				}),
 				ach(16345, {	-- Heroic: Vault of the Incarnates
-					crit(1, { -- Eranog
+					crit(55121, { -- Eranog
 						["_encounter"] = { 2480, HEROIC_RAID },
 					}),
-					crit(2, { -- The Primal Council
+					crit(55122, { -- The Primal Council
 						["_encounter"] = { 2486, HEROIC_RAID },
 					}),
-					crit(3, { -- Dathea, Ascended
+					crit(55123, { -- Dathea, Ascended
 						["_encounter"] = { 2502, HEROIC_RAID },
 					}),
-					crit(4, { -- Terros
+					crit(55124, { -- Terros
 						["_encounter"] = { 2500, HEROIC_RAID },
 					}),
-					crit(5, { -- Sennarth, the Cold Breath
+					crit(55125, { -- Sennarth, the Cold Breath
 						["_encounter"] = { 2482, HEROIC_RAID },
 					}),
-					crit(6, { -- Kurog Grimtotem
+					crit(55127, { -- Kurog Grimtotem
 						["_encounter"] = { 2491, HEROIC_RAID },
 					}),
-					crit(7, { -- Broodkeeper Diurna
+					crit(55126, { -- Broodkeeper Diurna
 						["_encounter"] = { 2493, HEROIC_RAID },
 					}),
-					crit(8, { --Raszageth the Storm-Eater
+					crit(55128, { --Raszageth the Storm-Eater
 						["_encounter"] = { 2499, HEROIC_RAID },
 					}),
 				}),

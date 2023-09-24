@@ -39,12 +39,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["g"] = {
 							i(204473),	-- Element Siphoner
 							ach(17852, {	-- Elemental Conjuror
-								crit(1),	-- Emerald Infusion
-								crit(2),	-- Crimson Infusion
-								crit(3),	-- Primordial Infusion
-								crit(4),	-- Prismatic Infusion
-								crit(5),	-- Stone Infusion
-								crit(6),	-- Temporal Infusion
+								crit(59313),	-- Emerald Infusion
+								crit(59314),	-- Crimson Infusion
+								crit(59315),	-- Primordial Infusion
+								crit(59317),	-- Prismatic Infusion
+								crit(59318),	-- Stone Infusion
+								crit(59316),	-- Temporal Infusion
 							}),
 						},
 					})),

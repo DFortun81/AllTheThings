@@ -85,95 +85,95 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 			}),
 			n(ACHIEVEMENTS, {
 				ach(18163, {	-- Discarded Works
-					crit(1, { -- Kazzara, the Hellforged
+					crit(58866, { -- Kazzara, the Hellforged
 						["_encounter"] = { 2522, AnyDifficultyID },
 					}),
-					crit(2, { -- The Amalgamation Chamber
+					crit(58867, { -- The Amalgamation Chamber
 						["_encounter"] = { 2529, AnyDifficultyID },
 					}),
-					crit(3, { -- The Forgotten Experiments
+					crit(58868, { -- The Forgotten Experiments
 						["_encounter"] = { 2530, AnyDifficultyID },
 					}),
 				}),
 				ach(18164, {	-- Fury of Giants
-					crit(1, { -- Assault of the Zaqali
+					crit(58869, { -- Assault of the Zaqali
 						["_encounter"] = { 2524, AnyDifficultyID },
 					}),
-					crit(2, { -- Rashok, the Elder
+					crit(58870, { -- Rashok, the Elder
 						["_encounter"] = { 2525, AnyDifficultyID },
 					}),
-					crit(3, { -- The Vigilant Steward, Zskarn
+					crit(58871, { -- The Vigilant Steward, Zskarn
 						["_encounter"] = { 2532, AnyDifficultyID },
 					}),
 				}),
 				ach(18165, {	-- Neltharion's Shadow
-					crit(1, { -- Magmorax
+					crit(58881, { -- Magmorax
 						["_encounter"] = { 2527, AnyDifficultyID },
 					}),
-					crit(2, { -- Echo of Neltharion
+					crit(58882, { -- Echo of Neltharion
 						["_encounter"] = { 2523, AnyDifficultyID },
 					}),
 				}),
 				ach(18167, {	-- Edge of the Void
-					crit(1, { -- Scalecommander Sarkareth
+					crit(58883, { -- Scalecommander Sarkareth
 						["_encounter"] = { 2520, AnyDifficultyID },
 					}),
 				}),
 				ach(18160, {	-- Aberrus, the Shadowed Crucible
-					crit(1, { -- Kazzara, the Hellforged
+					crit(58866, { -- Kazzara, the Hellforged
 						["_encounter"] = { 2522, AnyDifficultyID },
 					}),
-					crit(2, { -- The Amalgamation Chamber
+					crit(58867, { -- The Amalgamation Chamber
 						["_encounter"] = { 2529, AnyDifficultyID },
 					}),
-					crit(3, { -- The Forgotten Experiments
+					crit(58868, { -- The Forgotten Experiments
 						["_encounter"] = { 2530, AnyDifficultyID },
 					}),
-					crit(4, { -- Assault of the Zaqali
+					crit(58869, { -- Assault of the Zaqali
 						["_encounter"] = { 2524, AnyDifficultyID },
 					}),
-					crit(5, { -- Rashok, the Elder
+					crit(58870, { -- Rashok, the Elder
 						["_encounter"] = { 2525, AnyDifficultyID },
 					}),
-					crit(6, { -- The Vigilant Steward, Zskarn
+					crit(58871, { -- The Vigilant Steward, Zskarn
 						["_encounter"] = { 2532, AnyDifficultyID },
 					}),
-					crit(7, { -- Magmorax
+					crit(58881, { -- Magmorax
 						["_encounter"] = { 2527, AnyDifficultyID },
 					}),
-					crit(8, { -- Echo of Neltharion
+					crit(58882, { -- Echo of Neltharion
 						["_encounter"] = { 2523, AnyDifficultyID },
 					}),
-					crit(9, { -- Scalecommander Sarkareth
+					crit(58883, { -- Scalecommander Sarkareth
 						["_encounter"] = { 2520, AnyDifficultyID },
 					}),
 				}),
 				ach(18161, {	-- Heroic: Aberrus, the Shadowed Crucible
-					crit(1, { -- Kazzara, the Hellforged
+					crit(59573, { -- Kazzara, the Hellforged
 						["_encounter"] = { 2522, HeroicPlusID },
 					}),
-					crit(2, { -- The Amalgamation Chamber
+					crit(59574, { -- The Amalgamation Chamber
 						["_encounter"] = { 2529, HeroicPlusID },
 					}),
-					crit(3, { -- The Forgotten Experiments
+					crit(59575, { -- The Forgotten Experiments
 						["_encounter"] = { 2530, HeroicPlusID },
 					}),
-					crit(4, { -- Assault of the Zaqali
+					crit(59576, { -- Assault of the Zaqali
 						["_encounter"] = { 2524, HeroicPlusID },
 					}),
-					crit(5, { -- Rashok, the Elder
+					crit(59577, { -- Rashok, the Elder
 						["_encounter"] = { 2525, HeroicPlusID },
 					}),
-					crit(6, { -- The Vigilant Steward, Zskarn
+					crit(59578, { -- The Vigilant Steward, Zskarn
 						["_encounter"] = { 2532, HeroicPlusID },
 					}),
-					crit(7, { -- Magmorax
+					crit(59579, { -- Magmorax
 						["_encounter"] = { 2527, HeroicPlusID },
 					}),
-					crit(8, { -- Echo of Neltharion
+					crit(59580, { -- Echo of Neltharion
 						["_encounter"] = { 2523, HeroicPlusID },
 					}),
-					crit(9, { -- Scalecommander Sarkareth
+					crit(59581, { -- Scalecommander Sarkareth
 						["_encounter"] = { 2520, HeroicPlusID },
 					}),
 				}),

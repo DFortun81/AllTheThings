@@ -2095,8 +2095,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["creatureID"] = 46964,
 						["groups"] = {
 							ach(5505, {	-- Bullet Time
-								crit(1),	-- Defeat Lord Godfrey
-								crit(2),	-- Bloodthirsty Ghouls killed by Pistol Barrage
+								crit(16086),	-- Defeat Lord Godfrey
+								crit(16544),	-- Bloodthirsty Ghouls killed by Pistol Barrage
 							}),
 							ach(5093),	-- Heroic: Shadowfang Keep
 							ach(5142),	-- Heroic: Shadowfang Keep Guild Run

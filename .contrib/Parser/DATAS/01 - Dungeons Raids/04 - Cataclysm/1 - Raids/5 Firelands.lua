@@ -498,10 +498,10 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						["creatureID"] = 52530,
 						["groups"] = {
 							ach(5813, {	-- Do a Barrel Roll!
-								crit(1),	-- Brushfire
-								crit(2),	-- Lava Spew
-								crit(3),	-- Incendiary Cloud
-								crit(4),	-- Fiery Tornado
+								crit(17533),	-- Brushfire
+								crit(15735),	-- Lava Spew
+								crit(15736),	-- Incendiary Cloud
+								crit(17538),	-- Fiery Tornado
 							}),
 							i(71665),	-- Flametalon of Alysrazor (MOUNT!)
 							i(70733),	-- Alysra's Razor
@@ -524,11 +524,12 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						["creatureID"] = 53691,
 						["groups"] = {
 							ach(5829, {	-- Bucket List
-								crit(1),	-- Beth'tilac's Lair
-								crit(2),	-- Flamebreach
-								crit(3),	-- Path of Corruption
-								crit(4),	-- The Ridge of Ancient Flame
-								crit(5),	-- Shatterstone
+								crit(17576),	-- Shannox
+								crit(17775),	-- Beth'tilac's Lair
+								crit(17776),	-- Flamebreach
+								crit(17777),	-- Path of Corruption
+								crit(17778),	-- The Ridge of Ancient Flame
+								crit(17779),	-- Shatterstone
 							}),
 							i(152975, {	-- Blazehound (PET!)
 								["timeline"] = { ADDED_7_3_0 },

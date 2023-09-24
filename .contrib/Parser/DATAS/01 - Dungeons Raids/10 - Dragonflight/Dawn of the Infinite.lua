@@ -467,29 +467,29 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 				n(ACHIEVEMENTS, {
 					ach(18705, {	-- Defender of the Timeways
 						title(514),	-- <Name> of the Infinite
-						crit(1, { -- Chronikar
+						crit(60810, { -- Chronikar
 							["_encounter"] = { 2521, MYTHIC_DUNGEON },
 						}),
-						crit(2, { -- Manifested Timeways
+						crit(60811, { -- Manifested Timeways
 							["_encounter"] = { 2528, MYTHIC_DUNGEON },
 						}),
-						crit(3, { -- Blight of Galakrond
+						crit(60812, { -- Blight of Galakrond
 							["_encounter"] = { 2535, MYTHIC_DUNGEON },
 						}),
-						crit(4, { -- Iridikron the Stonescaled
+						crit(60813, { -- Iridikron the Stonescaled
 							["_encounter"] = { 2537, MYTHIC_DUNGEON },
 						}),
-						crit(5, { -- Tyr, the Infinite Keeper
+						crit(60814, { -- Tyr, the Infinite Keeper
 							["_encounter"] = { 2526, MYTHIC_DUNGEON },
 						}),
-						crit(6, { -- Morchie
+						crit(60815, { -- Morchie
 							["_encounter"] = { 2536, MYTHIC_DUNGEON },
 						}),
-						crit(7, { -- Time-Lost Battlefield
+						crit(60816, { -- Time-Lost Battlefield
 							["_encounter"] = { 2533, MYTHIC_DUNGEON },	-- [A]
 							-- ["_encounter"] = { 2534, MYTHIC_DUNGEON },	-- [H]
 						}),
-						crit(8, { -- Chrono-Lord Deios and the Infinite Dragonflight
+						crit(60817, { -- Chrono-Lord Deios and the Infinite Dragonflight
 							["_encounter"] = { 2538, MYTHIC_DUNGEON },
 						}),
 					}),
@@ -591,29 +591,29 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 				n(ACHIEVEMENTS, {
 					ach(18705, {	-- Defender of the Timeways
 						title(514),	-- <Name> of the Infinite
-						crit(1, { -- Chronikar
+						crit(60810, { -- Chronikar
 							["_encounter"] = { 2521, MYTHIC_DUNGEON },
 						}),
-						crit(2, { -- Manifested Timeways
+						crit(60811, { -- Manifested Timeways
 							["_encounter"] = { 2528, MYTHIC_DUNGEON },
 						}),
-						crit(3, { -- Blight of Galakrond
+						crit(60812, { -- Blight of Galakrond
 							["_encounter"] = { 2535, MYTHIC_DUNGEON },
 						}),
-						crit(4, { -- Iridikron the Stonescaled
+						crit(60813, { -- Iridikron the Stonescaled
 							["_encounter"] = { 2537, MYTHIC_DUNGEON },
 						}),
-						crit(5, { -- Tyr, the Infinite Keeper
+						crit(60814, { -- Tyr, the Infinite Keeper
 							["_encounter"] = { 2526, MYTHIC_DUNGEON },
 						}),
-						crit(6, { -- Morchie
+						crit(60815, { -- Morchie
 							["_encounter"] = { 2536, MYTHIC_DUNGEON },
 						}),
-						crit(7, { -- Time-Lost Battlefield
+						crit(60816, { -- Time-Lost Battlefield
 							["_encounter"] = { 2533, MYTHIC_DUNGEON },	-- [A]
 							-- ["_encounter"] = { 2534, MYTHIC_DUNGEON },	-- [H]
 						}),
-						crit(8, { -- Chrono-Lord Deios and the Infinite Dragonflight
+						crit(60817, { -- Chrono-Lord Deios and the Infinite Dragonflight
 							["_encounter"] = { 2538, MYTHIC_DUNGEON },
 						}),
 					}),

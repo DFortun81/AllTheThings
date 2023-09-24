@@ -38,15 +38,15 @@ root(ROOTS.Achievements, pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 				["rank"] = 100,
 			}),
 			ach(583, {	-- Arathi Basin All-Star
-				crit(1),	-- Assault 2 bases
-				crit(2),	-- Defend 2 bases
+				crit(426),	-- Assault 2 bases
+				crit(427),	-- Defend 2 bases
 			}),
 			ach(584, {	-- Arathi Basin Assassin
-				crit(1),	-- Kill 5 people at the blacksmith
-				crit(2),	-- Kill 5 people at the farm
-				crit(3),	-- Kill 5 people at the gold mine
-				crit(4),	-- Kill 5 people at the lumber mill
-				crit(5),	-- Kill 5 people at the stables
+				crit(431),	-- Kill 5 people at the blacksmith
+				crit(432),	-- Kill 5 people at the farm
+				crit(433),	-- Kill 5 people at the gold mine
+				crit(434),	-- Kill 5 people at the lumber mill
+				crit(435),	-- Kill 5 people at the stables
 			}),
 			ach(165),	-- Arathi Basin Perfection
 			ach(73),	-- Disgracin' The Basin

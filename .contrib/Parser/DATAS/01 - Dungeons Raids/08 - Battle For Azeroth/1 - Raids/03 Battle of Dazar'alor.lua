@@ -86,11 +86,11 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }
 							144680,	-- Frida Ironbellows (H)
 						},
 						["g"] = {
-							crit(1, {	-- Champion of the Light (A)
+							crit(43867, {	-- Champion of the Light (A)
 								["races"] = ALLIANCE_ONLY,
 								["achievementID"] = 13286,	-- Siege of Dazar'alor
 							}),
-							crit(1, {	-- Champion of the Light (H)
+							crit(43867, {	-- Champion of the Light (H)
 								["races"] = HORDE_ONLY,
 								["achievementID"] = 13289,	-- Defense of Dazar'alor
 							}),
@@ -117,11 +117,11 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }
 							144690,	-- Mestrah <The Illuminated> (H)
 						},
 						["g"] = {
-							crit(3, {	-- Jadefire Masters (A)
+							crit(43884, {	-- Jadefire Masters (A)
 								["races"] = ALLIANCE_ONLY,
 								["achievementID"] = 13286,	-- Siege of Dazar'alor
 							}),
-							crit(3, {	-- Jadefire Masters (H)
+							crit(43876, {	-- Jadefire Masters (H)
 								["races"] = HORDE_ONLY,
 								["achievementID"] = 13289,	-- Defense of Dazar'alor
 							}),
@@ -146,11 +146,11 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }
 							148117,	-- Grong the Revenant (H)
 						},
 						["g"] = {
-							crit(2, {	-- Grong, the Revenant (A)
+							crit(43868, {	-- Grong, the Revenant (A)
 								["races"] = ALLIANCE_ONLY,
 								["achievementID"] = 13286,	-- Siege of Dazar'alor
 							}),
-							crit(2, {	-- Grong, the Revenant (H)
+							crit(43875, {	-- Grong, the Revenant (H)
 								["races"] = HORDE_ONLY,
 								["achievementID"] = 13289,	-- Defense of Dazar'alor
 							}),
@@ -179,11 +179,11 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }
 							145273,	-- The Hand of In'zashi
 						},
 						["g"] = {
-							crit(1, {	-- Opulence (A)
+							crit(43869, {	-- Opulence (A)
 								["races"] = ALLIANCE_ONLY,
 								["achievementID"] = 13287,	-- Empire's Fall
 							}),
-							crit(1, {	-- Opulence (H)
+							crit(43869, {	-- Opulence (H)
 								["races"] = HORDE_ONLY,
 								["achievementID"] = 13290,	-- Death's Bargain
 							}),
@@ -211,11 +211,11 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }
 							144747,	-- Pa'ku's Aspect
 						},
 						["g"] = {
-							crit(2, {	-- Loa Council/Conclave of the Chosen (A)
+							crit(43870, {	-- Loa Council/Conclave of the Chosen (A)
 								["races"] = ALLIANCE_ONLY,
 								["achievementID"] = 13287,	-- Empire's Fall
 							}),
-							crit(2, {	-- Loa Council/Conclave of the Chosen (H)
+							crit(43870, {	-- Loa Council/Conclave of the Chosen (H)
 								["races"] = HORDE_ONLY,
 								["achievementID"] = 13290,	-- Death's Bargain
 							}),
@@ -242,11 +242,11 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }
 							146322,	-- Siegebreaker Roka
 						},
 						["g"] = {
-							crit(3, {	-- King Rastakhan (A)
+							crit(43871, {	-- King Rastakhan (A)
 								["races"] = ALLIANCE_ONLY,
 								["achievementID"] = 13287,	-- Empire's Fall
 							}),
-							crit(3, {	-- King Rastakhan (H)
+							crit(43871, {	-- King Rastakhan (H)
 								["races"] = HORDE_ONLY,
 								["achievementID"] = 13290,	-- Death's Bargain
 							}),
@@ -270,11 +270,11 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }
 					e(2334, {	-- High Tinker Mekkatorque
 						["crs"] = { 144796 },	-- High Tinker Mekkatorque
 						["g"] = {
-							crit(1, {	-- High Tinker Mekkatorque (A)
+							crit(43872, {	-- High Tinker Mekkatorque (A)
 								["races"] = ALLIANCE_ONLY,
 								["achievementID"] = 13288,	-- Might of the Alliance
 							}),
-							crit(1, {	-- High Tinker Mekkatorque (H)
+							crit(43872, {	-- High Tinker Mekkatorque (H)
 								["races"] = HORDE_ONLY,
 								["achievementID"] = 13291,	-- Victory of Death
 							}),
@@ -298,11 +298,11 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }
 							146251,	-- Sister Katherine
 						},
 						["g"] = {
-							crit(2, {	-- Stormwall Blockade (A)
+							crit(43873, {	-- Stormwall Blockade (A)
 								["races"] = ALLIANCE_ONLY,
 								["achievementID"] = 13288,	-- Might of the Alliance
 							}),
-							crit(2, {	-- Stormwall Blockade (H)
+							crit(43873, {	-- Stormwall Blockade (H)
 								["races"] = HORDE_ONLY,
 								["achievementID"] = 13291,	-- Victory of Death
 							}),
@@ -324,11 +324,11 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }
 					e(2343, {	-- Lady Jaina Proudmoore
 						["crs"] = { 146409 },	-- Lady Jaina Proudmoore
 						["g"] = {
-							crit(3, {	-- Jaina Proudmoore (A)
+							crit(43874, {	-- Jaina Proudmoore (A)
 								["races"] = ALLIANCE_ONLY,
 								["achievementID"] = 13288,	-- Might of the Alliance
 							}),
-							crit(3, {	-- Jaina Proudmoore (H)
+							crit(43874, {	-- Jaina Proudmoore (H)
 								["races"] = HORDE_ONLY,
 								["achievementID"] = 13291,	-- Victory of Death
 							}),

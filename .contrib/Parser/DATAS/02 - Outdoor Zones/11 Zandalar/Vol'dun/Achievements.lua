@@ -411,9 +411,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			ach(13014, {	-- Vorrik's Champion
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(1),	-- Faithless slain with Vorrik's Bulwark slain
-					crit(2),	-- Faithless slain with Rakjan the Unbroken slain
-					crit(3),	-- Faithless charged with a Battle Krolusk slain
+					crit(41356),	-- Faithless slain with Vorrik's Bulwark slain
+					crit(41357),	-- Faithless slain with Rakjan the Unbroken slain
+					crit(41358),	-- Faithless charged with a Battle Krolusk slain
 				},
 			}),
 		}),

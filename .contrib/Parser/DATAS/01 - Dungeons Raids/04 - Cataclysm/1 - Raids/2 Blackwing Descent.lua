@@ -77,10 +77,10 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						["creatureID"] = 42179,
 						["groups"] = {
 							ach(5307, {	-- Achieve-a-tron
-								crit(1),	-- No player hit by Static Shock
-								crit(2),	-- No player hit by Poison Bomb
-								crit(3),	-- No player hit by Arcane Annihilator
-								crit(4),	-- No more than one player hit by each Flamethrower
+								crit(15651),	-- No player hit by Static Shock
+								crit(15652),	-- No player hit by Poison Bomb
+								crit(15653),	-- No player hit by Arcane Annihilator
+								crit(15654),	-- No more than one player hit by each Flamethrower
 							}),
 							i(152966, {	-- Tinytron (PET!)
 								["timeline"] = { ADDED_7_3_0 },

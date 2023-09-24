@@ -2911,8 +2911,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						["creatureID"] = 37955,	-- Blood-Queen Lana'thel
 						["groups"] = {
 							ach(4539, {	-- Once Bitten, Twice Shy (10 player)
-								crit(1),	-- Defeat Blood-Queen Lana'thel without becoming a vampire
-								crit(2),	-- Defeat Blood-Queen Lana'thel while a vampire
+								crit(12780),	-- Defeat Blood-Queen Lana'thel without becoming a vampire
+								crit(13011),	-- Defeat Blood-Queen Lana'thel while a vampire
 							}),
 							i(51384),	-- Bloodsipper
 							i(51553),	-- Lana'thel's Bloody Nail
@@ -3256,8 +3256,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						["creatureID"] = 37955,	-- Blood-Queen Lana'thel
 						["groups"] = {
 							ach(4539, {	-- Once Bitten, Twice Shy (10 player)
-								crit(1),	-- Defeat Blood-Queen Lana'thel without becoming a vampire
-								crit(2),	-- Defeat Blood-Queen Lana'thel while a vampire
+								crit(12780),	-- Defeat Blood-Queen Lana'thel without becoming a vampire
+								crit(13011),	-- Defeat Blood-Queen Lana'thel while a vampire
 							}),
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
@@ -3624,8 +3624,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						["creatureID"] = 37955,	-- Blood-Queen Lana'thel
 						["groups"] = {
 							ach(4618, {	-- Once Bitten, Twice Shy (25 player)
-								crit(1),	-- Defeat Blood-Queen Lana'thel without becoming a vampire
-								crit(2),	-- Defeat Blood-Queen Lana'thel while a vampire
+								crit(13012),	-- Defeat Blood-Queen Lana'thel without becoming a vampire
+								crit(13013),	-- Defeat Blood-Queen Lana'thel while a vampire
 							}),
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
@@ -3989,8 +3989,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						["creatureID"] = 37955,	-- Blood-Queen Lana'thel
 						["groups"] = {
 							ach(4618, {	-- Once Bitten, Twice Shy (25 player)
-								crit(1),	-- Defeat Blood-Queen Lana'thel without becoming a vampire
-								crit(2),	-- Defeat Blood-Queen Lana'thel while a vampire
+								crit(13012),	-- Defeat Blood-Queen Lana'thel without becoming a vampire
+								crit(13013),	-- Defeat Blood-Queen Lana'thel while a vampire
 							}),
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)

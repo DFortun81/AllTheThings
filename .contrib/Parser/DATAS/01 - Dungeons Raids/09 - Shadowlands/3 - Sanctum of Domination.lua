@@ -718,8 +718,8 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 					},
 					["g"] = {
 						ach(15065, {	-- Eye Wish You Were Here
-							crit(1),	-- All players have Photoflash!
-							crit(2),	-- Eye of the Jailer has Photoflash!
+							crit(52128),	-- All players have Photoflash!
+							crit(52129),	-- Eye of the Jailer has Photoflash!
 						}),
 						i(186554),	-- Eye of Allseeing (PET!)
 						i(186403),	-- Stygian Lance of Passage

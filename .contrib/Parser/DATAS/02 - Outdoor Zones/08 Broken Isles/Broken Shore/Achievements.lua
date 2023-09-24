@@ -57,15 +57,15 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				ach(11802, {	-- Bringing Home the Beacon
-					crit(1),		-- Shadow Fracture
-					crit(2),		-- Soul Ruin
-					crit(3),		-- Dark Stockades
-					crit(4),		-- Coast of Anguish
-					crit(5),		-- Garrison of the Fel
-					crit(6),		-- Felfire Pass
-					crit(7),		-- Felrage Strand
-					crit(8),		-- Crescent Ruins
-					crit(9),		-- The Creeping Grotto
+					crit(36652),	-- Shadow Fracture
+					crit(36661),	-- Soul Ruin
+					crit(36662),	-- Dark Stockades
+					crit(36663),	-- Coast of Anguish
+					crit(36664),	-- Garrison of the Fel
+					crit(36665),	-- Felfire Pass
+					crit(36666),	-- Felrage Strand
+					crit(36667),	-- Crescent Ruins
+					crit(36668),	-- The Creeping Grotto
 				}),
 				ach(11737),	-- Disrupting the Nether
 				explorationAch(11543),	-- Explore Broken Shore
