@@ -8,6 +8,7 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 		}),
 		i(58488, {	-- Potion of Treasure Finding
 			i(67539, {	-- Tiny Treasure Chest
+			--[[
 				i(53010),	-- Embersilk Cloth
 				i(52183),	-- Pyrite Ore
 				i(52185),	-- Elementium Ore
@@ -16,6 +17,7 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 				i(52326),	-- Volatile Water
 				i(52325),	-- Volatile Fire
 				i(52329),	-- Volatile Life
+			--]]
 			}),
 		}),
 		filter(TRINKET_F, {
