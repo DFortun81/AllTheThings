@@ -599,8 +599,10 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 			i(108347, {["timeline"] = {ADDED_6_0_2}}),	-- Terocone Leaf
 			i(24401),	-- Unidentified Plant Parts
 			-- Not Herb --
+			--[[	No need to list Tradegoods w/ many other sources
 			i(22575),	-- Mote of Life
 			i(22576),	-- Mote of Mana
+			--]]
 		}),
 	}),
 	-- #if AFTER WRATH
@@ -946,7 +948,8 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 			i(108304, {["timeline"] = {ADDED_6_0_2}}),	-- Khorium Ore Nugget
 			i(35229, {["timeline"] = {ADDED_2_4_0}}),	-- Nether Residue
 			i(32464, {["timeline"] = {ADDED_2_1_0}}),	-- Nethercite Ore
-			-- Not Ore --
+			--	Not Ore
+			--[[	No need to list Tradegoods w/ many other sources
 			i(23117),	-- Azure Moonstone
 			i(23077),	-- Blood Garnet
 			i(32227, {["timeline"] = {ADDED_2_1_0}}),	-- Crimson Spinel
@@ -967,6 +970,7 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 			i(32230, {["timeline"] = {ADDED_2_1_0}}),	-- Shadowsong Amethyst
 			i(23438),	-- Star of Elune
 			i(23437),	-- Talasite
+			--]]
 		}),
 		spell(2656, {	-- Smelting
 			i(23446),	-- Adamantite Bar

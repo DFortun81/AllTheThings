@@ -631,10 +631,11 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						["g"] = {
 							i(186550),	-- Mawsworn Minion (PET!)
 							i(187542),	-- Jaithys, the Prison Blade
+							-- #if BEFORE 10.0.2
 							i(186410, {	-- Jaithys, the Prison Blade
-								["description"] = "Only availabe in the great Vault.",
-								["timeline"] = { REMOVED_10_0_2_LAUNCH },
+								["description"] = "Only availabe in the great Vault.",	-- Found as Drop 20.09.2023
 							}),
+							-- #endif
 							i(186406),	-- Maledict Opus
 							i(187056, {	-- The Devouring Cold
 								i(187056, {	-- The Devouring Cold

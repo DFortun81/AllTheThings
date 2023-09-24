@@ -489,8 +489,8 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 			i(108357, {["timeline"] = {ADDED_6_0_2}}),	-- Talandra's Rose Petal
 			i(36904),	-- Tiger Lily
 			i(108354, {["timeline"] = {ADDED_6_0_2}}),	-- Tiger Lily Petal
-			-- Not Herb --
-			i(37704),	-- Crystallized Life
+			--	No need to list Tradegoods w/ many other sources
+			--	i(37704),	-- Crystallized Life
 		}),
 	}),
 	prof(INSCRIPTION, {
@@ -777,6 +777,7 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 			i(36910),	-- Titanium Ore
 			i(108391, {["timeline"] = {ADDED_6_0_2}}),	-- Titanium Ore Nugget
 			-- Not Ore --
+			--[[	No need to list Tradegoods w/ many other sources
 			i(36921),	-- Autumn's Glow
 			i(36917),	-- Bloodstone
 			i(36923),	-- Chalcedony
@@ -796,6 +797,7 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 			i(36924),	-- Sky Sapphire
 			i(36920),	-- Sun Crystal
 			i(36927),	-- Twilight Opal
+			--]]
 		}),
 		spell(2656, {	-- Smelting
 			i(36916),	-- Cobalt Bar

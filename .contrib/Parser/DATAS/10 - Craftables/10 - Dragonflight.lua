@@ -2837,6 +2837,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(190394),	-- Serevite Ore+++
 			i(194062),	-- Unyielding Stone Chunk
 			-- Not Ore --
+			--[[	No need to list Tradegoods w/ many other sources
 			i(192852),	-- Alexstraszite+
 			i(192853),	-- Alexstraszite++
 			i(192855),	-- Alexstraszite+++
@@ -2870,6 +2871,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(192859),	-- Ysemerald+
 			i(192860),	-- Ysemerald++
 			i(192861),	-- Ysemerald+++
+			--]]
 		}),
 		n(DISCOVERY, {
 			r(384688),	-- Draconium Deposit

@@ -307,7 +307,9 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 			i(52988),	-- Whiptail
 			i(108365, {["timeline"] = {ADDED_6_0_2}}),	-- Whiptail Stem
 			-- Not Herb --
-			i(52329),	-- Volatile Life
+			--[[	No need to list Tradegoods w/ many other sources
+			--	i(52329),	-- Volatile Life
+			--]]
 		}),
 	}),
 	prof(INSCRIPTION, {
@@ -618,6 +620,7 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 			i(52183),	-- Pyrite Ore
 			i(108309, {["timeline"] = {ADDED_6_0_2}}),	-- Pyrite Ore Nugget
 			-- Not Ore --
+			--[[	No need to list Tradegoods w/ many other sources
 			i(52179),	-- Alicite
 			i(52195),	-- Amberjewel
 			i(52177),	-- Carnelian
@@ -634,6 +637,7 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 			i(52325),	-- Volatile Fire
 			i(52326),	-- Volatile Water
 			i(52178),	-- Zephyrite
+			--]]
 		}),
 		spell(2656, {	-- Smelting
 			i(52186),	-- Elementium Bar

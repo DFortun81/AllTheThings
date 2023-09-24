@@ -559,12 +559,14 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 			i(124492),	-- Torn Journal Page
 			i(151862, {["timeline"] = {ADDED_7_3_0}}),	-- Unusable Empyrium Core
 			-- Not Ore --
+			--[[	No need to list Tradegoods w/ many other sources
 			i(151718, {["timeline"] = {ADDED_7_3_0}}),	-- Argulite
 			i(151720, {["timeline"] = {ADDED_7_3_0}}),	-- Chemirine
 			i(151722, {["timeline"] = {ADDED_7_3_0}}),	-- Florid Malachite
 			i(151721, {["timeline"] = {ADDED_7_3_0}}),	-- Hesselian
 			i(151579, {["timeline"] = {ADDED_7_3_0}}),	-- Labradorite
 			i(151719, {["timeline"] = {ADDED_7_3_0}}),	-- Lightsphene
+			--]]
 		}),
 	}),
 	prof(TAILORING, {

@@ -59,7 +59,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["timeline"] = { "added 6.0.1.18711" },
 								}),
 								i(57254, {	-- Runner's Boots
-									["timeline"] = { "added 4.0.3" },
+									["timeline"] = { "added 4.0.3", "removed 4.0.3" },	-- They were available at some point, but not sure when removed.
 								}),
 								i(57255, {	-- Worg Handler's Gloves
 									["timeline"] = { "added 4.0.3.13277" },
@@ -78,7 +78,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["timeline"] = { "added 7.0.3.22248" },
 								}),
 								i(57254, {	-- Runner's Boots
-									["timeline"] = { "added 4.0.3" },
+									["timeline"] = { "added 4.0.3", "removed 4.0.3" },	-- They were available at some point, but not sure when removed.
 								}),
 							},
 						}),
@@ -120,7 +120,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["timeline"] = { "added 6.0.1.18711" },
 								}),
 								i(57254, {	-- Runner's Boots
-									["timeline"] = { "added 4.0.3" },
+									["timeline"] = { "added 4.0.3", "removed 4.0.3" },	-- They were available at some point, but not sure when removed.
 								}),
 							},
 						}),
@@ -162,7 +162,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["timeline"] = { "added 6.0.1.18711" },
 								}),
 								i(57254, {	-- Runner's Boots
-									["timeline"] = { "added 4.0.3" },
+									["timeline"] = { "added 4.0.3", "removed 4.0.3" },	-- They were available at some point, but not sure when removed.
 								}),
 							},
 						}),

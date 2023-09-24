@@ -1061,6 +1061,7 @@ root(ROOTS.Craftables, tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDow
 			i(97546, {["timeline"] = {ADDED_5_3_0}}),	-- Kyparite Fragment
 			i(72103),	-- White Trillium Ore
 			-- Not Ore --
+			--[[	No need to list Tradegoods w/ many other sources
 			i(76137),	-- Alexandrite
 			i(76141),	-- Imperial Amethyst
 			i(76133),	-- Lapis Lazuli
@@ -1073,6 +1074,7 @@ root(ROOTS.Craftables, tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDow
 			i(76130),	-- Tiger Opal
 			i(76140),	-- Vermilion Onyx
 			i(76139),	-- Wild Jade
+			--]]
 		}),
 		spell(2656, {	-- Smelting
 			i(72096),	-- Ghost Iron Bar
