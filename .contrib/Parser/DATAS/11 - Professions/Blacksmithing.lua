@@ -925,6 +925,14 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 		}),
 		n(TREASURES, {
+			o(411179,	-- Amirdrassil Defender's Shield
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+				["coord"] = { 49.8, 63.0, TREE_1 },
+				["questID"] = 78417,
+				["g"] = {
+					i(210464),	-- Amirdrassil Defender's Shield
+				},
+			})),
 			o(376657, {	-- Ancient Monument
 				["description"] = "Kill NPCs and loot the sword. If you receive no loot, check your mail!",
 				["crs"] = { 188648 },	-- Enchanted Bulwark

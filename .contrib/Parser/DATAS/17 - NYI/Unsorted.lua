@@ -580,7 +580,6 @@ root(ROOTS.Unsorted, {
 			filter(BATTLE_PETS, {
 				i(210409),	-- Aura (PET!)
 				i(210556),	-- Ivy (PET!)
-				i(210633),	-- Kal'andu (PET!)
 				i(210347),	-- Sergeant Quackers (PET!)
 			}),
 			filter(MOUNTS, {
@@ -1296,7 +1295,6 @@ root(ROOTS.Unsorted, {
 			i(210461),	-- Exceedingly Soft Wildercloth
 			i(210462),	-- Plush Pillow
 			i(210463),	-- Snuggle Buddy
-			i(210464),	-- Amirdrassil Defender's Shield
 			i(210468),	-- Emerald Blossom Dreamstone
 			i(210470),	-- Echoed Ephemera
 			i(210472),	-- Igira's Cruel Nightmare
@@ -1328,7 +1326,6 @@ root(ROOTS.Unsorted, {
 			i(210657),	-- Gently Shaken Gift
 			i(210661),	-- Dreamcatcher's Crescent
 			i(210662),	-- Ochre Ornament of the Grove
-			i(210663),	-- Circle of Nature's Youth
 			i(210664),	-- Frost Sapling's Adornment
 			i(210666),	-- Crest of the Seething Flamekeeper
 			i(210675),	-- Gardener's Lightstaff
@@ -1494,15 +1491,12 @@ root(ROOTS.Unsorted, {
 			i(210917),	-- Pouch of Whelpling's Dreaming Crests
 			i(210919),	-- Crimson Glimmerfur
 			i(210920),	-- Gift of Amirdrassil
-			i(210921),	-- Bounty of the Fallen Defector
 			i(210923),	-- Clutch of Wyrm's Dreaming Crests
 			i(210944),	-- Emerald Mark of Mastery
 			i(210945),	-- Stargrazer
 			i(210946),	-- Mammyth
 			i(210947),	-- Flame-Warped Curio
 			i(210948),	-- Imagiwing
-			i(210950),	-- Insight of Q'onzu
-			i(210951),	-- Treacherous Research Notes
 			i(210952),	-- Spare Heated Hearthstone
 			i(210954),	-- Sprout of Rebirth
 			i(210958),	-- Crown of the Dryad Guardian

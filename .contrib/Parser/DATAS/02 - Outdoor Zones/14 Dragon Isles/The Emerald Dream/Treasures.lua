@@ -21,7 +21,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			o(408707, {	-- Odd Burl
 				["questID"] = 78006,
-				["coord"] = { 61.4, 63.2, TREE_1 },
+				["coord"] = { 61.4, 63.2, TREE_1 }, -- (24/09 wasn't at coords)
 			}),
 			o(409440, {	-- Pineshrew Cache
 				["questID"] = 78120,
@@ -41,9 +41,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 78033,	-- trigger 'accepted' part and completed when he drop chest (pseudo-quest?), have (w) in-game
 				["description"] = "Interact with this npc 3 times to spawn chest, after each interaction - he will run away. Just follow him.",
 				["coords"] = {
-					{ 64.33, 61.32, TREE_1 },
-					{ 62.94, 60.39, TREE_1 },
-					{ 61.61, 59.56, TREE_1 },
+					{ 64.3, 61.3, TREE_1 },
+					{ 62.9, 60.4, TREE_1 },
+					{ 61.6, 59.5, TREE_1 },
 				},
 				["g"] = {
 					o(408706, {	-- Magical Bloom
@@ -128,6 +128,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 78552,
 				["description"] = "Use /sleep to loot the chest.",
 				["coord"] = { 46.3, 86.2, TREE_1 },
+			}),
+			--
+			o_repeated({	-- Small Somnut
+				-- prob need symlink?
+				["g"] = {
+					i(203315),	-- Winding Slitherdrake: Small Spiked Crest
+					o(408719, {	-- Small Somnut
+						["isRepeatable"] = true,
+					}),
+				},
 			}),
 		}),
 	}),

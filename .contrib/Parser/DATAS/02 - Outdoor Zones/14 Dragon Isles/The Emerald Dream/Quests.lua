@@ -376,17 +376,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["provider"] = { "n", 210196 },	-- Solarys Thorngale
 				["coord"] = { 52.0, 63.6, TREE_1 },
 			}),
-			q(78096, {	-- A Silver Lining
-				["sourceQuests"] = { 77948 },	-- Burning Out
-				["provider"] = { "n", 210251 },	-- Kery'nael Thorngale
-				["coord"] = { 50.8, 63.6, TREE_1 },
-			}),
 			q(77978, {	-- A Passed Torch
 				["sourceQuests"] = { 77948 },	-- Burning Out (if you complete Burning Out before you grab this quest, it becomes unobtainable as of 8.September.2023)
 				["provider"] = { "o", 409077 },	-- Singed Leaflet
 				["coord"] = { 38.0, 47.2, TREE_1 },
 				["g"] = {
 					i(209048),	-- Singed Leaflet (QI!)
+				},
+			}),
+			q(78096, {	-- A Silver Lining
+				["sourceQuests"] = { 77948 },	-- Burning Out
+				["provider"] = { "n", 210251 },	-- Kery'nael Thorngale
+				["coord"] = { 50.8, 63.6, TREE_1 },
+				["g"] = {
+					i(210921),	-- Bounty of the Fallen Defector
+					i(210633),	-- Kal'andu (PET!)
 				},
 			}),
 			--
@@ -424,6 +428,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 78162 },	-- Q'onzu's Distraction
 				["provider"] = { "n", 210524 },	-- Q'onzu
 				["coord"] = { 34.7, 69.3, TREE_1 },
+				["g"] = {
+					i(210950),	-- Insight of Q'onzu
+				},
 			}),
 			q(78430, {	-- Mean Green Infusion Machine
 				--["sourceQuests"] = {  },	-- no requirement as of 7.Sept
@@ -599,6 +606,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					76571,	-- Growth Experience
 				},
 				["provider"] = { "n", 210813 },	-- Dionaessa (player instanced NPC)
+				["g"] = {
+					i(210958),	-- Crown of the Dryad Guardian
+				},
 			}),
 			q(77802, {	-- What Do I Call You?
 				["sourceQuests"] = { 76572 },	-- A Poisonous Promotion
@@ -730,6 +740,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 				["provider"] = { "n", 210587 },	-- Aviana
 				["coord"] = { 65.8, 37.6, TREE_1 },
+				["g"] = {
+					i(210663),	-- Circle of Nature's Youth (COSMETIC!)
+					i(210951),	-- Treacherous Research Notes
+				},
 			}),
 			--
 			q(78381, {	-- Dreams Unified
@@ -814,8 +828,9 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(77810),	-- Quest "What Do I Call You?": Pick the title of "Commander"
 		q(77811),	-- Quest "What Do I Call You?": Pick the title of "Guardian"
 		-- there is likely one questID unique to each class. Need to test this theory
-		q(78257),	-- Quest "What Do I Call You?": Pick the title of "Highlord"
 		q(77834),	-- Quest "What Do I Call You?": Pick the title of "Archdruid"
+		q(78235),	-- Quest "What Do I Call You?": Pick the title of "Battlelord"
+		q(78257),	-- Quest "What Do I Call You?": Pick the title of "Highlord"
 		--
 		q(78483),	-- Consumed a dreamfruit at 51.28, 59.97. Gives a buff selection like torghast powers. Selected "Feral Overflow" - might be a unique ID for each buff
 		-- ???
