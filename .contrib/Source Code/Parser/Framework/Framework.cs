@@ -2015,7 +2015,10 @@ namespace ATT
                                 {
                                     // We don't want things that got deleted to be in the addon.
                                     // NOTE: If it's not the last entry, that means it might have been readded later?
-                                    return false;    // Invalid
+                                    // CRIEVE NOTE: Braghe wanted Debug Mode to not completely delete a thing from the exported Debug files...
+                                    // Deleting it from the actual database is actually expected for the real builds,
+                                    // so don't remove this. This is how I want it. Thanks!
+                                    if (!Framework.DebugMode) return false;    // Invalid
                                 }
 
                                 // Mark the first patch this was removed on. (the upcoming patch)
