@@ -29,7 +29,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(114264),	-- Bloodthorn Hood					(NYI)
 			ig(114388),	-- Hood of Falling Leaves			(NYI)
 			ig(93081),	-- Hozen-Stitched Hood 				(NYI)
-			ig(147516),	-- Legion Stalker's Hood 			(NYI)
+		--	ig(147516),	-- Legion Stalker's Hood 			(NYI)						Listed under CoEN (Legion Dungeon)
 			ig(121509),	-- Runesworn Crown		 			(NYI)
 			
 			ig(134621),	-- Incendiary Helm 					(Removed)
@@ -212,8 +212,8 @@ local QUANTUM_GROUP = sharedData({
 
 		ig(6679),	-- Armor Piercer					(Removed)
 		ig(134721),	-- Cold-Touched Staff 				(Removed)
-		ig(1388),	-- Crooked Staff					(Removed)
-		ig(1539),	-- Gnarled Hermit's staff			(Removed)(Unique)
+	--	ig(1388),	-- Crooked Staff					(Removed)			Added in 10.1.7 to original Source
+	--	ig(1539),	-- Gnarled Hermit's staff			(Removed)(Unique)	Added in 10.1.7 to original Source
 		ig(2280),	-- Kam's Walking Stick				(Removed)
 	--	ig(2013),	-- Cryptbone Staff 					(Removed)			Added in 10.1.7 to original Source
 	--	ig(1928),	-- Defias Mage Staff 				(Removed)(Unique)	Added in 10.1.7 to original Source
