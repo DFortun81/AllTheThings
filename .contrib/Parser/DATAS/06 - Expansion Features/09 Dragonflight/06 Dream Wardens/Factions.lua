@@ -5,7 +5,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 	n(DREAM_WARDENS, {
 		n(FACTIONS, {
 			faction(FACTION_DREAM_WARDENS, {
-				ach(19235),	-- Warden of the Dream
+				ach(19230, {	-- Friends in the Dream
+					["minReputation"] = { FACTION_DREAM_WARDENS, 15 },	-- Dream Wardens Renown 15
+				}),
+				ach(19235, {	-- Warden of the Dream
+					["minReputation"] = { FACTION_DREAM_WARDENS, 20 },	-- Dream Wardens Renown 20
+				}),
 			}),
 		}),
 	}),
