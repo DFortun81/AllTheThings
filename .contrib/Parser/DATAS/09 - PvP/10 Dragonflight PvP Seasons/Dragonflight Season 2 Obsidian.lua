@@ -1556,23 +1556,6 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(205681),	-- Obsidian Gladiator's Shawl
 					}),
 				}),
-				filter(FINGER_F, {
-					i(205703),	-- Obsidian Gladiator's Band
-					i(205702),	-- Obsidian Gladiator's Ring
-					i(205704),	-- Obsidian Gladiator's Signet
-				}),
-				filter(NECK_F, {
-					i(205707),	-- Obsidian Gladiator's Amulet
-					i(205705),	-- Obsidian Gladiator's Necklace
-					i(205706),	-- Obsidian Gladiator's Pendant
-				}),
-				filter(TRINKET_F, {
-					i(205708),	-- Obsidian Gladiator's Badge of Ferocity
-					i(205710),	-- Obsidian Gladiator's Emblem
-					i(205709),	-- Obsidian Gladiator's Insignia of Alacrity
-					i(205711),	-- Obsidian Gladiator's Medallion
-					i(205712),	-- Obsidian Gladiator's Sigil of Adaptation
-				}),
 				n(199720, {	-- Glamora
 					["coord"] = { 45.9, 38.7, VALDRAKKEN },
 					["g"] = {
