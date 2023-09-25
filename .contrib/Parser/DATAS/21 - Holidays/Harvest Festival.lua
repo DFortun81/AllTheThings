@@ -64,6 +64,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEAD
 				i(20010),	-- The Horde's Hellscream
 			},
 		}),
+		q(54996, {	-- Remembrance
+			["qg"] = 149084,	-- Spiritwalker Ussoh
+			["coord"] = { 46.8, 15.4, DUROTAR },
+			["timeline"] = { ADDED_8_2_0 },
+			["races"] = { TAUREN },
+			["isYearly"] = true,
+		}),
 	}),
 	n(REWARDS, {
 		["description"] = "This is some of the best food and water you can get for leveling! It does disappear 15 minutes after log out though, so pick this up at the start of your session and game until you run out.",

@@ -4872,10 +4872,6 @@ root(ROOTS.NeverImplemented, {
 					["description"] = "Area: |cFFf09f26Nazjatar|r",
 					["lvl"] = 50,
 				}),
-				q(54996, {
-					["description"] = "Category: |cFFf09f26Seasonal|r",
-					["lvl"] = 50,
-				}),
 				q(55111, {
 					["description"] = "Area: |cFFf09f26Nazjatar|r",
 					["lvl"] = 50,
