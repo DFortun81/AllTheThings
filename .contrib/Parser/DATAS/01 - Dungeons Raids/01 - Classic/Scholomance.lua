@@ -597,7 +597,10 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["lvl"] = 57,
 			["groups"] = {
 				objective(1, {	-- 0/1 Keepsake of Remembrance
-					["provider"] = { "i", 13585 },	-- Keepsake of Remembrance
+					["providers"] = {
+						{ "i",  13585 },	-- Keepsake of Remembrance
+						{ "o", 176630 },	-- Keepsake of Remembrance
+					},
 					["coord"] = { 17.9, 69.4, ARATHI_HIGHLANDS },
 				}),
 			},
