@@ -702,7 +702,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			------ Glimmerogg Storyline ------
 			q(73707, {	-- TICKET: Glimmerogg Games
-				["sourceQuests"] = { 72979 },	-- The Earth Gives Way
+				["sourceQuests"] = {
+					72979,	-- The Earth Gives Way
+					DF_ACCOUNT_ZC_UNLOCK_QUEST,
+				},
+				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "o", 387520 },	-- TICKET: Glimmerogg Games
 				["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
 				["isBreadcrumb"] = true,

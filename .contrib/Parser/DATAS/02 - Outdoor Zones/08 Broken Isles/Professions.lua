@@ -435,7 +435,7 @@ root(ROOTS.Zones, {
 					q(40882, {	-- Court of Stars: Revamping the Recoil
 						["sourceQuests"] = {
 							40877,	-- Halls of Valor: Trigger Happy
-							40878,	-- Assault on Violet Hold: Cheating Death
+							-- 40878,	-- Assault on Violet Hold: Cheating Death [not required. 2023-09-25]
 						},
 						["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 						["coord"] = { 38.6, 25.0, LEGION_DALARAN },
