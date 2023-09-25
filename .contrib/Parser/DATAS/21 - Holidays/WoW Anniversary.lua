@@ -13,6 +13,7 @@ WOW_ANNIVERSARY_ROOT = createHeader({
 	},
 	text = {
 		en = "WoW's Anniversary",
+		ru = "Годовщина WoW",
 	},
 	description = {
 		en = "This is a yearly recurring event that occurs between the beginning of November and the end of the year.",

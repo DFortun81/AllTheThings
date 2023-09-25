@@ -991,5 +991,6 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDE
 		q(70759),	-- Ensemble: Green Valdrakken Clothing
 
 		q(76177, {["timeline"] = {ADDED_10_1_7}}),	-- RP after finishing `Dislocated Disc Located`(questID 75638)
+		q(78141, {["timeline"] = {ADDED_10_1_7}}),	-- RP after finishing `Dislocated Disc Located`(questID 75638) (for whatever reason this one pop now?)
 	}),
 })));

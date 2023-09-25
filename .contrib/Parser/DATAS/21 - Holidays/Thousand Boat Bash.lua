@@ -8,6 +8,7 @@ THOUSAND_BOAT_BASH_HEADER = createHeader({
 	eventID = EVENTS.THOUSAND_BOAT_BASH,
 	text = {
 		en = "Thousand Boat Bash",
+		ru = "Вечеринка тысячи лодок",
 	},
 });
 root(ROOTS.Holidays, applyevent(EVENTS.THOUSAND_BOAT_BASH, n(THOUSAND_BOAT_BASH_HEADER, bubbleDownSelf({ ["timeline"] = { "added 7.1.5" } }, {

@@ -126,6 +126,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 32.6, 39.6, THE_AZURE_SPAN },
 				},
 			}),
+			n(206825, {	-- Waking Dream
+				["description"] = "Can be found in Dreamsurge zone, interact with it to start event, kill all npcs that came out and portal is closed.",
+				["maps"] = { THALDRASZUS, THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN },	-- otherwise too many coords
+				["questID"] = 78273,
+				["isDaily"] = true,
+			}),
 		})),
 		n(REWARDS, {
 			i(DREAMSURGE_COALESCENCE, {

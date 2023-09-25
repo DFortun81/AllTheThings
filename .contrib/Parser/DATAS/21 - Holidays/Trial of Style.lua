@@ -8,6 +8,7 @@ TRIAL_OF_STYLE_HEADER = createHeader({
 	eventID = EVENTS.TRIAL_OF_STYLE,
 	text = {
 		en = "Trial of Style",
+		ru = "Наденьте это немедлено",
 	},
 });
 local TRIAL_OF_STYLE_TOKEN = 151134;

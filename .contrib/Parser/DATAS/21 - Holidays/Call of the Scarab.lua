@@ -8,6 +8,7 @@ CALL_OF_THE_SCARAB_HEADER = createHeader({
 	eventID = EVENTS.CALL_OF_THE_SCARAB,
 	text = {
 		en = "Call of the Scarab",
+		ru = "Зов скарабея",
 	},
 });
 root(ROOTS.Holidays, applyevent(EVENTS.CALL_OF_THE_SCARAB, n(CALL_OF_THE_SCARAB_HEADER, bubbleDownSelf({ ["timeline"] = { "added 7.1.5" } }, {
