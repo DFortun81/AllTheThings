@@ -29,11 +29,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				crit(59186, {	-- Goopal
 					["_npcs"] = { 203477 },	-- Goopal
 				}),
-				--[[
-				crit(9, {	-- Hadexia <Ember of Twilight>
-					["_npcs"] = { 203611 },	-- Hadexia <Ember of Twilight>
-				}),
-				]]--
 				crit(59200, {	-- Invohq
 					["_npcs"] = { 203627 },	-- Invohq
 				}),
@@ -52,25 +47,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				crit(59183, {	-- Kob'rok
 					["_npcs"] = { 203462 },	-- Kob'rok
 				}),
-				--[[
-				crit(16, {	-- Kronkapace
-					["_npcs"] = { 203642 },	-- Kronkapace
-				}),
-				crit(17, {	-- Lavermix
-					["_npcs"] = { 203630 },	-- Lavermix
-				}),
-				]]--
 				crit(59203, {	-- Magtembo
 					["_npcs"] = { 200111 },	-- Magtembo
 				}),
 				crit(59189, {	-- Professor Gastrinax
 					["_npcs"] = { 203521 },	-- Professor Gastrinax
 				}),
-				--[[
-				crit(20, {	-- Shadowforge Mole Machine
-					["_npcs"] = { 204096 },	-- Shadowforge Mole Machine
-				}),
-				]]--
 				crit(59205, {	-- Skornak
 					["_npcs"] = { 203643 },	-- Skornak
 				}),
@@ -88,27 +70,27 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 			}),
 			ach(17567, {    -- Ancient Stones of Zaralek
-				crit(1, {    -- Demanding Perfection
+				crit(58826, {    -- Demanding Perfection
 					["coord"] = { 43.3, 23.7, ZARALEK_CAVERN },
 				}),
-				crit(2, {    -- Binding Oaths
+				crit(58827, {    -- Binding Oaths
 					["coord"] = { 61.2, 71.8, ZARALEK_CAVERN },
 				}),
-				crit(3, {    -- Primal Power
+				crit(58828, {    -- Primal Power
 					["coord"] = { 47.4, 48.6, ZARALEK_CAVERN },
 				}),
 			}),
 			petbattle(ach(17880, {	-- Battle in Zaralek Cavern
-				crit(1, {	-- To a Land Down Under
+				crit(59352, {	-- To a Land Down Under
 					["_quests"] = { 75680 },	-- To a Land Down Under
 				}),
-				crit(2, {	-- Are They Not Beautiful?
+				crit(59351, {	-- Are They Not Beautiful?
 					["_quests"] = { 75750 },	-- Are They Not Beautiful?
 				}),
-				crit(3, {	-- Delver Mardei
+				crit(59354, {	-- Delver Mardei
 					["_quests"] = { 75834 },	-- Delver Mardei
 				}),
-				crit(4, {	-- Do you Even Train?
+				crit(59353, {	-- Do you Even Train?
 					["_quests"] = { 75835 },	-- Do you Even Train?
 				}),
 			})),
@@ -203,25 +185,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["coord"] = { 30.5, 45.3, ZARALEK_CAVERN },
 			}),
 			ach(17739, {	-- Embers of Neltharion
-				crit(1, {	-- Breaking Ground
+				crit(58530, {	-- A Creche Divided
+					["sourceQuests"] = { 73156 },	-- Return to Viridia
+				}),
+				crit(59133, {	-- Breaking Ground
 					["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
 				}),
-				crit(2, {	-- Sundered Legacy
+				crit(59134, {	-- Sundered Legacy
 					["sourceQuests"] = { 72965 },	-- Aspects of Our Legacy
 				}),
-				crit(3, {	-- The Ancient Bargain
+				crit(59135, {	-- The Ancient Bargain
 					["sourceQuests"] = { 75145 },	-- In the Wake of the Ashes
 				}),
-				crit(4, {	-- Inherited Sin
-					["sourceQuests"] = {
-						74562,	-- Break Them Out
-						74563,	-- Worst of the Worst
-					},
+				crit(59136, {	-- Inherited Sin
+					["sourceQuests"] = { 74563 },	-- Worst of the Worst
 				}),
-				crit(5, {	-- Inevitable Confrontation
+				crit(59137, {	-- Inherited Sin
+					["sourceQuests"] = { 74562 },	-- Break Them Out
+				}),
+				crit(59139, {	-- Inevitable Confrontation
 					["sourceQuests"] = { 72930 },	-- Stopping Sarkareth
 				}),
-				crit(6, {	-- A Flame, Extinguished
+				crit(59426, {	-- A Flame, Extinguished
 					["sourceQuests"] = { 75417 },	-- Symbol of Hope
 				}),
 			}),
@@ -245,181 +230,181 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 			})),
 			petbattle(ach(17881, {	-- Aquatic Battler of Zaralek Cavern
-				crit(1, {	-- Explorer Bezzert
+				crit(59355, {	-- Explorer Bezzert
 					["crs"] = { 201004 },
 					["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
 				}),
-				crit(2, {	-- Shinmura
+				crit(59356, {	-- Shinmura
 					["crs"] = { 204792 },
 					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
 				}),
-				crit(3, {	-- Delver Mardei
+				crit(59357, {	-- Delver Mardei
 					["crs"] = { 204926 },
 					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
 				}),
-				crit(4, {	-- Trainer Orlogg
+				crit(59358, {	-- Trainer Orlogg
 					["crs"] = { 204934 },
 					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
 				}),
 			})),
 			petbattle(ach(17882, {	-- Beast Battler of Zaralek Cavern
-				crit(1, {	-- Explorer Bezzert
+				crit(59359, {	-- Explorer Bezzert
 					["crs"] = { 201004 },
 					["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
 				}),
-				crit(2, {	-- Shinmura
+				crit(59360, {	-- Shinmura
 					["crs"] = { 204792 },
 					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
 				}),
-				crit(3, {	-- Delver Mardei
+				crit(59361, {	-- Delver Mardei
 					["crs"] = { 204926 },
 					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
 				}),
-				crit(4, {	-- Trainer Orlogg
+				crit(59362, {	-- Trainer Orlogg
 					["crs"] = { 204934 },
 					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
 				}),
 			})),
 			petbattle(ach(17883, {	-- Critter Battler of Zaralek Cavern
-				crit(1, {	-- Explorer Bezzert
+				crit(59363, {	-- Explorer Bezzert
 					["crs"] = { 201004 },
 					["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
 				}),
-				crit(2, {	-- Shinmura
+				crit(59364, {	-- Shinmura
 					["crs"] = { 204792 },
 					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
 				}),
-				crit(3, {	-- Delver Mardei
+				crit(59365, {	-- Delver Mardei
 					["crs"] = { 204926 },
 					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
 				}),
-				crit(4, {	-- Trainer Orlogg
+				crit(59366, {	-- Trainer Orlogg
 					["crs"] = { 204934 },
 					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
 				}),
 			})),
 			petbattle(ach(17890, {	-- Dragonkin Battler of Zaralek Cavern
-				crit(1, {	-- Explorer Bezzert
+				crit(59367, {	-- Explorer Bezzert
 					["crs"] = { 201004 },
 					["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
 				}),
-				crit(2, {	-- Shinmura
+				crit(59368, {	-- Shinmura
 					["crs"] = { 204792 },
 					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
 				}),
-				crit(3, {	-- Delver Mardei
+				crit(59369, {	-- Delver Mardei
 					["crs"] = { 204926 },
 					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
 				}),
-				crit(4, {	-- Trainer Orlogg
+				crit(59370, {	-- Trainer Orlogg
 					["crs"] = { 204934 },
 					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
 				}),
 			})),
 			petbattle(ach(17904, {	-- Elemental Battler of Zaralek Cavern
-				crit(1, {	-- Explorer Bezzert
+				crit(59371, {	-- Explorer Bezzert
 					["crs"] = { 201004 },
 					["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
 				}),
-				crit(2, {	-- Shinmura
+				crit(59372, {	-- Shinmura
 					["crs"] = { 204792 },
 					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
 				}),
-				crit(3, {	-- Delver Mardei
+				crit(59373, {	-- Delver Mardei
 					["crs"] = { 204926 },
 					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
 				}),
-				crit(4, {	-- Trainer Orlogg
+				crit(59374, {	-- Trainer Orlogg
 					["crs"] = { 204934 },
 					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
 				}),
 			})),
 			petbattle(ach(17905, {	-- Flying Battler of Zaralek Cavern
-				crit(1, {	-- Explorer Bezzert
+				crit(59375, {	-- Explorer Bezzert
 					["crs"] = { 201004 },
 					["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
 				}),
-				crit(2, {	-- Shinmura
+				crit(59376, {	-- Shinmura
 					["crs"] = { 204792 },
 					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
 				}),
-				crit(3, {	-- Delver Mardei
+				crit(59377, {	-- Delver Mardei
 					["crs"] = { 204926 },
 					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
 				}),
-				crit(4, {	-- Trainer Orlogg
+				crit(59378, {	-- Trainer Orlogg
 					["crs"] = { 204934 },
 					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
 				}),
 			})),
 			petbattle(ach(17915, {	-- Humanoid Battler of Zaralek Cavern
-				crit(1, {	-- Explorer Bezzert
+				crit(59379, {	-- Explorer Bezzert
 					["crs"] = { 201004 },
 					["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
 				}),
-				crit(2, {	-- Shinmura
+				crit(59380, {	-- Shinmura
 					["crs"] = { 204792 },
 					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
 				}),
-				crit(3, {	-- Delver Mardei
+				crit(59381, {	-- Delver Mardei
 					["crs"] = { 204926 },
 					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
 				}),
-				crit(4, {	-- Trainer Orlogg
+				crit(59382, {	-- Trainer Orlogg
 					["crs"] = { 204934 },
 					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
 				}),
 			})),
 			petbattle(ach(17916, {	-- Magic Battler of Zaralek Cavern
-				crit(1, {	-- Explorer Bezzert
+				crit(59383, {	-- Explorer Bezzert
 					["crs"] = { 201004 },
 					["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
 				}),
-				crit(2, {	-- Shinmura
+				crit(59384, {	-- Shinmura
 					["crs"] = { 204792 },
 					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
 				}),
-				crit(3, {	-- Delver Mardei
+				crit(59385, {	-- Delver Mardei
 					["crs"] = { 204926 },
 					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
 				}),
-				crit(4, {	-- Trainer Orlogg
+				crit(59386, {	-- Trainer Orlogg
 					["crs"] = { 204934 },
 					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
 				}),
 			})),
 			petbattle(ach(17917, {	-- Mechanical Battler of Zaralek Cavern
-				crit(1, {	-- Explorer Bezzert
+				crit(59387, {	-- Explorer Bezzert
 					["crs"] = { 201004 },
 					["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
 				}),
-				crit(2, {	-- Shinmura
+				crit(59388, {	-- Shinmura
 					["crs"] = { 204792 },
 					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
 				}),
-				crit(3, {	-- Delver Mardei
+				crit(59389, {	-- Delver Mardei
 					["crs"] = { 204926 },
 					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
 				}),
-				crit(4, {	-- Trainer Orlogg
+				crit(59390, {	-- Trainer Orlogg
 					["crs"] = { 204934 },
 					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
 				}),
 			})),
 			petbattle(ach(17918, {	-- Undead Battler of Zaralek Caverm
-				crit(1, {	-- Explorer Bezzert
+				crit(59391, {	-- Explorer Bezzert
 					["crs"] = { 201004 },
 					["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
 				}),
-				crit(2, {	-- Shinmura
+				crit(59392, {	-- Shinmura
 					["crs"] = { 204792 },
 					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
 				}),
-				crit(3, {	-- Delver Mardei
+				crit(59393, {	-- Delver Mardei
 					["crs"] = { 204926 },
 					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
 				}),
-				crit(4, {	-- Trainer Orlogg
+				crit(59394, {	-- Trainer Orlogg
 					["crs"] = { 204934 },
 					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
 				}),
@@ -434,82 +419,81 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					17781,	-- The Smell of Money
 					17786,	-- Treasures of Zaralek Cavern
 					17763,	-- There's No Place Like Loamm
-					-- TODO: 17773,	--
 				}},
 			}),
 			ach(17781),		-- The Smell of Money
 			ach(18361, {	-- To All the Squirrels Burrowed Beneath
-				crit(1, {	-- Hissing Dustmoth
+				crit(60010, {	-- Hissing Dustmoth
 					["crs"] = { 201124 },	-- Hissing Dustmoth
 					["coord"] = { 58.45, 74.22, ZARALEK_CAVERN },
 				}),
-				crit(2, {	-- Pygmy Dawdler
+				crit(60009, {	-- Pygmy Dawdler
 					["crs"] = { 201120 },	-- Pygmy Dawdler
 					["coord"] = { 58.24, 73.05, ZARALEK_CAVERN },
 				}),
-				crit(3, {	-- Rock Martin
+				crit(60008, {	-- Rock Martin
 					["crs"] = { 204673 },	-- Rock Martin
 					["coord"] = { 37.96, 71.07, ZARALEK_CAVERN },
 				}),
-				crit(4, {	-- Skittering Pincher
+				crit(60007, {	-- Skittering Pincher
 					["crs"] = { 204780 },	-- Skittering Pincher
 					["coord"] = { 50.16, 76.70, ZARALEK_CAVERN },
 				}),
-				crit(5, {	-- Hatchling Dawdler
+				crit(60011, {	-- Hatchling Dawdler
 					["crs"] = { 204785 },	-- Hatchling Dawdler
 					["coord"] = { 52.04, 75.21, ZARALEK_CAVERN },
 				}),
-				crit(6,	{	-- Aimless Snail
+				crit(60006,	{	-- Aimless Snail
 					["description"] = "Requires the quest The Slowest Fan Club from Briggul to be active and accepted. Hitting maximum reputation with Glimmerogg Racer means you will need party sync to get this quest to be able to see the critters.",
 					["_npcs"] = { 201875 },	-- Aimless Snail	(Using _npcs so the criteria shows inside of the ONLY daily quest which allows it to be completed)
 					["coord"] = { 44.91, 77.71, ZARALEK_CAVERN },
 				}),
-				crit(7, {	-- Incense Cinder
+				crit(60005, {	-- Incense Cinder
 					["crs"] = { 204801 },	-- Incense Cinder
 					["coord"] = { 36.40, 54.17, ZARALEK_CAVERN },
 				}),
-				crit(8, {	-- Magma Bubble
+				crit(60004, {	-- Magma Bubble
 					["crs"] = { 204802 },	-- Magma Bubble
 					["coord"] = { 36.51, 53.05, ZARALEK_CAVERN },
 				}),
-				crit(9, {	-- Phoenix Hatchling
+				crit(60003, {	-- Phoenix Hatchling
 					["crs"] = { 202720 },	-- Phoenix Hatchling
 					["coord"] = { 32.15, 51.11, ZARALEK_CAVERN },
 				}),
-				crit(10, {	-- Scuttering Bettle
+				crit(60002, {	-- Scuttering Bettle
 					["crs"] = { 205213 },	-- Scuttering Bettle
 					["coord"] = { 50.03, 64.69, ZARALEK_CAVERN },
 				}),
 			}),
 			ach(17786, {	-- Treasures of Zaralek Cavern
-				crit(1, {	-- Ancient Zaqali Chest
+				crit(59222, {	-- Ancient Zaqali Chest
 					["_quests"] = { 73697 },
 				}),
-				crit(2, {	-- Blazing Shadowflame Chest
+				crit(59220, {	-- Blazing Shadowflame Chest
 					["_quests"] = { 72986 },
 				}),
-				crit(3, {	-- Bloody Body
+				crit(59225, {	-- Bloody Body
 					["_quests"] = { 75232 },
 				}),
-				crit(4, {	-- Charred Egg
+				crit(59226, {	-- Charred Egg
 					["_quests"] = { 73706 },
 				}),
-				crit(5, {	-- Chest of the Flights
+				crit(59224, {	-- Chest of the Flights
 					["_quests"] = { 75187 },
 				}),
-				crit(6, {	-- Crystal-Encased Chest
+				crit(59228, {	-- Crystal-Encased Chest
 					["_quests"] = { 74986 },
 				}),
-				crit(7, {	-- Long-Lost Cache
+				crit(59223, {	-- Long-Lost Cache
 					["_quests"] = { 75019 },
 				}),
-				crit(8, {	-- Old Trunk
+				crit(59227, {	-- Old Trunk
 					["_quests"] = { 74995 },
 				}),
-				crit(9, {	-- Seething Cache
+				crit(59221, {	-- Seething Cache
 					["_quests"] = { 73410 },
 				}),
-				crit(10, {	-- Well-Chewed Chest
+				crit(59219, {	-- Well-Chewed Chest
 					["_quests"] = { 73395 },
 				}),
 			}),
