@@ -76,24 +76,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 			}),
 			ach(19026, {	-- Defenders of the Dream
-				crit(1, {	-- Enter The Dream
+				crit(62054, {	-- Enter The Dream
 					["sourceQuests"] = { 77283 },	-- A Multi-Front Battle
 				}),
-				crit(2, {	-- Druids of the Flame
+				crit(62055, {	-- Druids of the Flame
 					["sourceQuests"] = { 76443 },	-- The Looming Cinder
 				}),
-				crit(3, {	-- Ice and Fire
+				crit(62056, {	-- Ice and Fire
 					["sourceQuests"] = { 77178 },	-- Tactical Withdrawal
 				}),
-				crit(4, {	-- Eye of Ysera
+				crit(62057, {	-- Eye of Ysera
 					["sourceQuests"] = { 76337 },	-- The Ember Still Smolders
 				}),
-				--crit(5, {	-- xx
-				--	["sourceQuests"] = { xx },	-- xx
-				--}),
-				--crit(6, {	-- xx
-				--	["sourceQuests"] = { xx },	-- xx
-				--}),
+				-- crit(62058, {	-- A Dream of Fields and Fire
+				-- 	["sourceQuests"] = { 76401 },	-- xx
+				-- }),
+				-- crit(62059, {	-- New Beginnings
+				-- 	["sourceQuests"] = { 76283 },	-- xx
+				-- }),
 			}),
 			ach(19301, {	-- Dragon Glyphs: Amirdrassil
 				["coord"] = { 49.9, 64.3, TREE_1 },
@@ -322,7 +322,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					--["questID"] = xx,
 				}),
 			}),
-			ach(19194),	-- The Emerald Bounty
+			ach(19196),		-- Sowing the Seeds
+			ach(19194),		-- The Emerald Bounty
+			ach(19198, {	-- The Seeds I Sow
+				["g"] = {
+					title(527),	-- Blossom Bringer
+				},
+			}),
 			pvp(ach(19294)),	-- Tour of Duty: Emerald Dream
 			ach(19317, {	-- Treasures of the Emerald Dream
 				["g"] = {
