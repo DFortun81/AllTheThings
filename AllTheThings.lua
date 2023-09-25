@@ -15253,7 +15253,7 @@ RowOnEnter = function (self)
 				end
 			end
 
-			local awp, rwp = GetRelativeValue(group, "awp"), reference.rwp;
+			local awp, rwp = GetRelativeValue(reference, "awp"), reference.rwp;
 			if rwp then
 				local _,r,g,b = HexToARGB(app.Colors.RemovedWithPatch);
 				GameTooltip:AddLine(GetRemovedWithPatchString(rwp), r / 255, g / 255, b / 255, 1);
