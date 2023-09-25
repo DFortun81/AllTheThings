@@ -527,31 +527,31 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}},
 			}),
 			petbattle(ach(17879, {	-- Zaralek Cavern Safari
-				crit(1, {	-- Puddlehopper
+				crit(59342, {	-- Puddlehopper
 					["crs"] = { 203287 },
 				}),
-				crit(2, {	-- Rock Martin
+				crit(59343, {	-- Rock Martin
 					["crs"] = { 203288 },
 				}),
-				crit(3, {	-- Yellabon
+				crit(59344, {	-- Yellabon
 					["crs"] = { 203289 },
 				}),
-				crit(4, {	-- Endmite
+				crit(59345, {	-- Endmite
 					["crs"] = { 203292 },
 				}),
-				crit(5, {	-- Stonewhisker
+				crit(59346, {	-- Stonewhisker
 					["crs"] = { 203308 },
 				}),
-				crit(6, {	-- Cobbleshell
+				crit(59347, {	-- Cobbleshell
 					["crs"] = { 203310 },
 				}),
-				crit(7, {	-- Boulderfang
+				crit(59348, {	-- Boulderfang
 					["crs"] = { 203311 },
 				}),
-				crit(8, {	-- Slabwing
+				crit(59349, {	-- Slabwing
 					["crs"] = { 203312 },
 				}),
-				crit(9, {	-- Hollow Moth
+				crit(59350, {	-- Hollow Moth
 					["crs"] = { 203313 },
 				}),
 			})),

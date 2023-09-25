@@ -141,6 +141,35 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					19302,	-- Dragon Glyphs: Whorlwing basin
 				}},
 			}),
+			petbattle(ach(19401, {	-- Emerald Dream Safari
+				crit(63271, {	-- Dream Badger
+					["crs"] = { 212557 },
+				}),
+				crit(63272, {	-- Flooftalon
+					["crs"] = { 211110 },
+				}),
+				crit(63273, {	-- Fol'ya Pup
+					["crs"] = { 211177 },
+				}),
+				crit(63274, {	-- Leyhart
+					["crs"] = { 211288 },
+				}),
+				crit(63275, {	-- Pale Slumbertooth
+					["crs"] = { 212437 },
+				}),
+				crit(63276, {	-- Pewling
+					["crs"] = { 211302 },
+				}),
+				crit(63277, {	-- Sapnibbler
+					["crs"] = { 211182 },
+				}),
+				crit(63278, {	-- Slumbertooth
+					["crs"] = { 211295 },
+				}),
+				crit(63279, {	-- Snaggletoof
+					["crs"] = { 212459 },
+				}),
+			})),
 			explorationAch(19309),	-- Explore the Emerald Dream
 			ach(19293, {	-- Friends In Feathers
 				["g"] = {
