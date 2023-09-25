@@ -5,10 +5,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 	n(DRAGONSCALE_EXPEDITION, {
 		n(ACHIEVEMENTS, {
 			ach(16522, {	-- A True Explorer
-				["minReputation"] = { 2507, 25 },	-- Dragonscale Expedition Renown 25
+				["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },	-- Dragonscale Expedition Renown 25
+			}),
+			ach(16884, {	-- Friends in the Field
+				["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 15 },	-- Dragonscale Expedition Renown 15
+				["timeline"] = { ADDED_10_2_0 },
 			}),
 			ach(16571, {	-- Well Supplied
-				["minReputation"] = { 2507, 7 },	-- Dragonscale Expedition Renown 7
+				["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 7 },	-- Dragonscale Expedition Renown 7
 			}),
 		}),
 	}),
