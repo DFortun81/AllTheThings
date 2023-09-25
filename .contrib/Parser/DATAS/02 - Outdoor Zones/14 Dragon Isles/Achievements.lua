@@ -73,6 +73,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				16518,	-- Explore Thaldraszus
 			}},
 		}),
+		ach(19307, {	-- Dragon Isles Pathfinder
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				16334,	-- Waking Hope
+				15394,	-- Ohn'a'Roll
+				16336,	-- Azure Spanner
+				16363,	-- Just Don't Ask Me to Spell It
+				17739,	-- Embers of Neltharion
+				19308,	-- Freshscales Fifteen
+				16761,	-- Dragon Isles Explorer
+				17766,	-- Explore Zaralek Cavern
+				19309,	-- Explore the Emerald Dream
+			}},
+			["timeline"] = { ADDED_10_2_0 },
+		}),
 		ach(15939, {	-- Dragon Racing Completionist
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -160,6 +175,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				title(523),	-- Isles Ace <Name>
 			}
 		})),
+		ach(19308, {	-- Freshscales Fifteen
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				16994,	-- Valdrakken Accord
+				16884,	-- Dragonscale Expedition
+				16944,	-- Iskaara Tuskar
+				17064,	-- Maruuk Centaur
+				17756,	-- Loamm Niffen
+				19230,	-- Dream Wardens
+			}},
+			["timeline"] = { ADDED_10_2_0 },
+		}),
 		ach(18559, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Many Boxes, Many Rockses
 			["cost"] = {{"i", 199216, 50 }},	-- 50x A Box of Rocks
 			["g"] = {
