@@ -384,6 +384,13 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 					i(198687),	-- Closely Guarded Shiny
 				},
 			}),
+			o(410484, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Coalesced Dreamstone
+				["coord"] = { 58.9, 53.8, TREE_1 },
+				["questID"] = 78285,
+				["g"] = {
+					i(210202),	-- Coalesced Dreamstone
+				},
+			})),
 			o(380569, {	-- Crystalline Overgrowth
 				["questID"] = 70277,
 				["coord"] = { 45.01, 61.3, THE_AZURE_SPAN },
@@ -451,11 +458,25 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 					i(198656),	-- Painter's Pretty Jewel
 				},
 			}),
+			o(410475, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Petrified Hope
+				["coord"] = { 33.2, 46.5, TREE_1 },
+				["questID"] = 78282,
+				["g"] = {
+					i(210200),	-- Petrified Hope
+				},
+			})),
 			o(401241, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Snubbed Snail Shells
 				["coord"] = { 40.4, 80.7, ZARALEK_CAVERN },
 				["questID"] = 75652,
 				["g"] = {
 					i(205214),	-- Snubbed Snail Shells
+				},
+			})),
+			o(410479, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Unpolished Blemish
+				["coord"] = { 43.4, 33.3, TREE_1 },
+				["questID"] = 78283,
+				["g"] = {
+					i(210201),	-- Handful of Pebbles
 				},
 			})),
 		}),

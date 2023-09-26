@@ -535,6 +535,13 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 					i(198680),	-- Decaying Brackenhide Blanket
 				},
 			}),
+			o(411171, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Exceedingly Soft Wildercloth
+				["coord"] = { 53.2, 27.9, TREE_1 },
+				["questID"] = 78414,
+				["g"] = {
+					i(210461),	-- Exceedingly Soft Wildercloth
+				},
+			})),
 			o(402887, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Exquisitely Embroidered Banner
 				["coord"] = { 44.5, 15.7, ZARALEK_CAVERN },
 				["questID"] = 76116,
@@ -570,6 +577,13 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 					i(198699),	-- Mysterious Banner
 				},
 			}),
+			o(411176, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Plush Pillow
+				["coord"] = { 49.8, 61.4, TREE_1 },
+				["questID"] = 78415,
+				["g"] = {
+					i(210462),	-- Plush Pillow
+				},
+			})),
 			o(380608, {	-- Silky Surprise
 				["description"] = "Interact with the Catnip Frond, gather 5 Catnip Leaves and throw them at the Playful Prowler. Then the treasure will appear.",
 				["questID"] = 70303,
@@ -579,6 +593,13 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 					i(201020),	-- Silky Surprise
 				},
 			}),
+			o(411177, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Snuggle Buddy
+				["coord"] = { 40.7, 86.1, TREE_1 },
+				["questID"] = 78416,
+				["g"] = {
+					i(210463),	-- Snuggle Buddy
+				},
+			})),
 			o(402878, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Used Medical Wrap Kit
 				["coord"] = { 59.1, 73.1, ZARALEK_CAVERN },
 				["questID"] = 76110,

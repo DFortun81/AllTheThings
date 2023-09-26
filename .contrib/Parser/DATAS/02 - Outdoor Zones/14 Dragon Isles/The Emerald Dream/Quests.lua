@@ -63,7 +63,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						i(209938),	-- Chartreuse Champion's Greatsword
 						i(209924),	-- Chartreuse Champion's Warspear
 						i(209925),	-- Fearless Faerie's Dirk
-						--i(209922),	-- Fearless Faerie's Glaive
+						i(209922),	-- Fearless Faerie's Glaive
 						i(209942),	-- Fearless Faerie's Kris
 						i(209932),	-- Fearless Faerie's Mace
 						i(209921),	-- Spirited Stag's Branch
@@ -698,6 +698,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 77314 },	-- Requiem in a Dream
 				["provider"] = { "n", 208714 },	-- Ysera
 				["coord"] = { 58.6, 23.8, TREE_1 },
+				["g"] = {
+					i(210954),	-- Sprout of Rebirth
+				},
 			}),
 			--
 			q(78427, {	-- Great Crates!

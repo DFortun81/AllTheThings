@@ -1075,7 +1075,6 @@ root(ROOTS.Unsorted, {
 			i(209880),	-- Curve of Starry Dusks
 			i(209881),	-- Fystia's Fiery Kris
 			i(209882),	-- Maruud's Undertow
-			i(209922),	-- Fearless Faerie's Glaive
 			i(209948),	-- Spring's Keeper
 			i(209952),	-- Mark of Q'onzu
 			i(209954),	-- Moragh's Favorite Rock
@@ -1149,9 +1148,6 @@ root(ROOTS.Unsorted, {
 			i(210190),	-- Blazeroot
 			i(210193),	-- Experimental Dreamcatcher
 			i(210198),	-- Depleted Battery
-			i(210200),	-- Petrified Hope
-			i(210201),	-- Handful of Pebbles
-			i(210202),	-- Coalesced Dreamstone
 			i(210203),	-- Mail - WRIST 2
 			i(210204),	-- Cloth - WRIST 2
 			i(210205),	-- Plate - WRIST 2
@@ -1163,7 +1159,6 @@ root(ROOTS.Unsorted, {
 			i(210224),	-- Small Emerald Bloom
 			i(210225),	-- Medium Emerald Bloom
 			i(210226),	-- Large Emerald Bloom
-			i(210237),	-- Nipping Night's Necklace
 			i(210324),	-- Medal of Honor
 			i(210325),	-- Medal of Honor
 			i(210326),	-- Medal of Conquest
@@ -1206,7 +1201,6 @@ root(ROOTS.Unsorted, {
 			i(210394),	-- Cold Conservator's Cane
 			i(210395),	-- Crystalline Tender's Mace
 			i(210396),	-- Frigid Forager's Longbow
-			i(210397),	-- Frigid Forager's Chopper
 			i(210398),	-- Frigid Forager's Handaxe
 			i(210399),	-- Cold Conservator's Mallet
 			i(210400),	-- Winter Warden's Gavel
@@ -1242,9 +1236,6 @@ root(ROOTS.Unsorted, {
 			i(210452),	-- Small Demon Horn
 			i(210456),	-- Dreaming Antler Fragment
 			i(210457),	-- Fish Bones
-			i(210461),	-- Exceedingly Soft Wildercloth
-			i(210462),	-- Plush Pillow
-			i(210463),	-- Snuggle Buddy
 			i(210468),	-- Emerald Blossom Dreamstone
 			i(210470),	-- Echoed Ephemera
 			i(210472),	-- Igira's Cruel Nightmare
@@ -1443,7 +1434,6 @@ root(ROOTS.Unsorted, {
 			i(210947),	-- Flame-Warped Curio
 			i(210948),	-- Imagiwing
 			i(210952),	-- Spare Heated Hearthstone
-			i(210954),	-- Sprout of Rebirth
 			i(210958),	-- Crown of the Dryad Guardian
 			i(210959),	-- [PH] Misfit Renown Item
 			i(210961),	-- Alara'shinu
