@@ -1307,6 +1307,10 @@ namespace ATT
                 list.Sort();
                 dict["classes"] = list;
             }
+            else
+            {
+                dict.Remove("classes");
+            }
             // 2020-08-19 Blizz seems to have relegated to simply showing ALLIANCE or HORDE for a faction tag instead of listing all races within a given faction
             if (requirements.TryGetValue("faction", out d))
             {
@@ -1346,6 +1350,10 @@ namespace ATT
                     }
                 }
             }
+            else
+            {
+                dict.Remove("r");
+            }
             // "playable_specializations" is also a possible requirement -- i.e. artifacts
             if (requirements.TryGetValue("playable_races", out d))
             {
@@ -1354,6 +1362,10 @@ namespace ATT
             else if (requirements.TryGetValue("races", out List<object> race_list))
             {
                 Parse_races(dict, race_list);
+            }
+            else
+            {
+                dict.Remove("races");
             }
         }
 

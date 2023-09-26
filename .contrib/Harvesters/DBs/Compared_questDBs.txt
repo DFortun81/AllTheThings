@@ -121,6 +121,12 @@ Comparing .\questDB-20230908.json
 16, 241, 8330, 8336, 8345, 8346, 25134, 32674, 32675, 38306, 38344, 38345, 38346, 38394, 38395, 38396, 38397, 38402, 38404, 41778, 41783, 42732, 46810, 46946, 48375, 48376, 49813, 49816, 49817, 49846, 49851, 49852, 49860, 49862, 49863, 49864, 49865, 49866, 51403, 52946, 53030, 53031, 53032, 53033, 53034, 53035, 53036, 53037, 53038, 53039, 54084, 54995, 57671, 57681, 57682, 57683, 57684, 57685, 57820, 57821, 57896, 57961, 57962, 58261, 58377, 58378, 58399, 58909, 58954, 58991, 59168, 59169, 59204, 59318, 59320, 59324, 59539, 59548, 59549, 59550, 59551, 59552, 59606, 59608, 60093, 60130, 60134, 60137, 60140, 60141, 60232, 60233, 60234, 60235, 60345, 60499, 60757, 60769, 60885, 60888, 60902, 61324, 61325, 61440, 61495, 61508, 61513, 61515, 61554, 61608, 61630, 61690, 61881, 62284, 62285, 62286, 62287, 62288, 62457, 62631, 62632, 62633, 62634, 62635, 62636, 62637, 62638, 62639, 62640, 62696, 62886, 62910, 62911, 63024, 63025, 63026, 63027, 63101, 63735, 64304, 64571, 64709, 64981, 65106, 65283, 65324, 65372, 65424, 65425, 65649, 65773, 65775, 66109, 66682, 66860, 66861, 66862, 66863, 66864, 66865, 66866, 66867, 66868, 66869, 66870, 66871, 66872, 66873, 66874, 66875, 66970, 67017, 67743, 69903, 70167, 70173, 70844, 70846, 70852, 71147, 72360, 72528
 238 Brand New IDs in the New DB compared to the Old DB.
 66179, 66180, 66181, 66182, 66183, 66184, 66185, 66186, 66188, 66189, 66190, 66191, 66392, 66393, 66394, 66395, 66396, 66397, 66398, 66399, 66400, 66401, 66409, 66410, 66411, 66413, 66414, 66415, 66417, 66418, 66431, 66440, 66443, 66444, 66620, 66635, 68640, 68863, 75776, 75777, 75778, 75779, 75780, 75781, 75782, 75783, 75784, 75785, 75786, 75787, 75788, 75789, 75790, 75791, 75792, 75793, 75794, 75795, 75796, 75797, 75798, 75799, 75800, 75801, 75802, 75803, 75804, 75805, 75806, 75807, 75808, 75809, 75810, 75811, 75812, 75813, 75815, 75816, 75817, 75820, 75821, 75822, 75823, 75824, 75825, 75826, 75827, 75828, 75829, 75830, 75938, 75954, 75955, 75956, 75957, 75958, 75959, 75960, 75961, 75962, 75963, 75964, 75965, 75972, 75973, 75974, 75975, 75976, 75977, 75978, 75979, 75980, 75981, 75982, 75983, 76033, 76034, 76035, 76036, 76037, 76040, 76041, 76042, 76043, 76044, 76045, 76046, 76047, 76048, 76049, 76050, 76051, 76052, 76053, 76054, 76055, 76056, 76057, 76058, 76059, 76060, 76061, 76062, 76063, 76064, 76065, 76066, 76146, 76147, 76368, 76452, 76456, 76504, 76514, 76531, 76545, 76554, 76560, 76577, 76579, 76591, 76598, 76735, 77095, 77096, 77097, 77099, 77102, 77103, 77104, 77152, 77153, 77155, 77163, 77169, 77170, 77171, 77202, 77203, 77205, 77206, 77207, 77208, 77237, 77238, 77239, 77240, 77251, 77260, 77261, 77262, 77263, 77264, 77265, 77266, 77276, 77277, 77278, 77279, 77280, 77281, 77282, 77284, 77286, 77322, 77323, 77324, 77345, 77346, 77347, 77348, 77398, 77399, 77400, 77414, 77423, 77589, 77591, 77593, 77644, 77645, 77646, 77647, 77684, 77685, 77686, 77698, 77744, 77745, 77746, 77747, 77779, 77794, 77839, 77840, 77976, 78113, 78169
+------
+Comparing .\questDB-20230926.json
+182 Missing IDs in the New DB compared to the Old DB.
+16, 241, 8330, 8336, 8345, 8346, 25134, 32674, 32675, 38306, 38344, 38345, 38346, 38394, 38395, 38396, 38397, 38402, 38404, 41778, 41783, 42732, 46810, 46946, 48375, 48376, 49813, 49816, 49817, 49846, 49851, 49852, 49860, 49862, 49863, 49864, 49865, 49866, 51403, 52946, 53030, 53031, 53032, 53033, 53034, 53035, 53036, 53037, 53038, 53039, 54084, 54995, 57671, 57681, 57682, 57683, 57684, 57685, 57820, 57821, 57896, 57961, 57962, 58261, 58377, 58378, 58399, 58909, 58954, 58991, 59168, 59169, 59204, 59318, 59320, 59324, 59539, 59548, 59549, 59550, 59551, 59552, 59606, 59608, 60093, 60130, 60134, 60137, 60140, 60141, 60232, 60233, 60234, 60235, 60345, 60499, 60757, 60769, 60885, 60888, 60902, 61324, 61325, 61440, 61495, 61508, 61513, 61515, 61554, 61608, 61630, 61690, 61881, 62284, 62285, 62286, 62287, 62288, 62457, 62631, 62632, 62633, 62634, 62635, 62636, 62637, 62638, 62639, 62640, 62696, 62886, 62910, 62911, 63024, 63025, 63026, 63027, 63101, 63735, 64304, 64571, 64709, 64981, 65106, 65283, 65324, 65372, 65424, 65425, 65649, 65773, 65775, 66109, 66682, 66860, 66861, 66862, 66863, 66864, 66865, 66866, 66867, 66868, 66869, 66870, 66871, 66872, 66873, 66874, 66875, 66970, 67017, 67743, 69903, 70167, 70173, 70844, 70846, 70852, 71147, 72360, 72528
+0 Brand New IDs in the New DB compared to the Old DB.
+
 
 == Per Item Differences Breakdown ==
 #2
@@ -47122,7 +47128,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29101
 .\questDB-20201014.json
 - ADDED: isDaily = 1
@@ -47137,7 +47143,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29103
 .\questDB-20201014.json
 - EMPTY: r
@@ -47146,7 +47152,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29104
 .\questDB-20201014.json
 - EMPTY: r
@@ -47155,7 +47161,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29105
 .\questDB-20201014.json
 - EMPTY: r
@@ -47164,7 +47170,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29106
 .\questDB-20201024.json
 - CHANGE: lvl: 10 --> [10]
@@ -47196,7 +47202,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29115
 .\questDB-20201014.json
 - EMPTY: r
@@ -47205,7 +47211,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29116
 .\questDB-20201014.json
 - EMPTY: r
@@ -47214,7 +47220,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29117
 .\questDB-20201024.json
 - CHANGE: lvl: 10 --> [10]
@@ -47226,7 +47232,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29119
 .\questDB-20201024.json
 - CHANGE: lvl: 10 --> [10]
@@ -47238,7 +47244,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29121
 .\questDB-20201014.json
 - EMPTY: r
@@ -47247,7 +47253,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29122
 .\questDB-20201014.json
 - ADDED: isDaily = 1
@@ -47268,7 +47274,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29125
 .\questDB-20201014.json
 - ADDED: isDaily = 1
@@ -47306,7 +47312,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29132
 .\questDB-20201014.json
 - CHANGE: lvl: 85 --> 35
@@ -47320,7 +47326,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29134
 .\questDB-20201014.json
 - CHANGE: lvl: 85 --> 35
@@ -47406,7 +47412,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29151
 .\questDB-20201014.json
 - EMPTY: r
@@ -47415,7 +47421,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29152
 .\questDB-20201014.json
 - EMPTY: r
@@ -47424,7 +47430,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29153
 .\questDB-20201014.json
 - EMPTY: r
@@ -47433,7 +47439,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29154
 .\questDB-20201014.json
 - EMPTY: r
@@ -47442,7 +47448,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29155
 .\questDB-20201014.json
 - EMPTY: r
@@ -47451,7 +47457,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29156
 .\questDB-20201014.json
 - EMPTY: r
@@ -47460,7 +47466,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29157
 .\questDB-20201014.json
 - EMPTY: r
@@ -47469,7 +47475,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29158
 .\questDB-20201014.json
 - EMPTY: r
@@ -47478,7 +47484,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29159
 .\questDB-20201014.json
 - ADDED: isDaily = 1
@@ -47702,7 +47708,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29214
 .\questDB-20201014.json
 - CHANGE: lvl: 85 --> 32
@@ -47731,7 +47737,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29220
 .\questDB-20201014.json
 - EMPTY: r
@@ -47740,7 +47746,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29221
 .\questDB-20201014.json
 - CHANGE: lvl: 85 --> 35
@@ -47754,7 +47760,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29223
 .\questDB-20201014.json
 - CHANGE: lvl: 85 --> 35
@@ -47773,7 +47779,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29227
 .\questDB-20201014.json
 - EMPTY: r
@@ -47782,7 +47788,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29228
 .\questDB-20201014.json
 - EMPTY: r
@@ -47791,7 +47797,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29229
 .\questDB-20201014.json
 - EMPTY: r
@@ -47800,7 +47806,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29230
 .\questDB-20201014.json
 - EMPTY: r
@@ -47809,7 +47815,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29231
 .\questDB-20201014.json
 - EMPTY: r
@@ -47818,7 +47824,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29232
 .\questDB-20201014.json
 - EMPTY: r
@@ -47827,7 +47833,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29233
 .\questDB-20201014.json
 - EMPTY: r
@@ -47836,7 +47842,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29234
 .\questDB-20201014.json
 - CHANGE: lvl: 85 --> 35
@@ -47850,7 +47856,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29236
 .\questDB-20201014.json
 - EMPTY: r
@@ -47859,7 +47865,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29237
 .\questDB-20201014.json
 - EMPTY: r
@@ -47868,7 +47874,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29238
 .\questDB-20201014.json
 - EMPTY: r
@@ -47877,7 +47883,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29239
 .\questDB-20201014.json
 - CHANGE: lvl: 85 --> 35
@@ -47940,7 +47946,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29251
 .\questDB-20201014.json
 - EMPTY: r
@@ -47949,7 +47955,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29252
 .\questDB-20201014.json
 - EMPTY: r
@@ -47958,7 +47964,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29253
 .\questDB-20201014.json
 - EMPTY: r
@@ -47967,7 +47973,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29254
 .\questDB-20201014.json
 - CHANGE: lvl: 85 --> 32
@@ -48021,7 +48027,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29268
 .\questDB-20201014.json
 - EMPTY: r
@@ -48030,7 +48036,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #29269
 .\questDB-20201014.json
 - CHANGE: lvl: 85 --> 35
@@ -56277,7 +56283,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #31520
 .\questDB-20201014.json
 - EMPTY: r
@@ -56286,7 +56292,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #31521
 .\questDB-20201014.json
 - CHANGE: lvl: 85 --> 10
@@ -56300,7 +56306,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #31523
 .\questDB-20201014.json
 - EMPTY: r
@@ -56309,7 +56315,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #31524
 .\questDB-20201014.json
 - EMPTY: r
@@ -56318,7 +56324,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #31525
 .\questDB-20201014.json
 - EMPTY: r
@@ -56327,7 +56333,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #31526
 .\questDB-20201014.json
 - EMPTY: r
@@ -56336,7 +56342,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #31527
 .\questDB-20201014.json
 - EMPTY: r
@@ -56345,7 +56351,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #31528
 .\questDB-20201014.json
 - EMPTY: r
@@ -56354,7 +56360,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #31529
 .\questDB-20201014.json
 - CHANGE: lvl: 81 --> 15
@@ -58111,7 +58117,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #31999
 .\questDB-20201014.json
 - CHANGE: lvl: 80 --> 10
@@ -58125,7 +58131,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #32001
 .\questDB-20201014.json
 - EMPTY: r
@@ -58134,7 +58140,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #32002
 .\questDB-20201014.json
 - EMPTY: r
@@ -58143,7 +58149,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #32003
 .\questDB-20201014.json
 - EMPTY: r
@@ -58152,7 +58158,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #32004
 .\questDB-20201014.json
 - EMPTY: r
@@ -58161,7 +58167,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #32005
 .\questDB-20201014.json
 - EMPTY: r
@@ -58170,7 +58176,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #32006
 .\questDB-20201014.json
 - EMPTY: r
@@ -58179,7 +58185,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #32007
 .\questDB-20201014.json
 - EMPTY: r
@@ -58188,7 +58194,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #32008
 .\questDB-20201024.json
 - ADDED: lvl = [1]
@@ -59568,7 +59574,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #32374
 .\questDB-20201014.json
 - EMPTY: r
@@ -59577,7 +59583,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #32375
 .\questDB-20201014.json
 - CHANGE: lvl: 81 --> 15
@@ -59636,7 +59642,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #32389
 .\questDB-20201014.json
 - EMPTY: r
@@ -59645,7 +59651,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #32390
 .\questDB-20201014.json
 - EMPTY: r
@@ -59654,7 +59660,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #32391
 .\questDB-20201014.json
 - CHANGE: lvl: 81 --> 15
@@ -59808,7 +59814,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #32428
 .\questDB-20201024.json
 - ADDED: lvl = [1]
@@ -59820,7 +59826,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #32430
 .\questDB-20201014.json
 - EMPTY: r
@@ -59829,7 +59835,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #32431
 .\questDB-20201014.json
 - EMPTY: r
@@ -59838,7 +59844,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #32432
 .\questDB-20201014.json
 - EMPTY: r
@@ -59847,7 +59853,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #32433
 .\questDB-20201014.json
 - ADDED: isDaily = 1
@@ -60463,7 +60469,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #32590
 .\questDB-20201014.json
 - CHANGE: lvl: 90 --> 35
@@ -60517,7 +60523,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #32600
 .\questDB-20201014.json
 - CHANGE: lvl: 85 --> 30
@@ -61201,7 +61207,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #32901
 .\questDB-20201014.json
 - EMPTY: r
@@ -61210,7 +61216,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #32929
 .\questDB-20201014.json
 - CHANGE: lvl: 90 --> 10
@@ -61263,7 +61269,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #32980
 .\questDB-20201014.json
 - EMPTY: r
@@ -61272,7 +61278,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #32981
 .\questDB-20201014.json
 - CHANGE: lvl: 90 --> 10
@@ -61286,7 +61292,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #32984
 .\questDB-20201014.json
 - EMPTY: r
@@ -61295,7 +61301,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #32985
 .\questDB-20201014.json
 - EMPTY: r
@@ -61304,7 +61310,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #32989
 .\questDB-20201014.json
 - CHANGE: lvl: 90 --> 10
@@ -61701,7 +61707,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #33249
 .\questDB-20201014.json
 - EMPTY: r
@@ -61710,7 +61716,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 35 --> [35]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #33250
 .\questDB-20201014.json
 - ADDED: repeatable = 1
@@ -61944,7 +61950,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #33450
 .\questDB-20201014.json
 - CHANGE: lvl: 90 --> 10
@@ -62563,7 +62569,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34027
 .\questDB-20201014.json
 - EMPTY: r
@@ -62572,7 +62578,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34028
 .\questDB-20201014.json
 - EMPTY: r
@@ -62581,7 +62587,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34029
 .\questDB-20201014.json
 - EMPTY: r
@@ -62590,7 +62596,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34030
 .\questDB-20201014.json
 - EMPTY: r
@@ -62599,7 +62605,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34031
 .\questDB-20201014.json
 - EMPTY: r
@@ -62608,7 +62614,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34032
 .\questDB-20201014.json
 - EMPTY: r
@@ -62617,7 +62623,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34033
 .\questDB-20201014.json
 - EMPTY: r
@@ -62626,7 +62632,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34034
 .\questDB-20201014.json
 - EMPTY: r
@@ -62635,7 +62641,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34035
 .\questDB-20201014.json
 - EMPTY: r
@@ -62644,7 +62650,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34039
 .\questDB-20201014.json
 - EMPTY: r
@@ -62653,7 +62659,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34040
 .\questDB-20201014.json
 - EMPTY: r
@@ -62662,7 +62668,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34041
 .\questDB-20201014.json
 - EMPTY: r
@@ -62671,7 +62677,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34042
 .\questDB-20201014.json
 - EMPTY: r
@@ -62680,7 +62686,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34043
 .\questDB-20201014.json
 - CHANGE: lvl: 90 --> 10
@@ -62694,7 +62700,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34054
 .\questDB-20201014.json
 - CHANGE: lvl: 90 --> 10
@@ -62748,7 +62754,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34079
 .\questDB-20201014.json
 - CHANGE: lvl: 90 --> 10
@@ -62922,7 +62928,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34216
 .\questDB-20201014.json
 - CHANGE: lvl: 90 --> 10
@@ -62981,7 +62987,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34246
 .\questDB-20201014.json
 - CHANGE: lvl: 100 --> 40
@@ -63030,7 +63036,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34284
 .\questDB-20201014.json
 - EMPTY: r
@@ -63039,7 +63045,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34285
 .\questDB-20201014.json
 - EMPTY: r
@@ -63048,7 +63054,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34286
 .\questDB-20201014.json
 - EMPTY: r
@@ -63057,7 +63063,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34287
 .\questDB-20201014.json
 - EMPTY: r
@@ -63066,7 +63072,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34288
 .\questDB-20201014.json
 - EMPTY: r
@@ -63075,7 +63081,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34289
 .\questDB-20201014.json
 - EMPTY: r
@@ -63084,7 +63090,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34291
 .\questDB-20201014.json
 - CHANGE: lvl: 90 --> 10
@@ -63118,7 +63124,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34314
 .\questDB-20201014.json
 - EMPTY: r
@@ -63127,7 +63133,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34315
 .\questDB-20201014.json
 - EMPTY: r
@@ -63136,7 +63142,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34316
 .\questDB-20201014.json
 - EMPTY: r
@@ -63145,7 +63151,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34318
 .\questDB-20201014.json
 - EMPTY: r
@@ -63154,7 +63160,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34319
 .\questDB-20201014.json
 - EMPTY: r
@@ -63163,7 +63169,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34321
 .\questDB-20201014.json
 - CHANGE: lvl: 100 --> 40
@@ -63272,7 +63278,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34364
 .\questDB-20201014.json
 - CHANGE: lvl: 90 --> 10
@@ -63311,7 +63317,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34392
 .\questDB-20201014.json
 - CHANGE: lvl: 90 --> 10
@@ -63555,7 +63561,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #34472
 .\questDB-20201014.json
 - CHANGE: lvl: 100 --> 40
@@ -65442,7 +65448,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #35143
 .\questDB-20201014.json
 - CHANGE: lvl: 98 --> 35
@@ -65579,7 +65585,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #35186
 .\questDB-20201014.json
 - EMPTY: r
@@ -65588,7 +65594,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #35187
 .\questDB-20201014.json
 - CHANGE: lvl: 100 --> 40
@@ -65632,7 +65638,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #35197
 .\questDB-20201014.json
 - EMPTY: r
@@ -65641,7 +65647,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #35202
 .\questDB-20201014.json
 - CHANGE: lvl: 92 --> 15
@@ -67144,7 +67150,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #35680
 .\questDB-20201014.json
 - EMPTY: r
@@ -67153,7 +67159,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #35683
 .\questDB-20201014.json
 - EMPTY: r
@@ -67162,7 +67168,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #35684
 .\questDB-20201014.json
 - EMPTY: r
@@ -67171,7 +67177,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #35685
 .\questDB-20201014.json
 - EMPTY: r
@@ -67180,7 +67186,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #35686
 .\questDB-20201014.json
 - CHANGE: lvl: 92 --> 15
@@ -67194,7 +67200,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #35689
 .\questDB-20201014.json
 - ADDED: isDaily = 1, repeatable = 1
@@ -67307,7 +67313,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #35737
 .\questDB-20201014.json
 - EMPTY: r
@@ -67316,7 +67322,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #35738
 .\questDB-20201014.json
 - CHANGE: lvl: 96 --> 30
@@ -67513,7 +67519,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #35838
 .\questDB-20201014.json
 - EMPTY: r
@@ -67522,7 +67528,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #35839
 .\questDB-20201014.json
 - EMPTY: r
@@ -67531,7 +67537,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #35840
 .\questDB-20201014.json
 - EMPTY: r
@@ -67540,7 +67546,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #35841
 .\questDB-20201014.json
 - EMPTY: r
@@ -67549,7 +67555,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #35842
 .\questDB-20201014.json
 - EMPTY: r
@@ -67558,7 +67564,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #35843
 .\questDB-20201014.json
 - EMPTY: r
@@ -67567,7 +67573,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #35844
 .\questDB-20201014.json
 - EMPTY: r
@@ -67576,7 +67582,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #35845
 .\questDB-20201014.json
 - EMPTY: r
@@ -67585,7 +67591,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #35846
 .\questDB-20201014.json
 - EMPTY: r
@@ -67594,7 +67600,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #35861
 .\questDB-20201014.json
 - EMPTY: r
@@ -67603,7 +67609,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #35866
 .\questDB-20201014.json
 - ADDED: isDaily = 1, repeatable = 1
@@ -67673,7 +67679,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #35878
 .\questDB-20201014.json
 - CHANGE: lvl: 96 --> 30
@@ -67810,7 +67816,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #35937
 .\questDB-20201014.json
 - ADDED: repeatable = 1
@@ -67930,7 +67936,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #35997
 .\questDB-20201014.json
 - CHANGE: lvl: 100 --> 40
@@ -68274,7 +68280,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36096
 .\questDB-20201014.json
 - CHANGE: lvl: 92 --> 15
@@ -68339,7 +68345,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36131
 .\questDB-20201014.json
 - CHANGE: lvl: 94 --> 20
@@ -68418,7 +68424,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36161
 .\questDB-20201014.json
 - EMPTY: r
@@ -68427,7 +68433,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36162
 .\questDB-20201014.json
 - EMPTY: r
@@ -68436,7 +68442,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36163
 .\questDB-20201014.json
 - EMPTY: r
@@ -68445,7 +68451,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36164
 .\questDB-20201014.json
 - EMPTY: r
@@ -68454,7 +68460,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36165
 .\questDB-20201014.json
 - CHANGE: lvl: 96 --> 30
@@ -68473,7 +68479,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36168
 .\questDB-20201014.json
 - EMPTY: r
@@ -68482,7 +68488,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36169
 .\questDB-20201014.json
 - EMPTY: r
@@ -68491,7 +68497,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36171
 .\questDB-20201014.json
 - EMPTY: r
@@ -68500,7 +68506,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36176
 .\questDB-20201014.json
 - CHANGE: lvl: 90 --> 10
@@ -68549,7 +68555,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36194
 .\questDB-20201014.json
 - CHANGE: lvl: 90 --> 10
@@ -68663,7 +68669,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36248
 .\questDB-20201014.json
 - EMPTY: r
@@ -68672,7 +68678,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36255
 .\questDB-20201014.json
 - CHANGE: lvl: 90 --> 10
@@ -68701,7 +68707,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36262
 .\questDB-20201014.json
 - CHANGE: lvl: 90 --> 10
@@ -68790,7 +68796,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36290
 .\questDB-20201014.json
 - EMPTY: r
@@ -68799,7 +68805,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36292
 .\questDB-20201014.json
 - CHANGE: lvl: 90 --> 10
@@ -68878,7 +68884,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36342
 .\questDB-20201014.json
 - EMPTY: r
@@ -68887,7 +68893,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36344
 .\questDB-20201014.json
 - CHANGE: lvl: 92 --> 15
@@ -68976,7 +68982,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36414
 .\questDB-20201014.json
 - EMPTY: r
@@ -68985,7 +68991,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36417
 .\questDB-20201014.json
 - CHANGE: lvl: 90 --> 10
@@ -69340,7 +69346,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36615
 .\questDB-20201014.json
 - EMPTY: r
@@ -69349,7 +69355,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36616
 .\questDB-20201014.json
 - CHANGE: lvl: 94 --> 20
@@ -69366,7 +69372,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36624
 .\questDB-20201014.json
 - ADDED: r = 2
@@ -69458,7 +69464,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36653
 .\questDB-20201014.json
 - EMPTY: r
@@ -69467,7 +69473,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36655
 .\questDB-20201014.json
 - EMPTY: r
@@ -69476,7 +69482,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36662
 .\questDB-20201014.json
 - ADDED: isDaily = 1
@@ -69710,7 +69716,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36742
 .\questDB-20201014.json
 - EMPTY: r
@@ -69719,7 +69725,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36743
 .\questDB-20201014.json
 - CHANGE: lvl: 100 --> 40
@@ -69923,7 +69929,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36795
 .\questDB-20201014.json
 - CHANGE: lvl: 100 --> 10
@@ -70005,7 +70011,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36831
 .\questDB-20201014.json
 - EMPTY: r
@@ -70014,7 +70020,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36832
 .\questDB-20201014.json
 - CHANGE: lvl: 92 --> 15
@@ -70262,7 +70268,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #36940
 .\questDB-20201014.json
 - CHANGE: lvl: 90 --> 10
@@ -70847,7 +70853,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37048
 .\questDB-20201014.json
 - ADDED: isDaily = 1
@@ -70980,7 +70986,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37071
 .\questDB-20201014.json
 - ADDED: isDaily = 1
@@ -71043,7 +71049,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37081
 .\questDB-20201014.json
 - EMPTY: r
@@ -71052,7 +71058,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37082
 .\questDB-20201014.json
 - CHANGE: lvl: 100 --> 40
@@ -71225,7 +71231,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37114
 .\questDB-20201014.json
 - EMPTY: r
@@ -71234,7 +71240,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37119
 .\questDB-20201014.json
 - CHANGE: lvl: 90 --> 10
@@ -71276,7 +71282,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37127
 .\questDB-20201014.json
 - EMPTY: r
@@ -71285,7 +71291,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37128
 .\questDB-20201014.json
 - EMPTY: r
@@ -71294,7 +71300,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37129
 .\questDB-20201014.json
 - EMPTY: r
@@ -71303,7 +71309,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37131
 .\questDB-20201014.json
 - EMPTY: r
@@ -71312,7 +71318,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37137
 .\questDB-20201014.json
 - EMPTY: r
@@ -71321,7 +71327,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37140
 .\questDB-20201014.json
 - EMPTY: r
@@ -71330,7 +71336,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37141
 .\questDB-20201014.json
 - CHANGE: lvl: 96 --> 30
@@ -71488,7 +71494,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37181
 .\questDB-20201014.json
 - EMPTY: r
@@ -71497,7 +71503,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37182
 .\questDB-20201014.json
 - EMPTY: r
@@ -71506,7 +71512,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37183
 .\questDB-20201014.json
 - CHANGE: lvl: 94 --> 20
@@ -71525,7 +71531,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37192
 .\questDB-20201014.json
 - EMPTY: r
@@ -71534,7 +71540,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37201
 .\questDB-20201014.json
 - ADDED: isDaily = 1
@@ -72127,7 +72133,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201123.json
 - EMPTY: isDaily
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37484
 .\questDB-20201014.json
 - EMPTY: r
@@ -72138,7 +72144,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201123.json
 - EMPTY: isDaily
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37486
 .\questDB-20201014.json
 - CHANGE: lvl: 98 --> 10
@@ -72217,7 +72223,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37517
 .\questDB-20201014.json
 - EMPTY: r
@@ -72226,7 +72232,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37518
 .\questDB-20201014.json
 - CHANGE: lvl: 98 --> 10
@@ -72280,7 +72286,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37541
 .\questDB-20201014.json
 - EMPTY: r
@@ -72289,7 +72295,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37542
 .\questDB-20201014.json
 - CHANGE: lvl: 98 --> 10
@@ -72303,7 +72309,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37547
 .\questDB-20201014.json
 - EMPTY: r
@@ -72312,7 +72318,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37548
 .\questDB-20201014.json
 - EMPTY: r
@@ -72321,7 +72327,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37549
 .\questDB-20201014.json
 - EMPTY: r
@@ -72330,7 +72336,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37550
 .\questDB-20201014.json
 - EMPTY: r
@@ -72339,7 +72345,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37551
 .\questDB-20201014.json
 - EMPTY: r
@@ -72348,7 +72354,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37552
 .\questDB-20201014.json
 - EMPTY: r
@@ -72357,7 +72363,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37553
 .\questDB-20201014.json
 - EMPTY: r
@@ -72366,7 +72372,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37554
 .\questDB-20201014.json
 - EMPTY: r
@@ -72375,7 +72381,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37555
 .\questDB-20201014.json
 - EMPTY: r
@@ -72384,7 +72390,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37557
 .\questDB-20201014.json
 - EMPTY: r
@@ -72393,7 +72399,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37558
 .\questDB-20201014.json
 - EMPTY: r
@@ -72402,7 +72408,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37559
 .\questDB-20201014.json
 - EMPTY: r
@@ -72411,7 +72417,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37560
 .\questDB-20201014.json
 - EMPTY: r
@@ -72420,7 +72426,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37561
 .\questDB-20201014.json
 - EMPTY: r
@@ -72429,7 +72435,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37562
 .\questDB-20201014.json
 - EMPTY: r
@@ -72438,7 +72444,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37563
 .\questDB-20201014.json
 - CHANGE: lvl: 90 --> 10
@@ -72607,7 +72613,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37688
 .\questDB-20201014.json
 - EMPTY: r
@@ -72616,7 +72622,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37689
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -72690,7 +72696,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37757
 .\questDB-20201014.json
 - EMPTY: r
@@ -72699,7 +72705,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37758
 .\questDB-20201014.json
 - EMPTY: r
@@ -72708,7 +72714,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37762
 .\questDB-20201014.json
 - EMPTY: r
@@ -72717,7 +72723,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37763
 .\questDB-20201014.json
 - EMPTY: r
@@ -72726,7 +72732,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37764
 .\questDB-20201014.json
 - EMPTY: r
@@ -72735,7 +72741,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37765
 .\questDB-20201014.json
 - EMPTY: r
@@ -72744,7 +72750,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37766
 .\questDB-20201014.json
 - EMPTY: r
@@ -72753,7 +72759,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37767
 .\questDB-20201014.json
 - EMPTY: r
@@ -72762,7 +72768,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37768
 .\questDB-20201014.json
 - EMPTY: r
@@ -72771,7 +72777,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37769
 .\questDB-20201014.json
 - EMPTY: r
@@ -72780,7 +72786,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37770
 .\questDB-20201014.json
 - EMPTY: r
@@ -72789,7 +72795,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37771
 .\questDB-20201014.json
 - EMPTY: r
@@ -72798,7 +72804,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37772
 .\questDB-20201014.json
 - EMPTY: r
@@ -72807,7 +72813,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37773
 .\questDB-20201014.json
 - EMPTY: r
@@ -72816,7 +72822,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37774
 .\questDB-20201014.json
 - EMPTY: r
@@ -72825,7 +72831,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37775
 .\questDB-20201014.json
 - EMPTY: r
@@ -72834,7 +72840,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37776
 .\questDB-20201014.json
 - EMPTY: r
@@ -72843,7 +72849,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37777
 .\questDB-20201014.json
 - EMPTY: r
@@ -72852,7 +72858,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37778
 .\questDB-20201014.json
 - EMPTY: r
@@ -72861,7 +72867,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37780
 .\questDB-20201014.json
 - ADDED: isDaily = 1
@@ -73000,7 +73006,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37808
 .\questDB-20201014.json
 - EMPTY: r
@@ -73009,7 +73015,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37809
 .\questDB-20201014.json
 - EMPTY: r
@@ -73018,7 +73024,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37810
 .\questDB-20201014.json
 - EMPTY: r
@@ -73027,7 +73033,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37811
 .\questDB-20201014.json
 - EMPTY: r
@@ -73036,7 +73042,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37813
 .\questDB-20201014.json
 - EMPTY: r
@@ -73045,7 +73051,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37814
 .\questDB-20201014.json
 - EMPTY: r
@@ -73054,7 +73060,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37815
 .\questDB-20201014.json
 - EMPTY: r
@@ -73063,7 +73069,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37816
 .\questDB-20201014.json
 - EMPTY: r
@@ -73072,7 +73078,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37817
 .\questDB-20201014.json
 - EMPTY: r
@@ -73081,7 +73087,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37818
 .\questDB-20201014.json
 - EMPTY: r
@@ -73090,7 +73096,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37819
 .\questDB-20201024.json
 - ADDED: lvl = [1]
@@ -73127,7 +73133,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37840
 .\questDB-20201014.json
 - EMPTY: r
@@ -73136,7 +73142,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37841
 .\questDB-20201014.json
 - CHANGE: lvl: 100 --> 40
@@ -73179,7 +73185,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37853
 .\questDB-20201014.json
 - CHANGE: lvl: 98 --> 10
@@ -73233,7 +73239,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37868
 .\questDB-20201014.json
 - ADDED: isDaily = 1
@@ -73271,7 +73277,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37889
 .\questDB-20201014.json
 - EMPTY: r
@@ -73280,7 +73286,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37890
 .\questDB-20201014.json
 - EMPTY: r
@@ -73289,7 +73295,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37891
 .\questDB-20201014.json
 - ADDED: isDaily = 1
@@ -73338,7 +73344,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37920
 .\questDB-20201014.json
 - EMPTY: r
@@ -73347,7 +73353,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37924
 .\questDB-20201014.json
 - EMPTY: r
@@ -73356,7 +73362,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37925
 .\questDB-20201014.json
 - EMPTY: r
@@ -73365,7 +73371,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37926
 .\questDB-20201014.json
 - EMPTY: r
@@ -73374,7 +73380,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37934
 .\questDB-20201014.json
 - EMPTY: r
@@ -73383,7 +73389,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37935
 .\questDB-20201014.json
 - EMPTY: r
@@ -73392,7 +73398,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37940
 .\questDB-20201014.json
 - ADDED: isDaily = 1
@@ -73431,7 +73437,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37948
 .\questDB-20201014.json
 - EMPTY: r
@@ -73440,7 +73446,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37949
 .\questDB-20201014.json
 - EMPTY: r
@@ -73449,7 +73455,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37957
 .\questDB-20201014.json
 - CHANGE: lvl: 98 --> 10
@@ -73473,7 +73479,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37964
 .\questDB-20201014.json
 - CHANGE: lvl: 100 --> 40
@@ -73532,7 +73538,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37981
 .\questDB-20201014.json
 - CHANGE: lvl: 98 --> 35
@@ -73551,7 +73557,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37993
 .\questDB-20201014.json
 - EMPTY: r
@@ -73560,7 +73566,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37994
 .\questDB-20201014.json
 - EMPTY: r
@@ -73569,7 +73575,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37995
 .\questDB-20201014.json
 - EMPTY: r
@@ -73578,7 +73584,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37996
 .\questDB-20201014.json
 - EMPTY: r
@@ -73587,7 +73593,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #37997
 .\questDB-20201014.json
 - EMPTY: r
@@ -73596,7 +73602,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38001
 .\questDB-20201014.json
 - CHANGE: lvl: 100 --> 40
@@ -74234,7 +74240,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38254
 .\questDB-20201014.json
 - CHANGE: lvl: 100 --> 40
@@ -74253,7 +74259,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38257
 .\questDB-20201014.json
 - CHANGE: lvl: 100 --> 40
@@ -74267,7 +74273,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38259
 .\questDB-20201014.json
 - ADDED: r = 2
@@ -74282,7 +74288,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38269
 .\questDB-20201014.json
 - EMPTY: r
@@ -74291,7 +74297,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38270
 .\questDB-20201014.json
 - CHANGE: lvl: 100 --> 40
@@ -74522,7 +74528,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38357
 .\questDB-20201014.json
 - CHANGE: lvl: 98 --> 10
@@ -74663,7 +74669,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38416
 .\questDB-20201014.json
 - EMPTY: r
@@ -74672,7 +74678,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38417
 .\questDB-20201014.json
 - EMPTY: r
@@ -74681,7 +74687,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38421
 .\questDB-20201014.json
 - EMPTY: r
@@ -74690,7 +74696,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38427
 .\questDB-20201014.json
 - CHANGE: lvl: 100 --> 40
@@ -74709,7 +74715,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38436
 .\questDB-20201014.json
 - EMPTY: r
@@ -74718,7 +74724,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38440
 .\questDB-20201014.json
 - ADDED: isDaily = 1
@@ -74744,7 +74750,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38445
 .\questDB-20201014.json
 - EMPTY: r
@@ -74753,7 +74759,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38446
 .\questDB-20201014.json
 - CHANGE: lvl: 100 --> 40
@@ -74773,7 +74779,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38455
 .\questDB-20201014.json
 - CHANGE: lvl: 98 --> 10
@@ -74787,7 +74793,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38459
 .\questDB-20201014.json
 - CHANGE: lvl: 98 --> 10
@@ -74811,7 +74817,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38473
 .\questDB-20201014.json
 - CHANGE: lvl: 98 --> 10
@@ -74995,7 +75001,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38561
 .\questDB-20201014.json
 - EMPTY: r
@@ -75004,7 +75010,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38562
 .\questDB-20201014.json
 - EMPTY: r
@@ -75013,7 +75019,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38563
 .\questDB-20201014.json
 - CHANGE: lvl: 102 --> 10
@@ -75032,7 +75038,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38566
 .\questDB-20201014.json
 - CHANGE: lvl: 98 --> 10
@@ -75046,7 +75052,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38568
 .\questDB-20201014.json
 - CHANGE: lvl: 100 --> 40
@@ -75060,7 +75066,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38571
 .\questDB-20201014.json
 - CHANGE: lvl: 100 --> 40
@@ -75074,7 +75080,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38573
 .\questDB-20201014.json
 - EMPTY: r
@@ -75083,7 +75089,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38574
 .\questDB-20201014.json
 - ADDED: r = 1
@@ -75751,7 +75757,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38928
 .\questDB-20201014.json
 - EMPTY: r
@@ -75760,7 +75766,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38929
 .\questDB-20201014.json
 - EMPTY: r
@@ -75769,7 +75775,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38930
 .\questDB-20201014.json
 - EMPTY: r
@@ -75778,7 +75784,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #38932
 .\questDB-20201014.json
 - CHANGE: lvl: 100 --> 40
@@ -75972,7 +75978,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #39000
 .\questDB-20201014.json
 - CHANGE: lvl: 100 --> 40
@@ -76263,7 +76269,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #39176
 .\questDB-20201014.json
 - CHANGE: lvl: 100 --> 40
@@ -76322,7 +76328,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #39196
 .\questDB-20201014.json
 - CHANGE: lvl: 64 --> 15
@@ -76406,7 +76412,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #39225
 .\questDB-20201014.json
 - EMPTY: r
@@ -76415,7 +76421,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #39228
 .\questDB-20201014.json
 - EMPTY: r
@@ -76424,7 +76430,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #39231
 .\questDB-20201014.json
 - EMPTY: r
@@ -76433,7 +76439,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #39232
 .\questDB-20201014.json
 - EMPTY: r
@@ -76442,7 +76448,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #39236
 .\questDB-20201014.json
 - CHANGE: lvl: 100 --> 40
@@ -76486,7 +76492,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #39253
 .\questDB-20201014.json
 - EMPTY: r
@@ -76495,7 +76501,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #39256
 .\questDB-20201014.json
 - EMPTY: r
@@ -76504,7 +76510,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #39259
 .\questDB-20201014.json
 - EMPTY: r
@@ -76513,7 +76519,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #39260
 .\questDB-20201014.json
 - EMPTY: r
@@ -76522,7 +76528,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #39261
 .\questDB-20201014.json
 - CHANGE: lvl: 98 --> 10
@@ -76729,7 +76735,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #39346
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -76918,7 +76924,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #39395
 .\questDB-20201014.json
 - CHANGE: lvl: 100 --> 40
@@ -77381,7 +77387,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #39648
 .\questDB-20201014.json
 - ADDED: isDaily = 1
@@ -79630,7 +79636,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #40392
 .\questDB-20201014.json
 - CHANGE: lvl: 98 --> 10
@@ -79698,7 +79704,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #40418
 .\questDB-20201014.json
 - EMPTY: r
@@ -79707,7 +79713,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 40 --> [40]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #40419
 .\questDB-20201014.json
 - CHANGE: lvl: 98 --> 10
@@ -80191,7 +80197,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #40633
 .\questDB-20201014.json
 - CHANGE: lvl: 98 --> 10
@@ -81985,7 +81991,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #41618
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -86561,7 +86567,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #43811
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -86575,7 +86581,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #43813
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -88145,7 +88151,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #44747
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -88159,7 +88165,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #44750
 .\questDB-20201014.json
 - EMPTY: r
@@ -88168,7 +88174,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #44752
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -88197,7 +88203,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #44764
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -88311,7 +88317,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #44832
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -88365,7 +88371,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #44859
 .\questDB-20201014.json
 - EMPTY: r
@@ -88374,7 +88380,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #44860
 .\questDB-20201014.json
 - EMPTY: r
@@ -88383,7 +88389,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #44861
 .\questDB-20201014.json
 - EMPTY: r
@@ -88392,7 +88398,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #44862
 .\questDB-20201014.json
 - EMPTY: r
@@ -88401,7 +88407,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #44863
 .\questDB-20201014.json
 - CHANGE: lvl: 65 --> 20
@@ -88465,7 +88471,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #44888
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -88566,7 +88572,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #44950
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -88655,7 +88661,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #44973
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -88669,7 +88675,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #44975
 .\questDB-20201014.json
 - EMPTY: r
@@ -88678,7 +88684,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #44976
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -88762,7 +88768,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #44992
 .\questDB-20201014.json
 - EMPTY: r
@@ -88771,7 +88777,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #44993
 .\questDB-20201014.json
 - EMPTY: r
@@ -88780,7 +88786,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #44994
 .\questDB-20201014.json
 - EMPTY: r
@@ -88789,7 +88795,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #44995
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -88968,7 +88974,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #45036
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -89604,7 +89610,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #45398
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -89931,7 +89937,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #45574
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -89950,7 +89956,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #45586
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -89984,7 +89990,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #45629
 .\questDB-20201014.json
 - EMPTY: r
@@ -89993,7 +89999,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #45630
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -90372,7 +90378,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #45834
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -90386,7 +90392,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #45836
 .\questDB-20201014.json
 - EMPTY: r
@@ -90395,7 +90401,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #45838
 .\questDB-20201014.json
 - CHANGE: lvl: 98 --> 10
@@ -90828,7 +90834,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #46103
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -90897,7 +90903,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #46182
 .\questDB-20201014.json
 - CHANGE: lvl: 98 --> 10
@@ -91055,7 +91061,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #46266
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -91074,7 +91080,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #46272
 .\questDB-20201014.json
 - EMPTY: r
@@ -91083,7 +91089,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #46274
 .\questDB-20201014.json
 - EMPTY: r
@@ -91092,7 +91098,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #46275
 .\questDB-20201014.json
 - EMPTY: r
@@ -91101,7 +91107,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #46278
 .\questDB-20201014.json
 - CHANGE: lvl: 98 --> 10
@@ -91115,7 +91121,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #46286
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -91190,7 +91196,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #46323
 .\questDB-20201014.json
 - EMPTY: r
@@ -91199,7 +91205,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #46324
 .\questDB-20201014.json
 - EMPTY: r
@@ -91208,7 +91214,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #46326
 .\questDB-20201014.json
 - EMPTY: r
@@ -91217,7 +91223,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #46327
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -91742,7 +91748,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #46832
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -92155,7 +92161,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #47098
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 10
@@ -92212,7 +92218,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #47114
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -92401,7 +92407,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #47203
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -92929,7 +92935,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 255 --> [255]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #47508
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -98686,7 +98692,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #50047
 .\questDB-20201014.json
 - EMPTY: r
@@ -98695,7 +98701,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #50048
 .\questDB-20201014.json
 - EMPTY: r
@@ -98704,7 +98710,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #50049
 .\questDB-20201014.json
 - EMPTY: r
@@ -98713,7 +98719,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #50052
 .\questDB-20201014.json
 - EMPTY: r
@@ -98722,7 +98728,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #50053
 .\questDB-20201014.json
 - EMPTY: r
@@ -98731,7 +98737,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #50054
 .\questDB-20201014.json
 - EMPTY: r
@@ -98740,7 +98746,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #50055
 .\questDB-20201014.json
 - EMPTY: r
@@ -98749,7 +98755,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #50058
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 10
@@ -99175,7 +99181,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #50227
 .\questDB-20201014.json
 - EMPTY: r
@@ -99184,7 +99190,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #50228
 .\questDB-20201014.json
 - EMPTY: r
@@ -99193,7 +99199,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #50229
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 45
@@ -99207,7 +99213,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #50231
 .\questDB-20201014.json
 - EMPTY: r
@@ -99216,7 +99222,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #50232
 .\questDB-20201014.json
 - EMPTY: r
@@ -99225,7 +99231,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #50235
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 10
@@ -99544,7 +99550,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #50359
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 35
@@ -99563,7 +99569,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #50363
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 35
@@ -99579,7 +99585,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #50365
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 35
@@ -99616,7 +99622,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #50373
 .\questDB-20201014.json
 - EMPTY: r
@@ -99625,7 +99631,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #50374
 .\questDB-20201014.json
 - EMPTY: r
@@ -99634,7 +99640,7 @@ Comparing .\questDB-20230908.json
 .\questDB-20201024.json
 - CHANGE: lvl: 45 --> [45]
 .\questDB-20221130.json
-- EMPTY: races
+- OVERRIDE: races => r
 #50375
 .\questDB-20201014.json
 - CHANGE: lvl: 110 --> 10

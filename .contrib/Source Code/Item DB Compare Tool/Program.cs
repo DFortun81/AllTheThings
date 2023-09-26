@@ -397,6 +397,9 @@ namespace ATT
                                 {
                                     case "b":
                                     case "lvl":
+                                    case "classes":
+                                    case "races":
+                                    case "r":
                                         RemovedObjectKey(sourceDB, id, key);
                                         RemovedObjectKey(diffDB, id, key);
                                         break;

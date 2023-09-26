@@ -899,19 +899,7 @@ namespace ATT
                 }
             }
 
-            // Verify 'classes' have acceptable values
-            if (data.TryGetValue("c", out List<object> classes))
-            {
-                try
-                {
-                    if (classes.Any(c => !Valid_Classes.Contains(Convert.ToInt64(c))))
-                        LogError($"Invalid 'classes' value", data);
-                }
-                catch
-                {
-                    LogError($"Invalid 'classes' value", data);
-                }
-            }
+            Validate_classes(data);
 
             Objects.AssignFactionID(data);
 
@@ -1036,6 +1024,23 @@ namespace ATT
             Items.MarkItemAsReferenced(data);
 
             return true;
+        }
+
+        private static void Validate_classes(IDictionary<string, object> data)
+        {
+            // Verify 'classes' have acceptable values
+            if (data.TryGetValue("c", out List<object> classes))
+            {
+                try
+                {
+                    if (classes.Any(c => !Valid_Classes.Contains(Convert.ToInt64(c))))
+                        LogError($"Invalid 'classes' value", data);
+                }
+                catch
+                {
+                    LogError($"Invalid 'classes' value", data);
+                }
+            }
         }
 
         private static void Validate_cost(IDictionary<string, object> data)
@@ -1388,6 +1393,19 @@ namespace ATT
             }
         }
 
+        /// <summary>
+        /// Validates that certain conflciting fields do not simultaneously exist within one piece of data. May indicate external data is bad or weird or needs fixing
+        /// </summary>
+        private static void Consolidate_ConflictingFields(IDictionary<string, object> data)
+        {
+            // races - r
+            if (data.ContainsKey("r") && data.ContainsKey("races"))
+            {
+                LogWarn($"Conflicting fields: races & r. Dropping 'r' as pre-caution.", data);
+                data.Remove("r");
+            }
+        }
+
         private static void Validate_Encounter(IDictionary<string, object> data)
         {
             if (!data.TryGetValue("encounterID", out long encounterID))
@@ -1733,6 +1751,7 @@ namespace ATT
             Consolidate_providers(data);
             Consolidate_sourceQuests(data);
             Consolidate_altQuests(data);
+            Consolidate_ConflictingFields(data);
 
             // since early 2020, the API no longer associates recipe Items with their corresponding Spell... because Blizzard hates us
             // so try to automatically associate the matching recipeID from the requiredSkill profession list to the matching item...
@@ -2074,7 +2093,7 @@ namespace ATT
                     case 5:
                         data["e"] = 1271;
                         break;
-                    
+
                     case 4: // Deleted
                     case 2: // Removed From Game
                         data["u"] = 2;
