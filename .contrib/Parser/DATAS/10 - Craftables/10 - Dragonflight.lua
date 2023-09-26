@@ -3001,6 +3001,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstSkin(74153, 194251),	-- Skinning Degmakh (Grand Hunt)
 			FirstSkin(74164, 195431),	-- Skinning Diluu (Grand Hunt)
 			FirstSkin(74200, 193234),	-- Skinning Eldoren the Reborn
+			FirstSkin(74231, 195518),	-- Skinning Elusive Cliffdweller Vorquin
 			FirstSkin(74186, 194491),	-- Skinning Elusive Elder Frigidpelt (Elusive Creature Bait)
 			FirstSkin(74189, 195472),	-- Skinning Elusive Ferocious Titanfang (Titan-Infused Creature Bait)
 			FirstSkin(74235, 204831, ADDED_10_1_0),	-- Skinning Elusive Magma Cobra
