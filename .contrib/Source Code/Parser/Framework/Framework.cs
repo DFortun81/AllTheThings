@@ -1385,7 +1385,7 @@ namespace ATT
                     continue;
                 }
 
-                if (!Objects.AllQuests.TryGetValue(altQuestID, out IDictionary<string, object> altQuest))
+                if (!Objects.AllQuests.ContainsKey(altQuestID))
                 {
                     // Source Quest not in database
                     LogDebug($"WARN: Referenced Alternate Quest {altQuestID} has not been Sourced");
@@ -1401,7 +1401,7 @@ namespace ATT
             // races - r
             if (data.ContainsKey("r") && data.ContainsKey("races"))
             {
-                LogWarn($"Conflicting fields: races & r. Dropping 'r' as pre-caution.", data);
+                LogDebug($"INFO: Conflicting fields: races & r. Dropping 'r' as pre-caution.", data);
                 data.Remove("r");
             }
         }
