@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					126171,	-- Tormented Ritualist
 				},
 			}),
-			i(152940, {	-- Conductive Sheath
+			i(152941, {	-- Conductive Sheath
 				["description"] = "Only drops after |cFFFFFFFFSmashed Portal Generator|r has been collected.",
 				["crs"] = {
 					127597,	-- Eredar War-Mind

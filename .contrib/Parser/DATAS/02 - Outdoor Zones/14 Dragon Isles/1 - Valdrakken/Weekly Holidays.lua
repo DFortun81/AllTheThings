@@ -66,7 +66,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					-]]
 				}),
 				i(202091, {	-- Dragonscale Expedition Insignia
-					["minReputation"] = { 2507, 25 },	-- Dragonscale Expedition Renonwn 25
+					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },	-- Dragonscale Expedition Renonwn 25
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				}),
 				i(202092, {	-- Iskaara Tuskarr Insignia

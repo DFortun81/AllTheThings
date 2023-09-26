@@ -1176,7 +1176,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 193668 },	-- Lookout Mordren
 					["coord"] = { 36.8, 85.6, THALDRASZUS },
 				}),
-				qNYI(69976, {	-- Phenran
+				q(69976, {	-- Phenran
 					["provider"] = { "n", 193688 },	-- Phenran
 					["coord"] = { 59.8, 61.0, THALDRASZUS },
 				}),
