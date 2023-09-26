@@ -39,7 +39,7 @@ namespace ATT
         /// </summary>
         static ConcurrentQueue<Action> ThrottleQueue { get; } = new ConcurrentQueue<Action>();
         static readonly object ThrottleLock = new object();
-        static string DateStamp { get; } = DateTime.UtcNow.Year.ToString() + DateTime.UtcNow.Month.ToString("00") + DateTime.UtcNow.Day.ToString("00");
+        static string DateStamp { get; set; } = DateTime.UtcNow.Year.ToString() + DateTime.UtcNow.Month.ToString("00") + DateTime.UtcNow.Day.ToString("00");
         /// <summary>
         /// Represents how long to wait between API calls on average over an hour (since it will take more than an hour to retrieve all item IDs)
         /// 3,600,000ms / hour / 36,000 API / hour ==> 100ms / API
@@ -76,6 +76,14 @@ namespace ATT
 
         static void Main(string[] args)
         {
+            // can tell harvester to only parse existing datas for a certain date
+            string parseOnlyDate = args.FirstOrDefault(a => a.StartsWith("parse="))?.Substring(6);
+
+            if (parseOnlyDate != null)
+            {
+                DateStamp = parseOnlyDate;
+            }
+
             Console.WriteLine("Harvester Started using Date:" + DateStamp);
 
             AppDomain.CurrentDomain.UnhandledException += UnHandledExceptionCapture;
@@ -85,9 +93,6 @@ namespace ATT
             {
                 ProcessObjects[parseType] = false;
             }
-
-            // can tell harvester to only parse existing datas for a certain date
-            string parseOnlyDate = args.FirstOrDefault(a => a.StartsWith("parse="))?.Substring(6);
 
             // optionally do only specific API pull types
             if (args != null && args.Length > 0)
@@ -171,7 +176,7 @@ namespace ATT
                 //Console.ReadKey();
                 return;
             }
-            Parse(parseOnlyDate);
+            Parse();
 
             while (WaitForParseQueue || WaitForParsingData || ParseDatas.Count > 0) { Thread.Sleep(50); }
 
@@ -816,10 +821,10 @@ namespace ATT
             }
         }
 
-        static void Parse(string parseOnlyDate)
+        static void Parse()
         {
             WaitForParseQueue = true;
-            Console.WriteLine("Queueing all of the raw data for " + (parseOnlyDate ?? DateStamp));
+            Console.WriteLine("Queueing all of the raw data for " + DateStamp);
 
             // create a separate thread that will handle parsing the individual items
             Thread threadDataParser = new Thread(ParseData)
@@ -828,19 +833,19 @@ namespace ATT
                 Name = "DataParser.Thread",
             };
             threadDataParser.Start();
-            ProcessObjType(ObjType.item, parseOnlyDate);
-            ProcessObjType(ObjType.quest, parseOnlyDate);
+            ProcessObjType(ObjType.item);
+            ProcessObjType(ObjType.quest);
 
             WaitForParseQueue = false;
             Console.WriteLine("Done Queueing the raw data.");
         }
 
-        private static void ProcessObjType(ObjType objtype, string parseOnlyDate)
+        private static void ProcessObjType(ObjType objtype)
         {
             // items
             if (ProcessObjects[objtype])
             {
-                var rawDataDirectory = Directory.CreateDirectory("RAW/" + objtype.ToString() + "s." + (parseOnlyDate ?? DateStamp));
+                var rawDataDirectory = Directory.CreateDirectory("RAW/" + objtype.ToString() + "s." + DateStamp);
                 var allFiles = rawDataDirectory.EnumerateFiles("*.raw").AsParallel();
                 allFiles.ForAll(EnqueueFileContents);
             }
@@ -1297,15 +1302,23 @@ namespace ATT
             {
                 dict["lvl"] = new List<object>() { minlvl };
             }
-            if (requirements.TryGetValue("playable_classes", out d) && d.TryGetValue("links", out List<object> l))
+            if (requirements.TryGetValue("playable_classes", out object classes) || requirements.TryGetValue("classes", out classes))
             {
-                var list = new List<int>();
-                foreach (var entry in l)
+                if (!(classes is IEnumerable<object> classesSet))
                 {
-                    if (entry is Dictionary<string, object> c && c.TryGetValue("id", out int id) && !list.Contains(id)) list.Add(id);
+                    Console.WriteLine($"Bad 'classes': {MiniJSON.Json.Serialize(classes)}");
                 }
-                list.Sort();
-                dict["classes"] = list;
+                else
+                {
+                    var list = new List<int>();
+                    foreach (object entry in classesSet)
+                    {
+                        if (entry is Dictionary<string, object> c && c.TryGetValue("id", out int id) && !list.Contains(id)) list.Add(id);
+                    }
+                    list.Sort();
+                    //Console.WriteLine($"'classes':{MiniJSON.Json.Serialize(list)}");
+                    dict["classes"] = list;
+                }
             }
             else
             {
