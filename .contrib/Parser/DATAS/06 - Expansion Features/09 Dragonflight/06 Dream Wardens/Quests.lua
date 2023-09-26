@@ -13,7 +13,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["g"] = {
 						i(210872, {	-- Satchel of Dreams
 							i(210379),	-- Cold Crisp Collar (TODO: collect them here for now)
+							i(210395),	-- Crystalline Tender's Mace
 							i(210407),	-- Frigid Forager's Cape
+							i(210367),	-- Frigid Forager's Eqaulets
+							i(210377),	-- Snipping Sleet Circle
 						}),
 					},
 				}),

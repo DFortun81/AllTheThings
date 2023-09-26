@@ -1035,6 +1035,14 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 					i(204480),	-- Inconspicuous Data Miner
 				},
 			})),
+			o(410458,		-- Insomniotron
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+				["coord"] = { 40.4, 89.3, TREE_1 },
+				["questID"] = 78279,
+				["g"] = {
+					i(210194),	-- Insomniotron
+				},
+			})),
 			o(392580,	-- Misplaced Aberrus Outflow Blueprints
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 				["coord"] = { 48.5, 48.6, ZARALEK_CAVERN },
@@ -1049,6 +1057,14 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["questID"] = 75433,
 				["g"] = {
 					i(204855),	-- Overclocked Determination Core
+				},
+			})),
+			o(410469,		-- Unhatched Battery
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+				["coord"] = { 62.6, 36.2, TREE_1 },
+				["questID"] = 78281,
+				["g"] = {
+					i(210197),	-- Unhatched Battery
 				},
 			})),
 		}),

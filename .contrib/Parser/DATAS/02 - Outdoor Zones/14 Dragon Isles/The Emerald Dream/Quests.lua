@@ -63,13 +63,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						i(209938),	-- Chartreuse Champion's Greatsword
 						i(209924),	-- Chartreuse Champion's Warspear
 						i(209925),	-- Fearless Faerie's Dirk
+						--i(209922),	-- Fearless Faerie's Glaive
 						i(209942),	-- Fearless Faerie's Kris
 						i(209932),	-- Fearless Faerie's Mace
+						i(209921),	-- Spirited Stag's Branch
 						i(209934),	-- Spirited Stag's Chopper
 						i(209943),	-- Spirited Stag's Claymore
+						i(209941),	-- Spirited Stag's Curve
+						i(209935),	-- Spirited Stag's Handaxe
+						i(209933),	-- Spirited Stag's Longbow
 						i(209940),	-- Spirited Stag's Spire
 						i(209931),	-- Summer Soother's Cane
+						i(209920),	-- Summer Soother's Implement
 						i(209936),	-- Summer Soother's Mallet
+						i(209939),	-- Summer Soother's Wand
 					},
 				}),
 				q(76325, {	-- Between Fyrakk and a Hard Place
@@ -124,6 +131,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["g"] = {
 						i(209908),	-- Chartreuse Champion's Bracers
 						i(209903),	-- Chartreuse Champion's Girdle
+						i(209906),	-- Fearless Faerie's Belt
+						i(209910),	-- Fearless Faerie's Wristbands
+						i(209909),	-- Spirited Stag's Cuffs
+						i(209905),	-- Spirited Stag's Waistguard
+						i(209907),	-- Summer Soother's Bands
+						i(209904),	-- Summer Soother's Sash
 					},
 				}),
 				q(76441, {	-- Grim Reprisal
@@ -140,6 +153,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["coord"] = { 536, 50.9, TREE_1 },
 					["g"] = {
 						i(209900),	-- Chartreuse Champion's Shoulderplates
+						i(209899),	-- Fearless Faerie's Shoulderpads
+						i(209902),	-- Spirited Stag's Eqaulets
+						i(209901),	-- Summer Soother's Shoulders
 					},
 				}),
 				q(76443, {	-- The Looming Cinder
@@ -168,6 +184,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["g"] = {
 						i(209889),	-- Chartreuse Champion's Gauntlets
 						i(209883),	-- Chartreuse Champion's Sabatons
+						i(209929),	-- Fearless Faerie's Boots
+						i(209888),	-- Fearless Faerie's Gloves
+						i(209891),	-- Spirited Stag's Handguards
+						i(209928),	-- Spirited Stag's Treads
+						i(209890),	-- Summer Soother's Mitts
+						i(209927),	-- Summer Soother's Slippers
 					},
 				}),
 				q(76344, {	-- Primalist Directive
@@ -201,6 +223,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["coord"] = { 27.6, 32.1, TREE_1 },
 					["g"] = {
 						i(209895),	-- Chartreuse Champion's Legplates
+						i(209898),	-- Fearless Faerie's Trousers
+						i(209897),	-- Spirited Stag's Legguards
+						i(209896),	-- Summer Soother's Leggings
 					},
 				}),
 				q(76347, {	-- Power, Eruption, and Lies
@@ -210,6 +235,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["g"] = {
 						i(209885),	-- Chartreuse Champion's Chestplate
 						i(209926),	-- Chartreuse Champion's Warhelm
+						i(209894),	-- Fearless Faerie's Guise
+						i(209887),	-- Fearless Faerie's Vest
+						i(209886),	-- Spirited Stag's Chestguard
+						i(209893),	-- Spirited Stag's Helm
+						i(209884),	-- Summer Soother's Gown
+						i(209892),	-- Summer Soother's Hood
 					},
 				}),
 				q(77178, {	-- Tactical Withdrawal
@@ -256,6 +287,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["coord"] = { 52.1, 24.2, TREE_1 },
 					["g"] = {
 						i(210016),	-- Somnowl's Shroud (QI!)
+						-- modID 27 bonusID 9546
 						i(210236),	-- Chartreuse Champion's Cloak
 						i(209917),	-- Fearless Faerie's Shroud
 						i(210235),	-- Spirited Stag's Cape
@@ -275,7 +307,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["provider"] = { "n", 206406 },	-- Merithra
 					["coord"] = { 53.0, 28.1, TREE_1 },
 					["g"] = {
+						-- modID 27 bonusID 9546
 						i(209908),	-- Chartreuse Champion's Bracers
+						i(209910),	-- Fearless Faerie's Wristbands
+						i(209909),	-- Spirited Stag's Cuffs
+						i(209907),	-- Summer Soother's Bands
 					},
 				}),
 				q(76331, {	-- Merithra's Gambit
@@ -293,7 +329,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["provider"] = { "n", 206406 },	-- Merithra
 					["coord"] = { 52.9, 28.0, TREE_1 },
 					["g"] = {
+						-- modID 27 bonusID 9546
 						i(209926),	-- Chartreuse Champion's Warhelm
+						i(209894),	-- Fearless Faerie's Guise
+						i(209893),	-- Spirited Stag's Helm
+						i(209892),	-- Summer Soother's Hood
 					},
 				}),
 				q(76336, {	-- Flight and Fight
@@ -304,7 +344,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["provider"] = { "n", 206416 },	-- Merithra
 					["coord"] = { 57.2, 26.1, TREE_1 },
 					["g"] = {
+						-- modID 27 bonusID 9546
 						i(209889),	-- Chartreuse Champion's Gauntlets
+						i(209888),	-- Fearless Faerie's Gloves
+						i(209891),	-- Spirited Stag's Handguards
+						i(209890),	-- Summer Soother's Mitts
 					},
 				}),
 				q(76337, {	-- The Ember Still Smolders
@@ -847,5 +891,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(77505), -- randomly killing npcs during first quest / 'Chest' (spellID 421191)
 		--q(77357),	-- afk / 'Chest' (spellID 418327)
 		--q(77358),	-- afk (spellID ?)
+		--q(77350),	-- afk / (spellID ?) i(203332),	-- Winding Slitherdrake: Spiked Horns ?
 	}),
 }));

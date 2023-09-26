@@ -239,6 +239,30 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210766),	-- Silent Mark of the Umbraclaw
 				},
 			}),
+			n(213285, {	-- Theozhaklos the Curious <Novice Explorer>
+				["coord"] = { 36.7, 33.3, TREE_1 },
+				--[[["g"] = 
+					["cost"] = {{ "i", 210944, 1 }},	-- Emerald Mark of Mastery
+					raid modID 5, bonusID 6652 (hc)
+					pvp modID 45, bonusID 6652 (veteran 8/8)
+					hunter, ids same for pve/pvp
+					i(207221),	-- 
+					i(207219),	-- 
+					i(207218),	-- 
+					i(207217),	-- 
+					i(207216),	-- 
+				},]]--
+			}),
+			n(213278, {	-- Kirasztia <Senior Researcher>
+				["coord"] = { 36.7, 33.3, TREE_1 },
+				--[[["g"] = {
+				["cost"] = {{ "i", 210947, 1 }},	-- Flame-Warped Curio (tooltip show same id for different curio)
+				raid modID 4, bonusID 6652 (lfr)
+				raid modID 3, bonusID 6652 (nhc)
+				raid modID 5, bonusID 6652 (hc)
+				raid modID 6, bonusID 6652 (m)
+				},]]--
+			}),
 		}),
 	}),
 })));

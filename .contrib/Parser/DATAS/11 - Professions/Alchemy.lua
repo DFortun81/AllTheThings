@@ -458,6 +458,14 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 					i(198663),	-- Frostforged Potion
 				},
 			}),
+			o(410426,	-- Half-Filled Dreamless Sleep Potion
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+				["coord"] = { 54.0, 32.6, TREE_1 },
+				["questID"] = 78264,
+				["g"] = {
+					i(210184),	-- Half-Filled Dreamless Sleep Potion
+				},
+			})),
 			o(380586, {	-- Mysterious Cauldrons
 				["description"] = "Grab and drop a Discarded Toy in each of these, then you can collect the treasure.",
 				["coord"] = { 55.2, 30.5, THALDRASZUS },
@@ -481,6 +489,14 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				["questID"] = 75649,
 				["g"] = {
 					i(205212),	-- Marrow-Ripened Slime
+				},
+			})),
+			o(410442,	-- Root of the Problem
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+				["coord"] = { 36.2, 46.6, TREE_1 },
+				["questID"] = 78269,
+				["g"] = {
+					i(210185),	-- Splash Potion of Narcolepsy
 				},
 			})),
 			o(380616, {	-- Small Basket of Firewater Powder

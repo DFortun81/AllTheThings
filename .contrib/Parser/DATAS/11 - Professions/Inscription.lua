@@ -4041,6 +4041,13 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 					i(198686),	-- Frosted Parchment
 				},
 			}),
+			o(411169, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Grove Keeper's Pillar
+				["coord"] = { 63.4, 71.5, TREE_1 },
+				["questID"] = 78412,
+				["g"] = {
+					i(210459),	-- Grove Keeper's Pillar
+				},
+			})),
 			o(402890, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Hissing Rune Draft
 				["coord"] = { 53.0, 74.3, ZARALEK_CAVERN },
 				["questID"] = 76120,
@@ -4063,6 +4070,13 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 					i(206031),	-- Intricate Zaqali Runes
 				},
 			})),
+			o(411170, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Primalist Shadowbinding Rune
+				["coord"] = { 36.0, 46.6, TREE_1 },
+				["questID"] = 78413,
+				["g"] = {
+					i(210460),	-- Primalist Shadowbinding Rune
+				},
+			})),
 			o(380610, {	-- Pulsing Earth Rune
 				["questID"] = 70306,
 				["coord"] = { 67.9, 58.0, THE_WAKING_SHORES },
@@ -4077,6 +4091,13 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 					i(198703),	-- Sign Language Reference Sheet
 				},
 			}),
+			o(411168, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Winnie's Notes on Flora and Fauna
+				["coord"] = { 55.6, 27.5, TREE_1 },
+				["questID"] = 78411,
+				["g"] = {
+					i(210458),	-- Winnie's Notes on Flora and Fauna
+				},
+			})),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,

@@ -625,7 +625,6 @@ root(ROOTS.Unsorted, {
 			}),
 			n(PROFESSIONS, {
 				i(207461),	-- Schematic: Portable Party Platter (RECIPE!)
-				i(210492),	-- Technique: Grotto Netherwing Drake: Chin Tendrils (RECIPE!)
 				i(210493),	-- Technique: Grotto Netherwing Drake: Spiked Jaw (RECIPE!)
 				i(210491),	-- Technique: Winding Slitherdrake: Hairy Chin (RECIPE!)
 			}),
@@ -862,7 +861,6 @@ root(ROOTS.Unsorted, {
 			i(208231),	-- Talisman of Hope
 			i(208232),	-- Singed Darnassian Tabard
 			-- Rares?
-			i(208323),	-- Nature's Firebathed Robes
 			i(208324),	-- Scorching Dryad's Chestpiece
 			i(208325),	-- Ignit's Fiery Heart
 			i(208326),	-- Vest of the Flametide
@@ -882,18 +880,14 @@ root(ROOTS.Unsorted, {
 			i(208342),	-- Girdle of Nature's Fury
 			i(208343),	-- Matriarch's Flowery Band
 			i(208344),	-- Sash of the Fruit Thief
-			i(208345),	-- Forgebreaker's Belt
-			i(208346),	-- Singed Barkbands
 			i(208347),	-- Stone Wolf's Cuffs
 			i(208348),	-- Binds of the Shatterer
 			i(208349),	-- Burning Leather Cuffs
 			i(208355),	-- String of Delicacies
 			i(208356),	-- Earthbound Furbolg's Shroud
-			i(208357),	-- Henri's Warm Coat
 			i(208359),	-- Nightclaw's Bauble
 			i(208361),	-- Splinterlimb's Branch
 			i(208363),	-- Twinfang of the Cian
-			i(208364),	-- Falling Leaf Saber
 			i(208365),	-- Winter's Stand
 			i(208367),	-- Lasher's Red Thorn
 			i(208369),	-- Druid's Vengeful Gaze
@@ -1081,41 +1075,9 @@ root(ROOTS.Unsorted, {
 			i(209880),	-- Curve of Starry Dusks
 			i(209881),	-- Fystia's Fiery Kris
 			i(209882),	-- Maruud's Undertow
-			i(209884),	-- Summer Soother's Gown
-			i(209885),	-- Chartreuse Champion's Chestplate
-			i(209886),	-- Spirited Stag's Chestguard
-			i(209887),	-- Fearless Faerie's Vest
-			i(209888),	-- Fearless Faerie's Gloves
-			i(209890),	-- Summer Soother's Mitts
-			i(209891),	-- Spirited Stag's Handguards
-			i(209892),	-- Summer Soother's Hood
-			i(209893),	-- Spirited Stag's Helm
-			i(209894),	-- Fearless Faerie's Guise
-			i(209896),	-- Summer Soother's Leggings
-			i(209897),	-- Spirited Stag's Legguards
-			i(209898),	-- Fearless Faerie's Trousers
-			i(209899),	-- Fearless Faerie's Shoulderpads
-			i(209901),	-- Summer Soother's Shoulders
-			i(209902),	-- Spirited Stag's Eqaulets
-			i(209904),	-- Summer Soother's Sash
-			i(209905),	-- Spirited Stag's Waistguard
-			i(209906),	-- Fearless Faerie's Belt
-			i(209907),	-- Summer Soother's Bands
-			i(209909),	-- Spirited Stag's Cuffs
-			i(209910),	-- Fearless Faerie's Wristbands
-			i(209920),	-- Summer Soother's Implement
-			i(209921),	-- Spirited Stag's Branch
 			i(209922),	-- Fearless Faerie's Glaive
-			i(209927),	-- Summer Soother's Slippers
-			i(209928),	-- Spirited Stag's Treads
-			i(209929),	-- Fearless Faerie's Boots
-			i(209933),	-- Spirited Stag's Longbow
-			i(209935),	-- Spirited Stag's Handaxe
-			i(209939),	-- Summer Soother's Wand
-			i(209941),	-- Spirited Stag's Curve
 			i(209948),	-- Spring's Keeper
 			i(209952),	-- Mark of Q'onzu
-			i(209953),	-- Dancing Dream Blossoms
 			i(209954),	-- Moragh's Favorite Rock
 			i(209956),	-- Ori's Verdant Feather
 			i(209958),	-- Rune of the Umbramane
@@ -1160,7 +1122,6 @@ root(ROOTS.Unsorted, {
 			i(210103),	-- Maple Tender Sash
 			i(210104),	-- Wind Wolf Chain
 			i(210105),	-- Autumn Druid Belt
-			i(210106),	-- Maple Tender Wristbands
 			i(210107),	-- Harvest Guardian Deflectors
 			i(210108),	-- Wind Wolf Cuffs
 			i(210109),	-- Autumn Druid Bracers
@@ -1178,7 +1139,6 @@ root(ROOTS.Unsorted, {
 			i(210126),	-- Breezekeeper's Mallet
 			i(210128),	-- Autumn Defender's Claymore
 			i(210129),	-- Wand of Brisk Dusks
-			i(210133),	-- Harvest Guardian Cloak
 			i(210134),	-- Wind Wolf Shroud
 			i(210140),	-- [PH] Black-Furred Bakar
 			i(210141),	-- [PH] Brown-Furred Spiky Bakar
@@ -1186,12 +1146,8 @@ root(ROOTS.Unsorted, {
 			i(210143),	-- [PH] White-Furred Bakar
 			i(210144),	-- [PH] Yellow-Furred Spiky Bakar
 			i(210145),	-- [PH] YellowBlack-Furred Bakar
-			i(210184),	-- Half-Filled Dreamless Sleep Potion
-			i(210185),	-- Splash Potion of Narcolepsy
 			i(210190),	-- Blazeroot
 			i(210193),	-- Experimental Dreamcatcher
-			i(210194),	-- Insomniotron
-			i(210197),	-- Unhatched Battery
 			i(210198),	-- Depleted Battery
 			i(210200),	-- Petrified Hope
 			i(210201),	-- Handful of Pebbles
@@ -1207,9 +1163,6 @@ root(ROOTS.Unsorted, {
 			i(210224),	-- Small Emerald Bloom
 			i(210225),	-- Medium Emerald Bloom
 			i(210226),	-- Large Emerald Bloom
-			i(210228),	-- Pure Dream Water
-			i(210231),	-- Everburning Core
-			i(210234),	-- Essence of Dreams
 			i(210237),	-- Nipping Night's Necklace
 			i(210324),	-- Medal of Honor
 			i(210325),	-- Medal of Honor
@@ -1289,9 +1242,6 @@ root(ROOTS.Unsorted, {
 			i(210452),	-- Small Demon Horn
 			i(210456),	-- Dreaming Antler Fragment
 			i(210457),	-- Fish Bones
-			i(210458),	-- Winnie's Notes on Flora and Fauna
-			i(210459),	-- Grove Keeper's Pillar
-			i(210460),	-- Primalist Shadowbinding Rune
 			i(210461),	-- Exceedingly Soft Wildercloth
 			i(210462),	-- Plush Pillow
 			i(210463),	-- Snuggle Buddy
@@ -1328,10 +1278,6 @@ root(ROOTS.Unsorted, {
 			i(210662),	-- Ochre Ornament of the Grove
 			i(210664),	-- Frost Sapling's Adornment
 			i(210666),	-- Crest of the Seething Flamekeeper
-			i(210675),	-- Gardener's Lightstaff
-			i(210678),	-- Verdant Gleaner's Scythe
-			i(210682),	-- Camper's Knife
-			i(210686),	-- Grovekeeper's Barrier
 			i(210687),	-- Ironfur Sample
 			i(210726),	-- Ruby Flightstone
 			-----------------
@@ -1479,7 +1425,6 @@ root(ROOTS.Unsorted, {
 			i(210868),	-- Blademaster's Violet Stones
 			i(210869),	-- Blademaster's Azure Stones
 			i(210870),	-- Mitzy
-			i(210872),	-- Satchel of Dreams
 			i(210874),	-- Filled Vial
 			i(210875),	-- Filled Vial
 			i(210876),	-- Filled Vial

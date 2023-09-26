@@ -24,7 +24,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				--i(),	-- 
 			}),
 			filter(TRINKET_F, {
-				--i(),	-- 
+				i(209953),	-- Dancing Dream Blossoms
 			}),
 			n(WEAPONS, {
 				i(210127),	-- Autumn Defender's Gavel

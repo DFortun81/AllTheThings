@@ -10,6 +10,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			n(210050, {	-- Bloodstripe Great Ray
 				["questID"] = 77942,
 				["coord"] = { 51.1, 31.7, TREE_1 },
+				["g"] = {
+					i(208323),	-- Nature's Firebathed Robes
+				},
 			}),
 			n(209909, {	-- Crabtankerous
 				["questID"] = 77862,
@@ -49,17 +52,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			n(210075, {	-- Henri Snufftail
 				["questID"] = 77944,
 				["coord"] = { 47.1, 29.8, TREE_1 },
+				["g"] = {
+					i(208357),	-- Henri's Warm Coat
+				},
 			}),
 			n(209620, {	-- Ignit the Firebranded
 				["questID"] = 77864,
 				["coord"] = { 58.7, 51.2, TREE_1 },
 				["g"] = {
 					i(208338),	-- Furious Flame's Shoulders
+					i(210106),	-- Maple Tender Wristbands
 				},
 			}),
 			n(209919, {	-- Isaqa
 				["questID"] = 77989,
 				["coord"] = { 37.4, 31.7, TREE_1 },
+				["g"] = {
+					i(208345),	-- Forgebreaker's Belt
+				},
 			}),
 			n(210046, {	-- Keen-eyed Cian
 				["questID"] = 78211,
@@ -93,12 +103,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					{ 40.5, 72.6, TREE_1 }, -- Moragh
 				},
 				["g"] = {
-					i(210093),	-- Autumn Druid Hood
+					--i(210093),	-- Autumn Druid Hood ?
 				},
 			}),
 			n(210070, {	-- Mosa Umbramane
 				["questID"] = 77940,
 				["coord"] = { 55.0, 36.8, TREE_1 },
+				["g"] = {
+					i(210492),	-- Technique: Grotto Netherwing Drake: Chin Tendrils (RECIPE!)
+				},
 			}),
 			n(209113, {	-- Nouberon
 				["description"] = "Finish bonus objective in marked area to make him spawn.",
@@ -130,6 +143,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 61.9, 52.2, TREE_1 },
 				["g"] = {
 					i(209955),	-- Root of Fire
+					i(208346),	-- Singed Barkbands
 				},
 			}),
 			n(210111, {	-- Surging Lasher
@@ -166,6 +180,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 38.4, 62.1, TREE_1 },
 				["g"] = {
 					i(208354),	-- Cerulean Turtle's Pendant
+					i(210133),	-- Harvest Guardian Cloak
 				},
 			}),
 		})),

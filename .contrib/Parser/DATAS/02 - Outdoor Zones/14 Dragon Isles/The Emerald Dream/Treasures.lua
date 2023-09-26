@@ -21,7 +21,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			o(408707, {	-- Odd Burl
 				["questID"] = 78006,
-				["coord"] = { 61.4, 63.2, TREE_1 }, -- (24/09 wasn't at coords)
+				["coord"] = { 55.3, 57.3, TREE_1 },
 			}),
 			o(409440, {	-- Pineshrew Cache
 				["questID"] = 78120,
@@ -113,27 +113,44 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 78547,
 				["description"] = "Use /sleep to loot the chest.",
 				["coord"] = { 55.7, 22.6, TREE_1 },
+				["g"] = {
+					i(210675),	-- Gardener's Lightstaff (COSMETIC!)
+				},
 			}),
 			o(411463, {	-- Unwaking Echo
 				["questID"] = 78550,
 				["description"] = "Use /sleep to loot the chest.",
 				["coord"] = { 69.6, 52.8, TREE_1 },
+				["g"] = {
+					i(210686),	-- Grovekeeper's Barrier (COSMETIC!)
+				},
 			}),
 			o(411465, {	-- Unwaking Echo
 				["questID"] = 78551,
 				["description"] = "Use /sleep to loot the chest.",
 				["coord"] = { 55.3, 45.4, TREE_1 },
+				["g"] = {
+					i(210678),	-- Verdant Gleaner's Scythe (COSMETIC!)
+				},
 			}),
 			o(411466, {	-- Unwaking Echo
 				["questID"] = 78552,
 				["description"] = "Use /sleep to loot the chest.",
 				["coord"] = { 46.3, 86.2, TREE_1 },
+				["g"] = {
+					i(210682),	-- Camper's Knife (COSMETIC!)
+				},
 			}),
 			--
 			o_repeated({	-- Small Somnut
 				-- prob need symlink?
 				["g"] = {
+					i(210050),	-- Mysterious Seeds (QI!) (TODO: additional source or moved?)
+					i(208066),	-- Small Dreamseed
+					--
 					i(203315),	-- Winding Slitherdrake: Small Spiked Crest
+					i(203332),	-- Winding Slitherdrake: Spiked Horns
+					i(203357),	-- Winding Slitherdrake: Spiked Tail
 					o(408719, {	-- Small Somnut
 						["isRepeatable"] = true,
 					}),

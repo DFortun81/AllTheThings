@@ -591,6 +591,22 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 					i(198694),	-- Enriched Earthen Shard
 				},
 			}),
+			o(410582,	-- Essence of Dreams
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+				["coord"] = { 66.3, 74.2, TREE_1 },
+				["questID"] = 78310,
+				["g"] = {
+					i(210234),	-- Essence of Dreams
+				},
+			})),
+			o(410575,	-- Everburning Core
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+				["coord"] = { 46.1, 20.5, TREE_1 },
+				["questID"] = 78309,
+				["g"] = {
+					i(210231),	-- Everburning Core
+				},
+			})),
 			o(380589, {	-- Faintly Enchanted Remains
 				["questID"] = 70290,
 				["coord"] = { 45.1, 61.2, THE_AZURE_SPAN },
@@ -635,6 +651,14 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 					i(198675),	-- Lava-Infused Seed
 				},
 			}),
+			o(410574,	-- Pure Dream Water
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+				["coord"] = { 38.3, 30.1, TREE_1 },
+				["questID"] = 78308,
+				["g"] = {
+					i(210228),	-- Pure Dream Water
+				},
+			})),
 			o(398796,	-- Resonating Arcane Crystal
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 				["coord"] = { 36.7, 69.3, ZARALEK_CAVERN },
