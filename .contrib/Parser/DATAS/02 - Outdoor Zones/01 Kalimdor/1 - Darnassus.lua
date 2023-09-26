@@ -539,7 +539,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2520, {	-- Sathrah's Sacrifice
 					["qg"] = 7313,	-- Priestess A'moora
-					["sourceQuest"] = 1150,	-- Tears of the Moon
+					["sourceQuest"] = 2518,	-- Tears of the Moon
 					["coord"] = { 36.4, 86, DARNASSUS },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
