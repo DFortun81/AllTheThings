@@ -3971,7 +3971,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 31012,	-- Joining the Horde
 					["coord"] = { 48.2, 70.6, ORGRIMMAR },
 					["timeline"] = { "added 5.0.1.15589" },
-					["races"] = { PANDAREN_HORDE },
+					["races"] = { PANDAREN_NEUTRAL },
 				}),
 				q(25159, {	-- The Latest Fashion!
 					["qg"] = 50482,	-- Marith Lazuria

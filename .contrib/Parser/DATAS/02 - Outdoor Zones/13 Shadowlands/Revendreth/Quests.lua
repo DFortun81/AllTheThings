@@ -965,7 +965,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["customCollect"] = "SL_SKIP",	-- SL Skip Character
 				["lockCriteria"] = { 1, "lvl", 60 },
 			}, bubbleDown({
-				["timeline"] = { ADDED_9_0_2, REMOVED_10_0_2 },
+				["timeline"] = { ADDED_9_0_2 },
 			}, {
 				q(62781, {	-- Ash You Like It [Pre-60]
 					["coord"] = { 36.6, 56.0, REVENDRETH },

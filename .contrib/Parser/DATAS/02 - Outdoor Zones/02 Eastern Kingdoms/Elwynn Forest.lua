@@ -154,8 +154,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
 							["timeline"] = { "added 5.0.1.15640" },
-							["races"] = { HUMAN },
-							["classes"] = { MONK },
+							["races"] = { HUMAN, KULTIRAN },
+							["classes"] = { DEATHKNIGHT, DRUID, MONK },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
 								i(118532, {	-- Runner's Belt
@@ -637,8 +637,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 31140,	-- Lions for Lambs
 							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
 							["timeline"] = { "added 5.0.1.15640" },
-							["races"] = { HUMAN },
-							["classes"] = { MONK },
+							["races"] = { KULTIRAN, HUMAN },
+							["classes"] = { DRUID, MONK },
 						}),
 						q(7, {	-- Kobold Camp Cleanup
 							["qg"] = 197,	-- Marshal McBride
@@ -757,8 +757,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 31139,	-- Beating Them Back!
 							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
 							["timeline"] = { "added 5.0.1.15640" },
-							["races"] = { HUMAN },
-							["classes"] = { MONK },
+							["races"] = { HUMAN, KULTIRAN },
+							["classes"] = { DEATHKNIGHT, DRUID, MONK },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
 								i(57387, {	-- Spymaster's Legs
@@ -962,8 +962,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 31144,	-- They Sent Assassins
 							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
 							["timeline"] = { "added 5.0.1.15640" },
-							["races"] = { HUMAN },
-							["classes"] = { MONK },
+							["races"] = { HUMAN, KULTIRAN },
+							["classes"] = { DRUID, MONK },
 						}),
 						q(28821, {	-- The Rear is Clear
 							["qg"] = 823,	-- Sergeant Willem
@@ -1046,8 +1046,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 31143,	-- Join the Battle!
 							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
 							["timeline"] = { "added 5.0.1.15640" },
-							["races"] = { HUMAN },
-							["classes"] = { MONK },
+							["races"] = { KULTIRAN, HUMAN },
+							["classes"] = { DRUID, MONK },
 							["_drop"] = { "g" },	-- API returns all 4 armor classes, despite these quests being class-restricted
 							["groups"] = {
 								i(2186),	-- Outfitter Gloves
@@ -1418,7 +1418,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 26393,	-- A Swift Message
 					["coord"] = { 41.7, 64.6, ELWYNN_FOREST },
 					["timeline"] = { "added 4.0.3" },
-					["races"] = { HUMAN },
+					["races"] = { KULTIRAN, HUMAN },
 				}),
 				q(1667, {	-- Dead-tooth Jack
 					["qg"] = 294,	-- Marshal Haggard

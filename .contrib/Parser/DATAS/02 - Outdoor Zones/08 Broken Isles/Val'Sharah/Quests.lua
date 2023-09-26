@@ -726,7 +726,6 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					["sourceQuests"] = { 46107 },	-- Source of the Corruption
 					["provider"] = { "n", 118954 },	-- Night Elf Warrior
 					["classes"] = { DRUID, MONK, PALADIN, PRIEST, SHAMAN },	-- Legion healing classes
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
 				-- Side

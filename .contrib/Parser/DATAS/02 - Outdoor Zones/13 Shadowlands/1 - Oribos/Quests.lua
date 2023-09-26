@@ -242,12 +242,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		}),
 		n(QUESTS, sharedData({
 			["customCollect"] = "SL_SKIP",
+			-- TODO: post-DF is threads of fate still a thing, or are these quests available to a first-time/storyline character as well?
 		}, {
 			------ Skip Quests ------
 			q(62704, {	-- The Threads of Fate
 				["sourceQuests"] = { 59770 },	-- Stand as One
 				["provider"] = { "n", 174871 },	-- Fatescribe Roh-Tahl
 				["coord"] = { 19.6, 50.2, ORIBOS },
+				-- this quest is only available once another character has completed the SL campaign, but it in itself is what allows becoming a 'skip'
+				-- character so it isn't actually a Threads quest
+				["customCollect"] = IGNORED_VALUE,
 				["altQuests"] = { 60129 },	-- Stranger in an Even Stranger Land
 			}),
 			q(63771, {	-- Fate's Reminder
@@ -568,7 +572,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 34.7, 56.5, ORIBOS },
 				["isDaily"] = true,
 				["lvl"] = { 50, 59 },
-				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2 },
+				["timeline"] = { ADDED_9_1_5 },
 				["sym"] = {
 					{"select", "mapID", BASTION },{"pop"},
 					{"where", "headerID", ZONE_REWARDS },

@@ -335,9 +335,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
 						["classes"] = { WARRIOR },
 					}),
-					q(30033, {	-- The Lesson of the Iron Bough (Mage)
+					q(30033, {	-- The Lesson of the Iron Bough (Mage, Warlock)
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
-						["classes"] = { MAGE },
+						["classes"] = { MAGE, WARLOCK },
 					}),
 					q(30035, {	-- The Lesson of the Iron Bough (Priest?)
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
@@ -351,9 +351,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
 						["classes"] = { ROGUE },
 					}),
-					q(30037, {	-- The Lesson of the Iron Bough (Shaman, Warlock)
+					q(30037, {	-- The Lesson of the Iron Bough (Shaman)
 						["provider"] = { "n", 53566 },	-- Master Shang Xi
-						["classes"] = { SHAMAN, WARLOCK },
+						["classes"] = { SHAMAN },
 					}),
 					q(29406, {	-- The Lesson of the Sandy Fist
 						["provider"] = { "n", 53566 },	-- Master Shang Xi

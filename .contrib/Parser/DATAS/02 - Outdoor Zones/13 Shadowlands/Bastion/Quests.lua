@@ -958,7 +958,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				["lockCriteria"] = { 1, "lvl", 60 },
 			}, bubbleDown({
-				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_0_2 },
+				["timeline"] = { ADDED_9_0_2_LAUNCH },
 			}, {
 				q(62737, {	-- Aspirant For a Day [Pre-60]
 					["coord"] = { 54.1, 80.4, BASTION },

@@ -1575,7 +1575,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["sourceQuests"] = { 51427 },	-- I Like Turtles
 				["provider"] = { "n", 137453 },
 				["coord"] = { 35.7, 31.2, STORMSONG_VALLEY },
-				["races"] = ALLIANCE_ONLY,
 			}),
 			q(51208, {	-- Wheat A Minute
 				["sourceQuests"] = { 51504 },	-- Cookie Delivery
@@ -1588,7 +1587,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					50909, -- Never Outgunned
 					50910, -- Dangerous Game
 					50908, -- Smells Like Trouble
-				},	
+				},
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 135682 },	-- Patrick Eckhart
 				["coord"] = { 57.8, 55.3, STORMSONG_VALLEY },
