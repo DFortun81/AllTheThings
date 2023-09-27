@@ -1032,30 +1032,6 @@ root("Achievements", {
 				}),
 			},
 		})),
-		applyclassicphase(WRATH_PHASE_ONE, ach(4477, {	-- Looking For Many
-			["description"] = "Blizzard hasn't figured out a way to award credit for this yet.",
-			["timeline"] = { "created 3.0.2" },
-			["groups"] = {
-				title(137, {	-- the Patient
-					["description"] = "Blizzard hasn't figured out a way to award credit for this yet.",
-					["timeline"] = { "created 3.0.2" },
-				}),
-			},
-		})),
-		applyclassicphase(WRATH_PHASE_ONE, ach(4476, {	-- Looking For More
-			["description"] = "Blizzard hasn't figured out a way to award credit for this yet.",
-			["timeline"] = { "created 3.0.2" },
-		})),
-		applyclassicphase(WRATH_PHASE_ONE, ach(4478, {	-- Looking For Multitudes
-			["description"] = "Blizzard hasn't figured out a way to award credit for this yet.",
-			["timeline"] = { "created 3.0.2" },
-			["groups"] = {
-				i(49912, {	-- Perky Pug
-					["description"] = "Blizzard hasn't figured out a way to award credit for this yet.",
-					["timeline"] = { "created 3.0.2" },
-				}),
-			},
-		})),
 		applyclassicphase(WRATH_PHASE_ONE, ach(1289, {	-- Northrend Dungeon Hero
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",

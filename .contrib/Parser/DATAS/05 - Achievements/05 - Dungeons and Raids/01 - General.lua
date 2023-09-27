@@ -540,13 +540,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(7),	-- Heroic: Black Rook Hold
 			crit(8),	-- Heroic: Maw of Souls
 		}),
-		ach(4478, {		-- Looking For Multitudes
-			i(49912),	-- Perky Pug (PET!)
-			ach(4477, {		-- Looking For Many
-				title(137),	-- the Patient
-			}),
-			ach(4476),	-- Looking For More
-		}),
 		ach(1289, {		-- Northrend Dungeon Hero
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",

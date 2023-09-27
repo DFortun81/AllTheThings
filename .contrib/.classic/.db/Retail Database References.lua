@@ -43,6 +43,9 @@
 -- #IMPORT: 10 - Craftables\\03 - Wrath of the Lich King.lua
 -- #IMPORT: 10 - Craftables\\04 - Cataclysm.lua
 
+-- Group Finder
+-- #IMPORT: 04 - Group Finder\\Group Finder.lua
+
 -- Professions
 -- #IMPORT: 11 - Professions\\
 

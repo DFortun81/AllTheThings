@@ -2767,7 +2767,17 @@ function app:GetDataCache()
 				isCraftedCategory = true
 			});
 		end
-
+		
+		-- Group Finder
+		if app.Categories.GroupFinder then
+			tinsert(g, {
+				text = DUNGEONS_BUTTON,
+				icon = app.asset("Category_GroupFinder"),
+				u = 33,	-- WRATH_PHASE_FOUR
+				g = app.Categories.GroupFinder,
+			});
+		end
+		
 		-- Professions
 		if app.Categories.Professions then
 			tinsert(g, {
