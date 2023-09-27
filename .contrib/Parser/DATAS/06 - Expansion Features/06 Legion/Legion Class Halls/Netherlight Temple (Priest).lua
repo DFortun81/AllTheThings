@@ -728,6 +728,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(44610),	-- Tracking Quest: Holy Ground 3 - completed the "Holy Ground: Uther's Tomb" mission
 		q(44611),	-- Tracking Quest: Holy Ground 4 - completed the "Holy Ground: Auchindoun" mission
 		q(44612),	-- Tracking Quest: Holy Ground 5 - completed the "Holy Ground: The Sunwell" mission
+		q(44649),	-- Tracking Quest: 7.0 Class Hall - Priest - One-Time Quest Mission - Chapter 3 (JAP) - completed the "Infiltrating Our Enemies" mission
 		q(44650),	-- Tracking Quest: 7.0 Class Hall - Priest - Pacing Mission 1 (JAP) - completed the "Relieving the Front Lines" mission
 	}),
 });

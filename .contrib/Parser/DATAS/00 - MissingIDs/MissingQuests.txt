@@ -1276,7 +1276,6 @@ q(44321),	-- Tracking Quest
 q(44322),	-- Tracking Quest
 q(44494),	--
 q(44648),	-- Tracking Quest: 7.0 Class Hall - Paladin - Pacing Mission 2B
-q(44649),	-- Tracking Quest: 7.0 Class Hall - Priest - One-Time Quest Mission - Chapter 3 (JAP)
 q(44755),	--
 q(44757),	--
 q(44774),	--
