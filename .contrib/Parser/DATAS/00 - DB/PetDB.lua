@@ -991,10 +991,11 @@ local CompanionPetSpeciesIDToSpellID = {
 	[3066] = 346192,	-- Lucy
 	[3067] = 346236,	-- Spriggan Trickster
 	[3079] = 346260,	-- Winterleaf Spriggan
-	[384796] = 384796,	-- Pebble
-	[388541] = 388541,	-- Hoplet
-	[407786] = 407786,	-- Glub
-	[359755] = 359755,	-- Flurky
+	[4234] = 384796,	-- Pebble
+	[4235] = 388541,	-- Hoplet
+	[4236] = 407786,	-- Glub
+	[4233] = 359755,	-- Flurky
+	[4329] = 428053,	-- Arfus
 };
 for key,value in pairs(CompanionPetSpeciesIDToSpellID) do
 	if CompanionPetSpellIDToSpeciesID[value] then
@@ -4112,8 +4113,8 @@ i(210347, 4285);	-- Sergeant Quackers
 -----------------
 -- CLASSIC WOW --
 -----------------
--- NOTE: When the Pet Journal is added later, we need to get the actual Battle Pet ID.
-i(198665, 384796);	-- Pebble's Pebble
-i(200060, 388541);	-- Hoplet
-i(204982, 407786);	-- Glub
-i(187794, 359755);	-- Flurky
+i(198665, 4234);	-- Pebble's Pebble
+i(200060, 4235);	-- Hoplet
+i(204982, 4236);	-- Glub
+i(187794, 4233);	-- Flurky
+i(211082, 4329);	-- Arfus (WOTLK)
