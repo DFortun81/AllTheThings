@@ -2742,7 +2742,9 @@ local ResolveFunctions = {
 			orig = RawCloneData(searchResults);
 		end
 		wipe(searchResults);
-		searchResults[1] = CreateObject({[field] = value, g = orig });
+		local group = CreateObject({[field] = value });
+		NestObjects(group, orig);
+		searchResults[1] = group;
 	end,
 	-- Instruction to "pop" all of the group values up one level
 	["pop"] = function(finalized, searchResults)
@@ -3179,7 +3181,7 @@ local SubroutineCache = {
 	end,
 	-- TW Instance
 	["tw_instance"] = function(finalized, searchResults, o, cmd, instanceID)
-		local select, pop, where, whereany, push, finalize = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.whereany, ResolveFunctions.push, ResolveFunctions.finalize;
+		local select, pop, whereany, push, finalize = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.whereany, ResolveFunctions.push, ResolveFunctions.finalize;
 		select(finalized, searchResults, o, "select", "itemID", 133543);	-- Infinite Timereaver
 		push(finalized, searchResults, o, "push", "headerID", app.HeaderConstants.COMMON_BOSS_DROPS);	-- Push into 'Common Boss Drops' header
 		finalize(finalized, searchResults);	-- capture current results
