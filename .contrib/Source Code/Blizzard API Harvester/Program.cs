@@ -1302,7 +1302,17 @@ namespace ATT
             {
                 dict["lvl"] = new List<object>() { minlvl };
             }
-            if (requirements.TryGetValue("playable_classes", out object classes) || requirements.TryGetValue("classes", out classes))
+            if (requirements.TryGetValue("playable_classes", out d) && d.TryGetValue("links", out List<object> l))
+            {
+                var list = new List<int>();
+                foreach (var entry in l)
+                {
+                    if (entry is Dictionary<string, object> c && c.TryGetValue("id", out int id) && !list.Contains(id)) list.Add(id);
+                }
+                list.Sort();
+                dict["classes"] = list;
+            }
+            if (requirements.TryGetValue("classes", out object classes))
             {
                 if (!(classes is IEnumerable<object> classesSet))
                 {
@@ -1319,10 +1329,6 @@ namespace ATT
                     //Console.WriteLine($"'classes':{MiniJSON.Json.Serialize(list)}");
                     dict["classes"] = list;
                 }
-            }
-            else
-            {
-                dict.Remove("classes");
             }
             // 2020-08-19 Blizz seems to have relegated to simply showing ALLIANCE or HORDE for a faction tag instead of listing all races within a given faction
             if (requirements.TryGetValue("faction", out d))
@@ -1363,10 +1369,6 @@ namespace ATT
                     }
                 }
             }
-            else
-            {
-                dict.Remove("r");
-            }
             // "playable_specializations" is also a possible requirement -- i.e. artifacts
             if (requirements.TryGetValue("playable_races", out d))
             {
@@ -1375,10 +1377,6 @@ namespace ATT
             else if (requirements.TryGetValue("races", out List<object> race_list))
             {
                 Parse_races(dict, race_list);
-            }
-            else
-            {
-                dict.Remove("races");
             }
         }
 
