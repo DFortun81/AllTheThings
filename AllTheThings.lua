@@ -3527,14 +3527,16 @@ local SubroutineCache = {
 			orig = RawCloneData(searchResults);
 		end
 		wipe(searchResults);
-		for _,o in ipairs(orig) do
-			if not o.f then
-				if o.g then
-					-- no filter Item with sub-groups
-					ArrayAppend(searchResults, o.g)
-				else
-					-- no filter Item without sub-groups, keep it directly in case it is a cost for the actual Tier pieces
-					tinsert(searchResults, o);
+		if orig then
+			for _,o in ipairs(orig) do
+				if not o.f then
+					if o.g then
+						-- no filter Item with sub-groups
+						ArrayAppend(searchResults, o.g)
+					else
+						-- no filter Item without sub-groups, keep it directly in case it is a cost for the actual Tier pieces
+						tinsert(searchResults, o);
+					end
 				end
 			end
 		end
