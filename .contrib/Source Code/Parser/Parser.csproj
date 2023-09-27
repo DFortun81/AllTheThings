@@ -70,6 +70,7 @@
   <ItemGroup>
     <Compile Include="CollectedStatus.cs" />
     <Compile Include="CustomConfiguration.cs" />
+    <Compile Include="DataValidator.cs" />
     <Compile Include="Export\Export %28Compressed Lua%29.cs" />
     <Compile Include="Export\Export %28Raw Lua%29.cs" />
     <Compile Include="Export\Export %28Shortcuts%29.cs" />

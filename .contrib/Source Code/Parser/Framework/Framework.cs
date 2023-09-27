@@ -31,6 +31,11 @@ namespace ATT
         internal static CustomConfiguration Config { get; set; }
 
         /// <summary>
+        /// The DataValidator for the Parser
+        /// </summary>
+        internal static DataValidator Validator { get; set; }
+
+        /// <summary>
         /// All of the locales that we support.
         /// </summary>
         internal static List<string> SupportedLocales = new List<string>
@@ -344,11 +349,6 @@ namespace ATT
         /// Represents whether we are currently processing the main Achievements Category
         /// </summary>
         private static bool ProcessingAchievementCategory { get; set; }
-
-        /// <summary>
-        /// Represents the valid values for the 'classes' / 'c' field of an object
-        /// </summary>
-        internal static readonly HashSet<long> Valid_Classes = new HashSet<long>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 };
 
         /// <summary>
         /// A Dictionary of key-ID types and how many times each value of key-type has been referenced in the final DB
@@ -757,6 +757,9 @@ namespace ATT
                 }
             }
 
+            // dynamic config-driven validaton
+            Validator.Validate(data);
+
             // Get the filter for this Item
             Objects.Filters filter = Objects.Filters.Ignored;
             if (data.TryGetValue("f", out long f))
@@ -899,19 +902,10 @@ namespace ATT
                 }
             }
 
-            Validate_classes(data);
-
-            Objects.AssignFactionID(data);
-
             Validate_Encounter(data);
             Validate_Achievement(data);
             Validate_Criteria(data);
             Validate_Quest(data);
-            bool cloned = Validate_DataCloning(data);
-            // specifically Achievement Criteria that is cloned to another location in the addon should not be maintained where it was cloned from
-            if (cloned && data.ContainsKey("criteriaID"))
-                return false;
-
             Validate_sym(data);
 
             // Track the hierarchy of difficultyID
@@ -975,6 +969,8 @@ namespace ATT
             Validate_providers(data);
             Validate_LocationData(data);
 
+            Objects.AssignFactionID(data);
+
             // TODO: this is temporary until all Item-Recipes are mapped in ItemRecipes.lua, it should only be necessary in DataConsolidation after that point
             if (data.TryGetValue("requireSkill", out long requiredSkill))
             {
@@ -1016,6 +1012,11 @@ namespace ATT
                 }
             }
 
+            bool cloned = Validate_DataCloning(data);
+            // specifically Achievement Criteria that is cloned to another location in the addon should not be maintained where it was cloned from
+            if (cloned && data.ContainsKey("criteriaID"))
+                return false;
+
             // Merge all relevant Item Data into the global dictionaries after being validated
             Items.Merge(data);
             Objects.Merge(data);
@@ -1024,23 +1025,6 @@ namespace ATT
             Items.MarkItemAsReferenced(data);
 
             return true;
-        }
-
-        private static void Validate_classes(IDictionary<string, object> data)
-        {
-            // Verify 'classes' have acceptable values
-            if (data.TryGetValue("c", out List<object> classes))
-            {
-                try
-                {
-                    if (classes.Any(c => !Valid_Classes.Contains(Convert.ToInt64(c))))
-                        LogError($"Invalid 'classes' value", data);
-                }
-                catch
-                {
-                    LogError($"Invalid 'classes' value", data);
-                }
-            }
         }
 
         private static void Validate_cost(IDictionary<string, object> data)

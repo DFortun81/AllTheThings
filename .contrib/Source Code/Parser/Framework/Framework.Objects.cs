@@ -1034,13 +1034,8 @@ namespace ATT
                 // Calculate the faction ID. (0 is no faction)
                 if (data.TryGetValue("races", out object racesRef) && racesRef is List<object> races)
                 {
-                    // No races?
-                    if (!races.Any())
-                    {
-                        throw new InvalidDataException("Invalid 'races' value in data:" + Environment.NewLine + ToJSON(data));
-                    }
                     // Alliance Only?
-                    else if (ALLIANCE_ONLY.Matches(races))
+                    if (ALLIANCE_ONLY.Matches(races))
                     {
                         data["r"] = 2;  // Alliance Only!
                         data.Remove("races");   // We do not need to include races for this as it is ALLIANCE_ONLY.

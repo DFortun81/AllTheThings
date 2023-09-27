@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace ATT
 {
@@ -84,6 +83,7 @@ namespace ATT
         private Dictionary<string, CustomConfigurationNode> _dict;
         private List<CustomConfigurationNode> _list;
         private object _val;
+        private string _jsonKey;
 
         /// <summary>
         /// Represents whether this CustomConfigurationNode supports enumeration
@@ -93,6 +93,17 @@ namespace ATT
             get
             {
                 return _dict != null || _list != null;
+            }
+        }
+
+        /// <summary>
+        /// Represents the parent Key for this Node, if known
+        /// </summary>
+        public string Key
+        {
+            get
+            {
+                return _jsonKey;
             }
         }
 
@@ -159,6 +170,27 @@ namespace ATT
             throw new InvalidOperationException($"CustomConfigurationNode cannot convert to int type: {(string)value}");
         }
 
+        public static implicit operator bool(CustomConfigurationNode value)
+        {
+            if (value?._val is bool l)
+            {
+                return l;
+            }
+
+            try
+            {
+                return Convert.ToBoolean(value?._val);
+            }
+            catch { }
+
+            if (bool.TryParse(value, out l))
+            {
+                return l;
+            }
+
+            throw new InvalidOperationException($"CustomConfigurationNode cannot convert to bool type: {(string)value}");
+        }
+
         public static implicit operator string[](CustomConfigurationNode value)
         {
             try
@@ -170,6 +202,17 @@ namespace ATT
             throw new InvalidOperationException($"CustomConfigurationNode cannot convert to string[] type: {(string)value}");
         }
 
+        public static implicit operator long[](CustomConfigurationNode value)
+        {
+            try
+            {
+                return value?._list.Select(v => (long)v).ToArray();
+            }
+            catch { }
+
+            throw new InvalidOperationException($"CustomConfigurationNode cannot convert to long[] type: {(string)value}");
+        }
+
         public static implicit operator int[](CustomConfigurationNode value)
         {
             try
@@ -179,6 +222,17 @@ namespace ATT
             catch { }
 
             throw new InvalidOperationException($"CustomConfigurationNode cannot convert to int[] type: {(string)value}");
+        }
+
+        public static implicit operator object[](CustomConfigurationNode value)
+        {
+            try
+            {
+                return value?._list.Select(v => v._val).ToArray();
+            }
+            catch { }
+
+            throw new InvalidOperationException($"CustomConfigurationNode cannot convert to object[] type: {(string)value}");
         }
 
         /// <summary>
@@ -198,10 +252,19 @@ namespace ATT
         }
 
         /// <summary>
+        /// Returns the string representation of this Node
+        /// </summary>
+        public override string ToString()
+        {
+            return this;
+        }
+
+        /// <summary>
         /// Attetmpts to parse deserialized JSON data into a CustomConfigurationNode
         /// </summary>
-        internal CustomConfigurationNode(object jsonObj)
+        internal CustomConfigurationNode(object jsonObj, string key = null)
         {
+            _jsonKey = key;
             ApplyData(jsonObj);
         }
 
@@ -214,7 +277,7 @@ namespace ATT
             {
                 if (_dict == null)
                 {
-                    _dict = dict.ToDictionary(o => o.Key, o => new CustomConfigurationNode(o.Value));
+                    _dict = dict.ToDictionary(o => o.Key, o => new CustomConfigurationNode(o.Value, o.Key));
                 }
                 else
                 {
@@ -226,7 +289,7 @@ namespace ATT
                         }
                         else
                         {
-                            _dict[kvpObj.Key] = new CustomConfigurationNode(kvpObj.Value);
+                            _dict[kvpObj.Key] = new CustomConfigurationNode(kvpObj.Value, kvpObj.Key);
                         }
                     }
                 }

@@ -103,6 +103,7 @@ namespace ATT
                 lua.DoString($"CurrentFileName = [[{mainFileName.Replace("\\", "/")}]];CurrentSubFileName = nil;");
                 lua.DoString(ProcessContent(File.ReadAllText(mainFileName, Encoding.UTF8)));
                 Framework.IgnoredValue = lua.GetString("IGNORED_VALUE");
+                Framework.Validator = new DataValidator(lua, Framework.Config);
 
                 // Try to Copy in the Alliance Only / Horde Only lists
                 try
