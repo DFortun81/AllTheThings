@@ -2627,10 +2627,9 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 				i(208095, sharedDataSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Cache of Timewarped Treasures (Cata)
 					["description"] = "This bag contains an item from Firelands or an item from the WoW's 15th Birthday Event Bosses Chogath or Nefarian.\nThe droprate for the mounts seems rather high (5-10%).",
 					["sym"] = {{"select","itemID",
-						152972,	-- Faceless Minion (PET!)
-					--	122112,	-- Hyjal Whisp
-					--	122110,	-- Sultry Grimoire
-					--	97555,	-- Tiny Fel Engine Key
+						152978, 	-- Infernal Pyreclaw (PET!)
+						152969, 	-- Twilight Clutch-Sister (PET!)
+						152973, 	-- Zephyrian Prince (PET!)
 					}},
 					["groups"] = {
 					-- Can also contain any item from Firelands
@@ -2660,7 +2659,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 						i(171859),	-- Stormrider's Mantle
 						i(171871),	-- Magma Plated Shoulderguards
 						i(171869),	-- Magma Plated Pauldrons
-						i(17155),	-- Firelord's Mantle
+						i(171855),	-- Firelord's Mantle
 						i(171842),	-- Shalug'doom, the Axe of Unmaking
 						i(171847),	-- "Uhn'agh Fash, the Darkest Betrayal"
 						i(171854),	-- Twilight's Hammer
