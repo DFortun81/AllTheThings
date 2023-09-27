@@ -233,9 +233,9 @@ local QUANTUM_GROUP = sharedData({
 	i(208123, {	-- Quantum Wand
 	}),
 	i(208216, {	-- Reins of the Quantum Courser
-		["description"] = "Turns into one (1) unlearned Dungeon Mount, including the Infinite Timereaver, from before Dragonflight.",
+		["description"] = "Turns into one (1) unlearned Dungeon Mount from before Dragonflight.",
 		["filter"] = MISC,	-- Not an actual Mount itself
-		["groups"] = {
+		["groups"] = {		-- Listed manually here, as otherwise it doesnt show when there is no timewalking event active.
 			i(133543),		-- Reins of the Infinite Timereaver
 		},
 		["sym"] = {{"select","itemID",
@@ -249,7 +249,7 @@ local QUANTUM_GROUP = sharedData({
 			159921,	-- Mummified Raptor Skull
 			44151,	-- Reins of the Blue Proto-Drake
 			63040,	-- Reins of the Drake of the North Wind
-			133543,	-- Reins of the Infinite Timereaver
+		--	133543,	-- Reins of the Infinite Timereaver
 			32768,	-- Reins of the Raven Lord
 			63043,	-- Reins of the Vitreous Stone Drake
 			159842,	-- Sharkbait's Favorite Crackers
