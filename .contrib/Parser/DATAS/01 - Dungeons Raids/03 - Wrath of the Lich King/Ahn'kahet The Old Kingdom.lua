@@ -81,7 +81,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 				})),
-				applyclassicphase(WRATH_PHASE_TWO, ach(18593, {	-- Defense Protocol Beta: Ahn'kahet: The Old Kingdom
+				applyclassicphase(WRATH_PHASE_THREE, ach(18593, {	-- Defense Protocol Beta: Ahn'kahet: The Old Kingdom
 					crit(60583, { -- Elder Nadox
 						["_encounter"] = { 580, HEROIC_DUNGEON },
 						["groups"] = {
@@ -113,6 +113,38 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							currency(SIDEREAL_ESSENCE),
 							i(45699),	-- Pendant of the Piercing Glare
 							i(45704),	-- Shawl of the Shattered Giant
+						},
+					}),
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, ach(19430, {	-- Defense Protocol Gamma: Ahn'kahet: The Old Kingdom
+					crit(63330, { -- Elder Nadox
+						["_encounter"] = { 580, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63332, { -- Prince Taldaram
+						["_encounter"] = { 581, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63333, { -- Amanitar
+						["_encounter"] = { 583, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63331, { -- Jedoga Shadowseeker
+						["_encounter"] = { 582, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63329, { -- Herald Volazj
+						["_encounter"] = { 584, HEROIC_DUNGEON },
+						["groups"] = {
+							
 						},
 					}),
 				})),

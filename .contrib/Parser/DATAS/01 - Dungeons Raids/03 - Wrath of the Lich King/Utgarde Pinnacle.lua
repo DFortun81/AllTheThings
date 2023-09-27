@@ -103,6 +103,32 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 				})),
+				applyclassicphase(WRATH_PHASE_FOUR, ach(19437, {	-- Defense Protocol Gamma: Utgarde Pinnacle
+					crit(63367, { -- Svala Sorrowgrave
+						["_encounter"] = { 641, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63371, { -- Gortok Palehoof
+						["_encounter"] = { 642, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63369, { -- Skadi the Ruthless
+						["_encounter"] = { 643, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63366, { -- King Ymiron
+						["_encounter"] = { 644, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+				})),
 				-- #endif
 				ach(499, { -- Heroic: Utgarde Pinnacle
 					crit(6864, { -- Svala Sorrowgrave

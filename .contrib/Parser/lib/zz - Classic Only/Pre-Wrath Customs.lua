@@ -897,6 +897,56 @@ root("Achievements", {
 			["timeline"] = { "added 3.0.1" },
 			["races"] = HORDE_ONLY,
 		})),
+		applyclassicphase(WRATH_PHASE_FOUR, ach(19439, {	-- Defense Protocol Gamma: Terminated (A)
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				19430,	-- Defense Protocol Gamma: Ahn'kahet: The Old Kingdom
+				19429,	-- Defense Protocol Gamma: Azjol-Nerub
+				19431,	-- Defense Protocol Gamma: Drak'Tharon Keep
+				19433,	-- Defense Protocol Gamma: Gundrak
+				19435,	-- Defense Protocol Gamma: Halls of Lightning
+				19434,	-- Defense Protocol Gamma: Halls of Stone
+				19438,	-- Defense Protocol Gamma: The Culling of Stratholme
+				19428,	-- Defense Protocol Gamma: The Nexus
+				19436,	-- Defense Protocol Gamma: The Oculus
+				19432,	-- Defense Protocol Gamma: The Violet Hold
+				19426,	-- Defense Protocol Gamma: Trial of the Champion (A)
+				19427,	-- Defense Protocol Gamma: Utgarde Keep
+				19437,	-- Defense Protocol Gamma: Utgarde Pinnacle
+			}},
+			["timeline"] = { "added 3.0.1" },
+			["races"] = ALLIANCE_ONLY,
+			["groups"] = {
+				i(211082, {	-- Arfus
+					["timeline"] = { "added 3.4.3.51470" },
+				}),
+			},
+		})),
+		applyclassicphase(WRATH_PHASE_FOUR, ach(19440, {	-- Defense Protocol Gamma: Terminated (H)
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				19430,	-- Defense Protocol Gamma: Ahn'kahet: The Old Kingdom
+				19429,	-- Defense Protocol Gamma: Azjol-Nerub
+				19431,	-- Defense Protocol Gamma: Drak'Tharon Keep
+				19433,	-- Defense Protocol Gamma: Gundrak
+				19435,	-- Defense Protocol Gamma: Halls of Lightning
+				19434,	-- Defense Protocol Gamma: Halls of Stone
+				19438,	-- Defense Protocol Gamma: The Culling of Stratholme
+				19428,	-- Defense Protocol Gamma: The Nexus
+				19436,	-- Defense Protocol Gamma: The Oculus
+				19432,	-- Defense Protocol Gamma: The Violet Hold
+				19425,	-- Defense Protocol Gamma: Trial of the Champion (H)
+				19427,	-- Defense Protocol Gamma: Utgarde Keep
+				19437,	-- Defense Protocol Gamma: Utgarde Pinnacle
+			}},
+			["timeline"] = { "added 3.0.1" },
+			["races"] = HORDE_ONLY,
+			["groups"] = {
+				i(211082, {	-- Arfus
+					["timeline"] = { "added 3.4.3.51470" },
+				}),
+			},
+		})),
 		-- #endif
 		applyclassicphase(WRATH_PHASE_ONE, ach(2136, {	-- Glory of the Hero
 			-- Meta Achievement

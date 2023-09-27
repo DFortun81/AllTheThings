@@ -239,6 +239,112 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 						},
 					}),
 				}))),
+				applyclassicphase(WRATH_PHASE_FOUR, bubbleDownFiltered({ ["races"] = ALLIANCE_ONLY }, 	-- Defense Protocol Gamma: Trial of the Champion (A)
+					(function(t) return t.criteriaID or t.achID or t.achievementID; end), ach(19426, {
+					crit(63308, { -- Mokra the Skullcrusher
+						["_encounter"] = { 634, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63317, { -- Deathstalker Visceri
+						["_encounter"] = { 634, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63314, { -- Runok Wildmane
+						["_encounter"] = { 634, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63313, { -- Eressea Dawnsinger
+						["_encounter"] = { 634, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63306, { -- Zul'tore
+						["_encounter"] = { 634, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63310, { -- Argent Confessor Paletress
+						["_encounter"] = { 636, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63315, { -- Eadric the Pure
+						["_encounter"] = { 635, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					--[[
+					-- CRIEVE NOTE: The Black Knight doesn't have this on PTR yet for alliance, this is the horde id, might be the same though.
+					-- NOTE2: For some reason this id is the same one as Argent Confessor Paletress for Alliance. Seems bugged.
+					crit(63310, { -- The Black Knight
+						["_encounter"] = { 637, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					]]--
+				}))),
+				applyclassicphase(WRATH_PHASE_FOUR, bubbleDownFiltered({ ["races"] = HORDE_ONLY }, 	-- Defense Protocol Gamma: Trial of the Champion (H)
+					(function(t) return t.criteriaID or t.achID or t.achievementID; end), ach(19425, {
+					crit(63308, { -- Marshal Jacob Alerius
+						["_encounter"] = { 634, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(60771, { -- Lana Stouthammer
+						["_encounter"] = { 634, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63314, { -- Colosos
+						["_encounter"] = { 634, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63313, { -- Ambrose Boltspark
+						["_encounter"] = { 634, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63306, { -- Jaelyne Evensong
+						["_encounter"] = { 634, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63316, { -- Argent Confessor Paletress
+						["_encounter"] = { 636, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63315, { -- Eadric the Pure
+						["_encounter"] = { 635, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63310, { -- The Black Knight
+						["_encounter"] = { 637, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+				}))),
 				-- #endif
 			}),
 			-- #if AFTER 4.3.0.14732

@@ -87,6 +87,26 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 				})),
+				applyclassicphase(WRATH_PHASE_FOUR, ach(19429, {	-- Defense Protocol Gamma: Azjol-Nerub
+					crit(63328, {	-- Krik'thir the Gatewatcher
+						["_encounter"] = { 585, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63326, {	-- Hadronox
+						["_encounter"] = { 586, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63327, {	-- Anub'arak
+						["_encounter"] = { 587, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+				})),
 				-- #endif
 				ach(491, { -- Heroic: Azjol-Nerub
 					crit(6848, {	-- Krik'thir the Gatewatcher

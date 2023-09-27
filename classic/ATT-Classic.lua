@@ -709,6 +709,21 @@ local achievementTooltipText = {
 	[18601] = "DPB",	-- Defense Protocol Beta: The Culling of Stratholme
 	[18677] = "DPB",	-- Defense Protocol Beta: Trial of the Champion (A)
 	[18678] = "DPB",	-- Defense Protocol Beta: Trial of the Champion (H)
+
+	[19427] = "DPG",	-- Defense Protocol Gamma: Utgarde Keep
+	[19428] = "DPG",	-- Defense Protocol Gamma: The Nexus
+	[19429] = "DPG",	-- Defense Protocol Gamma: Azjol-Nerub
+	[19430] = "DPG",	-- Defense Protocol Gamma: Ahn'kahet: The Old Kingdom
+	[19431] = "DPG",	-- Defense Protocol Gamma: Drak'Tharon Keep
+	[19432] = "DPG",	-- Defense Protocol Gamma: The Violet Hold
+	[19433] = "DPG",	-- Defense Protocol Gamma: Gundrak
+	[19434] = "DPG",	-- Defense Protocol Gamma: Halls of Stone
+	[19435] = "DPG",	-- Defense Protocol Gamma: Halls of Lightning
+	[19436] = "DPG",	-- Defense Protocol Gamma: The Oculus
+	[19437] = "DPG",	-- Defense Protocol Gamma: Utgarde Pinnacle
+	[19438] = "DPG",	-- Defense Protocol Gamma: The Culling of Stratholme
+	[19426] = "DPG",	-- Defense Protocol Gamma: Trial of the Champion (A)
+	[19425] = "DPG",	-- Defense Protocol Gamma: Trial of the Champion (H)
 };
 local function BuildGroups(parent)
 	local g = parent.g;

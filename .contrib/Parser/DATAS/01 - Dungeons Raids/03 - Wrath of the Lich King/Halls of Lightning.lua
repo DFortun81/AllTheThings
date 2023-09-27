@@ -109,6 +109,32 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 				})),
+				applyclassicphase(WRATH_PHASE_FOUR, ach(19435, {	-- Defense Protocol Gamma: Halls of Lightning
+					crit(63353, { -- General Bjarngrim
+						["_encounter"] = { 597, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63349, { -- Volkhan
+						["_encounter"] = { 598, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63350, { -- Ionar
+						["_encounter"] = { 599, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63348, { -- Loken
+						["_encounter"] = { 600, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+				})),
 				-- #endif
 				ach(497,  {	-- Heroic: Halls of Lightning
 					crit(6831, { -- General Bjarngrim

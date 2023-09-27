@@ -96,6 +96,29 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 				})),
+				applyclassicphase(WRATH_PHASE_FOUR, ach(19427, {	-- Defense Protocol Gamma: Utgarde Keep
+					crit(63319, { -- Prince Keleseth
+						["_encounter"] = { 638, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63318, { -- Skarvald the Constructor
+						["_encounter"] = { 639, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63321, { -- Dalronn the Controller
+						["_encounter"] = { 639, HEROIC_DUNGEON },
+					}),
+					crit(63320, { -- Ingvar the Plunderer
+						["_encounter"] = { 640, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+				})),
 				-- #endif
 				ach(489,  {	-- Heroic: Utgarde Keep
 					crit(3701, { -- Prince Keleseth

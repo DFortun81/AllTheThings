@@ -98,6 +98,32 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 				})),
+				applyclassicphase(WRATH_PHASE_FOUR, ach(19431, {	-- Defense Protocol Gamma: Drak'Tharon Keep
+					crit(63334, { -- Trollgore
+						["_encounter"] = { 588, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63335, { -- Novos the Summoner
+						["_encounter"] = { 589, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63334, { -- King Dred
+						["_encounter"] = { 590, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63337, { -- The Prophet Tharon'ja
+						["_encounter"] = { 591, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+				})),
 				-- #endif
 				ach(493,  {	-- Heroic: Drak'Tharon Keep
 					crit(6813, { -- Trollgore

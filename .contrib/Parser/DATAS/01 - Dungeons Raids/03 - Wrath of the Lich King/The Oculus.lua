@@ -109,6 +109,32 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 				})),
+				applyclassicphase(WRATH_PHASE_FOUR, ach(19436, {	-- Defense Protocol Gamma: The Oculus
+					crit(63358, { -- Drakos the Interrogator
+						["_encounter"] = { 622, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63361, { -- Varos Cloudstrider
+						["_encounter"] = { 623, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63356, { -- Mage-Lord Urom
+						["_encounter"] = { 624, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63360, { -- Ley-Guardian Eregos
+						["_encounter"] = { 625, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+				})),
 				-- #endif
 				ach(498,  {	-- Heroic: The Oculus
 					crit(6859, { -- Drakos the Interrogator

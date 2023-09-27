@@ -121,6 +121,38 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 				})),
+				applyclassicphase(WRATH_PHASE_FOUR, ach(19433, {	-- Defense Protocol Gamma: Gundrak
+					crit(63339, { -- Slad'ran
+						["_encounter"] = { 592, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63342, { -- Drakkari Colossus
+						["_encounter"] = { 593, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63340, { -- Moorabi
+						["_encounter"] = { 594, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63341, { -- Eck the Ferocious
+						["_encounter"] = { 595, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63343, { -- Gal'darah
+						["_encounter"] = { 596, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+				})),
 				-- #endif
 				ach(495,  {	-- Heroic: Gundrak
 					crit(6839, { -- Slad'ran

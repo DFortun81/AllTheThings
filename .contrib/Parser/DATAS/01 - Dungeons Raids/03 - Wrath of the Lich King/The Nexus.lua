@@ -105,6 +105,32 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						},
 					}),
 				})),
+				applyclassicphase(WRATH_PHASE_FOUR, ach(19428, {	-- Defense Protocol Gamma: The Nexus
+					crit(63325, { -- Grand Magus Telestra
+						["_encounter"] = { 618, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63323, { -- Anomalus
+						["_encounter"] = { 619, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63322, { -- Ormorok the Tree-Shaper
+						["_encounter"] = { 620, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+					crit(63324, { -- Keristrasza
+						["_encounter"] = { 621, HEROIC_DUNGEON },
+						["groups"] = {
+							
+						},
+					}),
+				})),
 				-- #endif
 				ach(490,  {	-- Heroic: The Nexus
 					crit(5245, { -- Grand Magus Telestra

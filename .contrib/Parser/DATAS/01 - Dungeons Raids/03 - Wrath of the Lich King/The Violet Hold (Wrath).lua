@@ -444,6 +444,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								i(46009),	-- Bindings of the Depths
 								i(46010),	-- Darkstone Ring
 							})),
+							applyclassicphase(WRATH_PHASE_FOUR, ach(19432, {	-- Defense Protocol Gamma: The Violet Hold
+								
+							})),
 							-- #endif
 							ach(494),	-- Heroic: The Violet Hold
 							ach(5100, {	-- Heroic: The Violet Hold Guild Run
