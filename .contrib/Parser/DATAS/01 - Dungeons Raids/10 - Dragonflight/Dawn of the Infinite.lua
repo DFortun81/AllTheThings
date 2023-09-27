@@ -235,6 +235,9 @@ local QUANTUM_GROUP = sharedData({
 	i(208216, {	-- Reins of the Quantum Courser
 		["description"] = "Turns into one (1) unlearned Dungeon Mount, including the Infinite Timereaver, from before Dragonflight.",
 		["filter"] = MISC,	-- Not an actual Mount itself
+		["groups"] = {
+			i(133543),		-- Reins of the Infinite Timereaver
+		},
 		["sym"] = {{"select","itemID",
 			-- Dungeon
 			68823,	-- Armored Razzashi Raptor
