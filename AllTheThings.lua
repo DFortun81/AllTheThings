@@ -7344,7 +7344,7 @@ local questFields = {
 	["missingReqs"] = function(t)
 		local sourceQuests = t.sourceQuests;
 		if sourceQuests and #sourceQuests > 0 then
-			local sq, filter, onQuest;
+			local sq, O, B, L, A, F;
 			local prereqs = t.prereqs or {};
 			local sqreq = t.sqreq or #sourceQuests;
 			local missing = 0;
@@ -7354,16 +7354,19 @@ local questFields = {
 				if not IsQuestFlaggedCompletedForce(sourceQuestID) then
 					sq = Search("questID", sourceQuestID, "field");
 					if sq then
-						filter = app.CurrentCharacterFilters(sq);
-						onQuest = C_QuestLog_IsOnQuest(sourceQuestID);
+						F = app.CurrentCharacterFilters(sq);
+						O = C_QuestLog_IsOnQuest(sourceQuestID);
+						B = sq.isBreadcrumb
+						L = sq.locked
+						A = sq.altcollected
 						prereqs[sourceQuestID] = "N"
-							..(onQuest and "O" or "")
-							..(sq.isBreadcrumb and "B" or "")
-							..(sq.locked and "L" or "")
-							..(sq.altcollected and "A" or "")
-							..(not filter and "F" or "");
+							..(O and "O" or "")
+							..(B and "B" or "")
+							..(L and "L" or "")
+							..(A and "A" or "")
+							..(not F and "F" or "");
 						-- missing: meets current character filters, non-breadcrumb, non-locked, not currently on the quest
-						if filter and not onQuest and not sq.isBreadcrumb and not (sq.locked or sq.altcollected) then
+						if F and not O and not B and not (L or A) then
 							missing = missing + 1;
 						end
 					end
