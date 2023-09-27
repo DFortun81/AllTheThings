@@ -13390,9 +13390,9 @@ local CCFuncs = {
 			-- print("on map");
 			return true;
 		-- if character has completed the first NPE quest
-		elseif ((IsQuestFlaggedCompleted(56775) or IsQuestFlaggedCompleted(59926))
+		elseif ((IsQuestFlaggedCompletedForce(56775) or IsQuestFlaggedCompletedForce(59926))
 				-- but not finished the NPE chain
-				and not (IsQuestFlaggedCompleted(60359) or IsQuestFlaggedCompleted(58911))) then
+				and not (IsQuestFlaggedCompletedForce(60359) or IsQuestFlaggedCompletedForce(58911))) then
 			-- print("incomplete NPE chain");
 			return true;
 		end
@@ -13403,11 +13403,11 @@ local CCFuncs = {
 		-- Threads content becomes unavailable when a player reaches max level
 		if UnitLevel("player") >= 70 then return false end;
 		-- check if quest #62713 is completed. appears to be a HQT concerning whether the character has chosen to skip the SL Storyline
-		return IsQuestFlaggedCompleted(62713) or false;
+		return IsQuestFlaggedCompletedForce(62713) or false;
 	end,
 	["HOA"] = function()
 		-- check if quest #51211 is completed. Rewards the HoA to the player and permanently switches all possible Azerite rewards
-		local hoa = IsQuestFlaggedCompleted(51211) or false;
+		local hoa = IsQuestFlaggedCompletedForce(51211) or false;
 		-- also store the opposite of HOA for easy checks on Azewrong gear
 		app.CurrentCharacter.CustomCollects["!HOA"] = not hoa;
 		-- for now, always assume both HoA qualifications are true so they do not filter
