@@ -76,36 +76,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 			}),
 			ach(19026, {	-- Defenders of the Dream
-				crit(1, {	-- Enter The Dream
+				crit(62054, {	-- Enter The Dream
 					["sourceQuests"] = { 77283 },	-- A Multi-Front Battle
 				}),
-				crit(2, {	-- Druids of the Flame
+				crit(62055, {	-- Druids of the Flame
 					["sourceQuests"] = { 76443 },	-- The Looming Cinder
 				}),
-				crit(3, {	-- Ice and Fire
+				crit(62056, {	-- Ice and Fire
 					["sourceQuests"] = { 77178 },	-- Tactical Withdrawal
 				}),
-				crit(4, {	-- Eye of Ysera
+				crit(62057, {	-- Eye of Ysera
 					["sourceQuests"] = { 76337 },	-- The Ember Still Smolders
 				}),
-				crit(5, {	-- A Dream of Fields and Fire
-					--["sourceQuests"] = { 76401 },	-- xx
-				}),
-				crit(6, {	-- New Beginnings
-					--["sourceQuests"] = { 76283 },	-- xx
-				}),
-				-- crit(62054, {	-- Enter The Dream
-				-- 	["sourceQuests"] = { 77283 },	-- A Multi-Front Battle
-				-- }),
-				-- crit(62055, {	-- Druids of the Flame
-				-- 	["sourceQuests"] = { 76443 },	-- The Looming Cinder
-				-- }),
-				-- crit(62056, {	-- Ice and Fire
-				-- 	["sourceQuests"] = { 77178 },	-- Tactical Withdrawal
-				-- }),
-				-- crit(62057, {	-- Eye of Ysera
-				-- 	["sourceQuests"] = { 76337 },	-- The Ember Still Smolders
-				-- }),
 				-- crit(62058, {	-- A Dream of Fields and Fire
 				-- 	["sourceQuests"] = { 76401 },	-- xx
 				-- }),
