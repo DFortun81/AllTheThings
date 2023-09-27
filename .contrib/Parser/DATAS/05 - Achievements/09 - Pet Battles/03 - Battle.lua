@@ -145,194 +145,86 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 			},
 		}))),
 		ach(10876, {	-- Battle on the Broken Isles
-			i(139003, {	-- Pocket Pet Portal
-				["questID"] = 43016,
-				["u"] = REMOVED_FROM_GAME,
-			}),
-			crit(1, {	-- Size Doesn't Matter (Azsuna)
-				["_quests"] = { 42063 },
-			}),
-			crit(2, {	-- Azsuna Specimens (Azsuna)
-				["_quests"] = { 42165 },
-			}),
-			crit(3, {	-- Dazed and Confused and Adorable (Azsuna)
-				["_quests"] = { 42146 },
-			}),
-			crit(4, {	-- Training with the Nightwatchers (Azsuna)
-				["_quests"] = { 42159 },
-			}),
-			crit(5, {	-- The Wine's Gone Bad (Azsuna)
-				["_quests"] = { 42148 },
-			}),
-			crit(6, {	-- Help a Whelp (Azsuna)
-				["_quests"] = { 42154 },
-			}),
-			crit(7, {	-- Fight Night: Amalia (Dalaran)
-				["_quests"] = { 42442 },
-			}),
-			crit(8, {	-- Fight Night: Bodhi Sunwayver (Dalaran)
-				["_quests"] = { 40299 },
-			}),
-			crit(9, {	-- Fight Night: Heliosus (Dalaran)
-				["_quests"] = { 41881 },
-			}),
-			crit(10, {	-- Fight Night: Sir Galveston (Dalaran)
-				["_quests"] = { 40298 },
-			}),
-			crit(11, {	-- Fight Night: Rats! (Dalaran)
-				["_quests"] = { 41886 },
-			}),
-			crit(12, {	-- Fight Night: Stitches Jr. Jr. (Dalaran)
-				["_quests"] = { 42062 },
-			}),
-			crit(13, {	-- Fight Night: Tiffany Nelson (Dalaran)
-				["_quests"] = { 40277 },
-			}),
-			crit(14, {	-- Training with Bredda (Highmountain)
-				["_quests"] = { 40280 },
-			}),
-			crit(15, {	-- Tiny Poacher, Tiny Animals (Highmountain)
-				["_quests"] = { 40282 },
-			}),
-			crit(16, {	-- Wildlife Protection Force (Highmountain)
-				["_quests"] = { 41766 },
-			}),
-			crit(17, {	-- It's Illid... Wait. (Highmountain)
-				["_quests"] = { 42064 },
-			}),
-			crit(18, {	-- Snail Fight! (Highmountain)
-				["_quests"] = { 41687 },
-			}),
-			crit(19, {	-- Rocko Needs a Shave (Highmountain)
-				["_quests"] = { 41624 },
-			}),
-			crit(20, {	-- All Howl, No Bite (Stormheim)
-				["_quests"] = { 42067 },
-			}),
-			crit(21, {	-- Jarrun's Ladder (Stormheim)
-				["_quests"] = { 41944 },
-			}),
-			crit(22, {	-- Oh, Ominitron (Stormheim)
-				["_quests"] = { 41958 },
-			}),
-			crit(23, {	-- My Beasts's Bidding (Stormheim)
-				["_quests"] = { 40278 },
-			}),
-			crit(24, {	-- All Pets Go to Heaven (Stormheim)
-				["_quests"] = { 41948 },
-			}),
-			crit(25, {	-- Beasts of Burden (Stormheim)
-				["_quests"] = { 41935 },
-			}),
-			crit(26, {	-- The Master of Pets (Suramar)
-				["_quests"] = { 41895 },
-			}),
-			crit(27, {	-- Clear the Catacombs (Suramar)
-				["_quests"] = { 41914 },
-			}),
-			crit(28, {	-- Chopped (Suramar)
-				["_quests"] = { 41990 },
-			}),
-			crit(29, {	-- Flummoxed (Suramar)
-				["_quests"] = { 40337 },
-			}),
-			crit(30, {	-- Threads of Fate (Suramar)
-				["_quests"] = { 42015 },
-			}),
-			crit(31, {	-- Mana Tap (Suramar)
-				["_quests"] = { 41931 },
-			}),
-			crit(32, {	-- Training with Durian (Val'sharah)
-				["_quests"] = { 40279 },
-			}),
-			crit(33, {	-- Only Pets Can Prevent Forest Fires (Val'sharah)
-				["_quests"] = { 41862 },
-			}),
-			crit(34, {	-- Meet The Maw (Val'sharah)
-				["_quests"] = { 41861 },
-			}),
-			crit(35, {	-- Stand Up to Bullies (val'sharah)
-				["_quests"] = { 41855 },
-			}),
-			crit(36, {	-- Wildlife Conservationist (val'sharah)
-				["_quests"] = { 42190 },
-			}),
-			crit(37, {	-- Dealing with Satyrs (Val'sharah)
-				["_quests"] = { 41860 },
-			}),
+			["sym"] = {{ "achievement_criteria" }},
+			["g"] = {
+				i(139003, {	-- Pocket Pet Portal
+					["questID"] = 43016,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+			},
 		}),
 		ach(12936, {	-- Battle on Zandalar and Kul Tiras
 			i(163697),	-- Laser Pointer (TOY!)
-			crit(1, {	-- Crab People
+			crit(44208, {	-- Crab People
 				["_quests"] = { 52009 },
 			}),
-			crit(2, {	-- This Little Piggy Has Sharp Tusks
+			crit(44209, {	-- This Little Piggy Has Sharp Tusks
 				["_quests"] = { 52126 },
 			}),
-			crit(3, {	-- Automated Chaos
+			crit(44211, {	-- Automated Chaos
 				["_quests"] = { 52165 },
 			}),
-			crit(4, {	-- Night Horrors
+			crit(44212, {	-- Night Horrors
 				["_quests"] = { 52218 },
 			}),
-			crit(5, {	-- Rogue Azerite
+			crit(44213, {	-- Rogue Azerite
 				["_quests"] = { 52278 },
 			}),
-			crit(6, {	-- What's the Buzz?
+			crit(44214, {	-- What's the Buzz?
 				["_quests"] = { 52297 },
 			}),
-			crit(7, {	-- Sea Creatures Are Weird
+			crit(44215, {	-- Sea Creatures Are Weird
 				["_quests"] = { 52316 },
 			}),
-			crit(8, {	-- Captured Evil
+			crit(44216, {	-- Captured Evil
 				["_quests"] = { 52325 },
 			}),
-			crit(9, {	-- Not So Bad Down Here
+			crit(44217, {	-- Not So Bad Down Here
 				["_quests"] = { 52430 },
 			}),
-			crit(10, {	-- Unbreakable
+			crit(44218, {	-- Unbreakable
 				["_quests"] = { 52455 },
 			}),
-			crit(11, {	-- That's a Big Carcass
+			crit(44219, {	-- That's a Big Carcass
 				["_quests"] = { 52471 },
 			}),
-			crit(12, {	-- Strange Looking Dogs
+			crit(44220, {	-- Strange Looking Dogs
 				["_quests"] = { 52751 },
 			}),
-			crit(13, {	-- Marshdwellers
+			crit(44221, {	-- Marshdwellers
 				["_quests"] = { 52754 },
 			}),
-			crit(14, {	-- Crawg in the Bog
+			crit(44222, {	-- Crawg in the Bog
 				["_quests"] = { 52779 },
 			}),
-			crit(15, {	-- Pack Leader
+			crit(44223, {	-- Pack Leader
 				["_quests"] = { 52799 },
 			}),
-			crit(16, {	-- Accidental Dread
+			crit(44224, {	-- Accidental Dread
 				["_quests"] = { 52803 },
 			}),
-			crit(17, {	-- Keeyo's Champions of Vol'dun
+			crit(44225, {	-- Keeyo's Champions of Vol'dun
 				["_quests"] = { 52850 },
 			}),
-			crit(18, {	-- Snakes on a Terrace
+			crit(44228, {	-- Snakes on a Terrace
 				["_quests"] = { 52856 },
 			}),
-			crit(19, {	-- What Do You Mean, Mind Controlling Plants?
+			crit(44226, {	-- What Do You Mean, Mind Controlling Plants?
 				["_quests"] = { 52864 },
 			}),
-			crit(20, {	-- Desert Survivors
+			crit(44227, {	-- Desert Survivors
 				["_quests"] = { 52878 },
 			}),
-			crit(21, {	-- Critters are Friends, Not Food
+			crit(44229, {	-- Critters are Friends, Not Food
 				["_quests"] = { 52892 },
 			}),
-			crit(22, {	-- Add More to the Collection
+			crit(44230, {	-- Add More to the Collection
 				["_quests"] = { 52923 },
 			}),
-			crit(23, {	-- You've Never Seen Jammer Upset
+			crit(44231, {	-- You've Never Seen Jammer Upset
 				["_quests"] = { 52937 },
 			}),
-			crit(24, {	-- Small Beginnings
+			crit(44232, {	-- Small Beginnings
 				["_quests"] = { 52938 },
 			}),
 		}),
