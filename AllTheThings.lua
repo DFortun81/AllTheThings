@@ -4837,7 +4837,10 @@ local function DetermineCraftedGroups(group, FillData)
 
 	-- check if the item is BoP and needs skill filtering for current character, or debug mode
 	local filterSkill = not app.MODE_DEBUG and (app.IsBoP(group) or select(14, GetItemInfo(itemID)) == 1);
-	local craftableItemIDs = {};
+	local craftableItemIDs = {}
+	-- track crafted items which are filled across the entire fill sequence
+	local craftedItems = FillData.CraftedItems
+
 	-- item is BoP
 	-- if filterSkill then
 	local craftedItemID, recipe, skillID, recraftItems;
@@ -4849,7 +4852,7 @@ local function DetermineCraftedGroups(group, FillData)
 		craftedItemID = info[1];
 		-- app.PrintDebug(itemID,"x",info[2],"=>",craftedItemID,"via",recipeID);
 		-- TODO: review how this can be nil
-		if craftedItemID and not craftableItemIDs[craftedItemID] then
+		if craftedItemID and not craftableItemIDs[craftedItemID] and not craftedItems[craftedItemID] then
 			-- app.PrintDebug("recipeID",recipeID);
 			-- item is BoP
 			if filterSkill then
@@ -4887,6 +4890,7 @@ local function DetermineCraftedGroups(group, FillData)
 	local groups = {};
 	local search;
 	for craftedItemID,_ in pairs(craftableItemIDs) do
+		craftedItems[craftedItemID] = true
 		-- Searches for a filter-matched crafted Item
 		search = Search("itemID",craftedItemID,"field");
 		if search then
@@ -5089,6 +5093,7 @@ app.FillGroups = function(group)
 	-- Setup the FillData for this fill operation
 	local FillData = {
 		Included = {},
+		CraftedItems = {},
 	};
 	-- Get tradeskill cache
 	knownSkills = app.CurrentCharacter.Professions;
