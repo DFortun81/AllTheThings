@@ -2634,8 +2634,13 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 					}},
 					["groups"] = {
 					-- Can also contain any item from Firelands
+						i(77067),	-- Blazing Drake (MOUNT!)
+						i(78919),	-- Experiment 12-B (MOUNT!)
+						i(71665),	-- Flametalon of Alysrazor (MOUNT!)
+						i(77069),	-- Life-Binder's Handmaiden (MOUNT!)
 						i(133543),	-- Infinite Timereaver (MOUNT!)
 						i(69224),	-- Pureblood Fire Hawk (MOUNT!)
+						
 						-- Chogall
 						i(171856),	-- Shadowflame Mantle
 						i(171872),	-- Reinforced Sapphirium Shoulderguards
