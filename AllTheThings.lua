@@ -6740,6 +6740,10 @@ local QuestNameDefault = setmetatable({}, { __index = function(t, id)
 		return name;
 	end
 end});
+local function GetQuestName(id)
+	return L["QUEST_NAMES"][id] or QuestNameFromServer[id] or QuestNameDefault[id] or RETRIEVING_DATA;
+end
+app.GetQuestName = GetQuestName;
 local QuestsRequested = {};
 local QuestsToPopulate = {};
 -- This event seems to fire synchronously from C_QuestLog.RequestLoadQuestByID if we already have the data
@@ -8009,6 +8013,13 @@ local criteriaFields = {
 								return app.NPCNameFromID[v[2]];
 							end
 						end
+					end
+				end
+				
+				local sourceQuests = t.sourceQuests;
+				if sourceQuests then
+					for k,id in ipairs(sourceQuests) do
+						return app.GetQuestName(id);
 					end
 				end
 			end

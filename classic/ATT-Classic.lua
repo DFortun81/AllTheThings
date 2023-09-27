@@ -4054,6 +4054,13 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 							end
 						end
 					end
+					
+					local sourceQuests = t.sourceQuests;
+					if sourceQuests then
+						for k,id in ipairs(sourceQuests) do
+							return app.GetQuestName(id);
+						end
+					end
 					return "achievementID:" .. achievementID .. ":" .. criteriaID;
 				end
 			end
@@ -7786,6 +7793,9 @@ setmetatable(CompletedQuests, {__newindex = function (t, key, value)
 		end
 	end
 end});
+app.GetQuestName = function(questID)
+	return QuestTitleFromID[questID];
+end
 
 local criteriaFuncs = {
     ["achID"] = function(achievementID)
