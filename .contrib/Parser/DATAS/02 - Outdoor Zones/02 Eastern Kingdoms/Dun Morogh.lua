@@ -1269,6 +1269,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #endif
+			-- #if AFTER 10.1.7
 			spell(921, {	-- Pickpocketing
 						i(2109, {	-- Frostmane Chain Vest
 							["timeline"] = { "added 10.1.7" },	-- ATT Discord 20.09.2023
@@ -1279,6 +1280,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					}),
+			-- #endif
 			n(QUESTS, {
 				q(319, {	-- A Favor for Evershine
 					["qg"] = 1374,	-- Rejold Barleybrew
