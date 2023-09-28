@@ -42,11 +42,12 @@ root(ROOTS.Promotions, {
 			i(38312, {	-- Tabard of Brilliance
 				["description"] = "Amazon Prime Gaming reward from August 24th 2023 till September 28th 2023.",
 				["timeline"] = { "added 10.1.5.50791", "removed 10.1.7.99999" },
+				["u"] = REMOVED_FROM_GAME,
 			}),
-			--[[i(23709, {	-- Tabard of Frost
-				["description"] = "Amazon Prime Gaming reward from August 24th 2023 till September 28th 2023.",
-				["timeline"] = { "added 10.1.5.50585", "removed 10.1.7.99999" },
-			}),--]]
+			i(49664, {	-- Enchanted Purple Jade (Zipao Tiger)
+				["description"] = "Amazon Prime Gaming reward from September 26th 2023 till October 24th 2023.",
+				["timeline"] = { "added 10.1.5.50791", "removed 10.1.7.99999" },
+			}),
 		},
 	}),
 });
