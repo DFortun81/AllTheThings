@@ -55,7 +55,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(205845),	-- Kinslayer's Hood
 						i(205844),	-- Kinslayer's Legguards
 						i(205843),	-- Kinslayer's Tainted Spaulders
-						i(202527),	-- Kinslayer's Vest
+						i(205847),	-- Kinslayer's Vest
 					}),
 					cl(DRUID, {
 						i(205840),	-- Bough of the Autumn Blaze

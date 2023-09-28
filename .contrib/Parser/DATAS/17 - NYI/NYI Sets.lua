@@ -3080,7 +3080,7 @@ root(ROOTS.NeverImplemented, {
 							i(205845),	-- Kinslayer's Hood
 							i(205844),	-- Kinslayer's Legguards
 							i(205843),	-- Kinslayer's Tainted Spaulders
-							i(205687),	-- Kinslayer's Vest
+							i(205847),	-- Kinslayer's Vest
 						}),
 						cl(DRUID, {
 							i(205840),	-- Bough of the Autumn Blaze
@@ -3182,7 +3182,7 @@ root(ROOTS.NeverImplemented, {
 							i(205845),	-- Kinslayer's Hood
 							i(205844),	-- Kinslayer's Legguards
 							i(205843),	-- Kinslayer's Tainted Spaulders
-							i(205687),	-- Kinslayer's Vest
+							i(205847),	-- Kinslayer's Vest
 						}),
 						cl(DRUID, {
 							i(205840),	-- Bough of the Autumn Blaze
@@ -3284,7 +3284,7 @@ root(ROOTS.NeverImplemented, {
 							i(205845),	-- Kinslayer's Hood
 							i(205844),	-- Kinslayer's Legguards
 							i(205843),	-- Kinslayer's Tainted Spaulders
-							i(205687),	-- Kinslayer's Vest
+							i(205847),	-- Kinslayer's Vest
 						}),
 						cl(DRUID, {
 							i(205840),	-- Bough of the Autumn Blaze
@@ -3386,7 +3386,7 @@ root(ROOTS.NeverImplemented, {
 							i(205845),	-- Kinslayer's Hood
 							i(205844),	-- Kinslayer's Legguards
 							i(205843),	-- Kinslayer's Tainted Spaulders
-							i(205687),	-- Kinslayer's Vest
+							i(205847),	-- Kinslayer's Vest
 						}),
 						cl(DRUID, {
 							i(205840),	-- Bough of the Autumn Blaze
@@ -3482,7 +3482,7 @@ root(ROOTS.NeverImplemented, {
 							i(205845),	-- Kinslayer's Hood
 							i(205844),	-- Kinslayer's Legguards
 							i(205843),	-- Kinslayer's Tainted Spaulders
-							i(205687),	-- Kinslayer's Vest
+							i(205847),	-- Kinslayer's Vest
 						}),
 						cl(DRUID, {
 							i(205840),	-- Bough of the Autumn Blaze
