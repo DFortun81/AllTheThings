@@ -4923,10 +4923,10 @@ local NPCExpandHeaders = {
 	[app.HeaderConstants.ZONE_DROPS] = true,
 };
 -- Pulls in Common drop content for specific NPCs if any exists (so we don't need to always symlink every NPC which is included in common boss drops somewhere)
-local function DetermineNPCDrops(group)
+local function DetermineNPCDrops(group, FillData)
 	-- assuming for any 'crs' references on an encounter group that all crs are linked to the same resulting content
 	local npcID = group.npcID or group.creatureID or (group.encounterID and group.crs and group.crs[1]);
-	if npcID and app.Settings:GetTooltipSetting("NPCData:Nested") then
+	if npcID and FillData.NestNPCData then
 		-- app.PrintDebug("NPC Group",group.hash,npcID)
 		-- search for groups of this NPC
 		local npcGroups = SearchForField("npcID", npcID);
@@ -5008,7 +5008,7 @@ local function FillGroupsRecursive(group, FillData)
 		DetermineUpgradeGroups(group, FillData),
 		DetermineCraftedGroups(group, FillData),
 		DetermineSymlinkGroups(group),
-		DetermineNPCDrops(group));
+		DetermineNPCDrops(group, FillData));
 
 	if groups and #groups > 0 then
 		-- app.PrintDebug("FillGroups-MergeResults",group.hash,groups and #groups)
@@ -5053,7 +5053,7 @@ local function FillGroupsRecursiveAsync(group, FillData)
 		DetermineUpgradeGroups(group, FillData),
 		DetermineCraftedGroups(group, FillData),
 		DetermineSymlinkGroups(group),
-		DetermineNPCDrops(group));
+		DetermineNPCDrops(group, FillData));
 
 	-- if groups and #groups > 0 then
 	-- 	app.PrintDebug("FillGroupsAsync-MergeResults",group.hash,groups and #groups)
@@ -5094,6 +5094,7 @@ app.FillGroups = function(group)
 	local FillData = {
 		Included = {},
 		CraftedItems = {},
+		NestNPCData = app.Settings:GetTooltipSetting("NPCData:Nested"),
 	};
 	-- Get tradeskill cache
 	knownSkills = app.CurrentCharacter.Professions;
