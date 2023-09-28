@@ -1171,7 +1171,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					}),
 				})),
 				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 7532 }, {
-					["description"] = "These items are obtained by upgrading your Catalyst PvP Gear to 9/9 upgrades.\n|CFFFF0000Requires 2400 rating in any PvP Bracket|r.",
+					["description"] = "These items are obtained by upgrading your Catalyst PvP Gear to 9/9 upgrades.\n|CFFFF0000Requires 2400 rating in any PvP Bracket.|r",
 					["groups"] = {
 						cl(DEATHKNIGHT, {
 							i(202461),	-- Lingering Phantom's Dreadhorns
