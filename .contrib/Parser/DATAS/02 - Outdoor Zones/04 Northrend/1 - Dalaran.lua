@@ -5936,6 +5936,188 @@ root(ROOTS.Zones, {
 							emoh(40, i(40683)),	-- Valor Medal of the First War
 						},
 					}),
+					-- #if ANYCLASSIC
+					applyclassicphase(WRATH_PHASE_FOUR, n(211340, {	-- Kolara Dreamsmasher <Defiler's Scourgestone Exchange>
+						["coord"] = { 65.8, 24.8, NORTHREND_DALARAN },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							defilersscourgestone(1, currency(SIDEREAL_ESSENCE)),	-- Sidereal Essence
+							defilersscourgestone(12, i(49908)),	-- Primordial Saronite
+							defilersscourgestone(20, i(47242)),	-- Trophy of the Crusade
+							
+							-- Ulduar 25 HM Items
+							defilersscourgestone(60, i(45461)),	-- Drape of Icy Intent
+							defilersscourgestone(60, i(45242)),	-- Drape of Mortal Downfall
+							defilersscourgestone(60, i(45486)),	-- Drape of the Sullen Goddess
+							defilersscourgestone(60, i(45496)),	-- Titanskin Cloak
+							defilersscourgestone(60, i(45495)),	-- Conductive Seal
+							defilersscourgestone(60, i(45471)),	-- Fate's Clutch
+							defilersscourgestone(60, i(45534)),	-- Seal of the Betrayed King
+							defilersscourgestone(60, i(45485)),	-- Bronze Pendant of the Vanir
+							defilersscourgestone(60, i(45443)),	-- Charm of Meticulous Timing
+							defilersscourgestone(60, i(45459)),	-- Frigid Strength of Hodir
+							defilersscourgestone(60, i(45133)),	-- Pendant of Fiery Havoc
+							defilersscourgestone(60, i(45517)),	-- Pendulum of Infinity
+							defilersscourgestone(60, i(45243)),	-- Sapphire Amulet of Renewal
+							defilersscourgestone(60, i(45609)),	-- Comet's Trail
+							defilersscourgestone(60, i(45518)),	-- Flare of the Heavens
+							defilersscourgestone(60, i(45535)),	-- Show of Faith
+							
+							-- TOC 25 Items (Horde)
+							defilersscourgestone(30, i(47257)),	-- Cloak of the Untamed Predator
+							defilersscourgestone(30, i(47256)),	-- Drape of the Refreshing Winds
+							defilersscourgestone(30, i(47328)),	-- Maiden's Adoration
+							defilersscourgestone(30, i(47320)),	-- Might of the Nerub
+							defilersscourgestone(30, i(47275)),	-- Pride of the Demon Lord
+							defilersscourgestone(30, i(47291)),	-- Shroud of Displacement
+							defilersscourgestone(38, i(47262)),	-- Boots of the Harsh Winter
+							defilersscourgestone(38, i(47321)),	-- Boots of the Icy Floe
+							defilersscourgestone(38, i(47269)),	-- Dawnbreaker Sabatons
+							defilersscourgestone(38, i(47296)),	-- Greaves of Ruthless Judgment
+							defilersscourgestone(38, i(47312)),	-- Greaves of the Saronite Citadel
+							defilersscourgestone(38, i(47284)),	-- Icewalker Treads
+							defilersscourgestone(38, i(47263)),	-- Sabatons of the Courageous
+							defilersscourgestone(38, i(47295)),	-- Sabatons of Tremoring Earth
+							defilersscourgestone(38, i(47293)),	-- Sandals of the Mourning Widow
+							defilersscourgestone(30, i(47282)),	-- Band of Callous Aggression
+							defilersscourgestone(30, i(47315)),	-- Band of the Traitor King
+							defilersscourgestone(30, i(47278)),	-- Circle of the Darkmender
+							defilersscourgestone(30, i(47327)),	-- Lurid Manifestation
+							defilersscourgestone(30, i(47252)),	-- Ring of the Violent Temperament
+							defilersscourgestone(30, i(47309)),	-- Mystifying Charm
+							defilersscourgestone(30, i(47276)),	-- Talisman of Heedless Sins
+							defilersscourgestone(60, i(47261)),	-- Barb of Tarasque
+							defilersscourgestone(60, i(47322)),	-- Suffering's End
+							defilersscourgestone(30, i(47272)),	-- Charge of the Eredar
+							defilersscourgestone(30, i(47307)),	-- Cry of the Val'kyr
+							defilersscourgestone(30, i(47305)),	-- Legionnaire's Gorget
+							defilersscourgestone(30, i(47297)),	-- The Executioner's Vice
+							defilersscourgestone(50, i(47266)),	-- Blood Fury
+							defilersscourgestone(50, i(47300)),	-- Gouge of the Frigid Heart
+							defilersscourgestone(50, i(47314)),	-- Hellscream Slicer
+							defilersscourgestone(50, i(47255)),	-- Stygian Bladebreaker
+							defilersscourgestone(76, i(47267)),	-- Death's Head Crossbow
+							defilersscourgestone(50, i(47287)),	-- Bastion of Resolve
+							defilersscourgestone(50, i(47260)),	-- Forlorn Barrier
+							defilersscourgestone(38, i(47303)),	-- Death's Choice
+							defilersscourgestone(38, i(47290)),	-- Juggernaut's Vitality
+							defilersscourgestone(38, i(47316)),	-- Reign of the Dead
+							defilersscourgestone(38, i(47271)),	-- Solace of the Fallen
+							defilersscourgestone(76, i(47285)),	-- Dual-blade Butcher
+							defilersscourgestone(76, i(47329)),	-- Hellion Glaive
+							defilersscourgestone(76, i(47302)),	-- Twin's Pact
+							defilersscourgestone(38, i(47286)),	-- Belt of Biting Cold
+							defilersscourgestone(38, i(47283)),	-- Belt of Bloodied Scars
+							defilersscourgestone(38, i(47308)),	-- Belt of Pale Thorns
+							defilersscourgestone(38, i(47299)),	-- Belt of the Pitiless Killer
+							defilersscourgestone(38, i(47258)),	-- Belt of the Tenebrous Mist
+							defilersscourgestone(38, i(47265)),	-- Binding of the Ice Burrower
+							defilersscourgestone(38, i(47268)),	-- Bloodbath Girdle
+							defilersscourgestone(38, i(47323)),	-- Girdle of the Forgotten Martyr
+							defilersscourgestone(38, i(47311)),	-- Waistguard of Deathly Dominion
+							
+							defilersscourgestone(30, i(47313)),	-- Armbands of Dark Determination
+							defilersscourgestone(30, i(47298)),	-- Armguards of the Shieldmaiden
+							defilersscourgestone(30, i(47324)),	-- Bindings of the Ashen Saint
+							defilersscourgestone(30, i(47277)),	-- Bindings of the Autumn Willow
+							defilersscourgestone(30, i(47253)),	-- Boneshatter Vambraces
+							defilersscourgestone(30, i(47294)),	-- Bracers of the Broken Bond
+							defilersscourgestone(30, i(47281)),	-- Bracers of the Silent Massacre
+							defilersscourgestone(30, i(47306)),	-- Dark Essence Bindings
+							defilersscourgestone(30, i(47280)),	-- Wristwraps of Cloudy Omen
+						},
+					})),
+					applyclassicphase(WRATH_PHASE_FOUR, n(211332, {	-- Korralin Hoperender <Defiler's Scourgestone Exchange>
+						["coord"] = { 37.2, 56.0, NORTHREND_DALARAN },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							defilersscourgestone(1, currency(SIDEREAL_ESSENCE)),	-- Sidereal Essence
+							defilersscourgestone(12, i(49908)),	-- Primordial Saronite
+							defilersscourgestone(20, i(47242)),	-- Trophy of the Crusade
+							
+							-- Ulduar 25 HM Items
+							defilersscourgestone(60, i(45461)),	-- Drape of Icy Intent
+							defilersscourgestone(60, i(45242)),	-- Drape of Mortal Downfall
+							defilersscourgestone(60, i(45486)),	-- Drape of the Sullen Goddess
+							defilersscourgestone(60, i(45496)),	-- Titanskin Cloak
+							defilersscourgestone(60, i(45495)),	-- Conductive Seal
+							defilersscourgestone(60, i(45471)),	-- Fate's Clutch
+							defilersscourgestone(60, i(45534)),	-- Seal of the Betrayed King
+							defilersscourgestone(60, i(45485)),	-- Bronze Pendant of the Vanir
+							defilersscourgestone(60, i(45443)),	-- Charm of Meticulous Timing
+							defilersscourgestone(60, i(45459)),	-- Frigid Strength of Hodir
+							defilersscourgestone(60, i(45133)),	-- Pendant of Fiery Havoc
+							defilersscourgestone(60, i(45517)),	-- Pendulum of Infinity
+							defilersscourgestone(60, i(45243)),	-- Sapphire Amulet of Renewal
+							defilersscourgestone(60, i(45609)),	-- Comet's Trail
+							defilersscourgestone(60, i(45518)),	-- Flare of the Heavens
+							defilersscourgestone(60, i(45535)),	-- Show of Faith
+							
+							-- TOC 25 Items (Alliance)
+							defilersscourgestone(30, i(47089)),	-- Cloak of Displacement
+							defilersscourgestone(30, i(46970)),	-- Drape of the Untamed Predator
+							defilersscourgestone(30, i(47225)),	-- Maiden's Favor
+							defilersscourgestone(30, i(47042)),	-- Pride of the Eredar
+							defilersscourgestone(30, i(46976)),	-- Shawl of the Refreshing Winds
+							defilersscourgestone(30, i(47183)),	-- Strength of the Nerub
+							defilersscourgestone(38, i(46985)),	-- Boots of the Courageous
+							defilersscourgestone(38, i(47092)),	-- Boots of the Mourning Widow
+							defilersscourgestone(38, i(46988)),	-- Boots of the Unrelenting Storm
+							defilersscourgestone(38, i(47090)),	-- Boots of Tremoring Earth
+							defilersscourgestone(38, i(46997)),	-- Dawnbreaker Greaves
+							defilersscourgestone(38, i(47194)),	-- Footpads of the Icy Floe
+							defilersscourgestone(38, i(47150)),	-- Greaves of the 7th Legion
+							defilersscourgestone(38, i(47106)),	-- Sabatons of Ruthless Judgment
+							defilersscourgestone(38, i(47071)),	-- Treads of the Icewalker
+							defilersscourgestone(30, i(47054)),	-- Band of Deplorable Violence
+							defilersscourgestone(30, i(46959)),	-- Band of the Violent Temperment
+							defilersscourgestone(30, i(47070)),	-- Ring of Callous Aggression
+							defilersscourgestone(30, i(47223)),	-- Ring of the Darkmender
+							defilersscourgestone(30, i(47149)),	-- Signet of the Traitor King
+							defilersscourgestone(30, i(47138)),	-- Chalice of Searing Light
+							defilersscourgestone(30, i(47053)),	-- Symbol of Transgression
+							defilersscourgestone(60, i(46979)),	-- Blade of Tarasque
+							defilersscourgestone(60, i(47193)),	-- Misery's End
+							defilersscourgestone(30, i(47043)),	-- Charge of the Demon Lord
+							defilersscourgestone(30, i(47116)),	-- The Arbiter's Muse
+							defilersscourgestone(30, i(47105)),	-- The Executioner's Malice
+							defilersscourgestone(30, i(47139)),	-- Wail of the Val'kyr
+							defilersscourgestone(50, i(46996)),	-- Lionhead Slasher
+							defilersscourgestone(50, i(46958)),	-- Steel Bladebreaker
+							defilersscourgestone(50, i(47148)),	-- Stormpike Cleaver
+							defilersscourgestone(50, i(47104)),	-- Twin Spike
+							defilersscourgestone(76, i(46994)),	-- Talonstrike
+							defilersscourgestone(50, i(47079)),	-- Bastion of Purity
+							defilersscourgestone(50, i(46963)),	-- Crystal Plated Vanguard
+							defilersscourgestone(38, i(47115)),	-- Death's Verdict
+							defilersscourgestone(38, i(47182)),	-- Reign of the Unliving
+							defilersscourgestone(38, i(47080)),	-- Satrina's Impeding Scarab
+							defilersscourgestone(38, i(47041)),	-- Solace of the Defeated
+							defilersscourgestone(76, i(47233)),	-- Archon Glaive
+							defilersscourgestone(76, i(47069)),	-- Justicebringer
+							defilersscourgestone(76, i(47114)),	-- Lupine Longstaff
+							defilersscourgestone(38, i(47152)),	-- Belt of Deathly Dominion
+							defilersscourgestone(38, i(47195)),	-- Belt of the Forgotten Martyr
+							defilersscourgestone(38, i(46990)),	-- Belt of the Ice Burrower
+							defilersscourgestone(38, i(47107)),	-- Belt of the Merciless Killer
+							defilersscourgestone(38, i(46999)),	-- Bloodbath Belt
+							defilersscourgestone(38, i(47081)),	-- Cord of Biting Cold
+							defilersscourgestone(38, i(47140)),	-- Cord of Pale Thorns
+							defilersscourgestone(38, i(46972)),	-- Cord of the Tenebrous Mist
+							defilersscourgestone(38, i(47072)),	-- Girdle of Bloodied Scars
+							
+							defilersscourgestone(30, i(47203)),	-- Armbands of the Ashen Saint
+							defilersscourgestone(30, i(47141)),	-- Bindings of Dark Essence
+							defilersscourgestone(30, i(46961)),	-- Boneshatter Armplates
+							defilersscourgestone(30, i(47056)),	-- Bracers of Cloudy Omen
+							defilersscourgestone(30, i(47151)),	-- Bracers of Dark Determination
+							defilersscourgestone(30, i(47055)),	-- Bracers of the Autumn Willow
+							defilersscourgestone(30, i(47108)),	-- Bracers of the Shieldmaiden
+							defilersscourgestone(30, i(47073)),	-- Bracers of the Untold Massacre
+							defilersscourgestone(30, i(47093)),	-- Vambraces of the Broken Bond
+						},
+					})),
+					-- #endif
 					n(31032, {	-- Derek Odds <Cooking Supplies>
 						["coord"] = { 40.7, 65.9, NORTHREND_DALARAN },
 						["races"] = ALLIANCE_ONLY,

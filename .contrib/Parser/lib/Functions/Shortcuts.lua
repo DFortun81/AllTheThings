@@ -395,6 +395,12 @@ darkmoonprizeticket = function(cost, item)				-- Assign a Darkmoon Prize Ticket 
 	applycost(item, { "c", 515, cost });	-- Darkmoon Prize Ticket
 	return item;
 end
+defilersscourgestone = function(cost, item)				-- Assign a Defiler's Scourgestone (Defense Protocol Gamma - Wrath Classic) cost to an item with proper timeline requirements.
+	-- #if ANYCLASSIC
+	applycost(item, { "c", DEFILERS_SCOURGESTONE, cost });
+	-- #endif
+	return item;
+end
 emoc = function(cost, item)								-- Assign a Emblem of Conquest cost to an item with proper timeline & phase requirements.
 	-- #if BEFORE 4.0.1
 	applycost(item, { "c", 221, cost });	-- Emblem of Conquest
