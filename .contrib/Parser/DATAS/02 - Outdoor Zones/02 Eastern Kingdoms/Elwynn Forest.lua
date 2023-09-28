@@ -1274,23 +1274,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #endif
-			-- #if AFTER 10.1.7
-			spell(921, {	-- Pickpocketing
-				i(2109, {	-- Frostmane Chain Vest
-					["timeline"] = { "added 10.1.7" },	-- ATT Discord 20.09.2023
-					["description"] = "Can be pickpocketed from Grik'nir the Cold in Dun Morogh and Riverpaw Runts in Elwynn Forest.",
-					--	["cr"] = 97,	-- Riverpaw Runt
-					["coords"] = {
-						{ 30.8, 83.0, ELWYNN_FOREST },
-						{ 27.6, 85.8, ELWYNN_FOREST },
-						{ 24.6, 93.6, ELWYNN_FOREST },
-						{ 25.6, 88.6, ELWYNN_FOREST },
-						{ 26.2, 86.6, ELWYNN_FOREST },
-						{ 26.0, 91.6, ELWYNN_FOREST },
-					},
-				}),
-			}),
-			-- #endif
 			n(QUESTS, {
 				q(5545, {	-- A Bundle of Trouble
 					["qg"] = 10616,	-- Supervisor Raelen

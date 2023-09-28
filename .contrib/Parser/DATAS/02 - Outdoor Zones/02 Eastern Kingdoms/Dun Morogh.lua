@@ -28,11 +28,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					spell(921, {	-- Pickpocketing
 						i(2109, {	-- Frostmane Chain Vest
 							["timeline"] = { "added 10.1.7" },	-- ATT Discord 20.09.2023
-							["description"] = "Can be pickpocketed from Grik'nir the Cold in Dun Morogh and Riverpaw Runts in Elwynn Forest.",
-							--	["cr"] = 808,	-- Grik'nir the Cold
+							["description"] = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other lowlevel mobs on Azeroth.",
+							--	["cr"] = 706,	-- Frostmane Troll Whelp
 							["coords"] = {
-								{ 37.2, 78.4, DUN_MOROGH },
-								{ 37.2, 78.5, DUN_MOROGH },
+								{ 32.4, 75.8, DUN_MOROGH },
 							},
 						}),
 					}),
@@ -1270,6 +1269,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #endif
+			spell(921, {	-- Pickpocketing
+						i(2109, {	-- Frostmane Chain Vest
+							["timeline"] = { "added 10.1.7" },	-- ATT Discord 20.09.2023
+							["description"] = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other lowlevel mobs on Azeroth.",
+							--	["cr"] = 41122,	-- Frostmane Snowstrider
+							["coords"] = {
+								{ 49.0, 35.4, DUN_MOROGH },
+							},
+						}),
+					}),
 			n(QUESTS, {
 				q(319, {	-- A Favor for Evershine
 					["qg"] = 1374,	-- Rejold Barleybrew
