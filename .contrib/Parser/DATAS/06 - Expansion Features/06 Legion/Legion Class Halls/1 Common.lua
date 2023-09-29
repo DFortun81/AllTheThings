@@ -292,9 +292,9 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 						},
 					}),
 					i(153502, {	-- Cache of Antoran Treasures [Looking For Raid]
-						--[[["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
-							The Cache contains are all correct, however it gives you 1 item every 2 weeks out of 1200+ possible items
-							Maybe Change/Update for Legion Classic?
+						["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+						--	Maybe Change/Update for Legion Classic? Was made Legacy Loot on March 30th. 8.3.7 was 21st July
+						-- #if BEFORE 8.3.7
 						["sym"] = {
 							{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
 							{"pop"},	-- Discard the Instance Header and acquire the children.
@@ -310,13 +310,12 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								153115,	-- Scythe of the Unmaker
 							},							
 						},
-						--]]
+						-- #endif
 					}),
 					i(153504, {	-- Cache of Antoran Treasures (Normal)
 						["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
-						--[[["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
-							The Cache contains are all correct, however it gives you 1 item every 2 weeks out of 1200+ possible items
-							Maybe Change/Update for Legion Classic?
+						--	Maybe Change/Update for Legion Classic? Was made Legacy Loot on March 30th. 8.3.7 was 21st July
+						-- #if BEFORE 8.3.7
 						["sym"] = {
 							{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
 							{"pop"},	-- Discard the Instance Header and acquire the children.
@@ -331,13 +330,13 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
 								155831,	-- Pantheon's Blessing
 							},
-						},--]]
+						},
+						-- #endif
 					}),
 					i(153501, {	-- Cache of Antoran Treasures (Heroic)
 						["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
-						--[[["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
-							The Cache contains are all correct, however it gives you 1 item every 2 weeks out of 1200+ possible items
-							Maybe Change/Update for Legion Classic?
+						--	Maybe Change/Update for Legion Classic? Was made Legacy Loot on March 30th. 8.3.7 was 21st July
+						-- #if BEFORE 8.3.7
 						["sym"] = {
 							{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
 							{"pop"},	-- Discard the Instance Header and acquire the children.
@@ -352,13 +351,13 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
 								155831,	-- Pantheon's Blessing
 							},
-						},--]]
+						},
+						-- #endif
 					}),
 					i(153503, {	-- Cache of Antoran Treasures (Mythic)
 						["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
-						--[[["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
-							The Cache contains are all correct, however it gives you 1 item every 2 weeks out of 1200+ possible items
-							Maybe Change/Update for Legion Classic?
+						--	Maybe Change/Update for Legion Classic? Was made Legacy Loot on March 30th. 8.3.7 was 21st July
+						-- #if BEFORE 8.3.7
 						["sym"] = {
 							{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
 							{"pop"},	-- Discard the Instance Header and acquire the children.
@@ -373,7 +372,8 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
 								155831,	-- Pantheon's Blessing
 							},
-						},--]]
+						},
+						-- #endif
 					}),
 					mission(1785, {	-- Assault on Felfire Armory
 						q(48601, {	-- Felfire Shattering
