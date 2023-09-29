@@ -1276,7 +1276,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other lowlevel mobs on Azeroth.",
 					--	["cr"] = 41122,	-- Frostmane Snowstrider
 					["coords"] = {
-								{ 49.0, 35.4, DUN_MOROGH },
+						{ 49.0, 35.4, DUN_MOROGH },
 					},
 				}),
 			}),
