@@ -16816,31 +16816,19 @@ function app:GetDataCache()
 	-- app.PrintMemoryUsage()
 
 	-- Now build the hidden "Unsorted" Window's Data
+	g = {};
 	local unsortedData = setmetatable({
-		text = L["TITLE"],
+		text = L["TITLE"] .. " " .. L["UNSORTED_1"],
 		title = L["UNSORTED_1"] .. DESCRIPTION_SEPARATOR .. app.Version,
 		icon = app.asset("logo_32x32"),
 		preview = app.asset("Discord_2_128"),
 		description = L["UNSORTED_DESC"],
 		font = "GameFontNormalLarge",
-		expanded = true,
-		visible = true,
-		progress = 0,
-		total = 0,
-		g = {},
+		g = g,
 	}, {
 		__index = function(t, key)
-			if key == "title" then
-				return app.Settings:GetModeString() .. DESCRIPTION_SEPARATOR .. app.GetNumberOfItemsUntilNextPercentage(t.progress, t.total);
-			elseif key == "progressText" then
-				return GetProgressColorText(t.progress, t.total);
-			else
-				-- Something that isn't dynamic.
-				return table[key];
-			end
 		end
 	});
-	g = unsortedData.g;
 
 	-- Never Implemented
 	if app.Categories.NeverImplemented then
