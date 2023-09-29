@@ -1109,6 +1109,7 @@ local function BuildGroups(parent)
 		end
 	end
 end
+app.BuildGroups = BuildGroups
 local function BuildSourceTextColorized(group)
 	local line = {}
 	local cap = 100
@@ -1471,6 +1472,7 @@ local function CreateObject(t, rootOnly)
 
 	return t;
 end
+app.__CreateObject = CreateObject;
 local function RawCloneData(data, clone)
 	clone = clone or {};
 	for key,value in pairs(data) do
@@ -2551,6 +2553,8 @@ app.MergedObject = function(group, rootOnly)
 	end
 	return merged;
 end
+app.NestObject = NestObject
+app.NestObjects = NestObjects
 end)();
 
 local ExpandGroupsRecursively;
@@ -16101,136 +16105,23 @@ function app:GetWindow(suffix, parent, onUpdate)
 end
 end)();
 
-do	-- Dynamic/Main Data
-local RecursiveParentMapping = {};
--- Recurses upwards in the group hierarchy until finding the group with the specified value in the specified field. The
--- set of groups crossed while searching will all have their mapping value set to the found group.
--- While recursing, the mapping will be checked first if the current group has already been mapped, and return that mapping instead
-local function RecursiveParentMapper(group, field, value)
-	if not group then return; end
-	-- is this group already mapped?
-	local mapped = RecursiveParentMapping[group];
-	if mapped then return mapped; end
-	-- is this group the one for the mapping, or recurse to the parent
-	mapped = (group[field] == value and group) or RecursiveParentMapper(group.parent, field, value);
-	if mapped then
-		RecursiveParentMapping[group] = mapped;
-		return mapped;
-	end
-end
-
-local DynamicDataCache = app.CreateDataCache("dynamic", true);
-
--- Common function set as the OnUpdate for a group which will build itself a 'nested' version of the
--- content which matches the specified .dynamic 'field' and .dynamic_value of the group
-local DynamicCategory_Nested = function(self)
-	-- dynamic groups are ignored for the source tooltips if they aren't constrained to a specific value
-	self.sourceIgnored = not self.dynamic_value;
-	-- change the text color of the dynamic group to help indicate it is not included in the window total, if it's ignored
-	if self.sourceIgnored then
-		self.text = Colorize(self.text, app.Colors.SourceIgnored);
-	end
-	-- pull out all Things which should go into this category based on field & value
-	local groups = app:BuildSearchResponse(self.dynamic, self.dynamic_value, not self.dynamic_withsubgroups);
-	NestObjects(self, groups);
-	-- reset indents and such
-	BuildGroups(self);
-	-- delay-sort the top level groups
-	app.SortGroupDelayed(self, "name");
-	-- make sure these things are cached so they can be updated when collected, but run the caching after other dynamic groups are filled
-	app.DynamicRunner.Run(DynamicDataCache.CacheFields, self);
-	-- run a direct update on itself after being populated
-	app.DirectGroupUpdate(self);
-end
-
--- Common function set as the OnUpdate for a group which will build itself a 'simple' version of the
--- content which matches the specified .dynamic 'field' of the group
--- NOTE: Content must be cached using the dynamic 'field'
-local DynamicCategory_Simple = function(self)
-	local dynamicCache = app.GetRawFieldContainer(self.dynamic);
-	if dynamicCache then
-		local rootATT = app:GetWindow("Prime").data;
-		local top, topText, thing;
-		local topHeaders, dynamicValue, clearSubgroups = {}, self.dynamic_value, not self.dynamic_withsubgroups;
-		if dynamicValue then
-			local dynamicValueCache, thingKeys = dynamicCache[dynamicValue], app.ThingKeys;
-			if dynamicValueCache then
-				-- app.PrintDebug("Build Dynamic Group",self.dynamic,self.dynamic_value)
-				for _,source in pairs(dynamicValueCache) do
-					-- only pull in actual 'Things' to the simple dynamic group
-					if thingKeys[source.key] then
-						-- find the top-level parent of the Thing
-						top = RecursiveParentMapper(source, "parent", rootATT);
-						-- create/match the expected top header
-						topText = top and top.text;
-						if topText then
-							-- store a copy of this top header if we dont have it
-							if not topHeaders[topText] then
-								-- app.PrintDebug("New Dynamic Top",self.dynamic,":",dynamicValue,"==>",topText)
-								-- app.PrintTable(topHeaders[topText])
-								topHeaders[topText] = CreateObject(top, true);
-							end
-							-- put a copy of the Thing into the matching top category (no uniques since only 1 per cached Thing)
-							-- remove it from being considered a cost within the dynamic category
-							thing = CreateObject(source, clearSubgroups);
-							thing.collectibleAsCost = false;
-							NestObject(topHeaders[topText], thing);
-						end
-					end
-				end
-				-- app.PrintDebugPrior("Complete")
-				-- dynamic groups for Things within a specific Value of a Type are expected to be collected under a Header of the Type itself
-			else
-				-- instead of trying to do Simple if the cache doesn't exist, just put a Nested Dynamic group
-				DynamicCategory_Nested(self);
-			end
-		else
-			for id,sources in pairs(dynamicCache) do
-				for _,source in pairs(sources) do
-					-- find the top-level parent of the Thing
-					top = RecursiveParentMapper(source, "parent", rootATT);
-					-- create/match the expected top header
-					topText = top and top.text;
-					if topText then
-						-- store a copy of this top header if we dont have it
-						if not topHeaders[topText] then
-							-- app.PrintDebug("New Dynamic Top",self.dynamic,":",dynamicValue,"==>",topText)
-							-- app.PrintTable(topHeaders[topText])
-							topHeaders[topText] = CreateObject(top, true);
-						end
-						-- put a copy of the Thing into the matching top category (no uniques since only 1 per cached Thing)
-						-- remove it from being considered a cost within the dynamic category
-						thing = CreateObject(source, clearSubgroups);
-						thing.collectibleAsCost = false;
-						NestObject(topHeaders[topText], thing);
-					end
-				end
-			end
-			-- dynamic groups for general Types are ignored for the source tooltips
-			self.sourceIgnored = true;
+do	-- Main Data
+-- Returns {name,icon} for a known HeaderConstants NPCID
+local function SimpleNPCGroup(npcID, t)
+	if t then
+		t.name = app.NPCNameFromID[npcID]
+		t.icon = L.HEADER_ICONS[npcID]
+		if t.suffix then
+			t.name = t.name .. " (".. t.suffix ..")"
+			t.suffix = nil
 		end
-		-- change the text color of the dynamic group to help indicate it is not included in the window total, if it's ignored
-		if self.sourceIgnored then
-			self.text = Colorize(self.text, app.Colors.SourceIgnored);
-		end
-		-- sort all of the Things by name in each top header and put it under the dynamic group
-		for _,header in pairs(topHeaders) do
-			-- delay-sort the groups in each categorized header
-			app.SortGroupDelayed(header, "name");
-			NestObject(self, header);
-		end
-		-- reset indents and such
-		BuildGroups(self);
-		-- delay-sort the top level groups
-		app.SortGroupDelayed(self, "name");
-		-- make sure these things are cached so they can be updated when collected, but run the caching after other dynamic groups are filled
-		app.DynamicRunner.Run(DynamicDataCache.CacheFields, self);
-		-- run a direct update on itself after being populated
-		app.DirectGroupUpdate(self);
 	else
-		-- instead of trying to do Simple if the cache doesn't exist, just put a Nested Dynamic group
-		DynamicCategory_Nested(self);
+		t = {
+				name = app.NPCNameFromID[npcID],
+				icon = L.HEADER_ICONS[npcID]
+			}
 	end
+	return t
 end
 
 function app:GetDataCache()
@@ -16240,210 +16131,6 @@ function app:GetDataCache()
 
 	-- app.PrintDebug("Start loading data cache")
 	-- app.PrintMemoryUsage()
-	local dynamicSetting = app.Settings:Get("Dynamic:Style") or 0;
-	local Filler = (dynamicSetting == 2 and DynamicCategory_Nested) or
-					(dynamicSetting == 1 and DynamicCategory_Simple) or nil;
-
-	-- Adds a Dynamic Category Filler function to the Function Runner which will fill the provided group using the field and value
-	local function DynamicCategory(group, field, value)
-		-- mark the top group as dynamic for the field which it used (so popouts under the dynamic header are considered unique from other dynamic popouts)
-		group.dynamic = field;
-		group.dynamic_value = value;
-		-- run a direct update on itself after being populated if the Filler exists
-		if Filler then
-			app.DynamicRunner.Run(Filler, group);
-		end
-		return group;
-	end
-
-	-- Nests Dynamic categories created based on the field used to cache groups.
-	-- Can indicate to keep sub-group Things if desired.
-	local function NestDynamicValueCategories(dynamicCategory, field, keepSubGroups)
-		local cat;
-		local SearchForObject = app.SearchForObject;
-		local cache = SearchForFieldContainer(field);
-		for id,_ in pairs(cache) do
-			-- create a cloned version of the cached object, or create a new object from the Creator
-			cat = CreateObject(SearchForObject(field, id, "key") or { [field] = id }, true);
-			cat.parent = dynamicCategory;
-			cat.dynamic_withsubgroups = keepSubGroups;
-			-- don't copy maps into dynamic headers, since when the dynamic content is cached it can be weird
-			cat.maps = nil;
-			cat.sourceParent = nil;
-			cat.symlink = nil;
-			-- if the Dynamic Value category itself is not collectible, then make sure it isn't filtered
-			if not cat.collectible then
-				cat.u = nil;
-				cat.e = nil;
-			end
-			NestObject(dynamicCategory, DynamicCategory(cat, field, id));
-		end
-		-- Make sure the Dynamic Category group is sorted when opened since order isn't guaranteed by the table
-		app.SortGroupDelayed(dynamicCategory, "name");
-	end
-
-	-- Adds all the Dynamic groups into the provided groups (g)
-	local function AddDynamicGroups(primeData)
-		local g = primeData.g;
-		-- don't cache maps for dynamic content because it's already source-cached for the respective maps
-		app.print(sformat(L["LOADING_FORMAT"], L["DYNAMIC_CATEGORY_LABEL"]));
-
-		-- Future Unobtainable
-		local db = {}; -- temp
-		db.parent = primeData;
-		db.back = 1;
-		db.name = L["FUTURE_UNOBTAINABLE"];
-		db.text = db.name;
-		db.description = L["FUTURE_UNOBTAINABLE_TOOLTIP"];
-		db.icon = app.asset("Interface_Future_Unobtainable")
-		db.dynamic_withsubgroups = true;
-		tinsert(g, DynamicCategory(db, "rwp"));
-
-		-- Artifacts (Dynamic)
-		local db = app.CreateNPC(app.HeaderConstants.ARTIFACTS);
-		db.parent = primeData;
-		tinsert(g, DynamicCategory(db, "artifactID"));
-
-		-- Azerite Essences (Dynamic)
-		local db = app.CreateNPC(app.HeaderConstants.AZERITE_ESSENCES);
-		db.parent = primeData;
-		tinsert(g, DynamicCategory(db, "azeriteEssenceID"));
-
-		-- Battle Pets - Dynamic
-		local db = {};
-		db.text = AUCTION_CATEGORY_BATTLE_PETS;
-		db.name = db.text;
-		db.icon = app.asset("Category_PetJournal");
-		db.parent = primeData;
-		tinsert(g, DynamicCategory(db, "speciesID"));
-
-		-- Conduits - Dynamic
-		-- local db = app.CreateNPC(-981);
-		-- db.name = db.name .. " (" .. EXPANSION_NAME8 .. ")";
-		-- db.parent = primeData;
-		-- tinsert(g, DynamicCategory(db, "conduitID"));
-
-		-- Factions (Dynamic)
-		db = {};
-		db.name = L["FACTIONS"];
-		db.text = Colorize(db.name, app.Colors.SourceIgnored);
-		db.icon = app.asset("Category_Factions");
-		db.parent = primeData;
-		db.sourceIgnored = true;
-		tinsert(g, db);
-		NestDynamicValueCategories(db, "factionID", true);
-
-		-- Flight Paths (Dynamic)
-		db = {};
-		db.text = L["FLIGHT_PATHS"];
-		db.name = db.text;
-		db.icon = app.asset("Category_FlightPaths");
-		db.parent = primeData;
-		tinsert(g, DynamicCategory(db, "flightPathID"));
-
-		-- Followers (Dynamic)
-		local db = app.CreateNPC(app.HeaderConstants.FOLLOWERS);
-		db.parent = primeData;
-		tinsert(g, DynamicCategory(db, "followerID"));
-
-		-- Illusions - Dynamic
-		db = {};
-		db.text = L["FILTER_ID_TYPES"][103];
-		db.name = db.text;
-		db.icon = app.asset("Category_Illusions");
-		db.parent = primeData;
-		tinsert(g, DynamicCategory(db, "illusionID"));
-
-		-- Mounts - Dynamic
-		db = {};
-		db.text = MOUNTS;
-		db.name = db.text;
-		db.icon = app.asset("Category_Mounts");
-		db.parent = primeData;
-		tinsert(g, DynamicCategory(db, "mountID"));
-
-		-- Professions - Dynamic
-		db = {};
-		db.name = TRADE_SKILLS;
-		db.text = Colorize(db.name, app.Colors.SourceIgnored);
-		db.icon = app.asset("Category_Professions");
-		db.parent = primeData;
-		db.sourceIgnored = true;
-		tinsert(g, db);
-		NestDynamicValueCategories(db, "professionID");
-
-		-- Runeforge Powers - Dynamic
-		-- local db = app.CreateNPC(app.HeaderConstants.LEGENDARIES);
-		-- db.name = db.name .. " (" .. EXPANSION_NAME8 .. ")";
-		-- db.parent = primeData;
-		-- tinsert(g, DynamicCategory(db, "runeforgePowerID"));
-
-		-- Titles - Dynamic
-		db = {};
-		db.icon = app.asset("Category_Titles");
-		db.text = PAPERDOLL_SIDEBAR_TITLES;
-		db.name = db.text;
-		db.parent = primeData;
-		tinsert(g, DynamicCategory(db, "titleID"));
-
-		-- Toys - Dynamic
-		db = {};
-		db.icon = app.asset("Category_ToyBox");
-		db.f = 102;
-		db.text = TOY_BOX;
-		db.name = db.text;
-		db.parent = primeData;
-		tinsert(g, DynamicCategory(db, "toyID"));
-
-		-- Various Quest groups
-		local quests = app.CreateNPC(app.HeaderConstants.QUESTS);
-		quests.sourceIgnored = true;
-		quests.g = {};
-		quests.parent = primeData;
-		quests.visible = true;
-		tinsert(g, quests);
-
-		-- All Quests - Dynamic
-		-- TODO: waaaay too big to handle in a single frame, would need a 'chunked' process
-		-- db = {};
-		-- db.icon = app.asset("Interface_Quest_header");
-		-- db.text = "All Quests";
-		-- db.name = db.text;
-		-- db.parent = quests;
-		-- tinsert(quests.g, DynamicCategory(db, "questID"));
-
-		-- Breadcrumbs - Dynamic
-		db = {};
-		db.icon = 134051;	-- inv-misc-food-95-grainbread
-		db.text = L["BREADCRUMBS"];
-		db.name = db.text;
-		db.parent = quests;
-		tinsert(quests.g, DynamicCategory(db, "isBreadcrumb"));
-
-		-- Dailies - Dynamic
-		db = {};
-		db.icon = app.asset("Interface_Questd");	-- Achievement_quests_completed_daily_06
-		db.text = DAILY;
-		db.name = db.text;
-		db.parent = quests;
-		tinsert(quests.g, DynamicCategory(db, "isDaily"));
-
-		-- Weeklies - Dynamic
-		db = {};
-		db.icon = app.asset("Interface_Questw");	-- Achievement_quests_completed_daily_04
-		db.text = CALENDAR_REPEAT_WEEKLY;
-		db.name = db.text;
-		db.parent = quests;
-		tinsert(quests.g, DynamicCategory(db, "isWeekly"));
-
-		-- add an OnEnd function for the DynamicRunner to print being done
-		app.DynamicRunner.OnEnd(function()
-			app.print(sformat(L["READY_FORMAT"], L["DYNAMIC_CATEGORY_LABEL"]));
-		end);
-
-		-- the caching of Dynamic groups takes place after all are generated and it can run more per frame
-		app.DynamicRunner.SetPerFrame(5);
-	end
 
 	-- Update the Row Data by filtering raw data (this function only runs once)
 	local rootData = setmetatable({
@@ -16652,7 +16339,7 @@ function app:GetDataCache()
 	end
 
 	--[[
-	-- Models (Dynamic)
+	-- Models
 	db = app.CreateAchievement(9924, (function()
 		local cache = {};
 		for i=1,78092,1 do
@@ -16660,7 +16347,7 @@ function app:GetDataCache()
 		end
 		return cache;
 	end)());
-	db.text = "Models (Dynamic)";
+	db.text = "Models";
 	tinsert(g, db);
 	--]]
 
@@ -16783,24 +16470,125 @@ function app:GetDataCache()
 	}));
 
 	-- Create Dynamic Groups Button
-	if dynamicSetting > 0 then
-		tinsert(g, {
-			["text"] = sformat(L["CLICK_TO_CREATE_FORMAT"], L["DYNAMIC_CATEGORY_LABEL"]);
-			["description"] = dynamicSetting == 1 and L["DYNAMIC_CATEGORY_SIMPLE_TOOLTIP"] or L["DYNAMIC_CATEGORY_NESTED_TOOLTIP"],
-			["icon"] = app.asset("Interface_CreateDynamic"),
-			["OnUpdate"] = app.AlwaysShowUpdate,
-			["OnClick"] = function(row, button)
-				local ref = row.ref;
-				ref.OnClick = nil;
-				ref.OnUpdate = nil;
-				ref.visible = nil;
-				local primeData = ref.parent;
-				if primeData then
-					AddDynamicGroups(primeData);
-				end
-			end,
-		});
-	end
+	tinsert(g, {
+		["text"] = sformat(L["CLICK_TO_CREATE_FORMAT"], L["DYNAMIC_CATEGORY_LABEL"]);
+		["icon"] = app.asset("Interface_CreateDynamic"),
+		["OnUpdate"] = app.AlwaysShowUpdate,
+		-- ["OnClick"] = function(row, button)
+			-- could implement logic to auto-populate all dynamic groups like before... will see if people complain about individual generation
+		-- end,
+		-- Top-Level Dynamic Categories
+		g = {
+			-- Future Unobtainable
+			app.CreateDynamicHeader("rwp", {
+				dynamic_withsubgroups = true,
+				name = L["FUTURE_UNOBTAINABLE"],
+				description = L["FUTURE_UNOBTAINABLE_TOOLTIP"],
+				icon = app.asset("Interface_Future_Unobtainable")
+			}),
+
+			-- Artifacts
+			app.CreateDynamicHeader("artifactID", SimpleNPCGroup(app.HeaderConstants.ARTIFACTS)),
+
+			-- Azerite Essences
+			app.CreateDynamicHeader("azeriteEssenceID", SimpleNPCGroup(app.HeaderConstants.AZERITE_ESSENCES)),
+
+			-- Battle Pets
+			app.CreateDynamicHeader("speciesID", {
+				name = AUCTION_CATEGORY_BATTLE_PETS,
+				icon = app.asset("Category_PetJournal")
+			}),
+
+			-- Conduits
+			app.CreateDynamicHeader("conduitID", SimpleNPCGroup(-981, {suffix=EXPANSION_NAME8})),
+
+			-- Drake Manuscripts (TODO)
+
+			-- Factions
+			app.CreateDynamicHeaderByValue("factionID", {
+				dynamic_withsubgroups = true,
+				name = L["FACTIONS"],
+				icon = app.asset("Category_Factions")
+			}),
+
+			-- Flight Paths
+			app.CreateDynamicHeader("flightPathID", {
+				name = L["FLIGHT_PATHS"],
+				icon = app.asset("Category_FlightPaths")
+			}),
+
+			-- Followers
+			app.CreateDynamicHeader("followerID", SimpleNPCGroup(app.HeaderConstants.FOLLOWERS)),
+
+			-- Illusions
+			app.CreateDynamicHeader("illusionID", {
+				name = L["FILTER_ID_TYPES"][103],
+				icon = app.asset("Category_Illusions")
+			}),
+
+			-- Mounts
+			app.CreateDynamicHeader("mountID", {
+				name = MOUNTS,
+				icon = app.asset("Category_Mounts")
+			}),
+
+			-- Professions
+			app.CreateDynamicHeaderByValue("professionID", {
+				dynamic_withsubgroups = true,
+				name = TRADE_SKILLS,
+				icon = app.asset("Category_Professions")
+			}),
+
+			-- Runeforge Powers
+			app.CreateDynamicHeader("runeforgePowerID", SimpleNPCGroup(app.HeaderConstants.LEGENDARIES, {suffix=EXPANSION_NAME8})),
+
+			-- Titles
+			app.CreateDynamicHeader("titleID", {
+				name = PAPERDOLL_SIDEBAR_TITLES,
+				icon = app.asset("Category_Titles")
+			}),
+
+			-- Toys
+			app.CreateDynamicHeader("toyID", {
+				name = TOY_BOX,
+				icon = app.asset("Category_ToyBox")
+			}),
+
+			-- Various Quest groups
+			app.CreateNPC(app.HeaderConstants.QUESTS, {
+				visible = true,
+				OnUpdate = app.AlwaysShowUpdate,
+				g = {
+					-- Breadcrumbs
+					app.CreateDynamicHeader("isBreadcrumb", {
+						name = L["BREADCRUMBS"],
+						icon = 134051
+					}),
+
+					-- Dailies
+					app.CreateDynamicHeader("isDaily", {
+						name = DAILY,
+						icon = app.asset("Interface_Questd")
+					}),
+
+					-- Weeklies
+					app.CreateDynamicHeader("isWeekly", {
+						name = CALENDAR_REPEAT_WEEKLY,
+						icon = app.asset("Interface_Questw")
+					}),
+
+					-- All Quests
+					-- this works but..... bad idea instead use /att list type=quest limit=79000
+					-- app.CreateDynamicHeaderByValue("questID", {
+					-- 	dynamic_withsubgroups = true,
+					-- 	name = QUESTS_LABEL,
+					-- 	icon = app.asset("Interface_Quest_header")
+					-- }),
+				}
+			}),
+
+		},
+	});
 
 	-- The Main Window's Data
 	app.refreshDataForce = true;
