@@ -1,61 +1,10 @@
 -------------------------------------
 --     T R A D I N G   P O S T     --
 -------------------------------------
---[[OctoberSets	i(208665, {	-- Webbed Saronite Exoskeleton
-					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
-					["classes"] = DEATHKNIGHT,
-					["groups"] = {
-						i(208627),	-- Webbed Saronite Headguard
-						i(208628),	-- Webbed Saronite Spaulders
-						i(208629),	-- Webbed Saronite Girdle
-					},
-				}),
-				i(208666, {	-- Webbed Saronite Weaponry
-					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
-					["classes"] = DEATHKNIGHT,
-					["groups"] = {
-						i(208630),	-- Webbed Saronite Greataxe
-						i(208631),	-- Webbed Saronite Eviscerator
-						i(208632),	-- Webbed Saronite Devourer
-					},
-				}),
-				i(208667, {	-- Nathreza Blasphemer's Flames
-					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
-					["classes"] = DEMONHUNTER,
-					["groups"] = {
-						i(208633),	-- Nathreza Blasphemer's Horns
-						i(208634),	-- Nathreza Blasphemer's Mantle
-						i(208635),	-- Nathreza Blasphemer's Shard
-					},
-				}),
-				i(208668, {	-- Nathreza Blasphemer's Glaives
-					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
-					["classes"] = DEMONHUNTER,
-					["groups"] = {
-						i(208636),	-- Nathreza Blasphemer's Wingglaive
-						i(208637),	-- Nathreza Blasphemer's Warglaive
-					},
-				}),
-				i(208663, {	-- Ashamane's Vestment of Rebirth
-					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
-					["classes"] = DRUID,
-					["groups"] = {
-						i(208620),	-- Ashamane's Helm of Rebirth
-						i(208621),	-- Ashamane's Spaulders of Rebirth
-						i(208622),	-- Ashamane's Fangs of Rebirth
-					},
-				}),
-				i(208664, {	-- Ashamane's Blessings of Rebirth
-					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
-					["classes"] = DRUID,
-					["groups"] = {
-						i(208623),	-- Ashamane's Blade of Rebirth
-						i(208624),	-- Ashamane's Claws of Rebirth
-						i(208625),	-- Ashamane's Crescent of Rebirth
-						i(208626),	-- Ashamane Jewel of Rebirth
-					},
-				}),
-				--]]
+
+-- If you wish to see rewards of the previous months, they are listed at the bottom of this file.
+-- Search for October 2023 for example
+
 local TRADERS_TENDER = 2032;
 root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	n(ACHIEVEMENTS, {
@@ -110,7 +59,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	n(SPECIAL, bubbleDownSelf({ ["description"] = "This is rewarded for filling the Travel Points Progress Bar in the month." }, {
 		n(AVAILABLE, {
 			filter(MOUNTS, {
-				i(190168),	-- Crusty Crawler (MOUNT!) (Sep 2023)
+				i(208598),	-- Eve's Ghastly Rider (MOUNT!)
 			}),
 			filter(COSMETIC, {
 			}),
@@ -118,6 +67,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 		n(UNAVAILABLE, {
 			filter(MOUNTS, {
 				i(190231),	-- Ash'adar, Harbinger of Dawn (MOUNT!)
+				i(190168),	-- Crusty Crawler (MOUNT!) (Sep 2023)
 				i(190169),	-- Quawks (MOUNT!)
 				i(190613),	-- Savage Green Battle Turtle (MOUNT!)
 			}),
@@ -151,128 +101,138 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	n(VENDORS, {
 		n(AVAILABLE, {
 			filter(MOUNTS, {
+				i(137576, {	-- Dim Coldflame Core (MOUNT!) (Unknown 2023)
+					["cost"] = { { "c", TRADERS_TENDER, 700 }, },
+					["timeline"] = { ADDED_10_1_7 },
+				}),
 			}),
 			filter(BATTLE_PETS, {
-				i(208045, {	-- Slyvy (PET!)
+				i(49693, {	-- Lil' Phylactery//Lil' KT (PET!)
 					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
 				}),
 			}),
 			filter(TOYS, {
+				i(32542, { -- Imp in a Ball (TOY!)
+					["cost"] = { { "c", TRADERS_TENDER, 350 }, },
+				}),
 			}),
 			filter(COSMETIC, {
-				i(190712, {	-- Ancestral Skychaser Totem
-					["cost"] = { { "c", TRADERS_TENDER, 250 }, },
-				}),
-				i(190693, {	-- Ancestral Stonehoof Totem
-					["cost"] = { { "c", TRADERS_TENDER, 250 }, },
-				}),
-				i(208177, {	-- Armaments of the Light Avenger
-					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
-					["classes"] = PALADIN,
-					["groups"] = {
-						i(208165),	-- Hammer of the Light Avenger
-						i(208164),	-- Kite of the Light Avenger
-						i(208166),	-- Club of of the Light Avenger
-					},
-				}),
-				i(208179, {	-- Blood Onyx Blades
-					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
-					["classes"] = ROGUE,
-					["groups"] = {
-						i(208173),	-- Blood Onyx Serrated Edge
-						i(208174),	-- Blood Onyx Impaler
-						i(208175),	-- Blood Onyx Shortblade
-					},
-				}),
-				i(208405, {	-- Blood Onyx Uniform
+				i(208663, {	-- Ashamane's Vestment of Rebirth
 					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
-					["classes"] = ROGUE,
+					["classes"] = DRUID,
 					["groups"] = {
-						i(208402),	-- Blood Onyx Cowl
-						i(208403),	-- Blood Onyx Pauldrons
-						i(208404),	-- Blood Onyx Buckle
+						i(208620),	-- Ashamane's Helm of Rebirth
+						i(208621),	-- Ashamane's Spaulders of Rebirth
+						i(208622),	-- Ashamane's Fangs of Rebirth
 					},
 				}),
-				i(208148, {	-- Burgundy Cap
-					["cost"] = { { "c", TRADERS_TENDER, 150 }, },
+				i(208664, {	-- Ashamane's Blessings of Rebirth
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+					["classes"] = DRUID,
+					["groups"] = {
+						i(208623),	-- Ashamane's Blade of Rebirth
+						i(208624),	-- Ashamane's Claws of Rebirth
+						i(208625),	-- Ashamane's Crescent of Rebirth
+						i(208626),	-- Ashamane Jewel of Rebirth
+					},
 				}),
-				i(189882, {	-- Dread Admiral's Bicorne
+				i(190710, {	-- Caged Eye of the Watcher
+					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
+				}),
+				i(190689, {	-- Corrupted Bladefist
+					["cost"] = { { "c", TRADERS_TENDER, 525 }, },
+				}),
+				--i(32542, { -- Drape of Endless Twilight
+				--	["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+				--}),
+				i(206341, {	-- Ensemble: Wanderer's Lively Trappings
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(206319),	-- Wanderer's Lively Cloak
+						i(206308),	-- Wanderer's Lively Scarf
+					},
+				}),
+				i(206330, {	-- Ensemble: Vagabond's Lively Threads
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(206286),	-- Vagabond's Lively Cape
+						i(206297),	-- Vagabond's Lively Hood
+					},
+				}),
+				i(190216, {	-- Feathered Cowl of the Guardian
+					["cost"] = { { "c", TRADERS_TENDER, 250 }, },
+				}),
+				i(190200, {	-- Feathered Drape of the Guardian
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				}),
+				--i(32542, { -- Gleaming Mail Tabard
+				--	["cost"] = { { "c", TRADERS_TENDER, 125 }, },
+				--}),
+				i(190145, {	-- Gilded Drakkonid Morningstar
+					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+				}),
+				i(190076, {	-- Granny's Old Hat
 					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
 				}),
-				i(190799, {	-- Ensemble Swashbuckling Buccaneer's Slops
-					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
-					["groups"] = {
-						i(190786),	-- Swashbuckling Buccaneer's Boots
-						i(190785),	-- Swashbuckling Buccaneer's Breeches
-						i(190783),	-- Swashbuckling Buccaneer's Tunic
-						i(190784),	-- Swashbuckling Buccaneer's Sash
-					},
+				i(190578, {	-- Headmaster's Command
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
 				}),
-				i(206321, {	-- Ensemble Vagabonds Sunny Threads
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-					["groups"] = {
-						i(206277),	-- Vagabond's Sunny Cape
-						i(206288),	-- Vagabond's Sunny Hood
-					},
+				i(208763, {	-- Headmaster's Skullcap
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
 				}),
-				i(206332, {	-- Ensemble Wanderers Sunny Trappings
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-					["groups"] = {
-						i(206310),	-- Wanderer's Sunny Cloak
-						i(206300),	-- Wanderer's Sunny Scarf
-					},
-				}),
-				i(190699, {	-- Gorian Mining Pick
-					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
-				}),
-				i(190698, {	-- Gently Used Cleaver
-					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+				i(190558, {	-- Helm of the Fierce
+					["cost"] = { { "c", TRADERS_TENDER, 250 }, },
 				}),
 				i(210265, {	-- High Scholar's Grand Staff
 					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
 				}),
-				i(208423, {	-- Homebrewer's Sampling Crest
+				i(208667, {	-- Nathreza Blasphemer's Flames
+					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+					["classes"] = DEMONHUNTER,
+					["groups"] = {
+						i(208633),	-- Nathreza Blasphemer's Horns
+						i(208634),	-- Nathreza Blasphemer's Mantle
+						i(208635),	-- Nathreza Blasphemer's Shard
+					},
+				}),
+				i(208668, {	-- Nathreza Blasphemer's Glaives
 					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+					["classes"] = DEMONHUNTER,
+					["groups"] = {
+						i(208636),	-- Nathreza Blasphemer's Wingglaive
+						i(208637),	-- Nathreza Blasphemer's Warglaive
+					},
 				}),
-				i(190144, {	-- Irontide Raiders Bicorne
-					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
+				--i(32542, { -- Shadowy Mail Tabard
+				--	["cost"] = { { "c", TRADERS_TENDER, 125 }, },
+				--}),
+				i(190433, {	-- Shifty Merchant's Tunic
+					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
 				}),
-				i(189895, {	-- Watchman's Flare
+				i(208665, {	-- Webbed Saronite Exoskeleton
+					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+					["classes"] = DEATHKNIGHT,
+					["groups"] = {
+						i(208627),	-- Webbed Saronite Headguard
+						i(208628),	-- Webbed Saronite Spaulders
+						i(208629),	-- Webbed Saronite Girdle
+					},
+				}),
+				i(208666, {	-- Webbed Saronite Weaponry
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+					["classes"] = DEATHKNIGHT,
+					["groups"] = {
+						i(208630),	-- Webbed Saronite Greataxe
+						i(208631),	-- Webbed Saronite Eviscerator
+						i(208632),	-- Webbed Saronite Devourer
+					},
+				}),
+				i(190199, {	-- Well-Worn Grimskull Cinch
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 				}),
-				i(208176, {	-- Plate of the Light Avenger
-					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
-					["classes"] = PALADIN,
-					["groups"] = {
-						i(208161),	-- Helm of the Light Avenger
-						i(208162),	-- Shoulders Shoulderguards of the Light Avenger
-						i(208163),	-- Waist Cinch of the Light Avenger
-					},
-				}),
-				i(208178, {	-- Secrets of the Unnamed Cult
-					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
-					["classes"] = PRIEST,
-					["groups"] = {
-						i(208167),	-- Libram of the Unnamed Cult
-						i(208169),	-- Scepter of the Unnamed Cult
-						i(208171),	-- Staff of the Unnamed Cult
-					},
-				}),
-				i(208400, {	-- Silk of the Unnamed Cult
-					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
-					["classes"] = PRIEST,
-					["groups"] = {
-						i(208398),	-- Mantle of the Unnamed Cult
-						i(208399),	-- Sash of the Unnamed Cult
-						i(208397),	-- Hood of the Unnamed Cult
-					},
-				}),
-				i(190155, {	-- Trusty Treasure Trove
-					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
-				}),
-				i(208147, {	-- Yellow Tweed Cap
-					["cost"] = { { "c", TRADERS_TENDER, 150 }, },
-				}),
+				--i(32542, { -- Wine-Soaked Hammer
+				--	["cost"] = { { "c", TRADERS_TENDER, 75 }, },
+				--}),
 			}),
 		}),
 		n(UNAVAILABLE, {
@@ -319,6 +279,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(190175, {	-- Pippin (PET!)
 					["cost"] = { { "c", TRADERS_TENDER, 600 }, },
+				}),
+				i(208045, {	-- Slyvy (PET!)
+					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
 				}),
 				i(49343, {	-- Spectral Tiger Cub (PET!)
 					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
@@ -505,9 +468,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(202248, {	-- Frozen Shadow
 					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
 				}),
-				i(190145, {	-- Gilded Drakkonid Morningstar
-					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
-				}),
 				i(190065, {	-- Gnomish Liquid Transfer Apparatus
 					["cost"] = { { "c", TRADERS_TENDER, 75 }, },
 				}),
@@ -559,9 +519,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(190817, {	-- Sentinel's Tower Shield
 					["cost"] = { { "c", TRADERS_TENDER, 150 }, },
 				}),
-				i(190433, {	-- Shifty Merchant's Tunic
-					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
-				}),
 				i(190447, {	-- Soulburner Bardiche
 					["cost"] = { { "c", TRADERS_TENDER, 550 }, },
 				}),
@@ -594,9 +551,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(190431, {	-- Veteran Grunt's Chopper
 					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
-				}),
-				i(190199, {	-- Well-Worn Grimskull Cinch
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 				}),
 				--
 				--
@@ -645,9 +599,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(190842, {	-- Fists of Polar Fury
 					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
-				}),
-				i(190558, {	-- Helm of the Fierce
-					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
 				}),
 				i(190559, {	-- Helm of the Swift
 					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
@@ -743,6 +694,119 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(190143, { -- Shard of Frozen Secrets
 					["cost"] = { { "c", TRADERS_TENDER, 200 }, },
 				}),
+				i(190712, {	-- Ancestral Skychaser Totem
+					["cost"] = { { "c", TRADERS_TENDER, 250 }, },
+				}),
+				i(190693, {	-- Ancestral Stonehoof Totem
+					["cost"] = { { "c", TRADERS_TENDER, 250 }, },
+				}),
+				i(208177, {	-- Armaments of the Light Avenger
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+					["classes"] = PALADIN,
+					["groups"] = {
+						i(208165),	-- Hammer of the Light Avenger
+						i(208164),	-- Kite of the Light Avenger
+						i(208166),	-- Club of of the Light Avenger
+					},
+				}),
+				i(208179, {	-- Blood Onyx Blades
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+					["classes"] = ROGUE,
+					["groups"] = {
+						i(208173),	-- Blood Onyx Serrated Edge
+						i(208174),	-- Blood Onyx Impaler
+						i(208175),	-- Blood Onyx Shortblade
+					},
+				}),
+				i(208405, {	-- Blood Onyx Uniform
+					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+					["classes"] = ROGUE,
+					["groups"] = {
+						i(208402),	-- Blood Onyx Cowl
+						i(208403),	-- Blood Onyx Pauldrons
+						i(208404),	-- Blood Onyx Buckle
+					},
+				}),
+				i(208148, {	-- Burgundy Cap
+					["cost"] = { { "c", TRADERS_TENDER, 150 }, },
+				}),
+				i(189882, {	-- Dread Admiral's Bicorne
+					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
+				}),
+				i(190799, {	-- Ensemble Swashbuckling Buccaneer's Slops
+					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
+					["groups"] = {
+						i(190786),	-- Swashbuckling Buccaneer's Boots
+						i(190785),	-- Swashbuckling Buccaneer's Breeches
+						i(190783),	-- Swashbuckling Buccaneer's Tunic
+						i(190784),	-- Swashbuckling Buccaneer's Sash
+					},
+				}),
+				i(206321, {	-- Ensemble Vagabonds Sunny Threads
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["groups"] = {
+						i(206277),	-- Vagabond's Sunny Cape
+						i(206288),	-- Vagabond's Sunny Hood
+					},
+				}),
+				i(206332, {	-- Ensemble Wanderers Sunny Trappings
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["groups"] = {
+						i(206310),	-- Wanderer's Sunny Cloak
+						i(206300),	-- Wanderer's Sunny Scarf
+					},
+				}),
+				i(190699, {	-- Gorian Mining Pick
+					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+				}),
+				i(190698, {	-- Gently Used Cleaver
+					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+				}),
+				i(210265, {	-- High Scholar's Grand Staff
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+				}),
+				i(208423, {	-- Homebrewer's Sampling Crest
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+				}),
+				i(190144, {	-- Irontide Raiders Bicorne
+					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
+				}),
+				i(189895, {	-- Watchman's Flare
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				}),
+				i(208176, {	-- Plate of the Light Avenger
+					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+					["classes"] = PALADIN,
+					["groups"] = {
+						i(208161),	-- Helm of the Light Avenger
+						i(208162),	-- Shoulders Shoulderguards of the Light Avenger
+						i(208163),	-- Waist Cinch of the Light Avenger
+					},
+				}),
+				i(208178, {	-- Secrets of the Unnamed Cult
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+					["classes"] = PRIEST,
+					["groups"] = {
+						i(208167),	-- Libram of the Unnamed Cult
+						i(208169),	-- Scepter of the Unnamed Cult
+						i(208171),	-- Staff of the Unnamed Cult
+					},
+				}),
+				i(208400, {	-- Silk of the Unnamed Cult
+					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+					["classes"] = PRIEST,
+					["groups"] = {
+						i(208398),	-- Mantle of the Unnamed Cult
+						i(208399),	-- Sash of the Unnamed Cult
+						i(208397),	-- Hood of the Unnamed Cult
+					},
+				}),
+				i(190155, {	-- Trusty Treasure Trove
+					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
+				}),
+				i(208147, {	-- Yellow Tweed Cap
+					["cost"] = { { "c", TRADERS_TENDER, 150 }, },
+				}),
 			}),
 		}),
 	}),
@@ -792,9 +856,6 @@ root(ROOTS.NeverImplemented, {
 					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
 				}),
 				i(190176, {	-- Drazka'zet the Wrathful (PET!)
-					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
-				}),
-				i(49693, {	-- Lil' K.T. (PET!) Blizz promised this when removing from store in Jan 2023
 					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
 				}),
 				i(190173, {	-- Lil' Maka'jin (PET!)
@@ -872,11 +933,6 @@ root(ROOTS.NeverImplemented, {
 					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
 				}),
 
-				-- 2H Weapon
-				i(190578, {	-- Headmaster's Command
-					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
-				}),
-
 				-- Bow
 
 				-- Dagger
@@ -900,10 +956,6 @@ root(ROOTS.NeverImplemented, {
 				i(190767),	-- Armored Golden Pterrordax (MOUNT!) (Unknown 2023)
 				mount(369480),	-- Cerulean Marsh Hopper (MOUNT!) (Unknown 2023)
 				i(190539),	-- Coral-Stalker Waveray (MOUNT!) (Unknown 2023)
-				i(137576, {	-- Dim Coldflame Core (MOUNT!) (Unknown 2023)
-					["cost"] = { { "c", TRADERS_TENDER, 700 }, },
-					["timeline"] = { ADDED_10_1_7 },
-				}),
 				i(137615, {	-- Molten Flarecore (MOUNT!) (Unknown 2023)
 					["cost"] = { { "c", TRADERS_TENDER, 700 }, },
 					["timeline"] = { ADDED_10_1_7 },
@@ -1487,7 +1539,6 @@ filter(COSMETIC, {
 -- SEPTEMBER 2023 --
 --------------------
 
-
 filter(MOUNTS, {
 				i(190168),	-- Crusty Crawler (MOUNT!) (Sep 2023)
 			}),
@@ -1609,5 +1660,145 @@ filter(BATTLE_PETS, {
 				i(208147, {	-- Yellow Tweed Cap
 					["cost"] = { { "c", TRADERS_TENDER, 150 }, },
 				}),
+			}),
+--------------------
+-- OCTOBER 2023 --
+--------------------
+filter(MOUNTS, {
+				i(208598),	-- Eve's Ghastly Rider (MOUNT!)
+			}),
+			filter(MOUNTS, {
+				i(137576, {	-- Dim Coldflame Core (MOUNT!) (Unknown 2023)
+					["cost"] = { { "c", TRADERS_TENDER, 700 }, },
+					["timeline"] = { ADDED_10_1_7 },
+				}),
+			}),
+			filter(BATTLE_PETS, {
+				i(49693, {	-- Lil' Phylactery//Lil' KT (PET!)
+					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
+				}),
+			}),
+			filter(TOYS, {
+				i(32542, { -- Imp in a Ball (TOY!)
+					["cost"] = { { "c", TRADERS_TENDER, 350 }, },
+				}),
+			}),
+			filter(COSMETIC, {
+				i(208663, {	-- Ashamane's Vestment of Rebirth
+					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+					["classes"] = DRUID,
+					["groups"] = {
+						i(208620),	-- Ashamane's Helm of Rebirth
+						i(208621),	-- Ashamane's Spaulders of Rebirth
+						i(208622),	-- Ashamane's Fangs of Rebirth
+					},
+				}),
+				i(208664, {	-- Ashamane's Blessings of Rebirth
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+					["classes"] = DRUID,
+					["groups"] = {
+						i(208623),	-- Ashamane's Blade of Rebirth
+						i(208624),	-- Ashamane's Claws of Rebirth
+						i(208625),	-- Ashamane's Crescent of Rebirth
+						i(208626),	-- Ashamane Jewel of Rebirth
+					},
+				}),
+				i(190710, {	-- Caged Eye of the Watcher
+					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
+				}),
+				i(190689, {	-- Corrupted Bladefist
+					["cost"] = { { "c", TRADERS_TENDER, 525 }, },
+				}),
+				--i(32542, { -- Drape of Endless Twilight
+				--	["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+				--}),
+				i(206341, {	-- Ensemble: Wanderer's Lively Trappings
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(206319),	-- Wanderer's Lively Cloak
+						i(206308),	-- Wanderer's Lively Scarf
+					},
+				}),
+				i(206330, {	-- Ensemble: Vagabond's Lively Threads
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(206286),	-- Vagabond's Lively Cape
+						i(206297),	-- Vagabond's Lively Hood
+					},
+				}),
+				i(190216, {	-- Feathered Cowl of the Guardian
+					["cost"] = { { "c", TRADERS_TENDER, 250 }, },
+				}),
+				i(190200, {	-- Feathered Drape of the Guardian
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				}),
+				--i(32542, { -- Gleaming Mail Tabard
+				--	["cost"] = { { "c", TRADERS_TENDER, 125 }, },
+				--}),
+				i(190145, {	-- Gilded Drakkonid Morningstar
+					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+				}),
+				i(190076, {	-- Granny's Old Hat
+					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
+				}),
+				i(190578, {	-- Headmaster's Command
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+				}),
+				i(208763, {	-- Headmaster's Skullcap
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+				}),
+				i(190558, {	-- Helm of the Fierce
+					["cost"] = { { "c", TRADERS_TENDER, 250 }, },
+				}),
+				i(210265, {	-- High Scholar's Grand Staff
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+				}),
+				i(208667, {	-- Nathreza Blasphemer's Flames
+					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+					["classes"] = DEMONHUNTER,
+					["groups"] = {
+						i(208633),	-- Nathreza Blasphemer's Horns
+						i(208634),	-- Nathreza Blasphemer's Mantle
+						i(208635),	-- Nathreza Blasphemer's Shard
+					},
+				}),
+				i(208668, {	-- Nathreza Blasphemer's Glaives
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+					["classes"] = DEMONHUNTER,
+					["groups"] = {
+						i(208636),	-- Nathreza Blasphemer's Wingglaive
+						i(208637),	-- Nathreza Blasphemer's Warglaive
+					},
+				}),
+				--i(32542, { -- Shadowy Mail Tabard
+				--	["cost"] = { { "c", TRADERS_TENDER, 125 }, },
+				--}),
+				i(190433, {	-- Shifty Merchant's Tunic
+					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+				}),
+				i(208665, {	-- Webbed Saronite Exoskeleton
+					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+					["classes"] = DEATHKNIGHT,
+					["groups"] = {
+						i(208627),	-- Webbed Saronite Headguard
+						i(208628),	-- Webbed Saronite Spaulders
+						i(208629),	-- Webbed Saronite Girdle
+					},
+				}),
+				i(208666, {	-- Webbed Saronite Weaponry
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+					["classes"] = DEATHKNIGHT,
+					["groups"] = {
+						i(208630),	-- Webbed Saronite Greataxe
+						i(208631),	-- Webbed Saronite Eviscerator
+						i(208632),	-- Webbed Saronite Devourer
+					},
+				}),
+				i(190199, {	-- Well-Worn Grimskull Cinch
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				}),
+				--i(32542, { -- Wine-Soaked Hammer
+				--	["cost"] = { { "c", TRADERS_TENDER, 75 }, },
+				--}),
 			}),
 --]]
