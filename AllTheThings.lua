@@ -13022,7 +13022,7 @@ local function SetGroupVisibility(parent, group)
 		forceShowParent = visible;
 	end
 	-- Apply the visibility to the group
-	group.visible = visible;
+	if visible then group.visible = true; end
 	-- source ignored group which is determined to be visible should ensure the parent is also visible
 	if not forceShowParent and visible and group.sourceIgnored then
 		forceShowParent = true;
@@ -13071,7 +13071,7 @@ local function SetThingVisibility(parent, group)
 		forceShowParent = visible;
 	end
 	-- Apply the visibility to the group
-	group.visible = visible;
+	if visible then group.visible = true; end
 	-- source ignored group which is determined to be visible should ensure the parent is also visible
 	if not forceShowParent and visible and group.sourceIgnored then
 		forceShowParent = true;
