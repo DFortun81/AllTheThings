@@ -1542,6 +1542,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1948, {	-- Snarlmane
 					["coord"] = { 66.2, 25.0, SILVERPINE_FOREST },
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["description"] = "Found in the basement of Fenris Keep.",
 					["groups"] = {
 						i(4445, {	-- Flesh Carver
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
