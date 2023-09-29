@@ -573,6 +573,180 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							["provider"] = { "i", 142522 },	-- Rude Letter
 						}),
 					}),
+					mission(1680, { -- Tomb of Sargeras: The Tomb's Mistress [Raid Finder][Mistress]
+						["groups"] = {
+							i(147497), -- Encrusted Naga Scale [Raid Finder]
+							q(47114, { -- The Tomb's Mistress [Raid Finder]
+								["repeatable"] = true,
+								["provider"] = { "i", 147497 }, -- Encrusted Naga Scale [Raid Finder]
+								["g"] = {
+									i(147518), -- Cache of Fel Treasures [Raid Finder]
+								},
+							}),
+							i(147498), -- Encrusted Naga Scale (Normal)
+							q(47115, { -- The Tomb's Mistress (Normal)
+								["repeatable"] = true,
+								["provider"] = { "i", 147498 }, -- Encrusted Naga Scale (Normal)
+								["g"] = {
+									i(147519), -- Cache of Fel Treasures (Normal)
+								},
+							}),
+							i(147499), -- Encrusted Naga Scale (Heroic)
+							q(47116, { -- The Tomb's Mistress (Heroic)
+								["repeatable"] = true,
+								["provider"] = { "i", 147499 }, -- Encrusted Naga Scale (Heroic)
+								["g"] = {
+									i(147520), -- Cache of Fel Treasures (Heroic)
+								},
+							}),
+							i(147500), -- Encrusted Naga Scale (Mythic)
+							q(47117, { -- The Tomb's Mistress (Mythic)
+								["repeatable"] = true,
+								["provider"] = { "i", 147500 }, -- Encrusted Naga Scale (Mythic)
+								["g"] = {
+									i(147521), -- Cache of Fel Treasures (Mythic)
+								},
+							}),
+							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
+							i(147518, { -- Cache of Fel Treasures (Raid Finder)
+								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+								--	Maybe Change/Update for Legion Classic? Was made Legacy Loot on March 30th. 8.3.7 was 21st July
+								-- #if BEFORE 8.3.7
+								["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+								-- #endif
+							}),
+						},
+					}),
+					mission(1681, { -- Tomb of Sargeras: Free The Tormented [Raid Finder][Desolate Host]
+						["groups"] = {
+							i(147501), -- Worshipper's Scrawlings [Raid Finder]
+							q(47118, { -- Free The Tormented [Raid Finder]
+								["repeatable"] = true,
+								["provider"] = { "i", 147501 }, -- Worshipper's Scrawlings [Raid Finder]
+								["g"] = {
+									i(147518), -- Cache of Fel Treasures [Raid Finder]
+								},
+							}),
+							i(147502), -- Worshipper's Scrawlings (Normal)
+							q(47119, { -- Free The Tormented (Normal)
+								["repeatable"] = true,
+								["provider"] = { "i", 147502 }, -- Worshipper's Scrawlings (Normal)
+								["g"] = {
+									i(147519), -- Cache of Fel Treasures (Normal)
+								},
+							}),
+							i(147503), -- Worshipper's Scrawlings (Heroic)
+							q(47120, { -- Free The Tormented (Heroic)
+								["repeatable"] = true,
+								["provider"] = { "i", 147503 }, -- Worshipper's Scrawlings (Heroic)
+								["g"] = {
+									i(147520), -- Cache of Fel Treasures (Heroic)
+								},
+							}),
+							i(147504), -- Worshipper's Scrawlings (Mythic)
+							q(47121, { -- Free The Tormented (Mythic)
+								["repeatable"] = true,
+								["provider"] = { "i", 147504 }, -- Worshipper's Scrawlings (Mythic)
+								["g"] = {
+									i(147521), -- Cache of Fel Treasures (Mythic)
+								},
+							}),
+							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
+							i(147518, { -- Cache of Fel Treasures (Normal)
+								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Raid Finder Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+								-- #if BEFORE 8.3.7
+								["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+								-- #endif
+							}),
+						},
+					}),
+					mission(1682, { -- Tomb of Sargeras: The Fallen Avatar [Raid Finder]
+						["groups"] = {
+							i(147505), -- Wailing Soul [Raid Finder]
+							q(47122, { -- The Fallen Avatar [Raid Finder]
+								["repeatable"] = true,
+								["provider"] = { "i", 147505 }, -- Wailing Soul [Raid Finder]
+								["g"] = {
+									i(147518), -- Cache of Fel Treasures [Raid Finder]
+								},
+							}),
+							i(147506), -- Wailing Soul (Normal)
+							q(47123, { -- The Fallen Avatar (Normal)
+								["repeatable"] = true,
+								["provider"] = { "i", 147506 }, -- Wailing Soul (Normal)
+								["g"] = {
+									i(147519), -- Cache of Fel Treasures (Normal)
+								},
+							}),
+							i(147507), -- Wailing Soul (Heroic)
+							q(47124, { -- The Fallen Avatar (Heroic)
+								["repeatable"] = true,
+								["provider"] = { "i", 147507 }, -- Wailing Soul (Heroic)
+								["g"] = {
+									i(147520), -- Cache of Fel Treasures (Heroic)
+								},
+							}),
+							i(147508), -- Wailing Soul (Mythic)
+							q(47125, { -- The Fallen Avatar (Mythic)
+								["repeatable"] = true,
+								["provider"] = { "i", 147508 }, -- Wailing Soul (Mythic)
+								["g"] = {
+									i(147521), -- Cache of Fel Treasures (Mythic)
+								},
+							}),
+							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
+							i(147518, { -- Cache of Fel Treasures (Heroic)
+								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Raid Finder Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+								-- #if BEFORE 8.3.7
+								["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+								-- #endif
+							}),
+						},
+					}),
+
+					mission(1683, { -- Tomb of Sargeras: The Deceiver [Raid Finder]
+						["groups"] = {
+							i(147509), -- Seal of the Deceiver [Raid Finder]
+							q(47126, { -- The Deceiver [Raid Finder]
+								["repeatable"] = true,
+								["provider"] = { "i", 147509 }, -- Seal of the Deceiver [Raid Finder]
+								["g"] = {
+									i(147518), -- Cache of Fel Treasures [Raid Finder]
+								},
+							}),
+							i(147510), -- Seal of the Deceiver (Normal)
+							q(47127, { -- The Deceiver (Normal)
+								["repeatable"] = true,
+								["provider"] = { "i", 147510 }, -- Seal of the Deceiver (Normal)
+								["g"] = {
+									i(147519), -- Cache of Fel Treasures (Normal)
+								},
+							}),
+							i(147511), -- Seal of the Deceiver (Heroic)
+							q(47128, { -- The Deceiver (Heroic)
+								["repeatable"] = true,
+								["provider"] = { "i", 147511 }, -- Seal of the Deceiver (Heroic)
+								["g"] = {
+									i(147520), -- Cache of Fel Treasures (Heroic)
+								},
+							}),
+							i(147512), -- Seal of the Deceiver (Mythic)
+							q(47129, { -- The Deceiver (Mythic)
+								["repeatable"] = true,
+								["provider"] = { "i", 147512 }, -- Seal of the Deceiver (Mythic)
+								["g"] = {
+									i(147521), -- Cache of Fel Treasures (Mythic)
+								},
+							}),
+							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
+							i(147518, { -- Cache of Fel Treasures (Mythic)
+								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Raid Finder Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+								-- #if BEFORE 8.3.7
+								["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+								-- #endif
+							}),
+						},
+					}),
 					mission(1382, {	-- Win the Crowd
 						i(130169),	-- Tournament Favor (TOY!)
 					}),
