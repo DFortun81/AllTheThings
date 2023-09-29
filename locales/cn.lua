@@ -367,7 +367,7 @@ ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DISCOUNT_
 		L.DYNAMIC_CATEGORY_SIMPLE_TOOLTIP = "仅根据最高的类别生成动态类别。 ";
 		L.DYNAMIC_CATEGORY_NESTED = "嵌套";
 		L.DYNAMIC_CATEGORY_NESTED_TOOLTIP = "根据它们的确切来源生成动态类别。这将导致在多个地方也有来源的事物重复。";
-		L.DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000需要重新加载|r";
+		--TODO: L.DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000需要重新加载|r";	-- \n\n|cffff0000Applied when Generated|r
 		L.CLICK_TO_CREATE_FORMAT = "点击创建 %s";
 		L.KEYBINDINGS_TEXT = "可以在游戏选项中设置 ATT 的按键绑定。";
 
@@ -774,8 +774,8 @@ for key,value in pairs({
 	[4] = {3, "|CFFFF0000除非您拥有所需的 PvP 头衔、所需的 PvP 等级或处于该赛季的前 %，否则无法再购买或解锁幻化。|r", "PvP 精良/角斗士"},
 	[9] = {3, "|CFFFF0000获得它的原始来源已被删除，现在只能通过黑市拍卖行获得。|r", "黑市拍卖行 [BMAH]"},
 	[10] = {3, "|CFFFF0000最初通过不再印刷的 TCG 卡获得，但仍可通过黑市、游戏内或现实中的拍卖行获得。|r", "集换式卡牌游戏 [TCG]"},
-	[11] = {3, "|CFFFF0000除非您认识可以使用用于召唤首领的物品的人，否则这将不再可用。|r", "需要召唤物品"},
-	[15] = {1, "|CFFFF0000这不能永久学习或用于幻化。|r", "不可学"},
+	[11] = {3, "|CFFFF0000除非您认识可以使用用于召唤首领的物品的人，否则这将不再可用。\nNote: Most Summoning Items can be reobtained if you had them in the past by talking to the respective NPC.|r", "需要召唤物品"},	--TODO
+	[15] = {1, "|CFFFF0000这不能永久学习或用于幻化。|r", "不可学"},	--TODO: This cannot be permanently collected, learned or used for transmog.
 	[35] = {3, "|CFFFF0000这被锁定在付费墙后面，例如游戏内商店、另一个暴雪产品或战友招募服务。|r", "暴雪礼品卡"},
 	[38] = {1, "|CFFFF0000这仅适用于在《熊猫人之谜》或通过黑市拍卖行完成传奇披风任务链的玩家。|r", "斡耳朵斯 - 传奇披风"},
 	[45] = {1, "|CFFFF0000暴雪的拾取更改损坏了几件物品，使其无法获得。\n“绞肉机”奥戈姆，和奥杜尔英雄模式物品目前已损坏，需要修复。|r", "拾取损坏"},
