@@ -188,6 +188,7 @@ local BaseObjectFields = function(fields, className)
 		end
 	end
 	return {
+		__class = class,
 		__index = function(t, key)
 			_cache = rawget(class, key);
 			if _cache then return _cache(t); end
@@ -301,6 +302,8 @@ app.WrapObject = function(object, baseObject)
 	if not objectMeta then
 		error("Tried to WrapObject which has no metatable! (Wrapping not necessary)")
 	end
+	-- save the set of originally-defined meta-fields of this object's class
+	object.__class = objectMeta.__class
 	objectMeta = objectMeta.__index
 	if not objectMeta then
 		error("Tried to WrapObject which has no index!")
@@ -308,6 +311,11 @@ app.WrapObject = function(object, baseObject)
 	if type(objectMeta) == "function" then
 		return setmetatable(object, {
 			__index = function(t, key)
+				-- app.PrintDebug("__wrapf",key,t.__class,object.__class[key],objectMeta(t, key),baseObject[key])
+				-- the original class of the object defines a function for 'key' then use that only (allows false/nil overrides properly)
+				if t.__class[key] then
+					return objectMeta(t, key)
+				end
 				return objectMeta(t, key) or baseObject[key];
 			end
 		});
