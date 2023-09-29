@@ -580,7 +580,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 					}),
-					mission(1298, { -- The Emerald Nightmare: Il'gynoth [Raid Finder]
+					mission(1298, { -- The Emerald Nightmare: Il'gynoth 
 						["groups"] = {
 							i(139480), -- Corrupted Egg Fragment [Raid Finder]
 							q(43546, { -- Il'gynoth [Raid Finder]
@@ -625,7 +625,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							}),
 						},
 					}),
-					mission(1300, { -- The Emerald Nightmare: Fall of Cenarius [Raid Finder]
+					mission(1300, { -- The Emerald Nightmare: Fall of Cenarius 
 						["groups"] = {
 							i(140163), -- Tainted Moonglade Leaf [Raid Finder]
 							q(43902, { -- Fall of Cenarius [Raid Finder]
@@ -670,7 +670,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							}),
 						},
 					}),
-					mission(1302, { -- The Emerald Nightmare: Xavius [Raid Finder]
+					mission(1302, { -- The Emerald Nightmare: Xavius 
 						["groups"] = {
 							i(140164), -- Vial of Swirling Shadow [Raid Finder]
 							q(43903, { -- Xavius [Raid Finder]
@@ -715,8 +715,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							}),
 						},
 					}),
-
-					mission(1303, { -- The Nighthold: Vaults [Raid Finder]
+					mission(1303, { -- The Nighthold: Vaults 
 						["groups"] = {
 							i(140147), -- Pulsauron Bindings [Raid Finder]
 							q(43882, { -- Vaults [Raid Finder]
@@ -761,7 +760,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							}),
 						},
 					}),
-					mission(1304, { -- The Nighthold: High Botanist Tel'arn [Raid Finder]
+					mission(1304, { -- The Nighthold: High Botanist Tel'arn 
 						["groups"] = {
 							i(140171), -- Glowing Lily [Raid Finder]
 							q(43910, { -- High Botanist Tel'arn [Raid Finder]
@@ -806,7 +805,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							}),
 						},
 					}),
-					mission(1305, { -- The Nighthold: Elisande [Raid Finder]
+					mission(1305, { -- The Nighthold: Elisande 
 						["groups"] = {
 							i(140172), -- Ancient Nightborne Tome [Raid Finder]
 							q(43911, { -- Elisande [Raid Finder]
@@ -851,7 +850,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							}),
 						},
 					}),
-					mission(1306, { -- The Nighthold: Gul'dan [Raid Finder]
+					mission(1306, { -- The Nighthold: Gul'dan 
 						["groups"] = {
 							i(140173), -- Shred of Tattered Robe [Raid Finder]
 							q(43912, { -- Gul'dan [Raid Finder]
@@ -896,7 +895,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							}),
 						},
 					}),
-					mission(1680, { -- Tomb of Sargeras: The Tomb's Mistress [Raid Finder][Mistress]
+					mission(1680, { -- Tomb of Sargeras: The Tomb's Mistress [Mistress]
 						["groups"] = {
 							i(147497), -- Encrusted Naga Scale [Raid Finder]
 							q(47114, { -- The Tomb's Mistress [Raid Finder]
@@ -940,7 +939,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							}),
 						},
 					}),
-					mission(1681, { -- Tomb of Sargeras: Free The Tormented [Raid Finder][Desolate Host]
+					mission(1681, { -- Tomb of Sargeras: Free The Tormented [Desolate Host]
 						["groups"] = {
 							i(147501), -- Worshipper's Scrawlings [Raid Finder]
 							q(47118, { -- Free The Tormented [Raid Finder]
@@ -983,7 +982,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							}),
 						},
 					}),
-					mission(1682, { -- Tomb of Sargeras: The Fallen Avatar [Raid Finder]
+					mission(1682, { -- Tomb of Sargeras: The Fallen Avatar 
 						["groups"] = {
 							i(147505), -- Wailing Soul [Raid Finder]
 							q(47122, { -- The Fallen Avatar [Raid Finder]
@@ -1026,7 +1025,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							}),
 						},
 					}),
-					mission(1683, { -- Tomb of Sargeras: The Deceiver [Raid Finder]
+					mission(1683, { -- Tomb of Sargeras: The Deceiver 
 						["groups"] = {
 							i(147509), -- Seal of the Deceiver [Raid Finder]
 							q(47126, { -- The Deceiver [Raid Finder]
