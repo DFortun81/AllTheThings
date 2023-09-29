@@ -1271,15 +1271,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			-- #if AFTER 10.1.7
 			spell(921, {	-- Pickpocketing
-						i(2109, {	-- Frostmane Chain Vest
-							["timeline"] = { "added 10.1.7" },	-- ATT Discord 20.09.2023
-							["description"] = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other lowlevel mobs on Azeroth.",
-							--	["cr"] = 41122,	-- Frostmane Snowstrider
-							["coords"] = {
+				i(2109, {	-- Frostmane Chain Vest
+					["timeline"] = { "added 10.1.7" },	-- ATT Discord 20.09.2023
+					["description"] = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other lowlevel mobs on Azeroth.",
+					--	["cr"] = 41122,	-- Frostmane Snowstrider
+					["coords"] = {
 								{ 49.0, 35.4, DUN_MOROGH },
-							},
-						}),
-					}),
+					},
+				}),
+			}),
 			-- #endif
 			n(QUESTS, {
 				q(319, {	-- A Favor for Evershine
