@@ -262,9 +262,37 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 					mission(1704, {	-- Antorus, the Burning Throne (Antoran High Command)
 						["groups"] = {
 							i(152313),	-- Azeroth Invasion Plans [Raid Finder]
+							q(48288, {	-- Antoran High Command [Raid Finder]
+								["repeatable"] = true,
+								["provider"] = { "i", 152313 },	-- Azeroth Invasion Plans [Raid Finder]
+								["g"] = {
+									i(153502),	-- Cache of Antoran Treasures [Raid Finder]
+								},
+							}),
 							i(152314),	-- Azeroth Invasion Plans (Normal)
+							q(48295, {	-- Antoran High Command (Normal)
+								["repeatable"] = true,
+								["provider"] = { "i", 152314 },	-- Azeroth Invasion Plans [Normal]
+								["g"] = {
+									i(153504),	-- Cache of Antoran Treasures (Normal)
+								},
+							}),
 							i(152315),	-- Azeroth Invasion Plans (Heroic)
+							q(48299, {	-- Antoran High Command (Heroic)
+								["repeatable"] = true,
+								["provider"] = { "i", 152315 },	-- Azeroth Invasion Plans [Heroic]
+								["g"] = {
+									i(153501),	-- Cache of Antoran Treasures (Heroic)
+								},
+							}),
 							i(152316),	-- Azeroth Invasion Plans (Mythic)
+							q(48303, {	-- Antoran High Command (Mythic)
+								["repeatable"] = true,
+								["provider"] = { "i", 152316 },	-- Azeroth Invasion Plans [Mythic]
+								["g"] = {
+									i(153503),	-- Cache of Antoran Treasures (Mythic)
+								},
+							}),
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
 							i(153502, {	-- Cache of Antoran Treasures [Looking For Raid]
 								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
@@ -292,9 +320,37 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 					mission(1708, {	-- Antorus, the Burning Throne (Imonar)
 						["groups"] = {
 							i(152317),	-- Discharged Shock Lance [Raid Finder]
+							q(48292, {	-- The Soulhunter [Raid Finder]
+								["repeatable"] = true,
+								["provider"] = { "i", 152317 },	-- Discharged Shock Lance [Raid Finder]
+								["g"] = {
+									i(153502),	-- Cache of Antoran Treasures [Raid Finder]
+								},
+							}),
 							i(152318),	-- Discharged Shock Lance (Normal)
+							q(48296, {	-- The Soulhunter (Normal)
+								["repeatable"] = true,
+								["provider"] = { "i", 152318 },	-- Discharged Shock Lance [Raid Finder]
+								["g"] = {
+									i(153504),	-- Cache of Antoran Treasures (Normal)
+								},
+							}),
 							i(152319),	-- Discharged Shock Lance (Heroic)
+							q(48300, {	-- The Soulhunter (Heroic)
+								["repeatable"] = true,
+								["provider"] = { "i", 152319 },	-- Discharged Shock Lance [Raid Finder]
+								["g"] = {
+									i(153501),	-- Cache of Antoran Treasures (Heroic)
+								},
+							}),
 							i(152320),	-- Discharged Shock Lance (Mythic)
+							q(48304, {	-- The Soulhunter (Mythic)
+								["repeatable"] = true,
+								["provider"] = { "i", 152320 },	-- Discharged Shock Lance [Raid Finder]
+								["g"] = {
+									i(153503),	-- Cache of Antoran Treasures (Mythic)
+								},
+							}),
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
 							i(153504, {	-- Cache of Antoran Treasures (Normal)
 								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
@@ -322,9 +378,37 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 					mission(1709, {	-- Antorus, the Burning Throne (Coven)
 						["groups"] = {
 							i(152321),	-- Sargerei Manifesto [Raid Finder]
+							q(48293, {	-- The Burning Coven [Raid Finder]
+								["repeatable"] = true,
+								["provider"] = { "i", 152321 },	-- Sargerei Manifesto [Raid Finder]
+								["g"] = {
+									i(153502),	-- Cache of Antoran Treasures [Raid Finder]
+								},
+							}),
 							i(152322),	-- Sargerei Manifesto (Normal)
+							q(48297, {	-- The Burning Coven (Normal)
+								["repeatable"] = true,
+								["provider"] = { "i", 152322 },	-- Sargerei Manifesto [Raid Finder]
+								["g"] = {
+									i(153504),	-- Cache of Antoran Treasures (Normal)
+								},
+							}),
 							i(152323),	-- Sargerei Manifesto (Heroic)
+							q(48301, {	-- The Burning Coven (Heroic)
+								["repeatable"] = true,
+								["provider"] = { "i", 152323 },	-- Sargerei Manifesto [Raid Finder]
+								["g"] = {
+									i(153501),	-- Cache of Antoran Treasures (Heroic)
+								},
+							}),
 							i(152324),	-- Sargerei Manifesto (Mythic)
+							q(48305, {	-- The Burning Coven (Mythic)
+								["repeatable"] = true,
+								["provider"] = { "i", 152324 },	-- Sargerei Manifesto [Raid Finder]
+								["g"] = {
+									i(153503),	-- Cache of Antoran Treasures (Mythic)
+								},
+							}),
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
 							i(153501, {	-- Cache of Antoran Treasures (Heroic)
 								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
@@ -352,9 +436,37 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 					mission(1710, {	-- Antorus, the Burning Throne (Argus)
 						["groups"] = {
 							i(152325),	-- Sanguine Argunite [Raid Finder]
+							q(48294, {	-- The Unmaker [Raid Finder]
+								["repeatable"] = true,
+								["provider"] = { "i", 152325 },	-- Sanguine Argunite [Raid Finder]
+								["g"] = {
+									i(153502),	-- Cache of Antoran Treasures [Raid Finder]
+								},
+							}),
 							i(152326),	-- Sanguine Argunite (Normal)
+							q(48298, {	-- The Unmaker (Normal)
+								["provider"] = { "i", 152326 },	-- Sanguine Argunite [Normal]
+								["repeatable"] = true,
+								["g"] = {
+									i(153504),	-- Cache of Antoran Treasures (Normal)
+								},
+							}),
 							i(152327),	-- Sanguine Argunite (Heroic)
+							q(48302, {	-- The Unmaker (Heroic)
+								["provider"] = { "i", 152327 },	-- Sanguine Argunite [Heroic]
+								["repeatable"] = true,
+								["g"] = {
+									i(153501),	-- Cache of Antoran Treasures (Heroic)
+								},
+							}),
 							i(152328),	-- Sanguine Argunite (Mythic)
+							q(48306, {	-- The Unmaker (Mythic)
+								["provider"] = { "i", 152328 },	-- Sanguine Argunite [Mythic]
+								["repeatable"] = true,
+								["g"] = {
+									i(153503),	-- Cache of Antoran Treasures (Mythic)
+								},
+							}),
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
 							i(153503, {	-- Cache of Antoran Treasures (Mythic)
 								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
@@ -688,124 +800,6 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							follower(986),	-- Meatball
 						},
 					}),--]] -- Linked with the Mission
-					
-					-- Raid Missions
-					-- Antoran LFR
-					q(48288, {	-- Antoran High Command [Raid Finder]
-						["repeatable"] = true,
-						["provider"] = { "i", 152313 },	-- Azeroth Invasion Plans [Raid Finder]
-						["g"] = {
-							i(153502),	-- Cache of Antoran Treasures [Raid Finder]
-						},
-					}),
-					q(48292, {	-- The Soulhunter [Raid Finder]
-						["repeatable"] = true,
-						["provider"] = { "i", 152317 },	-- Discharged Shock Lance [Raid Finder]
-						["g"] = {
-							i(153502),	-- Cache of Antoran Treasures [Raid Finder]
-						},
-					}),
-					q(48293, {	-- The Burning Coven [Raid Finder]
-						["repeatable"] = true,
-						["provider"] = { "i", 152321 },	-- Sargerei Manifesto [Raid Finder]
-						["g"] = {
-							i(153502),	-- Cache of Antoran Treasures [Raid Finder]
-						},
-					}),
-					q(48294, {	-- The Unmaker [Raid Finder]
-						["repeatable"] = true,
-						["provider"] = { "i", 152325 },	-- Sanguine Argunite [Raid Finder]
-						["g"] = {
-							i(153502),	-- Cache of Antoran Treasures [Raid Finder]
-						},
-					}),
-					-- Antoran Normal
-					q(48295, {	-- Azeroth Invasion Plans (Normal)
-						["repeatable"] = true,
-						["provider"] = { "i", 152314 },	-- Azeroth Invasion Plans [Normal]
-						["g"] = {
-							i(153504),	-- Cache of Antoran Treasures (Normal)
-						},
-					}),
-					q(48296, {	-- Discharged Shock Lance (Normal)
-						["repeatable"] = true,
-						["provider"] = { "i", 152318 },	-- Discharged Shock Lance [Raid Finder]
-						["g"] = {
-							i(153504),	-- Cache of Antoran Treasures (Normal)
-						},
-					}),
-					q(48297, {	-- The Burning Coven (Normal)
-						["repeatable"] = true,
-						["provider"] = { "i", 152322 },	-- Sargerei Manifesto [Raid Finder]
-						["g"] = {
-							i(153504),	-- Cache of Antoran Treasures (Normal)
-						},
-					}),
-					q(48298, {	-- The Unmaker (Normal)
-						["provider"] = { "i", 152326 },	-- Sanguine Argunite [Normal]
-						["repeatable"] = true,
-						["g"] = {
-							i(153504),	-- Cache of Antoran Treasures (Normal)
-						},
-					}),
-					-- Antoran Heroic
-					q(48299, {	-- Azeroth Invasion Plans (Heroic)
-						["repeatable"] = true,
-						["provider"] = { "i", 152315 },	-- Azeroth Invasion Plans [Heroic]
-						["g"] = {
-							i(153501),	-- Cache of Antoran Treasures (Heroic)
-						},
-					}),
-					q(48300, {	-- Discharged Shock Lance (Heroic)
-						["repeatable"] = true,
-						["provider"] = { "i", 152319 },	-- Discharged Shock Lance [Raid Finder]
-						["g"] = {
-							i(153501),	-- Cache of Antoran Treasures (Heroic)
-						},
-					}),
-					q(48301, {	-- The Burning Coven (Heroic)
-						["repeatable"] = true,
-						["provider"] = { "i", 152323 },	-- Sargerei Manifesto [Raid Finder]
-						["g"] = {
-							i(153501),	-- Cache of Antoran Treasures (Heroic)
-						},
-					}),
-					q(48302, {	-- The Unmaker (Heroic)
-						["provider"] = { "i", 152327 },	-- Sanguine Argunite [Heroic]
-						["repeatable"] = true,
-						["g"] = {
-							i(153501),	-- Cache of Antoran Treasures (Heroic)
-						},
-					}),
-					-- Antoran Mythic
-					q(48303, {	-- Azeroth Invasion Plans (Mythic)
-						["repeatable"] = true,
-						["provider"] = { "i", 152316 },	-- Azeroth Invasion Plans [Mythic]
-						["g"] = {
-							i(153503),	-- Cache of Antoran Treasures (Mythic)
-						},
-					}),
-					q(48304, {	-- Discharged Shock Lance (Mythic)
-						["repeatable"] = true,
-						["provider"] = { "i", 152320 },	-- Discharged Shock Lance [Raid Finder]
-						["g"] = {
-							i(153503),	-- Cache of Antoran Treasures (Mythic)
-						},
-					}),
-					q(48305, {	-- The Burning Coven (Mythic)
-						["repeatable"] = true,
-						["provider"] = { "i", 152324 },	-- Sargerei Manifesto [Raid Finder]
-						["g"] = {
-							i(153503),	-- Cache of Antoran Treasures (Mythic)
-						},
-					}),
-					q(48306, {	-- The Unmaker (Mythic)
-						["provider"] = { "i", 152328 },	-- Sanguine Argunite [Mythic]
-						["repeatable"] = true,
-						["g"] = {
-							i(153503),	-- Cache of Antoran Treasures (Mythic)
-						},
-					}),
 				}),
 			},
 		}),
