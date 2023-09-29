@@ -334,6 +334,15 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["coord"] = { 36.5, 62.5, VALDRAKKEN },
 				["timeline"] = { ADDED_10_1_0 }
 			}),
+			-- Patch 10.2.0
+			q(77912, {	-- Unmodern Jewelry
+				["provider"] = { "n", 210162 },	-- Magnolia Oaken
+				["coord"] = { 36.8, 63.1, VALDRAKKEN },
+				["timeline"] = { ADDED_10_2_0 },
+				["g"] = {
+					i(208928),	-- Zaqali Adornments (QI!)
+				},
+			}),
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",

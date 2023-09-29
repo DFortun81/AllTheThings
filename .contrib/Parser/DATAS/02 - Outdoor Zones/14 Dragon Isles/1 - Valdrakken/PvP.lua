@@ -827,19 +827,31 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									["timeline"] = { ADDED_10_1_0 },
 								}),
 								i(201254, {	-- Cracked Medal of Honor [A]
-									["timeline"] = { ADDED_10_0_2, REMOVED_10_1_0 }
+									["timeline"] = { ADDED_10_0_2, REMOVED_10_1_0 },
 								}),
 								i(201255, {	-- Cracked Medal of Honor [H]
-									["timeline"] = { ADDED_10_0_2, REMOVED_10_1_0 }
+									["timeline"] = { ADDED_10_0_2, REMOVED_10_1_0 },
 								}),
-								i(204179, {	-- Medal of Honor [A]
-									["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }
+								i(204179, {	-- Medal of Honor [A] (TODO: change to Cracked Medal of Honor with new season)
+									["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 								}),
-								i(204180, {	-- Medal of Honor [H]
-									["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }
+								i(204180, {	-- Medal of Honor [H] (TODO: change to Cracked Medal of Honor with new season)
+									["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
+								}),
+								i(210324, {	-- Medal of Honor [A]
+									["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
+								}),
+								i(210325, {	-- Medal of Honor [H]
+									["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
 								}),
 							},
 						}),
+						-- #if AFTER 10.2.0
+						i(211126),	-- Glorious Medal of Honor
+						i(210758),	-- Honorable Satchel of Fabrics
+						i(210759),	-- Honorable Satchel of Ore
+						i(210760),	-- Honorable Satchel of Herbs
+						-- #endif
 					},
 				}),
 			}),

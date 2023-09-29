@@ -598,7 +598,6 @@ root(ROOTS.Unsorted, {
 				i(210674),	-- Mark of the Sable Dreamtalon (CI!)
 				i(210535),	-- Mark of the Slumbering Somnowl (CI!)
 				i(210736),	-- Mark of the Smoldering Dreamstag (CI!)
-				i(210739),	-- Mark of the Snowy Umbraclaw (CI!)
 				i(210684),	-- Mark of the Thriving Dreamtalon (CI!)
 				i(210647),	-- Mark of the Umbramane (CI!)
 				i(210729),	-- Mark of the Verdant Bristlebruin (CI!)
@@ -629,8 +628,6 @@ root(ROOTS.Unsorted, {
 				i(210491),	-- Technique: Winding Slitherdrake: Hairy Chin (RECIPE!)
 			}),
 			i(192717),	-- Animated Splinter
-			i(204179),	-- Cracked Medal of Honor
-			i(204180),	-- Cracked Medal of Honor
 			i(204720),	-- Join the New Scarlet Crusade!
 			i(205463),	-- Molten Lava Ball
 			i(206378),	-- [DNT] Test Loot
@@ -983,19 +980,15 @@ root(ROOTS.Unsorted, {
 			i(208862),	-- The Second Clue
 			i(208863),	-- The Fourth Clue
 			i(208864),	-- The Third Clue
-			i(208886),	-- Fiery Essence
 			i(208927),	-- Sandsparkle Pearl
-			i(208928),	-- Zaqali Adornments
 			i(208932),	-- A Partial Fourth Clue
 			i(208933),	-- A Partial Fourth Clue
 			i(208934),	-- A Partial Fourth Clue
 			i(208935),	-- A Partial Fourth Clue
 			i(208938),	-- Metamorphic Soot
 			i(208946),	-- Burning Rune
-			i(208947),	-- Enchanted Watering Can
 			i(208950),	-- Emerald Fiber
 			i(208955),	-- Pilfered Dreamshard
-			i(208956),	-- Intact Primalist Garb
 			i(208979),	-- 10.2 Monster - Merithra - Robe
 			i(208981),	-- 10.2 Monster - Merithra - Wrist
 			i(208982),	-- 10.2 Monster - Merithra - Waist
@@ -1159,8 +1152,6 @@ root(ROOTS.Unsorted, {
 			i(210224),	-- Small Emerald Bloom
 			i(210225),	-- Medium Emerald Bloom
 			i(210226),	-- Large Emerald Bloom
-			i(210324),	-- Medal of Honor
-			i(210325),	-- Medal of Honor
 			i(210326),	-- Medal of Conquest
 			i(210346),	-- Self-Baking Herb Based Cookies
 			i(210348),	-- Winter Warden's Sabatons
@@ -1175,20 +1166,15 @@ root(ROOTS.Unsorted, {
 			i(210360),	-- Winter Warden's Legplates
 			i(210361),	-- Cold Conservator's Leggings
 			i(210362),	-- Frigid Forager's Legguards
-			i(210365),	-- Winter Warden's Shoulderplates
 			i(210366),	-- Cold Conservator's Shoulders
 			i(210367),	-- Frigid Forager's Eqaulets
 			i(210368),	-- Winter Warden's Girdle
 			i(210369),	-- Cold Conservator's Sash
 			i(210370),	-- Frigid Forager's Waistguard
-			i(210372),	-- Cold Conservator's Bands
 			i(210373),	-- Winter Warden's Bracers
 			i(210374),	-- Frigid Forager's Cuffs
 			i(210376),	-- Beautiful Blizzard Binding
 			i(210377),	-- Snipping Sleet Circle
-			i(210378),	-- Rime Ridden Ring
-			i(210380),	-- Glittering Gelid Goldchain
-			i(210382),	-- Cold Conservator's Wrap
 			i(210383),	-- Winter Warden's Bulwark
 			i(210384),	-- Cold Conservator's Implement
 			i(210385),	-- Frigid Forager's Branch
@@ -1206,7 +1192,6 @@ root(ROOTS.Unsorted, {
 			i(210400),	-- Winter Warden's Gavel
 			i(210401),	-- Winter Warden's Greatsword
 			i(210402),	-- Cold Conservator's Wand
-			i(210403),	-- Frigid Forager's Spire
 			i(210404),	-- Frigid Forager's Curve
 			i(210405),	-- Crystalline Tender's Kris
 			i(210406),	-- Frigid Forager's Claymore
@@ -1268,7 +1253,6 @@ root(ROOTS.Unsorted, {
 			i(210661),	-- Dreamcatcher's Crescent
 			i(210662),	-- Ochre Ornament of the Grove
 			i(210664),	-- Frost Sapling's Adornment
-			i(210666),	-- Crest of the Seething Flamekeeper
 			i(210687),	-- Ironfur Sample
 			i(210726),	-- Ruby Flightstone
 			-----------------

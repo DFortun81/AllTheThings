@@ -1100,7 +1100,6 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
 				["coord"] = { 28.6, 61.4, VALDRAKKEN },
 			}),
-
 			-- Requires ?? Skill - Patch 10.1.0.
 			q(75354, {	-- Mycelium Mastery
 				["provider"] = { "n", 203516 },	-- Kayann
@@ -1111,6 +1110,12 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["provider"] = { "n", 203516 },	-- Kayann
 				["coord"] = { 36.5, 62.5, VALDRAKKEN },
 				["timeline"] = { ADDED_10_1_0 }
+			}),
+			-- Patch 10.2.0.
+			q(77945, {	-- Boots on the Ground
+				["provider"] = { "n", 210162 },	-- Magnolia Oaken
+				["coord"] = { 36.8, 63.1, VALDRAKKEN },
+				["timeline"] = { ADDED_10_2_0 }
 			}),
 		})),
 		filter(RECIPES, {

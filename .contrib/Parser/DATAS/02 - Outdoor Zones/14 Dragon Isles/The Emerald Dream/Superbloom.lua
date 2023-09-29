@@ -31,10 +31,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210381),	-- Crystalline Tender's Shroud (cloak) / will leave it here until non-leather confirm drop
 					i(210393),	-- Crystalline Tender's Boots
 				}),
-				--- Seeds
-				i(208066),	-- Small Dreamseed
-				i(208067),	-- Plump Dreamseed
-				i(208047),	-- Gigantic Dreamseed
+				i(210382),	-- Frigid Conservator's Wrap (same affix (Frigid..) as loot in weekly rep bag)
+				--- Seeds (TODO: as of 29/09 was removed from reward list here (or need at least 'rare' state?))
+				--i(208066),	-- Small Dreamseed
+				--i(208067),	-- Plump Dreamseed
+				--i(208047),	-- Gigantic Dreamseed
 				--- DM
 				i(207762),	-- Grotto Netherwing Drake: Chin Spike (DM!)
 				-- RECIPE
@@ -53,9 +54,9 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		header(HEADERS.Quest, 78203, {	-- Superbloom
 			q(78203),	-- Superbloom
 			--
-			--q(78319),	-- on first kill with rare state of event | shared loot with all this hqts
-			--q(78502),	-- on first kill with rare state of event | DM (chin spike), leather piece of gear
-			--q(78553),	-- on first kill with rare state of event | and gigantic dreamseed
+			q(78319),	-- weekly lockout for piece of gear
+			--q(78502),	-- on first kill with rare state of event | DM (Grotto Netherwing Drake: Chin Spike)
+			--q(78553),	-- on first kill with rare state of event | or Marikke (n: 207543) lockout
 			--q(78554),	-- on 2nd kill with rare state of event - was looted small dreamseed
 			-- spells for achievement Fruit of the Bloom ach(19310)
 			q(78487),	-- Basket of Explosive Acorns (spellID 424568)

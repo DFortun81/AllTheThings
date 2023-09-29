@@ -482,6 +482,15 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				["coord"] = { 36.5, 62.5, VALDRAKKEN },
 				["timeline"] = { ADDED_10_1_0 }
 			}),
+			-- Patch 10.2.0
+			q(77947, {	-- Primalist Fashion
+				["provider"] = { "n", 210162 },	-- Magnolia Oaken
+				["coord"] = { 36.8, 63.1, VALDRAKKEN },
+				["timeline"] = { ADDED_10_2_0 },
+				["g"] = {
+					i(208956),	-- Intact Primalist Garb (QI!)
+				},
+			}),
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",

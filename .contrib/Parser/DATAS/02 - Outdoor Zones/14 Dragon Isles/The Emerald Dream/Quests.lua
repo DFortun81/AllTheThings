@@ -411,7 +411,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["provider"] = { "n", 207351 },	-- Vyranoth
 				["coord"] = { 51.1, 83.8, STORMHEIM },
 				["g"] = {
-					i(210959),	-- [PH] Misfit Renown Item TODO: fix name
+					i(210959),	-- Pact of the Netherwing
 				},
 			}),
 			--
@@ -715,6 +715,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(208067),	-- Plump Dreamseed
 				},
 			}),
+			--Crate of the Art as of 28/09 not here; other requirement?
 			q(78428, {	-- Crate of the Art
 				["sourceQuests"] = { 77283 },	-- A Multi-Front Battle
 				["provider"] = { "n", 211240 },	-- Eran'nda
@@ -728,19 +729,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			--
-			q(78041, {	-- Sky Mother's Ire -- quest was offered but disappeared immediately after accepting it for some reason
+			q(78041, {	-- Sky Mother's Ire
 				--["sourceQuests"] = {  },	-- no requirement as of 7.Sept
 				["provider"] = { "n", 209318 },	-- Cenarius
 				["coord"] = { 50.8, 62.1, TREE_1 },
 			}),
 			--[[They didn't push qid on pickin them up, only when turn in]]--
-			q(78042, {	-- Aviana's Assessment -- (quest above can be turn in at coord for this npc, every quest in this chain is mess)
+			q(78042, {	-- Aviana's Assessment
 				["sourceQuests"] = { 78041 },	-- Sky Mother's Ire
 				["provider"] = { "n", 210587 },	-- Aviana
 				["coord"] = { 65.8, 37.6, TREE_1 },
 				["g"] = {
 					i(209875),	-- Gorestained Armor Scrap (QI!)
-					i(208775),	-- Ashphodel Research Notes (QI) / TODO: PH for now
+					i(208775),	-- Ashphodel Research Notes (QI)
 				},
 			}),
 			q(78043, {	-- Q'Onzu's Quandary
@@ -748,12 +749,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["provider"] = { "n", 210585 },	-- Q'onzu <Loa of Change>
 				["coord"] = { 65.9, 37.8, TREE_1 },
 			}),
-			q(77788, {	-- Ashphodel Research Notes / can be looted from same npcs as required for qID 78042
+			q(77788, {	-- Ashphodel Research Notes
 				["sourceQuests"] = { 78041 },	-- Sky Mother's Ire / or Aviana's Assessment
 				["provider"] = { "i", 208775 },	-- Ashphodel Research Notes
 				--["coord"] = { 65.9, 37.8, TREE_1 },
 				["g"] = {
-					i(210453),	-- Bundle of Flame Pollen (QI!) / @ 60.8, 44.9 while poi broken
+					i(210453),	-- Bundle of Flame Pollen (QI!)
 				},
 			}),
 			q(78044, {	-- Apalling Pollen
@@ -808,7 +809,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			q(77209, {	-- Seed Legacy
 				["sourceQuests"] = { 78172 },	-- Mysterious Seeds
-				["provider"] = { "n", 211265 },	-- Sylvia Whiperbloom
+				["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
 				["coord"] = { 59.7, 16.9, TREE_1 },
 				["g"] = {
 					i(210014),	-- Mysterious Seeds (QI!)
@@ -816,7 +817,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			q(78170, {	-- Nurturing Ageless Seeds
 				["sourceQuests"] = { 77209 },	-- Seed Legacy
-				["provider"] = { "n", 211265 },	-- Sylvia Whiperbloom
+				["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
 				["coord"] = { 59.7, 16.9, TREE_1 },
 				["cost"] = {
 					{ "c", 2650, 150 },	-- 150x Emerald Dewdrop
@@ -824,7 +825,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			q(78171, {	-- Blossoms of the Past
 				["sourceQuests"] = { 78170 },	-- Nurturing Ageless Seeds
-				["provider"] = { "n", 211265 },	-- Sylvia Whiperbloom
+				["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
 				["coord"] = { 59.7, 16.9, TREE_1 },
 				["g"] = {
 					i(210052),	-- Ageless Blossoms (QI!)
@@ -833,8 +834,23 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			q(78206, {	-- Emerald Bounty
 				["sourceQuests"] = { 78171 },	-- Blossoms of the Past
-				["provider"] = { "n", 211265 },	-- Sylvia Whiperbloom
+				["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
 				["coord"] = { 59.7, 16.9, TREE_1 },
+			}),
+			--
+			q(78821, {	-- Blooming Dreamseeds
+				--["sourceQuests"] = { 78206 },	-- Emerald Bounty (TODO: need to confirm)
+				["provider"] = { "n", 212797 },	-- Talisa Whisperbloom
+				["coord"] = { 49.7, 62.1, TREE_1 },
+				["isWeekly"] = true,
+				["g"] = {
+					--(TODO: may be shared data with weekly rep bag?)
+					i(210365),	-- Arctic Warden's Shoulderplates
+					i(210372),	-- Frigid Conservator's Bands
+					i(210380),	-- Glittering Gelid Goldchain
+					i(210378),	-- Rime Ridden Ring
+					i(210403),	-- Winter Forager's Spire
+				},
 			}),
 			--[[
 			q(, {	--

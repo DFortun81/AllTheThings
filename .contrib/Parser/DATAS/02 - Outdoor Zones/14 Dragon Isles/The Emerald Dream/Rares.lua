@@ -7,7 +7,7 @@ end
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	m(TREE_1, {
 		n(RARES, sharedData({ ["isDaily"] = true },{
-			n(210559, {	-- Balboan (have vignette as Isaqa and Isaqa wasn't up, may be share spawn?)
+			n(210559, {	-- Balboan (have vignette as Isaqa)
 				["questID"] = 78039,
 				["coord"] = { 22.8, 32.3, TREE_1 },
 			}),
@@ -15,6 +15,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 77942,
 				["coord"] = { 51.1, 31.7, TREE_1 },
 				["g"] = {
+					i(208349),	-- Burning Leather Cuffs
 					i(208323),	-- Nature's Firebathed Robes
 				},
 			}),

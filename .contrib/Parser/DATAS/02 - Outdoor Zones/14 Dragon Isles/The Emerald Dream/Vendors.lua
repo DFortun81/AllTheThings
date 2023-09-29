@@ -210,6 +210,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210648, {	-- Seedle (PET!)
 						["cost"] = { { "c", 2651, 800 } },
 					}),
+					i(211080, {	-- Mark of the Boreal Dreamtalon (CI!)
+						["classes"] = { DRUID },
+						["cost"] = { { "c", 2651, 1250 } },
+					}),
+					i(211081, {	-- Mark of the Auroral Dreamtalon (CI!)
+						["classes"] = { DRUID },
+						["cost"] = { { "c", 2651, 1250 } },
+					}),
+					i(210739, {	-- Mark of the Snowy Umbraclaw (CI!)
+						["classes"] = { DRUID },
+						["cost"] = { { "c", 2651, 1250 } },
+					}),
 					i(209950, {	-- Rekindled Dreamstag (MOUNT!)
 						["cost"] = { { "c", 2651, 2500 } },
 					}),

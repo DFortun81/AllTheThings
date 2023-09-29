@@ -5,6 +5,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 	m(TREE_1, {
 		n(ZONE_DROPS, {
 			--i(201437),	-- Slumbering Dream Fragment
+			--i(209861),	-- Thorn-Laden Heart @ 37.8, 46.7, TREE_1 [hunter only, seems like?]
 			filter(CLOTH, {
 				--i(),	-- 
 			}),

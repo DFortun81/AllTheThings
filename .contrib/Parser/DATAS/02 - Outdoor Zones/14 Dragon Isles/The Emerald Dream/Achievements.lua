@@ -172,79 +172,80 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			})),
 			explorationAch(19309),	-- Explore the Emerald Dream
 			ach(19293, {	-- Friends In Feathers
+				--require q(78370) / Claws for Concern
 				["g"] = {
 					i(210522),	-- Blueloo (PET!)
 					crit(62785, {	-- Beaks
 						["coord"] = { 36.9, 65.8, TREE_1 },
-					--	["_npcs"] = { xx },	-- xx
+						["_npcs"] = { 212053 },
 					}),
 					crit(62776, {	-- Bumbletweet
 						["coord"] = { 39.1, 66.0, TREE_1 },
-					--	["_npcs"] = { xx },	-- xx
+						["_npcs"] = { 212042 },
 					}),
 					crit(62788, {	-- Chickle
 						["coord"] = { 36.4, 71.2, TREE_1 },
-					--	["_npcs"] = { xx },	-- xx
+						["_npcs"] = { 212056 },
 					}),
 					crit(62790, {	-- Eugene
 						["coord"] = { 36.4, 62.7, TREE_1 },
-					--	["_npcs"] = { xx },	-- xx
+						["_npcs"] = { 212058 },
 					}),
 					crit(62775, {	-- Feets
 						["coord"] = { 38.4, 69.5, TREE_1 },
-					--	["_npcs"] = { xx },	-- xx
+						["_npcs"] = { 212039 },
 					}),
 					crit(62779, {	-- Fruffles
 						["coord"] = { 39.3, 71.7, TREE_1 },
-					--	["_npcs"] = { xx },	-- xx
+						["_npcs"] = { 212046 },
 					}),
 					crit(62789, {	-- Fuzz
 						["coord"] = { 38.7, 63.5, TREE_1 },
-					--	["_npcs"] = { xx },	-- xx
+						["_npcs"] = { 212057 },
 					}),
 					crit(62773, {	-- Giblet
 						["coord"] = { 35.6, 67.1, TREE_1 },
-					--	["_npcs"] = { xx },	-- xx
+						["_npcs"] = { 212033 },
 					}),
 					crit(62784, {	-- Hops
 						["coord"] = { 37.7, 73.3, TREE_1 },
-					--	["_npcs"] = { xx },	-- xx
+						["_npcs"] = { 212052 },
 					}),
 					crit(62783, {	-- Meep
 						["coord"] = { 35.5, 69.7, TREE_1 },
-					--	["_npcs"] = { xx },	-- xx
+						["_npcs"] = { 212051 },
 					}),
 					crit(62787, {	-- Moonbeam
 						["coord"] = { 36.1, 69.7, TREE_1 },
-					--	["_npcs"] = { xx },	-- xx
+						["_npcs"] = { 212055 },
 					}),
 					crit(62782, {	-- Owlington
 						["coord"] = { 37.4, 72.2, TREE_1 },
-					--	["_npcs"] = { xx },	-- xx
+						["_npcs"] = { 212050 },
 					}),
 					crit(62777, {	-- Peanut
 						["coord"] = { 38.0, 69.0, TREE_1 },
-					--	["_npcs"] = { xx },	-- xx
+						["_npcs"] = { 212044 },
 					}),
 					crit(62778, {	-- Snoozle
 						["coord"] = { 40.4, 71.5, TREE_1 },
-					--	["_npcs"] = { xx },	-- xx
+						["_npcs"] = { 212045 },
 					}),
 					crit(62780, {	-- Squawkle
 						["coord"] = { 36.3, 71.6, TREE_1 },
-					--	["_npcs"] = { xx },	-- xx
+						["_npcs"] = { 212047 },
 					}),
 					crit(62786, {	-- Squeaky
 						["coord"] = { 38.4, 69.3, TREE_1 },
-					--	["_npcs"] = { xx },	-- xx
+						["_npcs"] = { 212054 },
 					}),
 					crit(62791, {	-- Tickles
 						["coord"] = { 38.7, 70.4, TREE_1 },
-					--	["_npcs"] = { xx },	-- xx
+						["_npcs"] = { 212060 },
 					}),
 					crit(62781, {	-- Wingnut
 						["coord"] = { 37.8, 70.2, TREE_1 },
-					--	["_npcs"] = { xx },	-- xx
+						["_npcs"] = { 212049 },
 					}),
 				},
 			}),
@@ -329,7 +330,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					title(527),	-- Blossom Bringer
 				},
 			}),
-			pvp(ach(19294)),	-- Tour of Duty: Emerald Dream
+			pvp(ach(19294, {	-- Tour of Duty: Emerald Dream
+				["g"] = {
+					i(210666),	-- Crest of the Seething Flamekeeper (COSMETIC!)
+				},
+			})),
 			ach(19317, {	-- Treasures of the Emerald Dream
 				["g"] = {
 					i(210414),	-- Forest Lord's Antlers (COSMETIC!)
@@ -361,7 +366,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						["_quests"] = { 78107 },
 					}),
 					crit(62952, {	-- Triflesnatch's Roving Trove
-						--["_quests"] = { xx },
+						["_quests"] = { 77872 },
 					}),
 				},
 			}),

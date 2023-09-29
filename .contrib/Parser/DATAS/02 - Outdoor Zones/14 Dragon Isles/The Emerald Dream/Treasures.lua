@@ -9,9 +9,29 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			i(210173),	-- Formula: Enchanted Whelpling's Dreaming Crest (RECIPE!)
 			i(210172),	-- Formula: Enchanted Wyrm's Dreaming Crest (RECIPE!)
 			--
-
-
-			-- treasures don't have valid loot as of 7.September.2023. Revisit all of these and put the loot in later
+			o(407739, {	-- Triflesnatcher's Roving Trove
+				["description"] = "You need to interact with owl 3 times in order to spawn chest.",
+				["questID"] = 77872,
+				["coord"] = { 35.0, 55.2, TREE_1 },
+				["g"] = {
+					i(208067),	-- Plump Dreamseed (TODO: placeholder?)
+					n(210060, {	-- Triflesnatcher
+						["description"] = "1st owl",
+						["questID"] = 77855,
+						["coord"] = { 39.7, 52.1, TREE_1 },
+					}),
+					n(210081, {	-- Triflesnatcher
+						["description"] = "2nd owl",
+						["questID"] = 77857,
+						["coord"] = { 42.2, 56.2, TREE_1 },
+					}),
+					n(210060, {	-- Triflesnatcher
+						["description"] = "3rd owl",
+						["questID"] = 77860,
+						["coord"] = { 41.7, 62.5, TREE_1 },
+					}),
+				},
+			}),
 			o(407862, {	-- Hidden Moonkin Stash
 				["questID"] = 77858,
 				["coord"] = { 47.5, 34.9, TREE_1 },
@@ -31,13 +51,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			o(411778, {	-- Pollenfused Bristlebruin Fur Sample
-				--["classes"] = DRUID, (need to confirm)
+				["classes"] = { DRUID },
 				["coord"] = { 63.7, 39.2, TREE_1 },
 				["g"] = {
 					i(210727),	-- Pollenfused Bristlebruin Fur Sample
 				},
 			}),
-			n(210544, {
+			n(210544, {	-- Laughing Sprigling
 				["questID"] = 78033,	-- trigger 'accepted' part and completed when he drop chest (pseudo-quest?), have (w) in-game
 				["description"] = "Interact with this npc 3 times to spawn chest, after each interaction - he will run away. Just follow him.",
 				["coords"] = {
