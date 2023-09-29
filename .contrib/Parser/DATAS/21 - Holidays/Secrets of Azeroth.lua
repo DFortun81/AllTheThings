@@ -23,7 +23,7 @@ COMMUNITY_CLUES_HEADER = createHeader({
 -- Fix temporary ObjectIDs with real ones if ever determined, and delete temp entries from ObjectDB.lua
 
 root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
-	["description"] = "***Using Debug Mode is recommend.***\n",
+	["description"] = "***Using Debug Mode is recommended.***\n",
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			ach(18644, {	-- Community Rumor Mill
