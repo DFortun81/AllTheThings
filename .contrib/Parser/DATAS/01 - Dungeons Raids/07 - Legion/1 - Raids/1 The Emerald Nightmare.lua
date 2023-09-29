@@ -62,39 +62,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				["coord"] = { 63.7, 55.0, LEGION_DALARAN },
 			}),
 			d(LFR_RAID, {
-				n(QUESTS, {
-					["crs"] = CLASS_HALL_MISSION_TABLES,
-					["g"] = {
-						i(139484, {	-- Cache of Nightmarish Treasures [Raid Finder]
-							["u"] = REMOVED_FROM_GAME,
-							["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
-						}),
-						i(139480, {	-- Corrupted Egg Fragment [Raid Finder]
-							["questID"] = 43546,	-- The Emerald Nightmare: Il'gynoth [Raid Finder]
-							["repeatable"] = true,
-							["u"] = REMOVED_FROM_GAME,
-							["g"] = {
-								un(REMOVED_FROM_GAME, i(139484)),	-- Cache of Nightmarish Treasures [Raid Finder]
-							},
-						}),
-						i(140163, {	-- Tainted Moonglade Leaf [Raid Finder]
-							["questID"] = 43902,	-- The Emerald Nightmare: Fall of Cenarius [Raid Finder]
-							["repeatable"] = true,
-							["u"] = REMOVED_FROM_GAME,
-							["g"] = {
-								un(REMOVED_FROM_GAME, i(139484)),	-- Cache of Nightmarish Treasures [Raid Finder]
-							},
-						}),
-						i(140164, {	-- Vial of Swirling Shadow [Raid Finder]
-							["questID"] = 43903,	-- The Emerald Nightmare: Xavius [Raid Finder]
-							["repeatable"] = true,
-							["u"] = REMOVED_FROM_GAME,
-							["g"] = {
-								un(REMOVED_FROM_GAME, i(139484)),	-- Cache of Nightmarish Treasures [Raid Finder]
-							},
-						}),
-					},
-				}),
 				n(ZONE_DROPS, {
 					i(141696),	-- Pendant of Liquid Horror
 					i(141694),	-- Gauntlets of Fractured Dreams
@@ -273,45 +240,14 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 			}),
 			d(NORMAL_RAID, {
 				n(QUESTS, {
-					["crs"] = CLASS_HALL_MISSION_TABLES,
-					["g"] = {
-						i(139486, {	-- Cache of Nightmarish Treasures [Normal]
-							["u"] = REMOVED_FROM_GAME,
-							["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
-						}),
-						i(139481, {	-- Corrupted Egg Fragment [Normal]
-							["questID"] = 43547,	-- The Emerald Nightmare: Il'gynoth [Normal]
-							["repeatable"] = true,
-							["u"] = REMOVED_FROM_GAME,
-							["g"] = {
-								un(REMOVED_FROM_GAME, i(139486)),	-- Cache of Nightmarish Treasures [Normal]
-							},
-						}),
-						i(140165, {	-- Tainted Moonglade Leaf [Normal]
-							["questID"] = 43904,	-- The Emerald Nightmare: Fall of Cenarius [Normal]
-							["repeatable"] = true,
-							["u"] = REMOVED_FROM_GAME,
-							["g"] = {
-								un(REMOVED_FROM_GAME, i(139486)),	-- Cache of Nightmarish Treasures [Normal]
-							},
-						}),
-						i(140166, {	-- Vial of Swirling Shadow [Normal]
-							["questID"] = 43905,	-- The Emerald Nightmare: Xavius [Normal]
-							["repeatable"] = true,
-							["u"] = REMOVED_FROM_GAME,
-							["g"] = {
-								un(REMOVED_FROM_GAME, i(139486)),	-- Cache of Nightmarish Treasures [Normal]
-							},
-						}),
-						q(44283, {	-- The Emerald Nightmare: Piercing the Veil (Normal)
-							["description"] = "Finishing this quest will grant you immediate access to Cenarius on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
-							["altQuests"] = {
-								44284,	-- The Emerald Nightmare: Piercing the Veil (Heroic)
-								44285,	-- The Emerald Nightmare: Piercing the Veil (Mythic)
-							},
-							["provider"] = { "n", 106482 },	-- Malfurion Stormrage
-						}),
-					},
+					q(44283, {	-- The Emerald Nightmare: Piercing the Veil (Normal)
+						["description"] = "Finishing this quest will grant you immediate access to Cenarius on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+						["altQuests"] = {
+							44284,	-- The Emerald Nightmare: Piercing the Veil (Heroic)
+							44285,	-- The Emerald Nightmare: Piercing the Veil (Mythic)
+						},
+						["provider"] = { "n", 106482 },	-- Malfurion Stormrage
+					}),
 				}),
 				n(COMMON_BOSS_DROPS, {
 					i(139706),	-- Corrupted Essence
@@ -524,42 +460,11 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 			}),
 			d(HEROIC_RAID, {
 				n(QUESTS, {
-					["crs"] = CLASS_HALL_MISSION_TABLES,
-					["g"] = {
-						i(139487, {	-- Cache of Nightmarish Treasures [Heroic]
-							["u"] = REMOVED_FROM_GAME,
-							["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
-						}),
-						i(139482, {	-- Corrupted Egg Fragment [Heroic]
-							["questID"] = 43548,	-- The Emerald Nightmare: Il'gynoth [Heroic]
-							["repeatable"] = true,
-							["u"] = REMOVED_FROM_GAME,
-							["g"] = {
-								un(REMOVED_FROM_GAME, i(139487)),	-- Cache of Nightmarish Treasures [Heroic]
-							},
-						}),
-						i(140167, {	-- Tainted Moonglade Leaf [Heroic]
-							["questID"] = 43906,	-- The Emerald Nightmare: Fall of Cenarius [Heroic]
-							["repeatable"] = true,
-							["u"] = REMOVED_FROM_GAME,
-							["g"] = {
-								un(REMOVED_FROM_GAME, i(139487)),	-- Cache of Nightmarish Treasures [Heroic]
-							},
-						}),
-						i(140168, {	-- Vial of Swirling Shadow [Heroic]
-							["questID"] = 43907,	-- The Emerald Nightmare: Xavius [Heroic]
-							["repeatable"] = true,
-							["u"] = REMOVED_FROM_GAME,
-							["g"] = {
-								un(REMOVED_FROM_GAME, i(139487)),	-- Cache of Nightmarish Treasures [Heroic]
-							},
-						}),
-						q(44284, {	-- The Emerald Nightmare: Piercing the Veil [Heroic]
-							["description"] = "Finishing this quest will grant you immediate access to Cenarius on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
-							["altQuests"] = { 44285 },	-- The Emerald Nightmare: Piercing the Veil (Mythic)
-							["provider"] = { "n", 106482 },	-- Malfurion Stormrage
-						}),
-					},
+					q(44284, {	-- The Emerald Nightmare: Piercing the Veil [Heroic]
+						["description"] = "Finishing this quest will grant you immediate access to Cenarius on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+						["altQuests"] = { 44285 },	-- The Emerald Nightmare: Piercing the Veil (Mythic)
+						["provider"] = { "n", 106482 },	-- Malfurion Stormrage
+					}),
 				}),
 				n(COMMON_BOSS_DROPS, {
 					i(139706),	-- Corrupted Essence
@@ -743,41 +648,10 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 			}),
 			d(MYTHIC_RAID, {
 				n(QUESTS, {
-					["crs"] = CLASS_HALL_MISSION_TABLES,
-					["g"] = {
-						i(139488, {	-- Cache of Nightmarish Treasures [Mythic]
-							["u"] = REMOVED_FROM_GAME,
-							["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
-						}),
-						i(139483, {	-- Corrupted Egg Fragment [Mythic]
-							["questID"] = 43549,	-- The Emerald Nightmare: Il'gynoth [Mythic]
-							["repeatable"] = true,
-							["u"] = REMOVED_FROM_GAME,
-							["g"] = {
-								un(REMOVED_FROM_GAME, i(139488)),	-- Cache of Nightmarish Treasures [Mythic]
-							},
-						}),
-						i(140169, {	-- Tainted Moonglade Leaf [Mythic]
-							["questID"] = 43908,	-- The Emerald Nightmare: Fall of Cenarius [Mythic]
-							["repeatable"] = true,
-							["u"] = REMOVED_FROM_GAME,
-							["g"] = {
-								un(REMOVED_FROM_GAME, i(139488)),	-- Cache of Nightmarish Treasures [Mythic]
-							},
-						}),
-						i(140170, {	-- Vial of Swirling Shadow [Mythic]
-							["questID"] = 43909,	-- The Emerald Nightmare: Xavius [Mythic]
-							["repeatable"] = true,
-							["u"] = REMOVED_FROM_GAME,
-							["g"] = {
-								un(REMOVED_FROM_GAME, i(139488)),	-- Cache of Nightmarish Treasures [Mythic]
-							},
-						}),
-						q(44285, {	-- The Emerald Nightmare: Piercing the Veil [Mythic]
-							["description"] = "Finishing this quest will grant you immediate access to Cenarius on Mythic difficulty each week.\n",
-							["provider"] = { "n", 106482 },	-- Malfurion Stormrage
-						}),
-					},
+					q(44285, {	-- The Emerald Nightmare: Piercing the Veil [Mythic]
+						["description"] = "Finishing this quest will grant you immediate access to Cenarius on Mythic difficulty each week.\n",
+						["provider"] = { "n", 106482 },	-- Malfurion Stormrage
+					}),
 				}),
 				n(COMMON_BOSS_DROPS, {
 					i(139706),	-- Corrupted Essence
