@@ -154,53 +154,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				["coord"] = { 63.7, 55.0, LEGION_DALARAN },
 			}),
 			d(LFR_RAID, {
-				n(QUESTS, {
-					["crs"] = CLASS_HALL_MISSION_TABLES,
-					["g"] = {
-						i(153502, {	-- Cache of Antoran Treasures [Looking For Raid]
-							["sym"] = {
-								{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
-								{"pop"},	-- Discard the Instance Header and acquire the children.
-								{"where", "difficultyID", 17 },	-- Select the Looking For Raid difficulty.
-								{"pop"},	-- Discard the Difficulty Header and acquire the children.
-								{"pop"},	-- Discard the Achievement Headers and acquire the children.
-								{"is","encounterID"},	-- Select only Encounter Headers
-								{"pop"},	-- Discard the Encounter Headers and acquire the children.
-								{"isnt", "c"},	-- Exclude Tier Set Pieces
-								{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
-								{"exclude", "itemID", 152094, 153115 },	-- Exclude Taeshalach and Scythe of the Unmaker
-							},
-						}),
-						q(48288, {	-- Antoran High Command [Raid Finder]
-							["repeatable"] = true,
-							["provider"] = { "i", 152313 },	-- Azeroth Invasion Plans [Raid Finder]
-							["g"] = {
-								i(153502),	-- Cache of Antoran Treasures [Raid Finder]
-							},
-						}),
-						q(48292, {	-- The Soulhunter [Raid Finder]
-							["repeatable"] = true,
-							["provider"] = { "i", 152317 },	-- Discharged Shock Lance [Raid Finder]
-							["g"] = {
-								i(153502),	-- Cache of Antoran Treasures [Raid Finder]
-							},
-						}),
-						q(48294, {	-- The Unmaker [Raid Finder]
-							["repeatable"] = true,
-							["provider"] = { "i", 152325 },	-- Sanguine Argunite [Raid Finder]
-							["g"] = {
-								i(153502),	-- Cache of Antoran Treasures [Raid Finder]
-							},
-						}),
-						q(48293, {	-- The Burning Coven [Raid Finder]
-							["repeatable"] = true,
-							["provider"] = { "i", 152321 },	-- Sargerei Manifesto [Raid Finder]
-							["g"] = {
-								i(153502),	-- Cache of Antoran Treasures [Raid Finder]
-							},
-						}),
-					},
-				}),
 				n(ZONE_DROPS, {
 					i(152084),	-- Gloves of Abhorrent Strategies
 					i(152085),	-- Cuffs of the Viridian Flameweavers
@@ -532,71 +485,23 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 			}),
 			d(NORMAL_RAID, {
 				n(QUESTS, {
-					["crs"] = CLASS_HALL_MISSION_TABLES,
-					["g"] = {
-						q(49032, {	-- Antorus, the Burning Throne: Dark Passage (Normal)
-							["description"] = "Finishing this quest will grant you immediate access to Imonar the Soulhunter on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
-							["altQuests"] = {
-								49075,	-- Antorus, the Burning Throne: Dark Passage (Heroic)
-								49076,	-- Antorus, the Burning Throne: Dark Passage (Mythic)
-							},
-							["provider"] = { "n", 125512 },	-- High Exarch Turalyon
-						}),
-						q(49133, {	-- Antorus, the Burning Throne: The Heart of Argus (Normal)
-							["sourceQuests"] = { 49032 },	-- Antorus, the Burning Throne: Dark Passage (Normal)
-							["description"] = "Finishing this quest will grant you immediate access to Aggramar on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
-							["altQuests"] = {
-								49134,	-- Antorus, the Burning Throne: The Heart of Argus (Heroic)
-								49135,	-- Antorus, the Burning Throne: The Heart of Argus (Mythic)
-							},
-							["provider"] = { "n", 125682 },	-- Prophet Velen
-						}),
-						i(153504, {	-- Cache of Antoran Treasures (Normal)
-							["sym"] = {
-								{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
-								{"pop"},	-- Discard the Instance Header and acquire the children.
-								{"where", "difficultyID", 14 },	-- Select the Normal difficulty.
-								{"pop"},	-- Discard the Difficulty Header and acquire the children.
-								{"is","encounterID"},	-- Select only Encounter Headers
-								{"pop"},	-- Discard the Encounter Headers and acquire the children.
-								{"isnt", "c"},	-- Exclude Tier Set Pieces
-								{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
-								{"exclude", "itemID",
-									152094, 153115,	-- Exclude Taeshalach, Scythe of the Unmaker
-									154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
-									155831,	-- Pantheon's Blessing
-								},
-							},
-						}),
-						i(152314, {	-- Azeroth Invasion Plans (Normal)
-							["questID"] = 48295,	-- Antoran High Command (Normal)
-							["repeatable"] = true,
-							["g"] = {
-								i(153504),	-- Cache of Antoran Treasures (Normal)
-							},
-						}),
-						i(152318, {	-- Discharged Shock Lance (Normal)
-							["questID"] = 48296,	-- The Soulhunter (Normal)
-							["repeatable"] = true,
-							["g"] = {
-								i(153504),	-- Cache of Antoran Treasures (Normal)
-							},
-						}),
-						i(152326, {	-- Sanguine Argunite (Normal)
-							["questID"] = 48298,	-- The Unmaker (Normal)
-							["repeatable"] = true,
-							["g"] = {
-								i(153504),	-- Cache of Antoran Treasures (Normal)
-							},
-						}),
-						i(152322, {	-- Sargerei Manifesto (Normal)
-							["questID"] = 48297,	-- The Burning Coven (Normal)
-							["repeatable"] = true,
-							["g"] = {
-								i(153504),	-- Cache of Antoran Treasures (Normal)
-							},
-						}),
-					},
+					q(49032, {	-- Antorus, the Burning Throne: Dark Passage (Normal)
+						["description"] = "Finishing this quest will grant you immediate access to Imonar the Soulhunter on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+						["altQuests"] = {
+							49075,	-- Antorus, the Burning Throne: Dark Passage (Heroic)
+							49076,	-- Antorus, the Burning Throne: Dark Passage (Mythic)
+						},
+						["provider"] = { "n", 125512 },	-- High Exarch Turalyon
+					}),
+					q(49133, {	-- Antorus, the Burning Throne: The Heart of Argus (Normal)
+						["sourceQuests"] = { 49032 },	-- Antorus, the Burning Throne: Dark Passage (Normal)
+						["description"] = "Finishing this quest will grant you immediate access to Aggramar on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+						["altQuests"] = {
+							49134,	-- Antorus, the Burning Throne: The Heart of Argus (Heroic)
+							49135,	-- Antorus, the Burning Throne: The Heart of Argus (Mythic)
+						},
+						["provider"] = { "n", 125682 },	-- Prophet Velen
+					}),
 				}),
 				n(ZONE_DROPS, {
 					i(152084),	-- Gloves of Abhorrent Strategies
@@ -944,65 +849,17 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 			}),
 			d(HEROIC_RAID, {
 				n(QUESTS, {
-					["crs"] = CLASS_HALL_MISSION_TABLES,
-					["g"] = {
-						q(49075, {	-- Antorus, the Burning Throne: Dark Passage (Heroic)
-							["description"] = "Finishing this quest will grant you immediate access to Imonar the Soulhunter on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
-							["altQuests"] = { 49076 },	-- Antorus, the Burning Throne: Dark Passage (Mythic)
-							["provider"] = { "n", 125512 },	-- High Exarch Turalyon
-						}),
-						q(49134, {	-- Antorus, the Burning Throne: The Heart of Argus (Heroic)
-							["sourceQuests"] = { 49075 },	-- Antorus, the Burning Throne: Dark Passage (Heroic)
-							["description"] = "Finishing this quest will grant you immediate access to Aggramar on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
-							["altQuests"] = { 49135 },	-- Antorus, the Burning Throne: The Heart of Argus (Mythic)
-							["provider"] = { "n", 125682 },	-- Prophet Velen
-						}),
-						i(153501, {	-- Cache of Antoran Treasures (Heroic)
-							["sym"] = {
-								{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
-								{"pop"},	-- Discard the Instance Header and acquire the children.
-								{"where", "difficultyID", 15 },	-- Select the Heroic difficulty.
-								{"pop"},	-- Discard the Difficulty Header and acquire the children.
-								{"is","encounterID"},	-- Select only Encounter Headers
-								{"pop"},	-- Discard the Encounter Headers and acquire the children.
-								{"isnt", "c"},	-- Exclude Tier Set Pieces
-								{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
-								{"exclude", "itemID",
-									152094, 153115,	-- Exclude Taeshalach, Scythe of the Unmaker
-									154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
-									155831,	-- Pantheon's Blessing
-								},
-							},
-						}),
-						i(152315, {	-- Azeroth Invasion Plans (Heroic)
-							["questID"] = 48299,	-- Antoran High Command (Heroic)
-							["repeatable"] = true,
-							["g"] = {
-								i(153501),	-- Cache of Antoran Treasures (Heroic)
-							},
-						}),
-						i(152319, {	-- Discharged Shock Lance (Heroic)
-							["questID"] = 48300,	-- The Soulhunter (Heroic)
-							["repeatable"] = true,
-							["g"] = {
-								i(153501),	-- Cache of Antoran Treasures (Heroic)
-							},
-						}),
-						i(152327, {	-- Sanguine Argunite (Heroic)
-							["questID"] = 48302,	-- The Unmaker (Heroic)
-							["repeatable"] = true,
-							["g"] = {
-								i(153501),	-- Cache of Antoran Treasures (Heroic)
-							},
-						}),
-						i(152323, {	-- Sargerei Manifesto (Heroic)
-							["questID"] = 48301,	-- The Burning Coven (Heroic)
-							["repeatable"] = true,
-							["g"] = {
-								i(153501),	-- Cache of Antoran Treasures (Heroic)
-							},
-						}),
-					},
+					q(49075, {	-- Antorus, the Burning Throne: Dark Passage (Heroic)
+						["description"] = "Finishing this quest will grant you immediate access to Imonar the Soulhunter on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+						["altQuests"] = { 49076 },	-- Antorus, the Burning Throne: Dark Passage (Mythic)
+						["provider"] = { "n", 125512 },	-- High Exarch Turalyon
+					}),
+					q(49134, {	-- Antorus, the Burning Throne: The Heart of Argus (Heroic)
+						["sourceQuests"] = { 49075 },	-- Antorus, the Burning Throne: Dark Passage (Heroic)
+						["description"] = "Finishing this quest will grant you immediate access to Aggramar on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+						["altQuests"] = { 49135 },	-- Antorus, the Burning Throne: The Heart of Argus (Mythic)
+						["provider"] = { "n", 125682 },	-- Prophet Velen
+					}),
 				}),
 				n(ZONE_DROPS, {
 					i(152084),	-- Gloves of Abhorrent Strategies
@@ -1342,63 +1199,15 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 			}),
 			d(MYTHIC_RAID, {
 				n(QUESTS, {
-					["crs"] = CLASS_HALL_MISSION_TABLES,
-					["g"] = {
-						q(49076, {	-- Antorus, the Burning Throne: Dark Passage (Mythic)
-							["description"] = "Finishing this quest will grant you immediate access to Imonar the Soulhunter on Mythic difficulty each week.\n",
-							["provider"] = { "n", 125512 },	-- High Exarch Turalyon
-						}),
-						q(49135, {	-- Antorus, the Burning Throne: The Heart of Argus (Mythic)
-							["sourceQuests"] = { 49076 },	-- Antorus, the Burning Throne: Dark Passage (Mythic)
-							["description"] = "Finishing this quest will grant you immediate access to Aggramar on Mythic difficulty each week.\n",
-							["provider"] = { "n", 125682 },	-- Prophet Velen
-						}),
-						i(153503, {	-- Cache of Antoran Treasures (Mythic)
-							["sym"] = {
-								{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
-								{"pop"},	-- Discard the Instance Header and acquire the children.
-								{"where", "difficultyID", 16 },	-- Select the Mythic difficulty.
-								{"pop"},	-- Discard the Difficulty Header and acquire the children.
-								{"is","encounterID"},	-- Select only Encounter Headers
-								{"pop"},	-- Discard the Encounter Headers and acquire the children.
-								{"isnt", "c"},	-- Exclude Tier Set Pieces
-								{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
-								{"exclude", "itemID",
-									152094, 153115, 155880,	-- Exclude Taeshalach, Scythe of the Unmaker (Both)
-									154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
-									155831,	-- Pantheon's Blessing
-								},
-							},
-						}),
-						i(152316, {	-- Azeroth Invasion Plans (Mythic)
-							["questID"] = 48303,	-- Antoran High Command (Mythic)
-							["repeatable"] = true,
-							["g"] = {
-								i(153503),	-- Cache of Antoran Treasures (Mythic)
-							},
-						}),
-						i(152320, {	-- Discharged Shock Lance (Mythic)
-							["questID"] = 48304,	-- The Soulhunter (Mythic)
-							["repeatable"] = true,
-							["g"] = {
-								i(153503),	-- Cache of Antoran Treasures (Mythic)
-							},
-						}),
-						i(152328, {	-- Sanguine Argunite (Mythic)
-							["questID"] = 48306,	-- The Unmaker (Mythic)
-							["repeatable"] = true,
-							["g"] = {
-								i(153503),	-- Cache of Antoran Treasures (Mythic)
-							},
-						}),
-						i(152324, {	-- Sargerei Manifesto (Mythic)
-							["questID"] = 48305,	-- The Burning Coven (Mythic)
-							["repeatable"] = true,
-							["g"] = {
-								i(153503),	-- Cache of Antoran Treasures (Mythic)
-							},
-						}),
-					},
+					q(49076, {	-- Antorus, the Burning Throne: Dark Passage (Mythic)
+						["description"] = "Finishing this quest will grant you immediate access to Imonar the Soulhunter on Mythic difficulty each week.\n",
+						["provider"] = { "n", 125512 },	-- High Exarch Turalyon
+					}),
+					q(49135, {	-- Antorus, the Burning Throne: The Heart of Argus (Mythic)
+						["sourceQuests"] = { 49076 },	-- Antorus, the Burning Throne: Dark Passage (Mythic)
+						["description"] = "Finishing this quest will grant you immediate access to Aggramar on Mythic difficulty each week.\n",
+						["provider"] = { "n", 125682 },	-- Prophet Velen
+					}),
 				}),
 				n(ZONE_DROPS, {
 					i(152084),	-- Gloves of Abhorrent Strategies

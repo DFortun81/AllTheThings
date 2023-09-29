@@ -242,6 +242,207 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 						["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_7_3_5 },
 					}),
 				}),
+				n(-299, {	-- Missions
+					mission(1505, {	-- A Good Dust Up
+						q(45172, {	-- To Battle!
+							-- This is not removed from game; confirmed again in 9.0.5. You get it on the mission table one time per character after gearing up your followers a bit (its an 850 mission).
+							["provider"] = { "i", 143328 },	-- Battle Report
+							["g"] = {
+									i(143606, {	-- Satchel of Battlefield Spoils
+									i(140413),	-- Grisly Souvenir
+									i(140414),	-- Fel-Loaded Dice
+									i(140417),	-- Battle-Tempered Hilt
+									i(140418),	-- "Borrowed" Soul Essence
+									i(140419),	-- Blindside Approach
+									i(140423),	-- Exhaustive Research
+								}),
+							},
+						}),
+					}),
+					mission(1704, {	-- Antorus, the Burning Throne (Antoran High Command)
+						["groups"] = {
+							i(152313),	-- Azeroth Invasion Plans [Raid Finder]
+							i(152314),	-- Azeroth Invasion Plans (Normal)
+							i(152315),	-- Azeroth Invasion Plans (Heroic)
+							i(152316),	-- Azeroth Invasion Plans (Mythic)
+						},
+					}),
+					mission(1708, {	-- Antorus, the Burning Throne (Imonar)
+						["groups"] = {
+							i(152317),	-- Discharged Shock Lance [Raid Finder]
+							i(152318),	-- Discharged Shock Lance (Normal)
+							i(152319),	-- Discharged Shock Lance (Heroic)
+							i(152320),	-- Discharged Shock Lance (Mythic)
+						},
+					}),
+					mission(1709, {	-- Antorus, the Burning Throne (Coven)
+						["groups"] = {
+							i(152321),	-- Sargerei Manifesto [Raid Finder]
+							i(152322),	-- Sargerei Manifesto (Normal)
+							i(152323),	-- Sargerei Manifesto (Heroic)
+							i(152324),	-- Sargerei Manifesto (Mythic)
+						},
+					}),
+					mission(1710, {	-- Antorus, the Burning Throne (Argus)
+						["groups"] = {
+							i(152325),	-- Sanguine Argunite [Raid Finder]
+							i(152326),	-- Sanguine Argunite (Normal)
+							i(152327),	-- Sanguine Argunite (Heroic)
+							i(152328),	-- Sanguine Argunite (Mythic)
+						},
+					}),
+					mission(1785, {	-- Assault on Felfire Armory
+						q(48601, {	-- Felfire Shattering
+							["g"] = {
+								i(153130),	-- Man'ari Training Amulet
+							},
+						}),
+					}),
+					mission(1503, {	-- Council of War
+						q(45162, {	-- We Brought the Hammer
+							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
+							["provider"] = { "i", 142553 },	-- Tuft of Dwarvish Beard
+						}),
+					}),
+					mission(1387, {	-- Friends, Not Food
+						i(140316),	-- Firebat Pup (PET!)
+					}),
+					mission(1381, {	-- Glittering Treasure
+						i(129165),	-- Barnacle-Encrusted Gem (TOY!)
+					}),
+					mission(1513, {	-- I've Got A Strange Feeling About This
+						q(45312, {	-- You Beat the Ball of Meat
+							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
+							["provider"] = { "i", 143590 },	-- Hunk of Meatball
+							["g"] = {
+								follower(986),	-- Meatball
+							},
+						}),
+					}),
+					mission(1504, {	-- It's Clean Up Time
+						q(45163, {	-- Clearing Up
+							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
+							["provider"] = { "i", 142554 },	-- Broken Handle
+						}),
+					}),
+					mission(1386, {	-- It's so FLUFFY!
+						i(140320),	-- Corgnelius (PET!)
+					}),
+					mission(1512, {	-- Master of Shadows
+						q(45304, {	-- Attacking the Darkness
+							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
+							["provider"] = { "i", 143561 },	-- Exhausted Shadow Candle
+						}),
+					}),
+					mission(1506, {	-- Once More Into the Fray
+						q(45173, {	-- Desperate Times
+							["provider"] = { "i", 143329 },	-- Dire Summons
+							["g"] = {
+								un(REMOVED_FROM_GAME, i(143607)),	-- Solider's Footlocker
+							},
+							["u"] = REMOVED_FROM_GAME,
+						}),
+					}),
+					mission(931, {	-- Scouting Reports
+						i(140465),	-- Duskpelt Hide
+					}),
+					mission(1507, {	-- The Greatest Stage of All
+						q(45179, {	-- Win the Crowed
+							["provider"] = { "i", 143478 },	-- Arena Invitation
+							["g"] = {
+								un(REMOVED_FROM_GAME, i(143607, {	-- Solider's Footlocker
+									un(REMOVED_FROM_GAME, i(140415)),	--	Blaze of Glory
+									i(140423),	-- Exhaustive Research
+								})),
+							},
+							["u"] = REMOVED_FROM_GAME,
+						}),
+					}),
+					mission(1511, {	-- The Perils of Ashran
+						q(45180, {	-- An Island of War
+							["provider"] = { "i", 143479 },	-- Frayed Banner
+							["g"] = {
+								un(REMOVED_FROM_GAME, i(143607)),	-- Solider's Footlocker
+							},
+							["u"] = REMOVED_FROM_GAME,
+						}),
+					}),
+					mission(1502, {	-- There is no Brawlers Guild
+						q(45111, {	-- Everyone Loves a Good Fight
+							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
+							["provider"] = { "i", 142522 },	-- Rude Letter
+						}),
+					}),
+					mission(1382, {	-- Win the Crowd
+						i(130169),	-- Tournament Favor (TOY!)
+					}),
+					-- Rep Insignias
+					i(152960),	-- Argussian Reach Insignia
+					i(152959),	-- Argussian Reach Insignia
+					i(152957),	-- Army of the Light Insignia
+					i(141340),	-- Court of Farondis Insignia
+					i(146943),	-- Court of Farondis Insignia
+					i(141339),	-- Dreamweaver Insignia
+					i(146942),	-- Dreamweaver Insignia
+					i(152954),	-- Greater Argussian Reach Insignia
+					i(152955),	-- Greater Army of the Light Insignia
+					i(150927),	-- Greater Court of Farondis Insignia
+					i(150926),	-- Greater Dreamweaver Insignia
+					i(150928),	-- Greater Highmountain Tribe Insignia
+					i(152464),	-- Greater Legionfall Insignia
+					i(150930),	-- Greater Nightfallen Insignia
+					i(150925),	-- Greater Valarjar Insignia
+					i(150929),	-- Greater Wardens Insignia
+					i(141341),	-- Highmountain Tribe Insignia
+					i(146944),	-- Highmountain Tribe Insignia
+					i(146950),	-- Legionfall Insignia [BOA]
+					i(146949),	-- Legionfall Insignia [BOP]
+					i(141343),	-- Nightfallen Insignia
+					i(146946),	-- Nightfallen Insignia
+					i(141338),	-- Valarjar Insignia
+					i(146941),	-- Valarjar Insignia
+					i(141342),	-- Wardens Insignia
+					i(146945),	-- Wardens Insignia
+					-- Misc
+					un(REMOVED_FROM_GAME, i(143478)),	-- Arena Invitation
+					i(143328),	-- Battle Report
+					un(REMOVED_FROM_GAME, i(143329)),	-- Dire Summons
+					i(140362),	-- Dust from the Shadowlands
+					un(REMOVED_FROM_GAME, i(143479)),	-- Frayed Banner
+					un(REMOVED_FROM_GAME, i(142522)),	-- Rude Letter (removed until Brawler's Guild comes back someday)
+					i(116415),	-- Shiny Pet Charm
+					-- Dungeons
+					un(REMOVED_FROM_GAME, i(139471)),	-- Black Rook Missive -> Black Rook Hold: The Lord of Black Rook Hold -> Black Rook Hold
+					un(REMOVED_FROM_GAME, i(139476)),	-- Broken Dragon Scale -> Neltharion's Lair: Into Neltharion's Lair -> Neltharion's Lair
+					un(REMOVED_FROM_GAME, i(139479)),	-- Broken Portal Shard -> Assault on Violet Hold: Into the Violet Hold -> Violet Hold
+					un(REMOVED_FROM_GAME, i(139478)),	-- Broken Warden Helm -> Vault of the Wardens: Into the Vault of the Wardens -> Vault of the Wardens
+					un(REMOVED_FROM_GAME, i(139474)),	-- Carved Shell -> Eye of Azshara: Into the Eye of Azshara -> Eye of Azshara
+					un(REMOVED_FROM_GAME, i(139477)),	-- Drained Mana Orb -> The Arcway: Into the Arcway -> The Arcway
+					un(REMOVED_FROM_GAME, i(139472)),	-- Glamorous Party Invitation -> Court of Stars: Into the Court of Stars -> Court of Stars
+					un(REMOVED_FROM_GAME, i(142340)),	-- Head of Thar'zul -> Return to Karazhan: The Tower of Power -> Karazhan
+					un(REMOVED_FROM_GAME, i(139457)),	-- Odyn's Challenge -> Halls of Valor: Odyn's Challenge -> Halls of Valor
+					un(REMOVED_FROM_GAME, i(139473)),	-- Vial of Poisoned Blood -> Darkheart Thicket: Into Darkheart Thicket -> Darkheart Thicket
+					un(REMOVED_FROM_GAME, i(139475)),	-- Waterlogged Letter -> Maw of Souls: Into the Maw of Souls -> Maw of Souls
+					-- Follower Equipments
+					i(139873),	-- Bottled Sanity
+					i(139808),	-- Cuiro of Abundant Happiness
+					i(139809),	-- Elixir of Plenty
+					i(152444),	-- Exalted Xenedar Hammer
+					i(139792),	-- Fruitful Bauble
+					i(139419),	-- Golden Banana
+					i(152447),	-- Lightburst Charge
+					i(152929),	-- Pronged Ridgestalker Spear
+					i(152441),	-- Satchel of Lucidity
+					i(139670),	-- Scream of the Dead
+					i(152933),	-- Shadowguard Void Effusion
+					i(143850),	-- Summon Grimtotem Warrior (maybe put in Shaman class hall only)
+					i(152935),	-- Wakener's Bauble
+					i(147559),	-- Ward of Infinite Fury
+					i(139816),	-- Well-Worn Stone
+					i(152446),	-- Writ of Holy Orders
+					i(151844),	-- Xenedar Armor Set
+					i(152931),	-- Xenic Tincture
+				}),
 				n(QUESTS, {
 					q(44057, {	-- A "Noble" Event
 						["provider"] = { "i", 140495 },	-- Torn Invitation
@@ -399,174 +600,194 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							follower(986),	-- Meatball
 						},
 					}),--]] -- Linked with the Mission
-				}),
-				mission(1505, {	-- A Good Dust Up
-					q(45172, {	-- To Battle!
-						-- This is not removed from game; confirmed again in 9.0.5. You get it on the mission table one time per character after gearing up your followers a bit (its an 850 mission).
-						["provider"] = { "i", 143328 },	-- Battle Report
+					
+					-- Raid Missions
+					-- Antoran LFR
+					i(153502, {	-- Cache of Antoran Treasures [Looking For Raid]
+						["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficult. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+						["sym"] = {
+							{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
+							{"pop"},	-- Discard the Instance Header and acquire the children.
+							{"where", "difficultyID", 17 },	-- Select the Looking For Raid difficulty.
+							{"pop"},	-- Discard the Difficulty Header and acquire the children.
+							{"pop"},	-- Discard the Achievement Headers and acquire the children.
+							{"is","encounterID"},	-- Select only Encounter Headers
+							{"pop"},	-- Discard the Encounter Headers and acquire the children.
+							{"isnt", "c"},	-- Exclude Tier Set Pieces
+							{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
+							{"exclude", "itemID", 152094, 153115 },	-- Exclude Taeshalach and Scythe of the Unmaker
+						},
+					}),
+					q(48288, {	-- Antoran High Command [Raid Finder]
+						["repeatable"] = true,
+						["provider"] = { "i", 152313 },	-- Azeroth Invasion Plans [Raid Finder]
 						["g"] = {
-								i(143606, {	-- Satchel of Battlefield Spoils
-								i(140413),	-- Grisly Souvenir
-								i(140414),	-- Fel-Loaded Dice
-								i(140417),	-- Battle-Tempered Hilt
-								i(140418),	-- "Borrowed" Soul Essence
-								i(140419),	-- Blindside Approach
-								i(140423),	-- Exhaustive Research
-							}),
+							i(153502),	-- Cache of Antoran Treasures [Raid Finder]
+						},
+					}),
+					q(48292, {	-- The Soulhunter [Raid Finder]
+						["repeatable"] = true,
+						["provider"] = { "i", 152317 },	-- Discharged Shock Lance [Raid Finder]
+						["g"] = {
+							i(153502),	-- Cache of Antoran Treasures [Raid Finder]
+						},
+					}),
+					q(48293, {	-- The Burning Coven [Raid Finder]
+						["repeatable"] = true,
+						["provider"] = { "i", 152321 },	-- Sargerei Manifesto [Raid Finder]
+						["g"] = {
+							i(153502),	-- Cache of Antoran Treasures [Raid Finder]
+						},
+					}),
+					q(48294, {	-- The Unmaker [Raid Finder]
+						["repeatable"] = true,
+						["provider"] = { "i", 152325 },	-- Sanguine Argunite [Raid Finder]
+						["g"] = {
+							i(153502),	-- Cache of Antoran Treasures [Raid Finder]
+						},
+					}),
+					-- Antoran Normal
+					i(153504, {	-- Cache of Antoran Treasures (Normal)
+						["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficult. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+						["sym"] = {
+							{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
+							{"pop"},	-- Discard the Instance Header and acquire the children.
+							{"where", "difficultyID", 14 },	-- Select the Normal difficulty.
+							{"pop"},	-- Discard the Difficulty Header and acquire the children.
+							{"is","encounterID"},	-- Select only Encounter Headers
+							{"pop"},	-- Discard the Encounter Headers and acquire the children.
+							{"isnt", "c"},	-- Exclude Tier Set Pieces
+							{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
+							{"exclude", "itemID",
+								152094, 153115,	-- Exclude Taeshalach, Scythe of the Unmaker
+								154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
+								155831,	-- Pantheon's Blessing
+							},
+						},
+					}),
+					q(48295, {	-- Azeroth Invasion Plans (Normal)
+						["repeatable"] = true,
+						["provider"] = { "i", 152314 },	-- Azeroth Invasion Plans [Normal]
+						["g"] = {
+							i(153504),	-- Cache of Antoran Treasures (Normal)
+						},
+					}),
+					q(48296, {	-- Discharged Shock Lance (Normal)
+						["repeatable"] = true,
+						["provider"] = { "i", 152318 },	-- Discharged Shock Lance [Raid Finder]
+						["g"] = {
+							i(153504),	-- Cache of Antoran Treasures (Normal)
+						},
+					}),
+					q(48297, {	-- The Burning Coven (Normal)
+						["repeatable"] = true,
+						["provider"] = { "i", 152322 },	-- Sargerei Manifesto [Raid Finder]
+						["g"] = {
+							i(153504),	-- Cache of Antoran Treasures (Normal)
+						},
+					}),
+					q(48298, {	-- The Unmaker (Normal)
+						["provider"] = { "i", 152326 },	-- Sanguine Argunite [Normal]
+						["repeatable"] = true,
+						["g"] = {
+							i(153504),	-- Cache of Antoran Treasures (Normal)
+						},
+					}),
+					-- Antoran Heroic
+					i(153501, {	-- Cache of Antoran Treasures (Heroic)
+						["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficult. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+						["sym"] = {
+							{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
+							{"pop"},	-- Discard the Instance Header and acquire the children.
+							{"where", "difficultyID", 15 },	-- Select the Heroic difficulty.
+							{"pop"},	-- Discard the Difficulty Header and acquire the children.
+							{"is","encounterID"},	-- Select only Encounter Headers
+							{"pop"},	-- Discard the Encounter Headers and acquire the children.
+							{"isnt", "c"},	-- Exclude Tier Set Pieces
+							{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
+							{"exclude", "itemID",
+								152094, 153115,	-- Exclude Taeshalach, Scythe of the Unmaker
+								154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
+								155831,	-- Pantheon's Blessing
+							},
+						},
+					}),
+					q(48299, {	-- Azeroth Invasion Plans (Heroic)
+						["repeatable"] = true,
+						["provider"] = { "i", 152315 },	-- Azeroth Invasion Plans [Heroic]
+						["g"] = {
+							i(153501),	-- Cache of Antoran Treasures (Heroic)
+						},
+					}),
+					q(48300, {	-- Discharged Shock Lance (Heroic)
+						["repeatable"] = true,
+						["provider"] = { "i", 152319 },	-- Discharged Shock Lance [Raid Finder]
+						["g"] = {
+							i(153501),	-- Cache of Antoran Treasures (Heroic)
+						},
+					}),
+					q(48301, {	-- The Burning Coven (Heroic)
+						["repeatable"] = true,
+						["provider"] = { "i", 152323 },	-- Sargerei Manifesto [Raid Finder]
+						["g"] = {
+							i(153501),	-- Cache of Antoran Treasures (Heroic)
+						},
+					}),
+					q(48302, {	-- The Unmaker (Heroic)
+						["provider"] = { "i", 152327 },	-- Sanguine Argunite [Heroic]
+						["repeatable"] = true,
+						["g"] = {
+							i(153501),	-- Cache of Antoran Treasures (Heroic)
+						},
+					}),
+					-- Antoran Mythic
+					i(153503, {	-- Cache of Antoran Treasures (Mythic)
+						["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficult. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
+						["sym"] = {
+							{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
+							{"pop"},	-- Discard the Instance Header and acquire the children.
+							{"where", "difficultyID", 16 },	-- Select the Mythic difficulty.
+							{"pop"},	-- Discard the Difficulty Header and acquire the children.
+							{"is","encounterID"},	-- Select only Encounter Headers
+							{"pop"},	-- Discard the Encounter Headers and acquire the children.
+							{"isnt", "c"},	-- Exclude Tier Set Pieces
+							{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
+							{"exclude", "itemID",
+								152094, 153115, 155880,	-- Exclude Taeshalach, Scythe of the Unmaker (Both)
+								154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
+								155831,	-- Pantheon's Blessing
+							},
+						},
+					}),
+					q(48303, {	-- Azeroth Invasion Plans (Mythic)
+						["repeatable"] = true,
+						["provider"] = { "i", 152316 },	-- Azeroth Invasion Plans [Mythic]
+						["g"] = {
+							i(153503),	-- Cache of Antoran Treasures (Mythic)
+						},
+					}),
+					q(48304, {	-- Discharged Shock Lance (Mythic)
+						["repeatable"] = true,
+						["provider"] = { "i", 152320 },	-- Discharged Shock Lance [Raid Finder]
+						["g"] = {
+							i(153503),	-- Cache of Antoran Treasures (Mythic)
+						},
+					}),
+					q(48305, {	-- The Burning Coven (Mythic)
+						["repeatable"] = true,
+						["provider"] = { "i", 152324 },	-- Sargerei Manifesto [Raid Finder]
+						["g"] = {
+							i(153503),	-- Cache of Antoran Treasures (Mythic)
+						},
+					}),
+					q(48306, {	-- The Unmaker (Mythic)
+						["provider"] = { "i", 152328 },	-- Sanguine Argunite [Mythic]
+						["repeatable"] = true,
+						["g"] = {
+							i(153503),	-- Cache of Antoran Treasures (Mythic)
 						},
 					}),
 				}),
-				mission(1785, {	-- Assault on Felfire Armory
-					q(48601, {	-- Felfire Shattering
-						["g"] = {
-							i(153130),	-- Man'ari Training Amulet
-						},
-					}),
-				}),
-				mission(1503, {	-- Council of War
-					q(45162, {	-- We Brought the Hammer
-						["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
-						["provider"] = { "i", 142553 },	-- Tuft of Dwarvish Beard
-					}),
-				}),
-				mission(1387, {	-- Friends, Not Food
-					i(140316),	-- Firebat Pup (PET!)
-				}),
-				mission(1381, {	-- Glittering Treasure
-					i(129165),	-- Barnacle-Encrusted Gem (TOY!)
-				}),
-				mission(1513, {	-- I've Got A Strange Feeling About This
-					q(45312, {	-- You Beat the Ball of Meat
-						["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
-						["provider"] = { "i", 143590 },	-- Hunk of Meatball
-						["g"] = {
-							follower(986),	-- Meatball
-						},
-					}),
-				}),
-				mission(1504, {	-- It's Clean Up Time
-					q(45163, {	-- Clearing Up
-						["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
-						["provider"] = { "i", 142554 },	-- Broken Handle
-					}),
-				}),
-				mission(1386, {	-- It's so FLUFFY!
-					i(140320),	-- Corgnelius (PET!)
-				}),
-				mission(1512, {	-- Master of Shadows
-					q(45304, {	-- Attacking the Darkness
-						["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
-						["provider"] = { "i", 143561 },	-- Exhausted Shadow Candle
-					}),
-				}),
-				mission(1506, {	-- Once More Into the Fray
-					q(45173, {	-- Desperate Times
-						["provider"] = { "i", 143329 },	-- Dire Summons
-						["g"] = {
-							un(REMOVED_FROM_GAME, i(143607)),	-- Solider's Footlocker
-						},
-						["u"] = REMOVED_FROM_GAME,
-					}),
-				}),
-				mission(931, {	-- Scouting Reports
-					i(140465),	-- Duskpelt Hide
-				}),
-				mission(1507, {	-- The Greatest Stage of All
-					q(45179, {	-- Win the Crowed
-						["provider"] = { "i", 143478 },	-- Arena Invitation
-						["g"] = {
-							un(REMOVED_FROM_GAME, i(143607, {	-- Solider's Footlocker
-								un(REMOVED_FROM_GAME, i(140415)),	--	Blaze of Glory
-								i(140423),	-- Exhaustive Research
-							})),
-						},
-						["u"] = REMOVED_FROM_GAME,
-					}),
-				}),
-				mission(1511, {	-- The Perils of Ashran
-					q(45180, {	-- An Island of War
-						["provider"] = { "i", 143479 },	-- Frayed Banner
-						["g"] = {
-							un(REMOVED_FROM_GAME, i(143607)),	-- Solider's Footlocker
-						},
-						["u"] = REMOVED_FROM_GAME,
-					}),
-				}),
-				mission(1502, {	-- There is no Brawlers Guild
-					q(45111, {	-- Everyone Loves a Good Fight
-						["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
-						["provider"] = { "i", 142522 },	-- Rude Letter
-					}),
-				}),
-				mission(1382, {	-- Win the Crowd
-					i(130169),	-- Tournament Favor (TOY!)
-				}),
-				-- Rep Insignias
-				i(152960),	-- Argussian Reach Insignia
-				i(152959),	-- Argussian Reach Insignia
-				i(152957),	-- Army of the Light Insignia
-				i(141340),	-- Court of Farondis Insignia
-				i(146943),	-- Court of Farondis Insignia
-				i(141339),	-- Dreamweaver Insignia
-				i(146942),	-- Dreamweaver Insignia
-				i(152954),	-- Greater Argussian Reach Insignia
-				i(152955),	-- Greater Army of the Light Insignia
-				i(150927),	-- Greater Court of Farondis Insignia
-				i(150926),	-- Greater Dreamweaver Insignia
-				i(150928),	-- Greater Highmountain Tribe Insignia
-				i(152464),	-- Greater Legionfall Insignia
-				i(150930),	-- Greater Nightfallen Insignia
-				i(150925),	-- Greater Valarjar Insignia
-				i(150929),	-- Greater Wardens Insignia
-				i(141341),	-- Highmountain Tribe Insignia
-				i(146944),	-- Highmountain Tribe Insignia
-				i(146950),	-- Legionfall Insignia [BOA]
-				i(146949),	-- Legionfall Insignia [BOP]
-				i(141343),	-- Nightfallen Insignia
-				i(146946),	-- Nightfallen Insignia
-				i(141338),	-- Valarjar Insignia
-				i(146941),	-- Valarjar Insignia
-				i(141342),	-- Wardens Insignia
-				i(146945),	-- Wardens Insignia
-				-- Misc
-				un(REMOVED_FROM_GAME, i(143478)),	-- Arena Invitation
-				i(143328),	-- Battle Report
-				un(REMOVED_FROM_GAME, i(143329)),	-- Dire Summons
-				i(140362),	-- Dust from the Shadowlands
-				un(REMOVED_FROM_GAME, i(143479)),	-- Frayed Banner
-				un(REMOVED_FROM_GAME, i(142522)),	-- Rude Letter (removed until Brawler's Guild comes back someday)
-				i(116415),	-- Shiny Pet Charm
-				-- Dungeons
-				un(REMOVED_FROM_GAME, i(139471)),	-- Black Rook Missive -> Black Rook Hold: The Lord of Black Rook Hold -> Black Rook Hold
-				un(REMOVED_FROM_GAME, i(139476)),	-- Broken Dragon Scale -> Neltharion's Lair: Into Neltharion's Lair -> Neltharion's Lair
-				un(REMOVED_FROM_GAME, i(139479)),	-- Broken Portal Shard -> Assault on Violet Hold: Into the Violet Hold -> Violet Hold
-				un(REMOVED_FROM_GAME, i(139478)),	-- Broken Warden Helm -> Vault of the Wardens: Into the Vault of the Wardens -> Vault of the Wardens
-				un(REMOVED_FROM_GAME, i(139474)),	-- Carved Shell -> Eye of Azshara: Into the Eye of Azshara -> Eye of Azshara
-				un(REMOVED_FROM_GAME, i(139477)),	-- Drained Mana Orb -> The Arcway: Into the Arcway -> The Arcway
-				un(REMOVED_FROM_GAME, i(139472)),	-- Glamorous Party Invitation -> Court of Stars: Into the Court of Stars -> Court of Stars
-				un(REMOVED_FROM_GAME, i(142340)),	-- Head of Thar'zul -> Return to Karazhan: The Tower of Power -> Karazhan
-				un(REMOVED_FROM_GAME, i(139457)),	-- Odyn's Challenge -> Halls of Valor: Odyn's Challenge -> Halls of Valor
-				un(REMOVED_FROM_GAME, i(139473)),	-- Vial of Poisoned Blood -> Darkheart Thicket: Into Darkheart Thicket -> Darkheart Thicket
-				un(REMOVED_FROM_GAME, i(139475)),	-- Waterlogged Letter -> Maw of Souls: Into the Maw of Souls -> Maw of Souls
-				-- Follower Equipments
-				i(139873),	-- Bottled Sanity
-				i(139808),	-- Cuiro of Abundant Happiness
-				i(139809),	-- Elixir of Plenty
-				i(152444),	-- Exalted Xenedar Hammer
-				i(139792),	-- Fruitful Bauble
-				i(139419),	-- Golden Banana
-				i(152447),	-- Lightburst Charge
-				i(152929),	-- Pronged Ridgestalker Spear
-				i(152441),	-- Satchel of Lucidity
-				i(139670),	-- Scream of the Dead
-				i(152933),	-- Shadowguard Void Effusion
-				i(143850),	-- Summon Grimtotem Warrior (maybe put in Shaman class hall only)
-				i(152935),	-- Wakener's Bauble
-				i(147559),	-- Ward of Infinite Fury
-				i(139816),	-- Well-Worn Stone
-				i(152446),	-- Writ of Holy Orders
-				i(151844),	-- Xenedar Armor Set
-				i(152931),	-- Xenic Tincture
 			},
 		}),
 		n(VENDORS, {
