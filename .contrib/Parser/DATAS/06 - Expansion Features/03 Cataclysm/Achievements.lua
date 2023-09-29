@@ -33,85 +33,85 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 		}),
 		ach(4827, {	-- Surveying the Damage
 			-- TODO coord here instead of individual zone files
-			crit(1, {	-- The Battlescar in Southern Barrens
+			crit(14068, {	-- The Battlescar in Southern Barrens
 				-- ["coord"] = { X, Y, MAP },
 			}),
-			crit(2, {	-- The Sundering in Stranglethorn
+			crit(14060, {	-- The Sundering in Stranglethorn
 				-- ["coord"] = { X, Y, MAP },
 			}),
-			crit(3, {	-- The Scar of the Worldbreaker in Badlands
+			crit(1020, {	-- The Scar of the Worldbreaker in Badlands
 				-- ["coord"] = { X, Y, MAP },
 			}),
-			crit(4, {	-- The Ruins of Auberdine in Darkshore
+			crit(1314, {	-- The Ruins of Auberdine in Darkshore
 				-- ["coord"] = { X, Y, MAP },
 			}),
-			crit(5, {	-- The Valley of the Watchers in Tanaris
+			crit(1407, {	-- The Valley of the Watchers in Tanaris
 				-- ["coord"] = { X, Y, MAP },
 			}),
-			crit(6, {	-- Thunder Peak in Ashenvale
+			crit(14096, {	-- Thunder Peak in Ashenvale
 				-- ["coord"] = { X, Y, MAP },
 			}),
-			crit(7, {	-- Southfury Watershed in Durotar
+			crit(14087, {	-- Southfury Watershed in Durotar
 				-- ["coord"] = { X, Y, MAP },
 			}),
-			crit(8, {	-- Cenarion Wildlands in Desolace
+			crit(1373, {	-- Cenarion Wildlands in Desolace
 				-- ["coord"] = { X, Y, MAP },
 			}),
-			crit(9, {	-- The Shimmering Deep in Thousand Needles
+			crit(1347, {	-- The Shimmering Deep in Thousand Needles
 				-- ["coord"] = { X, Y, MAP },
 			}),
-			crit(10, { -- The Greymane Wall in Silverpine
+			crit(14046, { -- The Greymane Wall in Silverpine
 				-- ["coord"] = { X, Y, MAP },
 			}),
-			crit(11, { -- The Raging Chasm in Westfall
+			crit(14156, { -- The Raging Chasm in Westfall
 				-- ["coord"] = { X, Y, MAP },
 			}),
-			crit(12, { -- The Stonewrought Dam in Loch Modan
+			crit(1174, { -- The Stonewrought Dam in Loch Modan
 				-- ["coord"] = { X, Y, MAP },
 			}),
-			crit(13, { -- Ruins of Southshore in Hillsbrad Foothills
+			crit(15114, { -- Ruins of Southshore in Hillsbrad Foothills
 				-- ["coord"] = { X, Y, MAP },
 			}),
 		}),
 		ach(5548, {	-- To All the Squirrels Who Cared for Me
 			-- TODO map/coord here instead of individual zone files
-			crit(1,  {	-- Alpine Chipmunk (Winterspring, Mount Hyjal, Stonetalon Mountains)
+			crit(16214,  {	-- Alpine Chipmunk (Winterspring, Mount Hyjal, Stonetalon Mountains)
 				["crs"] = { 49779 },	-- Alpine Chipmunk
 			}),
-			crit(2,  {	-- Baradin Fox Kit (Tol Barad)
+			crit(16215,  {	-- Baradin Fox Kit (Tol Barad)
 				["crs"] = { 48630 },	-- Baradin Fox Kit
 			}),
-			crit(3,  {	-- Grotto Vole (Mount Hyjal)
+			crit(16216,  {	-- Grotto Vole (Mount Hyjal)
 				["crs"] = { 50419 },	-- Grotto Vole
 			}),
-			crit(4,  {	-- Highlands Turkey (Twilight Highlands)
+			crit(16217,  {	-- Highlands Turkey (Twilight Highlands)
 				["crs"] = { 48706 },	-- Highlands Turkey
 			}),
-			crit(5,  {	-- Mac Frog (Uldum)
+			crit(16219,  {	-- Mac Frog (Uldum)
 				["crs"] = { 50491 },	-- Mac Frog
 			}),
-			crit(6,  {	-- Oasis Moth (Uldum, Lost City of the Tol'vir)
+			crit(16218,  {	-- Oasis Moth (Uldum, Lost City of the Tol'vir)
 				["crs"] = { 50496 },	-- Oasis Moth
 			}),
-			crit(7,  {	-- Rattlesnake (Twilight Highlands, Tanaris)
+			crit(16220,  {	-- Rattlesnake (Twilight Highlands, Tanaris)
 				["crs"] = { 48686 },	-- Rattlesnake
 			}),
-			crit(8,  {	-- Rock Viper (Mount Hyjal, Desolace, Silithus)
+			crit(16221,  {	-- Rock Viper (Mount Hyjal, Desolace, Silithus)
 				["crs"] = { 50481 },	-- Rock Viper
 			}),
-			crit(9,  {	-- Rockchewer Whelk (Shimmering Expanse)
+			crit(16222,  {	-- Rockchewer Whelk (Shimmering Expanse)
 				["crs"] = { 48848 },	-- Rockchewer Whelk
 			}),
-			crit(10, {	-- Sassy Cat (Tol Barad)
+			crit(16223, {	-- Sassy Cat (Tol Barad)
 				["crs"] = { 47682 },	-- Sassy Cat
 			}),
-			crit(11, {	-- Sea Cucumber (Shimmering Expanse, Abyssal Depths)
+			crit(16224, {	-- Sea Cucumber (Shimmering Expanse, Abyssal Depths)
 				["crs"] = { 48802 },	-- Sea Cucumber
 			}),
-			crit(12, {	-- Wharf Rat (Tol Barad Peninsula, The Cape of Stranglethorn
+			crit(16225, {	-- Wharf Rat (Tol Barad Peninsula, The Cape of Stranglethorn
 				["crs"] = { 47667 },	-- Wharf Rat
 			}),
-			crit(13, {	-- Yellow-Bellied Marmot (Twilight Highlands)
+			crit(16226, {	-- Yellow-Bellied Marmot (Twilight Highlands)
 				["crs"] = { 48683 },	-- Yellow-Bellied Marmot
 			}),
 		}),

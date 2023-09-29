@@ -17,7 +17,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 						5867,	-- Flawless Victory
 						5864,	-- Gang War
 						5865,	-- Have... Have We Met?
-						5869,	-- Infernal Ambassadors 
+						5869,	-- Infernal Ambassadors
 						5872,	-- King of the Spider-Hill
 						5859,	-- Legacy of Leyara
 						5862,	-- Ludicrous Speed
@@ -51,35 +51,35 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					crit(6),	-- Singeslayer
 				}),
 				ach(5870, {	-- Fireside Chat (Mount Hyjal)
-					crit(6, {	-- Arthorn Windsong
-						["coord"] = { 34.3, 56.4, 338 },
+					crit(17878, {	-- Malfurion Stormrage
+						["coord"] = { 47.0, 91.3, 338 },
 					}),
-					crit(7, {	-- Deldren Ravenelm
-						["coords"] = {
-							{ 55.4, 68.4, 338 },
-							{ 66.6, 63.6, 338 },
-						},
+					crit(17879, {	-- Matoclaw
+						["coord"] = { 27.2, 62.6, MOUNT_HYJAL },
 					}),
-					crit(4, {	-- Dorda'en Nightweaver
-						["coord"] = { 27.5, 62.5, MOUNT_HYJAL },
-					}),
-					crit(8, {	-- General Taldris Moonfall
-						["coord"] = { 45.6, 85.6, 338 },
-					}),
-					crit(3, {	-- Jarod Shadowsong
+					crit(17880, {	-- Jarod Shadowsong
 						["coords"] = {
 							{ 49.7, 85.5, 338 },
 							{ 45.2, 82.9, 338 },
 						},
 					}),
-					crit(1, {	-- Malfurion Stormrage
-						["coord"] = { 47.0, 91.3, 338 },
+					crit(17882, {	-- Dorda'en Nightweaver
+						["coord"] = { 27.5, 62.5, MOUNT_HYJAL },
 					}),
-					crit(2, {	-- Matoclaw
-						["coord"] = { 27.2, 62.6, MOUNT_HYJAL },
-					}),
-					crit(5, {	-- Thisalee Crow
+					crit(17883, {	-- Thisalee Crow
 						["coord"] = { 42.5, 59.7, 338 },
+					}),
+					crit(17884, {	-- Arthorn Windsong
+						["coord"] = { 34.3, 56.4, 338 },
+					}),
+					crit(17886, {	-- Deldren Ravenelm
+						["coords"] = {
+							{ 55.4, 68.4, 338 },
+							{ 66.6, 63.6, 338 },
+						},
+					}),
+					crit(17889, {	-- General Taldris Moonfall
+						["coord"] = { 45.6, 85.6, 338 },
 					}),
 				}),
 				ach(5867, {	-- Flawless Victory
@@ -112,13 +112,13 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 				ach(5872),	-- King of the Spider-Hill  (Mount Hyjal - The Molten Front)
 				ach(5859, {	-- Legacy of Leyara (Mount Hyjal)
 					i(69854),	-- Smoke-Stained Locket (quest item reward)
-					crit(1, {	-- A Ritual of Flame
+					crit(17794, {	-- A Ritual of Flame
 						["_quests"] = { 29195 },	-- A Ritual of Flame
 					}),
-					crit(2, {	-- Leyara
+					crit(17795, {	-- Leyara
 						["_quests"] = { 29200 },	-- Leyara
 					}),
-					crit(3, {	-- Into the Depths
+					crit(17796, {	-- Into the Depths
 						["_quests"] = { 29203 },	-- Into the Depths
 					}),
 				}),
@@ -137,51 +137,50 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					crit(2),	-- Cinderweb Queen slain
 					crit(4),	-- Devout Harbinger slain
 				}),
-				
 				ach(5861, {	-- The Fiery Lords of Sethria's Roost
 					["maps"] = { MOUNT_HYJAL },
 					["groups"] = {
-						crit(3, {	-- Andrazor slain
-							["cr"] = 53267,	-- Andrazor
+						crit(17799, {	-- Searris slain
+							["cr"] = 53264,	-- Searris
 						}),
-						crit(4, {	-- Fah Jarakk slain
-							["cr"] = 53271,	-- Fah Jarakk
-						}),
-						crit(2, {	-- Kelbnar slain
+						crit(17800, {	-- Kelbnar slain
 							["cr"] = 53265,	-- Kelbnar
 						}),
-						crit(1, {	-- Searris slain
-							["cr"] = 53264,	-- Searris
+						crit(17801, {	-- Andrazor slain
+							["cr"] = 53267,	-- Andrazor
+						}),
+						crit(17802, {	-- Fah Jarakk slain
+							["cr"] = 53271,	-- Fah Jarakk
 						}),
 					},
 				}),
 				ach(5866, {	-- The Molten Front Offensive (Mount Hyjal - The Molten Front)
 					i(69213),	-- Flameward Hippogryph (MOUNT!)
-					crit(1, {	-- Stop the assault on the Sanctuary of Malorne
+					crit(17813, {	-- Stop the assault on the Sanctuary of Malorne
 						["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
 					}),
-					crit(2, {	-- Gain access to the Molten Front
+					crit(17814, {	-- Gain access to the Molten Front
 						["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					}),
-					crit(3, {	-- Recruit the Druids of the Talon
+					crit(17815, {	-- Recruit the Druids of the Talon
 						["sourceQuest"] = 29181,	-- Druids of the Talon
 					}),
-					crit(4, {	-- Recruit the Shadow Wardens
+					crit(17816, {	-- Recruit the Shadow Wardens
 						["sourceQuest"] = 29214,	-- The Shadow Wardens
 					}),
-					crit(5, {	-- Recruit Elderlimb and the ancients
+					crit(17817, {	-- Recruit Elderlimb and the ancients
 						["sourceQuest"] = 29283,	-- Calling the Ancients
 					}),
-					crit(6, {	-- Recruit an armorer
+					crit(17818, {	-- Recruit an armorer
 						["sourceQuest"] = 29281,	-- Additional Armaments
 					}),
-					crit(7, {	-- Build a moonwell
+					crit(17819, {	-- Build a moonwell
 						["sourceQuest"] = 29279,	-- Filling the Moonwell
 					}),
-					crit(8, {	-- Find the Crimson Lasher
+					crit(17820, {	-- Find the Crimson Lasher
 						["sourceQuest"] = 29254,	-- Little Lasher
 					}),
-					crit(9, {	-- Save Anren Shadowseeker
+					crit(17821, {	-- Save Anren Shadowseeker
 						["sourceQuest"] = 29272,	-- Need... Water... Badly...
 					}),
 				}),
