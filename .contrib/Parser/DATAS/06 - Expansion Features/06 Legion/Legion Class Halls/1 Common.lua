@@ -603,21 +603,6 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 					
 					-- Raid Missions
 					-- Antoran LFR
-					i(153502, {	-- Cache of Antoran Treasures [Looking For Raid]
-						["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficult. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
-						["sym"] = {
-							{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
-							{"pop"},	-- Discard the Instance Header and acquire the children.
-							{"where", "difficultyID", 17 },	-- Select the Looking For Raid difficulty.
-							{"pop"},	-- Discard the Difficulty Header and acquire the children.
-							{"pop"},	-- Discard the Achievement Headers and acquire the children.
-							{"is","encounterID"},	-- Select only Encounter Headers
-							{"pop"},	-- Discard the Encounter Headers and acquire the children.
-							{"isnt", "c"},	-- Exclude Tier Set Pieces
-							{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
-							{"exclude", "itemID", 152094, 153115 },	-- Exclude Taeshalach and Scythe of the Unmaker
-						},
-					}),
 					q(48288, {	-- Antoran High Command [Raid Finder]
 						["repeatable"] = true,
 						["provider"] = { "i", 152313 },	-- Azeroth Invasion Plans [Raid Finder]
@@ -647,24 +632,6 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 						},
 					}),
 					-- Antoran Normal
-					i(153504, {	-- Cache of Antoran Treasures (Normal)
-						["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficult. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
-						["sym"] = {
-							{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
-							{"pop"},	-- Discard the Instance Header and acquire the children.
-							{"where", "difficultyID", 14 },	-- Select the Normal difficulty.
-							{"pop"},	-- Discard the Difficulty Header and acquire the children.
-							{"is","encounterID"},	-- Select only Encounter Headers
-							{"pop"},	-- Discard the Encounter Headers and acquire the children.
-							{"isnt", "c"},	-- Exclude Tier Set Pieces
-							{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
-							{"exclude", "itemID",
-								152094, 153115,	-- Exclude Taeshalach, Scythe of the Unmaker
-								154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
-								155831,	-- Pantheon's Blessing
-							},
-						},
-					}),
 					q(48295, {	-- Azeroth Invasion Plans (Normal)
 						["repeatable"] = true,
 						["provider"] = { "i", 152314 },	-- Azeroth Invasion Plans [Normal]
@@ -694,24 +661,6 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 						},
 					}),
 					-- Antoran Heroic
-					i(153501, {	-- Cache of Antoran Treasures (Heroic)
-						["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficult. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
-						["sym"] = {
-							{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
-							{"pop"},	-- Discard the Instance Header and acquire the children.
-							{"where", "difficultyID", 15 },	-- Select the Heroic difficulty.
-							{"pop"},	-- Discard the Difficulty Header and acquire the children.
-							{"is","encounterID"},	-- Select only Encounter Headers
-							{"pop"},	-- Discard the Encounter Headers and acquire the children.
-							{"isnt", "c"},	-- Exclude Tier Set Pieces
-							{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
-							{"exclude", "itemID",
-								152094, 153115,	-- Exclude Taeshalach, Scythe of the Unmaker
-								154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
-								155831,	-- Pantheon's Blessing
-							},
-						},
-					}),
 					q(48299, {	-- Azeroth Invasion Plans (Heroic)
 						["repeatable"] = true,
 						["provider"] = { "i", 152315 },	-- Azeroth Invasion Plans [Heroic]
@@ -741,24 +690,6 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 						},
 					}),
 					-- Antoran Mythic
-					i(153503, {	-- Cache of Antoran Treasures (Mythic)
-						["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficult. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
-						["sym"] = {
-							{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
-							{"pop"},	-- Discard the Instance Header and acquire the children.
-							{"where", "difficultyID", 16 },	-- Select the Mythic difficulty.
-							{"pop"},	-- Discard the Difficulty Header and acquire the children.
-							{"is","encounterID"},	-- Select only Encounter Headers
-							{"pop"},	-- Discard the Encounter Headers and acquire the children.
-							{"isnt", "c"},	-- Exclude Tier Set Pieces
-							{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
-							{"exclude", "itemID",
-								152094, 153115, 155880,	-- Exclude Taeshalach, Scythe of the Unmaker (Both)
-								154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
-								155831,	-- Pantheon's Blessing
-							},
-						},
-					}),
 					q(48303, {	-- Azeroth Invasion Plans (Mythic)
 						["repeatable"] = true,
 						["provider"] = { "i", 152316 },	-- Azeroth Invasion Plans [Mythic]
