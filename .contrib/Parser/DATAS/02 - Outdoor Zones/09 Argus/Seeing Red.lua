@@ -73,6 +73,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
 						},
 					}),
 					i(208683, {	-- Arinor Ritual Baton
+						["classes"] = { DEATHKNIGHT, DRUID, DEMONHUNTER, EVOKER, MONK, PALADIN, PRIEST, ROGUE, SHAMAN, WARRIOR },	-- Manual filtering due blizzard returning them as valid for all classes
 						["cost"] = {
 							{ "i", 151565, 50 },	-- 50x Astral Glory
 							{ "i", 151566, 40 },	-- 40x Fiendish Leather
@@ -80,6 +81,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
 						},
 					}),
 					i(208677, {	-- Eredath Crystal Hammer
+						["classes"] = { DEATHKNIGHT, DRUID, DEMONHUNTER, EVOKER, MONK, PALADIN, PRIEST, ROGUE, SHAMAN, WARRIOR },	-- Manual filtering due blizzard returning them as valid for all classes
 						["cost"] = {
 							{ "i", 151567, 75 },	-- 75x Lightweave Cloth
 							{ "i", 151718, 15 },	-- 15x Argulite
