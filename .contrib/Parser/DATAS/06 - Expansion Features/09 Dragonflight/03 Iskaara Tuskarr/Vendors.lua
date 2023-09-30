@@ -5,6 +5,7 @@ local ALIERON_SEAMOTH = 194967;
 local AQUATIC_MAW = 201400;
 local AWAKENED_FROST = 190329;
 local CERULEAN_SPINEFISH = 194968;
+local CHROMATIC_DUST = 194123;
 local LARGE_STURDY_FEMUR = 201402;
 local MASTODON_TUSK = 201403;
 local PRIMAL_BEAR_SPINE = 201399;
@@ -622,7 +623,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 400 },
 								{ "i", RUNED_WRITHEBARK, 5 },
-								{ "i", MASTODON_TUSK, 2 },
+								{ "i", CHROMATIC_DUST, 5 },
 							},
 						}),
 					}, {	-- RENOWN 27 --
