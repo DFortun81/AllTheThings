@@ -10,10 +10,13 @@ local function FirstCraft(questID, recipeID, added)
 	end
 	return t;
 end
-local function FirstSkin(questID, creatureID, added)
+local function FirstSkin(questID, creatureID, added, group)
 	local t = { ["questID"] = questID, ["type"] = HEADERS.NPC..":"..creatureID, };
 	if added then
 		t.timeline = { added };
+	end
+	if group then
+		t.group = { group };
 	end
 	return t;
 end
@@ -3002,10 +3005,14 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstSkin(74164, 195431),	-- Skinning Diluu (Grand Hunt)
 			FirstSkin(74200, 193234),	-- Skinning Eldoren the Reborn
 			FirstSkin(74231, 195518),	-- Skinning Elusive Cliffdweller Vorquin
+			FirstSkin(74234, 204821, ADDED_10_1_0, i(205451, {["questID"] = 75866,})),	-- Skinning Elusive Crystalscale Stonecleaver
+			FirstSkin(74191, 195492),	-- Skinning Elusive Deepwater Salamanther
 			FirstSkin(74185, 194489),	-- Skinning Elusive Elder Drake
 			FirstSkin(74186, 194491),	-- Skinning Elusive Elder Frigidpelt (Elusive Creature Bait)
 			FirstSkin(74189, 195472),	-- Skinning Elusive Ferocious Titanfang (Titan-Infused Creature Bait)
 			FirstSkin(74187, 195541),	-- Skinning Elusive Flourishing Quillbloom
+			FirstSkin(74190, 195509),	-- Skinning Elusive Proto Skyterror
+			FirstSkin(74188, 195465),	-- Skinning Elusive Tempest Lizard
 			FirstSkin(74235, 204831, ADDED_10_1_0),	-- Skinning Elusive Magma Cobra
 			FirstSkin(75873, 203664, ADDED_10_1_0),	-- Skinning Emberdusk
 			FirstSkin(74224, 193134),	-- Skinning Enkine the Voracious

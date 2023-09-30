@@ -1839,9 +1839,6 @@ root(ROOTS.Unsorted, {
 				i(205993),	-- Set Keystone Map: The Vortex Pinnacle
 				i(206037),	-- Ruby Flightstone
 			}),
-			n(PROFESSIONS, {
-				i(205451),	-- Flawless Crystal Scale
-			}),
 			filter(QUEST_ITEMS, {
 				i(202705),	-- Snail Slime
 				i(202875),	-- Snail Lasso
@@ -1979,7 +1976,6 @@ root(ROOTS.Unsorted, {
 				q(75775),	--
 				q(75818),	--
 				q(75831),	-- Barter Up
-				q(75866),	--
 				-- 10.1.0.48776
 				q(75894),	--
 				q(75896),	--
@@ -2360,10 +2356,7 @@ root(ROOTS.Unsorted, {
 				q(74139),	--
 				q(74165),	--
 				q(74178),	--
-				q(74188),	--
 				q(74189),	--
-				q(74190),	--
-				q(74191),	--
 				q(74192),	--
 				q(74202),	--
 				q(74209),	--
@@ -2376,7 +2369,6 @@ root(ROOTS.Unsorted, {
 				q(74227),	--
 				q(74232),	--
 				q(74233),	--
-				q(74234),	--
 				q(74239),	--
 				q(74240),	--
 				-- 10.0.2.46999
