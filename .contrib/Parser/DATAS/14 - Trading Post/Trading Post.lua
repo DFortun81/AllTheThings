@@ -55,6 +55,10 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			["timeline"] = { ADDED_10_1_5 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 		}),
+		q(76107, {	-- Report to the Trading Post -- October 2023
+			["timeline"] = { ADDED_10_1_7 },
+			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
+		}),
 	}),
 	n(SPECIAL, bubbleDownSelf({ ["description"] = "This is rewarded for filling the Travel Points Progress Bar in the month." }, {
 		n(AVAILABLE, {
@@ -142,9 +146,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(190689, {	-- Corrupted Bladefist
 					["cost"] = { { "c", TRADERS_TENDER, 525 }, },
 				}),
-				--i(32542, { -- Drape of Endless Twilight
-				--	["cost"] = { { "c", TRADERS_TENDER, 50 }, },
-				--}),
+				i(19082, { -- Drape of Endless Twilight
+					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+				}),
 				i(206341, {	-- Ensemble: Wanderer's Lively Trappings
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 					["g"] = {
@@ -165,9 +169,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(190200, {	-- Feathered Drape of the Guardian
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 				}),
-				--i(32542, { -- Gleaming Mail Tabard
-				--	["cost"] = { { "c", TRADERS_TENDER, 125 }, },
-				--}),
+				i(190800, { -- Gleaming Mail Tabard
+					["cost"] = { { "c", TRADERS_TENDER, 125 }, },
+				}),
 				i(190145, {	-- Gilded Drakkonid Morningstar
 					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
 				}),
@@ -203,9 +207,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 						i(208637),	-- Nathreza Blasphemer's Warglaive
 					},
 				}),
-				--i(32542, { -- Shadowy Mail Tabard
-				--	["cost"] = { { "c", TRADERS_TENDER, 125 }, },
-				--}),
+				i(190801, { -- Shadowy Mail Tabard
+					["cost"] = { { "c", TRADERS_TENDER, 125 }, },
+				}),
 				i(190433, {	-- Shifty Merchant's Tunic
 					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
 				}),
@@ -230,9 +234,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(190199, {	-- Well-Worn Grimskull Cinch
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 				}),
-				--i(32542, { -- Wine-Soaked Hammer
-				--	["cost"] = { { "c", TRADERS_TENDER, 75 }, },
-				--}),
+				i(190804, { -- Wine-Soaked Hammer
+					["cost"] = { { "c", TRADERS_TENDER, 75 }, },
+				}),
 			}),
 		}),
 		n(UNAVAILABLE, {
@@ -761,9 +765,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(190698, {	-- Gently Used Cleaver
 					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
-				}),
-				i(210265, {	-- High Scholar's Grand Staff
-					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
 				}),
 				i(208423, {	-- Homebrewer's Sampling Crest
 					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
