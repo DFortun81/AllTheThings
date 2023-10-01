@@ -16,10 +16,206 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 					["races"] = HORDE_ONLY,
 				}),
 				a(ach(5718, {	-- Just Another Day in Tol Barad (A)
-					["sym"] = {{ "achievement_criteria" }},
+					crit(16682, {	-- Captain P. Harris
+						["_quests"] = { 27970 },
+					}),
+					crit(16683, {	-- Rattling Their Cages
+						["_quests"] = { 27971 },
+					}),
+					crit(16684, {	-- Boosting Morale
+						["_quests"] = { 27972 },
+					}),
+					crit(16685, {	-- Shark Tank
+						["_quests"] = { 28050 },
+					}),
+					crit(16686, {	-- Claiming The Keep
+						["_quests"] = { 28059 },
+					}),
+					crit(16687, {	-- Leave No Weapon Behind
+						["_quests"] = { 28063 },
+					}),
+					crit(16689, {	-- The Forgotten
+						["_quests"] = { 27949 },
+					}),
+					crit(16690, {	-- Salvaging the Remains
+						["_quests"] = { 27966 },
+					}),
+					crit(16691, {	-- First Lieutenant Connor
+						["_quests"] = { 27967 },
+					}),
+					crit(16692, {	-- Ghostbuster
+						["_quests"] = { 27978 },
+					}),
+					crit(16693, {	-- Cannonball!
+						["_quests"] = { 27987 },
+					}),
+					crit(16694, {	-- Taking the Overlook Back
+						["_quests"] = { 27991 },
+					}),
+					crit(16695, {	-- Not the Friendliest Town
+						["_quests"] = { 28130 },
+					}),
+					crit(16696, {	-- Teach A Man To Fish... Or Steal.
+						["_quests"] = { 28137 },
+					}),
+					crit(16697, {	-- Thinning The Brood
+						["_quests"] = { 27944 },
+					}),
+					crit(16698, {	-- A Sticky Task
+						["_quests"] = { 27948 },
+					}),
+					crit(16699, {	-- Magnets, How Do They Work?
+						["_quests"] = { 27992 },
+					}),
+					crit(16700, {	-- Finish The Job
+						["_quests"] = { 28046 },
+					}),
+					crit(16701, {	-- Watch Out For Splinters!
+						["_quests"] = { 27973 },
+					}),
+					crit(16702, {	-- WANTED: Foreman Wellson
+						["_quests"] = { 27975 },
+					}),
+					crit(16703, {	-- Bombs Away!
+						["_quests"] = { 28275 },
+					}),
+					crit(16704, {	-- Clearing the Depths
+						["_quests"] = { 28117 },
+					}),
+					crit(16705, {	-- The Imprisoned Archmage
+						["_quests"] = { 28661 },
+					}),
+					crit(16706, {	-- Learning From The Past
+						["_quests"] = { 28120 },
+					}),
+					crit(16707, {	-- D-Block
+						["_quests"] = { 28165 },
+					}),
+					crit(16708, {	-- Svarnos
+						["_quests"] = { 28185 },
+					}),
+					crit(16709, {	-- Cursed Shackles
+						["_quests"] = { 28186 },
+					}),
+					crit(16710, {	-- Prison Revolt
+						["_quests"] = { 28188 },
+					}),
+					crit(16711, {	-- The Warden
+						["_quests"] = { 28223 },
+					}),
+					crit(16712, {	-- Food From Below
+						["_quests"] = { 28232 },
+					}),
+					crit(16713, {	-- A Huge Problem
+						["_quests"] = { 28122 },
+					}),
+					crit(16714, {	-- Swamp Bait
+						["_quests"] = { 28162 },
+					}),
+					crit(16715, {	-- The Leftovers
+						["_quests"] = { 28163 },
+					}),
 				})),
 				h(ach(5719, {	-- Just Another Day in Tol Barad (H)
-					["sym"] = {{ "achievement_criteria" }},
+					crit(16716, {	-- Captain P. Harris
+						["_quests"] = { 28678 },
+					}),
+					crit(16717, {	-- Rattling Their Cages
+						["_quests"] = { 28679 },
+					}),
+					crit(16718, {	-- Boosting Morale
+						["_quests"] = { 28680 },
+					}),
+					crit(16719, {	-- Shark Tank
+						["_quests"] = { 28681 },
+					}),
+					crit(16720, {	-- Claiming The Keep
+						["_quests"] = { 28682 },
+					}),
+					crit(16721, {	-- Leave No Weapon Behind
+						["_quests"] = { 28685 },
+					}),
+					crit(16723, {	-- The Forgotten
+						["_quests"] = { 28689 },
+					}),
+					crit(16724, {	-- Salvaging the Remains
+						["_quests"] = { 28690 },
+					}),
+					crit(16725, {	-- First Lieutenant Connor
+						["_quests"] = { 28691 },
+					}),
+					crit(16726, {	-- Ghostbuster
+						["_quests"] = { 28697 },
+					}),
+					crit(16727, {	-- Cannonball!
+						["_quests"] = { 28698 },
+					}),
+					crit(16728, {	-- Taking the Overlook Back
+						["_quests"] = { 28700 },
+					}),
+					crit(16729, {	-- Not the Friendliest Town
+						["_quests"] = { 28686 },
+					}),
+					crit(16730, {	-- Teach A Man To Fish... Or Steal.
+						["_quests"] = { 28687 },
+					}),
+					crit(16731, {	-- Thinning The Brood
+						["_quests"] = { 28683 },
+					}),
+					crit(16732, {	-- A Sticky Task
+						["_quests"] = { 28684 },
+					}),
+					crit(16733, {	-- Magnets, How Do They Work?
+						["_quests"] = { 28692 },
+					}),
+					crit(16734, {	-- Finish The Job
+						["_quests"] = { 28693 },
+					}),
+					crit(16735, {	-- Watch Out For Splinters!
+						["_quests"] = { 28694 },
+					}),
+					crit(16736, {	-- WANTED: Foreman Wellson
+						["_quests"] = { 28695 },
+					}),
+					crit(16737, {	-- Bombs Away!
+						["_quests"] = { 28696 },
+					}),
+					crit(16738, {	-- Clearing the Depths
+						["_quests"] = { 28660 },
+					}),
+					crit(16739, {	-- The Imprisoned Archmage
+						["_quests"] = { 28118 },
+					}),
+					crit(16740, {	-- Learning From The Past
+						["_quests"] = { 28662 },
+					}),
+					crit(16741, {	-- D-Block
+						["_quests"] = { 28663 },
+					}),
+					crit(16742, {	-- Svarnos
+						["_quests"] = { 28664 },
+					}),
+					crit(16743, {	-- Cursed Shackles
+						["_quests"] = { 28665 },
+					}),
+					crit(16744, {	-- Prison Revolt
+						["_quests"] = { 28668 },
+					}),
+					crit(16745, {	-- The Warden
+						["_quests"] = { 28669 },
+					}),
+					crit(16746, {	-- Food From Below
+						["_quests"] = { 28670 },
+					}),
+					crit(16747, {	-- A Huge Problem
+						["_quests"] = { 28657 },
+					}),
+					crit(16748, {	-- Swamp Bait
+						["_quests"] = { 28658 },
+					}),
+					crit(16749, {	-- The Leftovers
+						["_quests"] = { 28659 },
+					}),
 				})),
 			}),
 			petbattle(filter(BATTLE_PETS, {
