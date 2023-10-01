@@ -450,11 +450,11 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 		["description"] = "These rewards are available to anyone who purchases Dragonflight Heroic Edition.",
 		["timeline"] = { ADDED_9_2_5 },
 		["groups"] = {
+			-- #if BEFORE 10.0.2
 			pet(3177, {	-- Drakks (PET!)
-				-- #if BEFORE 10.0.2
 				["description"] = "This is a pre-order bonus only available before the launch of Dragonflight.",
-				-- #endif
 			}),
+			-- #endif
 			pet(3175),	-- Murkastrasza (PET!)
 			mount(359843),	-- Tangled Dreamweaver (MOUNT!)
 			ach(17314),	-- Heroic Edition: Tangled Dreamweaver
