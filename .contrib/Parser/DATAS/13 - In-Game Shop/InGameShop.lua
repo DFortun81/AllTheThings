@@ -111,7 +111,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 6.2.2.20395" },
 		}),
 		i(85870, {	-- Imperial Quilen (MOUNT!)
-			["timeline"] = { "added 5.0.1.15662" },
+			["timeline"] = { "added 9.0.2" },
 		}),
 		i(107951, {	-- Iron Skyreaver (MOUNT!)
 			["timeline"] = { "added 5.4.2.17585" },
@@ -480,6 +480,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 					"added 8.1.5.29737",
 				-- "removed 10.0.7.48999,"
 			},
+			["u"] = REMOVED_FROM_GAME,	-- 17th April 2023
 		}),
 		i(166779, {	-- Transmorpher Beacon (TOY!)
 			["timeline"] = { "added 8.1.5.29737" },

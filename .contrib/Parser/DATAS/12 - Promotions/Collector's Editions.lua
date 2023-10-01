@@ -326,8 +326,8 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 		},
 	})),
 	-- #if ANYCLASSIC
-	n(WOTLK_CLASSIC_NORTHREND_HEROIC_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_4_A, REMOVED_3_4_3 } }, {
-		["description"] = "These rewards were made available to anyone who purchased a Heroic Upgrade Edition of The Burning Crusade Classic.",
+	n(WOTLK_CLASSIC_NORTHREND_HEROIC_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_4_A } }, {
+		["description"] = "These rewards were made available to anyone who purchased a Heroic Upgrade Edition of Wrath of the Lich King Classic.",
 		["groups"] = {
 			i(198665),	-- Pebble's Pebble
 			i(198647),	-- Fishspeaker's Lucky Lure
@@ -357,8 +357,8 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 		},
 	})),
 	-- #endif
-	n(WOTLK_CLASSIC_NORTHREND_EPIC_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_4_A, REMOVED_3_4_3 } }, {
-		["description"] = "These rewards were made available to anyone who purchased a Eric Upgrade Edition of The Burning Crusade Classic.",
+	n(WOTLK_CLASSIC_NORTHREND_EPIC_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_4_A } }, {
+		["description"] = "These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",
 		["groups"] = {
 			-- #if ANYCLASSIC
 			i(192455),	-- Kalu'ak Whalebone Glider
@@ -451,7 +451,9 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 		["timeline"] = { ADDED_9_2_5 },
 		["groups"] = {
 			pet(3177, {	-- Drakks (PET!)
+				-- #if BEFORE 10.0.2
 				["description"] = "This is a pre-order bonus only available before the launch of Dragonflight.",
+				-- #endif
 			}),
 			pet(3175),	-- Murkastrasza (PET!)
 			mount(359843),	-- Tangled Dreamweaver (MOUNT!)
@@ -488,14 +490,14 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 	})),
 
 	-- Other Blizzard Games
-	n(DIABLO_III, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0, REMOVED_10_0_2 } }, {
+	n(DIABLO_III, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0, REMOVED_5_4_7 } }, {
 		["description"] = "These rewards are available to anyone who purchases Diablo 3 Collection.",
 		["groups"] = {
 			ach(7412),	-- Collector's Edition: Fetish Shaman
 			i(76062),	-- Fetish Shaman (PET!)
 		},
 	})),
-	n(DIABLO_III_REAPER_OF_SOULS, bubbleDownSelf({ ["timeline"] = { "added 5.4.2.17585", REMOVED_10_0_2 } }, {
+	n(DIABLO_III_REAPER_OF_SOULS, bubbleDownSelf({ ["timeline"] = { "added 5.4.2.17585" } }, {
 		["description"] = "These rewards are available to anyone who purchases Diablo 3: Reaper of Souls Collection.",
 		["groups"] = {
 			ach(8795),	-- Collector's Edition: Treasure Goblin
