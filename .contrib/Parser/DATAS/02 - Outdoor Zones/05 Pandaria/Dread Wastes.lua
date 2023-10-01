@@ -143,21 +143,51 @@ root(ROOTS.Zones, {
 						},
 					}),
 					ach(7316, {	-- Over Their Heads
-						crit(4),	-- Amber-Shaper Un'sok
-						crit(6),	-- Amber Earthshaker
-						crit(7),	-- Amber Rocktunneler
-						crit(8),	-- Amber Venomlancer
-						crit(3),	-- Blade Lord Ta'yak
-						crit(9),	-- Dread Ambercrusher
-						crit(10),	-- Dread Fearbringer
-						crit(11),	-- Essence of Dread
-						crit(12),	-- Essence of Fear
-						crit(13),	-- Essence of Horror
-						crit(14),	-- Essence of Panic
-						crit(15),	-- Essence of Terror
-						crit(1),	-- Garalon
-						crit(5),	-- Imperial Vizier Zor'lok
-						crit(2),	-- Wind Lord Mel'jarak
+						crit(20511, {		-- Garalon
+							["crs"] = { 63667 },
+						}),
+						crit(20509, {		-- Wind Lord Mel'jarak
+							["crs"] = { 63665 },
+						}),
+						crit(20508, {		-- Blade Lord Ta'yak
+							["crs"] = { 63664 },
+						}),
+						crit(20510, {		-- Amber-Shaper Un'sok
+							["crs"] = { 63666 },
+						}),
+						crit(20507, {		-- Imperial Vizier Zor'lok
+							["crs"] = { 63662 },
+						}),
+						crit(21001, {		-- Amber Earthshaker
+							["crs"] = { 65456 },
+						}),
+						crit(20506, {		-- Amber Rocktunneler
+							["crs"] = { 63638 },
+						}),
+						crit(20505, {		-- Amber Venomlancer
+							["crs"] = { 63619 },
+						}),
+						crit(21002, {		-- Dread Ambercrusher
+							["crs"] = { 65435 },
+						}),
+						crit(21003, {		-- Dread Fearbringer
+							["crs"] = { 65439 },
+						}),
+						crit(21004, {		-- Essence of Dread
+							["crs"] = { 65491 },
+						}),
+						crit(21005, {		-- Essence of Fear
+							["crs"] = { 65487 },
+						}),
+						crit(21006, {		-- Essence of Horror
+							["crs"] = { 65490 },
+						}),
+						crit(21007, {		-- Essence of Panic
+							["crs"] = { 65489 },
+						}),
+						crit(21008, {		-- Essence of Terror
+							["crs"] = { 65488 },
+						}),
 					}),
 					ach(7321),	-- Spreading the Warmth
 					ach(7313, {	-- Stay Klaxxi

@@ -1728,4 +1728,4 @@ filter(COSMETIC, {
     i(190199), -- Well-Worn Grimskull Cinch (100)
     --i(32542), -- Wine-Soaked Hammer (75)
 }),
-
+]]--

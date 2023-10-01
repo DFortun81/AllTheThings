@@ -228,21 +228,51 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(22437),		-- Breath of Darkest Shadow
 		})),
 		ach(7316, {		-- Over Their Heads (Dread Wastes)
-			crit(20511),		-- Garalon
-			crit(20509),		-- Wind Lord Mel'jarak
-			crit(20508),		-- Blade Lord Ta'yak
-			crit(20510),		-- Amber-Shaper Un'sok
-			crit(20507),		-- Imperial Vizier Zor'lok
-			crit(21001),		-- Amber Earthshaker
-			crit(20506),		-- Amber Rocktunneler
-			crit(20505),		-- Amber Venomlancer
-			crit(21002),		-- Dread Ambercrusher
-			crit(21003),		-- Dread Fearbringer
-			crit(21004),		-- Essence of Dread
-			crit(21005),		-- Essence of Fear
-			crit(21006),		-- Essence of Horror
-			crit(21007),		-- Essence of Panic
-			crit(21008),		-- Essence of Terror
+			crit(20511, {		-- Garalon
+				["crs"] = { 63667 },
+			}),
+			crit(20509, {		-- Wind Lord Mel'jarak
+				["crs"] = { 63665 },
+			}),
+			crit(20508, {		-- Blade Lord Ta'yak
+				["crs"] = { 63664 },
+			}),
+			crit(20510, {		-- Amber-Shaper Un'sok
+				["crs"] = { 63666 },
+			}),
+			crit(20507, {		-- Imperial Vizier Zor'lok
+				["crs"] = { 63662 },
+			}),
+			crit(21001, {		-- Amber Earthshaker
+				["crs"] = { 65456 },
+			}),
+			crit(20506, {		-- Amber Rocktunneler
+				["crs"] = { 63638 },
+			}),
+			crit(20505, {		-- Amber Venomlancer
+				["crs"] = { 63619 },
+			}),
+			crit(21002, {		-- Dread Ambercrusher
+				["crs"] = { 65435 },
+			}),
+			crit(21003, {		-- Dread Fearbringer
+				["crs"] = { 65439 },
+			}),
+			crit(21004, {		-- Essence of Dread
+				["crs"] = { 65491 },
+			}),
+			crit(21005, {		-- Essence of Fear
+				["crs"] = { 65487 },
+			}),
+			crit(21006, {		-- Essence of Horror
+				["crs"] = { 65490 },
+			}),
+			crit(21007, {		-- Essence of Panic
+				["crs"] = { 65489 },
+			}),
+			crit(21008, {		-- Essence of Terror
+				["crs"] = { 65488 },
+			}),
 		}),
 		ach(7297, {		-- Proven Strength (Shado-Pan Garrison)
 			crit(22174),		-- Fei Li
@@ -276,7 +306,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(20959),		-- Children of the Grave
 			crit(20960),		-- Battle Hymn
 		}),
-		
+
 		ach(7314),		-- Test Drive (Dread Wastes)
 		ach(7293),		-- Till the Break of Dawn (Halfhill)
 		ach(7288),		-- Yak Attack (Niuzao Temple)
