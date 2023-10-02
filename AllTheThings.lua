@@ -16989,13 +16989,13 @@ local SearchGroups = {};
 local Wrap = app.WrapObject;
 local BaseFilterHeaderClone = app.BaseObjectFields({
 	-- Fields in the wrapped object which should not persist when represented as a Header
-	["collectible"] = app.ReturnNil,
-	["trackable"] = app.ReturnNil,
-	["collectibleAsCost"] = app.ReturnNil,
-	["costCollectibles"] = app.ReturnNil,
-	["hasUpgradeNested"] = app.ReturnNil,
-	["costNested"] = app.ReturnNil,
-	["g"] = app.ReturnNil,
+	["collectible"] = app.EmptyFunction,
+	["trackable"] = app.EmptyFunction,
+	["collectibleAsCost"] = app.EmptyFunction,
+	["costCollectibles"] = app.EmptyFunction,
+	["hasUpgradeNested"] = app.EmptyFunction,
+	["costNested"] = app.EmptyFunction,
+	["g"] = app.EmptyFunction,
 	-- ["back"] = function(t)
 	-- 	return 0.3;	-- visibility of which rows are cloned
 	-- end,
