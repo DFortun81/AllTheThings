@@ -353,6 +353,9 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				q(75890, {	-- The Clarion Call
 					["provider"] = { "o", 405958 },	-- Sealed Kaldorei Scroll
 					["coord"] = { 52.4, 14.2, STORMWIND_CITY },
+					["g"] = {
+						i(206942),	-- Sealed Kaldorei Scroll
+					},
 				}),
 				q(75891, {	-- Ancient Curses
 					["sourceQuests"] = { 75890 },	-- The Clarion Call

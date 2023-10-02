@@ -1251,7 +1251,6 @@ root(ROOTS.Unsorted, {
 			i(210595),	-- Dreaming Equipment Chest
 			i(210657),	-- Gently Shaken Gift
 			i(210661),	-- Dreamcatcher's Crescent
-			i(210662),	-- Ochre Ornament of the Grove
 			i(210664),	-- Frost Sapling's Adornment
 			i(210687),	-- Ironfur Sample
 			i(210726),	-- Ruby Flightstone
@@ -1529,7 +1528,6 @@ root(ROOTS.Unsorted, {
 			--
 			i(204720),	-- Join the New Scarlet Crusade!
 			i(206476),	-- Tyr's Guard Equipment
-			i(206942),	-- Sealed Kaldorei Scroll
 			i(208198),	-- Tyr's Guard Bulwark
 			i(208545),	-- Kindled Bonfire
 			i(208861),	-- The First Clue
