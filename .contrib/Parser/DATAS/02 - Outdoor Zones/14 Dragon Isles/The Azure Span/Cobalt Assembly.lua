@@ -224,7 +224,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 600 },
 									{ "i", RAINBOW_PEARL, 1 },
-									{ "i", SEREVITE_ORE, 10 },
+									{ "i", ADAMANT_SCALES, 10 },
 								},
 							}),
 							i(200559, {	-- Cobalt Duelist's Saber

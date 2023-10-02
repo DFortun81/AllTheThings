@@ -101,6 +101,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(93086),	-- Swashbuckling Vest				(NYI)
 
 			ig(134732),	-- Frigidlink Armor					(Removed)
+			ig(134763),	-- Overgrown Armor					(Removed)
 		--	ig(120952),	-- Slarkhide						(Removed)			Added in 10.1.7 to original Source
 		}),
 		filter(PLATE, {
@@ -140,6 +141,7 @@ local QUANTUM_GROUP = sharedData({
 		}),
 	}),
 	i(208111, {	-- Quantum Axe			(One-Handed)
+		ig(134604),	-- Vanguard Hacker					(Removed)
 	}),
 	i(208117, {	-- Quantum Bow
 	--	ig(4474),	-- Ravenwood Bow					(Removed)(Unique)	Added in 10.1.7 to original Source
