@@ -3596,89 +3596,90 @@ ResolveSymbolicLink = function(o)
 		MergeObjects(cloned, o.resolved or ResolveCache[oHash], true);
 		return cloned;
 	end
-	if oSym then
-		FinalizeModID = nil;
-		PruneFinalized = nil;
-		-- app.PrintDebug("Fresh Resolve:",oHash)
-		local searchResults, finalized = {}, {};
-		local cmd, cmdFunc;
-		for _,sym in ipairs(oSym) do
-			cmd = sym[1];
-			cmdFunc = ResolveFunctions[cmd];
-			-- app.PrintDebug("sym: '",cmd,"' for",oHash,"with:",unpack(sym))
-			if cmdFunc then
-				cmdFunc(finalized, searchResults, o, unpack(sym));
-			else
-				app.print("Unknown symlink command",cmd);
-			end
-			-- app.PrintDebug("Finalized",#finalized,"Results",#searchResults,"after '",cmd,"' for",oHash,"with:",unpack(sym))
-		end
 
-		-- Verify the final result is finalized
-		cmdFunc = ResolveFunctions.finalize;
-		cmdFunc(finalized, searchResults);
-		-- app.PrintDebug("Forced Finalize",oKey,oKey and o[oKey],#finalized)
+	if not oSym then return end
 
-		-- If we had any finalized search results, then clone all the records, store the results, and return them
-		if #finalized > 0 then
-			local cloned = {};
-			MergeObjects(cloned, finalized, true);
-			-- if app.Debugging then print("Symbolic Link for", oKey,oKey and o[oKey], "contains", #cloned, "values after filtering.") end
-			-- if any symlinks are left at the lowest level, go ahead and fill them
-			-- Apply any modID if necessary
-			local sHash;
-			if FinalizeModID then
-				-- app.PrintDebug("Applying FinalizeModID",FinalizeModID)
-				for _,s in ipairs(cloned) do
-					if s.itemID then
-						s.modID = FinalizeModID;
-					end
-					-- in symlinking a Thing to another Source, we are effectively declaring that it is Sourced within this Source, for the specific scope
-					s.sourceParent = nil;
-					s.parent = nil;
-					if PruneFinalized then
-						s.g = nil;
-					end
-					-- if somehow the symlink pulls in the same item as used as the source of the symlink, notify in chat and clear any symlink on it
-					sHash = s.hash;
-					if sHash and sHash == oHash then
-						app.print("Symlink group pulled itself into finalized results!",oHash)
-						s.sym = nil;
-					else
-						FillSymLinks(s);
-					end
-				end
-			else
-				for _,s in ipairs(cloned) do
-					-- in symlinking a Thing to another Source, we are effectively declaring that it is Sourced within this Source, for the specific scope
-					s.sourceParent = nil;
-					s.parent = nil;
-					if PruneFinalized then
-						s.g = nil;
-					end
-					-- if somehow the symlink pulls in the same item as used as the source of the symlink, notify in chat and clear any symlink on it
-					sHash = s.hash;
-					if sHash and sHash == oHash then
-						app.print("Symlink group pulled itself into finalized results!",oHash)
-						s.sym = nil;
-					else
-						FillSymLinks(s);
-					end
-				end
-			end
-			if oKey and app.ThingKeys[oKey] then
-				-- global resolve cache if it's a 'Thing'
-				-- app.PrintDebug("Thing Results",oHash)
-				ResolveCache[oHash] = cloned;
-			elseif oKey ~= false then
-				-- otherwise can store it in the object itself (like a header from the Main list with symlink), if it's not specifically a pseudo-symlink resolve group
-				o.resolved = cloned;
-				-- app.PrintDebug("Object Results",oHash)
-			end
-			return cloned;
+	FinalizeModID = nil;
+	PruneFinalized = nil;
+	-- app.PrintDebug("Fresh Resolve:",oHash)
+	local searchResults, finalized = {}, {};
+	local cmd, cmdFunc;
+	for _,sym in ipairs(oSym) do
+		cmd = sym[1];
+		cmdFunc = ResolveFunctions[cmd];
+		-- app.PrintDebug("sym: '",cmd,"' for",oHash,"with:",unpack(sym))
+		if cmdFunc then
+			cmdFunc(finalized, searchResults, o, unpack(sym));
 		else
-			-- if app.Debugging then print("Symbolic Link for ", oKey, " ",oKey and o[oKey], " contained no values after filtering.") end
+			app.print("Unknown symlink command",cmd);
 		end
+		-- app.PrintDebug("Finalized",#finalized,"Results",#searchResults,"after '",cmd,"' for",oHash,"with:",unpack(sym))
+	end
+
+	-- Verify the final result is finalized
+	cmdFunc = ResolveFunctions.finalize;
+	cmdFunc(finalized, searchResults);
+	-- app.PrintDebug("Forced Finalize",oKey,oKey and o[oKey],#finalized)
+
+	-- If we had any finalized search results, then clone all the records, store the results, and return them
+	if #finalized > 0 then
+		local cloned = {};
+		MergeObjects(cloned, finalized, true);
+		-- if app.Debugging then print("Symbolic Link for", oKey,oKey and o[oKey], "contains", #cloned, "values after filtering.") end
+		-- if any symlinks are left at the lowest level, go ahead and fill them
+		-- Apply any modID if necessary
+		local sHash;
+		if FinalizeModID then
+			-- app.PrintDebug("Applying FinalizeModID",FinalizeModID)
+			for _,s in ipairs(cloned) do
+				if s.itemID then
+					s.modID = FinalizeModID;
+				end
+				-- in symlinking a Thing to another Source, we are effectively declaring that it is Sourced within this Source, for the specific scope
+				s.sourceParent = nil;
+				s.parent = nil;
+				if PruneFinalized then
+					s.g = nil;
+				end
+				-- if somehow the symlink pulls in the same item as used as the source of the symlink, notify in chat and clear any symlink on it
+				sHash = s.hash;
+				if sHash and sHash == oHash then
+					app.print("Symlink group pulled itself into finalized results!",oHash)
+					s.sym = nil;
+				else
+					FillSymLinks(s);
+				end
+			end
+		else
+			for _,s in ipairs(cloned) do
+				-- in symlinking a Thing to another Source, we are effectively declaring that it is Sourced within this Source, for the specific scope
+				s.sourceParent = nil;
+				s.parent = nil;
+				if PruneFinalized then
+					s.g = nil;
+				end
+				-- if somehow the symlink pulls in the same item as used as the source of the symlink, notify in chat and clear any symlink on it
+				sHash = s.hash;
+				if sHash and sHash == oHash then
+					app.print("Symlink group pulled itself into finalized results!",oHash)
+					s.sym = nil;
+				else
+					FillSymLinks(s);
+				end
+			end
+		end
+		if oKey and app.ThingKeys[oKey] then
+			-- global resolve cache if it's a 'Thing'
+			-- app.PrintDebug("Thing Results",oHash)
+			ResolveCache[oHash] = cloned;
+		elseif oKey ~= false then
+			-- otherwise can store it in the object itself (like a header from the Main list with symlink), if it's not specifically a pseudo-symlink resolve group
+			o.resolved = cloned;
+			-- app.PrintDebug("Object Results",oHash)
+		end
+		return cloned;
+	else
+		-- if app.Debugging then print("Symbolic Link for ", oKey, " ",oKey and o[oKey], " contained no values after filtering.") end
 	end
 end
 
@@ -3700,6 +3701,18 @@ local function ResolveSymlinkGroupAsync(group)
 end
 -- Fills the symlinks within a group by using an 'async' process to spread the filler function over multiple game frames to reduce stutter or apparent lag
 app.FillSymlinkAsync = function(o)
+	app.FillRunner.Run(ResolveSymlinkGroupAsync, o);
+end
+-- Fills the symlinks within a group by using an 'async' process to spread the filler function over multiple game frames to reduce stutter or apparent lag
+-- NOTE: ONLY performs the symlink for 'achievement_criteria'
+app.FillAchievementCriteriaAsync = function(o)
+	local sym = o.sym
+	if not sym then return end
+
+	local sym = sym[1][1]
+	if sym ~= "achievement_criteria" then return end
+
+	-- app.PrintDebug("resolve achievement_criteria",o.hash)
 	app.FillRunner.Run(ResolveSymlinkGroupAsync, o);
 end
 end	-- Symlink Lib
@@ -7924,12 +7937,8 @@ local fields = {
 		end
 		return 0;
 	end,
-	["OnUpdate"] = function(t)
-		-- only handle this extra OnUpdate logic once for symlink Achievements
-		if not t.sym then return; end
-		if t.__filled then return; end
-		t.__filled = true;
-		app.FillSymlinkAsync(t);
+	["back"] = function(t)
+		return t.sourceIgnored and 0.5 or 0;
 	end,
 };
 app.BaseAchievement = app.BaseObjectFields(fields, "BaseAchievement");
@@ -21735,6 +21744,28 @@ local function AssignDirectGroupOnUpdates()
 	end
 end
 
+local function PrePopulateAchievementSymlinks()
+	local achCache = app.SearchForFieldContainer("achievementID")
+	-- app.PrintDebug("FillAchSym")
+	if achCache then
+		local FillSym = app.FillAchievementCriteriaAsync
+		app.FillRunner.SetPerFrame(1000)
+		local Run = app.FillRunner.Run
+		local group
+		for achID,groups in pairs(achCache) do
+			for i=1,#groups do
+				group = groups[i]
+				if group.__type == "BaseAchievement" then
+					-- app.PrintDebug("FillAchSym",group.hash)
+					Run(FillSym, group)
+				end
+			end
+		end
+		app.FillRunner.SetPerFrame(25)
+	end
+	-- app.PrintDebug("Done:FillAchSym")
+end
+
 -- Function which is triggered after Startup
 app.InitDataCoroutine = function()
 	-- app.PrintMemoryUsage("InitDataCoroutine")
@@ -21846,6 +21877,10 @@ app.InitDataCoroutine = function()
 	app.IsInPartySync = C_QuestSession.Exists();
 
 	app.RefreshSaves();
+
+	-- Trigger symlink population runner for Achievements to handle
+	-- the generation of 'achievement_criteria' into the Main list
+	PrePopulateAchievementSymlinks()
 
 	-- Let a frame go before hitting the initial refresh to make sure as much time as possible is allowed for the operation
 	-- print("Yield prior to Refresh")
