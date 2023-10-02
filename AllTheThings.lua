@@ -6669,8 +6669,12 @@ app.RecreateObject = function(t)
 	FillSymLinks(obj);
 	-- Build the Item's groups if any
 	BuildGroups(obj);
-	-- Update the group
+	-- Update the group while ignoring some visibility functionality
+	obj.collectibleAsCost = false
+	obj.collectibleAsUpgrade = false
 	app.TopLevelUpdateGroup(obj);
+	obj.collectibleAsCost = nil
+	obj.collectibleAsUpgrade = nil
 	return obj;
 end
 -- Create a local cache table which can be used by a Type class of a Thing to easily store information based on a unique key field for any Thing object of that Type

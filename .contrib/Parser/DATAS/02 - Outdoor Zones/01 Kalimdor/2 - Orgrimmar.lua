@@ -7110,6 +7110,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sym"] = {
 								{"select","creatureID",57922},{"pop"},	-- this NPC
 								{"not","itemID",71949},				-- not this item
+								{"isnt","currencyID"},	-- no currencies
 							},
 						}),
 					},

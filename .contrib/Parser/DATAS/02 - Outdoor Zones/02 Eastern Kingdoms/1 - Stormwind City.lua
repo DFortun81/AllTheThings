@@ -6868,6 +6868,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sym"] = {
 								{"select","creatureID",56925},{"pop"},	-- this NPC
 								{"not","itemID",71949},				-- not this item
+								{"isnt","currencyID"},	-- no currencies
 							},
 						}),
 					},
