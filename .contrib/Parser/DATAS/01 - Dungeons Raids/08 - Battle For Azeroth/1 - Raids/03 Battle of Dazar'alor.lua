@@ -20,9 +20,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(13315, {	-- Glory of the Dazar'alor Raider
-					i(166539),	-- Dazar'alor Windreaver (MOUNT!)
-				}),
 				ach(13319),	-- Battle of Dazar'alor Guild Run (H)
 				ach(13320),	-- Battle of Dazar'alor Guild Run (A)
 				-- TODO: this requires further revision....

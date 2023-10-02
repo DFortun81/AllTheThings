@@ -4,26 +4,18 @@
 
 root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 	achcat(ACHIEVEMENT_CATEGORY_GENERAL, {
-		ach(12807, {	-- Battle for Azeroth Dungeon Hero
-			crit(1),	-- Heroic: The Temple of Sethraliss
-			crit(2),	-- Heroic: Underrot
-			crit(3),	-- Heroic: Waycrest Manor
-			crit(4),	-- Heroic: Freehold
-			crit(5),	-- Heroic: Shrine of the Storm
-			crit(6),	-- Heroic: Atal'Dazar
-			crit(7),	-- Heroic: Tol Dagor
-			crit(8),	-- Heroic: The MOTHERLODE!!
-		}),
 		ach(4844, {		-- Cataclysm Dungeon Hero
-			crit(1),	-- Heroic: Blackrock Caverns
-			crit(2),	-- Heroic: Throne of the Tides
-			crit(3),	-- Heroic: The Stonecore
-			crit(4),	-- Heroic: The Vortex Pinnacle
-			crit(5),	-- Heroic: Grim Batol
-			crit(6),	-- Heroic: Halls of Origination
-			crit(7),	-- Heroic: Lost City of the Tol'vir
-			crit(8),	-- Heroic: Deadmines
-			crit(9),	-- Heroic: Shadowfang Keep
+			["sym"] = {{"meta_achievement",
+				5060,	-- Heroic: Blackrock Caverns
+				5061,	-- Heroic: Throne of the Tides
+				5063,	-- Heroic: The Stonecore
+				5064,	-- Heroic: The Vortex Pinnacle
+				5062,	-- Heroic: Grim Batol
+				5065,	-- Heroic: Halls of Origination
+				5066,	-- Heroic: Lost City of the Tol'vir
+				5083,	-- Heroic: Deadmines
+				5093,	-- Heroic: Shadowfang Keep
+			}},
 		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(1658, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Champion of the Frozen Wastes
 			title(97),	-- , Champion of the Frozen Wastes
@@ -62,19 +54,23 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			}},
 		}),
 		ach(5506, {		-- Defender of a Shattered World
-			title(185),	-- <Name>, Defender of a Shattered World
-			crit(1),	-- Heroic: Blackrock Caverns
-			crit(2),	-- Heroic: Throne of the Tides
-			crit(3),	-- Heroic: The Stonecore
-			crit(4),	-- Heroic: The Vortex Pinnacle
-			crit(5),	-- Heroic: Grim Batol
-			crit(6),	-- Heroic: Halls of Origination
-			crit(7),	-- Heroic: Lost City of the Tol'vir
-			crit(8),	-- Heroic: Deadmines
-			crit(9),	-- Heroic: Shadowfang Keep
-			crit(10),	-- Blackwing Descent
-			crit(11),	-- Throne of the Four Winds
-			crit(12),	-- The Bastion of Twilight
+			["sym"] = {{"meta_achievement",
+				5060,	-- Heroic: Blackrock Caverns
+				5061,	-- Heroic: Throne of the Tides
+				5063,	-- Heroic: The Stonecore
+				5064,	-- Heroic: The Vortex Pinnacle
+				5062,	-- Heroic: Grim Batol
+				5065,	-- Heroic: Halls of Origination
+				5066,	-- Heroic: Lost City of the Tol'vir
+				5083,	-- Heroic: Deadmines
+				5093,	-- Heroic: Shadowfang Keep
+				4842,	-- Blackwing Descent
+				4851,	-- Throne of the Four Winds
+				4850,	-- The Bastion of Twilight
+			}},
+			["groups"] = {
+				title(185),	-- <Name>, Defender of a Shattered World
+			},
 		}),
 		ach(9391, {		-- Draenor Dungeon Hero
 			-- Meta Achievement
@@ -90,74 +86,86 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			}},
 		}),
 		ach(4845, {		-- Glory of the Cataclysm Hero
-			i(62900),	-- Volcanic Stone Drake (MOUNT!)
-			crit(1),	-- Cataclysm Dungeon Hero
-			crit(2),	-- Crushing Bones and Cracking Skulls
-			crit(3),	-- Arrested Development
-			crit(4),	-- Too Hot to Handle
-			crit(5),	-- Ascendant Descending
-			crit(6),	-- Old Faithful
-			crit(7),	-- Prince of Tides
-			crit(8),	-- Rotten to the Core
-			crit(9),	-- No Static at All
-			crit(10),	-- Extra Credit Bonus Stage
-			crit(11),	-- Kill It With Fire!
-			crit(12),	-- Acrocalypse Now
-			crit(13),	-- Headed South
-			crit(14),	-- I Hate That Song
-			crit(15),	-- Straw That Broke the Camel's Back
-			crit(16),	-- Sun of a....
-			crit(17),	-- Faster Than the Speed of Light
-			crit(18),	-- Umbrage for Umbriss
-			crit(19),	-- Ready for Raiding
-			crit(20),	-- Rat Pack
-			crit(21),	-- Prototype Prodigy
-			crit(22),	-- It's Frost Damage
-			crit(23),	-- I'm on a Diet
-			crit(24),	-- Vigorous VanCleef Vindicator
-			crit(25),	-- Pardon Denied
-			crit(26),	-- To the Ground!
-			crit(27),	-- Bullet Time
-			crit(28),	-- Don't Need to Break Eggs to Make an Omelet
+			["sym"] = {{"meta_achievement",
+				4844,	-- Cataclysm Dungeon Hero
+				5281,	-- Crushing Bones and Cracking Skulls
+				5282,	-- Arrested Development
+				5283,	-- Too Hot to Handle
+				5284,	-- Ascendant Descending
+				5285,	-- Old Faithful
+				5286,	-- Prince of Tides
+				5287,	-- Rotten to the Core
+				5288,	-- No Static at All
+				5289,	-- Extra Credit Bonus Stage
+				5290,	-- Kill It With Fire!
+				5291,	-- Acrocalypse Now
+				5292,	-- Headed South
+				5293,	-- I Hate That Song
+				5294,	-- Straw That Broke the Camel's Back
+				5295,	-- Sun of a....
+				5296,	-- Faster Than the Speed of Light
+				5297,	-- Umbrage for Umbriss
+				5366,	-- Ready for Raiding
+				5367,	-- Rat Pack
+				5368,	-- Prototype Prodigy
+				5369,	-- It's Frost Damage
+				5370,	-- I'm on a Diet
+				5371,	-- Vigorous VanCleef Vindicator
+				5503,	-- Pardon Denied
+				5504,	-- To the Ground!
+				5505,	-- Bullet Time
+				5298,	-- Don't Need to Break Eggs to Make an Omelet
+			}},
+			["groups"] = {
+				i(62900),	-- Volcanic Stone Drake (MOUNT!)
+			},
 		}),
 		ach(4853, {		-- Glory of the Cataclysm Raider
-			i(62901),	-- Drake of the East Wind (MOUNT!)
-			crit(1),	-- Heroic: Magmaw
-			crit(2),	-- Heroic: Golem Council
-			crit(3),	-- Heroic: Maloriak
-			crit(4),	-- Heroic: Atramedes
-			crit(5),	-- Heroic: Chimaeron
-			crit(6),	-- Heroic: Nefarian
-			crit(7),	-- Heroic: Halfus Wyrmbreaker
-			crit(8),	-- Heroic: Valiona and Theralion
-			crit(9),	-- Heroic: Ascendant Council
-			crit(10),	-- Heroic: Cho'gall
-			crit(11),	-- Heroic: Conclave of Wind
-			crit(12),	-- Heroic: Al'Akir
-			crit(13),	-- Parasite Evening
-			crit(14),	-- Achieve-a-tron
-			crit(15),	-- Silence is Golden
-			crit(16),	-- Full of Sound and Fury
-			crit(17),	-- Aberrant Behavior
-			crit(18),	-- Keeping it in the Family
-			crit(19),	-- The Only Escape
-			crit(20),	-- Double Dragon
-			crit(21),	-- Elementary
-			crit(22),	-- The Abyss Will Gaze Back Into You
-			crit(23),	-- Stay Chill
-			crit(24),	-- Four Play
+			["sym"] = {{"meta_achievement",
+				5094,	-- Heroic: Magmaw
+				5107,	-- Heroic: Omnotron Defense System
+				5108,	-- Heroic: Maloriak
+				5109,	-- Heroic: Atramedes
+				5115,	-- Heroic: Chimaeron
+				5116,	-- Heroic: Nefarian
+				5118,	-- Heroic: Halfus Wyrmbreaker
+				5117,	-- Heroic: Valiona and Theralion
+				5119,	-- Heroic: Ascendant Council
+				5120,	-- Heroic: Cho'gall
+				5122,	-- Heroic: Conclave of Wind
+				5123,	-- Heroic: Al'Akir
+				5306,	-- Parasite Evening
+				5307,	-- Achieve-a-tron
+				5308,	-- Silence is Golden
+				5309,	-- Full of Sound and Fury
+				5310,	-- Aberrant Behavior
+				4849,	-- Keeping it in the Family
+				5300,	-- The Only Escape
+				4852,	-- Double Dragon
+				5311,	-- Elementary
+				5312,	-- The Abyss Will Gaze Back Into You
+				5304,	-- Stay Chill
+				5305,	-- Four Play
+			}},
+			["groups"] = {
+				i(62901),	-- Drake of the East Wind (MOUNT!)
+			},
 		}),
 		ach(13315, {	-- Glory of the Dazar'alor Raider
-			i(166539),	-- Dazar'alor Windreaver (MOUNT!)
-			ach(13316),	-- Can I Get a Hek Hek Hek Yeah?
-			ach(13325),	-- Walk the Dinosaur
-			ach(13345),	-- Praise the Sunflower
-			ach(13383),	-- Barrel of Monkeys
-			ach(13410),	-- Snow Fun Allowed
-			ach(13401),	-- I Got Next!
-			ach(13431),	-- Hidden Dragon
-			ach(13430),	-- De Lurker Be'loa
-			ach(13425),	-- We Got Spirit, How About You?
+			["sym"] = {{"meta_achievement",
+				13316,	-- Can I Get a Hek Hek Hek Yeah?
+				13325,	-- Walk the Dinosaur
+				13345,	-- Praise the Sunflower
+				13383,	-- Barrel of Monkeys
+				13410,	-- Snow Fun Allowed
+				13401,	-- I Got Next!
+				13431,	-- Hidden Dragon
+				13430,	-- De Lurker Be'loa
+				13425,	-- We Got Spirit, How About You?
+			}},
+			["groups"] = {
+				i(166539),	-- Dazar'alor Windreaver (MOUNT!)
+			},
 		}),
 		ach(9396, {		-- Glory of the Draenor Hero
 			-- Meta Achievement
@@ -216,20 +224,24 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			},
 		}),
 		ach(6169, {		-- Glory of the Dragon Soul Raider
-			i(77068),	-- Twilight Harbinger (MOUNT!)
-			crit(1),	-- Heroic: Morchok
-			crit(2),	-- Heroic: Warlord Zon'ozz
-			crit(3),	-- Heroic: Yor'sahj the Unsleeping
-			crit(4),	-- Heroic: Hagara the Stormbinder
-			crit(5),	-- Heroic: Ultraxion
-			crit(6),	-- Heroic: Warmaster Blackhorn
-			crit(7),	-- Don't Stand So Close to Me
-			crit(8),	-- Taste the Rainbow!
-			crit(9),	-- Ping Pong Champion
-			crit(10),	-- Minutes to Midnight
-			crit(11),	-- Deck Defender
-			crit(12),	-- Maybe He'll Get Dizzy...
-			crit(13),	-- Chromatic Champion
+			["sym"] = {{"meta_achievement",
+				6109,	-- Heroic: Morchok
+				6110,	-- Heroic: Warlord Zon'ozz
+				6111,	-- Heroic: Yor'sahj the Unsleeping
+				6112,	-- Heroic: Hagara the Stormbinder
+				6113,	-- Heroic: Ultraxion
+				6114,	-- Heroic: Warmaster Blackhorn
+				6174,	-- Don't Stand So Close to Me
+				6129,	-- Taste the Rainbow!
+				6128,	-- Ping Pong Champion
+				6084,	-- Minutes to Midnight
+				6105,	-- Deck Defender
+				6133,	-- Maybe He'll Get Dizzy...
+				6180,	-- Chromatic Champion
+			}},
+			["groups"] = {
+				i(77068),	-- Twilight Harbinger (MOUNT!)
+			},
 		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(2136, {		-- Glory of the Hero
 			-- Meta Achievement
@@ -324,7 +336,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				10742,	-- Gluten Free
 				10817,	-- A Change In Scenery
 				10851,	-- Elementalry!
-				10754,	-- Fruit of All Evil
+				-- 10754,	-- Fruit of All Evil (Not required for meta)
 				10704,	-- Not For You
 				10575,	-- Burning Bridges
 				10699,	-- Infinitesimal
@@ -354,21 +366,25 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(12),	-- It's Not a Cult
 		}),
 		ach(8454, {		-- Glory of the Orgrimmar Raider
-			i(104208),	-- Spawn of Galakras (MOUNT!)
-			crit(1),	-- No More Tears
-			crit(2),	-- Go Long
-			crit(3),	-- None Shall Pass
-			crit(4),	-- Swallow Your Pride
-			crit(5),	-- The Immortal Vanguard
-			crit(6),	-- Fire in the Hole!
-			crit(7),	-- Rescue Raiders
-			crit(8),	-- Gamon Will Save Us!
-			crit(9),	-- Unlimited Potential
-			crit(10),	-- Criss Cross
-			crit(11),	-- Giant Dinosaur vs. Mega Snail
-			crit(12),	-- Lasers and Magnets and Drills! Oh My!
-			crit(13),	-- Now We are the Paragon
-			crit(14),	-- Strike!
+			["sym"] = {{"meta_achievement",
+				8536,	-- No More Tears
+				8528,	-- Go Long
+				8532,	-- None Shall Pass
+				8521,	-- Swallow Your Pride
+				8530,	-- The Immortal Vanguard
+				8520,	-- Fire in the Hole!
+				8453,	-- Rescue Raiders
+				8448,	-- Gamon Will Save Us!
+				8538,	-- Unlimited Potential
+				8529,	-- Criss Cross
+				8527,	-- Giant Dinosaur vs. Mega Snail
+				8543,	-- Lasers and Magnets and Drills! Oh My!
+				8531,	-- Now We are the Paragon
+				8537,	-- Strike!
+			}},
+			["groups"] = {
+				i(104208),	-- Spawn of Galakras (MOUNT!)
+			},
 		}),
 		ach(6927, {		-- Glory of the Pandaria Hero
 			i(87769),	-- Crimson Cloud Serpent (MOUNT!)
@@ -494,36 +510,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			crit(6),	-- Now We Got Bad Blood
 			crit(7),	-- Edgelords
 			crit(8),	-- Existential Crisis
-		}),
-		ach(12812, {	-- Glory of the Wartorn Hero
-			i(161215),	-- Obsidian Krolusk (MOUNT!)
-			crit(1),	-- Pecking Order
-			crit(2),	-- I'm in Charge Now!
-			crit(3),	-- That Sweete Booty
-			crit(4),	-- Losing My Profession
-			crit(5),	-- Run Wild Like a Man On Fire
-			crit(6),	-- Alchemical Romance
-			crit(7),	-- Breath of the Shrine
-			crit(8),	-- The Void Lies Sleeping
-			crit(9),	-- Trust No One
-			crit(10),	-- Bringing Hexy Back
-			crit(11),	-- Gold Fever
-			crit(12),	-- It's Lit!
-			crit(13),	-- Not a Fun Guy
-			crit(14),	-- Taint Nobody Got Time For That
-			crit(15),	-- Sporely Alive
-			crit(16),	-- Snake Eyes
-			crit(17),	-- Snake Eater
-			crit(18),	-- Good Night, Sweet Prince
-			crit(19),	-- Remix to Ignition
-			crit(20),	-- Shot Through the Heart
-			crit(21),	-- Pitch Invasion
-			crit(22),	-- Ready for Raiding VI
-			crit(23),	-- Stand by Me
-			crit(24),	-- A Fish Out of Water
-			crit(25),	-- It Belongs in a Mausoleum!
-			crit(26),	-- How to Keep a Mummy
-			crit(27),	-- Wrap God
 		}),
 		ach(11162, {	-- Keystone Master
 			ach(11185),	-- Keystone Conqueror
