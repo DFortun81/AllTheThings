@@ -59,7 +59,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubble
 	["groups"] = {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(19079, {	-- Master of the Turbulent Timeways
+			["description"] = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways. Completeing that weeks criteria.",
+			["groups"] = {
+				crit(62267),	--Gain Mastery of Timeways for 5 weeks
 				i(205208),	-- Sandy Shalewing (MOUNT!)
+			},
 			}),
 		})),
 		n(COMMON_BOSS_DROPS, {
