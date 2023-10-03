@@ -2204,10 +2204,6 @@ root(ROOTS.Zones, {
 									["achievementID"] = 8728,	-- Going to Need a Bigger Bag
 								}),
 							}),
-							{	-- Glorious!
-								["achievementID"] = 7439,
-								["criteriaID"] = 51,
-							},
 						},
 					}),
 					n(50828, {	-- Bonobos
@@ -2219,20 +2215,12 @@ root(ROOTS.Zones, {
 						},
 						["g"] = {
 							i(86591),	-- Magic Banana (TOY!)
-							{	-- Glorious!
-								["achievementID"] = 7439,
-								["criteriaID"] = 2,
-							},
 						},
 					}),
 					n(50351, {	-- Jonn-Dar
 						["coord"] = { 18.6, 77.6, VALLEY_OF_THE_FOUR_WINDS },
 						["g"] = {
 							i(86572),	-- Terracotta Fragment
-							{	-- Glorious!
-								["achievementID"] = 7439,
-								["criteriaID"] = 30,
-							},
 						},
 					}),
 					n(50364, {	-- Nal'lak the Ripper
@@ -2242,20 +2230,12 @@ root(ROOTS.Zones, {
 						},
 						["g"] = {
 							i(86576),	-- Dynasty of Steel
-							{	-- Glorious!
-								["achievementID"] = 7439,
-								["criteriaID"] = 16,
-							},
 						},
 					}),
 					n(50811, {	-- Nasra Spothide
 						["coord"] = { 88.6, 18.0, VALLEY_OF_THE_FOUR_WINDS },
 						["g"] = {
 							i(86587),	-- Seed of Tranquil Growth
-							{	-- Glorious!
-								["achievementID"] = 7439,
-								["criteriaID"] = 37,
-							},
 						},
 					}),
 					n(50783, {	-- Salyin Warscout
@@ -2265,10 +2245,6 @@ root(ROOTS.Zones, {
 						},
 						["g"] = {
 							i(86583),	-- Salyin Battle Banner (TOY!)
-							{	-- Glorious!
-								["achievementID"] = 7439,
-								["criteriaID"] = 44,
-							},
 						},
 					}),
 					n(50766, {	-- Sele'na
@@ -2283,10 +2259,6 @@ root(ROOTS.Zones, {
 									["description"] = "This item used to be the Overgrown Lilypad. This item instead is required for the Bigger Bag achievement in its place.",
 								}),
 							}),
-							{	-- Glorious!
-								["achievementID"] = 7439,
-								["criteriaID"] = 9,
-							},
 						},
 					}),
 					n(50339, {	-- Sulik'shor
@@ -2297,10 +2269,6 @@ root(ROOTS.Zones, {
 									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
 								}),
 							}),
-							{	-- Glorious!
-								["achievementID"] = 7439,
-								["criteriaID"] = 23,
-							},
 						},
 					}),
 				}),

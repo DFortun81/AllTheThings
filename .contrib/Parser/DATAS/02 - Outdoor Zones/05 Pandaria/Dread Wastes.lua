@@ -41,14 +41,6 @@ root(ROOTS.Zones, {
 							["_quests"] = { 31211 },	-- The Poisoned Mind
 						}),
 					}),
-					ach(6716, {	-- Between a Saurok and a Hard Place
-						["collectible"] = false,
-						["g"] = {
-							crit(3, {	-- The Deserters
-								["coord"] = { 67.4, 60.8, DREAD_WASTES },
-							}),
-						},
-					}),
 					ach(6540, {	-- Dread Haste Makes Dread Waste
 						crit(1, {	-- The First Paragons
 							["sourceQuest"] = 31066,	-- A Cry From Darkness
@@ -1433,9 +1425,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 34.8, 23.2, DREAD_WASTES },
 						["g"] = {
 							i(86589),	-- Ai-Li's Skymirror (TOY!)
-							crit(41, {	-- Glorious!
-								["achievementID"] = 7439,
-							}),
 						},
 					}),
 					n(66935, {	-- Clamstok
@@ -1451,9 +1440,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 25.2, 28.6, DREAD_WASTES },
 						["g"] = {
 							i(86567),	-- Yaungol Wind Chime
-							crit(55, {	-- Glorious!
-								["achievementID"] = 7439,
-							}),
 						},
 					}),
 					n(50739, {	-- Gar'lok
@@ -1464,27 +1450,18 @@ root(ROOTS.Zones, {
 						},
 						["g"] = {
 							i(86578),	-- Eternal Warrior's Sigil (TOY!)
-							crit(20, {	-- Glorious!
-								["achievementID"] = 7439,
-							}),
 						},
 					}),
 					n(50836, {	-- Ik-Ik the Nimble
 						["coord"] = { 54.9, 65.7, DREAD_WASTES },
 						["g"] = {
 							i(86593),	-- Hozen Beach Ball (TOY!)
-							crit(6, {	-- Glorious!
-								["achievementID"] = 7439,
-							}),
 						},
 					}),
 					n(50347, {	-- Karr the Darkener
 						["coord"] = { 71.8, 37.6, DREAD_WASTES },
 						["g"] = {
 							i(86564),	-- Grinder (PET!)
-							crit(27, {	-- Glorious!
-								["achievementID"] = 7439,
-							}),
 						},
 					}),
 					n(50356, {	-- Krol the Blade
@@ -1495,18 +1472,12 @@ root(ROOTS.Zones, {
 						},
 						["g"] = {
 							i(86574),	-- Elixir of Ancient Knowledge
-							crit(34, {	-- Glorious!
-								["achievementID"] = 7439,
-							}),
 						},
 					}),
 					n(50776, {	-- Nalash Verdantis
 						["coord"] = { 64.2, 58.6, DREAD_WASTES },
 						["g"] = {
 							i(86563),	-- Aqua Strider (PET!)
-							crit(13, {	-- Glorious!
-								["achievementID"] = 7439,
-							}),
 						},
 					}),
 					n(50805, {	-- Omnis Grinlok
@@ -1518,9 +1489,6 @@ root(ROOTS.Zones, {
 						},
 						["g"] = {
 							i(86585),	-- Golden Fleece
-							crit(48, {	-- Glorious!
-								["achievementID"] = 7439,
-							}),
 						},
 					}),
 					n(69841, {	-- Zandalari Warbringer (Amber)

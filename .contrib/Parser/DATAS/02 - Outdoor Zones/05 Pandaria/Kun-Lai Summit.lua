@@ -241,18 +241,6 @@ root(ROOTS.Zones, {
 					},
 				})),
 				n(ACHIEVEMENTS, {
-					ach(6716, {	-- Between a Saurok and a Hard Place
-						["collectible"] = false,
-						["g"] = {
-							crit(2, {	-- The Defiant
-								["description"] = "At the north end of the circular room at the back of the cave.",
-								["coords"] = {
-									{ 73.2, 94.6, KUN_LAI_SUMMIT },	-- entrance
-									{ 54.9, 16.9, 434 },	-- actual object
-								},
-							}),
-						},
-					}),
 					explorationAch(6976),	-- Explore Kun-Lai Summit
 					ach(7286, {	-- Finish Them! (Temple of the White Tiger)
 						crit(1),	-- Brewmaster Chani
@@ -2117,18 +2105,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 40.8, 42.5, KUN_LAI_SUMMIT },
 						["g"] = {
 							i(86588),	-- Pandaren Firework Launcher (TOY!)
-							crit(39, {	-- Glorious!
-								["achievementID"] = 7439,
-							}),
 						},
 					}),
 					n(50341, {	-- Borginn Darkfist
 						["coord"] = { 55.7, 43.4, KUN_LAI_SUMMIT },
 						["g"] = {
 							i(86570),	-- Crate of Kidnapped Puppies
-							crit(25, {	-- Glorious!
-								["achievementID"] = 7439,
-							}),
 						},
 					}),
 					n(50354, {	-- Havak
@@ -2139,9 +2121,6 @@ root(ROOTS.Zones, {
 						},
 						["g"] = {
 							i(86573),	-- Shard of Archstone (TOY!)
-							crit(32, {	-- Glorious!
-								["achievementID"] = 7439,
-							}),
 						},
 					}),
 					n(66933, {	-- Kishak
@@ -2171,9 +2150,6 @@ root(ROOTS.Zones, {
 									["achievementID"] = 8728,	-- Going to Need a Bigger Bag
 								}),
 							}),
-							crit(53, {	-- Glorious!
-								["achievementID"] = 7439,
-							}),
 						},
 					}),
 					n(70323, {	-- Krakkanon
@@ -2192,9 +2168,6 @@ root(ROOTS.Zones, {
 									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
 								}),
 							}),
-							crit(46, {	-- Glorious!
-								["achievementID"] = 7439,
-							}),
 						},
 					}),
 					n(50831, {	-- Scritch
@@ -2204,19 +2177,11 @@ root(ROOTS.Zones, {
 							{ 47.2, 63.0, KUN_LAI_SUMMIT },
 							{ 46.2, 61.5, KUN_LAI_SUMMIT },
 						},
-						["g"] = {
-							crit(4, {	-- Glorious!
-								["achievementID"] = 7439,
-							}),
-						},
 					}),
 					n(50733, {	-- Ski'thik
 						["coord"] = { 36.71, 79.76, KUN_LAI_SUMMIT },
 						["g"] = {
 							i(86577),	-- Rod of Ambershaping
-							crit(18, {	-- Glorious!
-								["achievementID"] = 7439,
-							}),
 						},
 					}),
 					n(50769, {	-- Zai the Outcast
@@ -2227,9 +2192,6 @@ root(ROOTS.Zones, {
 						},
 						["g"] = {
 							i(86581),	-- Farwater Conch (TOY!)
-							crit(11, {	-- Glorious!
-								["achievementID"] = 7439,
-							}),
 						},
 					}),
 					n(69841, {	-- Zandalari Warbringer (Amber)

@@ -1212,9 +1212,6 @@ root(ROOTS.Zones, {
 						},
 						["g"] = {
 							i(87222),	-- Big Bag of Linens
-							crit(12, {	-- Glorious!
-								["achievementID"] = 7439,
-							}),
 						},
 					}),
 					n(66467, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- G'nathus
@@ -1260,9 +1257,6 @@ root(ROOTS.Zones, {
 									i(87641),	-- Yaungol Battle Barrier
 								},
 							}),
-							crit(33, {	-- Glorious!
-								["achievementID"] = 7439,
-							}),
 						},
 					}),
 					n(50734, {	-- Lith'ik the Stalker
@@ -1274,9 +1268,6 @@ root(ROOTS.Zones, {
 						},
 						["g"] = {
 							i(87221),	-- Big Bag of Jewels
-							crit(19, {	-- Glorious!
-								["achievementID"] = 7439,
-							}),
 						},
 					}),
 					n(50333, {	-- Lon the Bull
@@ -1288,9 +1279,6 @@ root(ROOTS.Zones, {
 						},
 						["g"] = {
 							i(87219),	-- Huge Bag of Herbs
-							crit(54, {	-- Glorious!
-								["achievementID"] = 7439,
-							}),
 						},
 					}),
 					n(50344, {	-- Norlaxx
@@ -1298,9 +1286,6 @@ root(ROOTS.Zones, {
 						["g"] = {
 							i(87220, {	-- Big Bag of Mysteries
 								["sym"] = {{"select","itemID",87218},{"pop"}},	-- Big Bag of Arms
-							}),
-							crit(26, {	-- Glorious!
-								["achievementID"] = 7439,
 							}),
 						},
 					}),
@@ -1317,27 +1302,18 @@ root(ROOTS.Zones, {
 						["coord"] = { 59.2, 85.6, TOWNLONG_STEPPES },
 						["g"] = {
 							i(87223),	-- Big Bag of Skins
-							crit(47, {	-- Glorious!
-								["achievementID"] = 7439,
-							}),
 						},
 					}),
 					n(50832, {  -- The Yowler
 						["coord"] = { 67.6, 74.6, TOWNLONG_STEPPES },
 						["g"] = {
 							i(87225),	-- Big Bag of Food
-							crit(5, {	-- Glorious!
-								["achievementID"] = 7439,
-							}),
 						},
 					}),
 					n(50820, {	-- Yul Wildpaw
 						["coord"] = { 32.0, 61.8, TOWNLONG_STEPPES },
 						["g"] = {
 							i(87224),	-- Big Bag of Wonders
-							crit(40, {	-- Glorious!
-								["achievementID"] = 7439,
-							}),
 						},
 					}),
 					n(69841, {	-- Zandalari Warbringer (Amber)

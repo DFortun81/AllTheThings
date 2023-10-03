@@ -8,22 +8,6 @@ root(ROOTS.Zones, {
 		["icon"] = "Interface\\Icons\\ExpansionIcon_MistsofPandaria",
 		["timeline"] = { "added 5.0.4" },
 		["groups"] = {
-			n(ACHIEVEMENTS, {
-				ach(7285),	-- Every Day I'm Pand-a-ren
-				applyclassicphase(MOP_PHASE_ONE, ach(6974, {	-- Pandaria Explorer [7.0.3] / Explore Pandaria
-					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
-						6978,	-- Explore Dread Wastes
-						6351,	-- Explore Jade Forest
-						6975,	-- Explore Krasarang Wilds
-						6976,	-- Explore Kun-Lai Summit
-						6977,	-- Explore Townlong Steppes
-						6979,	-- Explore Vale of Eternal Blossoms
-						6969,	-- Explore Valley of the Four Winds
-					}},
-					["timeline"] = { "added 5.0.4" },
-				})),
-			}),
 			prof(FISHING, {
 				["maps"] = {
 					DREAD_WASTES,

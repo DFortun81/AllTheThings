@@ -15,14 +15,6 @@ root(ROOTS.Zones, {
 			},
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					ach(6716, {	-- Between a Saurok and a Hard Place
-						["collectible"] = false,
-						["g"] = {
-							crit(1, {	-- The Saurok
-								["coord"] = { 67.7, 29.3, THE_JADE_FOREST },
-							}),
-						},
-					}),
 					explorationAch(6351),	-- Explore Jade Forest
 					ach(7290),	-- How To Strain Your Dragon
 					ach(7291),	-- In a Trail of Smoke
@@ -2702,10 +2694,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 33.5, 50.7, THE_JADE_FOREST },
 						["g"] = {
 							i(87649),	-- Pool-Stirrer
-							{	-- Glorious!
-								["achievementID"] = 7439,
-								["criteriaID"] = 8,
-							},
 						},
 					}),
 					n(66937, {	-- Akkalar
@@ -2736,10 +2724,6 @@ root(ROOTS.Zones, {
 						},
 						["g"] = {
 							i(87652),	-- Ook-Breaker Mace
-							{	-- Glorious!
-								["achievementID"] = 7439,
-								["criteriaID"] = 50,
-							},
 						},
 					}),
 					n(50338, {	-- Kor'nas Nightsavage
@@ -2751,10 +2735,6 @@ root(ROOTS.Zones, {
 						},
 						["g"] = {
 							i(87642),	-- Darkstaff of Annihilation
-							{	-- Glorious!
-								["achievementID"] = 7439,
-								["criteriaID"] = 22,
-							},
 						},
 					}),
 					n(70323, {	-- Krakkanon
@@ -2776,10 +2756,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 39.5, 62.7, THE_JADE_FOREST },
 						["g"] = {
 							i(87646),	-- Needlefang Throatripper
-							{	-- Glorious!
-								["achievementID"] = 7439,
-								["criteriaID"] = 15,
-							},
 						},
 					}),
 					n(65003, {	-- Martar the Not-So-Smart
@@ -2797,10 +2773,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 42.5, 38.8, THE_JADE_FOREST },
 						["g"] = {
 							i(87652),	-- Ook-Breaker Mace
-							{	-- Glorious!
-								["achievementID"] = 7439,
-								["criteriaID"] = 1,
-							},
 						},
 					}),
 					n(50350, {	-- Morgrinn Crackfang
@@ -2814,30 +2786,18 @@ root(ROOTS.Zones, {
 						},
 						["g"] = {
 							i(87643),	-- Fangcracker Battlemace
-							{	-- Glorious!
-								["achievementID"] = 7439,
-								["criteriaID"] = 29,
-							},
 						},
 					}),
 					n(50782, {	-- Sarnak
 						["coord"] = { 64.9, 74.3, THE_JADE_FOREST },
 						["g"] = {
 							i(87650),	-- Fishsticker Crossbow
-							{	-- Glorious!
-								["achievementID"] = 7439,
-								["criteriaID"] = 43,
-							},
 						},
 					}),
 					n(50808, {	-- Urobi the Walker
 						["coord"] = { 57.3, 71.6, THE_JADE_FOREST },
 						["g"] = {
 							i(87651),	-- Pathwalker Greatstaff
-							{	-- Glorious!
-								["achievementID"] = 7439,
-								["criteriaID"] = 36,
-							},
 						},
 					}),
 					n(69841, {	-- Zandalari Warbringer (Amber)

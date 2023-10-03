@@ -1178,9 +1178,6 @@ root(ROOTS.Zones, {
 					n(50822, {	-- Ai-Ran the Shifting Cloud
 						["coord"] = { 42.8, 69.2, VALE_OF_ETERNAL_BLOSSOMS },
 						["g"] = {
-							crit(42, {	-- Ai-Ran the Shifting Cloud
-								["achievementID"] = 7439,	-- Glorious!
-							}),
 							i(86590),	-- Essence of the Breeze (TOY!)
 						},
 					}),
@@ -1286,18 +1283,12 @@ root(ROOTS.Zones, {
 					n(50749, {	-- Kal'tik the Blight
 						["coord"] = { 14.0, 58.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["g"] = {
-							crit(21, {	-- Kal'tik the Blight
-								["achievementID"] = 7439,	-- Glorious!
-							}),
 							i(134023),	-- Bottled Tornado (TOY!)
 						},
 					}),
 					n(50349, {	-- Kang the Soul Thief
 						["coord"] = { 15.2, 35.2, VALE_OF_ETERNAL_BLOSSOMS },
 						["g"] = {
-							crit(28, {	-- Kang the Soul Thief
-								["achievementID"] = 7439,	-- Glorious!
-							}),
 							i(86571),	-- Kang's Bindstone (TOY!)
 						},
 					}),
@@ -1313,9 +1304,6 @@ root(ROOTS.Zones, {
 					n(50840, {	-- Major Nanners
 						["coord"] = { 30.7, 91.5, VALE_OF_ETERNAL_BLOSSOMS },
 						["g"] = {
-							crit(20523, {	-- Major Nanners
-								["achievementID"] = 7439,	-- Glorious!
-							}),
 							i(86594),	-- Helpful Wikky's Whistle (TOY!)
 						},
 					}),
@@ -1325,9 +1313,6 @@ root(ROOTS.Zones, {
 							{ 34.8, 60.7, VALE_OF_ETERNAL_BLOSSOMS },
 						},
 						["g"] = {
-							crit(49, {	-- Moldo One-Eye
-								["achievementID"] = 7439,	-- Glorious!
-							}),
 							i(86586),	-- Panflute of Pandaria (TOY!)
 						},
 					}),
@@ -1343,9 +1328,6 @@ root(ROOTS.Zones, {
 					n(50780, {	-- Sahn Tidehunter
 						["coord"] = { 69.4, 30.5, VALE_OF_ETERNAL_BLOSSOMS },
 						["g"] = {
-							crit(14, {	-- Sahn Tidehunter
-								["achievementID"] = 7439,	-- Glorious!
-							}),
 							i(86582),	-- Aqua Jewel (TOY!)
 						},
 					}),
@@ -1370,9 +1352,6 @@ root(ROOTS.Zones, {
 					n(50359, {	-- Urgolax
 						["coord"] = { 39.5, 25.1, VALE_OF_ETERNAL_BLOSSOMS },
 						["g"] = {
-							crit(35, {	-- Urgolax
-								["achievementID"] = 7439,	-- Glorious!
-							}),
 							i(86575),	-- Chalice of Secrets (TOY!)
 						},
 					}),
@@ -1409,9 +1388,6 @@ root(ROOTS.Zones, {
 					n(50336, {	-- Yorik Sharpeye
 						["coord"] = { 88.0, 44.3, VALE_OF_ETERNAL_BLOSSOMS },
 						["g"] = {
-							crit(56, {	-- Yorik Sharpeye
-								["achievementID"] = 7439,	-- Glorious!
-							}),
 							i(86568),	-- Mr. Smite's Brass Compass (TOY!)
 						},
 					}),

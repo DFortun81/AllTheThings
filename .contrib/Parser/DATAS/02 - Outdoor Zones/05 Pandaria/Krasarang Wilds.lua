@@ -18,14 +18,6 @@ root(ROOTS.Zones, {
 					-- turn in "Buried Hozen Treasure" but NOT "Balance" or "Balance Without Violence" to make sure they're required for the criteria
 					-- add SQs for Horde loremaster achievement + Dominance Offensive achievement
 				n(ACHIEVEMENTS, {
-					ach(6716, {	-- Between a Saurok and a Hard Place
-						["collectible"] = false,
-						["g"] = {
-							crit(4, {	-- The Last Stand
-								["coord"] = { 33.3, 25.0, KRASARANG_WILDS },
-							}),
-						},
-					}),
 					explorationAch(6975),	-- Explore Krasarang Wilds
 					ach(7284, {	-- Is Another Man's Treasure
 						["collectible"] = false,
@@ -2915,9 +2907,6 @@ root(ROOTS.Zones, {
 					n(50787, {	-- Arness the Scale
 						["coord"] = { 58.7, 43.8, KRASARANG_WILDS },	-- manually verified October 19, 2020
 						["g"] = {
-							crit(45, {	-- Arness the Scale
-								["achievementID"] = 7439,	-- Glorious!
-							}),
 							i(90723),	-- Arnness's Scaled Leggings
 						},
 					}),
@@ -2931,9 +2920,6 @@ root(ROOTS.Zones, {
 					n(50768, {	-- Cournith Waterstrider
 						["coord"] = { 30.6, 38.2, KRASARANG_WILDS },
 						["g"] = {
-							crit(10, {	-- Cournith Waterstrider
-								["achievementID"] = 7439,	-- Glorious!
-							}),
 							i(90721),	-- Cournith Waterstrider's Silken Finery
 						},
 					}),
@@ -2952,9 +2938,6 @@ root(ROOTS.Zones, {
 					n(50331, {	-- Go-Kan
 						["coord"] = { 39.4, 28.8, KRASARANG_WILDS },
 						["g"] = {
-							crit(52, {	-- Go-Kan
-								["achievementID"] = 7439,	-- Glorious!
-							}),
 							i(90719),	-- Go-Kan's Golden Trousers
 						},
 					}),
@@ -2969,9 +2952,6 @@ root(ROOTS.Zones, {
 							{ 53.6, 38.8, KRASARANG_WILDS },
 						},
 						["g"] = {
-							crit(24, {	-- Gaarn the Toxic
-								["achievementID"] = 7439,	-- Glorious!
-							}),
 							i(90725),	-- Gaarn's Leggings of Infestation
 						},
 					}),
@@ -2986,9 +2966,6 @@ root(ROOTS.Zones, {
 					n(50352, {	-- Qu'nas
 						["coord"] = { 67.2, 23, KRASARANG_WILDS },
 						["g"] = {
-							crit(31, {	-- Qu'nas
-								["achievementID"] = 7439,	-- Glorious!
-							}),
 							i(90717),	-- Qu'nas' Apocryphal Legplates
 						},
 					}),
@@ -3000,18 +2977,12 @@ root(ROOTS.Zones, {
 							{ 42.8, 52.8, KRASARANG_WILDS },
 						},
 						["g"] = {
-							crit(38, {	-- Ruun Ghostpaw
-								["achievementID"] = 7439,	-- Glorious!
-							}),
 							i(90720),	-- Silent Leggings of the Ghostpaw
 						},
 					}),
 					n(50830, {	-- Spriggin
 						["coord"] = { 52.2, 88.8, KRASARANG_WILDS },
 						["g"] = {
-							crit(3, {	-- Spriggin
-								["achievementID"] = 7439,	-- Glorious!
-							}),
 							i(90724),	-- Spriggin's Sproggin' Leggin'
 						},
 					}),
@@ -3022,9 +2993,6 @@ root(ROOTS.Zones, {
 							{ 15.6, 35.6, KRASARANG_WILDS },
 						},
 						["g"] = {
-							crit(17, {	-- Torik-Ethis
-								["achievementID"] = 7439,	-- Glorious!
-							}),
 							i(90718),	-- Torik-Ethis' Bloodied Legguards
 						},
 					}),
