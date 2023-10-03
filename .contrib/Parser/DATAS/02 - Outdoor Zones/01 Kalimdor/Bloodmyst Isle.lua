@@ -1123,7 +1123,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Altered Crystal Sample
-							["provider"] = { "i", 23879 },	-- Altered Crystal Sample
+							["providers"] = {
+								{ "i",  23879 },	-- Altered Crystal Sample
+								{ "o", 181780 },	-- Altered Bloodmyst Crystal
+							},
 							["cost"] = { { "i", 23876, 1 } },	-- Crystal Mining Pick
 							["coord"] = { 45, 47, BLOODMYST_ISLE },
 						}),
