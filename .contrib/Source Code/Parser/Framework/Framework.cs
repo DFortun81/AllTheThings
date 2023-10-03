@@ -1640,6 +1640,21 @@ namespace ATT
             if (achInfo.TryGetValue("isGuild", out bool isGuild) && isGuild)
             {
                 data["collectible"] = false;
+
+                // Make sure any Criteria which are listed under Guild Achievements are also forced non-collectible
+                if (data.TryGetValue("g", out List<object> g))
+                {
+                    foreach(object group in g)
+                    {
+                        if (group.TryConvert(out Dictionary<string, object> groupData))
+                        {
+                            if (groupData.ContainsKey("criteriaID"))
+                            {
+                                groupData["collectible"] = false;
+                            }
+                        }
+                    }
+                }
             }
 
             // If not processing the Main Achievement Category, then any encountered non-guild Achievements (which are not Criteria) should be duplicated into the Main Achievement Category

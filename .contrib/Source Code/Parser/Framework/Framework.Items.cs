@@ -581,7 +581,7 @@ namespace ATT
                     // With the if statement is left intact, it doesn't allow the ItemDBConditional to properly assign the b field for Heirlooms and stuff.
                     // There are other cases as well, but that one is the most problematic.
 
-                        // long
+                    // long
                     case "e":
                     case "u":
                         {
@@ -606,7 +606,7 @@ namespace ATT
                             break;
                         }
 
-                        // string-array
+                    // string-array
                     case "timeline":
                         if (!ProcessingMergeData) break;
 
@@ -858,7 +858,10 @@ namespace ATT
                         if (!data.ContainsKey(field))
                         {
                             data[field] = value;
-                            LogDebug($"MergeInto {data["itemID"]}: {field} <==", value);
+                            if (field != "b") // bit spammy, even for debug logging
+                            {
+                                LogDebug($"MergeInto {data["itemID"]}: {field} <==", value);
+                            }
                         }
                         break;
                     case "races":
