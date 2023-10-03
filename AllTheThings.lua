@@ -6784,7 +6784,7 @@ local QuestNameDefault = setmetatable({}, { __index = function(t, id)
 	end
 end});
 local function GetQuestName(id)
-	return L["QUEST_NAMES"][id] or QuestNameFromServer[id] or QuestNameDefault[id] or RETRIEVING_DATA;
+	return L["QUEST_NAMES"][id] or QuestNameFromServer[id] or QuestNameDefault[id];
 end
 app.GetQuestName = GetQuestName;
 local QuestsRequested = {};
@@ -7236,8 +7236,7 @@ local questFields = {
 			end
 			return name;
 		end
-		local id = t.questID;
-		return L["QUEST_NAMES"][id] or QuestNameFromServer[id] or QuestNameDefault[id];
+		return GetQuestName(t.questID);
 	end,
 	["title"] = function(t)
 		local server = QuestNameFromServer[t.questID];
@@ -8060,12 +8059,19 @@ local criteriaFields = {
 
 				local sourceQuests = t.sourceQuests;
 				if sourceQuests then
+					local name
 					for k,id in ipairs(sourceQuests) do
-						return app.GetQuestName(id);
+						name = app.GetQuestName(id);
+						app.PrintDebug(name)
+						if name then
+							return name
+						end
 					end
+					return RETRIEVING_DATA
 				end
 			end
 		end
+		app.PrintDebug("failed to retrieve criteria name",achievementID,t.criteriaID)
 		return L["WRONG_FACTION"];
 	end,
 	["description"] = function(t)
