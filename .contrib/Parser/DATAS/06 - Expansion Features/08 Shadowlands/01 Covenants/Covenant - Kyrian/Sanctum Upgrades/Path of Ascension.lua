@@ -166,33 +166,33 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							ach(14856),	-- Charmed, I'm Sure
 							ach(14865),	-- Disciple of Humility
 							achraw(14862, {	-- It's How You Wear It
-								crit(1),	-- Herald's Footpads
-								crit(2),	-- Deep Echo Trident
-								crit(3),	-- Vial of Lichfrost
-								crit(4),	-- Phial of Serenity
-								crit(5),	-- Ring of Warding
-								crit(6),	-- Spiritforged Aegis
+								crit(51087),	-- Herald's Footpads
+								crit(51088),	-- Deep Echo Trident
+								crit(51089),	-- Vial of Lichfrost
+								crit(51090),	-- Phial of Serenity
+								crit(51091),	-- Ring of Warding
+								crit(51092),	-- Spiritforged Aegis
 							}),
 							achraw(14854, {	-- It's Not What You Wear
-								crit(1),	-- Herald's Footpads
-								crit(2),	-- Deep Echo Trident
-								crit(3),	-- Vial of Lichfrost
-								crit(4),	-- Phial of Serenity
-								crit(5),	-- Ring of Warding
-								crit(6),	-- Spiritforged Aegis
+								crit(51081),	-- Herald's Footpads
+								crit(51082),	-- Deep Echo Trident
+								crit(51083),	-- Vial of Lichfrost
+								crit(51084),	-- Phial of Serenity
+								crit(51085),	-- Ring of Warding
+								crit(51086),	-- Spiritforged Aegis
 							}),
 							ach(14861),	-- Learning from the Masters
 							achraw(14866, {	-- Master of the Path
-								crit(1),	-- Kalisthene
-								crit(2),	-- Echthra
-								crit(3),	-- Alderyn and Myn'ir
-								crit(4),	-- Nuuminuuru
-								crit(5),	-- Craven Corinth
-								crit(6),	-- Splinterbark Nightmare
-								crit(7),	-- Thran'tiok
-								crit(8),	-- Mad Mortimer
-								crit(9),	-- Athanos
-								crit(10),	-- Azaruux
+								crit(51134),	-- Kalisthene
+								crit(51135),	-- Echthra
+								crit(51136),	-- Alderyn and Myn'ir
+								crit(51137),	-- Nuuminuuru
+								crit(51138),	-- Craven Corinth
+								crit(51139),	-- Splinterbark Nightmare
+								crit(51140),	-- Thran'tiok
+								crit(51141),	-- Mad Mortimer
+								crit(51142),	-- Athanos
+								crit(51143),	-- Azaruux
 							}),
 							ach(14502),	-- Pursuing Loyalty
 							ach(14852),	-- The Hoot of the Issue
@@ -694,10 +694,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 											n(LOYALTY, {
 												["description"] = "Requires defeating the first 6 memories on 'Courage' difficulty (Kalisthene, Echthra, Alderyn & Myn'ir, Nuuminuuru, Craven Corinth, and Splinterbark Nightmare).",
 												["g"] = {
-													crit(1, {	-- Defeat Alderyn and Myn'ir in a Trial of Loyalty as Mikanikos
+													crit(51079, {	-- Defeat Alderyn and Myn'ir in a Trial of Loyalty as Mikanikos
 														["achievementID"] = 14852,	-- The Hoot of the Issue
 													}),
-													crit(3, ach(14502)),	-- Pursuing Loyalty - Alderyn & Myn'ir
+													crit(48624, ach(14502)),	-- Pursuing Loyalty - Alderyn & Myn'ir
 													i(184407, {	-- Blueprint: Steward Mail Pouch
 													--	this quest showed as complete for me before i did it... not sure what's up there.
 														["questID"] = 62970,	-- Blueprint: Steward Mail Pouch
@@ -707,7 +707,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										},
 									}),
 									n(172412, {	-- Craven Corinth
-										crit(2, {	-- Defeat Craven Corinth with Spiritforged Aegis
+										crit(51078, {	-- Defeat Craven Corinth with Spiritforged Aegis
 											["achievementID"] = 14851,	-- Bastion of Protection
 										}),
 										n(COURAGE, {
@@ -725,7 +725,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										n(LOYALTY, {
 											["description"] = "Requires defeating the first 6 memories on 'Courage' difficulty (Kalisthene, Echthra, Alderyn & Myn'ir, Nuuminuuru, Craven Corinth, and Splinterbark Nightmare).",
 											["g"] = {
-												crit(2, ach(14502)),	-- Pursuing Loyalty - Echthra
+												crit(48623, ach(14502)),	-- Pursuing Loyalty - Echthra
 												i(184445, {	-- Blueprint: Medallion of Service
 													["questID"] = 62984,	-- Blueprint: Medallion of Service
 												}),
@@ -733,7 +733,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										}),
 									}),
 									n(170654, {	-- Kalisthene
-										crit(1, {	-- Defeat Kalisthene with Spiritforged Aegis
+										crit(51077, {	-- Defeat Kalisthene with Spiritforged Aegis
 											["achievementID"] = 14851,	-- Bastion of Protection
 										}),
 										n(COURAGE, {
@@ -744,7 +744,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										n(LOYALTY, {
 											["description"] = "Requires defeating the first 6 memories on 'Courage' difficulty (Kalisthene, Echthra, Alderyn & Myn'ir, Nuuminuuru, Craven Corinth, and Splinterbark Nightmare).",
 											["g"] = {
-												crit(1, ach(14502)),	-- Pursuing Loyalty - Kalisthene
+												crit(48622, ach(14502)),	-- Pursuing Loyalty - Kalisthene
 												i(180495, {	-- Blueprint: Phial of Serenity
 													["questID"] = 60973,	-- Blueprint: Phial of Serenity
 												}),
@@ -760,7 +760,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										n(LOYALTY, {
 											["description"] = "Requires defeating the first 6 memories on 'Courage' difficulty (Kalisthene, Echthra, Alderyn & Myn'ir, Nuuminuuru, Craven Corinth, and Splinterbark Nightmare).",
 											["g"] = {
-												crit(4, ach(14502)),	-- Pursuing Loyalty - Nuuminuuru
+												crit(48625, ach(14502)),	-- Pursuing Loyalty - Nuuminuuru
 												BRIGHTSCALE_HATCHLING,	-- (PET!)
 											},
 										}),
@@ -977,7 +977,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										n(LOYALTY, {
 											["description"] = "Requires defeating Than'tiok, Mad Mortimer, and Athanos on 'Courage' difficulty; and unlocking Azaruux.",
 											["g"] = {
-												crit(5, ach(14502)),	-- Pursuing Loyalty - Craven Corinth
+												crit(48626, ach(14502)),	-- Pursuing Loyalty - Craven Corinth
 												i(184411, {	-- Blueprint: Gilded Abacus
 													["questID"] = 62971,	-- Blueprint: Gilded Abacus
 												}),
@@ -998,7 +998,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 												}),
 											}),
 											n(LOYALTY, {
-												crit(8, ach(14502)),	-- Pursuing Loyalty - Mad Mortimer
+												crit(48629, ach(14502)),	-- Pursuing Loyalty - Mad Mortimer
 												i(180761),	-- Phalynx of Loyalty (MOUNT!)
 											}),
 										},
@@ -1007,10 +1007,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										n(LOYALTY, {
 											["description"] = "Requires defeating Than'tiok, Mad Mortimer, and Athanos on 'Courage' difficulty; and unlocking Azaruux.",
 											["g"] = {
-												crit(2, {	-- Defeat Splinterbark Nightmare in a Trial of Loyalty as Mikanikos
+												crit(51080, {	-- Defeat Splinterbark Nightmare in a Trial of Loyalty as Mikanikos
 													["achievementID"] = 14852,	-- The Hoot of the Issue
 												}),
-												crit(6, ach(14502)),	-- Pursuing Loyalty - Splinterbark Nightmare
+												crit(48627, ach(14502)),	-- Pursuing Loyalty - Splinterbark Nightmare
 												i(184348, {	-- Blueprint: Ring of Warding
 													["questID"] = 62928,	-- Blueprint: Ring of Warding
 												}),
@@ -1026,7 +1026,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										n(LOYALTY, {
 											["description"] = "Requires unlocking and defeating Azaruux.",
 											["g"] = {
-												crit(7, ach(14502)),	-- Pursuing Loyalty - Thran'tiok
+												crit(48628, ach(14502)),	-- Pursuing Loyalty - Thran'tiok
 												i(181238, {	-- Blueprint: Charm of Focus
 													["questID"] = 63000,	-- Blueprint: Charm of Focus
 												}),
@@ -1169,13 +1169,13 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									}),
 									n(170654, {	-- Kalisthene
 										n(WISDOM, {
-											crit(1, {	-- Defeat Kalisthene as Pelagos
+											crit(51098, {	-- Defeat Kalisthene as Pelagos
 												["achievementID"] = 14861,	-- Learning from the Masters
 											}),
-											crit(2, {	-- Defeat Kalisthene as Kleia
+											crit(51097, {	-- Defeat Kalisthene as Kleia
 												["achievementID"] = 14861,	-- Learning from the Masters
 											}),
-											crit(3, {	-- Defeat Kalisthene as Mikanikos
+											crit(51099, {	-- Defeat Kalisthene as Mikanikos
 												["achievementID"] = 14861,	-- Learning from the Masters
 											}),
 											i(183761, {	-- Blueprint: Skystrider Glider
@@ -1198,13 +1198,13 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									n(171873, {	-- Athanos
 										n(WISDOM, {
 											ach(14859),	-- Inside the Park Home Run
-											crit(4, {	-- Defeat Athanos as Pelagos
+											crit(51100, {	-- Defeat Athanos as Pelagos
 												["achievementID"] = 14861,	-- Learning from the Masters
 											}),
-											crit(5, {	-- Defeat Athanos as Kleia
+											crit(51101, {	-- Defeat Athanos as Kleia
 												["achievementID"] = 14861,	-- Learning from the Masters
 											}),
-											crit(6, {	-- Defeat Athanos as Mikanikos
+											crit(51102, {	-- Defeat Athanos as Mikanikos
 												["achievementID"] = 14861,	-- Learning from the Masters
 											}),
 											i(181287),	-- Halo of the Reverent
@@ -1266,13 +1266,13 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									}),
 									n(171873, {	-- Athanos
 										n(HUMILITY, {
-											crit(25, {	-- Defeat Athanos as Pelagos
+											crit(51128, {	-- Defeat Athanos as Pelagos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(26, {	-- Defeat Athanos as Kleia
+											crit(51129, {	-- Defeat Athanos as Kleia
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(27, {	-- Defeat Athanos as Mikanikos
+											crit(51130, {	-- Defeat Athanos as Mikanikos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
 											i(177205),	-- Reverent Bearer's Chestplate
@@ -1284,13 +1284,13 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									}),
 									n(172333, {	-- Azaruux
 										n(HUMILITY, {
-											crit(28, {	-- Defeat Azaruux as Pelagos
+											crit(51131, {	-- Defeat Azaruux as Pelagos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(29, {	-- Defeat Azaruux as Kleia
+											crit(51132, {	-- Defeat Azaruux as Kleia
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(30, {	-- Defeat Azaruux as Mikanikos
+											crit(51133, {	-- Defeat Azaruux as Mikanikos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
 											i(181297),	-- Reverent Wings of the Ascended
@@ -1300,13 +1300,13 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										["crs"] = { 172409 },	-- Myn'ir
 										["g"] = {
 											n(HUMILITY, {
-												crit(7, {	-- Defeat Alderyn and Myn'ir as Pelagos
+												crit(51110, {	-- Defeat Alderyn and Myn'ir as Pelagos
 													["achievementID"] = 14865,	-- Disciple of Humility
 												}),
-												crit(8, {	-- Defeat Alderyn and Myn'ir as Kleia
+												crit(51111, {	-- Defeat Alderyn and Myn'ir as Kleia
 													["achievementID"] = 14865,	-- Disciple of Humility
 												}),
-												crit(9, {	-- Defeat Alderyn and Myn'ir as Mikanikos
+												crit(51112, {	-- Defeat Alderyn and Myn'ir as Mikanikos
 													["achievementID"] = 14865,	-- Disciple of Humility
 												}),
 												i(177208),	-- Reverent Bearer's Legguards
@@ -1319,13 +1319,13 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									}),
 									n(172412, {	-- Craven Corinth
 										n(HUMILITY, {
-											crit(13, {	-- Defeat Craven Corinth as Pelagos
+											crit(51116, {	-- Defeat Craven Corinth as Pelagos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(14, {	-- Defeat Craven Corinth as Kleia
+											crit(51117, {	-- Defeat Craven Corinth as Kleia
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(15, {	-- Defeat Craven Corinth as Mikanikos
+											crit(51118, {	-- Defeat Craven Corinth as Mikanikos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
 											i(177207),	-- Reverent Bearer's Gauntlets
@@ -1337,13 +1337,13 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									}),
 									n(172177, {	-- Echthra
 										n(HUMILITY, {
-											crit(4, {	-- Defeat Echthra as Pelagos
+											crit(51107, {	-- Defeat Echthra as Pelagos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(5, {	-- Defeat Echthra as Kleia
+											crit(51108, {	-- Defeat Echthra as Kleia
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(6, {	-- Defeat Echthra as Mikanikos
+											crit(51109, {	-- Defeat Echthra as Mikanikos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
 											i(177210),	-- Reverent Bearer's Girdle
@@ -1355,13 +1355,13 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									}),
 									n(170654, {	-- Kalisthene
 										n(HUMILITY, {
-											crit(1, {	-- Defeat Kalisthene as Pelagos
+											crit(51104, {	-- Defeat Kalisthene as Pelagos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(2, {	-- Defeat Kalisthene as Kleia
+											crit(51105, {	-- Defeat Kalisthene as Kleia
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(3, {	-- Defeat Kalisthene as Mikanikos
+											crit(51106, {	-- Defeat Kalisthene as Mikanikos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
 											i(179971),	-- Reverent Forgelite's Helm
@@ -1379,13 +1379,13 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										},
 										["g"] = {
 											n(HUMILITY, {
-												crit(22, {	-- Defeat Mad Mortimer as Pelagos
+												crit(51125, {	-- Defeat Mad Mortimer as Pelagos
 												["achievementID"] = 14865,	-- Disciple of Humility
 												}),
-												crit(23, {	-- Defeat Mad Mortimer as Kleia
+												crit(51126, {	-- Defeat Mad Mortimer as Kleia
 												["achievementID"] = 14865,	-- Disciple of Humility
 												}),
-												crit(24, {	-- Defeat Mad Mortimer as Mikanikos
+												crit(51127, {	-- Defeat Mad Mortimer as Mikanikos
 												["achievementID"] = 14865,	-- Disciple of Humility
 												}),
 												i(177211),	-- Reverent Bearer's Wristwraps
@@ -1398,13 +1398,13 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									}),
 									n(172410, {	-- Nuuminuuru
 										n(HUMILITY, {
-											crit(10, {	-- Defeat Nuuminuuru as Pelagos
+											crit(51113, {	-- Defeat Nuuminuuru as Pelagos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(11, {	-- Defeat Nuuminuuru as Kleia
+											crit(51114, {	-- Defeat Nuuminuuru as Kleia
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(12, {	-- Defeat Nuuminuuru as Mikanikos
+											crit(51115, {	-- Defeat Nuuminuuru as Mikanikos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
 											i(177206),	-- Reverent Bearer's Warboots
@@ -1416,13 +1416,13 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									}),
 									n(172682, {	-- Splinterbark Nightmare
 										n(HUMILITY, {
-											crit(16, {	-- Defeat Splinterbark Nightmare as Pelagos
+											crit(51119, {	-- Defeat Splinterbark Nightmare as Pelagos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(17, {	-- Defeat Splinterbark Nightmare as Kleia
+											crit(51120, {	-- Defeat Splinterbark Nightmare as Kleia
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(18, {	-- Defeat Splinterbark Nightmare as Mikanikos
+											crit(51121, {	-- Defeat Splinterbark Nightmare as Mikanikos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
 											i(177209),	-- Reverent Bearer's Shoulders
@@ -1434,13 +1434,13 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									}),
 									n(172411, {	-- Thran'tiok
 										n(HUMILITY, {
-											crit(19, {	-- Defeat Thran'tiok as Pelagos
+											crit(51122, {	-- Defeat Thran'tiok as Pelagos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(20, {	-- Defeat Thran'tiok as Kleia
+											crit(51123, {	-- Defeat Thran'tiok as Kleia
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
-											crit(21, {	-- Defeat Thran'tiok as Mikanikos
+											crit(51124, {	-- Defeat Thran'tiok as Mikanikos
 												["achievementID"] = 14865,	-- Disciple of Humility
 											}),
 											i(177221),	-- Reverent Bearer's Cloak

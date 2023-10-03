@@ -494,35 +494,35 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 		ach(12744, {	-- The Kul Tiran Menu
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				crit(1, { ["provider"] = { "i", 156526 } } ),	-- Bountiful Captain's Feast
-				crit(2, { ["provider"] = { "i", 156525 } } ),	-- Galley Banquet
-				crit(3, { ["provider"] = { "i", 154889 } } ),	-- Grilled Catfish
-				crit(4, { ["provider"] = { "i", 154882 } } ),	-- Honey-Glazed Haunches
-				crit(5, { ["provider"] = { "i", 154881 } } ),	-- Kul Tiramisu
-				crit(6, { ["provider"] = { "i", 154887 } } ),	-- Loa Loaf
-				crit(7, { ["provider"] = { "i", 154885 } } ),	-- Mon'Dazi
-				crit(8, { ["provider"] = { "i", 154883 } } ),	-- Ravenberry Tarts
-				crit(9, { ["provider"] = { "i", 154888 } } ),	-- Sailor's Pie
-				crit(10, { ["provider"] = { "i", 154891 } } ),	-- Seasoned Loins
-				crit(11, { ["provider"] = { "i", 154886 } } ),	-- Spiced Snapper
-				crit(12, { ["provider"] = { "i", 154884 } } ),	-- Swamp Fish 'n Chips
+				crit(40770, { ["provider"] = { "i", 156526 } } ),	-- Bountiful Captain's Feast
+				crit(40773, { ["provider"] = { "i", 156525 } } ),	-- Galley Banquet
+				crit(40776, { ["provider"] = { "i", 154889 } } ),	-- Grilled Catfish
+				crit(40780, { ["provider"] = { "i", 154882 } } ),	-- Honey-Glazed Haunches
+				crit(40783, { ["provider"] = { "i", 154881 } } ),	-- Kul Tiramisu
+				crit(40786, { ["provider"] = { "i", 154887 } } ),	-- Loa Loaf
+				crit(40789, { ["provider"] = { "i", 154885 } } ),	-- Mon'Dazi
+				crit(40792, { ["provider"] = { "i", 154883 } } ),	-- Ravenberry Tarts
+				crit(40795, { ["provider"] = { "i", 154888 } } ),	-- Sailor's Pie
+				crit(40798, { ["provider"] = { "i", 154891 } } ),	-- Seasoned Loins
+				crit(40801, { ["provider"] = { "i", 154886 } } ),	-- Spiced Snapper
+				crit(40804, { ["provider"] = { "i", 154884 } } ),	-- Swamp Fish 'n Chips
 			},
 		}),
 		ach(12746, {	-- The Zandalari Menu
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				crit(1, { ["provider"] = { "i", 156526 } } ),	-- Bountiful Captain's Feast
-				crit(2, { ["provider"] = { "i", 156525 } } ),	-- Galley Banquet
-				crit(3, { ["provider"] = { "i", 154889 } } ),	-- Grilled Catfish
-				crit(4, { ["provider"] = { "i", 154882 } } ),	-- Honey-Glazed Haunches
-				crit(5, { ["provider"] = { "i", 154881 } } ),	-- Kul Tiramisu
-				crit(6, { ["provider"] = { "i", 154887 } } ),	-- Loa Loaf
-				crit(7, { ["provider"] = { "i", 154885 } } ),	-- Mon'Dazi
-				crit(8, { ["provider"] = { "i", 154883 } } ),	-- Ravenberry Tarts
-				crit(9, { ["provider"] = { "i", 154888 } } ),	-- Sailor's Pie
-				crit(10, { ["provider"] = { "i", 154891 } } ),	-- Seasoned Loins
-				crit(11, { ["provider"] = { "i", 154886 } } ),	-- Spiced Snapper
-				crit(12, { ["provider"] = { "i", 154884 } } ),	-- Swamp Fish 'n Chips
+				crit(40770, { ["provider"] = { "i", 156526 } } ),	-- Bountiful Captain's Feast
+				crit(40773, { ["provider"] = { "i", 156525 } } ),	-- Galley Banquet
+				crit(40776, { ["provider"] = { "i", 154889 } } ),	-- Grilled Catfish
+				crit(40780, { ["provider"] = { "i", 154882 } } ),	-- Honey-Glazed Haunches
+				crit(40783, { ["provider"] = { "i", 154881 } } ),	-- Kul Tiramisu
+				crit(40786, { ["provider"] = { "i", 154887 } } ),	-- Loa Loaf
+				crit(40789, { ["provider"] = { "i", 154885 } } ),	-- Mon'Dazi
+				crit(40792, { ["provider"] = { "i", 154883 } } ),	-- Ravenberry Tarts
+				crit(40795, { ["provider"] = { "i", 154888 } } ),	-- Sailor's Pie
+				crit(40798, { ["provider"] = { "i", 154891 } } ),	-- Seasoned Loins
+				crit(40801, { ["provider"] = { "i", 154886 } } ),	-- Spiced Snapper
+				crit(40804, { ["provider"] = { "i", 154884 } } ),	-- Swamp Fish 'n Chips
 			},
 		}),
 	})),

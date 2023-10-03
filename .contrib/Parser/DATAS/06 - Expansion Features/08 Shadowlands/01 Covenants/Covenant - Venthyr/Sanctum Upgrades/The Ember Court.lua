@@ -146,169 +146,169 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["g"] = {
 						n(ACHIEVEMENTS, {
 							achraw(14723, {	-- Be Our Guest
-								crit(1, {	-- Baroness Vashj
+								crit(49730, {	-- Baroness Vashj
 									["_npcs"] = { 168444 },
 								}),
-								crit(2, {	-- Lady Moonberry
+								crit(49731, {	-- Lady Moonberry
 									["_npcs"] = { 171830 },
 								}),
-								crit(3, {	-- Mikanikos
+								crit(49732, {	-- Mikanikos
 									["_npcs"] = { 171831 },
 								}),
-								crit(4, {	-- The Countess
+								crit(49733, {	-- The Countess
 									["_npcs"] = { 165269 },
 								}),
-								crit(5, {	-- Alexandros Mograine
+								crit(49734, {	-- Alexandros Mograine
 									["_npcs"] = { 171833 },
 								}),
-								crit(6, {	-- Hunt-Captain Korayn
+								crit(49735, {	-- Hunt-Captain Korayn
 									["_npcs"] = { 171836 },
 								}),
-								crit(7, {	-- Polemarch Adrestes
+								crit(49736, {	-- Polemarch Adrestes
 									["_npcs"] = { 168447 },
 								}),
-								crit(8, {	-- Rendle and Cudgelface
+								crit(49737, {	-- Rendle and Cudgelface
 									["_npcs"] = { 171839 },	-- Rendle
 								}),
-								crit(9, {	-- Choofa
+								crit(49738, {	-- Choofa
 									["_npcs"] = { 168449 },
 								}),
-								crit(10, {	-- Cryptkeeper Kassir
+								crit(49739, {	-- Cryptkeeper Kassir
 									["_npcs"] = { 168450 },
 								}),
-								crit(11, {	-- Droman Aliothe
+								crit(49740, {	-- Droman Aliothe
 									["_npcs"] = { 171847 },
 								}),
-								crit(12, {	-- Grandmaster Vole
+								crit(49741, {	-- Grandmaster Vole
 									["_npcs"] = { 171848 },
 								}),
-								crit(13, {	-- Kleia and Pelagos
+								crit(49742, {	-- Kleia and Pelagos
 									["_npcs"] = { 171850 },	-- Kleia
 								}),
-								crit(14, {	-- Plague Deviser Marileth
+								crit(49743, {	-- Plague Deviser Marileth
 									["_npcs"] = { 171852 },
 								}),
-								crit(15, {	-- Sika
+								crit(49744, {	-- Sika
 									["_npcs"] = { 171854 },
 								}),
-								crit(16, {	-- Stonehead
+								crit(49745, {	-- Stonehead
 									["_npcs"] = { 171856 },
 								}),
 							}),
 							ach(14678, {	-- Court Favors
-								crit(1, {	-- Anima-Infused Water
+								crit(49630, {	-- Anima-Infused Water
 									["_quests"] = { 59681 },
 								}),
-								crit(2, {	-- Crown of Honor
+								crit(49631, {	-- Crown of Honor
 									["_quests"] = { 59682 },
 								}),
-								crit(3, {	-- Bewitched Wardrobe
+								crit(49632, {	-- Bewitched Wardrobe
 									["_quests"] = { 59683 },
 								}),
-								crit(4, {	-- Bounding Shroom Seeds
+								crit(49633, {	-- Bounding Shroom Seeds
 									["_quests"] = { 59684 },
 								}),
-								crit(5, {	-- Rally Bell
+								crit(49634, {	-- Rally Bell
 									["_quests"] = { 59685 },
 								}),
-								crit(6, {	-- Tubbins's Lucky Teapot
+								crit(49635, {	-- Tubbins's Lucky Teapot
 									["_quests"] = { 59686 },
 								}),
-								crit(7, {	-- Dog Bone's Bone
+								crit(49636, {	-- Dog Bone's Bone
 									["_quests"] = { 59687 },
 								}),
-								crit(8, {	-- Dredger Party Supplies
+								crit(49637, {	-- Dredger Party Supplies
 									["_quests"] = { 59688 },
 								}),
-								crit(9, {	-- Generous Gift
+								crit(49638, {	-- Generous Gift
 									["_quests"] = { 59689 },
 								}),
-								crit(10, {	-- Racing Permit
+								crit(49639, {	-- Racing Permit
 									["_quests"] = { 59690 },
 								}),
-								crit(11, {	-- Necrolord Arsenal
+								crit(49640, {	-- Necrolord Arsenal
 									["_quests"] = { 59691 },
 								}),
-								crit(12, {	-- Venthyr Arsenal
+								crit(49641, {	-- Venthyr Arsenal
 									["_quests"] = { 59692 },
 								}),
-								crit(13, {	-- Kyrian Arsenal
+								crit(49642, {	-- Kyrian Arsenal
 									["_quests"] = { 59693 },
 								}),
-								crit(14, {	-- Night Fae Arsenal
+								crit(49643, {	-- Night Fae Arsenal
 									["_quests"] = { 59694 },
 								}),
-								crit(15, {	-- Maldraxxi Challenge Banner
+								crit(49644, {	-- Maldraxxi Challenge Banner
 									["_quests"] = { 59695 },
 								}),
-								crit(16, {	-- Vanity Mirror
+								crit(49645, {	-- Vanity Mirror
 									["_quests"] = { 61452 },
 								}),
-								crit(17, {	-- Training Dummies
+								crit(49646, {	-- Training Dummies
 									["_quests"] = { 61453 },
 								}),
-								crit(18, {	-- The Wild Drum
+								crit(49647, {	-- The Wild Drum
 									["_quests"] = { 61454 },
 								}),
-								crit(19, {	-- Protective Braziers
+								crit(49648, {	-- Protective Braziers
 									["_quests"] = { 61455 },
 								}),
-								crit(20, {	-- Slippery Muck
+								crit(49649, {	-- Slippery Muck
 									["_quests"] = { 61456 },
 								}),
-								crit(21, {	-- Altar of Accomplishment
+								crit(49650, {	-- Altar of Accomplishment
 									["_quests"] = { 61457 },
 								}),
 							}),
 							ach(14681, {	-- Dredger Academy
-								crit(1, {	-- Ardenweald Etiquette
+								crit(49652, {	-- Ardenweald Etiquette
 									["_quests"] = { 62206 },	-- Ardenweald Etiquette
 								}),
-								crit(2, {	-- Bastion Etiquette
+								crit(49653, {	-- Bastion Etiquette
 									["_quests"] = { 62207 },	-- Bastion Etiquette
 								}),
-								crit(3, {	-- Maldraxxus Etiquette
+								crit(49654, {	-- Maldraxxus Etiquette
 									["_quests"] = { 62208 },	-- Maldraxxi Protocols
 								}),
-								crit(4, {	-- Revendreth Etiquette
+								crit(49655, {	-- Revendreth Etiquette
 									["_quests"] = { 62205 },	-- Venthyr Ettiquette
 								}),
-								crit(5, {	-- Sinrunner Riding
+								crit(50027, {	-- Sinrunner Riding
 									["_quests"] = { 62221 },	-- My Own Death Pony!
 								}),
-								crit(6, {	-- Dredbat Riding
+								crit(50028, {	-- Dredbat Riding
 									["_quests"] = { 62222 },	-- On Silver Wings
 								}),
 							}),
 							ach(14683, {	-- Dredger Style
-								crit(1, {	-- Black Muck Armor Dye
+								crit(49651, {	-- Black Muck Armor Dye
 									["_quests"] = { 62178 },	-- Black Muck Dye
 								}),
-								crit(2, {	-- Blue Muck Armor Dye
+								crit(50018, {	-- Blue Muck Armor Dye
 									["_quests"] = { 62179 },	-- Blue Muck Dye
 								}),
-								crit(3, {	-- Green Muck Armor Dye
+								crit(50019, {	-- Green Muck Armor Dye
 									["_quests"] = { 62180 },	-- Green Muck Dye
 								}),
-								crit(4, {	-- Bubbling Muck Armor Dye
+								crit(50020, {	-- Bubbling Muck Armor Dye
 									["_quests"] = { 62181 },	-- Bubbling Red Muck Dye
 								}),
-								crit(5, {	-- Thin Hair Cut
+								crit(50021, {	-- Thin Hair Cut
 									["_quests"] = { 62177 },	-- A Memorable Look
 								}),
-								crit(6, {	-- Spikey Hair Cut
+								crit(50022, {	-- Spikey Hair Cut
 									["_quests"] = { 62176 },	-- The Spikey Look
 								}),
-								crit(7, {	-- Full Flowing Hair Cut
+								crit(50023, {	-- Full Flowing Hair Cut
 									["_quests"] = { 62175 },	-- Looking Fabulous
 								}),
-								crit(8, {	-- Dredger Lether Coif
+								crit(50024, {	-- Dredger Lether Coif
 									["_quests"] = { 62174 },	-- A Proper Cover
 								}),
-								crit(9, {	-- Short Sleeved Doublet
+								crit(50025, {	-- Short Sleeved Doublet
 									["_quests"] = { 62172 },	-- Shortsleeved Doublet
 								}),
-								crit(10, {	-- Long Sleeved Doublet
+								crit(50026, {	-- Long Sleeved Doublet
 									["_quests"] = { 62173 },	-- Long Sleeved Doublet
 								}),
 							}),
@@ -326,157 +326,157 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							}),
 							ach(14727),		-- Master of Ceremonies
 							ach(14679, {	-- Party Palace
-								crit(1, {	-- Building: Dredger Pool
+								crit(49613, {	-- Building: Dredger Pool
 									["_quests"] = { 61493 },
 								}),
-								crit(2, {	-- Building: Guardhouse
+								crit(49612, {	-- Building: Guardhouse
 									["_quests"] = { 61494 },
 								}),
-								crit(3, {	-- Staff: Dredger Decorators
+								crit(49614, {	-- Staff: Dredger Decorators
 									["_quests"] = { 59435 },
 								}),
-								crit(4, {	-- Staff: Stage Crew
+								crit(49615, {	-- Staff: Stage Crew
 									["_quests"] = { 59436 },
 								}),
-								crit(5, {	-- Staff: Waiters
+								crit(49616, {	-- Staff: Waiters
 									["_quests"] = { 59433 },
 								}),
-								crit(6, {	-- Staff: Bouncers
+								crit(49617, {	-- Staff: Bouncers
 									["_quests"] = { 59437 },
 								}),
-								crit(7, {	-- Staff: Revendreth Ambassador
+								crit(49621, {	-- Staff: Revendreth Ambassador
 									["_quests"] = { 61501 },
 								}),
-								crit(8, {	-- Staff: Ardenweald Ambassador
+								crit(49622, {	-- Staff: Ardenweald Ambassador
 									["_quests"] = { 61502 },
 								}),
-								crit(9, {	-- Staff: Maldraxxus Ambassador
+								crit(49623, {	-- Staff: Maldraxxus Ambassador
 									["_quests"] = { 61887 },
 								}),
-								crit(10, {	-- Staff: Bastion Ambassador
+								crit(49624, {	-- Staff: Bastion Ambassador
 									["_quests"] = { 61888 },
 								}),
-								crit(11, {	-- Stock: Greeting Kits
+								crit(49625, {	-- Stock: Greeting Kits
 									["_quests"] = { 61497 },
 								}),
-								crit(12, {	-- Stock: Appetizers
+								crit(49626, {	-- Stock: Appetizers
 									["_quests"] = { 61498 },
 								}),
-								crit(13, {	-- Stock: Anima Samples
+								crit(49627, {	-- Stock: Anima Samples
 									["_quests"] = { 61499 },
 								}),
-								crit(14, {	-- Stock: Comfy Chairs
+								crit(49628, {	-- Stock: Comfy Chairs
 									["_quests"] = { 61500 },
 								}),
-								crit(15, {	-- Second Guest List Page
+								crit(49618, {	-- Second Guest List Page
 									["_quests"] = { 61504 },
 								}),
-								crit(16, {	-- Third Guest List Page
+								crit(49619, {	-- Third Guest List Page
 									["_quests"] = { 61505 },
 								}),
-								crit(17, {	-- Fourth Guest List Page
+								crit(49620, {	-- Fourth Guest List Page
 									["_quests"] = { 61506 },
 								}),
 							}),
 							achraw(14724, {	-- People Pleaser
-								crit(1, {	-- Baroness Vashj
+								crit(49748, {	-- Baroness Vashj
 									["_npcs"] = { 168444 },
 								}),
-								crit(2, {	-- Lady Moonberry
+								crit(49749, {	-- Lady Moonberry
 									["_npcs"] = { 171830 },
 								}),
-								crit(3, {	-- Mikanikos
+								crit(49750, {	-- Mikanikos
 									["_npcs"] = { 171831 },
 								}),
-								crit(4, {	-- The Countess
+								crit(49751, {	-- The Countess
 									["_npcs"] = { 165269 },
 								}),
-								crit(5, {	-- Alexandros Mograine
+								crit(49752, {	-- Alexandros Mograine
 									["_npcs"] = { 171833 },
 								}),
-								crit(6, {	-- Hunt-Captain Korayn
+								crit(49753, {	-- Hunt-Captain Korayn
 									["_npcs"] = { 171836 },
 								}),
-								crit(7, {	-- Polemarch Adrestes
+								crit(49754, {	-- Polemarch Adrestes
 									["_npcs"] = { 168447 },
 								}),
-								crit(8, {	-- Rendle and Cudgelface
+								crit(49755, {	-- Rendle and Cudgelface
 									["_npcs"] = { 171839 },	-- Rendle
 								}),
-								crit(9, {	-- Choofa
+								crit(49756, {	-- Choofa
 									["_npcs"] = { 168449 },
 								}),
-								crit(10, {	-- Cryptkeeper Kassir
+								crit(49757, {	-- Cryptkeeper Kassir
 									["_npcs"] = { 168450 },
 								}),
-								crit(11, {	-- Droman Aliothe
+								crit(49758, {	-- Droman Aliothe
 									["_npcs"] = { 171847 },
 								}),
-								crit(12, {	-- Grandmaster Vole
+								crit(49759, {	-- Grandmaster Vole
 									["_npcs"] = { 171848 },
 								}),
-								crit(13, {	-- Kleia and Pelagos
+								crit(49760, {	-- Kleia and Pelagos
 									["_npcs"] = { 171850 },	-- Kleia
 								}),
-								crit(14, {	-- Plague Deviser Marileth
+								crit(49761, {	-- Plague Deviser Marileth
 									["_npcs"] = { 171852 },
 								}),
-								crit(15, {	-- Sika
+								crit(49762, {	-- Sika
 									["_npcs"] = { 171854 },
 								}),
-								crit(16, {	-- Stonehead
+								crit(49763, {	-- Stonehead
 									["_npcs"] = { 171856 },
 								}),
 							}),
 							achraw(14749, {	-- Rendle's Big Day
-								crit(1, {	-- Crown of the Righteous
+								crit(49880, {	-- Crown of the Righteous
 									["_quests"] = { 62559 },	-- Sootible Hat: Crown of the Righteous
 								}),
-								crit(2, {	-- Fae Revel Masque
+								crit(49879, {	-- Fae Revel Masque
 									["_quests"] = { 62558 },	-- Sootible Hat: Fae Revel Masque
 								}),
-								crit(3, {	-- Pink Party Hat
+								crit(49878, {	-- Pink Party Hat
 									["_quests"] = { 62556 },	-- Sootible Hat: Pink Party Hat
 								}),
-								crit(4, {	-- Red Noggin Candle
+								crit(49877, {	-- Red Noggin Candle
 									["_quests"] = { 62554 },	-- Sootible Hat: Red Noggin Candle
 								}),
 							}),
 							ach(14680, {	-- Something for Everyone
-								crit(1, {	-- Atoning Rituals
+								crit(49599, {	-- Atoning Rituals
 									["_quests"] = { 59494 },
 								}),
-								crit(2, {	-- Glimpse of the Wilds
+								crit(49600, {	-- Glimpse of the Wilds
 									["_quests"] = { 59491 },
 								}),
-								crit(3, {	-- Lost Chalice Band
+								crit(49601, {	-- Lost Chalice Band
 									["_quests"] = { 59488 },
 								}),
-								crit(4, {	-- Tubbins's Tea Party
+								crit(49603, {	-- Tubbins's Tea Party
 									["_quests"] = { 59506 },
 								}),
-								crit(5, {	-- Divine Desserts
+								crit(49604, {	-- Divine Desserts
 									["_quests"] = { 59503 },
 								}),
-								crit(6, {	-- Mushroom Surprise
+								crit(49605, {	-- Mushroom Surprise
 									["_quests"] = { 59500 },
 								}),
-								crit(7, {	-- Traditional Decorations
+								crit(49595, {	-- Traditional Decorations
 									["_quests"] = { 59473 },
 								}),
-								crit(8, {	-- Mortal Reminders
+								crit(49596, {	-- Mortal Reminders
 									["_quests"] = { 59476 },
 								}),
-								crit(9, {	-- Mystery Mirrors
+								crit(49597, {	-- Mystery Mirrors
 									["_quests"] = { 59479 },
 								}),
-								crit(10, {	-- Venthyr Volunteers
+								crit(49607, {	-- Venthyr Volunteers
 									["_quests"] = { 59518 },
 								}),
-								crit(11, {	-- Stoneborn Reserves
+								crit(49608, {	-- Stoneborn Reserves
 									["_quests"] = { 59515 },
 								}),
-								crit(12, {	-- Maldraxxian Army
+								crit(49609, {	-- Maldraxxian Army
 									["_quests"] = { 59512 },
 								}),
 							}),

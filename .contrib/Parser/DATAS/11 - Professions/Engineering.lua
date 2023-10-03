@@ -637,28 +637,28 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				i(208810),	-- Purple Cranial Cannon
 				i(208811),	-- Yellow Cranial Cannon
 			}),
-			crit(1, {	-- Blink-Trigger Headgun
+			crit(61789, {	-- Blink-Trigger Headgun
 				["provider"] = { "i", 132500 },	-- Blink-Trigger Headgun
 			}),
-			crit(2, {	-- Tactical Headgun
+			crit(61791, {	-- Tactical Headgun
 				["provider"] = { "i", 132501 },	-- Tactical Headgun
 			}),
-			crit(3, {	-- Bolt-Action Headgun
+			crit(61794, {	-- Bolt-Action Headgun
 				["provider"] = { "i", 132502 },	-- Bolt-Action Headgun
 			}),
-			crit(4, {	-- Reinforced Headgun
+			crit(61797, {	-- Reinforced Headgun
 				["provider"] = { "i", 132503 },	-- Reinforced Headgun
 			}),
-			crit(5, {	-- Semi-Automagic Cranial Cannon
+			crit(61800, {	-- Semi-Automagic Cranial Cannon
 				["provider"] = { "i", 132504 },	-- Semi-Automagic Cranial Cannon
 			}),
-			crit(6, {	-- Sawed-Off Cranial Cannon
+			crit(61803, {	-- Sawed-Off Cranial Cannon
 				["provider"] = { "i", 132505 },	-- Sawed-Off Cranial Cannon
 			}),
-			crit(7, {	-- Double-Barreled Cranial Cannon
+			crit(61806, {	-- Double-Barreled Cranial Cannon
 				["provider"] = { "i", 132506 },	-- Double-Barreled Cranial Cannon
 			}),
-			crit(8, {	-- Ironsight Cranial Cannon
+			crit(61809, {	-- Ironsight Cranial Cannon
 				["provider"] = { "i", 132507 },	-- Ironsight Cranial Cannon
 			}),
 			crit(61812, {	-- Tailored Skullblasters
