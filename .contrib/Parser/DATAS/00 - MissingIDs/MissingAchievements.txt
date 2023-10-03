@@ -155,9 +155,6 @@ ach(11065),	-- It All Makes Sense Now
 8.1.0.27985
 ach(13283),	-- Frontline Warrior \\ On The Frontlines
 ach(13284),	-- Frontline Warrior \\ On The Frontlines
-10.1.5.51130
-ach(18976),	-- Draconically Superior
-ach(18977),	-- Draconically Epic
 10.1.7.50442
 ach(18580),	-- Hellfire Hustle: Bronze
 ach(18581),	-- Hellfire Hustle: Silver

@@ -4,9 +4,12 @@
 root(ROOTS.Character, n(NEW_CHARACTER, {
 	n(ACHIEVEMENTS, {
 		------ Epic ------
-		ach(18366, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Draconically Epic
+		ach(18977, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Draconically Epic
 			["sym"] = {{"achievement_criteria"}},
 		})),
+		ach(18366, { -- Draconically Epic - Replaced with new achievement number 18977
+			["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_5 },
+		}),	
 		ach(14797, {	-- Epic [Shadowlands]
 			["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_1_5 },
 		}),
@@ -29,9 +32,12 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3_LAUNCH },
 		}),
 		------ Superior ------
-		ach(18365, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Draconically Superior
+		ach(18976, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Draconically Superior
 			["sym"] = {{"achievement_criteria"}},
 		})),
+		ach(18365, { -- Draconically Superior - Replaced with new achievement number 18976
+			["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_5 },
+		}),	
 		ach(14796, {	-- Superior [Shadowlands]
 			["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_1_5 },
 		}),
