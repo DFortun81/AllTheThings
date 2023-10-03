@@ -344,6 +344,28 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 	})),
 	tier(WOD_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 		ach(9500),	-- Draenor Cook
+		ach(9502, {	-- Draenor Cuisine
+			crit(25933),	-- Blackrock Barbecue
+			crit(25934),	-- Blackrock Ham
+			crit(25935),	-- Braised Riverbeast
+			crit(25936),	-- Calamari Crepes
+			crit(25937),	-- Clefthoof Sausages
+			crit(25938),	-- Fat Sleeper Cakes
+			crit(25939),	-- Fiery Calamari
+			crit(25940),	-- Frosty Stew
+			crit(25941),	-- Gorgrond Chowder
+			crit(25942),	-- Grilled Gulper
+			crit(25943),	-- Grilled Saberfish
+			crit(25944),	-- Hearty Elekk Steak
+			crit(25945),	-- Pan-Seared Talbuk
+			crit(25946),	-- Rylak Crepes
+			crit(25947),	-- Saberfish Broth
+			crit(25948),	-- Skulker Chowder
+			crit(25949),	-- Sleeper Surprise
+			crit(25950),	-- Steamed Scorpion
+			crit(25951),	-- Sturgeon Stew
+			crit(25952),	-- Talador Surf and Turf
+		}),
 		ach(9501, {	-- The Draenor Gourmet
 			crit(25911, { ["provider"] = { "i", 111449 } } ),	-- Blackrock Barbecue
 			crit(25912, { ["provider"] = { "i", 111433 } } ),	-- Blackrock Ham

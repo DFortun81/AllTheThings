@@ -1,31 +1,8 @@
---------------------------------------------------
---    A C H I E V E M E N T S    M O D U L E    --
---------------------------------------------------
-
-root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
-	achcat(ACHIEVEMENT_CATEGORY_DRAENOR_EXP, {
-		ach(9502, {			-- Draenor Cuisine
-			crit(25933),	-- Blackrock Barbecue
-			crit(25934),	-- Blackrock Ham
-			crit(25935),	-- Braised Riverbeast
-			crit(25936),	-- Calamari Crepes
-			crit(25937),	-- Clefthoof Sausages
-			crit(25938),	-- Fat Sleeper Cakes
-			crit(25939),	-- Fiery Calamari
-			crit(25940),	-- Frosty Stew
-			crit(25941),	-- Gorgrond Chowder
-			crit(25942),	-- Grilled Gulper
-			crit(25943),	-- Grilled Saberfish
-			crit(25944),	-- Hearty Elekk Steak
-			crit(25945),	-- Pan-Seared Talbuk
-			crit(25946),	-- Rylak Crepes
-			crit(25947),	-- Saberfish Broth
-			crit(25948),	-- Skulker Chowder
-			crit(25949),	-- Sleeper Surprise
-			crit(25950),	-- Steamed Scorpion
-			crit(25951),	-- Sturgeon Stew
-			crit(25952),	-- Talador Surf and Turf
-		}),
+---------------------------------------------------
+--          Z O N E S        M O D U L E         --
+---------------------------------------------------
+root(ROOTS.Zones, m(DRAENOR, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+	n(ACHIEVEMENTS, {
 		ach(10018, {	-- Draenor Pathfinder
 			["sym"] = {{"meta_achievement",
 				8935,	-- Draenor Explorer
@@ -109,4 +86,4 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 			}),
 		}),
 	}),
-}));
+})))
