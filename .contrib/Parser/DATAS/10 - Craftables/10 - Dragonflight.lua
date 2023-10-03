@@ -3300,6 +3300,8 @@ root(ROOTS.HiddenQuestTriggers, {
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = SKINNING,
 		},{
+		-- To do:
+		-- Move them back under Skinning with their Achievements attached (roughly 1/3 should be attached to achievement criteria)
 			FirstSkin(74204, 193243),	-- Skinning Acrosoth
 			FirstSkin(74219, 187111),	-- Skinning Ancient Hornswog
 			FirstSkin(74197, 193231),	-- Skinning Ancient Tundrafur (spawns with Blightpaw)
