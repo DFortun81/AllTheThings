@@ -181,7 +181,15 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								crit(51085),	-- Ring of Warding
 								crit(51086),	-- Spiritforged Aegis
 							}),
-							ach(14861),	-- Learning from the Masters
+							ach(14861, {	-- Learning from the Masters
+								-- Added criteria here because else it somehow doesn't show everything linked under it
+								crit(51098),	-- Defeat Kalisthene as Pelagos
+								crit(51097),	-- Defeat Kalisthene as Kleia
+								crit(51099),	-- Defeat Kalisthene as Mikanikos
+								crit(51100),	-- Defeat Athanos as Pelagos
+								crit(51101),	-- Defeat Athanos as Kleia
+								crit(51102),	-- Defeat Athanos as Mikanikos
+							}),
 							achraw(14866, {	-- Master of the Path
 								crit(51134),	-- Kalisthene
 								crit(51135),	-- Echthra
