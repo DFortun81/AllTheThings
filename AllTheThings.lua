@@ -3021,7 +3021,7 @@ local ResolveFunctions = {
 				app.PrintDebug("'achievement_criteria' used on a non-Achievement group")
 				return;
 			end
-			local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id, criteriaObject;
+			local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id, criteriaObject, uniqueID
 			for criteriaID=1,GetAchievementNumCriteria(achievementID, true),1 do
 				criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, uniqueID = GetAchievementCriteriaInfo(achievementID, criteriaID, true);
 				if not uniqueID or uniqueID <= 0 then uniqueID = criteriaID; end
@@ -3029,17 +3029,22 @@ local ResolveFunctions = {
 
 				-- SourceQuest
 				if criteriaType == 27 then
-					for _,c in ipairs(SearchForField("questID", assetID)) do
-						-- criteria inherit their achievement data ONLY when the achievement data is actually referenced... this is required for proper caching
-						NestObject(c, criteriaObject);
-						BuildGroups(c);
-						CacheFields(criteriaObject);
-						app.DirectGroupUpdate(c);
-						criteriaObject = app.CreateAchievementCriteria(uniqueID, {["achievementID"] = achievementID}, true);
-						-- app.PrintDebug("Add-Crit",achievementID,uniqueID,"=>",c.hash)
+					local quests = SearchForField("questID", assetID)
+					if #quests > 0 then
+						for _,c in ipairs(quests) do
+							-- criteria inherit their achievement data ONLY when the achievement data is actually referenced... this is required for proper caching
+							NestObject(c, criteriaObject);
+							BuildGroups(c);
+							CacheFields(criteriaObject);
+							app.DirectGroupUpdate(c);
+							criteriaObject = app.CreateAchievementCriteria(uniqueID, {["achievementID"] = achievementID}, true);
+							-- app.PrintDebug("Add-Crit",achievementID,uniqueID,"=>",c.hash)
+						end
+						-- added to the quest(s) groups, not added to achievement
+						criteriaObject = nil;
+					else
+						app.print("'achievement_criteria' Quest type missing Quest Source group!",achievementID,assetID)
 					end
-					-- added to the quest(s) groups, not added to achievement
-					criteriaObject = nil;
 				-- Items
 				elseif criteriaType == 36 or criteriaType == 42 then
 					criteriaObject.providers = {{ "i", assetID }};
@@ -3049,6 +3054,22 @@ local ResolveFunctions = {
 					or criteriaType == 54 -- Spell, by means of a personal buff?
 					or criteriaType == 43 then	-- Exploration
 					-- Ignored
+				elseif criteriaType == 0 then	-- NPC Kills
+					-- app.PrintDebug("NPC Kill Criteria",assetID)
+					local c = app.SearchForObject("npcID", assetID, "key")
+					if c then
+						-- criteria inherit their achievement data ONLY when the achievement data is actually referenced... this is required for proper caching
+						NestObject(c, criteriaObject);
+						BuildGroups(c);
+						CacheFields(criteriaObject);
+						app.DirectGroupUpdate(c);
+						-- app.PrintDebug("Add-Crit",achievementID,uniqueID,"=>",c.hash)
+						-- added to the npc group, not added to achievement
+						criteriaObject = nil;
+					elseif assetID and assetID > 0 then
+						app.print("'achievement_criteria' NPC type missing NPC Source group!",achievementID,assetID)
+						criteriaObject.crs = { assetID };
+					end
 				else
 					--app.print("Unhandled Criteria Type", criteriaType, assetID, achievementID);
 				end
@@ -8036,7 +8057,7 @@ local criteriaFields = {
 						end
 					end
 				end
-				
+
 				local sourceQuests = t.sourceQuests;
 				if sourceQuests then
 					for k,id in ipairs(sourceQuests) do
