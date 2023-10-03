@@ -21427,7 +21427,7 @@ app.Startup = function()
 			app.Settings.version:SetText("[Git]");
 		end
 	else
-		app.Version = "v" .. v;
+		app.Version = "" .. v;
 	end
 
 	AllTheThingsAD = LocalizeGlobalIfAllowed("AllTheThingsAD", true);	-- For account-wide data.
