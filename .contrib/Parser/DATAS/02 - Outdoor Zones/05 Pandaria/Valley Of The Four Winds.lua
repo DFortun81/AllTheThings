@@ -14,22 +14,6 @@ root(ROOTS.Zones, {
 				n(ACHIEVEMENTS, {
 					ach(7294),	-- A Taste of Things to Come (Halfhill)
 					explorationAch(6969),	-- Explore Valley of the Four Winds
-					ach(6846, {	-- Fish Tales
-						["collectible"] = false,
-						["g"] = {
-							crit(2, {	-- Waterspeakers
-								["coord"] = { 61.5, 34.8, VALLEY_OF_THE_FOUR_WINDS },
-							}),
-						},
-					}),
-					ach(6850, {	-- Hozen in the Mist
-						["collectible"] = false,
-						["g"] = {
-							crit(3, {	-- Embracing the Passions
-								["coord"] = { 83.2, 21.1, VALLEY_OF_THE_FOUR_WINDS },
-							}),
-						},
-					}),
 					ach(7284, {	-- Is Another Man's Treasure
 						["collectible"] = false,
 						["g"] = {

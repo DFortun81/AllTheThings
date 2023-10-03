@@ -59,6 +59,12 @@ root(ROOTS.Zones, {
 						}),
 					}),
 					explorationAch(6978),	-- Explore Dread Wastes
+					ach(6857, {	-- Heart of the Mantid Swarm (Dread Wastes)
+						crit(1),	-- Cycle of the Mantid (Dread Wastes)
+						crit(2),	-- Mantid Society (Dread Wastes)
+						crit(3),	-- Amber (Dread Wastes)
+						crit(4),	-- The Empress (Dread Wastes)
+					}),
 					ach(7284, {	-- Is Another Man's Treasure
 						["collectible"] = false,
 						["g"] = {
