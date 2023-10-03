@@ -78,8 +78,9 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["timeline"] = { "added 4.2.0.14333" },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
-	i(37011, {	-- Magic Broom
+	i(37011, {	-- Magic Broom (MOUNT!)
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["collectible"] = false,
 	}),
 	i(37582, {	-- Pyroblast Cinnamon Ball
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
@@ -136,8 +137,9 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["timeline"] = { "added 4.2.0.14333" },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
-	i(37011, {	-- Magic Broom
+	i(37011, {	-- Magic Broom (MOUNT!)
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["collectible"] = false,
 	}),
 	i(37582, {	-- Pyroblast Cinnamon Ball
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
@@ -1915,8 +1917,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					i(33292, {	-- Hallowed Helm
 						["timeline"] = { "added 2.2.2.7318" },
 					}),
-					i(37011, {	-- Magic Broom
+					i(37011, {	-- Magic Broom (MOUNT!)
 						["timeline"] = { "added 2.4.3.8600" },
+						["collectible"] = false,
 					}),
 				},
 			}),
@@ -1942,8 +1945,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					i(33292, {	-- Hallowed Helm
 						["timeline"] = { "added 2.2.2.7318" },
 					}),
-					i(37011, {	-- Magic Broom
+					i(37011, {	-- Magic Broom (MOUNT!)
 						["timeline"] = { "added 2.4.3.8600" },
+						["collectible"] = false,
 					}),
 				},
 			}),
@@ -2000,11 +2004,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					i(33292, {	-- Hallowed Helm
 						["timeline"] = { "added 2.2.2.7318" },
 					}),
-					i(33176, {	-- Flying Broom
+					i(33176, {	-- Flying Broom (MOUNT!)
 						["timeline"] = { "added 2.2.2.7318", "deleted 4.2.2" },
 					}),
-					i(37011, {	-- Magic Broom
+					i(37011, {	-- Magic Broom (MOUNT!)
 						["timeline"] = { "added 2.4.3.8600" },
+						["collectible"] = false,
 					}),
 				},
 			}),
@@ -2113,22 +2118,23 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			i(33292, {	-- Hallowed Helm
 				["timeline"] = { "added 2.2.2.7318" },
 			}),
-			i(37011, {	-- Magic Broom
+			i(37011, {	-- Magic Broom (MOUNT!)
 				["timeline"] = { "added 2.4.3.8600" },
+				["collectible"] = false,
 			}),
 			-- #endif
 			-- #if NOT ANYCLASSIC
 			-- #if BEFORE LEGION
-			i(33176, {	-- Flying Broom
+			i(33176, {	-- Flying Broom (MOUNT!)
 				["timeline"] = { "added 2.2.2.7318", "deleted 4.2.2" },
 			}),
-			i(33182, {	-- Swift Flying Broom
+			i(33182, {	-- Swift Flying Broom (MOUNT!)
 				["timeline"] = { "added 2.0.1", "removed 2.4.3" },
 			}),
-			i(33184, {	-- Swift Magic Broom
+			i(33184, {	-- Swift Magic Broom (MOUNT!)
 				["timeline"] = { "added 2.0.1", "removed 2.4.3" },
 			}),
-			i(33183, {	-- Old Magic Broom
+			i(33183, {	-- Old Magic Broom (MOUNT!)
 				["timeline"] = { "added 2.0.1", "removed 2.4.3" },
 			}),
 			-- #endif
@@ -4661,16 +4667,16 @@ SPECTRAL_GROG.u = nil;
 -- #if AFTER 2.0.1
 root(ROOTS.NeverImplemented, n(HALLOWS_END_HEADER, {
 	-- #if ANYCLASSIC
-	i(33176, {	-- Flying Broom
+	i(33176, {	-- Flying Broom (MOUNT!)
 		["timeline"] = { "created 2.2.2.7318", "deleted 4.2.2" },
 	}),
-	i(33182, {	-- Swift Flying Broom
+	i(33182, {	-- Swift Flying Broom (MOUNT!)
 		["timeline"] = { "created 2.0.1", "deleted 4.2.2" },
 	}),
-	i(33184, {	-- Swift Magic Broom
+	i(33184, {	-- Swift Magic Broom (MOUNT!)
 		["timeline"] = { "created 2.0.1", "deleted 4.2.2" },
 	}),
-	i(33183, {	-- Old Magic Broom
+	i(33183, {	-- Old Magic Broom (MOUNT!)
 		["timeline"] = { "created 2.0.1", "deleted 4.2.2" },
 	}),
 	-- #endif
