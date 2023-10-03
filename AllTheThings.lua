@@ -356,6 +356,9 @@ local function GetMoneyString(amount)
 	end
 	return amount
 end
+app.GetPatchString = function(patch)
+	return math.floor(patch / 10000) .. "." .. (math.floor(patch / 100) % 10) .. "." .. (patch % 10)
+end
 
 do -- TradeSkill Functionality
 local tradeSkillSpecializationMap = {
@@ -1082,14 +1085,13 @@ local function GetAddedWithPatchString(awp, addedBack)
 			return nil;	-- Don't want to show this at the moment, let's add a configuration first!
 		end
 		if addedBack then formatString = formatString .. "_BACK"; end
-		return sformat(L[formatString .. "_WITH_PATCH_FORMAT"], 
-		math.floor(awp / 10000) .. "." .. (math.floor(awp / 100) % 10) .. "." .. (awp % 10));
+		return sformat(L[formatString .. "_WITH_PATCH_FORMAT"], app.GetPatchString(awp));
 	end
 end
 local function GetRemovedWithPatchString(rwp)
 	rwp = tonumber(rwp);
 	if rwp then
-		return sformat(L["REMOVED_WITH_PATCH_FORMAT"], math.floor(rwp / 10000).."."..(math.floor(rwp / 100) % 10).."."..(rwp % 10));
+		return sformat(L["REMOVED_WITH_PATCH_FORMAT"], app.GetPatchString(rwp));
 	end
 end
 app.GetProgressText = GetProgressTextDefault;
@@ -4874,6 +4876,8 @@ local function DetermineCraftedGroups(group, FillData)
 	if not itemRecipes then return; end
 
 	-- check if the item is BoP and needs skill filtering for current character, or debug mode
+	-- TODO: further review... this causes population of a list to be different based on settings, such that
+	-- changing settings after 'filling' does not properly adjust the list
 	local filterSkill = not app.MODE_DEBUG and (app.IsBoP(group) or select(14, GetItemInfo(itemID)) == 1);
 	local craftableItemIDs = {}
 	-- track crafted items which are filled across the entire fill sequence
@@ -8062,7 +8066,6 @@ local criteriaFields = {
 					local name
 					for k,id in ipairs(sourceQuests) do
 						name = app.GetQuestName(id);
-						app.PrintDebug(name)
 						if name then
 							return name
 						end
@@ -16525,6 +16528,15 @@ function app:GetDataCache()
 				name = L["FUTURE_UNOBTAINABLE"],
 				description = L["FUTURE_UNOBTAINABLE_TOOLTIP"],
 				icon = app.asset("Interface_Future_Unobtainable")
+			}),
+
+			-- Recently Added
+			app.CreateDynamicHeader("awp", {
+				dynamic_value = app.GameBuildVersion,
+				dynamic_withsubgroups = true,
+				name = L["NEW_WITH_PATCH"],
+				description = L["NEW_WITH_PATCH_TOOLTIP"],
+				icon = app.asset("WindowIcon_RWP")
 			}),
 
 			-- Artifacts
