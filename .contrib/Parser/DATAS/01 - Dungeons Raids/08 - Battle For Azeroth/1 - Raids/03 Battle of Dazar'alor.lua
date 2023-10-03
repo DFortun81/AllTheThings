@@ -20,6 +20,22 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(13315, {	-- Glory of the Dazar'alor Raider
+					["sym"] = {{"meta_achievement",
+						13316,	-- Can I Get a Hek Hek Hek Yeah?
+						13325,	-- Walk the Dinosaur
+						13345,	-- Praise the Sunflower
+						13383,	-- Barrel of Monkeys
+						13410,	-- Snow Fun Allowed
+						13401,	-- I Got Next!
+						13431,	-- Hidden Dragon
+						13430,	-- De Lurker Be'loa
+						13425,	-- We Got Spirit, How About You?
+					}},
+					["groups"] = {
+						i(166539),	-- Dazar'alor Windreaver (MOUNT!)
+					},
+				}),
 				ach(13319),	-- Battle of Dazar'alor Guild Run (H)
 				ach(13320),	-- Battle of Dazar'alor Guild Run (A)
 				-- TODO: this requires further revision....

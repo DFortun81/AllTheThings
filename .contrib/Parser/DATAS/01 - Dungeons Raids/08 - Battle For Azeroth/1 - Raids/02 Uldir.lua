@@ -20,7 +20,17 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1"
 			n(ACHIEVEMENTS, {
 				ach(12537),	-- Uldir Guild Run
 				ach(12806, {	-- Glory of the Uldir Raider
-					i(163216),	-- Bloodgorged Crawg (MOUNT!)
+					12551,	-- Double Dribble
+					12937,	-- Elevator Music
+					12938,	-- Parental Controls
+					12823,	-- Thrash Mouth - All Stars
+					12828,	-- What's in the Box?
+					12772,	-- Now We Got Bad Blood
+					12830,	-- Edgelords
+					12836,	-- Existential Crisis
+					["groups"] = {
+						i(163216),	-- Bloodgorged Crawg (MOUNT!)
+					},
 				}),
 				ach(12521, {	-- Halls of Containment
                     crit(40246, {    -- Taloc

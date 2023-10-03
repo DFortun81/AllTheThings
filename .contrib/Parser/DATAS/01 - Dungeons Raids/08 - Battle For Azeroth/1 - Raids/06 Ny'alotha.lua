@@ -28,6 +28,25 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(14146, {	-- Glory of the Ny'alotha Raider
+					["sym"] = {{"meta_achievement",
+					14019,	-- Smoke Test
+					14008,	-- Mana Sponge
+					14037,	-- Phase 3: Prophet
+					14024,	-- Buzzer Beater
+					14023,	-- Realizing Your Potential
+					13990,	-- You Can Pet the Dog, But...
+					14026,	-- Temper Tantrum
+					14139,	-- Total Annihilation
+					13999,	-- How? Isn't it Obelisk?
+					14038,	-- Bloody Mess
+					14147,	-- Cleansing Treatment
+					14148,	-- It's Not a Cult
+					}},
+					["groups"] = {
+						i(174861),	-- Wriggling Parasite (MOUNT!)
+					},
+				}),
 				ach(14193, {	-- Vision of Destiny
                     crit(46693, {    -- Wrathion, the Black Emperor
                         ["_encounter"] = { 2368, LFR_RAID },
@@ -39,7 +58,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
                         ["_encounter"] = { 2369, LFR_RAID },
                     }),
                 }),
-
 				ach(14194, {	-- Halls of Devotion
                     crit(46696, {    -- Dark Inquisitor Xanesh
                         ["_encounter"] = { 2377, LFR_RAID },
@@ -54,7 +72,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
                         ["_encounter"] = { 2364, LFR_RAID },
                     }),
                 }),
-
 				ach(14195, {	-- Gift of Flesh
                     crit(46700, {    -- Shad'har the Insatiable
                         ["_encounter"] = { 2367, LFR_RAID },
@@ -66,7 +83,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
                         ["_encounter"] = { 2374, LFR_RAID },
                     }),
                 }),
-
 				ach(14196, {	-- The Waking Dream
                     crit(46703, {    -- Carapace of N'Zoth
                         ["_encounter"] = { 2366, LFR_RAID },
@@ -75,7 +91,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
                         ["_encounter"] = { 2375, LFR_RAID },
                     }),
                 }),
-
 				ach(14146, {	-- Glory of the Ny'alotha Raider
 					i(174861),	-- Wriggling Parasite (MOUNT!)
 				}),

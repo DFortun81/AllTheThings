@@ -72,19 +72,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				title(185),	-- <Name>, Defender of a Shattered World
 			},
 		}),
-		ach(9391, {		-- Draenor Dungeon Hero
-			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
-				9046,	-- Heroic: Bloodmaul Slag Mines
-				9047,	-- Heroic: Iron Docks
-				9049,	-- Heroic: Auchindoun
-				8844,	-- Heroic: Skyreach
-				9053,	-- Heroic: The Everbloom
-				9052,	-- Heroic: Grimrail Depot
-				9054,	-- Heroic: Shadowmoon Burial Grounds
-				9055,	-- Heroic: Upper Blackrock Spire
-			}},
-		}),
 		ach(4845, {		-- Glory of the Cataclysm Hero
 			["sym"] = {{"meta_achievement",
 				4844,	-- Cataclysm Dungeon Hero
@@ -149,78 +136,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			}},
 			["groups"] = {
 				i(62901),	-- Drake of the East Wind (MOUNT!)
-			},
-		}),
-		ach(13315, {	-- Glory of the Dazar'alor Raider
-			["sym"] = {{"meta_achievement",
-				13316,	-- Can I Get a Hek Hek Hek Yeah?
-				13325,	-- Walk the Dinosaur
-				13345,	-- Praise the Sunflower
-				13383,	-- Barrel of Monkeys
-				13410,	-- Snow Fun Allowed
-				13401,	-- I Got Next!
-				13431,	-- Hidden Dragon
-				13430,	-- De Lurker Be'loa
-				13425,	-- We Got Spirit, How About You?
-			}},
-			["groups"] = {
-				i(166539),	-- Dazar'alor Windreaver (MOUNT!)
-			},
-		}),
-		ach(9396, {		-- Glory of the Draenor Hero
-			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
-				9391,	-- Draenor Dungeon Hero
-				8993,	-- A Gift of Earth and Fire
-				9005,	-- Come With Me If You Want to Live
-				9008,	-- Is Draenor on Fire?
-				9083,	-- Militaristic, Expansionist
-				9081,	-- Expert Timing
-				9082,	-- Take Cover!
-				9023,	-- ...They All Fall Down
-				9033,	-- Ready for Raiding IV
-				9034,	-- Magnify... Enhance
-				9035,	-- I Saw Solis
-				9036,	-- Monomania
-				9024,	-- This Is Why We Can't Have Nice Things
-				9007,	-- No Ticket
-				9017,	-- Water Management
-				9223,	-- Weed Whacker
-				9018,	-- What's Your Sign?
-				9025,	-- Icky Ichors
-				9026,	-- Souls of the Lost
-				9045,	-- Magnets, How Do They Work?
-				9058,	-- Leeeeeeeeeeeeeroy...?
-				9056,	-- Bridge Over Troubled Fire
-				9057,	-- Dragonmaw? More Like Dragonfall!
-			}},
-			["groups"] = {
-				i(116670),	-- Frostplains Battleboar (MOUNT!)
-			},
-		}),
-		ach(8985, {		-- Glory of the Draenor Raider
-			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
-				8948,	-- Flame On!
-				8947,	-- Hurry Up, Maggot!
-				8974,	-- More Like Wrecked-us
-				8975,	-- A Fungus Among Us
-				8958,	-- Brothers in Arms
-				8976,	-- Pair Annihilation
-				8977,	-- Lineage of Power
-				8978,	-- The Iron Price
-				8979,	-- He Shoots, He Ores
-				8980,	-- Stamp Stamp Revolution
-				8981,	-- Fain Would Lie Down
-				8929,	-- The Steel Has Been Brought
-				8982,	-- There's Always a Bigger Train
-				8930,	-- Ya, We've Got Time...
-				8983,	-- Would You Give Me a Hand?
-				8984,	-- Be Quick or Be Dead
-				8952,	-- Ashes, Ashes...
-			}},
-			["groups"] = {
-				i(116383),	-- Gorestrider Gronnling (MOUNT!)
 			},
 		}),
 		ach(6169, {		-- Glory of the Dragon Soul Raider
@@ -288,83 +203,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				i(44160),	-- Red Proto-Drake (MOUNT!)
 			},
 		})),
-		ach(11163, {	-- Glory of the Legion Hero
-			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
-				10456,	-- But You Say He's Just a Friend
-				10457,	-- Stay Salty
-				10458,	-- Ready for Raiding V
-				10766,	-- Egg-cellent!
-				10769,	-- Burning Down the House
-				10996,	-- Got to Ketchum All
-				10875,	-- Can't Eat Just One
-				10544,	-- Stag Party
-				10542,	-- I Got What You Mead
-				10543,	-- Surge Protector
-				10554,	-- I Made a Food!
-				10553,	-- You're Just Making It WORSE!
-				10679,	-- I Ain't Even Cold
-				10680,	-- Who's Afraid of the Dark?
-				10707,	-- A Specter, Illuminated
-				10709,	-- You Used to Scrawl Me In Your Fel Tome
-				10710,	-- Black Rook Moan
-				10711,	-- Adds? More Like Bads
-				10413,	-- Instant Karma
-				10411,	-- Helheim Hath No Fury
-				10412,	-- Poor Unfortunate Souls
-				10776,	-- No Time to Waste
-				10775,	-- Clean House
-				10773,	-- Arcanic Cling
-				10610,	-- Waiting for Gerdo
-				10611,	-- Dropping Some Eaves
-			}},
-			["groups"] = {
-				i(141217),	-- Leyfeather Hippogryph (MOUNT!)
-			},
-		}),
-		ach(11180, {	-- Glory of the Legion Raider
-			["sym"] = {{"meta_achievement",
-				10555,	-- Buggy Fight
-				10771,	-- Webbing Crashers
-				10753,	-- Scare Bear
-				10830,	-- Took the Red Eye Down
-				10663,	-- Imagined Dragons World Tour
-				10772,	-- Use the Force(s)
-				10755,	-- I Attack the Darkness
-				10678,	-- Cage Rematch
-				10697,	-- Grand Opening
-				10742,	-- Gluten Free
-				10817,	-- A Change In Scenery
-				10851,	-- Elementalry!
-				-- 10754,	-- Fruit of All Evil (Not required for meta)
-				10704,	-- Not For You
-				10575,	-- Burning Bridges
-				10699,	-- Infinitesimal
-				10696,	-- I've Got My Eyes On You
-			}},
-			["maps"] = {
-				764, 765, 766, 767, 768, 769, 770, 771, 772,	-- The Nighthold
-				777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789,	-- The Emerald Nightmare
-			},
-			["groups"] = {
-				i(141216),	-- Grove Defiler (MOUNT!)
-			},
-		}),
-		ach(14146, {	-- Glory of the Ny'alotha Raider
-			i(174861),	-- Wriggling Parasite (MOUNT!)
-			crit(1),	-- Smoke Test
-			crit(2),	-- Mana Sponge
-			crit(3),	-- Phase 3: Prophet
-			crit(4),	-- Buzzer Beater
-			crit(5),	-- Realizing Your Potential
-			crit(6),	-- You Can Pet the Dog, But...
-			crit(7),	-- Temper Tantrum
-			crit(8),	-- Total Annihilation
-			crit(9),	-- How? Isn't it Obelisk?
-			crit(10),	-- Bloody Mess
-			crit(11),	-- Cleansing Treatment
-			crit(12),	-- It's Not a Cult
-		}),
 		ach(8454, {		-- Glory of the Orgrimmar Raider
 			["sym"] = {{"meta_achievement",
 				8536,	-- No More Tears
@@ -500,31 +338,10 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				}),
 			},
 		})),
-		ach(12806, {	-- Glory of the Uldir Raider
-			i(163216),	-- Bloodgorged Crawg (MOUNT!)
-			crit(1),	-- Double Dribble
-			crit(2),	-- Elevator Music
-			crit(3),	-- Parental Controls
-			crit(4),	-- Thrash Mouth - All Stars
-			crit(5),	-- What's in the Box?
-			crit(6),	-- Now We Got Bad Blood
-			crit(7),	-- Edgelords
-			crit(8),	-- Existential Crisis
-		}),
 		ach(11162, {	-- Keystone Master
 			ach(11185),	-- Keystone Conqueror
 			ach(11184),	-- Keystone Challenger
 			ach(11183),	-- Keystone Initiate
-		}),
-		ach(11164, {	-- Legion Dungeon Hero
-			crit(1),	-- Heroic: Eye of Azshara
-			crit(2),	-- Heroic: Darkheart Thicket
-			crit(3),	-- Heroic: Halls of Valor
-			crit(4),	-- Heroic: Neltharion's Lair
-			crit(5),	-- Heroic: Assault on Violet Hold
-			crit(6),	-- Heroic: Vault of the Wardens
-			crit(7),	-- Heroic: Black Rook Hold
-			crit(8),	-- Heroic: Maw of Souls
 		}),
 		ach(1289, {		-- Northrend Dungeon Hero
 			-- Meta Achievement
@@ -614,19 +431,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 				697,	-- The Black Temple
 				698,	-- Sunwell Plateau
 			}},
-		}),
-		ach(9619, {		-- Savage Hero
-			title(300),	-- the Savage Hero
-			crit(1),	-- Gug'rokk (Bloodmaul Slag Mines)
-			crit(2),	-- Skulloc, Son of Gruul (Iron Docks)
-			crit(3),	-- Teron'gor (Auchindoun)
-			crit(4),	-- High Sage Viryx (Skyreach)
-			crit(5),	-- Yalnu (The Everbloom)
-			crit(6),	-- Skylord Tovra (Grimrail Depot)
-			crit(7),	-- Ner'zhul (Shadowmoon Burial Grounds)
-			crit(8),	-- Warlord Zaela (Upper Blackrock Spire)
-			crit(9),	-- Imperator Mar'gok (Highmaul)
-			crit(10),	-- Warlord Blackhand (Blackrock Foundry)
 		}),
 	}),
 }));
