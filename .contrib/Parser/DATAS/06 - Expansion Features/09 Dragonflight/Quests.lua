@@ -4,6 +4,11 @@
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 	n(HIDDEN_QUESTS, {
 		q(72285, {	-- Stay awhile and listen: Scalecommander Azurathel
+			["qg"] = 189078,	-- Scalecommander Azurathel
+			["sourceQuests"] = {
+				65101,	-- An Iconic, Draconic, Look [A]
+				66577,	-- Aspectral Invitation [A]
+			},
 			["name"] = "Stay awhile and listen: Scalecommander Azurathel",
 			["coord"] = { 25.4, 55.2, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
@@ -20,11 +25,21 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["races"] = HORDE_ONLY,
 		}),
 		q(72286, {	-- Stay awhile and listen: Genn Greymane
+			["qg"] = 194756,	-- Genn Greymane
+			["sourceQuests"] = {
+				65101,	-- An Iconic, Draconic, Look [A]
+				66577,	-- Aspectral Invitation [A]
+			},
 			["name"] = "Stay awhile and listen: Genn Greymane",
 			["coord"] = { 27.1, 53.8, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(72287, {	-- Stay awhile and listen: High Exarch Turalyon
+			["qg"] = 189600,	-- High Exarch Turalyon
+			["sourceQuests"] = {
+				65101,	-- An Iconic, Draconic, Look [A]
+				66577,	-- Aspectral Invitation [A]
+			},
 			["name"] = "Stay awhile and listen: High Exarch Turalyon",
 			["coord"] = { 27.1, 53.8, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
