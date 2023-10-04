@@ -206,7 +206,7 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDE
                     ["coord"] = { 7.4, 47.5, THE_AZURE_SPAN },
                 }),
                 o(387695, {	-- Rumble Coin Bag
-                    ["questID"] = 73936,
+                    -- ["questID"] = 73936, - Wrong Quest ID
                     ["coord"] = { 49.2, 58.3, THALDRASZUS },
                 }),
             }),
