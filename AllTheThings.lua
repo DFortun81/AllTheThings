@@ -17727,6 +17727,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			"raceID",
 			"eventID",
 			"instanceID",
+			"achievementID",
 		};
 		-- set of keys for headers which can be nested in the minilist within an Instance automatically, but not confined to a direct top header
 		local subGroupInstanceKeys = {
@@ -17734,6 +17735,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			"professionID",
 			"raceID",
 			"eventID",
+			"achievementID",
 		};
 		-- Keep a static collection of top-level groups in the list so they can just be referenced for adding new
 		local topHeaders = {
