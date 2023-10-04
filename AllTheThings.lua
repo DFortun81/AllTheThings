@@ -13012,6 +13012,7 @@ local DefaultGroupVisibility, DefaultThingVisibility;
 local UpdateGroups;
 local RecursiveGroupRequirementsFilter, GroupFilter, GroupVisibilityFilter, ThingVisibilityFilter, TrackableFilter
 local FilterSet, FilterGet, Filters_ItemUnbound, ItemUnboundSetting
+local debug
 -- Local caches for some heavily used functions within updates
 local function CacheFilterFunctions()
 	local FilterApi = app.Modules.Filter;
@@ -13087,10 +13088,12 @@ local function SetThingVisibility(parent, group)
 		group.forceShow = nil;
 		-- Continue the forceShow visibility outward
 		forceShowParent = true;
+		-- if debug then print("forceshow",visible) end
 	end
 	-- Total
 	if not visible and group.total > 0 then
 		visible = group.progress < group.total or ThingVisibilityFilter(group);
+		-- if debug then print("total",visible) end
 	end
 	-- Cost
 	if not visible and (group.costNested or (group.costTotal or 0) > 0 or group.collectibleAsCost) then
@@ -13099,7 +13102,7 @@ local function SetThingVisibility(parent, group)
 		if parent and visible then
 			parent.costNested = true;
 		end
-		-- app.PrintDebug("STV.cost",group.hash,visible,group.costNested)
+		-- if debug then print("STV.cost",group.hash,visible,group.costNested) end
 	end
 	-- Upgrade
 	if not visible and (group.hasUpgradeNested or group.collectibleAsUpgrade) then
@@ -13108,19 +13111,20 @@ local function SetThingVisibility(parent, group)
 		if parent and visible then
 			parent.hasUpgradeNested = true;
 		end
-		-- app.PrintDebug("STV.hasUpgrade",group.hash,visible,group.hasUpgradeNested)
+		-- if debug then print("STV.hasUpgrade",group.hash,visible,group.hasUpgradeNested) end
 	end
 	-- Trackable
 	if not visible and TrackableFilter(group) then
 		visible = not group.saved;
 		forceShowParent = visible;
+		-- if debug then print("trackable",visible) end
 	end
 	-- Apply the visibility to the group
 	if visible then group.visible = true; end
 	-- source ignored group which is determined to be visible should ensure the parent is also visible
 	if not forceShowParent and visible and group.sourceIgnored then
 		forceShowParent = true;
-		-- app.PrintDebug("SGV:ForceParent",parent.text,"via Source Ignored",group.text)
+		-- if debug then print("SGV:ForceParent",parent.text,"via Source Ignored",group.text) end
 	end
 	if parent and forceShowParent then
 		parent.forceShow = forceShowParent;
@@ -13130,6 +13134,10 @@ local function UpdateGroup(parent, group)
 	group.visible = nil;
 	group.costNested = nil;
 	group.hasUpgradeNested = nil;
+
+	-- debug = group.itemID and group.factionID == 2045
+	-- if debug then print("UG",group.hash,parent and parent.hash) end
+
 	-- Determine if this user can enter the instance or acquire the item and item is equippable/usable
 	local valid;
 	-- A group with a source parent means it has a different 'real' heirarchy than in the current window
@@ -13139,7 +13147,7 @@ local function UpdateGroup(parent, group)
 		-- if debug then print("UG.RGRF",valid,"=>",group.sourceParent.hash) end
 	else
 		valid = GroupFilter(group);
-		-- if debug then print("UG.GRF/GF",valid) end
+		-- if debug then print("UG.GF",valid) end
 	end
 
 	if valid then
@@ -13148,7 +13156,7 @@ local function UpdateGroup(parent, group)
 		local customProgress = customTotal > 0 and group.customProgress or 0;
 		local total, progress = customTotal, customProgress;
 
-		-- if debug then print("UG.Init","cost",costProgress,costTotal,"custom",customProgress,customTotal,"=>",progress,total) end
+		-- if debug then print("UG.Init","custom",customProgress,customTotal,"=>",progress,total) end
 
 		-- If this item is collectible, then mark it as such.
 		if group.collectible then
@@ -13166,7 +13174,7 @@ local function UpdateGroup(parent, group)
 		-- Check if this is a group
 		local g = group.g;
 		if g then
-			-- if app.Debugging then print("UpdateGroup.g",group.progress,group.total,group.__type) end
+			-- if debug then print("UpdateGroup.g",group.progress,group.total,group.__type) end
 
 			-- skip Character filtering for sub-groups if this Item meets the Ignore BoE filter logic, since it can be moved to the designated character
 			-- local ItemBindFilter, NoFilter = app.ItemBindFilter, app.NoFilter;
@@ -13202,8 +13210,8 @@ local function UpdateGroup(parent, group)
 		end
 	end
 
-	-- if app.Debugging then print("UpdateGroup.Done",group.progress,group.total,group.visible,group.__type) end
-	-- if app.Debugging == 134 then app.Debugging = nil; end
+	-- if debug then print("UpdateGroup.Done",group.progress,group.total,group.visible,group.__type) end
+	-- debug = nil
 end
 app.UpdateGroup = UpdateGroup;
 UpdateGroups = function(parent, g)
