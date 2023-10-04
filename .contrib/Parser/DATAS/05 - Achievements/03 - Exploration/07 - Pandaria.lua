@@ -4,12 +4,6 @@
 
 root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_EXPLORATION, {
 	achcat(ACHIEVEMENT_CATEGORY_PANDARIA_EXP, {
-		ach(7284, {	-- Is Another Man's Treasure
-			title(200),	-- the Relic Hunter
-			ach(7283),	-- One Man's Trash...
-			ach(7282),	-- Finders Keepers
-			ach(7281),	-- Lost and Found
-		}),
 		ach(7997, {	-- Riches of Pandaria
 			ach(7996),	-- Bounty of Pandaria
 			ach(7995),	-- Fortune of Pandaria

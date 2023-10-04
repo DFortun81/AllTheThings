@@ -24,21 +24,6 @@ root(ROOTS.Zones, {
 						crit(8),	-- Tenwu of the Red Smoke
 						crit(7),	-- Yalia Sagewhisper
 					}),
-					ach(7284, {	-- Is Another Man's Treasure
-						["collectible"] = false,
-						["g"] = {
-							o(213960, {		-- Yaungol Fire Carrier
-								["questID"] = 31425,
-								["coords"] = {
-									{ 66.2, 44.7, TOWNLONG_STEPPES },
-									{ 66.8, 48.0, TOWNLONG_STEPPES },
-								},
-								["g"] = {
-									i(86518),	-- Yaungol Fire Carrier
-								},
-							}),
-						},
-					}),
 					ach(7308, {	-- Know Your Role
 						crit(2),	-- Assault Deadtalker's Plateau
 						crit(1),	-- Assault Fire Camp Gai-Cho
