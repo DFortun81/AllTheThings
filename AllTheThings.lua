@@ -21046,6 +21046,14 @@ app.LoadDebugger = function()
 					-- print("Loot Slots:",slots);
 					local loot, source, itemID, info;
 					local type, zero, server_id, instance_id, zone_uid, id, spawn_uid;
+					local mapID = app.CurrentMapID;
+					if mapID then
+						local pos = C_Map.GetPlayerMapPosition(mapID, "player");
+						if pos then
+							local px, py = pos:GetXY();
+							print("coord", math.ceil(px * 10000) / 100, math.ceil(py * 10000) / 100, mapID)
+						end
+					end
 					for i=1,slots,1 do
 						loot = GetLootSlotLink(i);
 						if loot then
