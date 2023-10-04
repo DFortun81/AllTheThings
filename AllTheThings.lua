@@ -5018,7 +5018,7 @@ local function DetermineNPCDrops(group, FillData)
 	end
 end
 local function SkipFillingGroup(group, FillData)
-	if group.skipFill and group.parent then return true; end
+	if group.skipFill and FillData.InWindow then return true; end
 
 	-- do not fill the same object twice in multiple Locations
 	local groupHash, included = group.hash, FillData.Included;
@@ -5136,6 +5136,7 @@ app.FillGroups = function(group)
 	local FillData = {
 		Included = {},
 		CraftedItems = {},
+		InWindow = groupWindow and true or nil,
 		NestNPCData = app.Settings:GetTooltipSetting("NPCData:Nested"),
 	};
 	-- Get tradeskill cache
