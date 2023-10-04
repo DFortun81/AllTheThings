@@ -1220,6 +1220,13 @@ i(209944);	-- Friendsurge Defenders
 i(206195);	-- Path of the Naaru
 i(208658);	-- Mirror of Humility
 i(209052);	-- Brew Barrel
+i(201931);  -- Warcraft Rumble Toy: Maiev
+i(202261);  -- Warcraft Rumble Toy: Sneed
+i(202851);  -- Warcraft Rumble Toy: Night Elf Huntress
+i(202856);  -- Warcraft Rumble Toy: Stonehoof Tauren
+i(202859);  -- Warcraft Rumble Toy: Undead Ghoul
+i(202862);  -- Warcraft Rumble Toy: Murloc
+i(202865);  -- Warcraft Rumble Toy: Whelp Egg
 --- Unsorted ---
 i(208229);	-- Honor of the Forsaken
 i(208880);	-- Brewhahat
