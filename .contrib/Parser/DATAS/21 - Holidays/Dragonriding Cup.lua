@@ -724,6 +724,9 @@ root(ROOTS.Holidays, n(DRAGONRIDING_CUP_ROOT, {
 				n(206744, {	-- Maztha <Riders of Azeroth>
 					["coord"] = { 27.2, 47.2, VALDRAKKEN },
 					["g"] = {
+						i(202280, {	-- Renewed Proto-Drake: Pronged Tail (DM!)
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+						}),
 						i(197615, {	-- Windborne Velocidrake: Teal Scales (DM!)
 							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 50 } },
 						}),
@@ -733,9 +736,10 @@ root(ROOTS.Holidays, n(DRAGONRIDING_CUP_ROOT, {
 						i(203349, {	-- Winding Slitherdrake: Curved Nose Horn (DM!)
 							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
 						}),
-						i(203319, {	-- Winding Slitherdrake: Finned Cheek (DM!)
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-						}),
+						-- Leaving it here because it not being available feels like a bug
+						-- i(203319, {	-- Winding Slitherdrake: Finned Cheek (DM!)
+						-- 	["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+						-- }),
 						i(203306, {	-- Winding Slitherdrake: Horned Brow (DM!)
 							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
 						}),
