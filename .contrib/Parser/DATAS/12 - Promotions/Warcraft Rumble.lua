@@ -206,7 +206,7 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDE
                     ["coord"] = { 7.4, 47.5, THE_AZURE_SPAN },
                 }),
                 o(387695, {	-- Rumble Coin Bag
-                    -- ["questID"] = 73936, - Wrong Quest ID
+                    ["questID"] = 74843,
                     ["coord"] = { 49.2, 58.3, THALDRASZUS },
                 }),
             }),
@@ -232,7 +232,7 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDE
                     ["coord"] = { 56, 12, DUROTAR },
                 }),
                 o(387719, {	-- Rumble Foil Bag
-                    -- ["questID"] = 75223, -- Wrong QuestID?
+                    ["questID"] = 74849,
                     ["coord"] = { 46.1, 46.7, VALDRAKKEN },
                 }),
                 o(405585, {	-- Rumble Foil Bag
