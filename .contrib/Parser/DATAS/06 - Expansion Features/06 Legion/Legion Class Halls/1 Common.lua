@@ -1,7 +1,6 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-
 root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 	n(CLASS_HALL, {
 		["icon"] = "Interface\\Icons\\achievement_level_110",
@@ -295,7 +294,6 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
 							i(153502, {	-- Cache of Antoran Treasures [Looking For Raid]
 								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
-								--	Maybe Change/Update for Legion Classic? Was made Legacy Loot on March 30th. 8.3.7 was 21st July
 								["skipFill"] = true,
 								["sym"] = {
 									{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
@@ -352,7 +350,6 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
 							i(153504, {	-- Cache of Antoran Treasures (Normal)
 								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
-								--	Maybe Change/Update for Legion Classic? Was made Legacy Loot on March 30th. 8.3.7 was 21st July
 								["skipFill"] = true,
 								["sym"] = {
 									{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
@@ -409,7 +406,6 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
 							i(153501, {	-- Cache of Antoran Treasures (Heroic)
 								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
-								--	Maybe Change/Update for Legion Classic? Was made Legacy Loot on March 30th. 8.3.7 was 21st July
 								["skipFill"] = true,
 								["sym"] = {
 									{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
@@ -466,7 +462,6 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
 							i(153503, {	-- Cache of Antoran Treasures (Mythic)
 								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
-								--	Maybe Change/Update for Legion Classic? Was made Legacy Loot on March 30th. 8.3.7 was 21st July
 								["skipFill"] = true,
 								["sym"] = {
 									{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
@@ -935,10 +930,8 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
 							i(147518, { -- Cache of Fel Treasures (Raid Finder)
 								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
-								--	Maybe Change/Update for Legion Classic? Was made Legacy Loot on March 30th. 8.3.7 was 21st July
 								["skipFill"] = true,
 								["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
-
 							}),
 						},
 					}),
@@ -981,7 +974,6 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Raid Finder Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
 								["skipFill"] = true,
 								["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
-
 							}),
 						},
 					}),
@@ -1307,7 +1299,6 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 		}),
 	})),
 }));
-
 root(ROOTS.HiddenQuestTriggers, {
 	tier(LEGION_TIER, {
 		q(48308),	-- Tracking Quest - triggered after obtaining "Azeroth Invasion Plans" (itemID 152316)
