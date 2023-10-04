@@ -5018,7 +5018,7 @@ local function DetermineNPCDrops(group, FillData)
 	end
 end
 local function SkipFillingGroup(group, FillData)
-	if group.skipFilling then return true; end
+	if group.skipFill and group.parent then return true; end
 
 	-- do not fill the same object twice in multiple Locations
 	local groupHash, included = group.hash, FillData.Included;
@@ -5176,7 +5176,7 @@ app.BuildCost = function(group)
 		["icon"] = "Interface\\Icons\\INV_Misc_Coin_02",
 		["sourceIgnored"] = true,
 		["OnUpdate"] = app.AlwaysShowUpdate,
-		["skipFilling"] = true,
+		["skipFill"] = true,
 		["g"] = {},
 	};
 	-- Gold cost currently ignored
@@ -5405,7 +5405,7 @@ app.BuildSourceParent = function(group)
 				["description"] = L["SOURCES_DESC"],
 				["icon"] = "Interface\\Icons\\inv_misc_spyglass_02",
 				["OnUpdate"] = app.AlwaysShowUpdate,
-				["skipFilling"] = true,
+				["skipFill"] = true,
 				["g"] = {},
 			};
 			local clonedParent, keepSource;
@@ -13850,7 +13850,7 @@ function app:CreateMiniListForGroup(group)
 						["icon"] = "Interface\\Icons\\Achievement_GarrisonFollower_ItemLevel650.blp",
 						["g"] = g,
 						["OnUpdate"] = app.AlwaysShowUpdate,
-						["skipFilling"] = true,
+						["skipFill"] = true,
 						["sourceIgnored"] = true,
 					};
 				else
@@ -13859,7 +13859,7 @@ function app:CreateMiniListForGroup(group)
 						["description"] = L["UNIQUE_APPEARANCE_LABEL_DESC"],
 						["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO.blp",
 						["OnUpdate"] = app.AlwaysShowUpdate,
-						["skipFilling"] = true,
+						["skipFill"] = true,
 						["sourceIgnored"] = true,
 					};
 				end
@@ -13926,12 +13926,12 @@ function app:CreateMiniListForGroup(group)
 					if not group.g then group.g = { app.CreateGearSet(setID, {
 						["OnUpdate"] = app.AlwaysShowUpdate,
 						["sourceIgnored"] = true,
-						["skipFilling"] = true,
+						["skipFill"] = true,
 						["g"] = g }) }
 					else tinsert(group.g, app.CreateGearSet(setID, {
 						["OnUpdate"] = app.AlwaysShowUpdate,
 						["sourceIgnored"] = true,
-						["skipFilling"] = true,
+						["skipFill"] = true,
 						["g"] = g })) end
 				end
 			end
@@ -14113,7 +14113,7 @@ function app:CreateMiniListForGroup(group)
 					["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
 					["OnUpdate"] = app.AlwaysShowUpdate,
 					["sourceIgnored"] = true,
-					["skipFilling"] = true,
+					["skipFill"] = true,
 					-- copy any sourceQuests into the header incase the root is not actually a quest
 					["sourceQuests"] = root.sourceQuests,
 				};

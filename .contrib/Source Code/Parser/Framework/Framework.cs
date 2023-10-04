@@ -3608,6 +3608,7 @@ namespace ATT
                 case "setHeaderID":
                 case "setSubHeaderID":
                 case "setID":
+                case "skipFill":
                 case "sins":
                 case "sort":
                 case "sourceQuest":

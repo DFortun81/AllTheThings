@@ -474,6 +474,7 @@ namespace ATT
                     case "isWorldQuest":
                     case "ignoreBonus":
                     case "ignoreSource":
+                    case "skipFill":
                     case "pvp":
                     case "pb":
                         {

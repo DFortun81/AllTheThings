@@ -1746,6 +1746,7 @@ end");
                     case "ignoreSource":
                     case "hideText":
                     case "ordered":
+                    case "skipFill":
                     case "sort":
                     case "sourceIgnored":
                     case "nomerge":

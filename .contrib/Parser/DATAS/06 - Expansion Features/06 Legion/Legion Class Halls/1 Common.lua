@@ -174,8 +174,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 				ach(10853),	-- Part of History
 			}),
 			ach(10748, {	-- Fighting with Style: Valorous
-				["sym"] = {
-					{"meta_achievement",
+				["sym"] = {{"meta_achievement",
 						10459,	-- Improving on History
 						11160,	-- Unleashed Monstrosities
 						11162,	-- Keystone Master
@@ -248,7 +247,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							-- This is not removed from game; confirmed again in 9.0.5. You get it on the mission table one time per character after gearing up your followers a bit (its an 850 mission).
 							["provider"] = { "i", 143328 },	-- Battle Report
 							["g"] = {
-									i(143606, {	-- Satchel of Battlefield Spoils
+								i(143606, {	-- Satchel of Battlefield Spoils
 									i(140413),	-- Grisly Souvenir
 									i(140414),	-- Fel-Loaded Dice
 									i(140417),	-- Battle-Tempered Hilt
@@ -297,7 +296,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							i(153502, {	-- Cache of Antoran Treasures [Looking For Raid]
 								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
 								--	Maybe Change/Update for Legion Classic? Was made Legacy Loot on March 30th. 8.3.7 was 21st July
-								-- #if BEFORE 8.3.7
+								["skipFill"] = true,
 								["sym"] = {
 									{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
 									{"pop"},	-- Discard the Instance Header and acquire the children.
@@ -308,12 +307,11 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 									{"pop"},	-- Discard the Encounter Headers and acquire the children.
 									{"isnt", "c"},	-- Exclude Tier Set Pieces
 									{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
-									{"exclude", "itemID", 
+									{"exclude", "itemID",
 										152094,	-- Taeshalach
 										153115,	-- Scythe of the Unmaker
-									},							
+									},
 								},
-								-- #endif
 							}),
 						},
 					}),
@@ -355,7 +353,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							i(153504, {	-- Cache of Antoran Treasures (Normal)
 								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
 								--	Maybe Change/Update for Legion Classic? Was made Legacy Loot on March 30th. 8.3.7 was 21st July
-								-- #if BEFORE 8.3.7
+								["skipFill"] = true,
 								["sym"] = {
 									{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
 									{"pop"},	-- Discard the Instance Header and acquire the children.
@@ -371,7 +369,6 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 										155831,	-- Pantheon's Blessing
 									},
 								},
-								-- #endif
 							}),
 						},
 					}),
@@ -413,7 +410,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							i(153501, {	-- Cache of Antoran Treasures (Heroic)
 								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
 								--	Maybe Change/Update for Legion Classic? Was made Legacy Loot on March 30th. 8.3.7 was 21st July
-								-- #if BEFORE 8.3.7
+								["skipFill"] = true,
 								["sym"] = {
 									{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
 									{"pop"},	-- Discard the Instance Header and acquire the children.
@@ -429,7 +426,6 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 										155831,	-- Pantheon's Blessing
 									},
 								},
-								-- #endif
 							}),
 						},
 					}),
@@ -471,7 +467,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							i(153503, {	-- Cache of Antoran Treasures (Mythic)
 								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
 								--	Maybe Change/Update for Legion Classic? Was made Legacy Loot on March 30th. 8.3.7 was 21st July
-								-- #if BEFORE 8.3.7
+								["skipFill"] = true,
 								["sym"] = {
 									{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
 									{"pop"},	-- Discard the Instance Header and acquire the children.
@@ -487,7 +483,6 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 										155831,	-- Pantheon's Blessing
 									},
 								},
-								-- #endif
 							}),
 						},
 					}),
@@ -577,10 +572,11 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 						-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
 						i(139484, {	-- Cache of Nightmarish Treasures [Raid Finder]
 							["u"] = REMOVED_FROM_GAME,
+							["skipFill"] = true,
 							["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 					}),
-					mission(1298, { -- The Emerald Nightmare: Il'gynoth 
+					mission(1298, { -- The Emerald Nightmare: Il'gynoth
 						["groups"] = {
 							i(139480), -- Corrupted Egg Fragment [Raid Finder]
 							q(43546, { -- Il'gynoth [Raid Finder]
@@ -621,11 +617,12 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
 							i(139486, {	-- Cache of Nightmarish Treasures [Normal]
 								["u"] = REMOVED_FROM_GAME,
+								["skipFill"] = true,
 								["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 							}),
 						},
 					}),
-					mission(1300, { -- The Emerald Nightmare: Fall of Cenarius 
+					mission(1300, { -- The Emerald Nightmare: Fall of Cenarius
 						["groups"] = {
 							i(140163), -- Tainted Moonglade Leaf [Raid Finder]
 							q(43902, { -- Fall of Cenarius [Raid Finder]
@@ -666,11 +663,12 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
 							i(139487, {	-- Cache of Nightmarish Treasures [Heroic]
 								["u"] = REMOVED_FROM_GAME,
+								["skipFill"] = true,
 								["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 							}),
 						},
 					}),
-					mission(1302, { -- The Emerald Nightmare: Xavius 
+					mission(1302, { -- The Emerald Nightmare: Xavius
 						["groups"] = {
 							i(140164), -- Vial of Swirling Shadow [Raid Finder]
 							q(43903, { -- Xavius [Raid Finder]
@@ -711,11 +709,12 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
 							i(139488, {	-- Cache of Nightmarish Treasures [Mythic]
 								["u"] = REMOVED_FROM_GAME,
+								["skipFill"] = true,
 								["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 							}),
 						},
 					}),
-					mission(1303, { -- The Nighthold: Vaults 
+					mission(1303, { -- The Nighthold: Vaults
 						["groups"] = {
 							i(140147), -- Pulsauron Bindings [Raid Finder]
 							q(43882, { -- Vaults [Raid Finder]
@@ -756,11 +755,12 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
 							i(140148, {	-- Cache of Nightborne Treasures [Raid Finder]
 								["u"] = REMOVED_FROM_GAME,
+								["skipFill"] = true,
 								["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 							}),
 						},
 					}),
-					mission(1304, { -- The Nighthold: High Botanist Tel'arn 
+					mission(1304, { -- The Nighthold: High Botanist Tel'arn
 						["groups"] = {
 							i(140171), -- Glowing Lily [Raid Finder]
 							q(43910, { -- High Botanist Tel'arn [Raid Finder]
@@ -801,11 +801,12 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
 							i(140150, {	-- Cache of Nightborne Treasures (Normal)
 								["u"] = REMOVED_FROM_GAME,
+								["skipFill"] = true,
 								["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 							}),
 						},
 					}),
-					mission(1305, { -- The Nighthold: Elisande 
+					mission(1305, { -- The Nighthold: Elisande
 						["groups"] = {
 							i(140172), -- Ancient Nightborne Tome [Raid Finder]
 							q(43911, { -- Elisande [Raid Finder]
@@ -846,11 +847,12 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
 							i(140152, {	-- Cache of Nightborne Treasures (Heroic)
 								["u"] = REMOVED_FROM_GAME,
+								["skipFill"] = true,
 								["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 							}),
 						},
 					}),
-					mission(1306, { -- The Nighthold: Gul'dan 
+					mission(1306, { -- The Nighthold: Gul'dan
 						["groups"] = {
 							i(140173), -- Shred of Tattered Robe [Raid Finder]
 							q(43912, { -- Gul'dan [Raid Finder]
@@ -891,6 +893,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
 							i(140154, {	-- Cache of Nightborne Treasures (Mythic)
 								["u"] = REMOVED_FROM_GAME,
+								["skipFill"] = true,
 								["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 							}),
 						},
@@ -933,9 +936,9 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							i(147518, { -- Cache of Fel Treasures (Raid Finder)
 								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
 								--	Maybe Change/Update for Legion Classic? Was made Legacy Loot on March 30th. 8.3.7 was 21st July
-								-- #if BEFORE 8.3.7
+								["skipFill"] = true,
 								["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
-								-- #endif
+
 							}),
 						},
 					}),
@@ -976,13 +979,13 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
 							i(147519, { -- Cache of Fel Treasures (Normal)
 								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Raid Finder Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
-								-- #if BEFORE 8.3.7
+								["skipFill"] = true,
 								["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
-								-- #endif
+
 							}),
 						},
 					}),
-					mission(1682, { -- Tomb of Sargeras: The Fallen Avatar 
+					mission(1682, { -- Tomb of Sargeras: The Fallen Avatar
 						["groups"] = {
 							i(147505), -- Wailing Soul [Raid Finder]
 							q(47122, { -- The Fallen Avatar [Raid Finder]
@@ -1019,13 +1022,12 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
 							i(147520, { -- Cache of Fel Treasures (Heroic)
 								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Raid Finder Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
-								-- #if BEFORE 8.3.7
+								["skipFill"] = true,
 								["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
-								-- #endif
 							}),
 						},
 					}),
-					mission(1683, { -- Tomb of Sargeras: The Deceiver 
+					mission(1683, { -- Tomb of Sargeras: The Deceiver
 						["groups"] = {
 							i(147509), -- Seal of the Deceiver [Raid Finder]
 							q(47126, { -- The Deceiver [Raid Finder]
@@ -1062,9 +1064,8 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
 							i(147521, { -- Cache of Fel Treasures (Mythic)
 								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Raid Finder Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
-								-- #if BEFORE 8.3.7
+								["skipFill"] = true,
 								["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
-								-- #endif
 							}),
 						},
 					}),
