@@ -214,6 +214,10 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { AD
 	m(VALDRAKKEN, {
 		n(PROFESSIONS, {
 			q(74430),	-- Weekly Profession completed
+			q(77927, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77891 (Fixing The Dream)
+			q(77929, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77938 (An Unlikely Engineer)
+			q(77930, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77910 (Enchanted Shrubbery)
+			q(77931, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77937 (Forbidden Sugar)
 		}),
 	}),
 })));

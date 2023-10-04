@@ -557,6 +557,14 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 					i(208947),	-- Enchanted Watering Can (QI!)
 				},
 			}),
+			q(77937, {	-- Forbidden Sugar
+				["provider"] = { "n", 210162 },	-- Magnolia Oaken
+				["coord"] = { 36.8, 63.1, VALDRAKKEN },
+				["timeline"] = { ADDED_10_2_0 },
+				["g"] = {
+					i(209018),	-- Glowdrop Sugar (QI!)
+				},
+			}),
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",

@@ -627,7 +627,6 @@ root(ROOTS.Unsorted, {
 				i(210493),	-- Technique: Grotto Netherwing Drake: Spiked Jaw (RECIPE!)
 				i(210491),	-- Technique: Winding Slitherdrake: Hairy Chin (RECIPE!)
 			}),
-			i(192717),	-- Animated Splinter
 			i(204720),	-- Join the New Scarlet Crusade!
 			i(205463),	-- Molten Lava Ball
 			i(206378),	-- [DNT] Test Loot
@@ -860,13 +859,11 @@ root(ROOTS.Unsorted, {
 			-- Rares?
 			i(208324),	-- Scorching Dryad's Chestpiece
 			i(208325),	-- Ignit's Fiery Heart
-			i(208326),	-- Vest of the Flametide
 			i(208328),	-- Fystia's Deft Hands
 			i(208329),	-- Warm Grasp of the Dream
 			i(208330),	-- Piercing Touch of the Vine
 			i(208331),	-- Cowl of the Flame
 			i(208332),	-- Horns of the Envoy
-			i(208333),	-- Fallen Flame's Crown
 			i(208334),	-- Legplates of the Krakken
 			i(208335),	-- Vibrant Fall Leggings
 			i(208336),	-- Legguards of the Dreamsaber
@@ -892,7 +889,6 @@ root(ROOTS.Unsorted, {
 			i(208371),	-- Fire Assassin's Boots
 			i(208373),	-- Band of Bated Breath
 			i(208374),	-- Talthornei's Wrath
-			i(208375),	-- Owlbear's Decisive Strike
 			i(208376),	-- Great Ray's Longbow
 			i(208379),	-- Keevah's Extended Claw
 			i(208380),	-- Moragh's Kneading Claw
@@ -900,7 +896,6 @@ root(ROOTS.Unsorted, {
 			i(208383),	-- Pommel of Fire
 			i(208385),	-- Flame Endowed Blade
 			i(208388),	-- Leafster's Magic Wand
-			i(208389),	-- Spear of the Wilds
 			--
 			i(208393),	-- Nascent Aspect's Dreaming Crest
 			i(208394),	-- Nascent Wyrm's Dreaming Crest
@@ -992,7 +987,6 @@ root(ROOTS.Unsorted, {
 			i(208979),	-- 10.2 Monster - Merithra - Robe
 			i(208981),	-- 10.2 Monster - Merithra - Wrist
 			i(208982),	-- 10.2 Monster - Merithra - Waist
-			i(209018),	-- Glowdrop Sugar
 			i(209019),	-- Conjured Sugarfree Firewater Sorbet
 			i(209021),	-- Shed Great Feathers
 			i(209036),	-- Cache of Amirdrassil Treasures
@@ -1052,7 +1046,6 @@ root(ROOTS.Unsorted, {
 			i(209326),	-- Maruukai Pale Ale
 			i(209416),	-- Turtle Eggshell Shards
 			i(209806),	-- Cataloger's Film
-			i(209839),	-- Tangible Whispers of Dreaming
 			i(209853),	-- Unstable Water Walking Potion
 			i(209856),	-- Dilated Time Pod
 			i(209860),	-- Thorn-Laden Heart
@@ -1077,7 +1070,6 @@ root(ROOTS.Unsorted, {
 			i(210005),	-- 10.2 Monster - Weapon - Staff - 10.1.5 Weapon Staff - Staff_2H_Druid_C_02_Color1
 			i(210040),	-- Set Keystone Map: Throne of the Tides
 			i(210041),	-- Shipment of Goods
-			i(210049),	-- The Legend of Elun'Ahir
 			i(210061),	-- [PH] Mythic Raid Fire Owl
 			i(210065),	-- Sky-Captain's Formal Hat
 			i(210066),	-- Sky-Captain's Formal Boots
@@ -1154,25 +1146,6 @@ root(ROOTS.Unsorted, {
 			i(210226),	-- Large Emerald Bloom
 			i(210326),	-- Medal of Conquest
 			i(210346),	-- Self-Baking Herb Based Cookies
-			i(210348),	-- Winter Warden's Sabatons
-			i(210349),	-- Cold Conservator's Gown
-			i(210350),	-- Winter Warden's Chestplate
-			i(210351),	-- Frigid Forager's Chestguard
-			i(210354),	-- Winter Warden's Gauntlets
-			i(210355),	-- Cold Conservator's Mitts
-			i(210356),	-- Frigid Forager's Handguards
-			i(210357),	-- Cold Conservator's Hood
-			i(210358),	-- Frigid Forager's Helm
-			i(210360),	-- Winter Warden's Legplates
-			i(210361),	-- Cold Conservator's Leggings
-			i(210362),	-- Frigid Forager's Legguards
-			i(210366),	-- Cold Conservator's Shoulders
-			i(210367),	-- Frigid Forager's Eqaulets
-			i(210368),	-- Winter Warden's Girdle
-			i(210369),	-- Cold Conservator's Sash
-			i(210370),	-- Frigid Forager's Waistguard
-			i(210373),	-- Winter Warden's Bracers
-			i(210374),	-- Frigid Forager's Cuffs
 			i(210376),	-- Beautiful Blizzard Binding
 			i(210377),	-- Snipping Sleet Circle
 			i(210383),	-- Winter Warden's Bulwark
@@ -1181,9 +1154,6 @@ root(ROOTS.Unsorted, {
 			i(210386),	-- Crystalline Tender's Glaive
 			i(210387),	-- Winter Warden's Blade
 			i(210389),	-- Crystalline Tender's Dirk
-			i(210390),	-- Winter Warden's Warhelm
-			i(210391),	-- Cold Conservator's Slippers
-			i(210392),	-- Frigid Forager's Treads
 			i(210394),	-- Cold Conservator's Cane
 			i(210395),	-- Crystalline Tender's Mace
 			i(210396),	-- Frigid Forager's Longbow
@@ -1195,7 +1165,6 @@ root(ROOTS.Unsorted, {
 			i(210404),	-- Frigid Forager's Curve
 			i(210405),	-- Crystalline Tender's Kris
 			i(210406),	-- Frigid Forager's Claymore
-			i(210408),	-- Winter Warden's Cloak
 			i(210415),	-- Darnassian Moonsilver Spaulders
 			i(210418),	-- Darnassian Cloak
 			i(210419),	-- Dream Wardens Insignia

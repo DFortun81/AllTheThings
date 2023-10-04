@@ -17,12 +17,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["g"] = {
 					i(208349),	-- Burning Leather Cuffs
 					i(208323),	-- Nature's Firebathed Robes
+					i(208326),	-- Vest of the Flametide
 				},
 			}),
 			n(209909, {	-- Crabtankerous
 				["questID"] = 77862,
 				["coord"] = { 66.1, 63.5, TREE_1 },
 				["g"] = {
+					i(208333),	-- Fallen Flame's Crown
 					i(208364),	-- Falling Leaf Saber
 				},
 			}),
@@ -117,6 +119,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 55.0, 36.8, TREE_1 },
 				["g"] = {
 					i(210492),	-- Technique: Grotto Netherwing Drake: Chin Tendrils (RECIPE!)
+					i(208375),	-- Owlbear's Decisive Strike
 				},
 			}),
 			n(209113, {	-- Nouberon
@@ -171,14 +174,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			n(209911, {	-- The Apostle
 				["questID"] = 77990,
 				["coord"] = { 26.0, 26.6, TREE_1 },
-			}),
-			--don't listed in achievement
-			n(209912, {	-- Raszageth's Last Breath
-				["questID"] = 77859,
-				["coords"] = {
-					{ 65.4, 43.5, TREE_1 },
-					{ 67.5, 66.2, TREE_1 },
-					{ 41.5, 31.1, TREE_1 },
+				["g"] = {
+					i(208389),	-- Spear of the Wilds
 				},
 			}),
 			n(210508, {	-- Voracious Mikanji
@@ -189,6 +186,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210133),	-- Harvest Guardian Cloak
 				},
 			}),
+			--[[ removed?
+			n(209912, {	-- Raszageth's Last Breath
+				["questID"] = 77859,
+				["coords"] = {
+					{ 65.4, 43.5, TREE_1 },
+					{ 67.5, 66.2, TREE_1 },
+					{ 41.5, 31.1, TREE_1 },
+				},
+			}),]]--
 		})),
 	}),
 })));

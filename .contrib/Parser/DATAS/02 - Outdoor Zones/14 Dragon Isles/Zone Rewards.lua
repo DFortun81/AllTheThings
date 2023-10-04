@@ -21,6 +21,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		i(205682, {	-- Large Shadowflame Residue Sack
 			["timeline"] = { ADDED_10_1_0 },
 		}),
+		i(209837, {	-- Faint Whispers of Dreaming
+			["timeline"] = { ADDED_10_2_0 },
+		}),
+		i(209839, {	-- Tangible Whispers of Dreaming
+			["timeline"] = { ADDED_10_2_0 },
+		}),
 		filter(CLOTH, {
 			i(191989),	-- Cobalt Watcher's Cord
 			i(191987),	-- Cobalt Watcher's Cowl

@@ -89,6 +89,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 203680 },	-- Bram
 					["timeline"] = { ADDED_10_1_0 },
 				}),
+				q(78097, {	-- Sparks of Life: Emerald Dream
+					["provider"] = { "n", 210781 },	-- Jephryn
+					["timeline"] = { ADDED_10_2_0 },
+				}),
 			})),
 			n(VENDORS, {
 				n(199599, {	-- Calderax

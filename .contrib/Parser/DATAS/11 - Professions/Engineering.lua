@@ -929,14 +929,19 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			q(75575, {	-- Ballistae Bits
 				["provider"] = { "n", 203516 },	-- Kayann
 				["coord"] = { 36.5, 62.5, VALDRAKKEN },
-				["timeline"] = { ADDED_10_1_0 }
+				["timeline"] = { ADDED_10_1_0 },
 			}),
 			q(75608, {	-- Titan Trash or Titan Treasure?
 				["provider"] = { "n", 203516 },	-- Kayann
 				["coord"] = { 36.5, 62.5, VALDRAKKEN },
-				["timeline"] = { ADDED_10_1_0 }
+				["timeline"] = { ADDED_10_1_0 },
 			}),
 			-- Patch 10.2.0
+			q(77938, {	-- An Unlikely Engineer
+				["provider"] = { "n", 210162 },	-- Magnolia Oaken
+				["coord"] = { 36.8, 63.1, VALDRAKKEN },
+				["timeline"] = { ADDED_10_2_0 },
+			}),
 			q(77891, {	-- Fixing The Dream
 				["provider"] = { "n", 210162 },	-- Magnolia Oaken
 				["coord"] = { 36.8, 63.1, VALDRAKKEN },

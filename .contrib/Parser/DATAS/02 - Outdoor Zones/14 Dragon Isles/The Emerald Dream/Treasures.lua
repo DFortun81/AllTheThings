@@ -6,8 +6,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 		n(TREASURES, {
 			-- Rewards..
 			i(210171),	-- Formula: Enchanted Aspect's Dreaming Crest (RECIPE!)
-			i(210173),	-- Formula: Enchanted Whelpling's Dreaming Crest (RECIPE!)
-			i(210172),	-- Formula: Enchanted Wyrm's Dreaming Crest (RECIPE!)
+			i(210173),	-- Formula: Enchanted Whelpling's Dreaming Crest (RECIPE!) (TODO: was found in small somnut)
+			i(210172),	-- Formula: Enchanted Wyrm's Dreaming Crest (RECIPE!) (TODO: was found in small somnut)
+			--
+			o(413774, {	-- The Legend of Elun'Ahir
+				["questID"] = 78831,
+				["coord"] = { 49.8, 61.7, TREE_1 },
+				["g"] = {
+					i(210049),	-- The Legend of Elun'Ahir
+				},
+			}),
 			--
 			o(407739, {	-- Triflesnatcher's Roving Trove
 				["description"] = "You need to interact with owl 3 times in order to spawn chest.",
@@ -42,6 +50,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			o(408707, {	-- Odd Burl
 				["questID"] = 78006,
 				["coord"] = { 55.3, 57.3, TREE_1 },
+				["g"] = {
+					i(208067),	-- Plump Dreamseed (TODO: placeholder?)
+				},
 			}),
 			o(409440, {	-- Pineshrew Cache
 				["questID"] = 78120,
@@ -69,9 +80,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					o(408706, {	-- Magical Bloom
 						["coord"] = { 61.6, 59.5, TREE_1 },
 						["questID"] = 78005,
-						--["g"] = {
-						--	i(),	-- ?
-						--},
+						["g"] = {
+							i(208047),	-- Gigantic Dreamseed (TODO: another one placeholder?)
+						},
 					}),
 				},
 			}),
@@ -128,7 +139,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					}),
 				},
 			}),
-			-- Unwaking Echos seems to be zone-wide chests and are probably dailies with several spawn points
 			o(411447, {	-- Unwaking Echo
 				["questID"] = 78547,
 				["description"] = "Use /sleep to loot the chest.",

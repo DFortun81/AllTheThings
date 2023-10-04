@@ -48,9 +48,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					}),
 				}
 			}),
-			n(211069, {	-- Thislefir (TODO: there now two more vendor with same stuff)
+			n(211265, {	-- Sylvia Whisperbloom (TODO: Talisa Whisperbloom (n: 212797) have same stuff, tree no longer a vendor)
 				["coord"] = { 59.8, 16.9, TREE_1 },
-				["g"] = {
+				["g"] = {	-- (TODO: everything in cost changed to { "i", 211376, 1 })
 					i(209961, {	-- Ceremonial Jacaranda Cape
 						["cost"] = { { "c", 2651, 50 } },
 					}),

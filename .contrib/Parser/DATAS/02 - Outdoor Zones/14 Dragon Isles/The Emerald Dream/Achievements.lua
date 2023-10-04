@@ -5,75 +5,78 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 	m(TREE_1, {
 		n(ACHIEVEMENTS, {
 			ach(19316, {	-- Adventurer of the Emerald Dream
-				crit(62945, {	-- Bloodstripe Great Ray
-					["_npcs"] = { 210050 },	-- Bloodstripe Great Ray
-				}),
-				crit(62937, {	-- Crabtankerous
-					["_npcs"] = { 209909 },	-- Crabtankerous
-				}),
-				crit(62933, {	-- Envoy of Winter
-					["_npcs"] = { 209929 },	-- Envoy of Winter
-				}),
-				crit(62930, {	-- Firebrand Fystia
-					["_npcs"] = { 209893 },	-- Firebrand Fystia
-				}),
-				crit(62938, {	-- Fruitface
-					["_npcs"] = { 209913 },	-- Fruitface
-				}),
-				crit(62932, {	-- Greedy Gessie
-					["_npcs"] = { 209936 },	-- Greedy Gessie
-				}),
-				crit(62950, {	-- Henri Snufftail
-					["_npcs"] = { 210075 },	-- Henri Snufftail
-				}),
-				crit(62936, {	-- Ignit the Firebranded
-					["_npcs"] = { 209620 },	-- Ignit the Firebranded
-				}),
-				crit(62940, {	-- Isaqa
-					["_npcs"] = { 209919 },	-- Isaqa
-				}),
-				crit(62943, {	-- Keen-eyed Cian
-					["_npcs"] = { 210046 },	-- Keen-eyed Cian
-				}),
-				crit(62946, {	-- Matriarch Keevah
-					["_npcs"] = { 210051 },	-- Matriarch Keevah
-				}),
-				crit(62948, {	-- Molten Leadspike
-					["_npcs"] = { 210064 },	-- Molten Leadspike
-				}),
-				crit(62947, {	-- Moltenbinder's Disciple
-					["_npcs"] = { 208658 },	-- Moltenbinder's Disciple
-				}),
-				crit(62942, {	-- Moragh the Slothful
-					["_npcs"] = { 210045 },	-- Moragh the Slothful
-				}),
-				crit(62949, {	-- Mosa Umbramane
-					["_npcs"] = { 210070 },	-- Mosa Umbramane
-				}),
-				crit(62929, {	-- Nouberon
-					["_npcs"] = { 209113 },	-- Nouberon
-				}),
-				crit(62931, {	-- Cragnosh (blizz pls)
-					["_npcs"] = { 209898 },	-- Reefbreaker Moruud
-				}),
-				crit(62951, {	-- Ristar, the Rabid
-					["_npcs"] = { 210161 },	-- Ristar, the Rabid
-				}),
-				crit(62944, {	-- Somnambulant Ori
-					["_npcs"] = { 210047 },	-- Somnambulant Ori
-				}),
-				crit(62935, {	-- Splinterlimb
-					["_npcs"] = { 209365 },	-- Splinterlimb
-				}),
-				crit(62941, {	-- Surging Lasher
-					["_npcs"] = { 210111 },	-- Surging Lasher
-				}),
-				crit(62934, {	-- Talthonel Ashwhisper
-					["_npcs"] = { 209902 },	-- Talthonel Ashwhisper
-				}),
-				crit(	62939, {	-- The Apostle
-					["_npcs"] = { 209911 },	-- The Apostle
-				}),
+				["g"] = {
+					i(210662),	-- Ochre Ornament of the Grove (COSMETIC!)
+					crit(62945, {	-- Bloodstripe Great Ray
+						["_npcs"] = { 210050 },	-- Bloodstripe Great Ray
+					}),
+					crit(62937, {	-- Crabtankerous
+						["_npcs"] = { 209909 },	-- Crabtankerous
+					}),
+					crit(62933, {	-- Envoy of Winter
+						["_npcs"] = { 209929 },	-- Envoy of Winter
+					}),
+					crit(62930, {	-- Firebrand Fystia
+						["_npcs"] = { 209893 },	-- Firebrand Fystia
+					}),
+					crit(62938, {	-- Fruitface
+						["_npcs"] = { 209913 },	-- Fruitface
+					}),
+					crit(62932, {	-- Greedy Gessie
+						["_npcs"] = { 209936 },	-- Greedy Gessie
+					}),
+					crit(62950, {	-- Henri Snufftail
+						["_npcs"] = { 210075 },	-- Henri Snufftail
+					}),
+					crit(62936, {	-- Ignit the Firebranded
+						["_npcs"] = { 209620 },	-- Ignit the Firebranded
+					}),
+					crit(62940, {	-- Isaqa
+						["_npcs"] = { 209919 },	-- Isaqa
+					}),
+					crit(62943, {	-- Keen-eyed Cian
+						["_npcs"] = { 210046 },	-- Keen-eyed Cian
+					}),
+					crit(62946, {	-- Matriarch Keevah
+						["_npcs"] = { 210051 },	-- Matriarch Keevah
+					}),
+					crit(62948, {	-- Molten Leadspike
+						["_npcs"] = { 210064 },	-- Molten Leadspike
+					}),
+					crit(62947, {	-- Moltenbinder's Disciple
+						["_npcs"] = { 208658 },	-- Moltenbinder's Disciple
+					}),
+					crit(62942, {	-- Moragh the Slothful
+						["_npcs"] = { 210045 },	-- Moragh the Slothful
+					}),
+					crit(62949, {	-- Mosa Umbramane
+						["_npcs"] = { 210070 },	-- Mosa Umbramane
+					}),
+					crit(62929, {	-- Nouberon
+						["_npcs"] = { 209113 },	-- Nouberon
+					}),
+					crit(62931, {	-- Reefbreaker Moruud
+						["_npcs"] = { 209898 },	-- Reefbreaker Moruud
+					}),
+					crit(62951, {	-- Ristar, the Rabid
+						["_npcs"] = { 210161 },	-- Ristar, the Rabid
+					}),
+					crit(62944, {	-- Somnambulant Ori
+						["_npcs"] = { 210047 },	-- Somnambulant Ori
+					}),
+					crit(62935, {	-- Splinterlimb
+						["_npcs"] = { 209365 },	-- Splinterlimb
+					}),
+					crit(62941, {	-- Surging Lasher
+						["_npcs"] = { 210111 },	-- Surging Lasher
+					}),
+					crit(62934, {	-- Talthonel Ashwhisper
+						["_npcs"] = { 209902 },	-- Talthonel Ashwhisper
+					}),
+					crit(62939, {	-- The Apostle
+						["_npcs"] = { 209911 },	-- The Apostle
+					}),
+				},
 			}),
 			ach(19026, {	-- Defenders of the Dream
 				crit(62054, {	-- Enter The Dream
@@ -173,6 +176,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			explorationAch(19309),	-- Explore the Emerald Dream
 			ach(19293, {	-- Friends In Feathers
 				--require q(78370) / Claws for Concern
+				--TODO: remove "_npcs"
 				["g"] = {
 					i(210522),	-- Blueloo (PET!)
 					crit(62785, {	-- Beaks
@@ -256,63 +260,63 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 				crit(62041, {	-- Belligerent Begonias (n: 208617)
 					["coord"] = { 49.9, 35.4, TREE_1 },
-					--["questID"] = xx,
+					--["questID"] = 77359,
 				}),
 				crit(62029, {	-- Chiming Foxglove (n: 208511)
 					["coord"] = { 54.6, 67.6, TREE_1 },
-					--["questID"] = xx,
+					--["questID"] = 77219,
 				}),
 				crit(62185, {	-- Comfy Chamomile (n: 210723)
 					["coord"] = { 38.4, 59.2, TREE_1 },
-					--["questID"] = xx,
+					--["questID"] = 77518,
 				}),
 				crit(62030, {	-- Dragon's Daffodil (n: 208556)
 					["coord"] = { 64.0, 64.8, TREE_1 },
-					--["questID"] = xx,
+					--["questID"] = 77224,
 				}),
 				crit(62037, {	-- Dreamer's Daisy (n: 208615)
 					["coord"] = { 46.4, 40.5, TREE_1 },
-					--["questID"] = xx,
+					--["questID"] = 77391,
 				}),
 				crit(62189, {	-- 	Flourishing Scurfpea (n: 210725)
 					["coord"] = { 48.7, 80.5, TREE_1 },
-					--["questID"] = xx,
+					--["questID"] = 77538,
 				}),
 				crit(62032, {	-- Fuzzy Licorice (n: 208605)
 					["coord"] = { 63.5, 47.1, TREE_1 },
-					--["questID"] = xx,
+					--["questID"] = 77380,
 				}),
 				crit(62036, {	-- Glade Goldenrod (n: 209880)
 					["coord"] = { 40.7, 43.5, TREE_1 },
-					--["questID"] = xx,
+					--["questID"] = 77508,
 				}),
 				crit(62027, {	-- Lavatouched Lilies (n: 209583)
 					["coord"] = { 40.7, 24.8, TREE_1 },
-					--["questID"] = xx,
+					--["questID"] = 77496,
 				}),
 				crit(62039, {	-- Lofty Lupin (n: 208606)
 					["coord"] = { 56.7, 44.9, TREE_1 },
-					--["questID"] = xx,
+					--["questID"] = 77384,
 				}),
 				crit(62040, {	-- Lullaby Lavender (n: 209599)
 					["coord"] = { 56.5, 37.7, TREE_1 },
-					--["questID"] = xx,
+					--["questID"] = 77503,
 				}),
-				crit(62186, {	-- Moon Tulip (n: ?)
+				crit(62186, {	-- Moon Tulip (n: 210724)
 					["coord"] = { 42.6, 74.0, TREE_1 },
-					--["questID"] = xx,
+					--["questID"] = 77531,
 				}),
 				crit(62038, {	-- Ringing Rose (n: 208607)
 					["coord"] = { 49.2, 48.1, TREE_1 },
-					--["questID"] = xx,
+					--["questID"] = 77387,
 				}),
 				crit(62031, {	-- Singing Weedling (n: 208563)
 					["coord"] = { 63.0, 52.8, TREE_1 },
-					--["questID"] = xx,
+					--["questID"] = 77375,
 				}),
 				crit(62035, {	-- Viridescent Sprout (n: 208616)
 					["coord"] = { 40.0, 52.7, TREE_1 },
-					--["questID"] = xx,
+					--["questID"] = 77394,
 				}),
 				crit(62397, {	-- Whisperbloom Sapling (n: 211059)
 					["coord"] = { 51.2, 58.7, TREE_1 },
@@ -320,12 +324,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 				crit(62028, {	-- Ysera's Clover (n: 208443)
 					["coord"] = { 59.2, 58.8, TREE_1 },
-					--["questID"] = xx,
+					--["questID"] = 77214,
 				}),
 			}),
-			ach(19196),		-- Sowing the Seeds
+			ach(19196),		-- Sowing the Seeds (TODO: next after The Emerald Bounty)
 			ach(19194),		-- The Emerald Bounty
-			ach(19198, {	-- The Seeds I Sow
+			ach(19198, {	-- The Seeds I Sow (TODO: next after Sowing the Seeds)
 				["g"] = {
 					title(527),	-- Blossom Bringer
 				},

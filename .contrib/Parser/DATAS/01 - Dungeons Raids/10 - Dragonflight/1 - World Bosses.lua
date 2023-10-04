@@ -122,15 +122,15 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				["g"] = sharedData({
 					["modID"] = 3,
 				},{
-					i(208437),	-- 10.2 Raid - World Boss - Armor - Mail - HEAD 2
-					i(208443),	-- 10.2 Raid - World Boss - Accessory - NECK
-					i(208436),	-- 10.2 Raid - World Boss - Armor - Plate - CHEST 2
-					i(208438),	-- 10.2 Raid - World Boss - Armor - Leather - HAND 2
-					i(208429),	-- 10.2 Raid - World Boss - Armor - Mail - WAIST 2
-					i(208435),	-- 10.2 Raid - World Boss - Armor - Plate - WAIST 2 (War Art)
-					i(208440),	-- 10.2 Raid - World Boss - Armor - Cloth - LEGS 2
-					i(208441),	-- 10.2 Raid - World Boss - Armor - Cloth - FEET 3
-					i(208439),	-- 10.2 Raid - World Boss - Armor - Leather - FEET 3
+					i(208437),	-- Crown of Freya's Chosen
+					i(208443),	-- Slumbering Ursine Talisman
+					i(208436),	-- Flame-Etched Breastplate
+					i(208438),	-- Grasps of Awakened Fury
+					i(208429),	-- Forgotten Jalgar's Girdle
+					i(208435),	-- Mossen Rage Waistguard
+					i(208440),	-- Aurostor's Sleeping Knickers
+					i(208441),	-- Restful Dozer's Shoes
+					i(208439),	-- Rousing Earth Striders
 				}),
 			})),
 			q(76367,	-- Hibernation Heroes

@@ -630,6 +630,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 76568 },	-- Pineshrew Panic
 				["provider"] = { "n", 207779 },	-- Ethidris Creekward
 				["coord"] = { 53.7, 74.6, TREE_1 },
+				["g"] = {
+					i(211371),	-- Dryad-Keeper Credentials
+				}
 			}),
 			q(76570, {	-- The Family Business
 				["sourceQuests"] = { 76569 },	-- Druid-Guardian Conference
@@ -651,13 +654,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 				["provider"] = { "n", 210813 },	-- Dionaessa (player instanced NPC)
 				["g"] = {
-					i(210958),	-- Crown of the Dryad Guardian
+					--now reward is [Plump Dreamseed]
 				},
 			}),
 			q(77802, {	-- What Do I Call You?
 				["sourceQuests"] = { 76572 },	-- A Poisonous Promotion
 				["provider"] = { "n", 209788 },	-- Dionaessa
 				["coord"] = { 53.8, 74.6, TREE_1 },
+				["g"] = {
+					i(210958),	-- Crown of the Dryad Guardian
+				},
 			}),
 			--
 			q(77310, {	-- Memory of the Dreamer
@@ -707,7 +713,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 77283 },	-- A Multi-Front Battle
 				["provider"] = { "n", 211240 },	-- Eran'nda
 				["isWeekly"] = true,
-				["coord"] = { 49.9, 62.3, TREE_1 },
+				["coord"] = { 52.5, 62.5, TREE_1 },
 				["cost"] = {
 					{ "i", 210041, 1 },	-- Shipment of Goods
 				},
@@ -720,7 +726,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 77283 },	-- A Multi-Front Battle
 				["provider"] = { "n", 211240 },	-- Eran'nda
 				["isWeekly"] = true,
-				["coord"] = { 49.9, 62.3, TREE_1 },
+				["coord"] = { 52.5, 62.5, TREE_1 },
 				["cost"] = {
 					{ "i", 210041, 5 },	-- Shipment of Goods
 				},
@@ -802,56 +808,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(208396),	-- Splintered Spark of Dreams
 				},
 			}),
-			--- Emerald Blossom quest chain
-			q(78172, {	-- Mysterious Seeds
-				--["sourceQuests"] = { xx },	-- xx
-				["provider"] = { "i", 210050 },	-- Mysterious Seeds
-			}),
-			q(77209, {	-- Seed Legacy
-				["sourceQuests"] = { 78172 },	-- Mysterious Seeds
-				["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
-				["coord"] = { 59.7, 16.9, TREE_1 },
-				["g"] = {
-					i(210014),	-- Mysterious Seeds (QI!)
-				},
-			}),
-			q(78170, {	-- Nurturing Ageless Seeds
-				["sourceQuests"] = { 77209 },	-- Seed Legacy
-				["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
-				["coord"] = { 59.7, 16.9, TREE_1 },
-				["cost"] = {
-					{ "c", 2650, 150 },	-- 150x Emerald Dewdrop
-				},
-			}),
-			q(78171, {	-- Blossoms of the Past
-				["sourceQuests"] = { 78170 },	-- Nurturing Ageless Seeds
-				["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
-				["coord"] = { 59.7, 16.9, TREE_1 },
-				["g"] = {
-					i(210052),	-- Ageless Blossoms (QI!)
-					i(208067),	-- Plump Dreamseed
-				},
-			}),
-			q(78206, {	-- Emerald Bounty
-				["sourceQuests"] = { 78171 },	-- Blossoms of the Past
-				["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
-				["coord"] = { 59.7, 16.9, TREE_1 },
-			}),
-			--
-			q(78821, {	-- Blooming Dreamseeds
-				--["sourceQuests"] = { 78206 },	-- Emerald Bounty (TODO: need to confirm)
-				["provider"] = { "n", 212797 },	-- Talisa Whisperbloom
-				["coord"] = { 49.7, 62.1, TREE_1 },
-				["isWeekly"] = true,
-				["g"] = {
-					--(TODO: may be shared data with weekly rep bag?)
-					i(210365),	-- Arctic Warden's Shoulderplates
-					i(210372),	-- Frigid Conservator's Bands
-					i(210380),	-- Glittering Gelid Goldchain
-					i(210378),	-- Rime Ridden Ring
-					i(210403),	-- Winter Forager's Spire
-				},
-			}),
 			--[[
 			q(, {	--
 				["sourceQuests"] = {  },	--
@@ -874,6 +830,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			]]--
 
 			n(BONUS_OBJECTIVES, {
+				i(211303),	-- Dryad's Supply Pouch
 			}),
 		}),
 	}),
@@ -885,7 +842,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(77413),	-- Shandris's Scouting Report (itemID 208181) (spellID 418275)
 		q(77572),	-- 'Make player eligible for superbloom' (spellID 425375) (new qid attached to this also - 76573, 76574, 76575 but marked as completed on first character now)
 		q(77887),	-- 'World Quest Unlock' (spellID 421687)
-		---
+		---Driad Garden
 		q(77808),	-- Quest "What Do I Call You?": Pick the title of "Mother"
 		q(77809),	-- Quest "What Do I Call You?": Pick the title of "Father"
 		q(77810),	-- Quest "What Do I Call You?": Pick the title of "Commander"
@@ -893,23 +850,31 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		-- there is likely one questID unique to each class. Need to test this theory
 		q(77834),	-- Quest "What Do I Call You?": Pick the title of "Archdruid"
 		q(78235),	-- Quest "What Do I Call You?": Pick the title of "Battlelord"
+		q(78258),	-- Quest "What Do I Call You?": Pick the title of "Grandmaster"
 		q(78257),	-- Quest "What Do I Call You?": Pick the title of "Highlord"
+		-- Elanna unlocks for battle pets
+		q(78854),	-- unlock ability to buy Dreamborne Scarab (i: 210553) (require: Endmite (any other pet with same model?)) (spellID 429058)
+		q(78855),	-- unlock ability to buy Dreamhoof (i: 210555) (require: Leyhart (any other pet with same model?)) (spellID 429064)
+		q(78859),	-- unlock ability to buy Drowsey (i: 210777) (require: any ZC snail? Mine was Tricky) (spellID 429073 / 429074)
+		q(78856),	-- unlock ability to buy Memorie (i: 210567) (require: Fol'ya Pup (any other pet with same model?)) (spellID 429068)
+		q(78858),	-- unlock ability to buy Reverie (i: 210505) (require: Pilot (any other pet with same model)) (spellID 429055 / 429053)
+		q(78853),	-- unlock ability to buy Snorr (i: 210785) (require: Axel (any other pet with same model?)) (spellID xx)
+		q(78857),	-- unlock ability to buy Somnolet (i: 210652) (require: Seedle (any other pet with same model?)) (spellID 429070)
 		--
-		q(78483),	-- Consumed a dreamfruit at 51.28, 59.97. Gives a buff selection like torghast powers. Selected "Feral Overflow" - might be a unique ID for each buff
 		-- ???
-		--q(77526),	-- pop after picked up qID 77178 / afk on 2nd character / 'Chest' (spellID 423213)
-		--q(77491),	-- pop while was afk / 'Chest' (spellID 420623)
-		--q(77490),	-- last chat text was that '%player_name% creates Shipment of Goods' multiple times / 'Chest' (spellID 420626)
-		--q(77370),	-- also 'The vision of a young dreamer fill the air around the Fileds of Reverie' / 'Chest' (sleppID 418389)
-		--q(77356),	-- pop during wq 76558 / 'Chest' (spellID 418326)
-		--q(77368),	-- was afk / 'Chest' (spellID 418387)
-		--q(77497),	-- afk / 'Chest' (spellID 420761)
-		--q(77498),	-- afk / 'Chest' (spellID 420760)
-		--q(77504),	-- afk / 'Chest' (spellID 421192)
-		--q(77366),	-- afk / 'Chest' (spellID 418385)
-		--q(77505), -- randomly killing npcs during first quest / 'Chest' (spellID 421191)
-		--q(77357),	-- afk / 'Chest' (spellID 418327)
+		--q(77526),	-- 'Chest' (spellID 423213)
+		--q(77491),	-- 'Chest' (spellID 420623)
+		--q(77490),	-- 'Chest' (spellID 420626)
+		--q(77370),	-- 'Chest' (spellID 418389)
+		--q(77356),	-- 'Chest' (spellID 418326) / unflagged on planting seed Dreamer's Daisy
+		--q(77368),	-- 'Chest' (spellID 418387)
+		--q(77497),	-- 'Chest' (spellID 420761)
+		--q(77498),	-- 'Chest' (spellID 420760)
+		--q(77504),	-- 'Chest' (spellID 421192)
+		--q(77366),	-- 'Chest' (spellID 418385)
+		--q(77505), -- 'Chest' (spellID 421191)
+		--q(77357),	-- 'Chest' (spellID 418327)
 		--q(77358),	-- afk (spellID ?)
-		--q(77350),	-- afk / (spellID ?) i(203332),	-- Winding Slitherdrake: Spiked Horns ?
+		--q(77350),	-- afk / (spellID ?)
 	}),
 }));
