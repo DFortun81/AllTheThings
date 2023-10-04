@@ -10510,28 +10510,30 @@ local itemFields = {
 	["collectedAsQuest"] = IsQuestFlaggedCompletedForObject,
 	["lockedAsQuest"] = app.LockedAsQuest,
 	["collectedAsFaction"] = function(t)
-		if t.factionID then
+		local factionID = t.factionID;
+		if factionID then
 			if t.repeatable then
 				-- This is used by reputation tokens. (turn in items)
 				-- quick cache checks
-				if app.CurrentCharacter.Factions[t.factionID] then return 1; end
-				if app.Settings.AccountWide.Reputations and ATTAccountWideData.Factions[t.factionID] then return 2; end
+				if app.CurrentCharacter.Factions[factionID] then return 1; end
+				if app.Settings.AccountWide.Reputations and ATTAccountWideData.Factions[factionID] then return 2; end
 
 				-- use the extended faction logic from the associated Faction for consistency
-				local cachedFaction = app.SearchForObject("factionID", t.factionID, "key");
+				local cachedFaction = app.SearchForObject("factionID", factionID, "key");
 				if cachedFaction then return cachedFaction.collected; end
 
 				-- otherwise move on to the basic logic
-				if select(3, GetFactionInfoByID(t.factionID)) == 8 then
-					app.CurrentCharacter.Factions[t.factionID] = 1;
-					ATTAccountWideData.Factions[t.factionID] = 1;
+				local current, max = app.GetCurrentFactionStandings(factionID)
+				if current >= max then
+					app.CurrentCharacter.Factions[factionID] = 1;
+					ATTAccountWideData.Factions[factionID] = 1;
 					return 1;
 				end
 			else
 				-- This is used for the Grand Commendations unlocking Bonus Reputation
-				if ATTAccountWideData.FactionBonus[t.factionID] then return 1; end
-				if select(15, GetFactionInfoByID(t.factionID)) then
-					ATTAccountWideData.FactionBonus[t.factionID] = 1;
+				if ATTAccountWideData.FactionBonus[factionID] then return 1; end
+				if select(15, GetFactionInfoByID(factionID)) then
+					ATTAccountWideData.FactionBonus[factionID] = 1;
 					return 1;
 				end
 			end

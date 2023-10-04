@@ -4,7 +4,7 @@ local i = function(itemID, factionID, unlock)
 	local o = {
 		["factionID"] = factionID,
 		-- #if NOT ANYCLASSIC
-		["f"] = 112
+		-- ["f"] = 112
 		-- #endif
 	};
 	-- #if NOT ANYCLASSIC
