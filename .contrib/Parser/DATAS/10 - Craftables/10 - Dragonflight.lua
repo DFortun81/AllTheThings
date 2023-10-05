@@ -2939,6 +2939,129 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 		})),
 	}),
 	prof(SKINNING, {
+		n(FIRST_CRAFTS_HEADER, sharedData({
+			["requireSkill"] = SKINNING,
+			["collectible"] = false,
+		},{
+		-- To do:
+		-- Needs Achievements attached (roughly 1/3 should be attached to achievement criteria)
+		-- Remove collectible tag=false tag for those that can be collected due achievement
+			FirstSkin(74204, 193243),	-- Skinning Acrosoth
+			FirstSkin(74219, 187111),	-- Skinning Ancient Hornswog
+			FirstSkin(74197, 193231),	-- Skinning Ancient Tundrafur (spawns with Blightpaw)
+			FirstSkin(74162, 193341),	-- Skinning Angen (Great Hunt)
+			FirstSkin(74225, 190986),	-- Skinning Battlehorn Pyrhus
+			FirstSkin(74174, 193168),	-- Skinning Biryuk
+			FirstSkin(74122, 197353),	-- Skinning Blisterhide
+			FirstSkin(74141, 190907),	-- Skinning Blitztusk (Grand Hunt)
+			FirstSkin(74551, 201535, ADDED_10_0_5),	-- Skinning Bloodbeak the Ravenous
+			FirstSkin(78340, 210050, ADDED_10_2_0),	-- Skinning Bloodstipe Great Ray
+			FirstSkin(74144, 191450),	-- Skinning Boolk
+			FirstSkin(74124, 193644),	-- Skinning Bouldron
+			FirstSkin(74206, 193658),	-- Skinning Corrupted Proto-Dragon
+			FirstSkin(76534, 201054, ADDED_10_1_0),	-- Skinning Crimson Oldblood
+			FirstSkin(74126, 193645),	-- Skinning Crystalus (Primal Storm)
+			FirstSkin(74229, 190985),	-- Skinning Death's Shadow
+			FirstSkin(74153, 194251),	-- Skinning Degmakh (Grand Hunt)
+			FirstSkin(74164, 195431),	-- Skinning Diluu (Grand Hunt)
+			FirstSkin(74200, 193234),	-- Skinning Eldoren the Reborn
+			FirstSkin(74233, 202441, ADDED_10_0_7),	-- Elusive Auric Argali
+			FirstSkin(74231, 195518),	-- Skinning Elusive Cliffdweller Vorquin
+			FirstSkin(74234, 204821, ADDED_10_1_0, i(205451, {["questID"] = 75866,})),	-- Skinning Elusive Crystalscale Stonecleaver
+			FirstSkin(74191, 195492),	-- Skinning Elusive Deepwater Salamanther
+			FirstSkin(74185, 194489),	-- Skinning Elusive Elder Drake
+			FirstSkin(74186, 194491),	-- Skinning Elusive Elder Frigidpelt (Elusive Creature Bait)
+			FirstSkin(74189, 195472),	-- Skinning Elusive Ferocious Titanfang (Titan-Infused Creature Bait)
+			FirstSkin(74187, 195541),	-- Skinning Elusive Flourishing Quillbloom
+			FirstSkin(74232, 202436, ADDED_10_0_7),	-- Skinning Elusive Frenzied Amberfur
+			FirstSkin(74190, 195509),	-- Skinning Elusive Proto Skyterror
+			FirstSkin(74188, 195465),	-- Skinning Elusive Tempest Lizard
+			FirstSkin(74235, 204831, ADDED_10_1_0),	-- Skinning Elusive Magma Cobra
+			FirstSkin(75873, 203664, ADDED_10_1_0),	-- Skinning Emberdusk
+			FirstSkin(74224, 193134),	-- Skinning Enkine the Voracious
+			FirstSkin(74146, 194409),	-- Skinning Ergburk
+			FirstSkin(75881, 200725, ADDED_10_0_7),	-- Skinning Faunos
+			FirstSkin(75872, 203660, ADDED_10_1_0),	-- Skinning Flowfy
+			FirstSkin(74130, 193698),	-- Skinning Frigidpelt Den Mother
+			FirstSkin(75884, 200537, ADDED_10_0_7),	-- Skinning Gahz'raxes
+			FirstSkin(74152, 193853),	-- Skinning Galnmor
+			FirstSkin(74193, 193125),	-- Skinning Goremaul the Gluttonous
+			FirstSkin(78333, 209936, ADDED_10_2_0),	-- Skinning Greedy Gessie
+			FirstSkin(74550, 201537, ADDED_10_0_5),	-- Skinning Groffnar
+			FirstSkin(74135, 193251),	-- Skinning Gruffy
+			FirstSkin(74134, 193269),	-- Skinning Grumbletrunk
+			FirstSkin(74180, 187781),	-- Skinning Hamett
+			FirstSkin(74203, 193229),	-- Skinning Henlare
+			FirstSkin(78344, 210075, ADDED_10_2_0),	-- Skinning Henri Snufftail
+			FirstSkin(74179, 188095),	-- Skinning Hunter of the Deep
+			FirstSkin(74125, 193648),	-- Skinning Infernum
+			FirstSkin(74127, 193647),	-- Skinning Karantun
+			FirstSkin(74238, 203625, ADDED_10_1_0),	-- Skinning Karokta
+			FirstSkin(78339, 210046, ADDED_10_2_0),	-- Skinning Keen-eyed Ciana
+			FirstSkin(74147, 194608),	-- Skinning Kholdeg (Grand Hunt)
+			FirstSkin(74145, 194438),	-- Skinning Khomuur (Grand Hunt)
+			FirstSkin(74155, 194761),	-- Skinning Khuumog (Grand Hunt)
+			FirstSkin(74237, 203462, ADDED_10_1_0),	-- Skinning Kob'rok
+			FirstSkin(74169, 197009),	-- Skinning Liskheszaera
+			FirstSkin(75878, 200742, ADDED_10_0_7),	-- Skinning Luttrok
+			FirstSkin(74236, 200111, ADDED_10_1_0),	-- Skinning Magtembo
+			FirstSkin(74182, 195409),	-- Skinning Makhra the Ashtouched
+			FirstSkin(74171, 193212),	-- Skinning Malsegan
+			FirstSkin(78341, 210051, ADDED_10_2_0),	-- Skinning Matriarch Keevah
+			FirstSkin(74208, 193246),	-- Skinning Matriarch Remalla
+			FirstSkin(74161, 193311),	-- Skinning Melkhop (Grand Hunt)
+			FirstSkin(74163, 195430),	-- Skinning Molkeej (Grand Hunt)
+			FirstSkin(78342, 210064, ADDED_10_2_0),	-- Skinning Molten Leadspike
+			FirstSkin(78338, 210045, ADDED_10_2_0),	-- Skinning Moragh the Slothful
+			FirstSkin(74559, 201549, ADDED_10_0_5),	-- Skinning Morlash (it's a plant but it requires skinning end my suffering)
+			FirstSkin(78343, 210070, ADDED_10_2_0),	-- Skinning Mosa Umbramane
+			FirstSkin(74157, 195093),	-- Skinning Moskhoi (Grand Hunt)
+			FirstSkin(74214, 193735),	-- Skinning Moth'go Deeploom
+			FirstSkin(74131, 193201),	-- Skinning Mucka the Raker
+			FirstSkin(74154, 194225),	-- Skinning Muugurv (Grand Hunt)
+			FirstSkin(74166, 195895),	-- Skinning Nergazurai
+			FirstSkin(74140, 190968),	-- Skinning Norbett (Grand Hunt)
+			FirstSkin(74194, 193130),	-- Skinning Pleasant Alpha
+			FirstSkin(74220, 192737),	-- Skinning Qalashi War Mammoth (War Party Event)
+			FirstSkin(74132, 197371),	-- Skinning Ravenous Tundra Bear
+			FirstSkin(74205, 193143),	-- Skinning Razk'vex the Untamed
+			FirstSkin(74199, 193240),	-- Skinning Riverwalker Tamopo
+			FirstSkin(74196, 193666),	-- Skinning Rokmur
+			FirstSkin(74176, 195223),	-- Skinning Rustlily
+			FirstSkin(74151, 193885),	-- Skinning Salkii
+			FirstSkin(74142, 190161),	-- Skinning Sarana (Grand Hunt)
+			FirstSkin(74555, 201562, ADDED_10_0_5),	-- Skinning Shardwing
+			FirstSkin(74215, 193708),	-- Skinning Skald the Impaler
+			FirstSkin(74223, 193181),	-- Skinning Skewersnout
+			FirstSkin(74222, 193120),	-- Skinning Smogswog the Firebreather
+			FirstSkin(75879, 200622, ADDED_10_0_7),	-- Skinning Snarfang
+			FirstSkin(74216, 193706),	-- Skinning Snufflegust
+			FirstSkin(74173, 193123),	-- Skinning Steamgill
+			FirstSkin(74167, 193133),	-- Skinning Sunscale Behemoth
+			FirstSkin(74213, 193634),	-- Skinning Swog'ranka
+			FirstSkin(74143, 191103),	-- Skinning Uranto the Swift (Grand Hunt)
+			FirstSkin(74148, 194601),	-- Skinning Zagdech
+			FirstSkin(74149, 194624),	-- Skinning Zumakh (Grand Hunt)
+			FirstSkin(74207, 193258),	-- Skinning Tempestrian
+			FirstSkin(74175, 193163),	-- Skinning Territorial Coastling
+			FirstSkin(74159, 195132),	-- Skinning Tevgai (Grand Hunt)
+			FirstSkin(74201, 191305),	-- Skinning The Great Shellkhan
+			FirstSkin(74177, 195204),	-- Skinning The Jolly Giant
+			FirstSkin(74198, 183984),	-- Skinning The Weeping Vilomah
+			FirstSkin(74218, 193148),	-- Skinning Thunderous Matriarch
+			FirstSkin(74150, 193722),	-- Skinning Tomnu
+			FirstSkin(74156, 194760),	-- Skinning Uurhilt (Grand Hunt)
+			FirstSkin(74183, 192453),	-- Skinning Vaniik the Stormtouched
+			FirstSkin(78345, 210508, ADDED_10_2_0),	-- Skinning Voracious Mikanji
+			FirstSkin(74184, 192364),	-- Skinning Windscale the Stormborn
+			FirstSkin(74195, 193161),	-- Skinning Woolfang
+			FirstSkin(74228, 186859),	-- Skinning Worldcarver A'tir
+			FirstSkin(74158, 195101),	-- Skinning Yaankhi
+			FirstSkin(74160, 195283),	-- Skinning Yamakh
+			FirstSkin(74172, 193140),	-- Skinning Zarizz
+			FirstSkin(74170, 193209),	-- Skinning Zenet Avis
+			FirstSkin(74181, 188451),	-- Skinning Zerimek
+		})),
 		spell(366259, {	-- Skinning
 			i(193213),	-- Adamant Scales+
 			i(193214),	-- Adamant Scales++
@@ -3297,127 +3420,6 @@ root(ROOTS.HiddenQuestTriggers, {
 			-- TODO: these are possibly weekly, perhaps track them normally
 			q(66936),	-- Heated Ore Sample / Unyielding Stone Chunk
 		}),
-		n(FIRST_CRAFTS_HEADER, sharedData({
-			["requireSkill"] = SKINNING,
-		},{
-		-- To do:
-		-- Move them back under Skinning with their Achievements attached (roughly 1/3 should be attached to achievement criteria)
-			FirstSkin(74204, 193243),	-- Skinning Acrosoth
-			FirstSkin(74219, 187111),	-- Skinning Ancient Hornswog
-			FirstSkin(74197, 193231),	-- Skinning Ancient Tundrafur (spawns with Blightpaw)
-			FirstSkin(74162, 193341),	-- Skinning Angen (Great Hunt)
-			FirstSkin(74225, 190986),	-- Skinning Battlehorn Pyrhus
-			FirstSkin(74174, 193168),	-- Skinning Biryuk
-			FirstSkin(74122, 197353),	-- Skinning Blisterhide
-			FirstSkin(74141, 190907),	-- Skinning Blitztusk (Grand Hunt)
-			FirstSkin(74551, 201535, ADDED_10_0_5),	-- Skinning Bloodbeak the Ravenous
-			FirstSkin(78340, 210050, ADDED_10_2_0),	-- Skinning Bloodstipe Great Ray
-			FirstSkin(74144, 191450),	-- Skinning Boolk
-			FirstSkin(74124, 193644),	-- Skinning Bouldron
-			FirstSkin(74206, 193658),	-- Skinning Corrupted Proto-Dragon
-			FirstSkin(76534, 201054, ADDED_10_1_0),	-- Skinning Crimson Oldblood
-			FirstSkin(74126, 193645),	-- Skinning Crystalus (Primal Storm)
-			FirstSkin(74229, 190985),	-- Skinning Death's Shadow
-			FirstSkin(74153, 194251),	-- Skinning Degmakh (Grand Hunt)
-			FirstSkin(74164, 195431),	-- Skinning Diluu (Grand Hunt)
-			FirstSkin(74200, 193234),	-- Skinning Eldoren the Reborn
-			FirstSkin(74233, 202441, ADDED_10_0_7),	-- Elusive Auric Argali
-			FirstSkin(74231, 195518),	-- Skinning Elusive Cliffdweller Vorquin
-			FirstSkin(74234, 204821, ADDED_10_1_0, i(205451, {["questID"] = 75866,})),	-- Skinning Elusive Crystalscale Stonecleaver
-			FirstSkin(74191, 195492),	-- Skinning Elusive Deepwater Salamanther
-			FirstSkin(74185, 194489),	-- Skinning Elusive Elder Drake
-			FirstSkin(74186, 194491),	-- Skinning Elusive Elder Frigidpelt (Elusive Creature Bait)
-			FirstSkin(74189, 195472),	-- Skinning Elusive Ferocious Titanfang (Titan-Infused Creature Bait)
-			FirstSkin(74187, 195541),	-- Skinning Elusive Flourishing Quillbloom
-			FirstSkin(74232, 202436, ADDED_10_0_7),	-- Skinning Elusive Frenzied Amberfur
-			FirstSkin(74190, 195509),	-- Skinning Elusive Proto Skyterror
-			FirstSkin(74188, 195465),	-- Skinning Elusive Tempest Lizard
-			FirstSkin(74235, 204831, ADDED_10_1_0),	-- Skinning Elusive Magma Cobra
-			FirstSkin(75873, 203664, ADDED_10_1_0),	-- Skinning Emberdusk
-			FirstSkin(74224, 193134),	-- Skinning Enkine the Voracious
-			FirstSkin(74146, 194409),	-- Skinning Ergburk
-			FirstSkin(75881, 200725, ADDED_10_0_7),	-- Skinning Faunos
-			FirstSkin(75872, 203660, ADDED_10_1_0),	-- Skinning Flowfy
-			FirstSkin(74130, 193698),	-- Skinning Frigidpelt Den Mother
-			FirstSkin(75884, 200537, ADDED_10_0_7),	-- Skinning Gahz'raxes
-			FirstSkin(74152, 193853),	-- Skinning Galnmor
-			FirstSkin(74193, 193125),	-- Skinning Goremaul the Gluttonous
-			FirstSkin(78333, 209936, ADDED_10_2_0),	-- Skinning Greedy Gessie
-			FirstSkin(74550, 201537, ADDED_10_0_5),	-- Skinning Groffnar
-			FirstSkin(74135, 193251),	-- Skinning Gruffy
-			FirstSkin(74134, 193269),	-- Skinning Grumbletrunk
-			FirstSkin(74180, 187781),	-- Skinning Hamett
-			FirstSkin(74203, 193229),	-- Skinning Henlare
-			FirstSkin(78344, 210075, ADDED_10_2_0),	-- Skinning Henri Snufftail
-			FirstSkin(74179, 188095),	-- Skinning Hunter of the Deep
-			FirstSkin(74125, 193648),	-- Skinning Infernum
-			FirstSkin(74127, 193647),	-- Skinning Karantun
-			FirstSkin(74238, 203625, ADDED_10_1_0),	-- Skinning Karokta
-			FirstSkin(78339, 210046, ADDED_10_2_0),	-- Skinning Keen-eyed Ciana
-			FirstSkin(74147, 194608),	-- Skinning Kholdeg (Grand Hunt)
-			FirstSkin(74145, 194438),	-- Skinning Khomuur (Grand Hunt)
-			FirstSkin(74155, 194761),	-- Skinning Khuumog (Grand Hunt)
-			FirstSkin(74237, 203462, ADDED_10_1_0),	-- Skinning Kob'rok
-			FirstSkin(74169, 197009),	-- Skinning Liskheszaera
-			FirstSkin(75878, 200742, ADDED_10_0_7),	-- Skinning Luttrok
-			FirstSkin(74236, 200111, ADDED_10_1_0),	-- Skinning Magtembo
-			FirstSkin(74182, 195409),	-- Skinning Makhra the Ashtouched
-			FirstSkin(74171, 193212),	-- Skinning Malsegan
-			FirstSkin(78341, 210051, ADDED_10_2_0),	-- Skinning Matriarch Keevah
-			FirstSkin(74208, 193246),	-- Skinning Matriarch Remalla
-			FirstSkin(74161, 193311),	-- Skinning Melkhop (Grand Hunt)
-			FirstSkin(74163, 195430),	-- Skinning Molkeej (Grand Hunt)
-			FirstSkin(78342, 210064, ADDED_10_2_0),	-- Skinning Molten Leadspike
-			FirstSkin(78338, 210045, ADDED_10_2_0),	-- Skinning Moragh the Slothful
-			FirstSkin(74559, 201549, ADDED_10_0_5),	-- Skinning Morlash (it's a plant but it requires skinning end my suffering)
-			FirstSkin(78343, 210070, ADDED_10_2_0),	-- Skinning Mosa Umbramane
-			FirstSkin(74157, 195093),	-- Skinning Moskhoi (Grand Hunt)
-			FirstSkin(74214, 193735),	-- Skinning Moth'go Deeploom
-			FirstSkin(74131, 193201),	-- Skinning Mucka the Raker
-			FirstSkin(74154, 194225),	-- Skinning Muugurv (Grand Hunt)
-			FirstSkin(74166, 195895),	-- Skinning Nergazurai
-			FirstSkin(74140, 190968),	-- Skinning Norbett (Grand Hunt)
-			FirstSkin(74194, 193130),	-- Skinning Pleasant Alpha
-			FirstSkin(74220, 192737),	-- Skinning Qalashi War Mammoth (War Party Event)
-			FirstSkin(74132, 197371),	-- Skinning Ravenous Tundra Bear
-			FirstSkin(74205, 193143),	-- Skinning Razk'vex the Untamed
-			FirstSkin(74199, 193240),	-- Skinning Riverwalker Tamopo
-			FirstSkin(74196, 193666),	-- Skinning Rokmur
-			FirstSkin(74176, 195223),	-- Skinning Rustlily
-			FirstSkin(74151, 193885),	-- Skinning Salkii
-			FirstSkin(74142, 190161),	-- Skinning Sarana (Grand Hunt)
-			FirstSkin(74555, 201562, ADDED_10_0_5),	-- Skinning Shardwing
-			FirstSkin(74215, 193708),	-- Skinning Skald the Impaler
-			FirstSkin(74223, 193181),	-- Skinning Skewersnout
-			FirstSkin(74222, 193120),	-- Skinning Smogswog the Firebreather
-			FirstSkin(75879, 200622, ADDED_10_0_7),	-- Skinning Snarfang
-			FirstSkin(74216, 193706),	-- Skinning Snufflegust
-			FirstSkin(74173, 193123),	-- Skinning Steamgill
-			FirstSkin(74167, 193133),	-- Skinning Sunscale Behemoth
-			FirstSkin(74213, 193634),	-- Skinning Swog'ranka
-			FirstSkin(74143, 191103),	-- Skinning Uranto the Swift (Grand Hunt)
-			FirstSkin(74148, 194601),	-- Skinning Zagdech
-			FirstSkin(74149, 194624),	-- Skinning Zumakh (Grand Hunt)
-			FirstSkin(74207, 193258),	-- Skinning Tempestrian
-			FirstSkin(74175, 193163),	-- Skinning Territorial Coastling
-			FirstSkin(74159, 195132),	-- Skinning Tevgai (Grand Hunt)
-			FirstSkin(74201, 191305),	-- Skinning The Great Shellkhan
-			FirstSkin(74177, 195204),	-- Skinning The Jolly Giant
-			FirstSkin(74198, 183984),	-- Skinning The Weeping Vilomah
-			FirstSkin(74218, 193148),	-- Skinning Thunderous Matriarch
-			FirstSkin(74150, 193722),	-- Skinning Tomnu
-			FirstSkin(74156, 194760),	-- Skinning Uurhilt (Grand Hunt)
-			FirstSkin(74183, 192453),	-- Skinning Vaniik the Stormtouched
-			FirstSkin(78345, 210508, ADDED_10_2_0),	-- Skinning Voracious Mikanji
-			FirstSkin(74184, 192364),	-- Skinning Windscale the Stormborn
-			FirstSkin(74195, 193161),	-- Skinning Woolfang
-			FirstSkin(74228, 186859),	-- Skinning Worldcarver A'tir
-			FirstSkin(74158, 195101),	-- Skinning Yaankhi
-			FirstSkin(74160, 195283),	-- Skinning Yamakh
-			FirstSkin(74172, 193140),	-- Skinning Zarizz
-			FirstSkin(74170, 193209),	-- Skinning Zenet Avis
-			FirstSkin(74181, 188451),	-- Skinning Zerimek
-		})),
 		prof(TAILORING, {
 			q(71946),	-- Timeweaving unlocked
 			q(71947),	-- Timeweaving Full maxed out
