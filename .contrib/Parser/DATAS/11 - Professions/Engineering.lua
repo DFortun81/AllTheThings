@@ -827,6 +827,71 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			}),
 		})),
 		n(QUESTS, {
+			i(198156, {	-- Wyrmhole Generator: Dragon Isles (TOY!)
+				["description"] = "You can collect additional portal options.\nOHN’AHRAN PLAINS = Clomp your hooves, imaginary or otherwise...\nRANDOM LOCATION = Carelessly leap into the portal...\nTHALDRASZUS = Audibly spell out 'Thaldraszus'...\nTHE AZURE SPAN = Ensure your arrival at the Azure Span...\nTHE WAKING SHORES = Pray return to the Waking Shores.",
+				["g"] = {
+					q(70581, {	-- THE_AZURE_SPAN 1 
+						["coord"] = { 71.0, 47.9, THE_AZURE_SPAN },
+						["name"] = "Wyrmhole Generator Portal: Azure Span 1",
+					}),
+					q(70580, {	-- THE_AZURE_SPAN 2
+						["coord"] = { 45.8, 65.2, THE_AZURE_SPAN },
+						["name"] = "Wyrmhole Generator Portal: Azure Span 2",
+					}),
+					q(70579, {	-- THE_AZURE_SPAN 3
+						["coord"] = { 27.6, 26.4, THE_AZURE_SPAN },
+						["name"] = "Wyrmhole Generator Portal: Azure Span 3",
+					}),
+					q(73144, {	-- FORBIDDEN_REACH 1 
+						["coord"] = { 78.0, 51.0, THE_FORBIDDEN_REACH },
+						["name"] = "Wyrmhole Generator Portal: Forbidden Reach 1",
+					}),
+					q(73143, {	-- FORBIDDEN_REACH 2
+						["coord"] = { 31.8, 26.2, THE_FORBIDDEN_REACH },
+						["name"] = "Wyrmhole Generator Portal: Forbidden Reach 2",
+					}),
+					q(73145, {	-- FORBIDDEN_REACH 3
+						["coord"] = { 39.9, 81.3, THE_FORBIDDEN_REACH },
+						["name"] = "Wyrmhole Generator Portal: Forbidden Reach 3",
+					}),
+					q(70578, {	-- OHNAHRAN_PLAINS 1
+						["coord"] = { 67.7, 84.9, OHNAHRAN_PLAINS },
+						["name"] = "Wyrmhole Generator Portal: Ohnahran Plains 1",
+					}),
+					q(70576, {	-- OHNAHRAN_PLAINS 2
+						["coord"] = { 28.0, 35.7, OHNAHRAN_PLAINS },
+						["name"] = "Wyrmhole Generator Portal: Ohnahran Plains 2",
+					}),
+					q(70577, {	-- OHNAHRAN_PLAINS 3
+						["coord"] = { 56.9, 28.9, OHNAHRAN_PLAINS },
+						["name"] = "Wyrmhole Generator Portal: Ohnahran Plains 3",
+					}),
+					q(70584, {	-- THALDRASZUS 1
+						["coord"] = { 70.3, 44.3, THALDRASZUS },
+						["name"] = "Wyrmhole Generator Portal: Thaldraszus 1",
+					}),
+					q(70585, {	-- THALDRASZUS 2
+						["coord"] = { 63.7, 77.1, THALDRASZUS },
+						["name"] = "Wyrmhole Generator Portal: Thaldraszus 2",
+					}),
+					q(70583, {	-- THALDRASZUS 3
+						["coord"] = { 50.7, 55.7, THALDRASZUS },
+						["name"] = "Wyrmhole Generator Portal: Thaldraszus 3",
+					}),
+					q(70575, {	-- The Waking Shore 1
+						["coord"] = { 23.4, 43.8, THE_WAKING_SHORES },
+						["name"] = "Wyrmhole Generator Portal: Waking Shore 1",
+					}),
+					q(70573, {	-- The Waking Shore 2
+						["coord"] = { 74.6, 25.5, THE_WAKING_SHORES },
+						["name"] = "Wyrmhole Generator Portal: Waking Shore 2",
+					}),
+					q(70574, {	-- The Waking Shore 3
+						["coord"] = { 62.2, 78.9, THE_WAKING_SHORES },
+						["name"] = "Wyrmhole Generator Portal: Waking Shore 3",
+					}),
+				},
+			}),
 			q(72242, {	-- Dragon Isles Engineering
 				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Engineering.",
 				["sourceQuests"] = {
