@@ -2341,5 +2341,8 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(75253),	-- Dwarf Heritage (spellID 406128)
 		q(76457),	-- Undead Heritage (spellID 414546)
 		q(76458),	-- Night Elf Heritage (spellID 414550)
+
+		-- Timewalking - Master of Timeways Triggers
+		q(78204),	-- First Week Trigger
 	}),
 });

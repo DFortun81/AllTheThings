@@ -305,6 +305,7 @@ root(ROOTS.Zones, {
 					-- #endif
 					o(182952, {	-- Steam Pump Flotsam
 						i(27481),	-- Heavy Supply Crate
+						i(27516),	-- Enormous Barbed Gill Trout
 						i(34469, {	-- Strange Engine Part
 							["description"] = "\"Don't pay anybody in advance. And don't ride in anything with a Capissen 38 engine, they fall right out of the sky.\" - Kaylee Fry",
 						}),
