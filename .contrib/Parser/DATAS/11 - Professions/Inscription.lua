@@ -3961,12 +3961,12 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			q(75149, {	-- Obsidian Essays
 				["provider"] = { "n", 203516 },	-- Kayann
 				["coord"] = { 36.5, 62.5, VALDRAKKEN },
-				["timeline"] = { ADDED_10_1_0 }
+				["timeline"] = { ADDED_10_1_0 },
 			}),
 			q(75573, {	-- Proclamation Reclamation
 				["provider"] = { "n", 203516 },	-- Kayann
 				["coord"] = { 36.5, 62.5, VALDRAKKEN },
-				["timeline"] = { ADDED_10_1_0 }
+				["timeline"] = { ADDED_10_1_0 },
 			}),
 			-- Patch 10.2.0
 			q(77889, {	-- A Fiery Proposal
@@ -3975,6 +3975,14 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				["timeline"] = { ADDED_10_2_0 },
 				["g"] = {
 					i(208886),	-- Fiery Essence (QI!)
+				},
+			}),
+			q(77914, {	-- Burning Runes
+				["provider"] = { "n", 210162 },	-- Magnolia Oaken
+				["coord"] = { 36.8, 63.1, VALDRAKKEN },
+				["timeline"] = { ADDED_10_2_0 },
+				["g"] = {
+					i(208946),	-- Burning Rune (QI!)
 				},
 			}),
 		})),

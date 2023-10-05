@@ -407,12 +407,12 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			q(75363, {	-- Deepflayer Dust
 				["provider"] = { "n", 203516 },	-- Kayann
 				["coord"] = { 36.5, 62.5, VALDRAKKEN },
-				["timeline"] = { ADDED_10_1_0 }
+				["timeline"] = { ADDED_10_1_0 },
 			}),
 			q(75371, {	-- Fascinating Fungi
 				["provider"] = { "n", 203516 },	-- Kayann
 				["coord"] = { 36.5, 62.5, VALDRAKKEN },
-				["timeline"] = { ADDED_10_1_0 }
+				["timeline"] = { ADDED_10_1_0 },
 			}),
 			-- Patch 10.2.0
 			q(77932, {	-- Warmth of Life
@@ -420,7 +420,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				["coord"] = { 36.8, 63.1, VALDRAKKEN },
 				["timeline"] = { ADDED_10_2_0 },
 				["g"] = {
-					--i(208938),	-- Metamorphic Soot (QI!)
+					i(208938),	-- Metamorphic Soot (QI!)
 				},
 			}),
 		})),

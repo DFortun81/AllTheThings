@@ -171,6 +171,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210682),	-- Camper's Knife (COSMETIC!)
 				},
 			}),
+			n(212351, {	-- Wolf Cowl
+				["questID"] = 78477,
+				["coord"] = { 32.9, 83.1, TREE_1 },
+				["races"] = { ORC, MAGHAR },
+				["g"] = {
+					i(210552),	-- Cowl of the Wolf Ancient (COSMETIC!)
+				},
+			}),
 			--
 			o_repeated({	-- Small Somnut
 				-- prob need symlink?

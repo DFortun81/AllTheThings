@@ -327,14 +327,22 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			q(75362, {	-- Cephalo-Crystalization
 				["provider"] = { "n", 203516 },	-- Kayann
 				["coord"] = { 36.5, 62.5, VALDRAKKEN },
-				["timeline"] = { ADDED_10_1_0 }
+				["timeline"] = { ADDED_10_1_0 },
 			}),
 			q(75602, {	-- Chips off the Old Crystal Block
 				["provider"] = { "n", 203516 },	-- Kayann
 				["coord"] = { 36.5, 62.5, VALDRAKKEN },
-				["timeline"] = { ADDED_10_1_0 }
+				["timeline"] = { ADDED_10_1_0 },
 			}),
 			-- Patch 10.2.0
+			q(77892, {	-- Pearls Of Great Value
+				["provider"] = { "n", 210162 },	-- Magnolia Oaken
+				["coord"] = { 36.8, 63.1, VALDRAKKEN },
+				["timeline"] = { ADDED_10_2_0 },
+				["g"] = {
+					i(208927),	-- Sandsparkle Pearl (QI!)
+				},
+			}),
 			q(77912, {	-- Unmodern Jewelry
 				["provider"] = { "n", 210162 },	-- Magnolia Oaken
 				["coord"] = { 36.8, 63.1, VALDRAKKEN },

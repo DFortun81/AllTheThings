@@ -118,8 +118,8 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(77378),	-- contrib to Fuzzy Licorice / 77367 (blue bag reward 50 out of 100)
 		q(77381),	-- loot cache Fuzzy Licorice
 		--9
-		q(77508),	-- plant seed Glade Goldenrod
-		--q(),	-- contrib to Glade Goldenrod
+		q(77508),	-- plant seed Glade Goldenrod / 77511 on warlock as 05.10
+		--q(),	-- contrib to Glade Goldenrod / 77507 & 78807 as 05.10
 		q(77509),	-- loot cache Glade Goldenrod
 		--10
 		q(77496),	-- plant seed Lavatouched Lilies

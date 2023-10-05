@@ -624,8 +624,6 @@ root(ROOTS.Unsorted, {
 			}),
 			n(PROFESSIONS, {
 				i(207461),	-- Schematic: Portable Party Platter (RECIPE!)
-				i(210493),	-- Technique: Grotto Netherwing Drake: Spiked Jaw (RECIPE!)
-				i(210491),	-- Technique: Winding Slitherdrake: Hairy Chin (RECIPE!)
 			}),
 			i(204720),	-- Join the New Scarlet Crusade!
 			i(205463),	-- Molten Lava Ball
@@ -878,7 +876,6 @@ root(ROOTS.Unsorted, {
 			i(208348),	-- Binds of the Shatterer
 			i(208349),	-- Burning Leather Cuffs
 			i(208355),	-- String of Delicacies
-			i(208356),	-- Earthbound Furbolg's Shroud
 			i(208359),	-- Nightclaw's Bauble
 			i(208361),	-- Splinterlimb's Branch
 			i(208363),	-- Twinfang of the Cian
@@ -895,7 +892,6 @@ root(ROOTS.Unsorted, {
 			i(208381),	-- Scepter of Still Waters
 			i(208383),	-- Pommel of Fire
 			i(208385),	-- Flame Endowed Blade
-			i(208388),	-- Leafster's Magic Wand
 			--
 			i(208393),	-- Nascent Aspect's Dreaming Crest
 			i(208394),	-- Nascent Wyrm's Dreaming Crest
@@ -969,29 +965,22 @@ root(ROOTS.Unsorted, {
 			i(208738),	-- Ephemeral Pear
 			i(208745),	-- Your Reward [DNT]
 			i(208757),	-- Ash's Recipes to Delight and Nourish your Plant Pals
-			i(208837),	-- Missing Fruit
 			i(208856),	-- Pocket Lint
 			i(208861),	-- The First Clue
 			i(208862),	-- The Second Clue
 			i(208863),	-- The Fourth Clue
 			i(208864),	-- The Third Clue
-			i(208927),	-- Sandsparkle Pearl
 			i(208932),	-- A Partial Fourth Clue
 			i(208933),	-- A Partial Fourth Clue
 			i(208934),	-- A Partial Fourth Clue
 			i(208935),	-- A Partial Fourth Clue
-			i(208938),	-- Metamorphic Soot
-			i(208946),	-- Burning Rune
-			i(208950),	-- Emerald Fiber
 			i(208955),	-- Pilfered Dreamshard
 			i(208979),	-- 10.2 Monster - Merithra - Robe
 			i(208981),	-- 10.2 Monster - Merithra - Wrist
 			i(208982),	-- 10.2 Monster - Merithra - Waist
 			i(209019),	-- Conjured Sugarfree Firewater Sorbet
-			i(209021),	-- Shed Great Feathers
 			i(209036),	-- Cache of Amirdrassil Treasures
 			i(209037),	-- Cache of Amirdrassil Treasures
-			i(209049),	-- Essence of Endless Flame
 			n(PVP, {
 				i(209069),	-- Verdant Gladiator's Silk Tunic
 				i(209070),	-- Verdant Gladiator's Silk Blouse
@@ -1095,7 +1084,6 @@ root(ROOTS.Unsorted, {
 			i(210091),	-- Maple Tender Crown
 			i(210092),	-- Wind Wolf Helm
 			i(210094),	-- Harvest Guardian Legplates
-			i(210095),	-- Maple Tender Leggings
 			i(210096),	-- Wind Wolf Legguards
 			i(210097),	-- Autumn Druid Trousers
 			i(210098),	-- Autumn Druid Shoulderpads
@@ -1122,7 +1110,6 @@ root(ROOTS.Unsorted, {
 			i(210125),	-- Breezekeeper's Handaxe
 			i(210126),	-- Breezekeeper's Mallet
 			i(210128),	-- Autumn Defender's Claymore
-			i(210129),	-- Wand of Brisk Dusks
 			i(210134),	-- Wind Wolf Shroud
 			i(210140),	-- [PH] Black-Furred Bakar
 			i(210141),	-- [PH] Brown-Furred Spiky Bakar
@@ -1212,7 +1199,6 @@ root(ROOTS.Unsorted, {
 			i(210548),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Accessory - FINGER 3
 			i(210550),	-- Set Keystone Map: Dawn of the Infinite: Galakrond's Fall
 			i(210551),	-- Set Keystone Map: Dawn of the Infinite: Murozond's Rise
-			i(210552),	-- Cowl of the Wolf Ancient
 			i(210554),	-- Blazing Feather
 			i(210565),	-- Soft Somnowl Feather
 			i(210566),	-- Somnowl Feather Strand

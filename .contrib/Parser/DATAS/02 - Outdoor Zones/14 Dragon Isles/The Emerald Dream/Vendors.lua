@@ -222,6 +222,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						["classes"] = { DRUID },
 						["cost"] = { { "c", 2651, 1250 } },
 					}),
+					--[[As of 05/10 build - not in vendor
 					i(209950, {	-- Rekindled Dreamstag (MOUNT!)
 						["cost"] = { { "c", 2651, 2500 } },
 					}),
@@ -239,7 +240,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					}),
 					i(210058, {	-- Evening Sun Dreamsaber (MOUNT!)
 						["cost"] = { { "c", 2651, 2500 } },
-					}),
+					}),]]--
 				},
 			}),
 			n(212903, {	-- Thaelishar Groveheart <Fauna Specialist>

@@ -1412,9 +1412,6 @@ root(ROOTS.NeverImplemented, {
 				i(205149, {	-- Ravenous Shalewing (PET!)
 					["modelID"] = 112187,
 				}),
-				i(205160, {	-- Rithro (PET!)
-					["modelID"] = 111311,
-				}),
 				i(205122, {	-- Roseshell (PET!)
 					["modelID"] = 112179,
 				}),

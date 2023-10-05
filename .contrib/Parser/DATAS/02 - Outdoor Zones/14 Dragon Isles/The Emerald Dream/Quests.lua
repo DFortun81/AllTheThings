@@ -476,16 +476,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210950),	-- Insight of Q'onzu
 				},
 			}),
-			q(78430, {	-- Mean Green Infusion Machine
-				--["sourceQuests"] = {  },	-- no requirement as of 7.Sept
-				["provider"] = { "n", 211209 },	-- Elianna
-				["coord"] = { 50.2, 61.8, TREE_1 },
-			}),
-			q(78431, {	-- Green Dream Team
-				--["sourceQuests"] = {  },	-- no requirement as of 7.Sept
-				["provider"] = { "n", 211209 },	-- Elianna
-				["coord"] = { 50.2, 61.8, TREE_1 },
-			}),
 			--
 			q(78262, {	-- It Starts With a Stone
 				--["sourceQuests"] = {  },	-- no requirement as of 7.Sept
@@ -721,9 +711,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(208067),	-- Plump Dreamseed
 				},
 			}),
-			--Crate of the Art as of 28/09 not here; other requirement?
 			q(78428, {	-- Crate of the Art
-				["sourceQuests"] = { 77283 },	-- A Multi-Front Battle
+				["sourceQuests"] = { 78427 },	-- Great Crates!
 				["provider"] = { "n", 211240 },	-- Eran'nda
 				["isWeekly"] = true,
 				["coord"] = { 52.5, 62.5, TREE_1 },
@@ -740,7 +729,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["provider"] = { "n", 209318 },	-- Cenarius
 				["coord"] = { 50.8, 62.1, TREE_1 },
 			}),
-			--[[They didn't push qid on pickin them up, only when turn in]]--
 			q(78042, {	-- Aviana's Assessment
 				["sourceQuests"] = { 78041 },	-- Sky Mother's Ire
 				["provider"] = { "n", 210587 },	-- Aviana

@@ -905,6 +905,14 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				["timeline"] = { ADDED_10_2_0 },
 				["cost"] = {{ "i", 190484, 3 }},	-- 3x Draconium Sword
 			}),
+			q(77936, {	-- A Warm Harvest
+				["provider"] = { "n", 210162 },	-- Magnolia Oaken
+				["coord"] = { 36.8, 63.1, VALDRAKKEN },
+				["timeline"] = { ADDED_10_2_0 },
+				["g"] = {
+					i(209049),	-- Essence of Endless Flame (QI!)
+				},
+			}),
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",

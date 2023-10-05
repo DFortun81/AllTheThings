@@ -1118,6 +1118,14 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["timeline"] = { ADDED_10_2_0 },
 				["cost"] = {{ "i", 193386, 3 }},	-- 3x Pioneer's Leather Boots
 			}),
+			q(77946, {	-- Fibrous Thread (TODO: didn't fire hqt as other one)
+				["provider"] = { "n", 210162 },	-- Magnolia Oaken
+				["coord"] = { 36.8, 63.1, VALDRAKKEN },
+				["timeline"] = { ADDED_10_2_0 },
+				["g"] = {
+					i(208950),	-- Emerald Fiber (QI!)
+				},
+			}),
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",

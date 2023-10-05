@@ -475,14 +475,22 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			q(75407, {	-- Silk Scavenging
 				["provider"] = { "n", 203516 },	-- Kayann
 				["coord"] = { 36.5, 62.5, VALDRAKKEN },
-				["timeline"] = { ADDED_10_1_0 }
+				["timeline"] = { ADDED_10_1_0 },
 			}),
 			q(75600, {	-- Silk's Silk
 				["provider"] = { "n", 203516 },	-- Kayann
 				["coord"] = { 36.5, 62.5, VALDRAKKEN },
-				["timeline"] = { ADDED_10_1_0 }
+				["timeline"] = { ADDED_10_1_0 },
 			}),
 			-- Patch 10.2.0
+			q(77949, {	-- Fashion Feathers
+				["provider"] = { "n", 210162 },	-- Magnolia Oaken
+				["coord"] = { 36.8, 63.1, VALDRAKKEN },
+				["timeline"] = { ADDED_10_2_0 },
+				["g"] = {
+					i(209021),	-- Shed Great Feathers (QI!)
+				},
+			}),
 			q(77947, {	-- Primalist Fashion
 				["provider"] = { "n", 210162 },	-- Magnolia Oaken
 				["coord"] = { 36.8, 63.1, VALDRAKKEN },

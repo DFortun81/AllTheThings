@@ -10,6 +10,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			n(210559, {	-- Balboan (have vignette as Isaqa)
 				["questID"] = 78039,
 				["coord"] = { 22.8, 32.3, TREE_1 },
+				["g"] = {
+					i(208356),	-- Earthbound Furbolg's Shroud
+				},
 			}),
 			n(210050, {	-- Bloodstripe Great Ray
 				["questID"] = 77942,
@@ -18,6 +21,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(208349),	-- Burning Leather Cuffs
 					i(208323),	-- Nature's Firebathed Robes
 					i(208326),	-- Vest of the Flametide
+					i(210129),	-- Wand of Brisk Dusks
 				},
 			}),
 			n(209909, {	-- Crabtankerous
@@ -48,6 +52,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					{ 62.8, 72.9, TREE_1 },	-- Rare
 				},
 				["g"] = {
+					i(208388),	-- Leafster's Magic Wand
+					i(208837),	-- Missing Fruit
 					i(208372),	-- Trickster's Tip Toers
 				},
 			}),
@@ -69,6 +75,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["g"] = {
 					i(208338),	-- Furious Flame's Shoulders
 					i(210106),	-- Maple Tender Wristbands
+					i(210095),	-- Maple Tender Leggings
 					i(210237),	-- Nipping Night's Necklace
 				},
 			}),
@@ -84,6 +91,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 40.5, 49.6, TREE_1 },
 				["g"] = {
 					i(210650),	-- Mark of the Keen-Eyed Dreamsaber
+					i(210491),	-- Technique: Winding Slitherdrake: Hairy Chin (RECIPE!)
+					i(210129),	-- Wand of Brisk Dusks / -- generic drop?
 				},
 			}),
 			n(210051, {	-- Matriarch Keevah
@@ -111,6 +120,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					{ 40.5, 72.6, TREE_1 }, -- Moragh
 				},
 				["g"] = {
+					i(208329),	-- Warm Grasp of the Dream
 					--i(210093),	-- Autumn Druid Hood ?
 				},
 			}),
@@ -146,6 +156,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			n(210047, {	-- Somnambulant Ori
 				["questID"] = 78212,
 				["coord"] = { 43.5, 47.0, TREE_1 },
+				["g"] = {
+					i(210493),	-- Technique: Grotto Netherwing Drake: Spiked Jaw (RECIPE!)
+				},
 			}),	
 			n(209365, {	-- Splinterlimb
 				["questID"] = 77863,
