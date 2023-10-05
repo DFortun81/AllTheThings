@@ -1300,7 +1300,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { AD
 		q(69867),	-- Stay and Listen Merithra 18.7,51.6 (LQ 70928)
 		q(66505),	-- triggered when talking to Ranger Bolor and giving them Batu's Collar (spellID 372100)
 		q(66512),	-- triggered when talking to Hunter Zaya and giving her Sarnai's Collar (spellID 372102)
-		q(74168),	-- After killing Skaara (during leveling)
 		-- Achievement Honor Our Ancestors
 		q(71167),	-- Maruukai Ancestor (spellID 390535)
 		q(71168),	-- Timberstep Outpost Ancestor (spellID 390536)

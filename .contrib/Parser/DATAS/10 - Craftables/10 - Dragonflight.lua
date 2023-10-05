@@ -3031,6 +3031,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstSkin(74151, 193885),	-- Skinning Salkii
 			FirstSkin(74142, 190161),	-- Skinning Sarana (Grand Hunt)
 			FirstSkin(74555, 201562, ADDED_10_0_5),	-- Skinning Shardwing
+			FirstSkin(74168, 192949),	-- Skinning Skaara
 			FirstSkin(74215, 193708),	-- Skinning Skald the Impaler
 			FirstSkin(74223, 193181),	-- Skinning Skewersnout
 			FirstSkin(74222, 193120),	-- Skinning Smogswog the Firebreather
