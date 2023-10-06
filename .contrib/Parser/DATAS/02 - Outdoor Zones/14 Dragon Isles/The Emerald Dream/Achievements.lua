@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
-	m(TREE_1, {
+	m(EMERALD_DREAM, {
 		n(ACHIEVEMENTS, {
 			ach(19316, {	-- Adventurer of the Emerald Dream
 				["g"] = {
@@ -99,28 +99,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				-- }),
 			}),
 			ach(19301, {	-- Dragon Glyphs: Amirdrassil
-				["coord"] = { 49.9, 64.3, TREE_1 },
+				["coord"] = { 49.9, 64.3, EMERALD_DREAM },
 			}),
 			ach(19299, {	-- Dragon Glyphs: Cinder Summit
-				["coord"] = { 29.9, 21.2, TREE_1 },
+				["coord"] = { 29.9, 21.2, EMERALD_DREAM },
 			}),
 			ach(19300, {	-- Dragon Glyphs: Dreamsurge Basin
-				["coord"] = { 45.5, 45.8, TREE_1 },
+				["coord"] = { 45.5, 45.8, EMERALD_DREAM },
 			}),
 			ach(19296, {	-- Dragon Glyphs: Eye of Ysera
-				["coord"] = { 60.3, 30.1, TREE_1 },
+				["coord"] = { 60.3, 30.1, EMERALD_DREAM },
 			}),
 			ach(19297, {	-- Dragon Glyphs: Smoldering Ascent
-				["coord"] = { 21.2, 26.7, TREE_1 },
+				["coord"] = { 21.2, 26.7, EMERALD_DREAM },
 			}),
 			ach(19298, {	-- Dragon Glyphs: Smoldering Copse
-				["coord"] = { 33.7, 45.6, TREE_1 },
+				["coord"] = { 33.7, 45.6, EMERALD_DREAM },
 			}),
 			ach(19303, {	-- Dragon Glyphs: Wakeful Vista
-				["coord"] = { 61.6, 75.4, TREE_1 },
+				["coord"] = { 61.6, 75.4, EMERALD_DREAM },
 			}),
 			ach(19302, {	-- Dragon Glyphs: Whorlwing basin
-				["coord"] = { 31.7, 80.7, TREE_1 },
+				["coord"] = { 31.7, 80.7, EMERALD_DREAM },
 			}),
 			ach(19318, {	-- Dream On
 				["sym"] = {{"meta_achievement",
@@ -180,150 +180,150 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["g"] = {
 					i(210522),	-- Blueloo (PET!)
 					crit(62785, {	-- Beaks
-						["coord"] = { 36.9, 65.8, TREE_1 },
+						["coord"] = { 36.9, 65.8, EMERALD_DREAM },
 						["_npcs"] = { 212053 },
 					}),
 					crit(62776, {	-- Bumbletweet
-						["coord"] = { 39.1, 66.0, TREE_1 },
+						["coord"] = { 39.1, 66.0, EMERALD_DREAM },
 						["_npcs"] = { 212042 },
 					}),
 					crit(62788, {	-- Chickle
-						["coord"] = { 36.4, 71.2, TREE_1 },
+						["coord"] = { 36.4, 71.2, EMERALD_DREAM },
 						["_npcs"] = { 212056 },
 					}),
 					crit(62790, {	-- Eugene
-						["coord"] = { 36.4, 62.7, TREE_1 },
+						["coord"] = { 36.4, 62.7, EMERALD_DREAM },
 						["_npcs"] = { 212058 },
 					}),
 					crit(62775, {	-- Feets
-						["coord"] = { 38.4, 69.5, TREE_1 },
+						["coord"] = { 38.4, 69.5, EMERALD_DREAM },
 						["_npcs"] = { 212039 },
 					}),
 					crit(62779, {	-- Fruffles
-						["coord"] = { 39.3, 71.7, TREE_1 },
+						["coord"] = { 39.3, 71.7, EMERALD_DREAM },
 						["_npcs"] = { 212046 },
 					}),
 					crit(62789, {	-- Fuzz
-						["coord"] = { 38.7, 63.5, TREE_1 },
+						["coord"] = { 38.7, 63.5, EMERALD_DREAM },
 						["_npcs"] = { 212057 },
 					}),
 					crit(62773, {	-- Giblet
-						["coord"] = { 35.6, 67.1, TREE_1 },
+						["coord"] = { 35.6, 67.1, EMERALD_DREAM },
 						["_npcs"] = { 212033 },
 					}),
 					crit(62784, {	-- Hops
-						["coord"] = { 37.7, 73.3, TREE_1 },
+						["coord"] = { 37.7, 73.3, EMERALD_DREAM },
 						["_npcs"] = { 212052 },
 					}),
 					crit(62783, {	-- Meep
-						["coord"] = { 35.5, 69.7, TREE_1 },
+						["coord"] = { 35.5, 69.7, EMERALD_DREAM },
 						["_npcs"] = { 212051 },
 					}),
 					crit(62787, {	-- Moonbeam
-						["coord"] = { 36.1, 69.7, TREE_1 },
+						["coord"] = { 36.1, 69.7, EMERALD_DREAM },
 						["_npcs"] = { 212055 },
 					}),
 					crit(62782, {	-- Owlington
-						["coord"] = { 37.4, 72.2, TREE_1 },
+						["coord"] = { 37.4, 72.2, EMERALD_DREAM },
 						["_npcs"] = { 212050 },
 					}),
 					crit(62777, {	-- Peanut
-						["coord"] = { 38.0, 69.0, TREE_1 },
+						["coord"] = { 38.0, 69.0, EMERALD_DREAM },
 						["_npcs"] = { 212044 },
 					}),
 					crit(62778, {	-- Snoozle
-						["coord"] = { 40.4, 71.5, TREE_1 },
+						["coord"] = { 40.4, 71.5, EMERALD_DREAM },
 						["_npcs"] = { 212045 },
 					}),
 					crit(62780, {	-- Squawkle
-						["coord"] = { 36.3, 71.6, TREE_1 },
+						["coord"] = { 36.3, 71.6, EMERALD_DREAM },
 						["_npcs"] = { 212047 },
 					}),
 					crit(62786, {	-- Squeaky
-						["coord"] = { 38.4, 69.3, TREE_1 },
+						["coord"] = { 38.4, 69.3, EMERALD_DREAM },
 						["_npcs"] = { 212054 },
 					}),
 					crit(62791, {	-- Tickles
-						["coord"] = { 38.7, 70.4, TREE_1 },
+						["coord"] = { 38.7, 70.4, EMERALD_DREAM },
 						["_npcs"] = { 212060 },
 					}),
 					crit(62781, {	-- Wingnut
-						["coord"] = { 37.8, 70.2, TREE_1 },
+						["coord"] = { 37.8, 70.2, EMERALD_DREAM },
 						["_npcs"] = { 212049 },
 					}),
 				},
 			}),
 			ach(19013, {	-- I Dream of Seeds
 				crit(62396, {	-- Ageless Blossom
-					["coord"] = { 59.7, 16.9, TREE_1 },
+					["coord"] = { 59.7, 16.9, EMERALD_DREAM },
 					--["questID"] = xx, seems like it is triggered with qID 77209 or somewhere from that chain
 				}),
 				crit(62041, {	-- Belligerent Begonias (n: 208617)
-					["coord"] = { 49.9, 35.4, TREE_1 },
+					["coord"] = { 49.9, 35.4, EMERALD_DREAM },
 					--["questID"] = 77359,
 				}),
 				crit(62029, {	-- Chiming Foxglove (n: 208511)
-					["coord"] = { 54.6, 67.6, TREE_1 },
+					["coord"] = { 54.6, 67.6, EMERALD_DREAM },
 					--["questID"] = 77219,
 				}),
 				crit(62185, {	-- Comfy Chamomile (n: 210723)
-					["coord"] = { 38.4, 59.2, TREE_1 },
+					["coord"] = { 38.4, 59.2, EMERALD_DREAM },
 					--["questID"] = 77518,
 				}),
 				crit(62030, {	-- Dragon's Daffodil (n: 208556)
-					["coord"] = { 64.0, 64.8, TREE_1 },
+					["coord"] = { 64.0, 64.8, EMERALD_DREAM },
 					--["questID"] = 77224,
 				}),
 				crit(62037, {	-- Dreamer's Daisy (n: 208615)
-					["coord"] = { 46.4, 40.5, TREE_1 },
+					["coord"] = { 46.4, 40.5, EMERALD_DREAM },
 					--["questID"] = 77391,
 				}),
 				crit(62189, {	-- 	Flourishing Scurfpea (n: 210725)
-					["coord"] = { 48.7, 80.5, TREE_1 },
+					["coord"] = { 48.7, 80.5, EMERALD_DREAM },
 					--["questID"] = 77538,
 				}),
 				crit(62032, {	-- Fuzzy Licorice (n: 208605)
-					["coord"] = { 63.5, 47.1, TREE_1 },
+					["coord"] = { 63.5, 47.1, EMERALD_DREAM },
 					--["questID"] = 77380,
 				}),
 				crit(62036, {	-- Glade Goldenrod (n: 209880)
-					["coord"] = { 40.7, 43.5, TREE_1 },
+					["coord"] = { 40.7, 43.5, EMERALD_DREAM },
 					--["questID"] = 77508,
 				}),
 				crit(62027, {	-- Lavatouched Lilies (n: 209583)
-					["coord"] = { 40.7, 24.8, TREE_1 },
+					["coord"] = { 40.7, 24.8, EMERALD_DREAM },
 					--["questID"] = 77496,
 				}),
 				crit(62039, {	-- Lofty Lupin (n: 208606)
-					["coord"] = { 56.7, 44.9, TREE_1 },
+					["coord"] = { 56.7, 44.9, EMERALD_DREAM },
 					--["questID"] = 77384,
 				}),
 				crit(62040, {	-- Lullaby Lavender (n: 209599)
-					["coord"] = { 56.5, 37.7, TREE_1 },
+					["coord"] = { 56.5, 37.7, EMERALD_DREAM },
 					--["questID"] = 77503,
 				}),
 				crit(62186, {	-- Moon Tulip (n: 210724)
-					["coord"] = { 42.6, 74.0, TREE_1 },
+					["coord"] = { 42.6, 74.0, EMERALD_DREAM },
 					--["questID"] = 77531,
 				}),
 				crit(62038, {	-- Ringing Rose (n: 208607)
-					["coord"] = { 49.2, 48.1, TREE_1 },
+					["coord"] = { 49.2, 48.1, EMERALD_DREAM },
 					--["questID"] = 77387,
 				}),
 				crit(62031, {	-- Singing Weedling (n: 208563)
-					["coord"] = { 63.0, 52.8, TREE_1 },
+					["coord"] = { 63.0, 52.8, EMERALD_DREAM },
 					--["questID"] = 77375,
 				}),
 				crit(62035, {	-- Viridescent Sprout (n: 208616)
-					["coord"] = { 40.0, 52.7, TREE_1 },
+					["coord"] = { 40.0, 52.7, EMERALD_DREAM },
 					--["questID"] = 77394,
 				}),
 				crit(62397, {	-- Whisperbloom Sapling (n: 211059)
-					["coord"] = { 51.2, 58.7, TREE_1 },
+					["coord"] = { 51.2, 58.7, EMERALD_DREAM },
 					--["questID"] = xx,
 				}),
 				crit(62028, {	-- Ysera's Clover (n: 208443)
-					["coord"] = { 59.2, 58.8, TREE_1 },
+					["coord"] = { 59.2, 58.8, EMERALD_DREAM },
 					--["questID"] = 77214,
 				}),
 			}),

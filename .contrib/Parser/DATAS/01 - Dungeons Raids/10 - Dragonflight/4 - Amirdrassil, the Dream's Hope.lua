@@ -13,7 +13,7 @@ local HeroicPlusID = MultiDifficultyID(HeroicPlus);
 root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	inst(1207, {	-- Amirdrassil, the Dream's Hope
 		["isRaid"] = true,
-		["coord"] = { X, Y, TREE_1 },
+		["coord"] = { X, Y, EMERALD_DREAM },
 		["maps"] = {
 			2234,	-- Amirdrassil, the Dream's Hope
 		},

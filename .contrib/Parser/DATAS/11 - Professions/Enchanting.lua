@@ -610,7 +610,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			}),
 			o(410582,	-- Essence of Dreams
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
-				["coord"] = { 66.3, 74.2, TREE_1 },
+				["coord"] = { 66.3, 74.2, EMERALD_DREAM },
 				["questID"] = 78310,
 				["g"] = {
 					i(210234),	-- Essence of Dreams
@@ -618,7 +618,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			})),
 			o(410575,	-- Everburning Core
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
-				["coord"] = { 46.1, 20.5, TREE_1 },
+				["coord"] = { 46.1, 20.5, EMERALD_DREAM },
 				["questID"] = 78309,
 				["g"] = {
 					i(210231),	-- Everburning Core
@@ -670,7 +670,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			}),
 			o(410574,	-- Pure Dream Water
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
-				["coord"] = { 38.3, 30.1, TREE_1 },
+				["coord"] = { 38.3, 30.1, EMERALD_DREAM },
 				["questID"] = 78308,
 				["g"] = {
 					i(210228),	-- Pure Dream Water

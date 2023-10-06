@@ -4059,7 +4059,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				},
 			}),
 			o(411169, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Grove Keeper's Pillar
-				["coord"] = { 63.4, 71.5, TREE_1 },
+				["coord"] = { 63.4, 71.5, EMERALD_DREAM },
 				["questID"] = 78412,
 				["g"] = {
 					i(210459),	-- Grove Keeper's Pillar
@@ -4088,7 +4088,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				},
 			})),
 			o(411170, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Primalist Shadowbinding Rune
-				["coord"] = { 36.0, 46.6, TREE_1 },
+				["coord"] = { 36.0, 46.6, EMERALD_DREAM },
 				["questID"] = 78413,
 				["g"] = {
 					i(210460),	-- Primalist Shadowbinding Rune
@@ -4109,7 +4109,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				},
 			}),
 			o(411168, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Winnie's Notes on Flora and Fauna
-				["coord"] = { 55.6, 27.5, TREE_1 },
+				["coord"] = { 55.6, 27.5, EMERALD_DREAM },
 				["questID"] = 78411,
 				["g"] = {
 					i(210458),	-- Winnie's Notes on Flora and Fauna

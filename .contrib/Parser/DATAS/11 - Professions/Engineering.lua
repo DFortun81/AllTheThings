@@ -830,7 +830,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			i(198156, {	-- Wyrmhole Generator: Dragon Isles (TOY!)
 				["description"] = "You can collect additional portal options.\nOHN’AHRAN PLAINS = Clomp your hooves, imaginary or otherwise...\nRANDOM LOCATION = Carelessly leap into the portal...\nTHALDRASZUS = Audibly spell out 'Thaldraszus'...\nTHE AZURE SPAN = Ensure your arrival at the Azure Span...\nTHE WAKING SHORES = Pray return to the Waking Shores.",
 				["g"] = {
-					q(70581, {	-- THE_AZURE_SPAN 1 
+					q(70581, {	-- THE_AZURE_SPAN 1
 						["coord"] = { 71.0, 47.9, THE_AZURE_SPAN },
 						["name"] = "Wyrmhole Generator Portal: Azure Span 1",
 					}),
@@ -842,7 +842,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 						["coord"] = { 27.6, 26.4, THE_AZURE_SPAN },
 						["name"] = "Wyrmhole Generator Portal: Azure Span 3",
 					}),
-					q(73144, {	-- FORBIDDEN_REACH 1 
+					q(73144, {	-- FORBIDDEN_REACH 1
 						["coord"] = { 78.0, 51.0, THE_FORBIDDEN_REACH },
 						["name"] = "Wyrmhole Generator Portal: Forbidden Reach 1",
 					}),
@@ -1116,7 +1116,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			})),
 			o(410458,		-- Insomniotron
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
-				["coord"] = { 40.4, 89.3, TREE_1 },
+				["coord"] = { 40.4, 89.3, EMERALD_DREAM },
 				["questID"] = 78279,
 				["g"] = {
 					i(210194),	-- Insomniotron
@@ -1140,7 +1140,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			})),
 			o(410469,		-- Unhatched Battery
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
-				["coord"] = { 62.6, 36.2, TREE_1 },
+				["coord"] = { 62.6, 36.2, EMERALD_DREAM },
 				["questID"] = 78281,
 				["g"] = {
 					i(210197),	-- Unhatched Battery

@@ -1177,7 +1177,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			o(410550, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Dreamtalon Claw
-				["coord"] = { 34.0, 29.7, TREE_1 },
+				["coord"] = { 34.0, 29.7, EMERALD_DREAM },
 				["questID"] = 78305,
 				["g"] = {
 					i(210215),	-- Dreamtalon Claw
@@ -1198,7 +1198,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			})),
 			o(410534, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Molted Faerie Dragon Scales
-				["coord"] = { 37.4, 71.0, TREE_1 },
+				["coord"] = { 37.4, 71.0, EMERALD_DREAM },
 				["questID"] = 78299,
 				["g"] = {
 					i(210211),	-- Molted Faerie Dragon Scales
@@ -1226,7 +1226,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			})),
 			o(410529, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Tuft of Dreamsaber Fur
-				["coord"] = { 41.7, 66.4, TREE_1 },
+				["coord"] = { 41.7, 66.4, EMERALD_DREAM },
 				["questID"] = 78298,
 				["g"] = {
 					i(210208),	-- Tuft of Dreamsaber Fur

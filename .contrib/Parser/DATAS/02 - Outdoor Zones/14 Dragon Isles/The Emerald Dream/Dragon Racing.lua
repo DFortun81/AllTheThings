@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
-	m(TREE_1, {
+	m(EMERALD_DREAM, {
 		n(DRAGONRIDING_RACING, {
 			header(HEADERS.Achievement, 19120, {	-- Emerald Dream Racing Completionist: Gold
 				n(ACHIEVEMENTS, {
@@ -303,8 +303,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					ach(19121, {	-- Emerald Dream Challenge: Bronze
 						-- Meta Achievement
 						["sym"] = {{"meta_achievement",
-							19056,	-- Canopy Concours Challenge: Bronze							
-							19071,	-- Emerald Amble Challenge: Bronze							
+							19056,	-- Canopy Concours Challenge: Bronze
+							19071,	-- Emerald Amble Challenge: Bronze
 							19041,	-- Shoreline Switchback Challenge: Bronze
 							18987,	-- Smoldering Sprint Challenge: Bronze
 							19002,	-- Viridescent Venture Challenge: Bronze

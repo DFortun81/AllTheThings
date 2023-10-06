@@ -9,7 +9,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["sourceQuests"] = { 77283 },	-- A Multi-Front Battle (TODO: 77887?)
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
 					["isWeekly"] = true,
-					["coord"] = { 50.2, 61.6, TREE_1 },
+					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 					["g"] = {
 						i(210872, {	-- Satchel of Dreams
 						--Supebloom share
@@ -23,23 +23,23 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}, {	-- RENOWN 2 --
 				q(78579, {	-- Dragon Isles Supplies (TODO: alts only?)
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn (TODO: currently provider listed where you turn in, there wasn't any npc who offer a quest)
-					["coord"] = { 50.2, 61.6, TREE_1 },
+					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 				}),
 			}, {	-- RENOWN 3 --
 			}, {	-- RENOWN 4 --
 				q(78356, {	-- Whelpling's Dreaming Crest
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn (TODO: currently provider listed where you turn in, there wasn't any npc who offer a quest)
-					["coord"] = { 50.2, 61.6, TREE_1 },
+					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 				}),
 			}, {	-- RENOWN 5 --
 				q(78386, {	-- Emerald Reawakening
 					["provider"] = { "n", 211962 },	-- Melsysra
-					["maps"] = { TREE_1 },	-- follow you around
+					["maps"] = { EMERALD_DREAM },	-- follow you around
 				}),
 				q(78430, {	-- Mean Green Infusion Machine
 					["sourceQuests"] = { 78386 },	-- Emerald Reawakening (TODO: may be become available without renown after done once?)
 					["provider"] = { "n", 211209 },	-- Elianna
-					["coord"] = { 50.2, 61.8, TREE_1 },
+					["coord"] = { 50.2, 61.8, EMERALD_DREAM },
 					["g"] = {
 						i(205160),	-- Rithro (PET!)
 					},
@@ -47,7 +47,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(78431, {	-- Green Dream Team
 					["sourceQuests"] = { 78430 },	-- Mean Green Infusion Machine
 					["provider"] = { "n", 211209 },	-- Elianna
-					["coord"] = { 50.2, 61.8, TREE_1 },
+					["coord"] = { 50.2, 61.8, EMERALD_DREAM },
 					["g"] = {
 						i(210776),	-- Lesser Dream Infusion (QI!) (Quest item, kinda)
 					},

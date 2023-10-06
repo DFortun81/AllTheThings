@@ -402,7 +402,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 			}),
 			o(410484, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Coalesced Dreamstone
-				["coord"] = { 58.9, 53.8, TREE_1 },
+				["coord"] = { 58.9, 53.8, EMERALD_DREAM },
 				["questID"] = 78285,
 				["g"] = {
 					i(210202),	-- Coalesced Dreamstone
@@ -476,7 +476,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 			}),
 			o(410475, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Petrified Hope
-				["coord"] = { 33.2, 46.5, TREE_1 },
+				["coord"] = { 33.2, 46.5, EMERALD_DREAM },
 				["questID"] = 78282,
 				["g"] = {
 					i(210200),	-- Petrified Hope
@@ -490,7 +490,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 			})),
 			o(410479, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Unpolished Blemish
-				["coord"] = { 43.4, 33.3, TREE_1 },
+				["coord"] = { 43.4, 33.3, EMERALD_DREAM },
 				["questID"] = 78283,
 				["g"] = {
 					i(210201),	-- Handful of Pebbles

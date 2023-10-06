@@ -2,12 +2,12 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
-	m(TREE_1, {
+	m(EMERALD_DREAM, {
 		n(ZONE_DROPS, {
 			--i(201437),	-- Slumbering Dream Fragment
-			--i(209861),	-- Thorn-Laden Heart @ 37.8, 46.7, TREE_1 [hunter only, seems like?]
+			--i(209861),	-- Thorn-Laden Heart @ 37.8, 46.7, EMERALD_DREAM [hunter only, seems like?]
 			filter(CLOTH, {
-				--i(),	-- 
+				--i(),	--
 			}),
 			filter(FINGER_F, {
 				i(208350),	-- Ochre Field Signet
@@ -16,13 +16,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				i(210120),	-- Autumn Druid Treads
 			}),
 			filter(MAIL, {
-				--i(),	-- 
+				--i(),	--
 			}),
 			filter(NECK_F, {
-				--i(),	-- 
+				--i(),	--
 			}),
 			filter(PLATE, {
-				--i(),	-- 
+				--i(),	--
 			}),
 			filter(TRINKET_F, {
 				i(209953),	-- Dancing Dream Blossoms

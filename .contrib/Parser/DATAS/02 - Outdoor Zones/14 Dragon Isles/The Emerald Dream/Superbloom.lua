@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
-	m(TREE_1, {
+	m(EMERALD_DREAM, {
 		header(HEADERS.Quest, 78203, {	-- Superbloom
 			n(ACHIEVEMENTS, {
 				ach(19313),	-- Bloom Man Group
@@ -14,20 +14,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				q(78319, {	-- The Superbloom
 					--["sourceQuests"] = {  },	--
 					["provider"] = { "n", 208474 },	-- Clarelle
-					["coord"] = { 51.4, 59.6, TREE_1 },
+					["coord"] = { 51.4, 59.6, EMERALD_DREAM },
 					["isWeekly"] = true,
 				}),
 			}),
 			n(RARES, sharedData({ ["isWeekly"] = true }, {
 				n(207554, { -- Veriann Timbercrush
-					["coord"] = { 43.8, 71.8, TREE_1 },
+					["coord"] = { 43.8, 71.8, EMERALD_DREAM },
 					--[[["questID"] = xx, --could be 78502
 					["groups"] = {
 						may be DM was his loot but now it is unclear
 					},]]--
 				}),
 				n(207543, { -- Marikke
-					["coord"] = { 44.1, 71.9, TREE_1 },
+					["coord"] = { 44.1, 71.9, EMERALD_DREAM },
 					--[[["questID"] = xx, -- could be 78553
 					["groups"] = {
 						may be DM was his loot but now it is unclear
@@ -95,7 +95,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 })));
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
-	m(TREE_1, {
+	m(EMERALD_DREAM, {
 		header(HEADERS.Quest, 78203, {	-- Superbloom
 			q(78203),	-- Superbloom
 			--

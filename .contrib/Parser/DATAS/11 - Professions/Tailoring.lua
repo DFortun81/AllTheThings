@@ -553,7 +553,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				},
 			}),
 			o(411171, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Exceedingly Soft Wildercloth
-				["coord"] = { 53.2, 27.9, TREE_1 },
+				["coord"] = { 53.2, 27.9, EMERALD_DREAM },
 				["questID"] = 78414,
 				["g"] = {
 					i(210461),	-- Exceedingly Soft Wildercloth
@@ -595,7 +595,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				},
 			}),
 			o(411176, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Plush Pillow
-				["coord"] = { 49.8, 61.4, TREE_1 },
+				["coord"] = { 49.8, 61.4, EMERALD_DREAM },
 				["questID"] = 78415,
 				["g"] = {
 					i(210462),	-- Plush Pillow
@@ -611,7 +611,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				},
 			}),
 			o(411177, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Snuggle Buddy
-				["coord"] = { 40.7, 86.1, TREE_1 },
+				["coord"] = { 40.7, 86.1, EMERALD_DREAM },
 				["questID"] = 78416,
 				["g"] = {
 					i(210463),	-- Snuggle Buddy

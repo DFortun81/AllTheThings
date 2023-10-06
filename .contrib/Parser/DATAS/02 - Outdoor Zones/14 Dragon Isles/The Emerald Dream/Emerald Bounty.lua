@@ -9,7 +9,7 @@ EMERALDBOUNTY = createHeader({
 	},
 });
 
-root(ROOTS.Zones, m(TREE_1, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
+root(ROOTS.Zones, m(EMERALD_DREAM, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	n(EMERALDBOUNTY, {
 	--- Seeds
 	i(208066),	-- Small Dreamseed
@@ -25,7 +25,7 @@ root(ROOTS.Zones, m(TREE_1, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 			q(77209, {	-- Seed Legacy
 				["sourceQuests"] = { 78172 },	-- Mysterious Seeds
 				["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
-				["coord"] = { 59.7, 16.9, TREE_1 },
+				["coord"] = { 59.7, 16.9, EMERALD_DREAM },
 				["g"] = {
 					i(210014),	-- Mysterious Seeds (QI!)
 				},
@@ -33,7 +33,7 @@ root(ROOTS.Zones, m(TREE_1, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 			q(78170, {	-- Nurturing Ageless Seeds
 				["sourceQuests"] = { 77209 },	-- Seed Legacy
 				["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
-				["coord"] = { 59.7, 16.9, TREE_1 },
+				["coord"] = { 59.7, 16.9, EMERALD_DREAM },
 				["g"] = {
 					i(211406),	-- Ageless Dewdrops (QI!)
 				},
@@ -41,7 +41,7 @@ root(ROOTS.Zones, m(TREE_1, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 			q(78171, {	-- Blossoms of the Past
 				["sourceQuests"] = { 78170 },	-- Nurturing Ageless Seeds
 				["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
-				["coord"] = { 59.7, 16.9, TREE_1 },
+				["coord"] = { 59.7, 16.9, EMERALD_DREAM },
 				["g"] = {
 					i(210052),	-- Ageless Blossoms (QI!)
 					i(208067),	-- Plump Dreamseed
@@ -50,13 +50,13 @@ root(ROOTS.Zones, m(TREE_1, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 			q(78206, {	-- Emerald Bounty
 				["sourceQuests"] = { 78171 },	-- Blossoms of the Past
 				["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
-				["coord"] = { 59.7, 16.9, TREE_1 },
+				["coord"] = { 59.7, 16.9, EMERALD_DREAM },
 			}),
 			--
 			q(78821, {	-- Blooming Dreamseeds
 				--["sourceQuests"] = { 78206 },	-- Emerald Bounty (TODO: need to confirm)
 				["provider"] = { "n", 212797 },	-- Talisa Whisperbloom
-				["coord"] = { 49.7, 62.1, TREE_1 },
+				["coord"] = { 49.7, 62.1, EMERALD_DREAM },
 				["isWeekly"] = true,
 				["g"] = {
 					--(TODO: Superbloom share)
@@ -82,7 +82,7 @@ root(ROOTS.Zones, m(TREE_1, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 })));
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
-	m(TREE_1, {
+	m(EMERALD_DREAM, {
 		-- There also possibility that each if it have 2 (or even 3) more hqts - one for 50/100 and another for 100/100
 		-- ...and may be have one more hqt with 'evolution' for seed (when rare is summoned)
 		--1

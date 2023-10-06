@@ -469,7 +469,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			}),
 			o(410426,	-- Half-Filled Dreamless Sleep Potion
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
-				["coord"] = { 54.0, 32.6, TREE_1 },
+				["coord"] = { 54.0, 32.6, EMERALD_DREAM },
 				["questID"] = 78264,
 				["g"] = {
 					i(210184),	-- Half-Filled Dreamless Sleep Potion
@@ -502,7 +502,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			})),
 			o(410442,	-- Root of the Problem
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
-				["coord"] = { 36.2, 46.6, TREE_1 },
+				["coord"] = { 36.2, 46.6, EMERALD_DREAM },
 				["questID"] = 78269,
 				["g"] = {
 					i(210185),	-- Splash Potion of Narcolepsy

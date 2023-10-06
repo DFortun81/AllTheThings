@@ -5,7 +5,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 	n(DREAM_WARDENS, {
 		n(VENDORS, {
 			n(208156, {	-- Moon Priestress Lasara <Renown Quatermaster>
-				["coord"] = { 50.3, 61.6, TREE_1 },
+				["coord"] = { 50.3, 61.6, EMERALD_DREAM },
 				["g"] = bubbleDownRep(FACTION_DREAM_WARDENS, {
 					{		-- RENOWN 1 --
 					}, {	-- RENOWN 2 --

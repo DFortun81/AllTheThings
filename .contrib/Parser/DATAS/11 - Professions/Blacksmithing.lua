@@ -942,7 +942,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		n(TREASURES, {
 			o(411179,	-- Amirdrassil Defender's Shield
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
-				["coord"] = { 49.8, 63.0, TREE_1 },
+				["coord"] = { 49.8, 63.0, EMERALD_DREAM },
 				["questID"] = 78417,
 				["g"] = {
 					i(210464),	-- Amirdrassil Defender's Shield
@@ -988,7 +988,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 			o(411180,	-- Deathstalker Chasis
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
-				["coord"] = { 36.34, 46.79, TREE_1 },
+				["coord"] = { 36.34, 46.79, EMERALD_DREAM },
 				["questID"] = 78418,
 				["g"] = {
 					i(210465),	-- Deathstalker Chasis
@@ -1003,7 +1003,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 			o(411181,	-- Flamesworn Render
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
-				["coord"] = { 37.27, 22.94, TREE_1 },
+				["coord"] = { 37.27, 22.94, EMERALD_DREAM },
 				["questID"] = 78419,
 				["g"] = {
 					i(210466),	-- Flamesworn Render

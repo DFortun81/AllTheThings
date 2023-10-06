@@ -2,10 +2,10 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
-	m(TREE_1, {
+	m(EMERALD_DREAM, {
 		n(VENDORS, {
 			n(211209, {	-- Elianna <Dream Infuser>
-				["coord"] = { 50.2, 61.8, TREE_1 },
+				["coord"] = { 50.2, 61.8, EMERALD_DREAM },
 				["g"] = {
 					i(210785, {	-- Snorr (PET!)
 						["cost"] = { { "i", 210776, 1 } },	-- 1x Lesser Dream Infusion
@@ -49,7 +49,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}
 			}),
 			n(211265, {	-- Sylvia Whisperbloom (TODO: Talisa Whisperbloom (n: 212797) have same stuff, tree no longer a vendor)
-				["coord"] = { 59.8, 16.9, TREE_1 },
+				["coord"] = { 59.8, 16.9, EMERALD_DREAM },
 				["g"] = {	-- (TODO: everything in cost changed to { "i", 211376, 1 })
 					i(209961, {	-- Ceremonial Jacaranda Cape
 						["cost"] = { { "c", 2651, 50 } },
@@ -244,7 +244,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			n(212903, {	-- Thaelishar Groveheart <Fauna Specialist>
-				["coord"] = { 60.3, 16.9, TREE_1 },
+				["coord"] = { 60.3, 16.9, EMERALD_DREAM },
 				["g"] = {
 					i(210764),	-- Silent Mark of the Dreamtalon
 					i(210767),	-- Silent Mark of the Dreamstag
@@ -253,21 +253,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			n(213285, {	-- Theozhaklos the Curious <Novice Explorer>
-				["coord"] = { 36.7, 33.3, TREE_1 },
-				--[[["g"] = 
+				["coord"] = { 36.7, 33.3, EMERALD_DREAM },
+				--[[["g"] =
 					["cost"] = {{ "i", 210944, 1 }},	-- Emerald Mark of Mastery
 					raid modID 5, bonusID 6652 (hc)
 					pvp modID 45, bonusID 6652 (veteran 8/8)
 					hunter, ids same for pve/pvp
-					i(207221),	-- 
-					i(207219),	-- 
-					i(207218),	-- 
-					i(207217),	-- 
-					i(207216),	-- 
+					i(207221),	--
+					i(207219),	--
+					i(207218),	--
+					i(207217),	--
+					i(207216),	--
 				},]]--
 			}),
 			n(213278, {	-- Kirasztia <Senior Researcher>
-				["coord"] = { 36.7, 33.3, TREE_1 },
+				["coord"] = { 36.7, 33.3, EMERALD_DREAM },
 				--[[["g"] = {
 				["cost"] = {{ "i", 210947, 1 }},	-- Flame-Warped Curio (tooltip show same id for different curio)
 				raid modID 4, bonusID 6652 (lfr)
