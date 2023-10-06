@@ -8,75 +8,75 @@ EMERALDBOUNTY = createHeader({
 		en = "Emerald Bounty",
 	},
 });
-
-root(ROOTS.Zones, m(EMERALD_DREAM, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
-	n(EMERALDBOUNTY, {
-	--- Seeds
-	i(208066),	-- Small Dreamseed
-	i(208067),	-- Plump Dreamseed
-	i(208047),	-- Gigantic Dreamseed
-	--
-		n(QUESTS,{
-			--- Emerald Blossom quest chain
-			q(78172, {	-- Mysterious Seeds
-				--["sourceQuests"] = { xx },	-- xx
-				["provider"] = { "i", 210050 },	-- Mysterious Seeds
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
+	m(EMERALD_DREAM, {
+		n(EMERALDBOUNTY, {
+			----- Seeds -----
+			i(208066),	-- Small Dreamseed
+			i(208067),	-- Plump Dreamseed
+			i(208047),	-- Gigantic Dreamseed
+			n(QUESTS,{
+				--- Emerald Blossom quest chain
+				q(78172, {	-- Mysterious Seeds
+					--["sourceQuests"] = { xx },	-- xx
+					["provider"] = { "i", 210050 },	-- Mysterious Seeds
+				}),
+				q(77209, {	-- Seed Legacy
+					["sourceQuests"] = { 78172 },	-- Mysterious Seeds
+					["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
+					["coord"] = { 59.7, 16.9, EMERALD_DREAM },
+					["g"] = {
+						i(210014),	-- Mysterious Seeds (QI!)
+					},
+				}),
+				q(78170, {	-- Nurturing Ageless Seeds
+					["sourceQuests"] = { 77209 },	-- Seed Legacy
+					["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
+					["coord"] = { 59.7, 16.9, EMERALD_DREAM },
+					["g"] = {
+						i(211406),	-- Ageless Dewdrops (QI!)
+					},
+				}),
+				q(78171, {	-- Blossoms of the Past
+					["sourceQuests"] = { 78170 },	-- Nurturing Ageless Seeds
+					["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
+					["coord"] = { 59.7, 16.9, EMERALD_DREAM },
+					["g"] = {
+						i(210052),	-- Ageless Blossoms (QI!)
+						i(208067),	-- Plump Dreamseed
+					},
+				}),
+				q(78206, {	-- Emerald Bounty
+					["sourceQuests"] = { 78171 },	-- Blossoms of the Past
+					["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
+					["coord"] = { 59.7, 16.9, EMERALD_DREAM },
+				}),
+				--
+				q(78821, {	-- Blooming Dreamseeds
+					--["sourceQuests"] = { 78206 },	-- Emerald Bounty (TODO: need to confirm)
+					["provider"] = { "n", 212797 },	-- Talisa Whisperbloom
+					["coord"] = { 49.7, 62.1, EMERALD_DREAM },
+					["isWeekly"] = true,
+					["g"] = {
+						--(TODO: Superbloom share)
+						i(210380),	-- Glittering Gelid Goldchain
+						i(210378),	-- Rime Ridden Ring
+						i(210403),	-- Winter Forager's Spire
+					},
+				}),
 			}),
-			q(77209, {	-- Seed Legacy
-				["sourceQuests"] = { 78172 },	-- Mysterious Seeds
-				["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
-				["coord"] = { 59.7, 16.9, EMERALD_DREAM },
-				["g"] = {
-					i(210014),	-- Mysterious Seeds (QI!)
-				},
+			n(RARE, {
+				n(209915, {	-- Amalgamation of Dreams
+					["questID"] = 77856, -- or 77539 (pop on summon)
+					--["coords"] = {}, -- any seed spot
+					--also unclear is it daily or weekly
+				}),
 			}),
-			q(78170, {	-- Nurturing Ageless Seeds
-				["sourceQuests"] = { 77209 },	-- Seed Legacy
-				["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
-				["coord"] = { 59.7, 16.9, EMERALD_DREAM },
-				["g"] = {
-					i(211406),	-- Ageless Dewdrops (QI!)
-				},
+			n(REWARDS, {
+				--anything from n: 211069 can be here
+				i(210174),	-- Formula: Illusory Adornment: Dreams (RECIPE!) (TODO: seems like only from blue and epic seed?)
+				i(210241),	-- Recipe: Dreamwalker's Healing Potion (RECIPE!)
 			}),
-			q(78171, {	-- Blossoms of the Past
-				["sourceQuests"] = { 78170 },	-- Nurturing Ageless Seeds
-				["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
-				["coord"] = { 59.7, 16.9, EMERALD_DREAM },
-				["g"] = {
-					i(210052),	-- Ageless Blossoms (QI!)
-					i(208067),	-- Plump Dreamseed
-				},
-			}),
-			q(78206, {	-- Emerald Bounty
-				["sourceQuests"] = { 78171 },	-- Blossoms of the Past
-				["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
-				["coord"] = { 59.7, 16.9, EMERALD_DREAM },
-			}),
-			--
-			q(78821, {	-- Blooming Dreamseeds
-				--["sourceQuests"] = { 78206 },	-- Emerald Bounty (TODO: need to confirm)
-				["provider"] = { "n", 212797 },	-- Talisa Whisperbloom
-				["coord"] = { 49.7, 62.1, EMERALD_DREAM },
-				["isWeekly"] = true,
-				["g"] = {
-					--(TODO: Superbloom share)
-					i(210380),	-- Glittering Gelid Goldchain
-					i(210378),	-- Rime Ridden Ring
-					i(210403),	-- Winter Forager's Spire
-				},
-			}),
-		}),
-		n(RARE, {
-			n(209915, {	-- Amalgamation of Dreams
-				["questID"] = 77856, -- or 77539 (pop on summon)
-				--["coords"] = {}, -- any seed spot
-				--also unclear is it daily or weekly
-			}),
-		}),
-		n(REWARDS, {
-			--anything from n: 211069 can be here
-			i(210174),	-- Formula: Illusory Adornment: Dreams (RECIPE!) (TODO: seems like only from blue and epic seed?)
-			i(210241),	-- Recipe: Dreamwalker's Healing Potion (RECIPE!)
 		}),
 	}),
 })));
