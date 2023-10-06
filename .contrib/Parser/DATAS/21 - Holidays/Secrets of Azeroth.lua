@@ -225,8 +225,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 				},
 				["description"] = "Take the log ride, must have WHEE! buff for Loose Dirt Mound to be visible.",
 			}),
-			--[[
-			o(xx, {	-- Loose Dirt Mound
+			o(409835, {	-- Loose Dirt Mound
 				["questID"] = 77300,
 				["races"] = HORDE_ONLY,
 				["coords"] = {
@@ -234,7 +233,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_
 					{ 10.9, 74.9, GRIZZLY_HILLS }, -- Loose Dirt Mound
 				},
 				["description"] = "Take the log ride, must have WHEE! buff for Loose Dirt Mound to be visible.",
-			}),]]--
+			}),
 			o(405541, {	-- Loose Dirt Mound
 				["questID"] = 77302,
 				["coord"] = { 73.1, 39.5, DRAGONBLIGHT },
