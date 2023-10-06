@@ -346,6 +346,7 @@ root(ROOTS.Holidays, n(DRAGONRIDING_CUP_ROOT, {
 						78880,	-- The Eastern Kingdoms Cup Begins
 						78881,	-- The Eastern Kingdoms Cup Begins
 					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 206737 },	-- Lord Andestrasz
 					["coord"] = { 27.1, 47.1, VALDRAKKEN },
 					["g"] = {
