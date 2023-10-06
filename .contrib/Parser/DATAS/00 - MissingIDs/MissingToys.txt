@@ -11,6 +11,8 @@ i(210656),	-- Winter Veil Socks
 i(210725),	-- Owl Post
 10.2.0.51425
 i(210864),	-- Improvised Leafbed
+10.2.0.51601
+i(206347),	-- Mannequin Charm
 
 
 
@@ -19,3 +21,5 @@ Missing in ToyDB.lua
 
 10.2.0.51425
 i(210864),	-- Improvised Leafbed
+10.2.0.51601
+i(206347),	-- Mannequin Charm

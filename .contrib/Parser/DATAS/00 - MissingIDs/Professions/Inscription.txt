@@ -643,6 +643,10 @@ r(425954),	-- Vantus Rune: Amirdrassil, the Dream's Hope
 r(425958),	-- Winding Slitherdrake: Hairy Chin
 r(425959),	-- Grotto Netherwing Drake: Spiked Jaw
 r(425961),	-- Grotto Netherwing Drake: Chin Tendrils
+10.2.0.51521
+r(427956),	-- Mark of the Auric Dreamstag
+10.2.0.51601
+r(429149),	-- Glyph of the Lunar Chameleon
 
 
 
@@ -655,3 +659,7 @@ r(405005),	-- Glyph of Reckoning
 r(413897),	-- Glyph of Omen of Clarity
 3.4.2.49563
 r(414814),	-- Glyph of Shattering Throw
+10.2.0.51521
+r(427956),	-- Mark of the Auric Dreamstag
+10.2.0.51601
+r(429149),	-- Glyph of the Lunar Chameleon

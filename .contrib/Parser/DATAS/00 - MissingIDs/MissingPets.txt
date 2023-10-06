@@ -31,6 +31,9 @@ pet(4309),	-- Drowsey
 pet(4310),	-- Snorr
 10.2.0.51425
 pet(4311),	-- Mitzy
+10.2.0.51601
+pet(3491),	-- Arfus
+pet(4267),	-- Lil' Maggz
 
 
 
@@ -43,3 +46,6 @@ pet(4303),	-- Snaggletoof
 pet(4304),	-- Dream Badger
 10.2.0.51425
 pet(4311),	-- Mitzy
+10.2.0.51601
+pet(3491),	-- Arfus
+pet(4267),	-- Lil' Maggz

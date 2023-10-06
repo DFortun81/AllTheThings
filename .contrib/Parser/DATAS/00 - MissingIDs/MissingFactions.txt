@@ -597,7 +597,6 @@ faction(2502),	-- Zereth Mortis Lured Monsters
 10.0.0.44649
 faction(2504),	-- Maruuk Centaur (Paragon)
 faction(2506),	-- Dragonflight
-faction(2507),	-- Dragonscale Expedition
 faction(2508),	-- Dragonscale Expedition (Paragon)
 faction(2509),	-- Clan Shikaar
 faction(2512),	-- Clan Aylaag

@@ -559,6 +559,6 @@ def give_name_item() -> None:
 # add_latest_data("10.2.0.51601")
 """Step 3: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
 """Step 4: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
-sort_raw_file_recipes()
+# sort_raw_file_recipes()
 """Step 5: Run create_missing_files() and (you have to uncomment it)"""
 # create_missing_files()
