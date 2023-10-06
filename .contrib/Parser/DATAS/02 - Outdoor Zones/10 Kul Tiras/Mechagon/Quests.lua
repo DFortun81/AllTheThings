@@ -75,7 +75,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 			q(55210, {	-- Batteries Not Included
 				["provider"] = { "n", 150630 },	-- Flip Quickcharge
 				["coord"] = { 70.8, 39.1, MECHAGON },
-				["sourceQuest"] = 55707,	-- First One's Free
 			}),
 			q(56355, {	-- Battle Tested
 				["provider"] = { "n", 151006 },	-- Rocket-Chief Fuselage
