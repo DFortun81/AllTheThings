@@ -1540,6 +1540,8 @@ root(ROOTS.Unsorted, {
 			i(156468),	-- Cloak of the Dormant Blaze
 			i(156469),	-- Pillar of Fortitude
 			i(156470),	-- Bloodcrush Cudgel
+
+			i(211271),	-- Arfus
 		})),
 		tier(DF_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
 			filter(COSMETIC, {
