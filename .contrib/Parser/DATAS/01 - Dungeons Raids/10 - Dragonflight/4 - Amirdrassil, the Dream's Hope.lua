@@ -19,12 +19,23 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(18163, {	-- Discarded Works
-					crit(1, { -- Kazzara, the Hellforged
-						["_encounter"] = { 2522, AnyDifficultyID },
+				ach(19337),	-- Mythic: Volcoross
+				ach(19338),	-- Mythic: Council of Dreams
+				ach(19339),	-- Mythic: Larodar, Keeper of the Flame
+				ach(19340),	-- Mythic: Nymue, Weaver of the Cycle
+				ach(19341),	-- Mythic: Smolderon
+				ach(19342),	-- Mythic: Tindral Sageswift, Seer of the Flame
+				ach(19343),	-- Mythic: Fyrakk the Blazing
+				ach(19345),	-- Molten Incursion
+				ach(19346),	-- The Viridian Weave
+				ach(19347),	-- Fate of Amirdrassil
+
+				ach(19344, {	-- Incarnate's Wake
+					crit(1, { -- Gnarlroot
+						["_encounter"] = { 2564, AnyDifficultyID },
 					}),
-					crit(2, { -- The Amalgamation Chamber
-						["_encounter"] = { 2529, AnyDifficultyID },
+					crit(2, { -- Igira the Cruel
+						["_encounter"] = { 2554, AnyDifficultyID },
 					}),
 					crit(3, { -- The Forgotten Experiments
 						["_encounter"] = { 2530, AnyDifficultyID },
@@ -54,12 +65,12 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						["_encounter"] = { 2520, AnyDifficultyID },
 					}),
 				}),
-				ach(18160, {	-- Aberrus, the Shadowed Crucible
-					crit(1, { -- Kazzara, the Hellforged
-						["_encounter"] = { 2522, AnyDifficultyID },
+				ach(19331, {	-- Amirdrassil, the Dream's Hope
+					crit(1, { -- Gnarlroot
+						["_encounter"] = { 2564, AnyDifficultyID },
 					}),
-					crit(2, { -- The Amalgamation Chamber
-						["_encounter"] = { 2529, AnyDifficultyID },
+					crit(2, { -- Igira the Cruel
+						["_encounter"] = { 2554, AnyDifficultyID },
 					}),
 					crit(3, { -- The Forgotten Experiments
 						["_encounter"] = { 2530, AnyDifficultyID },
@@ -83,12 +94,12 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						["_encounter"] = { 2520, AnyDifficultyID },
 					}),
 				}),
-				ach(18161, {	-- Heroic: Aberrus, the Shadowed Crucible
-					crit(1, { -- Kazzara, the Hellforged
-						["_encounter"] = { 2522, HeroicPlusID },
+				ach(19333, {	-- Heroic: Amirdrassil, the Dream's Hope
+					crit(1, { -- Gnarlroot
+						["_encounter"] = { 2564, HeroicPlusID },
 					}),
-					crit(2, { -- The Amalgamation Chamber
-						["_encounter"] = { 2529, HeroicPlusID },
+					crit(2, { -- Igira the Cruel
+						["_encounter"] = { 2554, HeroicPlusID },
 					}),
 					crit(3, { -- The Forgotten Experiments
 						["_encounter"] = { 2530, HeroicPlusID },
@@ -112,25 +123,25 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						["_encounter"] = { 2520, HeroicPlusID },
 					}),
 				}),
-				ach(18162, {	-- Mythic: Aberrus, the Shadowed Crucible
+				ach(19334, {	-- Mythic: Amirdrassil, the Dream's Hope
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
-						18151,	-- Mythic: Kazzara, the Hellforged
-						18152,	-- Mythic: The Amalgamation Chamber
-						18153,	-- Mythic: The Forgotten Experiments
-						18154,	-- Mythic: Assault of the Zaqali
-						18155,	-- Mythic: Rashok, the Elder
-						18156,	-- Mythic: The Vigilant Steward, Zskarn
-						18157,	-- Mythic: Magmorax
-						18158,	-- Mythic: Echo of Neltharion
-						18159,	-- Mythic: Scalecommander Sarkareth
+						19335,	-- Mythic: Gnarlroot
+						19336,	-- Mythic: Igira the Cruel
+						19337,	-- Mythic: Volcoross
+						19338,	-- Mythic: Council of Dreams
+						19339,	-- Mythic: Larodar, Keeper of the Flame
+						19340,	-- Mythic: Nymue, Weaver of the Cycle
+						19341,	-- Mythic: Smolderon
+						19342,	-- Mythic: Tindral Sageswift, Seer of the Flame
+						19343,	-- Mythic: Fyrakk the Blazing
 					}},
 				}),
-				ach(18251, {	-- Glory of the Aberrus Raider
+				ach(19349, {	-- Glory of the Dream Raider
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
-						18229,	-- Cosplate
-						18168,	-- I'll Make My Own Shadowflame
+						19322,	-- Meaner Pastures
+						19320,	-- Cruelty Free
 						18173,	-- Tabula Rasa
 						18228,	-- Are You Even Trying?
 						18230,	-- Whac-A-Swog
@@ -143,14 +154,10 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						i(205205),	-- Shadowflame Shalewing (MOUNT!)
 					},
 				}),
-				ach(17878, {	-- Me Want Bite
-					["provider"] = { "i", 205684 },	-- Forbidden Flounder
-				}),
-				ach(17765),	-- What We Wear In The Shadowflame
+				ach(19442),	-- Fire Catwalk With Me
 				-- Guild Achievements
-				ach(18177),	-- Aberrus, the Shadowed Crucible Guild Run
-				ach(18178),	-- Heroic: Aberrus, the Shadowed Crucible Guild Run
-				ach(18179),	-- Mythic: Scalecommander Sarkareth Guild Run
+				ach(19387),	-- Amirdrassil, the Dream's Hope Guild Run
+				ach(19388),	-- Heroic: Amirdrassil, the Dream's Hope Guild Run
 			}),
 			n(COMMON_BOSS_DROPS, {
 				i(208212),	-- Dreaming Essence
@@ -209,15 +216,15 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						i(210175),	-- Formula: Enchant Weapon - Dreaming Devotion (RECIPE!)
 					},
 				}),
-				e(2563, {	-- Smolderon
-					["crs"] = { 200927 },	-- Smolderon <The Firelord>
-					["g"] = {
-					},
-				}),
 				e(2556, {	-- Nymue, Weaver of the Cycle
 					["crs"] = { 206172 },	-- Nymue <Weaver of the Cycle>
 					["g"] = {
 						i(210670),	-- Pattern: Verdant Tether (RECIPE!)
+					},
+				}),
+				e(2563, {	-- Smolderon
+					["crs"] = { 200927 },	-- Smolderon <The Firelord>
+					["g"] = {
 					},
 				}),
 				e(2565, {	-- Tindral Sageswift, Seer of the Flame
@@ -235,16 +242,195 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 			d(LNHDifficulty, {
 			}),
 			d(LFR_RAID, {
+				e(2564, {	-- Gnarlroot
+					["crs"] = { 209333 },	-- Gnarlroot
+					["g"] = {
+						i(207142),	-- Ancient Haubark
+						i(207120),	-- Anguished Restraints
+						i(207169),	-- Branch of the Tormented Ancient
+						i(207797),	-- Defender of the Ancient
+						i(207144),	-- Forlorn Leaf Clasp
+						i(207800),	-- Gnarlroot's Bonecrusher
+						i(207160),	-- Inflammable Drapeleaf
+						i(207117),	-- Requiem Rootmantle
+						i(207153),	-- Seared Ironwood Greaves
+						i(207133),	-- Silent Tormentor's Hood
+						i(207794),	-- Staff of Incandescent Torment
+						i(207126),	-- Twisted Blossom Stompers
+					},
+				}),
+				e(2554, {	-- Igira the Cruel
+					["crs"] = { 206689 },	-- Igira the Cruel <Zaqali Elder>
+					["g"] = {
+						i(207150),	-- Agonizing Manacles
+						i(207165),	-- Bandolier of Twisted Blades
+						i(207131),	-- Bloody Dragonhide Belt
+						i(207783),	-- Cruel Dreamcarver
+						i(207140),	-- Drakestalker's Trophy Pauldrons
+						i(207118),	-- Elder's Volcanic Wrap
+						i(207787),	-- Igira's Flaying Hatchet
+						i(207162),	-- Signet of the Last Elder
+					},
+				}),
+				e(2557, {	-- Volcoross
+					["crs"] = { 208478 },	-- Volcoross
+					["g"] = {
+					},
+				}),
+				e(2555, {	-- Council of Dreams
+					["crs"] = {
+						208365,	-- Aerwynn <Council of Dreams>
+						208956,	-- Pip <Council of Dreams>
+						208363,	-- Urctos <Council of Dreams>
+					},
+					["g"] = {
+						i(210169),	-- Pattern: Verdant Conduit (RECIPE!)
+					},
+				}),
+				e(2553, {	-- Larodar, Keeper of the Flame
+					["crs"] = { 208445 },	-- Larodar, Keeper of the Flame
+					["g"] = {
+						i(210175),	-- Formula: Enchant Weapon - Dreaming Devotion (RECIPE!)
+					},
+				}),
+				e(2556, {	-- Nymue, Weaver of the Cycle
+					["crs"] = { 206172 },	-- Nymue <Weaver of the Cycle>
+					["g"] = {
+						i(210670),	-- Pattern: Verdant Tether (RECIPE!)
+					},
+				}),
+				e(2563, {	-- Smolderon
+					["crs"] = { 200927 },	-- Smolderon <The Firelord>
+					["g"] = {
+					},
+				}),
+				e(2565, {	-- Tindral Sageswift, Seer of the Flame
+					["crs"] = { 210601 },	-- Tindral Sageswift <Seer of Flame>
+					["g"] = {
+						i(210644),	-- Plans: Flourishing Dream Helm (RECIPE!)
+					},
+				}),
+				e(2519, {	-- Fyrakk the Blazing
+					["crs"] = { 204931 },	-- Fyrakk <The Blazing>
+					["g"] = {
+					},
+				}),
 			}),
 			d(NormalPlus, {
+				e(2564, {	-- Gnarlroot
+					["crs"] = { 209333 },	-- Gnarlroot
+				}),
+				e(2554, {	-- Igira the Cruel
+					["crs"] = { 206689 },	-- Igira the Cruel <Zaqali Elder>
+				}),
 			}),
 			d(NORMAL_RAID, {
+				e(2564, {	-- Gnarlroot
+					["crs"] = { 209333 },	-- Gnarlroot
+					["g"] = {
+						ach(19322),	-- Meaner Pastures
+						i(207142),	-- Ancient Haubark
+						i(207120),	-- Anguished Restraints
+						i(207169),	-- Branch of the Tormented Ancient
+						i(207797),	-- Defender of the Ancient
+						i(207144),	-- Forlorn Leaf Clasp
+						i(207800),	-- Gnarlroot's Bonecrusher
+						i(207160),	-- Inflammable Drapeleaf
+						i(207117),	-- Requiem Rootmantle
+						i(207153),	-- Seared Ironwood Greaves
+						i(207133),	-- Silent Tormentor's Hood
+						i(207794),	-- Staff of Incandescent Torment
+						i(207126),	-- Twisted Blossom Stompers
+					},
+				}),
+				e(2554, {	-- Igira the Cruel
+					["crs"] = { 206689 },	-- Igira the Cruel <Zaqali Elder>
+					["g"] = {
+						ach(19320),	-- Cruelty Free
+						i(207150),	-- Agonizing Manacles
+						i(207165),	-- Bandolier of Twisted Blades
+						i(207131),	-- Bloody Dragonhide Belt
+						i(207783),	-- Cruel Dreamcarver
+						i(207140),	-- Drakestalker's Trophy Pauldrons
+						i(207118),	-- Elder's Volcanic Wrap
+						i(207787),	-- Igira's Flaying Hatchet
+						i(207162),	-- Signet of the Last Elder
+					},
+				}),
 			}),
 			d(HeroicPlus, {
+				e(2564, {	-- Gnarlroot
+					["crs"] = { 209333 },	-- Gnarlroot
+				}),
+				e(2554, {	-- Igira the Cruel
+					["crs"] = { 206689 },	-- Igira the Cruel <Zaqali Elder>
+				}),
 			}),
 			d(HEROIC_RAID, {
+				e(2564, {	-- Gnarlroot
+					["crs"] = { 209333 },	-- Gnarlroot
+					["g"] = {
+						i(207142),	-- Ancient Haubark
+						i(207120),	-- Anguished Restraints
+						i(207169),	-- Branch of the Tormented Ancient
+						i(207797),	-- Defender of the Ancient
+						i(207144),	-- Forlorn Leaf Clasp
+						i(207800),	-- Gnarlroot's Bonecrusher
+						i(207160),	-- Inflammable Drapeleaf
+						i(207117),	-- Requiem Rootmantle
+						i(207153),	-- Seared Ironwood Greaves
+						i(207133),	-- Silent Tormentor's Hood
+						i(207794),	-- Staff of Incandescent Torment
+						i(207126),	-- Twisted Blossom Stompers
+					},
+				}),
+				e(2554, {	-- Igira the Cruel
+					["crs"] = { 206689 },	-- Igira the Cruel <Zaqali Elder>
+					["g"] = {
+						i(207150),	-- Agonizing Manacles
+						i(207165),	-- Bandolier of Twisted Blades
+						i(207131),	-- Bloody Dragonhide Belt
+						i(207783),	-- Cruel Dreamcarver
+						i(207140),	-- Drakestalker's Trophy Pauldrons
+						i(207118),	-- Elder's Volcanic Wrap
+						i(207787),	-- Igira's Flaying Hatchet
+						i(207162),	-- Signet of the Last Elder
+					},
+				}),
 			}),
 			d(MYTHIC_RAID, {
+				e(2564, {	-- Gnarlroot
+					["crs"] = { 209333 },	-- Gnarlroot
+					["g"] = {
+						ach(19335),	-- Mythic: Gnarlroot
+						i(207142),	-- Ancient Haubark
+						i(207120),	-- Anguished Restraints
+						i(207169),	-- Branch of the Tormented Ancient
+						i(207797),	-- Defender of the Ancient
+						i(207144),	-- Forlorn Leaf Clasp
+						i(207800),	-- Gnarlroot's Bonecrusher
+						i(207160),	-- Inflammable Drapeleaf
+						i(207117),	-- Requiem Rootmantle
+						i(207153),	-- Seared Ironwood Greaves
+						i(207133),	-- Silent Tormentor's Hood
+						i(207794),	-- Staff of Incandescent Torment
+						i(207126),	-- Twisted Blossom Stompers
+					},
+				}),
+				e(2554, {	-- Igira the Cruel
+					["crs"] = { 206689 },	-- Igira the Cruel <Zaqali Elder>
+					["g"] = {
+						ach(19336),	-- Mythic: Igira the Cruel
+						i(207150),	-- Agonizing Manacles
+						i(207165),	-- Bandolier of Twisted Blades
+						i(207131),	-- Bloody Dragonhide Belt
+						i(207783),	-- Cruel Dreamcarver
+						i(207140),	-- Drakestalker's Trophy Pauldrons
+						i(207118),	-- Elder's Volcanic Wrap
+						i(207787),	-- Igira's Flaying Hatchet
+						i(207162),	-- Signet of the Last Elder
+					},
+				}),
 			}),
 		},
 	}),

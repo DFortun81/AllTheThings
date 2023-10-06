@@ -215,7 +215,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 				-- Guild Achievements
 				ach(18177),	-- Aberrus, the Shadowed Crucible Guild Run
 				ach(18178),	-- Heroic: Aberrus, the Shadowed Crucible Guild Run
-				ach(18179),	-- Mythic: Scalecommander Sarkareth Guild Run
 			}),
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
@@ -321,57 +320,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 				}),
 			}),
 			d(LNHDifficulty, {
-				-- e(2522, {	-- Kazzara, the Hellforged
-				-- 	["crs"] = { 201261 },	-- Kazzara, the Hellforged
-				-- 	["g"] = {
-				-- 	},
-				-- }),
-				-- e(2529, {	-- The Amalgamation Chamber
-				-- 	["crs"] = {
-				-- 		201774,	-- Essence of Shadow
-				-- 		201773,	-- Eternal Blaze
-				-- 		201934,	-- Shadowflame Amalgamation
-				-- 	},
-				-- 	["g"] = {
-				-- 	},
-				-- }),
-				-- e(2530, {	-- The Forgotten Experiments
-				-- 	["crs"] = {
-				-- 		200912,	-- Neldris <Experiment 4>
-				-- 		200918,	-- Rionthus <Experiment 328>
-				-- 		200913,	-- Thadrion <Experiment 147>
-				-- 	},
-				-- 	["g"] = {
-				-- 	},
-				-- }),
-				-- e(2524, {	-- Assault of the Zaqali
-				-- 	["crs"] = {
-				-- 		202791,	-- Ignara
-				-- 		199659,	-- Warlord Kagni
-				-- 	},
-				-- 	["g"] = {
-				-- 	},
-				-- }),
-				-- e(2525, {	-- Rashok, the Elder
-				-- 	["crs"] = { 201320 },	-- Rashok, the Elder
-				-- 	["g"] = {
-				-- 	},
-				-- }),
-				-- e(2532, {	-- The Vigilant Steward, Zskarn
-				-- 	["crs"] = { 202637 },	-- Zskarn <the Vigilant Steward>
-				-- 	["g"] = {
-				-- 	},
-				-- }),
-				-- e(2527, {	-- Magmorax
-				-- 	["crs"] = { 201579 },	-- Magmorax
-				-- 	["g"] = {
-				-- 	},
-				-- }),
-				-- e(2523, {	-- Echo of Neltharion
-				-- 	["crs"] = { 203133 },	-- Echo of Neltharion
-				-- 	["g"] = {
-				-- 	},
-				-- }),
 				e(2520, {	-- Scalecommander Sarkareth
 					["crs"] = { 203284 },	-- Scalecommander Sarkareth
 					["g"] = {
@@ -1591,6 +1539,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 							title(506),	-- <Name>, Famed Slayer of Sarkareth
 						})),
 						ach(18254, {["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }}),	-- Cutting Edge: Scalecommander Sarkareth
+						ach(18179),	-- Mythic: Scalecommander Sarkareth Guild Run
 						i(206046, {	-- Void-Touched Curio
 							["sym"] = {{"sub","instance_tier",1208,MYTHIC_RAID}}
 						}),
