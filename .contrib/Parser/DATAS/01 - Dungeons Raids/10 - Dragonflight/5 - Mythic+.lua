@@ -113,8 +113,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				spell(410080),	-- Path of Wind's Domain
 			}),
 		})),
-		--[[
-		header(HEADERS.Achievement, SEASON_XXXXX, bubbleDownSelf({
+		header(HEADERS.Achievement, SEASON_DREAMING, bubbleDownSelf({
 			["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
 		},{
 			ach(19009),		-- Dragonflight Keystone Explorer: Season Three
@@ -152,6 +151,5 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				spell(424167),	-- Path of Heart's Bane
 			}),
 		})),
-		--]]
 	}),
 })));
