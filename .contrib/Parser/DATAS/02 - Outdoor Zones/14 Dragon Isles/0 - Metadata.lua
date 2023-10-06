@@ -7,6 +7,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }
 	["timeline"] = { ADDED_10_0_2 },
 	["g"] = {
 		m(VALDRAKKEN, {["timeline"] = {ADDED_10_0_2_LAUNCH}}),
+		m(EMERALD_DREAM, {["timeline"] = {ADDED_10_2_0}}),
 		m(OHNAHRAN_PLAINS, {["timeline"] = {ADDED_10_0_2_LAUNCH}}),
 		m(THALDRASZUS, {["timeline"] = {ADDED_10_0_2_LAUNCH}}),
 		m(THE_AZURE_SPAN, {["timeline"] = {ADDED_10_0_2_LAUNCH}}),
