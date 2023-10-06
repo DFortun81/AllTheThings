@@ -13296,3 +13296,27 @@
 19397@@@10.2 Upgrade System - Drake-to-Wyrm Trade-Up Unlocked [DNT]
 19398@@@10.2 Upgrade System - Wyrm-to-Aspect Trade-Up Unlocked [DNT]
 19401@@@Emerald Dream Safari
+10.2.0.51521
+19199@@@Scalawag Slither: Bronze
+19200@@@Scalawag Slither: Silver
+19201@@@Scalawag Slither: Gold
+19202@@@Scalawag Slither Advanced: Bronze
+19203@@@Scalawag Slither Advanced: Silver
+19204@@@Scalawag Slither Advanced: Gold
+19205@@@Scalawag Slither Reverse: Bronze
+19206@@@Scalawag Slither Reverse: Silver
+19207@@@Scalawag Slither Reverse: Gold
+19302@@@Dragon Glyphs: Whorlwing Basin
+19411@@@Battleground Blitz Novice
+19412@@@Battleground Blitz Apprentice
+19413@@@Battleground Blitz Veteran
+19416@@@Learning the Ropes
+19417@@@Brawlroom Blitzer
+19418@@@Battle-scarred Battler
+19420@@@Dragonflight Season 3 Hero
+19421@@@Whelpling's Dreaming Crests earned
+19422@@@Drake's Dreaming Crests earned
+19423@@@Wyrm's Dreaming Crests earned
+19424@@@Aspect's Dreaming Crests earned
+19442@@@Fire Catwalk With Me
+19443@@@Battle Mender: Dragonflight Season 3

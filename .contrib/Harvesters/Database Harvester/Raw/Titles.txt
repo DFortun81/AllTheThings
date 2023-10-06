@@ -674,3 +674,6 @@
 525@@@Verdant Legend %s
 526@@@Verdant Gladiator %s
 527@@@Blossom Bringer %s
+10.2.0.51521
+528@@@%s, Famed Slayer of Fyrakk
+529@@@Battle Mender %s

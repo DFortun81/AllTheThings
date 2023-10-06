@@ -20733,3 +20733,11 @@
 212954@@@Snorr
 10.2.0.51425
 213111@@@Mitzy
+10.2.0.51521
+212150@@@Magical Murloc Monument
+213588@@@Ysera
+213646@@@Fyrakk
+213742@@@Blacktalon Assassin
+213757@@@Storm Drake
+213761@@@Vyranoth
+213765@@@Blacktalon Mage

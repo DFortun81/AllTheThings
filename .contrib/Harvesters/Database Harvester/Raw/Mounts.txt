@@ -1730,3 +1730,11 @@
 427546@@@Mammyth
 427549@@@Imagiwing
 427724@@@Salatrancer
+10.2.0.51521
+428005@@@Jeweled Copper Scarab
+428013@@@Deathbringer's Shadowcycle
+428060@@@Golden Regal Scarab
+428062@@@Jeweled Saphire Scarab
+428065@@@Jeweled Jade Scarab
+428067@@@Shadowflame Hellbike
+428068@@@Felreaver Deathcycle
