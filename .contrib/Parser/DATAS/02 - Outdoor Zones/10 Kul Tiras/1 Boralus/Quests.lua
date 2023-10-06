@@ -639,7 +639,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(52128, {	-- Ferry Pass
-				["sourceQuests"] = { 47186 },	-- Sanctum of Sages
+				["sourceQuests"] = { 46729 },	-- The Old Knight
 				["provider"] = { "n", 122370 },	-- Cyrus Crestfall
 				["coord"] = { 68.0, 21.9, BORALUS },
 				["races"] = ALLIANCE_ONLY,
