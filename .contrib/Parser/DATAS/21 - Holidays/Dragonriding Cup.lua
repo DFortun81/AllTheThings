@@ -489,8 +489,8 @@ root(ROOTS.Holidays, n(DRAGONRIDING_CUP_ROOT, {
 					},
 				}),
 				dragonridingrace(76309, {	-- Gilneas Gambit
-					--["provider"] = { "n", X },	-- Bronze Timekeeper
-					["coord"] = { 57.3, 12.4, 179 },
+					["provider"] = { "n", 206246 },	-- Bronze Timekeeper
+					["coord"] = { 58.6, 11.6, 217 },
 					["g"] = {
 						ach(18399),	-- Gilneas Gambit: Bronze
 						ach(18400),	-- Gilneas Gambit: Silver
@@ -498,8 +498,8 @@ root(ROOTS.Holidays, n(DRAGONRIDING_CUP_ROOT, {
 					},
 				}),
 				dragonridingrace(76310, {	-- Gilneas Gambit - Advanced
-					--["provider"] = { "n", X },	-- Bronze Timekeeper
-					["coord"] = { 57.3, 12.4, 179 },
+					["provider"] = { "n", 206246 },	-- Bronze Timekeeper
+					["coord"] = { 58.6, 11.6, 217 },
 					["g"] = {
 						ach(18402),	-- Gilneas Gambit Advanced: Bronze
 						ach(18403),	-- Gilneas Gambite Advanced: Silver
@@ -507,8 +507,8 @@ root(ROOTS.Holidays, n(DRAGONRIDING_CUP_ROOT, {
 					},
 				}),
 				dragonridingrace(76311, {	-- Gilneas Gambit - Reverse
-					--["provider"] = { "n", X },	-- Bronze Timekeeper
-					["coord"] = { 57.3, 12.4, 179 },
+					["provider"] = { "n", 206246 },	-- Bronze Timekeeper
+					["coord"] = { 58.6, 11.6, 217 },
 					["g"] = {
 						ach(18405),	-- Gilneas Gambit Reverse: Bronze
 						ach(18406),	-- Gilneas Gambit Reverse: Silver
@@ -624,8 +624,8 @@ root(ROOTS.Holidays, n(DRAGONRIDING_CUP_ROOT, {
 					},
 				}),
 				dragonridingrace(76510, {	-- Plaguelands Plunge
-					--["provider"] = { "n", X },	-- Bronze Timekeeper
-					 ["coord"] = { 34.2, 36.8, EASTERN_PLAGUELANDS },
+					["provider"] = { "n", 207448 },	-- Bronze Timekeeper
+					["coord"] = { 34.8, 37.9, EASTERN_PLAGUELANDS },
 					["g"] = {
 						ach(18483),	-- Plaguelands Plunge: Bronze
 						ach(18484),	-- Plaguelands Plunge: Silver
@@ -633,8 +633,8 @@ root(ROOTS.Holidays, n(DRAGONRIDING_CUP_ROOT, {
 					},
 				}),
 				dragonridingrace(76512, {	-- Plaguelands Plunge - Advanced
-					--["provider"] = { "n", X },	-- Bronze Timekeeper
-					["coord"] = { 34.2, 36.8, EASTERN_PLAGUELANDS },
+					["provider"] = { "n", 207448 },	-- Bronze Timekeeper
+					["coord"] = { 34.8, 37.9, EASTERN_PLAGUELANDS },
 					["g"] = {
 						ach(18486),	-- Plaguelands Plunge Advanced: Bronze
 						ach(18487),	-- Plaguelands Plunge Advanced: Silver
@@ -642,8 +642,8 @@ root(ROOTS.Holidays, n(DRAGONRIDING_CUP_ROOT, {
 					},
 				}),
 				dragonridingrace(76513, {	-- Plaguelands Plunge - Reverse
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					["coord"] = { 34.2, 36.8, EASTERN_PLAGUELANDS },
+					["provider"] = { "n", 207448 },	-- Bronze Timekeeper
+					["coord"] = { 34.8, 37.9, EASTERN_PLAGUELANDS },
 					["g"] = {
 						ach(18489),	-- Plaguelands Plunge Reverse: Bronze
 						ach(18490),	-- Plaguelands Plunge Reverse: Silver
