@@ -328,8 +328,24 @@ root(ROOTS.Holidays, n(DRAGONRIDING_CUP_ROOT, {
 					["coord"] = { 55.0, 37.7, VALDRAKKEN },
 					["isBreadcrumb"] = true,
 				}),
+				q(78880, {	-- The Eastern Kingdoms Cup Begins
+					["provider"] = { "n", 214031 },	-- Holiday Enthusiast
+					["coord"] = { 62.3, 74.4, STORMWIND_CITY },
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(78881, {	-- The Eastern Kingdoms Cup Begins
+					["provider"] = { "n", 213769 },	-- Holiday Enthusiast
+					["coord"] = { 52.7, 79.4, ORGRIMMAR },
+					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
+				}),
 				q(77839, {	-- The Eastern Kingdoms Cup Introduction
-					--["sourceQuests"] = { 76429 },	-- The Kalimdor Cup Begins
+					["sourceQuests"] = {
+						77840,	-- The Eastern Kingdoms Cup Begins
+						78880,	-- The Eastern Kingdoms Cup Begins
+						78881,	-- The Eastern Kingdoms Cup Begins
+					},
 					["provider"] = { "n", 206737 },	-- Lord Andestrasz
 					["coord"] = { 27.1, 47.1, VALDRAKKEN },
 					["g"] = {
