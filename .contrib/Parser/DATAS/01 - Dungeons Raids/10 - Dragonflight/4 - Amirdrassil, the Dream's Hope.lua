@@ -1,7 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
---[[
 local AllDifficulties = {LFR_RAID,NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID};
 local AnyDifficultyID = MultiDifficultyID(AllDifficulties);
 local LNHDifficulty = {LFR_RAID,NORMAL_RAID,HEROIC_RAID};
@@ -13,17 +12,12 @@ local HeroicPlusID = MultiDifficultyID(HeroicPlus);
 root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	inst(1207, {	-- Amirdrassil, the Dream's Hope
 		["isRaid"] = true,
-		["coord"] = { X, Y, EMERALD_DREAM },
+		--["coord"] = { X, Y, EMERALD_DREAM },
 		["maps"] = {
 			2234,	-- Amirdrassil, the Dream's Hope
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(19341),	-- Mythic: Smolderon
-				ach(19342),	-- Mythic: Tindral Sageswift, Seer of the Flame
-				ach(19343),	-- Mythic: Fyrakk the Blazing
-				ach(19347),	-- Fate of Amirdrassil
-
 				ach(19344, {	-- Incarnate's Wake
 					crit(1, { -- Gnarlroot
 						["_encounter"] = { 2564, AnyDifficultyID },
@@ -31,8 +25,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					crit(2, { -- Igira the Cruel
 						["_encounter"] = { 2554, AnyDifficultyID },
 					}),
-					crit(3, { -- The Forgotten Experiments
-						["_encounter"] = { 2530, AnyDifficultyID },
+					crit(3, { -- Smolderon
+						["_encounter"] = { 2563, AnyDifficultyID },
 					}),
 				}),
 				ach(19345, {	-- Molten Incursion
@@ -51,9 +45,12 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						["_encounter"] = { 2556, AnyDifficultyID },
 					}),
 				}),
-				ach(18167, {	-- Edge of the Void
-					crit(1, { -- Scalecommander Sarkareth
-						["_encounter"] = { 2520, AnyDifficultyID },
+				ach(19347, {	-- Fate of Amirdrassil
+					crit(1, { -- Tindral Sageswift, Seer of the Flame
+						["_encounter"] = { 2565, AnyDifficultyID },
+					}),
+					crit(2, { -- Fyrakk the Blazing
+						["_encounter"] = { 2519, AnyDifficultyID },
 					}),
 				}),
 				ach(19331, {	-- Amirdrassil, the Dream's Hope
@@ -75,14 +72,14 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					crit(6, { -- Nymue, Weaver of the Cycle
 						["_encounter"] = { 2556, AnyDifficultyID },
 					}),
-					crit(7, { -- Magmorax
-						["_encounter"] = { 2527, AnyDifficultyID },
+					crit(7, { -- Smolderon
+						["_encounter"] = { 2563, AnyDifficultyID },
 					}),
-					crit(8, { -- Echo of Neltharion
-						["_encounter"] = { 2523, AnyDifficultyID },
+					crit(8, { -- Tindral Sageswift, Seer of the Flame
+						["_encounter"] = { 2565, AnyDifficultyID },
 					}),
-					crit(9, { -- Scalecommander Sarkareth
-						["_encounter"] = { 2520, AnyDifficultyID },
+					crit(9, { -- Fyrakk the Blazing
+						["_encounter"] = { 2519, AnyDifficultyID },
 					}),
 				}),
 				ach(19333, {	-- Heroic: Amirdrassil, the Dream's Hope
@@ -104,14 +101,14 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					crit(6, { -- Nymue, Weaver of the Cycle
 						["_encounter"] = { 2556, HeroicPlusID },
 					}),
-					crit(7, { -- Magmorax
-						["_encounter"] = { 2527, HeroicPlusID },
+					crit(7, { -- Smolderon
+						["_encounter"] = { 2563, HeroicPlusID },
 					}),
-					crit(8, { -- Echo of Neltharion
-						["_encounter"] = { 2523, HeroicPlusID },
+					crit(8, { -- Tindral Sageswift, Seer of the Flame
+						["_encounter"] = { 2565, HeroicPlusID },
 					}),
-					crit(9, { -- Scalecommander Sarkareth
-						["_encounter"] = { 2520, HeroicPlusID },
+					crit(9, { -- Fyrakk the Blazing
+						["_encounter"] = { 2519, HeroicPlusID },
 					}),
 				}),
 				ach(19334, {	-- Mythic: Amirdrassil, the Dream's Hope
@@ -137,12 +134,12 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						19193,	-- Ducks In A Row
 						19089,	-- Don't Let the Doe Hit You On The Way Out
 						19394,	-- A Dream Within a Dream
-						18172,	-- Escar-Go-Go-Go
-						18149,	-- Objects in Transit May Shatter
-						17877,	-- We'll Never See That Again, Surely
+						19319,	-- Haven't We Done This Before?
+						19393,	-- Whelp, I'm Lost
+						19390,	-- Memories of Teldrassil
 					}},
 					["g"] = {
-						i(205205),	-- Shadowflame Shalewing (MOUNT!)
+						i(210060),	-- Shadow Dusk Dreamsaber (MOUNT!)
 					},
 				}),
 				ach(19442),	-- Fire Catwalk With Me
@@ -214,8 +211,12 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						i(210644),	-- Plans: Flourishing Dream Helm (RECIPE!)
 					},
 				}),
-			}),
-			d(LNHDifficulty, {
+				e(2519, {	-- Fyrakk the Blazing
+					["crs"] = { 204931 },	-- Fyrakk <The Blazing>
+					["g"] = {
+						i(210536),	-- Renewed Proto-Drake: Embodiment of the Blazing (DM!)
+					},
+				}),
 			}),
 			d(LFR_RAID, {
 				e(2564, {	-- Gnarlroot
@@ -315,17 +316,42 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				e(2563, {	-- Smolderon
 					["crs"] = { 200927 },	-- Smolderon <The Firelord>
 					["g"] = {
+						i(207167),	-- Ashes of the Embersoul
+						i(207166),	-- Cataclysmic Signet Brand
+						i(210204),	-- Fading Flame Wristbands
+						i(207156),	-- Fused Obsidian Sabatons
+						i(207799),	-- Incandescent Soulcleaver
+						i(207161),	-- Mantle of Blazing Sacrifice
+						i(207791),	-- Remnant Charglaive
 					},
 				}),
 				e(2565, {	-- Tindral Sageswift, Seer of the Flame
 					["crs"] = { 210601 },	-- Tindral Sageswift <Seer of Flame>
 					["g"] = {
-						i(210644),	-- Plans: Flourishing Dream Helm (RECIPE!)
+						i(207780),	-- Ashen Ranger's Longbow
+						i(207172),	-- Belor'relos, the Suncaller
+						i(207781),	-- Betrayer's Cinderblade
+						i(207795),	-- Eternal Kindler's Greatstaff
+						i(207163),	-- Eye of the Rising Flame
+						i(207137),	-- Flameseer's Winged Grasps
+						i(207157),	-- Smoldering Chevalier's Greatbelt
+						i(207134),	-- Tasseted Emberwalkers
 					},
 				}),
 				e(2519, {	-- Fyrakk the Blazing
 					["crs"] = { 204931 },	-- Fyrakk <The Blazing>
 					["g"] = {
+						i(208614),	-- Augury of the Primal Flame
+						i(207124),	-- Blooming Redeemer's Sash
+						i(207171),	-- Blossom of Amirdrassil
+						i(207145),	-- Boots of the Molten Hoard
+						i(207154),	-- Carapace of the Unbending Flame
+						i(207132),	-- Frenzied Incarnate Legwraps
+						i(207174),	-- Fyrakk's Tainted Rageheart
+						i(207786),	-- Gholak, the Final Conflagration
+						i(207793),	-- Rashon, the Immortal Blaze
+						i(207115),	-- Twisting Shadow Claws
+						i(207788),	-- Vakash, the Shadowed Inferno
 					},
 				}),
 			}),
@@ -370,6 +396,24 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					["crs"] = { 206172 },	-- Nymue <Weaver of the Cycle>
 					["g"] = {
 						ach(19394),	-- A Dream Within a Dream
+					},
+				}),
+				e(2563, {	-- Smolderon
+					["crs"] = { 200927 },	-- Smolderon <The Firelord>
+					["g"] = {
+						ach(19319),	-- Haven't We Done This Before?
+					},
+				}),
+				e(2565, {	-- Tindral Sageswift, Seer of the Flame
+					["crs"] = { 210601 },	-- Tindral Sageswift <Seer of Flame>
+					["g"] = {
+						ach(19393),	-- Whelp, I'm Lost
+					},
+				}),
+				e(2519, {	-- Fyrakk the Blazing
+					["crs"] = { 204931 },	-- Fyrakk <The Blazing>
+					["g"] = {
+						ach(19390),	-- Memories of Teldrassil
 					},
 				}),
 			}),
@@ -468,8 +512,57 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						i(210203),	-- Wellspring Wristlets
 					},
 				}),
+				e(2563, {	-- Smolderon
+					["crs"] = { 200927 },	-- Smolderon <The Firelord>
+					["g"] = {
+						i(207167),	-- Ashes of the Embersoul
+						i(207166),	-- Cataclysmic Signet Brand
+						i(210204),	-- Fading Flame Wristbands
+						i(207156),	-- Fused Obsidian Sabatons
+						i(207799),	-- Incandescent Soulcleaver
+						i(207161),	-- Mantle of Blazing Sacrifice
+						i(207791),	-- Remnant Charglaive
+					},
+				}),
+				e(2565, {	-- Tindral Sageswift, Seer of the Flame
+					["crs"] = { 210601 },	-- Tindral Sageswift <Seer of Flame>
+					["g"] = {
+						i(207780),	-- Ashen Ranger's Longbow
+						i(207172),	-- Belor'relos, the Suncaller
+						i(207781),	-- Betrayer's Cinderblade
+						i(207795),	-- Eternal Kindler's Greatstaff
+						i(207163),	-- Eye of the Rising Flame
+						i(207137),	-- Flameseer's Winged Grasps
+						i(207157),	-- Smoldering Chevalier's Greatbelt
+						i(207134),	-- Tasseted Emberwalkers
+					},
+				}),
+				e(2519, {	-- Fyrakk the Blazing
+					["crs"] = { 204931 },	-- Fyrakk <The Blazing>
+					["g"] = {
+						i(208614),	-- Augury of the Primal Flame
+						i(207124),	-- Blooming Redeemer's Sash
+						i(207171),	-- Blossom of Amirdrassil
+						i(207145),	-- Boots of the Molten Hoard
+						i(207154),	-- Carapace of the Unbending Flame
+						i(207132),	-- Frenzied Incarnate Legwraps
+						i(207174),	-- Fyrakk's Tainted Rageheart
+						i(207786),	-- Gholak, the Final Conflagration
+						i(207793),	-- Rashon, the Immortal Blaze
+						i(207115),	-- Twisting Shadow Claws
+						i(207788),	-- Vakash, the Shadowed Inferno
+					},
+				}),
 			}),
 			d(HeroicPlus, {
+				n(QUESTS, {
+					q(78876, bubbleDownSelf({["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 } }, {	-- A Glowing Memento
+						["provider"] = { "i", 211375 },	-- Everglowing Ember
+						["g"] = {
+							i(210537),	-- Renewed Proto-Drake: Embodiment of Shadowflame (DM!)
+						},
+					})),
+				}),
 				e(2564, {	-- Gnarlroot
 					["crs"] = { 209333 },	-- Gnarlroot
 				}),
@@ -491,6 +584,19 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				}),
 				e(2556, {	-- Nymue, Weaver of the Cycle
 					["crs"] = { 206172 },	-- Nymue <Weaver of the Cycle>
+				}),
+				e(2563, {	-- Smolderon
+					["crs"] = { 200927 },	-- Smolderon <The Firelord>
+				}),
+				e(2565, {	-- Tindral Sageswift, Seer of the Flame
+					["crs"] = { 210601 },	-- Tindral Sageswift <Seer of Flame>
+				}),
+				e(2519, {	-- Fyrakk the Blazing
+					["crs"] = { 204931 },	-- Fyrakk <The Blazing>
+					["g"] = {
+						ach(19350, {["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 }}),	-- Ahead of the Curve: Fyrakk the Blazing
+						i(211375),	-- Everglowing Ember
+					},
 				}),
 			}),
 			d(HEROIC_RAID, {
@@ -586,6 +692,47 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						i(208615),	-- Nymue's Unraveling Spindle
 						i(207798),	-- Verdant Matrix Beacon
 						i(210203),	-- Wellspring Wristlets
+					},
+				}),
+				e(2563, {	-- Smolderon
+					["crs"] = { 200927 },	-- Smolderon <The Firelord>
+					["g"] = {
+						i(207167),	-- Ashes of the Embersoul
+						i(207166),	-- Cataclysmic Signet Brand
+						i(210204),	-- Fading Flame Wristbands
+						i(207156),	-- Fused Obsidian Sabatons
+						i(207799),	-- Incandescent Soulcleaver
+						i(207161),	-- Mantle of Blazing Sacrifice
+						i(207791),	-- Remnant Charglaive
+					},
+				}),
+				e(2565, {	-- Tindral Sageswift, Seer of the Flame
+					["crs"] = { 210601 },	-- Tindral Sageswift <Seer of Flame>
+					["g"] = {
+						i(207780),	-- Ashen Ranger's Longbow
+						i(207172),	-- Belor'relos, the Suncaller
+						i(207781),	-- Betrayer's Cinderblade
+						i(207795),	-- Eternal Kindler's Greatstaff
+						i(207163),	-- Eye of the Rising Flame
+						i(207137),	-- Flameseer's Winged Grasps
+						i(207157),	-- Smoldering Chevalier's Greatbelt
+						i(207134),	-- Tasseted Emberwalkers
+					},
+				}),
+				e(2519, {	-- Fyrakk the Blazing
+					["crs"] = { 204931 },	-- Fyrakk <The Blazing>
+					["g"] = {
+						i(208614),	-- Augury of the Primal Flame
+						i(207124),	-- Blooming Redeemer's Sash
+						i(207171),	-- Blossom of Amirdrassil
+						i(207145),	-- Boots of the Molten Hoard
+						i(207154),	-- Carapace of the Unbending Flame
+						i(207132),	-- Frenzied Incarnate Legwraps
+						i(207174),	-- Fyrakk's Tainted Rageheart
+						i(207786),	-- Gholak, the Final Conflagration
+						i(207793),	-- Rashon, the Immortal Blaze
+						i(207115),	-- Twisting Shadow Claws
+						i(207788),	-- Vakash, the Shadowed Inferno
 					},
 				}),
 			}),
@@ -690,6 +837,58 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						i(210203),	-- Wellspring Wristlets
 					},
 				}),
+				e(2563, {	-- Smolderon
+					["crs"] = { 200927 },	-- Smolderon <The Firelord>
+					["g"] = {
+						ach(19341),	-- Mythic: Smolderon
+						i(207167),	-- Ashes of the Embersoul
+						i(207166),	-- Cataclysmic Signet Brand
+						i(210204),	-- Fading Flame Wristbands
+						i(207156),	-- Fused Obsidian Sabatons
+						i(207799),	-- Incandescent Soulcleaver
+						i(207161),	-- Mantle of Blazing Sacrifice
+						i(207791),	-- Remnant Charglaive
+					},
+				}),
+				e(2565, {	-- Tindral Sageswift, Seer of the Flame
+					["crs"] = { 210601 },	-- Tindral Sageswift <Seer of Flame>
+					["g"] = {
+						ach(19342),	-- Mythic: Tindral Sageswift, Seer of the Flame
+						i(207780),	-- Ashen Ranger's Longbow
+						i(207172),	-- Belor'relos, the Suncaller
+						i(207781),	-- Betrayer's Cinderblade
+						i(207795),	-- Eternal Kindler's Greatstaff
+						i(207163),	-- Eye of the Rising Flame
+						i(207137),	-- Flameseer's Winged Grasps
+						i(207157),	-- Smoldering Chevalier's Greatbelt
+						i(207134),	-- Tasseted Emberwalkers
+					},
+				}),
+				e(2519, {	-- Fyrakk the Blazing
+					["crs"] = { 204931 },	-- Fyrakk <The Blazing>
+					["g"] = {
+						ach(19343, {	-- Mythic: Fyrakk the Blazing
+							title(530),	-- <Name> the Blazing
+						}),
+						ach(19392, bubbleDownSelf({["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 } }, {	-- Hall of Fame: Fyrakk the Blazing
+							title(528),	-- <Name>, Famed Slayer of Fyrakk
+						})),
+						ach(19351, {["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 }}),	-- Cutting Edge: Fyrakk the Blazing
+						ach(19389),	-- Mythic: Fyrakk the Blazing Guild Run
+						i(210061),	-- Anu'relos, Flame's Guidance (MOUNT!)
+						i(208614),	-- Augury of the Primal Flame
+						i(207124),	-- Blooming Redeemer's Sash
+						i(207171),	-- Blossom of Amirdrassil
+						i(207145),	-- Boots of the Molten Hoard
+						i(207154),	-- Carapace of the Unbending Flame
+						i(207132),	-- Frenzied Incarnate Legwraps
+						i(207174),	-- Fyrakk's Tainted Rageheart
+						i(207786),	-- Gholak, the Final Conflagration
+						i(207793),	-- Rashon, the Immortal Blaze
+						i(207115),	-- Twisting Shadow Claws
+						i(207788),	-- Vakash, the Shadowed Inferno
+					},
+				}),
 			}),
 		},
 	}),
@@ -700,4 +899,3 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDE
 
 	}),
 })));
---]]

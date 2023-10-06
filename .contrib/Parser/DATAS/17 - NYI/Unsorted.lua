@@ -583,7 +583,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(MOUNTS, {
 				i(210774),	-- Ochre Dreamtalon (MOUNT!)
-				i(210060),	-- Shadow Dusk Dreamsaber (MOUNT!)
 				i(210059),	-- Winter Night Dreamsaber (MOUNT!)
 			}),
 			filter(MISC, {
@@ -631,22 +630,6 @@ root(ROOTS.Unsorted, {
 			i(206476),	-- Tyr's Guard Equipment
 			i(206942),	-- Sealed Kaldorei Scroll
 			i(207025),	-- <Placeholder> Fyrakk Axe - Shadowflame
-			i(207115),	-- Cloth - HAND 1
-			i(207124),	-- Cloth - WAIST 2
-			i(207132),	-- Leather - LEGS 1
-			i(207134),	-- Leather - FEET 2
-			i(207137),	-- Mail - HAND 1
-			i(207145),	-- Mail - FEET 2
-			i(207154),	-- Plate - CHEST 1
-			i(207156),	-- Plate - FEET 2
-			i(207157),	-- Plate - WAIST 2
-			i(207161),	-- Accessory - CLOAK 2
-			i(207163),	-- Accessory - NECK 3
-			i(207166),	-- Infernal Signet Brand
-			i(207167),	-- Ashes of the Embersoul
-			i(207171),	-- Blossom of Amirdrassil
-			i(207172),	-- Belor'relos, the Sunstone
-			i(207174),	-- Tainted Rageheart
 			i(207176),	-- 10.2 Raid - Emerald Dream - Class Sets - Warrior - Armor - Generic - Cloak
 			i(207177),	-- 10.2 Raid - Emerald Dream - Class Sets - Warrior - Armor - Plate - Wrist
 			i(207179),	-- 10.2 Raid - Emerald Dream - Class Sets - Warrior - Armor - Plate - Waist
@@ -785,14 +768,6 @@ root(ROOTS.Unsorted, {
 			i(207480),	-- Venerated Smoldering Dreamseed
 			i(207481),	-- Zenith Smoldering Dreamseed
 			i(207632),	-- Dream-Attuned Crystal
-			i(207780),	-- Bow
-			i(207781),	-- 1H Dagger AGI 1
-			i(207786),	-- [PH] Fyrakk Cantrip 1H Axe STR
-			i(207788),	-- [PH] Fyrakk Cantrip 1H Mace INT
-			i(207791),	-- Warglaives
-			i(207793),	-- [PH] Fyrakk Cantrip 2H Staff AGI
-			i(207795),	-- 2H Staff INT 2
-			i(207799),	-- 2H Sword STR
 			i(208049),	-- Valarjar Trophy
 			i(208198),	-- Tyr's Guard Bulwark
 			i(208199),	-- Tabard of the Tyr's Guard
@@ -865,7 +840,6 @@ root(ROOTS.Unsorted, {
 			i(208571),	-- Artisan's Consortium Leaflet
 			i(208599),	-- Verdant Dream Seed
 			i(208606),	-- Somnagora's Heart
-			i(208614),	-- Augury of the Primal Flame
 			i(208619),	-- The Tragedy of Erinethria
 			i(208649),	-- On the Nature of the Dream
 			i(208690),	-- Roottwined Key
@@ -1003,7 +977,6 @@ root(ROOTS.Unsorted, {
 			i(210005),	-- 10.2 Monster - Weapon - Staff - 10.1.5 Weapon Staff - Staff_2H_Druid_C_02_Color1
 			i(210040),	-- Set Keystone Map: Throne of the Tides
 			i(210041),	-- Shipment of Goods
-			i(210061),	-- [PH] Mythic Raid Fire Owl
 			i(210065),	-- Sky-Captain's Formal Hat
 			i(210066),	-- Sky-Captain's Formal Boots
 			i(210067),	-- Sky-Captain's Formal Coat
@@ -1065,7 +1038,6 @@ root(ROOTS.Unsorted, {
 			i(210193),	-- Experimental Dreamcatcher
 			i(210198),	-- Depleted Battery
 			i(210203),	-- Mail - WRIST 2
-			i(210204),	-- Cloth - WRIST 2
 			i(210217),	-- Small Dreamy Bounty
 			i(210218),	-- Plump Dreamy Bounty
 			i(210219),	-- Gigantic Dreamy Bounty
@@ -1178,8 +1150,6 @@ root(ROOTS.Unsorted, {
 			i(156468),	-- Cloak of the Dormant Blaze
 			i(156469),	-- Pillar of Fortitude
 			i(156470),	-- Bloodcrush Cudgel
-			i(207172),	-- Belor'relos, the Suncaller
-			i(207174),	-- Fyrakk's Tainted Rageheart
 			i(207462),	-- Dreadful Verdurous Dreamheart
 			i(207463),	-- Mystic Verdurous Dreamheart
 			i(207464),	-- Venerated Verdurous Dreamheart
@@ -1200,9 +1170,7 @@ root(ROOTS.Unsorted, {
 			i(207479),	-- Mystic Smoldering Dreamheart
 			i(207480),	-- Venerated Smoldering Dreamheart
 			i(207481),	-- Zenith Smoldering Dreamheart
-			i(207791),	-- Remnant Charglaive
 			i(208983),	-- Yvelyn's Assistance
-			i(210061),	-- Reins of Anu'relos, Flame's Guidance
 			i(210434),	-- Visage of Ursol
 			i(210453),	-- Sample of Cinder Pollen
 			i(210756),	-- Gleaming Satchel of Drake's Dreaming Crests
@@ -1301,18 +1269,6 @@ root(ROOTS.Unsorted, {
 			i(207085),	-- Enchant Weapon: Dreaming Devotion
 			i(207086),	-- Enchant Weapon: Dreaming Devotion
 			i(207087),	-- Enchant Weapon: Dreaming Devotion
-			i(207115),	-- Twisting Shadow Claws
-			i(207124),	-- Blooming Redeemer's Sash
-			i(207132),	-- Frenzied Incarnate Legwraps
-			i(207134),	-- Tasseted Emberwalkers
-			i(207137),	-- Flameseer's Winged Grasps
-			i(207145),	-- Boots of the Molten Hoard
-			i(207154),	-- Carapace of the Unbending Flame
-			i(207156),	-- Fused Obsidian Sabatons
-			i(207157),	-- Smoldering Chevalier's Greatbelt
-			i(207161),	-- Mantle of Blazing Sacrifice
-			i(207163),	-- Eye of the Rising Flame
-			i(207166),	-- Cataclysmic Signet Brand
 			i(207176),	-- Molten Vanguard's Thermal Cape
 			i(207177),	-- Molten Vanguard's Manacles
 			i(207179),	-- Molten Vanguard's Chains
@@ -1430,13 +1386,6 @@ root(ROOTS.Unsorted, {
 			i(207291),	-- Wayward Chronomancer's Gloves
 			i(207292),	-- Wayward Chronomancer's Strapped Boots
 			i(207293),	-- Wayward Chronomancer's Patchwork
-			i(207780),	-- Ashen Ranger's Longbow
-			i(207781),	-- Betrayer's Cinderblade
-			i(207786),	-- Gholak, the Final Conflagration
-			i(207788),	-- Vakash, the Shadowed Inferno
-			i(207793),	-- Rashon, the Immortal Blaze
-			i(207795),	-- Eternal Kindler's Greatstaff
-			i(207799),	-- Incandescent Soulcleaver
 			i(208217),	-- Illusory Scroll of Youth - NOT USED
 			i(208250),	-- Verdant Combatant's Adamant Epaulets
 			i(208302),	-- Pattern: Verdant Combatant's Adamant Epaulets
@@ -1468,7 +1417,6 @@ root(ROOTS.Unsorted, {
 			i(208728),	-- Hornstrider Hunter's Preference
 			i(209902),	-- Spirited Stag's Epaulets
 			i(209995),	-- Overgrown Freyan Vambraces
-			i(210204),	-- Fading Flame Wristbands
 			i(210348),	-- Arctic Warden's Sabatons
 			i(210349),	-- Frigid Conservator's Gown
 			i(210350),	-- Arctic Warden's Chestplate
