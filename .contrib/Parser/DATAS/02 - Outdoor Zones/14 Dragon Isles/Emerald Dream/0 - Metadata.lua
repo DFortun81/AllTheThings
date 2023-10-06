@@ -6,5 +6,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 		["icon"] = 5390644,
 		["lore"] = "",
 		["timeline"] = { ADDED_10_2_0 },
+		["maps"] = {
+			2253,	-- DreamTree_Barrow_A
+			2254,	-- DreamTree_Barrow_B
+		},
 	}),
 }));
