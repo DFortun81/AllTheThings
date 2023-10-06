@@ -1790,6 +1790,152 @@ root(ROOTS.Unsorted, {
 			i(211267),	-- Classic Snowy Tabard
 			i(211268),	-- Blademaster's Thundering Greatsword
 			i(211270),	-- Pristine Core Leather
+			--
+			i(190800),	-- Gleaming Mail Tabard
+			i(190801),	-- Shadowy Mail Tabard
+			i(190802),	-- Drape of Endless Twilight
+			i(190804),	-- Wine-Soaked Hammer
+			i(201931),	-- Warcraft Rumble Toy: Maiev
+			i(202162),	-- Rumble Coin
+			i(202163),	-- Rumble Prize Box
+			i(202183),	-- Small Rumble Purse
+			i(202259),	-- Warcraft Rumble Toy: Maiev
+			i(202260),	-- Warcraft Rumble Toy: Maiev
+			i(202261),	-- Warcraft Rumble Toy: Sneed
+			i(202262),	-- Warcraft Rumble Toy: Sneed
+			i(202263),	-- Warcraft Rumble Toy: Sneed
+			i(202395),	-- Rumble Foil
+			i(202398),	-- Gold Rumble Foil
+			i(202851),	-- Warcraft Rumble Toy: Night Elf Huntress
+			i(202852),	-- Warcraft Rumble Toy: Night Elf Huntress
+			i(202853),	-- Warcraft Rumble Toy: Night Elf Huntress
+			i(202856),	-- Warcraft Rumble Toy: Stonehoof Tauren
+			i(202857),	-- Warcraft Rumble Toy: Stonehoof Tauren
+			i(202858),	-- Warcraft Rumble Toy: Stonehoof Tauren
+			i(202859),	-- Warcraft Rumble Toy: Undead Ghoul
+			i(202860),	-- Warcraft Rumble Toy: Undead Ghoul
+			i(202861),	-- Warcraft Rumble Toy: Undead Ghoul
+			i(202862),	-- Warcraft Rumble Toy: Murloc
+			i(202863),	-- Warcraft Rumble Toy: Murloc
+			i(202864),	-- Warcraft Rumble Toy: Murloc
+			i(202865),	-- Warcraft Rumble Toy: Whelp Egg
+			i(202866),	-- Warcraft Rumble Toy: Whelp Egg
+			i(202867),	-- Warcraft Rumble Toy: Whelp Egg
+			i(204186),	-- Greater Obsidian Trophy of Conquest
+			i(204187),	-- Obsidian Trophy of Conquest
+			i(204188),	-- Lesser Obsidian Trophy of Conquest
+			i(204189),	-- Greater Obsidian Crest of Honor
+			i(204190),	-- Obsidian Crest of Honor
+			i(204191),	-- Lesser Obsidian Crest of Honor
+			i(204346),	-- Arclight Rumble Foil Box
+			i(204348),	-- Balled-up Rumble Foil
+			i(204373),	-- Banged-up Rumble Foil
+			i(204731),	-- Warcraft Rumble Welcome Letter
+			i(205189),	-- Warcraft Rumble Welcome Letter
+			i(205190),	-- Warcraft Rumble Welcome Letter
+			i(206347),	-- Mannequin Charm
+			i(208564),	-- Lesser Verdant Trophy of Conquest
+			i(208565),	-- Verdant Trophy of Conquest
+			i(208566),	-- Greater Verdant Trophy of Conquest
+			i(208568),	-- Lesser Verdant Crest of Honor
+			i(208569),	-- Verdant Crest of Honor
+			i(208570),	-- Greater Verdant Crest of Honor
+			i(208757),	-- Ash's Recipes to Delight and Nourish Your Plant Pals
+			i(208850),	-- Lil' Maggz
+			i(209126),	-- Verdant Gladiator's Leather Robe
+			i(209127),	-- Verdant Gladiator's Leather Vestments
+			i(209875),	-- Bloodied Armor Scrap
+			i(210242),	-- Recipe: Slumbering Peacebloom Tea
+			i(210540),	-- Visage of the Devouring Flame
+			i(210541),	-- Mask of the Unbidden Grim
+			i(210542),	-- Insurgent Flame Warboots
+			i(210543),	-- Mantle of Slumbering Sands
+			i(210544),	-- Whispering Fanged Cord
+			i(210545),	-- Lost Scholar's Temporal Shoulderdials
+			i(210546),	-- Vengeful Bladebeak Girdle
+			i(210547),	-- Sentinel's Gilded Poulaines
+			i(210548),	-- Daydreamer's Glimmering Ring
+			i(210663),	-- Circlet of the Mother Tree
+			i(210957),	-- Rune of the Fire Druids
+			i(210958),	-- Crown of the Dryad Daughter
+			i(211096),	-- Gold-Plated Witchhunter's Carbine
+			i(211098),	-- Copper Scarab Bulwark
+			i(211099),	-- Gilded Scarab Bulwark
+			i(211182),	-- Hellbloom Flameshot
+			i(211186),	-- Hellbloom Branch
+			i(211211),	-- Hellbloom Garb
+			i(211212),	-- Hellbloom Slippers
+			i(211213),	-- Hellbloom Gloves
+			i(211215),	-- Hellbloom Pants
+			i(211216),	-- Hellbloom Cord
+			i(211217),	-- Hellbloom Bindings
+			i(211218),	-- Hellbloom Mantle
+			i(211219),	-- Hellbloom Boots
+			i(211220),	-- Hellbloom Handwraps
+			i(211222),	-- Hellbloom Breeches
+			i(211223),	-- Hellbloom Belt
+			i(211224),	-- Hellbloom Wraps
+			i(211225),	-- Hellbloom Jerkin
+			i(211226),	-- Hellbloom Shoulderguard
+			i(211228),	-- Hellbloom Cuirass
+			i(211229),	-- Hellbloom Sabatons
+			i(211230),	-- Hellbloom Gauntlets
+			i(211231),	-- Hellbloom Legguards
+			i(211232),	-- Hellbloom Spaulders
+			i(211233),	-- Hellbloom Clasp
+			i(211234),	-- Hellbloom Bracers
+			i(211235),	-- Hellbloom Chainmail
+			i(211236),	-- Hellbloom Greaves
+			i(211237),	-- Hellbloom Grips
+			i(211239),	-- Hellbloom Leggings
+			i(211240),	-- Hellbloom Epaulets
+			i(211241),	-- Hellbloom Cinch
+			i(211242),	-- Hellbloom Armguards
+			i(211280),	-- Feather of the Smoke Red Moon
+			i(211294),	-- Marauder King's Body Carver
+			i(211295),	-- Wrathful Crusader's Helm
+			i(211298),	-- Whispering Temple Blade
+			i(211299),	-- Gleaming Whispering Temple Blade
+			i(211300),	-- Arsenal: Whispering Temple Blades
+			i(211302),	-- Slumberfruit
+			i(211303),	-- Dryad's Supply Pouch
+			i(211314),	-- Cinder of Companionship
+			i(211353),	-- Roasted Ram Special
+			i(211366),	-- Drops of Moon Water
+			i(211369),	-- Charred Staff of the Overseer
+			i(211370),	-- Branch of Gracus
+			i(211371),	-- Dryad-Keeper Credentials
+			i(211372),	-- Q'onzu's Consolation Prize
+			i(211373),	-- Bag of Many Wonders
+			i(211374),	-- Tangled Yarn of Secrets
+			i(211375),	-- Everglowing Ember
+			i(211376),	-- Seedbloom
+			i(211377),	-- Tangled Yarn of Secrets
+			i(211378),	-- Tangled Yarn of Secrets
+			i(211379),	-- Tangled Yarn of Secrets
+			i(211380),	-- Tangled Yarn of Secrets
+			i(211381),	-- Grotto Netherwing Drake: Violet Scales
+			i(211389),	-- Cache of Overblooming Treasures
+			i(211394),	-- Harvested Dreamseed Cache
+			i(211395),	-- Ashphodel Research Notes
+			i(211396),	-- Attuned Glowspore Grip
+			i(211397),	-- Attuned Rune of Shadowbinding
+			i(211398),	-- Attuned Sophic Vellum
+			i(211399),	-- Technique: Glyph of the Lunar Chameleon
+			i(211400),	-- Glyph of the Lunar Chameleon
+			i(211401),	-- Secret Spinner's Miter
+			i(211402),	-- Coif of the Court Spider
+			i(211403),	-- Soulspun Casque
+			i(211404),	-- Spymaster's Wrap
+			i(211405),	-- Loa Betrayer's Vestments
+			i(211406),	-- Ageless Dewdrops
+			i(211410),	-- Bloomed Wildling Cache
+			i(211411),	-- Sprouting Dreamtrove
+			i(211413),	-- Budding Dreamtrove
+			i(211414),	-- Blossoming Dreamtrove
+			i(211416),	-- Dream Wardens Insignia
+			i(211417),	-- Dream Wardens Insignia
+			i(211418),	-- Q'onzu Edict of Change
 		})),
 		tier(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
 			filter(TOYS, {
