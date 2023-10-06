@@ -19,15 +19,11 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(19337),	-- Mythic: Volcoross
-				ach(19338),	-- Mythic: Council of Dreams
 				ach(19339),	-- Mythic: Larodar, Keeper of the Flame
 				ach(19340),	-- Mythic: Nymue, Weaver of the Cycle
 				ach(19341),	-- Mythic: Smolderon
 				ach(19342),	-- Mythic: Tindral Sageswift, Seer of the Flame
 				ach(19343),	-- Mythic: Fyrakk the Blazing
-				ach(19345),	-- Molten Incursion
-				ach(19346),	-- The Viridian Weave
 				ach(19347),	-- Fate of Amirdrassil
 
 				ach(19344, {	-- Incarnate's Wake
@@ -41,9 +37,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						["_encounter"] = { 2530, AnyDifficultyID },
 					}),
 				}),
-				ach(18164, {	-- Fury of Giants
-					crit(1, { -- Assault of the Zaqali
-						["_encounter"] = { 2524, AnyDifficultyID },
+				ach(19345, {	-- Molten Incursion
+					crit(1, { -- Volcoross
+						["_encounter"] = { 2557, AnyDifficultyID },
 					}),
 					crit(2, { -- Rashok, the Elder
 						["_encounter"] = { 2525, AnyDifficultyID },
@@ -52,9 +48,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						["_encounter"] = { 2532, AnyDifficultyID },
 					}),
 				}),
-				ach(18165, {	-- Neltharion's Shadow
-					crit(1, { -- Magmorax
-						["_encounter"] = { 2527, AnyDifficultyID },
+				ach(19346, {	-- The Viridian Weave
+					crit(1, { -- Council of Dreams
+						["_encounter"] = { 2555, AnyDifficultyID },
 					}),
 					crit(2, { -- Echo of Neltharion
 						["_encounter"] = { 2523, AnyDifficultyID },
@@ -72,11 +68,11 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					crit(2, { -- Igira the Cruel
 						["_encounter"] = { 2554, AnyDifficultyID },
 					}),
-					crit(3, { -- The Forgotten Experiments
-						["_encounter"] = { 2530, AnyDifficultyID },
+					crit(3, { -- Volcoross
+						["_encounter"] = { 2557, AnyDifficultyID },
 					}),
-					crit(4, { -- Assault of the Zaqali
-						["_encounter"] = { 2524, AnyDifficultyID },
+					crit(4, { -- Council of Dreams
+						["_encounter"] = { 2555, AnyDifficultyID },
 					}),
 					crit(5, { -- Rashok, the Elder
 						["_encounter"] = { 2525, AnyDifficultyID },
@@ -101,11 +97,11 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					crit(2, { -- Igira the Cruel
 						["_encounter"] = { 2554, HeroicPlusID },
 					}),
-					crit(3, { -- The Forgotten Experiments
-						["_encounter"] = { 2530, HeroicPlusID },
+					crit(3, { -- Volcoross
+						["_encounter"] = { 2557, HeroicPlusID },
 					}),
-					crit(4, { -- Assault of the Zaqali
-						["_encounter"] = { 2524, HeroicPlusID },
+					crit(4, { -- Council of Dreams
+						["_encounter"] = { 2555, HeroicPlusID },
 					}),
 					crit(5, { -- Rashok, the Elder
 						["_encounter"] = { 2525, HeroicPlusID },
@@ -142,8 +138,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					["sym"] = {{"meta_achievement",
 						19322,	-- Meaner Pastures
 						19320,	-- Cruelty Free
-						18173,	-- Tabula Rasa
-						18228,	-- Are You Even Trying?
+						19321,	-- Swog Champion
+						19193,	-- Ducks In A Row
 						18230,	-- Whac-A-Swog
 						18193,	-- Eggscellent Eggsecution
 						18172,	-- Escar-Go-Go-Go
@@ -275,6 +271,18 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				e(2557, {	-- Volcoross
 					["crs"] = { 208478 },	-- Volcoross
 					["g"] = {
+						i(207175),	-- Coiled Serpent Idol
+						i(207130),	-- Flamewaker's Grips
+						i(207146),	-- Jeweled Sash of the Viper
+						i(207148),	-- Lavaforged Sollerets
+						i(207122),	-- Lost Scholar's Belted Treads
+						i(207785),	-- Magmatic Volcannon
+						i(210214),	-- Ouroboreal Necklet
+						i(207128),	-- Primordial Serpent's Bindings
+						i(207141),	-- Snake Eater's Cowl
+						i(207121),	-- Vesture of the Smoldering Serpent
+						i(207152),	-- Volcanic Spelunker's Vents
+						i(207789),	-- Volcoross's Barbed Fang
 					},
 				}),
 				e(2555, {	-- Council of Dreams
@@ -284,7 +292,18 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						208363,	-- Urctos <Council of Dreams>
 					},
 					["g"] = {
-						i(210169),	-- Pattern: Verdant Conduit (RECIPE!)
+						i(207138),	-- Aerwynn's Ritual Sarong
+						i(207139),	-- Cleats of the Savage Claw
+						i(207151),	-- Emerald Guardian's Casque
+						i(207173),	-- Gift of Ursine Vengeance
+						i(207168),	-- Pip's Emerald Friendship Badge
+						i(207782),	-- Sickle of the White Stag
+						i(207127),	-- Strigine Epaulets
+						i(207784),	-- Thorncaller Claw
+						i(207796),	-- Trickster's Captivating Chime
+						i(207119),	-- Urctos's Hibernal Dial
+						i(210206),	-- Verdant Sanctuary Bands
+						i(210205),	-- Vigilant Protector's Bracers
 					},
 				}),
 				e(2553, {	-- Larodar, Keeper of the Flame
@@ -319,16 +338,39 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 			d(NormalPlus, {
 				e(2564, {	-- Gnarlroot
 					["crs"] = { 209333 },	-- Gnarlroot
+					["g"] = {
+						ach(19322),	-- Meaner Pastures
+					},
 				}),
 				e(2554, {	-- Igira the Cruel
 					["crs"] = { 206689 },	-- Igira the Cruel <Zaqali Elder>
+					["g"] = {
+						ach(19320),	-- Cruelty Free
+					},
+				}),
+				e(2557, {	-- Volcoross
+					["crs"] = { 208478 },	-- Volcoross
+					["g"] = {
+						ach(19321),	-- Swog Champion
+					},
+				}),
+				e(2555, {	-- Council of Dreams
+					["crs"] = {
+						208365,	-- Aerwynn <Council of Dreams>
+						208956,	-- Pip <Council of Dreams>
+						208363,	-- Urctos <Council of Dreams>
+					},
+					["g"] = {
+						ach(19193, {	-- Ducks In A Row
+							i(210347),	-- Sergeant Quackers (PET!)
+						}),
+					},
 				}),
 			}),
 			d(NORMAL_RAID, {
 				e(2564, {	-- Gnarlroot
 					["crs"] = { 209333 },	-- Gnarlroot
 					["g"] = {
-						ach(19322),	-- Meaner Pastures
 						i(207142),	-- Ancient Haubark
 						i(207120),	-- Anguished Restraints
 						i(207169),	-- Branch of the Tormented Ancient
@@ -346,7 +388,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				e(2554, {	-- Igira the Cruel
 					["crs"] = { 206689 },	-- Igira the Cruel <Zaqali Elder>
 					["g"] = {
-						ach(19320),	-- Cruelty Free
 						i(207150),	-- Agonizing Manacles
 						i(207165),	-- Bandolier of Twisted Blades
 						i(207131),	-- Bloody Dragonhide Belt
@@ -357,6 +398,44 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						i(207162),	-- Signet of the Last Elder
 					},
 				}),
+				e(2557, {	-- Volcoross
+					["crs"] = { 208478 },	-- Volcoross
+					["g"] = {
+						i(207175),	-- Coiled Serpent Idol
+						i(207130),	-- Flamewaker's Grips
+						i(207146),	-- Jeweled Sash of the Viper
+						i(207148),	-- Lavaforged Sollerets
+						i(207122),	-- Lost Scholar's Belted Treads
+						i(207785),	-- Magmatic Volcannon
+						i(210214),	-- Ouroboreal Necklet
+						i(207128),	-- Primordial Serpent's Bindings
+						i(207141),	-- Snake Eater's Cowl
+						i(207121),	-- Vesture of the Smoldering Serpent
+						i(207152),	-- Volcanic Spelunker's Vents
+						i(207789),	-- Volcoross's Barbed Fang
+					},
+				}),
+				e(2555, {	-- Council of Dreams
+					["crs"] = {
+						208365,	-- Aerwynn <Council of Dreams>
+						208956,	-- Pip <Council of Dreams>
+						208363,	-- Urctos <Council of Dreams>
+					},
+					["g"] = {
+						i(207138),	-- Aerwynn's Ritual Sarong
+						i(207139),	-- Cleats of the Savage Claw
+						i(207151),	-- Emerald Guardian's Casque
+						i(207173),	-- Gift of Ursine Vengeance
+						i(207168),	-- Pip's Emerald Friendship Badge
+						i(207782),	-- Sickle of the White Stag
+						i(207127),	-- Strigine Epaulets
+						i(207784),	-- Thorncaller Claw
+						i(207796),	-- Trickster's Captivating Chime
+						i(207119),	-- Urctos's Hibernal Dial
+						i(210206),	-- Verdant Sanctuary Bands
+						i(210205),	-- Vigilant Protector's Bracers
+					},
+				}),
 			}),
 			d(HeroicPlus, {
 				e(2564, {	-- Gnarlroot
@@ -364,6 +443,16 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				}),
 				e(2554, {	-- Igira the Cruel
 					["crs"] = { 206689 },	-- Igira the Cruel <Zaqali Elder>
+				}),
+				e(2557, {	-- Volcoross
+					["crs"] = { 208478 },	-- Volcoross
+				}),
+				e(2555, {	-- Council of Dreams
+					["crs"] = {
+						208365,	-- Aerwynn <Council of Dreams>
+						208956,	-- Pip <Council of Dreams>
+						208363,	-- Urctos <Council of Dreams>
+					},
 				}),
 			}),
 			d(HEROIC_RAID, {
@@ -395,6 +484,44 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						i(207118),	-- Elder's Volcanic Wrap
 						i(207787),	-- Igira's Flaying Hatchet
 						i(207162),	-- Signet of the Last Elder
+					},
+				}),
+				e(2557, {	-- Volcoross
+					["crs"] = { 208478 },	-- Volcoross
+					["g"] = {
+						i(207175),	-- Coiled Serpent Idol
+						i(207130),	-- Flamewaker's Grips
+						i(207146),	-- Jeweled Sash of the Viper
+						i(207148),	-- Lavaforged Sollerets
+						i(207122),	-- Lost Scholar's Belted Treads
+						i(207785),	-- Magmatic Volcannon
+						i(210214),	-- Ouroboreal Necklet
+						i(207128),	-- Primordial Serpent's Bindings
+						i(207141),	-- Snake Eater's Cowl
+						i(207121),	-- Vesture of the Smoldering Serpent
+						i(207152),	-- Volcanic Spelunker's Vents
+						i(207789),	-- Volcoross's Barbed Fang
+					},
+				}),
+				e(2555, {	-- Council of Dreams
+					["crs"] = {
+						208365,	-- Aerwynn <Council of Dreams>
+						208956,	-- Pip <Council of Dreams>
+						208363,	-- Urctos <Council of Dreams>
+					},
+					["g"] = {
+						i(207138),	-- Aerwynn's Ritual Sarong
+						i(207139),	-- Cleats of the Savage Claw
+						i(207151),	-- Emerald Guardian's Casque
+						i(207173),	-- Gift of Ursine Vengeance
+						i(207168),	-- Pip's Emerald Friendship Badge
+						i(207782),	-- Sickle of the White Stag
+						i(207127),	-- Strigine Epaulets
+						i(207784),	-- Thorncaller Claw
+						i(207796),	-- Trickster's Captivating Chime
+						i(207119),	-- Urctos's Hibernal Dial
+						i(210206),	-- Verdant Sanctuary Bands
+						i(210205),	-- Vigilant Protector's Bracers
 					},
 				}),
 			}),
@@ -429,6 +556,46 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						i(207118),	-- Elder's Volcanic Wrap
 						i(207787),	-- Igira's Flaying Hatchet
 						i(207162),	-- Signet of the Last Elder
+					},
+				}),
+				e(2557, {	-- Volcoross
+					["crs"] = { 208478 },	-- Volcoross
+					["g"] = {
+						ach(19337),	-- Mythic: Volcoross
+						i(207175),	-- Coiled Serpent Idol
+						i(207130),	-- Flamewaker's Grips
+						i(207146),	-- Jeweled Sash of the Viper
+						i(207148),	-- Lavaforged Sollerets
+						i(207122),	-- Lost Scholar's Belted Treads
+						i(207785),	-- Magmatic Volcannon
+						i(210214),	-- Ouroboreal Necklet
+						i(207128),	-- Primordial Serpent's Bindings
+						i(207141),	-- Snake Eater's Cowl
+						i(207121),	-- Vesture of the Smoldering Serpent
+						i(207152),	-- Volcanic Spelunker's Vents
+						i(207789),	-- Volcoross's Barbed Fang
+					},
+				}),
+				e(2555, {	-- Council of Dreams
+					["crs"] = {
+						208365,	-- Aerwynn <Council of Dreams>
+						208956,	-- Pip <Council of Dreams>
+						208363,	-- Urctos <Council of Dreams>
+					},
+					["g"] = {
+						ach(19338),	-- Mythic: Council of Dreams
+						i(207138),	-- Aerwynn's Ritual Sarong
+						i(207139),	-- Cleats of the Savage Claw
+						i(207151),	-- Emerald Guardian's Casque
+						i(207173),	-- Gift of Ursine Vengeance
+						i(207168),	-- Pip's Emerald Friendship Badge
+						i(207782),	-- Sickle of the White Stag
+						i(207127),	-- Strigine Epaulets
+						i(207784),	-- Thorncaller Claw
+						i(207796),	-- Trickster's Captivating Chime
+						i(207119),	-- Urctos's Hibernal Dial
+						i(210206),	-- Verdant Sanctuary Bands
+						i(210205),	-- Vigilant Protector's Bracers
 					},
 				}),
 			}),
