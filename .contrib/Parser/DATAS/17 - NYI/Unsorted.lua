@@ -632,27 +632,18 @@ root(ROOTS.Unsorted, {
 			i(206942),	-- Sealed Kaldorei Scroll
 			i(207025),	-- <Placeholder> Fyrakk Axe - Shadowflame
 			i(207115),	-- Cloth - HAND 1
-			i(207116),	-- Cloth - HEAD 1
-			i(207123),	-- Cloth - FEET 2
 			i(207124),	-- Cloth - WAIST 2
-			i(207129),	-- Leather - CHEST 1
 			i(207132),	-- Leather - LEGS 1
 			i(207134),	-- Leather - FEET 2
-			i(207135),	-- Leather - WAIST 2
 			i(207137),	-- Mail - HAND 1
-			i(207143),	-- Mail - WRIST 1
 			i(207145),	-- Mail - FEET 2
-			i(207149),	-- Plate - WAIST 1
 			i(207154),	-- Plate - CHEST 1
-			i(207155),	-- Plate - HAND 1
 			i(207156),	-- Plate - FEET 2
 			i(207157),	-- Plate - WAIST 2
-			i(207159),	-- Accessory - FINGER 1
 			i(207161),	-- Accessory - CLOAK 2
 			i(207163),	-- Accessory - NECK 3
 			i(207166),	-- Infernal Signet Brand
 			i(207167),	-- Ashes of the Embersoul
-			i(207170),	-- Smoldering Treant Seedling
 			i(207171),	-- Blossom of Amirdrassil
 			i(207172),	-- Belor'relos, the Sunstone
 			i(207174),	-- Tainted Rageheart
@@ -798,12 +789,9 @@ root(ROOTS.Unsorted, {
 			i(207781),	-- 1H Dagger AGI 1
 			i(207786),	-- [PH] Fyrakk Cantrip 1H Axe STR
 			i(207788),	-- [PH] Fyrakk Cantrip 1H Mace INT
-			i(207790),	-- Sword INT - 1
 			i(207791),	-- Warglaives
-			i(207792),	-- 2H Polearm AGI
 			i(207793),	-- [PH] Fyrakk Cantrip 2H Staff AGI
 			i(207795),	-- 2H Staff INT 2
-			i(207798),	-- Weapon - Shield 2
 			i(207799),	-- 2H Sword STR
 			i(208049),	-- Valarjar Trophy
 			i(208198),	-- Tyr's Guard Bulwark
@@ -865,7 +853,6 @@ root(ROOTS.Unsorted, {
 			i(208432),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leather - WAIST 3
 			i(208434),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail - FEET 3
 			i(208442),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Accessory - FINGER 3
-			i(208445),	-- Accessory - NECK 2
 			i(208447),	-- Purifying Tangle
 			i(208545),	-- Kindled Bonfire
 			i(208564),	-- Lesser Trophy of Conquest
@@ -879,8 +866,6 @@ root(ROOTS.Unsorted, {
 			i(208599),	-- Verdant Dream Seed
 			i(208606),	-- Somnagora's Heart
 			i(208614),	-- Augury of the Primal Flame
-			i(208615),	-- Nymue's Vengeful Spindle
-			i(208616),	-- Dreambinder, Loom of the Great Cycle
 			i(208619),	-- The Tragedy of Erinethria
 			i(208649),	-- On the Nature of the Dream
 			i(208690),	-- Roottwined Key
@@ -1193,15 +1178,6 @@ root(ROOTS.Unsorted, {
 			i(156468),	-- Cloak of the Dormant Blaze
 			i(156469),	-- Pillar of Fortitude
 			i(156470),	-- Bloodcrush Cudgel
-			i(207116),	-- Lost Scholar's Timely Hat
-			i(207123),	-- Lifewoven Slippers
-			i(207129),	-- Robes of the Ashen Grove
-			i(207135),	-- Eternal Sentinel's Cord
-			i(207143),	-- Twisted Flamecuffs
-			i(207149),	-- Phlegethic Girdle
-			i(207155),	-- Eldermoss Gauntlets
-			i(207159),	-- Band of Burning Thorns
-			i(207170),	-- Smoldering Seedling
 			i(207172),	-- Belor'relos, the Suncaller
 			i(207174),	-- Fyrakk's Tainted Rageheart
 			i(207462),	-- Dreadful Verdurous Dreamheart
@@ -1224,15 +1200,9 @@ root(ROOTS.Unsorted, {
 			i(207479),	-- Mystic Smoldering Dreamheart
 			i(207480),	-- Venerated Smoldering Dreamheart
 			i(207481),	-- Zenith Smoldering Dreamheart
-			i(207790),	-- Larodar's Moonblade
 			i(207791),	-- Remnant Charglaive
-			i(207792),	-- Scythe of the Fallen Keeper
-			i(207798),	-- Verdant Matrix Beacon
-			i(208445),	-- Amulet of Eonar's Chosen
-			i(208615),	-- Nymue's Unraveling Spindle
 			i(208983),	-- Yvelyn's Assistance
 			i(210061),	-- Reins of Anu'relos, Flame's Guidance
-			i(210203),	-- Wellspring Wristlet
 			i(210434),	-- Visage of Ursol
 			i(210453),	-- Sample of Cinder Pollen
 			i(210756),	-- Gleaming Satchel of Drake's Dreaming Crests
@@ -1498,7 +1468,6 @@ root(ROOTS.Unsorted, {
 			i(208728),	-- Hornstrider Hunter's Preference
 			i(209902),	-- Spirited Stag's Epaulets
 			i(209995),	-- Overgrown Freyan Vambraces
-			i(210203),	-- Wellspring Wristlets
 			i(210204),	-- Fading Flame Wristbands
 			i(210348),	-- Arctic Warden's Sabatons
 			i(210349),	-- Frigid Conservator's Gown

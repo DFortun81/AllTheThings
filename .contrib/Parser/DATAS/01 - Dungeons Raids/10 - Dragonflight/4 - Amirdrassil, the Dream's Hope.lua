@@ -19,8 +19,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(19339),	-- Mythic: Larodar, Keeper of the Flame
-				ach(19340),	-- Mythic: Nymue, Weaver of the Cycle
 				ach(19341),	-- Mythic: Smolderon
 				ach(19342),	-- Mythic: Tindral Sageswift, Seer of the Flame
 				ach(19343),	-- Mythic: Fyrakk the Blazing
@@ -41,19 +39,16 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					crit(1, { -- Volcoross
 						["_encounter"] = { 2557, AnyDifficultyID },
 					}),
-					crit(2, { -- Rashok, the Elder
-						["_encounter"] = { 2525, AnyDifficultyID },
-					}),
-					crit(3, { -- The Vigilant Steward, Zskarn
-						["_encounter"] = { 2532, AnyDifficultyID },
+					crit(2, { -- Larodar, Keeper of the Flame
+						["_encounter"] = { 2553, AnyDifficultyID },
 					}),
 				}),
 				ach(19346, {	-- The Viridian Weave
 					crit(1, { -- Council of Dreams
 						["_encounter"] = { 2555, AnyDifficultyID },
 					}),
-					crit(2, { -- Echo of Neltharion
-						["_encounter"] = { 2523, AnyDifficultyID },
+					crit(2, { -- Nymue, Weaver of the Cycle
+						["_encounter"] = { 2556, AnyDifficultyID },
 					}),
 				}),
 				ach(18167, {	-- Edge of the Void
@@ -71,14 +66,14 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					crit(3, { -- Volcoross
 						["_encounter"] = { 2557, AnyDifficultyID },
 					}),
-					crit(4, { -- Council of Dreams
+					crit(4, { -- Larodar, Keeper of the Flame
+						["_encounter"] = { 2553, AnyDifficultyID },
+					}),
+					crit(5, { -- Council of Dreams
 						["_encounter"] = { 2555, AnyDifficultyID },
 					}),
-					crit(5, { -- Rashok, the Elder
-						["_encounter"] = { 2525, AnyDifficultyID },
-					}),
-					crit(6, { -- The Vigilant Steward, Zskarn
-						["_encounter"] = { 2532, AnyDifficultyID },
+					crit(6, { -- Nymue, Weaver of the Cycle
+						["_encounter"] = { 2556, AnyDifficultyID },
 					}),
 					crit(7, { -- Magmorax
 						["_encounter"] = { 2527, AnyDifficultyID },
@@ -100,14 +95,14 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					crit(3, { -- Volcoross
 						["_encounter"] = { 2557, HeroicPlusID },
 					}),
-					crit(4, { -- Council of Dreams
+					crit(4, { -- Larodar, Keeper of the Flame
+						["_encounter"] = { 2553, HeroicPlusID },
+					}),
+					crit(5, { -- Council of Dreams
 						["_encounter"] = { 2555, HeroicPlusID },
 					}),
-					crit(5, { -- Rashok, the Elder
-						["_encounter"] = { 2525, HeroicPlusID },
-					}),
-					crit(6, { -- The Vigilant Steward, Zskarn
-						["_encounter"] = { 2532, HeroicPlusID },
+					crit(6, { -- Nymue, Weaver of the Cycle
+						["_encounter"] = { 2556, HeroicPlusID },
 					}),
 					crit(7, { -- Magmorax
 						["_encounter"] = { 2527, HeroicPlusID },
@@ -140,8 +135,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						19320,	-- Cruelty Free
 						19321,	-- Swog Champion
 						19193,	-- Ducks In A Row
-						18230,	-- Whac-A-Swog
-						18193,	-- Eggscellent Eggsecution
+						19089,	-- Don't Let the Doe Hit You On The Way Out
+						19394,	-- A Dream Within a Dream
 						18172,	-- Escar-Go-Go-Go
 						18149,	-- Objects in Transit May Shatter
 						17877,	-- We'll Never See That Again, Surely
@@ -191,11 +186,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						}),
 					},
 				}),
-				e(2557, {	-- Volcoross
-					["crs"] = { 208478 },	-- Volcoross
-					["g"] = {
-					},
-				}),
 				e(2555, {	-- Council of Dreams
 					["crs"] = {
 						208365,	-- Aerwynn <Council of Dreams>
@@ -218,20 +208,10 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						i(210670),	-- Pattern: Verdant Tether (RECIPE!)
 					},
 				}),
-				e(2563, {	-- Smolderon
-					["crs"] = { 200927 },	-- Smolderon <The Firelord>
-					["g"] = {
-					},
-				}),
 				e(2565, {	-- Tindral Sageswift, Seer of the Flame
 					["crs"] = { 210601 },	-- Tindral Sageswift <Seer of Flame>
 					["g"] = {
 						i(210644),	-- Plans: Flourishing Dream Helm (RECIPE!)
-					},
-				}),
-				e(2519, {	-- Fyrakk the Blazing
-					["crs"] = { 204931 },	-- Fyrakk <The Blazing>
-					["g"] = {
 					},
 				}),
 			}),
@@ -309,13 +289,27 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				e(2553, {	-- Larodar, Keeper of the Flame
 					["crs"] = { 208445 },	-- Larodar, Keeper of the Flame
 					["g"] = {
-						i(210175),	-- Formula: Enchant Weapon - Dreaming Devotion (RECIPE!)
+						i(207159),	-- Band of Burning Thorns
+						i(207790),	-- Larodar's Moonblade
+						i(207116),	-- Lost Scholar's Timely Hat
+						i(207149),	-- Phlegethic Girdle
+						i(207129),	-- Robes of the Ashen Grove
+						i(207792),	-- Scythe of the Fallen Keeper
+						i(207170),	-- Smoldering Seedling
+						i(207143),	-- Twisted Flamecuffs
 					},
 				}),
 				e(2556, {	-- Nymue, Weaver of the Cycle
 					["crs"] = { 206172 },	-- Nymue <Weaver of the Cycle>
 					["g"] = {
-						i(210670),	-- Pattern: Verdant Tether (RECIPE!)
+						i(208445),	-- Amulet of Eonar's Chosen
+						i(208616),	-- Dreambinder, Loom of the Great Cycle
+						i(207155),	-- Eldermoss Gauntlets
+						i(207135),	-- Eternal Sentinel's Cord
+						i(207123),	-- Lifewoven Slippers
+						i(208615),	-- Nymue's Unraveling Spindle
+						i(207798),	-- Verdant Matrix Beacon
+						i(210203),	-- Wellspring Wristlets
 					},
 				}),
 				e(2563, {	-- Smolderon
@@ -364,6 +358,18 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						ach(19193, {	-- Ducks In A Row
 							i(210347),	-- Sergeant Quackers (PET!)
 						}),
+					},
+				}),
+				e(2553, {	-- Larodar, Keeper of the Flame
+					["crs"] = { 208445 },	-- Larodar, Keeper of the Flame
+					["g"] = {
+						ach(19089),	-- Don't Let the Doe Hit You On The Way Out
+					},
+				}),
+				e(2556, {	-- Nymue, Weaver of the Cycle
+					["crs"] = { 206172 },	-- Nymue <Weaver of the Cycle>
+					["g"] = {
+						ach(19394),	-- A Dream Within a Dream
 					},
 				}),
 			}),
@@ -436,6 +442,32 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						i(210205),	-- Vigilant Protector's Bracers
 					},
 				}),
+				e(2553, {	-- Larodar, Keeper of the Flame
+					["crs"] = { 208445 },	-- Larodar, Keeper of the Flame
+					["g"] = {
+						i(207159),	-- Band of Burning Thorns
+						i(207790),	-- Larodar's Moonblade
+						i(207116),	-- Lost Scholar's Timely Hat
+						i(207149),	-- Phlegethic Girdle
+						i(207129),	-- Robes of the Ashen Grove
+						i(207792),	-- Scythe of the Fallen Keeper
+						i(207170),	-- Smoldering Seedling
+						i(207143),	-- Twisted Flamecuffs
+					},
+				}),
+				e(2556, {	-- Nymue, Weaver of the Cycle
+					["crs"] = { 206172 },	-- Nymue <Weaver of the Cycle>
+					["g"] = {
+						i(208445),	-- Amulet of Eonar's Chosen
+						i(208616),	-- Dreambinder, Loom of the Great Cycle
+						i(207155),	-- Eldermoss Gauntlets
+						i(207135),	-- Eternal Sentinel's Cord
+						i(207123),	-- Lifewoven Slippers
+						i(208615),	-- Nymue's Unraveling Spindle
+						i(207798),	-- Verdant Matrix Beacon
+						i(210203),	-- Wellspring Wristlets
+					},
+				}),
 			}),
 			d(HeroicPlus, {
 				e(2564, {	-- Gnarlroot
@@ -453,6 +485,12 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						208956,	-- Pip <Council of Dreams>
 						208363,	-- Urctos <Council of Dreams>
 					},
+				}),
+				e(2553, {	-- Larodar, Keeper of the Flame
+					["crs"] = { 208445 },	-- Larodar, Keeper of the Flame
+				}),
+				e(2556, {	-- Nymue, Weaver of the Cycle
+					["crs"] = { 206172 },	-- Nymue <Weaver of the Cycle>
 				}),
 			}),
 			d(HEROIC_RAID, {
@@ -522,6 +560,32 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						i(207119),	-- Urctos's Hibernal Dial
 						i(210206),	-- Verdant Sanctuary Bands
 						i(210205),	-- Vigilant Protector's Bracers
+					},
+				}),
+				e(2553, {	-- Larodar, Keeper of the Flame
+					["crs"] = { 208445 },	-- Larodar, Keeper of the Flame
+					["g"] = {
+						i(207159),	-- Band of Burning Thorns
+						i(207790),	-- Larodar's Moonblade
+						i(207116),	-- Lost Scholar's Timely Hat
+						i(207149),	-- Phlegethic Girdle
+						i(207129),	-- Robes of the Ashen Grove
+						i(207792),	-- Scythe of the Fallen Keeper
+						i(207170),	-- Smoldering Seedling
+						i(207143),	-- Twisted Flamecuffs
+					},
+				}),
+				e(2556, {	-- Nymue, Weaver of the Cycle
+					["crs"] = { 206172 },	-- Nymue <Weaver of the Cycle>
+					["g"] = {
+						i(208445),	-- Amulet of Eonar's Chosen
+						i(208616),	-- Dreambinder, Loom of the Great Cycle
+						i(207155),	-- Eldermoss Gauntlets
+						i(207135),	-- Eternal Sentinel's Cord
+						i(207123),	-- Lifewoven Slippers
+						i(208615),	-- Nymue's Unraveling Spindle
+						i(207798),	-- Verdant Matrix Beacon
+						i(210203),	-- Wellspring Wristlets
 					},
 				}),
 			}),
@@ -596,6 +660,34 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						i(207119),	-- Urctos's Hibernal Dial
 						i(210206),	-- Verdant Sanctuary Bands
 						i(210205),	-- Vigilant Protector's Bracers
+					},
+				}),
+				e(2553, {	-- Larodar, Keeper of the Flame
+					["crs"] = { 208445 },	-- Larodar, Keeper of the Flame
+					["g"] = {
+						ach(19339),	-- Mythic: Larodar, Keeper of the Flame
+						i(207159),	-- Band of Burning Thorns
+						i(207790),	-- Larodar's Moonblade
+						i(207116),	-- Lost Scholar's Timely Hat
+						i(207149),	-- Phlegethic Girdle
+						i(207129),	-- Robes of the Ashen Grove
+						i(207792),	-- Scythe of the Fallen Keeper
+						i(207170),	-- Smoldering Seedling
+						i(207143),	-- Twisted Flamecuffs
+					},
+				}),
+				e(2556, {	-- Nymue, Weaver of the Cycle
+					["crs"] = { 206172 },	-- Nymue <Weaver of the Cycle>
+					["g"] = {
+						ach(19340),	-- Mythic: Nymue, Weaver of the Cycle
+						i(208445),	-- Amulet of Eonar's Chosen
+						i(208616),	-- Dreambinder, Loom of the Great Cycle
+						i(207155),	-- Eldermoss Gauntlets
+						i(207135),	-- Eternal Sentinel's Cord
+						i(207123),	-- Lifewoven Slippers
+						i(208615),	-- Nymue's Unraveling Spindle
+						i(207798),	-- Verdant Matrix Beacon
+						i(210203),	-- Wellspring Wristlets
 					},
 				}),
 			}),
