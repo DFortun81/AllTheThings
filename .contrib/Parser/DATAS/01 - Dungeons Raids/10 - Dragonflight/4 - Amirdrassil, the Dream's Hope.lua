@@ -19,95 +19,95 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(19344, {	-- Incarnate's Wake
-					crit(1, { -- Gnarlroot
+					crit(63095, { -- Gnarlroot
 						["_encounter"] = { 2564, AnyDifficultyID },
 					}),
-					crit(2, { -- Igira the Cruel
+					crit(63096, { -- Igira the Cruel
 						["_encounter"] = { 2554, AnyDifficultyID },
 					}),
-					crit(3, { -- Smolderon
+					crit(63101, { -- Smolderon
 						["_encounter"] = { 2563, AnyDifficultyID },
 					}),
 				}),
 				ach(19345, {	-- Molten Incursion
-					crit(1, { -- Volcoross
+					crit(63097, { -- Volcoross
 						["_encounter"] = { 2557, AnyDifficultyID },
 					}),
-					crit(2, { -- Larodar, Keeper of the Flame
+					crit(63098, { -- Larodar, Keeper of the Flame
 						["_encounter"] = { 2553, AnyDifficultyID },
 					}),
 				}),
 				ach(19346, {	-- The Viridian Weave
-					crit(1, { -- Council of Dreams
+					crit(63099, { -- Council of Dreams
 						["_encounter"] = { 2555, AnyDifficultyID },
 					}),
-					crit(2, { -- Nymue, Weaver of the Cycle
+					crit(63100, { -- Nymue, Weaver of the Cycle
 						["_encounter"] = { 2556, AnyDifficultyID },
 					}),
 				}),
 				ach(19347, {	-- Fate of Amirdrassil
-					crit(1, { -- Tindral Sageswift, Seer of the Flame
+					crit(63102, { -- Tindral Sageswift, Seer of the Flame
 						["_encounter"] = { 2565, AnyDifficultyID },
 					}),
-					crit(2, { -- Fyrakk the Blazing
+					crit(63103, { -- Fyrakk the Blazing
 						["_encounter"] = { 2519, AnyDifficultyID },
 					}),
 				}),
 				ach(19331, {	-- Amirdrassil, the Dream's Hope
-					crit(1, { -- Gnarlroot
+					crit(63095, { -- Gnarlroot
 						["_encounter"] = { 2564, AnyDifficultyID },
 					}),
-					crit(2, { -- Igira the Cruel
+					crit(63096, { -- Igira the Cruel
 						["_encounter"] = { 2554, AnyDifficultyID },
 					}),
-					crit(3, { -- Volcoross
+					crit(63097, { -- Volcoross
 						["_encounter"] = { 2557, AnyDifficultyID },
 					}),
-					crit(4, { -- Larodar, Keeper of the Flame
+					crit(63098, { -- Larodar, Keeper of the Flame
 						["_encounter"] = { 2553, AnyDifficultyID },
 					}),
-					crit(5, { -- Council of Dreams
+					crit(63099, { -- Council of Dreams
 						["_encounter"] = { 2555, AnyDifficultyID },
 					}),
-					crit(6, { -- Nymue, Weaver of the Cycle
+					crit(63100, { -- Nymue, Weaver of the Cycle
 						["_encounter"] = { 2556, AnyDifficultyID },
 					}),
-					crit(7, { -- Smolderon
+					crit(63101, { -- Smolderon
 						["_encounter"] = { 2563, AnyDifficultyID },
 					}),
-					crit(8, { -- Tindral Sageswift, Seer of the Flame
+					crit(63102, { -- Tindral Sageswift, Seer of the Flame
 						["_encounter"] = { 2565, AnyDifficultyID },
 					}),
-					crit(9, { -- Fyrakk the Blazing
+					crit(63103, { -- Fyrakk the Blazing
 						["_encounter"] = { 2519, AnyDifficultyID },
 					}),
 				}),
 				ach(19333, {	-- Heroic: Amirdrassil, the Dream's Hope
-					crit(1, { -- Gnarlroot
+					crit(63104, { -- Gnarlroot
 						["_encounter"] = { 2564, HeroicPlusID },
 					}),
-					crit(2, { -- Igira the Cruel
+					crit(63105, { -- Igira the Cruel
 						["_encounter"] = { 2554, HeroicPlusID },
 					}),
-					crit(3, { -- Volcoross
+					crit(63106, { -- Volcoross
 						["_encounter"] = { 2557, HeroicPlusID },
 					}),
-					crit(4, { -- Larodar, Keeper of the Flame
+					crit(63107, { -- Larodar, Keeper of the Flame
 						["_encounter"] = { 2553, HeroicPlusID },
 					}),
-					crit(5, { -- Council of Dreams
+					crit(63108, { -- Council of Dreams
 						["_encounter"] = { 2555, HeroicPlusID },
 					}),
-					crit(6, { -- Nymue, Weaver of the Cycle
+					crit(63109, { -- Nymue, Weaver of the Cycle
 						["_encounter"] = { 2556, HeroicPlusID },
 					}),
-					crit(7, { -- Smolderon
+					crit(63110, { -- Smolderon
 						["_encounter"] = { 2563, HeroicPlusID },
 					}),
-					crit(8, { -- Tindral Sageswift, Seer of the Flame
+					crit(63111, { -- Tindral Sageswift, Seer of the Flame
 						["_encounter"] = { 2565, HeroicPlusID },
 					}),
-					crit(9, { -- Fyrakk the Blazing
+					crit(63112, { -- Fyrakk the Blazing
 						["_encounter"] = { 2519, HeroicPlusID },
 					}),
 				}),

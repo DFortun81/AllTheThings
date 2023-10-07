@@ -545,9 +545,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							revampAch(2909),	-- Take Out Those Turrets (10 player)
 							revampAch(2907, {	-- Three Car Garage (10 player)
 								-- TODO: Add vehicle npcIDs
-								crit(1),	-- Salvaged Chopper
-								crit(2),	-- Salvaged Siege Engine
-								crit(3),	-- Salvaged Demolisher
+								crit(10046),	-- Salvaged Chopper
+								crit(10047),	-- Salvaged Siege Engine
+								crit(10048),	-- Salvaged Demolisher
 							}),
 							revampAch(2905),	-- Unbroken (10 player)
 							i(45282),	-- Ironsoul
@@ -662,8 +662,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								["timeline"] = { "added 4.0.3" },
 							}),
 							revampAch(3003, {	-- Supermassive (10 player)
-								crit(1),	-- Close 3 Black Holes within 10 seconds
-								crit(2),	-- Defeat Algalon the Observer
+								crit(10780),	-- Close 3 Black Holes within 10 seconds
+								crit(10781),	-- Defeat Algalon the Observer
 							}),
 							ach(3316, {	-- Herald of the Titans
 								-- If Classic actually goes to WoD, feel free to add variations of lock criteria for the multiple level squishes
@@ -808,9 +808,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						["groups"] = {
 							revampAch(2971),	-- Don't Stand in the Lightning (10 player)
 							revampAch(2973, {	-- I'll Take You All On (10 player)
-								crit(1),	-- Defeat Thorim
-								crit(2),	-- Participate in slaying Runic Colossus
-								crit(3),	-- Participate in slaying Ancient Rune Giant
+								crit(10558),	-- Defeat Thorim
+								crit(10287),	-- Participate in slaying Runic Colossus
+								crit(10288),	-- Participate in slaying Ancient Rune Giant
 							}),
 							revampAch(3176, {	-- Lose Your Illusion (10 player)
 								i(45930),	-- Combatant's Bootblade
@@ -890,9 +890,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								["cr"] = 34057,	-- Assault Bot
 							}),
 							revampAch(2989, {	-- Set Up Us the Bomb (10 player)
-								crit(1),	-- A Proximity Mine
-								crit(2),	-- A Rocket Strike
-								crit(3),	-- A Bomb Bot
+								crit(10543),	-- A Proximity Mine
+								crit(10544),	-- A Rocket Strike
+								crit(10545),	-- A Bomb Bot
 							}),
 							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
 								["timeline"] = { ADDED_7_0_3 },
@@ -971,9 +971,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							revampAch(3008),	-- Drive Me Crazy (10 player)
 							revampAch(3012),	-- He's Not Getting Any Older (10 player)
 							revampAch(3015, {	-- In His House He Waits Dreaming (10 player)
-								crit(1),	-- The Assassination of King Llane
-								crit(2),	-- The Forging of the Demon Soul
-								crit(3),	-- The Tortured Champion
+								crit(10324),	-- The Assassination of King Llane
+								crit(10325),	-- The Forging of the Demon Soul
+								crit(10326),	-- The Tortured Champion
 							}),
 							revampAch(3009, {	-- Kiss and Make Up (10 player)
 								["description"] = "During phase 2, when Sara is flying above Yogg-Saron, /kiss her while she's angry.",
@@ -1426,9 +1426,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							revampAch(2910),	-- Take Out Those Turrets (25 player)
 							revampAch(2908, {	-- Three Car Garage (25 player)
 								-- TODO: Add vehicle npcIDs
-								crit(1),	-- Salvaged Chopper
-								crit(2),	-- Salvaged Siege Engine
-								crit(3),	-- Salvaged Demolisher
+								crit(10049),	-- Salvaged Chopper
+								crit(10050),	-- Salvaged Siege Engine
+								crit(10051),	-- Salvaged Demolisher
 							}),
 							revampAch(2906),	-- Unbroken (25 player)
 							i(45110),	-- Titanguard
@@ -1577,8 +1577,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								["timeline"] = { "added 4.0.3" },
 							}),
 							revampAch(3002, {	-- Supermassive (25 player)
-								crit(1),	-- Close 3 Black Holes within 10 seconds
-								crit(2),	-- Defeat Algalon the Observer
+								crit(10782),	-- Close 3 Black Holes within 10 seconds
+								crit(10783),	-- Defeat Algalon the Observer
 							}),
 							i(46053),	-- Reply-Code Alpha
 							i(45613),	-- Dreambinder
@@ -1734,9 +1734,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						["groups"] = {
 							revampAch(2972),	-- Don't Stand in the Lightning (25 player)
 							revampAch(2974, {	-- I'll Take You All On (25 player)
-								crit(1),	-- Defeat Thorim
-								crit(2),	-- Participate in slaying Runic Colossus
-								crit(3),	-- Participate in slaying Ancient Rune Giant
+								crit(39291),	-- Defeat Thorim
+								crit(39438),	-- Participate in slaying Runic Colossus
+								crit(39439),	-- Participate in slaying Ancient Rune Giant
 							}),
 							revampAch(3183, {	-- Lose Your Illusion (25 player)
 								i(45570),	-- Skyforge Crossbow
@@ -1819,9 +1819,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 								["cr"] = 34057,	-- Assault Bot
 							}),
 							revampAch(3237, {	-- Set Up Us the Bomb (25 player)
-								crit(1),	-- A Proximity Mine
-								crit(2),	-- A Rocket Strike
-								crit(3),	-- A Bomb Bot
+								crit(10546),	-- A Proximity Mine
+								crit(10547),	-- A Rocket Strike
+								crit(10548),	-- A Bomb Bot
 							}),
 							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
 								["timeline"] = { ADDED_7_0_3 },
@@ -1912,9 +1912,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							revampAch(3010),	-- Drive Me Crazy (25 player)
 							revampAch(3013),	-- He's Not Getting Any Older (25 player)
 							revampAch(3016, {	-- In His House He Waits Dreaming (25 player)
-								crit(1),	-- The Assassination of King Llane
-								crit(2),	-- The Forging of the Demon Soul
-								crit(3),	-- The Tortured Champion
+								crit(10321),	-- The Assassination of King Llane
+								crit(10322),	-- The Forging of the Demon Soul
+								crit(10323),	-- The Tortured Champion
 							}),
 							revampAch(3011, {	-- Kiss and Make Up (25 player)
 								["description"] = "During phase 2, when Sara is flying above Yogg-Saron, /kiss her while she's angry.",
@@ -2213,9 +2213,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						ach(12316),	-- Shutout
 						ach(12315),	-- Take Out Those Turret
 						ach(12314, {	-- Three Car Garage
-							crit(1),	-- Salvaged Chopper
-							crit(2),	-- Salvaged Siege Engine
-							crit(3),	-- Salvaged Demolisher
+							crit(39309),	-- Salvaged Chopper
+							crit(39310),	-- Salvaged Siege Engine
+							crit(39311),	-- Salvaged Demolisher
 						}),
 						ach(12313),	-- Unbroken
 						i(45282),	-- Ironsoul
@@ -2397,8 +2397,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							title(130),	-- the Astral Walker
 						}),
 						ach(12400, {	-- Supermassive
-							crit(1),	-- Close 3 Black Holes within 10 seconds
-							crit(2),	-- Defeat Algalon the Observer
+							crit(39522),	-- Close 3 Black Holes within 10 seconds
+							crit(39523),	-- Defeat Algalon the Observer
 						}),
 						ach(3316, {	-- Herald of the Titans
 							-- If Classic actually goes to WoD, feel free to add variations of lock criteria for the multiple level squishes
@@ -2631,9 +2631,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					["groups"] = {
 						ach(12348),	-- Don't Stand in the Lightning
 						ach(12349, {	-- I'll Take You All On
-							crit(1),	-- Defeat Thorim
-							crit(2),	-- Participate in slaying Runic Colossus
-							crit(3),	-- Participate in slaying Ancient Rune Giant
+							crit(39291),	-- Defeat Thorim
+							crit(39438),	-- Participate in slaying Runic Colossus
+							crit(39439),	-- Participate in slaying Ancient Rune Giant
 						}),
 						ach(12352, {	-- Lose Your Illusion
 							un(45, i(45930)),	-- Combatant's Bootblade
@@ -2748,9 +2748,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						}),
 						ach(12368),	-- Not-So-Friendly Fire
 						ach(12367, {	-- Set Up Us the Bomb
-							crit(1),	-- A Proximity Mine
-							crit(2),	-- A Rocket Strike
-							crit(3),	-- A Bomb Bot
+							crit(39478),	-- A Proximity Mine
+							crit(39479),	-- A Rocket Strike
+							crit(39480),	-- A Bomb Bot
 						}),
 						i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
 							["timeline"] = { ADDED_7_0_3 },
@@ -2870,9 +2870,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						ach(12395),	-- Drive Me Crazy
 						ach(12396),	-- He's Not Getting Any Older
 						ach(12398, {	-- In His House He Waits Dreaming
-							crit(1),	-- The Assassination of King Llane
-							crit(2),	-- The Forging of the Demon Soul
-							crit(3),	-- The Tortured Champion
+							crit(10321),	-- The Assassination of King Llane
+							crit(39513),	-- The Forging of the Demon Soul
+							crit(39514),	-- The Tortured Champion
 						}),
 						ach(12384, {	-- Kiss and Make Up
 							["description"] = "During phase 2, when Sara is flying above Yogg-Saron, /kiss her while she's angry.",
