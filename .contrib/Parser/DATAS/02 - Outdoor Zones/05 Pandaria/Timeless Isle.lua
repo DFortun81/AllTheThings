@@ -645,14 +645,31 @@ root(ROOTS.Zones, {
 					ach(8716),	-- Emissary of Ordos
 					ach(8726),	-- Extreme Treasure Hunter
 					ach(8725, {	-- Eyes On The Ground
-						crit(1),	-- Giant Clam
-						crit(2),	-- Glinting Sand
-						crit(4),	-- Eerie Crystal
-						crit(5),	-- Ordon Supplies
-						crit(6),	-- Firestorm Egg
-						crit(7),	-- Fiery Altar of Ordos
+						crit(24011, { 	-- Giant Clam
+							["objectID"] = 223193,
+						}),
+						crit(24012, {	-- Glinting Sand
+							["objectID"] = 222684,
+						}),
+						crit(24013, {	-- Crane Nest
+							["objectID"] = 222685,
+						}),
+						crit(24014, {	-- Eerie Crystal
+							["objectID"] = 222686,
+						}),
+						crit(24015, {	-- Ordon Supplies
+							["objectID"] = 222687,
+						}),
+						crit(24016, {	-- Firestorm Egg
+							["objectID"] = 222688,
+						}),
+						crit(24017, {	-- Fiery Altar of Ordos
+							["objectID"] = 222689,
+						}),
 					}),
-					ach(8728),	-- Going to Need a Bigger Bag
+					ach(8728, {	-- Going to Need a Bigger Bag
+						["sym"] = {{ "achievement_criteria" }},
+					}),
 					ach(8712, {	-- Killing Time
 						crit(1,  {	-- Spotted Swarmer
 							["cr"] = 72908,	-- Spotted Swarmer
@@ -1164,11 +1181,7 @@ root(ROOTS.Zones, {
 							{ 62.1, 77.1, TIMELESS_ISLE },
 						},
 						["g"] = {
-							i(104169, {	-- Gulp Froglet (PET!)
-								crit(47, {	-- Gulp Froglet
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							})
+							i(104169),	-- Gulp Froglet (PET!)
 						},
 					}),
 					n(73171,  {	-- Champion of the Black Flame
@@ -1180,16 +1193,8 @@ root(ROOTS.Zones, {
 							{ 65.4, 60.2, TIMELESS_ISLE },
 						},
 						["g"] = {
-							i(106130, {	-- Big Bag of Herbs
-								crit(7, {	-- Big Bag of Herbs
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
-							i(104302, {	-- Blackflame Daggers (TOY!)
-								crit(26, {	-- Blackflame Daggers
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(106130),	-- Big Bag of Herbs
+							i(104302),	-- Blackflame Daggers (TOY!)
 							i(87219),	-- Huge Bag of Herbs
 						},
 					}),
@@ -1199,11 +1204,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 25.2, 35.8, TIMELESS_ISLE },
 						["g"] = {
-							i(86584, {	-- Hardened Shell (TOY!)
-								crit(9, {	-- Hardened Shell
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(86584),	-- Hardened Shell (TOY!)
 						},
 					}),
 					n(73175,  {	-- Cinderfall
@@ -1211,16 +1212,8 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 54.1, 52.9, TIMELESS_ISLE },
 						["g"] = {
-							i(104299, {	-- Falling Flame
-								crit(27, {	-- Falling Flame
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
-							i(104261, {	-- Glowing Blue Ash
-								crit(44, {	-- Glowing Blue Ash
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(104299),	-- Falling Flame
+							i(104261),	-- Glowing Blue Ash
 						},
 					}),
 					n(72049,  {	-- Cranegnasher
@@ -1229,11 +1222,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 44.0, 70.0, TIMELESS_ISLE },
 						["g"] = {
-							i(104268, {	-- Pristine Stalker Hide
-								crit(41, {	-- Pristine Stalker Hide
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(104268),	-- Pristine Stalker Hide
 						},
 					}),
 					n(73281,  {	-- Dread Ship Vazuvius
@@ -1242,11 +1231,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 26.5, 27.8, TIMELESS_ISLE },
 						["g"] = {
-							i(104294, {	-- Rime of the Time-Lost Mariner (TOY!)
-								crit(31, {	-- Rime of the Time-Lost Mariner
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(104294),	-- Rime of the Time-Lost Mariner (TOY!)
 						},
 					}),
 					n(73158,  {	-- Emerald Gander
@@ -1268,11 +1253,7 @@ root(ROOTS.Zones, {
 								["coord"] = { 41.8, 63.7, TIMELESS_ISLE },
 								["provider"] = { "n", 73657 },	-- Great Chef Woo
 							}),
-							i(104287, {		-- Windfeather Plume
-								crit(38, {	-- Windfeather Plume
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(104287),	-- Windfeather Plume
 						},
 					}),
 					n(73279,  {	-- Evermaw <Gnawing Hunger of the Deep>
@@ -1281,11 +1262,6 @@ root(ROOTS.Zones, {
 						["g"] = {
 							i(104115, {	-- Mist-Filled Spirit Lantern
 								["description"] = "Use this item at the Cursed Gravestone to summon the Dread Ship Vazuvius. This item will mark itself collected when you get the Rime of the Time-Lost Mariner criteria for the Bigger Bag achievement.",
-								["g"] = {
-									crit(31, {	-- Rime of the Time-Lost Mariner
-										["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-									}),
-								},
 							}),
 						},
 					}),
@@ -1300,11 +1276,7 @@ root(ROOTS.Zones, {
 							{ 40.6, 27.2, TIMELESS_ISLE },
 						},
 						["g"] = {
-							i(104298, {	-- Ordon Death Chime
-								crit(28, {	-- Ordon Death Chime
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(104298),	-- Ordon Death Chime
 						},
 					}),
 					n(73282,  {	-- Garnia
@@ -1312,11 +1284,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 64.6, 28.6, TIMELESS_ISLE },
 						["g"] = {
-							i(104159, {	-- Ruby Droplet (PET!)
-								crit(54, {	-- Ruby Droplet
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(104159),	-- Ruby Droplet (PET!)
 						},
 					}),
 					n(72970,  {	-- Golganarr
@@ -1324,16 +1292,8 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 62.2, 63.2, TIMELESS_ISLE },
 						["g"] = {
-							i(104262, {	-- Odd Polished Stone (TOY!)
-								crit(43, {	-- Odd Polished Stone
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
-							i(104263, {	-- Glinting Pile of Stone
-								crit(42, {	-- Glinting Pile of Stone
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(104262), 	-- Odd Polished Stone (TOY!)
+							i(104263), 	-- Glinting Pile of Stone
 						},
 					}),
 					n(73161,  {	-- Great Turtle Furyshell
@@ -1345,11 +1305,7 @@ root(ROOTS.Zones, {
 							{ 26.6, 72.4, TIMELESS_ISLE },
 						},
 						["g"] = {
-							i(86584, {	-- Hardened Shell (TOY!)
-								crit(9, {	-- Hardened Shell
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(86584),	-- Hardened Shell (TOY!)
 						},
 					}),
 					n(72909,  {	-- Gu'chi the Swarmbringer
@@ -1362,16 +1318,8 @@ root(ROOTS.Zones, {
 							{ 32.4, 78.2, TIMELESS_ISLE },
 						},
 						["g"] = {
-							i(104290, {	-- Sticky Silkworm Goo
-								crit(35, {	-- Sticky Silkworm Goo
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
-							i(104291, {	-- Gu'chi Swarmling (PET!)
-								crit(34, {	-- Swarmling of Gu'chi
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(104290), 	-- Sticky Silkworm Goo
+							i(104291),	-- Gu'chi Swarmling (PET!)
 						},
 					}),
 					n(73167,  {	-- Huolon
@@ -1380,16 +1328,8 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 66.0, 58.8, TIMELESS_ISLE },
 						["g"] = {
-							i(104286, {	-- Quivering Firestorm Egg
-								crit(39, {	-- Quivering Firestorm Egg
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
-							i(104269, {	-- Thundering Onyx Cloud Serpent (MOUNT!)
-								crit(40, {	-- Reins of the Thundering Onyx Cloud Serpent
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(104286),	-- Quivering Firestorm Egg
+							i(104269), 	-- Thundering Onyx Cloud Serpent (MOUNT!)
 						},
 					}),
 					n(73163,  {	-- Imperial Python
@@ -1412,16 +1352,8 @@ root(ROOTS.Zones, {
 							{ 50.8, 46.2, TIMELESS_ISLE },
 						},
 						["g"] = {
-							i(104161, {	-- Death Adder Hatchling (PET!)
-								crit(52, {	-- Death Adder Hatchling
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
-							i(104292, {	-- Partially-Digested Meal
-								crit(33, {	-- Partially-Digested Meal
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(104161),	-- Death Adder Hatchling (PET!)
+							i(104292),	-- Partially-Digested Meal
 						},
 					}),
 					n(73160,  {	-- Ironfur Steelhorn
@@ -1444,17 +1376,9 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 53.0, 82.4, TIMELESS_ISLE },
 						["g"] = {
-							i(104331, {	-- Warning Sign (TOY!)
-								crit(13, {	-- Warning Sign
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(104331),	-- Warning Sign (TOY!)
 							i(104245),	-- Technique: Glyph of the Weaponmaster
-							i(104296, {	-- Ordon Ceremonial Robes
-								crit(30, {	-- Ordon Ceremonial Robes
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(104296),	-- Ordon Ceremonial Robes
 						},
 					}),
 					n(72193,  {	-- Karkanos
@@ -1462,11 +1386,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 33.8, 85.8, TIMELESS_ISLE },
 						["g"] = {
-							i(104035, {	-- Giant Purse of Timeless Coins
-								crit(3, {	-- Giant Purse of Timeless Coins
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(104035),	-- Giant Purse of Timeless Coins
 						},
 					}),
 					n(73277,  {	-- Leafmender
@@ -1474,16 +1394,8 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 67.2, 44.0, TIMELESS_ISLE },
 						["g"] = {
-							i(104289, {	-- Faintly-Glowing Herb
-								crit(36, {	-- Faintly-Glowing Herb
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
-							i(104156, {	-- Ashleaf Spriteling (PET!)
-								crit(56, {	-- Ashleaf Spriteling
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(104289),	-- Faintly-Glowing Herb
+							i(104156),	-- Ashleaf Spriteling (PET!)
 						},
 					}),
 					n(73166,  {	-- Monstrous Spineclaw
@@ -1495,27 +1407,15 @@ root(ROOTS.Zones, {
 							{ 68.8, 74.8, TIMELESS_ISLE },
 						},
 						["g"] = {
-							i(104293, {	-- Scuttler's Shell
-								crit(32, {	-- Scuttler's Shell
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
-							i(104168, {	-- Spineclaw Crab (PET!)
-								crit(48, {	-- Spineclaw Crab
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(104293),	-- Scuttler's Shell
+							i(104168),	-- Spineclaw Crab (PET!)
 						},
 					}),
 					n(72048,  {	-- Rattleskew
 					--	no daily questID popped.  may have a one-time questID?
 						["coord"] = { 60.6, 87.8, TIMELESS_ISLE },	-- mapID needs verification
 						["g"] = {
-							i(104321, {	-- Captain Zvezdan's Lost Leg
-								crit(16, {	-- Captain Zvezdan's Lost Leg
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(104321),	-- Captain Zvezdan's Lost Leg
 							i(104219),	-- Technique: Glyph of Skeleton
 						},
 					}),
@@ -1527,16 +1427,8 @@ root(ROOTS.Zones, {
 							{ 43.1, 41.2, TIMELESS_ISLE },	-- entrance
 						},
 						["g"] = {
-							i(104312, {	-- Strange Glowing Mushroom
-								crit(19, {	-- Strange Glowing Mushroom
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
-							i(104313, {	-- Golden Moss
-								crit(18, {	-- Golden Moss
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(104312),	-- Strange Glowing Mushroom
+							i(104313),	-- Golden Moss
 						},
 					}),
 					n(71864,  {	-- Spelurk
@@ -1545,11 +1437,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 59.5, 48.9, TIMELESS_ISLE },
 						["g"] = {
-							i(104320, {	-- Cursed Talisman
-								crit(17, {	-- Cursed Talisman
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(104320),	-- Cursed Talisman
 						},
 					}),
 					n(73704,  {	-- Stinkbraid
@@ -1561,16 +1449,8 @@ root(ROOTS.Zones, {
 						["questID"] = 33293,
 						["isDaily"] = true,
 						["g"] = {
-							i(104258, {	-- Glowing Green Ash
-								crit(45, {	-- Glowing Green Ash
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
-							i(104307, {	-- Jadefire Spirit (PET!)
-								crit(21, {	-- Jadefire Spirit
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(104258),	-- Glowing Green Ash
+							i(104307),	-- Jadefire Spirit (PET!)
 							i(104227),	-- Technique: Glyph of Pillar of Light
 						},
 					}),
@@ -1579,11 +1459,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 54.2, 42.8, TIMELESS_ISLE },
 						["g"] = {
-							i(104268, {	-- Pristine Stalker Hide
-								crit(41, {	-- Pristine Stalker Hide
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(104268),	-- Pristine Stalker Hide
 						},
 					}),
 					n(73173,  {	-- Urdur the Cauterizer
@@ -1591,16 +1467,8 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 43.6, 26.0, TIMELESS_ISLE },
 						["g"] = {
-							i(104306, {	-- Sunset Stone
-								crit(22, {	-- Sunset Stone
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
-							i(104296, {	-- Ordon Ceremonial Robes
-								crit(30, {	-- Ordon Ceremonial Robes
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(104306),	-- Sunset Stone
+							i(104296),	-- Ordon Ceremonial Robes
 						},
 					}),
 					n(73170,  {	-- Watcher Osu
@@ -1608,16 +1476,8 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 57.6, 76.6, TIMELESS_ISLE },
 						["g"] = {
-							i(104296, {	-- Ordon Ceremonial Robes
-								crit(30, {	-- Ordon Ceremonial Robes
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
-							i(104305, {	-- Ashen Stone
-								crit(23, {	-- Ashen Stone
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(104296), 	-- Ordon Ceremonial Robes
+							i(104305), 	-- Ashen Stone
 						},
 					}),
 					n(71876, {	-- Zarhym
@@ -1634,11 +1494,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 47.0, 87.4, TIMELESS_ISLE },	-- mapID needs verification
 						["g"] = {
-							i(104303, {	-- Rain Stone
-								crit(25, {	-- Rain Stone
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(104303), 	-- Rain Stone
 						},
 					}),
 					n(71919,  {	-- Zhu-Gon the Sour
@@ -1647,11 +1503,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 37.8, 77.2, TIMELESS_ISLE },
 						["g"] = {
-							i(104167, {	-- Skunky Alemental (PET!)
-								crit(49, {	-- Skunky Alemental
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(104167), 	-- Skunky Alemental (PET!)
 						},
 					}),
 				}),
@@ -1906,11 +1758,7 @@ root(ROOTS.Zones, {
 							crit(1, {	-- Sunken Treasure
 								["achievementID"] = 8727,	-- Where There's Pirates, There's Booty
 							}),
-							i(134024, {	-- Cursed Swabby Helmet (TOY!)
-								crit(1, {	-- Cursed Swabby Helmet
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(134024),	-- Cursed Swabby Helmet (TOY!)
 						},
 					}),
 				}),
@@ -1970,11 +1818,7 @@ root(ROOTS.Zones, {
 							i(101538, {	-- Kukuru's Cache Key
 								["cost"] = { { "c", 777, 500 } },	-- 500x Timeless Coin
 								["g"] = {
-									i(104202, {	-- Bonkers (PET!)
-										crit(46, {	-- Bonkers
-											["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-										}),
-									}),
+									i(104202),	-- Bonkers (PET!)
 								},
 							}),
 						},
@@ -2147,11 +1991,7 @@ root(ROOTS.Zones, {
 				}),
 				n(ZONE_DROPS, {
 					n(72766,  {	-- Ancient Spineclaw
-						i(104293, {	-- Scuttler's Shell
-							crit(32, {	-- Scuttler's Shell
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
+						i(104293),	-- Scuttler's Shell
 					}),
 					v(32961,  {	-- Angry Sprite & Scary Sprite
 						["description"] = "Click on the Neverending Spritewood (purple crystal) to transform and be able to attack the sprites.",
@@ -2161,217 +2001,90 @@ root(ROOTS.Zones, {
 							71826,	-- Scary Sprite
 						},
 						["g"] = {
-							i(104160, {	-- Dandelion Frolicker (PET!)
-								crit(53, {	-- Dandelion Frolicker
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(104160),	-- Dandelion Frolicker (PET!)
 						},
 					}),
 					n(72877,  {	-- Ashleaf Sprite
-						i(104289, {	-- Faintly-Glowing Herb
-							crit(36, {	-- Faintly-Glowing Herb
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
-						i(106130, {	-- Big Bag of Herbs
-							crit(7, {	-- Big Bag of Herbs
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
+						i(104289),	-- Faintly-Glowing Herb
+						i(106130),	-- Big Bag of Herbs
 					}),
 					n(72897,  {	-- Blazebound Chanter
-						i(104296, {	-- Ordon Ceremonial Robes
-							crit(30, {	-- Ordon Ceremonial Robes
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
-						i(104304, {	-- Blizzard Stone
-							crit(24, {	-- Blizzard Stone
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
+						i(104296),	-- Ordon Ceremonial Robes
+						i(104304),	-- Blizzard Stone
 					}),
 					n(72762,  {	-- Brilliant Windfeather
-						i(104287, {	-- Windfeather Plume
-							crit(38, {	-- Windfeather Plume
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
+						i(104287),	-- Windfeather Plume
 					}),
 					n(72895,  {	-- Burning Berserker
-						i(86566, {	-- Forager's Gloves
-							crit(6, {	-- Forager's Gloves
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
-						i(106130, {	-- Big Bag of Herbs
-							crit(7, {	-- Big Bag of Herbs
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
+						i(86566),	-- Forager's Gloves
+						i(106130),	-- Big Bag of Herbs
 					}),
 					o(222685, {	-- Crane Nest
 						["modelScale"] = 2.3,
 						["g"] = {
-							crit(3, {	-- Crane Nest
-								["achievementID"] = 8725,	-- Eyes on the Ground
-							}),
-							i(104157, {	-- Azure Crane Chick (PET!)
-								crit(55, {	-- Azure Crane Chick
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(104157),	-- Azure Crane Chick (PET!)
 						},
 					}),
 					n(72876,  {	-- Crimsonscale Firestorm
-						i(104286, {	-- Quivering Firestorm Egg
-							crit(39, {	-- Quivering Firestorm Egg
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
+						i(104286),	-- Quivering Firestorm Egg
 					}),
 					n(72771,  {	-- Damp Shambler
-						i(104312, {	-- Strange Glowing Mushroom
-							crit(19, {	-- Strange Glowing Mushroom
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
+						i(104312),	-- Strange Glowing Mushroom
 					}),
 					n(72841,  {	-- Death Adder
-						i(104292, {	-- Partially-Digested Meal
-							crit(33, {	-- Partially-Digested Meal
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
+						i(104292),	-- Partially-Digested Meal
 					}),
 					n(72809,  {	-- Eroded Cliffdweller
-						i(104263, {	-- Glinting Pile of Stone
-							crit(42, {	-- Glinting Pile of Stone
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
-						i(104262, {	-- Odd Polished Stone (TOY!)
-							crit(43, {	-- Odd Polished Stone
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
+						i(104263),	-- Glinting Pile of Stone
+						i(104262),	-- Odd Polished Stone (TOY!)
 					}),
 					n(72896,  {	-- Eternal Kilnmaster
-						i(104297, {	-- Blazing Sigil of Ordos
-							crit(29, {	-- Blazing Sigil of Ordos
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
-						i(104309, {	-- Eternal Kiln (TOY!)
-							crit(20, {	-- Eternal Kiln
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
+						i(104297),	-- Blazing Sigil of Ordos
+						i(104309),	-- Eternal Kiln (TOY!)
 					}),
 					n(73162,  {	-- Foreboding Flame
-						i(104261, {	-- Glowing Blue Ash
-							crit(44, {	-- Glowing Blue Ash
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
-						i(104166, {	-- Ominous Flame (PET!)
-							crit(50, {	-- Ominous Flame
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
+						i(104261),	-- Glowing Blue Ash
+						i(104166),	-- Ominous Flame (PET!)
 						i(104227),	-- Technique: Glyph of Pillar of Light
 					}),
 					n(72898,  {	-- High Priest of Ordos
-						i(104329, {	-- Ash-Covered Horn (TOY!)
-							crit(14, {	-- Ash-Covered Horn
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
+						i(104329),	-- Ash-Covered Horn (TOY!)
 					}),
 					n(72767,  {	-- Jademist Dancer
-						i(104288, {	-- Condensed Jademist
-							crit(37, {	-- Condensed Jademist
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
+						i(104288),	-- Condensed Jademist
 						i(104224),	-- Technique: Glyph of Evaporation
-						i(104164, {	-- Jademist Dancer (PET!)
-							crit(51, {	-- Jademist Dancer
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
+						i(104164),	-- Jademist Dancer (PET!)
 					}),
 					n(72888,  {	-- Molten Guardian
-						i(104328, {	-- Cauterizing Core
-							crit(15, {	-- Cauterizing Core
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
+						i(104328),	-- Cauterizing Core
 					}),
 					n(72875,  {	-- Ordon Candlekeeper
-						i(86565, {	-- Battle Horn (TOY!)
-							crit(5, {	-- Battle Horn
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
+						i(86565),	-- Battle Horn (TOY!)
 					}),
 					n(72894,  {	-- Ordon Fire-Watcher
-						i(104297, {	-- Blazing Sigil of Ordos
-							crit(29, {	-- Blazing Sigil of Ordos
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
-						i(104296, {	-- Ordon Ceremonial Robes
-							crit(30, {	-- Ordon Ceremonial Robes
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
+						i(104297),	-- Blazing Sigil of Ordos
+						i(104296),	-- Ordon Ceremonial Robes
 					}),
 					n(72892,  {	-- Ordon Oathguard
-						i(104330, {	-- Warped Warning Sign
-							crit(2, {	-- Warped Warning Sign
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
+						i(104330),	-- Warped Warning Sign
 					}),
 					n(72805,  {	-- Primal Stalker
-						i(104268, {	-- Pristine Stalker Hide
-							crit(41, {	-- Pristine Stalker Hide
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
+						i(104268),	-- Pristine Stalker Hide
 					}),
 					n(73018,  {	-- Spectral Brewmaster
-						i(104335, {	-- Thick Pi'jiu Brew
-							crit(11, {	-- Thick Pi'jiu Brew
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
+						i(104335),	-- Thick Pi'jiu Brew
 						i(104235),		-- Technique: Glyph of Lingering Ancestors
 					}),
 					n(73025,  {	-- Spectral Mistweaver
-						i(104334, {	-- Misty Pi'jiu Brew
-							crit(12, {	-- Misty Pi'jiu Brew
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
+						i(104334),	-- Misty Pi'jiu Brew
 						i(104235),		-- Technique: Glyph of Lingering Ancestors
 					}),
 					n(73021,  {	-- Spectral Windwalker
-						i(104336, {	-- Bubbling Pi'jiu Brew
-							crit(10, {	-- Bubbling Pi'jiu Brew
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
+						i(104336),	-- Bubbling Pi'jiu Brew
 						i(104235),		-- Technique: Glyph of Lingering Ancestors
 					}),
 					n(72908,  {	-- Spotted Swarmer
-						i(104290, {	-- Sticky Silkworm Goo
-							crit(35, {	-- Sticky Silkworm Goo
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						}),
+						i(104290),	-- Sticky Silkworm Goo
 					}),
 					n(72761,  {	-- Windfeather Nestkeeper
 						i(104231),	-- Technique: Glyph of Inspired Hymns

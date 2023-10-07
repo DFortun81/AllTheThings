@@ -2139,11 +2139,7 @@ root(ROOTS.Zones, {
 							{ 32.8, 62.8, VALLEY_OF_THE_FOUR_WINDS },
 						},
 						["g"] = {
-							i(86565, {	-- Battle Horn (TOY!)
-								crit(5, {	-- Battle Horn
-									["achievementID"] = 8728,	-- Going to Need a Bigger Bag
-								}),
-							}),
+							i(86565),	-- Battle Horn (TOY!)
 						},
 					}),
 					n(50828, {	-- Bonobos
@@ -2193,22 +2189,13 @@ root(ROOTS.Zones, {
 							{ 60.2, 39.2, VALLEY_OF_THE_FOUR_WINDS },
 						},
 						["g"] = {
-							i(86580, {	-- Wilted Lilypad
-								crit(8, {	-- Overgrown Lilypad
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-									["description"] = "This item used to be the Overgrown Lilypad. This item instead is required for the Bigger Bag achievement in its place.",
-								}),
-							}),
+							i(86580),	-- Wilted Lilypad
 						},
 					}),
 					n(50339, {	-- Sulik'shor
 						["coord"] = { 37.0, 25.6, VALLEY_OF_THE_FOUR_WINDS },
 						["g"] = {
-							i(86569, {	-- Crystal of Insanity
-								crit(4, {	-- Crystal of Insanity
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(86569),	-- Crystal of Insanity
 						},
 					}),
 				}),

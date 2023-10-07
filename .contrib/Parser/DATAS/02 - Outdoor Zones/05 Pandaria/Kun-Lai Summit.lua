@@ -2005,11 +2005,7 @@ root(ROOTS.Zones, {
 							{ 51.23, 79.59, KUN_LAI_SUMMIT },
 						},
 						["g"] = {
-							i(86566, {	-- Forager's Gloves
-								crit(6, {	-- Forager's Gloves
-									["achievementID"] = 8728,	-- Going to Need a Bigger Bag
-								}),
-							}),
+							i(86566),	-- Forager's Gloves
 						},
 					}),
 					n(70323, {	-- Krakkanon
@@ -2023,11 +2019,7 @@ root(ROOTS.Zones, {
 					n(50789, {	-- Nessos the Oracle
 						["coord"] = { 63.8, 13.7, KUN_LAI_SUMMIT },
 						["g"] = {
-							i(86584, {	-- Hardened Shell (TOY!)
-								crit(9, {	-- Hardened Shell
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-								}),
-							}),
+							i(86584),	-- Hardened Shell (TOY!)
 						},
 					}),
 					n(50831, {	-- Scritch
