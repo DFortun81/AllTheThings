@@ -219,140 +219,256 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				}),
 			}),
 			d(LFR_RAID, {
-				e(2564, {	-- Gnarlroot
-					["crs"] = { 209333 },	-- Gnarlroot
-					["g"] = {
-						i(207142),	-- Ancient Haubark
-						i(207120),	-- Anguished Restraints
-						i(207169),	-- Branch of the Tormented Ancient
-						i(207797),	-- Defender of the Ancient
-						i(207144),	-- Forlorn Leaf Clasp
-						i(207800),	-- Gnarlroot's Bonecrusher
-						i(207160),	-- Inflammable Drapeleaf
-						i(207117),	-- Requiem Rootmantle
-						i(207153),	-- Seared Ironwood Greaves
-						i(207133),	-- Silent Tormentor's Hood
-						i(207794),	-- Staff of Incandescent Torment
-						i(207126),	-- Twisted Blossom Stompers
-					},
+				header(HEADERS.Achievement, 19344, {	-- Incarnate's Wake
+					e(2564, {	-- Gnarlroot
+						["crs"] = { 209333 },	-- Gnarlroot
+						["g"] = {
+							i(207142),	-- Ancient Haubark
+							i(207120),	-- Anguished Restraints
+							i(207169),	-- Branch of the Tormented Ancient
+							i(207797),	-- Defender of the Ancient
+							i(207144),	-- Forlorn Leaf Clasp
+							i(207800),	-- Gnarlroot's Bonecrusher
+							i(207160),	-- Inflammable Drapeleaf
+							i(207117),	-- Requiem Rootmantle
+							i(207153),	-- Seared Ironwood Greaves
+							i(207133),	-- Silent Tormentor's Hood
+							i(207794),	-- Staff of Incandescent Torment
+							i(207126),	-- Twisted Blossom Stompers
+						},
+					}),
+					e(2554, {	-- Igira the Cruel
+						["crs"] = { 206689 },	-- Igira the Cruel <Zaqali Elder>
+						["g"] = {
+							i(207466, {	-- Dreadful Tormented Dreamheart
+								i(207201),	-- Thorns of the Risen Nightmare
+								i(207264),	-- Screaming Torchfiend's Grasp
+								i(207273),	-- Devout Ashdevil's Claws
+							}),
+							i(207467, {	-- Mystic Tormented Dreamheart
+								i(207255),	-- Benevolent Embersage's Talons
+								i(207219),	-- Blazing Dreamstalker's Skinners
+								i(207291),	-- Wayward Chronomancer's Gloves
+							}),
+							i(207468, {	-- Venerated Tormented Dreamheart
+								i(207192),	-- Zealous Pyreknight's Jeweled Gauntlets
+								i(207282),	-- Touch of Lunar Communion
+								i(207210),	-- Greatwolf Outcast's Grips
+							}),
+							i(207469, {	-- Zenith Tormented Dreamheart
+								i(207228),	-- Weyrnkeeper's Timeless Clawguards
+								i(207246),	-- Mystic Heron's Glovebills
+								i(207237),	-- Lucid Shadewalker's Clawgrips
+								i(207183),	-- Molten Vanguard's Crushers
+							}),
+							i(207150),	-- Agonizing Manacles
+							i(207165),	-- Bandolier of Twisted Blades
+							i(207131),	-- Bloody Dragonhide Belt
+							i(207783),	-- Cruel Dreamcarver
+							i(207140),	-- Drakestalker's Trophy Pauldrons
+							i(207118),	-- Elder's Volcanic Wrap
+							i(207787),	-- Igira's Flaying Hatchet
+							i(207162),	-- Signet of the Last Elder
+						},
+					}),
+					e(2563, {	-- Smolderon
+						["crs"] = { 200927 },	-- Smolderon <The Firelord>
+						["g"] = {
+							i(207478, {	-- Dreadful Smoldering Dreamheart
+								i(207198),	-- Skewers of the Risen Nightmare
+								i(207261),	-- Screaming Torchfiend's Horned Memento
+								i(207270),	-- Devout Ashdevil's Hatespikes
+							}),
+							i(207479, {	-- Mystic Smoldering Dreamheart
+								i(207252),	-- Benevolent Embersage's Wisdom
+								i(207216),	-- Blazing Dreamstalker's Finest Hunt
+								i(207288),	-- Wayward Chronomancer's Metronomes
+							}),
+							i(207480, {	-- Venerated Smoldering Dreamheart
+								i(207189),	-- Zealous Pyreknight's Ailettes
+								i(207279),	-- Shoulderguardians of Lunar Communion
+								i(207207),	-- Greatwolf Outcast's Companions
+							}),
+							i(207481, {	-- Zenith Smoldering Dreamheart
+								i(207225),	-- Weyrnkeeper's Timeless Sandbrace
+								i(207243),	-- Mystic Heron's Hopeful Effigy
+								i(207234),	-- Lucid Shadewalker's Bladed Spaulders
+								i(207180),	-- Molten Vanguard's Shouldervents
+							}),
+							i(207167),	-- Ashes of the Embersoul
+							i(207166),	-- Cataclysmic Signet Brand
+							i(210204),	-- Fading Flame Wristbands
+							i(207156),	-- Fused Obsidian Sabatons
+							i(207799),	-- Incandescent Soulcleaver
+							i(207161),	-- Mantle of Blazing Sacrifice
+							i(207791),	-- Remnant Charglaive
+						},
+					}),
 				}),
-				e(2554, {	-- Igira the Cruel
-					["crs"] = { 206689 },	-- Igira the Cruel <Zaqali Elder>
-					["g"] = {
-						i(207150),	-- Agonizing Manacles
-						i(207165),	-- Bandolier of Twisted Blades
-						i(207131),	-- Bloody Dragonhide Belt
-						i(207783),	-- Cruel Dreamcarver
-						i(207140),	-- Drakestalker's Trophy Pauldrons
-						i(207118),	-- Elder's Volcanic Wrap
-						i(207787),	-- Igira's Flaying Hatchet
-						i(207162),	-- Signet of the Last Elder
-					},
+				header(HEADERS.Achievement, 19345, {	-- Molten Incursion
+					e(2557, {	-- Volcoross
+						["crs"] = { 208478 },	-- Volcoross
+						["g"] = {
+							i(207175),	-- Coiled Serpent Idol
+							i(207130),	-- Flamewaker's Grips
+							i(207146),	-- Jeweled Sash of the Viper
+							i(207148),	-- Lavaforged Sollerets
+							i(207122),	-- Lost Scholar's Belted Treads
+							i(207785),	-- Magmatic Volcannon
+							i(210214),	-- Ouroboreal Necklet
+							i(207128),	-- Primordial Serpent's Bindings
+							i(207141),	-- Snake Eater's Cowl
+							i(207121),	-- Vesture of the Smoldering Serpent
+							i(207152),	-- Volcanic Spelunker's Vents
+							i(207789),	-- Volcoross's Barbed Fang
+						},
+					}),
+					e(2553, {	-- Larodar, Keeper of the Flame
+						["crs"] = { 208445 },	-- Larodar, Keeper of the Flame
+						["g"] = {
+							i(207474, {	-- Dreadful Ashen Dreamheart
+								i(207199),	-- Greaves of the Risen Nightmare
+								i(207262),	-- Screaming Torchfiends Blazewraps
+								i(207271),	-- Devout Ashdevil's Tights
+							}),
+							i(207475, {	-- Mystic Ashen Dreamheart
+								i(207253),	-- Benevolent Embersage's Leggings
+								i(207217),	-- Blazing Dreamstalker's Shellgreaves
+								i(207289),	-- Wayward Chronomancer's Pantaloons
+							}),
+							i(207476, {	-- Venerated Ashen Dreamheart
+								i(207190),	-- Zealous Pyreknight's Cuisses
+								i(207280),	-- Leggings of Lunar Communion
+								i(207208),	-- Greatwolf Outcast's Fur-Lined Kilt
+							}),
+							i(207477, {	-- Zenith Ashen Dreamheart
+								i(207226),	-- Weyrnkeeper's Timeless Breeches
+								i(207244),	-- Mystic Heron's Waders
+								i(207235),	-- Lucid Shadewalker's Chausses
+								i(207181),	-- Molten Vanguard's Steel Tassets
+							}),
+							i(207159),	-- Band of Burning Thorns
+							i(207790),	-- Larodar's Moonblade
+							i(207116),	-- Lost Scholar's Timely Hat
+							i(207149),	-- Phlegethic Girdle
+							i(207129),	-- Robes of the Ashen Grove
+							i(207792),	-- Scythe of the Fallen Keeper
+							i(207170),	-- Smoldering Seedling
+							i(207143),	-- Twisted Flamecuffs
+						},
+					}),
 				}),
-				e(2557, {	-- Volcoross
-					["crs"] = { 208478 },	-- Volcoross
-					["g"] = {
-						i(207175),	-- Coiled Serpent Idol
-						i(207130),	-- Flamewaker's Grips
-						i(207146),	-- Jeweled Sash of the Viper
-						i(207148),	-- Lavaforged Sollerets
-						i(207122),	-- Lost Scholar's Belted Treads
-						i(207785),	-- Magmatic Volcannon
-						i(210214),	-- Ouroboreal Necklet
-						i(207128),	-- Primordial Serpent's Bindings
-						i(207141),	-- Snake Eater's Cowl
-						i(207121),	-- Vesture of the Smoldering Serpent
-						i(207152),	-- Volcanic Spelunker's Vents
-						i(207789),	-- Volcoross's Barbed Fang
-					},
+				header(HEADERS.Achievement, 19346, {	-- The Viridian Weave
+					e(2555, {	-- Council of Dreams
+						["crs"] = {
+							208365,	-- Aerwynn <Council of Dreams>
+							208956,	-- Pip <Council of Dreams>
+							208363,	-- Urctos <Council of Dreams>
+						},
+						["g"] = {
+							i(207138),	-- Aerwynn's Ritual Sarong
+							i(207139),	-- Cleats of the Savage Claw
+							i(207151),	-- Emerald Guardian's Casque
+							i(207173),	-- Gift of Ursine Vengeance
+							i(207168),	-- Pip's Emerald Friendship Badge
+							i(207782),	-- Sickle of the White Stag
+							i(207127),	-- Strigine Epaulets
+							i(207784),	-- Thorncaller Claw
+							i(207796),	-- Trickster's Captivating Chime
+							i(207119),	-- Urctos's Hibernal Dial
+							i(210206),	-- Verdant Sanctuary Bands
+							i(210205),	-- Vigilant Protector's Bracers
+						},
+					}),
+					e(2556, {	-- Nymue, Weaver of the Cycle
+						["crs"] = { 206172 },	-- Nymue <Weaver of the Cycle>
+						["g"] = {
+							i(207462, {	-- Dreadful Verdurous Dreamheart
+								i(207203),	-- Casket of the Risen Nightmare
+								i(207266),	-- Screaming Torchfiend's Binding
+								i(207275),	-- Devout Ashdevil's Razorhide
+							}),
+							i(207463, {	-- Mystic Verdurous Dreamheart
+								i(207257),	-- Benevolent Embersage's Robe
+								i(207221),	-- Blazing Dreamstalker's Scaled Hauberk
+								i(207293),	-- Wayward Chronomancer's Patchwork
+							}),
+							i(207464, {	-- Venerated Verdurous Dreamheart
+								i(207194),	-- Zealous Pyreknight's Warplate
+								i(207284),	-- Cassock of Lunar Communion
+								i(207212),	-- Greatwolf Outcast's Harness
+							}),
+							i(207465, {	-- Zenith Verdurous Dreamheart
+								i(207230),	-- Weyrnkeeper's Timeless Raiment
+								i(207248),	-- Mystic Heron's Burdens
+								i(207239),	-- Lucid Shadewalker's Cuirass
+								i(207185),	-- Molten Vanguard's Plackart
+							}),
+							i(208445),	-- Amulet of Eonar's Chosen
+							i(208616),	-- Dreambinder, Loom of the Great Cycle
+							i(207155),	-- Eldermoss Gauntlets
+							i(207135),	-- Eternal Sentinel's Cord
+							i(207123),	-- Lifewoven Slippers
+							i(208615),	-- Nymue's Unraveling Spindle
+							i(207798),	-- Verdant Matrix Beacon
+							i(210203),	-- Wellspring Wristlets
+						},
+					}),
 				}),
-				e(2555, {	-- Council of Dreams
-					["crs"] = {
-						208365,	-- Aerwynn <Council of Dreams>
-						208956,	-- Pip <Council of Dreams>
-						208363,	-- Urctos <Council of Dreams>
-					},
-					["g"] = {
-						i(207138),	-- Aerwynn's Ritual Sarong
-						i(207139),	-- Cleats of the Savage Claw
-						i(207151),	-- Emerald Guardian's Casque
-						i(207173),	-- Gift of Ursine Vengeance
-						i(207168),	-- Pip's Emerald Friendship Badge
-						i(207782),	-- Sickle of the White Stag
-						i(207127),	-- Strigine Epaulets
-						i(207784),	-- Thorncaller Claw
-						i(207796),	-- Trickster's Captivating Chime
-						i(207119),	-- Urctos's Hibernal Dial
-						i(210206),	-- Verdant Sanctuary Bands
-						i(210205),	-- Vigilant Protector's Bracers
-					},
-				}),
-				e(2553, {	-- Larodar, Keeper of the Flame
-					["crs"] = { 208445 },	-- Larodar, Keeper of the Flame
-					["g"] = {
-						i(207159),	-- Band of Burning Thorns
-						i(207790),	-- Larodar's Moonblade
-						i(207116),	-- Lost Scholar's Timely Hat
-						i(207149),	-- Phlegethic Girdle
-						i(207129),	-- Robes of the Ashen Grove
-						i(207792),	-- Scythe of the Fallen Keeper
-						i(207170),	-- Smoldering Seedling
-						i(207143),	-- Twisted Flamecuffs
-					},
-				}),
-				e(2556, {	-- Nymue, Weaver of the Cycle
-					["crs"] = { 206172 },	-- Nymue <Weaver of the Cycle>
-					["g"] = {
-						i(208445),	-- Amulet of Eonar's Chosen
-						i(208616),	-- Dreambinder, Loom of the Great Cycle
-						i(207155),	-- Eldermoss Gauntlets
-						i(207135),	-- Eternal Sentinel's Cord
-						i(207123),	-- Lifewoven Slippers
-						i(208615),	-- Nymue's Unraveling Spindle
-						i(207798),	-- Verdant Matrix Beacon
-						i(210203),	-- Wellspring Wristlets
-					},
-				}),
-				e(2563, {	-- Smolderon
-					["crs"] = { 200927 },	-- Smolderon <The Firelord>
-					["g"] = {
-						i(207167),	-- Ashes of the Embersoul
-						i(207166),	-- Cataclysmic Signet Brand
-						i(210204),	-- Fading Flame Wristbands
-						i(207156),	-- Fused Obsidian Sabatons
-						i(207799),	-- Incandescent Soulcleaver
-						i(207161),	-- Mantle of Blazing Sacrifice
-						i(207791),	-- Remnant Charglaive
-					},
-				}),
-				e(2565, {	-- Tindral Sageswift, Seer of the Flame
-					["crs"] = { 210601 },	-- Tindral Sageswift <Seer of Flame>
-					["g"] = {
-						i(207780),	-- Ashen Ranger's Longbow
-						i(207172),	-- Belor'relos, the Suncaller
-						i(207781),	-- Betrayer's Cinderblade
-						i(207795),	-- Eternal Kindler's Greatstaff
-						i(207163),	-- Eye of the Rising Flame
-						i(207137),	-- Flameseer's Winged Grasps
-						i(207157),	-- Smoldering Chevalier's Greatbelt
-						i(207134),	-- Tasseted Emberwalkers
-					},
-				}),
-				e(2519, {	-- Fyrakk the Blazing
-					["crs"] = { 204931 },	-- Fyrakk <The Blazing>
-					["g"] = {
-						i(208614),	-- Augury of the Primal Flame
-						i(207124),	-- Blooming Redeemer's Sash
-						i(207171),	-- Blossom of Amirdrassil
-						i(207145),	-- Boots of the Molten Hoard
-						i(207154),	-- Carapace of the Unbending Flame
-						i(207132),	-- Frenzied Incarnate Legwraps
-						i(207174),	-- Fyrakk's Tainted Rageheart
-						i(207786),	-- Gholak, the Final Conflagration
-						i(207793),	-- Rashon, the Immortal Blaze
-						i(207115),	-- Twisting Shadow Claws
-						i(207788),	-- Vakash, the Shadowed Inferno
-					},
+				header(HEADERS.Achievement, 19347, {	-- Fate of Amirdrassil
+					e(2565, {	-- Tindral Sageswift, Seer of the Flame
+						["crs"] = { 210601 },	-- Tindral Sageswift <Seer of Flame>
+						["g"] = {
+							i(207470, {	-- Dreadful Blazing Dreamheart
+								i(207200),	-- Piercing Gaze of the Risen Nightmare
+								i(207263),	-- Screaming Torchfiend's Burning Scowl
+								i(207272),	-- Devout Ashdevil's Grimhorns
+							}),
+							i(207471, {	-- Mystic Blazing Dreamheart
+								i(207254),	-- Benevolent Embersage's Casque
+								i(207218),	-- Blazing Dreamstalker's Flamewaker Horns
+								i(207290),	-- Wayward Chronomancer's Chronocap
+							}),
+							i(207472, {	-- Venerated Blazing Dreamheart
+								i(207191),	-- Zealous Pyreknight's Barbute
+								i(207281),	-- Crest of Lunar Communion
+								i(207209),	-- Greatwolf Outcast's Jaws
+							}),
+							i(207473, {	-- Zenith Blazing Dreamheart
+								i(207227),	-- Weyrnkeeper's Timeless Dracoif
+								i(207245),	-- Mystic Heron's Hatsuburi
+								i(207236),	-- Lucid Shadewalker's Deathmask
+								i(207182),	-- Molten Vanguard's Domeplate
+							}),
+							i(207780),	-- Ashen Ranger's Longbow
+							i(207172),	-- Belor'relos, the Suncaller
+							i(207781),	-- Betrayer's Cinderblade
+							i(207795),	-- Eternal Kindler's Greatstaff
+							i(207163),	-- Eye of the Rising Flame
+							i(207137),	-- Flameseer's Winged Grasps
+							i(207157),	-- Smoldering Chevalier's Greatbelt
+							i(207134),	-- Tasseted Emberwalkers
+						},
+					}),
+					e(2519, {	-- Fyrakk the Blazing
+						["crs"] = { 204931 },	-- Fyrakk <The Blazing>
+						["g"] = {
+							i(210947, {	-- Flame-Warped Curio
+								["sym"] = {{"sub","instance_tier",1207,LFR_RAID}}
+							}),
+							i(208614),	-- Augury of the Primal Flame
+							i(207124),	-- Blooming Redeemer's Sash
+							i(207171),	-- Blossom of Amirdrassil
+							i(207145),	-- Boots of the Molten Hoard
+							i(207154),	-- Carapace of the Unbending Flame
+							i(207132),	-- Frenzied Incarnate Legwraps
+							i(207174),	-- Fyrakk's Tainted Rageheart
+							i(207786),	-- Gholak, the Final Conflagration
+							i(207793),	-- Rashon, the Immortal Blaze
+							i(207115),	-- Twisting Shadow Claws
+							i(207788),	-- Vakash, the Shadowed Inferno
+						},
+					}),
 				}),
 			}),
 			d(NormalPlus, {
@@ -438,6 +554,27 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				e(2554, {	-- Igira the Cruel
 					["crs"] = { 206689 },	-- Igira the Cruel <Zaqali Elder>
 					["g"] = {
+						i(207466, {	-- Dreadful Tormented Dreamheart
+							i(207201),	-- Thorns of the Risen Nightmare
+							i(207264),	-- Screaming Torchfiend's Grasp
+							i(207273),	-- Devout Ashdevil's Claws
+						}),
+						i(207467, {	-- Mystic Tormented Dreamheart
+							i(207255),	-- Benevolent Embersage's Talons
+							i(207219),	-- Blazing Dreamstalker's Skinners
+							i(207291),	-- Wayward Chronomancer's Gloves
+						}),
+						i(207468, {	-- Venerated Tormented Dreamheart
+							i(207192),	-- Zealous Pyreknight's Jeweled Gauntlets
+							i(207282),	-- Touch of Lunar Communion
+							i(207210),	-- Greatwolf Outcast's Grips
+						}),
+						i(207469, {	-- Zenith Tormented Dreamheart
+							i(207228),	-- Weyrnkeeper's Timeless Clawguards
+							i(207246),	-- Mystic Heron's Glovebills
+							i(207237),	-- Lucid Shadewalker's Clawgrips
+							i(207183),	-- Molten Vanguard's Crushers
+						}),
 						i(207150),	-- Agonizing Manacles
 						i(207165),	-- Bandolier of Twisted Blades
 						i(207131),	-- Bloody Dragonhide Belt
@@ -489,6 +626,27 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				e(2553, {	-- Larodar, Keeper of the Flame
 					["crs"] = { 208445 },	-- Larodar, Keeper of the Flame
 					["g"] = {
+						i(207474, {	-- Dreadful Ashen Dreamheart
+							i(207199),	-- Greaves of the Risen Nightmare
+							i(207262),	-- Screaming Torchfiends Blazewraps
+							i(207271),	-- Devout Ashdevil's Tights
+						}),
+						i(207475, {	-- Mystic Ashen Dreamheart
+							i(207253),	-- Benevolent Embersage's Leggings
+							i(207217),	-- Blazing Dreamstalker's Shellgreaves
+							i(207289),	-- Wayward Chronomancer's Pantaloons
+						}),
+						i(207476, {	-- Venerated Ashen Dreamheart
+							i(207190),	-- Zealous Pyreknight's Cuisses
+							i(207280),	-- Leggings of Lunar Communion
+							i(207208),	-- Greatwolf Outcast's Fur-Lined Kilt
+						}),
+						i(207477, {	-- Zenith Ashen Dreamheart
+							i(207226),	-- Weyrnkeeper's Timeless Breeches
+							i(207244),	-- Mystic Heron's Waders
+							i(207235),	-- Lucid Shadewalker's Chausses
+							i(207181),	-- Molten Vanguard's Steel Tassets
+						}),
 						i(207159),	-- Band of Burning Thorns
 						i(207790),	-- Larodar's Moonblade
 						i(207116),	-- Lost Scholar's Timely Hat
@@ -502,6 +660,27 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				e(2556, {	-- Nymue, Weaver of the Cycle
 					["crs"] = { 206172 },	-- Nymue <Weaver of the Cycle>
 					["g"] = {
+						i(207462, {	-- Dreadful Verdurous Dreamheart
+							i(207203),	-- Casket of the Risen Nightmare
+							i(207266),	-- Screaming Torchfiend's Binding
+							i(207275),	-- Devout Ashdevil's Razorhide
+						}),
+						i(207463, {	-- Mystic Verdurous Dreamheart
+							i(207257),	-- Benevolent Embersage's Robe
+							i(207221),	-- Blazing Dreamstalker's Scaled Hauberk
+							i(207293),	-- Wayward Chronomancer's Patchwork
+						}),
+						i(207464, {	-- Venerated Verdurous Dreamheart
+							i(207194),	-- Zealous Pyreknight's Warplate
+							i(207284),	-- Cassock of Lunar Communion
+							i(207212),	-- Greatwolf Outcast's Harness
+						}),
+						i(207465, {	-- Zenith Verdurous Dreamheart
+							i(207230),	-- Weyrnkeeper's Timeless Raiment
+							i(207248),	-- Mystic Heron's Burdens
+							i(207239),	-- Lucid Shadewalker's Cuirass
+							i(207185),	-- Molten Vanguard's Plackart
+						}),
 						i(208445),	-- Amulet of Eonar's Chosen
 						i(208616),	-- Dreambinder, Loom of the Great Cycle
 						i(207155),	-- Eldermoss Gauntlets
@@ -515,6 +694,27 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				e(2563, {	-- Smolderon
 					["crs"] = { 200927 },	-- Smolderon <The Firelord>
 					["g"] = {
+						i(207478, {	-- Dreadful Smoldering Dreamheart
+							i(207198),	-- Skewers of the Risen Nightmare
+							i(207261),	-- Screaming Torchfiend's Horned Memento
+							i(207270),	-- Devout Ashdevil's Hatespikes
+						}),
+						i(207479, {	-- Mystic Smoldering Dreamheart
+							i(207252),	-- Benevolent Embersage's Wisdom
+							i(207216),	-- Blazing Dreamstalker's Finest Hunt
+							i(207288),	-- Wayward Chronomancer's Metronomes
+						}),
+						i(207480, {	-- Venerated Smoldering Dreamheart
+							i(207189),	-- Zealous Pyreknight's Ailettes
+							i(207279),	-- Shoulderguardians of Lunar Communion
+							i(207207),	-- Greatwolf Outcast's Companions
+						}),
+						i(207481, {	-- Zenith Smoldering Dreamheart
+							i(207225),	-- Weyrnkeeper's Timeless Sandbrace
+							i(207243),	-- Mystic Heron's Hopeful Effigy
+							i(207234),	-- Lucid Shadewalker's Bladed Spaulders
+							i(207180),	-- Molten Vanguard's Shouldervents
+						}),
 						i(207167),	-- Ashes of the Embersoul
 						i(207166),	-- Cataclysmic Signet Brand
 						i(210204),	-- Fading Flame Wristbands
@@ -527,6 +727,27 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				e(2565, {	-- Tindral Sageswift, Seer of the Flame
 					["crs"] = { 210601 },	-- Tindral Sageswift <Seer of Flame>
 					["g"] = {
+						i(207470, {	-- Dreadful Blazing Dreamheart
+							i(207200),	-- Piercing Gaze of the Risen Nightmare
+							i(207263),	-- Screaming Torchfiend's Burning Scowl
+							i(207272),	-- Devout Ashdevil's Grimhorns
+						}),
+						i(207471, {	-- Mystic Blazing Dreamheart
+							i(207254),	-- Benevolent Embersage's Casque
+							i(207218),	-- Blazing Dreamstalker's Flamewaker Horns
+							i(207290),	-- Wayward Chronomancer's Chronocap
+						}),
+						i(207472, {	-- Venerated Blazing Dreamheart
+							i(207191),	-- Zealous Pyreknight's Barbute
+							i(207281),	-- Crest of Lunar Communion
+							i(207209),	-- Greatwolf Outcast's Jaws
+						}),
+						i(207473, {	-- Zenith Blazing Dreamheart
+							i(207227),	-- Weyrnkeeper's Timeless Dracoif
+							i(207245),	-- Mystic Heron's Hatsuburi
+							i(207236),	-- Lucid Shadewalker's Deathmask
+							i(207182),	-- Molten Vanguard's Domeplate
+						}),
 						i(207780),	-- Ashen Ranger's Longbow
 						i(207172),	-- Belor'relos, the Suncaller
 						i(207781),	-- Betrayer's Cinderblade
@@ -540,6 +761,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				e(2519, {	-- Fyrakk the Blazing
 					["crs"] = { 204931 },	-- Fyrakk <The Blazing>
 					["g"] = {
+						i(210947, {	-- Flame-Warped Curio
+							["sym"] = {{"sub","instance_tier",1207,NORMAL_RAID}}
+						}),
 						i(208614),	-- Augury of the Primal Flame
 						i(207124),	-- Blooming Redeemer's Sash
 						i(207171),	-- Blossom of Amirdrassil
@@ -620,6 +844,27 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				e(2554, {	-- Igira the Cruel
 					["crs"] = { 206689 },	-- Igira the Cruel <Zaqali Elder>
 					["g"] = {
+						i(207466, {	-- Dreadful Tormented Dreamheart
+							i(207201),	-- Thorns of the Risen Nightmare
+							i(207264),	-- Screaming Torchfiend's Grasp
+							i(207273),	-- Devout Ashdevil's Claws
+						}),
+						i(207467, {	-- Mystic Tormented Dreamheart
+							i(207255),	-- Benevolent Embersage's Talons
+							i(207219),	-- Blazing Dreamstalker's Skinners
+							i(207291),	-- Wayward Chronomancer's Gloves
+						}),
+						i(207468, {	-- Venerated Tormented Dreamheart
+							i(207192),	-- Zealous Pyreknight's Jeweled Gauntlets
+							i(207282),	-- Touch of Lunar Communion
+							i(207210),	-- Greatwolf Outcast's Grips
+						}),
+						i(207469, {	-- Zenith Tormented Dreamheart
+							i(207228),	-- Weyrnkeeper's Timeless Clawguards
+							i(207246),	-- Mystic Heron's Glovebills
+							i(207237),	-- Lucid Shadewalker's Clawgrips
+							i(207183),	-- Molten Vanguard's Crushers
+						}),
 						i(207150),	-- Agonizing Manacles
 						i(207165),	-- Bandolier of Twisted Blades
 						i(207131),	-- Bloody Dragonhide Belt
@@ -671,6 +916,27 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				e(2553, {	-- Larodar, Keeper of the Flame
 					["crs"] = { 208445 },	-- Larodar, Keeper of the Flame
 					["g"] = {
+						i(207474, {	-- Dreadful Ashen Dreamheart
+							i(207199),	-- Greaves of the Risen Nightmare
+							i(207262),	-- Screaming Torchfiends Blazewraps
+							i(207271),	-- Devout Ashdevil's Tights
+						}),
+						i(207475, {	-- Mystic Ashen Dreamheart
+							i(207253),	-- Benevolent Embersage's Leggings
+							i(207217),	-- Blazing Dreamstalker's Shellgreaves
+							i(207289),	-- Wayward Chronomancer's Pantaloons
+						}),
+						i(207476, {	-- Venerated Ashen Dreamheart
+							i(207190),	-- Zealous Pyreknight's Cuisses
+							i(207280),	-- Leggings of Lunar Communion
+							i(207208),	-- Greatwolf Outcast's Fur-Lined Kilt
+						}),
+						i(207477, {	-- Zenith Ashen Dreamheart
+							i(207226),	-- Weyrnkeeper's Timeless Breeches
+							i(207244),	-- Mystic Heron's Waders
+							i(207235),	-- Lucid Shadewalker's Chausses
+							i(207181),	-- Molten Vanguard's Steel Tassets
+						}),
 						i(207159),	-- Band of Burning Thorns
 						i(207790),	-- Larodar's Moonblade
 						i(207116),	-- Lost Scholar's Timely Hat
@@ -684,6 +950,27 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				e(2556, {	-- Nymue, Weaver of the Cycle
 					["crs"] = { 206172 },	-- Nymue <Weaver of the Cycle>
 					["g"] = {
+						i(207462, {	-- Dreadful Verdurous Dreamheart
+							i(207203),	-- Casket of the Risen Nightmare
+							i(207266),	-- Screaming Torchfiend's Binding
+							i(207275),	-- Devout Ashdevil's Razorhide
+						}),
+						i(207463, {	-- Mystic Verdurous Dreamheart
+							i(207257),	-- Benevolent Embersage's Robe
+							i(207221),	-- Blazing Dreamstalker's Scaled Hauberk
+							i(207293),	-- Wayward Chronomancer's Patchwork
+						}),
+						i(207464, {	-- Venerated Verdurous Dreamheart
+							i(207194),	-- Zealous Pyreknight's Warplate
+							i(207284),	-- Cassock of Lunar Communion
+							i(207212),	-- Greatwolf Outcast's Harness
+						}),
+						i(207465, {	-- Zenith Verdurous Dreamheart
+							i(207230),	-- Weyrnkeeper's Timeless Raiment
+							i(207248),	-- Mystic Heron's Burdens
+							i(207239),	-- Lucid Shadewalker's Cuirass
+							i(207185),	-- Molten Vanguard's Plackart
+						}),
 						i(208445),	-- Amulet of Eonar's Chosen
 						i(208616),	-- Dreambinder, Loom of the Great Cycle
 						i(207155),	-- Eldermoss Gauntlets
@@ -697,6 +984,27 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				e(2563, {	-- Smolderon
 					["crs"] = { 200927 },	-- Smolderon <The Firelord>
 					["g"] = {
+						i(207478, {	-- Dreadful Smoldering Dreamheart
+							i(207198),	-- Skewers of the Risen Nightmare
+							i(207261),	-- Screaming Torchfiend's Horned Memento
+							i(207270),	-- Devout Ashdevil's Hatespikes
+						}),
+						i(207479, {	-- Mystic Smoldering Dreamheart
+							i(207252),	-- Benevolent Embersage's Wisdom
+							i(207216),	-- Blazing Dreamstalker's Finest Hunt
+							i(207288),	-- Wayward Chronomancer's Metronomes
+						}),
+						i(207480, {	-- Venerated Smoldering Dreamheart
+							i(207189),	-- Zealous Pyreknight's Ailettes
+							i(207279),	-- Shoulderguardians of Lunar Communion
+							i(207207),	-- Greatwolf Outcast's Companions
+						}),
+						i(207481, {	-- Zenith Smoldering Dreamheart
+							i(207225),	-- Weyrnkeeper's Timeless Sandbrace
+							i(207243),	-- Mystic Heron's Hopeful Effigy
+							i(207234),	-- Lucid Shadewalker's Bladed Spaulders
+							i(207180),	-- Molten Vanguard's Shouldervents
+						}),
 						i(207167),	-- Ashes of the Embersoul
 						i(207166),	-- Cataclysmic Signet Brand
 						i(210204),	-- Fading Flame Wristbands
@@ -709,6 +1017,27 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				e(2565, {	-- Tindral Sageswift, Seer of the Flame
 					["crs"] = { 210601 },	-- Tindral Sageswift <Seer of Flame>
 					["g"] = {
+						i(207470, {	-- Dreadful Blazing Dreamheart
+							i(207200),	-- Piercing Gaze of the Risen Nightmare
+							i(207263),	-- Screaming Torchfiend's Burning Scowl
+							i(207272),	-- Devout Ashdevil's Grimhorns
+						}),
+						i(207471, {	-- Mystic Blazing Dreamheart
+							i(207254),	-- Benevolent Embersage's Casque
+							i(207218),	-- Blazing Dreamstalker's Flamewaker Horns
+							i(207290),	-- Wayward Chronomancer's Chronocap
+						}),
+						i(207472, {	-- Venerated Blazing Dreamheart
+							i(207191),	-- Zealous Pyreknight's Barbute
+							i(207281),	-- Crest of Lunar Communion
+							i(207209),	-- Greatwolf Outcast's Jaws
+						}),
+						i(207473, {	-- Zenith Blazing Dreamheart
+							i(207227),	-- Weyrnkeeper's Timeless Dracoif
+							i(207245),	-- Mystic Heron's Hatsuburi
+							i(207236),	-- Lucid Shadewalker's Deathmask
+							i(207182),	-- Molten Vanguard's Domeplate
+						}),
 						i(207780),	-- Ashen Ranger's Longbow
 						i(207172),	-- Belor'relos, the Suncaller
 						i(207781),	-- Betrayer's Cinderblade
@@ -722,6 +1051,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				e(2519, {	-- Fyrakk the Blazing
 					["crs"] = { 204931 },	-- Fyrakk <The Blazing>
 					["g"] = {
+						i(210947, {	-- Flame-Warped Curio
+							["sym"] = {{"sub","instance_tier",1207,HEROIC_RAID}}
+						}),
 						i(208614),	-- Augury of the Primal Flame
 						i(207124),	-- Blooming Redeemer's Sash
 						i(207171),	-- Blossom of Amirdrassil
@@ -759,6 +1091,27 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					["crs"] = { 206689 },	-- Igira the Cruel <Zaqali Elder>
 					["g"] = {
 						ach(19336),	-- Mythic: Igira the Cruel
+						i(207466, {	-- Dreadful Tormented Dreamheart
+							i(207201),	-- Thorns of the Risen Nightmare
+							i(207264),	-- Screaming Torchfiend's Grasp
+							i(207273),	-- Devout Ashdevil's Claws
+						}),
+						i(207467, {	-- Mystic Tormented Dreamheart
+							i(207255),	-- Benevolent Embersage's Talons
+							i(207219),	-- Blazing Dreamstalker's Skinners
+							i(207291),	-- Wayward Chronomancer's Gloves
+						}),
+						i(207468, {	-- Venerated Tormented Dreamheart
+							i(207192),	-- Zealous Pyreknight's Jeweled Gauntlets
+							i(207282),	-- Touch of Lunar Communion
+							i(207210),	-- Greatwolf Outcast's Grips
+						}),
+						i(207469, {	-- Zenith Tormented Dreamheart
+							i(207228),	-- Weyrnkeeper's Timeless Clawguards
+							i(207246),	-- Mystic Heron's Glovebills
+							i(207237),	-- Lucid Shadewalker's Clawgrips
+							i(207183),	-- Molten Vanguard's Crushers
+						}),
 						i(207150),	-- Agonizing Manacles
 						i(207165),	-- Bandolier of Twisted Blades
 						i(207131),	-- Bloody Dragonhide Belt
@@ -813,6 +1166,27 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					["crs"] = { 208445 },	-- Larodar, Keeper of the Flame
 					["g"] = {
 						ach(19339),	-- Mythic: Larodar, Keeper of the Flame
+						i(207474, {	-- Dreadful Ashen Dreamheart
+							i(207199),	-- Greaves of the Risen Nightmare
+							i(207262),	-- Screaming Torchfiends Blazewraps
+							i(207271),	-- Devout Ashdevil's Tights
+						}),
+						i(207475, {	-- Mystic Ashen Dreamheart
+							i(207253),	-- Benevolent Embersage's Leggings
+							i(207217),	-- Blazing Dreamstalker's Shellgreaves
+							i(207289),	-- Wayward Chronomancer's Pantaloons
+						}),
+						i(207476, {	-- Venerated Ashen Dreamheart
+							i(207190),	-- Zealous Pyreknight's Cuisses
+							i(207280),	-- Leggings of Lunar Communion
+							i(207208),	-- Greatwolf Outcast's Fur-Lined Kilt
+						}),
+						i(207477, {	-- Zenith Ashen Dreamheart
+							i(207226),	-- Weyrnkeeper's Timeless Breeches
+							i(207244),	-- Mystic Heron's Waders
+							i(207235),	-- Lucid Shadewalker's Chausses
+							i(207181),	-- Molten Vanguard's Steel Tassets
+						}),
 						i(207159),	-- Band of Burning Thorns
 						i(207790),	-- Larodar's Moonblade
 						i(207116),	-- Lost Scholar's Timely Hat
@@ -827,6 +1201,27 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					["crs"] = { 206172 },	-- Nymue <Weaver of the Cycle>
 					["g"] = {
 						ach(19340),	-- Mythic: Nymue, Weaver of the Cycle
+						i(207462, {	-- Dreadful Verdurous Dreamheart
+							i(207203),	-- Casket of the Risen Nightmare
+							i(207266),	-- Screaming Torchfiend's Binding
+							i(207275),	-- Devout Ashdevil's Razorhide
+						}),
+						i(207463, {	-- Mystic Verdurous Dreamheart
+							i(207257),	-- Benevolent Embersage's Robe
+							i(207221),	-- Blazing Dreamstalker's Scaled Hauberk
+							i(207293),	-- Wayward Chronomancer's Patchwork
+						}),
+						i(207464, {	-- Venerated Verdurous Dreamheart
+							i(207194),	-- Zealous Pyreknight's Warplate
+							i(207284),	-- Cassock of Lunar Communion
+							i(207212),	-- Greatwolf Outcast's Harness
+						}),
+						i(207465, {	-- Zenith Verdurous Dreamheart
+							i(207230),	-- Weyrnkeeper's Timeless Raiment
+							i(207248),	-- Mystic Heron's Burdens
+							i(207239),	-- Lucid Shadewalker's Cuirass
+							i(207185),	-- Molten Vanguard's Plackart
+						}),
 						i(208445),	-- Amulet of Eonar's Chosen
 						i(208616),	-- Dreambinder, Loom of the Great Cycle
 						i(207155),	-- Eldermoss Gauntlets
@@ -841,6 +1236,27 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					["crs"] = { 200927 },	-- Smolderon <The Firelord>
 					["g"] = {
 						ach(19341),	-- Mythic: Smolderon
+						i(207478, {	-- Dreadful Smoldering Dreamheart
+							i(207198),	-- Skewers of the Risen Nightmare
+							i(207261),	-- Screaming Torchfiend's Horned Memento
+							i(207270),	-- Devout Ashdevil's Hatespikes
+						}),
+						i(207479, {	-- Mystic Smoldering Dreamheart
+							i(207252),	-- Benevolent Embersage's Wisdom
+							i(207216),	-- Blazing Dreamstalker's Finest Hunt
+							i(207288),	-- Wayward Chronomancer's Metronomes
+						}),
+						i(207480, {	-- Venerated Smoldering Dreamheart
+							i(207189),	-- Zealous Pyreknight's Ailettes
+							i(207279),	-- Shoulderguardians of Lunar Communion
+							i(207207),	-- Greatwolf Outcast's Companions
+						}),
+						i(207481, {	-- Zenith Smoldering Dreamheart
+							i(207225),	-- Weyrnkeeper's Timeless Sandbrace
+							i(207243),	-- Mystic Heron's Hopeful Effigy
+							i(207234),	-- Lucid Shadewalker's Bladed Spaulders
+							i(207180),	-- Molten Vanguard's Shouldervents
+						}),
 						i(207167),	-- Ashes of the Embersoul
 						i(207166),	-- Cataclysmic Signet Brand
 						i(210204),	-- Fading Flame Wristbands
@@ -854,6 +1270,27 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					["crs"] = { 210601 },	-- Tindral Sageswift <Seer of Flame>
 					["g"] = {
 						ach(19342),	-- Mythic: Tindral Sageswift, Seer of the Flame
+						i(207470, {	-- Dreadful Blazing Dreamheart
+							i(207200),	-- Piercing Gaze of the Risen Nightmare
+							i(207263),	-- Screaming Torchfiend's Burning Scowl
+							i(207272),	-- Devout Ashdevil's Grimhorns
+						}),
+						i(207471, {	-- Mystic Blazing Dreamheart
+							i(207254),	-- Benevolent Embersage's Casque
+							i(207218),	-- Blazing Dreamstalker's Flamewaker Horns
+							i(207290),	-- Wayward Chronomancer's Chronocap
+						}),
+						i(207472, {	-- Venerated Blazing Dreamheart
+							i(207191),	-- Zealous Pyreknight's Barbute
+							i(207281),	-- Crest of Lunar Communion
+							i(207209),	-- Greatwolf Outcast's Jaws
+						}),
+						i(207473, {	-- Zenith Blazing Dreamheart
+							i(207227),	-- Weyrnkeeper's Timeless Dracoif
+							i(207245),	-- Mystic Heron's Hatsuburi
+							i(207236),	-- Lucid Shadewalker's Deathmask
+							i(207182),	-- Molten Vanguard's Domeplate
+						}),
 						i(207780),	-- Ashen Ranger's Longbow
 						i(207172),	-- Belor'relos, the Suncaller
 						i(207781),	-- Betrayer's Cinderblade
@@ -875,6 +1312,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						})),
 						ach(19351, {["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 }}),	-- Cutting Edge: Fyrakk the Blazing
 						ach(19389),	-- Mythic: Fyrakk the Blazing Guild Run
+						i(210947, {	-- Flame-Warped Curio
+							["sym"] = {{"sub","instance_tier",1207,MYTHIC_RAID}}
+						}),
 						i(210061),	-- Anu'relos, Flame's Guidance (MOUNT!)
 						i(208614),	-- Augury of the Primal Flame
 						i(207124),	-- Blooming Redeemer's Sash

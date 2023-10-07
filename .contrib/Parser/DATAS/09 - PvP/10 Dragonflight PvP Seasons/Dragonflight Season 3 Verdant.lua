@@ -43,6 +43,9 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["races"] = HORDE_ONLY,
 				}),
 				-- Solo
+				ach(19443, {	-- Battle Mender: Dragonflight Season 3
+					title(529),	-- Battle Mender <Name>
+				}),
 				ach(19304, {	-- Legend: Dragonflight Season 3
 					i(210497),	-- Verdant Legend's Pennant (TOY!)
 				}),

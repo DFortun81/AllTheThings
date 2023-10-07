@@ -674,6 +674,30 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			},
 		})),
+		ach(19396, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Dragonflight Season 3 Master
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				19333,	-- Heroic: Amirdrassil, the Dream's Hope
+				19011,	-- Dragonflight Keystone Master: Season Three
+				19160,	-- Challenger II: Dragonflight Season 3
+			}},
+			["g"] = {
+				i(210944),	-- Emerald Mark of Mastery
+			},
+		})),
+		ach(19420, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Dragonflight Season 3 Hero
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				19343,	-- Mythic: Fyrakk the Blazing
+				19012,	-- Dragonflight Keystone Hero: Season Three
+				19090,	-- Elite: Dragonflight Season 3
+			}},
+			["g"] = {
+				i(210468, {	-- Emerald Blossom Dreamstone
+					-- Special Transmog here..
+				}),
+			},
+		})),
 		ach(16808, {	-- Friend of the Dragon Isles
 			crit(57032, {	-- A Mystery, Sealed
 				["_quests"] = { 66128 },	-- Next Steps

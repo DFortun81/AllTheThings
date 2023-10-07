@@ -3,11 +3,15 @@
 -------------------------------------------------------------------
 local VAULT_OF_THE_INCARNATES = 2390;
 local ABERRUS_THE_SHADOWED_CRUCIBLE = 2403;
+local ADMIRDRASSIL_THE_DREAMS_HOPE = 2502;
 local SymRaidVault = function(ClassID, DiffID)
 	return {{"sub","instance_tier",1200,DiffID,ClassID}};
 end
-local SymRaidAberrus = function(ClassID, DiffID)
+local SymRaidAdmirdrassil = function(ClassID, DiffID)
 	return {{"sub","instance_tier",1208,DiffID,ClassID}};
+end
+local SymRaidAdmirdrassil = function(ClassID, DiffID)
+	return {{"sub","instance_tier",1207,DiffID,ClassID}}
 end
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	o(382621, {	-- Revival Catalyst Console
@@ -991,6 +995,497 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								i(202445),	-- Ironstriders of the Onyx Crucible
 								i(202438),	-- Manteau of the Onyx Crucible
 								i(202439),	-- Warbands of the Onyx Crucible
+							},
+						}),
+					}),
+				}),
+			})),
+			-- ModID/BonusID might not be correct
+			header(HEADERS.LFGDungeon, ADMIRDRASSIL_THE_DREAMS_HOPE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+				d(LFR_RAID, {
+					["description"] = "",
+					["g"] = bubbleDown({ ["modID"] = 4 }, {
+						cl(DEATHKNIGHT, {
+							["sym"] = SymRaidAdmirdrassil(DEATHKNIGHT, LFR_RAID),
+							["g"] = {
+								i(207202),	-- Graveboots of the Risen Nightmare
+								i(207197),	-- Seal of the Risen Nightmare
+								i(207195),	-- Shroud of the Risen Nightmare
+								i(207196),	-- Vambraces of the Risen Nightmare
+							},
+						}),
+						cl(DEMONHUNTER, {
+							["sym"] = SymRaidAdmirdrassil(DEMONHUNTER, LFR_RAID),
+							["g"] = {
+								i(207259),	-- Screaming Torchfiend's Armlets
+								i(207260),	-- Screaming Torchfiend's Clasp
+								i(207265),	-- Screaming Torchfiend's Clutches
+								i(207258),	-- Screaming Torchfiend's Shawl
+							},
+						}),
+						cl(DRUID, {
+							["sym"] = SymRaidAdmirdrassil(DRUID, LFR_RAID),
+							["g"] = {
+								i(207249),	-- Benevolent Embersage's Featherdrape
+								i(207256),	-- Benevolent Embersage's Lined Boots
+								i(207251),	-- Benevolent Embersage's Sagacious Sash
+								i(207250),	-- Benevolent Embersage's Wristwraps
+							},
+						}),
+						cl(EVOKER, {
+							["sym"] = SymRaidAdmirdrassil(EVOKER, LFR_RAID),
+							["g"] = {
+								i(207224),	-- Weyrnkeeper's Timeless Adorned Sash
+								i(207222),	-- Weyrnkeeper's Timeless Ornamented Cloak
+								i(207229),	-- Weyrnkeeper's Timeless Treads
+								i(207223),	-- Weyrnkeeper's Timeless Wristlets
+							},
+						}),
+						cl(HUNTER, {
+							["sym"] = SymRaidAdmirdrassil(HUNTER, LFR_RAID),
+							["g"] = {
+								i(207214),	-- Blazing Dreamstalker's Bracers
+								i(207215),	-- Blazing Dreamstalker's Spined Girdle
+								i(207213),	-- Blazing Dreamstalker's Staghide
+								i(207220),	-- Blazing Dreamstalker's Striders
+							},
+						}),
+						cl(MAGE, {
+							["sym"] = SymRaidAdmirdrassil(MAGE, LFR_RAID),
+							["g"] = {
+								i(207286),	-- Wayward Chronomancer's Cuffs
+								i(207285),	-- Wayward Chronomancer's Stole
+								i(207292),	-- Wayward Chronomancer's Strapped Boots
+								i(207287),	-- Wayward Chronomancer's Synchronous Belt
+							},
+						}),
+						cl(MONK, {
+							["sym"] = SymRaidAdmirdrassil(MONK, LFR_RAID),
+							["g"] = {
+								i(207242),	-- Mystic Heron's Belt
+								i(207240),	-- Mystic Heron's Feathered Mantle
+								i(207241),	-- Mystic Heron's Fisticuffs
+								i(207247),	-- Mystic Heron's Tabi
+							},
+						}),
+						cl(PALADIN, {
+							["sym"] = SymRaidAdmirdrassil(PALADIN, LFR_RAID),
+							["g"] = {
+								i(207186),	-- Zealous Pyreknight's Banner
+								i(207193),	-- Zealous Pyreknight's Dreamstompers
+								i(207188),	-- Zealous Pyreknight's Emblem
+								i(207187),	-- Zealous Pyreknight's Flameguards
+							},
+						}),
+						cl(PRIEST, {
+							["sym"] = SymRaidAdmirdrassil(PRIEST, LFR_RAID),
+							["g"] = {
+								i(207278),	-- Cincture of Lunar Communion
+								i(207276),	-- Cloak of Lunar Communion
+								i(207283),	-- Poulaines of Lunar Communion
+								i(207277),	-- Wristwraps of Lunar Communion
+							},
+						}),
+						cl(ROGUE, {
+							["sym"] = SymRaidAdmirdrassil(ROGUE, LFR_RAID),
+							["g"] = {
+								i(207233),	-- Lucid Shadewalker's Baldric
+								i(207232),	-- Lucid Shadewalker's Bracers
+								i(207231),	-- Lucid Shadewalker's Cape
+								i(207238),	-- Lucid Shadewalker's Sollerets
+							},
+						}),
+						cl(SHAMAN, {
+							["sym"] = SymRaidAdmirdrassil(SHAMAN, LFR_RAID),
+							["g"] = {
+								i(207204),	-- Greatwolf Outcast's Chainweave
+								i(207211),	-- Greatwolf Outcast's Footpads
+								i(207206),	-- Greatwolf Outcast's Sigil Belt
+								i(207205),	-- Greatwolf Outcast's Wristguards
+							},
+						}),
+						cl(WARLOCK, {
+							["sym"] = SymRaidAdmirdrassil(WARLOCK, LFR_RAID),
+							["g"] = {
+								i(207268),	-- Devout Ashdevil's Bracelets
+								i(207269),	-- Devout Ashdevil's Fanged Sash
+								i(207267),	-- Devout Ashdevil's Fiendcloak
+								i(207274),	-- Devout Ashdevil's Slippers
+							},
+						}),
+						cl(WARRIOR, {
+							["sym"] = SymRaidAdmirdrassil(WARRIOR, LFR_RAID),
+							["g"] = {
+								i(207179),	-- Molten Vanguard's Chains
+								i(207184),	-- Molten Vanguard's Greatboots
+								i(207177),	-- Molten Vanguard's Manacles
+								i(207176),	-- Molten Vanguard's Thermal Cape
+							},
+						}),
+					}),
+				}),
+				d(NORMAL_RAID, {
+					["description"] = "",
+					["g"] = {
+						cl(DEATHKNIGHT, {
+							["sym"] = SymRaidAdmirdrassil(DEATHKNIGHT, NORMAL_RAID),
+							["g"] = {
+								i(207202),	-- Graveboots of the Risen Nightmare
+								i(207197),	-- Seal of the Risen Nightmare
+								i(207195),	-- Shroud of the Risen Nightmare
+								i(207196),	-- Vambraces of the Risen Nightmare
+							},
+						}),
+						cl(DEMONHUNTER, {
+							["sym"] = SymRaidAdmirdrassil(DEMONHUNTER, NORMAL_RAID),
+							["g"] = {
+								i(207259),	-- Screaming Torchfiend's Armlets
+								i(207260),	-- Screaming Torchfiend's Clasp
+								i(207265),	-- Screaming Torchfiend's Clutches
+								i(207258),	-- Screaming Torchfiend's Shawl
+							},
+						}),
+						cl(DRUID, {
+							["sym"] = SymRaidAdmirdrassil(DRUID, NORMAL_RAID),
+							["g"] = {
+								i(207249),	-- Benevolent Embersage's Featherdrape
+								i(207256),	-- Benevolent Embersage's Lined Boots
+								i(207251),	-- Benevolent Embersage's Sagacious Sash
+								i(207250),	-- Benevolent Embersage's Wristwraps
+							},
+						}),
+						cl(EVOKER, {
+							["sym"] = SymRaidAdmirdrassil(EVOKER, NORMAL_RAID),
+							["g"] = {
+								i(207224),	-- Weyrnkeeper's Timeless Adorned Sash
+								i(207222),	-- Weyrnkeeper's Timeless Ornamented Cloak
+								i(207229),	-- Weyrnkeeper's Timeless Treads
+								i(207223),	-- Weyrnkeeper's Timeless Wristlets
+							},
+						}),
+						cl(HUNTER, {
+							["sym"] = SymRaidAdmirdrassil(HUNTER, NORMAL_RAID),
+							["g"] = {
+								i(207214),	-- Blazing Dreamstalker's Bracers
+								i(207215),	-- Blazing Dreamstalker's Spined Girdle
+								i(207213),	-- Blazing Dreamstalker's Staghide
+								i(207220),	-- Blazing Dreamstalker's Striders
+							},
+						}),
+						cl(MAGE, {
+							["sym"] = SymRaidAdmirdrassil(MAGE, NORMAL_RAID),
+							["g"] = {
+								i(207286),	-- Wayward Chronomancer's Cuffs
+								i(207285),	-- Wayward Chronomancer's Stole
+								i(207292),	-- Wayward Chronomancer's Strapped Boots
+								i(207287),	-- Wayward Chronomancer's Synchronous Belt
+							},
+						}),
+						cl(MONK, {
+							["sym"] = SymRaidAdmirdrassil(MONK, NORMAL_RAID),
+							["g"] = {
+								i(207242),	-- Mystic Heron's Belt
+								i(207240),	-- Mystic Heron's Feathered Mantle
+								i(207241),	-- Mystic Heron's Fisticuffs
+								i(207247),	-- Mystic Heron's Tabi
+							},
+						}),
+						cl(PALADIN, {
+							["sym"] = SymRaidAdmirdrassil(PALADIN, NORMAL_RAID),
+							["g"] = {
+								i(207186),	-- Zealous Pyreknight's Banner
+								i(207193),	-- Zealous Pyreknight's Dreamstompers
+								i(207188),	-- Zealous Pyreknight's Emblem
+								i(207187),	-- Zealous Pyreknight's Flameguards
+							},
+						}),
+						cl(PRIEST, {
+							["sym"] = SymRaidAdmirdrassil(PRIEST, NORMAL_RAID),
+							["g"] = {
+								i(207278),	-- Cincture of Lunar Communion
+								i(207276),	-- Cloak of Lunar Communion
+								i(207283),	-- Poulaines of Lunar Communion
+								i(207277),	-- Wristwraps of Lunar Communion
+							},
+						}),
+						cl(ROGUE, {
+							["sym"] = SymRaidAdmirdrassil(ROGUE, NORMAL_RAID),
+							["g"] = {
+								i(207233),	-- Lucid Shadewalker's Baldric
+								i(207232),	-- Lucid Shadewalker's Bracers
+								i(207231),	-- Lucid Shadewalker's Cape
+								i(207238),	-- Lucid Shadewalker's Sollerets
+							},
+						}),
+						cl(SHAMAN, {
+							["sym"] = SymRaidAdmirdrassil(SHAMAN, NORMAL_RAID),
+							["g"] = {
+								i(207204),	-- Greatwolf Outcast's Chainweave
+								i(207211),	-- Greatwolf Outcast's Footpads
+								i(207206),	-- Greatwolf Outcast's Sigil Belt
+								i(207205),	-- Greatwolf Outcast's Wristguards
+							},
+						}),
+						cl(WARLOCK, {
+							["sym"] = SymRaidAdmirdrassil(WARLOCK, NORMAL_RAID),
+							["g"] = {
+								i(207268),	-- Devout Ashdevil's Bracelets
+								i(207269),	-- Devout Ashdevil's Fanged Sash
+								i(207267),	-- Devout Ashdevil's Fiendcloak
+								i(207274),	-- Devout Ashdevil's Slippers
+							},
+						}),
+						cl(WARRIOR, {
+							["sym"] = SymRaidAdmirdrassil(WARRIOR, NORMAL_RAID),
+							["g"] = {
+								i(207179),	-- Molten Vanguard's Chains
+								i(207184),	-- Molten Vanguard's Greatboots
+								i(207177),	-- Molten Vanguard's Manacles
+								i(207176),	-- Molten Vanguard's Thermal Cape
+							},
+						}),
+					},
+				}),
+				d(HEROIC_RAID, {
+					["description"] = "",
+					["g"] = bubbleDown({ ["modID"] = 5 }, {
+						cl(DEATHKNIGHT, {
+							["sym"] = SymRaidAdmirdrassil(DEATHKNIGHT, HEROIC_RAID),
+							["g"] = {
+								i(207202),	-- Graveboots of the Risen Nightmare
+								i(207197),	-- Seal of the Risen Nightmare
+								i(207195),	-- Shroud of the Risen Nightmare
+								i(207196),	-- Vambraces of the Risen Nightmare
+							},
+						}),
+						cl(DEMONHUNTER, {
+							["sym"] = SymRaidAdmirdrassil(DEMONHUNTER, HEROIC_RAID),
+							["g"] = {
+								i(207259),	-- Screaming Torchfiend's Armlets
+								i(207260),	-- Screaming Torchfiend's Clasp
+								i(207265),	-- Screaming Torchfiend's Clutches
+								i(207258),	-- Screaming Torchfiend's Shawl
+							},
+						}),
+						cl(DRUID, {
+							["sym"] = SymRaidAdmirdrassil(DRUID, HEROIC_RAID),
+							["g"] = {
+								i(207249),	-- Benevolent Embersage's Featherdrape
+								i(207256),	-- Benevolent Embersage's Lined Boots
+								i(207251),	-- Benevolent Embersage's Sagacious Sash
+								i(207250),	-- Benevolent Embersage's Wristwraps
+							},
+						}),
+						cl(EVOKER, {
+							["sym"] = SymRaidAdmirdrassil(EVOKER, HEROIC_RAID),
+							["g"] = {
+								i(207224),	-- Weyrnkeeper's Timeless Adorned Sash
+								i(207222),	-- Weyrnkeeper's Timeless Ornamented Cloak
+								i(207229),	-- Weyrnkeeper's Timeless Treads
+								i(207223),	-- Weyrnkeeper's Timeless Wristlets
+							},
+						}),
+						cl(HUNTER, {
+							["sym"] = SymRaidAdmirdrassil(HUNTER, HEROIC_RAID),
+							["g"] = {
+								i(207214),	-- Blazing Dreamstalker's Bracers
+								i(207215),	-- Blazing Dreamstalker's Spined Girdle
+								i(207213),	-- Blazing Dreamstalker's Staghide
+								i(207220),	-- Blazing Dreamstalker's Striders
+							},
+						}),
+						cl(MAGE, {
+							["sym"] = SymRaidAdmirdrassil(MAGE, HEROIC_RAID),
+							["g"] = {
+								i(207286),	-- Wayward Chronomancer's Cuffs
+								i(207285),	-- Wayward Chronomancer's Stole
+								i(207292),	-- Wayward Chronomancer's Strapped Boots
+								i(207287),	-- Wayward Chronomancer's Synchronous Belt
+							},
+						}),
+						cl(MONK, {
+							["sym"] = SymRaidAdmirdrassil(MONK, HEROIC_RAID),
+							["g"] = {
+								i(207242),	-- Mystic Heron's Belt
+								i(207240),	-- Mystic Heron's Feathered Mantle
+								i(207241),	-- Mystic Heron's Fisticuffs
+								i(207247),	-- Mystic Heron's Tabi
+							},
+						}),
+						cl(PALADIN, {
+							["sym"] = SymRaidAdmirdrassil(PALADIN, HEROIC_RAID),
+							["g"] = {
+								i(207186),	-- Zealous Pyreknight's Banner
+								i(207193),	-- Zealous Pyreknight's Dreamstompers
+								i(207188),	-- Zealous Pyreknight's Emblem
+								i(207187),	-- Zealous Pyreknight's Flameguards
+							},
+						}),
+						cl(PRIEST, {
+							["sym"] = SymRaidAdmirdrassil(PRIEST, HEROIC_RAID),
+							["g"] = {
+								i(207278),	-- Cincture of Lunar Communion
+								i(207276),	-- Cloak of Lunar Communion
+								i(207283),	-- Poulaines of Lunar Communion
+								i(207277),	-- Wristwraps of Lunar Communion
+							},
+						}),
+						cl(ROGUE, {
+							["sym"] = SymRaidAdmirdrassil(ROGUE, HEROIC_RAID),
+							["g"] = {
+								i(207233),	-- Lucid Shadewalker's Baldric
+								i(207232),	-- Lucid Shadewalker's Bracers
+								i(207231),	-- Lucid Shadewalker's Cape
+								i(207238),	-- Lucid Shadewalker's Sollerets
+							},
+						}),
+						cl(SHAMAN, {
+							["sym"] = SymRaidAdmirdrassil(SHAMAN, HEROIC_RAID),
+							["g"] = {
+								i(207204),	-- Greatwolf Outcast's Chainweave
+								i(207211),	-- Greatwolf Outcast's Footpads
+								i(207206),	-- Greatwolf Outcast's Sigil Belt
+								i(207205),	-- Greatwolf Outcast's Wristguards
+							},
+						}),
+						cl(WARLOCK, {
+							["sym"] = SymRaidAdmirdrassil(WARLOCK, HEROIC_RAID),
+							["g"] = {
+								i(207268),	-- Devout Ashdevil's Bracelets
+								i(207269),	-- Devout Ashdevil's Fanged Sash
+								i(207267),	-- Devout Ashdevil's Fiendcloak
+								i(207274),	-- Devout Ashdevil's Slippers
+							},
+						}),
+						cl(WARRIOR, {
+							["sym"] = SymRaidAdmirdrassil(WARRIOR, HEROIC_RAID),
+							["g"] = {
+								i(207179),	-- Molten Vanguard's Chains
+								i(207184),	-- Molten Vanguard's Greatboots
+								i(207177),	-- Molten Vanguard's Manacles
+								i(207176),	-- Molten Vanguard's Thermal Cape
+							},
+						}),
+					}),
+				}),
+				d(MYTHIC_RAID, {
+					["description"] = "",
+					["g"] = bubbleDown({ ["modID"] = 6 }, {
+						cl(DEATHKNIGHT, {
+							["sym"] = SymRaidAdmirdrassil(DEATHKNIGHT, MYTHIC_RAID),
+							["g"] = {
+								i(207202),	-- Graveboots of the Risen Nightmare
+								i(207197),	-- Seal of the Risen Nightmare
+								i(207195),	-- Shroud of the Risen Nightmare
+								i(207196),	-- Vambraces of the Risen Nightmare
+							},
+						}),
+						cl(DEMONHUNTER, {
+							["sym"] = SymRaidAdmirdrassil(DEMONHUNTER, MYTHIC_RAID),
+							["g"] = {
+								i(207259),	-- Screaming Torchfiend's Armlets
+								i(207260),	-- Screaming Torchfiend's Clasp
+								i(207265),	-- Screaming Torchfiend's Clutches
+								i(207258),	-- Screaming Torchfiend's Shawl
+							},
+						}),
+						cl(DRUID, {
+							["sym"] = SymRaidAdmirdrassil(DRUID, MYTHIC_RAID),
+							["g"] = {
+								i(207249),	-- Benevolent Embersage's Featherdrape
+								i(207256),	-- Benevolent Embersage's Lined Boots
+								i(207251),	-- Benevolent Embersage's Sagacious Sash
+								i(207250),	-- Benevolent Embersage's Wristwraps
+							},
+						}),
+						cl(EVOKER, {
+							["sym"] = SymRaidAdmirdrassil(EVOKER, MYTHIC_RAID),
+							["g"] = {
+								i(207224),	-- Weyrnkeeper's Timeless Adorned Sash
+								i(207222),	-- Weyrnkeeper's Timeless Ornamented Cloak
+								i(207229),	-- Weyrnkeeper's Timeless Treads
+								i(207223),	-- Weyrnkeeper's Timeless Wristlets
+							},
+						}),
+						cl(HUNTER, {
+							["sym"] = SymRaidAdmirdrassil(HUNTER, MYTHIC_RAID),
+							["g"] = {
+								i(207214),	-- Blazing Dreamstalker's Bracers
+								i(207215),	-- Blazing Dreamstalker's Spined Girdle
+								i(207213),	-- Blazing Dreamstalker's Staghide
+								i(207220),	-- Blazing Dreamstalker's Striders
+							},
+						}),
+						cl(MAGE, {
+							["sym"] = SymRaidAdmirdrassil(MAGE, MYTHIC_RAID),
+							["g"] = {
+								i(207286),	-- Wayward Chronomancer's Cuffs
+								i(207285),	-- Wayward Chronomancer's Stole
+								i(207292),	-- Wayward Chronomancer's Strapped Boots
+								i(207287),	-- Wayward Chronomancer's Synchronous Belt
+							},
+						}),
+						cl(MONK, {
+							["sym"] = SymRaidAdmirdrassil(MONK, MYTHIC_RAID),
+							["g"] = {
+								i(207242),	-- Mystic Heron's Belt
+								i(207240),	-- Mystic Heron's Feathered Mantle
+								i(207241),	-- Mystic Heron's Fisticuffs
+								i(207247),	-- Mystic Heron's Tabi
+							},
+						}),
+						cl(PALADIN, {
+							["sym"] = SymRaidAdmirdrassil(PALADIN, MYTHIC_RAID),
+							["g"] = {
+								i(207186),	-- Zealous Pyreknight's Banner
+								i(207193),	-- Zealous Pyreknight's Dreamstompers
+								i(207188),	-- Zealous Pyreknight's Emblem
+								i(207187),	-- Zealous Pyreknight's Flameguards
+							},
+						}),
+						cl(PRIEST, {
+							["sym"] = SymRaidAdmirdrassil(PRIEST, MYTHIC_RAID),
+							["g"] = {
+								i(207278),	-- Cincture of Lunar Communion
+								i(207276),	-- Cloak of Lunar Communion
+								i(207283),	-- Poulaines of Lunar Communion
+								i(207277),	-- Wristwraps of Lunar Communion
+							},
+						}),
+						cl(ROGUE, {
+							["sym"] = SymRaidAdmirdrassil(ROGUE, MYTHIC_RAID),
+							["g"] = {
+								i(207233),	-- Lucid Shadewalker's Baldric
+								i(207232),	-- Lucid Shadewalker's Bracers
+								i(207231),	-- Lucid Shadewalker's Cape
+								i(207238),	-- Lucid Shadewalker's Sollerets
+							},
+						}),
+						cl(SHAMAN, {
+							["sym"] = SymRaidAdmirdrassil(SHAMAN, MYTHIC_RAID),
+							["g"] = {
+								i(207204),	-- Greatwolf Outcast's Chainweave
+								i(207211),	-- Greatwolf Outcast's Footpads
+								i(207206),	-- Greatwolf Outcast's Sigil Belt
+								i(207205),	-- Greatwolf Outcast's Wristguards
+							},
+						}),
+						cl(WARLOCK, {
+							["sym"] = SymRaidAdmirdrassil(WARLOCK, MYTHIC_RAID),
+							["g"] = {
+								i(207268),	-- Devout Ashdevil's Bracelets
+								i(207269),	-- Devout Ashdevil's Fanged Sash
+								i(207267),	-- Devout Ashdevil's Fiendcloak
+								i(207274),	-- Devout Ashdevil's Slippers
+							},
+						}),
+						cl(WARRIOR, {
+							["sym"] = SymRaidAdmirdrassil(WARRIOR, MYTHIC_RAID),
+							["g"] = {
+								i(207179),	-- Molten Vanguard's Chains
+								i(207184),	-- Molten Vanguard's Greatboots
+								i(207177),	-- Molten Vanguard's Manacles
+								i(207176),	-- Molten Vanguard's Thermal Cape
 							},
 						}),
 					}),

@@ -1030,9 +1030,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(199967),	-- Enchant Weapon - Burning Writ+
 			i(200009),	-- Enchant Weapon - Burning Writ++
 			i(200051),	-- Enchant Weapon - Burning Writ+++
-			i(207085, {["timeline"] = {ADDED_10_2_0}}),	-- Enchant Weapon - Dreaming Devotion+
-			i(207086, {["timeline"] = {ADDED_10_2_0}}),	-- Enchant Weapon - Dreaming Devotion++
-			i(207087, {["timeline"] = {ADDED_10_2_0}}),	-- Enchant Weapon - Dreaming Devotion+++
+			i(207085, {["timeline"] = {ADDED_10_2_0}}),	-- Enchant Weapon: Dreaming Devotion+
+			i(207086, {["timeline"] = {ADDED_10_2_0}}),	-- Enchant Weapon: Dreaming Devotion++
+			i(207087, {["timeline"] = {ADDED_10_2_0}}),	-- Enchant Weapon: Dreaming Devotion+++
 			i(199968),	-- Enchant Weapon - Earthen Devotion+
 			i(200010),	-- Enchant Weapon - Earthen Devotion++
 			i(200052),	-- Enchant Weapon - Earthen Devotion+++

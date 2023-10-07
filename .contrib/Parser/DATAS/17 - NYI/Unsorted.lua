@@ -630,143 +630,6 @@ root(ROOTS.Unsorted, {
 			i(206476),	-- Tyr's Guard Equipment
 			i(206942),	-- Sealed Kaldorei Scroll
 			i(207025),	-- <Placeholder> Fyrakk Axe - Shadowflame
-			i(207176),	-- 10.2 Raid - Emerald Dream - Class Sets - Warrior - Armor - Generic - Cloak
-			i(207177),	-- 10.2 Raid - Emerald Dream - Class Sets - Warrior - Armor - Plate - Wrist
-			i(207179),	-- 10.2 Raid - Emerald Dream - Class Sets - Warrior - Armor - Plate - Waist
-			i(207180),	-- 10.2 Raid - Emerald Dream - Class Sets - Warrior - Armor - Plate - Shoulder
-			i(207181),	-- 10.2 Raid - Emerald Dream - Class Sets - Warrior - Armor - Plate - Legs
-			i(207182),	-- 10.2 Raid - Emerald Dream - Class Sets - Warrior - Armor - Plate - Head
-			i(207183),	-- 10.2 Raid - Emerald Dream - Class Sets - Warrior - Armor - Plate - Hand
-			i(207184),	-- 10.2 Raid - Emerald Dream - Class Sets - Warrior - Armor - Plate - Feet
-			i(207185),	-- 10.2 Raid - Emerald Dream - Class Sets - Warrior - Armor - Plate - Chest
-			i(207186),	-- 10.2 Raid - Emerald Dream - Class Sets - Paladin - Armor - Generic - Cloak
-			i(207187),	-- 10.2 Raid - Emerald Dream - Class Sets - Paladin - Armor - Plate - Wrist
-			i(207188),	-- 10.2 Raid - Emerald Dream - Class Sets - Paladin - Armor - Plate - Waist
-			i(207189),	-- 10.2 Raid - Emerald Dream - Class Sets - Paladin - Armor - Plate - Shoulder
-			i(207190),	-- 10.2 Raid - Emerald Dream - Class Sets - Paladin - Armor - Plate - Legs
-			i(207191),	-- 10.2 Raid - Emerald Dream - Class Sets - Paladin - Armor - Plate - Head
-			i(207192),	-- 10.2 Raid - Emerald Dream - Class Sets - Paladin - Armor - Plate - Hand
-			i(207193),	-- 10.2 Raid - Emerald Dream - Class Sets - Paladin - Armor - Plate - Feet
-			i(207194),	-- 10.2 Raid - Emerald Dream - Class Sets - Paladin - Armor - Plate - Chest
-			i(207195),	-- 10.2 Raid - Emerald Dream - Class Sets - Death Knight - Armor - Generic - Cloak
-			i(207196),	-- 10.2 Raid - Emerald Dream - Class Sets - Death Knight - Armor - Plate - Wrist
-			i(207197),	-- 10.2 Raid - Emerald Dream - Class Sets - Death Knight - Armor - Plate - Waist
-			i(207198),	-- 10.2 Raid - Emerald Dream - Class Sets - Death Knight - Armor - Plate - Shoulder
-			i(207199),	-- 10.2 Raid - Emerald Dream - Class Sets - Death Knight - Armor - Plate - Legs
-			i(207200),	-- 10.2 Raid - Emerald Dream - Class Sets - Death Knight - Armor - Plate - Head
-			i(207201),	-- 10.2 Raid - Emerald Dream - Class Sets - Death Knight - Armor - Plate - Hand
-			i(207202),	-- 10.2 Raid - Emerald Dream - Class Sets - Death Knight - Armor - Plate - Feet
-			i(207203),	-- 10.2 Raid - Emerald Dream - Class Sets - Death Knight - Armor - Plate - Chest
-			i(207204),	-- 10.2 Raid - Emerald Dream - Class Sets - Shaman - Armor - Generic - Cloak
-			i(207205),	-- 10.2 Raid - Emerald Dream - Class Sets - Shaman - Armor - Mail - Wrist
-			i(207206),	-- 10.2 Raid - Emerald Dream - Class Sets - Shaman - Armor - Mail - Waist
-			i(207207),	-- 10.2 Raid - Emerald Dream - Class Sets - Shaman - Armor - Mail - Shoulder
-			i(207208),	-- 10.2 Raid - Emerald Dream - Class Sets - Shaman - Armor - Mail - Legs
-			i(207209),	-- 10.2 Raid - Emerald Dream - Class Sets - Shaman - Armor - Mail - Head
-			i(207210),	-- 10.2 Raid - Emerald Dream - Class Sets - Shaman - Armor - Mail - Hand
-			i(207211),	-- 10.2 Raid - Emerald Dream - Class Sets - Shaman - Armor - Mail - Feet
-			i(207212),	-- 10.2 Raid - Emerald Dream - Class Sets - Shaman - Armor - Mail - Chest
-			i(207213),	-- 10.2 Raid - Emerald Dream - Class Sets - Hunter - Armor - Generic - Cloak
-			i(207214),	-- 10.2 Raid - Emerald Dream - Class Sets - Hunter - Armor - Mail - Wrist
-			i(207215),	-- 10.2 Raid - Emerald Dream - Class Sets - Hunter - Armor - Mail - Waist
-			i(207216),	-- 10.2 Raid - Emerald Dream - Class Sets - Hunter - Armor - Mail - Shoulder
-			i(207217),	-- 10.2 Raid - Emerald Dream - Class Sets - Hunter - Armor - Mail - Legs
-			i(207218),	-- 10.2 Raid - Emerald Dream - Class Sets - Hunter - Armor - Mail - Head
-			i(207219),	-- 10.2 Raid - Emerald Dream - Class Sets - Hunter - Armor - Mail - Hand
-			i(207220),	-- 10.2 Raid - Emerald Dream - Class Sets - Hunter - Armor - Mail - Feet
-			i(207221),	-- 10.2 Raid - Emerald Dream - Class Sets - Hunter - Armor - Mail - Chest
-			i(207222),	-- 10.2 Raid - Emerald Dream - Class Sets - Evoker - Armor - Generic - Cloak
-			i(207223),	-- 10.2 Raid - Emerald Dream - Class Sets - Evoker - Armor - Mail - Wrist
-			i(207224),	-- 10.2 Raid - Emerald Dream - Class Sets - Evoker - Armor - Mail - Waist
-			i(207225),	-- 10.2 Raid - Emerald Dream - Class Sets - Evoker - Armor - Mail - Shoulder
-			i(207226),	-- 10.2 Raid - Emerald Dream - Class Sets - Evoker - Armor - Mail - Legs
-			i(207227),	-- 10.2 Raid - Emerald Dream - Class Sets - Evoker - Armor - Mail - Head
-			i(207228),	-- 10.2 Raid - Emerald Dream - Class Sets - Evoker - Armor - Mail - Hand
-			i(207229),	-- 10.2 Raid - Emerald Dream - Class Sets - Evoker - Armor - Mail - Feet
-			i(207230),	-- 10.2 Raid - Emerald Dream - Class Sets - Evoker - Armor - Mail - Chest
-			i(207231),	-- 10.2 Raid - Emerald Dream - Class Sets - Rogue - Armor - Generic - Cloak
-			i(207232),	-- 10.2 Raid - Emerald Dream - Class Sets - Rogue - Armor - Leather - Wrist
-			i(207233),	-- 10.2 Raid - Emerald Dream - Class Sets - Rogue - Armor - Leather - Waist
-			i(207234),	-- 10.2 Raid - Emerald Dream - Class Sets - Rogue - Armor - Leather - Shoulder
-			i(207235),	-- 10.2 Raid - Emerald Dream - Class Sets - Rogue - Armor - Leather - Legs
-			i(207236),	-- 10.2 Raid - Emerald Dream - Class Sets - Rogue - Armor - Leather - Head
-			i(207237),	-- 10.2 Raid - Emerald Dream - Class Sets - Rogue - Armor - Leather - Hand
-			i(207238),	-- 10.2 Raid - Emerald Dream - Class Sets - Rogue - Armor - Leather - Feet
-			i(207239),	-- 10.2 Raid - Emerald Dream - Class Sets - Rogue - Armor - Leather - Chest
-			i(207240),	-- 10.2 Raid - Emerald Dream - Class Sets - Monk - Armor - Generic - Cloak
-			i(207241),	-- 10.2 Raid - Emerald Dream - Class Sets - Monk - Armor - Leather - Wrist
-			i(207242),	-- 10.2 Raid - Emerald Dream - Class Sets - Monk - Armor - Leather - Waist
-			i(207243),	-- 10.2 Raid - Emerald Dream - Class Sets - Monk - Armor - Leather - Shoulder
-			i(207244),	-- 10.2 Raid - Emerald Dream - Class Sets - Monk - Armor - Leather - Legs
-			i(207245),	-- 10.2 Raid - Emerald Dream - Class Sets - Monk - Armor - Leather - Head
-			i(207246),	-- 10.2 Raid - Emerald Dream - Class Sets - Monk - Armor - Leather - Hand
-			i(207247),	-- 10.2 Raid - Emerald Dream - Class Sets - Monk - Armor - Leather - Feet
-			i(207248),	-- 10.2 Raid - Emerald Dream - Class Sets - Monk - Armor - Leather - Chest
-			i(207249),	-- 10.2 Raid - Emerald Dream - Class Sets - Druid - Armor - Generic - Cloak
-			i(207250),	-- 10.2 Raid - Emerald Dream - Class Sets - Druid - Armor - Leather - Wrist
-			i(207251),	-- 10.2 Raid - Emerald Dream - Class Sets - Druid - Armor - Leather - Waist
-			i(207252),	-- 10.2 Raid - Emerald Dream - Class Sets - Druid - Armor - Leather - Shoulder
-			i(207253),	-- 10.2 Raid - Emerald Dream - Class Sets - Druid - Armor - Leather - Legs
-			i(207254),	-- 10.2 Raid - Emerald Dream - Class Sets - Druid - Armor - Leather - Head
-			i(207255),	-- 10.2 Raid - Emerald Dream - Class Sets - Druid - Armor - Leather - Hand
-			i(207256),	-- 10.2 Raid - Emerald Dream - Class Sets - Druid - Armor - Leather - Feet
-			i(207257),	-- 10.2 Raid - Emerald Dream - Class Sets - Druid - Armor - Leather - Chest
-			i(207258),	-- 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Generic - Cloak
-			i(207259),	-- 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Wrist
-			i(207260),	-- 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Waist
-			i(207261),	-- 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Shoulder
-			i(207262),	-- 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Legs
-			i(207263),	-- 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Head
-			i(207264),	-- 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Hand
-			i(207265),	-- 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Feet
-			i(207266),	-- 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Chest
-			i(207267),	-- 10.2 Raid - Emerald Dream - Class Sets - Warlock - Armor - Generic - Cloak
-			i(207268),	-- 10.2 Raid - Emerald Dream - Class Sets - Warlock - Armor - Cloth -  Wrist
-			i(207269),	-- 10.2 Raid - Emerald Dream - Class Sets - Warlock - Armor - Cloth -  Waist
-			i(207270),	-- 10.2 Raid - Emerald Dream - Class Sets - Warlock - Armor - Cloth -  Shoulder
-			i(207271),	-- 10.2 Raid - Emerald Dream - Class Sets - Warlock - Armor - Cloth -  Legs
-			i(207272),	-- 10.2 Raid - Emerald Dream - Class Sets - Warlock - Armor - Cloth -  Head
-			i(207273),	-- 10.2 Raid - Emerald Dream - Class Sets - Warlock - Armor - Cloth -  Hand
-			i(207274),	-- 10.2 Raid - Emerald Dream - Class Sets - Warlock - Armor - Cloth - Feet
-			i(207275),	-- 10.2 Raid - Emerald Dream - Class Sets - Warlock - Armor - Cloth - Robe
-			i(207276),	-- 10.2 Raid - Emerald Dream - Class Sets - Priest - Armor - Generic - Cloak
-			i(207277),	-- 10.2 Raid - Emerald Dream - Class Sets - Priest - Armor - Cloth -  Wrist
-			i(207278),	-- 10.2 Raid - Emerald Dream - Class Sets - Priest - Armor - Cloth - Waist
-			i(207279),	-- 10.2 Raid - Emerald Dream - Class Sets - Priest - Armor - Cloth -  Shoulder
-			i(207280),	-- 10.2 Raid - Emerald Dream - Class Sets - Priest - Armor - Cloth -  Legs
-			i(207281),	-- 10.2 Raid - Emerald Dream - Class Sets - Priest - Armor - Cloth -  Head
-			i(207282),	-- 10.2 Raid - Emerald Dream - Class Sets - Priest - Armor - Cloth -  Hand
-			i(207283),	-- 10.2 Raid - Emerald Dream - Class Sets - Priest - Armor - Cloth - Feet
-			i(207284),	-- 10.2 Raid - Emerald Dream - Class Sets - Priest - Armor - Cloth - Chest
-			i(207285),	-- 10.2 Raid - Emerald Dream - Class Sets - Mage - Armor - Generic - Cloak
-			i(207286),	-- 10.2 Raid - Emerald Dream - Class Sets - Mage - Armor - Cloth -  Wrist
-			i(207287),	-- 10.2 Raid - Emerald Dream - Class Sets - Mage - Armor - Cloth -  Waist
-			i(207288),	-- 10.2 Raid - Emerald Dream - Class Sets - Mage - Armor - Cloth -  Shoulder
-			i(207289),	-- 10.2 Raid - Emerald Dream - Class Sets - Mage - Armor - Cloth -  Legs
-			i(207290),	-- 10.2 Raid - Emerald Dream - Class Sets - Mage - Armor - Cloth -  Head
-			i(207291),	-- 10.2 Raid - Emerald Dream - Class Sets - Mage - Armor - Cloth -  Hand
-			i(207292),	-- 10.2 Raid - Emerald Dream - Class Sets - Mage - Armor - Cloth - Feet
-			i(207293),	-- 10.2 Raid - Emerald Dream - Class Sets - Mage - Armor - Cloth - Chest
-			i(207462),	-- Dreadful Verdurous Dreamseed
-			i(207463),	-- Mystic Verdurous Dreamseed
-			i(207464),	-- Venerated Verdurous Dreamseed
-			i(207465),	-- Zenith Verdurous Dreamseed
-			i(207466),	-- Dreadful Tormented Dreamseed
-			i(207467),	-- Mystic Tormented Dreamseed
-			i(207468),	-- Venerated Tormented Dreamseed
-			i(207469),	-- Zenith Tormented Dreamseed
-			i(207470),	-- Dreadful Blazing Dreamseed
-			i(207471),	-- Mystic Blazing Dreamseed
-			i(207472),	-- Venerated Blazing Dreamseed
-			i(207473),	-- Zenith Blazing Dreamseed
-			i(207474),	-- Dreadful Ashen Dreamseed
-			i(207475),	-- Mystic Ashen Dreamseed
-			i(207476),	-- Venerated Ashen Dreamseed
-			i(207477),	-- Zenith Ashen Dreamseed
-			i(207478),	-- Dreadful Smoldering Dreamseed
-			i(207479),	-- Mystic Smoldering Dreamseed
-			i(207480),	-- Venerated Smoldering Dreamseed
-			i(207481),	-- Zenith Smoldering Dreamseed
 			i(207632),	-- Dream-Attuned Crystal
 			i(208049),	-- Valarjar Trophy
 			i(208198),	-- Tyr's Guard Bulwark
@@ -1090,7 +953,6 @@ root(ROOTS.Unsorted, {
 			i(210452),	-- Small Demon Horn
 			i(210456),	-- Dreaming Antler Fragment
 			i(210457),	-- Fish Bones
-			i(210468),	-- Emerald Blossom Dreamstone
 			i(210470),	-- Echoed Ephemera
 			i(210472),	-- Igira's Cruel Nightmare
 			i(210473),	-- Larodar's Fiery Reverie
@@ -1150,26 +1012,6 @@ root(ROOTS.Unsorted, {
 			i(156468),	-- Cloak of the Dormant Blaze
 			i(156469),	-- Pillar of Fortitude
 			i(156470),	-- Bloodcrush Cudgel
-			i(207462),	-- Dreadful Verdurous Dreamheart
-			i(207463),	-- Mystic Verdurous Dreamheart
-			i(207464),	-- Venerated Verdurous Dreamheart
-			i(207465),	-- Zenith Verdurous Dreamheart
-			i(207466),	-- Dreadful Tormented Dreamheart
-			i(207467),	-- Mystic Tormented Dreamheart
-			i(207468),	-- Venerated Tormented Dreamheart
-			i(207469),	-- Zenith Tormented Dreamheart
-			i(207470),	-- Dreadful Blazing Dreamheart
-			i(207471),	-- Mystic Blazing Dreamheart
-			i(207472),	-- Venerated Blazing Dreamheart
-			i(207473),	-- Zenith Blazing Dreamheart
-			i(207474),	-- Dreadful Ashen Dreamheart
-			i(207475),	-- Mystic Ashen Dreamheart
-			i(207476),	-- Venerated Ashen Dreamheart
-			i(207477),	-- Zenith Ashen Dreamheart
-			i(207478),	-- Dreadful Smoldering Dreamheart
-			i(207479),	-- Mystic Smoldering Dreamheart
-			i(207480),	-- Venerated Smoldering Dreamheart
-			i(207481),	-- Zenith Smoldering Dreamheart
 			i(208983),	-- Yvelyn's Assistance
 			i(210434),	-- Visage of Ursol
 			i(210453),	-- Sample of Cinder Pollen
@@ -1222,10 +1064,8 @@ root(ROOTS.Unsorted, {
 			i(210919),	-- Crimson Glimmerfur
 			i(210920),	-- Gift of Amirdrassil
 			i(210923),	-- Clutch of Wyrm's Dreaming Crests
-			i(210944),	-- Emerald Mark of Mastery
 			i(210945),	-- Stargrazer
 			i(210946),	-- Mammyth
-			i(210947),	-- Flame-Warped Curio
 			i(210948),	-- Imagiwing
 			i(210952),	-- Spare Heated Hearthstone
 			i(210958),	-- Crown of the Dryad Guardian
@@ -1266,126 +1106,6 @@ root(ROOTS.Unsorted, {
 			i(206366),	-- Cracked Trophy of Strife
 			i(206812),	-- Warmonger's Epaulets
 			i(206824),	-- Jingoist's Epaulets
-			i(207085),	-- Enchant Weapon: Dreaming Devotion
-			i(207086),	-- Enchant Weapon: Dreaming Devotion
-			i(207087),	-- Enchant Weapon: Dreaming Devotion
-			i(207176),	-- Molten Vanguard's Thermal Cape
-			i(207177),	-- Molten Vanguard's Manacles
-			i(207179),	-- Molten Vanguard's Chains
-			i(207180),	-- Molten Vanguard's Shouldervents
-			i(207181),	-- Molten Vanguard's Steel Tassets
-			i(207182),	-- Molten Vanguard's Domeplate
-			i(207183),	-- Molten Vanguard's Crushers
-			i(207184),	-- Molten Vanguard's Greatboots
-			i(207185),	-- Molten Vanguard's Plackart
-			i(207186),	-- Zealous Pyreknight's Banner
-			i(207187),	-- Zealous Pyreknight's Flameguards
-			i(207188),	-- Zealous Pyreknight's Emblem
-			i(207189),	-- Zealous Pyreknight's Ailettes
-			i(207190),	-- Zealous Pyreknight's Cuisses
-			i(207191),	-- Zealous Pyreknight's Barbute
-			i(207192),	-- Zealous Pyreknight's Jeweled Gauntlets
-			i(207193),	-- Zealous Pyreknight's Dreamstompers
-			i(207194),	-- Zealous Pyreknight's Warplate
-			i(207195),	-- Shroud of the Risen Nightmare
-			i(207196),	-- Vambraces of the Risen Nightmare
-			i(207197),	-- Seal of the Risen Nightmare
-			i(207198),	-- Skewers of the Risen Nightmare
-			i(207199),	-- Greaves of the Risen Nightmare
-			i(207200),	-- Piercing Gaze of the Risen Nightmare
-			i(207201),	-- Thorns of the Risen Nightmare
-			i(207202),	-- Graveboots of the Risen Nightmare
-			i(207203),	-- Casket of the Risen Nightmare
-			i(207204),	-- Greatwolf Outcast's Chainweave
-			i(207205),	-- Greatwolf Outcast's Wristguards
-			i(207206),	-- Greatwolf Outcast's Sigil Belt
-			i(207207),	-- Greatwolf Outcast's Companions
-			i(207208),	-- Greatwolf Outcast's Fur-Lined Kilt
-			i(207209),	-- Greatwolf Outcast's Jaws
-			i(207210),	-- Greatwolf Outcast's Grips
-			i(207211),	-- Greatwolf Outcast's Footpads
-			i(207212),	-- Greatwolf Outcast's Harness
-			i(207213),	-- Blazing Dreamstalker's Staghide
-			i(207214),	-- Blazing Dreamstalker's Bracers
-			i(207215),	-- Blazing Dreamstalker's Spined Girdle
-			i(207216),	-- Blazing Dreamstalker's Finest Hunt
-			i(207217),	-- Blazing Dreamstalker's Shellgreaves
-			i(207218),	-- Blazing Dreamstalker's Flamewaker Horns
-			i(207219),	-- Blazing Dreamstalker's Skinners
-			i(207220),	-- Blazing Dreamstalker's Striders
-			i(207221),	-- Blazing Dreamstalker's Scaled Hauberk
-			i(207222),	-- Weyrnkeeper's Timeless Ornamented Cloak
-			i(207223),	-- Weyrnkeeper's Timeless Wristlets
-			i(207224),	-- Weyrnkeeper's Timeless Adorned Sash
-			i(207225),	-- Weyrnkeeper's Timeless Sandbrace
-			i(207226),	-- Weyrnkeeper's Timeless Breeches
-			i(207227),	-- Weyrnkeeper's Timeless Dracoif
-			i(207228),	-- Weyrnkeeper's Timeless Clawguards
-			i(207229),	-- Weyrnkeeper's Timeless Treads
-			i(207230),	-- Weyrnkeeper's Timeless Raiment
-			i(207231),	-- Lucid Shadewalker's Cape
-			i(207232),	-- Lucid Shadewalker's Bracers
-			i(207233),	-- Lucid Shadewalker's Baldric
-			i(207234),	-- Lucid Shadewalker's Bladed Spaulders
-			i(207235),	-- Lucid Shadewalker's Chausses
-			i(207236),	-- Lucid Shadewalker's Deathmask
-			i(207237),	-- Lucid Shadewalker's Clawgrips
-			i(207238),	-- Lucid Shadewalker's Sollerets
-			i(207239),	-- Lucid Shadewalker's Cuirass
-			i(207240),	-- Mystic Heron's Feathered Mantle
-			i(207241),	-- Mystic Heron's Fisticuffs
-			i(207242),	-- Mystic Heron's Belt
-			i(207243),	-- Mystic Heron's Hopeful Effigy
-			i(207244),	-- Mystic Heron's Waders
-			i(207245),	-- Mystic Heron's Hatsuburi
-			i(207246),	-- Mystic Heron's Glovebills
-			i(207247),	-- Mystic Heron's Tabi
-			i(207248),	-- Mystic Heron's Burdens
-			i(207249),	-- Benevolent Embersage's Featherdrape
-			i(207250),	-- Benevolent Embersage's Wristwraps
-			i(207251),	-- Benevolent Embersage's Sagacious Sash
-			i(207252),	-- Benevolent Embersage's Wisdom
-			i(207253),	-- Benevolent Embersage's Leggings
-			i(207254),	-- Benevolent Embersage's Casque
-			i(207255),	-- Benevolent Embersage's Talons
-			i(207256),	-- Benevolent Embersage's Lined Boots
-			i(207257),	-- Benevolent Embersage's Robe
-			i(207258),	-- Screaming Torchfiend's Shawl
-			i(207259),	-- Screaming Torchfiend's Armlets
-			i(207260),	-- Screaming Torchfiend's Clasp
-			i(207261),	-- Screaming Torchfiend's Horned Memento
-			i(207262),	-- Screaming Torchfiends Blazewraps
-			i(207263),	-- Screaming Torchfiend's Burning Scowl
-			i(207264),	-- Screaming Torchfiend's Grasp
-			i(207265),	-- Screaming Torchfiend's Clutches
-			i(207266),	-- Screaming Torchfiend's Binding
-			i(207267),	-- Devout Ashdevil's Fiendcloak
-			i(207268),	-- Devout Ashdevil's Bracelets
-			i(207269),	-- Devout Ashdevil's Fanged Sash
-			i(207270),	-- Devout Ashdevil's Hatespikes
-			i(207271),	-- Devout Ashdevil's Tights
-			i(207272),	-- Devout Ashdevil's Grimhorns
-			i(207273),	-- Devout Ashdevil's Claws
-			i(207274),	-- Devout Ashdevil's Slippers
-			i(207275),	-- Devout Ashdevil's Razorhide
-			i(207276),	-- Cloak of Lunar Communion
-			i(207277),	-- Wristwraps of Lunar Communion
-			i(207278),	-- Cincture of Lunar Communion
-			i(207279),	-- Shoulderguardians of Lunar Communion
-			i(207280),	-- Leggings of Lunar Communion
-			i(207281),	-- Crest of Lunar Communion
-			i(207282),	-- Touch of Lunar Communion
-			i(207283),	-- Poulaines of Lunar Communion
-			i(207284),	-- Cassock of Lunar Communion
-			i(207285),	-- Wayward Chronomancer's Stole
-			i(207286),	-- Wayward Chronomancer's Cuffs
-			i(207287),	-- Wayward Chronomancer's Synchronous Belt
-			i(207288),	-- Wayward Chronomancer's Metronomes
-			i(207289),	-- Wayward Chronomancer's Pantaloons
-			i(207290),	-- Wayward Chronomancer's Chronocap
-			i(207291),	-- Wayward Chronomancer's Gloves
-			i(207292),	-- Wayward Chronomancer's Strapped Boots
-			i(207293),	-- Wayward Chronomancer's Patchwork
 			i(208217),	-- Illusory Scroll of Youth - NOT USED
 			i(208250),	-- Verdant Combatant's Adamant Epaulets
 			i(208302),	-- Pattern: Verdant Combatant's Adamant Epaulets

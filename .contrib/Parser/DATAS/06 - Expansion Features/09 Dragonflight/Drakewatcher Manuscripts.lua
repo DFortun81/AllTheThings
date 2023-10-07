@@ -1119,7 +1119,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(210432),	-- Highland Drake: Winter Veil Armor
 		}),
 		header(HEADERS.Item, 194034, {	-- Renewed Proto-Drake
-			i(210537),	-- Renewed Proto-Drake: Embodiment of Shadowflame
+			i(210537),	-- Renewed Proto-Drake: Embodiment of Shadowflame (DM!)
 			i(210536),	-- Renewed Proto-Drake: Embodiment of the Blazing (DM!)
 		}),
 		header(HEADERS.Item, 194549, {	-- Windborne Velocidrake
