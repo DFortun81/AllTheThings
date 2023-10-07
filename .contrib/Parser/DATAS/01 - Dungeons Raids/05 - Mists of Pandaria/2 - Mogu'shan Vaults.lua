@@ -286,11 +286,11 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 						["crs"] = { 60009 },	-- Feng the Accursed
 						["g"] = {
 							ach(6674, {	-- Anything You Can Do, I Can Do Better...
-								crit(1),	-- Epicenter
-								crit(2),	-- Lightning Fists
-								crit(3),	-- Wildfire Spark
-								crit(4),	-- Arcane Velocity
-								crit(5),	-- Arcane Resonance
+								crit(19501),	-- Epicenter
+								crit(19502),	-- Lightning Fists
+								crit(19504),	-- Wildfire Spark
+								crit(19506),	-- Arcane Velocity
+								crit(19507),	-- Arcane Resonance
 							}),
 							i(85986),	-- Amulet of Seven Curses
 							i(86082),	-- Arrow Breaking Windcloak

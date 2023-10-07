@@ -41,16 +41,16 @@ root(ROOTS.Zones, {
 					ach(8112),	-- Blue Response
 					ach(8118),	-- Boop
 					ach(8103, {	-- Champions of Lei Shen (Isle of Thunder)
-						crit(1),	-- Haywire Sunreaver Construct
-						crit(2),	-- Mumta
-						crit(3),	-- Ku'lai the Skyclaw
-						crit(4),	-- Progenitus
-						crit(5),	-- Goda
-						crit(6),	-- God-Hulk Ramuk
-						crit(7),	-- Al'tabim the All-Seeing
-						crit(8),	-- Backbreaker Uru
-						crit(9),	-- Lu-Ban
-						crit(10),	-- Molthor
+						crit(22820),	-- Haywire Sunreaver Construct
+						crit(22821),	-- Mumta
+						crit(22822),	-- Ku'lai the Skyclaw
+						crit(22823),	-- Progenitus
+						crit(22824),	-- Goda
+						crit(22825),	-- God-Hulk Ramuk
+						crit(22826),	-- Al'tabim the All-Seeing
+						crit(22827),	-- Backbreaker Uru
+						crit(22828),	-- Lu-Ban
+						crit(22829),	-- Molthor
 					}),
 					ach(8120),	-- Direhorn in a China Shop
 					ach(8117),	-- For the Ward!
@@ -59,48 +59,43 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							{
 								["objectID"] = 218435,	-- Agents of Order
-								["criteriaID"] = 1,
+								["criteriaID"] = 22717,
 								["coord"] = { 35.8, 54.7, ISLE_OF_THUNDER },
 							},
 							{
 								["objectID"] = 218436,	-- Shadow, Storm, and Stone
-								["criteriaID"] = 2,
+								["criteriaID"] = 22718,
 								["coord"] = { 59.3, 26.3, ISLE_OF_THUNDER },
 							},
 							{
 								["objectID"] = 218437,	-- The Curse and the Silence
-								["criteriaID"] = 3,
+								["criteriaID"] = 22719,
 								["coord"] = { 49.9, 20.4, ISLE_OF_THUNDER },
 							},
 							{
 								["objectID"] = 218438,	-- Age of a Hundred Kings
-								["criteriaID"] = 4,
+								["criteriaID"] = 22720,
 								["coord"] = { 62.5, 37.8, ISLE_OF_THUNDER },
 							},
 						},
 					},
 					ach(8099, {		-- Isle of Thunder
-						crit(1),		-- First Landing
-						crit(2),		-- Build a Base
-						crit(3),		-- Break Down the Wall
-						crit(4),		-- Take the Forge
-						crit(5),		-- Assault the Shipyard
-						crit(6),		-- The Fall of Shan Bu
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(8101, {	-- It Was Worth Every Ritual Stone
-						crit(6),	-- Ancient Mogu Guardian
-						crit(8),	-- Cera
-						crit(3),	-- Echo of Kros
-						crit(4),	-- Electromancer Ju'le
-						crit(9),	-- Incomplete Drakkari Colossus
-						crit(2),	-- Kor'dok and Tinzo the Emberkeeper
-						crit(5),	-- Qi'nor
-						crit(1),	-- Spirit of Warlord Teng
-						crit(7),	-- Windweaver Akil'amon
+						crit(22814),	-- Spirit of Warlord Teng
+						crit(22815),	-- Kor'dok and Tinzo the Emberkeeper
+						crit(22812),	-- Echo of Kros
+						crit(23205),	-- Electromancer Ju'le
+						crit(22763),	-- Qi'nor
+						crit(22817),	-- Ancient Mogu Guardian
+						crit(22759),	-- Windweaver Akil'amon
+						crit(22813),	-- Cera
+						crit(23206),	-- Incomplete Drakkari Colossus
 					}),
 					ach(8119, {	-- Our Powers Combined
-						crit(1),	-- All four blessings active
-						crit(2),	-- No blessings active
+						crit(22844),	-- All four blessings active
+						crit(22845),	-- No blessings active
 					}),
 					ach(8100),	-- Pay to Slay
 					ach(8114),	-- Platform Hero
@@ -108,22 +103,22 @@ root(ROOTS.Zones, {
 					ach(8050, {	-- Rumbles of Thunder
 						{
 							["objectID"] = 218431,	-- Lei Shen
-							["criteriaID"] = 1,
+							["criteriaID"] = 22713,
 							["coord"] = { 40.2, 40.7, ISLE_OF_THUNDER },
 						},
 						{
 							["objectID"] = 218432,	-- The Sacred Mount
-							["criteriaID"] = 2,
+							["criteriaID"] = 22714,
 							["coord"] = { 47.1, 59.9, ISLE_OF_THUNDER },
 						},
 						{
 							["objectID"] = 218433,	-- Unity at a Price
-							["criteriaID"] = 3,
+							["criteriaID"] = 22715,
 							["coord"] = { 34.9, 65.6, ISLE_OF_THUNDER },
 						},
 						{
 							["objectID"] = 218434,	-- The Pandaren Problem
-							["criteriaID"] = 4,
+							["criteriaID"] = 22716,
 							["coord"] = { 60.7, 68.8, ISLE_OF_THUNDER },
 						},
 					}),
@@ -131,62 +126,48 @@ root(ROOTS.Zones, {
 					ach(8049, {	-- The Zandalari Prophecy
 						{
 							["objectID"] = 218427,	-- Coming of Age
-							["criteriaID"] = 1,
+							["criteriaID"] = 22708,
 							["coord"] = { 35.4, 70.2, ISLE_OF_THUNDER },
 						},
 						{
 							["objectID"] = 218428,	-- For Council and King
-							["criteriaID"] = 2,
+							["criteriaID"] = 22709,
 							["coord"] = { 66.0, 44.7, ISLE_OF_THUNDER },
 						},
 						{
 							["objectID"] = 218429,	-- Shadows of the Loa
-							["criteriaID"] = 3,
+							["criteriaID"] = 22710,
 							["coord"] = { 36.3, 70.1, ISLE_OF_THUNDER },
 						},
 						{
 							["objectID"] = 218430,	-- The Dark Prophet Zul
-							["criteriaID"] = 4,
+							["criteriaID"] = 22711,
 							["coord"] = { 52.6, 41.4, ISLE_OF_THUNDER },
 						},
 					}),
 					ach(8110, {	-- These Mogu Have Gotta Go-gu
 						ach(8109),	-- The Mogu Below-gu
-						crit(1, {	-- Haqin of the Hundred Spears slain
+						crit(22836, {	-- Haqin of the Hundred Spears slain
 							["_npcs"] = { 69800 },
 						}),
-						crit(2, {	-- Forgemaster Deng slain
+						crit(22837, {	-- Forgemaster Deng slain
 							["_npcs"] = { 69809 },
 						}),
-						crit(3, {	-- Sparkmancer Vu slain
+						crit(22838, {	-- Sparkmancer Vu slain
 							["_npcs"] = { 69961 },
 						}),
 					}),
 					ach(8111),	-- This Isn't Even My Final Form
 					ach(8104),	-- Thunder Plunder
 					ach(8108, {	-- When in Ihgaluk, Do as the Skumblade Do
-						crit(3),	-- Adult Kroshik
-						crit(2),	-- Baby Kroshik
-						crit(1),	-- Kroshik Egg
-						crit(4),	-- Sacrificed Kroshik
+						crit(22832),	-- Kroshik Egg
+						crit(22833),	-- Baby Kroshik
+						crit(22834),	-- Adult Kroshik
+						crit(22835),	-- Sacrificed Kroshik
 					}),
 					ach(8116),	-- You Made Me Bleed My Own Blood
 					ach(8212, {	-- Zandalari Library Card
-						crit(1, {
-							["provider"] = {"i", 95409},	-- Iron-Bound Zandalari Journal
-						}),
-						crit(2, {
-							["provider"] = {"i", 95410},	-- Blood-Spattered Zandalari Journal
-						}),
-						crit(3, {
-							["provider"] = {"i", 95411},	-- Torn Zandalari Journal
-						}),
-						crit(4, {
-							["provider"] = {"i", 95412},	-- Frayed Zandalari Journal
-						}),
-						crit(5, {
-							["provider"] = {"i", 95408},	-- Waterlogged Zandalari Journal
-						}),
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 				}),
 				petbattle(filter(BATTLE_PETS, {
@@ -719,10 +700,10 @@ root(ROOTS.Zones, {
 							m(518, {	-- Thunder King's Citadel
 								ach(8106, {				-- In the Hall of the Thunder King
 									["groups"] = {
-										crit(1),			-- Obtain a Handful of Stolen Gems from the Treasure Saurok
-										crit(2),			-- Loot 10 Golden Treasure Chests in one run
-										crit(3),			-- Slay God-Hulk Gulkan
-										crit(4),			-- Reach Tenwu of the Red Smoke
+										crit(22910),			-- Obtain a Handful of Stolen Gems from the Treasure Saurok
+										crit(23207),			-- Loot 10 Golden Treasure Chests in one run
+										crit(22981),			-- Slay God-Hulk Gulkan
+										crit(22980),			-- Reach Tenwu of the Red Smoke
 									},
 									-- removed 'classes' since I've found no evidence this is restricted to Rogues...
 								}),

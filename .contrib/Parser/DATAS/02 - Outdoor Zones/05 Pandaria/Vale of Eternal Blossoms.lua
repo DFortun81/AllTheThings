@@ -30,7 +30,8 @@ root(ROOTS.Zones, {
 					ach(6754, {	-- The Dark Heart of the Mogu
 						["collectible"] = false,
 						["g"] = {
-							crit(4, {	-- The Thunder King
+							crit(19665, {	-- The Thunder King
+								["objectID"] = 213334,
 								["coord"] = { 40.1, 75.6, VALE_OF_ETERNAL_BLOSSOMS },
 							}),
 						},

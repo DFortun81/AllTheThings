@@ -52,7 +52,8 @@ root(ROOTS.Zones, {
 					ach(6754, {	-- The Dark Heart of the Mogu
 						["collectible"] = false,
 						["g"] = {
-							crit(3, {	-- Spirit Binders
+							crit(19664, {	-- Spirit Binders
+								["objectID"] = 213333,
 								["coord"] = { 42.2, 17.4, THE_JADE_FOREST },
 							}),
 						},

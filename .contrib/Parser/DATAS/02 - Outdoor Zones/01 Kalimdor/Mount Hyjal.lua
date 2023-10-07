@@ -1262,7 +1262,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["sourceQuest"] = 29197,	-- Caught Unawares
 					["groups"] = {
-						ach(5866, crit(1)),	-- The Molten Front Offensive / Stop the assault on the Sanctuary of Malorne
+						ach(5866, {	-- The Molten Front Offensive / Stop the assault on the Sanctuary of Malorne
+							["sym"] = {{ "achievement_criteria" }},
+						}),
 					},
 				}),
 				q(25549, {	-- The Sanctum of the Prophets

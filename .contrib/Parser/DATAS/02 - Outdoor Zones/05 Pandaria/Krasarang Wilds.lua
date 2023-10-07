@@ -83,7 +83,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					ach(6754, {	-- The Dark Heart of the Mogu
-						crit(2, {	-- The Lost Dynasty
+						crit(19663, {	-- The Lost Dynasty
+							["objectID"] = 213332,
 							["coord"] = { 50.90, 31.67, KRASARANG_WILDS },
 						}),
 					}),

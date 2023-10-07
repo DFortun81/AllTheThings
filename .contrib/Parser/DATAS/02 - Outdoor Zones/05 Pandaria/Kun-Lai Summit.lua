@@ -243,17 +243,17 @@ root(ROOTS.Zones, {
 				n(ACHIEVEMENTS, {
 					explorationAch(6976),	-- Explore Kun-Lai Summit
 					ach(7286, {	-- Finish Them! (Temple of the White Tiger)
-						crit(1),	-- Brewmaster Chani
-						crit(2),	-- Lun-Chi
-						crit(3),	-- Clever Ashyo
-						crit(4),	-- Ken-Ken
-						crit(5),	-- Kang Bramblestaff
-						crit(6),	-- The Wrestler
-						crit(7),	-- Master Boom Boom
-						crit(8),	-- Master Windfur
-						crit(9),	-- Hackiss
-						crit(10),	-- Healiss
-						crit(11),	-- Tankiss
+						crit(20440),	-- Brewmaster Chani
+						crit(20442),	-- Lun-Chi
+						crit(20443),	-- Clever Ashyo
+						crit(20451),	-- Ken-Ken
+						crit(20444),	-- Kang Bramblestaff
+						crit(20445),	-- The Wrestler
+						crit(20446),	-- Master Boom Boom
+						crit(20447),	-- Master Windfur
+						crit(20448),	-- Hackiss
+						crit(20449),	-- Healiss
+						crit(20450),	-- Tankiss
 					}),
 					ach(7386, {	-- Grand Expedition Yak
 						["provider"] = { "i", 84101 },	-- Grand Expedition Yak
@@ -304,88 +304,15 @@ root(ROOTS.Zones, {
 					}),
 					ach(6537, {	-- Slum It in the Summit (A)
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							crit(1, {	-- Westwind Rest
-								["sourceQuest"] = 30514,	-- Challenge Accepted
-							}),
-							crit(2, {	-- The Yaungol Invasion
-								["description"] = "This criteria doesn't trigger automatically. You will need to log out for it to get marked completed.",
-								["sourceQuests"] = {
-									30651,	-- Barrels of Fun
-									30650,	-- Pandaren Prisoners
-									30660,	-- The Ordo Warbringer
-									30662,	-- The Ordo Warbringer
-								},
-							}),
-							crit(3, {	-- Inkgill Mere
-								["sourceQuest"] = 30855,	-- The Fall of Shai-Hu
-							}),
-							crit(4, {	-- The Yak Wash
-								["sourceQuest"] = 30492,	-- Back in Yak
-							}),
-							crit(5, {	-- The Burlap Trail
-								["sourceQuest"] = 30612,	-- The Leader Hozen
-							}),
-							crit(6, {	-- Kota Peak
-								["sourceQuest"] = 30747,	-- The Burlap Grind
-							}),
-							crit(7, {	-- The Thunder King
-								["sourceQuest"] = 30800,	-- Stealing Their Thunder King
-							}),
-							crit(8, {	-- Temple of the White Tiger
-								["sourceQuest"] = 31394,	-- A Celestial Experience
-							}),
-							crit(9, {	-- Zouchin Village
-								["sourceQuest"] = 30946,	-- Revelations
-							}),
-							crit(10, {	-- The Shado-Pan
-								["sourceQuest"] = 30752,	-- Unbelievable!
-							}),
-						},
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(6538, {	-- Slum It in the Summit (H)
 						["races"] = HORDE_ONLY,
-						["g"] = {
-							crit(1, {	-- Eastwind Rest
-								["sourceQuest"] = 30515,	-- Challenge Accepted
-							}),
-							crit(2, {	-- The Yaungol Invasion
-								["description"] = "This criteria doesn't trigger automatically. You will need to log out for it to get marked completed.",
-								["sourceQuests"] = {
-									30656,	-- Barrels of Fun (H)
-									30655,	-- Pandaren Prisoners (H)
-									30661,	-- The Ordo Warbringer
-									30663,	-- The Ordo Warbringer
-								},
-							}),
-							crit(3, {	-- Inkgill Mere
-								["sourceQuest"] = 30855,	-- The Fall of Shai-Hu
-							}),
-							crit(4, {	-- The Yak Wash
-								["sourceQuest"] = 30492,	-- Back in Yak
-							}),
-							crit(5, {	-- The Burlap Trail
-								["sourceQuest"] = 30612,	-- The Leader Hozen
-							}),
-							crit(6, {	-- Kota Peak
-								["sourceQuest"] = 30747,	-- The Burlap Grind
-							}),
-							crit(7, {	-- The Thunder King
-								["sourceQuest"] = 30800,	-- Stealing Their Thunder King
-							}),
-							crit(8, {	-- Temple of the White Tiger
-								["sourceQuest"] = 31395,	-- A Celestial Experience
-							}),
-							crit(9, {	-- Zouchin Village
-								["sourceQuest"] = 30946,	-- Revelations
-							}),
-							crit(10, {	-- The Shado-Pan
-								["sourceQuest"] = 30752,	-- Unbelievable!
-							}),
-						},
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(6754, {	-- The Dark Heart of the Mogu
-						crit(1, {	-- Valley of the Emperors (Kun-Lai Summit)
+						crit(19662, {	-- Valley of the Emperors (Kun-Lai Summit)
+							["objectID"] = 213331,	-- Valley of the Emperors
 							["coord"] = { 53.0, 46.58, KUN_LAI_SUMMIT },
 							["description"] = "The scroll is in the first big room."
 						}),

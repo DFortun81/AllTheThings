@@ -60,10 +60,10 @@ root(ROOTS.Zones, {
 					}),
 					explorationAch(6978),	-- Explore Dread Wastes
 					ach(6857, {	-- Heart of the Mantid Swarm (Dread Wastes)
-						crit(1),	-- Cycle of the Mantid (Dread Wastes)
-						crit(2),	-- Mantid Society (Dread Wastes)
-						crit(3),	-- Amber (Dread Wastes)
-						crit(4),	-- The Empress (Dread Wastes)
+						crit(19797),	-- Cycle of the Mantid (Dread Wastes)
+						crit(19798),	-- Mantid Society (Dread Wastes)
+						crit(19799),	-- Amber (Dread Wastes)
+						crit(19800),	-- The Empress (Dread Wastes)
 					}),
 					ach(7316, {	-- Over Their Heads
 						crit(20511, {		-- Garalon
@@ -114,16 +114,16 @@ root(ROOTS.Zones, {
 					}),
 					ach(7321),	-- Spreading the Warmth
 					ach(7313, {	-- Stay Klaxxi
-						crit(1),	-- Angel of Death
-						crit(9),	-- Children of the Grave
-						crit(10),	-- Battle Hymn
-						crit(6),	-- Iron Mantid
-						crit(2),	-- Master of Puppets
-						crit(3),	-- Painkiller
-						crit(5),	-- Raining Blood
-						crit(4),	-- Seek and Destroy
-						crit(7),	-- Silent Lucidity
-						crit(8),	-- Speed King
+						crit(20951),	-- Angel of Death
+						crit(20952),	-- Master of Puppets
+						crit(20953),	-- Painkiller
+						crit(20954),	-- Seek and Destroy
+						crit(20955),	-- Raining Blood
+						crit(20956),	-- Iron Mantid
+						crit(20957),	-- Silent Lucidity
+						crit(20958),	-- Speed 
+						crit(20959),	-- Children of the Grave
+						crit(20960),	-- Battle Hymn
 					}),
 					ach(7314),	-- Test Drive
 					ach(6350, {	-- To All the Squirrels I Once Caressed?
