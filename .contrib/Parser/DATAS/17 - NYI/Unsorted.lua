@@ -582,6 +582,7 @@ root(ROOTS.Unsorted, {
 				i(210556),	-- Ivy (PET!)
 			}),
 			filter(MOUNTS, {
+				i(210919),	-- Crimson Glimmerfur (MOUNT!)
 				i(210774),	-- Ochre Dreamtalon (MOUNT!)
 				i(210059),	-- Winter Night Dreamsaber (MOUNT!)
 			}),
@@ -1018,8 +1019,6 @@ root(ROOTS.Unsorted, {
 			i(210756),	-- Gleaming Satchel of Drake's Dreaming Crests
 			i(210762),	-- Shimmering Clutch of Wyrm's Dreaming Crests
 			i(210768),	-- Viridescent Bouquet of Aspect's Dreaming Crests
-			i(210831),	-- Delugen
-			i(210833),	-- Talont
 			i(210835),	-- Empty Vial
 			i(210836),	-- Empty Vial
 			i(210837),	-- Empty Vial
@@ -1061,17 +1060,12 @@ root(ROOTS.Unsorted, {
 			i(210883),	-- Ensemble: Scarlet Zealot's Trappings
 			i(210916),	-- Ember of Fyrakk
 			i(210917),	-- Pouch of Whelpling's Dreaming Crests
-			i(210919),	-- Crimson Glimmerfur
 			i(210920),	-- Gift of Amirdrassil
 			i(210923),	-- Clutch of Wyrm's Dreaming Crests
-			i(210945),	-- Stargrazer
-			i(210946),	-- Mammyth
-			i(210948),	-- Imagiwing
 			i(210952),	-- Spare Heated Hearthstone
 			i(210958),	-- Crown of the Dryad Guardian
 			i(210959),	-- [PH] Misfit Renown Item
 			i(210961),	-- Alara'shinu
-			i(210969),	-- Salatrancer
 			i(210977),	-- Coalesced Moonlight
 			i(210991),	-- Small Box of Vials
 			i(210992),	-- Overflowing Dream Warden Trove

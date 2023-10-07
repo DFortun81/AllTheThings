@@ -1678,19 +1678,26 @@ i(0, 419567);		-- Ginormous Grrloc
 ------------------
 i(210061, 424484);	-- Anu'relos, Flame's Guidance
 i(209947, 423871);	-- Blossoming Dreamstag
+i(210831, 427222);	-- Delugen
 i(210058, 424479);	-- Evening Sun Dreamsaber
 i(210412, 425338);	-- Flourishing Whimsydrake
+i(210948, 427549);	-- Imagiwing
 i(209951, 423891);	-- Lunar Dreamstag
+i(210946, 427546);	-- Mammyth
 i(210057, 424482);	-- Morning Flourish Dreamsaber
 i(209950, 423877);	-- Rekindled Dreamstag
+i(210969, 427724);	-- Salatrancer
 i(210060, 424474);	-- Shadow Dusk Dreamsaber
 i(210775, 427043);	-- Snowfluff Dreamtalon
 i(210769, 426955);	-- Springtide Dreamtalon
+i(210945, 427226);	-- Stargrazer
 i(209949, 423873);	-- Suntouched Dreamstag
+i(210833, 427224);	-- Talont
 i(209060, 422486);	-- Verdant Armoredon
 i(210345, 425416);	-- Verdant Gladiator's Slitherdrake
 i(210070, 424534);	-- Vicious Moonbeast
 i(210069, 424535);	-- Vicious Moonbeast
 --- Unsorted ---
+i(210919, 427435);	-- Crimson Glimmerfur
 i(210774, 427041);	-- Ochre Dreamtalon
 i(210059, 424476);	-- Winter Night Dreamsaber
