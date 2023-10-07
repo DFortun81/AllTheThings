@@ -905,10 +905,11 @@ root(ROOTS.Zones, {
 						["qg"] = 28314,	-- Longrunner Nanik
 					}),
 					q(12298, {	-- High Commander Halford Wyrmbane
-						["coord"] = { 31.2, 43.9, HOWLING_FJORD },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 23859,	-- Greer Orehammer
 						["sourceQuest"] = 12297,	-- Of Traitors and Treason
+						["coord"] = { 31.2, 43.9, HOWLING_FJORD },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(11329, {	-- I'll Try Anything!
 						["coord"] = { 60.2, 18.6, HOWLING_FJORD },
