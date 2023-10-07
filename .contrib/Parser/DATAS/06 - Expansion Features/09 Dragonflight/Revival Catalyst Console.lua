@@ -7,7 +7,7 @@ local ADMIRDRASSIL_THE_DREAMS_HOPE = 2502;
 local SymRaidVault = function(ClassID, DiffID)
 	return {{"sub","instance_tier",1200,DiffID,ClassID}};
 end
-local SymRaidAdmirdrassil = function(ClassID, DiffID)
+local SymRaidAberrus = function(ClassID, DiffID)
 	return {{"sub","instance_tier",1208,DiffID,ClassID}};
 end
 local SymRaidAdmirdrassil = function(ClassID, DiffID)
