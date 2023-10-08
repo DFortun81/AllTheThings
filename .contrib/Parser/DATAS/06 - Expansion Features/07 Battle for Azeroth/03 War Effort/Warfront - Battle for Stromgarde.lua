@@ -745,33 +745,33 @@ root(ROOTS.ExpansionFeatures,
 						["groups"] = {
 							n(ACHIEVEMENTS, {	-- Achievements
 								ach(12874, {	-- An Eventful Battle
-									crit(1),	-- Fozruk
-									crit(2),	-- Hostage Rescue
-									crit(3),	-- Lost Caravan
-									crit(4),	-- The Branchlord
-									crit(5),	-- Rumbling Goliath
-									crit(6),	-- Yogursa
-									crit(7),	-- Thundering Goliath
-									crit(8),	-- Plaguefeather
-									crit(9),	-- Ragebeak
-									crit(10),	-- Skullripper
-									crit(12),	-- Cresting Goliath
-									crit(11),	-- Venomarus
+									crit(42128),	-- Fozruk
+									crit(42129),	-- Hostage Rescue
+									crit(42130),	-- Lost Caravan
+									crit(41364),	-- The Branchlord
+									crit(42131),	-- Rumbling Goliath
+									crit(42123),	-- Yogursa
+									crit(42132),	-- Thundering Goliath
+									crit(42124),	-- Plaguefeather
+									crit(42125),	-- Ragebeak
+									crit(42126),	-- Skullripper
+									crit(42127),	-- Venomarus
+									crit(42133),	-- Cresting Goliath
 								}),
 								ach(13739, {	-- Heroic: Tour of War (A)
 									["races"] = ALLIANCE_ONLY,
 									["g"] = {
-										crit(1),	-- Eitrigg
-										crit(2),	-- Lady Liadrin
-										crit(3),	-- Rokhan
+										crit(45806),	-- Eitrigg
+										crit(45813),	-- Lady Liadrin
+										crit(45814),	-- Rokhan
 									},
 								}),
 								ach(13738, {	-- Heroic: Tour of War (H)
 									["races"] = HORDE_ONLY,
 									["g"] = {
-										crit(1),	-- Danath Trollbane
-										crit(2),	-- Turalyon
-										crit(3),	-- Muradin
+										crit(45802),	-- Danath Trollbane
+										crit(45803),	-- Turalyon
+										crit(45804),	-- Muradin
 									},
 								}),
 								ach(13737, {	-- Heroic: War is Hell (A)
@@ -784,22 +784,22 @@ root(ROOTS.ExpansionFeatures,
 									["description"] = "You must personally create each troop.  Siege Engines are limited to 3 active at a time.",
 									["races"] = ALLIANCE_ONLY,
 									["g"] = {
-										crit(1),	-- Footmen
-										crit(2),	-- Riflemen
-										crit(3),	-- Priests
-										crit(4),	-- Knights
-										crit(5),	-- Siege Engine
+										crit(41124),	-- Footmen
+										crit(41125),	-- Riflemen
+										crit(41126),	-- Priests
+										crit(41127),	-- Knights
+										crit(42138),	-- Siege Engine
 									},
 								}),
 								ach(12878, {	-- Leader of Troops (H)
 									["description"] = "You must personally create each troop.  Demolishers are limited to 3 active at a time.",
 									["races"] = HORDE_ONLY,
 									["g"] = {
-										crit(1),	-- Grunts
-										crit(2),	-- Axe Throwers
-										crit(3),	-- Shaman
-										crit(4),	-- Raiders
-										crit(5),	-- Demolishers
+										crit(41120),	-- Grunts
+										crit(41121),	-- Axe Throwers
+										crit(41122),	-- Shaman
+										crit(41123),	-- Raiders
+										crit(43403),	-- Demolishers
 									},
 								}),
 								ach(12889, {	-- Strike Fast (A)
@@ -809,13 +809,13 @@ root(ROOTS.ExpansionFeatures,
 										ach(12888, {	-- Strike Hard
 											["races"] = ALLIANCE_ONLY,
 										}),
-										crit(1),	-- Galson's Lode
-										crit(2),	-- Highlands Mill
-										crit(3),	-- Valorcall Pass
-										crit(4),	-- High Perch
-										crit(5),	-- Newstead
-										crit(6),	-- Circle of Elements
-										crit(7),	-- Northfold Crossing
+										crit(41130),	-- Galson's Lode
+										crit(41131),	-- Highlands Mill
+										crit(41132),	-- Valorcall Pass
+										crit(41133),	-- High Perch
+										crit(41134),	-- Newstead
+										crit(41135),	-- Circle of Elements
+										crit(41136),	-- Northfold Crossing
 									},
 								}),
 								ach(12876, {	-- Strike Fast (H)
@@ -825,31 +825,31 @@ root(ROOTS.ExpansionFeatures,
 										ach(12877, {	-- Strike Hard
 											["races"] = HORDE_ONLY,
 										}),
-										crit(1),	-- Circle of Elements
-										crit(2),	-- Hatchet Ridge
-										crit(3),	-- High Perch
-										crit(4),	-- Northfold Crossing
-										crit(5),	-- Newstead
-										crit(6),	-- Valorcall Pass
-										crit(7),	-- Drywhisker Mine
+										crit(41111),	-- Circle of Elements
+										crit(41113),	-- Hatchet Ridge
+										crit(41114),	-- High Perch
+										crit(41115),	-- Northfold Crossing
+										crit(41116),	-- Newstead
+										crit(41117),	-- Valorcall Pass
+										crit(41118),	-- Drywhisker Mine
 									},
 								}),
 								ach(12886, {	-- Tour of War (A)
 									["description"] = "Only one commander is up per warfront cycle.",
 									["races"] = ALLIANCE_ONLY,
 									["g"] = {
-										crit(1),	-- Eitrigg
-										crit(2),	-- Lady Liadrin
-										crit(3),	-- Rokhan
+										crit(43480),	-- Eitrigg
+										crit(42134),	-- Lady Liadrin
+										crit(42135),	-- Rokhan
 									},
 								}),
 								ach(12879, {	-- Tour of War (H)
 									["description"] = "Only one commander is up per warfront cycle.",
 									["races"] = HORDE_ONLY,
 									["g"] = {
-										crit(1),	-- Danath Trollbane
-										crit(2),	-- Turalyon
-										crit(3),	-- Muradin
+										crit(43479),	-- Danath Trollbane
+										crit(42136),	-- Turalyon
+										crit(42137),	-- Muradin
 									},
 								}),
 								ach(12881, {	-- War is Hell (A)

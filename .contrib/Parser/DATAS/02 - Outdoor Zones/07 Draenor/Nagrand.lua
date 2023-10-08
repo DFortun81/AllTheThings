@@ -92,14 +92,7 @@ root(ROOTS.Zones, {
 					explorationAch(8942),	-- Explore Nagrand
 					achraw(9610,  {	-- History of Violence (Broken Precipice)
 						["description"] = "In order to get the relics, except the Bust, use Jewel of Transformation in the area and then break boulder piles.",
-						["g"] = {
-							crit(1),	-- Krog the Dominator's Hammer
-							crit(2, {	-- Thak the Conqueror's Bust
-								["coord"] = { 41.2, 12.2, DRAENOR_NAGRAND },
-							}),
-							crit(3),	-- Thurg the Slave Lord's Necklace
-							crit(4),	-- Gorg the Subjugator's Idol
-						},
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(9617,  {	-- Making the Cut (Gorian Proving Grounds)
 						["description"] = "Spawns in the building behind The Ring of Blood.  Kill 15 mobs that spawn around him in order to attack him.",

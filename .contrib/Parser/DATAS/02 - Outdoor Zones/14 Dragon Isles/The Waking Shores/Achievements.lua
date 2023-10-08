@@ -105,42 +105,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			ach(17561, {    -- Ancient Stones of the Waking Shores
 				["timeline"] = { ADDED_10_1_0 },
 				["g"] = {
-					crit(1, {    -- So Close, So Far
+					crit(58804, {    -- So Close, So Far
 						["coord"] = { 74.2, 57.2, THE_WAKING_SHORES },
 					}),
-					crit(2, {    -- One Small Part
+					crit(58805, {    -- One Small Part
 						["coords"] = {
 							{ 27.2, 60.9, THE_WAKING_SHORES },    -- entrance
 							{ 24.2, 53.4, THE_WAKING_SHORES },    -- stone
 						}
 					}),
-					crit(3, {    -- Neltharus Stands
+					crit(58806, {    -- Neltharus Stands
 						["coord"] = { 26.2, 56.3, THE_WAKING_SHORES },
 					}),
-					crit(4, {    -- Welcoming the First
+					crit(58807, {    -- Welcoming the First
 						["coord"] = { 60.7, 67.0, THE_WAKING_SHORES },
 					}),
-					crit(5, {    -- Learn and Grow
+					crit(58808, {    -- Learn and Grow
 						["coord"] = { 51.6, 20.0, THE_WAKING_SHORES },
 					}),
 				}
 			}),
 			achraw(16406, {	-- All Sides of the Story
-				crit(1, {	-- Captain Garrick & Shuja Grimaxe
-					["sourceQuests"] = {
-						70135,	-- Encroaching Elementals [A]
-						66111,	-- Encroaching Elementals [H]
-					},
-				}),
-				crit(2, {	-- Duroz & Kolgar
-					["sourceQuests"] = { 70708 },	-- Hallow
-				}),
-				crit(3, {	-- Tarjin the Blind
-					["sourceQuests"] = { 70779 },	-- Tarjin's Tales
-				}),
-				crit(4, {	-- Veritistrasz
-					["sourceQuests"] = { 70268 },	-- Memories Revived
-				}),
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(15991, {	-- Dragon Glyphs: Crumbling Life Archway
 				["coord"] = { 57.7, 55.0, THE_WAKING_SHORES },
@@ -188,123 +174,75 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["cr"] = 198163,	-- Mammoth-Tamer Tavok
 				["coord"] = { 39.6, 55.0, THE_WAKING_SHORES },	-- Turn in
 				["g"] = {
-					crit(1, {	-- Smoldering Perch
+					crit(55870, {	-- Smoldering Perch
 						["coord"] = { 37.2, 44.5, THE_WAKING_SHORES },
 						["cr"] = 194625,	-- Tame Magmammoth
 					}),
-					crit(2, {	-- Burning Ascent
+					crit(55871, {	-- Burning Ascent
 						["coord"] = { 33.3, 72.2, THE_WAKING_SHORES },
 						["cr"] = 198150,	-- Tame Magmammoth
 					}),
-					crit(3, {	-- Scalecracker Keep
+					crit(55872, {	-- Scalecracker Keep
 						["coord"] = { 66.3, 24.6, THE_WAKING_SHORES },
 						["cr"] = 198155,	-- Tame Magmammoth
 					}),
-					crit(4, {	-- Dragonbane Keep
+					crit(55873, {	-- Dragonbane Keep
 						["coord"] = { 23.6, 71.5, THE_WAKING_SHORES },
 						["cr"] = 198153,	-- Tame Magmammoth
 					}),
 				},
 			}),
 			ach(16401, {	-- Sojourner of the Waking Shores
-				crit(1, {	-- Beyond the Barrier
-					["sourceQuests"] = { 66447 },	-- Beyond the Barrier
-				}),
-				crit(2, {	-- Brave Researchers
-					["sourceQuests"] = { 69902 },	-- Theory in Practice
-				}),
-				crit(3, {	-- Professional Protographer
-					["sourceQuests"] = { 66529 },	-- A Thousand Words
-				}),
-				crit(4, {	-- Ruby Lifecalling
-					["sourceQuests"] = {
-						66737,	-- A Better Start
-						66892,	-- Deluge Dilemma
-						66831,	-- Home Is Where the Frogs Are
-					},
-				}),
-				crit(5, {	-- Save the Hippos!
-					["sourceQuests"] = { 66108 },	-- A Sledgehammer of a Solution
-				}),
-				crit(6, {	-- The Shadow of His Wings
-					["sourceQuests"] = { 65691 },	-- The Shadow of His Wings
-				}),
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(16584, {	-- Symbols of Hope
-				crit(1, {	-- Wingrest Embassy
+				crit(55841, {	-- Wingrest Embassy
 					["coord"] = { 73.2, 37.8, THE_WAKING_SHORES },
+					["_quests"] = { 72096 },
 				}),
-				crit(2, {	-- Skytop Observatory
+				crit(55842, {	-- Skytop Observatory
 					["coord"] = { 73.0, 52.9, THE_WAKING_SHORES },
+					["_quests"] = { 72097 },
 				}),
-				crit(3, {	-- Crumbling Life Archway
+				crit(55843, {	-- Crumbling Life Archway
 					["coord"] = { 56.8, 58.0, THE_WAKING_SHORES },
+					["_quests"] = { 72098 },
 				}),
-				crit(4, {	-- Hatchery Observatory
+				crit(55844, {	-- Hatchery Observatory
 					["coord"] = { 61.7, 80.8, THE_WAKING_SHORES },
+					["_quests"] = { 72099 },
 				}),
-				crit(5, {	-- Obsidian Observatory
+				crit(55845, {	-- Obsidian Observatory
 					["coord"] = { 43.6, 63.8, THE_WAKING_SHORES },
+					["_quests"] = { 72100 },
 				}),
-				crit(6, {	-- Apex Canopy
+				crit(55846, {	-- Apex Canopy
 					["coord"] = { 24.0, 89.9, THE_WAKING_SHORES },
+					["_quests"] = { 72101 },
 				}),
-				crit(7, {	-- Concord Observatory
+				crit(55848, {	-- Concord Observatory
 					["coord"] = { 57.2, 46.4, THE_WAKING_SHORES },
+					["_quests"] = { 72103 },
 				}),
-				crit(8, {	-- The Overflowing Spring
+				crit(55847, {	-- The Overflowing Spring
 					["coord"] = { 50.3, 55.6, THE_WAKING_SHORES },
+					["_quests"] = { 72102 },
 				}),
-				crit(9, {	-- Uktulut Backwater
+				crit(55849, {	-- Uktulut Backwater
 					["coord"] = { 48.9, 39.9, THE_WAKING_SHORES },
+					["_quests"] = { 72104 },
 				}),
-				crit(10, {	-- Life-Binder Conservatory
+				crit(55850, {	-- Life-Binder Conservatory
 					["coord"] = { 57.0, 20.0, THE_WAKING_SHORES },
+					["_quests"] = { 72105 },
 				}),
 			}),
 			pvp(ach(16592)),	-- Tour of Duty: The Waking Shores
 			ach(16297, {	-- Treasures of The Waking Shores
-				crit(1, {	-- Replica Dragon Goblet
-					["_quests"] = { 70600 },
-				}),
-				crit(2, {	-- Bubble Drifter
-					["_quests"] = { 70599 },
-				}),
-				crit(3, {	-- Ruby Gem Cluster
-					["_quests"] = { 70598 },
-				}),
-				crit(4, {	-- Yennu's Kite
-					["_quests"] = { 70345 },
-				}),
-				crit(5, {	-- Dead Man's Chestplate
-					["_quests"] = { 70346 },
-				}),
-				crit(6, {	-- Torn Riding Pack
-					["_quests"] = { 70378 },
-				}),
-				crit(7, {	-- Misty Treasure Chest
-					["_quests"] = { 65646 },
-				}),
-				crit(8, {	-- Onyx Gem Cluster
-					["_quests"] = { 72020 },
-				}),
+				["sym"] = {{ "achievement_criteria" }},	
 			}),
 			ach(16334, {	-- Waking Hope
-				crit(1, {	-- The Dragonscale Expedition
-					["sourceQuests"] = { 69914 },	-- The Djaradin Have Awoken
-				}),
-				crit(2, {	-- Dragons in Distress
-					["sourceQuests"] = { 66001 },	-- A Last Hope
-				}),
-				crit(3, {	-- In Defense of Life
-					["sourceQuests"] = { 66124 },	-- Exeunt, Triumphant
-				}),
-				crit(4, {	-- Wrathion's Gambit
-					["sourceQuests"] = { 66057 },	-- Restoring the Faith
-				}),
-				crit(5, {	-- A Purpose Restored
-					["sourceQuests"] = { 65794 },	-- A Change of Care
-				}),
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(16575, {	-- Waking Shores Glyph Hunter
 				-- Meta Achievement

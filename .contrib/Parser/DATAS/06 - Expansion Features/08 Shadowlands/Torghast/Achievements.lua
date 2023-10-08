@@ -271,19 +271,19 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						ach(14488),		-- Mort'regar
 						ach(14493),		-- The Upper Reaches
 					}),
-					crit(1),	-- Skoldus Hall
-					crit(2),	-- Fracture Chambers
-					crit(3),	-- The Soulforges
-					crit(4),	-- Coldheart Interstitia
-					crit(5),	-- Mort'regar
-					crit(6),	-- The Upper Reaches
+					crit(48160),	-- Skoldus Hall
+					crit(48161),	-- Fracture Chambers
+					crit(48162),	-- The Soulforges
+					crit(48164),	-- Coldheart Interstitia
+					crit(48163),	-- Mort'regar
+					crit(48165),	-- The Upper Reaches
 				}),
-				crit(1),	-- Skoldus Hall
-				crit(2),	-- Fracture Chambers
-				crit(3),	-- The Soulforges
-				crit(4),	-- Coldheart Interstitia
-				crit(5),	-- Mort'regar
-				crit(6),	-- The Upper Reaches
+				crit(48160),	-- Skoldus Hall
+				crit(48161),	-- Fracture Chambers
+				crit(48162),	-- The Soulforges
+				crit(48164),	-- Coldheart Interstitia
+				crit(48163),	-- Mort'regar
+				crit(48165),	-- The Upper Reaches
 			}),
 			ach(14754, {	-- The Forgotten One
 				["sourceQuests"] = { 60272 },	-- The Weak Link

@@ -15,59 +15,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					crit(4),	-- All Trebalim Cyphers
 				}),
 				ach(15508, {	-- Fashion of the First Ones
-					i(190182, {	-- Lovely Regal Pocopoc
-						["questID"] = 65600,
-					}),
-					crit(1, {	-- Peaceful Pocopoc
-						["_quests"] = { 65525 },
-					}),
-					crit(2, {	-- Chef Pocopoc
-						["_quests"] = { 65524 },
-					}),
-					crit(3, {	-- Pirate Pocopoc
-						["_quests"] = { 65526 },
-					}),
-					crit(4, {	-- Adventurous Pocopoc
-						["_quests"] = { 65527 },
-					}),
-					crit(5, {	-- Dapper Pocopoc
-						["_quests"] = { 65528 },
-					}),
-					crit(6, {	-- Admiral Pocopoc
-						["_quests"] = { 65529 },
-					}),
-					crit(7, {	-- Wicked Pocopoc
-						["_quests"] = { 65530 },
-					}),
-					crit(8, {	-- Pocobold
-						["_quests"] = { 65534 },
-					}),
-					crit(9, {	-- Pepepec
-						["_quests"] = { 65538 },
-					}),
+					["sym"] = {{ "achievement_criteria" }},
+					["groups"] = {
+						i(190182, {	-- Lovely Regal Pocopoc
+							["questID"] = 65600,
+						}),
+					},
 				}),
 				ach(15509, {	-- Tales of the Exile
-					crit(1, {	-- Firim in Exile, Part 1
-						["_quests"] = { 15509 },
-					}),
-					crit(2, {	-- Firim in Exile, Part 2
-						["_quests"] = { 15509 },
-					}),
-					crit(3, {	-- Firim in Exile, Part 3
-						["_quests"] = { 15509 },
-					}),
-					crit(4, {	-- Firim in Exile, Part 4
-						["_quests"] = { 15509 },
-					}),
-					crit(5, {	-- Firim in Exile, Part 5
-						["_quests"] = { 15509 },
-					}),
-					crit(6, {	-- Firim in Exile, Part 6
-						["_quests"] = { 15509 },
-					}),
-					crit(7, {	-- Firim in Exile, Part 7
-						["_quests"] = { 15509 },
-					}),
+					["sym"] = {{ "achievement_criteria" }},
 				}),
 			}),
 			n(QUESTS, {

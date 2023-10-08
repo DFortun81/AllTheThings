@@ -81,45 +81,12 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 			}),
 			un(REMOVED_FROM_GAME, ach(10852)),		-- Artifact or Artifiction
 			ach(11137, {	-- A Legendary Campaign
-				ach(11136),	-- An Epic Campaign
-				ach(11135),	-- A Heroic Campaign
-				ach(10994),	-- A Glorious Campaign
-				crit(1, {	-- Death Knight
-					["_quests"] = { 43686 },	-- The Fourth Horseman (Death Knight)
-				}),
-				crit(2, {	-- Demon Hunter
-					["_quests"] = { 43186 },	-- I Am the Slayer! (Demon Hunter)
-				}),
-				crit(3, {	-- Druid
-					["_quests"] = { 42055 },	-- The Demi-God's Return (Druid)
-				}),
-				crit(4, {	-- Hunter
-					["_quests"] = { 42659 },	-- In Defense of Dalaran (Hunter)
-				}),
-				crit(5, {	-- Mage
-					["_quests"] = { 42734 },	-- Into the Oculus (Mage)
-				}),
-				crit(6, {	-- Monk
-					["_quests"] = { 41087 },	-- Storm Brew (Monk)
-				}),
-				crit(7, {	-- Paladin
-					["_quests"] = { 43697 },	-- Warriors of Light (Paladin)
-				}),
-				crit(8, {	-- Priest
-					["_quests"] = { 43402 },	-- High Priest of Netherlight (Priest)
-				}),
-				crit(9, {	-- Rogue
-					["_quests"] = { 37689 },	-- The Imposter (Rogue)
-				}),
-				crit(10, {	-- Shaman
-					["_quests"] = { 41888 },	-- Allegiance of Flame (Shaman)
-				}),
-				crit(11, {	-- Warlock
-					["_quests"] = { 41796 },	-- Selecting a Sixth (Warlock)
-				}),
-				crit(12, {	-- Warrior
-					["_quests"] = { 42974 },	-- The Fate of Hodir (Warrior)
-				}),
+				["sym"] = {{ "achievement_criteria" }},
+				["groups"] = {
+					ach(11136),	-- An Epic Campaign
+					ach(11135),	-- A Heroic Campaign
+					ach(10994),	-- A Glorious Campaign
+				},
 			}),
 			ach(11171),	-- Arsenal of Power
 			ach(11222, {	-- Champions of Power
@@ -127,28 +94,17 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 				ach(11220),	-- Roster of Champions
 			}),
 			ach(11846, {	-- Champions of Legionfall (Broken Shore)
-				crit(1),		-- Complete 'Champions of Legionfall'
+				crit(36604, {		-- Complete 'Champions of Legionfall'
+					["_quests"] = { 47137 },
+				}),
 			}),
 			achraw(10461, {	-- Fighting with Style: Classic
 				crit(1),	-- Recover one of the Pillars of Creation
-				crit(2, {	-- Complete the quest, "Light's Charge"
+				crit(33167, {	-- Complete the quest, "Light's Charge"
 					["_quests"] = { 44153 },
 				}),
-				crit(3, {	-- Complete the first order campaign effort
-					["sourceQuests"] = {
-						42708,	-- A Personal Request (Death Knight)
-						42131,	-- Unexpected Visitors (Demon Hunter)
-						42036,	-- Idol of the Wilds (Druid)
-						42393,	-- Homecoming (Hunter)
-						42520,	-- A Terrible Loss (Mage)
-						41733,	-- Rebuilding the Order (Monk)
-						-- TODO,	-- TODO (Paladin)
-						-- TODO,	-- TODO (Priest)
-						44177,	-- Dark Secrets and Shady Deals (Rogue)
-						41901,	-- Oath of the Windlord (Shaman)
-						-- TODO,	-- TODO (Warlock)
-						42204,	-- Jorhuttam (Warrior)
-					},
+				crit(33168, {	-- Complete the first order campaign effort
+					["_quests"] = { 42116 },
 				}),
 			}),
 			ach(10750),	-- Fighting with Style: Hidden
@@ -184,19 +140,19 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 			ach(10749, {	-- Fighting with Style: War-torn (A)
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					crit(1),	-- Honor Level 10
-					crit(2),	-- Honor Level 30
-					crit(3),	-- Honor Level 50
-					crit(4),	-- Honor Level 80
+					crit(32105),	-- Honor Level 10
+					crit(32152),	-- Honor Level 30
+					crit(32150),	-- Honor Level 50
+					crit(32155),	-- Honor Level 80
 				},
 			}),
 			ach(11173, {	-- Fighting with Style: War-torn (H)
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(1),	-- Honor Level 10
-					crit(2),	-- Honor Level 30
-					crit(3),	-- Honor Level 50
-					crit(4),	-- Honor Level 80
+					crit(32105),	-- Honor Level 10
+					crit(32152),	-- Honor Level 30
+					crit(32150),	-- Honor Level 50
+					crit(32155),	-- Honor Level 80
 				},
 			}),
 			ach(10460),	-- Hidden Potential

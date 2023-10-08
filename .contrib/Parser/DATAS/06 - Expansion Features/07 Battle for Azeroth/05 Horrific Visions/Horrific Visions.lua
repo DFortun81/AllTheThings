@@ -27,9 +27,13 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					["maps"] = { 1470 },
 				}),
 				ach(14143, {	-- Reeking of Visions
-					i(174463),	-- Reek (PET!)
-					crit(1),	-- The Even more Horrific Vision of Orgrimmar
-					crit(2),	-- The Even More Horrific Vision of Stormwind
+					["sym"] = {{"meta_achievement",
+						14065,	-- The Even More Horrific Vision of Orgrimmar
+						14064,	-- The Even More Horrific Vision of Stormwind
+					}},
+					["groups"] = {
+						i(174463),	-- Reek (PET!)
+					},
 				}),
 				ach(14169, {	-- Symphony of Masks
 					ach(14165),	-- Masked Soliloquy

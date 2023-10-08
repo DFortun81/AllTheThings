@@ -123,14 +123,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61791),	-- Thenia's Loyal Companions
 			q(59717, { -- Things Remembered
 				ach(14737, {	-- What Bastion Remembered
-					crit(1),	-- Eridia, Hand of Purity
-					crit(2),	-- Kalisthene
-					crit(3),	-- Chyrus, Paragon of Humility
-					crit(4),	-- Kleia
-					crit(5),	-- Pelagos
-					crit(6),	-- Forgelite Sophone
-					crit(7),	-- Uther
-					crit(8),	-- Mikanikos
+					crit(49827),	-- Eridia, Hand of Purity
+					crit(49828),	-- Kalisthene
+					crit(49829),	-- Chyrus, Paragon of Humility
+					crit(49830),	-- Kleia
+					crit(49831),	-- Pelagos
+					crit(49832),	-- Forgelite Sophone
+					crit(49833),	-- Uther
+					crit(49834),	-- Mikanikos
 				}),
 			}),
 			q(59705, { -- Things Remembered

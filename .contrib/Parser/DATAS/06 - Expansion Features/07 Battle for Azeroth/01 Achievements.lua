@@ -67,10 +67,10 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 			}),
 		}),
 		pvp(ach(12573, {	-- Band of Brothers
-			crit(1),		-- Honorable Kill
-			crit(2),		-- Loot Player Bounty
-			crit(3),		-- Complete Rare Elite World Quest
-			crit(4),		-- Loot War Supply Chest
+			crit(41008),		-- Honorable Kill
+			crit(41009),		-- Loot Player Bounty
+			crit(41010),		-- Complete Rare Elite World Quest
+			crit(41011),		-- Loot War Supply Chest
 		})),
 		ach(12989, {	-- Battle for Azeroth Pathfinder, Part One
 			-- Meta Achievement
@@ -374,18 +374,18 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				}),
 				ach(12859),	-- Prize Fighter
 				ach(12862, {	-- Thirty Six and Two
-					crit(1),	-- Death Knight
-					crit(2),	-- Demon Hunter
-					crit(3),	-- Druid
-					crit(4),	-- Hunter
-					crit(5),	-- Mage
-					crit(6),	-- Monk
-					crit(7),	-- Paladin
-					crit(8),	-- Priest
-					crit(9),	-- Rogue
-					crit(10),	-- Shaman
-					crit(11),	-- Warlock
-					crit(12),	-- Warrior
+					crit(41083),	-- Death Knight
+					crit(41084),	-- Demon Hunter
+					crit(41085),	-- Druid
+					crit(57850),	-- Hunter
+					crit(41086),	-- Mage
+					crit(41087),	-- Monk
+					crit(41089),	-- Paladin
+					crit(41090),	-- Priest
+					crit(41091),	-- Rogue
+					crit(41092),	-- Shaman
+					crit(41093),	-- Warlock
+					crit(43156),	-- Warrior
 				}),
 			},
 		})),

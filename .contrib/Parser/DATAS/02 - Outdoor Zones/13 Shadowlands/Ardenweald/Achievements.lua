@@ -121,71 +121,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			ach(14164, {	-- Awaken, Ardenweald
-				crit(1, {	-- Welcome to Ardenweald
-					["sourceQuests"] = { 57787 },	-- Keep to the Path
-				}),
-				crit(2, {	-- Aiding Tirna Vaal
-					["sourceQuests"] = {
-						60594,	-- One Special Spirit
-						57951,	-- Souls Come Home
-					},
-				}),
-				crit(3, {	-- Waning Grove
-					["sourceQuests"] = { 60519 },	-- Audience with the Winter Queen
-				}),
-				crit(4, {	-- Glitterfall Heights
-					["sourceQuests"] = { 60520 },	-- Nightmares Manifest
-				}),
-				crit(5, {	-- This Is the Way
-					["sourceQuests"] = { 60905 },	-- Infusing the Wildseed
-				}),
-				crit(6, {	-- The Fallen Tree
-					["sourceQuests"] = { 58524 },	-- Sparkles Rain from Above
-				}),
-				crit(7, {	-- Visions of the Dreamer
-					["sourceQuests"] = { 58593 },	-- End of the Dream
-				}),
-				crit(8, {	-- Awaken the Dreamer
-					["sourceQuests"] = { 58724 },	-- The Queen's Request
-				}),
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			explorationAch(14304),	-- Explore Ardenweald
 			ach(14788, {	-- Fractured Faerie Tales
-				crit(1, {	-- A Meandering Story
-					["sourceQuests"] = { 62619 },	-- A Meandering Story
-				}),
-				crit(2, {	-- A Wandering Tale
-					["sourceQuests"] = { 62620 },	-- A Wandering Tale
-				}),
-				crit(3, {	-- An Escapist Novel
-					["sourceQuests"] = { 62621 },	-- An Escapist Novel
-				}),
-				crit(4, {	-- A Travel Journal
-					["sourceQuests"] = { 62622 },	-- A Travel Journal
-				}),
-				crit(5, {	-- A Naughty Story
-					["sourceQuests"] = { 62623 },	-- A Naughty Story
-				}),
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(14800, {	-- Sojourner of Ardenweald
-				crit(1, {	-- Thread of Hope
-					["sourceQuests"] = { 60066 },	-- Silk for Ardenweald
-				}),
-				crit(2, {	-- When a Gorm Eats a God
-					["sourceQuests"] = { 58026 },	-- When a Gorm Eats a God
-				}),
-				crit(3, {	-- Trouble at the Gormling Corral
-					["sourceQuests"] = { 59656 },	-- Well, Tell the Lady
-				}),
-				crit(4, {	-- Tricky Spriggans
-					["sourceQuests"] = { 57871 },	-- Outplayed
-				}),
-				crit(5, {	-- An Ominous Stone
-					["sourceQuests"] = { 58166 },	-- Unknown Assailants
-				}),
-				crit(6, {	-- Wicked Plan
-					["sourceQuests"] = { 58267 },	-- Beneath the Mask
-				}),
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(14791, {	-- Toss a Seed to Your Hunter...
 				["description"] = "The Faintly Glowing Seeds can be found scattered around the zone, but the closest ones to the encounter are up the hill in Heartwood Grove.  Look around the bases of trees for sparkling bluish-purple plants.",
@@ -197,51 +140,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["pvp"] = true,
 			}),
 			ach(14313, {	-- Treasures of Ardenweald
-				crit(1, {	-- Aerto's Body
-					["_quests"] = { 61072 },
-				}),
-				crit(2, {	-- Lost Satchel
-					["sourceQuests"] = { 62187 },
-				}),
-				crit(3, {	-- Veilwing Egg
-					["_quests"] = { 61065 },
-				}),
-				crit(4, {	-- Swollen Anima Seed
-					["sourceQuests"] = { 62186 },
-				}),
-				crit(5, {	-- Faerie Trove
-					["_quests"] = { 61073 },
-				}),
-				crit(6, {	-- Harmonic Chest
-					["_quests"] = { 61165 },
-				}),
-				crit(7, {	-- Hearty Dragon Plume
-					["_quests"] = { 61067 },
-				}),
-				crit(8, {	-- Playful Vulpin Befriended
-					["provider"] = { "i", 180645 },	-- Dodger (PET!)
-				}),
-				crit(9, {	-- Cache of the Moon
-					["_quests"] = { 61074 },
-				}),
-				crit(10, {	-- Desiccated Moth
-					["_quests"] = { 61147 },
-				}),
-				crit(11, {	-- Dreamsong Heart
-					["_quests"] = { 61070 },
-				}),
-				crit(12, {	-- Enchanted Dreamcatcher
-					["sourceQuests"] = { 62259 },
-				}),
-				crit(13, {	-- Elusive Faerie Cache
-					["_quests"] = { 61175 },
-				}),
-				crit(14, {	-- Cache of the Night
-					["_quests"] = { 61110 },
-				}),
-				crit(15, {	-- Darkreach Supplies
-					["_quests"] = { 61068 },
-				}),
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(14779, {	-- Wild Hunting
 				crit(1, {	-- Nightsong Wader

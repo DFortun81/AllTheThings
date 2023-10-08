@@ -5,69 +5,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 	m(ZARALEK_CAVERN, {
 		n(ACHIEVEMENTS, {
 			ach(17783, {	-- Adventurer of Zaralek Cavern
-				crit(59188, {	-- Alcanon
-					["_npcs"] = { 203515 },	-- Alcanon
-				}),
-				crit(59185, {	-- Aquifon
-					["_npcs"] = { 203468 },	-- Aquifon
-				}),
-				crit(59202, {	-- Brullo the Strong
-					["_npcs"] = { 203621 },	-- Brullo the Strong
-				}),
-				crit(59212, {	-- Colossian
-					["_npcs"] = { 204093 },	-- Colossian
-				}),
-				crit(59209, {	-- Emberdusk
-					["_npcs"] = { 203664 },	-- Emberdusk
-				}),
-				crit(59207, {	-- Flowfy
-					["_npcs"] = { 203660 },	-- Flowfy
-				}),
-				crit(59190, {	-- General Zskorro
-					["_npcs"] = { 203592 },	-- General Zskorro
-				}),
-				crit(59186, {	-- Goopal
-					["_npcs"] = { 203477 },	-- Goopal
-				}),
-				crit(59200, {	-- Invohq
-					["_npcs"] = { 203627 },	-- Invohq
-				}),
-				crit(59206, {	-- Dinn
-					["_npcs"] = { 203646 },	-- Dinn
-				}),
-				crit(59199, {	-- Karokta
-					["_npcs"] = { 203625 },	-- Karokta
-				}),
-				crit(59184, {	-- Kapraku
-					["_npcs"] = { 203466 },	-- Kapraku
-				}),
-				crit(59198, {	-- Klakatak
-					["_npcs"] = { 203618 },	-- Klakatak
-				}),
-				crit(59183, {	-- Kob'rok
-					["_npcs"] = { 203462 },	-- Kob'rok
-				}),
-				crit(59203, {	-- Magtembo
-					["_npcs"] = { 200111 },	-- Magtembo
-				}),
-				crit(59189, {	-- Professor Gastrinax
-					["_npcs"] = { 203521 },	-- Professor Gastrinax
-				}),
-				crit(59205, {	-- Skornak
-					["_npcs"] = { 203643 },	-- Skornak
-				}),
-				crit(59187, {	-- Spinmarrow
-					["_npcs"] = { 203480 },	-- Spinmarrow
-				}),
-				crit(59208, {	-- Subterrax
-					["_npcs"] = { 203662 },	-- Subterrax
-				}),
-				crit(59191, {	-- Underlight Queen
-					["_npcs"] = { 203593 },	-- Underlight Queen
-				}),
-				crit(59210, {	-- Viridian King
-					["_npcs"] = { 201029 },	-- Viridian King
-				}),
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(17567, {    -- Ancient Stones of Zaralek
 				crit(58826, {    -- Demanding Perfection

@@ -25,105 +25,66 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			["g"] = {
 				n(ACHIEVEMENTS, {
 					ach(18637, {	-- Chronograde Connoisseur
-						crit(1, {	-- Azmerloth
+						crit(61885, {	-- Azmerloth
 							["_npcs"] = { 204808 },	-- Fractured Causality / Gil'dan
 						}),
-						crit(2, {	-- Ulderoth
+						crit(61884, {	-- Ulderoth
 							["_npcs"] = { 205304 },	-- Fractured Causality / Freya
 						}),
-						crit(3, {	-- Azmourne
+						crit(61886, {	-- Azmourne
 							["_npcs"] = { 205305 },	-- Fractured Causality / The Lich King
 						}),
-						crit(4, {	-- Azewrath
+						crit(61887, {	-- Azewrath
 							["_npcs"] = { 205306 },	-- Fractured Causality / Illidan
 						}),
-						crit(5, {	-- Azq'roth
+						crit(61888, {	-- Azq'roth
 							["_npcs"] = { 205307 },	-- Fractured Causality / Fury of N'zoth
 						}),
-						crit(6, {	-- The Warlands
+						crit(61889, {	-- The Warlands
 							["_npcs"] = { 205308 },	-- Fractured Causality / Varian Wrynn
 						}),
-						crit(7, {	-- A.Z.E.R.O.T.H
+						crit(61890, {	-- A.Z.E.R.O.T.H
 							["_npcs"] = { 205309 },	-- Fractured Causality / Overload Mechagon
 						}),
 					}),
 					ach(18639),	-- Collapsed Reality
 					ach(18636),	-- Just Following Chronological Orders
 					ach(18640, {	-- Lock and Load
-						crit(1),	-- Bomb Lobber
-						crit(2),	-- Shrapnel Spreader
-						crit(3),	-- Flamethrower
-						crit(4),	-- Railgun
-						crit(5),	-- Thunderbolt
-						crit(6),	-- Crankshot
+						crit(60726),	-- Bomb Lobber
+						crit(60727),	-- Shrapnel Spreader
+						crit(60728),	-- Flamethrower
+						crit(60729),	-- Railgun
+						crit(60730),	-- Thunderbolt
+						crit(60731),	-- Crankshot
 					}),
 					ach(18638, {	-- Minute Menagerie
-						crit(1, {	-- Gill'dan
+						crit(60718, {	-- Gill'dan
 							["provider"] = { "i", 208009 },	-- Gill'dan
 						}),
-						crit(2, {	-- Briarhorn Hatchling
+						crit(60719, {	-- Briarhorn Hatchling
 							["provider"] = { "i", 208012 },	-- Briarhorn Hatchling
 						}),
-						crit(3, {	-- N'Ruby
+						crit(60751, {	-- N'Ruby
 							["provider"] = { "i", 208138 },	-- N'Ruby
 						}),
-						crit(4, {	-- Doomrubble
+						crit(60720, {	-- Doomrubble
 							["provider"] = { "i", 208008 },	-- Doomrubble
 						}),
-						crit(5, {	-- Jeepers
+						crit(60721, {	-- Jeepers
 							["provider"] = { "i", 208010 },	-- Jeepers
 						}),
-						crit(6, {	-- Obsidian Warwhelp
+						crit(60722, {	-- Obsidian Warwhelp
 							["provider"] = { "i", 208011 },	-- Obsidian Warwhelp
 						}),
-						crit(7, {	-- Killbot 9000
+						crit(60723, {	-- Killbot 9000
 							["provider"] = { "i", 208013 },	-- Killbot 9000
 						}),
 					}),
 					ach(18554, {	-- Temporal Acquisitions Specialist
-						i(208186),	-- Boffins (TOY!)
-						crit(1, {	-- Titanic Disc
-							["_quests"] = { 76351 },	-- Titanic Beasts
-						}),
-						crit(2, {	-- Antlered Skull
-							["_quests"] = { 76362 },	-- An Antlered Skull
-						}),
-						crit(3, {	-- Azmerlothian Hourglass
-							["_quests"] = { 76379 },	-- A Murloc and a Dragon Walk into a Time Rift...
-						}),
-						crit(4, {	-- Mechanized Cog
-							["_quests"] = { 76404 },	-- Cogs in a Machine
-						}),
-						crit(5, {	-- Corrupted Ashbringer
-							["_quests"] = { 76406 },	-- The Sins of the Ashbringer
-						}),
-						crit(6, {	-- Oil-Soaked Log Book
-							["_quests"] = { 76449 },	-- The Endless Conflict
-						}),
-						crit(7, {	-- Chipped Stone Tablet
-							["_quests"] = { 76453 },	-- A Stony Reception
-						}),
-						crit(8, {	-- Map to Suramar
-							["_quests"] = { 76459 },	-- The Resistance
-						}),
-						crit(9, {	-- Boffins
-							["_quests"] = { 76521 },	-- Buzzing Boffins
-						}),
-						crit(10, {	-- Watcher's Log
-							["_quests"] = { 76533 },	-- Dangerous Documentation
-						}),
-						crit(11, {	-- Blood Soaked Book
-							["_quests"] = { 76544 },	-- Wasteland Warriors
-						}),
-						crit(12, {	-- Amber Blade
-							["_quests"] = { 76546 },	-- Mantid Methodology
-						}),
-						crit(13, {	-- Gilded Vase
-							["_quests"] = { 76547 },	-- All That Glitters..
-						}),
-						crit(14, {	-- A Fish
-							["_quests"] = { 76548 },	-- A Fishy Gift
-						}),
+						["sym"] = {{ "achievement_criteria" }},
+						["groups"] = {
+							i(208186),	-- Boffins (TOY!)
+						},
 					}),
 					ach(18641),	-- To All The Squirrels I've BEEN Before
 					ach(18635),	-- Verified Rifter
