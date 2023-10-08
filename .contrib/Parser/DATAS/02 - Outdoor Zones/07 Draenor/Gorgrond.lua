@@ -86,26 +86,12 @@ root(ROOTS.Zones, {
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(9678,  {	-- Ancient No More
-						crit(1),	-- Swift Onyx Flayer
-						crit(2),	-- Mogarnago
-						crit(3),	-- Protectors of the Grove
-						crit(4),	-- Venolasix
-						crit(5),	-- Alkali
-						crit(6),	-- Depthroot
-						crit(7),	-- Firestarter Grash
-						crit(8),	-- Grove Warden Yal
-						crit(9),	-- Hunter Bal'ra
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(9667),		-- Burn It to the Ground (Everbloom Wilds)
 					explorationAch(8939),		-- Explore Gorgrond
 					ach(9655, {		-- Fight the Power (The Pit)
-						crit(1),		-- Maniacal Madgard
-						crit(2),		-- Defector Dazgo
-						crit(3),		-- Durp the Hated
-						crit(4),		-- Inventor Blammo
-						crit(5),		-- Horgg
-						crit(6),		-- Blademaster Ro'gor
-						crit(7),		-- Morgo Kain
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(9656,  {	-- In Plain Sight (The Pit)
 						["coords"] = {
@@ -117,11 +103,11 @@ root(ROOTS.Zones, {
 					}),
 					ach(9659),		-- Iron Wings (The Pit)
 					ach(9400, {		-- Gorgrond Monster Hunter
-						crit(1, {	-- Biolante
+						crit(25568, {	-- Biolante
 							["crs"] = { 75207 },	-- Biolante
 							["coord"] = { 62.8, 54.0, GORGROND },
 						}),
-						crit(2, {	-- Roardan the Sky Terror
+						crit(25569, {	-- Roardan the Sky Terror
 							["crs"] = { 77093 },	-- Roardan the Sky Terror
 							["coords"] = {
 								{ 51.2, 65.6, GORGROND },
@@ -129,68 +115,33 @@ root(ROOTS.Zones, {
 								{ 61.6, 61.8, GORGROND },
 							},
 						}),
-						crit(3, {	-- Crater Lord Igneous
+						crit(25570, {	-- Crater Lord Igneous
 							["crs"] = { 81528 },	-- Crater Lord Igneous
 							["coord"] = { 43.6, 59.6, GORGROND },
 						}),
-						crit(4, {	-- Dessicus of the Dead Pools
+						crit(25571, {	-- Dessicus of the Dead Pools
 							["crs"] = { 81529 },	-- Dessicus of the Dead Pools
 							["coord"] = { 38.8, 51.2, GORGROND },
 						}),
-						crit(5, {	-- Khargax the Devourer
+						crit(25572, {	-- Khargax the Devourer
 							["crs"] = { 81537 },	-- Khargax the Devourer
 							["coord"] = { 53.0, 66.6, GORGROND },
 						}),
-						crit(6, {	-- Erosian the Violent
+						crit(25573, {	-- Erosian the Violent
 							["crs"] = { 81540 },	-- Erosian the Violent
 							["coord"] = { 51.8, 41.6, GORGROND },
 						}),
-						crit(7, {	-- Charl Doomwing
+						crit(25574, {	-- Charl Doomwing
 							["crs"] = { 81548 },	-- Charl Doomwing
 							["coord"] = { 46.0, 46.8, GORGROND },
 						}),
-						crit(8, {	-- Fungal Praetorian
+						crit(25575, {	-- Fungal Praetorian
 							["crs"] = { 80785 },	-- Fungal Praetorian
 							["coord"] = { 58.0, 63.6, GORGROND },
 						}),
 					}),
 					ach(9607,  {	-- Make It a Bonus
-						crit(1, {	-- Bonus Objective: Brimstone Springs
-							["sourceQuest"] = 36603,
-						}),
-						crit(2, {	-- Bonus Objective: Iyun Weald
-							["sourceQuest"] = 36571,
-						}),
-						crit(3, {	-- Bonus Objective: Mistcreep Mire
-							["sourceQuest"] = 36563,
-						}),
-						crit(4, {	-- Bonus Objective: Valley of Destruction
-							["sourceQuest"] = 36480,
-						}),
-						crit(5, {	-- Bonus Objective: Ruins of the First Bastion
-							["sourceQuest"] = 35881,
-						}),
-						crit(6, {	-- Bonus Objective: The Forgotten Caves
-							["sourceQuest"] = 34724,
-						}),
-						crit(7, {	-- South Gronn Canyon or Evermorn Springs
-							["sourceQuests"] = {
-								36476,	-- South Gronn Canyon (Lumber Yard)
-								36504,	-- Evermorn Springs (Sparring Arena)
-							},
-						}),
-						crit(8, {	-- Stonemaul Arena or Tangleheart
-							["sourceQuests"] = {
-								36566,	-- Stonemaul Arena (Lumber Yard)
-								36564,	-- Tangleheart (Sparring Arena)
-							},
-						}),
-						crit(9, {	-- Affliction Ridge or The Razorbloom
-							["sourceQuests"] = {
-								36473,	-- Affliction Ridge (Lumber Yard)
-								36500,	-- The Razorbloom (Sparring Arena)
-							},
-						}),
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(9654),		-- Mean and Green (Everbloom Wilds)
 					ach(9663, {	-- Picky Palate (Everbloom Wilds)
@@ -208,106 +159,30 @@ root(ROOTS.Zones, {
 						},
 					}),
 					ach(9402,  {	-- Prove Your Strength
-						crit(1, {	-- Ancient Branch
-							["sourceQuests"] = { 36092, 36094 },	-- Proof of Strength: (A/H)
-						}),
-						crit(2, {	-- Basilisk Scale
-							["sourceQuests"] = { 36103, 36104 },	-- Proof of Strength: (A/H)
-						}),
-						crit(3, {	-- Botani Bloom
-							["sourceQuests"] = { 36084, 36086 },	-- Proof of Strength: (A/H)
-						}),
-						crit(4, {	-- Elemental Crystal
-							["sourceQuests"] = { 36105, 36106 },	-- Proof of Strength: (A/H)
-						}),
-						crit(5, {	-- Goren Tooth
-							["sourceQuests"] = { 35944, 35948 },	-- Proof of Strength: (A/H)
-						}),
-						crit(6, {	-- Gronn Eye
-							["sourceQuests"] = { 36081, 36083 },	-- Proof of Strength: (A/H)
-						}),
-						crit(7, {	-- Gronnling Scale
-							["sourceQuests"] = { 36078, 36080 },	-- Proof of Strength: (A/H)
-						}),
-						crit(8, {	-- Ogron Horn
-							["sourceQuests"] = { 36075, 36076 },	-- Proof of Strength: Ogron Horn (A/H)
-						}),
-						crit(9, {	-- Orc Thorn
-							["sourceQuests"] = { 36090, 36091 },	-- Proof of Strength: (A/H)
-						}),
-						crit(10, {	-- Ravager Claw
-							["sourceQuests"] = { 36096, 36097 },	-- Proof of Strength: (A/H)
-						}),
-						crit(11, {	-- Wasp Stinger
-							["sourceQuests"] = { 36098, 36101 },	-- Proof of Strength: (A/H)
-						}),
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(8923,  {	-- Putting the Gore in Gorgrond (A) (unlocks ability to buy Gorgrond Treasure Map from Grakis in Stormshield)
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							crit(1, {	-- We Need An Outpost
-								["sourceQuest"] = 35063,	-- We Need an Outpost
-							}),
-							crit(2, {	-- Supporting Your Garrison
-								["sourceQuests"] = {
-									35508,	-- Chapter I: Plant Food (Lumber Yard)
-									35527,	-- Chapter II: The Harvest (Lumber Yard)
-									35524,	-- Chapter III: Ritual of the Charred (Lumber Yard)
-									35652,	-- Growing Wood (Lumber Yard)
-									35137,	-- The Sparring Arena (Sparring Arena)
-								},
-							}),
-							crit(3, {	-- In the Land of Giants
-								["sourceQuest"] = 35702,	-- Chains of Iron
-							}),
-							crit(4, {	-- The Iron Approach
-								["sourceQuests"] = {
-									36575,	-- Strike While the Iron is Hot
-									36576,	-- Strike While the Iron is Hot (Sparring Arena)
-								},
-							}),
-						},
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(8924,  {	-- Putting the Gore in Gorgrond (H)
 						["races"] = HORDE_ONLY,
-						["g"] = {
-							crit(1, {	-- Your Base, Your Choice
-								["sourceQuest"] = 35151,	-- Your Base, Your Choice
-							}),
-							crit(2, {	-- Supporting Your Garrison
-								["sourceQuests"] = {
-									35508,	-- Chapter I: Plant Food (Lumber Yard)
-									35527,	-- Chapter II: The Harvest (Lumber Yard)
-									35524,	-- Chapter III: Ritual of the Charred (Lumber Yard)
-									35506,	-- Growing Wood (Lumber Yard)
-									35152,	-- The Sparring Arena (Sparring Arena)
-								},
-							}),
-							crit(3, {	-- In the Land of Giants
-								["sourceQuest"] = 35136,	-- Chains of Iron
-							}),
-							crit(4, {	-- The Iron Approach
-								["sourceQuests"] = {
-									36574,	-- Strike While the Iron is Hot (Lumber Yard)
-									36573,	-- Strike While the Iron is Hot (Sparring Arena)
-								},
-							}),
-						},
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(9564,  {	-- Securing Draenor (A)
 						["collectible"] = false,
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							crit(4),	-- Assault on the Pit
-							crit(5),	-- Assault on the Everbloom Wilds
+							crit(26248),	-- Assault on the Pit
+							crit(26249),	-- Assault on the Everbloom Wilds
 						},
 					}),
 					ach(9562,  {	-- Securing Draenor (H)
 						["collectible"] = false,
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							crit(4),	-- Assault on the Pit
-							crit(5),	-- Assault on the Everbloom Wilds
+							crit(26229),	-- Assault on the Pit
+							crit(26232),	-- Assault on the Everbloom Wilds
 						},
 					}),
 					ach(9401),		-- Shredder Maniac
@@ -2394,9 +2269,6 @@ root(ROOTS.Zones, {
 							{ 71.4, 40.2, GORGROND },
 						},
 						["g"] = {
-							crit(5, {	-- Alkali
-								["achievementID"] = 9678,	-- Ancient No More
-							}),
 							i(119361),	-- Thorn-Knuckled Gloves
 						},
 					}),
@@ -2418,9 +2290,6 @@ root(ROOTS.Zones, {
 							86259,	-- Valstil
 						},
 						["g"] = {
-							crit(3, {	-- Protectors of the Grove)
-								["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
-							}),
 							i(119432),	-- Botani Camouflage (TOY!)
 							i(119357),	-- Grovetender's Cummerbund
 						},
@@ -2441,9 +2310,6 @@ root(ROOTS.Zones, {
 						},
 						["lvl"] = 100,
 						["g"] = {
-							crit(6, {	-- Fight the Power
-								["achievementID"] = 9655,	-- Fight the Power
-							}),
 							i(119228),	-- Ro'gor's Slippers of Silence
 						},
 					}),
@@ -2460,9 +2326,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 48.25, 20.83, GORGROND },
 						["lvl"] = 100,
 						["g"] = {
-							crit(2, {	-- Defector Dazgo
-								["achievementID"] = 9655,	-- Fight the Power
-							}),
 							i(119224),	-- Foereaver Polearm
 						},
 					}),
@@ -2471,9 +2334,6 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 72.6, 40.8, GORGROND },
 						["g"] = {
-							crit(6, {	-- Depthroot
-								["achievementID"] = 9678,	-- Ancient No More
-							}),
 							i(119406),	-- Depthroot's Forearm
 						},
 					}),
@@ -2483,9 +2343,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.8, 23.8, GORGROND },	-- **Coords unconfirmed, relied on wowhead**
 						["lvl"] = 100,
 						["g"] = {
-							crit(3, {	-- Durp the Hated
-								["achievementID"] = 9655,	-- Fight the Power
-							}),
 							i(119225),	-- Studded Gronn-Stitched Girdle
 						},
 					}),
@@ -2498,9 +2355,6 @@ root(ROOTS.Zones, {
 							{ 72.8, 35.8, GORGROND },
 						},
 						["g"] = {
-							crit(7, {	-- Firestarter Grash
-								["achievementID"] = 9678,	-- Ancient No More
-							}),
 							i(119381),	-- Grash's Fireproof Handguards
 						},
 					}),
@@ -2559,9 +2413,6 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 59.6, 43.0, GORGROND },
 						["g"] = {
-							crit(8, {	-- Grove Warden Yal
-								["achievementID"] = 9678,	-- Ancient No More
-							}),
 							i(119414),  -- Yal's Leafwrap Cloak
 						},
 					}),
@@ -2581,9 +2432,6 @@ root(ROOTS.Zones, {
 						},
 						["lvl"] = 100,
 						["g"] = {
-							crit(5, {	-- Horgg
-								["achievementID"] = 9655,	-- Fight the Power
-							}),
 							i(119229),	-- Horgg's Bandolier
 						},
 					}),
@@ -2592,9 +2440,6 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 55.0, 46.2, GORGROND },
 						["g"] = {
-							crit(9, {	-- Hunter Bal'ra
-								["achievementID"] = 9678,	-- Ancient No More
-							}),
 							i(119412),	-- Bal'ra's Compound Bow
 						},
 					}),
@@ -2604,9 +2449,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 47.6, 30.8, GORGROND },	-- **Coords unconfirmed, relied on wowhead**
 						["lvl"] = 100,
 						["g"] = {
-							crit(4, {	-- Inventor Blammo
-								["achievementID"] = 9655,	-- Fight the Power
-							}),
 							i(119226),	-- Blammo's Blammer
 						},
 					}),
@@ -2635,9 +2477,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.17, 33.11, GORGROND },
 						["lvl"] = 100,
 						["g"] = {
-							crit(1, {	-- Maniacal Madgard
-								["achievementID"] = 9655,	-- Fight the Power
-							}),
 							i(119230),	-- Unpopped Pustule Pendant
 						},
 					}),
@@ -2646,9 +2485,6 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 61.6, 39.2, GORGROND },
 						["g"] = {
-							crit(2, {	-- Mogamago
-								["achievementID"] = 9678,	-- Ancient No More
-							}),
 							i(119391),	-- Etched Osteoderm Shield
 						},
 					}),
@@ -2661,9 +2497,6 @@ root(ROOTS.Zones, {
 						},
 						["lvl"] = 100,
 						["g"] = {
-							crit(7, {	-- Morgo Kain
-								["achievementID"] = 9655,	-- Fight the Power
-							}),
 							i(119227),	-- Morgo's Unstoppable Ramming Helm
 						},
 					}),
@@ -2743,9 +2576,6 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 59.52, 31.97, GORGROND },
 						["g"] = {
-							crit(1, {	-- Swift Onyx Flayer
-								["achievementID"] = 9678,	-- Ancient No More
-							}),
 							i(119367),	-- Flayerscale Carapace Stompers
 						},
 					}),
@@ -2770,9 +2600,6 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 63.4, 30.8, GORGROND },
 						["g"] = {
-							crit(4, {	-- Venolasix
-								["achievementID"] = 9678,	-- Ancient No More
-							}),
 							i(119395),	-- Hydratooth Dagger
 						},
 					}),

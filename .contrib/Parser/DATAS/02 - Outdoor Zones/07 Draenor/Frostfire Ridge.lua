@@ -27,11 +27,7 @@ root(ROOTS.Zones, {
 					explorationAch(8937),	-- Explore Frostfire Ridge
 					ach(9606, {	-- Frostfire Fridge
 						["races"] = HORDE_ONLY,
-						["g"] = {
-							crit(1),	-- Bonus Objective: Forbidden Glacier
-							crit(2),	-- Bonus Objective: Frostbite Hollow
-							crit(3),	-- Bonus Objective: Grimfrost Hill
-						},
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(9529, {	-- On the Shadow's Trail [H]
 						["races"] = HORDE_ONLY,
@@ -43,18 +39,18 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						["g"] = {
-							crit(1),	-- Assault on the Iron Siegeworks
-							crit(2),	-- Assault on Stonefury Cliffs
-							crit(3),	-- Assault on Magnarok
+							crit(26244),	-- Assault on the Iron Siegeworks
+							crit(26245),	-- Assault on Stonefury Cliffs
+							crit(26247),	-- Assault on Magnarok
 						},
 					}),
 					ach(9562, {	-- Securing Draenor (H)
 						["races"] = HORDE_ONLY,
 						["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						["g"] = {
-							crit(1),	-- Assault on the Iron Siegeworks
-							crit(2),	-- Assault on Stonefury Cliffs
-							crit(3),	-- Assault on Magnarok
+							crit(26225),	-- Assault on the Iron Siegeworks
+							crit(26226),	-- Assault on Stonefury Cliffs
+							crit(26228),	-- Assault on Magnarok
 						},
 					}),
 					ach(9536),	-- Slagnarok (Magnarok)
@@ -69,26 +65,7 @@ root(ROOTS.Zones, {
 					}),
 					ach(8671, {	-- You'll Get Caught Up In The... Frostfire!
 						["races"] = HORDE_ONLY,
-						["g"] = {
-							crit(1, {	-- Foothold in a Savage Land
-								["sourceQuest"] = 34775,	-- Mission Probable
-							}),
-							crit(2, {	-- Siege of Bladespire Citadel
-								["sourceQuest"] = 33527,	-- Last Steps
-							}),
-							crit(3, {	-- Defense of Wor'gol
-								["sourceQuest"] = 33473,	-- Back to Bladespire Citadel
-							}),
-							crit(4, {	-- Ga'nar's Vengeance
-								["sourceQuest"] = 32796,	-- To the Garrison
-							}),
-							crit(5, {	-- Thunder's Fall
-								["sourceQuest"] = 33828,	-- The Master Siegesmith
-							}),
-							crit(6, {	-- The Battle of Thunder Pass
-								["sourceQuest"] = 34124,	-- The Battle of Thunder Pass
-							}),
-						},
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 				}),
 				petbattle(filter(BATTLE_PETS, {
@@ -1289,29 +1266,14 @@ root(ROOTS.Zones, {
 						q(34505, {	-- Forbidden Glacier
 							["coord"] = { 25.5, 55.0, FROSTFIRE_RIDGE },
 							["races"] = HORDE_ONLY,
-							["g"] = {
-								crit(1, {
-									["achievementID"] = 9606,	-- Frostfire Fridge
-								}),
-							},
 						}),
 						q(33145, {	-- Grimfrost Hill
 							["coord"] = { 65.1, 47.7, FROSTFIRE_RIDGE },
 							["races"] = HORDE_ONLY,
-							["g"] = {
-								crit(3, {
-									["achievementID"] = 9606,	-- Frostfire Fridge
-								}),
-							},
 						}),
 						q(34501, {	-- Frostbite Hollow
 							["coord"] = { 66.1, 18.0, FROSTFIRE_RIDGE },
 							["races"] = HORDE_ONLY,
-							["g"] = {
-								crit(2, {
-									["achievementID"] = 9606,	-- Frostfire Fridge
-								}),
-							},
 						}),
 					}),
 				}),

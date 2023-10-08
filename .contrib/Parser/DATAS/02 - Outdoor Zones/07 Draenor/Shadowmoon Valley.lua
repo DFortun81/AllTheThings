@@ -79,32 +79,7 @@ root(ROOTS.Zones, {
 					ach(8845, {	-- As I Walk Through the Valley of the Shadow of Moon
 					--	unlocks ability to buy Shadowmoon Valley Treasure Map from Grakis in Stormshield
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							crit(1, {	-- Establishing a Foothold
-								["sourceQuests"] = { 34692 },	-- Delegating on Draenor
-							}),
-							crit(2, {	-- Shadows Awaken
-								["sourceQuests"] = { 34019 },	-- Shadows Awaken
-							}),
-							crit(3, {	-- Dark Side of the Moon
-								["sourceQuests"] = {
-									34054,	-- Dark Side of the Moon (granted automatically)
-									35093,	-- Dark Side of the Moon (granted if you abandon 34054)
-								},
-							}),
-							crit(4, {	-- The Light Prevails
-								["sourceQuests"] = { 33256 },	-- The Defense of Karabor
-							}),
-							crit(5, {	-- Gloomshade Grove
-								["sourceQuests"] = { 33271 },	-- Game of Thorns
-							}),
-							crit(6, {	-- The Pursuit of Justice
-								["sourceQuests"] = { 34792 },	-- The Traitor's True Name
-							}),
-							crit(7, {	-- Purifying the Gene Pool
-								["sourceQuests"] = { 35015 },	-- Gestating Genesaur
-							}),
-						},
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					explorationAch(8938),	-- Explore Shadowmoon Valley
 					ach(9436, {	-- It's the Stones! (Socrethar's Rise)
@@ -129,26 +104,13 @@ root(ROOTS.Zones, {
 						["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							crit(8),	-- Assault on Socrethar's Rise
-							crit(9),	-- Assault on Darktide Roost
+							crit(26253),	-- Assault on Socrethar's Rise
+							crit(26254),	-- Assault on Darktide Roost
 						},
 					}),
 					ach(9602, {	-- Shoot For the Moon
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							crit(1, {	-- Bonus Objective: Bloodthorn Cave
-								["sourceQuest"] = 34504,	-- Bloodthorn Cave
-							}),
-							crit(2, {	-- Bonus Objective: The Burial Fields
-								["sourceQuest"] = 34076,	-- The Burial Fields
-							}),
-							crit(3, {	-- Bonus Objective: The Hills of Valuun
-								["sourceQuest"] = 34496,	-- The Hills of Valuun
-							}),
-							crit(4, {	-- Bonus Objective: The Shimmer Moor
-								["sourceQuest"] = 34728,	-- The Shimmer Moor
-							}),
-						},
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(9435),	-- Take From Them Everything (Socrethar's Rise)
 					ach(9432),	-- Would You Like a Pamphlet? (Shadowmoon Enclave)
@@ -347,11 +309,6 @@ root(ROOTS.Zones, {
 						["lvl"] = 110,
 						["provider"] = { "o", 258980 },	-- Cursed Tome
 						["coord"] = { 37.6, 59.3, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
-							crit(33147, {	-- Cursed Tome
-								["achievementID"] = 11240,	-- Harbinger
-							}),
-						},
 					}),
 					q(33765, {	-- Dark Enemies
 						["sourceQuests"] = { 33075 },	-- A Hero's Welcome

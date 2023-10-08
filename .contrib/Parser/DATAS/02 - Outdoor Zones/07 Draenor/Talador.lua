@@ -84,102 +84,44 @@ root(ROOTS.Zones, {
 					ach(9635),		-- Bobbing for Orcs
 					ach(9634),		-- Charged Up
 					ach(9633, {		-- Cut off the Head (Shattrath City)
-						crit(1),		-- Bombardier Gu'gok
-						crit(2),		-- Gug'tol
-						crit(3),		-- Haakun the All-Consuming
-						crit(4),		-- Felfire Consort
-						crit(5),		-- Avatar of Socrethar
-						crit(6),		-- Sargerei War Council
-						crit(7),		-- Legion Vanguard
-						crit(8),		-- Xothear, the Destroyer
+						crit(26465),		-- Bombardier Gu'gok
+						crit(26466),		-- Gug'tol
+						crit(26467),		-- Haakun the All-Consuming
+						crit(26468),		-- Felfire Consort
+						crit(26469),		-- Avatar of Socrethar
+						crit(26470),		-- Sargerei War Council
+						crit(26579),		-- Legion Vanguard
+						crit(26580),		-- Xothear, the Destroyer
 					}),
 					ach(8920,  {	-- Don't Let the Tala-door Hit You on the Way Out (A) (unlocks ability to buy Talador Treasure Map from Grakis in Stormshield)
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							crit(1, {	-- Establishing your Outpost
-								["sourceQuests"] = {
-									34711,	-- Due Cause to Celebrate (Arcane Sanctum)
-									34981,	-- The Only Way to Travel (Artillery Tower)
-								},
-							}),
-							crit(2, {	-- The Battle for Shattrath
-								["sourceQuest"] = 34099,	-- The Battle for Shattrath
-							}),
-							crit(3, {	-- The Plight of the Arakkoa
-								["sourceQuest"] = 33582,	-- Kura's Vengeance
-							}),
-							crit(4, {	-- In the Shadows of Auchindoun
-								["sourceQuest"] = 34154,	-- Destination: Unknown
-							}),
-						},
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(8919,  {	-- Don't Let the Tala-door Hit You on the Way Out (H) (unlocks ability to buy Gorgrond Treasure Map from Srikka in Warspear)
 						["races"] = HORDE_ONLY,
-						["g"] = {
-							crit(1, {	-- Establishing your Armory
-								["sourceQuests"] = {
-									34712,	-- Due Cause to Celebrate (Arcane Sanctum)
-									34971,	-- The Only Way to Travel (Artillery Tower)
-								},
-							}),
-							crit(2, {	-- The Battle for Shattrath
-								["sourceQuest"] = 33731,	-- The Battle for Shattrath
-							}),
-							crit(3, {	-- The Plight of the Arakkoa
-								["sourceQuest"] = 33582,	-- Kura's Vengeance
-							}),
-							crit(4, {	-- In the Shadows of Auchindoun
-								["sourceQuest"] = 34564,	-- Destination: Unknown
-							}),
-						},
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					explorationAch(8940),		-- Explore Talador
 					ach(9486),		-- Goodness Gracious
 					ach(9638, {		-- Heralds of the Legion (Shattrath City)
-						crit(1),		-- Orumo the Observer
-						crit(2),		-- Lord Korinak
-						crit(3),		-- Lady Demlash
-						crit(4),		-- Shadowflame Terrorwalker
-						crit(5),		-- Kurlosh Doomfang
-						crit(6),		-- Matron of Sin
-						crit(7),		-- Vigilant Paarthos
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(9674,  {	-- I Want More Talador
-						crit(1, {	-- Bonus Objective: Aruuna's Desolation
-							["sourceQuest"] = 34639,	-- Aruuna's Desolation
-						}),
-						crit(2, {	-- Bonus Objective: Court of Souls
-							["sourceQuest"] = 34667,	-- Court of Souls
-						}),
-						crit(3, {	-- Bonus Objective: Kuuro's Claim or Zangarra
-							["sourceQuests"] = {
-								37421,	-- Kuuro's Claim
-								37422,	-- Zangarra
-							},
-						}),
-						crit(4, {	-- Bonus Objective: Mor'gran Logworks or Orunai Coast
-							["sourceQuests"] = {
-								35237,	-- Mor'gran Logworks
-								35236,	-- Orunai Coast
-							},
-						}),
-						crit(5, {	-- Bonus Objective: Zorkra's Fall
-							["sourceQuest"] = 34660,	-- Zorkra's Fall
-						}),
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(9637),		-- Poor Communication
 					ach(9564,  {	-- Securing Draenor (A)
 						["collectible"] = false,
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							crit(12),	-- Assault on Shattrath Harbor
+							crit(26258),	-- Assault on Shattrath Harbor
 						},
 					}),
 					ach(9562,  {	-- Securing Draenor (Horde)
 						["collectible"] = false,
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							crit(7),	-- Assault on Shattrath Harbor
+							crit(26242),	-- Assault on Shattrath Harbor
 						},
 					}),
 					ach(9632),		-- The Power Is Yours
@@ -1965,9 +1907,6 @@ root(ROOTS.Zones, {
 						},
 						["lvl"] = 100,
 						["g"] = {
-							crit(5, {	-- Avatar of Socrethar
-								["achievementID"] = 9633,	-- Cut off the Head
-							}),
 							i(119378),	-- Socrethar's Stone
 						},
 					}),
@@ -1980,9 +1919,6 @@ root(ROOTS.Zones, {
 						},
 						["lvl"] = 100,
 						["g"] = {
-							crit(1, {	-- Bombardier Gu'gok
-								["achievementID"] = 9633,	-- Cut off the Head
-							}),
 							i(119413),	-- Gu'gok's Rangefinder
 						},
 					}),
@@ -2024,9 +1960,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 47.6, 32.9, TALADOR },
 						["lvl"] = 100,
 						["g"] = {
-							crit(4, {	-- Felfire Consort
-								["achievementID"] = 9633,	-- Cut off the Head
-							}),
 							i(119386),	-- Consort's Promise Ring
 						},
 					}),
@@ -2081,9 +2014,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 47.6, 39.0, TALADOR },
 						["lvl"] = 100,
 						["g"] = {
-							crit(2, {	-- Gug'tol
-								["achievementID"] = 9633,	-- Cut off the Head
-							}),
 							i(119402),	-- Gurg'tol's Imp Imperator
 						},
 					}),
@@ -2093,9 +2023,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 48.1, 25.2, TALADOR },
 						["lvl"] = 100,
 						["g"] = {
-							crit(3, {	-- Haakun the All-Consuming
-								["achievementID"] = 9633,	-- Cut off the Head
-							}),
 							i(119403),	-- Sargerei Soulbiter
 						},
 					}),
@@ -2148,9 +2075,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 37.4, 37.6, TALADOR },
 						["lvl"] = 100,
 						["g"] = {
-							crit(5, {	-- Kurlosh Doomfang
-								["achievementID"] = 9638,	-- Heralds of the Legion
-							}),
 							i(119394),	-- Kurlosh's Kidneyslicer
 						},
 					}),
@@ -2160,9 +2084,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 33.6, 37.8, TALADOR },
 						["lvl"] = 100,
 						["g"] = {
-							crit(3, {	-- Lady Demlash
-								["achievementID"] = 9638,	-- Heralds of the Legion
-							}),
 							i(119352),	-- Demlash's Dashing Robe
 						},
 					}),
@@ -2173,9 +2094,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 37.96, 20.8, TALADOR },
 						["lvl"] = 100,
 						["g"] = {
-							crit(7, {	-- Legion Vanguard
-								["achievementID"] = 9633,	-- Cut off the Head
-							}),
 							i(119385),	-- Vanguard's Linebreaking Bracer
 						},
 					}),
@@ -2192,9 +2110,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.0, 26.8, TALADOR },
 						["lvl"] = 100,
 						["g"] = {
-							crit(2, {	-- Lord Korinak
-								["achievementID"] = 9638,	-- Heralds of the Legion
-							}),
 							i(119388),	-- Doomlord's Seal of Command
 						},
 					}),
@@ -2204,9 +2119,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 38.8, 49.8, TALADOR },
 						["lvl"] = 100,
 						["g"] = {
-							crit(6, {	-- Matron of Sin
-								["achievementID"] = 9638,	-- Heralds of the Legion
-							}),
 							i(119353),	-- Matron's Supple Gloves
 						},
 					}),
@@ -2227,9 +2139,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.4, 47.6, TALADOR },
 						["lvl"] = 100,
 						["g"] = {
-							crit(1, {	-- Orumo the Observer
-								["achievementID"] = 9638,	-- Heralds of the Legion
-							}),
 							i(119170),	-- Eye of Observation (PET!)
 							i(119375),	-- Chained Orb of Omniscience
 						},
@@ -2256,9 +2165,6 @@ root(ROOTS.Zones, {
 						},
 						["lvl"] = 100,
 						["g"] = {
-							crit(6, {	-- Sargerei War Council
-								["achievementID"] = 9633,	-- Cut off the Head
-							}),
 							i(119350),	-- Sargerei Councillor's Drape
 						},
 					}),
@@ -2268,9 +2174,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 41.0, 42.0, TALADOR },
 						["lvl"] = 100,
 						["g"] = {
-							crit(4, {	-- Shadowflame Terrorwalker
-								["achievementID"] = 9638,	-- Heralds of the Legion
-							}),
 							i(119393),	-- Searing Shadowflame Axe
 						},
 					}),
@@ -2347,9 +2250,6 @@ root(ROOTS.Zones, {
 						},
 						["lvl"] = 100,
 						["g"] = {
-							crit(7, {	-- Vigilant Paarthos
-								["achievementID"] = 9638,	-- Heralds of the Legion
-							}),
 							i(119383),	-- Shoulderplates of the Vigilant
 						},
 					}),
@@ -2383,9 +2283,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 37.6, 14.6, TALADOR },
 						["lvl"] = 100,
 						["g"] = {
-							crit(8, {	-- Xothear, the Destroyer
-								["achievementID"] = 9633,	-- Cut off the Head
-							}),
 							i(119371),	-- Mantle of the Destroyer
 						},
 					}),

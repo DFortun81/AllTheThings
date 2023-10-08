@@ -81,117 +81,28 @@ root(ROOTS.Zones, {
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(9605,  {	-- Arak Star
-						crit(1, {	-- The Howling Crag
-							["sourceQuest"] = 36590,	-- The Howling Crag
-						}),
-						crit(2, {	-- Bloodmane Pridelands
-							["sourceQuest"] = 36660,	-- Bloodmane Pridelands
-						}),
-						crit(3, {	-- The Writhing Mire
-							["sourceQuest"] = 35649,	-- The Writhing Mire
-						}),
-						crit(4, {	-- Bladefist Hold
-							["sourceQuest"] = 36792,	-- Bladefist Hold
-						}),
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(9433),		-- A-VOID-ance
 					ach(8925,  {	-- Between Arak and a Hard Place (Alliance)
 						["races"] = ALLIANCE_ONLY,
+						["sym"] = {{ "achievement_criteria" }},
 						["g"] = {
 							follower(218),	-- Talonpriest Ishaal
-							crit(26023, {	-- Shadows Gather
-								["_quests"] = { 35671 },	-- A Gathering of Shadows
-							}),
-							crit(26022, {	-- Admiral Taylor's Garrison
-								["_quests"] = { 35482 },	-- Admiral Taylor [A]
-							}),
-							crit(26024, {	-- Secrets of the Talonpriests
-								["_quests"] = { 34942 },	-- Back from Beyond
-							}),
-							crit(26025, {	-- The Gods of Arak
-								["_quests"] = { 35245 },	-- A Sentimental Relic
-							}),
-							crit(26026, {	-- The Gods of Arak
-								["_quests"] = { 35012 },	-- Sethe, the Dead God
-							}),
-							crit(26027, {	-- Legacy of the Apexis
-								["_quests"] = { 35634 },	-- Control is King
-							}),
-							crit(26028, {	-- Terokk's Legend
-								["_quests"] = { 35896 },	-- The Avatar of Terokk
-							}),
-							crit(27696, {	-- Veil Zekk
-								["_quests"] = { 35835 },	--  The Ebon Hunter (Smuggler's Den)
-							}),
-							crit(27697, {	-- The Antidote
-								["_quests"] = { 36165 },	-- No Time to Waste (Stoktron Brewery)
-							}),
-							crit(26030, {	-- Pinchwhistle Gearworks
-								["_quests"] = { 35298 },	-- Flame On
-							}),
-							crit(26029, {	-- When the Raven Swallows the Day
-								["_quests"] = { 35704 },	-- When All is Aligned
-							}),
 						},
 					}),
 					ach(8926,  {	-- Between Arak and a Hard Place (Horde)
 						["races"] = HORDE_ONLY,
+						["sym"] = {{ "achievement_criteria" }},
 						["g"] = {
 							follower(218),	-- Talonpriest Ishaal
-							crit(26023, {	-- Shadows Gather
-								["_quests"] = { 35671 },	-- A Gathering of Shadows
-							}),
-							crit(26035, {	-- Admiral Taylor's Garrison
-								["_quests"] = { 36183 },	-- Admiral Taylor [H]
-							}),
-							crit(26024, {	-- Secrets of the Talonpriests
-								["_quests"] = { 34942 },	-- Back from Beyond
-							}),
-							crit(26025, {	-- The Gods of Arak
-								["_quests"] = { 35245 },	-- A Sentimental Relic
-							}),
-							crit(26026, {	-- The Gods of Arak
-								["_quests"] = { 35012 },	-- Sethe, the Dead God
-							}),
-							crit(26027, {	-- Legacy of the Apexis
-								["_quests"] = { 35634 },	-- Control is King
-							}),
-							crit(26028, {	-- Terokk's Legend
-								["_quests"] = { 35896 },	-- The Avatar of Terokk
-							}),
-							crit(27698, {	-- Veil Zekk
-								["_quests"] = { 35797 },	--  The Ebon Hunter (Smuggler's Den)
-							}),
-							crit(27699, {	-- The Antidote
-								["_quests"] = { 36166 },	-- No Time to Waste (Stoktron Brewery)
-							}),
-							crit(26030, {	-- Pinchwhistle Gearworks
-								["_quests"] = { 35298 },	-- Flame On
-							}),
-							crit(26029, {	-- When the Raven Swallows the Day
-								["_quests"] = { 35704 },	-- When All is Aligned
-							}),
 						},
 					}),
 					ach(9612),		-- Eggs in One Basket
 					explorationAch(8941),		-- Explore Spires of Arak
 					ach(9613),		-- Fish Gotta Swim, Birds Gotta Eat
 					ach(9601, {		-- King of the Monsters (Lost Veil Anzu)
-						crit(1, {	-- Morphed Sentient
-							["_quests"] = { 37493 },
-						}),
-						crit(2, {	-- Giga Sentinel
-							["_quests"] = { 37393 },
-						}),
-						crit(3, {	-- Shadow Hulk
-							["_quests"] = { 37392 },
-						}),
-						crit(4, {	-- Mecha Plunderer
-							["_quests"] = { 37391 },
-						}),
-						crit(5, {	-- Gluttonous Giant
-							["_quests"] = { 37390 },
-						}),
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(9072,  {	-- Mantle of the Talon King
 						["sourceQuest"] = 37177,	-- Call of the Talon King
@@ -203,27 +114,22 @@ root(ROOTS.Zones, {
 						},
 					}),
 					ach(9600, {		-- Monster Mash (Lost Veil Anzu)
-						crit(1, {	-- Shadow Hulk
-							["_quests"] = { 37392 },
-						}),
-						crit(2, {	-- Gluttonous Giant)
-							["_quests"] = { 37390 },
-						}),
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(9564,  {	-- Securing Draenor (Alliance)
 						["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							crit(10),	-- Assault on Skettis
-							crit(11),	-- Assault on Pillars of Fate
+							crit(26255),	-- Assault on Skettis
+							crit(26256),	-- Assault on Pillars of Fate
 						},
 					}),
 					ach(9562,  {	-- Securing Draenor (Horde)
 						["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							crit(11),	-- Assault on Pillars of Fate
-							crit(12),	-- Assault on Skettis
+							crit(26240),	-- Assault on Pillars of Fate
+							crit(26243),	-- Assault on Skettis
 						},
 					}),
 				}),

@@ -84,29 +84,10 @@ root(ROOTS.Zones, {
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(9571, {		-- Broke Back Precipice (Broken Precipice)
-						crit(1),		-- Durg Spinecrusher
-						crit(2),		-- Bonebreaker
-						crit(3),		-- Pit Slayer
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(9548, {		-- Buried Treasures (Mok'gol Watchpost)
-						crit(1, {	-- Garrosh's Shackles
-							["_quests"] = { 37130 },
-						}),
-						crit(2, {	-- Warsong Relics
-							["_quests"] = { 37132 },
-						}),
-						crit(3, {	-- Warsong Remains
-							["_quests"] = { 37133 },
-						}),
-						crit(4, {	-- Stolen Draenei Tome
-							["_quests"] = { 37134 },
-						}),
-						crit(5, {	-- Wolf Pup Remains
-							["_quests"] = { 37135 },
-						}),
-						crit(6, {	-- Gnarled Bone
-							["_quests"] = { 37136 },
-						}),
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					explorationAch(8942),	-- Explore Nagrand
 					achraw(9610,  {	-- History of Violence (Broken Precipice)
@@ -126,94 +107,33 @@ root(ROOTS.Zones, {
 					}),
 					ach(8927,  {	-- Nagrandeur (Alliance)
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							crit(1, {	-- The Might of Steel and Blood
-								["sourceQuest"] = 34769,	-- A Choice to Make
-							}),
-							crit(2, {	-- The Ring of Trials
-								["sourceQuest"] = 34666,	-- Ring of Trials: Roakk the Zealot
-							}),
-							crit(3, {	-- The Shadow of the Void
-								["sourceQuest"] = 35088,	-- The Shadow of the Void
-							}),
-							crit(4, {	-- The Dark Heart of Oshu'gun
-								["sourceQuest"] = 35396,	-- The Dark Heart of Oshu'gun
-							}),
-							crit(5, {	-- A Blademaster's Honor
-								["sourceQuest"] = 34957,	-- Challenge of the Masters
-							}),
-							crit(6, {	-- Trouble at the Overwatch
-								["sourceQuest"] = 34596,	-- Reglakk's Research
-							}),
-							crit(7, {	-- The Taking of Lok'rath
-								["sourceQuest"] = 35061,	-- The Pride of Lok'rath
-							}),
-							crit(8, {	-- The Legacy of Garrosh Hellscream
-								["sourceQuest"] = 35169,	-- And Justice for Thrall
-							}),
-						},
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(8928,  {	-- Nagrandeur (Horde)
 						["races"] = HORDE_ONLY,
-						["g"] = {
-							crit(1, {	-- The Might of Steel and Blood
-								["sourceQuest"] = 34899,	-- A Choice to Make
-							}),
-							crit(2, {	-- The Ring of Trials
-								["sourceQuest"] = 34666,	-- Ring of Trials: Roakk the Zealot
-							}),
-							crit(3, {	-- The Shadow of the Void
-								["sourceQuest"] = 35088,	-- The Shadow of the Void
-							}),
-							crit(4, {	-- The Dark Heart of Oshu'gun
-								["sourceQuest"] = 35317,	-- The Dark Heart of Oshu'gun
-							}),
-							crit(5, {	-- Remains of Telaar
-								["sourceQuest"] = 34918,	-- Shields Down!
-							}),
-							crit(6, {	-- Trouble at the Overwatch
-								["sourceQuest"] = 35158,	-- Reglakk's Research
-							}),
-							crit(7, {	-- The Taking of Lok-rath
-								["sourceQuest"] = 35097,	-- The Pride of Lok-Rath
-							}),
-							crit(8, {	-- The Legacy of Garrosh Hellscream
-								["sourceQuest"] = 35171,	-- And Justice for Thrall
-							}),
-						},
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(9564,  {	-- Securing Draenor (Alliance)
 						["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							crit(6),	-- Assault on the Broken Precipice
-							crit(7),	-- Assault on Mok'gol Watchpost
+							crit(26250),	-- Assault on the Broken Precipice
+							crit(26252),	-- Assault on Mok'gol Watchpost
 						},
 					}),
 					ach(9562,  {	-- Securing Draenor (Horde)
 						["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							crit(6),	-- Assault on the Broken Precipice
-							crit(8),	-- Assault on Mok'gol Watchpost
+							crit(26233),	-- Assault on the Broken Precipice
+							crit(26237),	-- Assault on Mok'gol Watchpost
 						},
 					}),
 					ach(9541,  {	-- The Song of Silence
-						crit(1),	-- Karosh Blackwind
-						crit(2),	-- Brutag Grimblade
-						crit(3),	-- Krahl Deadeye
-						crit(4),	-- Gortag Steelgrip
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(9615,  {	-- With a Nagrand Cherry On Top
-						crit(1, {	-- Bonus Objective: Hemet's Happy Hunting Grounds
-							["sourceQuest"] = 35379,
-						}),
-						crit(2, {	-- Bonus Objective: Ironfist Harbor
-							["sourceQuest"] = 34723,
-						}),
-						crit(3, {	-- Bonus Objective: Snarlpaw Ledge
-							["sourceQuest"] = 37280,
-						}),
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 				}),
 				petbattle(filter(BATTLE_PETS, {
@@ -1828,9 +1748,6 @@ root(ROOTS.Zones, {
 						},
 						["lvl"] = 100,
 						["g"] = {
-							crit(2, {	-- Bonebreaker
-								["achievementID"] = 9571,	-- Broke Back Precipice
-							}),
 							i(119370),	-- Rattlekilt
 						},
 					}),
@@ -1840,9 +1757,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 43.2, 36.3, DRAENOR_NAGRAND },
 						["lvl"] = 100,
 						["g"] = {
-							crit(2, {	-- Brutag Grimblade
-								["achievementID"] = 9541,	-- The Song of Silence
-							}),
 							i(119380),	-- Brutag's Iron Toe Boots
 						},
 					}),
@@ -1864,9 +1778,6 @@ root(ROOTS.Zones, {
 						},
 						["lvl"] = 100,
 						["g"] = {
-							crit(1, {	-- Durg Spinecrusher
-								["achievementID"] = 9571,	-- Broke Back Precipice
-							}),
 							i(119405),	-- Durg's Heavy Maul
 						},
 					}),
@@ -1989,9 +1900,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 45.8, 34.8, DRAENOR_NAGRAND },
 						["lvl"] = 100,
 						["g"] = {
-							crit(1, {	-- Karosh Blackwind
-								["achievementID"] = 9541,	-- The Song of Silence
-							}),
 							i(119355),	-- Leggings of Howling Winds
 						},
 					}),
@@ -2001,11 +1909,6 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 42.6, 36.2, DRAENOR_NAGRAND },
 						["lvl"] = 100,
-						["g"] = {
-							crit(3, {	-- Krahl Deadeye
-								["achievementID"] = 9541,	-- The Song of Silence
-							}),
-						},
 					}),
 					n(88210, {	-- Krud the Eviscerator
 						["description"] = "Kill 15 mobs near him to make him attackable.",
@@ -2099,9 +2002,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 39.6, 14.6, DRAENOR_NAGRAND },	-- **Coords unconfirmed, relied on wowhead**
 						["lvl"] = 100,
 						["g"] = {
-							crit(3, {	-- Pit Slayer
-								["achievementID"] = 9571,	-- Broke Back Precipice
-							}),
 							i(119389),	-- Pit-Slayer's Magmastone
 						},
 					}),
