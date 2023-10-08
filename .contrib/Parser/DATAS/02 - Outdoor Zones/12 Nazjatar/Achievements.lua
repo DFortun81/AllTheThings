@@ -71,55 +71,55 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		petbattle(ach(13626, {	-- Nautical Nuisances of Nazjatar
 			["filterID"] = BATTLE_PETS,
 			["g"] = {
-				crit(2, {	-- Chomp
+				crit(45467, {	-- Prince Wiggletail
+					["crs"] = { 154910 },	-- Prince Wiggletail
+					["coord"] = { 34.7, 27.4, NAZJATAR },	-- entrance at 36.9, 27.6
+				}),
+				crit(45468, {	-- Chomp
 					["crs"] = { 154911 },	-- Chomp
 					["coord"] = { 71.9, 51.2, NAZJATAR },
 				}),
-				crit(6, {	-- Elderspawn of Nalaada
+				crit(45469, {	-- Silence
+					["crs"] = { 154912 },	-- Silence
+					["coord"] = { 58.3, 48.1, NAZJATAR },
+				}),
+				crit(45470, {	-- Shadowspike Lurker
+					["crs"] = { 154913 },	-- Shadowspike Lurker
+					["coord"] = { 42.2, 14.0, NAZJATAR },
+				}),
+				crit(45471, {	-- Pearlhusk Crawler
+					["crs"] = { 154914 },	-- Pearlhusk Crawler
+					["coord"] = { 50.5, 50.2, NAZJATAR },
+				}),
+				crit(45472, {	-- Elderspawn of Nalaada
 					["crs"] = { 154915 },	-- Elderspawn of Nalaada
 					["coord"] = { 51.3, 75.0, NAZJATAR },
 				}),
-				crit(11, {	-- Frenzied Knifefang
-					["crs"] = { 154920 },	-- Frenzied Knifefang
-					["coord"] = { 61.40, 19.85, NAZJATAR },
-					["description"] = "Inside the cave.",
+				crit(45473, {	-- Ravenous Scalespawn
+					["crs"] = { 154916 },	-- Ravenous Scalespawn
+					["coord"] = { 29.6, 49.7, NAZJATAR },
 				}),
-				crit(12, {	-- Giant Opaline Conch
-					["crs"] = { 154921 },	-- Giant Opaline Conch
-					["coord"] = { 28.1, 26.7, NAZJATAR },
+				crit(45474, {	-- Mindshackle
+					["crs"] = { 154917 },	-- Mindshackle
+					["coord"] = { 56.4, 8.1, NAZJATAR },
 				}),
-				crit(9, {	-- Kelpstone
+				crit(45475, {	-- Kelpstone
 					["crs"] = { 154918 },	-- Kelpstone
 					["coord"] = { 46.6, 28.0, NAZJATAR },
 					["description"] = "Inside a cave at the bottom of the waterfall.",
 				}),
-				crit(8, {	-- Mindshackle
-					["crs"] = { 154917 },	-- Mindshackle
-					["coord"] = { 56.4, 8.1, NAZJATAR },
-				}),
-				crit(5, {	-- Pearlhusk Crawler
-					["crs"] = { 154914 },	-- Pearlhusk Crawler
-					["coord"] = { 50.5, 50.2, NAZJATAR },
-				}),
-				crit(1, {	-- Prince Wiggletail
-					["crs"] = { 154910 },	-- Prince Wiggletail
-					["coord"] = { 34.7, 27.4, NAZJATAR },	-- entrance at 36.9, 27.6
-				}),
-				crit(7, {	-- Ravenous Scalespawn
-					["crs"] = { 154916 },	-- Ravenous Scalespawn
-					["coord"] = { 29.6, 49.7, NAZJATAR },
-				}),
-				crit(4, {	-- Shadowspike Lurker
-					["crs"] = { 154913 },	-- Shadowspike Lurker
-					["coord"] = { 42.2, 14.0, NAZJATAR },
-				}),
-				crit(3, {	-- Silence
-					["crs"] = { 154912 },	-- Silence
-					["coord"] = { 58.3, 48.1, NAZJATAR },
-				}),
-				crit(10, {	-- Voltgorger
+				crit(45476, {	-- Voltgorger
 					["crs"] = { 154919 },	-- Voltgorger
 					["coord"] = { 37.5, 16.7, NAZJATAR },
+				}),
+				crit(45477, {	-- Frenzied Knifefang
+					["crs"] = { 154920 },	-- Frenzied Knifefang
+					["coord"] = { 61.40, 19.85, NAZJATAR },
+					["description"] = "Inside the cave.",
+				}),
+				crit(45478, {	-- Giant Opaline Conch
+					["crs"] = { 154921 },	-- Giant Opaline Conch
+					["coord"] = { 28.1, 26.7, NAZJATAR },
 				}),
 			},
 		})),
@@ -160,164 +160,10 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				crit(7),	-- Find and Assist Mrrl
 			}),
 			ach(13690, {	-- Nazjatarget Eliminated
-				crit(1, {	-- Szun, Breaker of Slaves
-					["_quests"] = { 55897 },
-				}),
-				crit(2, {	-- Frozen Winds of Zhiela
-					["_quests"] = { 55895 },
-				}),
-				crit(3, {	-- Zoko, Her Iron Defender
-					["_quests"] = { 55894 },
-				}),
-				crit(4, {	-- Tempest-Speaker Shalan'ali
-					["_quests"] = { 55898 },
-				}),
-				crit(5, {	-- Starseeker of the Shirakess
-					["_quests"] = { 55899 },
-				}),
-				crit(6, {	-- Azanz, the Slitherblade
-					["_quests"] = { 55893 },
-				}),
-				crit(7, {	-- Undana, Chilling Assassin
-					["_quests"] = { 55896 },
-				}),
-				crit(8, {	-- Kassar, Wielder of Dark Blades
-					["_quests"] = { 55900 },
-				}),
-				crit(9, {	-- The Zanj'ir Brutalizer
-					["_quests"] = { 55886 },
-				}),
-				crit(10, {	-- Champion Aldrantiss, Defender of Her Kingdom
-					["_quests"] = { 55891 },
-				}),
-				crit(11, {	-- Champion Alzana, Arrow of Thunder
-					["_quests"] = { 55887 },
-				}),
-				crit(12, {	-- Champion Eldanar, Shield of Her Glory
-					["_quests"] = { 55892 },
-				}),
-				crit(13, {	-- Champion Kyx'zhul the Deepspeaker
-					["_quests"] = { 55889 },
-				}),
-				crit(14, {	-- Champion Qalina, Spear of Ice
-					["_quests"] = { 55888 },
-				}),
-				crit(15, {	-- Champion Vyz'olgo the Mind-Taker
-					["_quests"] = { 55890 },
-				}),
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(13691, {	-- I Thought You Said They'd Be Rare?
-				crit(1, {	-- Alga the Eyeless
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(2, {	-- Allseer Oma'kil
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(3, {	-- Amethyst Spireshell
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(4, {	-- Anemonar
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(5, {	-- Banescale the Packfather
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(6, {	-- Blindlight
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(7, {	-- Caverndark Terror
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(8, {	-- Chasm-Haunter
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(9, {	-- Daggertooth Terror
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(10, {	-- Deepglider
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(11, {	-- Elder Unu
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(12, {	-- Elderspawn Nalaada
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(13, {	-- Garnetscale
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(14, {	-- Iridescent Glimmershell
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(15, {	-- Kelpwillow
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(16, {	-- King Gakula
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(17, {	-- Mirecrawler
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(18, {	-- Needlespine
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(19, {	-- Oronu
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(20, {	-- Prince Typhonus
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(21, {	-- Prince Vortran
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(22, {	-- Rockweed Shambler
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(23, {	-- Sandcastle
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(24, {	-- Sandclaw Stoneshell
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(25, {	-- Scale Matriarch Gratinax
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(26, {	-- Scale Matriarch Vynara
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(27, {	-- Scale Matriarch Zodia
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(28, {	-- Shassera
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(29, {	-- Shiz'narasz the Consumer
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(30, {	-- Siltstalker the Packmother
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(31, {	-- Soundless
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(32, {	-- Tidelord Aquatus
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(33, {	-- Tidelord Dispersius
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(34, {	-- Tidemistress Leth'sindra
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(35, {	-- Toxigore the Alpha
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(36, {	-- Urduu
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(37, {	-- Voice in the Deeps
-					-- ["_npcs"] = { NPCID },
-				}),
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(13762, bubbleDownSelf({["races"] = ALLIANCE_ONLY},{	-- Aqua Team Murder Force (A)
 				ach(13744),	-- Seasoned: Bladesman Inowari
@@ -362,47 +208,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			ach(13699, {	-- Periodic Destruction
 				["coord"] = { 60.7, 32.1, NAZJATAR },
 				["description"] = "You must combine lesser and greater crystals in different combinations before activating the Elemental Essence Amalgamator to summon a specific mob.  Look at the minilist section dedicated to The Laboratory of Mardivas for more information!",
-				["g"] = {
-					crit(1, {	-- Arcane Amalgamation
-						-- ["_npcs"] = { NPCID },
-					}),
-					crit(2, {	-- Watery Amalgamation
-						-- ["_npcs"] = { NPCID },
-					}),
-					crit(3, {	-- Burning Amalgamation
-						-- ["_npcs"] = { NPCID },
-					}),
-					crit(4, {	-- Dusty Amalgamation
-						-- ["_npcs"] = { NPCID },
-					}),
-					crit(5, {	-- Zomera
-						-- ["_npcs"] = { NPCID },
-					}),
-					crit(6, {	-- Omus
-						-- ["_npcs"] = { NPCID },
-					}),
-					crit(7, {	-- Osgen
-						-- ["_npcs"] = { NPCID },
-					}),
-					crit(8, {	-- Moghiea
-						-- ["_npcs"] = { NPCID },
-					}),
-					crit(9, {	-- Xue
-						-- ["_npcs"] = { NPCID },
-					}),
-					crit(10, {	-- Ungormath
-						-- ["_npcs"] = { NPCID },
-					}),
-					crit(11, {	-- Spawn of Salgos
-						-- ["_npcs"] = { NPCID },
-					}),
-					crit(12, {	-- Herald of Salgos
-						-- ["_npcs"] = { NPCID },
-					}),
-					crit(13, {	-- Salgos the Eternal
-						-- ["_npcs"] = { NPCID },
-					}),
-				},
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(13713),		-- Nothing to Scry About
 			ach(13707),		-- Mrrl's Secret Stash
@@ -410,69 +216,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				["description"] = "This event takes place every 3 hours (3:00, 6:00, 9:00, and 12:00, based on realm time).  A zonewide announcement will say \"|cffe1780cThe air crackles with power as Azshara's forces begin summoning a minion from the depths|r,\" and a purple skull will appear on your map to indicate where the event is taking place.",
 			}),
 			ach(13764, {	-- Puzzle Performer
-				crit(1, {	-- Easy Leylocked Chest
-					["_quests"] = { 56025 },
-				}),
-				crit(2, {	-- Medium Leylocked Chest
-					["_quests"] = { 56024 },
-				}),
-				crit(3, {	-- Hard Leylocked Chest
-					["_quests"] = { 56023 },
-				}),
-				crit(4, {	-- Hard Runelocked Chest: Yellow
-					["_quests"] = { 56022 },
-				}),
-				crit(5, {	-- Hard Runelocked Chest: Red
-					["_quests"] = { 56021 },
-				}),
-				crit(6, {	-- Hard Runelocked Chest: Purple
-					["_quests"] = { 56020 },
-				}),
-				crit(7, {	-- Hard Runelocked Chest: Orange
-					["_quests"] = { 56019 },
-				}),
-				crit(8, {	-- Hard Runelocked Chest: Green
-					["_quests"] = { 56018 },
-				}),
-				crit(9, {	-- Hard Runelocked Chest: Blue
-					["_quests"] = { 56017 },
-				}),
-				crit(10, {	-- Medium Runelocked Chest: Yellow
-					["_quests"] = { 56016 },
-				}),
-				crit(11, {	-- Medium Runelocked Chest: Red
-					["_quests"] = { 56015 },
-				}),
-				crit(12, {	-- Medium Runelocked Chest: Purple
-					["_quests"] = { 56014 },
-				}),
-				crit(13, {	-- Medium Runelocked Chest: Orange
-					["_quests"] = { 56013 },
-				}),
-				crit(14, {	-- Medium Runelocked Chest: Green
-					["_quests"] = { 56012 },
-				}),
-				crit(15, {	-- Medium Runelocked Chest: Blue
-					["_quests"] = { 56011 },
-				}),
-				crit(16, {	-- Easy Runelocked Chest: Blue
-					["_quests"] = { 56010 },
-				}),
-				crit(17, {	-- Easy Runelocked Chest: Purple
-					["_quests"] = { 56009 },
-				}),
-				crit(18, {	-- Easy Runelocked Chest: Yellow
-					["_quests"] = { 56008 },
-				}),
-				crit(19, {	-- Easy Runelocked Chest: Red
-					["_quests"] = { 56007 },
-				}),
-				crit(20, {	-- Easy Runelocked Chest: Orange
-					["_quests"] = { 56006 },
-				}),
-				crit(21, {	-- Easy Runelocked Chest: Green
-					["_quests"] = { 56003 },
-				}),
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			explorationAch(13712),	-- Explore Nazjatar
 			ach(13558, {	-- Waveblade Ankoan
@@ -484,31 +228,11 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			ach(13765),		-- Subaquatic Support
 			ach(13710, {	-- Sunken Ambitions
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
-					crit(1, {	-- Welcome to Nazjatar
-						["sourceQuest"] = 56350,	-- Scouting the Palace
-					}),
-					crit(2, {	-- Secrets in the Sea
-						["sourceQuest"] = 55937,	-- Clearing Out the Cache
-					}),
-					crit(3, {	-- Turning the Tide
-						["sourceQuest"] = 56325,	-- Changing Tides
-					}),
-				},
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(13709, {	-- Unfathomable
 				["races"] = HORDE_ONLY,
-				["g"] = {
-					crit(1, {	-- Welcome to Nazjatar
-						["sourceQuest"] = 55481,	-- Scouting the Palace
-					}),
-					crit(2, {	-- Secrets in the Sea
-						["sourceQuest"] = 55869,	-- Clearing Out the Cache
-					}),
-					crit(3, {	-- Turning the Tide
-						["sourceQuest"] = 55799,	-- The Tide Turns
-					}),
-				},
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(13836, {	-- Feline Figurines Found
 				o(245286, {	-- Crystalline Cat Figurine
