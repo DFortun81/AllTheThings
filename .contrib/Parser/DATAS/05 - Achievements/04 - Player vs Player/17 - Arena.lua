@@ -68,12 +68,17 @@ root(ROOTS.Achievements, pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 			ach(402),	-- Three's Company: 1550
 		}),
 		ach(699, {	-- World Wide Winner
-			crit(1),	-- Ruins of Lordaeron
-			crit(2),	-- Dalaran Sewers
-			crit(3),	-- Tol'Viron Arena
-			crit(4),	-- The Tiger's Peak
-			crit(5),	-- Blade's Edge Arena
-			crit(6),	-- Nagrand Arena
+			crit(8589),	-- Ruins of Lordaeron
+			crit(8587),	-- Dalaran Sewers
+			crit(21042),	-- Tol'Viron Arena
+			crit(23502),	-- The Tiger's Peak
+			-- #if ANYCLASSIC
+			crit(5739),	-- Blade's Edge Arena
+			crit(5735),	-- Nagrand Arena
+			-- #else
+			crit(36479),	-- Blade's Edge Arena (Legion)
+			crit(36480),	-- Nagrand Arena (Legion)
+			-- #endif
 		}),
 	}),
 })));

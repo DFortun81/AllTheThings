@@ -225,34 +225,39 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_DUNGEONS_AND_RAIDS, {
 			},
 		}),
 		ach(6927, {		-- Glory of the Pandaria Hero
-			i(87769),	-- Crimson Cloud Serpent (MOUNT!)
-			crit(1),	-- Pandaria Dungeon Hero
-			crit(2),	-- Hydrophobia
-			crit(3),	-- Cleaning Up
-			crit(4),	-- Seeds of Doubt
-			crit(5),	-- Hopocalypse Now!
-			crit(6),	-- Keep Rollin' Rollin' Rollin'
-			crit(7),	-- How Did He Get Up There?
-			crit(8),	-- Ling-Ting's Herbal Journey
-			crit(9),	-- Glintrok N' Roll
-			crit(10),	-- What Does This Button Do?
-			crit(11),	-- Quarrelsome Quilen Quintet
-			crit(12),	-- Respect
-			crit(13),	-- The Obvious Solution
-			crit(14),	-- Hate Leads to Suffering
-			crit(15),	-- Bomberman
-			crit(16),	-- Conscriptinator
-			crit(17),	-- Humane Society
-			crit(18),	-- Mosh Pit
-			crit(19),	-- Burning Man
-			crit(20),	-- And Stay Dead!
-			crit(21),	-- Attention to Detail
-			crit(22),	-- Rattle No More
-			crit(23),	-- Sanguinarian
-			crit(24),	-- School's Out Forever
-			crit(25),	-- Where's My Air Support?
-			crit(26),	-- Return to Sender
-			crit(27),	-- Run with the Wind
+			["sym"] = {{"meta_achievement", 
+				6925,	-- Pandaria Dungeon Hero
+				6460,	-- Hydrophobia
+				6475,	-- Cleaning Up
+				6671,	-- Seeds of Doubt
+				6420,	-- Hopocalypse Now!
+				6089,	-- Keep Rollin' Rollin' Rollin'
+				6400,	-- How Did He Get Up There?
+				6402,	-- Ling-Ting's Herbal Journey
+				6478,	-- Glintrok N' Roll
+				6736,	-- What Does This Button Do?
+				6713,	-- Quarrelsome Quilen Quintet
+				6477,	-- Respect
+				6472,	-- The Obvious Solution
+				6471,	-- Hate Leads to Suffering
+				6479,	-- Bomberman
+				6476,	-- Conscriptinator
+				6684,	-- Humane Society
+				6427,	-- Mosh Pit
+				6928,	-- Burning Man
+				6929,	-- And Stay Dead!
+				6531,	-- Attention to Detail
+				6394,	-- Rattle No More
+				6396,	-- Sanguinarian
+				6821,	-- School's Out Forever
+				6688,	-- Where's My Air Support?
+				6485,	-- Return to Sender
+				6822,	-- Run with the Wind
+				6715,	-- Polyformic Acid Science
+			}},
+			["groups"] = {
+				i(87769),	-- Crimson Cloud Serpent (MOUNT!)
+			},
 		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(2137, {	-- Glory of the Raider (10 player)
 			-- Meta Achievement

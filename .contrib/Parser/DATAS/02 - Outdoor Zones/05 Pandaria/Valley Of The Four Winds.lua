@@ -88,34 +88,34 @@ root(ROOTS.Zones, {
 									["sym"] = {{"select","achievementID",6552},{"pop"}},	-- same criteria as full achieve
 								}),
 								ach(6552, {		-- Friends on the Farm
-									crit(1, { -- Farmer Fung
+									crit(19398, { -- Farmer Fung
 										["_factions"] = { 1283 },
 									}),
-									crit(2, { -- Jogu the Drunk
+									crit(19402, { -- Jogu the Drunk
 										["_factions"] = { 1273 },
 									}),
-									crit(3, { -- Chee Chee
+									crit(19396, { -- Chee Chee
 										["_factions"] = { 1277 },
 									}),
-									crit(4, { -- Sho
+									crit(19404, { -- Sho
 										["_factions"] = { 1278 },
 									}),
-									crit(5, { -- Ella
+									crit(19397, { -- Ella
 										["_factions"] = { 1275 },
 									}),
-									crit(6, { -- Tina Mudclaw
+									crit(19405, { -- Tina Mudclaw
 										["_factions"] = { 1280 },
 									}),
-									crit(7, { -- Old Hillpaw
+									crit(19403, { -- Old Hillpaw
 										["_factions"] = { 1276 },
 									}),
-									crit(8, { -- Haohan Mudclaw
+									crit(19401, { -- Haohan Mudclaw
 										["_factions"] = { 1279 },
 									}),
-									crit(9, { -- Fish Fellreed
+									crit(19399, { -- Fish Fellreed
 										["_factions"] = { 1282 },
 									}),
-									crit(10, { -- Gina Mudclaw
+									crit(19400, { -- Gina Mudclaw
 										["_factions"] = { 1281 },
 									}),
 								}),

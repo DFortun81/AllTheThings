@@ -22,15 +22,15 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 				i(89785, {		-- Pandaren Kite (A) (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),
-				crit(1),		-- Golden Lotus
-				crit(2),		-- The August Celestials
-				crit(3),		-- Shado-Pan
-				crit(4),		-- The Klaxxi
-				crit(5),		-- The Lorewalkers
-				crit(6),		-- The Anglers
-				crit(7),		-- The Tillers
-				crit(8),		-- Order of the Cloud Serpent
-				crit(9),		-- Tushui Pandaren
+				crit(19389),		-- Golden Lotus
+				crit(19388),		-- The August Celestials
+				crit(18993),		-- Shado-Pan
+				crit(19390),		-- The Klaxxi
+				crit(19393),		-- The Lorewalkers
+				crit(19392),		-- The Anglers
+				crit(19391),		-- The Tillers
+				crit(19395),		-- Order of the Cloud Serpent
+				crit(19481),		-- Tushui Pandaren
 			},
 		}),
 		ach(6827, {		-- Pandaren Ambassador (Horde)
@@ -39,15 +39,15 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 				i(81559, {		-- Pandaren Kite (H) (MOUNT!)
 					["races"] = HORDE_ONLY,
 				}),
-				crit(1),		-- Golden Lotus
-				crit(2),		-- The August Celestials
-				crit(3),		-- Shado-Pan
-				crit(4),		-- The Klaxxi
-				crit(5),		-- The Lorewalkers
-				crit(6),		-- The Anglers
-				crit(7),		-- The Tillers
-				crit(8),		-- Order of the Cloud Serpent
-				crit(9),		-- Huojin Pandaren
+				crit(19389),		-- Golden Lotus
+				crit(19388),		-- The August Celestials
+				crit(18993),		-- Shado-Pan
+				crit(19390),		-- The Klaxxi
+				crit(19393),		-- The Lorewalkers
+				crit(19392),		-- The Anglers
+				crit(19391),		-- The Tillers
+				crit(19395),		-- Order of the Cloud Serpent
+				crit(19480),		-- Huojin Pandaren
 			},
 		}),
 		ach(6366),		-- Shado-Pan
@@ -77,8 +77,8 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 		}),
 		ach(8023, {		-- Wakener
 			title(218),		-- the Wakener
-			crit(1),		-- Amber is the Color of My Energy
-			crit(2),		-- Klaxxi
+			crit(22566),		-- Amber is the Color of My Energy
+			crit(22567),		-- Klaxxi
 		}),
 	}),
 }));

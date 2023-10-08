@@ -48,14 +48,18 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ [
 			i(202207),	-- Reusable Oversized Bobber (TOY!)
 		})),
 		ach(9462,  {	-- Draenor Angler
-			i(111928),		-- Fishing Shack, Level 3 [Blueprints]
-			crit(1),		-- Sea Scorpion Angler
-			crit(2),		-- Jawless Skulker Angler
-			crit(3),		-- Fat Sleeper Angler
-			crit(4),		-- Blind Lake Sturgeon Angler
-			crit(5),		-- Blackwater Whiptail Angler
-			crit(6),		-- Abyssal Gulper Eel Angler
-			crit(7),		-- Fire Ammonite Angler
+			["sym"] = {{"meta_achievement",
+				9461,		-- Sea Scorpion Angler
+				9460,		-- Jawless Skulker Angler
+				9459,		-- Fat Sleeper Angler
+				9458,		-- Blind Lake Sturgeon Angler
+				9457,		-- Blackwater Whiptail Angler
+				9456,		-- Abyssal Gulper Eel Angler
+				9455,		-- Fire Ammonite 
+			}},
+			["groups"] = {
+				i(111928),		-- Fishing Shack, Level 3 [Blueprints]
+			},
 		}),
 		ach(9503),		-- Draenor Fisherman
 		ach(16632),	-- Dragon Isles Fisherman
@@ -71,20 +75,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ [
 			["races"] = ALLIANCE_ONLY,
 		}),
 		ach(7614,  {	-- Locking Down the Docks
-			crit(1),		-- Shocking!
-			crit(2),		-- What Lurks Below
-			crit(3),		-- Jagged Abalone
-			crit(4),		-- Fishing for a Bruising
-			crit(5),		-- Who Knew Fish Liked Eggs?
-			crit(6),		-- Armored Carp
-			crit(7),		-- Huff & Puff
-			crit(8),		-- Like Bombing Fish In A Barrel
-			crit(9),		-- Scavenger Hunt
-			crit(10),		-- Jumping the Shark
-			crit(11),		-- Viseclaw Soup
-			crit(12),		-- Bright Bait
-			crit(13),		-- Snapclaw
-			crit(14),		-- Piranha!
+			["sym"] = {{ "achievement_criteria" }},
 		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(1517, {	-- Northrend Angler
 			["maps"] = { BOREAN_TUNDRA, DRAGONBLIGHT, HOWLING_FJORD, GRIZZLY_HILLS, CRYSTALSONG_FOREST, SHOLAZAR_BASIN },
@@ -97,18 +88,7 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ [
 		}),
 		ach(129),		-- Outland Fisherman
 		ach(7611,  {	-- Pandarian Angler
-			crit(1),		-- Emperor Salmon
-			crit(2),		-- Flying Tiger Gourami
-			crit(3),		-- Giant Mantis Shrimp
-			crit(4),		-- Golden Carp
-			crit(5),		-- Jade Lungfish
-			crit(6),		-- Jewel Danio
-			crit(7),		-- Krasarang Paddlefish
-			crit(8),		-- Mimic Octopus
-			crit(9),		-- Redbelly Mandarin
-			crit(10),		-- Reef Octopus
-			crit(11),		-- Spinefish Alpha
-			crit(12),		-- Tiger Gourami
+			["sym"] = {{ "achievement_criteria" }},
 		}),
 		ach(12755),		-- Scent of the Sea
 		ach(9461),		-- Sea Scorpion Angler
@@ -244,85 +224,14 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, bubbleDown({ [
 		}),
 		ach(14333),		-- Shadowlands Fisherman
 		ach(150,   {	-- The Fishing Diplomat
-			crit(1),		-- Ogrimmar
-			crit(2),		-- Stormwind
+			crit(5274),		-- Ogrimmar
+			crit(5275),		-- Stormwind
 		}),
 		ach(5478,  {	-- The Limnologist
-			crit(1),		-- Albino Cavefish
-			crit(2),		-- Barbed Gill Trout
-			crit(3),		-- Barrelhead Goby
-			crit(4),		-- Blackbelly Mudfish
-			crit(5),		-- Bloodfin Catfish
-			crit(6),		-- Bonescale Snapper
-			crit(7),		-- Raw Brilliant Smallfish
-			crit(8),		-- Raw Bristle Whisker Catfish
-			crit(9),		-- Crescent-Tail Skullfish
-			crit(10),		-- Deviate Fish
-			crit(11),		-- Dragonfin Angelfish
-			crit(12),		-- Fangtooth Herring
-			crit(13),		-- Felblood Snapper
-			crit(14),		-- Figluster's Mudfish
-			crit(15),		-- Fountain Goldfish
-			crit(16),		-- Furious Crawdad
-			crit(17),		-- Giant Darkwater Clam
-			crit(18),		-- Glacial Salmon
-			crit(19),		-- Glassfin Minnow
-			crit(20),		-- Golden Darter
-			crit(21),		-- Goldenscale Vendorfish
-			crit(22),		-- Raw Greater Sagefish
-			crit(23),		-- Highland Guppy
-			crit(24),		-- Huge Spotted Feltail
-			crit(25),		-- Icefin Bluefish
-			crit(26),		-- Lavascale Catfish
-			crit(27),		-- Raw Loch Frenzy
-			crit(28),		-- Raw Longjaw Mud Snapper
-			crit(29),		-- Raw Mithril Head Trout
-			crit(30),		-- Mountain Trout
-			crit(31),		-- Musselback Sculpin
-			crit(32),		-- Nettlefish
-			crit(33),		-- Raw Nightfin Snapper
-			crit(34),		-- Raw Sagefish
-			crit(35),		-- Sewer Carp
-			crit(36),		-- Sharptooth
-			crit(37),		-- Shimmering Minnow
-			crit(38),		-- Sickly Looking Fish
-			crit(39),		-- Slippery Eel
-			crit(40),		-- Spotted Feltail
-			crit(41),		-- Striped Lurker
-			crit(42),		-- Zangarian Sporefish
+			["sym"] = {{ "achievement_criteria" }},
 		}),
 		ach(5479,  {	-- The Oceanographer
-			crit(1),		-- Abyssal Clam
-			crit(2),		-- Algaefin Rockfish
-			crit(3),		-- Big-Mouth Clam
-			crit(4),		-- Borean Man O' War
-			crit(5),		-- Darkclaw Lobster
-			crit(6),		-- Darkshore Grouper
-			crit(7),		-- Darkwater Clam
-			crit(8),		-- Deep Sea Monsterbelly
-			crit(9),		-- Deepsea Sagefish
-			crit(10),		-- Fathom Eel
-			crit(11),		-- Firefin Snapper
-			crit(12),		-- Giant Sunfish
-			crit(13),		-- Raw Glossy Mightfish
-			crit(14),		-- Imperial Manta Ray
-			crit(15),		-- Jaggal Clam
-			crit(16),		-- Large Raw Mightfish
-			crit(17),		-- Moonglow Cuttlefish
-			crit(18),		-- Murglesnout
-			crit(19),		-- Oily Blackmouth
-			crit(20),		-- Pygmy Suckerfish
-			crit(21),		-- Raw Rainbow Fin Albacore
-			crit(22),		-- Raw Redgill
-			crit(23),		-- Rockfin Grouper
-			crit(24),		-- Raw Rockscale Cod
-			crit(25),		-- Raw Slitherskin Mackerel
-			crit(26),		-- Raw Spotted Yellowtail
-			crit(27),		-- Stonescale Eel
-			crit(28),		-- Raw Summer Bass
-			crit(29),		-- Raw Sunscale Salmon
-			crit(30),		-- Raw Whitescale Salmon
-			crit(31),		-- Winter Squid
+			["sym"] = {{ "achievement_criteria" }},
 		}),
 		ach(153),		-- The Old Gnome and the Sea
 		ach(1257, {	-- The Scavenger
