@@ -462,9 +462,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		-- 7.0.3
 		tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
 			-- With MountID Attached
-			i(137576, {	-- Coldflame Infernal (MOUNT!)
-				["modelID"] = 70052,
-			}),
 			i(137615, {	-- Flarecore Infernal (MOUNT!)
 				["modelID"] = 70127,
 			}),

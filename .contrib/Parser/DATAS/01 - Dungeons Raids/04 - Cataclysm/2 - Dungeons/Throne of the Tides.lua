@@ -79,7 +79,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 				e(102, {	-- Commander Ulthok
 					["crs"] = { 40765 },	-- Commander Ulthok
 					["groups"] = {
-						i(55204), -- Caridean Epaulettes
+						i(55204), -- Caridean Epaulets
 						i(55228), -- Cerith Spire Staff
 						i(55205), -- Chromis Chestpiece
 						i(55206), -- Eagle Ray Cloak
@@ -130,7 +130,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 				e(102, {	-- Commander Ulthok
 				["crs"] = { 40765 },	-- Commander Ulthok
 				["groups"] = {
-					i(56273), -- Caridean Epaulettes
+					i(56273), -- Caridean Epaulets
 					i(56271), -- Cerith Spire Staff
 					i(56274), -- Chromis Chestpiece
 					i(56275), -- Eagle Ray Cloak
@@ -185,8 +185,8 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 				}),
 				e(102, {	-- Commander Ulthok
 					["crs"] = { 40765 },	-- Commander Ulthok
-					["groups"] = {				
-						i(56273), -- Caridean Epaulettes
+					["groups"] = {
+						i(56273), -- Caridean Epaulets
 						i(56271), -- Cerith Spire Staff
 						i(56274), -- Chromis Chestpiece
 						i(56275), -- Eagle Ray Cloak

@@ -345,7 +345,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						i(66004),	-- Barechus' Greaves
 						i(65963),	-- Temple's Vest
 						i(65939),	-- Murd Doc's Leggings
-						i(65913),	-- Hann Ibal's Epaulettes
+						i(65913),	-- Hann Ibal's Epaulets
 						i(131624, {	-- Barechus' Chainmail
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
@@ -397,7 +397,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						i(66004),	-- Barechus' Greaves
 						i(65963),	-- Temple's Vest
 						i(65939),	-- Murd Doc's Leggings
-						i(65913),	-- Hann Ibal's Epaulettes
+						i(65913),	-- Hann Ibal's Epaulets
 						i(131624, {	-- Barechus' Chainmail
 							["timeline"] = { "added 7.0.3.22248" },
 						}),

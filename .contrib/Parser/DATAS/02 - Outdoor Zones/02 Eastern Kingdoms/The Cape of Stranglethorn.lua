@@ -948,7 +948,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(61562, {	-- Smott's Signet
 							["timeline"] = { "added 4.0.3.13287" },
 						}),
-						i(61564, {	-- Sea Song Epaulettes
+						i(61564, {	-- Sea Song Epaulets
 							["timeline"] = { "added 4.0.3.13287" },
 						}),
 						i(61566, {	-- Landlubber Headband

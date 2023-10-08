@@ -194,15 +194,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					-- TODO: maybe symlink these because they come from multiple quests?
 					["g"] = {
 						i(190985),	-- Crystallic Cryptic Mask
-						i(190991),	-- Crystallic Enigmatic Epaulettes
+						i(190991),	-- Crystallic Enigmatic Epaulets
 						i(190997),	-- Crystallic Numerus Crown
 						i(190979),	-- Crystallic Oracular Smock
 						i(190984),	-- Nova Cryptic Mask
-						i(190990),	-- Nova Enigmatic Epaulettes
+						i(190990),	-- Nova Enigmatic Epaulets
 						i(190996),	-- Nova Numerus Crown
 						i(190978),	-- Nova Oracular Smock
 						i(190983),	-- Scouring Cryptic Mask
-						i(190989),	-- Scouring Enigmatic Epaulettes
+						i(190989),	-- Scouring Enigmatic Epaulets
 						i(190995),	-- Scouring Numerus Crown
 						i(190977),	-- Scouring Oracular Smock
 					},

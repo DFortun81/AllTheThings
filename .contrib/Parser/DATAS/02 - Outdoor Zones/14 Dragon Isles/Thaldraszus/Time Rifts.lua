@@ -802,7 +802,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								i(207082, {	-- Jingoist's Cloth Armor Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
-										i(206824),	-- Jingoist's Epaulettes
+										i(206824),	-- Jingoist's Epaulets
 										i(206829),	-- Jingoist's Shroud
 									},
 								}),
@@ -949,7 +949,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								i(207081, {	-- Warmonger's Cloth Armor Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
 									["g"] = {
-										i(206812),	-- Warmonger's Epaulettes
+										i(206812),	-- Warmonger's Epaulets
 										i(206819),	-- Warmonger's Shroud
 									},
 								}),

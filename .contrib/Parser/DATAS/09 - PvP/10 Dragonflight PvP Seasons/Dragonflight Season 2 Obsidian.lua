@@ -1614,7 +1614,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						i(204157),	-- Pattern: Obsidian Combatant's Adamant Chainmail (RECIPE!)
 						i(204156),	-- Pattern: Obsidian Combatant's Adamant Cowl (RECIPE!)
 						i(204162),	-- Pattern: Obsidian Combatant's Adamant Cuffs (RECIPE!)
-						i(204159),	-- Pattern: Obsidian Combatant's Adamant Epaulettes (RECIPE!)
+						i(204159),	-- Pattern: Obsidian Combatant's Adamant Epaulets (RECIPE!)
 						i(204161),	-- Pattern: Obsidian Combatant's Adamant Gauntlets (RECIPE!)
 						i(204163),	-- Pattern: Obsidian Combatant's Adamant Girdle (RECIPE!)
 						i(204158),	-- Pattern: Obsidian Combatant's Adamant Leggings (RECIPE!)

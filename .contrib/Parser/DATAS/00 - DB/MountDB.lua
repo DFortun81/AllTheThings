@@ -919,7 +919,6 @@ i(140348, 223363);	-- Vicious Warstrider
 i(141843, 227986);	-- Vindictive Gladiator's Storm Dragon
 i(137580, 213165);	-- Viridian Sharptalon
 --- NYI ---
-i(137576, 171840);	-- Coldflame Infernal [TODO: Might become TRADING POST]
 i(137615, 213349);	-- Flarecore Infernal [TODO: Might become TRADING POST]
 i(138386, 0);		-- Fel Bat (Test)
 i(129744, 0);		-- Iron Warhorse
@@ -1665,12 +1664,13 @@ i(190636, 0);		-- Armored Siege Kodo
 -- PATCH 10.1.7 --
 ------------------
 i(208572, 420097);	-- Azure Worldchiller
+i(137576, 171840);	-- Coldflame Infernal
 i(198824, 385262);	-- Duskwing Ohuna
+i(208598, 419345);	-- Eve's Ghastly Rider
 i(192807, 374278);	-- Renewed Magmammoth
 i(205208, 408654);	-- Sandy Shalewing [TODO: Check if you actually get item]
 i(210022, 424082);	-- Mimiron's Jumpjets
 -- Unsorted
-i(208598, 419345);	-- Eve's Ghastly Rider
 i(0, 419567);		-- Ginormous Grrloc
 
 ------------------
@@ -1698,6 +1698,18 @@ i(210345, 425416);	-- Verdant Gladiator's Slitherdrake
 i(210070, 424534);	-- Vicious Moonbeast
 i(210069, 424535);	-- Vicious Moonbeast
 --- Unsorted ---
+i(210141, 424601);	-- [PH] Brown-Furred Spiky Bakar
+i(210142, 424607);	-- [PH] Red-Furred Bakar
+i(210143, 424608);	-- [PH] White-Furred Bakar
+i(210144, 424610);	-- [PH] Yellow-Furred Spiky Bakar
+i(210145, 424611);	-- [PH] YellowBlack-Furred Bakar
 i(210919, 427435);	-- Crimson Glimmerfur
+i(211075, 428013);	-- Deathbringer's Shadowcycle
+i(211089, 428068);	-- Felreaver Deathcycle
+i(211084, 428060);	-- Golden Regal Scarab
+i(211074, 428005);	-- Jeweled Copper Scarab
+i(211086, 428065);	-- Jeweled Jade Scarab
+i(211085, 428062);	-- Jeweled Sapphire Scarab
 i(210774, 427041);	-- Ochre Dreamtalon
+i(211087, 428067);	-- Shadowflame Hellbike
 i(210059, 424476);	-- Winter Night Dreamsaber

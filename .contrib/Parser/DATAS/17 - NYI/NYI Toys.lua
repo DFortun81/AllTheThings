@@ -140,7 +140,7 @@ root(ROOTS.NeverImplemented, {
 			tier(DF_TIER, 1.0, sharedDataSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
 				i(205034),	-- Enormous Ball of Yarn (TOY!)
 				i(205027),	-- Explorer's Banner (TOY!)
-				i(205463),	-- Skornak's Lava Ball (TOY!)
+				i(205463),	-- Molten Lava Ball (TOY!)
 			})),
 		}),
 	}),

@@ -404,7 +404,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { "ad
 					cl(WARLOCK, {
 						i(162853),	-- Unshackled Belt
 						i(162849),	-- Unshackled Crown
-						i(162852),	-- Unshackled Epaulettes
+						i(162852),	-- Unshackled Epaulets
 						i(162848),	-- Unshackled Handguards
 						i(162847),	-- Unshackled Shoes
 						i(163016),	-- Unshackled Staff

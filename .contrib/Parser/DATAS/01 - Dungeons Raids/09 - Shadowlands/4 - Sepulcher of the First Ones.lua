@@ -825,7 +825,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } 
 								i(188843),	-- Erudite Occultist's Mantle
 							}),
 							i(191008, {	-- Venerated Shoulder Module
-								i(188932),	-- Luminous Chevalier's Epaulettes
+								i(188932),	-- Luminous Chevalier's Epaulets
 								i(188879),	-- Capelet of the Empyrean
 								i(188920),	-- Theurgic Starspeaker's Adornment
 							}),
@@ -1146,7 +1146,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } 
 							i(188843),	-- Erudite Occultist's Mantle
 						}),
 						i(191008, {	-- Venerated Shoulder Module
-							i(188932),	-- Luminous Chevalier's Epaulettes
+							i(188932),	-- Luminous Chevalier's Epaulets
 							i(188879),	-- Capelet of the Empyrean
 							i(188920),	-- Theurgic Starspeaker's Adornment
 						}),
@@ -1466,7 +1466,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } 
 							i(188843),	-- Erudite Occultist's Mantle
 						}),
 						i(191008, {	-- Venerated Shoulder Module
-							i(188932),	-- Luminous Chevalier's Epaulettes
+							i(188932),	-- Luminous Chevalier's Epaulets
 							i(188879),	-- Capelet of the Empyrean
 							i(188920),	-- Theurgic Starspeaker's Adornment
 						}),
@@ -1789,7 +1789,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } 
 							i(188843),	-- Erudite Occultist's Mantle
 						}),
 						i(191008, {	-- Venerated Shoulder Module
-							i(188932),	-- Luminous Chevalier's Epaulettes
+							i(188932),	-- Luminous Chevalier's Epaulets
 							i(188879),	-- Capelet of the Empyrean
 							i(188920),	-- Theurgic Starspeaker's Adornment
 						}),

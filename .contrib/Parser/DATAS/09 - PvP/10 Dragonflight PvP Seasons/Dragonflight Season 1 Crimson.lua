@@ -1633,7 +1633,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(197973),	-- Pattern: Crimson Combatant's Adamant Chainmail (RECIPE!)
 						i(197972),	-- Pattern: Crimson Combatant's Adamant Cowl (RECIPE!)
 						i(197978),	-- Pattern: Crimson Combatant's Adamant Cuffs (RECIPE!)
-						i(197975),	-- Pattern: Crimson Combatant's Adamant Epaulettes (RECIPE!)
+						i(197975),	-- Pattern: Crimson Combatant's Adamant Epaulets (RECIPE!)
 						i(197977),	-- Pattern: Crimson Combatant's Adamant Gauntlets (RECIPE!)
 						i(197979),	-- Pattern: Crimson Combatant's Adamant Girdle (RECIPE!)
 						i(197974),	-- Pattern: Crimson Combatant's Adamant Leggings (RECIPE!)

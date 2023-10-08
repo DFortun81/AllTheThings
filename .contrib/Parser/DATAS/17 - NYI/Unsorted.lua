@@ -578,12 +578,27 @@ root(ROOTS.Unsorted, {
 	tier(DF_TIER, {
 		tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			filter(BATTLE_PETS, {
+				i(211271),	-- Arfus (PET!)
 				i(210409),	-- Aura (PET!)
 				i(210556),	-- Ivy (PET!)
+				i(210870),	-- Mitzy (PET!)
 			}),
 			filter(MOUNTS, {
+				i(210140),	-- [PH] Black-Furred Bakar (No SpellID?)
+				i(210141),	-- [PH] Brown-Furred Spiky Bakar (MOUNT!)
+				i(210142),	-- [PH] Red-Furred Bakar (MOUNT!)
+				i(210143),	-- [PH] White-Furred Bakar (MOUNT!)
+				i(210144),	-- [PH] Yellow-Furred Spiky Bakar (MOUNT!)
+				i(210145),	-- [PH] YellowBlack-Furred Bakar (MOUNT!)
 				i(210919),	-- Crimson Glimmerfur (MOUNT!)
+				i(211075),	-- Deathbringer's Shadowcycle (MOUNT!)
+				i(211089),	-- Felreaver Deathcycle (MOUNT!)
+				i(211084),	-- Golden Regal Scarab (MOUNT!)
+				i(211074),	-- Jeweled Copper Scarab (MOUNT!)
+				i(211086),	-- Jeweled Jade Scarab (MOUNT!)
+				i(211085),	-- Jeweled Sapphire Scarab (MOUNT!)
 				i(210774),	-- Ochre Dreamtalon (MOUNT!)
+				i(211087),	-- Shadowflame Hellbike (MOUNT!)
 				i(210059),	-- Winter Night Dreamsaber (MOUNT!)
 			}),
 			filter(MISC, {
@@ -618,6 +633,7 @@ root(ROOTS.Unsorted, {
 				i(209859),	-- Festive Trans-Dimensional Bird Whistle (TOY!) [Winter Veil?]
 				i(209035),	-- Hearthstone of the Flame (TOY!) [Raid Boss?]
 				i(208825),	-- Junior Timekeeper's Racing Belt (TOY!) [Winter Veil?]
+				i(206347),	-- Mannequin Charm (TOY!)
 				i(208798),	-- Recorded Memories of Tyr's Guard (TOY!) [Questline Tyr?]
 				i(210656),	-- Winter Veil Socks (TOY!) [Winter Veil?]
 			}),
@@ -625,7 +641,6 @@ root(ROOTS.Unsorted, {
 				i(207461),	-- Schematic: Portable Party Platter (RECIPE!)
 			}),
 			i(204720),	-- Join the New Scarlet Crusade!
-			i(205463),	-- Molten Lava Ball
 			i(206378),	-- [DNT] Test Loot
 			i(206379),	-- [DNT] Test Loot
 			i(206476),	-- Tyr's Guard Equipment
@@ -892,12 +907,6 @@ root(ROOTS.Unsorted, {
 			i(210126),	-- Breezekeeper's Mallet
 			i(210128),	-- Autumn Defender's Claymore
 			i(210134),	-- Wind Wolf Shroud
-			i(210140),	-- [PH] Black-Furred Bakar
-			i(210141),	-- [PH] Brown-Furred Spiky Bakar
-			i(210142),	-- [PH] Red-Furred Bakar
-			i(210143),	-- [PH] White-Furred Bakar
-			i(210144),	-- [PH] Yellow-Furred Spiky Bakar
-			i(210145),	-- [PH] YellowBlack-Furred Bakar
 			i(210190),	-- Blazeroot
 			i(210193),	-- Experimental Dreamcatcher
 			i(210198),	-- Depleted Battery
@@ -1000,19 +1009,6 @@ root(ROOTS.Unsorted, {
 			i(210792),	-- Fragment of Emberscar
 			i(210793),	-- Fragment of Emberscar
 			-----------------
-			i(156251),	-- Shroud of Alteration
-			i(156252),	-- Greaves of the Stonewarder
-			i(156253),	-- Shoulders of Misfortune
-			i(156254),	-- Leggings of the Tortured Earth
-			i(156256),	-- Grips of Chaos
-			i(156460),	-- Mimiron's Repeater
-			i(156461),	-- Adamant Handguards
-			i(156465),	-- Iceshear Mantle
-			i(156466),	-- Bracers of Righteous Reformation
-			i(156467),	-- Boots of Unsettled Prey
-			i(156468),	-- Cloak of the Dormant Blaze
-			i(156469),	-- Pillar of Fortitude
-			i(156470),	-- Bloodcrush Cudgel
 			i(208983),	-- Yvelyn's Assistance
 			i(210434),	-- Visage of Ursol
 			i(210453),	-- Sample of Cinder Pollen
@@ -1044,13 +1040,11 @@ root(ROOTS.Unsorted, {
 			i(210861),	-- Trader's Aquatic Sarong
 			i(210862),	-- Trader's Snowy Sarong
 			i(210863),	-- Trader's Sunny Sarong
-			i(210864),	-- Improvised Leafbed
 			i(210865),	-- Blademaster's Crimson Stones
 			i(210866),	-- Blademaster's Suntouched Stones
 			i(210867),	-- Blademaster's Lively Stones
 			i(210868),	-- Blademaster's Violet Stones
 			i(210869),	-- Blademaster's Azure Stones
-			i(210870),	-- Mitzy
 			i(210874),	-- Filled Vial
 			i(210875),	-- Filled Vial
 			i(210876),	-- Filled Vial
@@ -1070,39 +1064,9 @@ root(ROOTS.Unsorted, {
 			i(210991),	-- Small Box of Vials
 			i(210992),	-- Overflowing Dream Warden Trove
 			--
-			i(37008),	-- Ethical Epaulets
-			i(37424),	-- Plainhunter's Epaulets
-			i(55204),	-- Caridean Epaulets
-			i(56273),	-- Caridean Epaulets
-			i(61564),	-- Sea Song Epaulets
-			i(65913),	-- Hann Ibal's Epaulets
-			i(133186),	-- Caridean Epaulets
-			i(162852),	-- Unshackled Epaulets
-			i(163338),	-- 7th Legionnaire's Epaulets
-			i(168984),	-- Extravagant Epaulets
-			i(169074),	-- Epaulets of Arcing Power
-			i(182994),	-- Epaulets of Overwhelming Force
-			i(184287),	-- Scum-Caked Epaulets
-			i(186342),	-- Epaulets of the Master Ranger
-			i(187044),	-- Deathbringer's Epaulets
-			i(188932),	-- Luminous Chevalier's Epaulets
-			i(190203),	-- Craftsman Timber Mallet
-			i(190362),	-- Enigmatic Epaulets
 			i(190494),	-- Treads of Unrelenting Justice
-			i(190989),	-- Scouring Enigmatic Epaulets
-			i(190990),	-- Nova Enigmatic Epaulets
-			i(190991),	-- Crystallic Enigmatic Epaulets
-			i(193442),	-- Crimson Combatant's Adamant Epaulets
-			i(197975),	-- Pattern: Crimson Combatant's Adamant Epaulets
-			i(204107),	-- Obsidian Combatant's Adamant Epaulets
-			i(204159),	-- Pattern: Obsidian Combatant's Adamant Epaulets
-			i(204431),	-- Epaulets of Draconic Conquest
 			i(206366),	-- Cracked Trophy of Strife
-			i(206812),	-- Warmonger's Epaulets
-			i(206824),	-- Jingoist's Epaulets
 			i(208217),	-- Illusory Scroll of Youth - NOT USED
-			i(208250),	-- Verdant Combatant's Adamant Epaulets
-			i(208302),	-- Pattern: Verdant Combatant's Adamant Epaulets
 			i(208420),	-- Visage of the Devouring Flame
 			i(208426),	-- Mask of the Unbidden Grim
 			i(208427),	-- Insurgent Flame Warboots
@@ -1178,7 +1142,6 @@ root(ROOTS.Unsorted, {
 			i(210758),	-- Honorable Satchel of Fabrics
 			i(210759),	-- Honorable Satchel of Ore
 			i(210760),	-- Honorable Satchel of Herbs
-			i(210789),	-- Elegant Green Dragon Epaulets
 			i(210959),	-- Pact of the Netherwing
 			i(210993),	-- Enchanting Dreamstaff
 			i(210994),	-- Enchanting Dreambow
@@ -1196,16 +1159,9 @@ root(ROOTS.Unsorted, {
 			i(211070),	-- Crimson Treads of the Kalu'ak
 			i(211071),	-- Lively Treads of the Kalu'ak
 			i(211072),	-- Time Marshal's Carbine
-			i(211074),	-- Copper Resonating Crystal
-			i(211075),	-- Deathbringer's Shadowcycle
 			i(211080),	-- Mark of the Boreal Dreamtalon
 			i(211081),	-- Mark of the Auroral Dreamtalon
-			i(211084),	-- Gold Resonating Crystal
-			i(211085),	-- Sapphire Resonating Crystal
-			i(211086),	-- Jade Resonating Crystal
-			i(211087),	-- Shadowflame Hellbike
 			i(211088),	-- Gloves of Unrelenting Justice
-			i(211089),	-- Felreaver Deathcycle
 			i(211090),	-- Helm of Unrelenting Justice
 			i(211091),	-- Tunic of Unrelenting Justice
 			i(211092),	-- Bracers of Unrelenting Justice
@@ -1339,34 +1295,20 @@ root(ROOTS.Unsorted, {
 			i(211268),	-- Blademaster's Thundering Greatsword
 			i(211270),	-- Pristine Core Leather
 			--
-			i(190800),	-- Gleaming Mail Tabard
-			i(190801),	-- Shadowy Mail Tabard
-			i(190802),	-- Drape of Endless Twilight
-			i(190804),	-- Wine-Soaked Hammer
-			i(201931),	-- Warcraft Rumble Toy: Maiev
-			i(202162),	-- Rumble Coin
-			i(202163),	-- Rumble Prize Box
-			i(202183),	-- Small Rumble Purse
 			i(202259),	-- Warcraft Rumble Toy: Maiev
 			i(202260),	-- Warcraft Rumble Toy: Maiev
 			i(202261),	-- Warcraft Rumble Toy: Sneed
 			i(202262),	-- Warcraft Rumble Toy: Sneed
 			i(202263),	-- Warcraft Rumble Toy: Sneed
-			i(202395),	-- Rumble Foil
 			i(202398),	-- Gold Rumble Foil
-			i(202851),	-- Warcraft Rumble Toy: Night Elf Huntress
 			i(202852),	-- Warcraft Rumble Toy: Night Elf Huntress
 			i(202853),	-- Warcraft Rumble Toy: Night Elf Huntress
-			i(202856),	-- Warcraft Rumble Toy: Stonehoof Tauren
 			i(202857),	-- Warcraft Rumble Toy: Stonehoof Tauren
 			i(202858),	-- Warcraft Rumble Toy: Stonehoof Tauren
-			i(202859),	-- Warcraft Rumble Toy: Undead Ghoul
 			i(202860),	-- Warcraft Rumble Toy: Undead Ghoul
 			i(202861),	-- Warcraft Rumble Toy: Undead Ghoul
-			i(202862),	-- Warcraft Rumble Toy: Murloc
 			i(202863),	-- Warcraft Rumble Toy: Murloc
 			i(202864),	-- Warcraft Rumble Toy: Murloc
-			i(202865),	-- Warcraft Rumble Toy: Whelp Egg
 			i(202866),	-- Warcraft Rumble Toy: Whelp Egg
 			i(202867),	-- Warcraft Rumble Toy: Whelp Egg
 			i(204186),	-- Greater Obsidian Trophy of Conquest
@@ -1381,7 +1323,6 @@ root(ROOTS.Unsorted, {
 			i(204731),	-- Warcraft Rumble Welcome Letter
 			i(205189),	-- Warcraft Rumble Welcome Letter
 			i(205190),	-- Warcraft Rumble Welcome Letter
-			i(206347),	-- Mannequin Charm
 			i(208564),	-- Lesser Verdant Trophy of Conquest
 			i(208565),	-- Verdant Trophy of Conquest
 			i(208566),	-- Greater Verdant Trophy of Conquest
@@ -1389,7 +1330,6 @@ root(ROOTS.Unsorted, {
 			i(208569),	-- Verdant Crest of Honor
 			i(208570),	-- Greater Verdant Crest of Honor
 			i(208757),	-- Ash's Recipes to Delight and Nourish Your Plant Pals
-			i(208850),	-- Lil' Maggz
 			i(209126),	-- Verdant Gladiator's Leather Robe
 			i(209127),	-- Verdant Gladiator's Leather Vestments
 			i(209875),	-- Bloodied Armor Scrap
@@ -1493,7 +1433,6 @@ root(ROOTS.Unsorted, {
 				i(208880),	-- Brewhahat (TOY!)
 			}),
 			filter(MOUNTS, {
-				i(208598),	-- Eve's Ghastly Rider (MOUNT!)
 				mount(419567),	-- Ginormous Grrloc (MOUNT!)
 			}),
 			filter(COSMETIC, {
@@ -1520,7 +1459,6 @@ root(ROOTS.Unsorted, {
 				i(208671),	-- Possessed Watcher Arsenal
 				i(208672),	-- Jewels of the Alluring Call
 				i(208673),	-- Instruments of the Alluring Call
-				i(208626),	-- Ashamane's Jewel of Rebirth
 			}),
 			n(DRAKEWATCHER_MANUSCRIPTS, {
 				i(208550),	-- Dragon Isles Drakes: White Scales
@@ -1558,7 +1496,6 @@ root(ROOTS.Unsorted, {
 			i(208735),	-- Bucket of Morbid Treats
 			i(208736),	-- Apprentice Astrologist Homework
 			i(208737),	-- Hole-Punched Bakar Tooth
-			i(208763),	-- Headmaster's Skullcap
 			i(208783),	-- Corrupted Blood
 			i(208784),	-- Primeval Fin
 			i(208786),	-- Luxurious Niffen Hat
@@ -1645,8 +1582,6 @@ root(ROOTS.Unsorted, {
 			i(156468),	-- Cloak of the Dormant Blaze
 			i(156469),	-- Pillar of Fortitude
 			i(156470),	-- Bloodcrush Cudgel
-
-			i(211271),	-- Arfus
 		})),
 		tier(DF_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
 			filter(COSMETIC, {
@@ -1660,7 +1595,6 @@ root(ROOTS.Unsorted, {
 				i(206283),	-- Vagabond's Deep Cape
 				i(206284),	-- Vagabond's Cloudy Cape
 				i(206285),	-- Vagabond's Grassy Cape
-				i(206286),	-- Vagabond's Lively Cape
 				i(206287),	-- Vagabond's Sepia Cape
 				i(206288),	-- Vagabond's Sunny Hood
 				i(206289),	-- Vagabond's Aquatic Hood
@@ -1671,7 +1605,6 @@ root(ROOTS.Unsorted, {
 				i(206294),	-- Vagabond's Deep Hood
 				i(206295),	-- Vagabond's Cloudy Hood
 				i(206296),	-- Vagabond's Grassy Hood
-				i(206297),	-- Vagabond's Lively Hood
 				i(206298),	-- Vagabond's Sepia Hood
 				i(206299),	-- Wanderer's Aquatic Scarf
 				i(206300),	-- Wanderer's Sunny Scarf
@@ -1682,7 +1615,6 @@ root(ROOTS.Unsorted, {
 				i(206305),	-- Wanderer's Deep Scarf
 				i(206306),	-- Wanderer's Cloudy Scarf
 				i(206307),	-- Wanderer's Grassy Scarf
-				i(206308),	-- Wanderer's Lively Scarf
 				i(206309),	-- Wanderer's Sepia Scarf
 				i(206310),	-- Wanderer's Sunny Cloak
 				i(206311),	-- Wanderer's Aquatic Cloak
@@ -1693,7 +1625,6 @@ root(ROOTS.Unsorted, {
 				i(206316),	-- Wanderer's Deep Cloak
 				i(206317),	-- Wanderer's Cloudy Cloak
 				i(206318),	-- Wanderer's Grassy Cloak
-				i(206319),	-- Wanderer's Lively Cloak
 				i(206320),	-- Wanderer's Sepia Cloak
 				i(206321),	-- Ensemble: Vagabond's Sunny Threads
 				i(206322),	-- Ensemble: Vagabond's Aquatic Threads
@@ -1704,7 +1635,6 @@ root(ROOTS.Unsorted, {
 				i(206327),	-- Ensemble: Vagabond's Deep Threads
 				i(206328),	-- Ensemble: Vagabond's Cloudy Threads
 				i(206329),	-- Ensemble: Vagabond's Grassy Threads
-				i(206330),	-- Ensemble: Vagabond's Lively Threads
 				i(206331),	-- Ensemble: Vagabond's Sepia Threads
 				i(206332),	-- Ensemble: Wanderer's Sunny Trappings
 				i(206333),	-- Ensemble: Wanderer's Aquatic Trappings
@@ -1715,7 +1645,6 @@ root(ROOTS.Unsorted, {
 				i(206338),	-- Ensemble: Wanderer's Deep Trappings
 				i(206339),	-- Ensemble: Wanderer's Cloudy Trappings
 				i(206340),	-- Ensemble: Wanderer's Grassy Trappings
-				i(206341),	-- Ensemble: Wanderer's Lively Trappings
 				i(206342),	-- Ensemble: Wanderer's Sepia Trappings
 			}),
 			header(HEADERS.LFGDungeon, 2430, {	-- Dawn of the Infinite
@@ -2175,7 +2104,6 @@ root(ROOTS.Unsorted, {
 					i(190152),	-- Solemn Watchman's Gauntlets
 
 					-- Cosmetic
-					i(190076),	-- Granny's Old Hat
 					i(190144),	-- Irontide Raider's Bicorne
 					i(190428),	-- Regal Warcloak
 				}),
@@ -2255,7 +2183,6 @@ root(ROOTS.Unsorted, {
 					i(190675),	-- Arborcidal Peon's Chopper
 					i(190446),	-- Blazing Forgehammer
 					i(190430),	-- Chipped Gladius
-					i(190689),	-- Corrupted Bladefist
 					i(190445),	-- Envenomed Gutripper
 					i(190698),	-- Gently-Used Cleaver
 					i(190699),	-- Gorian Mining Pick
@@ -2267,7 +2194,7 @@ root(ROOTS.Unsorted, {
 					i(190079),	-- Smoldering Forgeblade
 					i(189884),	-- Vengeful Nemesis Warblades
 					i(190219),	-- Virulent Gavel
-					i(190203),	-- Woodsman's Timber Mallet
+					i(190203),	-- Craftsman Timber Mallet
 
 					-- Two-Hand Wep
 					i(190131),	-- Brick-on-a-Stick
@@ -2279,7 +2206,6 @@ root(ROOTS.Unsorted, {
 					i(190066),	-- Primeval Maul
 
 					-- Off-Hand
-					i(190710),	-- Caged Eye of the Watcher
 					i(190442),	-- Illidari Bladeward
 					i(189883),	-- Lordaeron Sentry's Bulwark
 					i(190691),	-- Twisted Guardian's Profane Barrier

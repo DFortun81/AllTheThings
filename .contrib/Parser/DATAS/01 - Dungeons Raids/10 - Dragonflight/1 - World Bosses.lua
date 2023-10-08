@@ -102,7 +102,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					i(204426),	-- Blazestalker's Smelted Cleats
 					i(204419),	-- Cavernous Foliage Wristbands
 					i(204425),	-- Crown of the Twin Elders
-					i(204431),	-- Epaulettes of Draconic Conquest
+					i(204431),	-- Epaulets of Draconic Conquest
 					i(204408),	-- Gholna's Lavaborne Legwraps
 					i(204409),	-- Heatbinder's Burning Slippers
 					i(204432),	-- Vakan's Shale Greatbelt

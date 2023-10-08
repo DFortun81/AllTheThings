@@ -2090,7 +2090,7 @@ i(198618, 381547);	-- Artisan's Sign
 i(197973, 375135);	-- Crimson Combatant's Adamant Chainmail
 i(197972, 375134);	-- Crimson Combatant's Adamant Cowl
 i(197978, 375140);	-- Crimson Combatant's Adamant Cuffs
-i(197975, 375137);	-- Crimson Combatant's Adamant Epaulettes
+i(197975, 375137);	-- Crimson Combatant's Adamant Epaulets
 i(197977, 375138);	-- Crimson Combatant's Adamant Gauntlets
 i(197979, 375141);	-- Crimson Combatant's Adamant Girdle
 i(197974, 375136);	-- Crimson Combatant's Adamant Leggings
@@ -2191,7 +2191,7 @@ i(204974, 406214);	-- Lambent Armor Kit
 i(204157, 403142);	-- Obsidian Combatant's Adamant Chainmail
 i(204156, 403141);	-- Obsidian Combatant's Adamant Cowl
 i(204162, 403147);	-- Obsidian Combatant's Adamant Cuffs
-i(204159, 403144);	-- Obsidian Combatant's Adamant Epaulettes
+i(204159, 403144);	-- Obsidian Combatant's Adamant Epaulets
 i(204161, 403145);	-- Obsidian Combatant's Adamant Gauntlets
 i(204163, 403148);	-- Obsidian Combatant's Adamant Girdle
 i(204158, 403143);	-- Obsidian Combatant's Adamant Leggings
@@ -2243,7 +2243,7 @@ i(206530, 413517);	-- Skyfury Headdress
 i(208300, 419015);	-- Verdant Combatant's Adamant Chainmail
 i(208299, 419014);	-- Verdant Combatant's Adamant Cowl
 i(208305, 419020);	-- Verdant Combatant's Adamant Cuffs
-i(208302, 419017);	-- Verdant Combatant's Adamant Epaulettes
+i(208302, 419017);	-- Verdant Combatant's Adamant Epaulets
 i(208304, 419018);	-- Verdant Combatant's Adamant Gauntlets
 i(208306, 419021);	-- Verdant Combatant's Adamant Girdle
 i(208301, 419016);	-- Verdant Combatant's Adamant Leggings

@@ -105,13 +105,13 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	n(VENDORS, {
 		n(AVAILABLE, {
 			filter(MOUNTS, {
-				i(137576, {	-- Dim Coldflame Core (MOUNT!) (Unknown 2023)
+				i(137576, {	-- Dim Coldflame Core (MOUNT!)
 					["cost"] = { { "c", TRADERS_TENDER, 700 }, },
 					["timeline"] = { ADDED_10_1_7 },
 				}),
 			}),
 			filter(BATTLE_PETS, {
-				i(49693, {	-- Lil' Phylactery//Lil' KT (PET!)
+				i(49693, {	-- Lil' KT (PET!)
 					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
 				}),
 			}),
@@ -146,7 +146,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(190689, {	-- Corrupted Bladefist
 					["cost"] = { { "c", TRADERS_TENDER, 525 }, },
 				}),
-				i(19082, { -- Drape of Endless Twilight
+				i(190802, { -- Drape of Endless Twilight
 					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
 				}),
 				i(206341, {	-- Ensemble: Wanderer's Lively Trappings
@@ -1634,14 +1634,14 @@ filter(MOUNTS, {
 }),
 
 filter(MOUNTS, {
-    i(137576, { -- Dim Coldflame Core (MOUNT!) (Unknown 2023) (700)
+    i(137576, { -- Dim Coldflame Core (MOUNT!) (700)
         ["cost"] = { { "c", TRADERS_TENDER, 700 }, },
         ["timeline"] = { ADDED_10_1_7 },
     }),
 }),
 
 filter(BATTLE_PETS, {
-    i(49693, { -- Lil' Phylactery//Lil' KT (PET!) (650)
+    i(49693, { -- Lil' KT (PET!) (650)
         ["cost"] = { { "c", TRADERS_TENDER, 650 }, },
     }),
 }),
@@ -1670,7 +1670,7 @@ filter(COSMETIC, {
     }),
     i(190710), -- Caged Eye of the Watcher (225)
     i(190689), -- Corrupted Bladefist (525)
-    --i(32542), -- Drape of Endless Twilight (50)
+    i(190802), -- Drape of Endless Twilight (50)
     i(206341, { -- Ensemble: Wanderer's Lively Trappings (100)
         ["g"] = {
             i(206319), -- Wanderer's Lively Cloak
@@ -1685,7 +1685,7 @@ filter(COSMETIC, {
     }),
     i(190216), -- Feathered Cowl of the Guardian (250)
     i(190200), -- Feathered Drape of the Guardian (100)
-    --i(32542), -- Gleaming Mail Tabard (125)
+    i(190800), -- Gleaming Mail Tabard (125)
     i(190145), -- Gilded Drakkonid Morningstar (450)
     i(190076), -- Granny's Old Hat (175)
     i(190578), -- Headmaster's Command (500)
@@ -1707,7 +1707,7 @@ filter(COSMETIC, {
             i(208637), -- Nathreza Blasphemer's Warglaive
         },
     }),
-    --i(32542), -- Shadowy Mail Tabard (125)
+    i(190801), -- Shadowy Mail Tabard (125)
     i(190433), -- Shifty Merchant's Tunic (50)
     i(208665, { -- Webbed Saronite Exoskeleton (450)
         ["classes"] = DEATHKNIGHT,
@@ -1726,6 +1726,6 @@ filter(COSMETIC, {
         },
     }),
     i(190199), -- Well-Worn Grimskull Cinch (100)
-    --i(32542), -- Wine-Soaked Hammer (75)
+    i(190804), -- Wine-Soaked Hammer (75)
 }),
 ]]--

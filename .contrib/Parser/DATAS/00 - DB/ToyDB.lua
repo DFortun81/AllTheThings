@@ -1189,7 +1189,7 @@ i(205904);	-- Vibrant Clacking Claw
 --- NYI ---
 i(205034);	-- Enormous Ball of Yarn
 i(205027);	-- Explorer's Banner
-i(205463);	-- Skornak's Lava Ball
+i(205463);	-- Molten Lava Ball
 
 ------------------
 -- PATCH 10.1.5 --
@@ -1234,14 +1234,16 @@ i(208880);	-- Brewhahat
 ------------------
 -- PATCH 10.2.0 --
 ------------------
+i(210411);	-- Fast Growing Seed
+i(210864);	-- Improvised Leafbed
 i(210725);	-- Owl Post
+i(207092);	-- Portable Party Platter
 i(210497);	-- Verdant Legend's Pennant
 --- UNSORTED ---
-i(210411);	-- Fast Growing Seed
 i(209859);	-- Festive Trans-Dimensional Bird Whistle
 i(209035);	-- Hearthstone of the Flame
 i(208825);	-- Junior Timekeeper's Racing Belt
-i(207092);	-- Portable Party Platter
 i(208798);	-- Recorded Memories of Tyr's Guard
 i(210656);	-- Winter Veil Socks
 i(208087);	--
+i(206347);	-- Mannequin Charm

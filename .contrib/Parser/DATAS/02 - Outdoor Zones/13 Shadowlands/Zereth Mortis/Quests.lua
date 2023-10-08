@@ -405,15 +405,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["coord"] = { 47.7, 79.9, ZERETH_MORTIS },
 					["g"] = {
 						i(190985),	-- Crystallic Cryptic Mask
-						i(190991),	-- Crystallic Enigmatic Epaulettes
+						i(190991),	-- Crystallic Enigmatic Epaulets
 						i(190997),	-- Crystallic Numerus Crown
 						i(190979),	-- Crystallic Oracular Smock
 						i(190984),	-- Nova Cryptic Mask
-						i(190990),	-- Nova Enigmatic Epaulettes
+						i(190990),	-- Nova Enigmatic Epaulets
 						i(190996),	-- Nova Numerus Crown
 						i(190978),	-- Nova Oracular Smock
 						i(190983),	-- Scouring Cryptic Mask
-						i(190989),	-- Scouring Enigmatic Epaulettes
+						i(190989),	-- Scouring Enigmatic Epaulets
 						i(190995),	-- Scouring Numerus Crown
 						i(190977),	-- Scouring Oracular Smock
 					},
@@ -585,15 +585,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["coord"] = { 34.1, 47.3, ZERETH_MORTIS },
 					["g"] = {
 						i(190985),	-- Crystallic Cryptic Mask
-						i(190991),	-- Crystallic Enigmatic Epaulettes
+						i(190991),	-- Crystallic Enigmatic Epaulets
 						i(190997),	-- Crystallic Numerus Crown
 						i(190979),	-- Crystallic Oracular Smock
 						i(190984),	-- Nova Cryptic Mask
-						i(190990),	-- Nova Enigmatic Epaulettes
+						i(190990),	-- Nova Enigmatic Epaulets
 						i(190996),	-- Nova Numerus Crown
 						i(190978),	-- Nova Oracular Smock
 						i(190983),	-- Scouring Cryptic Mask
-						i(190989),	-- Scouring Enigmatic Epaulettes
+						i(190989),	-- Scouring Enigmatic Epaulets
 						i(190995),	-- Scouring Numerus Crown
 						i(190977),	-- Scouring Oracular Smock
 					},
@@ -1281,7 +1281,7 @@ root(ROOTS.HiddenQuestTriggers, m(SHADOWLANDS, {
 		q(65233),	-- RP after 'Jiro to Hero' (questID 65219) (spellID 362672)
 		q(65571),	-- RP after Chap 5 with Taelia (spellID 366796)
 		q(65619),	-- RP after Tahli Questline (spellID 367037)
-		q(65693),	-- RP Elder Ara 34.8, 64.8 after 'The Pilgrimage Ends' (questID64844) (spellID 367834) 
+		q(65693),	-- RP Elder Ara 34.8, 64.8 after 'The Pilgrimage Ends' (questID64844) (spellID 367834)
 
 		-- Treasure
 		q(65670),	-- Syntactic Vault When unlocking the box (spellID 367552)

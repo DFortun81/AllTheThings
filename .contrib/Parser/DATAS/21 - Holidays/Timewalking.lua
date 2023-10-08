@@ -1266,7 +1266,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 						i(133543),	-- Infinite Timereaver (MOUNT!)
 						i(50818),	-- Invincible (MOUNT!)
 						i(45693),	-- Mimiron's Head (MOUNT!)
-						
+
 						-- Anub'Arak
 						i(171615, {	-- Aegis of the Coliseum
 							["races"] = HORDE_ONLY,
@@ -2644,7 +2644,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 						i(77069),	-- Life-Binder's Handmaiden (MOUNT!)
 						i(133543),	-- Infinite Timereaver (MOUNT!)
 						i(69224),	-- Pureblood Fire Hawk (MOUNT!)
-						
+
 						-- Chogall
 						i(171856),	-- Shadowflame Mantle
 						i(171872),	-- Reinforced Sapphirium Shoulderguards
@@ -3450,7 +3450,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 			cr(40765, e(102, {	-- Commander Ulthok
 				i(133184),	-- Cerith Spire Staff
 				i(133203),	-- Barnacle Pendant
-				i(133186),	-- Caridean Epaulettes
+				i(133186),	-- Caridean Epaulets
 				i(133185),	-- Harp Shell Pauldrons
 				i(133188),	-- Eagle Ray Cloak
 				i(133187),	-- Chromis Chestpiece

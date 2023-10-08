@@ -216,7 +216,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["g"] = {
 					i(181267),	-- Writhing Spine (PET!)
 					i(183833),	-- Kash's Bag of Junk
-					i(184287),	-- Scum-Caked Epaulettes
+					i(184287),	-- Scum-Caked Epaulets
 					i(181797),	-- Strange Cloth
 				},
 			}),

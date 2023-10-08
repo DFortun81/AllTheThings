@@ -74,7 +74,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(210790, {	-- Ensemble: Elegant Green Dragon Outerwear (qID 78599)
 							["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
 							["g"] = {
-								i(210789),	-- Elegant Green Dragon Epaulettes
+								i(210789),	-- Elegant Green Dragon Epaulets
 								i(210788),	-- Elegant Green Dragon Shawl
 								i(210787),	-- Elegant Green Dragon Tabard
 							},

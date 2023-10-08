@@ -1658,7 +1658,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				i(208300),	-- Pattern: Verdant Combatant's Adamant Chainmail (RECIPE!)
 				i(208299),	-- Pattern: Verdant Combatant's Adamant Cowl (RECIPE!)
 				i(208305),	-- Pattern: Verdant Combatant's Adamant Cuffs (RECIPE!)
-				i(208302),	-- Pattern: Verdant Combatant's Adamant Epaulettes (RECIPE!)
+				i(208302),	-- Pattern: Verdant Combatant's Adamant Epaulets (RECIPE!)
 				i(208304),	-- Pattern: Verdant Combatant's Adamant Gauntlets (RECIPE!)
 				i(208306),	-- Pattern: Verdant Combatant's Adamant Girdle (RECIPE!)
 				i(208301),	-- Pattern: Verdant Combatant's Adamant Leggings (RECIPE!)

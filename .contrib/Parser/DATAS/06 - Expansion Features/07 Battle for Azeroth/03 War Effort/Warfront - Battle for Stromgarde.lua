@@ -1779,7 +1779,7 @@ root(ROOTS.NeverImplemented, {
 					i(163292),	-- Honorbound Artificer's Crown
 					i(163301),	-- Honorbound Artificer's Shoulderpads
 					i(163310),	-- Honorbound Artificer's Waistwrap
-					i(163338),	-- 7th Legionnaire's Epaulettes
+					i(163338),	-- 7th Legionnaire's Epaulets
 					i(163429),	-- Honorbound Artificer's Wrap
 					-- SL:Possibly now rewards
 					i(174025),	-- 7th Legionnaire's Garb

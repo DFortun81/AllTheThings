@@ -2542,7 +2542,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 				i(193440),	-- Crimson Combatant's Adamant Chainmail
 				i(193441),	-- Crimson Combatant's Adamant Cowl
 				i(193446),	-- Crimson Combatant's Adamant Cuffs
-				i(193442),	-- Crimson Combatant's Adamant Epaulettes
+				i(193442),	-- Crimson Combatant's Adamant Epaulets
 				i(193445),	-- Crimson Combatant's Adamant Gauntlets
 				i(193443),	-- Crimson Combatant's Adamant Girdle
 				i(193444),	-- Crimson Combatant's Adamant Leggings
@@ -2560,7 +2560,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 				i(204105, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Chainmail
 				i(204106, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Cowl
 				i(204111, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Cuffs
-				i(204107, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Epaulettes
+				i(204107, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Epaulets
 				i(204110, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Gauntlets
 				i(204108, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Girdle
 				i(204109, {["timeline"] = {ADDED_10_1_0}}),	-- Obsidian Combatant's Adamant Leggings
@@ -2578,7 +2578,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 				i(208248, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Adamant Chainmail
 				i(208249, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Adamant Cowl
 				i(208254, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Adamant Cuffs
-				i(208250, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Adamant Epaulettes
+				i(208250, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Adamant Epaulets
 				i(208253, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Adamant Gauntlets
 				i(208251, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Adamant Girdle
 				i(208252, {["timeline"] = {ADDED_10_2_0}}),	-- Verdant Combatant's Adamant Leggings
@@ -2659,7 +2659,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71722, 375135);	-- Crimson Combatant's Adamant Chainmail
 			FirstCraft(71724, 375134);	-- Crimson Combatant's Adamant Cowl
 			FirstCraft(71728, 375140);	-- Crimson Combatant's Adamant Cuffs
-			FirstCraft(71726, 375137);	-- Crimson Combatant's Adamant Epaulettes
+			FirstCraft(71726, 375137);	-- Crimson Combatant's Adamant Epaulets
 			FirstCraft(71723, 375138);	-- Crimson Combatant's Adamant Gauntlets
 			FirstCraft(71727, 375141);	-- Crimson Combatant's Adamant Girdle
 			FirstCraft(71725, 375136);	-- Crimson Combatant's Adamant Leggings
@@ -2679,7 +2679,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(74816, 403142, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Chainmail
 			FirstCraft(74818, 403141, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Cowl
 			FirstCraft(74822, 403147, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Cuffs
-			FirstCraft(74820, 403144, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Epaulettes
+			FirstCraft(74820, 403144, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Epaulets
 			FirstCraft(74817, 403145, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Gauntlets
 			FirstCraft(74821, 403148, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Girdle
 			FirstCraft(74819, 403143, ADDED_10_1_0);	-- Obsidian Combatant's Adamant Leggings
@@ -2695,7 +2695,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			--FirstCraft(X, 419015, ADDED_10_2_0);	-- Verdant Combatant's Adamant Chainmail
 			--FirstCraft(X, 419014, ADDED_10_2_0);	-- Verdant Combatant's Adamant Cowl
 			--FirstCraft(X, 419020, ADDED_10_2_0);	-- Verdant Combatant's Adamant Cuffs
-			--FirstCraft(X, 419017, ADDED_10_2_0);	-- Verdant Combatant's Adamant Epaulettes
+			--FirstCraft(X, 419017, ADDED_10_2_0);	-- Verdant Combatant's Adamant Epaulets
 			--FirstCraft(X, 419018, ADDED_10_2_0);	-- Verdant Combatant's Adamant Gauntlets
 			--FirstCraft(X, 419021, ADDED_10_2_0);	-- Verdant Combatant's Adamant Girdle
 			--FirstCraft(X, 419016, ADDED_10_2_0);	-- Verdant Combatant's Adamant Leggings

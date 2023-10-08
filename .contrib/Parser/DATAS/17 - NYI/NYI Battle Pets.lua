@@ -1453,6 +1453,14 @@ root(ROOTS.NeverImplemented, {
 				-- With SpeciesID Attached
 				i(206174),	-- Blub (PET!)
 			})),
+
+			-- 10.1.7
+			tier(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
+				-- Without SpeciesID Attached
+				i(208850),	-- Lil' Maggz (PET!) [Item Never Available]
+			})),
+
+
 		}),
 	}),
 });

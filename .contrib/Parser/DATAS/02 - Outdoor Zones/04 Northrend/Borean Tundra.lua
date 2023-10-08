@@ -1125,7 +1125,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 11878,	-- Khu'nok Will Know
 						["groups"] = {
 							i(37005),	-- D.E.H.T.A. Overshirt
-							i(37008),	-- Ethical Epaulettes
+							i(37008),	-- Ethical Epaulets
 							i(37007),	-- Faux Leather Hood
 							i(37009),	-- Moral Sabatons
 						},
@@ -1795,7 +1795,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(37505),	-- Battle Leader's Breastplate
 							i(37394),	-- Marshwalker Waistguard
-							i(37424),	-- Plainhunter's Epaulettes
+							i(37424),	-- Plainhunter's Epaulets
 							i(37214),	-- Sweltering Leggings
 						},
 					}),
@@ -2328,7 +2328,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(37505),	-- Battle Leader's Breastplate
 							i(37394),	-- Marshwalker Waistguard
-							i(37424),	-- Plainhunter's Epaulettes
+							i(37424),	-- Plainhunter's Epaulets
 							i(37214),	-- Sweltering Leggings
 						},
 					}),

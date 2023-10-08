@@ -664,7 +664,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 							i(186398),	-- Edge of Night
 							i(186417),	-- Guard of the Sundered Defender
 							i(186325),	-- Veil of the Banshee Queen
-							i(186342),	-- Epaulettes of the Master Ranger
+							i(186342),	-- Epaulets of the Master Ranger
 							i(186349),	-- Spires of Broken Hope
 							i(186439),	-- Dark Ranger's Quiver
 							i(186334),	-- Witherheart Studded Breastplate
@@ -886,7 +886,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						i(186414),	-- Rae'shalare, Death's Whisper
 						i(186417),	-- Guard of the Sundered Defender
 						i(186325),	-- Veil of the Banshee Queen
-						i(186342),	-- Epaulettes of the Master Ranger
+						i(186342),	-- Epaulets of the Master Ranger
 						i(186349),	-- Spires of Broken Hope
 						i(186439),	-- Dark Ranger's Quiver
 						i(186334),	-- Witherheart Studded Breastplate
@@ -1095,7 +1095,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						i(186414),	-- Rae'shalare, Death's Whisper
 						i(186417),	-- Guard of the Sundered Defender
 						i(186325),	-- Veil of the Banshee Queen
-						i(186342),	-- Epaulettes of the Master Ranger
+						i(186342),	-- Epaulets of the Master Ranger
 						i(186349),	-- Spires of Broken Hope
 						i(186439),	-- Dark Ranger's Quiver
 						i(186334),	-- Witherheart Studded Breastplate
@@ -1334,7 +1334,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						i(186414),	-- Rae'shalare, Death's Whisper
 						i(186417),	-- Guard of the Sundered Defender
 						i(186325),	-- Veil of the Banshee Queen
-						i(186342),	-- Epaulettes of the Master Ranger
+						i(186342),	-- Epaulets of the Master Ranger
 						i(186349),	-- Spires of Broken Hope
 						i(186439),	-- Dark Ranger's Quiver
 						i(186334),	-- Witherheart Studded Breastplate

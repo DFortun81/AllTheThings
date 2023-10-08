@@ -1345,7 +1345,7 @@ root(ROOTS.NeverImplemented, {
 						cl(PALADIN, {
 							i(188933),	-- Luminous Chevalier's Casque
 							i(188936),	-- Luminous Chevalier's Drape
-							i(188932),	-- Luminous Chevalier's Epaulettes
+							i(188932),	-- Luminous Chevalier's Epaulets
 							i(188928),	-- Luminous Chevalier's Gauntlets
 							i(188935),	-- Luminous Chevalier's Girdle
 							i(188929),	-- Luminous Chevalier's Plackart
@@ -1479,7 +1479,7 @@ root(ROOTS.NeverImplemented, {
 						cl(PALADIN, {
 							i(188933),	-- Luminous Chevalier's Casque
 							i(188936),	-- Luminous Chevalier's Drape
-							i(188932),	-- Luminous Chevalier's Epaulettes
+							i(188932),	-- Luminous Chevalier's Epaulets
 							i(188928),	-- Luminous Chevalier's Gauntlets
 							i(188935),	-- Luminous Chevalier's Girdle
 							i(188929),	-- Luminous Chevalier's Plackart
@@ -1613,7 +1613,7 @@ root(ROOTS.NeverImplemented, {
 						cl(PALADIN, {
 							i(188933),	-- Luminous Chevalier's Casque
 							i(188936),	-- Luminous Chevalier's Drape
-							i(188932),	-- Luminous Chevalier's Epaulettes
+							i(188932),	-- Luminous Chevalier's Epaulets
 							i(188928),	-- Luminous Chevalier's Gauntlets
 							i(188935),	-- Luminous Chevalier's Girdle
 							i(188929),	-- Luminous Chevalier's Plackart
@@ -1747,7 +1747,7 @@ root(ROOTS.NeverImplemented, {
 						cl(PALADIN, {
 							i(188933),	-- Luminous Chevalier's Casque
 							i(188936),	-- Luminous Chevalier's Drape
-							i(188932),	-- Luminous Chevalier's Epaulettes
+							i(188932),	-- Luminous Chevalier's Epaulets
 							i(188928),	-- Luminous Chevalier's Gauntlets
 							i(188935),	-- Luminous Chevalier's Girdle
 							i(188929),	-- Luminous Chevalier's Plackart
@@ -1881,7 +1881,7 @@ root(ROOTS.NeverImplemented, {
 						cl(PALADIN, {
 							i(188933),	-- Luminous Chevalier's Casque
 							i(188936),	-- Luminous Chevalier's Drape
-							i(188932),	-- Luminous Chevalier's Epaulettes
+							i(188932),	-- Luminous Chevalier's Epaulets
 							i(188928),	-- Luminous Chevalier's Gauntlets
 							i(188935),	-- Luminous Chevalier's Girdle
 							i(188929),	-- Luminous Chevalier's Plackart

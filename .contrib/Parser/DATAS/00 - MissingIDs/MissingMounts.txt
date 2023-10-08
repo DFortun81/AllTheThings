@@ -38,32 +38,3 @@ mount(428062),	-- Jeweled Saphire Scarab
 mount(428065),	-- Jeweled Jade Scarab
 mount(428067),	-- Shadowflame Hellbike
 mount(428068),	-- Felreaver Deathcycle
-
-
-
-
-Missing in MountDB.lua
-
-10.2.0.51239
-mount(424484),	-- Anu'relos, Flame's Guidance \\ [PH] Mythic Fire Owl
-mount(424601),	-- [PH] Brown-Furred Spiky Bakar
-mount(424607),	-- [PH] Red-Furred Bakar
-mount(424608),	-- [PH] White-Furred Bakar
-mount(424610),	-- [PH] Yellow-Furred Spiky Bakar
-mount(424611),	-- [PH] YellowBlack-Furred Bakar
-10.2.0.51425
-mount(427222),	-- Delugen
-mount(427224),	-- Talont
-mount(427226),	-- Stargrazer
-mount(427435),	-- Crimson Glimmerfur
-mount(427546),	-- Mammyth
-mount(427549),	-- Imagiwing
-mount(427724),	-- Salatrancer
-10.2.0.51521
-mount(428005),	-- Jeweled Copper Scarab
-mount(428013),	-- Deathbringer's Shadowcycle
-mount(428060),	-- Golden Regal Scarab
-mount(428062),	-- Jeweled Saphire Scarab
-mount(428065),	-- Jeweled Jade Scarab
-mount(428067),	-- Shadowflame Hellbike
-mount(428068),	-- Felreaver Deathcycle

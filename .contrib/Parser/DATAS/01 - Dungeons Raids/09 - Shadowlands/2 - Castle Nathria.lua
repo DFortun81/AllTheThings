@@ -712,7 +712,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 						i(183891),	-- Venerated Anima Spherule
 						FatedItem(183891.04, LFR),	-- Venerated Anima Spherule (Fated)
 						i(183001),	-- Helm of Insatiable Appetite
-						i(182994),	-- Epaulettes of Overwhelming Force
+						i(182994),	-- Epaulets of Overwhelming Force
 						i(183000),	-- Consumptive Chainmail Carapace
 						i(183009),	-- Miasma-lacquered Jerkin
 						i(183028),	-- Cinch of Infinite Tightness
@@ -914,7 +914,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 						i(183891),	-- Venerated Anima Spherule
 						FatedItem(183891.03, NORMAL),	-- Venerated Anima Spherule (Fated)
 						i(183001),	-- Helm of Insatiable Appetite
-						i(182994),	-- Epaulettes of Overwhelming Force
+						i(182994),	-- Epaulets of Overwhelming Force
 						i(183000),	-- Consumptive Chainmail Carapace
 						i(183009),	-- Miasma-lacquered Jerkin
 						i(183028),	-- Cinch of Infinite Tightness
@@ -1131,7 +1131,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 						i(183891),	-- Venerated Anima Spherule
 						FatedItem(183891.05, HEROIC),	-- Venerated Anima Spherule (Fated)
 						i(183001),	-- Helm of Insatiable Appetite
-						i(182994),	-- Epaulettes of Overwhelming Force
+						i(182994),	-- Epaulets of Overwhelming Force
 						i(183000),	-- Consumptive Chainmail Carapace
 						i(183009),	-- Miasma-lacquered Jerkin
 						i(183028),	-- Cinch of Infinite Tightness
@@ -1350,7 +1350,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 						i(183891),	-- Venerated Anima Spherule
 						FatedItem(183891.06, MYTHIC),	-- Venerated Anima Spherule (Fated)
 						i(183001),	-- Helm of Insatiable Appetite
-						i(182994),	-- Epaulettes of Overwhelming Force
+						i(182994),	-- Epaulets of Overwhelming Force
 						i(183000),	-- Consumptive Chainmail Carapace
 						i(183009),	-- Miasma-lacquered Jerkin
 						i(183028),	-- Cinch of Infinite Tightness

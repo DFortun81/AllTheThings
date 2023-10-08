@@ -122,7 +122,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 								i(168909),	-- Subroutine: Emergency Repairs
 								i(168963),	-- Fusion Hacker
 								i(169077),	-- Light Auto-Stabilizing Energy Rifle
-								i(169074),	-- Epaulettes of Arcing Power
+								i(169074),	-- Epaulets of Arcing Power
 								i(169075),	-- Tank Buster Pauldrons
 								i(169073),	-- Type II Bomber Jacket
 								i(169072),	-- Volatile Arming Doublet
@@ -205,7 +205,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 								i(168748),	-- Performant Refined Logic Board
 								i(169774),	-- Progression Sprocket
 								i(167556),	-- Subroutine: Overclock
-								i(168984),	-- Extravagant Epaulettes
+								i(168984),	-- Extravagant Epaulets
 								i(168987),	-- Shoulderguards of Fraying Sanity
 								i(168981),	-- Circuit-Linked Chainmail
 								i(168979),	-- Mechanized Plate Chasse
@@ -303,7 +303,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 								i(168909),	-- Subroutine: Emergency Repairs
 								i(168963),	-- Fusion Hacker
 								i(169077),	-- Light Auto-Stabilizing Energy Rifle
-								i(169074),	-- Epaulettes of Arcing Power
+								i(169074),	-- Epaulets of Arcing Power
 								i(169075),	-- Tank Buster Pauldrons
 								i(169073),	-- Type II Bomber Jacket
 								i(169072),	-- Volatile Arming Doublet
@@ -409,7 +409,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 								i(169006),	-- Inventor's Ingenious Trifocals
 								i(169005),	-- Mekgineer's Mindbending Headgear
 								i(169004),	-- Psychogenic Prognosticator's Lenses
-								i(168984),	-- Extravagant Epaulettes
+								i(168984),	-- Extravagant Epaulets
 								i(168987),	-- Shoulderguards of Fraying Sanity
 								i(168981),	-- Circuit-Linked Chainmail
 								i(168979),	-- Mechanized Plate Chasse
