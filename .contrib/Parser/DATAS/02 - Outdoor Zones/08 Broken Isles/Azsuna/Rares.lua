@@ -17,9 +17,6 @@ root(ROOTS.Zones, {
 					["questID"] = 42505,
 					["coord"] = { 35.4, 33.8, AZSUNA },
 					["g"] = {
-						crit(33372, {	-- Arcanist Shal'iman
-							["achievementID"] = 11261,	-- Adventurer of Azsuna
-						}),
 						i(141868),	-- Shal'imanacles
 					},
 				}),
@@ -28,9 +25,6 @@ root(ROOTS.Zones, {
 					["questID"] = 37932,
 					["coord"] = { 59.8, 11.9, AZSUNA },
 					["g"] = {
-						crit(33262, {	-- Unbound Rift
-							["achievementID"] = 11261,	-- Adventurer of Azsuna
-						}),
 						i(129085),	-- Arcavellus' Unbound Spaulders
 					},
 				}),
@@ -39,9 +33,6 @@ root(ROOTS.Zones, {
 					["questID"] = 38238,
 					["coord"] = { 32.4, 29.6, AZSUNA },
 					["g"] = {
-						crit(33268, {	-- Beacher
-							["achievementID"] = 11261,	-- Adventurer of Azsuna
-						}),
 						i(129067),	-- Sand-Blasted Pauldrons
 					},
 				}),
@@ -56,9 +47,6 @@ root(ROOTS.Zones, {
 					["questID"] = 42450,
 					["coord"] = { 55.1, 45.7, AZSUNA },
 					["g"] = {
-						crit(33270, {	-- Brawlgoth
-							["achievementID"] = 11261,	-- Adventurer of Azsuna
-						}),
 						i(129086),	-- Brawlgoth's Choker
 					},
 				}),
@@ -67,9 +55,6 @@ root(ROOTS.Zones, {
 					["questID"] = 38212,
 					["coord"] = { 59.2, 46.3, AZSUNA },
 					["g"] = {
-						crit(32403, {	-- Marius & Tehd versus a Fel Lord
-							["achievementID"] = 11261,	-- Adventurer of Azsuna
-						}),
 						i(129068),	-- Legion Lord's Spaulder
 					},
 				}),
@@ -91,9 +76,6 @@ root(ROOTS.Zones, {
 					["questID"] = 37821,
 					["coord"] = { 53.4, 43.9, AZSUNA },
 					["g"] = {
-						crit(33250, {	-- Captain Volo'ren
-							["achievementID"] = 11261,	-- Adventurer of Azsuna
-						}),
 						i(129066),	-- Nar'thalas Guard Mantle
 					},
 				}),
@@ -101,9 +83,6 @@ root(ROOTS.Zones, {
 					["questID"] = 42221,
 					["coord"] = { 65.5, 56.8, AZSUNA },
 					["g"] = {
-						crit(33269, {	-- Chief Bitterbrine
-							["achievementID"] = 11261,	-- Adventurer of Azsuna
-						}),
 						i(129073),	-- Bitterbrine's Signet Ring
 					},
 				}),
@@ -127,9 +106,6 @@ root(ROOTS.Zones, {
 					["questID"] = 37869,
 					["coord"] = { 51.1, 31.6, AZSUNA },
 					["g"] = {
-						crit(33259, {	-- Daggerbeak
-							["achievementID"] = 11261,	-- Adventurer of Azsuna
-						}),
 						i(129084),	-- Daggerbeak's Nesting Legguards
 					},
 				}),
@@ -137,20 +113,12 @@ root(ROOTS.Zones, {
 					["questID"] = 44081,
 					["coord"] = { 50.5, 52.0, AZSUNA },
 					["crs"] = { 112636 },	-- Sinister Leyrunner
-					["g"] = {
-						crit(33272, {	-- Treacherous Stallions
-							["achievementID"] = 11261,	-- Adventurer of Azsuna
-						}),
-					},
 				}),
 				n(91579,  {	-- Doomlord Kazrok
 					["description"] = "Speak to Tehd to start the encounter.",
 					["questID"] = 38352,	-- Kazrok
 					["coord"] = { 43.4, 28.2, AZSUNA },
 					["g"] = {
-						crit(32402, {	-- Marius & Tehd versus a Doomlord
-							["achievementID"] = 11261,	-- Adventurer of Azsuna
-						}),
 						i(129056),	-- Dreadlord's Hamstring
 					},
 				}),
@@ -159,9 +127,6 @@ root(ROOTS.Zones, {
 					["questID"] = 42069,
 					["coord"] = { 43.5, 24.6, AZSUNA },
 					["g"] = {
-						crit(32401, {	-- Marius & Tehd versus Felbats
-							["achievementID"] = 11261,	-- Adventurer of Azsuna
-						}),
 						i(129087),	-- Smooth Felwing Wraps
 					},
 				}),
@@ -169,9 +134,6 @@ root(ROOTS.Zones, {
 					["questID"] = 37824,
 					["coord"] = { 45.1, 57.8, AZSUNA },
 					["g"] = {
-						crit(33258, {	-- Flog the Captain-Eater
-							["achievementID"] = 11261,	-- Adventurer of Azsuna
-						}),
 						i(129090),	-- Bosun's Acid-Bleached Cape
 					},
 				}),
@@ -179,9 +141,6 @@ root(ROOTS.Zones, {
 					["questID"] = 37820,
 					["coord"] = { 65.0, 40.0, AZSUNA },
 					["g"] = {
-						crit(33249, {	-- Horn of the Siren
-							["achievementID"] = 11261,	-- Adventurer of Azsuna
-						}),
 						i(129091),	-- Golza's Iron Fin
 					},
 				}),
@@ -197,9 +156,6 @@ root(ROOTS.Zones, {
 					["questID"] = 38037,
 					["coord"] = { 35.2, 50.4, AZSUNA },
 					["g"] = {
-						crit(33264, {	-- Cache of Infernals
-							["achievementID"] = 11261,	-- Adventurer of Azsuna
-						}),
 						i(129083),	-- Greathelm of Infernal Lords
 					},
 				}),
@@ -207,9 +163,6 @@ root(ROOTS.Zones, {
 					["questID"] = 42376,
 					["coord"] = { 28.8, 52.5, AZSUNA },
 					["g"] = {
-						crit(33374, {	-- Inquisitor Tivos
-							["achievementID"] = 11261,	-- Adventurer of Azsuna
-						}),
 						i(141874),	-- Inquisitor's Corrupted Cincture
 					},
 				}),
@@ -221,9 +174,6 @@ root(ROOTS.Zones, {
 					["questID"] = 37823,
 					["coord"] = { 50.0, 34.6, AZSUNA },
 					["g"] = {
-						crit(33257, {	-- Mrrgrl the Tide Reaver
-							["achievementID"] = 11261,	-- Adventurer of Azsuna
-						}),
 						i(129072),	-- The Violaceous Pearl
 					},
 				}),
@@ -231,9 +181,6 @@ root(ROOTS.Zones, {
 					["questID"] = 37928,
 					["coord"] = { 49.6, 8.60, AZSUNA },
 					["g"] = {
-						crit(33261, {	-- Normantis the Deposed
-							["achievementID"] = 11261,	-- Adventurer of Azsuna
-						}),
 						i(129061),	-- Cowl of Azure Vengeance
 					},
 				}),
@@ -241,9 +188,6 @@ root(ROOTS.Zones, {
 					["questID"] = 38061,
 					["coord"] = { 56.1, 29.0, AZSUNA },
 					["g"] = {
-						crit(33265, {	-- Pridelord Meowl
-							["achievementID"] = 11261,	-- Adventurer of Azsuna
-						}),
 						i(138395),	-- Meowl's Mane
 					},
 				}),
@@ -251,9 +195,6 @@ root(ROOTS.Zones, {
 					["questID"] = 44108,
 					["coord"] = { 34.7, 49.7, AZSUNA },
 					["g"] = {
-						crit(33271, {	-- Ragemaw
-							["achievementID"] = 11261,	-- Adventurer of Azsuna
-						}),
 						i(129075),	-- Ragemaw's Hide
 					},
 				}),
@@ -261,9 +202,6 @@ root(ROOTS.Zones, {
 					["questID"] = 37537,
 					["coord"] = { 41.1, 41.7, AZSUNA },
 					["g"] = {
-						crit(33377, {	-- Ravyn-Drath
-							["achievementID"] = 11261,	-- Adventurer of Azsuna
-						}),
 						i(129080),	-- Alpha Seal Handwraps
 					},
 				}),
@@ -271,9 +209,6 @@ root(ROOTS.Zones, {
 					["questID"] = 37989,
 					["coord"] = { 67.2, 51.9, AZSUNA },
 					["g"] = {
-						crit(33263, {	-- Syphonus & Leodrath
-							["achievementID"] = 11261,	-- Adventurer of Azsuna
-						}),
 						i(129064),	-- Arcanetic Plate Greaves
 					},
 				}),
@@ -288,9 +223,6 @@ root(ROOTS.Zones, {
 					["questID"] = 37822,
 					["coord"] = { 59.6, 55.2, AZSUNA },
 					["g"] = {
-						crit(33251, {	-- The Oracle
-							["achievementID"] = 11261,	-- Adventurer of Azsuna
-						}),
 						i(129065),	-- The Shadow Oracle's Leggings
 					},
 				}),
@@ -298,9 +230,6 @@ root(ROOTS.Zones, {
 					["questID"] = 38217,
 					["coord"] = { 61.3, 62.0, AZSUNA },
 					["g"] = {
-						crit(33267, {	-- Tide Behemoth
-							["achievementID"] = 11261,	-- Adventurer of Azsuna
-						}),
 						i(129062),	-- Scale Helm of the Frigid Depths
 					},
 				}),
@@ -308,9 +237,6 @@ root(ROOTS.Zones, {
 					["questID"] = 37726,
 					["coord"] = { 47.4, 34.4, AZSUNA },
 					["g"] = {
-						crit(33248, {	-- Valiyaka the Stormbringer
-							["achievementID"] = 11261,	-- Adventurer of Azsuna
-						}),
 						i(129082),	-- Valiyaka's Weathered Handwraps
 					},
 				}),
@@ -318,9 +244,6 @@ root(ROOTS.Zones, {
 					["questID"] = 42280,
 					["coord"] = { 36.5, 44.0, AZSUNA },
 					["g"] = {
-						crit(33373, {	-- Vorthax
-							["achievementID"] = 11261,	-- Adventurer of Azsuna
-						}),
 						i(141875),	-- Hauberk of the Wrathblade
 					},
 				}),
@@ -331,9 +254,6 @@ root(ROOTS.Zones, {
 						{ 50.2, 55.6, AZSUNA },
 					},
 					["g"] = {
-						crit(33260, {	-- Seek & Destroy Squad
-							["achievementID"] = 11261,	-- Adventurer of Azsuna
-						}),
 						i(129069),	-- Stalker Collar Bracers
 					},
 				}),

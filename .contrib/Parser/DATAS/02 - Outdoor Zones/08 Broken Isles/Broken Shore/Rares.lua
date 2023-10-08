@@ -15,42 +15,42 @@ root(ROOTS.Zones, {
 							{
 								["creatureID"] = 120675,	-- An'thyna <Venom Queen>
 								["achievementID"] = 11841,	-- Naxt Victim
-								["criteriaID"] = 4,
+								["criteriaID"] = 36672,
 							},
 						}),
 						i(146920, {	-- Portal-Stone: Fel Obliterator
 							{
 								["creatureID"] = 120681,	-- Fel Obliterator
 								["achievementID"] = 11841,	-- Naxt Victim
-								["criteriaID"] = 5,	-- Fel Obliterator
+								["criteriaID"] = 36673,	-- Fel Obliterator
 							},
 						}),
 						i(146918, {	-- Portal-Stone: Force-Commander Xillious
 							{
 								["creatureID"] = 120665,	-- Force-Commander Xillious
 								["achievementID"] = 11841,	-- Naxt Victim
-								["criteriaID"] = 3,	-- Force-Commander Xillious
+								["criteriaID"] = 36671,	-- Force-Commander Xillious
 							},
 						}),
 						i(146921, {	-- Portal-Stone: Illisthyndria
 							{
 								["creatureID"] = 120686,	-- Illisthyndria <Keeper of Knives>
 								["achievementID"] = 11841,	-- Naxt Victim
-								["criteriaID"] = 6,	-- Illisthyndria
+								["criteriaID"] = 36674,	-- Illisthyndria
 							},
 						}),
 						i(146917, {	-- Portal-Stone: Skulguloth
 							{
 								["creatureID"] = 120641,	-- Skulguloth
 								["achievementID"] = 11841,	-- Naxt Victim
-								["criteriaID"] = 2,	-- Skulguloth
+								["criteriaID"] = 36670,	-- Skulguloth
 							},
 						}),
 						i(146916, {	-- Portal-Stone: Than'otalion
 							{
 								["creatureID"] = 120583,	-- Than'otalion
 								["achievementID"] = 11841,	-- Naxt Victim
-								["criteriaID"] = 1,	-- Than'otalion
+								["criteriaID"] = 36669,	-- Than'otalion
 							},
 						}),
 					},

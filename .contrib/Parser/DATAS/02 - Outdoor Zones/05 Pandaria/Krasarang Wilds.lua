@@ -13,61 +13,15 @@ root(ROOTS.Zones, {
 				421,	-- Ruins of Ogudei, Reliquary Incursion
 			},
 			["groups"] = {
-				--	TODO:
-					-- find out if "The Incursion" criteria requires "Lotus Tea" (30351) and "Threats from Dojan" (30349)
-					-- turn in "Buried Hozen Treasure" but NOT "Balance" or "Balance Without Violence" to make sure they're required for the criteria
-					-- add SQs for Horde loremaster achievement + Dominance Offensive achievement
 				n(ACHIEVEMENTS, {
 					explorationAch(6975),	-- Explore Krasarang Wilds
 					ach(6535, {	-- Mighty Roamin' Krasaranger (Alliance)
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							crit(1, {	-- Zhu's Watch
-							--	may also require questing through "Securing the Province" and "Borderlands," the other questline in this area
-								["sourceQuests"] = { 30090 },	-- Zhu's Despair
-							}),
-							crit(2, {	-- The Incursion
-							--	may also require "Lotus Tea" (30351) and "Threats from Dojan" (30349)
-								["sourceQuests"] = { 30348 },	-- Immortality?
-							}),
-							crit(3, {	-- Nayeli Lagoon
-								["sourceQuests"] = {
-									30672,	-- Balance
-									30674,	-- Balance Without Violence
-									30675,	-- Buried Hozen Treasure
-								},
-							}),
-							crit(4, {	-- Temple of the Red Crane
-								["sourceQuests"] = { 30273 },	-- In the House of the Red Crane
-							}),
-							crit(5, {	-- The Waters of Youth
-								["sourceQuests"] = { 30445 },	-- The Waters of Youth
-							}),
-						},
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(6536, {	-- Mighty Roamin' Krasaranger (Horde)
 						["races"] = HORDE_ONLY,
-						["g"] = {
-							crit(1, {	-- Zhu's Watch
-								["sourceQuests"] = { 30090 },	-- Zhu's Despair
-							}),
-							crit(2, {	-- Thunder Cleft
-								["sourceQuests"] = { 30131 },	-- Life
-							}),
-							crit(3, {	-- Nayeli Lagoon
-								["sourceQuests"] = {
-									30672,	-- Balance
-									30674,	-- Balance Without Violence
-									30675,	-- Buried Hozen Treasure
-								},
-							}),
-							crit(4, {	-- Temple of the Red Crane
-								["sourceQuests"] = { 30273 },	-- In the House of the Red Crane
-							}),
-							crit(5, {	-- Dawnchaser Retreat
-								["sourceQuests"] = { 30174 },	-- For Family
-							}),
-						},
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(7997, {	-- Riches of Pandaria
 						["collectible"] = false,
@@ -128,46 +82,7 @@ root(ROOTS.Zones, {
 							n(ACHIEVEMENTS, {
 								ach(7929, {	-- Dominance Offensive Campaign
 									["races"] = HORDE_ONLY,
-									["g"] = {
-										crit(1,  {	-- Domination Point
-											["sourceQuests"] = { 32108 },	-- Domination Point
-										}),
-										crit(2,  {	-- The Voice of the Gods
-											["sourceQuests"] = { 32257 },	-- Voice of the Gods
-										}),
-										crit(3,  {	-- The Horde is Family
-											["sourceQuests"] = { 32372 },	-- De-Subjugation
-										}),
-										crit(4,  {	-- Blood For Blood
-											["sourceQuests"] = {
-												32191,	-- Ancient Guardians
-												32192,	-- Bloodlines
-												32244,	-- The Korune
-											},
-										}),
-										crit(5,  {	-- The Korune
-											["sourceQuests"] = { 32384 },	-- Trapping the Leader
-										}),
-										crit(6,  {	-- Pride
-											["sourceQuests"] = { 32352 },	-- A Gathering Storm
-										}),
-										crit(7,  {	-- Rise of the Blood Elves
-											["sourceQuests"] = { 32330 },	-- What's in the Box?
-										}),
-										crit(8,  {	-- Secrets of the Past
-											["sourceQuests"] = { 32368 },	-- Memory Wine
-										}),
-										crit(9,  {	-- The Divine Bell
-											["sourceQuests"] = { 32392 },	-- The Divine Bell
-										}),
-										crit(10, {	-- The Darnassus Operation
-											["sourceQuests"] = { 32328 },	-- Victorious Return
-										}),
-										crit(11, {	-- The Purge of Dalaran
-											["sourceQuests"] = { 32412 },	-- One Last Grasp
-										}),
-										crit(12),	-- Breath of Darkest Shadow
-									},
+									["sym"] = {{ "achievement_criteria" }},
 								}),
 								ach(7932, {	-- I'm In Your Base, Killing Your Dudes
 									crit(1, {	-- Champion of Arms slain
@@ -871,54 +786,7 @@ root(ROOTS.Zones, {
 								}),
 								ach(7928, {	-- Operation: Shieldwall Campaign
 									["races"] = ALLIANCE_ONLY,
-									["g"] = {
-										crit(1,  {	-- Lion's Landing
-											["sourceQuests"] = { 32109 },	-- Lion's Landing
-										}),
-										crit(2,  {	-- The Man With a Thousand Faces
-											["sourceQuests"] = { 32426 },	-- Stirred, Not Shaken
-										}),
-										crit(3,  {	-- The Voice of the Gods
-											["sourceQuests"] = {
-												32383,	-- Bugging Out
-												32397,	-- He Won't Even Miss It
-											},
-										}),
-										crit(4,  {	-- Jaina's Hope
-											["sourceQuests"] = { 32362 },	-- The Fate of Dalaran
-										}),
-										crit(5,  {	-- The Korune
-											["sourceQuests"] = {
-												32194,	-- Bad Blood
-												32243,	-- The Source of Korune Power
-											},
-										}),
-										crit(6,  {	-- Heart of the Alliance
-											["sourceQuests"] = { 32316 },	-- Heart of the Alliance
-										}),
-										crit(7,  {	-- Secrets of the Past
-											["sourceQuests"] = { 32371 },	-- Memory Wine
-										}),
-										crit(8,  {	-- The Divine Bell
-											["sourceQuests"] = { 32394 },	-- The Divine Bell
-										}),
-										crit(9,  {	-- The Purge of Dalaran
-											["sourceQuests"] = { 32423 },	-- What Had To Be Done
-										}),
-										crit(10, {	-- An Ancient Ally
-											["sourceQuests"] = { 32335 },	-- The Greatest Prank
-										}),
-										crit(11, {	-- In Search of Harmony
-											["sourceQuests"] = {
-												32336,	-- The Handle
-												32338,	-- The Harmonic Ointment
-												32337,	-- The Head
-											},
-										}),
-										crit(12, {	-- Breath of Darkest Shadow
-											["sourceQuests"] = { 32455 },	-- The Silence
-										}),
-									},
+									["sym"] = {{ "achievement_criteria" }},
 								}),
 							}),
 							n(QUESTS, {

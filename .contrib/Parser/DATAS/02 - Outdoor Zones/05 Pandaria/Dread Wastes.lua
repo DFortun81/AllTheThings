@@ -10,53 +10,10 @@ root(ROOTS.Zones, {
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(7312, {	-- Amber is the Color of My Energy
-						crit(9, {	-- Hisek the Swarmkeeper
-							["_quests"] = { 31439 },	-- Dropping Our Signal
-						}),
-						crit(3, {	-- Iyyokuk the Lucid
-							["_quests"] = { 31085 },	-- Fires and Fears of Old
-						}),
-						crit(6, {	-- Ka'roz the Locust
-							["_quests"] = { 31354 },	-- Mazu's Bounty
-						}),
-						crit(4, {	-- Kaz'tik the Manipulator
-							["_quests"] = { 31398 },	-- Falling to Pieces
-						}),
-						crit(1, {	-- Kil'ruk the Wind-Reaver
-							["_quests"] = { 31006 },	-- The Klaxxi Council
-						}),
-						crit(5, {	-- Korven the Prime
-							["_quests"] = { 31026 },	-- The Root of the Problem
-						}),
-						crit(2, {	-- Malik the Unscathed
-							["_quests"] = { 31010 },	-- In Her Clutch
-						}),
-						crit(7, {	-- Rik'kal the Dissector
-							["_quests"] = { 31606 },	-- The Dissector Wakens
-						}),
-						crit(8, {	-- Skeer the Bloodseeker
-							["_quests"] = { 31179 },	-- The Scent of Blood
-						}),
-						crit(10, {	-- Xaril the Poisoned Mind
-							["_quests"] = { 31211 },	-- The Poisoned Mind
-						}),
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(6540, {	-- Dread Haste Makes Dread Waste
-						crit(1, {	-- The First Paragons
-							["sourceQuest"] = 31066,	-- A Cry From Darkness
-						}),
-						crit(2, {	-- The Might of the Klaxxi
-							["sourceQuests"] = {
-								31026,	-- The Root of the Problem
-								31398,	-- Falling to Pieces
-							},
-						}),
-						crit(3, {	-- Taste of Amber
-							["sourceQuest"] = 31086,	-- Blood of Ancients
-						}),
-						crit(4, {	-- Like a Deck Boss
-							["sourceQuest"] = 31354,	-- Mazu's Bounty
-						}),
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					explorationAch(6978),	-- Explore Dread Wastes
 					ach(6857, {	-- Heart of the Mantid Swarm (Dread Wastes)

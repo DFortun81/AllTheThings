@@ -14,57 +14,35 @@ root(ROOTS.Zones, {
 					explorationAch(6977),	-- Explore Townlong Steppes
 					ach(7309),	-- Fire in the Yaung-hole!
 					ach(7298, {	-- Getting Around with the Shado-Pan
-						crit(6),	-- Chao the Voice
-						crit(1),	-- Fei Li
-						crit(5),	-- Hawkmaster Nurong
-						crit(9),	-- Lao-Chin the Iron Belly
-						crit(3),	-- Protector Yi
-						crit(4),	-- Snow Blossom
-						crit(2),	-- Taoshi
-						crit(8),	-- Tenwu of the Red Smoke
-						crit(7),	-- Yalia Sagewhisper
+						crit(20453),	-- Fei Li
+						crit(20456),	-- Taoshi
+						crit(20461),	-- Protector Yi
+						crit(20454),	-- Snow Blossom
+						crit(20457),	-- Hawkmaster Nurong
+						crit(20460),	-- Chao the Voice
+						crit(20455),	-- Yalia Sagewhisper
+						crit(20458),	-- Tenwu of the Red Smoke
+						crit(20459),	-- Lao-Chin the Iron Belly
 					}),
 					ach(7308, {	-- Know Your Role
-						crit(2),	-- Assault Deadtalker's Plateau
-						crit(1),	-- Assault Fire Camp Gai-Cho
-						crit(7),	-- Cheng Bo!
-						crit(4),	-- Spirit Dust
-						crit(3),	-- The Deadtalker Cipher
-						crit(5),	-- The Enemy of My Enemy... Is Still My Enemy!
-						crit(6),	-- Uruk!
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(7299, {	-- Loner and a Rebel
-						crit(3),	-- Blackguard Defenders
-						crit(1),	-- Omnia Mystics
-						crit(2),	-- Wu Kao Assassins
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(6539, {	-- One Steppe Forward, Two Steppes Back
-						crit(19372, {	-- Fire Camp Osul
-							["sourceQuest"] = 30784,	-- The Point of No Return
-						}),
-						crit(19375, {	-- Mistlurkers in the Sumprushes
-							["sourceQuest"] = 30793,	-- Mists' Opportunity
-						}),
-						crit(19373, {	-- On Hatred's Path
-							["sourceQuest"] = 30900,	-- Terror of the Dread Wastes
-						}),
-						crit(19374, {	-- The Sha of Hatred
-							["sourceQuest"] = 30968,	-- The Sha of hatred
-						}),
-						crit(19376, {	-- Tai Ho's Investigation
-							["sourceQuest"] = 30926,	-- The Terrible Truth
-						}),
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(7297, {	-- Proven Strength (Shado-Pan Garrison)
-						crit(5),	-- Chao the Voice
-						crit(1),	-- Fei Li
-						crit(9),	-- Hawkmaster Nurong
-						crit(6),	-- Lao-Chin the Iron Belly
-						crit(4),	-- Protector Yi
-						crit(2),	-- Snow Blossom
-						crit(7),	-- Taoshi
-						crit(8),	-- Tenwu of the Red Smoke
-						crit(3),	-- Yalia Sagewhisper
+						crit(22174),	-- Fei Li
+						crit(22168),	-- Snow Blossom
+						crit(22169),	-- Yalia Sagewhisper
+						crit(22174),	-- Protector Yi
+						crit(22170),	-- Chao the Voice
+						crit(22171),	-- Lao-Chin the Iron Belly
+						crit(22174),	-- Taoshi
+						crit(22173),	-- Tenwu of the Red Smoke
+						crit(22172),	-- Hawkmaster Nurong
 					}),
 					ach(7997, {	-- Riches of Pandaria
 						["collectible"] = false,

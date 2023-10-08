@@ -671,100 +671,100 @@ root(ROOTS.Zones, {
 						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(8712, {	-- Killing Time
-						crit(1,  {	-- Spotted Swarmer
+						crit(23940,  {	-- Spotted Swarmer
 							["cr"] = 72908,	-- Spotted Swarmer
 						}),
-						crit(2,  {	-- Windfeather Chick
+						crit(23941,  {	-- Windfeather Chick
 							["cr"] = 71143,	-- Windfeather Chick
 						}),
-						crit(3,  {	-- Great Turtle Hatchling
+						crit(23942,  {	-- Great Turtle Hatchling
 							["cr"] = 72763,	-- Great Turtle Hatchling
 						}),
-						crit(4,  {	-- Ironfur Herdling
+						crit(23943,  {	-- Ironfur Herdling
 							["cr"] = 72842,	-- Ironfur Herdling
 						}),
-						crit(5,  {	-- Windfeather Nestkeeper
+						crit(23938,  {	-- Windfeather Nestkeeper
 							["cr"] = 72761,	-- Windfeather Nestkeeper
 						}),
-						crit(6,  {	-- Ironfur Grazer
+						crit(23939,  {	-- Ironfur Grazer
 							["cr"] = 72843,	-- Ironfur Grazer
 						}),
-						crit(7,  {	-- Spectral Brewmaster
+						crit(23935,  {	-- Spectral Brewmaster
 							["cr"] = 73018,	-- Spectral Brewmaster
 						}),
-						crit(8,  {	-- Spectral Mistweaver
+						crit(23936,  {	-- Spectral Mistweaver
 							["cr"] = 73025,	-- Spectral Mistweaver
 						}),
-						crit(9,  {	-- Spectral Windwalker
+						crit(23937,  {	-- Spectral Windwalker
 							["cr"] = 73021,	-- Spectral Windwalker
 						}),
-						crit(10, {	-- Crag Stalker
+						crit(23944, {	-- Crag Stalker
 							["cr"] = 72807,	-- Crag Stalker
 						}),
-						crit(11, {	-- Ashleaf Sprite
+						crit(23945, {	-- Ashleaf Sprite
 							["cr"] = 72877,	-- Ashleaf Sprite
 						}),
-						crit(12, {	-- Ordon Candlekeeper
+						crit(23966, {	-- Ordon Candlekeeper
 							["cr"] = 72875,	-- Ordon Candlekeeper
 						}),
-						crit(13, {	-- Foreboding Flame
+						crit(23946, {	-- Foreboding Flame
 							["cr"] = 73162,	-- Foreboding Flame
 						}),
-						crit(14, {	-- Jademist Dancer
+						crit(23947, {	-- Jademist Dancer
 							["cr"] = 72767,	-- Jademist Dancer
 						}),
-						crit(15, {	-- Brilliant Windfeather
+						crit(23948, {	-- Brilliant Windfeather
 							["cr"] = 72762,	-- Brilliant Windfeather
 						}),
-						crit(16, {	-- Great Turtle
+						crit(23949, {	-- Great Turtle
 							["cr"] = 72764,	-- Great Turtle
 						}),
-						crit(17, {	-- Ironfur Great Bull
+						crit(23950, {	-- Ironfur Great Bull
 							["cr"] = 72844,	-- Ironfur Great Bull
 						}),
-						crit(18, {	-- Damp Shambler
+						crit(23951, {	-- Damp Shambler
 							["cr"] = 72771,	-- Damp Shambler
 						}),
-						crit(19, {	-- Primal Stalker
+						crit(23952, {	-- Primal Stalker
 							["cr"] = 72805,	-- Primal Stalker
 						}),
-						crit(20, {	-- Ancient Spineclaw
+						crit(23953, {	-- Ancient Spineclaw
 							["cr"] = 72766,	-- Ancient Spineclaw
 						}),
-						crit(21, {	-- Gulp Frog
+						crit(23954, {	-- Gulp Frog
 							["cr"] = 72777,	-- Gulp Frog
 						}),
-						crit(22, {	-- Death Adder
+						crit(23955, {	-- Death Adder
 							["cr"] = 72841,	-- Death Adder
 						}),
-						crit(23, {	-- Ordon Fire Watcher
+						crit(23956, {	-- Ordon Fire Watcher
 							["cr"] = 72894,	-- Ordon Fire Watcher
 						}),
-						crit(24, {	-- Ordon Oathguard
+						crit(23957, {	-- Ordon Oathguard
 							["cr"] = 72892,	-- Ordon Oathguard
 						}),
-						crit(25, {	-- Burning Berserker
+						crit(23958, {	-- Burning Berserker
 							["cr"] = 72895,	-- Burning Berserker
 						}),
-						crit(26, {	-- Molten Guardian
+						crit(23959, {	-- Molten Guardian
 							["cr"] = 72888,	-- Molten Guardian
 						}),
-						crit(27, {	-- Crimsonscale Firestorm
+						crit(23960, {	-- Crimsonscale Firestorm
 							["cr"] = 72876,	-- Crimsonscale Firestorm
 						}),
-						crit(28, {	-- Elder Great Turtle
+						crit(23961, {	-- Elder Great Turtle
 							["cr"] = 72765,	-- Elder Great Turtle
 						}),
-						crit(29, {	-- Eroded Cliffdweller
+						crit(23962, {	-- Eroded Cliffdweller
 							["cr"] = 72809,	-- Eroded Cliffdweller
 						}),
-						crit(30, {	-- Blazebound Chanter
+						crit(23696, {	-- Blazebound Chanter
 							["cr"] = 72897,	-- Blazebound Chanter
 						}),
-						crit(31, {	-- Eternal Kilnmaster
+						crit(23964, {	-- Eternal Kilnmaster
 							["cr"] = 72896,	-- Eternal Kilnmaster
 						}),
-						crit(32, {	-- High Priest of Ordos
+						crit(23965, {	-- High Priest of Ordos
 							["cr"] = 72898,	-- High Priest of Ordos
 						}),
 					}),
@@ -786,105 +786,109 @@ root(ROOTS.Zones, {
 							{ 66.1, 72.3, TIMELESS_ISLE },
 						},
 						["g"] = {
-							crit(1),	-- Niuzao's Blessing Obtained
-							crit(2),	-- Yu'lon's Blessing Obtained
-							crit(3),	-- Chi-Ji's Blessing Obtained
-							crit(4),	-- Xuen's Blessing Obtained
+							crit(24007),	-- Niuzao's Blessing Obtained
+							crit(24008),	-- Yu'lon's Blessing Obtained
+							crit(24009),	-- Chi-Ji's Blessing Obtained
+							crit(24010),	-- Xuen's Blessing Obtained
 						},
 					}),
 					ach(8714, {	-- Timeless Champion (Timeless Isle)
-						crit(1, {	-- Emerald Gander
+						crit(23967, {	-- Emerald Gander
 							["_quests"] = { 33295 },
 						}),
-						crit(2, {	-- Ironfur Steelhorn
+						crit(23968, {	-- Ironfur Steelhorn
 							["_quests"] = { 33296 },
 						}),
-						crit(3, {	-- Great Turtle Furyshell
+						crit(23969, {	-- Great Turtle Furyshell
 							["_quests"] = { 33297 },
 						}),
-						crit(4, {	-- Gu'chi the Swarmbringer
+						crit(23970, {	-- Gu'chi the Swarmbringer
 							["_quests"] = { 33294 },
 						}),
-						crit(5, {	-- Zesqua
+						crit(23971, {	-- Zesqua
 							["_quests"] = { 33316 },
 						}),
-						crit(6, {	-- Zhu-Gon the Sour
+						crit(23972, {	-- Zhu-Gon the Sour
 							["_quests"] = { 32959 },
 						}),
-						crit(7, {	-- Karkanos
+						crit(23973, {	-- Karkanos
 							["_quests"] = { 33292 },
 						}),
-						crit(8, {	-- Chelon
+						crit(23974, {	-- Chelon
 							["_quests"] = { 32966 },
 						}),
-						crit(9, {	-- Spelurk
+						crit(23975, {	-- Spelurk
 							["_quests"] = { 32960 },
 						}),
-						crit(10, {	-- Cranegnasher
+						crit(23976, {	-- Cranegnasher
 							["_quests"] = { 32967 },
 						}),
-						crit(11, {	-- Rattleskew
+						crit(23977, {	-- Rattleskew
 							["_npcs"] = { 72048 },
 						}),
-						crit(12, {	-- Spirit of Jadefire
+						crit(23978, {	-- Spirit of Jadefire
 							["_quests"] = { 33293 },
 						}),
-						crit(13, {	-- Leafmender
+						crit(23979, {	-- Leafmender
 							["_quests"] = { 33298 },
 						}),
-						crit(14, {	-- Bufo
+						crit(23986, {	-- Bufo
 							["_quests"] = { 33301 },
 						}),
-						crit(15, {	-- Garnia
+						crit(23982, {	-- Garnia
 							["_quests"] = { 33300 },
 						}),
-						crit(16, {	-- Tsavo'ka
+						crit(23983, {	-- Tsavo'ka
 							["_quests"] = { 33304 },
 						}),
-						crit(17, {	-- Monstrous Spineclaw
+						crit(23985, {	-- Monstrous Spineclaw
 							["_quests"] = { 33302 },
 						}),
-						crit(18, {	-- Imperial Python
+						crit(23989, {	-- Imperial Python
 							["_quests"] = { 33303 },
 						}),
-						crit(19, {	-- Stinkbraid
+						crit(24144, {	-- Stinkbraid
 							["_quests"] = { 33305 },
 						}),
-						crit(20, {	-- Rock Moss
+						crit(23980, {	-- Rock Moss
 							["_quests"] = { 33307 },
 						}),
-						crit(21, {	-- Watcher Osu
+						crit(23992, {	-- Watcher Osu
 							["_quests"] = { 33322 },
 						}),
-						crit(22, {	-- Jakur of Ordon
+						crit(23994, {	-- Jakur of Ordon
 							["_quests"] = { 33306 },
 						}),
-						crit(23, {	-- Champion of the Black Flame
+						crit(23996, {	-- Champion of the Black Flame
 							["_quests"] = { 33299 },
 						}),
-						crit(24, {	-- Cinderfall
+						crit(23981, {	-- Cinderfall
 							["_quests"] = { 33310 },
 						}),
-						crit(25, {	-- Urdur the Cauterizer
+						crit(23993, {	-- Urdur the Cauterizer
 							["_quests"] = { 33308 },
 						}),
-						crit(26, {	-- Flintlord Gairan
+						crit(23995, {	-- Flintlord Gairan
 							["_quests"] = { 33309 },
 						}),
-						crit(27, {	-- Huolon
+						crit(23984, {	-- Huolon
 							["_quests"] = { 33311 },
 						}),
-						crit(28, {	-- Golganarr
+						crit(23988, {	-- Golganarr
 							["_quests"] = { 33315 },
 						}),
-						crit(29, {	-- Evermaw
+						crit(23990, {	-- Evermaw
 							["_quests"] = { 33313 },
 						}),
-						crit(30, {	-- Dread Ship Vazuvius
+						crit(23987, {	-- Dread Ship Vazuvius
 							["_quests"] = { 33314 },
 						}),
-						crit(31, {	-- Archiereus of Flame
+						crit(24139, {	-- Archiereus of Flame
 							["_quests"] = { 33312 },
+							["_npcs"] = { 73174 },
+						}),
+						crit(23991, {	-- Archiereus of Flame
+							["_npcs"] = { 73666 },
 						}),
 					}),
 					ach(8784, {	-- Timeless Legends
@@ -910,21 +914,21 @@ root(ROOTS.Zones, {
 							{ 68.4, 60.4, TIMELESS_ISLE },
 						},
 						["g"] = {
-							crit(1),	-- Cloudstrike Family Helm
-							crit(2),	-- Flameheart Shawl
-							crit(3),	-- Riverspeaker's Trident
-							crit(4),	-- Snowdrift Tiger Talons
+							crit(24006),	-- Cloudstrike Family Helm
+							crit(24140),	-- Flameheart Shawl
+							crit(24141),	-- Riverspeaker's Trident
+							crit(24142),	-- Snowdrift Tiger Talons
 							ach(8723),	-- Legend of the Past
 						},
 					}),
 					ach(8722, {	-- Timeless Nutriment
-						crit(1),	-- Ripe Crispfruit
-						crit(2),	-- Sand-Covered Egg
-						crit(3),	-- Charged Crystal
-						crit(4),	-- Huge Yak Roast
-						crit(5),	-- Roasted Seed
-						crit(6),	-- Fire Poppy
-						crit(7),	-- Southsea Firebrew
+						crit(24000),	-- Ripe Crispfruit
+						crit(24001),	-- Sand-Covered Egg
+						crit(24002),	-- Charged Crystal
+						crit(24003),	-- Huge Yak Roast
+						crit(24005),	-- Roasted Seed
+						crit(24004),	-- Fire Poppy
+						crit(24129),	-- Southsea Firebrew
 					}),
 					ach(8729, {	-- Treasure, Treasure Everywhere
 						crit(1),	-- 17/17 Moss-Covered Chests
@@ -1511,10 +1515,10 @@ root(ROOTS.Zones, {
 					o(220986, {	-- Blackguard's Jetsam
 						["description"] = "Coordinates are for an underwater cave entrance off the coast of the island.",
 						["isWeekly"] = true,
-						["questID"] = 32956,	-- TODO: hi, slumber, it's slumber.  check questID on Sleepwalk-Proudmoore after the reset on 3/2/21 to see if this questID needs to be replaced with 33163
+						["questID"] = 32956,
 						["coord"] = { 17.3, 57.0, TIMELESS_ISLE },
 						["g"] = {
-							crit(2, {	-- Blackguard's Jetsam
+							crit(24022, {	-- Blackguard's Jetsam
 								["achievementID"] = 8727,	-- Where There's Pirates, There's Booty
 							}),
 						},
@@ -1535,7 +1539,7 @@ root(ROOTS.Zones, {
 						["questID"] = 32971,
 						["coord"] = { 58.4, 60.0, TIMELESS_ISLE },
 						["g"] = {
-							crit(3, {	-- Mist-Covered Treasure Chest
+							crit(24020, {	-- Mist-Covered Treasure Chest
 								["achievementID"] = 8726,	-- Extreme Treasure Hunter
 							}),
 						},
@@ -1546,7 +1550,7 @@ root(ROOTS.Zones, {
 						["questID"] = 32969,
 						["coord"] = { 51.5, 73.4, TIMELESS_ISLE },
 						["g"] = {
-							crit(1, {	-- Gleaming Treasure Chest
+							crit(24018, {	-- Gleaming Treasure Chest
 								["achievementID"] = 8726,	-- Extreme Treasure Hunter
 							}),
 						},
@@ -1557,7 +1561,7 @@ root(ROOTS.Zones, {
 						["questID"] = 32970,
 						["coord"] = { 70.6, 80.9, TIMELESS_ISLE },
 						["g"] = {
-							crit(3, {	-- Gleaming Treasure Satchel
+							crit(24023, {	-- Gleaming Treasure Satchel
 								["achievementID"] = 8727,	-- Where There's Pirates, There's Booty
 							}),
 						},
@@ -1705,7 +1709,7 @@ root(ROOTS.Zones, {
 						["questID"] = 32968,
 						["coord"] = { 60.1, 45.9, TIMELESS_ISLE },
 						["g"] = {
-							crit(2, {	-- Rope-Bound Treasure Chest
+							crit(24019, {	-- Rope-Bound Treasure Chest
 								["achievementID"] = 8726,	-- Extreme Treasure Hunter
 							}),
 						},
@@ -1715,7 +1719,7 @@ root(ROOTS.Zones, {
 						["questID"] = 33203,
 						["coord"] = { 62.9, 35.3, 555 },	-- Cavern of Lost Spirits
 						["g"] = {
-							crit(2, {	-- 1/1 Skull-Covered Chest
+							crit(24117, {	-- 1/1 Skull-Covered Chest
 								["achievementID"] = 8729,	-- Treasure, Treasure Everywhere
 							}),
 						},
@@ -1755,7 +1759,7 @@ root(ROOTS.Zones, {
 						["cost"] = { { "i", 104015, 1 } },	-- Barnacle Encrusted Key
 						["cr"] = 71920,	-- Cursed Hozen Swabby
 						["g"] = {
-							crit(1, {	-- Sunken Treasure
+							crit(24021, {	-- Sunken Treasure
 								["achievementID"] = 8727,	-- Where There's Pirates, There's Booty
 							}),
 							i(134024),	-- Cursed Swabby Helmet (TOY!)

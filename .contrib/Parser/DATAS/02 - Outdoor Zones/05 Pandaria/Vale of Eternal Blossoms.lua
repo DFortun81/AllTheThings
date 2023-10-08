@@ -19,12 +19,10 @@ root(ROOTS.Zones, {
 					explorationAch(6979),	-- Explore Vale of Eternal Blossoms
 					ach(7317),	-- One Many Army
 					ach(7324, {	-- One Step at a Time
-						crit(1),	-- Complete The Crumbling Hall without taking any damage.
-						crit(2),	-- Complete The Thunder Below without taking any damage.
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(7319, {	-- Ready for Raiding III
-						crit(1),	-- Survival Ring: Flames
-						crit(2),	-- Survival Ring: Blades
+						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(7322),	-- Roll Club
 					ach(6754, {	-- The Dark Heart of the Mogu
