@@ -3,8 +3,10 @@
 -----------------------------------------------
 
 root(ROOTS.PVP, pvp(n(-240, {	-- Rated
-	filter(RECIPES, bubbleDown({ ["timeline"] = { "removed 8.0.1" }, }, {
-		-- ["description"] = "This had a chance to drop from any rated battleground win during Legion, but has not been seen since Legion ended.",
+	filter(RECIPES, bubbleDown({ ["timeline"] = { "added 7.0.3", "removed 8.0.1" }, }, {
+		-- #if BEFORE 8.0.1
+		["description"] = "This has a chance to drop from any rated battleground win during Legion.",
+		-- #endif
 		-- Added to Vendor in 10.0.7
 		i(137894),	-- Pattern: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
 		i(137926),	-- Pattern: Gravenscale Spaulders [Rank 3] (RECIPE!)
