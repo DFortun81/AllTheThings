@@ -2214,17 +2214,6 @@ root(ROOTS.Unsorted, {
 			}),
 		})),
 		tier(DF_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
-			n(SETS, {
-				i(203366),	-- Blue Winglord's Staff
-				i(203367),	-- Blue Winglord's Hauberk
-				i(203368),	-- Blue Winglord's Chain
-				i(203369),	-- Blue Winglord's Boots
-				i(203370),	-- Blue Winglord's Bracers
-				i(203371),	-- Blue Winglord's Grips
-				i(203372),	-- Blue Winglord's Coif
-				i(203373),	-- Blue Winglord's Greaves
-				i(203374),	-- Blue Winglord's Shoulders
-			}),
 			n(QUESTS, {
 				-- 10.0.2.45779
 				q(72350),	--
