@@ -110,7 +110,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				n(196191, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Malicia
 					["coord"] = { 43.4, 42.5, VALDRAKKEN },
 					["g"] = {
-						filter(MISC, {
+						filter(MISC, sharedDataSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
 							i(206144, {	-- Curious Primordial Fungus
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 100 },
@@ -141,8 +141,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									{ "c", BLOODY_TOKENS, 100 },
 								},
 							}),
-						}),
-						n(BACK, {
+						})),
+						n(BACK, sharedDataSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
 							i(206241, {	-- Scalewarden's Drape
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 200 },
@@ -163,8 +163,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									{ "c", BLOODY_TOKENS, 200 },
 								},
 							}),
-						}),
-						filter(CLOTH, {
+						})),
+						filter(CLOTH, sharedDataSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
 							i(206213, {	-- Scalewarden's Cloth Mantle
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 350 },
@@ -205,8 +205,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									{ "c", BLOODY_TOKENS, 500 },
 								},
 							}),
-						}),
-						filter(LEATHER, {
+						})),
+						filter(LEATHER, sharedDataSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
 							i(206221, {	-- Scalewarden's Leather Shoulderguard
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 350 },
@@ -247,8 +247,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									{ "c", BLOODY_TOKENS, 350 },
 								},
 							}),
-						}),
-						filter(MAIL, {
+						})),
+						filter(MAIL, sharedDataSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
 							i(206237, {	-- Scalewarden's Chain Armguards
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 200 },
@@ -289,8 +289,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									{ "c", BLOODY_TOKENS, 500 },
 								},
 							}),
-						}),
-						filter(PLATE, {
+						})),
+						filter(PLATE, sharedDataSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
 							i(206229, {	-- Scalewarden's Plate Bracers
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 200 },
@@ -331,8 +331,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									{ "c", BLOODY_TOKENS, 500 },
 								},
 							}),
-						}),
-						n(WEAPONS, {
+						})),
+						n(WEAPONS, sharedDataSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
 							i(206830, {	-- Scalewarden's Dirk
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 400 },
@@ -458,13 +458,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									{ "c", BLOODY_TOKENS, 400 },
 								},
 							}),
-						}),
+						})),
 					},
 				})),
 				n(197553, {	-- Fieldmaster Emberath
 					["coord"] = { 43.1, 42.4, VALDRAKKEN },
 					["g"] = {
-						filter(MISC, {
+						filter(MISC, sharedDataSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
 							i(201464, {	-- Flesh Parachute
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 750 },
@@ -495,8 +495,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									{ "i", ROUSING_IRE, 10 },
 								},
 							}),
-						}),
-						n(BACK, {
+						})),
+						n(BACK, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
 							i(198960, {	-- Drakebreaker's Cape
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 200 },
@@ -517,8 +517,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									{ "c", BLOODY_TOKENS, 200 },
 								},
 							}),
-						}),
-						filter(CLOTH, {
+						})),
+						filter(CLOTH, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
 							i(198566, {	-- Drakebreaker's Boots
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 350 },
@@ -559,8 +559,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									{ "c", BLOODY_TOKENS, 500 },
 								},
 							}),
-						}),
-						filter(LEATHER, {
+						})),
+						filter(LEATHER, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
 							i(198578, {	-- Drakebreaker's Bindings
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 200 },
@@ -601,8 +601,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									{ "c", BLOODY_TOKENS, 350 },
 								},
 							}),
-						}),
-						filter(MAIL, {
+						})),
+						filter(MAIL, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
 							i(198596, {	-- Drakebreaker's Bracers
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 200 },
@@ -643,8 +643,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									{ "c", BLOODY_TOKENS, 350 },
 								},
 							}),
-						}),
-						filter(PLATE, {
+						})),
+						filter(PLATE, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
 							i(198588, {	-- Drakebreaker's Armplates
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 200 },
@@ -685,8 +685,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									{ "c", BLOODY_TOKENS, 350 },
 								},
 							}),
-						}),
-						n(WEAPONS, {
+						})),
+						n(WEAPONS, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
 							i(199084, {	-- Drakebreaker's Broadsword
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 800 },
@@ -797,14 +797,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									{ "c", BLOODY_TOKENS, 800 },
 								},
 							}),
-						}),
-						filter(TOYS, {
+						})),
+						filter(TOYS, sharedDataSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
 							i(202021, {	-- Breaker's Flag of Victory (TOY!)
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 1500 },
 								},
 							}),
-						}),
+						})),
 						filter(RECIPES, sharedData({
 							["cost"] = { { "i", 190450, 3 } },	-- 3x Awakened Ire
 							["timeline"] = { ADDED_10_0_5, REMOVED_10_1_0 },
@@ -858,6 +858,218 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						-- #endif
 					},
 				}),
+				n(213989,  bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Warkeeper Gresh
+					["coord"] = { 43.1, 42.4, VALDRAKKEN },
+					["g"] = {
+						filter(MISC, {
+							i(206144, {	-- Curious Primordial Fungus
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 100 },
+								},
+							}),
+							i(206143, {	-- Energized Temporal Spores
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 100 },
+								},
+							}),
+							i(201464, {	-- Flesh Parachute
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 750 },
+								},
+							}),
+							i(206142, {	-- Gritty Stone Potion
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 100 },
+								},
+							}),
+							i(198076, {	-- Pest Fogger
+								["cost"] = {
+									{ "i", BLOODY_TOKENS, 100 },
+								},
+							}),
+							i(206141, {	-- Prismatic Snail Mucus
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 100 },
+								},
+							}),
+							i(201414, {	-- Qalashi Wingshredder
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 1000 },
+								},
+							}),
+							i(206140, {	-- Soothing Emerald Tea
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 100 },
+								},
+							}),
+							i(206139, {	-- Volatile Crimson Embers
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 100 },
+								},
+							}),
+							i(202064, {	-- Warbanner of Ire
+								["cost"] = {
+									{ "i", BLOODY_TOKENS, 100 },
+								},
+							}),
+							i(200953, {	-- Wild Dragon Fruit
+								["cost"] = {
+									{ "i", BLOODY_TOKENS, 100 },
+								},
+							}),
+							i(200966, {	-- Wild Truffle
+								["cost"] = {
+									{ "i", BLOODY_TOKENS, 100 },
+								},
+							}),
+						}),
+						i(211148, {	-- Arsenal: Drakebreaker's Axe
+							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["g"] = {
+								i(199070),	-- Drakebreaker's Cleaver
+								i(199072),	-- Drakebreaker's Hacker
+								i(199071),	-- Drakebreaker's Hatchet
+							},
+						}),
+						i(211144, {	-- Arsenal: Drakebreaker's Club
+							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["g"] = {
+								i(199088),	-- Drakebreaker's Cudgel
+								i(199087),	-- Drakebreaker's Maul
+								i(199086),	-- Drakebreaker's Scepter
+							},
+						}),
+						i(211153, {	-- Arsenal: Drakebreaker's Greatsword
+							["cost"] = {{ "i", BLOODY_TOKENS, 800 }},
+							["g"] = {
+								i(199084),	-- Drakebreaker's Broadsword
+								i(199085),	-- Drakebreaker's Greatsword
+							},
+						}),
+						i(211157, {	-- Arsenal: Drakebreaker's Gun
+							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["g"] = {
+								i(199075),	-- Drakebreaker's Heartseeker
+							},
+						}),
+						i(211146, {	-- Arsenal: Drakebreaker's Knife
+							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["g"] = {
+								i(199077),	-- Drakebreaker's Dagger
+								i(199078),	-- Drakebreaker's Shiv
+							},
+						}),
+						i(211155, {	-- Arsenal: Drakebreaker's Offhand
+							["cost"] = {{ "i", BLOODY_TOKENS, 300 }},
+							["g"] = {
+								i(199079),	-- Drakebreaker's Horn
+							},
+						}),
+						i(211152, {	-- Arsenal: Drakebreaker's Polearm
+							["cost"] = {{ "i", BLOODY_TOKENS, 800 }},
+							["g"] = {
+								i(199090),	-- Drakebreaker's Impaler
+								i(199091),	-- Drakebreaker's Javelin
+							},
+						}),
+						i(211150, {	-- Arsenal: Drakebreaker's Shield
+							["cost"] = {{ "i", BLOODY_TOKENS, 300 }},
+							["g"] = {
+								i(199089),	-- Drakebreaker's Bulwark
+							},
+						}),
+						i(211143, {	-- Arsenal: Drakebreaker's Spiked Hammer
+							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["g"] = {
+								i(199095),	-- Drakebreaker's Crusher
+								i(199096),	-- Drakebreaker's Mace
+								i(199094),	-- Drakebreaker's Mallet
+							},
+						}),
+						i(211154, {	-- Arsenal: Drakebreaker's Stave
+							["cost"] = {{ "i", BLOODY_TOKENS, 800 }},
+							["g"] = {
+								i(199082),	-- Drakebreaker's Pole
+								i(199081),	-- Drakebreaker's Staff
+							},
+						}),
+						i(211156, {	-- Arsenal: Drakebreaker's Wand
+							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["g"] = {
+								i(199093),	-- Drakebreaker's Rod
+							},
+						}),
+						i(211147, {	-- Arsenal: Drakebreaker's Warglaive
+							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["g"] = {
+								i(199076),	-- Drakebreaker's Glaive
+							},
+						}),
+						i(211140, {	-- Ensemble: Drakebreaker's Cloth Armor
+							["cost"] = {{ "i", BLOODY_TOKENS, 3000 }},
+							["g"] = {
+								i(198566),	-- Drakebreaker's Boots
+								i(198961),	-- Drakebreaker's Cloak
+								i(198570),	-- Drakebreaker's Cord
+								i(198571),	-- Drakebreaker's Cuffs
+								i(198567),	-- Drakebreaker's Gloves
+								i(198568),	-- Drakebreaker's Hood
+								i(198569),	-- Drakebreaker's Leggings
+								i(198572),	-- Drakebreaker's Shoulderpads
+								i(198565),	-- Drakebreaker's Vestment
+							},
+						}),
+						i(211138, {	-- Ensemble: Drakebreaker's Leather Armor
+							["cost"] = {{ "i", BLOODY_TOKENS, 3000 }},
+							["g"] = {
+								i(198578),	-- Drakebreaker's Bindings
+								i(198576),	-- Drakebreaker's Breeches
+								i(198575),	-- Drakebreaker's Cowl
+								i(198580),	-- Drakebreaker's Epaulets
+								i(198574),	-- Drakebreaker's Handguards
+								i(198577),	-- Drakebreaker's Sash
+								i(198962),	-- Drakebreaker's Shroud
+								i(198579),	-- Drakebreaker's Vest
+								i(198573),	-- Drakebreaker's Waders
+							},
+						}),
+						i(211135, {	-- Ensemble: Drakebreaker's Mail Armor
+							["cost"] = {{ "i", BLOODY_TOKENS, 3000 }},
+							["g"] = {
+								i(198596),	-- Drakebreaker's Bracers
+								i(198589),	-- Drakebreaker's Chestguard
+								i(198595),	-- Drakebreaker's Cinch
+								i(198592),	-- Drakebreaker's Coif
+								i(198593),	-- Drakebreaker's Greaves
+								i(198591),	-- Drakebreaker's Grips
+								i(198594),	-- Drakebreaker's Shoulderguards
+								i(198590),	-- Drakebreaker's Striders
+								i(198959),	-- Drakebreaker's Wrap
+							},
+						}),
+						i(211100, {	-- Ensemble: Drakebreaker's Plate Armor
+							["cost"] = {{ "i", BLOODY_TOKENS, 3000 }},
+							["g"] = {
+								i(198588),	-- Drakebreaker's Armplates
+								i(198582),	-- Drakebreaker's Breastplate
+								i(198960),	-- Drakebreaker's Cape
+								i(198584),	-- Drakebreaker's Gauntlets
+								i(198587),	-- Drakebreaker's Girdle
+								i(198581),	-- Drakebreaker's Helm
+								i(198585),	-- Drakebreaker's Legguards
+								i(198586),	-- Drakebreaker's Mantle
+								i(198583),	-- Drakebreaker's Sabatons
+							},
+						}),
+						filter(TOYS, {
+							i(202021, {	-- Breaker's Flag of Victory (TOY!)
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 1500 },
+								},
+							}),
+						}),
+					},
+				})),
 			}),
 		})),
 	}),

@@ -1172,7 +1172,6 @@ root(ROOTS.Unsorted, {
 			i(211097),	-- Gilded Crown Splitter
 			i(211098),	-- Copper Scarab Bullwark
 			i(211099),	-- Royal Scarab Bullwark
-			i(211100),	-- Ensemble: Drakebreaker's Plate Armor
 			i(211113),	-- Wastewander Tracker's Rebreather
 			i(211114),	-- Wastewander Tracker's Spaulders
 			i(211115),	-- Wastewander Tracker's Breastplate
@@ -1189,26 +1188,11 @@ root(ROOTS.Unsorted, {
 			i(211131),	-- Delicately Curated Blossoms
 			i(211132),	-- Omni Storm
 			i(211134),	-- Ensemble: Scalewarden's Plate Armor
-			i(211135),	-- Ensemble: Drakebreaker's Mail Armor
 			i(211136),	-- Ensemble: Scalewarden's Mail Armor
 			i(211137),	-- Witch Doctor's Fetish Frame
-			i(211138),	-- Ensemble: Drakebreaker's Leather Armor
 			i(211139),	-- Ensemble: Scalewarden's Leather Armor
-			i(211140),	-- Ensemble: Drakebreaker's Cloth Armor
 			i(211141),	-- Ensemble: Scalewarden's Cloth Armor
-			i(211143),	-- Arsenal: Drakebreaker's Spiked Hammer
-			i(211144),	-- Arsenal: Drakebreaker's Club
 			i(211145),	-- Royal Witch Doctor's Trophies
-			i(211146),	-- Arsenal: Drakebreaker's Knife
-			i(211147),	-- Arsenal: Drakebreaker's Warglaive
-			i(211148),	-- Arsenal: Drakebreaker's Axe
-			i(211150),	-- Arsenal: Drakebreaker's Shield
-			i(211152),	-- Arsenal: Drakebreaker's Polearm
-			i(211153),	-- Arsenal: Drakebreaker's Greatsword
-			i(211154),	-- Arsenal: Drakebreaker's Stave
-			i(211155),	-- Arsenal: Drakebreaker's Offhand
-			i(211156),	-- Arsenal: Drakebreaker's Wand
-			i(211157),	-- Arsenal: Drakebreaker's Gun
 			i(211158),	-- Witch Doctor's Fetish Guard
 			i(211159),	-- Royal Witch Doctor's Guard
 			i(211164),	-- Wastewander Tracker's Cloak
