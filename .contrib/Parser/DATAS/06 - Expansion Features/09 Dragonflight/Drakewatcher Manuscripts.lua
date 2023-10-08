@@ -1067,12 +1067,17 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(208680),	-- Windborne Velocidrake: Hallow's End Armor
 		})),
 		header(HEADERS.Item, 204361, {	-- Winding Slitherdrake
-			i(203319),	-- Winding Slitherdrake: Finned Cheek (DM!)
 			i(203306),	-- Winding Slitherdrake: Horned Brow (DM!)
 			i(203336),	-- Winding Slitherdrake: Paired Horns (DM!)
 			i(203359),	-- Winding Slitherdrake: Shark Finned Tail (DM!)
 			i(203355),	-- Winding Slitherdrake: Yellow Scales (DM!)
 		}),
+		header(HEADERS.Item, 204361, sharedData({	-- Winding Slitherdrake
+			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
+			["timeline"] = { CREATED_10_1_7 },
+		}, {
+			i(203319),	-- Winding Slitherdrake: Finned Cheek (DM!)
+		})),
 	})),
 	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 		header(HEADERS.Item, 194521, {	-- Cliffside Wylderdrake
