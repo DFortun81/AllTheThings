@@ -732,68 +732,6 @@ root(ROOTS.Holidays, n(DRAGONRIDING_CUP_ROOT, {
 					},
 				}),
 			}),
-			n(REWARDS, {
-				currency(RIDERS_OF_AZEROTH_BADGE, {
-					["description"] = "Gain one badge for each achievement.",
-				}),
-			}),
-			n(VENDORS, {
-				n(206744, {	-- Maztha <Riders of Azeroth>
-					["coord"] = { 27.2, 47.2, VALDRAKKEN },
-					["g"] = {
-						i(202280, {	-- Renewed Proto-Drake: Pronged Tail (DM!)
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-						}),
-						i(197615, {	-- Windborne Velocidrake: Teal Scales (DM!)
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 50 } },
-						}),
-						i(203322, {	-- Winding Slitherdrake: Blonde Hair (DM!)
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-						}),
-						i(203349, {	-- Winding Slitherdrake: Curved Nose Horn (DM!)
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-						}),
-						-- Leaving it here because it not being available feels like a bug
-						-- i(203319, {	-- Winding Slitherdrake: Finned Cheek (DM!)
-						-- 	["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-						-- }),
-						i(203306, {	-- Winding Slitherdrake: Horned Brow (DM!)
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-						}),
-						i(203336, {	-- Winding Slitherdrake: Paired Horns (DM!)
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-						}),
-						i(203359, {	-- Winding Slitherdrake: Shark Finned Tail (DM!)
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-						}),
-						i(203355, {	-- Winding Slitherdrake: Yellow Scales (DM!)
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 50 } },
-						}),
-
-						i(206592, {	-- Drake Racer's Belt
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
-						}),
-						i(206594, {	-- Drake Racer's Boots
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
-						}),
-						i(206591, {	-- Drake Racer's Handwraps
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
-						}),
-						i(206588, {	-- Drake Racer's Helmet
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
-						}),
-						i(206590, {	-- Drake Racer's Jersey
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
-						}),
-						i(206593, {	-- Drake Racer's Leggings
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
-						}),
-						i(206589, {	-- Drake Racer's Shoulderpads
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
-						}),
-					},
-			}),
-			}),
 		}))),
 		applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {					-- Kalimdor Cup
 			n(ACHIEVEMENTS, {
@@ -1751,49 +1689,6 @@ root(ROOTS.Holidays, n(DRAGONRIDING_CUP_ROOT, {
 					},
 				}),
 			})),
-			n(REWARDS, {
-				currency(RIDERS_OF_AZEROTH_BADGE, {
-					["description"] = "Gain one badge for each achievement.",
-				}),
-			}),
-			n(VENDORS, {
-				n(206744, {	-- Maztha <Riders of Azeroth>
-					["coord"] = { 27.2, 47.2, VALDRAKKEN },
-					["g"] = {
-						i(197615, {	-- Windborne Velocidrake: Teal Scales (DM!)
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 50 } },
-						}),
-						i(203322, {	-- Winding Slitherdrake: Blonde Hair (DM!)
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-						}),
-						i(203349, {	-- Winding Slitherdrake: Curved Nose Horn (DM!)
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
-						}),
-
-						i(206592, {	-- Drake Racer's Belt
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
-						}),
-						i(206594, {	-- Drake Racer's Boots
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
-						}),
-						i(206591, {	-- Drake Racer's Handwraps
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
-						}),
-						i(206588, {	-- Drake Racer's Helmet
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
-						}),
-						i(206590, {	-- Drake Racer's Jersey
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
-						}),
-						i(206593, {	-- Drake Racer's Leggings
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
-						}),
-						i(206589, {	-- Drake Racer's Shoulderpads
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
-						}),
-					},
-				}),
-			}),
 		}))),
 		applyevent(EVENTS.OUTLAND_CUP, n(OUTLAND_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {						-- Outland Cup
 			n(ACHIEVEMENTS, {
@@ -2354,12 +2249,6 @@ root(ROOTS.Holidays, n(DRAGONRIDING_CUP_ROOT, {
 					},
 				}),
 			}),
-			n(REWARDS, {
-				-- TODO: Confirm
-				-- currency(RIDERS_OF_AZEROTH_BADGE, {
-				-- 	["description"] = "Gain one badge for each achievement.",
-				-- }),
-			}),
 			n(VENDORS, {
 				-- TODO: Confirm
 				-- n(206744, {	-- Maztha <Riders of Azeroth>
@@ -2400,5 +2289,67 @@ root(ROOTS.Holidays, n(DRAGONRIDING_CUP_ROOT, {
 				-- }),
 			}),
 		}))),
+		n(REWARDS, {
+			currency(RIDERS_OF_AZEROTH_BADGE, {
+				["description"] = "Gain one badge for each achievement.",
+			}),
+		}),
+		n(VENDORS, {
+			n(206744, {	-- Maztha <Riders of Azeroth>
+				["coord"] = { 27.2, 47.2, VALDRAKKEN },
+				["g"] = {
+					i(202280, {	-- Renewed Proto-Drake: Pronged Tail (DM!)
+						["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+					}),
+					i(203322, {	-- Winding Slitherdrake: Blonde Hair (DM!)
+						["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+					}),
+					i(203349, {	-- Winding Slitherdrake: Curved Nose Horn (DM!)
+						["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+					}),
+					-- Leaving it here because it not being available feels like a bug
+					-- i(203319, {	-- Winding Slitherdrake: Finned Cheek (DM!)
+					-- 	["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+					-- }),
+					i(203306, {	-- Winding Slitherdrake: Horned Brow (DM!)
+						["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+					}),
+					i(203336, {	-- Winding Slitherdrake: Paired Horns (DM!)
+						["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+					}),
+					i(203359, {	-- Winding Slitherdrake: Shark Finned Tail (DM!)
+						["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+					}),
+					i(203355, {	-- Winding Slitherdrake: Yellow Scales (DM!)
+						["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 50 } },
+					}),
+					i(197615, {	-- Windborne Velocidrake: Teal Scales (DM!)
+						["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 50 } },
+					}),
+
+					i(206592, {	-- Drake Racer's Belt
+						["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+					}),
+					i(206594, {	-- Drake Racer's Boots
+						["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+					}),
+					i(206591, {	-- Drake Racer's Handwraps
+						["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+					}),
+					i(206588, {	-- Drake Racer's Helmet
+						["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+					}),
+					i(206590, {	-- Drake Racer's Jersey
+						["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+					}),
+					i(206593, {	-- Drake Racer's Leggings
+						["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+					}),
+					i(206589, {	-- Drake Racer's Shoulderpads
+						["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+					}),
+				},
+			}),
+		}),
 	},
 }));
