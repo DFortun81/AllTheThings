@@ -1561,9 +1561,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["groups"] = {
 						objective(1, {	-- 0/3 Soran'ruk Fragment
 							["provider"] = { "i", 6914 },	-- Soran'ruk Fragment
+							-- #if BEFORE 6.0.1.18322
+							["cr"] = 4809,	-- Twilight Acolyte
+							-- #endif
 						}),
 						objective(2, {	-- 0/1 Large Soran'ruk Fragment
 							["provider"] = { "i", 6915 },	-- Large Soran'ruk Fragment
+							["cr"] = 3855,	-- Shadowfang Darksoul
 						}),
 						i(6898, {	-- Orb of Soran'ruk
 							["timeline"] = { "removed 4.0.3" },
@@ -1798,10 +1802,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						},
 					}),
 					i(2807),	-- Guillotine Axe
-					i(6915, {	-- Large Soran'ruk Fragment
-						["classes"] = { WARLOCK },
-						["cr"] = 3855,	-- Shadowfang Darksoul
-					}),
 					i(1974),	-- Mindthrust Bracers
 					i(2292, {	-- Necrology Robes
 						["crs"] = {

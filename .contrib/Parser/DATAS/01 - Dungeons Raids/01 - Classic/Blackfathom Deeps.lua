@@ -482,12 +482,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				i(3417),	-- Onyx Claymore
 				i(1491),	-- Ring of Precision
 				i(2034),	-- Scholarly Robes
-				i(6914, {	-- Soran'ruk Fragment
-					["classes"] = { WARLOCK },
-					-- #if BEFORE 6.0.1.18322
-					["cr"] = 4809,	-- Twilight Acolyte
-					-- #endif
-				}),
 				i(2271),	-- Staff of the Blessed Seer
 				i(3415),	-- Staff of the Friar
 				i(1486),	-- Tree Bark Jacket
