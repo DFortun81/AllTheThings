@@ -1667,7 +1667,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					crit(3, {
+					crit(27581, {
 						["achievementID"] = 9825,	-- Master Relic Hunter (A)
 					}),
 				},
@@ -1679,7 +1679,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(3, {
+					crit(27602, {
 						["achievementID"] = 9836,	-- Master Relic Hunter (H)
 					}),
 				},
@@ -1726,7 +1726,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(9, {
+					crit(26254, {
 						["achievementID"] = 9564,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
@@ -1741,7 +1741,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(10, {
+					crit(26239, {
 						["achievementID"] = 9562,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
@@ -1780,7 +1780,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(3, {
+					crit(26247, {
 						["achievementID"] = 9564,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
@@ -1795,7 +1795,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(3, {
+					crit(26228, {
 						["achievementID"] = 9562,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
@@ -1810,7 +1810,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(7, {
+					crit(26252, {
 						["achievementID"] = 9564,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
@@ -1825,7 +1825,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(8, {
+					crit(26237, {
 						["achievementID"] = 9562,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
@@ -1840,7 +1840,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(11, {
+					crit(26256, {
 						["achievementID"] = 9564,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
@@ -1855,7 +1855,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(11, {
+					crit(26240, {
 						["achievementID"] = 9562,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
@@ -1870,7 +1870,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(12, {
+					crit(26258, {
 						["achievementID"] = 9564,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
@@ -1885,7 +1885,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(7, {
+					crit(26242, {
 						["achievementID"] = 9562,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
@@ -1900,7 +1900,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(10, {
+					crit(26255, {
 						["achievementID"] = 9564,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
@@ -1915,7 +1915,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(12, {
+					crit(26243, {
 						["achievementID"] = 9562,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
@@ -1930,7 +1930,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(8, {
+					crit(26253, {
 						["achievementID"] = 9564,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
@@ -1945,7 +1945,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(9, {
+					crit(26238, {
 						["achievementID"] = 9562,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
@@ -1960,7 +1960,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(2, {
+					crit(26245, {
 						["achievementID"] = 9564,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
@@ -1975,7 +1975,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(2, {
+					crit(26226, {
 						["achievementID"] = 9562,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
@@ -1990,7 +1990,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(6, {
+					crit(26250, {
 						["achievementID"] = 9564,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
@@ -2005,7 +2005,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(6, {
+					crit(26233, {
 						["achievementID"] = 9562,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
@@ -2020,7 +2020,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(5, {
+					crit(26249, {
 						["achievementID"] = 9564,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
@@ -2035,7 +2035,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(5, {
+					crit(26232, {
 						["achievementID"] = 9562,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
@@ -2074,7 +2074,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(1, {
+					crit(26244, {
 						["achievementID"] = 9564,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
@@ -2089,7 +2089,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(1, {
+					crit(26225, {
 						["achievementID"] = 9562,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x800
@@ -2104,7 +2104,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 31.4, 31.0, LUNARFALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(4, {
+					crit(26248, {
 						["achievementID"] = 9564,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x1000
@@ -2119,7 +2119,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					{ 41.0, 50.8, FROSTWALL },	-- lvl 3 garrison
 				},
 				["g"] = {
-					crit(4, {
+					crit(26229, {
 						["achievementID"] = 9562,	-- Securing Draenor
 					}),
 					currency(823),	-- Apexis Crystal x1000
@@ -2341,7 +2341,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					crit(2, {
+					crit(27580, {
 						["achievementID"] = 9825,	-- Master Relic Hunter (A)
 					}),
 				},
@@ -2353,7 +2353,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(2, {
+					crit(27601, {
 						["achievementID"] = 9836,	-- Master Relic Hunter (H)
 					}),
 				},
@@ -2528,7 +2528,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					crit(6, {
+					crit(27599, {
 						["achievementID"] = 9825,	-- Master Relic Hunter (A)
 					}),
 				},
@@ -2540,7 +2540,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(6, {
+					crit(27605, {
 						["achievementID"] = 9836,	-- Master Relic Hunter (H)
 					}),
 				},
@@ -2670,7 +2670,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					crit(1, {
+					crit(27579, {
 						["achievementID"] = 9825,	-- Master Relic Hunter (A)
 					}),
 				},
@@ -2682,7 +2682,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(1, {
+					crit(27600, {
 						["achievementID"] = 9836,	-- Master Relic Hunter (H)
 					}),
 				},
@@ -2718,7 +2718,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					crit(4, {
+					crit(27582, {
 						["achievementID"] = 9825,	-- Master Relic Hunter (A)
 					}),
 				},
@@ -2730,7 +2730,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(4, {
+					crit(27603, {
 						["achievementID"] = 9836,	-- Master Relic Hunter (H)
 					}),
 				},
@@ -3105,7 +3105,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					crit(5, {
+					crit(27584, {
 						["achievementID"] = 9825,	-- Master Relic Hunter (A)
 					}),
 				},
@@ -3117,7 +3117,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(5, {
+					crit(27604, {
 						["achievementID"] = 9836,	-- Master Relic Hunter (H)
 					}),
 				},

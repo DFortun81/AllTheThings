@@ -7,139 +7,139 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 		prof(ARCHAEOLOGY, bubbleDownSelf({ ["requireSkill"] = ARCHAEOLOGY }, {
 			ach(10600),	-- Legion Archaeologist
 			ach(10604, {	-- Legion Curator
-				crit(1, {	-- Pristine Imp's Cup
+				crit(29979, {	-- Pristine Imp's Cup
 					["_quests"] = { 40359 },
 				}),
-				crit(2, {	-- Pristine Flayed-Skin Chronicle
+				crit(29980, {	-- Pristine Flayed-Skin Chronicle
 					["_quests"] = { 40360 },
 				}),
-				crit(3, {	-- Pristine Malformed Abyssal
+				crit(29981, {	-- Pristine Malformed Abyssal
 					["_quests"] = { 40361 },
 				}),
-				crit(4, {	-- Pristine Orb of Inner Chaos
+				crit(29982, {	-- Pristine Orb of Inner Chaos
 					["_quests"] = { 40362 },
 				}),
-				crit(5, {	-- Pristine Houndstooth Hauberk
+				crit(29983, {	-- Pristine Houndstooth Hauberk
 					["_quests"] = { 40363 },
 				}),
-				crit(6, {	-- Pristine Violetglass Vessel
+				crit(29984, {	-- Pristine Violetglass Vessel
 					["_quests"] = { 40349 },
 				}),
-				crit(7, {	-- Pristine Inert Leystone Charm
+				crit(29985, {	-- Pristine Inert Leystone Charm
 					["_quests"] = { 40350 },
 				}),
-				crit(8, {	-- Pristine Quietwine Vial
+				crit(29986, {	-- Pristine Quietwine Vial
 					["_quests"] = { 40351 },
 				}),
-				crit(9, {	-- Pristine Pre-War Highborne Tapestry
+				crit(29987, {	-- Pristine Pre-War Highborne Tapestry
 					["_quests"] = { 40352 },
 				}),
-				crit(10, {	-- Pristine Nobleman's Letter Opener
+				crit(29988, {	-- Pristine Nobleman's Letter Opener
 					["_quests"] = { 40353 },
 				}),
-				crit(11, {	-- Pristine Trailhead Drum
+				crit(29989, {	-- Pristine Trailhead Drum
 					["_quests"] = { 40354 },
 				}),
-				crit(12, {	-- Pristine Moosebone Fish-Hook
+				crit(29990, {	-- Pristine Moosebone Fish-Hook
 					["_quests"] = { 40355 },
 				}),
-				crit(13, {	-- Pristine Hand-Smoothed Pyrestone
+				crit(29991, {	-- Pristine Hand-Smoothed Pyrestone
 					["_quests"] = { 40356 },
 				}),
-				crit(14, {	-- Pristine Drogbar Gem-Roller
+				crit(29992, {	-- Pristine Drogbar Gem-Roller
 					["_quests"] = { 40357 },
 				}),
-				crit(15, {	-- Pristine Stonewood Bow
+				crit(29993, {	-- Pristine Stonewood Bow
 					["_quests"] = { 40358 },
 				}),
 			}),
 			ach(10603, {	-- A Keen Eye
-				crit(1, {	-- Corrupted Studies
+				crit(29966, {	-- Corrupted Studies
 					["_quests"] = { 41157 },
 				}),
-				crit(2, {	-- A Beacon of Hope
+				crit(29967, {	-- A Beacon of Hope
 					["_quests"] = { 41173 },
 				}),
-				crit(3, {	-- Neltharion's Lair: Misdirected
+				crit(29968, {	-- Neltharion's Lair: Misdirected
 					["_quests"] = { 41188 },
 				}),
-				crit(4, {	-- Sifting Through the Rubble
+				crit(29969, {	-- Sifting Through the Rubble
 					["_quests"] = { 41176 },
 				}),
-				crit(5, {	-- The Gates of Valor
+				crit(29970, {	-- The Gates of Valor
 					["_quests"] = { 41802 },
 				}),
-				crit(6, {	-- What Once Was Lost
+				crit(29971, {	-- What Once Was Lost
 					["_quests"] = { 41179 },
 				}),
-				crit(7, {	-- The Apocalypse Bringer
+				crit(29972, {	-- The Apocalypse Bringer
 					["_quests"] = { 41163 },
 				}),
-				crit(8, {	-- Uncovering the Orb of Sciallax
+				crit(29973, {	-- Uncovering the Orb of Sciallax
 					["_quests"] = { 41182 },
 				}),
-				crit(9, {	-- Drogbar Deception
+				crit(29974, {	-- Drogbar Deception
 					["_quests"] = { 41191 },
 				}),
-				crit(10, {	-- Dark Secrets
+				crit(29975, {	-- Dark Secrets
 					["_quests"] = { 41166 },
 				}),
-				crit(11, {	-- The Keys to Success
+				crit(29976, {	-- The Keys to Success
 					["_quests"] = { 41185 },
 				}),
-				crit(12, {	-- Darkheart Thicket: Through the Fog
+				crit(29977, {	-- Darkheart Thicket: Through the Fog
 					["_quests"] = { 41169 },
 				}),
-				crit(13, {	-- Laying to Rest
+				crit(29978, {	-- Laying to Rest
 					["_quests"] = { 41193 },
 				}),
 				ach(10602),		-- This Side Up (gets filled with class-wrapped artifacts from Artifacts file)
 				ach(10601),		-- Surveying the Land
 			}),
 			ach(10605, {	-- Handle With Care
-				crit(1, {	-- Imp's Cup
+				crit(29994, {	-- Imp's Cup
 					["provider"] = { "i", 130916 },	-- Imp's Cup
 				}),
-				crit(2, {	-- Flayed-Skin Chronicle
+				crit(29995, {	-- Flayed-Skin Chronicle
 					["provider"] = { "i", 130917 },	-- Flayed-Skin Chronicle
 				}),
-				crit(3, {	-- Malformed Abyssal
+				crit(29996, {	-- Malformed Abyssal
 					["provider"] = { "i", 130918 },	-- Malformed Abyssal
 				}),
-				crit(4, {	-- Orb of Inner Chaos
+				crit(29997, {	-- Orb of Inner Chaos
 					["provider"] = { "i", 130919 },	-- Orb of Inner Chaos
 				}),
-				crit(5, {	-- Houndstooth Hauberk
+				crit(29998, {	-- Houndstooth Hauberk
 					["provider"] = { "i", 130920 },	-- Houndstooth Hauberk
 				}),
-				crit(6, {	-- Violetglass Vessel
+				crit(29999, {	-- Violetglass Vessel
 					["provider"] = { "i", 130906 },	-- Violetglass Vessel
 				}),
-				crit(7, {	-- Inert Leystone Charm
+				crit(30000, {	-- Inert Leystone Charm
 					["provider"] = { "i", 130907 },	-- Inert Leystone Charm
 				}),
-				crit(8, {	-- Quietwine Vial
+				crit(30001, {	-- Quietwine Vial
 					["provider"] = { "i", 130908 },	-- Quietwine Vial
 				}),
-				crit(9, {	-- Pre-War Highborne Tapestry
+				crit(30002, {	-- Pre-War Highborne Tapestry
 					["provider"] = { "i", 130909 },	-- Pre-War Highborne Tapestry
 				}),
-				crit(10, {	-- Nobleman's Letter Opener
+				crit(30003, {	-- Nobleman's Letter Opener
 					["provider"] = { "i", 130910 },	-- Nobleman's Letter Opener
 				}),
-				crit(11, {	-- Trailhead Drum
+				crit(30004, {	-- Trailhead Drum
 					["provider"] = { "i", 130911 },	-- Trailhead Drum
 				}),
-				crit(12, {	-- Moosebone Fish-Hook
+				crit(30005, {	-- Moosebone Fish-Hook
 					["provider"] = { "i", 130912 },	-- Moosebone Fish-Hook
 				}),
-				crit(13, {	-- Hand-Smoothed Pyrestone
+				crit(30006, {	-- Hand-Smoothed Pyrestone
 					["provider"] = { "i", 130913 },	-- Hand-Smoothed Pyrestone
 				}),
-				crit(14, {	-- Drogbar Gem-Roller
+				crit(30007, {	-- Drogbar Gem-Roller
 					["provider"] = { "i", 130914 },	-- Drogbar Gem-Roller
 				}),
-				crit(15, {	-- Stonewood Bow
+				crit(30008, {	-- Stonewood Bow
 					["provider"] = { "i", 130915 },	-- Stonewood Bow
 				}),
 			}),
@@ -589,75 +589,75 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 				["maps"] = { AZSUNA, VALSHARAH, HIGHMOUNTAIN, STORMHEIM, BROKEN_SHORE, SURAMAR, BROKEN_ISLES },
 			}),
 			ach(10596, {	-- Bigger Fish to Fry
-				crit(1, {	-- Ancient Black Barracuda
+				crit(29912, {	-- Ancient Black Barracuda
 					["maps"] = { AZSUNA, VALSHARAH, HIGHMOUNTAIN, STORMHEIM, BROKEN_SHORE, SURAMAR, BROKEN_ISLES },
 					["provider"] = { "i", 133742 },
 				}),
-				crit(2, {	-- Ancient Highmountain Salmon
+				crit(29909, {	-- Ancient Highmountain Salmon
 					["maps"] = { HIGHMOUNTAIN },
 					["provider"] = { "i", 133733 },
 				}),
-				crit(3, {	-- Ancient Mossgill
+				crit(29921, {	-- Ancient Mossgill
 					["maps"] = { VALSHARAH },
 					["provider"] = { "i", 133730 },
 				}),
-				crit(4, {	-- Axefish
+				crit(29910, {	-- Axefish
 					["maps"] = { AZSUNA },
 					["provider"] = { "i", 133740 },
 				}),
-				crit(5, {	-- Coldriver Carp
+				crit(29908, {	-- Coldriver Carp
 					["maps"] = { HIGHMOUNTAIN },
 					["provider"] = { "i", 133732 },
 				}),
-				crit(6, {	-- Ghostly Queenfish
+				crit(29905, {	-- Ghostly Queenfish
 					["maps"] = { AZSUNA },
 					["provider"] = { "i", 133727 },
 				}),
-				crit(7, {	-- Graybelly Lobster
+				crit(29914, {	-- Graybelly Lobster
 					["maps"] = { STORMHEIM },
 					["provider"] = { "i", 133735 },
 				}),
-				crit(8, {	-- Leyshimmer Blenny
+				crit(29903, {	-- Leyshimmer Blenny
 					["maps"] = { AZSUNA, VALSHARAH, HIGHMOUNTAIN, STORMHEIM, BROKEN_SHORE, SURAMAR, BROKEN_ISLES },
 					["provider"] = { "i", 133725 },
 				}),
-				crit(9, {	-- Magic-Eater Frog
+				crit(29916, {	-- Magic-Eater Frog
 					["maps"] = { SURAMAR },
 					["provider"] = { "i", 133737 },
 				}),
-				crit(10, {	-- Mountain Puffer
+				crit(29907, {	-- Mountain Puffer
 					["maps"] = { HIGHMOUNTAIN },
 					["provider"] = { "i", 133731 },
 				}),
-				crit(11, {	-- Nar'thalas Hermit
+				crit(29904, {	-- Nar'thalas Hermit
 					["maps"] = { AZSUNA },
 					["provider"] = { "i", 133726 },
 				}),
-				crit(12, {	-- Oodelfjisk
+				crit(29913, {	-- Oodelfjisk
 					["maps"] = { STORMHEIM },
 					["provider"] = { "i", 133734 },
 				}),
-				crit(13, {	-- Seabottom Squid
+				crit(29911, {	-- Seabottom Squid
 					["maps"] = { AZSUNA, VALSHARAH, HIGHMOUNTAIN, STORMHEIM, BROKEN_SHORE, SURAMAR, BROKEN_ISLES },
 					["provider"] = { "i", 133741 },
 				}),
-				crit(14, {	-- Tainted Runescale Koi
+				crit(29918, {	-- Tainted Runescale Koi
 					["maps"] = { SURAMAR },
 					["provider"] = { "i", 133739 },
 				}),
-				crit(15, {	-- Thundering Stormray
+				crit(29915, {	-- Thundering Stormray
 					["maps"] = { STORMHEIM },
 					["provider"] = { "i", 133736 },
 				}),
-				crit(16, {	-- Seerspine Puffer
+				crit(29917, {	-- Seerspine Puffer
 					["maps"] = { SURAMAR },
 					["provider"] = { "i", 133738 },
 				}),
-				crit(17, {	-- Terrorfin
+				crit(29919, {	-- Terrorfin
 					["maps"] = { VALSHARAH },
 					["provider"] = { "i", 133728 },
 				}),
-				crit(18, {	-- Thorned Flounder
+				crit(29920, {	-- Thorned Flounder
 					["maps"] = { VALSHARAH },
 					["provider"] = { "i", 133729 },
 				}),
@@ -666,97 +666,97 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 				["description"] = "The Fishing Masters are on a daily rotation, so only one is up at a time.  The order is:\n\n1. Sha'leth\n2. Impus\n3. Ilyssia of the Waters\n4. Keeper Raynae\n5. Akule Riverhorn\n6. Corbyn\n\nMake sure you're close enough to the Fishing Master to get the |cFFFFD700Something's Fishy|r buff, or you won't be able to fish up the items (the buff may not show up until you dismount).\n\nThe quickest way to reach Best Friend is to fish in a group.\n",
 				["g"] = {
 					i(152583),	-- Underlight Emerald
-					crit(1, {	-- Ilyssia of the Waters
+					crit(36343, {	-- Ilyssia of the Waters
 						["_npcs"] = { 120266 },
 					}),
-					crit(2, {	-- Corbyn
+					crit(36344, {	-- Corbyn
 						["_npcs"] = { 120458 },
 					}),
-					crit(3, {	-- Akule Riverhorn
+					crit(36345, {	-- Akule Riverhorn
 						["_npcs"] = { 120457 },
 					}),
-					crit(4, {	-- Impus
+					crit(36346, {	-- Impus
 						["_npcs"] = { 120460 },
 					}),
-					crit(5, {	-- Sha'leth
+					crit(36347, {	-- Sha'leth
 						["_npcs"] = { 120459 },
 					}),
-					crit(6, {	-- Keeper Raynae
+					crit(36348, {	-- Keeper Raynae
 						["_npcs"] = { 120456 },
 					}),
 				},
 			}),
 			ach(10598, {	-- Fishing 'Round the Isles
-				crit(1, {		-- Huge Mossgill Perch
+				crit(29956, {		-- Huge Mossgill Perch
 					["_quests"] = { 41612, 41613, 41270 },
 				}),
-				crit(2, {		-- Work Order: Cursed Queenfish
+				crit(29931, {		-- Work Order: Cursed Queenfish
 					["_quests"] = { 41267 },
 				}),
-				crit(3, {		-- Lively Runescale Koi
+				crit(31285, {		-- Lively Runescale Koi
 					["_quests"] = { 41279, 41605, 41604 },
 				}),
-				crit(4, {		-- Lively Cursed Queenfish
+				crit(31274, {		-- Lively Cursed Queenfish
 					["_quests"] = { 41598, 41599, 41264 },
 				}),
-				crit(5, {		-- Queen Queenfish
+				crit(29929, {		-- Queen Queenfish
 					["_quests"] = { 41268 },
 				}),
-				crit(6, {		-- Wild Northern Barracuda
+				crit(29932, {		-- Wild Northern Barracuda
 					["_quests"] = { 41252 },
 				}),
-				crit(7, {		-- Huge Cursed Queenfish
+				crit(29945, {		-- Huge Cursed Queenfish
 					["_quests"] = { 41611, 41265, 41610 },
 				}),
-				crit(8, {		-- Huge Runescale Koi
+				crit(29953, {		-- Huge Runescale Koi
 					["_quests"] = { 41280, 41616, 41617 },
 				}),
-				crit(9, {		-- Lively Highmountain Salmon
+				crit(31279, {		-- Lively Highmountain Salmon
 					["_quests"] = { 41596, 41244, 41597 },
 				}),
-				crit(10, {		-- Lively Stormrays
+				crit(31281, {		-- Lively Stormrays
 					["_quests"] = { 41602, 41274, 41603 },
 				}),
-				crit(11, {		-- Huge Highmountain Salmon
+				crit(29949, {		-- Huge Highmountain Salmon
 					["_quests"] = { 41609, 41243 },
 				}),
-				crit(12, {		-- Buoy Fishing
+				crit(29942, {		-- Buoy Fishing
 					["_quests"] = { 41273 },
 				}),
-				crit(13, {		-- Raft Fishing
+				crit(29930, {		-- Raft Fishing
 					["_quests"] = { 41266 },
 				}),
-				crit(14, {		-- Huge Stormrays
+				crit(29950, {		-- Huge Stormrays
 					["_quests"] = { 41614, 41275, 41615 },
 				}),
-				crit(15, {		-- Slippery Stormrays
+				crit(29935, {		-- Slippery Stormrays
 					["_quests"] = { 41278 },
 				}),
-				crit(16, {		-- Cave Fishing
+				crit(29941, {		-- Cave Fishing
 					["_quests"] = { 41271 },	-- Into the Whirlpool
 				}),
-				crit(17, {		-- Work Order: Stormrays
+				crit(29937, {		-- Work Order: Stormrays
 					["_quests"] = { 41277 },
 				}),
-				crit(18, {		-- Work Order: Highmountain Salmon
+				crit(29934, {		-- Work Order: Highmountain Salmon
 					["_quests"] = { 41240 },
 				}),
-				crit(19, {		-- Lively Mossgill Perch
+				crit(31287, {		-- Lively Mossgill Perch
 					["_quests"] = { 41601, 41600, 41269 },
 				}),
-				crit(20, {		-- Migrating Highmountain Salmon
+				crit(29933, {		-- Migrating Highmountain Salmon
 					["_quests"] = { 41253 },
 				}),
-				crit(21, {		-- Rocket Boot Fishing
+				crit(29936, {		-- Rocket Boot Fishing
 					["_quests"] = { 41276 },
 				}),
-				crit(22, {		-- Work Order: Mossgill Perch
+				crit(29943, {		-- Work Order: Mossgill Perch
 					["_quests"] = { 41272 },
 				}),
-				crit(23, {		-- Work Order: Runescale Koi
+				crit(29940, {		-- Work Order: Runescale Koi
 					["_quests"] = { 41282 },
 				}),
-				crit(24, {		-- The Angler Mangler
+				crit(29938, {		-- The Angler Mangler
 					["_quests"] = { 41283 },
 				}),
 			}),
