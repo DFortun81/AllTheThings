@@ -24,7 +24,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 40.5, 85.7, VOLDUN },
 			}),
 			o(287324, {	-- Excavator's Greed
-				["objectID"] = 287324,	-- Excavator's Greed
 				["questID"] = 51136,
 				["coord"] = { 57.6, 64.6, VOLDUN },
 			}),

@@ -241,43 +241,43 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			ach(13064, {	-- Drust the Facts, Ma'am
 				crit(1, {	-- Drust Stele: The Circle
 					["coord"] = { 36.8, 64.5, DRUSTVAR },
-					["objectID"] = 296915,
+					["provider"] = {"o",296915},
 				}),
 				crit(2, {	-- Drust Stele: The Ritual
 					["coord"] = { 50.8, 73.7, DRUSTVAR },
-					["objectID"] = 296916,
+					["provider"] = {"o",296916},
 				}),
 				crit(3, {	-- Drust Stele: The Tree
 					["coord"] = { 27.3, 48.3, DRUSTVAR },
-					["objectID"] = 296917,
+					["provider"] = {"o",296917},
 				}),
 				crit(4, {	-- Drust Stele: Breath Into Stone
 					["coord"] = { 59.5, 66.7, DRUSTVAR },
-					["objectID"] = 296918,
+					["provider"] = {"o",296918},
 				}),
 				crit(5, {	-- Drust Stele: Sacrifice
 					["coord"] = { 27.6, 57.6, DRUSTVAR },
-					["objectID"] = 297627,
+					["provider"] = {"o",297627},
 				}),
 				crit(6, {	-- Drust Stele: Constructs
 					["coord"] = { 50.2, 42.5, DRUSTVAR },
-					["objectID"] = 297628,
+					["provider"] = {"o",297628},
 				}),
 				crit(7, {	-- Drust Stele: The Cycle
 					["coord"] = { 19.0, 57.9, DRUSTVAR },
-					["objectID"] = 297629,
+					["provider"] = {"o",297629},
 				}),
 				crit(8, {	-- Drust Stele: Conflict
 					["coord"] = { 46.5, 37.3, DRUSTVAR },
-					["objectID"] = 297630,
+					["provider"] = {"o",297630},
 				}),
 				crit(9, {	-- Drust Stele: The Flayed Man
 					["coord"] = { 56.6, 86.0, DRUSTVAR },
-					["objectID"] = 297631,
+					["provider"] = {"o",297631},
 				}),
 				crit(10, {	-- Drust Stele: Protectors of the Forest
 					["coord"] = { 44.6, 45.7, DRUSTVAR },
-					["objectID"] = 297632,
+					["provider"] = {"o",297632},
 				}),
 			}),
 			explorationAch(12557),	-- Explore Drustvar

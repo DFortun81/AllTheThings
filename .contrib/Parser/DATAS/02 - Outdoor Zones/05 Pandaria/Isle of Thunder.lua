@@ -58,22 +58,22 @@ root(ROOTS.Zones, {
 						["achievementID"] = 8051,
 						["groups"] = {
 							{
-								["objectID"] = 218435,	-- Agents of Order
+								["provider"] = {"o",218435},	-- Agents of Order
 								["criteriaID"] = 22717,
 								["coord"] = { 35.8, 54.7, ISLE_OF_THUNDER },
 							},
 							{
-								["objectID"] = 218436,	-- Shadow, Storm, and Stone
+								["provider"] = {"o",218436},	-- Shadow, Storm, and Stone
 								["criteriaID"] = 22718,
 								["coord"] = { 59.3, 26.3, ISLE_OF_THUNDER },
 							},
 							{
-								["objectID"] = 218437,	-- The Curse and the Silence
+								["provider"] = {"o",218437},	-- The Curse and the Silence
 								["criteriaID"] = 22719,
 								["coord"] = { 49.9, 20.4, ISLE_OF_THUNDER },
 							},
 							{
-								["objectID"] = 218438,	-- Age of a Hundred Kings
+								["provider"] = {"o",218438},	-- Age of a Hundred Kings
 								["criteriaID"] = 22720,
 								["coord"] = { 62.5, 37.8, ISLE_OF_THUNDER },
 							},
@@ -102,22 +102,22 @@ root(ROOTS.Zones, {
 					ach(8107),	-- Ready for RAAAAIIIIDDD?!?ing
 					ach(8050, {	-- Rumbles of Thunder
 						{
-							["objectID"] = 218431,	-- Lei Shen
+							["provider"] = {"o",218431},	-- Lei Shen
 							["criteriaID"] = 22713,
 							["coord"] = { 40.2, 40.7, ISLE_OF_THUNDER },
 						},
 						{
-							["objectID"] = 218432,	-- The Sacred Mount
+							["provider"] = {"o",218432},	-- The Sacred Mount
 							["criteriaID"] = 22714,
 							["coord"] = { 47.1, 59.9, ISLE_OF_THUNDER },
 						},
 						{
-							["objectID"] = 218433,	-- Unity at a Price
+							["provider"] = {"o",218433},	-- Unity at a Price
 							["criteriaID"] = 22715,
 							["coord"] = { 34.9, 65.6, ISLE_OF_THUNDER },
 						},
 						{
-							["objectID"] = 218434,	-- The Pandaren Problem
+							["provider"] = {"o",218434},	-- The Pandaren Problem
 							["criteriaID"] = 22716,
 							["coord"] = { 60.7, 68.8, ISLE_OF_THUNDER },
 						},
@@ -125,22 +125,22 @@ root(ROOTS.Zones, {
 					ach(8115),	-- Speed Metal
 					ach(8049, {	-- The Zandalari Prophecy
 						{
-							["objectID"] = 218427,	-- Coming of Age
+							["provider"] = {"o",218427},	-- Coming of Age
 							["criteriaID"] = 22708,
 							["coord"] = { 35.4, 70.2, ISLE_OF_THUNDER },
 						},
 						{
-							["objectID"] = 218428,	-- For Council and King
+							["provider"] = {"o",218428},	-- For Council and King
 							["criteriaID"] = 22709,
 							["coord"] = { 66.0, 44.7, ISLE_OF_THUNDER },
 						},
 						{
-							["objectID"] = 218429,	-- Shadows of the Loa
+							["provider"] = {"o",218429},	-- Shadows of the Loa
 							["criteriaID"] = 22710,
 							["coord"] = { 36.3, 70.1, ISLE_OF_THUNDER },
 						},
 						{
-							["objectID"] = 218430,	-- The Dark Prophet Zul
+							["provider"] = {"o",218430},	-- The Dark Prophet Zul
 							["criteriaID"] = 22711,
 							["coord"] = { 52.6, 41.4, ISLE_OF_THUNDER },
 						},

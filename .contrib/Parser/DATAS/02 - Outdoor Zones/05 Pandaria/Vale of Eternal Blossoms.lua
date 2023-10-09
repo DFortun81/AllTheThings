@@ -29,7 +29,7 @@ root(ROOTS.Zones, {
 						["collectible"] = false,
 						["g"] = {
 							crit(19665, {	-- The Thunder King
-								["objectID"] = 213334,
+								["provider"] = {"o",213334},
 								["coord"] = { 40.1, 75.6, VALE_OF_ETERNAL_BLOSSOMS },
 							}),
 						},

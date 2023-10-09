@@ -115,7 +115,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		q(55662, {	-- Arcane Cache (A)
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
-		--	["objectID"] = ,	-- Arcane Cache — unknown, not linked to quest
+			["provider"] = {"o",325894},	-- Arcane Cache
 			["isDaily"] = true,
 			["coord"] = { 53.1, 28.3, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
@@ -634,7 +634,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		q(55681, {	-- Crab Marks The Spot
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
-		--	["objectID"] = ,	-- Illegible Treasure Map (unknown ID, not linked to quest)
+			["provider"] = {"o",325954},	-- Illegible Treasure Map
 			["isDaily"] = true,
 			["coord"] = { 43.8, 54.5, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
@@ -1243,7 +1243,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		q(55845, {	-- Plans of Attack
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
-		--	["objectID"] = ,	-- Naga Attack Plans (unknown ID, not linked to quest)
+			["provider"] = {"o",326148},	-- Naga Attack Plans
 			["isDaily"] = true,
 			["coord"] = { 37.2, 19.2, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
@@ -2335,7 +2335,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		q(55774, {	-- WANTED: Inquisitor Ithriza (A)
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade (maybe add 57041 for selecting Farseer Ori for the day?)
 			["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
-		--	["objectID"] = ,	-- Bounty Board (unknown objectID, not linked to quest)
+			["provider"] = {"o",326141},	-- Bounty Board
 			["isDaily"] = true,
 			["coord"] = { 39.2, 54.1, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,

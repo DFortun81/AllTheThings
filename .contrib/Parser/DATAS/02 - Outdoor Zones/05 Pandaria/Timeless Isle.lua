@@ -646,25 +646,25 @@ root(ROOTS.Zones, {
 					ach(8726),	-- Extreme Treasure Hunter
 					ach(8725, {	-- Eyes On The Ground
 						crit(24011, { 	-- Giant Clam
-							["objectID"] = 223193,
+							["provider"] = {"o",223193},
 						}),
 						crit(24012, {	-- Glinting Sand
-							["objectID"] = 222684,
+							["provider"] = {"o",222684},
 						}),
 						crit(24013, {	-- Crane Nest
-							["objectID"] = 222685,
+							["provider"] = {"o",222685},
 						}),
 						crit(24014, {	-- Eerie Crystal
-							["objectID"] = 222686,
+							["provider"] = {"o",222686},
 						}),
 						crit(24015, {	-- Ordon Supplies
-							["objectID"] = 222687,
+							["provider"] = {"o",222687},
 						}),
 						crit(24016, {	-- Firestorm Egg
-							["objectID"] = 222688,
+							["provider"] = {"o",222688},
 						}),
 						crit(24017, {	-- Fiery Altar of Ordos
-							["objectID"] = 222689,
+							["provider"] = {"o",222689},
 						}),
 					}),
 					ach(8728, {	-- Going to Need a Bigger Bag

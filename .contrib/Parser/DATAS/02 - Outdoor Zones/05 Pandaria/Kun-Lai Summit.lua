@@ -312,7 +312,7 @@ root(ROOTS.Zones, {
 					}),
 					ach(6754, {	-- The Dark Heart of the Mogu
 						crit(19662, {	-- Valley of the Emperors (Kun-Lai Summit)
-							["objectID"] = 213331,	-- Valley of the Emperors
+							["provider"] = {"o",213331},	-- Valley of the Emperors
 							["coord"] = { 53.0, 46.58, KUN_LAI_SUMMIT },
 							["description"] = "The scroll is in the first big room."
 						}),

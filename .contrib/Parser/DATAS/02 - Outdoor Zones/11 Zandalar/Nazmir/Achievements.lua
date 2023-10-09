@@ -119,29 +119,29 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			}),
 			ach(13024, {	-- Carved in Stone, Written in Blood
 				crit(1, {	-- Ancient Nazmani Tablet
-					["objectID"] = 298921,	-- Ancient Nazmani Tablet
+					["provider"] = {"o",298921},	-- Ancient Nazmani Tablet
 					["coord"] = { 56.3, 57.3, NAZMIR },
 					["icon"] = "Interface\\Icons\\inv_misc_rune_11",
 				}),
 				crit(2, {	-- Weathered Nazmani Tablet
-					["objectID"] = 298963,	-- Weathered Nazmani Tablet
+					["provider"] = {"o",298963},	-- Weathered Nazmani Tablet
 					["coord"] = { 43.4, 48.1, NAZMIR },
 					["icon"] = "Interface\\Icons\\inv_misc_rune_11",
 				}),
 				crit(3, {	-- Cracked Tablet
-					["objectID"] = 298965,	-- Cracked Tablet
+					["provider"] = {"o",298965},	-- Cracked Tablet
 					["coord"] = { 51.2, 85.1, NAZMIR },
 					["icon"] = "Interface\\Icons\\inv_misc_rune_11",
 				}),
 				crit(4, {	-- Fractured Tablet
-					["objectID"] = 299073,	-- Fractured Tablet
+					["provider"] = {"o",299073},	-- Fractured Tablet
 					["coord"] = { 42.6, 57.1, NAZMIR },
 					["icon"] = "Interface\\Icons\\inv_misc_rune_11",
 				}),
 			}),
 			ach(12588, {	-- Eat Your Greens
 				crit(1, {	-- Saurolisk Tail
-					["objectID"] = 291233,	-- Saurolisk Tail
+					["provider"] = {"o",291233},	-- Saurolisk Tail
 					["coords"] = {
 						{ 30.3, 52.7, NAZMIR },
 						{ 30.1, 39.7, NAZMIR },
@@ -150,7 +150,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					["icon"] = "Interface\\Icons\\inv_misc_herb_whiptail",
 				}),
 				crit(2, {	-- Bwonsamdi's Tears
-					["objectID"] = 291238,	-- Bwonsamdi's Tears
+					["provider"] = {"o",291238},	-- Bwonsamdi's Tears
 					["coords"] = {
 						{ 55.6, 74.7, NAZMIR },
 						{ 46.1, 71.9, NAZMIR },
@@ -158,7 +158,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					["icon"] = "Interface\\Icons\\inv_misc_herb_riverbud",
 				}),
 				crit(3, {	-- Gnarl Root
-					["objectID"] = 291241,	-- Gnarl Root
+					["provider"] = {"o",291241},	-- Gnarl Root
 					["coords"] = {
 						{ 28.0, 35.3, NAZMIR },
 						{ 35.2, 66.4, NAZMIR },
@@ -167,7 +167,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					["icon"] = "Interface\\Icons\\inv_misc_herb_07",
 				}),
 				crit(4, {	-- Sapphire Amaraina
-					["objectID"] = 292812,	-- Sapphire Amaraina
+					["provider"] = {"o",292812},	-- Sapphire Amaraina
 					["coords"] = {
 						{ 73.7, 39.7, NAZMIR },
 						{ 81.9, 55.9, NAZMIR },
@@ -175,7 +175,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					["icon"] = "Interface\\Icons\\inv_misc_herb_taladororchid",
 				}),
 				crit(5, {	-- Krag'wa's Ire
-					["objectID"] = 292823,	-- Krag'wa's Ire
+					["provider"] = {"o",292823},	-- Krag'wa's Ire
 					["coords"] = {
 						{ 52.6, 35.8, NAZMIR },
 						{ 50.4, 39.7, NAZMIR },
@@ -183,7 +183,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					["icon"] = "Interface\\Icons\\inv_misc_herb_talandrasrose_petal",
 				}),
 				crit(6, {	-- Stonebloom
-					["objectID"] = 292825,	-- Stonebloom
+					["provider"] = {"o",292825},	-- Stonebloom
 					["coords"] = {
 						{ 54.5, 56.1, NAZMIR },
 						{ 55.4, 67.1, NAZMIR },

@@ -12,23 +12,23 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["g"] = {
 					crit(58814, {    -- Im'bunata's Blessing
 						["coord"] = { 56.7, 70.4, THE_AZURE_SPAN },
-						["objectID"] = 381711,
+						["provider"] = {"o",381711},
 					}),
 					crit(58815, {    -- A Solid Foundation
 						["coord"] = { 8.0, 45.6, THE_AZURE_SPAN },
-						["objectID"] = 381713,
+						["provider"] = {"o",381713},
 					}),
 					crit(58816, {    -- Attention: Immediate Evacuation
 						["coord"] = { 66.4, 61.1, THE_AZURE_SPAN },
-						["objectID"] = 381715,
+						["provider"] = {"o",381715},
 					}),
 					crit(58817, {    -- The Vow
 						["coord"] = { 60.3, 49.7, THE_AZURE_SPAN },
-						["objectID"] = 381718,
+						["provider"] = {"o",381718},
 					}),
 					crit(58818, {    -- Vakthros Maintenance
 						["coord"] = { 77.4, 31.1, THE_AZURE_SPAN},
-						["objectID"] = 381722,
+						["provider"] = {"o",381722},
 					}),
 				},
 			}),

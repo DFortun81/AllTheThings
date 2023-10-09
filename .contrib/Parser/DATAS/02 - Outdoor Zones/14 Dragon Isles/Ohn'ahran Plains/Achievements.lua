@@ -12,23 +12,23 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["g"] = {
 					crit(58809, {    -- The Gnoll Wars
 						["coord"] = { 43.5, 56.5, OHNAHRAN_PLAINS },
-						["objectID"] = 381705,
+						["provider"] = {"o",381705},
 					}),
 					crit(58810, {    -- Your Dreamer
 						["coord"] = { 24.7, 65.9, OHNAHRAN_PLAINS },
-						["objectID"] = 381706,
+						["provider"] = {"o",381706},
 					}),
 					crit(58811, {    -- Dreams in Emerald
 						["coord"] = { 32.3, 51.3, OHNAHRAN_PLAINS },
-						["objectID"] = 381707,
+						["provider"] = {"o",381707},
 					}),
 					crit(58812, {    -- The First Kurnal
 						["coord"] = { 67.0, 43.7, OHNAHRAN_PLAINS },
-						["objectID"] = 381708,
+						["provider"] = {"o",381708},
 					}),
 					crit(58813, {    -- Wind, Wood, Water
 						["coord"] = { 38.6, 66.7, OHNAHRAN_PLAINS },
-						["objectID"] = 381709,
+						["provider"] = {"o",381709},
 					}),
 				},
 			}),
