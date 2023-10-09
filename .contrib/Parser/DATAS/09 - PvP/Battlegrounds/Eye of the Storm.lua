@@ -56,6 +56,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				ach(587, {	-- Stormy Assassin
 					["timeline"] = { "added 3.0.1" },
+					["groups"] ={
+						crit(441),	-- Kill 5 people at the Blood Elf Tower
+						crit(442),	-- Kill 5 people at the Draenei Ruins
+						crit(443),	-- Kill 5 people at the Fel Reaver ruins
+						crit(444),	-- Kill 5 people at the Mage Tower
+					},
 				}),
 				ach(1258, {	-- Take a Chill Pill
 					["timeline"] = { "added 3.0.1" },

@@ -189,6 +189,21 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				ach(582, {	-- Alterac Valley All-Star
 					["timeline"] = { "added 3.0.1" },
+					["groups"] = {
+						--#if ANYCLASSIC
+						crit(421),	-- Assault a graveyard
+						crit(422),	-- Defend a graveyard
+						crit(423),	-- Assault a tower
+						crit(424),	-- Defend a tower
+						crit(425),	-- Kill someone in the Field of Strife
+						--#else
+						crit(46724),	-- Assault a graveyard
+						crit(46729),	-- Defend a graveyard
+						crit(46728),	-- Assault a tower
+						crit(46727),	-- Defend a tower
+						crit(46726),	-- Kill someone in the Field of Strife
+						--#endif
+					},
 				}),
 				ach(706, {	-- Frostwolf Howler
 					["provider"] = { "i", 19029 },	-- Horn of the Frostwolf Howler
