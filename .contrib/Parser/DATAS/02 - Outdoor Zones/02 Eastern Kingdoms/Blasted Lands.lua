@@ -1028,7 +1028,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Imprisoned Doomguard
-							["provider"] = { "i", 18605 },	-- Imprisoned Doomguard
+							["providers"] = {
+								{ "i",  18605 },	-- Imprisoned Doomguard
+								{ "o", 179644 },	-- Imprisoned Doomguard
+							},
 							["cost"] = { { "i", 18601, 1 } },	-- Glowing Crystal Prison
 							["cr"] = 12396,	-- Doomguard Commander
 						}),
