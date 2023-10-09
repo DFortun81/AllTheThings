@@ -16,10 +16,10 @@ root(ROOTS.PVP, pvp(n(-240, {	-- Rated
 		i(123950),	-- Plans: Demonsteel Pauldrons [Rank 3] (RECIPE!)
 	})),
 	i(103533, {	-- Vicious Saddle
-		-- #if AFTER SHADOWLANDS
+		-- #if AFTER 10.0.2
 		["description"] = "Offered as Season Reward Cap after you received your Seasonal Mount, up to 10 times per Season. " ..
 			"Any win (3 round wins or more for Solo Shuffle) above 1000 rating will reward:\n10 points in 2v2 (0.42%)\n30 points in 3v3 (1.25%)\n50 points in Solo Shuffle (2.08%)\n60 points in RBG (2.5%)",
-		-- else
+		-- #else
 		["description"] = "Offered as Season Reward Cap after you received your Seasonal Mount, up to 10 times per Season. " ..
 			"Any win above 1000 rating will reward:\n10 points in 2v2 (0.42%)\n30 points in 3v3 (1.25%)\n60 points in RBG (2.5%)",
 		-- #endif
