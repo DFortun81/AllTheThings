@@ -31,7 +31,7 @@ EASTERN_KINGDOMS_CUP_HEADER = createHeader({
 	readable = "Eastern Kingdoms Cup",
 	constant = "EASTERN_KINGDOMS_CUP_HEADER",
 	icon = [[~_.asset("Holiday_EastCup")]],
-	eventID = 1400,
+	eventID = EVENTS.EASTERN_KINGDOMS_CUP,
 	--[[
 	eventSchedule = {
 		0, -- Likely Recurring, not yet tho
