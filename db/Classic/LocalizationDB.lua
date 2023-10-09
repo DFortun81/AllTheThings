@@ -288,9 +288,9 @@ localize(L.HEADER_NAMES, {
 	[-1000221] = "Collector's Edition",
 	[-1000238] = "iCoke",
 	[-1000239] =  AUCTION_CATEGORY_MISCELLANEOUS,
-	[-1000244] = "Ensembles",
-	[-1000245] = "Arsenals",
-	[-1000246] = "Sourceless",
+	[-1000245] = "Ensembles",
+	[-1000246] = "Arsenals",
+	[-1000247] = "Sourceless",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000014] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -312,7 +312,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000215] = "The Silithyst Must Flow is the name of the world PvP event in Silithus, where players of both factions must try and secure as much Silithyst as possible. Silithyst is a red crystalline dust that reaches the surface through geysers exclusive to the Silithus desert. Both the Alliance and the Horde have taken an interest in this new substance, and researchers on both sides have discovered unique and valuable properties in the dust. The Horde and Alliance camps in the region have both been outfitted with turn-in stations where players can unload the Silithyst they collect.",
 	[-1000238] = "These were only available through the 2006 iCoke Promotion (China Only)",
 	[-1000239] = "This section is for miscellaneous promotions that took place in the real world or something to do with account management.",
-	[-1000246] = "This Category contains Things that probably exist in the game but no known source.",
+	[-1000247] = "This Category contains Things that probably exist in the game but no known source.",
 });
 localize(L.HEADER_LORE, {
 	[-1000046] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -416,9 +416,9 @@ localize(L.HEADER_ICONS, {
 	[-1000221] = _.asset("Promotion_Collector"),
 	[-1000238] = "Interface/Icons/Inv_drink_10",
 	[-1000239] = "Interface/Icons/Spell_Misc_Drink",
-	[-1000244] = "Interface/Icons/inv_chest_leather_08",
-	[-1000245] = "Interface/Icons/inv_mace_1h_bastionquest_b_02",
-	[-1000246] = "Interface/Icons/inv_misc_questionmark",
+	[-1000245] = "Interface/Icons/inv_chest_leather_08",
+	[-1000246] = "Interface/Icons/inv_mace_1h_bastionquest_b_02",
+	[-1000247] = "Interface/Icons/inv_misc_questionmark",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000175] = 201,
@@ -450,7 +450,6 @@ _.Modules.Events.SetEventInformation(141, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=2,["year"]=2024},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=5,["year"]=2025})
 });
 _.Modules.Events.SetEventInformation(479, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=6,["weekday"]=1,["year"]=2023},{["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=13,["weekday"]=1,["year"]=2023},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=3,["weekday"]=1,["year"]=2023},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=10,["weekday"]=1,["year"]=2023},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=1,["weekday"]=1,["year"]=2023},{["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=8,["weekday"]=1,["year"]=2023},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=5,["weekday"]=1,["year"]=2023},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=12,["weekday"]=1,["year"]=2023},{["remappedID"]=374}),
@@ -460,7 +459,8 @@ _.Modules.Events.SetEventInformation(479, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=3,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=10,["weekday"]=1,["year"]=2024},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=7,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=14,["weekday"]=1,["year"]=2024},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=5,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=12,["weekday"]=1,["year"]=2024},{["remappedID"]=374}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=2,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=9,["weekday"]=1,["year"]=2024},{["remappedID"]=375})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=2,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=9,["weekday"]=1,["year"]=2024},{["remappedID"]=375}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=7,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=14,["weekday"]=1,["year"]=2024},{["remappedID"]=374})
 });
 _.Modules.Events.SetEventInformation(201, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=1,["year"]=2022},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=7,["year"]=2022}),
@@ -4396,7 +4396,7 @@ localize(L.HEADER_NAMES, {
 	[-1000213] = "Скипетр Зыбучих песков",
 	[-1000214] = "Вторжение Плети",
 	[-1000221] = "Коллекционное издание",
-	[-1000246] = "Без Источника",
+	[-1000247] = "Без Источника",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000023] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",
@@ -4851,7 +4851,7 @@ localize(L.HEADER_NAMES, {
 	[-1000220] = "暴雪嘉年华",
 	[-1000221] = "典藏版",
 	[-1000238] = "可口可乐活动",
-	[-1000246] = "无来源",
+	[-1000247] = "无来源",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000023] = "你可能需要在特定的节日活动中才能完成本节中的事物。",

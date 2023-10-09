@@ -440,9 +440,9 @@ localize(L.HEADER_NAMES, {
 	[-1000241] = REFER_A_FRIEND,
 	[-1000243] = "Spirit of Competition",
 	[-1000244] = BATTLE_PET_SOURCE_9,
-	[-1000246] = "Ensembles",
-	[-1000247] = "Arsenals",
-	[-1000248] = "Sourceless",
+	[-1000247] = "Ensembles",
+	[-1000248] = "Arsenals",
+	[-1000249] = "Sourceless",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000014] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -471,7 +471,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000239] = "These were only available through the 2006 iCoke Promotion (China Only)",
 	[-1000240] = "This section is for miscellaneous promotions that took place in the real world or something to do with account management.",
 	[-1000243] = "This is a Battlegrounds-based event that coincides with the beginning of the Summer Olympic games. The only time this was celebrated was in 2008 to correspond to the Beijing Olympics, and although there appeared to be the intention to repeat this event, it never returned.",
-	[-1000248] = "This Category contains Things that probably exist in the game but no known source.",
+	[-1000249] = "This Category contains Things that probably exist in the game but no known source.",
 });
 localize(L.HEADER_LORE, {
 	[-1000046] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -597,9 +597,9 @@ localize(L.HEADER_ICONS, {
 	[-1000241] = _.asset("achievement_reputation_08"),
 	[-1000243] = "Interface/Icons/inv_jewelry_amulet_03",
 	[-1000244] = "Interface/Icons/inv_misc_ticket_tarot_stack_01",
-	[-1000246] = "Interface/Icons/inv_chest_leather_08",
-	[-1000247] = "Interface/Icons/inv_mace_1h_bastionquest_b_02",
-	[-1000248] = "Interface/Icons/inv_misc_questionmark",
+	[-1000247] = "Interface/Icons/inv_chest_leather_08",
+	[-1000248] = "Interface/Icons/inv_mace_1h_bastionquest_b_02",
+	[-1000249] = "Interface/Icons/inv_misc_questionmark",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000174] = 372,
@@ -629,7 +629,6 @@ _.Modules.Events.SetEventInformation(141, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=2,["year"]=2024},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=5,["year"]=2025})
 });
 _.Modules.Events.SetEventInformation(479, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=6,["weekday"]=1,["year"]=2023},{["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=13,["weekday"]=1,["year"]=2023},{["remappedID"]=376}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=3,["weekday"]=1,["year"]=2023},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=10,["weekday"]=1,["year"]=2023},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=1,["weekday"]=1,["year"]=2023},{["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=8,["weekday"]=1,["year"]=2023},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=5,["weekday"]=1,["year"]=2023},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=12,["weekday"]=1,["year"]=2023},{["remappedID"]=376}),
@@ -639,7 +638,8 @@ _.Modules.Events.SetEventInformation(479, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=3,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=10,["weekday"]=1,["year"]=2024},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=7,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=14,["weekday"]=1,["year"]=2024},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=5,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=12,["weekday"]=1,["year"]=2024},{["remappedID"]=376}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=2,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=9,["weekday"]=1,["year"]=2024},{["remappedID"]=374})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=2,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=9,["weekday"]=1,["year"]=2024},{["remappedID"]=374}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=7,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=14,["weekday"]=1,["year"]=2024},{["remappedID"]=375})
 });
 _.Modules.Events.SetEventInformation(201, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=1,["year"]=2022},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=7,["year"]=2022}),
@@ -1466,6 +1466,7 @@ _.ObjectNames = {
 	[181756] = "Battered Ancient Book",
 	[181757] = "Stillpine Grain",
 	[181779] = "Impact Site Crystal",
+	[181780] = "Altered Bloodmyst Crystal",
 	[181854] = "Sand Pear",
 	[181889] = "Wanted Poster",
 	[181891] = "Blood Mushroom",
@@ -2454,6 +2455,7 @@ _.ObjectModels = {
 	[181756] = 198027,
 	[181757] = 190300,
 	[181779] = 201845,
+	[181780] = 201845,
 	[181854] = 199732,
 	[181889] = 192468,
 	[181891] = 202097,
@@ -6078,7 +6080,7 @@ localize(L.HEADER_NAMES, {
 	[-1000215] = "Вторжение Плети",
 	[-1000222] = "Коллекционное издание",
 	[-1000223] = "Пропуск Темного портала",
-	[-1000248] = "Без Источника",
+	[-1000249] = "Без Источника",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000023] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",
@@ -6693,7 +6695,7 @@ localize(L.HEADER_NAMES, {
 	[-1000233] = "巫妖王之怒经典怀旧服诺森德英雄礼包",
 	[-1000234] = "巫妖王之怒经典怀旧服诺森德史诗礼包",
 	[-1000239] = "可口可乐活动",
-	[-1000248] = "无来源",
+	[-1000249] = "无来源",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000023] = "你可能需要在特定的节日活动中才能完成本节中的事物。",

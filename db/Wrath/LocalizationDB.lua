@@ -595,9 +595,9 @@ localize(L.HEADER_NAMES, {
 	[-1000258] = REFER_A_FRIEND,
 	[-1000260] = "Spirit of Competition",
 	[-1000261] = BATTLE_PET_SOURCE_9,
-	[-1000263] = "Ensembles",
-	[-1000264] = "Arsenals",
-	[-1000265] = "Sourceless",
+	[-1000264] = "Ensembles",
+	[-1000265] = "Arsenals",
+	[-1000266] = "Sourceless",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000023] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -630,7 +630,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000256] = "These were only available through the 2006 iCoke Promotion (China Only)",
 	[-1000257] = "This section is for miscellaneous promotions that took place in the real world or something to do with account management.",
 	[-1000260] = "This is a Battlegrounds-based event that coincides with the beginning of the Summer Olympic games. The only time this was celebrated was in 2008 to correspond to the Beijing Olympics, and although there appeared to be the intention to repeat this event, it never returned.",
-	[-1000265] = "This Category contains Things that probably exist in the game but no known source.",
+	[-1000266] = "This Category contains Things that probably exist in the game but no known source.",
 });
 localize(L.HEADER_LORE, {
 	[-1000046] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -779,9 +779,9 @@ localize(L.HEADER_ICONS, {
 	[-1000258] = "Interface/Icons/achievement_reputation_08",
 	[-1000260] = "Interface/Icons/inv_jewelry_amulet_03",
 	[-1000261] = "Interface/Icons/inv_misc_ticket_tarot_stack_01",
-	[-1000263] = "Interface/Icons/inv_chest_leather_08",
-	[-1000264] = "Interface/Icons/inv_mace_1h_bastionquest_b_02",
-	[-1000265] = "Interface/Icons/inv_misc_questionmark",
+	[-1000264] = "Interface/Icons/inv_chest_leather_08",
+	[-1000265] = "Interface/Icons/inv_mace_1h_bastionquest_b_02",
+	[-1000266] = "Interface/Icons/inv_misc_questionmark",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000174] = 372,
@@ -7863,7 +7863,7 @@ localize(L.HEADER_NAMES, {
 	[-1000232] = "Вторжение Плети",
 	[-1000239] = "Коллекционное издание",
 	[-1000240] = "Пропуск Темного портала",
-	[-1000265] = "Без Источника",
+	[-1000266] = "Без Источника",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000023] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",
@@ -8648,7 +8648,7 @@ localize(L.HEADER_NAMES, {
 	[-1000250] = "巫妖王之怒经典怀旧服诺森德英雄礼包",
 	[-1000251] = "巫妖王之怒经典怀旧服诺森德史诗礼包",
 	[-1000256] = "可口可乐活动",
-	[-1000265] = "无来源",
+	[-1000266] = "无来源",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000023] = "你可能需要在特定的节日活动中才能完成本节中的事物。",

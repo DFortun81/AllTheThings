@@ -1018,7 +1018,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(7583, {	-- Suppression
 					["qg"] = 14463,	-- Daio the Decrepit
-					["sourceQuest"] = 7582,	-- The Prison's Casing
+					["sourceQuests"] = {
+						7581,	-- The Prison's Bindings
+						7582,	-- The Prison's Casing
+					},
 					["coord"] = { 34, 50.2, BLASTED_LANDS },
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { WARLOCK },
@@ -1341,7 +1344,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(7582, {	-- The Prison's Casing
 					["qg"] = 14463,	-- Daio the Decrepit
-					["sourceQuest"] = 7581,	-- The Prison's Bindings
 					["coord"] = { 34, 50.2, BLASTED_LANDS },
 					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { WINTERSPRING },
