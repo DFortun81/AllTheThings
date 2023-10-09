@@ -808,7 +808,7 @@ root(ROOTS.Zones, {
 					}),
 					q(35273, {  -- Hot Seat
 						["sourceQuests"] = { 35261 },	-- Shot Caller
-						--["objectID"] = 232353,	-- Overseer's Chair
+						["provider"] = {"o",232353},	-- Overseer's Chair
 						["coord"] = { 35.5, 32.1, SPIRES_OF_ARAK },
 						["icon"] = "Interface\\Icons\\ability_skyreach_shielded",
 						["g"] = {

@@ -363,7 +363,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 56.9, 34.6, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["icon"] = "Interface\\Icons\\INV_DataCrystal11",
-						--["objectID"] = 230933,	-- Defense Pylon Central Control Console
+						["provider"] = {"o",230933},	-- Defense Pylon Central Control Console
 					}),
 					q(34786, {	-- Engorged Goren
 						["sourceQuests"] = { 34785 },	-- Hataaru, the Artificer
@@ -473,8 +473,10 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 80761 },	-- Beezil Linkspanner
 					}),
 					q(34455, {	-- Free Their Minds
-						["provider"] = { "n", 89158 },	-- Goblin Mind Control Device
-						--["objectID"] = 229314,	-- Goblin Mind Control Device
+						["providers"] = {
+							{ "n", 89158 },	-- Goblin Mind Control Device
+							{"o",229314},	-- Goblin Mind Control Device
+						},
 						["coord"] = { 59.8, 94.4, DRAENOR_SHADOWMOON_VALLEY },
 					}),
 					q(34788, {	-- Friend of the Exarchs
@@ -1062,7 +1064,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 80073 },	-- Exarch Maladaar
 					}),
 					q(33834, {	-- WANTED: Kliaa's Stinger
-						--["objectID"] = 237021,	-- Wanted: Kliaa's Stinger
+						["provider"] = {"o",237021},	-- Wanted: Kliaa's Stinger
 						["coord"] = { 26.4, 32.7, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["icon"] = "Interface\\Icons\\INV_Misc_ScrollRolled02c",
@@ -1076,13 +1078,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 33.2, 30.7, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
-						--["objectID"] = 237016,	-- Wanted: Kuu'rat
+						["provider"] = {"o",237016},	-- Wanted: Kuu'rat
 					}),
 					q(33836, {	-- WANTED: Maa'run's Hoof
 						["coord"] = { 57.5, 57.2, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
-						--["objectID"] = 232405,	-- Wanted Poster
+						["provider"] = {"o",232405},	-- Wanted Poster
 						["g"] = {
 							i(117989),	-- Maa'run's Baleful Eye
 							i(117990),	-- Maa'run's Prescient Eye
@@ -1094,7 +1096,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 60.9, 24.4, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["icon"] = "Interface\\Icons\\INV_Artifact_tome01",
-						--["objectID"] = 233229,	-- Shadow Council Tome of Curses
+						["provider"] = {"o",233229},	-- Shadow Council Tome of Curses
 					}),
 					q(33786, {	-- Crippled Caravan
 						["sourceQuests"] = {

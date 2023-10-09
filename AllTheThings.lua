@@ -3055,7 +3055,7 @@ local ResolveFunctions = {
 					or criteriaType == 52 or criteriaType == 53	-- Class/Race (TODO?)
 					or criteriaType == 54 -- Spell, by means of a personal buff?
 					or criteriaType == 43 then	-- Exploration
-					-- Ignored
+						-- Ignored
 				elseif criteriaType == 0 then	-- NPC Kills
 					-- app.PrintDebug("NPC Kill Criteria",assetID)
 					local c = app.SearchForObject("npcID", assetID, "key")

@@ -630,7 +630,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35083, {	-- Disrupt the Rituals
-						--["objectID"] = 233263,	-- Shamanstone
+						["provider"] = {"o",233263},	-- Shamanstone
 						["sourceQuests"] = {
 							35372,	-- The Call of Oshu'gun (alliance)
 							35232,	-- The Call of Oshu'gun (horde)
@@ -865,7 +865,7 @@ root(ROOTS.Zones, {
 					q(34466, {	-- Mysterious Staff
 						["coord"] = { 46.3, 16.0, DRAENOR_NAGRAND },
 						["icon"] = "Interface\\Icons\\inv_staff_52",
-						--["objectID"] = 229344,	-- Buried Timewarped Staff
+						["provider"] = {"o",229344},	-- Buried Timewarped Staff
 					}),
 					q(34900, {	-- New Babies
 						["provider"] = { "n", 81955 },	-- Digrem Orebar
@@ -1019,14 +1019,14 @@ root(ROOTS.Zones, {
 						["icon"] = "Interface\\Icons\\trade_archaeology_silverscrollcase",
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34769,	-- A Choice to Make (alliance)
-						--["objectID"] = 231901,	-- Ogre Scrolls
+						["provider"] = {"o",231901},	-- Ogre Scrolls
 					}),
 					q(35156, {	-- Removing the Paper Trail
 						["coord"] = { 81.3, 70.3, DRAENOR_NAGRAND },
 						["icon"] = "Interface\\Icons\\trade_archaeology_silverscrollcase",
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34899,	-- A Choice to Make (horde)
-						--["objectID"] = 231901,	-- Ogre Scrolls
+						["provider"] = {"o",231901},	-- Ogre Scrolls
 					}),
 					q(34877, {	-- Removing the Reinforcements
 						["provider"] = { "n", 81144 },	-- Rangari Eleena
@@ -1128,7 +1128,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 34899,	-- A Choice to Make
 					}),
 					q(35084, {	-- Silence the Call
-						--["objectID"] = 233263,	-- Shamanstone
+						["provider"] = {"o",233263},	-- Shamanstone
 						["sourceQuests"] = {
 							35372,	-- The Call of Oshu'gun (alliance)
 							35232,	-- The Call of Oshu'gun (horde)
@@ -1449,7 +1449,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35087, {	-- The Nether Approaches
-						--["objectID"] = 233263,	-- Shamanstone
+						["provider"] = {"o",233263},	-- Shamanstone
 						["coords"] = {
 							{ 55.4, 55.9, DRAENOR_NAGRAND },
 							{ 51.8, 58.8, DRAENOR_NAGRAND },
@@ -1547,7 +1547,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35088, {	-- The Shadow of the Void
-						--["objectID"] = 233263,	-- Shamanstone
+						["provider"] = {"o",233263},	-- Shamanstone
 						["coords"] = {
 							{ 55.4, 55.9, DRAENOR_NAGRAND },
 							{ 51.8, 58.8, DRAENOR_NAGRAND },
@@ -1566,7 +1566,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35086, {	-- The Void March
-						--["objectID"] = 233263,	-- Shamanstone
+						["provider"] = {"o",233263},	-- Shamanstone
 						["coords"] = {
 							{ 55.4, 55.9, DRAENOR_NAGRAND },
 							{ 51.8, 58.8, DRAENOR_NAGRAND },
@@ -1578,12 +1578,12 @@ root(ROOTS.Zones, {
 					q(35271, {	-- The Warsong Threat
 						["coord"] = { 51.8, 62.0, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						--["objectID"] = 232024,	-- Warsong Attack Plans
+						["provider"] = {"o",232024},	-- Warsong Attack Plans
 					}),
 					q(35386, {	-- The Warsong Threat
 						["coord"] = { 51.8, 62.0, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						--["objectID"] = 232024,	-- Warsong Attack Plans
+						["provider"] = {"o",232024},	-- Warsong Attack Plans
 					}),
 					q(37981, {	-- The World Famous Ring of Blood!
 						["description"] = "The item that starts this quest has a chance to drop from any of the daily bounties offered in your garrison (Renzik 'The Shiv' for Alliance and Shadow Hunter Ty'jin for Horde).\n\nThe item isn't looted, but will pop directly into your inventory when the quest mob dies.  If it doesn't drop the first time, you can camp the mob for more chances.  You'll get a total of three invitations, which you can sell or trade.\n",
@@ -1607,7 +1607,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 34598,	-- The Missing Caravan
 					}),
 					q(35085, {	-- Through the Nether
-						--["objectID"] = 233263,	-- Shamanstone
+						["provider"] = {"o",233263},	-- Shamanstone
 						["coords"] = {
 							{ 55.4, 55.9, DRAENOR_NAGRAND },
 							{ 51.8, 58.8, DRAENOR_NAGRAND },
@@ -1645,7 +1645,7 @@ root(ROOTS.Zones, {
 							34769,	-- A Choice to Make (alliance)
 							34899,	-- A Choice to Make (horde)
 						},
-						--["objectID"] = 230303,	-- Bounty Board
+						["provider"] = {"o",230303},	-- Bounty Board
 					}),
 					q(36273, {	-- Whacking Weeds
 						["provider"] = { "n", 84632 },	-- Marybelle Walsh

@@ -346,7 +346,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_1_0 },
 						["qg"] = 53023,	-- Bloodslayer T'ara
 					}),
 					q(29262, {	-- Zul'Gurub Voodoo
-						--["objectID"] = 208550,	-- Voodoo Pile
+						["provider"] = { "o", 208550 },	-- Voodoo Pile
 						["isDaily"] = true,
 						["description"] = "You need 425 Archaeology and a Troll Tablet to activate the \"Call of the Raptor\" buff which summons raptor hatchlings to attack your enemies.",
 					}),
@@ -784,7 +784,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_1_0 },
 						i(69608),	-- Deathcharged Wristguards
 						i(69606),	-- Hakkari Loa Drape
 						i(69607),	-- Touch of Discord
-					},	
+					},
 				}),
 				n(CACHE_OF_MADNESS, {
 					--[[ encounter IDs if we're ever able to use an array for them:

@@ -2510,7 +2510,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		q(55872, {	-- Where They Hide
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
-			--["objectID"] = 326142,	-- Bounty Board
+			["provider"] = {"o",326142},	-- Bounty Board
 			["isDaily"] = true,
 			["coord"] = { 45.6, 58.6, NAZJATAR },
 			["races"] = HORDE_ONLY,

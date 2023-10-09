@@ -1475,7 +1475,7 @@ root(ROOTS.Zones, {
 					q(11902, {	-- Pernicious Evidence
 						["coord"] = { 56.8, 55.5, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["objectID"] = 188085,	-- Plagued Grain
+						["provider"] = { "o", 188085 },	-- Plagued Grain
 						["sourceQuest"] = 11901,	-- Military? What Military?
 					}),
 					q(11609, {	-- Picking Up the Pieces

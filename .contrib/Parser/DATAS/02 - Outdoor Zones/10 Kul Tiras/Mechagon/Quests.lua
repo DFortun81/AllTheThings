@@ -954,14 +954,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 				["sourceQuest"] = 56320,	-- Your First Charge is Free
 				["repeatable"] = true,
 			}),
-			o(329641, {	-- Wanted: Junkbrat and Roadtrogg
-				q(56434, {
-					["coord"] = { 67.3, 35.2, MECHAGON },
-					["isDaily"] = true,
-				}),
+			q(56434, {	-- WANTED: Junkbrat and Roadtrogg
+				["provider"] = {"o",329641},	-- Wanted: Junkbrat and Roadtrogg
+				["coord"] = { 67.3, 35.2, MECHAGON },
+				["isDaily"] = true,
 			}),
 			q(56508, {	-- Waste Not (picked up while doing "A Direct Approach," but not sure if you have to be on that quest or what the SQs are)
-			--	["objectID"] = ,	-- not linked to quest
+				["provider"] = {"o",329715},	-- Useful Bits and Pieces
 				["coord"] = { 43.0, 41.1, MECHAGON },
 				["isDaily"] = true,
 			}),
@@ -1242,9 +1241,9 @@ root(ROOTS.HiddenQuestTriggers, m(KUL_TIRAS, {
 			q(55921),	-- Uncle T'Rogg
 
 			-- Completed with quest
-			q(56745),	-- Triggered when completed 'Other Interests' (questID 56174) 
+			q(56745),	-- Triggered when completed 'Other Interests' (questID 56174)
 			q(56054),	-- Triggered when completed 'Recharging Rustbolt' (questID 55211)
-			q(56208),	-- Triggered when completed 'Ideas Can Come from Anywhere' (questID 55103) 
+			q(56208),	-- Triggered when completed 'Ideas Can Come from Anywhere' (questID 55103)
 			q(56662),	-- Triggered when completed 'Real Ultimate Power' (questID 56621)
 			q(56333),	-- Triggered when completed 'Your First Charge is Free!' (questID 56320)
 			q(56329),	-- Triggered when completed 'Do Not Drink' (questID 56328)
@@ -1264,7 +1263,7 @@ root(ROOTS.HiddenQuestTriggers, m(KUL_TIRAS, {
 			q(56089),	-- triggered on first rare kill — possibly blueprint looting?
 			q(56506),	-- triggered on third rare kill — was Mr. Fixthis for me, but someone else had it trigger on Arachnoid Harvester.  looted Performant Refined Logic Board and a Chain Ignitercoil
 			q(55848),	-- Reclamation Rig hardmode — putting here because with both quests attached with altQuests it doesn't roll over like dailies should
-			
+
 			q(56713),	-- seems to trigger on every Rusty Prince kill, along with 56182
 			q(56564),	-- First Fight Club Treasure Chest of the day
 			q(57081),	-- First Mechanized Chest of the week(Minipack: Mechagon)-- Still need to narrow down exact trigger

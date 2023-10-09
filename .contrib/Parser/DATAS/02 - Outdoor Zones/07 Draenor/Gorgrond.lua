@@ -1837,7 +1837,7 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(36441, {	-- Reclaiming Property
-						--["objectID"] = 234474,	-- Saberon Stash
+						["provider"] = {"o",234474},	-- Saberon Stash
 						["icon"] = "Interface\\Icons\\inv_misc_herb_whiptail",
 						["coord"] = { 51.0, 51.6, GORGROND },
 						["races"] = ALLIANCE_ONLY,
@@ -1880,7 +1880,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 51.0, 51.6, GORGROND },
 						["g"] = {
 							q(33660, {	-- The Sacking of the Saberon
-								--["objectID"] = 234474,	-- Saberon Stash
+								["provider"] = {"o",234474},	-- Saberon Stash
 								["icon"] = "Interface\\Icons\\inv_misc_herb_whiptail",
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 33662,	-- Beatface vs. Boulder

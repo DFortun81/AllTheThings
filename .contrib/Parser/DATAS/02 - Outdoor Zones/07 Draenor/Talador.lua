@@ -776,7 +776,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(33761, {	-- Barum's Notes
-						--["objectID"] = 225778,	-- Barum's Notes
+						["provider"] = {"o",225778},	-- Barum's Notes
 						["icon"] = "Interface\\Icons\\trade_archaeology_draenei_tome",
 						["coord"] = { 76.2, 42.7, TALADOR },
 						["sourceQuests"] = {
@@ -868,17 +868,17 @@ root(ROOTS.Zones, {
 						["coord"] = { 61.7, 27.5, TALADOR },
 						["races"] = ALLIANCE_ONLY,
 						["icon"] = "Interface\\Icons\\ability_mount_shreddermount",
+						["provider"] = {"o",225726},	-- Iron Shredder Decommission Orders
 						["sourceQuests"] = {
 							34947,	-- Shredder Manual
 							34087,	-- Through the Looking Glass
 						},
-						--["objectID"] = 225726,	-- Iron Shredder Decommission Orders
 					}),
 					q(33720, {	-- Decommissioned Mission
 						["coord"] = { 59.9, 16.4, TALADOR },
 						["races"] = HORDE_ONLY,
 						["icon"] = "Interface\\Icons\\ability_mount_shreddermount",
-						--["objectID"] = 225726,	-- Iron Shredder Decommission Orders
+						["provider"] = {"o",225726},	-- Iron Shredder Decommission Orders
 						["sourceQuests"] = {
 							34948,	-- Shredder Manual
 							33754,	-- Through the Looking Glass
@@ -1027,7 +1027,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34163, {	-- Hiding in the Shadows
-						--["objectID"] = 227737,	-- Shadow Council Communicator
+						["provider"] = {"o",227737},	-- Shadow Council Communicator
 						["coord"] = { 37.2, 79.3, TALADOR },
 						["sourceQuests"] = {
 							34092,	-- Desperate Measures
@@ -1103,7 +1103,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(33988, {	-- Invasion of the Soul Eaters
-						--["objectID"] = 227069,	-- Hastily Written Note
+						["provider"] = {"o",227069},	-- Hastily Written Note
 						["icon"] = "Interface\\Icons\\trade_archaeology_silverscrollcase",
 						["coord"] = { 49.1, 88.0, TALADOR },
 						["sourceQuests"] = {
@@ -1197,7 +1197,7 @@ root(ROOTS.Zones, {
 					q(34465, {	-- Mystical Hat
 						["coord"] = { 45.2, 37.0, TALADOR },
 						["icon"] = "Interface\\Icons\\inv_helmet_65",
-						--["objectID"] = 229331,	-- A Mystical hat
+						["provider"] = {"o",229331},	-- A Mystical hat
 					}),
 					q(34013, {	-- Never Forget
 						["provider"] = { "n", 78083 },	-- Defender Artaal
