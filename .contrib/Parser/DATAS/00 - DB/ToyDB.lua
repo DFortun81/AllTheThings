@@ -19,6 +19,9 @@ i(38233);	-- Path of Illidan
 i(40110);	-- Haunted Momento	-- TODO: It would be neat if Retail ATT could detect items manually in your inventory as toys you should keep
 -- #endif
 i(198647);	-- Fishspeaker's Lucky Lure
+-- #if ANYCLASSIC
+i(38506);	-- Don Carlos' Famous Hat -- With ICC Patch of Wrath Classic, they made the hat (the original removed version) into a Toy. Whether it also functions as a transmog still is not known.
+-- #endif
 
 -----------------
 --   CLASSIC   --
