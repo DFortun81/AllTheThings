@@ -662,7 +662,13 @@ root(ROOTS.Zones, {
 				}),
 				n(FACTIONS, {
 					faction(1011, {	-- Lower City
-						["maps"] = { AUCHINDOUN_AUCHENAI_CRYPTS, AUCHINDOUN_SETHEKK_HALLS, AUCHINDOUN_SHADOW_LABYRINTH },
+						["maps"] = {
+							256,		-- AUCHINDOUN_AUCHENAI_CRYPTS 1
+							257,		-- AUCHINDOUN_AUCHENAI_CRYPTS 2
+							258,		-- AUCHINDOUN_SETHEKK_HALLS 1
+							259,		-- AUCHINDOUN_SETHEKK_HALLS 2
+							AUCHINDOUN_SHADOW_LABYRINTH,
+						},
 					}),
 					faction(932, {	-- The Aldor
 						["maxReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
