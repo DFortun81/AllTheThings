@@ -19,67 +19,7 @@ root(ROOTS.Zones, {
 					ach(7290),	-- How To Strain Your Dragon
 					ach(7291),	-- In a Trail of Smoke
 					ach(7381),	-- Restore Balance
-					ach(7997, {	-- Riches of Pandaria
-						o(213366, {	-- Ancient Pandaren Tea Pot
-							["questID"] = 31400,
-							["coord"] = { 26.22, 32.35, THE_JADE_FOREST },
-							["g"] = {
-								i(85780),	-- Ancient Pandaren Tea Pot
-							},
-						}),
-						o(213368, {	-- Lucky Pandaren Coin
-							["questID"] = 31401,
-							["description"] = "Located in the wishing fountain.",
-							["coord"] = { 31.96, 27.76, THE_JADE_FOREST },
-							["g"] = {
-								i(85781),	-- Lucky Pandaren Coin
-							},
-						}),
-						o(213748, {	-- Pandaren Ritual Stone
-							["questID"] = 31404,
-							["coord"] = { 23.49, 35.05, THE_JADE_FOREST },
-							["g"] = {
-								i(86216),	-- Pandaren Ritual Stone
-							},
-						}),
-						o(213362, {	-- Ship's Locker
-							["questID"] = 31396, -- Ship's Locker
-							["description"] = "Located underwater in a boat.",
-							["coord"] = { 51.28, 100.54, THE_JADE_FOREST }, -- Can't use Uncharted Sea MapID, plots the point incorrectly.
-						}),
-					}),
 					ach(7289),	-- Shadow Hopper
-					ach(6754, {	-- The Dark Heart of the Mogu
-						["collectible"] = false,
-						["g"] = {
-							crit(19664, {	-- Spirit Binders
-								["provider"] = {"o",213333},
-								["coord"] = { 42.2, 17.4, THE_JADE_FOREST },
-							}),
-						},
-					}),
-					ach(6855, {	-- The Seven Burdens of Shaohao
-						crit(19785, {	-- The Emperor's Burden - Part 1
-							["coord"] = { 47.0, 45.1, THE_JADE_FOREST },
-						}),
-						crit(19786, {	-- The Emperor's Burden - Part 3
-							["coord"] = { 55.8, 56.8, THE_JADE_FOREST },
-						}),
-					}),
-					ach(6350, {	-- To All the Squirrels I Once Caressed?
-						["collectible"] = false,
-						["g"] = {
-							crit(4,  {	-- Coral Adder
-								["crs"] = { 59356 },	-- Coral Adder
-							}),
-							crit(9,  {	-- Leopard Tree Frog
-								["crs"] = { 64774 },	-- Leopard Tree Frog
-							}),
-							crit(15, {	-- Shrine Fly
-								["crs"] = { 59770 },	-- Shrine Fly
-							}),
-						},
-					}),
 					ach(6300, {	-- Upjade Complete (A)
 						["races"] = ALLIANCE_ONLY,	-- Alliance
 						["sym"] = {{ "achievement_criteria" }},

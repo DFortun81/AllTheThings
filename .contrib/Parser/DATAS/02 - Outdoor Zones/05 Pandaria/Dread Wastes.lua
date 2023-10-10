@@ -78,25 +78,11 @@ root(ROOTS.Zones, {
 						crit(20955),	-- Raining Blood
 						crit(20956),	-- Iron Mantid
 						crit(20957),	-- Silent Lucidity
-						crit(20958),	-- Speed 
+						crit(20958),	-- Speed
 						crit(20959),	-- Children of the Grave
 						crit(20960),	-- Battle Hymn
 					}),
 					ach(7314),	-- Test Drive
-					ach(6350, {	-- To All the Squirrels I Once Caressed?
-						["collectible"] = false,
-						["g"] = {
-							crit(3,  {	-- Clouded Hedgehog
-								["crs"] = { 64803 },	-- Clouded Hedgehog
-							}),
-							crit(6,  {	-- Emperor Crab
-								["crs"] = { 63329 },	-- Emperor Crab
-							}),
-							crit(14, {	-- Resilient Roach
-								["crs"] = { 64807 },	-- Resilient Roach
-							}),
-						},
-					}),
 				}),
 				battlepets({
 					["sym"] = {{"select","speciesID",

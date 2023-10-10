@@ -25,29 +25,6 @@ root(ROOTS.Zones, {
 						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(7322),	-- Roll Club
-					ach(6754, {	-- The Dark Heart of the Mogu
-						["collectible"] = false,
-						["g"] = {
-							crit(19665, {	-- The Thunder King
-								["provider"] = {"o",213334},
-								["coord"] = { 40.1, 75.6, VALE_OF_ETERNAL_BLOSSOMS },
-							}),
-						},
-					}),
-					ach(6350, {	-- To All the Squirrels I Once Caressed?
-						["collectible"] = false,
-						["g"] = {
-							crit(5, {	-- Dancing Water Skimmer
-								["crs"] = { 65209 },	-- Dancing Water Skimmer
-							}),
-							crit(7, {	-- Gilded Moth
-								["crs"] = { 65205 },	-- Gilded Moth
-							}),
-							crit(8, {	-- Golden Civet
-								["crs"] = { 65206 },	-- Golden Civet
-							}),
-						},
-					}),
 				}),
 				battlepets({
 					pet(751),	-- Dancing Water Skimmer (PET!)

@@ -26,43 +26,10 @@ root(ROOTS.Zones, {
 					ach(6301, {	-- Rally the Valley
 						["sym"] = {{ "achievement_criteria" }},
 					}),
-					ach(7997, {	-- Riches of Pandaria
-						["collectible"] = false,
-						["g"] = {
-							o(214340, {	-- Boat-Building Instructions
-								["questID"] = 31869,
-								["coord"] = { 92.2, 39.2, VALLEY_OF_THE_FOUR_WINDS },
-								["g"] = {
-									i(87524),	-- Boat-Building Instructions
-								},
-							}),
-							o(213650, {	-- Virmen Treasure Cache
-								["questID"] = 31405,
-								["coord"] = { 23.2, 30.8, VALLEY_OF_THE_FOUR_WINDS },
-							}),
-						},
-					}),
 					ach(7502, {	-- Savior of Stoneplow
 						["sourceQuests"] = { 30627 },	-- The Savior of Stoneplow
 					}),
 					ach(7293),	-- Till the Break of Dawn (Halfhill)
-					ach(6350, {	-- To All the Squirrels I Once Caressed?
-						["collectible"] = false,
-						["g"] = {
-							crit(2,  {	-- Bandicoon
-								["crs"] = { 64782 },	-- Bandicoon
-							}),
-							crit(11, {	-- Malayan Quillrat
-								["crs"] = { 64784 },	-- Malayan Quillrat
-							}),
-							crit(12, {	-- Marsh Fiddler
-								["crs"] = { 64786 },	-- Marsh Fiddler
-							}),
-							crit(16, {	-- Sifang Otter
-								["crs"] = { 64787 },	-- Sifang Otter
-							}),
-						},
-					}),
 				}),
 				battlepets({
 					["sym"] = {{"select","speciesID",

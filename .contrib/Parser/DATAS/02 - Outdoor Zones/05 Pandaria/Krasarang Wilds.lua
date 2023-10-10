@@ -23,36 +23,6 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["sym"] = {{ "achievement_criteria" }},
 					}),
-					ach(7997, {	-- Riches of Pandaria
-						["collectible"] = false,
-						["g"] = {
-							o(213750, {	-- Saurok Stone Tablet
-								["questID"] = 31408,
-								["coord"] = { 71.0, 9.0, KRASARANG_WILDS },
-								["description"] = "Located at the back of the cave, to the right of the junk pile.",
-								["g"] = {
-									i(86220),	-- Saurok Stone Tablet
-								},
-							}),
-						},
-					}),
-					ach(6754, {	-- The Dark Heart of the Mogu
-						crit(19663, {	-- The Lost Dynasty
-							["provider"] = {"o",213332},
-							["coord"] = { 50.90, 31.67, KRASARANG_WILDS },
-						}),
-					}),
-					ach(6350, {	-- To All the Squirrels I Once Caressed?
-						["collectible"] = false,
-						["g"] = {
-							crit(1,  {	-- Amethyst Spiderling
-								["crs"] = { 64798 },	-- Amethyst Spiderling
-							}),
-							crit(10, {	-- Luyu Moth
-								["crs"] = { 63289 },	-- Luyu Moth
-							}),
-						},
-					}),
 					ach(7518),	-- Wanderers, Dreamers, and You
 				}),
 				battlepets({

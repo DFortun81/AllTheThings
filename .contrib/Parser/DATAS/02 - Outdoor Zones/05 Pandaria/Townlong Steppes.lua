@@ -44,54 +44,7 @@ root(ROOTS.Zones, {
 						crit(22173),	-- Tenwu of the Red Smoke
 						crit(22172),	-- Hawkmaster Nurong
 					}),
-					ach(7997, {	-- Riches of Pandaria
-						["collectible"] = false,
-						["g"] = {
-							o(213961, {	-- Abandoned Crate of Goods
-								["questID"] = 31427,	-- Abandoned Crate of Goods
-								["coord"] = { 62.8, 34.1, TOWNLONG_STEPPES },
-							}),
-							o(213844, {	-- Amber Encased Moth
-								["questID"] = 31426,
-								["coord"] = { 65.8, 86.1, TOWNLONG_STEPPES },
-								["g"] = {
-									i(86472),	-- Amber Encased Moth
-								},
-							}),
-							o(213956, {	-- Fragment of Dread
-								["questID"] = 31423,
-								["coords"] = {
-									{ 64.2, 20.3, 389 },	-- Niuzao Catacombs
-									{ 37.7, 87.0, 389 },	-- Niuzao Catacombs
-									{ 47.8, 89.0, 389 },	-- Niuzao Catacombs
-									{ 56.5, 64.7, 389 },	-- Niuzao Catacombs
-								},
-								["description"] = "Entrance is at |cFFFFD70032.6 61.8|r. There are 4 possible spawn points.",
-								["g"] = {
-									i(86516),	-- Fragment of Dread
-								},
-							}),
-							o(213959, {	-- Hardened Sap of Kri'vess
-								["questID"] = 31424,
-								["description"] = "Located all around Kri'vess.",
-								["g"] = {
-									i(86517),	-- Hardened Sap of Kri'vess
-								},
-							}),
-						},
-					}),
 					ach(7307),	-- Silent Assassin
-					ach(6350, {	-- To All the Squirrels I Once Caressed?
-						["collectible"] = false,
-						["g"] = {
-							crit(13, {	-- Mongoose
-								["crs"] = { 65191 },	-- Mongoose
-							}),
-							crit(17, {	-- Yakrat
-								["crs"] = { 64802 },	-- Yakrat
-							}),
-						},
-					}),
 					ach(7288),	-- Yak Attack (Niuzao Temple)
 				}),
 				battlepets({

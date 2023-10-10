@@ -38,6 +38,7 @@ root(ROOTS.Zones, {
 				},
 			}),
 			n(QUESTS, {
+				-- TODO: move these provider items into the respective achievement groups
 				q(31055, {    -- Between a Saurok and a Hard Place
 					["provider"] = { "i", 83769 },    -- Between a Saurok and a Hard Place
 					["description"] = "This will be mailed to you upon completion of Between a Saurok and a Hard Place achievement.",

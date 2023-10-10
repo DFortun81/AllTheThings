@@ -7,25 +7,6 @@ root(ROOTS.Zones, {
 		m(THE_VEILED_STAIR, {
 			["icon"] = "Interface\\Icons\\inv_legendary_theblackprince",
 			["groups"] = {
-				n(ACHIEVEMENTS, {
-					ach(7997, {	-- Riches of Pandaria
-						["collectible"] = false,
-						["g"] = {
-							o(214325, {	-- Forgotten Lockbox
-								["questID"] = 31867, -- Forgotten Lockbox
-								["description"] = "Located on a barrel on the second floor of the inn",
-								["coord"] = { 54.66, 71.67, THE_VEILED_STAIR },
-							}),
-							o(213845, {	-- The Hammer of Folly
-								["questID"] = 31428,
-								["coord"] = { 74.92, 76.47, THE_VEILED_STAIR },
-								["g"] = {
-									i(86473),	-- The Hammer of Folly
-								},
-							}),
-						},
-					}),
-				}),
 				battlepets({
 					["sym"] = {{"select","speciesID",
 						706,	-- Bandicoon (PET!)

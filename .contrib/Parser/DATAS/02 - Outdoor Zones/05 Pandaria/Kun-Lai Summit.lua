@@ -258,50 +258,6 @@ root(ROOTS.Zones, {
 					ach(7386, {	-- Grand Expedition Yak
 						["provider"] = { "i", 84101 },	-- Grand Expedition Yak
 					}),
-					ach(7997, {	-- Riches of Pandaria
-						["collectible"] = false,
-						["g"] = {
-							o(214438, {	-- Ancient Mogu Tablet
-								["description"] = "Entrance is at |cFFFFD70063.94 49.84|r.",
-								["questID"] = 31420,
-								["coord"] = { 64.2, 45.2, KUN_LAI_SUMMIT },
-								["g"] = {
-									i(86471),	-- Ancient Mogu Tablet
-								},
-							}),
-							o(213769, {	-- Hozen Treasure Cache
-								["questID"] = 31414,	-- Hozen Treasure Cache
-								["coord"] = { 49.5, 59.4, KUN_LAI_SUMMIT },
-							}),
-							o(213774, {	-- Lost Adventurer's Belongings
-								["questID"] = 31418,	-- Lost Adventurer's Belongings
-								["coord"] = { 36.7, 79.8, KUN_LAI_SUMMIT },
-							}),
-							o(213793, {	-- Rikktik's Tiny Chest
-								["questID"] = 31419,
-								["coord"] = { 52.5, 51.5, KUN_LAI_SUMMIT },
-								["g"] = {
-									i(86430),	-- Rikktik's Tiny Chest
-								},
-							}),
-							o(213771, {	-- Statue of Xuen
-								["questID"] = 31416,	-- Statue of Xuen
-								["coord"] = { 72.0, 33.9, KUN_LAI_SUMMIT },
-							}),
-							o(213770, {	-- Stolen Sprite Treasure
-								["description"] = "Entrance is at |cFFFFD70059.5 52.9|r.",
-								["questID"] = 31415,	-- Stolen Sprite Treasure
-								["coord"] = { 41.6, 44.1, 380 },	-- Howlingwind Cavern
-							}),
-							o(213782, {	-- Terracotta Head
-								["questID"] = 31422,
-								["coord"] = { 59.2, 73.0, KUN_LAI_SUMMIT },
-								["g"] = {
-									i(86427),	-- Terracotta Head
-								},
-							}),
-						},
-					}),
 					ach(6537, {	-- Slum It in the Summit (A)
 						["races"] = ALLIANCE_ONLY,
 						["sym"] = {{ "achievement_criteria" }},
@@ -309,13 +265,6 @@ root(ROOTS.Zones, {
 					ach(6538, {	-- Slum It in the Summit (H)
 						["races"] = HORDE_ONLY,
 						["sym"] = {{ "achievement_criteria" }},
-					}),
-					ach(6754, {	-- The Dark Heart of the Mogu
-						crit(19662, {	-- Valley of the Emperors (Kun-Lai Summit)
-							["provider"] = {"o",213331},	-- Valley of the Emperors
-							["coord"] = { 53.0, 46.58, KUN_LAI_SUMMIT },
-							["description"] = "The scroll is in the first big room."
-						}),
 					}),
 				}),
 				battlepets({
