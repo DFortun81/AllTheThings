@@ -354,9 +354,9 @@ GameTooltipModel.SetCreatureID = function(self, creatureID)
 	end
 	self:Show();
 end
-GameTooltipModel.TrySetDisplayInfo = function(self, reference, displayInfo)
-	if displayInfo then
-		local count = #displayInfo;
+GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
+	if displayInfos then
+		local count = #displayInfos;
 		if count > 0 then
 			local rotation = reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION;
 			local scale = reference.modelScale or 1;
@@ -366,7 +366,7 @@ GameTooltipModel.TrySetDisplayInfo = function(self, reference, displayInfo)
 				if count < 3 then
 					for i=1,count do
 						model = self.Models[i];
-						model:SetDisplayInfo(displayInfo[i]);
+						model:SetDisplayInfo(displayInfos[i]);
 						model:SetCamDistanceScale(scale);
 						model:SetFacing(rotation);
 						model:SetPosition(0, (i % 2 == 0 and 0.5 or -0.5), 0);
@@ -376,7 +376,7 @@ GameTooltipModel.TrySetDisplayInfo = function(self, reference, displayInfo)
 					scale = (1 + (ratio * 0.5)) * scale;
 					for i=1,count do
 						model = self.Models[i];
-						model:SetDisplayInfo(displayInfo[i]);
+						model:SetDisplayInfo(displayInfos[i]);
 						model:SetCamDistanceScale(scale);
 						model:SetFacing(rotation);
 						fi = math.floor(i / 2);
@@ -387,7 +387,7 @@ GameTooltipModel.TrySetDisplayInfo = function(self, reference, displayInfo)
 			else
 				self.Model:SetFacing(rotation);
 				self.Model:SetCamDistanceScale(scale);
-				self.Model:SetDisplayInfo(displayInfo[1]);
+				self.Model:SetDisplayInfo(displayInfos[1]);
 				self.Model:Show();
 			end
 			self:Show();
@@ -401,7 +401,7 @@ GameTooltipModel.TrySetModel = function(self, reference)
 		self.lastModel = reference;
 		local displayInfo = reference.displayInfo;
 		if displayInfo then
-			if GameTooltipModel.TrySetDisplayInfo(self, reference, displayInfo) then
+			if GameTooltipModel.TrySetDisplayInfos(self, reference, displayInfo) then
 				return true;
 			end
 		end
@@ -416,7 +416,7 @@ GameTooltipModel.TrySetModel = function(self, reference)
 						markedKeys[displayID] = 1;
 					end
 				end
-				if GameTooltipModel.TrySetDisplayInfo(self, reference, displayInfo) then
+				if GameTooltipModel.TrySetDisplayInfos(self, reference, displayInfo) then
 					return true;
 				end
 			else
@@ -442,12 +442,13 @@ GameTooltipModel.TrySetModel = function(self, reference)
 					end
 				end
 			end
-			if GameTooltipModel.TrySetDisplayInfo(self, reference, displayInfo) then
+			if GameTooltipModel.TrySetDisplayInfos(self, reference, displayInfo) then
 				return true;
 			end
 		end
 
 		if reference.displayID then
+			print("DisplayID", reference.displayID);
 			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
 			self.Model:SetCamDistanceScale(reference.modelScale or 1);
 			self.Model:SetDisplayInfo(reference.displayID);
