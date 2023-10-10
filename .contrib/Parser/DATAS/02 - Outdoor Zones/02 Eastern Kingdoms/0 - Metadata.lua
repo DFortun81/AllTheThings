@@ -12,6 +12,53 @@ root(ROOTS.Zones, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				ach(42, {	-- Eastern Kingdoms Explorer [7.0.3] / Explore Eastern Kingdoms
+					-- #if AFTER WRATH
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						-- #if BEFORE CATA
+						760,	-- Explore Alterac Mountains
+						-- #endif
+						761,	-- Explore Arathi Highlands
+						765,	-- Explore Badlands
+						766,	-- Explore Blasted Lands
+						775,	-- Explore Burning Steppes
+						777,	-- Explore Deadwind Pass
+						627,	-- Explore Dun Morogh
+						778,	-- Explore Duskwood
+						771,	-- Explore Eastern Plaguelands
+						776,	-- Explore Elwynn Forest
+						859,	-- Explore Eversong Woods
+						858,	-- Explore Ghostlands
+						772,	-- Explore Hillsbrad Foothills
+						868,	-- Explore Isle of Quel'Danas
+						779,	-- Explore Loch Modan
+						-- #if AFTER CATA
+						781,	-- Explore Northern Stranglethorn
+						-- #endif
+						780,	-- Explore Redridge Mountains
+						774,	-- Explore Searing Gorge
+						769,	-- Explore Silverpine Forest
+						-- #if BEFORE CATA
+						781,	-- Explore Stranglethorn Vale
+						-- #endif
+						782,	-- Explore Swamp of Sorrows
+						-- #if AFTER CATA
+						4995,	-- Explore the Cape of Stranglethorn
+						-- #endif
+						773,	-- Explore The Hinterlands
+						768,	-- Explore Tirisfal Glades
+						770,	-- Explore Western Plaguelands
+						802,	-- Explore Westfall
+						841,	-- Explore Wetlands
+					}},
+					-- #else
+					["description"] = "Explore the regions of Eastern Kingdoms.",
+					["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
+					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_ACHCAT_OnUpdate(t, ]] .. ACHIEVEMENT_CATEGORY_EASTERN_KINGDOMS_EXP .. [[); end]],
+					-- #endif
+				}),
 				a(ach(12456, {	-- Loch Modan & Wetlands Quests
 					["timeline"] = { ADDED_7_3_5 },
 					-- Meta Achievement

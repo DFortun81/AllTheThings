@@ -3,6 +3,17 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(DRAENOR, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
+		applyclassicphase(WOD_PHASE_ONE, ach(8935, {	-- Draenor Explorer [7.0.3] / Explore Draenor
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				8937,	-- Explore Frostfire Ridge
+				8939,	-- Explore Gorgrond
+				8942,	-- Explore Nagrand
+				8938,	-- Explore Shadowmoon Valley
+				8941,	-- Explore Spires of Arak
+				8940,	-- Explore Talador
+			}},
+		})),
 		ach(10018, {	-- Draenor Pathfinder
 			["sym"] = {{"meta_achievement",
 				8935,	-- Draenor Explorer

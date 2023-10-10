@@ -115,6 +115,25 @@ root(ROOTS.Zones, {
 					["sym"] = {{"select","achievementID",1312},{"pop"}},	-- Bloody Rare Criteria
 					["timeline"] = { "added 3.0.1" },
 				}),
+				applyclassicphase(TBC_PHASE_ONE, ach(44, {	-- Outland Explorer [7.0.3] / Explore Outland
+					-- #if AFTER WRATH
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						865,	-- Explore Blade's Edge Mountains
+						862,	-- Explore Hellfire Peninsula
+						866,	-- Explore Nagrand
+						843,	-- Explore Netherstorm
+						864,	-- Explore Shadowmoon Valley
+						867,	-- Explore Terokkar Forest
+						863,	-- Explore Zangarmarsh
+					}},
+					-- #else
+					["description"] = "Explore the regions of Outland.",
+					["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
+					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_ACHCAT_OnUpdate(t, ]] .. ACHIEVEMENT_CATEGORY_OUTLAND_EXP .. [[); end]],
+					-- #endif
+				})),
 				ach(1206, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- To All The Squirrels I've Loved Before
 					crit(3741, {	-- Borean Frog (Borean Tundra)
 						["maps"] = { BOREAN_TUNDRA },

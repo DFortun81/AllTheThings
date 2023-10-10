@@ -3,6 +3,16 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
+		applyclassicphase(LEGION_PHASE_ONE, ach(11188, {	-- Broken Isles Explorer
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				10665,	-- Explore Azsuna
+				10666,	-- Explore Val'sharah
+				10667,	-- Explore Highmountain
+				10668,	-- Explore Stormheim
+				10669,	-- Explore Suramar
+			}},
+		})),
 		ach(11190, {	-- Broken Isles Pathfinder, Part One
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",

@@ -12,6 +12,46 @@ root(ROOTS.Zones, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				ach(43, {	-- Kalimdor Explorer [7.0.3] / Explore Kalimdor
+					-- #if AFTER WRATH
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						845,	-- Explore Ashenvale
+						852,	-- Explore Azshara
+						860,	-- Explore Azuremyst Isle
+						861,	-- Explore Bloodmyst Isle
+						844,	-- Explore Darkshore
+						848,	-- Explore Desolace
+						728,	-- Explore Durotar
+						850,	-- Explore Dustwallow Marsh
+						853,	-- Explore Felwood
+						849,	-- Explore Feralas
+						855,	-- Explore Moonglade
+						736,	-- Explore Mulgore
+						-- #if AFTER CATA
+						750,	-- Explore Northern Barrens
+						-- #endif
+						856,	-- Explore Silithus
+						-- #if AFTER CATA
+						4996,	-- Explore Southern Barrens
+						-- #endif
+						847,	-- Explore Stonetalon Mountains
+						851,	-- Explore Tanaris
+						842,	-- Explore Teldrassil
+						-- #if AFTER CATA
+						750,	-- Explore The Barrens
+						-- #endif
+						846,	-- Explore Thousand Needles
+						854,	-- Explore Un'Goro Crater
+						857,	-- Explore Winterspring
+					}},
+					-- #else
+					["description"] = "Explore the regions of Kalimdor.",
+					["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
+					["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
+					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_ACHCAT_OnUpdate(t, ]] .. ACHIEVEMENT_CATEGORY_KALIMDOR_EXP .. [[); end]],
+					-- #endif
+				}),
 				ach(1678, {	-- Loremaster of Kalimdor (A)
 					-- #if AFTER CATA
 					["sym"] = {{"meta_achievement",

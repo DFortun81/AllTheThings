@@ -114,6 +114,23 @@ root(ROOTS.Zones, {
 					-- identical criteria as full achievement
 					["sym"] = {{"select","achievementID",2257},{"pop"}},	-- Frostbitten Criteria
 				}),
+				applyclassicphase(WRATH_PHASE_ONE, ach(45, {	-- Northrend Explorer [7.0.3] / Explore Northrend
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						1264,	-- Explore Borean Tundra
+						1457,	-- Explore Crystalsong Forest
+						1265,	-- Explore Dragonblight
+						1266,	-- Explore Grizzly Hills
+						1263,	-- Explore Howling Fjord
+						1270,	-- Explore Icecrown
+						1268,	-- Explore Sholazar Basin
+						1269,	-- Explore Storm Peaks
+						1267,	-- Explore Zul'Drak
+					}},
+					["groups"] = {
+						i(43348),	-- Tabard of the Explorer
+					},
+				})),
 				ach(2557, {	-- To All The Squirrels Who Shared My Life
 					-- #if ANYCLASSIC
 					crit(9299,  {	-- Arctic Hare (Dragonblight, Zul'Drak, Borean Tundra)
