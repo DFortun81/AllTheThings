@@ -395,60 +395,79 @@ GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
 		end
 	end
 end
+-- Attempts to return the displayID for the data, or every displayID if 'all' is specified
+local function GetDisplayID(data, all)
+	-- don't create a displayID for groups with a sourceID/itemID/difficultyID/mapID
+	if data.s or data.itemID or data.difficultyID or data.mapID then return; end
+	if all then
+		local displayInfo, _ = {};
+		-- specific displayID
+		_ = data.displayID;
+		if _ then tinsert(displayInfo, _); data.displayInfo = displayInfo; return displayInfo; end
+
+		-- specific creatureID for displayID
+		_ = data.creatureID and app.NPCDisplayIDFromID[data.creatureID];
+		if _ then tinsert(displayInfo, _); data.displayInfo = displayInfo; return displayInfo; end
+
+		-- loop through "n" providers
+		if data.providers then
+			for k,v in pairs(data.providers) do
+				-- if one of the providers is an NPC, we should show its texture regardless of other providers
+				if v[1] == "n" then
+					_ = v[2] and app.NPCDisplayIDFromID[v[2]];
+					if _ then tinsert(displayInfo, _); end
+				end
+			end
+		end
+		if displayInfo[1] then data.displayInfo = displayInfo; return displayInfo; end
+
+		-- for quest givers
+		if data.qgs then
+			for k,v in pairs(data.qgs) do
+				_ = v and app.NPCDisplayIDFromID[v];
+				if _ then tinsert(displayInfo, _); end
+			end
+		end
+		if displayInfo[1] then data.displayInfo = displayInfo; return displayInfo; end
+	else
+		-- specific displayID
+		local _ = data.displayID or data.fetchedDisplayID;
+		if _ then return _; end
+
+		-- specific creatureID for displayID
+		_ = data.creatureID and app.NPCDisplayIDFromID[data.creatureID];
+		if _ then data.fetchedDisplayID = _; return _; end
+
+		-- loop through "n" providers
+		if data.providers then
+			for k,v in pairs(data.providers) do
+				-- if one of the providers is an NPC, we should show its texture regardless of other providers
+				if v[1] == "n" then
+					_ = v[2] and app.NPCDisplayIDFromID[v[2]];
+					if _ then data.fetchedDisplayID = _; return _; end
+				end
+			end
+		end
+
+		-- for quest givers
+		if data.qgs then
+			for k,v in pairs(data.qgs) do
+				_ = v and app.NPCDisplayIDFromID[v];
+				if _ then data.fetchedDisplayID = _; return _; end
+			end
+		end
+	end
+end
 GameTooltipModel.TrySetModel = function(self, reference)
 	GameTooltipModel.HideAllModels(self);
 	if app.Settings:GetTooltipSetting("Models") then
 		self.lastModel = reference;
-		local displayInfo = reference.displayInfo;
-		if displayInfo then
-			if GameTooltipModel.TrySetDisplayInfos(self, reference, displayInfo) then
-				return true;
-			end
-		end
-		if reference.qgs then
-			if #reference.qgs > 1 then
-				local displayInfo = {};
-				local markedKeys = {};
-				for i,creatureID in ipairs(reference.qgs) do
-					local displayID = app.NPCDisplayIDFromID[creatureID];
-					if displayID and not markedKeys[displayID] then
-						tinsert(displayInfo, displayID);
-						markedKeys[displayID] = 1;
-					end
-				end
-				if GameTooltipModel.TrySetDisplayInfos(self, reference, displayInfo) then
-					return true;
-				end
-			else
-				local displayID = app.NPCDisplayIDFromID[reference.qgs[1]];
-				if displayID then
-					self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
-					self.Model:SetCamDistanceScale(reference.modelScale or 1);
-					self.Model:SetDisplayInfo(displayID);
-					self.Model:Show();
-					self:Show();
-					return true;
-				end
-			end
-		elseif reference.providers then
-			local displayInfo = {}
-			local markedKeys = {}
-			for k,v in pairs(reference.providers) do
-				if v[1] == "n" and v[2] > 0 then
-					local displayID = app.NPCDisplayIDFromID[v[2]];
-					if displayID and not markedKeys[displayID] then
-						tinsert(displayInfo, displayID);
-						markedKeys[displayID] = 1;
-					end
-				end
-			end
-			if GameTooltipModel.TrySetDisplayInfos(self, reference, displayInfo) then
-				return true;
-			end
+		local displayInfos = reference.displayInfo or GetDisplayID(reference, true);
+		if GameTooltipModel.TrySetDisplayInfos(self, reference, displayInfos) then
+			return true;
 		end
 
 		if reference.displayID then
-			print("DisplayID", reference.displayID);
 			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
 			self.Model:SetCamDistanceScale(reference.modelScale or 1);
 			self.Model:SetDisplayInfo(reference.displayID);
@@ -469,11 +488,12 @@ GameTooltipModel.TrySetModel = function(self, reference)
 			self.Model:Show();
 			self:Show();
 		end
-		if reference.model then
+		local modelID = reference.model and tonumber(reference.model);
+		if modelID and modelID > 0 then
 			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
 			self.Model:SetCamDistanceScale(reference.modelScale or 1);
 			self.Model:SetUnit("none");
-			self.Model:SetModel(reference.model);
+			self.Model:SetModel(modelID);
 			self.Model:Show();
 			self:Show();
 			return true;
