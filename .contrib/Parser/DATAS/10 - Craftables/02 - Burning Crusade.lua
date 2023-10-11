@@ -799,6 +799,8 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 				i(25690),	-- Heavy Clefthoof Leggings
 				i(25689),	-- Heavy Clefthoof Vest
 				i(29505),	-- Hood of Primal Life
+				applyclassicphase(TBC_PHASE_FIVE, i(34371, {["timeline"] = {ADDED_2_4_0}})),	-- Leather Chestguard of the Sun
+				applyclassicphase(TBC_PHASE_FIVE, i(34372, {["timeline"] = {ADDED_2_4_0}})),	-- Leather Gauntlets of the Sun
 				applyclassicphase(TBC_PHASE_THREE, i(32393, {["timeline"] = {ADDED_2_1_0}})),	-- Redeemed Soul Cinch
 				applyclassicphase(TBC_PHASE_THREE, i(32396, {["timeline"] = {ADDED_2_1_0}})),	-- Redeemed Soul Legguards
 				applyclassicphase(TBC_PHASE_THREE, i(32394, {["timeline"] = {ADDED_2_1_0}})),	-- Redeemed Soul Moccasins
@@ -853,8 +855,6 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 				applyclassicphase(TBC_PHASE_FIVE, i(34374, {["timeline"] = {ADDED_2_4_0}})),	-- Fletcher's Gloves of the Phoenix
 				applyclassicphase(TBC_PHASE_THREE, i(32400, {["timeline"] = {ADDED_2_1_0}})),	-- Greaves of Shackled Souls
 				applyclassicphase(TBC_PHASE_TWO, i(30043, {["timeline"] = {ADDED_2_1_0}})),	-- Hurricane Boots
-				applyclassicphase(TBC_PHASE_FIVE, i(34371, {["timeline"] = {ADDED_2_4_0}})),	-- Leather Chestguard of the Sun
-				applyclassicphase(TBC_PHASE_FIVE, i(34372, {["timeline"] = {ADDED_2_4_0}})),	-- Leather Gauntlets of the Sun
 				i(29508),	-- Living Dragonscale Helm
 				applyclassicphase(TBC_PHASE_THREE, i(32577, {["timeline"] = {ADDED_2_1_0}})),	-- Living Earth Bindings
 				applyclassicphase(TBC_PHASE_THREE, i(32579, {["timeline"] = {ADDED_2_1_0}})),	-- Living Earth Shoulders

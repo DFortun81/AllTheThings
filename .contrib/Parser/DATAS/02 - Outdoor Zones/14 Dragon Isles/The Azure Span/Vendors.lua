@@ -26,7 +26,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					i(200927, {	-- Petal (PET!)
 						["cost"] = {
-							{ "i", 163036, 250 },	-- 250x Polished Pet Charm
+							{ "i", 163036, 100 },	-- 100x Polished Pet Charm
 						},
 					}),
 					i(201703, {	-- Pinkie (PET!)

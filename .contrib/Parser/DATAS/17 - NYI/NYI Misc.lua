@@ -640,7 +640,6 @@ root(ROOTS.NeverImplemented, {
 				i(198653),	-- PH Profession Drop
 				i(190340),	-- Plainshunter's Supplies
 				i(201757),	-- Plundered Supplies
-				i(194903),	-- Pocket Chocolate
 				i(201821),	-- Professor Instructaur's Brain
 				i(198518),	-- Professor Instructaur's Top Secret Guide to Blacksmithing
 				i(198519),	-- Professor Instructaur's Top Secret Guide to Alchemy

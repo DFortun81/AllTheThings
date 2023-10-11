@@ -119,7 +119,7 @@ EXPERT_ARTISAN_LEATHERWORKING = {
 		r(10511),	-- Turtle Scale Breastplate
 		r(10552),	-- Turtle Scale Helm
 		r(10556),	-- Turtle Scale Leggings
-		-- #if AFTER TBC
+		-- #if AFTER CATA
 		r(10650),	-- Dragonscale Breastplate
 		r(10619, {["timeline"] = {REMOVED_4_0_3}}),	-- Dragonscale Gauntlets
 		r(10647),	-- Feathered Breastplate

@@ -460,6 +460,18 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 10.1.0.49444", "removed 10.1.0.49801" },	-- Removed from store May 31
 		--	["description"] = "Will be available from Trading Post later in 2023.",
 		}),
+		i(200925,	-- Ensemble: Solemn Watchman's Garb
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+			i(190091),	-- Fanciful Corsage
+			i(190728),	-- Gothic Corsage
+			i(190694),	-- Solemn Watchman's Belt
+			i(190695),	-- Solemn Watchman's Boots
+			i(190872),	-- Solemn Watchman's Cuirass
+			i(190152),	-- Solemn Watchman's Gauntlets
+			i(190901),	-- Solemn Watchman's Helm
+			i(190896),	-- Solemn Watchman's Spaulders
+			i(190845),	-- Solemn Watchman's Trousers
+		})),
 		i(208412,	-- High Scholar's Arcana
 			bubbleDownSelf({ ["timeline"] = { "added 10.1.5.51130" } }, {
 			i(208406),	-- High Scholar's Circlet

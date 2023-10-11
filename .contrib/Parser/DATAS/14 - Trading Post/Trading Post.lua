@@ -961,7 +961,7 @@ root(ROOTS.NeverImplemented, {
 					["cost"] = { { "c", TRADERS_TENDER, 700 }, },
 					["timeline"] = { ADDED_10_1_7 },
 				}),
-				i(69846),	-- Winged Guardian (MOUNT!) Blizz promised this when removing from store in Jan 2023
+				--i(69846),	-- Winged Guardian (MOUNT!) Blizz promised this when removing from store in Jan 2023
 			})),
 		})
 	})),

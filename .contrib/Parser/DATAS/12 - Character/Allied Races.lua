@@ -628,13 +628,13 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			q(57495, {	-- The Future of Mechagon
 				["sourceQuests"] = { 57496 },	-- Ascension
 				["provider"] = { "n", 162806 },	-- Gelbin Mekkatorque
-				["coord"] = { 58.1, 41.1, 1573 },
+				["coord"] = { 58.1, 41.1, MECHAGON_CITY },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(57497, {	-- Propagate the News
 				["sourceQuests"] = { 57495 },	-- The Future of Mechagon
 				["provider"] = { "n", 157997 },	-- Kelsey Steelspark
-				["coord"] = { 17.8, 65.5, 1573 },
+				["coord"] = { 17.8, 65.5, MECHAGON_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					ach(14013),	-- Allied Races: Mechagnome
@@ -644,7 +644,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			-- Mechagnome Starter Quests
 			q(58146, {	-- For the Alliance
 				["provider"] = { "n", 159587 },	-- Gelbin Mekkatorque
-				["coord"] = { 34.0, 57.5, 1573 },
+				["coord"] = { 34.0, 57.5, MECHAGON_CITY },
 				["races"] = { MECHAGNOME },
 				["lvl"] = 20,
 				["g"] = {

@@ -701,7 +701,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 		i(197777),	-- Hopefully Healthy
 		i(197765),	-- Impossibly Sharp Cutting Knife
 		i(197760),	-- Mackerel Snackeral
-		i(194902),	-- Ooey-Gooey Chocolate
+		i(194902, {	-- Ooey-Gooey Chocolate
+			i(194903),	-- Pocket Chocolate
+		}),
 		i(197756),	-- Pebbled Rock Salts
 		i(197761),	-- Probably Protein
 		i(197785),	-- Revenge, Served Cold
