@@ -1110,6 +1110,10 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["provider"] = { "n", 203516 },	-- Kayann
 				["coord"] = { 36.5, 62.5, VALDRAKKEN },
 				["timeline"] = { ADDED_10_1_0 },
+				["g"] = {
+					i(198613),	-- Leatherworking Designs
+					i(204800),	-- Scaly Stone Hide (QI!)
+				},
 			}),
 			-- Patch 10.2.0.
 			q(77945, {	-- Boots on the Ground
@@ -1123,6 +1127,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["coord"] = { 36.8, 63.1, VALDRAKKEN },
 				["timeline"] = { ADDED_10_2_0 },
 				["g"] = {
+					i(198613),	-- Leatherworking Designs
 					i(208950),	-- Emerald Fiber (QI!)
 				},
 			}),

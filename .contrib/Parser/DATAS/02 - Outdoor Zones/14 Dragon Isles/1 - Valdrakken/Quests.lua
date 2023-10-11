@@ -295,6 +295,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["classes"] = { EVOKER },
 				["g"] = {
 					i(205252),	-- Momento of Rekindled Bonds
+					i(204830),	-- Shattered Horn Signet (QI!)
+					i(204824),	-- Torn Journal Entry (QI!)
 				},
 			}),
 			------ Miscellaneous ------

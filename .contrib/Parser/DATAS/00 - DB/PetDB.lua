@@ -4052,9 +4052,6 @@ i(208151, 4263);	-- Tobias
 i(190601, 2890);	-- Sunny (Shop)
 i(207962, 179);		-- Spirit of Competition (Trading Post)
 i(208045, 4253);	-- Slyvy
---- SPECIAL ---
-i(0, 4267);			-- Lil' Maggz
-i(0, 3579);			-- Ysergle The Dreamurk
 -- TRAINER --
 i(0, 3587);			-- Lifelike Mechanical Duckling
 i(0, 3608);			-- Lifelike Mechanical Turtle
@@ -4079,6 +4076,9 @@ i(206174, 3582);	-- Blub
 -- PATCH 10.1.7 --
 ------------------
 i(208543, 4265);	-- Lil' Frostwing
+--- SPECIAL ---
+i(0, 4267);			-- Lil' Maggz
+i(0, 3579);			-- Ysergle The Dreamurk
 --- NYI ---
 i(208850, 0);		-- Lil' Maggz
 

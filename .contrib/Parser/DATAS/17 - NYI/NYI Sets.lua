@@ -1951,6 +1951,46 @@ root(ROOTS.NeverImplemented, {
 		tier(DF_TIER, {
 			-- 10.0.0
 			tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				class(EVOKER, {
+					i(187651),	-- Evoker Tunic
+					i(187652),	-- Evoker Boots
+					i(187653),	-- Evoker Gloves
+					i(187654),	-- Evoker Coif
+					i(187655),	-- Evoker Legwraps
+					i(187656),	-- Evoker Pauldrons
+					i(187657),	-- Evoker Belt
+					i(187658),	-- Evoker Armbands
+					i(187650),	-- Staff of Draconic Energies
+					--
+					i(194522),	-- Blue Winglord's Staff
+					i(194523),	-- Blue Winglord's Chain
+					i(194524),	-- Blue Winglord's Boots
+					i(194525),	-- Blue Winglord's Bracers
+					i(194526),	-- Blue Winglord's Hauberk
+					i(194527),	-- Blue Winglord's Grips
+					i(194528),	-- Blue Winglord's Coif
+					i(194529),	-- Blue Winglord's Greaves
+					i(194530),	-- Blue Winglord's Shoulders
+					i(194531),	-- Claw-Carved Figurine
+					i(194532),	-- Blue Winglord's Insignia
+					i(194533),	-- Blue Winglord's Ring
+					i(194534),	-- Blue Winglord's Loop
+					i(194535),	-- Cobalt Winglord's Cloak
+					i(194536),	-- Blue Winglord's Amulet
+					--
+					i(188818),	-- Emerald Winglord's Shoulderss
+					i(188825),	-- Emerald Winglord's Chain
+					i(188826),	-- Emerald Winglord's Staff
+					--
+					i(191821),	-- Obsidian Dracthyr Battlegear Hauberk
+					i(191822),	-- Obsidian Dracthyr Battlegear Grips
+					i(191823),	-- Obsidian Dracthyr Battlegear Helm
+					i(191824),	-- Obsidian Dracthyr Battlegear Leggings
+					i(191825),	-- Obsidian Dracthyr Battlegear Monnion
+					i(191826),	-- Obsidian Dracthyr Battlegear Belt
+					i(191827),	-- Obsidian Dracthyr Battlegear Bracers
+					i(191828),	-- Obsidian Dracthyr Battlegear Cover
+				}),
 				-- Green Dragon Set
 
 				-- Verdant Wing [Cloth]
@@ -3942,6 +3982,7 @@ root(ROOTS.NeverImplemented, {
 						}),
 					})),
 				}),
+				i(206026),	-- Ensemble: Enmity Hood and Cloak
 			})),
 		}),
 	}),

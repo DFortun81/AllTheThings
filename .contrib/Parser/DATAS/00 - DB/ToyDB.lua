@@ -1198,7 +1198,6 @@ i(205463);	-- Molten Lava Ball
 -- PATCH 10.1.5 --
 ------------------
 i(208186);	-- Boffins
-i(210042);	-- Chilling Celebration Banner
 i(140192);	-- Dalaran Hearthstone
 i(206268);	-- Ethereal Transmogrifier
 i(208096);	-- Familiar Journal
@@ -1218,6 +1217,7 @@ i(197961);	-- Whelps on Strings
 -- PATCH 10.1.7 --
 ------------------
 i(208433);	-- Bronze Racer's Pennant
+i(210042);	-- Chilling Celebration Banner
 i(208421);	-- Compendium of the New Moon
 i(209858);	-- Dreamsurge Remnant
 i(209944);	-- Friendsurge Defenders

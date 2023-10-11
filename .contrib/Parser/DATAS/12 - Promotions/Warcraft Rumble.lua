@@ -74,15 +74,29 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDE
             ["sym"] = {{ "achievement_criteria" }},
         }),
     }),
+	n(MAILBOX, {
+		i(202183, {	-- Small Rumble Purse
+			i(204731),	-- Warcraft Rumble Welcome Letter [N]
+			i(205189, {	-- Warcraft Rumble Welcome Letter [A]
+				["races"] = ALLIANCE_ONLY,
+			}),
+			i(205190, {	-- Warcraft Rumble Welcome Letter [H]
+				["races"] = HORDE_ONLY,
+			}),
+		}),
+	}),
     n(QUESTS, {
-        q(73183, {	-- Wanna Play a Game?
-            ["provider"] = { "i", 204731 },
-            ["groups"] = {
-                i(202183, {	-- Small Rumble Purse (This item is mailed to you)
-                    i(204731),	-- Warcraft Rumble Welcome Letter (QI!)
-                }),
-            },
+        q(73183, {	-- Wanna Play a Game? [N]
+            ["provider"] = { "i", 204731 },	-- Warcraft Rumble Welcome Letter [N]
         }),
+		q(75625, {	-- Wanna Play a Game? [A]
+			["provider"] = { "i", 205189 },	-- Warcraft Rumble Welcome Letter [A]
+			["races"] = ALLIANCE_ONLY,
+		}),
+		q(75626, {	-- Wanna Play a Game? [H]
+			["provider"] = { "i", 205190 },	-- Warcraft Rumble Welcome Letter [H]
+			["races"] = HORDE_ONLY,
+		}),
         q(75221, {  -- Find a Rumble Coin
             ["qg"] = 201230,    -- Mizzen
             ["coords"] = {
@@ -295,8 +309,6 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDE
 
 root(ROOTS.HiddenQuestTriggers, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 	-- TODO: these are real quests, probably in different cities/locations?
-	q(75625),   -- Wanna Play a Game?
-	q(75626),   -- Wanna Play a Game?
 	q(75709),   -- Find a Rumble Coin
 	q(75711),   -- Find a Rumble Coin
 	q(75712),   -- Warcraft Rumble Minis: New Look!

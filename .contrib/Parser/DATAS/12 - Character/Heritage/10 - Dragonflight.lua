@@ -47,6 +47,9 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = { 72408 },	-- A Window to the Past
 					["provider"] = { "n", 198883 },	-- Vanessa VanCleef
 					["coord"] = { 44.3, 66.0, ELWYNN_FOREST },
+					["g"] = {
+						i(202106),	-- Chewed Piece of Journal (QI!)
+					},
 				}),
 				q(72424, {	-- Looking for Something Specific
 					["sourceQuests"] = { 72409 },	-- Rotten Old Memories

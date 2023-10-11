@@ -892,6 +892,10 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				["provider"] = { "n", 203516 },	-- Kayann
 				["coord"] = { 36.5, 62.5, VALDRAKKEN },
 				["timeline"] = { ADDED_10_1_0 },
+				["g"] = {
+					i(198606),	-- Blacksmith's Writ
+					i(204434),	-- Lava-Quenched Blade (QI!)
+				},
 			}),
 			q(75569, {	-- Blacksmith, Black Dragon
 				["provider"] = { "n", 203516 },	-- Kayann
@@ -910,6 +914,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				["coord"] = { 36.8, 63.1, VALDRAKKEN },
 				["timeline"] = { ADDED_10_2_0 },
 				["g"] = {
+					i(198606),	-- Blacksmith's Writ
 					i(209049),	-- Essence of Endless Flame (QI!)
 				},
 			}),

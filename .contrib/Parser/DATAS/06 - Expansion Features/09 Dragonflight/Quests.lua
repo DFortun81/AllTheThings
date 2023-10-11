@@ -683,6 +683,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					i(205908, {	-- Inherited Wisdom of Senegos (TOY!)
 						["description"] = "You will find this in your mailbox upon completing this quest",
 					}),
+					i(205970),	-- Azure Flightstone
 				},
 			}),
 		}),

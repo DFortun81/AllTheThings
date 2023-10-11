@@ -179,6 +179,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					193909,	-- Raszageth the Storm-Eater
 				},
 				["g"] = {
+					i(205962, {	-- Echoing Storm Flightstone
+						["timeline"] = { ADDED_10_1_0 },
+					}),
 					i(194642),	-- Design: Choker of Shielding (RECIPE!)
 					i(194259),	-- Pattern: Allied Cinch of Time Dilation (RECIPE!)
 					i(194266),	-- Pattern: Bronzed Grip Wrappings (RECIPE!)

@@ -1707,105 +1707,8 @@ root(ROOTS.Unsorted, {
 			i(208567),	-- Medal of Conquest
 		})),
 		tier(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
-			header(HEADERS.LFGDungeon, 2403, {	-- Aberrus, the Shadowed Crucible
-				i(202581),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Leather - WRIST 1
-				i(202608),	-- Power-Draining Spire
-				i(202609),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - Trinket - INT
-				i(202611),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - Trinket - Physical DPS
-				i(202648),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - CLOAK 2
-				i(202649),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - FINGER 2
-				i(202650),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - NECK 2
-				i(202651),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Cloth - FEET 2
-				i(202653),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Cloth - WRIST 2
-				i(202654),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Leather - FEET 2
-				i(202656),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Leather - WRIST 2
-				i(202657),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Mail - FEET 2
-				i(202658),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Mail - WAIST 2
-				i(202660),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Plate - FEET 2
-				i(202661),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Plate - WAIST 2
-				i(202662),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Plate - WRIST 2
-				i(202664),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - NECK 3
-				i(202665),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - FINGER 3
-				i(202666),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - CLOAK 3
-				i(204064),	-- PH 10.1 Raid - Black Dragon Labs - Boss 9 - Sarkareth - Accessory - Trinket - Omni
-			}),
-			n(ARMOR, {
-				i(204087),	-- 10.1 Cloak Test Item
-			}),
-			filter(MISC, {
-				i(202206),	-- Thumper Part
-				i(202387),	-- Slightly Ruffled Top Hat
-				i(204580),	-- Abnormal Brain
-				i(204846),	-- Conjured Rocks on the Rocks
-				i(204883),	-- Titan Mining Tool
-				i(204884),	-- Titan Control Card
-				i(204885),	-- Boulder Breakdown Mixture
-				i(204886),	-- Insulating Embershard
-				i(204887),	-- Unstable Embershard
-				i(204889),	-- Weak Elemental Binding Rings
-				i(204890),	-- Dampening Emitter
-				i(204891),	-- Tempered Embershard
-				i(204892),	-- Time-Lost Brie
-				i(204893),	-- Three-Cheese Cake
-				i(205189),	-- Arclight Welcome Letter
-				i(205190),	-- Arclight Welcome Letter
-				i(205198),	-- Detailed Titan Key
-				i(205220),	-- Corroded Key
-				i(205234),	-- Soiled Key
-				i(205236),	-- Long-Toed Talon
-				i(205238),	-- Rain-soaked Feather
-				i(205239),	-- Fluffy Ear
-				i(205244),	-- Rain-soaked pelt
-				i(205467),	-- Preserved Krolusk Crest
-				i(205472),	-- Wad of Sparkling Somethings
-				i(205691),	-- Hypnotic Murloc Lure
-				i(205695),	-- Dense Salamanther Skull
-				i(205697),	-- Gelatinous Egg Mass
-				i(205163),	-- Lucky Horseshoe - FOR TESTING AURAS DO NOT USE (SH)
-				i(205867),	-- Steaming Drake Heart
-				i(205875),	-- Massive Deepstrider Femur
-				i(205898),	-- Metal Key and shield disabled
-				i(205962),	-- Echoing Storm Flightstone
-				i(205970),	-- Azure Flightstone
-				i(205993),	-- Set Keystone Map: The Vortex Pinnacle
-			}),
-			filter(QUEST_ITEMS, {
-				i(202705),	-- Snail Slime
-				i(202875),	-- Snail Lasso
-				i(203229),	-- Snail Slime
-				i(203707),	-- Water Bucket
-				i(204175),	-- Unknown Core
-				i(204197),	-- Shard of an Earth Portal
-				i(204198),	-- Shard of an Fire Portal
-				i(204315),	-- Zaqali Bone Needle
-				i(204325),	-- Crude Key Fragment
-				i(204326),	-- Strange Artifact
-				i(204327),	-- Titan Machine Part
-				i(204331),	-- Djaradin Pillar Shard
-				i(204347),	-- Pool Contaminant
-				i(204349),	-- Bigger Wrench
-				i(204351),	-- Animated Crystal Shard
-				i(204434),	-- Lava-Quenched Blade
-				i(204637),	-- Boulder Chunk
-				i(201956),	-- [DNT] Snakey Eyes
-				i(204796),	-- Deepflayer Dust
-				i(204800),	-- Scaly Stone Hide
-				i(204824),	-- Torn Journal Entry
-				i(204830),	-- Shattered Horn Signet
-				i(202106),	-- Chewed Piece of Journal
-				i(205410),	-- Pungent Morsel
-			}),
-			n(WEAPONS, {
-				i(204638),	-- Sunder Wing
-			}),
-			n(REWARDS, {
-				-- Research
-				i(205454),	-- Researchers Wheel Barrow
-				-- Diablo
-				i(206026),	-- Ensemble: Enmity Hood and Cloak
-				-- New Stuff
-				i(206138),	-- Scalewarden's Pennant
-				-- New
+			filter(COSMETIC, {
+				---- TRADING POST ----
 				i(189885),	-- The Battlespoon
 			}),
 			n(QUESTS, {
@@ -2035,13 +1938,9 @@ root(ROOTS.Unsorted, {
 		})),
 		tier(DF_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
 			filter(COSMETIC, {
-				n(ARMOR, {
-					-- Cloth
-					i(190075),	-- Mantle of the Scholarly Raven
-
-					-- Cosmetic
-					i(190428),	-- Regal Warcloak
-				}),
+				---- TRADING POST ----
+				i(190075),	-- Mantle of the Scholarly Raven
+				i(190428),	-- Regal Warcloak
 				n(SETS, {
 					-- Highborne Scholar Set
 					i(190435),	-- Highborne Scholar's Belt
@@ -2293,55 +2192,9 @@ root(ROOTS.Unsorted, {
 			}),
 		})),
 		tier(DF_TIER, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
-			n(ARMOR, {
-				n(SETS, {
-					-- Evoker Set --
-					i(187651),	-- Evoker Tunic
-					i(187652),	-- Evoker Boots
-					i(187653),	-- Evoker Gloves
-					i(187654),	-- Evoker Coif
-					i(187655),	-- Evoker Legwraps
-					i(187656),	-- Evoker Pauldrons
-					i(187657),	-- Evoker Belt
-					i(187658),	-- Evoker Armbands
-					i(187650),	-- Staff of Draconic Energies
-
-					-- Evoker Set -- // Might be Party Sync /Braghe
-					i(194522),	-- Blue Winglord's Staff
-					i(194523),	-- Blue Winglord's Chain
-					i(194524),	-- Blue Winglord's Boots
-					i(194525),	-- Blue Winglord's Bracers
-					i(194526),	-- Blue Winglord's Hauberk
-					i(194527),	-- Blue Winglord's Grips
-					i(194528),	-- Blue Winglord's Coif
-					i(194529),	-- Blue Winglord's Greaves
-					i(194530),	-- Blue Winglord's Shoulders
-					i(194531),	-- Claw-Carved Figurine
-					i(194532),	-- Blue Winglord's Insignia
-					i(194533),	-- Blue Winglord's Ring
-					i(194534),	-- Blue Winglord's Loop
-					i(194535),	-- Cobalt Winglord's Cloak
-					i(194536),	-- Blue Winglord's Amulet
-
-					-- Evoker Set --
-					i(188818),	-- Emerald Winglord's Shoulderss
-					i(188825),	-- Emerald Winglord's Chain
-					i(188826),	-- Emerald Winglord's Staff
-
-					-- Evoker Sets --
-					i(191821),	-- Obsidian Dracthyr Battlegear Hauberk
-					i(191822),	-- Obsidian Dracthyr Battlegear Grips
-					i(191823),	-- Obsidian Dracthyr Battlegear Helm
-					i(191824),	-- Obsidian Dracthyr Battlegear Leggings
-					i(191825),	-- Obsidian Dracthyr Battlegear Monnion
-					i(191826),	-- Obsidian Dracthyr Battlegear Belt
-					i(191827),	-- Obsidian Dracthyr Battlegear Bracers
-					i(191828),	-- Obsidian Dracthyr Battlegear Cover
-				}),
-				i(191942),	-- Belloc's Hat [Added SpellIDs regarding this.. Belloc also lost his hat... In Waking Shores 371683 (Wear Belloc's Hat [DNT]), 371665 (Sit on Belloc's Head [DNT]) /Brage ]
-			}),
 			filter(COSMETIC, {
 				n(SETS, {
+					---- TRADING POST ----
 					-- Honored Valarjar Set [Mail]
 					i(190563),	-- Armbands of the Honored Valarjar
 					i(190564),	-- Cape of the Honored Valarjar
@@ -2394,14 +2247,10 @@ root(ROOTS.Unsorted, {
 				i(194331),	-- Pristine Research Journal
 				i(194316),	-- Tome of Forgotten Legends
 				i(191647),	-- Tuskarr Fishing Pole
-				-- Only Ruby Spaulders used.. The others might be in other Metas later in expansion / Braghe
-				i(199665),	-- Spiked Obsidian Spaulders
 				i(199666),	-- Spiked Azure Spaulders
 				i(199667),	-- Spiked Bronze Spaulders
 				i(199668),	-- Spiked Emerald Spaulders
-			}),
-			filter(MISC, {
-				i(200638),	-- Bubblefilled Flounder [Speculated to be used in a Secret /Braghe]
+				i(199665),	-- Spiked Obsidian Spaulders
 			}),
 			n(QUESTS, {
 				-- 10.0.0.44649

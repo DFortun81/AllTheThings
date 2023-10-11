@@ -173,6 +173,25 @@ root(ROOTS.NeverImplemented, {
 				i(204249),	-- Translated Correspondence of Black Dragons
 				i(202205),	-- Translated Journal of Adamanthia
 			})),
+
+			-- 10.1.0
+			tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
+				i(201956),	-- [DNT] Snakey Eyes
+				i(204351),	-- Animated Crystal Shard
+				i(204349),	-- Bigger Wrench
+				i(204637),	-- Boulder Chunk
+				i(204325, {["spellID"] = 0 }),	-- Crude Key Fragment
+				i(204331),	-- Djaradin Pillar Shard
+				i(204347),	-- Pool Contaminant
+				i(205410),	-- Pungent Morsel
+				i(204197),	-- Shard of an Earth Portal
+				i(204198),	-- Shard of an Fire Portal
+				i(202705),	-- Snail Slime
+				i(202875),	-- Snail Lasso
+				i(204327),	-- Titan Machine Part
+				i(204175),	-- Unknown Core
+				i(203707),	-- Water Bucket
+			})),
 		}),
 	}),
 });

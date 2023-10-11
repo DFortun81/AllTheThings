@@ -599,7 +599,7 @@ root(ROOTS.NeverImplemented, {
 			i(182570),	-- NPE Weapon Shield
 			i(182576),	-- NPE Weapon Shield 2
 			-- ItemID/Retrieving
-			
+
 			i(34415),	-- Crystaline Shard Shield
 			i(60220),	-- Theodore's Heirloom Buckler
 			i(108808),	-- 7.0 PH Shield - Shield Str
@@ -620,7 +620,7 @@ root(ROOTS.NeverImplemented, {
 			i(182572),	-- NPE Weapon Staff INT
 			i(180491),	-- Wingdancer's Spire
 			-- ItemID/Retrieving
-			
+
 			i(38245),	-- Crystalline Providence
 			i(38248),	-- Torch of the Fallen Souls
 			i(49458),	-- Insight of the Water
@@ -683,8 +683,8 @@ root(ROOTS.NeverImplemented, {
 			i(81703),	-- Glorenzelg, High-Blade of the Silver Hand, added in 5.0.1 ??
 			i(182337),	-- Unholy Weapon
 			-- ItemID/Retrieving
-			
-			
+
+
 			i(23432),	-- Engraved Greatsword
 			i(49457),	-- Fury of the Flame
 			i(108806),	-- 7.0 PH Weapon - 2H Sword Str
@@ -721,5 +721,11 @@ root(ROOTS.NeverImplemented, {
 				i(188133),	-- Owen Test
 			}),
 		}),
+	}),
+	n(WEAPONS, {
+		-- 10.1.0
+		tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
+			i(204638),	-- Sunder Wing
+		})),
 	}),
 });

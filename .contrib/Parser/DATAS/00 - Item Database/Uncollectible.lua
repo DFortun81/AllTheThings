@@ -696,6 +696,13 @@ i(204812);	-- Seared Book
 i(203988);	-- Warshard of the Hakkari, Unborn
 i(203989);	-- Warshard of the Hakkari, Unborn
 
+-- Poor Trash
+i(205236);	-- Long-Toed Talon
+i(205238);	-- Rain-soaked Feather
+i(205239);	-- Fluffy Ear
+i(205244);	-- Rain-soaked pelt
+
+
 ------------------
 -- PATCH 10.1.0 --
 ------------------
@@ -755,6 +762,7 @@ i(204817);	-- Underlight Cocoon Fibers
 i(203454);	-- Zaqali Equipment
 
 -- Poor Trash --
+i(204580);	-- Abnormal Brain
 i(205869);	-- Aromatic Royal Jelly
 i(205868);	-- Cracked Chitin Carapace
 i(205457);	-- Delicate Crystal Shell
@@ -777,6 +785,14 @@ i(205469);	-- Serrated Sporebat Spine
 i(205471);	-- Slimy Deepsea Fin
 i(205470);	-- Torn Deep Scales
 i(205461);	-- Vicious Stoneclaw
+
+
+i(205467);	-- Preserved Krolusk Crest
+i(205472);	-- Wad of Sparkling Somethings
+i(205695);	-- Dense Salamanther Skull
+i(205697);	-- Gelatinous Egg Mass
+i(205875);	-- Massive Deepstrider Femur
+
 
 -- Common Trash --
 i(204342);	-- Questionable Jerky

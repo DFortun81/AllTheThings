@@ -408,6 +408,10 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				["provider"] = { "n", 203516 },	-- Kayann
 				["coord"] = { 36.5, 62.5, VALDRAKKEN },
 				["timeline"] = { ADDED_10_1_0 },
+				["g"] = {
+					i(198608),	-- Alchemy Notes
+					i(204796),	-- Deepflayer Dust (QI!)
+				},
 			}),
 			q(75371, {	-- Fascinating Fungi
 				["provider"] = { "n", 203516 },	-- Kayann
@@ -420,6 +424,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				["coord"] = { 36.8, 63.1, VALDRAKKEN },
 				["timeline"] = { ADDED_10_2_0 },
 				["g"] = {
+					i(198608),	-- Alchemy Notes
 					i(208938),	-- Metamorphic Soot (QI!)
 				},
 			}),

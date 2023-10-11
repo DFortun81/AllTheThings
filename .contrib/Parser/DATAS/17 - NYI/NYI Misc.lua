@@ -618,6 +618,7 @@ root(ROOTS.NeverImplemented, {
 				i(194873),	-- Apprentice's Fluffed Quill
 				i(191192),	-- Assorted Parts
 				i(192078),	-- Bottled Putrescence
+				i(200638),	-- Bubblefilled Flounder [Speculated to be used in a Secret /Braghe]
 				i(191058),	-- Dilapidated Parchment: Bottom Half
 				i(191876),	-- DNT - Stonename Razorstone
 				i(191877),	-- DNT - Stonename Razorstone
@@ -795,6 +796,29 @@ root(ROOTS.NeverImplemented, {
 				i(205933),	-- Add Keystone Affix: Entangling
 				i(205935),	-- Add Keystone Affix: Incorporeal
 				i(206158),	-- Add Keystone Affix: Shielding
+				i(204885),	-- Boulder Breakdown Mixture
+				i(204846),	-- Conjured Rocks on the Rocks
+				i(205220),	-- Corroded Key
+				i(204890),	-- Dampening Emitter
+				i(205198),	-- Detailed Titan Key
+				i(205691),	-- Hypnotic Murloc Lure
+				i(204886),	-- Insulating Embershard
+				i(205163),	-- Lucky Horseshoe - FOR TESTING AURAS DO NOT USE (SH)
+				i(205898),	-- Metal Key and shield disabled
+				i(205454),	-- Researchers Wheel Barrow
+				i(206138),	-- Scalewarden's Pennant
+				i(205993),	-- Set Keystone Map: The Vortex Pinnacle
+				i(202387),	-- Slightly Ruffled Top Hat
+				i(205234),	-- Soiled Key
+				i(205867),	-- Steaming Drake Heart
+				i(204891),	-- Tempered Embershard
+				i(202206),	-- Thumper Part
+				i(204893),	-- Three-Cheese Cake
+				i(204892),	-- Time-Lost Brie
+				i(204884),	-- Titan Control Card
+				i(204883),	-- Titan Mining Tool
+				i(204887),	-- Unstable Embershard
+				i(204889),	-- Weak Elemental Binding Rings
 			})),
 		}),
 	}),
