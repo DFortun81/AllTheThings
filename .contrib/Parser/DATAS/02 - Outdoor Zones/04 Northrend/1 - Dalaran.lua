@@ -3764,6 +3764,17 @@ for key,g in pairs(TIER_SEVEN_GROUPS) do
 	applyclassicphase(WRATH_PHASE_ONE, g);
 end
 
+-- Wrath Classic only: These quests were ripped out with Wrath Phase 4.
+local OnUpdateForTimearDailies = [[function(t)
+	if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_FOUR .. [[) then
+		t.u = ]] .. REMOVED_FROM_GAME .. [[;
+		t.rwp = nil;
+	else
+		t.u = ]] .. WRATH_PHASE_ONE .. [[;
+		t.rwp = 30300;
+	end
+end]];
+
 root(ROOTS.Zones, {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(NORTHREND_DALARAN, {
@@ -4226,7 +4237,11 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					ach(2019, {	-- Proof of Demise
+					ach(2019, bubbleDownSelf({	-- Proof of Demise
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
+					},  {
 						["timeline"] = { "added 3.0.1", "removed 4.0.1" },
 						["groups"] = {
 							crit(7309, {	-- Proof of Demise: Anub'arak
@@ -4278,7 +4293,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
 							}),
 						},
-					}),
+					})),
 					ach(2095, {	-- Silver in the City
 						["sym"] = {{ "achievement_criteria" }},
 						["requireSkill"] = FISHING,
@@ -4299,7 +4314,11 @@ root(ROOTS.Zones, {
 						["sym"] = {{ "achievement_criteria" }},
 						["requireSkill"] = FISHING,
 					}),
-					ach(2018, {	-- Timear Foresees
+					ach(2018, bubbleDownSelf({	-- Timear Foresees
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
+					}, {
 						["timeline"] = { "added 3.0.1", "removed 4.0.1" },
 						["groups"] = {
 							crit(7296, {	-- Timear Foresees Centrifuge Constructs in your Future!
@@ -4319,7 +4338,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { "added 3.0.1", "removed 4.0.1" },
 							}),
 						},
-					}),
+					})),
 				}),
 				-- #if AFTER MOP
 				filter(BATTLE_PETS, {
@@ -4834,6 +4853,9 @@ root(ROOTS.Zones, {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { AZJOL_NERUB, AZJOL_NERUB_FLOOR2, AZJOL_NERUB_FLOOR3 },
 						["isDaily"] = true,
@@ -4847,6 +4869,9 @@ root(ROOTS.Zones, {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { THE_VIOLET_HOLD_WRATH },
 						["isDaily"] = true,
@@ -4860,6 +4885,9 @@ root(ROOTS.Zones, {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { GUNDRAK, GUNDRAK_FLOOR2 },
 						["isDaily"] = true,
@@ -4873,6 +4901,9 @@ root(ROOTS.Zones, {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { AHNKAHET_THE_OLD_KINGDOM },
 						["isDaily"] = true,
@@ -4886,6 +4917,9 @@ root(ROOTS.Zones, {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { UTGARDE_KEEP, UTGARDE_KEEP_FLOOR2, UTGARDE_KEEP_FLOOR3 },
 						["isDaily"] = true,
@@ -4899,6 +4933,9 @@ root(ROOTS.Zones, {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { THE_NEXUS },
 						["isDaily"] = true,
@@ -4912,6 +4949,9 @@ root(ROOTS.Zones, {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { UTGARDE_PINNACLE, UTGARDE_PINNACLE_FLOOR2 },
 						["isDaily"] = true,
@@ -4925,6 +4965,9 @@ root(ROOTS.Zones, {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { THE_OCULUS, THE_OCULUS_FLOOR2, THE_OCULUS_FLOOR3, THE_OCULUS_FLOOR4, THE_OCULUS_FLOOR5 },
 						["isDaily"] = true,
@@ -4938,6 +4981,9 @@ root(ROOTS.Zones, {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { HALLS_OF_LIGHTNING, HALLS_OF_LIGHTNING_FLOOR2 },
 						["isDaily"] = true,
@@ -4951,6 +4997,9 @@ root(ROOTS.Zones, {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { THE_CULLING_OF_STRATHOLME, THE_CULLING_OF_STRATHOLME_FLOOR2 },
 						["isDaily"] = true,
@@ -4964,6 +5013,9 @@ root(ROOTS.Zones, {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { HALLS_OF_STONE },
 						["isDaily"] = true,
@@ -4977,6 +5029,17 @@ root(ROOTS.Zones, {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						-- #if ANYCLASSIC
+						["OnUpdate"] = [[function(t)
+							if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_FOUR .. [[) then
+								t.u = ]] .. REMOVED_FROM_GAME .. [[;
+								t.rwp = nil;
+							else
+								t.u = ]] .. WRATH_PHASE_THREE .. [[;
+								t.rwp = 30300;
+							end
+						end]],
+						-- #endif
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { TRIAL_OF_THE_CHAMPION },
 						["isDaily"] = true,
@@ -4990,6 +5053,9 @@ root(ROOTS.Zones, {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { DRAKTHARON_KEEP, DRAKTHARON_KEEP_FLOOR2 },
 						["isDaily"] = true,
@@ -5233,6 +5299,9 @@ root(ROOTS.Zones, {
 						["qg"] = 31439,	-- Archmage Timear
 						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
 						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { THE_OCULUS, THE_OCULUS_FLOOR2, THE_OCULUS_FLOOR3, THE_OCULUS_FLOOR4, THE_OCULUS_FLOOR5 },
 						["isDaily"] = true,
@@ -5262,6 +5331,9 @@ root(ROOTS.Zones, {
 						["qg"] = 31439,	-- Archmage Timear
 						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
 						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { THE_CULLING_OF_STRATHOLME, THE_CULLING_OF_STRATHOLME_FLOOR2 },
 						["isDaily"] = true,
@@ -5291,6 +5363,9 @@ root(ROOTS.Zones, {
 						["qg"] = 31439,	-- Archmage Timear
 						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
 						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { HALLS_OF_LIGHTNING, HALLS_OF_LIGHTNING_FLOOR2 },
 						["isDaily"] = true,
@@ -5320,6 +5395,9 @@ root(ROOTS.Zones, {
 						["qg"] = 31439,	-- Archmage Timear
 						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
 						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["timeline"] = { "removed 4.0.1" },
 						["maps"] = { UTGARDE_PINNACLE, UTGARDE_PINNACLE_FLOOR2 },
 						["isDaily"] = true,
