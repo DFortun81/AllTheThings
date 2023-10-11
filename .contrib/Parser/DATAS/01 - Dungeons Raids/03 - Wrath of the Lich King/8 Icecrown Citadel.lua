@@ -169,7 +169,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 			n(FACTIONS, {
 				faction(1156),	-- The Ashen Verdict
 			}),
-			n(QUALITY_LEGENDARY, {
+			applyclassicphase(WRATH_PHASE_FOUR_SHADOWMOURNE, n(QUALITY_LEGENDARY, {
 				["description"] = "These quests can only be completed on 25-Man Normal or Heroic difficulty.",
 				["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 				["title"] = "Shadowmourne",
@@ -312,7 +312,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						},
 					}),
 				},
-			}),
+			})),
 			n(QUESTS, {
 				q(24815, {	-- Choose Your Path
 					["qg"] = 38316,	-- Ormus the Penitent
@@ -2673,6 +2673,14 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						i(50105),	-- Shadowblade Pauldrons
 					},
 				}),
+				n(37184, {	-- Zafod Boombox
+					i(49278, {	-- Goblin Rocket Pack
+						-- #if NOT ANYCLASSIC
+						["collectible"] = false,	-- We can't collect it so we don't want it to hurt our numbers
+						["u"] = 15,			-- Unlearnable Filter
+						-- #endif
+					}),
+				}),
 			}),
 			n(ZONE_DROPS, {
 				i(50451),	-- Belt of the Lonely Noble
@@ -2683,15 +2691,11 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				i(50449),	-- Stiffened Corpse Shoulderpads
 				i(50452),	-- Wodin's Lucky Necklace
 			}),
-			n(37184, {	-- Zafod Boombox
-				-- Note!! Putting him here rather than 4 times for an unlearnable shirt
-				i(49278, {	-- Goblin Rocket Pack
-					-- #if NOT ANYCLASSIC
-					["collectible"] = false,	-- We can't collect it so we don't want it to hurt our numbers
-					["u"] = 15,			-- Unlearnable Filter
-					-- #endif
-				}),
+			-- #if BEFORE 4.0.1
+			n(COMMON_BOSS_DROPS, {
+				currency(341),	-- Emblem of Frost
 			}),
+			-- #endif
 			d(3, {	-- 10-Player (Normal)
 				n(STORMING_THE_CITADEL, {
 					ach(4531, {	-- Storming the Citadel (10 player)

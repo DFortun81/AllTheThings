@@ -1223,6 +1223,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 				},
 				["description"] = "These drop on all difficulties other than 10 Man Normal.",
 				["groups"] = {
+					-- #if BEFORE 4.0.1
+					currency(301),	-- Emblem of Triumph
+					-- #endif
 					a(i(47654)),	-- Pattern: Bejeweled Wizard's Bracers [Alliance]
 					h(i(47639)),	-- Pattern: Bejeweled Wizard's Bracers [Horde]
 					i(47629, {	-- Pattern: Black Chitin Bracers [A] (RECIPE!)

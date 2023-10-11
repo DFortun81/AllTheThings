@@ -4,8 +4,8 @@
 ## Notes: Addon for Tracking Collections & Account Completion
 ## Author: Crieve-Sargeras
 ## Version: @project-version@
-## Interface: 30402
-## X-Interface: 30402
+## Interface: 30403
+## X-Interface: 30403
 ## X-Wago-ID: yQKyY5K7
 ## X-Curse-Project-ID: 267285
 ## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSavedVariables, AllTheThingsAD, ATTClassicSettings, ATTClassicAD, ATTClassicAuctionData, ATTClassicDebugData

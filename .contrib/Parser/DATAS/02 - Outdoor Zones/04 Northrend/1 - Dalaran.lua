@@ -5065,6 +5065,77 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					-- #if ANYCLASSIC
+					applyclassicphase(WRATH_PHASE_FOUR, q(78752, {	-- Proof of Demise: Titan Rune Protocol Gamma
+						["qg"] = 20735,	-- Archmage Lan'dalock
+						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						-- #if BEFORE 4.0.1
+						["description"] = "The quest item can also drop from any of the new Icecrown Heroic Dungeons.",
+						-- #endif
+						["timeline"] = { "added 3.3.0", "removed 4.0.1" },
+						["maps"] = {
+							AHNKAHET_THE_OLD_KINGDOM,
+							AZJOL_NERUB, AZJOL_NERUB_FLOOR2, AZJOL_NERUB_FLOOR3,
+							DRAKTHARON_KEEP, DRAKTHARON_KEEP_FLOOR2,
+							GUNDRAK, GUNDRAK_FLOOR2,
+							HALLS_OF_REFLECTION,
+							HALLS_OF_LIGHTNING, HALLS_OF_LIGHTNING_FLOOR2,
+							HALLS_OF_STONE,
+							PIT_OF_SARON,
+							THE_CULLING_OF_STRATHOLME, THE_CULLING_OF_STRATHOLME_FLOOR2,
+							THE_FORGE_OF_SOULS,
+							THE_NEXUS,
+							THE_OCULUS, THE_OCULUS_FLOOR2, THE_OCULUS_FLOOR3, THE_OCULUS_FLOOR4, THE_OCULUS_FLOOR5,
+							THE_VIOLET_HOLD_WRATH,
+							TRIAL_OF_THE_CHAMPION,
+							UTGARDE_KEEP, UTGARDE_KEEP_FLOOR2, UTGARDE_KEEP_FLOOR3,
+							UTGARDE_PINNACLE, UTGARDE_PINNACLE_FLOOR2,
+						},
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/1 Defiler's Medallion
+								["provider"] = { "i", 211206 },	-- Defiler's Medallion
+							}),
+							-- #if BEFORE 4.0.1
+							currency(341),	-- Emblem of Frost
+							-- #endif
+						},
+					})),
+					applyclassicphase(WRATH_PHASE_FOUR, q(78753, {	-- Proof of Demise: Threats to Azeroth
+						["qg"] = 20735,	-- Archmage Lan'dalock
+						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
+						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["timeline"] = { "added 3.3.0", "removed 4.0.1" },
+						["maps"] = {
+							AHNKAHET_THE_OLD_KINGDOM,
+							AZJOL_NERUB, AZJOL_NERUB_FLOOR2, AZJOL_NERUB_FLOOR3,
+							DRAKTHARON_KEEP, DRAKTHARON_KEEP_FLOOR2,
+							GUNDRAK, GUNDRAK_FLOOR2,
+							HALLS_OF_REFLECTION,
+							HALLS_OF_LIGHTNING, HALLS_OF_LIGHTNING_FLOOR2,
+							HALLS_OF_STONE,
+							PIT_OF_SARON,
+							THE_CULLING_OF_STRATHOLME, THE_CULLING_OF_STRATHOLME_FLOOR2,
+							THE_FORGE_OF_SOULS,
+							THE_NEXUS,
+							THE_OCULUS, THE_OCULUS_FLOOR2, THE_OCULUS_FLOOR3, THE_OCULUS_FLOOR4, THE_OCULUS_FLOOR5,
+							THE_VIOLET_HOLD_WRATH,
+							TRIAL_OF_THE_CHAMPION,
+							UTGARDE_KEEP, UTGARDE_KEEP_FLOOR2, UTGARDE_KEEP_FLOOR3,
+							UTGARDE_PINNACLE, UTGARDE_PINNACLE_FLOOR2,
+						},
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/1 Mysterious Artifact
+								["provider"] = { "i", 211207 },	-- Mysterious Artifact
+							}),
+							-- #if BEFORE 4.0.1
+							currency(341),	-- Emblem of Frost
+							-- #endif
+						},
+					})),
+					-- #endif
 					applyclassicphase(WRATH_PHASE_FOUR, q(24586, {	-- Razorscale Must Die!
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },

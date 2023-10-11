@@ -190,6 +190,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 					33288,	-- Yogg-Saron
 				},
 				["groups"] = {
+					-- #if BEFORE 4.0.1
+					currency(221),	-- Emblem of Conquest
+					-- #endif
 					applyclassicphase(WRATH_PHASE_TWO_HAMMERPRIO, i(45038)),	-- Fragment of Val'anyr
 					i(45087),	-- Runed Orb
 				},
