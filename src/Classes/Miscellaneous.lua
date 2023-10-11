@@ -252,7 +252,7 @@ app.CreateToggle = app.CreateClass("Toggle", "toggleID", {
 				t.saved = saved
 				local parent = t.parent
 				if parent then
-					parent.toggleID = saved
+					parent[t.toggleID] = saved
 				end
 				local handler = t.OnClickHandler
 				return handler and handler(saved) or nil
