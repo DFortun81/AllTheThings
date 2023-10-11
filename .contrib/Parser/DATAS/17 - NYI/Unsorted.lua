@@ -1499,7 +1499,6 @@ root(ROOTS.Unsorted, {
 			--
 			i(208485),	-- The Scarlet Key
 			i(210062),	-- Ironbound Satchel of Helpful Goods
-			i(210063),	-- Invader's Satchel of Helpful Goods
 			--
 			i(206600),	-- A Clue
 			i(206760),	-- A Clue
@@ -1796,7 +1795,6 @@ root(ROOTS.Unsorted, {
 				i(205236),	-- Long-Toed Talon
 				i(205238),	-- Rain-soaked Feather
 				i(205239),	-- Fluffy Ear
-				i(205243),	-- Spare Bow String
 				i(205244),	-- Rain-soaked pelt
 				i(205467),	-- Preserved Krolusk Crest
 				i(205472),	-- Wad of Sparkling Somethings

@@ -644,6 +644,7 @@ i(197862);	-- Primary Security Disc
 i(197863);	-- Secondary Security Disc
 i(198038);	-- Ancient Titansteel Ingot
 i(200836);	-- Arcane-Infused Crystals
+i(201184);	-- Spare Bow String
 
 ------------------
 -- PATCH 10.0.5 --
@@ -681,6 +682,7 @@ i(205242);	-- Serrated Stone
 i(204308);	-- Sturdy Bone
 i(204873);	-- Tied-up Envelope
 i(205240);	-- Wooden Eagle Statue
+i(205243);	-- Spare Bow String
 --
 i(204814);	-- Aged Journal
 i(204815);	-- Ambiguous Compendium
