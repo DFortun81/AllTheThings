@@ -6760,8 +6760,9 @@ fields.itemID = function(t)
 end
 if C_ToyBox then
 	-- Toy API is in!
+	local C_ToyBox_GetToyInfo = C_ToyBox.GetToyInfo;
 	local function isBNETCollectible(toyID)
-		if C_ToyBox.GetToyInfo(toyID) then
+		if C_ToyBox_GetToyInfo(toyID) then
 			return true;
 		end
 	end
