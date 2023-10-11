@@ -25,48 +25,66 @@ root(ROOTS.Zones, {
 					ach(7316, {	-- Over Their Heads
 						crit(20511, {		-- Garalon
 							["crs"] = { 63667 },
+							["coords"] = {
+								{ 39, 35, DREAD_WASTES },
+								{ 41, 39, DREAD_WASTES },
+							},
 						}),
 						crit(20509, {		-- Wind Lord Mel'jarak
 							["crs"] = { 63665 },
+							["coord"] = { 39, 35, DREAD_WASTES },
 						}),
 						crit(20508, {		-- Blade Lord Ta'yak
 							["crs"] = { 63664 },
+							["coord"] = { 39, 35, DREAD_WASTES },
 						}),
 						crit(20510, {		-- Amber-Shaper Un'sok
 							["crs"] = { 63666 },
+							["coord"] = { 39, 35, DREAD_WASTES },
 						}),
 						crit(20507, {		-- Imperial Vizier Zor'lok
 							["crs"] = { 63662 },
+							["coord"] = { 39, 35, DREAD_WASTES },
 						}),
 						crit(21001, {		-- Amber Earthshaker
 							["crs"] = { 65456 },
+							["coord"] = { 51, 48, DREAD_WASTES },
 						}),
 						crit(20506, {		-- Amber Rocktunneler
 							["crs"] = { 63638 },
+							["coord"] = { 51, 21, DREAD_WASTES },
 						}),
 						crit(20505, {		-- Amber Venomlancer
 							["crs"] = { 63619 },
+							["coord"] = { 56, 13, DREAD_WASTES },
 						}),
 						crit(21002, {		-- Dread Ambercrusher
 							["crs"] = { 65435 },
+							["coord"] = { 41, 38, DREAD_WASTES },
 						}),
 						crit(21003, {		-- Dread Fearbringer
 							["crs"] = { 65439 },
+							["coord"] = { 39, 42, DREAD_WASTES },
 						}),
 						crit(21004, {		-- Essence of Dread
 							["crs"] = { 65491 },
+							["coord"] = { 55, 45, DREAD_WASTES },
 						}),
 						crit(21005, {		-- Essence of Fear
 							["crs"] = { 65487 },
+							["coord"] = { 59, 18, DREAD_WASTES },
 						}),
 						crit(21006, {		-- Essence of Horror
 							["crs"] = { 65490 },
+							["coord"] = { 45, 41, DREAD_WASTES },
 						}),
 						crit(21007, {		-- Essence of Panic
 							["crs"] = { 65489 },
+							["coord"] = { 61, 47, DREAD_WASTES },
 						}),
 						crit(21008, {		-- Essence of Terror
 							["crs"] = { 65488 },
+							["coord"] = { 43, 28, DREAD_WASTES },
 						}),
 					}),
 					ach(7321),	-- Spreading the Warmth
