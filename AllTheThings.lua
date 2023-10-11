@@ -2949,20 +2949,16 @@ local ResolveFunctions = {
 			app.print("'",cmd,"' had empty value set")
 			return;
 		end
+		local Search = app.SearchForObject
 		local cache, value;
 		for i=1,vals do
 			value = select(i, ...);
-			cache = SearchForField("achievementID", value);
-			if #cache > 0 then
-				ArrayAppend(searchResults, cache);
+			cache = Search("achievementID", value, "key");
+			if cache then
+				tinsert(searchResults, cache)
 			else
 				app.print("Failed to select achievementID",value);
 			end
-		end
-		-- Remove any Criteria groups associated with those achievements
-		for k=#searchResults,1,-1 do
-			cache = searchResults[k];
-			if cache.criteriaID then tremove(searchResults, k); end
 		end
 		PruneFinalized = true;
 	end,
