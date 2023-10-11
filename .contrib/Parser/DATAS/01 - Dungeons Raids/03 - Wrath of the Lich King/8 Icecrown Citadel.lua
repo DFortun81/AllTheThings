@@ -271,7 +271,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 										["description"] = "Alexandros: Darion, my son. At last I am able to lay my eyes upon you again. The Lich King tormented me without end, Darion. Endlessly he sought to break my will, to force me to serve him, to bind me to his blade. Finally, when events demanded his full attention, he left me. The one memory I clung to Darion, the one thought that kept me from giving in, it was your sacrifice, my son. That again saved me from eternal peril.\n\nDarion: Father, father, I… I feared for your sanity, father, for you, I would give my life a thousand times.",
 										["questID"] = 24915,	-- Mograine's Reunion
 										["groups"] = {
-											i(52200)	-- Crimson Deathcharger (MOUNT!)
+											i(52200, {	-- Crimson Deathcharger (MOUNT!)
+												["b"] = 2,	-- Mounts don't inherently assign themselves as BoE, so the Ignore Filters for BoEs trigger wasn't picking this up.
+											}),
 										},
 									}),
 									i(51319, {	-- Arthas' Training Sword
