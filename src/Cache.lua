@@ -258,6 +258,9 @@ local fieldConverters = {
 		CacheField(group, "followerID", value);
 	end,
 	["headerID"] = cacheHeaderID,
+	["heirloomUnlockID"] = function(group, value)
+		CacheField(group, "heirloomUnlockID", value);
+	end,
 	["illusionID"] = function(group, value)
 		CacheField(group, "illusionID", value);
 	end,

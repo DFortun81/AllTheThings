@@ -18,6 +18,7 @@ settings.AccountWide = {
 	Deaths = true,
 	Exploration = true,
 	FlightPaths = true,
+	Heirlooms = true,
 	Illusions = true,
 	Mounts = true,
 	PVPRanks = true,
@@ -33,6 +34,7 @@ settings.Collectibles = {
 	BattlePets = true,
 	Exploration = true,
 	FlightPaths = true,
+	Heirlooms = true,
 	Illusions = true,
 	Loot = true,
 	Mounts = true,
@@ -80,6 +82,7 @@ local GeneralSettingsBase = {
 		["AccountWide:Deaths"] = true,
 		["AccountWide:Exploration"] = false,
 		["AccountWide:FlightPaths"] = false,
+		["AccountWide:Heirlooms"] = true,
 		["AccountWide:Illusions"] = true,
 		["AccountWide:Mounts"] = true,
 		["AccountWide:PVPRanks"] = false,
@@ -95,6 +98,7 @@ local GeneralSettingsBase = {
 		["Thing:Deaths"] = true,
 		["Thing:Exploration"] = true,
 		["Thing:FlightPaths"] = true,
+		["Thing:Heirlooms"] = true,
 		["Thing:Illusions"] = true,
 		--["Thing:Loot"] = false,
 		["Thing:Mounts"] = true,
@@ -1066,6 +1070,49 @@ end);
 FlightPathsAccountWideCheckBox:SetATTTooltip("Flight Paths tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?");
 FlightPathsAccountWideCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "TOPLEFT", 220, 0);
 
+-- Heirlooms aren't in the game until late Wrath Classic.
+local HeirloomsCheckBox;
+if C_Heirloom then
+HeirloomsCheckBox = settings:CreateCheckBox("Heirlooms",
+function(self)
+	self:SetChecked(settings:Get("Thing:Heirlooms"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+	if not self.total or self.total == 0 then
+		local total = 0;
+		local container = app.SearchForFieldContainer("heirloomUnlockID");
+		for i,o in pairs(container) do
+			total = total + 1;
+		end
+		self.total = total;
+	end
+end,
+function(self)
+	settings:Set("Thing:Heirlooms", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshDataCompletely("HeirloomsCheckBox");
+end);
+HeirloomsCheckBox:SetATTTooltip("Enable this option to track Heirlooms.");
+HeirloomsCheckBox.OnTooltip = function(t)
+	GameTooltip:AddLine(" ");
+	GameTooltip:AddDoubleLine("Total Heirlooms", t.total);
+end
+HeirloomsCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "BOTTOMLEFT", 0, 4);
+
+local HeirloomsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+function(self)
+	self:SetChecked(true);
+	self:Disable();
+	self:SetAlpha(0.2);
+end);
+HeirloomsAccountWideCheckBox:SetPoint("TOPLEFT", HeirloomsCheckBox, "TOPLEFT", 220, 0);
+end
+
 -- Illusions aren't in the game until Transmog is.
 local IllusionsCheckBox;
 if C_TransmogCollection then
@@ -1098,7 +1145,7 @@ IllusionsCheckBox.OnTooltip = function(t)
 	GameTooltip:AddLine(" ");
 	GameTooltip:AddDoubleLine("Total Illusions", t.total);
 end
-IllusionsCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "BOTTOMLEFT", 0, 4);
+IllusionsCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox or HeirloomsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local IllusionsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
@@ -1106,7 +1153,6 @@ function(self)
 	self:Disable();
 	self:SetAlpha(0.2);
 end);
-IllusionsAccountWideCheckBox:SetATTTooltip("Flight Paths tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?");
 IllusionsAccountWideCheckBox:SetPoint("TOPLEFT", IllusionsCheckBox, "TOPLEFT", 220, 0);
 end
 
@@ -1125,7 +1171,7 @@ function(self)
 	settings:SetLootMode(self:GetChecked());
 end);
 LootCheckBox:SetATTTooltip("Enable this option to track loot.\n\nLoot being any item you can get from a mob, quest, or container. Loot that qualifies for one of the other filters will still appear in ATT if this filter is turned off.\n\nYou can change which sort of loot displays for you based on the Filters tab.\n\nDefault: Class Defaults, Disabled.");
-LootCheckBox:SetPoint("TOPLEFT", IllusionsCheckBox or FlightPathsCheckBox, "BOTTOMLEFT", 0, 4);
+LootCheckBox:SetPoint("TOPLEFT", IllusionsCheckBox or HeirloomsCheckBox or FlightPathsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local RWPCheckBox = settings:CreateCheckBox("Removed With Patch Loot",
 function(self)
