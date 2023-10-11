@@ -460,21 +460,10 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							-- #if BEFORE 4.0.1
 							i(43668),	-- Ley Line Tuner
 							-- #endif
-							i(52676, {	-- Cache of the Ley-Guardian
-								-- #if ANYCLASSIC
-								["description"] = "This bag is only available if you queue for the instance using the Dungeon Finder. In Wrath Classic, they decided to not implement the RDF feature, effectively making this bag and the mount it contains unobtainable until Cataclysm.",
-								["timeline"] = { "created 3.3.2.11403" },
-								-- #else
-								["description"] = "This bag is only available if you queue for the instance using the Dungeon Finder.",
-								-- #endif
+							applyclassicphase(WRATH_PHASE_FOUR, i(52676, {	-- Cache of the Ley-Guardian
+								["description"] = "This bag is only available if you queue for the instance using the Random Dungeon Finder. It will not drop in an explicitly formed group or by using the Select Instance interface.",
 								["groups"] = {
-									i(43953),	-- Reins of the Blue Drake
-									i(43953, {	-- Blue Drake (MOUNT!)
-										-- #if BEFORE 4.0.3
-										["description"] = "This mount was originally a drop from 10-man Malygos, but was moved to the cache of the ley guardian in the Occulus to encourage people to not skip the instance when it came up in the Dungeon Finder. In Wrath Classic, they decided to not implement the RDF feature, effectively making this mount unobtainable until Cataclysm.",
-										-- #endif
-										["timeline"] = { "created 3.0.1", "added 4.0.3" },
-									}),
+									i(43953),	-- Blue Drake (MOUNT!)
 									i(36933),	-- Forest Emerald
 									i(36921),	-- Autumn's Glow
 									i(36930),	-- Monarch Topaz
@@ -482,7 +471,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 									i(36924),	-- Sky Sapphire
 									i(36927),	-- Twilight Opal
 								},
-							}),
+							})),
 						},
 					}),
 				},
