@@ -1951,7 +1951,7 @@ root(ROOTS.NeverImplemented, {
 		tier(DF_TIER, {
 			-- 10.0.0
 			tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
-				class(EVOKER, {
+				cl(EVOKER, {
 					i(187651),	-- Evoker Tunic
 					i(187652),	-- Evoker Boots
 					i(187653),	-- Evoker Gloves
@@ -3983,6 +3983,18 @@ root(ROOTS.NeverImplemented, {
 					})),
 				}),
 				i(206026),	-- Ensemble: Enmity Hood and Cloak
+			})),
+
+			-- 10.1.5
+			tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
+				i(207967),	-- 10.1.5 Time Rifts - Cloth Bronze Sets - Capture Media
+				i(207971),	-- 10.1.5 Time Rifts - Cloth Infinite Sets - Capture Media
+				i(207966),	-- 10.1.5 Time Rifts - Leather Bronze Sets - Capture Media
+				i(207970),	-- 10.1.5 Time Rifts - Leather Infinite Sets - Capture Media
+				i(207965),	-- 10.1.5 Time Rifts - Mail Bronze Sets - Capture Media
+				i(207969),	-- 10.1.5 Time Rifts - Mail Infinite Sets - Capture Media
+				i(207961),	-- 10.1.5 Time Rifts - Plate Bronze Sets - Capture Media
+				i(207968),	-- 10.1.5 Time Rifts - Plate Infinite Sets - Capture Media
 			})),
 		}),
 	}),

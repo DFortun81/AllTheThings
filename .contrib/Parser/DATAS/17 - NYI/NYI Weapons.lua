@@ -727,5 +727,11 @@ root(ROOTS.NeverImplemented, {
 		tier(DF_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 			i(204638),	-- Sunder Wing
 		})),
+
+		-- 10.1.5
+		tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
+			i(208003),	-- 10.1.5 Time Rifts - Bronze Weapons - Capture Media
+			i(208002),	-- 10.1.5 Time Rifts - Infinite Weapons - Capture Media
+		})),
 	}),
 });

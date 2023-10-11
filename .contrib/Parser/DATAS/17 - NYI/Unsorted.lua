@@ -1604,68 +1604,6 @@ root(ROOTS.Unsorted, {
 				i(206340),	-- Ensemble: Wanderer's Grassy Trappings
 				i(206342),	-- Ensemble: Wanderer's Sepia Trappings
 			}),
-			header(HEADERS.LFGDungeon, 2430, {	-- Dawn of the Infinite
-				i(207818),	-- Mega Dungeon Bronze Plate Greaves
-				i(207825),	-- Mega Dungeon Infinite Cloth Slippers
-				i(207829),	-- Mega Dungeon Bronze Cloth Wrap
-				i(207831),	-- Mega Dungeon Bronze Cloth Hood
-				i(207832),	-- Mega Dungeon Bronze Cloth Breeches
-				i(207837),	-- Mega Dungeon Bronze Leather Drape
-				i(207840),	-- Mega Dungeon Bronze Leather Cowl
-				i(207842),	-- Mega Dungeon Bronze Leather Cinch
-				i(207843),	-- Mega Dungeon Bronze Leather Bracers
-				i(207844),	-- Mega Dungeon Bronze Mail Chainmail
-				i(207845),	-- Mega Dungeon Bronze Mail Drape
-				i(207846),	-- Mega Dungeon Bronze Mail Striders
-				i(207854),	-- Mega Dungeon Bronze Plate Stompers
-				i(207855),	-- Mega Dungeon Bronze Plate Crushers
-				i(207860),	-- Mega Dungeon Infinite Cloth Robes
-				i(207861),	-- Mega Dungeon Infinite Cloth Wrap
-				i(207868),	-- Mega Dungeon Infinite Leather Raiment
-				i(207869),	-- Mega Dungeon Infinite Leather Cloak
-				i(207870),	-- Mega Dungeon Infinite Leather Treads
-				i(207879),	-- Mega Dungeon Infinite Mail Gauntlets
-				i(207880),	-- Mega Dungeon Infinite Mail Cowl
-				i(207891),	-- Mega Dungeon Infinite Plate Vambraces
-				i(207894),	-- Mega Dungeon Bronze Cloth Mitts
-				i(207899),	-- Mega Dungeon Bronze Cloth Bindings
-				i(207905),	-- Mega Dungeon Bronze Leather Spaulders
-				i(207913),	-- Mega Dungeon Bronze Mail Spaulders
-				i(207914),	-- Mega Dungeon Bronze Mail Cinch
-				i(207916),	-- Mega Dungeon Bronze Plate Chestplate
-				i(207917),	-- Mega Dungeon Bronze Plate Cape
-				i(207929),	-- Mega Dungeon Infinite Cloth Mantle
-				i(207930),	-- Mega Dungeon Infinite Cloth Sash
-				i(207935),	-- Mega Dungeon Infinite Leather Gloves
-				i(207941),	-- Mega Dungeon Infinite Mail Drape
-				i(207947),	-- Mega Dungeon Infinite Mail Bracers
-				i(207949),	-- Mega Dungeon Infinite Plate Cape
-				i(207952),	-- Mega Dungeon Infinite Plate Greathelm
-				i(207953),	-- Mega Dungeon Infinite Plate Pauldrons
-				i(207954),	-- Mega Dungeon Infinite Plate Girdle
-				i(207958),	-- Mega Dungeon Infinite Mail Tassets
-				i(207960),	-- Mega Dungeon Infinite Leather Tassets
-				i(207961),	-- 10.1.5 Time Rifts - Plate Bronze Sets - Capture Media
-				i(207965),	-- 10.1.5 Time Rifts - Mail Bronze Sets - Capture Media
-				i(207966),	-- 10.1.5 Time Rifts - Leather Bronze Sets - Capture Media
-				i(207967),	-- 10.1.5 Time Rifts - Cloth Bronze Sets - Capture Media
-				i(207968),	-- 10.1.5 Time Rifts - Plate Infinite Sets - Capture Media
-				i(207969),	-- 10.1.5 Time Rifts - Mail Infinite Sets - Capture Media
-				i(207970),	-- 10.1.5 Time Rifts - Leather Infinite Sets - Capture Media
-				i(207971),	-- 10.1.5 Time Rifts - Cloth Infinite Sets - Capture Media
-				i(208002),	-- 10.1.5 Time Rifts - Infinite Weapons - Capture Media
-				i(208003),	-- 10.1.5 Time Rifts - Bronze Weapons - Capture Media
-			}),
-			i(52032),	-- Rockin'-Powder-Infused Rocket Boots
-			i(86432),	-- Banana-Infused Rum
-			i(112180),	-- Patch of Crystal-Infused Leather
-			i(142395),	-- Fel-Infused Totem Fragment
-			i(144241),	-- Fel-Infused Remains
-			i(158733),	-- Azerite-Infused Rock
-			i(175972),	-- Anima-Infused Venom
-			i(181516),	-- Stone-Laced Infused Ruby
-			i(183041),	-- Anima-Infused Silk
-			i(193412),	-- Primal-Infused Dragon Egg
 			i(202247),	-- Curious Curio Goggles
 			i(202270),	-- [DNT] Twice-Woven Rope
 			i(202312),	-- Juicy Mammoth Steak
@@ -1698,12 +1636,9 @@ root(ROOTS.Unsorted, {
 			i(208097),	-- Flamethrower
 			i(208108),	-- Madam Shadow's Old Grimoire
 			i(206447),	-- Task List for Adventurers
-			--
 			i(206160),	-- Madam Shadow's Grimoire
 			i(206520),	-- Beverage for Pedgi
 			i(208417),	-- Chromie's Certificate of Temporal Tidiness
-			--
-			i(133589),	-- Dalape�o Pepper
 			i(208567),	-- Medal of Conquest
 		})),
 		tier(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
