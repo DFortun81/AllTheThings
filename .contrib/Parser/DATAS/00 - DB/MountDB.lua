@@ -1664,6 +1664,7 @@ i(190636, 0);		-- Armored Siege Kodo
 -- PATCH 10.1.7 --
 ------------------
 i(208572, 420097);	-- Azure Worldchiller
+i(0, 358072);		-- Bound Blizzard
 i(137576, 171840);	-- Coldflame Infernal
 i(198824, 385262);	-- Duskwing Ohuna
 i(208598, 419345);	-- Eve's Ghastly Rider

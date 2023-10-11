@@ -30,7 +30,7 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 			i(44325),	-- Elixir of Accuracy
 			i(44330),	-- Elixir of Armor Piercing
 			i(44327),	-- Elixir of Deadly Strikes
-			i(44329),	-- Elixir of Expertise
+			i(44329),	-- Elixir of Expertise / DF+:Elixir of Mighty Intellect
 			i(44331),	-- Elixir of Lightning Speed
 			i(39666),	-- Elixir of Mighty Agility
 			i(44328),	-- Elixir of Mighty Defense

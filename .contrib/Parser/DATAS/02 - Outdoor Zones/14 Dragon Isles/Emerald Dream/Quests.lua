@@ -411,6 +411,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["provider"] = { "n", 207351 },	-- Vyranoth
 				["coord"] = { 51.1, 83.8, STORMHEIM },
 				["g"] = {
+					i(206156),	-- Grotto Netherwing Drake (MOUNT!)
 					i(210959),	-- Pact of the Netherwing
 				},
 			}),

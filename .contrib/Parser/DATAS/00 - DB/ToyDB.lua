@@ -1198,6 +1198,7 @@ i(205463);	-- Molten Lava Ball
 -- PATCH 10.1.5 --
 ------------------
 i(208186);	-- Boffins
+i(210042);	-- Chilling Celebration Banner
 i(140192);	-- Dalaran Hearthstone
 i(206268);	-- Ethereal Transmogrifier
 i(208096);	-- Familiar Journal

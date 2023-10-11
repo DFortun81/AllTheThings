@@ -1460,10 +1460,8 @@ root(ROOTS.Unsorted, {
 				i(209024),	-- Loot-Filled Pumpkin
 				i(209025),	-- Loot-Filled Pumpkin
 				i(209026),	-- Loot-Stuffed Pumpkin
-				i(209044),	-- Orange Brewfest Bulwark
 				i(209053),	-- Green Brewfest Bulwark
 			}),
-			i(44329),	-- Elixir of Mighty Intellect
 			i(115460),	-- Northrend Alchemy Research
 			i(133557),	-- Salt and Pepper Shank
 			i(205221),	-- Ancient Pottery Fragment
@@ -1487,8 +1485,6 @@ root(ROOTS.Unsorted, {
 			i(208867),	-- The Third Clue
 			i(208925),	-- Dreambound Trinket
 			--
-			i(4191),	-- Owlbeast Leggings
-			--
 			i(206596),	-- Tome of Thomas Thomson
 			i(208769),	-- Tome of Thomas Thomson
 			i(209832),	-- Crate of Dreambound Leather
@@ -1508,7 +1504,6 @@ root(ROOTS.Unsorted, {
 			--
 			i(204720),	-- Join the New Scarlet Crusade!
 			i(206476),	-- Tyr's Guard Equipment
-			i(208198),	-- Tyr's Guard Bulwark
 			i(208545),	-- Kindled Bonfire
 			i(208861),	-- The First Clue
 			i(208862),	-- The Second Clue
@@ -1519,7 +1514,6 @@ root(ROOTS.Unsorted, {
 			i(208934),	-- A Partial Fourth Clue
 			i(208935),	-- A Partial Fourth Clue
 			i(190874),	-- Glittering Fel Gavel
-			i(208151),	-- Tobias' Leash
 			i(208691),	-- Argunite Cluster
 			i(208865),	-- The First Clue
 			i(208869),	-- The First Clue
@@ -1551,25 +1545,10 @@ root(ROOTS.Unsorted, {
 			i(209014),	-- Clue Scrap
 			i(209015),	-- Clue Scrap
 			i(209016),	-- Clue Scrap
-			--
-			i(156251),	-- Shroud of Alteration
-			i(156252),	-- Greaves of the Stonewarder
-			i(156253),	-- Shoulders of Misfortune
-			i(156254),	-- Leggings of the Tortured Earth
-			i(156256),	-- Grips of Chaos
-			i(156460),	-- Mimiron's Repeater
-			i(156461),	-- Adamant Handguards
-			i(156465),	-- Iceshear Mantle
-			i(156466),	-- Bracers of Righteous Reformation
-			i(156467),	-- Boots of Unsettled Prey
-			i(156468),	-- Cloak of the Dormant Blaze
-			i(156469),	-- Pillar of Fortitude
-			i(156470),	-- Bloodcrush Cudgel
 		})),
 		tier(DF_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
 			filter(COSMETIC, {
 				---- TRADING POST ----
-				i(206277),	-- Vagabond's Sunny Cape
 				i(206278),	-- Vagabond's Aquatic Cape
 				i(206279),	-- Vagabond's Plum Cape
 				i(206280),	-- Vagabond's Faded Cape
@@ -1579,7 +1558,6 @@ root(ROOTS.Unsorted, {
 				i(206284),	-- Vagabond's Cloudy Cape
 				i(206285),	-- Vagabond's Grassy Cape
 				i(206287),	-- Vagabond's Sepia Cape
-				i(206288),	-- Vagabond's Sunny Hood
 				i(206289),	-- Vagabond's Aquatic Hood
 				i(206290),	-- Vagabond's Plum Hood
 				i(206291),	-- Vagabond's Faded Hood
@@ -1590,7 +1568,6 @@ root(ROOTS.Unsorted, {
 				i(206296),	-- Vagabond's Grassy Hood
 				i(206298),	-- Vagabond's Sepia Hood
 				i(206299),	-- Wanderer's Aquatic Scarf
-				i(206300),	-- Wanderer's Sunny Scarf
 				i(206301),	-- Wanderer's Plum Scarf
 				i(206302),	-- Wanderer's Faded Scarf
 				i(206303),	-- Wanderer's Brick Scarf
@@ -1599,7 +1576,6 @@ root(ROOTS.Unsorted, {
 				i(206306),	-- Wanderer's Cloudy Scarf
 				i(206307),	-- Wanderer's Grassy Scarf
 				i(206309),	-- Wanderer's Sepia Scarf
-				i(206310),	-- Wanderer's Sunny Cloak
 				i(206311),	-- Wanderer's Aquatic Cloak
 				i(206312),	-- Wanderer's Plum Cloak
 				i(206313),	-- Wanderer's Faded Cloak
@@ -1609,7 +1585,6 @@ root(ROOTS.Unsorted, {
 				i(206317),	-- Wanderer's Cloudy Cloak
 				i(206318),	-- Wanderer's Grassy Cloak
 				i(206320),	-- Wanderer's Sepia Cloak
-				i(206321),	-- Ensemble: Vagabond's Sunny Threads
 				i(206322),	-- Ensemble: Vagabond's Aquatic Threads
 				i(206323),	-- Ensemble: Vagabond's Plum Threads
 				i(206324),	-- Ensemble: Vagabond's Faded Threads
@@ -1619,7 +1594,6 @@ root(ROOTS.Unsorted, {
 				i(206328),	-- Ensemble: Vagabond's Cloudy Threads
 				i(206329),	-- Ensemble: Vagabond's Grassy Threads
 				i(206331),	-- Ensemble: Vagabond's Sepia Threads
-				i(206332),	-- Ensemble: Wanderer's Sunny Trappings
 				i(206333),	-- Ensemble: Wanderer's Aquatic Trappings
 				i(206334),	-- Ensemble: Wanderer's Plum Trappings
 				i(206335),	-- Ensemble: Wanderer's Faded Trappings
@@ -1721,9 +1695,6 @@ root(ROOTS.Unsorted, {
 			i(207594),	-- Looter's Purse
 			i(207984),	-- Chroniton Wand
 			i(208001),	-- Timewalker's Cudgel
-			i(208091),	-- Cache of Timewarped Treasures
-			i(208094),	-- Cache of Timewarped Treasures
-			i(208095),	-- Cache of Timewarped Treasures
 			i(208097),	-- Flamethrower
 			i(208108),	-- Madam Shadow's Old Grimoire
 			i(206447),	-- Task List for Adventurers
@@ -1734,16 +1705,6 @@ root(ROOTS.Unsorted, {
 			--
 			i(133589),	-- Dalape�o Pepper
 			i(208567),	-- Medal of Conquest
-			--
-			i(190091),	-- Fanciful Corsage
-			i(190694),	-- Solemn Watchman's Belt
-			i(190695),	-- Solemn Watchman's Boots
-			i(190728),	-- Gothic Corsage
-			i(190845),	-- Solemn Watchman's Trousers
-			i(190872),	-- Solemn Watchman's Cuirass
-			i(190896),	-- Solemn Watchman's Spaulders
-			i(190901),	-- Solemn Watchman's Helm
-			i(200925),	-- Ensemble: Solemn Watchman's Garb
 		})),
 		tier(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
 			header(HEADERS.LFGDungeon, 2403, {	-- Aberrus, the Shadowed Crucible
@@ -1775,7 +1736,6 @@ root(ROOTS.Unsorted, {
 				i(202206),	-- Thumper Part
 				i(202387),	-- Slightly Ruffled Top Hat
 				i(204580),	-- Abnormal Brain
-				i(204731),	-- Arclight Welcome Letter
 				i(204846),	-- Conjured Rocks on the Rocks
 				i(204883),	-- Titan Mining Tool
 				i(204884),	-- Titan Control Card
@@ -1808,7 +1768,6 @@ root(ROOTS.Unsorted, {
 				i(205962),	-- Echoing Storm Flightstone
 				i(205970),	-- Azure Flightstone
 				i(205993),	-- Set Keystone Map: The Vortex Pinnacle
-				i(206037),	-- Ruby Flightstone
 			}),
 			filter(QUEST_ITEMS, {
 				i(202705),	-- Snail Slime
@@ -1826,7 +1785,6 @@ root(ROOTS.Unsorted, {
 				i(204347),	-- Pool Contaminant
 				i(204349),	-- Bigger Wrench
 				i(204351),	-- Animated Crystal Shard
-				i(204407),	-- Rebel Detonator
 				i(204434),	-- Lava-Quenched Blade
 				i(204637),	-- Boulder Chunk
 				i(201956),	-- [DNT] Snakey Eyes
@@ -1973,7 +1931,6 @@ root(ROOTS.Unsorted, {
 				q(76012),	--
 				-- 10.1.0.48898
 				q(76082),	--
-				q(76107),	--
 				q(76108),	--
 				q(76111),	-- Ensemble: Enmity Hood and Cloak
 				q(76112),	--
@@ -2082,11 +2039,7 @@ root(ROOTS.Unsorted, {
 					-- Cloth
 					i(190075),	-- Mantle of the Scholarly Raven
 
-					-- Mail
-					i(190152),	-- Solemn Watchman's Gauntlets
-
 					-- Cosmetic
-					i(190144),	-- Irontide Raider's Bicorne
 					i(190428),	-- Regal Warcloak
 				}),
 				n(SETS, {
@@ -2166,8 +2119,6 @@ root(ROOTS.Unsorted, {
 					i(190446),	-- Blazing Forgehammer
 					i(190430),	-- Chipped Gladius
 					i(190445),	-- Envenomed Gutripper
-					i(190698),	-- Gently-Used Cleaver
-					i(190699),	-- Gorian Mining Pick
 					i(190218),	-- Jeweled Ripper
 					i(190132),	-- Krokul Battlescythe
 					i(190685),	-- Lost Crusader's Azure Battleaxe
@@ -2377,23 +2328,7 @@ root(ROOTS.Unsorted, {
 					i(188825),	-- Emerald Winglord's Chain
 					i(188826),	-- Emerald Winglord's Staff
 
-					-- Evoker Sets -- // Might be from Ensemble by Wrathion /Braghe
-					i(191797),	-- Obsidian Dracthyr Battlegear Hauberk
-					i(191798),	-- Obsidian Dracthyr Battlegear Grips
-					i(191799),	-- Obsidian Dracthyr Battlegear Helm
-					i(191800),	-- Obsidian Dracthyr Battlegear Leggings
-					i(191801),	-- Obsidian Dracthyr Battlegear Monnion
-					i(191802),	-- Obsidian Dracthyr Battlegear Belt
-					i(191803),	-- Obsidian Dracthyr Battlegear Bracers
-					i(191804),	-- Obsidian Dracthyr Battlegear Cover
-					i(191813),	-- Sandshaped Dracthyr Battlegear Hauberk
-					i(191814),	-- Sandshaped Dracthyr Battlegear Grips
-					i(191815),	-- Sandshaped Dracthyr Battlegear Helm
-					i(191816),	-- Sandshaped Dracthyr Battlegear Leggings
-					i(191817),	-- Sandshaped Dracthyr Battlegear Monnion
-					i(191818),	-- Sandshaped Dracthyr Battlegear Belt
-					i(191819),	-- Sandshaped Dracthyr Battlegear Bracers
-					i(191820),	-- Sandshaped Dracthyr Battlegear Cover
+					-- Evoker Sets --
 					i(191821),	-- Obsidian Dracthyr Battlegear Hauberk
 					i(191822),	-- Obsidian Dracthyr Battlegear Grips
 					i(191823),	-- Obsidian Dracthyr Battlegear Helm
@@ -2402,20 +2337,11 @@ root(ROOTS.Unsorted, {
 					i(191826),	-- Obsidian Dracthyr Battlegear Belt
 					i(191827),	-- Obsidian Dracthyr Battlegear Bracers
 					i(191828),	-- Obsidian Dracthyr Battlegear Cover
-
-					--
-					i(200968),	-- Sandshaped Winglord's Drape
 				}),
 				i(191942),	-- Belloc's Hat [Added SpellIDs regarding this.. Belloc also lost his hat... In Waking Shores 371683 (Wear Belloc's Hat [DNT]), 371665 (Sit on Belloc's Head [DNT]) /Brage ]
 			}),
 			filter(COSMETIC, {
 				n(SETS, {
-					-- Buccaneer Sets
-					i(190904),	-- Dashing Buccaneer's Tunic
-					i(190905),	-- Dashing Buccaneer's Sash
-					i(190906),	-- Dashing Buccaneer's Breeches
-					i(190907),	-- Dashing Buccaneer's Boots
-
 					-- Honored Valarjar Set [Mail]
 					i(190563),	-- Armbands of the Honored Valarjar
 					i(190564),	-- Cape of the Honored Valarjar

@@ -4054,6 +4054,7 @@ i(207962, 179);		-- Spirit of Competition (Trading Post)
 i(208045, 4253);	-- Slyvy
 --- SPECIAL ---
 i(0, 4267);			-- Lil' Maggz
+i(0, 3579);			-- Ysergle The Dreamurk
 -- TRAINER --
 i(0, 3587);			-- Lifelike Mechanical Duckling
 i(0, 3608);			-- Lifelike Mechanical Turtle

@@ -522,12 +522,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 							i(200952, {	-- Ensemble: Obsidian Dracthyr Battlegear Mail Armor
+								["description"] = "To see this select All in filter",
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 750 },
 									{ "i", AWAKENED_FIRE, 4 },
 									{ "i", AWAKENED_EARTH, 4 },
 								},
 								["g"] = {
+									i(195885),	-- Black Dragon's Scale Cloak
+									i(191802),	-- Obsidian Dracthyr Battlegear Belt
 									i(191803),	-- Obsidian Dracthyr Battlegear Bracers
 									i(191804),	-- Obsidian Dracthyr Battlegear Cover
 									i(191798),	-- Obsidian Dracthyr Battlegear Grips
@@ -535,7 +538,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									i(191799),	-- Obsidian Dracthyr Battlegear Helm
 									i(191800),	-- Obsidian Dracthyr Battlegear Leggings
 									i(191801),	-- Obsidian Dracthyr Battlegear Monnion
-									i(191802),	-- Obsidian Dracthyr Battlegear Belt
+									i(191818),	-- Sandshaped Dracthyr Battlegear Belt
+									i(191819),	-- Sandshaped Dracthyr Battlegear Bracers
+									i(191820),	-- Sandshaped Dracthyr Battlegear Cover
+									i(191814),	-- Sandshaped Dracthyr Battlegear Grips
+									i(191813),	-- Sandshaped Dracthyr Battlegear Hauberk
+									i(191815),	-- Sandshaped Dracthyr Battlegear Helm
+									i(191816),	-- Sandshaped Dracthyr Battlegear Leggings
+									i(191817),	-- Sandshaped Dracthyr Battlegear Monnion
+									i(200968),	-- Sandshaped Winglord's Drape
 								},
 							}),
 						}, {	-- Ally --
@@ -675,12 +686,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						{		-- Acquaintance --
 						}, {	-- Cohort --
 							i(200952, {	-- Ensemble: Obsidian Dracthyr Battlegear Mail Armor
+								["description"] = "To see this select All in filter",
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 750 },
 									{ "i", AWAKENED_FIRE, 4 },
 									{ "i", AWAKENED_EARTH, 4 },
 								},
 								["g"] = {
+									i(195885),	-- Black Dragon's Scale Cloak
+									i(191802),	-- Obsidian Dracthyr Battlegear Belt
 									i(191803),	-- Obsidian Dracthyr Battlegear Bracers
 									i(191804),	-- Obsidian Dracthyr Battlegear Cover
 									i(191798),	-- Obsidian Dracthyr Battlegear Grips
@@ -688,7 +702,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									i(191799),	-- Obsidian Dracthyr Battlegear Helm
 									i(191800),	-- Obsidian Dracthyr Battlegear Leggings
 									i(191801),	-- Obsidian Dracthyr Battlegear Monnion
-									i(191802),	-- Obsidian Dracthyr Battlegear Belt
+									i(191818),	-- Sandshaped Dracthyr Battlegear Belt
+									i(191819),	-- Sandshaped Dracthyr Battlegear Bracers
+									i(191820),	-- Sandshaped Dracthyr Battlegear Cover
+									i(191814),	-- Sandshaped Dracthyr Battlegear Grips
+									i(191813),	-- Sandshaped Dracthyr Battlegear Hauberk
+									i(191815),	-- Sandshaped Dracthyr Battlegear Helm
+									i(191816),	-- Sandshaped Dracthyr Battlegear Leggings
+									i(191817),	-- Sandshaped Dracthyr Battlegear Monnion
+									i(200968),	-- Sandshaped Winglord's Drape
 								},
 							}),
 							i(200640, {	-- Obsidian Egg Clutch (TOY!)

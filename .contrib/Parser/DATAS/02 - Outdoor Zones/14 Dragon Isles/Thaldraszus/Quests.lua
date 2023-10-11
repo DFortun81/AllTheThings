@@ -950,6 +950,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 72412 },	-- Explosive Interruption
 					["provider"] = { "n", 199397 },	-- Investigator Erima
 					["coord"] = { 46.4, 50.8, VALDRAKKEN },
+					["g"] = {
+						i(204407),	-- Rebel Detonator (QI!)
+					},
 				}),
 				q(72414, {	-- Know Prisoners!
 					["sourceQuests"] = { 72412 },	-- Explosive Interruption

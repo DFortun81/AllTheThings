@@ -177,4 +177,23 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	ach(14904, {	-- Netherwhelp Online
 		["timeline"] = { "added 9.0.2.37176", "removed 9.2.0" },
 	}),
+
+	-- Blizzcon 2023 Collection
+	mount(358072, {	-- Bound Blizzard (MOUNT!)
+		["description"] = "Requires Legendary Pack",
+		["timeline"] = { "added 10.1.7.51536" },
+		["u"] = BLIZZARD_BALANCE,
+	}),
+	i(210042, {		-- Chilling Celebration Banner (TOY!)
+		["timeline"] = { "added 10.1.7.51536" },
+		["u"] = BLIZZARD_BALANCE,
+	}),
+	pet(3579, {		-- Ysergle The Dreamurk (PET!)
+		["timeline"] = { "added 10.1.7.51536" },
+		["u"] = BLIZZARD_BALANCE,
+	}),
+	ach(18250, {	-- Ysergle The Dreamurk
+		["timeline"] = { "added 10.1.7.51536" },
+		["u"] = BLIZZARD_BALANCE,
+	}),
 })));
