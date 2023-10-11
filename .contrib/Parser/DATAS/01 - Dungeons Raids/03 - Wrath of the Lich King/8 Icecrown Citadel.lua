@@ -861,16 +861,39 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				i(50451),	-- Belt of the Lonely Noble
 				i(50447),	-- Harbinger's Bone Band
 				i(50450),	-- Leggings of Dubious Charms
+				i(52019, {	-- Precious' Ribbon
+					["cr"] = 37217,	-- Precious
+				}),
 				i(50453),	-- Ring of Rotting Sinew
 				i(50444),	-- Rowan's Rifle of Silver Bullets
 				i(50449),	-- Stiffened Corpse Shoulderpads
 				i(50452),	-- Wodin's Lucky Necklace
 			}),
-			-- #if BEFORE 4.0.1
 			n(COMMON_BOSS_DROPS, {
-				currency(341),	-- Emblem of Frost
+				["crs"] = {
+					36612,	-- Lord Marrowgar
+					36855,	-- Lady Deathwhisper
+					36939,	-- High Overlord Saurfang
+					36948,	-- Muradin Bronzebeard
+					37813,	-- Deathbringer Saurfang
+					36626,	-- Festergut
+					36627,	-- Rotface
+					36678,	-- Professor Putricide
+					37970,	-- Blood Prince Council
+					37955,	-- Blood-Queen Lana'thel
+					36789,	-- Valithria Dreamwalker
+					36853,	-- Sindragosa
+					36597,	-- The Lich King
+				},
+				["groups"] = {
+					-- #if BEFORE 4.0.1
+					currency(341),	-- Emblem of Frost
+					-- #endif
+					i(49908, {	-- Primordial Saronite
+						["description"] = "Can drop on all difficulties other than 10 Man Normal.",
+					}),
+				},
 			}),
-			-- #endif
 			d(3, {	-- 10-Player (Normal)
 				n(STORMING_THE_CITADEL, {
 					ach(4531, {	-- Storming the Citadel (10 player)
@@ -991,9 +1014,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						crit(12761, {	-- Professor Putricide
 							["_encounter"] = { 1631, 3 },
 						}),
-					}),
-					n(37217, {	-- Precious
-						i(52019),	-- Precious' Ribbon
 					}),
 					e(1629, {	-- Festergut
 						["creatureID"] = 36626,	-- Festergut
@@ -1192,25 +1212,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				}),
 			}),
 			d(5, {	-- 10-Player (Heroic)
-				n(COMMON_BOSS_DROPS, {
-					i(49908, {	-- Primordial Saronite
-						["crs"] = {
-							36612,	-- Lord Marrowgar
-							36855,	-- Lady Deathwhisper
-							36939,	-- High Overlord Saurfang
-							36948,	-- Muradin Bronzebeard
-							37813,	-- Deathbringer Saurfang
-							36626,	-- Festergut
-							36627,	-- Rotface
-							36678,	-- Professor Putricide
-							37970,	-- Blood Prince Council
-							37955,	-- Blood-Queen Lana'thel
-							36789,	-- Valithria Dreamwalker
-							36853,	-- Sindragosa
-							36597,	-- The Lich King
-						},
-					}),
-				}),
 				n(STORMING_THE_CITADEL, {
 					ach(4628, {	-- Heroic: Storming the Citadel (10 player)
 						crit(13090, {	-- Lord Marrowgar
@@ -1333,9 +1334,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						crit(13128, {	-- Professor Putricide
 							["_encounter"] = { 1631, 5 },
 						}),
-					}),
-					n(37217, {	-- Precious
-						i(52019),	-- Precious' Ribbon
 					}),
 					e(1629, {	-- Festergut
 						["creatureID"] = 36626,	-- Festergut
@@ -1549,25 +1547,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				}),
 			}),
 			d(4, {	-- 25-Player (Normal)
-				n(COMMON_BOSS_DROPS, {
-					i(49908, {	-- Primordial Saronite
-						["crs"] = {
-							36612,	-- Lord Marrowgar
-							36855,	-- Lady Deathwhisper
-							36939,	-- High Overlord Saurfang
-							36948,	-- Muradin Bronzebeard
-							37813,	-- Deathbringer Saurfang
-							36626,	-- Festergut
-							36627,	-- Rotface
-							36678,	-- Professor Putricide
-							37970,	-- Blood Prince Council
-							37955,	-- Blood-Queen Lana'thel
-							36789,	-- Valithria Dreamwalker
-							36853,	-- Sindragosa
-							36597,	-- The Lich King
-						},
-					}),
-				}),
 				n(STORMING_THE_CITADEL, {
 					ach(4604, {	-- Storming the Citadel (25 player)
 						crit(12945, {	-- Lord Marrowgar
@@ -1692,9 +1671,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						crit(12951, {	-- Professor Putricide
 							["_encounter"] = { 1631, 4 },
 						}),
-					}),
-					n(37217, {	-- Precious
-						i(52019),	-- Precious' Ribbon
 					}),
 					e(1629, {	-- Festergut
 						["creatureID"] = 36626,	-- Festergut
@@ -1908,25 +1884,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 				}),
 			}),
 			d(6, {	-- 25-Player (Heroic)
-				n(COMMON_BOSS_DROPS, {
-					i(49908, {	-- Primordial Saronite
-						["crs"] = {
-							36612,	-- Lord Marrowgar
-							36855,	-- Lady Deathwhisper
-							36939,	-- High Overlord Saurfang
-							36948,	-- Muradin Bronzebeard
-							37813,	-- Deathbringer Saurfang
-							36626,	-- Festergut
-							36627,	-- Rotface
-							36678,	-- Professor Putricide
-							37970,	-- Blood Prince Council
-							37955,	-- Blood-Queen Lana'thel
-							36789,	-- Valithria Dreamwalker
-							36853,	-- Sindragosa
-							36597,	-- The Lich King
-						},
-					}),
-				}),
 				n(STORMING_THE_CITADEL, {
 					ach(4632, {	-- Heroic: Storming the Citadel (25 player)
 						crit(13091, {	-- Lord Marrowgar
@@ -2054,9 +2011,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						crit(13129, {	-- Professor Putricide
 							["_encounter"] = { 1631, 6 },
 						}),
-					}),
-					n(37217, {	-- Precious
-						i(52019),	-- Precious' Ribbon
 					}),
 					e(1629, {	-- Festergut
 						["creatureID"] = 36626,	-- Festergut
