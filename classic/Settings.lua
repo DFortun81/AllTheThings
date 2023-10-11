@@ -949,6 +949,10 @@ function(self)
 	app:RefreshDataCompletely("DeathsCheckBox");
 end);
 DeathsCheckBox:SetATTTooltip("Enable this option to track each time one of your characters die and show it as a Collectible section within the addon.\n\nNOTE: If you turn this off, we'll still track it, but we simply will not show the statistic unless you're in Debug Mode.");
+DeathsCheckBox.OnTooltip = function(t)
+	GameTooltip:AddLine(" ");
+	GameTooltip:AddDoubleLine("Total Deaths", ATTAccountWideData.Deaths or 0);
+end
 DeathsCheckBox:SetPoint("TOPLEFT", BattlePetsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local DeathsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
@@ -1017,7 +1021,7 @@ function(self)
 	settings:UpdateMode();
 	app:RefreshDataCompletely("ExplorationAccountWideCheckBox");
 end);
-ExplorationAccountWideCheckBox:SetATTTooltip("Flight Paths tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?");
+ExplorationAccountWideCheckBox:SetATTTooltip("Exploration tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?");
 ExplorationAccountWideCheckBox:SetPoint("TOPLEFT", ExplorationCheckBox, "TOPLEFT", 220, 0);
 
 local FlightPathsCheckBox = settings:CreateCheckBox("Flight Paths / Ferry Stations",
