@@ -7992,6 +7992,10 @@ end
 
 -- Achievement Criteria Lib
 local EJ_GetCreatureInfo = EJ_GetCreatureInfo;
+-- Criteria field values which will use the value of the respective Achievement instead
+local UseParentAchievementValueKeys = {
+	"c", "classID", "races", "r", "u", "e", "pb", "pvp"
+}
 local function GetParentAchievementInfo(t, key)
 	-- if the Achievement data was already cached, but the criteria is still getting here
 	-- then the Achievement's data field was nil
@@ -8003,12 +8007,10 @@ local function GetParentAchievementInfo(t, key)
 	end
 	local achievement = app.SearchForObject("achievementID", id, "key");
 	if achievement then
-		t.c = achievement.c;
-		t.classID = achievement.classID;
-		t.races = achievement.races;
-		t.r = achievement.r;
-		t.u = achievement.u;
-		t.e = achievement.e;
+		-- copy parent Achievement field re-mappings
+		for _,key in ipairs(UseParentAchievementValueKeys) do
+			t[key] = achievement[key]
+		end
 		t._cached = true;
 		return rawget(t, key);
 	end
@@ -8138,31 +8140,18 @@ local criteriaFields = {
 	["index"] = function(t)
 		return 1;
 	end,
-	-- Use parent achievement if info not listed directly in the criteria
-	["c"] = function(t)
-		return GetParentAchievementInfo(t, "c");
-	end,
-	["classID"] = function(t)
-		return GetParentAchievementInfo(t, "classID");
-	end,
-	["races"] = function(t)
-		return GetParentAchievementInfo(t, "races");
-	end,
-	["r"] = function(t)
-		return GetParentAchievementInfo(t, "r");
-	end,
-	["e"] = function(t)
-		return GetParentAchievementInfo(t, "e");
-	end,
-	["u"] = function(t)
-		return GetParentAchievementInfo(t, "u");
-	end,
 	GetInfo = function()
 		return GetAchievementCriteriaInfoByID;
 	end,
 };
 criteriaFields.collectible = fields.collectible;
 criteriaFields.icon = fields.icon;
+-- apply parent Achievement field re-mappings
+for _,key in ipairs(UseParentAchievementValueKeys) do
+	criteriaFields[key] = function(t)
+		return GetParentAchievementInfo(t, key);
+	end
+end
 app.BaseAchievementCriteria = app.BaseObjectFields(criteriaFields, "BaseAchievementCriteria");
 
 local criteriaFieldsWithIndex = RawCloneData(criteriaFields);
