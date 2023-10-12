@@ -3583,6 +3583,18 @@ else
 				end
 			end
 		end
+		
+		
+		local GameTooltip_SetToyByItemID = GameTooltip.SetToyByItemID;
+		if GameTooltip_SetToyByItemID then
+			GameTooltip.SetToyByItemID = function(self, itemID, ...)
+				GameTooltip_SetToyByItemID(self, itemID, ...);
+				if itemID then
+					AttachTooltipSearchResults(self, 1, "itemID:" .. itemID, SearchForField, "itemID", itemID);
+					self:Show();
+				end
+			end
+		end
 	end);
 end
 if app.GameBuildVersion > 11403 then
