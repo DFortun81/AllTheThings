@@ -1264,10 +1264,9 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 	})),
 	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
 		i(210063, {	-- Invader's Satchel of Helpful Goods Legion TW Daily Reward
-			-- ShadowBrooks -- Looks like this may be the current loot table?
-			-- ["sym"] = {
-			-- 	{"select", "itemID", 156698},{"pop"},	-- Tranquil Satchel of Helpful Goods
-			-- },
+			["sym"] = {
+				{"select", "itemID", 156698},{"pop"},	-- Tranquil Satchel of Helpful Goods
+			},
 		}),
 	})),
 }));
