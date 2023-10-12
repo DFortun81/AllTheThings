@@ -2919,6 +2919,7 @@ function app:GetDataCache()
 		tinsert(g, app.CreateDynamicCategory("Battle Pets"));
 		tinsert(g, app.CreateDynamicCategory("Factions"));
 		tinsert(g, app.CreateDynamicCategory("Flight Paths"));
+		if C_Heirloom then tinsert(g, app.CreateDynamicCategory("Heirlooms")); end
 		tinsert(g, app.CreateDynamicCategory("Mounts"));
 		tinsert(g, app.CreateDynamicCategory("Titles"));
 		tinsert(g, app.CreateDynamicCategory("Toys"));
