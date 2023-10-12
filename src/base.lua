@@ -115,7 +115,8 @@ app.GetRelativeValue = GetRelativeValue;
 
 -- Declare Event Handlers
 app.EventHandlers = {
-	OnRecalculate = {}
+	OnRecalculate = {},
+	OnReady = {},
 };
 
 -- Cache information about the player.

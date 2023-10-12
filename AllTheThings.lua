@@ -21967,6 +21967,11 @@ app.InitDataCoroutine = function()
 
 	-- now that the addon is ready, make sure the minilist is updated to the current location if necessary
 	DelayedCallback(app.LocationTrigger, 3);
+	
+	-- Execute the OnReady handlers.
+	for i,handler in ipairs(app.EventHandlers.OnReady) do
+		handler();
+	end
 
 	-- finally can say the app is ready
 	-- even though RefreshData starts a coroutine, this failed to get set one time when called after the coroutine started...

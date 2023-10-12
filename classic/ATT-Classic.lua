@@ -6784,13 +6784,15 @@ if C_ToyBox then
 		return isBNETCollectible(t.toyID);
 	end
 	
-	app:RegisterEvent("TOYS_UPDATED");
 	app.events.TOYS_UPDATED = function(toyID, new)
 		if toyID then
 			app.SetAccountCollected(app.SearchForField("toyID", toyID)[1] or app.CreateToy(toyID), "Toys", toyID, PlayerHasToy(toyID));
 			app:RefreshDataQuietly("TOYS_UPDATED", true);
 		end
 	end
+	tinsert(app.EventHandlers.OnReady, function()
+		app:RegisterEvent("TOYS_UPDATED");
+	end);
 end
 app.CreateToy = app.CreateClass("Toy", "toyID", fields);
 
@@ -14589,6 +14591,11 @@ app.events.VARIABLES_LOADED = function()
 
 		-- Now that all the windows are loaded, cache flight paths!
 		app.CacheFlightPathData();
+	
+		-- Execute the OnReady handlers.
+		for i,handler in ipairs(app.EventHandlers.OnReady) do
+			handler();
+		end
 
 		-- Mark that we're ready now!
 		app.IsReady = true;
