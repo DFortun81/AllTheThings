@@ -2560,6 +2560,7 @@ local function SearchForLink(link)
 		end
 		return cache, kind, id;
 	end
+	return {}, "", 0;
 end
 local function SearchForMissingItemsRecursively(group, listing)
 	if group.visible then
