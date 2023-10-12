@@ -1442,6 +1442,58 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 71,
 					})),
+					applyclassicphase(WRATH_PHASE_FOUR, q(20439, {	-- A Meeting With The Magister
+						["qg"] = 36669,	-- Arcanist Tybalin
+						["sourceQuest"] = 20438,	-- A Suitable Disguise (A)
+						["coord"] = { 39.6, 57.6, NORTHREND_DALARAN },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/1 Ancient Dragonforged Blades
+								["provider"] = { "i", 49698 },	-- Ancient Dragonforged Blades
+								["coord"] = { 69.8, 31.6, NORTHREND_DALARAN },
+								["cr"] = 36670,	-- Magister Hathorel <The Sunreavers>
+							}),
+						},
+					})),
+					applyclassicphase(WRATH_PHASE_FOUR, q(24451, {	-- An Audience With The Arcanist
+						["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
+						["sourceQuest"] = 24556,	-- A Suitable Disguise (H)
+						["coord"] = { 69.8, 31.6, NORTHREND_DALARAN },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/1 Ancient Dragonforged Blades
+								["provider"] = { "i", 49698 },	-- Ancient Dragonforged Blades
+								["coord"] = { 39.6, 57.6, NORTHREND_DALARAN },
+								["cr"] = 36669,	-- Arcanist Tybalin
+							}),
+						},
+					})),
+					applyclassicphase(WRATH_PHASE_FOUR, q(20438, {	-- A Suitable Disguise (A)
+						["qg"] = 36669,	-- Arcanist Tybalin
+						["sourceQuest"] = 14457,	-- The Sunreaver Plan
+						["coord"] = { 39.6, 57.6, NORTHREND_DALARAN },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/1 Borrowed Tabard
+								["provider"] = { "i", 49648 },	-- Borrowed Tabard
+								["coord"] = { 44.4, 47.6, NORTHREND_DALARAN },
+								["cr"] = 36856,	-- Shandy Glossgleam
+							}),
+						},
+					})),
+					applyclassicphase(WRATH_PHASE_FOUR, q(24556, {	-- A Suitable Disguise (H)
+						["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
+						["sourceQuest"] = 24557,	-- The Silver Covenant's Scheme (H)
+						["coord"] = { 69.8, 31.6, NORTHREND_DALARAN },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/1 Borrowed Tabard
+								["provider"] = { "i", 49648 },	-- Borrowed Tabard
+								["coord"] = { 44.4, 47.6, NORTHREND_DALARAN },
+								["cr"] = 36856,	-- Shandy Glossgleam
+							}),
+						},
+					})),
 					q(29608, {	-- Allies in Dalaran
 						["qgs"] = {
 							23736,	-- Pricilla Winterwind
@@ -2140,6 +2192,24 @@ root(ROOTS.Zones, {
 							}),
 						},
 					})),
+					applyclassicphase(WRATH_PHASE_FOUR, q(24454, {	-- Return To Caladis Brightspear
+						["providers"] = {
+							{ "n", 36669 },	-- Arcanist Tybalin
+							{ "i", 49698 },	-- Ancient Dragonforged Blades
+						},
+						["sourceQuest"] = 20439,	-- A Meeting With The Magister (A)
+						["coord"] = { 39.6, 57.6, NORTHREND_DALARAN },
+						["races"] = ALLIANCE_ONLY,
+					})),
+					applyclassicphase(WRATH_PHASE_FOUR, q(24558, {	-- Return To Myralion Sunblaze
+						["providers"] = {
+							{ "n", 36670 },	-- Magister Hathorel <The Sunreavers>
+							{ "i", 49698 },	-- Ancient Dragonforged Blades
+						},
+						["sourceQuest"] = 24451,	-- An Audience With The Arcanist (H)
+						["coord"] = { 69.8, 31.6, NORTHREND_DALARAN },
+						["races"] = HORDE_ONLY,
+					})),
 					applyclassicphase(WRATH_PHASE_FOUR, q(24579, {	-- Sartharion Must Die!
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
@@ -2359,6 +2429,33 @@ root(ROOTS.Zones, {
 						["timeline"] = { "added 6.2.0.19934" },
 						["isBreadcrumb"] = true,
 					}),
+					applyclassicphase(WRATH_PHASE_FOUR, q(24557, {	-- The Silver Covenant's Scheme
+						["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
+						["sourceQuest"] = 24555,	-- What The Dragons Know
+						["coord"] = { 69.8, 31.6, NORTHREND_DALARAN },
+						["maps"] = { NORTHREND_THE_UNDERBELLY },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/1 Silver Covenant Orders
+								["provider"] = { "i", 49872 },	-- Silver Covenant Orders
+								["coord"] = { 36.0, 53.8, NORTHREND_THE_UNDERBELLY },
+								["cr"] = 36774,	-- Silver Covenant Agent
+							}),
+						},
+					})),
+					applyclassicphase(WRATH_PHASE_FOUR, q(14457, {	-- The Sunreaver Plan
+						["qg"] = 36669,	-- Arcanist Tybalin
+						["sourceQuest"] = 14444,	-- What The Dragons Know (A)
+						["coord"] = { 39.6, 57.6, NORTHREND_THE_UNDERBELLY },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/1 Sunreaver Orders
+								["provider"] = { "i", 49536 },	-- Sunreaver Orders
+								["coord"] = { 62.6, 15.0, NORTHREND_THE_UNDERBELLY },
+								["cr"] = 36776,	-- Sunreaver Agent
+							}),
+						},
+					})),
 					q(13240, {	-- Timear Foresees Centrifuge Constructs in your Future!
 						["qg"] = 31439,	-- Archmage Timear
 						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },

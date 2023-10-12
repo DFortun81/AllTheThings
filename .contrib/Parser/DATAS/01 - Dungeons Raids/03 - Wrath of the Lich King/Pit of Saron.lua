@@ -68,6 +68,40 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(78, 78, 25),
 				}),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24461, {	-- Reforging The Sword (A)
+					["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+					["sourceQuest"] = 24454,	-- Return To Caladis Brightspear (A)
+					["coord"] = { 74.2, 31.2, ICECROWN },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Reforged Quel'Delar
+							["provider"] = { "i", 49739 },	-- Reforged Quel'Delar
+							["cost"] = {
+								{ "i", 49718, 5 },	-- Infused Saronite Bar
+								{ "i", 49740, 1 },	-- Remnants of Quel'Delar
+								{ "i", 49723, 1 },	-- The Forgemaster's Hammer
+							},
+							["cr"] = 36494,	-- Forgemaster Garfrost
+						}),
+					},
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24559, {	-- Reforging The Sword (H)
+					["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+					["sourceQuest"] = 24558,	-- Return To Myralion Sunblaze (H)
+					["coord"] = { 74.2, 31.2, ICECROWN },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Reforged Quel'Delar
+							["provider"] = { "i", 49739 },	-- Reforged Quel'Delar
+							["cost"] = {
+								{ "i", 49718, 5 },	-- Infused Saronite Bar
+								{ "i", 49740, 1 },	-- Remnants of Quel'Delar
+								{ "i", 49723, 1 },	-- The Forgemaster's Hammer
+							},
+							["cr"] = 36494,	-- Forgemaster Garfrost
+						}),
+					},
+				})),
 				q(24498, {	-- The Path to the Citadel (A)
 					["qg"] = 36993,	-- Lady Jaina Proudmoore
 					["sourceQuest"] = 24683,	-- The Pit of Saron (A)
@@ -97,6 +131,13 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, {
 					},
 				}),
 			}),
+			-- #if ANYCLASSIC
+			n(ZONE_DROPS, {
+				i(49718, {	-- Infused Saronite Bar
+					["provider"] = { "o", 201592 },	-- Infused Saronite Bars
+				}),
+			}),
+			-- #endif
 			d(NORMAL_DUNGEON, {
 				n(ZONE_DROPS, {
 					i(49852),	-- Coffin Nail

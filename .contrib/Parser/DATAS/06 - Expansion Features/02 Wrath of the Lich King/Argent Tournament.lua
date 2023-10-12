@@ -218,197 +218,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["races"] = HORDE_ONLY,
 				}),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(4596, {	-- The Sword in the Skull
-					["description"] = "This is the quest chain for obtaining an epic Quel'Delar weapon.",
-					["maps"] = {
-						NORTHREND_DALARAN,
-						ISLE_OF_QUELDANAS,
-					},
-					["groups"] = {
-						a(q(14443, {	-- The Battered Hilt (A)
-							["provider"] = { "i", 50379 },	-- Battered Hilt (A)
-						})),
-						h(q(24554, {	-- The Battered Hilt (H)
-							["provider"] = { "i", 50380 },	-- Battered Hilt (H)
-						})),
-						q(14444, {	-- What The Dragons Know (A)
-							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
-							["sourceQuest"] = 14443,	-- The Battered Hilt (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(24555, {	-- What The Dragons Know (H)
-							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
-							["sourceQuest"] = 24554,	-- The Battered Hilt (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(14457, {	-- The Sunreaver Plan
-							["qg"] = 36669,	-- Arcanist Tybalin
-							["sourceQuest"] = 14444,	-- What The Dragons Know (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(24557, {	-- The Silver Covenant's Scheme
-							["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
-							["sourceQuest"] = 24555,	-- What The Dragons Know
-							["races"] = HORDE_ONLY,
-						}),
-						q(20438, {	-- A Suitable Disguise (A)
-							["qg"] = 36669,	-- Arcanist Tybalin
-							["sourceQuest"] = 14457,	-- The Sunreaver Plan
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(24556, {	-- A Suitable Disguise (H)
-							["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
-							["sourceQuest"] = 24557,	-- The Silver Covenant's Scheme (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(20439, {	-- A Meeting With The Magister
-							["qg"] = 36669,	-- Arcanist Tybalin
-							["sourceQuest"] = 20438,	-- A Suitable Disguise (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(24451, {	-- An Audience With The Arcanist
-							["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
-							["sourceQuest"] = 24556,	-- A Suitable Disguise (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(24454, {	-- Return To Caladis Brightspear
-							["qg"] = 36669,	-- Arcanist Tybalin
-							["sourceQuest"] = 20439,	-- A Meeting With The Magister (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(24558, {	-- Return To Myralion Sunblaze
-							["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
-							["sourceQuest"] = 24451,	-- An Audience With The Arcanist (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(24461, {	-- Reforging The Sword (A)
-							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
-							["sourceQuest"] = 24454,	-- Return To Caladis Brightspear (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(24559, {	-- Reforging The Sword (H)
-							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
-							["sourceQuest"] = 24558,	-- Return To Myralion Sunblaze (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(24476, {	-- Tempering The Blade (A)
-							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
-							["sourceQuest"] = 24461,	-- Reforging The Sword (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(24560, {	-- Tempering The Blade (H)
-							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
-							["sourceQuest"] = 24559,	-- Reforging The Sword (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(24480, {	-- The Halls Of Reflection (A)
-							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
-							["sourceQuest"] = 24476,	-- Tempering The Blade (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(24561, {	-- The Halls Of Reflection (H)
-							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
-							["sourceQuest"] = 24560,	-- Tempering The Blade (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(24522, {	-- Journey To The Sunwell (A)
-							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
-							["sourceQuest"] = 24480,	-- The Halls Of Reflection (A)
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(24562, {	-- Journey To The Sunwell (H)
-							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
-							["sourceQuest"] = 24561,	-- The Halls Of Reflection (H)
-							["races"] = HORDE_ONLY,
-						}),
-						q(24535, {	-- Thalorien Dawnseeker (A)
-							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
-							["sourceQuest"] = 24522,	-- Journey To The Sunwell
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(24563, {	-- Thalorien Dawnseeker (H)
-							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
-							["sourceQuest"] = 24562,	-- Journey To The Sunwell
-							["races"] = HORDE_ONLY,
-						}),
-						q(24553, {	-- The Purification of Quel'Delar (A)
-							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
-							["sourceQuest"] = 24535,	-- Thalorien Dawnseeker (A)
-							["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(24595, {	-- The Purification of Quel'Delar (A — Maces)
-							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
-							["sourceQuest"] = 24535,	-- Thalorien Dawnseeker (A)
-							["classes"] = { PRIEST, SHAMAN, DRUID },
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(24564, {	-- The Purification of Quel'Delar (H)
-							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
-							["sourceQuest"] = 24563,	-- Thalorien Dawnseeker (H)
-							["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
-							["races"] = exclude(BLOODELF, HORDE_ONLY),
-						}),
-						q(24598, {	-- The Purification of Quel'Delar (H — Maces)
-							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
-							["sourceQuest"] = 24563,	-- Thalorien Dawnseeker (H)
-							["classes"] = { PRIEST, SHAMAN, DRUID },
-							["races"] = exclude(BLOODELF, HORDE_ONLY),
-						}),
-						q(24594, {	-- The Purification of Quel'Delar (Blood Elf)
-							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
-							["sourceQuest"] = 24563,	-- Thalorien Dawnseeker (H)
-							["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
-							["races"] = { BLOODELF },
-						}),
-						q(24596, {	-- The Purification of Quel'Delar (Blood Elf — Maces)
-							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
-							["sourceQuest"] = 24563,	-- Thalorien Dawnseeker (H)
-							["classes"] = { PRIEST, SHAMAN, DRUID },
-							["races"] = { BLOODELF },
-						}),
-						q(24796, {	-- A Victory For The Silver Covenant (A)
-							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
-							["sourceQuest"] = 24553,	-- The Purification of Quel'Delar (A)
-							["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
-							["races"] = ALLIANCE_ONLY,
-							["_drop"] = { "g" },
-						}),
-						q(24795, {	-- A Victory For The Silver Covenant (A — Maces)
-							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
-							["sourceQuest"] = 24595,	-- The Purification of Quel'Delar [A - Maces]
-							["classes"] = { PRIEST, SHAMAN, DRUID },
-							["races"] = ALLIANCE_ONLY,
-							["_drop"] = { "g" },
-						}),
-						q(24801, {	-- A Victory For The Sunreavers (H)
-							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
-							["sourceQuest"] = 24564,	-- The Purification of Quel'Delar (H)
-							["races"] = exclude(BLOODELF, HORDE_ONLY),
-							["_drop"] = { "g" },
-						}),
-						q(24799, {	-- A Victory For The Sunreavers [H - Maces]
-							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
-							["sourceQuest"] = 24598,	-- The Purification of Quel'Delar [H - Maces]
-							["classes"] = { PRIEST, SHAMAN, DRUID },
-							["races"] = exclude(BLOODELF, HORDE_ONLY),
-							["_drop"] = { "g" },
-						}),
-						q(24800, {	-- A Victory For The Sunreavers [Blood Elves]
-							["sourceQuest"] = 24594,	-- The Purification of Quel'Delar [Blood Elves]
-							["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
-							["races"] = { BLOODELF },
-							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
-							["_drop"] = { "g" },
-						}),
-						q(24798, {	-- A Victory For The Sunreavers [Blood Elves - Maces]
-							["sourceQuest"] = 24596,	-- The Purification of Quel'Delar [Blood Elves - Maces]
-							["classes"] = { PRIEST, SHAMAN, DRUID },
-							["races"] = { BLOODELF },
-							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
-							["_drop"] = { "g" },
-						}),
-
-					},
+					["maps"] = { NORTHREND_DALARAN },
 				})),
 				ach(2772),	-- Tilted!
 				n(FACTION_HEADER_ALLIANCE, {
@@ -664,6 +474,128 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 				}),
 			}),
 			n(QUESTS, {
+				-- TODO: Adjust the Quel'Dalar quest chain and move these where they should be.
+				applyclassicphase(WRATH_PHASE_FOUR, q(24476, {	-- Tempering The Blade (A)
+					["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+					["sourceQuest"] = 24461,	-- Reforging The Sword (A)
+					["races"] = ALLIANCE_ONLY,
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24560, {	-- Tempering The Blade (H)
+					["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+					["sourceQuest"] = 24559,	-- Reforging The Sword (H)
+					["races"] = HORDE_ONLY,
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24480, {	-- The Halls Of Reflection (A)
+					["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+					["sourceQuest"] = 24476,	-- Tempering The Blade (A)
+					["races"] = ALLIANCE_ONLY,
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24561, {	-- The Halls Of Reflection (H)
+					["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+					["sourceQuest"] = 24560,	-- Tempering The Blade (H)
+					["races"] = HORDE_ONLY,
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24522, {	-- Journey To The Sunwell (A)
+					["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+					["sourceQuest"] = 24480,	-- The Halls Of Reflection (A)
+					["races"] = ALLIANCE_ONLY,
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24562, {	-- Journey To The Sunwell (H)
+					["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+					["sourceQuest"] = 24561,	-- The Halls Of Reflection (H)
+					["races"] = HORDE_ONLY,
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24535, {	-- Thalorien Dawnseeker (A)
+					["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+					["sourceQuest"] = 24522,	-- Journey To The Sunwell
+					["races"] = ALLIANCE_ONLY,
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24563, {	-- Thalorien Dawnseeker (H)
+					["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+					["sourceQuest"] = 24562,	-- Journey To The Sunwell
+					["races"] = HORDE_ONLY,
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24553, {	-- The Purification of Quel'Delar (A)
+					["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+					["sourceQuest"] = 24535,	-- Thalorien Dawnseeker (A)
+					["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
+					["races"] = ALLIANCE_ONLY,
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24595, {	-- The Purification of Quel'Delar (A — Maces)
+					["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+					["sourceQuest"] = 24535,	-- Thalorien Dawnseeker (A)
+					["classes"] = { PRIEST, SHAMAN, DRUID },
+					["races"] = ALLIANCE_ONLY,
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24564, {	-- The Purification of Quel'Delar (H)
+					["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+					["sourceQuest"] = 24563,	-- Thalorien Dawnseeker (H)
+					["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
+					["races"] = exclude(BLOODELF, HORDE_ONLY),
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24598, {	-- The Purification of Quel'Delar (H — Maces)
+					["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+					["sourceQuest"] = 24563,	-- Thalorien Dawnseeker (H)
+					["classes"] = { PRIEST, SHAMAN, DRUID },
+					["races"] = exclude(BLOODELF, HORDE_ONLY),
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24594, {	-- The Purification of Quel'Delar (Blood Elf)
+					["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+					["sourceQuest"] = 24563,	-- Thalorien Dawnseeker (H)
+					["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
+					["races"] = { BLOODELF },
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24596, {	-- The Purification of Quel'Delar (Blood Elf — Maces)
+					["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+					["sourceQuest"] = 24563,	-- Thalorien Dawnseeker (H)
+					["classes"] = { PRIEST, SHAMAN, DRUID },
+					["races"] = { BLOODELF },
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24796, {	-- A Victory For The Silver Covenant (A)
+					["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+					["sourceQuest"] = 24553,	-- The Purification of Quel'Delar (A)
+					["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
+					["races"] = ALLIANCE_ONLY,
+					["_drop"] = { "g" },
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24795, {	-- A Victory For The Silver Covenant (A — Maces)
+					["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+					["sourceQuest"] = 24595,	-- The Purification of Quel'Delar [A - Maces]
+					["classes"] = { PRIEST, SHAMAN, DRUID },
+					["races"] = ALLIANCE_ONLY,
+					["_drop"] = { "g" },
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24801, {	-- A Victory For The Sunreavers (H)
+					["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+					["sourceQuest"] = 24564,	-- The Purification of Quel'Delar (H)
+					["races"] = exclude(BLOODELF, HORDE_ONLY),
+					["_drop"] = { "g" },
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24799, {	-- A Victory For The Sunreavers [H - Maces]
+					["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+					["sourceQuest"] = 24598,	-- The Purification of Quel'Delar [H - Maces]
+					["classes"] = { PRIEST, SHAMAN, DRUID },
+					["races"] = exclude(BLOODELF, HORDE_ONLY),
+					["_drop"] = { "g" },
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24800, {	-- A Victory For The Sunreavers [Blood Elves]
+					["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+					["sourceQuest"] = 24594,	-- The Purification of Quel'Delar [Blood Elves]
+					["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
+					["races"] = { BLOODELF },
+					["_drop"] = { "g" },
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24798, {	-- A Victory For The Sunreavers [Blood Elves - Maces]
+					["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+					["sourceQuest"] = 24596,	-- The Purification of Quel'Delar [Blood Elves - Maces]
+					["classes"] = { PRIEST, SHAMAN, DRUID },
+					["races"] = { BLOODELF },
+					["_drop"] = { "g" },
+				})),
+				
+				
+				
+				
 				q(13666, {	-- A Blade Fit For A Champion (A) (The Silver Covenant, Aspirant)
 					["qg"] = 33625,	-- Arcanist Taelis
 					["sourceQuests"] = {
@@ -2485,6 +2417,14 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						}),
 					},
 				},
+				applyclassicphase(WRATH_PHASE_FOUR, a(q(14443, {	-- The Battered Hilt (A)
+					["provider"] = { "i", 50379 },	-- Battered Hilt (A)
+					["coord"] = { 74.2, 31.2, ICECROWN },
+				}))),
+				applyclassicphase(WRATH_PHASE_FOUR, h(q(24554, {	-- The Battered Hilt (H)
+					["provider"] = { "i", 50380 },	-- Battered Hilt (H)
+					["coord"] = { 74.2, 31.2, ICECROWN },
+				}))),
 				q(13634, {	-- The Black Knight of Silverpine?
 					["qg"] = 33417,	-- Crusader Rhydalla
 					["sourceQuest"] = 13668,	-- The Argent Tournament (H)
@@ -3801,6 +3741,32 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						CHAMPIONS_SEAL,
 					},
 				}, true),
+				applyclassicphase(WRATH_PHASE_FOUR, q(14444, {	-- What The Dragons Know (A)
+					["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+					["sourceQuest"] = 14443,	-- The Battered Hilt (A)
+					["coord"] = { 74.2, 31.2, ICECROWN },
+					["maps"] = { DRAGONBLIGHT },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Ask Krasus about the hilt's origins
+							["provider"] = { "n", 27990 },	-- Krasus
+							["coord"] = { 59.8, 54.6, DRAGONBLIGHT },
+						}),
+					},
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, q(24555, {	-- What The Dragons Know (H)
+					["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+					["sourceQuest"] = 24554,	-- The Battered Hilt (H)
+					["coord"] = { 74.2, 31.2, ICECROWN },
+					["maps"] = { DRAGONBLIGHT },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Ask Krasus about the hilt's origins
+							["provider"] = { "n", 27990 },	-- Krasus
+							["coord"] = { 59.8, 54.6, DRAGONBLIGHT },
+						}),
+					},
+				})),
 				applyclassicphase(WRATH_PHASE_THREE, {	-- You've Really Done It This Time, Kul
 					["allianceQuestData"] = q(14096, {	-- You've Really Done It This Time, Kul (A)
 						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
