@@ -3548,6 +3548,42 @@ else
 	WorldMapTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 	WorldMapTooltip:HookScript("OnTooltipCleared", ClearTooltip);
 	WorldMapTooltip:HookScript("OnShow", AttachTooltip);
+	
+	tinsert(app.EventHandlers.OnReady, function()
+		local GameTooltip_SetLFGDungeonReward = GameTooltip.SetLFGDungeonReward;
+		if GameTooltip_SetLFGDungeonReward then
+			GameTooltip.SetLFGDungeonReward = function(self, dungeonID, rewardIndex)
+				GameTooltip_SetLFGDungeonReward(self, dungeonID, rewardIndex);
+				local name, texturePath, quantity, isBonusReward, spec, itemID = GetLFGDungeonRewardInfo(dungeonID, rewardIndex);
+				if itemID then
+					if spec == "item" then
+						AttachTooltipSearchResults(self, 1, "itemID:" .. itemID, SearchForField, "itemID", itemID);
+						self:Show();
+					elseif spec == "currency" then
+						AttachTooltipSearchResults(self, 1, "currencyID:" .. itemID, SearchForField, "currencyID", itemID);
+						self:Show();
+					end
+				end
+			end
+		end
+		
+		local GameTooltip_SetLFGDungeonShortageReward = GameTooltip.SetLFGDungeonShortageReward;
+		if GameTooltip_SetLFGDungeonShortageReward then
+			GameTooltip.SetLFGDungeonShortageReward = function(self, dungeonID, shortageSeverity, lootIndex)
+				GameTooltip_SetLFGDungeonShortageReward(self, dungeonID, shortageSeverity, lootIndex);
+				local name, texturePath, quantity, isBonusReward, spec, itemID = GetLFGDungeonShortageRewardInfo(dungeonID, shortageSeverity, lootIndex);
+				if itemID then
+					if spec == "item" then
+						AttachTooltipSearchResults(self, 1, "itemID:" .. itemID, SearchForField, "itemID", itemID);
+						self:Show();
+					elseif spec == "currency" then
+						AttachTooltipSearchResults(self, 1, "currencyID:" .. itemID, SearchForField, "currencyID", itemID);
+						self:Show();
+					end
+				end
+			end
+		end
+	end);
 end
 if app.GameBuildVersion > 11403 then
 	app:RegisterEvent("CURSOR_CHANGED");
