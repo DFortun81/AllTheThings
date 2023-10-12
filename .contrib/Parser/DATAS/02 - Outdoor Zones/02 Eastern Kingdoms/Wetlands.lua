@@ -2034,6 +2034,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 61.0, 47.2, WETLANDS },
 						{ 61.8, 41.2, WETLANDS },
 					},
+					-- #endif
 				}),
 				i(3073, {	-- Smoldering Pants
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
