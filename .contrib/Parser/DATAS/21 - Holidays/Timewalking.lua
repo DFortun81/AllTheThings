@@ -178,122 +178,133 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubble
 -- The Burning Crusade Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND_DUNGEON_EVENT, {
 	tier(TBC_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {
-		q(47523, {	-- Disturbance Detected: Black Temple
-			["coord"] = { 54.6, 39,  SHATTRATH_CITY },
-			["provider"] = { "n", 123252 },	-- Vormu
-			["isWeekly"] = true,
-			["timeline"] = { ADDED_7_2_5 },
-			["g"] = {
-				i(208091, sharedDataSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Cache of Timewarped Treasures (BC)
-					["description"] = "This bag contains an item from Black Temple or an item from the WoW's 15th Birthday Event Bosses Archimonde, Kael'Thas or Lady Vashj.\nThe droprate for the mounts seems rather high (5-10%).",
-					["sym"] = {{"select","itemID",
-						97554,	-- Dripping Strider Egg
-						122112,	-- Hyjal Whisp
-						122110,	-- Sultry Grimoire
-						97555,	-- Tiny Fel Engine Key
-					}},
-					["groups"] = {
-					-- Can also contain any item from BT
-						i(32458),	-- Ashes of Al'ar (MOUNT!)
-						i(133543),	-- Infinite Timereaver (MOUNT!)
-						-- Archimonde
-						i(171942),	-- Cowl of Absolution
-						i(171941),	-- Cowl o the Tempest
-						i(171943),	-- Hood of Absolution
-						i(171940),	-- Hood of the Malefic
-						i(171929),	-- Lightbringer Faceguard
-						i(171930),	-- Lightbringer Greathelm
-						i(171931),	-- Lightbringer War-Helm
-						i(171932),	-- Gronnstalker's Helmet
-						i(171927),	-- Onslaught Battle-Helm
-						i(171928),	-- Onslaught Greathelm
-						i(171935),	-- Skyshatter Cover
-						i(171934),	-- Skyshatter Headguard
-						i(171933),	-- Skyshatter Helmet
-						i(171936),	-- Slayer's Helm
-						i(171938),	-- Thunderheart Cover
-						i(171939),	-- Thunderheart Headguard
-						i(171937),	-- Thunderheart Helmet
-						i(171502),	-- Apostle of Argus
-						i(171496),	-- Cataclysm's Edge
-						i(171504),	-- Tempest of Chaos
-						i(171500),	-- Bristleblitz Striker
-						i(171503),	-- Antonidas' Aegis of Rapt Concentration
-						i(171505),	-- Scepter of Purification
-						i(171501),	-- Mail of Fevered Pursuit
-						i(171499),	-- Midnight Chestguard
-						i(171507),	-- Robes of Rhonin
-						i(171498),	-- Savior's Grasp
-						i(171506),	-- Leggings of Eternity
-						i(171497),	-- Legguards of Endless Rage
-						-- Kael Thas
-						i(171902),	-- Cataclysm Chestguard
-						i(171903),	-- Cataclysm Chestpiece
-						i(171904),	-- Cataclysm Chestplate
-						i(171896),	-- Crystalforge Breastplate
-						i(171895),	-- Crystalforge Chestguard
-						i(171897),	-- Crystalforge Chestpiece
-						i(171889),	-- Deathmantle Chestguard
-						i(171894),	-- Destroyer Breastplate
-						i(171893),	-- Destroyer Chestguard
-						i(171899),	-- Deathmantle Chestguard
-						i(171907),	-- Nordrassil Chestguard
-						i(171909),	-- Nordrassil Chestpiece
-						i(171908),	-- Nordrassil Chestplate
-						i(171901),	-- Shroud of the Avatar
-						i(171900),	-- Vestments of the Avatar
-						i(171898),	-- Rift Stalker Hauberk
-						i(171906),	-- Robe of the Corruptor
-						i(171905),	-- Robes of Tirisfal
-						i(171494),	-- Band of the Ranger-General
-						i(171487),	-- Crown of the Sun
-						i(171484),	-- Gauntlets of the Sun King
-						i(171492),	-- Leggings of Murderous Intent
-						i(171493),	-- Rod of the Sun King
-						i(171489),	-- Royal Cloak of the Sunstriders
-						i(171495),	-- Royal Gauntlets of Silvermoon
-						i(171488),	-- Sunhawk Leggings
-						i(171486),	-- Sunshower Light Cloak
-						i(171491),	-- Thalassian Wildercloak
-						i(171485),	-- The Nexus Key
-						i(171490),	-- Twinblade of the Phoenix
-						-- Lady Vashj
-						i(171912),	-- Crystalforge Faceguard
-						i(171914),	-- Crystalforge Greathelm
-						i(171913),	-- Crystalforge War-Helm
-						i(171916),	-- Deathmantle Helm
-						i(171919),	-- Cataclysm Headguard
-						i(171920),	-- Cataclysm Headpiece
-						i(171921),	-- Cataclysm Helm
-						i(171925),	-- Nordrassil Headdress
-						i(171924),	-- Nordrassil Headguard
-						i(171926),	-- Nordrassil Headpiece
-						i(171917),	-- Cowl of the Avatar
-						i(171918),	-- Hood of the Avatar
-						i(171910),	-- Destroyer Battle-Helm
-						i(171911),	-- Destroyer Greathelm
-						i(171915),	-- Rift Stalker Helm
-						i(171922),	-- Cowl of Tirisfall
-						i(171923),	-- Hood of the Corruptor
-						i(171481),	-- Glorious Gauntlets of Crestfall
-						i(171471),	-- Krakken-Heart Breastplate
-						i(171472),	-- Fang of Vashj
-						i(171474),	-- Serpent Spine Longbow
-						i(171477),	-- Lightfathom Scepter
-						i(171480),	-- Runetotem's Mantle
-						i(171476),	-- Vestments of the Sea-Witch
-						i(171475),	-- Belt of One-Hundred Deaths
-						i(171473),	-- Cobta-Lash Boots
-						i(171479),	-- Coral Band of the Revived
-						i(171478),	-- Ring of Endless Coils
-						i(171482),	-- Prism of Inner Calm
-					},
-				})),
-			},
+		n(DROPS, {
+			i(187902, {	-- Sporebat Soul (SS!)
+				["timeline"] = { ADDED_9_1_5 },
+			}),
+			i(129747),	-- Swirling Timewarped Vial
 		}),
-		q(40168, {	-- The Swirling Vial
-			["provider"] = { "i", 129747 },	-- Swirling Timewarped Vial
-			["isWeekly"] = true,
+		n(QUESTS, {
+			q(47523, {	-- Disturbance Detected: Black Temple
+				["coord"] = { 54.6, 39,  SHATTRATH_CITY },
+				["provider"] = { "n", 123252 },	-- Vormu
+				["isWeekly"] = true,
+				["timeline"] = { ADDED_7_2_5 },
+				["g"] = {
+					i(208091, sharedDataSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Cache of Timewarped Treasures (BC)
+						["description"] = "This bag contains an item from Black Temple or an item from the WoW's 15th Birthday Event Bosses Archimonde, Kael'Thas or Lady Vashj.\nThe droprate for the mounts seems rather high (5-10%).",
+						["sym"] = {{"select","itemID",
+							97554,	-- Dripping Strider Egg
+							122112,	-- Hyjal Whisp
+							122110,	-- Sultry Grimoire
+							97555,	-- Tiny Fel Engine Key
+						}},
+						["groups"] = {
+						-- Can also contain any item from BT
+							i(32458),	-- Ashes of Al'ar (MOUNT!)
+							i(133543),	-- Infinite Timereaver (MOUNT!)
+							-- Archimonde
+							i(171942),	-- Cowl of Absolution
+							i(171941),	-- Cowl o the Tempest
+							i(171943),	-- Hood of Absolution
+							i(171940),	-- Hood of the Malefic
+							i(171929),	-- Lightbringer Faceguard
+							i(171930),	-- Lightbringer Greathelm
+							i(171931),	-- Lightbringer War-Helm
+							i(171932),	-- Gronnstalker's Helmet
+							i(171927),	-- Onslaught Battle-Helm
+							i(171928),	-- Onslaught Greathelm
+							i(171935),	-- Skyshatter Cover
+							i(171934),	-- Skyshatter Headguard
+							i(171933),	-- Skyshatter Helmet
+							i(171936),	-- Slayer's Helm
+							i(171938),	-- Thunderheart Cover
+							i(171939),	-- Thunderheart Headguard
+							i(171937),	-- Thunderheart Helmet
+							i(171502),	-- Apostle of Argus
+							i(171496),	-- Cataclysm's Edge
+							i(171504),	-- Tempest of Chaos
+							i(171500),	-- Bristleblitz Striker
+							i(171503),	-- Antonidas' Aegis of Rapt Concentration
+							i(171505),	-- Scepter of Purification
+							i(171501),	-- Mail of Fevered Pursuit
+							i(171499),	-- Midnight Chestguard
+							i(171507),	-- Robes of Rhonin
+							i(171498),	-- Savior's Grasp
+							i(171506),	-- Leggings of Eternity
+							i(171497),	-- Legguards of Endless Rage
+							-- Kael Thas
+							i(171902),	-- Cataclysm Chestguard
+							i(171903),	-- Cataclysm Chestpiece
+							i(171904),	-- Cataclysm Chestplate
+							i(171896),	-- Crystalforge Breastplate
+							i(171895),	-- Crystalforge Chestguard
+							i(171897),	-- Crystalforge Chestpiece
+							i(171889),	-- Deathmantle Chestguard
+							i(171894),	-- Destroyer Breastplate
+							i(171893),	-- Destroyer Chestguard
+							i(171899),	-- Deathmantle Chestguard
+							i(171907),	-- Nordrassil Chestguard
+							i(171909),	-- Nordrassil Chestpiece
+							i(171908),	-- Nordrassil Chestplate
+							i(171901),	-- Shroud of the Avatar
+							i(171900),	-- Vestments of the Avatar
+							i(171898),	-- Rift Stalker Hauberk
+							i(171906),	-- Robe of the Corruptor
+							i(171905),	-- Robes of Tirisfal
+							i(171494),	-- Band of the Ranger-General
+							i(171487),	-- Crown of the Sun
+							i(171484),	-- Gauntlets of the Sun King
+							i(171492),	-- Leggings of Murderous Intent
+							i(171493),	-- Rod of the Sun King
+							i(171489),	-- Royal Cloak of the Sunstriders
+							i(171495),	-- Royal Gauntlets of Silvermoon
+							i(171488),	-- Sunhawk Leggings
+							i(171486),	-- Sunshower Light Cloak
+							i(171491),	-- Thalassian Wildercloak
+							i(171485),	-- The Nexus Key
+							i(171490),	-- Twinblade of the Phoenix
+							-- Lady Vashj
+							i(171912),	-- Crystalforge Faceguard
+							i(171914),	-- Crystalforge Greathelm
+							i(171913),	-- Crystalforge War-Helm
+							i(171916),	-- Deathmantle Helm
+							i(171919),	-- Cataclysm Headguard
+							i(171920),	-- Cataclysm Headpiece
+							i(171921),	-- Cataclysm Helm
+							i(171925),	-- Nordrassil Headdress
+							i(171924),	-- Nordrassil Headguard
+							i(171926),	-- Nordrassil Headpiece
+							i(171917),	-- Cowl of the Avatar
+							i(171918),	-- Hood of the Avatar
+							i(171910),	-- Destroyer Battle-Helm
+							i(171911),	-- Destroyer Greathelm
+							i(171915),	-- Rift Stalker Helm
+							i(171922),	-- Cowl of Tirisfall
+							i(171923),	-- Hood of the Corruptor
+							i(171481),	-- Glorious Gauntlets of Crestfall
+							i(171471),	-- Krakken-Heart Breastplate
+							i(171472),	-- Fang of Vashj
+							i(171474),	-- Serpent Spine Longbow
+							i(171477),	-- Lightfathom Scepter
+							i(171480),	-- Runetotem's Mantle
+							i(171476),	-- Vestments of the Sea-Witch
+							i(171475),	-- Belt of One-Hundred Deaths
+							i(171473),	-- Cobta-Lash Boots
+							i(171479),	-- Coral Band of the Revived
+							i(171478),	-- Ring of Endless Coils
+							i(171482),	-- Prism of Inner Calm
+						},
+					})),
+				},
+			}),
+			q(40168, {	-- The Swirling Vial
+				["provider"] = { "i", 129747 },	-- Swirling Timewarped Vial
+				["isWeekly"] = true,
+				["groups"] = {
+					currency(TIMEWARPED_BADGE),
+				},
+			}),
 		}),
 		n(VENDORS, {
 			n(98685, {	-- Cupri <Timewalking Vendor>
@@ -475,9 +486,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 					}),
 				},
 			}),
-		}),
-		i(187902, {	-- Sporebat Soul (SS!)
-			["timeline"] = { ADDED_9_1_5 },
 		}),
 		inst_tw(751, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 }},{	-- The Black Temple
 			["isRaid"] = true,
@@ -1248,322 +1256,333 @@ AddInstancesToRotation(TBC_TIER, {
 -- Wrath of the Lich King Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHREND_DUNGEON_EVENT, {
 	tier(WOTLK_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {
-		q(50316, {	-- Disturbance Detected: Ulduar
-			["provider"] = { "n", 130654 },	-- Vormu
-			["isWeekly"] = true,
-			["timeline"] = { ADDED_7_3_5 },
-			["g"] = {
-				i(208094, sharedDataSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Cache of Timewarped Treasures (WOTLK)
-					["description"] = "This bag contains an item from Ulduar or an item from the WoW's 15th Birthday Event Bosses Anub, Lich King or Heigan.\nThe droprate for the mounts seems rather high (5-10%).",
-					["sym"] = {{"select","itemID",
-						-- Seems to be always 1 of those 3 pets -- Gold 15.09.2023
-						142098,	-- Drudge Ghoul (PET!)
-						142086,	-- Magma Rageling (PET!)
-						142085,	-- Nerubian Swarmer (PET!)
-					}},
-					["groups"] = {
-					-- Can also contain any item from Ulduar
-						i(133543),	-- Infinite Timereaver (MOUNT!)
-						i(50818),	-- Invincible (MOUNT!)
-						i(45693),	-- Mimiron's Head (MOUNT!)
-
-						-- Anub'Arak
-						i(171615, {	-- Aegis of the Coliseum
-							["races"] = HORDE_ONLY,
-						}),
-						i(171616, {	-- Anguish
-							["races"] = HORDE_ONLY,
-						}),
-						i(171560, {	-- Archon Glaive
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171604, {	-- Ardent Guard
-							["races"] = HORDE_ONLY,
-						}),
-						i(171583, {	-- Argent Resolve
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171525, {	-- Armbands of Dark Determination
-							["races"] = HORDE_ONLY,
-						}),
-						i(171557, {	-- Armbands of the Ashen Saint
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171581, {	-- Baelgun's Heavy Crossbow
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171527, {	-- Band of the Traitor King
-							["races"] = HORDE_ONLY,
-						}),
-						i(171543, {	-- Band of Deplorable violence
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171548, {	-- Belt of Deathly Dominion
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171614, {	-- Belt of the Eternal
-							["races"] = HORDE_ONLY,
-						}),
-						i(171556, {	-- Belt of the Forgotten Martyr
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171536, {	-- Bindings of the Ashen Saint
-							["races"] = HORDE_ONLY,
-						}),
-						i(171610, {	-- Blackhorn Bludgeon
-							["races"] = HORDE_ONLY,
-						}),
-						i(171533, {	-- Boots of the Icy Floe
-							["races"] = HORDE_ONLY,
-						}),
-						i(171547, {	-- Bracers of Dark Determination
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171529, {	-- Breeches of the Deepening Void
-							["races"] = HORDE_ONLY,
-						}),
-						i(171595, {	-- Bulwark of the Royal Guard
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171558, {	-- Chestguard of Flowing Elements
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171585, {	-- Chestguard of the Warden
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171597, {	-- Cinch of the Undying
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171589, {	-- Cold Convergence
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171584, {	-- Crusader's Glory
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171537, {	-- Cuirass of Flowing Elements
-							["races"] = HORDE_ONLY,
-						}),
-						i(171612, {	-- Darkmaw Crossbow
-							["races"] = HORDE_ONLY,
-						}),
-						i(171555, {	-- Footpads of the Icy Floe
-							["races"] = HORDE_ONLY,
-						}),
-						i(171594, {	-- Fordragon Blades
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171608, {	-- Forsaken Bonecarver
-							["races"] = HORDE_ONLY,
-						}),
-						i(171603, {	-- Frostblade Hatchet
-							["races"] = HORDE_ONLY,
-						}),
-						i(171542, {	-- Gauntlets of Bitter Reprisal
-							["races"] = HORDE_ONLY,
-						}),
-						i(171535, {	-- Girdle of the Forgotten Martyr
-							["races"] = HORDE_ONLY,
-						}),
-						i(171561, {	-- Gloves of Bitter Reprisal
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171562, {	-- Gloves of the Lifeless Touch
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171546, {	-- Greaves of the 7th Legion
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171524, {	-- Greaves of the Saronite Citadel
-							["races"] = HORDE_ONLY,
-						}),
-						i(171538, {	-- Handwraps of the Lifeless Touch
-							["races"] = HORDE_ONLY,
-						}),
-						i(171541, {	-- Hellion Glaive
-							["races"] = HORDE_ONLY,
-						}),
-						i(171526, {	-- Hellscream Slicer
-							["races"] = HORDE_ONLY,
-						}),
-						i(171587, {	-- Helmet of the Crypt Lord
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171602, {	-- Helm of the Crypt Lord
-							["races"] = HORDE_ONLY,
-						}),
-						i(171530, {	-- Leggings of the Awakening
-							["races"] = HORDE_ONLY,
-						}),
-						i(171553, {	-- Leggings of the Deepening Void
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171531, {	-- Leggings of the Lurking Threat
-							["races"] = HORDE_ONLY,
-						}),
-						i(171551, {	-- Legguards of the Lurking Threat
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171607, {	--  Legplates of Redeemed Blood
-							["races"] = HORDE_ONLY,
-						}),
-						i(171596, {	-- Legplates of the Immortal Spider
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171592, {	-- Legplates of the Silver Hand
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171552, {	-- Legwraps of the Awakening
-							["races"] = HORDE_ONLY,
-						}),
-						i(171539, {	-- Lurid Manifestation
-							["races"] = HORDE_ONLY,
-						}),
-						i(171599, {	-- Mace of the Earthborn Chieftain
-							["races"] = HORDE_ONLY,
-						}),
-						i(171540, {	-- Maiden's Adoration
-							["races"] = HORDE_ONLY,
-						}),
-						i(171559, {	-- Maiden's Favor
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171532, {	-- Might of the Nerub
-							["races"] = HORDE_ONLY,
-						}),
-						i(171554, {	-- Misery's End
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171606, {	-- Pauldrons of the Shadow Hunter
-							["races"] = HORDE_ONLY,
-						}),
-						i(171591, {	-- Pauldrons of the Timeless Hunter
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171605, {	-- Perdition
-							["races"] = HORDE_ONLY,
-						}),
-						i(171600, {	-- Pride of the Kor'kron
-							["races"] = HORDE_ONLY,
-						}),
-						i(171611, {	-- Robes of the Sleepless
-							["races"] = HORDE_ONLY,
-						}),
-						i(171545, {	-- Signet of the Traitor King
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171609, {	-- Shoulderpads of the Snow Bandit
-							["races"] = HORDE_ONLY,
-						}),
-						i(171593, {	-- Spaulders of the Snow Bandit
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171601, {	-- Stoneskin Chestplate
-							["races"] = HORDE_ONLY,
-						}),
-						i(171544, {	-- Stormpike Cleaver
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171550, {	-- Strength of the Nerub
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171534, {	-- Suffering's End
-							["races"] = HORDE_ONLY,
-						}),
-						i(171613, {	-- Sunwalker Legguards
-							["races"] = HORDE_ONLY,
-						}),
-						i(171590, {	-- The Grinder
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171582, {	-- The Lion's Maw
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171598, {	-- Vestments of the Sleepless
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171586, {	-- Vigilant Ward
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(171523, {	-- Waistguard of Deathly Dominion
-							["races"] = HORDE_ONLY,
-						}),
-						i(171588, {	-- Westfall Saber
-							["races"] = ALLIANCE_ONLY,
-						}),
-						-- Lich King
-						i(171571),	-- Archus, Greatstaff of Antonidas
-						i(171569),	-- Bloodsurge, Kel'Thuzad's Blade of Agony
-						i(171563),	-- Fal'inrush, Defender of Quel'thalas
-						i(171566),	-- Glorenzelg, High-Blade of the Silver Hand
-						i(171576),	-- Halion, Staff of Forgotten Love
-						i(171565),	-- Havoc's Call, Blade of Lordaeron Kings
-						i(171568),	-- Heaven's Fall, Kryss of a Thousand Lies
-						i(171564),	-- Mithrios, Bronzebeard's Legacy
-						i(171567),	-- Oathbinder, Charge of the Ranger-General
-						i(171578),	-- Pugius, Fist of Defiance
-						i(171570),	-- Royal Scepter of Terenas II
-						i(171577),	-- Stormfury, Dark Blade of the Betrayer
-						i(171574),	-- Tainted Twig of Nordrassil
-						i(171580),	-- Tel'thas, Dagger of the Blood King
-						i(171572),	-- Troggbane, Axe of the Frostborne King
-						i(171575),	-- Valius, Gavel of the Lightbringer
-						i(171573),	-- Warmace of Menethil
-						i(171579),	-- Windrunner's Heartseeker
-						--[[ Heigan
-						I didnt see any Heigan Loot, but technically it should drop.
-						i(171618),	-- Amulet of Autopsy
-						i(171515),	-- Bindings of the Decrepit
-						i(171509),	-- Breastplate of Tormented Rage
-						i(171516),	-- Chestguard of Bitter Charms
-						i(171514),	-- Cryptfiend's Bite
-						i(171619),	-- Cuffs of Dark Shadows
-						i(171617),	-- Demise
-						i(171521),	-- Eruption-Scarred Boots
-						i(171522),	-- Gloves of the Dancing Bear
-						i(171518),	-- Heigan's Putrid Vestments
-						i(171519),	-- Helm of Pilgrimage
-						i(171512),	-- Iron-Spring Jumpers
-						i(171508),	-- Leggings of Colossal Strides
-						i(171510),	-- Legguards of the Apostle
-						i(171623),	-- Necrogenic Belt
-						i(171624),	-- Preceptor's Bindings
-						i(171622),	-- Ring of Holy Cleansing
-						i(171625),	-- Saltarello Shoes
-						i(171520),	-- Serene Echoes
-						i(171621),	-- Shoulderplates of Bloodshed
-						i(171626),	-- Staff of the Plague Beast
-						i(171511),	-- Stalk-Skin Belt
-						i(171517),	-- The Undeath Carrier
-						i(171620),	-- Tunic of the Lost Pack
-						--]]
-
-						-- Weird Ulduar Zone Drop back?
-						-- Possibly
-						i(156461),	-- Adamant Handguards
-						i(156255),	-- Belt of the Sleeper
-						i(156470),	-- Bloodcrush Cudgel
-						i(156467),	-- Boots of Unsettled Prey
-						i(156468),	-- Cloak of the Dormant Blaze
-						i(156257),	-- Daschal's Bite
-						i(156462),	-- Drape of the Spellweaver
-						i(156463),	-- Golemheart Longbow
-						i(156252),	-- Greaves of the Stonewarder
-						i(156256),	-- Grips of Chaos
-						i(156465),	-- Iceshear Mantle
-						i(156254),	-- Leggings of the Tortured Earth
-						i(156460),	-- Mimiron's Repeater
-						i(156469),	-- Pillar of Fortitude
-						i(156253),	-- Shoulders of Misfortune
-						i(156251),	-- Shroud of Alteration
-						-- Confirmed
-						i(156466),	-- Bracers of Righteous Reformation
-					},
-				})),
-			},
+		n(DROPS, {
+			i(129928),	-- Frigid Timewarped Prism
+			i(187903, {	-- Jormungar Soul (SS!)
+				["timeline"] = { ADDED_9_1_5 },
+			}),
 		}),
-		q(40173, {	-- The Unstable Prism
-			["provider"] = { "i", 129928 },	-- Frigid Timewarped Prism
-			["isWeekly"] = true,
+		n(QUESTS, {
+			q(50316, {	-- Disturbance Detected: Ulduar
+				["provider"] = { "n", 130654 },	-- Vormu
+				["isWeekly"] = true,
+				["timeline"] = { ADDED_7_3_5 },
+				["g"] = {
+					i(208094, sharedDataSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Cache of Timewarped Treasures (WOTLK)
+						["description"] = "This bag contains an item from Ulduar or an item from the WoW's 15th Birthday Event Bosses Anub, Lich King or Heigan.\nThe droprate for the mounts seems rather high (5-10%).",
+						["sym"] = {{"select","itemID",
+							-- Seems to be always 1 of those 3 pets -- Gold 15.09.2023
+							142098,	-- Drudge Ghoul (PET!)
+							142086,	-- Magma Rageling (PET!)
+							142085,	-- Nerubian Swarmer (PET!)
+						}},
+						["groups"] = {
+						-- Can also contain any item from Ulduar
+							i(133543),	-- Infinite Timereaver (MOUNT!)
+							i(50818),	-- Invincible (MOUNT!)
+							i(45693),	-- Mimiron's Head (MOUNT!)
+
+							-- Anub'Arak
+							i(171615, {	-- Aegis of the Coliseum
+								["races"] = HORDE_ONLY,
+							}),
+							i(171616, {	-- Anguish
+								["races"] = HORDE_ONLY,
+							}),
+							i(171560, {	-- Archon Glaive
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171604, {	-- Ardent Guard
+								["races"] = HORDE_ONLY,
+							}),
+							i(171583, {	-- Argent Resolve
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171525, {	-- Armbands of Dark Determination
+								["races"] = HORDE_ONLY,
+							}),
+							i(171557, {	-- Armbands of the Ashen Saint
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171581, {	-- Baelgun's Heavy Crossbow
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171527, {	-- Band of the Traitor King
+								["races"] = HORDE_ONLY,
+							}),
+							i(171543, {	-- Band of Deplorable violence
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171548, {	-- Belt of Deathly Dominion
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171614, {	-- Belt of the Eternal
+								["races"] = HORDE_ONLY,
+							}),
+							i(171556, {	-- Belt of the Forgotten Martyr
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171536, {	-- Bindings of the Ashen Saint
+								["races"] = HORDE_ONLY,
+							}),
+							i(171610, {	-- Blackhorn Bludgeon
+								["races"] = HORDE_ONLY,
+							}),
+							i(171533, {	-- Boots of the Icy Floe
+								["races"] = HORDE_ONLY,
+							}),
+							i(171547, {	-- Bracers of Dark Determination
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171529, {	-- Breeches of the Deepening Void
+								["races"] = HORDE_ONLY,
+							}),
+							i(171595, {	-- Bulwark of the Royal Guard
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171558, {	-- Chestguard of Flowing Elements
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171585, {	-- Chestguard of the Warden
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171597, {	-- Cinch of the Undying
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171589, {	-- Cold Convergence
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171584, {	-- Crusader's Glory
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171537, {	-- Cuirass of Flowing Elements
+								["races"] = HORDE_ONLY,
+							}),
+							i(171612, {	-- Darkmaw Crossbow
+								["races"] = HORDE_ONLY,
+							}),
+							i(171555, {	-- Footpads of the Icy Floe
+								["races"] = HORDE_ONLY,
+							}),
+							i(171594, {	-- Fordragon Blades
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171608, {	-- Forsaken Bonecarver
+								["races"] = HORDE_ONLY,
+							}),
+							i(171603, {	-- Frostblade Hatchet
+								["races"] = HORDE_ONLY,
+							}),
+							i(171542, {	-- Gauntlets of Bitter Reprisal
+								["races"] = HORDE_ONLY,
+							}),
+							i(171535, {	-- Girdle of the Forgotten Martyr
+								["races"] = HORDE_ONLY,
+							}),
+							i(171561, {	-- Gloves of Bitter Reprisal
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171562, {	-- Gloves of the Lifeless Touch
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171546, {	-- Greaves of the 7th Legion
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171524, {	-- Greaves of the Saronite Citadel
+								["races"] = HORDE_ONLY,
+							}),
+							i(171538, {	-- Handwraps of the Lifeless Touch
+								["races"] = HORDE_ONLY,
+							}),
+							i(171541, {	-- Hellion Glaive
+								["races"] = HORDE_ONLY,
+							}),
+							i(171526, {	-- Hellscream Slicer
+								["races"] = HORDE_ONLY,
+							}),
+							i(171587, {	-- Helmet of the Crypt Lord
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171602, {	-- Helm of the Crypt Lord
+								["races"] = HORDE_ONLY,
+							}),
+							i(171530, {	-- Leggings of the Awakening
+								["races"] = HORDE_ONLY,
+							}),
+							i(171553, {	-- Leggings of the Deepening Void
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171531, {	-- Leggings of the Lurking Threat
+								["races"] = HORDE_ONLY,
+							}),
+							i(171551, {	-- Legguards of the Lurking Threat
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171607, {	--  Legplates of Redeemed Blood
+								["races"] = HORDE_ONLY,
+							}),
+							i(171596, {	-- Legplates of the Immortal Spider
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171592, {	-- Legplates of the Silver Hand
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171552, {	-- Legwraps of the Awakening
+								["races"] = HORDE_ONLY,
+							}),
+							i(171539, {	-- Lurid Manifestation
+								["races"] = HORDE_ONLY,
+							}),
+							i(171599, {	-- Mace of the Earthborn Chieftain
+								["races"] = HORDE_ONLY,
+							}),
+							i(171540, {	-- Maiden's Adoration
+								["races"] = HORDE_ONLY,
+							}),
+							i(171559, {	-- Maiden's Favor
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171532, {	-- Might of the Nerub
+								["races"] = HORDE_ONLY,
+							}),
+							i(171554, {	-- Misery's End
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171606, {	-- Pauldrons of the Shadow Hunter
+								["races"] = HORDE_ONLY,
+							}),
+							i(171591, {	-- Pauldrons of the Timeless Hunter
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171605, {	-- Perdition
+								["races"] = HORDE_ONLY,
+							}),
+							i(171600, {	-- Pride of the Kor'kron
+								["races"] = HORDE_ONLY,
+							}),
+							i(171611, {	-- Robes of the Sleepless
+								["races"] = HORDE_ONLY,
+							}),
+							i(171545, {	-- Signet of the Traitor King
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171609, {	-- Shoulderpads of the Snow Bandit
+								["races"] = HORDE_ONLY,
+							}),
+							i(171593, {	-- Spaulders of the Snow Bandit
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171601, {	-- Stoneskin Chestplate
+								["races"] = HORDE_ONLY,
+							}),
+							i(171544, {	-- Stormpike Cleaver
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171550, {	-- Strength of the Nerub
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171534, {	-- Suffering's End
+								["races"] = HORDE_ONLY,
+							}),
+							i(171613, {	-- Sunwalker Legguards
+								["races"] = HORDE_ONLY,
+							}),
+							i(171590, {	-- The Grinder
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171582, {	-- The Lion's Maw
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171598, {	-- Vestments of the Sleepless
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171586, {	-- Vigilant Ward
+								["races"] = ALLIANCE_ONLY,
+							}),
+							i(171523, {	-- Waistguard of Deathly Dominion
+								["races"] = HORDE_ONLY,
+							}),
+							i(171588, {	-- Westfall Saber
+								["races"] = ALLIANCE_ONLY,
+							}),
+							-- Lich King
+							i(171571),	-- Archus, Greatstaff of Antonidas
+							i(171569),	-- Bloodsurge, Kel'Thuzad's Blade of Agony
+							i(171563),	-- Fal'inrush, Defender of Quel'thalas
+							i(171566),	-- Glorenzelg, High-Blade of the Silver Hand
+							i(171576),	-- Halion, Staff of Forgotten Love
+							i(171565),	-- Havoc's Call, Blade of Lordaeron Kings
+							i(171568),	-- Heaven's Fall, Kryss of a Thousand Lies
+							i(171564),	-- Mithrios, Bronzebeard's Legacy
+							i(171567),	-- Oathbinder, Charge of the Ranger-General
+							i(171578),	-- Pugius, Fist of Defiance
+							i(171570),	-- Royal Scepter of Terenas II
+							i(171577),	-- Stormfury, Dark Blade of the Betrayer
+							i(171574),	-- Tainted Twig of Nordrassil
+							i(171580),	-- Tel'thas, Dagger of the Blood King
+							i(171572),	-- Troggbane, Axe of the Frostborne King
+							i(171575),	-- Valius, Gavel of the Lightbringer
+							i(171573),	-- Warmace of Menethil
+							i(171579),	-- Windrunner's Heartseeker
+							--[[ Heigan
+							I didnt see any Heigan Loot, but technically it should drop.
+							i(171618),	-- Amulet of Autopsy
+							i(171515),	-- Bindings of the Decrepit
+							i(171509),	-- Breastplate of Tormented Rage
+							i(171516),	-- Chestguard of Bitter Charms
+							i(171514),	-- Cryptfiend's Bite
+							i(171619),	-- Cuffs of Dark Shadows
+							i(171617),	-- Demise
+							i(171521),	-- Eruption-Scarred Boots
+							i(171522),	-- Gloves of the Dancing Bear
+							i(171518),	-- Heigan's Putrid Vestments
+							i(171519),	-- Helm of Pilgrimage
+							i(171512),	-- Iron-Spring Jumpers
+							i(171508),	-- Leggings of Colossal Strides
+							i(171510),	-- Legguards of the Apostle
+							i(171623),	-- Necrogenic Belt
+							i(171624),	-- Preceptor's Bindings
+							i(171622),	-- Ring of Holy Cleansing
+							i(171625),	-- Saltarello Shoes
+							i(171520),	-- Serene Echoes
+							i(171621),	-- Shoulderplates of Bloodshed
+							i(171626),	-- Staff of the Plague Beast
+							i(171511),	-- Stalk-Skin Belt
+							i(171517),	-- The Undeath Carrier
+							i(171620),	-- Tunic of the Lost Pack
+							--]]
+
+							-- Weird Ulduar Zone Drop back?
+							-- Possibly
+							i(156461),	-- Adamant Handguards
+							i(156255),	-- Belt of the Sleeper
+							i(156470),	-- Bloodcrush Cudgel
+							i(156467),	-- Boots of Unsettled Prey
+							i(156468),	-- Cloak of the Dormant Blaze
+							i(156257),	-- Daschal's Bite
+							i(156462),	-- Drape of the Spellweaver
+							i(156463),	-- Golemheart Longbow
+							i(156252),	-- Greaves of the Stonewarder
+							i(156256),	-- Grips of Chaos
+							i(156465),	-- Iceshear Mantle
+							i(156254),	-- Leggings of the Tortured Earth
+							i(156460),	-- Mimiron's Repeater
+							i(156469),	-- Pillar of Fortitude
+							i(156253),	-- Shoulders of Misfortune
+							i(156251),	-- Shroud of Alteration
+							-- Confirmed
+							i(156466),	-- Bracers of Righteous Reformation
+						},
+					})),
+				},
+			}),
+			q(40173, {	-- The Unstable Prism
+				["provider"] = { "i", 129928 },	-- Frigid Timewarped Prism
+				["isWeekly"] = true,
+				["groups"] = {
+					currency(TIMEWARPED_BADGE),
+				},
+			}),
 		}),
 		n(VENDORS, {
 			n(98690, {	-- Auzin <Timewalking Vendor>
@@ -1709,9 +1728,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 					}),
 				},
 			}),
-		}),
-		i(187903, {	-- Jormungar Soul (SS!)
-			["timeline"] = { ADDED_9_1_5 },
 		}),
 		inst_tw(759, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }},{	-- Ulduar
 			["isRaid"] = true,
@@ -2643,111 +2659,126 @@ AddInstancesToRotation(WOTLK_TIER, {
 -- Cataclysm Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLYSM_DUNGEON_EVENT, {
 	tier(CATA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_3 }},{
-		q(57637, {	-- Disturbance Detected: Firelands
-			["provider"] = { "n", 158276 },	-- Vormu
-			["coords"] = {
-				{ 74.8, 18.2, STORMWIND_CITY },
-				{ 49.8, 37.6, ORGRIMMAR },
-			},
-			["isWeekly"] = true,
-			["timeline"] = { ADDED_8_2_5 },
-			["g"] = {
-				i(208095, sharedDataSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Cache of Timewarped Treasures (Cata)
-					["description"] = "This bag contains an item from Firelands or an item from the WoW's 15th Birthday Event Bosses Chogath or Nefarian.\nThe droprate for the mounts seems rather high (5-10%).",
-					["sym"] = {{"select","itemID",
-						152978, 	-- Infernal Pyreclaw (PET!)
-						152966, 	-- Tinytron (PET!)
-						152969, 	-- Twilight Clutch-Sister (PET!)
-						152973, 	-- Zephyrian Prince (PET!)
-					}},
-					["groups"] = {
-					-- Can also contain any item from Firelands
-						i(77067),	-- Blazing Drake (MOUNT!)
-						i(78919),	-- Experiment 12-B (MOUNT!)
-						i(71665),	-- Flametalon of Alysrazor (MOUNT!)
-						i(77069),	-- Life-Binder's Handmaiden (MOUNT!)
-						i(133543),	-- Infinite Timereaver (MOUNT!)
-						i(69224),	-- Pureblood Fire Hawk (MOUNT!)
+		n(DROPS, {
+			i(185053, {	-- Kodo Soul (SS!)
+				["timeline"] = { ADDED_9_1_5 },
+			}),
+			i(133378),	-- Smoldering Timewarped Ember (A)
+			i(133377),	-- Smoldering Timewarped Ember (H)
+		}),
+		n(QUESTS, {
+			q(57637, {	-- Disturbance Detected: Firelands
+				["provider"] = { "n", 158276 },	-- Vormu
+				["coords"] = {
+					{ 74.8, 18.2, STORMWIND_CITY },
+					{ 49.8, 37.6, ORGRIMMAR },
+				},
+				["isWeekly"] = true,
+				["timeline"] = { ADDED_8_2_5 },
+				["g"] = {
+					i(208095, sharedDataSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Cache of Timewarped Treasures (Cata)
+						["description"] = "This bag contains an item from Firelands or an item from the WoW's 15th Birthday Event Bosses Chogath or Nefarian.\nThe droprate for the mounts seems rather high (5-10%).",
+						["sym"] = {{"select","itemID",
+							152978, 	-- Infernal Pyreclaw (PET!)
+							152966, 	-- Tinytron (PET!)
+							152969, 	-- Twilight Clutch-Sister (PET!)
+							152973, 	-- Zephyrian Prince (PET!)
+						}},
+						["groups"] = {
+						-- Can also contain any item from Firelands
+							i(77067),	-- Blazing Drake (MOUNT!)
+							i(78919),	-- Experiment 12-B (MOUNT!)
+							i(71665),	-- Flametalon of Alysrazor (MOUNT!)
+							i(77069),	-- Life-Binder's Handmaiden (MOUNT!)
+							i(133543),	-- Infinite Timereaver (MOUNT!)
+							i(69224),	-- Pureblood Fire Hawk (MOUNT!)
 
-						-- Chogall
-						i(171856),	-- Shadowflame Mantle
-						i(171872),	-- Reinforced Sapphirium Shoulderguards
-						i(171870),	-- Reinforced Sapphirium Pauldrons
-						i(171873),	-- Reinforced Sapphirium Mantle
-						i(171857),	-- Mercurial Shoulderwraps
-						i(171858),	-- Mercurial Mantle
-						i(171866),	-- Spaulders of the Raging Elements
-						i(171865),	-- Shoulderwraps of the Raging Elements
-						i(171864),	-- Mantle of the Raging Elements
-						i(171863),	-- Lightning-Charged Spaulders
-						i(171868),	-- Earthen Shoulderguards
-						i(171867),	-- Earthen Pauldrons
-						i(171862),	-- Wind Dancer's Spaulders
-						i(171861),	-- Stormrider's Spaulders
-						i(171860),	-- Stormrider's Shoulderwraps
-						i(171859),	-- Stormrider's Mantle
-						i(171871),	-- Magma Plated Shoulderguards
-						i(171869),	-- Magma Plated Pauldrons
-						i(171855),	-- Firelord's Mantle
-						i(171842),	-- Shalug'doom, the Axe of Unmaking
-						i(171847),	-- "Uhn'agh Fash, the Darkest Betrayal"
-						i(171854),	-- Twilight's Hammer
-						i(171845),	-- Helm of Maddening Whispers
-						i(171846),	-- Membrane of C'Thun
-						i(171844),	-- Battleplate of the Apocalypse
-						i(171849),	-- Shackles of the End of Days
-						i(171850),	-- Hands of the Twilight Council
-						i(171843),	-- Coil of Ten-Thousand Screams
-						i(171851),	-- Kilt of the Forgotten Battle
-						i(171848),	-- Treads of Hideous Transformation
-						i(171853),	-- Signet of the Fifth Circle
-						i(171852),	-- Fall of Mortality
-						-- Nefarian
-						i(171875),	-- Shadowflame Hood
-						i(171889),	-- Reinforced Sapphirium Helmet
-						i(171892),	-- Reinforced Sapphirium Headguard
-						i(171891),	-- Reinforced Sapphirium Faceguard
-						i(171876),	-- Mercurial Hood
-						i(171877),	-- Mercurial Cowl
-						i(171882),	-- Lightning-Charged Headguard
-						i(171885),	-- Helmet of the Raging Elements
-						i(171884),	-- Headpiece of the Raging Elements
-						i(171883),	-- Faceguard of the Raging Elements
-						i(171886),	-- Earthen Helemt
-						i(171887),	-- Earthen Faceguard
-						i(171881),	-- Wind Dancer's Helmet
-						i(171878),	-- Stormrider's Helm
-						i(171880),	-- Stormrider's Headpiece
-						i(171879),	-- Stormrider's Cover
-						i(171890),	-- Magma Plated Faceguard
-						i(171888),	-- Magma Plated Helmet
-						i(171874),	-- Firelord's Hood
-						i(171639),	-- Reclaimed Ashkandi, Greatsword of the Brotherhood
-						i(171638),	-- Andoros, Fist of the Dragon King
-						i(171633),	-- Crul'korak, the Lightning's Arc
-						i(171634),	-- Akmin-Kurai, Dominion's Shield
-						i(171632),	-- Rage of Ages
-						i(171629),	-- Mantle of Nefarius
-						i(171630),	-- Pauldrons of the Apocalypse
-						i(171627),	-- Spaulders of the Scarred Lady
-						i(171637),	-- Shadow of Dread
-						i(171636),	-- Shadowblaze Robes
-						i(171635),	-- Belt of the Blackhand
-						i(171628),	-- Belt of the Nightmare
-						i(171631),	-- Prestor's Talisman of Machination
-					},
-				})),
-			},
-		}),
-		q(40787, {	-- The Smoldering Ember (A)
-			["provider"] = { "i", 133378 },	-- Smoldering Timewarped Ember
-			["isWeekly"] = true,
-			["races"] = ALLIANCE_ONLY,
-		}),
-		q(40786, {	-- The Smoldering Ember (H)
-			["provider"] = { "i", 133377 },	-- Smoldering Timewarped Ember
-			["isWeekly"] = true,
-			["races"] = HORDE_ONLY,
+							-- Chogall
+							i(171856),	-- Shadowflame Mantle
+							i(171872),	-- Reinforced Sapphirium Shoulderguards
+							i(171870),	-- Reinforced Sapphirium Pauldrons
+							i(171873),	-- Reinforced Sapphirium Mantle
+							i(171857),	-- Mercurial Shoulderwraps
+							i(171858),	-- Mercurial Mantle
+							i(171866),	-- Spaulders of the Raging Elements
+							i(171865),	-- Shoulderwraps of the Raging Elements
+							i(171864),	-- Mantle of the Raging Elements
+							i(171863),	-- Lightning-Charged Spaulders
+							i(171868),	-- Earthen Shoulderguards
+							i(171867),	-- Earthen Pauldrons
+							i(171862),	-- Wind Dancer's Spaulders
+							i(171861),	-- Stormrider's Spaulders
+							i(171860),	-- Stormrider's Shoulderwraps
+							i(171859),	-- Stormrider's Mantle
+							i(171871),	-- Magma Plated Shoulderguards
+							i(171869),	-- Magma Plated Pauldrons
+							i(171855),	-- Firelord's Mantle
+							i(171842),	-- Shalug'doom, the Axe of Unmaking
+							i(171847),	-- "Uhn'agh Fash, the Darkest Betrayal"
+							i(171854),	-- Twilight's Hammer
+							i(171845),	-- Helm of Maddening Whispers
+							i(171846),	-- Membrane of C'Thun
+							i(171844),	-- Battleplate of the Apocalypse
+							i(171849),	-- Shackles of the End of Days
+							i(171850),	-- Hands of the Twilight Council
+							i(171843),	-- Coil of Ten-Thousand Screams
+							i(171851),	-- Kilt of the Forgotten Battle
+							i(171848),	-- Treads of Hideous Transformation
+							i(171853),	-- Signet of the Fifth Circle
+							i(171852),	-- Fall of Mortality
+							-- Nefarian
+							i(171875),	-- Shadowflame Hood
+							i(171889),	-- Reinforced Sapphirium Helmet
+							i(171892),	-- Reinforced Sapphirium Headguard
+							i(171891),	-- Reinforced Sapphirium Faceguard
+							i(171876),	-- Mercurial Hood
+							i(171877),	-- Mercurial Cowl
+							i(171882),	-- Lightning-Charged Headguard
+							i(171885),	-- Helmet of the Raging Elements
+							i(171884),	-- Headpiece of the Raging Elements
+							i(171883),	-- Faceguard of the Raging Elements
+							i(171886),	-- Earthen Helemt
+							i(171887),	-- Earthen Faceguard
+							i(171881),	-- Wind Dancer's Helmet
+							i(171878),	-- Stormrider's Helm
+							i(171880),	-- Stormrider's Headpiece
+							i(171879),	-- Stormrider's Cover
+							i(171890),	-- Magma Plated Faceguard
+							i(171888),	-- Magma Plated Helmet
+							i(171874),	-- Firelord's Hood
+							i(171639),	-- Reclaimed Ashkandi, Greatsword of the Brotherhood
+							i(171638),	-- Andoros, Fist of the Dragon King
+							i(171633),	-- Crul'korak, the Lightning's Arc
+							i(171634),	-- Akmin-Kurai, Dominion's Shield
+							i(171632),	-- Rage of Ages
+							i(171629),	-- Mantle of Nefarius
+							i(171630),	-- Pauldrons of the Apocalypse
+							i(171627),	-- Spaulders of the Scarred Lady
+							i(171637),	-- Shadow of Dread
+							i(171636),	-- Shadowblaze Robes
+							i(171635),	-- Belt of the Blackhand
+							i(171628),	-- Belt of the Nightmare
+							i(171631),	-- Prestor's Talisman of Machination
+						},
+					})),
+				},
+			}),
+			q(40787, {	-- The Smoldering Ember (A)
+				["provider"] = { "i", 133378 },	-- Smoldering Timewarped Ember
+				["isWeekly"] = true,
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					currency(TIMEWARPED_BADGE),
+				},
+			}),
+			q(40786, {	-- The Smoldering Ember (H)
+				["provider"] = { "i", 133377 },	-- Smoldering Timewarped Ember
+				["isWeekly"] = true,
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					currency(TIMEWARPED_BADGE),
+				},
+			}),
 		}),
 		n(VENDORS, {
 			n(101759, {	-- Kiatke <Timewalking Vendor>
@@ -2898,9 +2929,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 					}),
 				},
 			}),
-		}),
-		i(185053, {	-- Kodo Soul (SS!)
-			["timeline"] = { ADDED_9_1_5 },
 		}),
 		inst_tw(78, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5 }},{	-- Firelands
 			["isRaid"] = true,
@@ -3529,9 +3557,20 @@ AddInstancesToRotation(CATA_TIER, {
 -- Mists of Pandaria Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_OF_PANDARIA_DUNGEON_EVENT, {
 	tier(MOP_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5 }},{
-		q(45563, {	-- The Shrouded Coin
-			["provider"] = { "i", 143776 },	-- Shrouded Timewarped Coin
-			["isWeekly"] = true,
+		n(DROPS, {
+			i(187904, {	-- Cloud Serpent Soul (SS!)
+				["timeline"] = { ADDED_9_1_5 },
+			}),
+			i(143776),	-- Shrouded Timewarped Coin
+		}),
+		n(QUESTS, {
+			q(45563, {	-- The Shrouded Coin
+				["provider"] = { "i", 143776 },	-- Shrouded Timewarped Coin
+				["isWeekly"] = true,
+				["groups"] = {
+					currency(TIMEWARPED_BADGE),
+				},
+			}),
 		}),
 		n(VENDORS, {
 			n(118828, {	-- Mistweaver Xia <Timewalking Vendor>
@@ -3683,9 +3722,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 					}),
 				},
 			}),
-		}),
-		i(187904, {	-- Cloud Serpent Soul (SS!)
-			["timeline"] = { ADDED_9_1_5 },
 		}),
 		inst_tw(303, {	-- Gate of the Setting Sun
 			cr(56906, e(655, {	-- Saboteur Kip'tilak
@@ -4002,15 +4038,30 @@ local BLOOM = -146;
 -- local UBRS = -147;
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORDS_OF_DRAENOR_DUNGEON_EVENT, {
 	tier(WOD_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 }},{
-		q(55498, {	-- The Shimmering Crystal
-			["provider"] = { "i", 167921 },		-- Shimmering Timewarped Crystal
-			["isWeekly"] = true,
-			["races"] = ALLIANCE_ONLY,
+		n(DROPS, {
+			i(187905, {	-- Boar Soul (SS!)
+				["timeline"] = { ADDED_9_1_5 },
+			}),
+			i(167921),	-- Shimmering Timewarped Crystal (A)
+			i(167922),	-- Shimmering Timewarped Crystal (H)
 		}),
-		q(55499, {	-- The Shimmering Crystal
-			["provider"] = { "i", 167922 },		-- Shimmering Timewarped Crystal
-			["isWeekly"] = true,
-			["races"] = HORDE_ONLY,
+		n(QUESTS, {
+			q(55498, {	-- The Shimmering Crystal (A)
+				["provider"] = { "i", 167921 },		-- Shimmering Timewarped Crystal (A)
+				["isWeekly"] = true,
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					currency(TIMEWARPED_BADGE),
+				},
+			}),
+			q(55499, {	-- The Shimmering Crystal (H)
+				["provider"] = { "i", 167922 },		-- Shimmering Timewarped Crystal (H)
+				["isWeekly"] = true,
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					currency(TIMEWARPED_BADGE),
+				},
+			}),
 		}),
 		n(VENDORS, {
 			n(151987, {	-- Kronnus <Timewalking Vendor> [Horde Side]
@@ -4211,9 +4262,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORD
 					}),
 				},
 			}),
-		}),
-		i(187905, {	-- Boar Soul (SS!)
-			["timeline"] = { ADDED_9_1_5 },
 		}),
 		n(COMMON_DUNGEON_DROP, {
 			n(HANDS, sharedData({ ["crs"] = { AUCH, BSM, RAIL, DOCKS, SBG, SKY, BLOOM }, },{
@@ -4850,9 +4898,18 @@ AddInstancesToRotation(WOD_TIER, {
 -- Legion Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_DUNGEON_EVENT, {
 	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 }},{
-		q(64710, {	-- Whispering Felflame Crystal
-			["provider"] = { "i", 187611 },		-- Whispering Felflame Crystal
-			["repeatable"] = true,
+		n(DROPS, {
+			i(187906),	-- Owl Serpent Soul (SS!)
+			i(187611),	-- Whispering Felflame Crystal
+		}),
+		n(QUESTS, {
+			q(64710, {	-- Whispering Felflame Crystal
+				["provider"] = { "i", 187611 },	-- Whispering Felflame Crystal
+				["isWeekly"] = true,
+				["groups"] = {
+					currency(TIMEWARPED_BADGE),
+				},
+			}),
 		}),
 		n(VENDORS, {
 			n(180899, {	-- Aridormi <Timewalking Vendor>
@@ -5004,7 +5061,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 				},
 			}),
 		}),
-		i(187906),	-- Owl Serpent Soul (SS!)
 		inst_tw(740, {	-- Black Rook Hold
 			e(1518, {	-- Amalgam of Souls
 				["creatureID"] = 98542,	-- Amalgam of Souls

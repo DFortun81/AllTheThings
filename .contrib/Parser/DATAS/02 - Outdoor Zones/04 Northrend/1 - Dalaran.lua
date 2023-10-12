@@ -756,6 +756,7 @@ local EMBLEM_OF_VALOR_QUARTERMASTER_GROUPS = {
 };
 
 -- Wrath Classic only: These quests were ripped out with Wrath Phase 4.
+-- #if ANYCLASSIC
 local OnUpdateForTimearDailies = [[function(t)
 	if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_FOUR .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
@@ -765,6 +766,7 @@ local OnUpdateForTimearDailies = [[function(t)
 		t.rwp = 30300;
 	end
 end]];
+-- #endif
 
 root(ROOTS.Zones, {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
@@ -3084,7 +3086,7 @@ root(ROOTS.Zones, {
 							defilersscourgestone(1, currency(SIDEREAL_ESSENCE)),	-- Sidereal Essence
 							defilersscourgestone(12, i(49908)),	-- Primordial Saronite
 							defilersscourgestone(20, i(47242)),	-- Trophy of the Crusade
-							
+
 							-- Ulduar 25 HM Items
 							defilersscourgestone(60, i(45461)),	-- Drape of Icy Intent
 							defilersscourgestone(60, i(45242)),	-- Drape of Mortal Downfall
@@ -3102,7 +3104,7 @@ root(ROOTS.Zones, {
 							defilersscourgestone(60, i(45609)),	-- Comet's Trail
 							defilersscourgestone(60, i(45518)),	-- Flare of the Heavens
 							defilersscourgestone(60, i(45535)),	-- Show of Faith
-							
+
 							-- TOC 25 Items (Horde)
 							defilersscourgestone(30, i(47257)),	-- Cloak of the Untamed Predator
 							defilersscourgestone(30, i(47256)),	-- Drape of the Refreshing Winds
@@ -3155,7 +3157,7 @@ root(ROOTS.Zones, {
 							defilersscourgestone(38, i(47268)),	-- Bloodbath Girdle
 							defilersscourgestone(38, i(47323)),	-- Girdle of the Forgotten Martyr
 							defilersscourgestone(38, i(47311)),	-- Waistguard of Deathly Dominion
-							
+
 							defilersscourgestone(30, i(47313)),	-- Armbands of Dark Determination
 							defilersscourgestone(30, i(47298)),	-- Armguards of the Shieldmaiden
 							defilersscourgestone(30, i(47324)),	-- Bindings of the Ashen Saint
@@ -3174,7 +3176,7 @@ root(ROOTS.Zones, {
 							defilersscourgestone(1, currency(SIDEREAL_ESSENCE)),	-- Sidereal Essence
 							defilersscourgestone(12, i(49908)),	-- Primordial Saronite
 							defilersscourgestone(20, i(47242)),	-- Trophy of the Crusade
-							
+
 							-- Ulduar 25 HM Items
 							defilersscourgestone(60, i(45461)),	-- Drape of Icy Intent
 							defilersscourgestone(60, i(45242)),	-- Drape of Mortal Downfall
@@ -3192,7 +3194,7 @@ root(ROOTS.Zones, {
 							defilersscourgestone(60, i(45609)),	-- Comet's Trail
 							defilersscourgestone(60, i(45518)),	-- Flare of the Heavens
 							defilersscourgestone(60, i(45535)),	-- Show of Faith
-							
+
 							-- TOC 25 Items (Alliance)
 							defilersscourgestone(30, i(47089)),	-- Cloak of Displacement
 							defilersscourgestone(30, i(46970)),	-- Drape of the Untamed Predator
@@ -3245,7 +3247,7 @@ root(ROOTS.Zones, {
 							defilersscourgestone(38, i(47140)),	-- Cord of Pale Thorns
 							defilersscourgestone(38, i(46972)),	-- Cord of the Tenebrous Mist
 							defilersscourgestone(38, i(47072)),	-- Girdle of Bloodied Scars
-							
+
 							defilersscourgestone(30, i(47203)),	-- Armbands of the Ashen Saint
 							defilersscourgestone(30, i(47141)),	-- Bindings of Dark Essence
 							defilersscourgestone(30, i(46961)),	-- Boneshatter Armplates
