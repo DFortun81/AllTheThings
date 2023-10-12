@@ -113,7 +113,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					crit(55701, {	-- Southern Thaldraszus Hunt
 						["coord"] = { 34.7, 65.4, THALDRASZUS },
 					}),
-					crit(555702, {	-- Northern Thaldraszus Hunt
+					crit(55702, {	-- Northern Thaldraszus Hunt
 						["coord"] = { 50.7, 45.6, THALDRASZUS },
 					}),
 				}),
