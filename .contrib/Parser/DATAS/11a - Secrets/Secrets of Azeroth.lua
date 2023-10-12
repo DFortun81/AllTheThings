@@ -1,5 +1,5 @@
 --------------------------------------------
---     H O L I D A Y S  M O D U L E       --
+--     S E C R E T S  M O D U L E       --
 --------------------------------------------
 SECRETS_OF_AZEROTH_HEADER = createHeader({
 	readable = "Secrets of Azeroth",
@@ -22,7 +22,7 @@ COMMUNITY_CLUES_HEADER = createHeader({
 -- TODO:
 -- Fix temporary ObjectIDs with real ones if ever determined, and delete temp entries from ObjectDB.lua
 
-root(ROOTS.Holidays, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+root(ROOTS.Secrets, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 	["description"] = "***Using Debug Mode is recommended.***\n",
 	["groups"] = {
 		n(ACHIEVEMENTS, {

@@ -1524,6 +1524,30 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 							i(171575),	-- Valius, Gavel of the Lightbringer
 							i(171573),	-- Warmace of Menethil
 							i(171579),	-- Windrunner's Heartseeker
+							
+							-- Possible WOTLK TW Items (from killing Yogg Quest)
+							-- Confirmed
+							i(156466),	-- Bracers of Righteous Reformation
+							
+							--[[  Possibly
+							i(156461),	-- Adamant Handguards
+							i(156255),	-- Belt of the Sleeper
+							i(156470),	-- Bloodcrush Cudgel
+							i(156467),	-- Boots of Unsettled Prey
+							i(156468),	-- Cloak of the Dormant Blaze
+							i(156257),	-- Daschal's Bite
+							i(156462),	-- Drape of the Spellweaver
+							i(156463),	-- Golemheart Longbow
+							i(156252),	-- Greaves of the Stonewarder
+							i(156256),	-- Grips of Chaos
+							i(156465),	-- Iceshear Mantle
+							i(156254),	-- Leggings of the Tortured Earth
+							i(156460),	-- Mimiron's Repeater
+							i(156469),	-- Pillar of Fortitude
+							i(156253),	-- Shoulders of Misfortune
+							i(156251),	-- Shroud of Alteration
+							--]]
+							
 							--[[ Heigan
 							I didnt see any Heigan Loot, but technically it should drop.
 							i(171618),	-- Amulet of Autopsy
@@ -1551,27 +1575,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 							i(171517),	-- The Undeath Carrier
 							i(171620),	-- Tunic of the Lost Pack
 							--]]
-
-							-- Weird Ulduar Zone Drop back?
-							-- Possibly
-							i(156461),	-- Adamant Handguards
-							i(156255),	-- Belt of the Sleeper
-							i(156470),	-- Bloodcrush Cudgel
-							i(156467),	-- Boots of Unsettled Prey
-							i(156468),	-- Cloak of the Dormant Blaze
-							i(156257),	-- Daschal's Bite
-							i(156462),	-- Drape of the Spellweaver
-							i(156463),	-- Golemheart Longbow
-							i(156252),	-- Greaves of the Stonewarder
-							i(156256),	-- Grips of Chaos
-							i(156465),	-- Iceshear Mantle
-							i(156254),	-- Leggings of the Tortured Earth
-							i(156460),	-- Mimiron's Repeater
-							i(156469),	-- Pillar of Fortitude
-							i(156253),	-- Shoulders of Misfortune
-							i(156251),	-- Shroud of Alteration
-							-- Confirmed
-							i(156466),	-- Bracers of Righteous Reformation
 						},
 					})),
 				},
@@ -1733,7 +1736,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 			["isRaid"] = true,
 			["g"] = {
 				n(ZONE_DROPS, {
-					-- Possibly
+					--[[ Possibly
 					i(156461),	-- Adamant Handguards
 					i(156470),	-- Bloodcrush Cudgel
 					i(156467),	-- Boots of Unsettled Prey
@@ -1746,7 +1749,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 					i(156460),	-- Mimiron's Repeater
 					i(156469),	-- Pillar of Fortitude
 					i(156253),	-- Shoulders of Misfortune
-					i(156251),	-- Shroud of Alteration
+					i(156251),	-- Shroud of Alteration--]]
 					-- Confirmed
 					i(156462),	-- Drape of the Spellweaver
 					i(156463),	-- Golemheart Longbow
@@ -5480,7 +5483,25 @@ AddInstancesToRotation(LEGION_TIER, {
 root(ROOTS.HiddenQuestTriggers, tier(LEGION_TIER, {
 	q(65176),	-- learning Ensemble: Ravencrest's Battleplate (188209)
 }));
-
+root(ROOTS.NeverImplemented, {
+	-- Possible WOTLK TW Items (from killing Yogg Quest) or Zone Drop
+	i(156461),	-- Adamant Handguards
+	i(156255),	-- Belt of the Sleeper
+	i(156470),	-- Bloodcrush Cudgel
+	i(156467),	-- Boots of Unsettled Prey
+	i(156468),	-- Cloak of the Dormant Blaze
+	i(156257),	-- Daschal's Bite
+	i(156462),	-- Drape of the Spellweaver
+	i(156463),	-- Golemheart Longbow
+	i(156252),	-- Greaves of the Stonewarder
+	i(156256),	-- Grips of Chaos
+	i(156465),	-- Iceshear Mantle
+	i(156254),	-- Leggings of the Tortured Earth
+	i(156460),	-- Mimiron's Repeater
+	i(156469),	-- Pillar of Fortitude
+	i(156253),	-- Shoulders of Misfortune
+	i(156251),	-- Shroud of Alteration
+});
 --[[
 -- Post Processors
 table.insert(POST_PROCESSING_FUNCTIONS, function()
