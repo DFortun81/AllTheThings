@@ -128,7 +128,6 @@ local TooltipSettingsBase = {
 	__index = {
 		["Auto:AuctionList"] = true,
 		["Auto:ProfessionList"] = true,
-		["Integrate:LFGBulletinBoard"] = true,
 		["Celebrate"] = true,
 		["Channel"] = "master",
 		["ClassRequirements"] = true,
