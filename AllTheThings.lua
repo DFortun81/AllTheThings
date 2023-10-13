@@ -4874,7 +4874,7 @@ local function DetermineCraftedGroups(group, FillData)
 	-- check if the item is BoP and needs skill filtering for current character, or debug mode
 	-- TODO: further review... this causes population of a list to be different based on settings, such that
 	-- changing settings after 'filling' does not properly adjust the list
-	local filterSkill = not app.MODE_DEBUG and (app.IsBoP(group) or select(14, GetItemInfo(itemID)) == 1);
+	local filterSkill = not app.MODE_DEBUG_OR_ACCOUNT and (app.IsBoP(group) or select(14, GetItemInfo(itemID)) == 1);
 	local craftableItemIDs = {}
 	-- track crafted items which are filled across the entire fill sequence
 	local craftedItems = FillData.CraftedItems
