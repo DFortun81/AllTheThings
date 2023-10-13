@@ -460,7 +460,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["crs"] = { 197417 },
 				["coord"] = { 41.0, 59.4, THE_AZURE_SPAN },
 			}),
-			crit(555560, {	-- Bakhushek
+			crit(55560, {	-- Bakhushek
 				["crs"] = { 197102 },
 				["coord"] = { 62.0, 41.6, OHNAHRAN_PLAINS },
 			}),
