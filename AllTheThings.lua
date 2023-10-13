@@ -17072,6 +17072,7 @@ local BaseFilterHeaderClone = app.BaseObjectFields({
 	["hasUpgradeNested"] = app.EmptyFunction,
 	["costNested"] = app.EmptyFunction,
 	["g"] = app.EmptyFunction,
+	["visible"] = app.EmptyFunction,
 	-- ["back"] = function(t)
 	-- 	return 0.3;	-- visibility of which rows are cloned
 	-- end,
