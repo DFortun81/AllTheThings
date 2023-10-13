@@ -1408,6 +1408,15 @@ root(ROOTS.Unsorted, {
 			i(211416),	-- Dream Wardens Insignia
 			i(211417),	-- Dream Wardens Insignia
 			i(211418),	-- Q'onzu Edict of Change
+			--
+			i(210014),	-- Mysterious Ageless Seeds
+			i(210042),	-- Chilling Celebration Banner
+			i(210052),	-- Ageless Blossom
+			i(210994),	-- Enchanting Dreamblade
+			i(211424),	-- Dreaming Banner of the Aspects
+			i(211470),	-- Ravencrest's Wrath
+			i(211473),	-- Corrupted Knot
+			i(211495),	-- Dreambound Augment Rune
 		})),
 		tier(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
 			filter(TOYS, {
