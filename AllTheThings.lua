@@ -14591,6 +14591,52 @@ local function HasExpandedSubgroup(group)
 		end
 	end
 end
+-- probably temporary function to fix Retail Lua errors when using AH
+app.TrySearchAHForGroup = function(group)
+	-- nothing works. AH frame is weird
+
+	-- local itemID = group.itemID
+	-- if itemID then
+	local name, link = group.name, group.link or group.silentLink
+	if name and HandleModifiedItemClick(link) then
+		local AH = app.AH
+		if not AH then AH = {} app.AH = AH end
+		-- AuctionFrameBrowse_Search();	-- doesn't exist
+		-- local itemKey = C_AuctionHouse.MakeItemKey(itemID)
+		-- local itemKeys = {itemKey}
+		local query = AH.query
+		if not query then
+			local sorts = {
+				-- {sortOrder = Enum.AuctionHouseSortOrder.Name, reverseSort = false},
+				{sortOrder = Enum.AuctionHouseSortOrder.Price, reverseSort = false},
+				-- {sortOrder = Enum.AuctionHouseSortOrder.Buyout, reverseSort = false},
+			}
+			local filters = {
+				-- Enum.AuctionHouseFilter.None
+			}
+			-- local itemClassFilters = {
+			-- 	classID = LE_ITEM_CLASS_CONTAINER,
+			-- 	subClassID = nil,
+			-- 	inventoryType = nil
+			-- }
+			query = {
+				sorts = sorts,
+				filters = filters,
+				-- itemClassFilters = itemClassFilters,
+			}
+			-- cache the query for future use to only change the search
+			AH.query = query
+		end
+		query.searchString = name
+		-- app.PrintDebug("search")
+		-- app.PrintTable(query)
+		-- local result = C_AuctionHouse.GetItemSearchResultInfo(itemKey, 0) -- always nil
+		-- app.PrintTable(result)
+		-- C_AuctionHouse.SearchForItemKeys(itemKeys,sorts) -- always Lua error
+		C_AuctionHouse.SendBrowseQuery(query)
+		return true;
+	end
+end
 local RowOnEnter, RowOnLeave;
 local function RowOnClick(self, button)
 	local reference = self.ref;
@@ -14700,11 +14746,8 @@ local function RowOnClick(self, button)
 							app.print(L["AH_SEARCH_NO_ITEMS_FOUND"]);
 						else
 							-- Attempt to search manually with the link.
-							local link = reference.link or reference.silentLink;
-							if link and HandleModifiedItemClick(link) then
-								AuctionFrameBrowse_Search();
-								return true;
-							end
+							local searched = app.TrySearchAHForGroup(reference)
+							if searched then return true end
 						end
 						return true;
 					else
@@ -14713,11 +14756,8 @@ local function RowOnClick(self, button)
 							return true;
 						else
 							-- Attempt to search manually with the link.
-							local link = reference.link or reference.silentLink;
-							if link and HandleModifiedItemClick(link) then
-								AuctionFrameBrowse_Search();
-								return true;
-							end
+							local searched = app.TrySearchAHForGroup(reference)
+							if searched then return true end
 						end
 					end
 				elseif TSMAPI_FOUR and false then
@@ -14758,11 +14798,8 @@ local function RowOnClick(self, button)
 						app.print(L["AH_SEARCH_NO_ITEMS_FOUND"]);
 					else
 						-- Attempt to search manually with the link.
-						local link = reference.link or reference.silentLink;
-						if link and HandleModifiedItemClick(link) then
-							AuctionFrameBrowse_Search();
-							return true;
-						end
+						local searched = app.TrySearchAHForGroup(reference)
+						if searched then return true end
 					end
 					return true;
 				else
