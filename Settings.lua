@@ -3640,6 +3640,7 @@ local headerAdditionalInformation = child:CreateHeaderLabel(L["ADDITIONAL_LABEL"
 headerAdditionalInformation:SetPoint("LEFT", headerTooltips, 0, 0)
 headerAdditionalInformation:SetPoint("TOP", checkboxUseClassColorForBorder, "BOTTOM", 0, -10)
 
+-- TODO: localize
 local ids = {
 	["achievementID"] = "Achievement ID",
 	["achievementCategoryID"] = "Achievement Category ID",
@@ -3674,9 +3675,18 @@ local ids = {
 	["titleID"] = "Title ID",
 	["visualID"] = "Visual ID",
 }
+local idsArray = {}
+for id,_ in pairs(ids) do
+	idsArray[#idsArray + 1] = id
+end
+table.sort(idsArray, function(a,b) return string.lower(a) < string.lower(b) end)
+-- TODO track enabled additional ids only, update in settings refresh
+-- read-only public table which metatables the local table
+settings.KnownAdditonalIDs = ids
 local last = nil
-local idNo = 1
-for _,id in pairs({"achievementID","achievementCategoryID","artifactID","azeriteEssenceID","bonusID","creatureID","creatures","currencyID", "difficultyID","displayID","encounterID","factionID","filterID","flightPathID","followerID","headerID","iconPath","illusionID","instanceID","itemID","itemString","mapID","modID","objectID","questID","QuestGivers","sourceID","speciesID","spellID","tierID","titleID","visualID"}) do
+local split1 = math.ceil(#idsArray / 3)
+local split2 = 2 * split1
+for idNo,id in ipairs(idsArray) do
 	local filter = child:CreateCheckBox(ids[id],
 	function(self)
 		self:SetChecked(settings:GetTooltipSetting(id))
@@ -3689,15 +3699,16 @@ for _,id in pairs({"achievementID","achievementCategoryID","artifactID","azerite
 	if idNo == 1 then
 		filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", -2, 0)
 	-- Column 2
-	elseif idNo == 12 then
+	elseif idNo > split1 then
 		filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", 212, 0)
+		split1 = 999
 	-- Column 3
-	elseif idNo == 23 then
+	elseif idNo > split2 then
 		filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", 425, 0)
+		split2 = 999
 	else
 		filter:AlignBelow(last)
 	end
-	idNo = idNo + 1
 	last = filter
 end
 
