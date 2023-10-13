@@ -35,43 +35,260 @@ local EncounterToCRS = {
 	[RASZAGETH_THE_STORM_EATER] = { 193909 },	-- Raszageth the Storm-Eater
 };
 
------- Boss Function ------
-local function boss(id, t)
+------ All Bosses crs ------
+local ALL_BOSSES = {};
+for k,v in pairs(EncounterToCRS) do
+	ALL_BOSSES = appendGroups(v, ALL_BOSSES);
+end
+
+------ EnconterToLoot ------
+local EncounterToLoot = {
+	[ERANOG] = {
+		i(195482),	-- Decorated Commander's Cindercloak
+		i(194299),	-- Decoration of Flame
+		i(195476),	-- Eranog's Adorned Sallet
+		i(195475),	-- Flame Marshal's Bulwark
+		i(195479),	-- Flametender's Legwraps
+		i(195477),	-- Scaldrons of Molten Might
+		i(195480),	-- Seal of Diurna's Chosen
+		i(195490),	-- Searing Blazecaster
+		i(195478),	-- Valdrakken Protector's Turncoat
+	},
+	[TERROS] = {
+		i(195504),	-- Awakened Planar Pillar
+		i(195500),	-- Compressed Cultist's Frock
+		i(195503),	-- Enduring Shard of Terros
+		i(195499),	-- Faultline Mantle
+		i(195501),	-- Fused Shale Waistband
+		i(195498),	-- Gaze of the Living Quarry
+		i(195497),	-- Quake-Detecting Seismostaff
+		i(194303),	-- Rumbling Ruby
+		i(195502),	-- Terros' Captive Core
+	},
+	[THE_PRIMAL_COUNCIL] = {
+		i(194300),	-- Conjured Chillglobe
+		i(195485),	-- Councilor's Terrormask
+		i(195487),	-- Embar's Ashen Hauberk
+		i(195484),	-- Icewrath's Channeling Conduit
+		i(195518),	-- Imbued Qalashi Crusher
+		i(195489),	-- Maul of the Earthshaper
+		i(195488),	-- Opalfang's Earthbound Legguards
+		i(195486),	-- Twisted Loam Spaulders
+		i(194301),	-- Whispering Incarnate Icon
+	},
+	[SENNARTH_THE_COLD_BREATH] = {
+		i(195511),	-- Acid-Proof Webbing
+		i(195505),	-- Caustic Coldsteel Slicer
+		i(195508),	-- Chilled Silken Restraints
+		i(195506),	-- Diamond-Etched Gauntlets
+		i(195510),	-- Frostbreath Thumper
+		i(195509),	-- Ice-Climber's Cleats
+		i(194304),	-- Iceblood Deathsnare
+		i(195507),	-- Unnatural Dripstone Cinch
+	},
+	[DATHEA_ASCENDED] = {
+		i(195493),	-- Ascended Squallspires
+		i(195495),	-- Daring Chasm-Leapers
+		i(195494),	-- Dathea's Cyclonic Cage
+		i(195496),	-- Eye of the Vengeful Hurricane
+		i(195491),	-- Infused Stormglaives
+		i(195481),	-- Scepter of Drastic Measures
+		i(194302),	-- Storm-Eater's Boon
+		i(195492),	-- Windborne Hatsuburi
+	},
+	[KUROG_GRIMTOTEM] = {
+		i(194306),	-- All-Totem of the Master
+		i(195483),	-- Awak'mani, Grimtotem's Legacy
+		i(194305),	-- Controlled Current Technique
+		i(195512),	-- Fist of the Grand Summoner
+		i(195517),	-- Kurog's Thunderhooves
+		i(195515),	-- Magatha's Spiritual Sash
+		i(195513),	-- Scripture of Primal Devotion
+		i(195516),	-- Surging-Song Conductors
+		i(195514),	-- Treacherous Totem Wraps
+	},
+	[BROODKEEPER_DIURNA] = {
+		i(194307),	-- Broodkeeper's Promise
+		i(195520),	-- Broodsworn Legionnaire's Pavise
+		i(195523),	-- Eggtender's Safety Mitts
+		i(195519),	-- Kharnalex, The First Light
+		i(195525),	-- Loyal Flametender's Bracers
+		i(194308),	-- Manic Grieftorch
+		i(195524),	-- Matriarch's Opulent Girdle
+		i(195521),	-- Ornamental Drakonid Claw
+		i(195526),	-- Seal of Filial Duty
+		i(195522),	-- Tassets of the Tarasek Legion
+	},
+	[RASZAGETH_THE_STORM_EATER] = {
+		i(195531),	-- Calamitous Shockguards
+		i(194310),	-- Desperate Invoker's Codex
+		i(195528),	-- Incarnate Sky-Splitter
+		i(195530),	-- Loathsome Thunderhosen
+		i(195527),	-- Neltharax, Enemy of the Sky
+		i(195532),	-- Sandals of the Wild Sovereign
+		i(195533),	-- Shackles of Titanic Failure
+		i(194309),	-- Spiteful Storm
+		i(195529),	-- Stormlash's Last Resort
+	},
+};
+
+------ EncounterToTier ------
+-- Blizzard used some really wacky BonusIDs this time around to give proper Tier SourceIDs...
+local EncounterToTier = {
+	[SENNARTH_THE_COLD_BREATH] = {
+		i(196588, {	-- Dreadful Jade Forgestone
+			i(200409),	-- Greaves of the Haunted Frostbrood
+			i(200346),	-- Skybound Avenger's Legguards
+			i(200337),	-- Scalesworn Cultist's Culottes
+		}),
+		i(196598, {	-- Mystic Jade Forgestone
+			i(200355),	-- Lost Landcaller's Leggings
+			i(200391),	-- Stormwing Harrier's Greaves
+			i(200319),	-- Crystal Scholar's Britches
+		}),
+		i(196603, {	-- Venerated Jade Forgestone
+			i(200418),	-- Virtuous Silver Cuisses
+			i(200328),	-- Draconic Hierophant's Britches
+			i(200400),	-- Leggings of Infused Earth
+		}),
+		i(196593, {	-- Zenith Jade Forgestone
+			i(200382),	-- Legguards of the Awakened
+			i(200364),	-- Legguards of the Waking Fist
+			i(200373),	-- Vault Delver's Pantaloons
+			i(200427),	-- Poleyns of the Walking Mountain
+		}),
+	},
+	[DATHEA_ASCENDED] = {
+		i(196587, {	-- Dreadful Garnet Forgestone
+			i(200407),	-- Grasps of the Haunted Frostbrood
+			i(200344),	-- Skybound Avenger's Grips
+			i(200335),	-- Scalesworn Cultist's Gloves
+		}),
+		i(196597, {	-- Mystic Garnet Forgestone
+			i(200353),	-- Lost Landcaller's Claws
+			i(200389),	-- Stormwing Harrier's Handguards
+			i(200317),	-- Crystal Scholar's Pageturners
+		}),
+		i(196602, {	-- Venerated Garnet Forgestone
+			i(200416),	-- Virtuous Silver Gauntlets
+			i(200326),	-- Draconic Hierophant's Grips
+			i(200398),	-- Gauntlets of Infused Earth
+		}),
+		i(196592, {	-- Zenith Garnet Forgestone
+			i(200380),	-- Gauntlets of the Awakened
+			i(200362),	-- Palms of the Waking Fist
+			i(200371),	-- Vault Delver's Lockbreakers
+			i(200425),	-- Gauntlets of the Walking Mountain
+		}),
+	},
+	[KUROG_GRIMTOTEM] = {
+		i(196586, {	-- Dreadful Amethyst Forgestone
+			i(200405),	-- Breastplate of the Haunted Frostbrood
+			i(200342),	-- Skybound Avenger's Harness
+			i(200333),	-- Scalesworn Cultist's Frosk
+		}),
+		i(196596, {	-- Mystic Amethyst Forgestone
+			i(200351),	-- Lost Landcaller's Robes
+			i(200387),	-- Stormwing Harrier's Cuirass
+			i(200315),	-- Crystal Scholar's Tunic
+		}),
+		i(196601, {	-- Venerated Amethyst Forgestone
+			i(200414),	-- Virtuous Silver Breastplate
+			i(200324),	-- Draconic Hierophant's Vestment
+			i(200396),	-- Robe of Infused Earth
+		}),
+		i(196591, {	-- Zenith Amethyst Forgestone
+			i(200378),	-- Hauberk of the Awakened
+			i(200360),	-- Chestwrap of the Waking Fist
+			i(200369),	-- Vault Delver's Brigandine
+			i(200423),	-- Husk of the Walking Mountain
+		}),
+	},
+	[BROODKEEPER_DIURNA] = {
+		i(196589, {	-- Dreadful Lapis Forgestone
+			i(200410),	-- Jaws of the Haunted Frostbrood
+			i(200347),	-- Skybound Avenger's Ailerons
+			i(200338),	-- Scalesworn Cultist's Effigy
+		}),
+		i(196599, {	-- Mystic Lapis Forgestone
+			i(200356),	-- Lost Landcaller's Mantle
+			i(200392),	-- Stormwing Harrier's Pinions
+			i(200320),	-- Crystal Scholar's Beacons
+		}),
+		i(196604, {	-- Venerated Lapis Forgestone
+			i(200419),	-- Virtuous Silver Pauldrons
+			i(200329),	-- Draconic Hierophant's Wisdom
+			i(200401),	-- Calderas of Infused Earth
+		}),
+		i(196594, {	-- Zenith Lapis Forgestone
+			i(200383),	-- Talons of the Awakened
+			i(200365),	-- Mantle of the Waking Fist
+			i(200374),	-- Vault Delver's Epaulets
+			i(200428),	-- Peaks of the Walking Mountain
+		}),
+	},
+	[RASZAGETH_THE_STORM_EATER] = {
+		i(196590, {	-- Dreadful Topaz Forgestone
+			i(200408),	-- Maw of the Haunted Frostbrood
+			i(200345),	-- Skybound Avenger's Visor
+			i(200336),	-- Scalesworn Cultist's Scorn
+		}),
+		i(196600, {	-- Mystic Topaz Forgestone
+			i(200354),	-- Lost Landcaller's Antlers
+			i(200390),	-- Stormwing Harrier's Skullmask
+			i(200318),	-- Crystal Scholar's Cowl
+		}),
+		i(196605, {	-- Venerated Topaz Forgestone
+			i(200417),	-- Virtuous Silver Heaume
+			i(200327),	-- Draconic Hierophant's Archcowl
+			i(200399),	-- Faceguard of Infused Earth
+		}),
+		i(196595, {	-- Zenith Topaz Forgestone
+			i(200381),	-- Crown of the Awakened
+			i(200363),	-- Gaze of the Waking Fist
+			i(200372),	-- Vault Delver's Vizard
+			i(200426),	-- Casque of the Walking Mountain
+		}),
+	},
+};
+
+------ Difficulty To BonusID for those Tiers... ------
+local DifficultyToBonusID = {
+	[LFR_RAID] = 7982,
+	[NORMAL_RAID] = 7979,
+	[HEROIC_RAID] = 7980,
+	[MYTHIC_RAID] = 7981,
+};
+
+------ Boss Functions ------
+local function bossNoLoot(id, t)
 	local encounter = e(id, t);
 	encounter.crs = EncounterToCRS[id];
 	return encounter
 end
+local function addTierLoot(encounter, id, difficulty)
+	for key,item in ipairs(EncounterToTier[id][1]) do
+		for k,i in ipairs(item.groups) do
+			i.bonusID = DifficultyToBonusID[difficulty];
+		end
+	end
+	encounter.groups = appendGroups(EncounterToTier[id], encounter.groups or {});
+	return encounter
+end
+local function boss(id, difficulty, t)
+	local encounter = {}
+	if type(difficulty) ~= "number" then
+		t = difficulty;
+		encounter = bossNoLoot(id, t);
+		encounter.groups = appendGroups(EncounterToLoot[id], encounter.groups or {});
+	else
+		encounter = bossNoLoot(id, t);
+		encounter = addTierLoot(encounter, id, difficulty)
+		encounter.groups = appendGroups(EncounterToLoot[id], encounter.groups or {});
+	end
+	return encounter
+end
 
------- Tier Functions ------
--- Blizzard used some really wacky BonusIDs this time around to give proper Tier SourceIDs...
-local function TOKEN_LFR(id, t)
-	local item = i(id, t);
-	for _,i in ipairs(item.groups) do
-		i.bonusID = 7982;
-	end
-	return item;
-end
-local function TOKEN_NORMAL(id, t)
-	local item = i(id, t);
-	for _,i in ipairs(item.groups) do
-		i.bonusID = 7979;
-	end
-	return item;
-end
-local function TOKEN_HEROIC(id, t)
-	local item = i(id, t);
-	for _,i in ipairs(item.groups) do
-		i.bonusID = 7980;
-	end
-	return item;
-end
-local function TOKEN_MYTHIC(id, t)
-	local item = i(id, t);
-	for _,i in ipairs(item.groups) do
-		i.bonusID = 7981;
-	end
-	return item;
-end
 root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	inst(1200, {	-- Vault of the Incarnates
 		["isRaid"] = true,
@@ -206,19 +423,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				ach(16357),		-- Heroic: Vault of the Incarnates Guild Run
 			}),
 			n(COMMON_BOSS_DROPS, {
-				["crs"] = {
-					184972,	-- Eranog
-					190496,	-- Terros
-					187771,	-- The Primal Council — Kadros Icewrath
-					187768,	-- The Primal Council — Dathea Stormlash
-					187767,	-- The Primal Council — Embar Firepath
-					187772,	-- The Primal Council — Opalfang
-					187967,	-- Sennarth, the Cold Breath
-					189813,	-- Dathea, Ascended
-					181378,	-- Kurog Grimtotem
-					190245,	-- Broodkeeper Diurna
-					193909,	-- Raszageth the Storm-Eater
-				},
+				["crs"] = ALL_BOSSES,
 				["g"] = sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
 					i(205962, {	-- Echoing Storm Flightstone
 						["timeline"] = { ADDED_10_1_0 },
@@ -259,16 +464,16 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				i(201411),	-- Ancient Vault Artifact (Repeatable)
 			}),
 			d(AllDifficulties, {
-				boss(ERANOG),
-				boss(TERROS),
-				boss(THE_PRIMAL_COUNCIL),
-				boss(SENNARTH_THE_COLD_BREATH),
-				boss(DATHEA_ASCENDED),
-				boss(KUROG_GRIMTOTEM, {
+				bossNoLoot(ERANOG),
+				bossNoLoot(TERROS),
+				bossNoLoot(THE_PRIMAL_COUNCIL),
+				bossNoLoot(SENNARTH_THE_COLD_BREATH),
+				bossNoLoot(DATHEA_ASCENDED),
+				bossNoLoot(KUROG_GRIMTOTEM, {
 					i(200916),	-- Formula: Illusion: Primal Mastery (RECIPE!)
 				}),
-				boss(BROODKEEPER_DIURNA),
-				boss(RASZAGETH_THE_STORM_EATER, {
+				bossNoLoot(BROODKEEPER_DIURNA),
+				bossNoLoot(RASZAGETH_THE_STORM_EATER, {
 					i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
 				}),
 			}),
@@ -285,227 +490,43 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					i(202007),	-- Woven Stone Bracelets [BoE]
 				}),
 				header(HEADERS.Achievement, 17110, {	-- The Primal Bulwark
-					boss(ERANOG, {
-						i(195482),	-- Decorated Commander's Cindercloak
-						i(194299),	-- Decoration of Flame
-						i(195476),	-- Eranog's Adorned Sallet
-						i(195475),	-- Flame Marshal's Bulwark
-						i(195479),	-- Flametender's Legwraps
-						i(195477),	-- Scaldrons of Molten Might
-						i(195480),	-- Seal of Diurna's Chosen
-						i(195490),	-- Searing Blazecaster
-						i(195478),	-- Valdrakken Protector's Turncoat
-					}),
-					boss(THE_PRIMAL_COUNCIL, {
-						i(194300),	-- Conjured Chillglobe
-						i(195485),	-- Councilor's Terrormask
-						i(195487),	-- Embar's Ashen Hauberk
-						i(195484),	-- Icewrath's Channeling Conduit
-						i(195518),	-- Imbued Qalashi Crusher
-						i(195489),	-- Maul of the Earthshaper
-						i(195488),	-- Opalfang's Earthbound Legguards
-						i(195486),	-- Twisted Loam Spaulders
-						i(194301),	-- Whispering Incarnate Icon
-					}),
-					boss(DATHEA_ASCENDED, {
-						TOKEN_LFR(196587, {	-- Dreadful Garnet Forgestone
-							i(200407),	-- Grasps of the Haunted Frostbrood
-							i(200344),	-- Skybound Avenger's Grips
-							i(200335),	-- Scalesworn Cultist's Gloves
-						}),
-						TOKEN_LFR(196597, {	-- Mystic Garnet Forgestone
-							i(200353),	-- Lost Landcaller's Claws
-							i(200389),	-- Stormwing Harrier's Handguards
-							i(200317),	-- Crystal Scholar's Pageturners
-						}),
-						TOKEN_LFR(196602, {	-- Venerated Garnet Forgestone
-							i(200416),	-- Virtuous Silver Gauntlets
-							i(200326),	-- Draconic Hierophant's Grips
-							i(200398),	-- Gauntlets of Infused Earth
-						}),
-						TOKEN_LFR(196592, {	-- Zenith Garnet Forgestone
-							i(200380),	-- Gauntlets of the Awakened
-							i(200362),	-- Palms of the Waking Fist
-							i(200371),	-- Vault Delver's Lockbreakers
-							i(200425),	-- Gauntlets of the Walking Mountain
-						}),
-						i(195493),	-- Ascended Squallspires
-						i(195495),	-- Daring Chasm-Leapers
-						i(195494),	-- Dathea's Cyclonic Cage
-						i(195496),	-- Eye of the Vengeful Hurricane
-						i(195491),	-- Infused Stormglaives
-						i(195481),	-- Scepter of Drastic Measures
-						i(194302),	-- Storm-Eater's Boon
-						i(195492),	-- Windborne Hatsuburi
-					}),
+					boss(ERANOG),
+					boss(THE_PRIMAL_COUNCIL),
+					boss(DATHEA_ASCENDED, LFR_RAID),
 				}),
 				header(HEADERS.Achievement, 17111, {	-- Caverns of Infusion
-					boss(TERROS, {
-						i(195504),	-- Awakened Planar Pillar
-						i(195500),	-- Compressed Cultist's Frock
-						i(195503),	-- Enduring Shard of Terros
-						i(195499),	-- Faultline Mantle
-						i(195501),	-- Fused Shale Waistband
-						i(195498),	-- Gaze of the Living Quarry
-						i(195497),	-- Quake-Detecting Seismostaff
-						i(194303),	-- Rumbling Ruby
-						i(195502),	-- Terros' Captive Core
-					}),
-					boss(SENNARTH_THE_COLD_BREATH, {
-						TOKEN_LFR(196588, {	-- Dreadful Jade Forgestone
-							i(200409),	-- Greaves of the Haunted Frostbrood
-							i(200346),	-- Skybound Avenger's Legguards
-							i(200337),	-- Scalesworn Cultist's Culottes
-						}),
-						TOKEN_LFR(196598, {	-- Mystic Jade Forgestone
-							i(200355),	-- Lost Landcaller's Leggings
-							i(200391),	-- Stormwing Harrier's Greaves
-							i(200319),	-- Crystal Scholar's Britches
-						}),
-						TOKEN_LFR(196603, {	-- Venerated Jade Forgestone
-							i(200418),	-- Virtuous Silver Cuisses
-							i(200328),	-- Draconic Hierophant's Britches
-							i(200400),	-- Leggings of Infused Earth
-						}),
-						TOKEN_LFR(196593, {	-- Zenith Jade Forgestone
-							i(200382),	-- Legguards of the Awakened
-							i(200364),	-- Legguards of the Waking Fist
-							i(200373),	-- Vault Delver's Pantaloons
-							i(200427),	-- Poleyns of the Walking Mountain
-						}),
-						i(195511),	-- Acid-Proof Webbing
-						i(195505),	-- Caustic Coldsteel Slicer
-						i(195508),	-- Chilled Silken Restraints
-						i(195506),	-- Diamond-Etched Gauntlets
-						i(195510),	-- Frostbreath Thumper
-						i(195509),	-- Ice-Climber's Cleats
-						i(194304),	-- Iceblood Deathsnare
-						i(195507),	-- Unnatural Dripstone Cinch
-					}),
-					boss(KUROG_GRIMTOTEM, {
-						TOKEN_LFR(196586, {	-- Dreadful Amethyst Forgestone
-							i(200405),	-- Breastplate of the Haunted Frostbrood
-							i(200342),	-- Skybound Avenger's Harness
-							i(200333),	-- Scalesworn Cultist's Frosk
-						}),
-						TOKEN_LFR(196596, {	-- Mystic Amethyst Forgestone
-							i(200351),	-- Lost Landcaller's Robes
-							i(200387),	-- Stormwing Harrier's Cuirass
-							i(200315),	-- Crystal Scholar's Tunic
-						}),
-						TOKEN_LFR(196601, {	-- Venerated Amethyst Forgestone
-							i(200414),	-- Virtuous Silver Breastplate
-							i(200324),	-- Draconic Hierophant's Vestment
-							i(200396),	-- Robe of Infused Earth
-						}),
-						TOKEN_LFR(196591, {	-- Zenith Amethyst Forgestone
-							i(200378),	-- Hauberk of the Awakened
-							i(200360),	-- Chestwrap of the Waking Fist
-							i(200369),	-- Vault Delver's Brigandine
-							i(200423),	-- Husk of the Walking Mountain
-						}),
-						i(194306),	-- All-Totem of the Master
-						i(195483),	-- Awak'mani, Grimtotem's Legacy
-						i(194305),	-- Controlled Current Technique
-						i(195512),	-- Fist of the Grand Summoner
-						i(195517),	-- Kurog's Thunderhooves
-						i(195515),	-- Magatha's Spiritual Sash
-						i(195513),	-- Scripture of Primal Devotion
-						i(195516),	-- Surging-Song Conductors
-						i(195514),	-- Treacherous Totem Wraps
-					}),
+					boss(TERROS),
+					boss(SENNARTH_THE_COLD_BREATH, LFR_RAID),
+					boss(KUROG_GRIMTOTEM, LFR_RAID),
 				}),
 				header(HEADERS.Achievement, 17112, {	-- Fury of the Storm
-					boss(BROODKEEPER_DIURNA, {
-						TOKEN_LFR(196589, {	-- Dreadful Lapis Forgestone
-							i(200410),	-- Jaws of the Haunted Frostbrood
-							i(200347),	-- Skybound Avenger's Ailerons
-							i(200338),	-- Scalesworn Cultist's Effigy
-						}),
-						TOKEN_LFR(196599, {	-- Mystic Lapis Forgestone
-							i(200356),	-- Lost Landcaller's Mantle
-							i(200392),	-- Stormwing Harrier's Pinions
-							i(200320),	-- Crystal Scholar's Beacons
-						}),
-						TOKEN_LFR(196604, {	-- Venerated Lapis Forgestone
-							i(200419),	-- Virtuous Silver Pauldrons
-							i(200329),	-- Draconic Hierophant's Wisdom
-							i(200401),	-- Calderas of Infused Earth
-						}),
-						TOKEN_LFR(196594, {	-- Zenith Lapis Forgestone
-							i(200383),	-- Talons of the Awakened
-							i(200365),	-- Mantle of the Waking Fist
-							i(200374),	-- Vault Delver's Epaulets
-							i(200428),	-- Peaks of the Walking Mountain
-						}),
-						i(194307),	-- Broodkeeper's Promise
-						i(195520),	-- Broodsworn Legionnaire's Pavise
-						i(195523),	-- Eggtender's Safety Mitts
-						i(195519),	-- Kharnalex, The First Light
-						i(195525),	-- Loyal Flametender's Bracers
-						i(194308),	-- Manic Grieftorch
-						i(195524),	-- Matriarch's Opulent Girdle
-						i(195521),	-- Ornamental Drakonid Claw
-						i(195526),	-- Seal of Filial Duty
-						i(195522),	-- Tassets of the Tarasek Legion
-					}),
-					boss(RASZAGETH_THE_STORM_EATER, {
-						TOKEN_LFR(196590, {	-- Dreadful Topaz Forgestone
-							i(200408),	-- Maw of the Haunted Frostbrood
-							i(200345),	-- Skybound Avenger's Visor
-							i(200336),	-- Scalesworn Cultist's Scorn
-						}),
-						TOKEN_LFR(196600, {	-- Mystic Topaz Forgestone
-							i(200354),	-- Lost Landcaller's Antlers
-							i(200390),	-- Stormwing Harrier's Skullmask
-							i(200318),	-- Crystal Scholar's Cowl
-						}),
-						TOKEN_LFR(196605, {	-- Venerated Topaz Forgestone
-							i(200417),	-- Virtuous Silver Heaume
-							i(200327),	-- Draconic Hierophant's Archcowl
-							i(200399),	-- Faceguard of Infused Earth
-						}),
-						TOKEN_LFR(196595, {	-- Zenith Topaz Forgestone
-							i(200381),	-- Crown of the Awakened
-							i(200363),	-- Gaze of the Waking Fist
-							i(200372),	-- Vault Delver's Vizard
-							i(200426),	-- Casque of the Walking Mountain
-						}),
-						i(195531),	-- Calamitous Shockguards
-						i(194310),	-- Desperate Invoker's Codex
-						i(195528),	-- Incarnate Sky-Splitter
-						i(195530),	-- Loathsome Thunderhosen
-						i(195527),	-- Neltharax, Enemy of the Sky
-						i(195532),	-- Sandals of the Wild Sovereign
-						i(195533),	-- Shackles of Titanic Failure
-						i(194309),	-- Spiteful Storm
-						i(195529),	-- Stormlash's Last Resort
-					}),
+					boss(BROODKEEPER_DIURNA, LFR_RAID),
+					boss(RASZAGETH_THE_STORM_EATER, LFR_RAID),
 				}),
 			}),
 			d(NormalPlus, {
-				boss(ERANOG, {
+				bossNoLoot(ERANOG, {
 					ach(16335),	-- What Frozen Things Do
 				}),
-				boss(TERROS, {
+				bossNoLoot(TERROS, {
 					ach(16365),	-- Little Friends
 				}),
-				boss(THE_PRIMAL_COUNCIL, {
+				bossNoLoot(THE_PRIMAL_COUNCIL, {
 					ach(16364),	-- The Lunker Below
 				}),
-				boss(SENNARTH_THE_COLD_BREATH, {
+				bossNoLoot(SENNARTH_THE_COLD_BREATH, {
 					ach(16419),	-- I Was Saving That For Later
 				}),
-				boss(DATHEA_ASCENDED, {
+				bossNoLoot(DATHEA_ASCENDED, {
 					ach(16458),	-- Nothing But Air
 				}),
-				boss(KUROG_GRIMTOTEM, {
+				bossNoLoot(KUROG_GRIMTOTEM, {
 					ach(16450),	-- The Power is MINE!
 				}),
-				boss(BROODKEEPER_DIURNA, {
+				bossNoLoot(BROODKEEPER_DIURNA, {
 					ach(16442),	-- Incubation Extermination
 				}),
-				boss(RASZAGETH_THE_STORM_EATER, {
+				bossNoLoot(RASZAGETH_THE_STORM_EATER, {
 					ach(16451),	-- The Ol Raszle Daszle
 				}),
 			}),
@@ -529,214 +550,18 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					i(202010),	-- Primalist Warden's Bracers [BoE]
 					i(202007),	-- Woven Stone Bracelets [BoE]
 				}),
-				boss(ERANOG, {
-					i(195482),	-- Decorated Commander's Cindercloak
-					i(194299),	-- Decoration of Flame
-					i(195476),	-- Eranog's Adorned Sallet
-					i(195475),	-- Flame Marshal's Bulwark
-					i(195479),	-- Flametender's Legwraps
-					i(195477),	-- Scaldrons of Molten Might
-					i(195480),	-- Seal of Diurna's Chosen
-					i(195490),	-- Searing Blazecaster
-					i(195478),	-- Valdrakken Protector's Turncoat
-				}),
-				boss(TERROS, {
-					i(195504),	-- Awakened Planar Pillar
-					i(195500),	-- Compressed Cultist's Frock
-					i(195503),	-- Enduring Shard of Terros
-					i(195499),	-- Faultline Mantle
-					i(195501),	-- Fused Shale Waistband
-					i(195498),	-- Gaze of the Living Quarry
-					i(195497),	-- Quake-Detecting Seismostaff
-					i(194303),	-- Rumbling Ruby
-					i(195502),	-- Terros' Captive Core
-				}),
-				boss(THE_PRIMAL_COUNCIL, {
-					i(194300),	-- Conjured Chillglobe
-					i(195485),	-- Councilor's Terrormask
-					i(195487),	-- Embar's Ashen Hauberk
-					i(195484),	-- Icewrath's Channeling Conduit
-					i(195518),	-- Imbued Qalashi Crusher
-					i(195489),	-- Maul of the Earthshaper
-					i(195488),	-- Opalfang's Earthbound Legguards
-					i(195486),	-- Twisted Loam Spaulders
-					i(194301),	-- Whispering Incarnate Icon
-				}),
-				boss(SENNARTH_THE_COLD_BREATH, {
-					TOKEN_NORMAL(196588, {	-- Dreadful Jade Forgestone
-						i(200409),	-- Greaves of the Haunted Frostbrood
-						i(200346),	-- Skybound Avenger's Legguards
-						i(200337),	-- Scalesworn Cultist's Culottes
-					}),
-					TOKEN_NORMAL(196598, {	-- Mystic Jade Forgestone
-						i(200355),	-- Lost Landcaller's Leggings
-						i(200391),	-- Stormwing Harrier's Greaves
-						i(200319),	-- Crystal Scholar's Britches
-					}),
-					TOKEN_NORMAL(196603, {	-- Venerated Jade Forgestone
-						i(200418),	-- Virtuous Silver Cuisses
-						i(200328),	-- Draconic Hierophant's Britches
-						i(200400),	-- Leggings of Infused Earth
-					}),
-					TOKEN_NORMAL(196593, {	-- Zenith Jade Forgestone
-						i(200382),	-- Legguards of the Awakened
-						i(200364),	-- Legguards of the Waking Fist
-						i(200373),	-- Vault Delver's Pantaloons
-						i(200427),	-- Poleyns of the Walking Mountain
-					}),
-					i(195511),	-- Acid-Proof Webbing
-					i(195505),	-- Caustic Coldsteel Slicer
-					i(195508),	-- Chilled Silken Restraints
-					i(195506),	-- Diamond-Etched Gauntlets
-					i(195510),	-- Frostbreath Thumper
-					i(195509),	-- Ice-Climber's Cleats
-					i(194304),	-- Iceblood Deathsnare
-					i(195507),	-- Unnatural Dripstone Cinch
-				}),
-				boss(DATHEA_ASCENDED, {
-					TOKEN_NORMAL(196587, {	-- Dreadful Garnet Forgestone
-						i(200407),	-- Grasps of the Haunted Frostbrood
-						i(200344),	-- Skybound Avenger's Grips
-						i(200335),	-- Scalesworn Cultist's Gloves
-					}),
-					TOKEN_NORMAL(196597, {	-- Mystic Garnet Forgestone
-						i(200353),	-- Lost Landcaller's Claws
-						i(200389),	-- Stormwing Harrier's Handguards
-						i(200317),	-- Crystal Scholar's Pageturners
-					}),
-					TOKEN_NORMAL(196602, {	-- Venerated Garnet Forgestone
-						i(200416),	-- Virtuous Silver Gauntlets
-						i(200326),	-- Draconic Hierophant's Grips
-						i(200398),	-- Gauntlets of Infused Earth
-					}),
-					TOKEN_NORMAL(196592, {	-- Zenith Garnet Forgestone
-						i(200380),	-- Gauntlets of the Awakened
-						i(200362),	-- Palms of the Waking Fist
-						i(200371),	-- Vault Delver's Lockbreakers
-						i(200425),	-- Gauntlets of the Walking Mountain
-					}),
-					i(195493),	-- Ascended Squallspires
-					i(195495),	-- Daring Chasm-Leapers
-					i(195494),	-- Dathea's Cyclonic Cage
-					i(195496),	-- Eye of the Vengeful Hurricane
-					i(195491),	-- Infused Stormglaives
-					i(195481),	-- Scepter of Drastic Measures
-					i(194302),	-- Storm-Eater's Boon
-					i(195492),	-- Windborne Hatsuburi
-				}),
-				boss(KUROG_GRIMTOTEM, {
-					TOKEN_NORMAL(196586, {	-- Dreadful Amethyst Forgestone
-						i(200405),	-- Breastplate of the Haunted Frostbrood
-						i(200342),	-- Skybound Avenger's Harness
-						i(200333),	-- Scalesworn Cultist's Frosk
-					}),
-					TOKEN_NORMAL(196596, {	-- Mystic Amethyst Forgestone
-						i(200351),	-- Lost Landcaller's Robes
-						i(200387),	-- Stormwing Harrier's Cuirass
-						i(200315),	-- Crystal Scholar's Tunic
-					}),
-					TOKEN_NORMAL(196601, {	-- Venerated Amethyst Forgestone
-						i(200414),	-- Virtuous Silver Breastplate
-						i(200324),	-- Draconic Hierophant's Vestment
-						i(200396),	-- Robe of Infused Earth
-					}),
-					TOKEN_NORMAL(196591, {	-- Zenith Amethyst Forgestone
-						i(200378),	-- Hauberk of the Awakened
-						i(200360),	-- Chestwrap of the Waking Fist
-						i(200369),	-- Vault Delver's Brigandine
-						i(200423),	-- Husk of the Walking Mountain
-					}),
-					i(194306),	-- All-Totem of the Master
-					i(195483),	-- Awak'mani, Grimtotem's Legacy
-					i(194305),	-- Controlled Current Technique
-					i(195512),	-- Fist of the Grand Summoner
-					i(195517),	-- Kurog's Thunderhooves
-					i(195515),	-- Magatha's Spiritual Sash
-					i(195513),	-- Scripture of Primal Devotion
-					i(195516),	-- Surging-Song Conductors
-					i(195514),	-- Treacherous Totem Wraps
-				}),
-				boss(BROODKEEPER_DIURNA, {
-					TOKEN_NORMAL(196589, {	-- Dreadful Lapis Forgestone
-						i(200410),	-- Jaws of the Haunted Frostbrood
-						i(200347),	-- Skybound Avenger's Ailerons
-						i(200338),	-- Scalesworn Cultist's Effigy
-					}),
-					TOKEN_NORMAL(196599, {	-- Mystic Lapis Forgestone
-						i(200356),	-- Lost Landcaller's Mantle
-						i(200392),	-- Stormwing Harrier's Pinions
-						i(200320),	-- Crystal Scholar's Beacons
-					}),
-					TOKEN_NORMAL(196604, {	-- Venerated Lapis Forgestone
-						i(200419),	-- Virtuous Silver Pauldrons
-						i(200329),	-- Draconic Hierophant's Wisdom
-						i(200401),	-- Calderas of Infused Earth
-					}),
-					TOKEN_NORMAL(196594, {	-- Zenith Lapis Forgestone
-						i(200383),	-- Talons of the Awakened
-						i(200365),	-- Mantle of the Waking Fist
-						i(200374),	-- Vault Delver's Epaulets
-						i(200428),	-- Peaks of the Walking Mountain
-					}),
-					i(194307),	-- Broodkeeper's Promise
-					i(195520),	-- Broodsworn Legionnaire's Pavise
-					i(195523),	-- Eggtender's Safety Mitts
-					i(195519),	-- Kharnalex, The First Light
-					i(195525),	-- Loyal Flametender's Bracers
-					i(194308),	-- Manic Grieftorch
-					i(195524),	-- Matriarch's Opulent Girdle
-					i(195521),	-- Ornamental Drakonid Claw
-					i(195526),	-- Seal of Filial Duty
-					i(195522),	-- Tassets of the Tarasek Legion
-				}),
-				boss(RASZAGETH_THE_STORM_EATER, {
-					TOKEN_NORMAL(196590, {	-- Dreadful Topaz Forgestone
-						i(200408),	-- Maw of the Haunted Frostbrood
-						i(200345),	-- Skybound Avenger's Visor
-						i(200336),	-- Scalesworn Cultist's Scorn
-					}),
-					TOKEN_NORMAL(196600, {	-- Mystic Topaz Forgestone
-						i(200354),	-- Lost Landcaller's Antlers
-						i(200390),	-- Stormwing Harrier's Skullmask
-						i(200318),	-- Crystal Scholar's Cowl
-					}),
-					TOKEN_NORMAL(196605, {	-- Venerated Topaz Forgestone
-						i(200417),	-- Virtuous Silver Heaume
-						i(200327),	-- Draconic Hierophant's Archcowl
-						i(200399),	-- Faceguard of Infused Earth
-					}),
-					TOKEN_NORMAL(196595, {	-- Zenith Topaz Forgestone
-						i(200381),	-- Crown of the Awakened
-						i(200363),	-- Gaze of the Waking Fist
-						i(200372),	-- Vault Delver's Vizard
-						i(200426),	-- Casque of the Walking Mountain
-					}),
-					i(195531),	-- Calamitous Shockguards
-					i(194310),	-- Desperate Invoker's Codex
-					i(195528),	-- Incarnate Sky-Splitter
-					i(195530),	-- Loathsome Thunderhosen
-					i(195527),	-- Neltharax, Enemy of the Sky
-					i(195532),	-- Sandals of the Wild Sovereign
-					i(195533),	-- Shackles of Titanic Failure
-					i(194309),	-- Spiteful Storm
-					i(195529),	-- Stormlash's Last Resort
-				}),
+				boss(ERANOG),
+				boss(TERROS),
+				boss(THE_PRIMAL_COUNCIL),
+				boss(SENNARTH_THE_COLD_BREATH, NORMAL_RAID),
+				boss(DATHEA_ASCENDED, NORMAL_RAID),
+				boss(KUROG_GRIMTOTEM, NORMAL_RAID),
+				boss(BROODKEEPER_DIURNA, NORMAL_RAID),
+				boss(RASZAGETH_THE_STORM_EATER, NORMAL_RAID),
 			}),
 			d(HeroicPlus, {
 				n(COMMON_BOSS_DROPS, {
-					["crs"] = {
-						184972,	-- Eranog
-						190496,	-- Terros
-						187771,	-- The Primal Council — Kadros Icewrath
-						187768,	-- The Primal Council — Dathea Stormlash
-						187767,	-- The Primal Council — Embar Firepath
-						187772,	-- The Primal Council — Opalfang
-						187967,	-- Sennarth, the Cold Breath
-						189813,	-- Dathea, Ascended
-						181378,	-- Kurog Grimtotem
-						190245,	-- Broodkeeper Diurna
-						193909,	-- Raszageth the Storm-Eater
-					},
+					["crs"] = ALL_BOSSES,
 					["g"] = {
 						i(201740, {	-- Elemental Codex of Ultimate Power
 							["collectible"] = false,
@@ -747,32 +572,20 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 						}),
 					},
 				}),
-				boss(ERANOG),
-				boss(TERROS),
-				boss(THE_PRIMAL_COUNCIL),
-				boss(SENNARTH_THE_COLD_BREATH),
-				boss(DATHEA_ASCENDED),
-				boss(KUROG_GRIMTOTEM),
-				boss(BROODKEEPER_DIURNA),
-				boss(RASZAGETH_THE_STORM_EATER, {
+				bossNoLoot(ERANOG),
+				bossNoLoot(TERROS),
+				bossNoLoot(THE_PRIMAL_COUNCIL),
+				bossNoLoot(SENNARTH_THE_COLD_BREATH),
+				bossNoLoot(DATHEA_ASCENDED),
+				bossNoLoot(KUROG_GRIMTOTEM),
+				bossNoLoot(BROODKEEPER_DIURNA),
+				bossNoLoot(RASZAGETH_THE_STORM_EATER, {
 					ach(17107, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }}),	-- Ahead of the Curve: Raszageth the Storm-Eater
 				}),
 			}),
 			d(HEROIC_RAID, {
 				n(COMMON_BOSS_DROPS, {
-					["crs"] = {
-						184972,	-- Eranog
-						190496,	-- Terros
-						187771,	-- The Primal Council — Kadros Icewrath
-						187768,	-- The Primal Council — Dathea Stormlash
-						187767,	-- The Primal Council — Embar Firepath
-						187772,	-- The Primal Council — Opalfang
-						187967,	-- Sennarth, the Cold Breath
-						189813,	-- Dathea, Ascended
-						181378,	-- Kurog Grimtotem
-						190245,	-- Broodkeeper Diurna
-						193909,	-- Raszageth the Storm-Eater
-					},
+					["crs"] = ALL_BOSSES,
 					["g"] = {
 						i(200686),	-- Primal Focus
 					},
@@ -796,214 +609,18 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					i(202010),	-- Primalist Warden's Bracers [BoE]
 					i(202007),	-- Woven Stone Bracelets [BoE]
 				}),
-				boss(ERANOG, {
-					i(195482),	-- Decorated Commander's Cindercloak
-					i(194299),	-- Decoration of Flame
-					i(195476),	-- Eranog's Adorned Sallet
-					i(195475),	-- Flame Marshal's Bulwark
-					i(195479),	-- Flametender's Legwraps
-					i(195477),	-- Scaldrons of Molten Might
-					i(195480),	-- Seal of Diurna's Chosen
-					i(195490),	-- Searing Blazecaster
-					i(195478),	-- Valdrakken Protector's Turncoat
-				}),
-				boss(TERROS, {
-					i(195504),	-- Awakened Planar Pillar
-					i(195500),	-- Compressed Cultist's Frock
-					i(195503),	-- Enduring Shard of Terros
-					i(195499),	-- Faultline Mantle
-					i(195501),	-- Fused Shale Waistband
-					i(195498),	-- Gaze of the Living Quarry
-					i(195497),	-- Quake-Detecting Seismostaff
-					i(194303),	-- Rumbling Ruby
-					i(195502),	-- Terros' Captive Core
-				}),
-				boss(THE_PRIMAL_COUNCIL, {
-					i(194300),	-- Conjured Chillglobe
-					i(195485),	-- Councilor's Terrormask
-					i(195487),	-- Embar's Ashen Hauberk
-					i(195484),	-- Icewrath's Channeling Conduit
-					i(195518),	-- Imbued Qalashi Crusher
-					i(195489),	-- Maul of the Earthshaper
-					i(195488),	-- Opalfang's Earthbound Legguards
-					i(195486),	-- Twisted Loam Spaulders
-					i(194301),	-- Whispering Incarnate Icon
-				}),
-				boss(SENNARTH_THE_COLD_BREATH, {
-					TOKEN_HEROIC(196588, {	-- Dreadful Jade Forgestone
-						i(200409),	-- Greaves of the Haunted Frostbrood
-						i(200346),	-- Skybound Avenger's Legguards
-						i(200337),	-- Scalesworn Cultist's Culottes
-					}),
-					TOKEN_HEROIC(196598, {	-- Mystic Jade Forgestone
-						i(200355),	-- Lost Landcaller's Leggings
-						i(200391),	-- Stormwing Harrier's Greaves
-						i(200319),	-- Crystal Scholar's Britches
-					}),
-					TOKEN_HEROIC(196603, {	-- Venerated Jade Forgestone
-						i(200418),	-- Virtuous Silver Cuisses
-						i(200328),	-- Draconic Hierophant's Britches
-						i(200400),	-- Leggings of Infused Earth
-					}),
-					TOKEN_HEROIC(196593, {	-- Zenith Jade Forgestone
-						i(200382),	-- Legguards of the Awakened
-						i(200364),	-- Legguards of the Waking Fist
-						i(200373),	-- Vault Delver's Pantaloons
-						i(200427),	-- Poleyns of the Walking Mountain
-					}),
-					i(195511),	-- Acid-Proof Webbing
-					i(195505),	-- Caustic Coldsteel Slicer
-					i(195508),	-- Chilled Silken Restraints
-					i(195506),	-- Diamond-Etched Gauntlets
-					i(195510),	-- Frostbreath Thumper
-					i(195509),	-- Ice-Climber's Cleats
-					i(194304),	-- Iceblood Deathsnare
-					i(195507),	-- Unnatural Dripstone Cinch
-				}),
-				boss(DATHEA_ASCENDED, {
-					TOKEN_HEROIC(196587, {	-- Dreadful Garnet Forgestone
-						i(200407),	-- Grasps of the Haunted Frostbrood
-						i(200344),	-- Skybound Avenger's Grips
-						i(200335),	-- Scalesworn Cultist's Gloves
-					}),
-					TOKEN_HEROIC(196597, {	-- Mystic Garnet Forgestone
-						i(200353),	-- Lost Landcaller's Claws
-						i(200389),	-- Stormwing Harrier's Handguards
-						i(200317),	-- Crystal Scholar's Pageturners
-					}),
-					TOKEN_HEROIC(196602, {	-- Venerated Garnet Forgestone
-						i(200416),	-- Virtuous Silver Gauntlets
-						i(200326),	-- Draconic Hierophant's Grips
-						i(200398),	-- Gauntlets of Infused Earth
-					}),
-					TOKEN_HEROIC(196592, {	-- Zenith Garnet Forgestone
-						i(200380),	-- Gauntlets of the Awakened
-						i(200362),	-- Palms of the Waking Fist
-						i(200371),	-- Vault Delver's Lockbreakers
-						i(200425),	-- Gauntlets of the Walking Mountain
-					}),
-					i(195493),	-- Ascended Squallspires
-					i(195495),	-- Daring Chasm-Leapers
-					i(195494),	-- Dathea's Cyclonic Cage
-					i(195496),	-- Eye of the Vengeful Hurricane
-					i(195491),	-- Infused Stormglaives
-					i(195481),	-- Scepter of Drastic Measures
-					i(194302),	-- Storm-Eater's Boon
-					i(195492),	-- Windborne Hatsuburi
-				}),
-				boss(KUROG_GRIMTOTEM, {
-					TOKEN_HEROIC(196586, {	-- Dreadful Amethyst Forgestone
-						i(200405),	-- Breastplate of the Haunted Frostbrood
-						i(200342),	-- Skybound Avenger's Harness
-						i(200333),	-- Scalesworn Cultist's Frosk
-					}),
-					TOKEN_HEROIC(196596, {	-- Mystic Amethyst Forgestone
-						i(200351),	-- Lost Landcaller's Robes
-						i(200387),	-- Stormwing Harrier's Cuirass
-						i(200315),	-- Crystal Scholar's Tunic
-					}),
-					TOKEN_HEROIC(196601, {	-- Venerated Amethyst Forgestone
-						i(200414),	-- Virtuous Silver Breastplate
-						i(200324),	-- Draconic Hierophant's Vestment
-						i(200396),	-- Robe of Infused Earth
-					}),
-					TOKEN_HEROIC(196591, {	-- Zenith Amethyst Forgestone
-						i(200378),	-- Hauberk of the Awakened
-						i(200360),	-- Chestwrap of the Waking Fist
-						i(200369),	-- Vault Delver's Brigandine
-						i(200423),	-- Husk of the Walking Mountain
-					}),
-					i(194306),	-- All-Totem of the Master
-					i(195483),	-- Awak'mani, Grimtotem's Legacy
-					i(194305),	-- Controlled Current Technique
-					i(195512),	-- Fist of the Grand Summoner
-					i(195517),	-- Kurog's Thunderhooves
-					i(195515),	-- Magatha's Spiritual Sash
-					i(195513),	-- Scripture of Primal Devotion
-					i(195516),	-- Surging-Song Conductors
-					i(195514),	-- Treacherous Totem Wraps
-				}),
-				boss(BROODKEEPER_DIURNA, {
-					TOKEN_HEROIC(196589, {	-- Dreadful Lapis Forgestone
-						i(200410),	-- Jaws of the Haunted Frostbrood
-						i(200347),	-- Skybound Avenger's Ailerons
-						i(200338),	-- Scalesworn Cultist's Effigy
-					}),
-					TOKEN_HEROIC(196599, {	-- Mystic Lapis Forgestone
-						i(200356),	-- Lost Landcaller's Mantle
-						i(200392),	-- Stormwing Harrier's Pinions
-						i(200320),	-- Crystal Scholar's Beacons
-					}),
-					TOKEN_HEROIC(196604, {	-- Venerated Lapis Forgestone
-						i(200419),	-- Virtuous Silver Pauldrons
-						i(200329),	-- Draconic Hierophant's Wisdom
-						i(200401),	-- Calderas of Infused Earth
-					}),
-					TOKEN_HEROIC(196594, {	-- Zenith Lapis Forgestone
-						i(200383),	-- Talons of the Awakened
-						i(200365),	-- Mantle of the Waking Fist
-						i(200374),	-- Vault Delver's Epaulets
-						i(200428),	-- Peaks of the Walking Mountain
-					}),
-					i(194307),	-- Broodkeeper's Promise
-					i(195520),	-- Broodsworn Legionnaire's Pavise
-					i(195523),	-- Eggtender's Safety Mitts
-					i(195519),	-- Kharnalex, The First Light
-					i(195525),	-- Loyal Flametender's Bracers
-					i(194308),	-- Manic Grieftorch
-					i(195524),	-- Matriarch's Opulent Girdle
-					i(195521),	-- Ornamental Drakonid Claw
-					i(195526),	-- Seal of Filial Duty
-					i(195522),	-- Tassets of the Tarasek Legion
-				}),
-				boss(RASZAGETH_THE_STORM_EATER, {
-					TOKEN_HEROIC(196590, {	-- Dreadful Topaz Forgestone
-						i(200408),	-- Maw of the Haunted Frostbrood
-						i(200345),	-- Skybound Avenger's Visor
-						i(200336),	-- Scalesworn Cultist's Scorn
-					}),
-					TOKEN_HEROIC(196600, {	-- Mystic Topaz Forgestone
-						i(200354),	-- Lost Landcaller's Antlers
-						i(200390),	-- Stormwing Harrier's Skullmask
-						i(200318),	-- Crystal Scholar's Cowl
-					}),
-					TOKEN_HEROIC(196605, {	-- Venerated Topaz Forgestone
-						i(200417),	-- Virtuous Silver Heaume
-						i(200327),	-- Draconic Hierophant's Archcowl
-						i(200399),	-- Faceguard of Infused Earth
-					}),
-					TOKEN_HEROIC(196595, {	-- Zenith Topaz Forgestone
-						i(200381),	-- Crown of the Awakened
-						i(200363),	-- Gaze of the Waking Fist
-						i(200372),	-- Vault Delver's Vizard
-						i(200426),	-- Casque of the Walking Mountain
-					}),
-					i(195531),	-- Calamitous Shockguards
-					i(194310),	-- Desperate Invoker's Codex
-					i(195528),	-- Incarnate Sky-Splitter
-					i(195530),	-- Loathsome Thunderhosen
-					i(195527),	-- Neltharax, Enemy of the Sky
-					i(195532),	-- Sandals of the Wild Sovereign
-					i(195533),	-- Shackles of Titanic Failure
-					i(194309),	-- Spiteful Storm
-					i(195529),	-- Stormlash's Last Resort
-				}),
+				boss(ERANOG),
+				boss(TERROS),
+				boss(THE_PRIMAL_COUNCIL),
+				boss(SENNARTH_THE_COLD_BREATH, HEROIC_RAID),
+				boss(DATHEA_ASCENDED, HEROIC_RAID),
+				boss(KUROG_GRIMTOTEM, HEROIC_RAID),
+				boss(BROODKEEPER_DIURNA, HEROIC_RAID),
+				boss(RASZAGETH_THE_STORM_EATER, HEROIC_RAID),
 			}),
 			d(MYTHIC_RAID, {
 				n(COMMON_BOSS_DROPS, {
-					["crs"] = {
-						184972,	-- Eranog
-						190496,	-- Terros
-						187771,	-- The Primal Council — Kadros Icewrath
-						187768,	-- The Primal Council — Dathea Stormlash
-						187767,	-- The Primal Council — Embar Firepath
-						187772,	-- The Primal Council — Opalfang
-						187967,	-- Sennarth, the Cold Breath
-						189813,	-- Dathea, Ascended
-						181378,	-- Kurog Grimtotem
-						190245,	-- Broodkeeper Diurna
-						193909,	-- Raszageth the Storm-Eater
-					},
+					["crs"] = ALL_BOSSES,
 					["g"] = {
 						i(190455),	-- Concentrated Primal Focus
 					},
@@ -1038,172 +655,26 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				}),
 				boss(ERANOG, {
 					ach(16346),	-- Mythic: Eranog
-					i(195482),	-- Decorated Commander's Cindercloak
-					i(194299),	-- Decoration of Flame
-					i(195476),	-- Eranog's Adorned Sallet
-					i(195475),	-- Flame Marshal's Bulwark
-					i(195479),	-- Flametender's Legwraps
-					i(195477),	-- Scaldrons of Molten Might
-					i(195480),	-- Seal of Diurna's Chosen
-					i(195490),	-- Searing Blazecaster
-					i(195478),	-- Valdrakken Protector's Turncoat
 				}),
 				boss(TERROS, {
 					ach(16347),	-- Mythic: Terros
-					i(195504),	-- Awakened Planar Pillar
-					i(195500),	-- Compressed Cultist's Frock
-					i(195503),	-- Enduring Shard of Terros
-					i(195499),	-- Faultline Mantle
-					i(195501),	-- Fused Shale Waistband
-					i(195498),	-- Gaze of the Living Quarry
-					i(195497),	-- Quake-Detecting Seismostaff
-					i(194303),	-- Rumbling Ruby
-					i(195502),	-- Terros' Captive Core
 				}),
 				boss(THE_PRIMAL_COUNCIL, {
 					ach(16348),	-- Mythic: The Primal Council
-					i(194300),	-- Conjured Chillglobe
-					i(195485),	-- Councilor's Terrormask
-					i(195487),	-- Embar's Ashen Hauberk
-					i(195484),	-- Icewrath's Channeling Conduit
-					i(195518),	-- Imbued Qalashi Crusher
-					i(195489),	-- Maul of the Earthshaper
-					i(195488),	-- Opalfang's Earthbound Legguards
-					i(195486),	-- Twisted Loam Spaulders
-					i(194301),	-- Whispering Incarnate Icon
 				}),
-				boss(SENNARTH_THE_COLD_BREATH, {
+				boss(SENNARTH_THE_COLD_BREATH, MYTHIC_RAID, {
 					ach(16349),	-- Mythic: Sennarth, The Cold Breath
-					TOKEN_MYTHIC(196588, {	-- Dreadful Jade Forgestone
-						i(200409),	-- Greaves of the Haunted Frostbrood
-						i(200346),	-- Skybound Avenger's Legguards
-						i(200337),	-- Scalesworn Cultist's Culottes
-					}),
-					TOKEN_MYTHIC(196598, {	-- Mystic Jade Forgestone
-						i(200355),	-- Lost Landcaller's Leggings
-						i(200391),	-- Stormwing Harrier's Greaves
-						i(200319),	-- Crystal Scholar's Britches
-					}),
-					TOKEN_MYTHIC(196603, {	-- Venerated Jade Forgestone
-						i(200418),	-- Virtuous Silver Cuisses
-						i(200328),	-- Draconic Hierophant's Britches
-						i(200400),	-- Leggings of Infused Earth
-					}),
-					TOKEN_MYTHIC(196593, {	-- Zenith Jade Forgestone
-						i(200382),	-- Legguards of the Awakened
-						i(200364),	-- Legguards of the Waking Fist
-						i(200373),	-- Vault Delver's Pantaloons
-						i(200427),	-- Poleyns of the Walking Mountain
-					}),
-					i(195511),	-- Acid-Proof Webbing
-					i(195505),	-- Caustic Coldsteel Slicer
-					i(195508),	-- Chilled Silken Restraints
-					i(195506),	-- Diamond-Etched Gauntlets
-					i(195510),	-- Frostbreath Thumper
-					i(195509),	-- Ice-Climber's Cleats
-					i(194304),	-- Iceblood Deathsnare
-					i(195507),	-- Unnatural Dripstone Cinch
 				}),
-				boss(DATHEA_ASCENDED, {
+				boss(DATHEA_ASCENDED, MYTHIC_RAID, {
 					ach(16350),	-- Mythic: Dathea, Ascended
-					TOKEN_MYTHIC(196587, {	-- Dreadful Garnet Forgestone
-						i(200407),	-- Grasps of the Haunted Frostbrood
-						i(200344),	-- Skybound Avenger's Grips
-						i(200335),	-- Scalesworn Cultist's Gloves
-					}),
-					TOKEN_MYTHIC(196597, {	-- Mystic Garnet Forgestone
-						i(200353),	-- Lost Landcaller's Claws
-						i(200389),	-- Stormwing Harrier's Handguards
-						i(200317),	-- Crystal Scholar's Pageturners
-					}),
-					TOKEN_MYTHIC(196602, {	-- Venerated Garnet Forgestone
-						i(200416),	-- Virtuous Silver Gauntlets
-						i(200326),	-- Draconic Hierophant's Grips
-						i(200398),	-- Gauntlets of Infused Earth
-					}),
-					TOKEN_MYTHIC(196592, {	-- Zenith Garnet Forgestone
-						i(200380),	-- Gauntlets of the Awakened
-						i(200362),	-- Palms of the Waking Fist
-						i(200371),	-- Vault Delver's Lockbreakers
-						i(200425),	-- Gauntlets of the Walking Mountain
-					}),
-					i(195493),	-- Ascended Squallspires
-					i(195495),	-- Daring Chasm-Leapers
-					i(195494),	-- Dathea's Cyclonic Cage
-					i(195496),	-- Eye of the Vengeful Hurricane
-					i(195491),	-- Infused Stormglaives
-					i(195481),	-- Scepter of Drastic Measures
-					i(194302),	-- Storm-Eater's Boon
-					i(195492),	-- Windborne Hatsuburi
 				}),
-				boss(KUROG_GRIMTOTEM, {
+				boss(KUROG_GRIMTOTEM, MYTHIC_RAID, {
 					ach(16351),	-- Mythic: Kurog Grimtotem
-					TOKEN_MYTHIC(196586, {	-- Dreadful Amethyst Forgestone
-						i(200405),	-- Breastplate of the Haunted Frostbrood
-						i(200342),	-- Skybound Avenger's Harness
-						i(200333),	-- Scalesworn Cultist's Frosk
-					}),
-					TOKEN_MYTHIC(196596, {	-- Mystic Amethyst Forgestone
-						i(200351),	-- Lost Landcaller's Robes
-						i(200387),	-- Stormwing Harrier's Cuirass
-						i(200315),	-- Crystal Scholar's Tunic
-					}),
-					TOKEN_MYTHIC(196601, {	-- Venerated Amethyst Forgestone
-						i(200414),	-- Virtuous Silver Breastplate
-						i(200324),	-- Draconic Hierophant's Vestment
-						i(200396),	-- Robe of Infused Earth
-					}),
-					TOKEN_MYTHIC(196591, {	-- Zenith Amethyst Forgestone
-						i(200378),	-- Hauberk of the Awakened
-						i(200360),	-- Chestwrap of the Waking Fist
-						i(200369),	-- Vault Delver's Brigandine
-						i(200423),	-- Husk of the Walking Mountain
-					}),
-					i(194306),	-- All-Totem of the Master
-					i(195483),	-- Awak'mani, Grimtotem's Legacy
-					i(194305),	-- Controlled Current Technique
-					i(195512),	-- Fist of the Grand Summoner
-					i(195517),	-- Kurog's Thunderhooves
-					i(195515),	-- Magatha's Spiritual Sash
-					i(195513),	-- Scripture of Primal Devotion
-					i(195516),	-- Surging-Song Conductors
-					i(195514),	-- Treacherous Totem Wraps
 				}),
-				boss(BROODKEEPER_DIURNA, {
+				boss(BROODKEEPER_DIURNA, MYTHIC_RAID, {
 					ach(16352),	-- Mythic: Broodkeeper Diurna
-					TOKEN_MYTHIC(196589, {	-- Dreadful Lapis Forgestone
-						i(200410),	-- Jaws of the Haunted Frostbrood
-						i(200347),	-- Skybound Avenger's Ailerons
-						i(200338),	-- Scalesworn Cultist's Effigy
-					}),
-					TOKEN_MYTHIC(196599, {	-- Mystic Lapis Forgestone
-						i(200356),	-- Lost Landcaller's Mantle
-						i(200392),	-- Stormwing Harrier's Pinions
-						i(200320),	-- Crystal Scholar's Beacons
-					}),
-					TOKEN_MYTHIC(196604, {	-- Venerated Lapis Forgestone
-						i(200419),	-- Virtuous Silver Pauldrons
-						i(200329),	-- Draconic Hierophant's Wisdom
-						i(200401),	-- Calderas of Infused Earth
-					}),
-					TOKEN_MYTHIC(196594, {	-- Zenith Lapis Forgestone
-						i(200383),	-- Talons of the Awakened
-						i(200365),	-- Mantle of the Waking Fist
-						i(200374),	-- Vault Delver's Epaulets
-						i(200428),	-- Peaks of the Walking Mountain
-					}),
-					i(194307),	-- Broodkeeper's Promise
-					i(195520),	-- Broodsworn Legionnaire's Pavise
-					i(195523),	-- Eggtender's Safety Mitts
-					i(195519),	-- Kharnalex, The First Light
-					i(195525),	-- Loyal Flametender's Bracers
-					i(194308),	-- Manic Grieftorch
-					i(195524),	-- Matriarch's Opulent Girdle
-					i(195521),	-- Ornamental Drakonid Claw
-					i(195526),	-- Seal of Filial Duty
-					i(195522),	-- Tassets of the Tarasek Legion
 				}),
-				boss(RASZAGETH_THE_STORM_EATER, {
+				boss(RASZAGETH_THE_STORM_EATER, MYTHIC_RAID, {
 					ach(16353, {	-- Mythic: Raszageth the Storm-Eater
 						title(488),	-- <Name> the Storm-Eater
 					}),
@@ -1221,36 +692,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 							title(487),	-- <Name>, Famed Slayer of Raszageth
 						},
 					})),
-					TOKEN_MYTHIC(196590, {	-- Dreadful Topaz Forgestone
-						i(200408),	-- Maw of the Haunted Frostbrood
-						i(200345),	-- Skybound Avenger's Visor
-						i(200336),	-- Scalesworn Cultist's Scorn
-					}),
-					TOKEN_MYTHIC(196600, {	-- Mystic Topaz Forgestone
-						i(200354),	-- Lost Landcaller's Antlers
-						i(200390),	-- Stormwing Harrier's Skullmask
-						i(200318),	-- Crystal Scholar's Cowl
-					}),
-					TOKEN_MYTHIC(196605, {	-- Venerated Topaz Forgestone
-						i(200417),	-- Virtuous Silver Heaume
-						i(200327),	-- Draconic Hierophant's Archcowl
-						i(200399),	-- Faceguard of Infused Earth
-					}),
-					TOKEN_MYTHIC(196595, {	-- Zenith Topaz Forgestone
-						i(200381),	-- Crown of the Awakened
-						i(200363),	-- Gaze of the Waking Fist
-						i(200372),	-- Vault Delver's Vizard
-						i(200426),	-- Casque of the Walking Mountain
-					}),
-					i(195531),	-- Calamitous Shockguards
-					i(194310),	-- Desperate Invoker's Codex
-					i(195528),	-- Incarnate Sky-Splitter
-					i(195530),	-- Loathsome Thunderhosen
-					i(195527),	-- Neltharax, Enemy of the Sky
-					i(195532),	-- Sandals of the Wild Sovereign
-					i(195533),	-- Shackles of Titanic Failure
-					i(194309),	-- Spiteful Storm
-					i(195529),	-- Stormlash's Last Resort
 				}),
 			}),
 		},
