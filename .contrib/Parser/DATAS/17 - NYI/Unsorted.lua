@@ -1463,7 +1463,6 @@ root(ROOTS.Unsorted, {
 				i(209053),	-- Green Brewfest Bulwark
 			}),
 			i(115460),	-- Northrend Alchemy Research
-			i(133557),	-- Salt and Pepper Shank
 			i(205221),	-- Ancient Pottery Fragment
 			i(205222),	-- Ancient Wooden Spoke
 			i(205223),	-- Ancient Centaur Axe
