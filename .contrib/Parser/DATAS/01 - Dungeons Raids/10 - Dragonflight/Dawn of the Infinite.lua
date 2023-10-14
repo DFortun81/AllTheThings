@@ -68,6 +68,8 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(PLATE, {
 			ig(103785),	-- Tusks of Mannoroth Heroic		(Removed)
+			
+			ig(93099),	-- Yaungolian Pauldrons				(NYI)
 		}),
 	}),
 	i(208064, {	-- Quantum Chestpiece
@@ -98,6 +100,7 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(MAIL, {
 			ig(114252), -- Leafscale Chestguard				(NYI)
+			ig(108218),	-- Peerless Draeneic Steel Chest	(NYI)
 			ig(93086),	-- Swashbuckling Vest				(NYI)
 
 			ig(134732),	-- Frigidlink Armor					(Removed)
