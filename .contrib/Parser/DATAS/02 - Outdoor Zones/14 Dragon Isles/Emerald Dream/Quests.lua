@@ -249,6 +249,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["coord"] = { 33.7, 25.2, EMERALD_DREAM },
 					["g"] = {
 						i(210757),	-- Scales of Remorse
+						--i(208047),	-- Gigantic Dreamseed
 					},
 				}),
 				------ Chapter 4 ------
@@ -357,6 +358,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["coord"] = { 51.9, 29.4, EMERALD_DREAM },
 					["g"] = {
 						i(210847),	-- Tears of the Eye
+						--i(208067),	-- Plump Dreamseed
 					},
 				}),
 				------ Chapter 5 ------
@@ -364,7 +366,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			-- non-story quests below for now
 			q(76460, {	-- A Dragon in Hand is Worth Two in the Roost
-				["sourceQuests"] = { 76337 },	-- The Ember Still Smolders / TODO: need confirm
+				--[[["sourceQuests"] = {
+					76337,	-- The Ember Still Smolders (TODO: need to confirm)
+					77887,	-- 'World Quest Unlock' (spellID 421687)
+				},
+				["sourceQuestNumRequired"] = 1,]]--
 				["provider"] = { "n", 207350 },	-- Wrathion
 				["coord"] = { 50.8, 62.8, EMERALD_DREAM },
 			}),
@@ -417,36 +423,41 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			--
 			q(77948, {	-- Burning Out
-				--["sourceQuests"] = {  },	-- no requirement as of 7.Sept
+				--[[["sourceQuests"] = {
+					xx,	-- TODO: no requirement
+					77887,	-- 'World Quest Unlock' (spellID 421687)
+				},
+				["sourceQuestNumRequired"] = 1,]]--
 				["provider"] = { "n", 210196 },	-- Solarys Thorngale
 				["coord"] = { 52.0, 63.6, EMERALD_DREAM },
+				["g"] = {
+					i(210633),	-- Kal'andu (PET!)
+				},
 			}),
 			q(77978, {	-- A Passed Torch
 				["sourceQuests"] = { 77948 },	-- Burning Out (if you complete Burning Out before you grab this quest, it becomes unobtainable as of 8.September.2023)
 				["provider"] = { "o", 409077 },	-- Singed Leaflet
 				["coord"] = { 38.0, 47.2, EMERALD_DREAM },
 				["g"] = {
+					i(210921),	-- Bounty of the Fallen Defector
 					i(209048),	-- Singed Leaflet (QI!)
 				},
 			}),
+			--[[ Rewards moved into two previouse quests and this one removed?
 			q(78096, {	-- A Silver Lining
 				["sourceQuests"] = { 77948 },	-- Burning Out
 				["provider"] = { "n", 210251 },	-- Kery'nael Thorngale
 				["coord"] = { 50.8, 63.6, EMERALD_DREAM },
-				["g"] = {
-					i(210921),	-- Bounty of the Fallen Defector
-					i(210633),	-- Kal'andu (PET!)
-				},
-			}),
+			}),]]--
 			--
 			q(76566, {	-- The Dryad Garden
-				--["sourceQuests"] = {  },	-- no requirement as of 7.Sept
+				["sourceQuests"] = { 78904 },	-- HQT - `Local Stories Quest Unlock`
 				["provider"] = { "n", 209318 },	-- Cenarius
 				["coord"] = { 50.8, 62.1, EMERALD_DREAM },
 				["isBreadcrumb"] = true,
 			}),
 			q(78065, {	-- The Q'onzu Query
-				--["sourceQuests"] = {  },	-- no requirement as of 7.Sept
+				["sourceQuests"] = { 78904 },	-- HQT - `Local Stories Quest Unlock`
 				["provider"] = { "n", 209318 },	-- Cenarius
 				["coord"] = { 50.8, 62.1, EMERALD_DREAM },
 			}),
@@ -454,6 +465,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 78065 },	-- The Q'onzu Query
 				["provider"] = { "n", 210646 },	-- Follower of Q'onzu
 				["coord"] = { 34.7, 69.0, EMERALD_DREAM },
+				["g"] = {
+					i(211373, {	-- Bag of Many Wonders
+						i(211372),	-- Q'onzu's Consolation Prize
+					}),
+				},
 			}),
 			q(78064, {	-- Q'onzu's Perception
 				["sourceQuests"] = { 78163 },	-- Q'onzu's Qualification
@@ -474,12 +490,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["provider"] = { "n", 210524 },	-- Q'onzu
 				["coord"] = { 34.7, 69.3, EMERALD_DREAM },
 				["g"] = {
-					i(210950),	-- Insight of Q'onzu
+					i(210645),	-- Feather of Friends (CI!)
+					i(211374, {	-- Tangled Yarn of Secrets
+						i(211377, {	-- Tangled Yarn of Secrets
+							i(211378, {	-- Tangled Yarn of Secrets
+								i(211379, {	-- Tangled Yarn of Secrets
+									i(211380, {	-- Tangled Yarn of Secrets
+										i(210950),	-- Insight of Q'onzu
+									}),
+								}),
+							}),
+						}),
+					}),
+					--i(208067),	-- Plump Dreamseed
 				},
 			}),
 			--
 			q(78262, {	-- It Starts With a Stone
-				--["sourceQuests"] = {  },	-- no requirement as of 7.Sept
+				--[[["sourceQuests"] = {
+					xx,	-- TODO: no requirement?
+					77887,	-- 'World Quest Unlock' (spellID 421687)
+				},
+				["sourceQuestNumRequired"] = 1,]]--
 				["provider"] = { "n", 211328 },	-- Vaskarn
 				["coord"] = { 49.8, 61.6, EMERALD_DREAM },
 			}),
@@ -494,7 +526,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			--
 			q(77662, {	-- A Call to Aid
-				--["sourceQuests"] = {  },	-- no requirement as of 7.Sept
+				["sourceQuests"] = { 78904 },	-- HQT - `Local Stories Quest Unlock`
 				["provider"] = { "n", 209516 },	-- Delaryn Summermoon
 				["coord"] = { 50.1, 61.0, EMERALD_DREAM },
 			}),
@@ -512,6 +544,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			q(77664, {	-- One Last Step
 				["sourceQuests"] = { 77739 },	-- Smother the Flames
 				["provider"] = { "n", 209677 },	-- Shandris Feathermoon (player instance NPC)
+				["g"] = {
+					i(210957),	-- Rune of the Fire Druids
+				},
 			}),
 			q(77665, {	-- Bound to You
 				["sourceQuests"] = { 77664 },	-- One Last Step
@@ -534,7 +569,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 55.3, 42.3, EMERALD_DREAM },
 				["g"] = {
 					i(208937),	-- A Muddy Journal
-					i(210957),	-- Dream-Imbued Journal
+					i(211366),	-- Drops of Moon Water
 					i(209054),	-- Ritual Remedy (QI!)
 					i(209051),	-- Sleeping Glory (QI!)
 					i(209050),	-- Somnium Bark (QI!)
@@ -543,7 +578,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			--
 			q(77316, {	-- Trouble at the Tree
-				--["sourceQuests"] = {  },	-- no requirement as of 7.Sept
+				["sourceQuests"] = { 78904 },	-- HQT - `Local Stories Quest Unlock`
 				["provider"] = { "n", 208669 },	-- Lady Moonberry
 				["coord"] = { 49.8, 62.5, EMERALD_DREAM },
 				["g"] = {
@@ -562,10 +597,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 77317 },	-- Hatted Hibernation
 				["provider"] = { "n", 208669 },	-- Lady Moonberry
 				["coord"] = { 49.8, 62.5, EMERALD_DREAM },
+				["g"] = {
+					i(210996),	-- Moonberry's Many Mischief Makers
+					i(210997),	-- Spare Party Hat
+					--i(208067),	-- Plump Dreamseed
+				},
 			}),
 			--
 			q(77896, {	-- A Sleepy Search
-				--["sourceQuests"] = {  },	-- no requirement as of 7.Sept
+				["sourceQuests"] = { 78904 },	-- HQT - `Local Stories Quest Unlock`
 				["provider"] = { "n", 210133 },	-- Icarius
 				["coord"] = { 50.3, 63.4, EMERALD_DREAM },
 			}),
@@ -601,8 +641,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["provider"] = { "n", 210164 },	-- Thaalean
 				["coord"] = { 58.1, 77.3, EMERALD_DREAM },
 				["g"] = {
-					i(210864),	-- Improvised Leafbed (TOY!)
+					--i(210864),	-- Improvised Leafbed (TOY!)
 					i(210952),	-- Spare Heated Hearthstone
+					--i(208067),	-- Plump Dreamseed
 				},
 			}),
 			--
@@ -645,7 +686,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 				["provider"] = { "n", 210813 },	-- Dionaessa (player instanced NPC)
 				["g"] = {
-					--now reward is [Plump Dreamseed]
+					--i(208067),	-- Plump Dreamseed
 				},
 			}),
 			q(77802, {	-- What Do I Call You?
@@ -658,7 +699,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			--
 			q(77310, {	-- Memory of the Dreamer
-				--["sourceQuests"] = {  },	-- no requirement as of 7.Sept
+				["sourceQuests"] = { 78904 },	-- HQT - `Local Stories Quest Unlock`
 				["provider"] = { "n", 210022 },	-- Keeper Adranas
 				["coord"] = { 58.7, 23.9, EMERALD_DREAM },
 			}),
@@ -690,18 +731,26 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 				["provider"] = { "n", 208714 },	-- Ysera
 				["coord"] = { 58.6, 23.8, EMERALD_DREAM },
+				["g"] = {
+					i(210954),	-- Sprout of Rebirth
+				},
 			}),
 			q(77315, {	-- Ancient Memories
 				["sourceQuests"] = { 77314 },	-- Requiem in a Dream
 				["provider"] = { "n", 208714 },	-- Ysera
 				["coord"] = { 58.6, 23.8, EMERALD_DREAM },
 				["g"] = {
-					i(210954),	-- Sprout of Rebirth
+					i(211370),	-- Branch of Gracus
+					--i(208067),	-- Plump Dreamseed
 				},
 			}),
 			--
 			q(78427, {	-- Great Crates!
-				["sourceQuests"] = { 77283 },	-- A Multi-Front Battle
+				["sourceQuests"] = {
+					77283,	-- A Multi-Front Battle
+					77887,	-- 'World Quest Unlock' (spellID 421687)
+				},
+				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 211240 },	-- Eran'nda
 				["isWeekly"] = true,
 				["coord"] = { 52.5, 62.5, EMERALD_DREAM },
@@ -709,7 +758,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					{ "i", 210041, 1 },	-- Shipment of Goods
 				},
 				["g"] = {
-					i(208067),	-- Plump Dreamseed
+					i(210050),	-- Mysterious Seeds
+					--i(208067),	-- Plump Dreamseed
 				},
 			}),
 			q(78428, {	-- Crate of the Art
@@ -721,12 +771,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					{ "i", 210041, 5 },	-- Shipment of Goods
 				},
 				["g"] = {
-					i(208047),	-- Gigantic Dreamseed
+					--i(208047),	-- Gigantic Dreamseed
 				},
 			}),
 			--
 			q(78041, {	-- Sky Mother's Ire
-				--["sourceQuests"] = {  },	-- no requirement as of 7.Sept
+				["sourceQuests"] = { 78066 },	-- The Answers You've Earned
 				["provider"] = { "n", 209318 },	-- Cenarius
 				["coord"] = { 50.8, 62.1, EMERALD_DREAM },
 			}),
@@ -736,7 +786,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 65.8, 37.6, EMERALD_DREAM },
 				["g"] = {
 					i(209875),	-- Gorestained Armor Scrap (QI!)
-					i(208775),	-- Ashphodel Research Notes (QI)
+					i(208775),	-- Ashphodel Research Notes (QI!)
 				},
 			}),
 			q(78043, {	-- Q'Onzu's Quandary
@@ -749,7 +799,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["provider"] = { "i", 208775 },	-- Ashphodel Research Notes
 				--["coord"] = { 65.9, 37.8, EMERALD_DREAM },
 				["g"] = {
+					i(211395),	-- Ashphodel Research Notes
 					i(210453),	-- Bundle of Flame Pollen (QI!)
+					i(210951),	-- Treacherous Research Notes
+
 				},
 			}),
 			q(78044, {	-- Apalling Pollen
@@ -784,13 +837,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["provider"] = { "n", 210587 },	-- Aviana
 				["coord"] = { 65.8, 37.6, EMERALD_DREAM },
 				["g"] = {
-					i(210663),	-- Circle of Nature's Youth (COSMETIC!)
-					i(210951),	-- Treacherous Research Notes
+					i(211369),	-- Charred Staff of the Overseer
+					--i(208047),	-- Gigantic Dreamseed
+					--i(210663),	-- Circle of Nature's Youth (COSMETIC!)
 				},
 			}),
 			--
 			q(78381, {	-- Dreams Unified
-				["sourceQuests"] = { 77283 },	-- A Multi-Front Battle
+				["sourceQuests"] = {
+					77283,	-- A Multi-Front Battle
+					77887,	-- 'World Quest Unlock' (spellID 421687)
+				},
+				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 208669 },	-- Lady Moonberry
 				["coord"] = { 49.8, 62.5, EMERALD_DREAM },
 				["g"] = {
@@ -819,7 +877,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			]]--
 
 			n(BONUS_OBJECTIVES, {
+				-- from 'big' rares bonus objective
 				i(211303),	-- Dryad's Supply Pouch
+				--
+				q(78890, {	--Emerald Frenzy
+					--["sourceQuests"] = {  },	-- ?
+					["coord"] = { 55.5, 50.0, EMERALD_DREAM }, -- 47.1, 30.3
+					["repeatable"] = true,
+				}),
 			}),
 		}),
 	}),
@@ -831,7 +896,8 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(77413),	-- Shandris's Scouting Report (itemID 208181) (spellID 418275)
 		q(77572),	-- 'Make player eligible for superbloom' (spellID 425375) (new qid attached to this also - 76573, 76574, 76575 but marked as completed on first character now)
 		q(77887),	-- 'World Quest Unlock' (spellID 421687)
-		---Driad Garden
+		q(78904),	-- 'Local Stories Quest Unlock' (spellID 429258) (after qID 77178 'Tactical Withdrawal')
+		---Dryad Garden
 		q(77808),	-- Quest "What Do I Call You?": Pick the title of "Mother"
 		q(77809),	-- Quest "What Do I Call You?": Pick the title of "Father"
 		q(77810),	-- Quest "What Do I Call You?": Pick the title of "Commander"

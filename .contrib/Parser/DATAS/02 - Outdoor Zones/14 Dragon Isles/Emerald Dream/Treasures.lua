@@ -9,6 +9,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			i(210173),	-- Formula: Enchanted Whelpling's Dreaming Crest (RECIPE!) (TODO: was found in small somnut)
 			i(210172),	-- Formula: Enchanted Wyrm's Dreaming Crest (RECIPE!) (TODO: was found in small somnut)
 			--
+			o(409849, {	-- Ashwood Research Binder
+				["questID"] = 78911,
+				["coord"] = { 60.8, 44.9, EMERALD_DREAM },
+				["g"] = {
+					i(210737),	-- Ashwood Research Binder
+				},
+			}),			
+			o(413780, {	-- On the Nature of the Dream
+				["questID"] = 78833,
+				["coord"] = { 54.4, 24.6, EMERALD_DREAM },
+				["g"] = {
+					i(208649),	-- On the Nature of the Dream
+				},
+			}),
 			o(413774, {	-- The Legend of Elun'Ahir
 				["questID"] = 78831,
 				["coord"] = { 49.8, 61.7, EMERALD_DREAM },
@@ -20,12 +34,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			o(407739, {	-- Triflesnatcher's Roving Trove
 				["description"] = "You need to interact with owl 3 times in order to spawn chest.",
 				["questID"] = 77872,
-				["coord"] = { 35.0, 55.2, EMERALD_DREAM },
+				["coord"] = { 34.1, 56.4, EMERALD_DREAM },
 				["g"] = {
-					i(208067),	-- Plump Dreamseed (TODO: placeholder?)
+					--i(208067),	-- Plump Dreamseed (TODO: placeholder?)
 					n(210060, {	-- Triflesnatcher
 						["description"] = "1st owl",
-						["questID"] = 77855,
+						["questID"] = 77855,	-- (Not in ATT?)
 						["coord"] = { 39.7, 52.1, EMERALD_DREAM },
 					}),
 					n(210081, {	-- Triflesnatcher
@@ -51,7 +65,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 78006,
 				["coord"] = { 55.3, 57.3, EMERALD_DREAM },
 				["g"] = {
-					i(208067),	-- Plump Dreamseed (TODO: placeholder?)
+					--i(208067),	-- Plump Dreamseed (TODO: placeholder?)
 				},
 			}),
 			o(409440, {	-- Pineshrew Cache
@@ -81,7 +95,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						["coord"] = { 61.6, 59.5, EMERALD_DREAM },
 						["questID"] = 78005,
 						["g"] = {
-							i(208047),	-- Gigantic Dreamseed (TODO: another one placeholder?)
+							--i(208047),	-- Gigantic Dreamseed (TODO: another one placeholder?)
 						},
 					}),
 				},

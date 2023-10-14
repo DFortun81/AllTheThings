@@ -61,6 +61,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["description"] = "Finish bonus objective in marked area to make him spawn.",
 				["questID"] = 77982, -- bonus objective qID
 				["coord"] = { 53.8, 40.7, EMERALD_DREAM },
+				["g"] = {
+					i(210105),	-- Autumn Druid Belt / ?
+				},
 			}),
 			n(210075, {	-- Henri Snufftail
 				["questID"] = 77944,
@@ -90,9 +93,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 78211,
 				["coord"] = { 40.5, 49.6, EMERALD_DREAM },
 				["g"] = {
-					i(210650),	-- Mark of the Keen-Eyed Dreamsaber
+					i(210087),	-- Autumn Druid Grips / ?
+					i(210650),	-- Mark of the Keen-Eyed Dreamsaber (CI!)
 					i(210491),	-- Technique: Winding Slitherdrake: Hairy Chin (RECIPE!)
-					i(210129),	-- Wand of Brisk Dusks / -- generic drop?
+					i(210129),	-- Wand of Brisk Dusks / generic drop?
 				},
 			}),
 			n(210051, {	-- Matriarch Keevah
@@ -121,7 +125,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 				["g"] = {
 					i(208329),	-- Warm Grasp of the Dream
-					--i(210093),	-- Autumn Druid Hood ?
+					i(210093),	-- Autumn Druid Hood / ?
 				},
 			}),
 			n(210070, {	-- Mosa Umbramane

@@ -616,7 +616,6 @@ root(ROOTS.Unsorted, {
 				i(210647),	-- Mark of the Umbramane (CI!)
 				i(210729),	-- Mark of the Verdant Bristlebruin (CI!)
 
-				i(210645),	-- Feather of Friends (CI!)
 				i(210754),	-- Feather of the Blazing Somnowl (CI!)
 				i(210728),	-- Moon-Blessed Claw (CI!)
 				i(210727),	-- Pollenfused Bristlebruin Fur Sample (CI!)
@@ -720,7 +719,6 @@ root(ROOTS.Unsorted, {
 			i(208599),	-- Verdant Dream Seed
 			i(208606),	-- Somnagora's Heart
 			i(208619),	-- The Tragedy of Erinethria
-			i(208649),	-- On the Nature of the Dream
 			i(208690),	-- Roottwined Key
 			i(208692),	-- Ancient Roottwined Tome
 			i(208693),	-- Battle Magister's Orbs
@@ -911,7 +909,6 @@ root(ROOTS.Unsorted, {
 			i(210193),	-- Experimental Dreamcatcher
 			i(210198),	-- Depleted Battery
 			i(210203),	-- Mail - WRIST 2
-			i(210217),	-- Small Dreamy Bounty
 			i(210218),	-- Plump Dreamy Bounty
 			i(210219),	-- Gigantic Dreamy Bounty
 			i(210224),	-- Small Emerald Bloom
@@ -995,11 +992,9 @@ root(ROOTS.Unsorted, {
 			i(210687),	-- Ironfur Sample
 			i(210726),	-- Ruby Flightstone
 			-----------------
-			i(210737),	-- Ashphodel Research Notes
 			i(210756),	-- Satchel of Drake's Dreaming Crests
 			i(210762),	-- Clutch of Wyrm's Dreaming Crests
 			i(210768),	-- Bouquet of Aspect's Dreaming Crests
-			i(210770),	-- Satchel of Drake's Dreaming Crests
 			i(210776),	-- Lesser Dream Infusion
 			i(210782),	-- Slumbering Moonfish
 			i(210783),	-- Awakening Sunfish
@@ -1053,9 +1048,7 @@ root(ROOTS.Unsorted, {
 			i(210880),	-- Filled Vial
 			i(210883),	-- Ensemble: Scarlet Zealot's Trappings
 			i(210916),	-- Ember of Fyrakk
-			i(210917),	-- Pouch of Whelpling's Dreaming Crests
 			i(210920),	-- Gift of Amirdrassil
-			i(210923),	-- Clutch of Wyrm's Dreaming Crests
 			i(210952),	-- Spare Heated Hearthstone
 			i(210958),	-- Crown of the Dryad Guardian
 			i(210959),	-- [PH] Misfit Renown Item
@@ -1146,8 +1139,6 @@ root(ROOTS.Unsorted, {
 			i(210993),	-- Enchanting Dreamstaff
 			i(210994),	-- Enchanting Dreambow
 			i(210995),	-- Enchanting Dreambow
-			i(210996),	-- Moonberry's Many Mischief Makers
-			i(210997),	-- Spare Party Hat
 			i(210999),	-- Ruby Faced Mobile Timepiece
 			i(211001),	-- Sapphire Faced Mobile Timepiece
 			i(211002),	-- Golden Mobile Timepiece
@@ -1373,27 +1364,13 @@ root(ROOTS.Unsorted, {
 			i(211303),	-- Dryad's Supply Pouch
 			i(211314),	-- Cinder of Companionship
 			i(211353),	-- Roasted Ram Special
-			i(211366),	-- Drops of Moon Water
-			i(211369),	-- Charred Staff of the Overseer
-			i(211370),	-- Branch of Gracus
 			i(211371),	-- Dryad-Keeper Credentials
-			i(211372),	-- Q'onzu's Consolation Prize
-			i(211373),	-- Bag of Many Wonders
-			i(211374),	-- Tangled Yarn of Secrets
 			i(211375),	-- Everglowing Ember
 			i(211376),	-- Seedbloom
-			i(211377),	-- Tangled Yarn of Secrets
-			i(211378),	-- Tangled Yarn of Secrets
-			i(211379),	-- Tangled Yarn of Secrets
-			i(211380),	-- Tangled Yarn of Secrets
 			i(211381),	-- Grotto Netherwing Drake: Violet Scales
-			i(211389),	-- Cache of Overblooming Treasures
-			i(211394),	-- Harvested Dreamseed Cache
-			i(211395),	-- Ashphodel Research Notes
 			i(211396),	-- Attuned Glowspore Grip
 			i(211397),	-- Attuned Rune of Shadowbinding
 			i(211398),	-- Attuned Sophic Vellum
-			i(211399),	-- Technique: Glyph of the Lunar Chameleon
 			i(211400),	-- Glyph of the Lunar Chameleon
 			i(211401),	-- Secret Spinner's Miter
 			i(211402),	-- Coif of the Court Spider
@@ -1401,10 +1378,6 @@ root(ROOTS.Unsorted, {
 			i(211404),	-- Spymaster's Wrap
 			i(211405),	-- Loa Betrayer's Vestments
 			i(211406),	-- Ageless Dewdrops
-			i(211410),	-- Bloomed Wildling Cache
-			i(211411),	-- Sprouting Dreamtrove
-			i(211413),	-- Budding Dreamtrove
-			i(211414),	-- Blossoming Dreamtrove
 			i(211416),	-- Dream Wardens Insignia
 			i(211417),	-- Dream Wardens Insignia
 			i(211418),	-- Q'onzu Edict of Change
@@ -1416,7 +1389,6 @@ root(ROOTS.Unsorted, {
 			i(211424),	-- Dreaming Banner of the Aspects
 			i(211470),	-- Ravencrest's Wrath
 			i(211473),	-- Corrupted Knot
-			i(211495),	-- Dreambound Augment Rune
 		})),
 		tier(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
 			filter(TOYS, {

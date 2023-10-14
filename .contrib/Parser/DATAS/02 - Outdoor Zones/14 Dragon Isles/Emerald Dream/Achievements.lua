@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 		n(ACHIEVEMENTS, {
 			ach(19316, {	-- Adventurer of the Emerald Dream
 				["g"] = {
-					i(210662),	-- Ochre Ornament of the Grove (COSMETIC!)
+					--i(210662),	-- Ochre Ornament of the Grove (COSMETIC!)
 					crit(62945, {	-- Bloodstripe Great Ray
 						["_npcs"] = { 210050 },	-- Bloodstripe Great Ray
 					}),
@@ -110,7 +110,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			ach(19296, {	-- Dragon Glyphs: Eye of Ysera
 				["coord"] = { 60.3, 30.1, EMERALD_DREAM },
 			}),
-			ach(19297, {	-- Dragon Glyphs: Smoldering Ascent
+			ach(19297, {	-- Dragon Glyphs: Furnace Coil
 				["coord"] = { 21.2, 26.7, EMERALD_DREAM },
 			}),
 			ach(19298, {	-- Dragon Glyphs: Smoldering Copse
@@ -138,7 +138,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					19299,	-- Dragon Glyphs: Cinder Summit
 					19300,	-- Dragon Glyphs: Dreamsurge Basin
 					19296,	-- Dragon Glyphs: Eye of Ysera
-					19297,	-- Dragon Glyphs: Smoldering Ascent
+					19297,	-- Dragon Glyphs: Furnace Coil
 					19298,	-- Dragon Glyphs: Smoldering Copse
 					19303,	-- Dragon Glyphs: Wakeful Vista
 					19302,	-- Dragon Glyphs: Whorlwing basin
@@ -335,9 +335,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			pvp(ach(19294, {	-- Tour of Duty: Emerald Dream
-				["g"] = {
+				--[[["g"] = {
 					i(210666),	-- Crest of the Seething Flamekeeper (COSMETIC!)
-				},
+				},]]--
 			})),
 			ach(19317, {	-- Treasures of the Emerald Dream
 				["g"] = {

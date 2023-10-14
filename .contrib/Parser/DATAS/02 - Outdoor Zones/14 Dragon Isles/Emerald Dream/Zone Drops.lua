@@ -6,6 +6,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 		n(ZONE_DROPS, {
 			--i(201437),	-- Slumbering Dream Fragment
 			--i(209861),	-- Thorn-Laden Heart @ 37.8, 46.7, EMERALD_DREAM [hunter only, seems like?]
+			--i(210050),	-- Mysterious Seeds // litreally from any sourse, but could be locked by renown?
 			filter(CLOTH, {
 				--i(),	--
 			}),

@@ -48,6 +48,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					}),
 				}
 			}),
+			n(213278, {	-- Kirasztia <Senior Researcher>
+				["coord"] = { 36.7, 33.3, EMERALD_DREAM },
+				--[[["g"] = {
+				["cost"] = {{ "i", 210947, 1 }},	-- Flame-Warped Curio (tooltip show same id for different curio)
+				raid modID 4, bonusID 6652 (lfr)
+				raid modID 3, bonusID 6652 (nhc)
+				raid modID 5, bonusID 6652 (hc)
+				raid modID 6, bonusID 6652 (m)
+				},]]--
+			}),
+			n(208170, {	-- Mythrin'dir <Trade Goods>
+				["coord"] = { 49.6, 62.8, EMERALD_DREAM },
+				["g"] = {
+					i(211399),	-- Technique: Glyph of the Lunar Chameleon (RECIPE!)
+				},
+			}),
 			n(211265, {	-- Sylvia Whisperbloom (TODO: Talisa Whisperbloom (n: 212797) have same stuff, tree no longer a vendor)
 				["coord"] = { 59.8, 16.9, EMERALD_DREAM },
 				["g"] = {	-- (TODO: everything in cost changed to { "i", 211376, 1 })
@@ -266,15 +282,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(207216),	--
 				},]]--
 			}),
-			n(213278, {	-- Kirasztia <Senior Researcher>
-				["coord"] = { 36.7, 33.3, EMERALD_DREAM },
-				--[[["g"] = {
-				["cost"] = {{ "i", 210947, 1 }},	-- Flame-Warped Curio (tooltip show same id for different curio)
-				raid modID 4, bonusID 6652 (lfr)
-				raid modID 3, bonusID 6652 (nhc)
-				raid modID 5, bonusID 6652 (hc)
-				raid modID 6, bonusID 6652 (m)
-				},]]--
+			n(211328, {	-- Vaskarn <Dreaming Crest Exchange>
+				["coord"] = { 49.8, 62.9, EMERALD_DREAM },
+				["g"] = {
+					i(210923, {	-- Clutch of Wyrm's Dreaming Crests
+						["cost"] = {{ "c", 2709, 15 }},	-- 15x Aspect's Dreaming Crest
+					}),
+					i(210917, {	-- Pouch of Whelpling's Dreaming Crests
+						["cost"] = {{ "c", 2707, 15 }},	-- 15x Drake's Dreaming Crest
+					}),
+					i(210770, {	-- Satchel of Drake's Dreaming Crests
+						["cost"] = {{ "c", 2708, 15 }},	-- 15x Wyrm's Dreaming Crest
+					}),
+				},
 			}),
 		}),
 	}),

@@ -16,6 +16,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["provider"] = { "n", 208474 },	-- Clarelle
 					["coord"] = { 51.4, 59.6, EMERALD_DREAM },
 					["isWeekly"] = true,
+					["g"] = {
+						i(211389),	-- Cache of Overblooming Treasures
+					},
 				}),
 			}),
 			n(RARES, sharedData({ ["isWeekly"] = true }, {
@@ -79,16 +82,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210390),	-- Arctic Warden's Warhelm
 					i(210408),	-- Arctic Warden's Cloak (cloak) / will leave it here until non-plate confirm drop
 				}),
-				--- Seeds (TODO: as of 29/09 was removed from reward list here (or need at least 'rare' state?))
-				--i(208066),	-- Small Dreamseed
-				--i(208067),	-- Plump Dreamseed
-				--i(208047),	-- Gigantic Dreamseed
+				--Seeds (moved into Emerald Bounty)
 				--- DM
 				i(207762),	-- Grotto Netherwing Drake: Chin Spike (DM!)
 				-- RECIPE
 				i(210242),	-- Recipe: Slumbering Peace Tea (RECIPE!)
 				i(210243),	-- Technique: Contract: Dream Wardens (RECIPE!)
 				i(210490),	-- Technique: Vantus Rune: Amirdrassil, the Dream's Hope (RECIPE!)
+				--Event progress rewards
+				i(211414),	-- Blossoming Dreamtrove
+				i(211413),	-- Budding Dreamtrove
+				i(211411),	-- Sprouting Dreamtrove
 			}),
 		}),
 	}),

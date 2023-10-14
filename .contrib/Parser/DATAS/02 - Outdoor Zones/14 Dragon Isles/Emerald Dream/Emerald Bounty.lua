@@ -15,6 +15,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			i(208066),	-- Small Dreamseed
 			i(208067),	-- Plump Dreamseed
 			i(208047),	-- Gigantic Dreamseed
+			--
 			n(QUESTS,{
 				--- Emerald Blossom quest chain
 				q(78172, {	-- Mysterious Seeds
@@ -26,15 +27,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
 					["coord"] = { 59.7, 16.9, EMERALD_DREAM },
 					["g"] = {
-						i(210014),	-- Mysterious Seeds (QI!)
+						i(210014),	-- Mysterious Ageless Seeds (QI!)
 					},
 				}),
-				q(78170, {	-- Nurturing Ageless Seeds
+				q(78170, {	-- Nurturing Ageless Seeds // 14.10 -- quest bugged (no quest item in loot table)
 					["sourceQuests"] = { 77209 },	-- Seed Legacy
 					["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
 					["coord"] = { 59.7, 16.9, EMERALD_DREAM },
 					["g"] = {
 						i(211406),	-- Ageless Dewdrops (QI!)
+						i(211410),	-- Bloomed Wildling Cache
 					},
 				}),
 				q(78171, {	-- Blossoms of the Past
@@ -53,15 +55,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 				--
 				q(78821, {	-- Blooming Dreamseeds
-					--["sourceQuests"] = { 78206 },	-- Emerald Bounty (TODO: need to confirm)
+					--[[["sourceQuests"] = {
+						78206,	-- Emerald Bounty (TODO: need to confirm)
+						77887,	-- 'World Quest Unlock' (spellID 421687)
+					},
+					["sourceQuestNumRequired"] = 1,]]--
 					["provider"] = { "n", 212797 },	-- Talisa Whisperbloom
 					["coord"] = { 49.7, 62.1, EMERALD_DREAM },
 					["isWeekly"] = true,
 					["g"] = {
+						i(211394),	-- Harvested Dreamseed Cache
 						--(TODO: Superbloom share)
-						i(210380),	-- Glittering Gelid Goldchain
-						i(210378),	-- Rime Ridden Ring
-						i(210403),	-- Winter Forager's Spire
+						--i(210380),	-- Glittering Gelid Goldchain
+						--i(210378),	-- Rime Ridden Ring
+						--i(210403),	-- Winter Forager's Spire
 					},
 				}),
 			}),
@@ -73,9 +80,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 			}),
 			n(REWARDS, {
-				--anything from n: 211069 can be here
+				--anything from n: 211265 can be here
 				i(210174),	-- Formula: Illusory Adornment: Dreams (RECIPE!) (TODO: seems like only from blue and epic seed?)
 				i(210241),	-- Recipe: Dreamwalker's Healing Potion (RECIPE!)
+				-- new loot? depends on seed?
+				i(210217),	-- Small Dreamy Bounty
 			}),
 		}),
 	}),
@@ -135,7 +144,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(77501),	-- loot cache Lullaby Lavender
 		--13
 		q(77531),	-- plant seed Moon Tulip
-		q(77527),	-- contrib to Moon Tulip
+		q(77527),	-- contrib to Moon Tulip / 78816 in addition (Small Emerald Bloom) as 14.10
 		q(77529),	-- loot cache Moon Tulip
 		--14
 		q(77387),	-- plant seed Ringing Rose
@@ -147,8 +156,8 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(77373),	-- loot cache Singing Weedling
 		--16
 		q(77394),	-- plant seed Viridescent Sprout / was 'unflagged' 77357 (in previous build)
-		q(77395),	-- contrib to Viridescent Sprout
-		q(77396),	-- loot cache Viridescent Sprout
+		q(77395),	-- contrib to Viridescent Sprout / 77371 & 78798 (donated green seed to another person plant)
+		q(77396),	-- loot cache Viridescent Sprout / 77357 - when bloom, 78975 after looting
 		--17
 		--q(),	-- plant seed Whisperbloom Sapling
 		--q(),	-- contrib to Whisperbloom Sapling

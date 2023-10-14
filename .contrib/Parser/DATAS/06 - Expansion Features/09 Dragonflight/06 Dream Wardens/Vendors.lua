@@ -102,6 +102,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							["cost"] = { { "c", DRAGON_SUPPLIES, 1200 } },
 						}),
 					}, {	-- RENOWN 18 --
+						i(211495),	-- Dreambound Augment Rune
 					}, {	-- RENOWN 19 --
 						i(210479, {	-- Flourishing Whimsydrake: Night Scales (DM!)
 							["cost"] = { { "c", DRAGON_SUPPLIES, 1250 } },
