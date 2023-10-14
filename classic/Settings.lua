@@ -912,7 +912,16 @@ BattlePetsCheckBox.OnTooltip = function(t)
 end
 BattlePetsCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local BattlePetsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local BattlePetsAccountWideCheckBox;
+if C_PetJournal then
+BattlePetsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+function(self)
+	self:SetChecked(true);
+	self:Disable();
+	self:SetAlpha(0.2);
+end);
+else
+BattlePetsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:BattlePets"));
 	if settings:Get("DebugMode") or not settings:Get("Thing:BattlePets") then
@@ -929,6 +938,7 @@ function(self)
 	app:RefreshDataCompletely("BattlePetsAccountWideCheckBox");
 end);
 BattlePetsAccountWideCheckBox:SetATTTooltip("Companion pets can be collected on multiple characters and realistically would require that you have an insane amount of bag space in order to collect them all on one character.\n\nWe recommend you keep this turned on, but you do you fam.");
+end
 BattlePetsAccountWideCheckBox:SetPoint("TOPLEFT", BattlePetsCheckBox, "TOPLEFT", 220, 0);
 
 local DeathsCheckBox = settings:CreateCheckBox("Deaths / Soul Fragments",
@@ -1271,7 +1281,16 @@ MountsCheckBox.OnTooltip = function(t)
 end
 MountsCheckBox:SetPoint("TOPLEFT", RWPCheckBox, "BOTTOMLEFT", 0, 4);
 
-local MountsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local MountsAccountWideCheckBox;
+if C_MountJournal then
+MountsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+function(self)
+	self:SetChecked(true);
+	self:Disable();
+	self:SetAlpha(0.2);
+end);
+else
+MountsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Mounts"));
 	if settings:Get("DebugMode") or not settings:Get("Thing:Mounts") then
@@ -1287,6 +1306,7 @@ function(self)
 	settings:UpdateMode();
 	app:RefreshDataCompletely("MountsAccountWideCheckBox");
 end);
+end
 MountsAccountWideCheckBox:SetPoint("TOPLEFT", MountsCheckBox, "TOPLEFT", 220, 0);
 
 local QuestsCheckBox = settings:CreateCheckBox("Quests",
@@ -1531,9 +1551,6 @@ function(self)
 	self:SetChecked(true);
 	self:Disable();
 	self:SetAlpha(0.2);
-end,
-function(self)
-	-- Do nothing.
 end);
 ToysAccountWideCheckBox:SetATTTooltip("Toys are now account wide!");
 else

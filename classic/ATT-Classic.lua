@@ -5141,6 +5141,10 @@ local mountFields = {
 };
 
 if C_PetJournal then
+	-- Once the Pet Journal API is available, then all pets become account wide.
+	SetBattlePetCollected = function(t, speciesID, collected)
+		return app.SetAccountCollected(t, "BattlePets", speciesID, collected);
+	end
 	speciesFields.icon = function(t)
 		return select(2, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
 	end
@@ -5163,6 +5167,10 @@ if C_PetJournal then
 	
 	local C_MountJournal = _G["C_MountJournal"];
 	if C_MountJournal then
+		-- Once the Mount Journal API is available, then all mounts become account wide.
+		SetMountCollected = function(t, spellID, collected)
+			return app.SetAccountCollectedForSubType(t, "Spells", "Mounts", spellID, collected);
+		end
 		local SpellIDToMountID = setmetatable({}, { __index = function(t, id)
 			local allMountIDs = C_MountJournal.GetMountIDs();
 			if allMountIDs and #allMountIDs > 0 then

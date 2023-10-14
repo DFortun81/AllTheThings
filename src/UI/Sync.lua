@@ -300,10 +300,54 @@ local function ProcessAddonMessageMethod(self, method, sender, text)
 		method(sender, wad);
 	end
 end
+
+-- Account Wide Data handlers
+local AccountWideDataHandlers = {};
+if C_MountJournal then
+	local C_MountJournal_GetMountInfoByID = C_MountJournal.GetMountInfoByID;
+	local C_MountJournal_GetMountIDs = C_MountJournal.GetMountIDs;
+	AccountWideDataHandlers.Spells = function(olddata, data)
+		local allMountIDs = C_MountJournal_GetMountIDs();
+		if allMountIDs and #allMountIDs > 0 then
+			for i,mountID in ipairs(allMountIDs) do
+				local spellID = select(2, C_MountJournal_GetMountInfoByID(mountID));
+				if spellID and olddata[spellID] then
+					data[spellID] = 1;
+				end
+			end
+		end
+	end
+end
+if C_PetJournal then
+	local C_PetJournal_GetNumCollectedInfo = C_PetJournal.GetNumCollectedInfo;
+	AccountWideDataHandlers.BattlePets = function(olddata, data)
+		for speciesID,collected in pairs(olddata) do
+			if not data[speciesID] then
+				local count = C_PetJournal_GetNumCollectedInfo(speciesID);
+				if count and count > 0 then
+					data[speciesID] = 1;
+				end
+			end
+		end
+	end
+end
+if C_ToyBox then
+	-- After the C_ToyBox API was added, nearly every toy became account wide learned.
+	local PlayerHasToy = _G["PlayerHasToy"];
+	AccountWideDataHandlers.Toys = function(olddata, data)
+		for toyID,collected in pairs(olddata) do
+			if not data[toyID] then
+				if PlayerHasToy(toyID) then
+					data[toyID] = 1;
+				end
+			end
+		end
+	end
+end
 local function RecalculateAccountWideData()
-	for key,data in pairs(AccountWideData) do
-		if type(data) == "table" then
-			data = {};
+	for key,olddata in pairs(AccountWideData) do
+		if type(olddata) == "table" then
+			local data = {};
 			for guid,character in pairs(CharacterData) do
 				local characterData = character[key];
 				if characterData then
@@ -312,6 +356,8 @@ local function RecalculateAccountWideData()
 					end
 				end
 			end
+			local handler = AccountWideDataHandlers[key];
+			if handler then handler(olddata, data); end
 			AccountWideData[key] = data;
 		end
 	end
