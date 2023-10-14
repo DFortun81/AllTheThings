@@ -22,7 +22,7 @@ COMMUNITY_CLUES_HEADER = createHeader({
 -- TODO:
 -- Fix temporary ObjectIDs with real ones if ever determined, and delete temp entries from ObjectDB.lua
 
-root(ROOTS.Secrets, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 	["description"] = "***Using Debug Mode is recommended.***\n",
 	["groups"] = {
 		n(ACHIEVEMENTS, {
@@ -1108,7 +1108,7 @@ root(ROOTS.Secrets, applyevent(EVENTS.SECRETS_OF_AZEROTH, n(SECRETS_OF_AZEROTH_H
 			}),
 		}),
 	},
-}))));
+})));
 
 root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 	q(77204),	-- placed 'Golden Chalice'
