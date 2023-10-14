@@ -3002,6 +3002,8 @@ namespace ATT
             // Merge conditional data
             foreach (var data in ConditionalItemData)
             {
+                Objects.AssignFilterID(data);
+                Objects.AssignFactionID(data);
                 Items.Merge(data, true);
             }
 

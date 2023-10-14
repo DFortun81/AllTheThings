@@ -18,8 +18,6 @@ local dataEntryMeta = {
 			local text = {};
 			rawset(t, key, text);
 			return text;
-		else
-			return table[key];
 		end
 	end,
 };
@@ -38,14 +36,16 @@ local backingTableMetaNoSubMeta = {
 	end,
 };
 CreateDatabaseContainer = function(name, noSubMeta)
-	local backingTable = setmetatable({}, noSubMeta and backingTableMetaNoSubMeta or backingTableMeta);
+	local backingTable = setmetatable({}, (noSubMeta and type(noSubMeta) == "table" and noSubMeta or backingTableMetaNoSubMeta) or backingTableMeta);
 	local db = setmetatable({}, {
 		__index = function(t, key)
+			-- captured by Parser (AllTheThings table)
 			_[name] = backingTable;
 			return backingTable[key];
 		end,
 		__newindex = function(t, key, value)
 			if value and type(value) == "table" then
+				-- captured by Parser (AllTheThings table)
 				_[name] = backingTable;
 				local o = backingTable[key];
 				for k,v in pairs(value) do
@@ -54,7 +54,10 @@ CreateDatabaseContainer = function(name, noSubMeta)
 			end
 		end,
 	});
+	-- maintained across parsing
 	_G[name] = db;
+	-- captured by Parser (AllTheThings table)
+	-- _[name] = backingTable; -- not sure why we can't just set this once here... doesn't get captured in parser
 	return db;
 end
 end
@@ -73,8 +76,11 @@ oldLionStatue.model = 189908;
 
 ObjectDB[31] = { description = "What a shame it would be to lose this data..." };
 
+local o = ObjectDB[31]
+o.otherData = "also not lost data"
+
 print("Old Lion Statue contains:");
 for key,value in pairs(ObjectDB[31]) do
 	print(" " .. key .. ": " .. value);
 end
-]]--
+--]]--

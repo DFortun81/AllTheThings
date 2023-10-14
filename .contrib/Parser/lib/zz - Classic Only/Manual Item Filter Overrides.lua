@@ -1,7 +1,8 @@
 local Items = ItemDBConditional;
 local i = function(itemID, filterID)
 	Items[itemID] = { ["f"] = filterID };
-	return o;
+	-- ItemDBConditional uses an internal table when making new assignments into the DB, so we can't return the table used to set the key
+	return Items[itemID];
 end
 
 -- Expert Cook
@@ -115,7 +116,7 @@ i(20746, 55);	-- Lesser Wizard Oil
 i(20745, 55);	-- Minor Mana Oil
 i(20744, 55);	-- Minor Wizard Oil
 i(20750, 55);	-- Wizard Oil
---i(, 55);	-- 
+--i(, 55);	--
 
 -- Quest Items
 i(18333, 104);	-- Libram of Focus

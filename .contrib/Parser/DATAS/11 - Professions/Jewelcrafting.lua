@@ -6119,7 +6119,7 @@ local itemrecipe = function(name, itemID, spellID, spellIDAfterCata, timeline)
 			print("MISSING RECIPE", name, o.spellID);
 		end
 	end
-	return o;
+	return Items[itemID];
 end
 
 -- #if AFTER TBC

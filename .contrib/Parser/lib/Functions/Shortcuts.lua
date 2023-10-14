@@ -1366,7 +1366,6 @@ CRIEVES_SUPER_COOL_HEADER = createHeader({
 ]]--
 end)();
 
--- ItemDBConditional is used in libs/Functions prior to it being defined, so let's define it even earlier in the Parsing sequence!
 do
 -- ItemDBConditional contains a bunch of micro object modifications, but since we're using it everywhere, it is losing the item data due to what is known as "data chomping" with how we are using it.
 local itemDBConditional = CreateDatabaseContainer("ItemDBConditional", {

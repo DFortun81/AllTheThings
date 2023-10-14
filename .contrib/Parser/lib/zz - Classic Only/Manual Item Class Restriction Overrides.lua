@@ -1,7 +1,8 @@
 local Items = ItemDBConditional;
 local i = function(itemID, ...)
 	Items[itemID] = { ["classes"] = { ... } };
-	return o;
+	-- ItemDBConditional uses an internal table when making new assignments into the DB, so we can't return the table used to set the key
+	return Items[itemID];
 end
 
 -- Classic
