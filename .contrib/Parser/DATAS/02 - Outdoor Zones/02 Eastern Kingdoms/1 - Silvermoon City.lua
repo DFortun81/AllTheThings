@@ -815,7 +815,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				n(16636, {	-- Zathanna
-					["coord"] = { 69.8, 65.8, SHATTRATH_CITY },
+					["coord"] = { 69.8, 65.8, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						5239,    -- Blackbone Wand
