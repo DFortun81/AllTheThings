@@ -10550,7 +10550,6 @@ local itemFields = {
 	end,
 };
 -- Module imports
-itemFields.hasUpgrade = app.Modules.Upgrade.HasUpgrade;
 itemFields.nextUpgrade = app.Modules.Upgrade.NextUpgrade;
 itemFields.collectibleAsUpgrade = app.Modules.Upgrade.CollectibleAsUpgrade;
 app.BaseItem = app.BaseObjectFields(itemFields, "BaseItem");
@@ -12998,7 +12997,7 @@ local DefaultGroupVisibility, DefaultThingVisibility;
 local UpdateGroups;
 local RecursiveGroupRequirementsFilter, GroupFilter, GroupVisibilityFilter, ThingVisibilityFilter, TrackableFilter
 local FilterSet, FilterGet, Filters_ItemUnbound, ItemUnboundSetting
-local debug
+-- local debug
 -- Local caches for some heavily used functions within updates
 local function CacheFilterFunctions()
 	local FilterApi = app.Modules.Filter;
@@ -13046,7 +13045,7 @@ local function SetGroupVisibility(parent, group)
 		if parent and visible then
 			parent.hasUpgradeNested = true;
 		end
-		-- app.PrintDebug("SGV.hasUpgrade",group.hash,visible,group.hasUpgradeNested)
+		-- if debug then print("SGV.hasUpgrade",group.hash,visible,group.hasUpgradeNested) end
 	end
 	-- Trackable
 	if not visible and TrackableFilter(group) then

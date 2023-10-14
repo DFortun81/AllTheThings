@@ -167,12 +167,13 @@ end
 api.GetNextItemUnlockBonusID = GetNextItemUnlockBonusID;
 
 local function GetUpgrade(t, upmodID, upbonusID)
+	local itemID = t.itemID
 	local up = {
-		itemID = t.itemID,
+		itemID = itemID,
 		modID = upmodID > 0 and upmodID or t.modID,
 		bonusID = upbonusID > 0 and upbonusID or t.bonusID
 	}
-	return CreateItem(t.itemID, up).AsItemSource;
+	return CreateItem(itemID, up).AsItemSource;
 end
 api.GetUpgrade = GetUpgrade;
 
@@ -239,12 +240,12 @@ api.NextUpgrade = function(t)
 	end
 
 	t._up = up;
-	-- app.PrintDebug("NU:",not up.collected,t.modItemID,up.modItemID)
+	-- app.PrintDebug("NU:",up.__type,up.collected,t.modItemID,up.modItemID)
 	return up;
 end
 
 -- Returns the different and upgraded version of 't' (via 'up' field only)
-api.HasUpgrade = function(t)
+local function HasUpgrade(t)
 
 	-- '.up' is the modID.bonusID portion of the respective upgrade item defined in ATT
 	local up = t.up;
@@ -257,7 +258,7 @@ api.HasUpgrade = function(t)
 	-- cached tracking of upgrade group
 	local cache = t._up;
 	if cache then
-		-- app.PrintDebug("HU:cache",t.modItemID,cache.hash,cache.modItemID)
+		-- app.PrintDebug("HU:cache",t.hash,t.modItemID,"=+>",cache.__type,cache.hash,cache.modItemID,cache.collected)
 		return cache;
 	end
 
@@ -271,13 +272,21 @@ api.HasUpgrade = function(t)
 		return;
 	end
 
+	-- if up.modID == t.modID and up.bonusID == t.bonusID then
+	-- 	app.print("SAME ITEM AS UPGRADE!?",t.hash,t.modItemID,"=+>",up.__type,up.hash,up.modItemID)
+	-- end
+
+	-- if up.s == t.s then
+	-- 	app.print("SAME SOURCE AS UPGRADE!?",t.hash,t.modItemID,"=+>",up.__type,up.hash,up.modItemID)
+	-- end
+
 	t._up = up;
-	-- app.PrintDebug("HU:",not up.collected,t.modItemID,up.modItemID)
+	-- app.PrintDebug("HU:",up.__type,up.collected,t.modItemID,up.modItemID)
 	return up;
 end
 
 -- Returns whether 't' has an upgrade AND it is uncollected
 api.CollectibleAsUpgrade = function(t)
-	local upgrade = t.hasUpgrade;
+	local upgrade = t._up or HasUpgrade(t);
 	return upgrade and not upgrade.collected;
 end
