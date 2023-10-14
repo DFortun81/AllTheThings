@@ -41,5 +41,5 @@ function MultiDifficultyID(ids)
 	return hash;
 end
 
-ANY_DIFFICULTY_ID_RAID = MultiDifficultyID(AllDifficulties);
-HEROIC_PLUS_ID_RAID = MultiDifficultyID(HeroicPlus);
+ANY_DIFFICULTY_ID_RAID = MultiDifficultyID(ALL_DIFFICULTIES_RAID);
+HEROIC_PLUS_ID_RAID = MultiDifficultyID(HEROIC_PLUS_RAID);
