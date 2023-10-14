@@ -272,6 +272,14 @@ local function HasUpgrade(t)
 		return;
 	end
 
+	-- upgrade has to actually be different than the source item
+	local uphash = up.hash;
+	if uphash and uphash == t.hash then
+		-- app.PrintDebug("HU:upgrade is same",t.hash,t.modItemID,"=+>",up.__type,uphash,up.modItemID)
+		-- t.isUpgraded = true;
+		return;
+	end
+
 	-- if up.modID == t.modID and up.bonusID == t.bonusID then
 	-- 	app.print("SAME ITEM AS UPGRADE!?",t.hash,t.modItemID,"=+>",up.__type,up.hash,up.modItemID)
 	-- end
