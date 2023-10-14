@@ -176,7 +176,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			-- #if BEFORE 10.1.5
 			["description"] = "Rewarded for completing a random burning crusade dungeon during leveling.",
 			-- #else
-			["description"] = "Rewarded for completing a random burning crusade dungeon during leveling or during bc timewalking.",
+			["description"] = "Rewarded for completing a random bc dungeon during leveling or completing a random bc timewalking dungeon.",
 			-- #endif
 			["timeline"] = { "added 7.3.5.25600" },
 			["groups"] = {
@@ -250,7 +250,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			-- #if BEFORE 10.1.5
 			["description"] = "Rewarded for completing a random wrath of the lich king dungeon during leveling.",
 			-- #else
-			["description"] = "Rewarded for completing a random wrath of the lich king dungeon during leveling or during wotlk timewalking.",
+			["description"] = "Rewarded for completing a random wotlk dungeon during leveling or completing a random wotlk timewalking dungeon.",
 			-- #endif
 			["timeline"] = { "added 7.3.5.25600" },
 			["groups"] = {
@@ -332,7 +332,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			-- #if BEFORE 10.1.5
 			["description"] = "Rewarded for completing a random cataclysm dungeon during leveling.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
 			-- #else
-			["description"] = "Rewarded for completing a random cataclysm dungeon during leveling or during cata timewalking.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
+			["description"] = "Rewarded for completing a random cata dungeon during leveling or completing a random cata timewalking dungeon.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
 			-- #endif
 			["groups"] = {
 				i(113760),	-- Smoldercloth Bracers*
@@ -425,7 +425,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			-- #if BEFORE 10.1.5
 			["description"] = "Rewarded for completing a random mists of pandaria dungeon during leveling.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
 			-- #else
-			["description"] = "Rewarded for completing a random mists of pandaria dungeon during leveling or during mop timewalking.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
+			["description"] = "Rewarded for completing a random mop dungeon during leveling or completing a random mop timewalking dungeon.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
 			-- #endif
 			["g"] = {
 				i(113788),	-- Blossoming Belt*
@@ -1267,49 +1267,8 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 		})),
 	}),
 	tier(LEGION_TIER, {
-		i(210063, {	-- Invader's Satchel of Helpful Goods // Legion TW Daily Reward
-			["description"] = "Rewarded for completing a random legion dungeon during legion timewalking.",		
-			["timeline"] = { ADDED_10_1_7 },
-			["g"] = {
-				i(113788),	-- Blossoming Belt*
-				i(113764),	-- Blossoming Cap*
-				i(113766),	-- Blossoming Gloves*
-				i(113767),	-- Blossoming Mantle*
-				i(113765),	-- Blossoming Robe*
-				i(113787),	-- Blossoming Slippers*
-				i(113772),	-- Firecracker Belt*		— 12/27/21
-				i(113770),	-- Firecracker Boots*		— 12/27/21
-				i(113731),	-- Firecracker Cap*			— 12/27/21
-				un(REMOVED_FROM_GAME, i(113773)),	-- Firecracker Girdle
-				i(113746),	-- Firecracker Gloves*		— 12/27/21
-				un(REMOVED_FROM_GAME, i(113733)),	-- Firecracker Helm
-				i(113752),	-- Firecracker Mantle*		— 12/27/21
-				un(REMOVED_FROM_GAME, i(113771)),	-- Firecracker Slippers
-				i(113740),	-- Firecracker Tunic*		— 12/27/21
-				un(REMOVED_FROM_GAME, i(113730)),	-- Venomtail Helm
-				i(113753),	-- Venomtail Shoulderguards*— 01/14/22
-				i(113741),	-- Venomtail Chestguard*	— 01/14/22
-				i(113747),	-- Venomtail Gauntlets*		— 01/14/22
-				i(113779),	-- Venomtail Girdle			— 01/14/22
-				un(REMOVED_FROM_GAME, i(113778)),	-- Venomtail Belt
-				i(113777),	-- Venomtail Boots			— 01/14/22
-				un(REMOVED_FROM_GAME, i(113776)),	-- Venomtail Treads
-				i(113732),	-- Venomtail Visor			— 01/14/22
-				i(113738),	-- Kyparite Chestguard
-				un(REMOVED_FROM_GAME, i(113784)),	-- Kyparite Belt
-				un(REMOVED_FROM_GAME, i(113782)),	-- Kyparite Boots
-				i(113785),	-- Kyparite Girdle*			— confirmed by Reaperman on discord on April 20, 2020 (blaze it)
-				i(113744),	-- Kyparite Gauntlets		- confirmed by Archvile June 02 2020
-				i(113729),	-- Kyparite Headguard
-				un(REMOVED_FROM_GAME, i(113728)),	-- Kyparite Helm
-				i(113783),	-- Kyparite Stompers*
-				i(113750),	-- Kyparite Shoulderguards*
-				i(113735),	-- Drifting Cloud Necklace*	— 01/14/22
-				i(113755),	-- Ring of Flowing Water*	— 01/14/22
-				i(113734),	-- Tranquil Breeze Pendant of the Peerless	— 01/14/22
-				i(113756),	-- Loop of Inner Clarity*	— 01/14/22
-			},
-		}),
+		-- Listed under TW
+		-- i(210063, {	-- Invader's Satchel of Helpful Goods // Legion TW Daily Reward
 		i(140591, {	-- Shattered Satchel of Cooperation
 			["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 }
 		}),

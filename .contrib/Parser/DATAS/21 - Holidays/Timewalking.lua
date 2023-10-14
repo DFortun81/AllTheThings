@@ -178,11 +178,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubble
 -- The Burning Crusade Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND_DUNGEON_EVENT, {
 	tier(TBC_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {
-		n(DROPS, {
+		n(GROUP_FINDER, {
 			i(187902, {	-- Sporebat Soul (SS!)
 				["timeline"] = { ADDED_9_1_5 },
+				["description"] = "Can drop from the last boss from any bc timewalking dungeon with the nightfae covenant active.",	
 			}),
-			i(129747),	-- Swirling Timewarped Vial
+			i(129747, {	-- Swirling Timewarped Vial
+				["description"] = "Drops from the last boss from any bc timewalking dungeon.",
+			}),
 		}),
 		n(QUESTS, {
 			q(47523, {	-- Disturbance Detected: Black Temple
@@ -1256,10 +1259,13 @@ AddInstancesToRotation(TBC_TIER, {
 -- Wrath of the Lich King Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHREND_DUNGEON_EVENT, {
 	tier(WOTLK_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {
-		n(DROPS, {
-			i(129928),	-- Frigid Timewarped Prism
+		n(GROUP_FINDER, {
+			i(129928, {	-- Frigid Timewarped Prism
+				["description"] = "Can drop from the last boss from any wotlk timewalking dungeon with the nightfae covenant active.",	
+			}),
 			i(187903, {	-- Jormungar Soul (SS!)
 				["timeline"] = { ADDED_9_1_5 },
+				["description"] = "Can drop from any last boss of each dungeon with the nightfae covenant active.",	
 			}),
 		}),
 		n(QUESTS, {
@@ -2662,12 +2668,17 @@ AddInstancesToRotation(WOTLK_TIER, {
 -- Cataclysm Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLYSM_DUNGEON_EVENT, {
 	tier(CATA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_3 }},{
-		n(DROPS, {
+		n(GROUP_FINDER, {
 			i(185053, {	-- Kodo Soul (SS!)
 				["timeline"] = { ADDED_9_1_5 },
+				["description"] = "Can drop from the last boss from any cata timewalking dungeon with the nightfae covenant active.",	
 			}),
-			i(133378),	-- Smoldering Timewarped Ember (A)
-			i(133377),	-- Smoldering Timewarped Ember (H)
+			i(133378, {	-- Smoldering Timewarped Ember (A)
+				["description"] = "Drops from the last boss from any cata timewalking dungeon.",
+			}),
+			i(133377, {	-- Smoldering Timewarped Ember (H)
+				["description"] = "Drops from the last boss from any cata timewalking dungeon.",
+			}),
 		}),
 		n(QUESTS, {
 			q(57637, {	-- Disturbance Detected: Firelands
@@ -3560,11 +3571,14 @@ AddInstancesToRotation(CATA_TIER, {
 -- Mists of Pandaria Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_OF_PANDARIA_DUNGEON_EVENT, {
 	tier(MOP_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5 }},{
-		n(DROPS, {
+		n(GROUP_FINDER, {
 			i(187904, {	-- Cloud Serpent Soul (SS!)
 				["timeline"] = { ADDED_9_1_5 },
+				["description"] = "Can drop from the last boss from any mop timewalking dungeon with the nightfae covenant active.",	
 			}),
-			i(143776),	-- Shrouded Timewarped Coin
+			i(143776, {	-- Shrouded Timewarped Coin
+				["description"] = "Drops from the last boss from any mop timewalking dungeon.",
+			}),
 		}),
 		n(QUESTS, {
 			q(45563, {	-- The Shrouded Coin
@@ -4041,12 +4055,17 @@ local BLOOM = -146;
 -- local UBRS = -147;
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORDS_OF_DRAENOR_DUNGEON_EVENT, {
 	tier(WOD_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 }},{
-		n(DROPS, {
+		n(GROUP_FINDER, {
 			i(187905, {	-- Boar Soul (SS!)
 				["timeline"] = { ADDED_9_1_5 },
+				["description"] = "Can drop from the last boss from any wod timewalking dungeon with the nightfae covenant active.",	
 			}),
-			i(167921),	-- Shimmering Timewarped Crystal (A)
-			i(167922),	-- Shimmering Timewarped Crystal (H)
+			i(167921, {	-- Shimmering Timewarped Crystal (A)
+				["description"] = "Drops from the last boss from any wod timewalking dungeon.",
+			}),
+			i(167922, {	-- Shimmering Timewarped Crystal (H)
+				["description"] = "Drops from the last boss from any wod timewalking dungeon.",
+			}),
 		}),
 		n(QUESTS, {
 			q(55498, {	-- The Shimmering Crystal (A)
@@ -4901,9 +4920,56 @@ AddInstancesToRotation(WOD_TIER, {
 -- Legion Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_DUNGEON_EVENT, {
 	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 }},{
-		n(DROPS, {
-			i(187906),	-- Owl Serpent Soul (SS!)
-			i(187611),	-- Whispering Felflame Crystal
+		n(GROUP_FINDER, {
+			i(210063, {	-- Invader's Satchel of Helpful Goods // Legion TW Daily Reward
+				["description"] = "Rewarded for completing any legion timewalking dungeon.\nAvailable once per day.",		
+				["timeline"] = { ADDED_10_1_7 },
+				["g"] = {
+					i(113788),	-- Blossoming Belt*
+					i(113764),	-- Blossoming Cap*
+					i(113766),	-- Blossoming Gloves*
+					i(113767),	-- Blossoming Mantle*
+					i(113765),	-- Blossoming Robe*
+					i(113787),	-- Blossoming Slippers*
+					i(113772),	-- Firecracker Belt*		— 12/27/21
+					i(113770),	-- Firecracker Boots*		— 12/27/21
+					i(113731),	-- Firecracker Cap*			— 12/27/21
+					un(REMOVED_FROM_GAME, i(113773)),	-- Firecracker Girdle
+					i(113746),	-- Firecracker Gloves*		— 12/27/21
+					un(REMOVED_FROM_GAME, i(113733)),	-- Firecracker Helm
+					i(113752),	-- Firecracker Mantle*		— 12/27/21
+					un(REMOVED_FROM_GAME, i(113771)),	-- Firecracker Slippers
+					i(113740),	-- Firecracker Tunic*		— 12/27/21
+					un(REMOVED_FROM_GAME, i(113730)),	-- Venomtail Helm
+					i(113753),	-- Venomtail Shoulderguards*— 01/14/22
+					i(113741),	-- Venomtail Chestguard*	— 01/14/22
+					i(113747),	-- Venomtail Gauntlets*		— 01/14/22
+					i(113779),	-- Venomtail Girdle			— 01/14/22
+					un(REMOVED_FROM_GAME, i(113778)),	-- Venomtail Belt
+					i(113777),	-- Venomtail Boots			— 01/14/22
+					un(REMOVED_FROM_GAME, i(113776)),	-- Venomtail Treads
+					i(113732),	-- Venomtail Visor			— 01/14/22
+					i(113738),	-- Kyparite Chestguard
+					un(REMOVED_FROM_GAME, i(113784)),	-- Kyparite Belt
+					un(REMOVED_FROM_GAME, i(113782)),	-- Kyparite Boots
+					i(113785),	-- Kyparite Girdle*			— confirmed by Reaperman on discord on April 20, 2020 (blaze it)
+					i(113744),	-- Kyparite Gauntlets		- confirmed by Archvile June 02 2020
+					i(113729),	-- Kyparite Headguard
+					un(REMOVED_FROM_GAME, i(113728)),	-- Kyparite Helm
+					i(113783),	-- Kyparite Stompers*
+					i(113750),	-- Kyparite Shoulderguards*
+					i(113735),	-- Drifting Cloud Necklace*	— 01/14/22
+					i(113755),	-- Ring of Flowing Water*	— 01/14/22
+					i(113734),	-- Tranquil Breeze Pendant of the Peerless	— 01/14/22
+					i(113756),	-- Loop of Inner Clarity*	— 01/14/22
+				},
+			}),
+			i(187906, {	-- Owl Serpent Soul (SS!)
+				["description"] = "Can drop from the last boss from any legion timewalking dungeon with the nightfae covenant active.",	
+			}),
+			i(187611, {	-- Whispering Felflame Crystal
+				["description"] = "Drops from the last boss from any legion timewalking dungeon.",
+			}),
 		}),
 		n(QUESTS, {
 			q(64710, {	-- Whispering Felflame Crystal
