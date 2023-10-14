@@ -222,6 +222,7 @@ iq(139313, nil, WARLOCK);			-- Grimoire of the Terrorguard
 ------------------
 iq(210645, 78479, DRUID);	-- Feather of Friends
 iq(210754, 78527, DRUID);	-- Feather of the Blazing Somnowl
+iq(211280, 78525, DRUID);	-- Feather of the Smoke Red Moon
 iq(210735, 78523, DRUID);	-- Mark of the Auric Dreamstag
 iq(210683, 78513, DRUID);	-- Mark of the Dreamtalon Matriarch
 iq(210669, 78507, DRUID);	-- Mark of the Evergreen Dreamsaber

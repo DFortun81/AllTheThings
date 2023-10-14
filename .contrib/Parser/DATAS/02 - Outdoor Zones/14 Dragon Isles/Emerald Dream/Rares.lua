@@ -21,7 +21,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(208349),	-- Burning Leather Cuffs
 					i(208323),	-- Nature's Firebathed Robes
 					i(208326),	-- Vest of the Flametide
-					i(210129),	-- Wand of Brisk Dusks
 				},
 			}),
 			n(209909, {	-- Crabtankerous
@@ -44,6 +43,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["description"] = "Finish bonus objective in marked area to make him spawn.",
 				["questID"] = 78015,	-- bonus objective qID
 				["coord"] = { 30.0, 20.7, EMERALD_DREAM },
+				["g"] = {
+					i(208328),	-- Fystia's Deft Hands
+				},
 			}),
 			n(209913, {	-- Fruitface
 				["questID"] = 77846,
@@ -61,9 +63,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["description"] = "Finish bonus objective in marked area to make him spawn.",
 				["questID"] = 77982, -- bonus objective qID
 				["coord"] = { 53.8, 40.7, EMERALD_DREAM },
-				["g"] = {
-					i(210105),	-- Autumn Druid Belt / ?
-				},
 			}),
 			n(210075, {	-- Henri Snufftail
 				["questID"] = 77944,
@@ -77,8 +76,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 58.7, 51.2, EMERALD_DREAM },
 				["g"] = {
 					i(208338),	-- Furious Flame's Shoulders
-					i(210106),	-- Maple Tender Wristbands
-					i(210095),	-- Maple Tender Leggings
+					i(208325),	-- Ignit's Fiery Heart
 					i(210237),	-- Nipping Night's Necklace
 				},
 			}),
@@ -93,10 +91,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 78211,
 				["coord"] = { 40.5, 49.6, EMERALD_DREAM },
 				["g"] = {
-					i(210087),	-- Autumn Druid Grips / ?
 					i(210650),	-- Mark of the Keen-Eyed Dreamsaber (CI!)
 					i(210491),	-- Technique: Winding Slitherdrake: Hairy Chin (RECIPE!)
-					i(210129),	-- Wand of Brisk Dusks / generic drop?
 				},
 			}),
 			n(210051, {	-- Matriarch Keevah
@@ -125,7 +121,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 				["g"] = {
 					i(208329),	-- Warm Grasp of the Dream
-					i(210093),	-- Autumn Druid Hood / ?
 				},
 			}),
 			n(210070, {	-- Mosa Umbramane
@@ -179,9 +174,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					{ 60.0, 63.3, EMERALD_DREAM },
 					{ 59.0, 71.9, EMERALD_DREAM },
 					{ 57.1, 52.5, EMERALD_DREAM },
-				},
-				["g"] = {
-					i(210105),	-- Autumn Druid Belt
 				},
 			}),
 			n(209902, {	-- Talthonel Ashwhisper

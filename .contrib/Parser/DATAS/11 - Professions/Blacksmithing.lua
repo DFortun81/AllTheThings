@@ -991,12 +991,12 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 					i(201006),	-- Draconic Flux
 				},
 			}),
-			o(411180,	-- Deathstalker Chasis
+			o(411180,	-- Deathstalker Chassis
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
 				["coord"] = { 36.34, 46.79, EMERALD_DREAM },
 				["questID"] = 78418,
 				["g"] = {
-					i(210465),	-- Deathstalker Chasis
+					i(210465),	-- Deathstalker Chassis
 				},
 			})),
 			o(380709, {	-- Falconer Gauntlet Drawings

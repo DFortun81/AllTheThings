@@ -1197,13 +1197,13 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							}),
 						}),
 						filter(REAGENTS, {
-							i(204186, {	-- Greater Trophy of Conquest
+							i(204186, {	-- Greater Obsidian Trophy of Conquest
 								["cost"] = { { "c", CONQUEST, 875 } },
 							}),
-							i(204188, {	-- Lesser Trophy of Conquest
+							i(204188, {	-- Lesser Obsidian Trophy of Conquest
 								["cost"] = { { "c", CONQUEST, 525 } },
 							}),
-							i(204187, {	-- Trophy of Conquest
+							i(204187, {	-- Obsidian Trophy of Conquest
 								["cost"] = { { "c", CONQUEST, 700 } },
 							}),
 						}),

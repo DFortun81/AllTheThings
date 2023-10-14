@@ -27,6 +27,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									--["isWeekly"] = true,
 								}),
 								i(202172),	-- Overflowing Satchel of Coins
+								i(204717),	-- Splintered Spark of Shadowflame
 							},
 						}),
 					},

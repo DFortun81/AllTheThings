@@ -5,12 +5,12 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 	filter(REAGENTS, {
 		i(190450),	-- Awakened Ire
 		i(190451),	-- Rousing Ire
-		i(204190, {["timeline"] = { ADDED_10_1_0 }}),	-- Crest of Honor
-		i(204189, {["timeline"] = { ADDED_10_1_0 }}),	-- Greater Crest of Honor
-		i(204191, {["timeline"] = { ADDED_10_1_0 }}),	-- Lesser Crest of Honor
-		i(204187, {["timeline"] = { ADDED_10_1_0 }}),	-- Trophy of Conquest
-		i(204186, {["timeline"] = { ADDED_10_1_0 }}),	-- Greater Trophy of Conquest
-		i(204188, {["timeline"] = { ADDED_10_1_0 }}),	-- Lesser Trophy of Conquest
+		i(204190, {["timeline"] = { ADDED_10_1_0 }}),	-- Obsidian Crest of Honor
+		i(204189, {["timeline"] = { ADDED_10_1_0 }}),	-- Greater Obsidian Crest of Honor
+		i(204191, {["timeline"] = { ADDED_10_1_0 }}),	-- Lesser Obsidian Crest of Honor
+		i(204187, {["timeline"] = { ADDED_10_1_0 }}),	-- Obsidian Trophy of Conquest
+		i(204186, {["timeline"] = { ADDED_10_1_0 }}),	-- Greater Obsidian Trophy of Conquest
+		i(204188, {["timeline"] = { ADDED_10_1_0 }}),	-- Lesser Obsidian Trophy of Conquest
 	}),
 	filter(RECIPES, {
 		i(201257),	-- Bloodstained Pattern: Infurious Hide (RECIPE!)

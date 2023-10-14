@@ -25,8 +25,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(75622, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Calling All Competitors!
 					["provider"] = { "i", 205187 },	-- Artisan's Consortium Flier
 					["g"] = {
-						i(204186),	-- Greater Trophy of Conquest
-						i(204187),	-- Trophy of Conquest
+						i(204186),	-- Greater Obsidian Trophy of Conquest
+						i(204187),	-- Obsidian Trophy of Conquest
 					},
 				})),
 			}),
@@ -103,6 +103,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						}),
 						i(206200, {	-- Obsidian Equipment Chest
 							["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 },
+							["cost"] = {{ "c", CONQUEST, 375 }},
+						}),
+						i(210572, {	-- Verdant Equipment Chest
+							["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
 							["cost"] = {{ "c", CONQUEST, 375 }},
 						}),
 					},

@@ -41,6 +41,13 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					["lvl"] = 120,
 				}),
 			}),
+			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 } }, {
+				i(211402),	-- Coif of the Court Spider
+				i(211405),	-- Loa Betrayer's Vestments
+				i(211401),	-- Secret Spinner's Miter
+				i(211404),	-- Spymaster's Wrap
+				i(211403),	-- Soulspun Casque
+			})),
 			d(NORMAL_DUNGEON, {
 				e(2082, {	-- Priestess Alun'za
 					["crs"] = { 122967 },	-- Priestess Alun'za
@@ -182,7 +189,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 							}),
 						}),
 					}),
-					
+
 					e(2082, {	-- Priestess Alun'za
 						["crs"] = { 122967 },	-- Priestess Alun'za
 						["g"] = {

@@ -9,7 +9,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_2_0 }
 			1512,	-- Dais of Eternity
 			1513,	-- Halls of the Chosen
 			1514,	-- Darkest Depths
-			-- 1515,
 			1516,	-- The Traverse
 			1517,	-- The Hatchery
 			1518,	-- The Queen's Court

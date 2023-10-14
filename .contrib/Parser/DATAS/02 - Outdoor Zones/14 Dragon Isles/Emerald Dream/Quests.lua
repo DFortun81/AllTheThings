@@ -154,7 +154,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["g"] = {
 						i(209900),	-- Chartreuse Champion's Shoulderplates
 						i(209899),	-- Fearless Faerie's Shoulderpads
-						i(209902),	-- Spirited Stag's Eqaulets
+						i(209902),	-- Spirited Stag's Epaulets
 						i(209901),	-- Summer Soother's Shoulders
 					},
 				}),

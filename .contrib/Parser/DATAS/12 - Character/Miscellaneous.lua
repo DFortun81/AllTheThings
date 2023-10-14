@@ -9,6 +9,9 @@ root(ROOTS.Character, filter(MISC, {
 		}),
 	}),
 	cl(DRUID, {
+		i(211280, {	-- Feather of the Smoke Red Moon (CI!)
+			["timeline"] = { ADDED_10_2_0 },
+		}),
 		i(89868, {	-- Mark of the Cheetah (CI!)
 			["timeline"] = { ADDED_9_0_1 },
 		}),
@@ -26,6 +29,9 @@ root(ROOTS.Character, filter(MISC, {
 		}),
 		i(162029, {	-- Mark of the Humble Flyer (CI!)
 			["timeline"] = { ADDED_9_0_1 },
+		}),
+		i(210650, {	-- Mark of the Keen-Eyed Dreamsaber (CI!)
+			["timeline"] = { ADDED_10_2_0 },
 		}),
 		i(187934, {	-- Mark of the Midnight Runestag (CI!)
 			["timeline"] = { ADDED_9_1_5 },

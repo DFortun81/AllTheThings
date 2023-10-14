@@ -8,18 +8,18 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 		["isRaid"] = true,
 		["coord"] = { 54.9, 62.3, ANTORAN_WASTES },
 		["maps"] = {
-			909,
-			910,
-			911,
-			912,
-			913,
-			914,
-			915,
-			916,
-			917,
-			918,
-			919,
-			920,
+			909,	-- Antorus, the Burning Throne
+			910,	-- Gaze of the Legion
+			911,	-- Halls of the Boundless Reach
+			912,	-- Elunaria
+			913,	-- Elarian Sanctuary
+			914,	-- The Exhaust
+			915,	-- The Burning Throne
+			916,	-- Chamber of Anguish
+			917,	-- The World Soul
+			918,	-- Seat of the Pantheon
+			919,	-- Upper Deck
+			920,	-- Lower Deck
 		},
 		["lvl"] = { 45 },
 		["g"] = {
@@ -151,7 +151,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 			}),
 			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = { 111246 },	-- Archmage Timear
-				["coord"] = { 63.7, 55.0, LEGION_DALARAN },				
+				["coord"] = { 63.7, 55.0, LEGION_DALARAN },
 			}),
 			d(LFR_RAID, {
 				n(ZONE_DROPS, {

@@ -71,6 +71,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210392),	-- Winter Forager's Treads
 					i(210407),	-- Winter Forager's Cape (cloak) / will leave it here until non-mail confirm drop
 				}),
+				filter(NECK_F, {
+					i(210379),	-- Cold Crisp Collar
+				}),
 				filter(PLATE, {
 					i(210348),	-- Arctic Warden's Sabatons
 					i(210350),	-- Arctic Warden's Chestplate
@@ -81,6 +84,30 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210373),	-- Arctic Warden's Bracers
 					i(210390),	-- Arctic Warden's Warhelm
 					i(210408),	-- Arctic Warden's Cloak (cloak) / will leave it here until non-plate confirm drop
+				}),
+				filter(TRINKET_F, {
+					i(210376),	-- Beautiful Blizzard Binding
+					i(210377),	-- Snipping Sleet Circle
+				}),
+				n(WEAPONS, {
+					i(210394),	-- Cold Conservator's Cane
+					i(210384),	-- Cold Conservator's Implement
+					i(210399),	-- Cold Conservator's Mallet
+					i(210402),	-- Cold Conservator's Wand
+					i(210389),	-- Crystalline Tender's Dirk
+					i(210386),	-- Crystalline Tender's Glaive
+					i(210405),	-- Crystalline Tender's Kris
+					i(210395),	-- Crystalline Tender's Mace
+					i(210385),	-- Frigid Forager's Branch
+					i(210406),	-- Frigid Forager's Claymore
+					i(210397),	-- Frigid Forager's Chopper
+					i(210404),	-- Frigid Forager's Curve
+					i(210396),	-- Frigid Forager's Longbow
+					i(210398),	-- Frigid Forager's Handaxe
+					i(210387),	-- Winter Warden's Blade
+					i(210383),	-- Winter Warden's Bulwark
+					i(210400),	-- Winter Warden's Gavel
+					i(210401),	-- Winter Warden's Greatsword
 				}),
 				--Seeds (moved into Emerald Bounty)
 				--- DM

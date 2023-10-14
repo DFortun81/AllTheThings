@@ -18,19 +18,35 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 		}),
 		i(204075, {	-- Whelping's Shadowflame Crest Fragment
 			["description"] = "Drops in M+ 0-5",
-			["timeline"] = { ADDED_10_1_0 },
+			["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 		}),
 		i(204076, {	-- Drake's Shadowflame Crest Fragment
 			["description"] = "Drops in M+ 6-10",
-			["timeline"] = { ADDED_10_1_0 },
+			["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 		}),
 		i(204077, {	-- Wyrm's Shadowflame Crest Fragment
 			["description"] = "Drops in M+ 11-15",
-			["timeline"] = { ADDED_10_1_0 },
+			["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 		}),
 		i(204078, {	-- Aspect's Shadowflame Crest Fragment
 			["description"] = "Drops in M+ 16+",
-			["timeline"] = { ADDED_10_1_0 },
+			["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
+		}),
+		currency(WHELPLINGS_DREAMING_CREST, {
+			["description"] = "Drops in M+ 0-5",
+			["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
+		}),
+		currency(DRAKES_DREAMING_CREST, {
+			["description"] = "Drops in M+ 6-10",
+			["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
+		}),
+		currency(WYRMS_DREAMING_CREST, {
+			["description"] = "Drops in M+ 11-15",
+			["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
+		}),
+		currency(ASPECTS_DREAMING_CREST, {
+			["description"] = "Drops in M+ 16+",
+			["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
 		}),
 		header(HEADERS.Achievement, SEASON_THUNDERING, bubbleDownSelf({
 			["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }

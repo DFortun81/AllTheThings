@@ -20,11 +20,10 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 			1591,	-- Terrace of Desolation
 			1592,	-- The Ritual Chamber
 			1593,	-- Twilight Landing
-			1594,	-- ??
-			1595,	-- Maw of Gor'na
-			1596,	-- Warren of Decay
-			1597,	-- Chamber of Rebirth
-			--	,	-- Locus of Infinite Truth
+			1594,	-- Maw of Gor'ma
+			1595,	-- Warren of Decay
+			1596,	-- Chamber of Rebirth
+			1597,	-- Locus of Infinite Truths
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {

@@ -60,6 +60,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["lvl"] = 110,
 				}),
 			}),
+			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 } }, {
+				i(211470),	-- Ravencrest's Wrath
+			})),
 			d(NORMAL_DUNGEON, {
 				e(1518, {	-- Amalgam of Souls
 					["creatureID"] = 98542,	-- Amalgam of Souls

@@ -337,7 +337,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					iupgrade(204415,3),	-- Mantle of Sunless Kindling
 					iupgrade(204430,3),	-- Sanctum Guard's Forgewalkers
 					iupgrade(204422,3),	-- Sundered Edgelord's Breastplate
-					i(204075),	-- Whelping's Shadowflame Crest Fragment
+					i(204075, {	-- Whelping's Shadowflame Crest Fragment
+						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
+					}),
 				}),
 				header(HEADERS.Achievement, 18163, {	-- Discarded Works
 					e(2522, {	-- Kazzara, the Hellforged
@@ -690,7 +692,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					iupgrade(204415,5),	-- Mantle of Sunless Kindling
 					iupgrade(204430,5),	-- Sanctum Guard's Forgewalkers
 					iupgrade(204422,5),	-- Sundered Edgelord's Breastplate
-					i(204076),	-- Drake's Shadowflame Crest Fragment
+					i(204076, {	-- Drake's Shadowflame Crest Fragment
+						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
+					}),
 				}),
 				e(2522, {	-- Kazzara, the Hellforged
 					["crs"] = { 201261 },	-- Kazzara, the Hellforged
@@ -1002,7 +1006,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					iupgrade(204415,6),	-- Mantle of Sunless Kindling
 					iupgrade(204430,6),	-- Sanctum Guard's Forgewalkers
 					iupgrade(204422,6),	-- Sundered Edgelord's Breastplate
-					i(204077),	-- Wyrm's Shadowflame Crest Fragment
+					i(204077, {	-- Wyrm's Shadowflame Crest Fragment
+						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
+					}),
 				}),
 				e(2522, {	-- Kazzara, the Hellforged
 					["crs"] = { 201261 },	-- Kazzara, the Hellforged
@@ -1275,7 +1281,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					i(204415),	-- Mantle of Sunless Kindling
 					i(204430),	-- Sanctum Guard's Forgewalkers
 					i(204422),	-- Sundered Edgelord's Breastplate
-					i(204078),	-- Aspect's Shadowflame Crest Fragment
+					i(204078, {	-- Aspect's Shadowflame Crest Fragment
+						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
+					}),
 				}),
 				n(ZONE_DROPS, sharedData({	-- First 2 week BoP version drops
 					["timeline"] = { ADDED_10_1_0, "removed 10.1.0.50000" },

@@ -8,6 +8,9 @@ LFR_RAID = 17;
 NORMAL_RAID = 14;
 HEROIC_RAID = 15;
 MYTHIC_RAID = 16;
+ALL_DIFFICULTIES_RAID = {LFR_RAID,NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID};
+NORMAL_PLUS_RAID = {NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID};
+HEROIC_PLUS_RAID = {HEROIC_RAID,MYTHIC_RAID};
 
 -- Helper Tables
 DifficultyDB = {
@@ -37,3 +40,6 @@ function MultiDifficultyID(ids)
 	end
 	return hash;
 end
+
+ANY_DIFFICULTY_ID_RAID = MultiDifficultyID(AllDifficulties);
+HEROIC_PLUS_ID_RAID = MultiDifficultyID(HeroicPlus);

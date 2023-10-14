@@ -16,11 +16,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 					["g"] = {
 						i(210872, {	-- Satchel of Dreams
-						--Supebloom share
-							i(210379),	-- Cold Crisp Collar
-							i(210395),	-- Crystalline Tender's Mace
-							i(210397),	-- Frigid Forager's Chopper
-							i(210377),	-- Snipping Sleet Circle
+						-- Superbloom?
+
 						}),
 					},
 				}),

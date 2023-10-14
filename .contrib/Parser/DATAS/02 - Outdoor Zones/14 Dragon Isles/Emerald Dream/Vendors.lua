@@ -172,7 +172,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(209994, {	-- Overgrown Freyan Girdle
 						["cost"] = { { "c", 2651, 100 } },
 					}),
-					i(209995, {	-- Overgrown Freyan Vambracers
+					i(209995, {	-- Overgrown Freyan Vambraces
 						["cost"] = { { "c", 2651, 50 } },
 					}),
 					i(210029, {	-- Overgrown Freyan Hatchet
@@ -285,14 +285,43 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			n(211328, {	-- Vaskarn <Dreaming Crest Exchange>
 				["coord"] = { 49.8, 62.9, EMERALD_DREAM },
 				["g"] = {
+					-- Trade Up
+					i(210756, {	-- Gleaming Satchel of Drake's Dreaming Crests
+						["cost"] = {{ "c", ASPECTS_DREAMING_CREST, 90 }},
+						["g"] = {
+							currency(DRAKES_DREAMING_CREST),
+						},
+					}),
+					i(210762, {	-- Shimmering Clutch of Wyrm's Dreaming Crests
+						["cost"] = {{ "c", ASPECTS_DREAMING_CREST, 50 }},
+						["g"] = {
+							currency(WYRMS_DREAMING_CREST),
+						},
+					}),
+					i(210768, {	-- Viridescent Bouquet of Aspect's Dreaming Crests
+						["cost"] = {{ "c", ASPECTS_DREAMING_CREST, 30 }},
+						["g"] = {
+							currency(ASPECTS_DREAMING_CREST),
+						},
+					}),
+					-- Trade Down
 					i(210923, {	-- Clutch of Wyrm's Dreaming Crests
-						["cost"] = {{ "c", 2709, 15 }},	-- 15x Aspect's Dreaming Crest
+						["cost"] = {{ "c", ASPECTS_DREAMING_CREST, 15 }},
+						["g"] = {
+							currency(WYRMS_DREAMING_CREST),
+						},
 					}),
 					i(210917, {	-- Pouch of Whelpling's Dreaming Crests
-						["cost"] = {{ "c", 2707, 15 }},	-- 15x Drake's Dreaming Crest
+						["cost"] = {{ "c", DRAKES_DREAMING_CREST, 15 }},
+						["g"] = {
+							currency(WHELPLINGS_DREAMING_CREST),
+						},
 					}),
 					i(210770, {	-- Satchel of Drake's Dreaming Crests
-						["cost"] = {{ "c", 2708, 15 }},	-- 15x Wyrm's Dreaming Crest
+						["cost"] = {{ "c", WYRMS_DREAMING_CREST, 15 }},
+						["g"] = {
+							currency(DRAKES_DREAMING_CREST),
+						},
 					}),
 				},
 			}),

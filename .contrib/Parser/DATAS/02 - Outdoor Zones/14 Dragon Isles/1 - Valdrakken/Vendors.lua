@@ -10,6 +10,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(198587, {	-- Andoris <Enchanting Supplies>
 				["coord"] = { 30.8, 60.8, VALDRAKKEN },
 				["g"] = {
+					i(208393, {	-- Nascent Aspect's Dreaming Crest
+						["cost"] = {{"c", ASPECTS_DREAMING_CREST, 45}},
+						["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
+					}),
+					i(208395, {	-- Nascent Whelpling's Dreaming Crest
+						["cost"] = {{"c", WHELPLINGS_DREAMING_CREST, 45}},
+						["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
+					}),
+					i(208394, {	-- Nascent Wyrm's Dreaming Crest
+						["cost"] = {{"c", WYRMS_DREAMING_CREST, 45}},
+						["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
+					}),
 					i(201584),	-- Serevite Rod
 				},
 			}),

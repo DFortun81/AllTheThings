@@ -35,8 +35,14 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 	i(201832),	-- Smudged Lens
 	-- Weekly Quest
 	i(190453),	-- Spark of Ingenuity
-	i(204440, {["timeline"] = {ADDED_10_1_0}}),	-- Spark of Shadowflame
-	i(206959, {["timeline"] = {ADDED_10_2_0}}),	-- Spark of Dreams
+	i(204440, {	-- Spark of Shadowflame
+		["cost"] = {{"i", 204717, 2}},	-- Splintered Spark of Shadowflame
+		["timeline"] = { ADDED_10_1_0 },
+	}),
+	i(206959, {	-- Spark of Dreams
+		["cost"] = {{"i", 208396, 2}},	-- Splintered Spark of Dreams
+		["timeline"] = {ADDED_10_2_0},
+	}),
 	-- Crafting
 	i(191529),	-- Illustrious Insight
 	i(191526),	-- Lesser Illustrious Insight
