@@ -6712,13 +6712,13 @@ app.CreateCache = function(idField)
 			end
 			return _t, id;
 		end
+		app.PrintDebug("CACHE_MISS",idField,t.__type,t.hash)
+		app.PrintTable(t)
 	end;
 	cache.GetCachedField = function(t, field, default_function)
 		--[[ -- Debug Prints
 		local _t, id = cache.GetCached(t);
-		if _t[field] then
-			print("GetCachedField",id,field,_t[field]);
-		end
+		app.PrintDebug("GetCachedField",t.hash,id,field,_t[field]);
 		--]]
 		_t = cache.GetCached(t);
 		if _t then
@@ -6744,12 +6744,7 @@ app.CreateCache = function(idField)
 		end
 		--]]
 		_t = cache.GetCached(t);
-		if _t then _t[field] = value;
-		else
-			print("Failed to get cache table using",idField)
-			print(t.__type,field,value)
-			app.PrintTable(t)
-		end
+		if _t then _t[field] = value; end
 	end;
 	return cache;
 end
@@ -10319,7 +10314,7 @@ local function RawSetItemInfoFromLink(t, link)
 		local _t, id = cache.GetCached(t);
 		print("rawset item info",id,link,name,quality,b)
 		--]]
-		-- app.PrintDebug("RawSetLink",link)
+		-- app.PrintDebug("RawSetLink:=",link)
 		t = cache.GetCached(t);
 		t.retries = nil;
 		t.name = name;
@@ -10334,14 +10329,16 @@ local function RawSetItemInfoFromLink(t, link)
 		end
 		return link;
 	else
+		-- app.PrintDebug("RawSetLink:?",link)
 		HandleItemRetries(t);
 	end
 end
 local function default_link(t)
+	local itemLink = t.rawlink
 	-- item already has a pre-determined itemLink so use that
-	if t.rawlink then return RawSetItemInfoFromLink(t, t.rawlink); end
+	if itemLink then return RawSetItemInfoFromLink(t, itemLink); end
 	-- need to 'create' a valid accurate link for this item
-	local itemLink = t.itemID;
+	itemLink = t.itemID;
 	if itemLink then
 		local modID, bonusID;
 		-- sometimes the raw itemID is actually a modItemID, so try splitting that here as a final adjustment
@@ -10365,7 +10362,7 @@ local function default_link(t)
 			-- bonusID 3524 seems to imply "use ModID to determine SourceID" since without it, everything with ModID resolves as the base SourceID from links
 			itemLink = sformat("item:%d:::::::::::%d:1:3524:", itemLink, modID);
 		else
-			itemLink = sformat("item:%d:::::::::::::", itemLink);
+			itemLink = sformat("item:%d", itemLink);
 		end
 		-- save this link so it doesn't need to be built again
 		t.rawlink = itemLink;
@@ -10463,8 +10460,9 @@ local itemFields = {
 		end
 	end,
 	["modItemID"] = function(t)
+		-- if app.IsReady then app.PrintDebug("item.modItemID?",t.key,t[t.key]) end
 		local modItemID = GetGroupItemIDWithModID(t) or t.itemID;
-		-- app.PrintDebug("item.modItemID",modItemID,t.key,t[t.key])
+		-- if app.IsReady then app.PrintDebug("item.modItemID=",modItemID) end
 		t.modItemID = modItemID;
 		return modItemID;
 	end,
@@ -10643,19 +10641,22 @@ local fields = RawCloneData(itemFields, {
 		t.__autolink = true;
 		-- app.FunctionRunner.Run(app.GenerateGroupLinkUsingSourceID, t);
 		app.GenerateGroupLinkUsingSourceID(t);
+		-- if a value was set within this logic, return it here. weird logic sequencing was previously able to generate the itemID while
+		-- caching the modItemID, leading to a 0 itemID return, and caching the item information into a 0-itemID cache record
+		return rawget(t, "itemID")
 	end,
 });
-app.BaseItemSource = app.BaseObjectFields(fields, "BaseItemSource");
+local BaseItemSource = app.BaseObjectFields(fields, "BaseItemSource");
 
 app.CreateItemSource = function(sourceID, itemID, t)
-	t = setmetatable(constructor(sourceID, t, "s"), app.BaseItemSource);
+	t = setmetatable(constructor(sourceID, t, "s"), BaseItemSource);
 	t.itemID = itemID;
 	return t;
 end
 app.CreateItem = function(id, t)
 	if t then
 		if t.s then
-			return setmetatable(constructor(id, t, "itemID"), app.BaseItemSource);
+			return setmetatable(constructor(id, t, "itemID"), BaseItemSource);
 		elseif t.factionID then
 			if t.questID then
 				return setmetatable(constructor(id, t, "itemID"), app.BaseItemWithQuestIDAndFactionID);
@@ -11369,7 +11370,7 @@ app.ImportRawLink = function(group, rawlink, ignoreSource)
 		group._up = nil;
 		local _, linkItemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1 = strsplit(":", rawlink);
 		if linkItemID then
-			-- app.PrintDebug("ImportRawLink",rawlink,linkItemID,modID,bonusCount,bonusID1);
+			-- app.PrintDebug("IRL+",rawlink,linkItemID,modID,bonusCount,bonusID1);
 			-- set raw fields in the group based on the link
 			group.itemID = tonumber(linkItemID);
 			group.modID = modID and tonumber(modID) or nil;
@@ -11385,10 +11386,11 @@ app.ImportRawLink = function(group, rawlink, ignoreSource)
 			if not ignoreSource then
 				-- does this link also have a sourceID?
 				local s = GetSourceID(rawlink);
-				-- app.PrintDebug("IRL:GS",rawlink,s)
+				-- app.PrintDebug("IRL:s",rawlink,s)
 				if s then group.s = s; end
 				-- if app.Debugging then app.PrintTable(group) end
 			end
+			-- app.PrintDebug("IRL=",rawlink,group.itemID,group.modID,group.bonusID,"=>",group.modItemID);
 		end
 	end
 end
@@ -11399,9 +11401,9 @@ app.GenerateGroupLinkUsingSourceID = function(group)
 
 	local link = app.DetermineItemLink(s);
 	if not link then return; end
+	-- app.PrintDebug("GGLUS",s,link)
 
 	app.ImportRawLink(group, link, true);
-	-- app.PrintDebug("GGLUS",link,s)
 
 	local sourceGroup = app.SearchForObject("s", s, "key");
 	if not sourceGroup then
@@ -11412,8 +11414,8 @@ end
 app.SaveHarvestSource = function(data)
 	local s, itemID = data.s, data.modItemID;
 	if s and itemID then
+		-- app.PrintDebug("Harvest:s",itemID,"=>",s)
 		AllTheThingsHarvestItems[itemID] = s;
-		return;
 	end
 end
 -- Returns the depth at which a given Item matches the provided modItemID
