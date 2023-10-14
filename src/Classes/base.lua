@@ -161,6 +161,10 @@ local DefaultFields = {
     ["costTotal"] = returnZero,
 	["progress"] = returnZero,
     ["total"] = returnZero,
+	-- we like to use different field names in different places
+	["sourceID"] = function(t)
+		return t.s
+	end,
 };
 
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
