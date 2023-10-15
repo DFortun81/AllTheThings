@@ -3045,7 +3045,7 @@ local ResolveFunctions = {
 						app.print("'achievement_criteria' Quest type missing Quest Source group!",achievementID,assetID)
 					end
 				-- Items
-				elseif criteriaType == 36 or criteriaType == 42 then
+				elseif criteriaType == 36 or criteriaType == 41 or criteriaType == 42 then
 					criteriaObject.providers = {{ "i", assetID }};
 				elseif criteriaType == 110	-- Casting spells on specific target
 					or criteriaType == 29 or criteriaType == 69	-- Buff Gained
