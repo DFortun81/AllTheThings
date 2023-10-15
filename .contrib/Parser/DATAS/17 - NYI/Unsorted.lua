@@ -745,6 +745,7 @@ root(ROOTS.Unsorted, {
 				i(206347),	-- Mannequin Charm (TOY!)
 				i(208798),	-- Recorded Memories of Tyr's Guard (TOY!) [Questline Tyr?]
 				i(210656),	-- Winter Veil Socks (TOY!) [Winter Veil?]
+				i(208087),	--
 			}),
 			n(PROFESSIONS, {
 				i(207461),	-- Schematic: Portable Party Platter (RECIPE!)

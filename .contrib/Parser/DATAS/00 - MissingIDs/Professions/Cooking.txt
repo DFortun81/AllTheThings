@@ -155,8 +155,6 @@ r(338113),	-- Thick Spider Meat
 r(338115),	-- Ember Sauce
 r(338116),	-- Skewered Meats
 r(338117),	-- Seared Cutlets
-10.2.0.51239
-r(416001),	-- Slumbering Peacebloom Tea \\ Slumbering Peace Tea
 
 
 

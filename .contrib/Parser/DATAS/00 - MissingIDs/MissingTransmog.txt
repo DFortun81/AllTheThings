@@ -4062,7 +4062,7 @@ s(160086)/i(10584),	-- mgale Fists \\ Stormgale Fists
 s(160087)/i(10588),	-- in Rocket Helmet \\ Goblin Rocket Helmet
 s(160088)/i(10591),	-- Monster - Mace, Stormhammer
 s(160089)/i(10611),	-- Monster - Axe, Horde Badass 01
-s(160090)/i(10612),	-- Monster - Axe, Horde Badass 02 \\ Monster - Axe, Horde Badass 02
+s(160090)/i(10612),	-- Monster - Axe, Horde Badass 02
 s(160091)/i(10613),	-- Monster - Sword, Katana
 s(160092)/i(10614),	-- Monster - Sword, Horde Sword Black
 s(160093)/i(10615),	-- Monster - Sword, Horde Sword Red
@@ -5886,7 +5886,7 @@ s(161910)/i(14936),	-- ic Legplates \\ Heroic Legplates
 s(161911)/i(14937),	-- ic Pauldrons \\ Heroic Pauldrons
 s(161912)/i(14938),	-- ic Bracers \\ Heroic Bracers
 s(161913)/i(14939),	-- ringer's Chestguard \\ Warbringer's Chestguard
-s(161914)/i(14940),	-- ringer's Sabatons \\ Warbringer's Sabatons \\ Warbringer's Sabatons
+s(161914)/i(14940),	-- ringer's Sabatons \\ Warbringer's Sabatons
 s(161915)/i(14941),	-- ringer's Armsplints \\ Warbringer's Armsplints
 s(161916)/i(14942),	-- ringer's Gauntlets \\ Warbringer's Gauntlets
 s(161917)/i(14943),	-- ringer's Belt \\ Warbringer's Belt
@@ -7656,7 +7656,7 @@ s(163680)/i(18758),	-- ter's Blade \\ Specter's Blade
 s(163681)/i(18759),	-- cious Axe \\ Malicious Axe
 s(163682)/i(18761),	-- vion's Touch \\ Oblivion's Touch
 s(163683)/i(18762),	-- d of the Green Flame \\ Shard of the Green Flame
-s(163684)/i(18763),	-- TEST GUN Alliance20 \\ TEST GUN Alliance20
+s(163684)/i(18763),	-- TEST GUN Alliance20
 s(163685)/i(18764),	-- TEST GUN Raid
 s(163686)/i(18765),	-- TEST GUN Horde50
 s(163687)/i(18800),	-- TEST 1H Amberseal Keeper
@@ -13367,7 +13367,7 @@ s(123810)/i(10584),	-- mgale Fists \\ Stormgale Fists
 s(123814)/i(10588),	-- in Rocket Helmet \\ Goblin Rocket Helmet
 s(123817)/i(10591),	-- Monster - Mace, Stormhammer
 s(123834)/i(10611),	-- Monster - Axe, Horde Badass 01
-s(123835)/i(10612),	-- Monster - Axe, Horde Badass 02 \\ Monster - Axe, Horde Badass 02
+s(123835)/i(10612),	-- Monster - Axe, Horde Badass 02
 s(123836)/i(10613),	-- Monster - Sword, Katana
 s(123837)/i(10614),	-- Monster - Sword, Horde Sword Black
 s(123838)/i(10615),	-- Monster - Sword, Horde Sword Red
@@ -15127,7 +15127,7 @@ s(126912)/i(14936),	-- ic Legplates \\ Heroic Legplates
 s(126913)/i(14937),	-- ic Pauldrons \\ Heroic Pauldrons
 s(126914)/i(14938),	-- ic Bracers \\ Heroic Bracers
 s(126915)/i(14939),	-- ringer's Chestguard \\ Warbringer's Chestguard
-s(126916)/i(14940),	-- ringer's Sabatons \\ Warbringer's Sabatons \\ Warbringer's Sabatons
+s(126916)/i(14940),	-- ringer's Sabatons \\ Warbringer's Sabatons
 s(126917)/i(14941),	-- ringer's Armsplints \\ Warbringer's Armsplints
 s(126918)/i(14942),	-- ringer's Gauntlets \\ Warbringer's Gauntlets
 s(126919)/i(14943),	-- ringer's Belt \\ Warbringer's Belt
@@ -16893,7 +16893,7 @@ s(129662)/i(18758),	-- ter's Blade \\ Specter's Blade
 s(129663)/i(18759),	-- cious Axe \\ Malicious Axe
 s(129665)/i(18761),	-- vion's Touch \\ Oblivion's Touch
 s(129666)/i(18762),	-- d of the Green Flame \\ Shard of the Green Flame
-s(129667)/i(18763),	-- TEST GUN Alliance20 \\ TEST GUN Alliance20
+s(129667)/i(18763),	-- TEST GUN Alliance20
 s(129668)/i(18764),	-- TEST GUN Raid
 s(129669)/i(18765),	-- TEST GUN Horde50
 s(129704)/i(18800),	-- TEST 1H Amberseal Keeper
@@ -27444,12 +27444,12 @@ s(171361)/i(37292),	-- Guardian's Legguards \\ Ley-Guardian's Legguards
 s(171362)/i(37293),	-- of the Watcher \\ Mask of the Watcher
 s(171363)/i(37294),	-- n of Unbridled Magic \\ Crown of Unbridled Magic
 s(171364)/i(37295),	-- Cloth Spell Head4 \\ HF28 Cloth Spell Head4
-s(171365)/i(37296),	-- BT59 Cloth Spell Gloves4 \\ BT59 Cloth Spell Gloves4
+s(171365)/i(37296),	-- BT59 Cloth Spell Gloves4
 s(171366)/i(37308),	-- Monster - Sword2H, Northrend D03
 s(171367)/i(37309),	-- Monster - Special Arrow (Thori'dal)
 s(171368)/i(37310),	-- Monster - Mace, Stormhammer (Vengeful)
 s(171369)/i(37315),	-- BT59 Leather Physical Boots4
-s(171370)/i(37316),	-- Leather Physical Legs4 \\ HF28 Leather Physical Legs4 \\ HF28 Leather Physical Legs4
+s(171370)/i(37316),	-- Leather Physical Legs4 \\ HF28 Leather Physical Legs4
 s(171371)/i(37317),	-- BT56 Leather Healer Boots2
 s(171372)/i(37318),	-- BT55 Leather Physical Gloves4
 s(171373)/i(37319),	-- s of the Windswept Plains \\ Grips of the Windswept Plains
@@ -27540,8 +27540,8 @@ s(171457)/i(37443),	-- ed Magmoth Helm \\ Spiked Magmoth Helm
 s(171458)/i(37444),	-- keeper's Helm \\ Wavekeeper's Helm
 s(171459)/i(37446),	-- Commander's Treads \\ Tank Commander's Treads
 s(171460)/i(37447),	-- forced Mendicant's Cowl \\ Reinforced Mendicant's Cowl
-s(171461)/i(37448),	-- BT47 Mail Physical Legs3 \\ BT47 Mail Physical Legs3
-s(171462)/i(37450),	-- BT48 Mail Healer Chest3 \\ BT48 Mail Healer Chest3
+s(171461)/i(37448),	-- BT47 Mail Physical Legs3
+s(171462)/i(37450),	-- BT48 Mail Healer Chest3
 s(171463)/i(37451),	-- BT49 Mail Physical Belt3
 s(171464)/i(37453),	-- BT59 Mail Physical Belt4
 s(171465)/i(37454),	-- Mail Physical Chest4 \\ HF28 Mail Physical Chest4
@@ -27591,7 +27591,7 @@ s(171508)/i(37519),	-- rplate Headguard \\ Amberplate Headguard
 s(171509)/i(37520),	-- nkeeper Blockade \\ Plainkeeper Blockade
 s(171510)/i(37521),	-- hill Buckler \\ Icechill Buckler
 s(171511)/i(37522),	-- hborn Greaves \\ Earthborn Greaves
-s(171512)/i(37534),	-- BT56 Thrown2 \\ BT56 Thrown2
+s(171512)/i(37534),	-- BT56 Thrown2
 s(171513)/i(37535),	-- e of the Windborn \\ Stave of the Windborn
 s(171514)/i(37536),	-- BT57 Fast Mace2
 s(171515)/i(37537),	-- e of the Spiritcaller \\ Stave of the Spiritcaller
@@ -27838,9 +27838,9 @@ s(171755)/i(37968),	-- of Calcified Tears \\ Robe of Calcified Tears
 s(171756)/i(37969),	-- s Mender Cloak \\ Chaos Mender Cloak
 s(171757)/i(37970),	-- hers of the Dragon Wastes \\ Feathers of the Dragon Wastes
 s(171758)/i(37971),	-- of the Nibbling Plague \\ Sash of the Nibbling Plague
-s(171759)/i(37972),	-- DB49 Cloth Healer Feet2 \\ DB49 Cloth Healer Feet2
+s(171759)/i(37972),	-- DB49 Cloth Healer Feet2
 s(171760)/i(37973),	-- DB51 Cloth Spell Legs3
-s(171761)/i(37974),	-- DB52 Spell Cloak2 \\ DB52 Spell Cloak2
+s(171761)/i(37974),	-- DB52 Spell Cloak2
 s(171762)/i(37975),	-- DB53 Cloth Spell Shoulder3
 s(171763)/i(37977),	-- DB56 Cloth Healer Shoulder2
 s(171764)/i(37978),	-- DB57 Cloth Spell Chest3
@@ -27914,7 +27914,7 @@ s(171831)/i(38054),	-- giver Wristguards \\ Paingiver Wristguards
 s(171832)/i(38055),	-- ehunter Gauntlets \\ Ridgehunter Gauntlets
 s(171833)/i(38056),	-- ehunter Chestguard \\ Ridgehunter Chestguard
 s(171834)/i(38057),	-- nt-Proof Headguard \\ Rodent-Proof Headguard
-s(171835)/i(38058),	-- DB49 Mail Healer Legs2 \\ DB49 Mail Healer Legs2
+s(171835)/i(38058),	-- DB49 Mail Healer Legs2
 s(171836)/i(38060),	-- DB51 Mail Physical Legs3
 s(171837)/i(38061),	-- DB53 Mail Physical Waist3
 s(171838)/i(38062),	-- DB54 Mail Physical Feet3
@@ -27947,7 +27947,7 @@ s(171864)/i(38109),	-- thshimmer Legplates \\ Wraithshimmer Legplates
 s(171865)/i(38110),	-- lates of the Agmar Preserver \\ Legplates of the Agmar Preserver
 s(171866)/i(38111),	-- bane Wristguards \\ Wyrmbane Wristguards
 s(171867)/i(38112),	-- Covered Pauldrons \\ Bark Covered Pauldrons
-s(171868)/i(38113),	-- DB42 Plate Healer Glove2 \\ DB42 Plate Healer Glove2
+s(171868)/i(38113),	-- DB42 Plate Healer Glove2
 s(171869)/i(38114),	-- tplate of the Ruby Champion \\ Chestplate of the Ruby Champion
 s(171870)/i(38115),	-- tons of the Enforcer \\ Sabatons of the Enforcer
 s(171871)/i(38116),	-- ed Magnataur Leggings \\ Plated Magnataur Leggings
@@ -27970,7 +27970,7 @@ s(171887)/i(38132),	-- rest Garden Stave \\ Moonrest Garden Stave
 s(171888)/i(38133),	-- shattered Spire \\ Timeshattered Spire
 s(171889)/i(38134),	-- dtinged Spellblade \\ Bloodtinged Spellblade
 s(171890)/i(38135),	-- of the Fallen Raven Priest \\ Mace of the Fallen Raven Priest
-s(171891)/i(38136),	-- DB40 Spell Staff3 \\ DB40 Spell Staff3
+s(171891)/i(38136),	-- DB40 Spell Staff3
 s(171892)/i(38137),	-- rance of the Spell Warder \\ Endurance of the Spell Warder
 s(171893)/i(38138),	-- Keldonus' Missing Spellshard \\ onus' Missing Spellshard \\ Keldonus's Missing Spellshard
 s(171894)/i(38139),	-- DB50 Healer Mace3
@@ -27989,9 +27989,9 @@ s(171906)/i(38155),	-- tblade of the Ruby Ally \\ Shortblade of the Ruby Ally
 s(171907)/i(38156),	-- ered Magnataur Dualblade \\ Battered Magnataur Dualblade
 s(171908)/i(38157),	-- bow of the Ruby Rider \\ Longbow of the Ruby Rider
 s(171909)/i(38158),	-- DB20 Fast Sword
-s(171910)/i(38159),	-- DB20 Slow Right Fist \\ DB20 Slow Right Fist
+s(171910)/i(38159),	-- DB20 Slow Right Fist
 s(171911)/i(38166),	-- DB20 Gun
-s(171912)/i(38167),	-- DB21 Thrown \\ DB21 Thrown
+s(171912)/i(38167),	-- DB21 Thrown
 s(171913)/i(38168),	-- DB22 Hunter Bow2
 s(171914)/i(38169),	-- Woodland Shank \\ Keen Woodland Shank
 s(171915)/i(38170),	-- ed Coldwind Club \\ Spiked Coldwind Club
@@ -28008,7 +28008,7 @@ s(171925)/i(38181),	-- lade of the Forgotten Footman \\ Warblade of the Forgotte
 s(171926)/i(38182),	-- DB38 2H Sword2
 s(171927)/i(38183),	-- DB40 Fast Sword2
 s(171928)/i(38184),	-- DB40 Fast Dagger3
-s(171929)/i(38185),	-- DB40 Bow3 \\ DB40 Bow3
+s(171929)/i(38185),	-- DB40 Bow3
 s(171930)/i(38187),	-- tive Waraxe \\ Reactive Waraxe
 s(171931)/i(38188),	-- of the Undead Ravager \\ Claw of the Undead Ravager
 s(171932)/i(38189),	-- twister \\ Backtwister
@@ -28021,7 +28021,7 @@ s(171938)/i(38195),	-- ster's Bane \\ Magister's Bane
 s(171939)/i(38196),	-- dsmeared Brutalizer \\ Bloodsmeared Brutalizer
 s(171940)/i(38197),	-- ted Boneshredder \\ Mounted Boneshredder
 s(171941)/i(38198),	-- t-Severing Quickblade \\ Joint-Severing Quickblade
-s(171942)/i(38199),	-- DB50 Slow Sword3 \\ DB50 Slow Sword3
+s(171942)/i(38199),	-- DB50 Slow Sword3
 s(171943)/i(38200),	-- DB50 Crossbow3
 s(171944)/i(38201),	-- DB14 Spell Wand
 s(171945)/i(38202),	-- of Happy Reminders \\ Twig of Happy Reminders
@@ -28074,7 +28074,7 @@ s(171991)/i(38318),	-- moon Robe \\ Darkmoon Robe
 s(171992)/i(38322),	-- Iron-Bound Tome \\ -Bound Tome \\ Iron-bound Tome
 s(171993)/i(38353),	-- ure Bay Buccaneer's Cape \\ Venture Bay Buccaneer's Cape
 s(171994)/i(38354),	-- Stained Tarp \\ Oil-Stained Tarp
-s(171995)/i(38355),	-- k Goblin Back Protector \\ Thick Goblin Back Protector \\ Thick Goblin Back Protector
+s(171995)/i(38355),	-- k Goblin Back Protector \\ Thick Goblin Back Protector
 s(171996)/i(38356),	-- ure Battle Wand \\ Venture Battle Wand
 s(171997)/i(38357),	-- pened Throwing Gizmo \\ Sharpened Throwing Gizmo
 s(171998)/i(38387),	-- zled Hat \\ Grizzled Hat
@@ -28134,8 +28134,8 @@ s(172051)/i(38458),	-- spear Orb \\ Darkspear Orb
 s(172052)/i(38459),	-- of the Eastern Kingdoms \\ Orb of the Eastern Kingdoms
 s(172053)/i(38460),	-- ged Wand of the Cleft \\ Charged Wand of the Cleft
 s(172054)/i(38461),	-- ong Shanker \\ Warsong Shanker
-s(172055)/i(38462),	-- ong Stormshield \\ Warsong Stormshield \\ Warsong Stormshield
-s(172056)/i(38463),	-- aeron's Resolve \\ Lordaeron's Resolve \\ Lordaeron's Resolve
+s(172055)/i(38462),	-- ong Stormshield \\ Warsong Stormshield
+s(172056)/i(38463),	-- aeron's Resolve \\ Lordaeron's Resolve
 s(172057)/i(38464),	-- ish Magician's Quill \\ Gnomish Magician's Quill
 s(172058)/i(38465),	-- uard Soldier's Dagger \\ Vanguard Soldier's Dagger
 s(172059)/i(38468),	-- 'ak Peacebringer \\ Kalu'ak Peacebringer
@@ -28318,7 +28318,7 @@ s(172235)/i(39073),	-- of the Everlasting \\ Root of the Everlasting
 s(172236)/i(39074),	-- e of Distilled Hatred \\ Drape of Distilled Hatred
 s(172237)/i(39075),	-- alker's Girdle \\ Waywalker's Girdle
 s(172238)/i(39076),	-- m-Rider's Greaves \\ Golem-Rider's Greaves
-s(172239)/i(39077),	-- l-Reshaper's Helm \\ Skull-Reshaper's Helm \\ Skull-Reshaper's Helm
+s(172239)/i(39077),	-- l-Reshaper's Helm \\ Skull-Reshaper's Helm
 s(172240)/i(39078),	-- pering Stompers \\ Whispering Stompers
 s(172241)/i(39079),	-- ers of the Chaperon \\ Bracers of the Chaperon
 s(172242)/i(39080),	-- s of Flawed Temper \\ Grips of Flawed Temper
@@ -28830,7 +28830,7 @@ s(172747)/i(39808),	-- f of Diligence \\ Staff of Diligence
 s(172748)/i(39809),	-- als of Spying \\ Sandals of Spying
 s(172749)/i(39810),	-- s of Duplicity \\ Cords of Duplicity
 s(172750)/i(39812),	-- ed Trousers \\ Soiled Trousers
-s(172751)/i(39813),	-- QR ZD25 Cloth Spell Glove2 - PH \\ QR ZD25 Cloth Spell Glove2 - PH
+s(172751)/i(39813),	-- QR ZD25 Cloth Spell Glove2 - PH
 s(172752)/i(39814),	-- pers of the Broken Front \\ Slippers of the Broken Front
 s(172753)/i(39815),	-- dbinder's Links \\ Bloodbinder's Links
 s(172754)/i(39816),	-- c's Hood \\ Medic's Hood
@@ -28846,7 +28846,7 @@ s(172763)/i(39827),	-- Tome of Tenets \\ Vile Tome of Tenets
 s(172764)/i(39828),	-- sher's Cloak \\ Punisher's Cloak
 s(172765)/i(39829),	-- -Strung Bow \\ High-Strung Bow
 s(172766)/i(39830),	-- of Subtlety \\ Fist of Subtlety
-s(172767)/i(39832),	-- QR ZD26 Spell Offhand - PH \\ QR ZD26 Spell Offhand - PH
+s(172767)/i(39832),	-- QR ZD26 Spell Offhand - PH
 s(172768)/i(39833),	-- le Bloodbinder's Boots \\ Supple Bloodbinder's Boots
 s(172769)/i(39834),	-- ttled Jerkin \\ Embattled Jerkin
 s(172770)/i(39835),	-- le Bloodbinder's Helm \\ Supple Bloodbinder's Helm
@@ -28890,7 +28890,7 @@ s(172807)/i(39874),	-- ltrator's Shield \\ Infiltrator's Shield
 s(172808)/i(39875),	-- lderguards of Subterfuge \\ Shoulderguards of Subterfuge
 s(172809)/i(39876),	-- Abomination Tripe \\ Aged Abomination Tripe
 s(172810)/i(39877),	-- of the Betrayer \\ Belt of the Betrayer
-s(172811)/i(39879),	-- QR ZD25 Leather Physical Shoulder2 - PH \\ QR ZD25 Leather Physical Shoulder2 - PH
+s(172811)/i(39879),	-- QR ZD25 Leather Physical Shoulder2 - PH
 s(172812)/i(39880),	-- gested Mail Scraps \\ Redigested Mail Scraps
 s(172813)/i(39881),	-- le of Reanimation \\ Mantle of Reanimation
 s(172814)/i(39882),	-- ed Bone Helm \\ Carved Bone Helm
@@ -30900,7 +30900,7 @@ s(174817)/i(43460),	-- tmaim Girdle \\ Giantmaim Girdle
 s(174818)/i(43461),	-- nant's Breastplate \\ Revenant's Breastplate
 s(174819)/i(43469),	-- nant's Treads \\ Revenant's Treads
 s(174820)/i(43474),	-- Monster - Staff, Nexus D01
-s(174821)/i(43475),	-- s of the Chilling Revenant \\ Grips of the Chilling Revenant \\ Grips of the Chilling Revenant
+s(174821)/i(43475),	-- s of the Chilling Revenant \\ Grips of the Chilling Revenant
 s(174822)/i(43476),	-- lwoven Breastplate \\ Trollwoven Breastplate
 s(174823)/i(43477),	-- Monster - Polearm, Nexus D01
 s(174824)/i(43479),	-- Monster - Dagger, Nexus D03
@@ -31221,7 +31221,7 @@ s(175138)/i(44052),	-- mic Purification Rod \\ Totemic Purification Rod
 s(175139)/i(44053),	-- e-Stick Harpoon \\ Whale-Stick Harpoon
 s(175140)/i(44054),	-- e-Skin Breastplate \\ Whale-Skin Breastplate
 s(175141)/i(44055),	-- e-Skin Vest \\ Whale-Skin Vest
-s(175142)/i(44056),	-- Monster - Axe, 1H Nexus D01 \\ Monster - Axe, 1H Nexus D01
+s(175142)/i(44056),	-- Monster - Axe, 1H Nexus D01
 s(175143)/i(44057),	-- y-Reinforced Chestguard \\ Ivory-Reinforced Chestguard
 s(175144)/i(44058),	-- ebone Carapace \\ Whalebone Carapace
 s(175145)/i(44059),	-- lefish Scale Breastplate \\ Cuttlefish Scale Breastplate
@@ -33802,196 +33802,196 @@ s(177719)/i(48713),	-- ar's Edge \\ Lothar's Edge
 s(177720)/i(48714),	-- r of the Fallen \\ Honor of the Fallen
 s(177721)/i(48716),	-- rable Mass of McGowan \\ Venerable Mass of McGowan
 s(177722)/i(48718),	-- rposed Lava Dredger \\ Repurposed Lava Dredger
-s(177723)/i(48725),	-- gar's Gauntlets \\ Khadgar's Gauntlets \\ Khadgar's Gauntlets
-s(177724)/i(48726),	-- gar's Hood \\ Khadgar's Hood \\ Khadgar's Hood
-s(177725)/i(48727),	-- gar's Leggings \\ Khadgar's Leggings \\ Khadgar's Leggings
-s(177726)/i(48728),	-- gar's Robe \\ Khadgar's Robe \\ Khadgar's Robe
-s(177727)/i(48729),	-- gar's Shoulderpads \\ Khadgar's Shoulderpads \\ Khadgar's Shoulderpads
-s(177728)/i(48730),	-- trider's Gauntlets \\ Sunstrider's Gauntlets \\ Sunstrider's Gauntlets
-s(177729)/i(48731),	-- trider's Hood \\ Sunstrider's Hood \\ Sunstrider's Hood
-s(177730)/i(48732),	-- trider's Leggings \\ Sunstrider's Leggings \\ Sunstrider's Leggings
-s(177731)/i(48733),	-- trider's Robe \\ Sunstrider's Robe \\ Sunstrider's Robe
-s(177732)/i(48734),	-- trider's Shoulderpads \\ Sunstrider's Shoulderpads \\ Sunstrider's Shoulderpads
-s(177733)/i(48735),	-- dan's Gloves \\ Gul'dan's Gloves \\ Gul'dan's Gloves
-s(177734)/i(48736),	-- dan's Hood \\ Gul'dan's Hood \\ Gul'dan's Hood
-s(177735)/i(48737),	-- dan's Leggings \\ Gul'dan's Leggings \\ Gul'dan's Leggings
-s(177736)/i(48738),	-- dan's Robe \\ Gul'dan's Robe \\ Gul'dan's Robe
-s(177737)/i(48739),	-- dan's Shoulderpads \\ Gul'dan's Shoulderpads \\ Gul'dan's Shoulderpads
-s(177738)/i(48740),	-- Thuzad's Gloves \\ Kel'Thuzad's Gloves \\ Kel'Thuzad's Gloves
-s(177739)/i(48741),	-- Thuzad's Hood \\ Kel'Thuzad's Hood \\ Kel'Thuzad's Hood
-s(177740)/i(48742),	-- Thuzad's Leggings \\ Kel'Thuzad's Leggings \\ Kel'Thuzad's Leggings
-s(177741)/i(48743),	-- Thuzad's Robe \\ Kel'Thuzad's Robe \\ Kel'Thuzad's Robe
-s(177742)/i(48744),	-- Thuzad's Shoulderpads \\ Kel'Thuzad's Shoulderpads \\ Kel'Thuzad's Shoulderpads
-s(177743)/i(48745),	-- n's Cowl \\ Velen's Cowl \\ Velen's Cowl
-s(177744)/i(48746),	-- n's Gloves \\ Velen's Gloves \\ Velen's Gloves
-s(177745)/i(48747),	-- n's Leggings \\ Velen's Leggings \\ Velen's Leggings
-s(177746)/i(48748),	-- n's Robe \\ Velen's Robe \\ Velen's Robe
-s(177747)/i(48749),	-- n's Shoulderpads \\ Velen's Shoulderpads \\ Velen's Shoulderpads
-s(177748)/i(48750),	-- a's Cowl \\ Zabra's Cowl \\ Zabra's Cowl
-s(177749)/i(48751),	-- a's Gloves \\ Zabra's Gloves \\ Zabra's Gloves
-s(177750)/i(48752),	-- a's Leggings \\ Zabra's Leggings \\ Zabra's Leggings
-s(177751)/i(48753),	-- a's Robe \\ Zabra's Robe \\ Zabra's Robe
-s(177752)/i(48754),	-- a's Shoulderpads \\ Zabra's Shoulderpads \\ Zabra's Shoulderpads
-s(177753)/i(48755),	-- n's Circlet \\ Velen's Circlet \\ Velen's Circlet
-s(177754)/i(48756),	-- n's Handwraps \\ Velen's Handwraps \\ Velen's Handwraps
-s(177755)/i(48757),	-- n's Mantle \\ Velen's Mantle \\ Velen's Mantle
-s(177756)/i(48758),	-- n's Pants \\ Velen's Pants \\ Velen's Pants
-s(177757)/i(48759),	-- n's Raiments \\ Velen's Raiments \\ Velen's Raiments
-s(177758)/i(48760),	-- a's Circlet \\ Zabra's Circlet \\ Zabra's Circlet
-s(177759)/i(48761),	-- a's Handwraps \\ Zabra's Handwraps \\ Zabra's Handwraps
-s(177760)/i(48762),	-- a's Mantle \\ Zabra's Mantle \\ Zabra's Mantle
-s(177761)/i(48763),	-- a's Pants \\ Zabra's Pants \\ Zabra's Pants
-s(177762)/i(48764),	-- a's Raiments \\ Zabra's Raiments \\ Zabra's Raiments
-s(177763)/i(48769),	-- totem's Handguards \\ Runetotem's Handguards \\ Runetotem's Handguards
-s(177764)/i(48770),	-- totem's Headpiece \\ Runetotem's Headpiece \\ Runetotem's Headpiece
-s(177765)/i(48771),	-- totem's Leggings \\ Runetotem's Leggings \\ Runetotem's Leggings
-s(177766)/i(48772),	-- totem's Robe \\ Runetotem's Robe \\ Runetotem's Robe
-s(177767)/i(48773),	-- totem's Spaulders \\ Runetotem's Spaulders \\ Runetotem's Spaulders
-s(177768)/i(48774),	-- urion's Handguards \\ Malfurion's Handguards \\ Malfurion's Handguards
-s(177769)/i(48775),	-- urion's Headpiece \\ Malfurion's Headpiece \\ Malfurion's Headpiece
-s(177770)/i(48776),	-- urion's Leggings \\ Malfurion's Leggings \\ Malfurion's Leggings
-s(177771)/i(48777),	-- urion's Robe \\ Malfurion's Robe \\ Malfurion's Robe
-s(177772)/i(48778),	-- urion's Spaulders \\ Malfurion's Spaulders \\ Malfurion's Spaulders
-s(177773)/i(48781),	-- totem's Cover \\ Runetotem's Cover \\ Runetotem's Cover
-s(177774)/i(48782),	-- totem's Gloves \\ Runetotem's Gloves \\ Runetotem's Gloves
-s(177775)/i(48783),	-- totem's Mantle \\ Runetotem's Mantle \\ Runetotem's Mantle
-s(177776)/i(48784),	-- totem's Trousers \\ Runetotem's Trousers \\ Runetotem's Trousers
-s(177777)/i(48785),	-- totem's Vestments \\ Runetotem's Vestments \\ Runetotem's Vestments
-s(177778)/i(48786),	-- urion's Cover \\ Malfurion's Cover \\ Malfurion's Cover
-s(177779)/i(48787),	-- urion's Gloves \\ Malfurion's Gloves \\ Malfurion's Gloves
-s(177780)/i(48788),	-- urion's Mantle \\ Malfurion's Mantle \\ Malfurion's Mantle
-s(177781)/i(48789),	-- urion's Trousers \\ Malfurion's Trousers \\ Malfurion's Trousers
-s(177782)/i(48790),	-- urion's Vestments \\ Malfurion's Vestments \\ Malfurion's Vestments
-s(177783)/i(48794),	-- totem's Handgrips \\ Runetotem's Handgrips \\ Runetotem's Handgrips
-s(177784)/i(48795),	-- totem's Headguard \\ Runetotem's Headguard \\ Runetotem's Headguard
-s(177785)/i(48796),	-- totem's Legguards \\ Runetotem's Legguards \\ Runetotem's Legguards
-s(177786)/i(48797),	-- totem's Raiments \\ Runetotem's Raiments \\ Runetotem's Raiments
-s(177787)/i(48798),	-- totem's Shoulderpads \\ Runetotem's Shoulderpads \\ Runetotem's Shoulderpads
-s(177788)/i(48799),	-- urion's Handgrips \\ Malfurion's Handgrips \\ Malfurion's Handgrips
-s(177789)/i(48800),	-- urion's Headguard \\ Malfurion's Headguard \\ Malfurion's Headguard
-s(177790)/i(48801),	-- urion's Legguards \\ Malfurion's Legguards \\ Malfurion's Legguards
-s(177791)/i(48802),	-- urion's Raiments \\ Malfurion's Raiments \\ Malfurion's Raiments
-s(177792)/i(48803),	-- urion's Shoulderpads \\ Malfurion's Shoulderpads \\ Malfurion's Shoulderpads
-s(177793)/i(48804),	-- na's Breastplate \\ Garona's Breastplate \\ Garona's Breastplate
-s(177794)/i(48805),	-- na's Gauntlets \\ Garona's Gauntlets \\ Garona's Gauntlets
-s(177795)/i(48806),	-- na's Helmet \\ Garona's Helmet \\ Garona's Helmet
-s(177796)/i(48807),	-- na's Legplates \\ Garona's Legplates \\ Garona's Legplates
-s(177797)/i(48808),	-- na's Pauldrons \\ Garona's Pauldrons \\ Garona's Pauldrons
-s(177798)/i(48809),	-- leef's Breastplate \\ VanCleef's Breastplate \\ VanCleef's Breastplate
-s(177799)/i(48810),	-- leef's Gauntlets \\ VanCleef's Gauntlets \\ VanCleef's Gauntlets
-s(177800)/i(48811),	-- leef's Helmet \\ VanCleef's Helmet \\ VanCleef's Helmet
-s(177801)/i(48812),	-- leef's Legplates \\ VanCleef's Legplates \\ VanCleef's Legplates
-s(177802)/i(48813),	-- leef's Pauldrons \\ VanCleef's Pauldrons \\ VanCleef's Pauldrons
-s(177803)/i(48814),	-- runner's Handguards \\ Windrunner's Handguards \\ Windrunner's Handguards
-s(177804)/i(48815),	-- runner's Headpiece \\ Windrunner's Headpiece \\ Windrunner's Headpiece
-s(177805)/i(48816),	-- runner's Legguards \\ Windrunner's Legguards \\ Windrunner's Legguards
-s(177806)/i(48817),	-- runner's Spaulders \\ Windrunner's Spaulders \\ Windrunner's Spaulders
-s(177807)/i(48818),	-- runner's Tunic \\ Windrunner's Tunic \\ Windrunner's Tunic
-s(177808)/i(48819),	-- runner's Handguards \\ Windrunner's Handguards \\ Windrunner's Handguards
-s(177809)/i(48820),	-- runner's Headpiece \\ Windrunner's Headpiece \\ Windrunner's Headpiece
-s(177810)/i(48821),	-- runner's Legguards \\ Windrunner's Legguards \\ Windrunner's Legguards
-s(177811)/i(48822),	-- runner's Spaulders \\ Windrunner's Spaulders \\ Windrunner's Spaulders
-s(177812)/i(48823),	-- runner's Tunic \\ Windrunner's Tunic \\ Windrunner's Tunic
-s(177813)/i(48824),	-- ndo's Handguards \\ Nobundo's Handguards \\ Nobundo's Handguards
-s(177814)/i(48825),	-- ndo's Headpiece \\ Nobundo's Headpiece \\ Nobundo's Headpiece
-s(177815)/i(48826),	-- ndo's Legguards \\ Nobundo's Legguards \\ Nobundo's Legguards
-s(177816)/i(48827),	-- ndo's Spaulders \\ Nobundo's Spaulders \\ Nobundo's Spaulders
-s(177817)/i(48828),	-- ndo's Tunic \\ Nobundo's Tunic \\ Nobundo's Tunic
-s(177818)/i(48829),	-- ll's Handguards \\ Thrall's Handguards \\ Thrall's Handguards
-s(177819)/i(48830),	-- ll's Headpiece \\ Thrall's Headpiece \\ Thrall's Headpiece
-s(177820)/i(48831),	-- ll's Legguards \\ Thrall's Legguards \\ Thrall's Legguards
-s(177821)/i(48832),	-- ll's Spaulders \\ Thrall's Spaulders \\ Thrall's Spaulders
-s(177822)/i(48833),	-- ll's Tunic \\ Thrall's Tunic \\ Thrall's Tunic
-s(177823)/i(48836),	-- ndo's Gloves \\ Nobundo's Gloves \\ Nobundo's Gloves
-s(177824)/i(48837),	-- ndo's Hauberk \\ Nobundo's Hauberk \\ Nobundo's Hauberk
-s(177825)/i(48838),	-- ndo's Helm \\ Nobundo's Helm \\ Nobundo's Helm
-s(177826)/i(48839),	-- ndo's Kilt \\ Nobundo's Kilt \\ Nobundo's Kilt
-s(177827)/i(48840),	-- ndo's Shoulderpads \\ Nobundo's Shoulderpads \\ Nobundo's Shoulderpads
-s(177828)/i(48841),	-- ll's Gloves \\ Thrall's Gloves \\ Thrall's Gloves
-s(177829)/i(48842),	-- ll's Hauberk \\ Thrall's Hauberk \\ Thrall's Hauberk
-s(177830)/i(48843),	-- ll's Helm \\ Thrall's Helm \\ Thrall's Helm
-s(177831)/i(48844),	-- ll's Kilt \\ Thrall's Kilt \\ Thrall's Kilt
-s(177832)/i(48845),	-- ll's Shoulderpads \\ Thrall's Shoulderpads \\ Thrall's Shoulderpads
-s(177833)/i(48846),	-- ndo's Chestguard \\ Nobundo's Chestguard \\ Nobundo's Chestguard
-s(177834)/i(48847),	-- ndo's Faceguard \\ Nobundo's Faceguard \\ Nobundo's Faceguard
-s(177835)/i(48848),	-- ndo's Grips \\ Nobundo's Grips \\ Nobundo's Grips
-s(177836)/i(48849),	-- ndo's Shoulderguards \\ Nobundo's Shoulderguards \\ Nobundo's Shoulderguards
-s(177837)/i(48850),	-- ndo's War-Kilt \\ Nobundo's War-Kilt \\ Nobundo's War-Kilt
-s(177838)/i(48851),	-- ll's Chestguard \\ Thrall's Chestguard \\ Thrall's Chestguard
-s(177839)/i(48852),	-- ll's Faceguard \\ Thrall's Faceguard \\ Thrall's Faceguard
-s(177840)/i(48853),	-- ll's Grips \\ Thrall's Grips \\ Thrall's Grips
-s(177841)/i(48854),	-- ll's Shoulderguards \\ Thrall's Shoulderguards \\ Thrall's Shoulderguards
-s(177842)/i(48855),	-- ll's War-Kilt \\ Thrall's War-Kilt \\ Thrall's War-Kilt
-s(177843)/i(48860),	-- scream's Battleplate \\ Hellscream's Battleplate \\ Hellscream's Battleplate
-s(177844)/i(48861),	-- scream's Gauntlets \\ Hellscream's Gauntlets \\ Hellscream's Gauntlets
-s(177845)/i(48862),	-- scream's Helmet \\ Hellscream's Helmet \\ Hellscream's Helmet
-s(177846)/i(48863),	-- scream's Legplates \\ Hellscream's Legplates \\ Hellscream's Legplates
-s(177847)/i(48864),	-- scream's Shoulderplates \\ Hellscream's Shoulderplates \\ Hellscream's Shoulderplates
-s(177848)/i(48865),	-- n's Battleplate \\ Wrynn's Battleplate \\ Wrynn's Battleplate
-s(177849)/i(48866),	-- n's Gauntlets \\ Wrynn's Gauntlets \\ Wrynn's Gauntlets
-s(177850)/i(48867),	-- n's Helmet \\ Wrynn's Helmet \\ Wrynn's Helmet
-s(177851)/i(48868),	-- n's Legplates \\ Wrynn's Legplates \\ Wrynn's Legplates
-s(177852)/i(48869),	-- n's Shoulderplates \\ Wrynn's Shoulderplates \\ Wrynn's Shoulderplates
-s(177853)/i(48870),	-- scream's Breastplate \\ Hellscream's Breastplate \\ Hellscream's Breastplate
-s(177854)/i(48871),	-- scream's Greathelm \\ Hellscream's Greathelm \\ Hellscream's Greathelm
-s(177855)/i(48872),	-- scream's Handguards \\ Hellscream's Handguards \\ Hellscream's Handguards
-s(177856)/i(48873),	-- scream's Legguards \\ Hellscream's Legguards \\ Hellscream's Legguards
-s(177857)/i(48874),	-- scream's Pauldrons \\ Hellscream's Pauldrons \\ Hellscream's Pauldrons
-s(177858)/i(48875),	-- n's Breastplate \\ Wrynn's Breastplate \\ Wrynn's Breastplate
-s(177859)/i(48876),	-- n's Greathelm \\ Wrynn's Greathelm \\ Wrynn's Greathelm
-s(177860)/i(48877),	-- n's Handguards \\ Wrynn's Handguards \\ Wrynn's Handguards
-s(177861)/i(48878),	-- n's Legguards \\ Wrynn's Legguards \\ Wrynn's Legguards
-s(177862)/i(48879),	-- n's Pauldrons \\ Wrynn's Pauldrons \\ Wrynn's Pauldrons
-s(177863)/i(48880),	-- ira's Battleplate \\ Koltira's Battleplate \\ Koltira's Battleplate
-s(177864)/i(48881),	-- ira's Gauntlets \\ Koltira's Gauntlets \\ Koltira's Gauntlets
-s(177865)/i(48882),	-- ira's Helmet \\ Koltira's Helmet \\ Koltira's Helmet
-s(177866)/i(48883),	-- ira's Legplates \\ Koltira's Legplates \\ Koltira's Legplates
-s(177867)/i(48884),	-- ira's Shoulderplates \\ Koltira's Shoulderplates \\ Koltira's Shoulderplates
-s(177868)/i(48885),	-- sarian's Battleplate \\ Thassarian's Battleplate \\ Thassarian's Battleplate
-s(177869)/i(48886),	-- sarian's Gauntlets \\ Thassarian's Gauntlets \\ Thassarian's Gauntlets
-s(177870)/i(48887),	-- sarian's Helmet \\ Thassarian's Helmet \\ Thassarian's Helmet
-s(177871)/i(48888),	-- sarian's Legplates \\ Thassarian's Legplates \\ Thassarian's Legplates
-s(177872)/i(48889),	-- sarian's Shoulderplates \\ Thassarian's Shoulderplates \\ Thassarian's Shoulderplates
-s(177873)/i(48890),	-- ira's Chestguard \\ Koltira's Chestguard \\ Koltira's Chestguard
-s(177874)/i(48891),	-- ira's Faceguard \\ Koltira's Faceguard \\ Koltira's Faceguard
-s(177875)/i(48892),	-- ira's Handguards \\ Koltira's Handguards \\ Koltira's Handguards
-s(177876)/i(48893),	-- ira's Legguards \\ Koltira's Legguards \\ Koltira's Legguards
-s(177877)/i(48894),	-- ira's Pauldrons \\ Koltira's Pauldrons \\ Koltira's Pauldrons
-s(177878)/i(48895),	-- sarian's Chestguard \\ Thassarian's Chestguard \\ Thassarian's Chestguard
-s(177879)/i(48896),	-- sarian's Faceguard \\ Thassarian's Faceguard \\ Thassarian's Faceguard
-s(177880)/i(48897),	-- sarian's Handguards \\ Thassarian's Handguards \\ Thassarian's Handguards
-s(177881)/i(48898),	-- sarian's Legguards \\ Thassarian's Legguards \\ Thassarian's Legguards
-s(177882)/i(48899),	-- sarian's Pauldrons \\ Thassarian's Pauldrons \\ Thassarian's Pauldrons
-s(177883)/i(48900),	-- lyon's Tunic \\ Turalyon's Tunic \\ Turalyon's Tunic
-s(177884)/i(48901),	-- lyon's Spaulders \\ Turalyon's Spaulders \\ Turalyon's Spaulders
-s(177885)/i(48902),	-- lyon's Headpiece \\ Turalyon's Headpiece \\ Turalyon's Headpiece
-s(177886)/i(48903),	-- lyon's Greaves \\ Turalyon's Greaves \\ Turalyon's Greaves
-s(177887)/i(48904),	-- lyon's Gloves \\ Turalyon's Gloves \\ Turalyon's Gloves
-s(177888)/i(48905),	-- rin's Tunic \\ Liadrin's Tunic \\ Liadrin's Tunic
-s(177889)/i(48906),	-- rin's Spaulders \\ Liadrin's Spaulders \\ Liadrin's Spaulders
-s(177890)/i(48907),	-- rin's Headpiece \\ Liadrin's Headpiece \\ Liadrin's Headpiece
-s(177891)/i(48908),	-- rin's Greaves \\ Liadrin's Greaves \\ Liadrin's Greaves
-s(177892)/i(48909),	-- rin's Gloves \\ Liadrin's Gloves \\ Liadrin's Gloves
-s(177893)/i(48910),	-- rin's Battleplate \\ Liadrin's Battleplate \\ Liadrin's Battleplate
-s(177894)/i(48911),	-- rin's Gauntlets \\ Liadrin's Gauntlets \\ Liadrin's Gauntlets
-s(177895)/i(48912),	-- rin's Helm \\ Liadrin's Helm \\ Liadrin's Helm
-s(177896)/i(48913),	-- rin's Legplates \\ Liadrin's Legplates \\ Liadrin's Legplates
-s(177897)/i(48914),	-- rin's Shoulderplates \\ Liadrin's Shoulderplates \\ Liadrin's Shoulderplates
-s(177898)/i(48915),	-- lyon's Battleplate \\ Turalyon's Battleplate \\ Turalyon's Battleplate
-s(177899)/i(48916),	-- lyon's Gauntlets \\ Turalyon's Gauntlets \\ Turalyon's Gauntlets
-s(177900)/i(48917),	-- lyon's Helm \\ Turalyon's Helm \\ Turalyon's Helm
-s(177901)/i(48918),	-- lyon's Legplates \\ Turalyon's Legplates \\ Turalyon's Legplates
-s(177902)/i(48919),	-- lyon's Shoulderplates \\ Turalyon's Shoulderplates \\ Turalyon's Shoulderplates
-s(177903)/i(48922),	-- rin's Breastplate \\ Liadrin's Breastplate \\ Liadrin's Breastplate
-s(177904)/i(48923),	-- rin's Faceguard \\ Liadrin's Faceguard \\ Liadrin's Faceguard
-s(177905)/i(48924),	-- rin's Handguards \\ Liadrin's Handguards \\ Liadrin's Handguards
-s(177906)/i(48925),	-- rin's Legguards \\ Liadrin's Legguards \\ Liadrin's Legguards
-s(177907)/i(48926),	-- rin's Shoulderguards \\ Liadrin's Shoulderguards \\ Liadrin's Shoulderguards
-s(177908)/i(48927),	-- lyon's Breastplate \\ Turalyon's Breastplate \\ Turalyon's Breastplate
-s(177909)/i(48928),	-- lyon's Faceguard \\ Turalyon's Faceguard \\ Turalyon's Faceguard
-s(177910)/i(48929),	-- lyon's Handguards \\ Turalyon's Handguards \\ Turalyon's Handguards
-s(177911)/i(48930),	-- lyon's Legguards \\ Turalyon's Legguards \\ Turalyon's Legguards
-s(177912)/i(48931),	-- lyon's Shoulderguards \\ Turalyon's Shoulderguards \\ Turalyon's Shoulderguards
+s(177723)/i(48725),	-- gar's Gauntlets \\ Khadgar's Gauntlets
+s(177724)/i(48726),	-- gar's Hood \\ Khadgar's Hood
+s(177725)/i(48727),	-- gar's Leggings \\ Khadgar's Leggings
+s(177726)/i(48728),	-- gar's Robe \\ Khadgar's Robe
+s(177727)/i(48729),	-- gar's Shoulderpads \\ Khadgar's Shoulderpads
+s(177728)/i(48730),	-- trider's Gauntlets \\ Sunstrider's Gauntlets
+s(177729)/i(48731),	-- trider's Hood \\ Sunstrider's Hood
+s(177730)/i(48732),	-- trider's Leggings \\ Sunstrider's Leggings
+s(177731)/i(48733),	-- trider's Robe \\ Sunstrider's Robe
+s(177732)/i(48734),	-- trider's Shoulderpads \\ Sunstrider's Shoulderpads
+s(177733)/i(48735),	-- dan's Gloves \\ Gul'dan's Gloves
+s(177734)/i(48736),	-- dan's Hood \\ Gul'dan's Hood
+s(177735)/i(48737),	-- dan's Leggings \\ Gul'dan's Leggings
+s(177736)/i(48738),	-- dan's Robe \\ Gul'dan's Robe
+s(177737)/i(48739),	-- dan's Shoulderpads \\ Gul'dan's Shoulderpads
+s(177738)/i(48740),	-- Thuzad's Gloves \\ Kel'Thuzad's Gloves
+s(177739)/i(48741),	-- Thuzad's Hood \\ Kel'Thuzad's Hood
+s(177740)/i(48742),	-- Thuzad's Leggings \\ Kel'Thuzad's Leggings
+s(177741)/i(48743),	-- Thuzad's Robe \\ Kel'Thuzad's Robe
+s(177742)/i(48744),	-- Thuzad's Shoulderpads \\ Kel'Thuzad's Shoulderpads
+s(177743)/i(48745),	-- n's Cowl \\ Velen's Cowl
+s(177744)/i(48746),	-- n's Gloves \\ Velen's Gloves
+s(177745)/i(48747),	-- n's Leggings \\ Velen's Leggings
+s(177746)/i(48748),	-- n's Robe \\ Velen's Robe
+s(177747)/i(48749),	-- n's Shoulderpads \\ Velen's Shoulderpads
+s(177748)/i(48750),	-- a's Cowl \\ Zabra's Cowl
+s(177749)/i(48751),	-- a's Gloves \\ Zabra's Gloves
+s(177750)/i(48752),	-- a's Leggings \\ Zabra's Leggings
+s(177751)/i(48753),	-- a's Robe \\ Zabra's Robe
+s(177752)/i(48754),	-- a's Shoulderpads \\ Zabra's Shoulderpads
+s(177753)/i(48755),	-- n's Circlet \\ Velen's Circlet
+s(177754)/i(48756),	-- n's Handwraps \\ Velen's Handwraps
+s(177755)/i(48757),	-- n's Mantle \\ Velen's Mantle
+s(177756)/i(48758),	-- n's Pants \\ Velen's Pants
+s(177757)/i(48759),	-- n's Raiments \\ Velen's Raiments
+s(177758)/i(48760),	-- a's Circlet \\ Zabra's Circlet
+s(177759)/i(48761),	-- a's Handwraps \\ Zabra's Handwraps
+s(177760)/i(48762),	-- a's Mantle \\ Zabra's Mantle
+s(177761)/i(48763),	-- a's Pants \\ Zabra's Pants
+s(177762)/i(48764),	-- a's Raiments \\ Zabra's Raiments
+s(177763)/i(48769),	-- totem's Handguards \\ Runetotem's Handguards
+s(177764)/i(48770),	-- totem's Headpiece \\ Runetotem's Headpiece
+s(177765)/i(48771),	-- totem's Leggings \\ Runetotem's Leggings
+s(177766)/i(48772),	-- totem's Robe \\ Runetotem's Robe
+s(177767)/i(48773),	-- totem's Spaulders \\ Runetotem's Spaulders
+s(177768)/i(48774),	-- urion's Handguards \\ Malfurion's Handguards
+s(177769)/i(48775),	-- urion's Headpiece \\ Malfurion's Headpiece
+s(177770)/i(48776),	-- urion's Leggings \\ Malfurion's Leggings
+s(177771)/i(48777),	-- urion's Robe \\ Malfurion's Robe
+s(177772)/i(48778),	-- urion's Spaulders \\ Malfurion's Spaulders
+s(177773)/i(48781),	-- totem's Cover \\ Runetotem's Cover
+s(177774)/i(48782),	-- totem's Gloves \\ Runetotem's Gloves
+s(177775)/i(48783),	-- totem's Mantle \\ Runetotem's Mantle
+s(177776)/i(48784),	-- totem's Trousers \\ Runetotem's Trousers
+s(177777)/i(48785),	-- totem's Vestments \\ Runetotem's Vestments
+s(177778)/i(48786),	-- urion's Cover \\ Malfurion's Cover
+s(177779)/i(48787),	-- urion's Gloves \\ Malfurion's Gloves
+s(177780)/i(48788),	-- urion's Mantle \\ Malfurion's Mantle
+s(177781)/i(48789),	-- urion's Trousers \\ Malfurion's Trousers
+s(177782)/i(48790),	-- urion's Vestments \\ Malfurion's Vestments
+s(177783)/i(48794),	-- totem's Handgrips \\ Runetotem's Handgrips
+s(177784)/i(48795),	-- totem's Headguard \\ Runetotem's Headguard
+s(177785)/i(48796),	-- totem's Legguards \\ Runetotem's Legguards
+s(177786)/i(48797),	-- totem's Raiments \\ Runetotem's Raiments
+s(177787)/i(48798),	-- totem's Shoulderpads \\ Runetotem's Shoulderpads
+s(177788)/i(48799),	-- urion's Handgrips \\ Malfurion's Handgrips
+s(177789)/i(48800),	-- urion's Headguard \\ Malfurion's Headguard
+s(177790)/i(48801),	-- urion's Legguards \\ Malfurion's Legguards
+s(177791)/i(48802),	-- urion's Raiments \\ Malfurion's Raiments
+s(177792)/i(48803),	-- urion's Shoulderpads \\ Malfurion's Shoulderpads
+s(177793)/i(48804),	-- na's Breastplate \\ Garona's Breastplate
+s(177794)/i(48805),	-- na's Gauntlets \\ Garona's Gauntlets
+s(177795)/i(48806),	-- na's Helmet \\ Garona's Helmet
+s(177796)/i(48807),	-- na's Legplates \\ Garona's Legplates
+s(177797)/i(48808),	-- na's Pauldrons \\ Garona's Pauldrons
+s(177798)/i(48809),	-- leef's Breastplate \\ VanCleef's Breastplate
+s(177799)/i(48810),	-- leef's Gauntlets \\ VanCleef's Gauntlets
+s(177800)/i(48811),	-- leef's Helmet \\ VanCleef's Helmet
+s(177801)/i(48812),	-- leef's Legplates \\ VanCleef's Legplates
+s(177802)/i(48813),	-- leef's Pauldrons \\ VanCleef's Pauldrons
+s(177803)/i(48814),	-- runner's Handguards \\ Windrunner's Handguards
+s(177804)/i(48815),	-- runner's Headpiece \\ Windrunner's Headpiece
+s(177805)/i(48816),	-- runner's Legguards \\ Windrunner's Legguards
+s(177806)/i(48817),	-- runner's Spaulders \\ Windrunner's Spaulders
+s(177807)/i(48818),	-- runner's Tunic \\ Windrunner's Tunic
+s(177808)/i(48819),	-- runner's Handguards \\ Windrunner's Handguards
+s(177809)/i(48820),	-- runner's Headpiece \\ Windrunner's Headpiece
+s(177810)/i(48821),	-- runner's Legguards \\ Windrunner's Legguards
+s(177811)/i(48822),	-- runner's Spaulders \\ Windrunner's Spaulders
+s(177812)/i(48823),	-- runner's Tunic \\ Windrunner's Tunic
+s(177813)/i(48824),	-- ndo's Handguards \\ Nobundo's Handguards
+s(177814)/i(48825),	-- ndo's Headpiece \\ Nobundo's Headpiece
+s(177815)/i(48826),	-- ndo's Legguards \\ Nobundo's Legguards
+s(177816)/i(48827),	-- ndo's Spaulders \\ Nobundo's Spaulders
+s(177817)/i(48828),	-- ndo's Tunic \\ Nobundo's Tunic
+s(177818)/i(48829),	-- ll's Handguards \\ Thrall's Handguards
+s(177819)/i(48830),	-- ll's Headpiece \\ Thrall's Headpiece
+s(177820)/i(48831),	-- ll's Legguards \\ Thrall's Legguards
+s(177821)/i(48832),	-- ll's Spaulders \\ Thrall's Spaulders
+s(177822)/i(48833),	-- ll's Tunic \\ Thrall's Tunic
+s(177823)/i(48836),	-- ndo's Gloves \\ Nobundo's Gloves
+s(177824)/i(48837),	-- ndo's Hauberk \\ Nobundo's Hauberk
+s(177825)/i(48838),	-- ndo's Helm \\ Nobundo's Helm
+s(177826)/i(48839),	-- ndo's Kilt \\ Nobundo's Kilt
+s(177827)/i(48840),	-- ndo's Shoulderpads \\ Nobundo's Shoulderpads
+s(177828)/i(48841),	-- ll's Gloves \\ Thrall's Gloves
+s(177829)/i(48842),	-- ll's Hauberk \\ Thrall's Hauberk
+s(177830)/i(48843),	-- ll's Helm \\ Thrall's Helm
+s(177831)/i(48844),	-- ll's Kilt \\ Thrall's Kilt
+s(177832)/i(48845),	-- ll's Shoulderpads \\ Thrall's Shoulderpads
+s(177833)/i(48846),	-- ndo's Chestguard \\ Nobundo's Chestguard
+s(177834)/i(48847),	-- ndo's Faceguard \\ Nobundo's Faceguard
+s(177835)/i(48848),	-- ndo's Grips \\ Nobundo's Grips
+s(177836)/i(48849),	-- ndo's Shoulderguards \\ Nobundo's Shoulderguards
+s(177837)/i(48850),	-- ndo's War-Kilt \\ Nobundo's War-Kilt
+s(177838)/i(48851),	-- ll's Chestguard \\ Thrall's Chestguard
+s(177839)/i(48852),	-- ll's Faceguard \\ Thrall's Faceguard
+s(177840)/i(48853),	-- ll's Grips \\ Thrall's Grips
+s(177841)/i(48854),	-- ll's Shoulderguards \\ Thrall's Shoulderguards
+s(177842)/i(48855),	-- ll's War-Kilt \\ Thrall's War-Kilt
+s(177843)/i(48860),	-- scream's Battleplate \\ Hellscream's Battleplate
+s(177844)/i(48861),	-- scream's Gauntlets \\ Hellscream's Gauntlets
+s(177845)/i(48862),	-- scream's Helmet \\ Hellscream's Helmet
+s(177846)/i(48863),	-- scream's Legplates \\ Hellscream's Legplates
+s(177847)/i(48864),	-- scream's Shoulderplates \\ Hellscream's Shoulderplates
+s(177848)/i(48865),	-- n's Battleplate \\ Wrynn's Battleplate
+s(177849)/i(48866),	-- n's Gauntlets \\ Wrynn's Gauntlets
+s(177850)/i(48867),	-- n's Helmet \\ Wrynn's Helmet
+s(177851)/i(48868),	-- n's Legplates \\ Wrynn's Legplates
+s(177852)/i(48869),	-- n's Shoulderplates \\ Wrynn's Shoulderplates
+s(177853)/i(48870),	-- scream's Breastplate \\ Hellscream's Breastplate
+s(177854)/i(48871),	-- scream's Greathelm \\ Hellscream's Greathelm
+s(177855)/i(48872),	-- scream's Handguards \\ Hellscream's Handguards
+s(177856)/i(48873),	-- scream's Legguards \\ Hellscream's Legguards
+s(177857)/i(48874),	-- scream's Pauldrons \\ Hellscream's Pauldrons
+s(177858)/i(48875),	-- n's Breastplate \\ Wrynn's Breastplate
+s(177859)/i(48876),	-- n's Greathelm \\ Wrynn's Greathelm
+s(177860)/i(48877),	-- n's Handguards \\ Wrynn's Handguards
+s(177861)/i(48878),	-- n's Legguards \\ Wrynn's Legguards
+s(177862)/i(48879),	-- n's Pauldrons \\ Wrynn's Pauldrons
+s(177863)/i(48880),	-- ira's Battleplate \\ Koltira's Battleplate
+s(177864)/i(48881),	-- ira's Gauntlets \\ Koltira's Gauntlets
+s(177865)/i(48882),	-- ira's Helmet \\ Koltira's Helmet
+s(177866)/i(48883),	-- ira's Legplates \\ Koltira's Legplates
+s(177867)/i(48884),	-- ira's Shoulderplates \\ Koltira's Shoulderplates
+s(177868)/i(48885),	-- sarian's Battleplate \\ Thassarian's Battleplate
+s(177869)/i(48886),	-- sarian's Gauntlets \\ Thassarian's Gauntlets
+s(177870)/i(48887),	-- sarian's Helmet \\ Thassarian's Helmet
+s(177871)/i(48888),	-- sarian's Legplates \\ Thassarian's Legplates
+s(177872)/i(48889),	-- sarian's Shoulderplates \\ Thassarian's Shoulderplates
+s(177873)/i(48890),	-- ira's Chestguard \\ Koltira's Chestguard
+s(177874)/i(48891),	-- ira's Faceguard \\ Koltira's Faceguard
+s(177875)/i(48892),	-- ira's Handguards \\ Koltira's Handguards
+s(177876)/i(48893),	-- ira's Legguards \\ Koltira's Legguards
+s(177877)/i(48894),	-- ira's Pauldrons \\ Koltira's Pauldrons
+s(177878)/i(48895),	-- sarian's Chestguard \\ Thassarian's Chestguard
+s(177879)/i(48896),	-- sarian's Faceguard \\ Thassarian's Faceguard
+s(177880)/i(48897),	-- sarian's Handguards \\ Thassarian's Handguards
+s(177881)/i(48898),	-- sarian's Legguards \\ Thassarian's Legguards
+s(177882)/i(48899),	-- sarian's Pauldrons \\ Thassarian's Pauldrons
+s(177883)/i(48900),	-- lyon's Tunic \\ Turalyon's Tunic
+s(177884)/i(48901),	-- lyon's Spaulders \\ Turalyon's Spaulders
+s(177885)/i(48902),	-- lyon's Headpiece \\ Turalyon's Headpiece
+s(177886)/i(48903),	-- lyon's Greaves \\ Turalyon's Greaves
+s(177887)/i(48904),	-- lyon's Gloves \\ Turalyon's Gloves
+s(177888)/i(48905),	-- rin's Tunic \\ Liadrin's Tunic
+s(177889)/i(48906),	-- rin's Spaulders \\ Liadrin's Spaulders
+s(177890)/i(48907),	-- rin's Headpiece \\ Liadrin's Headpiece
+s(177891)/i(48908),	-- rin's Greaves \\ Liadrin's Greaves
+s(177892)/i(48909),	-- rin's Gloves \\ Liadrin's Gloves
+s(177893)/i(48910),	-- rin's Battleplate \\ Liadrin's Battleplate
+s(177894)/i(48911),	-- rin's Gauntlets \\ Liadrin's Gauntlets
+s(177895)/i(48912),	-- rin's Helm \\ Liadrin's Helm
+s(177896)/i(48913),	-- rin's Legplates \\ Liadrin's Legplates
+s(177897)/i(48914),	-- rin's Shoulderplates \\ Liadrin's Shoulderplates
+s(177898)/i(48915),	-- lyon's Battleplate \\ Turalyon's Battleplate
+s(177899)/i(48916),	-- lyon's Gauntlets \\ Turalyon's Gauntlets
+s(177900)/i(48917),	-- lyon's Helm \\ Turalyon's Helm
+s(177901)/i(48918),	-- lyon's Legplates \\ Turalyon's Legplates
+s(177902)/i(48919),	-- lyon's Shoulderplates \\ Turalyon's Shoulderplates
+s(177903)/i(48922),	-- rin's Breastplate \\ Liadrin's Breastplate
+s(177904)/i(48923),	-- rin's Faceguard \\ Liadrin's Faceguard
+s(177905)/i(48924),	-- rin's Handguards \\ Liadrin's Handguards
+s(177906)/i(48925),	-- rin's Legguards \\ Liadrin's Legguards
+s(177907)/i(48926),	-- rin's Shoulderguards \\ Liadrin's Shoulderguards
+s(177908)/i(48927),	-- lyon's Breastplate \\ Turalyon's Breastplate
+s(177909)/i(48928),	-- lyon's Faceguard \\ Turalyon's Faceguard
+s(177910)/i(48929),	-- lyon's Handguards \\ Turalyon's Handguards
+s(177911)/i(48930),	-- lyon's Legguards \\ Turalyon's Legguards
+s(177912)/i(48931),	-- lyon's Shoulderguards \\ Turalyon's Shoulderguards
 s(177913)/i(48945),	-- ish Thinking Cap \\ Gnomish Thinking Cap
 s(177914)/i(48947),	-- Monster - Axe, 1H Northrend D01
 s(177915)/i(48949),	-- Monster - Axe, 2H Northrend D01 Purple
@@ -34061,7 +34061,7 @@ s(177978)/i(49237),	-- tons of Tortured Space \\ Sabatons of Tortured Space
 s(177979)/i(49238),	-- s of Tortured Space \\ Boots of Tortured Space
 s(177980)/i(49278),	-- in Rocket Pack \\ Goblin Rocket Pack
 s(177981)/i(49291),	-- Monster - Polearm, Icecrown Raid (Vengeance Enchant)
-s(177982)/i(49292),	-- Monster - Sword - Forgemaster 2h \\ Monster - Sword - Forgemaster 2h
+s(177982)/i(49292),	-- Monster - Sword - Forgemaster 2h
 s(177983)/i(49293),	-- Monster - Demise w/ Frost Enchant
 s(177984)/i(49296),	-- ed Vis'kag the Bloodletter \\ Singed Vis'kag the Bloodletter
 s(177985)/i(49297),	-- wered Deathbringer \\ Empowered Deathbringer
@@ -36424,7 +36424,7 @@ s(7234)/i(18163),	-- 10% Test Speed Boots
 s(7235)/i(18164),	-- 13% Test Speed Boots
 s(7236)/i(18165),	-- 15% Test Speed Boots
 s(7473)/i(18747),	-- Item Properties Test
-s(7482)/i(18763),	-- TEST GUN Alliance20 \\ TEST GUN Alliance20
+s(7482)/i(18763),	-- TEST GUN Alliance20
 s(7483)/i(18764),	-- TEST GUN Raid
 s(7484)/i(18765),	-- TEST GUN Horde50
 s(7485)/i(18800),	-- TEST 1H Amberseal Keeper
@@ -38516,7 +38516,7 @@ s(17717)/i(37284),	-- BT55 Cloth Spell Boots4
 s(17718)/i(37285),	-- BT56 Cloth Spell Legs4
 s(17719)/i(37286),	-- BT57 Cloth Healer Glove2
 s(17726)/i(37295),	-- Cloth Spell Head4 \\ HF28 Cloth Spell Head4
-s(17727)/i(37296),	-- BT59 Cloth Spell Gloves4 \\ BT59 Cloth Spell Gloves4
+s(17727)/i(37296),	-- BT59 Cloth Spell Gloves4
 s(17728)/i(37308),	-- Monster - Sword2H, Northrend D03
 s(17729)/i(37309),	-- Monster - Special Arrow (Thori'dal)
 s(17730)/i(37310),	-- Monster - Mace, Stormhammer (Vengeful)
@@ -38533,8 +38533,8 @@ s(17794)/i(37410),	-- ker's Balanced Knives \\ Tracker's Balanced Knives
 s(17800)/i(37420),	-- kproof Boots \\ Sharkproof Boots
 s(17810)/i(37433),	-- red Scale Boots \\ Layered Scale Boots
 s(17820)/i(37444),	-- keeper's Helm \\ Wavekeeper's Helm
-s(17823)/i(37448),	-- BT47 Mail Physical Legs3 \\ BT47 Mail Physical Legs3
-s(17824)/i(37450),	-- BT48 Mail Healer Chest3 \\ BT48 Mail Healer Chest3
+s(17823)/i(37448),	-- BT47 Mail Physical Legs3
+s(17824)/i(37450),	-- BT48 Mail Healer Chest3
 s(17825)/i(37451),	-- BT49 Mail Physical Belt3
 s(17826)/i(37453),	-- BT59 Mail Physical Belt4
 s(17828)/i(37455),	-- BT56 Mail Healer Gloves2
@@ -38549,7 +38549,7 @@ s(17845)/i(37477),	-- Crusader Chestplate \\ Lost Crusader Chestplate
 s(17853)/i(37485),	-- Collector Gauntlets \\ Clam Collector Gauntlets
 s(17861)/i(37510),	-- tguards of Edification \\ Wristguards of Edification
 s(17862)/i(37511),	-- ible Waistguard \\ Crucible Waistguard
-s(17874)/i(37534),	-- BT56 Thrown2 \\ BT56 Thrown2
+s(17874)/i(37534),	-- BT56 Thrown2
 s(17876)/i(37536),	-- BT57 Fast Mace2
 s(17889)/i(37608),	-- Monster - Vrykul - Axe, 1H - Black Glow
 s(17890)/i(37609),	-- Monster - Sword2H, Claymore Silver (Black Glow)
@@ -38562,9 +38562,9 @@ s(18093)/i(37919),	-- Test Scott K Bow
 s(18104)/i(37946),	-- DB14 Cloth Healer Feet
 s(18109)/i(37951),	-- DB21 Cloth Healer Legs
 s(18112)/i(37955),	-- DB26 Healer Cloak
-s(18127)/i(37972),	-- DB49 Cloth Healer Feet2 \\ DB49 Cloth Healer Feet2
+s(18127)/i(37972),	-- DB49 Cloth Healer Feet2
 s(18128)/i(37973),	-- DB51 Cloth Spell Legs3
-s(18129)/i(37974),	-- DB52 Spell Cloak2 \\ DB52 Spell Cloak2
+s(18129)/i(37974),	-- DB52 Spell Cloak2
 s(18130)/i(37975),	-- DB53 Cloth Spell Shoulder3
 s(18131)/i(37977),	-- DB56 Cloth Healer Shoulder2
 s(18132)/i(37978),	-- DB57 Cloth Spell Chest3
@@ -38580,7 +38580,7 @@ s(18171)/i(38021),	-- DB57 Leather Healer Head2
 s(18172)/i(38022),	-- DB58 Leather Physical Shoulder4
 s(18185)/i(38038),	-- DB21 Mail Healer Head
 s(18197)/i(38052),	-- DB42 Leather Healer Shoulder
-s(18203)/i(38058),	-- DB49 Mail Healer Legs2 \\ DB49 Mail Healer Legs2
+s(18203)/i(38058),	-- DB49 Mail Healer Legs2
 s(18204)/i(38060),	-- DB51 Mail Physical Legs3
 s(18205)/i(38061),	-- DB53 Mail Physical Waist3
 s(18206)/i(38062),	-- DB54 Mail Physical Feet3
@@ -38589,7 +38589,7 @@ s(18208)/i(38064),	-- DB56 Mail Healer Bracer2
 s(18209)/i(38065),	-- DB57 Mail Healer Head2
 s(18210)/i(38066),	-- DB58 Mail Healer Feet2
 s(18223)/i(38099),	-- Monster - Axe 2H (EPL Deathknight Trainer)
-s(18237)/i(38113),	-- DB42 Plate Healer Glove2 \\ DB42 Plate Healer Glove2
+s(18237)/i(38113),	-- DB42 Plate Healer Glove2
 s(18243)/i(38119),	-- DB49 Plate Physical Head3
 s(18244)/i(38120),	-- DB51 Plate Physical Bracer3
 s(18245)/i(38121),	-- DB53 Plate Healer Shoulder
@@ -38597,11 +38597,11 @@ s(18246)/i(38122),	-- DB54 Plate Physical Bracer4
 s(18247)/i(38123),	-- DB56 Plate Healer Head2
 s(18248)/i(38124),	-- DB57 Plate Healer Chest2
 s(18249)/i(38125),	-- DB58 Plate Physical Waist4
-s(18260)/i(38136),	-- DB40 Spell Staff3 \\ DB40 Spell Staff3
+s(18260)/i(38136),	-- DB40 Spell Staff3
 s(18263)/i(38139),	-- DB50 Healer Mace3
 s(18264)/i(38140),	-- DB50 Spell Staff4
 s(18278)/i(38158),	-- DB20 Fast Sword
-s(18279)/i(38159),	-- DB20 Slow Right Fist \\ DB20 Slow Right Fist
+s(18279)/i(38159),	-- DB20 Slow Right Fist
 s(18284)/i(38166),	-- DB20 Gun
 s(18286)/i(38168),	-- DB22 Hunter Bow2
 s(18297)/i(38179),	-- DB38 Slow Right Fist2
@@ -38609,9 +38609,9 @@ s(18298)/i(38180),	-- DB40 Slow Left Fist2
 s(18300)/i(38182),	-- DB38 2H Sword2
 s(18301)/i(38183),	-- DB40 Fast Sword2
 s(18302)/i(38184),	-- DB40 Fast Dagger3
-s(18303)/i(38185),	-- DB40 Bow3 \\ DB40 Bow3
+s(18303)/i(38185),	-- DB40 Bow3
 s(18310)/i(38193),	-- DB50 2H Mace3
-s(18316)/i(38199),	-- DB50 Slow Sword3 \\ DB50 Slow Sword3
+s(18316)/i(38199),	-- DB50 Slow Sword3
 s(18317)/i(38200),	-- DB50 Crossbow3
 s(18318)/i(38201),	-- DB14 Spell Wand
 s(18320)/i(38203),	-- DB38 Healer Wand2
@@ -38753,10 +38753,10 @@ s(19076)/i(39751),	-- Monster - Mace, Northrend C01
 s(19077)/i(39752),	-- Monster - Mace, Thaurissan Hammer (Lightning)
 s(19078)/i(39753),	-- Monster - Mace, Nexus (Ice)(2H)
 s(19079)/i(39754),	-- Monster - Sword, Northrend Iron Dwarf
-s(19129)/i(39813),	-- QR ZD25 Cloth Spell Glove2 - PH \\ QR ZD25 Cloth Spell Glove2 - PH
+s(19129)/i(39813),	-- QR ZD25 Cloth Spell Glove2 - PH
 s(19142)/i(39828),	-- sher's Cloak \\ Punisher's Cloak
-s(19145)/i(39832),	-- QR ZD26 Spell Offhand - PH \\ QR ZD26 Spell Offhand - PH
-s(19189)/i(39879),	-- QR ZD25 Leather Physical Shoulder2 - PH \\ QR ZD25 Leather Physical Shoulder2 - PH
+s(19145)/i(39832),	-- QR ZD26 Spell Offhand - PH
+s(19189)/i(39879),	-- QR ZD25 Leather Physical Shoulder2 - PH
 s(19193)/i(39884),	-- QR ZD25 Mail Physical Feet2 - PH
 s(19194)/i(39885),	-- QR ZD25 Plate Physical Chest2 - PH
 s(19200)/i(39892),	-- Monster - Staff, Northrend B03 Gold (Fiery)
@@ -38994,7 +38994,7 @@ s(21246)/i(43936),	-- lesurgeon's Gauntlets \\ Battlesurgeon's Gauntlets
 s(21248)/i(43938),	-- of Rising Hope \\ Belt of Rising Hope
 s(21259)/i(43967),	-- Monster - Sword, 1H Northrend C01
 s(21274)/i(43985),	-- [UNUSED]Goblin Jumping Boots
-s(21324)/i(44056),	-- Monster - Axe, 1H Nexus D01 \\ Monster - Axe, 1H Nexus D01
+s(21324)/i(44056),	-- Monster - Axe, 1H Nexus D01
 s(21331)/i(44090),	-- Test Mail Shoulder 2
 s(21332)/i(44091),	-- pened Scarlet Kris \\ Sharpened Scarlet Kris
 s(21333)/i(44092),	-- rged Truesilver Champion \\ Reforged Truesilver Champion
@@ -39117,7 +39117,7 @@ s(24011)/i(49206),	-- Monster - Mace1H, Warhammer Ebony - White Flame
 s(24035)/i(49257),	-- Seashell Throwing Axe \\ hell Throwing Axe
 s(24036)/i(49258),	-- Light Throwing Tusk \\ t Throwing Tusk
 s(24056)/i(49291),	-- Monster - Polearm, Icecrown Raid (Vengeance Enchant)
-s(24057)/i(49292),	-- Monster - Sword - Forgemaster 2h \\ Monster - Sword - Forgemaster 2h
+s(24057)/i(49292),	-- Monster - Sword - Forgemaster 2h
 s(24058)/i(49293),	-- Monster - Demise w/ Frost Enchant
 s(24070)/i(49311),	-- Monster - Staff, Jeweled D01 Blue (Med Blue Glow)
 s(24090)/i(49340),	-- Monster - Icecrown - 1H Sword - D03 - Blue
@@ -39263,6 +39263,7 @@ s(25600)/i(51880),	-- h's Fetching Knife \\ Gluth's Fetching Knife
 s(25662)/i(51949),	-- Monster - Polearm, Epic D 07 (Val'kyr)
 s(25691)/i(51986),	-- Stalwart Wrap
 s(25693)/i(51988),	-- Stalwart Handguards
+s(25708)/i(52019),	-- Precious' Ribbon \\ ious' Ribbon \\ Precious's Ribbon
 s(25712)/i(52037),	-- Monster - Mace, Bloodqueen - D01
 s(25740)/i(52519),	--
 s(25741)/i(52520),	--
@@ -64682,7 +64683,6 @@ s(184133)/i(202148),	-- Emissary's Flamewrought Seal
 s(184158)/i(200318),	-- Crystal Scholar's Cowl \\ [PH] 10.0 Raid - Vault of the Incarnates - Class Sets - Mage - Armor - Cloth -  Head
 s(184159)/i(200318),	-- Crystal Scholar's Cowl \\ [PH] 10.0 Raid - Vault of the Incarnates - Class Sets - Mage - Armor - Cloth -  Head
 10.0.5.47799
-s(169016)/i(190802),	-- Drape of Endless Twilight
 s(169019)/i(190805),	--
 s(169021)/i(190807),	--
 s(169027)/i(190813),	--
@@ -64998,7 +64998,6 @@ s(189587)/i(208136),	--
 s(189074)/i(208025),	--
 s(189582)/i(208083),	--
 s(189608)/i(208197),	--
-s(189610)/i(208199),	-- Tabard of the Tyr's Guard
 10.1.7.51313
 s(189613)/i(208225),	--
 s(190151)/i(208844),	--
@@ -65680,94 +65679,6 @@ s(189576)/i(207248),	-- Mystic Heron's Burdens \\ 10.2 Raid - Emerald Dream - Cl
 s(189577)/i(207248),	-- Mystic Heron's Burdens \\ 10.2 Raid - Emerald Dream - Class Sets - Monk - Armor - Leather - Chest
 s(189578)/i(207248),	-- Mystic Heron's Burdens \\ 10.2 Raid - Emerald Dream - Class Sets - Monk - Armor - Leather - Chest
 s(189579)/i(207248),	-- Mystic Heron's Burdens \\ 10.2 Raid - Emerald Dream - Class Sets - Monk - Armor - Leather - Chest
-s(189617)/i(208239),	-- Verdant Combatant's Resilient Boots
-s(189618)/i(208240),	-- Verdant Combatant's Resilient Chestpiece
-s(189619)/i(208241),	-- Verdant Combatant's Resilient Mask
-s(189620)/i(208242),	-- Verdant Combatant's Resilient Shoulderpads
-s(189621)/i(208243),	-- Verdant Combatant's Resilient Belt
-s(189622)/i(208244),	-- Verdant Combatant's Resilient Trousers
-s(189623)/i(208245),	-- Verdant Combatant's Resilient Gloves
-s(189624)/i(208246),	-- Verdant Combatant's Resilient Wristwraps
-s(189625)/i(208247),	-- Verdant Combatant's Adamant Treads
-s(189626)/i(208248),	-- Verdant Combatant's Adamant Chainmail
-s(189627)/i(208249),	-- Verdant Combatant's Adamant Cowl
-s(189628)/i(208250),	-- Verdant Combatant's Adamant Epaulets \\ Verdant Combatant's Adamant Epaulettes
-s(189629)/i(208251),	-- Verdant Combatant's Adamant Girdle
-s(189630)/i(208252),	-- Verdant Combatant's Adamant Leggings
-s(189631)/i(208253),	-- Verdant Combatant's Adamant Gauntlets
-s(189632)/i(208254),	-- Verdant Combatant's Adamant Cuffs
-s(189633)/i(208255),	-- Verdant Combatant's Wildercloth Leggings
-s(189634)/i(208256),	-- Verdant Combatant's Wildercloth Shoulderpads
-s(189635)/i(208257),	-- Verdant Combatant's Wildercloth Treads
-s(189636)/i(208258),	-- Verdant Combatant's Wildercloth Bands
-s(189637)/i(208259),	-- Verdant Combatant's Wildercloth Hood
-s(189638)/i(208260),	-- Verdant Combatant's Wildercloth Gloves
-s(189639)/i(208261),	-- Verdant Combatant's Wildercloth Tunic
-s(189640)/i(208262),	-- Verdant Combatant's Wildercloth Sash
-s(189641)/i(208263),	-- Verdant Combatant's Wildercloth Cloak
-s(189642)/i(208264),	-- Verdant Combatant's Draconium Breastplate
-s(189643)/i(208265),	-- Verdant Combatant's Draconium Sabatons
-s(189644)/i(208266),	-- Verdant Combatant's Draconium Gauntlets
-s(189645)/i(208267),	-- Verdant Combatant's Draconium Helm
-s(189646)/i(208268),	-- Verdant Combatant's Draconium Greaves
-s(189647)/i(208269),	-- Verdant Combatant's Draconium Pauldrons
-s(189648)/i(208270),	-- Verdant Combatant's Draconium Waistguard
-s(189649)/i(208271),	-- Verdant Combatant's Draconium Armguards
-s(189650)/i(208313),	-- Verdant Combatant's Cloth Goggles
-s(189651)/i(208314),	-- Verdant Combatant's Leather Goggles
-s(189652)/i(208315),	-- Verdant Combatant's Mail Goggles
-s(189653)/i(208316),	-- Verdant Combatant's Plate Goggles
-s(189655)/i(208322),	-- Treads of the Nightclaw
-s(189656)/i(208323),	-- Nature's Firebathed Robes
-s(189657)/i(208324),	-- Scorching Dryad's Chestpiece
-s(189658)/i(208325),	-- Ignit's Fiery Heart
-s(189659)/i(208326),	-- Vest of the Flametide
-s(189660)/i(208327),	-- Maruud's Piercing Hands
-s(189661)/i(208328),	-- Fystia's Deft Hands
-s(189662)/i(208329),	-- Warm Grasp of the Dream
-s(189663)/i(208330),	-- Piercing Touch of the Vine
-s(189664)/i(208331),	-- Cowl of the Flame
-s(189665)/i(208332),	-- Horns of the Envoy
-s(189666)/i(208333),	-- Fallen Flame's Crown
-s(189667)/i(208334),	-- Legplates of the Krakken
-s(189668)/i(208335),	-- Vibrant Fall Leggings
-s(189669)/i(208336),	-- Legguards of the Dreamsaber
-s(189670)/i(208337),	-- Leaf Steward's Leggings
-s(189671)/i(208338),	-- Furious Flame's Shoulders
-s(189672)/i(208339),	-- Saber's Stone Pauldrons
-s(189673)/i(208340),	-- Stag's Flourishing Mantle
-s(189674)/i(208341),	-- Fire-Runed Spaulders
-s(189675)/i(208342),	-- Girdle of Nature's Fury
-s(189676)/i(208343),	-- Matriarch's Flowery Band
-s(189677)/i(208344),	-- Sash of the Fruit Thief
-s(189678)/i(208345),	-- Forgebreaker's Belt
-s(189679)/i(208346),	-- Singed Barkbands
-s(189680)/i(208347),	-- Stone Wolf's Cuffs
-s(189681)/i(208348),	-- Binds of the Shatterer
-s(189682)/i(208349),	-- Burning Leather Cuffs
-s(189683)/i(208356),	-- Earthbound Furbolg's Shroud
-s(189684)/i(208357),	-- Henri's Warm Coat
-s(189685)/i(208358),	-- Sunset's Bulwark
-s(189686)/i(208359),	-- Nightclaw's Bauble
-s(189688)/i(208361),	-- Splinterlimb's Branch
-s(189690)/i(208363),	-- Twinfang of the Cian
-s(189691)/i(208364),	-- Falling Leaf Saber
-s(189692)/i(208365),	-- Winter's Stand
-s(189694)/i(208367),	-- Lasher's Red Thorn
-s(189696)/i(208369),	-- Druid's Vengeful Gaze
-s(189697)/i(208370),	-- The Apostle's Steps
-s(189698)/i(208371),	-- Fire Assassin's Boots
-s(189699)/i(208372),	-- Trickster's Tip Toers
-s(189700)/i(208374),	-- Talthornei's Wrath
-s(189701)/i(208375),	-- Owlbear's Decisive Strike
-s(189702)/i(208376),	-- Great Ray's Longbow
-s(189705)/i(208379),	-- Keevah's Extended Claw
-s(189706)/i(208380),	-- Moragh's Kneading Claw
-s(189707)/i(208381),	-- Scepter of Still Waters
-s(189709)/i(208383),	-- Pommel of Fire
-s(189711)/i(208385),	-- Flame Endowed Blade
-s(189714)/i(208388),	-- Leafster's Magic Wand
-s(189715)/i(208389),	-- Spear of the Wilds
 s(189732)/i(208420),	-- Visage of the Devouring Flame \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leather - HEAD 2
 s(189736)/i(208426),	-- Mask of the Unbidden Grim \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - HEAD 2
 s(189737)/i(208427),	-- Insurgent Flame Warboots \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - FEET 3
@@ -65885,527 +65796,29 @@ s(190081)/i(207284),	-- Cassock of Lunar Communion \\ 10.2 Raid - Emerald Dream 
 s(190082)/i(207284),	-- Cassock of Lunar Communion \\ 10.2 Raid - Emerald Dream - Class Sets - Priest - Armor - Cloth - Chest
 s(190083)/i(207284),	-- Cassock of Lunar Communion \\ 10.2 Raid - Emerald Dream - Class Sets - Priest - Armor - Cloth - Chest
 s(190084)/i(207284),	-- Cassock of Lunar Communion \\ 10.2 Raid - Emerald Dream - Class Sets - Priest - Armor - Cloth - Chest
-s(190086)/i(208693),	-- Battle Magister's Orbs
-s(190087)/i(208694),	-- Battle Magister's Epaulets
-s(190088)/i(208695),	-- Battle Magister's Belt
-s(190089)/i(208696),	-- Battle Magister's Scimitar
-s(190090)/i(208697),	-- Battle Magister's Shard
-s(190091)/i(208698),	-- Battle Magister's Scepter
-s(190092)/i(208706),	-- Horns of the Silver Hoarder
-s(190093)/i(208707),	-- Shoulderguards of the Silver Hoarder
-s(190094)/i(208708),	-- Sash of the Silver Hoarder
-s(190095)/i(208709),	-- Flight of the Silver Hoarder
-s(190096)/i(208710),	-- Flames of the Silver Hoarder
-s(190097)/i(208711),	-- Saber of the Silver Hoarder
-s(190098)/i(208712),	-- Headdress of Krag'wa's Executor
-s(190099)/i(208713),	-- Idols of Krag'wa's Executor
-s(190100)/i(208714),	-- Vines of Krag'wa's Executor
-s(190101)/i(208715),	-- Safeguard of Krag'wa's Executor
-s(190102)/i(208716),	-- Hatchet of Krag'wa's Executor
-s(190103)/i(208717),	-- Talons of Krag'wa's Executor
-s(190104)/i(208718),	-- Hornstrider Hunter's Beak \\ Hornstrider Warrior's Beak
-s(190105)/i(208719),	-- Hornstrider Hunter's Ammunition \\ Hornstrider Warrior's Ammunition
-s(190106)/i(208720),	-- Hornstrider Hunter's Crest \\ Hornstrider Warrior's Crest
-s(190107)/i(208721),	-- Hornstrider Hunter's Serrator \\ Hornstrider Warrior's Serrator
-s(190108)/i(208722),	-- Hornstrider Hunter's Pride \\ Hornstrider Warrior's Pride
-s(190109)/i(208723),	-- Hornstrider Hunter's Harpooner \\ Hornstrider Warrior's Harpooner
-s(190165)/i(208979),	-- 10.2 Monster - Merithra - Robe
-s(190166)/i(208981),	-- 10.2 Monster - Merithra - Wrist
-s(190167)/i(208982),	-- 10.2 Monster - Merithra - Waist
 s(190180)/i(209069),	-- Verdant Gladiator's Silk Tunic
-s(190181)/i(209069),	-- Verdant Gladiator's Silk Tunic
 s(190182)/i(209070),	-- Verdant Gladiator's Silk Blouse
-s(190183)/i(209070),	-- Verdant Gladiator's Silk Blouse
 s(190184)/i(209071),	-- Verdant Gladiator's Silk Slippers
-s(190185)/i(209071),	-- Verdant Gladiator's Silk Slippers
 s(190186)/i(209072),	-- Verdant Gladiator's Silk Treads
-s(190187)/i(209072),	-- Verdant Gladiator's Silk Treads
 s(190188)/i(209073),	-- Verdant Gladiator's Silk Gloves
-s(190189)/i(209073),	-- Verdant Gladiator's Silk Gloves
 s(190190)/i(209074),	-- Verdant Gladiator's Silk Handwraps
-s(190191)/i(209074),	-- Verdant Gladiator's Silk Handwraps
-s(190192)/i(209075),	-- Verdant Gladiator's Silk Hat
-s(190193)/i(209075),	-- Verdant Gladiator's Silk Hat
-s(190196)/i(209076),	-- Verdant Gladiator's Silk Cap
-s(190197)/i(209076),	-- Verdant Gladiator's Silk Cap
-s(190198)/i(209077),	-- Verdant Gladiator's Silk Leggings
-s(190199)/i(209077),	-- Verdant Gladiator's Silk Leggings
-s(190200)/i(209078),	-- Verdant Gladiator's Silk Trousers
-s(190201)/i(209078),	-- Verdant Gladiator's Silk Trousers
-s(190202)/i(209079),	-- Verdant Gladiator's Silk Mantle
-s(190203)/i(209079),	-- Verdant Gladiator's Silk Mantle
-s(190204)/i(209080),	-- Verdant Gladiator's Silk Amice
-s(190205)/i(209080),	-- Verdant Gladiator's Silk Amice
-s(190206)/i(209081),	-- Verdant Gladiator's Silk Cord
-s(190207)/i(209081),	-- Verdant Gladiator's Silk Cord
-s(190208)/i(209082),	-- Verdant Gladiator's Silk Belt
-s(190209)/i(209082),	-- Verdant Gladiator's Silk Belt
-s(190210)/i(209083),	-- Verdant Gladiator's Silk Wristwraps
-s(190211)/i(209083),	-- Verdant Gladiator's Silk Wristwraps
-s(190212)/i(209084),	-- Verdant Gladiator's Silk Armbands
-s(190213)/i(209084),	-- Verdant Gladiator's Silk Armbands
-s(190214)/i(209085),	-- Verdant Gladiator's Cloak
-s(190215)/i(209085),	-- Verdant Gladiator's Cloak
-s(190216)/i(209086),	-- Verdant Gladiator's Drape
-s(190217)/i(209086),	-- Verdant Gladiator's Drape
-s(190218)/i(209087),	-- Verdant Gladiator's Shawl
-s(190219)/i(209087),	-- Verdant Gladiator's Shawl
-s(190220)/i(209088),	-- Verdant Gladiator's Silk Tunic
-s(190221)/i(209088),	-- Verdant Gladiator's Silk Tunic
-s(190222)/i(209089),	-- Verdant Gladiator's Silk Blouse
-s(190223)/i(209089),	-- Verdant Gladiator's Silk Blouse
-s(190224)/i(209090),	-- Verdant Gladiator's Silk Slippers
-s(190225)/i(209090),	-- Verdant Gladiator's Silk Slippers
-s(190226)/i(209091),	-- Verdant Gladiator's Silk Treads
-s(190227)/i(209091),	-- Verdant Gladiator's Silk Treads
-s(190228)/i(209092),	-- Verdant Gladiator's Silk Gloves
-s(190229)/i(209092),	-- Verdant Gladiator's Silk Gloves
-s(190230)/i(209093),	-- Verdant Gladiator's Silk Handwraps
-s(190231)/i(209093),	-- Verdant Gladiator's Silk Handwraps
-s(190232)/i(209094),	-- Verdant Gladiator's Silk Hood
-s(190233)/i(209094),	-- Verdant Gladiator's Silk Hood
-s(190234)/i(209095),	-- Verdant Gladiator's Silk Guise
-s(190235)/i(209095),	-- Verdant Gladiator's Silk Guise
-s(190236)/i(209096),	-- Verdant Gladiator's Silk Leggings
-s(190237)/i(209096),	-- Verdant Gladiator's Silk Leggings
-s(190238)/i(209097),	-- Verdant Gladiator's Silk Trousers
-s(190239)/i(209097),	-- Verdant Gladiator's Silk Trousers
-s(190240)/i(209098),	-- Verdant Gladiator's Silk Mantle
-s(190241)/i(209098),	-- Verdant Gladiator's Silk Mantle
-s(190242)/i(209099),	-- Verdant Gladiator's Silk Amice
-s(190243)/i(209099),	-- Verdant Gladiator's Silk Amice
-s(190244)/i(209100),	-- Verdant Gladiator's Silk Cord
-s(190245)/i(209100),	-- Verdant Gladiator's Silk Cord
-s(190246)/i(209101),	-- Verdant Gladiator's Silk Belt
-s(190247)/i(209101),	-- Verdant Gladiator's Silk Belt
-s(190248)/i(209102),	-- Verdant Gladiator's Silk Wristwraps
-s(190249)/i(209102),	-- Verdant Gladiator's Silk Wristwraps
-s(190250)/i(209103),	-- Verdant Gladiator's Silk Armbands
-s(190251)/i(209103),	-- Verdant Gladiator's Silk Armbands
-s(190252)/i(209104),	-- Verdant Gladiator's Cloak
-s(190253)/i(209104),	-- Verdant Gladiator's Cloak
-s(190254)/i(209105),	-- Verdant Gladiator's Drape
-s(190255)/i(209105),	-- Verdant Gladiator's Drape
-s(190256)/i(209106),	-- Verdant Gladiator's Shawl
-s(190257)/i(209106),	-- Verdant Gladiator's Shawl
-s(190258)/i(209107),	-- Verdant Gladiator's Silk Robe
-s(190259)/i(209107),	-- Verdant Gladiator's Silk Robe
-s(190260)/i(209108),	-- Verdant Gladiator's Silk Vestments
-s(190261)/i(209108),	-- Verdant Gladiator's Silk Vestments
-s(190262)/i(209109),	-- Verdant Gladiator's Silk Slippers
-s(190263)/i(209109),	-- Verdant Gladiator's Silk Slippers
-s(190264)/i(209110),	-- Verdant Gladiator's Silk Treads
-s(190265)/i(209110),	-- Verdant Gladiator's Silk Treads
-s(190266)/i(209111),	-- Verdant Gladiator's Silk Gloves
-s(190267)/i(209111),	-- Verdant Gladiator's Silk Gloves
-s(190268)/i(209112),	-- Verdant Gladiator's Silk Handwraps
-s(190269)/i(209112),	-- Verdant Gladiator's Silk Handwraps
-s(190270)/i(209113),	-- Verdant Gladiator's Silk Hood
-s(190271)/i(209113),	-- Verdant Gladiator's Silk Hood
-s(190272)/i(209114),	-- Verdant Gladiator's Silk Guise
-s(190273)/i(209114),	-- Verdant Gladiator's Silk Guise
-s(190274)/i(209115),	-- Verdant Gladiator's Silk Leggings
-s(190275)/i(209115),	-- Verdant Gladiator's Silk Leggings
-s(190276)/i(209116),	-- Verdant Gladiator's Silk Trousers
-s(190277)/i(209116),	-- Verdant Gladiator's Silk Trousers
-s(190278)/i(209117),	-- Verdant Gladiator's Silk Mantle
-s(190279)/i(209117),	-- Verdant Gladiator's Silk Mantle
-s(190280)/i(209118),	-- Verdant Gladiator's Silk Amice
-s(190281)/i(209118),	-- Verdant Gladiator's Silk Amice
-s(190282)/i(209119),	-- Verdant Gladiator's Silk Cord
-s(190283)/i(209119),	-- Verdant Gladiator's Silk Cord
-s(190284)/i(209120),	-- Verdant Gladiator's Silk Belt
-s(190285)/i(209120),	-- Verdant Gladiator's Silk Belt
-s(190286)/i(209121),	-- Verdant Gladiator's Silk Wristwraps
-s(190287)/i(209121),	-- Verdant Gladiator's Silk Wristwraps
 s(190288)/i(209122),	-- Verdant Gladiator's Silk Armbands
-s(190289)/i(209122),	-- Verdant Gladiator's Silk Armbands
 s(190290)/i(209123),	-- Verdant Gladiator's Cloak
-s(190291)/i(209123),	-- Verdant Gladiator's Cloak
 s(190292)/i(209124),	-- Verdant Gladiator's Drape
-s(190293)/i(209124),	-- Verdant Gladiator's Drape
 s(190294)/i(209125),	-- Verdant Gladiator's Shawl
-s(190295)/i(209125),	-- Verdant Gladiator's Shawl
 s(190296)/i(209126),	-- Verdant Gladiator's Leather Robe \\ Verdant Gladiator's Leather Vest
-s(190297)/i(209126),	-- Verdant Gladiator's Leather Robe \\ Verdant Gladiator's Leather Vest
 s(190298)/i(209127),	-- Verdant Gladiator's Leather Vestments \\ Verdant Gladiator's Leather Jerkin
-s(190299)/i(209127),	-- Verdant Gladiator's Leather Vestments \\ Verdant Gladiator's Leather Jerkin
 s(190300)/i(209128),	-- Verdant Gladiator's Leather Boots
-s(190301)/i(209128),	-- Verdant Gladiator's Leather Boots
 s(190302)/i(209129),	-- Verdant Gladiator's Leather Treads
-s(190303)/i(209129),	-- Verdant Gladiator's Leather Treads
 s(190304)/i(209130),	-- Verdant Gladiator's Leather Gloves
-s(190305)/i(209130),	-- Verdant Gladiator's Leather Gloves
 s(190306)/i(209131),	-- Verdant Gladiator's Leather Grips
-s(190307)/i(209131),	-- Verdant Gladiator's Leather Grips
 s(190308)/i(209132),	-- Verdant Gladiator's Leather Helm
-s(190309)/i(209132),	-- Verdant Gladiator's Leather Helm
 s(190310)/i(209133),	-- Verdant Gladiator's Leather Mask
-s(190311)/i(209133),	-- Verdant Gladiator's Leather Mask
 s(190312)/i(209134),	-- Verdant Gladiator's Leather Breeches
-s(190313)/i(209134),	-- Verdant Gladiator's Leather Breeches
 s(190314)/i(209135),	-- Verdant Gladiator's Leather Legwraps
-s(190315)/i(209135),	-- Verdant Gladiator's Leather Legwraps
 s(190316)/i(209136),	-- Verdant Gladiator's Leather Spaulders
-s(190317)/i(209136),	-- Verdant Gladiator's Leather Spaulders
 s(190318)/i(209137),	-- Verdant Gladiator's Leather Shoulderpads
-s(190319)/i(209137),	-- Verdant Gladiator's Leather Shoulderpads
 s(190320)/i(209138),	-- Verdant Gladiator's Leather Belt
-s(190321)/i(209138),	-- Verdant Gladiator's Leather Belt
-s(190322)/i(209139),	-- Verdant Gladiator's Leather Strap
-s(190323)/i(209139),	-- Verdant Gladiator's Leather Strap
-s(190324)/i(209140),	-- Verdant Gladiator's Leather Wristwraps
-s(190325)/i(209140),	-- Verdant Gladiator's Leather Wristwraps
-s(190326)/i(209141),	-- Verdant Gladiator's Leather Wristguards
-s(190327)/i(209141),	-- Verdant Gladiator's Leather Wristguards
-s(190328)/i(209142),	-- Verdant Gladiator's Cloak
-s(190329)/i(209142),	-- Verdant Gladiator's Cloak
-s(190330)/i(209143),	-- Verdant Gladiator's Drape
-s(190331)/i(209143),	-- Verdant Gladiator's Drape
-s(190332)/i(209144),	-- Verdant Gladiator's Shawl
-s(190333)/i(209144),	-- Verdant Gladiator's Shawl
-s(190334)/i(209145),	-- Verdant Gladiator's Leather Vest
-s(190335)/i(209145),	-- Verdant Gladiator's Leather Vest
-s(190336)/i(209146),	-- Verdant Gladiator's Leather Jerkin
-s(190337)/i(209146),	-- Verdant Gladiator's Leather Jerkin
-s(190338)/i(209147),	-- Verdant Gladiator's Leather Boots
-s(190339)/i(209147),	-- Verdant Gladiator's Leather Boots
-s(190340)/i(209148),	-- Verdant Gladiator's Leather Treads
-s(190341)/i(209148),	-- Verdant Gladiator's Leather Treads
-s(190342)/i(209149),	-- Verdant Gladiator's Leather Gloves
-s(190343)/i(209149),	-- Verdant Gladiator's Leather Gloves
-s(190344)/i(209150),	-- Verdant Gladiator's Leather Grips
-s(190345)/i(209150),	-- Verdant Gladiator's Leather Grips
-s(190346)/i(209151),	-- Verdant Gladiator's Leather Helm
-s(190347)/i(209151),	-- Verdant Gladiator's Leather Helm
-s(190348)/i(209152),	-- Verdant Gladiator's Leather Mask
-s(190349)/i(209152),	-- Verdant Gladiator's Leather Mask
-s(190350)/i(209153),	-- Verdant Gladiator's Leather Breeches
-s(190351)/i(209153),	-- Verdant Gladiator's Leather Breeches
-s(190352)/i(209154),	-- Verdant Gladiator's Leather Legwraps
-s(190353)/i(209154),	-- Verdant Gladiator's Leather Legwraps
-s(190354)/i(209155),	-- Verdant Gladiator's Leather Spaulders
-s(190355)/i(209155),	-- Verdant Gladiator's Leather Spaulders
-s(190356)/i(209156),	-- Verdant Gladiator's Leather Shoulderpads
-s(190357)/i(209156),	-- Verdant Gladiator's Leather Shoulderpads
-s(190358)/i(209157),	-- Verdant Gladiator's Leather Belt
-s(190359)/i(209157),	-- Verdant Gladiator's Leather Belt
-s(190360)/i(209158),	-- Verdant Gladiator's Leather Strap
-s(190361)/i(209158),	-- Verdant Gladiator's Leather Strap
-s(190362)/i(209159),	-- Verdant Gladiator's Leather Wristwraps
-s(190363)/i(209159),	-- Verdant Gladiator's Leather Wristwraps
-s(190364)/i(209160),	-- Verdant Gladiator's Leather Wristguards
-s(190365)/i(209160),	-- Verdant Gladiator's Leather Wristguards
-s(190366)/i(209161),	-- Verdant Gladiator's Cloak
-s(190367)/i(209161),	-- Verdant Gladiator's Cloak
-s(190368)/i(209162),	-- Verdant Gladiator's Drape
-s(190369)/i(209162),	-- Verdant Gladiator's Drape
-s(190370)/i(209163),	-- Verdant Gladiator's Shawl
-s(190371)/i(209163),	-- Verdant Gladiator's Shawl
-s(190372)/i(209164),	-- Verdant Gladiator's Leather Vest
-s(190373)/i(209164),	-- Verdant Gladiator's Leather Vest
-s(190374)/i(209165),	-- Verdant Gladiator's Leather Jerkin
-s(190375)/i(209165),	-- Verdant Gladiator's Leather Jerkin
-s(190376)/i(209166),	-- Verdant Gladiator's Leather Boots
-s(190377)/i(209166),	-- Verdant Gladiator's Leather Boots
-s(190378)/i(209167),	-- Verdant Gladiator's Leather Treads
-s(190379)/i(209167),	-- Verdant Gladiator's Leather Treads
-s(190380)/i(209168),	-- Verdant Gladiator's Leather Gloves
-s(190381)/i(209168),	-- Verdant Gladiator's Leather Gloves
-s(190382)/i(209169),	-- Verdant Gladiator's Leather Grips
-s(190383)/i(209169),	-- Verdant Gladiator's Leather Grips
-s(190384)/i(209170),	-- Verdant Gladiator's Leather Helm
-s(190385)/i(209170),	-- Verdant Gladiator's Leather Helm
-s(190386)/i(209171),	-- Verdant Gladiator's Leather Mask
-s(190387)/i(209171),	-- Verdant Gladiator's Leather Mask
-s(190388)/i(209172),	-- Verdant Gladiator's Leather Breeches
-s(190389)/i(209172),	-- Verdant Gladiator's Leather Breeches
-s(190390)/i(209173),	-- Verdant Gladiator's Leather Legwraps
-s(190391)/i(209173),	-- Verdant Gladiator's Leather Legwraps
-s(190392)/i(209174),	-- Verdant Gladiator's Leather Spaulders
-s(190393)/i(209174),	-- Verdant Gladiator's Leather Spaulders
-s(190394)/i(209175),	-- Verdant Gladiator's Leather Shoulderpads
-s(190395)/i(209175),	-- Verdant Gladiator's Leather Shoulderpads
-s(190396)/i(209176),	-- Verdant Gladiator's Leather Belt
-s(190397)/i(209176),	-- Verdant Gladiator's Leather Belt
-s(190398)/i(209177),	-- Verdant Gladiator's Leather Strap
-s(190399)/i(209177),	-- Verdant Gladiator's Leather Strap
-s(190400)/i(209178),	-- Verdant Gladiator's Leather Wristwraps
-s(190401)/i(209178),	-- Verdant Gladiator's Leather Wristwraps
-s(190402)/i(209179),	-- Verdant Gladiator's Leather Wristguards
-s(190403)/i(209179),	-- Verdant Gladiator's Leather Wristguards
-s(190404)/i(209180),	-- Verdant Gladiator's Cloak
-s(190405)/i(209180),	-- Verdant Gladiator's Cloak
-s(190406)/i(209181),	-- Verdant Gladiator's Drape
-s(190407)/i(209181),	-- Verdant Gladiator's Drape
-s(190408)/i(209182),	-- Verdant Gladiator's Shawl
-s(190409)/i(209182),	-- Verdant Gladiator's Shawl
-s(190410)/i(209183),	-- Verdant Gladiator's Leather Vest
-s(190411)/i(209183),	-- Verdant Gladiator's Leather Vest
-s(190412)/i(209184),	-- Verdant Gladiator's Leather Jerkin
-s(190413)/i(209184),	-- Verdant Gladiator's Leather Jerkin
-s(190414)/i(209185),	-- Verdant Gladiator's Leather Boots
-s(190415)/i(209185),	-- Verdant Gladiator's Leather Boots
-s(190416)/i(209186),	-- Verdant Gladiator's Leather Treads
-s(190417)/i(209186),	-- Verdant Gladiator's Leather Treads
-s(190418)/i(209187),	-- Verdant Gladiator's Leather Gloves
-s(190419)/i(209187),	-- Verdant Gladiator's Leather Gloves
-s(190420)/i(209188),	-- Verdant Gladiator's Leather Grips
-s(190421)/i(209188),	-- Verdant Gladiator's Leather Grips
-s(190422)/i(209189),	-- Verdant Gladiator's Leather Helm
-s(190423)/i(209189),	-- Verdant Gladiator's Leather Helm
-s(190424)/i(209190),	-- Verdant Gladiator's Leather Mask
-s(190425)/i(209190),	-- Verdant Gladiator's Leather Mask
-s(190426)/i(209191),	-- Verdant Gladiator's Leather Breeches
-s(190427)/i(209191),	-- Verdant Gladiator's Leather Breeches
-s(190428)/i(209192),	-- Verdant Gladiator's Leather Legwraps
-s(190429)/i(209192),	-- Verdant Gladiator's Leather Legwraps
-s(190430)/i(209193),	-- Verdant Gladiator's Leather Spaulders
-s(190431)/i(209193),	-- Verdant Gladiator's Leather Spaulders
-s(190432)/i(209194),	-- Verdant Gladiator's Leather Shoulderpads
-s(190433)/i(209194),	-- Verdant Gladiator's Leather Shoulderpads
-s(190434)/i(209195),	-- Verdant Gladiator's Leather Belt
-s(190435)/i(209195),	-- Verdant Gladiator's Leather Belt
-s(190436)/i(209196),	-- Verdant Gladiator's Leather Strap
-s(190437)/i(209196),	-- Verdant Gladiator's Leather Strap
-s(190438)/i(209197),	-- Verdant Gladiator's Leather Wristwraps
-s(190439)/i(209197),	-- Verdant Gladiator's Leather Wristwraps
-s(190440)/i(209198),	-- Verdant Gladiator's Leather Wristguards
-s(190441)/i(209198),	-- Verdant Gladiator's Leather Wristguards
-s(190442)/i(209199),	-- Verdant Gladiator's Cloak
-s(190443)/i(209199),	-- Verdant Gladiator's Cloak
-s(190444)/i(209200),	-- Verdant Gladiator's Drape
-s(190445)/i(209200),	-- Verdant Gladiator's Drape
-s(190446)/i(209201),	-- Verdant Gladiator's Shawl
-s(190447)/i(209201),	-- Verdant Gladiator's Shawl
-s(190448)/i(209202),	-- Verdant Gladiator's Chain Vest
-s(190449)/i(209202),	-- Verdant Gladiator's Chain Vest
-s(190450)/i(209203),	-- Verdant Gladiator's Chain Tunic
-s(190451)/i(209203),	-- Verdant Gladiator's Chain Tunic
-s(190452)/i(209204),	-- Verdant Gladiator's Chain Sabatons
-s(190453)/i(209204),	-- Verdant Gladiator's Chain Sabatons
-s(190454)/i(209205),	-- Verdant Gladiator's Chain Boots
-s(190455)/i(209205),	-- Verdant Gladiator's Chain Boots
-s(190456)/i(209206),	-- Verdant Gladiator's Chain Gauntlets
-s(190457)/i(209206),	-- Verdant Gladiator's Chain Gauntlets
-s(190458)/i(209207),	-- Verdant Gladiator's Chain Handguards
-s(190459)/i(209207),	-- Verdant Gladiator's Chain Handguards
-s(190460)/i(209208),	-- Verdant Gladiator's Chain Helm
-s(190461)/i(209208),	-- Verdant Gladiator's Chain Helm
-s(190462)/i(209209),	-- Verdant Gladiator's Chain Faceguard
-s(190463)/i(209209),	-- Verdant Gladiator's Chain Faceguard
-s(190464)/i(209210),	-- Verdant Gladiator's Chain Leggings
-s(190465)/i(209210),	-- Verdant Gladiator's Chain Leggings
-s(190466)/i(209211),	-- Verdant Gladiator's Chain Breeches
-s(190467)/i(209211),	-- Verdant Gladiator's Chain Breeches
-s(190468)/i(209212),	-- Verdant Gladiator's Chain Monnion
-s(190469)/i(209212),	-- Verdant Gladiator's Chain Monnion
-s(190470)/i(209213),	-- Verdant Gladiator's Chain Shoulderguard
-s(190471)/i(209213),	-- Verdant Gladiator's Chain Shoulderguard
-s(190472)/i(209214),	-- Verdant Gladiator's Chain Belt
-s(190473)/i(209214),	-- Verdant Gladiator's Chain Belt
-s(190474)/i(209215),	-- Verdant Gladiator's Chain Girdle
-s(190475)/i(209215),	-- Verdant Gladiator's Chain Girdle
-s(190476)/i(209216),	-- Verdant Gladiator's Chain Wristguards
-s(190477)/i(209216),	-- Verdant Gladiator's Chain Wristguards
-s(190478)/i(209217),	-- Verdant Gladiator's Chain Bracers
-s(190479)/i(209217),	-- Verdant Gladiator's Chain Bracers
-s(190480)/i(209218),	-- Verdant Gladiator's Cloak
-s(190481)/i(209218),	-- Verdant Gladiator's Cloak
-s(190482)/i(209219),	-- Verdant Gladiator's Drape
-s(190483)/i(209219),	-- Verdant Gladiator's Drape
-s(190484)/i(209220),	-- Verdant Gladiator's Shawl
-s(190485)/i(209220),	-- Verdant Gladiator's Shawl
-s(190486)/i(209221),	-- Verdant Gladiator's Chain Vest
-s(190487)/i(209221),	-- Verdant Gladiator's Chain Vest
-s(190488)/i(209222),	-- Verdant Gladiator's Chain Tunic
-s(190489)/i(209222),	-- Verdant Gladiator's Chain Tunic
-s(190490)/i(209223),	-- Verdant Gladiator's Chain Sabatons
-s(190491)/i(209223),	-- Verdant Gladiator's Chain Sabatons
-s(190492)/i(209224),	-- Verdant Gladiator's Chain Boots
-s(190493)/i(209224),	-- Verdant Gladiator's Chain Boots
-s(190494)/i(209225),	-- Verdant Gladiator's Chain Gauntlets
-s(190495)/i(209225),	-- Verdant Gladiator's Chain Gauntlets
-s(190496)/i(209226),	-- Verdant Gladiator's Chain Handguards
-s(190497)/i(209226),	-- Verdant Gladiator's Chain Handguards
-s(190498)/i(209227),	-- Verdant Gladiator's Chain Helm
-s(190499)/i(209227),	-- Verdant Gladiator's Chain Helm
-s(190500)/i(209228),	-- Verdant Gladiator's Chain Faceguard
-s(190501)/i(209228),	-- Verdant Gladiator's Chain Faceguard
-s(190502)/i(209229),	-- Verdant Gladiator's Chain Leggings
-s(190503)/i(209229),	-- Verdant Gladiator's Chain Leggings
-s(190504)/i(209230),	-- Verdant Gladiator's Chain Breeches
-s(190505)/i(209230),	-- Verdant Gladiator's Chain Breeches
-s(190506)/i(209231),	-- Verdant Gladiator's Chain Monnion
-s(190507)/i(209231),	-- Verdant Gladiator's Chain Monnion
-s(190508)/i(209232),	-- Verdant Gladiator's Chain Shoulderguard
-s(190509)/i(209232),	-- Verdant Gladiator's Chain Shoulderguard
-s(190510)/i(209233),	-- Verdant Gladiator's Chain Belt
-s(190511)/i(209233),	-- Verdant Gladiator's Chain Belt
-s(190512)/i(209234),	-- Verdant Gladiator's Chain Girdle
-s(190513)/i(209234),	-- Verdant Gladiator's Chain Girdle
-s(190514)/i(209235),	-- Verdant Gladiator's Chain Wristguards
-s(190515)/i(209235),	-- Verdant Gladiator's Chain Wristguards
-s(190516)/i(209236),	-- Verdant Gladiator's Chain Bracers
-s(190517)/i(209236),	-- Verdant Gladiator's Chain Bracers
-s(190518)/i(209237),	-- Verdant Gladiator's Cloak
-s(190519)/i(209237),	-- Verdant Gladiator's Cloak
-s(190520)/i(209238),	-- Verdant Gladiator's Drape
-s(190521)/i(209238),	-- Verdant Gladiator's Drape
-s(190522)/i(209239),	-- Verdant Gladiator's Shawl
-s(190523)/i(209239),	-- Verdant Gladiator's Shawl
-s(190524)/i(209240),	-- Verdant Gladiator's Chain Vest
-s(190525)/i(209240),	-- Verdant Gladiator's Chain Vest
-s(190526)/i(209241),	-- Verdant Gladiator's Chain Tunic
-s(190527)/i(209241),	-- Verdant Gladiator's Chain Tunic
-s(190528)/i(209242),	-- Verdant Gladiator's Chain Sabatons
-s(190529)/i(209242),	-- Verdant Gladiator's Chain Sabatons
-s(190530)/i(209243),	-- Verdant Gladiator's Chain Boots
-s(190531)/i(209243),	-- Verdant Gladiator's Chain Boots
-s(190532)/i(209244),	-- Verdant Gladiator's Chain Gauntlets
-s(190533)/i(209244),	-- Verdant Gladiator's Chain Gauntlets
-s(190534)/i(209245),	-- Verdant Gladiator's Chain Handguards
-s(190535)/i(209245),	-- Verdant Gladiator's Chain Handguards
-s(190536)/i(209246),	-- Verdant Gladiator's Chain Helm
-s(190537)/i(209246),	-- Verdant Gladiator's Chain Helm
-s(190538)/i(209247),	-- Verdant Gladiator's Chain Faceguard
-s(190539)/i(209247),	-- Verdant Gladiator's Chain Faceguard
-s(190540)/i(209248),	-- Verdant Gladiator's Chain Leggings
-s(190541)/i(209248),	-- Verdant Gladiator's Chain Leggings
-s(190542)/i(209249),	-- Verdant Gladiator's Chain Breeches
-s(190543)/i(209249),	-- Verdant Gladiator's Chain Breeches
-s(190544)/i(209250),	-- Verdant Gladiator's Chain Monnion
-s(190545)/i(209250),	-- Verdant Gladiator's Chain Monnion
-s(190546)/i(209251),	-- Verdant Gladiator's Chain Shoulderguard
-s(190547)/i(209251),	-- Verdant Gladiator's Chain Shoulderguard
-s(190548)/i(209252),	-- Verdant Gladiator's Chain Belt
-s(190549)/i(209252),	-- Verdant Gladiator's Chain Belt
-s(190550)/i(209253),	-- Verdant Gladiator's Chain Girdle
-s(190551)/i(209253),	-- Verdant Gladiator's Chain Girdle
-s(190552)/i(209254),	-- Verdant Gladiator's Chain Wristguards
-s(190553)/i(209254),	-- Verdant Gladiator's Chain Wristguards
-s(190554)/i(209255),	-- Verdant Gladiator's Chain Bracers
-s(190555)/i(209255),	-- Verdant Gladiator's Chain Bracers
-s(190556)/i(209256),	-- Verdant Gladiator's Cloak
-s(190557)/i(209256),	-- Verdant Gladiator's Cloak
-s(190558)/i(209257),	-- Verdant Gladiator's Drape
-s(190559)/i(209257),	-- Verdant Gladiator's Drape
-s(190560)/i(209258),	-- Verdant Gladiator's Shawl
-s(190561)/i(209258),	-- Verdant Gladiator's Shawl
-s(190562)/i(209259),	-- Verdant Gladiator's Plate Chestguard
-s(190563)/i(209259),	-- Verdant Gladiator's Plate Chestguard
-s(190564)/i(209260),	-- Verdant Gladiator's Plate Chestplate
-s(190565)/i(209260),	-- Verdant Gladiator's Plate Chestplate
-s(190566)/i(209261),	-- Verdant Gladiator's Plate Warboots
-s(190567)/i(209261),	-- Verdant Gladiator's Plate Warboots
-s(190568)/i(209262),	-- Verdant Gladiator's Plate Stompers
-s(190569)/i(209262),	-- Verdant Gladiator's Plate Stompers
-s(190570)/i(209263),	-- Verdant Gladiator's Plate Gauntlets
-s(190571)/i(209263),	-- Verdant Gladiator's Plate Gauntlets
-s(190572)/i(209264),	-- Verdant Gladiator's Plate Handguards
-s(190573)/i(209264),	-- Verdant Gladiator's Plate Handguards
-s(190574)/i(209265),	-- Verdant Gladiator's Plate Helm
-s(190575)/i(209265),	-- Verdant Gladiator's Plate Helm
-s(190576)/i(209266),	-- Verdant Gladiator's Plate Helmet
-s(190577)/i(209266),	-- Verdant Gladiator's Plate Helmet
-s(190578)/i(209267),	-- Verdant Gladiator's Plate Legguards
-s(190579)/i(209267),	-- Verdant Gladiator's Plate Legguards
-s(190580)/i(209268),	-- Verdant Gladiator's Plate Wargreaves
-s(190581)/i(209268),	-- Verdant Gladiator's Plate Wargreaves
-s(190582)/i(209269),	-- Verdant Gladiator's Plate Shoulders
-s(190583)/i(209269),	-- Verdant Gladiator's Plate Shoulders
-s(190584)/i(209270),	-- Verdant Gladiator's Plate Pauldrons
-s(190585)/i(209270),	-- Verdant Gladiator's Plate Pauldrons
-s(190586)/i(209271),	-- Verdant Gladiator's Plate Girdle
-s(190587)/i(209271),	-- Verdant Gladiator's Plate Girdle
-s(190588)/i(209272),	-- Verdant Gladiator's Plate Greatbelt
-s(190589)/i(209272),	-- Verdant Gladiator's Plate Greatbelt
-s(190590)/i(209273),	-- Verdant Gladiator's Plate Wristguards
-s(190591)/i(209273),	-- Verdant Gladiator's Plate Wristguards
-s(190592)/i(209274),	-- Verdant Gladiator's Plate Vambraces
-s(190593)/i(209274),	-- Verdant Gladiator's Plate Vambraces
-s(190594)/i(209275),	-- Verdant Gladiator's Cloak
-s(190595)/i(209275),	-- Verdant Gladiator's Cloak
-s(190596)/i(209276),	-- Verdant Gladiator's Drape
-s(190597)/i(209276),	-- Verdant Gladiator's Drape
-s(190598)/i(209277),	-- Verdant Gladiator's Shawl
-s(190599)/i(209277),	-- Verdant Gladiator's Shawl
-s(190600)/i(209278),	-- Verdant Gladiator's Plate Chestguard
-s(190601)/i(209278),	-- Verdant Gladiator's Plate Chestguard
-s(190602)/i(209279),	-- Verdant Gladiator's Plate Chestplate
-s(190603)/i(209279),	-- Verdant Gladiator's Plate Chestplate
-s(190604)/i(209280),	-- Verdant Gladiator's Plate Warboots
-s(190605)/i(209280),	-- Verdant Gladiator's Plate Warboots
-s(190606)/i(209281),	-- Verdant Gladiator's Plate Stompers
-s(190607)/i(209281),	-- Verdant Gladiator's Plate Stompers
-s(190608)/i(209282),	-- Verdant Gladiator's Plate Gauntlets
-s(190609)/i(209282),	-- Verdant Gladiator's Plate Gauntlets
-s(190610)/i(209283),	-- Verdant Gladiator's Plate Handguards
-s(190611)/i(209283),	-- Verdant Gladiator's Plate Handguards
-s(190612)/i(209284),	-- Verdant Gladiator's Plate Helm
-s(190613)/i(209284),	-- Verdant Gladiator's Plate Helm
-s(190614)/i(209285),	-- Verdant Gladiator's Plate Helmet
-s(190615)/i(209285),	-- Verdant Gladiator's Plate Helmet
-s(190616)/i(209286),	-- Verdant Gladiator's Plate Legguards
-s(190617)/i(209286),	-- Verdant Gladiator's Plate Legguards
-s(190618)/i(209287),	-- Verdant Gladiator's Plate Tasses
-s(190619)/i(209287),	-- Verdant Gladiator's Plate Tasses
-s(190620)/i(209288),	-- Verdant Gladiator's Plate Shoulders
-s(190621)/i(209288),	-- Verdant Gladiator's Plate Shoulders
-s(190622)/i(209289),	-- Verdant Gladiator's Plate Pauldrons
-s(190623)/i(209289),	-- Verdant Gladiator's Plate Pauldrons
-s(190624)/i(209290),	-- Verdant Gladiator's Plate Girdle
-s(190625)/i(209290),	-- Verdant Gladiator's Plate Girdle
-s(190626)/i(209291),	-- Verdant Gladiator's Plate Greatbelt
-s(190627)/i(209291),	-- Verdant Gladiator's Plate Greatbelt
-s(190628)/i(209292),	-- Verdant Gladiator's Plate Wristguards
-s(190629)/i(209292),	-- Verdant Gladiator's Plate Wristguards
-s(190630)/i(209293),	-- Verdant Gladiator's Plate Vambraces
-s(190631)/i(209293),	-- Verdant Gladiator's Plate Vambraces
-s(190632)/i(209294),	-- Verdant Gladiator's Cloak
-s(190633)/i(209294),	-- Verdant Gladiator's Cloak
-s(190634)/i(209295),	-- Verdant Gladiator's Drape
-s(190635)/i(209295),	-- Verdant Gladiator's Drape
-s(190636)/i(209296),	-- Verdant Gladiator's Shawl
-s(190637)/i(209296),	-- Verdant Gladiator's Shawl
-s(190638)/i(209297),	-- Verdant Gladiator's Plate Chestguard
-s(190639)/i(209297),	-- Verdant Gladiator's Plate Chestguard
-s(190640)/i(209298),	-- Verdant Gladiator's Plate Chestplate
-s(190641)/i(209298),	-- Verdant Gladiator's Plate Chestplate
-s(190642)/i(209299),	-- Verdant Gladiator's Plate Warboots
-s(190643)/i(209299),	-- Verdant Gladiator's Plate Warboots
-s(190644)/i(209300),	-- Verdant Gladiator's Plate Stompers
-s(190645)/i(209300),	-- Verdant Gladiator's Plate Stompers
-s(190646)/i(209301),	-- Verdant Gladiator's Plate Gauntlets
-s(190647)/i(209301),	-- Verdant Gladiator's Plate Gauntlets
-s(190648)/i(209302),	-- Verdant Gladiator's Plate Handguards
-s(190649)/i(209302),	-- Verdant Gladiator's Plate Handguards
-s(190650)/i(209303),	-- Verdant Gladiator's Plate Helm
-s(190651)/i(209303),	-- Verdant Gladiator's Plate Helm
-s(190652)/i(209304),	-- Verdant Gladiator's Plate Helmet
-s(190653)/i(209304),	-- Verdant Gladiator's Plate Helmet
-s(190654)/i(209305),	-- Verdant Gladiator's Plate Legguards
-s(190655)/i(209305),	-- Verdant Gladiator's Plate Legguards
-s(190656)/i(209306),	-- Verdant Gladiator's Plate Wargreaves
-s(190657)/i(209306),	-- Verdant Gladiator's Plate Wargreaves
-s(190658)/i(209307),	-- Verdant Gladiator's Plate Shoulders
-s(190659)/i(209307),	-- Verdant Gladiator's Plate Shoulders
-s(190660)/i(209308),	-- Verdant Gladiator's Plate Pauldrons
-s(190661)/i(209308),	-- Verdant Gladiator's Plate Pauldrons
-s(190662)/i(209309),	-- Verdant Gladiator's Plate Girdle
-s(190663)/i(209309),	-- Verdant Gladiator's Plate Girdle
-s(190664)/i(209310),	-- Verdant Gladiator's Plate Greatbelt
-s(190665)/i(209310),	-- Verdant Gladiator's Plate Greatbelt
-s(190666)/i(209311),	-- Verdant Gladiator's Plate Wristguards
-s(190667)/i(209311),	-- Verdant Gladiator's Plate Wristguards
-s(190668)/i(209312),	-- Verdant Gladiator's Plate Vambraces
-s(190669)/i(209312),	-- Verdant Gladiator's Plate Vambraces
-s(190670)/i(209313),	-- Verdant Gladiator's Cloak
-s(190671)/i(209313),	-- Verdant Gladiator's Cloak
-s(190672)/i(209314),	-- Verdant Gladiator's Drape
-s(190673)/i(209314),	-- Verdant Gladiator's Drape
-s(190674)/i(209315),	-- Verdant Gladiator's Shawl
-s(190675)/i(209315),	-- Verdant Gladiator's Shawl
 s(190759)/i(209437),	--
 s(190760)/i(209438),	--
 s(190761)/i(209439),	--
@@ -66445,97 +65858,7 @@ s(190794)/i(209472),	--
 s(190795)/i(209473),	--
 s(190796)/i(209474),	--
 s(190797)/i(209513),	--
-s(190817)/i(209535),	-- Verdant Gladiator's Splitter
-s(190818)/i(209536),	-- Verdant Gladiator's Dagger
-s(190819)/i(209537),	-- Verdant Gladiator's Warglaive
-s(190820)/i(209538),	-- Verdant Gladiator's Scythe
-s(190821)/i(209539),	-- Verdant Gladiator's Staff
-s(190822)/i(209540),	-- Verdant Gladiator's Rifle
-s(190823)/i(209541),	-- Verdant Gladiator's Scepter
-s(190824)/i(209542),	-- Verdant Gladiator's Censer
-s(190825)/i(209543),	-- Verdant Gladiator's Shield
-s(190826)/i(209544),	-- Verdant Gladiator's Axe
-s(190827)/i(209545),	-- Verdant Gladiator's Sickle
-s(190828)/i(209546),	-- Verdant Gladiator's Claws
-s(190829)/i(209547),	-- Verdant Gladiator's Bow
-s(190830)/i(209548),	-- Verdant Gladiator's Greatstaff
-s(190831)/i(209549),	-- Verdant Gladiator's Bulwark
-s(190832)/i(209550),	-- Verdant Gladiator's Greatsword
-s(190833)/i(209551),	-- Verdant Gladiator's Pulverizer
-s(190835)/i(209552),	-- Verdant Gladiator's Sword
-s(190837)/i(209553),	-- Verdant Gladiator's Shotel
-s(190839)/i(209554),	-- Verdant Gladiator's Axestaff
 s(190878)/i(209601),	--
-s(190883)/i(209609),	-- Verdant Gladiator's Prestigious Cloak
-s(190884)/i(209610),	-- Verdant Gladiator's Tabard
-s(190942)/i(209698),	-- Verdant Aspirant's Plate Helm
-s(190943)/i(209699),	-- Verdant Aspirant's Silk Robe
-s(190944)/i(209700),	-- Verdant Aspirant's Plate Chestplate
-s(190945)/i(209701),	-- Verdant Aspirant's Chain Vest
-s(190946)/i(209702),	-- Verdant Aspirant's Leather Vest
-s(190947)/i(209703),	-- Verdant Aspirant's Plate Warboots
-s(190948)/i(209704),	-- Verdant Aspirant's Silk Treads
-s(190949)/i(209705),	-- Verdant Aspirant's Chain Sabatons
-s(190950)/i(209706),	-- Verdant Aspirant's Leather Boots
-s(190951)/i(209707),	-- Verdant Aspirant's Leather Gloves
-s(190952)/i(209708),	-- Verdant Aspirant's Plate Gauntlets
-s(190953)/i(209709),	-- Verdant Aspirant's Silk Gloves
-s(190954)/i(209710),	-- Verdant Aspirant's Chain Gauntlets
-s(190955)/i(209711),	-- Verdant Aspirant's Silk Hood
-s(190956)/i(209712),	-- Verdant Aspirant's Chain Helm
-s(190957)/i(209713),	-- Verdant Aspirant's Leather Helm
-s(190958)/i(209714),	-- Verdant Aspirant's Plate Legguards
-s(190959)/i(209715),	-- Verdant Aspirant's Silk Leggings
-s(190960)/i(209716),	-- Verdant Aspirant's Chain Leggings
-s(190961)/i(209717),	-- Verdant Aspirant's Leather Breeches
-s(190962)/i(209718),	-- Verdant Aspirant's Leather Spaulders
-s(190963)/i(209719),	-- Verdant Aspirant's Plate Shoulders
-s(190964)/i(209720),	-- Verdant Aspirant's Silk Mantle
-s(190965)/i(209721),	-- Verdant Aspirant's Chain Spaulders
-s(190966)/i(209722),	-- Verdant Aspirant's Plate Girdle
-s(190967)/i(209723),	-- Verdant Aspirant's Silk Cord
-s(190968)/i(209724),	-- Verdant Aspirant's Chain Belt
-s(190969)/i(209725),	-- Verdant Aspirant's Leather Belt
-s(190970)/i(209726),	-- Verdant Aspirant's Silk Wristwraps
-s(190971)/i(209727),	-- Verdant Aspirant's Plate Cuffs
-s(190972)/i(209728),	-- Verdant Aspirant's Chain Wristwraps
-s(190973)/i(209729),	-- Verdant Aspirant's Leather Wristwraps
-s(190974)/i(209730),	-- Verdant Aspirant's Plate Headguard
-s(190975)/i(209731),	-- Verdant Aspirant's Silk Vestments
-s(190976)/i(209732),	-- Verdant Aspirant's Plate Armor
-s(190977)/i(209733),	-- Verdant Aspirant's Chain Tunic
-s(190978)/i(209734),	-- Verdant Aspirant's Leather Tunic
-s(190979)/i(209735),	-- Verdant Aspirant's Plate Stompers
-s(190980)/i(209736),	-- Verdant Aspirant's Silk Footwraps
-s(190981)/i(209737),	-- Verdant Aspirant's Chain Stompers
-s(190982)/i(209738),	-- Verdant Aspirant's Leather Footpads
-s(190983)/i(209739),	-- Verdant Aspirant's Leather Grips
-s(190984)/i(209740),	-- Verdant Aspirant's Plate Handguards
-s(190985)/i(209741),	-- Verdant Aspirant's Silk Handwraps
-s(190986)/i(209742),	-- Verdant Aspirant's Chain Handguards
-s(190987)/i(209743),	-- Verdant Aspirant's Silk Cover
-s(190988)/i(209744),	-- Verdant Aspirant's Chain Headguard
-s(190989)/i(209745),	-- Verdant Aspirant's Leather Mask
-s(190990)/i(209746),	-- Verdant Aspirant's Plate Wargreaves
-s(190991)/i(209747),	-- Verdant Aspirant's Silk Legwraps
-s(190992)/i(209749),	-- Verdant Aspirant's Chain Wargreaves
-s(190993)/i(209750),	-- Verdant Aspirant's Leather Leggings
-s(190994)/i(209751),	-- Verdant Aspirant's Leather Mantle
-s(190995)/i(209752),	-- Verdant Aspirant's Plate Pauldrons
-s(190996)/i(209753),	-- Verdant Aspirant's Silk Shawl
-s(190997)/i(209754),	-- Verdant Aspirant's Chain Shoulderguards
-s(190998)/i(209755),	-- Verdant Aspirant's Plate Greatbelt
-s(190999)/i(209756),	-- Verdant Aspirant's Silk Belt
-s(191000)/i(209757),	-- Verdant Aspirant's Chain Clasp
-s(191001)/i(209758),	-- Verdant Aspirant's Leather Cord
-s(191002)/i(209759),	-- Verdant Aspirant's Silk Bindings
-s(191003)/i(209760),	-- Verdant Aspirant's Plate Armguards
-s(191004)/i(209761),	-- Verdant Aspirant's Chain Bracer
-s(191005)/i(209762),	-- Verdant Aspirant's Leather Armguards
-s(191006)/i(209774),	-- Verdant Aspirant's Cloak
-s(191007)/i(209775),	-- Verdant Aspirant's Drape
-s(191008)/i(209776),	-- Verdant Aspirant's Cape
-s(191009)/i(209777),	-- Verdant Aspirant's Greatcloak
 s(191034)/i(207794),	-- Staff of Incandescent Torment \\ 2H Staff INT 1
 s(191035)/i(207794),	-- Staff of Incandescent Torment \\ 2H Staff INT 1
 s(191036)/i(207794),	-- Staff of Incandescent Torment \\ 2H Staff INT 1
@@ -66603,112 +65926,6 @@ s(191098)/i(207793),	-- Rashon, the Immortal Blaze \\ [PH] Fyrakk Cantrip 2H Sta
 s(191099)/i(207793),	-- Rashon, the Immortal Blaze \\ [PH] Fyrakk Cantrip 2H Staff AGI
 s(191100)/i(207793),	-- Rashon, the Immortal Blaze \\ [PH] Fyrakk Cantrip 2H Staff AGI
 s(191101)/i(209869),	--
-s(191102)/i(209880),	-- Curve of Starry Dusks
-s(191103)/i(209881),	-- Fystia's Fiery Kris
-s(191104)/i(209882),	-- Maruud's Undertow
-s(191105)/i(209883),	-- Chartreuse Champion's Sabatons
-s(191106)/i(209884),	-- Summer Soother's Gown
-s(191107)/i(209885),	-- Chartreuse Champion's Chestplate
-s(191108)/i(209886),	-- Spirited Stag's Chestguard
-s(191109)/i(209887),	-- Fearless Faerie's Vest
-s(191110)/i(209888),	-- Fearless Faerie's Gloves
-s(191111)/i(209889),	-- Chartreuse Champion's Gauntlets
-s(191112)/i(209890),	-- Summer Soother's Mitts
-s(191113)/i(209891),	-- Spirited Stag's Handguards
-s(191114)/i(209892),	-- Summer Soother's Hood
-s(191115)/i(209893),	-- Spirited Stag's Helm
-s(191116)/i(209894),	-- Fearless Faerie's Guise
-s(191117)/i(209895),	-- Chartreuse Champion's Legplates
-s(191118)/i(209896),	-- Summer Soother's Leggings
-s(191119)/i(209897),	-- Spirited Stag's Legguards
-s(191120)/i(209898),	-- Fearless Faerie's Trousers
-s(191121)/i(209899),	-- Fearless Faerie's Shoulderpads
-s(191122)/i(209900),	-- Chartreuse Champion's Shoulderplates
-s(191123)/i(209901),	-- Summer Soother's Shoulders
-s(191124)/i(209902),	-- Spirited Stag's Epaulets \\ Spirited Stag's Eqaulets
-s(191125)/i(209903),	-- Chartreuse Champion's Girdle
-s(191126)/i(209904),	-- Summer Soother's Sash
-s(191127)/i(209905),	-- Spirited Stag's Waistguard
-s(191128)/i(209906),	-- Fearless Faerie's Belt
-s(191129)/i(209907),	-- Summer Soother's Bands
-s(191130)/i(209908),	-- Chartreuse Champion's Bracers
-s(191131)/i(209909),	-- Spirited Stag's Cuffs
-s(191132)/i(209910),	-- Fearless Faerie's Wristbands
-s(191133)/i(209917),	-- Fearless Faerie's Shroud
-s(191134)/i(209918),	-- Summer Soother's Wrap
-s(191135)/i(209919),	-- Chartreuse Champion's Bulwark
-s(191136)/i(209920),	-- Summer Soother's Implement
-s(191137)/i(209921),	-- Spirited Stag's Branch
-s(191138)/i(209922),	-- Fearless Faerie's Glaive
-s(191139)/i(209923),	-- Chartreuse Champion's Blade
-s(191140)/i(209924),	-- Chartreuse Champion's Warspear
-s(191141)/i(209925),	-- Fearless Faerie's Dirk
-s(191142)/i(209926),	-- Chartreuse Champion's Warhelm
-s(191143)/i(209927),	-- Summer Soother's Slippers
-s(191144)/i(209928),	-- Spirited Stag's Treads
-s(191145)/i(209929),	-- Fearless Faerie's Boots
-s(191146)/i(209931),	-- Summer Soother's Cane
-s(191147)/i(209932),	-- Fearless Faerie's Mace
-s(191148)/i(209933),	-- Spirited Stag's Longbow
-s(191149)/i(209934),	-- Spirited Stag's Chopper
-s(191150)/i(209935),	-- Spirited Stag's Handaxe
-s(191151)/i(209936),	-- Summer Soother's Mallet
-s(191152)/i(209937),	-- Chartreuse Champion's Gavel
-s(191153)/i(209938),	-- Chartreuse Champion's Greatsword
-s(191154)/i(209939),	-- Summer Soother's Wand
-s(191155)/i(209940),	-- Spirited Stag's Spire
-s(191156)/i(209941),	-- Spirited Stag's Curve
-s(191157)/i(209942),	-- Fearless Faerie's Kris
-s(191158)/i(209943),	-- Spirited Stag's Claymore
-s(191159)/i(209948),	-- Spring's Keeper
-s(191160)/i(209960),	-- Ceremonial Jacaranda Gown
-s(191161)/i(209961),	-- Ceremonial Jacaranda Cape
-s(191162)/i(209962),	-- Ceremonial Jacaranda Sandals
-s(191163)/i(209963),	-- Ceremonial Jacaranda Gloves
-s(191164)/i(209964),	-- Ceremonial Jacaranda Crown
-s(191165)/i(209965),	-- Ceremonial Jacaranda Pantaloons
-s(191166)/i(209966),	-- Ceremonial Jacaranda Branches
-s(191167)/i(209967),	-- Ceremonial Jacaranda Belt
-s(191168)/i(209968),	-- Ceremonial Jacaranda Wraps
-s(191169)/i(209969),	-- Vest of the Dreamfused Skull
-s(191170)/i(209970),	-- Pelt of the Dreamfused Skull
-s(191171)/i(209971),	-- Clogs of the Dreamfused Skull
-s(191172)/i(209972),	-- Grips of the Dreamfused Skull
-s(191173)/i(209973),	-- Visage of the Dreamfused Skull
-s(191174)/i(209974),	-- Leggings of the Dreamfused Skull
-s(191175)/i(209975),	-- Pauldrons of the Dreamfused Skull
-s(191176)/i(209976),	-- Buckle of the Dreamfused Skull
-s(191177)/i(209977),	-- Bracers of the Dreamfused Skull
-s(191178)/i(209978),	-- Barkbloom Tunic
-s(191179)/i(209979),	-- Barkbloom Cloak
-s(191180)/i(209980),	-- Barkbloom Talons
-s(191181)/i(209981),	-- Barkbloom Claws
-s(191182)/i(209982),	-- Barkbloom Mask
-s(191183)/i(209983),	-- Barkbloom Breeches
-s(191184)/i(209984),	-- Barkbloom Shoulderpads
-s(191185)/i(209985),	-- Barkbloom Sash
-s(191186)/i(209986),	-- Barkbloom Wristguards
-s(191187)/i(209987),	-- Overgrown Freyan Plate
-s(191188)/i(209988),	-- Overgrown Freyan Drape
-s(191189)/i(209989),	-- Overgrown Freyan Boots
-s(191190)/i(209990),	-- Overgrown Freyan Handguards
-s(191191)/i(209991),	-- Overgrown Freyan Helm
-s(191192)/i(209992),	-- Overgrown Freyan Legguards
-s(191193)/i(209993),	-- Overgrown Freyan Shoulderguards
-s(191194)/i(209994),	-- Overgrown Freyan Girdle
-s(191195)/i(209995),	-- Overgrown Freyan Vambraces \\ Overgrown Freyan Vambracers
-s(191196)/i(210005),	-- 10.2 Monster - Weapon - Staff - 10.1.5 Weapon Staff - Staff_2H_Druid_C_02_Color1
-s(191200)/i(210029),	-- Overgrown Freyan Hatchet
-s(191201)/i(210030),	-- Bow of the Dreamfused Skull
-s(191202)/i(210031),	-- Spike of the Dreamfused Skull
-s(191203)/i(210032),	-- Overgrown Freyan Smasher
-s(191204)/i(210033),	-- Essence of the Dreamfused Skull
-s(191205)/i(210034),	-- Overgrown Freyan Pike
-s(191206)/i(210035),	-- Ceremonial Jacaranda Crook
-s(191207)/i(210036),	-- Barkbloom Saber
-s(191208)/i(210037),	-- Ceremonial Jacaranda Slab
-s(191209)/i(210038),	-- Ceremonial Jacaranda Bloom
-s(191210)/i(210039),	-- Barkbloom Warglaive
 s(191211)/i(207231),	-- Lucid Shadewalker's Cape \\ 10.2 Raid - Emerald Dream - Class Sets - Rogue - Armor - Generic - Cloak
 s(191212)/i(207231),	-- Lucid Shadewalker's Cape \\ 10.2 Raid - Emerald Dream - Class Sets - Rogue - Armor - Generic - Cloak
 s(191213)/i(207231),	-- Lucid Shadewalker's Cape \\ 10.2 Raid - Emerald Dream - Class Sets - Rogue - Armor - Generic - Cloak
@@ -66922,84 +66139,6 @@ s(191866)/i(209105),	-- Verdant Gladiator's Drape
 s(191867)/i(209105),	-- Verdant Gladiator's Drape
 s(191876)/i(209106),	-- Verdant Gladiator's Shawl
 s(191877)/i(209106),	-- Verdant Gladiator's Shawl
-s(191879)/i(210065),	-- Sky-Captain's Formal Hat
-s(191880)/i(210066),	-- Sky-Captain's Formal Boots
-s(191881)/i(210067),	-- Sky-Captain's Formal Coat
-s(191882)/i(210068),	-- Sky-Captain's Formal Pants
-s(191883)/i(210071),	-- Sky-Captain's Formal Cape
-s(191884)/i(210072),	-- Sky-Captain's Masquerade Hat
-s(191885)/i(210073),	-- Sky-Captain's Masquerade Boots
-s(191886)/i(210074),	-- Sky-Captain's Masquerade Coat
-s(191887)/i(210075),	-- Sky-Captain's Masquerade Pants
-s(191888)/i(210076),	-- Sky-Captain's Masquerade Cape
-s(191889)/i(210082),	-- Harvest Guardian Sabatons
-s(191890)/i(210083),	-- Maple Tender Robe
-s(191891)/i(210084),	-- Harvest Guardian Chestplate
-s(191892)/i(210085),	-- Wind Wolf Chestpiece
-s(191893)/i(210086),	-- Autumn Druid Vest
-s(191894)/i(210087),	-- Autumn Druid Grips
-s(191895)/i(210088),	-- Harvest Guardian Handguards
-s(191896)/i(210089),	-- Maple Tender Gloves
-s(191897)/i(210090),	-- Wind Wolf Gauntlets
-s(191898)/i(210091),	-- Maple Tender Crown
-s(191899)/i(210092),	-- Wind Wolf Helm
-s(191900)/i(210093),	-- Autumn Druid Hood
-s(191901)/i(210094),	-- Harvest Guardian Legplates
-s(191902)/i(210095),	-- Maple Tender Leggings
-s(191903)/i(210096),	-- Wind Wolf Legguards
-s(191904)/i(210097),	-- Autumn Druid Trousers
-s(191905)/i(210098),	-- Autumn Druid Shoulderpads
-s(191906)/i(210099),	-- Harvest Guardian Pauldrons
-s(191907)/i(210100),	-- Maple Tender Mantle
-s(191908)/i(210101),	-- Wind Wolf Epaulets
-s(191909)/i(210102),	-- Harvest Guardian Girdle
-s(191910)/i(210103),	-- Maple Tender Sash
-s(191911)/i(210104),	-- Wind Wolf Chain
-s(191912)/i(210105),	-- Autumn Druid Belt
-s(191913)/i(210106),	-- Maple Tender Wristbands
-s(191914)/i(210107),	-- Harvest Guardian Deflectors
-s(191915)/i(210108),	-- Wind Wolf Cuffs
-s(191916)/i(210109),	-- Autumn Druid Bracers
-s(191917)/i(210110),	-- Autumn Defender's Shield
-s(191918)/i(210111),	-- Breezekeeper's Pinecone Scepter
-s(191919)/i(210112),	-- Wildleaf Staff
-s(191920)/i(210113),	-- Wildleaf Glaive
-s(191921)/i(210114),	-- Autumn Defender's Saber
-s(191922)/i(210115),	-- Autumn Defender's Spear
-s(191923)/i(210116),	-- Wildleaf Dagger
-s(191924)/i(210117),	-- Harvest Guardian Greathelm
-s(191925)/i(210118),	-- Maple Tender Slippers
-s(191926)/i(210119),	-- Wind Wolf Boots
-s(191927)/i(210120),	-- Autumn Druid Treads
-s(191928)/i(210122),	-- Breezekeeper's Staff
-s(191929)/i(210123),	-- Wildleaf Hammer
-s(191930)/i(210124),	-- Wildleaf Handaxe
-s(191931)/i(210125),	-- Breezekeeper's Handaxe
-s(191932)/i(210126),	-- Breezekeeper's Mallet
-s(191933)/i(210127),	-- Autumn Defender's Gavel
-s(191934)/i(210128),	-- Autumn Defender's Claymore
-s(191935)/i(210129),	-- Wand of Brisk Dusks
-s(191936)/i(210130),	-- Wildleaf Javelin
-s(191937)/i(210131),	-- Wildleaf Longbow
-s(191938)/i(210132),	-- Wildleaf Greatsword
-s(191939)/i(210133),	-- Harvest Guardian Cloak
-s(191940)/i(210134),	-- Wind Wolf Shroud
-s(191942)/i(210149),	-- Verdant Aspirant's Battleaxe
-s(191943)/i(210150),	-- Verdant Aspirant's Dagger
-s(191944)/i(210151),	-- Verdant Aspirant's Mace
-s(191945)/i(210152),	-- Verdant Aspirant's Polearm
-s(191946)/i(210153),	-- Verdant Aspirant's Staff
-s(191947)/i(210154),	-- Verdant Aspirant's Greatsword
-s(191948)/i(210155),	-- Verdant Aspirant's Torch
-s(191949)/i(210156),	-- Verdant Aspirant's Warglaive
-s(191950)/i(210157),	-- Verdant Aspirant's Scepter
-s(191951)/i(210158),	-- Verdant Aspirant's Shield
-s(191953)/i(210160),	-- Verdant Aspirant's Recurve
-s(191954)/i(210161),	-- Verdant Aspirant's Halberd
-s(191955)/i(210162),	-- Verdant Aspirant's Hammer
-s(191956)/i(210163),	-- Verdant Aspirant's Knife
-s(191957)/i(210164),	-- Verdant Aspirant's Sword
-s(191959)/i(210166),	-- Verdant Aspirant's Blade
 s(191962)/i(210203),	-- Wellspring Wristlets \\ Wellspring Wristlet \\ Mail - WRIST 2
 s(191963)/i(210204),	-- Fading Flame Wristbands \\ Cloth - WRIST 2
 s(191964)/i(210205),	-- Vigilant Protector's Bracers \\ Plate - WRIST 2
@@ -67837,8 +66976,6 @@ s(192857)/i(209295),	-- Verdant Gladiator's Drape
 s(192858)/i(209295),	-- Verdant Gladiator's Drape
 s(192859)/i(209296),	-- Verdant Gladiator's Shawl
 s(192860)/i(209296),	-- Verdant Gladiator's Shawl
-s(192861)/i(210235),	-- Spirited Stag's Cape
-s(192862)/i(210236),	-- Chartreuse Champion's Cloak
 s(192863)/i(209297),	-- Verdant Gladiator's Plate Chestguard
 s(192864)/i(209297),	-- Verdant Gladiator's Plate Chestguard
 s(192865)/i(209298),	-- Verdant Gladiator's Plate Chestplate
@@ -67873,94 +67010,12 @@ s(192893)/i(209314),	-- Verdant Gladiator's Drape
 s(192894)/i(209314),	-- Verdant Gladiator's Drape
 s(192895)/i(209315),	-- Verdant Gladiator's Shawl
 s(192896)/i(209315),	-- Verdant Gladiator's Shawl
-s(192954)/i(210317),	-- Verdant Aspirant's Wand
-s(192969)/i(210348),	-- Arctic Warden's Sabatons \\ Winter Warden's Sabatons
-s(192970)/i(210349),	-- Frigid Conservator's Gown \\ Cold Conservator's Gown
-s(192971)/i(210350),	-- Arctic Warden's Chestplate \\ Winter Warden's Chestplate
-s(192972)/i(210351),	-- Winter Forager's Chestguard \\ Frigid Forager's Chestguard
-s(192973)/i(210352),	-- Crystalline Tender's Vest
-s(192974)/i(210353),	-- Crystalline Tender's Gloves
-s(192975)/i(210354),	-- Arctic Warden's Gauntlets \\ Winter Warden's Gauntlets
-s(192976)/i(210355),	-- Frigid Conservator's Mitts \\ Cold Conservator's Mitts
-s(192977)/i(210356),	-- Winter Forager's Handguards \\ Frigid Forager's Handguards
-s(192978)/i(210357),	-- Frigid Conservator's Hood \\ Cold Conservator's Hood
-s(192979)/i(210358),	-- Winter Forager's Helm \\ Frigid Forager's Helm
-s(192980)/i(210359),	-- Crystalline Tender's Guise
-s(192981)/i(210360),	-- Arctic Warden's Legplates \\ Winter Warden's Legplates
-s(192982)/i(210361),	-- Frigid Conservator's Leggings \\ Cold Conservator's Leggings
-s(192983)/i(210362),	-- Winter Forager's Legguards \\ Frigid Forager's Legguards
-s(192984)/i(210363),	-- Crystalline Tender's Trousers
-s(192985)/i(210364),	-- Crystalline Tender's Shoulderpads
-s(192986)/i(210365),	-- Arctic Warden's Shoulderplates \\ Winter Warden's Shoulderplates
-s(192987)/i(210366),	-- Frigid Conservator's Shoulders \\ Cold Conservator's Shoulders
-s(192988)/i(210367),	-- Winter Forager's Epaulets \\ Frigid Forager's Eqaulets
-s(192989)/i(210368),	-- Arctic Warden's Girdle \\ Winter Warden's Girdle
-s(192990)/i(210369),	-- Frigid Conservator's Sash \\ Cold Conservator's Sash
-s(192991)/i(210370),	-- Winter Forager's Waistguard \\ Frigid Forager's Waistguard
-s(192992)/i(210371),	-- Crystalline Tender's Belt
-s(192993)/i(210372),	-- Frigid Conservator's Bands \\ Cold Conservator's Bands
-s(192994)/i(210373),	-- Arctic Warden's Bracers \\ Winter Warden's Bracers
-s(192995)/i(210374),	-- Winter Forager's Cuffs \\ Frigid Forager's Cuffs
-s(192996)/i(210375),	-- Crystalline Tender's Wristbands
-s(192997)/i(210381),	-- Crystalline Tender's Shroud
-s(192998)/i(210382),	-- Frigid Conservator's Wrap \\ Cold Conservator's Wrap
-s(192999)/i(210383),	-- Arctic Warden's Bulwark \\ Winter Warden's Bulwark
-s(193000)/i(210384),	-- Frigid Conservator's Implement \\ Cold Conservator's Implement
-s(193001)/i(210385),	-- Winter Forager's Branch \\ Frigid Forager's Branch
-s(193002)/i(210386),	-- Crystalline Tender's Glaive
-s(193003)/i(210387),	-- Arctic Warden's Blade \\ Winter Warden's Blade
-s(193005)/i(210389),	-- Crystalline Tender's Dirk
-s(193006)/i(210390),	-- Arctic Warden's Warhelm \\ Winter Warden's Warhelm
-s(193007)/i(210391),	-- Frigid Conservator's Slippers \\ Cold Conservator's Slippers
-s(193008)/i(210392),	-- Winter Forager's Treads \\ Frigid Forager's Treads
-s(193009)/i(210393),	-- Crystalline Tender's Boots
-s(193010)/i(210394),	-- Frigid Conservator's Cane \\ Cold Conservator's Cane
-s(193011)/i(210395),	-- Crystalline Tender's Mace
-s(193012)/i(210396),	-- Winter Forager's Longbow \\ Frigid Forager's Longbow
-s(193013)/i(210397),	-- Winter Forager's Chopper \\ Frigid Forager's Chopper
-s(193014)/i(210398),	-- Winter Forager's Handaxe \\ Frigid Forager's Handaxe
-s(193015)/i(210399),	-- Frigid Conservator's Mallet \\ Cold Conservator's Mallet
-s(193016)/i(210400),	-- Arctic Warden's Gavel \\ Winter Warden's Gavel
-s(193017)/i(210401),	-- Arctic Warden's Greatsword \\ Winter Warden's Greatsword
-s(193018)/i(210402),	-- Frigid Conservator's Wand \\ Cold Conservator's Wand
-s(193019)/i(210403),	-- Winter Forager's Spire \\ Frigid Forager's Spire
-s(193020)/i(210404),	-- Winter Forager's Curve \\ Frigid Forager's Curve
-s(193021)/i(210405),	-- Crystalline Tender's Kris
-s(193022)/i(210406),	-- Winter Forager's Claymore \\ Frigid Forager's Claymore
-s(193023)/i(210407),	-- Winter Forager's Cape \\ Frigid Forager's Cape
-s(193024)/i(210408),	-- Arctic Warden's Cloak \\ Winter Warden's Cloak
-s(193025)/i(210414),	-- Forest Lord's Antlers
-s(193026)/i(210415),	-- Darnassian Moonsilver Spaulders
-s(193027)/i(210418),	-- Darnassian Cloak
-s(193028)/i(210424),	-- Darnassian Tabard
 s(193029)/i(210425),	--
 s(193030)/i(210426),	--
 s(193031)/i(210427),	--
 s(193032)/i(210428),	--
-s(193033)/i(210433),	-- Visage of Aurostor
-s(193034)/i(210434),	-- Visage of Ursol \\ Visage of Ursoc
 s(193037)/i(210469),	--
 s(193038)/i(210488),	--
-s(193039)/i(210501),	-- Dream Wardens Tabard
-s(193040)/i(210502),	-- Verdant Gladiator's Axe
-s(193041)/i(210503),	-- Verdant Gladiator's Dagger
-s(193042)/i(210504),	-- Verdant Gladiator's Sickle
-s(193043)/i(210506),	-- Verdant Gladiator's Warglaive
-s(193044)/i(210507),	-- Verdant Gladiator's Scythe
-s(193045)/i(210508),	-- Verdant Gladiator's Staff
-s(193046)/i(210509),	-- Verdant Gladiator's Greatstaff
-s(193047)/i(210510),	-- Verdant Gladiator's Axestaff
-s(193048)/i(210511),	-- Verdant Gladiator's Rifle
-s(193049)/i(210512),	-- Verdant Gladiator's Scepter
-s(193050)/i(210513),	-- Verdant Gladiator's Censer
-s(193051)/i(210514),	-- Verdant Gladiator's Shield
-s(193052)/i(210515),	-- Verdant Gladiator's Bulwark
-s(193053)/i(210516),	-- Verdant Gladiator's Claws
-s(193054)/i(210517),	-- Verdant Gladiator's Bow
-s(193055)/i(210518),	-- Verdant Gladiator's Greatsword
-s(193056)/i(210519),	-- Verdant Gladiator's Pulverizer
-s(193057)/i(210520),	-- Verdant Gladiator's Sword
-s(193058)/i(210521),	-- Verdant Gladiator's Shotel
 s(193070)/i(209307),	-- Verdant Gladiator's Plate Shoulders
 s(193071)/i(209307),	-- Verdant Gladiator's Plate Shoulders
 s(193072)/i(209308),	-- Verdant Gladiator's Plate Pauldrons
@@ -68443,7 +67498,6 @@ s(193643)/i(210545),	-- Lost Scholar's Temporal Shoulderdials \\ 10.2 Raid - Eme
 s(193647)/i(210545),	-- Lost Scholar's Temporal Shoulderdials \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Cloth - SHOULDER 2
 s(193651)/i(210546),	-- Vengeful Bladebeak Girdle \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leather - WAIST 3
 s(193659)/i(210547),	-- Sentinel's Gilded Poulaines \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail - FEET 3
-s(193664)/i(210552),	-- Cowl of the Wolf Ancient
 s(193665)/i(210557),	--
 s(193666)/i(210559),	--
 s(193667)/i(210560),	--
@@ -68451,37 +67505,13 @@ s(193668)/i(210561),	--
 s(193669)/i(210562),	--
 s(193670)/i(210563),	--
 s(193671)/i(210564),	--
-s(193706)/i(210631),	-- Branch of Ashamane
-s(193717)/i(210646),	-- Flourishing Dream Helm
 s(193718)/i(210649),	--
-s(193719)/i(210659),	-- Branch of Aviana
-s(193720)/i(210660),	-- Claw of Lo'Gosh
-s(193721)/i(210661),	-- Dreamcatcher's Crescent
 s(193722)/i(210662),	-- Ochre Ornament of the Grove
-s(193723)/i(210663),	-- Circlet of the Mother Tree \\ Circle of Nature's Youth
-s(193724)/i(210664),	-- Frost Sapling's Adornment
 s(193725)/i(210666),	-- Crest of the Seething Flamekeeper
-s(193726)/i(210675),	-- Gardener's Lightstaff
-s(193727)/i(210676),	-- Elderwood Cane
-s(193728)/i(210677),	-- Survivalist's Shovel
-s(193729)/i(210678),	-- Verdant Gleaner's Scythe
-s(193730)/i(210679),	-- Cultivator's Watering Can
-s(193731)/i(210680),	-- Caretaker's Trowel
-s(193732)/i(210682),	-- Camper's Knife
-s(193733)/i(210685),	-- Ranger's Longbow
-s(193734)/i(210686),	-- Grovekeeper's Barrier
 s(193735)/i(210694),	--
 s(193736)/i(210694),	--
 s(193737)/i(210694),	--
 s(193738)/i(210694),	--
-s(193740)/i(210700),	-- Auburn Scavenger Gauntlets
-s(193741)/i(210701),	-- Auburn Scavenger Helm
-s(193742)/i(210702),	-- Solar Synthesis Gloves
-s(193743)/i(210703),	-- Solar Synthesis Crown
-s(193744)/i(210704),	-- Fallen Protector Handguards
-s(193745)/i(210705),	-- Fallen Protector Greathelm
-s(193746)/i(210706),	-- Drowsed Shepherd's Vest
-s(193747)/i(210707),	-- Drowsed Shepherd's Hood
 s(193748)/i(210710),	--
 s(193749)/i(210711),	--
 s(193750)/i(207213),	-- Blazing Dreamstalker's Staghide \\ 10.2 Raid - Emerald Dream - Class Sets - Hunter - Armor - Generic - Cloak
@@ -68520,10 +67550,6 @@ s(193782)/i(207221),	-- Blazing Dreamstalker's Scaled Hauberk \\ 10.2 Raid - Eme
 s(193783)/i(207221),	-- Blazing Dreamstalker's Scaled Hauberk \\ 10.2 Raid - Emerald Dream - Class Sets - Hunter - Armor - Mail - Chest
 s(193784)/i(207221),	-- Blazing Dreamstalker's Scaled Hauberk \\ 10.2 Raid - Emerald Dream - Class Sets - Hunter - Armor - Mail - Chest
 s(193785)/i(207221),	-- Blazing Dreamstalker's Scaled Hauberk \\ 10.2 Raid - Emerald Dream - Class Sets - Hunter - Armor - Mail - Chest
-10.2.0.51297
-s(193793)/i(210787),	-- Elegant Green Dragon Tabard
-s(193794)/i(210788),	-- Elegant Green Dragon Shawl
-s(193795)/i(210789),	-- Elegant Green Dragon Epaulets \\ Elegant Green Dragon Epaulettes
 10.2.0.51425
 s(193800)/i(210843),	-- Candied Blade
 s(193801)/i(210844),	-- Trader's Crimson Sarong
@@ -68556,7 +67582,7 @@ s(193864)/i(210962),	--
 s(193865)/i(210962),	--
 10.2.0.51521
 s(193869)/i(210993),	-- Enchanting Dreamstaff
-s(193870)/i(210994),	-- Enchanting Dreambow
+s(193870)/i(210994),	-- Enchanting Dreamblade \\ Enchanting Dreambow
 s(193871)/i(210995),	-- Enchanting Dreambow
 s(193873)/i(210999),	-- Ruby Faced Mobile Timepiece
 s(193874)/i(211001),	-- Sapphire Faced Mobile Timepiece
@@ -68704,3 +67730,9 @@ s(194117)/i(211402),	-- Coif of the Court Spider
 s(194118)/i(211403),	-- Soulspun Casque
 s(194119)/i(211404),	-- Spymaster's Wrap
 s(194120)/i(211405),	-- Loa Betrayer's Vestments
+10.2.0.51685
+s(194145)/i(211470),	-- Ravencrest's Wrath
+s(194146)/i(211473),	-- Corrupted Knot
+s(194147)/i(207120),	-- Anguished Restraints \\ Cloth - WRIST 1
+s(194148)/i(207120),	-- Anguished Restraints \\ Cloth - WRIST 1
+s(194149)/i(207120),	-- Anguished Restraints \\ Cloth - WRIST 1

@@ -5,13 +5,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 	m(EMERALD_DREAM, {
 		n(SPECIAL, {
 			i(210669, {	-- Mark of the Evergreen Dreamsaber (CI!)
-				["provier"] = { "i", 210755 },	-- Silent Mark of the Dreamsaber
+				["provider"] = { "i", 210755 },	-- Silent Mark of the Dreamsaber
 			}),
 			i(210738, {	-- Mark of the Loamy Umbraclaw (CI!)
-				["provier"] = { "i", 210766 },	-- Silent Mark of the Umbraclaw
+				["provider"] = { "i", 210766 },	-- Silent Mark of the Umbraclaw
 			}),
 			i(210731, {	-- Mark of the Lush Dreamstag (CI!)
-				["provier"] = { "i", 210767 },	-- Silent Mark of the Dreamstag
+				["provider"] = { "i", 210767 },	-- Silent Mark of the Dreamstag
 			}),
 			header(HEADERS.Item, 210535, {	-- Mark of the Slumbering Somnowl
 				i(210565, {	-- Soft Somnowl Feather
@@ -31,7 +31,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 			}),
 			i(210684, {	-- Mark of the Thriving Dreamtalon (CI!)
-				["provier"] = { "i", 210764 },	-- Silent Mark of the Dreamtalon
+				["provider"] = { "i", 210764 },	-- Silent Mark of the Dreamtalon
 			}),
 			header(HEADERS.Item, 210728, {	-- Moon-Blessed Claw
 				--o(xxxxx, {	-- Small Box of Vials
@@ -60,7 +60,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				i(210875, {	-- Filled Vial "E"
 					["description"] = "Go to following coordinate to fill the vial.",
 					["provider"] = { "i", 210836 },	-- Empty Vial "E"
-					["coords"] = { 49.2, 33.3, DUSKWOOD },
+					["coord"] = { 49.2, 33.3, DUSKWOOD },
 				}),
 				i(210874, {	-- Filled Vial "K"
 					["description"] = "Go to following coordinate to fill the vial.",

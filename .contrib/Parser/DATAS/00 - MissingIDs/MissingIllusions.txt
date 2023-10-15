@@ -1,5 +1,0 @@
-10.2.0.51239
-ill(7032),	-- Verdant Crush
-
-
-Nothing is Missing in IllusionDB.lua! Good Work!

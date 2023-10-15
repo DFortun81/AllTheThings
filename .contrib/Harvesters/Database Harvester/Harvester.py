@@ -169,7 +169,7 @@ def get_existing_ids(thing: type[Thing]) -> list[str]:
     """Get the IDs of a thing from Categories.lua."""
     if not thing.real_collectible:
         raise NotImplementedError("This is not a real collectible.")
-    categories_path = Path("..", "..", "..", "db", "Dragonflight", "Categories.lua")
+    categories_path = Path("..", "..", "..", "ptr_db", "Dragonflight", "Categories.lua")
     existing_ids = list[str]()
     with open(categories_path, encoding="utf8") as categories_file:
         for line in categories_file:
@@ -561,4 +561,4 @@ def give_name_item() -> None:
 """Step 4: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
 # sort_raw_file_recipes()
 """Step 5: Run create_missing_files() and (you have to uncomment it)"""
-# create_missing_files()
+create_missing_files()

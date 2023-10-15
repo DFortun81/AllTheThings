@@ -1,11 +1,5 @@
 0.5.5.3494
 r(8387),	-- Find Herbs
-10.2.0.51239
-r(421176),	-- Overgrown Bubble Poppy
-r(421224),	-- Overgrown Hochenblume
-r(421226),	-- Overgrown Saxifrage
-r(421227),	-- Overgrown Writhebark
-r(422293),	-- Overload Overgrown Herb
 
 
 Nothing is Missing in HerbalismItemDB.lua! Good Work!

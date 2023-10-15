@@ -1,18 +1,4 @@
 3.4.1.47966
 title(210),	-- Battlemaster %s
-10.1.7.50893
-title(521),	-- Outland Racer %s
-10.2.0.51239
-title(517),	-- %s the Dreaming \\ %s the <PH Season 3 Title>
-title(522),	-- Dream Racer %s
-title(524),	-- Emerald Ace %s
-title(525),	-- Verdant Legend %s
-title(526),	-- Verdant Gladiator %s
-title(527),	-- Blossom Bringer %s
-10.2.0.51521
-title(528),	-- %s, Famed Slayer of Fyrakk
-title(529),	-- Battle Mender %s
 10.2.0.51601
-title(530),	-- %s the Blazing
-title(531),	-- %s the Dreaming Hero
 title(532),	-- %s, Dream Defender

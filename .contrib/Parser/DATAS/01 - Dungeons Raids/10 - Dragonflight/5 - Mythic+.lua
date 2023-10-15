@@ -134,14 +134,14 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 		},{
 			ach(19009),		-- Dragonflight Keystone Explorer: Season Three
 			ach(19010, {	-- Dragonflight Keystone Conqueror: Season Three
-				title(786),	-- <Name> the Dreaming
+				title(517),	-- <Name> the Dreaming
 			}),
 			ach(19011, {	-- Dragonflight Keystone Master: Season Three
 				i(209060),	-- Verdant Armoredon (MOUNT!)
 			}),
 			ach(19012),		-- Dragonflight Keystone Hero: Season Three
 			ach(19449, {	-- Dreaming Hero: Dragonflight Season 3
-				title(800),	-- <Name> the Dreaming Hero
+				title(531),	-- <Name> the Dreaming Hero
 			}),
 			ach(19087, {	-- Keystone Hero: Atal'Dazar
 				spell(424187),	-- Path of the Golden Tomb
