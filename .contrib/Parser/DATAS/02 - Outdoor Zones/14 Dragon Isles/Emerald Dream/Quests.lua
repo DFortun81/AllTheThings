@@ -406,6 +406,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 76463 },	-- Delectable Delicacies
 				["provider"] = { "n", 207352 },	-- Mordenaku
 				["coord"] = { 61.5, 68.7, THE_WAKING_SHORES },
+				["g"] = {
+					i(211353),	-- Roasted Ram Special
+				},
 			}),
 			q(76464, {	-- The Thorignir
 				["sourceQuests"] = { 77198 },	-- Home in Time for Tea
@@ -416,6 +419,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 76464 },	-- The Thorignir
 				["provider"] = { "n", 207351 },	-- Vyranoth
 				["coord"] = { 51.1, 83.8, STORMHEIM },
+				["maps"] = { 2230, 2231 },	-- Halls Of Valor scenario maps
 				["g"] = {
 					i(206156),	-- Grotto Netherwing Drake (MOUNT!)
 					i(210959),	-- Pact of the Netherwing
@@ -916,6 +920,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(78853),	-- unlock ability to buy Snorr (i: 210785) (require: Axel (any other pet with same model?)) (spellID xx)
 		q(78857),	-- unlock ability to buy Somnolet (i: 210652) (require: Seedle (any other pet with same model?)) (spellID 429070)
 		--
+		q(78977),	-- pop after finishing qID 78890 (Emerald Frenzy) first time (daily/weekly?), seems like it is fired when give your reward
 		-- ???
 		--q(77526),	-- 'Chest' (spellID 423213)
 		--q(77491),	-- 'Chest' (spellID 420623)

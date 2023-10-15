@@ -946,8 +946,6 @@ root(ROOTS.Unsorted, {
 			i(210041),	-- Shipment of Goods
 
 			i(210203),	-- Mail - WRIST 2
-			i(210218),	-- Plump Dreamy Bounty
-			i(210219),	-- Gigantic Dreamy Bounty
 			i(210224),	-- Small Emerald Bloom
 			i(210225),	-- Medium Emerald Bloom
 			i(210226),	-- Large Emerald Bloom
@@ -1070,8 +1068,6 @@ root(ROOTS.Unsorted, {
 
 
 			i(211065),	-- Technique: Mark of the Auric Dreamstag
-			i(211080),	-- Mark of the Boreal Dreamtalon
-			i(211081),	-- Mark of the Auroral Dreamtalon
 
 			i(211126),	-- Glorious Medal of Honor
 

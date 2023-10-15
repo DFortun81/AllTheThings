@@ -66,9 +66,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["g"] = {
 						i(211394),	-- Harvested Dreamseed Cache
 						--(TODO: Superbloom share)
-						--i(210380),	-- Glittering Gelid Goldchain
-						--i(210378),	-- Rime Ridden Ring
-						--i(210403),	-- Winter Forager's Spire
 					},
 				}),
 			}),
@@ -84,7 +81,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				i(210174),	-- Formula: Illusory Adornment: Dreams (RECIPE!) (TODO: seems like only from blue and epic seed?)
 				i(210241),	-- Recipe: Dreamwalker's Healing Potion (RECIPE!)
 				-- new loot? depends on seed?
-				i(210217),	-- Small Dreamy Bounty
+				i(210219, {	-- Gigantic Dreamy Bounty (TODO: can be unique mount (druid marks counted as mount, yes))
+					i(209950),	-- Rekindled Dreamstag (MOUNT!)
+					i(209947),	-- Blossoming Dreamstag (MOUNT!)
+					i(210775),	-- Snowfluff Dreamtalon (MOUNT!)
+					i(210769),	-- Springtide Dreamtalon (MOUNT!)
+					i(210057),	-- Morning Flourish Dreamsaber (MOUNT!)
+					i(210058),	-- Evening Sun Dreamsaber (MOUNT!)
+					-- double up mount since they removed from vendor but can be looted from this bag
+				}),
+				i(210218),	-- Plump Dreamy Bounty (TODO: can be unique battle pet)
+				i(210217),	-- Small Dreamy Bounty (TODO: can be unique cosmetic)
 			}),
 		}),
 	}),
@@ -92,79 +99,244 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(EMERALD_DREAM, {
-		-- There also possibility that each if it have 2 (or even 3) more hqts - one for 50/100 and another for 100/100
-		-- ...and may be have one more hqt with 'evolution' for seed (when rare is summoned)
-		--1
-		--q(),	-- plant seed Ageless Blossom / 77209
-		--q(),	-- contrib to Ageless Blossom / prob do not exist
-		--q(),	-- loot cache Ageless Blossom / prob do not exist
-		--2
-		q(77359),	-- plant seed Belligerent Begonias
-		--q(),	-- contrib to Belligerent Begonias
-		q(77360),	-- loot cache Belligerent Begonias
-		--3
-		q(77219),	-- plant seed Chiming Foxglove
-		q(77234),	-- contrib to Chiming Foxglove / but also have 77217 & 77227 (could be bag reward in donation, but dunno)
-		q(77211),	-- loot cache Chiming Foxglove
-		--4
-		q(77518),	-- plant seed Comfy Chamomile
-		--q(),	-- contrib to Comfy Chamomile
-		q(77517),	-- loot cache Comfy Chamomile
-		--5
-		q(77224),	-- plant seed Dragon's Daffodil
-		--q(),	-- contrib to Dragon's Daffodil
-		q(77212),	-- loot cache Dragon's Daffodil
-		--6
+		-- I hate it >_<
+		-- ...78975 is currently pop when looting cache in addition to loot hqt, unknown why.
+		--1 - Ageless Blossom
+		--q(),	-- plant green seed / 77209
+		--q(),	-- plant blue seed 
+		--q(),	-- plant purple seed 
+		--q(),	-- contrib with dewdrop
+		--q(),	-- contrib with dewdrop for green seed
+		--q(),	-- contrib with dewdrop for blue seed
+		--q(),	-- contrib with dewdrop for purple seed
+		--q(),	-- contrib with green seed (to other player plant)
+		--q(),	-- contrib with blue seed (to other player plant)
+		--q(),	-- contrib with purple seed (to other player plant)
+		--q(),	-- bloom spot
+		--q(),	-- loot cache
+		--2 - Belligerent Begonias
+		--q(),	-- plant green seed / 77359 ?
+		--q(),	-- plant blue seed
+		--q(),	-- plant purple seed
+		--q(),	-- contrib with dewdrop
+		--q(),	-- contrib with dewdrop for green seed
+		--q(),	-- contrib with dewdrop for blue seed
+		--q(),	-- contrib with dewdrop for purple seed
+		--q(),	-- contrib with green seed (to other player plant)
+		--q(),	-- contrib with blue seed (to other player plant)
+		--q(),	-- contrib with purple seed (to other player plant)
+		--q(),	-- bloom spot
+		q(77360),	-- loot cache
+		--3 - Chiming Foxglove
+		--q(),	-- plant green seed / 77219?
+		--q(),	-- plant blue seed
+		--q(),	-- plant purple seed
+		--q(77234),	-- contrib with dewdrop / but also have 77217 & 77227 (could be bag reward in donation, but dunno)
+		--q(),	-- contrib with dewdrop for green seed 
+		--q(),	-- contrib with dewdrop for blue seed
+		--q(),	-- contrib with dewdrop for purple seed
+		--q(),	-- contrib with green seed (to other player plant)
+		--q(),	-- contrib with blue seed (to other player plant)
+		--q(),	-- contrib with purple seed (to other player plant)
+		--q(),	-- bloom spot
+		q(77211),	-- loot cache
+		--4 - Comfy Chamomile
+		--q(),	-- plant green seed / 77518?
+		--q(),	-- plant blue seed
+		--q(),	-- plant purple seed
+		--q(),	-- contrib with dewdrop
+		--q(),	-- contrib with dewdrop for green seed
+		--q(),	-- contrib with dewdrop for blue seed
+		--q(),	-- contrib with dewdrop for purple seed
+		--q(),	-- contrib with green seed (to other player plant)
+		--q(),	-- contrib with blue seed (to other player plant)
+		--q(),	-- contrib with purple seed (to other player plant)
+		--q(),	-- bloom spot
+		q(77517),	-- loot cache
+		--5 - Dragon's Daffodil
+		q(77224),	-- plant green seed
+		q(77225),	-- plant blue seed
+		q(77220),	-- plant purple seed
+		q(77235),	-- contrib with dewdrop
+		q(78776),	-- contrib with dewdrop for green seed
+		q(78774),	-- contrib with dewdrop for blue seed
+		q(78775),	-- contrib with dewdrop for purple seed
+		--q(),	-- contrib with green seed (to other player plant)
+		--q(),	-- contrib with blue seed (to other player plant)
+		--q(),	-- contrib with purple seed (to other player plant) / ??? completed 77220 unflagged 77229
+		q(77228),	-- bloom spot / purple
+		q(77212),	-- loot cache
+		--6 - Dreamer's Daisy
+		--q(),	-- plant green seed
+		--q(),	-- plant blue seed
+		--q(),	-- plant purple seed
+		--q(),	-- contrib with dewdrop
+		--q(),	-- contrib with dewdrop for green seed
+		--q(),	-- contrib with dewdrop for blue seed
+		--q(),	-- contrib with dewdrop for purple seed
+		--q(),	-- contrib with green seed (to other player plant)
+		--q(),	-- contrib with blue seed (to other player plant)
+		--q(),	-- contrib with purple seed (to other player plant)
+		--q(),	-- bloom spot
+		--q(),	-- loot cache
 		q(77391),	-- plant seed Dreamer's Daisy
 		q(77390),	-- contrib to Dreamer's Daisy / 77274 (100 out of 100 charge with purple bag rewarad), may be
 		q(77393),	-- loot cache Dreamer's Daisy
-		--7
-		q(77538),	-- plant seed Flourishing Scurfpea
-		--q(),	-- contrib to Flourishing Scurfpea
-		q(77536),	-- loot cache Flourishing Scurfpea
-		--8
-		q(77380),	-- plant seed Fuzzy Licorice
-		q(77378),	-- contrib to Fuzzy Licorice / 77367 (blue bag reward 50 out of 100)
-		q(77381),	-- loot cache Fuzzy Licorice
-		--9
-		q(77508),	-- plant seed Glade Goldenrod / 77511 on warlock as 05.10
-		--q(),	-- contrib to Glade Goldenrod / 77507 & 78807 as 05.10
-		q(77509),	-- loot cache Glade Goldenrod
-		--10
-		q(77496),	-- plant seed Lavatouched Lilies
-		q(77492),	-- contrib to Lavatouched Lilies
-		q(77494),	-- loot cache Lavatouched Lilies
-		--11
-		q(77384),	-- plant seed Lofty Lupin
-		--q(),	-- contrib to Lofty Lupin
-		q(77385),	-- loot cache Lofty Lupin
-		--12
-		q(77503),	-- plant seed Lullaby Lavender
-		q(77499),	-- contrib to Lullaby Lavender
-		q(77501),	-- loot cache Lullaby Lavender
-		--13
-		q(77531),	-- plant seed Moon Tulip
-		q(77527),	-- contrib to Moon Tulip / 78816 in addition (Small Emerald Bloom) as 14.10
-		q(77529),	-- loot cache Moon Tulip
-		--14
-		q(77387),	-- plant seed Ringing Rose
-		--q(),	-- contrib to Ringing Rose
-		q(77389),	-- loot cache Ringing Rose
-		--15
-		q(77375),	-- plant seed Singing Weedling
-		--q(),	-- contrib to Singing Weedling
-		q(77373),	-- loot cache Singing Weedling
-		--16
-		q(77394),	-- plant seed Viridescent Sprout / was 'unflagged' 77357 (in previous build)
-		q(77395),	-- contrib to Viridescent Sprout / 77371 & 78798 (donated green seed to another person plant)
-		q(77396),	-- loot cache Viridescent Sprout / 77357 - when bloom, 78975 after looting
-		--17
-		--q(),	-- plant seed Whisperbloom Sapling
-		--q(),	-- contrib to Whisperbloom Sapling
-		--q(),	-- loot cache Whisperbloom Sapling
-		--18
-		q(77214),	-- plant seed Ysera's Clover
-		--q(),	-- contrib to Ysera's Clover
-		q(77210),	-- loot cache Ysera's Clover
+		--7 - Flourishing Scurfpea
+		--q(),	-- plant green seed / 77538? 77533?
+		q(77535),	-- plant blue seed
+		--q(),	-- plant purple seed
+		q(77534),	-- contrib with dewdrop
+		--q(),	-- contrib with dewdrop for green seed
+		q(78811),	-- contrib with dewdrop for blue seed
+		--q(),	-- contrib with dewdrop for purple seed
+		--q(),	-- contrib with green seed (to other player plant)
+		--q(),	-- contrib with blue seed (to other player plant)
+		--q(),	-- contrib with purple seed (to other player plant)
+		q(77532),	-- bloom spot
+		q(77536),	-- loot cache
+		--8 - Fuzzy Licorice
+		--q(),	-- plant green seed
+		--q(),	-- plant blue seed / 77380?
+		--q(),	-- plant purple seed
+		q(77378),	-- contrib with dewdrop
+		--q(),	-- contrib with dewdrop for green seed
+		--q(),	-- contrib with dewdrop for blue seed / 77367?
+		--q(),	-- contrib with dewdrop for purple seed
+		--q(),	-- contrib with green seed (to other player plant)
+		--q(),	-- contrib with blue seed (to other player plant)
+		--q(),	-- contrib with purple seed (to other player plant)
+		--q(),	-- bloom spot
+		q(77381),	-- loot cache
+		--9 - Glade Goldenrod
+		--q(),	-- plant green seed / 77508? 77511?
+		--q(),	-- plant blue seed
+		--q(),	-- plant purple seed
+		q(77507),	-- contrib with dewdrop
+		--q(),	-- contrib with dewdrop for green seed / 78807?
+		--q(),	-- contrib with dewdrop for blue seed
+		--q(),	-- contrib with dewdrop for purple seed
+		--q(),	-- contrib with green seed (to other player plant)
+		--q(),	-- contrib with blue seed (to other player plant)
+		--q(),	-- contrib with purple seed (to other player plant)
+		--q(),	-- bloom spot
+		q(77509),	-- loot cache
+		--10 - Lavatouched Lilies
+		--q(),	-- plant green seed / 77496?
+		--q(),	-- plant blue seed
+		--q(),	-- plant purple seed
+		q(77492),	-- contrib with dewdrop
+		--q(),	-- contrib with dewdrop for green seed
+		--q(),	-- contrib with dewdrop for blue seed
+		--q(),	-- contrib with dewdrop for purple seed
+		--q(),	-- contrib with green seed (to other player plant)
+		--q(),	-- contrib with blue seed (to other player plant)
+		--q(),	-- contrib with purple seed (to other player plant)
+		--q(),	-- bloom spot
+		q(77494),	-- loot cache
+		--11 - Lofty Lupin
+		--q(),	-- plant green seed / 77384?
+		--q(),	-- plant blue seed
+		--q(),	-- plant purple seed
+		--q(),	-- contrib with dewdrop
+		--q(),	-- contrib with dewdrop for green seed
+		--q(),	-- contrib with dewdrop for blue seed
+		--q(),	-- contrib with dewdrop for purple seed
+		--q(),	-- contrib with green seed (to other player plant)
+		--q(),	-- contrib with blue seed (to other player plant)
+		--q(),	-- contrib with purple seed (to other player plant)
+		--q(),	-- bloom spot
+		q(77385),	-- loot cache
+		--12 - Lullaby Lavender
+		--q(),	-- plant green seed / 77503?
+		--q(),	-- plant blue seed
+		--q(),	-- plant purple seed
+		q(77499),	-- contrib with dewdrop
+		--q(),	-- contrib with dewdrop for green seed
+		--q(),	-- contrib with dewdrop for blue seed
+		--q(),	-- contrib with dewdrop for purple seed
+		--q(),	-- contrib with green seed (to other player plant)
+		--q(),	-- contrib with blue seed (to other player plant)
+		--q(),	-- contrib with purple seed (to other player plant)
+		--q(),	-- bloom spot
+		q(77501),	-- loot cache
+		--13 - Moon Tulip
+		--q(),	-- plant green seed / 77531?
+		--q(),	-- plant blue seed
+		--q(),	-- plant purple seed
+		q(77527),	-- contrib with dewdrop
+		q(78816),	-- contrib with dewdrop for green seed
+		--q(),	-- contrib with dewdrop for blue seed
+		--q(),	-- contrib with dewdrop for purple seed
+		--q(),	-- contrib with green seed (to other player plant)
+		--q(),	-- contrib with blue seed (to other player plant)
+		--q(),	-- contrib with purple seed (to other player plant)
+		--q(),	-- bloom spot
+		q(77529),	-- loot cache
+		--14 - Ringing Rose
+		--q(),	-- plant green seed / 77387?
+		--q(),	-- plant blue seed
+		q(77273),	-- plant purple seed
+		q(77388),	-- contrib with dewdrop
+		--q(),	-- contrib with dewdrop for green seed
+		--q(),	-- contrib with dewdrop for blue seed
+		q(78791),	-- contrib with dewdrop for purple seed
+		--q(),	-- contrib with green seed (to other player plant)
+		--q(),	-- contrib with blue seed (to other player plant)
+		--q(),	-- contrib with purple seed (to other player plant)
+		q(77355),	-- bloom spot
+		q(77389),	-- loot cache / & 78975 on looting cache
+		--15 - Singing Weedling
+		--q(),	-- plant green seed / 77375?
+		--q(77374),	-- plant blue seed
+		--q(77376),	-- plant purple seed
+		--q(),	-- contrib with dewdrop
+		--q(),	-- contrib with dewdrop for green seed
+		--q(78780),	-- contrib with dewdrop for blue seed
+		--q(),	-- contrib with dewdrop for purple seed
+		--q(),	-- contrib with green seed (to other player plant)
+		--q(),	-- contrib with blue seed (to other player plant)
+		--q(),	-- contrib with purple seed (to other player plant)
+		q(77350),	-- bloom spot
+		q(77373),	-- loot cache / & 78975 on looting cache
+		--16 - Viridescent Sprout
+		--q(),	-- plant green seed / 77394?
+		--q(),	-- plant blue seed
+		--q(),	-- plant purple seed
+		q(77395),	-- contrib with dewdrop / 77371 & 78798 (donated green seed to another person plant)
+		--q(),	-- contrib with dewdrop for green seed
+		--q(),	-- contrib with dewdrop for blue seed
+		--q(),	-- contrib with dewdrop for purple seed
+		--q(),	-- contrib with green seed (to other player plant)
+		--q(),	-- contrib with blue seed (to other player plant)
+		--q(),	-- contrib with purple seed (to other player plant)
+		q(77357),	-- bloom spot
+		q(77396),	-- loot cache / & 78975 on looting cache
+		--17 - Whisperbloom Sapling (bugged on ptr)
+		--q(),	-- plant green seed
+		--q(),	-- plant blue seed 
+		--q(),	-- plant purple seed 
+		--q(),	-- contrib with dewdrop
+		--q(),	-- contrib with dewdrop for green seed
+		--q(),	-- contrib with dewdrop for blue seed
+		--q(),	-- contrib with dewdrop for purple seed
+		--q(),	-- contrib with green seed (to other player plant)
+		--q(),	-- contrib with blue seed (to other player plant)
+		--q(),	-- contrib with purple seed (to other player plant)
+		--q(),	-- bloom spot
+		--q(),	-- loot cache
+		--18 - Ysera's Clover
+		q(77216),	-- plant green seed
+		--q(),	-- plant blue seed / 77214?
+		--q(),	-- plant purple seed
+		q(77233),	-- contrib with dewdrop
+		q(78768),	-- contrib with dewdrop for green seed
+		--q(),	-- contrib with dewdrop for blue seed
+		--q(),	-- contrib with dewdrop for purple seed
+		q(77218),	-- contrib with green seed (to other player plant)
+		--q(),	-- contrib with blue seed (to other player plant)
+		--q(),	-- contrib with purple seed (to other player plant)
+		--q(),	-- bloom spot
+		q(77210),	-- loot cache
 	}),
 }));

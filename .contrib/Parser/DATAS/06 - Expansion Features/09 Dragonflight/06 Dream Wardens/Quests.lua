@@ -62,6 +62,16 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 				}),
+				-- TODO: move this one to whatever more accurate place it is needed, it just pop now for me, idk what trigger it
+				q(78598, {	-- Dream Infusion
+					--["sourceQuests"] = { 78431 },	-- Green Dream Team / may be?
+					["provider"] = { "n", 211209 },	-- Elianna
+					["coord"] = { 50.2, 61.8, EMERALD_DREAM },
+					["repeatable"] = true,
+					["g"] = {
+						currency(2777),	-- Dream Infusion
+					},
+				}),
 			}, {	-- RENOWN 6 --
 			}, {	-- RENOWN 7 --
 			}, {	-- RENOWN 8 --

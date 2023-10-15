@@ -17,7 +17,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["coord"] = { 51.4, 59.6, EMERALD_DREAM },
 					["isWeekly"] = true,
 					["g"] = {
-						i(211389),	-- Cache of Overblooming Treasures
+						i(211389, {	-- Cache of Overblooming Treasures
+							i(211417),	-- Dream Wardens Insignia
+						}),
 					},
 				}),
 			}),
@@ -49,6 +51,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210382),	-- Frigid Conservator's Wrap (cloak) / will leave it here until non-cloth confirm drop
 					i(210391),	-- Frigid Conservator's Slippers
 				}),
+				filter(FINGER_F, {
+					i(210376),	-- Beautiful Blizzard Binding
+					i(210378),	-- Rime Ridden Ring
+					i(210377),	-- Snipping Sleet Circle
+				}),
 				filter(LEATHER, {
 					i(210352),	-- Crystalline Tender's Vest
 					i(210353),	-- Crystalline Tender's Gloves
@@ -73,6 +80,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 				filter(NECK_F, {
 					i(210379),	-- Cold Crisp Collar
+					i(210380),	-- Glittering Gelid Goldchain
 				}),
 				filter(PLATE, {
 					i(210348),	-- Arctic Warden's Sabatons
@@ -86,8 +94,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210408),	-- Arctic Warden's Cloak (cloak) / will leave it here until non-plate confirm drop
 				}),
 				filter(TRINKET_F, {
-					i(210376),	-- Beautiful Blizzard Binding
-					i(210377),	-- Snipping Sleet Circle
+					--i(),	-- xx
 				}),
 				n(WEAPONS, {
 					i(210394),	-- Cold Conservator's Cane
@@ -104,6 +111,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210404),	-- Frigid Forager's Curve
 					i(210396),	-- Frigid Forager's Longbow
 					i(210398),	-- Frigid Forager's Handaxe
+					i(210403),	-- Winter Forager's Spire
 					i(210387),	-- Winter Warden's Blade
 					i(210383),	-- Winter Warden's Bulwark
 					i(210400),	-- Winter Warden's Gavel
@@ -131,7 +139,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 			q(78203),	-- Superbloom
 			--
 			--q(78553),	-- Marikke (n: 207543) lockout (as last notes stay, should be another npc here now?)
-			--q(78502),	-- pop with delay after new rare was killed and event 'end' / 'Sprouting Dreamtrove'? / gear reward?
+			q(78502),	-- pop with delay after new rare was killed and event 'end' / 'Sprouting Dreamtrove'?
 			--q(78554),	-- on 2nd kill with rare state of event - was looted small dreamseed
 			q(78866),	-- 'Superbloom: Step 2'
 			q(78867),	-- 'Superbloom: Step 3'
