@@ -1020,9 +1020,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(203337),	-- Winding Slitherdrake: Thorn Horns
 			i(203333),	-- Winding Slitherdrake: Short Horns
 			i(203344),	-- Winding Slitherdrake: Single Jaw Horn
-			i(203315),	-- Winding Slitherdrake: Small Spiked Crest
-			i(203332),	-- Winding Slitherdrake: Spiked Horns
-			i(203357),	-- Winding Slitherdrake: Spiked Tail
 			i(203354),	-- Winding Slitherdrake: White Scales
 		})),
 	})),
@@ -1083,23 +1080,24 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		header(HEADERS.Item, 194521, {	-- Cliffside Wylderdrake
 		}),
 		header(HEADERS.Item, 210412, {	-- Flourishing Whimsydrake
-			i(210482),	-- Flourishing Whimsydrake: Back Fins
+			i(210482),	-- Flourishing Whimsydrake: Back Fins (DM!)
 			i(210471),	-- Flourishing Whimsydrake: Body Armor
 			i(210478),	-- Flourishing Whimsydrake: Gold and Pink Armor
 			i(210476),	-- Flourishing Whimsydrake: Helmet
-			i(210486),	-- Flourishing Whimsydrake: Horns
-			i(210485),	-- Flourishing Whimsydrake: Long Snout
-			i(210487),	-- Flourishing Whimsydrake: Neck Fins
-			i(210479),	-- Flourishing Whimsydrake: Night Scales
-			i(210483),	-- Flourishing Whimsydrake: Ridged Brow
+			i(210486),	-- Flourishing Whimsydrake: Horns (DM!)
+			i(210485),	-- Flourishing Whimsydrake: Long Snout (DM!)
+			i(210487),	-- Flourishing Whimsydrake: Neck Fins (DM!)
+			i(210479),	-- Flourishing Whimsydrake: Night Scales (DM!)
+			i(210483),	-- Flourishing Whimsydrake: Ridged Brow (DM!)
 			i(210480),	-- Flourishing Whimsydrake: Sunrise Scales
-			i(210481),	-- Flourishing Whimsydrake: Sunset Scales
-			i(210484),	-- Flourishing Whimsydrake: Underbite Snout
+			i(210481),	-- Flourishing Whimsydrake: Sunset Scales (DM!)
+			i(210484),	-- Flourishing Whimsydrake: Underbite Snout (DM!)
 		}),
 		header(HEADERS.Item, 206156, { -- Grotto Netherwing Drake
 			i(207760),	-- Grotto Netherwing Drake: Armor
-			i(207779),	-- Grotto Netherwing Drake: Barbed Tail
+			i(207779),	-- Grotto Netherwing Drake: Barbed Tail (DM!)
 			i(207776),	-- Grotto Netherwing Drake: Black Scales
+			i(207762),	-- Grotto Netherwing Drake: Chin Spike (DM!)
 			i(207761),	-- Grotto Netherwing Drake: Chin Tendrils (DM!)
 			i(207759),	-- Grotto Netherwing Drake: Cluster Spiked Back
 			i(207765),	-- Grotto Netherwing Drake: Cluster Spiked Crest
@@ -1110,7 +1108,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(207772),	-- Grotto Netherwing Drake: Long Horns
 			i(207769),	-- Grotto Netherwing Drake: Outcast Pattern
 			i(207757),	-- Grotto Netherwing Drake: Purple and Silver Armor
-			i(207771),	-- Grotto Netherwing Drake: Short Horns
+			i(207771),	-- Grotto Netherwing Drake: Short Horns (DM!)
 			i(207763),	-- Grotto Netherwing Drake: Single Horned Crest
 			i(207758),	-- Grotto Netherwing Drake: Spiked Back
 			i(207773),	-- Grotto Netherwing Drake: Spiked Jaw (DM!)
@@ -1133,6 +1131,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		header(HEADERS.Item, 204361, {	-- Winding Slitherdrake
 			pvp(i(210064)),	-- Winding Slitherdrake: Embodiment of the Verdant Gladiator (DM!)
 			i(203311),	-- Winding Slitherdrake: Hairy Chin (DM!)
+			i(203315),	-- Winding Slitherdrake: Small Spiked Crest (DM!)
+			i(203332),	-- Winding Slitherdrake: Spiked Horns (DM!)
+			i(203357),	-- Winding Slitherdrake: Spiked Tail (DM!)
 		}),
 	})),
 })));

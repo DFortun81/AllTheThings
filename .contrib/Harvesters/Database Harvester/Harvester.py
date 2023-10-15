@@ -529,7 +529,7 @@ def create_missing_files() -> None:
     """This iterates over Things to create missing files"""
     things: list[type[Thing]] = Thing.__subclasses__()
     for thing in things:
-        if thing != Items:
+        if thing != Items and thing == Recipes:
             print(thing)
             create_missing_file(thing)
             post_process(thing)

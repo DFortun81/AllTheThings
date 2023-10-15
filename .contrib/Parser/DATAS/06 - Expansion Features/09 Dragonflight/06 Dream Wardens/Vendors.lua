@@ -111,13 +111,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							["cost"] = { { "c", DRAGON_SUPPLIES, 1250 } },
 						}),
 					}, {	-- RENOWN 20 --
-						i(210481, {	-- Small Dreamseed
+						i(208066, {	-- Small Dreamseed
 							["cost"] = { { "c", DRAGON_SUPPLIES, 100 } },
 						}),
-						i(210481, {	-- Plump Dreamseed
+						i(208067, {	-- Plump Dreamseed
 							["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
 						}),
-						i(210481, {	-- Gigantic Dreamseed
+						i(208047, {	-- Gigantic Dreamseed
 							["cost"] = { { "c", DRAGON_SUPPLIES, 1500 } },
 						}),
 					},

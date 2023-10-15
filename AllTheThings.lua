@@ -583,6 +583,7 @@ app.RefreshTradeSkillCache = function()
 	cache[2811] = 1;	-- Stygia Crafting
 	cache[2819] = 1;	-- Protoform Synthesis
 	cache[2847] = 1;	-- Tuskarr Fishing Gear
+	cache[2886] = 1;	-- Supply Shipments
 	-- app.PrintDebug("RefreshTradeSkillCache");
 	local prof1, prof2, archaeology, fishing, cooking, firstAid = GetProfessions();
 	for i,j in ipairs({prof1 or 0, prof2 or 0, archaeology or 0, fishing or 0, cooking or 0, firstAid or 0}) do
@@ -12602,6 +12603,7 @@ local SkillIcons = setmetatable({
 	[2811] = 2578727,	-- Stygia Crafting
 	[2819] = 3747898,	-- Protoform Synthesis
 	[2847] = 4638460,	-- Tuskarr Fishing Gear
+	[2886] = 1394946,	-- Supply Shipments
 }, { __index = function(t, key)
 	if not key then return; end
 	local skillSpellID = app.SkillIDToSpellID[key];
@@ -21995,7 +21997,7 @@ app.InitDataCoroutine = function()
 
 	-- now that the addon is ready, make sure the minilist is updated to the current location if necessary
 	DelayedCallback(app.LocationTrigger, 3);
-	
+
 	-- Execute the OnReady handlers.
 	for i,handler in ipairs(app.EventHandlers.OnReady) do
 		handler();

@@ -32,9 +32,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["cost"] = {{"i",201437,5}},	-- 5x Slumbering Dream Fragment
 				["g"] = {
 					i(201469),	-- Emerald Green Apple
-					i(207779, {["timeline"] = {ADDED_10_2_0}}),	-- Grotto Netherwing Drake: Barbed Tail (DM!)
-					i(207771, {["timeline"] = {ADDED_10_2_0}}),	-- Grotto Netherwing Drake: Short Horns (DM!)
-					i(210050, {["timeline"] = {ADDED_10_2_0}}),	-- Mysterious Seeds (QI!)
 				},
 			}),
 			i(201437),	-- Slumbering Dream Fragment

@@ -249,7 +249,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["coord"] = { 33.7, 25.2, EMERALD_DREAM },
 					["g"] = {
 						i(210757),	-- Scales of Remorse
-						--i(208047),	-- Gigantic Dreamseed
 					},
 				}),
 				------ Chapter 4 ------
@@ -358,7 +357,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["coord"] = { 51.9, 29.4, EMERALD_DREAM },
 					["g"] = {
 						i(210847),	-- Tears of the Eye
-						--i(208067),	-- Plump Dreamseed
 					},
 				}),
 				------ Chapter 5 ------
@@ -506,7 +504,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 							}),
 						}),
 					}),
-					--i(208067),	-- Plump Dreamseed
 				},
 			}),
 			--
@@ -604,7 +601,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["g"] = {
 					i(210996),	-- Moonberry's Many Mischief Makers
 					i(210997),	-- Spare Party Hat
-					--i(208067),	-- Plump Dreamseed
 				},
 			}),
 			--
@@ -647,7 +643,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["g"] = {
 					--i(210864),	-- Improvised Leafbed (TOY!)
 					i(210952),	-- Spare Heated Hearthstone
-					--i(208067),	-- Plump Dreamseed
 				},
 			}),
 			--
@@ -689,9 +684,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					76571,	-- Growth Experience
 				},
 				["provider"] = { "n", 210813 },	-- Dionaessa (player instanced NPC)
-				["g"] = {
-					--i(208067),	-- Plump Dreamseed
-				},
 			}),
 			q(77802, {	-- What Do I Call You?
 				["sourceQuests"] = { 76572 },	-- A Poisonous Promotion
@@ -745,40 +737,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 58.6, 23.8, EMERALD_DREAM },
 				["g"] = {
 					i(211370),	-- Branch of Gracus
-					--i(208067),	-- Plump Dreamseed
 				},
 			}),
-			--
-			q(78427, {	-- Great Crates!
-				["sourceQuests"] = {
-					77283,	-- A Multi-Front Battle
-					77887,	-- 'World Quest Unlock' (spellID 421687)
-				},
-				["sourceQuestNumRequired"] = 1,
-				["provider"] = { "n", 211240 },	-- Eran'nda
-				["isWeekly"] = true,
-				["coord"] = { 52.5, 62.5, EMERALD_DREAM },
-				["cost"] = {
-					{ "i", 210041, 1 },	-- Shipment of Goods
-				},
-				["g"] = {
-					i(210050),	-- Mysterious Seeds
-					--i(208067),	-- Plump Dreamseed
-				},
-			}),
-			q(78428, {	-- Crate of the Art
-				["sourceQuests"] = { 78427 },	-- Great Crates!
-				["provider"] = { "n", 211240 },	-- Eran'nda
-				["isWeekly"] = true,
-				["coord"] = { 52.5, 62.5, EMERALD_DREAM },
-				["cost"] = {
-					{ "i", 210041, 5 },	-- Shipment of Goods
-				},
-				["g"] = {
-					--i(208047),	-- Gigantic Dreamseed
-				},
-			}),
-			--
 			q(78041, {	-- Sky Mother's Ire
 				["sourceQuests"] = { 78066 },	-- The Answers You've Earned
 				["provider"] = { "n", 209318 },	-- Cenarius
@@ -842,7 +802,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 65.8, 37.6, EMERALD_DREAM },
 				["g"] = {
 					i(211369),	-- Charred Staff of the Overseer
-					--i(208047),	-- Gigantic Dreamseed
 					--i(210663),	-- Circle of Nature's Youth (COSMETIC!)
 				},
 			}),

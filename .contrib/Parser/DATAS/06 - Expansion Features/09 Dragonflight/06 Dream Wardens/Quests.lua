@@ -41,36 +41,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 211962 },	-- Melsysra
 					["maps"] = { EMERALD_DREAM },	-- follow you around
 				}),
-				q(78430, {	-- Mean Green Infusion Machine
-					["sourceQuests"] = { 78386 },	-- Emerald Reawakening (TODO: may be become available without renown after done once?)
-					["provider"] = { "n", 211209 },	-- Elianna
-					["coord"] = { 50.2, 61.8, EMERALD_DREAM },
-					["g"] = {
-						i(205160),	-- Rithro (PET!)
-					},
-				}),
-				q(78431, {	-- Green Dream Team
-					["sourceQuests"] = { 78430 },	-- Mean Green Infusion Machine
-					["provider"] = { "n", 211209 },	-- Elianna
-					["coord"] = { 50.2, 61.8, EMERALD_DREAM },
-					["g"] = {
-						i(210776),	-- Lesser Dream Infusion (QI!) (Quest item, kinda)
-					},
-				}),
 				-- if quest above was done at least once / alts only
 				q(78580, {	-- Dragon Isles Supplies
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
-				}),
-				-- TODO: move this one to whatever more accurate place it is needed, it just pop now for me, idk what trigger it
-				q(78598, {	-- Dream Infusion
-					--["sourceQuests"] = { 78431 },	-- Green Dream Team / may be?
-					["provider"] = { "n", 211209 },	-- Elianna
-					["coord"] = { 50.2, 61.8, EMERALD_DREAM },
-					["repeatable"] = true,
-					["g"] = {
-						currency(2777),	-- Dream Infusion
-					},
 				}),
 			}, {	-- RENOWN 6 --
 			}, {	-- RENOWN 7 --

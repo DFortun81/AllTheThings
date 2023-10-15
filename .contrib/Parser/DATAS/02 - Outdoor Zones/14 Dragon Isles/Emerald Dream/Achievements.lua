@@ -5,78 +5,75 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 	m(EMERALD_DREAM, {
 		n(ACHIEVEMENTS, {
 			ach(19316, {	-- Adventurer of the Emerald Dream
-				["g"] = {
-					--i(210662),	-- Ochre Ornament of the Grove (COSMETIC!)
-					crit(62945, {	-- Bloodstripe Great Ray
-						["_npcs"] = { 210050 },	-- Bloodstripe Great Ray
-					}),
-					crit(62937, {	-- Crabtankerous
-						["_npcs"] = { 209909 },	-- Crabtankerous
-					}),
-					crit(62933, {	-- Envoy of Winter
-						["_npcs"] = { 209929 },	-- Envoy of Winter
-					}),
-					crit(62930, {	-- Firebrand Fystia
-						["_npcs"] = { 209893 },	-- Firebrand Fystia
-					}),
-					crit(62938, {	-- Fruitface
-						["_npcs"] = { 209913 },	-- Fruitface
-					}),
-					crit(62932, {	-- Greedy Gessie
-						["_npcs"] = { 209936 },	-- Greedy Gessie
-					}),
-					crit(62950, {	-- Henri Snufftail
-						["_npcs"] = { 210075 },	-- Henri Snufftail
-					}),
-					crit(62936, {	-- Ignit the Firebranded
-						["_npcs"] = { 209620 },	-- Ignit the Firebranded
-					}),
-					crit(62940, {	-- Isaqa
-						["_npcs"] = { 209919 },	-- Isaqa
-					}),
-					crit(62943, {	-- Keen-eyed Cian
-						["_npcs"] = { 210046 },	-- Keen-eyed Cian
-					}),
-					crit(62946, {	-- Matriarch Keevah
-						["_npcs"] = { 210051 },	-- Matriarch Keevah
-					}),
-					crit(62948, {	-- Molten Leadspike
-						["_npcs"] = { 210064 },	-- Molten Leadspike
-					}),
-					crit(62947, {	-- Moltenbinder's Disciple
-						["_npcs"] = { 208658 },	-- Moltenbinder's Disciple
-					}),
-					crit(62942, {	-- Moragh the Slothful
-						["_npcs"] = { 210045 },	-- Moragh the Slothful
-					}),
-					crit(62949, {	-- Mosa Umbramane
-						["_npcs"] = { 210070 },	-- Mosa Umbramane
-					}),
-					crit(62929, {	-- Nouberon
-						["_npcs"] = { 209113 },	-- Nouberon
-					}),
-					crit(62931, {	-- Reefbreaker Moruud
-						["_npcs"] = { 209898 },	-- Reefbreaker Moruud
-					}),
-					crit(62951, {	-- Ristar, the Rabid
-						["_npcs"] = { 210161 },	-- Ristar, the Rabid
-					}),
-					crit(62944, {	-- Somnambulant Ori
-						["_npcs"] = { 210047 },	-- Somnambulant Ori
-					}),
-					crit(62935, {	-- Splinterlimb
-						["_npcs"] = { 209365 },	-- Splinterlimb
-					}),
-					crit(62941, {	-- Surging Lasher
-						["_npcs"] = { 210111 },	-- Surging Lasher
-					}),
-					crit(62934, {	-- Talthonel Ashwhisper
-						["_npcs"] = { 209902 },	-- Talthonel Ashwhisper
-					}),
-					crit(62939, {	-- The Apostle
-						["_npcs"] = { 209911 },	-- The Apostle
-					}),
-				},
+				crit(62945, {	-- Bloodstripe Great Ray
+					["_npcs"] = { 210050 },	-- Bloodstripe Great Ray
+				}),
+				crit(62937, {	-- Crabtankerous
+					["_npcs"] = { 209909 },	-- Crabtankerous
+				}),
+				crit(62933, {	-- Envoy of Winter
+					["_npcs"] = { 209929 },	-- Envoy of Winter
+				}),
+				crit(62930, {	-- Firebrand Fystia
+					["_npcs"] = { 209893 },	-- Firebrand Fystia
+				}),
+				crit(62938, {	-- Fruitface
+					["_npcs"] = { 209913 },	-- Fruitface
+				}),
+				crit(62932, {	-- Greedy Gessie
+					["_npcs"] = { 209936 },	-- Greedy Gessie
+				}),
+				crit(62950, {	-- Henri Snufftail
+					["_npcs"] = { 210075 },	-- Henri Snufftail
+				}),
+				crit(62936, {	-- Ignit the Firebranded
+					["_npcs"] = { 209620 },	-- Ignit the Firebranded
+				}),
+				crit(62940, {	-- Isaqa
+					["_npcs"] = { 209919 },	-- Isaqa
+				}),
+				crit(62943, {	-- Keen-eyed Cian
+					["_npcs"] = { 210046 },	-- Keen-eyed Cian
+				}),
+				crit(62946, {	-- Matriarch Keevah
+					["_npcs"] = { 210051 },	-- Matriarch Keevah
+				}),
+				crit(62948, {	-- Molten Leadspike
+					["_npcs"] = { 210064 },	-- Molten Leadspike
+				}),
+				crit(62947, {	-- Moltenbinder's Disciple
+					["_npcs"] = { 208658 },	-- Moltenbinder's Disciple
+				}),
+				crit(62942, {	-- Moragh the Slothful
+					["_npcs"] = { 210045 },	-- Moragh the Slothful
+				}),
+				crit(62949, {	-- Mosa Umbramane
+					["_npcs"] = { 210070 },	-- Mosa Umbramane
+				}),
+				crit(62929, {	-- Nouberon
+					["_npcs"] = { 209113 },	-- Nouberon
+				}),
+				crit(62931, {	-- Reefbreaker Moruud
+					["_npcs"] = { 209898 },	-- Reefbreaker Moruud
+				}),
+				crit(62951, {	-- Ristar, the Rabid
+					["_npcs"] = { 210161 },	-- Ristar, the Rabid
+				}),
+				crit(62944, {	-- Somnambulant Ori
+					["_npcs"] = { 210047 },	-- Somnambulant Ori
+				}),
+				crit(62935, {	-- Splinterlimb
+					["_npcs"] = { 209365 },	-- Splinterlimb
+				}),
+				crit(62941, {	-- Surging Lasher
+					["_npcs"] = { 210111 },	-- Surging Lasher
+				}),
+				crit(62934, {	-- Talthonel Ashwhisper
+					["_npcs"] = { 209902 },	-- Talthonel Ashwhisper
+				}),
+				crit(62939, {	-- The Apostle
+					["_npcs"] = { 209911 },	-- The Apostle
+				}),
 			}),
 			ach(19026, {	-- Defenders of the Dream
 				crit(62054, {	-- Enter The Dream
@@ -177,202 +174,115 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			ach(19293, {	-- Friends In Feathers
 				--require q(78370) / Claws for Concern
 				--TODO: remove "_npcs"
-				["g"] = {
-					i(210522),	-- Blueloo (PET!)
-					crit(62785, {	-- Beaks
-						["coord"] = { 36.9, 65.8, EMERALD_DREAM },
-						["_npcs"] = { 212053 },
-					}),
-					crit(62776, {	-- Bumbletweet
-						["coord"] = { 39.1, 66.0, EMERALD_DREAM },
-						["_npcs"] = { 212042 },
-					}),
-					crit(62788, {	-- Chickle
-						["coord"] = { 36.4, 71.2, EMERALD_DREAM },
-						["_npcs"] = { 212056 },
-					}),
-					crit(62790, {	-- Eugene
-						["coord"] = { 36.4, 62.7, EMERALD_DREAM },
-						["_npcs"] = { 212058 },
-					}),
-					crit(62775, {	-- Feets
-						["coord"] = { 38.4, 69.5, EMERALD_DREAM },
-						["_npcs"] = { 212039 },
-					}),
-					crit(62779, {	-- Fruffles
-						["coord"] = { 39.3, 71.7, EMERALD_DREAM },
-						["_npcs"] = { 212046 },
-					}),
-					crit(62789, {	-- Fuzz
-						["coord"] = { 38.7, 63.5, EMERALD_DREAM },
-						["_npcs"] = { 212057 },
-					}),
-					crit(62773, {	-- Giblet
-						["coord"] = { 35.6, 67.1, EMERALD_DREAM },
-						["_npcs"] = { 212033 },
-					}),
-					crit(62784, {	-- Hops
-						["coord"] = { 37.7, 73.3, EMERALD_DREAM },
-						["_npcs"] = { 212052 },
-					}),
-					crit(62783, {	-- Meep
-						["coord"] = { 35.5, 69.7, EMERALD_DREAM },
-						["_npcs"] = { 212051 },
-					}),
-					crit(62787, {	-- Moonbeam
-						["coord"] = { 36.1, 69.7, EMERALD_DREAM },
-						["_npcs"] = { 212055 },
-					}),
-					crit(62782, {	-- Owlington
-						["coord"] = { 37.4, 72.2, EMERALD_DREAM },
-						["_npcs"] = { 212050 },
-					}),
-					crit(62777, {	-- Peanut
-						["coord"] = { 38.0, 69.0, EMERALD_DREAM },
-						["_npcs"] = { 212044 },
-					}),
-					crit(62778, {	-- Snoozle
-						["coord"] = { 40.4, 71.5, EMERALD_DREAM },
-						["_npcs"] = { 212045 },
-					}),
-					crit(62780, {	-- Squawkle
-						["coord"] = { 36.3, 71.6, EMERALD_DREAM },
-						["_npcs"] = { 212047 },
-					}),
-					crit(62786, {	-- Squeaky
-						["coord"] = { 38.4, 69.3, EMERALD_DREAM },
-						["_npcs"] = { 212054 },
-					}),
-					crit(62791, {	-- Tickles
-						["coord"] = { 38.7, 70.4, EMERALD_DREAM },
-						["_npcs"] = { 212060 },
-					}),
-					crit(62781, {	-- Wingnut
-						["coord"] = { 37.8, 70.2, EMERALD_DREAM },
-						["_npcs"] = { 212049 },
-					}),
-				},
-			}),
-			ach(19013, {	-- I Dream of Seeds
-				crit(62396, {	-- Ageless Blossom
-					["coord"] = { 59.7, 16.9, EMERALD_DREAM },
-					--["questID"] = xx, seems like it is triggered with qID 77209 or somewhere from that chain
+				i(210522),	-- Blueloo (PET!)
+				crit(62785, {	-- Beaks
+					["coord"] = { 36.9, 65.8, EMERALD_DREAM },
+					["_npcs"] = { 212053 },
 				}),
-				crit(62041, {	-- Belligerent Begonias (n: 208617)
-					["coord"] = { 49.9, 35.4, EMERALD_DREAM },
-					--["questID"] = 77359,
+				crit(62776, {	-- Bumbletweet
+					["coord"] = { 39.1, 66.0, EMERALD_DREAM },
+					["_npcs"] = { 212042 },
 				}),
-				crit(62029, {	-- Chiming Foxglove (n: 208511)
-					["coord"] = { 54.6, 67.6, EMERALD_DREAM },
-					--["questID"] = 77219,
+				crit(62788, {	-- Chickle
+					["coord"] = { 36.4, 71.2, EMERALD_DREAM },
+					["_npcs"] = { 212056 },
 				}),
-				crit(62185, {	-- Comfy Chamomile (n: 210723)
-					["coord"] = { 38.4, 59.2, EMERALD_DREAM },
-					--["questID"] = 77518,
+				crit(62790, {	-- Eugene
+					["coord"] = { 36.4, 62.7, EMERALD_DREAM },
+					["_npcs"] = { 212058 },
 				}),
-				crit(62030, {	-- Dragon's Daffodil (n: 208556)
-					["coord"] = { 64.0, 64.8, EMERALD_DREAM },
-					--["questID"] = 77224,
+				crit(62775, {	-- Feets
+					["coord"] = { 38.4, 69.5, EMERALD_DREAM },
+					["_npcs"] = { 212039 },
 				}),
-				crit(62037, {	-- Dreamer's Daisy (n: 208615)
-					["coord"] = { 46.4, 40.5, EMERALD_DREAM },
-					--["questID"] = 77391,
+				crit(62779, {	-- Fruffles
+					["coord"] = { 39.3, 71.7, EMERALD_DREAM },
+					["_npcs"] = { 212046 },
 				}),
-				crit(62189, {	-- 	Flourishing Scurfpea (n: 210725)
-					["coord"] = { 48.7, 80.5, EMERALD_DREAM },
-					--["questID"] = 77538,
+				crit(62789, {	-- Fuzz
+					["coord"] = { 38.7, 63.5, EMERALD_DREAM },
+					["_npcs"] = { 212057 },
 				}),
-				crit(62032, {	-- Fuzzy Licorice (n: 208605)
-					["coord"] = { 63.5, 47.1, EMERALD_DREAM },
-					--["questID"] = 77380,
+				crit(62773, {	-- Giblet
+					["coord"] = { 35.6, 67.1, EMERALD_DREAM },
+					["_npcs"] = { 212033 },
 				}),
-				crit(62036, {	-- Glade Goldenrod (n: 209880)
-					["coord"] = { 40.7, 43.5, EMERALD_DREAM },
-					--["questID"] = 77508,
+				crit(62784, {	-- Hops
+					["coord"] = { 37.7, 73.3, EMERALD_DREAM },
+					["_npcs"] = { 212052 },
 				}),
-				crit(62027, {	-- Lavatouched Lilies (n: 209583)
-					["coord"] = { 40.7, 24.8, EMERALD_DREAM },
-					--["questID"] = 77496,
+				crit(62783, {	-- Meep
+					["coord"] = { 35.5, 69.7, EMERALD_DREAM },
+					["_npcs"] = { 212051 },
 				}),
-				crit(62039, {	-- Lofty Lupin (n: 208606)
-					["coord"] = { 56.7, 44.9, EMERALD_DREAM },
-					--["questID"] = 77384,
+				crit(62787, {	-- Moonbeam
+					["coord"] = { 36.1, 69.7, EMERALD_DREAM },
+					["_npcs"] = { 212055 },
 				}),
-				crit(62040, {	-- Lullaby Lavender (n: 209599)
-					["coord"] = { 56.5, 37.7, EMERALD_DREAM },
-					--["questID"] = 77503,
+				crit(62782, {	-- Owlington
+					["coord"] = { 37.4, 72.2, EMERALD_DREAM },
+					["_npcs"] = { 212050 },
 				}),
-				crit(62186, {	-- Moon Tulip (n: 210724)
-					["coord"] = { 42.6, 74.0, EMERALD_DREAM },
-					--["questID"] = 77531,
+				crit(62777, {	-- Peanut
+					["coord"] = { 38.0, 69.0, EMERALD_DREAM },
+					["_npcs"] = { 212044 },
 				}),
-				crit(62038, {	-- Ringing Rose (n: 208607)
-					["coord"] = { 49.2, 48.1, EMERALD_DREAM },
-					--["questID"] = 77387,
+				crit(62778, {	-- Snoozle
+					["coord"] = { 40.4, 71.5, EMERALD_DREAM },
+					["_npcs"] = { 212045 },
 				}),
-				crit(62031, {	-- Singing Weedling (n: 208563)
-					["coord"] = { 63.0, 52.8, EMERALD_DREAM },
-					--["questID"] = 77375,
+				crit(62780, {	-- Squawkle
+					["coord"] = { 36.3, 71.6, EMERALD_DREAM },
+					["_npcs"] = { 212047 },
 				}),
-				crit(62035, {	-- Viridescent Sprout (n: 208616)
-					["coord"] = { 40.0, 52.7, EMERALD_DREAM },
-					--["questID"] = 77394,
+				crit(62786, {	-- Squeaky
+					["coord"] = { 38.4, 69.3, EMERALD_DREAM },
+					["_npcs"] = { 212054 },
 				}),
-				crit(62397, {	-- Whisperbloom Sapling (n: 211059)
-					["coord"] = { 51.2, 58.7, EMERALD_DREAM },
-					--["questID"] = xx,
+				crit(62791, {	-- Tickles
+					["coord"] = { 38.7, 70.4, EMERALD_DREAM },
+					["_npcs"] = { 212060 },
 				}),
-				crit(62028, {	-- Ysera's Clover (n: 208443)
-					["coord"] = { 59.2, 58.8, EMERALD_DREAM },
-					--["questID"] = 77214,
+				crit(62781, {	-- Wingnut
+					["coord"] = { 37.8, 70.2, EMERALD_DREAM },
+					["_npcs"] = { 212049 },
 				}),
-			}),
-			ach(19196),		-- Sowing the Seeds (TODO: next after The Emerald Bounty)
-			ach(19194),		-- The Emerald Bounty
-			ach(19198, {	-- The Seeds I Sow (TODO: next after Sowing the Seeds)
-				["g"] = {
-					title(527),	-- Blossom Bringer
-				},
 			}),
 			pvp(ach(19294, {	-- Tour of Duty: Emerald Dream
-				--[[["g"] = {
-					i(210666),	-- Crest of the Seething Flamekeeper (COSMETIC!)
-				},]]--
+				i(210666),	-- Crest of the Seething Flamekeeper (COSMETIC!)
 			})),
 			ach(19317, {	-- Treasures of the Emerald Dream
-				["g"] = {
-					i(210414),	-- Forest Lord's Antlers (COSMETIC!)
-					crit(62954, {	-- Crystalline Glowblossom
-						--["_quests"] = { xx },
-					}),
-					crit(62953, {	-- Hidden Podling Stash
-						--["_quests"] = { xx },
-					}),
-					crit(62960, {	-- Magical Bloom
-						["_quests"] = { 78005 },
-					}),
-					crit(62961, {	-- Odd Burl
-						["_quests"] = { 78006 },
-					}),
-					crit(62956, {	-- Pineshrew Cache
-						["_quests"] = { 78120 },
-					}),
-					crit(62958, {	-- Reliquary of Ashamane
-						["_quests"] = { 78359 },
-					}),
-					crit(62957, {	-- Reliquary of Aviana
-						["_quests"] = { 78360 },
-					}),
-					crit(62959, {	-- Reliquary of Goldrinn
-						["_quests"] = { 78361 },
-					}),
-					crit(62955, {	-- Reliquary of Ursol
-						["_quests"] = { 78107 },
-					}),
-					crit(62952, {	-- Triflesnatch's Roving Trove
-						["_quests"] = { 77872 },
-					}),
-				},
+				i(210414),	-- Forest Lord's Antlers (COSMETIC!)
+				crit(62954, {	-- Crystalline Glowblossom
+					--["_quests"] = { xx },
+				}),
+				crit(62953, {	-- Hidden Podling Stash
+					--["_quests"] = { xx },
+				}),
+				crit(62960, {	-- Magical Bloom
+					["_quests"] = { 78005 },
+				}),
+				crit(62961, {	-- Odd Burl
+					["_quests"] = { 78006 },
+				}),
+				crit(62956, {	-- Pineshrew Cache
+					["_quests"] = { 78120 },
+				}),
+				crit(62958, {	-- Reliquary of Ashamane
+					["_quests"] = { 78359 },
+				}),
+				crit(62957, {	-- Reliquary of Aviana
+					["_quests"] = { 78360 },
+				}),
+				crit(62959, {	-- Reliquary of Goldrinn
+					["_quests"] = { 78361 },
+				}),
+				crit(62955, {	-- Reliquary of Ursol
+					["_quests"] = { 78107 },
+				}),
+				crit(62952, {	-- Triflesnatch's Roving Trove
+					["_quests"] = { 77872 },
+				}),
 			}),
 		}),
 	}),

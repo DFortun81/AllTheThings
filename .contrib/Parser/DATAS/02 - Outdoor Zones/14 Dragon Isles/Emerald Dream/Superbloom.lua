@@ -26,20 +26,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			n(RARES, sharedData({ ["isWeekly"] = true }, {
 				n(207554, { -- Veriann Timbercrush
 					["coord"] = { 43.8, 71.8, EMERALD_DREAM },
-					--[[["questID"] = xx, --could be 78502
-					["groups"] = {
-						may be DM was his loot but now it is unclear
-					},]]--
+					--["questID"] = xx, --could be 78502
 				}),
 				n(207543, { -- Marikke
 					["coord"] = { 44.1, 71.9, EMERALD_DREAM },
-					--[[["questID"] = xx, -- could be 78553
-					["groups"] = {
-						may be DM was his loot but now it is unclear
-					},]]--
+					--["questID"] = xx, -- could be 78553
 				}),
 			})),
 			n(REWARDS, {
+				i(211414),	-- Blossoming Dreamtrove
+				i(211413),	-- Budding Dreamtrove
+				i(211411),	-- Sprouting Dreamtrove
+				filter(COSMETIC, {
+					i(210661),	-- Dreamcatcher's Crescent
+				}),
 				filter(CLOTH, {
 					i(210349),	-- Frigid Conservator's Gown
 					i(210355),	-- Frigid Conservator's Mitts
@@ -50,6 +50,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210372),	-- Frigid Conservator's Bands
 					i(210382),	-- Frigid Conservator's Wrap (cloak) / will leave it here until non-cloth confirm drop
 					i(210391),	-- Frigid Conservator's Slippers
+				}),
+				n(DRAKE_MANUSCRIPTS, {
+					i(207762),	-- Grotto Netherwing Drake: Chin Spike (DM!)
 				}),
 				filter(FINGER_F, {
 					i(210376),	-- Beautiful Blizzard Binding
@@ -93,8 +96,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210390),	-- Arctic Warden's Warhelm
 					i(210408),	-- Arctic Warden's Cloak (cloak) / will leave it here until non-plate confirm drop
 				}),
-				filter(TRINKET_F, {
-					--i(),	-- xx
+				filter(RECIPES, {
+					i(210242),	-- Recipe: Slumbering Peacebloom Tea (RECIPE!)
+					i(210243),	-- Technique: Contract: Dream Wardens (RECIPE!)
+					i(210490),	-- Technique: Vantus Rune: Amirdrassil, the Dream's Hope (RECIPE!)
 				}),
 				n(WEAPONS, {
 					i(210394),	-- Cold Conservator's Cane
@@ -117,17 +122,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210400),	-- Winter Warden's Gavel
 					i(210401),	-- Winter Warden's Greatsword
 				}),
-				--Seeds (moved into Emerald Bounty)
-				--- DM
-				i(207762),	-- Grotto Netherwing Drake: Chin Spike (DM!)
-				-- RECIPE
-				i(210242),	-- Recipe: Slumbering Peacebloom Tea (RECIPE!)
-				i(210243),	-- Technique: Contract: Dream Wardens (RECIPE!)
-				i(210490),	-- Technique: Vantus Rune: Amirdrassil, the Dream's Hope (RECIPE!)
-				--Event progress rewards
-				i(211414),	-- Blossoming Dreamtrove
-				i(211413),	-- Budding Dreamtrove
-				i(211411),	-- Sprouting Dreamtrove
 			}),
 		}),
 	}),

@@ -1,0 +1,17 @@
+10.2.0.51239
+r(424529),	-- Hochenblume Shipment \\ Shipment of Hochenblume
+r(424538),	-- Uncommon Herbs Shipment \\ Shipment of Uncommon Herbs
+r(424694),	-- Serevite Shipment \\ Shipment of Serevite
+r(424695),	-- Draconium Shipment \\ Shipment of Draconium
+r(424736),	-- Skin Shipment \\ Shipment of Skins
+r(424810),	-- Cloth Shipment \\ Shipment of Cloth
+r(424823),	-- Food Shipment \\ Shipment of Food
+r(424876),	-- Khaz'gorite Shipment \\ Shipment of Khaz'gorite
+r(424881),	-- Hide Shipment \\ Shipment of Hides
+r(424899),	-- Islefin Dorado Shipment \\ Shipment of Dorado
+10.2.0.51297
+r(427109),	-- Rare Gem Shipment \\ Shipment of Gemstones
+r(427111),	-- Diamond Shipment \\ Shipment of Diamonds
+
+
+Nothing is Missing in Supply ShipmentsItemDB.lua! Good Work!

@@ -579,7 +579,10 @@ root(ROOTS.Unsorted, {
 		tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			filter(COSMETIC, {
 				i(210663),	-- Circlet of the Mother Tree
-
+				i(210664),	-- Frost Sapling's Adornment
+				i(210662),	-- Ochre Ornament of the Grove
+				i(210433),	-- Visage of Aurostor
+				--
 				i(210065),	-- Sky-Captain's Formal Hat
 				i(210066),	-- Sky-Captain's Formal Boots
 				i(210067),	-- Sky-Captain's Formal Coat
@@ -1020,7 +1023,6 @@ root(ROOTS.Unsorted, {
 			i(209868),	-- Thornspeaker Ritual Knife
 			i(209952),	-- Mark of Q'onzu
 			i(210005),	-- 10.2 Monster - Weapon - Staff - 10.1.5 Weapon Staff - Staff_2H_Druid_C_02_Color1
-			i(210041),	-- Shipment of Goods
 			i(210224),	-- Small Emerald Bloom
 			i(210225),	-- Medium Emerald Bloom
 			i(210226),	-- Large Emerald Bloom
@@ -1034,7 +1036,6 @@ root(ROOTS.Unsorted, {
 			i(210423),	-- Dream Wardens Insignia
 			i(210424),	-- Darnassian Tabard
 			i(210430),	-- Twisted Dreaming Essence
-			i(210433),	-- Visage of Aurostor
 			i(210436),	-- Nature's Cradle
 			i(210438),	-- Wisp Dust
 			i(210439),	-- Speck of Mana
@@ -1060,18 +1061,13 @@ root(ROOTS.Unsorted, {
 			i(210501),	-- Dream Wardens Tabard
 			i(210554),	-- Blazing Feather
 			i(210595),	-- Dreaming Equipment Chest
-			i(210661),	-- Dreamcatcher's Crescent
-			i(210664),	-- Frost Sapling's Adornment
 			i(210687),	-- Ironfur Sample
 			i(210726),	-- Ruby Flightstone
 			------
-			i(210776),	-- Lesser Dream Infusion
 			i(210791),	-- Fragment of Emberscar
 			i(210792),	-- Fragment of Emberscar
 			i(210793),	-- Fragment of Emberscar
 			------
-			i(208983),	-- Yvelyn's Assistance
-			i(210453),	-- Sample of Cinder Pollen
 			i(210883),	-- Ensemble: Scarlet Zealot's Trappings
 			i(210916),	-- Ember of Fyrakk
 			i(210920),	-- Gift of Amirdrassil
@@ -1105,16 +1101,12 @@ root(ROOTS.Unsorted, {
 			i(204346),	-- Arclight Rumble Foil Box
 			i(204348),	-- Balled-up Rumble Foil
 			i(204373),	-- Banged-up Rumble Foil
-			i(209875),	-- Bloodied Armor Scrap
 			i(211302),	-- Slumberfruit
-			i(211303),	-- Dryad's Supply Pouch
 			i(211314),	-- Cinder of Companionship
 			i(211353),	-- Roasted Ram Special
-			i(211376),	-- Seedbloom
 			i(211396),	-- Attuned Glowspore Grip
 			i(211397),	-- Attuned Rune of Shadowbinding
 			i(211398),	-- Attuned Sophic Vellum
-			i(211406),	-- Ageless Dewdrops
 			i(211416),	-- Dream Wardens Insignia
 			i(211417),	-- Dream Wardens Insignia
 			i(211418),	-- Q'onzu Edict of Change

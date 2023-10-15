@@ -1,23 +1,104 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-EMERALDBOUNTY = createHeader({
+local SEEDBLOOM = 211376;
+EMERALD_BOUNTY = createHeader({
 	readable = "Emerald Bounty",
-	icon = "",
+	icon = "464030",
 	text = {
 		en = "Emerald Bounty",
 	},
 });
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	m(EMERALD_DREAM, {
-		n(EMERALDBOUNTY, {
-			----- Seeds -----
+		n(EMERALD_BOUNTY, {
+			currency(2650),	-- Emerald Dewdrop
 			i(208066),	-- Small Dreamseed
 			i(208067),	-- Plump Dreamseed
 			i(208047),	-- Gigantic Dreamseed
-			--
+			n(ACHIEVEMENTS, {
+				ach(19013, {	-- I Dream of Seeds
+					crit(62396, {	-- Ageless Blossom
+						["coord"] = { 59.7, 16.9, EMERALD_DREAM },
+						--["questID"] = xx, seems like it is triggered with qID 77209 or somewhere from that chain
+					}),
+					crit(62041, {	-- Belligerent Begonias (n: 208617)
+						["coord"] = { 49.9, 35.4, EMERALD_DREAM },
+						--["questID"] = 77359,
+					}),
+					crit(62029, {	-- Chiming Foxglove (n: 208511)
+						["coord"] = { 54.6, 67.6, EMERALD_DREAM },
+						--["questID"] = 77219,
+					}),
+					crit(62185, {	-- Comfy Chamomile (n: 210723)
+						["coord"] = { 38.4, 59.2, EMERALD_DREAM },
+						--["questID"] = 77518,
+					}),
+					crit(62030, {	-- Dragon's Daffodil (n: 208556)
+						["coord"] = { 64.0, 64.8, EMERALD_DREAM },
+						--["questID"] = 77224,
+					}),
+					crit(62037, {	-- Dreamer's Daisy (n: 208615)
+						["coord"] = { 46.4, 40.5, EMERALD_DREAM },
+						--["questID"] = 77391,
+					}),
+					crit(62189, {	-- 	Flourishing Scurfpea (n: 210725)
+						["coord"] = { 48.7, 80.5, EMERALD_DREAM },
+						--["questID"] = 77538,
+					}),
+					crit(62032, {	-- Fuzzy Licorice (n: 208605)
+						["coord"] = { 63.5, 47.1, EMERALD_DREAM },
+						--["questID"] = 77380,
+					}),
+					crit(62036, {	-- Glade Goldenrod (n: 209880)
+						["coord"] = { 40.7, 43.5, EMERALD_DREAM },
+						--["questID"] = 77508,
+					}),
+					crit(62027, {	-- Lavatouched Lilies (n: 209583)
+						["coord"] = { 40.7, 24.8, EMERALD_DREAM },
+						--["questID"] = 77496,
+					}),
+					crit(62039, {	-- Lofty Lupin (n: 208606)
+						["coord"] = { 56.7, 44.9, EMERALD_DREAM },
+						--["questID"] = 77384,
+					}),
+					crit(62040, {	-- Lullaby Lavender (n: 209599)
+						["coord"] = { 56.5, 37.7, EMERALD_DREAM },
+						--["questID"] = 77503,
+					}),
+					crit(62186, {	-- Moon Tulip (n: 210724)
+						["coord"] = { 42.6, 74.0, EMERALD_DREAM },
+						--["questID"] = 77531,
+					}),
+					crit(62038, {	-- Ringing Rose (n: 208607)
+						["coord"] = { 49.2, 48.1, EMERALD_DREAM },
+						--["questID"] = 77387,
+					}),
+					crit(62031, {	-- Singing Weedling (n: 208563)
+						["coord"] = { 63.0, 52.8, EMERALD_DREAM },
+						--["questID"] = 77375,
+					}),
+					crit(62035, {	-- Viridescent Sprout (n: 208616)
+						["coord"] = { 40.0, 52.7, EMERALD_DREAM },
+						--["questID"] = 77394,
+					}),
+					crit(62397, {	-- Whisperbloom Sapling (n: 211059)
+						["coord"] = { 51.2, 58.7, EMERALD_DREAM },
+						--["questID"] = xx,
+					}),
+					crit(62028, {	-- Ysera's Clover (n: 208443)
+						["coord"] = { 59.2, 58.8, EMERALD_DREAM },
+						--["questID"] = 77214,
+					}),
+				}),
+				ach(19196),		-- Sowing the Seeds
+				ach(19194),		-- The Emerald Bounty
+				ach(19198, {	-- The Seeds I Sow
+					title(527),	-- Blossom Bringer
+				}),
+			}),
 			n(QUESTS,{
-				--- Emerald Blossom quest chain
 				q(78172, {	-- Mysterious Seeds
 					--["sourceQuests"] = { xx },	-- xx
 					["provider"] = { "i", 210050 },	-- Mysterious Seeds
@@ -45,7 +126,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["coord"] = { 59.7, 16.9, EMERALD_DREAM },
 					["g"] = {
 						i(210052),	-- Ageless Blossoms (QI!)
-						i(208067),	-- Plump Dreamseed
 					},
 				}),
 				q(78206, {	-- Emerald Bounty
@@ -55,11 +135,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 				--
 				q(78821, {	-- Blooming Dreamseeds
-					--[[["sourceQuests"] = {
-						78206,	-- Emerald Bounty (TODO: need to confirm)
-						77887,	-- 'World Quest Unlock' (spellID 421687)
-					},
-					["sourceQuestNumRequired"] = 1,]]--
+					--["sourceQuests"] = {
+					--	78206,	-- Emerald Bounty (TODO: need to confirm)
+					--	77887,	-- 'World Quest Unlock' (spellID 421687)
+					--},
+					--["sourceQuestNumRequired"] = 1
 					["provider"] = { "n", 212797 },	-- Talisa Whisperbloom
 					["coord"] = { 49.7, 62.1, EMERALD_DREAM },
 					["isWeekly"] = true,
@@ -77,22 +157,123 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 			}),
 			n(REWARDS, {
-				--anything from n: 211265 can be here
-				i(210174),	-- Formula: Illusory Adornment: Dreams (RECIPE!) (TODO: seems like only from blue and epic seed?)
-				i(210241),	-- Recipe: Dreamwalker's Healing Potion (RECIPE!)
-				i(211065),	-- Technique: Mark of the Auric Dreamstag (RECIPE!)
-				-- new loot? depends on seed?
-				i(210219, {	-- Gigantic Dreamy Bounty (TODO: can be unique mount (druid marks counted as mount, yes))
-					i(209950),	-- Rekindled Dreamstag (MOUNT!)
-					i(209947),	-- Blossoming Dreamstag (MOUNT!)
-					i(210775),	-- Snowfluff Dreamtalon (MOUNT!)
-					i(210769),	-- Springtide Dreamtalon (MOUNT!)
-					i(210057),	-- Morning Flourish Dreamsaber (MOUNT!)
-					i(210058),	-- Evening Sun Dreamsaber (MOUNT!)
-					-- double up mount since they removed from vendor but can be looted from this bag
+				i(SEEDBLOOM),
+				i(210219, {	-- Gigantic Dreamy Bounty
+					["provider"] = {"i", 208047, 1},	-- Gigantic Dreamseed
+					["sym"] = {
+						{"select", "npcID", 211265 },	-- Sylvia Whisperbloom
+						{"pop"},
+						{"where", "filterID", MISC },
+						{"pop"},
+					},
+					["g"] = {
+						i(209950),	-- Rekindled Dreamstag (MOUNT!)
+						i(209947),	-- Blossoming Dreamstag (MOUNT!)
+						i(210775),	-- Snowfluff Dreamtalon (MOUNT!)
+						i(210769),	-- Springtide Dreamtalon (MOUNT!)
+						i(210057),	-- Morning Flourish Dreamsaber (MOUNT!)
+						i(210058),	-- Evening Sun Dreamsaber (MOUNT!)
+					},
 				}),
-				i(210218),	-- Plump Dreamy Bounty (TODO: can be unique battle pet)
-				i(210217),	-- Small Dreamy Bounty (TODO: can be unique cosmetic)
+				i(210218, {	-- Plump Dreamy Bounty
+					["provider"] = {"i", 208067, 1},	-- Plump Dreamseed
+					["sym"] = {
+						{"select", "npcID", 211265 },	-- Sylvia Whisperbloom
+						{"pop"},
+						{"where", "filterID", BATTLE_PETS },
+						{"pop"},
+					},
+					["g"] = {
+						i(210174),	-- Formula: Illusory Adornment: Dreams (RECIPE!)
+						i(210241),	-- Recipe: Dreamwalker's Healing Potion (RECIPE!)
+						i(211065),	-- Technique: Mark of the Auric Dreamstag (RECIPE!)
+					},
+				}),
+				i(210217, {	-- Small Dreamy Bounty
+					["provider"] = {"i", 208066, 1},	-- Small Dreamseed
+					-- Dont Think we should symlink this?
+				}),
+			}),
+			n(VENDOR, {
+				n(211265, {	-- Sylvia Whisperbloom
+					["coord"] = { 59.8, 16.9, EMERALD_DREAM },
+					["g"] = bubbleDownFiltered({
+						["cost"] = {{ "i", SEEDBLOOM, 1 }},
+					},FILTERFUNC_itemID,{
+						n(BACK, {
+							i(209979),	-- Barkbloom Cloak
+							i(209961),	-- Ceremonial Jacaranda Cape
+							i(209988),	-- Overgrown Freyan Drape
+							i(209970),	-- Pelt of the Dreamfused Skull
+						}),
+						filter(BATTLE_PETS, {
+							i(210651),	-- Dustite (PET!)
+							i(210690),	-- Elmer (PET!)
+							i(210570),	-- Napps (PET!)
+							i(210648),	-- Seedle (PET!)
+							i(210689),	-- Snoots (PET!)
+							i(210571),	-- Snoozles (PET!)
+						}),
+						filter(CLOTH, {
+							i(209967),	-- Ceremonial Jacaranda Belt
+							i(209966),	-- Ceremonial Jacaranda Branches
+							i(209964),	-- Ceremonial Jacaranda Crown
+							i(209963),	-- Ceremonial Jacaranda Gloves
+							i(209960),	-- Ceremonial Jacaranda Gown
+							i(209965),	-- Ceremonial Jacaranda Pantaloons
+							i(209962),	-- Ceremonial Jacaranda Sandals
+							i(209968),	-- Ceremonial Jacaranda Wraps
+						}),
+						filter(LEATHER, {
+							i(209983),	-- Barkbloom Breeches
+							i(209981),	-- Barkbloom Claws
+							i(209982),	-- Barkbloom Mask
+							i(209985),	-- Barkbloom Sash
+							i(209984),	-- Barkbloom Shoulderpads
+							i(209980),	-- Barkbloom Talons
+							i(209978),	-- Barkbloom Tunic
+							i(209986),	-- Barkbloom Wristguards
+						}),
+						filter(MAIL, {
+							i(209977),	-- Bracers of the Dreamfused Skull
+							i(209976),	-- Buckle of the Dreamfused Skull
+							i(209971),	-- Clogs of the Dreamfused Skull
+							i(209972),	-- Grips of the Dreamfused Skull
+							i(209974),	-- Leggings of the Dreamfused Skull
+							i(209975),	-- Pauldrons of the Dreamfused Skull
+							i(209969),	-- Vest of the Dreamfused Skull
+							i(209973),	-- Visage of the Dreamfused Skull
+						}),
+						filter(MISC, {
+							i(211080),	-- Mark of the Boreal Dreamtalon (CI!)
+							i(211081),	-- Mark of the Auroral Dreamtalon (CI!)
+							i(210739),	-- Mark of the Snowy Umbraclaw (CI!)
+						}),
+						filter(PLATE, {
+							i(209989),	-- Overgrown Freyan Boots
+							i(209994),	-- Overgrown Freyan Girdle
+							i(209990),	-- Overgrown Freyan Handguards
+							i(209991),	-- Overgrown Freyan Helm
+							i(209992),	-- Overgrown Freyan Legguards
+							i(209987),	-- Overgrown Freyan Plate
+							i(209993),	-- Overgrown Freyan Shoulderguards
+							i(209995),	-- Overgrown Freyan Vambraces
+						}),
+						n(WEAPONS, {
+							i(210036),	-- Barkbloom Saber
+							i(210039),	-- Barkbloom Warglaive
+							i(210030),	-- Bow of the Dreamfused Skull
+							i(210038),	-- Ceremonial Jacaranda Bloom
+							i(210035),	-- Ceremonial Jacaranda Crook
+							i(210037),	-- Ceremonial Jacaranda Slab
+							i(210033),	-- Essence of the Dreamfused Skull
+							i(210029),	-- Overgrown Freyan Hatchet
+							i(210034),	-- Overgrown Freyan Pike
+							i(210032),	-- Overgrown Freyan Smasher
+							i(210031),	-- Spike of the Dreamfused Skull
+						}),
+					}),
+				}),
 			}),
 		}),
 	}),

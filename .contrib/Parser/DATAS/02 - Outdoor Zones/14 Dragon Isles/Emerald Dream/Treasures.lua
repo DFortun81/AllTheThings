@@ -4,11 +4,6 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	m(EMERALD_DREAM, {
 		n(TREASURES, {
-			-- Rewards..
-			i(210171),	-- Formula: Enchanted Aspect's Dreaming Crest (RECIPE!)
-			i(210173),	-- Formula: Enchanted Whelpling's Dreaming Crest (RECIPE!) (TODO: was found in small somnut)
-			i(210172),	-- Formula: Enchanted Wyrm's Dreaming Crest (RECIPE!) (TODO: was found in small somnut)
-			--
 			o(409849, {	-- Ashwood Research Binder
 				["questID"] = 78911,
 				["coord"] = { 60.8, 44.9, EMERALD_DREAM },
@@ -36,7 +31,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 77872,
 				["coord"] = { 34.1, 56.4, EMERALD_DREAM },
 				["g"] = {
-					--i(208067),	-- Plump Dreamseed (TODO: placeholder?)
 					n(210060, {	-- Triflesnatcher
 						["description"] = "1st owl",
 						["questID"] = 77855,	-- (Not in ATT?)
@@ -64,9 +58,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			o(408707, {	-- Odd Burl
 				["questID"] = 78006,
 				["coord"] = { 55.3, 57.3, EMERALD_DREAM },
-				["g"] = {
-					--i(208067),	-- Plump Dreamseed (TODO: placeholder?)
-				},
 			}),
 			o(409440, {	-- Pineshrew Cache
 				["questID"] = 78120,
@@ -94,9 +85,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					o(408706, {	-- Magical Bloom
 						["coord"] = { 61.6, 59.5, EMERALD_DREAM },
 						["questID"] = 78005,
-						["g"] = {
-							--i(208047),	-- Gigantic Dreamseed (TODO: another one placeholder?)
-						},
 					}),
 				},
 			}),
@@ -193,20 +181,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210552),	-- Cowl of the Wolf Ancient (COSMETIC!)
 				},
 			}),
-			--
-			o_repeated({	-- Small Somnut
-				-- prob need symlink?
-				["g"] = {
-					i(210050),	-- Mysterious Seeds (QI!) (TODO: additional source or moved?)
-					i(208066),	-- Small Dreamseed
-					--
-					i(203315),	-- Winding Slitherdrake: Small Spiked Crest
-					i(203332),	-- Winding Slitherdrake: Spiked Horns
-					i(203357),	-- Winding Slitherdrake: Spiked Tail
-					o(408719, {	-- Small Somnut
-						["isRepeatable"] = true,
-					}),
-				},
+			o(408719, {	-- Small Somnut
+				i(210171),	-- Formula: Enchanted Aspect's Dreaming Crest (RECIPE!)
+				i(210173),	-- Formula: Enchanted Whelpling's Dreaming Crest (RECIPE!)
+				i(210172),	-- Formula: Enchanted Wyrm's Dreaming Crest (RECIPE!)
+				i(203315),	-- Winding Slitherdrake: Small Spiked Crest (DM!)
+				i(203332),	-- Winding Slitherdrake: Spiked Horns (DM!)
+				i(203357),	-- Winding Slitherdrake: Spiked Tail (DM!)
 			}),
 		}),
 	}),

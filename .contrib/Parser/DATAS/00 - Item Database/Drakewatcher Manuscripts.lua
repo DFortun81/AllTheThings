@@ -336,9 +336,7 @@ i(203344, 73835);	-- Winding Slitherdrake: Single Jaw Horn
 i(203317, 73805);	-- Winding Slitherdrake: Small Finned Crest
 i(203358, 73850);	-- Winding Slitherdrake: Small Finned Tail
 i(203364, 73856);	-- Winding Slitherdrake: Small Finned Throat
-i(203315, 73803);	-- Winding Slitherdrake: Small Spiked Crest
 i(203313, 73801);	-- Winding Slitherdrake: Spiked Chin
-i(203332, 73821);	-- Winding Slitherdrake: Spiked Horns
 i(203357, 73849);	-- Winding Slitherdrake: Spiked Tail
 i(203345, 73836);	-- Winding Slitherdrake: Split Jaw Horns
 i(203330, 73818);	-- Winding Slitherdrake: Swept Horns
@@ -399,6 +397,7 @@ i(210484, 78404);	-- Flourishing Whimsydrake: Underbite Snout
 i(207760, 77131);	-- Grotto Netherwing Drake: Armor
 i(207779, 77150);	-- Grotto Netherwing Drake: Barbed Tail
 i(207776, 77147);	-- Grotto Netherwing Drake: Black Scales
+i(207762, 77133);	-- Grotto Netherwing Drake: Chin Spike
 i(207761, 77132);	-- Grotto Netherwing Drake: Chin Tendrils
 i(207759, 77130);	-- Grotto Netherwing Drake: Cluster Spiked Back
 i(207765, 77136);	-- Grotto Netherwing Drake: Cluster Spiked Crest
@@ -422,3 +421,5 @@ i(207777, 77148);	-- Grotto Netherwing Drake: Yellow Scales
 i(210537, 78453);	-- Renewed Proto-Drake: Embodiment of Shadowflame
 i(210536, 78451);	-- Renewed Proto-Drake: Embodiment of the Blazing
 i(210064, 72371);	-- Winding Slitherdrake: Embodiment of the Verdant Gladiator
+i(203315, 73803);	-- Winding Slitherdrake: Small Spiked Crest
+i(203332, 73821);	-- Winding Slitherdrake: Spiked Horns
