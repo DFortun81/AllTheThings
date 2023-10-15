@@ -203,7 +203,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 			crit(6597, { ["provider"] = { "i", 34755 } } ),	-- Tender Shoveltusk Steak
 			crit(6598, { ["provider"] = { "i", 43001 } } ),	-- Tracker Snacks
 			crit(6599, { ["provider"] = { "i", 34757 } } ),	-- Very Burnt Worg
-			crit(6421, { ["provider"] = { "i", 44953 } } ),	-- Worg Tartare
+			crit(9421, { ["provider"] = { "i", 44953 } } ),	-- Worg Tartare
 		}),
 	})),
 	tier(CATA_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
