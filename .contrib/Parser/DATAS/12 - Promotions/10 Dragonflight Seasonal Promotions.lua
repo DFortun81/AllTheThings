@@ -129,7 +129,7 @@ root(ROOTS.Promotions, {
 			}),
 			i(208057, {	-- Smoldering Banner of the Aspects (TOY!)
 				["description"] = "Break the Meta: DF Season 2\n\nInstead of teams fighting to beat their opponent's time, Break the Meta is focused on teams pushing keys as high as they can with Season's 2 off-meta specs and classes.\n\nRegister for the event on |cFFFFFFFFraider.io/break-the-meta-df-season-2/signups|r and complete at least 2 BTM-Eligible timed keystones at level +15 or higher during the Competition Period, and the Smoldering Banner of the Aspects will be automatically added to your collection in-game after the conclusion of the event.\n\nThe Event starts on October 3rd for US, October 4th for EU & October 5th for KR/TW & lasts for 1 reset of your region.",
-				["timeline"] = { "added 10.1.7", "removed 10.1.7.99999" },
+				["timeline"] = { "added 10.1.7", "removed 10.1.7.51536" },
 			}),
 		},
 	}),
