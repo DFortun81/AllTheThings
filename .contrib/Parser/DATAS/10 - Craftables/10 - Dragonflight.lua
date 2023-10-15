@@ -1846,7 +1846,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			-- Glyphs
 			FirstCraft(75582, 408277, ADDED_10_1_0);	-- Glyph of the Chosen Glaive
 			FirstCraft(75583, 408273, ADDED_10_1_0);	-- Glyph of the Heaved Armament
+			--FirstCraft(X, 429149, ADDED_10_2_0);	-- Glyph of the Lunar Chameleon
 			FirstCraft(76602, 416137, ADDED_10_1_5);	-- Glyph of the Shath'Yar
+			--FirstCraft(X, 427956, ADDED_10_2_0);	-- Mark of the Auric Dreamstag
 		})),
 		i(194829, {	-- Fated Fortune Card
 			i(198127),	-- Recipe: Fated Fortune Cookie (RECIPE!)
@@ -1908,7 +1910,9 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 		filter(GLYPHS, {
 			i(203762, {["timeline"] = {ADDED_10_1_0}}),	-- Glyph of the Chosen Glaive
 			i(203763, {["timeline"] = {ADDED_10_1_0}}),	-- Glyph of the Heaved Armament
+			i(211400, {["timeline"] = {ADDED_10_2_0}}),	-- Glyph of the Lunar Chameleon
 			i(207088, {["timeline"] = {ADDED_10_1_5}}),	-- Glyph of the Shath'Yar
+			i(210735, {["timeline"] = {ADDED_10_2_0}}),	-- Mark of the Auric Dreamstag (CI!)
 		}),
 		filter(MISC, {
 			i(203412, {["timeline"] = {ADDED_10_0_7}}),	-- Arcane Dispelling Rune

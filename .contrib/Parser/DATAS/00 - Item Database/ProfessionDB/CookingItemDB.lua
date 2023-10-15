@@ -825,4 +825,4 @@ i(0, 412535);	-- Venrik's Goat Milk
 -- PATCH 10.2.0 --
 ------------------
 --- ITEM ---
-i(210242, 416001);	-- Slumbering Peace Tea
+i(210242, 416001);	-- Slumbering Peacebloom Tea

@@ -578,6 +578,8 @@ root(ROOTS.Unsorted, {
 	tier(DF_TIER, {
 		tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			filter(COSMETIC, {
+				i(210663),	-- Circlet of the Mother Tree
+
 				i(210065),	-- Sky-Captain's Formal Hat
 				i(210066),	-- Sky-Captain's Formal Boots
 				i(210067),	-- Sky-Captain's Formal Coat
@@ -590,7 +592,7 @@ root(ROOTS.Unsorted, {
 				i(210076),	-- Sky-Captain's Masquerade Cape
 				i(210078),	-- Sky-Captain's Formal Attire
 				i(210079),	-- Sky-Captain's Masquerade Attire
-				---- TRADING POST ----
+				------ TRADING POST ------
 				i(208693),	-- Battle Magister's Orbs
 				i(208694),	-- Battle Magister's Epaulets
 				i(208695),	-- Battle Magister's Belt
@@ -724,33 +726,19 @@ root(ROOTS.Unsorted, {
 				i(210059),	-- Winter Night Dreamsaber (MOUNT!)
 			}),
 			filter(MISC, {
-				i(210735),	-- Mark of the Auric Dreamstag (CI!)
-				i(210683),	-- Mark of the Dreamtalon Matriarch (CI!)
-				i(210669),	-- Mark of the Evergreen Dreamsaber (CI!)
-				i(210751),	-- Mark of the Hibernating Runebear (CI!)
-
-				i(210738),	-- Mark of the Loamy Umbraclaw (CI!)
-				i(210731),	-- Mark of the Lush Dreamstag (CI!)
-				i(210674),	-- Mark of the Sable Dreamtalon (CI!)
-				i(210535),	-- Mark of the Slumbering Somnowl (CI!)
-				i(210736),	-- Mark of the Smoldering Dreamstag (CI!)
-				i(210684),	-- Mark of the Thriving Dreamtalon (CI!)
-				i(210647),	-- Mark of the Umbramane (CI!)
-				i(210729),	-- Mark of the Verdant Bristlebruin (CI!)
-
 				i(210754),	-- Feather of the Blazing Somnowl (CI!)
-				i(210728),	-- Moon-Blessed Claw (CI!)
-				i(210727),	-- Pollenfused Bristlebruin Fur Sample (CI!)
 				i(210753),	-- Scale of the Prismatic Whiskerfish (CI!)
+				i(210782),	-- Slumbering Moonfish
+				i(210783),	-- Awakening Sunfish
+				i(210784),	-- Xena, the Whimsical Whiskerfish
+				i(210786),	-- Dreaming Whiskerfish
 
-
-
-				i(210755),	-- Silent Mark of the Dreamsaber
-				i(210767),	-- Silent Mark of the Dreamstag
-				i(210764),	-- Silent Mark of the Dreamtalon
-				i(210766),	-- Silent Mark of the Umbraclaw
+				-- Winter Veil
+				i(210657),	-- Gently Shaken Gift
+				i(209871),	-- Winter Veil Gift
 			}),
 			filter(TOYS, {
+				i(211424),	-- Dreaming Banner of the Aspects (TOY!)
 				i(209859),	-- Festive Trans-Dimensional Bird Whistle (TOY!) [Winter Veil?]
 				i(209035),	-- Hearthstone of the Flame (TOY!) [Raid Boss?]
 				i(208825),	-- Junior Timekeeper's Racing Belt (TOY!) [Winter Veil?]
@@ -764,114 +752,11 @@ root(ROOTS.Unsorted, {
 				i(210190),	-- Blazeroot
 				i(210193),	-- Experimental Dreamcatcher
 				i(210198),	-- Depleted Battery
+
+				-- Accidental Duplicate??
+				i(210495),	-- Slumbering Peacebloom Tea
+				i(210496),	-- Recipe: Slumbering Peacebloom Tea
 			}),
-			i(204720),	-- Join the New Scarlet Crusade!
-			i(206378),	-- [DNT] Test Loot
-			i(206379),	-- [DNT] Test Loot
-			i(206476),	-- Tyr's Guard Equipment
-			i(206942),	-- Sealed Kaldorei Scroll
-			i(207025),	-- <Placeholder> Fyrakk Axe - Shadowflame
-			i(207632),	-- Dream-Attuned Crystal
-			i(208049),	-- Valarjar Trophy
-			i(208198),	-- Tyr's Guard Bulwark
-			i(208199),	-- Tabard of the Tyr's Guard
-			i(208217),	-- Illusory Scroll of Youth
-			i(208221),	-- Soil of the Dreamgrove
-			i(208230),	-- Anaya's Pendant
-			i(208231),	-- Talisman of Hope
-			i(208232),	-- Singed Darnassian Tabard
-			-- Rares?
-			i(208324),	-- Scorching Dryad's Chestpiece
-
-
-
-			i(208330),	-- Piercing Touch of the Vine
-			i(208331),	-- Cowl of the Flame
-			i(208332),	-- Horns of the Envoy
-			i(208334),	-- Legplates of the Krakken
-			i(208335),	-- Vibrant Fall Leggings
-			i(208336),	-- Legguards of the Dreamsaber
-			i(208337),	-- Leaf Steward's Leggings
-			i(208339),	-- Saber's Stone Pauldrons
-			i(208340),	-- Stag's Flourishing Mantle
-			i(208341),	-- Fire-Runed Spaulders
-			i(208342),	-- Girdle of Nature's Fury
-			i(208343),	-- Matriarch's Flowery Band
-			i(208344),	-- Sash of the Fruit Thief
-			i(208347),	-- Stone Wolf's Cuffs
-			i(208348),	-- Binds of the Shatterer
-
-			i(208355),	-- String of Delicacies
-			i(208359),	-- Nightclaw's Bauble
-			i(208361),	-- Splinterlimb's Branch
-			i(208363),	-- Twinfang of the Cian
-			i(208365),	-- Winter's Stand
-			i(208367),	-- Lasher's Red Thorn
-			i(208369),	-- Druid's Vengeful Gaze
-			i(208370),	-- The Apostle's Steps
-			i(208371),	-- Fire Assassin's Boots
-			i(208373),	-- Band of Bated Breath
-			i(208374),	-- Talthornei's Wrath
-			i(208376),	-- Great Ray's Longbow
-			i(208379),	-- Keevah's Extended Claw
-			i(208380),	-- Moragh's Kneading Claw
-			i(208381),	-- Scepter of Still Waters
-			i(208383),	-- Pommel of Fire
-			i(208385),	-- Flame Endowed Blade
-			i(209880),	-- Curve of Starry Dusks
-			i(209881),	-- Fystia's Fiery Kris
-			i(209882),	-- Maruud's Undertow
-			i(209948),	-- Spring's Keeper
-			--
-			i(208420),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leather - HEAD 2
-			i(208426),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - HEAD 2
-			i(208427),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - FEET 3
-			i(208428),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail - SHOULDER 2
-			i(208430),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Cloth - WAIST 3
-			i(208431),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Cloth - SHOULDER 2
-			i(208432),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leather - WAIST 3
-			i(208434),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail - FEET 3
-			i(208442),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Accessory - FINGER 3
-			i(208447),	-- Purifying Tangle
-			i(208545),	-- Kindled Bonfire
-			i(208564),	-- Lesser Trophy of Conquest
-			i(208565),	-- Trophy of Conquest
-			i(208566),	-- Greater Trophy of Conquest
-			i(208567),	-- Cracked Medal of Conquest
-			i(208568),	-- Lesser Crest of Honor
-			i(208569),	-- Crest of Honor
-			i(208570),	-- Greater Crest of Honor
-			i(208571),	-- Artisan's Consortium Leaflet
-			i(208599),	-- Verdant Dream Seed
-			i(208606),	-- Somnagora's Heart
-			i(208619),	-- The Tragedy of Erinethria
-			i(208690),	-- Roottwined Key
-			i(208692),	-- Ancient Roottwined Tome
-
-			i(208702),	-- Memory Essence
-			i(208703),	-- Blacksmith Bammer
-			i(208705),	-- Druidic Totem
-
-			i(208731),	-- Blacksmith Bammer Key
-			i(208738),	-- Ephemeral Pear
-			i(208745),	-- Your Reward [DNT]
-			i(208757),	-- Ash's Recipes to Delight and Nourish your Plant Pals
-			i(208856),	-- Pocket Lint
-			i(208861),	-- The First Clue
-			i(208862),	-- The Second Clue
-			i(208863),	-- The Fourth Clue
-			i(208864),	-- The Third Clue
-			i(208932),	-- A Partial Fourth Clue
-			i(208933),	-- A Partial Fourth Clue
-			i(208934),	-- A Partial Fourth Clue
-			i(208935),	-- A Partial Fourth Clue
-			i(208955),	-- Pilfered Dreamshard
-			i(208979),	-- 10.2 Monster - Merithra - Robe
-			i(208981),	-- 10.2 Monster - Merithra - Wrist
-			i(208982),	-- 10.2 Monster - Merithra - Waist
-			i(209019),	-- Conjured Sugarfree Firewater Sorbet
-			i(209036),	-- Cache of Amirdrassil Treasures
-			i(209037),	-- Cache of Amirdrassil Treasures
 			n(PVP, {
 				i(209069),	-- Verdant Gladiator's Silk Tunic
 				i(209070),	-- Verdant Gladiator's Silk Blouse
@@ -883,8 +768,8 @@ root(ROOTS.Unsorted, {
 				i(209123),	-- Verdant Gladiator's Cloak
 				i(209124),	-- Verdant Gladiator's Drape
 				i(209125),	-- Verdant Gladiator's Shawl
-				i(209126),	-- Verdant Gladiator's Leather Vest
-				i(209127),	-- Verdant Gladiator's Leather Jerkin
+				i(209126),	-- Verdant Gladiator's Leather Robe
+				i(209127),	-- Verdant Gladiator's Leather Vestments
 				i(209128),	-- Verdant Gladiator's Leather Boots
 				i(209129),	-- Verdant Gladiator's Leather Treads
 				i(209130),	-- Verdant Gladiator's Leather Gloves
@@ -915,7 +800,202 @@ root(ROOTS.Unsorted, {
 				i(209155),	-- Verdant Gladiator's Leather Spaulders
 				i(209156),	-- Verdant Gladiator's Leather Shoulderpads
 				i(209157),	-- Verdant Gladiator's Leather Belt
+				--
+				i(211179),	-- Hellbloom Battleaxe
+				i(211180),	-- Hellbloom Hatchet
+				i(211181),	-- Hellbloom Carver
+				i(211182),	-- Hellbloom Handcannon
+				i(211183),	-- Hellbloom Twinblade
+				i(211184),	-- Hellbloom Spellblade
+				i(211185),	-- Hellbloom Shortsword
+				i(211186),	-- Hellbloom Flame
+				i(211187),	-- Hellbloom Spire
+				i(211188),	-- Hellbloom Battlestaff
+				i(211189),	-- Hellbloom Greatsword
+				i(211190),	-- Hellbloom Broadsword
+				i(211191),	-- Hellbloom Club
+				i(211192),	-- Hellbloom Hammer
+				i(211193),	-- Hellbloom Cudgel
+				i(211194),	-- Hellbloom Aegis
+				i(211195),	-- Hellbloom Impaler
+				i(211196),	-- Hellbloom Spear
+				i(211197),	-- Hellbloom Wand
+				i(211198),	-- Hellbloom Mace
+				i(211199),	-- Hellbloom Crusher
+				i(211200),	-- Hellbloom Scepter
+				i(211201),	-- Hellbloom Sabre
+				i(211202),	-- Hellbloom Dagger
+				i(211203),	-- Hellbloom Dirk
+				i(211211),	-- Hellbloom Cloth Garb
+				i(211212),	-- Hellbloom Cloth Slippers
+				i(211213),	-- Hellbloom Cloth Gloves
+				i(211214),	-- Hellbloom Crown
+				i(211215),	-- Hellbloom Cloth Pants
+				i(211216),	-- Hellbloom Cloth Cord
+				i(211217),	-- Hellbloom Cloth Bindings
+				i(211218),	-- Hellbloom Cloth Mantle
+				i(211219),	-- Hellbloom Leather Boots
+				i(211220),	-- Hellbloom Leather Handwraps
+				i(211221),	-- Hellbloom Hood
+				i(211222),	-- Hellbloom Leather Breeches
+				i(211223),	-- Hellbloom Leather Belt
+				i(211224),	-- Hellbloom Leather Wraps
+				i(211225),	-- Hellbloom Leather Jerkin
+				i(211226),	-- Hellbloom Leather Shoulderguard
+				i(211227),	-- Hellbloom Faceplate
+				i(211228),	-- Hellbloom Plate Cuirass
+				i(211229),	-- Hellbloom Plate Sabatons
+				i(211230),	-- Hellbloom Plate Gauntlets
+				i(211231),	-- Hellbloom Plate Legguards
+				i(211232),	-- Hellbloom Plate Spaulders
+				i(211233),	-- Hellbloom Plate Clasp
+				i(211234),	-- Hellbloom Plate Bracers
+				i(211235),	-- Hellbloom Chain Armor
+				i(211236),	-- Hellbloom Chain Greaves
+				i(211237),	-- Hellbloom Chain Grips
+				i(211238),	-- Hellbloom Helm
+				i(211239),	-- Hellbloom Chain Leggings
+				i(211240),	-- Hellbloom Chain Epaulets
+				i(211241),	-- Hellbloom Chain Cinch
+				i(211242),	-- Hellbloom Chain Armguards
+				i(211243),	-- Hellbloom Cape
+				i(211244),	-- Hellbloom Shawl
+				i(211245),	-- Hellbloom Cloak
+				i(211246),	-- Hellbloom Drape
+				i(211182),	-- Hellbloom Flameshot
+				i(211186),	-- Hellbloom Branch
+				i(211211),	-- Hellbloom Garb
+				i(211212),	-- Hellbloom Slippers
+				i(211213),	-- Hellbloom Gloves
+				i(211215),	-- Hellbloom Pants
+				i(211216),	-- Hellbloom Cord
+				i(211217),	-- Hellbloom Bindings
+				i(211218),	-- Hellbloom Mantle
+				i(211219),	-- Hellbloom Boots
+				i(211220),	-- Hellbloom Handwraps
+				i(211222),	-- Hellbloom Breeches
+				i(211223),	-- Hellbloom Belt
+				i(211224),	-- Hellbloom Wraps
+				i(211225),	-- Hellbloom Jerkin
+				i(211226),	-- Hellbloom Shoulderguard
+				i(211228),	-- Hellbloom Cuirass
+				i(211229),	-- Hellbloom Sabatons
+				i(211230),	-- Hellbloom Gauntlets
+				i(211231),	-- Hellbloom Legguards
+				i(211232),	-- Hellbloom Spaulders
+				i(211233),	-- Hellbloom Clasp
+				i(211234),	-- Hellbloom Bracers
+				i(211235),	-- Hellbloom Chainmail
+				i(211236),	-- Hellbloom Greaves
+				i(211237),	-- Hellbloom Grips
+				i(211239),	-- Hellbloom Leggings
+				i(211240),	-- Hellbloom Epaulets
+				i(211241),	-- Hellbloom Cinch
+				i(211242),	-- Hellbloom Armguards
+				--
+				i(211134),	-- Ensemble: Scalewarden's Plate Armor
+				i(211136),	-- Ensemble: Scalewarden's Mail Armor
+				i(211139),	-- Ensemble: Scalewarden's Leather Armor
+				i(211141),	-- Ensemble: Scalewarden's Cloth Armor
+				i(211165),	-- Arsenal: Scalewarden's Gun
+				i(211166),	-- Arsenal: Scalewarden's Wand
+				i(211167),	-- Arsenal: Scalewarden's Offhand
+				i(211168),	-- Arsenal: Scalewarden's Stave
+				i(211169),	-- Arsenal: Scalewarden's Greatsword
+				i(211170),	-- Arsenal: Scalewarden's Polearm
+				i(211171),	-- Arsenal: Scalewarden's Shield
+				i(211172),	-- Arsenal: Scalewarden's Axe
+				i(211173),	-- Arsenal: Scalewarden's Warglaive
+				i(211174),	-- Arsenal: Scalewarden's Dagger
+				i(211175),	-- Arsenal: Scalewarden's Mace
+				i(211176),	-- Arsenal: Scalewarden's Club
+				i(211177),	-- Arsenal: Scalewarden's Shortsword
+				--
+				i(208567),	-- Cracked Medal of Conquest
+				i(211126),	-- Glorious Medal of Honor
+				i(208564),	-- Lesser Verdant Trophy of Conquest
+				i(208565),	-- Verdant Trophy of Conquest
+				i(208566),	-- Greater Verdant Trophy of Conquest
+				i(208568),	-- Lesser Verdant Crest of Honor
+				i(208569),	-- Verdant Crest of Honor
+				i(208570),	-- Greater Verdant Crest of Honor
+				i(210326),	-- Medal of Conquest
+				i(206366),	-- Cracked Trophy of Strife
 			}),
+			n(RARES, {
+				i(208324),	-- Scorching Dryad's Chestpiece
+				i(208330),	-- Piercing Touch of the Vine
+				i(208331),	-- Cowl of the Flame
+				i(208332),	-- Horns of the Envoy
+				i(208334),	-- Legplates of the Krakken
+				i(208335),	-- Vibrant Fall Leggings
+				i(208336),	-- Legguards of the Dreamsaber
+				i(208337),	-- Leaf Steward's Leggings
+				i(208339),	-- Saber's Stone Pauldrons
+				i(208340),	-- Stag's Flourishing Mantle
+				i(208341),	-- Fire-Runed Spaulders
+				i(208342),	-- Girdle of Nature's Fury
+				i(208343),	-- Matriarch's Flowery Band
+				i(208344),	-- Sash of the Fruit Thief
+				i(208347),	-- Stone Wolf's Cuffs
+				i(208348),	-- Binds of the Shatterer
+				i(208355),	-- String of Delicacies
+				i(208359),	-- Nightclaw's Bauble
+				i(208361),	-- Splinterlimb's Branch
+				i(208363),	-- Twinfang of the Cian
+				i(208365),	-- Winter's Stand
+				i(208367),	-- Lasher's Red Thorn
+				i(208369),	-- Druid's Vengeful Gaze
+				i(208370),	-- The Apostle's Steps
+				i(208371),	-- Fire Assassin's Boots
+				i(208373),	-- Band of Bated Breath
+				i(208374),	-- Talthornei's Wrath
+				i(208376),	-- Great Ray's Longbow
+				i(208379),	-- Keevah's Extended Claw
+				i(208380),	-- Moragh's Kneading Claw
+				i(208381),	-- Scepter of Still Waters
+				i(208383),	-- Pommel of Fire
+				i(208385),	-- Flame Endowed Blade
+				i(209880),	-- Curve of Starry Dusks
+				i(209881),	-- Fystia's Fiery Kris
+				i(209882),	-- Maruud's Undertow
+				i(209948),	-- Spring's Keeper
+			}),
+			i(206378),	-- [DNT] Test Loot
+			i(206379),	-- [DNT] Test Loot
+			i(207025),	-- <Placeholder> Fyrakk Axe - Shadowflame
+			i(207632),	-- Dream-Attuned Crystal
+			i(208049),	-- Valarjar Trophy
+			i(208199),	-- Tabard of the Tyr's Guard
+			i(208217),	-- Illusory Scroll of Youth
+			i(208221),	-- Soil of the Dreamgrove
+			i(208230),	-- Anaya's Pendant
+			i(208231),	-- Talisman of Hope
+			i(208232),	-- Singed Darnassian Tabard
+			------
+			i(208447),	-- Purifying Tangle
+			i(208545),	-- Kindled Bonfire
+			i(208571),	-- Artisan's Consortium Leaflet
+			i(208599),	-- Verdant Dream Seed
+			i(208606),	-- Somnagora's Heart
+			i(208619),	-- The Tragedy of Erinethria
+			i(208690),	-- Roottwined Key
+			i(208692),	-- Ancient Roottwined Tome
+			i(208702),	-- Memory Essence
+			i(208703),	-- Blacksmith Bammer
+			i(208705),	-- Druidic Totem
+			i(208731),	-- Blacksmith Bammer Key
+			i(208738),	-- Ephemeral Pear
+			i(208745),	-- Your Reward [DNT]
+			i(208757),	-- Ash's Recipes to Delight and Nourish Your Plant Pals
+			i(208856),	-- Pocket Lint
+			i(208955),	-- Pilfered Dreamshard
+			i(208979),	-- 10.2 Monster - Merithra - Robe
+			i(208981),	-- 10.2 Monster - Merithra - Wrist
+			i(208982),	-- 10.2 Monster - Merithra - Waist
+			i(209019),	-- Conjured Sugarfree Firewater Sorbet
+			i(209036),	-- Cache of Amirdrassil Treasures
+			i(209037),	-- Cache of Amirdrassil Treasures
 			i(209316),	-- Goat's Milk in a Skull Mug
 			i(209317),	-- Karazhan Twist
 			i(209318),	-- Dalaran Dazzler
@@ -937,21 +1017,13 @@ root(ROOTS.Unsorted, {
 			i(209866),	-- Thornspeaker Ritual Knife
 			i(209867),	-- Thornspeaker Ritual Knife
 			i(209868),	-- Thornspeaker Ritual Knife
-			i(209871),	-- Winter Veil Gift
-
 			i(209952),	-- Mark of Q'onzu
-
 			i(210005),	-- 10.2 Monster - Weapon - Staff - 10.1.5 Weapon Staff - Staff_2H_Druid_C_02_Color1
-			i(210040),	-- Set Keystone Map: Throne of the Tides
 			i(210041),	-- Shipment of Goods
-
-			i(210203),	-- Mail - WRIST 2
 			i(210224),	-- Small Emerald Bloom
 			i(210225),	-- Medium Emerald Bloom
 			i(210226),	-- Large Emerald Bloom
-			i(210326),	-- Medal of Conquest
 			i(210346),	-- Self-Baking Herb Based Cookies
-
 			i(210415),	-- Darnassian Moonsilver Spaulders
 			i(210418),	-- Darnassian Cloak
 			i(210419),	-- Dream Wardens Insignia
@@ -983,178 +1055,37 @@ root(ROOTS.Unsorted, {
 			i(210474),	-- Tindral's Fowl Fantasia
 			i(210475),	-- Smolderon's Delusions of Grandeur
 			i(210494),	-- Incandescent Essence
-			i(210495),	-- Slumbering Peacebloom Tea
-			i(210496),	-- Recipe: Slumbering Peacebloom Tea
 			i(210498),	-- Fused Essence
 			i(210501),	-- Dream Wardens Tabard
-			i(210540),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leather - HEAD 2
-			i(210541),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - HEAD 2
-			i(210542),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - FEET 3
-			i(210543),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail - SHOULDER 2
-			i(210544),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Cloth - WAIST 3
-			i(210545),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Cloth - SHOULDER 2
-			i(210546),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leather - WAIST 3
-			i(210547),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail - FEET 3
-			i(210548),	-- 10.2 Raid - Emerald Dream - Trash - BoE - Accessory - FINGER 3
-			i(210550),	-- Set Keystone Map: Dawn of the Infinite: Galakrond's Fall
-			i(210551),	-- Set Keystone Map: Dawn of the Infinite: Murozond's Rise
 			i(210554),	-- Blazing Feather
-			i(210565),	-- Soft Somnowl Feather
-			i(210566),	-- Somnowl Feather Strand
 			i(210595),	-- Dreaming Equipment Chest
-			i(210657),	-- Gently Shaken Gift
 			i(210661),	-- Dreamcatcher's Crescent
 			i(210664),	-- Frost Sapling's Adornment
 			i(210687),	-- Ironfur Sample
 			i(210726),	-- Ruby Flightstone
-			-----------------
+			------
 			i(210776),	-- Lesser Dream Infusion
-			i(210782),	-- Slumbering Moonfish
-			i(210783),	-- Awakening Sunfish
-			i(210784),	-- Xena, the Whimsical Whiskerfish
-			i(210786),	-- Dreaming Whiskerfish
 			i(210791),	-- Fragment of Emberscar
 			i(210792),	-- Fragment of Emberscar
 			i(210793),	-- Fragment of Emberscar
-			-----------------
+			------
 			i(208983),	-- Yvelyn's Assistance
 			i(210453),	-- Sample of Cinder Pollen
-			i(210835),	-- Empty Vial
-			i(210836),	-- Empty Vial
-			i(210837),	-- Empty Vial
-			i(210838),	-- Empty Vial
-			i(210839),	-- Empty Vial
-			i(210840),	-- Empty Vial
-			i(210874),	-- Filled Vial
-			i(210875),	-- Filled Vial
-			i(210876),	-- Filled Vial
-			i(210877),	-- Filled Vial
-			i(210879),	-- Filled Vial
-			i(210880),	-- Filled Vial
 			i(210883),	-- Ensemble: Scarlet Zealot's Trappings
 			i(210916),	-- Ember of Fyrakk
 			i(210920),	-- Gift of Amirdrassil
 			i(210961),	-- Alara'shinu
-			i(210977),	-- Coalesced Moonlight
-			i(210991),	-- Small Box of Vials
 			i(210992),	-- Overflowing Dream Warden Trove
-			--
+			------
 			i(190494),	-- Treads of Unrelenting Justice
-			i(206366),	-- Cracked Trophy of Strife
 			i(208217),	-- Illusory Scroll of Youth - NOT USED
-			i(208420),	-- Visage of the Devouring Flame
-			i(208426),	-- Mask of the Unbidden Grim
-			i(208427),	-- Insurgent Flame Warboots
-			i(208428),	-- Mantle of Slumbering Sands
-			i(208429),	-- Mossen Rage Waistguard
-			i(208430),	-- Whispering Fanged Cord
-			i(208431),	-- Lost Scholar's Temporal Shoulderdials
-			i(208432),	-- Vengeful Bladebeak Girdle
-			i(208434),	-- Sentinel's Gilded Poulaines
-			i(208435),	-- Forgotten Jalgar's Girdle
-			i(208436),	-- Flame-Etched Breastplate
-			i(208437),	-- Crown of Freya's Chosen
-			i(208438),	-- Grasps of Awakened Fury
-			i(208439),	-- Rousing Earth Striders
-			i(208440),	-- Aurostor's Sleeping Knickers
-			i(208441),	-- Restful Dozer's Shoes
-			i(208442),	-- Daydreamer's Glimmering Ring
-			i(208443),	-- Slumbering Ursine Talisman
-
 			i(210993),	-- Enchanting Dreamstaff
-			i(210994),	-- Enchanting Dreambow
+			i(210994),	-- Enchanting Dreamblade
 			i(210995),	-- Enchanting Dreambow
-
-
-
-			i(211065),	-- Technique: Mark of the Auric Dreamstag
-
-			i(211126),	-- Glorious Medal of Honor
-
 			i(211131),	-- Delicately Curated Blossoms
 			i(211132),	-- Omni Storm
-			i(211134),	-- Ensemble: Scalewarden's Plate Armor
-			i(211136),	-- Ensemble: Scalewarden's Mail Armor
-
-			i(211139),	-- Ensemble: Scalewarden's Leather Armor
-			i(211141),	-- Ensemble: Scalewarden's Cloth Armor
-
-			i(211165),	-- Arsenal: Scalewarden's Gun
-			i(211166),	-- Arsenal: Scalewarden's Wand
-			i(211167),	-- Arsenal: Scalewarden's Offhand
-			i(211168),	-- Arsenal: Scalewarden's Stave
-			i(211169),	-- Arsenal: Scalewarden's Greatsword
-			i(211170),	-- Arsenal: Scalewarden's Polearm
-			i(211171),	-- Arsenal: Scalewarden's Shield
-			i(211172),	-- Arsenal: Scalewarden's Axe
-			i(211173),	-- Arsenal: Scalewarden's Warglaive
-			i(211174),	-- Arsenal: Scalewarden's Dagger
-			i(211175),	-- Arsenal: Scalewarden's Mace
-			i(211176),	-- Arsenal: Scalewarden's Club
-			i(211177),	-- Arsenal: Scalewarden's Shortsword
-			i(211179),	-- Hellbloom Battleaxe
-			i(211180),	-- Hellbloom Hatchet
-			i(211181),	-- Hellbloom Carver
-			i(211182),	-- Hellbloom Handcannon
-			i(211183),	-- Hellbloom Twinblade
-			i(211184),	-- Hellbloom Spellblade
-			i(211185),	-- Hellbloom Shortsword
-			i(211186),	-- Hellbloom Flame
-			i(211187),	-- Hellbloom Spire
-			i(211188),	-- Hellbloom Battlestaff
-			i(211189),	-- Hellbloom Greatsword
-			i(211190),	-- Hellbloom Broadsword
-			i(211191),	-- Hellbloom Club
-			i(211192),	-- Hellbloom Hammer
-			i(211193),	-- Hellbloom Cudgel
-			i(211194),	-- Hellbloom Aegis
-			i(211195),	-- Hellbloom Impaler
-			i(211196),	-- Hellbloom Spear
-			i(211197),	-- Hellbloom Wand
-			i(211198),	-- Hellbloom Mace
-			i(211199),	-- Hellbloom Crusher
-			i(211200),	-- Hellbloom Scepter
-			i(211201),	-- Hellbloom Sabre
-			i(211202),	-- Hellbloom Dagger
-			i(211203),	-- Hellbloom Dirk
-			i(211211),	-- Hellbloom Cloth Garb
-			i(211212),	-- Hellbloom Cloth Slippers
-			i(211213),	-- Hellbloom Cloth Gloves
-			i(211214),	-- Hellbloom Crown
-			i(211215),	-- Hellbloom Cloth Pants
-			i(211216),	-- Hellbloom Cloth Cord
-			i(211217),	-- Hellbloom Cloth Bindings
-			i(211218),	-- Hellbloom Cloth Mantle
-			i(211219),	-- Hellbloom Leather Boots
-			i(211220),	-- Hellbloom Leather Handwraps
-			i(211221),	-- Hellbloom Hood
-			i(211222),	-- Hellbloom Leather Breeches
-			i(211223),	-- Hellbloom Leather Belt
-			i(211224),	-- Hellbloom Leather Wraps
-			i(211225),	-- Hellbloom Leather Jerkin
-			i(211226),	-- Hellbloom Leather Shoulderguard
-			i(211227),	-- Hellbloom Faceplate
-			i(211228),	-- Hellbloom Plate Cuirass
-			i(211229),	-- Hellbloom Plate Sabatons
-			i(211230),	-- Hellbloom Plate Gauntlets
-			i(211231),	-- Hellbloom Plate Legguards
-			i(211232),	-- Hellbloom Plate Spaulders
-			i(211233),	-- Hellbloom Plate Clasp
-			i(211234),	-- Hellbloom Plate Bracers
-			i(211235),	-- Hellbloom Chain Armor
-			i(211236),	-- Hellbloom Chain Greaves
-			i(211237),	-- Hellbloom Chain Grips
-			i(211238),	-- Hellbloom Helm
-			i(211239),	-- Hellbloom Chain Leggings
-			i(211240),	-- Hellbloom Chain Epaulets
-			i(211241),	-- Hellbloom Chain Cinch
-			i(211242),	-- Hellbloom Chain Armguards
-			i(211243),	-- Hellbloom Cape
-			i(211244),	-- Hellbloom Shawl
-			i(211245),	-- Hellbloom Cloak
-			i(211246),	-- Hellbloom Drape
 			i(211270),	-- Pristine Core Leather
-			--
+			------
 			i(202259),	-- Warcraft Rumble Toy: Maiev
 			i(202260),	-- Warcraft Rumble Toy: Maiev
 			i(202262),	-- Warcraft Rumble Toy: Sneed
@@ -1170,83 +1101,22 @@ root(ROOTS.Unsorted, {
 			i(202864),	-- Warcraft Rumble Toy: Murloc
 			i(202866),	-- Warcraft Rumble Toy: Whelp Egg
 			i(202867),	-- Warcraft Rumble Toy: Whelp Egg
-
 			i(204346),	-- Arclight Rumble Foil Box
 			i(204348),	-- Balled-up Rumble Foil
 			i(204373),	-- Banged-up Rumble Foil
-			i(208564),	-- Lesser Verdant Trophy of Conquest
-			i(208565),	-- Verdant Trophy of Conquest
-			i(208566),	-- Greater Verdant Trophy of Conquest
-			i(208568),	-- Lesser Verdant Crest of Honor
-			i(208569),	-- Verdant Crest of Honor
-			i(208570),	-- Greater Verdant Crest of Honor
-			i(208757),	-- Ash's Recipes to Delight and Nourish Your Plant Pals
-			i(209126),	-- Verdant Gladiator's Leather Robe
-			i(209127),	-- Verdant Gladiator's Leather Vestments
 			i(209875),	-- Bloodied Armor Scrap
-			i(210242),	-- Recipe: Slumbering Peacebloom Tea
-			i(210540),	-- Visage of the Devouring Flame
-			i(210541),	-- Mask of the Unbidden Grim
-			i(210542),	-- Insurgent Flame Warboots
-			i(210543),	-- Mantle of Slumbering Sands
-			i(210544),	-- Whispering Fanged Cord
-			i(210545),	-- Lost Scholar's Temporal Shoulderdials
-			i(210546),	-- Vengeful Bladebeak Girdle
-			i(210547),	-- Sentinel's Gilded Poulaines
-			i(210548),	-- Daydreamer's Glimmering Ring
-			i(210663),	-- Circlet of the Mother Tree
-			i(210958),	-- Crown of the Dryad Daughter
-
-			i(211182),	-- Hellbloom Flameshot
-			i(211186),	-- Hellbloom Branch
-			i(211211),	-- Hellbloom Garb
-			i(211212),	-- Hellbloom Slippers
-			i(211213),	-- Hellbloom Gloves
-			i(211215),	-- Hellbloom Pants
-			i(211216),	-- Hellbloom Cord
-			i(211217),	-- Hellbloom Bindings
-			i(211218),	-- Hellbloom Mantle
-			i(211219),	-- Hellbloom Boots
-			i(211220),	-- Hellbloom Handwraps
-			i(211222),	-- Hellbloom Breeches
-			i(211223),	-- Hellbloom Belt
-			i(211224),	-- Hellbloom Wraps
-			i(211225),	-- Hellbloom Jerkin
-			i(211226),	-- Hellbloom Shoulderguard
-			i(211228),	-- Hellbloom Cuirass
-			i(211229),	-- Hellbloom Sabatons
-			i(211230),	-- Hellbloom Gauntlets
-			i(211231),	-- Hellbloom Legguards
-			i(211232),	-- Hellbloom Spaulders
-			i(211233),	-- Hellbloom Clasp
-			i(211234),	-- Hellbloom Bracers
-			i(211235),	-- Hellbloom Chainmail
-			i(211236),	-- Hellbloom Greaves
-			i(211237),	-- Hellbloom Grips
-			i(211239),	-- Hellbloom Leggings
-			i(211240),	-- Hellbloom Epaulets
-			i(211241),	-- Hellbloom Cinch
-			i(211242),	-- Hellbloom Armguards
-
 			i(211302),	-- Slumberfruit
 			i(211303),	-- Dryad's Supply Pouch
 			i(211314),	-- Cinder of Companionship
 			i(211353),	-- Roasted Ram Special
 			i(211376),	-- Seedbloom
-			i(211381),	-- Grotto Netherwing Drake: Violet Scales
 			i(211396),	-- Attuned Glowspore Grip
 			i(211397),	-- Attuned Rune of Shadowbinding
 			i(211398),	-- Attuned Sophic Vellum
-			i(211400),	-- Glyph of the Lunar Chameleon
 			i(211406),	-- Ageless Dewdrops
 			i(211416),	-- Dream Wardens Insignia
 			i(211417),	-- Dream Wardens Insignia
 			i(211418),	-- Q'onzu Edict of Change
-			--
-			i(210014),	-- Mysterious Ageless Seeds
-			i(210052),	-- Ageless Blossom
-			i(210994),	-- Enchanting Dreamblade
-			i(211424),	-- Dreaming Banner of the Aspects
 		})),
 		tier(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
 			filter(TOYS, {

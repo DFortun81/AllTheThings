@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["g"] = {
 					i(210737),	-- Ashwood Research Binder
 				},
-			}),			
+			}),
 			o(413780, {	-- On the Nature of the Dream
 				["questID"] = 78833,
 				["coord"] = { 54.4, 24.6, EMERALD_DREAM },
@@ -79,7 +79,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["classes"] = { DRUID },
 				["coord"] = { 63.7, 39.2, EMERALD_DREAM },
 				["g"] = {
-					i(210727),	-- Pollenfused Bristlebruin Fur Sample
+					i(210727),	-- Pollenfused Bristlebruin Fur Sample (CI!)
 				},
 			}),
 			n(210544, {	-- Laughing Sprigling

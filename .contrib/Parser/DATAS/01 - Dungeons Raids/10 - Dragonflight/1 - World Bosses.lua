@@ -122,15 +122,16 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				["g"] = sharedData({
 					["modID"] = 3,
 				},{
-					i(208437),	-- Crown of Freya's Chosen
-					i(208443),	-- Slumbering Ursine Talisman
-					i(208436),	-- Flame-Etched Breastplate
-					i(208438),	-- Grasps of Awakened Fury
-					i(208429),	-- Forgotten Jalgar's Girdle
-					i(208435),	-- Mossen Rage Waistguard
+					i(210751),	-- Mark of the Hibernating Runebear (CI!)
 					i(208440),	-- Aurostor's Sleeping Knickers
+					i(208437),	-- Crown of Freya's Chosen
+					i(208436),	-- Flame-Etched Breastplate
+					i(208435),	-- Forgotten Jalgar's Girdle
+					i(208438),	-- Grasps of Awakened Fury
+					i(208429),	-- Mossen Rage Waistguard
 					i(208441),	-- Restful Dozer's Shoes
 					i(208439),	-- Rousing Earth Striders
+					i(208443),	-- Slumbering Ursine Talisman
 				}),
 			})),
 			q(76367,	-- Hibernation Heroes

@@ -121,7 +121,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				--- DM
 				i(207762),	-- Grotto Netherwing Drake: Chin Spike (DM!)
 				-- RECIPE
-				i(210242),	-- Recipe: Slumbering Peace Tea (RECIPE!)
+				i(210242),	-- Recipe: Slumbering Peacebloom Tea (RECIPE!)
 				i(210243),	-- Technique: Contract: Dream Wardens (RECIPE!)
 				i(210490),	-- Technique: Vantus Rune: Amirdrassil, the Dream's Hope (RECIPE!)
 				--Event progress rewards

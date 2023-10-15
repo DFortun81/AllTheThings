@@ -80,6 +80,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				--anything from n: 211265 can be here
 				i(210174),	-- Formula: Illusory Adornment: Dreams (RECIPE!) (TODO: seems like only from blue and epic seed?)
 				i(210241),	-- Recipe: Dreamwalker's Healing Potion (RECIPE!)
+				i(211065),	-- Technique: Mark of the Auric Dreamstag (RECIPE!)
 				-- new loot? depends on seed?
 				i(210219, {	-- Gigantic Dreamy Bounty (TODO: can be unique mount (druid marks counted as mount, yes))
 					i(209950),	-- Rekindled Dreamstag (MOUNT!)
@@ -103,8 +104,8 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		-- ...78975 is currently pop when looting cache in addition to loot hqt, unknown why.
 		--1 - Ageless Blossom
 		--q(),	-- plant green seed / 77209
-		--q(),	-- plant blue seed 
-		--q(),	-- plant purple seed 
+		--q(),	-- plant blue seed
+		--q(),	-- plant purple seed
 		--q(),	-- contrib with dewdrop
 		--q(),	-- contrib with dewdrop for green seed
 		--q(),	-- contrib with dewdrop for blue seed
@@ -132,7 +133,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(),	-- plant blue seed
 		--q(),	-- plant purple seed
 		--q(77234),	-- contrib with dewdrop / but also have 77217 & 77227 (could be bag reward in donation, but dunno)
-		--q(),	-- contrib with dewdrop for green seed 
+		--q(),	-- contrib with dewdrop for green seed
 		--q(),	-- contrib with dewdrop for blue seed
 		--q(),	-- contrib with dewdrop for purple seed
 		--q(),	-- contrib with green seed (to other player plant)
@@ -314,8 +315,8 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(77396),	-- loot cache / & 78975 on looting cache
 		--17 - Whisperbloom Sapling (bugged on ptr)
 		--q(),	-- plant green seed
-		--q(),	-- plant blue seed 
-		--q(),	-- plant purple seed 
+		--q(),	-- plant blue seed
+		--q(),	-- plant purple seed
 		--q(),	-- contrib with dewdrop
 		--q(),	-- contrib with dewdrop for green seed
 		--q(),	-- contrib with dewdrop for blue seed

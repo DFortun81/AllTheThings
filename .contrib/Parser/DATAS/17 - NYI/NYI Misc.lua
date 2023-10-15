@@ -820,6 +820,13 @@ root(ROOTS.NeverImplemented, {
 				i(204887),	-- Unstable Embershard
 				i(204889),	-- Weak Elemental Binding Rings
 			})),
+
+			-- 10.2.0
+			tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
+				i(210550),	-- Set Keystone Map: Dawn of the Infinite: Galakrond's Fall
+				i(210551),	-- Set Keystone Map: Dawn of the Infinite: Murozond's Rise
+				i(210040),	-- Set Keystone Map: Throne of the Tides
+			})),
 		}),
 	}),
 });

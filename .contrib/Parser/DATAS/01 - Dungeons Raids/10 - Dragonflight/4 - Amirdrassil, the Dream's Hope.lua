@@ -247,6 +247,17 @@ local EncounterToLoot = {
 		i(207788),	-- Vakash, the Shadowed Inferno
 	},
 };
+local ZONE_DROPS_GROUP = {
+	i(208442),	-- Daydreamer's Glimmering Ring [BoE]
+	i(208427),	-- Insurgent Flame Warboots [BoE]
+	i(208431),	-- Lost Scholar's Temporal Shoulderdials [BoE]
+	i(208428),	-- Mantle of Slumbering Sands [BoE]
+	i(208426),	-- Mask of the Unbidden Grim [BoE]
+	i(208434),	-- Sentinel's Gilded Poulaines [BoE]
+	i(208432),	-- Vengeful Bladebeak Girdle [BoE]
+	i(208420),	-- Visage of the Devouring Flame [BoE]
+	i(208430),	-- Whispering Fanged Cord [BoE]
+};
 
 ------ Boss Functions ------
 local function bossNoLoot(id, t)
@@ -466,6 +477,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						}),
 					},
 				}),
+				n(ZONE_DROPS, ZONE_DROPS_GROUP),
 				header(HEADERS.Achievement, 19344, {	-- Incarnate's Wake
 					boss(GNARLROOT),
 					boss(IGIRA_THE_CRUEL),
@@ -528,6 +540,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						}),
 					},
 				}),
+				n(ZONE_DROPS, ZONE_DROPS_GROUP),
 				boss(GNARLROOT),
 				boss(IGIRA_THE_CRUEL),
 				boss(VOLCOROSS),
@@ -573,6 +586,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						}),
 					},
 				}),
+				n(ZONE_DROPS, ZONE_DROPS_GROUP),
 				boss(GNARLROOT),
 				boss(IGIRA_THE_CRUEL),
 				boss(VOLCOROSS),
@@ -595,6 +609,17 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 							["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
 						}),
 					},
+				}),
+				n(ZONE_DROPS, {
+					i(210548),	-- Daydreamer's Glimmering Ring [BoP]
+					i(210542),	-- Insurgent Flame Warboots [BoP]
+					i(210545),	-- Lost Scholar's Temporal Shoulderdials [BoP]
+					i(210543),	-- Mantle of Slumbering Sands [BoP]
+					i(210541),	-- Mask of the Unbidden Grim [BoP]
+					i(210547),	-- Sentinel's Gilded Poulaines [BoP]
+					i(210546),	-- Vengeful Bladebeak Girdle [BoP]
+					i(210540),	-- Visage of the Devouring Flame [BoP]
+					i(210544),	-- Whispering Fanged Cord [BoP]
 				}),
 				boss(GNARLROOT, {
 					ach(19335),	-- Mythic: Gnarlroot

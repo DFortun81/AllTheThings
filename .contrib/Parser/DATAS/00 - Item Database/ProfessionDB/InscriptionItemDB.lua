@@ -1543,8 +1543,10 @@ i(207575, 416690);	-- Wanderer's Guide
 ------------------
 --- ITEM ---
 i(210243, 425263);	-- Contract: Dream Wardens
+i(211399, 429149);	-- Glyph of the Lunar Chameleon
 i(210492, 425961);	-- Grotto Netherwing Drake: Chin Tendrils
 i(210493, 425959);	-- Grotto Netherwing Drake: Spiked Jaw
+i(211065, 427956);	-- Mark of the Auric Dreamstag
 i(210490, 425954);	-- Vantus Rune: Amirdrassil, the Dream's Hope
 i(208312, 419041);	-- Verdant Combatant's Emblem
 i(208311, 419040);	-- Verdant Combatant's Insignia of Alacrity

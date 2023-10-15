@@ -9,7 +9,19 @@ root(ROOTS.Character, filter(MISC, {
 		}),
 	}),
 	cl(DRUID, {
+		i(210645, {	-- Feather of Friends (CI!)
+			["timeline"] = { ADDED_10_2_0 },
+		}),
 		i(211280, {	-- Feather of the Smoke Red Moon (CI!)
+			["timeline"] = { ADDED_10_2_0 },
+		}),
+		i(210735, {	-- Mark of the Auric Dreamstag (CI!)
+			["timeline"] = { ADDED_10_2_0 },
+		}),
+		i(211081, {	-- Mark of the Auroral Dreamtalon (CI!)
+			["timeline"] = { ADDED_10_2_0 },
+		}),
+		i(211080, {	-- Mark of the Boreal Dreamtalon (CI!)
 			["timeline"] = { ADDED_10_2_0 },
 		}),
 		i(89868, {	-- Mark of the Cheetah (CI!)
@@ -21,16 +33,31 @@ root(ROOTS.Character, filter(MISC, {
 		i(162022, {	-- Mark of the Dolphin (CI!)
 			["timeline"] = { ADDED_9_0_1 },
 		}),
+		i(210683, {	-- Mark of the Dreamtalon Matriarch (CI!)
+			["timeline"] = { ADDED_10_2_0 },
+		}),
 		i(187933, {	-- Mark of the Duskwing Raven (CI!)
 			["timeline"] = { ADDED_9_1_5 },
 		}),
+		i(210669, {	-- Mark of the Evergreen Dreamsaber (CI!)
+			["timeline"] = { ADDED_10_2_0 },
+		}),
 		i(187887, {	-- Mark of the Gloomstalker Dredbat (CI!)
 			["timeline"] = { ADDED_9_1_5 },
+		}),
+		i(210751, {	-- Mark of the Hibernating Runebear (CI!)
+			["timeline"] = { ADDED_10_2_0 },
 		}),
 		i(162029, {	-- Mark of the Humble Flyer (CI!)
 			["timeline"] = { ADDED_9_0_1 },
 		}),
 		i(210650, {	-- Mark of the Keen-Eyed Dreamsaber (CI!)
+			["timeline"] = { ADDED_10_2_0 },
+		}),
+		i(210738, {	-- Mark of the Loamy Umbraclaw (CI!)
+			["timeline"] = { ADDED_10_2_0 },
+		}),
+		i(210731, {	-- Mark of the Lush Dreamstag (CI!)
 			["timeline"] = { ADDED_10_2_0 },
 		}),
 		i(187934, {	-- Mark of the Midnight Runestag (CI!)
@@ -45,17 +72,44 @@ root(ROOTS.Character, filter(MISC, {
 		i(187936, {	-- Mark of the Sable Ardenmoth (CI!)
 			["timeline"] = { ADDED_9_1_5 },
 		}),
+		i(210674, {	-- Mark of the Sable Dreamtalon (CI!)
+			["timeline"] = { ADDED_10_2_0 },
+		}),
 		i(129021, {	-- Mark of the Sentinel (CI!)
 			["timeline"] = { ADDED_9_0_1 },
 		}),
 		i(187888, {	-- Mark of the Shimmering Ardenmoth (CI!)
 			["timeline"] = { ADDED_9_1_5 },
 		}),
+		i(210535, {	-- Mark of the Slumbering Somnowl (CI!)
+			["timeline"] = { ADDED_10_2_0 },
+		}),
+		i(210736, {	-- Mark of the Smoldering Dreamstag (CI!)
+			["timeline"] = { ADDED_10_2_0 },
+		}),
+		i(210739, {	-- Mark of the Snowy Umbraclaw (CI!)
+			["timeline"] = { ADDED_10_2_0 },
+		}),
+		i(210684, {	-- Mark of the Thriving Dreamtalon (CI!)
+			["timeline"] = { ADDED_10_2_0 },
+		}),
 		i(162027, {	-- Mark of the Tideskipper (CI!)
 			["timeline"] = { ADDED_9_0_1 },
 		}),
 		i(187884, {	-- Mark of the Twilight Runestag (CI!)
 			["timeline"] = { ADDED_9_1_5 },
+		}),
+		i(210647, {	-- Mark of the Umbramane (CI!)
+			["timeline"] = { ADDED_10_2_0 },
+		}),
+		i(210729, {	-- Mark of the Verdant Bristlebruin (CI!)
+			["timeline"] = { ADDED_10_2_0 },
+		}),
+		i(210728, {	-- Moon-Blessed Claw (CI!)
+			["timeline"] = { ADDED_10_2_0 },
+		}),
+		i(210727, {	-- Pollenfused Bristlebruin Fur Sample (CI!)
+			["timeline"] = { ADDED_10_2_0 },
 		}),
 		i(136795, {	-- Tome of the Wilds: Charm Woodland Creature (CI!)
 			["timeline"] = { ADDED_7_0_3_LAUNCH },

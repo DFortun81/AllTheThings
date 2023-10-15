@@ -1117,6 +1117,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(207775),	-- Grotto Netherwing Drake: Teal Scales
 			i(207767),	-- Grotto Netherwing Drake: Tempestuous Pattern
 			i(207766),	-- Grotto Netherwing Drake: Triple Spiked Crest
+			i(211381),	-- Grotto Netherwing Drake: Violet Scales
 			i(207768),	-- Grotto Netherwing Drake: Volatile Pattern
 			i(207777),	-- Grotto Netherwing Drake: Yellow Scales
 		}),

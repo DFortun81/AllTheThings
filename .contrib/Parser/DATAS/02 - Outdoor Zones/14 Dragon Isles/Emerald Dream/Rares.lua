@@ -98,6 +98,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			n(210051, {	-- Matriarch Keevah
 				["questID"] = 78213,
 				["coord"] = { 41.1, 73.3, EMERALD_DREAM },
+				["g"] = {
+					i(210683),	-- Mark of the Dreamtalon Matriarch (CI!)
+				},
 			}),
 			n(210064, {	-- Molten Leadspike
 				["questID"] = 77943,
@@ -120,6 +123,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					{ 40.5, 72.6, EMERALD_DREAM }, -- Moragh
 				},
 				["g"] = {
+					i(210729),	-- Mark of the Verdant Bristlebruin (CI!)
 					i(208329),	-- Warm Grasp of the Dream
 				},
 			}),
@@ -127,6 +131,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 77940,
 				["coord"] = { 55.0, 36.8, EMERALD_DREAM },
 				["g"] = {
+					i(210647),	-- Mark of the Umbramane (CI!)
 					i(210492),	-- Technique: Grotto Netherwing Drake: Chin Tendrils (RECIPE!)
 					i(208375),	-- Owlbear's Decisive Strike
 				},
@@ -148,6 +153,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 77890,
 				["coord"] = { 44.5, 39.3, EMERALD_DREAM },
 				["g"] = {
+					i(210674),	-- Mark of the Sable Dreamtalon (CI!)
 					i(209957),	-- Fang of the Frenzied Nightclaw
 					i(208322),	-- Treads of the Nightclaw
 				},
@@ -179,6 +185,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			n(209902, {	-- Talthonel Ashwhisper
 				["questID"] = 77994,
 				["coord"] = { 59.2, 43.7, EMERALD_DREAM },
+				["g"] = {
+					i(210736),	-- Mark of the Smoldering Dreamstag (CI!)
+				},
 			}),
 			n(209911, {	-- The Apostle
 				["questID"] = 77990,

@@ -416,6 +416,7 @@ i(207773, 77144);	-- Grotto Netherwing Drake: Spiked Jaw
 i(207775, 77146);	-- Grotto Netherwing Drake: Teal Scales
 i(207767, 77138);	-- Grotto Netherwing Drake: Tempestuous Pattern
 i(207766, 77137);	-- Grotto Netherwing Drake: Triple Spiked Crest
+i(211381, 78878);	-- Grotto Netherwing Drake: Violet Scales
 i(207768, 77139);	-- Grotto Netherwing Drake: Volatile Pattern
 i(207777, 77148);	-- Grotto Netherwing Drake: Yellow Scales
 i(210537, 78453);	-- Renewed Proto-Drake: Embodiment of Shadowflame
