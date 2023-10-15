@@ -515,7 +515,7 @@ namespace ATT
             }
             else
             {
-                Trace.WriteLine(fileName + ": Complete");
+                //Trace.WriteLine(fileName + ": Complete");
 
                 // Attempt to merge the data into the Database.
                 Framework.Merge(data);
