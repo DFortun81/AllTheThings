@@ -74,45 +74,58 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 			}),
 		}),
 		ach(5548, {	-- To All the Squirrels Who Cared for Me
-			-- TODO map/coord here instead of individual zone files
+			-- TODO map/coord here instead of individual zone files - Not all spawn locations added
 			crit(1,  {	-- Alpine Chipmunk (Winterspring, Mount Hyjal, Stonetalon Mountains)
 				["crs"] = { 49779 },	-- Alpine Chipmunk
+				["coord"] = { 50, 17, MOUNT_HYJAL },
 			}),
 			crit(16215,  {	-- Baradin Fox Kit (Tol Barad)
 				["crs"] = { 48630 },	-- Baradin Fox Kit
+				["coord"] = { 44, 26, 244 },
 			}),
 			crit(3,  {	-- Grotto Vole (Mount Hyjal)
 				["crs"] = { 50419 },	-- Grotto Vole
+				["coord"] = { 54, 17, MOUNT_HYJAL },
 			}),
 			crit(4,  {	-- Highlands Turkey (Twilight Highlands)
 				["crs"] = { 48706 },	-- Highlands Turkey
+				["coord"] = { 29, 53, TWILIGHT_HIGHLANDS },
 			}),
 			crit(5,  {	-- Mac Frog (Uldum)
 				["crs"] = { 50491 },	-- Mac Frog
+				["coord"] = { 55, 34, ULDUM },
 			}),
 			crit(6,  {	-- Oasis Moth (Uldum, Lost City of the Tol'vir)
 				["crs"] = { 50496 },	-- Oasis Moth
+				["coord"] = { 53, 34, ULDUM },
 			}),
 			crit(7,  {	-- Rattlesnake (Twilight Highlands, Tanaris)
 				["crs"] = { 48686 },	-- Rattlesnake
+				["coord"] = { 57, 15, TWILIGHT_HIGHLANDS },
 			}),
 			crit(8,  {	-- Rock Viper (Mount Hyjal, Desolace, Silithus)
 				["crs"] = { 50481 },	-- Rock Viper
+				["coord"] = { 38, 51 , MOUNT_HYJAL },
 			}),
 			crit(16222,  {	-- Rockchewer Whelk (Shimmering Expanse)
 				["crs"] = { 48848 },	-- Rockchewer Whelk
+				["coord"] = { 54, 41, 205 },
 			}),
 			crit(16223, {	-- Sassy Cat (Tol Barad)
 				["crs"] = { 47682 },	-- Sassy Cat
+				["coord"] = { 72, 38, 245 },
 			}),
 			crit(16224, {	-- Sea Cucumber (Shimmering Expanse, Abyssal Depths)
 				["crs"] = { 48802 },	-- Sea Cucumber
+				["coord"] = { 54, 41, 205 },
 			}),
 			crit(12, {	-- Wharf Rat (Tol Barad Peninsula, The Cape of Stranglethorn
 				["crs"] = { 47667 },	-- Wharf Rat
+				["coord"] = { 27, 40, 245 },
 			}),
 			crit(13, {	-- Yellow-Bellied Marmot (Twilight Highlands)
 				["crs"] = { 48683 },	-- Yellow-Bellied Marmot
+				["coord"] = { 56, 13, TWILIGHT_HIGHLANDS },
 			}),
 		}),
 		ach(5749, {	-- Vial of the Sands (Alchemy / Archeaology)
