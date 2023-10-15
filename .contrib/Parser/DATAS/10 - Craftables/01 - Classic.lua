@@ -490,6 +490,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(203802, {["timeline"] = {ADDED_10_0_7}}),	-- Venomfang
 			i(203860, {["timeline"] = {ADDED_10_0_7}}),	-- Venomreaver
 			i(12792, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Volcanic Hammer NOTE: This had a 7.3.5 removed tag, but I don't trust posters on WoWHead sometimes and this is one of those times where I'll go with my gut and say "PROVE IT" when Cataclysm comes around.
+			i(207011, {["timeline"] = {ADDED_10_1_5}}),	-- Warblades of the Hakkari, Reborn
 			i(203791, {["timeline"] = {ADDED_10_0_7}}),	-- Warblades of the Hakkari, Reborn (MH)
 			i(203792, {["timeline"] = {ADDED_10_0_7}}),	-- Warblades of the Hakkari, Reborn (OH)
 			i(206477, {["timeline"] = {ADDED_10_1_5}}),	-- Warsword of Caer Darrow

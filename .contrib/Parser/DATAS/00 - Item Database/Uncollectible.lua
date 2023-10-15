@@ -761,13 +761,16 @@ i(203654);	-- Zaqali Flame Totem
 i(204817);	-- Underlight Cocoon Fibers
 i(203454);	-- Zaqali Equipment
 
--- Poor Trash --
+--- Trash ---
 i(204580);	-- Abnormal Brain
 i(205869);	-- Aromatic Royal Jelly
 i(205868);	-- Cracked Chitin Carapace
 i(205457);	-- Delicate Crystal Shell
+i(205695);	-- Dense Salamanther Skull
 i(205872);	-- Earthvermin Fluff
 i(205873);	-- Foraged Rare Fungi
+i(205697);	-- Gelatinous Egg Mass
+i(201166);	-- Gilded Hilt
 i(205465);	-- Gleaming Rock Viper Eye
 i(205870);	-- Glittering Spore Dust
 i(205871);	-- Glowing Underlight Wings
@@ -775,6 +778,8 @@ i(205464);	-- Granite Scales
 i(205468);	-- Hooked Tail Claw
 i(205459);	-- Luminous Gloop
 i(205698);	-- Mangled Niffen Pack
+i(205875);	-- Massive Deepstrider Femur
+i(205467);	-- Preserved Krolusk Crest
 i(205460);	-- Pulverized Living Earth
 i(205466);	-- Regurgitated Spores
 i(205699);	-- Rock Worm Frills
@@ -785,50 +790,39 @@ i(205469);	-- Serrated Sporebat Spine
 i(205471);	-- Slimy Deepsea Fin
 i(205470);	-- Torn Deep Scales
 i(205461);	-- Vicious Stoneclaw
-
-
-i(205467);	-- Preserved Krolusk Crest
 i(205472);	-- Wad of Sparkling Somethings
-i(205695);	-- Dense Salamanther Skull
-i(205697);	-- Gelatinous Egg Mass
-i(205875);	-- Massive Deepstrider Femur
-
-
--- Common Trash --
+--- Common ---
 i(204342);	-- Questionable Jerky
-i(206033);	-- Untranslated Obsidian Tome
+
+
+--i(206033);	-- Untranslated Obsidian Tome
 
 ------------------
 -- PATCH 10.1.5 --
 ------------------
--- Quest Items --
+--- Time Rifts ---
 i(208030);	-- Advanced Titan Gizmo
-i(206653);	-- Fel Pinecone
-i(205978);	-- Glob of Azmerloth Slime
-
--- Poor Trash --
-i(201166);	-- Gilded Hilt
-
--- Time Rift Items --
 i(207031);	-- Bomb Lobber
-i(207032);	-- Shrapnel Spreader
-i(207033);	-- Flamethrower
-i(207034);	-- Railgun
-i(207035);	-- Thunderbolt
 i(207036);	-- Crankshot
 i(207037);	-- Empty Gun Rack
 i(207038);	-- Empty Gun Rack
+i(206653);	-- Fel Pinecone
+i(207033);	-- Flamethrower
+i(205978);	-- Glob of Azmerloth Slime
+i(207034);	-- Railgun
 i(208029);	-- Scareloc Parts
+i(207032);	-- Shrapnel Spreader
+i(207035);	-- Thunderbolt
 
 ------------------
 -- PATCH 10.1.7 --
 ------------------
--- Poor Trash --
+--- Trash ---
 i(209033);	-- Worn Felsteel Prayer Rod (Dropped in Argus during Seeing Red Quests)
 i(209034);	-- Half-Completed Invasion Plans (Dropped in Argus during Seeing Red Quests)
 
 ------------------
 -- PATCH 10.2.0 --
 ------------------
--- Poor Trash --
+--- Trash ---
 i(192717);	-- Animated Splinter

@@ -9,7 +9,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		})),
 		ach(18366, { -- Draconically Epic - Replaced with new achievement number 18977
 			["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_5 },
-		}),	
+		}),
 		ach(14797, {	-- Epic [Shadowlands]
 			["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_1_5 },
 		}),
@@ -37,7 +37,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		})),
 		ach(18365, { -- Draconically Superior - Replaced with new achievement number 18976
 			["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_5 },
-		}),	
+		}),
 		ach(14796, {	-- Superior [Shadowlands]
 			["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_1_5 },
 		}),
@@ -1150,7 +1150,6 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["timeline"] = { ADDED_10_1_5 },
 				["g"] = {
 					spell(412234),	-- Madam Shadow's Soulstone
-					--i(206160),	-- Madam Shadow's Grimoire / wowhead list item but I didn't get it during quest
 				},
 			}),
 			q(75542, {	-- Curses & Cultists

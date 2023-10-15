@@ -63,14 +63,19 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 							{ "i", 204832, 1 },	-- 1x Reclaimed Gauntlet Chassis
 						},
 						["g"] = {
-							i(204274),	-- Ancient Memories
+							i(204274, {	-- Ancient Memories
+								i(206163),	-- Temporal Gossamer
+							}),
 						},
 					}),
 					q(76158, {	-- Temporal Gossamer
 						["sourceQuests"] = { 74913 },	-- Memories of an Artifact
-						-- ["provider"] = { "n",  },	--
+						["provider"] = { "i", 206163 },	-- Temporal Gossamer
 						["g"] = {
 							i(204808),	-- Empowered Temporal Gossamer
+							i(206165),	-- Major Resonating Vestigial (QI!)
+							i(206166),	-- Strong Resonating Vestigial (QI!)
+							i(206164),	-- Weak Resonating Vestigial (QI!)
 						},
 					}),
 					q(74924, {	-- Nasz'uro, the Unbound Legacy

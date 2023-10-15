@@ -821,6 +821,19 @@ root(ROOTS.NeverImplemented, {
 				i(204889),	-- Weak Elemental Binding Rings
 			})),
 
+			-- 10.1.5
+			tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
+				i(208417),	-- Chromie's Certificate of Temporal Tidiness
+				i(208097),	-- Flamethrower
+				i(207594),	-- Looter's Purse
+				i(208108),	-- Madam Shadow's Old Grimoire
+				i(205259),	-- Order Soul
+				i(207096),	-- Paracausal Chest
+				i(206474),	-- Smelly Cheese
+				i(207102),	-- TESTING ITEM DELETE ME
+				i(205146),	-- Weyrnstone
+			})),
+
 			-- 10.2.0
 			tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 				i(210550),	-- Set Keystone Map: Dawn of the Infinite: Galakrond's Fall

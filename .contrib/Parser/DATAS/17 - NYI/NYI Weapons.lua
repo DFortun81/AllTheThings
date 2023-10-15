@@ -732,6 +732,11 @@ root(ROOTS.NeverImplemented, {
 		tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
 			i(208003),	-- 10.1.5 Time Rifts - Bronze Weapons - Capture Media
 			i(208002),	-- 10.1.5 Time Rifts - Infinite Weapons - Capture Media
+			i(207044),	-- <DNT> Lo'Gosh Offhand Weapon
+			i(207045),	-- <DNT> Lo'Gosh Mainhand Weapon
+			i(207984),	-- Chroniton Wand
+			i(208001),	-- Timewalker's Cudgel
+			i(206931),	-- Truesilver Champion
 		})),
 	}),
 });

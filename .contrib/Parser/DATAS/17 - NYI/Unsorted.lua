@@ -1304,43 +1304,140 @@ root(ROOTS.Unsorted, {
 				i(206339),	-- Ensemble: Wanderer's Cloudy Trappings
 				i(206340),	-- Ensemble: Wanderer's Grassy Trappings
 				i(206342),	-- Ensemble: Wanderer's Sepia Trappings
+				i(206800),	-- Arcane Detection Rod
+				i(206806),	-- Part Dislocator
+				i(207029),	-- Scarlet Zealot's Heater Shield
 			}),
-			i(202247),	-- Curious Curio Goggles
-			i(202270),	-- [DNT] Twice-Woven Rope
-			i(202312),	-- Juicy Mammoth Steak
-			i(202313),	-- Echolocator
-			i(202340),	-- Laydia's Flower Petals
-			i(202342),	-- Luggage Key
-			i(202363),	-- Survey Arc Device
-			i(204275),	-- Slimey Key
-			i(204895),	-- Storm-touched Missive Stone [DNT]
-			i(204983),	-- Primalist Dropbox Key [DNT]
-			i(205146),	-- Weyrnstone
-			i(206474),	-- Smelly Cheese
-			i(206800),	-- Arcane Detection Rod
-			i(206806),	-- Part Dislocator
-			i(206931),	-- Truesilver Champion
-			i(205259),	-- Order Soul
-			i(206163),	-- Temporal Gossamer
-			i(206164),	-- Weak Resonating Vestigial
-			i(206165),	-- Major Resonating Vestigial
-			i(206166),	-- Strong Resonating Vestigial
-			i(207011),	-- Warblades of the Hakkari, Reborn
-			i(207029),	-- Scarlet Zealot's Heater Shield
-			i(207044),	-- <DNT> Lo'Gosh Offhand Weapon
-			i(207045),	-- <DNT> Lo'Gosh Mainhand Weapon
-			i(207096),	-- Paracausal Chest
-			i(207102),	-- TESTING ITEM DELETE ME
-			i(207594),	-- Looter's Purse
-			i(207984),	-- Chroniton Wand
-			i(208001),	-- Timewalker's Cudgel
-			i(208097),	-- Flamethrower
-			i(208108),	-- Madam Shadow's Old Grimoire
-			i(206447),	-- Task List for Adventurers
-			i(206160),	-- Madam Shadow's Grimoire
-			i(206520),	-- Beverage for Pedgi
-			i(208417),	-- Chromie's Certificate of Temporal Tidiness
-			i(208567),	-- Medal of Conquest
+			n(QUESTS, {
+				--10.1.5.49516
+				q(73121),	--
+				q(73122),	--
+				q(73123),	--
+				q(75211),	--
+				q(75460),	--
+				q(75536),	--
+				q(75605),	--
+				q(76198),	--
+				q(76218),	--
+				q(76219),	--
+				q(76220),	--
+				q(76221),	--
+				q(76222),	--
+				q(76223),	--
+				q(76224),	--
+				q(76225),	--
+				q(76226),	--
+				q(76227),	--
+				q(76228),	--
+				q(76229),	--
+				q(76230),	--
+				q(76231),	--
+				q(76232),	--
+				q(76233),	--
+				q(76234),	--
+				q(76235),	--
+				q(76236),	--
+				q(76237),	--
+				q(76238),	--
+				q(76239),	--
+				q(76267),	--
+				q(76289),	--
+				q(76360),	--
+				q(76371),	--
+				q(76374),	--
+				--10.1.5.49595
+				q(76555),	--
+				--10.1.5.49719
+				q(76561),	--
+				q(76563),	--
+				q(76636),	--
+				q(76675),	--
+				q(76716),	--
+				q(76717),	--
+				q(76718),	--
+				q(76719),	--
+				q(76720),	--
+				q(76721),	--
+				q(76722),	--
+				q(76723),	--
+				q(76724),	--
+				q(76725),	--
+				q(76726),	--
+				q(76727),	--
+				q(76728),	--
+				q(76729),	--
+				q(76730),	--
+				q(76731),	--
+				q(76732),	--
+				q(76981),	--
+				--10.1.5.49824
+				q(77174),	--
+				q(77184),	--
+				q(77185),	--
+				q(77199),	--
+				--10.1.5.49908
+				q(77213),	--
+				q(77221),	--
+				--10.1.5.50006
+				q(77358),	--
+				q(77364),	--
+				q(77418),	--
+				q(77419),	--
+				--10.1.5.50130
+				q(77435),	--
+				q(77506),	--
+				q(77567),	--
+				q(77595),	--
+				q(77596),	--
+				q(77597),	--
+				q(77598),	--
+				q(77599),	--
+				q(77600),	--
+				q(77601),	--
+				q(77602),	--
+				q(77603),	--
+				q(77604),	--
+				q(77605),	--
+				q(77606),	--
+				q(77607),	--
+				q(77608),	--
+				q(77609),	--
+				q(77610),	--
+				q(77611),	--
+				q(77622),	--
+				q(77623),	--
+				q(77625),	--
+				q(77626),	--
+				q(77627),	--
+				q(77629),	--
+				q(77630),	--
+				q(77631),	--
+				q(77632),	--
+				q(77633),	--
+				q(77634),	--
+				q(77635),	--
+				q(77637),	--
+				q(77638),	--
+				q(77639),	--
+				q(77640),	--
+				q(77641),	--
+				--10.1.5.50199
+				q(77691),	--
+				--10.1.5.50355
+				q(76157),	--
+				--10.1.5.50438
+				q(77850),	--
+				q(77851),	--
+				q(77852),	--
+				q(77853),	--
+				--10.1.5.50469
+				q(77883),	--
+				--10.1.5.51130
+				q(77333),	--
+				q(77336),	--
+				q(77337),	--
+				q(77338),	--
+			}),
 		})),
 		tier(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
 			filter(COSMETIC, {
@@ -1490,6 +1587,8 @@ root(ROOTS.Unsorted, {
 				q(75054),	--
 				q(75388),	-- The Azure Vaults
 				q(75391),	-- Epilogue Scene (DNT) (spellID 406790)
+				--10.1.0.49890
+				q(75059),	--
 			}),
 		})),
 		tier(DF_TIER, 0.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {

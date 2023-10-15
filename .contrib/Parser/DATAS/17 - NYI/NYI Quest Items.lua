@@ -192,6 +192,23 @@ root(ROOTS.NeverImplemented, {
 				i(204175),	-- Unknown Core
 				i(203707),	-- Water Bucket
 			})),
+
+			-- 10.1.5
+			tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
+				i(202270),	-- [DNT] Twice-Woven Rope
+				i(206520),	-- Beverage for Pedgi
+				i(202247),	-- Curious Curio Goggles
+				i(202313),	-- Echolocator
+				i(202312),	-- Juicy Mammoth Steak
+				i(202340),	-- Laydia's Flower Petals
+				i(202342),	-- Luggage Key
+				i(206160),	-- Madam Shadow's Grimoire
+				i(204983),	-- Primalist Dropbox Key [DNT]
+				i(204275),	-- Slimey Key
+				i(204895),	-- Storm-touched Missive Stone [DNT]
+				i(202363),	-- Survey Arc Device
+				i(206447),	-- Task List for Adventurers
+			})),
 		}),
 	}),
 });
