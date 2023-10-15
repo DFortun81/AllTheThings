@@ -177,8 +177,55 @@ local function GetUpgrade(t, upmodID, upbonusID)
 end
 api.GetUpgrade = GetUpgrade;
 
+-- Returns the different and upgraded version of 't' (via 'up' field only)
+local function HasUpgrade(t)
+
+	-- '.up' is the modID.bonusID portion of the respective upgrade item defined in ATT
+	local up = t.up;
+	if not up or not t.collectible then
+		-- app.PrintDebug("no upgrade",t.modItemID)
+		-- t.isUpgraded = true;
+		return;
+	end
+
+	-- find or create the upgrade for cached reference
+	local upmodID = floor(up);
+	local upbonusID = floor((up - upmodID) * 10000 + 0.5);
+	up = GetUpgrade(t, upmodID, upbonusID);
+	if not up then
+		-- app.PrintDebug("HU:no upgrade created",t.modItemID,"=>",upmodID,upbonusID)
+		-- t.isUpgraded = true;
+		return;
+	end
+
+	-- upgrade has to actually be different than the source item
+	local uphash = up.hash;
+	if uphash and uphash == t.hash then
+		-- app.PrintDebug("HU:upgrade is same",t.hash,t.modItemID,"=+>",up.__type,uphash,up.modItemID)
+		-- t.isUpgraded = true;
+		return;
+	end
+
+	-- if up.modID == t.modID and up.bonusID == t.bonusID then
+	-- 	app.print("SAME ITEM AS UPGRADE!?",t.hash,t.modItemID,"=+>",up.__type,up.hash,up.modItemID)
+	-- end
+
+	-- if up.s == t.s then
+	-- 	app.print("SAME SOURCE AS UPGRADE!?",t.hash,t.modItemID,"=+>",up.__type,up.hash,up.modItemID)
+	-- end
+
+	t._up = up;
+	-- app.PrintDebug("HU:",up.__type,up.collected,t.modItemID,up.modItemID)
+	return up;
+end
+
 -- Returns the different and upgraded version of 't' (via item link/bonuses or 'up' field)
 api.NextUpgrade = function(t)
+
+	-- app.PrintDebug("NU:",t.modItemID)
+	-- try basic upgrade logic first (checking 'up' field)
+	local upgrade = t._up or HasUpgrade(t);
+	if upgrade then return upgrade end
 
 	-- nested upgrades should not be considered for a following upgrade (Contains tooltip/DetermineUpgradeGroups)
 	-- if a situation arises in which a single item can be upgraded across multiple 'collectible' variants, this will have to be revisted
@@ -214,13 +261,6 @@ api.NextUpgrade = function(t)
 		return;
 	end
 
-	-- cached tracking of upgrade group
-	local cache = t._up;
-	if cache then
-		-- app.PrintDebug("NU:cache",t.modItemID,cache.hash,cache.modItemID)
-		return cache;
-	end
-
 	-- find or create the upgrade for cached reference
 	local upmodID = floor(up);
 	local upbonusID = floor((up - upmodID) * 10000 + 0.5);
@@ -241,55 +281,6 @@ api.NextUpgrade = function(t)
 
 	t._up = up;
 	-- app.PrintDebug("NU:",up.__type,up.collected,t.modItemID,up.modItemID)
-	return up;
-end
-
--- Returns the different and upgraded version of 't' (via 'up' field only)
-local function HasUpgrade(t)
-
-	-- '.up' is the modID.bonusID portion of the respective upgrade item defined in ATT
-	local up = t.up;
-	if not up or not t.collectible then
-		-- app.PrintDebug("no upgrade",t.modItemID)
-		-- t.isUpgraded = true;
-		return;
-	end
-
-	-- cached tracking of upgrade group
-	local cache = t._up;
-	if cache then
-		-- app.PrintDebug("HU:cache",t.hash,t.modItemID,"=+>",cache.__type,cache.hash,cache.modItemID,cache.collected)
-		return cache;
-	end
-
-	-- find or create the upgrade for cached reference
-	local upmodID = floor(up);
-	local upbonusID = floor((up - upmodID) * 10000 + 0.5);
-	up = GetUpgrade(t, upmodID, upbonusID);
-	if not up then
-		-- app.PrintDebug("HU:no upgrade created",t.modItemID,"=>",upmodID,upbonusID)
-		-- t.isUpgraded = true;
-		return;
-	end
-
-	-- upgrade has to actually be different than the source item
-	local uphash = up.hash;
-	if uphash and uphash == t.hash then
-		-- app.PrintDebug("HU:upgrade is same",t.hash,t.modItemID,"=+>",up.__type,uphash,up.modItemID)
-		-- t.isUpgraded = true;
-		return;
-	end
-
-	-- if up.modID == t.modID and up.bonusID == t.bonusID then
-	-- 	app.print("SAME ITEM AS UPGRADE!?",t.hash,t.modItemID,"=+>",up.__type,up.hash,up.modItemID)
-	-- end
-
-	-- if up.s == t.s then
-	-- 	app.print("SAME SOURCE AS UPGRADE!?",t.hash,t.modItemID,"=+>",up.__type,up.hash,up.modItemID)
-	-- end
-
-	t._up = up;
-	-- app.PrintDebug("HU:",up.__type,up.collected,t.modItemID,up.modItemID)
 	return up;
 end
 
