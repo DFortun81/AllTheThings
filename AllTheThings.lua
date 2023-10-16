@@ -969,7 +969,7 @@ local function GetUpgradeIconForRow(data, iconOnly)
 end
 local function GetUpgradeIconForTooltip(data, iconOnly)
 	-- upgrade only if itself has an upgrade
-	if data.filledUpgrade or data.collectibleAsUpgrade then
+	if data.collectibleAsUpgrade then
 		return iconOnly and L["UPGRADE_ICON"] or L["UPGRADE_TEXT"];
 	end
 end
@@ -1532,43 +1532,53 @@ local inventorySlotsMap = {	-- Taken directly from CanIMogIt (Thanks!)
 -- Source ID Harvesting Lib
 local DressUpModel = CreateFrame('DressUpModel');
 GetSourceID = function(itemLink)
-	if itemLink and C_Item_IsDressableItemByID(itemLink) then
-		-- Updated function courtesy of CanIMogIt, Thanks AmiYuy and Team! :D
+	if not itemLink or not C_Item_IsDressableItemByID(itemLink) then return nil, false end
+
+	-- Updated function courtesy of CanIMogIt, Thanks AmiYuy and Team! :D
+	-- (requires loaded ItemInfo to work for modified appearances)
+	if GetItemInfo(itemLink) then
 		local sourceID = select(2, C_TransmogCollection_GetItemInfo(itemLink));
 		-- app.PrintDebug("TMOGSourceID",sourceID,itemLink)
 		if sourceID then return sourceID, true; end
+	end
 
-		-- app.PrintDebug("Failed to directly retrieve SourceID",itemLink)
-		local itemID, _, _, slotName = GetItemInfoInstant(itemLink);
-		if slotName then
-			local slots = inventorySlotsMap[slotName];
-			if slots then
-				DressUpModel:SetUnit("player");
-				DressUpModel:Undress();
-				for _,slot in pairs(slots) do
-					DressUpModel:TryOn(itemLink, slot);
-					local tmogInfo = DressUpModel:GetItemTransmogInfo(slot);
-					-- app.PrintDebug("SlotInfo",slot)
-					-- app.PrintTable(tmogInfo)
-					local sourceID = tmogInfo and tmogInfo.appearanceID;
-					if sourceID and sourceID ~= 0 then
-						-- Added 5/4/2018 - Account for DressUpModel lag... sigh
-						-- Adjusted to account for non-transmoggable SourceIDs which are collectible
-						local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-						if sourceInfo then
-							if sourceInfo.itemID == itemID then
-								-- app.PrintDebug("DressUpModelSourceID",itemLink,sourceID,sourceInfo.itemID,sourceInfo.name)
-								return sourceID, true;
-							end
+	-- app.PrintDebug("Failed to directly retrieve SourceID",itemLink)
+	local itemID, _, _, slotName = GetItemInfoInstant(itemLink);
+	if slotName then
+		local slots = inventorySlotsMap[slotName];
+		if slots then
+			DressUpModel:SetUnit("player");
+			DressUpModel:Undress();
+			for _,slot in pairs(slots) do
+				DressUpModel:TryOn(itemLink, slot);
+				local tmogInfo = DressUpModel:GetItemTransmogInfo(slot);
+				-- app.PrintDebug("SlotInfo",slot)
+				-- app.PrintTable(tmogInfo)
+				local sourceID = tmogInfo and tmogInfo.appearanceID;
+				if sourceID and sourceID ~= 0 then
+					-- Added 5/4/2018 - Account for DressUpModel lag... sigh
+					-- Adjusted to account for non-transmoggable SourceIDs which are collectible
+					local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
+					if sourceInfo then
+						if sourceInfo.itemID == itemID then
+							-- app.PrintDebug("DressUpModelSourceID",itemLink,sourceID,sourceInfo.itemID,sourceInfo.name)
+							return sourceID, true;
 						end
 					end
 				end
 			end
 		end
-		return nil, true;
 	end
-	return nil, false;
+	return nil, true;
 end
+-- Returns sourceID which is actually accurate for the provided itemLink
+-- (C_TransmogCollection.GetItemInfo requires item data to be available in the Client to be confirmed that it is accurate. Thanks Blizzard)
+local function GetSourceIDConfirmed(itemLink)
+	if not GetItemInfo(itemLink) then return end
+	return GetSourceID(itemLink)
+end
+app.GetSourceID = GetSourceID;
+app.GetSourceIDConfirmed = GetSourceIDConfirmed;
 end
 -- Attempts to determine an ItemLink which will return the provided SourceID
 app.DetermineItemLink = function(sourceID)
@@ -1619,7 +1629,6 @@ app.IsComplete = function(o)
 	if o.trackable then return o.saved; end
 	return true;
 end
-app.GetSourceID = GetSourceID;
 app.MaximumItemInfoRetries = 40;
 local function GetUnobtainableTexture(group)
 	if not group then return; end
@@ -4828,7 +4837,10 @@ end
 local function DetermineUpgradeGroups(group, FillData)
 	local nextUpgrade = group.nextUpgrade;
 	if nextUpgrade then
-		group.filledUpgrade = not nextUpgrade.collected;
+		if not nextUpgrade.collected then
+			group.filledUpgrade = true;
+		end
+		-- app.PrintDebug("filledUpgrade=",nextUpgrade.modItemID,nextUpgrade.collected,"<",group.modItemID)
 		local o = CreateObject(nextUpgrade);
 		return { o };
 	end
@@ -15802,12 +15814,12 @@ RowOnEnter = function (self)
 		end
 
 		--[[ ROW DEBUGGING ]
-		GameTooltip:AddDoubleLine("Self",tostring(reference));
-		GameTooltip:AddDoubleLine("Base",tostring(getmetatable(reference)));
-		GameTooltip:AddDoubleLine("Parent",tostring(rawget(reference, "parent")));
-		GameTooltip:AddDoubleLine("ParentText",tostring((rawget(reference, "parent") or app.EmptyTable).text));
-		GameTooltip:AddDoubleLine("SourceParent",tostring(rawget(reference, "sourceParent")));
-		GameTooltip:AddDoubleLine("SourceParentText",tostring((rawget(reference, "sourceParent") or app.EmptyTable).text));
+		-- GameTooltip:AddDoubleLine("Self",tostring(reference));
+		-- GameTooltip:AddDoubleLine("Base",tostring(getmetatable(reference)));
+		-- GameTooltip:AddDoubleLine("Parent",tostring(rawget(reference, "parent")));
+		-- GameTooltip:AddDoubleLine("ParentText",tostring((rawget(reference, "parent") or app.EmptyTable).text));
+		-- GameTooltip:AddDoubleLine("SourceParent",tostring(rawget(reference, "sourceParent")));
+		-- GameTooltip:AddDoubleLine("SourceParentText",tostring((rawget(reference, "sourceParent") or app.EmptyTable).text));
 		GameTooltip:AddLine("-- Ref Fields:");
 		for key,val in pairs(reference) do
 			if key ~= "lore" and key ~= "description" then
@@ -15815,11 +15827,12 @@ RowOnEnter = function (self)
 			end
 		end
 		local fields = {
-			"__type",
-			"key",
-			"hash",
-			"name",
-			"link",
+			"collectibleAsUpgrade",
+			-- "__type",
+			-- "key",
+			-- "hash",
+			-- "name",
+			-- "link",
 			-- "sourceIgnored",
 			-- "collectible",
 			-- "collected",
@@ -15828,8 +15841,8 @@ RowOnEnter = function (self)
 			-- "collectibleAsCost",
 			-- "costTotal",
 			-- "costProgress",
-			"itemID",
-			"modItemID"
+			-- "itemID",
+			-- "modItemID"
 		};
 		GameTooltip:AddLine("-- Extra Fields:");
 		for _,key in ipairs(fields) do
@@ -19550,7 +19563,7 @@ customWindowUpdates["list"] = function(self, force, got)
 			if not link then return; end
 			-- If it doesn't, the source ID will need to be harvested.
 			local s, success = GetSourceID(link);
-			-- app.PrintDebug("SourceIDs",data.modItemID,source,s,success)
+			-- app.PrintDebug("SourceIDs",link,data.modItemID,source,s,success)
 			data._VerifyGroupSourceID = true;
 			if s and s > 0 then
 				-- only save the source if it is different than what we already have, or being forced

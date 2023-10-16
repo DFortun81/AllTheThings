@@ -182,7 +182,7 @@ local function HasUpgrade(t)
 
 	-- '.up' is the modID.bonusID portion of the respective upgrade item defined in ATT
 	local up = t.up;
-	if not up or not t.collectible then
+	if not up then
 		-- app.PrintDebug("no upgrade",t.modItemID)
 		-- t.isUpgraded = true;
 		return;
@@ -234,9 +234,9 @@ api.NextUpgrade = function(t)
 	-- 	return;
 	-- end
 
-	-- is this a non-default item table which has already been upgraded?
+	-- is this a non-default item table which has no upgrade unlock?
 	local unlockBonusID = GetNextItemUnlockBonusIDByTable(t)
-	if unlockBonusID and unlockBonusID < 1 then
+	if not unlockBonusID or unlockBonusID < 1 then
 		-- app.PrintDebug("isUpgraded via item",t.modItemID)
 		-- t.isUpgraded = true;
 		return;
@@ -244,12 +244,12 @@ api.NextUpgrade = function(t)
 
 	-- '.up' is the modID.bonusID portion of the respective upgrade item
 	-- if no upgrade
-	local up = unlockBonusID and (unlockBonusID / 10000) or t.up;
-	if not up or not t.collectible then
-		-- app.PrintDebug("no upgrade",t.modItemID)
-		-- t.isUpgraded = true;
-		return;
-	end
+	local up = unlockBonusID / 10000
+	-- if not up then
+	-- 	-- app.PrintDebug("no upgrade",t.modItemID)
+	-- 	-- t.isUpgraded = true;
+	-- 	return;
+	-- end
 
 	-- parent is pre-upgrade of itself and less than 2 upgrades allowed from the parent, then no upgrade for this
 	local p = t.parent
@@ -272,9 +272,9 @@ api.NextUpgrade = function(t)
 	end
 
 	-- upgrade has to actually be different than the source item
-	local searchHash = up.hash;
-	if searchHash and searchHash == t.hash then
-		-- app.PrintDebug("NU:upgrade is same",searchHash,up.modItemID)
+	local uphash = up.hash;
+	if uphash and uphash == t.hash then
+		-- app.PrintDebug("NU:upgrade is same",uphash,up.modItemID)
 		-- t.isUpgraded = true;
 		return;
 	end
