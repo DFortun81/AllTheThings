@@ -935,17 +935,27 @@ end
 local function GetCompletionText(state)
 	return L[(state == 2 and "COMPLETE_OTHER") or (state and "COMPLETE") or "INCOMPLETE"];
 end
+local function GetSavedText(state)
+	return L[state and "SAVED" or "INCOMPLETE"];
+end
 local function GetCollectibleIcon(data, iconOnly)
 	if data.collectible then
 		return iconOnly and GetCollectionIcon(data.collected) or GetCollectionText(data.collected);
 	end
 end
-local function GetTrackableIcon(data, iconOnly)
+local function GetTrackableIcon(data, iconOnly, forSaved)
 	if data.trackable then
 		local saved = data.saved;
 		-- only show if the data is saved, or is not repeatable
 		if saved or not rawget(data, "repeatable") then
-			return iconOnly and GetCompletionIcon(saved) or GetCompletionText(saved);
+			if forSaved then
+				-- if for saved, we ignore if it is un-saved for less clutter
+				if saved then
+					return iconOnly and GetCompletionIcon(saved) or GetSavedText(saved);
+				end
+			else
+				return iconOnly and GetCompletionIcon(saved) or GetCompletionText(saved);
+			end
 		end
 	end
 end
@@ -1055,6 +1065,13 @@ local function GetProgressTextForTooltip(data, iconOnly)
 	local stateIcon = GetCollectibleIcon(data, iconOnly)
 	if stateIcon then
 		tinsert(text, stateIcon)
+	end
+	-- Saved (only certain data types)
+	if data.npcID then
+		stateIcon = GetTrackableIcon(data, iconOnly, true)
+		if stateIcon then
+			tinsert(text, stateIcon)
+		end
 	end
 	-- Container
 	local total = data.total;
