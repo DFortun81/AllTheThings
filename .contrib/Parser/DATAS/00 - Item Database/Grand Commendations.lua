@@ -357,6 +357,10 @@ i(187429, FACTION_THE_WILD_HUNT);			-- Petrified Sylvan Antlers
 ------------------
 -- PATCH 10.0.2 --
 ------------------
+i(200285, DRAGONSCALE_EXPEDITION);			-- Dragonscale Expedition Insignia [Uncommon]
+i(200452, DRAGONSCALE_EXPEDITION);			-- Dragonscale Expedition Insignia [Rare]
+i(201921, DRAGONSCALE_EXPEDITION);			-- Dragonscale Expedition Insignia [Epic]
+i(202091, DRAGONSCALE_EXPEDITION);			-- Dragonscale Expedition Insignia [Epic 2.5k]
 i(200287, FACTION_ISKAARA_TUSKARR);			-- Iskaara Tuskarr Insignia [Uncommon]
 i(200453, FACTION_ISKAARA_TUSKARR);			-- Iskaara Tuskarr Insignia [Rare]
 i(201922, FACTION_ISKAARA_TUSKARR);			-- Iskaara Tuskarr Insignia [Epic]
