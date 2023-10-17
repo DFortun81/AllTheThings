@@ -133,7 +133,6 @@ local EncounterToLoot = {
 };
 
 ------ EncounterToTier ------
--- Blizzard used some really wacky BonusIDs this time around to give proper Tier SourceIDs...
 local EncounterToTier = {
 	[SENNARTH_THE_COLD_BREATH] = {
 		i(196588, {	-- Dreadful Jade Forgestone
@@ -253,40 +252,59 @@ local EncounterToTier = {
 };
 
 ------ Difficulty To BonusID for those Tiers... ------
-local DifficultyToBonusID = {
-	[LFR_RAID] = 7982,
-	[NORMAL_RAID] = 7979,
-	[HEROIC_RAID] = 7980,
-	[MYTHIC_RAID] = 7981,
-};
+-- Blizzard used some really wacky BonusIDs this time around to give proper Tier SourceIDs...
+-- Blizzard seems to have actually fixed needing these...
+-- local DifficultyToBonusID = {
+-- 	[LFR_RAID] = 7982,
+-- 	[NORMAL_RAID] = 7979,
+-- 	[HEROIC_RAID] = 7980,
+-- 	[MYTHIC_RAID] = 7981,
+-- };
 
 ------ Boss Functions ------
-local function bossNoLoot(id, t)
+local CurrentDifficultyID
+local function addTierLoot(encounter, id, difficulty)
+	local tokens = {}
+	for _,token in ipairs(EncounterToTier[id]) do
+		tokens[#tokens + 1] = clone(token)
+	end
+	-- seems to no longer be necessary... will keep it around for a while just in case
+	-- local difficultyBonusID = DifficultyToBonusID[difficulty]
+	-- for _,token in ipairs(tokens) do
+	-- 	for _,item in ipairs(token.groups) do
+	-- 		item.bonusID = difficultyBonusID;
+	-- 	end
+	-- end
+	encounter.groups = appendAllGroups(encounter.groups, tokens);
+	return encounter
+end
+local function BossOnly(id, t)
 	local encounter = e(id, t);
 	encounter.crs = EncounterToCRS[id];
 	return encounter
 end
-local function addTierLoot(encounter, id, difficulty)
-	for key,item in ipairs(EncounterToTier[id][1]) do
-		for k,i in ipairs(item.groups) do
-			i.bonusID = DifficultyToBonusID[difficulty];
-		end
+local function Boss(id, t)
+	local encounter = BossOnly(id, t)
+	if EncounterToTier[id] then
+		addTierLoot(encounter, id, CurrentDifficultyID)
 	end
-	encounter.groups = appendGroups(EncounterToTier[id], encounter.groups or {});
+	encounter.groups = appendAllGroups(encounter.groups, EncounterToLoot[id]);
 	return encounter
 end
-local function boss(id, difficulty, t)
-	local encounter = {}
-	if type(difficulty) ~= "number" then
-		t = difficulty;
-		encounter = bossNoLoot(id, t);
-		encounter.groups = appendGroups(EncounterToLoot[id], encounter.groups or {});
-	else
-		encounter = bossNoLoot(id, t);
-		encounter = addTierLoot(encounter, id, difficulty)
-		encounter.groups = appendGroups(EncounterToLoot[id], encounter.groups or {});
+local autoDifficultyMeta = {
+	__index = function(t, key)
+		if key == "AddGroups" then
+			return function(groups)
+				t.groups = appendAllGroups(t.groups, groups)
+				return t
+			end
+		end
 	end
-	return encounter
+}
+local function RaidDifficulty(difficultyID, t)
+	local diff = d(difficultyID, t)
+	CurrentDifficultyID = diff.difficultyID
+	return setmetatable(diff, autoDifficultyMeta)
 end
 
 root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
@@ -463,21 +481,21 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				i(201412),	-- Ancient Vault Artifact (Quest)
 				i(201411),	-- Ancient Vault Artifact (Repeatable)
 			}),
-			d(AllDifficulties, {
-				bossNoLoot(ERANOG),
-				bossNoLoot(TERROS),
-				bossNoLoot(THE_PRIMAL_COUNCIL),
-				bossNoLoot(SENNARTH_THE_COLD_BREATH),
-				bossNoLoot(DATHEA_ASCENDED),
-				bossNoLoot(KUROG_GRIMTOTEM, {
+			RaidDifficulty(AllDifficulties).AddGroups({
+				BossOnly(ERANOG),
+				BossOnly(TERROS),
+				BossOnly(THE_PRIMAL_COUNCIL),
+				BossOnly(SENNARTH_THE_COLD_BREATH),
+				BossOnly(DATHEA_ASCENDED),
+				BossOnly(KUROG_GRIMTOTEM, {
 					i(200916),	-- Formula: Illusion: Primal Mastery (RECIPE!)
 				}),
-				bossNoLoot(BROODKEEPER_DIURNA),
-				bossNoLoot(RASZAGETH_THE_STORM_EATER, {
+				BossOnly(BROODKEEPER_DIURNA),
+				BossOnly(RASZAGETH_THE_STORM_EATER, {
 					i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
 				}),
 			}),
-			d(LFR_RAID, {
+			RaidDifficulty(LFR_RAID, {
 				n(ZONE_DROPS, {
 					i(202004),	-- Brawler's Earthen Cuirass [BoE]
 					i(201992),	-- Emissary's Flamewrought Seal [BoE]
@@ -489,48 +507,49 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					i(202010),	-- Primalist Warden's Bracers [BoE]
 					i(202007),	-- Woven Stone Bracelets [BoE]
 				}),
+			}).AddGroups({
 				header(HEADERS.Achievement, 17110, {	-- The Primal Bulwark
-					boss(ERANOG),
-					boss(THE_PRIMAL_COUNCIL),
-					boss(DATHEA_ASCENDED, LFR_RAID),
+					Boss(ERANOG),
+					Boss(THE_PRIMAL_COUNCIL),
+					Boss(DATHEA_ASCENDED),
 				}),
 				header(HEADERS.Achievement, 17111, {	-- Caverns of Infusion
-					boss(TERROS),
-					boss(SENNARTH_THE_COLD_BREATH, LFR_RAID),
-					boss(KUROG_GRIMTOTEM, LFR_RAID),
+					Boss(TERROS),
+					Boss(SENNARTH_THE_COLD_BREATH),
+					Boss(KUROG_GRIMTOTEM),
 				}),
 				header(HEADERS.Achievement, 17112, {	-- Fury of the Storm
-					boss(BROODKEEPER_DIURNA, LFR_RAID),
-					boss(RASZAGETH_THE_STORM_EATER, LFR_RAID),
+					Boss(BROODKEEPER_DIURNA),
+					Boss(RASZAGETH_THE_STORM_EATER),
 				}),
 			}),
-			d(NormalPlus, {
-				bossNoLoot(ERANOG, {
+			RaidDifficulty(NormalPlus).AddGroups({
+				BossOnly(ERANOG, {
 					ach(16335),	-- What Frozen Things Do
 				}),
-				bossNoLoot(TERROS, {
+				BossOnly(TERROS, {
 					ach(16365),	-- Little Friends
 				}),
-				bossNoLoot(THE_PRIMAL_COUNCIL, {
+				BossOnly(THE_PRIMAL_COUNCIL, {
 					ach(16364),	-- The Lunker Below
 				}),
-				bossNoLoot(SENNARTH_THE_COLD_BREATH, {
+				BossOnly(SENNARTH_THE_COLD_BREATH, {
 					ach(16419),	-- I Was Saving That For Later
 				}),
-				bossNoLoot(DATHEA_ASCENDED, {
+				BossOnly(DATHEA_ASCENDED, {
 					ach(16458),	-- Nothing But Air
 				}),
-				bossNoLoot(KUROG_GRIMTOTEM, {
+				BossOnly(KUROG_GRIMTOTEM, {
 					ach(16450),	-- The Power is MINE!
 				}),
-				bossNoLoot(BROODKEEPER_DIURNA, {
+				BossOnly(BROODKEEPER_DIURNA, {
 					ach(16442),	-- Incubation Extermination
 				}),
-				bossNoLoot(RASZAGETH_THE_STORM_EATER, {
+				BossOnly(RASZAGETH_THE_STORM_EATER, {
 					ach(16451),	-- The Ol Raszle Daszle
 				}),
 			}),
-			d(NORMAL_RAID, {
+			RaidDifficulty(NORMAL_RAID, {
 				n(QUESTS, {
 					q(71018, {	-- Vault of the Incarnates: Break a Few Eggs (N)
 						["provider"] = { "n", 193460 },	-- Kalecgos
@@ -550,16 +569,17 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					i(202010),	-- Primalist Warden's Bracers [BoE]
 					i(202007),	-- Woven Stone Bracelets [BoE]
 				}),
-				boss(ERANOG),
-				boss(TERROS),
-				boss(THE_PRIMAL_COUNCIL),
-				boss(SENNARTH_THE_COLD_BREATH, NORMAL_RAID),
-				boss(DATHEA_ASCENDED, NORMAL_RAID),
-				boss(KUROG_GRIMTOTEM, NORMAL_RAID),
-				boss(BROODKEEPER_DIURNA, NORMAL_RAID),
-				boss(RASZAGETH_THE_STORM_EATER, NORMAL_RAID),
+			}).AddGroups({
+				Boss(ERANOG),
+				Boss(TERROS),
+				Boss(THE_PRIMAL_COUNCIL),
+				Boss(SENNARTH_THE_COLD_BREATH),
+				Boss(DATHEA_ASCENDED),
+				Boss(KUROG_GRIMTOTEM),
+				Boss(BROODKEEPER_DIURNA),
+				Boss(RASZAGETH_THE_STORM_EATER),
 			}),
-			d(HeroicPlus, {
+			RaidDifficulty(HeroicPlus, {
 				n(COMMON_BOSS_DROPS, {
 					["crs"] = ALL_BOSSES,
 					["g"] = {
@@ -572,18 +592,19 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 						}),
 					},
 				}),
-				bossNoLoot(ERANOG),
-				bossNoLoot(TERROS),
-				bossNoLoot(THE_PRIMAL_COUNCIL),
-				bossNoLoot(SENNARTH_THE_COLD_BREATH),
-				bossNoLoot(DATHEA_ASCENDED),
-				bossNoLoot(KUROG_GRIMTOTEM),
-				bossNoLoot(BROODKEEPER_DIURNA),
-				bossNoLoot(RASZAGETH_THE_STORM_EATER, {
+			}).AddGroups({
+				BossOnly(ERANOG),
+				BossOnly(TERROS),
+				BossOnly(THE_PRIMAL_COUNCIL),
+				BossOnly(SENNARTH_THE_COLD_BREATH),
+				BossOnly(DATHEA_ASCENDED),
+				BossOnly(KUROG_GRIMTOTEM),
+				BossOnly(BROODKEEPER_DIURNA),
+				BossOnly(RASZAGETH_THE_STORM_EATER, {
 					ach(17107, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }}),	-- Ahead of the Curve: Raszageth the Storm-Eater
 				}),
 			}),
-			d(HEROIC_RAID, {
+			RaidDifficulty(HEROIC_RAID, {
 				n(COMMON_BOSS_DROPS, {
 					["crs"] = ALL_BOSSES,
 					["g"] = {
@@ -609,16 +630,17 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					i(202010),	-- Primalist Warden's Bracers [BoE]
 					i(202007),	-- Woven Stone Bracelets [BoE]
 				}),
-				boss(ERANOG),
-				boss(TERROS),
-				boss(THE_PRIMAL_COUNCIL),
-				boss(SENNARTH_THE_COLD_BREATH, HEROIC_RAID),
-				boss(DATHEA_ASCENDED, HEROIC_RAID),
-				boss(KUROG_GRIMTOTEM, HEROIC_RAID),
-				boss(BROODKEEPER_DIURNA, HEROIC_RAID),
-				boss(RASZAGETH_THE_STORM_EATER, HEROIC_RAID),
+			}).AddGroups({
+				Boss(ERANOG),
+				Boss(TERROS),
+				Boss(THE_PRIMAL_COUNCIL),
+				Boss(SENNARTH_THE_COLD_BREATH),
+				Boss(DATHEA_ASCENDED),
+				Boss(KUROG_GRIMTOTEM),
+				Boss(BROODKEEPER_DIURNA),
+				Boss(RASZAGETH_THE_STORM_EATER),
 			}),
-			d(MYTHIC_RAID, {
+			RaidDifficulty(MYTHIC_RAID, {
 				n(COMMON_BOSS_DROPS, {
 					["crs"] = ALL_BOSSES,
 					["g"] = {
@@ -653,28 +675,29 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					i(202007, {["timeline"] = { ADDED_10_0_5 }}),		-- Woven Stone Bracelets [BoE]
 					i(202143, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5}}),	-- Woven Stone Bracelets [BoP]
 				}),
-				boss(ERANOG, {
+			}).AddGroups({
+				Boss(ERANOG, {
 					ach(16346),	-- Mythic: Eranog
 				}),
-				boss(TERROS, {
+				Boss(TERROS, {
 					ach(16347),	-- Mythic: Terros
 				}),
-				boss(THE_PRIMAL_COUNCIL, {
+				Boss(THE_PRIMAL_COUNCIL, {
 					ach(16348),	-- Mythic: The Primal Council
 				}),
-				boss(SENNARTH_THE_COLD_BREATH, MYTHIC_RAID, {
+				Boss(SENNARTH_THE_COLD_BREATH, {
 					ach(16349),	-- Mythic: Sennarth, The Cold Breath
 				}),
-				boss(DATHEA_ASCENDED, MYTHIC_RAID, {
+				Boss(DATHEA_ASCENDED, {
 					ach(16350),	-- Mythic: Dathea, Ascended
 				}),
-				boss(KUROG_GRIMTOTEM, MYTHIC_RAID, {
+				Boss(KUROG_GRIMTOTEM, {
 					ach(16351),	-- Mythic: Kurog Grimtotem
 				}),
-				boss(BROODKEEPER_DIURNA, MYTHIC_RAID, {
+				Boss(BROODKEEPER_DIURNA, {
 					ach(16352),	-- Mythic: Broodkeeper Diurna
 				}),
-				boss(RASZAGETH_THE_STORM_EATER, MYTHIC_RAID, {
+				Boss(RASZAGETH_THE_STORM_EATER, {
 					ach(16353, {	-- Mythic: Raszageth the Storm-Eater
 						title(488),	-- <Name> the Storm-Eater
 					}),
