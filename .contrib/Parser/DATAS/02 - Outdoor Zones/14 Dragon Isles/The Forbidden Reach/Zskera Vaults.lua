@@ -11,12 +11,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				}),
 				ach(17509),	-- Every Door, Everywhere, All At Once
 			}),
-			filter(MISC, {
+			filter(MISC, bubbleDown({
+				["cost"] = {{"i",203705,1}},	-- Empty Obsidian Vial
+			},{
 				i(203715),	-- Oozing Gold
 				i(203720),	-- Restorative Water
 				i(203704),	-- Stone Dissolver
 				i(203718),	-- Vial of Flames
-			}),
+			})),
 			n(QUESTS, {
 				q(73160, {	-- Helping Hand and Claw
 					["sourceQuests"] = {
@@ -763,6 +765,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["coord"] = { 30.7, 55.1, THE_FORBIDDEN_REACH },
 							["questID"] = 75136,
 							["description"] = "Use Restorative Water on an Overgrown Skeleton.",
+							["cost"] = {{"i",203720,1}},	-- Restorative Water
 							["cr"] = 202336,	-- Overgrown Skeleton
 							["g"] = {
 								i(203852),	-- Spore-bound Essence (TOY!)
