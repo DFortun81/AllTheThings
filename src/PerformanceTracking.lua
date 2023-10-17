@@ -55,7 +55,7 @@ app.ClearPerf = function()
 	app.print("Cleared Performance Stats");
 end
 
-local function perf_replace(source, key)
+local function perf_replace_table(source, key)
 	local func = source[key]
 	if type(func) ~= "function" or type(key) ~= "string" then return end
 	local perf = source.__perfscope
@@ -85,6 +85,27 @@ local function perf_replace(source, key)
 
 end
 
+local function perf_replace_function(source, name, perf)
+	local func = source
+	if type(func) ~= "function" then return end
+
+	-- Perf capture of func calls
+	local typePerf = perf[name];
+	return function(...)
+		local now = GetTimePreciseSec();
+		local res = {func(...)};
+		typePerf.time = typePerf.time + (GetTimePreciseSec() - now);
+		typePerf.count = typePerf.count + 1;
+		return unpack(res);
+	end
+
+	-- Simple print of func calls
+	-- return function(...)
+	-- 	app.PrintDebug("app.",key)
+	-- 	return func(...)
+	-- end
+end
+
 local function CaptureTable(table, scope)
 	local perf = scope and performance[scope] or table.__perfscope
 	-- if the host table has a __index providing a default
@@ -93,9 +114,16 @@ local function CaptureTable(table, scope)
 	end
 	table.__perfscope = perf
 	for key,func in pairs(table) do
-		perf_replace(table, key)
+		perf_replace_table(table, key)
 	end
 	return table;
+end
+
+-- Returns the Function wrapped in a performance capture function.
+-- NOTE: The Caller must replace the original reference
+local function CaptureFunction(func, name, scope)
+	local perf = scope and performance[scope]
+	return perf_replace_function(func, name, perf);
 end
 
 local function AutoCaptureTable(t)
@@ -113,6 +141,8 @@ end
 
 -- Replaces all functions in the provided table with performance capture functions of those functions
 performance.CaptureTable = CaptureTable
+-- Returns a wrapped version of the function with performance capture
+performance.CaptureFunction = CaptureFunction
 -- performance.CaptureModules = function()
 -- 	for name,module in pairs(app.Modules) do
 -- 		CaptureTable("Module."..name, module)
@@ -129,7 +159,7 @@ performance.MetaCapture = {
 			AutoCaptureTable(pt)
 		else
 			rawset(t, key, val)
-			perf_replace(t, key)
+			perf_replace_table(t, key)
 		end
 	end,
 }
